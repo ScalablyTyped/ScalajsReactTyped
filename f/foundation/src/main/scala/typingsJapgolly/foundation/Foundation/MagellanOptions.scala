@@ -1,43 +1,67 @@
 package typingsJapgolly.foundation.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/magellan.html#js
-trait MagellanOptions extends js.Object {
+trait MagellanOptions extends StObject {
+  
   var active_class: js.UndefOr[String] = js.undefined
+  
   var destination_threshold: js.UndefOr[Double] = js.undefined
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
   var easing: js.UndefOr[String] = js.undefined
+  
   var fixed_top: js.UndefOr[Double] = js.undefined
+  
   var offset_by_height: js.UndefOr[Boolean] = js.undefined
+  
   var threshold: js.UndefOr[Double] = js.undefined
+  
   var throttle_delay: js.UndefOr[Double] = js.undefined
 }
-
 object MagellanOptions {
-  @scala.inline
-  def apply(
-    active_class: String = null,
-    destination_threshold: Int | Double = null,
-    duration: Int | Double = null,
-    easing: String = null,
-    fixed_top: Int | Double = null,
-    offset_by_height: js.UndefOr[Boolean] = js.undefined,
-    threshold: Int | Double = null,
-    throttle_delay: Int | Double = null
-  ): MagellanOptions = {
+  
+  inline def apply(): MagellanOptions = {
     val __obj = js.Dynamic.literal()
-    if (active_class != null) __obj.updateDynamic("active_class")(active_class.asInstanceOf[js.Any])
-    if (destination_threshold != null) __obj.updateDynamic("destination_threshold")(destination_threshold.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (fixed_top != null) __obj.updateDynamic("fixed_top")(fixed_top.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset_by_height)) __obj.updateDynamic("offset_by_height")(offset_by_height.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (throttle_delay != null) __obj.updateDynamic("throttle_delay")(throttle_delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[MagellanOptions]
   }
+  
+  extension [Self <: MagellanOptions](x: Self) {
+    
+    inline def setActive_class(value: String): Self = StObject.set(x, "active_class", value.asInstanceOf[js.Any])
+    
+    inline def setActive_classUndefined: Self = StObject.set(x, "active_class", js.undefined)
+    
+    inline def setDestination_threshold(value: Double): Self = StObject.set(x, "destination_threshold", value.asInstanceOf[js.Any])
+    
+    inline def setDestination_thresholdUndefined: Self = StObject.set(x, "destination_threshold", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    
+    inline def setFixed_top(value: Double): Self = StObject.set(x, "fixed_top", value.asInstanceOf[js.Any])
+    
+    inline def setFixed_topUndefined: Self = StObject.set(x, "fixed_top", js.undefined)
+    
+    inline def setOffset_by_height(value: Boolean): Self = StObject.set(x, "offset_by_height", value.asInstanceOf[js.Any])
+    
+    inline def setOffset_by_heightUndefined: Self = StObject.set(x, "offset_by_height", js.undefined)
+    
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    
+    inline def setThrottle_delay(value: Double): Self = StObject.set(x, "throttle_delay", value.asInstanceOf[js.Any])
+    
+    inline def setThrottle_delayUndefined: Self = StObject.set(x, "throttle_delay", js.undefined)
+  }
 }
-

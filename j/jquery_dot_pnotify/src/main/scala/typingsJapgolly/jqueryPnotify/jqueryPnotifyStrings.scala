@@ -1,79 +1,92 @@
 package typingsJapgolly.jqueryPnotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryPnotifyStrings {
-  @js.native
-  sealed trait bootstrap2 extends StylingOptions
   
   @js.native
-  sealed trait bootstrap3 extends StylingOptions
+  sealed trait bootstrap2
+    extends StObject
+       with StylingOptions
+  inline def bootstrap2: bootstrap2 = "bootstrap2".asInstanceOf[bootstrap2]
   
   @js.native
-  sealed trait brighttheme extends StylingOptions
+  sealed trait bootstrap3
+    extends StObject
+       with StylingOptions
+  inline def bootstrap3: bootstrap3 = "bootstrap3".asInstanceOf[bootstrap3]
   
   @js.native
-  sealed trait closed extends StateOptions
+  sealed trait brighttheme
+    extends StObject
+       with StylingOptions
+  inline def brighttheme: brighttheme = "brighttheme".asInstanceOf[brighttheme]
   
   @js.native
-  sealed trait closing extends StateOptions
+  sealed trait closed
+    extends StObject
+       with StateOptions
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait error extends NoticeTypeOptions
+  sealed trait closing
+    extends StObject
+       with StateOptions
+  inline def closing: closing = "closing".asInstanceOf[closing]
   
   @js.native
-  sealed trait fontawesome extends StylingOptions
+  sealed trait error
+    extends StObject
+       with NoticeTypeOptions
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait info extends NoticeTypeOptions
+  sealed trait fontawesome
+    extends StObject
+       with StylingOptions
+  inline def fontawesome: fontawesome = "fontawesome".asInstanceOf[fontawesome]
   
   @js.native
-  sealed trait initializing extends StateOptions
+  sealed trait info
+    extends StObject
+       with NoticeTypeOptions
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait jqueryui extends StylingOptions
+  sealed trait initializing
+    extends StObject
+       with StateOptions
+  inline def initializing: initializing = "initializing".asInstanceOf[initializing]
   
   @js.native
-  sealed trait notice extends NoticeTypeOptions
+  sealed trait jqueryui
+    extends StObject
+       with StylingOptions
+  inline def jqueryui: jqueryui = "jqueryui".asInstanceOf[jqueryui]
   
   @js.native
-  sealed trait open extends StateOptions
+  sealed trait notice
+    extends StObject
+       with NoticeTypeOptions
+  inline def notice: notice = "notice".asInstanceOf[notice]
   
   @js.native
-  sealed trait opening extends StateOptions
+  sealed trait open
+    extends StObject
+       with StateOptions
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait success extends NoticeTypeOptions
+  sealed trait opening
+    extends StObject
+       with StateOptions
+  inline def opening: opening = "opening".asInstanceOf[opening]
   
-  @scala.inline
-  def bootstrap2: bootstrap2 = "bootstrap2".asInstanceOf[bootstrap2]
-  @scala.inline
-  def bootstrap3: bootstrap3 = "bootstrap3".asInstanceOf[bootstrap3]
-  @scala.inline
-  def brighttheme: brighttheme = "brighttheme".asInstanceOf[brighttheme]
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
-  @scala.inline
-  def closing: closing = "closing".asInstanceOf[closing]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fontawesome: fontawesome = "fontawesome".asInstanceOf[fontawesome]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def initializing: initializing = "initializing".asInstanceOf[initializing]
-  @scala.inline
-  def jqueryui: jqueryui = "jqueryui".asInstanceOf[jqueryui]
-  @scala.inline
-  def notice: notice = "notice".asInstanceOf[notice]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def opening: opening = "opening".asInstanceOf[opening]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  @js.native
+  sealed trait success
+    extends StObject
+       with NoticeTypeOptions
+  inline def success: success = "success".asInstanceOf[success]
 }
-

@@ -1,47 +1,105 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BingMapsStyle extends js.Object
-
+sealed trait BingMapsStyle extends StObject
 @JSImport("cesium", "BingMapsStyle")
 @js.native
-object BingMapsStyle extends js.Object {
-  @js.native
-  sealed trait AERIAL extends BingMapsStyle
-  
-  @js.native
-  sealed trait AERIAL_WITH_LABELS extends BingMapsStyle
-  
-  @js.native
-  sealed trait COLLINS_BART extends BingMapsStyle
-  
-  @js.native
-  sealed trait ORDNANCE_SURVEY extends BingMapsStyle
-  
-  @js.native
-  sealed trait ROAD extends BingMapsStyle
+object BingMapsStyle extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BingMapsStyle with Double] = js.native
-  /* 0 */ @js.native
-  object AERIAL extends TopLevel[AERIAL with Double]
+  def apply(value: String): js.UndefOr[BingMapsStyle & String] = js.native
   
-  /* 1 */ @js.native
-  object AERIAL_WITH_LABELS extends TopLevel[AERIAL_WITH_LABELS with Double]
+  /**
+    * Aerial imagery.
+    */
+  @js.native
+  sealed trait AERIAL
+    extends StObject
+       with BingMapsStyle
+  /* "Aerial" */ val AERIAL: typingsJapgolly.cesium.mod.BingMapsStyle.AERIAL & String = js.native
   
-  /* 4 */ @js.native
-  object COLLINS_BART extends TopLevel[COLLINS_BART with Double]
+  /**
+    * Aerial imagery with a road overlay.
+    */
+  @js.native
+  sealed trait AERIAL_WITH_LABELS
+    extends StObject
+       with BingMapsStyle
+  /* "AerialWithLabels" */ val AERIAL_WITH_LABELS: typingsJapgolly.cesium.mod.BingMapsStyle.AERIAL_WITH_LABELS & String = js.native
   
-  /* 3 */ @js.native
-  object ORDNANCE_SURVEY extends TopLevel[ORDNANCE_SURVEY with Double]
+  /**
+    * Aerial imagery with a road overlay.
+    */
+  @js.native
+  sealed trait AERIAL_WITH_LABELS_ON_DEMAND
+    extends StObject
+       with BingMapsStyle
+  /* "AerialWithLabelsOnDemand" */ val AERIAL_WITH_LABELS_ON_DEMAND: typingsJapgolly.cesium.mod.BingMapsStyle.AERIAL_WITH_LABELS_ON_DEMAND & String = js.native
   
-  /* 2 */ @js.native
-  object ROAD extends TopLevel[ROAD with Double]
+  /**
+    * A dark version of the road maps.
+    */
+  @js.native
+  sealed trait CANVAS_DARK
+    extends StObject
+       with BingMapsStyle
+  /* "CanvasDark" */ val CANVAS_DARK: typingsJapgolly.cesium.mod.BingMapsStyle.CANVAS_DARK & String = js.native
   
+  /**
+    * A grayscale version of the road maps.
+    */
+  @js.native
+  sealed trait CANVAS_GRAY
+    extends StObject
+       with BingMapsStyle
+  /* "CanvasGray" */ val CANVAS_GRAY: typingsJapgolly.cesium.mod.BingMapsStyle.CANVAS_GRAY & String = js.native
+  
+  /**
+    * A lighter version of the road maps.
+    */
+  @js.native
+  sealed trait CANVAS_LIGHT
+    extends StObject
+       with BingMapsStyle
+  /* "CanvasLight" */ val CANVAS_LIGHT: typingsJapgolly.cesium.mod.BingMapsStyle.CANVAS_LIGHT & String = js.native
+  
+  /**
+    * Collins Bart imagery.
+    */
+  @js.native
+  sealed trait COLLINS_BART
+    extends StObject
+       with BingMapsStyle
+  /* "CollinsBart" */ val COLLINS_BART: typingsJapgolly.cesium.mod.BingMapsStyle.COLLINS_BART & String = js.native
+  
+  /**
+    * Ordnance Survey imagery. This imagery is visible only for the London, UK area.
+    */
+  @js.native
+  sealed trait ORDNANCE_SURVEY
+    extends StObject
+       with BingMapsStyle
+  /* "OrdnanceSurvey" */ val ORDNANCE_SURVEY: typingsJapgolly.cesium.mod.BingMapsStyle.ORDNANCE_SURVEY & String = js.native
+  
+  /**
+    * Roads without additional imagery.
+    */
+  @js.native
+  sealed trait ROAD
+    extends StObject
+       with BingMapsStyle
+  /* "Road" */ val ROAD: typingsJapgolly.cesium.mod.BingMapsStyle.ROAD & String = js.native
+  
+  /**
+    * Roads without additional imagery.
+    */
+  @js.native
+  sealed trait ROAD_ON_DEMAND
+    extends StObject
+       with BingMapsStyle
+  /* "RoadOnDemand" */ val ROAD_ON_DEMAND: typingsJapgolly.cesium.mod.BingMapsStyle.ROAD_ON_DEMAND & String = js.native
 }
-

@@ -1,21 +1,52 @@
 package typingsJapgolly.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Billing address format enum string.
+  *
+  * Options:
+  *
+  * - `MIN`:
+  *   Minimal billing address
+  *
+  *   When this format is used, the billing address returned will only
+  *   contain the following fields:
+  *
+  *   - [[Address.name|`name`]]
+  *   - [[Address.countryCode|`countryCode`]]
+  *   - [[Address.postalCode|`postalCode`]]
+  *   - [[Address.phoneNumber|`phoneNumber`]] if
+  *     [[BillingAddressParameters.phoneNumberRequired|`BillingAddressParameters.phoneNumberRequired`]]
+  *     is set to `true`.
+  *
+  *   Note: some countries do not use postal codes. The postal code field
+  *   will be empty in those countries.
+  *
+  * - `FULL`:
+  *   Full billing address
+  *
+  *   All the fields in [[Address|`Address`]] will
+  *   be returned, with the possible exception of
+  *   [[Address.phoneNumber|`Address.phoneNumber`]] which will only be
+  *   returned if
+  *   [[BillingAddressParameters.phoneNumberRequired|`BillingAddressParameters.phoneNumberRequired`]]
+  *   is set to `true`.
+  *
+  *   Only select this format when it is required to process the order.
+  *   Additional form entry or customer data requests can increase friction
+  *   during the checkout process and can lead to a lower conversion rate.
+  */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.googlepay.googlepayStrings.FULL
   - typingsJapgolly.googlepay.googlepayStrings.MIN
+  - typingsJapgolly.googlepay.googlepayStrings.FULL
 */
-trait BillingAddressFormat extends js.Object
-
+trait BillingAddressFormat extends StObject
 object BillingAddressFormat {
-  @scala.inline
-  def FULL: typingsJapgolly.googlepay.googlepayStrings.FULL = this.cast("FULL")
-  @scala.inline
-  def MIN: typingsJapgolly.googlepay.googlepayStrings.MIN = this.cast("MIN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def FULL: typingsJapgolly.googlepay.googlepayStrings.FULL = "FULL".asInstanceOf[typingsJapgolly.googlepay.googlepayStrings.FULL]
+  
+  inline def MIN: typingsJapgolly.googlepay.googlepayStrings.MIN = "MIN".asInstanceOf[typingsJapgolly.googlepay.googlepayStrings.MIN]
 }
-

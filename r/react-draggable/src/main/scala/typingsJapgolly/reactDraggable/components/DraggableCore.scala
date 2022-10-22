@@ -1,71 +1,57 @@
 package typingsJapgolly.reactDraggable.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.reactDraggable.PartialDraggableCoreProps
+import japgolly.scalajs.react.facade.React.RefHandle
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactDraggable.anon.PartialDraggableCoreProps
 import typingsJapgolly.reactDraggable.mod.DraggableData
 import typingsJapgolly.reactDraggable.mod.DraggableEvent
 import typingsJapgolly.reactDraggable.reactDraggableBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DraggableCore {
-  def apply(
-    allowAnyClick: js.UndefOr[Boolean] = js.undefined,
-    cancel: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    enableUserSelectHack: js.UndefOr[Boolean] = js.undefined,
-    grid: js.Tuple2[Double, Double] = null,
-    handle: String = null,
-    offsetParent: HTMLElement = null,
-    onDrag: (/* e */ DraggableEvent, /* data */ DraggableData) => CallbackTo[Unit | `false`] = null,
-    onMouseDown: /* e */ MouseEvent => Callback = null,
-    onStart: (/* e */ DraggableEvent, /* data */ DraggableData) => CallbackTo[Unit | `false`] = null,
-    onStop: (/* e */ DraggableEvent, /* data */ DraggableData) => CallbackTo[Unit | `false`] = null,
-    scale: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    PartialDraggableCoreProps, 
-    typingsJapgolly.reactDraggable.mod.DraggableCore, 
-    Unit, 
-    PartialDraggableCoreProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(allowAnyClick)) __obj.updateDynamic("allowAnyClick")(allowAnyClick.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableUserSelectHack)) __obj.updateDynamic("enableUserSelectHack")(enableUserSelectHack.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (offsetParent != null) __obj.updateDynamic("offsetParent")(offsetParent.asInstanceOf[js.Any])
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction2((t0: /* e */ typingsJapgolly.reactDraggable.mod.DraggableEvent, t1: /* data */ typingsJapgolly.reactDraggable.mod.DraggableData) => onDrag(t0, t1).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: /* e */ org.scalajs.dom.raw.MouseEvent) => onMouseDown(t0).runNow()))
-    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction2((t0: /* e */ typingsJapgolly.reactDraggable.mod.DraggableEvent, t1: /* data */ typingsJapgolly.reactDraggable.mod.DraggableData) => onStart(t0, t1).runNow()))
-    if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction2((t0: /* e */ typingsJapgolly.reactDraggable.mod.DraggableEvent, t1: /* data */ typingsJapgolly.reactDraggable.mod.DraggableData) => onStop(t0, t1).runNow()))
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactDraggable.PartialDraggableCoreProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDraggable.mod.DraggableCore](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactDraggable.PartialDraggableCoreProps])(children: _*)
-  }
   @JSImport("react-draggable", "DraggableCore")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactDraggable.mod.DraggableCore] {
+    
+    inline def allowAnyClick(value: Boolean): this.type = set("allowAnyClick", value.asInstanceOf[js.Any])
+    
+    inline def cancel(value: String): this.type = set("cancel", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def enableUserSelectHack(value: Boolean): this.type = set("enableUserSelectHack", value.asInstanceOf[js.Any])
+    
+    inline def grid(value: js.Tuple2[Double, Double]): this.type = set("grid", value.asInstanceOf[js.Any])
+    
+    inline def handle(value: String): this.type = set("handle", value.asInstanceOf[js.Any])
+    
+    inline def nodeRef(value: RefHandle[HTMLElement]): this.type = set("nodeRef", value.asInstanceOf[js.Any])
+    
+    inline def offsetParent(value: HTMLElement): this.type = set("offsetParent", value.asInstanceOf[js.Any])
+    
+    inline def onDrag(value: (/* e */ DraggableEvent, /* data */ DraggableData) => Unit | `false`): this.type = set("onDrag", js.Any.fromFunction2(value))
+    
+    inline def onMouseDown(value: /* e */ MouseEvent => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: /* e */ MouseEvent) => value(t0).runNow()))
+    
+    inline def onStart(value: (/* e */ DraggableEvent, /* data */ DraggableData) => Unit | `false`): this.type = set("onStart", js.Any.fromFunction2(value))
+    
+    inline def onStop(value: (/* e */ DraggableEvent, /* data */ DraggableData) => Unit | `false`): this.type = set("onStop", js.Any.fromFunction2(value))
+    
+    inline def scale(value: Double): this.type = set("scale", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: DraggableCore.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PartialDraggableCoreProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

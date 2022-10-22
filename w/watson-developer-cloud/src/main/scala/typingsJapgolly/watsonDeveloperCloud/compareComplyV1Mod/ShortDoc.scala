@@ -1,24 +1,33 @@
 package typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Brief information about the input document. */
-trait ShortDoc extends js.Object {
+trait ShortDoc extends StObject {
+  
   /** The MD5 hash of the input document. */
   var hash: js.UndefOr[String] = js.undefined
+  
   /** The title of the input document, if identified. */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object ShortDoc {
-  @scala.inline
-  def apply(hash: String = null, title: String = null): ShortDoc = {
+  
+  inline def apply(): ShortDoc = {
     val __obj = js.Dynamic.literal()
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortDoc]
   }
+  
+  extension [Self <: ShortDoc](x: Self) {
+    
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

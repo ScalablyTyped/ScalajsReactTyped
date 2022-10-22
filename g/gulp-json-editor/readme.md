@@ -10,10 +10,10 @@ A gulp plugin to edit JSON objects
 | ------------------ | :-------------: |
 | Full name          | gulp-json-editor |
 | Keywords           | gulpplugin, gulp, json |
-| # releases         | 13 |
-| # dependents       | 91 |
-| # downloads        | 1529126 |
-| # stars            | 10 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 233038.66666666666 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/rejas/gulp-json-editor#readme)

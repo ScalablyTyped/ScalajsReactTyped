@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.navDropdownMod.NavDropdownProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "NavDropdown")
 @js.native
-class NavDropdown ()
-  extends Component[NavDropdownProps, js.Object, js.Any]
-
+open class NavDropdown ()
+  extends typingsJapgolly.reactBootstrap.libMod.NavDropdown

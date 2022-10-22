@@ -1,59 +1,57 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait JobExecutionStatus extends js.Object
-
+sealed trait JobExecutionStatus extends StObject
 @JSImport("azdata", "JobExecutionStatus")
 @js.native
-object JobExecutionStatus extends js.Object {
-  @js.native
-  sealed trait BetweenRetries extends JobExecutionStatus
-  
-  @js.native
-  sealed trait Executing extends JobExecutionStatus
-  
-  @js.native
-  sealed trait Idle extends JobExecutionStatus
-  
-  @js.native
-  sealed trait PerformingCompletionAction extends JobExecutionStatus
-  
-  @js.native
-  sealed trait Suspended extends JobExecutionStatus
-  
-  @js.native
-  sealed trait WaitingForStepToFinish extends JobExecutionStatus
-  
-  @js.native
-  sealed trait WaitingForWorkerThread extends JobExecutionStatus
+object JobExecutionStatus extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[JobExecutionStatus with Double] = js.native
-  /* 3 */ @js.native
-  object BetweenRetries extends TopLevel[BetweenRetries with Double]
+  def apply(value: Double): js.UndefOr[JobExecutionStatus & Double] = js.native
   
-  /* 1 */ @js.native
-  object Executing extends TopLevel[Executing with Double]
+  @js.native
+  sealed trait BetweenRetries
+    extends StObject
+       with JobExecutionStatus
+  /* 3 */ val BetweenRetries: typingsJapgolly.azdata.mod.JobExecutionStatus.BetweenRetries & Double = js.native
   
-  /* 4 */ @js.native
-  object Idle extends TopLevel[Idle with Double]
+  @js.native
+  sealed trait Executing
+    extends StObject
+       with JobExecutionStatus
+  /* 1 */ val Executing: typingsJapgolly.azdata.mod.JobExecutionStatus.Executing & Double = js.native
   
-  /* 7 */ @js.native
-  object PerformingCompletionAction extends TopLevel[PerformingCompletionAction with Double]
+  @js.native
+  sealed trait Idle
+    extends StObject
+       with JobExecutionStatus
+  /* 4 */ val Idle: typingsJapgolly.azdata.mod.JobExecutionStatus.Idle & Double = js.native
   
-  /* 5 */ @js.native
-  object Suspended extends TopLevel[Suspended with Double]
+  @js.native
+  sealed trait PerformingCompletionAction
+    extends StObject
+       with JobExecutionStatus
+  /* 7 */ val PerformingCompletionAction: typingsJapgolly.azdata.mod.JobExecutionStatus.PerformingCompletionAction & Double = js.native
   
-  /* 6 */ @js.native
-  object WaitingForStepToFinish extends TopLevel[WaitingForStepToFinish with Double]
+  @js.native
+  sealed trait Suspended
+    extends StObject
+       with JobExecutionStatus
+  /* 5 */ val Suspended: typingsJapgolly.azdata.mod.JobExecutionStatus.Suspended & Double = js.native
   
-  /* 2 */ @js.native
-  object WaitingForWorkerThread extends TopLevel[WaitingForWorkerThread with Double]
+  @js.native
+  sealed trait WaitingForStepToFinish
+    extends StObject
+       with JobExecutionStatus
+  /* 6 */ val WaitingForStepToFinish: typingsJapgolly.azdata.mod.JobExecutionStatus.WaitingForStepToFinish & Double = js.native
   
+  @js.native
+  sealed trait WaitingForWorkerThread
+    extends StObject
+       with JobExecutionStatus
+  /* 2 */ val WaitingForWorkerThread: typingsJapgolly.azdata.mod.JobExecutionStatus.WaitingForWorkerThread & Double = js.native
 }
-

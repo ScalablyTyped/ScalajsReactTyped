@@ -1,17 +1,29 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.uifabricMergeStyles.irawstylebaseMod.IFontWeight
+import typingsJapgolly.fluentuiMergeStyles.libIrawstylebaseMod.IFontWeight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react", "FontWeights")
-@js.native
-object FontWeights extends js.Object {
+object FontWeights {
+  
+  @JSImport("office-ui-fabric-react", "FontWeights.bold")
+  @js.native
   val bold: IFontWeight = js.native
+  
+  @JSImport("office-ui-fabric-react", "FontWeights.light")
+  @js.native
   val light: IFontWeight = js.native
+  
+  @JSImport("office-ui-fabric-react", "FontWeights.regular")
+  @js.native
   val regular: IFontWeight = js.native
+  
+  @JSImport("office-ui-fabric-react", "FontWeights.semibold")
+  @js.native
   val semibold: IFontWeight = js.native
+  
+  @JSImport("office-ui-fabric-react", "FontWeights.semilight")
+  @js.native
   val semilight: IFontWeight = js.native
 }
-

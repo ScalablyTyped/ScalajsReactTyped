@@ -1,98 +1,323 @@
 package typingsJapgolly.winrtUwp.Windows.Graphics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Graphics.Holographic")
-@js.native
-object Holographic extends js.Object {
-  @js.native
-  abstract class HolographicCamera () extends js.Object {
-    var id: js.Any = js.native
-     /* unmapped type */ var isStereo: js.Any = js.native
-     /* unmapped type */ var renderTargetSize: js.Any = js.native
-     /* unmapped type */ var setFarPlaneDistance: js.Any = js.native
-     /* unmapped type */ var setNearPlaneDistance: js.Any = js.native
-     /* unmapped type */ var viewportScaleFactor: js.Any = js.native
+object Holographic {
+  
+  trait HolographicCamera extends StObject {
+    
+    var id: Any
+    
+    /* unmapped type */
+    var isStereo: Any
+    
+    /* unmapped type */
+    var renderTargetSize: Any
+    
+    /* unmapped type */
+    var setFarPlaneDistance: Any
+    
+    /* unmapped type */
+    var setNearPlaneDistance: Any
+    
+    /* unmapped type */
+    var viewportScaleFactor: Any
+  }
+  object HolographicCamera {
+    
+    inline def apply(
+      id: Any,
+      isStereo: Any,
+      renderTargetSize: Any,
+      setFarPlaneDistance: Any,
+      setNearPlaneDistance: Any,
+      viewportScaleFactor: Any
+    ): HolographicCamera = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isStereo = isStereo.asInstanceOf[js.Any], renderTargetSize = renderTargetSize.asInstanceOf[js.Any], setFarPlaneDistance = setFarPlaneDistance.asInstanceOf[js.Any], setNearPlaneDistance = setNearPlaneDistance.asInstanceOf[js.Any], viewportScaleFactor = viewportScaleFactor.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HolographicCamera]
+    }
+    
+    extension [Self <: HolographicCamera](x: Self) {
+      
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIsStereo(value: Any): Self = StObject.set(x, "isStereo", value.asInstanceOf[js.Any])
+      
+      inline def setRenderTargetSize(value: Any): Self = StObject.set(x, "renderTargetSize", value.asInstanceOf[js.Any])
+      
+      inline def setSetFarPlaneDistance(value: Any): Self = StObject.set(x, "setFarPlaneDistance", value.asInstanceOf[js.Any])
+      
+      inline def setSetNearPlaneDistance(value: Any): Self = StObject.set(x, "setNearPlaneDistance", value.asInstanceOf[js.Any])
+      
+      inline def setViewportScaleFactor(value: Any): Self = StObject.set(x, "viewportScaleFactor", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  abstract class HolographicCameraPose () extends js.Object {
-    var farPlaneDistance: js.Any = js.native
-     /* unmapped type */ var holographicCamera: js.Any = js.native
-     /* unmapped type */ var nearPlaneDistance: js.Any = js.native
-     /* unmapped type */ var projectionTransform: js.Any = js.native
-     /* unmapped type */ var tryGetCullingFrustum: js.Any = js.native
-     /* unmapped type */ var tryGetViewTransform: js.Any = js.native
-     /* unmapped type */ var tryGetVisibleFrustum: js.Any = js.native
-     /* unmapped type */ var viewport: js.Any = js.native
+  trait HolographicCameraPose extends StObject {
+    
+    var farPlaneDistance: Any
+    
+    /* unmapped type */
+    var holographicCamera: Any
+    
+    /* unmapped type */
+    var nearPlaneDistance: Any
+    
+    /* unmapped type */
+    var projectionTransform: Any
+    
+    /* unmapped type */
+    var tryGetCullingFrustum: Any
+    
+    /* unmapped type */
+    var tryGetViewTransform: Any
+    
+    /* unmapped type */
+    var tryGetVisibleFrustum: Any
+    
+    /* unmapped type */
+    var viewport: Any
+  }
+  object HolographicCameraPose {
+    
+    inline def apply(
+      farPlaneDistance: Any,
+      holographicCamera: Any,
+      nearPlaneDistance: Any,
+      projectionTransform: Any,
+      tryGetCullingFrustum: Any,
+      tryGetViewTransform: Any,
+      tryGetVisibleFrustum: Any,
+      viewport: Any
+    ): HolographicCameraPose = {
+      val __obj = js.Dynamic.literal(farPlaneDistance = farPlaneDistance.asInstanceOf[js.Any], holographicCamera = holographicCamera.asInstanceOf[js.Any], nearPlaneDistance = nearPlaneDistance.asInstanceOf[js.Any], projectionTransform = projectionTransform.asInstanceOf[js.Any], tryGetCullingFrustum = tryGetCullingFrustum.asInstanceOf[js.Any], tryGetViewTransform = tryGetViewTransform.asInstanceOf[js.Any], tryGetVisibleFrustum = tryGetVisibleFrustum.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HolographicCameraPose]
+    }
+    
+    extension [Self <: HolographicCameraPose](x: Self) {
+      
+      inline def setFarPlaneDistance(value: Any): Self = StObject.set(x, "farPlaneDistance", value.asInstanceOf[js.Any])
+      
+      inline def setHolographicCamera(value: Any): Self = StObject.set(x, "holographicCamera", value.asInstanceOf[js.Any])
+      
+      inline def setNearPlaneDistance(value: Any): Self = StObject.set(x, "nearPlaneDistance", value.asInstanceOf[js.Any])
+      
+      inline def setProjectionTransform(value: Any): Self = StObject.set(x, "projectionTransform", value.asInstanceOf[js.Any])
+      
+      inline def setTryGetCullingFrustum(value: Any): Self = StObject.set(x, "tryGetCullingFrustum", value.asInstanceOf[js.Any])
+      
+      inline def setTryGetViewTransform(value: Any): Self = StObject.set(x, "tryGetViewTransform", value.asInstanceOf[js.Any])
+      
+      inline def setTryGetVisibleFrustum(value: Any): Self = StObject.set(x, "tryGetVisibleFrustum", value.asInstanceOf[js.Any])
+      
+      inline def setViewport(value: Any): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  abstract class HolographicCameraRenderingParameters () extends js.Object {
-    var direct3D11BackBuffer: js.Any = js.native
-     /* unmapped type */ var direct3D11Device: js.Any = js.native
-     /* unmapped type */ var setFocusPoint: js.Any = js.native
+  trait HolographicCameraRenderingParameters extends StObject {
+    
+    var direct3D11BackBuffer: Any
+    
+    /* unmapped type */
+    var direct3D11Device: Any
+    
+    /* unmapped type */
+    var setFocusPoint: Any
+  }
+  object HolographicCameraRenderingParameters {
+    
+    inline def apply(direct3D11BackBuffer: Any, direct3D11Device: Any, setFocusPoint: Any): HolographicCameraRenderingParameters = {
+      val __obj = js.Dynamic.literal(direct3D11BackBuffer = direct3D11BackBuffer.asInstanceOf[js.Any], direct3D11Device = direct3D11Device.asInstanceOf[js.Any], setFocusPoint = setFocusPoint.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HolographicCameraRenderingParameters]
+    }
+    
+    extension [Self <: HolographicCameraRenderingParameters](x: Self) {
+      
+      inline def setDirect3D11BackBuffer(value: Any): Self = StObject.set(x, "direct3D11BackBuffer", value.asInstanceOf[js.Any])
+      
+      inline def setDirect3D11Device(value: Any): Self = StObject.set(x, "direct3D11Device", value.asInstanceOf[js.Any])
+      
+      inline def setSetFocusPoint(value: Any): Self = StObject.set(x, "setFocusPoint", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  abstract class HolographicFrame () extends js.Object {
-    var addedCameras: js.Any = js.native
-     /* unmapped type */ var currentPrediction: js.Any = js.native
-     /* unmapped type */ var duration: js.Any = js.native
-     /* unmapped type */ var getRenderingParameters: js.Any = js.native
-     /* unmapped type */ var presentUsingCurrentPrediction: js.Any = js.native
-     /* unmapped type */ var removedCameras: js.Any = js.native
-     /* unmapped type */ var updateCurrentPrediction: js.Any = js.native
-     /* unmapped type */ var waitForFrameToFinish: js.Any = js.native
+  trait HolographicFrame extends StObject {
+    
+    var addedCameras: Any
+    
+    /* unmapped type */
+    var currentPrediction: Any
+    
+    /* unmapped type */
+    var duration: Any
+    
+    /* unmapped type */
+    var getRenderingParameters: Any
+    
+    /* unmapped type */
+    var presentUsingCurrentPrediction: Any
+    
+    /* unmapped type */
+    var removedCameras: Any
+    
+    /* unmapped type */
+    var updateCurrentPrediction: Any
+    
+    /* unmapped type */
+    var waitForFrameToFinish: Any
+  }
+  object HolographicFrame {
+    
+    inline def apply(
+      addedCameras: Any,
+      currentPrediction: Any,
+      duration: Any,
+      getRenderingParameters: Any,
+      presentUsingCurrentPrediction: Any,
+      removedCameras: Any,
+      updateCurrentPrediction: Any,
+      waitForFrameToFinish: Any
+    ): HolographicFrame = {
+      val __obj = js.Dynamic.literal(addedCameras = addedCameras.asInstanceOf[js.Any], currentPrediction = currentPrediction.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], getRenderingParameters = getRenderingParameters.asInstanceOf[js.Any], presentUsingCurrentPrediction = presentUsingCurrentPrediction.asInstanceOf[js.Any], removedCameras = removedCameras.asInstanceOf[js.Any], updateCurrentPrediction = updateCurrentPrediction.asInstanceOf[js.Any], waitForFrameToFinish = waitForFrameToFinish.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HolographicFrame]
+    }
+    
+    extension [Self <: HolographicFrame](x: Self) {
+      
+      inline def setAddedCameras(value: Any): Self = StObject.set(x, "addedCameras", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentPrediction(value: Any): Self = StObject.set(x, "currentPrediction", value.asInstanceOf[js.Any])
+      
+      inline def setDuration(value: Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      
+      inline def setGetRenderingParameters(value: Any): Self = StObject.set(x, "getRenderingParameters", value.asInstanceOf[js.Any])
+      
+      inline def setPresentUsingCurrentPrediction(value: Any): Self = StObject.set(x, "presentUsingCurrentPrediction", value.asInstanceOf[js.Any])
+      
+      inline def setRemovedCameras(value: Any): Self = StObject.set(x, "removedCameras", value.asInstanceOf[js.Any])
+      
+      inline def setUpdateCurrentPrediction(value: Any): Self = StObject.set(x, "updateCurrentPrediction", value.asInstanceOf[js.Any])
+      
+      inline def setWaitForFrameToFinish(value: Any): Self = StObject.set(x, "waitForFrameToFinish", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  abstract class HolographicFramePrediction () extends js.Object {
-    var cameraPoses: js.Any = js.native
-     /* unmapped type */ var timestamp: js.Any = js.native
+  trait HolographicFramePrediction extends StObject {
+    
+    var cameraPoses: Any
+    
+    /* unmapped type */
+    var timestamp: Any
+  }
+  object HolographicFramePrediction {
+    
+    inline def apply(cameraPoses: Any, timestamp: Any): HolographicFramePrediction = {
+      val __obj = js.Dynamic.literal(cameraPoses = cameraPoses.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HolographicFramePrediction]
+    }
+    
+    extension [Self <: HolographicFramePrediction](x: Self) {
+      
+      inline def setCameraPoses(value: Any): Self = StObject.set(x, "cameraPoses", value.asInstanceOf[js.Any])
+      
+      inline def setTimestamp(value: Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  abstract class HolographicSpace () extends js.Object {
-     /* unmapped type */ var addEventListener: js.Any = js.native
-     /* unmapped type */ var createNextFrame: js.Any = js.native
-     /* unmapped type */ var oncameraadded: js.Any = js.native
-     /* unmapped type */ var oncameraremoved: js.Any = js.native
-     /* unmapped type */ var primaryAdapterId: js.Any = js.native
-     /* unmapped type */ var removeEventListener: js.Any = js.native
-     /* unmapped type */ var setDirect3D11Device: js.Any = js.native
+  trait HolographicSpace extends StObject {
+    
+    /* unmapped type */
+    var addEventListener: Any
+    
+    /* unmapped type */
+    var createNextFrame: Any
+    
+    /* unmapped type */
+    var oncameraadded: Any
+    
+    /* unmapped type */
+    var oncameraremoved: Any
+    
+    /* unmapped type */
+    var primaryAdapterId: Any
+    
+    /* unmapped type */
+    var removeEventListener: Any
+    
+    /* unmapped type */
+    var setDirect3D11Device: Any
+  }
+  object HolographicSpace {
+    
+    inline def apply(
+      addEventListener: Any,
+      createNextFrame: Any,
+      oncameraadded: Any,
+      oncameraremoved: Any,
+      primaryAdapterId: Any,
+      removeEventListener: Any,
+      setDirect3D11Device: Any
+    ): HolographicSpace = {
+      val __obj = js.Dynamic.literal(addEventListener = addEventListener.asInstanceOf[js.Any], createNextFrame = createNextFrame.asInstanceOf[js.Any], oncameraadded = oncameraadded.asInstanceOf[js.Any], oncameraremoved = oncameraremoved.asInstanceOf[js.Any], primaryAdapterId = primaryAdapterId.asInstanceOf[js.Any], removeEventListener = removeEventListener.asInstanceOf[js.Any], setDirect3D11Device = setDirect3D11Device.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HolographicSpace]
+    }
+    
+    extension [Self <: HolographicSpace](x: Self) {
+      
+      inline def setAddEventListener(value: Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
+      
+      inline def setCreateNextFrame(value: Any): Self = StObject.set(x, "createNextFrame", value.asInstanceOf[js.Any])
+      
+      inline def setOncameraadded(value: Any): Self = StObject.set(x, "oncameraadded", value.asInstanceOf[js.Any])
+      
+      inline def setOncameraremoved(value: Any): Self = StObject.set(x, "oncameraremoved", value.asInstanceOf[js.Any])
+      
+      inline def setPrimaryAdapterId(value: Any): Self = StObject.set(x, "primaryAdapterId", value.asInstanceOf[js.Any])
+      
+      inline def setRemoveEventListener(value: Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
+      
+      inline def setSetDirect3D11Device(value: Any): Self = StObject.set(x, "setDirect3D11Device", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  abstract class HolographicSpaceCameraAddedEventArgs () extends js.Object {
-    var camera: js.Any = js.native
-     /* unmapped type */ var getDeferral: js.Any = js.native
+  trait HolographicSpaceCameraAddedEventArgs extends StObject {
+    
+    var camera: Any
+    
+    /* unmapped type */
+    var getDeferral: Any
+  }
+  object HolographicSpaceCameraAddedEventArgs {
+    
+    inline def apply(camera: Any, getDeferral: Any): HolographicSpaceCameraAddedEventArgs = {
+      val __obj = js.Dynamic.literal(camera = camera.asInstanceOf[js.Any], getDeferral = getDeferral.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HolographicSpaceCameraAddedEventArgs]
+    }
+    
+    extension [Self <: HolographicSpaceCameraAddedEventArgs](x: Self) {
+      
+      inline def setCamera(value: Any): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+      
+      inline def setGetDeferral(value: Any): Self = StObject.set(x, "getDeferral", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  abstract class HolographicSpaceCameraRemovedEventArgs () extends js.Object {
-    var camera: js.Any = js.native
+  trait HolographicSpaceCameraRemovedEventArgs extends StObject {
+    
+    var camera: Any
   }
-  
-  @js.native
-  object HolographicFramePresentResult extends js.Object {
-    var deviceRemoved: js.Any = js.native
-    var success: js.Any = js.native
+  object HolographicSpaceCameraRemovedEventArgs {
+    
+    inline def apply(camera: Any): HolographicSpaceCameraRemovedEventArgs = {
+      val __obj = js.Dynamic.literal(camera = camera.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HolographicSpaceCameraRemovedEventArgs]
+    }
+    
+    extension [Self <: HolographicSpaceCameraRemovedEventArgs](x: Self) {
+      
+      inline def setCamera(value: Any): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    }
   }
-  
-  @js.native
-  object HolographicFramePresentWaitBehavior extends js.Object {
-    var doNotWaitForFrameToFinish: js.Any = js.native
-    var waitForFrameToFinish: js.Any = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object HolographicSpace extends js.Object {
-    var createForCoreWindow: js.Any = js.native
-  }
-  
 }
-

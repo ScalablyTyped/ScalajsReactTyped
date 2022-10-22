@@ -1,29 +1,34 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A simple low-order filter, and is created using the AudioContext.createBiquadFilter() method. It is an AudioNode that can represent different kinds of filters, tone control devices, and graphic equalizers. */
 @js.native
-trait BiquadFilterNode extends AudioNode {
-  val Q: org.scalajs.dom.raw.AudioParam = js.native
-  val detune: org.scalajs.dom.raw.AudioParam = js.native
-  val frequency: org.scalajs.dom.raw.AudioParam = js.native
-  val gain: org.scalajs.dom.raw.AudioParam = js.native
-  var `type`: BiquadFilterType = js.native
+trait BiquadFilterNode
+  extends StObject
+     with AudioNode {
+  
+  /* standard dom */
+  val Q: org.scalajs.dom.AudioParam = js.native
+  
+  /* standard dom */
+  val detune: org.scalajs.dom.AudioParam = js.native
+  
+  /* standard dom */
+  val frequency: org.scalajs.dom.AudioParam = js.native
+  
+  /* standard dom */
+  val gain: org.scalajs.dom.AudioParam = js.native
+  
+  /* standard dom */
   def getFrequencyResponse(
-    frequencyHz: scala.scalajs.js.typedarray.Float32Array,
-    magResponse: scala.scalajs.js.typedarray.Float32Array,
-    phaseResponse: scala.scalajs.js.typedarray.Float32Array
+    frequencyHz: js.typedarray.Float32Array,
+    magResponse: js.typedarray.Float32Array,
+    phaseResponse: js.typedarray.Float32Array
   ): Unit = js.native
+  
+  /* standard dom */
+  var `type`: BiquadFilterType = js.native
 }
-
-@JSGlobal("BiquadFilterNode")
-@js.native
-object BiquadFilterNode
-  extends Instantiable1[/* context */ BaseAudioContext, BiquadFilterNode]
-     with Instantiable2[/* context */ BaseAudioContext, /* options */ BiquadFilterOptions, BiquadFilterNode]
-

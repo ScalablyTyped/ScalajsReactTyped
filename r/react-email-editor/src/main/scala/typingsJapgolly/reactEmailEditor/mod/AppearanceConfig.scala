@@ -1,22 +1,31 @@
 package typingsJapgolly.reactEmailEditor.mod
 
-import typingsJapgolly.reactEmailEditor.AnonTools
+import typingsJapgolly.reactEmailEditor.anon.Tools
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AppearanceConfig extends js.Object {
-  val panels: js.UndefOr[AnonTools] = js.undefined
+trait AppearanceConfig extends StObject {
+  
+  val panels: js.UndefOr[Tools] = js.undefined
+  
   val theme: js.UndefOr[ThemeColor] = js.undefined
 }
-
 object AppearanceConfig {
-  @scala.inline
-  def apply(panels: AnonTools = null, theme: ThemeColor = null): AppearanceConfig = {
+  
+  inline def apply(): AppearanceConfig = {
     val __obj = js.Dynamic.literal()
-    if (panels != null) __obj.updateDynamic("panels")(panels.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppearanceConfig]
   }
+  
+  extension [Self <: AppearanceConfig](x: Self) {
+    
+    inline def setPanels(value: Tools): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
+    
+    inline def setPanelsUndefined: Self = StObject.set(x, "panels", js.undefined)
+    
+    inline def setTheme(value: ThemeColor): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+  }
 }
-

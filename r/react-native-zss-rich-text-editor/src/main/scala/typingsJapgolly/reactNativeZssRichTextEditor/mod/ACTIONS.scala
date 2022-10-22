@@ -1,335 +1,333 @@
 package typingsJapgolly.reactNativeZssRichTextEditor.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ACTIONS extends js.Object
-
+sealed trait ACTIONS extends StObject
 @JSImport("react-native-zss-rich-text-editor", "ACTIONS")
 @js.native
-object ACTIONS extends js.Object {
-  @js.native
-  sealed trait alignCenter extends ACTIONS
-  
-  @js.native
-  sealed trait alignFull extends ACTIONS
-  
-  @js.native
-  sealed trait alignLeft extends ACTIONS
-  
-  @js.native
-  sealed trait alignRight extends ACTIONS
-  
-  @js.native
-  sealed trait blurContentEditor extends ACTIONS
-  
-  @js.native
-  sealed trait blurTitleEditor extends ACTIONS
-  
-  @js.native
-  sealed trait enableOnChange extends ACTIONS
-  
-  @js.native
-  sealed trait focusContent extends ACTIONS
-  
-  @js.native
-  sealed trait focusTitle extends ACTIONS
-  
-  @js.native
-  sealed trait getContentHtml extends ACTIONS
-  
-  @js.native
-  sealed trait getSelectedText extends ACTIONS
-  
-  @js.native
-  sealed trait getTitleHtml extends ACTIONS
-  
-  @js.native
-  sealed trait getTitleText extends ACTIONS
-  
-  @js.native
-  sealed trait heading1 extends ACTIONS
-  
-  @js.native
-  sealed trait heading2 extends ACTIONS
-  
-  @js.native
-  sealed trait heading3 extends ACTIONS
-  
-  @js.native
-  sealed trait heading4 extends ACTIONS
-  
-  @js.native
-  sealed trait heading5 extends ACTIONS
-  
-  @js.native
-  sealed trait heading6 extends ACTIONS
-  
-  @js.native
-  sealed trait hideTitle extends ACTIONS
-  
-  @js.native
-  sealed trait init extends ACTIONS
-  
-  @js.native
-  sealed trait insertBulletsList extends ACTIONS
-  
-  @js.native
-  sealed trait insertImage extends ACTIONS
-  
-  @js.native
-  sealed trait insertLink extends ACTIONS
-  
-  @js.native
-  sealed trait insertOrderedList extends ACTIONS
-  
-  @js.native
-  sealed trait prepareInsert extends ACTIONS
-  
-  @js.native
-  sealed trait removeFormat extends ACTIONS
-  
-  @js.native
-  sealed trait restoreSelection extends ACTIONS
-  
-  @js.native
-  sealed trait setBackgroundColor extends ACTIONS
-  
-  @js.native
-  sealed trait setBold extends ACTIONS
-  
-  @js.native
-  sealed trait setContentFocusHandler extends ACTIONS
-  
-  @js.native
-  sealed trait setContentHtml extends ACTIONS
-  
-  @js.native
-  sealed trait setContentPlaceholder extends ACTIONS
-  
-  @js.native
-  sealed trait setCustomCSS extends ACTIONS
-  
-  @js.native
-  sealed trait setEditorHeight extends ACTIONS
-  
-  @js.native
-  sealed trait setFooterHeight extends ACTIONS
-  
-  @js.native
-  sealed trait setHR extends ACTIONS
-  
-  @js.native
-  sealed trait setIndent extends ACTIONS
-  
-  @js.native
-  sealed trait setItalic extends ACTIONS
-  
-  @js.native
-  sealed trait setOutdent extends ACTIONS
-  
-  @js.native
-  sealed trait setParagraph extends ACTIONS
-  
-  @js.native
-  sealed trait setPlatform extends ACTIONS
-  
-  @js.native
-  sealed trait setStrikethrough extends ACTIONS
-  
-  @js.native
-  sealed trait setSubscript extends ACTIONS
-  
-  @js.native
-  sealed trait setSuperscript extends ACTIONS
-  
-  @js.native
-  sealed trait setTextColor extends ACTIONS
-  
-  @js.native
-  sealed trait setTitleFocusHandler extends ACTIONS
-  
-  @js.native
-  sealed trait setTitleHtml extends ACTIONS
-  
-  @js.native
-  sealed trait setTitlePlaceholder extends ACTIONS
-  
-  @js.native
-  sealed trait setUnderline extends ACTIONS
-  
-  @js.native
-  sealed trait showTitle extends ACTIONS
-  
-  @js.native
-  sealed trait toggleTitle extends ACTIONS
-  
-  @js.native
-  sealed trait updateLink extends ACTIONS
+object ACTIONS extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[ACTIONS with String] = js.native
-  /* "justifyCenter" */ @js.native
-  object alignCenter extends TopLevel[alignCenter with String]
+  def apply(value: String): js.UndefOr[ACTIONS & String] = js.native
   
-  /* "justifyFull" */ @js.native
-  object alignFull extends TopLevel[alignFull with String]
+  @js.native
+  sealed trait alignCenter
+    extends StObject
+       with ACTIONS
+  /* "justifyCenter" */ val alignCenter: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.alignCenter & String = js.native
   
-  /* "justifyLeft" */ @js.native
-  object alignLeft extends TopLevel[alignLeft with String]
+  @js.native
+  sealed trait alignFull
+    extends StObject
+       with ACTIONS
+  /* "justifyFull" */ val alignFull: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.alignFull & String = js.native
   
-  /* "justifyRight" */ @js.native
-  object alignRight extends TopLevel[alignRight with String]
+  @js.native
+  sealed trait alignLeft
+    extends StObject
+       with ACTIONS
+  /* "justifyLeft" */ val alignLeft: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.alignLeft & String = js.native
   
-  /* "BLUR_CONTENT_EDITOR" */ @js.native
-  object blurContentEditor extends TopLevel[blurContentEditor with String]
+  @js.native
+  sealed trait alignRight
+    extends StObject
+       with ACTIONS
+  /* "justifyRight" */ val alignRight: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.alignRight & String = js.native
   
-  /* "BLUR_TITLE_EDITOR" */ @js.native
-  object blurTitleEditor extends TopLevel[blurTitleEditor with String]
+  @js.native
+  sealed trait blurContentEditor
+    extends StObject
+       with ACTIONS
+  /* "BLUR_CONTENT_EDITOR" */ val blurContentEditor: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.blurContentEditor & String = js.native
   
-  /* "ENABLE_ON_CHANGE" */ @js.native
-  object enableOnChange extends TopLevel[enableOnChange with String]
+  @js.native
+  sealed trait blurTitleEditor
+    extends StObject
+       with ACTIONS
+  /* "BLUR_TITLE_EDITOR" */ val blurTitleEditor: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.blurTitleEditor & String = js.native
   
-  /* "FOCUS_CONTENT" */ @js.native
-  object focusContent extends TopLevel[focusContent with String]
+  @js.native
+  sealed trait enableOnChange
+    extends StObject
+       with ACTIONS
+  /* "ENABLE_ON_CHANGE" */ val enableOnChange: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.enableOnChange & String = js.native
   
-  /* "FOCUS_TITLE" */ @js.native
-  object focusTitle extends TopLevel[focusTitle with String]
+  @js.native
+  sealed trait focusContent
+    extends StObject
+       with ACTIONS
+  /* "FOCUS_CONTENT" */ val focusContent: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.focusContent & String = js.native
   
-  /* "GET_CONTENT_HTML" */ @js.native
-  object getContentHtml extends TopLevel[getContentHtml with String]
+  @js.native
+  sealed trait focusTitle
+    extends StObject
+       with ACTIONS
+  /* "FOCUS_TITLE" */ val focusTitle: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.focusTitle & String = js.native
   
-  /* "GET_SELECTED_TEXT" */ @js.native
-  object getSelectedText extends TopLevel[getSelectedText with String]
+  @js.native
+  sealed trait getContentHtml
+    extends StObject
+       with ACTIONS
+  /* "GET_CONTENT_HTML" */ val getContentHtml: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.getContentHtml & String = js.native
   
-  /* "GET_TITLE_HTML" */ @js.native
-  object getTitleHtml extends TopLevel[getTitleHtml with String]
+  @js.native
+  sealed trait getSelectedText
+    extends StObject
+       with ACTIONS
+  /* "GET_SELECTED_TEXT" */ val getSelectedText: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.getSelectedText & String = js.native
   
-  /* "GET_TITLE_TEXT" */ @js.native
-  object getTitleText extends TopLevel[getTitleText with String]
+  @js.native
+  sealed trait getTitleHtml
+    extends StObject
+       with ACTIONS
+  /* "GET_TITLE_HTML" */ val getTitleHtml: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.getTitleHtml & String = js.native
   
-  /* "h1" */ @js.native
-  object heading1 extends TopLevel[heading1 with String]
+  @js.native
+  sealed trait getTitleText
+    extends StObject
+       with ACTIONS
+  /* "GET_TITLE_TEXT" */ val getTitleText: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.getTitleText & String = js.native
   
-  /* "h2" */ @js.native
-  object heading2 extends TopLevel[heading2 with String]
+  @js.native
+  sealed trait heading1
+    extends StObject
+       with ACTIONS
+  /* "h1" */ val heading1: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.heading1 & String = js.native
   
-  /* "h3" */ @js.native
-  object heading3 extends TopLevel[heading3 with String]
+  @js.native
+  sealed trait heading2
+    extends StObject
+       with ACTIONS
+  /* "h2" */ val heading2: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.heading2 & String = js.native
   
-  /* "h4" */ @js.native
-  object heading4 extends TopLevel[heading4 with String]
+  @js.native
+  sealed trait heading3
+    extends StObject
+       with ACTIONS
+  /* "h3" */ val heading3: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.heading3 & String = js.native
   
-  /* "h5" */ @js.native
-  object heading5 extends TopLevel[heading5 with String]
+  @js.native
+  sealed trait heading4
+    extends StObject
+       with ACTIONS
+  /* "h4" */ val heading4: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.heading4 & String = js.native
   
-  /* "h6" */ @js.native
-  object heading6 extends TopLevel[heading6 with String]
+  @js.native
+  sealed trait heading5
+    extends StObject
+       with ACTIONS
+  /* "h5" */ val heading5: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.heading5 & String = js.native
   
-  /* "HIDE_TITLE" */ @js.native
-  object hideTitle extends TopLevel[hideTitle with String]
+  @js.native
+  sealed trait heading6
+    extends StObject
+       with ACTIONS
+  /* "h6" */ val heading6: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.heading6 & String = js.native
   
-  /* "ZSSS_INIT" */ @js.native
-  object init extends TopLevel[init with String]
+  @js.native
+  sealed trait hideTitle
+    extends StObject
+       with ACTIONS
+  /* "HIDE_TITLE" */ val hideTitle: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.hideTitle & String = js.native
   
-  /* "unorderedList" */ @js.native
-  object insertBulletsList extends TopLevel[insertBulletsList with String]
+  @js.native
+  sealed trait init
+    extends StObject
+       with ACTIONS
+  /* "ZSSS_INIT" */ val init: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.init & String = js.native
   
-  /* "INST_IMAGE" */ @js.native
-  object insertImage extends TopLevel[insertImage with String]
+  @js.native
+  sealed trait insertBulletsList
+    extends StObject
+       with ACTIONS
+  /* "unorderedList" */ val insertBulletsList: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.insertBulletsList & String = js.native
   
-  /* "INST_LINK" */ @js.native
-  object insertLink extends TopLevel[insertLink with String]
+  @js.native
+  sealed trait insertImage
+    extends StObject
+       with ACTIONS
+  /* "INST_IMAGE" */ val insertImage: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.insertImage & String = js.native
   
-  /* "orderedList" */ @js.native
-  object insertOrderedList extends TopLevel[insertOrderedList with String]
+  @js.native
+  sealed trait insertLink
+    extends StObject
+       with ACTIONS
+  /* "INST_LINK" */ val insertLink: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.insertLink & String = js.native
   
-  /* "PREPARE_INSERT" */ @js.native
-  object prepareInsert extends TopLevel[prepareInsert with String]
+  @js.native
+  sealed trait insertOrderedList
+    extends StObject
+       with ACTIONS
+  /* "orderedList" */ val insertOrderedList: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.insertOrderedList & String = js.native
   
-  /* "REMOVE_FORMAT" */ @js.native
-  object removeFormat extends TopLevel[removeFormat with String]
+  @js.native
+  sealed trait prepareInsert
+    extends StObject
+       with ACTIONS
+  /* "PREPARE_INSERT" */ val prepareInsert: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.prepareInsert & String = js.native
   
-  /* "RESTORE_SELECTION" */ @js.native
-  object restoreSelection extends TopLevel[restoreSelection with String]
+  @js.native
+  sealed trait removeFormat
+    extends StObject
+       with ACTIONS
+  /* "REMOVE_FORMAT" */ val removeFormat: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.removeFormat & String = js.native
   
-  /* "SET_BACKGROUND_COLOR" */ @js.native
-  object setBackgroundColor extends TopLevel[setBackgroundColor with String]
+  @js.native
+  sealed trait restoreSelection
+    extends StObject
+       with ACTIONS
+  /* "RESTORE_SELECTION" */ val restoreSelection: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.restoreSelection & String = js.native
   
-  /* "bold" */ @js.native
-  object setBold extends TopLevel[setBold with String]
+  @js.native
+  sealed trait setBackgroundColor
+    extends StObject
+       with ACTIONS
+  /* "SET_BACKGROUND_COLOR" */ val setBackgroundColor: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setBackgroundColor & String = js.native
   
-  /* "SET_CONTENT_FOCUS_HANDLER" */ @js.native
-  object setContentFocusHandler extends TopLevel[setContentFocusHandler with String]
+  @js.native
+  sealed trait setBold
+    extends StObject
+       with ACTIONS
+  /* "bold" */ val setBold: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setBold & String = js.native
   
-  /* "SET_CONTENT_HTML" */ @js.native
-  object setContentHtml extends TopLevel[setContentHtml with String]
+  @js.native
+  sealed trait setContentFocusHandler
+    extends StObject
+       with ACTIONS
+  /* "SET_CONTENT_FOCUS_HANDLER" */ val setContentFocusHandler: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setContentFocusHandler & String = js.native
   
-  /* "SET_CONTENT_PLACEHOLDER" */ @js.native
-  object setContentPlaceholder extends TopLevel[setContentPlaceholder with String]
+  @js.native
+  sealed trait setContentHtml
+    extends StObject
+       with ACTIONS
+  /* "SET_CONTENT_HTML" */ val setContentHtml: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setContentHtml & String = js.native
   
-  /* "SET_CUSTOM_CSS" */ @js.native
-  object setCustomCSS extends TopLevel[setCustomCSS with String]
+  @js.native
+  sealed trait setContentPlaceholder
+    extends StObject
+       with ACTIONS
+  /* "SET_CONTENT_PLACEHOLDER" */ val setContentPlaceholder: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setContentPlaceholder & String = js.native
   
-  /* "SET_EDITOR_HEIGHT" */ @js.native
-  object setEditorHeight extends TopLevel[setEditorHeight with String]
+  @js.native
+  sealed trait setCustomCSS
+    extends StObject
+       with ACTIONS
+  /* "SET_CUSTOM_CSS" */ val setCustomCSS: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setCustomCSS & String = js.native
   
-  /* "SET_FOOTER_HEIGHT" */ @js.native
-  object setFooterHeight extends TopLevel[setFooterHeight with String]
+  @js.native
+  sealed trait setEditorHeight
+    extends StObject
+       with ACTIONS
+  /* "SET_EDITOR_HEIGHT" */ val setEditorHeight: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setEditorHeight & String = js.native
   
-  /* "horizontalRule" */ @js.native
-  object setHR extends TopLevel[setHR with String]
+  @js.native
+  sealed trait setFooterHeight
+    extends StObject
+       with ACTIONS
+  /* "SET_FOOTER_HEIGHT" */ val setFooterHeight: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setFooterHeight & String = js.native
   
-  /* "indent" */ @js.native
-  object setIndent extends TopLevel[setIndent with String]
+  @js.native
+  sealed trait setHR
+    extends StObject
+       with ACTIONS
+  /* "horizontalRule" */ val setHR: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setHR & String = js.native
   
-  /* "italic" */ @js.native
-  object setItalic extends TopLevel[setItalic with String]
+  @js.native
+  sealed trait setIndent
+    extends StObject
+       with ACTIONS
+  /* "indent" */ val setIndent: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setIndent & String = js.native
   
-  /* "outdent" */ @js.native
-  object setOutdent extends TopLevel[setOutdent with String]
+  @js.native
+  sealed trait setItalic
+    extends StObject
+       with ACTIONS
+  /* "italic" */ val setItalic: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setItalic & String = js.native
   
-  /* "SET_PARAGRAPH" */ @js.native
-  object setParagraph extends TopLevel[setParagraph with String]
+  @js.native
+  sealed trait setOutdent
+    extends StObject
+       with ACTIONS
+  /* "outdent" */ val setOutdent: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setOutdent & String = js.native
   
-  /* "SET_PLATFORM" */ @js.native
-  object setPlatform extends TopLevel[setPlatform with String]
+  @js.native
+  sealed trait setParagraph
+    extends StObject
+       with ACTIONS
+  /* "SET_PARAGRAPH" */ val setParagraph: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setParagraph & String = js.native
   
-  /* "strikeThrough" */ @js.native
-  object setStrikethrough extends TopLevel[setStrikethrough with String]
+  @js.native
+  sealed trait setPlatform
+    extends StObject
+       with ACTIONS
+  /* "SET_PLATFORM" */ val setPlatform: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setPlatform & String = js.native
   
-  /* "subscript" */ @js.native
-  object setSubscript extends TopLevel[setSubscript with String]
+  @js.native
+  sealed trait setStrikethrough
+    extends StObject
+       with ACTIONS
+  /* "strikeThrough" */ val setStrikethrough: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setStrikethrough & String = js.native
   
-  /* "superscript" */ @js.native
-  object setSuperscript extends TopLevel[setSuperscript with String]
+  @js.native
+  sealed trait setSubscript
+    extends StObject
+       with ACTIONS
+  /* "subscript" */ val setSubscript: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setSubscript & String = js.native
   
-  /* "SET_TEXT_COLOR" */ @js.native
-  object setTextColor extends TopLevel[setTextColor with String]
+  @js.native
+  sealed trait setSuperscript
+    extends StObject
+       with ACTIONS
+  /* "superscript" */ val setSuperscript: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setSuperscript & String = js.native
   
-  /* "SET_TITLE_FOCUS_HANDLER" */ @js.native
-  object setTitleFocusHandler extends TopLevel[setTitleFocusHandler with String]
+  @js.native
+  sealed trait setTextColor
+    extends StObject
+       with ACTIONS
+  /* "SET_TEXT_COLOR" */ val setTextColor: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setTextColor & String = js.native
   
-  /* "SET_TITLE_HTML" */ @js.native
-  object setTitleHtml extends TopLevel[setTitleHtml with String]
+  @js.native
+  sealed trait setTitleFocusHandler
+    extends StObject
+       with ACTIONS
+  /* "SET_TITLE_FOCUS_HANDLER" */ val setTitleFocusHandler: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setTitleFocusHandler & String = js.native
   
-  /* "SET_TITLE_PLACEHOLDER" */ @js.native
-  object setTitlePlaceholder extends TopLevel[setTitlePlaceholder with String]
+  @js.native
+  sealed trait setTitleHtml
+    extends StObject
+       with ACTIONS
+  /* "SET_TITLE_HTML" */ val setTitleHtml: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setTitleHtml & String = js.native
   
-  /* "underline" */ @js.native
-  object setUnderline extends TopLevel[setUnderline with String]
+  @js.native
+  sealed trait setTitlePlaceholder
+    extends StObject
+       with ACTIONS
+  /* "SET_TITLE_PLACEHOLDER" */ val setTitlePlaceholder: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setTitlePlaceholder & String = js.native
   
-  /* "SHOW_TITLE" */ @js.native
-  object showTitle extends TopLevel[showTitle with String]
+  @js.native
+  sealed trait setUnderline
+    extends StObject
+       with ACTIONS
+  /* "underline" */ val setUnderline: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.setUnderline & String = js.native
   
-  /* "TOGGLE_TITLE" */ @js.native
-  object toggleTitle extends TopLevel[toggleTitle with String]
+  @js.native
+  sealed trait showTitle
+    extends StObject
+       with ACTIONS
+  /* "SHOW_TITLE" */ val showTitle: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.showTitle & String = js.native
   
-  /* "UPDATE_LINK" */ @js.native
-  object updateLink extends TopLevel[updateLink with String]
+  @js.native
+  sealed trait toggleTitle
+    extends StObject
+       with ACTIONS
+  /* "TOGGLE_TITLE" */ val toggleTitle: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.toggleTitle & String = js.native
   
+  @js.native
+  sealed trait updateLink
+    extends StObject
+       with ACTIONS
+  /* "UPDATE_LINK" */ val updateLink: typingsJapgolly.reactNativeZssRichTextEditor.mod.ACTIONS.updateLink & String = js.native
 }
-

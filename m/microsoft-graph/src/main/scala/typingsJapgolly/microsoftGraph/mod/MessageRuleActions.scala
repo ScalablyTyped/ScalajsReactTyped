@@ -1,62 +1,125 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MessageRuleActions extends js.Object {
+trait MessageRuleActions extends StObject {
+  
   // A list of categories to be assigned to a message.
-  var assignCategories: js.UndefOr[js.Array[String]] = js.undefined
+  var assignCategories: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
+  
   // The ID of a folder that a message is to be copied to.
-  var copyToFolder: js.UndefOr[String] = js.undefined
+  var copyToFolder: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Indicates whether a message should be moved to the Deleted Items folder.
-  var delete: js.UndefOr[Boolean] = js.undefined
+  var delete: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // The email addresses of the recipients to which a message should be forwarded as an attachment.
-  var forwardAsAttachmentTo: js.UndefOr[js.Array[Recipient]] = js.undefined
+  var forwardAsAttachmentTo: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.undefined
+  
   // The email addresses of the recipients to which a message should be forwarded.
-  var forwardTo: js.UndefOr[js.Array[Recipient]] = js.undefined
+  var forwardTo: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.undefined
+  
   // Indicates whether a message should be marked as read.
-  var markAsRead: js.UndefOr[Boolean] = js.undefined
+  var markAsRead: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // Sets the importance of the message, which can be: low, normal, high.
-  var markImportance: js.UndefOr[Importance] = js.undefined
+  var markImportance: js.UndefOr[NullableOption[Importance]] = js.undefined
+  
   // The ID of the folder that a message will be moved to.
-  var moveToFolder: js.UndefOr[String] = js.undefined
+  var moveToFolder: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder.
-  var permanentDelete: js.UndefOr[Boolean] = js.undefined
+  var permanentDelete: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // The email addresses to which a message should be redirected.
-  var redirectTo: js.UndefOr[js.Array[Recipient]] = js.undefined
+  var redirectTo: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.undefined
+  
   // Indicates whether subsequent rules should be evaluated.
-  var stopProcessingRules: js.UndefOr[Boolean] = js.undefined
+  var stopProcessingRules: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
-
 object MessageRuleActions {
-  @scala.inline
-  def apply(
-    assignCategories: js.Array[String] = null,
-    copyToFolder: String = null,
-    delete: js.UndefOr[Boolean] = js.undefined,
-    forwardAsAttachmentTo: js.Array[Recipient] = null,
-    forwardTo: js.Array[Recipient] = null,
-    markAsRead: js.UndefOr[Boolean] = js.undefined,
-    markImportance: Importance = null,
-    moveToFolder: String = null,
-    permanentDelete: js.UndefOr[Boolean] = js.undefined,
-    redirectTo: js.Array[Recipient] = null,
-    stopProcessingRules: js.UndefOr[Boolean] = js.undefined
-  ): MessageRuleActions = {
+  
+  inline def apply(): MessageRuleActions = {
     val __obj = js.Dynamic.literal()
-    if (assignCategories != null) __obj.updateDynamic("assignCategories")(assignCategories.asInstanceOf[js.Any])
-    if (copyToFolder != null) __obj.updateDynamic("copyToFolder")(copyToFolder.asInstanceOf[js.Any])
-    if (!js.isUndefined(delete)) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
-    if (forwardAsAttachmentTo != null) __obj.updateDynamic("forwardAsAttachmentTo")(forwardAsAttachmentTo.asInstanceOf[js.Any])
-    if (forwardTo != null) __obj.updateDynamic("forwardTo")(forwardTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(markAsRead)) __obj.updateDynamic("markAsRead")(markAsRead.asInstanceOf[js.Any])
-    if (markImportance != null) __obj.updateDynamic("markImportance")(markImportance.asInstanceOf[js.Any])
-    if (moveToFolder != null) __obj.updateDynamic("moveToFolder")(moveToFolder.asInstanceOf[js.Any])
-    if (!js.isUndefined(permanentDelete)) __obj.updateDynamic("permanentDelete")(permanentDelete.asInstanceOf[js.Any])
-    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopProcessingRules)) __obj.updateDynamic("stopProcessingRules")(stopProcessingRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageRuleActions]
   }
+  
+  extension [Self <: MessageRuleActions](x: Self) {
+    
+    inline def setAssignCategories(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "assignCategories", value.asInstanceOf[js.Any])
+    
+    inline def setAssignCategoriesNull: Self = StObject.set(x, "assignCategories", null)
+    
+    inline def setAssignCategoriesUndefined: Self = StObject.set(x, "assignCategories", js.undefined)
+    
+    inline def setAssignCategoriesVarargs(value: String*): Self = StObject.set(x, "assignCategories", js.Array(value*))
+    
+    inline def setCopyToFolder(value: NullableOption[String]): Self = StObject.set(x, "copyToFolder", value.asInstanceOf[js.Any])
+    
+    inline def setCopyToFolderNull: Self = StObject.set(x, "copyToFolder", null)
+    
+    inline def setCopyToFolderUndefined: Self = StObject.set(x, "copyToFolder", js.undefined)
+    
+    inline def setDelete(value: NullableOption[Boolean]): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteNull: Self = StObject.set(x, "delete", null)
+    
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    
+    inline def setForwardAsAttachmentTo(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "forwardAsAttachmentTo", value.asInstanceOf[js.Any])
+    
+    inline def setForwardAsAttachmentToNull: Self = StObject.set(x, "forwardAsAttachmentTo", null)
+    
+    inline def setForwardAsAttachmentToUndefined: Self = StObject.set(x, "forwardAsAttachmentTo", js.undefined)
+    
+    inline def setForwardAsAttachmentToVarargs(value: Recipient*): Self = StObject.set(x, "forwardAsAttachmentTo", js.Array(value*))
+    
+    inline def setForwardTo(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "forwardTo", value.asInstanceOf[js.Any])
+    
+    inline def setForwardToNull: Self = StObject.set(x, "forwardTo", null)
+    
+    inline def setForwardToUndefined: Self = StObject.set(x, "forwardTo", js.undefined)
+    
+    inline def setForwardToVarargs(value: Recipient*): Self = StObject.set(x, "forwardTo", js.Array(value*))
+    
+    inline def setMarkAsRead(value: NullableOption[Boolean]): Self = StObject.set(x, "markAsRead", value.asInstanceOf[js.Any])
+    
+    inline def setMarkAsReadNull: Self = StObject.set(x, "markAsRead", null)
+    
+    inline def setMarkAsReadUndefined: Self = StObject.set(x, "markAsRead", js.undefined)
+    
+    inline def setMarkImportance(value: NullableOption[Importance]): Self = StObject.set(x, "markImportance", value.asInstanceOf[js.Any])
+    
+    inline def setMarkImportanceNull: Self = StObject.set(x, "markImportance", null)
+    
+    inline def setMarkImportanceUndefined: Self = StObject.set(x, "markImportance", js.undefined)
+    
+    inline def setMoveToFolder(value: NullableOption[String]): Self = StObject.set(x, "moveToFolder", value.asInstanceOf[js.Any])
+    
+    inline def setMoveToFolderNull: Self = StObject.set(x, "moveToFolder", null)
+    
+    inline def setMoveToFolderUndefined: Self = StObject.set(x, "moveToFolder", js.undefined)
+    
+    inline def setPermanentDelete(value: NullableOption[Boolean]): Self = StObject.set(x, "permanentDelete", value.asInstanceOf[js.Any])
+    
+    inline def setPermanentDeleteNull: Self = StObject.set(x, "permanentDelete", null)
+    
+    inline def setPermanentDeleteUndefined: Self = StObject.set(x, "permanentDelete", js.undefined)
+    
+    inline def setRedirectTo(value: NullableOption[js.Array[Recipient]]): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
+    
+    inline def setRedirectToNull: Self = StObject.set(x, "redirectTo", null)
+    
+    inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
+    
+    inline def setRedirectToVarargs(value: Recipient*): Self = StObject.set(x, "redirectTo", js.Array(value*))
+    
+    inline def setStopProcessingRules(value: NullableOption[Boolean]): Self = StObject.set(x, "stopProcessingRules", value.asInstanceOf[js.Any])
+    
+    inline def setStopProcessingRulesNull: Self = StObject.set(x, "stopProcessingRules", null)
+    
+    inline def setStopProcessingRulesUndefined: Self = StObject.set(x, "stopProcessingRules", js.undefined)
+  }
 }
-

@@ -10,15 +10,12 @@ The hassle-free way to integrate analytics into any Node.js application
 | ------------------ | :-------------: |
 | Full name          | analytics-node |
 | Keywords           | analytics, stats, segment.io, segmentio, segment, client, driver |
-| # releases         | 6 |
-| # dependents       | 78 |
-| # downloads        | 7042403 |
-| # stars            | 4 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 2026131.6666666667 |
+| # stars            | 559.0 |
 
 ## Links
-- [Homepage](https://github.com/segmentio/analytics-node#readme)
-- [Bugs](https://github.com/segmentio/analytics-node/issues)
-- [Repository](https://github.com/segmentio/analytics-node)
 - [Npm](https://www.npmjs.com/package/analytics-node)
     
 

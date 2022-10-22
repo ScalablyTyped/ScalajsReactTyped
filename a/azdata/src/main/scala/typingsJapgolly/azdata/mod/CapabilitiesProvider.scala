@@ -1,26 +1,28 @@
 package typingsJapgolly.azdata.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CapabilitiesProvider extends DataProvider {
+trait CapabilitiesProvider
+  extends StObject
+     with DataProvider {
+  
   def getServerCapabilities(client: DataProtocolClientCapabilities): Thenable[DataProtocolServerCapabilities]
 }
-
 object CapabilitiesProvider {
-  @scala.inline
-  def apply(
-    getServerCapabilities: DataProtocolClientCapabilities => CallbackTo[Thenable[DataProtocolServerCapabilities]],
-    providerId: String,
-    handle: Int | Double = null
+  
+  inline def apply(
+    getServerCapabilities: DataProtocolClientCapabilities => Thenable[DataProtocolServerCapabilities],
+    providerId: String
   ): CapabilitiesProvider = {
-    val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any])
-    __obj.updateDynamic("getServerCapabilities")(js.Any.fromFunction1((t0: typingsJapgolly.azdata.mod.DataProtocolClientCapabilities) => getServerCapabilities(t0).runNow()))
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getServerCapabilities = js.Any.fromFunction1(getServerCapabilities), providerId = providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapabilitiesProvider]
   }
+  
+  extension [Self <: CapabilitiesProvider](x: Self) {
+    
+    inline def setGetServerCapabilities(value: DataProtocolClientCapabilities => Thenable[DataProtocolServerCapabilities]): Self = StObject.set(x, "getServerCapabilities", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,35 +1,35 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ReturnStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
+  
   var argument: js.UndefOr[Expression | Null] = js.undefined
+  
   @JSName("type")
   var type_ReturnStatement: typingsJapgolly.estree.estreeStrings.ReturnStatement
 }
-
 object ReturnStatement {
-  @scala.inline
-  def apply(
-    `type`: typingsJapgolly.estree.estreeStrings.ReturnStatement,
-    argument: Expression = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ReturnStatement = {
+  
+  inline def apply(): ReturnStatement = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ReturnStatement")
     __obj.asInstanceOf[ReturnStatement]
   }
+  
+  extension [Self <: ReturnStatement](x: Self) {
+    
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    
+    inline def setArgumentNull: Self = StObject.set(x, "argument", null)
+    
+    inline def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.ReturnStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

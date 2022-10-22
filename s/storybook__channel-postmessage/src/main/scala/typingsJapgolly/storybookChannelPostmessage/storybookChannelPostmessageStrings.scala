@@ -1,24 +1,16 @@
 package typingsJapgolly.storybookChannelPostmessage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storybookChannelPostmessageStrings {
-  @js.native
-  sealed trait manager extends js.Object
   
   @js.native
-  sealed trait preview extends js.Object
+  sealed trait manager extends StObject
+  inline def manager: manager = "manager".asInstanceOf[manager]
   
   @js.native
-  sealed trait `storybook-channel` extends js.Object
-  
-  @scala.inline
-  def manager: manager = "manager".asInstanceOf[manager]
-  @scala.inline
-  def preview: preview = "preview".asInstanceOf[preview]
-  @scala.inline
-  def `storybook-channel`: `storybook-channel` = "storybook-channel".asInstanceOf[`storybook-channel`]
+  sealed trait preview extends StObject
+  inline def preview: preview = "preview".asInstanceOf[preview]
 }
-

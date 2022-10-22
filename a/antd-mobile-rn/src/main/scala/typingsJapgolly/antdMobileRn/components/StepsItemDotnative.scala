@@ -1,60 +1,49 @@
 package typingsJapgolly.antdMobileRn.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.stepsItemNativeMod.StepsItemProps
-import typingsJapgolly.antdMobileRn.stepsItemNativeMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.libStepsStepsItemDotnativeMod.StepsItemProps
+import typingsJapgolly.antdMobileRn.libStepsStepsItemDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StepsItemDotnative {
-  def apply(
-    current: Int | Double = null,
-    description: String = null,
-    direction: String = null,
-    errorTail: Int | Double = null,
-    icon: String = null,
-    index: Int | Double = null,
-    last: js.UndefOr[Boolean] = js.undefined,
-    size: String = null,
-    status: String = null,
-    styles: js.Any = null,
-    title: String = null,
-    width: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[StepsItemProps, default, Unit, StepsItemProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (errorTail != null) __obj.updateDynamic("errorTail")(errorTail.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.stepsItemNativeMod.StepsItemProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.stepsItemNativeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.stepsItemNativeMod.StepsItemProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn/lib/steps/StepsItem.native", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def current(value: Double): this.type = set("current", value.asInstanceOf[js.Any])
+    
+    inline def description(value: String): this.type = set("description", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: String): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def errorTail(value: Double): this.type = set("errorTail", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: String): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def index(value: Double): this.type = set("index", value.asInstanceOf[js.Any])
+    
+    inline def last(value: Boolean): this.type = set("last", value.asInstanceOf[js.Any])
+    
+    inline def size(value: String): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def status(value: String): this.type = set("status", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: Any): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: StepsItemDotnative.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: StepsItemProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

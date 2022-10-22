@@ -1,43 +1,55 @@
 package typingsJapgolly.karma.mod
 
-import typingsJapgolly.karma.karmaStrings.debug
-import typingsJapgolly.karma.karmaStrings.error
-import typingsJapgolly.karma.karmaStrings.info
-import typingsJapgolly.karma.karmaStrings.log
-import typingsJapgolly.karma.karmaStrings.warn
+import typingsJapgolly.karma.karmaStrings.debug_
+import typingsJapgolly.karma.karmaStrings.error_
+import typingsJapgolly.karma.karmaStrings.info_
+import typingsJapgolly.karma.karmaStrings.log_
+import typingsJapgolly.karma.karmaStrings.warn_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BrowserConsoleLogOptions extends js.Object {
+trait BrowserConsoleLogOptions extends StObject {
+  
   /**
     * The format is a string where `%b`, `%t`, `%T`, and `%m` are replaced with the browser string,
     * log type in lower-case, log type in uppercase, and log message, respectively.
     * This format will only effect the output file
     */
   var format: js.UndefOr[String] = js.undefined
+  
   /** the desired log-level, where level log always is logged */
-  var level: js.UndefOr[log | error | warn | info | debug] = js.undefined
+  var level: js.UndefOr[log_ | error_ | warn_ | info_ | debug_] = js.undefined
+  
   /** output-path of the output-file */
   var path: js.UndefOr[String] = js.undefined
+  
   /** if the log should be written in the terminal, or not */
   var terminal: js.UndefOr[Boolean] = js.undefined
 }
-
 object BrowserConsoleLogOptions {
-  @scala.inline
-  def apply(
-    format: String = null,
-    level: log | error | warn | info | debug = null,
-    path: String = null,
-    terminal: js.UndefOr[Boolean] = js.undefined
-  ): BrowserConsoleLogOptions = {
+  
+  inline def apply(): BrowserConsoleLogOptions = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserConsoleLogOptions]
   }
+  
+  extension [Self <: BrowserConsoleLogOptions](x: Self) {
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setLevel(value: log_ | error_ | warn_ | info_ | debug_): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setTerminal(value: Boolean): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
+    
+    inline def setTerminalUndefined: Self = StObject.set(x, "terminal", js.undefined)
+  }
 }
-

@@ -1,50 +1,46 @@
 package typingsJapgolly.rsocketFlowable
 
-import typingsJapgolly.std.Partial
+import typingsJapgolly.rsocketTypes.reactiveStreamTypesMod.IPublisher
+import typingsJapgolly.rsocketTypes.reactiveStreamTypesMod.ISubscriber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rsocket-flowable/Flowable", JSImport.Namespace)
-@js.native
-object flowableMod extends js.Object {
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPublisher<T> * / any */ @js.native
-  trait Flowable[T] extends js.Object {
-    def lift[R](
-      onSubscribeLift: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<R> */ /* subscriber */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ _
-        ]
-    ): Flowable[R] = js.native
-    def map[R](fn: js.Function1[/* data */ T, R]): Flowable[R] = js.native
-    def subscribe(): Unit = js.native
-    def subscribe(subscriberOrCallback: js.Function1[/* a */ T, Unit]): Unit = js.native
-    def subscribe(
-      subscriberOrCallback: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ _
-        ]
-    ): Unit = js.native
-    def take(toTake: Double): Flowable[T] = js.native
-  }
+object flowableMod {
   
+  @JSImport("rsocket-flowable/Flowable", JSImport.Default)
   @js.native
-  class default[T] protected () extends Flowable[T] {
+  open class default[T] protected ()
+    extends StObject
+       with Flowable[T] {
     def this(source: Source[T]) = this()
     def this(source: Source[T], max: Double) = this()
   }
-  
   /* static members */
-  @js.native
-  object default extends js.Object {
-    def error(error: js.Error): Flowable[js.Object] = js.native
-    def just[U](values: U*): Flowable[U] = js.native
-    def never(): Flowable[js.Object] = js.native
+  object default {
+    
+    @JSImport("rsocket-flowable/Flowable", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def error(error: js.Error): Flowable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any]).asInstanceOf[Flowable[scala.Nothing]]
+    
+    inline def just[U](values: U*): Flowable[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("just")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Flowable[U]]
+    
+    inline def never(): Flowable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Flowable[scala.Nothing]]
   }
   
-  type Source[T] = js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ /* subscriber */ js.Any, 
-    Unit
-  ]
+  @js.native
+  trait Flowable[T]
+    extends StObject
+       with IPublisher[T] {
+    
+    def lift[R](onSubscribeLift: js.Function1[/* subscriber */ ISubscriber[R], ISubscriber[T]]): Flowable[R] = js.native
+    
+    def subscribe(subscriberOrCallback: js.Function1[/* a */ T, Unit]): Unit = js.native
+    
+    def take(toTake: Double): Flowable[T] = js.native
+  }
+  
+  type Source[T] = js.Function1[/* subscriber */ ISubscriber[T], Unit]
 }
-

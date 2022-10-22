@@ -1,52 +1,127 @@
 package typingsJapgolly.meteor
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.connect.mod.Server
+import typingsJapgolly.meteor.anon.AbsolutePath
+import typingsJapgolly.meteor.anon.Arch
+import typingsJapgolly.meteor.anon.Major
+import typingsJapgolly.meteor.meteorBooleans.`false`
 import typingsJapgolly.node.httpMod.IncomingMessage
 import typingsJapgolly.node.httpMod.ServerResponse
+import typingsJapgolly.node.nodeColonnetMod.Socket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("meteor/webapp", JSImport.Namespace)
-@js.native
-object webappMod extends js.Object {
-  @js.native
-  object WebApp extends js.Object {
-    var connectApp: Server = js.native
-    var connectHandlers: Server = js.native
-    var defaultArch: String = js.native
-    var httpServer: typingsJapgolly.node.httpMod.Server = js.native
-    var rawConnectHandlers: Server = js.native
-    def onListening(callback: js.Function): Unit = js.native
-    def suppressConnectErrors(): Unit = js.native
-    @js.native
-    object clientPrograms extends /* key */ StringDictionary[AnonCordovaCompatibilityVersions]
+object webappMod {
+  
+  object WebApp {
     
+    @JSImport("meteor/webapp", "WebApp")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def addRuntimeConfigHook(callback: RuntimeConfigHookCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addRuntimeConfigHook")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @JSImport("meteor/webapp", "WebApp.connectApp")
+    @js.native
+    def connectApp: Server = js.native
+    inline def connectApp_=(x: Server): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectApp")(x.asInstanceOf[js.Any])
+    
+    @JSImport("meteor/webapp", "WebApp.connectHandlers")
+    @js.native
+    def connectHandlers: Server = js.native
+    inline def connectHandlers_=(x: Server): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectHandlers")(x.asInstanceOf[js.Any])
+    
+    inline def decodeRuntimeConfig(rtimeConfigString: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeRuntimeConfig")(rtimeConfigString.asInstanceOf[js.Any]).asInstanceOf[Any]
+    
+    @JSImport("meteor/webapp", "WebApp.defaultArch")
+    @js.native
+    def defaultArch: String = js.native
+    inline def defaultArch_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultArch")(x.asInstanceOf[js.Any])
+    
+    inline def encodeRuntimeConfig(rtimeConfig: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeRuntimeConfig")(rtimeConfig.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @JSImport("meteor/webapp", "WebApp.httpServer")
+    @js.native
+    def httpServer: typingsJapgolly.node.httpMod.Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    inline def httpServer_=(
+      x: typingsJapgolly.node.httpMod.Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("httpServer")(x.asInstanceOf[js.Any])
+    
+    inline def onListening(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onListening")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @JSImport("meteor/webapp", "WebApp.rawConnectHandlers")
+    @js.native
+    def rawConnectHandlers: Server = js.native
+    inline def rawConnectHandlers_=(x: Server): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rawConnectHandlers")(x.asInstanceOf[js.Any])
+    
+    inline def suppressConnectErrors(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressConnectErrors")().asInstanceOf[Unit]
+    
+    type RuntimeConfigHookCallback = js.Function1[/* options */ Arch, js.UndefOr[String | Null | `false`]]
   }
   
-  @js.native
-  object WebAppInternals extends js.Object {
-    var additionalStaticJs: js.Any = js.native
-    var staticFiles: StaticFiles = js.native
-    def addStaticJs(): Unit = js.native
-    def generateBoilerplate(): Unit = js.native
-    def generateBoilerplateInstance(arch: String, manifest: js.Any, additionalOptions: js.Any): js.Any = js.native
-    def getBoilerplate(request: IncomingMessage, arch: String): String = js.native
-    def identifyBrowser(userAgentString: String): AnonMajor = js.native
-    def inlineScriptsAllowed(): Boolean = js.native
-    def parsePort(port: String): Double = js.native
-    def registerBoilerplateDataCallback(key: String, callback: js.Function): js.Function = js.native
-    def reloadClientPrograms(): Unit = js.native
-    def setBundledJsCssPrefix(bundledJsCssPrefix: String): Unit = js.native
-    def setBundledJsCssUrlRewriteHook(hookFn: js.Function1[/* url */ String, String]): Unit = js.native
-    def setInlineScriptsAllowed(inlineScriptsAllowed: Boolean): Unit = js.native
-    def staticFilesMiddleware(staticFiles: StaticFiles, req: IncomingMessage, res: ServerResponse, next: js.Function): Unit = js.native
-    @js.native
-    object NpmModules extends /* key */ StringDictionary[AnonModule]
+  object WebAppInternals {
     
+    @JSImport("meteor/webapp", "WebAppInternals")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def addStaticJs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addStaticJs")().asInstanceOf[Unit]
+    
+    @JSImport("meteor/webapp", "WebAppInternals.additionalStaticJs")
+    @js.native
+    def additionalStaticJs: Any = js.native
+    inline def additionalStaticJs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("additionalStaticJs")(x.asInstanceOf[js.Any])
+    
+    inline def generateBoilerplate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateBoilerplate")().asInstanceOf[Unit]
+    
+    inline def generateBoilerplateInstance(arch: String, manifest: Any, additionalOptions: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("generateBoilerplateInstance")(arch.asInstanceOf[js.Any], manifest.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any])).asInstanceOf[Any]
+    
+    inline def getBoilerplate(request: IncomingMessage, arch: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoilerplate")(request.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def identifyBrowser(userAgentString: String): Major = ^.asInstanceOf[js.Dynamic].applyDynamic("identifyBrowser")(userAgentString.asInstanceOf[js.Any]).asInstanceOf[Major]
+    
+    inline def inlineScriptsAllowed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("inlineScriptsAllowed")().asInstanceOf[Boolean]
+    
+    inline def parsePort(port: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePort")(port.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    inline def registerBoilerplateDataCallback(key: String, callback: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("registerBoilerplateDataCallback")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    
+    inline def reloadClientPrograms(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadClientPrograms")().asInstanceOf[Unit]
+    
+    inline def setBundledJsCssPrefix(bundledJsCssPrefix: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBundledJsCssPrefix")(bundledJsCssPrefix.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def setBundledJsCssUrlRewriteHook(hookFn: js.Function1[/* url */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBundledJsCssUrlRewriteHook")(hookFn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def setInlineScriptsAllowed(inlineScriptsAllowed: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setInlineScriptsAllowed")(inlineScriptsAllowed.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @JSImport("meteor/webapp", "WebAppInternals.staticFiles")
+    @js.native
+    def staticFiles: StaticFiles = js.native
+    
+    inline def staticFilesMiddleware(
+      staticFiles: StaticFiles,
+      req: IncomingMessage,
+      res: ServerResponse[IncomingMessage],
+      next: js.Function
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("staticFilesMiddleware")(staticFiles.asInstanceOf[js.Any], req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def staticFiles_=(x: StaticFiles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("staticFiles")(x.asInstanceOf[js.Any])
   }
   
-  type StaticFiles = StringDictionary[AnonAbsolutePath]
+  type StaticFiles = StringDictionary[AbsolutePath]
 }
-

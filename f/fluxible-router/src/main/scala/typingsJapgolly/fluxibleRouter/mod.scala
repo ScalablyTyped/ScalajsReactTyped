@@ -1,48 +1,114 @@
 package typingsJapgolly.fluxibleRouter
 
-import typingsJapgolly.fluxible.baseStoreMod.^
+import org.scalablytyped.runtime.Instantiable1
+import typingsJapgolly.dispatchr.mod.DispatcherInterface
 import typingsJapgolly.fluxible.mod.FluxibleContext
+import typingsJapgolly.fluxibleRouter.anon.TypeofComponent
+import typingsJapgolly.fluxibleRouter.anon.TypeofRouteStore
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fluxible-router", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class NavLink ()
-    extends Component[NavLinkProps, js.Any, js.Any]
+object mod {
   
+  @JSImport("fluxible-router", JSImport.Namespace)
   @js.native
-  class NavLinkProps () extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("fluxible-router", "NavLink")
+  @js.native
+  open class NavLink protected () extends Component[NavLinkProps, Any, Any] {
+    def this(props: NavLinkProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: NavLinkProps, context: Any) = this()
+  }
+  
+  @JSImport("fluxible-router", "NavLinkProps")
+  @js.native
+  open class NavLinkProps () extends StObject {
+    
+    var activeClass: js.UndefOr[String] = js.native
+    
+    var activeElement: js.UndefOr[String] = js.native
+    
     var activeStyle: js.UndefOr[js.Object] = js.native
+    
     var className: js.UndefOr[String] = js.native
+    
+    var followLink: js.UndefOr[Boolean] = js.native
+    
     var href: js.UndefOr[String] = js.native
+    
+    var navParams: js.UndefOr[js.Object] = js.native
+    
     var preserveScrollPosition: js.UndefOr[Boolean] = js.native
+    
+    var queryParams: js.UndefOr[js.Object] = js.native
+    
+    var replaceState: js.UndefOr[Boolean] = js.native
+    
     var routeName: js.UndefOr[String] = js.native
+    
+    var stopPropagation: js.UndefOr[Boolean] = js.native
+    
     var `type`: js.UndefOr[String] = js.native
+    
+    var validate: js.UndefOr[Boolean] = js.native
   }
   
+  @JSImport("fluxible-router", "RouteStore")
   @js.native
-  class RouteStore ()
-    extends ^[js.Object] {
+  open class RouteStore protected ()
+    extends typingsJapgolly.fluxible.addonsBaseStoreMod.^[js.Object] {
+    def this(dispatcher: DispatcherInterface) = this()
+    
     @JSName("dehydrate")
-    def dehydrate_MRouteStore(): js.Any = js.native
+    def dehydrate_MRouteStore(): Any = js.native
     @JSName("dehydrate")
-    def dehydrate_MRouteStore(context: FluxibleContext): js.Any = js.native
+    def dehydrate_MRouteStore(context: FluxibleContext): Any = js.native
+    
     @JSName("rehydrate")
-    def rehydrate_MRouteStore(state: js.Any): Unit = js.native
+    def rehydrate_MRouteStore(state: Any): Unit = js.native
   }
-  
-  def handleHistory(Component: TypeofComponent): TypeofComponent = js.native
-  def handleHistory(Component: TypeofComponent, opts: js.Object): TypeofComponent = js.native
-  def navigateAction(context: FluxibleContext, params: js.Object): js.UndefOr[scala.Nothing] = js.native
   /* static members */
-  @js.native
-  object RouteStore extends js.Object {
-    def withStaticRoutes(routes: js.Object): TypeofRouteStore = js.native
+  object RouteStore {
+    
+    @JSImport("fluxible-router", "RouteStore")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def withStaticRoutes(routes: js.Object): TypeofRouteStore = ^.asInstanceOf[js.Dynamic].applyDynamic("withStaticRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[TypeofRouteStore]
   }
   
+  inline def handleHistory(
+    Component: TypeofComponent & (Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+      japgolly.scalajs.react.facade.React.Component[js.Object, js.Object]
+    ])
+  ): TypeofComponent & (Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+    japgolly.scalajs.react.facade.React.Component[js.Object, js.Object]
+  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("handleHistory")(Component.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent & (Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+    japgolly.scalajs.react.facade.React.Component[js.Object, js.Object]
+  ])]
+  inline def handleHistory(
+    Component: TypeofComponent & (Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+      japgolly.scalajs.react.facade.React.Component[js.Object, js.Object]
+    ]),
+    opts: js.Object
+  ): TypeofComponent & (Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+    japgolly.scalajs.react.facade.React.Component[js.Object, js.Object]
+  ]) = (^.asInstanceOf[js.Dynamic].applyDynamic("handleHistory")(Component.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TypeofComponent & (Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+    japgolly.scalajs.react.facade.React.Component[js.Object, js.Object]
+  ])]
+  
+  inline def navigateAction(context: FluxibleContext, params: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigateAction")(context.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

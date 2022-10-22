@@ -1,72 +1,135 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ManagedEBook extends Entity {
+trait ManagedEBook
+  extends StObject
+     with Entity {
+  
   // The list of assignments for this eBook.
-  var assignments: js.UndefOr[js.Array[ManagedEBookAssignment]] = js.undefined
+  var assignments: js.UndefOr[NullableOption[js.Array[ManagedEBookAssignment]]] = js.undefined
+  
   // The date and time when the eBook file was created.
   var createdDateTime: js.UndefOr[String] = js.undefined
+  
   // Description.
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The list of installation states for this eBook.
-  var deviceStates: js.UndefOr[js.Array[DeviceInstallState]] = js.undefined
+  var deviceStates: js.UndefOr[NullableOption[js.Array[DeviceInstallState]]] = js.undefined
+  
   // Name of the eBook.
   var displayName: js.UndefOr[String] = js.undefined
+  
   // The more information Url.
-  var informationUrl: js.UndefOr[String] = js.undefined
+  var informationUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Mobile App Install Summary.
-  var installSummary: js.UndefOr[EBookInstallSummary] = js.undefined
+  var installSummary: js.UndefOr[NullableOption[EBookInstallSummary]] = js.undefined
+  
   // Book cover.
-  var largeCover: js.UndefOr[MimeContent] = js.undefined
+  var largeCover: js.UndefOr[NullableOption[MimeContent]] = js.undefined
+  
   // The date and time when the eBook was last modified.
   var lastModifiedDateTime: js.UndefOr[String] = js.undefined
+  
   // The privacy statement Url.
-  var privacyInformationUrl: js.UndefOr[String] = js.undefined
+  var privacyInformationUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The date and time when the eBook was published.
   var publishedDateTime: js.UndefOr[String] = js.undefined
+  
   // Publisher.
-  var publisher: js.UndefOr[String] = js.undefined
+  var publisher: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The list of installation states for this eBook.
-  var userStateSummary: js.UndefOr[js.Array[UserInstallStateSummary]] = js.undefined
+  var userStateSummary: js.UndefOr[NullableOption[js.Array[UserInstallStateSummary]]] = js.undefined
 }
-
 object ManagedEBook {
-  @scala.inline
-  def apply(
-    assignments: js.Array[ManagedEBookAssignment] = null,
-    createdDateTime: String = null,
-    description: String = null,
-    deviceStates: js.Array[DeviceInstallState] = null,
-    displayName: String = null,
-    id: String = null,
-    informationUrl: String = null,
-    installSummary: EBookInstallSummary = null,
-    largeCover: MimeContent = null,
-    lastModifiedDateTime: String = null,
-    privacyInformationUrl: String = null,
-    publishedDateTime: String = null,
-    publisher: String = null,
-    userStateSummary: js.Array[UserInstallStateSummary] = null
-  ): ManagedEBook = {
+  
+  inline def apply(): ManagedEBook = {
     val __obj = js.Dynamic.literal()
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (deviceStates != null) __obj.updateDynamic("deviceStates")(deviceStates.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (informationUrl != null) __obj.updateDynamic("informationUrl")(informationUrl.asInstanceOf[js.Any])
-    if (installSummary != null) __obj.updateDynamic("installSummary")(installSummary.asInstanceOf[js.Any])
-    if (largeCover != null) __obj.updateDynamic("largeCover")(largeCover.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (privacyInformationUrl != null) __obj.updateDynamic("privacyInformationUrl")(privacyInformationUrl.asInstanceOf[js.Any])
-    if (publishedDateTime != null) __obj.updateDynamic("publishedDateTime")(publishedDateTime.asInstanceOf[js.Any])
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
-    if (userStateSummary != null) __obj.updateDynamic("userStateSummary")(userStateSummary.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedEBook]
   }
+  
+  extension [Self <: ManagedEBook](x: Self) {
+    
+    inline def setAssignments(value: NullableOption[js.Array[ManagedEBookAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
+    
+    inline def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
+    
+    inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
+    
+    inline def setAssignmentsVarargs(value: ManagedEBookAssignment*): Self = StObject.set(x, "assignments", js.Array(value*))
+    
+    inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDeviceStates(value: NullableOption[js.Array[DeviceInstallState]]): Self = StObject.set(x, "deviceStates", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceStatesNull: Self = StObject.set(x, "deviceStates", null)
+    
+    inline def setDeviceStatesUndefined: Self = StObject.set(x, "deviceStates", js.undefined)
+    
+    inline def setDeviceStatesVarargs(value: DeviceInstallState*): Self = StObject.set(x, "deviceStates", js.Array(value*))
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setInformationUrl(value: NullableOption[String]): Self = StObject.set(x, "informationUrl", value.asInstanceOf[js.Any])
+    
+    inline def setInformationUrlNull: Self = StObject.set(x, "informationUrl", null)
+    
+    inline def setInformationUrlUndefined: Self = StObject.set(x, "informationUrl", js.undefined)
+    
+    inline def setInstallSummary(value: NullableOption[EBookInstallSummary]): Self = StObject.set(x, "installSummary", value.asInstanceOf[js.Any])
+    
+    inline def setInstallSummaryNull: Self = StObject.set(x, "installSummary", null)
+    
+    inline def setInstallSummaryUndefined: Self = StObject.set(x, "installSummary", js.undefined)
+    
+    inline def setLargeCover(value: NullableOption[MimeContent]): Self = StObject.set(x, "largeCover", value.asInstanceOf[js.Any])
+    
+    inline def setLargeCoverNull: Self = StObject.set(x, "largeCover", null)
+    
+    inline def setLargeCoverUndefined: Self = StObject.set(x, "largeCover", js.undefined)
+    
+    inline def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    
+    inline def setPrivacyInformationUrl(value: NullableOption[String]): Self = StObject.set(x, "privacyInformationUrl", value.asInstanceOf[js.Any])
+    
+    inline def setPrivacyInformationUrlNull: Self = StObject.set(x, "privacyInformationUrl", null)
+    
+    inline def setPrivacyInformationUrlUndefined: Self = StObject.set(x, "privacyInformationUrl", js.undefined)
+    
+    inline def setPublishedDateTime(value: String): Self = StObject.set(x, "publishedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setPublishedDateTimeUndefined: Self = StObject.set(x, "publishedDateTime", js.undefined)
+    
+    inline def setPublisher(value: NullableOption[String]): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    
+    inline def setPublisherNull: Self = StObject.set(x, "publisher", null)
+    
+    inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
+    
+    inline def setUserStateSummary(value: NullableOption[js.Array[UserInstallStateSummary]]): Self = StObject.set(x, "userStateSummary", value.asInstanceOf[js.Any])
+    
+    inline def setUserStateSummaryNull: Self = StObject.set(x, "userStateSummary", null)
+    
+    inline def setUserStateSummaryUndefined: Self = StObject.set(x, "userStateSummary", js.undefined)
+    
+    inline def setUserStateSummaryVarargs(value: UserInstallStateSummary*): Self = StObject.set(x, "userStateSummary", js.Array(value*))
+  }
 }
-

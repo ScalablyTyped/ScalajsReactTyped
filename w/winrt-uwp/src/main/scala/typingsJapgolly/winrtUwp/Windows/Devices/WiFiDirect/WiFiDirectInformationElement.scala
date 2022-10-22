@@ -1,40 +1,35 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.WiFiDirect
 
-import typingsJapgolly.winrtUwp.Windows.Devices.Enumeration.DeviceInformation
-import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVector
 import typingsJapgolly.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents information elements in a Wi-Fi Direct packet. */
-@JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectInformationElement")
-@js.native
-/** Creates a new WiFiDirectInformationElement object. */
-class WiFiDirectInformationElement () extends js.Object {
+trait WiFiDirectInformationElement extends StObject {
+  
   /** A three-byte organization identifier used to indicate the organization which defined a vendor extension information element (IE). */
-  var oui: IBuffer = js.native
+  var oui: IBuffer
+  
   /** A one byte type value used in a vendor extension information element (IE) to distinguish between different IE formats defined by the same organization. */
-  var ouiType: Double = js.native
+  var ouiType: Double
+  
   /** The value of the information element. */
-  var value: IBuffer = js.native
+  var value: IBuffer
 }
-
-/* static members */
-@JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectInformationElement")
-@js.native
-object WiFiDirectInformationElement extends js.Object {
-  /**
-    * Create an array of information elements from a data buffer.
-    * @param buffer The data buffer that contains a information element.
-    * @return A array of information elements created from the buffer.
-    */
-  def createFromBuffer(buffer: IBuffer): IVector[WiFiDirectInformationElement] = js.native
-  /**
-    * Create an array of information elements from a DeviceInformation object.
-    * @param deviceInformation The device information object that contains the information elements.
-    * @return A array of information elements created from the device information object.
-    */
-  def createFromDeviceInformation(deviceInformation: DeviceInformation): IVector[WiFiDirectInformationElement] = js.native
+object WiFiDirectInformationElement {
+  
+  inline def apply(oui: IBuffer, ouiType: Double, value: IBuffer): WiFiDirectInformationElement = {
+    val __obj = js.Dynamic.literal(oui = oui.asInstanceOf[js.Any], ouiType = ouiType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WiFiDirectInformationElement]
+  }
+  
+  extension [Self <: WiFiDirectInformationElement](x: Self) {
+    
+    inline def setOui(value: IBuffer): Self = StObject.set(x, "oui", value.asInstanceOf[js.Any])
+    
+    inline def setOuiType(value: Double): Self = StObject.set(x, "ouiType", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: IBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

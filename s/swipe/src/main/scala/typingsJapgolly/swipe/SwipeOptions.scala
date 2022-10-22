@@ -1,44 +1,68 @@
 package typingsJapgolly.swipe
 
 import japgolly.scalajs.react.Callback
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SwipeOptions extends js.Object {
+trait SwipeOptions extends StObject {
+  
   var auto: js.UndefOr[Double] = js.undefined
+  
   var callback: js.UndefOr[js.Function2[/* index */ Double, /* elem */ HTMLElement, Unit]] = js.undefined
+  
   var continuous: js.UndefOr[Boolean] = js.undefined
+  
   var disableScroll: js.UndefOr[Boolean] = js.undefined
+  
   var speed: js.UndefOr[Double] = js.undefined
+  
   var startSlide: js.UndefOr[Double] = js.undefined
+  
   var stopPropagation: js.UndefOr[Boolean] = js.undefined
+  
   var transitionEnd: js.UndefOr[js.Function2[/* index */ Double, /* elem */ HTMLElement, Unit]] = js.undefined
 }
-
 object SwipeOptions {
-  @scala.inline
-  def apply(
-    auto: Int | Double = null,
-    callback: (/* index */ Double, /* elem */ HTMLElement) => Callback = null,
-    continuous: js.UndefOr[Boolean] = js.undefined,
-    disableScroll: js.UndefOr[Boolean] = js.undefined,
-    speed: Int | Double = null,
-    startSlide: Int | Double = null,
-    stopPropagation: js.UndefOr[Boolean] = js.undefined,
-    transitionEnd: (/* index */ Double, /* elem */ HTMLElement) => Callback = null
-  ): SwipeOptions = {
+  
+  inline def apply(): SwipeOptions = {
     val __obj = js.Dynamic.literal()
-    if (auto != null) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2((t0: /* index */ scala.Double, t1: /* elem */ org.scalajs.dom.raw.HTMLElement) => callback(t0, t1).runNow()))
-    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (startSlide != null) __obj.updateDynamic("startSlide")(startSlide.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation.asInstanceOf[js.Any])
-    if (transitionEnd != null) __obj.updateDynamic("transitionEnd")(js.Any.fromFunction2((t0: /* index */ scala.Double, t1: /* elem */ org.scalajs.dom.raw.HTMLElement) => transitionEnd(t0, t1).runNow()))
     __obj.asInstanceOf[SwipeOptions]
   }
+  
+  extension [Self <: SwipeOptions](x: Self) {
+    
+    inline def setAuto(value: Double): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    
+    inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+    
+    inline def setCallback(value: (/* index */ Double, /* elem */ HTMLElement) => Callback): Self = StObject.set(x, "callback", js.Any.fromFunction2((t0: /* index */ Double, t1: /* elem */ HTMLElement) => (value(t0, t1)).runNow()))
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+    
+    inline def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
+    
+    inline def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
+    
+    inline def setDisableScrollUndefined: Self = StObject.set(x, "disableScroll", js.undefined)
+    
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    
+    inline def setStartSlide(value: Double): Self = StObject.set(x, "startSlide", value.asInstanceOf[js.Any])
+    
+    inline def setStartSlideUndefined: Self = StObject.set(x, "startSlide", js.undefined)
+    
+    inline def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+    
+    inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+    
+    inline def setTransitionEnd(value: (/* index */ Double, /* elem */ HTMLElement) => Callback): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction2((t0: /* index */ Double, t1: /* elem */ HTMLElement) => (value(t0, t1)).runNow()))
+    
+    inline def setTransitionEndUndefined: Self = StObject.set(x, "transitionEnd", js.undefined)
+  }
 }
-

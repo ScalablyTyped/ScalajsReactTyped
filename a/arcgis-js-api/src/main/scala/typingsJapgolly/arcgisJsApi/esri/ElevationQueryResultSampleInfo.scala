@@ -1,19 +1,22 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ElevationQueryResultSampleInfo extends Object {
+trait ElevationQueryResultSampleInfo
+  extends StObject
+     with Object {
+  
   /**
-    * The resolution at which the z-value was sampled. If no data was available for sampling for a given coordinate, the dem resolution value will be -1 for that coordinate.
+    * The resolution at which the z-value was sampled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
     */
   var demResolution: Double
+  
   /**
     * The elevation source from which the data for the corresponding coordinate was sampled.
     *
@@ -21,20 +24,23 @@ trait ElevationQueryResultSampleInfo extends Object {
     */
   var source: ElevationLayer
 }
-
 object ElevationQueryResultSampleInfo {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     demResolution: Double,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
     source: ElevationLayer
   ): ElevationQueryResultSampleInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], demResolution = demResolution.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], demResolution = demResolution.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElevationQueryResultSampleInfo]
   }
+  
+  extension [Self <: ElevationQueryResultSampleInfo](x: Self) {
+    
+    inline def setDemResolution(value: Double): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
+    
+    inline def setSource(value: ElevationLayer): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+  }
 }
-

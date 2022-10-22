@@ -1,21 +1,30 @@
 package typingsJapgolly.reactNativeMaterialKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CardImageStyle extends js.Object {
+trait CardImageStyle extends StObject {
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var resizeMode: js.UndefOr[String] = js.undefined
 }
-
 object CardImageStyle {
-  @scala.inline
-  def apply(height: Int | Double = null, resizeMode: String = null): CardImageStyle = {
+  
+  inline def apply(): CardImageStyle = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardImageStyle]
   }
+  
+  extension [Self <: CardImageStyle](x: Self) {
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setResizeMode(value: String): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
+    
+    inline def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
+  }
 }
-

@@ -1,88 +1,104 @@
 package typingsJapgolly.electronPackager
 
-import typingsJapgolly.electronPackager.mod.arch
-import typingsJapgolly.electronPackager.mod.platform
+import typingsJapgolly.electronPackager.mod.OfficialArch
+import typingsJapgolly.electronPackager.mod.OfficialPlatform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object electronPackagerStrings {
-  @js.native
-  sealed trait all
-    extends arch
-       with platform
   
   @js.native
-  sealed trait appBundleId extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait appPath extends js.Object
+  sealed trait arm64
+    extends StObject
+       with OfficialArch
+  inline def arm64: arm64 = "arm64".asInstanceOf[arm64]
   
   @js.native
-  sealed trait arm64 extends arch
+  sealed trait arm64AppPath extends StObject
+  inline def arm64AppPath: arm64AppPath = "arm64AppPath".asInstanceOf[arm64AppPath]
   
   @js.native
-  sealed trait armv7l extends arch
+  sealed trait armv7l
+    extends StObject
+       with OfficialArch
+  inline def armv7l: armv7l = "armv7l".asInstanceOf[armv7l]
   
   @js.native
-  sealed trait asInvoker extends js.Object
+  sealed trait asInvoker extends StObject
+  inline def asInvoker: asInvoker = "asInvoker".asInstanceOf[asInvoker]
   
   @js.native
-  sealed trait darwin extends platform
+  sealed trait darwin
+    extends StObject
+       with OfficialPlatform
+  inline def darwin: darwin = "darwin".asInstanceOf[darwin]
   
   @js.native
-  sealed trait highestAvailable extends js.Object
+  sealed trait force extends StObject
+  inline def force: force = "force".asInstanceOf[force]
   
   @js.native
-  sealed trait ia32 extends arch
+  sealed trait highestAvailable extends StObject
+  inline def highestAvailable: highestAvailable = "highestAvailable".asInstanceOf[highestAvailable]
   
   @js.native
-  sealed trait linux extends platform
+  sealed trait ia32
+    extends StObject
+       with OfficialArch
+  inline def ia32: ia32 = "ia32".asInstanceOf[ia32]
   
   @js.native
-  sealed trait mas extends platform
+  sealed trait legacy extends StObject
+  inline def legacy: legacy = "legacy".asInstanceOf[legacy]
   
   @js.native
-  sealed trait mips64el extends arch
+  sealed trait linux
+    extends StObject
+       with OfficialPlatform
+  inline def linux: linux = "linux".asInstanceOf[linux]
   
   @js.native
-  sealed trait requireAdministrator extends js.Object
+  sealed trait mas
+    extends StObject
+       with OfficialPlatform
+  inline def mas: mas = "mas".asInstanceOf[mas]
   
   @js.native
-  sealed trait win32 extends platform
+  sealed trait mips64el
+    extends StObject
+       with OfficialArch
+  inline def mips64el: mips64el = "mips64el".asInstanceOf[mips64el]
   
   @js.native
-  sealed trait x64 extends arch
+  sealed trait notarytool extends StObject
+  inline def notarytool: notarytool = "notarytool".asInstanceOf[notarytool]
   
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def appBundleId: appBundleId = "appBundleId".asInstanceOf[appBundleId]
-  @scala.inline
-  def appPath: appPath = "appPath".asInstanceOf[appPath]
-  @scala.inline
-  def arm64: arm64 = "arm64".asInstanceOf[arm64]
-  @scala.inline
-  def armv7l: armv7l = "armv7l".asInstanceOf[armv7l]
-  @scala.inline
-  def asInvoker: asInvoker = "asInvoker".asInstanceOf[asInvoker]
-  @scala.inline
-  def darwin: darwin = "darwin".asInstanceOf[darwin]
-  @scala.inline
-  def highestAvailable: highestAvailable = "highestAvailable".asInstanceOf[highestAvailable]
-  @scala.inline
-  def ia32: ia32 = "ia32".asInstanceOf[ia32]
-  @scala.inline
-  def linux: linux = "linux".asInstanceOf[linux]
-  @scala.inline
-  def mas: mas = "mas".asInstanceOf[mas]
-  @scala.inline
-  def mips64el: mips64el = "mips64el".asInstanceOf[mips64el]
-  @scala.inline
-  def requireAdministrator: requireAdministrator = "requireAdministrator".asInstanceOf[requireAdministrator]
-  @scala.inline
-  def win32: win32 = "win32".asInstanceOf[win32]
-  @scala.inline
-  def x64: x64 = "x64".asInstanceOf[x64]
+  @js.native
+  sealed trait outAppPath extends StObject
+  inline def outAppPath: outAppPath = "outAppPath".asInstanceOf[outAppPath]
+  
+  @js.native
+  sealed trait requireAdministrator extends StObject
+  inline def requireAdministrator: requireAdministrator = "requireAdministrator".asInstanceOf[requireAdministrator]
+  
+  @js.native
+  sealed trait win32
+    extends StObject
+       with OfficialPlatform
+  inline def win32: win32 = "win32".asInstanceOf[win32]
+  
+  @js.native
+  sealed trait x64
+    extends StObject
+       with OfficialArch
+  inline def x64: x64 = "x64".asInstanceOf[x64]
+  
+  @js.native
+  sealed trait x64AppPath extends StObject
+  inline def x64AppPath: x64AppPath = "x64AppPath".asInstanceOf[x64AppPath]
 }
-

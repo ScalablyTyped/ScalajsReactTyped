@@ -1,339 +1,324 @@
 package typingsJapgolly.ddTrace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ddTraceStrings {
+  
+  @js.native
+  sealed trait _dd1DotsrDoteausr extends StObject
+  inline def _dd1DotsrDoteausr: _dd1DotsrDoteausr = "_dd1.sr.eausr".asInstanceOf[_dd1DotsrDoteausr]
+  
+  @js.native
+  sealed trait _ddDotmeasured extends StObject
+  inline def _ddDotmeasured: _ddDotmeasured = "_dd.measured".asInstanceOf[_ddDotmeasured]
+  
+  @js.native
+  sealed trait agent extends StObject
+  inline def agent: agent = "agent".asInstanceOf[agent]
+  
+  @js.native
+  sealed trait amqp10 extends StObject
+  inline def amqp10: amqp10 = "amqp10".asInstanceOf[amqp10]
+  
+  @js.native
+  sealed trait amqplib extends StObject
+  inline def amqplib: amqplib = "amqplib".asInstanceOf[amqplib]
+  
+  @js.native
+  sealed trait async_hooks extends StObject
+  inline def async_hooks: async_hooks = "async_hooks".asInstanceOf[async_hooks]
+  
   @js.native
-  sealed trait _dd1DotsrDoteausr extends js.Object
+  sealed trait async_local_storage extends StObject
+  inline def async_local_storage: async_local_storage = "async_local_storage".asInstanceOf[async_local_storage]
   
   @js.native
-  sealed trait `agent-exporter` extends js.Object
+  sealed trait async_resource extends StObject
+  inline def async_resource: async_resource = "async_resource".asInstanceOf[async_resource]
   
   @js.native
-  sealed trait amqp10 extends js.Object
+  sealed trait `aws-sdk` extends StObject
+  inline def `aws-sdk`: `aws-sdk` = "aws-sdk".asInstanceOf[`aws-sdk`]
   
   @js.native
-  sealed trait amqplib extends js.Object
+  sealed trait bunyan extends StObject
+  inline def bunyan: bunyan = "bunyan".asInstanceOf[bunyan]
   
   @js.native
-  sealed trait async_hooks extends js.Object
+  sealed trait `cassandra-driver` extends StObject
+  inline def `cassandra-driver`: `cassandra-driver` = "cassandra-driver".asInstanceOf[`cassandra-driver`]
   
   @js.native
-  sealed trait binary extends js.Object
+  sealed trait client extends StObject
+  inline def client: client = "client".asInstanceOf[client]
   
   @js.native
-  sealed trait bluebird extends js.Object
+  sealed trait connect extends StObject
+  inline def connect: connect = "connect".asInstanceOf[connect]
   
   @js.native
-  sealed trait bunyan extends js.Object
+  sealed trait consumer extends StObject
+  inline def consumer: consumer = "consumer".asInstanceOf[consumer]
   
   @js.native
-  sealed trait `cassandra-driver` extends js.Object
+  sealed trait couchbase extends StObject
+  inline def couchbase: couchbase = "couchbase".asInstanceOf[couchbase]
   
   @js.native
-  sealed trait client extends js.Object
+  sealed trait cucumber extends StObject
+  inline def cucumber: cucumber = "cucumber".asInstanceOf[cucumber]
   
   @js.native
-  sealed trait connect extends js.Object
+  sealed trait cypress extends StObject
+  inline def cypress: cypress = "cypress".asInstanceOf[cypress]
   
   @js.native
-  sealed trait consumer extends js.Object
+  sealed trait datadog extends StObject
+  inline def datadog: datadog = "datadog".asInstanceOf[datadog]
   
   @js.native
-  sealed trait couchbase extends js.Object
+  sealed trait debug extends StObject
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait dns extends js.Object
+  sealed trait dns extends StObject
+  inline def dns: dns = "dns".asInstanceOf[dns]
   
   @js.native
-  sealed trait elasticsearch extends js.Object
+  sealed trait elasticsearch extends StObject
+  inline def elasticsearch: elasticsearch = "elasticsearch".asInstanceOf[elasticsearch]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait express extends js.Object
+  sealed trait express extends StObject
+  inline def express: express = "express".asInstanceOf[express]
   
   @js.native
-  sealed trait fastify extends js.Object
+  sealed trait fastify extends StObject
+  inline def fastify: fastify = "fastify".asInstanceOf[fastify]
   
   @js.native
-  sealed trait `generic-pool` extends js.Object
+  sealed trait `generic-pool` extends StObject
+  inline def `generic-pool`: `generic-pool` = "generic-pool".asInstanceOf[`generic-pool`]
   
   @js.native
-  sealed trait graphql extends js.Object
+  sealed trait `google-cloud-pubsub` extends StObject
+  inline def `google-cloud-pubsub`: `google-cloud-pubsub` = "google-cloud-pubsub".asInstanceOf[`google-cloud-pubsub`]
   
   @js.native
-  sealed trait grpc extends js.Object
+  sealed trait graphql extends StObject
+  inline def graphql: graphql = "graphql".asInstanceOf[graphql]
   
   @js.native
-  sealed trait hapi extends js.Object
+  sealed trait grpc extends StObject
+  inline def grpc: grpc = "grpc".asInstanceOf[grpc]
   
   @js.native
-  sealed trait http extends js.Object
+  sealed trait hapi extends StObject
+  inline def hapi: hapi = "hapi".asInstanceOf[hapi]
   
   @js.native
-  sealed trait http2 extends js.Object
+  sealed trait http extends StObject
+  inline def http: http = "http".asInstanceOf[http]
   
   @js.native
-  sealed trait httpDotmethod extends js.Object
+  sealed trait http2 extends StObject
+  inline def http2: http2 = "http2".asInstanceOf[http2]
   
   @js.native
-  sealed trait httpDotrequestDotheaders extends js.Object
+  sealed trait httpDotclient_ip extends StObject
+  inline def httpDotclient_ip: httpDotclient_ip = "http.client_ip".asInstanceOf[httpDotclient_ip]
   
   @js.native
-  sealed trait httpDotresponseDotheaders extends js.Object
+  sealed trait httpDotmethod extends StObject
+  inline def httpDotmethod: httpDotmethod = "http.method".asInstanceOf[httpDotmethod]
   
   @js.native
-  sealed trait httpDotroute extends js.Object
+  sealed trait httpDotrequestDotheaders extends StObject
+  inline def httpDotrequestDotheaders: httpDotrequestDotheaders = "http.request.headers".asInstanceOf[httpDotrequestDotheaders]
   
   @js.native
-  sealed trait httpDotstatus_code extends js.Object
+  sealed trait httpDotresponseDotheaders extends StObject
+  inline def httpDotresponseDotheaders: httpDotresponseDotheaders = "http.response.headers".asInstanceOf[httpDotresponseDotheaders]
   
   @js.native
-  sealed trait httpDoturl extends js.Object
+  sealed trait httpDotroute extends StObject
+  inline def httpDotroute: httpDotroute = "http.route".asInstanceOf[httpDotroute]
   
   @js.native
-  sealed trait http_headers extends js.Object
+  sealed trait httpDotstatus_code extends StObject
+  inline def httpDotstatus_code: httpDotstatus_code = "http.status_code".asInstanceOf[httpDotstatus_code]
   
   @js.native
-  sealed trait ioredis extends js.Object
+  sealed trait httpDoturl extends StObject
+  inline def httpDoturl: httpDoturl = "http.url".asInstanceOf[httpDoturl]
   
   @js.native
-  sealed trait knex extends js.Object
+  sealed trait httpDotuseragent extends StObject
+  inline def httpDotuseragent: httpDotuseragent = "http.useragent".asInstanceOf[httpDotuseragent]
   
   @js.native
-  sealed trait koa extends js.Object
+  sealed trait ioredis extends StObject
+  inline def ioredis: ioredis = "ioredis".asInstanceOf[ioredis]
   
   @js.native
-  sealed trait `limitd-client` extends js.Object
+  sealed trait jest extends StObject
+  inline def jest: jest = "jest".asInstanceOf[jest]
   
   @js.native
-  sealed trait log extends js.Object
+  sealed trait kafkajs extends StObject
+  inline def kafkajs: kafkajs = "kafkajs".asInstanceOf[kafkajs]
   
   @js.native
-  sealed trait `log-exporter` extends js.Object
+  sealed trait knex extends StObject
+  inline def knex: knex = "knex".asInstanceOf[knex]
   
   @js.native
-  sealed trait manualDotdrop extends js.Object
+  sealed trait koa extends StObject
+  inline def koa: koa = "koa".asInstanceOf[koa]
   
   @js.native
-  sealed trait manualDotkeep extends js.Object
+  sealed trait log extends StObject
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
-  sealed trait memcached extends js.Object
+  sealed trait manualDotdrop extends StObject
+  inline def manualDotdrop: manualDotdrop = "manual.drop".asInstanceOf[manualDotdrop]
   
   @js.native
-  sealed trait `mongodb-core` extends js.Object
+  sealed trait manualDotkeep extends StObject
+  inline def manualDotkeep: manualDotkeep = "manual.keep".asInstanceOf[manualDotkeep]
   
   @js.native
-  sealed trait mysql extends js.Object
+  sealed trait mariadb extends StObject
+  inline def mariadb: mariadb = "mariadb".asInstanceOf[mariadb]
   
   @js.native
-  sealed trait mysql2 extends js.Object
+  sealed trait memcached extends StObject
+  inline def memcached: memcached = "memcached".asInstanceOf[memcached]
   
   @js.native
-  sealed trait net extends js.Object
+  sealed trait `microgateway-core` extends StObject
+  inline def `microgateway-core`: `microgateway-core` = "microgateway-core".asInstanceOf[`microgateway-core`]
   
   @js.native
-  sealed trait noop extends js.Object
+  sealed trait mocha extends StObject
+  inline def mocha: mocha = "mocha".asInstanceOf[mocha]
   
   @js.native
-  sealed trait paperplane extends js.Object
+  sealed trait moleculer extends StObject
+  inline def moleculer: moleculer = "moleculer".asInstanceOf[moleculer]
   
   @js.native
-  sealed trait pg extends js.Object
+  sealed trait `mongodb-core` extends StObject
+  inline def `mongodb-core`: `mongodb-core` = "mongodb-core".asInstanceOf[`mongodb-core`]
   
   @js.native
-  sealed trait pino extends js.Object
+  sealed trait mongoose extends StObject
+  inline def mongoose: mongoose = "mongoose".asInstanceOf[mongoose]
   
   @js.native
-  sealed trait producer extends js.Object
+  sealed trait mysql extends StObject
+  inline def mysql: mysql = "mysql".asInstanceOf[mysql]
   
   @js.native
-  sealed trait promise extends js.Object
+  sealed trait mysql2 extends StObject
+  inline def mysql2: mysql2 = "mysql2".asInstanceOf[mysql2]
   
   @js.native
-  sealed trait `promise-js` extends js.Object
+  sealed trait net extends StObject
+  inline def net: net = "net".asInstanceOf[net]
   
   @js.native
-  sealed trait q extends js.Object
+  sealed trait next extends StObject
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait redis extends js.Object
+  sealed trait noop extends StObject
+  inline def noop: noop = "noop".asInstanceOf[noop]
   
   @js.native
-  sealed trait resourceDotname extends js.Object
+  sealed trait oracledb extends StObject
+  inline def oracledb: oracledb = "oracledb".asInstanceOf[oracledb]
   
   @js.native
-  sealed trait restify extends js.Object
+  sealed trait paperplane extends StObject
+  inline def paperplane: paperplane = "paperplane".asInstanceOf[paperplane]
   
   @js.native
-  sealed trait router extends js.Object
+  sealed trait pg extends StObject
+  inline def pg: pg = "pg".asInstanceOf[pg]
   
   @js.native
-  sealed trait samplingDotpriority extends js.Object
+  sealed trait pino extends StObject
+  inline def pino: pino = "pino".asInstanceOf[pino]
   
   @js.native
-  sealed trait server extends js.Object
+  sealed trait producer extends StObject
+  inline def producer: producer = "producer".asInstanceOf[producer]
   
   @js.native
-  sealed trait serviceDotname extends js.Object
+  sealed trait redis extends StObject
+  inline def redis: redis = "redis".asInstanceOf[redis]
   
   @js.native
-  sealed trait spanDotkind extends js.Object
+  sealed trait resourceDotname extends StObject
+  inline def resourceDotname: resourceDotname = "resource.name".asInstanceOf[resourceDotname]
   
   @js.native
-  sealed trait spanDottype extends js.Object
+  sealed trait restify extends StObject
+  inline def restify: restify = "restify".asInstanceOf[restify]
   
   @js.native
-  sealed trait tedious extends js.Object
+  sealed trait rhea extends StObject
+  inline def rhea: rhea = "rhea".asInstanceOf[rhea]
   
   @js.native
-  sealed trait text_map extends js.Object
+  sealed trait router extends StObject
+  inline def router: router = "router".asInstanceOf[router]
   
   @js.native
-  sealed trait web extends js.Object
+  sealed trait samplingDotpriority extends StObject
+  inline def samplingDotpriority: samplingDotpriority = "sampling.priority".asInstanceOf[samplingDotpriority]
   
   @js.native
-  sealed trait when extends js.Object
+  sealed trait server extends StObject
+  inline def server: server = "server".asInstanceOf[server]
   
   @js.native
-  sealed trait winston extends js.Object
+  sealed trait serviceDotname extends StObject
+  inline def serviceDotname: serviceDotname = "service.name".asInstanceOf[serviceDotname]
   
-  @scala.inline
-  def _dd1DotsrDoteausr: _dd1DotsrDoteausr = "_dd1.sr.eausr".asInstanceOf[_dd1DotsrDoteausr]
-  @scala.inline
-  def `agent-exporter`: `agent-exporter` = "agent-exporter".asInstanceOf[`agent-exporter`]
-  @scala.inline
-  def amqp10: amqp10 = "amqp10".asInstanceOf[amqp10]
-  @scala.inline
-  def amqplib: amqplib = "amqplib".asInstanceOf[amqplib]
-  @scala.inline
-  def async_hooks: async_hooks = "async_hooks".asInstanceOf[async_hooks]
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
-  @scala.inline
-  def bluebird: bluebird = "bluebird".asInstanceOf[bluebird]
-  @scala.inline
-  def bunyan: bunyan = "bunyan".asInstanceOf[bunyan]
-  @scala.inline
-  def `cassandra-driver`: `cassandra-driver` = "cassandra-driver".asInstanceOf[`cassandra-driver`]
-  @scala.inline
-  def client: client = "client".asInstanceOf[client]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def consumer: consumer = "consumer".asInstanceOf[consumer]
-  @scala.inline
-  def couchbase: couchbase = "couchbase".asInstanceOf[couchbase]
-  @scala.inline
-  def dns: dns = "dns".asInstanceOf[dns]
-  @scala.inline
-  def elasticsearch: elasticsearch = "elasticsearch".asInstanceOf[elasticsearch]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def express: express = "express".asInstanceOf[express]
-  @scala.inline
-  def fastify: fastify = "fastify".asInstanceOf[fastify]
-  @scala.inline
-  def `generic-pool`: `generic-pool` = "generic-pool".asInstanceOf[`generic-pool`]
-  @scala.inline
-  def graphql: graphql = "graphql".asInstanceOf[graphql]
-  @scala.inline
-  def grpc: grpc = "grpc".asInstanceOf[grpc]
-  @scala.inline
-  def hapi: hapi = "hapi".asInstanceOf[hapi]
-  @scala.inline
-  def http: http = "http".asInstanceOf[http]
-  @scala.inline
-  def http2: http2 = "http2".asInstanceOf[http2]
-  @scala.inline
-  def httpDotmethod: httpDotmethod = "http.method".asInstanceOf[httpDotmethod]
-  @scala.inline
-  def httpDotrequestDotheaders: httpDotrequestDotheaders = "http.request.headers".asInstanceOf[httpDotrequestDotheaders]
-  @scala.inline
-  def httpDotresponseDotheaders: httpDotresponseDotheaders = "http.response.headers".asInstanceOf[httpDotresponseDotheaders]
-  @scala.inline
-  def httpDotroute: httpDotroute = "http.route".asInstanceOf[httpDotroute]
-  @scala.inline
-  def httpDotstatus_code: httpDotstatus_code = "http.status_code".asInstanceOf[httpDotstatus_code]
-  @scala.inline
-  def httpDoturl: httpDoturl = "http.url".asInstanceOf[httpDoturl]
-  @scala.inline
-  def http_headers: http_headers = "http_headers".asInstanceOf[http_headers]
-  @scala.inline
-  def ioredis: ioredis = "ioredis".asInstanceOf[ioredis]
-  @scala.inline
-  def knex: knex = "knex".asInstanceOf[knex]
-  @scala.inline
-  def koa: koa = "koa".asInstanceOf[koa]
-  @scala.inline
-  def `limitd-client`: `limitd-client` = "limitd-client".asInstanceOf[`limitd-client`]
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
-  @scala.inline
-  def `log-exporter`: `log-exporter` = "log-exporter".asInstanceOf[`log-exporter`]
-  @scala.inline
-  def manualDotdrop: manualDotdrop = "manual.drop".asInstanceOf[manualDotdrop]
-  @scala.inline
-  def manualDotkeep: manualDotkeep = "manual.keep".asInstanceOf[manualDotkeep]
-  @scala.inline
-  def memcached: memcached = "memcached".asInstanceOf[memcached]
-  @scala.inline
-  def `mongodb-core`: `mongodb-core` = "mongodb-core".asInstanceOf[`mongodb-core`]
-  @scala.inline
-  def mysql: mysql = "mysql".asInstanceOf[mysql]
-  @scala.inline
-  def mysql2: mysql2 = "mysql2".asInstanceOf[mysql2]
-  @scala.inline
-  def net: net = "net".asInstanceOf[net]
-  @scala.inline
-  def noop: noop = "noop".asInstanceOf[noop]
-  @scala.inline
-  def paperplane: paperplane = "paperplane".asInstanceOf[paperplane]
-  @scala.inline
-  def pg: pg = "pg".asInstanceOf[pg]
-  @scala.inline
-  def pino: pino = "pino".asInstanceOf[pino]
-  @scala.inline
-  def producer: producer = "producer".asInstanceOf[producer]
-  @scala.inline
-  def promise: promise = "promise".asInstanceOf[promise]
-  @scala.inline
-  def `promise-js`: `promise-js` = "promise-js".asInstanceOf[`promise-js`]
-  @scala.inline
-  def q: q = "q".asInstanceOf[q]
-  @scala.inline
-  def redis: redis = "redis".asInstanceOf[redis]
-  @scala.inline
-  def resourceDotname: resourceDotname = "resource.name".asInstanceOf[resourceDotname]
-  @scala.inline
-  def restify: restify = "restify".asInstanceOf[restify]
-  @scala.inline
-  def router: router = "router".asInstanceOf[router]
-  @scala.inline
-  def samplingDotpriority: samplingDotpriority = "sampling.priority".asInstanceOf[samplingDotpriority]
-  @scala.inline
-  def server: server = "server".asInstanceOf[server]
-  @scala.inline
-  def serviceDotname: serviceDotname = "service.name".asInstanceOf[serviceDotname]
-  @scala.inline
-  def spanDotkind: spanDotkind = "span.kind".asInstanceOf[spanDotkind]
-  @scala.inline
-  def spanDottype: spanDottype = "span.type".asInstanceOf[spanDottype]
-  @scala.inline
-  def tedious: tedious = "tedious".asInstanceOf[tedious]
-  @scala.inline
-  def text_map: text_map = "text_map".asInstanceOf[text_map]
-  @scala.inline
-  def web: web = "web".asInstanceOf[web]
-  @scala.inline
-  def when: when = "when".asInstanceOf[when]
-  @scala.inline
-  def winston: winston = "winston".asInstanceOf[winston]
+  @js.native
+  sealed trait sharedb extends StObject
+  inline def sharedb: sharedb = "sharedb".asInstanceOf[sharedb]
+  
+  @js.native
+  sealed trait spanDotkind extends StObject
+  inline def spanDotkind: spanDotkind = "span.kind".asInstanceOf[spanDotkind]
+  
+  @js.native
+  sealed trait spanDottype extends StObject
+  inline def spanDottype: spanDottype = "span.type".asInstanceOf[spanDottype]
+  
+  @js.native
+  sealed trait sync extends StObject
+  inline def sync: sync = "sync".asInstanceOf[sync]
+  
+  @js.native
+  sealed trait tedious extends StObject
+  inline def tedious: tedious = "tedious".asInstanceOf[tedious]
+  
+  @js.native
+  sealed trait web extends StObject
+  inline def web: web = "web".asInstanceOf[web]
+  
+  @js.native
+  sealed trait winston extends StObject
+  inline def winston: winston = "winston".asInstanceOf[winston]
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for geoip-lite
 
-Typings are for version 1.1.6
+Typings are for version 1.4
 
 ## Library description:
 A light weight native JavaScript implementation of GeoIP API from MaxMind
@@ -10,15 +10,15 @@ A light weight native JavaScript implementation of GeoIP API from MaxMind
 | ------------------ | :-------------: |
 | Full name          | geoip-lite |
 | Keywords           | geo, geoip, ip, ipv4, ipv6, geolookup, maxmind, geolite |
-| # releases         | 10 |
-| # dependents       | 117 |
-| # downloads        | 2077928 |
-| # stars            | 37 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 463407.0 |
+| # stars            | 2088.0 |
 
 ## Links
-- [Homepage](https://github.com/bluesmoon/node-geoip)
-- [Bugs](https://github.com/bluesmoon/node-geoip/issues)
-- [Repository](https://github.com/bluesmoon/node-geoip)
+- [Homepage](https://github.com/geoip-lite/node-geoip)
+- [Bugs](https://github.com/geoip-lite/node-geoip/issues)
+- [Repository](https://github.com/geoip-lite/node-geoip)
 - [Npm](https://www.npmjs.com/package/geoip-lite)
     
 

@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapMarkerDefaultsTooltipContent extends js.Object {
+trait MapMarkerDefaultsTooltipContent extends StObject {
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object MapMarkerDefaultsTooltipContent {
-  @scala.inline
-  def apply(url: String = null): MapMarkerDefaultsTooltipContent = {
+  
+  inline def apply(): MapMarkerDefaultsTooltipContent = {
     val __obj = js.Dynamic.literal()
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapMarkerDefaultsTooltipContent]
   }
+  
+  extension [Self <: MapMarkerDefaultsTooltipContent](x: Self) {
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

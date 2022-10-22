@@ -1,51 +1,47 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`0`
-import typingsJapgolly.mfiles.mfilesNumbers.`128`
-import typingsJapgolly.mfiles.mfilesNumbers.`16384`
-import typingsJapgolly.mfiles.mfilesNumbers.`16`
-import typingsJapgolly.mfiles.mfilesNumbers.`1`
-import typingsJapgolly.mfiles.mfilesNumbers.`32768`
-import typingsJapgolly.mfiles.mfilesNumbers.`32`
-import typingsJapgolly.mfiles.mfilesNumbers.`4`
-import typingsJapgolly.mfiles.mfilesNumbers.`64`
+import typingsJapgolly.mfiles.mfilesInts.`0`
+import typingsJapgolly.mfiles.mfilesInts.`128`
+import typingsJapgolly.mfiles.mfilesInts.`16384`
+import typingsJapgolly.mfiles.mfilesInts.`16`
+import typingsJapgolly.mfiles.mfilesInts.`1`
+import typingsJapgolly.mfiles.mfilesInts.`32768`
+import typingsJapgolly.mfiles.mfilesInts.`32`
+import typingsJapgolly.mfiles.mfilesInts.`4`
+import typingsJapgolly.mfiles.mfilesInts.`64`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.mfiles.mfilesNumbers.`0`
-  - typingsJapgolly.mfiles.mfilesNumbers.`1`
-  - typingsJapgolly.mfiles.mfilesNumbers.`4`
-  - typingsJapgolly.mfiles.mfilesNumbers.`16`
-  - typingsJapgolly.mfiles.mfilesNumbers.`32`
-  - typingsJapgolly.mfiles.mfilesNumbers.`64`
-  - typingsJapgolly.mfiles.mfilesNumbers.`128`
-  - typingsJapgolly.mfiles.mfilesNumbers.`16384`
-  - typingsJapgolly.mfiles.mfilesNumbers.`32768`
+  - typingsJapgolly.mfiles.mfilesInts.`0`
+  - typingsJapgolly.mfiles.mfilesInts.`1`
+  - typingsJapgolly.mfiles.mfilesInts.`4`
+  - typingsJapgolly.mfiles.mfilesInts.`16`
+  - typingsJapgolly.mfiles.mfilesInts.`32`
+  - typingsJapgolly.mfiles.mfilesInts.`64`
+  - typingsJapgolly.mfiles.mfilesInts.`128`
+  - typingsJapgolly.mfiles.mfilesInts.`16384`
+  - typingsJapgolly.mfiles.mfilesInts.`32768`
 */
-trait MFImportContentFlag extends js.Object
-
+trait MFImportContentFlag extends StObject
 object MFImportContentFlag {
-  @scala.inline
-  def DeleteContentPackage: `4` = this.cast(4)
-  @scala.inline
-  def DoNotImportObjectDestructions: `64` = this.cast(64)
-  @scala.inline
-  def ForceNoStructureIdUpdate: `16384` = this.cast(16384)
-  @scala.inline
-  def ImportCheckoutStates: `16` = this.cast(16)
-  @scala.inline
-  def None: `0` = this.cast(0)
-  @scala.inline
-  def OmitDoneFile: `32768` = this.cast(32768)
-  @scala.inline
-  def ResetExportTimestamps: `32` = this.cast(32)
-  @scala.inline
-  def UseMultipleContentPackages: `1` = this.cast(1)
-  @scala.inline
-  def UseNamesAsAliases: `128` = this.cast(128)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def DeleteContentPackage: `4` = 4.asInstanceOf[`4`]
+  
+  inline def DoNotImportObjectDestructions: `64` = 64.asInstanceOf[`64`]
+  
+  inline def ForceNoStructureIdUpdate: `16384` = 16384.asInstanceOf[`16384`]
+  
+  inline def ImportCheckoutStates: `16` = 16.asInstanceOf[`16`]
+  
+  inline def None: `0` = 0.asInstanceOf[`0`]
+  
+  inline def OmitDoneFile: `32768` = 32768.asInstanceOf[`32768`]
+  
+  inline def ResetExportTimestamps: `32` = 32.asInstanceOf[`32`]
+  
+  inline def UseMultipleContentPackages: `1` = 1.asInstanceOf[`1`]
+  
+  inline def UseNamesAsAliases: `128` = 128.asInstanceOf[`128`]
 }
-

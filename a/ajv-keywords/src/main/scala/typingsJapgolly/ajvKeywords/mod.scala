@@ -1,21 +1,19 @@
 package typingsJapgolly.ajvKeywords
 
-import typingsJapgolly.ajv.mod.Ajv
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.ajv.distCoreMod.Plugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ajv-keywords", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  /**
-    * Defines one or several keywords in ajv instance
-    * @param  ajv validator instance
-    * @param  keywords keyword(s) to define
-    * @return ajv instance (for chaining)
-    */
-  def apply(ajv: Ajv): Ajv = js.native
-  def apply(ajv: Ajv, keywords: String): Ajv = js.native
-  def apply(ajv: Ajv, keywords: js.Array[String]): Ajv = js.native
+object mod extends Shortcut {
+  
+  @JSImport("ajv-keywords", JSImport.Default)
+  @js.native
+  val default: Plugin[String | js.Array[String]] = js.native
+  
+  type _To = Plugin[String | js.Array[String]]
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: Plugin[String | js.Array[String]] = default
 }
-

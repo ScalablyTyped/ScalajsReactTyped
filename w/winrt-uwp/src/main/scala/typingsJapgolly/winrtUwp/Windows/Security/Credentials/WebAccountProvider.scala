@@ -2,32 +2,57 @@ package typingsJapgolly.winrtUwp.Windows.Security.Credentials
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Uri
 import typingsJapgolly.winrtUwp.Windows.System.User
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a web account authentication provider. */
-@JSGlobal("Windows.Security.Credentials.WebAccountProvider")
-@js.native
-class WebAccountProvider protected () extends js.Object {
-  /**
-    * Creates an instance of the WebAccountProvider class.
-    * @param id The web account provider id.
-    * @param displayName The display name for the web account provider.
-    * @param iconUri The Uri of the icon image to display for the web account provider.
-    */
-  def this(id: String, displayName: String, iconUri: Uri) = this()
+trait WebAccountProvider extends StObject {
+  
   /** Gets the authority of the web account provider. Use authority to disambiguate between a single provider with multiple identities (such as a Microsoft account versus Azure Active Directory). */
-  var authority: String = js.native
+  var authority: String
+  
   /** Gets the display name for the web account provider. */
-  var displayName: String = js.native
+  var displayName: String
+  
   /** Gets the display purpose of the web account provider. */
-  var displayPurpose: String = js.native
+  var displayPurpose: String
+  
   /** Gets the Uri of the icon image to display for the web account provider. */
-  var iconUri: Uri = js.native
+  var iconUri: Uri
+  
   /** Gets the web account provider id. */
-  var id: String = js.native
+  var id: String
+  
   /** Gets the user associated with the provider. */
-  var user: User = js.native
+  var user: User
 }
-
+object WebAccountProvider {
+  
+  inline def apply(
+    authority: String,
+    displayName: String,
+    displayPurpose: String,
+    iconUri: Uri,
+    id: String,
+    user: User
+  ): WebAccountProvider = {
+    val __obj = js.Dynamic.literal(authority = authority.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], displayPurpose = displayPurpose.asInstanceOf[js.Any], iconUri = iconUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebAccountProvider]
+  }
+  
+  extension [Self <: WebAccountProvider](x: Self) {
+    
+    inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayPurpose(value: String): Self = StObject.set(x, "displayPurpose", value.asInstanceOf[js.Any])
+    
+    inline def setIconUri(value: Uri): Self = StObject.set(x, "iconUri", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+  }
+}

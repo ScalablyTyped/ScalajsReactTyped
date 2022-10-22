@@ -11,14 +11,11 @@ retro ansi terminal menus for serious 80s technicolor business
 | Full name          | terminal-menu |
 | Keywords           | menu, terminal, ansi, 80s, ibm |
 | # releases         | 1 |
-| # dependents       | 58 |
-| # downloads        | 42065 |
-| # stars            | 40 |
+| # dependents       | 0.0 |
+| # downloads        | 4129.333333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/terminal-menu)
-- [Bugs](https://github.com/substack/terminal-menu/issues)
-- [Repository](https://github.com/substack/terminal-menu)
 - [Npm](https://www.npmjs.com/package/terminal-menu)
     
 

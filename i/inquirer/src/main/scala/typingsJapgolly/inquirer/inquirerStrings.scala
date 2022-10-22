@@ -1,99 +1,89 @@
 package typingsJapgolly.inquirer
 
+import typingsJapgolly.inquirer.libUtilsIncrementListIndexMod.Direction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inquirerStrings {
-  @js.native
-  sealed trait answered extends js.Object
   
   @js.native
-  sealed trait checkbox extends js.Object
+  sealed trait answered extends StObject
+  inline def answered: answered = "answered".asInstanceOf[answered]
   
   @js.native
-  sealed trait choice extends js.Object
+  sealed trait checkbox extends StObject
+  inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
-  sealed trait confirm extends js.Object
+  sealed trait choice extends StObject
+  inline def choice: choice = "choice".asInstanceOf[choice]
   
   @js.native
-  sealed trait done extends js.Object
+  sealed trait confirm extends StObject
+  inline def confirm: confirm = "confirm".asInstanceOf[confirm]
   
   @js.native
-  sealed trait down extends js.Object
+  sealed trait done extends StObject
+  inline def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait editor extends js.Object
+  sealed trait down
+    extends StObject
+       with Direction
+  inline def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait expand extends js.Object
+  sealed trait editor extends StObject
+  inline def editor: editor = "editor".asInstanceOf[editor]
   
   @js.native
-  sealed trait idle extends js.Object
+  sealed trait expand extends StObject
+  inline def expand: expand = "expand".asInstanceOf[expand]
   
   @js.native
-  sealed trait input extends js.Object
+  sealed trait idle extends StObject
+  inline def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait input extends StObject
+  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
-  sealed trait loading extends js.Object
+  sealed trait list extends StObject
+  inline def list: list = "list".asInstanceOf[list]
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait loading extends StObject
+  inline def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
-  sealed trait password extends js.Object
+  sealed trait number extends StObject
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait password extends StObject
+  inline def password: password = "password".asInstanceOf[password]
   
   @js.native
-  sealed trait rawlist extends js.Object
+  sealed trait pending extends StObject
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
-  sealed trait separator extends js.Object
+  sealed trait rawlist extends StObject
+  inline def rawlist: rawlist = "rawlist".asInstanceOf[rawlist]
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait separator extends StObject
+  inline def separator: separator = "separator".asInstanceOf[separator]
   
-  @scala.inline
-  def answered: answered = "answered".asInstanceOf[answered]
-  @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
-  @scala.inline
-  def choice: choice = "choice".asInstanceOf[choice]
-  @scala.inline
-  def confirm: confirm = "confirm".asInstanceOf[confirm]
-  @scala.inline
-  def done: done = "done".asInstanceOf[done]
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def editor: editor = "editor".asInstanceOf[editor]
-  @scala.inline
-  def expand: expand = "expand".asInstanceOf[expand]
-  @scala.inline
-  def idle: idle = "idle".asInstanceOf[idle]
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def password: password = "password".asInstanceOf[password]
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
-  @scala.inline
-  def rawlist: rawlist = "rawlist".asInstanceOf[rawlist]
-  @scala.inline
-  def separator: separator = "separator".asInstanceOf[separator]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
+  @js.native
+  sealed trait `type` extends StObject
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
+  
+  @js.native
+  sealed trait up
+    extends StObject
+       with Direction
+  inline def up: up = "up".asInstanceOf[up]
 }
-

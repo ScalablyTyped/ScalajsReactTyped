@@ -1,8 +1,8 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Testability API.
@@ -11,11 +11,14 @@ import scala.scalajs.js.annotation._
   * @publicApi
   */
 @js.native
-trait PublicTestability extends js.Object {
-  def findProviders(using: js.Any, provider: String, exactMatch: Boolean): js.Array[_] = js.native
+trait PublicTestability extends StObject {
+  
+  def findProviders(`using`: Any, provider: String, exactMatch: Boolean): js.Array[Any] = js.native
+  
   def isStable(): Boolean = js.native
+  
   def whenStable(callback: js.Function): Unit = js.native
   def whenStable(callback: js.Function, timeout: Double): Unit = js.native
   def whenStable(callback: js.Function, timeout: Double, updateCallback: js.Function): Unit = js.native
+  def whenStable(callback: js.Function, timeout: Unit, updateCallback: js.Function): Unit = js.native
 }
-

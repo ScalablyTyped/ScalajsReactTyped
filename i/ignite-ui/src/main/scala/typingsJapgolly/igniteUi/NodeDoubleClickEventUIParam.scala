@@ -1,37 +1,54 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NodeDoubleClickEventUIParam extends js.Object {
+trait NodeDoubleClickEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the bindings object for the level at which the double clicked node is located.
-  	 */
-  var binding: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the bindings object for the level at which the double clicked node is located.
+    */
+  var binding: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the node data.
-  	 */
-  var data: js.UndefOr[js.Any] = js.undefined
+    * Gets the node data.
+    */
+  var data: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the jQuery element of the double clicked node.
-  	 */
+    * Gets a reference to the jQuery element of the double clicked node.
+    */
   var element: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the data-path attribute of the double clicked node.
-  	 */
+    * Gets the data-path attribute of the double clicked node.
+    */
   var path: js.UndefOr[String] = js.undefined
 }
-
 object NodeDoubleClickEventUIParam {
-  @scala.inline
-  def apply(binding: js.Any = null, data: js.Any = null, element: String = null, path: String = null): NodeDoubleClickEventUIParam = {
+  
+  inline def apply(): NodeDoubleClickEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (binding != null) __obj.updateDynamic("binding")(binding.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDoubleClickEventUIParam]
   }
+  
+  extension [Self <: NodeDoubleClickEventUIParam](x: Self) {
+    
+    inline def setBinding(value: Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+    
+    inline def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+  }
 }
-

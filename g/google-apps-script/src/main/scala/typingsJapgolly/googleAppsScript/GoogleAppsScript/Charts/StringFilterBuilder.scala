@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for string filter controls.
@@ -15,24 +14,31 @@ import scala.scalajs.js.annotation._
   * For more details, see the Gviz
   * documentation.
   */
-trait StringFilterBuilder extends js.Object {
+trait StringFilterBuilder extends StObject {
+  
   def setCaseSensitive(caseSensitive: Boolean): StringFilterBuilder
+  
   def setMatchType(matchType: MatchType): StringFilterBuilder
+  
   def setRealtimeTrigger(realtimeTrigger: Boolean): StringFilterBuilder
 }
-
 object StringFilterBuilder {
-  @scala.inline
-  def apply(
-    setCaseSensitive: Boolean => CallbackTo[StringFilterBuilder],
-    setMatchType: MatchType => CallbackTo[StringFilterBuilder],
-    setRealtimeTrigger: Boolean => CallbackTo[StringFilterBuilder]
+  
+  inline def apply(
+    setCaseSensitive: Boolean => StringFilterBuilder,
+    setMatchType: MatchType => StringFilterBuilder,
+    setRealtimeTrigger: Boolean => StringFilterBuilder
   ): StringFilterBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setCaseSensitive")(js.Any.fromFunction1((t0: scala.Boolean) => setCaseSensitive(t0).runNow()))
-    __obj.updateDynamic("setMatchType")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts.MatchType) => setMatchType(t0).runNow()))
-    __obj.updateDynamic("setRealtimeTrigger")(js.Any.fromFunction1((t0: scala.Boolean) => setRealtimeTrigger(t0).runNow()))
+    val __obj = js.Dynamic.literal(setCaseSensitive = js.Any.fromFunction1(setCaseSensitive), setMatchType = js.Any.fromFunction1(setMatchType), setRealtimeTrigger = js.Any.fromFunction1(setRealtimeTrigger))
     __obj.asInstanceOf[StringFilterBuilder]
   }
+  
+  extension [Self <: StringFilterBuilder](x: Self) {
+    
+    inline def setSetCaseSensitive(value: Boolean => StringFilterBuilder): Self = StObject.set(x, "setCaseSensitive", js.Any.fromFunction1(value))
+    
+    inline def setSetMatchType(value: MatchType => StringFilterBuilder): Self = StObject.set(x, "setMatchType", js.Any.fromFunction1(value))
+    
+    inline def setSetRealtimeTrigger(value: Boolean => StringFilterBuilder): Self = StObject.set(x, "setRealtimeTrigger", js.Any.fromFunction1(value))
+  }
 }
-

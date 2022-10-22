@@ -1,35 +1,27 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ModuleGenTarget extends js.Object
-
+sealed trait ModuleGenTarget extends StObject
 @JSGlobal("TypeScript.ModuleGenTarget")
 @js.native
-object ModuleGenTarget extends js.Object {
-  @js.native
-  sealed trait Asynchronous extends ModuleGenTarget
+object ModuleGenTarget extends StObject {
   
   @js.native
-  sealed trait Synchronous extends ModuleGenTarget
+  sealed trait Asynchronous
+    extends StObject
+       with ModuleGenTarget
   
   @js.native
-  sealed trait Unspecified extends ModuleGenTarget
+  sealed trait Synchronous
+    extends StObject
+       with ModuleGenTarget
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ModuleGenTarget with Double] = js.native
-  /* 2 */ @js.native
-  object Asynchronous extends TopLevel[Asynchronous with Double]
-  
-  /* 1 */ @js.native
-  object Synchronous extends TopLevel[Synchronous with Double]
-  
-  /* 0 */ @js.native
-  object Unspecified extends TopLevel[Unspecified with Double]
-  
+  @js.native
+  sealed trait Unspecified
+    extends StObject
+       with ModuleGenTarget
 }
-

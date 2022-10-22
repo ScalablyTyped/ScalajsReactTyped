@@ -1,14 +1,23 @@
 package typingsJapgolly.azdata.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScriptingProvider extends DataProvider {
-  def registerOnScriptingComplete(handler: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, _]): Unit
+trait ScriptingProvider
+  extends StObject
+     with DataProvider {
+  
+  /**
+    * Registers a handler for ScriptingComplete events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnScriptingComplete(handler: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, Any]): Unit
+  
   def scriptAsOperation(
     connectionUri: String,
     operation: ScriptOperation,
@@ -16,22 +25,23 @@ trait ScriptingProvider extends DataProvider {
     paramDetails: ScriptingParamDetails
   ): Thenable[ScriptingResult]
 }
-
 object ScriptingProvider {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     providerId: String,
-    registerOnScriptingComplete: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, js.Any] => Callback,
-    scriptAsOperation: (String, ScriptOperation, ObjectMetadata, ScriptingParamDetails) => CallbackTo[Thenable[ScriptingResult]],
-    handle: Int | Double = null
+    registerOnScriptingComplete: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, Any] => Callback,
+    scriptAsOperation: (String, ScriptOperation, ObjectMetadata, ScriptingParamDetails) => Thenable[ScriptingResult]
   ): ScriptingProvider = {
-    val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any])
-    __obj.updateDynamic("registerOnScriptingComplete")(js.Any.fromFunction1((t0: js.Function1[
-  /* scriptingCompleteResult */ typingsJapgolly.azdata.mod.ScriptingCompleteResult, 
-  js.Any]) => registerOnScriptingComplete(t0).runNow()))
-    __obj.updateDynamic("scriptAsOperation")(js.Any.fromFunction4((t0: java.lang.String, t1: typingsJapgolly.azdata.mod.ScriptOperation, t2: typingsJapgolly.azdata.mod.ObjectMetadata, t3: typingsJapgolly.azdata.mod.ScriptingParamDetails) => scriptAsOperation(t0, t1, t2, t3).runNow()))
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any], registerOnScriptingComplete = js.Any.fromFunction1((t0: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, Any]) => registerOnScriptingComplete(t0).runNow()), scriptAsOperation = js.Any.fromFunction4(scriptAsOperation))
     __obj.asInstanceOf[ScriptingProvider]
   }
+  
+  extension [Self <: ScriptingProvider](x: Self) {
+    
+    inline def setRegisterOnScriptingComplete(value: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, Any] => Callback): Self = StObject.set(x, "registerOnScriptingComplete", js.Any.fromFunction1((t0: js.Function1[/* scriptingCompleteResult */ ScriptingCompleteResult, Any]) => value(t0).runNow()))
+    
+    inline def setScriptAsOperation(
+      value: (String, ScriptOperation, ObjectMetadata, ScriptingParamDetails) => Thenable[ScriptingResult]
+    ): Self = StObject.set(x, "scriptAsOperation", js.Any.fromFunction4(value))
+  }
 }
-

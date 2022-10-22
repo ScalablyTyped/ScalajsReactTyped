@@ -1,25 +1,43 @@
 package typingsJapgolly.exceljs.mod
 
-import typingsJapgolly.exceljs.PartialColor
+import typingsJapgolly.exceljs.anon.PartialColor
 import typingsJapgolly.exceljs.exceljsStrings.pattern
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FillPattern extends Fill {
+trait FillPattern
+  extends StObject
+     with Fill {
+  
   var bgColor: js.UndefOr[PartialColor] = js.undefined
-  var fgColor: PartialColor
+  
+  var fgColor: js.UndefOr[PartialColor] = js.undefined
+  
   var pattern: FillPatterns
+  
   var `type`: pattern
 }
-
 object FillPattern {
-  @scala.inline
-  def apply(fgColor: PartialColor, pattern: FillPatterns, `type`: pattern, bgColor: PartialColor = null): FillPattern = {
-    val __obj = js.Dynamic.literal(fgColor = fgColor.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
+  
+  inline def apply(pattern: FillPatterns): FillPattern = {
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pattern")
     __obj.asInstanceOf[FillPattern]
   }
+  
+  extension [Self <: FillPattern](x: Self) {
+    
+    inline def setBgColor(value: PartialColor): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
+    
+    inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
+    
+    inline def setFgColor(value: PartialColor): Self = StObject.set(x, "fgColor", value.asInstanceOf[js.Any])
+    
+    inline def setFgColorUndefined: Self = StObject.set(x, "fgColor", js.undefined)
+    
+    inline def setPattern(value: FillPatterns): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: pattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

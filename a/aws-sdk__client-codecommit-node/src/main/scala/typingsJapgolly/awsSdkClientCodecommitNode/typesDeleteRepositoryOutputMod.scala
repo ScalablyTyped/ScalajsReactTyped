@@ -1,26 +1,42 @@
 package typingsJapgolly.awsSdkClientCodecommitNode
 
-import typingsJapgolly.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientCodecommitNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/types/DeleteRepositoryOutput", JSImport.Namespace)
-@js.native
-object typesDeleteRepositoryOutputMod extends js.Object {
-  @js.native
-  trait DeleteRepositoryOutput extends OutputTypesUnion {
+object typesDeleteRepositoryOutputMod {
+  
+  trait DeleteRepositoryOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>The ID of the repository that was deleted.</p>
       */
-    var repositoryId: js.UndefOr[String] = js.native
+    var repositoryId: js.UndefOr[String] = js.undefined
   }
-  
+  object DeleteRepositoryOutput {
+    
+    inline def apply($metadata: ResponseMetadata): DeleteRepositoryOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DeleteRepositoryOutput]
+    }
+    
+    extension [Self <: DeleteRepositoryOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
+      
+      inline def setRepositoryIdUndefined: Self = StObject.set(x, "repositoryId", js.undefined)
+    }
+  }
 }
-

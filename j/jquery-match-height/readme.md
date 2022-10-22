@@ -11,14 +11,12 @@ a responsive equal heights plugin for jQuery
 | Full name          | jquery-match-height |
 | Keywords           | matchHeight, equal, match, height, equalize, columns |
 | # releases         | 1 |
-| # dependents       | 16 |
-| # downloads        | 1531573 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 66424.66666666667 |
+| # stars            | 3086.0 |
 
 ## Links
 - [Homepage](http://brm.io/jquery-match-height/)
-- [Bugs](https://github.com/liabru/jquery-match-height/issues)
-- [Repository](https://github.com/liabru/jquery-match-height)
 - [Npm](https://www.npmjs.com/package/jquery-match-height)
     
 

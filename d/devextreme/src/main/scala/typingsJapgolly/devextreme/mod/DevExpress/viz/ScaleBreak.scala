@@ -1,23 +1,36 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScaleBreak extends js.Object {
-  /** Along with the startValue option, limits the scale break. */
+trait ScaleBreak extends StObject {
+  
+  /**
+    * Along with the startValue property, limits the scale break.
+    */
   var endValue: js.UndefOr[Double | js.Date | String] = js.undefined
-  /** Along with the endValue option, limits the scale break. */
+  
+  /**
+    * Along with the endValue property, limits the scale break.
+    */
   var startValue: js.UndefOr[Double | js.Date | String] = js.undefined
 }
-
 object ScaleBreak {
-  @scala.inline
-  def apply(endValue: Double | js.Date | String = null, startValue: Double | js.Date | String = null): ScaleBreak = {
+  
+  inline def apply(): ScaleBreak = {
     val __obj = js.Dynamic.literal()
-    if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
-    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleBreak]
   }
+  
+  extension [Self <: ScaleBreak](x: Self) {
+    
+    inline def setEndValue(value: Double | js.Date | String): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+    
+    inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
+    
+    inline def setStartValue(value: Double | js.Date | String): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+    
+    inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
+  }
 }
-

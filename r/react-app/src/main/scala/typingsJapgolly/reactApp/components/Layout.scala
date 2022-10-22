@@ -1,36 +1,21 @@
 package typingsJapgolly.reactApp.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent.Default
 import typingsJapgolly.reactApp.mod.LayoutProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Layout {
-  def apply(
-    className: String,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[LayoutProps, typingsJapgolly.reactApp.mod.Layout, Unit, LayoutProps] = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactApp.mod.LayoutProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactApp.mod.Layout](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactApp.mod.LayoutProps])(children: _*)
+  inline def apply(className: String): Default[typingsJapgolly.reactApp.mod.Layout] = {
+    val __props = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
+    new Default[typingsJapgolly.reactApp.mod.Layout](js.Array(this.component, __props.asInstanceOf[LayoutProps]))
   }
+  
   @JSImport("react-app", "Layout")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: LayoutProps): Default[typingsJapgolly.reactApp.mod.Layout] = new Default[typingsJapgolly.reactApp.mod.Layout](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,21 +1,29 @@
 package typingsJapgolly.antDesignReactNative.mod
 
-import typingsJapgolly.antDesignReactNative.AnonOnSelect
-import typingsJapgolly.antDesignReactNative.TypeofPopoverItem
-import typingsJapgolly.antDesignReactNative.popoverMod.default
+import typingsJapgolly.antDesignReactNative.anon.OnSelect
+import typingsJapgolly.antDesignReactNative.anon.TypeofPopoverItem
+import typingsJapgolly.antDesignReactNative.libPopoverMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "Popover")
 @js.native
-class Popover () extends default
-
+open class Popover () extends default
 /* static members */
-@JSImport("@ant-design/react-native", "Popover")
-@js.native
-object Popover extends js.Object {
-  var Item: TypeofPopoverItem = js.native
-  var defaultProps: AnonOnSelect = js.native
+object Popover {
+  
+  @JSImport("@ant-design/react-native", "Popover")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native", "Popover.Item")
+  @js.native
+  def Item: TypeofPopoverItem = js.native
+  inline def Item_=(x: TypeofPopoverItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@ant-design/react-native", "Popover.defaultProps")
+  @js.native
+  def defaultProps: OnSelect = js.native
+  inline def defaultProps_=(x: OnSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

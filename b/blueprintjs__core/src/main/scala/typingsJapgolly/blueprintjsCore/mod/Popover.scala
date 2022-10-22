@@ -1,20 +1,31 @@
 package typingsJapgolly.blueprintjsCore.mod
 
-import typingsJapgolly.blueprintjsCore.popoverMod.IPopoverProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Popover")
 @js.native
-class Popover ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.Popover
-
-/* static members */
-@JSImport("@blueprintjs/core", "Popover")
-@js.native
-object Popover extends js.Object {
-  var defaultProps: IPopoverProps = js.native
-  var displayName: String = js.native
+open class Popover protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.Popover {
+  def this(props: IPopoverProps) = this()
+  def this(props: IPopoverProps, context: Any) = this()
 }
-
+/* static members */
+object Popover {
+  
+  @JSImport("@blueprintjs/core", "Popover")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "Popover.defaultProps")
+  @js.native
+  def defaultProps: IPopoverProps = js.native
+  inline def defaultProps_=(x: IPopoverProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/core", "Popover.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

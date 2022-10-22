@@ -1,8 +1,8 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 窗口的分享参数
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-trait PlusWebviewWebviewShareOptions extends js.Object {
+trait PlusWebviewWebviewShareOptions extends StObject {
+  
   /**
     * 分享时使用的链接地址
     * 必须是网络地址。
@@ -18,6 +19,7 @@ trait PlusWebviewWebviewShareOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var href: js.UndefOr[String] = js.undefined
+  
   /**
     * 分享时使用的图标
     * 默认使用应用图标。
@@ -25,6 +27,7 @@ trait PlusWebviewWebviewShareOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var icon: js.UndefOr[String] = js.undefined
+  
   /**
     * 分享时使用的标题
     * 
@@ -32,15 +35,25 @@ trait PlusWebviewWebviewShareOptions extends js.Object {
     */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object PlusWebviewWebviewShareOptions {
-  @scala.inline
-  def apply(href: String = null, icon: String = null, title: String = null): PlusWebviewWebviewShareOptions = {
+  
+  inline def apply(): PlusWebviewWebviewShareOptions = {
     val __obj = js.Dynamic.literal()
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewShareOptions]
   }
+  
+  extension [Self <: PlusWebviewWebviewShareOptions](x: Self) {
+    
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

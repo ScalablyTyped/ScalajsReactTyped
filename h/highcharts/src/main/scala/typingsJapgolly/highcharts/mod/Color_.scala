@@ -1,12 +1,12 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Color")
 @js.native
-class Color_ protected () extends js.Object {
+open class Color_ protected () extends StObject {
   /**
     * Handle color operations. Some object methods are chainable.
     *
@@ -14,6 +14,7 @@ class Color_ protected () extends js.Object {
     *        The input color in either rbga or hex format
     */
   def this(input: ColorType) = this()
+  
   /**
     * Brighten the color instance.
     *
@@ -23,6 +24,7 @@ class Color_ protected () extends js.Object {
     * @return This color with modifications.
     */
   def brighten(alpha: Double): Color_ = js.native
+  
   /**
     * Return the color or gradient stops in the specified format
     *
@@ -33,6 +35,7 @@ class Color_ protected () extends js.Object {
     */
   def get(): ColorType = js.native
   def get(format: String): ColorType = js.native
+  
   /**
     * Set the color's opacity to a given alpha value.
     *
@@ -42,6 +45,7 @@ class Color_ protected () extends js.Object {
     * @return Color with modifications.
     */
   def setOpacity(alpha: Double): Color_ = js.native
+  
   /**
     * Return an intermediate color between two colors.
     *
@@ -52,8 +56,25 @@ class Color_ protected () extends js.Object {
     *        The intermediate position, where 0 is the from color (current
     *        color item), and 1 is the `to` color.
     *
-    * @return The intermediate color in rgba notation.
+    * @return The intermediate color in rgba notation, or unsupported type.
     */
-  def tweenTo(to: Color_, pos: Double): ColorString = js.native
+  def tweenTo(to: Color_, pos: Double): ColorType = js.native
 }
-
+/* static members */
+object Color_ {
+  
+  @JSImport("highcharts", "Color")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Creates a color instance out of a color string or object.
+    *
+    * @param input
+    *        The input color in either rbga or hex format.
+    *
+    * @return Color instance.
+    */
+  inline def parse(): Color_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[Color_]
+  inline def parse(input: ColorType): Color_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Color_]
+}

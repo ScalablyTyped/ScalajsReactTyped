@@ -1,71 +1,64 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.AnonSelect
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.baseui.baseuiStrings.`12`
 import typingsJapgolly.baseui.baseuiStrings.`24`
-import typingsJapgolly.baseui.baseuiStrings.compact
-import typingsJapgolly.baseui.baseuiStrings.default_
-import typingsJapgolly.baseui.baseuiStrings.large_
-import typingsJapgolly.baseui.timepickerMod.TimePickerProps
+import typingsJapgolly.baseui.datepickerUtilsTypesMod.DateIOAdapter
+import typingsJapgolly.baseui.inputTypesMod.Size
+import typingsJapgolly.baseui.timepickerTypesMod.TimePickerOverrides
+import typingsJapgolly.baseui.timepickerTypesMod.TimePickerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TimePicker {
-  def apply(
-    creatable: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    error: js.UndefOr[Boolean] = js.undefined,
-    format: `12` | `24` = null,
-    nullable: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* args */ js.Date => CallbackTo[js.Any] = null,
-    overrides: AnonSelect = null,
-    placeholder: String = null,
-    positive: js.UndefOr[Boolean] = js.undefined,
-    size: default_ | compact | large_ = null,
-    step: Int | Double = null,
-    value: js.Date = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    TimePickerProps, 
-    typingsJapgolly.baseui.timepickerMod.TimePicker, 
-    Unit, 
-    TimePickerProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(creatable)) __obj.updateDynamic("creatable")(creatable.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* args */ js.Date) => onChange(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.timepickerMod.TimePickerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.timepickerMod.TimePicker](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.timepickerMod.TimePickerProps])(children: _*)
+  inline def apply[T](adapter: DateIOAdapter[T]): Builder[T] = {
+    val __props = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[TimePickerProps[T]]))
   }
-  @JSImport("baseui/timepicker", "TimePicker")
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("baseui/datepicker", "TimePicker")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.datepickerMod.TimePicker[T]] {
+    
+    inline def creatable(value: Boolean): this.type = set("creatable", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def error(value: Boolean): this.type = set("error", value.asInstanceOf[js.Any])
+    
+    inline def format(value: `12` | `24`): this.type = set("format", value.asInstanceOf[js.Any])
+    
+    inline def ignoreMinMaxDateComponent(value: Boolean): this.type = set("ignoreMinMaxDateComponent", value.asInstanceOf[js.Any])
+    
+    inline def maxTime(value: T): this.type = set("maxTime", value.asInstanceOf[js.Any])
+    
+    inline def minTime(value: T): this.type = set("minTime", value.asInstanceOf[js.Any])
+    
+    inline def nullable(value: Boolean): this.type = set("nullable", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* a */ T | Null => Any): this.type = set("onChange", js.Any.fromFunction1(value))
+    
+    inline def overrides(value: TimePickerOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def positive(value: Boolean): this.type = set("positive", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Size): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def step(value: Double): this.type = set("step", value.asInstanceOf[js.Any])
+    
+    inline def value(value: T): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueNull: this.type = set("value", null)
+  }
+  
+  def withProps[T](p: TimePickerProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

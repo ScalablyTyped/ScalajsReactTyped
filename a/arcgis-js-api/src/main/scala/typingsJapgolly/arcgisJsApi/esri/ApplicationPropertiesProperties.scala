@@ -1,10 +1,11 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ApplicationPropertiesProperties extends js.Object {
+trait ApplicationPropertiesProperties extends StObject {
+  
   /**
     * View-specific properties of application and UI elements for the web map.
     *
@@ -12,13 +13,17 @@ trait ApplicationPropertiesProperties extends js.Object {
     */
   var viewing: js.UndefOr[ViewingProperties] = js.undefined
 }
-
 object ApplicationPropertiesProperties {
-  @scala.inline
-  def apply(viewing: ViewingProperties = null): ApplicationPropertiesProperties = {
+  
+  inline def apply(): ApplicationPropertiesProperties = {
     val __obj = js.Dynamic.literal()
-    if (viewing != null) __obj.updateDynamic("viewing")(viewing.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationPropertiesProperties]
   }
+  
+  extension [Self <: ApplicationPropertiesProperties](x: Self) {
+    
+    inline def setViewing(value: ViewingProperties): Self = StObject.set(x, "viewing", value.asInstanceOf[js.Any])
+    
+    inline def setViewingUndefined: Self = StObject.set(x, "viewing", js.undefined)
+  }
 }
-

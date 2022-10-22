@@ -1,55 +1,73 @@
 package typingsJapgolly.uniApp
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetBackgroundAudioOptions extends js.Object {
+trait GetBackgroundAudioOptions extends StObject {
+  
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 封面url
     */
   var coverImgUrl: js.UndefOr[String] = js.undefined
+  
   /**
     * 音乐链接，目前支持的格式有 m4a, aac, mp3, wav
     */
   var dataUrl: js.UndefOr[String] = js.undefined
+  
   /**
     * 接口调用失败的回调函数
     */
   var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 接口调用成功的回调函数
     */
   var success: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 音乐标题
     */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object GetBackgroundAudioOptions {
-  @scala.inline
-  def apply(
-    complete: js.UndefOr[Callback] = js.undefined,
-    coverImgUrl: String = null,
-    dataUrl: String = null,
-    fail: js.UndefOr[Callback] = js.undefined,
-    success: js.UndefOr[Callback] = js.undefined,
-    title: String = null
-  ): GetBackgroundAudioOptions = {
+  
+  inline def apply(): GetBackgroundAudioOptions = {
     val __obj = js.Dynamic.literal()
-    complete.foreach(p => __obj.updateDynamic("complete")(p.toJsFn))
-    if (coverImgUrl != null) __obj.updateDynamic("coverImgUrl")(coverImgUrl.asInstanceOf[js.Any])
-    if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl.asInstanceOf[js.Any])
-    fail.foreach(p => __obj.updateDynamic("fail")(p.toJsFn))
-    success.foreach(p => __obj.updateDynamic("success")(p.toJsFn))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBackgroundAudioOptions]
   }
+  
+  extension [Self <: GetBackgroundAudioOptions](x: Self) {
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setCoverImgUrl(value: String): Self = StObject.set(x, "coverImgUrl", value.asInstanceOf[js.Any])
+    
+    inline def setCoverImgUrlUndefined: Self = StObject.set(x, "coverImgUrl", js.undefined)
+    
+    inline def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
+    
+    inline def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
+    
+    inline def setFail(value: Callback): Self = StObject.set(x, "fail", value.toJsFn)
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setSuccess(value: Callback): Self = StObject.set(x, "success", value.toJsFn)
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

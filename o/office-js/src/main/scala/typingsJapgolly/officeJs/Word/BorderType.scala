@@ -1,164 +1,232 @@
 package typingsJapgolly.officeJs.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BorderType extends js.Object
-
+sealed trait BorderType extends StObject
 /**
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.BorderType")
 @js.native
-object BorderType extends js.Object {
+object BorderType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait dashDotStroked extends BorderType
+  sealed trait dashDotStroked
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait dashed extends BorderType
+  sealed trait dashed
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait dashedSmall extends BorderType
+  sealed trait dashedSmall
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait dot2Dashed extends BorderType
+  sealed trait dot2Dashed
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait dotDashed extends BorderType
+  sealed trait dotDashed
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait dotted extends BorderType
+  sealed trait dotted
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait double extends BorderType
+  sealed trait double
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait doubleWave extends BorderType
+  sealed trait doubleWave
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait mixed extends BorderType
+  sealed trait mixed
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait none extends BorderType
+  sealed trait none
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait single extends BorderType
+  sealed trait single
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait thickThinLarge extends BorderType
+  sealed trait thickThinLarge
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait thickThinMed extends BorderType
+  sealed trait thickThinMed
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait thickThinSmall extends BorderType
+  sealed trait thickThinSmall
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait thinThickLarge extends BorderType
+  sealed trait thinThickLarge
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait thinThickMed extends BorderType
+  sealed trait thinThickMed
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait thinThickSmall extends BorderType
+  sealed trait thinThickSmall
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait thinThickThinLarge extends BorderType
+  sealed trait thinThickThinLarge
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait thinThickThinMed extends BorderType
+  sealed trait thinThickThinMed
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait thinThickThinSmall extends BorderType
+  sealed trait thinThickThinSmall
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait threeDEmboss extends BorderType
+  sealed trait threeDEmboss
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait threeDEngrave extends BorderType
+  sealed trait threeDEngrave
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait triple extends BorderType
+  sealed trait triple
+    extends StObject
+       with BorderType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait wave extends BorderType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[BorderType with String] = js.native
-  /* "DashDotStroked" */ @js.native
-  object dashDotStroked extends TopLevel[dashDotStroked with String]
-  
-  /* "Dashed" */ @js.native
-  object dashed extends TopLevel[dashed with String]
-  
-  /* "DashedSmall" */ @js.native
-  object dashedSmall extends TopLevel[dashedSmall with String]
-  
-  /* "Dot2Dashed" */ @js.native
-  object dot2Dashed extends TopLevel[dot2Dashed with String]
-  
-  /* "DotDashed" */ @js.native
-  object dotDashed extends TopLevel[dotDashed with String]
-  
-  /* "Dotted" */ @js.native
-  object dotted extends TopLevel[dotted with String]
-  
-  /* "Double" */ @js.native
-  object double extends TopLevel[double with String]
-  
-  /* "DoubleWave" */ @js.native
-  object doubleWave extends TopLevel[doubleWave with String]
-  
-  /* "Mixed" */ @js.native
-  object mixed extends TopLevel[mixed with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "Single" */ @js.native
-  object single extends TopLevel[single with String]
-  
-  /* "ThickThinLarge" */ @js.native
-  object thickThinLarge extends TopLevel[thickThinLarge with String]
-  
-  /* "ThickThinMed" */ @js.native
-  object thickThinMed extends TopLevel[thickThinMed with String]
-  
-  /* "ThickThinSmall" */ @js.native
-  object thickThinSmall extends TopLevel[thickThinSmall with String]
-  
-  /* "ThinThickLarge" */ @js.native
-  object thinThickLarge extends TopLevel[thinThickLarge with String]
-  
-  /* "ThinThickMed" */ @js.native
-  object thinThickMed extends TopLevel[thinThickMed with String]
-  
-  /* "ThinThickSmall" */ @js.native
-  object thinThickSmall extends TopLevel[thinThickSmall with String]
-  
-  /* "ThinThickThinLarge" */ @js.native
-  object thinThickThinLarge extends TopLevel[thinThickThinLarge with String]
-  
-  /* "ThinThickThinMed" */ @js.native
-  object thinThickThinMed extends TopLevel[thinThickThinMed with String]
-  
-  /* "ThinThickThinSmall" */ @js.native
-  object thinThickThinSmall extends TopLevel[thinThickThinSmall with String]
-  
-  /* "ThreeDEmboss" */ @js.native
-  object threeDEmboss extends TopLevel[threeDEmboss with String]
-  
-  /* "ThreeDEngrave" */ @js.native
-  object threeDEngrave extends TopLevel[threeDEngrave with String]
-  
-  /* "Triple" */ @js.native
-  object triple extends TopLevel[triple with String]
-  
-  /* "Wave" */ @js.native
-  object wave extends TopLevel[wave with String]
-  
+  sealed trait wave
+    extends StObject
+       with BorderType
 }
-

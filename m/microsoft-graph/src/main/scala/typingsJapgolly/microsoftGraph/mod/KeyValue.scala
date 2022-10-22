@@ -1,23 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KeyValue extends js.Object {
+trait KeyValue extends StObject {
+  
   // Key for the key-value pair.
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Value for the key-value pair.
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object KeyValue {
-  @scala.inline
-  def apply(key: String = null, value: String = null): KeyValue = {
+  
+  inline def apply(): KeyValue = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyValue]
   }
+  
+  extension [Self <: KeyValue](x: Self) {
+    
+    inline def setKey(value: NullableOption[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

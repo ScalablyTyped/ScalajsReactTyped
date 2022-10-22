@@ -1,12 +1,11 @@
 package typingsJapgolly.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GlidePluginManager")
-@js.native
-class GlidePluginManager () extends js.Object {
+trait GlidePluginManager extends StObject {
+  
   /**
     * Determines if the specified plugin has been activated.
     *
@@ -32,6 +31,17 @@ class GlidePluginManager () extends js.Object {
     * // The plugin Ten Cool Things is active
     * // ...
     */
-  def isActive(pluginId: String): Boolean = js.native
+  def isActive(pluginId: String): Boolean
 }
-
+object GlidePluginManager {
+  
+  inline def apply(isActive: String => Boolean): GlidePluginManager = {
+    val __obj = js.Dynamic.literal(isActive = js.Any.fromFunction1(isActive))
+    __obj.asInstanceOf[GlidePluginManager]
+  }
+  
+  extension [Self <: GlidePluginManager](x: Self) {
+    
+    inline def setIsActive(value: String => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction1(value))
+  }
+}

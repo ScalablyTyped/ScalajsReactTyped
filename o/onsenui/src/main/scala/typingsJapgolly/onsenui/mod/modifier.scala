@@ -1,42 +1,47 @@
 package typingsJapgolly.onsenui.mod
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @description Utility methods for modifier attributes
   */
-@JSImport("onsenui", "modifier")
-@js.native
-object modifier extends js.Object {
+object modifier {
+  
+  @JSImport("onsenui", "modifier")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @description Add the specified modifiers to the element if they are not already included.
     * @param {HTMLElemenet} element Target element.
     * @param {String} modifier Name of the modifier.
     */
-  def add(element: HTMLElement, modifier: String*): Unit = js.native
+  inline def add(element: HTMLElement, modifier: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(scala.List(element.asInstanceOf[js.Any]).`++`(modifier.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  
   /**
     * @description Check whether the specified modifier is included in the element.
     * @param {HTMLElemenet} element Target element.
     * @param {String} modifier Name of the modifier.
     * @return {Boolean} 'true' when the specified modifier is found in the element's 'modifier' attribute. 'false' otherwise.
     */
-  def contains(element: HTMLElement, modifier: String): Boolean = js.native
+  inline def contains(element: HTMLElement, modifier: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(element.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   /**
     * @description Remove the specified modifiers from the element if they are included.
     * @param {HTMLElemenet} element Target element.
     * @param {String} modifier Name of the modifier.
     */
-  def remove(element: HTMLElement, modifier: String*): Unit = js.native
+  inline def remove(element: HTMLElement, modifier: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(scala.List(element.asInstanceOf[js.Any]).`++`(modifier.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  
   /**
     * @description Toggle the specified modifier.
     * @param {HTMLElemenet} element Target element.
     * @param {String} modifier Name of the modifier.
     * @param {Boolean} force If it evaluates to true, add specified modifier value, and if it evaluates to false, remove it.
     */
-  def toggle(element: HTMLElement, modifier: String): Unit = js.native
-  def toggle(element: HTMLElement, modifier: String, force: Boolean): Unit = js.native
+  inline def toggle(element: HTMLElement, modifier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def toggle(element: HTMLElement, modifier: String, force: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

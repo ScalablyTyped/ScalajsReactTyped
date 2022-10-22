@@ -1,29 +1,25 @@
 package typingsJapgolly.tsEssentials
 
+import typingsJapgolly.tsEssentials.distLiteralTypesMod.Separator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tsEssentialsStrings {
-  @js.native
-  sealed trait DeepPartial extends js.Object
   
   @js.native
-  sealed trait DeepReadonlyObject extends js.Object
+  sealed trait `-_`
+    extends StObject
+       with Separator
+  inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
-  sealed trait DeepRequired extends js.Object
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait Dictionary extends js.Object
-  
-  @scala.inline
-  def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
-  @scala.inline
-  def DeepReadonlyObject: DeepReadonlyObject = "DeepReadonlyObject".asInstanceOf[DeepReadonlyObject]
-  @scala.inline
-  def DeepRequired: DeepRequired = "DeepRequired".asInstanceOf[DeepRequired]
-  @scala.inline
-  def Dictionary: Dictionary = "Dictionary".asInstanceOf[Dictionary]
+  sealed trait _underscore
+    extends StObject
+       with Separator
+  inline def _underscore: _underscore = "_".asInstanceOf[_underscore]
 }
-

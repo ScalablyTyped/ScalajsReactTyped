@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextButtonStyle extends js.Object
-
+sealed trait TextButtonStyle extends StObject
 /**
   * An enum that specifies the style for TextButton.
   *
@@ -17,20 +15,15 @@ sealed trait TextButtonStyle extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Card_Service.TextButtonStyle")
 @js.native
-object TextButtonStyle extends js.Object {
-  @js.native
-  sealed trait FILLED extends TextButtonStyle
+object TextButtonStyle extends StObject {
   
   @js.native
-  sealed trait TEXT extends TextButtonStyle
+  sealed trait FILLED
+    extends StObject
+       with TextButtonStyle
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextButtonStyle with Double] = js.native
-  /* 1 */ @js.native
-  object FILLED extends TopLevel[FILLED with Double]
-  
-  /* 0 */ @js.native
-  object TEXT extends TopLevel[TEXT with Double]
-  
+  @js.native
+  sealed trait TEXT
+    extends StObject
+       with TextButtonStyle
 }
-

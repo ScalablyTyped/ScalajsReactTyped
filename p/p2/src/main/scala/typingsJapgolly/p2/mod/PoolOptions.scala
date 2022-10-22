@@ -1,19 +1,24 @@
 package typingsJapgolly.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PoolOptions extends js.Object {
+trait PoolOptions extends StObject {
+  
   var size: js.UndefOr[Double] = js.undefined
 }
-
 object PoolOptions {
-  @scala.inline
-  def apply(size: Int | Double = null): PoolOptions = {
+  
+  inline def apply(): PoolOptions = {
     val __obj = js.Dynamic.literal()
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoolOptions]
   }
+  
+  extension [Self <: PoolOptions](x: Self) {
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+  }
 }
-

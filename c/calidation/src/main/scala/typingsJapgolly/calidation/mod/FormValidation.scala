@@ -1,12 +1,18 @@
 package typingsJapgolly.calidation.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("calidation", "FormValidation")
 @js.native
-class FormValidation ()
-  extends Component[FormValidationProps, js.Object, js.Any]
-
+open class FormValidation[T /* <: js.Object */] protected ()
+  extends Component[FormValidationProps[T], js.Object, Any] {
+  def this(props: FormValidationProps[T]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: FormValidationProps[T], context: Any) = this()
+}

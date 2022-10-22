@@ -1,20 +1,12 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "SurveyWindow")
 @js.native
-class SurveyWindow () extends SurveyWindowModel {
-  def this(jsonObj: js.Any) = this()
-  def this(jsonObj: js.Any, initialModel: SurveyModel) = this()
-  val css: js.Any = js.native
-  var doExpand: js.Any = js.native
-  var koExpanded: js.Any = js.native
-  var koExpandedCss: js.Any = js.native
-  var template: String = js.native
-  /* protected */ def doShowingChanged(): Unit = js.native
-  /* protected */ def getDefaultTemplate(): String = js.native
+open class SurveyWindow protected () extends PopupSurvey {
+  def this(jsonObj: Any) = this()
+  def this(jsonObj: Any, initialModel: Any) = this()
 }
-

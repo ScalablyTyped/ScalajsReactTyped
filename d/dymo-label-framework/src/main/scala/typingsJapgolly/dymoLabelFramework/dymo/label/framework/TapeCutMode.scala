@@ -1,32 +1,25 @@
 package typingsJapgolly.dymoLabelFramework.dymo.label.framework
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TapeCutMode extends js.Object
-
+sealed trait TapeCutMode extends StObject
 /** Enumeration that specifies the tape cut mode when printing multiple labels to a Tape printer. Note: This enumeration affects multiple page print jobs only. If a one page job is printed, the tape is always cut. */
 @JSGlobal("dymo.label.framework.TapeCutMode")
 @js.native
-object TapeCutMode extends js.Object {
+object TapeCutMode extends StObject {
+  
   /** Indicates to cut the tape between labels. */
   @js.native
-  sealed trait AutoCut extends TapeCutMode
+  sealed trait AutoCut
+    extends StObject
+       with TapeCutMode
   
   /** Indicates to print cut marks between labels. */
   @js.native
-  sealed trait ChainMarks extends TapeCutMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TapeCutMode with Double] = js.native
-  /* 0 */ @js.native
-  object AutoCut extends TopLevel[AutoCut with Double]
-  
-  /* 1 */ @js.native
-  object ChainMarks extends TopLevel[ChainMarks with Double]
-  
+  sealed trait ChainMarks
+    extends StObject
+       with TapeCutMode
 }
-

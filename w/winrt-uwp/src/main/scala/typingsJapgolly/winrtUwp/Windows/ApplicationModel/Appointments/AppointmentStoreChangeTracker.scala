@@ -1,15 +1,33 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides APIs for managing change tracking for appointments. */
-@JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStoreChangeTracker")
-@js.native
-abstract class AppointmentStoreChangeTracker () extends js.Object {
-  var enable: js.Any = js.native
-   /* unmapped type */ var getChangeReader: js.Any = js.native
-   /* unmapped type */ var reset: js.Any = js.native
+trait AppointmentStoreChangeTracker extends StObject {
+  
+  var enable: Any
+  
+  /* unmapped type */
+  var getChangeReader: Any
+  
+  /* unmapped type */
+  var reset: Any
 }
-
+object AppointmentStoreChangeTracker {
+  
+  inline def apply(enable: Any, getChangeReader: Any, reset: Any): AppointmentStoreChangeTracker = {
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], getChangeReader = getChangeReader.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AppointmentStoreChangeTracker]
+  }
+  
+  extension [Self <: AppointmentStoreChangeTracker](x: Self) {
+    
+    inline def setEnable(value: Any): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    
+    inline def setGetChangeReader(value: Any): Self = StObject.set(x, "getChangeReader", value.asInstanceOf[js.Any])
+    
+    inline def setReset(value: Any): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,27 +1,33 @@
 package typingsJapgolly.exceljs.mod
 
-import typingsJapgolly.exceljs.exceljsNumbers.`0`
-import typingsJapgolly.exceljs.exceljsNumbers.`1`
-import typingsJapgolly.exceljs.exceljsNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.exceljs.exceljsNumbers.`0`
-  - typingsJapgolly.exceljs.exceljsNumbers.`1`
-  - typingsJapgolly.exceljs.exceljsNumbers.`2`
-*/
-trait FormulaType extends js.Object
-
-object FormulaType {
-  @scala.inline
-  def Master: `1` = this.cast(1)
-  @scala.inline
-  def None: `0` = this.cast(0)
-  @scala.inline
-  def Shared: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+@js.native
+sealed trait FormulaType extends StObject
+@JSImport("exceljs", "FormulaType")
+@js.native
+object FormulaType extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[FormulaType & Double] = js.native
+  
+  @js.native
+  sealed trait Master
+    extends StObject
+       with FormulaType
+  /* 1 */ val Master: typingsJapgolly.exceljs.mod.FormulaType.Master & Double = js.native
+  
+  @js.native
+  sealed trait None
+    extends StObject
+       with FormulaType
+  /* 0 */ val None: typingsJapgolly.exceljs.mod.FormulaType.None & Double = js.native
+  
+  @js.native
+  sealed trait Shared
+    extends StObject
+       with FormulaType
+  /* 2 */ val Shared: typingsJapgolly.exceljs.mod.FormulaType.Shared & Double = js.native
 }
-

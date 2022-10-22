@@ -11,14 +11,11 @@ Various utility functions for working with object, including object merging, inh
 | Full name          | objtools |
 | Keywords           | object, merge, extend, clone, copy, mask, filter |
 | # releases         | 3 |
-| # dependents       | 17 |
-| # downloads        | 1029 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 222.33333333333334 |
+| # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/zipscene/objtools#readme)
-- [Bugs](https://github.com/zipscene/objtools/issues)
-- [Repository](https://github.com/zipscene/objtools)
 - [Npm](https://www.npmjs.com/package/objtools)
     
 

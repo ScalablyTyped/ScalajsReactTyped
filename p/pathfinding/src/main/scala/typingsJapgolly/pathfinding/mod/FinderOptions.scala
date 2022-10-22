@@ -1,27 +1,32 @@
 package typingsJapgolly.pathfinding.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FinderOptions extends Heuristic {
+trait FinderOptions
+  extends StObject
+     with Heuristic {
+  
   var diagonalMovement: js.UndefOr[DiagonalMovement] = js.undefined
+  
   var weight: js.UndefOr[Double] = js.undefined
 }
-
 object FinderOptions {
-  @scala.inline
-  def apply(
-    diagonalMovement: DiagonalMovement = null,
-    heuristic: (/* dx */ Double, /* dy */ Double) => CallbackTo[Double] = null,
-    weight: Int | Double = null
-  ): FinderOptions = {
+  
+  inline def apply(): FinderOptions = {
     val __obj = js.Dynamic.literal()
-    if (diagonalMovement != null) __obj.updateDynamic("diagonalMovement")(diagonalMovement.asInstanceOf[js.Any])
-    if (heuristic != null) __obj.updateDynamic("heuristic")(js.Any.fromFunction2((t0: /* dx */ scala.Double, t1: /* dy */ scala.Double) => heuristic(t0, t1).runNow()))
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinderOptions]
   }
+  
+  extension [Self <: FinderOptions](x: Self) {
+    
+    inline def setDiagonalMovement(value: DiagonalMovement): Self = StObject.set(x, "diagonalMovement", value.asInstanceOf[js.Any])
+    
+    inline def setDiagonalMovementUndefined: Self = StObject.set(x, "diagonalMovement", js.undefined)
+    
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

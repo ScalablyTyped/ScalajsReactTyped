@@ -1,39 +1,57 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.AllJoyn
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a join session request that is used to determine if the request will be accepted and initiate the session connection. */
-@JSGlobal("Windows.Devices.AllJoyn.AllJoynAcceptSessionJoinerEventArgs")
-@js.native
-class AllJoynAcceptSessionJoinerEventArgs protected () extends js.Object {
-  /**
-    * Generates an object containing information about the connection being accepted to the session and the method that completes the session join.
-    * @param uniqueName The unique bus name.
-    * @param sessionPort The session port used for the connection.
-    * @param trafficType The type of traffic provided over the connection.
-    * @param proximity Indicates network proximity.
-    * @param acceptSessionJoiner The IAllJoynAcceptSessionJoiner object used to complete the session join.
-    */
-  def this(
-    uniqueName: String,
+trait AllJoynAcceptSessionJoinerEventArgs extends StObject {
+  
+  /** Called to accept the session connection. */
+  def accept(): Unit
+  
+  /** Indicates if the app joining the session is on the same network. */
+  var sameNetwork: Boolean
+  
+  /** The app joining the session is on the same physical node. */
+  var samePhysicalNode: Boolean
+  
+  /** The session port being used to connect to the session. */
+  var sessionPort: Double
+  
+  /** The traffic type supported during the session. */
+  var trafficType: AllJoynTrafficType
+  
+  /** The unique bus name of the app requesting a session connection. */
+  var uniqueName: String
+}
+object AllJoynAcceptSessionJoinerEventArgs {
+  
+  inline def apply(
+    accept: Callback,
+    sameNetwork: Boolean,
+    samePhysicalNode: Boolean,
     sessionPort: Double,
     trafficType: AllJoynTrafficType,
-    proximity: Double,
-    acceptSessionJoiner: IAllJoynAcceptSessionJoiner
-  ) = this()
-  /** Indicates if the app joining the session is on the same network. */
-  var sameNetwork: Boolean = js.native
-  /** The app joining the session is on the same physical node. */
-  var samePhysicalNode: Boolean = js.native
-  /** The session port being used to connect to the session. */
-  var sessionPort: Double = js.native
-  /** The traffic type supported during the session. */
-  var trafficType: AllJoynTrafficType = js.native
-  /** The unique bus name of the app requesting a session connection. */
-  var uniqueName: String = js.native
-  /** Called to accept the session connection. */
-  def accept(): Unit = js.native
+    uniqueName: String
+  ): AllJoynAcceptSessionJoinerEventArgs = {
+    val __obj = js.Dynamic.literal(accept = accept.toJsFn, sameNetwork = sameNetwork.asInstanceOf[js.Any], samePhysicalNode = samePhysicalNode.asInstanceOf[js.Any], sessionPort = sessionPort.asInstanceOf[js.Any], trafficType = trafficType.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AllJoynAcceptSessionJoinerEventArgs]
+  }
+  
+  extension [Self <: AllJoynAcceptSessionJoinerEventArgs](x: Self) {
+    
+    inline def setAccept(value: Callback): Self = StObject.set(x, "accept", value.toJsFn)
+    
+    inline def setSameNetwork(value: Boolean): Self = StObject.set(x, "sameNetwork", value.asInstanceOf[js.Any])
+    
+    inline def setSamePhysicalNode(value: Boolean): Self = StObject.set(x, "samePhysicalNode", value.asInstanceOf[js.Any])
+    
+    inline def setSessionPort(value: Double): Self = StObject.set(x, "sessionPort", value.asInstanceOf[js.Any])
+    
+    inline def setTrafficType(value: AllJoynTrafficType): Self = StObject.set(x, "trafficType", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+  }
 }
-

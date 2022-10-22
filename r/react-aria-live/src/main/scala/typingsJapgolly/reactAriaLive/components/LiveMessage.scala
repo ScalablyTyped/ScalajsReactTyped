@@ -1,47 +1,32 @@
 package typingsJapgolly.reactAriaLive.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactAriaLive.AnonArialive
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactAriaLive.anon.Arialive
 import typingsJapgolly.reactAriaLive.reactAriaLiveStrings.assertive
 import typingsJapgolly.reactAriaLive.reactAriaLiveStrings.polite
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LiveMessage {
-  def apply(
-    message: String,
-    `aria-live`: assertive | polite,
-    clearOnUnmount: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    AnonArialive, 
-    MountedWithRawType[AnonArialive, js.Object, RawMounted[AnonArialive, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearOnUnmount)) __obj.updateDynamic("clearOnUnmount")(clearOnUnmount.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.reactAriaLive.AnonArialive, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactAriaLive.AnonArialive])(children: _*)
+  inline def apply(`aria-live`: assertive | polite, message: String): Builder = {
+    val __props = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    __props.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[Arialive]))
   }
+  
   @JSImport("react-aria-live", "LiveMessage")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def clearOnUnmount(value: Boolean): this.type = set("clearOnUnmount", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: Arialive): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

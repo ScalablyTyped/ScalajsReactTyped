@@ -10,10 +10,10 @@ Apptimize Client SDK for Web
 | ------------------ | :-------------: |
 | Full name          | @apptimize/apptimize-web-sdk |
 | Keywords           | apptimize, ab, testing, experimentation, ab testing, a/b testing, cross platform, cross-platform, serverside a/b testing, javascript a/b testing, node flags, node flag, feature flag, feature toggle, feature switch, canary release, dark launch |
-| # releases         | 12 |
-| # dependents       | 0 |
-| # downloads        | 4549 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 8580.333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://apptimize.com/)

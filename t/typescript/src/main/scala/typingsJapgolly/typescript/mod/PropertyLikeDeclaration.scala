@@ -1,12 +1,14 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropertyLikeDeclaration extends NamedDeclaration {
+trait PropertyLikeDeclaration
+  extends StObject
+     with NamedDeclaration {
+  
   @JSName("name")
-  var name_PropertyLikeDeclaration: PropertyName = js.native
+  val name_PropertyLikeDeclaration: PropertyName = js.native
 }
-

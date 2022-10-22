@@ -1,8 +1,8 @@
 package typingsJapgolly.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.weixinApp.weixinAppStrings.tap
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.weixinApp.weixinAppStrings.touchend
   - typingsJapgolly.weixinApp.weixinAppStrings.touchforcechange
 */
-trait TouchEventType extends js.Object
-
+trait TouchEventType extends StObject
 object TouchEventType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def tap: typingsJapgolly.weixinApp.weixinAppStrings.tap = this.cast("tap")
-  @scala.inline
-  def touchcancel: typingsJapgolly.weixinApp.weixinAppStrings.touchcancel = this.cast("touchcancel")
-  @scala.inline
-  def touchend: typingsJapgolly.weixinApp.weixinAppStrings.touchend = this.cast("touchend")
-  @scala.inline
-  def touchforcechange: typingsJapgolly.weixinApp.weixinAppStrings.touchforcechange = this.cast("touchforcechange")
-  @scala.inline
-  def touchmove: typingsJapgolly.weixinApp.weixinAppStrings.touchmove = this.cast("touchmove")
-  @scala.inline
-  def touchstart: typingsJapgolly.weixinApp.weixinAppStrings.touchstart = this.cast("touchstart")
+  
+  inline def tap: typingsJapgolly.weixinApp.weixinAppStrings.tap = "tap".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.tap]
+  
+  inline def touchcancel: typingsJapgolly.weixinApp.weixinAppStrings.touchcancel = "touchcancel".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.touchcancel]
+  
+  inline def touchend: typingsJapgolly.weixinApp.weixinAppStrings.touchend = "touchend".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.touchend]
+  
+  inline def touchforcechange: typingsJapgolly.weixinApp.weixinAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.touchforcechange]
+  
+  inline def touchmove: typingsJapgolly.weixinApp.weixinAppStrings.touchmove = "touchmove".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.touchmove]
+  
+  inline def touchstart: typingsJapgolly.weixinApp.weixinAppStrings.touchstart = "touchstart".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.touchstart]
 }
-

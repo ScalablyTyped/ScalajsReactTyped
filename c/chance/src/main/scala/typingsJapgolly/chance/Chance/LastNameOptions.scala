@@ -1,19 +1,22 @@
 package typingsJapgolly.chance.Chance
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LastNameOptions extends js.Object {
+trait LastNameOptions extends StObject {
+  
   var nationality: LastNameNationalities
 }
-
 object LastNameOptions {
-  @scala.inline
-  def apply(nationality: LastNameNationalities): LastNameOptions = {
-    val __obj = js.Dynamic.literal(nationality = nationality.asInstanceOf[js.Any])
   
+  inline def apply(nationality: LastNameNationalities): LastNameOptions = {
+    val __obj = js.Dynamic.literal(nationality = nationality.asInstanceOf[js.Any])
     __obj.asInstanceOf[LastNameOptions]
   }
+  
+  extension [Self <: LastNameOptions](x: Self) {
+    
+    inline def setNationality(value: LastNameNationalities): Self = StObject.set(x, "nationality", value.asInstanceOf[js.Any])
+  }
 }
-

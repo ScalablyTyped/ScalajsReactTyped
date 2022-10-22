@@ -1,15 +1,16 @@
 package typingsJapgolly.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
 import japgolly.scalajs.react.Callback
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for a LaTeX typesetter.
   */
-trait ILatexTypesetter extends js.Object {
+trait ILatexTypesetter extends StObject {
+  
   /**
     * Typeset a DOM element.
     *
@@ -24,13 +25,15 @@ trait ILatexTypesetter extends js.Object {
     */
   def typeset(element: HTMLElement): Unit
 }
-
 object ILatexTypesetter {
-  @scala.inline
-  def apply(typeset: HTMLElement => Callback): ILatexTypesetter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("typeset")(js.Any.fromFunction1((t0: org.scalajs.dom.raw.HTMLElement) => typeset(t0).runNow()))
+  
+  inline def apply(typeset: HTMLElement => Callback): ILatexTypesetter = {
+    val __obj = js.Dynamic.literal(typeset = js.Any.fromFunction1((t0: HTMLElement) => typeset(t0).runNow()))
     __obj.asInstanceOf[ILatexTypesetter]
   }
+  
+  extension [Self <: ILatexTypesetter](x: Self) {
+    
+    inline def setTypeset(value: HTMLElement => Callback): Self = StObject.set(x, "typeset", js.Any.fromFunction1((t0: HTMLElement) => value(t0).runNow()))
+  }
 }
-

@@ -1,139 +1,122 @@
 package typingsJapgolly.nukaCarousel
 
-import typingsJapgolly.nukaCarousel.mod.CarouselCellAlignProp
-import typingsJapgolly.nukaCarousel.mod.CarouselControlContainerProp
-import typingsJapgolly.nukaCarousel.mod.CarouselHeightModeProp
-import typingsJapgolly.nukaCarousel.mod.CarouselSlideActions
-import typingsJapgolly.nukaCarousel.mod.CarouselTransitionModeProp
+import typingsJapgolly.nukaCarousel.libTypesMod.RenderControlFunctionNames
+import typingsJapgolly.nukaCarousel.libTypesMod._KeyCodeFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nukaCarouselStrings {
-  @js.native
-  sealed trait BottomCenter extends CarouselControlContainerProp
   
   @js.native
-  sealed trait BottomLeft extends CarouselControlContainerProp
+  sealed trait assertive extends StObject
+  inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait BottomRight extends CarouselControlContainerProp
+  sealed trait fade extends StObject
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
-  sealed trait CenterCenter extends CarouselControlContainerProp
+  sealed trait firstSlide
+    extends StObject
+       with _KeyCodeFunction
+  inline def firstSlide: firstSlide = "firstSlide".asInstanceOf[firstSlide]
   
   @js.native
-  sealed trait CenterLeft extends CarouselControlContainerProp
+  sealed trait lastSlide
+    extends StObject
+       with _KeyCodeFunction
+  inline def lastSlide: lastSlide = "lastSlide".asInstanceOf[lastSlide]
   
   @js.native
-  sealed trait CenterRight extends CarouselControlContainerProp
+  sealed trait `next-cloned` extends StObject
+  inline def `next-cloned`: `next-cloned` = "next-cloned".asInstanceOf[`next-cloned`]
   
   @js.native
-  sealed trait TopCenter extends CarouselControlContainerProp
+  sealed trait nextSlide
+    extends StObject
+       with _KeyCodeFunction
+  inline def nextSlide: nextSlide = "nextSlide".asInstanceOf[nextSlide]
   
   @js.native
-  sealed trait TopLeft extends CarouselControlContainerProp
+  sealed trait off extends StObject
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait TopRight extends CarouselControlContainerProp
+  sealed trait pause
+    extends StObject
+       with _KeyCodeFunction
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait polite extends StObject
+  inline def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
-  sealed trait center extends CarouselCellAlignProp
+  sealed trait `prev-cloned` extends StObject
+  inline def `prev-cloned`: `prev-cloned` = "prev-cloned".asInstanceOf[`prev-cloned`]
   
   @js.native
-  sealed trait current extends CarouselHeightModeProp
+  sealed trait previousSlide
+    extends StObject
+       with _KeyCodeFunction
+  inline def previousSlide: previousSlide = "previousSlide".asInstanceOf[previousSlide]
   
   @js.native
-  sealed trait fade extends CarouselTransitionModeProp
+  sealed trait renderBottomCenterControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderBottomCenterControls: renderBottomCenterControls = "renderBottomCenterControls".asInstanceOf[renderBottomCenterControls]
   
   @js.native
-  sealed trait first extends CarouselHeightModeProp
+  sealed trait renderBottomLeftControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderBottomLeftControls: renderBottomLeftControls = "renderBottomLeftControls".asInstanceOf[renderBottomLeftControls]
   
   @js.native
-  sealed trait firstSlide extends CarouselSlideActions
+  sealed trait renderBottomRightControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderBottomRightControls: renderBottomRightControls = "renderBottomRightControls".asInstanceOf[renderBottomRightControls]
   
   @js.native
-  sealed trait lastSlide extends CarouselSlideActions
+  sealed trait renderCenterCenterControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderCenterCenterControls: renderCenterCenterControls = "renderCenterCenterControls".asInstanceOf[renderCenterCenterControls]
   
   @js.native
-  sealed trait left extends CarouselCellAlignProp
+  sealed trait renderCenterLeftControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderCenterLeftControls: renderCenterLeftControls = "renderCenterLeftControls".asInstanceOf[renderCenterLeftControls]
   
   @js.native
-  sealed trait max extends CarouselHeightModeProp
+  sealed trait renderCenterRightControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderCenterRightControls: renderCenterRightControls = "renderCenterRightControls".asInstanceOf[renderCenterRightControls]
   
   @js.native
-  sealed trait nextSlide extends CarouselSlideActions
+  sealed trait renderTopCenterControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderTopCenterControls: renderTopCenterControls = "renderTopCenterControls".asInstanceOf[renderTopCenterControls]
   
   @js.native
-  sealed trait pause extends CarouselSlideActions
+  sealed trait renderTopLeftControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderTopLeftControls: renderTopLeftControls = "renderTopLeftControls".asInstanceOf[renderTopLeftControls]
   
   @js.native
-  sealed trait previousSlide extends CarouselSlideActions
+  sealed trait renderTopRightControls
+    extends StObject
+       with RenderControlFunctionNames
+  inline def renderTopRightControls: renderTopRightControls = "renderTopRightControls".asInstanceOf[renderTopRightControls]
   
   @js.native
-  sealed trait right extends CarouselCellAlignProp
-  
-  @js.native
-  sealed trait scroll extends CarouselTransitionModeProp
-  
-  @js.native
-  sealed trait scroll3d extends CarouselTransitionModeProp
-  
-  @js.native
-  sealed trait zoom extends js.Object
-  
-  @scala.inline
-  def BottomCenter: BottomCenter = "BottomCenter".asInstanceOf[BottomCenter]
-  @scala.inline
-  def BottomLeft: BottomLeft = "BottomLeft".asInstanceOf[BottomLeft]
-  @scala.inline
-  def BottomRight: BottomRight = "BottomRight".asInstanceOf[BottomRight]
-  @scala.inline
-  def CenterCenter: CenterCenter = "CenterCenter".asInstanceOf[CenterCenter]
-  @scala.inline
-  def CenterLeft: CenterLeft = "CenterLeft".asInstanceOf[CenterLeft]
-  @scala.inline
-  def CenterRight: CenterRight = "CenterRight".asInstanceOf[CenterRight]
-  @scala.inline
-  def TopCenter: TopCenter = "TopCenter".asInstanceOf[TopCenter]
-  @scala.inline
-  def TopLeft: TopLeft = "TopLeft".asInstanceOf[TopLeft]
-  @scala.inline
-  def TopRight: TopRight = "TopRight".asInstanceOf[TopRight]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def current: current = "current".asInstanceOf[current]
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
-  @scala.inline
-  def firstSlide: firstSlide = "firstSlide".asInstanceOf[firstSlide]
-  @scala.inline
-  def lastSlide: lastSlide = "lastSlide".asInstanceOf[lastSlide]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def nextSlide: nextSlide = "nextSlide".asInstanceOf[nextSlide]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def previousSlide: previousSlide = "previousSlide".asInstanceOf[previousSlide]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def scroll3d: scroll3d = "scroll3d".asInstanceOf[scroll3d]
-  @scala.inline
-  def zoom: zoom = "zoom".asInstanceOf[zoom]
+  sealed trait zoom extends StObject
+  inline def zoom: zoom = "zoom".asInstanceOf[zoom]
 }
-

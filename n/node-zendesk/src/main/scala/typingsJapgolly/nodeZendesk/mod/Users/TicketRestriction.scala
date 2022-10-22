@@ -1,8 +1,8 @@
 package typingsJapgolly.nodeZendesk.mod.Users
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nodeZendesk.nodeZendeskStrings.assigned
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.nodeZendesk.nodeZendeskStrings.organization
   - typingsJapgolly.nodeZendesk.nodeZendeskStrings.requested
 */
-trait TicketRestriction extends js.Object
-
+trait TicketRestriction extends StObject
 object TicketRestriction {
-  @scala.inline
-  def assigned: typingsJapgolly.nodeZendesk.nodeZendeskStrings.assigned = this.cast("assigned")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def groups: typingsJapgolly.nodeZendesk.nodeZendeskStrings.groups = this.cast("groups")
-  @scala.inline
-  def organization: typingsJapgolly.nodeZendesk.nodeZendeskStrings.organization = this.cast("organization")
-  @scala.inline
-  def requested: typingsJapgolly.nodeZendesk.nodeZendeskStrings.requested = this.cast("requested")
+  
+  inline def assigned: typingsJapgolly.nodeZendesk.nodeZendeskStrings.assigned = "assigned".asInstanceOf[typingsJapgolly.nodeZendesk.nodeZendeskStrings.assigned]
+  
+  inline def groups: typingsJapgolly.nodeZendesk.nodeZendeskStrings.groups = "groups".asInstanceOf[typingsJapgolly.nodeZendesk.nodeZendeskStrings.groups]
+  
+  inline def organization: typingsJapgolly.nodeZendesk.nodeZendeskStrings.organization = "organization".asInstanceOf[typingsJapgolly.nodeZendesk.nodeZendeskStrings.organization]
+  
+  inline def requested: typingsJapgolly.nodeZendesk.nodeZendeskStrings.requested = "requested".asInstanceOf[typingsJapgolly.nodeZendesk.nodeZendeskStrings.requested]
 }
-

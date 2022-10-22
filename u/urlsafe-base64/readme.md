@@ -10,10 +10,10 @@ URL Safe Base64 encoding
 | ------------------ | :-------------: |
 | Full name          | urlsafe-base64 |
 | Keywords           | base64, encoding, url, util |
-| # releases         | 1 |
-| # dependents       | 109 |
-| # downloads        | 2879890 |
-| # stars            | 6 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 608238.6666666666 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/RGBboy/urlsafe-base64)

@@ -1,28 +1,27 @@
 package typingsJapgolly.arcgisRestApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PolylineWithCurves
-  extends HasZM
+  extends StObject
+     with HasZM
      with Geometry {
+  
   var curvePaths: js.Array[js.Array[Position | JsonCurve]]
 }
-
 object PolylineWithCurves {
-  @scala.inline
-  def apply(
-    curvePaths: js.Array[js.Array[Position | JsonCurve]],
-    hasM: js.UndefOr[Boolean] = js.undefined,
-    hasZ: js.UndefOr[Boolean] = js.undefined,
-    spatialReference: SpatialReference = null
-  ): PolylineWithCurves = {
+  
+  inline def apply(curvePaths: js.Array[js.Array[Position | JsonCurve]]): PolylineWithCurves = {
     val __obj = js.Dynamic.literal(curvePaths = curvePaths.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolylineWithCurves]
   }
+  
+  extension [Self <: PolylineWithCurves](x: Self) {
+    
+    inline def setCurvePaths(value: js.Array[js.Array[Position | JsonCurve]]): Self = StObject.set(x, "curvePaths", value.asInstanceOf[js.Any])
+    
+    inline def setCurvePathsVarargs(value: (js.Array[Position | JsonCurve])*): Self = StObject.set(x, "curvePaths", js.Array(value*))
+  }
 }
-

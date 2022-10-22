@@ -1,30 +1,45 @@
 package typingsJapgolly.node.dnsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LookupOptions extends js.Object {
+trait LookupOptions extends StObject {
+  
   var all: js.UndefOr[Boolean] = js.undefined
+  
   var family: js.UndefOr[Double] = js.undefined
+  
   var hints: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * @default true
+    */
   var verbatim: js.UndefOr[Boolean] = js.undefined
 }
-
 object LookupOptions {
-  @scala.inline
-  def apply(
-    all: js.UndefOr[Boolean] = js.undefined,
-    family: Int | Double = null,
-    hints: Int | Double = null,
-    verbatim: js.UndefOr[Boolean] = js.undefined
-  ): LookupOptions = {
+  
+  inline def apply(): LookupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbatim)) __obj.updateDynamic("verbatim")(verbatim.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupOptions]
   }
+  
+  extension [Self <: LookupOptions](x: Self) {
+    
+    inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    
+    inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    
+    inline def setHints(value: Double): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+    
+    inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
+    
+    inline def setVerbatim(value: Boolean): Self = StObject.set(x, "verbatim", value.asInstanceOf[js.Any])
+    
+    inline def setVerbatimUndefined: Self = StObject.set(x, "verbatim", js.undefined)
+  }
 }
-

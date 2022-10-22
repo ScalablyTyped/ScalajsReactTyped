@@ -1,32 +1,46 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnswerCallbackQueryOptions extends js.Object {
+trait AnswerCallbackQueryOptions extends StObject {
+  
   var cache_time: js.UndefOr[Double] = js.undefined
+  
   var callback_query_id: String
+  
   var show_alert: js.UndefOr[Boolean] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object AnswerCallbackQueryOptions {
-  @scala.inline
-  def apply(
-    callback_query_id: String,
-    cache_time: Int | Double = null,
-    show_alert: js.UndefOr[Boolean] = js.undefined,
-    text: String = null,
-    url: String = null
-  ): AnswerCallbackQueryOptions = {
+  
+  inline def apply(callback_query_id: String): AnswerCallbackQueryOptions = {
     val __obj = js.Dynamic.literal(callback_query_id = callback_query_id.asInstanceOf[js.Any])
-    if (cache_time != null) __obj.updateDynamic("cache_time")(cache_time.asInstanceOf[js.Any])
-    if (!js.isUndefined(show_alert)) __obj.updateDynamic("show_alert")(show_alert.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnswerCallbackQueryOptions]
   }
+  
+  extension [Self <: AnswerCallbackQueryOptions](x: Self) {
+    
+    inline def setCache_time(value: Double): Self = StObject.set(x, "cache_time", value.asInstanceOf[js.Any])
+    
+    inline def setCache_timeUndefined: Self = StObject.set(x, "cache_time", js.undefined)
+    
+    inline def setCallback_query_id(value: String): Self = StObject.set(x, "callback_query_id", value.asInstanceOf[js.Any])
+    
+    inline def setShow_alert(value: Boolean): Self = StObject.set(x, "show_alert", value.asInstanceOf[js.Any])
+    
+    inline def setShow_alertUndefined: Self = StObject.set(x, "show_alert", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

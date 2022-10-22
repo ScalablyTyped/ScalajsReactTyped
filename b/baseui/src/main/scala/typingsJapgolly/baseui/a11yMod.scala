@@ -1,14 +1,16 @@
 package typingsJapgolly.baseui
 
-import typingsJapgolly.react.mod.FC
+import typingsJapgolly.baseui.anon.Children
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("baseui/a11y", JSImport.Namespace)
-@js.native
-object a11yMod extends js.Object {
-  @JSName("Unstable_A11y")
-  val UnstableA11y: FC[js.Object] = js.native
+object a11yMod {
+  
+  @JSImport("baseui/a11y", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def UnstableA11y(props: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Unstable_A11y")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

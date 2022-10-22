@@ -1,278 +1,335 @@
 package typingsJapgolly.pulumiKubernetes.mod
 
+import typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobListMod.CronJobList
+import typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobListMod.CronJobListArgs
+import typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobMod.CronJob
+import typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobMod.CronJobArgs
+import typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobPatchMod.CronJobPatch
+import typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobPatchMod.CronJobPatchArgs
 import typingsJapgolly.pulumiPulumi.outputMod.Input
 import typingsJapgolly.pulumiPulumi.resourceMod.CustomResourceOptions
 import typingsJapgolly.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes", "batch")
-@js.native
-object batch extends js.Object {
-  @js.native
-  object v1 extends js.Object {
-    @js.native
-    class Job protected ()
-      extends typingsJapgolly.pulumiKubernetes.batchMod.v1.Job {
-      /**
-        * Create a batch.v1.Job resource with the given unique name, arguments, and options.
-        *
-        * @param name The _unique_ name of the resource.
-        * @param args The arguments to use to populate this resource's properties.
-        * @param opts A bag of options that control this resource's behavior.
-        */
-      def this(name: String) = this()
-      def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.batch.v1.Job) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.batch.v1.Job,
-        opts: CustomResourceOptions
-      ) = this()
-    }
-    
-    @js.native
-    class JobList protected ()
-      extends typingsJapgolly.pulumiKubernetes.batchMod.v1.JobList {
-      /**
-        * Create a batch.v1.JobList resource with the given unique name, arguments, and options.
-        *
-        * @param name The _unique_ name of the resource.
-        * @param args The arguments to use to populate this resource's properties.
-        * @param opts A bag of options that control this resource's behavior.
-        */
-      def this(name: String) = this()
-      def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.batch.v1.JobList) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.batch.v1.JobList,
-        opts: CustomResourceOptions
-      ) = this()
-    }
-    
-    /* static members */
-    @js.native
-    object Job extends js.Object {
-      /**
-        * Get the state of an existing `Job` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
-        *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
-        */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.jobMod.Job = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.jobMod.Job = js.native
-      /**
-        * Returns true if the given object is an instance of Job.  This is designed to work even
-        * when multiple copies of the Pulumi SDK have been loaded into the same process.
-        */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1/Job.Job */ Boolean = js.native
-    }
-    
-    /* static members */
-    @js.native
-    object JobList extends js.Object {
-      /**
-        * Get the state of an existing `JobList` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
-        *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
-        */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.jobListMod.JobList = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.jobListMod.JobList = js.native
-      /**
-        * Returns true if the given object is an instance of JobList.  This is designed to work even
-        * when multiple copies of the Pulumi SDK have been loaded into the same process.
-        */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1/JobList.JobList */ Boolean = js.native
-    }
-    
-  }
+object batch {
   
-  @js.native
-  object v1beta1 extends js.Object {
-    @js.native
-    class CronJob protected ()
-      extends typingsJapgolly.pulumiKubernetes.batchMod.v1beta1.CronJob {
-      /**
-        * Create a batch.v1beta1.CronJob resource with the given unique name, arguments, and options.
-        *
-        * @param name The _unique_ name of the resource.
-        * @param args The arguments to use to populate this resource's properties.
-        * @param opts A bag of options that control this resource's behavior.
-        */
-      def this(name: String) = this()
-      def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.batch.v1beta1.CronJob) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.batch.v1beta1.CronJob,
-        opts: CustomResourceOptions
-      ) = this()
-    }
+  object v1beta1 {
     
-    @js.native
-    class CronJobList protected ()
-      extends typingsJapgolly.pulumiKubernetes.batchMod.v1beta1.CronJobList {
+    object CronJob {
+      
+      @JSImport("@pulumi/kubernetes", "batch.v1beta1.CronJob")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
-        * Create a batch.v1beta1.CronJobList resource with the given unique name, arguments, and options.
+        * Get an existing CronJob resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * @param name The _unique_ name of the resource.
-        * @param args The arguments to use to populate this resource's properties.
-        * @param opts A bag of options that control this resource's behavior.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      def this(name: String) = this()
-      def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.batch.v1beta1.CronJobList) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.batch.v1beta1.CronJobList,
-        opts: CustomResourceOptions
-      ) = this()
-    }
-    
-    /* static members */
-    @js.native
-    object CronJob extends js.Object {
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobMod.CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobMod.CronJob]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobMod.CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobMod.CronJob]
+      
       /**
-        * Get the state of an existing `CronJob` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Get an existing CronJob resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.cronJobMod.CronJob = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.cronJobMod.CronJob = js.native
+      inline def get_CronJob(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobMod.CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobMod.CronJob]
+      inline def get_CronJob(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobMod.CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobMod.CronJob]
+      
       /**
         * Returns true if the given object is an instance of CronJob.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/CronJob.CronJob */ Boolean = js.native
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJob.CronJob */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJob.CronJob */ Boolean]
     }
     
-    /* static members */
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes", "batch.v1beta1.CronJob")
     @js.native
-    object CronJobList extends js.Object {
+    open class CronJobCls protected () extends CronJob {
       /**
-        * Get the state of an existing `CronJobList` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Create a CronJob resource with the given unique name, arguments, and options.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resource.
+        * @param args The arguments to use to populate this resource's properties.
+        * @param opts A bag of options that control this resource's behavior.
         */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.cronJobListMod.CronJobList = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.cronJobListMod.CronJobList = js.native
+      def this(name: String) = this()
+      def this(name: String, args: CronJobArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: CronJobArgs, opts: CustomResourceOptions) = this()
+    }
+    
+    object CronJobList {
+      
+      @JSImport("@pulumi/kubernetes", "batch.v1beta1.CronJobList")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Get an existing CronJobList resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
+        *
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
+        */
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobListMod.CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobListMod.CronJobList]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobListMod.CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobListMod.CronJobList]
+      
+      /**
+        * Get an existing CronJobList resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
+        *
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
+        */
+      inline def get_CronJobList(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobListMod.CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobListMod.CronJobList]
+      inline def get_CronJobList(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobListMod.CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobListMod.CronJobList]
+      
       /**
         * Returns true if the given object is an instance of CronJobList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/CronJobList.CronJobList */ Boolean = js.native
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJobList.CronJobList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJobList.CronJobList */ Boolean]
     }
     
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes", "batch.v1beta1.CronJobList")
+    @js.native
+    open class CronJobListCls protected () extends CronJobList {
+      /**
+        * Create a CronJobList resource with the given unique name, arguments, and options.
+        *
+        * @param name The _unique_ name of the resource.
+        * @param args The arguments to use to populate this resource's properties.
+        * @param opts A bag of options that control this resource's behavior.
+        */
+      def this(name: String) = this()
+      def this(name: String, args: CronJobListArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: CronJobListArgs, opts: CustomResourceOptions) = this()
+    }
+    
+    object CronJobPatch {
+      
+      @JSImport("@pulumi/kubernetes", "batch.v1beta1.CronJobPatch")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Get an existing CronJobPatch resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
+        *
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
+        */
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobPatchMod.CronJobPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobPatchMod.CronJobPatch]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobPatchMod.CronJobPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobPatchMod.CronJobPatch]
+      
+      /**
+        * Get an existing CronJobPatch resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
+        *
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
+        */
+      inline def get_CronJobPatch(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobPatchMod.CronJobPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobPatchMod.CronJobPatch]
+      inline def get_CronJobPatch(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobPatchMod.CronJobPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobPatchMod.CronJobPatch]
+      
+      /**
+        * Returns true if the given object is an instance of CronJobPatch.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJobPatch.CronJobPatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJobPatch.CronJobPatch */ Boolean]
+    }
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes", "batch.v1beta1.CronJobPatch")
+    @js.native
+    open class CronJobPatchCls protected () extends CronJobPatch {
+      /**
+        * Create a CronJobPatch resource with the given unique name, arguments, and options.
+        *
+        * @param name The _unique_ name of the resource.
+        * @param args The arguments to use to populate this resource's properties.
+        * @param opts A bag of options that control this resource's behavior.
+        */
+      def this(name: String) = this()
+      def this(name: String, args: CronJobPatchArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: CronJobPatchArgs, opts: CustomResourceOptions) = this()
+    }
   }
   
-  @js.native
-  object v2alpha1 extends js.Object {
-    @js.native
-    class CronJob protected ()
-      extends typingsJapgolly.pulumiKubernetes.batchMod.v2alpha1.CronJob {
-      /**
-        * Create a batch.v2alpha1.CronJob resource with the given unique name, arguments, and options.
-        *
-        * @param name The _unique_ name of the resource.
-        * @param args The arguments to use to populate this resource's properties.
-        * @param opts A bag of options that control this resource's behavior.
-        */
-      def this(name: String) = this()
-      def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.batch.v2alpha1.CronJob) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.batch.v2alpha1.CronJob,
-        opts: CustomResourceOptions
-      ) = this()
-    }
+  object v2alpha1 {
     
-    @js.native
-    class CronJobList protected ()
-      extends typingsJapgolly.pulumiKubernetes.batchMod.v2alpha1.CronJobList {
+    object CronJob {
+      
+      @JSImport("@pulumi/kubernetes", "batch.v2alpha1.CronJob")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
-        * Create a batch.v2alpha1.CronJobList resource with the given unique name, arguments, and options.
+        * Get an existing CronJob resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * @param name The _unique_ name of the resource.
-        * @param args The arguments to use to populate this resource's properties.
-        * @param opts A bag of options that control this resource's behavior.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      def this(name: String) = this()
-      def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.batch.v2alpha1.CronJobList) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.batch.v2alpha1.CronJobList,
-        opts: CustomResourceOptions
-      ) = this()
-    }
-    
-    /* static members */
-    @js.native
-    object CronJob extends js.Object {
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobMod.CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobMod.CronJob]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobMod.CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobMod.CronJob]
+      
       /**
-        * Get the state of an existing `CronJob` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Get an existing CronJob resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v2alpha1CronJobMod.CronJob = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v2alpha1CronJobMod.CronJob = js.native
+      inline def get_CronJob(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobMod.CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobMod.CronJob]
+      inline def get_CronJob(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobMod.CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobMod.CronJob]
+      
       /**
         * Returns true if the given object is an instance of CronJob.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v2alpha1/CronJob.CronJob */ Boolean = js.native
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJob.CronJob */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJob.CronJob */ Boolean]
     }
     
-    /* static members */
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes", "batch.v2alpha1.CronJob")
     @js.native
-    object CronJobList extends js.Object {
+    open class CronJobCls protected () extends CronJob {
       /**
-        * Get the state of an existing `CronJobList` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Create a CronJob resource with the given unique name, arguments, and options.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resource.
+        * @param args The arguments to use to populate this resource's properties.
+        * @param opts A bag of options that control this resource's behavior.
         */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v2alpha1CronJobListMod.CronJobList = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v2alpha1CronJobListMod.CronJobList = js.native
+      def this(name: String) = this()
+      def this(name: String, args: CronJobArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: CronJobArgs, opts: CustomResourceOptions) = this()
+    }
+    
+    object CronJobList {
+      
+      @JSImport("@pulumi/kubernetes", "batch.v2alpha1.CronJobList")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Get an existing CronJobList resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
+        *
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
+        */
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobListMod.CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobListMod.CronJobList]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobListMod.CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobListMod.CronJobList]
+      
+      /**
+        * Get an existing CronJobList resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
+        *
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
+        */
+      inline def get_CronJobList(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobListMod.CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobListMod.CronJobList]
+      inline def get_CronJobList(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobListMod.CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobListMod.CronJobList]
+      
       /**
         * Returns true if the given object is an instance of CronJobList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v2alpha1/CronJobList.CronJobList */ Boolean = js.native
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJobList.CronJobList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJobList.CronJobList */ Boolean]
     }
     
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes", "batch.v2alpha1.CronJobList")
+    @js.native
+    open class CronJobListCls protected () extends CronJobList {
+      /**
+        * Create a CronJobList resource with the given unique name, arguments, and options.
+        *
+        * @param name The _unique_ name of the resource.
+        * @param args The arguments to use to populate this resource's properties.
+        * @param opts A bag of options that control this resource's behavior.
+        */
+      def this(name: String) = this()
+      def this(name: String, args: CronJobListArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: CronJobListArgs, opts: CustomResourceOptions) = this()
+    }
+    
+    object CronJobPatch {
+      
+      @JSImport("@pulumi/kubernetes", "batch.v2alpha1.CronJobPatch")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Get an existing CronJobPatch resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
+        *
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
+        */
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobPatchMod.CronJobPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobPatchMod.CronJobPatch]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobPatchMod.CronJobPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV1beta1CronJobPatchMod.CronJobPatch]
+      
+      /**
+        * Get an existing CronJobPatch resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
+        *
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
+        */
+      inline def get_CronJobPatch(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobPatchMod.CronJobPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobPatchMod.CronJobPatch]
+      inline def get_CronJobPatch(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobPatchMod.CronJobPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.batchV2alpha1CronJobPatchMod.CronJobPatch]
+      
+      /**
+        * Returns true if the given object is an instance of CronJobPatch.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJobPatch.CronJobPatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJobPatch.CronJobPatch */ Boolean]
+    }
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes", "batch.v2alpha1.CronJobPatch")
+    @js.native
+    open class CronJobPatchCls protected () extends CronJobPatch {
+      /**
+        * Create a CronJobPatch resource with the given unique name, arguments, and options.
+        *
+        * @param name The _unique_ name of the resource.
+        * @param args The arguments to use to populate this resource's properties.
+        * @param opts A bag of options that control this resource's behavior.
+        */
+      def this(name: String) = this()
+      def this(name: String, args: CronJobPatchArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: CronJobPatchArgs, opts: CustomResourceOptions) = this()
+    }
   }
-  
 }
-

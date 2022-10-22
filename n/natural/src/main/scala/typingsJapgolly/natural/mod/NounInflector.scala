@@ -1,22 +1,26 @@
 package typingsJapgolly.natural.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NounInflector extends js.Object {
+trait NounInflector extends StObject {
+  
   def pluralize(token: String): String
+  
   def singularize(token: String): String
 }
-
 object NounInflector {
-  @scala.inline
-  def apply(pluralize: String => CallbackTo[String], singularize: String => CallbackTo[String]): NounInflector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pluralize")(js.Any.fromFunction1((t0: java.lang.String) => pluralize(t0).runNow()))
-    __obj.updateDynamic("singularize")(js.Any.fromFunction1((t0: java.lang.String) => singularize(t0).runNow()))
+  
+  inline def apply(pluralize: String => String, singularize: String => String): NounInflector = {
+    val __obj = js.Dynamic.literal(pluralize = js.Any.fromFunction1(pluralize), singularize = js.Any.fromFunction1(singularize))
     __obj.asInstanceOf[NounInflector]
   }
+  
+  extension [Self <: NounInflector](x: Self) {
+    
+    inline def setPluralize(value: String => String): Self = StObject.set(x, "pluralize", js.Any.fromFunction1(value))
+    
+    inline def setSingularize(value: String => String): Self = StObject.set(x, "singularize", js.Any.fromFunction1(value))
+  }
 }
-

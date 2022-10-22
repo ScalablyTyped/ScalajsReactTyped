@@ -1,42 +1,57 @@
 package typingsJapgolly.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HTMLSnippets extends js.Object {
+trait HTMLSnippets extends StObject {
+  
   /*HTML that gives the download link for the STIX fonts only. (Used in place of fonts when the HTML-CSS option
     * for availableFonts only includes the STIX fonts.)
     */
   var STIXfonts: js.UndefOr[String] = js.undefined
+  
   /*HTML that gives the download link for the MathJax TeX fonts only. (Used in place of fonts when the HTML-CSS
     * option for availableFonts only includes the TeX fonts.)
     */
   var TeXfonts: js.UndefOr[String] = js.undefined
+  
   /*The HTML for the close box in the FontWarning message.*/
   var closeBox: js.UndefOr[String] = js.undefined
+  
   /*HTML that includes links to the MathJax and STIX font download pages.*/
   var fonts: js.UndefOr[String] = js.undefined
+  
   /*The HTML for a paragraph suggesting an upgrade to a more modern browser that supports web fonts.*/
   var webfonts: js.UndefOr[String] = js.undefined
 }
-
 object HTMLSnippets {
-  @scala.inline
-  def apply(
-    STIXfonts: String = null,
-    TeXfonts: String = null,
-    closeBox: String = null,
-    fonts: String = null,
-    webfonts: String = null
-  ): HTMLSnippets = {
+  
+  inline def apply(): HTMLSnippets = {
     val __obj = js.Dynamic.literal()
-    if (STIXfonts != null) __obj.updateDynamic("STIXfonts")(STIXfonts.asInstanceOf[js.Any])
-    if (TeXfonts != null) __obj.updateDynamic("TeXfonts")(TeXfonts.asInstanceOf[js.Any])
-    if (closeBox != null) __obj.updateDynamic("closeBox")(closeBox.asInstanceOf[js.Any])
-    if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
-    if (webfonts != null) __obj.updateDynamic("webfonts")(webfonts.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLSnippets]
   }
+  
+  extension [Self <: HTMLSnippets](x: Self) {
+    
+    inline def setCloseBox(value: String): Self = StObject.set(x, "closeBox", value.asInstanceOf[js.Any])
+    
+    inline def setCloseBoxUndefined: Self = StObject.set(x, "closeBox", js.undefined)
+    
+    inline def setFonts(value: String): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+    
+    inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
+    
+    inline def setSTIXfonts(value: String): Self = StObject.set(x, "STIXfonts", value.asInstanceOf[js.Any])
+    
+    inline def setSTIXfontsUndefined: Self = StObject.set(x, "STIXfonts", js.undefined)
+    
+    inline def setTeXfonts(value: String): Self = StObject.set(x, "TeXfonts", value.asInstanceOf[js.Any])
+    
+    inline def setTeXfontsUndefined: Self = StObject.set(x, "TeXfonts", js.undefined)
+    
+    inline def setWebfonts(value: String): Self = StObject.set(x, "webfonts", value.asInstanceOf[js.Any])
+    
+    inline def setWebfontsUndefined: Self = StObject.set(x, "webfonts", js.undefined)
+  }
 }
-

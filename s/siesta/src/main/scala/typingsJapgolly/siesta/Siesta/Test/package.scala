@@ -1,13 +1,8 @@
-package typingsJapgolly.siesta.Siesta
+package typingsJapgolly.siesta.Siesta.Test
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Test {
-  type IActionCall = js.Function2[
-    /* next */ js.Function1[/* repeated */ js.Any, scala.Unit], 
-    /* repeated */ js.Any, 
-    scala.Unit
-  ]
-}
+
+type IActionCall = js.Function2[/* next */ js.Function1[/* repeated */ Any, Unit], /* repeated */ Any, Unit]

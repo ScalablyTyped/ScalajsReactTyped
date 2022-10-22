@@ -1,9 +1,9 @@
 package typingsJapgolly.loopback.mod
 
 import typingsJapgolly.express.mod.NextFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base class for **all models**
@@ -77,10 +77,9 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Model")
 @js.native
-class Model protected () extends js.Object {
-  def this(data: js.Any) = this()
-  /** Contains additional model settings. */
-  var settings: Settings = js.native
+open class Model protected () extends StObject {
+  def this(data: Any) = this()
+  
   def afterRemote(
     method: String,
     callback: js.Function3[
@@ -90,7 +89,9 @@ class Model protected () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def afterRemoteError(method: String, callback: NextFunction): Unit = js.native
+  
   /**
     * loopback 3.x Remote hooks
     * http://loopback.io/doc/en/lb3/Remote-hooks.html
@@ -106,18 +107,16 @@ class Model protected () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
+  /** Contains additional model settings. */
+  var settings: Settings = js.native
 }
-
-/* static members */
-@JSImport("loopback", "Model")
-@js.native
-object Model extends js.Object {
-  /** Data source to which the model is connected, if any. */
-  var dataSource: js.Any = js.native
-  /** The name of the model. */
-  var modelName: String = js.native
-  /** The `strong-remoting` */
-  var sharedMethod: js.Any = js.native
+object Model {
+  
+  @JSImport("loopback", "Model")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Check if the given access token can invoke the specified method
     * @param {AccessToken} token The access token.
@@ -128,13 +127,22 @@ object Model extends js.Object {
     * @param {string|Error} err The error object.
     * @param {boolean} allowed True if the request is allowed; false otherwise
     */
-  def checkAccess(
+  /* static member */
+  inline def checkAccess(
     token: AccessToken,
-    modelId: js.Any,
-    sharedMethod: js.Any,
-    ctx: js.Any,
+    modelId: Any,
+    sharedMethod: Any,
+    ctx: Any,
     callback: js.Function2[/* err */ String | js.Error, /* allowed */ Boolean, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAccess")(token.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any], sharedMethod.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /** Data source to which the model is connected, if any. */
+  /* static member */
+  @JSImport("loopback", "Model.dataSource")
+  @js.native
+  def dataSource: Any = js.native
+  inline def dataSource_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataSource")(x.asInstanceOf[js.Any])
+  
   /**
     * Disable remote invocation for the method with the given name
     * @param {string} name The name of the method.
@@ -142,13 +150,17 @@ object Model extends js.Object {
     * `false` if the method defined on the prototype (eg.
     * `MyModel.prototype.myMethod`)
     */
-  def disableRemoteMethod(name: String, isStatic: Boolean): Unit = js.native
+  /* static member */
+  inline def disableRemoteMethod(name: String, isStatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disableRemoteMethod")(name.asInstanceOf[js.Any], isStatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Disable remote invocation for the method with the given name.
     * @param {string} name The name of the method.
     * The name of the method (include "prototype." if the method is defined on the prototype).
     */
-  def disableRemoteMethodByName(name: String): Unit = js.native
+  /* static member */
+  inline def disableRemoteMethodByName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableRemoteMethodByName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /**
     * Get the `Application` object to which the Model is attached
     * @callback {() => void} callback Callback function called with `(err, app)` arguments.
@@ -156,7 +168,16 @@ object Model extends js.Object {
     * @param {Application} app Attached application object.
     * @end
     */
-  def getApp(callback: js.Function2[/* err */ js.Error, /* app */ Application, Unit]): Unit = js.native
+  /* static member */
+  inline def getApp(callback: js.Function2[/* err */ js.Error, /* app */ Application, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getApp")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /** The name of the model. */
+  /* static member */
+  @JSImport("loopback", "Model.modelName")
+  @js.native
+  def modelName: String = js.native
+  inline def modelName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modelName")(x.asInstanceOf[js.Any])
+  
   /**
     * Enabled deeply-nested queries of related models via REST API
     * @param {string} relationName Name of the nested relation.
@@ -170,15 +191,16 @@ object Model extends js.Object {
     * @param {any} SharedMethod object. See [here](apidocs.strongloop.com/strong-remoting/#sharedmethod).
     * @param {any} RelationDefinition object which includes relation `type`, `ModelConstructor` of `modelFrom`, `modelTo`, `keyFrom`, `keyTo` and more relation definitions
     */
-  def nestRemoting(
+  /* static member */
+  inline def nestRemoting(
     relationName: String,
     pathName: String,
     filterMethod: String,
     paramName: String,
     getterName: String,
     hooks: Boolean
-  ): Unit = js.native
-  def nestRemoting(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nestRemoting")(relationName.asInstanceOf[js.Any], pathName.asInstanceOf[js.Any], filterMethod.asInstanceOf[js.Any], paramName.asInstanceOf[js.Any], getterName.asInstanceOf[js.Any], hooks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nestRemoting(
     relationName: String,
     pathName: String,
     filterMethod: String,
@@ -186,8 +208,8 @@ object Model extends js.Object {
     getterName: String,
     hooks: Boolean,
     options: js.Object
-  ): Unit = js.native
-  def nestRemoting(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nestRemoting")(relationName.asInstanceOf[js.Any], pathName.asInstanceOf[js.Any], filterMethod.asInstanceOf[js.Any], paramName.asInstanceOf[js.Any], getterName.asInstanceOf[js.Any], hooks.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nestRemoting(
     relationName: String,
     pathName: String,
     filterMethod: String,
@@ -195,8 +217,19 @@ object Model extends js.Object {
     getterName: String,
     hooks: Boolean,
     options: js.Object,
-    filterCallback: js.Function2[/* SharedMethod */ js.Any, /* RelationDefinition */ js.Any, Unit]
-  ): Unit = js.native
+    filterCallback: js.Function2[/* SharedMethod */ Any, /* RelationDefinition */ Any, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nestRemoting")(relationName.asInstanceOf[js.Any], pathName.asInstanceOf[js.Any], filterMethod.asInstanceOf[js.Any], paramName.asInstanceOf[js.Any], getterName.asInstanceOf[js.Any], hooks.asInstanceOf[js.Any], options.asInstanceOf[js.Any], filterCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nestRemoting(
+    relationName: String,
+    pathName: String,
+    filterMethod: String,
+    paramName: String,
+    getterName: String,
+    hooks: Boolean,
+    options: Unit,
+    filterCallback: js.Function2[/* SharedMethod */ Any, /* RelationDefinition */ Any, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nestRemoting")(relationName.asInstanceOf[js.Any], pathName.asInstanceOf[js.Any], filterMethod.asInstanceOf[js.Any], paramName.asInstanceOf[js.Any], getterName.asInstanceOf[js.Any], hooks.asInstanceOf[js.Any], options.asInstanceOf[js.Any], filterCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Enable remote invocation for the specified method.
     * See [Remote methods](docs.strongloop.com/display/LB/Remote+methods) for more information
@@ -209,12 +242,21 @@ object Model extends js.Object {
     * @param {RemoteMethodOptions} options The remoting options.
     * See [Remote methods - Options](docs.strongloop.com/display/LB/Remote+methods#Remotemethods-Options)
     */
-  def remoteMethod(name: String, options: RemoteMethodOptions): Unit = js.native
+  /* static member */
+  inline def remoteMethod(name: String, options: RemoteMethodOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remoteMethod")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * The `loopback.Model.extend()` method calls this when you create a model that extends another model.
     * Add any setup or configuration code you want executed when the model is created.
     * See  [Setting up a custom model](docs.strongloop.com/display/LB/Extending+built-in+models#Extendingbuilt-inmodels-Settingupacustommodel)
     */
-  def setup(): Unit = js.native
+  /* static member */
+  inline def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
+  
+  /** The `strong-remoting` */
+  /* static member */
+  @JSImport("loopback", "Model.sharedMethod")
+  @js.native
+  def sharedMethod: Any = js.native
+  inline def sharedMethod_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sharedMethod")(x.asInstanceOf[js.Any])
 }
-

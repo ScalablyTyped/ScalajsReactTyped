@@ -6,170 +6,191 @@ import typingsJapgolly.overlayscrollbars.mod.OverflowBehavior
 import typingsJapgolly.overlayscrollbars.mod.ResizeBehavior
 import typingsJapgolly.overlayscrollbars.mod.ScrollBehavior
 import typingsJapgolly.overlayscrollbars.mod.VisibilityBehavior
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayscrollbarsStrings {
-  @js.native
-  sealed trait a extends VisibilityBehavior
   
   @js.native
-  sealed trait always extends ScrollBehavior
+  sealed trait a
+    extends StObject
+       with VisibilityBehavior
+  inline def a: a = "a".asInstanceOf[a]
   
   @js.native
-  sealed trait auto extends VisibilityBehavior
+  sealed trait always
+    extends StObject
+       with ScrollBehavior
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait b extends ResizeBehavior
+  sealed trait auto
+    extends StObject
+       with VisibilityBehavior
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait begin extends BlockBehavior
+  sealed trait b
+    extends StObject
+       with ResizeBehavior
+  inline def b: b = "b".asInstanceOf[b]
   
   @js.native
-  sealed trait both extends ResizeBehavior
+  sealed trait begin
+    extends StObject
+       with BlockBehavior
+  inline def begin: begin = "begin".asInstanceOf[begin]
   
   @js.native
-  sealed trait center extends BlockBehavior
+  sealed trait both
+    extends StObject
+       with ResizeBehavior
+  inline def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait end extends BlockBehavior
+  sealed trait center
+    extends StObject
+       with BlockBehavior
+  inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
+  sealed trait end
+    extends StObject
+       with BlockBehavior
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait h
-    extends OverflowBehavior
+    extends StObject
+       with OverflowBehavior
        with ResizeBehavior
        with VisibilityBehavior
+  inline def h: h = "h".asInstanceOf[h]
   
   @js.native
   sealed trait hidden
-    extends OverflowBehavior
+    extends StObject
+       with OverflowBehavior
        with VisibilityBehavior
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
-  sealed trait horizontal extends ResizeBehavior
+  sealed trait horizontal
+    extends StObject
+       with ResizeBehavior
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait ifneeded extends ScrollBehavior
+  sealed trait ifneeded
+    extends StObject
+       with ScrollBehavior
+  inline def ifneeded: ifneeded = "ifneeded".asInstanceOf[ifneeded]
   
   @js.native
-  sealed trait l extends AutoHideBehavior
+  sealed trait l
+    extends StObject
+       with AutoHideBehavior
+  inline def l: l = "l".asInstanceOf[l]
   
   @js.native
-  sealed trait leave extends AutoHideBehavior
+  sealed trait leave
+    extends StObject
+       with AutoHideBehavior
+  inline def leave: leave = "leave".asInstanceOf[leave]
   
   @js.native
-  sealed trait m extends AutoHideBehavior
+  sealed trait m
+    extends StObject
+       with AutoHideBehavior
+  inline def m: m = "m".asInstanceOf[m]
   
   @js.native
-  sealed trait move extends AutoHideBehavior
+  sealed trait move
+    extends StObject
+       with AutoHideBehavior
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
   sealed trait n
-    extends AutoHideBehavior
+    extends StObject
+       with AutoHideBehavior
        with ResizeBehavior
+  inline def n: n = "n".asInstanceOf[n]
   
   @js.native
-  sealed trait nearest extends BlockBehavior
+  sealed trait nearest
+    extends StObject
+       with BlockBehavior
+  inline def nearest: nearest = "nearest".asInstanceOf[nearest]
   
   @js.native
   sealed trait never
-    extends AutoHideBehavior
+    extends StObject
+       with AutoHideBehavior
        with ScrollBehavior
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
-  sealed trait none extends ResizeBehavior
+  sealed trait none
+    extends StObject
+       with ResizeBehavior
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait s
-    extends AutoHideBehavior
+    extends StObject
+       with AutoHideBehavior
        with OverflowBehavior
+  inline def s: s = "s".asInstanceOf[s]
   
   @js.native
   sealed trait scroll
-    extends AutoHideBehavior
+    extends StObject
+       with AutoHideBehavior
        with OverflowBehavior
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
   sealed trait v
-    extends ResizeBehavior
+    extends StObject
+       with ResizeBehavior
        with VisibilityBehavior
+  inline def v: v = "v".asInstanceOf[v]
   
   @js.native
-  sealed trait `v-h` extends OverflowBehavior
+  sealed trait `v-h`
+    extends StObject
+       with OverflowBehavior
+  inline def `v-h`: `v-h` = "v-h".asInstanceOf[`v-h`]
   
   @js.native
-  sealed trait `v-s` extends OverflowBehavior
+  sealed trait `v-s`
+    extends StObject
+       with OverflowBehavior
+  inline def `v-s`: `v-s` = "v-s".asInstanceOf[`v-s`]
   
   @js.native
-  sealed trait vertical extends ResizeBehavior
+  sealed trait vertical
+    extends StObject
+       with ResizeBehavior
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait visible extends VisibilityBehavior
+  sealed trait visible
+    extends StObject
+       with VisibilityBehavior
+  inline def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native
-  sealed trait `visible-hidden` extends OverflowBehavior
+  sealed trait `visible-hidden`
+    extends StObject
+       with OverflowBehavior
+  inline def `visible-hidden`: `visible-hidden` = "visible-hidden".asInstanceOf[`visible-hidden`]
   
   @js.native
-  sealed trait `visible-scroll` extends OverflowBehavior
-  
-  @scala.inline
-  def a: a = "a".asInstanceOf[a]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def b: b = "b".asInstanceOf[b]
-  @scala.inline
-  def begin: begin = "begin".asInstanceOf[begin]
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def h: h = "h".asInstanceOf[h]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def ifneeded: ifneeded = "ifneeded".asInstanceOf[ifneeded]
-  @scala.inline
-  def l: l = "l".asInstanceOf[l]
-  @scala.inline
-  def leave: leave = "leave".asInstanceOf[leave]
-  @scala.inline
-  def m: m = "m".asInstanceOf[m]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def n: n = "n".asInstanceOf[n]
-  @scala.inline
-  def nearest: nearest = "nearest".asInstanceOf[nearest]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def v: v = "v".asInstanceOf[v]
-  @scala.inline
-  def `v-h`: `v-h` = "v-h".asInstanceOf[`v-h`]
-  @scala.inline
-  def `v-s`: `v-s` = "v-s".asInstanceOf[`v-s`]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
-  @scala.inline
-  def `visible-hidden`: `visible-hidden` = "visible-hidden".asInstanceOf[`visible-hidden`]
-  @scala.inline
-  def `visible-scroll`: `visible-scroll` = "visible-scroll".asInstanceOf[`visible-scroll`]
+  sealed trait `visible-scroll`
+    extends StObject
+       with OverflowBehavior
+  inline def `visible-scroll`: `visible-scroll` = "visible-scroll".asInstanceOf[`visible-scroll`]
 }
-

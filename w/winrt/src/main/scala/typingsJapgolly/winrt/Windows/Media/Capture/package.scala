@@ -1,14 +1,10 @@
-package typingsJapgolly.winrt.Windows.Media
+package typingsJapgolly.winrt.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Capture {
-  type MediaCaptureFailedEventHandler = js.Function2[
-    /* sender */ typingsJapgolly.winrt.Windows.Media.Capture.MediaCapture, 
-    /* errorEventArgs */ typingsJapgolly.winrt.Windows.Media.Capture.MediaCaptureFailedEventArgs, 
-    scala.Unit
-  ]
-  type RecordLimitationExceededEventHandler = js.Function1[/* sender */ typingsJapgolly.winrt.Windows.Media.Capture.MediaCapture, scala.Unit]
-}
+
+type MediaCaptureFailedEventHandler = js.Function2[/* sender */ MediaCapture, /* errorEventArgs */ MediaCaptureFailedEventArgs, Unit]
+
+type RecordLimitationExceededEventHandler = js.Function1[/* sender */ MediaCapture, Unit]

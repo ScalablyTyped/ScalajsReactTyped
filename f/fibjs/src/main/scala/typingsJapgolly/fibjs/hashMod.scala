@@ -1,73 +1,94 @@
 package typingsJapgolly.fibjs
 
-import typingsJapgolly.fibjs.fibjsNumbers.`1`
-import typingsJapgolly.fibjs.fibjsNumbers.`2`
-import typingsJapgolly.fibjs.fibjsNumbers.`3`
-import typingsJapgolly.fibjs.fibjsNumbers.`4`
-import typingsJapgolly.fibjs.fibjsNumbers.`5`
-import typingsJapgolly.fibjs.fibjsNumbers.`6`
-import typingsJapgolly.fibjs.fibjsNumbers.`7`
-import typingsJapgolly.fibjs.fibjsNumbers.`8`
-import typingsJapgolly.fibjs.fibjsNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
-	* @brief 信息摘要计算模块，可用于计算信息摘要和摘要签名
-	* @detail 
-	*/
-@JSImport("hash", JSImport.Namespace)
-@js.native
-object hashMod extends js.Object {
-  @JSName("MD2")
-  val MD2_ : `1` = js.native
-  @JSName("MD4")
-  val MD4_ : `2` = js.native
-  @JSName("MD5")
-  val MD5_ : `3` = js.native
-  @JSName("RIPEMD160")
-  val RIPEMD160_ : `9` = js.native
-  @JSName("SHA1")
-  val SHA1_ : `4` = js.native
-  @JSName("SHA224")
-  val SHA224_ : `5` = js.native
-  @JSName("SHA256")
-  val SHA256_ : `6` = js.native
-  @JSName("SHA384")
-  val SHA384_ : `7` = js.native
-  @JSName("SHA512")
-  val SHA512_ : `8` = js.native
-  def digest(algo: Double): ClassDigest = js.native
-  def digest(algo: Double, data: ClassBuffer): ClassDigest = js.native
-  def hmac(algo: Double, key: ClassBuffer): ClassDigest = js.native
-  @JSName("hmac_md2")
-  def hmacMd2(key: ClassBuffer): ClassDigest = js.native
-  @JSName("hmac_md4")
-  def hmacMd4(key: ClassBuffer): ClassDigest = js.native
-  @JSName("hmac_md5")
-  def hmacMd5(key: ClassBuffer): ClassDigest = js.native
-  @JSName("hmac_ripemd160")
-  def hmacRipemd160(key: ClassBuffer): ClassDigest = js.native
-  @JSName("hmac_sha1")
-  def hmacSha1(key: ClassBuffer): ClassDigest = js.native
-  @JSName("hmac_sha224")
-  def hmacSha224(key: ClassBuffer): ClassDigest = js.native
-  @JSName("hmac_sha256")
-  def hmacSha256(key: ClassBuffer): ClassDigest = js.native
-  @JSName("hmac_sha384")
-  def hmacSha384(key: ClassBuffer): ClassDigest = js.native
-  @JSName("hmac_sha512")
-  def hmacSha512(key: ClassBuffer): ClassDigest = js.native
-  def md2(data: ClassBuffer): ClassDigest = js.native
-  def md4(data: ClassBuffer): ClassDigest = js.native
-  def md5(data: ClassBuffer): ClassDigest = js.native
-  def ripemd160(data: ClassBuffer): ClassDigest = js.native
-  def sha1(data: ClassBuffer): ClassDigest = js.native
-  def sha224(data: ClassBuffer): ClassDigest = js.native
-  def sha256(data: ClassBuffer): ClassDigest = js.native
-  def sha384(data: ClassBuffer): ClassDigest = js.native
-  def sha512(data: ClassBuffer): ClassDigest = js.native
+  * @brief 信息摘要计算模块，可用于计算信息摘要和摘要签名
+  * @detail 
+  */
+object hashMod {
+  
+  @JSImport("hash", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("hash", "MD2")
+  @js.native
+  val MD2_ : /* 1 */ Double = js.native
+  
+  @JSImport("hash", "MD4")
+  @js.native
+  val MD4_ : /* 2 */ Double = js.native
+  
+  @JSImport("hash", "MD5")
+  @js.native
+  val MD5_ : /* 3 */ Double = js.native
+  
+  @JSImport("hash", "RIPEMD160")
+  @js.native
+  val RIPEMD160_ : /* 9 */ Double = js.native
+  
+  @JSImport("hash", "SHA1")
+  @js.native
+  val SHA1_ : /* 4 */ Double = js.native
+  
+  @JSImport("hash", "SHA224")
+  @js.native
+  val SHA224_ : /* 5 */ Double = js.native
+  
+  @JSImport("hash", "SHA256")
+  @js.native
+  val SHA256_ : /* 6 */ Double = js.native
+  
+  @JSImport("hash", "SHA384")
+  @js.native
+  val SHA384_ : /* 7 */ Double = js.native
+  
+  @JSImport("hash", "SHA512")
+  @js.native
+  val SHA512_ : /* 8 */ Double = js.native
+  
+  inline def digest(algo: Double): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("digest")(algo.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  inline def digest(algo: Double, data: ClassBuffer): ClassDigest = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(algo.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ClassDigest]
+  
+  inline def hmac(algo: Double, key: ClassBuffer): ClassDigest = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ClassDigest]
+  
+  inline def hmacMd2(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_md2")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def hmacMd4(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_md4")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def hmacMd5(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_md5")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def hmacRipemd160(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_ripemd160")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def hmacSha1(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha1")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def hmacSha224(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha224")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def hmacSha256(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha256")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def hmacSha384(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha384")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def hmacSha512(key: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("hmac_sha512")(key.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def md2(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("md2")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def md4(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("md4")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def md5(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def ripemd160(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("ripemd160")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def sha1(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def sha224(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("sha224")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def sha256(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def sha384(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("sha384")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
+  
+  inline def sha512(data: ClassBuffer): ClassDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(data.asInstanceOf[js.Any]).asInstanceOf[ClassDigest]
 }
-

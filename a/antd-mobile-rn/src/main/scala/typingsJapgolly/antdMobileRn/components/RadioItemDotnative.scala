@@ -2,64 +2,57 @@ package typingsJapgolly.antdMobileRn.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.AnonTarget
-import typingsJapgolly.antdMobileRn.radioItemNativeMod.RadioItemNativeProps
-import typingsJapgolly.antdMobileRn.radioItemNativeMod.default
-import typingsJapgolly.antdMobileRn.radioStyleIndexNativeMod.IRadioStyle
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.anon.Target
+import typingsJapgolly.antdMobileRn.libRadioRadioItemDotnativeMod.RadioItemNativeProps
+import typingsJapgolly.antdMobileRn.libRadioRadioItemDotnativeMod.default
+import typingsJapgolly.antdMobileRn.libRadioStyleIndexDotnativeMod.IRadioStyle
 import typingsJapgolly.reactNative.mod.ImageStyle
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RadioItemDotnative {
-  def apply(
-    checked: js.UndefOr[Boolean] = js.undefined,
-    defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    onChange: /* e */ AnonTarget => Callback = null,
-    onClick: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    radioProps: js.Object = null,
-    radioStyle: StyleProp[ImageStyle] = null,
-    style: StyleProp[ViewStyle] = null,
-    styles: IRadioStyle = null,
-    wrapLabel: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[RadioItemNativeProps, default, Unit, RadioItemNativeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.antdMobileRn.AnonTarget) => onChange(t0).runNow()))
-    onClick.foreach(p => __obj.updateDynamic("onClick")(p.toJsFn))
-    if (radioProps != null) __obj.updateDynamic("radioProps")(radioProps.asInstanceOf[js.Any])
-    if (radioStyle != null) __obj.updateDynamic("radioStyle")(radioStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapLabel)) __obj.updateDynamic("wrapLabel")(wrapLabel.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.radioItemNativeMod.RadioItemNativeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.radioItemNativeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.radioItemNativeMod.RadioItemNativeProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn/lib/radio/RadioItem.native", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def checked(value: Boolean): this.type = set("checked", value.asInstanceOf[js.Any])
+    
+    inline def defaultChecked(value: Boolean): this.type = set("defaultChecked", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* e */ Target => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* e */ Target) => value(t0).runNow()))
+    
+    inline def onClick(value: CallbackTo[Any]): this.type = set("onClick", value.toJsFn)
+    
+    inline def radioProps(value: js.Object): this.type = set("radioProps", value.asInstanceOf[js.Any])
+    
+    inline def radioStyle(value: StyleProp[ImageStyle]): this.type = set("radioStyle", value.asInstanceOf[js.Any])
+    
+    inline def radioStyleNull: this.type = set("radioStyle", null)
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: IRadioStyle): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def wrapLabel(value: Boolean): this.type = set("wrapLabel", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: RadioItemDotnative.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: RadioItemNativeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

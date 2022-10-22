@@ -1,11 +1,13 @@
 package typingsJapgolly.gitlab.mod
 
+import typingsJapgolly.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitlab", "Events")
 @js.native
-class Events ()
-  extends typingsJapgolly.gitlab.eventsMod.Events
-
+open class Events ()
+  extends typingsJapgolly.gitlab.distTypesCoreServicesMod.Events {
+  def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+}

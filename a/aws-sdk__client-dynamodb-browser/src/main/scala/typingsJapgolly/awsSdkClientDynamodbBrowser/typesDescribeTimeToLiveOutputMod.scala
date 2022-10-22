@@ -1,27 +1,43 @@
 package typingsJapgolly.awsSdkClientDynamodbBrowser
 
-import typingsJapgolly.awsSdkClientDynamodbBrowser.outputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkClientDynamodbBrowser.typesOutputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientDynamodbBrowser.typesTimeToLiveDescriptionMod.UnmarshalledTimeToLiveDescription
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/types/DescribeTimeToLiveOutput", JSImport.Namespace)
-@js.native
-object typesDescribeTimeToLiveOutputMod extends js.Object {
-  @js.native
-  trait DescribeTimeToLiveOutput extends OutputTypesUnion {
+object typesDescribeTimeToLiveOutputMod {
+  
+  trait DescribeTimeToLiveOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p/>
       */
-    var TimeToLiveDescription: js.UndefOr[UnmarshalledTimeToLiveDescription] = js.native
+    var TimeToLiveDescription: js.UndefOr[UnmarshalledTimeToLiveDescription] = js.undefined
   }
-  
+  object DescribeTimeToLiveOutput {
+    
+    inline def apply($metadata: ResponseMetadata): DescribeTimeToLiveOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DescribeTimeToLiveOutput]
+    }
+    
+    extension [Self <: DescribeTimeToLiveOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setTimeToLiveDescription(value: UnmarshalledTimeToLiveDescription): Self = StObject.set(x, "TimeToLiveDescription", value.asInstanceOf[js.Any])
+      
+      inline def setTimeToLiveDescriptionUndefined: Self = StObject.set(x, "TimeToLiveDescription", js.undefined)
+    }
+  }
 }
-

@@ -1,10 +1,12 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomElementConstructor extends Instantiable0[HTMLElement]
-
+trait CustomElementConstructor
+  extends StObject
+     with /* standard dom */
+Instantiable1[/* params (repeated) */ Any, org.scalajs.dom.HTMLElement]

@@ -1,8 +1,8 @@
 package typingsJapgolly.dhtmlxscheduler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterEventDisplay
@@ -79,156 +79,152 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleClick
   - typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleDblClick
 */
-trait SchedulerEventName extends js.Object
-
+trait SchedulerEventName extends StObject
 object SchedulerEventName {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onAfterEventDisplay: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterEventDisplay = this.cast("onAfterEventDisplay")
-  @scala.inline
-  def onAfterFolderToggle: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterFolderToggle = this.cast("onAfterFolderToggle")
-  @scala.inline
-  def onAfterLightbox: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterLightbox = this.cast("onAfterLightbox")
-  @scala.inline
-  def onAfterSchedulerResize: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterSchedulerResize = this.cast("onAfterSchedulerResize")
-  @scala.inline
-  def onBeforeCollapse: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeCollapse = this.cast("onBeforeCollapse")
-  @scala.inline
-  def onBeforeDrag: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeDrag = this.cast("onBeforeDrag")
-  @scala.inline
-  def onBeforeEventChanged: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventChanged = this.cast("onBeforeEventChanged")
-  @scala.inline
-  def onBeforeEventCreated: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventCreated = this.cast("onBeforeEventCreated")
-  @scala.inline
-  def onBeforeEventDelete: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDelete = this.cast("onBeforeEventDelete")
-  @scala.inline
-  def onBeforeEventDisplay: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDisplay = this.cast("onBeforeEventDisplay")
-  @scala.inline
-  def onBeforeEventDragIn: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragIn = this.cast("onBeforeEventDragIn")
-  @scala.inline
-  def onBeforeEventDragOut: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragOut = this.cast("onBeforeEventDragOut")
-  @scala.inline
-  def onBeforeExpand: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExpand = this.cast("onBeforeExpand")
-  @scala.inline
-  def onBeforeExternalDragIn: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExternalDragIn = this.cast("onBeforeExternalDragIn")
-  @scala.inline
-  def onBeforeFolderToggle: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeFolderToggle = this.cast("onBeforeFolderToggle")
-  @scala.inline
-  def onBeforeLightbox: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeLightbox = this.cast("onBeforeLightbox")
-  @scala.inline
-  def onBeforeSectionRender: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeSectionRender = this.cast("onBeforeSectionRender")
-  @scala.inline
-  def onBeforeTodayDisplayed: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTodayDisplayed = this.cast("onBeforeTodayDisplayed")
-  @scala.inline
-  def onBeforeTooltip: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTooltip = this.cast("onBeforeTooltip")
-  @scala.inline
-  def onBeforeViewChange: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeViewChange = this.cast("onBeforeViewChange")
-  @scala.inline
-  def onCellClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onCellClick = this.cast("onCellClick")
-  @scala.inline
-  def onCellDblClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onCellDblClick = this.cast("onCellDblClick")
-  @scala.inline
-  def onClearAll: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onClearAll = this.cast("onClearAll")
-  @scala.inline
-  def onClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onClick = this.cast("onClick")
-  @scala.inline
-  def onCollapse: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onCollapse = this.cast("onCollapse")
-  @scala.inline
-  def onConfirmedBeforeEventDelete: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onConfirmedBeforeEventDelete = this.cast("onConfirmedBeforeEventDelete")
-  @scala.inline
-  def onContextMenu: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onContextMenu = this.cast("onContextMenu")
-  @scala.inline
-  def onDblClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onDblClick = this.cast("onDblClick")
-  @scala.inline
-  def onDragEnd: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onDragEnd = this.cast("onDragEnd")
-  @scala.inline
-  def onEmptyClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEmptyClick = this.cast("onEmptyClick")
-  @scala.inline
-  def onEventAdded: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventAdded = this.cast("onEventAdded")
-  @scala.inline
-  def onEventCancel: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCancel = this.cast("onEventCancel")
-  @scala.inline
-  def onEventChanged: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventChanged = this.cast("onEventChanged")
-  @scala.inline
-  def onEventCollision: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCollision = this.cast("onEventCollision")
-  @scala.inline
-  def onEventCopied: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCopied = this.cast("onEventCopied")
-  @scala.inline
-  def onEventCreated: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCreated = this.cast("onEventCreated")
-  @scala.inline
-  def onEventCut: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCut = this.cast("onEventCut")
-  @scala.inline
-  def onEventDeleted: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDeleted = this.cast("onEventDeleted")
-  @scala.inline
-  def onEventDrag: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDrag = this.cast("onEventDrag")
-  @scala.inline
-  def onEventDragIn: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragIn = this.cast("onEventDragIn")
-  @scala.inline
-  def onEventDragOut: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragOut = this.cast("onEventDragOut")
-  @scala.inline
-  def onEventDropOut: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDropOut = this.cast("onEventDropOut")
-  @scala.inline
-  def onEventIdChange: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventIdChange = this.cast("onEventIdChange")
-  @scala.inline
-  def onEventLoading: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventLoading = this.cast("onEventLoading")
-  @scala.inline
-  def onEventPasted: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventPasted = this.cast("onEventPasted")
-  @scala.inline
-  def onEventSave: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventSave = this.cast("onEventSave")
-  @scala.inline
-  def onExpand: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onExpand = this.cast("onExpand")
-  @scala.inline
-  def onExternalDragIn: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onExternalDragIn = this.cast("onExternalDragIn")
-  @scala.inline
-  def onLightbox: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLightbox = this.cast("onLightbox")
-  @scala.inline
-  def onLightboxButton: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLightboxButton = this.cast("onLightboxButton")
-  @scala.inline
-  def onLimitViolation: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLimitViolation = this.cast("onLimitViolation")
-  @scala.inline
-  def onLoadError: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLoadError = this.cast("onLoadError")
-  @scala.inline
-  def onLocationError: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLocationError = this.cast("onLocationError")
-  @scala.inline
-  def onMouseDown: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseDown = this.cast("onMouseDown")
-  @scala.inline
-  def onMouseMove: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseMove = this.cast("onMouseMove")
-  @scala.inline
-  def onOptionsLoad: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoad = this.cast("onOptionsLoad")
-  @scala.inline
-  def onOptionsLoadFinal: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadFinal = this.cast("onOptionsLoadFinal")
-  @scala.inline
-  def onOptionsLoadStart: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadStart = this.cast("onOptionsLoadStart")
-  @scala.inline
-  def onSaveError: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onSaveError = this.cast("onSaveError")
-  @scala.inline
-  def onScaleAdd: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleAdd = this.cast("onScaleAdd")
-  @scala.inline
-  def onScaleDblClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleDblClick = this.cast("onScaleDblClick")
-  @scala.inline
-  def onSchedulerReady: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerReady = this.cast("onSchedulerReady")
-  @scala.inline
-  def onSchedulerResize: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerResize = this.cast("onSchedulerResize")
-  @scala.inline
-  def onTemplatesReady: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onTemplatesReady = this.cast("onTemplatesReady")
-  @scala.inline
-  def onTimelineCreated: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onTimelineCreated = this.cast("onTimelineCreated")
-  @scala.inline
-  def onViewChange: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onViewChange = this.cast("onViewChange")
-  @scala.inline
-  def onViewMoreClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onViewMoreClick = this.cast("onViewMoreClick")
-  @scala.inline
-  def onXLE: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onXLE = this.cast("onXLE")
-  @scala.inline
-  def onXLS: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onXLS = this.cast("onXLS")
-  @scala.inline
-  def onXScaleClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleClick = this.cast("onXScaleClick")
-  @scala.inline
-  def onXScaleDblClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleDblClick = this.cast("onXScaleDblClick")
-  @scala.inline
-  def onYScaleClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleClick = this.cast("onYScaleClick")
-  @scala.inline
-  def onYScaleDblClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleDblClick = this.cast("onYScaleDblClick")
+  
+  inline def onAfterEventDisplay: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterEventDisplay = "onAfterEventDisplay".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterEventDisplay]
+  
+  inline def onAfterFolderToggle: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterFolderToggle = "onAfterFolderToggle".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterFolderToggle]
+  
+  inline def onAfterLightbox: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterLightbox = "onAfterLightbox".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterLightbox]
+  
+  inline def onAfterSchedulerResize: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterSchedulerResize = "onAfterSchedulerResize".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onAfterSchedulerResize]
+  
+  inline def onBeforeCollapse: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeCollapse = "onBeforeCollapse".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeCollapse]
+  
+  inline def onBeforeDrag: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeDrag = "onBeforeDrag".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeDrag]
+  
+  inline def onBeforeEventChanged: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventChanged = "onBeforeEventChanged".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventChanged]
+  
+  inline def onBeforeEventCreated: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventCreated = "onBeforeEventCreated".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventCreated]
+  
+  inline def onBeforeEventDelete: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDelete = "onBeforeEventDelete".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDelete]
+  
+  inline def onBeforeEventDisplay: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDisplay = "onBeforeEventDisplay".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDisplay]
+  
+  inline def onBeforeEventDragIn: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragIn = "onBeforeEventDragIn".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragIn]
+  
+  inline def onBeforeEventDragOut: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragOut = "onBeforeEventDragOut".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeEventDragOut]
+  
+  inline def onBeforeExpand: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExpand = "onBeforeExpand".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExpand]
+  
+  inline def onBeforeExternalDragIn: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExternalDragIn = "onBeforeExternalDragIn".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeExternalDragIn]
+  
+  inline def onBeforeFolderToggle: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeFolderToggle = "onBeforeFolderToggle".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeFolderToggle]
+  
+  inline def onBeforeLightbox: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeLightbox = "onBeforeLightbox".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeLightbox]
+  
+  inline def onBeforeSectionRender: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeSectionRender = "onBeforeSectionRender".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeSectionRender]
+  
+  inline def onBeforeTodayDisplayed: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTodayDisplayed = "onBeforeTodayDisplayed".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTodayDisplayed]
+  
+  inline def onBeforeTooltip: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTooltip = "onBeforeTooltip".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeTooltip]
+  
+  inline def onBeforeViewChange: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeViewChange = "onBeforeViewChange".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onBeforeViewChange]
+  
+  inline def onCellClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onCellClick = "onCellClick".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onCellClick]
+  
+  inline def onCellDblClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onCellDblClick = "onCellDblClick".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onCellDblClick]
+  
+  inline def onClearAll: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onClearAll = "onClearAll".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onClearAll]
+  
+  inline def onClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onClick = "onClick".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onClick]
+  
+  inline def onCollapse: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onCollapse = "onCollapse".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onCollapse]
+  
+  inline def onConfirmedBeforeEventDelete: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onConfirmedBeforeEventDelete = "onConfirmedBeforeEventDelete".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onConfirmedBeforeEventDelete]
+  
+  inline def onContextMenu: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onContextMenu = "onContextMenu".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onContextMenu]
+  
+  inline def onDblClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onDblClick = "onDblClick".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onDblClick]
+  
+  inline def onDragEnd: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onDragEnd = "onDragEnd".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onDragEnd]
+  
+  inline def onEmptyClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEmptyClick = "onEmptyClick".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEmptyClick]
+  
+  inline def onEventAdded: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventAdded = "onEventAdded".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventAdded]
+  
+  inline def onEventCancel: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCancel = "onEventCancel".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCancel]
+  
+  inline def onEventChanged: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventChanged = "onEventChanged".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventChanged]
+  
+  inline def onEventCollision: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCollision = "onEventCollision".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCollision]
+  
+  inline def onEventCopied: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCopied = "onEventCopied".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCopied]
+  
+  inline def onEventCreated: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCreated = "onEventCreated".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCreated]
+  
+  inline def onEventCut: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCut = "onEventCut".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventCut]
+  
+  inline def onEventDeleted: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDeleted = "onEventDeleted".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDeleted]
+  
+  inline def onEventDrag: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDrag = "onEventDrag".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDrag]
+  
+  inline def onEventDragIn: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragIn = "onEventDragIn".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragIn]
+  
+  inline def onEventDragOut: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragOut = "onEventDragOut".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDragOut]
+  
+  inline def onEventDropOut: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDropOut = "onEventDropOut".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventDropOut]
+  
+  inline def onEventIdChange: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventIdChange = "onEventIdChange".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventIdChange]
+  
+  inline def onEventLoading: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventLoading = "onEventLoading".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventLoading]
+  
+  inline def onEventPasted: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventPasted = "onEventPasted".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventPasted]
+  
+  inline def onEventSave: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventSave = "onEventSave".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onEventSave]
+  
+  inline def onExpand: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onExpand = "onExpand".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onExpand]
+  
+  inline def onExternalDragIn: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onExternalDragIn = "onExternalDragIn".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onExternalDragIn]
+  
+  inline def onLightbox: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLightbox = "onLightbox".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLightbox]
+  
+  inline def onLightboxButton: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLightboxButton = "onLightboxButton".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLightboxButton]
+  
+  inline def onLimitViolation: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLimitViolation = "onLimitViolation".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLimitViolation]
+  
+  inline def onLoadError: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLoadError = "onLoadError".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLoadError]
+  
+  inline def onLocationError: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLocationError = "onLocationError".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onLocationError]
+  
+  inline def onMouseDown: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseDown = "onMouseDown".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseDown]
+  
+  inline def onMouseMove: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseMove = "onMouseMove".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onMouseMove]
+  
+  inline def onOptionsLoad: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoad = "onOptionsLoad".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoad]
+  
+  inline def onOptionsLoadFinal: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadFinal = "onOptionsLoadFinal".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadFinal]
+  
+  inline def onOptionsLoadStart: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadStart = "onOptionsLoadStart".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onOptionsLoadStart]
+  
+  inline def onSaveError: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onSaveError = "onSaveError".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onSaveError]
+  
+  inline def onScaleAdd: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleAdd = "onScaleAdd".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleAdd]
+  
+  inline def onScaleDblClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleDblClick = "onScaleDblClick".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onScaleDblClick]
+  
+  inline def onSchedulerReady: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerReady = "onSchedulerReady".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerReady]
+  
+  inline def onSchedulerResize: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerResize = "onSchedulerResize".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onSchedulerResize]
+  
+  inline def onTemplatesReady: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onTemplatesReady = "onTemplatesReady".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onTemplatesReady]
+  
+  inline def onTimelineCreated: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onTimelineCreated = "onTimelineCreated".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onTimelineCreated]
+  
+  inline def onViewChange: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onViewChange = "onViewChange".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onViewChange]
+  
+  inline def onViewMoreClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onViewMoreClick = "onViewMoreClick".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onViewMoreClick]
+  
+  inline def onXLE: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onXLE = "onXLE".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onXLE]
+  
+  inline def onXLS: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onXLS = "onXLS".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onXLS]
+  
+  inline def onXScaleClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleClick = "onXScaleClick".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleClick]
+  
+  inline def onXScaleDblClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleDblClick = "onXScaleDblClick".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onXScaleDblClick]
+  
+  inline def onYScaleClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleClick = "onYScaleClick".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleClick]
+  
+  inline def onYScaleDblClick: typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleDblClick = "onYScaleDblClick".asInstanceOf[typingsJapgolly.dhtmlxscheduler.dhtmlxschedulerStrings.onYScaleDblClick]
 }
-

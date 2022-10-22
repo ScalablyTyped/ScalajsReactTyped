@@ -1,29 +1,27 @@
 package typingsJapgolly.jsprintmanager.mod.JSPM
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintOrientation extends js.Object
-
+sealed trait PrintOrientation extends StObject
 @JSImport("jsprintmanager", "JSPM.PrintOrientation")
 @js.native
-object PrintOrientation extends js.Object {
-  @js.native
-  sealed trait Landscape extends PrintOrientation
-  
-  @js.native
-  sealed trait Portrait extends PrintOrientation
+object PrintOrientation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PrintOrientation with Double] = js.native
-  /* 1 */ @js.native
-  object Landscape extends TopLevel[Landscape with Double]
+  def apply(value: Double): js.UndefOr[PrintOrientation & Double] = js.native
   
-  /* 0 */ @js.native
-  object Portrait extends TopLevel[Portrait with Double]
+  @js.native
+  sealed trait Landscape
+    extends StObject
+       with PrintOrientation
+  /* 1 */ val Landscape: typingsJapgolly.jsprintmanager.mod.JSPM.PrintOrientation.Landscape & Double = js.native
   
+  @js.native
+  sealed trait Portrait
+    extends StObject
+       with PrintOrientation
+  /* 0 */ val Portrait: typingsJapgolly.jsprintmanager.mod.JSPM.PrintOrientation.Portrait & Double = js.native
 }
-

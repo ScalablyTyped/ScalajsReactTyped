@@ -1,41 +1,39 @@
 package typingsJapgolly.terser.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InlineFunctions extends js.Object
-
+sealed trait InlineFunctions extends StObject
 @JSImport("terser", "InlineFunctions")
 @js.native
-object InlineFunctions extends js.Object {
-  @js.native
-  sealed trait Disabled extends InlineFunctions
-  
-  @js.native
-  sealed trait SimpleFunctions extends InlineFunctions
-  
-  @js.native
-  sealed trait WithArguments extends InlineFunctions
-  
-  @js.native
-  sealed trait WithArgumentsAndVariables extends InlineFunctions
+object InlineFunctions extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InlineFunctions with Double] = js.native
-  /* 0 */ @js.native
-  object Disabled extends TopLevel[Disabled with Double]
+  def apply(value: Double): js.UndefOr[InlineFunctions & Double] = js.native
   
-  /* 1 */ @js.native
-  object SimpleFunctions extends TopLevel[SimpleFunctions with Double]
+  @js.native
+  sealed trait Disabled
+    extends StObject
+       with InlineFunctions
+  /* 0 */ val Disabled: typingsJapgolly.terser.mod.InlineFunctions.Disabled & Double = js.native
   
-  /* 2 */ @js.native
-  object WithArguments extends TopLevel[WithArguments with Double]
+  @js.native
+  sealed trait SimpleFunctions
+    extends StObject
+       with InlineFunctions
+  /* 1 */ val SimpleFunctions: typingsJapgolly.terser.mod.InlineFunctions.SimpleFunctions & Double = js.native
   
-  /* 3 */ @js.native
-  object WithArgumentsAndVariables extends TopLevel[WithArgumentsAndVariables with Double]
+  @js.native
+  sealed trait WithArguments
+    extends StObject
+       with InlineFunctions
+  /* 2 */ val WithArguments: typingsJapgolly.terser.mod.InlineFunctions.WithArguments & Double = js.native
   
+  @js.native
+  sealed trait WithArgumentsAndVariables
+    extends StObject
+       with InlineFunctions
+  /* 3 */ val WithArgumentsAndVariables: typingsJapgolly.terser.mod.InlineFunctions.WithArgumentsAndVariables & Double = js.native
 }
-

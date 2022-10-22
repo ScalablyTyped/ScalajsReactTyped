@@ -1,8 +1,8 @@
 package typingsJapgolly.stripeV3.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.stripeV3.stripeV3Strings.`new`
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.stripeV3.stripeV3Strings.verification_failed
   - typingsJapgolly.stripeV3.stripeV3Strings.errored
 */
-trait statusType extends js.Object
-
+trait statusType extends StObject
 object statusType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def errored: typingsJapgolly.stripeV3.stripeV3Strings.errored = this.cast("errored")
-  @scala.inline
-  def `new`: typingsJapgolly.stripeV3.stripeV3Strings.`new` = this.cast("new")
-  @scala.inline
-  def validated: typingsJapgolly.stripeV3.stripeV3Strings.validated = this.cast("validated")
-  @scala.inline
-  def verification_failed: typingsJapgolly.stripeV3.stripeV3Strings.verification_failed = this.cast("verification_failed")
-  @scala.inline
-  def verified: typingsJapgolly.stripeV3.stripeV3Strings.verified = this.cast("verified")
+  
+  inline def errored: typingsJapgolly.stripeV3.stripeV3Strings.errored = "errored".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.errored]
+  
+  inline def `new`: typingsJapgolly.stripeV3.stripeV3Strings.`new` = "new".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.`new`]
+  
+  inline def validated: typingsJapgolly.stripeV3.stripeV3Strings.validated = "validated".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.validated]
+  
+  inline def verification_failed: typingsJapgolly.stripeV3.stripeV3Strings.verification_failed = "verification_failed".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.verification_failed]
+  
+  inline def verified: typingsJapgolly.stripeV3.stripeV3Strings.verified = "verified".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.verified]
 }
-

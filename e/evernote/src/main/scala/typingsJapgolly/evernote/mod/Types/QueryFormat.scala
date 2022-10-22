@@ -1,29 +1,27 @@
 package typingsJapgolly.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait QueryFormat extends js.Object
-
+sealed trait QueryFormat extends StObject
 @JSImport("evernote", "Types.QueryFormat")
 @js.native
-object QueryFormat extends js.Object {
-  @js.native
-  sealed trait SEXP extends QueryFormat
-  
-  @js.native
-  sealed trait USER extends QueryFormat
+object QueryFormat extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[QueryFormat with Double] = js.native
-  /* 2 */ @js.native
-  object SEXP extends TopLevel[SEXP with Double]
+  def apply(value: Double): js.UndefOr[QueryFormat & Double] = js.native
   
-  /* 1 */ @js.native
-  object USER extends TopLevel[USER with Double]
+  @js.native
+  sealed trait SEXP
+    extends StObject
+       with QueryFormat
+  /* 2 */ val SEXP: typingsJapgolly.evernote.mod.Types.QueryFormat.SEXP & Double = js.native
   
+  @js.native
+  sealed trait USER
+    extends StObject
+       with QueryFormat
+  /* 1 */ val USER: typingsJapgolly.evernote.mod.Types.QueryFormat.USER & Double = js.native
 }
-

@@ -1,10 +1,11 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnnotationsMeasureTypeLabelOptions extends js.Object {
+trait AnnotationsMeasureTypeLabelOptions extends StObject {
+  
   /**
     * (Highstock) Enable or disable the label text (min, max, average, bins
     * values).
@@ -12,6 +13,7 @@ trait AnnotationsMeasureTypeLabelOptions extends js.Object {
     * Defaults to true.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highstock) Formatter function for the label text.
     *
@@ -20,24 +22,31 @@ trait AnnotationsMeasureTypeLabelOptions extends js.Object {
     *  (see online documentation for example)
     */
   var formatter: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * (Highstock) CSS styles for the measure label.
     */
   var style: js.UndefOr[AnnotationsMeasureTypeLabelStyleOptions | CSSObject] = js.undefined
 }
-
 object AnnotationsMeasureTypeLabelOptions {
-  @scala.inline
-  def apply(
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    formatter: js.Function = null,
-    style: AnnotationsMeasureTypeLabelStyleOptions | CSSObject = null
-  ): AnnotationsMeasureTypeLabelOptions = {
+  
+  inline def apply(): AnnotationsMeasureTypeLabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsMeasureTypeLabelOptions]
   }
+  
+  extension [Self <: AnnotationsMeasureTypeLabelOptions](x: Self) {
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setFormatter(value: js.Function): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    
+    inline def setStyle(value: AnnotationsMeasureTypeLabelStyleOptions | CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

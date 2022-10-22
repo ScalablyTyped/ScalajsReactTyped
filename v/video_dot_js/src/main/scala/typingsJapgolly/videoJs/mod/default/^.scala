@@ -1,15 +1,9 @@
 package typingsJapgolly.videoJs.mod.default
 
-import typingsJapgolly.videoJs.mod.videojs.PlayerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("video.js", JSImport.Default)
 @js.native
-object ^ extends js.Object {
-  def apply(id: js.Any): typingsJapgolly.videoJs.mod.videojs.Player = js.native
-  def apply(id: js.Any, options: PlayerOptions): typingsJapgolly.videoJs.mod.videojs.Player = js.native
-  def apply(id: js.Any, options: PlayerOptions, ready: js.Function0[Unit]): typingsJapgolly.videoJs.mod.videojs.Player = js.native
-}
-
+object ^ extends StObject

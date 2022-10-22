@@ -1,41 +1,50 @@
 package typingsJapgolly.reBase.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait getOptions extends js.Object {
+trait getOptions extends StObject {
+  
   /**
     * A function that receives the created ref as its only argument. You
     * can chain any Firestore queries you want to perform. See
     * [Using Firestore Queries](https://github.com/tylermcginnis/re-base#firestorequeries).
     */
   var query: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * Will embed firestore generated document ids inside each document in
     * your collections on the `id` property.
     */
   var withIds: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * will embed the DocumentReference inside each document in your
     * collection on the `ref` property.
     */
   var withRefs: js.UndefOr[Boolean] = js.undefined
 }
-
 object getOptions {
-  @scala.inline
-  def apply(
-    query: js.UndefOr[Callback] = js.undefined,
-    withIds: js.UndefOr[Boolean] = js.undefined,
-    withRefs: js.UndefOr[Boolean] = js.undefined
-  ): getOptions = {
+  
+  inline def apply(): getOptions = {
     val __obj = js.Dynamic.literal()
-    query.foreach(p => __obj.updateDynamic("query")(p.toJsFn))
-    if (!js.isUndefined(withIds)) __obj.updateDynamic("withIds")(withIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(withRefs)) __obj.updateDynamic("withRefs")(withRefs.asInstanceOf[js.Any])
     __obj.asInstanceOf[getOptions]
   }
+  
+  extension [Self <: getOptions](x: Self) {
+    
+    inline def setQuery(value: Callback): Self = StObject.set(x, "query", value.toJsFn)
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    
+    inline def setWithIds(value: Boolean): Self = StObject.set(x, "withIds", value.asInstanceOf[js.Any])
+    
+    inline def setWithIdsUndefined: Self = StObject.set(x, "withIds", js.undefined)
+    
+    inline def setWithRefs(value: Boolean): Self = StObject.set(x, "withRefs", value.asInstanceOf[js.Any])
+    
+    inline def setWithRefsUndefined: Self = StObject.set(x, "withRefs", js.undefined)
+  }
 }
-

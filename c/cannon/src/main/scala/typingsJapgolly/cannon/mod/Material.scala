@@ -1,13 +1,25 @@
 package typingsJapgolly.cannon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cannon", "Material")
 @js.native
-class Material protected ()
-  extends typingsJapgolly.cannon.CANNON.Material {
+open class Material protected ()
+  extends StObject
+     with typingsJapgolly.cannon.CANNON.Material {
   def this(name: String) = this()
+  
+  /* CompleteClass */
+  var friction: Double = js.native
+  
+  /* CompleteClass */
+  var id: Double = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
+  
+  /* CompleteClass */
+  var restitution: Double = js.native
 }
-

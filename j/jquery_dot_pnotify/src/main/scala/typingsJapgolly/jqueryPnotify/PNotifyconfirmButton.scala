@@ -1,34 +1,44 @@
 package typingsJapgolly.jqueryPnotify
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PNotifyconfirmButton extends js.Object {
+trait PNotifyconfirmButton extends StObject {
+  
   var addClass: js.UndefOr[String] = js.undefined
+  
+  def click(notice: PNotify, value: Any): Unit
+  
   /**
     *  Whether to trigger this button when the user hits enter in a single line prompt.
     */
   var promptTrigger: js.UndefOr[Boolean] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
-  def click(notice: PNotify, value: js.Any): Unit
 }
-
 object PNotifyconfirmButton {
-  @scala.inline
-  def apply(
-    click: (PNotify, js.Any) => Callback,
-    addClass: String = null,
-    promptTrigger: js.UndefOr[Boolean] = js.undefined,
-    text: String = null
-  ): PNotifyconfirmButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("click")(js.Any.fromFunction2((t0: typingsJapgolly.jqueryPnotify.PNotify, t1: js.Any) => click(t0, t1).runNow()))
-    if (addClass != null) __obj.updateDynamic("addClass")(addClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(promptTrigger)) __obj.updateDynamic("promptTrigger")(promptTrigger.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+  
+  inline def apply(click: (PNotify, Any) => Callback): PNotifyconfirmButton = {
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction2((t0: PNotify, t1: Any) => (click(t0, t1)).runNow()))
     __obj.asInstanceOf[PNotifyconfirmButton]
   }
+  
+  extension [Self <: PNotifyconfirmButton](x: Self) {
+    
+    inline def setAddClass(value: String): Self = StObject.set(x, "addClass", value.asInstanceOf[js.Any])
+    
+    inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
+    
+    inline def setClick(value: (PNotify, Any) => Callback): Self = StObject.set(x, "click", js.Any.fromFunction2((t0: PNotify, t1: Any) => (value(t0, t1)).runNow()))
+    
+    inline def setPromptTrigger(value: Boolean): Self = StObject.set(x, "promptTrigger", value.asInstanceOf[js.Any])
+    
+    inline def setPromptTriggerUndefined: Self = StObject.set(x, "promptTrigger", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

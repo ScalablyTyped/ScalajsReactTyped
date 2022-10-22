@@ -1,113 +1,111 @@
 package typingsJapgolly.msRest.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MapperType extends js.Object
-
+sealed trait MapperType extends StObject
 @JSImport("ms-rest", "MapperType")
 @js.native
-object MapperType extends js.Object {
-  @js.native
-  sealed trait Base64Url extends MapperType
-  
-  @js.native
-  sealed trait Boolean extends MapperType
-  
-  @js.native
-  sealed trait ByteArray extends MapperType
-  
-  @js.native
-  sealed trait Composite extends MapperType
-  
-  @js.native
-  sealed trait Date extends MapperType
-  
-  @js.native
-  sealed trait DateTime extends MapperType
-  
-  @js.native
-  sealed trait DateTimeRfc1123 extends MapperType
-  
-  @js.native
-  sealed trait Dictionary extends MapperType
-  
-  @js.native
-  sealed trait Enum extends MapperType
-  
-  @js.native
-  sealed trait Number extends MapperType
-  
-  @js.native
-  sealed trait Object extends MapperType
-  
-  @js.native
-  sealed trait Sequence extends MapperType
-  
-  @js.native
-  sealed trait Stream extends MapperType
-  
-  @js.native
-  sealed trait String extends MapperType
-  
-  @js.native
-  sealed trait TimeSpan extends MapperType
-  
-  @js.native
-  sealed trait UnixTime extends MapperType
+object MapperType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MapperType with Double] = js.native
-  /* 0 */ @js.native
-  object Base64Url extends TopLevel[Base64Url with Double]
+  def apply(value: Double): js.UndefOr[MapperType & Double] = js.native
   
-  /* 1 */ @js.native
-  object Boolean extends TopLevel[Boolean with Double]
+  @js.native
+  sealed trait Base64Url
+    extends StObject
+       with MapperType
+  /* 0 */ val Base64Url: typingsJapgolly.msRest.mod.MapperType.Base64Url & Double = js.native
   
-  /* 2 */ @js.native
-  object ByteArray extends TopLevel[ByteArray with Double]
+  @js.native
+  sealed trait Boolean
+    extends StObject
+       with MapperType
+  /* 1 */ val Boolean: typingsJapgolly.msRest.mod.MapperType.Boolean & Double = js.native
   
-  /* 3 */ @js.native
-  object Composite extends TopLevel[Composite with Double]
+  @js.native
+  sealed trait ByteArray
+    extends StObject
+       with MapperType
+  /* 2 */ val ByteArray: typingsJapgolly.msRest.mod.MapperType.ByteArray & Double = js.native
   
-  /* 4 */ @js.native
-  object Date extends TopLevel[Date with Double]
+  @js.native
+  sealed trait Composite
+    extends StObject
+       with MapperType
+  /* 3 */ val Composite: typingsJapgolly.msRest.mod.MapperType.Composite & Double = js.native
   
-  /* 5 */ @js.native
-  object DateTime extends TopLevel[DateTime with Double]
+  @js.native
+  sealed trait Date
+    extends StObject
+       with MapperType
+  /* 4 */ val Date: typingsJapgolly.msRest.mod.MapperType.Date & Double = js.native
   
-  /* 6 */ @js.native
-  object DateTimeRfc1123 extends TopLevel[DateTimeRfc1123 with Double]
+  @js.native
+  sealed trait DateTime
+    extends StObject
+       with MapperType
+  /* 5 */ val DateTime: typingsJapgolly.msRest.mod.MapperType.DateTime & Double = js.native
   
-  /* 7 */ @js.native
-  object Dictionary extends TopLevel[Dictionary with Double]
+  @js.native
+  sealed trait DateTimeRfc1123
+    extends StObject
+       with MapperType
+  /* 6 */ val DateTimeRfc1123: typingsJapgolly.msRest.mod.MapperType.DateTimeRfc1123 & Double = js.native
   
-  /* 8 */ @js.native
-  object Enum extends TopLevel[Enum with Double]
+  @js.native
+  sealed trait Dictionary
+    extends StObject
+       with MapperType
+  /* 7 */ val Dictionary: typingsJapgolly.msRest.mod.MapperType.Dictionary & Double = js.native
   
-  /* 9 */ @js.native
-  object Number extends TopLevel[Number with Double]
+  @js.native
+  sealed trait Enum
+    extends StObject
+       with MapperType
+  /* 8 */ val Enum: typingsJapgolly.msRest.mod.MapperType.Enum & Double = js.native
   
-  /* 10 */ @js.native
-  object Object extends TopLevel[Object with Double]
+  @js.native
+  sealed trait Number
+    extends StObject
+       with MapperType
+  /* 9 */ val Number: typingsJapgolly.msRest.mod.MapperType.Number & Double = js.native
   
-  /* 11 */ @js.native
-  object Sequence extends TopLevel[Sequence with Double]
+  @js.native
+  sealed trait Object
+    extends StObject
+       with MapperType
+  /* 10 */ val Object: typingsJapgolly.msRest.mod.MapperType.Object & Double = js.native
   
-  /* 13 */ @js.native
-  object Stream extends TopLevel[Stream with Double]
+  @js.native
+  sealed trait Sequence
+    extends StObject
+       with MapperType
+  /* 11 */ val Sequence: typingsJapgolly.msRest.mod.MapperType.Sequence & Double = js.native
   
-  /* 12 */ @js.native
-  object String extends TopLevel[String with Double]
+  @js.native
+  sealed trait Stream
+    extends StObject
+       with MapperType
+  /* 13 */ val Stream: typingsJapgolly.msRest.mod.MapperType.Stream & Double = js.native
   
-  /* 14 */ @js.native
-  object TimeSpan extends TopLevel[TimeSpan with Double]
+  @js.native
+  sealed trait String
+    extends StObject
+       with MapperType
+  /* 12 */ val String: typingsJapgolly.msRest.mod.MapperType.String & Double = js.native
   
-  /* 15 */ @js.native
-  object UnixTime extends TopLevel[UnixTime with Double]
+  @js.native
+  sealed trait TimeSpan
+    extends StObject
+       with MapperType
+  /* 14 */ val TimeSpan: typingsJapgolly.msRest.mod.MapperType.TimeSpan & Double = js.native
   
+  @js.native
+  sealed trait UnixTime
+    extends StObject
+       with MapperType
+  /* 15 */ val UnixTime: typingsJapgolly.msRest.mod.MapperType.UnixTime & Double = js.native
 }
-

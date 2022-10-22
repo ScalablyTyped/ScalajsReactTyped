@@ -1,33 +1,48 @@
 package typingsJapgolly.reactNativeFirebase.mod.RNFirebase.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Settings extends js.Object {
+trait Settings extends StObject {
+  
   var cacheSizeBytes: js.UndefOr[Double] = js.undefined
+  
   var host: js.UndefOr[String] = js.undefined
+  
   var persistence: js.UndefOr[Boolean] = js.undefined
+  
   var ssl: js.UndefOr[Boolean] = js.undefined
+  
   var timestampsInSnapshots: js.UndefOr[Boolean] = js.undefined
 }
-
 object Settings {
-  @scala.inline
-  def apply(
-    cacheSizeBytes: Int | Double = null,
-    host: String = null,
-    persistence: js.UndefOr[Boolean] = js.undefined,
-    ssl: js.UndefOr[Boolean] = js.undefined,
-    timestampsInSnapshots: js.UndefOr[Boolean] = js.undefined
-  ): Settings = {
+  
+  inline def apply(): Settings = {
     val __obj = js.Dynamic.literal()
-    if (cacheSizeBytes != null) __obj.updateDynamic("cacheSizeBytes")(cacheSizeBytes.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistence)) __obj.updateDynamic("persistence")(persistence.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestampsInSnapshots)) __obj.updateDynamic("timestampsInSnapshots")(timestampsInSnapshots.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
+  
+  extension [Self <: Settings](x: Self) {
+    
+    inline def setCacheSizeBytes(value: Double): Self = StObject.set(x, "cacheSizeBytes", value.asInstanceOf[js.Any])
+    
+    inline def setCacheSizeBytesUndefined: Self = StObject.set(x, "cacheSizeBytes", js.undefined)
+    
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setPersistence(value: Boolean): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
+    
+    inline def setPersistenceUndefined: Self = StObject.set(x, "persistence", js.undefined)
+    
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    
+    inline def setTimestampsInSnapshots(value: Boolean): Self = StObject.set(x, "timestampsInSnapshots", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampsInSnapshotsUndefined: Self = StObject.set(x, "timestampsInSnapshots", js.undefined)
+  }
 }
-

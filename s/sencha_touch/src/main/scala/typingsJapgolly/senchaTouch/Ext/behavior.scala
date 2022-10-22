@@ -1,15 +1,16 @@
 package typingsJapgolly.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Ext.behavior")
-@js.native
-object behavior extends js.Object {
+object behavior {
+  
   type IBehavior = IBase
+  
   type IDraggable = IBehavior
+  
   type IScrollable = IBehavior
+  
   type ITranslatable = IBehavior
 }
-

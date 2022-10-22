@@ -1,47 +1,37 @@
 package typingsJapgolly.winrt.Windows.UI.Notifications
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NotificationSetting extends js.Object
-
+sealed trait NotificationSetting extends StObject
 @JSGlobal("Windows.UI.Notifications.NotificationSetting")
 @js.native
-object NotificationSetting extends js.Object {
-  @js.native
-  sealed trait disabledByGroupPolicy extends NotificationSetting
+object NotificationSetting extends StObject {
   
   @js.native
-  sealed trait disabledByManifest extends NotificationSetting
+  sealed trait disabledByGroupPolicy
+    extends StObject
+       with NotificationSetting
   
   @js.native
-  sealed trait disabledForApplication extends NotificationSetting
+  sealed trait disabledByManifest
+    extends StObject
+       with NotificationSetting
   
   @js.native
-  sealed trait disabledForUser extends NotificationSetting
+  sealed trait disabledForApplication
+    extends StObject
+       with NotificationSetting
   
   @js.native
-  sealed trait enabled extends NotificationSetting
+  sealed trait disabledForUser
+    extends StObject
+       with NotificationSetting
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NotificationSetting with Double] = js.native
-  /* 3 */ @js.native
-  object disabledByGroupPolicy extends TopLevel[disabledByGroupPolicy with Double]
-  
-  /* 4 */ @js.native
-  object disabledByManifest extends TopLevel[disabledByManifest with Double]
-  
-  /* 1 */ @js.native
-  object disabledForApplication extends TopLevel[disabledForApplication with Double]
-  
-  /* 2 */ @js.native
-  object disabledForUser extends TopLevel[disabledForUser with Double]
-  
-  /* 0 */ @js.native
-  object enabled extends TopLevel[enabled with Double]
-  
+  @js.native
+  sealed trait enabled
+    extends StObject
+       with NotificationSetting
 }
-

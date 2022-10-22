@@ -2,20 +2,18 @@ package typingsJapgolly.materialUi
 
 import typingsJapgolly.materialUi.MaterialUI.PaperProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Paper", JSImport.Namespace)
-@js.native
-object paperMod extends js.Object {
-  @js.native
-  class Paper ()
-    extends Component[PaperProps, js.Object, js.Any]
+object paperMod {
   
+  @JSImport("material-ui/Paper", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PaperProps, js.Object, js.Any]
+  open class default () extends Paper
   
+  @JSImport("material-ui/Paper", "Paper")
+  @js.native
+  open class Paper ()
+    extends Component[PaperProps, js.Object, Any]
 }
-

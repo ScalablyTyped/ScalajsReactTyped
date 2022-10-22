@@ -1,23 +1,18 @@
 package typingsJapgolly.rxLite.Rx
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.rxCore.Rx.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Rx.Disposable")
-@js.native
-class Disposable protected () extends IDisposable {
-  def this(action: js.Function0[Unit]) = this()
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
+trait Disposable
+  extends StObject
+     with IDisposable
+object Disposable {
+  
+  inline def apply(dispose: Callback): Disposable = {
+    val __obj = js.Dynamic.literal(dispose = dispose.toJsFn)
+    __obj.asInstanceOf[Disposable]
+  }
 }
-
-/* static members */
-@JSGlobal("Rx.Disposable")
-@js.native
-object Disposable extends js.Object {
-  var empty: IDisposable = js.native
-  def create(action: js.Function0[Unit]): IDisposable = js.native
-}
-

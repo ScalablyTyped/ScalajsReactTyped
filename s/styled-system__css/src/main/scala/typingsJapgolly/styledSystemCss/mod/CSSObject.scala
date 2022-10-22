@@ -1,24 +1,18 @@
 package typingsJapgolly.styledSystemCss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CSSObject
-  extends CSSOthersObjectForCSSObject
+  extends StObject
      with CSSPropertiesWithMultiValues
      with CSSPseudosForCSSObject
-
+     with CSSOthersObjectForCSSObject
 object CSSObject {
-  @scala.inline
-  def apply(
-    CSSPropertiesWithMultiValues: CSSPropertiesWithMultiValues = null,
-    CSSPseudosForCSSObject: CSSPseudosForCSSObject = null
-  ): CSSObject = {
+  
+  inline def apply(): CSSObject = {
     val __obj = js.Dynamic.literal()
-    if (CSSPropertiesWithMultiValues != null) js.Dynamic.global.Object.assign(__obj, CSSPropertiesWithMultiValues)
-    if (CSSPseudosForCSSObject != null) js.Dynamic.global.Object.assign(__obj, CSSPseudosForCSSObject)
     __obj.asInstanceOf[CSSObject]
   }
 }
-

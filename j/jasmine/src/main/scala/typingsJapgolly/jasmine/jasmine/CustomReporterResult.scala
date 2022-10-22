@@ -1,36 +1,26 @@
 package typingsJapgolly.jasmine.jasmine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomReporterResult extends js.Object {
-  var description: String
-  var failedExpectations: js.UndefOr[js.Array[FailedExpectation]] = js.undefined
-  var fullName: String
-  var id: String
-  var passedExpectations: js.UndefOr[js.Array[PassedExpectation]] = js.undefined
-  var pendingReason: js.UndefOr[String] = js.undefined
-  var status: js.UndefOr[String] = js.undefined
-}
-
+/** @deprecated use SuiteResult or SpecResult instead */
+trait CustomReporterResult
+  extends StObject
+     with SpecResult
 object CustomReporterResult {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
+    deprecationWarnings: js.Array[DeprecatedExpectation],
     description: String,
+    failedExpectations: js.Array[FailedExpectation],
     fullName: String,
     id: String,
-    failedExpectations: js.Array[FailedExpectation] = null,
-    passedExpectations: js.Array[PassedExpectation] = null,
-    pendingReason: String = null,
-    status: String = null
+    passedExpectations: js.Array[PassedExpectation],
+    pendingReason: String,
+    status: String
   ): CustomReporterResult = {
-    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    if (failedExpectations != null) __obj.updateDynamic("failedExpectations")(failedExpectations.asInstanceOf[js.Any])
-    if (passedExpectations != null) __obj.updateDynamic("passedExpectations")(passedExpectations.asInstanceOf[js.Any])
-    if (pendingReason != null) __obj.updateDynamic("pendingReason")(pendingReason.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deprecationWarnings = deprecationWarnings.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], failedExpectations = failedExpectations.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], passedExpectations = passedExpectations.asInstanceOf[js.Any], pendingReason = pendingReason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], debugLogs = null, duration = null, properties = null)
     __obj.asInstanceOf[CustomReporterResult]
   }
 }
-

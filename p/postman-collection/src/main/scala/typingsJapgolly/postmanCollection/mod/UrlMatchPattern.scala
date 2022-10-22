@@ -1,36 +1,57 @@
 package typingsJapgolly.postmanCollection.mod
 
-import typingsJapgolly.postmanCollection.AnonHost
-import typingsJapgolly.postmanCollection.AnonPattern
+import typingsJapgolly.postmanCollection.anon.Host
+import typingsJapgolly.postmanCollection.anon.Pattern
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postman-collection", "UrlMatchPattern")
 @js.native
-class UrlMatchPattern protected () extends js.Object {
+open class UrlMatchPattern protected () extends StObject {
   def this(options: String) = this()
-  def this(options: AnonPattern) = this()
-  var pattern: js.UndefOr[String] = js.native
-  def createMatchPattern(): js.UndefOr[AnonHost] = js.native
+  def this(options: Pattern) = this()
+  
+  def createMatchPattern(): js.UndefOr[Host] = js.native
+  
   def getProtocols(): js.Array[String] = js.native
+  
   def globPatternToRegexp(pattern: String): js.RegExp = js.native
-  def matchAbsoluteHostPattern(matchRegexObject: AnonHost, remote: String): Boolean = js.native
-  def matchAnyHost(matchRegexObject: AnonHost): Boolean = js.native
-  def matchSuffixHostPattern(matchRegexObject: AnonHost, remote: String): Boolean = js.native
+  
+  def matchAbsoluteHostPattern(matchRegexObject: Host, remote: String): Boolean = js.native
+  
+  def matchAnyHost(matchRegexObject: Host): Boolean = js.native
+  
+  def matchSuffixHostPattern(matchRegexObject: Host, remote: String): Boolean = js.native
+  
+  var pattern: js.UndefOr[String] = js.native
+  
   def test(urlStr: String): Boolean = js.native
+  
   def testHost(host: String): Boolean = js.native
+  
   def testPath(path: String): Boolean = js.native
+  
   def testProtocol(protocol: String): Boolean = js.native
-  def toJSON(): AnonPattern = js.native
-  def update(options: AnonPattern): Unit = js.native
+  
+  def toJSON(): Pattern = js.native
+  
+  def update(options: Pattern): Unit = js.native
 }
-
 /* static members */
-@JSImport("postman-collection", "UrlMatchPattern")
-@js.native
-object UrlMatchPattern extends js.Object {
-  var MATCH_ALL_URLS: String = js.native
-  var PROTOCOL_DELIMITER: String = js.native
+object UrlMatchPattern {
+  
+  @JSImport("postman-collection", "UrlMatchPattern")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("postman-collection", "UrlMatchPattern.MATCH_ALL_URLS")
+  @js.native
+  def MATCH_ALL_URLS: String = js.native
+  inline def MATCH_ALL_URLS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MATCH_ALL_URLS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("postman-collection", "UrlMatchPattern.PROTOCOL_DELIMITER")
+  @js.native
+  def PROTOCOL_DELIMITER: String = js.native
+  inline def PROTOCOL_DELIMITER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROTOCOL_DELIMITER")(x.asInstanceOf[js.Any])
 }
-

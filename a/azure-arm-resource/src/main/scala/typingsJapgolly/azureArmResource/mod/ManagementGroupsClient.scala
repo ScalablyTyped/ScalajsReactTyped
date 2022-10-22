@@ -1,15 +1,15 @@
 package typingsJapgolly.azureArmResource.mod
 
-import typingsJapgolly.azureArmResource.managementGroupsClientMod.^
+import typingsJapgolly.azureArmResource.libManagementManagementGroupsClientMod.^
 import typingsJapgolly.msRest.mod.ServiceClientCredentials
 import typingsJapgolly.msRestAzure.mod.AzureServiceClientOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-arm-resource", "ManagementGroupsClient")
 @js.native
-class ManagementGroupsClient protected () extends ^ {
+open class ManagementGroupsClient protected () extends ^ {
   /**
     * Initializes a new instance of the ManagementGroupsClient class.
     * @constructor
@@ -45,5 +45,10 @@ class ManagementGroupsClient protected () extends ^ {
     baseUri: String,
     options: AzureServiceClientOptions
   ) = this()
+  def this(
+    credentials: ServiceClientCredentials,
+    groupId: String,
+    baseUri: Unit,
+    options: AzureServiceClientOptions
+  ) = this()
 }
-

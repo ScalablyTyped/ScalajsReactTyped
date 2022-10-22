@@ -2,13 +2,14 @@ package typingsJapgolly.sequelize.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataTypeVirtual
-  extends DataTypeAbstract
+  extends StObject
+     with DataTypeAbstract
      with /**
   * Virtual field
   *
@@ -21,4 +22,3 @@ Instantiable1[/* subtype */ DataTypeAbstract, DataTypeVirtual]
       /* requireAttributes */ js.Array[String], 
       DataTypeVirtual
     ]
-

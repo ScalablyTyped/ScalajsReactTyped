@@ -1,27 +1,29 @@
 package typingsJapgolly.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.album
   - typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.artist
   - typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.playlist
   - typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.track
+  - typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.show
+  - typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.episode
 */
-trait SearchType extends js.Object
-
+trait SearchType extends StObject
 object SearchType {
-  @scala.inline
-  def album: typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.album = this.cast("album")
-  @scala.inline
-  def artist: typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.artist = this.cast("artist")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def playlist: typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.playlist = this.cast("playlist")
-  @scala.inline
-  def track: typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.track = this.cast("track")
+  
+  inline def album: typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.album = "album".asInstanceOf[typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.album]
+  
+  inline def artist: typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.artist = "artist".asInstanceOf[typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.artist]
+  
+  inline def episode: typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.episode = "episode".asInstanceOf[typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.episode]
+  
+  inline def playlist: typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.playlist = "playlist".asInstanceOf[typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.playlist]
+  
+  inline def show: typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.show = "show".asInstanceOf[typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.show]
+  
+  inline def track: typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.track = "track".asInstanceOf[typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.track]
 }
-

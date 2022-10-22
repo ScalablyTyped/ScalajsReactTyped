@@ -1,49 +1,64 @@
 package typingsJapgolly.uniApp
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SetStorageOptions extends js.Object {
+trait SetStorageOptions extends StObject {
+  
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 需要存储的内容，只支持原生类型、及能够通过 JSON.stringify 序列化的对象
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
+  
   /**
     * 接口调用失败的回调函数
     */
   var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 本地缓存中的指定的 key
     */
   var key: js.UndefOr[String] = js.undefined
+  
   /**
     * 接口调用成功的回调函数
     */
   var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
-
 object SetStorageOptions {
-  @scala.inline
-  def apply(
-    complete: js.UndefOr[Callback] = js.undefined,
-    data: js.Any = null,
-    fail: js.UndefOr[Callback] = js.undefined,
-    key: String = null,
-    success: js.UndefOr[Callback] = js.undefined
-  ): SetStorageOptions = {
+  
+  inline def apply(): SetStorageOptions = {
     val __obj = js.Dynamic.literal()
-    complete.foreach(p => __obj.updateDynamic("complete")(p.toJsFn))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    fail.foreach(p => __obj.updateDynamic("fail")(p.toJsFn))
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    success.foreach(p => __obj.updateDynamic("success")(p.toJsFn))
     __obj.asInstanceOf[SetStorageOptions]
   }
+  
+  extension [Self <: SetStorageOptions](x: Self) {
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setFail(value: Callback): Self = StObject.set(x, "fail", value.toJsFn)
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setSuccess(value: Callback): Self = StObject.set(x, "success", value.toJsFn)
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

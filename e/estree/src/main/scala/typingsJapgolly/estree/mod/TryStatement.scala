@@ -1,40 +1,47 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TryStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
+  
   var block: BlockStatement
+  
   var finalizer: js.UndefOr[BlockStatement | Null] = js.undefined
+  
   var handler: js.UndefOr[CatchClause | Null] = js.undefined
+  
   @JSName("type")
   var type_TryStatement: typingsJapgolly.estree.estreeStrings.TryStatement
 }
-
 object TryStatement {
-  @scala.inline
-  def apply(
-    block: BlockStatement,
-    `type`: typingsJapgolly.estree.estreeStrings.TryStatement,
-    finalizer: BlockStatement = null,
-    handler: CatchClause = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): TryStatement = {
+  
+  inline def apply(block: BlockStatement): TryStatement = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (finalizer != null) __obj.updateDynamic("finalizer")(finalizer.asInstanceOf[js.Any])
-    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TryStatement")
     __obj.asInstanceOf[TryStatement]
   }
+  
+  extension [Self <: TryStatement](x: Self) {
+    
+    inline def setBlock(value: BlockStatement): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    
+    inline def setFinalizer(value: BlockStatement): Self = StObject.set(x, "finalizer", value.asInstanceOf[js.Any])
+    
+    inline def setFinalizerNull: Self = StObject.set(x, "finalizer", null)
+    
+    inline def setFinalizerUndefined: Self = StObject.set(x, "finalizer", js.undefined)
+    
+    inline def setHandler(value: CatchClause): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    
+    inline def setHandlerNull: Self = StObject.set(x, "handler", null)
+    
+    inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.TryStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

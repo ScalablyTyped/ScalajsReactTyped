@@ -1,13 +1,12 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "BooleanKeyframeTrack")
 @js.native
-class BooleanKeyframeTrack protected ()
-  extends typingsJapgolly.three.booleanKeyframeTrackMod.BooleanKeyframeTrack {
-  def this(name: String, times: js.Array[_], values: js.Array[_]) = this()
+open class BooleanKeyframeTrack protected ()
+  extends typingsJapgolly.three.srcThreeMod.BooleanKeyframeTrack {
+  def this(name: String, times: js.Array[Any], values: js.Array[Any]) = this()
 }
-

@@ -1,28 +1,41 @@
 package typingsJapgolly.ionic
 
+import typingsJapgolly.ionic.anon.PartialConfigFile
 import typingsJapgolly.ionic.definitionsMod.CommandMetadataOption
 import typingsJapgolly.ionic.definitionsMod.ConfigFile
 import typingsJapgolly.ionic.definitionsMod.IConfig
-import typingsJapgolly.ionic.ionicStrings.configDotjson
-import typingsJapgolly.ionicCliFramework.configMod.BaseConfigOptions
+import typingsJapgolly.ionicCliFramework.libConfigMod.BaseConfigOptions
 import typingsJapgolly.minimist.mod.ParsedArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/lib/config", JSImport.Namespace)
-@js.native
-object libConfigMod extends js.Object {
+object libConfigMod {
+  
+  @JSImport("ionic/lib/config", JSImport.Namespace)
   @js.native
-  class Config protected () extends IConfig {
+  val ^ : js.Any = js.native
+  
+  @JSImport("ionic/lib/config", "CONFIG_FILE")
+  @js.native
+  val CONFIG_FILE: /* "config.json" */ String = js.native
+  
+  @JSImport("ionic/lib/config", "Config")
+  @js.native
+  open class Config protected () extends IConfig {
     def this(p: String) = this()
     def this(p: String, options: BaseConfigOptions) = this()
+    
     def provideDefaults(config: PartialConfigFile): ConfigFile = js.native
   }
   
-  val CONFIG_FILE: configDotjson = js.native
+  @JSImport("ionic/lib/config", "DEFAULT_CONFIG_DIRECTORY")
+  @js.native
   val DEFAULT_CONFIG_DIRECTORY: String = js.native
+  
+  @JSImport("ionic/lib/config", "GLOBAL_OPTIONS")
+  @js.native
   val GLOBAL_OPTIONS: js.Array[CommandMetadataOption] = js.native
-  def parseGlobalOptions(pargv: js.Array[String]): ParsedArgs = js.native
+  
+  inline def parseGlobalOptions(pargv: js.Array[String]): ParsedArgs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseGlobalOptions")(pargv.asInstanceOf[js.Any]).asInstanceOf[ParsedArgs]
 }
-

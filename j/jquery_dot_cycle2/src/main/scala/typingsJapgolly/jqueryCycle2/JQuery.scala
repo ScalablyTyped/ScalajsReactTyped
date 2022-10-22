@@ -1,6 +1,6 @@
 package typingsJapgolly.jqueryCycle2
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
 import typingsJapgolly.jquery.JQueryEventObject
 import typingsJapgolly.jqueryCycle2.JQueryCycle2.API
 import typingsJapgolly.jqueryCycle2.JQueryCycle2.Cycle2
@@ -34,20 +34,21 @@ import typingsJapgolly.jqueryCycle2.jqueryCycle2Strings.reinit
 import typingsJapgolly.jqueryCycle2.jqueryCycle2Strings.remove
 import typingsJapgolly.jqueryCycle2.jqueryCycle2Strings.resume
 import typingsJapgolly.jqueryCycle2.jqueryCycle2Strings.stop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
-  @JSName("cycle")
-  var cycle_Original: Cycle2 = js.native
+trait JQuery extends StObject {
+  
   def cycle(): JQuery = js.native
-  def cycle(methodNameDontCallMe: String, arg1DontCallMe: js.Any, arg2DontCallMe: js.Any): JQuery = js.native
+  def cycle(methodNameDontCallMe: String, arg1DontCallMe: Any, arg2DontCallMe: Any): JQuery = js.native
   def cycle(options: Options): JQuery = js.native
   @JSName("cycle")
-  def cycle_add(methodName: add, newSlide: js.Any): JQuery = js.native
-   // string or JQuery
+  var cycle_Original: Cycle2 = js.native
+  @JSName("cycle")
+  def cycle_add(methodName: add, newSlide: Any): JQuery = js.native
+  // string or JQuery
   @JSName("cycle")
   def cycle_destroy(methodName: destroy): JQuery = js.native
   @JSName("cycle")
@@ -66,6 +67,7 @@ trait JQuery extends js.Object {
   def cycle_resume(methodName: resume): JQuery = js.native
   @JSName("cycle")
   def cycle_stop(methodName: stop): JQuery = js.native
+  
   @JSName("on")
   def on_cycleafter(
     methodName: `cycle-after`,
@@ -182,4 +184,3 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
 }
-

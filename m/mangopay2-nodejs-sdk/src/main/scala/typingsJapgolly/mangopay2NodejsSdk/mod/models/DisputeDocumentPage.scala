@@ -1,16 +1,17 @@
 package typingsJapgolly.mangopay2NodejsSdk.mod.models
 
-import typingsJapgolly.mangopay2NodejsSdk.mod.disputeDocument.CreateDisputeDocumentPage
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsDisputeDocumentMod.disputeDocument.CreateDisputeDocumentPage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.DisputeDocumentPage")
 @js.native
-class DisputeDocumentPage protected ()
-  extends EntityBase[js.Any]
+open class DisputeDocumentPage protected ()
+  extends EntityBase[Any]
      with CreateDisputeDocumentPage {
   def this(data: CreateDisputeDocumentPage) = this()
+  
   /**
     * The base64 encoded file which needs to be uploaded
     *
@@ -25,6 +26,5 @@ class DisputeDocumentPage protected ()
     * ```
     */
   /* CompleteClass */
-  override var File: String = js.native
+  var File: String = js.native
 }
-

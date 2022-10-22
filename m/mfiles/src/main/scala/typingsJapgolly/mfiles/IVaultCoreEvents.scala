@@ -1,34 +1,40 @@
 package typingsJapgolly.mfiles
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.mfiles.MFiles.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IVaultCoreEvents extends IEvents {
+trait IVaultCoreEvents
+  extends StObject
+     with IEvents {
+  
   var OnNewVaultEntry: js.UndefOr[js.Function1[/* vaultEntry */ IVaultEntry, Unit | IVaultEntryEvents]] = js.undefined
+  
   var OnStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var OnStop: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
-
 object IVaultCoreEvents {
-  @scala.inline
-  def apply(
-    Register: (Event, js.Function) => CallbackTo[Double],
-    Unregister: Double => Callback,
-    OnNewVaultEntry: /* vaultEntry */ IVaultEntry => CallbackTo[Unit | IVaultEntryEvents] = null,
-    OnStarted: js.UndefOr[Callback] = js.undefined,
-    OnStop: js.UndefOr[Callback] = js.undefined
-  ): IVaultCoreEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Register")(js.Any.fromFunction2((t0: typingsJapgolly.mfiles.MFiles.Event, t1: js.Function) => Register(t0, t1).runNow()))
-    __obj.updateDynamic("Unregister")(js.Any.fromFunction1((t0: scala.Double) => Unregister(t0).runNow()))
-    if (OnNewVaultEntry != null) __obj.updateDynamic("OnNewVaultEntry")(js.Any.fromFunction1((t0: /* vaultEntry */ typingsJapgolly.mfiles.IVaultEntry) => OnNewVaultEntry(t0).runNow()))
-    OnStarted.foreach(p => __obj.updateDynamic("OnStarted")(p.toJsFn))
-    OnStop.foreach(p => __obj.updateDynamic("OnStop")(p.toJsFn))
+  
+  inline def apply(Register: (Event, js.Function) => Double, Unregister: Double => Callback): IVaultCoreEvents = {
+    val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1((t0: Double) => Unregister(t0).runNow()))
     __obj.asInstanceOf[IVaultCoreEvents]
   }
+  
+  extension [Self <: IVaultCoreEvents](x: Self) {
+    
+    inline def setOnNewVaultEntry(value: /* vaultEntry */ IVaultEntry => Unit | IVaultEntryEvents): Self = StObject.set(x, "OnNewVaultEntry", js.Any.fromFunction1(value))
+    
+    inline def setOnNewVaultEntryUndefined: Self = StObject.set(x, "OnNewVaultEntry", js.undefined)
+    
+    inline def setOnStarted(value: Callback): Self = StObject.set(x, "OnStarted", value.toJsFn)
+    
+    inline def setOnStartedUndefined: Self = StObject.set(x, "OnStarted", js.undefined)
+    
+    inline def setOnStop(value: Callback): Self = StObject.set(x, "OnStop", value.toJsFn)
+    
+    inline def setOnStopUndefined: Self = StObject.set(x, "OnStop", js.undefined)
+  }
 }
-

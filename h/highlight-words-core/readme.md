@@ -10,10 +10,10 @@ Utility functions shared by react-highlight-words and react-native-highlight-wor
 | ------------------ | :-------------: |
 | Full name          | highlight-words-core |
 | Keywords           | highlighter, highlight, text, words, matches, substring, occurrences, search |
-| # releases         | 4 |
-| # dependents       | 16 |
-| # downloads        | 4376771 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1924812.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/highlight-words-core)

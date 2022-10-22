@@ -1,32 +1,33 @@
 package typingsJapgolly.angularCompiler.mod
 
-import typingsJapgolly.angularCompiler.i18nAstMod.Message
-import typingsJapgolly.angularCompiler.i18nAstMod.Node
-import typingsJapgolly.angularCompiler.r3AstMod.TextAttribute
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "TmplAstContent")
 @js.native
-class TmplAstContent protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.TmplAstContent {
+open class TmplAstContent protected ()
+  extends StObject
+     with TmplAstNode {
+  def this(selector: String, attributes: js.Array[TmplAstTextAttribute], sourceSpan: ParseSourceSpan) = this()
   def this(
     selector: String,
-    attributes: js.Array[TextAttribute],
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    attributes: js.Array[TmplAstTextAttribute],
+    sourceSpan: ParseSourceSpan,
+    i18n: I18nMeta2
   ) = this()
-  def this(
-    selector: String,
-    attributes: js.Array[TextAttribute],
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: Message
-  ) = this()
-  def this(
-    selector: String,
-    attributes: js.Array[TextAttribute],
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: Node
-  ) = this()
+  
+  var attributes: js.Array[TmplAstTextAttribute] = js.native
+  
+  var i18n: js.UndefOr[I18nMeta2] = js.native
+  
+  val name: /* "ng-content" */ String = js.native
+  
+  var selector: String = js.native
+  
+  /* CompleteClass */
+  var sourceSpan: ParseSourceSpan = js.native
+  
+  /* CompleteClass */
+  override def visit[Result](visitor: Visitor3[Result]): Result = js.native
 }
-

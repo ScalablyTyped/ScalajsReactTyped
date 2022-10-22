@@ -7,202 +7,280 @@ import typingsJapgolly.officeJs.officeJsStrings.Left
 import typingsJapgolly.officeJs.officeJsStrings.Mixed
 import typingsJapgolly.officeJs.officeJsStrings.Right
 import typingsJapgolly.officeJs.officeJsStrings.Unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "paragraph.toJSON()". */
-trait ParagraphData extends js.Object {
+/** An interface describing the data returned by calling `paragraph.toJSON()`. */
+trait ParagraphData extends StObject {
+  
   /**
-    *
     * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var alignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
+  
   /**
+    * Gets the collection of fields in the paragraph.
     *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  var fields: js.UndefOr[js.Array[FieldData]] = js.undefined
+  
+  /**
     * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var firstLineIndent: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
     *
-    * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
-    *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var font: js.UndefOr[FontData] = js.undefined
+  
   /**
+    * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
     *
-    * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
-    *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var inlinePictures: js.UndefOr[js.Array[InlinePictureData]] = js.undefined
+  
   /**
+    * Indicates the paragraph is the last one inside its parent body.
     *
-    * Indicates the paragraph is the last one inside its parent body. Read-only.
-    *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var isLastParagraph: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Checks whether the paragraph is a list item.
     *
-    * Checks whether the paragraph is a list item. Read-only.
-    *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var isListItem: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Gets or sets the left indent value, in points, for the paragraph.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var leftIndent: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var lineSpacing: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Gets or sets the amount of spacing, in grid lines, after the paragraph.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var lineUnitAfter: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Gets or sets the amount of spacing, in grid lines, before the paragraph.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var lineUnitBefore: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
     *
-    * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list. Read-only.
-    *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var listItem: js.UndefOr[ListItemData] = js.undefined
+  
   /**
+    * Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
-    * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
-    *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var listItemOrNullObject: js.UndefOr[ListItemData] = js.undefined
+  
   /**
-    *
     * Gets or sets the outline level for the paragraph.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var outlineLevel: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Gets or sets the right indent value, in points, for the paragraph.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var rightIndent: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Gets or sets the spacing, in points, after the paragraph.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var spaceAfter: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Gets or sets the spacing, in points, before the paragraph.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var spaceBefore: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var style: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typingsJapgolly.officeJs.Word.Style, typingsJapgolly.officeJs.officeJsStrings.Other, typingsJapgolly.officeJs.officeJsStrings.Normal */ Any
   ] = js.undefined
+  
   /**
+    * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
     *
-    * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
-    *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var tableNestingLevel: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Gets the text of the paragraph.
     *
-    * Gets the text of the paragraph. Read-only.
-    *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object ParagraphData {
-  @scala.inline
-  def apply(
-    alignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
-    firstLineIndent: Int | Double = null,
-    font: FontData = null,
-    inlinePictures: js.Array[InlinePictureData] = null,
-    isLastParagraph: js.UndefOr[Boolean] = js.undefined,
-    isListItem: js.UndefOr[Boolean] = js.undefined,
-    leftIndent: Int | Double = null,
-    lineSpacing: Int | Double = null,
-    lineUnitAfter: Int | Double = null,
-    lineUnitBefore: Int | Double = null,
-    listItem: ListItemData = null,
-    listItemOrNullObject: ListItemData = null,
-    outlineLevel: Int | Double = null,
-    rightIndent: Int | Double = null,
-    spaceAfter: Int | Double = null,
-    spaceBefore: Int | Double = null,
-    style: String = null,
-    styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any = null,
-    tableNestingLevel: Int | Double = null,
-    text: String = null
-  ): ParagraphData = {
+  
+  inline def apply(): ParagraphData = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (firstLineIndent != null) __obj.updateDynamic("firstLineIndent")(firstLineIndent.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLastParagraph)) __obj.updateDynamic("isLastParagraph")(isLastParagraph.asInstanceOf[js.Any])
-    if (!js.isUndefined(isListItem)) __obj.updateDynamic("isListItem")(isListItem.asInstanceOf[js.Any])
-    if (leftIndent != null) __obj.updateDynamic("leftIndent")(leftIndent.asInstanceOf[js.Any])
-    if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
-    if (lineUnitAfter != null) __obj.updateDynamic("lineUnitAfter")(lineUnitAfter.asInstanceOf[js.Any])
-    if (lineUnitBefore != null) __obj.updateDynamic("lineUnitBefore")(lineUnitBefore.asInstanceOf[js.Any])
-    if (listItem != null) __obj.updateDynamic("listItem")(listItem.asInstanceOf[js.Any])
-    if (listItemOrNullObject != null) __obj.updateDynamic("listItemOrNullObject")(listItemOrNullObject.asInstanceOf[js.Any])
-    if (outlineLevel != null) __obj.updateDynamic("outlineLevel")(outlineLevel.asInstanceOf[js.Any])
-    if (rightIndent != null) __obj.updateDynamic("rightIndent")(rightIndent.asInstanceOf[js.Any])
-    if (spaceAfter != null) __obj.updateDynamic("spaceAfter")(spaceAfter.asInstanceOf[js.Any])
-    if (spaceBefore != null) __obj.updateDynamic("spaceBefore")(spaceBefore.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn.asInstanceOf[js.Any])
-    if (tableNestingLevel != null) __obj.updateDynamic("tableNestingLevel")(tableNestingLevel.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphData]
   }
+  
+  extension [Self <: ParagraphData](x: Self) {
+    
+    inline def setAlignment(value: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    
+    inline def setFields(value: js.Array[FieldData]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: FieldData*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setFirstLineIndent(value: Double): Self = StObject.set(x, "firstLineIndent", value.asInstanceOf[js.Any])
+    
+    inline def setFirstLineIndentUndefined: Self = StObject.set(x, "firstLineIndent", js.undefined)
+    
+    inline def setFont(value: FontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setInlinePictures(value: js.Array[InlinePictureData]): Self = StObject.set(x, "inlinePictures", value.asInstanceOf[js.Any])
+    
+    inline def setInlinePicturesUndefined: Self = StObject.set(x, "inlinePictures", js.undefined)
+    
+    inline def setInlinePicturesVarargs(value: InlinePictureData*): Self = StObject.set(x, "inlinePictures", js.Array(value*))
+    
+    inline def setIsLastParagraph(value: Boolean): Self = StObject.set(x, "isLastParagraph", value.asInstanceOf[js.Any])
+    
+    inline def setIsLastParagraphUndefined: Self = StObject.set(x, "isLastParagraph", js.undefined)
+    
+    inline def setIsListItem(value: Boolean): Self = StObject.set(x, "isListItem", value.asInstanceOf[js.Any])
+    
+    inline def setIsListItemUndefined: Self = StObject.set(x, "isListItem", js.undefined)
+    
+    inline def setLeftIndent(value: Double): Self = StObject.set(x, "leftIndent", value.asInstanceOf[js.Any])
+    
+    inline def setLeftIndentUndefined: Self = StObject.set(x, "leftIndent", js.undefined)
+    
+    inline def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
+    
+    inline def setLineUnitAfter(value: Double): Self = StObject.set(x, "lineUnitAfter", value.asInstanceOf[js.Any])
+    
+    inline def setLineUnitAfterUndefined: Self = StObject.set(x, "lineUnitAfter", js.undefined)
+    
+    inline def setLineUnitBefore(value: Double): Self = StObject.set(x, "lineUnitBefore", value.asInstanceOf[js.Any])
+    
+    inline def setLineUnitBeforeUndefined: Self = StObject.set(x, "lineUnitBefore", js.undefined)
+    
+    inline def setListItem(value: ListItemData): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+    
+    inline def setListItemOrNullObject(value: ListItemData): Self = StObject.set(x, "listItemOrNullObject", value.asInstanceOf[js.Any])
+    
+    inline def setListItemOrNullObjectUndefined: Self = StObject.set(x, "listItemOrNullObject", js.undefined)
+    
+    inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+    
+    inline def setOutlineLevel(value: Double): Self = StObject.set(x, "outlineLevel", value.asInstanceOf[js.Any])
+    
+    inline def setOutlineLevelUndefined: Self = StObject.set(x, "outlineLevel", js.undefined)
+    
+    inline def setRightIndent(value: Double): Self = StObject.set(x, "rightIndent", value.asInstanceOf[js.Any])
+    
+    inline def setRightIndentUndefined: Self = StObject.set(x, "rightIndent", js.undefined)
+    
+    inline def setSpaceAfter(value: Double): Self = StObject.set(x, "spaceAfter", value.asInstanceOf[js.Any])
+    
+    inline def setSpaceAfterUndefined: Self = StObject.set(x, "spaceAfter", js.undefined)
+    
+    inline def setSpaceBefore(value: Double): Self = StObject.set(x, "spaceBefore", value.asInstanceOf[js.Any])
+    
+    inline def setSpaceBeforeUndefined: Self = StObject.set(x, "spaceBefore", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleBuiltIn(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typingsJapgolly.officeJs.Word.Style, typingsJapgolly.officeJs.officeJsStrings.Other, typingsJapgolly.officeJs.officeJsStrings.Normal */ Any
+    ): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
+    
+    inline def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTableNestingLevel(value: Double): Self = StObject.set(x, "tableNestingLevel", value.asInstanceOf[js.Any])
+    
+    inline def setTableNestingLevelUndefined: Self = StObject.set(x, "tableNestingLevel", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

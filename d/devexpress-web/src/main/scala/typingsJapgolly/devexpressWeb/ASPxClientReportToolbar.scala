@@ -1,30 +1,50 @@
 package typingsJapgolly.devexpressWeb
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the ASPxClientDocumentViewer control's toolbar.
   */
-@JSGlobal("ASPxClientReportToolbar")
-@js.native
-class ASPxClientReportToolbar () extends ASPxClientControl {
+trait ASPxClientReportToolbar
+  extends StObject
+     with ASPxClientControl {
+  
   /**
     * Provides access to the control template assigned for the specified menu item. A control.
     * @param name A String value, specifying the menu item name.
     */
-  def GetItemTemplateControl(name: String): ASPxClientControl = js.native
+  def GetItemTemplateControl(name: String): ASPxClientControl
 }
-
-/* static members */
-@JSGlobal("ASPxClientReportToolbar")
-@js.native
-object ASPxClientReportToolbar extends js.Object {
-  /**
-    * Converts the specified object to the current object's type. This method is effective when you utilize the Client API IntelliSense feature provided by DevExpress. An ASPxClientReportToolbar object.
-    * @param obj The client object to be type cast. Represents an instance of a DevExpress web control's client object.
-    */
-  def Cast(obj: js.Any): ASPxClientReportToolbar = js.native
+object ASPxClientReportToolbar {
+  
+  inline def apply(
+    AdjustControl: Callback,
+    GetClientVisible: CallbackTo[Boolean],
+    GetHeight: CallbackTo[Double],
+    GetItemTemplateControl: String => ASPxClientControl,
+    GetMainElement: CallbackTo[Any],
+    GetParentControl: CallbackTo[Any],
+    GetVisible: CallbackTo[Boolean],
+    GetWidth: CallbackTo[Double],
+    InCallback: CallbackTo[Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    SendMessageToAssistiveTechnology: String => Callback,
+    SetClientVisible: Boolean => Callback,
+    SetHeight: Double => Callback,
+    SetVisible: Boolean => Callback,
+    SetWidth: Double => Callback,
+    name: String
+  ): ASPxClientReportToolbar = {
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl.toJsFn, GetClientVisible = GetClientVisible.toJsFn, GetHeight = GetHeight.toJsFn, GetItemTemplateControl = js.Any.fromFunction1(GetItemTemplateControl), GetMainElement = GetMainElement.toJsFn, GetParentControl = GetParentControl.toJsFn, GetVisible = GetVisible.toJsFn, GetWidth = GetWidth.toJsFn, InCallback = InCallback.toJsFn, Init = Init.asInstanceOf[js.Any], SendMessageToAssistiveTechnology = js.Any.fromFunction1((t0: String) => SendMessageToAssistiveTechnology(t0).runNow()), SetClientVisible = js.Any.fromFunction1((t0: Boolean) => SetClientVisible(t0).runNow()), SetHeight = js.Any.fromFunction1((t0: Double) => SetHeight(t0).runNow()), SetVisible = js.Any.fromFunction1((t0: Boolean) => SetVisible(t0).runNow()), SetWidth = js.Any.fromFunction1((t0: Double) => SetWidth(t0).runNow()), name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientReportToolbar]
+  }
+  
+  extension [Self <: ASPxClientReportToolbar](x: Self) {
+    
+    inline def setGetItemTemplateControl(value: String => ASPxClientControl): Self = StObject.set(x, "GetItemTemplateControl", js.Any.fromFunction1(value))
+  }
 }
-

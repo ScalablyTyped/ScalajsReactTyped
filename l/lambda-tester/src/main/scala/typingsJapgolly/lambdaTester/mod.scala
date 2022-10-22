@@ -3,43 +3,93 @@ package typingsJapgolly.lambdaTester
 import typingsJapgolly.awsLambda.handlerMod.ClientContext
 import typingsJapgolly.awsLambda.handlerMod.Context
 import typingsJapgolly.awsLambda.handlerMod.Handler
-import typingsJapgolly.std.NonNullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lambda-tester", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  inline def apply[T /* <: Handler[Any, Any] */](handler: T): LambdaTester[T] = ^.asInstanceOf[js.Dynamic].apply(handler.asInstanceOf[js.Any]).asInstanceOf[LambdaTester[T]]
+  
+  @JSImport("lambda-tester", JSImport.Namespace)
   @js.native
-  class LambdaTester[T /* <: Handler[_, _] */] () extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("lambda-tester", "LambdaTester")
+  @js.native
+  open class LambdaTester[T /* <: Handler[Any, Any] */] () extends StObject {
+    
     def clientContext(clientContext: ClientContext): this.type = js.native
+    
     def context(context: Context): this.type = js.native
+    
     def event(event: HandlerEvent[T]): this.type = js.native
-    def expectError(verifier: Verifier[HandlerError[T]]): js.Promise[_] = js.native
-    def expectFail(verifier: Verifier[HandlerError[T]]): js.Promise[_] = js.native
-    def expectReject(verifier: Verifier[HandlerError[T]]): js.Promise[_] = js.native
-    def expectResolve(verifier: Verifier[HandlerResult[T]]): js.Promise[_] = js.native
-    def expectResult(verifier: Verifier[HandlerResult[T]]): js.Promise[_] = js.native
-    def expectSucceed(verifier: Verifier[HandlerResult[T]]): js.Promise[_] = js.native
+    
+    def expectError(verifier: Verifier[HandlerError[T]]): js.Promise[Any] = js.native
+    
+    def expectFail(verifier: Verifier[HandlerError[T]]): js.Promise[Any] = js.native
+    
+    def expectReject(verifier: Verifier[HandlerError[T]]): js.Promise[Any] = js.native
+    
+    def expectResolve(verifier: Verifier[HandlerResult[T]]): js.Promise[Any] = js.native
+    
+    def expectResult(verifier: Verifier[HandlerResult[T]]): js.Promise[Any] = js.native
+    
+    def expectSucceed(verifier: Verifier[HandlerResult[T]]): js.Promise[Any] = js.native
+    
     def identity(cognitoIdentityId: String, cognitoIdentityPoolId: String): this.type = js.native
+    
     def timeout(seconds: Double): this.type = js.native
+    
     def xray(): this.type = js.native
   }
   
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends aws-lambda.aws-lambda/handler.Handler<any, infer TResult> ? std.NonNullable<std.Parameters<aws-lambda.aws-lambda/handler.Callback<TResult>>['0']> : never
+    }}}
+    */
   @js.native
-  trait VerifierFn[S] extends js.Object {
-    def apply(result: S): Unit | js.Promise[Unit] = js.native
-    def apply(result: S, additional: js.Any): Unit | js.Promise[Unit] = js.native
-    def apply(result: S, additional: js.Any, done: js.Function0[js.Object]): Unit = js.native
-  }
+  trait HandlerError[T /* <: Handler[Any, Any] */] extends StObject
   
-  def apply[T /* <: Handler[_, _] */](handler: T): LambdaTester[T] = js.native
-  type HandlerError[T /* <: Handler[_, _] */] = NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<aws-lambda.aws-lambda/handler.Callback<any>>['0'] */ js.Any
-  ]
-  type HandlerEvent[T /* <: Handler[_, _] */] = js.Any
-  type HandlerResult[T /* <: Handler[_, _] */] = js.Any
-  type Verifier[S] = VerifierFn[js.Error | S | String]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends aws-lambda.aws-lambda/handler.Handler<infer TEvent, any> ? TEvent : never
+    }}}
+    */
+  @js.native
+  trait HandlerEvent[T /* <: Handler[Any, Any] */] extends StObject
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends aws-lambda.aws-lambda/handler.Handler<any, infer TResult> ? TResult : never
+    }}}
+    */
+  @js.native
+  trait HandlerResult[T /* <: Handler[Any, Any] */] extends StObject
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S extends lambda-tester.lambda-tester.HandlerError<aws-lambda.aws-lambda/handler.Handler<any, any>> ? S extends string ? lambda-tester.lambda-tester.VerifierFn<string> : S extends std.Error ? lambda-tester.lambda-tester.VerifierFn<std.Error> : never : lambda-tester.lambda-tester.VerifierFn<S>
+    }}}
+    */
+  @js.native
+  trait Verifier[S] extends StObject
+  
+  @js.native
+  trait VerifierFn[S] extends StObject {
+    
+    def apply(result: S): Unit | js.Promise[Unit] = js.native
+    def apply(result: S, additional: Any): Unit | js.Promise[Unit] = js.native
+    def apply(result: S, additional: Any, done: js.Function0[js.Object]): Unit = js.native
+    def apply(result: S, additional: Unit, done: js.Function0[js.Object]): Unit = js.native
+  }
 }
-

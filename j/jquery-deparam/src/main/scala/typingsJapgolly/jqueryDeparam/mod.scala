@@ -1,13 +1,15 @@
 package typingsJapgolly.jqueryDeparam
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jquery-deparam", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(params: String): js.Any = js.native
-  def apply(params: String, coerce: Boolean): js.Any = js.native
+object mod {
+  
+  inline def apply(params: String): Any = ^.asInstanceOf[js.Dynamic].apply(params.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(params: String, coerce: Boolean): Any = (^.asInstanceOf[js.Dynamic].apply(params.asInstanceOf[js.Any], coerce.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  @JSImport("jquery-deparam", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

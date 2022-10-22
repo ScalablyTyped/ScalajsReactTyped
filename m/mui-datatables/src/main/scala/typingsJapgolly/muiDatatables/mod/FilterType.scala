@@ -1,8 +1,8 @@
 package typingsJapgolly.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.muiDatatables.muiDatatablesStrings.dropdown
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.muiDatatables.muiDatatablesStrings.textField
   - typingsJapgolly.muiDatatables.muiDatatablesStrings.custom
 */
-trait FilterType extends js.Object
-
+trait FilterType extends StObject
 object FilterType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def checkbox: typingsJapgolly.muiDatatables.muiDatatablesStrings.checkbox = this.cast("checkbox")
-  @scala.inline
-  def custom: typingsJapgolly.muiDatatables.muiDatatablesStrings.custom = this.cast("custom")
-  @scala.inline
-  def dropdown: typingsJapgolly.muiDatatables.muiDatatablesStrings.dropdown = this.cast("dropdown")
-  @scala.inline
-  def multiselect: typingsJapgolly.muiDatatables.muiDatatablesStrings.multiselect = this.cast("multiselect")
-  @scala.inline
-  def textField: typingsJapgolly.muiDatatables.muiDatatablesStrings.textField = this.cast("textField")
+  
+  inline def checkbox: typingsJapgolly.muiDatatables.muiDatatablesStrings.checkbox = "checkbox".asInstanceOf[typingsJapgolly.muiDatatables.muiDatatablesStrings.checkbox]
+  
+  inline def custom: typingsJapgolly.muiDatatables.muiDatatablesStrings.custom = "custom".asInstanceOf[typingsJapgolly.muiDatatables.muiDatatablesStrings.custom]
+  
+  inline def dropdown: typingsJapgolly.muiDatatables.muiDatatablesStrings.dropdown = "dropdown".asInstanceOf[typingsJapgolly.muiDatatables.muiDatatablesStrings.dropdown]
+  
+  inline def multiselect: typingsJapgolly.muiDatatables.muiDatatablesStrings.multiselect = "multiselect".asInstanceOf[typingsJapgolly.muiDatatables.muiDatatablesStrings.multiselect]
+  
+  inline def textField: typingsJapgolly.muiDatatables.muiDatatablesStrings.textField = "textField".asInstanceOf[typingsJapgolly.muiDatatables.muiDatatablesStrings.textField]
 }
-

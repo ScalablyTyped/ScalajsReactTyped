@@ -1,7 +1,7 @@
 
 # Scala.js typings for nunjucks
 
-Typings are for version 3.1
+Typings are for version 3.2
 
 ## Library description:
 A powerful templating engine with inheritance, asynchronous control, and more (jinja2 inspired)
@@ -10,15 +10,12 @@ A powerful templating engine with inheritance, asynchronous control, and more (j
 | ------------------ | :-------------: |
 | Full name          | nunjucks |
 | Keywords           | template, templating |
-| # releases         | 10 |
-| # dependents       | 1188 |
-| # downloads        | 9427214 |
-| # stars            | 53 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1763481.6666666667 |
+| # stars            | 7791.0 |
 
 ## Links
-- [Homepage](https://github.com/mozilla/nunjucks#readme)
-- [Bugs](https://github.com/mozilla/nunjucks/issues)
-- [Repository](https://github.com/mozilla/nunjucks)
 - [Npm](https://www.npmjs.com/package/nunjucks)
     
 

@@ -1,13 +1,15 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.FieldStringValues")
 @js.native
-class FieldStringValues () extends ClientObject {
-  def get_fieldValues(): js.Any = js.native
+trait FieldStringValues
+  extends StObject
+     with ClientObject {
+  
+  def get_fieldValues(): Any = js.native
+  
   def get_item(fieldName: String): String = js.native
 }
-

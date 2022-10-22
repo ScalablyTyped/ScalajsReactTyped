@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.iconIconMod.IconProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.iconIconMod.IconTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.span
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Icon", JSImport.Namespace)
-@js.native
-object iconMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[IconProps, ComponentState, js.Any] {
-    def this(props: IconProps) = this()
-    def this(props: IconProps, context: js.Any) = this()
-  }
+object iconMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Icons](https://mui.com/components/icons/)
+    * - [Material Icons](https://mui.com/components/material-icons/)
+    *
+    * API:
+    *
+    * - [Icon API](https://mui.com/api/icon/)
+    */
+  @JSImport("@material-ui/core/Icon", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[IconProps]]
+  val default: OverridableComponent[IconTypeMap[js.Object, span]] = js.native
   
+  type _To = OverridableComponent[IconTypeMap[js.Object, span]]
+  
+  /* This means you don't have to write `default`, but can instead just say `iconMod.foo` */
+  override def _to: OverridableComponent[IconTypeMap[js.Object, span]] = default
 }
-

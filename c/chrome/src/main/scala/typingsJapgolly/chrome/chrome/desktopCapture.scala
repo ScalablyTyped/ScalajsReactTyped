@@ -1,9 +1,8 @@
 package typingsJapgolly.chrome.chrome
 
-import typingsJapgolly.chrome.chrome.tabs.Tab
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // DesktopCapture
@@ -13,11 +12,23 @@ import scala.scalajs.js.annotation._
   * Availability: Since Chrome 34.
   * Permissions:  "desktopCapture"
   */
-@JSGlobal("chrome.desktopCapture")
-@js.native
-object desktopCapture extends js.Object {
-  def cancelChooseDesktopMedia(desktopMediaRequestId: Double): Unit = js.native
-  def chooseDesktopMedia(sources: js.Array[String], callback: js.Function1[/* streamId */ String, Unit]): Double = js.native
-  def chooseDesktopMedia(sources: js.Array[String], targetTab: Tab, callback: js.Function1[/* streamId */ String, Unit]): Double = js.native
+object desktopCapture {
+  
+  trait StreamOptions extends StObject {
+    
+    /** True if "audio" is included in parameter sources, and the end user does not uncheck the "Share audio" checkbox. Otherwise false, and in this case, one should not ask for audio stream through getUserMedia call. */
+    var canRequestAudioTrack: Boolean
+  }
+  object StreamOptions {
+    
+    inline def apply(canRequestAudioTrack: Boolean): StreamOptions = {
+      val __obj = js.Dynamic.literal(canRequestAudioTrack = canRequestAudioTrack.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StreamOptions]
+    }
+    
+    extension [Self <: StreamOptions](x: Self) {
+      
+      inline def setCanRequestAudioTrack(value: Boolean): Self = StObject.set(x, "canRequestAudioTrack", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

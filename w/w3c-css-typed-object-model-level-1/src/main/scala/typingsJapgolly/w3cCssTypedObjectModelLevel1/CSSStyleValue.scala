@@ -1,18 +1,7 @@
 package typingsJapgolly.w3cCssTypedObjectModelLevel1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("CSSStyleValue")
-@js.native
-class CSSStyleValue () extends js.Object
-
-/* static members */
-@JSGlobal("CSSStyleValue")
-@js.native
-object CSSStyleValue extends js.Object {
-  def parse(property: String, cssText: String): CSSStyleValue = js.native
-  def parseAll(property: String, cssText: String): js.Array[CSSStyleValue] = js.native
-}
-
+trait CSSStyleValue extends StObject

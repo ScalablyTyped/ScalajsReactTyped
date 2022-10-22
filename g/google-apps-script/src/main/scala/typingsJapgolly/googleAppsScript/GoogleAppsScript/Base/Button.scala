@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Base
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Button extends js.Object
-
+sealed trait Button extends StObject
 /**
   * An enum representing predetermined, localized dialog buttons returned by an alert or PromptResponse.getSelectedButton() to indicate
   * which button in a dialog the user clicked. These values cannot be set; to add buttons to an
@@ -26,38 +24,30 @@ sealed trait Button extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Base.Button")
 @js.native
-object Button extends js.Object {
-  @js.native
-  sealed trait CANCEL extends Button
+object Button extends StObject {
   
   @js.native
-  sealed trait CLOSE extends Button
+  sealed trait CANCEL
+    extends StObject
+       with Button
   
   @js.native
-  sealed trait NO extends Button
+  sealed trait CLOSE
+    extends StObject
+       with Button
   
   @js.native
-  sealed trait OK extends Button
+  sealed trait NO
+    extends StObject
+       with Button
   
   @js.native
-  sealed trait YES extends Button
+  sealed trait OK
+    extends StObject
+       with Button
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Button with Double] = js.native
-  /* 2 */ @js.native
-  object CANCEL extends TopLevel[CANCEL with Double]
-  
-  /* 0 */ @js.native
-  object CLOSE extends TopLevel[CLOSE with Double]
-  
-  /* 4 */ @js.native
-  object NO extends TopLevel[NO with Double]
-  
-  /* 1 */ @js.native
-  object OK extends TopLevel[OK with Double]
-  
-  /* 3 */ @js.native
-  object YES extends TopLevel[YES with Double]
-  
+  @js.native
+  sealed trait YES
+    extends StObject
+       with Button
 }
-

@@ -1,46 +1,60 @@
 package typingsJapgolly.baiduApp.swan
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 媒体-----视频
 trait ChooseVideoOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   /** 前置或者后置摄像头，默认为前后都有，即：['front', 'back'] */
   var camera: js.UndefOr[CameraDevice] = js.undefined
+  
   /** 是否压缩所选的视频源文件，默认值为true，需要压缩 */
   var compressed: js.UndefOr[Boolean] = js.undefined
+  
   /** 拍摄视频最长拍摄时间，单位秒。最长支持60秒 */
   var maxDuration: js.UndefOr[Double] = js.undefined
+  
   /** album 从相册选视频，camera 使用相机拍摄，默认为：['album', 'camera'] */
   var sourceType: js.UndefOr[js.Array[VideoSourceType]] = js.undefined
+  
   /** 接口调用成功，返回视频文件的临时文件路径，详见返回参数说明 */
   @JSName("success")
   var success_ChooseVideoOptions: js.UndefOr[js.Function1[/* res */ VideoData, Unit]] = js.undefined
 }
-
 object ChooseVideoOptions {
-  @scala.inline
-  def apply(
-    camera: CameraDevice = null,
-    complete: /* res */ js.Any => Callback = null,
-    compressed: js.UndefOr[Boolean] = js.undefined,
-    fail: js.Any => Callback = null,
-    maxDuration: Int | Double = null,
-    sourceType: js.Array[VideoSourceType] = null,
-    success: /* res */ VideoData => Callback = null
-  ): ChooseVideoOptions = {
+  
+  inline def apply(): ChooseVideoOptions = {
     val __obj = js.Dynamic.literal()
-    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
-    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.baiduApp.swan.VideoData) => success(t0).runNow()))
     __obj.asInstanceOf[ChooseVideoOptions]
   }
+  
+  extension [Self <: ChooseVideoOptions](x: Self) {
+    
+    inline def setCamera(value: CameraDevice): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    
+    inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+    
+    inline def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
+    
+    inline def setCompressedUndefined: Self = StObject.set(x, "compressed", js.undefined)
+    
+    inline def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
+    
+    inline def setSourceType(value: js.Array[VideoSourceType]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+    
+    inline def setSourceTypeVarargs(value: VideoSourceType*): Self = StObject.set(x, "sourceType", js.Array(value*))
+    
+    inline def setSuccess(value: /* res */ VideoData => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ VideoData) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

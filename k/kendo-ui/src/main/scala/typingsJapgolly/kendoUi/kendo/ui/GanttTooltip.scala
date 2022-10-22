@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GanttTooltip extends js.Object {
+trait GanttTooltip extends StObject {
+  
   var template: js.UndefOr[String | js.Function] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object GanttTooltip {
-  @scala.inline
-  def apply(template: String | js.Function = null, visible: js.UndefOr[Boolean] = js.undefined): GanttTooltip = {
+  
+  inline def apply(): GanttTooltip = {
     val __obj = js.Dynamic.literal()
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttTooltip]
   }
+  
+  extension [Self <: GanttTooltip](x: Self) {
+    
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

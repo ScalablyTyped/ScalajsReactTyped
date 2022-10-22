@@ -1,19 +1,22 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NamespaceImport
-  extends NamedDeclaration
+  extends StObject
+     with NamedDeclaration
      with NamedImportBindings
      with TypeOnlyCompatibleAliasDeclaration {
+  
   @JSName("kind")
-  var kind_NamespaceImport: typingsJapgolly.typescript.mod.SyntaxKind.NamespaceImport = js.native
+  val kind_NamespaceImport: typingsJapgolly.typescript.mod.SyntaxKind.NamespaceImport = js.native
+  
   @JSName("name")
-  var name_NamespaceImport: Identifier = js.native
+  val name_NamespaceImport: Identifier = js.native
+  
   @JSName("parent")
-  var parent_NamespaceImport: ImportClause = js.native
+  val parent_NamespaceImport: ImportClause = js.native
 }
-

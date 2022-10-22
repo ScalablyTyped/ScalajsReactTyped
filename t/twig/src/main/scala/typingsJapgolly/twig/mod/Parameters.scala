@@ -1,55 +1,91 @@
 package typingsJapgolly.twig.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Parameters extends js.Object {
-  var async: js.UndefOr[js.Any] = js.undefined
-  var base: js.UndefOr[js.Any] = js.undefined
-  var blocks: js.UndefOr[js.Any] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
-  var href: js.UndefOr[js.Any] = js.undefined
-  var id: js.UndefOr[js.Any] = js.undefined
+trait Parameters extends StObject {
+  
+  var async: js.UndefOr[Any] = js.undefined
+  
+  var base: js.UndefOr[Any] = js.undefined
+  
+  var blocks: js.UndefOr[Any] = js.undefined
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
+  var href: js.UndefOr[Any] = js.undefined
+  
+  var id: js.UndefOr[Any] = js.undefined
+  
   var load: js.UndefOr[js.Function1[/* template */ Template, Unit]] = js.undefined
-  var macros: js.UndefOr[js.Any] = js.undefined
-  var method: js.UndefOr[js.Any] = js.undefined
-  var name: js.UndefOr[js.Any] = js.undefined
-  var options: js.UndefOr[js.Any] = js.undefined
-  var path: js.UndefOr[js.Any] = js.undefined
+  
+  var macros: js.UndefOr[Any] = js.undefined
+  
+  var method: js.UndefOr[Any] = js.undefined
+  
+  var name: js.UndefOr[Any] = js.undefined
+  
+  var options: js.UndefOr[Any] = js.undefined
+  
+  var path: js.UndefOr[Any] = js.undefined
 }
-
 object Parameters {
-  @scala.inline
-  def apply(
-    async: js.Any = null,
-    base: js.Any = null,
-    blocks: js.Any = null,
-    data: js.Any = null,
-    href: js.Any = null,
-    id: js.Any = null,
-    load: /* template */ Template => Callback = null,
-    macros: js.Any = null,
-    method: js.Any = null,
-    name: js.Any = null,
-    options: js.Any = null,
-    path: js.Any = null
-  ): Parameters = {
+  
+  inline def apply(): Parameters = {
     val __obj = js.Dynamic.literal()
-    if (async != null) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (blocks != null) __obj.updateDynamic("blocks")(blocks.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1((t0: /* template */ typingsJapgolly.twig.mod.Template) => load(t0).runNow()))
-    if (macros != null) __obj.updateDynamic("macros")(macros.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameters]
   }
+  
+  extension [Self <: Parameters](x: Self) {
+    
+    inline def setAsync(value: Any): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    
+    inline def setBase(value: Any): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    
+    inline def setBlocks(value: Any): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+    
+    inline def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setHref(value: Any): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLoad(value: /* template */ Template => Callback): Self = StObject.set(x, "load", js.Any.fromFunction1((t0: /* template */ Template) => value(t0).runNow()))
+    
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    
+    inline def setMacros(value: Any): Self = StObject.set(x, "macros", value.asInstanceOf[js.Any])
+    
+    inline def setMacrosUndefined: Self = StObject.set(x, "macros", js.undefined)
+    
+    inline def setMethod(value: Any): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setPath(value: Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+  }
 }
-

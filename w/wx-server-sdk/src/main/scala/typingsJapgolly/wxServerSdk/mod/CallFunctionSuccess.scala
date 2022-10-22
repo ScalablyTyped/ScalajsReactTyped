@@ -1,21 +1,30 @@
 package typingsJapgolly.wxServerSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CallFunctionSuccess extends js.Object {
+trait CallFunctionSuccess extends StObject {
+  
   var errMsg: String
+  
   var requestID: String
+  
   var result: String
 }
-
 object CallFunctionSuccess {
-  @scala.inline
-  def apply(errMsg: String, requestID: String, result: String): CallFunctionSuccess = {
-    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], requestID = requestID.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
+  inline def apply(errMsg: String, requestID: String, result: String): CallFunctionSuccess = {
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], requestID = requestID.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallFunctionSuccess]
   }
+  
+  extension [Self <: CallFunctionSuccess](x: Self) {
+    
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    
+    inline def setRequestID(value: String): Self = StObject.set(x, "requestID", value.asInstanceOf[js.Any])
+    
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+  }
 }
-

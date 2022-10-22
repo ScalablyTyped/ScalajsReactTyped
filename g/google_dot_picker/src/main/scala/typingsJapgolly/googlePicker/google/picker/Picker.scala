@@ -2,34 +2,45 @@ package typingsJapgolly.googlePicker.google.picker
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Picker extends js.Object {
+trait Picker extends StObject {
+  
   def dispose(): Unit
+  
   def isVisible(): Boolean
-  def setCallback(method: js.Function): Picker
+  
+  def setCallback(method: js.Function1[/* result */ ResponseObject, Unit]): Picker
+  
   def setRelayUrl(url: String): Picker
+  
   def setVisible(visible: Boolean): Picker
 }
-
 object Picker {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     dispose: Callback,
     isVisible: CallbackTo[Boolean],
-    setCallback: js.Function => CallbackTo[Picker],
-    setRelayUrl: String => CallbackTo[Picker],
-    setVisible: Boolean => CallbackTo[Picker]
+    setCallback: js.Function1[/* result */ ResponseObject, Unit] => Picker,
+    setRelayUrl: String => Picker,
+    setVisible: Boolean => Picker
   ): Picker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispose")(dispose.toJsFn)
-    __obj.updateDynamic("isVisible")(isVisible.toJsFn)
-    __obj.updateDynamic("setCallback")(js.Any.fromFunction1((t0: js.Function) => setCallback(t0).runNow()))
-    __obj.updateDynamic("setRelayUrl")(js.Any.fromFunction1((t0: java.lang.String) => setRelayUrl(t0).runNow()))
-    __obj.updateDynamic("setVisible")(js.Any.fromFunction1((t0: scala.Boolean) => setVisible(t0).runNow()))
+    val __obj = js.Dynamic.literal(dispose = dispose.toJsFn, isVisible = isVisible.toJsFn, setCallback = js.Any.fromFunction1(setCallback), setRelayUrl = js.Any.fromFunction1(setRelayUrl), setVisible = js.Any.fromFunction1(setVisible))
     __obj.asInstanceOf[Picker]
   }
+  
+  extension [Self <: Picker](x: Self) {
+    
+    inline def setDispose(value: Callback): Self = StObject.set(x, "dispose", value.toJsFn)
+    
+    inline def setIsVisible(value: CallbackTo[Boolean]): Self = StObject.set(x, "isVisible", value.toJsFn)
+    
+    inline def setSetCallback(value: js.Function1[/* result */ ResponseObject, Unit] => Picker): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
+    
+    inline def setSetRelayUrl(value: String => Picker): Self = StObject.set(x, "setRelayUrl", js.Any.fromFunction1(value))
+    
+    inline def setSetVisible(value: Boolean => Picker): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+  }
 }
-

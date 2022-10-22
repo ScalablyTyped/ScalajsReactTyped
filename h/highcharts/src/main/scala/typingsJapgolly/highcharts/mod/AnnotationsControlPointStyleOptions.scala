@@ -1,23 +1,42 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnnotationsControlPointStyleOptions extends js.Object {
+trait AnnotationsControlPointStyleOptions extends StObject {
+  
+  var cursor: js.UndefOr[String] = js.undefined
+  
   var fill: js.UndefOr[String] = js.undefined
+  
   var stroke: js.UndefOr[String] = js.undefined
+  
   var `stroke-width`: js.UndefOr[Double] = js.undefined
 }
-
 object AnnotationsControlPointStyleOptions {
-  @scala.inline
-  def apply(fill: String = null, stroke: String = null, `stroke-width`: Int | Double = null): AnnotationsControlPointStyleOptions = {
+  
+  inline def apply(): AnnotationsControlPointStyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (`stroke-width` != null) __obj.updateDynamic("stroke-width")(`stroke-width`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsControlPointStyleOptions]
   }
+  
+  extension [Self <: AnnotationsControlPointStyleOptions](x: Self) {
+    
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def `setStroke-width`(value: Double): Self = StObject.set(x, "stroke-width", value.asInstanceOf[js.Any])
+    
+    inline def `setStroke-widthUndefined`: Self = StObject.set(x, "stroke-width", js.undefined)
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+  }
 }
-

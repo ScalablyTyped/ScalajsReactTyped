@@ -1,22 +1,24 @@
 package typingsJapgolly.reactSortableTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchData
-  extends TreeNode
-     with TreePath
-     with TreeIndex {
-  var searchQuery: js.Any
-}
-
-object SearchData {
-  @scala.inline
-  def apply(node: TreeItem, path: NumberOrStringArray, searchQuery: js.Any, treeIndex: Double): SearchData = {
-    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], searchQuery = searchQuery.asInstanceOf[js.Any], treeIndex = treeIndex.asInstanceOf[js.Any])
+trait SearchData[T]
+  extends StObject
+     with NodeData[T] {
   
-    __obj.asInstanceOf[SearchData]
+  var searchQuery: Any
+}
+object SearchData {
+  
+  inline def apply[T](node: TreeItem[T], path: NumberOrStringArray, searchQuery: Any, treeIndex: Double): SearchData[T] = {
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], searchQuery = searchQuery.asInstanceOf[js.Any], treeIndex = treeIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SearchData[T]]
+  }
+  
+  extension [Self <: SearchData[?], T](x: Self & SearchData[T]) {
+    
+    inline def setSearchQuery(value: Any): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
   }
 }
-

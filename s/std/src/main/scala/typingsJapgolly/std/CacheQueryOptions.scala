@@ -1,27 +1,39 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CacheQueryOptions extends js.Object {
+trait CacheQueryOptions extends StObject {
+  
+  /* standard dom */
   var ignoreMethod: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var ignoreSearch: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var ignoreVary: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object CacheQueryOptions {
-  @scala.inline
-  def apply(
-    ignoreMethod: js.UndefOr[scala.Boolean] = js.undefined,
-    ignoreSearch: js.UndefOr[scala.Boolean] = js.undefined,
-    ignoreVary: js.UndefOr[scala.Boolean] = js.undefined
-  ): CacheQueryOptions = {
+  
+  inline def apply(): CacheQueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreMethod)) __obj.updateDynamic("ignoreMethod")(ignoreMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSearch)) __obj.updateDynamic("ignoreSearch")(ignoreSearch.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreVary)) __obj.updateDynamic("ignoreVary")(ignoreVary.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheQueryOptions]
   }
+  
+  extension [Self <: CacheQueryOptions](x: Self) {
+    
+    inline def setIgnoreMethod(value: scala.Boolean): Self = StObject.set(x, "ignoreMethod", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreMethodUndefined: Self = StObject.set(x, "ignoreMethod", js.undefined)
+    
+    inline def setIgnoreSearch(value: scala.Boolean): Self = StObject.set(x, "ignoreSearch", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreSearchUndefined: Self = StObject.set(x, "ignoreSearch", js.undefined)
+    
+    inline def setIgnoreVary(value: scala.Boolean): Self = StObject.set(x, "ignoreVary", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreVaryUndefined: Self = StObject.set(x, "ignoreVary", js.undefined)
+  }
 }
-

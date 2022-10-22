@@ -1,14 +1,17 @@
 package typingsJapgolly.videoJs.mod.default
 
+import typingsJapgolly.videoJs.mod.videojs.VolumeControl
 import typingsJapgolly.videoJs.mod.videojs.VolumeControlOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "VolumeControl")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js", "default.VolumeControl")
 @js.native
-class VolumeControlCls protected ()
-  extends typingsJapgolly.videoJs.mod.videojs.VolumeControl {
+open class VolumeControlCls protected ()
+  extends StObject
+     with VolumeControl {
   /**
     * Creates an instance of this class.
     *
@@ -21,4 +24,3 @@ class VolumeControlCls protected ()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player) = this()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player, options: VolumeControlOptions) = this()
 }
-

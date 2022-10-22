@@ -1,13 +1,15 @@
 package typingsJapgolly.ofe
 
 import typingsJapgolly.ofe.ofeStrings.done
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ofe", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def call(): done = js.native
+object mod {
+  
+  @JSImport("ofe", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def call(): done = ^.asInstanceOf[js.Dynamic].applyDynamic("call")().asInstanceOf[done]
 }
-

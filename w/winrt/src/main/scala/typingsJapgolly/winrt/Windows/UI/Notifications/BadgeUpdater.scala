@@ -1,10 +1,10 @@
 package typingsJapgolly.winrt.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Notifications.BadgeUpdater")
 @js.native
-class BadgeUpdater () extends IBadgeUpdater
-
+trait BadgeUpdater
+  extends StObject
+     with IBadgeUpdater

@@ -1,28 +1,26 @@
 package typingsJapgolly.domMediacaptureRecord
 
-import org.scalajs.dom.raw.DOMException
+import org.scalajs.dom.DOMException
 import typingsJapgolly.std.EventInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaRecorderErrorEventInit extends EventInit {
+trait MediaRecorderErrorEventInit
+  extends StObject
+     with EventInit {
+  
   var error: DOMException
 }
-
 object MediaRecorderErrorEventInit {
-  @scala.inline
-  def apply(
-    error: DOMException,
-    bubbles: js.UndefOr[Boolean] = js.undefined,
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    composed: js.UndefOr[Boolean] = js.undefined
-  ): MediaRecorderErrorEventInit = {
+  
+  inline def apply(error: DOMException): MediaRecorderErrorEventInit = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaRecorderErrorEventInit]
   }
+  
+  extension [Self <: MediaRecorderErrorEventInit](x: Self) {
+    
+    inline def setError(value: DOMException): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,30 +1,41 @@
 package typingsJapgolly.chromecastCafSender.cast.framework
 
 import typingsJapgolly.chrome.chrome.cast.AutoJoinPolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CastOptions extends js.Object {
+trait CastOptions extends StObject {
+  
   var autoJoinPolicy: AutoJoinPolicy
+  
   var language: js.UndefOr[String] = js.undefined
+  
   var receiverApplicationId: js.UndefOr[String] = js.undefined
+  
   var resumeSavedSession: js.UndefOr[Boolean] = js.undefined
 }
-
 object CastOptions {
-  @scala.inline
-  def apply(
-    autoJoinPolicy: AutoJoinPolicy,
-    language: String = null,
-    receiverApplicationId: String = null,
-    resumeSavedSession: js.UndefOr[Boolean] = js.undefined
-  ): CastOptions = {
+  
+  inline def apply(autoJoinPolicy: AutoJoinPolicy): CastOptions = {
     val __obj = js.Dynamic.literal(autoJoinPolicy = autoJoinPolicy.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (receiverApplicationId != null) __obj.updateDynamic("receiverApplicationId")(receiverApplicationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(resumeSavedSession)) __obj.updateDynamic("resumeSavedSession")(resumeSavedSession.asInstanceOf[js.Any])
     __obj.asInstanceOf[CastOptions]
   }
+  
+  extension [Self <: CastOptions](x: Self) {
+    
+    inline def setAutoJoinPolicy(value: AutoJoinPolicy): Self = StObject.set(x, "autoJoinPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setReceiverApplicationId(value: String): Self = StObject.set(x, "receiverApplicationId", value.asInstanceOf[js.Any])
+    
+    inline def setReceiverApplicationIdUndefined: Self = StObject.set(x, "receiverApplicationId", js.undefined)
+    
+    inline def setResumeSavedSession(value: Boolean): Self = StObject.set(x, "resumeSavedSession", value.asInstanceOf[js.Any])
+    
+    inline def setResumeSavedSessionUndefined: Self = StObject.set(x, "resumeSavedSession", js.undefined)
+  }
 }
-

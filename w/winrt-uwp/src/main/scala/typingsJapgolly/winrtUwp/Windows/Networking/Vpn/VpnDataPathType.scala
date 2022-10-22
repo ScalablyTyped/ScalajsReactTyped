@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VpnDataPathType extends js.Object
-
+sealed trait VpnDataPathType extends StObject
 /** VpnDataPathType is not supported and may be altered or unavailable in the future. */
 @JSGlobal("Windows.Networking.Vpn.VpnDataPathType")
 @js.native
-object VpnDataPathType extends js.Object {
-  /** Not supported. */
-  @js.native
-  sealed trait receive extends VpnDataPathType
+object VpnDataPathType extends StObject {
   
   /** Not supported. */
   @js.native
-  sealed trait send extends VpnDataPathType
+  sealed trait receive
+    extends StObject
+       with VpnDataPathType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnDataPathType with Double] = js.native
-  /* 1 */ @js.native
-  object receive extends TopLevel[receive with Double]
-  
-  /* 0 */ @js.native
-  object send extends TopLevel[send with Double]
-  
+  /** Not supported. */
+  @js.native
+  sealed trait send
+    extends StObject
+       with VpnDataPathType
 }
-

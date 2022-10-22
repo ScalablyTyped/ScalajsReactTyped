@@ -1,42 +1,74 @@
 package typingsJapgolly.terser.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MangleOptions extends js.Object {
+trait MangleOptions extends StObject {
+  
   var eval: js.UndefOr[Boolean] = js.undefined
+  
   var keep_classnames: js.UndefOr[Boolean | js.RegExp] = js.undefined
+  
   var keep_fnames: js.UndefOr[Boolean | js.RegExp] = js.undefined
+  
   var module: js.UndefOr[Boolean] = js.undefined
+  
+  var nth_identifier: js.UndefOr[SimpleIdentifierMangler | WeightedIdentifierMangler] = js.undefined
+  
   var properties: js.UndefOr[Boolean | ManglePropertiesOptions] = js.undefined
+  
   var reserved: js.UndefOr[js.Array[String]] = js.undefined
+  
   var safari10: js.UndefOr[Boolean] = js.undefined
+  
   var toplevel: js.UndefOr[Boolean] = js.undefined
 }
-
 object MangleOptions {
-  @scala.inline
-  def apply(
-    eval: js.UndefOr[Boolean] = js.undefined,
-    keep_classnames: Boolean | js.RegExp = null,
-    keep_fnames: Boolean | js.RegExp = null,
-    module: js.UndefOr[Boolean] = js.undefined,
-    properties: Boolean | ManglePropertiesOptions = null,
-    reserved: js.Array[String] = null,
-    safari10: js.UndefOr[Boolean] = js.undefined,
-    toplevel: js.UndefOr[Boolean] = js.undefined
-  ): MangleOptions = {
+  
+  inline def apply(): MangleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(eval)) __obj.updateDynamic("eval")(eval.asInstanceOf[js.Any])
-    if (keep_classnames != null) __obj.updateDynamic("keep_classnames")(keep_classnames.asInstanceOf[js.Any])
-    if (keep_fnames != null) __obj.updateDynamic("keep_fnames")(keep_fnames.asInstanceOf[js.Any])
-    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (reserved != null) __obj.updateDynamic("reserved")(reserved.asInstanceOf[js.Any])
-    if (!js.isUndefined(safari10)) __obj.updateDynamic("safari10")(safari10.asInstanceOf[js.Any])
-    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[MangleOptions]
   }
+  
+  extension [Self <: MangleOptions](x: Self) {
+    
+    inline def setEval(value: Boolean): Self = StObject.set(x, "eval", value.asInstanceOf[js.Any])
+    
+    inline def setEvalUndefined: Self = StObject.set(x, "eval", js.undefined)
+    
+    inline def setKeep_classnames(value: Boolean | js.RegExp): Self = StObject.set(x, "keep_classnames", value.asInstanceOf[js.Any])
+    
+    inline def setKeep_classnamesUndefined: Self = StObject.set(x, "keep_classnames", js.undefined)
+    
+    inline def setKeep_fnames(value: Boolean | js.RegExp): Self = StObject.set(x, "keep_fnames", value.asInstanceOf[js.Any])
+    
+    inline def setKeep_fnamesUndefined: Self = StObject.set(x, "keep_fnames", js.undefined)
+    
+    inline def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    
+    inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+    
+    inline def setNth_identifier(value: SimpleIdentifierMangler | WeightedIdentifierMangler): Self = StObject.set(x, "nth_identifier", value.asInstanceOf[js.Any])
+    
+    inline def setNth_identifierUndefined: Self = StObject.set(x, "nth_identifier", js.undefined)
+    
+    inline def setProperties(value: Boolean | ManglePropertiesOptions): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setReserved(value: js.Array[String]): Self = StObject.set(x, "reserved", value.asInstanceOf[js.Any])
+    
+    inline def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
+    
+    inline def setReservedVarargs(value: String*): Self = StObject.set(x, "reserved", js.Array(value*))
+    
+    inline def setSafari10(value: Boolean): Self = StObject.set(x, "safari10", value.asInstanceOf[js.Any])
+    
+    inline def setSafari10Undefined: Self = StObject.set(x, "safari10", js.undefined)
+    
+    inline def setToplevel(value: Boolean): Self = StObject.set(x, "toplevel", value.asInstanceOf[js.Any])
+    
+    inline def setToplevelUndefined: Self = StObject.set(x, "toplevel", js.undefined)
+  }
 }
-

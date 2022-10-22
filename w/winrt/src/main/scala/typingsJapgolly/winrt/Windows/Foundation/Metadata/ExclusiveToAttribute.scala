@@ -1,12 +1,7 @@
 package typingsJapgolly.winrt.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Foundation.Metadata.ExclusiveToAttribute")
-@js.native
-class ExclusiveToAttribute protected () extends js.Object {
-  def this(typeName: String) = this()
-}
-
+trait ExclusiveToAttribute extends StObject

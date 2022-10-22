@@ -1,24 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client events concerned with node processing, and that allow the event's processing to be passed to the server side.
   */
-@JSGlobal("ASPxClientTreeViewNodeProcessingModeEventArgs")
-@js.native
-class ASPxClientTreeViewNodeProcessingModeEventArgs protected () extends ASPxClientProcessingModeEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientTreeViewNodeProcessingModeEventArgs class with the specified setting.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
-    * @param node An ASPxClientTreeViewNode object representing the node related to the event.
-    */
-  def this(processOnServer: Boolean, node: ASPxClientTreeViewNode) = this()
+trait ASPxClientTreeViewNodeProcessingModeEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
+  
   /**
     * Gets a node object related to the event.
     */
-  var node: ASPxClientTreeViewNode = js.native
+  var node: ASPxClientTreeViewNode
 }
-
+object ASPxClientTreeViewNodeProcessingModeEventArgs {
+  
+  inline def apply(node: ASPxClientTreeViewNode, processOnServer: Boolean): ASPxClientTreeViewNodeProcessingModeEventArgs = {
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientTreeViewNodeProcessingModeEventArgs]
+  }
+  
+  extension [Self <: ASPxClientTreeViewNodeProcessingModeEventArgs](x: Self) {
+    
+    inline def setNode(value: ASPxClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+  }
+}

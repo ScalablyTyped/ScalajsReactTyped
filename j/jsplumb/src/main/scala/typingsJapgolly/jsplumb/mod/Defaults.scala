@@ -1,61 +1,107 @@
 package typingsJapgolly.jsplumb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Defaults extends js.Object {
+trait Defaults extends StObject {
+  
   var Anchor: js.UndefOr[AnchorSpec] = js.undefined
+  
   var Anchors: js.UndefOr[js.Tuple2[AnchorSpec, AnchorSpec]] = js.undefined
+  
   var ConnectionOverlays: js.UndefOr[js.Array[OverlaySpec]] = js.undefined
+  
   var ConnectionsDetachable: js.UndefOr[Boolean] = js.undefined
+  
   var Connector: js.UndefOr[ConnectorSpec] = js.undefined
-  var Container: js.UndefOr[js.Any] = js.undefined
-   // string(selector or id) or element
+  
+  var Container: js.UndefOr[Any] = js.undefined
+  
+  // string(selector or id) or element
   var DragOptions: js.UndefOr[typingsJapgolly.jsplumb.mod.DragOptions] = js.undefined
+  
   var Endpoint: js.UndefOr[EndpointSpec] = js.undefined
+  
   var EndpointHoverStyle: js.UndefOr[PaintStyle] = js.undefined
+  
   var EndpointStyle: js.UndefOr[PaintStyle] = js.undefined
+  
   var Endpoints: js.UndefOr[js.Tuple2[EndpointSpec, EndpointSpec]] = js.undefined
+  
   var HoverPaintStyle: js.UndefOr[PaintStyle] = js.undefined
+  
   var PaintStyle: js.UndefOr[typingsJapgolly.jsplumb.mod.PaintStyle] = js.undefined
+  
   var ReattachConnections: js.UndefOr[Boolean] = js.undefined
 }
-
 object Defaults {
-  @scala.inline
-  def apply(
-    Anchor: AnchorSpec = null,
-    Anchors: js.Tuple2[AnchorSpec, AnchorSpec] = null,
-    ConnectionOverlays: js.Array[OverlaySpec] = null,
-    ConnectionsDetachable: js.UndefOr[Boolean] = js.undefined,
-    Connector: ConnectorSpec = null,
-    Container: js.Any = null,
-    DragOptions: DragOptions = null,
-    Endpoint: EndpointSpec = null,
-    EndpointHoverStyle: PaintStyle = null,
-    EndpointStyle: PaintStyle = null,
-    Endpoints: js.Tuple2[EndpointSpec, EndpointSpec] = null,
-    HoverPaintStyle: PaintStyle = null,
-    PaintStyle: PaintStyle = null,
-    ReattachConnections: js.UndefOr[Boolean] = js.undefined
-  ): Defaults = {
+  
+  inline def apply(): Defaults = {
     val __obj = js.Dynamic.literal()
-    if (Anchor != null) __obj.updateDynamic("Anchor")(Anchor.asInstanceOf[js.Any])
-    if (Anchors != null) __obj.updateDynamic("Anchors")(Anchors.asInstanceOf[js.Any])
-    if (ConnectionOverlays != null) __obj.updateDynamic("ConnectionOverlays")(ConnectionOverlays.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConnectionsDetachable)) __obj.updateDynamic("ConnectionsDetachable")(ConnectionsDetachable.asInstanceOf[js.Any])
-    if (Connector != null) __obj.updateDynamic("Connector")(Connector.asInstanceOf[js.Any])
-    if (Container != null) __obj.updateDynamic("Container")(Container.asInstanceOf[js.Any])
-    if (DragOptions != null) __obj.updateDynamic("DragOptions")(DragOptions.asInstanceOf[js.Any])
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (EndpointHoverStyle != null) __obj.updateDynamic("EndpointHoverStyle")(EndpointHoverStyle.asInstanceOf[js.Any])
-    if (EndpointStyle != null) __obj.updateDynamic("EndpointStyle")(EndpointStyle.asInstanceOf[js.Any])
-    if (Endpoints != null) __obj.updateDynamic("Endpoints")(Endpoints.asInstanceOf[js.Any])
-    if (HoverPaintStyle != null) __obj.updateDynamic("HoverPaintStyle")(HoverPaintStyle.asInstanceOf[js.Any])
-    if (PaintStyle != null) __obj.updateDynamic("PaintStyle")(PaintStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReattachConnections)) __obj.updateDynamic("ReattachConnections")(ReattachConnections.asInstanceOf[js.Any])
     __obj.asInstanceOf[Defaults]
   }
+  
+  extension [Self <: Defaults](x: Self) {
+    
+    inline def setAnchor(value: AnchorSpec): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
+    
+    inline def setAnchorUndefined: Self = StObject.set(x, "Anchor", js.undefined)
+    
+    inline def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = StObject.set(x, "Anchor", js.Array(value*))
+    
+    inline def setAnchors(value: js.Tuple2[AnchorSpec, AnchorSpec]): Self = StObject.set(x, "Anchors", value.asInstanceOf[js.Any])
+    
+    inline def setAnchorsUndefined: Self = StObject.set(x, "Anchors", js.undefined)
+    
+    inline def setConnectionOverlays(value: js.Array[OverlaySpec]): Self = StObject.set(x, "ConnectionOverlays", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionOverlaysUndefined: Self = StObject.set(x, "ConnectionOverlays", js.undefined)
+    
+    inline def setConnectionOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "ConnectionOverlays", js.Array(value*))
+    
+    inline def setConnectionsDetachable(value: Boolean): Self = StObject.set(x, "ConnectionsDetachable", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionsDetachableUndefined: Self = StObject.set(x, "ConnectionsDetachable", js.undefined)
+    
+    inline def setConnector(value: ConnectorSpec): Self = StObject.set(x, "Connector", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorUndefined: Self = StObject.set(x, "Connector", js.undefined)
+    
+    inline def setContainer(value: Any): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "Container", js.undefined)
+    
+    inline def setDragOptions(value: DragOptions): Self = StObject.set(x, "DragOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDragOptionsUndefined: Self = StObject.set(x, "DragOptions", js.undefined)
+    
+    inline def setEndpoint(value: EndpointSpec): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointHoverStyle(value: PaintStyle): Self = StObject.set(x, "EndpointHoverStyle", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointHoverStyleUndefined: Self = StObject.set(x, "EndpointHoverStyle", js.undefined)
+    
+    inline def setEndpointStyle(value: PaintStyle): Self = StObject.set(x, "EndpointStyle", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointStyleUndefined: Self = StObject.set(x, "EndpointStyle", js.undefined)
+    
+    inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+    
+    inline def setEndpoints(value: js.Tuple2[EndpointSpec, EndpointSpec]): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
+    
+    inline def setHoverPaintStyle(value: PaintStyle): Self = StObject.set(x, "HoverPaintStyle", value.asInstanceOf[js.Any])
+    
+    inline def setHoverPaintStyleUndefined: Self = StObject.set(x, "HoverPaintStyle", js.undefined)
+    
+    inline def setPaintStyle(value: PaintStyle): Self = StObject.set(x, "PaintStyle", value.asInstanceOf[js.Any])
+    
+    inline def setPaintStyleUndefined: Self = StObject.set(x, "PaintStyle", js.undefined)
+    
+    inline def setReattachConnections(value: Boolean): Self = StObject.set(x, "ReattachConnections", value.asInstanceOf[js.Any])
+    
+    inline def setReattachConnectionsUndefined: Self = StObject.set(x, "ReattachConnections", js.undefined)
+  }
 }
-

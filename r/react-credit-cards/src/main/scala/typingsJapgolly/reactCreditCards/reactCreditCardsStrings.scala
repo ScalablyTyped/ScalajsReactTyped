@@ -1,30 +1,33 @@
 package typingsJapgolly.reactCreditCards
 
 import typingsJapgolly.reactCreditCards.mod.Focused
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactCreditCardsStrings {
-  @js.native
-  sealed trait cvc extends Focused
   
   @js.native
-  sealed trait expiry extends Focused
+  sealed trait cvc
+    extends StObject
+       with Focused
+  inline def cvc: cvc = "cvc".asInstanceOf[cvc]
   
   @js.native
-  sealed trait name extends Focused
+  sealed trait expiry
+    extends StObject
+       with Focused
+  inline def expiry: expiry = "expiry".asInstanceOf[expiry]
   
   @js.native
-  sealed trait number extends Focused
+  sealed trait name
+    extends StObject
+       with Focused
+  inline def name: name = "name".asInstanceOf[name]
   
-  @scala.inline
-  def cvc: cvc = "cvc".asInstanceOf[cvc]
-  @scala.inline
-  def expiry: expiry = "expiry".asInstanceOf[expiry]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
+  @js.native
+  sealed trait number
+    extends StObject
+       with Focused
+  inline def number: number = "number".asInstanceOf[number]
 }
-

@@ -10,10 +10,10 @@ A react.js reCAPTCHA for Google
 | ------------------ | :-------------: |
 | Full name          | react-recaptcha |
 | Keywords           | react, react-component, reCAPTCHA, component |
-| # releases         | 6 |
-| # dependents       | 14 |
-| # downloads        | 1556684 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 123252.33333333333 |
+| # stars            | 620.0 |
 
 ## Links
 - [Homepage](https://github.com/appleboy/react-recaptcha)

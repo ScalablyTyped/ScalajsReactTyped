@@ -1,314 +1,252 @@
 package typingsJapgolly.qtip2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object qtip2Strings {
-  @js.native
-  sealed trait api extends js.Object
   
   @js.native
-  sealed trait blur extends js.Object
+  sealed trait api extends StObject
+  inline def api: api = "api".asInstanceOf[api]
   
   @js.native
-  sealed trait content extends js.Object
+  sealed trait blur extends StObject
+  inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
-  sealed trait contentDotattr extends js.Object
+  sealed trait content extends StObject
+  inline def content: content = "content".asInstanceOf[content]
   
   @js.native
-  sealed trait contentDotbutton extends js.Object
+  sealed trait contentDotattr extends StObject
+  inline def contentDotattr: contentDotattr = "content.attr".asInstanceOf[contentDotattr]
   
   @js.native
-  sealed trait contentDottext extends js.Object
+  sealed trait contentDotbutton extends StObject
+  inline def contentDotbutton: contentDotbutton = "content.button".asInstanceOf[contentDotbutton]
   
   @js.native
-  sealed trait contentDottitle extends js.Object
+  sealed trait contentDottext extends StObject
+  inline def contentDottext: contentDottext = "content.text".asInstanceOf[contentDottext]
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait contentDottitle extends StObject
+  inline def contentDottitle: contentDottitle = "content.title".asInstanceOf[contentDottitle]
   
   @js.native
-  sealed trait disable extends js.Object
+  sealed trait destroy extends StObject
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait enable extends js.Object
+  sealed trait disable extends StObject
+  inline def disable: disable = "disable".asInstanceOf[disable]
   
   @js.native
-  sealed trait events extends js.Object
+  sealed trait enable extends StObject
+  inline def enable: enable = "enable".asInstanceOf[enable]
   
   @js.native
-  sealed trait eventsDotblur extends js.Object
+  sealed trait events extends StObject
+  inline def events: events = "events".asInstanceOf[events]
   
   @js.native
-  sealed trait eventsDotfocus extends js.Object
+  sealed trait eventsDotblur extends StObject
+  inline def eventsDotblur: eventsDotblur = "events.blur".asInstanceOf[eventsDotblur]
   
   @js.native
-  sealed trait eventsDothidden extends js.Object
+  sealed trait eventsDotfocus extends StObject
+  inline def eventsDotfocus: eventsDotfocus = "events.focus".asInstanceOf[eventsDotfocus]
   
   @js.native
-  sealed trait eventsDothide extends js.Object
+  sealed trait eventsDothidden extends StObject
+  inline def eventsDothidden: eventsDothidden = "events.hidden".asInstanceOf[eventsDothidden]
   
   @js.native
-  sealed trait eventsDotmove extends js.Object
+  sealed trait eventsDothide extends StObject
+  inline def eventsDothide: eventsDothide = "events.hide".asInstanceOf[eventsDothide]
   
   @js.native
-  sealed trait eventsDotrender extends js.Object
+  sealed trait eventsDotmove extends StObject
+  inline def eventsDotmove: eventsDotmove = "events.move".asInstanceOf[eventsDotmove]
   
   @js.native
-  sealed trait eventsDotshow extends js.Object
+  sealed trait eventsDotrender extends StObject
+  inline def eventsDotrender: eventsDotrender = "events.render".asInstanceOf[eventsDotrender]
   
   @js.native
-  sealed trait eventsDottoggle extends js.Object
+  sealed trait eventsDotshow extends StObject
+  inline def eventsDotshow: eventsDotshow = "events.show".asInstanceOf[eventsDotshow]
   
   @js.native
-  sealed trait eventsDotvisible extends js.Object
+  sealed trait eventsDottoggle extends StObject
+  inline def eventsDottoggle: eventsDottoggle = "events.toggle".asInstanceOf[eventsDottoggle]
   
   @js.native
-  sealed trait focus extends js.Object
+  sealed trait eventsDotvisible extends StObject
+  inline def eventsDotvisible: eventsDotvisible = "events.visible".asInstanceOf[eventsDotvisible]
   
   @js.native
-  sealed trait hide extends js.Object
+  sealed trait focus extends StObject
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait hideDotdelay extends js.Object
+  sealed trait hide extends StObject
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
-  sealed trait hideDotdistance extends js.Object
+  sealed trait hideDotdelay extends StObject
+  inline def hideDotdelay: hideDotdelay = "hide.delay".asInstanceOf[hideDotdelay]
   
   @js.native
-  sealed trait hideDoteffect extends js.Object
+  sealed trait hideDotdistance extends StObject
+  inline def hideDotdistance: hideDotdistance = "hide.distance".asInstanceOf[hideDotdistance]
   
   @js.native
-  sealed trait hideDotevent extends js.Object
+  sealed trait hideDoteffect extends StObject
+  inline def hideDoteffect: hideDoteffect = "hide.effect".asInstanceOf[hideDoteffect]
   
   @js.native
-  sealed trait hideDotfixed extends js.Object
+  sealed trait hideDotevent extends StObject
+  inline def hideDotevent: hideDotevent = "hide.event".asInstanceOf[hideDotevent]
   
   @js.native
-  sealed trait hideDotinactive extends js.Object
+  sealed trait hideDotfixed extends StObject
+  inline def hideDotfixed: hideDotfixed = "hide.fixed".asInstanceOf[hideDotfixed]
   
   @js.native
-  sealed trait hideDotleave extends js.Object
+  sealed trait hideDotinactive extends StObject
+  inline def hideDotinactive: hideDotinactive = "hide.inactive".asInstanceOf[hideDotinactive]
   
   @js.native
-  sealed trait hideDottarget extends js.Object
+  sealed trait hideDotleave extends StObject
+  inline def hideDotleave: hideDotleave = "hide.leave".asInstanceOf[hideDotleave]
   
   @js.native
-  sealed trait id extends js.Object
+  sealed trait hideDottarget extends StObject
+  inline def hideDottarget: hideDottarget = "hide.target".asInstanceOf[hideDottarget]
   
   @js.native
-  sealed trait metadata extends js.Object
+  sealed trait id extends StObject
+  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
-  sealed trait option extends js.Object
+  sealed trait metadata extends StObject
+  inline def metadata: metadata = "metadata".asInstanceOf[metadata]
   
   @js.native
-  sealed trait overwrite extends js.Object
+  sealed trait option extends StObject
+  inline def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait position extends js.Object
+  sealed trait overwrite extends StObject
+  inline def overwrite: overwrite = "overwrite".asInstanceOf[overwrite]
   
   @js.native
-  sealed trait positionDotadjust extends js.Object
+  sealed trait position extends StObject
+  inline def position: position = "position".asInstanceOf[position]
   
   @js.native
-  sealed trait positionDotat extends js.Object
+  sealed trait positionDotadjust extends StObject
+  inline def positionDotadjust: positionDotadjust = "position.adjust".asInstanceOf[positionDotadjust]
   
   @js.native
-  sealed trait positionDotcontainer extends js.Object
+  sealed trait positionDotat extends StObject
+  inline def positionDotat: positionDotat = "position.at".asInstanceOf[positionDotat]
   
   @js.native
-  sealed trait positionDoteffect extends js.Object
+  sealed trait positionDotcontainer extends StObject
+  inline def positionDotcontainer: positionDotcontainer = "position.container".asInstanceOf[positionDotcontainer]
   
   @js.native
-  sealed trait positionDotmy extends js.Object
+  sealed trait positionDoteffect extends StObject
+  inline def positionDoteffect: positionDoteffect = "position.effect".asInstanceOf[positionDoteffect]
   
   @js.native
-  sealed trait positionDottarget extends js.Object
+  sealed trait positionDotmy extends StObject
+  inline def positionDotmy: positionDotmy = "position.my".asInstanceOf[positionDotmy]
   
   @js.native
-  sealed trait positionDotviewport extends js.Object
+  sealed trait positionDottarget extends StObject
+  inline def positionDottarget: positionDottarget = "position.target".asInstanceOf[positionDottarget]
   
   @js.native
-  sealed trait prerender extends js.Object
+  sealed trait positionDotviewport extends StObject
+  inline def positionDotviewport: positionDotviewport = "position.viewport".asInstanceOf[positionDotviewport]
   
   @js.native
-  sealed trait reposition extends js.Object
+  sealed trait prerender extends StObject
+  inline def prerender: prerender = "prerender".asInstanceOf[prerender]
   
   @js.native
-  sealed trait show extends js.Object
+  sealed trait reposition extends StObject
+  inline def reposition: reposition = "reposition".asInstanceOf[reposition]
   
   @js.native
-  sealed trait showDotdelay extends js.Object
+  sealed trait show extends StObject
+  inline def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait showDoteffect extends js.Object
+  sealed trait showDotdelay extends StObject
+  inline def showDotdelay: showDotdelay = "show.delay".asInstanceOf[showDotdelay]
   
   @js.native
-  sealed trait showDotevent extends js.Object
+  sealed trait showDoteffect extends StObject
+  inline def showDoteffect: showDoteffect = "show.effect".asInstanceOf[showDoteffect]
   
   @js.native
-  sealed trait showDotmodal extends js.Object
+  sealed trait showDotevent extends StObject
+  inline def showDotevent: showDotevent = "show.event".asInstanceOf[showDotevent]
   
   @js.native
-  sealed trait showDotready extends js.Object
+  sealed trait showDotmodal extends StObject
+  inline def showDotmodal: showDotmodal = "show.modal".asInstanceOf[showDotmodal]
   
   @js.native
-  sealed trait showDotsolo extends js.Object
+  sealed trait showDotready extends StObject
+  inline def showDotready: showDotready = "show.ready".asInstanceOf[showDotready]
   
   @js.native
-  sealed trait showDottarget extends js.Object
+  sealed trait showDotsolo extends StObject
+  inline def showDotsolo: showDotsolo = "show.solo".asInstanceOf[showDotsolo]
   
   @js.native
-  sealed trait style extends js.Object
+  sealed trait showDottarget extends StObject
+  inline def showDottarget: showDottarget = "show.target".asInstanceOf[showDottarget]
   
   @js.native
-  sealed trait styleDotclasses extends js.Object
+  sealed trait style extends StObject
+  inline def style: style = "style".asInstanceOf[style]
   
   @js.native
-  sealed trait styleDotdef extends js.Object
+  sealed trait styleDotclasses extends StObject
+  inline def styleDotclasses: styleDotclasses = "style.classes".asInstanceOf[styleDotclasses]
   
   @js.native
-  sealed trait styleDotheight extends js.Object
+  sealed trait styleDotdef extends StObject
+  inline def styleDotdef: styleDotdef = "style.def".asInstanceOf[styleDotdef]
   
   @js.native
-  sealed trait styleDottip extends js.Object
+  sealed trait styleDotheight extends StObject
+  inline def styleDotheight: styleDotheight = "style.height".asInstanceOf[styleDotheight]
   
   @js.native
-  sealed trait styleDotwidget extends js.Object
+  sealed trait styleDottip extends StObject
+  inline def styleDottip: styleDottip = "style.tip".asInstanceOf[styleDottip]
   
   @js.native
-  sealed trait styleDotwidth extends js.Object
+  sealed trait styleDotwidget extends StObject
+  inline def styleDotwidget: styleDotwidget = "style.widget".asInstanceOf[styleDotwidget]
   
   @js.native
-  sealed trait suppress extends js.Object
+  sealed trait styleDotwidth extends StObject
+  inline def styleDotwidth: styleDotwidth = "style.width".asInstanceOf[styleDotwidth]
   
   @js.native
-  sealed trait toggle extends js.Object
+  sealed trait suppress extends StObject
+  inline def suppress: suppress = "suppress".asInstanceOf[suppress]
   
-  @scala.inline
-  def api: api = "api".asInstanceOf[api]
-  @scala.inline
-  def blur: blur = "blur".asInstanceOf[blur]
-  @scala.inline
-  def content: content = "content".asInstanceOf[content]
-  @scala.inline
-  def contentDotattr: contentDotattr = "content.attr".asInstanceOf[contentDotattr]
-  @scala.inline
-  def contentDotbutton: contentDotbutton = "content.button".asInstanceOf[contentDotbutton]
-  @scala.inline
-  def contentDottext: contentDottext = "content.text".asInstanceOf[contentDottext]
-  @scala.inline
-  def contentDottitle: contentDottitle = "content.title".asInstanceOf[contentDottitle]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def disable: disable = "disable".asInstanceOf[disable]
-  @scala.inline
-  def enable: enable = "enable".asInstanceOf[enable]
-  @scala.inline
-  def events: events = "events".asInstanceOf[events]
-  @scala.inline
-  def eventsDotblur: eventsDotblur = "events.blur".asInstanceOf[eventsDotblur]
-  @scala.inline
-  def eventsDotfocus: eventsDotfocus = "events.focus".asInstanceOf[eventsDotfocus]
-  @scala.inline
-  def eventsDothidden: eventsDothidden = "events.hidden".asInstanceOf[eventsDothidden]
-  @scala.inline
-  def eventsDothide: eventsDothide = "events.hide".asInstanceOf[eventsDothide]
-  @scala.inline
-  def eventsDotmove: eventsDotmove = "events.move".asInstanceOf[eventsDotmove]
-  @scala.inline
-  def eventsDotrender: eventsDotrender = "events.render".asInstanceOf[eventsDotrender]
-  @scala.inline
-  def eventsDotshow: eventsDotshow = "events.show".asInstanceOf[eventsDotshow]
-  @scala.inline
-  def eventsDottoggle: eventsDottoggle = "events.toggle".asInstanceOf[eventsDottoggle]
-  @scala.inline
-  def eventsDotvisible: eventsDotvisible = "events.visible".asInstanceOf[eventsDotvisible]
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def hideDotdelay: hideDotdelay = "hide.delay".asInstanceOf[hideDotdelay]
-  @scala.inline
-  def hideDotdistance: hideDotdistance = "hide.distance".asInstanceOf[hideDotdistance]
-  @scala.inline
-  def hideDoteffect: hideDoteffect = "hide.effect".asInstanceOf[hideDoteffect]
-  @scala.inline
-  def hideDotevent: hideDotevent = "hide.event".asInstanceOf[hideDotevent]
-  @scala.inline
-  def hideDotfixed: hideDotfixed = "hide.fixed".asInstanceOf[hideDotfixed]
-  @scala.inline
-  def hideDotinactive: hideDotinactive = "hide.inactive".asInstanceOf[hideDotinactive]
-  @scala.inline
-  def hideDotleave: hideDotleave = "hide.leave".asInstanceOf[hideDotleave]
-  @scala.inline
-  def hideDottarget: hideDottarget = "hide.target".asInstanceOf[hideDottarget]
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
-  @scala.inline
-  def metadata: metadata = "metadata".asInstanceOf[metadata]
-  @scala.inline
-  def option: option = "option".asInstanceOf[option]
-  @scala.inline
-  def overwrite: overwrite = "overwrite".asInstanceOf[overwrite]
-  @scala.inline
-  def position: position = "position".asInstanceOf[position]
-  @scala.inline
-  def positionDotadjust: positionDotadjust = "position.adjust".asInstanceOf[positionDotadjust]
-  @scala.inline
-  def positionDotat: positionDotat = "position.at".asInstanceOf[positionDotat]
-  @scala.inline
-  def positionDotcontainer: positionDotcontainer = "position.container".asInstanceOf[positionDotcontainer]
-  @scala.inline
-  def positionDoteffect: positionDoteffect = "position.effect".asInstanceOf[positionDoteffect]
-  @scala.inline
-  def positionDotmy: positionDotmy = "position.my".asInstanceOf[positionDotmy]
-  @scala.inline
-  def positionDottarget: positionDottarget = "position.target".asInstanceOf[positionDottarget]
-  @scala.inline
-  def positionDotviewport: positionDotviewport = "position.viewport".asInstanceOf[positionDotviewport]
-  @scala.inline
-  def prerender: prerender = "prerender".asInstanceOf[prerender]
-  @scala.inline
-  def reposition: reposition = "reposition".asInstanceOf[reposition]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
-  @scala.inline
-  def showDotdelay: showDotdelay = "show.delay".asInstanceOf[showDotdelay]
-  @scala.inline
-  def showDoteffect: showDoteffect = "show.effect".asInstanceOf[showDoteffect]
-  @scala.inline
-  def showDotevent: showDotevent = "show.event".asInstanceOf[showDotevent]
-  @scala.inline
-  def showDotmodal: showDotmodal = "show.modal".asInstanceOf[showDotmodal]
-  @scala.inline
-  def showDotready: showDotready = "show.ready".asInstanceOf[showDotready]
-  @scala.inline
-  def showDotsolo: showDotsolo = "show.solo".asInstanceOf[showDotsolo]
-  @scala.inline
-  def showDottarget: showDottarget = "show.target".asInstanceOf[showDottarget]
-  @scala.inline
-  def style: style = "style".asInstanceOf[style]
-  @scala.inline
-  def styleDotclasses: styleDotclasses = "style.classes".asInstanceOf[styleDotclasses]
-  @scala.inline
-  def styleDotdef: styleDotdef = "style.def".asInstanceOf[styleDotdef]
-  @scala.inline
-  def styleDotheight: styleDotheight = "style.height".asInstanceOf[styleDotheight]
-  @scala.inline
-  def styleDottip: styleDottip = "style.tip".asInstanceOf[styleDottip]
-  @scala.inline
-  def styleDotwidget: styleDotwidget = "style.widget".asInstanceOf[styleDotwidget]
-  @scala.inline
-  def styleDotwidth: styleDotwidth = "style.width".asInstanceOf[styleDotwidth]
-  @scala.inline
-  def suppress: suppress = "suppress".asInstanceOf[suppress]
-  @scala.inline
-  def toggle: toggle = "toggle".asInstanceOf[toggle]
+  @js.native
+  sealed trait toggle extends StObject
+  inline def toggle: toggle = "toggle".asInstanceOf[toggle]
 }
-

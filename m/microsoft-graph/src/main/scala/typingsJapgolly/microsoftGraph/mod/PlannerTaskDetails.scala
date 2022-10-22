@@ -1,39 +1,59 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlannerTaskDetails extends Entity {
+trait PlannerTaskDetails
+  extends StObject
+     with Entity {
+  
   // The collection of checklist items on the task.
-  var checklist: js.UndefOr[PlannerChecklistItems] = js.undefined
-  // Description of the task
-  var description: js.UndefOr[String] = js.undefined
+  var checklist: js.UndefOr[NullableOption[PlannerChecklistItems]] = js.undefined
+  
+  // Description of the task.
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * This sets the type of preview that shows up on the task. The possible values are: automatic, noPreview, checklist,
     * description, reference. When set to automatic the displayed preview is chosen by the app viewing the task.
     */
-  var previewType: js.UndefOr[PlannerPreviewType] = js.undefined
+  var previewType: js.UndefOr[NullableOption[PlannerPreviewType]] = js.undefined
+  
   // The collection of references on the task.
-  var references: js.UndefOr[PlannerExternalReferences] = js.undefined
+  var references: js.UndefOr[NullableOption[PlannerExternalReferences]] = js.undefined
 }
-
 object PlannerTaskDetails {
-  @scala.inline
-  def apply(
-    checklist: PlannerChecklistItems = null,
-    description: String = null,
-    id: String = null,
-    previewType: PlannerPreviewType = null,
-    references: PlannerExternalReferences = null
-  ): PlannerTaskDetails = {
+  
+  inline def apply(): PlannerTaskDetails = {
     val __obj = js.Dynamic.literal()
-    if (checklist != null) __obj.updateDynamic("checklist")(checklist.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (previewType != null) __obj.updateDynamic("previewType")(previewType.asInstanceOf[js.Any])
-    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerTaskDetails]
   }
+  
+  extension [Self <: PlannerTaskDetails](x: Self) {
+    
+    inline def setChecklist(value: NullableOption[PlannerChecklistItems]): Self = StObject.set(x, "checklist", value.asInstanceOf[js.Any])
+    
+    inline def setChecklistNull: Self = StObject.set(x, "checklist", null)
+    
+    inline def setChecklistUndefined: Self = StObject.set(x, "checklist", js.undefined)
+    
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setPreviewType(value: NullableOption[PlannerPreviewType]): Self = StObject.set(x, "previewType", value.asInstanceOf[js.Any])
+    
+    inline def setPreviewTypeNull: Self = StObject.set(x, "previewType", null)
+    
+    inline def setPreviewTypeUndefined: Self = StObject.set(x, "previewType", js.undefined)
+    
+    inline def setReferences(value: NullableOption[PlannerExternalReferences]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    
+    inline def setReferencesNull: Self = StObject.set(x, "references", null)
+    
+    inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
+  }
 }
-

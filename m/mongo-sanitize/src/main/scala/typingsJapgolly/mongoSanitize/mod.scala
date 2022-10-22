@@ -1,12 +1,14 @@
 package typingsJapgolly.mongoSanitize
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mongo-sanitize", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[T](v: T): T = js.native
+object mod {
+  
+  inline def apply[T](v: T): T = ^.asInstanceOf[js.Dynamic].apply(v.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  @JSImport("mongo-sanitize", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-lite
 
-Typings are for version 0.6.0
+Typings are for version 0.9.2
 
 ## Library description:
 A tiny javascript type testing tool
@@ -9,11 +9,11 @@ A tiny javascript type testing tool
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-lite |
-| Keywords           | type, test |
-| # releases         | 12 |
-| # dependents       | 16 |
-| # downloads        | 1380411 |
-| # stars            | 0 |
+| Keywords           | type, check, assertion, validation, test, typeguard, typeof, instanceof |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 858645.0 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/gilbarbara/is-lite#readme)

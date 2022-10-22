@@ -1,21 +1,36 @@
 package typingsJapgolly.hapiHapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AuthSettings extends js.Object {
+trait AuthSettings extends StObject {
+  
   var access: js.UndefOr[js.Array[AccessSetting]] = js.undefined
+  
   var mode: AuthMode
+  
   var strategies: js.Array[String]
 }
-
 object AuthSettings {
-  @scala.inline
-  def apply(mode: AuthMode, strategies: js.Array[String], access: js.Array[AccessSetting] = null): AuthSettings = {
+  
+  inline def apply(mode: AuthMode, strategies: js.Array[String]): AuthSettings = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], strategies = strategies.asInstanceOf[js.Any])
-    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthSettings]
   }
+  
+  extension [Self <: AuthSettings](x: Self) {
+    
+    inline def setAccess(value: js.Array[AccessSetting]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    
+    inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+    
+    inline def setAccessVarargs(value: AccessSetting*): Self = StObject.set(x, "access", js.Array(value*))
+    
+    inline def setMode(value: AuthMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setStrategies(value: js.Array[String]): Self = StObject.set(x, "strategies", value.asInstanceOf[js.Any])
+    
+    inline def setStrategiesVarargs(value: String*): Self = StObject.set(x, "strategies", js.Array(value*))
+  }
 }
-

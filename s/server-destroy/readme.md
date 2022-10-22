@@ -10,10 +10,10 @@ Enable destroying a server, and all currently open connections.
 | ------------------ | :-------------: |
 | Full name          | server-destroy |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 266 |
-| # downloads        | 28813119 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5915714.333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/isaacs/server-destroy#readme)

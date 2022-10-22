@@ -1,14 +1,13 @@
 package typingsJapgolly.lodash.fpMod
 
 import typingsJapgolly.lodash.mod.Dictionary
-import typingsJapgolly.lodash.mod.List
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashFromPairs extends js.Object {
-  def apply(): Dictionary[_] = js.native
-  def apply(pairs: List[js.Array[_]]): Dictionary[_] = js.native
+trait LodashFromPairs extends StObject {
+  
+  def apply(): Dictionary[Any] = js.native
+  def apply(pairs: typingsJapgolly.lodash.mod.List[js.Array[Any]]): Dictionary[Any] = js.native
 }
-

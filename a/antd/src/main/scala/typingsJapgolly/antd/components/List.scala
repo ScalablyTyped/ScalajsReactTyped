@@ -1,85 +1,141 @@
 package typingsJapgolly.antd.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antd.antdBooleans.`false`
-import typingsJapgolly.antd.listMod.ListGridType
-import typingsJapgolly.antd.listMod.ListItemLayout
-import typingsJapgolly.antd.listMod.ListLocale
-import typingsJapgolly.antd.listMod.ListProps
-import typingsJapgolly.antd.listMod.ListSize
-import typingsJapgolly.antd.listMod.default
-import typingsJapgolly.antd.paginationPaginationMod.PaginationConfig
-import typingsJapgolly.antd.spinMod.SpinProps
+import typingsJapgolly.antd.libListItemMod.ListItemMetaProps
+import typingsJapgolly.antd.libListItemMod.ListItemProps
+import typingsJapgolly.antd.libListMod.ListGridType
+import typingsJapgolly.antd.libListMod.ListItemLayout
+import typingsJapgolly.antd.libListMod.ListLocale
+import typingsJapgolly.antd.libListMod.ListProps
+import typingsJapgolly.antd.libListMod.ListSize
+import typingsJapgolly.antd.libPaginationPaginationMod.PaginationConfig
+import typingsJapgolly.antd.libSpinMod.SpinProps
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.Key
+import typingsJapgolly.react.mod.RefAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object List {
-  def apply[T](
-    bordered: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    dataSource: js.Array[T] = null,
-    extra: VdomNode = null,
-    footer: VdomNode = null,
-    grid: ListGridType = null,
-    header: VdomNode = null,
-    id: String = null,
-    itemLayout: ListItemLayout = null,
-    loadMore: VdomNode = null,
-    loading: Boolean | SpinProps = null,
-    locale: ListLocale = null,
-    pagination: PaginationConfig | `false` = null,
-    prefixCls: String = null,
-    renderItem: (T, /* index */ Double) => CallbackTo[Node] = null,
-    rowKey: (js.Function1[T, String]) | String = null,
-    size: ListSize = null,
-    split: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ListProps[T], default[T], Unit, ListProps[T]] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.rawNode.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.rawNode.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.rawNode.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (itemLayout != null) __obj.updateDynamic("itemLayout")(itemLayout.asInstanceOf[js.Any])
-    if (loadMore != null) __obj.updateDynamic("loadMore")(loadMore.rawNode.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction2((t0: T, t1: /* index */ scala.Double) => renderItem(t0, t1).runNow()))
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(split)) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.listMod.ListProps[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.listMod.default[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.listMod.ListProps[T]])(children: _*)
+  inline def apply[T](): Builder[T] = {
+    val __props = js.Dynamic.literal()
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[ListProps[T]]))
   }
-  @JSImport("antd/lib/list", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object Item {
+    
+    object Meta {
+      
+      @JSImport("antd", "List.Item.Meta")
+      @js.native
+      val component: js.Object = js.native
+      
+      implicit def make(companion: Meta.type): SharedBuilder_ListItemMetaProps1032327803 = new SharedBuilder_ListItemMetaProps1032327803(js.Array(this.component, js.Dictionary.empty))()
+      
+      def withProps(p: ListItemMetaProps): SharedBuilder_ListItemMetaProps1032327803 = new SharedBuilder_ListItemMetaProps1032327803(js.Array(this.component, p.asInstanceOf[js.Any]))
+    }
+    
+    @JSImport("antd", "List.Item")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Item.type): SharedBuilder_ListItemPropsRefAttributes_1011249451[HTMLElement] = new SharedBuilder_ListItemPropsRefAttributes_1011249451[HTMLElement](js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: ListItemProps & RefAttributes[HTMLElement]): SharedBuilder_ListItemPropsRefAttributes_1011249451[HTMLElement] = new SharedBuilder_ListItemPropsRefAttributes_1011249451[HTMLElement](js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  @JSImport("antd", "List")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def bordered(value: Boolean): this.type = set("bordered", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def dataSource(value: js.Array[T]): this.type = set("dataSource", value.asInstanceOf[js.Any])
+    
+    inline def dataSourceVarargs(value: T*): this.type = set("dataSource", js.Array(value*))
+    
+    inline def extra(value: VdomNode): this.type = set("extra", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def extraNull: this.type = set("extra", null)
+    
+    inline def extraVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("extra", js.Array(value*))
+    
+    inline def extraVdomElement(value: VdomElement): this.type = set("extra", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def footer(value: VdomNode): this.type = set("footer", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def footerNull: this.type = set("footer", null)
+    
+    inline def footerVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("footer", js.Array(value*))
+    
+    inline def footerVdomElement(value: VdomElement): this.type = set("footer", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def grid(value: ListGridType): this.type = set("grid", value.asInstanceOf[js.Any])
+    
+    inline def header(value: VdomNode): this.type = set("header", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def headerNull: this.type = set("header", null)
+    
+    inline def headerVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("header", js.Array(value*))
+    
+    inline def headerVdomElement(value: VdomElement): this.type = set("header", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def itemLayout(value: ListItemLayout): this.type = set("itemLayout", value.asInstanceOf[js.Any])
+    
+    inline def loadMore(value: VdomNode): this.type = set("loadMore", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def loadMoreNull: this.type = set("loadMore", null)
+    
+    inline def loadMoreVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("loadMore", js.Array(value*))
+    
+    inline def loadMoreVdomElement(value: VdomElement): this.type = set("loadMore", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def loading(value: Boolean | SpinProps): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def locale(value: ListLocale): this.type = set("locale", value.asInstanceOf[js.Any])
+    
+    inline def pagination(value: PaginationConfig | `false`): this.type = set("pagination", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def renderItem(value: (T, /* index */ Double) => japgolly.scalajs.react.facade.React.Node): this.type = set("renderItem", js.Any.fromFunction2(value))
+    
+    inline def rowKey(value: (js.Function1[T, Key]) | (/* keyof T */ String)): this.type = set("rowKey", value.asInstanceOf[js.Any])
+    
+    inline def rowKeyFunction1(value: T => Key): this.type = set("rowKey", js.Any.fromFunction1(value))
+    
+    inline def size(value: ListSize): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def split(value: Boolean): this.type = set("split", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make[T](companion: List.type): Builder[T] = new Builder[T](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps[T](p: ListProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,27 +1,41 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PerformanceObserverInit extends js.Object {
+trait PerformanceObserverInit extends StObject {
+  
+  /* standard dom */
   var buffered: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var entryTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  
+  /* standard dom */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object PerformanceObserverInit {
-  @scala.inline
-  def apply(
-    buffered: js.UndefOr[scala.Boolean] = js.undefined,
-    entryTypes: js.Array[java.lang.String] = null,
-    `type`: java.lang.String = null
-  ): PerformanceObserverInit = {
+  
+  inline def apply(): PerformanceObserverInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(buffered)) __obj.updateDynamic("buffered")(buffered.asInstanceOf[js.Any])
-    if (entryTypes != null) __obj.updateDynamic("entryTypes")(entryTypes.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformanceObserverInit]
   }
+  
+  extension [Self <: PerformanceObserverInit](x: Self) {
+    
+    inline def setBuffered(value: scala.Boolean): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
+    
+    inline def setBufferedUndefined: Self = StObject.set(x, "buffered", js.undefined)
+    
+    inline def setEntryTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "entryTypes", value.asInstanceOf[js.Any])
+    
+    inline def setEntryTypesUndefined: Self = StObject.set(x, "entryTypes", js.undefined)
+    
+    inline def setEntryTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "entryTypes", js.Array(value*))
+    
+    inline def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

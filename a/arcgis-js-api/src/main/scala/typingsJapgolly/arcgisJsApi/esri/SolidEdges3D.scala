@@ -1,13 +1,15 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SolidEdges3D extends Edges3D {
+trait SolidEdges3D
+  extends StObject
+     with Edges3D {
+  
   /**
     * The symbol type.
     *
@@ -15,8 +17,3 @@ trait SolidEdges3D extends Edges3D {
     */
   var `type`: solid = js.native
 }
-
-@JSGlobal("__esri.SolidEdges3D")
-@js.native
-object SolidEdges3D extends TopLevel[SolidEdges3DConstructor]
-

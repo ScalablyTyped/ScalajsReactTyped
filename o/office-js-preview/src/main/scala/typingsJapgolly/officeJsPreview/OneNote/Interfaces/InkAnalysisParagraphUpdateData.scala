@@ -1,26 +1,31 @@
 package typingsJapgolly.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the InkAnalysisParagraph object, for use in "inkAnalysisParagraph.set({ ... })". */
-trait InkAnalysisParagraphUpdateData extends js.Object {
+/** An interface for updating data on the InkAnalysisParagraph object, for use in `inkAnalysisParagraph.set({ ... })`. */
+trait InkAnalysisParagraphUpdateData extends StObject {
+  
   /**
-    *
     * Reference to the parent InkAnalysisPage.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var inkAnalysis: js.UndefOr[InkAnalysisUpdateData] = js.undefined
 }
-
 object InkAnalysisParagraphUpdateData {
-  @scala.inline
-  def apply(inkAnalysis: InkAnalysisUpdateData = null): InkAnalysisParagraphUpdateData = {
+  
+  inline def apply(): InkAnalysisParagraphUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (inkAnalysis != null) __obj.updateDynamic("inkAnalysis")(inkAnalysis.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkAnalysisParagraphUpdateData]
   }
+  
+  extension [Self <: InkAnalysisParagraphUpdateData](x: Self) {
+    
+    inline def setInkAnalysis(value: InkAnalysisUpdateData): Self = StObject.set(x, "inkAnalysis", value.asInstanceOf[js.Any])
+    
+    inline def setInkAnalysisUndefined: Self = StObject.set(x, "inkAnalysis", js.undefined)
+  }
 }
-

@@ -1,15 +1,10 @@
 package typingsJapgolly.reactAsync.mod
 
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.reactAsync.AnonDictmeta
-import typingsJapgolly.reactAsync.reactAsyncBooleans.`true`
-import typingsJapgolly.reactAsync.reactAsyncStrings.cancel
-import typingsJapgolly.reactAsync.reactAsyncStrings.fulfill
-import typingsJapgolly.reactAsync.reactAsyncStrings.reject
-import typingsJapgolly.reactAsync.reactAsyncStrings.start
+import typingsJapgolly.reactAsync.anon.Dictmeta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactAsync.mod.Start
@@ -17,33 +12,30 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactAsync.mod.Fulfill[T]
   - typingsJapgolly.reactAsync.mod.Reject
 */
-trait AsyncAction[T] extends js.Object
-
+trait AsyncAction[T] extends StObject
 object AsyncAction {
-  @scala.inline
-  def Start[T](meta: AnonDictmeta, payload: CallbackTo[js.Promise[Unit]], `type`: String with start): AsyncAction[T] = {
+  
+  inline def Cancel(meta: Dictmeta): typingsJapgolly.reactAsync.mod.Cancel = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
-    __obj.updateDynamic("payload")(payload.toJsFn)
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AsyncAction[T]]
+    __obj.updateDynamic("type")("cancel")
+    __obj.asInstanceOf[typingsJapgolly.reactAsync.mod.Cancel]
   }
-  @scala.inline
-  def Cancel[T](meta: AnonDictmeta, `type`: String with cancel): AsyncAction[T] = {
-    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AsyncAction[T]]
-  }
-  @scala.inline
-  def Fulfill[T](meta: AnonDictmeta, payload: T, `type`: String with fulfill): AsyncAction[T] = {
+  
+  inline def Fulfill[T](meta: Dictmeta, payload: T): typingsJapgolly.reactAsync.mod.Fulfill[T] = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AsyncAction[T]]
+    __obj.updateDynamic("type")("fulfill")
+    __obj.asInstanceOf[typingsJapgolly.reactAsync.mod.Fulfill[T]]
   }
-  @scala.inline
-  def Reject[T](error: `true`, meta: AnonDictmeta, payload: js.Error, `type`: String with reject): AsyncAction[T] = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AsyncAction[T]]
+  
+  inline def Reject(meta: Dictmeta, payload: js.Error): typingsJapgolly.reactAsync.mod.Reject = {
+    val __obj = js.Dynamic.literal(error = true, meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("reject")
+    __obj.asInstanceOf[typingsJapgolly.reactAsync.mod.Reject]
+  }
+  
+  inline def Start(meta: Dictmeta, payload: CallbackTo[js.Promise[Unit]]): typingsJapgolly.reactAsync.mod.Start = {
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], payload = payload.toJsFn)
+    __obj.updateDynamic("type")("start")
+    __obj.asInstanceOf[typingsJapgolly.reactAsync.mod.Start]
   }
 }
-

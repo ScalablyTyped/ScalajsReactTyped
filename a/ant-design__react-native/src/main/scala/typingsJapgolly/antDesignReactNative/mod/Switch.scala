@@ -1,14 +1,23 @@
 package typingsJapgolly.antDesignReactNative.mod
 
-import japgolly.scalajs.react.raw.React.Element
-import typingsJapgolly.antDesignReactNative.switchMod.AntmSwitchProps
+import typingsJapgolly.antDesignReactNative.libSwitchSwitchMod.SwitchProps
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native", "Switch")
-@js.native
-object Switch extends js.Object {
-  def apply(props: AntmSwitchProps): Element = js.native
+object Switch {
+  
+  inline def apply(
+    hasPrefixClsCheckedDefaultCheckedDisabledColorLoadingCheckedChildrenUnCheckedChildrenOnPressOnChangeTrackColorThumbColorThumbTintColorRestProps: SwitchProps
+  ): Element = ^.asInstanceOf[js.Dynamic].apply(hasPrefixClsCheckedDefaultCheckedDisabledColorLoadingCheckedChildrenUnCheckedChildrenOnPressOnChangeTrackColorThumbColorThumbTintColorRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @JSImport("@ant-design/react-native", "Switch")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native", "Switch.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }
-

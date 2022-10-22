@@ -1,60 +1,134 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.baseline_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.bottom_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.center_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.left_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.middle
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.right_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.top_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextSymbol3DLayerProperties extends Symbol3DLayerProperties {
+trait TextSymbol3DLayerProperties
+  extends StObject
+     with Symbol3DLayerProperties {
+  
+  /**
+    * The background of the text.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#background)
+    */
+  var background: js.UndefOr[TextSymbol3DLayerBackgroundProperties] = js.undefined
+  
   /**
     * The font of the text label.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#font)
     */
   var font: js.UndefOr[FontProperties] = js.undefined
+  
   /**
     * The halo surrounding the text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#halo)
     */
   var halo: js.UndefOr[TextSymbol3DLayerHaloProperties] = js.undefined
+  
+  /**
+    * Adjusts the horizontal alignment of the text in multi-lines.
+    *
+    * @default "center"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#horizontalAlignment)
+    */
+  var horizontalAlignment: js.UndefOr[left_ | right_ | center_] = js.undefined
+  
+  /**
+    * The height of the space between each line of text.
+    *
+    * @default 1.0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#lineHeight)
+    */
+  var lineHeight: js.UndefOr[Double] = js.undefined
+  
   /**
     * The material used to color the text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#material)
     */
   var material: js.UndefOr[TextSymbol3DLayerMaterialProperties] = js.undefined
+  
   /**
-    * Size of the text label in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`). When set, this property overrides the [font.size](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html#size) property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#size)
+    * Size of the text label in points.
     *
     * @default 9
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#size)
     */
   var size: js.UndefOr[Double | String] = js.undefined
+  
   /**
-    * The text to be displayed. To manually create a new line, use the `\n` escape character.
+    * The text to be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#text)
     */
   var text: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Adjusts the vertical alignment of the text.
+    *
+    * @default "baseline"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#verticalAlignment)
+    */
+  var verticalAlignment: js.UndefOr[baseline_ | top_ | middle | bottom_] = js.undefined
 }
-
 object TextSymbol3DLayerProperties {
-  @scala.inline
-  def apply(
-    font: FontProperties = null,
-    halo: TextSymbol3DLayerHaloProperties = null,
-    material: TextSymbol3DLayerMaterialProperties = null,
-    size: Double | String = null,
-    text: String = null
-  ): TextSymbol3DLayerProperties = {
+  
+  inline def apply(): TextSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (halo != null) __obj.updateDynamic("halo")(halo.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextSymbol3DLayerProperties]
   }
+  
+  extension [Self <: TextSymbol3DLayerProperties](x: Self) {
+    
+    inline def setBackground(value: TextSymbol3DLayerBackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setFont(value: FontProperties): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setHalo(value: TextSymbol3DLayerHaloProperties): Self = StObject.set(x, "halo", value.asInstanceOf[js.Any])
+    
+    inline def setHaloUndefined: Self = StObject.set(x, "halo", js.undefined)
+    
+    inline def setHorizontalAlignment(value: left_ | right_ | center_): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    
+    inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+    
+    inline def setMaterial(value: TextSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    
+    inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setVerticalAlignment(value: baseline_ | top_ | middle | bottom_): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+  }
 }
-

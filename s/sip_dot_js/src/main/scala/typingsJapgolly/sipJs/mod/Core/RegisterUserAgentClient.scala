@@ -1,22 +1,21 @@
 package typingsJapgolly.sipJs.mod.Core
 
-import typingsJapgolly.sipJs.outgoingRequestMod.OutgoingRequestDelegate
+import typingsJapgolly.sipJs.libCoreMessagesOutgoingRequestMod.OutgoingRequestDelegate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.RegisterUserAgentClient")
 @js.native
-class RegisterUserAgentClient protected ()
-  extends typingsJapgolly.sipJs.coreMod.RegisterUserAgentClient {
+open class RegisterUserAgentClient protected ()
+  extends typingsJapgolly.sipJs.libCoreMod.RegisterUserAgentClient {
   def this(
-    core: typingsJapgolly.sipJs.userAgentCoreMod.UserAgentCore,
-    message: typingsJapgolly.sipJs.messagesMod.OutgoingRequestMessage
+    core: typingsJapgolly.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
+    message: typingsJapgolly.sipJs.libCoreMessagesMod.OutgoingRequestMessage
   ) = this()
   def this(
-    core: typingsJapgolly.sipJs.userAgentCoreMod.UserAgentCore,
-    message: typingsJapgolly.sipJs.messagesMod.OutgoingRequestMessage,
+    core: typingsJapgolly.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
+    message: typingsJapgolly.sipJs.libCoreMessagesMod.OutgoingRequestMessage,
     delegate: OutgoingRequestDelegate
   ) = this()
 }
-

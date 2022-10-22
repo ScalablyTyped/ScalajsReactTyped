@@ -1,75 +1,83 @@
 package typingsJapgolly.canvasjs
 
 import typingsJapgolly.canvasjs.mod.DashType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object canvasjsStrings {
-  @js.native
-  sealed trait dash extends DashType
   
   @js.native
-  sealed trait dashDot extends DashType
+  sealed trait dash
+    extends StObject
+       with DashType
+  inline def dash: dash = "dash".asInstanceOf[dash]
   
   @js.native
-  sealed trait dot extends DashType
+  sealed trait dashDot
+    extends StObject
+       with DashType
+  inline def dashDot: dashDot = "dashDot".asInstanceOf[dashDot]
   
   @js.native
-  sealed trait jpg extends js.Object
+  sealed trait dot
+    extends StObject
+       with DashType
+  inline def dot: dot = "dot".asInstanceOf[dot]
   
   @js.native
-  sealed trait longDash extends DashType
+  sealed trait jpg extends StObject
+  inline def jpg: jpg = "jpg".asInstanceOf[jpg]
   
   @js.native
-  sealed trait longDashDot extends DashType
+  sealed trait longDash
+    extends StObject
+       with DashType
+  inline def longDash: longDash = "longDash".asInstanceOf[longDash]
   
   @js.native
-  sealed trait longDashDotDot extends DashType
+  sealed trait longDashDot
+    extends StObject
+       with DashType
+  inline def longDashDot: longDashDot = "longDashDot".asInstanceOf[longDashDot]
   
   @js.native
-  sealed trait png extends js.Object
+  sealed trait longDashDotDot
+    extends StObject
+       with DashType
+  inline def longDashDotDot: longDashDotDot = "longDashDotDot".asInstanceOf[longDashDotDot]
   
   @js.native
-  sealed trait shortDash extends DashType
+  sealed trait png extends StObject
+  inline def png: png = "png".asInstanceOf[png]
   
   @js.native
-  sealed trait shortDashDot extends DashType
+  sealed trait shortDash
+    extends StObject
+       with DashType
+  inline def shortDash: shortDash = "shortDash".asInstanceOf[shortDash]
   
   @js.native
-  sealed trait shortDashDotDot extends DashType
+  sealed trait shortDashDot
+    extends StObject
+       with DashType
+  inline def shortDashDot: shortDashDot = "shortDashDot".asInstanceOf[shortDashDot]
   
   @js.native
-  sealed trait shortDot extends DashType
+  sealed trait shortDashDotDot
+    extends StObject
+       with DashType
+  inline def shortDashDotDot: shortDashDotDot = "shortDashDotDot".asInstanceOf[shortDashDotDot]
   
   @js.native
-  sealed trait solid extends DashType
+  sealed trait shortDot
+    extends StObject
+       with DashType
+  inline def shortDot: shortDot = "shortDot".asInstanceOf[shortDot]
   
-  @scala.inline
-  def dash: dash = "dash".asInstanceOf[dash]
-  @scala.inline
-  def dashDot: dashDot = "dashDot".asInstanceOf[dashDot]
-  @scala.inline
-  def dot: dot = "dot".asInstanceOf[dot]
-  @scala.inline
-  def jpg: jpg = "jpg".asInstanceOf[jpg]
-  @scala.inline
-  def longDash: longDash = "longDash".asInstanceOf[longDash]
-  @scala.inline
-  def longDashDot: longDashDot = "longDashDot".asInstanceOf[longDashDot]
-  @scala.inline
-  def longDashDotDot: longDashDotDot = "longDashDotDot".asInstanceOf[longDashDotDot]
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
-  @scala.inline
-  def shortDash: shortDash = "shortDash".asInstanceOf[shortDash]
-  @scala.inline
-  def shortDashDot: shortDashDot = "shortDashDot".asInstanceOf[shortDashDot]
-  @scala.inline
-  def shortDashDotDot: shortDashDotDot = "shortDashDotDot".asInstanceOf[shortDashDotDot]
-  @scala.inline
-  def shortDot: shortDot = "shortDot".asInstanceOf[shortDot]
-  @scala.inline
-  def solid: solid = "solid".asInstanceOf[solid]
+  @js.native
+  sealed trait solid
+    extends StObject
+       with DashType
+  inline def solid: solid = "solid".asInstanceOf[solid]
 }
-

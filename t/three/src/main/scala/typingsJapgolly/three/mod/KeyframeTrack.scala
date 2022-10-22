@@ -1,27 +1,34 @@
 package typingsJapgolly.three.mod
 
+import typingsJapgolly.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "KeyframeTrack")
 @js.native
-class KeyframeTrack protected ()
-  extends typingsJapgolly.three.keyframeTrackMod.KeyframeTrack {
-  def this(name: String, times: js.Array[_], values: js.Array[_]) = this()
+open class KeyframeTrack protected ()
+  extends typingsJapgolly.three.srcThreeMod.KeyframeTrack {
+  /**
+    * @param name
+    * @param times
+    * @param values
+    * @param [interpolation=THREE.InterpolateLinear]
+    */
+  def this(name: String, times: ArrayLike[Any], values: ArrayLike[Any]) = this()
   def this(
     name: String,
-    times: js.Array[_],
-    values: js.Array[_],
-    interpolation: typingsJapgolly.three.constantsMod.InterpolationModes
+    times: ArrayLike[Any],
+    values: ArrayLike[Any],
+    interpolation: typingsJapgolly.three.srcConstantsMod.InterpolationModes
   ) = this()
 }
-
 /* static members */
-@JSImport("three", "KeyframeTrack")
-@js.native
-object KeyframeTrack extends js.Object {
-  def parse(json: js.Any): typingsJapgolly.three.keyframeTrackMod.KeyframeTrack = js.native
-  def toJSON(track: typingsJapgolly.three.keyframeTrackMod.KeyframeTrack): js.Any = js.native
+object KeyframeTrack {
+  
+  @JSImport("three", "KeyframeTrack")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def toJSON(track: typingsJapgolly.three.srcAnimationKeyframeTrackMod.KeyframeTrack): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(track.asInstanceOf[js.Any]).asInstanceOf[Any]
 }
-

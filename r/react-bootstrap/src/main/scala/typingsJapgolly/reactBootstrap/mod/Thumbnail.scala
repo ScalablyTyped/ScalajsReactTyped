@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.thumbnailMod.ThumbnailProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "Thumbnail")
 @js.native
-class Thumbnail ()
-  extends Component[ThumbnailProps, js.Object, js.Any]
-
+open class Thumbnail ()
+  extends typingsJapgolly.reactBootstrap.libMod.Thumbnail

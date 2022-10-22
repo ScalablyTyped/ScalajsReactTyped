@@ -1,32 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TriangulationStatusChangedEventUIParam extends js.Object {
+trait TriangulationStatusChangedEventUIParam extends StObject {
+  
   /**
-  	 * Used to get current status.
-  	 */
-  var currentStatus: js.UndefOr[js.Any] = js.undefined
+    * Used to get current status.
+    */
+  var currentStatus: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to get reference to map object.
-  	 */
-  var map: js.UndefOr[js.Any] = js.undefined
+    * Used to get reference to map object.
+    */
+  var map: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to get reference to current series object.
-  	 */
-  var series: js.UndefOr[js.Any] = js.undefined
+    * Used to get reference to current series object.
+    */
+  var series: js.UndefOr[Any] = js.undefined
 }
-
 object TriangulationStatusChangedEventUIParam {
-  @scala.inline
-  def apply(currentStatus: js.Any = null, map: js.Any = null, series: js.Any = null): TriangulationStatusChangedEventUIParam = {
+  
+  inline def apply(): TriangulationStatusChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (currentStatus != null) __obj.updateDynamic("currentStatus")(currentStatus.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriangulationStatusChangedEventUIParam]
   }
+  
+  extension [Self <: TriangulationStatusChangedEventUIParam](x: Self) {
+    
+    inline def setCurrentStatus(value: Any): Self = StObject.set(x, "currentStatus", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentStatusUndefined: Self = StObject.set(x, "currentStatus", js.undefined)
+    
+    inline def setMap(value: Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    
+    inline def setSeries(value: Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+  }
 }
-

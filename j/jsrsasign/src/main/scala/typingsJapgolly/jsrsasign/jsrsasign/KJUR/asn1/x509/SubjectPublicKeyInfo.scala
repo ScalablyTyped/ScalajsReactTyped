@@ -5,9 +5,9 @@ import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.DERSequence
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typingsJapgolly.jsrsasign.jsrsasign.RSAKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SubjectPublicKeyInfo ASN.1 structure class
@@ -28,13 +28,13 @@ import scala.scalajs.js.annotation._
   * spki = new KJUR.asn1.x509.SubjectPublicKeyInfo(KJURcryptoECDSA_object);
   * spki = new KJUR.asn1.x509.SubjectPublicKeyInfo(KJURcryptoDSA_object);
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.SubjectPublicKeyInfo")
 @js.native
-class SubjectPublicKeyInfo () extends ASN1Object {
-  def this(params: DSA) = this()
-  def this(params: ECDSA) = this()
-  def this(params: RSAKey) = this()
+trait SubjectPublicKeyInfo
+  extends StObject
+     with ASN1Object {
+  
   def getASN1Object(): DERSequence = js.native
+  
   def setPubKey(key: DSA): Unit = js.native
   def setPubKey(key: ECDSA): Unit = js.native
   /**
@@ -46,4 +46,3 @@ class SubjectPublicKeyInfo () extends ASN1Object {
     */
   def setPubKey(key: RSAKey): Unit = js.native
 }
-

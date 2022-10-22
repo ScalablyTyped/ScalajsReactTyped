@@ -1,19 +1,24 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GradientColorObject extends _ColorType {
+trait GradientColorObject
+  extends StObject
+     with _ColorType {
+  
   /**
     * Holds an object that defines the start position and the end position
     * relative to the shape.
     */
   var linearGradient: js.UndefOr[LinearGradientColorObject] = js.undefined
+  
   /**
     * Holds an object that defines the center position and the radius.
     */
   var radialGradient: js.UndefOr[RadialGradientColorObject] = js.undefined
+  
   /**
     * The first item in each tuple is the position in the gradient, where 0 is
     * the start of the gradient and 1 is the end of the gradient. Multiple
@@ -22,18 +27,25 @@ trait GradientColorObject extends _ColorType {
     */
   var stops: js.Array[GradientColorStopObject]
 }
-
 object GradientColorObject {
-  @scala.inline
-  def apply(
-    stops: js.Array[GradientColorStopObject],
-    linearGradient: LinearGradientColorObject = null,
-    radialGradient: RadialGradientColorObject = null
-  ): GradientColorObject = {
+  
+  inline def apply(stops: js.Array[GradientColorStopObject]): GradientColorObject = {
     val __obj = js.Dynamic.literal(stops = stops.asInstanceOf[js.Any])
-    if (linearGradient != null) __obj.updateDynamic("linearGradient")(linearGradient.asInstanceOf[js.Any])
-    if (radialGradient != null) __obj.updateDynamic("radialGradient")(radialGradient.asInstanceOf[js.Any])
     __obj.asInstanceOf[GradientColorObject]
   }
+  
+  extension [Self <: GradientColorObject](x: Self) {
+    
+    inline def setLinearGradient(value: LinearGradientColorObject): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
+    
+    inline def setLinearGradientUndefined: Self = StObject.set(x, "linearGradient", js.undefined)
+    
+    inline def setRadialGradient(value: RadialGradientColorObject): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
+    
+    inline def setRadialGradientUndefined: Self = StObject.set(x, "radialGradient", js.undefined)
+    
+    inline def setStops(value: js.Array[GradientColorStopObject]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    
+    inline def setStopsVarargs(value: GradientColorStopObject*): Self = StObject.set(x, "stops", js.Array(value*))
+  }
 }
-

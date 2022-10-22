@@ -1,21 +1,30 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnnotationsTunnelTypeLineOptions extends js.Object {
+trait AnnotationsTunnelTypeLineOptions extends StObject {
+  
   var fill: js.UndefOr[String] = js.undefined
+  
   var strokeWidth: js.UndefOr[Double] = js.undefined
 }
-
 object AnnotationsTunnelTypeLineOptions {
-  @scala.inline
-  def apply(fill: String = null, strokeWidth: Int | Double = null): AnnotationsTunnelTypeLineOptions = {
+  
+  inline def apply(): AnnotationsTunnelTypeLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsTunnelTypeLineOptions]
   }
+  
+  extension [Self <: AnnotationsTunnelTypeLineOptions](x: Self) {
+    
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+  }
 }
-

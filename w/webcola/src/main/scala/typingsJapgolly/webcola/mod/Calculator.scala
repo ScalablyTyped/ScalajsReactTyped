@@ -1,13 +1,13 @@
 package typingsJapgolly.webcola.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "Calculator")
 @js.native
-class Calculator[Link] protected ()
-  extends typingsJapgolly.webcola.shortestpathsMod.Calculator[Link] {
+open class Calculator[Link] protected ()
+  extends typingsJapgolly.webcola.distSrcShortestpathsMod.Calculator[Link] {
   def this(
     n: Double,
     es: js.Array[Link],
@@ -16,4 +16,3 @@ class Calculator[Link] protected ()
     getLength: js.Function1[/* l */ Link, Double]
   ) = this()
 }
-

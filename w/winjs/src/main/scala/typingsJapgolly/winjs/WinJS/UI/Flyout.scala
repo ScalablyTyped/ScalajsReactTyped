@@ -1,54 +1,19 @@
 package typingsJapgolly.winjs.WinJS.UI
 
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.std.Event_
-import typingsJapgolly.std.MouseEvent
-import typingsJapgolly.winjs.AnonX
+import org.scalajs.dom.Event
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.winjs.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Displays lightweight UI that is either information, or requires user interaction. Unlike a dialog, a Flyout can be light dismissed by clicking or tapping off of it.
   **/
-@JSGlobal("WinJS.UI.Flyout")
 @js.native
-//#region Constructors
-/**
-  * Creates a new Flyout object.
-  * @constructor
-  * @param element The DOM element that will host the control.
-  * @param options The set of properties and values to apply to the new Flyout.
-  **/
-class Flyout () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
-  //#endregion Methods
-  //#region Properties
-  /**
-    * Gets or sets the default alignment to be used for this Flyout.
-    **/
-  var alignment: String = js.native
-  /**
-    * Gets or sets the default anchor to be used for this Flyout.
-    **/
-  var anchor: HTMLElement = js.native
-  /**
-    * Gets or sets a value that indicates whether the Flyout is disabled.
-    **/
-  var disabled: Boolean = js.native
-  /**
-    * Gets the DOM element that hosts the Flyout.
-    **/
-  var element: HTMLElement = js.native
-  /**
-    * Gets a value that indicates whether the Flyout is hidden or in the process of becoming hidden, or sets the Flyout to hide or show itself.
-    **/
-  var hidden: Boolean = js.native
-  /**
-    * Gets or sets the default placement to be used for this Flyout.
-    **/
-  var placement: String = js.native
+trait Flyout extends StObject {
+  
   //#endregion Events
   //#region Methods
   /**
@@ -59,43 +24,83 @@ class Flyout () extends js.Object {
     **/
   def addEventListener(`type`: String, listener: js.Function): Unit = js.native
   def addEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
+  
+  //#endregion Methods
+  //#region Properties
+  /**
+    * Gets or sets the default alignment to be used for this Flyout.
+    **/
+  var alignment: String = js.native
+  
+  /**
+    * Gets or sets the default anchor to be used for this Flyout.
+    **/
+  var anchor: HTMLElement = js.native
+  
+  /**
+    * Gets or sets a value that indicates whether the Flyout is disabled.
+    **/
+  var disabled: Boolean = js.native
+  
   /**
     * Raises an event of the specified type and with additional properties.
     * @param type The type (name) of the event.
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(eventName: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(eventName: String, eventProperties: Any): Boolean = js.native
+  
   /**
     * Releases resources held by this object. Call this method when the object is no longer needed. After calling this method, the object becomes unusable.
     **/
   def dispose(): Unit = js.native
+  
+  /**
+    * Gets the DOM element that hosts the Flyout.
+    **/
+  var element: HTMLElement = js.native
+  
+  /**
+    * Gets a value that indicates whether the Flyout is hidden or in the process of becoming hidden, or sets the Flyout to hide or show itself.
+    **/
+  var hidden: Boolean = js.native
+  
   /**
     * Hides the Flyout, if visible, regardless of other states.
     **/
   def hide(): Unit = js.native
+  
   //#endregion Constructors
   //#region Events
   /**
     * Raised immediately after a flyout is fully hidden.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafterhide(eventInfo: Event_): Unit = js.native
+  def onafterhide(eventInfo: Event): Unit = js.native
+  
   /**
     * Raised immediately after a flyout is fully shown.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onaftershow(eventInfo: Event_): Unit = js.native
+  def onaftershow(eventInfo: Event): Unit = js.native
+  
   /**
     * Raised just before hiding a flyout.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforehide(eventInfo: Event_): Unit = js.native
+  def onbeforehide(eventInfo: Event): Unit = js.native
+  
   /**
     * Raised just before showing a flyout.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeshow(eventInfo: Event_): Unit = js.native
+  def onbeforeshow(eventInfo: Event): Unit = js.native
+  
+  /**
+    * Gets or sets the default placement to be used for this Flyout.
+    **/
+  var placement: String = js.native
+  
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param type The event type to unregister. It must be beforeshow, beforehide, aftershow, or afterhide.
@@ -104,6 +109,7 @@ class Flyout () extends js.Object {
     **/
   def removeEventListener(`type`: String, listener: js.Function): Unit = js.native
   def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
+  
   /**
     * Shows the Flyout, if hidden, regardless of other states.
     * @param anchor. DOM element to temporarily anchor the position of the Flyout to. This is optional if Flyout.anchor has already been set.
@@ -114,25 +120,19 @@ class Flyout () extends js.Object {
   def show(anchor: HTMLElement): Unit = js.native
   def show(anchor: HTMLElement, placement: String): Unit = js.native
   def show(anchor: HTMLElement, placement: String, alignment: String): Unit = js.native
+  def show(anchor: HTMLElement, placement: Unit, alignment: String): Unit = js.native
+  def show(anchor: Unit, placement: String): Unit = js.native
+  def show(anchor: Unit, placement: String, alignment: String): Unit = js.native
+  def show(anchor: Unit, placement: Unit, alignment: String): Unit = js.native
+  
   /**
     * Shows the Flyout, if hidden, regardless of other states, top and left aligned at the specified coordinates,
     * @param coordinates Required. The point where the top left corner of the flyout will appear, relative to the top and left edge of the visual viewport.
     **/
-  def showAt(coordinates: AnonX): Unit = js.native
+  def showAt(coordinates: X): Unit = js.native
   /**
     * Shows the Flyout, if hidden, regardless of other states, top and left aligned at the location of the mouse event object,
     * @param mouseEventObj Required. The MouseEvent Object specifying where to show the Flyout.
     **/
   def showAt(mouseEventObj: MouseEvent): Unit = js.native
 }
-
-/* static members */
-@JSGlobal("WinJS.UI.Flyout")
-@js.native
-object Flyout extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
-}
-

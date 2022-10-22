@@ -1,0 +1,14 @@
+organization := "org.scalablytyped.japgolly"
+name := "atlaskit__tokens"
+version := "0.10.25-67ba11"
+scalaVersion := "3.1.2"
+enablePlugins(ScalaJSPlugin)
+libraryDependencies ++= Seq(
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "babel__traverse" % "7.18-dt-20220923Z-12cca0",
+  "org.scalablytyped.japgolly" %%% "babel__types" % "7.19.4-3aab9c",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
+publishArtifact in packageDoc := false
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

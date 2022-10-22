@@ -1,467 +1,469 @@
 package typingsJapgolly.puppeteer.mod
 
-import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.puppeteer.deviceDescriptorsMod.Device
-import typingsJapgolly.puppeteer.puppeteerNumbers.`0`
-import typingsJapgolly.puppeteer.puppeteerNumbers.`1`
-import typingsJapgolly.puppeteer.puppeteerNumbers.`2`
-import typingsJapgolly.puppeteer.puppeteerNumbers.`3`
-import typingsJapgolly.puppeteer.puppeteerNumbers.`4`
-import typingsJapgolly.puppeteer.puppeteerNumbers.`5`
-import typingsJapgolly.puppeteer.puppeteerNumbers.`6`
-import typingsJapgolly.puppeteer.puppeteerNumbers.`7`
-import typingsJapgolly.std.AnonCopyWithin
-import typingsJapgolly.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("puppeteer", "devices")
-@js.native
-object devices extends TopLevel[(/* key */ StringDictionary[Device]) with (/* n */ NumberDictionary[Device])] {
-  /** Iterator */
-  @JSName(scala.scalajs.js.Symbol.iterator)
-  var iterator: js.Function0[IterableIterator[Device]] = js.native
-  /**
-    * Gets or sets the length of the array. This is a number one higher than the highest element defined in an array.
-    */
-  var length: Double = js.native
-  /**
-    * Returns an object whose properties have the value 'true'
-    * when they will be absent when used in a 'with' statement.
-    */
-  @JSName(scala.scalajs.js.Symbol.unscopables)
-  var unscopables: js.Function0[AnonCopyWithin] = js.native
-  /**
-    * Combines two or more arrays.
-    * @param items Additional items to add to the end of array1.
-    */
-  def concat(items: (js.Array[Device] | Device)*): js.Array[Device] = js.native
-  /**
-    * Returns the this object after copying a section of the array identified by start and end
-    * to the same array starting at position target
-    * @param target If target is negative, it is treated as length+target where length is the
-    * length of the array.
-    * @param start If start is negative, it is treated as length+start. If end is negative, it
-    * is treated as length+end.
-    * @param end If not specified, length of the this object is used as its default value.
-    */
-  def copyWithin(target: Double, start: Double): this.type = js.native
-  def copyWithin(target: Double, start: Double, end: Double): this.type = js.native
-  /**
-    * Returns an iterable of key, value pairs for every entry in the array
-    */
-  def entries(): IterableIterator[js.Tuple2[Double, Device]] = js.native
-  /**
-    * Determines whether all the members of an array satisfy the specified test.
-    * @param callbackfn A function that accepts up to three arguments. The every method calls
-    * the callbackfn function for each element in the array until the callbackfn returns a value
-    * which is coercible to the Boolean value false, or until the end of the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function.
-    * If thisArg is omitted, undefined is used as the this value.
-    */
-  def every(callbackfn: js.Function3[/* value */ Device, /* index */ Double, /* array */ js.Array[Device], _]): Boolean = js.native
-  def every(
-    callbackfn: js.Function3[/* value */ Device, /* index */ Double, /* array */ js.Array[Device], _],
-    thisArg: js.Any
-  ): Boolean = js.native
-  /**
-    * Returns the this object after filling the section identified by start and end with value
-    * @param value value to fill array section with
-    * @param start index to start filling the array at. If start is negative, it is treated as
-    * length+start where length is the length of the array.
-    * @param end index to stop filling the array at. If end is negative, it is treated as
-    * length+end.
-    */
-  def fill(value: Device): this.type = js.native
-  def fill(value: Device, start: Double): this.type = js.native
-  def fill(value: Device, start: Double, end: Double): this.type = js.native
-  /**
-    * Returns the elements of an array that meet the condition specified in a callback function.
-    * @param callbackfn A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
-    */
-  def filter(callbackfn: js.Function3[/* value */ Device, /* index */ Double, /* array */ js.Array[Device], _]): js.Array[Device] = js.native
-  def filter(
-    callbackfn: js.Function3[/* value */ Device, /* index */ Double, /* array */ js.Array[Device], _],
-    thisArg: js.Any
-  ): js.Array[Device] = js.native
-  /**
-    * Returns the elements of an array that meet the condition specified in a callback function.
-    * @param callbackfn A function that accepts up to three arguments. The filter method calls the callbackfn function one time for each element in the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
-    */
-  @JSName("filter")
-  def filter_S_Device[S /* <: Device */](
-    callbackfn: js.Function3[
-      /* value */ Device, 
-      /* index */ Double, 
-      /* array */ js.Array[Device], 
-      /* is S */ Boolean
-    ]
-  ): js.Array[S] = js.native
-  @JSName("filter")
-  def filter_S_Device[S /* <: Device */](
-    callbackfn: js.Function3[
-      /* value */ Device, 
-      /* index */ Double, 
-      /* array */ js.Array[Device], 
-      /* is S */ Boolean
-    ],
-    thisArg: js.Any
-  ): js.Array[S] = js.native
-  def find(predicate: js.Function3[/* value */ Device, /* index */ Double, /* obj */ js.Array[Device], _]): js.UndefOr[Device] = js.native
-  def find(
-    predicate: js.Function3[/* value */ Device, /* index */ Double, /* obj */ js.Array[Device], _],
-    thisArg: js.Any
-  ): js.UndefOr[Device] = js.native
-  /**
-    * Returns the value of the first element in the array where predicate is true, and undefined
-    * otherwise.
-    * @param predicate find calls predicate once for each element of the array, in ascending
-    * order, until it finds one where predicate returns true. If such an element is found, find
-    * immediately returns that element value. Otherwise, find returns undefined.
-    * @param thisArg If provided, it will be used as the this value for each invocation of
-    * predicate. If it is not provided, undefined is used instead.
-    */
-  def find[S /* <: Device */](
-    predicate: js.ThisFunction3[
-      /* this */ Unit, 
-      /* value */ Device, 
-      /* index */ Double, 
-      /* obj */ js.Array[Device], 
-      /* is S */ Boolean
-    ]
-  ): js.UndefOr[S] = js.native
-  def find[S /* <: Device */](
-    predicate: js.ThisFunction3[
-      /* this */ Unit, 
-      /* value */ Device, 
-      /* index */ Double, 
-      /* obj */ js.Array[Device], 
-      /* is S */ Boolean
-    ],
-    thisArg: js.Any
-  ): js.UndefOr[S] = js.native
-  /**
-    * Returns the index of the first element in the array where predicate is true, and -1
-    * otherwise.
-    * @param predicate find calls predicate once for each element of the array, in ascending
-    * order, until it finds one where predicate returns true. If such an element is found,
-    * findIndex immediately returns that element index. Otherwise, findIndex returns -1.
-    * @param thisArg If provided, it will be used as the this value for each invocation of
-    * predicate. If it is not provided, undefined is used instead.
-    */
-  def findIndex(predicate: js.Function3[/* value */ Device, /* index */ Double, /* obj */ js.Array[Device], _]): Double = js.native
-  def findIndex(
-    predicate: js.Function3[/* value */ Device, /* index */ Double, /* obj */ js.Array[Device], _],
-    thisArg: js.Any
-  ): Double = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth. If no depth is provided, flat method defaults to the depth of 1.
-    *
-    * @param depth The maximum recursion depth
-    */
-  def flat[U](): js.Array[U] = js.native
-  def flat[U](depth: Double): js.Array[_] = js.native
-  /**
-    * Calls a defined callback function on each element of an array. Then, flattens the result into
-    * a new array.
-    * This is identical to a map followed by flat with depth 1.
-    *
-    * @param callback A function that accepts up to three arguments. The flatMap method calls the
-    * callback function one time for each element in the array.
-    * @param thisArg An object to which the this keyword can refer in the callback function. If
-    * thisArg is omitted, undefined is used as the this value.
-    */
-  def flatMap[U, This](
-    callback: js.ThisFunction3[
-      /* this */ This, 
-      /* value */ Device, 
-      /* index */ Double, 
-      /* array */ js.Array[Device], 
-      U | js.Array[U]
-    ]
-  ): js.Array[U] = js.native
-  def flatMap[U, This](
-    callback: js.ThisFunction3[
-      /* this */ This, 
-      /* value */ Device, 
-      /* index */ Double, 
-      /* array */ js.Array[Device], 
-      U | js.Array[U]
-    ],
-    thisArg: This
-  ): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_0[U](depth: `0`): js.Array[U] = js.native
-  @JSName("flat")
-  def flat_1[U](depth: `1`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_2[U](depth: `2`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_3[U](depth: `3`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_4[U](depth: `4`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_5[U](depth: `5`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_6[U](depth: `6`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  @JSName("flat")
-  def flat_7[U](depth: `7`): js.Array[U] = js.native
-  /**
-    * Performs the specified action for each element in an array.
-    * @param callbackfn  A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
-    * @param thisArg  An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
-    */
-  def forEach(
-    callbackfn: js.Function3[/* value */ Device, /* index */ Double, /* array */ js.Array[Device], Unit]
-  ): Unit = js.native
-  def forEach(
-    callbackfn: js.Function3[/* value */ Device, /* index */ Double, /* array */ js.Array[Device], Unit],
-    thisArg: js.Any
-  ): Unit = js.native
-  /**
-    * Determines whether an array includes a certain element, returning true or false as appropriate.
-    * @param searchElement The element to search for.
-    * @param fromIndex The position in this array at which to begin searching for searchElement.
-    */
-  def includes(searchElement: Device): Boolean = js.native
-  def includes(searchElement: Device, fromIndex: Double): Boolean = js.native
-  /**
-    * Returns the index of the first occurrence of a value in an array.
-    * @param searchElement The value to locate in the array.
-    * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
-    */
-  def indexOf(searchElement: Device): Double = js.native
-  def indexOf(searchElement: Device, fromIndex: Double): Double = js.native
-  /**
-    * Adds all the elements of an array separated by the specified separator string.
-    * @param separator A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.
-    */
-  def join(): String = js.native
-  def join(separator: String): String = js.native
-  /**
-    * Returns an iterable of keys in the array
-    */
-  def keys(): IterableIterator[Double] = js.native
-  /**
-    * Returns the index of the last occurrence of a specified value in an array.
-    * @param searchElement The value to locate in the array.
-    * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the search starts at the last index in the array.
-    */
-  def lastIndexOf(searchElement: Device): Double = js.native
-  def lastIndexOf(searchElement: Device, fromIndex: Double): Double = js.native
-  /**
-    * Calls a defined callback function on each element of an array, and returns an array that contains the results.
-    * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
-    */
-  def map[U](callbackfn: js.Function3[/* value */ Device, /* index */ Double, /* array */ js.Array[Device], U]): js.Array[U] = js.native
-  def map[U](
-    callbackfn: js.Function3[/* value */ Device, /* index */ Double, /* array */ js.Array[Device], U],
-    thisArg: js.Any
-  ): js.Array[U] = js.native
-  /**
-    * Removes the last element from an array and returns it.
-    */
-  def pop(): js.UndefOr[Device] = js.native
-  /**
-    * Appends new elements to an array, and returns the new length of the array.
-    * @param items New elements of the Array.
-    */
-  def push(items: Device*): Double = js.native
-  /**
-    * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-    * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
-    * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-    */
-  def reduce(
-    callbackfn: js.Function4[
-      /* previousValue */ Device, 
-      /* currentValue */ Device, 
-      /* currentIndex */ Double, 
-      /* array */ js.Array[Device], 
-      Device
-    ]
-  ): Device = js.native
-  def reduce(
-    callbackfn: js.Function4[
-      /* previousValue */ Device, 
-      /* currentValue */ Device, 
-      /* currentIndex */ Double, 
-      /* array */ js.Array[Device], 
-      Device
-    ],
-    initialValue: Device
-  ): Device = js.native
-  /**
-    * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-    * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
-    * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-    */
-  def reduce[U](
-    callbackfn: js.Function4[
-      /* previousValue */ U, 
-      /* currentValue */ Device, 
-      /* currentIndex */ Double, 
-      /* array */ js.Array[Device], 
-      U
-    ],
-    initialValue: U
-  ): U = js.native
-  /**
-    * Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-    * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
-    * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-    */
-  def reduceRight(
-    callbackfn: js.Function4[
-      /* previousValue */ Device, 
-      /* currentValue */ Device, 
-      /* currentIndex */ Double, 
-      /* array */ js.Array[Device], 
-      Device
-    ]
-  ): Device = js.native
-  def reduceRight(
-    callbackfn: js.Function4[
-      /* previousValue */ Device, 
-      /* currentValue */ Device, 
-      /* currentIndex */ Double, 
-      /* array */ js.Array[Device], 
-      Device
-    ],
-    initialValue: Device
-  ): Device = js.native
-  /**
-    * Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-    * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
-    * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-    */
-  def reduceRight[U](
-    callbackfn: js.Function4[
-      /* previousValue */ U, 
-      /* currentValue */ Device, 
-      /* currentIndex */ Double, 
-      /* array */ js.Array[Device], 
-      U
-    ],
-    initialValue: U
-  ): U = js.native
-  /**
-    * Reverses the elements in an Array.
-    */
-  def reverse(): js.Array[Device] = js.native
-  /**
-    * Removes the first element from an array and returns it.
-    */
-  def shift(): js.UndefOr[Device] = js.native
-  /**
-    * Returns a section of an array.
-    * @param start The beginning of the specified portion of the array.
-    * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
-    */
-  def slice(): js.Array[Device] = js.native
-  def slice(start: Double): js.Array[Device] = js.native
-  def slice(start: Double, end: Double): js.Array[Device] = js.native
-  /**
-    * Determines whether the specified callback function returns true for any element of an array.
-    * @param callbackfn A function that accepts up to three arguments. The some method calls
-    * the callbackfn function for each element in the array until the callbackfn returns a value
-    * which is coercible to the Boolean value true, or until the end of the array.
-    * @param thisArg An object to which the this keyword can refer in the callbackfn function.
-    * If thisArg is omitted, undefined is used as the this value.
-    */
-  def some(callbackfn: js.Function3[/* value */ Device, /* index */ Double, /* array */ js.Array[Device], _]): Boolean = js.native
-  def some(
-    callbackfn: js.Function3[/* value */ Device, /* index */ Double, /* array */ js.Array[Device], _],
-    thisArg: js.Any
-  ): Boolean = js.native
-  /**
-    * Sorts an array.
-    * @param compareFn Function used to determine the order of the elements. It is expected to return
-    * a negative value if first argument is less than second argument, zero if they're equal and a positive
-    * value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
-    * ```ts
-    * [11,2,22,1].sort((a, b) => a - b)
-    * ```
-    */
-  def sort(): this.type = js.native
-  def sort(compareFn: js.Function2[/* a */ Device, /* b */ Device, Double]): this.type = js.native
-  /**
-    * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
-    * @param start The zero-based location in the array from which to start removing elements.
-    * @param deleteCount The number of elements to remove.
-    */
-  def splice(start: Double): js.Array[Device] = js.native
-  def splice(start: Double, deleteCount: Double): js.Array[Device] = js.native
-  /**
-    * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
-    * @param start The zero-based location in the array from which to start removing elements.
-    * @param deleteCount The number of elements to remove.
-    * @param items Elements to insert into the array in place of the deleted elements.
-    */
-  def splice(start: Double, deleteCount: Double, items: Device*): js.Array[Device] = js.native
-  /**
-    * Inserts new elements at the start of an array.
-    * @param items  Elements to insert at the start of the Array.
-    */
-  def unshift(items: Device*): Double = js.native
-  /**
-    * Returns an iterable of values in the array
-    */
-  def values(): IterableIterator[Device] = js.native
+/* Inlined std.Readonly<std.Record<'Blackberry PlayBook' | 'Blackberry PlayBook landscape' | 'BlackBerry Z30' | 'BlackBerry Z30 landscape' | 'Galaxy Note 3' | 'Galaxy Note 3 landscape' | 'Galaxy Note II' | 'Galaxy Note II landscape' | 'Galaxy S III' | 'Galaxy S III landscape' | 'Galaxy S5' | 'Galaxy S5 landscape' | 'Galaxy S8' | 'Galaxy S8 landscape' | 'Galaxy S9+' | 'Galaxy S9+ landscape' | 'Galaxy Tab S4' | 'Galaxy Tab S4 landscape' | 'iPad' | 'iPad landscape' | 'iPad (gen 6)' | 'iPad (gen 6) landscape' | 'iPad (gen 7)' | 'iPad (gen 7) landscape' | 'iPad Mini' | 'iPad Mini landscape' | 'iPad Pro' | 'iPad Pro landscape' | 'iPad Pro 11' | 'iPad Pro 11 landscape' | 'iPhone 4' | 'iPhone 4 landscape' | 'iPhone 5' | 'iPhone 5 landscape' | 'iPhone 6' | 'iPhone 6 landscape' | 'iPhone 6 Plus' | 'iPhone 6 Plus landscape' | 'iPhone 7' | 'iPhone 7 landscape' | 'iPhone 7 Plus' | 'iPhone 7 Plus landscape' | 'iPhone 8' | 'iPhone 8 landscape' | 'iPhone 8 Plus' | 'iPhone 8 Plus landscape' | 'iPhone SE' | 'iPhone SE landscape' | 'iPhone X' | 'iPhone X landscape' | 'iPhone XR' | 'iPhone XR landscape' | 'iPhone 11' | 'iPhone 11 landscape' | 'iPhone 11 Pro' | 'iPhone 11 Pro landscape' | 'iPhone 11 Pro Max' | 'iPhone 11 Pro Max landscape' | 'iPhone 12' | 'iPhone 12 landscape' | 'iPhone 12 Pro' | 'iPhone 12 Pro landscape' | 'iPhone 12 Pro Max' | 'iPhone 12 Pro Max landscape' | 'iPhone 12 Mini' | 'iPhone 12 Mini landscape' | 'iPhone 13' | 'iPhone 13 landscape' | 'iPhone 13 Pro' | 'iPhone 13 Pro landscape' | 'iPhone 13 Pro Max' | 'iPhone 13 Pro Max landscape' | 'iPhone 13 Mini' | 'iPhone 13 Mini landscape' | 'JioPhone 2' | 'JioPhone 2 landscape' | 'Kindle Fire HDX' | 'Kindle Fire HDX landscape' | 'LG Optimus L70' | 'LG Optimus L70 landscape' | 'Microsoft Lumia 550' | 'Microsoft Lumia 950' | 'Microsoft Lumia 950 landscape' | 'Nexus 10' | 'Nexus 10 landscape' | 'Nexus 4' | 'Nexus 4 landscape' | 'Nexus 5' | 'Nexus 5 landscape' | 'Nexus 5X' | 'Nexus 5X landscape' | 'Nexus 6' | 'Nexus 6 landscape' | 'Nexus 6P' | 'Nexus 6P landscape' | 'Nexus 7' | 'Nexus 7 landscape' | 'Nokia Lumia 520' | 'Nokia Lumia 520 landscape' | 'Nokia N9' | 'Nokia N9 landscape' | 'Pixel 2' | 'Pixel 2 landscape' | 'Pixel 2 XL' | 'Pixel 2 XL landscape' | 'Pixel 3' | 'Pixel 3 landscape' | 'Pixel 4' | 'Pixel 4 landscape' | 'Pixel 4a (5G)' | 'Pixel 4a (5G) landscape' | 'Pixel 5' | 'Pixel 5 landscape' | 'Moto G4' | 'Moto G4 landscape', puppeteer.puppeteer.Device>> */
+object devices {
+  
+  @JSImport("puppeteer", "devices.BlackBerry Z30")
+  @js.native
+  val BlackBerryZ30: Device = js.native
+  
+  @JSImport("puppeteer", "devices.BlackBerry Z30 landscape")
+  @js.native
+  val BlackBerryZ30Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Blackberry PlayBook")
+  @js.native
+  val BlackberryPlayBook: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Blackberry PlayBook landscape")
+  @js.native
+  val BlackberryPlayBookLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy Note 3")
+  @js.native
+  val GalaxyNote3: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy Note 3 landscape")
+  @js.native
+  val GalaxyNote3Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy Note II")
+  @js.native
+  val GalaxyNoteII: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy Note II landscape")
+  @js.native
+  val GalaxyNoteIILandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy S5")
+  @js.native
+  val GalaxyS5: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy S5 landscape")
+  @js.native
+  val GalaxyS5Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy S8")
+  @js.native
+  val GalaxyS8: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy S8 landscape")
+  @js.native
+  val GalaxyS8Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy S9+")
+  @js.native
+  val GalaxyS9: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy S9+ landscape")
+  @js.native
+  val GalaxyS9Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy S III")
+  @js.native
+  val GalaxySIII: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy S III landscape")
+  @js.native
+  val GalaxySIIILandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy Tab S4")
+  @js.native
+  val GalaxyTabS4: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Galaxy Tab S4 landscape")
+  @js.native
+  val GalaxyTabS4Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.JioPhone 2")
+  @js.native
+  val JioPhone2: Device = js.native
+  
+  @JSImport("puppeteer", "devices.JioPhone 2 landscape")
+  @js.native
+  val JioPhone2Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Kindle Fire HDX")
+  @js.native
+  val KindleFireHDX: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Kindle Fire HDX landscape")
+  @js.native
+  val KindleFireHDXLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.LG Optimus L70")
+  @js.native
+  val LGOptimusL70: Device = js.native
+  
+  @JSImport("puppeteer", "devices.LG Optimus L70 landscape")
+  @js.native
+  val LGOptimusL70Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Microsoft Lumia 550")
+  @js.native
+  val MicrosoftLumia550: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Microsoft Lumia 950")
+  @js.native
+  val MicrosoftLumia950: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Microsoft Lumia 950 landscape")
+  @js.native
+  val MicrosoftLumia950Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Moto G4")
+  @js.native
+  val MotoG4: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Moto G4 landscape")
+  @js.native
+  val MotoG4Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 10")
+  @js.native
+  val Nexus10: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 10 landscape")
+  @js.native
+  val Nexus10Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 4")
+  @js.native
+  val Nexus4: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 4 landscape")
+  @js.native
+  val Nexus4Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 5")
+  @js.native
+  val Nexus5: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 5 landscape")
+  @js.native
+  val Nexus5Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 5X")
+  @js.native
+  val Nexus5X: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 5X landscape")
+  @js.native
+  val Nexus5XLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 6")
+  @js.native
+  val Nexus6: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 6 landscape")
+  @js.native
+  val Nexus6Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 6P")
+  @js.native
+  val Nexus6P: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 6P landscape")
+  @js.native
+  val Nexus6PLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 7")
+  @js.native
+  val Nexus7: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nexus 7 landscape")
+  @js.native
+  val Nexus7Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nokia Lumia 520")
+  @js.native
+  val NokiaLumia520: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nokia Lumia 520 landscape")
+  @js.native
+  val NokiaLumia520Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nokia N9")
+  @js.native
+  val NokiaN9: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Nokia N9 landscape")
+  @js.native
+  val NokiaN9Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Pixel 2")
+  @js.native
+  val Pixel2: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Pixel 2 landscape")
+  @js.native
+  val Pixel2Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Pixel 2 XL")
+  @js.native
+  val Pixel2XL: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Pixel 2 XL landscape")
+  @js.native
+  val Pixel2XLLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Pixel 3")
+  @js.native
+  val Pixel3: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Pixel 3 landscape")
+  @js.native
+  val Pixel3Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Pixel 4")
+  @js.native
+  val Pixel4: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Pixel 4 landscape")
+  @js.native
+  val Pixel4Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Pixel 4a (5G)")
+  @js.native
+  val Pixel4a5G: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Pixel 4a (5G) landscape")
+  @js.native
+  val Pixel4a5GLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Pixel 5")
+  @js.native
+  val Pixel5: Device = js.native
+  
+  @JSImport("puppeteer", "devices.Pixel 5 landscape")
+  @js.native
+  val Pixel5Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPad")
+  @js.native
+  val iPad: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPad landscape")
+  @js.native
+  val iPadLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPad Mini")
+  @js.native
+  val iPadMini: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPad Mini landscape")
+  @js.native
+  val iPadMiniLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPad Pro")
+  @js.native
+  val iPadPro: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPad Pro 11")
+  @js.native
+  val iPadPro11: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPad Pro 11 landscape")
+  @js.native
+  val iPadPro11Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPad Pro landscape")
+  @js.native
+  val iPadProLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPad (gen 6)")
+  @js.native
+  val iPadgen6: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPad (gen 6) landscape")
+  @js.native
+  val iPadgen6Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPad (gen 7)")
+  @js.native
+  val iPadgen7: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPad (gen 7) landscape")
+  @js.native
+  val iPadgen7Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 11")
+  @js.native
+  val iPhone11: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 11 landscape")
+  @js.native
+  val iPhone11Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 11 Pro")
+  @js.native
+  val iPhone11Pro: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 11 Pro landscape")
+  @js.native
+  val iPhone11ProLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 11 Pro Max")
+  @js.native
+  val iPhone11ProMax: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 11 Pro Max landscape")
+  @js.native
+  val iPhone11ProMaxLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 12")
+  @js.native
+  val iPhone12: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 12 landscape")
+  @js.native
+  val iPhone12Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 12 Mini")
+  @js.native
+  val iPhone12Mini: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 12 Mini landscape")
+  @js.native
+  val iPhone12MiniLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 12 Pro")
+  @js.native
+  val iPhone12Pro: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 12 Pro landscape")
+  @js.native
+  val iPhone12ProLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 12 Pro Max")
+  @js.native
+  val iPhone12ProMax: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 12 Pro Max landscape")
+  @js.native
+  val iPhone12ProMaxLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 13")
+  @js.native
+  val iPhone13: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 13 landscape")
+  @js.native
+  val iPhone13Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 13 Mini")
+  @js.native
+  val iPhone13Mini: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 13 Mini landscape")
+  @js.native
+  val iPhone13MiniLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 13 Pro")
+  @js.native
+  val iPhone13Pro: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 13 Pro landscape")
+  @js.native
+  val iPhone13ProLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 13 Pro Max")
+  @js.native
+  val iPhone13ProMax: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 13 Pro Max landscape")
+  @js.native
+  val iPhone13ProMaxLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 4")
+  @js.native
+  val iPhone4: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 4 landscape")
+  @js.native
+  val iPhone4Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 5")
+  @js.native
+  val iPhone5: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 5 landscape")
+  @js.native
+  val iPhone5Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 6")
+  @js.native
+  val iPhone6: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 6 landscape")
+  @js.native
+  val iPhone6Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 6 Plus")
+  @js.native
+  val iPhone6Plus: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 6 Plus landscape")
+  @js.native
+  val iPhone6PlusLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 7")
+  @js.native
+  val iPhone7: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 7 landscape")
+  @js.native
+  val iPhone7Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 7 Plus")
+  @js.native
+  val iPhone7Plus: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 7 Plus landscape")
+  @js.native
+  val iPhone7PlusLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 8")
+  @js.native
+  val iPhone8: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 8 landscape")
+  @js.native
+  val iPhone8Landscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 8 Plus")
+  @js.native
+  val iPhone8Plus: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone 8 Plus landscape")
+  @js.native
+  val iPhone8PlusLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone SE")
+  @js.native
+  val iPhoneSE: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone SE landscape")
+  @js.native
+  val iPhoneSELandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone X")
+  @js.native
+  val iPhoneX: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone X landscape")
+  @js.native
+  val iPhoneXLandscape: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone XR")
+  @js.native
+  val iPhoneXR: Device = js.native
+  
+  @JSImport("puppeteer", "devices.iPhone XR landscape")
+  @js.native
+  val iPhoneXRLandscape: Device = js.native
 }
-

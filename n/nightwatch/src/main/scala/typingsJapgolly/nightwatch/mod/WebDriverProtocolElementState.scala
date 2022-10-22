@@ -1,12 +1,13 @@
 package typingsJapgolly.nightwatch.mod
 
-import typingsJapgolly.nightwatch.AnonHeight
+import typingsJapgolly.nightwatch.anon.HeightWidth
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebDriverProtocolElementState extends js.Object {
+trait WebDriverProtocolElementState extends StObject {
+  
   /**
     * Get the value of an element's attribute.
     */
@@ -16,6 +17,7 @@ trait WebDriverProtocolElementState extends js.Object {
     attributeName: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String | Null], Unit]
   ): this.type = js.native
+  
   /**
     * Retrieve the computed value of the given CSS property of the given element.
     *
@@ -27,6 +29,7 @@ trait WebDriverProtocolElementState extends js.Object {
     cssPropertyName: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
+  
   /**
     * Determine if an element is currently displayed.
     */
@@ -35,6 +38,7 @@ trait WebDriverProtocolElementState extends js.Object {
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
   ): this.type = js.native
+  
   /**
     * Determine if an element is currently enabled.
     */
@@ -43,6 +47,7 @@ trait WebDriverProtocolElementState extends js.Object {
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
   ): this.type = js.native
+  
   /**
     * Retrieve the qualified tag name of the given element.
     */
@@ -51,6 +56,7 @@ trait WebDriverProtocolElementState extends js.Object {
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
+  
   /**
     * Determine if an OPTION element, or an INPUT element of type checkbox or radio button is currently selected.
     */
@@ -59,14 +65,16 @@ trait WebDriverProtocolElementState extends js.Object {
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
   ): this.type = js.native
+  
   /**
     * Determine an element's size in pixels. The size will be returned as a JSON object with width and height properties.
     */
   def elementIdSize(id: String): this.type = js.native
   def elementIdSize(
     id: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonHeight], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[HeightWidth], Unit]
   ): this.type = js.native
+  
   /**
     * Returns the visible text for the element.
     */
@@ -76,4 +84,3 @@ trait WebDriverProtocolElementState extends js.Object {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
 }
-

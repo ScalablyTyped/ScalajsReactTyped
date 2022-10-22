@@ -1,20 +1,28 @@
 package typingsJapgolly.reduxFirstRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Bag extends js.Object {
-  var action: ReceivedAction | Action
-  var extra: js.Any
-}
-
-object Bag {
-  @scala.inline
-  def apply(action: ReceivedAction | Action, extra: js.Any): Bag = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any])
+trait Bag extends StObject {
   
+  var action: ReceivedAction | Action
+  
+  var extra: js.UndefOr[Any] = js.undefined
+}
+object Bag {
+  
+  inline def apply(action: ReceivedAction | Action): Bag = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bag]
   }
+  
+  extension [Self <: Bag](x: Self) {
+    
+    inline def setAction(value: ReceivedAction | Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setExtra(value: Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+  }
 }
-

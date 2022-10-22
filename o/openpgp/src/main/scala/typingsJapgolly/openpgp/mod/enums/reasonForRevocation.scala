@@ -1,65 +1,63 @@
 package typingsJapgolly.openpgp.mod.enums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait reasonForRevocation extends js.Object
-
+sealed trait reasonForRevocation extends StObject
 /**
   * {@link https://tools.ietf.org/html/rfc4880#section-5.2.3.23|RFC4880, section 5.2.3.23}
   */
 @JSImport("openpgp", "enums.reasonForRevocation")
 @js.native
-object reasonForRevocation extends js.Object {
+object reasonForRevocation extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[reasonForRevocation & Double] = js.native
+  
   /**
     * Key material has been comPromise<any>d (key revocations)
     */
   @js.native
-  sealed trait key_comPromised extends reasonForRevocation
+  sealed trait key_comPromised
+    extends StObject
+       with reasonForRevocation
+  /* 2 */ val key_comPromised: typingsJapgolly.openpgp.mod.enums.reasonForRevocation.key_comPromised & Double = js.native
   
   /**
     * Key is retired and no longer used (key revocations)
     */
   @js.native
-  sealed trait key_retired extends reasonForRevocation
+  sealed trait key_retired
+    extends StObject
+       with reasonForRevocation
+  /* 3 */ val key_retired: typingsJapgolly.openpgp.mod.enums.reasonForRevocation.key_retired & Double = js.native
   
   /**
     * Key is superseded (key revocations)
     */
   @js.native
-  sealed trait key_superseded extends reasonForRevocation
+  sealed trait key_superseded
+    extends StObject
+       with reasonForRevocation
+  /* 1 */ val key_superseded: typingsJapgolly.openpgp.mod.enums.reasonForRevocation.key_superseded & Double = js.native
   
   /**
     * No reason specified (key revocations or cert revocations)
     */
   @js.native
-  sealed trait no_reason extends reasonForRevocation
+  sealed trait no_reason
+    extends StObject
+       with reasonForRevocation
+  /* 0 */ val no_reason: typingsJapgolly.openpgp.mod.enums.reasonForRevocation.no_reason & Double = js.native
   
   /**
     * User ID information is no longer valid (cert revocations)
     */
   @js.native
-  sealed trait userid_invalid extends reasonForRevocation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[reasonForRevocation with Double] = js.native
-  /* 2 */ @js.native
-  object key_comPromised extends TopLevel[key_comPromised with Double]
-  
-  /* 3 */ @js.native
-  object key_retired extends TopLevel[key_retired with Double]
-  
-  /* 1 */ @js.native
-  object key_superseded extends TopLevel[key_superseded with Double]
-  
-  /* 0 */ @js.native
-  object no_reason extends TopLevel[no_reason with Double]
-  
-  /* 32 */ @js.native
-  object userid_invalid extends TopLevel[userid_invalid with Double]
-  
+  sealed trait userid_invalid
+    extends StObject
+       with reasonForRevocation
+  /* 32 */ val userid_invalid: typingsJapgolly.openpgp.mod.enums.reasonForRevocation.userid_invalid & Double = js.native
 }
-

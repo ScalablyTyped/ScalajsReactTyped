@@ -1,26 +1,34 @@
 package typingsJapgolly.gldatepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GlDatePickerDate extends js.Object {
+trait GlDatePickerDate extends StObject {
+  
   var date: js.Date
+  
   var repeatMonth: js.UndefOr[Boolean] = js.undefined
+  
   var repeatYear: js.UndefOr[Boolean] = js.undefined
 }
-
 object GlDatePickerDate {
-  @scala.inline
-  def apply(
-    date: js.Date,
-    repeatMonth: js.UndefOr[Boolean] = js.undefined,
-    repeatYear: js.UndefOr[Boolean] = js.undefined
-  ): GlDatePickerDate = {
+  
+  inline def apply(date: js.Date): GlDatePickerDate = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeatMonth)) __obj.updateDynamic("repeatMonth")(repeatMonth.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeatYear)) __obj.updateDynamic("repeatYear")(repeatYear.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlDatePickerDate]
   }
+  
+  extension [Self <: GlDatePickerDate](x: Self) {
+    
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatMonth(value: Boolean): Self = StObject.set(x, "repeatMonth", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatMonthUndefined: Self = StObject.set(x, "repeatMonth", js.undefined)
+    
+    inline def setRepeatYear(value: Boolean): Self = StObject.set(x, "repeatYear", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatYearUndefined: Self = StObject.set(x, "repeatYear", js.undefined)
+  }
 }
-

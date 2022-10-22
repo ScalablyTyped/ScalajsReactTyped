@@ -1,19 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkletOptions extends js.Object {
-  var credentials: js.UndefOr[org.scalajs.dom.experimental.RequestCredentials] = js.undefined
+trait WorkletOptions extends StObject {
+  
+  /* standard dom */
+  var credentials: js.UndefOr[org.scalajs.dom.RequestCredentials] = js.undefined
 }
-
 object WorkletOptions {
-  @scala.inline
-  def apply(credentials: org.scalajs.dom.experimental.RequestCredentials = null): WorkletOptions = {
+  
+  inline def apply(): WorkletOptions = {
     val __obj = js.Dynamic.literal()
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkletOptions]
   }
+  
+  extension [Self <: WorkletOptions](x: Self) {
+    
+    inline def setCredentials(value: org.scalajs.dom.RequestCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+  }
 }
-

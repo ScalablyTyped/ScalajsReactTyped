@@ -1,69 +1,78 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.vscode.Thenable
 import typingsJapgolly.vscode.mod.Disposable
 import typingsJapgolly.vscode.mod.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.azdata.mod.ComponentProperties because Already inherited
-- typingsJapgolly.azdata.mod.Component because var conflicts: CSSStyles, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined id, updateProperties, updateProperty, updateCssStyles, onValidityChanged, onValidityChanged, onValidityChanged, valid, validate, focus */ @js.native
-trait CardComponent extends CardProperties {
-  val id: String = js.native
+- typingsJapgolly.azdata.mod.ComponentWithIconProperties because var conflicts: CSSStyles, ariaHidden, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined iconPath, iconHeight, iconWidth, title
+- typingsJapgolly.azdata.mod.CardProperties because var conflicts: CSSStyles, ariaHidden, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined label, value, actions, descriptions, status, selected, cardType */ @js.native
+trait CardComponent
+  extends StObject
+     with Component {
+  
+  var actions: js.UndefOr[js.Array[ActionDescriptor]] = js.native
+  
+  /**
+    * Card Type, default: Details
+    */
+  var cardType: js.UndefOr[CardType] = js.native
+  
+  var descriptions: js.UndefOr[js.Array[CardDescriptionItem]] = js.native
+  
+  /**
+    * The height of the icon
+    */
+  var iconHeight: js.UndefOr[Double | String] = js.native
+  
+  /**
+    * The path for the icon with optional dark-theme away alternative
+    */
+  var iconPath: js.UndefOr[IconPath] = js.native
+  
+  /**
+    * The width of the icon
+    */
+  var iconWidth: js.UndefOr[Double | String] = js.native
+  
+  var label: String = js.native
+  
+  def onCardSelectedChanged(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
+  def onCardSelectedChanged(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native
+  def onCardSelectedChanged(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onCardSelectedChanged(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   @JSName("onCardSelectedChanged")
-  var onCardSelectedChanged_Original: Event[_] = js.native
-  @JSName("onDidActionClick")
-  var onDidActionClick_Original: Event[ActionDescriptor] = js.native
-  /**
-  		 * Whether the component is valid or not
-  		 */
-  val valid: Boolean = js.native
-  /**
-  		 * Focuses the component.
-  		 */
-  def focus(): Thenable[Unit] = js.native
-  def onCardSelectedChanged(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
-  def onCardSelectedChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
-  def onCardSelectedChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  def onDidActionClick(listener: js.Function1[/* e */ ActionDescriptor, _]): Disposable = js.native
-  def onDidActionClick(listener: js.Function1[/* e */ ActionDescriptor, _], thisArgs: js.Any): Disposable = js.native
+  var onCardSelectedChanged_Original: Event[Any] = js.native
+  
+  def onDidActionClick(listener: js.Function1[/* e */ ActionDescriptor, Any]): Disposable = js.native
+  def onDidActionClick(listener: js.Function1[/* e */ ActionDescriptor, Any], thisArgs: Any): Disposable = js.native
   def onDidActionClick(
-    listener: js.Function1[/* e */ ActionDescriptor, _],
-    thisArgs: js.Any,
+    listener: js.Function1[/* e */ ActionDescriptor, Any],
+    thisArgs: Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
+  def onDidActionClick(
+    listener: js.Function1[/* e */ ActionDescriptor, Any],
+    thisArgs: Unit,
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
+  @JSName("onDidActionClick")
+  var onDidActionClick_Original: Event[ActionDescriptor] = js.native
+  
   /**
-  		 * Event fired to notify that the component's validity has changed
-  		 */
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _]): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+    * Returns true if the card is selected
+    */
+  var selected: js.UndefOr[Boolean] = js.native
+  
+  var status: js.UndefOr[StatusIndicator] = js.native
+  
   /**
-  		 * Updates the specified CSS Styles and notifies the UI
-  		 * @param cssStyles The styles to update
-  		 * @returns Thenable that completes once the update has been applied to the UI
-  		 */
-  def updateCssStyles(cssStyles: StringDictionary[String]): Thenable[Unit] = js.native
-  /**
-  		 * Sends any updated properties of the component to the UI
-  		 *
-  		 * @returns Thenable that completes once the update
-  		 * has been applied in the UI
-  		 */
-  def updateProperties(properties: StringDictionary[js.Any]): Thenable[Unit] = js.native
-  /**
-  		 * Sends an updated property of the component to the UI
-  		 *
-  		 * @returns Thenable that completes once the update
-  		 * has been applied in the UI
-  		 */
-  def updateProperty(key: String, value: js.Any): Thenable[Unit] = js.native
-  /**
-  		 * Run the component's validations
-  		 */
-  def validate(): Thenable[Boolean] = js.native
+    * The title for the icon. This title will show when hovered over
+    */
+  var title: js.UndefOr[String] = js.native
+  
+  var value: js.UndefOr[String] = js.native
 }
-

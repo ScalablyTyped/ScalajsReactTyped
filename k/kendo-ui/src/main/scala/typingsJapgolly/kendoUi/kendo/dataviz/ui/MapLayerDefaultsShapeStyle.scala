@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapLayerDefaultsShapeStyle extends js.Object {
+trait MapLayerDefaultsShapeStyle extends StObject {
+  
   var fill: js.UndefOr[MapLayerDefaultsShapeStyleFill] = js.undefined
+  
   var stroke: js.UndefOr[MapLayerDefaultsShapeStyleStroke] = js.undefined
 }
-
 object MapLayerDefaultsShapeStyle {
-  @scala.inline
-  def apply(fill: MapLayerDefaultsShapeStyleFill = null, stroke: MapLayerDefaultsShapeStyleStroke = null): MapLayerDefaultsShapeStyle = {
+  
+  inline def apply(): MapLayerDefaultsShapeStyle = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayerDefaultsShapeStyle]
   }
+  
+  extension [Self <: MapLayerDefaultsShapeStyle](x: Self) {
+    
+    inline def setFill(value: MapLayerDefaultsShapeStyleFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setStroke(value: MapLayerDefaultsShapeStyleStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+  }
 }
-

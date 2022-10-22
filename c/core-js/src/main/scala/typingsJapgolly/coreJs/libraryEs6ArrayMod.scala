@@ -1,89 +1,113 @@
 package typingsJapgolly.coreJs
 
 import typingsJapgolly.std.ArrayLike
-import typingsJapgolly.std.Iterable
 import typingsJapgolly.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/es6/array", JSImport.Namespace)
-@js.native
-object libraryEs6ArrayMod extends js.Object {
-  def concat[T](array: ArrayLike[T], items: (Array[T] | T)*): Array[T] = js.native
-  def copyWithin[T](array: ArrayLike[T], target: Double, start: Double): Array[T] = js.native
-  def copyWithin[T](array: ArrayLike[T], target: Double, start: Double, end: Double): Array[T] = js.native
-  def entries[T](array: ArrayLike[T]): IterableIterator[js.Tuple2[Double, T]] = js.native
-  def every[T](
+/* was `typeof core.Array` */
+object libraryEs6ArrayMod {
+  
+  @JSImport("core-js/library/es6/array", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def concat[T](array: ArrayLike[T], items: (Array[T] | T)*): Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(scala.List(array.asInstanceOf[js.Any]).`++`(items.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Array[T]]
+  
+  inline def copyWithin[T](array: ArrayLike[T], target: Double, start: Double): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyWithin")(array.asInstanceOf[js.Any], target.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  inline def copyWithin[T](array: ArrayLike[T], target: Double, start: Double, end: Double): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyWithin")(array.asInstanceOf[js.Any], target.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  
+  inline def entries[T](array: ArrayLike[T]): IterableIterator[js.Tuple2[Double, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(array.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[js.Tuple2[Double, T]]]
+  
+  inline def every[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean]
-  ): Boolean = js.native
-  def every[T](
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def every[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean],
-    thisArg: js.Any
-  ): Boolean = js.native
-  def fill[T](array: ArrayLike[T], value: T): Array[T] = js.native
-  def fill[T](array: ArrayLike[T], value: T, start: Double): Array[T] = js.native
-  def fill[T](array: ArrayLike[T], value: T, start: Double, end: Double): Array[T] = js.native
-  def filter[T](
+    thisArg: Any
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def fill[T](array: ArrayLike[T], value: T): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  inline def fill[T](array: ArrayLike[T], value: T, start: Double): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  inline def fill[T](array: ArrayLike[T], value: T, start: Double, end: Double): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  inline def fill[T](array: ArrayLike[T], value: T, start: Unit, end: Double): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  
+  inline def filter[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean]
-  ): Array[T] = js.native
-  def filter[T](
+  ): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  inline def filter[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean],
-    thisArg: js.Any
-  ): Array[T] = js.native
-  def find[T](
+    thisArg: Any
+  ): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  
+  inline def find[T](
     array: ArrayLike[T],
     predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ Array[T], Boolean]
-  ): T = js.native
-  def find[T](
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def find[T](
     array: ArrayLike[T],
     predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ Array[T], Boolean],
-    thisArg: js.Any
-  ): T = js.native
-  def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean]): Double = js.native
-  def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean], thisArg: js.Any): Double = js.native
-  def forEach[T](
+    thisArg: Any
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean], thisArg: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def forEach[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Unit]
-  ): Unit = js.native
-  def forEach[T](
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEach[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Unit],
-    thisArg: js.Any
-  ): Unit = js.native
-  def from[T](arrayLike: ArrayLike[T]): Array[T] = js.native
-  def from[T](arrayLike: Iterable[T]): Array[T] = js.native
-  def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): Array[U] = js.native
-  def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): Array[U] = js.native
-  def from[T, U](arrayLike: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): Array[U] = js.native
-  def from[T, U](arrayLike: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): Array[U] = js.native
-  def includes[T](array: ArrayLike[T], value: T): Boolean = js.native
-  def includes[T](array: ArrayLike[T], value: T, fromIndex: Double): Boolean = js.native
-  def indexOf[T](array: ArrayLike[T], searchElement: T): Double = js.native
-  def indexOf[T](array: ArrayLike[T], searchElement: T, fromIndex: Double): Double = js.native
-  def isArray(arg: js.Any): /* is core-js.Array<any> */ Boolean = js.native
-  def join[T](array: ArrayLike[T]): java.lang.String = js.native
-  def join[T](array: ArrayLike[T], separator: java.lang.String): java.lang.String = js.native
-  def keys[T](array: ArrayLike[T]): IterableIterator[Double] = js.native
-  def lastIndexOf[T](array: ArrayLike[T], earchElement: T): Double = js.native
-  def lastIndexOf[T](array: ArrayLike[T], earchElement: T, fromIndex: Double): Double = js.native
-  def map[T, U](
+    thisArg: Any
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def from[T](arrayLike: js.Iterable[T]): Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayLike.asInstanceOf[js.Any]).asInstanceOf[Array[T]]
+  inline def from[T](arrayLike: ArrayLike[T]): Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayLike.asInstanceOf[js.Any]).asInstanceOf[Array[T]]
+  inline def from[T, U](arrayLike: js.Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayLike.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
+  inline def from[T, U](arrayLike: js.Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: Any): Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayLike.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
+  inline def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayLike.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
+  inline def from[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: Any): Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(arrayLike.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
+  
+  inline def includes[T](array: ArrayLike[T], value: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def includes[T](array: ArrayLike[T], value: T, fromIndex: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def indexOf[T](array: ArrayLike[T], searchElement: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], searchElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def indexOf[T](array: ArrayLike[T], searchElement: T, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], searchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def isArray(arg: Any): /* is core-js.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is core-js.Array<any> */ Boolean]
+  
+  inline def join[T](array: ArrayLike[T]): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(array.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def join[T](array: ArrayLike[T], separator: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(array.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+  
+  inline def keys[T](array: ArrayLike[T]): IterableIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(array.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Double]]
+  
+  inline def lastIndexOf[T](array: ArrayLike[T], earchElement: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], earchElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def lastIndexOf[T](array: ArrayLike[T], earchElement: T, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(array.asInstanceOf[js.Any], earchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def map[T, U](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], U]
-  ): Array[U] = js.native
-  def map[T, U](
+  ): Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
+  inline def map[T, U](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], U],
-    thisArg: js.Any
-  ): Array[U] = js.native
-  def of[T](items: T*): Array[T] = js.native
-  def pop[T](array: ArrayLike[T]): T = js.native
-  def push[T](array: ArrayLike[T], items: T*): Double = js.native
-  def reduce[T](
+    thisArg: Any
+  ): Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
+  
+  inline def of[T](items: T*): Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Array[T]]
+  
+  inline def pop[T](array: ArrayLike[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(array.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  inline def push[T](array: ArrayLike[T], items: T*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(scala.List(array.asInstanceOf[js.Any]).`++`(items.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
+  
+  inline def reduce[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[
       /* previousValue */ T, 
@@ -92,8 +116,8 @@ object libraryEs6ArrayMod extends js.Object {
       /* array */ Array[T], 
       T
     ]
-  ): T = js.native
-  def reduce[T](
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def reduce[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[
       /* previousValue */ T, 
@@ -103,8 +127,9 @@ object libraryEs6ArrayMod extends js.Object {
       T
     ],
     initialValue: T
-  ): T = js.native
-  def reduceRight[T](
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def reduceRight[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[
       /* previousValue */ T, 
@@ -113,8 +138,8 @@ object libraryEs6ArrayMod extends js.Object {
       /* array */ Array[T], 
       T
     ]
-  ): T = js.native
-  def reduceRight[T](
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def reduceRight[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[
       /* previousValue */ T, 
@@ -124,9 +149,9 @@ object libraryEs6ArrayMod extends js.Object {
       T
     ],
     initialValue: T
-  ): T = js.native
-  @JSName("reduceRight")
-  def reduceRight_TU_U[T, U](
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def reduceRight_TU_U[T, U](
     array: ArrayLike[T],
     callbackfn: js.Function4[
       /* previousValue */ U, 
@@ -136,9 +161,9 @@ object libraryEs6ArrayMod extends js.Object {
       U
     ],
     initialValue: U
-  ): U = js.native
-  @JSName("reduce")
-  def reduce_TU_U[T, U](
+  ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[U]
+  
+  inline def reduce_TU_U[T, U](
     array: ArrayLike[T],
     callbackfn: js.Function4[
       /* previousValue */ U, 
@@ -148,45 +173,54 @@ object libraryEs6ArrayMod extends js.Object {
       U
     ],
     initialValue: U
-  ): U = js.native
-  def reverse[T](array: ArrayLike[T]): Array[T] = js.native
-  def shift[T](array: ArrayLike[T]): T = js.native
-  def slice[T](array: ArrayLike[T]): Array[T] = js.native
-  def slice[T](array: ArrayLike[T], start: Double): Array[T] = js.native
-  def slice[T](array: ArrayLike[T], start: Double, end: Double): Array[T] = js.native
-  def some[T](
+  ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[U]
+  
+  inline def reverse[T](array: ArrayLike[T]): Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(array.asInstanceOf[js.Any]).asInstanceOf[Array[T]]
+  
+  inline def shift[T](array: ArrayLike[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(array.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  inline def slice[T](array: ArrayLike[T]): Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any]).asInstanceOf[Array[T]]
+  inline def slice[T](array: ArrayLike[T], start: Double): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  inline def slice[T](array: ArrayLike[T], start: Double, end: Double): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  inline def slice[T](array: ArrayLike[T], start: Unit, end: Double): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  
+  inline def some[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean]
-  ): Boolean = js.native
-  def some[T](
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def some[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean],
-    thisArg: js.Any
-  ): Boolean = js.native
-  def sort[T](array: ArrayLike[T]): Array[T] = js.native
-  def sort[T](array: ArrayLike[T], compareFn: js.Function2[/* a */ T, /* b */ T, Double]): Array[T] = js.native
-  def splice[T](array: ArrayLike[T], start: Double): Array[T] = js.native
-  def splice[T](array: ArrayLike[T], start: Double, deleteCount: Double, items: T*): Array[T] = js.native
-  def turn[T](
+    thisArg: Any
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def sort[T](array: ArrayLike[T]): Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(array.asInstanceOf[js.Any]).asInstanceOf[Array[T]]
+  inline def sort[T](array: ArrayLike[T], compareFn: js.Function2[/* a */ T, /* b */ T, Double]): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(array.asInstanceOf[js.Any], compareFn.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  
+  inline def splice[T](array: ArrayLike[T], start: Double, deleteCount: Double, items: T*): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Array[T]]
+  inline def splice[T](array: ArrayLike[T], start: Double, deleteCount: Unit, items: T*): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Array[T]]
+  
+  inline def turn[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[/* memo */ Array[T], /* value */ T, /* index */ Double, /* array */ Array[T], Unit]
-  ): Array[T] = js.native
-  def turn[T](
+  ): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("turn")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  inline def turn[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[/* memo */ Array[T], /* value */ T, /* index */ Double, /* array */ Array[T], Unit],
     memo: Array[T]
-  ): Array[T] = js.native
-  def turn[T, U](
+  ): Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("turn")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], memo.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
+  inline def turn[T, U](
     array: ArrayLike[T],
     callbackfn: js.Function4[/* memo */ U, /* value */ T, /* index */ Double, /* array */ Array[T], Unit],
     memo: U
-  ): U = js.native
-  @JSName("turn")
-  def turn_TU_U[T, U](
+  ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("turn")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], memo.asInstanceOf[js.Any])).asInstanceOf[U]
+  
+  inline def turn_TU_U[T, U](
     array: ArrayLike[T],
     callbackfn: js.Function4[/* memo */ U, /* value */ T, /* index */ Double, /* array */ Array[T], Unit]
-  ): U = js.native
-  def unshift[T](array: ArrayLike[T], items: T*): Double = js.native
-  def values[T](array: ArrayLike[T]): IterableIterator[T] = js.native
+  ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("turn")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[U]
+  
+  inline def unshift[T](array: ArrayLike[T], items: T*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unshift")(scala.List(array.asInstanceOf[js.Any]).`++`(items.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
+  
+  inline def values[T](array: ArrayLike[T]): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(array.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[T]]
 }
-

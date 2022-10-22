@@ -1,81 +1,115 @@
 package typingsJapgolly.autolinker
 
-import typingsJapgolly.autolinker.autolinkerMod.HashtagConfig
-import typingsJapgolly.autolinker.autolinkerMod.HashtagServices
-import typingsJapgolly.autolinker.autolinkerMod.MentionConfig
-import typingsJapgolly.autolinker.autolinkerMod.MentionServices
-import typingsJapgolly.autolinker.autolinkerMod.UrlMatchTypeOptions
+import typingsJapgolly.autolinker.distCommonjsAutolinkerMod.HashtagConfig
+import typingsJapgolly.autolinker.distCommonjsAutolinkerMod.MentionConfig
+import typingsJapgolly.autolinker.distCommonjsMatchMatchMod.MatchType
+import typingsJapgolly.autolinker.distCommonjsMatchUrlMatchMod.UrlMatchType
+import typingsJapgolly.autolinker.distCommonjsParserHashtagUtilsMod.HashtagService
+import typingsJapgolly.autolinker.distCommonjsParserMentionUtilsMod.MentionService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autolinkerStrings {
-  @js.native
-  sealed trait `3Dot11Dot1` extends js.Object
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait email
+    extends StObject
+       with MatchType
+  inline def email: email = "email".asInstanceOf[email]
+  
+  @js.native
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait facebook
-    extends HashtagConfig
-       with HashtagServices
+    extends StObject
+       with HashtagConfig
+       with HashtagService
+  inline def facebook: facebook = "facebook".asInstanceOf[facebook]
+  
+  @js.native
+  sealed trait hashtag
+    extends StObject
+       with MatchType
+  inline def hashtag: hashtag = "hashtag".asInstanceOf[hashtag]
   
   @js.native
   sealed trait instagram
-    extends HashtagConfig
-       with HashtagServices
+    extends StObject
+       with HashtagConfig
+       with HashtagService
        with MentionConfig
-       with MentionServices
+       with MentionService
+  inline def instagram: instagram = "instagram".asInstanceOf[instagram]
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait ipV4
+    extends StObject
+       with UrlMatchType
+  inline def ipV4: ipV4 = "ipV4".asInstanceOf[ipV4]
   
   @js.native
-  sealed trait scheme extends UrlMatchTypeOptions
+  sealed trait mention
+    extends StObject
+       with MatchType
+  inline def mention: mention = "mention".asInstanceOf[mention]
   
   @js.native
-  sealed trait smart extends js.Object
+  sealed trait middle extends StObject
+  inline def middle: middle = "middle".asInstanceOf[middle]
+  
+  @js.native
+  sealed trait phone
+    extends StObject
+       with MatchType
+  inline def phone: phone = "phone".asInstanceOf[phone]
+  
+  @js.native
+  sealed trait scheme
+    extends StObject
+       with UrlMatchType
+  inline def scheme: scheme = "scheme".asInstanceOf[scheme]
+  
+  @js.native
+  sealed trait smart extends StObject
+  inline def smart: smart = "smart".asInstanceOf[smart]
   
   @js.native
   sealed trait soundcloud
-    extends MentionConfig
-       with MentionServices
+    extends StObject
+       with MentionConfig
+       with MentionService
+  inline def soundcloud: soundcloud = "soundcloud".asInstanceOf[soundcloud]
   
   @js.native
-  sealed trait tld extends UrlMatchTypeOptions
+  sealed trait tiktok
+    extends StObject
+       with HashtagConfig
+       with HashtagService
+       with MentionConfig
+       with MentionService
+  inline def tiktok: tiktok = "tiktok".asInstanceOf[tiktok]
+  
+  @js.native
+  sealed trait tld
+    extends StObject
+       with UrlMatchType
+  inline def tld: tld = "tld".asInstanceOf[tld]
   
   @js.native
   sealed trait twitter
-    extends HashtagConfig
-       with HashtagServices
+    extends StObject
+       with HashtagConfig
+       with HashtagService
        with MentionConfig
-       with MentionServices
+       with MentionService
+  inline def twitter: twitter = "twitter".asInstanceOf[twitter]
   
   @js.native
-  sealed trait www extends UrlMatchTypeOptions
-  
-  @scala.inline
-  def `3Dot11Dot1`: `3Dot11Dot1` = "3.11.1".asInstanceOf[`3Dot11Dot1`]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def facebook: facebook = "facebook".asInstanceOf[facebook]
-  @scala.inline
-  def instagram: instagram = "instagram".asInstanceOf[instagram]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def scheme: scheme = "scheme".asInstanceOf[scheme]
-  @scala.inline
-  def smart: smart = "smart".asInstanceOf[smart]
-  @scala.inline
-  def soundcloud: soundcloud = "soundcloud".asInstanceOf[soundcloud]
-  @scala.inline
-  def tld: tld = "tld".asInstanceOf[tld]
-  @scala.inline
-  def twitter: twitter = "twitter".asInstanceOf[twitter]
-  @scala.inline
-  def www: www = "www".asInstanceOf[www]
+  sealed trait url
+    extends StObject
+       with MatchType
+  inline def url: url = "url".asInstanceOf[url]
 }
-

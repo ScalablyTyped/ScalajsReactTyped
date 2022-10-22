@@ -1,12 +1,18 @@
 package typingsJapgolly.reactOnsenui.mod
 
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameAnimation
+import typingsJapgolly.reactOnsenui.anon.Collapse
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "SplitterSide")
 @js.native
-class SplitterSide ()
-  extends typingsJapgolly.react.mod.Component[HTMLAttributesidclassNameAnimation, js.Any, js.Any]
-
+open class SplitterSide protected () extends Component[Collapse, Any] {
+  def this(props: HTMLAttributesidclassName & Collapse) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HTMLAttributesidclassName & Collapse, context: Any) = this()
+}

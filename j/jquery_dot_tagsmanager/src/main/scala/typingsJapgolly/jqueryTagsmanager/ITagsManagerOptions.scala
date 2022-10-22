@@ -1,89 +1,162 @@
 package typingsJapgolly.jqueryTagsmanager
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITagsManagerOptions extends js.Object {
+trait ITagsManagerOptions extends StObject {
+  
   var AjaxPush: js.UndefOr[String] = js.undefined
+  
   var CapitalizeFirstLetter: js.UndefOr[Boolean] = js.undefined
+  
   var backspace: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var blinkBGColor_1: js.UndefOr[String] = js.undefined
+  
   var blinkBGColor_2: js.UndefOr[String] = js.undefined
+  
   var deleteTagsOnBackspace: js.UndefOr[Boolean] = js.undefined
-   //url
+  
+  //url
   var delimeters: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var hiddenTagListId: js.UndefOr[String] = js.undefined
+  
   var hiddenTagListName: js.UndefOr[String] = js.undefined
+  
   var isClearInputOnEsc: js.UndefOr[Boolean] = js.undefined
+  
   var maxTags: js.UndefOr[Double] = js.undefined
-  var prefilled: js.UndefOr[js.Any] = js.undefined
+  
+  var prefilled: js.UndefOr[Any] = js.undefined
+  
   var preventSubmitOnEnter: js.UndefOr[Boolean] = js.undefined
+  
   var tagClass: js.UndefOr[String] = js.undefined
+  
   var tagCloseIcon: js.UndefOr[String] = js.undefined
+  
   var tagsContainer: js.UndefOr[HTMLElement] = js.undefined
+  
   var typeahead: js.UndefOr[Boolean] = js.undefined
+  
   var typeaheadAjaxPolling: js.UndefOr[Boolean] = js.undefined
+  
   var typeaheadAjaxSource: js.UndefOr[String] = js.undefined
+  
   var typeaheadDelegate: js.UndefOr[js.Function] = js.undefined
+  
   var typeaheadOverrides: js.UndefOr[ITypeaheadOverrides] = js.undefined
-  var typeaheadSource: js.UndefOr[js.Any] = js.undefined
+  
+  var typeaheadSource: js.UndefOr[Any] = js.undefined
+  
   var validator: js.UndefOr[js.Function] = js.undefined
 }
-
 object ITagsManagerOptions {
-  @scala.inline
-  def apply(
-    AjaxPush: String = null,
-    CapitalizeFirstLetter: js.UndefOr[Boolean] = js.undefined,
-    backspace: js.Array[Double] = null,
-    blinkBGColor_1: String = null,
-    blinkBGColor_2: String = null,
-    deleteTagsOnBackspace: js.UndefOr[Boolean] = js.undefined,
-    delimeters: js.Array[Double] = null,
-    hiddenTagListId: String = null,
-    hiddenTagListName: String = null,
-    isClearInputOnEsc: js.UndefOr[Boolean] = js.undefined,
-    maxTags: Int | Double = null,
-    prefilled: js.Any = null,
-    preventSubmitOnEnter: js.UndefOr[Boolean] = js.undefined,
-    tagClass: String = null,
-    tagCloseIcon: String = null,
-    tagsContainer: HTMLElement = null,
-    typeahead: js.UndefOr[Boolean] = js.undefined,
-    typeaheadAjaxPolling: js.UndefOr[Boolean] = js.undefined,
-    typeaheadAjaxSource: String = null,
-    typeaheadDelegate: js.Function = null,
-    typeaheadOverrides: ITypeaheadOverrides = null,
-    typeaheadSource: js.Any = null,
-    validator: js.Function = null
-  ): ITagsManagerOptions = {
+  
+  inline def apply(): ITagsManagerOptions = {
     val __obj = js.Dynamic.literal()
-    if (AjaxPush != null) __obj.updateDynamic("AjaxPush")(AjaxPush.asInstanceOf[js.Any])
-    if (!js.isUndefined(CapitalizeFirstLetter)) __obj.updateDynamic("CapitalizeFirstLetter")(CapitalizeFirstLetter.asInstanceOf[js.Any])
-    if (backspace != null) __obj.updateDynamic("backspace")(backspace.asInstanceOf[js.Any])
-    if (blinkBGColor_1 != null) __obj.updateDynamic("blinkBGColor_1")(blinkBGColor_1.asInstanceOf[js.Any])
-    if (blinkBGColor_2 != null) __obj.updateDynamic("blinkBGColor_2")(blinkBGColor_2.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteTagsOnBackspace)) __obj.updateDynamic("deleteTagsOnBackspace")(deleteTagsOnBackspace.asInstanceOf[js.Any])
-    if (delimeters != null) __obj.updateDynamic("delimeters")(delimeters.asInstanceOf[js.Any])
-    if (hiddenTagListId != null) __obj.updateDynamic("hiddenTagListId")(hiddenTagListId.asInstanceOf[js.Any])
-    if (hiddenTagListName != null) __obj.updateDynamic("hiddenTagListName")(hiddenTagListName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isClearInputOnEsc)) __obj.updateDynamic("isClearInputOnEsc")(isClearInputOnEsc.asInstanceOf[js.Any])
-    if (maxTags != null) __obj.updateDynamic("maxTags")(maxTags.asInstanceOf[js.Any])
-    if (prefilled != null) __obj.updateDynamic("prefilled")(prefilled.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventSubmitOnEnter)) __obj.updateDynamic("preventSubmitOnEnter")(preventSubmitOnEnter.asInstanceOf[js.Any])
-    if (tagClass != null) __obj.updateDynamic("tagClass")(tagClass.asInstanceOf[js.Any])
-    if (tagCloseIcon != null) __obj.updateDynamic("tagCloseIcon")(tagCloseIcon.asInstanceOf[js.Any])
-    if (tagsContainer != null) __obj.updateDynamic("tagsContainer")(tagsContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(typeahead)) __obj.updateDynamic("typeahead")(typeahead.asInstanceOf[js.Any])
-    if (!js.isUndefined(typeaheadAjaxPolling)) __obj.updateDynamic("typeaheadAjaxPolling")(typeaheadAjaxPolling.asInstanceOf[js.Any])
-    if (typeaheadAjaxSource != null) __obj.updateDynamic("typeaheadAjaxSource")(typeaheadAjaxSource.asInstanceOf[js.Any])
-    if (typeaheadDelegate != null) __obj.updateDynamic("typeaheadDelegate")(typeaheadDelegate.asInstanceOf[js.Any])
-    if (typeaheadOverrides != null) __obj.updateDynamic("typeaheadOverrides")(typeaheadOverrides.asInstanceOf[js.Any])
-    if (typeaheadSource != null) __obj.updateDynamic("typeaheadSource")(typeaheadSource.asInstanceOf[js.Any])
-    if (validator != null) __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITagsManagerOptions]
   }
+  
+  extension [Self <: ITagsManagerOptions](x: Self) {
+    
+    inline def setAjaxPush(value: String): Self = StObject.set(x, "AjaxPush", value.asInstanceOf[js.Any])
+    
+    inline def setAjaxPushUndefined: Self = StObject.set(x, "AjaxPush", js.undefined)
+    
+    inline def setBackspace(value: js.Array[Double]): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
+    
+    inline def setBackspaceUndefined: Self = StObject.set(x, "backspace", js.undefined)
+    
+    inline def setBackspaceVarargs(value: Double*): Self = StObject.set(x, "backspace", js.Array(value*))
+    
+    inline def setBlinkBGColor_1(value: String): Self = StObject.set(x, "blinkBGColor_1", value.asInstanceOf[js.Any])
+    
+    inline def setBlinkBGColor_1Undefined: Self = StObject.set(x, "blinkBGColor_1", js.undefined)
+    
+    inline def setBlinkBGColor_2(value: String): Self = StObject.set(x, "blinkBGColor_2", value.asInstanceOf[js.Any])
+    
+    inline def setBlinkBGColor_2Undefined: Self = StObject.set(x, "blinkBGColor_2", js.undefined)
+    
+    inline def setCapitalizeFirstLetter(value: Boolean): Self = StObject.set(x, "CapitalizeFirstLetter", value.asInstanceOf[js.Any])
+    
+    inline def setCapitalizeFirstLetterUndefined: Self = StObject.set(x, "CapitalizeFirstLetter", js.undefined)
+    
+    inline def setDeleteTagsOnBackspace(value: Boolean): Self = StObject.set(x, "deleteTagsOnBackspace", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteTagsOnBackspaceUndefined: Self = StObject.set(x, "deleteTagsOnBackspace", js.undefined)
+    
+    inline def setDelimeters(value: js.Array[Double]): Self = StObject.set(x, "delimeters", value.asInstanceOf[js.Any])
+    
+    inline def setDelimetersUndefined: Self = StObject.set(x, "delimeters", js.undefined)
+    
+    inline def setDelimetersVarargs(value: Double*): Self = StObject.set(x, "delimeters", js.Array(value*))
+    
+    inline def setHiddenTagListId(value: String): Self = StObject.set(x, "hiddenTagListId", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenTagListIdUndefined: Self = StObject.set(x, "hiddenTagListId", js.undefined)
+    
+    inline def setHiddenTagListName(value: String): Self = StObject.set(x, "hiddenTagListName", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenTagListNameUndefined: Self = StObject.set(x, "hiddenTagListName", js.undefined)
+    
+    inline def setIsClearInputOnEsc(value: Boolean): Self = StObject.set(x, "isClearInputOnEsc", value.asInstanceOf[js.Any])
+    
+    inline def setIsClearInputOnEscUndefined: Self = StObject.set(x, "isClearInputOnEsc", js.undefined)
+    
+    inline def setMaxTags(value: Double): Self = StObject.set(x, "maxTags", value.asInstanceOf[js.Any])
+    
+    inline def setMaxTagsUndefined: Self = StObject.set(x, "maxTags", js.undefined)
+    
+    inline def setPrefilled(value: Any): Self = StObject.set(x, "prefilled", value.asInstanceOf[js.Any])
+    
+    inline def setPrefilledUndefined: Self = StObject.set(x, "prefilled", js.undefined)
+    
+    inline def setPreventSubmitOnEnter(value: Boolean): Self = StObject.set(x, "preventSubmitOnEnter", value.asInstanceOf[js.Any])
+    
+    inline def setPreventSubmitOnEnterUndefined: Self = StObject.set(x, "preventSubmitOnEnter", js.undefined)
+    
+    inline def setTagClass(value: String): Self = StObject.set(x, "tagClass", value.asInstanceOf[js.Any])
+    
+    inline def setTagClassUndefined: Self = StObject.set(x, "tagClass", js.undefined)
+    
+    inline def setTagCloseIcon(value: String): Self = StObject.set(x, "tagCloseIcon", value.asInstanceOf[js.Any])
+    
+    inline def setTagCloseIconUndefined: Self = StObject.set(x, "tagCloseIcon", js.undefined)
+    
+    inline def setTagsContainer(value: HTMLElement): Self = StObject.set(x, "tagsContainer", value.asInstanceOf[js.Any])
+    
+    inline def setTagsContainerUndefined: Self = StObject.set(x, "tagsContainer", js.undefined)
+    
+    inline def setTypeahead(value: Boolean): Self = StObject.set(x, "typeahead", value.asInstanceOf[js.Any])
+    
+    inline def setTypeaheadAjaxPolling(value: Boolean): Self = StObject.set(x, "typeaheadAjaxPolling", value.asInstanceOf[js.Any])
+    
+    inline def setTypeaheadAjaxPollingUndefined: Self = StObject.set(x, "typeaheadAjaxPolling", js.undefined)
+    
+    inline def setTypeaheadAjaxSource(value: String): Self = StObject.set(x, "typeaheadAjaxSource", value.asInstanceOf[js.Any])
+    
+    inline def setTypeaheadAjaxSourceUndefined: Self = StObject.set(x, "typeaheadAjaxSource", js.undefined)
+    
+    inline def setTypeaheadDelegate(value: js.Function): Self = StObject.set(x, "typeaheadDelegate", value.asInstanceOf[js.Any])
+    
+    inline def setTypeaheadDelegateUndefined: Self = StObject.set(x, "typeaheadDelegate", js.undefined)
+    
+    inline def setTypeaheadOverrides(value: ITypeaheadOverrides): Self = StObject.set(x, "typeaheadOverrides", value.asInstanceOf[js.Any])
+    
+    inline def setTypeaheadOverridesUndefined: Self = StObject.set(x, "typeaheadOverrides", js.undefined)
+    
+    inline def setTypeaheadSource(value: Any): Self = StObject.set(x, "typeaheadSource", value.asInstanceOf[js.Any])
+    
+    inline def setTypeaheadSourceUndefined: Self = StObject.set(x, "typeaheadSource", js.undefined)
+    
+    inline def setTypeaheadUndefined: Self = StObject.set(x, "typeahead", js.undefined)
+    
+    inline def setValidator(value: js.Function): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+    
+    inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+  }
 }
-

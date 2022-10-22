@@ -1,27 +1,24 @@
-package typingsJapgolly.natsHemera
+package typingsJapgolly.natsHemera.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ActHandler = js.ThisFunction2[
-    /* this */ typingsJapgolly.natsHemera.mod.Hemera[
-      typingsJapgolly.natsHemera.mod.ClientRequest, 
-      typingsJapgolly.natsHemera.mod.ClientResponse
-    ], 
-    /* error */ js.Error, 
-    /* response */ typingsJapgolly.natsHemera.mod.ClientResult, 
-    scala.Unit
-  ]
-  type ClientResult = js.Any
-  type NoContext = scala.Null
-  type NodeCallback = js.Function2[
-    /* error */ js.UndefOr[js.Error | scala.Null], 
-    /* success */ js.UndefOr[js.Any], 
-    scala.Unit
-  ]
-  type Plugin = js.Function
-  type Request = scala.Null
-  type Response = scala.Null
-}
+
+type ActHandler = js.ThisFunction2[
+/* this */ Hemera[ClientRequest, ClientResponse], 
+/* error */ js.Error, 
+/* response */ ClientResult, 
+Unit]
+
+type ClientResult = Any
+
+type NoContext = Null
+
+type NodeCallback = js.Function2[/* error */ js.UndefOr[js.Error | Null], /* success */ js.UndefOr[Any], Unit]
+
+type Plugin = js.Function
+
+type Request = Null
+
+type Response = Null

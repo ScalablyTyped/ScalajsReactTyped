@@ -1,22 +1,34 @@
 package typingsJapgolly.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AuthenticationClientOptions extends js.Object {
+trait AuthenticationClientOptions extends StObject {
+  
   var clientId: js.UndefOr[String] = js.undefined
+  
   var clientSecret: js.UndefOr[String] = js.undefined
+  
   var domain: String
 }
-
 object AuthenticationClientOptions {
-  @scala.inline
-  def apply(domain: String, clientId: String = null, clientSecret: String = null): AuthenticationClientOptions = {
+  
+  inline def apply(domain: String): AuthenticationClientOptions = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationClientOptions]
   }
+  
+  extension [Self <: AuthenticationClientOptions](x: Self) {
+    
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    
+    inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
+    
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+  }
 }
-

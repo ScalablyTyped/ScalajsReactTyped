@@ -1,42 +1,54 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColumnMovedEventUIParam extends js.Object {
+trait ColumnMovedEventUIParam extends StObject {
+  
   /**
-  	 * Gets the column key of the column that was moved.
-  	 */
+    * Gets the column key of the column that was moved.
+    */
   var columnKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the new column index of the column that was being moved.
-  	 */
+    * Gets the new column index of the column that was being moved.
+    */
   var newIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets the previous column index of the column that was moved.
-  	 */
+    * Gets the previous column index of the column that was moved.
+    */
   var oldIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets a reference to the widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ColumnMovedEventUIParam {
-  @scala.inline
-  def apply(
-    columnKey: String = null,
-    newIndex: Int | Double = null,
-    oldIndex: Int | Double = null,
-    owner: js.Any = null
-  ): ColumnMovedEventUIParam = {
+  
+  inline def apply(): ColumnMovedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
-    if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
-    if (oldIndex != null) __obj.updateDynamic("oldIndex")(oldIndex.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnMovedEventUIParam]
   }
+  
+  extension [Self <: ColumnMovedEventUIParam](x: Self) {
+    
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    
+    inline def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
+    
+    inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+    
+    inline def setOldIndexUndefined: Self = StObject.set(x, "oldIndex", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

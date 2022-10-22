@@ -1,9 +1,9 @@
 package typingsJapgolly.naverWhale.whale
 
 import typingsJapgolly.chrome.chrome.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Idle
@@ -13,12 +13,22 @@ import scala.scalajs.js.annotation._
   * Permissions:  "idle"
   * @since Chrome 6.
   */
-@JSGlobal("chrome.idle")
-@js.native
-object idle extends js.Object {
-  var onStateChanged: typingsJapgolly.chrome.chrome.idle.IdleStateChangedEvent = js.native
-  def queryState(detectionIntervalInSeconds: Double, callback: js.Function1[/* newState */ String, Unit]): Unit = js.native
-  def setDetectionInterval(intervalInSeconds: Double): Unit = js.native
-  type IdleStateChangedEvent = Event[js.Function1[/* newState */ String, Unit]]
+object idle {
+  
+  /* Rewritten from type alias, can be one of: 
+    - typingsJapgolly.naverWhale.naverWhaleStrings.active
+    - typingsJapgolly.naverWhale.naverWhaleStrings.idle
+    - typingsJapgolly.naverWhale.naverWhaleStrings.locked
+  */
+  trait IdleState extends StObject
+  object IdleState {
+    
+    inline def active: typingsJapgolly.naverWhale.naverWhaleStrings.active = "active".asInstanceOf[typingsJapgolly.naverWhale.naverWhaleStrings.active]
+    
+    inline def idle: typingsJapgolly.naverWhale.naverWhaleStrings.idle = "idle".asInstanceOf[typingsJapgolly.naverWhale.naverWhaleStrings.idle]
+    
+    inline def locked: typingsJapgolly.naverWhale.naverWhaleStrings.locked = "locked".asInstanceOf[typingsJapgolly.naverWhale.naverWhaleStrings.locked]
+  }
+  
+  type IdleStateChangedEvent = Event[js.Function1[/* newState */ typingsJapgolly.chrome.chrome.idle.IdleState, Unit]]
 }
-

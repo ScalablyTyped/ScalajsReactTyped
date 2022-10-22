@@ -1,15 +1,19 @@
 package typingsJapgolly.photonui.photonui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("photonui.BoxLayout")
 @js.native
-class BoxLayout () extends Layout {
+trait BoxLayout
+  extends StObject
+     with Layout {
+  
   var horizontalPadding: Double = js.native
+  
   var orientation: String = js.native
+  
   var spacing: Double = js.native
+  
   var verticalPadding: Double = js.native
 }
-

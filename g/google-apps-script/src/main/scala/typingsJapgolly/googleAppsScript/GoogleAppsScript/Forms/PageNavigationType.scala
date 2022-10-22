@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PageNavigationType extends js.Object
-
+sealed trait PageNavigationType extends StObject
 /**
   * An enum representing the supported types of page navigation. Page navigation types can be
   * accessed from FormApp.PageNavigationType.
@@ -37,32 +35,25 @@ sealed trait PageNavigationType extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Forms.PageNavigationType")
 @js.native
-object PageNavigationType extends js.Object {
-  @js.native
-  sealed trait CONTINUE extends PageNavigationType
+object PageNavigationType extends StObject {
   
   @js.native
-  sealed trait GO_TO_PAGE extends PageNavigationType
+  sealed trait CONTINUE
+    extends StObject
+       with PageNavigationType
   
   @js.native
-  sealed trait RESTART extends PageNavigationType
+  sealed trait GO_TO_PAGE
+    extends StObject
+       with PageNavigationType
   
   @js.native
-  sealed trait SUBMIT extends PageNavigationType
+  sealed trait RESTART
+    extends StObject
+       with PageNavigationType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PageNavigationType with Double] = js.native
-  /* 0 */ @js.native
-  object CONTINUE extends TopLevel[CONTINUE with Double]
-  
-  /* 1 */ @js.native
-  object GO_TO_PAGE extends TopLevel[GO_TO_PAGE with Double]
-  
-  /* 2 */ @js.native
-  object RESTART extends TopLevel[RESTART with Double]
-  
-  /* 3 */ @js.native
-  object SUBMIT extends TopLevel[SUBMIT with Double]
-  
+  @js.native
+  sealed trait SUBMIT
+    extends StObject
+       with PageNavigationType
 }
-

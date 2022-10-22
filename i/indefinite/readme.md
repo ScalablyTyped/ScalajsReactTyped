@@ -10,10 +10,10 @@ Prefix a noun with an indefinite article - a or an - based on whether it begins 
 | ------------------ | :-------------: |
 | Full name          | indefinite |
 | Keywords           | article, a, an, grammar, noun |
-| # releases         | 9 |
-| # dependents       | 3 |
-| # downloads        | 168504 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 228358.0 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/tandrewnichols/indefinite)

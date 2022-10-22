@@ -1,18 +1,15 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.unsupported
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnsupportedLayer extends Layer {
+trait UnsupportedLayer
+  extends StObject
+     with Layer {
+  
   @JSName("type")
   val type_UnsupportedLayer: unsupported = js.native
 }
-
-@JSGlobal("__esri.UnsupportedLayer")
-@js.native
-object UnsupportedLayer extends TopLevel[UnsupportedLayerConstructor]
-

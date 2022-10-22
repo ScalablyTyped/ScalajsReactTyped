@@ -1,52 +1,59 @@
 package typingsJapgolly.scrollIntoViewIfNeeded
 
-import typingsJapgolly.scrollIntoViewIfNeeded.typesMod.ScrollBehavior
-import typingsJapgolly.scrollIntoViewIfNeeded.typesMod.ScrollLogicalPosition
-import typingsJapgolly.scrollIntoViewIfNeeded.typesMod.ScrollMode
+import typingsJapgolly.scrollIntoViewIfNeeded.typingsTypesMod.ScrollBehavior
+import typingsJapgolly.scrollIntoViewIfNeeded.typingsTypesMod.ScrollLogicalPosition
+import typingsJapgolly.scrollIntoViewIfNeeded.typingsTypesMod.ScrollMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollIntoViewIfNeededStrings {
-  @js.native
-  sealed trait always extends ScrollMode
   
   @js.native
-  sealed trait auto extends ScrollBehavior
+  sealed trait always
+    extends StObject
+       with ScrollMode
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait center extends ScrollLogicalPosition
+  sealed trait auto
+    extends StObject
+       with ScrollBehavior
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait end extends ScrollLogicalPosition
+  sealed trait center
+    extends StObject
+       with ScrollLogicalPosition
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait `if-needed` extends ScrollMode
+  sealed trait end
+    extends StObject
+       with ScrollLogicalPosition
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait nearest extends ScrollLogicalPosition
+  sealed trait `if-needed`
+    extends StObject
+       with ScrollMode
+  inline def `if-needed`: `if-needed` = "if-needed".asInstanceOf[`if-needed`]
   
   @js.native
-  sealed trait smooth extends ScrollBehavior
+  sealed trait nearest
+    extends StObject
+       with ScrollLogicalPosition
+  inline def nearest: nearest = "nearest".asInstanceOf[nearest]
   
   @js.native
-  sealed trait start extends ScrollLogicalPosition
+  sealed trait smooth
+    extends StObject
+       with ScrollBehavior
+  inline def smooth: smooth = "smooth".asInstanceOf[smooth]
   
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def `if-needed`: `if-needed` = "if-needed".asInstanceOf[`if-needed`]
-  @scala.inline
-  def nearest: nearest = "nearest".asInstanceOf[nearest]
-  @scala.inline
-  def smooth: smooth = "smooth".asInstanceOf[smooth]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  @js.native
+  sealed trait start
+    extends StObject
+       with ScrollLogicalPosition
+  inline def start: start = "start".asInstanceOf[start]
 }
-

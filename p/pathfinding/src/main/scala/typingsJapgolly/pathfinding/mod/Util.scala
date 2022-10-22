@@ -1,14 +1,18 @@
 package typingsJapgolly.pathfinding.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pathfinding", "Util")
-@js.native
-object Util extends js.Object {
-  def compressPath(path: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = js.native
-  def expandPath(path: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = js.native
-  def smoothenPath(grid: Grid, path: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = js.native
+object Util {
+  
+  @JSImport("pathfinding", "Util")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def compressPath(path: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("compressPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Double]]]
+  
+  inline def expandPath(path: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("expandPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Double]]]
+  
+  inline def smoothenPath(grid: Grid, path: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("smoothenPath")(grid.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
 }
-

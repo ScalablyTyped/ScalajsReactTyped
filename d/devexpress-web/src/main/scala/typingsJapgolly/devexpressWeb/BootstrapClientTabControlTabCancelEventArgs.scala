@@ -1,28 +1,42 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for cancellable events related to manipulations on tabs.
   */
-@JSGlobal("BootstrapClientTabControlTabCancelEventArgs")
-@js.native
-class BootstrapClientTabControlTabCancelEventArgs protected () extends ASPxClientProcessingModeCancelEventArgs {
-  /**
-    * Initializes a new object of the BootstrapClientTabControlTabCancelEventArgs type with the specified settings.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
-    * @param tab An BootstrapClientTab object that represents a tab related to the event.
-    */
-  def this(processOnServer: Boolean, tab: BootstrapClientTab) = this()
+trait BootstrapClientTabControlTabCancelEventArgs
+  extends StObject
+     with ASPxClientProcessingModeCancelEventArgs {
+  
   /**
     * Gets or sets a value specifying whether a callback should be sent to the server to reload the content of the page being activated.
     */
-  var reloadContentOnCallback: Boolean = js.native
+  var reloadContentOnCallback: Boolean
+  
   /**
     * Gets the tab object related to the event.
     */
-  var tab: BootstrapClientTab = js.native
+  var tab: BootstrapClientTab
 }
-
+object BootstrapClientTabControlTabCancelEventArgs {
+  
+  inline def apply(
+    cancel: Boolean,
+    processOnServer: Boolean,
+    reloadContentOnCallback: Boolean,
+    tab: BootstrapClientTab
+  ): BootstrapClientTabControlTabCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], reloadContentOnCallback = reloadContentOnCallback.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapClientTabControlTabCancelEventArgs]
+  }
+  
+  extension [Self <: BootstrapClientTabControlTabCancelEventArgs](x: Self) {
+    
+    inline def setReloadContentOnCallback(value: Boolean): Self = StObject.set(x, "reloadContentOnCallback", value.asInstanceOf[js.Any])
+    
+    inline def setTab(value: BootstrapClientTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+  }
+}

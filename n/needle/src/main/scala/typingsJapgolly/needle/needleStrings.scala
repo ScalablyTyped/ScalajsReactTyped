@@ -3,77 +3,71 @@ package typingsJapgolly.needle
 import typingsJapgolly.needle.mod.core.NeedleHttpVerbs
 import typingsJapgolly.needle.mod.core.NeedleReadWriteHttpVerbs
 import typingsJapgolly.needle.mod.core.NeedleReadonlyHttpVerbs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object needleStrings {
-  @js.native
-  sealed trait auto extends js.Object
   
   @js.native
-  sealed trait basic extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
+  sealed trait basic extends StObject
+  inline def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
   sealed trait delete
-    extends NeedleHttpVerbs
+    extends StObject
+       with NeedleHttpVerbs
        with NeedleReadWriteHttpVerbs
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait digest extends js.Object
+  sealed trait digest extends StObject
+  inline def digest: digest = "digest".asInstanceOf[digest]
   
   @js.native
   sealed trait get
-    extends NeedleHttpVerbs
+    extends StObject
+       with NeedleHttpVerbs
        with NeedleReadonlyHttpVerbs
+  inline def get: get = "get".asInstanceOf[get]
   
   @js.native
   sealed trait head
-    extends NeedleHttpVerbs
+    extends StObject
+       with NeedleHttpVerbs
        with NeedleReadonlyHttpVerbs
+  inline def head: head = "head".asInstanceOf[head]
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait json extends StObject
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait patch
-    extends NeedleHttpVerbs
+    extends StObject
+       with NeedleHttpVerbs
        with NeedleReadWriteHttpVerbs
+  inline def patch: patch = "patch".asInstanceOf[patch]
   
   @js.native
   sealed trait post
-    extends NeedleHttpVerbs
+    extends StObject
+       with NeedleHttpVerbs
        with NeedleReadWriteHttpVerbs
+  inline def post: post = "post".asInstanceOf[post]
   
   @js.native
   sealed trait put
-    extends NeedleHttpVerbs
+    extends StObject
+       with NeedleHttpVerbs
        with NeedleReadWriteHttpVerbs
+  inline def put: put = "put".asInstanceOf[put]
   
   @js.native
-  sealed trait xml extends js.Object
-  
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def digest: digest = "digest".asInstanceOf[digest]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def patch: patch = "patch".asInstanceOf[patch]
-  @scala.inline
-  def post: post = "post".asInstanceOf[post]
-  @scala.inline
-  def put: put = "put".asInstanceOf[put]
-  @scala.inline
-  def xml: xml = "xml".asInstanceOf[xml]
+  sealed trait xml extends StObject
+  inline def xml: xml = "xml".asInstanceOf[xml]
 }
-

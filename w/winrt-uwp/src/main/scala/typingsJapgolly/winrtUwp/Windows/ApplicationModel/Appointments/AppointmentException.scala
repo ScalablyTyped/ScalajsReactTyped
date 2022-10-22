@@ -1,19 +1,35 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Appointments
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an appointment instance that is an exception from the master appointment. */
-@JSGlobal("Windows.ApplicationModel.Appointments.AppointmentException")
-@js.native
-abstract class AppointmentException () extends js.Object {
+trait AppointmentException extends StObject {
+  
   /** Gets the appointment that is an exception from the master appointment. */
-  var appointment: Appointment = js.native
+  var appointment: Appointment
+  
   /** Gets a list of the names of the appointment properties for which an exception was found. */
-  var exceptionProperties: IVectorView[String] = js.native
+  var exceptionProperties: IVectorView[String]
+  
   /** Gets a value indicating whether the exception is that the appointment instance has been deleted. */
-  var isDeleted: Boolean = js.native
+  var isDeleted: Boolean
 }
-
+object AppointmentException {
+  
+  inline def apply(appointment: Appointment, exceptionProperties: IVectorView[String], isDeleted: Boolean): AppointmentException = {
+    val __obj = js.Dynamic.literal(appointment = appointment.asInstanceOf[js.Any], exceptionProperties = exceptionProperties.asInstanceOf[js.Any], isDeleted = isDeleted.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AppointmentException]
+  }
+  
+  extension [Self <: AppointmentException](x: Self) {
+    
+    inline def setAppointment(value: Appointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+    
+    inline def setExceptionProperties(value: IVectorView[String]): Self = StObject.set(x, "exceptionProperties", value.asInstanceOf[js.Any])
+    
+    inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
+  }
+}

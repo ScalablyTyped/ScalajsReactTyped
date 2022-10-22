@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRichEdit.CustomCommandExecuted event.
   */
-@JSGlobal("ASPxClientRichEditCustomCommandExecutedEventArgs")
-@js.native
-class ASPxClientRichEditCustomCommandExecutedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientRichEditCustomCommandExecutedEventArgs object. For internal use only.
-    * @param commandName A string value that specifies the name of the processed command.
-    * @param parameter An object that can contain command specific information needed for handling the command execution.
-    */
-  def this(commandName: String, parameter: js.Any) = this()
+trait ASPxClientRichEditCustomCommandExecutedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the name of the processed command.
     */
-  var commandName: String = js.native
+  var commandName: String
+  
   /**
     * Gets an optional parameter that complements the processed command.
     */
-  var parameter: js.Any = js.native
+  var parameter: Any
 }
-
+object ASPxClientRichEditCustomCommandExecutedEventArgs {
+  
+  inline def apply(commandName: String, parameter: Any): ASPxClientRichEditCustomCommandExecutedEventArgs = {
+    val __obj = js.Dynamic.literal(commandName = commandName.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientRichEditCustomCommandExecutedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientRichEditCustomCommandExecutedEventArgs](x: Self) {
+    
+    inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
+    
+    inline def setParameter(value: Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+  }
+}

@@ -14,27 +14,33 @@ import typingsJapgolly.minappEnv.minappEnvStrings.arraybuffer_
 import typingsJapgolly.minappEnv.minappEnvStrings.json_
 import typingsJapgolly.minappEnv.minappEnvStrings.text
 import typingsJapgolly.minappEnv.minappEnvStrings.其他
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestOption extends js.Object {
+trait RequestOption extends StObject {
+  
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[RequestCompleteCallback] = js.undefined
+  
   /** 请求的参数 */
   var data: js.UndefOr[String | js.Object | ArrayBuffer] = js.undefined
+  
   /** 返回的数据格式
     *
     * 可选值：
     * - 'json': 返回的数据为 JSON，返回后会对返回的数据进行一次 JSON.parse;
     * - '其他': 不对返回的内容进行 JSON.parse; */
   var dataType: js.UndefOr[json_ | 其他] = js.undefined
+  
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[RequestFailCallback] = js.undefined
+  
   /** 设置请求的 header，header 中不能设置 Referer。
     *
     * `content-type` 默认为 `application/json` */
   var header: js.UndefOr[js.Object] = js.undefined
+  
   /** HTTP 请求方法
     *
     * 可选值：
@@ -47,6 +53,7 @@ trait RequestOption extends js.Object {
     * - 'TRACE': HTTP 请求 TRACE;
     * - 'CONNECT': HTTP 请求 CONNECT; */
   var method: js.UndefOr[OPTIONS | GET | HEAD | POST | PUT | DELETE | TRACE | CONNECT] = js.undefined
+  
   /** 响应的数据类型
     *
     * 可选值：
@@ -55,35 +62,54 @@ trait RequestOption extends js.Object {
     *
     * 最低基础库： `1.7.0` */
   var responseType: js.UndefOr[text | arraybuffer_] = js.undefined
+  
   /** 接口调用成功的回调函数 */
   var success: js.UndefOr[RequestSuccessCallback] = js.undefined
+  
   /** 开发者服务器接口地址 */
   var url: String
 }
-
 object RequestOption {
-  @scala.inline
-  def apply(
-    url: String,
-    complete: /* res */ GeneralCallbackResult => Callback = null,
-    data: String | js.Object | ArrayBuffer = null,
-    dataType: json_ | 其他 = null,
-    fail: /* res */ GeneralCallbackResult => Callback = null,
-    header: js.Object = null,
-    method: OPTIONS | GET | HEAD | POST | PUT | DELETE | TRACE | CONNECT = null,
-    responseType: text | arraybuffer_ = null,
-    success: /* result */ RequestSuccessCallbackResult => Callback = null
-  ): RequestOption = {
+  
+  inline def apply(url: String): RequestOption = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.minappEnv.wx.GeneralCallbackResult) => complete(t0).runNow()))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.minappEnv.wx.GeneralCallbackResult) => fail(t0).runNow()))
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* result */ typingsJapgolly.minappEnv.wx.RequestSuccessCallbackResult) => success(t0).runNow()))
     __obj.asInstanceOf[RequestOption]
   }
+  
+  extension [Self <: RequestOption](x: Self) {
+    
+    inline def setComplete(value: /* res */ GeneralCallbackResult => Callback): Self = StObject.set(x, "complete", js.Any.fromFunction1((t0: /* res */ GeneralCallbackResult) => value(t0).runNow()))
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setData(value: String | js.Object | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataType(value: json_ | 其他): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setFail(value: /* res */ GeneralCallbackResult => Callback): Self = StObject.set(x, "fail", js.Any.fromFunction1((t0: /* res */ GeneralCallbackResult) => value(t0).runNow()))
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setMethod(value: OPTIONS | GET | HEAD | POST | PUT | DELETE | TRACE | CONNECT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setResponseType(value: text | arraybuffer_): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    
+    inline def setSuccess(value: /* result */ RequestSuccessCallbackResult => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* result */ RequestSuccessCallbackResult) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

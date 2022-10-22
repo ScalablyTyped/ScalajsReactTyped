@@ -1,74 +1,101 @@
 package typingsJapgolly.sarif.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebRequest extends js.Object {
+trait WebRequest extends StObject {
+  
   /**
     * The body of the request.
     */
   var body: js.UndefOr[ArtifactContent] = js.undefined
+  
   /**
     * The request headers.
     */
   var headers: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   /**
     * The index within the run.webRequests array of the request object associated with this result.
     */
   var index: js.UndefOr[Double] = js.undefined
+  
   /**
     * The HTTP method. Well-known values are 'GET', 'PUT', 'POST', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS', 'TRACE',
     * 'CONNECT'.
     */
   var method: js.UndefOr[String] = js.undefined
+  
   /**
     * The request parameters.
     */
   var parameters: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   /**
     * Key/value pairs that provide additional information about the request.
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
+  
   /**
     * The request protocol. Example: 'http'.
     */
   var protocol: js.UndefOr[String] = js.undefined
+  
   /**
     * The target of the request.
     */
   var target: js.UndefOr[String] = js.undefined
+  
   /**
     * The request version. Example: '1.1'.
     */
   var version: js.UndefOr[String] = js.undefined
 }
-
 object WebRequest {
-  @scala.inline
-  def apply(
-    body: ArtifactContent = null,
-    headers: StringDictionary[String] = null,
-    index: Int | Double = null,
-    method: String = null,
-    parameters: StringDictionary[String] = null,
-    properties: PropertyBag = null,
-    protocol: String = null,
-    target: String = null,
-    version: String = null
-  ): WebRequest = {
+  
+  inline def apply(): WebRequest = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebRequest]
   }
+  
+  extension [Self <: WebRequest](x: Self) {
+    
+    inline def setBody(value: ArtifactContent): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

@@ -1,185 +1,261 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalFormatPresetCriterion extends js.Object
-
+sealed trait ConditionalFormatPresetCriterion extends StObject
 /**
+  * Represents the criteria of the preset criteria conditional format type.
   *
-  * Represents the criteria for the Preset Criteria conditional format type.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalFormatPresetCriterion")
 @js.native
-object ConditionalFormatPresetCriterion extends js.Object {
+object ConditionalFormatPresetCriterion extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait aboveAverage extends ConditionalFormatPresetCriterion
+  sealed trait aboveAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait belowAverage extends ConditionalFormatPresetCriterion
+  sealed trait belowAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait blanks extends ConditionalFormatPresetCriterion
+  sealed trait blanks
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait duplicateValues extends ConditionalFormatPresetCriterion
+  sealed trait duplicateValues
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait equalOrAboveAverage extends ConditionalFormatPresetCriterion
+  sealed trait equalOrAboveAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait equalOrBelowAverage extends ConditionalFormatPresetCriterion
+  sealed trait equalOrBelowAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait errors extends ConditionalFormatPresetCriterion
+  sealed trait errors
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait invalid extends ConditionalFormatPresetCriterion
+  sealed trait invalid
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait lastMonth extends ConditionalFormatPresetCriterion
+  sealed trait lastMonth
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait lastSevenDays extends ConditionalFormatPresetCriterion
+  sealed trait lastSevenDays
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait lastWeek extends ConditionalFormatPresetCriterion
+  sealed trait lastWeek
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait nextMonth extends ConditionalFormatPresetCriterion
+  sealed trait nextMonth
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait nextWeek extends ConditionalFormatPresetCriterion
+  sealed trait nextWeek
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait nonBlanks extends ConditionalFormatPresetCriterion
+  sealed trait nonBlanks
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait nonErrors extends ConditionalFormatPresetCriterion
+  sealed trait nonErrors
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait oneStdDevAboveAverage extends ConditionalFormatPresetCriterion
+  sealed trait oneStdDevAboveAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait oneStdDevBelowAverage extends ConditionalFormatPresetCriterion
+  sealed trait oneStdDevBelowAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait thisMonth extends ConditionalFormatPresetCriterion
+  sealed trait thisMonth
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait thisWeek extends ConditionalFormatPresetCriterion
+  sealed trait thisWeek
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait threeStdDevAboveAverage extends ConditionalFormatPresetCriterion
+  sealed trait threeStdDevAboveAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait threeStdDevBelowAverage extends ConditionalFormatPresetCriterion
+  sealed trait threeStdDevBelowAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait today extends ConditionalFormatPresetCriterion
+  sealed trait today
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait tomorrow extends ConditionalFormatPresetCriterion
+  sealed trait tomorrow
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait twoStdDevAboveAverage extends ConditionalFormatPresetCriterion
+  sealed trait twoStdDevAboveAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait twoStdDevBelowAverage extends ConditionalFormatPresetCriterion
+  sealed trait twoStdDevBelowAverage
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait uniqueValues extends ConditionalFormatPresetCriterion
+  sealed trait uniqueValues
+    extends StObject
+       with ConditionalFormatPresetCriterion
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait yesterday extends ConditionalFormatPresetCriterion
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalFormatPresetCriterion with String] = js.native
-  /* "AboveAverage" */ @js.native
-  object aboveAverage extends TopLevel[aboveAverage with String]
-  
-  /* "BelowAverage" */ @js.native
-  object belowAverage extends TopLevel[belowAverage with String]
-  
-  /* "Blanks" */ @js.native
-  object blanks extends TopLevel[blanks with String]
-  
-  /* "DuplicateValues" */ @js.native
-  object duplicateValues extends TopLevel[duplicateValues with String]
-  
-  /* "EqualOrAboveAverage" */ @js.native
-  object equalOrAboveAverage extends TopLevel[equalOrAboveAverage with String]
-  
-  /* "EqualOrBelowAverage" */ @js.native
-  object equalOrBelowAverage extends TopLevel[equalOrBelowAverage with String]
-  
-  /* "Errors" */ @js.native
-  object errors extends TopLevel[errors with String]
-  
-  /* "Invalid" */ @js.native
-  object invalid extends TopLevel[invalid with String]
-  
-  /* "LastMonth" */ @js.native
-  object lastMonth extends TopLevel[lastMonth with String]
-  
-  /* "LastSevenDays" */ @js.native
-  object lastSevenDays extends TopLevel[lastSevenDays with String]
-  
-  /* "LastWeek" */ @js.native
-  object lastWeek extends TopLevel[lastWeek with String]
-  
-  /* "NextMonth" */ @js.native
-  object nextMonth extends TopLevel[nextMonth with String]
-  
-  /* "NextWeek" */ @js.native
-  object nextWeek extends TopLevel[nextWeek with String]
-  
-  /* "NonBlanks" */ @js.native
-  object nonBlanks extends TopLevel[nonBlanks with String]
-  
-  /* "NonErrors" */ @js.native
-  object nonErrors extends TopLevel[nonErrors with String]
-  
-  /* "OneStdDevAboveAverage" */ @js.native
-  object oneStdDevAboveAverage extends TopLevel[oneStdDevAboveAverage with String]
-  
-  /* "OneStdDevBelowAverage" */ @js.native
-  object oneStdDevBelowAverage extends TopLevel[oneStdDevBelowAverage with String]
-  
-  /* "ThisMonth" */ @js.native
-  object thisMonth extends TopLevel[thisMonth with String]
-  
-  /* "ThisWeek" */ @js.native
-  object thisWeek extends TopLevel[thisWeek with String]
-  
-  /* "ThreeStdDevAboveAverage" */ @js.native
-  object threeStdDevAboveAverage extends TopLevel[threeStdDevAboveAverage with String]
-  
-  /* "ThreeStdDevBelowAverage" */ @js.native
-  object threeStdDevBelowAverage extends TopLevel[threeStdDevBelowAverage with String]
-  
-  /* "Today" */ @js.native
-  object today extends TopLevel[today with String]
-  
-  /* "Tomorrow" */ @js.native
-  object tomorrow extends TopLevel[tomorrow with String]
-  
-  /* "TwoStdDevAboveAverage" */ @js.native
-  object twoStdDevAboveAverage extends TopLevel[twoStdDevAboveAverage with String]
-  
-  /* "TwoStdDevBelowAverage" */ @js.native
-  object twoStdDevBelowAverage extends TopLevel[twoStdDevBelowAverage with String]
-  
-  /* "UniqueValues" */ @js.native
-  object uniqueValues extends TopLevel[uniqueValues with String]
-  
-  /* "Yesterday" */ @js.native
-  object yesterday extends TopLevel[yesterday with String]
-  
+  sealed trait yesterday
+    extends StObject
+       with ConditionalFormatPresetCriterion
 }
-

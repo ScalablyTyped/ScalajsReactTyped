@@ -1,22 +1,28 @@
 package typingsJapgolly.nodeSnap7.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MultiVarsReadResult extends js.Object {
-   //Error Code
+trait MultiVarsReadResult extends StObject {
+  
+  //Error Code
   var Data: Buffer
+  
   var Result: Double
 }
-
 object MultiVarsReadResult {
-  @scala.inline
-  def apply(Data: Buffer, Result: Double): MultiVarsReadResult = {
-    val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any])
   
+  inline def apply(Data: Buffer, Result: Double): MultiVarsReadResult = {
+    val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiVarsReadResult]
   }
+  
+  extension [Self <: MultiVarsReadResult](x: Self) {
+    
+    inline def setData(value: Buffer): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    
+    inline def setResult(value: Double): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+  }
 }
-

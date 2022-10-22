@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ethersproject/units" : "5.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ethersproject/units" : "5.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

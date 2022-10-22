@@ -1,19 +1,27 @@
 package typingsJapgolly.plottable.mod
 
-import typingsJapgolly.plottable.symbolFactoriesMod.SymbolFactory
+import typingsJapgolly.plottable.buildSrcCoreSymbolFactoriesMod.SymbolFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable", "SymbolFactories")
-@js.native
-object SymbolFactories extends js.Object {
-  def circle(): SymbolFactory = js.native
-  def cross(): SymbolFactory = js.native
-  def diamond(): SymbolFactory = js.native
-  def square(): SymbolFactory = js.native
-  def star(): SymbolFactory = js.native
-  def triangle(): SymbolFactory = js.native
-  def wye(): SymbolFactory = js.native
+object SymbolFactories {
+  
+  @JSImport("plottable", "SymbolFactories")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def circle(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("circle")().asInstanceOf[SymbolFactory]
+  
+  inline def cross(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("cross")().asInstanceOf[SymbolFactory]
+  
+  inline def diamond(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("diamond")().asInstanceOf[SymbolFactory]
+  
+  inline def square(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("square")().asInstanceOf[SymbolFactory]
+  
+  inline def star(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("star")().asInstanceOf[SymbolFactory]
+  
+  inline def triangle(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("triangle")().asInstanceOf[SymbolFactory]
+  
+  inline def wye(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("wye")().asInstanceOf[SymbolFactory]
 }
-

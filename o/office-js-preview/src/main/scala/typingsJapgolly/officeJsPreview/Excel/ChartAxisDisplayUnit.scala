@@ -1,141 +1,126 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartAxisDisplayUnit extends js.Object
-
+sealed trait ChartAxisDisplayUnit extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartAxisDisplayUnit")
 @js.native
-object ChartAxisDisplayUnit extends js.Object {
+object ChartAxisDisplayUnit extends StObject {
+  
   /**
-    *
     * This will set the axis in units of billions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait billions extends ChartAxisDisplayUnit
+  sealed trait billions
+    extends StObject
+       with ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of custom value.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait custom extends ChartAxisDisplayUnit
+  sealed trait custom
+    extends StObject
+       with ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of hundreds of millions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait hundredMillions extends ChartAxisDisplayUnit
+  sealed trait hundredMillions
+    extends StObject
+       with ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of hundreds of thousands.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait hundredThousands extends ChartAxisDisplayUnit
+  sealed trait hundredThousands
+    extends StObject
+       with ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of hundreds.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait hundreds extends ChartAxisDisplayUnit
+  sealed trait hundreds
+    extends StObject
+       with ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of millions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait millions extends ChartAxisDisplayUnit
+  sealed trait millions
+    extends StObject
+       with ChartAxisDisplayUnit
   
   /**
-    *
     * Default option. This will reset display unit to the axis, and set unit label invisible.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait none extends ChartAxisDisplayUnit
+  sealed trait none
+    extends StObject
+       with ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of tens of millions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait tenMillions extends ChartAxisDisplayUnit
+  sealed trait tenMillions
+    extends StObject
+       with ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of tens of thousands.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait tenThousands extends ChartAxisDisplayUnit
+  sealed trait tenThousands
+    extends StObject
+       with ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of thousands.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait thousands extends ChartAxisDisplayUnit
+  sealed trait thousands
+    extends StObject
+       with ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of trillions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait trillions extends ChartAxisDisplayUnit
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartAxisDisplayUnit with String] = js.native
-  /* "Billions" */ @js.native
-  object billions extends TopLevel[billions with String]
-  
-  /* "Custom" */ @js.native
-  object custom extends TopLevel[custom with String]
-  
-  /* "HundredMillions" */ @js.native
-  object hundredMillions extends TopLevel[hundredMillions with String]
-  
-  /* "HundredThousands" */ @js.native
-  object hundredThousands extends TopLevel[hundredThousands with String]
-  
-  /* "Hundreds" */ @js.native
-  object hundreds extends TopLevel[hundreds with String]
-  
-  /* "Millions" */ @js.native
-  object millions extends TopLevel[millions with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "TenMillions" */ @js.native
-  object tenMillions extends TopLevel[tenMillions with String]
-  
-  /* "TenThousands" */ @js.native
-  object tenThousands extends TopLevel[tenThousands with String]
-  
-  /* "Thousands" */ @js.native
-  object thousands extends TopLevel[thousands with String]
-  
-  /* "Trillions" */ @js.native
-  object trillions extends TopLevel[trillions with String]
-  
+  sealed trait trillions
+    extends StObject
+       with ChartAxisDisplayUnit
 }
-

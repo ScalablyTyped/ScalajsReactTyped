@@ -1,10 +1,12 @@
-package typingsJapgolly
+package typingsJapgolly.minecraftScriptingTypesClient
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.minecraftScriptingTypesClient.minecraftScriptingTypesClientStrings.minecraftColonmolang
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object minecraftScriptingTypesClient {
-  type IMoLangComponent = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type MinecraftComponent = typingsJapgolly.minecraftScriptingTypesClient.minecraftScriptingTypesClientStrings.minecraftColonmolang
-}
+
+type IMoLangComponent = StringDictionary[Any]
+
+type MinecraftComponent = minecraftColonmolang

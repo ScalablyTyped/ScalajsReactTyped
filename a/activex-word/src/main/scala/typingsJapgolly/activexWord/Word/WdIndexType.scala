@@ -1,23 +1,19 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
 */
-trait WdIndexType extends js.Object
-
+trait WdIndexType extends StObject
 object WdIndexType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdIndexIndent: `0` = this.cast(0)
-  @scala.inline
-  def wdIndexRunin: `1` = this.cast(1)
+  
+  inline def wdIndexIndent: `0` = 0.asInstanceOf[`0`]
+  
+  inline def wdIndexRunin: `1` = 1.asInstanceOf[`1`]
 }
-

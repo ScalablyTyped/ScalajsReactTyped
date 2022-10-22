@@ -10,10 +10,10 @@ gulp plugin to minify HTML.
 | ------------------ | :-------------: |
 | Full name          | gulp-htmlmin |
 | Keywords           | format, gulp, gulpplugin, htm, html, htmlmin, minification, minifier, minify |
-| # releases         | 3 |
-| # dependents       | 334 |
-| # downloads        | 3582645 |
-| # stars            | 135 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 336987.0 |
+| # stars            | 732.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/gulp-htmlmin)

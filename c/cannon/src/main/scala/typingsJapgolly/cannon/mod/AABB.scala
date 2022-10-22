@@ -1,14 +1,14 @@
 package typingsJapgolly.cannon.mod
 
 import typingsJapgolly.cannon.CANNON.IAABBOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cannon", "AABB")
 @js.native
-class AABB ()
-  extends typingsJapgolly.cannon.CANNON.AABB {
+open class AABB ()
+  extends StObject
+     with typingsJapgolly.cannon.CANNON.AABB {
   def this(options: IAABBOptions) = this()
 }
-

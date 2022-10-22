@@ -1,350 +1,659 @@
 package typingsJapgolly.pulumiKubernetes.rbacMod
 
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingListMod.ClusterRoleBindingList
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingListMod.ClusterRoleBindingListArgs
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingMod.ClusterRoleBinding
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingMod.ClusterRoleBindingArgs
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingPatchMod.ClusterRoleBindingPatch
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingPatchMod.ClusterRoleBindingPatchArgs
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleListMod.ClusterRoleList
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleListMod.ClusterRoleListArgs
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleMod.ClusterRole
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleMod.ClusterRoleArgs
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRolePatchMod.ClusterRolePatch
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRolePatchMod.ClusterRolePatchArgs
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingListMod.RoleBindingList
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingListMod.RoleBindingListArgs
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingMod.RoleBinding
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingMod.RoleBindingArgs
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingPatchMod.RoleBindingPatch
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingPatchMod.RoleBindingPatchArgs
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleListMod.RoleList
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleListMod.RoleListArgs
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleMod.Role
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleMod.RoleArgs
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1RolePatchMod.RolePatch
+import typingsJapgolly.pulumiKubernetes.rbacV1alpha1RolePatchMod.RolePatchArgs
 import typingsJapgolly.pulumiPulumi.outputMod.Input
 import typingsJapgolly.pulumiPulumi.resourceMod.CustomResourceOptions
 import typingsJapgolly.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/rbac", "v1beta1")
-@js.native
-object v1beta1 extends js.Object {
-  @js.native
-  class ClusterRole protected ()
-    extends typingsJapgolly.pulumiKubernetes.rbacV1beta1Mod.ClusterRole {
-    /**
-      * Create a rbac.v1beta1.ClusterRole resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.ClusterRole) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.ClusterRole,
-      opts: CustomResourceOptions
-    ) = this()
-  }
+object v1beta1 {
   
-  @js.native
-  class ClusterRoleBinding protected ()
-    extends typingsJapgolly.pulumiKubernetes.rbacV1beta1Mod.ClusterRoleBinding {
+  object ClusterRole {
+    
+    @JSImport("@pulumi/kubernetes/rbac", "v1beta1.ClusterRole")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * Create a rbac.v1beta1.ClusterRoleBinding resource with the given unique name, arguments, and options.
+      * Get an existing ClusterRole resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
       *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.ClusterRoleBinding) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.ClusterRoleBinding,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  @js.native
-  class ClusterRoleBindingList protected ()
-    extends typingsJapgolly.pulumiKubernetes.rbacV1beta1Mod.ClusterRoleBindingList {
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleMod.ClusterRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleMod.ClusterRole]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleMod.ClusterRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleMod.ClusterRole]
+    
     /**
-      * Create a rbac.v1beta1.ClusterRoleBindingList resource with the given unique name, arguments, and options.
+      * Get an existing ClusterRole resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
       *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.ClusterRoleBindingList) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.ClusterRoleBindingList,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  @js.native
-  class ClusterRoleList protected ()
-    extends typingsJapgolly.pulumiKubernetes.rbacV1beta1Mod.ClusterRoleList {
-    /**
-      * Create a rbac.v1beta1.ClusterRoleList resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.ClusterRoleList) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.ClusterRoleList,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  @js.native
-  class Role protected ()
-    extends typingsJapgolly.pulumiKubernetes.rbacV1beta1Mod.Role {
-    /**
-      * Create a rbac.v1beta1.Role resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.Role) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.Role,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  @js.native
-  class RoleBinding protected ()
-    extends typingsJapgolly.pulumiKubernetes.rbacV1beta1Mod.RoleBinding {
-    /**
-      * Create a rbac.v1beta1.RoleBinding resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.RoleBinding) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.RoleBinding,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  @js.native
-  class RoleBindingList protected ()
-    extends typingsJapgolly.pulumiKubernetes.rbacV1beta1Mod.RoleBindingList {
-    /**
-      * Create a rbac.v1beta1.RoleBindingList resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.RoleBindingList) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.RoleBindingList,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  @js.native
-  class RoleList protected ()
-    extends typingsJapgolly.pulumiKubernetes.rbacV1beta1Mod.RoleList {
-    /**
-      * Create a rbac.v1beta1.RoleList resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.RoleList) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.rbac.v1beta1.RoleList,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  /* static members */
-  @js.native
-  object ClusterRole extends js.Object {
-    /**
-      * Get the state of an existing `ClusterRole` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
-      *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
-      */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1beta1ClusterRoleMod.ClusterRole = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1beta1ClusterRoleMod.ClusterRole = js.native
+    inline def get_ClusterRole(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleMod.ClusterRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleMod.ClusterRole]
+    inline def get_ClusterRole(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleMod.ClusterRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleMod.ClusterRole]
+    
     /**
       * Returns true if the given object is an instance of ClusterRole.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/ClusterRole.ClusterRole */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRole.ClusterRole */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRole.ClusterRole */ Boolean]
   }
   
-  /* static members */
-  @js.native
-  object ClusterRoleBinding extends js.Object {
+  object ClusterRoleBinding {
+    
+    @JSImport("@pulumi/kubernetes/rbac", "v1beta1.ClusterRoleBinding")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * Get the state of an existing `ClusterRoleBinding` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Get an existing ClusterRoleBinding resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1beta1ClusterRoleBindingMod.ClusterRoleBinding = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1beta1ClusterRoleBindingMod.ClusterRoleBinding = js.native
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleBindingMod.ClusterRoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleBindingMod.ClusterRoleBinding]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleBindingMod.ClusterRoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleBindingMod.ClusterRoleBinding]
+    
+    /**
+      * Get an existing ClusterRoleBinding resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_ClusterRoleBinding(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingMod.ClusterRoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingMod.ClusterRoleBinding]
+    inline def get_ClusterRoleBinding(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingMod.ClusterRoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingMod.ClusterRoleBinding]
+    
     /**
       * Returns true if the given object is an instance of ClusterRoleBinding.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/ClusterRoleBinding.ClusterRoleBinding */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRoleBinding.ClusterRoleBinding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRoleBinding.ClusterRoleBinding */ Boolean]
   }
   
-  /* static members */
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/rbac", "v1beta1.ClusterRoleBinding")
   @js.native
-  object ClusterRoleBindingList extends js.Object {
+  open class ClusterRoleBindingCls protected () extends ClusterRoleBinding {
     /**
-      * Get the state of an existing `ClusterRoleBindingList` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Create a ClusterRoleBinding resource with the given unique name, arguments, and options.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1beta1ClusterRoleBindingListMod.ClusterRoleBindingList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1beta1ClusterRoleBindingListMod.ClusterRoleBindingList = js.native
+    def this(name: String) = this()
+    def this(name: String, args: ClusterRoleBindingArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: ClusterRoleBindingArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object ClusterRoleBindingList {
+    
+    @JSImport("@pulumi/kubernetes/rbac", "v1beta1.ClusterRoleBindingList")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing ClusterRoleBindingList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingListMod.ClusterRoleBindingList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingListMod.ClusterRoleBindingList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingListMod.ClusterRoleBindingList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingListMod.ClusterRoleBindingList]
+    
+    /**
+      * Get an existing ClusterRoleBindingList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_ClusterRoleBindingList(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleBindingListMod.ClusterRoleBindingList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleBindingListMod.ClusterRoleBindingList]
+    inline def get_ClusterRoleBindingList(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleBindingListMod.ClusterRoleBindingList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleBindingListMod.ClusterRoleBindingList]
+    
     /**
       * Returns true if the given object is an instance of ClusterRoleBindingList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/ClusterRoleBindingList.ClusterRoleBindingList */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRoleBindingList.ClusterRoleBindingList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRoleBindingList.ClusterRoleBindingList */ Boolean]
   }
   
-  /* static members */
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/rbac", "v1beta1.ClusterRoleBindingList")
   @js.native
-  object ClusterRoleList extends js.Object {
+  open class ClusterRoleBindingListCls protected () extends ClusterRoleBindingList {
     /**
-      * Get the state of an existing `ClusterRoleList` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Create a ClusterRoleBindingList resource with the given unique name, arguments, and options.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1beta1ClusterRoleListMod.ClusterRoleList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1beta1ClusterRoleListMod.ClusterRoleList = js.native
+    def this(name: String) = this()
+    def this(name: String, args: ClusterRoleBindingListArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: ClusterRoleBindingListArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object ClusterRoleBindingPatch {
+    
+    @JSImport("@pulumi/kubernetes/rbac", "v1beta1.ClusterRoleBindingPatch")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing ClusterRoleBindingPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingPatchMod.ClusterRoleBindingPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingPatchMod.ClusterRoleBindingPatch]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingPatchMod.ClusterRoleBindingPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleBindingPatchMod.ClusterRoleBindingPatch]
+    
+    /**
+      * Get an existing ClusterRoleBindingPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_ClusterRoleBindingPatch(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleBindingPatchMod.ClusterRoleBindingPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleBindingPatchMod.ClusterRoleBindingPatch]
+    inline def get_ClusterRoleBindingPatch(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleBindingPatchMod.ClusterRoleBindingPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleBindingPatchMod.ClusterRoleBindingPatch]
+    
+    /**
+      * Returns true if the given object is an instance of ClusterRoleBindingPatch.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRoleBindingPatch.ClusterRoleBindingPatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRoleBindingPatch.ClusterRoleBindingPatch */ Boolean]
+  }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/rbac", "v1beta1.ClusterRoleBindingPatch")
+  @js.native
+  open class ClusterRoleBindingPatchCls protected () extends ClusterRoleBindingPatch {
+    /**
+      * Create a ClusterRoleBindingPatch resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: ClusterRoleBindingPatchArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: ClusterRoleBindingPatchArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/rbac", "v1beta1.ClusterRole")
+  @js.native
+  open class ClusterRoleCls protected () extends ClusterRole {
+    /**
+      * Create a ClusterRole resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: ClusterRoleArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: ClusterRoleArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object ClusterRoleList {
+    
+    @JSImport("@pulumi/kubernetes/rbac", "v1beta1.ClusterRoleList")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing ClusterRoleList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleListMod.ClusterRoleList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleListMod.ClusterRoleList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleListMod.ClusterRoleList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRoleListMod.ClusterRoleList]
+    
+    /**
+      * Get an existing ClusterRoleList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_ClusterRoleList(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleListMod.ClusterRoleList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleListMod.ClusterRoleList]
+    inline def get_ClusterRoleList(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleListMod.ClusterRoleList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRoleListMod.ClusterRoleList]
+    
     /**
       * Returns true if the given object is an instance of ClusterRoleList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/ClusterRoleList.ClusterRoleList */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRoleList.ClusterRoleList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRoleList.ClusterRoleList */ Boolean]
   }
   
-  /* static members */
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/rbac", "v1beta1.ClusterRoleList")
   @js.native
-  object Role extends js.Object {
+  open class ClusterRoleListCls protected () extends ClusterRoleList {
     /**
-      * Get the state of an existing `Role` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Create a ClusterRoleList resource with the given unique name, arguments, and options.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1beta1RoleMod.Role = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1beta1RoleMod.Role = js.native
+    def this(name: String) = this()
+    def this(name: String, args: ClusterRoleListArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: ClusterRoleListArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object ClusterRolePatch {
+    
+    @JSImport("@pulumi/kubernetes/rbac", "v1beta1.ClusterRolePatch")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing ClusterRolePatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRolePatchMod.ClusterRolePatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRolePatchMod.ClusterRolePatch]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRolePatchMod.ClusterRolePatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1ClusterRolePatchMod.ClusterRolePatch]
+    
+    /**
+      * Get an existing ClusterRolePatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_ClusterRolePatch(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRolePatchMod.ClusterRolePatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRolePatchMod.ClusterRolePatch]
+    inline def get_ClusterRolePatch(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRolePatchMod.ClusterRolePatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1ClusterRolePatchMod.ClusterRolePatch]
+    
+    /**
+      * Returns true if the given object is an instance of ClusterRolePatch.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRolePatch.ClusterRolePatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRolePatch.ClusterRolePatch */ Boolean]
+  }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/rbac", "v1beta1.ClusterRolePatch")
+  @js.native
+  open class ClusterRolePatchCls protected () extends ClusterRolePatch {
+    /**
+      * Create a ClusterRolePatch resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: ClusterRolePatchArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: ClusterRolePatchArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object Role {
+    
+    @JSImport("@pulumi/kubernetes/rbac", "v1beta1.Role")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing Role resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleMod.Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleMod.Role]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleMod.Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleMod.Role]
+    
+    /**
+      * Get an existing Role resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_Role(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleMod.Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleMod.Role]
+    inline def get_Role(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleMod.Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleMod.Role]
+    
     /**
       * Returns true if the given object is an instance of Role.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/Role.Role */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/role.Role */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/role.Role */ Boolean]
   }
   
-  /* static members */
-  @js.native
-  object RoleBinding extends js.Object {
+  object RoleBinding {
+    
+    @JSImport("@pulumi/kubernetes/rbac", "v1beta1.RoleBinding")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * Get the state of an existing `RoleBinding` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Get an existing RoleBinding resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1beta1RoleBindingMod.RoleBinding = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1beta1RoleBindingMod.RoleBinding = js.native
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingMod.RoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingMod.RoleBinding]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingMod.RoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingMod.RoleBinding]
+    
+    /**
+      * Get an existing RoleBinding resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_RoleBinding(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleBindingMod.RoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleBindingMod.RoleBinding]
+    inline def get_RoleBinding(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleBindingMod.RoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleBindingMod.RoleBinding]
+    
     /**
       * Returns true if the given object is an instance of RoleBinding.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/RoleBinding.RoleBinding */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/roleBinding.RoleBinding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/roleBinding.RoleBinding */ Boolean]
   }
   
-  /* static members */
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/rbac", "v1beta1.RoleBinding")
   @js.native
-  object RoleBindingList extends js.Object {
+  open class RoleBindingCls protected () extends RoleBinding {
     /**
-      * Get the state of an existing `RoleBindingList` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Create a RoleBinding resource with the given unique name, arguments, and options.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1beta1RoleBindingListMod.RoleBindingList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1beta1RoleBindingListMod.RoleBindingList = js.native
+    def this(name: String) = this()
+    def this(name: String, args: RoleBindingArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: RoleBindingArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object RoleBindingList {
+    
+    @JSImport("@pulumi/kubernetes/rbac", "v1beta1.RoleBindingList")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing RoleBindingList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingListMod.RoleBindingList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingListMod.RoleBindingList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingListMod.RoleBindingList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingListMod.RoleBindingList]
+    
+    /**
+      * Get an existing RoleBindingList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_RoleBindingList(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleBindingListMod.RoleBindingList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleBindingListMod.RoleBindingList]
+    inline def get_RoleBindingList(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleBindingListMod.RoleBindingList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleBindingListMod.RoleBindingList]
+    
     /**
       * Returns true if the given object is an instance of RoleBindingList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/RoleBindingList.RoleBindingList */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/roleBindingList.RoleBindingList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/roleBindingList.RoleBindingList */ Boolean]
   }
   
-  /* static members */
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/rbac", "v1beta1.RoleBindingList")
   @js.native
-  object RoleList extends js.Object {
+  open class RoleBindingListCls protected () extends RoleBindingList {
     /**
-      * Get the state of an existing `RoleList` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Create a RoleBindingList resource with the given unique name, arguments, and options.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1beta1RoleListMod.RoleList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1beta1RoleListMod.RoleList = js.native
+    def this(name: String) = this()
+    def this(name: String, args: RoleBindingListArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: RoleBindingListArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object RoleBindingPatch {
+    
+    @JSImport("@pulumi/kubernetes/rbac", "v1beta1.RoleBindingPatch")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing RoleBindingPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingPatchMod.RoleBindingPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingPatchMod.RoleBindingPatch]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingPatchMod.RoleBindingPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleBindingPatchMod.RoleBindingPatch]
+    
+    /**
+      * Get an existing RoleBindingPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_RoleBindingPatch(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleBindingPatchMod.RoleBindingPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleBindingPatchMod.RoleBindingPatch]
+    inline def get_RoleBindingPatch(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleBindingPatchMod.RoleBindingPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleBindingPatchMod.RoleBindingPatch]
+    
+    /**
+      * Returns true if the given object is an instance of RoleBindingPatch.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/roleBindingPatch.RoleBindingPatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/roleBindingPatch.RoleBindingPatch */ Boolean]
+  }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/rbac", "v1beta1.RoleBindingPatch")
+  @js.native
+  open class RoleBindingPatchCls protected () extends RoleBindingPatch {
+    /**
+      * Create a RoleBindingPatch resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: RoleBindingPatchArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: RoleBindingPatchArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/rbac", "v1beta1.Role")
+  @js.native
+  open class RoleCls protected () extends Role {
+    /**
+      * Create a Role resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: RoleArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: RoleArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object RoleList {
+    
+    @JSImport("@pulumi/kubernetes/rbac", "v1beta1.RoleList")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing RoleList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleListMod.RoleList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleListMod.RoleList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleListMod.RoleList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1RoleListMod.RoleList]
+    
+    /**
+      * Get an existing RoleList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_RoleList(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleListMod.RoleList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleListMod.RoleList]
+    inline def get_RoleList(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleListMod.RoleList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1RoleListMod.RoleList]
+    
     /**
       * Returns true if the given object is an instance of RoleList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/RoleList.RoleList */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/roleList.RoleList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/roleList.RoleList */ Boolean]
   }
   
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/rbac", "v1beta1.RoleList")
+  @js.native
+  open class RoleListCls protected () extends RoleList {
+    /**
+      * Create a RoleList resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: RoleListArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: RoleListArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object RolePatch {
+    
+    @JSImport("@pulumi/kubernetes/rbac", "v1beta1.RolePatch")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing RolePatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1alpha1RolePatchMod.RolePatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1RolePatchMod.RolePatch]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1alpha1RolePatchMod.RolePatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1alpha1RolePatchMod.RolePatch]
+    
+    /**
+      * Get an existing RolePatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_RolePatch(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.rbacV1beta1RolePatchMod.RolePatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1RolePatchMod.RolePatch]
+    inline def get_RolePatch(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.rbacV1beta1RolePatchMod.RolePatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.rbacV1beta1RolePatchMod.RolePatch]
+    
+    /**
+      * Returns true if the given object is an instance of RolePatch.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/rolePatch.RolePatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/rolePatch.RolePatch */ Boolean]
+  }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/rbac", "v1beta1.RolePatch")
+  @js.native
+  open class RolePatchCls protected () extends RolePatch {
+    /**
+      * Create a RolePatch resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: RolePatchArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: RolePatchArgs, opts: CustomResourceOptions) = this()
+  }
 }
-

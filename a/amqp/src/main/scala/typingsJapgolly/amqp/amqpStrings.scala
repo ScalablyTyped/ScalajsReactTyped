@@ -1,49 +1,40 @@
 package typingsJapgolly.amqp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amqpStrings {
-  @js.native
-  sealed trait ack extends js.Object
   
   @js.native
-  sealed trait direct extends js.Object
+  sealed trait ack extends StObject
+  inline def ack: ack = "ack".asInstanceOf[ack]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait direct extends StObject
+  inline def direct: direct = "direct".asInstanceOf[direct]
   
   @js.native
-  sealed trait exchangeBindOk extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait exchangeUnbindOk extends js.Object
+  sealed trait exchangeBindOk extends StObject
+  inline def exchangeBindOk: exchangeBindOk = "exchangeBindOk".asInstanceOf[exchangeBindOk]
   
   @js.native
-  sealed trait fanout extends js.Object
+  sealed trait exchangeUnbindOk extends StObject
+  inline def exchangeUnbindOk: exchangeUnbindOk = "exchangeUnbindOk".asInstanceOf[exchangeUnbindOk]
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait fanout extends StObject
+  inline def fanout: fanout = "fanout".asInstanceOf[fanout]
   
   @js.native
-  sealed trait topic extends js.Object
+  sealed trait open extends StObject
+  inline def open: open = "open".asInstanceOf[open]
   
-  @scala.inline
-  def ack: ack = "ack".asInstanceOf[ack]
-  @scala.inline
-  def direct: direct = "direct".asInstanceOf[direct]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def exchangeBindOk: exchangeBindOk = "exchangeBindOk".asInstanceOf[exchangeBindOk]
-  @scala.inline
-  def exchangeUnbindOk: exchangeUnbindOk = "exchangeUnbindOk".asInstanceOf[exchangeUnbindOk]
-  @scala.inline
-  def fanout: fanout = "fanout".asInstanceOf[fanout]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def topic: topic = "topic".asInstanceOf[topic]
+  @js.native
+  sealed trait topic extends StObject
+  inline def topic: topic = "topic".asInstanceOf[topic]
 }
-

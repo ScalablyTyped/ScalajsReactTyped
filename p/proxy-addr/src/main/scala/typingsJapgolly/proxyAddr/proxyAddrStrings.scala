@@ -1,25 +1,27 @@
 package typingsJapgolly.proxyAddr
 
 import typingsJapgolly.proxyAddr.mod._Address
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proxyAddrStrings {
-  @js.native
-  sealed trait linklocal extends _Address
   
   @js.native
-  sealed trait loopback extends _Address
+  sealed trait linklocal
+    extends StObject
+       with _Address
+  inline def linklocal: linklocal = "linklocal".asInstanceOf[linklocal]
   
   @js.native
-  sealed trait uniquelocal extends _Address
+  sealed trait loopback
+    extends StObject
+       with _Address
+  inline def loopback: loopback = "loopback".asInstanceOf[loopback]
   
-  @scala.inline
-  def linklocal: linklocal = "linklocal".asInstanceOf[linklocal]
-  @scala.inline
-  def loopback: loopback = "loopback".asInstanceOf[loopback]
-  @scala.inline
-  def uniquelocal: uniquelocal = "uniquelocal".asInstanceOf[uniquelocal]
+  @js.native
+  sealed trait uniquelocal
+    extends StObject
+       with _Address
+  inline def uniquelocal: uniquelocal = "uniquelocal".asInstanceOf[uniquelocal]
 }
-

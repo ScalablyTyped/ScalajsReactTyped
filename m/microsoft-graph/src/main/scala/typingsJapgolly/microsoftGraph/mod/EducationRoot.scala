@@ -1,36 +1,56 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EducationRoot extends Entity {
-  // Read-only. Nullable.
-  var classes: js.UndefOr[js.Array[EducationClass]] = js.undefined
-  // Read-only. Nullable.
-  var me: js.UndefOr[EducationUser] = js.undefined
-  // Read-only. Nullable.
-  var schools: js.UndefOr[js.Array[EducationSchool]] = js.undefined
-  // Read-only. Nullable.
-  var users: js.UndefOr[js.Array[EducationUser]] = js.undefined
+trait EducationRoot extends StObject {
+  
+  var classes: js.UndefOr[NullableOption[js.Array[EducationClass]]] = js.undefined
+  
+  var me: js.UndefOr[NullableOption[EducationUser]] = js.undefined
+  
+  var schools: js.UndefOr[NullableOption[js.Array[EducationSchool]]] = js.undefined
+  
+  var users: js.UndefOr[NullableOption[js.Array[EducationUser]]] = js.undefined
 }
-
 object EducationRoot {
-  @scala.inline
-  def apply(
-    classes: js.Array[EducationClass] = null,
-    id: String = null,
-    me: EducationUser = null,
-    schools: js.Array[EducationSchool] = null,
-    users: js.Array[EducationUser] = null
-  ): EducationRoot = {
+  
+  inline def apply(): EducationRoot = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (me != null) __obj.updateDynamic("me")(me.asInstanceOf[js.Any])
-    if (schools != null) __obj.updateDynamic("schools")(schools.asInstanceOf[js.Any])
-    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[EducationRoot]
   }
+  
+  extension [Self <: EducationRoot](x: Self) {
+    
+    inline def setClasses(value: NullableOption[js.Array[EducationClass]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesNull: Self = StObject.set(x, "classes", null)
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setClassesVarargs(value: EducationClass*): Self = StObject.set(x, "classes", js.Array(value*))
+    
+    inline def setMe(value: NullableOption[EducationUser]): Self = StObject.set(x, "me", value.asInstanceOf[js.Any])
+    
+    inline def setMeNull: Self = StObject.set(x, "me", null)
+    
+    inline def setMeUndefined: Self = StObject.set(x, "me", js.undefined)
+    
+    inline def setSchools(value: NullableOption[js.Array[EducationSchool]]): Self = StObject.set(x, "schools", value.asInstanceOf[js.Any])
+    
+    inline def setSchoolsNull: Self = StObject.set(x, "schools", null)
+    
+    inline def setSchoolsUndefined: Self = StObject.set(x, "schools", js.undefined)
+    
+    inline def setSchoolsVarargs(value: EducationSchool*): Self = StObject.set(x, "schools", js.Array(value*))
+    
+    inline def setUsers(value: NullableOption[js.Array[EducationUser]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    
+    inline def setUsersNull: Self = StObject.set(x, "users", null)
+    
+    inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+    
+    inline def setUsersVarargs(value: EducationUser*): Self = StObject.set(x, "users", js.Array(value*))
+  }
 }
-

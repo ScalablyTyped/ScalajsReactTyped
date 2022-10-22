@@ -10,10 +10,10 @@ Graphviz DOT rendering and animated transitions for D3
 | ------------------ | :-------------: |
 | Full name          | d3-graphviz |
 | Keywords           | d3, d3-module, Graphviz, DOT, graph layout, animation, transition, Viz.js |
-| # releases         | 26 |
-| # dependents       | 3 |
-| # downloads        | 187568 |
-| # stars            | 2 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 85583.0 |
+| # stars            | 1316.0 |
 
 ## Links
 - [Homepage](https://github.com/magjac/d3-graphviz)

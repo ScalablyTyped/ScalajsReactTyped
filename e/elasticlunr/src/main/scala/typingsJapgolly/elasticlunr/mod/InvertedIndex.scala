@@ -1,32 +1,43 @@
 package typingsJapgolly.elasticlunr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticlunr", "InvertedIndex")
 @js.native
-class InvertedIndex () extends js.Object {
+open class InvertedIndex () extends StObject {
+  
   def addToken(token: String, tokenInfo: TokenInfo): Unit = js.native
   def addToken(token: String, tokenInfo: TokenInfo, root: InvertedIndexNode): Unit = js.native
+  
   def expandToken(token: String): js.Array[String] = js.native
   def expandToken(token: String, memo: js.Array[String]): js.Array[String] = js.native
   def expandToken(token: String, memo: js.Array[String], root: InvertedIndexNode): js.Array[String] = js.native
+  def expandToken(token: String, memo: Unit, root: InvertedIndexNode): js.Array[String] = js.native
+  
   def getDocFreq(token: String): Double = js.native
+  
   def getDocs(token: String): InvertedIndexDocs = js.native
+  
   def getNode(token: String): InvertedIndexNode = js.native
+  
   def getTermFrequency(token: String, docRef: String): Double = js.native
   def getTermFrequency(token: String, docRef: Double): Double = js.native
+  
   def hasToken(token: String): Boolean = js.native
+  
   def removeToken(token: String, ref: String): Unit = js.native
   def removeToken(token: String, ref: Double): Unit = js.native
+  
   def toJSON(): SerialisedInvertedIndex = js.native
 }
-
-/* static members */
-@JSImport("elasticlunr", "InvertedIndex")
-@js.native
-object InvertedIndex extends js.Object {
-  def load(serialisedData: SerialisedInvertedIndex): InvertedIndex = js.native
+object InvertedIndex {
+  
+  @JSImport("elasticlunr", "InvertedIndex")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def load(serialisedData: SerialisedInvertedIndex): InvertedIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[InvertedIndex]
 }
-

@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.BackgroundTransfer
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BackgroundTransferBehavior extends js.Object
-
+sealed trait BackgroundTransferBehavior extends StObject
 /** Defines values used to indicate if downloads and uploads within a BackgroundTransferGroup run in simultaneously or in serial. */
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferBehavior")
 @js.native
-object BackgroundTransferBehavior extends js.Object {
+object BackgroundTransferBehavior extends StObject {
+  
   /** Background Transfer operations run simultaneously. */
   @js.native
-  sealed trait parallel extends BackgroundTransferBehavior
+  sealed trait parallel
+    extends StObject
+       with BackgroundTransferBehavior
   
   /** Background Transfer operations run in serial. */
   @js.native
-  sealed trait serialized extends BackgroundTransferBehavior
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BackgroundTransferBehavior with Double] = js.native
-  /* 0 */ @js.native
-  object parallel extends TopLevel[parallel with Double]
-  
-  /* 1 */ @js.native
-  object serialized extends TopLevel[serialized with Double]
-  
+  sealed trait serialized
+    extends StObject
+       with BackgroundTransferBehavior
 }
-

@@ -1,13 +1,14 @@
 package typingsJapgolly.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Properties' object passed into the WL.init method.
   */
-trait IInitProperties extends js.Object {
+trait IInitProperties extends StObject {
+  
   /**
     * Web apps: Required.
     * Specifies your app's OAuth client ID for web apps.
@@ -15,12 +16,14 @@ trait IInitProperties extends js.Object {
     * Windows Store apps using JavaScript: not needed.
     */
   var client_id: js.UndefOr[String] = js.undefined
+  
   /**
     * If set to "true", the library logs error info to the web browser
     * console and notifies your app by means of the wl.log event.
     * @default true
     */
   var logging: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Contains the default redirect URI to be used for OAuth
     * authentication. For web apps, the OAuth server redirects to this URI
@@ -30,6 +33,7 @@ trait IInitProperties extends js.Object {
     * enable the library to return the authentication token.
     */
   var redirect_uri: js.UndefOr[String] = js.undefined
+  
   /**
     * Web apps: optional.
     * Windows Store apps using JavaScript: not applicable.
@@ -43,6 +47,7 @@ trait IInitProperties extends js.Object {
     * @default "token"
     */
   var response_type: js.UndefOr[String] = js.undefined
+  
   /**
     * The scope values used to determine which portions of user data the
     * app has access to, if the user consents.
@@ -50,7 +55,8 @@ trait IInitProperties extends js.Object {
     * For a single scope, use this format: scope: "wl.signin". For multiple
     * scopes, use this format: scope: ["wl.signin", "wl.basic"].
     */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
+  
   /**
     * Web apps: optional.
     * Windows Store apps using JavaScript: not applicable.
@@ -59,6 +65,7 @@ trait IInitProperties extends js.Object {
     * @default "false"
     */
   var secure_cookie: js.UndefOr[String] = js.undefined
+  
   /**
     * Web apps: optional.
     * Windows Store apps using JavaScript: not applicable.
@@ -68,27 +75,41 @@ trait IInitProperties extends js.Object {
     */
   var status: js.UndefOr[Boolean] = js.undefined
 }
-
 object IInitProperties {
-  @scala.inline
-  def apply(
-    client_id: String = null,
-    logging: js.UndefOr[Boolean] = js.undefined,
-    redirect_uri: String = null,
-    response_type: String = null,
-    scope: js.Any = null,
-    secure_cookie: String = null,
-    status: js.UndefOr[Boolean] = js.undefined
-  ): IInitProperties = {
+  
+  inline def apply(): IInitProperties = {
     val __obj = js.Dynamic.literal()
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (secure_cookie != null) __obj.updateDynamic("secure_cookie")(secure_cookie.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInitProperties]
   }
+  
+  extension [Self <: IInitProperties](x: Self) {
+    
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    
+    inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
+    
+    inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    
+    inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
+    
+    inline def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
+    
+    inline def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+    
+    inline def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
+    
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setSecure_cookie(value: String): Self = StObject.set(x, "secure_cookie", value.asInstanceOf[js.Any])
+    
+    inline def setSecure_cookieUndefined: Self = StObject.set(x, "secure_cookie", js.undefined)
+    
+    inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+  }
 }
-

@@ -10,10 +10,10 @@ Typings are for version 1.6
 | ------------------ | :-------------: |
 | Full name          | leaflet-polylinedecorator |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 114072 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 36919.0 |
+| # stars            | 421.0 |
 
 ## Links
 - [Homepage](https://github.com/bbecquet/Leaflet.PolylineDecorator#readme)

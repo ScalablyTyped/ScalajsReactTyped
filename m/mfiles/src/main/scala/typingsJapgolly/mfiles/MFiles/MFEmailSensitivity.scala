@@ -1,35 +1,31 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`0`
-import typingsJapgolly.mfiles.mfilesNumbers.`1`
-import typingsJapgolly.mfiles.mfilesNumbers.`2`
-import typingsJapgolly.mfiles.mfilesNumbers.`3`
-import typingsJapgolly.mfiles.mfilesNumbers.`4`
+import typingsJapgolly.mfiles.mfilesInts.`0`
+import typingsJapgolly.mfiles.mfilesInts.`1`
+import typingsJapgolly.mfiles.mfilesInts.`2`
+import typingsJapgolly.mfiles.mfilesInts.`3`
+import typingsJapgolly.mfiles.mfilesInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.mfiles.mfilesNumbers.`0`
-  - typingsJapgolly.mfiles.mfilesNumbers.`1`
-  - typingsJapgolly.mfiles.mfilesNumbers.`2`
-  - typingsJapgolly.mfiles.mfilesNumbers.`3`
-  - typingsJapgolly.mfiles.mfilesNumbers.`4`
+  - typingsJapgolly.mfiles.mfilesInts.`0`
+  - typingsJapgolly.mfiles.mfilesInts.`1`
+  - typingsJapgolly.mfiles.mfilesInts.`2`
+  - typingsJapgolly.mfiles.mfilesInts.`3`
+  - typingsJapgolly.mfiles.mfilesInts.`4`
 */
-trait MFEmailSensitivity extends js.Object
-
+trait MFEmailSensitivity extends StObject
 object MFEmailSensitivity {
-  @scala.inline
-  def Confidential: `4` = this.cast(4)
-  @scala.inline
-  def None: `0` = this.cast(0)
-  @scala.inline
-  def Normal: `1` = this.cast(1)
-  @scala.inline
-  def Personal: `2` = this.cast(2)
-  @scala.inline
-  def Private: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Confidential: `4` = 4.asInstanceOf[`4`]
+  
+  inline def None: `0` = 0.asInstanceOf[`0`]
+  
+  inline def Normal: `1` = 1.asInstanceOf[`1`]
+  
+  inline def Personal: `2` = 2.asInstanceOf[`2`]
+  
+  inline def Private: `3` = 3.asInstanceOf[`3`]
 }
-

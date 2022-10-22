@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__client-logger
 
-Typings are for version 5.3.13
+Typings are for version 6.5.12
 
 ## Library description:
 Any client-side logging that is done through storybook should be done through this package.
@@ -10,13 +10,13 @@ Any client-side logging that is done through storybook should be done through th
 | ------------------ | :-------------: |
 | Full name          | @storybook/client-logger |
 | Keywords           | storybook |
-| # releases         | 430 |
-| # dependents       | 37 |
-| # downloads        | 52311801 |
-| # stars            | 0 |
+| # releases         | 466 |
+| # dependents       | 0.0 |
+| # downloads        | 3.3484952666666668E7 |
+| # stars            | 74448.0 |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/lib/client-logger)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/client-logger)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Fclient-logger)

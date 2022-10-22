@@ -1,41 +1,37 @@
 package typingsJapgolly.amazonConnectStreams.connect
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AgentStateType extends js.Object
-
+sealed trait AgentStateType extends StObject
+/** This enumeration lists the different types of agent states. */
 @JSGlobal("connect.AgentStateType")
 @js.native
-object AgentStateType extends js.Object {
+object AgentStateType extends StObject {
+  
+  /** The agent state hasn't been initialized yet. */
   @js.native
-  sealed trait INIT extends AgentStateType
+  sealed trait INIT
+    extends StObject
+       with AgentStateType
   
+  /** The agent is in a state where they cannot be routed contacts. */
   @js.native
-  sealed trait NOT_ROUTABLE extends AgentStateType
+  sealed trait NOT_ROUTABLE
+    extends StObject
+       with AgentStateType
   
+  /** The agent is offline. */
   @js.native
-  sealed trait OFFLINE extends AgentStateType
+  sealed trait OFFLINE
+    extends StObject
+       with AgentStateType
   
+  /** The agent is in a state where they can be routed contacts. */
   @js.native
-  sealed trait ROUTABLE extends AgentStateType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[AgentStateType with String] = js.native
-  /* "init" */ @js.native
-  object INIT extends TopLevel[INIT with String]
-  
-  /* "not_routable" */ @js.native
-  object NOT_ROUTABLE extends TopLevel[NOT_ROUTABLE with String]
-  
-  /* "offline" */ @js.native
-  object OFFLINE extends TopLevel[OFFLINE with String]
-  
-  /* "routable" */ @js.native
-  object ROUTABLE extends TopLevel[ROUTABLE with String]
-  
+  sealed trait ROUTABLE
+    extends StObject
+       with AgentStateType
 }
-

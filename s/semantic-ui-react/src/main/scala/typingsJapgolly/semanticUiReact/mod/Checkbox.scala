@@ -1,23 +1,22 @@
 package typingsJapgolly.semanticUiReact.mod
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.facade.React.ComponentClassP
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.semanticUiReact.checkboxCheckboxMod.CheckboxProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps
+import typingsJapgolly.semanticUiReact.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "Checkbox")
 @js.native
-class Checkbox protected ()
-  extends Component[CheckboxProps, ComponentState, js.Any] {
+open class Checkbox protected ()
+  extends Component[CheckboxProps, js.Object, Any] {
   def this(props: CheckboxProps) = this()
-  def this(props: CheckboxProps, context: js.Any) = this()
+  def this(props: CheckboxProps, context: Any) = this()
 }
-
-@JSImport("semantic-ui-react", "Checkbox")
-@js.native
-object Checkbox extends TopLevel[ComponentClass[CheckboxProps, ComponentState]]
-
+object Checkbox {
+  
+  inline def apply: ComponentClassP[CheckboxProps & js.Object] = ^.asInstanceOf[js.Dynamic].selectDynamic("Checkbox").asInstanceOf[ComponentClassP[CheckboxProps & js.Object]]
+}

@@ -1,21 +1,28 @@
 package typingsJapgolly.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IonicAngularServeOptions extends ServeOptions {
+trait IonicAngularServeOptions
+  extends StObject
+     with ServeOptions {
+  
   var consolelogs: Boolean
+  
   var env: js.UndefOr[String] = js.undefined
+  
   var livereloadPort: Double
+  
   var notificationPort: Double
+  
   var serverlogs: Boolean
+  
   var sourcemaps: js.UndefOr[Boolean] = js.undefined
 }
-
 object IonicAngularServeOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     `--`: js.Array[String],
     address: String,
     consolelogs: Boolean,
@@ -30,27 +37,29 @@ object IonicAngularServeOptions {
     open: Boolean,
     port: Double,
     proxy: Boolean,
-    serverlogs: Boolean,
-    browser: String = null,
-    browserOption: String = null,
-    env: String = null,
-    externalAddressRequired: js.UndefOr[Boolean] = js.undefined,
-    platform: String = null,
-    project: String = null,
-    sourcemaps: js.UndefOr[Boolean] = js.undefined,
-    verbose: js.UndefOr[Boolean] = js.undefined
+    serverlogs: Boolean
   ): IonicAngularServeOptions = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], consolelogs = consolelogs.asInstanceOf[js.Any], devapp = devapp.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], lab = lab.asInstanceOf[js.Any], labHost = labHost.asInstanceOf[js.Any], labPort = labPort.asInstanceOf[js.Any], livereload = livereload.asInstanceOf[js.Any], livereloadPort = livereloadPort.asInstanceOf[js.Any], notificationPort = notificationPort.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], serverlogs = serverlogs.asInstanceOf[js.Any])
     __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
-    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
-    if (browserOption != null) __obj.updateDynamic("browserOption")(browserOption.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalAddressRequired)) __obj.updateDynamic("externalAddressRequired")(externalAddressRequired.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourcemaps)) __obj.updateDynamic("sourcemaps")(sourcemaps.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonicAngularServeOptions]
   }
+  
+  extension [Self <: IonicAngularServeOptions](x: Self) {
+    
+    inline def setConsolelogs(value: Boolean): Self = StObject.set(x, "consolelogs", value.asInstanceOf[js.Any])
+    
+    inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    
+    inline def setLivereloadPort(value: Double): Self = StObject.set(x, "livereloadPort", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationPort(value: Double): Self = StObject.set(x, "notificationPort", value.asInstanceOf[js.Any])
+    
+    inline def setServerlogs(value: Boolean): Self = StObject.set(x, "serverlogs", value.asInstanceOf[js.Any])
+    
+    inline def setSourcemaps(value: Boolean): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
+    
+    inline def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
+  }
 }
-

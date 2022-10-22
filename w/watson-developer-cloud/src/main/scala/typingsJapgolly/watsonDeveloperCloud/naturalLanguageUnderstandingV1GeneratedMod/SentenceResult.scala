@@ -1,24 +1,35 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SentenceResult. */
-trait SentenceResult extends js.Object {
+trait SentenceResult extends StObject {
+  
   /** Character offsets indicating the beginning and end of the sentence in the analyzed text. */
   var location: js.UndefOr[js.Array[Double]] = js.undefined
+  
   /** The sentence. */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object SentenceResult {
-  @scala.inline
-  def apply(location: js.Array[Double] = null, text: String = null): SentenceResult = {
+  
+  inline def apply(): SentenceResult = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SentenceResult]
   }
+  
+  extension [Self <: SentenceResult](x: Self) {
+    
+    inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value*))
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

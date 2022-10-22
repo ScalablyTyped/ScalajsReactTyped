@@ -1,45 +1,76 @@
 package typingsJapgolly.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RefundRequest extends js.Object {
+trait RefundRequest extends StObject {
+  
   var amount: js.UndefOr[Amount] = js.undefined
+  
   var description: js.UndefOr[String] = js.undefined
+  
   var invoice_number: js.UndefOr[String] = js.undefined
+  
   var items: js.UndefOr[js.Array[Item]] = js.undefined
+  
   var payer_info: js.UndefOr[PayerInfo] = js.undefined
+  
   var reason: js.UndefOr[String] = js.undefined
+  
   var refund_advice: js.UndefOr[Boolean] = js.undefined
+  
   var refund_source: js.UndefOr[String] = js.undefined
-  var supplementary_data: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var supplementary_data: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object RefundRequest {
-  @scala.inline
-  def apply(
-    amount: Amount = null,
-    description: String = null,
-    invoice_number: String = null,
-    items: js.Array[Item] = null,
-    payer_info: PayerInfo = null,
-    reason: String = null,
-    refund_advice: js.UndefOr[Boolean] = js.undefined,
-    refund_source: String = null,
-    supplementary_data: js.Array[_] = null
-  ): RefundRequest = {
+  
+  inline def apply(): RefundRequest = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (invoice_number != null) __obj.updateDynamic("invoice_number")(invoice_number.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (payer_info != null) __obj.updateDynamic("payer_info")(payer_info.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (!js.isUndefined(refund_advice)) __obj.updateDynamic("refund_advice")(refund_advice.asInstanceOf[js.Any])
-    if (refund_source != null) __obj.updateDynamic("refund_source")(refund_source.asInstanceOf[js.Any])
-    if (supplementary_data != null) __obj.updateDynamic("supplementary_data")(supplementary_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefundRequest]
   }
+  
+  extension [Self <: RefundRequest](x: Self) {
+    
+    inline def setAmount(value: Amount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setInvoice_number(value: String): Self = StObject.set(x, "invoice_number", value.asInstanceOf[js.Any])
+    
+    inline def setInvoice_numberUndefined: Self = StObject.set(x, "invoice_number", js.undefined)
+    
+    inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setPayer_info(value: PayerInfo): Self = StObject.set(x, "payer_info", value.asInstanceOf[js.Any])
+    
+    inline def setPayer_infoUndefined: Self = StObject.set(x, "payer_info", js.undefined)
+    
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    
+    inline def setRefund_advice(value: Boolean): Self = StObject.set(x, "refund_advice", value.asInstanceOf[js.Any])
+    
+    inline def setRefund_adviceUndefined: Self = StObject.set(x, "refund_advice", js.undefined)
+    
+    inline def setRefund_source(value: String): Self = StObject.set(x, "refund_source", value.asInstanceOf[js.Any])
+    
+    inline def setRefund_sourceUndefined: Self = StObject.set(x, "refund_source", js.undefined)
+    
+    inline def setSupplementary_data(value: js.Array[Any]): Self = StObject.set(x, "supplementary_data", value.asInstanceOf[js.Any])
+    
+    inline def setSupplementary_dataUndefined: Self = StObject.set(x, "supplementary_data", js.undefined)
+    
+    inline def setSupplementary_dataVarargs(value: Any*): Self = StObject.set(x, "supplementary_data", js.Array(value*))
+  }
 }
-

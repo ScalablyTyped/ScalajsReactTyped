@@ -1,37 +1,55 @@
 package typingsJapgolly.browserSync.mod
 
-import typingsJapgolly.browserSync.AnonHeartbeatTimeout
+import typingsJapgolly.browserSync.anon.HeartbeatTimeout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SocketOptions extends js.Object {
+trait SocketOptions extends StObject {
+  
   var clientPath: js.UndefOr[String] = js.undefined
-  var clients: js.UndefOr[AnonHeartbeatTimeout] = js.undefined
+  
+  var clients: js.UndefOr[HeartbeatTimeout] = js.undefined
+  
   var domain: js.UndefOr[String] = js.undefined
+  
   var namespace: js.UndefOr[String] = js.undefined
+  
   var path: js.UndefOr[String] = js.undefined
+  
   var port: js.UndefOr[Double] = js.undefined
 }
-
 object SocketOptions {
-  @scala.inline
-  def apply(
-    clientPath: String = null,
-    clients: AnonHeartbeatTimeout = null,
-    domain: String = null,
-    namespace: String = null,
-    path: String = null,
-    port: Int | Double = null
-  ): SocketOptions = {
+  
+  inline def apply(): SocketOptions = {
     val __obj = js.Dynamic.literal()
-    if (clientPath != null) __obj.updateDynamic("clientPath")(clientPath.asInstanceOf[js.Any])
-    if (clients != null) __obj.updateDynamic("clients")(clients.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketOptions]
   }
+  
+  extension [Self <: SocketOptions](x: Self) {
+    
+    inline def setClientPath(value: String): Self = StObject.set(x, "clientPath", value.asInstanceOf[js.Any])
+    
+    inline def setClientPathUndefined: Self = StObject.set(x, "clientPath", js.undefined)
+    
+    inline def setClients(value: HeartbeatTimeout): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
+    
+    inline def setClientsUndefined: Self = StObject.set(x, "clients", js.undefined)
+    
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+  }
 }
-

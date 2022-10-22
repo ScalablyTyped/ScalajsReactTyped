@@ -1,22 +1,26 @@
 package typingsJapgolly.anydbSql.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BinaryNode extends js.Object {
+trait BinaryNode extends StObject {
+  
   def and(node: BinaryNode): BinaryNode
+  
   def or(node: BinaryNode): BinaryNode
 }
-
 object BinaryNode {
-  @scala.inline
-  def apply(and: BinaryNode => CallbackTo[BinaryNode], or: BinaryNode => CallbackTo[BinaryNode]): BinaryNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("and")(js.Any.fromFunction1((t0: typingsJapgolly.anydbSql.mod.BinaryNode) => and(t0).runNow()))
-    __obj.updateDynamic("or")(js.Any.fromFunction1((t0: typingsJapgolly.anydbSql.mod.BinaryNode) => or(t0).runNow()))
+  
+  inline def apply(and: BinaryNode => BinaryNode, or: BinaryNode => BinaryNode): BinaryNode = {
+    val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), or = js.Any.fromFunction1(or))
     __obj.asInstanceOf[BinaryNode]
   }
+  
+  extension [Self <: BinaryNode](x: Self) {
+    
+    inline def setAnd(value: BinaryNode => BinaryNode): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+    
+    inline def setOr(value: BinaryNode => BinaryNode): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+  }
 }
-

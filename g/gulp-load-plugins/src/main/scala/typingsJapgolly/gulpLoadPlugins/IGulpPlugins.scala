@@ -1,11 +1,10 @@
 package typingsJapgolly.gulpLoadPlugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Extend this interface to use Gulp plugins in your gulpfile.js
   */
-trait IGulpPlugins extends js.Object
-
+trait IGulpPlugins extends StObject

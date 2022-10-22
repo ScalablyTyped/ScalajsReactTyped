@@ -1,53 +1,46 @@
 package typingsJapgolly.officeJs.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HeaderFooterType extends js.Object
-
+sealed trait HeaderFooterType extends StObject
 /**
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.HeaderFooterType")
 @js.native
-object HeaderFooterType extends js.Object {
+object HeaderFooterType extends StObject {
+  
   /**
-    *
     * Returns all headers or footers on even-numbered pages of a section.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
-  sealed trait evenPages extends HeaderFooterType
+  sealed trait evenPages
+    extends StObject
+       with HeaderFooterType
   
   /**
-    *
     * Returns the header or footer on the first page of a section.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
-  sealed trait firstPage extends HeaderFooterType
+  sealed trait firstPage
+    extends StObject
+       with HeaderFooterType
   
   /**
-    *
-    * Returns the header or footer on all pages of a section, but excludes the first page or odd pages if they are different.
-    *
+    * Returns the header or footer on all pages of a section, but excludes the first page or even pages if they are different.
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
-  sealed trait primary extends HeaderFooterType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[HeaderFooterType with String] = js.native
-  /* "EvenPages" */ @js.native
-  object evenPages extends TopLevel[evenPages with String]
-  
-  /* "FirstPage" */ @js.native
-  object firstPage extends TopLevel[firstPage with String]
-  
-  /* "Primary" */ @js.native
-  object primary extends TopLevel[primary with String]
-  
+  sealed trait primary
+    extends StObject
+       with HeaderFooterType
 }
-

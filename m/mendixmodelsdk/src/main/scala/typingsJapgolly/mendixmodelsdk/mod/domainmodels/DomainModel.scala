@@ -1,19 +1,19 @@
 package typingsJapgolly.mendixmodelsdk.mod.domainmodels
 
-import typingsJapgolly.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.projectsMod.projects.IModule
+import typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenProjectsMod.projects.IModule
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/domain-model relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/domain-model relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk", "domainmodels.DomainModel")
 @js.native
-class DomainModel protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.domainmodels.DomainModel {
+open class DomainModel protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.domainmodels.DomainModel {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -22,17 +22,28 @@ class DomainModel protected ()
     container: IModule
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "domainmodels.DomainModel")
-@js.native
-object DomainModel extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object DomainModel {
+  
+  @JSImport("mendixmodelsdk", "domainmodels.DomainModel")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new DomainModel unit in the SDK and on the server.
     * Expects one argument, the projects.IModule in which this unit is contained.
     */
-  def createIn(container: IModule): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.DomainModel = js.native
+  /* static member */
+  inline def createIn(container: IModule): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.DomainModel = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.DomainModel]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "domainmodels.DomainModel.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "domainmodels.DomainModel.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

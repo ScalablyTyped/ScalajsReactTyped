@@ -1,44 +1,42 @@
 package typingsJapgolly.monacoEditor.mod.editor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OverlayWidgetPositionPreference extends js.Object
-
+sealed trait OverlayWidgetPositionPreference extends StObject
 @JSImport("monaco-editor", "editor.OverlayWidgetPositionPreference")
 @js.native
-object OverlayWidgetPositionPreference extends js.Object {
+object OverlayWidgetPositionPreference extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[OverlayWidgetPositionPreference & Double] = js.native
+  
   /**
     * Position the overlay widget in the bottom right corner
     */
   @js.native
-  sealed trait BOTTOM_RIGHT_CORNER extends OverlayWidgetPositionPreference
+  sealed trait BOTTOM_RIGHT_CORNER
+    extends StObject
+       with OverlayWidgetPositionPreference
+  /* 1 */ val BOTTOM_RIGHT_CORNER: typingsJapgolly.monacoEditor.mod.editor.OverlayWidgetPositionPreference.BOTTOM_RIGHT_CORNER & Double = js.native
   
   /**
     * Position the overlay widget in the top center
     */
   @js.native
-  sealed trait TOP_CENTER extends OverlayWidgetPositionPreference
+  sealed trait TOP_CENTER
+    extends StObject
+       with OverlayWidgetPositionPreference
+  /* 2 */ val TOP_CENTER: typingsJapgolly.monacoEditor.mod.editor.OverlayWidgetPositionPreference.TOP_CENTER & Double = js.native
   
   /**
     * Position the overlay widget in the top right corner
     */
   @js.native
-  sealed trait TOP_RIGHT_CORNER extends OverlayWidgetPositionPreference
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[OverlayWidgetPositionPreference with Double] = js.native
-  /* 1 */ @js.native
-  object BOTTOM_RIGHT_CORNER extends TopLevel[BOTTOM_RIGHT_CORNER with Double]
-  
-  /* 2 */ @js.native
-  object TOP_CENTER extends TopLevel[TOP_CENTER with Double]
-  
-  /* 0 */ @js.native
-  object TOP_RIGHT_CORNER extends TopLevel[TOP_RIGHT_CORNER with Double]
-  
+  sealed trait TOP_RIGHT_CORNER
+    extends StObject
+       with OverlayWidgetPositionPreference
+  /* 0 */ val TOP_RIGHT_CORNER: typingsJapgolly.monacoEditor.mod.editor.OverlayWidgetPositionPreference.TOP_RIGHT_CORNER & Double = js.native
 }
-

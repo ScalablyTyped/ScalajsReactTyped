@@ -1,61 +1,48 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.sliderMod.SliderProps
-import typingsJapgolly.antDesignReactNative.sliderMod.default
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignReactNative.libSliderMod.SliderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Slider {
-  def apply(
-    defaultValue: Int | Double = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    max: Int | Double = null,
-    maximumTrackTintColor: String = null,
-    min: Int | Double = null,
-    minimumTrackTintColor: String = null,
-    onAfterChange: /* value */ js.UndefOr[Double] => Callback = null,
-    onChange: /* value */ js.UndefOr[Double] => Callback = null,
-    step: Int | Double = null,
-    tipFormatter: /* value */ js.UndefOr[String] => CallbackTo[Node] = null,
-    value: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SliderProps, default, Unit, SliderProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maximumTrackTintColor != null) __obj.updateDynamic("maximumTrackTintColor")(maximumTrackTintColor.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minimumTrackTintColor != null) __obj.updateDynamic("minimumTrackTintColor")(minimumTrackTintColor.asInstanceOf[js.Any])
-    if (onAfterChange != null) __obj.updateDynamic("onAfterChange")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[scala.Double]) => onAfterChange(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[scala.Double]) => onChange(t0).runNow()))
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (tipFormatter != null) __obj.updateDynamic("tipFormatter")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[java.lang.String]) => tipFormatter(t0).runNow()))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.sliderMod.SliderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.sliderMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.sliderMod.SliderProps])(children: _*)
-  }
-  @JSImport("@ant-design/react-native/lib/slider", JSImport.Default)
+  @JSImport("@ant-design/react-native", "Slider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.Slider] {
+    
+    inline def defaultValue(value: Double): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def max(value: Double): this.type = set("max", value.asInstanceOf[js.Any])
+    
+    inline def maximumTrackTintColor(value: String): this.type = set("maximumTrackTintColor", value.asInstanceOf[js.Any])
+    
+    inline def min(value: Double): this.type = set("min", value.asInstanceOf[js.Any])
+    
+    inline def minimumTrackTintColor(value: String): this.type = set("minimumTrackTintColor", value.asInstanceOf[js.Any])
+    
+    inline def onAfterChange(value: /* value */ js.UndefOr[Double] => Callback): this.type = set("onAfterChange", js.Any.fromFunction1((t0: /* value */ js.UndefOr[Double]) => value(t0).runNow()))
+    
+    inline def onChange(value: /* value */ js.UndefOr[Double] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* value */ js.UndefOr[Double]) => value(t0).runNow()))
+    
+    inline def step(value: Double): this.type = set("step", value.asInstanceOf[js.Any])
+    
+    inline def tipFormatter(value: /* value */ js.UndefOr[String] => Node): this.type = set("tipFormatter", js.Any.fromFunction1(value))
+    
+    inline def value(value: Double): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Slider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SliderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

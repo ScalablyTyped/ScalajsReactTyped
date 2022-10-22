@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.map
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BingLayerOptions extends js.Object {
+trait BingLayerOptions extends StObject {
+  
   var baseUrl: js.UndefOr[String] = js.undefined
+  
   var imagerySet: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object BingLayerOptions {
-  @scala.inline
-  def apply(baseUrl: String = null, imagerySet: String = null, name: String = null): BingLayerOptions = {
+  
+  inline def apply(): BingLayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
-    if (imagerySet != null) __obj.updateDynamic("imagerySet")(imagerySet.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BingLayerOptions]
   }
+  
+  extension [Self <: BingLayerOptions](x: Self) {
+    
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    
+    inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+    
+    inline def setImagerySet(value: String): Self = StObject.set(x, "imagerySet", value.asInstanceOf[js.Any])
+    
+    inline def setImagerySetUndefined: Self = StObject.set(x, "imagerySet", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

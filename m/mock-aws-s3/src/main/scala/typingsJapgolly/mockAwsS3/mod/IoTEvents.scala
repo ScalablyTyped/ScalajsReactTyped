@@ -1,17 +1,16 @@
 package typingsJapgolly.mockAwsS3.mod
 
-import typingsJapgolly.awsSdk.ioteventsMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsIoteventsMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "IoTEvents")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class IoTEvents ()
+open class IoTEvents ()
   extends typingsJapgolly.awsSdk.mod.IoTEvents {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -1,32 +1,39 @@
 package typingsJapgolly.natsHemera.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ServerPattern
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   @JSName("maxMessages$")
   var maxMessages$: js.UndefOr[Double] = js.undefined
+  
   @JSName("pubsub$")
   var pubsub$: js.UndefOr[Boolean] = js.undefined
+  
   var topic: String
 }
-
 object ServerPattern {
-  @scala.inline
-  def apply(
-    topic: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    maxMessages$: Int | Double = null,
-    pubsub$: js.UndefOr[Boolean] = js.undefined
-  ): ServerPattern = {
+  
+  inline def apply(topic: String): ServerPattern = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (maxMessages$ != null) __obj.updateDynamic("maxMessages$")(maxMessages$.asInstanceOf[js.Any])
-    if (!js.isUndefined(pubsub$)) __obj.updateDynamic("pubsub$")(pubsub$.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerPattern]
   }
+  
+  extension [Self <: ServerPattern](x: Self) {
+    
+    inline def setMaxMessages$(value: Double): Self = StObject.set(x, "maxMessages$", value.asInstanceOf[js.Any])
+    
+    inline def setMaxMessages$Undefined: Self = StObject.set(x, "maxMessages$", js.undefined)
+    
+    inline def setPubsub$(value: Boolean): Self = StObject.set(x, "pubsub$", value.asInstanceOf[js.Any])
+    
+    inline def setPubsub$Undefined: Self = StObject.set(x, "pubsub$", js.undefined)
+    
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+  }
 }
-

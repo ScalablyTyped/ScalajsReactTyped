@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.MarginTopProperty
+import typingsJapgolly.csstype.mod.Property.MarginTop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarginYProps[TLength] extends js.Object {
-  val my: js.UndefOr[ResponsiveValue[MarginTopProperty[TLength]]] = js.undefined
+trait MarginYProps[TLength] extends StObject {
+  
+  val my: js.UndefOr[ResponsiveValue[MarginTop[TLength]]] = js.undefined
 }
-
 object MarginYProps {
-  @scala.inline
-  def apply[TLength](my: ResponsiveValue[MarginTopProperty[TLength]] = null): MarginYProps[TLength] = {
+  
+  inline def apply[TLength](): MarginYProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (my != null) __obj.updateDynamic("my")(my.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginYProps[TLength]]
   }
+  
+  extension [Self <: MarginYProps[?], TLength](x: Self & MarginYProps[TLength]) {
+    
+    inline def setMy(value: ResponsiveValue[MarginTop[TLength]]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+    
+    inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
+    
+    inline def setMyVarargs(value: MarginTop[TLength]*): Self = StObject.set(x, "my", js.Array(value*))
+  }
 }
-

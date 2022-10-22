@@ -1,18 +1,24 @@
 package typingsJapgolly.bitwise
 
-import typingsJapgolly.bitwise.typesMod.Bit
+import typingsJapgolly.bitwise.typesMod.Bits
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bitwise/esm/string", JSImport.Namespace)
-@js.native
-object stringMod extends js.Object {
-  def toBits(string: String): js.Array[Bit] = js.native
+object stringMod {
+  
+  @JSImport("bitwise/string", JSImport.Namespace)
   @js.native
-  object default extends js.Object {
-    def toBits(string: String): js.Array[Bit] = js.native
+  val ^ : js.Any = js.native
+  
+  object default {
+    
+    @JSImport("bitwise/string", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def toBits(string: String): Bits = ^.asInstanceOf[js.Dynamic].applyDynamic("toBits")(string.asInstanceOf[js.Any]).asInstanceOf[Bits]
   }
   
+  inline def toBits(string: String): Bits = ^.asInstanceOf[js.Dynamic].applyDynamic("toBits")(string.asInstanceOf[js.Any]).asInstanceOf[Bits]
 }
-

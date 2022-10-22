@@ -1,12 +1,12 @@
 package typingsJapgolly.vis.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.vis.AnonDrawThreshold
+import typingsJapgolly.vis.anon.DrawThreshold
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OptionsScaling extends js.Object {
+trait OptionsScaling extends StObject {
+  
   var customScalingFunction: js.UndefOr[
     js.Function4[
       /* min */ js.UndefOr[Double], 
@@ -16,25 +16,38 @@ trait OptionsScaling extends js.Object {
       Double
     ]
   ] = js.undefined
-  var label: js.UndefOr[Boolean | AnonDrawThreshold] = js.undefined
+  
+  var label: js.UndefOr[Boolean | DrawThreshold] = js.undefined
+  
   var max: js.UndefOr[Double] = js.undefined
+  
   var min: js.UndefOr[Double] = js.undefined
 }
-
 object OptionsScaling {
-  @scala.inline
-  def apply(
-    customScalingFunction: (/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* total */ js.UndefOr[Double], /* value */ js.UndefOr[Double]) => CallbackTo[Double] = null,
-    label: Boolean | AnonDrawThreshold = null,
-    max: Int | Double = null,
-    min: Int | Double = null
-  ): OptionsScaling = {
+  
+  inline def apply(): OptionsScaling = {
     val __obj = js.Dynamic.literal()
-    if (customScalingFunction != null) __obj.updateDynamic("customScalingFunction")(js.Any.fromFunction4((t0: /* min */ js.UndefOr[scala.Double], t1: /* max */ js.UndefOr[scala.Double], t2: /* total */ js.UndefOr[scala.Double], t3: /* value */ js.UndefOr[scala.Double]) => customScalingFunction(t0, t1, t2, t3).runNow()))
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsScaling]
   }
+  
+  extension [Self <: OptionsScaling](x: Self) {
+    
+    inline def setCustomScalingFunction(
+      value: (/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* total */ js.UndefOr[Double], /* value */ js.UndefOr[Double]) => Double
+    ): Self = StObject.set(x, "customScalingFunction", js.Any.fromFunction4(value))
+    
+    inline def setCustomScalingFunctionUndefined: Self = StObject.set(x, "customScalingFunction", js.undefined)
+    
+    inline def setLabel(value: Boolean | DrawThreshold): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+  }
 }
-

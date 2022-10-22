@@ -1,26 +1,29 @@
 package typingsJapgolly.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebSource extends js.Object {
-  // Docs: http://electronjs.org/docs/api/structures/web-source
+trait WebSource extends StObject {
+  
+  // Docs: https://electronjs.org/docs/api/structures/web-source
   var code: String
-  /**
-    * Default is 1.
-    */
-  var startLine: js.UndefOr[Double] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object WebSource {
-  @scala.inline
-  def apply(code: String, startLine: Int | Double = null, url: String = null): WebSource = {
+  
+  inline def apply(code: String): WebSource = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-    if (startLine != null) __obj.updateDynamic("startLine")(startLine.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSource]
   }
+  
+  extension [Self <: WebSource](x: Self) {
+    
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

@@ -1,75 +1,99 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait YAxisResizeOptions extends js.Object {
+trait YAxisResizeOptions extends StObject {
+  
   /**
     * (Highstock) Contains two arrays of axes that are controlled by control
     * line of the axis.
     */
   var controlledAxis: js.UndefOr[YAxisResizeControlledAxisOptions] = js.undefined
+  
   /**
     * (Highstock) Cursor style for the control line.
     *
     * In styled mode use class `highcharts-axis-resizer` instead.
     */
   var cursor: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) Enable or disable resize by drag for the axis.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highstock) Color of the control line.
     *
     * In styled mode use class `highcharts-axis-resizer` instead.
     */
   var lineColor: js.UndefOr[ColorString] = js.undefined
+  
   /**
     * (Highstock) Dash style of the control line.
     *
     * In styled mode use class `highcharts-axis-resizer` instead.
     */
   var lineDashStyle: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) Width of the control line.
     *
     * In styled mode use class `highcharts-axis-resizer` instead.
     */
   var lineWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock) Horizontal offset of the control line.
     */
   var x: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock) Vertical offset of the control line.
     */
   var y: js.UndefOr[Double] = js.undefined
 }
-
 object YAxisResizeOptions {
-  @scala.inline
-  def apply(
-    controlledAxis: YAxisResizeControlledAxisOptions = null,
-    cursor: String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    lineColor: ColorString = null,
-    lineDashStyle: String = null,
-    lineWidth: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null
-  ): YAxisResizeOptions = {
+  
+  inline def apply(): YAxisResizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (controlledAxis != null) __obj.updateDynamic("controlledAxis")(controlledAxis.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineDashStyle != null) __obj.updateDynamic("lineDashStyle")(lineDashStyle.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[YAxisResizeOptions]
   }
+  
+  extension [Self <: YAxisResizeOptions](x: Self) {
+    
+    inline def setControlledAxis(value: YAxisResizeControlledAxisOptions): Self = StObject.set(x, "controlledAxis", value.asInstanceOf[js.Any])
+    
+    inline def setControlledAxisUndefined: Self = StObject.set(x, "controlledAxis", js.undefined)
+    
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    
+    inline def setLineDashStyle(value: String): Self = StObject.set(x, "lineDashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineDashStyleUndefined: Self = StObject.set(x, "lineDashStyle", js.undefined)
+    
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

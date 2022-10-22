@@ -1,30 +1,42 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OrderInfo extends js.Object {
+trait OrderInfo extends StObject {
+  
   var email: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var phone_number: js.UndefOr[String] = js.undefined
+  
   var shipping_address: js.UndefOr[ShippingAddress] = js.undefined
 }
-
 object OrderInfo {
-  @scala.inline
-  def apply(
-    email: String = null,
-    name: String = null,
-    phone_number: String = null,
-    shipping_address: ShippingAddress = null
-  ): OrderInfo = {
+  
+  inline def apply(): OrderInfo = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number.asInstanceOf[js.Any])
-    if (shipping_address != null) __obj.updateDynamic("shipping_address")(shipping_address.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderInfo]
   }
+  
+  extension [Self <: OrderInfo](x: Self) {
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
+    
+    inline def setPhone_numberUndefined: Self = StObject.set(x, "phone_number", js.undefined)
+    
+    inline def setShipping_address(value: ShippingAddress): Self = StObject.set(x, "shipping_address", value.asInstanceOf[js.Any])
+    
+    inline def setShipping_addressUndefined: Self = StObject.set(x, "shipping_address", js.undefined)
+  }
 }
-

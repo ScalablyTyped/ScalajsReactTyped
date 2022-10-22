@@ -1,34 +1,49 @@
 package typingsJapgolly.std
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Transformer[I, O] extends js.Object {
-  var flush: js.UndefOr[TransformStreamDefaultControllerCallback[O]] = js.undefined
-  var readableType: js.UndefOr[scala.Nothing] = js.undefined
-  var start: js.UndefOr[TransformStreamDefaultControllerCallback[O]] = js.undefined
-  var transform: js.UndefOr[TransformStreamDefaultControllerTransformCallback[I, O]] = js.undefined
-  var writableType: js.UndefOr[scala.Nothing] = js.undefined
+trait Transformer[I, O] extends StObject {
+  
+  /* standard dom */
+  var flush: js.UndefOr[TransformerFlushCallback[O]] = js.undefined
+  
+  /* standard dom */
+  var readableType: Unit
+  
+  /* standard dom */
+  var start: js.UndefOr[TransformerStartCallback[O]] = js.undefined
+  
+  /* standard dom */
+  var transform: js.UndefOr[TransformerTransformCallback[I, O]] = js.undefined
+  
+  /* standard dom */
+  var writableType: Unit
 }
-
 object Transformer {
-  @scala.inline
-  def apply[I, O](
-    flush: /* controller */ TransformStreamDefaultController[O] => CallbackTo[Unit | js.Thenable[Unit]] = null,
-    readableType: js.UndefOr[scala.Nothing] = js.undefined,
-    start: /* controller */ TransformStreamDefaultController[O] => CallbackTo[Unit | js.Thenable[Unit]] = null,
-    transform: (I, /* controller */ TransformStreamDefaultController[O]) => CallbackTo[Unit | js.Thenable[Unit]] = null,
-    writableType: js.UndefOr[scala.Nothing] = js.undefined
-  ): Transformer[I, O] = {
-    val __obj = js.Dynamic.literal()
-    if (flush != null) __obj.updateDynamic("flush")(js.Any.fromFunction1((t0: /* controller */ typingsJapgolly.std.TransformStreamDefaultController[O]) => flush(t0).runNow()))
-    if (!js.isUndefined(readableType)) __obj.updateDynamic("readableType")(readableType.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1((t0: /* controller */ typingsJapgolly.std.TransformStreamDefaultController[O]) => start(t0).runNow()))
-    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2((t0: I, t1: /* controller */ typingsJapgolly.std.TransformStreamDefaultController[O]) => transform(t0, t1).runNow()))
-    if (!js.isUndefined(writableType)) __obj.updateDynamic("writableType")(writableType.asInstanceOf[js.Any])
+  
+  inline def apply[I, O](readableType: Unit, writableType: Unit): Transformer[I, O] = {
+    val __obj = js.Dynamic.literal(readableType = readableType.asInstanceOf[js.Any], writableType = writableType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transformer[I, O]]
   }
+  
+  extension [Self <: Transformer[?, ?], I, O](x: Self & (Transformer[I, O])) {
+    
+    inline def setFlush(value: /* controller */ TransformStreamDefaultController[O] => Unit | PromiseLike[Unit]): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
+    
+    inline def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
+    
+    inline def setReadableType(value: Unit): Self = StObject.set(x, "readableType", value.asInstanceOf[js.Any])
+    
+    inline def setStart(value: /* controller */ TransformStreamDefaultController[O] => Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setTransform(value: (I, /* controller */ TransformStreamDefaultController[O]) => Unit | PromiseLike[Unit]): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+    
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    
+    inline def setWritableType(value: Unit): Self = StObject.set(x, "writableType", value.asInstanceOf[js.Any])
+  }
 }
-

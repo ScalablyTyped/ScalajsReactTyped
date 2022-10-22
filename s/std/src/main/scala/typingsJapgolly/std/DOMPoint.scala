@@ -1,26 +1,10 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.Instantiable4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMPoint extends DOMPointReadOnly
-
-@JSGlobal("DOMPoint")
-@js.native
-object DOMPoint
-  extends Instantiable0[DOMPoint]
-     with Instantiable1[/* x */ Double, DOMPoint]
-     with Instantiable2[/* x */ Double, /* y */ Double, DOMPoint]
-     with Instantiable3[/* x */ Double, /* y */ Double, /* z */ Double, DOMPoint]
-     with Instantiable4[/* x */ Double, /* y */ Double, /* z */ Double, /* w */ Double, DOMPoint] {
-  def fromPoint(): DOMPoint = js.native
-  def fromPoint(other: DOMPointInit): DOMPoint = js.native
-}
-
+trait DOMPoint
+  extends StObject
+     with DOMPointReadOnly

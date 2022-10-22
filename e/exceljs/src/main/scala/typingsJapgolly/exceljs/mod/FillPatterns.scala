@@ -1,9 +1,9 @@
 package typingsJapgolly.exceljs.mod
 
 import typingsJapgolly.exceljs.exceljsStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.exceljs.exceljsStrings.none_
@@ -26,48 +26,44 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.exceljs.exceljsStrings.gray125
   - typingsJapgolly.exceljs.exceljsStrings.gray0625
 */
-trait FillPatterns extends js.Object
-
+trait FillPatterns extends StObject
 object FillPatterns {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def darkDown: typingsJapgolly.exceljs.exceljsStrings.darkDown = this.cast("darkDown")
-  @scala.inline
-  def darkGray: typingsJapgolly.exceljs.exceljsStrings.darkGray = this.cast("darkGray")
-  @scala.inline
-  def darkGrid: typingsJapgolly.exceljs.exceljsStrings.darkGrid = this.cast("darkGrid")
-  @scala.inline
-  def darkHorizontal: typingsJapgolly.exceljs.exceljsStrings.darkHorizontal = this.cast("darkHorizontal")
-  @scala.inline
-  def darkTrellis: typingsJapgolly.exceljs.exceljsStrings.darkTrellis = this.cast("darkTrellis")
-  @scala.inline
-  def darkUp: typingsJapgolly.exceljs.exceljsStrings.darkUp = this.cast("darkUp")
-  @scala.inline
-  def darkVertical: typingsJapgolly.exceljs.exceljsStrings.darkVertical = this.cast("darkVertical")
-  @scala.inline
-  def gray0625: typingsJapgolly.exceljs.exceljsStrings.gray0625 = this.cast("gray0625")
-  @scala.inline
-  def gray125: typingsJapgolly.exceljs.exceljsStrings.gray125 = this.cast("gray125")
-  @scala.inline
-  def lightDown: typingsJapgolly.exceljs.exceljsStrings.lightDown = this.cast("lightDown")
-  @scala.inline
-  def lightGray: typingsJapgolly.exceljs.exceljsStrings.lightGray = this.cast("lightGray")
-  @scala.inline
-  def lightGrid: typingsJapgolly.exceljs.exceljsStrings.lightGrid = this.cast("lightGrid")
-  @scala.inline
-  def lightHorizontal: typingsJapgolly.exceljs.exceljsStrings.lightHorizontal = this.cast("lightHorizontal")
-  @scala.inline
-  def lightTrellis: typingsJapgolly.exceljs.exceljsStrings.lightTrellis = this.cast("lightTrellis")
-  @scala.inline
-  def lightUp: typingsJapgolly.exceljs.exceljsStrings.lightUp = this.cast("lightUp")
-  @scala.inline
-  def lightVertical: typingsJapgolly.exceljs.exceljsStrings.lightVertical = this.cast("lightVertical")
-  @scala.inline
-  def mediumGray: typingsJapgolly.exceljs.exceljsStrings.mediumGray = this.cast("mediumGray")
-  @scala.inline
-  def none: none_ = this.cast("none")
-  @scala.inline
-  def solid: typingsJapgolly.exceljs.exceljsStrings.solid = this.cast("solid")
+  
+  inline def darkDown: typingsJapgolly.exceljs.exceljsStrings.darkDown = "darkDown".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.darkDown]
+  
+  inline def darkGray: typingsJapgolly.exceljs.exceljsStrings.darkGray = "darkGray".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.darkGray]
+  
+  inline def darkGrid: typingsJapgolly.exceljs.exceljsStrings.darkGrid = "darkGrid".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.darkGrid]
+  
+  inline def darkHorizontal: typingsJapgolly.exceljs.exceljsStrings.darkHorizontal = "darkHorizontal".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.darkHorizontal]
+  
+  inline def darkTrellis: typingsJapgolly.exceljs.exceljsStrings.darkTrellis = "darkTrellis".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.darkTrellis]
+  
+  inline def darkUp: typingsJapgolly.exceljs.exceljsStrings.darkUp = "darkUp".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.darkUp]
+  
+  inline def darkVertical: typingsJapgolly.exceljs.exceljsStrings.darkVertical = "darkVertical".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.darkVertical]
+  
+  inline def gray0625: typingsJapgolly.exceljs.exceljsStrings.gray0625 = "gray0625".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.gray0625]
+  
+  inline def gray125: typingsJapgolly.exceljs.exceljsStrings.gray125 = "gray125".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.gray125]
+  
+  inline def lightDown: typingsJapgolly.exceljs.exceljsStrings.lightDown = "lightDown".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.lightDown]
+  
+  inline def lightGray: typingsJapgolly.exceljs.exceljsStrings.lightGray = "lightGray".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.lightGray]
+  
+  inline def lightGrid: typingsJapgolly.exceljs.exceljsStrings.lightGrid = "lightGrid".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.lightGrid]
+  
+  inline def lightHorizontal: typingsJapgolly.exceljs.exceljsStrings.lightHorizontal = "lightHorizontal".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.lightHorizontal]
+  
+  inline def lightTrellis: typingsJapgolly.exceljs.exceljsStrings.lightTrellis = "lightTrellis".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.lightTrellis]
+  
+  inline def lightUp: typingsJapgolly.exceljs.exceljsStrings.lightUp = "lightUp".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.lightUp]
+  
+  inline def lightVertical: typingsJapgolly.exceljs.exceljsStrings.lightVertical = "lightVertical".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.lightVertical]
+  
+  inline def mediumGray: typingsJapgolly.exceljs.exceljsStrings.mediumGray = "mediumGray".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.mediumGray]
+  
+  inline def none: none_ = "none".asInstanceOf[none_]
+  
+  inline def solid: typingsJapgolly.exceljs.exceljsStrings.solid = "solid".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.solid]
 }
-

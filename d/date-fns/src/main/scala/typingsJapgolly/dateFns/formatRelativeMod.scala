@@ -1,28 +1,24 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/formatRelative", JSImport.Namespace)
-@js.native
-object formatRelativeMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(date: Double, baseDate: Double): String = js.native
-    def apply(date: Double, baseDate: Double, options: AnonLocale): String = js.native
-    def apply(date: Double, baseDate: Double, options: AnonWeekStartsOn): String = js.native
-    def apply(date: Double, baseDate: Date): String = js.native
-    def apply(date: Double, baseDate: Date, options: AnonLocale): String = js.native
-    def apply(date: Double, baseDate: Date, options: AnonWeekStartsOn): String = js.native
-    def apply(date: Date, baseDate: Double): String = js.native
-    def apply(date: Date, baseDate: Double, options: AnonLocale): String = js.native
-    def apply(date: Date, baseDate: Double, options: AnonWeekStartsOn): String = js.native
-    def apply(date: Date, baseDate: Date): String = js.native
-    def apply(date: Date, baseDate: Date, options: AnonLocale): String = js.native
-    def apply(date: Date, baseDate: Date, options: AnonWeekStartsOn): String = js.native
-  }
+object formatRelativeMod {
   
+  object default {
+    
+    inline def apply(date: js.Date, baseDate: js.Date): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: js.Date, baseDate: js.Date, options: typingsJapgolly.dateFns.anon.Locale): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: js.Date, baseDate: Double): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: js.Date, baseDate: Double, options: typingsJapgolly.dateFns.anon.Locale): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, baseDate: js.Date): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, baseDate: js.Date, options: typingsJapgolly.dateFns.anon.Locale): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, baseDate: Double): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, baseDate: Double, options: typingsJapgolly.dateFns.anon.Locale): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @JSImport("date-fns/formatRelative", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

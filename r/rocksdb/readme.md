@@ -10,10 +10,10 @@ A low-level Node.js RocksDB binding
 | ------------------ | :-------------: |
 | Full name          | rocksdb |
 | Keywords           | leveldb, level |
-| # releases         | 11 |
-| # dependents       | 11 |
-| # downloads        | 73699 |
-| # stars            | 4 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 8977.0 |
+| # stars            | 186.0 |
 
 ## Links
 - [Homepage](https://github.com/Level/rocksdb)

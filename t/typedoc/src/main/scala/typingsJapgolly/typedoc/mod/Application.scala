@@ -1,20 +1,39 @@
 package typingsJapgolly.typedoc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "Application")
 @js.native
-class Application ()
-  extends typingsJapgolly.typedoc.applicationMod.Application {
-  def this(options: js.Object) = this()
-}
-
+/**
+  * Create a new TypeDoc application instance.
+  *
+  * @param options An object containing the options that should be used.
+  */
+open class Application ()
+  extends typingsJapgolly.typedoc.distLibApplicationMod.Application
 /* static members */
-@JSImport("typedoc", "Application")
-@js.native
-object Application extends js.Object {
-  var VERSION: String = js.native
+object Application {
+  
+  @JSImport("typedoc", "Application")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Emitted after plugins have been loaded and options have been read, but before they have been frozen.
+    * The listener will be given an instance of {@link Application} and the {@link TypeDocOptions | Partial<TypeDocOptions>}
+    * passed to `bootstrap`.
+    */
+  @JSImport("typedoc", "Application.EVENT_BOOTSTRAP_END")
+  @js.native
+  val EVENT_BOOTSTRAP_END: String = js.native
+  
+  /**
+    * The version number of TypeDoc.
+    */
+  @JSImport("typedoc", "Application.VERSION")
+  @js.native
+  def VERSION: String = js.native
+  inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
 }
-

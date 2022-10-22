@@ -4,140 +4,145 @@ import typingsJapgolly.reactBigCalendar.mod.DayLayoutAlgorithm
 import typingsJapgolly.reactBigCalendar.mod.NavigateAction
 import typingsJapgolly.reactBigCalendar.mod.View
 import typingsJapgolly.reactBigCalendar.mod.ViewKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactBigCalendarStrings {
-  @js.native
-  sealed trait AGENDA extends ViewKey
   
   @js.native
-  sealed trait DATE extends NavigateAction
+  sealed trait AGENDA
+    extends StObject
+       with ViewKey
+  inline def AGENDA: AGENDA = "AGENDA".asInstanceOf[AGENDA]
   
   @js.native
-  sealed trait DAY extends ViewKey
+  sealed trait DATE
+    extends StObject
+       with NavigateAction
+  inline def DATE: DATE = "DATE".asInstanceOf[DATE]
   
   @js.native
-  sealed trait DOWN extends js.Object
+  sealed trait DAY
+    extends StObject
+       with ViewKey
+  inline def DAY: DAY = "DAY".asInstanceOf[DAY]
   
   @js.native
-  sealed trait LEFT extends js.Object
+  sealed trait DOWN extends StObject
+  inline def DOWN: DOWN = "DOWN".asInstanceOf[DOWN]
   
   @js.native
-  sealed trait MONTH extends ViewKey
+  sealed trait LEFT extends StObject
+  inline def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
   
   @js.native
-  sealed trait NEXT extends NavigateAction
+  sealed trait MONTH
+    extends StObject
+       with ViewKey
+  inline def MONTH: MONTH = "MONTH".asInstanceOf[MONTH]
   
   @js.native
-  sealed trait PREV extends NavigateAction
+  sealed trait NEXT
+    extends StObject
+       with NavigateAction
+  inline def NEXT: NEXT = "NEXT".asInstanceOf[NEXT]
   
   @js.native
-  sealed trait RIGHT extends js.Object
+  sealed trait PREV
+    extends StObject
+       with NavigateAction
+  inline def PREV: PREV = "PREV".asInstanceOf[PREV]
   
   @js.native
-  sealed trait TODAY extends NavigateAction
+  sealed trait RIGHT extends StObject
+  inline def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
   
   @js.native
-  sealed trait UP extends js.Object
+  sealed trait TODAY
+    extends StObject
+       with NavigateAction
+  inline def TODAY: TODAY = "TODAY".asInstanceOf[TODAY]
   
   @js.native
-  sealed trait WEEK extends ViewKey
+  sealed trait UP extends StObject
+  inline def UP: UP = "UP".asInstanceOf[UP]
   
   @js.native
-  sealed trait WORK_WEEK extends ViewKey
+  sealed trait WEEK
+    extends StObject
+       with ViewKey
+  inline def WEEK: WEEK = "WEEK".asInstanceOf[WEEK]
   
   @js.native
-  sealed trait agenda_ extends View
+  sealed trait WORK_WEEK
+    extends StObject
+       with ViewKey
+  inline def WORK_WEEK: WORK_WEEK = "WORK_WEEK".asInstanceOf[WORK_WEEK]
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait agenda_
+    extends StObject
+       with View
+  inline def agenda_ : agenda_ = "agenda".asInstanceOf[agenda_]
   
   @js.native
-  sealed trait day_ extends View
+  sealed trait click extends StObject
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait doubleClick extends js.Object
+  sealed trait day_
+    extends StObject
+       with View
+  inline def day_ : day_ = "day".asInstanceOf[day_]
   
   @js.native
-  sealed trait ignoreEvents extends js.Object
+  sealed trait doubleClick extends StObject
+  inline def doubleClick: doubleClick = "doubleClick".asInstanceOf[doubleClick]
   
   @js.native
-  sealed trait month_ extends View
+  sealed trait ignoreEvents extends StObject
+  inline def ignoreEvents: ignoreEvents = "ignoreEvents".asInstanceOf[ignoreEvents]
   
   @js.native
-  sealed trait move extends js.Object
+  sealed trait month_
+    extends StObject
+       with View
+  inline def month_ : month_ = "month".asInstanceOf[month_]
   
   @js.native
-  sealed trait `no-overlap` extends DayLayoutAlgorithm
+  sealed trait move extends StObject
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait overlap extends DayLayoutAlgorithm
+  sealed trait `no-overlap`
+    extends StObject
+       with DayLayoutAlgorithm
+  inline def `no-overlap`: `no-overlap` = "no-overlap".asInstanceOf[`no-overlap`]
   
   @js.native
-  sealed trait resize extends js.Object
+  sealed trait overlap
+    extends StObject
+       with DayLayoutAlgorithm
+  inline def overlap: overlap = "overlap".asInstanceOf[overlap]
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait resize extends StObject
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait week_ extends View
+  sealed trait select extends StObject
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait work_week_ extends View
+  sealed trait week_
+    extends StObject
+       with View
+  inline def week_ : week_ = "week".asInstanceOf[week_]
   
-  @scala.inline
-  def AGENDA: AGENDA = "AGENDA".asInstanceOf[AGENDA]
-  @scala.inline
-  def DATE: DATE = "DATE".asInstanceOf[DATE]
-  @scala.inline
-  def DAY: DAY = "DAY".asInstanceOf[DAY]
-  @scala.inline
-  def DOWN: DOWN = "DOWN".asInstanceOf[DOWN]
-  @scala.inline
-  def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
-  @scala.inline
-  def MONTH: MONTH = "MONTH".asInstanceOf[MONTH]
-  @scala.inline
-  def NEXT: NEXT = "NEXT".asInstanceOf[NEXT]
-  @scala.inline
-  def PREV: PREV = "PREV".asInstanceOf[PREV]
-  @scala.inline
-  def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
-  @scala.inline
-  def TODAY: TODAY = "TODAY".asInstanceOf[TODAY]
-  @scala.inline
-  def UP: UP = "UP".asInstanceOf[UP]
-  @scala.inline
-  def WEEK: WEEK = "WEEK".asInstanceOf[WEEK]
-  @scala.inline
-  def WORK_WEEK: WORK_WEEK = "WORK_WEEK".asInstanceOf[WORK_WEEK]
-  @scala.inline
-  def agenda_ : agenda_ = "agenda".asInstanceOf[agenda_]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def day_ : day_ = "day".asInstanceOf[day_]
-  @scala.inline
-  def doubleClick: doubleClick = "doubleClick".asInstanceOf[doubleClick]
-  @scala.inline
-  def ignoreEvents: ignoreEvents = "ignoreEvents".asInstanceOf[ignoreEvents]
-  @scala.inline
-  def month_ : month_ = "month".asInstanceOf[month_]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def `no-overlap`: `no-overlap` = "no-overlap".asInstanceOf[`no-overlap`]
-  @scala.inline
-  def overlap: overlap = "overlap".asInstanceOf[overlap]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def week_ : week_ = "week".asInstanceOf[week_]
-  @scala.inline
-  def work_week_ : work_week_ = "work_week".asInstanceOf[work_week_]
+  @js.native
+  sealed trait work_week_
+    extends StObject
+       with View
+  inline def work_week_ : work_week_ = "work_week".asInstanceOf[work_week_]
 }
-

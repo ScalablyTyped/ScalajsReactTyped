@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.notConfigured
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.enforceComponentsStoreAppsAndSmartlocker
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.auditComponentsStoreAppsAndSmartlocker
 */
-trait AppLockerApplicationControlType extends js.Object
-
+trait AppLockerApplicationControlType extends StObject
 object AppLockerApplicationControlType {
-  @scala.inline
-  def auditComponentsAndStoreApps: typingsJapgolly.microsoftGraph.microsoftGraphStrings.auditComponentsAndStoreApps = this.cast("auditComponentsAndStoreApps")
-  @scala.inline
-  def auditComponentsStoreAppsAndSmartlocker: typingsJapgolly.microsoftGraph.microsoftGraphStrings.auditComponentsStoreAppsAndSmartlocker = this.cast("auditComponentsStoreAppsAndSmartlocker")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def enforceComponentsAndStoreApps: typingsJapgolly.microsoftGraph.microsoftGraphStrings.enforceComponentsAndStoreApps = this.cast("enforceComponentsAndStoreApps")
-  @scala.inline
-  def enforceComponentsStoreAppsAndSmartlocker: typingsJapgolly.microsoftGraph.microsoftGraphStrings.enforceComponentsStoreAppsAndSmartlocker = this.cast("enforceComponentsStoreAppsAndSmartlocker")
-  @scala.inline
-  def notConfigured: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notConfigured = this.cast("notConfigured")
+  
+  inline def auditComponentsAndStoreApps: typingsJapgolly.microsoftGraph.microsoftGraphStrings.auditComponentsAndStoreApps = "auditComponentsAndStoreApps".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.auditComponentsAndStoreApps]
+  
+  inline def auditComponentsStoreAppsAndSmartlocker: typingsJapgolly.microsoftGraph.microsoftGraphStrings.auditComponentsStoreAppsAndSmartlocker = "auditComponentsStoreAppsAndSmartlocker".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.auditComponentsStoreAppsAndSmartlocker]
+  
+  inline def enforceComponentsAndStoreApps: typingsJapgolly.microsoftGraph.microsoftGraphStrings.enforceComponentsAndStoreApps = "enforceComponentsAndStoreApps".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.enforceComponentsAndStoreApps]
+  
+  inline def enforceComponentsStoreAppsAndSmartlocker: typingsJapgolly.microsoftGraph.microsoftGraphStrings.enforceComponentsStoreAppsAndSmartlocker = "enforceComponentsStoreAppsAndSmartlocker".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.enforceComponentsStoreAppsAndSmartlocker]
+  
+  inline def notConfigured: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notConfigured]
 }
-

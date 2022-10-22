@@ -1,71 +1,69 @@
 package typingsJapgolly.monacoEditor.mod.editor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextEditorCursorStyle extends js.Object
-
+sealed trait TextEditorCursorStyle extends StObject
 @JSImport("monaco-editor", "editor.TextEditorCursorStyle")
 @js.native
-object TextEditorCursorStyle extends js.Object {
+object TextEditorCursorStyle extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[TextEditorCursorStyle & Double] = js.native
+  
   /**
     * As a block (sitting on top of a character).
     */
   @js.native
-  sealed trait Block extends TextEditorCursorStyle
+  sealed trait Block
+    extends StObject
+       with TextEditorCursorStyle
+  /* 2 */ val Block: typingsJapgolly.monacoEditor.mod.editor.TextEditorCursorStyle.Block & Double = js.native
   
   /**
     * As an outlined block (sitting on top of a character).
     */
   @js.native
-  sealed trait BlockOutline extends TextEditorCursorStyle
+  sealed trait BlockOutline
+    extends StObject
+       with TextEditorCursorStyle
+  /* 5 */ val BlockOutline: typingsJapgolly.monacoEditor.mod.editor.TextEditorCursorStyle.BlockOutline & Double = js.native
   
   /**
     * As a vertical line (sitting between two characters).
     */
   @js.native
-  sealed trait Line extends TextEditorCursorStyle
+  sealed trait Line
+    extends StObject
+       with TextEditorCursorStyle
+  /* 1 */ val Line: typingsJapgolly.monacoEditor.mod.editor.TextEditorCursorStyle.Line & Double = js.native
   
   /**
     * As a thin vertical line (sitting between two characters).
     */
   @js.native
-  sealed trait LineThin extends TextEditorCursorStyle
+  sealed trait LineThin
+    extends StObject
+       with TextEditorCursorStyle
+  /* 4 */ val LineThin: typingsJapgolly.monacoEditor.mod.editor.TextEditorCursorStyle.LineThin & Double = js.native
   
   /**
     * As a horizontal line (sitting under a character).
     */
   @js.native
-  sealed trait Underline extends TextEditorCursorStyle
+  sealed trait Underline
+    extends StObject
+       with TextEditorCursorStyle
+  /* 3 */ val Underline: typingsJapgolly.monacoEditor.mod.editor.TextEditorCursorStyle.Underline & Double = js.native
   
   /**
     * As a thin horizontal line (sitting under a character).
     */
   @js.native
-  sealed trait UnderlineThin extends TextEditorCursorStyle
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextEditorCursorStyle with Double] = js.native
-  /* 2 */ @js.native
-  object Block extends TopLevel[Block with Double]
-  
-  /* 5 */ @js.native
-  object BlockOutline extends TopLevel[BlockOutline with Double]
-  
-  /* 1 */ @js.native
-  object Line extends TopLevel[Line with Double]
-  
-  /* 4 */ @js.native
-  object LineThin extends TopLevel[LineThin with Double]
-  
-  /* 3 */ @js.native
-  object Underline extends TopLevel[Underline with Double]
-  
-  /* 6 */ @js.native
-  object UnderlineThin extends TopLevel[UnderlineThin with Double]
-  
+  sealed trait UnderlineThin
+    extends StObject
+       with TextEditorCursorStyle
+  /* 6 */ val UnderlineThin: typingsJapgolly.monacoEditor.mod.editor.TextEditorCursorStyle.UnderlineThin & Double = js.native
 }
-

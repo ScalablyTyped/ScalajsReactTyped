@@ -1,21 +1,28 @@
-package typingsJapgolly.bookshelf
+package typingsJapgolly.bookshelf.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.bookshelf.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type EventFunction[T] = js.Function3[
-    /* model */ T, 
-    /* attrs */ js.Any, 
-    /* options */ js.Any, 
-    typingsJapgolly.bluebird.mod.^[js.Any] | scala.Unit
-  ]
-  type FetchAllOptions = typingsJapgolly.bookshelf.mod.FetchOptions
-  type WithRelatedQuery = org.scalablytyped.runtime.StringDictionary[
-    js.Function1[
-      /* query */ typingsJapgolly.knex.mod.QueryBuilder[js.Any, js.Array[typingsJapgolly.knex.mod.SafePartial[js.Any]]], 
-      typingsJapgolly.knex.mod.QueryBuilder[js.Any, js.Array[typingsJapgolly.knex.mod.SafePartial[js.Any]]]
-    ]
-  ]
-}
+
+inline def apply(
+  knex: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify knex */ Any
+): Bookshelf = ^.asInstanceOf[js.Dynamic].apply(knex.asInstanceOf[js.Any]).asInstanceOf[Bookshelf]
+
+type EventFunction[T] = js.Function3[
+/* model */ T, 
+/* attrs */ Any, 
+/* options */ Any, 
+typingsJapgolly.bluebird.mod.^[Any] | Unit]
+
+type FetchAllOptions = FetchOptions
+
+type Relations = String | WithRelatedQuery | (js.Array[String | WithRelatedQuery])
+
+type WithRelatedQuery = StringDictionary[
+js.Function1[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Knex.QueryBuilder */ /* query */ Any, 
+  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Knex.QueryBuilder */ Any) | Unit
+]]

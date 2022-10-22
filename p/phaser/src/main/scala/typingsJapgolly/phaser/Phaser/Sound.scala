@@ -1,87 +1,85 @@
 package typingsJapgolly.phaser.Phaser
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.AudioContext
+import org.scalajs.dom.AudioBuffer
+import org.scalajs.dom.AudioBufferSourceNode
+import org.scalajs.dom.AudioContext
+import org.scalajs.dom.AudioNode
+import org.scalajs.dom.GainNode
+import org.scalajs.dom.StereoPannerNode
 import typingsJapgolly.phaser.Phaser.Cache.BaseCache
 import typingsJapgolly.phaser.Phaser.Events.EventEmitter
 import typingsJapgolly.phaser.Phaser.Types.Sound.DecodeAudioConfig
 import typingsJapgolly.phaser.Phaser.Types.Sound.SoundConfig
 import typingsJapgolly.phaser.Phaser.Types.Sound.SoundMarker
-import typingsJapgolly.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Sound")
-@js.native
-object Sound extends js.Object {
+object Sound {
+  
   /**
     * Class containing all the shared state and behavior of a sound object, independent of the implementation.
     */
   @js.native
-  class BaseSound protected () extends EventEmitter {
-    /**
-      * 
-      * @param manager Reference to the current sound manager instance.
-      * @param key Asset key for the sound.
-      * @param config An optional config object containing default sound settings.
-      */
-    def this(manager: BaseSoundManager, key: String) = this()
-    def this(manager: BaseSoundManager, key: String, config: SoundConfig) = this()
-    /**
-      * Currently playing marker.
-      * 'null' if whole sound is playing.
-      */
-    val currentMarker: SoundMarker = js.native
-    /**
-      * A value representing the duration, in seconds.
-      * It could be total sound duration or a marker duration.
-      */
-    val duration: Double = js.native
-    /**
-      * Flag indicating if sound is currently paused.
-      */
-    val isPaused: Boolean = js.native
-    /**
-      * Flag indicating if sound is currently playing.
-      */
-    val isPlaying: Boolean = js.native
-    /**
-      * Asset key for the sound.
-      */
-    val key: String = js.native
-    /**
-      * Object containing markers definitions.
-      */
-    val markers: StringDictionary[SoundMarker] = js.native
-    /**
-      * The total duration of the sound in seconds.
-      */
-    val totalDuration: Double = js.native
-    /**
-      * A property that holds the value of sound's actual playback rate,
-      * after its rate and detune values has been combined with global
-      * rate and detune values.
-      */
-    val totalRate: Double = js.native
+  trait BaseSound
+    extends StObject
+       with EventEmitter {
+    
     /**
       * Adds a marker into the current sound. A marker is represented by name, start time, duration, and optionally config object.
       * This allows you to bundle multiple sounds together into a single audio file and use markers to jump between them for playback.
       * @param marker Marker object.
       */
     def addMarker(marker: SoundMarker): Boolean = js.native
+    
     /**
       * Method used internally for applying config values to some of the sound properties.
       */
     /* protected */ def applyConfig(): Unit = js.native
+    
     /**
       * Method used internally to calculate total playback rate of the sound.
       */
     /* protected */ def calculateRate(): Unit = js.native
+    
+    /**
+      * Currently playing marker.
+      * 'null' if whole sound is playing.
+      */
+    val currentMarker: SoundMarker = js.native
+    
+    /**
+      * A value representing the duration, in seconds.
+      * It could be total sound duration or a marker duration.
+      */
+    val duration: Double = js.native
+    
+    /**
+      * Flag indicating if sound is currently paused.
+      */
+    val isPaused: Boolean = js.native
+    
+    /**
+      * Flag indicating if sound is currently playing.
+      */
+    val isPlaying: Boolean = js.native
+    
+    /**
+      * Asset key for the sound.
+      */
+    val key: String = js.native
+    
+    /**
+      * Object containing markers definitions.
+      */
+    val markers: StringDictionary[SoundMarker] = js.native
+    
     /**
       * Pauses the sound.
       */
     def pause(): Boolean = js.native
+    
     /**
       * Play this sound, or a marked section of it.
       * It always plays the sound from the start. If you want to start playback from a specific time
@@ -92,31 +90,50 @@ object Sound extends js.Object {
     def play(): Boolean = js.native
     def play(markerName: String): Boolean = js.native
     def play(markerName: String, config: SoundConfig): Boolean = js.native
+    def play(markerName: Unit, config: SoundConfig): Boolean = js.native
     def play(markerName: SoundConfig): Boolean = js.native
     def play(markerName: SoundConfig, config: SoundConfig): Boolean = js.native
+    
     /**
       * Removes a marker from the sound.
       * @param markerName The name of the marker to remove.
       */
     def removeMarker(markerName: String): SoundMarker = js.native
+    
     /**
       * Method used internally for resetting values of some of the config properties.
       */
     /* protected */ def resetConfig(): Unit = js.native
+    
     /**
       * Resumes the sound.
       */
     def resume(): Boolean = js.native
+    
     /**
       * Stop playing this sound.
       */
     def stop(): Boolean = js.native
+    
+    /**
+      * The total duration of the sound in seconds.
+      */
+    val totalDuration: Double = js.native
+    
+    /**
+      * A property that holds the value of sound's actual playback rate,
+      * after its rate and detune values has been combined with global
+      * rate and detune values.
+      */
+    val totalRate: Double = js.native
+    
     /**
       * Update method called automatically by sound manager on every game step.
       * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
       * @param delta The delta time elapsed since the last frame.
       */
     /* protected */ def update(time: Double, delta: Double): Unit = js.native
+    
     /**
       * Updates previously added marker.
       * @param marker Marker object with updated values.
@@ -125,58 +142,13 @@ object Sound extends js.Object {
   }
   
   /**
-    * The sound manager is responsible for playing back audio via Web Audio API or HTML Audio tag as fallback.
-    * The audio file type and the encoding of those files are extremely important.
-    * 
-    * Not all browsers can play all audio formats.
-    * 
-    * There is a good guide to what's supported [here](https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/Cross-browser_audio_basics#Audio_Codec_Support).
+    * Base class for other Sound Manager classes.
     */
   @js.native
-  class BaseSoundManager protected () extends EventEmitter {
-    /**
-      * 
-      * @param game Reference to the current game instance.
-      */
-    def this(game: Game) = this()
-    /**
-      * Global detuning of all sounds in [cents](https://en.wikipedia.org/wiki/Cent_%28music%29).
-      * The range of the value is -1200 to 1200, but we recommend setting it to [50](https://en.wikipedia.org/wiki/50_Cent).
-      */
-    var detune: Double = js.native
-    /**
-      * Local reference to game.
-      */
-    val game: Game = js.native
-    /**
-      * Local reference to the JSON Cache, as used by Audio Sprites.
-      */
-    val jsonCache: BaseCache = js.native
-    /**
-      * Mobile devices require sounds to be triggered from an explicit user action,
-      * such as a tap, before any sound can be loaded/played on a web page.
-      * Set to true if the audio system is currently locked awaiting user interaction.
-      */
-    val locked: Boolean = js.native
-    /**
-      * Global mute setting.
-      */
-    var mute: Boolean = js.native
-    /**
-      * Flag indicating if sounds should be paused when game looses focus,
-      * for instance when user switches to another tab/program/app.
-      */
-    var pauseOnBlur: Boolean = js.native
-    /**
-      * Global playback rate at which all the sounds will be played.
-      * Value of 1.0 plays the audio at full speed, 0.5 plays the audio at half speed
-      * and 2.0 doubles the audio's playback speed.
-      */
-    var rate: Double = js.native
-    /**
-      * Global volume setting.
-      */
-    var volume: Double = js.native
+  trait BaseSoundManager
+    extends StObject
+       with EventEmitter {
+    
     /**
       * Adds a new sound into the sound manager.
       * @param key Asset key for the sound.
@@ -184,6 +156,7 @@ object Sound extends js.Object {
       */
     def add(key: String): BaseSound = js.native
     def add(key: String, config: SoundConfig): BaseSound = js.native
+    
     /**
       * Adds a new audio sprite sound into the sound manager.
       * Audio Sprites are a combination of audio files and a JSON configuration.
@@ -193,20 +166,70 @@ object Sound extends js.Object {
       */
     def addAudioSprite(key: String): HTML5AudioSound | WebAudioSound = js.native
     def addAudioSprite(key: String, config: SoundConfig): HTML5AudioSound | WebAudioSound = js.native
+    
+    /**
+      * Global detuning of all sounds in [cents](https://en.wikipedia.org/wiki/Cent_%28music%29).
+      * The range of the value is -1200 to 1200, but we recommend setting it to [50](https://en.wikipedia.org/wiki/50_Cent).
+      */
+    var detune: Double = js.native
+    
+    /**
+      * Local reference to game.
+      */
+    val game: Game = js.native
+    
+    /**
+      * Gets the first sound in the manager matching the given key, if any.
+      * @param key Sound asset key.
+      */
+    def get(key: String): BaseSound = js.native
+    
+    /**
+      * Gets any sounds in the manager matching the given key.
+      * @param key Sound asset key.
+      */
+    def getAll(key: String): js.Array[BaseSound] = js.native
+    
+    /**
+      * Local reference to the JSON Cache, as used by Audio Sprites.
+      */
+    val jsonCache: BaseCache = js.native
+    
+    /**
+      * Mobile devices require sounds to be triggered from an explicit user action,
+      * such as a tap, before any sound can be loaded/played on a web page.
+      * Set to true if the audio system is currently locked awaiting user interaction.
+      */
+    val locked: Boolean = js.native
+    
+    /**
+      * Global mute setting.
+      */
+    var mute: Boolean = js.native
+    
     /**
       * Method used internally for pausing sound manager if
       * Phaser.Sound.BaseSoundManager#pauseOnBlur is set to true.
       */
     /* protected */ def onBlur(): Unit = js.native
+    
     /**
       * Method used internally for resuming sound manager if
       * Phaser.Sound.BaseSoundManager#pauseOnBlur is set to true.
       */
     /* protected */ def onFocus(): Unit = js.native
+    
     /**
       * Pauses all the sounds in the game.
       */
     def pauseAll(): Unit = js.native
+    
+    /**
+      * Flag indicating if sounds should be paused when game looses focus,
+      * for instance when user switches to another tab/program/app.
+      */
+    var pauseOnBlur: Boolean = js.native
+    
     /**
       * Adds a new sound to the sound manager and plays it.
       * The sound will be automatically removed (destroyed) once playback ends.
@@ -217,37 +240,56 @@ object Sound extends js.Object {
     def play(key: String): Boolean = js.native
     def play(key: String, extra: SoundConfig): Boolean = js.native
     def play(key: String, extra: SoundMarker): Boolean = js.native
+    
     /**
-      * Enables playing audio sprite sound on the fly without the need to keep a reference to it.
-      * Sound will auto destroy once its playback ends.
+      * Adds a new audio sprite sound to the sound manager and plays it.
+      * The sprite will be automatically removed (destroyed) once playback ends.
+      * This lets you play a new sound on the fly without the need to keep a reference to it.
       * @param key Asset key for the sound.
       * @param spriteName The name of the sound sprite to play.
       * @param config An optional config object containing default sound settings.
       */
     def playAudioSprite(key: String, spriteName: String): Boolean = js.native
     def playAudioSprite(key: String, spriteName: String, config: SoundConfig): Boolean = js.native
+    
+    /**
+      * Global playback rate at which all the sounds will be played.
+      * Value of 1.0 plays the audio at full speed, 0.5 plays the audio at half speed
+      * and 2.0 doubles the audio's playback speed.
+      */
+    var rate: Double = js.native
+    
     /**
       * Removes a sound from the sound manager.
       * The removed sound is destroyed before removal.
       * @param sound The sound object to remove.
       */
     def remove(sound: BaseSound): Boolean = js.native
+    
+    /**
+      * Removes all sounds from the manager, destroying the sounds.
+      */
+    def removeAll(): Unit = js.native
+    
     /**
       * Removes all sounds from the sound manager that have an asset key matching the given value.
       * The removed sounds are destroyed before removal.
       * @param key The key to match when removing sound objects.
       */
     def removeByKey(key: String): Double = js.native
+    
     /**
       * Resumes all the sounds in the game.
       */
     def resumeAll(): Unit = js.native
+    
     /**
       * Sets the global detuning of all sounds in [cents](https://en.wikipedia.org/wiki/Cent_%28music%29).
       * The range of the value is -1200 to 1200, but we recommend setting it to [50](https://en.wikipedia.org/wiki/50_Cent).
       * @param value The range of the value is -1200 to 1200, but we recommend setting it to [50](https://en.wikipedia.org/wiki/50_Cent).
       */
     def setDetune(value: Double): BaseSoundManager = js.native
+    
     /**
       * Sets the global playback rate at which all the sounds will be played.
       * 
@@ -256,10 +298,18 @@ object Sound extends js.Object {
       * @param value Global playback rate at which all the sounds will be played.
       */
     def setRate(value: Double): BaseSoundManager = js.native
+    
     /**
       * Stops all the sounds in the game.
       */
     def stopAll(): Unit = js.native
+    
+    /**
+      * Stops any sounds matching the given key.
+      * @param key Sound asset key.
+      */
+    def stopByKey(key: String): Double = js.native
+    
     /**
       * Method used internally for unlocking audio playback on devices that
       * require user interaction before any sound can be played on a web page.
@@ -267,6 +317,7 @@ object Sound extends js.Object {
       * Read more about how this issue is handled here in [this article](https://medium.com/@pgoloskokovic/unlocking-web-audio-the-smarter-way-8858218c0e09).
       */
     /* protected */ def unlock(): Unit = js.native
+    
     /**
       * Update method called on every game step.
       * Removes destroyed sounds and updates every active sound in the game.
@@ -274,41 +325,52 @@ object Sound extends js.Object {
       * @param delta The delta time elapsed since the last frame.
       */
     /* protected */ def update(time: Double, delta: Double): Unit = js.native
+    
+    /**
+      * Global volume setting.
+      */
+    var volume: Double = js.native
   }
   
   /**
     * HTML5 Audio implementation of the sound.
     */
   @js.native
-  class HTML5AudioSound protected () extends BaseSound {
-    /**
-      * 
-      * @param manager Reference to the current sound manager instance.
-      * @param key Asset key for the sound.
-      * @param config An optional config object containing default sound settings. Default {}.
-      */
-    def this(manager: HTML5AudioSoundManager, key: String) = this()
-    def this(manager: HTML5AudioSoundManager, key: String, config: SoundConfig) = this()
+  trait HTML5AudioSound
+    extends StObject
+       with BaseSound {
+    
     /**
       * The detune value of this Sound, given in [cents](https://en.wikipedia.org/wiki/Cent_%28music%29).
       * The range of the value is -1200 to 1200, but we recommend setting it to [50](https://en.wikipedia.org/wiki/50_Cent).
       */
     var detune: Double = js.native
+    
     /**
       * Flag indicating whether or not the sound or current sound marker will loop.
       */
     var loop: Boolean = js.native
+    
     /**
       * Boolean indicating whether the sound is muted or not.
       * Gets or sets the muted state of this sound.
       */
     var mute: Boolean = js.native
+    
+    /**
+      * Gets or sets the pan of this sound, a value between -1 (full left pan) and 1 (full right pan).
+      * 
+      * Has no audible effect on HTML5 Audio Sound, but still generates the PAN Event.
+      */
+    var pan: Double = js.native
+    
     /**
       * Rate at which this Sound will be played.
       * Value of 1.0 plays the audio at full speed, 0.5 plays the audio at half speed
       * and 2.0 doubles the audios playback speed.
       */
     var rate: Double = js.native
+    
     /**
       * Property representing the position of playback for this sound, in seconds.
       * Setting it to a specific value moves current playback to that position.
@@ -316,26 +378,34 @@ object Sound extends js.Object {
       * Setting seek of a stopped sound has no effect.
       */
     var seek: Double = js.native
-    /**
-      * Gets or sets the volume of this sound, a value between 0 (silence) and 1 (full volume).
-      */
-    var volume: Double = js.native
+    
     /**
       * Sets the detune value of this Sound, given in [cents](https://en.wikipedia.org/wiki/Cent_%28music%29).
       * The range of the value is -1200 to 1200, but we recommend setting it to [50](https://en.wikipedia.org/wiki/50_Cent).
       * @param value The range of the value is -1200 to 1200, but we recommend setting it to [50](https://en.wikipedia.org/wiki/50_Cent).
       */
-    def setDetune(value: Double): HTML5AudioSound = js.native
+    def setDetune(value: Double): this.type = js.native
+    
     /**
       * Sets the loop state of this Sound.
       * @param value `true` to loop this sound, `false` to not loop it.
       */
     def setLoop(value: Boolean): HTML5AudioSound = js.native
+    
     /**
       * Sets the muted state of this Sound.
       * @param value `true` to mute this sound, `false` to unmute it.
       */
-    def setMute(value: Boolean): HTML5AudioSound = js.native
+    def setMute(value: Boolean): this.type = js.native
+    
+    /**
+      * Sets the pan of this sound, a value between -1 (full left pan) and 1 (full right pan).
+      * 
+      * Has no audible effect on HTML5 Audio Sound, but still generates the PAN Event.
+      * @param value The pan of the sound. A value between -1 (full left pan) and 1 (full right pan).
+      */
+    def setPan(value: Double): this.type = js.native
+    
     /**
       * Sets the playback rate of this Sound.
       * 
@@ -343,29 +413,40 @@ object Sound extends js.Object {
       * and 2.0 doubles the audios playback speed.
       * @param value The playback rate at of this Sound.
       */
-    def setRate(value: Double): HTML5AudioSound = js.native
+    def setRate(value: Double): this.type = js.native
+    
     /**
       * Seeks to a specific point in this sound.
       * @param value The point in the sound to seek to.
       */
-    def setSeek(value: Double): HTML5AudioSound = js.native
+    def setSeek(value: Double): this.type = js.native
+    
     /**
       * Sets the volume of this Sound.
       * @param value The volume of the sound.
       */
-    def setVolume(value: Double): HTML5AudioSound = js.native
+    def setVolume(value: Double): this.type = js.native
+    
+    /**
+      * Update method called automatically by sound manager on every game step.
+      * @param time The current timestamp as generated by the Request Animation Frame or SetTimeout.
+      */
+    /* protected */ def update(time: Double): Unit = js.native
+    
+    /**
+      * Gets or sets the volume of this sound, a value between 0 (silence) and 1 (full volume).
+      */
+    var volume: Double = js.native
   }
   
   /**
     * HTML5AudioSoundManager
     */
   @js.native
-  class HTML5AudioSoundManager protected () extends BaseSoundManager {
-    /**
-      * 
-      * @param game Reference to the current game instance.
-      */
-    def this(game: Game) = this()
+  trait HTML5AudioSoundManager
+    extends StObject
+       with BaseSoundManager {
+    
     /**
       * Value representing time difference, in seconds, between calling
       * play method on an audio tag and when it actually starts playing.
@@ -375,22 +456,7 @@ object Sound extends js.Object {
       * since audio play delay varies depending on the browser/platform.
       */
     var audioPlayDelay: Double = js.native
-    /**
-      * A value by which we should offset the loop end marker of the
-      * looping sound to compensate for lag, caused by changing audio
-      * tag playback position, in order to achieve gapless looping.
-      * 
-      * You might need to tweak this value to get the desired results
-      * since loop lag varies depending on the browser/platform.
-      */
-    var loopEndOffset: Double = js.native
-    /**
-      * Flag indicating whether if there are no idle instances of HTML5 Audio tag,
-      * for any particular sound, if one of the used tags should be hijacked and used
-      * for succeeding playback or if succeeding Phaser.Sound.HTML5AudioSound#play
-      * call should be ignored.
-      */
-    var `override`: Boolean = js.native
+    
     /**
       * Method used internally by Phaser.Sound.HTML5AudioSound class methods and property setters
       * to check if sound manager is locked and then either perform action immediately or queue it
@@ -400,12 +466,32 @@ object Sound extends js.Object {
       * @param value An optional parameter that either holds an array of arguments to be passed to the method call or value to be set to the property.
       */
     /* protected */ def isLocked(sound: HTML5AudioSound, prop: String): Boolean = js.native
-    /* protected */ def isLocked(sound: HTML5AudioSound, prop: String, value: js.Any): Boolean = js.native
+    /* protected */ def isLocked(sound: HTML5AudioSound, prop: String, value: Any): Boolean = js.native
+    
+    /**
+      * A value by which we should offset the loop end marker of the
+      * looping sound to compensate for lag, caused by changing audio
+      * tag playback position, in order to achieve gapless looping.
+      * 
+      * You might need to tweak this value to get the desired results
+      * since loop lag varies depending on the browser/platform.
+      */
+    var loopEndOffset: Double = js.native
+    
+    /**
+      * Flag indicating whether if there are no idle instances of HTML5 Audio tag,
+      * for any particular sound, if one of the used tags should be hijacked and used
+      * for succeeding playback or if succeeding Phaser.Sound.HTML5AudioSound#play
+      * call should be ignored.
+      */
+    var `override`: Boolean = js.native
+    
     /**
       * Sets the muted state of all this Sound Manager.
       * @param value `true` to mute all sounds, `false` to unmute them.
       */
     def setMute(value: Boolean): HTML5AudioSoundManager = js.native
+    
     /**
       * Sets the volume of this Sound Manager.
       * @param value The global volume of this Sound Manager.
@@ -422,67 +508,139 @@ object Sound extends js.Object {
     * breaking on devices that don't support any audio playback technologies.
     */
   @js.native
-  class NoAudioSound protected () extends BaseSound {
+  trait NoAudioSound extends StObject {
+    
     /**
       * 
-      * @param manager Reference to the current sound manager instance.
-      * @param key Asset key for the sound.
-      * @param config An optional config object containing default sound settings. Default {}.
+      * @param marker Marker object.
       */
-    def this(manager: NoAudioSoundManager, key: String) = this()
-    def this(manager: NoAudioSoundManager, key: String, config: SoundConfig) = this()
+    def addMarker(marker: SoundMarker): Boolean = js.native
+    
+    /**
+      * Destroys this sound and all associated events and marks it for removal from the sound manager.
+      */
+    def destroy(): Unit = js.native
+    
+    def pause(): Boolean = js.native
+    
+    /**
+      * 
+      * @param markerName If you want to play a marker then provide the marker name here. Alternatively, this parameter can be a SoundConfig object. Default ''.
+      * @param config Optional sound config object to be applied to this marker or entire sound if no marker name is provided. It gets memorized for future plays of current section of the sound.
+      */
+    def play(): Boolean = js.native
+    def play(markerName: String): Boolean = js.native
+    def play(markerName: String, config: SoundConfig): Boolean = js.native
+    def play(markerName: Unit, config: SoundConfig): Boolean = js.native
+    def play(markerName: SoundConfig): Boolean = js.native
+    def play(markerName: SoundConfig, config: SoundConfig): Boolean = js.native
+    
+    /**
+      * 
+      * @param markerName The name of the marker to remove.
+      */
+    def removeMarker(markerName: String): Null = js.native
+    
+    /**
+      * Resumes the sound.
+      */
+    def resume(): Boolean = js.native
+    
+    /**
+      * Stop playing this sound.
+      */
+    def stop(): Boolean = js.native
+    
+    /**
+      * 
+      * @param marker Marker object with updated values.
+      */
+    def updateMarker(marker: SoundMarker): Boolean = js.native
   }
   
   /**
-    * No audio implementation of the sound manager. It is used if audio has been
+    * No-audio implementation of the Sound Manager. It is used if audio has been
     * disabled in the game config or the device doesn't support any audio.
     * 
-    * It represents a graceful degradation of sound manager logic that provides
+    * It represents a graceful degradation of Sound Manager logic that provides
     * minimal functionality and prevents Phaser projects that use audio from
     * breaking on devices that don't support any audio playback technologies.
     */
-  @js.native
-  class NoAudioSoundManager protected () extends BaseSoundManager {
-    /**
-      * 
-      * @param game Reference to the current game instance.
-      */
-    def this(game: Game) = this()
-  }
+  type NoAudioSoundManager = BaseSoundManager
   
   /**
     * Web Audio API implementation of the sound.
     */
   @js.native
-  class WebAudioSound protected () extends BaseSound {
+  trait WebAudioSound
+    extends StObject
+       with BaseSound {
+    
     /**
-      * 
-      * @param manager Reference to the current sound manager instance.
-      * @param key Asset key for the sound.
-      * @param config An optional config object containing default sound settings. Default {}.
+      * Audio buffer containing decoded data of the audio asset to be played.
       */
-    def this(manager: WebAudioSoundManager, key: String) = this()
-    def this(manager: WebAudioSoundManager, key: String, config: SoundConfig) = this()
+    var audioBuffer: AudioBuffer = js.native
+    
     /**
       * The detune value of this Sound, given in [cents](https://en.wikipedia.org/wiki/Cent_%28music%29).
       * The range of the value is -1200 to 1200, but we recommend setting it to [50](https://en.wikipedia.org/wiki/50_Cent).
       */
     var detune: Double = js.native
+    
+    /**
+      * Used for keeping track when sound source playback has ended
+      * so its state can be updated accordingly.
+      */
+    val hasEnded: Boolean = js.native
+    
+    /**
+      * Used for keeping track when sound source has looped
+      * so its state can be updated accordingly.
+      */
+    val hasLooped: Boolean = js.native
+    
     /**
       * Flag indicating whether or not the sound or current sound marker will loop.
       */
     var loop: Boolean = js.native
+    
+    /**
+      * A reference to a second audio source used for gapless looped playback.
+      */
+    var loopSource: AudioBufferSourceNode = js.native
+    
     /**
       * Boolean indicating whether the sound is muted or not.
       * Gets or sets the muted state of this sound.
       */
     var mute: Boolean = js.native
+    
+    /**
+      * Gain node responsible for controlling this sound's muting.
+      */
+    var muteNode: GainNode = js.native
+    
+    /**
+      * Gets or sets the pan of this sound, a value between -1 (full left pan) and 1 (full right pan).
+      * 
+      * Always returns zero on iOS / Safari as it doesn't support the stereo panner node.
+      */
+    var pan: Double = js.native
+    
+    /**
+      * Panner node responsible for controlling this sound's pan.
+      * 
+      * Doesn't work on iOS / Safari.
+      */
+    var pannerNode: StereoPannerNode = js.native
+    
     /**
       * Rate at which this Sound will be played.
       * Value of 1.0 plays the audio at full speed, 0.5 plays the audio at half speed
       * and 2.0 doubles the audios playback speed.
       */
     var rate: Double = js.native
+    
     /**
       * Property representing the position of playback for this sound, in seconds.
       * Setting it to a specific value moves current playback to that position.
@@ -490,26 +648,34 @@ object Sound extends js.Object {
       * Setting seek of a stopped sound has no effect.
       */
     var seek: Double = js.native
-    /**
-      * Gets or sets the volume of this sound, a value between 0 (silence) and 1 (full volume).
-      */
-    var volume: Double = js.native
+    
     /**
       * Sets the detune value of this Sound, given in [cents](https://en.wikipedia.org/wiki/Cent_%28music%29).
       * The range of the value is -1200 to 1200, but we recommend setting it to [50](https://en.wikipedia.org/wiki/50_Cent).
       * @param value The range of the value is -1200 to 1200, but we recommend setting it to [50](https://en.wikipedia.org/wiki/50_Cent).
       */
-    def setDetune(value: Double): WebAudioSound = js.native
+    def setDetune(value: Double): this.type = js.native
+    
     /**
       * Sets the loop state of this Sound.
       * @param value `true` to loop this sound, `false` to not loop it.
       */
-    def setLoop(value: Boolean): WebAudioSound = js.native
+    def setLoop(value: Boolean): this.type = js.native
+    
     /**
       * Sets the muted state of this Sound.
       * @param value `true` to mute this sound, `false` to unmute it.
       */
-    def setMute(value: Boolean): WebAudioSound = js.native
+    def setMute(value: Boolean): this.type = js.native
+    
+    /**
+      * Sets the pan of this sound, a value between -1 (full left pan) and 1 (full right pan).
+      * 
+      * Note: iOS / Safari doesn't support the stereo panner node.
+      * @param value The pan of the sound. A value between -1 (full left pan) and 1 (full right pan).
+      */
+    def setPan(value: Double): this.type = js.native
+    
     /**
       * Sets the playback rate of this Sound.
       * 
@@ -517,29 +683,69 @@ object Sound extends js.Object {
       * and 2.0 doubles the audios playback speed.
       * @param value The playback rate at of this Sound.
       */
-    def setRate(value: Double): WebAudioSound = js.native
+    def setRate(value: Double): this.type = js.native
+    
     /**
       * Seeks to a specific point in this sound.
       * @param value The point in the sound to seek to.
       */
-    def setSeek(value: Double): WebAudioSound = js.native
+    def setSeek(value: Double): this.type = js.native
+    
     /**
       * Sets the volume of this Sound.
       * @param value The volume of the sound.
       */
-    def setVolume(value: Double): WebAudioSound = js.native
+    def setVolume(value: Double): this.type = js.native
+    
+    /**
+      * A reference to an audio source node used for playing back audio from
+      * audio data stored in Phaser.Sound.WebAudioSound#audioBuffer.
+      */
+    var source: AudioBufferSourceNode = js.native
+    
+    /**
+      * Update method called automatically by sound manager on every game step.
+      */
+    /* protected */ def update(): Unit = js.native
+    
+    /**
+      * Gets or sets the volume of this sound, a value between 0 (silence) and 1 (full volume).
+      */
+    var volume: Double = js.native
+    
+    /**
+      * Gain node responsible for controlling this sound's volume.
+      */
+    var volumeNode: GainNode = js.native
   }
   
   /**
-    * Web Audio API implementation of the sound manager.
+    * Web Audio API implementation of the Sound Manager.
+    * 
+    * Not all browsers can play all audio formats.
+    * 
+    * There is a good guide to what's supported: [Cross-browser audio basics: Audio codec support](https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/Cross-browser_audio_basics#Audio_Codec_Support).
     */
   @js.native
-  class WebAudioSoundManager protected () extends BaseSoundManager {
+  trait WebAudioSoundManager
+    extends StObject
+       with BaseSoundManager {
+    
     /**
-      * 
+      * The AudioContext being used for playback.
+      */
+    var context: AudioContext = js.native
+    
+    /**
+      * Method responsible for instantiating and returning AudioContext instance.
+      * If an instance of an AudioContext class was provided through the game config,
+      * that instance will be returned instead. This can come in handy if you are reloading
+      * a Phaser game on a page that never properly refreshes (such as in an SPA project)
+      * and you want to reuse already instantiated AudioContext.
       * @param game Reference to the current game instance.
       */
-    def this(game: Game) = this()
+    def createAudioContext(game: Game): AudioContext = js.native
+    
     /**
       * Decode audio data into a format ready for playback via Web Audio.
       * 
@@ -559,10 +765,28 @@ object Sound extends js.Object {
     def decodeAudio(): Unit = js.native
     def decodeAudio(audioKey: String): Unit = js.native
     def decodeAudio(audioKey: String, audioData: String): Unit = js.native
-    def decodeAudio(audioKey: String, audioData: ArrayBuffer): Unit = js.native
+    def decodeAudio(audioKey: String, audioData: js.typedarray.ArrayBuffer): Unit = js.native
     def decodeAudio(audioKey: js.Array[DecodeAudioConfig]): Unit = js.native
     def decodeAudio(audioKey: js.Array[DecodeAudioConfig], audioData: String): Unit = js.native
-    def decodeAudio(audioKey: js.Array[DecodeAudioConfig], audioData: ArrayBuffer): Unit = js.native
+    def decodeAudio(audioKey: js.Array[DecodeAudioConfig], audioData: js.typedarray.ArrayBuffer): Unit = js.native
+    def decodeAudio(audioKey: Unit, audioData: String): Unit = js.native
+    def decodeAudio(audioKey: Unit, audioData: js.typedarray.ArrayBuffer): Unit = js.native
+    
+    /**
+      * Destination node for connecting individual sounds to.
+      */
+    var destination: AudioNode = js.native
+    
+    /**
+      * Gain node responsible for controlling global muting.
+      */
+    var masterMuteNode: GainNode = js.native
+    
+    /**
+      * Gain node responsible for controlling global volume.
+      */
+    var masterVolumeNode: GainNode = js.native
+    
     /**
       * This method takes a new AudioContext reference and then sets
       * this Sound Manager to use that context for all playback.
@@ -572,333 +796,17 @@ object Sound extends js.Object {
       * @param context Reference to an already created AudioContext instance.
       */
     def setAudioContext(context: AudioContext): this.type = js.native
+    
     /**
       * Sets the muted state of all this Sound Manager.
       * @param value `true` to mute all sounds, `false` to unmute them.
       */
     def setMute(value: Boolean): WebAudioSoundManager = js.native
+    
     /**
       * Sets the volume of this Sound Manager.
       * @param value The global volume of this Sound Manager.
       */
     def setVolume(value: Double): WebAudioSoundManager = js.native
   }
-  
-  /**
-    * Creates a Web Audio, HTML5 Audio or No Audio Sound Manager based on config and device settings.
-    * 
-    * Be aware of https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
-    * @param game Reference to the current game instance.
-    */
-  def SoundManagerCreator(game: Game): HTML5AudioSoundManager | WebAudioSoundManager | NoAudioSoundManager = js.native
-  @js.native
-  object Events extends js.Object {
-    /**
-      * The Sound Complete Event.
-      * 
-      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they complete playback.
-      * 
-      * Listen to it from a Sound instance using `Sound.on('complete', listener)`, i.e.:
-      * 
-      * ```javascript
-      * var music = this.sound.add('key');
-      * music.on('complete', listener);
-      * music.play();
-      * ```
-      */
-    val COMPLETE: js.Any = js.native
-    /**
-      * The Audio Data Decoded Event.
-      * 
-      * This event is dispatched by the Web Audio Sound Manager as a result of calling the `decodeAudio` method.
-      * 
-      * Listen to it from the Sound Manager in a Scene using `this.sound.on('decoded', listener)`, i.e.:
-      * 
-      * ```javascript
-      * this.sound.on('decoded', handler);
-      * this.sound.decodeAudio(key, audioData);
-      * ```
-      */
-    val DECODED: js.Any = js.native
-    /**
-      * The Audio Data Decoded All Event.
-      * 
-      * This event is dispatched by the Web Audio Sound Manager as a result of calling the `decodeAudio` method,
-      * once all files passed to the method have been decoded (or errored).
-      * 
-      * Use `Phaser.Sound.Events#DECODED` to listen for single sounds being decoded, and `DECODED_ALL` to
-      * listen for them all completing.
-      * 
-      * Listen to it from the Sound Manager in a Scene using `this.sound.on('decodedall', listener)`, i.e.:
-      * 
-      * ```javascript
-      * this.sound.once('decodedall', handler);
-      * this.sound.decodeAudio([ audioFiles ]);
-      * ```
-      */
-    val DECODED_ALL: js.Any = js.native
-    /**
-      * The Sound Destroy Event.
-      * 
-      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are destroyed, either
-      * directly or via a Sound Manager.
-      * 
-      * Listen to it from a Sound instance using `Sound.on('destroy', listener)`, i.e.:
-      * 
-      * ```javascript
-      * var music = this.sound.add('key');
-      * music.on('destroy', listener);
-      * music.destroy();
-      * ```
-      */
-    val DESTROY: js.Any = js.native
-    /**
-      * The Sound Detune Event.
-      * 
-      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their detune value changes.
-      * 
-      * Listen to it from a Sound instance using `Sound.on('detune', listener)`, i.e.:
-      * 
-      * ```javascript
-      * var music = this.sound.add('key');
-      * music.on('detune', listener);
-      * music.play();
-      * music.setDetune(200);
-      * ```
-      */
-    val DETUNE: js.Any = js.native
-    /**
-      * The Sound Manager Global Detune Event.
-      * 
-      * This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
-      * or the HTML5 Audio Manager. It is dispatched when the `detune` property of the Sound Manager is changed, which globally
-      * adjusts the detuning of all active sounds.
-      * 
-      * Listen to it from a Scene using: `this.sound.on('rate', listener)`.
-      */
-    val GLOBAL_DETUNE: js.Any = js.native
-    /**
-      * The Sound Manager Global Mute Event.
-      * 
-      * This event is dispatched by the Sound Manager when its `mute` property is changed, either directly
-      * or via the `setMute` method. This changes the mute state of all active sounds.
-      * 
-      * Listen to it from a Scene using: `this.sound.on('mute', listener)`.
-      */
-    val GLOBAL_MUTE: js.Any = js.native
-    /**
-      * The Sound Manager Global Rate Event.
-      * 
-      * This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
-      * or the HTML5 Audio Manager. It is dispatched when the `rate` property of the Sound Manager is changed, which globally
-      * adjusts the playback rate of all active sounds.
-      * 
-      * Listen to it from a Scene using: `this.sound.on('rate', listener)`.
-      */
-    val GLOBAL_RATE: js.Any = js.native
-    /**
-      * The Sound Manager Global Volume Event.
-      * 
-      * This event is dispatched by the Sound Manager when its `volume` property is changed, either directly
-      * or via the `setVolume` method. This changes the volume of all active sounds.
-      * 
-      * Listen to it from a Scene using: `this.sound.on('volume', listener)`.
-      */
-    val GLOBAL_VOLUME: js.Any = js.native
-    /**
-      * The Sound Loop Event.
-      * 
-      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their loop state is changed.
-      * 
-      * Listen to it from a Sound instance using `Sound.on('loop', listener)`, i.e.:
-      * 
-      * ```javascript
-      * var music = this.sound.add('key');
-      * music.on('loop', listener);
-      * music.setLoop(true);
-      * ```
-      * 
-      * This is not to be confused with the [LOOPED]{@linkcode Phaser.Sound.Events#event:LOOPED} event, which emits each time a Sound loops during playback.
-      */
-    val LOOP: js.Any = js.native
-    /**
-      * The Sound Looped Event.
-      * 
-      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they loop during playback.
-      * 
-      * Listen to it from a Sound instance using `Sound.on('looped', listener)`, i.e.:
-      * 
-      * ```javascript
-      * var music = this.sound.add('key');
-      * music.on('looped', listener);
-      * music.setLoop(true);
-      * music.play();
-      * ```
-      * 
-      * This is not to be confused with the [LOOP]{@linkcode Phaser.Sound.Events#event:LOOP} event, which only emits when the loop state of a Sound is changed.
-      */
-    val LOOPED: js.Any = js.native
-    /**
-      * The Sound Mute Event.
-      * 
-      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their mute state changes.
-      * 
-      * Listen to it from a Sound instance using `Sound.on('mute', listener)`, i.e.:
-      * 
-      * ```javascript
-      * var music = this.sound.add('key');
-      * music.on('mute', listener);
-      * music.play();
-      * music.setMute(true);
-      * ```
-      */
-    val MUTE: js.Any = js.native
-    /**
-      * The Sound Pause Event.
-      * 
-      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are paused.
-      * 
-      * Listen to it from a Sound instance using `Sound.on('pause', listener)`, i.e.:
-      * 
-      * ```javascript
-      * var music = this.sound.add('key');
-      * music.on('pause', listener);
-      * music.play();
-      * music.pause();
-      * ```
-      */
-    val PAUSE: js.Any = js.native
-    /**
-      * The Pause All Sounds Event.
-      * 
-      * This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
-      * or the HTML5 Audio Manager. It is dispatched when the `pauseAll` method is invoked and after all current Sounds
-      * have been paused.
-      * 
-      * Listen to it from a Scene using: `this.sound.on('pauseall', listener)`.
-      */
-    val PAUSE_ALL: js.Any = js.native
-    /**
-      * The Sound Play Event.
-      * 
-      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are played.
-      * 
-      * Listen to it from a Sound instance using `Sound.on('play', listener)`, i.e.:
-      * 
-      * ```javascript
-      * var music = this.sound.add('key');
-      * music.on('play', listener);
-      * music.play();
-      * ```
-      */
-    val PLAY: js.Any = js.native
-    /**
-      * The Sound Rate Change Event.
-      * 
-      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their rate changes.
-      * 
-      * Listen to it from a Sound instance using `Sound.on('rate', listener)`, i.e.:
-      * 
-      * ```javascript
-      * var music = this.sound.add('key');
-      * music.on('rate', listener);
-      * music.play();
-      * music.setRate(0.5);
-      * ```
-      */
-    val RATE: js.Any = js.native
-    /**
-      * The Sound Resume Event.
-      * 
-      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are resumed from a paused state.
-      * 
-      * Listen to it from a Sound instance using `Sound.on('resume', listener)`, i.e.:
-      * 
-      * ```javascript
-      * var music = this.sound.add('key');
-      * music.on('resume', listener);
-      * music.play();
-      * music.pause();
-      * music.resume();
-      * ```
-      */
-    val RESUME: js.Any = js.native
-    /**
-      * The Resume All Sounds Event.
-      * 
-      * This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
-      * or the HTML5 Audio Manager. It is dispatched when the `resumeAll` method is invoked and after all current Sounds
-      * have been resumed.
-      * 
-      * Listen to it from a Scene using: `this.sound.on('resumeall', listener)`.
-      */
-    val RESUME_ALL: js.Any = js.native
-    /**
-      * The Sound Seek Event.
-      * 
-      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are seeked to a new position.
-      * 
-      * Listen to it from a Sound instance using `Sound.on('seek', listener)`, i.e.:
-      * 
-      * ```javascript
-      * var music = this.sound.add('key');
-      * music.on('seek', listener);
-      * music.play();
-      * music.setSeek(5000);
-      * ```
-      */
-    val SEEK: js.Any = js.native
-    /**
-      * The Sound Stop Event.
-      * 
-      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are stopped.
-      * 
-      * Listen to it from a Sound instance using `Sound.on('stop', listener)`, i.e.:
-      * 
-      * ```javascript
-      * var music = this.sound.add('key');
-      * music.on('stop', listener);
-      * music.play();
-      * music.stop();
-      * ```
-      */
-    val STOP: js.Any = js.native
-    /**
-      * The Stop All Sounds Event.
-      * 
-      * This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
-      * or the HTML5 Audio Manager. It is dispatched when the `stopAll` method is invoked and after all current Sounds
-      * have been stopped.
-      * 
-      * Listen to it from a Scene using: `this.sound.on('stopall', listener)`.
-      */
-    val STOP_ALL: js.Any = js.native
-    /**
-      * The Sound Manager Unlocked Event.
-      * 
-      * This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
-      * or the HTML5 Audio Manager. It is dispatched during the update loop when the Sound Manager becomes unlocked. For
-      * Web Audio this is on the first user gesture on the page.
-      * 
-      * Listen to it from a Scene using: `this.sound.on('unlocked', listener)`.
-      */
-    val UNLOCKED: js.Any = js.native
-    /**
-      * The Sound Volume Event.
-      * 
-      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their volume changes.
-      * 
-      * Listen to it from a Sound instance using `Sound.on('volume', listener)`, i.e.:
-      * 
-      * ```javascript
-      * var music = this.sound.add('key');
-      * music.on('volume', listener);
-      * music.play();
-      * music.setVolume(0.5);
-      * ```
-      */
-    val VOLUME: js.Any = js.native
-  }
-  
 }
-

@@ -1,14 +1,16 @@
 package typingsJapgolly.bitwise
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bitwise/buffer/or", JSImport.Namespace)
-@js.native
-object bufferOrMod extends js.Object {
-  def default(a: Buffer, b: Buffer): Buffer = js.native
-  def default(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = js.native
+object bufferOrMod {
+  
+  @JSImport("bitwise/buffer/or", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(a: Buffer, b: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def default(a: Buffer, b: Buffer, isLooping: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], isLooping.asInstanceOf[js.Any])).asInstanceOf[Buffer]
 }
-

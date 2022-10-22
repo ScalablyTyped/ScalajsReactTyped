@@ -1,16 +1,23 @@
-package typingsJapgolly.openapiTypes.mod
+package typingsJapgolly.openapiTypes.mod.OpenAPIV3
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.openapiTypes.anon.Callbacks
+import typingsJapgolly.openapiTypes.openapiTypesStrings.array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object OpenAPIV3 {
-  type ArraySchemaObjectType = typingsJapgolly.openapiTypes.openapiTypesStrings.array
-  type CallbackObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.openapiTypes.mod.OpenAPIV3.PathItemObject]
-  type HeaderObject = typingsJapgolly.openapiTypes.mod.OpenAPIV3.ParameterBaseObject
-  type PathsObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.openapiTypes.mod.OpenAPIV3.PathItemObject]
-  type ResponsesObject = org.scalablytyped.runtime.StringDictionary[
-    typingsJapgolly.openapiTypes.mod.OpenAPIV3.ReferenceObject | typingsJapgolly.openapiTypes.mod.OpenAPIV3.ResponseObject
-  ]
-  type SecurityRequirementObject = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
-}
+
+type ArraySchemaObjectType = array
+
+type CallbackObject = StringDictionary[PathItemObject[js.Object]]
+
+type HeaderObject = ParameterBaseObject
+
+type OperationObject[T /* <: js.Object */] = Callbacks & T
+
+type PathsObject[T /* <: js.Object */, P /* <: js.Object */] = StringDictionary[js.UndefOr[PathItemObject[T] & P]]
+
+type ResponsesObject = StringDictionary[ReferenceObject | ResponseObject]
+
+type SecurityRequirementObject = StringDictionary[js.Array[String]]

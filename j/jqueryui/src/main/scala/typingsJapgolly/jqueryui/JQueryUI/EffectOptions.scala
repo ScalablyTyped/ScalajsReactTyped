@@ -1,24 +1,39 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Effects //////////////////////////////////////////////////
-trait EffectOptions extends js.Object {
+trait EffectOptions extends StObject {
+  
   var complete: js.Function
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
   var easing: js.UndefOr[String] = js.undefined
+  
   var effect: String
 }
-
 object EffectOptions {
-  @scala.inline
-  def apply(complete: js.Function, effect: String, duration: Int | Double = null, easing: String = null): EffectOptions = {
+  
+  inline def apply(complete: js.Function, effect: String): EffectOptions = {
     val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     __obj.asInstanceOf[EffectOptions]
   }
+  
+  extension [Self <: EffectOptions](x: Self) {
+    
+    inline def setComplete(value: js.Function): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    
+    inline def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+  }
 }
-

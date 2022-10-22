@@ -1,57 +1,46 @@
 package typingsJapgolly.autosize
 
-import typingsJapgolly.jquery.JQuery_
-import typingsJapgolly.std.Element
-import typingsJapgolly.std.HTMLElement
-import typingsJapgolly.std.NodeList
+import org.scalajs.dom.Element
+import typingsJapgolly.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("autosize", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  inline def apply(elements: Element): Element = ^.asInstanceOf[js.Dynamic].apply(elements.asInstanceOf[js.Any]).asInstanceOf[Element]
   /**
-    * Attach autosize to JQuery collection
+    * Attach Autosize to NodeList/Element/JQuery.
+    *
+    * @example
+    * import autosize = require('autosize');
+    *
+    * // from a NodeList
+    * autosize(document.querySelectorAll('textarea'));
+    *
+    * // from a single Node
+    * autosize(document.querySelector('textarea'));
+    *
+    * // from a jQuery collection
+    * autosize($('textarea'));
     */
-  def apply(collection: JQuery_[HTMLElement]): JQuery_[org.scalajs.dom.raw.HTMLElement] = js.native
-  /**
-    * Attach autosize to NodeList
-    */
-  def apply(elements: NodeList): org.scalajs.dom.raw.NodeList = js.native
-  /**
-    * Attach autosize to Element
-    */
-  def apply(element: Element): org.scalajs.dom.raw.Element = js.native
+  inline def apply(elements: ArrayLike[Element]): ArrayLike[Element] = ^.asInstanceOf[js.Dynamic].apply(elements.asInstanceOf[js.Any]).asInstanceOf[ArrayLike[Element]]
+  
+  @JSImport("autosize", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def destroy(elements: Element): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(elements.asInstanceOf[js.Any]).asInstanceOf[Element]
   /**
     * Removes Autosize and reverts any changes it made to the textarea element.
     */
-  def destroy(collection: JQuery_[HTMLElement]): JQuery_[org.scalajs.dom.raw.HTMLElement] = js.native
-  /**
-    * Removes Autosize and reverts any changes it made to the textarea element.
-    */
-  def destroy(elements: NodeList): org.scalajs.dom.raw.NodeList = js.native
-  /**
-    * Removes Autosize and reverts any changes it made to the textarea element.
-    */
-  def destroy(element: Element): org.scalajs.dom.raw.Element = js.native
+  inline def destroy(elements: ArrayLike[Element]): ArrayLike[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(elements.asInstanceOf[js.Any]).asInstanceOf[ArrayLike[Element]]
+  
+  inline def update(elements: Element): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(elements.asInstanceOf[js.Any]).asInstanceOf[Element]
   /**
     * Triggers the height adjustment for an assigned textarea element.
     * Autosize will automatically adjust the textarea height on keyboard and window resize events.
     * There is no efficient way for Autosize to monitor for when another script has changed the textarea value or for changes in layout that impact the textarea element.
     */
-  def update(collection: JQuery_[HTMLElement]): JQuery_[org.scalajs.dom.raw.HTMLElement] = js.native
-  /**
-    * Triggers the height adjustment for an assigned textarea element.
-    * Autosize will automatically adjust the textarea height on keyboard and window resize events.
-    * There is no efficient way for Autosize to monitor for when another script has changed the textarea value or for changes in layout that impact the textarea element.
-    */
-  def update(elements: NodeList): org.scalajs.dom.raw.NodeList = js.native
-  /**
-    * Triggers the height adjustment for an assigned textarea element.
-    * Autosize will automatically adjust the textarea height on keyboard and window resize events.
-    * There is no efficient way for Autosize to monitor for when another script has changed the textarea value or for changes in layout that impact the textarea element.
-    */
-  def update(element: Element): org.scalajs.dom.raw.Element = js.native
+  inline def update(elements: ArrayLike[Element]): ArrayLike[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(elements.asInstanceOf[js.Any]).asInstanceOf[ArrayLike[Element]]
 }
-

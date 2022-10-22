@@ -10,12 +10,13 @@ import typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.repositi
 import typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.setValue
 import typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.show
 import typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   /**
     * Initializes an colorpicker.
     */
@@ -55,7 +56,7 @@ trait JQuery extends js.Object {
     * Set a new value for the color picker (also updates everything). Triggers 'changeColor' event.
     */
   @JSName("colorpicker")
-  def colorpicker_setValue(methodName: setValue, value: js.Any): js.Any = js.native
+  def colorpicker_setValue(methodName: setValue, value: Any): Any = js.native
   /**
     * Show the color picker
     */
@@ -66,31 +67,38 @@ trait JQuery extends js.Object {
     */
   @JSName("colorpicker")
   def colorpicker_update(methodName: update): Unit = js.native
+  
   /**
     * Access to the colorpicker API directly
     */
   @JSName("data")
   def data_colorpicker(methodName: colorpicker): ColorPicker = js.native
+  
   def off(events: ColorPickerEvents): JQuery = js.native
-  def off(events: ColorPickerEvents, handler: js.Function1[/* event */ ColorPickerEventObject, _]): JQuery = js.native
+  def off(events: ColorPickerEvents, handler: js.Function1[/* event */ ColorPickerEventObject, Any]): JQuery = js.native
   def off(events: ColorPickerEvents, selector: String): JQuery = js.native
   def off(
     events: ColorPickerEvents,
     selector: String,
-    handler: js.Function1[/* event */ ColorPickerEventObject, _]
+    handler: js.Function1[/* event */ ColorPickerEventObject, Any]
   ): JQuery = js.native
-  def on(events: ColorPickerEvents, handler: js.Function1[/* event */ ColorPickerEventObject, _]): JQuery = js.native
-  def on(events: ColorPickerEvents, selector: String, data: js.Any): JQuery = js.native
+  def off(
+    events: ColorPickerEvents,
+    selector: Unit,
+    handler: js.Function1[/* event */ ColorPickerEventObject, Any]
+  ): JQuery = js.native
+  
+  def on(events: ColorPickerEvents, handler: js.Function1[/* event */ ColorPickerEventObject, Any]): JQuery = js.native
+  def on(events: ColorPickerEvents, selector: String, data: Any): JQuery = js.native
   def on(
     events: ColorPickerEvents,
     selector: String,
-    data: js.Any,
-    handler: js.Function1[/* event */ ColorPickerEventObject, _]
+    data: Any,
+    handler: js.Function1[/* event */ ColorPickerEventObject, Any]
   ): JQuery = js.native
   def on(
     events: ColorPickerEvents,
     selector: String,
-    handler: js.Function1[/* event */ ColorPickerEventObject, _]
+    handler: js.Function1[/* event */ ColorPickerEventObject, Any]
   ): JQuery = js.native
 }
-

@@ -1,29 +1,26 @@
 package typingsJapgolly.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GetArtistAlbumsOptions
-  extends PaginationOptions
-     with CountryOptions {
+  extends StObject
+     with PaginationCountryOptions {
+  
   var include_groups: js.UndefOr[String] = js.undefined
 }
-
 object GetArtistAlbumsOptions {
-  @scala.inline
-  def apply(
-    country: String = null,
-    include_groups: String = null,
-    limit: Int | Double = null,
-    offset: Int | Double = null
-  ): GetArtistAlbumsOptions = {
+  
+  inline def apply(): GetArtistAlbumsOptions = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (include_groups != null) __obj.updateDynamic("include_groups")(include_groups.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetArtistAlbumsOptions]
   }
+  
+  extension [Self <: GetArtistAlbumsOptions](x: Self) {
+    
+    inline def setInclude_groups(value: String): Self = StObject.set(x, "include_groups", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_groupsUndefined: Self = StObject.set(x, "include_groups", js.undefined)
+  }
 }
-

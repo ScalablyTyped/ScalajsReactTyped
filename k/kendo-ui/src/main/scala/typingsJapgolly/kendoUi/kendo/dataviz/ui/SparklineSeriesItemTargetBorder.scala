@@ -1,27 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SparklineSeriesItemTargetBorder extends js.Object {
+trait SparklineSeriesItemTargetBorder extends StObject {
+  
   var color: js.UndefOr[String | js.Function] = js.undefined
+  
   var dashType: js.UndefOr[String | js.Function] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object SparklineSeriesItemTargetBorder {
-  @scala.inline
-  def apply(
-    color: String | js.Function = null,
-    dashType: String | js.Function = null,
-    width: Int | Double = null
-  ): SparklineSeriesItemTargetBorder = {
+  
+  inline def apply(): SparklineSeriesItemTargetBorder = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashType != null) __obj.updateDynamic("dashType")(dashType.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineSeriesItemTargetBorder]
   }
+  
+  extension [Self <: SparklineSeriesItemTargetBorder](x: Self) {
+    
+    inline def setColor(value: String | js.Function): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setDashType(value: String | js.Function): Self = StObject.set(x, "dashType", value.asInstanceOf[js.Any])
+    
+    inline def setDashTypeUndefined: Self = StObject.set(x, "dashType", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

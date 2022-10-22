@@ -1,8 +1,8 @@
 package typingsJapgolly.spotifyWebPlaybackSdk.Spotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.account_error
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.initialization_error
   - typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.playback_error
 */
-trait ErrorTypes extends js.Object
-
+trait ErrorTypes extends StObject
 object ErrorTypes {
-  @scala.inline
-  def account_error: typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.account_error = this.cast("account_error")
-  @scala.inline
-  def authentication_error: typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.authentication_error = this.cast("authentication_error")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def initialization_error: typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.initialization_error = this.cast("initialization_error")
-  @scala.inline
-  def playback_error: typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.playback_error = this.cast("playback_error")
+  
+  inline def account_error: typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.account_error = "account_error".asInstanceOf[typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.account_error]
+  
+  inline def authentication_error: typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.authentication_error = "authentication_error".asInstanceOf[typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.authentication_error]
+  
+  inline def initialization_error: typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.initialization_error = "initialization_error".asInstanceOf[typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.initialization_error]
+  
+  inline def playback_error: typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.playback_error = "playback_error".asInstanceOf[typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.playback_error]
 }
-

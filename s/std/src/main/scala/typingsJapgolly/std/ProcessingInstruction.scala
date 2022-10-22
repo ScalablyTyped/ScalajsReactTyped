@@ -1,17 +1,16 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A processing instruction embeds application-specific instructions in XML which can be ignored by other applications that don't recognize them. */
 @js.native
-trait ProcessingInstruction extends CharacterData {
+trait ProcessingInstruction
+  extends StObject
+     with CharacterData
+     with LinkStyle {
+  
+  /* standard dom */
   val target: java.lang.String = js.native
 }
-
-@JSGlobal("ProcessingInstruction")
-@js.native
-object ProcessingInstruction extends Instantiable0[ProcessingInstruction]
-

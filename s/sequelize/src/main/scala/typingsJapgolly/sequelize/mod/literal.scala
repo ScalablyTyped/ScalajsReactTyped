@@ -1,19 +1,23 @@
 package typingsJapgolly.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait literal extends js.Object {
-  var `val`: js.Any
+trait literal extends StObject {
+  
+  var `val`: Any
 }
-
 object literal {
-  @scala.inline
-  def apply(`val`: js.Any): literal = {
+  
+  inline def apply(`val`: Any): literal = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[literal]
   }
+  
+  extension [Self <: literal](x: Self) {
+    
+    inline def setVal(value: Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+  }
 }
-

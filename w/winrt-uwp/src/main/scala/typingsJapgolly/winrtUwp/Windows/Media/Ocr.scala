@@ -5,81 +5,118 @@ import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typingsJapgolly.winrtUwp.Windows.Foundation.Rect
 import typingsJapgolly.winrtUwp.Windows.Globalization.Language
 import typingsJapgolly.winrtUwp.Windows.Graphics.Imaging.SoftwareBitmap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Windows.Media.Ocr namespace provides classes for optical character recognition (OCR) that enable Windows Runtime apps to read and interpret text from images. */
-@JSGlobal("Windows.Media.Ocr")
-@js.native
-object Ocr extends js.Object {
+object Ocr {
+  
   /** Provides optical character recognition (OCR) functionality. */
-  @js.native
-  abstract class OcrEngine () extends js.Object {
-    /** Gets the language being used for text recognition. */
-    var recognizerLanguage: Language = js.native
+  trait OcrEngine extends StObject {
+    
     /**
       * Scans the specified image for text in the language specified by the RecognizerLanguage property.
       * @param bitmap Represents an uncompressed bitmap.
       * @return The result of the OCR that was initiated by the OcrEngine object.
       */
-    def recognizeAsync(bitmap: SoftwareBitmap): IPromiseWithIAsyncOperation[OcrResult] = js.native
+    def recognizeAsync(bitmap: SoftwareBitmap): IPromiseWithIAsyncOperation[OcrResult]
+    
+    /** Gets the language being used for text recognition. */
+    var recognizerLanguage: Language
+  }
+  object OcrEngine {
+    
+    inline def apply(
+      recognizeAsync: SoftwareBitmap => IPromiseWithIAsyncOperation[OcrResult],
+      recognizerLanguage: Language
+    ): OcrEngine = {
+      val __obj = js.Dynamic.literal(recognizeAsync = js.Any.fromFunction1(recognizeAsync), recognizerLanguage = recognizerLanguage.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OcrEngine]
+    }
+    
+    extension [Self <: OcrEngine](x: Self) {
+      
+      inline def setRecognizeAsync(value: SoftwareBitmap => IPromiseWithIAsyncOperation[OcrResult]): Self = StObject.set(x, "recognizeAsync", js.Any.fromFunction1(value))
+      
+      inline def setRecognizerLanguage(value: Language): Self = StObject.set(x, "recognizerLanguage", value.asInstanceOf[js.Any])
+    }
   }
   
   /** Represents a single line of text recognized by the OCR engine and returned as part of the OcrResult . */
-  @js.native
-  abstract class OcrLine () extends js.Object {
+  trait OcrLine extends StObject {
+    
     /** Gets the text of the recognized line. */
-    var text: String = js.native
+    var text: String
+    
     /** Gets the collection of OcrWord objects that represents the words detected in the current line of text by the RecognizeAsync method. */
-    var words: IVectorView[OcrWord] = js.native
+    var words: IVectorView[OcrWord]
+  }
+  object OcrLine {
+    
+    inline def apply(text: String, words: IVectorView[OcrWord]): OcrLine = {
+      val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OcrLine]
+    }
+    
+    extension [Self <: OcrLine](x: Self) {
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setWords(value: IVectorView[OcrWord]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    }
   }
   
   /** Contains the results of Optical Character Recognition (OCR). */
-  @js.native
-  abstract class OcrResult () extends js.Object {
+  trait OcrResult extends StObject {
+    
     /** Gets the collection of OcrLine objects that represents the lines of text detected in the image by the RecognizeAsync method. */
-    var lines: IVectorView[OcrLine] = js.native
+    var lines: IVectorView[OcrLine]
+    
     /** Gets the recognized text. */
-    var text: String = js.native
+    var text: String
+    
     /** Gets the clockwise rotation of the recognized text, in degrees, around the center of the image. */
-    var textAngle: Double = js.native
+    var textAngle: Double
+  }
+  object OcrResult {
+    
+    inline def apply(lines: IVectorView[OcrLine], text: String, textAngle: Double): OcrResult = {
+      val __obj = js.Dynamic.literal(lines = lines.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textAngle = textAngle.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OcrResult]
+    }
+    
+    extension [Self <: OcrResult](x: Self) {
+      
+      inline def setLines(value: IVectorView[OcrLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextAngle(value: Double): Self = StObject.set(x, "textAngle", value.asInstanceOf[js.Any])
+    }
   }
   
   /** Represents a single word in a line of text recognized by the OCR engine and returned as part of the OcrLine . */
-  @js.native
-  abstract class OcrWord () extends js.Object {
+  trait OcrWord extends StObject {
+    
     /** Gets the position and size in pixels of the recognized word from the top left corner of image when the value of TextAngle property is 0 (zero). */
-    var boundingRect: Rect = js.native
+    var boundingRect: Rect
+    
     /** Gets the text of the recognized word. */
-    var text: String = js.native
+    var text: String
   }
-  
-  /* static members */
-  @js.native
-  object OcrEngine extends js.Object {
-    /** Returns a collection of all available OCR languages on the device. */
-    var availableRecognizerLanguages: IVectorView[Language] = js.native
-    /** Gets the maximum image pixel dimensions supported by the OCR engine. */
-    var maxImageDimension: Double = js.native
-    /**
-      * Returns true if a specified language can be resolved to any of the available OCR languages. See language matching for a further explanation of language resolving.
-      * @param language The language being used for text recognition.
-      * @return TRUE, if the specified language can be resolved to any of the available OCR languages; otherwise, FALSE.
-      */
-    def isLanguageSupported(language: Language): Boolean = js.native
-    /**
-      * Creates a new instance of the OcrEngine class.
-      * @param language The language being used for text recognition.
-      * @return If the specified language can be resolved to any of the OCR languages available on the device, returns new instance of OcrEngine class, otherwise returns null. See language matching for a further explanation of language resolving.
-      */
-    def tryCreateFromLanguage(language: Language): OcrEngine = js.native
-    /**
-      * Creates a new instance of the OcrEngine class.
-      * @return If any language from GlobalizationPreferences.Languages can be resolved to any of the available OCR languages returns new instance of OcrEngine class, otherwise returns null.
-      */
-    def tryCreateFromUserProfileLanguages(): OcrEngine = js.native
+  object OcrWord {
+    
+    inline def apply(boundingRect: Rect, text: String): OcrWord = {
+      val __obj = js.Dynamic.literal(boundingRect = boundingRect.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OcrWord]
+    }
+    
+    extension [Self <: OcrWord](x: Self) {
+      
+      inline def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    }
   }
-  
 }
-

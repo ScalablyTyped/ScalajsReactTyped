@@ -1,54 +1,68 @@
 package typingsJapgolly.gestalt.mod
 
-import typingsJapgolly.gestalt.AnonPath
-import typingsJapgolly.gestalt.gestaltStrings.blue
-import typingsJapgolly.gestalt.gestaltStrings.darkGray
-import typingsJapgolly.gestalt.gestaltStrings.eggplant
-import typingsJapgolly.gestalt.gestaltStrings.gray
-import typingsJapgolly.gestalt.gestaltStrings.green
-import typingsJapgolly.gestalt.gestaltStrings.lightGray
-import typingsJapgolly.gestalt.gestaltStrings.maroon
-import typingsJapgolly.gestalt.gestaltStrings.midnight
-import typingsJapgolly.gestalt.gestaltStrings.navy
-import typingsJapgolly.gestalt.gestaltStrings.olive
-import typingsJapgolly.gestalt.gestaltStrings.orange
-import typingsJapgolly.gestalt.gestaltStrings.orchid
-import typingsJapgolly.gestalt.gestaltStrings.pine
-import typingsJapgolly.gestalt.gestaltStrings.purple
-import typingsJapgolly.gestalt.gestaltStrings.red
-import typingsJapgolly.gestalt.gestaltStrings.watermelon
-import typingsJapgolly.gestalt.gestaltStrings.white
+import typingsJapgolly.gestalt.anon.Path
+import typingsJapgolly.gestalt.gestaltStrings.brandPrimary
+import typingsJapgolly.gestalt.gestaltStrings.dark
+import typingsJapgolly.gestalt.gestaltStrings.default
+import typingsJapgolly.gestalt.gestaltStrings.error
+import typingsJapgolly.gestalt.gestaltStrings.info
+import typingsJapgolly.gestalt.gestaltStrings.inverse
+import typingsJapgolly.gestalt.gestaltStrings.light
+import typingsJapgolly.gestalt.gestaltStrings.shopping
+import typingsJapgolly.gestalt.gestaltStrings.subtle
+import typingsJapgolly.gestalt.gestaltStrings.success
+import typingsJapgolly.gestalt.gestaltStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IconProps extends js.Object {
+trait IconProps extends StObject {
+  
   var accessibilityLabel: String
+  
   var color: js.UndefOr[
-    blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
+    default | subtle | success | error | warning | info | inverse | shopping | brandPrimary | light | dark
   ] = js.undefined
-  var dangerouslySetSvgPath: js.UndefOr[AnonPath] = js.undefined
-  var icon: Icons
+  
+  var dangerouslySetSvgPath: js.UndefOr[Path] = js.undefined
+  
+  var icon: js.UndefOr[Icons] = js.undefined
+  
   var `inline`: js.UndefOr[Boolean] = js.undefined
+  
   var size: js.UndefOr[Double | String] = js.undefined
 }
-
 object IconProps {
-  @scala.inline
-  def apply(
-    accessibilityLabel: String,
-    icon: Icons,
-    color: blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white = null,
-    dangerouslySetSvgPath: AnonPath = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    size: Double | String = null
-  ): IconProps = {
-    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dangerouslySetSvgPath != null) __obj.updateDynamic("dangerouslySetSvgPath")(dangerouslySetSvgPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+  
+  inline def apply(accessibilityLabel: String): IconProps = {
+    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconProps]
   }
+  
+  extension [Self <: IconProps](x: Self) {
+    
+    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def setColor(
+      value: default | subtle | success | error | warning | info | inverse | shopping | brandPrimary | light | dark
+    ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setDangerouslySetSvgPath(value: Path): Self = StObject.set(x, "dangerouslySetSvgPath", value.asInstanceOf[js.Any])
+    
+    inline def setDangerouslySetSvgPathUndefined: Self = StObject.set(x, "dangerouslySetSvgPath", js.undefined)
+    
+    inline def setIcon(value: Icons): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    
+    inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+    
+    inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+  }
 }
-

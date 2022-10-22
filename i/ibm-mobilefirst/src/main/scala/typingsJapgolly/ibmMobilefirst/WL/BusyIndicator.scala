@@ -1,15 +1,27 @@
 package typingsJapgolly.ibmMobilefirst.WL
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("WL.BusyIndicator")
-@js.native
-class BusyIndicator () extends js.Object {
-  def this(containerId: String) = this()
-  def this(containerId: String, options: BusyIndicator) = this()
-  def hide(): Unit = js.native
-  def show(): Unit = js.native
+trait BusyIndicator extends StObject {
+  
+  def hide(): Unit
+  
+  def show(): Unit
 }
-
+object BusyIndicator {
+  
+  inline def apply(hide: Callback, show: Callback): BusyIndicator = {
+    val __obj = js.Dynamic.literal(hide = hide.toJsFn, show = show.toJsFn)
+    __obj.asInstanceOf[BusyIndicator]
+  }
+  
+  extension [Self <: BusyIndicator](x: Self) {
+    
+    inline def setHide(value: Callback): Self = StObject.set(x, "hide", value.toJsFn)
+    
+    inline def setShow(value: Callback): Self = StObject.set(x, "show", value.toJsFn)
+  }
+}

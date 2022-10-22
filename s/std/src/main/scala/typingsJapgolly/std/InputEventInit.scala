@@ -1,37 +1,61 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InputEventInit extends UIEventInit {
+trait InputEventInit
+  extends StObject
+     with UIEventInit {
+  
+  /* standard dom */
   var data: js.UndefOr[java.lang.String | Null] = js.undefined
+  
+  /* standard dom */
+  var dataTransfer: js.UndefOr[org.scalajs.dom.DataTransfer | Null] = js.undefined
+  
+  /* standard dom */
   var inputType: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var isComposing: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
+  var targetRanges: js.UndefOr[js.Array[StaticRange]] = js.undefined
 }
-
 object InputEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    data: java.lang.String = null,
-    detail: Int | Double = null,
-    inputType: java.lang.String = null,
-    isComposing: js.UndefOr[scala.Boolean] = js.undefined,
-    view: Window_ = null
-  ): InputEventInit = {
+  
+  inline def apply(): InputEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
-    if (!js.isUndefined(isComposing)) __obj.updateDynamic("isComposing")(isComposing.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputEventInit]
   }
+  
+  extension [Self <: InputEventInit](x: Self) {
+    
+    inline def setData(value: java.lang.String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataNull: Self = StObject.set(x, "data", null)
+    
+    inline def setDataTransfer(value: org.scalajs.dom.DataTransfer): Self = StObject.set(x, "dataTransfer", value.asInstanceOf[js.Any])
+    
+    inline def setDataTransferNull: Self = StObject.set(x, "dataTransfer", null)
+    
+    inline def setDataTransferUndefined: Self = StObject.set(x, "dataTransfer", js.undefined)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setInputType(value: java.lang.String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
+    
+    inline def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
+    
+    inline def setIsComposing(value: scala.Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
+    
+    inline def setIsComposingUndefined: Self = StObject.set(x, "isComposing", js.undefined)
+    
+    inline def setTargetRanges(value: js.Array[StaticRange]): Self = StObject.set(x, "targetRanges", value.asInstanceOf[js.Any])
+    
+    inline def setTargetRangesUndefined: Self = StObject.set(x, "targetRanges", js.undefined)
+    
+    inline def setTargetRangesVarargs(value: StaticRange*): Self = StObject.set(x, "targetRanges", js.Array(value*))
+  }
 }
-

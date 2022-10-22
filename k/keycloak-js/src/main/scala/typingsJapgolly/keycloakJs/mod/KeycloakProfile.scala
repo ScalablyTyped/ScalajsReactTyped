@@ -1,45 +1,72 @@
 package typingsJapgolly.keycloakJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KeycloakProfile extends js.Object {
+trait KeycloakProfile extends StObject {
+  
   var createdTimestamp: js.UndefOr[Double] = js.undefined
+  
   var email: js.UndefOr[String] = js.undefined
+  
   var emailVerified: js.UndefOr[Boolean] = js.undefined
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   var firstName: js.UndefOr[String] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var lastName: js.UndefOr[String] = js.undefined
+  
   var totp: js.UndefOr[Boolean] = js.undefined
+  
   var username: js.UndefOr[String] = js.undefined
 }
-
 object KeycloakProfile {
-  @scala.inline
-  def apply(
-    createdTimestamp: Int | Double = null,
-    email: String = null,
-    emailVerified: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    firstName: String = null,
-    id: String = null,
-    lastName: String = null,
-    totp: js.UndefOr[Boolean] = js.undefined,
-    username: String = null
-  ): KeycloakProfile = {
+  
+  inline def apply(): KeycloakProfile = {
     val __obj = js.Dynamic.literal()
-    if (createdTimestamp != null) __obj.updateDynamic("createdTimestamp")(createdTimestamp.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
-    if (!js.isUndefined(totp)) __obj.updateDynamic("totp")(totp.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeycloakProfile]
   }
+  
+  extension [Self <: KeycloakProfile](x: Self) {
+    
+    inline def setCreatedTimestamp(value: Double): Self = StObject.set(x, "createdTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedTimestampUndefined: Self = StObject.set(x, "createdTimestamp", js.undefined)
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setEmailVerified(value: Boolean): Self = StObject.set(x, "emailVerified", value.asInstanceOf[js.Any])
+    
+    inline def setEmailVerifiedUndefined: Self = StObject.set(x, "emailVerified", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+    
+    inline def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+    
+    inline def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
+    
+    inline def setTotp(value: Boolean): Self = StObject.set(x, "totp", value.asInstanceOf[js.Any])
+    
+    inline def setTotpUndefined: Self = StObject.set(x, "totp", js.undefined)
+    
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+  }
 }
-

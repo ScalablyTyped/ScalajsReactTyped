@@ -1,24 +1,32 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IosHomeScreenFolder extends IosHomeScreenItem {
+trait IosHomeScreenFolder
+  extends StObject
+     with IosHomeScreenItem {
+  
   /**
-    * Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500
+    * Pages of Home Screen Layout Icons which must be applications or web clips. This collection can contain a maximum of 500
     * elements.
     */
   var pages: js.UndefOr[js.Array[IosHomeScreenFolderPage]] = js.undefined
 }
-
 object IosHomeScreenFolder {
-  @scala.inline
-  def apply(displayName: String = null, pages: js.Array[IosHomeScreenFolderPage] = null): IosHomeScreenFolder = {
+  
+  inline def apply(): IosHomeScreenFolder = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosHomeScreenFolder]
   }
+  
+  extension [Self <: IosHomeScreenFolder](x: Self) {
+    
+    inline def setPages(value: js.Array[IosHomeScreenFolderPage]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    
+    inline def setPagesVarargs(value: IosHomeScreenFolderPage*): Self = StObject.set(x, "pages", js.Array(value*))
+  }
 }
-

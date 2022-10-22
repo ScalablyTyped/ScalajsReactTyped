@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SelectionListObject...
@@ -11,9 +11,13 @@ import scala.scalajs.js.annotation._
   * SelectionListObject width extend GenericObject
   */
 @js.native
-trait ISelectionListObject extends IGenericObjectPrototype[IGenericSelectionListProperties, IGenericSelectionListLayout] {
+trait ISelectionListObject
+  extends StObject
+     with IGenericObjectPrototype[IGenericSelectionListProperties, IGenericSelectionListLayout] {
+  
   var qBackCount: Double = js.native
+  
   var qForwardCount: Double = js.native
+  
   var qSelections: js.Array[INxCurrentSelectionItem] = js.native
 }
-

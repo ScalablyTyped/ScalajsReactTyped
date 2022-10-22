@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-path-cwd
 
-Typings are for version 2.2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check if a path is the current working directory
@@ -10,10 +10,10 @@ Check if a path is the current working directory
 | ------------------ | :-------------: |
 | Full name          | is-path-cwd |
 | Keywords           | path, cwd, pwd, check, filepath, file, folder |
-| # releases         | 4 |
-| # dependents       | 31 |
-| # downloads        | 324466140 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5.8527103E7 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-path-cwd#readme)

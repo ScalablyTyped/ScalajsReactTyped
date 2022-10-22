@@ -1,26 +1,24 @@
 package typingsJapgolly.rcCascader
 
-import typingsJapgolly.rcCascader.cascaderMod.CascaderProps
-import typingsJapgolly.rcCascader.cascaderMod.CascaderState
+import japgolly.scalajs.react.facade.React.Element
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.rcCascader.anon.DisplayName
+import typingsJapgolly.rcCascader.anon.Ref
+import typingsJapgolly.rcCascader.esCascaderMod.CascaderProps
+import typingsJapgolly.rcCascader.esCascaderMod.DefaultOptionType
+import typingsJapgolly.react.mod.PropsWithChildren
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-cascader/lib", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class default protected ()
-    extends typingsJapgolly.rcCascader.cascaderMod.default {
-    def this(props: CascaderProps) = this()
-  }
+object mod extends Shortcut {
   
-  /* static members */
+  @JSImport("rc-cascader", JSImport.Default)
   @js.native
-  object default extends js.Object {
-    var defaultProps: CascaderProps = js.native
-    def getDerivedStateFromProps(nextProps: CascaderProps, prevState: CascaderState): CascaderState = js.native
-  }
+  val default: (js.Function1[/* props */ PropsWithChildren[CascaderProps[DefaultOptionType]] & Ref, Element]) & DisplayName = js.native
   
+  type _To = (js.Function1[/* props */ PropsWithChildren[CascaderProps[DefaultOptionType]] & Ref, Element]) & DisplayName
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: (js.Function1[/* props */ PropsWithChildren[CascaderProps[DefaultOptionType]] & Ref, Element]) & DisplayName = default
 }
-

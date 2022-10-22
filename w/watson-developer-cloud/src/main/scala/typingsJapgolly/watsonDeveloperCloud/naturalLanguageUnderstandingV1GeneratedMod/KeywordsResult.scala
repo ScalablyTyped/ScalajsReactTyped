@@ -1,39 +1,54 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The important keywords in the content, organized by relevance. */
-trait KeywordsResult extends js.Object {
+trait KeywordsResult extends StObject {
+  
   /** Number of times the keyword appears in the analyzed text. */
   var count: js.UndefOr[Double] = js.undefined
+  
   /** Emotion analysis results for the keyword, enabled with the `emotion` option. */
   var emotion: js.UndefOr[EmotionScores] = js.undefined
+  
   /** Relevance score from 0 to 1. Higher values indicate greater relevance. */
   var relevance: js.UndefOr[Double] = js.undefined
+  
   /** Sentiment analysis results for the keyword, enabled with the `sentiment` option. */
   var sentiment: js.UndefOr[FeatureSentimentResults] = js.undefined
+  
   /** The keyword text. */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object KeywordsResult {
-  @scala.inline
-  def apply(
-    count: Int | Double = null,
-    emotion: EmotionScores = null,
-    relevance: Int | Double = null,
-    sentiment: FeatureSentimentResults = null,
-    text: String = null
-  ): KeywordsResult = {
+  
+  inline def apply(): KeywordsResult = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (emotion != null) __obj.updateDynamic("emotion")(emotion.asInstanceOf[js.Any])
-    if (relevance != null) __obj.updateDynamic("relevance")(relevance.asInstanceOf[js.Any])
-    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeywordsResult]
   }
+  
+  extension [Self <: KeywordsResult](x: Self) {
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    
+    inline def setEmotion(value: EmotionScores): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
+    
+    inline def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
+    
+    inline def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
+    
+    inline def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
+    
+    inline def setSentiment(value: FeatureSentimentResults): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
+    
+    inline def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

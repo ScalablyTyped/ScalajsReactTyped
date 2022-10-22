@@ -5,312 +5,462 @@ import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.senchaTouch.Ext.data.IConnection
 import typingsJapgolly.senchaTouch.Ext.data.IModel
 import typingsJapgolly.senchaTouch.Ext.dom.IElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IPanel
-  extends typingsJapgolly.senchaTouch.Ext.IPanel {
+  extends StObject
+     with typingsJapgolly.senchaTouch.Ext.IPanel {
+  
   /** [Config Option] (Object) */
-  var api: js.UndefOr[js.Any] = js.undefined
+  var api: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Object) */
-  var baseParams: js.UndefOr[js.Any] = js.undefined
+  var baseParams: js.UndefOr[Any] = js.undefined
+  
   /** [Method] A convenient method to disable all fields in this form
-  		* @param newDisabled Object
-  		* @returns Ext.form.Panel This form.
-  		*/
-  var doSetDisabled: js.UndefOr[js.Function1[/* newDisabled */ js.UndefOr[js.Any], this.type]] = js.undefined
+    * @param newDisabled Object
+    * @returns Ext.form.Panel This form.
+    */
+  var doSetDisabled: js.UndefOr[js.Function1[/* newDisabled */ js.UndefOr[Any], this.type]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var enableSubmissionForm: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Object) */
-  var enctype: js.UndefOr[js.Any] = js.undefined
+  var enctype: js.UndefOr[Any] = js.undefined
+  
   /** [Method] Returns the value of api
-  		* @returns Object
-  		*/
-  var getApi: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getApi: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of baseParams
-  		* @returns Object
-  		*/
-  var getBaseParams: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getBaseParams: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of enableSubmissionForm
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getEnableSubmissionForm: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Returns the value of enctype
-  		* @returns Object
-  		*/
-  var getEnctype: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getEnctype: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of method
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getMethod: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns the value of multipartDetection
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getMultipartDetection: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Returns the value of paramOrder
-  		* @returns String/String[]
-  		*/
-  var getParamOrder: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns String/String[]
+    */
+  var getParamOrder: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of paramsAsHash
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getParamsAsHash: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Returns the value of standardSubmit
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getStandardSubmit: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Returns the value of submitOnAction
-  		* @returns Object
-  		*/
-  var getSubmitOnAction: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getSubmitOnAction: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of timeout
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getTimeout: js.UndefOr[js.Function0[Double]] = js.undefined
+  
   /** [Method] Returns the value of trackResetOnLoad
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getTrackResetOnLoad: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Returns the value of url
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns an object containing the value of each field in the form keyed to the field s name
-  		* @param enabled Boolean true to return only enabled fields.
-  		* @param all Boolean true to return all fields even if they don't have a name configured.
-  		* @returns Object Object mapping field name to its value.
-  		*/
+    * @param enabled Boolean true to return only enabled fields.
+    * @param all Boolean true to return all fields even if they don't have a name configured.
+    * @returns Object Object mapping field name to its value.
+    */
   var getValues: js.UndefOr[
-    js.Function2[/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean], _]
+    js.Function2[/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean], Any]
   ] = js.undefined
+  
   /** [Method] Hides a previously shown wait mask See showMask
-  		* @returns Ext.form.Panel this
-  		*/
+    * @returns Ext.form.Panel this
+    */
   var hideMask: js.UndefOr[js.Function0[this.type]] = js.undefined
+  
   /** [Method] Performs an Ajax or Ext Direct call to load values for this form
-  		* @param options Object The configuration when loading this form. The following are the configurations when loading via Ajax only:
-  		* @returns Ext.data.Connection The request object.
-  		*/
-  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IConnection]] = js.undefined
+    * @param options Object The configuration when loading this form. The following are the configurations when loading via Ajax only:
+    * @returns Ext.data.Connection The request object.
+    */
+  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], IConnection]] = js.undefined
+  
   /** [Method] Loads matching fields from a model instance into this form
-  		* @param record Ext.data.Model The model instance.
-  		* @returns Ext.form.Panel This form.
-  		*/
+    * @param record Ext.data.Model The model instance.
+    * @returns Ext.form.Panel This form.
+    */
   var loadModel: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], this.type]] = js.undefined
+  
   /** [Method] Loads matching fields from a model instance into this form
-  		* @param record Ext.data.Model The model instance.
-  		* @returns Ext.form.Panel This form.
-  		*/
+    * @param record Ext.data.Model The model instance.
+    * @returns Ext.form.Panel This form.
+    */
   var loadRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], this.type]] = js.undefined
+  
   /** [Config Option] (String) */
   var method: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var multipartDetection: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (String/String[]) */
-  var paramOrder: js.UndefOr[js.Any] = js.undefined
+  var paramOrder: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var paramsAsHash: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Resets all fields in the form back to their original values
-  		* @returns Ext.form.Panel This form.
-  		*/
+    * @returns Ext.form.Panel This form.
+    */
   var reset: js.UndefOr[js.Function0[this.type]] = js.undefined
+  
   /** [Method] Sets the value of api
-  		* @param api Object The new value.
-  		*/
-  var setApi: js.UndefOr[js.Function1[/* api */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param api Object The new value.
+    */
+  var setApi: js.UndefOr[js.Function1[/* api */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of baseParams
-  		* @param baseParams Object The new value.
-  		*/
-  var setBaseParams: js.UndefOr[js.Function1[/* baseParams */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param baseParams Object The new value.
+    */
+  var setBaseParams: js.UndefOr[js.Function1[/* baseParams */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of enableSubmissionForm
-  		* @param enableSubmissionForm Boolean The new value.
-  		*/
+    * @param enableSubmissionForm Boolean The new value.
+    */
   var setEnableSubmissionForm: js.UndefOr[js.Function1[/* enableSubmissionForm */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Sets the value of enctype
-  		* @param enctype Object The new value.
-  		*/
-  var setEnctype: js.UndefOr[js.Function1[/* enctype */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param enctype Object The new value.
+    */
+  var setEnctype: js.UndefOr[js.Function1[/* enctype */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of method
-  		* @param method String The new value.
-  		*/
+    * @param method String The new value.
+    */
   var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of multipartDetection
-  		* @param multipartDetection Boolean The new value.
-  		*/
+    * @param multipartDetection Boolean The new value.
+    */
   var setMultipartDetection: js.UndefOr[js.Function1[/* multipartDetection */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Sets the value of paramOrder
-  		* @param paramOrder String/String[] The new value.
-  		*/
-  var setParamOrder: js.UndefOr[js.Function1[/* paramOrder */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param paramOrder String/String[] The new value.
+    */
+  var setParamOrder: js.UndefOr[js.Function1[/* paramOrder */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of paramsAsHash
-  		* @param paramsAsHash Boolean The new value.
-  		*/
+    * @param paramsAsHash Boolean The new value.
+    */
   var setParamsAsHash: js.UndefOr[js.Function1[/* paramsAsHash */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Sets the value of standardSubmit
-  		* @param standardSubmit Boolean The new value.
-  		*/
+    * @param standardSubmit Boolean The new value.
+    */
   var setStandardSubmit: js.UndefOr[js.Function1[/* standardSubmit */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Sets the value of submitOnAction
-  		* @param submitOnAction Object The new value.
-  		*/
-  var setSubmitOnAction: js.UndefOr[js.Function1[/* submitOnAction */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param submitOnAction Object The new value.
+    */
+  var setSubmitOnAction: js.UndefOr[js.Function1[/* submitOnAction */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of timeout
-  		* @param timeout Number The new value.
-  		*/
+    * @param timeout Number The new value.
+    */
   var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.undefined
+  
   /** [Method] Sets the value of trackResetOnLoad
-  		* @param trackResetOnLoad Boolean The new value.
-  		*/
+    * @param trackResetOnLoad Boolean The new value.
+    */
   var setTrackResetOnLoad: js.UndefOr[js.Function1[/* trackResetOnLoad */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Sets the value of url
-  		* @param url String The new value.
-  		*/
+    * @param url String The new value.
+    */
   var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the values of form fields in bulk
-  		* @param values Object field name => value mapping object.
-  		* @returns Ext.form.Panel This form.
-  		*/
-  var setValues: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], this.type]] = js.undefined
+    * @param values Object field name => value mapping object.
+    * @returns Ext.form.Panel This form.
+    */
+  var setValues: js.UndefOr[js.Function1[/* values */ js.UndefOr[Any], this.type]] = js.undefined
+  
   /** [Method] Shows a generic custom mask over a designated Element
-  		* @param cfg String/Object Either a string message or a configuration object supporting the following options: {  message : 'Please Wait',  cls : 'form-mask' }
-  		* @param target Object
-  		* @returns Ext.form.Panel This form
-  		*/
-  var showMask: js.UndefOr[
-    js.Function2[/* cfg */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], this.type]
-  ] = js.undefined
+    * @param cfg String/Object Either a string message or a configuration object supporting the following options: {  message : 'Please Wait',  cls : 'form-mask' }
+    * @param target Object
+    * @returns Ext.form.Panel This form
+    */
+  var showMask: js.UndefOr[js.Function2[/* cfg */ js.UndefOr[Any], /* target */ js.UndefOr[Any], this.type]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var standardSubmit: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Performs a Ajax based submission of form values if standardSubmit is false or otherwise executes a standard HTML Fo
-  		* @param options Object The configuration when submitting this form. The following are the configurations when submitting via Ajax only:
-  		* @returns Ext.data.Connection The request object if the standardSubmit config is false. If the standardSubmit config is true, then the return value is undefined.
-  		*/
-  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IConnection]] = js.undefined
+    * @param options Object The configuration when submitting this form. The following are the configurations when submitting via Ajax only:
+    * @returns Ext.data.Connection The request object if the standardSubmit config is false. If the standardSubmit config is true, then the return value is undefined.
+    */
+  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], IConnection]] = js.undefined
+  
   /** [Config Option] (Object) */
-  var submitOnAction: js.UndefOr[js.Any] = js.undefined
+  var submitOnAction: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var trackResetOnLoad: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (String) */
   var url: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Ext.dom.Element) */
   var waitMsgTarget: js.UndefOr[IElement] = js.undefined
+  
   /** [Config Option] (Ext.XTemplate/String/String[]) */
-  var waitTpl: js.UndefOr[js.Any] = js.undefined
+  var waitTpl: js.UndefOr[Any] = js.undefined
 }
-
 object IPanel {
-  @scala.inline
-  def apply(
-    IPanel: typingsJapgolly.senchaTouch.Ext.IPanel = null,
-    api: js.Any = null,
-    baseParams: js.Any = null,
-    doSetDisabled: /* newDisabled */ js.UndefOr[js.Any] => CallbackTo[IPanel] = null,
-    enableSubmissionForm: js.UndefOr[Boolean] = js.undefined,
-    enctype: js.Any = null,
-    getApi: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getBaseParams: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getEnableSubmissionForm: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    getEnctype: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getMethod: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getMultipartDetection: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    getParamOrder: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getParamsAsHash: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    getStandardSubmit: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    getSubmitOnAction: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getTimeout: js.UndefOr[CallbackTo[Double]] = js.undefined,
-    getTrackResetOnLoad: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    getUrl: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getValues: (/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean]) => CallbackTo[js.Any] = null,
-    hideMask: js.UndefOr[CallbackTo[IPanel]] = js.undefined,
-    load: /* options */ js.UndefOr[js.Any] => CallbackTo[IConnection] = null,
-    loadModel: /* record */ js.UndefOr[IModel] => CallbackTo[IPanel] = null,
-    loadRecord: /* record */ js.UndefOr[IModel] => CallbackTo[IPanel] = null,
-    method: String = null,
-    multipartDetection: js.UndefOr[Boolean] = js.undefined,
-    paramOrder: js.Any = null,
-    paramsAsHash: js.UndefOr[Boolean] = js.undefined,
-    reset: js.UndefOr[CallbackTo[IPanel]] = js.undefined,
-    setApi: /* api */ js.UndefOr[js.Any] => Callback = null,
-    setBaseParams: /* baseParams */ js.UndefOr[js.Any] => Callback = null,
-    setEnableSubmissionForm: /* enableSubmissionForm */ js.UndefOr[Boolean] => Callback = null,
-    setEnctype: /* enctype */ js.UndefOr[js.Any] => Callback = null,
-    setMethod: /* method */ js.UndefOr[String] => Callback = null,
-    setMultipartDetection: /* multipartDetection */ js.UndefOr[Boolean] => Callback = null,
-    setParamOrder: /* paramOrder */ js.UndefOr[js.Any] => Callback = null,
-    setParamsAsHash: /* paramsAsHash */ js.UndefOr[Boolean] => Callback = null,
-    setStandardSubmit: /* standardSubmit */ js.UndefOr[Boolean] => Callback = null,
-    setSubmitOnAction: /* submitOnAction */ js.UndefOr[js.Any] => Callback = null,
-    setTimeout: /* timeout */ js.UndefOr[Double] => Callback = null,
-    setTrackResetOnLoad: /* trackResetOnLoad */ js.UndefOr[Boolean] => Callback = null,
-    setUrl: /* url */ js.UndefOr[String] => Callback = null,
-    setValues: /* values */ js.UndefOr[js.Any] => CallbackTo[IPanel] = null,
-    showMask: (/* cfg */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => CallbackTo[IPanel] = null,
-    standardSubmit: js.UndefOr[Boolean] = js.undefined,
-    submit: /* options */ js.UndefOr[js.Any] => CallbackTo[IConnection] = null,
-    submitOnAction: js.Any = null,
-    timeout: Int | Double = null,
-    trackResetOnLoad: js.UndefOr[Boolean] = js.undefined,
-    url: String = null,
-    waitMsgTarget: IElement = null,
-    waitTpl: js.Any = null
-  ): IPanel = {
+  
+  inline def apply(): IPanel = {
     val __obj = js.Dynamic.literal()
-    if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)
-    if (api != null) __obj.updateDynamic("api")(api.asInstanceOf[js.Any])
-    if (baseParams != null) __obj.updateDynamic("baseParams")(baseParams.asInstanceOf[js.Any])
-    if (doSetDisabled != null) __obj.updateDynamic("doSetDisabled")(js.Any.fromFunction1((t0: /* newDisabled */ js.UndefOr[js.Any]) => doSetDisabled(t0).runNow()))
-    if (!js.isUndefined(enableSubmissionForm)) __obj.updateDynamic("enableSubmissionForm")(enableSubmissionForm.asInstanceOf[js.Any])
-    if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
-    getApi.foreach(p => __obj.updateDynamic("getApi")(p.toJsFn))
-    getBaseParams.foreach(p => __obj.updateDynamic("getBaseParams")(p.toJsFn))
-    getEnableSubmissionForm.foreach(p => __obj.updateDynamic("getEnableSubmissionForm")(p.toJsFn))
-    getEnctype.foreach(p => __obj.updateDynamic("getEnctype")(p.toJsFn))
-    getMethod.foreach(p => __obj.updateDynamic("getMethod")(p.toJsFn))
-    getMultipartDetection.foreach(p => __obj.updateDynamic("getMultipartDetection")(p.toJsFn))
-    getParamOrder.foreach(p => __obj.updateDynamic("getParamOrder")(p.toJsFn))
-    getParamsAsHash.foreach(p => __obj.updateDynamic("getParamsAsHash")(p.toJsFn))
-    getStandardSubmit.foreach(p => __obj.updateDynamic("getStandardSubmit")(p.toJsFn))
-    getSubmitOnAction.foreach(p => __obj.updateDynamic("getSubmitOnAction")(p.toJsFn))
-    getTimeout.foreach(p => __obj.updateDynamic("getTimeout")(p.toJsFn))
-    getTrackResetOnLoad.foreach(p => __obj.updateDynamic("getTrackResetOnLoad")(p.toJsFn))
-    getUrl.foreach(p => __obj.updateDynamic("getUrl")(p.toJsFn))
-    if (getValues != null) __obj.updateDynamic("getValues")(js.Any.fromFunction2((t0: /* enabled */ js.UndefOr[scala.Boolean], t1: /* all */ js.UndefOr[scala.Boolean]) => getValues(t0, t1).runNow()))
-    hideMask.foreach(p => __obj.updateDynamic("hideMask")(p.toJsFn))
-    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1((t0: /* options */ js.UndefOr[js.Any]) => load(t0).runNow()))
-    if (loadModel != null) __obj.updateDynamic("loadModel")(js.Any.fromFunction1((t0: /* record */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.data.IModel]) => loadModel(t0).runNow()))
-    if (loadRecord != null) __obj.updateDynamic("loadRecord")(js.Any.fromFunction1((t0: /* record */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.data.IModel]) => loadRecord(t0).runNow()))
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipartDetection)) __obj.updateDynamic("multipartDetection")(multipartDetection.asInstanceOf[js.Any])
-    if (paramOrder != null) __obj.updateDynamic("paramOrder")(paramOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(paramsAsHash)) __obj.updateDynamic("paramsAsHash")(paramsAsHash.asInstanceOf[js.Any])
-    reset.foreach(p => __obj.updateDynamic("reset")(p.toJsFn))
-    if (setApi != null) __obj.updateDynamic("setApi")(js.Any.fromFunction1((t0: /* api */ js.UndefOr[js.Any]) => setApi(t0).runNow()))
-    if (setBaseParams != null) __obj.updateDynamic("setBaseParams")(js.Any.fromFunction1((t0: /* baseParams */ js.UndefOr[js.Any]) => setBaseParams(t0).runNow()))
-    if (setEnableSubmissionForm != null) __obj.updateDynamic("setEnableSubmissionForm")(js.Any.fromFunction1((t0: /* enableSubmissionForm */ js.UndefOr[scala.Boolean]) => setEnableSubmissionForm(t0).runNow()))
-    if (setEnctype != null) __obj.updateDynamic("setEnctype")(js.Any.fromFunction1((t0: /* enctype */ js.UndefOr[js.Any]) => setEnctype(t0).runNow()))
-    if (setMethod != null) __obj.updateDynamic("setMethod")(js.Any.fromFunction1((t0: /* method */ js.UndefOr[java.lang.String]) => setMethod(t0).runNow()))
-    if (setMultipartDetection != null) __obj.updateDynamic("setMultipartDetection")(js.Any.fromFunction1((t0: /* multipartDetection */ js.UndefOr[scala.Boolean]) => setMultipartDetection(t0).runNow()))
-    if (setParamOrder != null) __obj.updateDynamic("setParamOrder")(js.Any.fromFunction1((t0: /* paramOrder */ js.UndefOr[js.Any]) => setParamOrder(t0).runNow()))
-    if (setParamsAsHash != null) __obj.updateDynamic("setParamsAsHash")(js.Any.fromFunction1((t0: /* paramsAsHash */ js.UndefOr[scala.Boolean]) => setParamsAsHash(t0).runNow()))
-    if (setStandardSubmit != null) __obj.updateDynamic("setStandardSubmit")(js.Any.fromFunction1((t0: /* standardSubmit */ js.UndefOr[scala.Boolean]) => setStandardSubmit(t0).runNow()))
-    if (setSubmitOnAction != null) __obj.updateDynamic("setSubmitOnAction")(js.Any.fromFunction1((t0: /* submitOnAction */ js.UndefOr[js.Any]) => setSubmitOnAction(t0).runNow()))
-    if (setTimeout != null) __obj.updateDynamic("setTimeout")(js.Any.fromFunction1((t0: /* timeout */ js.UndefOr[scala.Double]) => setTimeout(t0).runNow()))
-    if (setTrackResetOnLoad != null) __obj.updateDynamic("setTrackResetOnLoad")(js.Any.fromFunction1((t0: /* trackResetOnLoad */ js.UndefOr[scala.Boolean]) => setTrackResetOnLoad(t0).runNow()))
-    if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1((t0: /* url */ js.UndefOr[java.lang.String]) => setUrl(t0).runNow()))
-    if (setValues != null) __obj.updateDynamic("setValues")(js.Any.fromFunction1((t0: /* values */ js.UndefOr[js.Any]) => setValues(t0).runNow()))
-    if (showMask != null) __obj.updateDynamic("showMask")(js.Any.fromFunction2((t0: /* cfg */ js.UndefOr[js.Any], t1: /* target */ js.UndefOr[js.Any]) => showMask(t0, t1).runNow()))
-    if (!js.isUndefined(standardSubmit)) __obj.updateDynamic("standardSubmit")(standardSubmit.asInstanceOf[js.Any])
-    if (submit != null) __obj.updateDynamic("submit")(js.Any.fromFunction1((t0: /* options */ js.UndefOr[js.Any]) => submit(t0).runNow()))
-    if (submitOnAction != null) __obj.updateDynamic("submitOnAction")(submitOnAction.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackResetOnLoad)) __obj.updateDynamic("trackResetOnLoad")(trackResetOnLoad.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (waitMsgTarget != null) __obj.updateDynamic("waitMsgTarget")(waitMsgTarget.asInstanceOf[js.Any])
-    if (waitTpl != null) __obj.updateDynamic("waitTpl")(waitTpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanel]
   }
+  
+  extension [Self <: IPanel](x: Self) {
+    
+    inline def setApi(value: Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    
+    inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
+    
+    inline def setBaseParams(value: Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
+    
+    inline def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
+    
+    inline def setDoSetDisabled(value: /* newDisabled */ js.UndefOr[Any] => IPanel): Self = StObject.set(x, "doSetDisabled", js.Any.fromFunction1(value))
+    
+    inline def setDoSetDisabledUndefined: Self = StObject.set(x, "doSetDisabled", js.undefined)
+    
+    inline def setEnableSubmissionForm(value: Boolean): Self = StObject.set(x, "enableSubmissionForm", value.asInstanceOf[js.Any])
+    
+    inline def setEnableSubmissionFormUndefined: Self = StObject.set(x, "enableSubmissionForm", js.undefined)
+    
+    inline def setEnctype(value: Any): Self = StObject.set(x, "enctype", value.asInstanceOf[js.Any])
+    
+    inline def setEnctypeUndefined: Self = StObject.set(x, "enctype", js.undefined)
+    
+    inline def setGetApi(value: CallbackTo[Any]): Self = StObject.set(x, "getApi", value.toJsFn)
+    
+    inline def setGetApiUndefined: Self = StObject.set(x, "getApi", js.undefined)
+    
+    inline def setGetBaseParams(value: CallbackTo[Any]): Self = StObject.set(x, "getBaseParams", value.toJsFn)
+    
+    inline def setGetBaseParamsUndefined: Self = StObject.set(x, "getBaseParams", js.undefined)
+    
+    inline def setGetEnableSubmissionForm(value: CallbackTo[Boolean]): Self = StObject.set(x, "getEnableSubmissionForm", value.toJsFn)
+    
+    inline def setGetEnableSubmissionFormUndefined: Self = StObject.set(x, "getEnableSubmissionForm", js.undefined)
+    
+    inline def setGetEnctype(value: CallbackTo[Any]): Self = StObject.set(x, "getEnctype", value.toJsFn)
+    
+    inline def setGetEnctypeUndefined: Self = StObject.set(x, "getEnctype", js.undefined)
+    
+    inline def setGetMethod(value: CallbackTo[String]): Self = StObject.set(x, "getMethod", value.toJsFn)
+    
+    inline def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
+    
+    inline def setGetMultipartDetection(value: CallbackTo[Boolean]): Self = StObject.set(x, "getMultipartDetection", value.toJsFn)
+    
+    inline def setGetMultipartDetectionUndefined: Self = StObject.set(x, "getMultipartDetection", js.undefined)
+    
+    inline def setGetParamOrder(value: CallbackTo[Any]): Self = StObject.set(x, "getParamOrder", value.toJsFn)
+    
+    inline def setGetParamOrderUndefined: Self = StObject.set(x, "getParamOrder", js.undefined)
+    
+    inline def setGetParamsAsHash(value: CallbackTo[Boolean]): Self = StObject.set(x, "getParamsAsHash", value.toJsFn)
+    
+    inline def setGetParamsAsHashUndefined: Self = StObject.set(x, "getParamsAsHash", js.undefined)
+    
+    inline def setGetStandardSubmit(value: CallbackTo[Boolean]): Self = StObject.set(x, "getStandardSubmit", value.toJsFn)
+    
+    inline def setGetStandardSubmitUndefined: Self = StObject.set(x, "getStandardSubmit", js.undefined)
+    
+    inline def setGetSubmitOnAction(value: CallbackTo[Any]): Self = StObject.set(x, "getSubmitOnAction", value.toJsFn)
+    
+    inline def setGetSubmitOnActionUndefined: Self = StObject.set(x, "getSubmitOnAction", js.undefined)
+    
+    inline def setGetTimeout(value: CallbackTo[Double]): Self = StObject.set(x, "getTimeout", value.toJsFn)
+    
+    inline def setGetTimeoutUndefined: Self = StObject.set(x, "getTimeout", js.undefined)
+    
+    inline def setGetTrackResetOnLoad(value: CallbackTo[Boolean]): Self = StObject.set(x, "getTrackResetOnLoad", value.toJsFn)
+    
+    inline def setGetTrackResetOnLoadUndefined: Self = StObject.set(x, "getTrackResetOnLoad", js.undefined)
+    
+    inline def setGetUrl(value: CallbackTo[String]): Self = StObject.set(x, "getUrl", value.toJsFn)
+    
+    inline def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
+    
+    inline def setGetValues(value: (/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "getValues", js.Any.fromFunction2(value))
+    
+    inline def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
+    
+    inline def setHideMask(value: CallbackTo[IPanel]): Self = StObject.set(x, "hideMask", value.toJsFn)
+    
+    inline def setHideMaskUndefined: Self = StObject.set(x, "hideMask", js.undefined)
+    
+    inline def setLoad(value: /* options */ js.UndefOr[Any] => IConnection): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    
+    inline def setLoadModel(value: /* record */ js.UndefOr[IModel] => IPanel): Self = StObject.set(x, "loadModel", js.Any.fromFunction1(value))
+    
+    inline def setLoadModelUndefined: Self = StObject.set(x, "loadModel", js.undefined)
+    
+    inline def setLoadRecord(value: /* record */ js.UndefOr[IModel] => IPanel): Self = StObject.set(x, "loadRecord", js.Any.fromFunction1(value))
+    
+    inline def setLoadRecordUndefined: Self = StObject.set(x, "loadRecord", js.undefined)
+    
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setMultipartDetection(value: Boolean): Self = StObject.set(x, "multipartDetection", value.asInstanceOf[js.Any])
+    
+    inline def setMultipartDetectionUndefined: Self = StObject.set(x, "multipartDetection", js.undefined)
+    
+    inline def setParamOrder(value: Any): Self = StObject.set(x, "paramOrder", value.asInstanceOf[js.Any])
+    
+    inline def setParamOrderUndefined: Self = StObject.set(x, "paramOrder", js.undefined)
+    
+    inline def setParamsAsHash(value: Boolean): Self = StObject.set(x, "paramsAsHash", value.asInstanceOf[js.Any])
+    
+    inline def setParamsAsHashUndefined: Self = StObject.set(x, "paramsAsHash", js.undefined)
+    
+    inline def setReset(value: CallbackTo[IPanel]): Self = StObject.set(x, "reset", value.toJsFn)
+    
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    
+    inline def setSetApi(value: /* api */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setApi", js.Any.fromFunction1((t0: /* api */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetApiUndefined: Self = StObject.set(x, "setApi", js.undefined)
+    
+    inline def setSetBaseParams(value: /* baseParams */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setBaseParams", js.Any.fromFunction1((t0: /* baseParams */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetBaseParamsUndefined: Self = StObject.set(x, "setBaseParams", js.undefined)
+    
+    inline def setSetEnableSubmissionForm(value: /* enableSubmissionForm */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setEnableSubmissionForm", js.Any.fromFunction1((t0: /* enableSubmissionForm */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetEnableSubmissionFormUndefined: Self = StObject.set(x, "setEnableSubmissionForm", js.undefined)
+    
+    inline def setSetEnctype(value: /* enctype */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setEnctype", js.Any.fromFunction1((t0: /* enctype */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetEnctypeUndefined: Self = StObject.set(x, "setEnctype", js.undefined)
+    
+    inline def setSetMethod(value: /* method */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setMethod", js.Any.fromFunction1((t0: /* method */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetMethodUndefined: Self = StObject.set(x, "setMethod", js.undefined)
+    
+    inline def setSetMultipartDetection(value: /* multipartDetection */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setMultipartDetection", js.Any.fromFunction1((t0: /* multipartDetection */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetMultipartDetectionUndefined: Self = StObject.set(x, "setMultipartDetection", js.undefined)
+    
+    inline def setSetParamOrder(value: /* paramOrder */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setParamOrder", js.Any.fromFunction1((t0: /* paramOrder */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetParamOrderUndefined: Self = StObject.set(x, "setParamOrder", js.undefined)
+    
+    inline def setSetParamsAsHash(value: /* paramsAsHash */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setParamsAsHash", js.Any.fromFunction1((t0: /* paramsAsHash */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetParamsAsHashUndefined: Self = StObject.set(x, "setParamsAsHash", js.undefined)
+    
+    inline def setSetStandardSubmit(value: /* standardSubmit */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setStandardSubmit", js.Any.fromFunction1((t0: /* standardSubmit */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetStandardSubmitUndefined: Self = StObject.set(x, "setStandardSubmit", js.undefined)
+    
+    inline def setSetSubmitOnAction(value: /* submitOnAction */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setSubmitOnAction", js.Any.fromFunction1((t0: /* submitOnAction */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetSubmitOnActionUndefined: Self = StObject.set(x, "setSubmitOnAction", js.undefined)
+    
+    inline def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Callback): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1((t0: /* timeout */ js.UndefOr[Double]) => value(t0).runNow()))
+    
+    inline def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
+    
+    inline def setSetTrackResetOnLoad(value: /* trackResetOnLoad */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setTrackResetOnLoad", js.Any.fromFunction1((t0: /* trackResetOnLoad */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetTrackResetOnLoadUndefined: Self = StObject.set(x, "setTrackResetOnLoad", js.undefined)
+    
+    inline def setSetUrl(value: /* url */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setUrl", js.Any.fromFunction1((t0: /* url */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
+    
+    inline def setSetValues(value: /* values */ js.UndefOr[Any] => IPanel): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
+    
+    inline def setSetValuesUndefined: Self = StObject.set(x, "setValues", js.undefined)
+    
+    inline def setShowMask(value: (/* cfg */ js.UndefOr[Any], /* target */ js.UndefOr[Any]) => IPanel): Self = StObject.set(x, "showMask", js.Any.fromFunction2(value))
+    
+    inline def setShowMaskUndefined: Self = StObject.set(x, "showMask", js.undefined)
+    
+    inline def setStandardSubmit(value: Boolean): Self = StObject.set(x, "standardSubmit", value.asInstanceOf[js.Any])
+    
+    inline def setStandardSubmitUndefined: Self = StObject.set(x, "standardSubmit", js.undefined)
+    
+    inline def setSubmit(value: /* options */ js.UndefOr[Any] => IConnection): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
+    
+    inline def setSubmitOnAction(value: Any): Self = StObject.set(x, "submitOnAction", value.asInstanceOf[js.Any])
+    
+    inline def setSubmitOnActionUndefined: Self = StObject.set(x, "submitOnAction", js.undefined)
+    
+    inline def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setTrackResetOnLoad(value: Boolean): Self = StObject.set(x, "trackResetOnLoad", value.asInstanceOf[js.Any])
+    
+    inline def setTrackResetOnLoadUndefined: Self = StObject.set(x, "trackResetOnLoad", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setWaitMsgTarget(value: IElement): Self = StObject.set(x, "waitMsgTarget", value.asInstanceOf[js.Any])
+    
+    inline def setWaitMsgTargetUndefined: Self = StObject.set(x, "waitMsgTarget", js.undefined)
+    
+    inline def setWaitTpl(value: Any): Self = StObject.set(x, "waitTpl", value.asInstanceOf[js.Any])
+    
+    inline def setWaitTplUndefined: Self = StObject.set(x, "waitTpl", js.undefined)
+  }
 }
-

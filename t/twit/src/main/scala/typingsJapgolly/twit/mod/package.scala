@@ -1,15 +1,11 @@
-package typingsJapgolly.twit
+package typingsJapgolly.twit.mod
 
+import typingsJapgolly.node.httpMod.IncomingMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Callback = js.Function3[
-    /* err */ js.Error, 
-    /* result */ typingsJapgolly.twit.mod.Response, 
-    /* response */ typingsJapgolly.node.httpMod.IncomingMessage, 
-    scala.Unit
-  ]
-  type Response = js.Object
-}
+
+type Callback = js.Function3[/* err */ js.Error, /* result */ Response, /* response */ IncomingMessage, Unit]
+
+type Response = js.Object

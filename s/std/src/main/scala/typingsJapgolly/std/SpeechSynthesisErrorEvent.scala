@@ -1,21 +1,14 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpeechSynthesisErrorEvent extends SpeechSynthesisEvent {
+trait SpeechSynthesisErrorEvent
+  extends StObject
+     with SpeechSynthesisEvent {
+  
+  /* standard dom */
   val error: SpeechSynthesisErrorCode = js.native
 }
-
-@JSGlobal("SpeechSynthesisErrorEvent")
-@js.native
-object SpeechSynthesisErrorEvent
-  extends Instantiable2[
-      /* type */ java.lang.String, 
-      /* eventInitDict */ SpeechSynthesisErrorEventInit, 
-      SpeechSynthesisErrorEvent
-    ]
-

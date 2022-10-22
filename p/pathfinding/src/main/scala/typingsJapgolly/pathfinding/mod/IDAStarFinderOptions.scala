@@ -1,31 +1,32 @@
 package typingsJapgolly.pathfinding.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDAStarFinderOptions extends FinderOptions {
+trait IDAStarFinderOptions
+  extends StObject
+     with FinderOptions {
+  
   var timeLimit: js.UndefOr[Double] = js.undefined
+  
   var trackRecursion: js.UndefOr[Boolean] = js.undefined
 }
-
 object IDAStarFinderOptions {
-  @scala.inline
-  def apply(
-    diagonalMovement: DiagonalMovement = null,
-    heuristic: (/* dx */ Double, /* dy */ Double) => CallbackTo[Double] = null,
-    timeLimit: Int | Double = null,
-    trackRecursion: js.UndefOr[Boolean] = js.undefined,
-    weight: Int | Double = null
-  ): IDAStarFinderOptions = {
+  
+  inline def apply(): IDAStarFinderOptions = {
     val __obj = js.Dynamic.literal()
-    if (diagonalMovement != null) __obj.updateDynamic("diagonalMovement")(diagonalMovement.asInstanceOf[js.Any])
-    if (heuristic != null) __obj.updateDynamic("heuristic")(js.Any.fromFunction2((t0: /* dx */ scala.Double, t1: /* dy */ scala.Double) => heuristic(t0, t1).runNow()))
-    if (timeLimit != null) __obj.updateDynamic("timeLimit")(timeLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackRecursion)) __obj.updateDynamic("trackRecursion")(trackRecursion.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDAStarFinderOptions]
   }
+  
+  extension [Self <: IDAStarFinderOptions](x: Self) {
+    
+    inline def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
+    
+    inline def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
+    
+    inline def setTrackRecursion(value: Boolean): Self = StObject.set(x, "trackRecursion", value.asInstanceOf[js.Any])
+    
+    inline def setTrackRecursionUndefined: Self = StObject.set(x, "trackRecursion", js.undefined)
+  }
 }
-

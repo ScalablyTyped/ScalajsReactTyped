@@ -1,20 +1,10 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an object containing service static functions and properties related to DevExpress Bootstrap controls' functionality.
   */
-@JSGlobal("BootstrapClientUtils")
-@js.native
-class BootstrapClientUtils () extends js.Object
-
-/* static members */
-@JSGlobal("BootstrapClientUtils")
-@js.native
-object BootstrapClientUtils extends js.Object {
-  def UpdateDefaultStyles(): Unit = js.native
-}
-
+trait BootstrapClientUtils extends StObject

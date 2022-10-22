@@ -1,26 +1,34 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait predominantCategories extends js.Object {
+/**
+  * Function for generating category statistics for a [predominance](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html) renderer.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html)
+  */
+trait predominantCategories extends StObject {
+  
   /**
     * Determines predominant categories for a layer based on a given set of competing numeric fields and returns the number of features belonging to each category.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-predominantCategories.html#predominantCategories)
-    *
-    * @param params See the table below for details of each parameter.
-    * @param params.layer The layer from which to generate predominant categories for the given set of `fields`.
-    * @param params.fields An array of numeric fields from which to determine predominant categories. The fields must all be number fields and they must be competing or complementary (e.g. population totals by language spoken at home, or harvested acres by crop type, or the results of an election by candidate or party).
-    * @param params.view The view in which features will be rendered.
-    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#predominantCategories)
     */
   def predominantCategories(params: predominantCategoriesPredominantCategoriesParams): js.Promise[PredominantCategoriesResult]
 }
-
-@JSGlobal("__esri.predominantCategories")
-@js.native
-object predominantCategories extends TopLevel[predominantCategories]
-
+object predominantCategories {
+  
+  inline def apply(
+    predominantCategories: predominantCategoriesPredominantCategoriesParams => js.Promise[PredominantCategoriesResult]
+  ): predominantCategories = {
+    val __obj = js.Dynamic.literal(predominantCategories = js.Any.fromFunction1(predominantCategories))
+    __obj.asInstanceOf[predominantCategories]
+  }
+  
+  extension [Self <: predominantCategories](x: Self) {
+    
+    inline def setPredominantCategories(value: predominantCategoriesPredominantCategoriesParams => js.Promise[PredominantCategoriesResult]): Self = StObject.set(x, "predominantCategories", js.Any.fromFunction1(value))
+  }
+}

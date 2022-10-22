@@ -1,42 +1,31 @@
 package typingsJapgolly.storybookReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.storybookReactNative.navigationMod.Props
-import typingsJapgolly.storybookReactNative.navigationMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.storybookReactNative.distPreviewComponentsOnDeviceUINavigationMod.Props
+import typingsJapgolly.storybookReactNative.distPreviewComponentsOnDeviceUINavigationMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Navigation {
-  def apply(
-    tabOpen: Double,
-    onChangeTab: Double => Callback,
-    initialUiVisible: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, default, Unit, Props] = {
-    val __obj = js.Dynamic.literal(tabOpen = tabOpen.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onChangeTab")(js.Any.fromFunction1((t0: scala.Double) => onChangeTab(t0).runNow()))
-    if (!js.isUndefined(initialUiVisible)) __obj.updateDynamic("initialUiVisible")(initialUiVisible.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.storybookReactNative.navigationMod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.storybookReactNative.navigationMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.storybookReactNative.navigationMod.Props])(children: _*)
+  inline def apply(onChangeTab: Double => Callback, tabOpen: Double): Builder = {
+    val __props = js.Dynamic.literal(onChangeTab = js.Any.fromFunction1((t0: Double) => onChangeTab(t0).runNow()), tabOpen = tabOpen.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[Props]))
   }
+  
   @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/navigation", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def initialUiVisible(value: Boolean): this.type = set("initialUiVisible", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

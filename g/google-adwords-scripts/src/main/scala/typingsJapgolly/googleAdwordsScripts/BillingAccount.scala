@@ -1,32 +1,41 @@
 package typingsJapgolly.googleAdwordsScripts
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Budget Orders
-trait BillingAccount extends js.Object {
+trait BillingAccount extends StObject {
+  
   def getId(): Double
+  
   def getName(): String
+  
   def getPrimaryBillingId(): String
+  
   def getSecondaryBillingId(): String
 }
-
 object BillingAccount {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getId: CallbackTo[Double],
     getName: CallbackTo[String],
     getPrimaryBillingId: CallbackTo[String],
     getSecondaryBillingId: CallbackTo[String]
   ): BillingAccount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId.toJsFn)
-    __obj.updateDynamic("getName")(getName.toJsFn)
-    __obj.updateDynamic("getPrimaryBillingId")(getPrimaryBillingId.toJsFn)
-    __obj.updateDynamic("getSecondaryBillingId")(getSecondaryBillingId.toJsFn)
+    val __obj = js.Dynamic.literal(getId = getId.toJsFn, getName = getName.toJsFn, getPrimaryBillingId = getPrimaryBillingId.toJsFn, getSecondaryBillingId = getSecondaryBillingId.toJsFn)
     __obj.asInstanceOf[BillingAccount]
   }
+  
+  extension [Self <: BillingAccount](x: Self) {
+    
+    inline def setGetId(value: CallbackTo[Double]): Self = StObject.set(x, "getId", value.toJsFn)
+    
+    inline def setGetName(value: CallbackTo[String]): Self = StObject.set(x, "getName", value.toJsFn)
+    
+    inline def setGetPrimaryBillingId(value: CallbackTo[String]): Self = StObject.set(x, "getPrimaryBillingId", value.toJsFn)
+    
+    inline def setGetSecondaryBillingId(value: CallbackTo[String]): Self = StObject.set(x, "getSecondaryBillingId", value.toJsFn)
+  }
 }
-

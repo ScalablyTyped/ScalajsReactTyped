@@ -1,33 +1,58 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.auto
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.list
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.preview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AttachmentsContentProperties extends ContentProperties {
+trait AttachmentsContentProperties
+  extends StObject
+     with ContentProperties {
+  
   /**
-    * An array of [AttachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html) objects used to display within the popup's content.
+    * Describes the attachment's content in detail.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#attachmentInfos)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#description)
     */
-  var attachmentInfos: js.UndefOr[AttachmentInfoProperties] = js.undefined
+  var description: js.UndefOr[String] = js.undefined
+  
   /**
-    * A string value indicating how to display the attachment.  If `list` is specified, attachments show as links.
+    * A string value indicating how to display an attachment.
+    *
+    * @default "auto"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#displayType)
     */
-  var displayType: js.UndefOr[preview | list] = js.undefined
+  var displayType: js.UndefOr[auto | preview | list] = js.undefined
+  
+  /**
+    * A heading indicating what the attachment's content represents.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#title)
+    */
+  var title: js.UndefOr[String] = js.undefined
 }
-
 object AttachmentsContentProperties {
-  @scala.inline
-  def apply(attachmentInfos: AttachmentInfoProperties = null, displayType: preview | list = null): AttachmentsContentProperties = {
+  
+  inline def apply(): AttachmentsContentProperties = {
     val __obj = js.Dynamic.literal()
-    if (attachmentInfos != null) __obj.updateDynamic("attachmentInfos")(attachmentInfos.asInstanceOf[js.Any])
-    if (displayType != null) __obj.updateDynamic("displayType")(displayType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentsContentProperties]
   }
+  
+  extension [Self <: AttachmentsContentProperties](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDisplayType(value: auto | preview | list): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayTypeUndefined: Self = StObject.set(x, "displayType", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

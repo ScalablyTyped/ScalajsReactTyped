@@ -1,42 +1,38 @@
 package typingsJapgolly.babelTypes.mod
 
-import typingsJapgolly.babelTypes.AnonCooked
+import typingsJapgolly.babelTypes.anon.Cooked
 import typingsJapgolly.babelTypes.babelTypesStrings.TemplateElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TemplateElement_
-  extends BaseNode
-     with _Node {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait TemplateElement_
+  extends StObject
+     with BaseNode
+     with Standardized {
+  
   var tail: Boolean
+  
   @JSName("type")
   var type_TemplateElement_ : TemplateElement
-  var value: AnonCooked
+  
+  var value: Cooked
 }
-
 object TemplateElement_ {
-  @scala.inline
-  def apply(
-    tail: Boolean,
-    `type`: TemplateElement,
-    value: AnonCooked,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): TemplateElement_ = {
-    val __obj = js.Dynamic.literal(tail = tail.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(tail: Boolean, value: Cooked): TemplateElement_ = {
+    val __obj = js.Dynamic.literal(tail = tail.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TemplateElement")
     __obj.asInstanceOf[TemplateElement_]
   }
+  
+  extension [Self <: TemplateElement_](x: Self) {
+    
+    inline def setTail(value: Boolean): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: TemplateElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Cooked): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

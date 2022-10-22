@@ -1,63 +1,59 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4106`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4112`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4113`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4136`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4139`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4149`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4155`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4156`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4157`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4164`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4165`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1000`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4106`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4112`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4113`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4136`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4139`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4149`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4155`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4156`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4157`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4164`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4165`
+import typingsJapgolly.activexExcel.activexExcelInts.`1000`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4106`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4112`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4113`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4136`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4139`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4149`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4155`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4156`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4157`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1000`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4164`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4165`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4106`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4112`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4113`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4136`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4139`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4149`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4155`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4156`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4157`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1000`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4164`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4165`
 */
-trait XlConsolidationFunction extends js.Object
-
+trait XlConsolidationFunction extends StObject
 object XlConsolidationFunction {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlAverage: `-4106` = this.cast(-4106)
-  @scala.inline
-  def xlCount: `-4112` = this.cast(-4112)
-  @scala.inline
-  def xlCountNums: `-4113` = this.cast(-4113)
-  @scala.inline
-  def xlMax: `-4136` = this.cast(-4136)
-  @scala.inline
-  def xlMin: `-4139` = this.cast(-4139)
-  @scala.inline
-  def xlProduct: `-4149` = this.cast(-4149)
-  @scala.inline
-  def xlStDev: `-4155` = this.cast(-4155)
-  @scala.inline
-  def xlStDevP: `-4156` = this.cast(-4156)
-  @scala.inline
-  def xlSum: `-4157` = this.cast(-4157)
-  @scala.inline
-  def xlUnknown: `1000` = this.cast(1000)
-  @scala.inline
-  def xlVar: `-4164` = this.cast(-4164)
-  @scala.inline
-  def xlVarP: `-4165` = this.cast(-4165)
+  
+  inline def xlAverage: `-4106` = -4106.asInstanceOf[`-4106`]
+  
+  inline def xlCount: `-4112` = -4112.asInstanceOf[`-4112`]
+  
+  inline def xlCountNums: `-4113` = -4113.asInstanceOf[`-4113`]
+  
+  inline def xlMax: `-4136` = -4136.asInstanceOf[`-4136`]
+  
+  inline def xlMin: `-4139` = -4139.asInstanceOf[`-4139`]
+  
+  inline def xlProduct: `-4149` = -4149.asInstanceOf[`-4149`]
+  
+  inline def xlStDev: `-4155` = -4155.asInstanceOf[`-4155`]
+  
+  inline def xlStDevP: `-4156` = -4156.asInstanceOf[`-4156`]
+  
+  inline def xlSum: `-4157` = -4157.asInstanceOf[`-4157`]
+  
+  inline def xlUnknown: `1000` = 1000.asInstanceOf[`1000`]
+  
+  inline def xlVar: `-4164` = -4164.asInstanceOf[`-4164`]
+  
+  inline def xlVarP: `-4165` = -4165.asInstanceOf[`-4165`]
 }
-

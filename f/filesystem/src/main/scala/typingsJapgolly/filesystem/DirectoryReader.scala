@@ -1,8 +1,8 @@
 package typingsJapgolly.filesystem
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface lets a user list files and directories in a directory. If there are no additions to or deletions from a directory between the first and last call to readEntries, and no errors occur, then:
@@ -14,7 +14,8 @@ import scala.scalajs.js.annotation._
   * </ul>
   */
 @js.native
-trait DirectoryReader extends js.Object {
+trait DirectoryReader extends StObject {
+  
   /**
     * Read the next block of entries from this directory.
     * @param successCallback Called once per successful call to readEntries to deliver the next previously-unreported set of Entries in the associated Directory. If all Entries have already been returned from previous invocations of readEntries, successCallback must be called with a zero-length array as an argument.
@@ -23,4 +24,3 @@ trait DirectoryReader extends js.Object {
   def readEntries(successCallback: EntriesCallback): Unit = js.native
   def readEntries(successCallback: EntriesCallback, errorCallback: ErrorCallback): Unit = js.native
 }
-

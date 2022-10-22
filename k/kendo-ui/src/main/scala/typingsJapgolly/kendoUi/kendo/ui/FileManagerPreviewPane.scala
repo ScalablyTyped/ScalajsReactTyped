@@ -1,30 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileManagerPreviewPane extends js.Object {
-  var metaFields: js.UndefOr[js.Any] = js.undefined
+trait FileManagerPreviewPane extends StObject {
+  
+  var metaFields: js.UndefOr[Any] = js.undefined
+  
   var multipleFilesTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var noFileTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var singleFileTemplate: js.UndefOr[String | js.Function] = js.undefined
 }
-
 object FileManagerPreviewPane {
-  @scala.inline
-  def apply(
-    metaFields: js.Any = null,
-    multipleFilesTemplate: String | js.Function = null,
-    noFileTemplate: String | js.Function = null,
-    singleFileTemplate: String | js.Function = null
-  ): FileManagerPreviewPane = {
+  
+  inline def apply(): FileManagerPreviewPane = {
     val __obj = js.Dynamic.literal()
-    if (metaFields != null) __obj.updateDynamic("metaFields")(metaFields.asInstanceOf[js.Any])
-    if (multipleFilesTemplate != null) __obj.updateDynamic("multipleFilesTemplate")(multipleFilesTemplate.asInstanceOf[js.Any])
-    if (noFileTemplate != null) __obj.updateDynamic("noFileTemplate")(noFileTemplate.asInstanceOf[js.Any])
-    if (singleFileTemplate != null) __obj.updateDynamic("singleFileTemplate")(singleFileTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileManagerPreviewPane]
   }
+  
+  extension [Self <: FileManagerPreviewPane](x: Self) {
+    
+    inline def setMetaFields(value: Any): Self = StObject.set(x, "metaFields", value.asInstanceOf[js.Any])
+    
+    inline def setMetaFieldsUndefined: Self = StObject.set(x, "metaFields", js.undefined)
+    
+    inline def setMultipleFilesTemplate(value: String | js.Function): Self = StObject.set(x, "multipleFilesTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleFilesTemplateUndefined: Self = StObject.set(x, "multipleFilesTemplate", js.undefined)
+    
+    inline def setNoFileTemplate(value: String | js.Function): Self = StObject.set(x, "noFileTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setNoFileTemplateUndefined: Self = StObject.set(x, "noFileTemplate", js.undefined)
+    
+    inline def setSingleFileTemplate(value: String | js.Function): Self = StObject.set(x, "singleFileTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setSingleFileTemplateUndefined: Self = StObject.set(x, "singleFileTemplate", js.undefined)
+  }
 }
-

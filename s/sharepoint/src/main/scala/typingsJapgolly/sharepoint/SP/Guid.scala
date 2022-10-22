@@ -1,24 +1,15 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.Guid")
 @js.native
-class Guid protected () extends js.Object {
-  def this(guidText: String) = this()
+trait Guid extends StObject {
+  
   def ToSerialized(): String = js.native
+  
   def equals(uuid: Guid): Boolean = js.native
+  
   def toString(format: String): String = js.native
 }
-
-/* static members */
-@JSGlobal("SP.Guid")
-@js.native
-object Guid extends js.Object {
-  def get_empty(): Guid = js.native
-  def isValid(uuid: String): Boolean = js.native
-  def newGuid(): Guid = js.native
-}
-

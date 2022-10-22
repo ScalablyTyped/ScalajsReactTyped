@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait QuickLaunchOptions extends js.Object
-
+sealed trait QuickLaunchOptions extends StObject
 @JSGlobal("SP.QuickLaunchOptions")
 @js.native
-object QuickLaunchOptions extends js.Object {
-  @js.native
-  sealed trait defaultValue extends QuickLaunchOptions
+object QuickLaunchOptions extends StObject {
   
   @js.native
-  sealed trait off extends QuickLaunchOptions
+  sealed trait defaultValue
+    extends StObject
+       with QuickLaunchOptions
   
   @js.native
-  sealed trait on extends QuickLaunchOptions
+  sealed trait off
+    extends StObject
+       with QuickLaunchOptions
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[QuickLaunchOptions with Double] = js.native
-  /* 2 */ @js.native
-  object defaultValue extends TopLevel[defaultValue with Double]
-  
-  /* 0 */ @js.native
-  object off extends TopLevel[off with Double]
-  
-  /* 1 */ @js.native
-  object on extends TopLevel[on with Double]
-  
+  @js.native
+  sealed trait on
+    extends StObject
+       with QuickLaunchOptions
 }
-

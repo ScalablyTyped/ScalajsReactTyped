@@ -1,16 +1,16 @@
 package typingsJapgolly.kiiCloudSdk.KiiCloud
 
-import typingsJapgolly.kiiCloudSdk.Anon26
+import typingsJapgolly.kiiCloudSdk.anon.`24`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a server side code entry in KiiCloud.
   */
-@JSGlobal("KiiCloud.KiiServerCodeEntry")
 @js.native
-class KiiServerCodeEntry () extends js.Object {
+trait KiiServerCodeEntry extends StObject {
+  
   /**
     * Execute this server code entry.<br>
     *  If argument is an empty object or not type of Object, callbacks.failure or reject callback of promise will be called.<br>
@@ -78,7 +78,8 @@ class KiiServerCodeEntry () extends js.Object {
     *     );
     */
   def execute[T](argument: T): js.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
-  def execute[T](argument: T, callbacks: Anon26[T]): js.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
+  def execute[T](argument: T, callbacks: `24`[T]): js.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
+  
   /**
     * Get the entryName of this server code entry.
     *
@@ -86,4 +87,3 @@ class KiiServerCodeEntry () extends js.Object {
     */
   def getEntryName(): String = js.native
 }
-

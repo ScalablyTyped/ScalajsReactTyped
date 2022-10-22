@@ -1,44 +1,35 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Position extends js.Object
-
+sealed trait Position extends StObject
 /**
   * An enumeration of legend positions within a chart.
   */
 @JSGlobal("GoogleAppsScript.Charts.Position")
 @js.native
-object Position extends js.Object {
-  @js.native
-  sealed trait BOTTOM extends Position
+object Position extends StObject {
   
   @js.native
-  sealed trait NONE extends Position
+  sealed trait BOTTOM
+    extends StObject
+       with Position
   
   @js.native
-  sealed trait RIGHT extends Position
+  sealed trait NONE
+    extends StObject
+       with Position
   
   @js.native
-  sealed trait TOP extends Position
+  sealed trait RIGHT
+    extends StObject
+       with Position
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Position with Double] = js.native
-  /* 2 */ @js.native
-  object BOTTOM extends TopLevel[BOTTOM with Double]
-  
-  /* 3 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 1 */ @js.native
-  object RIGHT extends TopLevel[RIGHT with Double]
-  
-  /* 0 */ @js.native
-  object TOP extends TopLevel[TOP with Double]
-  
+  @js.native
+  sealed trait TOP
+    extends StObject
+       with Position
 }
-

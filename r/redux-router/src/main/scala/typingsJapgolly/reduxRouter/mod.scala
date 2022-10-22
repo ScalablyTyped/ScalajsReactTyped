@@ -1,129 +1,250 @@
 package typingsJapgolly.reduxRouter
 
-import japgolly.scalajs.react.raw.React.ComponentClassP
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.history.mod.History
-import typingsJapgolly.history.mod.Location
-import typingsJapgolly.history.mod.LocationState
+import japgolly.scalajs.react.facade.React.Node
 import typingsJapgolly.history.mod.Pathname
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentType
 import typingsJapgolly.react.mod.Context
-import typingsJapgolly.reactRouter.mod.MemoryRouterProps
-import typingsJapgolly.reactRouter.mod.Omit
-import typingsJapgolly.reactRouter.mod.PromptProps
-import typingsJapgolly.reactRouter.mod.RedirectProps
-import typingsJapgolly.reactRouter.mod.RouteComponentProps
-import typingsJapgolly.reactRouter.mod.RouteProps
-import typingsJapgolly.reactRouter.mod.RouterProps
-import typingsJapgolly.reactRouter.mod.StaticContext
-import typingsJapgolly.reactRouter.mod.StaticRouterProps
-import typingsJapgolly.reactRouter.mod.SwitchProps
-import typingsJapgolly.reactRouter.mod.WithRouterProps
-import typingsJapgolly.reactRouter.mod.WithRouterStatics
-import typingsJapgolly.reactRouter.mod.`match`
-import typingsJapgolly.reduxRouter.actionCreatorsMod.ReduxRouterAction
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactRouter.anon.Basename
+import typingsJapgolly.reactRouter.anon.Data
+import typingsJapgolly.reactRouter.anon.Relative
+import typingsJapgolly.reactRouter.anon.Revalidate
+import typingsJapgolly.reactRouter.distLibComponentsMod.AwaitProps
+import typingsJapgolly.reactRouter.distLibComponentsMod.MemoryRouterProps
+import typingsJapgolly.reactRouter.distLibComponentsMod.NavigateProps
+import typingsJapgolly.reactRouter.distLibComponentsMod.OutletProps
+import typingsJapgolly.reactRouter.distLibComponentsMod.RouteProps
+import typingsJapgolly.reactRouter.distLibComponentsMod.RouterProps
+import typingsJapgolly.reactRouter.distLibComponentsMod.RouterProviderProps
+import typingsJapgolly.reactRouter.distLibComponentsMod.RoutesProps
+import typingsJapgolly.reactRouter.distLibContextMod.DataRouterContextObject
+import typingsJapgolly.reactRouter.distLibContextMod.LocationContextObject
+import typingsJapgolly.reactRouter.distLibContextMod.NavigationContextObject
+import typingsJapgolly.reactRouter.distLibContextMod.RouteContextObject
+import typingsJapgolly.reactRouter.distLibContextMod.RouteMatch
+import typingsJapgolly.reactRouter.distLibContextMod.RouteObject
+import typingsJapgolly.reactRouter.distLibHooksMod.NavigateFunction
+import typingsJapgolly.reduxRouter.libActionCreatorsMod.ReduxRouterAction
+import typingsJapgolly.remixRunRouter.anon.PartialLocation
+import typingsJapgolly.remixRunRouter.anon.PartialPath
+import typingsJapgolly.remixRunRouter.distHistoryMod.Action
+import typingsJapgolly.remixRunRouter.distHistoryMod.Location
+import typingsJapgolly.remixRunRouter.distHistoryMod.Path
+import typingsJapgolly.remixRunRouter.distHistoryMod.To
+import typingsJapgolly.remixRunRouter.distRouterMod.Navigation
+import typingsJapgolly.remixRunRouter.distRouterMod.Router
+import typingsJapgolly.remixRunRouter.distRouterMod.RouterState
+import typingsJapgolly.remixRunRouter.distRouterMod.StaticHandlerContext
+import typingsJapgolly.remixRunRouter.distUtilsMod.AgnosticRouteMatch
+import typingsJapgolly.remixRunRouter.distUtilsMod.AgnosticRouteObject
+import typingsJapgolly.remixRunRouter.distUtilsMod.DeferredData
+import typingsJapgolly.remixRunRouter.distUtilsMod.JsonFunction
+import typingsJapgolly.remixRunRouter.distUtilsMod.ParamParseKey
+import typingsJapgolly.remixRunRouter.distUtilsMod.PathMatch
+import typingsJapgolly.remixRunRouter.distUtilsMod.PathPattern
+import typingsJapgolly.remixRunRouter.distUtilsMod.RedirectFunction
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-router", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val reduxReactRouter: js.Any = js.native
-  def go(args: js.Object*): ReduxRouterAction = js.native
-  def goBack(args: js.Object*): ReduxRouterAction = js.native
-  def goForward(args: js.Object*): ReduxRouterAction = js.native
-  def historyAPI(method: js.Any): js.Function1[/* repeated */ js.Object, ReduxRouterAction] = js.native
-  def isActive(pathname: Pathname): Boolean = js.native
-  def isActive(
-    pathname: Pathname,
-    query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ js.Any
-  ): Boolean = js.native
-  def isActive(
-    pathname: Pathname,
-    query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ js.Any,
-    indexOnly: Boolean
-  ): Boolean = js.native
-  def push(args: js.Object*): ReduxRouterAction = js.native
-  def pushState(args: js.Object*): ReduxRouterAction = js.native
-  def replace(args: js.Object*): ReduxRouterAction = js.native
-  def replaceState(args: js.Object*): ReduxRouterAction = js.native
-  def routerStateReducer(state: js.Any, action: js.Any): js.Any = js.native
-  def setState(args: js.Object*): ReduxRouterAction = js.native
+object mod {
+  
+  @JSImport("redux-router", JSImport.Namespace)
   @js.native
-  object ReduxRouter extends js.Object {
-    @js.native
-    class MemoryRouter ()
-      extends Component[MemoryRouterProps, js.Any, js.Any]
+  val ^ : js.Any = js.native
+  
+  object ReduxRouter {
     
+    @JSImport("redux-router", "ReduxRouter")
     @js.native
-    class Prompt ()
-      extends Component[PromptProps, js.Any, js.Any]
+    val ^ : js.Any = js.native
     
+    @JSImport("redux-router", "ReduxRouter.AbortedDeferredError")
     @js.native
-    class Redirect ()
-      extends Component[RedirectProps, js.Any, js.Any]
+    open class AbortedDeferredError ()
+      extends typingsJapgolly.reduxRouter.libReduxRouterMod.default.AbortedDeferredError
     
+    inline def Await(hasChildrenErrorElementResolve: AwaitProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Await")(hasChildrenErrorElementResolve.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    inline def MemoryRouter(hasBasenameChildrenInitialEntriesInitialIndex: MemoryRouterProps): japgolly.scalajs.react.facade.React.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MemoryRouter")(hasBasenameChildrenInitialEntriesInitialIndex.asInstanceOf[js.Any]).asInstanceOf[japgolly.scalajs.react.facade.React.Element]
+    
+    inline def Navigate(hasToReplaceStateRelative: NavigateProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Navigate")(hasToReplaceStateRelative.asInstanceOf[js.Any]).asInstanceOf[Null]
+    
+    @JSImport("redux-router", "ReduxRouter.NavigationType")
     @js.native
-    class Route[T /* <: RouteProps */] ()
-      extends Component[T, js.Any, js.Any]
+    object NavigationType extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: String): js.UndefOr[Action & String] = js.native
+      
+      /* "POP" */ val Pop: typingsJapgolly.remixRunRouter.distHistoryMod.Action.Pop & String = js.native
+      
+      /* "PUSH" */ val Push: typingsJapgolly.remixRunRouter.distHistoryMod.Action.Push & String = js.native
+      
+      /* "REPLACE" */ val Replace: typingsJapgolly.remixRunRouter.distHistoryMod.Action.Replace & String = js.native
+    }
     
+    inline def Outlet(props: OutletProps): japgolly.scalajs.react.facade.React.Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Outlet")(props.asInstanceOf[js.Any]).asInstanceOf[japgolly.scalajs.react.facade.React.Element | Null]
+    
+    inline def Route(_props: RouteProps): japgolly.scalajs.react.facade.React.Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[japgolly.scalajs.react.facade.React.Element | Null]
+    
+    inline def Router(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp: RouterProps): japgolly.scalajs.react.facade.React.Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp.asInstanceOf[js.Any]).asInstanceOf[japgolly.scalajs.react.facade.React.Element | Null]
+    
+    inline def RouterProvider(hasFallbackElementRouter: RouterProviderProps): japgolly.scalajs.react.facade.React.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("RouterProvider")(hasFallbackElementRouter.asInstanceOf[js.Any]).asInstanceOf[japgolly.scalajs.react.facade.React.Element]
+    
+    inline def Routes(hasChildrenLocation: RoutesProps): japgolly.scalajs.react.facade.React.Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Routes")(hasChildrenLocation.asInstanceOf[js.Any]).asInstanceOf[japgolly.scalajs.react.facade.React.Element | Null]
+    
+    @JSImport("redux-router", "ReduxRouter.UNSAFE_DataRouterContext")
     @js.native
-    class Router ()
-      extends Component[RouterProps, js.Any, js.Any]
+    val UNSAFEDataRouterContext: Context[DataRouterContextObject | Null] = js.native
     
+    @JSImport("redux-router", "ReduxRouter.UNSAFE_DataRouterStateContext")
     @js.native
-    class StaticRouter ()
-      extends Component[StaticRouterProps, js.Any, js.Any]
+    val UNSAFEDataRouterStateContext: Context[RouterState | Null] = js.native
     
+    @JSImport("redux-router", "ReduxRouter.UNSAFE_DataStaticRouterContext")
     @js.native
-    class Switch ()
-      extends Component[SwitchProps, js.Any, js.Any]
+    val UNSAFEDataStaticRouterContext: Context[StaticHandlerContext | Null] = js.native
     
-    @JSName("__RouterContext")
-    val RouterContext: Context[RouteComponentProps[js.Object, StaticContext, LocationState]] = js.native
-    def generatePath(pattern: String): String = js.native
-    def generatePath(pattern: String, params: StringDictionary[js.UndefOr[String | Double | Boolean]]): String = js.native
-    def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typingsJapgolly.reduxRouter.reduxRouterStrings.matchPath with js.Any */](pathname: String, props: String): `match`[Params] | Null = js.native
-    def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typingsJapgolly.reduxRouter.reduxRouterStrings.matchPath with js.Any */](pathname: String, props: String, parent: `match`[Params]): `match`[Params] | Null = js.native
-    def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typingsJapgolly.reduxRouter.reduxRouterStrings.matchPath with js.Any */](pathname: String, props: js.Array[String]): `match`[Params] | Null = js.native
-    def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typingsJapgolly.reduxRouter.reduxRouterStrings.matchPath with js.Any */](pathname: String, props: js.Array[String], parent: `match`[Params]): `match`[Params] | Null = js.native
-    def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typingsJapgolly.reduxRouter.reduxRouterStrings.matchPath with js.Any */](pathname: String, props: RouteProps): `match`[Params] | Null = js.native
-    def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typingsJapgolly.reduxRouter.reduxRouterStrings.matchPath with js.Any */](pathname: String, props: RouteProps, parent: `match`[Params]): `match`[Params] | Null = js.native
-    def useHistory[HistoryLocationState](): History[HistoryLocationState] = js.native
-    def useLocation[S](): Location[S] = js.native
-    def useParams[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typingsJapgolly.reduxRouter.reduxRouterStrings.useParams with js.Any */](): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ p in keyof Params ]: string}
-      */ typingsJapgolly.reduxRouter.reduxRouterStrings.useParams with js.Any = js.native
-    def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typingsJapgolly.reduxRouter.reduxRouterStrings.useRouteMatch with js.Any */](): `match`[Params] = js.native
-    def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typingsJapgolly.reduxRouter.reduxRouterStrings.useRouteMatch with js.Any */](path: String): `match`[Params] | Null = js.native
-    def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typingsJapgolly.reduxRouter.reduxRouterStrings.useRouteMatch with js.Any */](path: js.Array[String]): `match`[Params] | Null = js.native
-    def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typingsJapgolly.reduxRouter.reduxRouterStrings.useRouteMatch with js.Any */](path: RouteProps): `match`[Params] | Null = js.native
-    def withRouter[P /* <: RouteComponentProps[_, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C with ComponentType[P]): (ComponentClassP[(Omit[P, String]) with WithRouterProps[C] with js.Object]) with WithRouterStatics[C] = js.native
+    inline def UNSAFEEnhanceManualRouteObjects(routes: js.Array[RouteObject]): js.Array[RouteObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_enhanceManualRouteObjects")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Array[RouteObject]]
+    
+    @JSImport("redux-router", "ReduxRouter.UNSAFE_LocationContext")
+    @js.native
+    val UNSAFELocationContext: Context[LocationContextObject] = js.native
+    
+    @JSImport("redux-router", "ReduxRouter.UNSAFE_NavigationContext")
+    @js.native
+    val UNSAFENavigationContext: Context[NavigationContextObject] = js.native
+    
+    @JSImport("redux-router", "ReduxRouter.UNSAFE_RouteContext")
+    @js.native
+    val UNSAFERouteContext: Context[RouteContextObject] = js.native
+    
+    inline def createMemoryRouter(routes: js.Array[RouteObject]): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryRouter")(routes.asInstanceOf[js.Any]).asInstanceOf[Router]
+    inline def createMemoryRouter(routes: js.Array[RouteObject], opts: Basename): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryRouter")(routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Router]
+    
+    inline def createPath(hasPathnameSearchHash: PartialPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(hasPathnameSearchHash.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def createRoutesFromChildren(children: Node): js.Array[RouteObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoutesFromChildren")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[RouteObject]]
+    inline def createRoutesFromChildren(children: Node, parentPath: js.Array[Double]): js.Array[RouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutesFromChildren")(children.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[js.Array[RouteObject]]
+    
+    inline def createRoutesFromElements(children: Node): js.Array[RouteObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoutesFromElements")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[RouteObject]]
+    inline def createRoutesFromElements(children: Node, parentPath: js.Array[Double]): js.Array[RouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutesFromElements")(children.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[js.Array[RouteObject]]
+    
+    inline def defer(data: Record[String, Any]): DeferredData = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(data.asInstanceOf[js.Any]).asInstanceOf[DeferredData]
+    
+    inline def generatePath[Path /* <: String */](path: Path): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def generatePath[Path /* <: String */](
+      path: Path,
+      params: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @remix-run/router.@remix-run/router/dist/utils.PathParam<Path> ]: string} */ js.Any
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def isRouteErrorResponse(e: Any): /* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRouteErrorResponse")(e.asInstanceOf[js.Any]).asInstanceOf[/* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean]
+    
+    @JSImport("redux-router", "ReduxRouter.json")
+    @js.native
+    val json: JsonFunction = js.native
+    
+    inline def matchPath[ParamKey /* <: ParamParseKey[Path] */, Path /* <: String */](pattern: Path, pathname: String): PathMatch[ParamKey] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pattern.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any])).asInstanceOf[PathMatch[ParamKey] | Null]
+    inline def matchPath[ParamKey /* <: ParamParseKey[Path] */, Path /* <: String */](pattern: PathPattern[Path], pathname: String): PathMatch[ParamKey] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pattern.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any])).asInstanceOf[PathMatch[ParamKey] | Null]
+    
+    inline def matchRoutes[RouteObjectType /* <: AgnosticRouteObject */](routes: js.Array[RouteObjectType], locationArg: String): (js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[(js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null]
+    inline def matchRoutes[RouteObjectType /* <: AgnosticRouteObject */](routes: js.Array[RouteObjectType], locationArg: String, basename: String): (js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any], basename.asInstanceOf[js.Any])).asInstanceOf[(js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null]
+    inline def matchRoutes[RouteObjectType /* <: AgnosticRouteObject */](routes: js.Array[RouteObjectType], locationArg: PartialLocation): (js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[(js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null]
+    inline def matchRoutes[RouteObjectType /* <: AgnosticRouteObject */](routes: js.Array[RouteObjectType], locationArg: PartialLocation, basename: String): (js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any], basename.asInstanceOf[js.Any])).asInstanceOf[(js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null]
+    
+    inline def parsePath(path: String): PartialPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[PartialPath]
+    
+    @JSImport("redux-router", "ReduxRouter.redirect")
+    @js.native
+    val redirect: RedirectFunction = js.native
+    
+    inline def renderMatches(): japgolly.scalajs.react.facade.React.Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("renderMatches")().asInstanceOf[japgolly.scalajs.react.facade.React.Element | Null]
+    inline def renderMatches(matches: js.Array[RouteMatch[String, RouteObject]]): japgolly.scalajs.react.facade.React.Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("renderMatches")(matches.asInstanceOf[js.Any]).asInstanceOf[japgolly.scalajs.react.facade.React.Element | Null]
+    
+    inline def resolvePath(to: To): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePath")(to.asInstanceOf[js.Any]).asInstanceOf[Path]
+    inline def resolvePath(to: To, fromPathname: String): Path = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePath")(to.asInstanceOf[js.Any], fromPathname.asInstanceOf[js.Any])).asInstanceOf[Path]
+    
+    inline def useActionData(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionData")().asInstanceOf[Any]
+    
+    inline def useAsyncError(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsyncError")().asInstanceOf[Any]
+    
+    inline def useAsyncValue(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsyncValue")().asInstanceOf[Any]
+    
+    inline def useHref(to: To): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useHref")(to.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def useHref(to: To, hasRelative: Relative): String = (^.asInstanceOf[js.Dynamic].applyDynamic("useHref")(to.asInstanceOf[js.Any], hasRelative.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def useInRouterContext(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useInRouterContext")().asInstanceOf[Boolean]
+    
+    inline def useLoaderData(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useLoaderData")().asInstanceOf[Any]
+    
+    inline def useLocation(): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocation")().asInstanceOf[Location]
+    
+    inline def useMatch[ParamKey /* <: ParamParseKey[Path] */, Path /* <: String */](pattern: Path): PathMatch[ParamKey] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useMatch")(pattern.asInstanceOf[js.Any]).asInstanceOf[PathMatch[ParamKey] | Null]
+    inline def useMatch[ParamKey /* <: ParamParseKey[Path] */, Path /* <: String */](pattern: PathPattern[Path]): PathMatch[ParamKey] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useMatch")(pattern.asInstanceOf[js.Any]).asInstanceOf[PathMatch[ParamKey] | Null]
+    
+    inline def useMatches(): js.Array[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMatches")().asInstanceOf[js.Array[Data]]
+    
+    inline def useNavigate(): NavigateFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigate")().asInstanceOf[NavigateFunction]
+    
+    inline def useNavigation(): Navigation = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigation")().asInstanceOf[Navigation]
+    
+    inline def useNavigationType(): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigationType")().asInstanceOf[Action]
+    
+    inline def useOutlet(): japgolly.scalajs.react.facade.React.Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useOutlet")().asInstanceOf[japgolly.scalajs.react.facade.React.Element | Null]
+    inline def useOutlet(context: Any): japgolly.scalajs.react.facade.React.Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useOutlet")(context.asInstanceOf[js.Any]).asInstanceOf[japgolly.scalajs.react.facade.React.Element | Null]
+    
+    inline def useOutletContext[Context](): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("useOutletContext")().asInstanceOf[Context]
+    
+    inline def useParams[ParamsOrKey /* <: String | (Record[String, js.UndefOr[String]]) */](): /* import warning: importer.ImportType#apply Failed type conversion: [ParamsOrKey] extends [string] ? @remix-run/router.@remix-run/router/dist/utils.Params<ParamsOrKey> : std.Partial<ParamsOrKey> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: [ParamsOrKey] extends [string] ? @remix-run/router.@remix-run/router/dist/utils.Params<ParamsOrKey> : std.Partial<ParamsOrKey> */ js.Any]
+    
+    inline def useResolvedPath(to: To): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("useResolvedPath")(to.asInstanceOf[js.Any]).asInstanceOf[Path]
+    inline def useResolvedPath(to: To, hasRelative: Relative): Path = (^.asInstanceOf[js.Dynamic].applyDynamic("useResolvedPath")(to.asInstanceOf[js.Any], hasRelative.asInstanceOf[js.Any])).asInstanceOf[Path]
+    
+    inline def useRevalidator(): Revalidate = ^.asInstanceOf[js.Dynamic].applyDynamic("useRevalidator")().asInstanceOf[Revalidate]
+    
+    inline def useRouteError(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteError")().asInstanceOf[Any]
+    
+    inline def useRouteLoaderData(routeId: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteLoaderData")(routeId.asInstanceOf[js.Any]).asInstanceOf[Any]
+    
+    inline def useRoutes(routes: js.Array[RouteObject]): japgolly.scalajs.react.facade.React.Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[japgolly.scalajs.react.facade.React.Element | Null]
+    inline def useRoutes(routes: js.Array[RouteObject], locationArg: String): japgolly.scalajs.react.facade.React.Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[japgolly.scalajs.react.facade.React.Element | Null]
+    inline def useRoutes(routes: js.Array[RouteObject], locationArg: typingsJapgolly.reactRouter.anon.PartialLocation): japgolly.scalajs.react.facade.React.Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[japgolly.scalajs.react.facade.React.Element | Null]
   }
   
+  inline def go(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("go")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ReduxRouterAction]
+  
+  inline def goBack(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ReduxRouterAction]
+  
+  inline def goForward(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("goForward")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ReduxRouterAction]
+  
+  inline def historyAPI(method: Any): js.Function1[/* repeated */ js.Object, ReduxRouterAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("historyAPI")(method.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Object, ReduxRouterAction]]
+  
+  inline def isActive(pathname: Pathname): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")(pathname.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isActive(
+    pathname: Pathname,
+    query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ Any
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isActive")(pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isActive(
+    pathname: Pathname,
+    query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ Any,
+    indexOnly: Boolean
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isActive")(pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any], indexOnly.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isActive(pathname: Pathname, query: Unit, indexOnly: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isActive")(pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any], indexOnly.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def push(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ReduxRouterAction]
+  
+  inline def pushState(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("pushState")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ReduxRouterAction]
+  
+  @JSImport("redux-router", "reduxReactRouter")
+  @js.native
+  val reduxReactRouter: Any = js.native
+  
+  inline def replace(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ReduxRouterAction]
+  
+  inline def replaceState(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceState")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ReduxRouterAction]
+  
+  inline def routerStateReducer(state: Any, action: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("routerStateReducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def setState(args: js.Object*): ReduxRouterAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setState")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ReduxRouterAction]
 }
-

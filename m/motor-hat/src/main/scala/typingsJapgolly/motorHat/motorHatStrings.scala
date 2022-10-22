@@ -2,60 +2,61 @@ package typingsJapgolly.motorHat
 
 import typingsJapgolly.motorHat.mod.Direction
 import typingsJapgolly.motorHat.mod.Motor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object motorHatStrings {
-  @js.native
-  sealed trait M1 extends Motor
   
   @js.native
-  sealed trait M2 extends Motor
+  sealed trait M1
+    extends StObject
+       with Motor
+  inline def M1: M1 = "M1".asInstanceOf[M1]
   
   @js.native
-  sealed trait M3 extends Motor
+  sealed trait M2
+    extends StObject
+       with Motor
+  inline def M2: M2 = "M2".asInstanceOf[M2]
   
   @js.native
-  sealed trait M4 extends Motor
+  sealed trait M3
+    extends StObject
+       with Motor
+  inline def M3: M3 = "M3".asInstanceOf[M3]
   
   @js.native
-  sealed trait back extends Direction
+  sealed trait M4
+    extends StObject
+       with Motor
+  inline def M4: M4 = "M4".asInstanceOf[M4]
   
   @js.native
-  sealed trait double extends js.Object
+  sealed trait back
+    extends StObject
+       with Direction
+  inline def back: back = "back".asInstanceOf[back]
   
   @js.native
-  sealed trait fwd extends Direction
+  sealed trait double extends StObject
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
-  sealed trait interleaved extends js.Object
+  sealed trait fwd
+    extends StObject
+       with Direction
+  inline def fwd: fwd = "fwd".asInstanceOf[fwd]
   
   @js.native
-  sealed trait microstep extends js.Object
+  sealed trait interleaved extends StObject
+  inline def interleaved: interleaved = "interleaved".asInstanceOf[interleaved]
   
   @js.native
-  sealed trait single extends js.Object
+  sealed trait microstep extends StObject
+  inline def microstep: microstep = "microstep".asInstanceOf[microstep]
   
-  @scala.inline
-  def M1: M1 = "M1".asInstanceOf[M1]
-  @scala.inline
-  def M2: M2 = "M2".asInstanceOf[M2]
-  @scala.inline
-  def M3: M3 = "M3".asInstanceOf[M3]
-  @scala.inline
-  def M4: M4 = "M4".asInstanceOf[M4]
-  @scala.inline
-  def back: back = "back".asInstanceOf[back]
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
-  @scala.inline
-  def fwd: fwd = "fwd".asInstanceOf[fwd]
-  @scala.inline
-  def interleaved: interleaved = "interleaved".asInstanceOf[interleaved]
-  @scala.inline
-  def microstep: microstep = "microstep".asInstanceOf[microstep]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
+  @js.native
+  sealed trait single extends StObject
+  inline def single: single = "single".asInstanceOf[single]
 }
-

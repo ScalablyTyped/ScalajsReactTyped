@@ -10,10 +10,10 @@ HTTP-friendly error objects
 | ------------------ | :-------------: |
 | Full name          | boom |
 | Keywords           | error, http |
-| # releases         | 5 |
-| # dependents       | 1187 |
-| # downloads        | 231584781 |
-| # stars            | 118 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 9789962.0 |
+| # stars            | 2890.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/boom#readme)

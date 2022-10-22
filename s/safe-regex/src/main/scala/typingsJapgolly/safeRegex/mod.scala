@@ -1,16 +1,18 @@
 package typingsJapgolly.safeRegex
 
-import typingsJapgolly.std.RegExp
+import typingsJapgolly.safeRegex.anon.Limit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("safe-regex", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(re: String): Boolean = js.native
-  def apply(re: String, opts: AnonLimit): Boolean = js.native
-  def apply(re: RegExp): Boolean = js.native
-  def apply(re: RegExp, opts: AnonLimit): Boolean = js.native
+object mod {
+  
+  inline def apply(re: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(re.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(re: String, opts: Limit): Boolean = (^.asInstanceOf[js.Dynamic].apply(re.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(re: js.RegExp): Boolean = ^.asInstanceOf[js.Dynamic].apply(re.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(re: js.RegExp, opts: Limit): Boolean = (^.asInstanceOf[js.Dynamic].apply(re.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("safe-regex", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

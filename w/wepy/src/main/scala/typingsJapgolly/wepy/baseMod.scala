@@ -3,32 +3,56 @@ package typingsJapgolly.wepy
 import typingsJapgolly.wepy.appMod.AppConfig
 import typingsJapgolly.wepy.appMod.AppConstructor
 import typingsJapgolly.wepy.pageMod.PageConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wepy/base", JSImport.Namespace)
-@js.native
-object baseMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    @JSName("$createApp")
-    var $createApp: js.UndefOr[
+object baseMod {
+  
+  object default {
+    
+    @JSImport("wepy/base", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("wepy/base", "default.$createApp")
+    @js.native
+    def createApp: js.UndefOr[
         js.Function2[
           /* appClass */ AppConstructor, 
           /* appConfig */ AppConfig, 
           typingsJapgolly.wepy.appMod.default
         ]
       ] = js.native
-    @JSName("$createPage")
-    var $createPage: js.UndefOr[
+    
+    inline def createApp_=(
+      x: js.UndefOr[
+          js.Function2[
+            /* appClass */ AppConstructor, 
+            /* appConfig */ AppConfig, 
+            typingsJapgolly.wepy.appMod.default
+          ]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$createApp")(x.asInstanceOf[js.Any])
+    
+    @JSImport("wepy/base", "default.$createPage")
+    @js.native
+    def createPage: js.UndefOr[
         js.Function2[
           /* pageClass */ PageConstructor, 
           /* pagePath */ String | Boolean, 
           typingsJapgolly.wepy.pageMod.default
         ]
       ] = js.native
+    
+    inline def createPage_=(
+      x: js.UndefOr[
+          js.Function2[
+            /* pageClass */ PageConstructor, 
+            /* pagePath */ String | Boolean, 
+            typingsJapgolly.wepy.pageMod.default
+          ]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$createPage")(x.asInstanceOf[js.Any])
   }
-  
 }
-

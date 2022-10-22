@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Networking.NetworkOperators
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IUssdMessageFactory extends js.Object {
+trait IUssdMessageFactory extends StObject {
+  
   def createMessage(messageText: String): UssdMessage
 }
-
 object IUssdMessageFactory {
-  @scala.inline
-  def apply(createMessage: String => CallbackTo[UssdMessage]): IUssdMessageFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createMessage")(js.Any.fromFunction1((t0: java.lang.String) => createMessage(t0).runNow()))
+  
+  inline def apply(createMessage: String => UssdMessage): IUssdMessageFactory = {
+    val __obj = js.Dynamic.literal(createMessage = js.Any.fromFunction1(createMessage))
     __obj.asInstanceOf[IUssdMessageFactory]
   }
+  
+  extension [Self <: IUssdMessageFactory](x: Self) {
+    
+    inline def setCreateMessage(value: String => UssdMessage): Self = StObject.set(x, "createMessage", js.Any.fromFunction1(value))
+  }
 }
-

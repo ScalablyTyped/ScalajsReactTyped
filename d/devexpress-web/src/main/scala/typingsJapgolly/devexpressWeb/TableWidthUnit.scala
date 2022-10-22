@@ -1,22 +1,36 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings defining the table width's measurement units and value.
   */
-@JSGlobal("TableWidthUnit")
-@js.native
-class TableWidthUnit () extends js.Object {
+trait TableWidthUnit extends StObject {
+  
   /**
     * Gets or sets the unit type for the table width.
     */
-  var `type`: TableWidthUnitType = js.native
+  var `type`: TableWidthUnitType
+  
   /**
     * Gets or sets the table width value in twips.
     */
-  var value: Double = js.native
+  var value: Double
 }
-
+object TableWidthUnit {
+  
+  inline def apply(`type`: TableWidthUnitType, value: Double): TableWidthUnit = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableWidthUnit]
+  }
+  
+  extension [Self <: TableWidthUnit](x: Self) {
+    
+    inline def setType(value: TableWidthUnitType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
+}

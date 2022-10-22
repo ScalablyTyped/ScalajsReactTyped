@@ -1,71 +1,88 @@
 package typingsJapgolly.uirouterCore.mod
 
-import typingsJapgolly.uirouterCore.stateInterfaceMod.StateDeclaration
-import typingsJapgolly.uirouterCore.transitionHookMod.ErrorHandler
-import typingsJapgolly.uirouterCore.transitionHookMod.GetErrorHandler
-import typingsJapgolly.uirouterCore.transitionHookMod.GetResultHandler
-import typingsJapgolly.uirouterCore.transitionHookMod.ResultHandler
-import typingsJapgolly.uirouterCore.transitionInterfaceMod.HookResult
-import typingsJapgolly.uirouterCore.transitionInterfaceMod.TransitionHookOptions
+import typingsJapgolly.uirouterCore.libStateInterfaceMod.StateDeclaration
+import typingsJapgolly.uirouterCore.libTransitionInterfaceMod.HookResult
+import typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookOptions
+import typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.ErrorHandler
+import typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.GetErrorHandler
+import typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.GetResultHandler
+import typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.ResultHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "TransitionHook")
 @js.native
-class TransitionHook protected ()
-  extends typingsJapgolly.uirouterCore.transitionMod.TransitionHook {
+open class TransitionHook protected ()
+  extends typingsJapgolly.uirouterCore.libTransitionMod.TransitionHook {
   def this(
-    transition: typingsJapgolly.uirouterCore.transitionTransitionMod.Transition,
+    transition: typingsJapgolly.uirouterCore.libTransitionTransitionMod.Transition,
     stateContext: StateDeclaration,
-    registeredHook: typingsJapgolly.uirouterCore.hookRegistryMod.RegisteredHook,
+    registeredHook: typingsJapgolly.uirouterCore.libTransitionHookRegistryMod.RegisteredHook,
     options: TransitionHookOptions
   ) = this()
 }
-
 /* static members */
-@JSImport("@uirouter/core", "TransitionHook")
-@js.native
-object TransitionHook extends js.Object {
+object TransitionHook {
+  
+  @JSImport("@uirouter/core", "TransitionHook")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * These GetResultHandler(s) are used by [[invokeHook]] below
     * Each HookType chooses a GetResultHandler (See: [[TransitionService._defineCoreEvents]])
     */
-  @JSName("HANDLE_RESULT")
-  var HANDLE_RESULT_Original: GetResultHandler = js.native
-  /**
-    * These GetErrorHandler(s) are used by [[invokeHook]] below
-    * Each HookType chooses a GetErrorHandler (See: [[TransitionService._defineCoreEvents]])
-    */
-  @JSName("LOG_ERROR")
-  var LOG_ERROR_Original: GetErrorHandler = js.native
-  /**
-    * If the result is a promise rejection, log it.
-    * Otherwise, ignore the result.
-    */
-  @JSName("LOG_REJECTED_RESULT")
-  var LOG_REJECTED_RESULT_Original: GetResultHandler = js.native
-  @JSName("REJECT_ERROR")
-  var REJECT_ERROR_Original: GetErrorHandler = js.native
-  @JSName("THROW_ERROR")
-  var THROW_ERROR_Original: GetErrorHandler = js.native
+  @JSImport("@uirouter/core", "TransitionHook.HANDLE_RESULT")
+  @js.native
+  def HANDLE_RESULT: GetResultHandler = js.native
   /**
     * These GetResultHandler(s) are used by [[invokeHook]] below
     * Each HookType chooses a GetResultHandler (See: [[TransitionService._defineCoreEvents]])
     */
-  def HANDLE_RESULT(hook: typingsJapgolly.uirouterCore.transitionHookMod.TransitionHook): ResultHandler = js.native
+  inline def HANDLE_RESULT(hook: typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.TransitionHook): ResultHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("HANDLE_RESULT")(hook.asInstanceOf[js.Any]).asInstanceOf[ResultHandler]
+  inline def HANDLE_RESULT_=(x: GetResultHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HANDLE_RESULT")(x.asInstanceOf[js.Any])
+  
   /**
     * These GetErrorHandler(s) are used by [[invokeHook]] below
     * Each HookType chooses a GetErrorHandler (See: [[TransitionService._defineCoreEvents]])
     */
-  def LOG_ERROR(hook: typingsJapgolly.uirouterCore.transitionHookMod.TransitionHook): ErrorHandler = js.native
+  @JSImport("@uirouter/core", "TransitionHook.LOG_ERROR")
+  @js.native
+  def LOG_ERROR: GetErrorHandler = js.native
+  /**
+    * These GetErrorHandler(s) are used by [[invokeHook]] below
+    * Each HookType chooses a GetErrorHandler (See: [[TransitionService._defineCoreEvents]])
+    */
+  inline def LOG_ERROR(hook: typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.TransitionHook): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("LOG_ERROR")(hook.asInstanceOf[js.Any]).asInstanceOf[ErrorHandler]
+  inline def LOG_ERROR_=(x: GetErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOG_ERROR")(x.asInstanceOf[js.Any])
+  
   /**
     * If the result is a promise rejection, log it.
     * Otherwise, ignore the result.
     */
-  def LOG_REJECTED_RESULT(hook: typingsJapgolly.uirouterCore.transitionHookMod.TransitionHook): ResultHandler = js.native
-  def REJECT_ERROR(hook: typingsJapgolly.uirouterCore.transitionHookMod.TransitionHook): ErrorHandler = js.native
-  def THROW_ERROR(hook: typingsJapgolly.uirouterCore.transitionHookMod.TransitionHook): ErrorHandler = js.native
+  @JSImport("@uirouter/core", "TransitionHook.LOG_REJECTED_RESULT")
+  @js.native
+  def LOG_REJECTED_RESULT: GetResultHandler = js.native
+  /**
+    * If the result is a promise rejection, log it.
+    * Otherwise, ignore the result.
+    */
+  inline def LOG_REJECTED_RESULT(hook: typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.TransitionHook): ResultHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("LOG_REJECTED_RESULT")(hook.asInstanceOf[js.Any]).asInstanceOf[ResultHandler]
+  inline def LOG_REJECTED_RESULT_=(x: GetResultHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOG_REJECTED_RESULT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@uirouter/core", "TransitionHook.REJECT_ERROR")
+  @js.native
+  def REJECT_ERROR: GetErrorHandler = js.native
+  inline def REJECT_ERROR(hook: typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.TransitionHook): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("REJECT_ERROR")(hook.asInstanceOf[js.Any]).asInstanceOf[ErrorHandler]
+  inline def REJECT_ERROR_=(x: GetErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REJECT_ERROR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@uirouter/core", "TransitionHook.THROW_ERROR")
+  @js.native
+  def THROW_ERROR: GetErrorHandler = js.native
+  inline def THROW_ERROR(hook: typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.TransitionHook): ErrorHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("THROW_ERROR")(hook.asInstanceOf[js.Any]).asInstanceOf[ErrorHandler]
+  inline def THROW_ERROR_=(x: GetErrorHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THROW_ERROR")(x.asInstanceOf[js.Any])
+  
   /**
     * Chains together an array of TransitionHooks.
     *
@@ -84,11 +101,12 @@ object TransitionHook extends js.Object {
     * @param waitFor if provided, the chain is `.then()`'ed off this promise
     * @returns a `Promise` for sequentially invoking the hooks (in order)
     */
-  def chain(hooks: js.Array[typingsJapgolly.uirouterCore.transitionHookMod.TransitionHook]): js.Promise[_] = js.native
-  def chain(
-    hooks: js.Array[typingsJapgolly.uirouterCore.transitionHookMod.TransitionHook],
-    waitFor: js.Promise[_]
-  ): js.Promise[_] = js.native
+  inline def chain(hooks: js.Array[typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.TransitionHook]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def chain(
+    hooks: js.Array[typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.TransitionHook],
+    waitFor: js.Promise[Any]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any], waitFor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  
   /**
     * Invokes all the provided TransitionHooks, in order.
     * Each hook's return value is checked.
@@ -100,13 +118,13 @@ object TransitionHook extends js.Object {
     *
     * @returns a promise for the async result, or the result of the callback
     */
-  def invokeHooks[T](
-    hooks: js.Array[typingsJapgolly.uirouterCore.transitionHookMod.TransitionHook],
+  inline def invokeHooks[T](
+    hooks: js.Array[typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.TransitionHook],
     doneCallback: js.Function1[/* result */ js.UndefOr[HookResult], T]
-  ): js.Promise[_] | T = js.native
+  ): js.Promise[Any] | T = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeHooks")(hooks.asInstanceOf[js.Any], doneCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any] | T]
+  
   /**
     * Run all TransitionHooks, ignoring their return value.
     */
-  def runAllHooks(hooks: js.Array[typingsJapgolly.uirouterCore.transitionHookMod.TransitionHook]): Unit = js.native
+  inline def runAllHooks(hooks: js.Array[typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.TransitionHook]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runAllHooks")(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

@@ -1,10 +1,11 @@
 package typingsJapgolly.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IsSchemaOptions extends js.Object {
+trait IsSchemaOptions extends StObject {
+  
   /**
     * If true, will identify schemas from older versions of joi, otherwise will throw an error.
     *
@@ -12,13 +13,15 @@ trait IsSchemaOptions extends js.Object {
     */
   var legacy: Boolean
 }
-
 object IsSchemaOptions {
-  @scala.inline
-  def apply(legacy: Boolean): IsSchemaOptions = {
-    val __obj = js.Dynamic.literal(legacy = legacy.asInstanceOf[js.Any])
   
+  inline def apply(legacy: Boolean): IsSchemaOptions = {
+    val __obj = js.Dynamic.literal(legacy = legacy.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsSchemaOptions]
   }
+  
+  extension [Self <: IsSchemaOptions](x: Self) {
+    
+    inline def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
+  }
 }
-

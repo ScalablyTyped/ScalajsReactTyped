@@ -1,13 +1,13 @@
 package typingsJapgolly.selectize
 
 import typingsJapgolly.selectize.Selectize.IOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   def selectize(): JQuery = js.native
-  def selectize(options: IOptions[_, _]): JQuery = js.native
+  def selectize(options: IOptions[Any, Any]): JQuery = js.native
 }
-

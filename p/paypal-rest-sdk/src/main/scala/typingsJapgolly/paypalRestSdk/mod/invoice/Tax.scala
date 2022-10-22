@@ -1,24 +1,32 @@
 package typingsJapgolly.paypalRestSdk.mod.invoice
 
-import typingsJapgolly.paypalRestSdk.mod.Currency
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Tax extends Cost {
+trait Tax
+  extends StObject
+     with Cost {
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object Tax {
-  @scala.inline
-  def apply(amount: Currency = null, id: String = null, name: String = null, percent: Int | Double = null): Tax = {
+  
+  inline def apply(): Tax = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tax]
   }
+  
+  extension [Self <: Tax](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

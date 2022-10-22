@@ -1,11 +1,12 @@
 package typingsJapgolly.msRest.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServiceClientCredentials extends js.Object {
+trait ServiceClientCredentials extends StObject {
+  
   /**
     * Signs a request with the Authentication header.
     *
@@ -14,13 +15,15 @@ trait ServiceClientCredentials extends js.Object {
     */
   def signRequest(webResource: WebResource, callback: js.Function1[/* err */ js.Error, Unit]): Unit
 }
-
 object ServiceClientCredentials {
-  @scala.inline
-  def apply(signRequest: (WebResource, js.Function1[/* err */ js.Error, Unit]) => Callback): ServiceClientCredentials = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("signRequest")(js.Any.fromFunction2((t0: typingsJapgolly.msRest.mod.WebResource, t1: js.Function1[/* err */ js.Error, scala.Unit]) => signRequest(t0, t1).runNow()))
+  
+  inline def apply(signRequest: (WebResource, js.Function1[/* err */ js.Error, Unit]) => Callback): ServiceClientCredentials = {
+    val __obj = js.Dynamic.literal(signRequest = js.Any.fromFunction2((t0: WebResource, t1: js.Function1[/* err */ js.Error, Unit]) => (signRequest(t0, t1)).runNow()))
     __obj.asInstanceOf[ServiceClientCredentials]
   }
+  
+  extension [Self <: ServiceClientCredentials](x: Self) {
+    
+    inline def setSignRequest(value: (WebResource, js.Function1[/* err */ js.Error, Unit]) => Callback): Self = StObject.set(x, "signRequest", js.Any.fromFunction2((t0: WebResource, t1: js.Function1[/* err */ js.Error, Unit]) => (value(t0, t1)).runNow()))
+  }
 }
-

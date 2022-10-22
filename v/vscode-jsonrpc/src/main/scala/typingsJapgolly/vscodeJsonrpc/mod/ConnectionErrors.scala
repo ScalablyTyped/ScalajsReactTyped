@@ -1,44 +1,19 @@
 package typingsJapgolly.vscodeJsonrpc.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
-
-@js.native
-sealed trait ConnectionErrors extends js.Object
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-jsonrpc", "ConnectionErrors")
 @js.native
-object ConnectionErrors extends js.Object {
-  /**
-    * The connection is already in listening mode.
-    */
-  @js.native
-  sealed trait AlreadyListening extends ConnectionErrors
-  
-  /**
-    * The connection is closed.
-    */
-  @js.native
-  sealed trait Closed extends ConnectionErrors
-  
-  /**
-    * The connection got disposed.
-    */
-  @js.native
-  sealed trait Disposed extends ConnectionErrors
+object ConnectionErrors extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ConnectionErrors with Double] = js.native
-  /* 3 */ @js.native
-  object AlreadyListening extends TopLevel[AlreadyListening with Double]
+  def apply(value: Double): js.UndefOr[typingsJapgolly.vscodeJsonrpc.libCommonConnectionMod.ConnectionErrors & Double] = js.native
   
-  /* 1 */ @js.native
-  object Closed extends TopLevel[Closed with Double]
+  /* 3 */ val AlreadyListening: typingsJapgolly.vscodeJsonrpc.libCommonConnectionMod.ConnectionErrors.AlreadyListening & Double = js.native
   
-  /* 2 */ @js.native
-  object Disposed extends TopLevel[Disposed with Double]
+  /* 1 */ val Closed: typingsJapgolly.vscodeJsonrpc.libCommonConnectionMod.ConnectionErrors.Closed & Double = js.native
   
+  /* 2 */ val Disposed: typingsJapgolly.vscodeJsonrpc.libCommonConnectionMod.ConnectionErrors.Disposed & Double = js.native
 }
-

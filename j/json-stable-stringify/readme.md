@@ -11,14 +11,11 @@ deterministic JSON.stringify() with custom sorting to get deterministic hashes f
 | Full name          | json-stable-stringify |
 | Keywords           | json, stringify, deterministic, hash, sort, stable |
 | # releases         | 1 |
-| # dependents       | 810 |
-| # downloads        | 228427877 |
-| # stars            | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6182293E7 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/json-stable-stringify)
-- [Bugs](https://github.com/substack/json-stable-stringify/issues)
-- [Repository](https://github.com/substack/json-stable-stringify)
 - [Npm](https://www.npmjs.com/package/json-stable-stringify)
     
 

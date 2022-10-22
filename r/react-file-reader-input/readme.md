@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-file-reader-input
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 React file input component for complete control over styling and abstraction from file reading.
@@ -10,10 +10,10 @@ React file input component for complete control over styling and abstraction fro
 | ------------------ | :-------------: |
 | Full name          | react-file-reader-input |
 | Keywords           | react, file, input, reader, component, react-component, filereader, file-reader, fake |
-| # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 221412 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 14206.333333333334 |
+| # stars            | 111.0 |
 
 ## Links
 - [Homepage](https://github.com/ngokevin/react-file-reader-input)

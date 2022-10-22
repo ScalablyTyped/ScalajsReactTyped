@@ -12,9 +12,9 @@ import typingsJapgolly.xrm.xrmStrings.subgrid
 import typingsJapgolly.xrm.xrmStrings.timelinewall
 import typingsJapgolly.xrm.xrmStrings.timercontrol
 import typingsJapgolly.xrm.xrmStrings.webresource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Control types for {@link Controls.Control.getControlType Controls.Control.getControlType()}.
@@ -34,34 +34,30 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.timelinewall
   - typingsJapgolly.xrm.xrmStrings.quickform
 */
-trait StandardControlType extends js.Object
-
+trait StandardControlType extends StObject
 object StandardControlType {
-  @scala.inline
-  def IFrame: iframe = this.cast("iframe")
-  @scala.inline
-  def KBSearch: kbsearch = this.cast("kbsearch")
-  @scala.inline
-  def Lookup: lookup = this.cast("lookup")
-  @scala.inline
-  def MultiSelectOptionSet: multiselectoptionset = this.cast("multiselectoptionset")
-  @scala.inline
-  def Notes: notes = this.cast("notes")
-  @scala.inline
-  def OptionSet: optionset = this.cast("optionset")
-  @scala.inline
-  def QuickForm: quickform = this.cast("quickform")
-  @scala.inline
-  def Standard: standard = this.cast("standard")
-  @scala.inline
-  def SubGrid: subgrid = this.cast("subgrid")
-  @scala.inline
-  def TimeLineWall: timelinewall = this.cast("timelinewall")
-  @scala.inline
-  def TimerControl: timercontrol = this.cast("timercontrol")
-  @scala.inline
-  def WebResource: webresource = this.cast("webresource")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def IFrame: iframe = "iframe".asInstanceOf[iframe]
+  
+  inline def KBSearch: kbsearch = "kbsearch".asInstanceOf[kbsearch]
+  
+  inline def Lookup: lookup = "lookup".asInstanceOf[lookup]
+  
+  inline def MultiSelectOptionSet: multiselectoptionset = "multiselectoptionset".asInstanceOf[multiselectoptionset]
+  
+  inline def Notes: notes = "notes".asInstanceOf[notes]
+  
+  inline def OptionSet: optionset = "optionset".asInstanceOf[optionset]
+  
+  inline def QuickForm: quickform = "quickform".asInstanceOf[quickform]
+  
+  inline def Standard: standard = "standard".asInstanceOf[standard]
+  
+  inline def SubGrid: subgrid = "subgrid".asInstanceOf[subgrid]
+  
+  inline def TimeLineWall: timelinewall = "timelinewall".asInstanceOf[timelinewall]
+  
+  inline def TimerControl: timercontrol = "timercontrol".asInstanceOf[timercontrol]
+  
+  inline def WebResource: webresource = "webresource".asInstanceOf[webresource]
 }
-

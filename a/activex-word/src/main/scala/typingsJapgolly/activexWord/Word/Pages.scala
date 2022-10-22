@@ -1,18 +1,51 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.Pages")
-@js.native
-class Pages protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.Pages_typekey")
-  var WordDotPages_typekey: Pages = js.native
-  def Item(Index: Double): Page = js.native
+trait Pages extends StObject {
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  val Count: Double
+  
+  val Creator: Double
+  
+  def Item(Index: Double): Page
+  
+  val Parent: Any
+  
+  /* private */ @JSName("Word.Pages_typekey")
+  var WordDotPages_typekey: Pages
 }
-
+object Pages {
+  
+  inline def apply(
+    Application: Application,
+    Count: Double,
+    Creator: Double,
+    Item: Double => Page,
+    Parent: Any,
+    WordDotPages_typekey: Pages
+  ): Pages = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.Pages_typekey")(WordDotPages_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Pages]
+  }
+  
+  extension [Self <: Pages](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setItem(value: Double => Page): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotPages_typekey(value: Pages): Self = StObject.set(x, "Word.Pages_typekey", value.asInstanceOf[js.Any])
+  }
+}

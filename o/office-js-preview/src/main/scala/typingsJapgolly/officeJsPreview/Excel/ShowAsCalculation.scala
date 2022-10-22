@@ -1,200 +1,179 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShowAsCalculation extends js.Object
-
+sealed trait ShowAsCalculation extends StObject
 /**
+  * The ShowAs calculation function for the DataPivotField.
   *
-  * The ShowAs Calculation function for the Data Pivot Field.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.ShowAsCalculation")
 @js.native
-object ShowAsCalculation extends js.Object {
-  /**
-    *
-    * Difference from the specified Base Field and Base Item.
-    *
-    */
-  @js.native
-  sealed trait differenceFrom extends ShowAsCalculation
+object ShowAsCalculation extends StObject {
   
   /**
-    *
+    * Difference from the specified Base field and Base item.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
+  @js.native
+  sealed trait differenceFrom
+    extends StObject
+       with ShowAsCalculation
+  
+  /**
     * Calculates the values as follows:
     ((value in cell) x (Grand Total of Grand Totals)) / ((Grand Row Total) x (Grand Column Total))
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait index extends ShowAsCalculation
+  sealed trait index
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
     * No calculation is applied.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait none extends ShowAsCalculation
+  sealed trait none
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
-    * Difference from the specified Base Field and Base Item.
-    *
+    * Difference from the specified Base field and Base item.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait percentDifferenceFrom extends ShowAsCalculation
+  sealed trait percentDifferenceFrom
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
-    * Percent of the specified Base Field and Base Item.
-    *
+    * Percent of the specified Base field and Base item.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait percentOf extends ShowAsCalculation
+  sealed trait percentOf
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
     * Percent of the column total.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait percentOfColumnTotal extends ShowAsCalculation
+  sealed trait percentOfColumnTotal
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
     * Percent of the grand total.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait percentOfGrandTotal extends ShowAsCalculation
+  sealed trait percentOfGrandTotal
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
-    * Percent of the column total for the specified Base Field.
-    *
+    * Percent of the column total for the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait percentOfParentColumnTotal extends ShowAsCalculation
+  sealed trait percentOfParentColumnTotal
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
-    * Percent of the row total for the specified Base Field.
-    *
+    * Percent of the row total for the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait percentOfParentRowTotal extends ShowAsCalculation
+  sealed trait percentOfParentRowTotal
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
-    * Percent of the grand total for the specified Base Field.
-    *
+    * Percent of the grand total for the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait percentOfParentTotal extends ShowAsCalculation
+  sealed trait percentOfParentTotal
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
     * Percent of the row total.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait percentOfRowTotal extends ShowAsCalculation
+  sealed trait percentOfRowTotal
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
-    * Percent Running Total of the specified Base Field.
-    *
+    * Percent running total of the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait percentRunningTotal extends ShowAsCalculation
+  sealed trait percentRunningTotal
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
-    * Ascending Rank of the specified Base Field.
-    *
+    * Ascending rank of the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait rankAscending extends ShowAsCalculation
+  sealed trait rankAscending
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
-    * Descending Rank of the specified Base Field.
-    *
+    * Descending rank of the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait rankDecending extends ShowAsCalculation
+  sealed trait rankDecending
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
-    * Running Total of the specified Base Field.
-    *
+    * Running total of the specified Base field.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait runningTotal extends ShowAsCalculation
+  sealed trait runningTotal
+    extends StObject
+       with ShowAsCalculation
   
   /**
-    *
     * Calculation is unknown or unsupported.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait unknown extends ShowAsCalculation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShowAsCalculation with String] = js.native
-  /* "DifferenceFrom" */ @js.native
-  object differenceFrom extends TopLevel[differenceFrom with String]
-  
-  /* "Index" */ @js.native
-  object index extends TopLevel[index with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "PercentDifferenceFrom" */ @js.native
-  object percentDifferenceFrom extends TopLevel[percentDifferenceFrom with String]
-  
-  /* "PercentOf" */ @js.native
-  object percentOf extends TopLevel[percentOf with String]
-  
-  /* "PercentOfColumnTotal" */ @js.native
-  object percentOfColumnTotal extends TopLevel[percentOfColumnTotal with String]
-  
-  /* "PercentOfGrandTotal" */ @js.native
-  object percentOfGrandTotal extends TopLevel[percentOfGrandTotal with String]
-  
-  /* "PercentOfParentColumnTotal" */ @js.native
-  object percentOfParentColumnTotal extends TopLevel[percentOfParentColumnTotal with String]
-  
-  /* "PercentOfParentRowTotal" */ @js.native
-  object percentOfParentRowTotal extends TopLevel[percentOfParentRowTotal with String]
-  
-  /* "PercentOfParentTotal" */ @js.native
-  object percentOfParentTotal extends TopLevel[percentOfParentTotal with String]
-  
-  /* "PercentOfRowTotal" */ @js.native
-  object percentOfRowTotal extends TopLevel[percentOfRowTotal with String]
-  
-  /* "PercentRunningTotal" */ @js.native
-  object percentRunningTotal extends TopLevel[percentRunningTotal with String]
-  
-  /* "RankAscending" */ @js.native
-  object rankAscending extends TopLevel[rankAscending with String]
-  
-  /* "RankDecending" */ @js.native
-  object rankDecending extends TopLevel[rankDecending with String]
-  
-  /* "RunningTotal" */ @js.native
-  object runningTotal extends TopLevel[runningTotal with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
-  
+  sealed trait unknown
+    extends StObject
+       with ShowAsCalculation
 }
-

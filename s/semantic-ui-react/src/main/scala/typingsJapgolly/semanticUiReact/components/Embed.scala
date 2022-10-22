@@ -1,84 +1,103 @@
 package typingsJapgolly.semanticUiReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLDivElement
-import typingsJapgolly.semanticUiReact.embedEmbedMod.EmbedProps
-import typingsJapgolly.semanticUiReact.embedMod.default
-import typingsJapgolly.semanticUiReact.genericMod.HtmlIframeProps
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandContent
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandItem
-import typingsJapgolly.semanticUiReact.iconIconMod.IconProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.ElementType
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.ReactNodeArray
+import typingsJapgolly.semanticUiReact.distCommonjsElementsIconIconMod.IconProps
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.HtmlIframeProps
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
+import typingsJapgolly.semanticUiReact.distCommonjsModulesEmbedEmbedMod.EmbedProps
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.`16Colon9`
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.`21Colon9`
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.`4Colon3`
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.vimeo
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.youtube
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Embed {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    as: js.Any = null,
-    aspectRatio: `4Colon3` | `16Colon9` | `21Colon9` = null,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    brandedUI: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    color: String = null,
-    content: SemanticShorthandContent = null,
-    defaultActive: js.UndefOr[Boolean] = js.undefined,
-    hd: js.UndefOr[Boolean] = js.undefined,
-    icon: SemanticShorthandItem[IconProps] = null,
-    id: String = null,
-    iframe: SemanticShorthandItem[HtmlIframeProps] = null,
-    onClick: (/* event */ ReactMouseEventFrom[HTMLDivElement], /* data */ EmbedProps) => Callback = null,
-    placeholder: String = null,
-    source: youtube | vimeo = null,
-    url: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[EmbedProps, default, Unit, EmbedProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (!js.isUndefined(brandedUI)) __obj.updateDynamic("brandedUI")(brandedUI.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultActive)) __obj.updateDynamic("defaultActive")(defaultActive.asInstanceOf[js.Any])
-    if (!js.isUndefined(hd)) __obj.updateDynamic("hd")(hd.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (iframe != null) __obj.updateDynamic("iframe")(iframe.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement], t1: /* data */ typingsJapgolly.semanticUiReact.embedEmbedMod.EmbedProps) => onClick(t0, t1).runNow()))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.embedEmbedMod.EmbedProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.embedMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.embedEmbedMod.EmbedProps])(children: _*)
-  }
-  @JSImport("semantic-ui-react/dist/commonjs/modules/Embed", JSImport.Default)
+  @JSImport("semantic-ui-react", "Embed")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.semanticUiReact.mod.Embed] {
+    
+    inline def active(value: Boolean): this.type = set("active", value.asInstanceOf[js.Any])
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def aspectRatio(value: `4Colon3` | `16Colon9` | `21Colon9`): this.type = set("aspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def autoplay(value: Boolean): this.type = set("autoplay", value.asInstanceOf[js.Any])
+    
+    inline def brandedUI(value: Boolean): this.type = set("brandedUI", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: SemanticShorthandContent): this.type = set("content", value.asInstanceOf[js.Any])
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def defaultActive(value: Boolean): this.type = set("defaultActive", value.asInstanceOf[js.Any])
+    
+    inline def hd(value: Boolean): this.type = set("hd", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: SemanticShorthandItem[IconProps]): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def iconFunction3(
+      value: (/* component */ ElementType, IconProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("icon", js.Any.fromFunction3(value))
+    
+    inline def iconNull: this.type = set("icon", null)
+    
+    inline def iconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("icon", js.Array(value*))
+    
+    inline def iconVdomElement(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def iframe(value: SemanticShorthandItem[HtmlIframeProps]): this.type = set("iframe", value.asInstanceOf[js.Any])
+    
+    inline def iframeFunction3(
+      value: (/* component */ ElementType, HtmlIframeProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("iframe", js.Any.fromFunction3(value))
+    
+    inline def iframeNull: this.type = set("iframe", null)
+    
+    inline def iframeVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("iframe", js.Array(value*))
+    
+    inline def iframeVdomElement(value: VdomElement): this.type = set("iframe", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onClick(value: (/* event */ ReactMouseEventFrom[HTMLDivElement], /* data */ EmbedProps) => Callback): this.type = set("onClick", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLDivElement], t1: /* data */ EmbedProps) => (value(t0, t1)).runNow()))
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def source(value: youtube | vimeo): this.type = set("source", value.asInstanceOf[js.Any])
+    
+    inline def url(value: String): this.type = set("url", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Embed.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: EmbedProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

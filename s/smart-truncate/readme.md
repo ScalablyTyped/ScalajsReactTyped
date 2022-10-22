@@ -10,10 +10,10 @@ A small library that truncates a string. It can insert or append an ellipsis at 
 | ------------------ | :-------------: |
 | Full name          | smart-truncate |
 | Keywords           | string, truncate, ellipsis, smart |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 75011 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4112.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/millerized/smart-truncate#readme)

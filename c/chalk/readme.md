@@ -1,7 +1,7 @@
 
 # Scala.js typings for chalk
 
-Typings are for version 2.4.2
+Typings are for version 5.1.2
 
 ## Library description:
 Terminal string styling done right
@@ -9,11 +9,11 @@ Terminal string styling done right
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | chalk |
-| Keywords           | color, colour, colors, terminal, console, cli, string, str, ansi, style, styles, tty, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
-| # releases         | 9 |
-| # dependents       | 44064 |
-| # downloads        | 1313730526 |
-| # stars            | 932 |
+| Keywords           | color, colour, colors, terminal, console, cli, string, ansi, style, styles, tty, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 8.182958053333334E8 |
+| # stars            | 19254.0 |
 
 ## Links
 - [Homepage](https://github.com/chalk/chalk#readme)

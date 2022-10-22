@@ -1,22 +1,15 @@
 package typingsJapgolly.p5.mod
 
-import org.scalajs.dom.raw.DelayNode
+import org.scalajs.dom.DelayNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delay extends Effect {
-  /**
-    *   The p5.Delay is built with two  Web Audio Delay
-    *   Nodes, one for each stereo channel.
-    */
-  var leftDelay: DelayNode = js.native
-  /**
-    *   The p5.Delay is built with two  Web Audio Delay
-    *   Nodes, one for each stereo channel.
-    */
-  var rightDelay: DelayNode = js.native
+trait Delay
+  extends StObject
+     with Effect {
+  
   /**
     *   Set the delay (echo) time, in seconds. Usually
     *   this value will be a floating point number between
@@ -24,6 +17,7 @@ trait Delay extends Effect {
     *   @param delayTime Time (in seconds) of the delay
     */
   def delayTime(delayTime: Double): Unit = js.native
+  
   def feedback(feedback: js.Object): Double = js.native
   /**
     *   Feedback occurs when Delay sends its signal back
@@ -39,6 +33,7 @@ trait Delay extends Effect {
     *   @return Feedback value
     */
   def feedback(feedback: Double): Double = js.native
+  
   def filter(cutoffFreq: js.Object, res: js.Object): Unit = js.native
   def filter(cutoffFreq: js.Object, res: Double): Unit = js.native
   def filter(cutoffFreq: Double, res: js.Object): Unit = js.native
@@ -55,6 +50,13 @@ trait Delay extends Effect {
     *   numbers (i.e. .2) will produce a slope.
     */
   def filter(cutoffFreq: Double, res: Double): Unit = js.native
+  
+  /**
+    *   The p5.Delay is built with two  Web Audio Delay
+    *   Nodes, one for each stereo channel.
+    */
+  var leftDelay: DelayNode = js.native
+  
   /**
     *   Add delay to an audio signal according to a set of
     *   delay parameters.
@@ -73,6 +75,17 @@ trait Delay extends Effect {
   def process(Signal: js.Object, delayTime: Double): Unit = js.native
   def process(Signal: js.Object, delayTime: Double, feedback: Double): Unit = js.native
   def process(Signal: js.Object, delayTime: Double, feedback: Double, lowPass: Double): Unit = js.native
+  def process(Signal: js.Object, delayTime: Double, feedback: Unit, lowPass: Double): Unit = js.native
+  def process(Signal: js.Object, delayTime: Unit, feedback: Double): Unit = js.native
+  def process(Signal: js.Object, delayTime: Unit, feedback: Double, lowPass: Double): Unit = js.native
+  def process(Signal: js.Object, delayTime: Unit, feedback: Unit, lowPass: Double): Unit = js.native
+  
+  /**
+    *   The p5.Delay is built with two  Web Audio Delay
+    *   Nodes, one for each stereo channel.
+    */
+  var rightDelay: DelayNode = js.native
+  
   /**
     *   Choose a preset type of delay. 'pingPong' bounces
     *   the signal from the left to the right channel to
@@ -83,4 +96,3 @@ trait Delay extends Effect {
   def setType(`type`: String): Unit = js.native
   def setType(`type`: Double): Unit = js.native
 }
-

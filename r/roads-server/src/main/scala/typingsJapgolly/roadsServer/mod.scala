@@ -1,17 +1,17 @@
 package typingsJapgolly.roadsServer
 
-import typingsJapgolly.node.httpsMod.ServerOptions
 import typingsJapgolly.roads.mod.Road
-import typingsJapgolly.roadsServer.http2ServerMod.default
+import typingsJapgolly.roadsServer.typesHttp2ServerMod.default
+import typingsJapgolly.roadsServer.typesHttpServerMod.RoadsServerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("roads-server", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("roads-server", "Http2Server")
   @js.native
-  class Http2Server protected () extends default {
+  open class Http2Server protected () extends default {
     /**
       * Constructs a new Server object that helps create Roads servers.
       *
@@ -20,9 +20,10 @@ object mod extends js.Object {
     def this(road: Road) = this()
   }
   
+  @JSImport("roads-server", "Server")
   @js.native
-  class Server protected ()
-    extends typingsJapgolly.roadsServer.httpServerMod.default {
+  open class Server protected ()
+    extends typingsJapgolly.roadsServer.typesHttpServerMod.default {
     /**
       * Constructs a new Server object that helps create Roads servers.
       *
@@ -33,8 +34,7 @@ object mod extends js.Object {
       */
     def this(road: Road) = this()
     def this(road: Road, error_handler: js.Function) = this()
-    def this(road: Road, error_handler: js.Function, httpsOptions: ServerOptions) = this()
+    def this(road: Road, error_handler: js.Function, options: RoadsServerOptions) = this()
+    def this(road: Road, error_handler: Unit, options: RoadsServerOptions) = this()
   }
-  
 }
-

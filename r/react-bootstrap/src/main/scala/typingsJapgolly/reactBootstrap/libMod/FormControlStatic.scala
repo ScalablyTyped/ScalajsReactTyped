@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.libMod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.formControlStaticMod.FormControlStaticProps
+import typingsJapgolly.reactBootstrap.libFormControlStaticMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "FormControlStatic")
 @js.native
-class FormControlStatic ()
-  extends Component[FormControlStaticProps, js.Object, js.Any]
-
+open class FormControlStatic () extends ^

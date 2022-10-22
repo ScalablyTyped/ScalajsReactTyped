@@ -1,12 +1,13 @@
 package typingsJapgolly.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "MouseConstraint")
 @js.native
-class MouseConstraint () extends js.Object {
+open class MouseConstraint () extends StObject {
+  
   /**
     * The `Body` that is currently being moved by the user, or `null` if no body.
     *
@@ -15,15 +16,17 @@ class MouseConstraint () extends js.Object {
     * @default null
     */
   var body: Body = js.native
+  
   /**
     * An `Object` that specifies the collision filter properties.
     * The collision filter allows the user to define which types of body this mouse constraint can interact with.
     * See `body.collisionFilter` for more information.
     *
     * @property collisionFilter
-    * @type object
+    * @type {any}
     */
   var collisionFilter: ICollisionFilter = js.native
+  
   /**
     * The `Constraint` object that is used to move the body during interaction.
     *
@@ -31,6 +34,7 @@ class MouseConstraint () extends js.Object {
     * @type constraint
     */
   var constraint: Constraint = js.native
+  
   /**
     * The `Mouse` instance in use. If not supplied in `MouseConstraint.create`, one will be created.
     *
@@ -39,20 +43,23 @@ class MouseConstraint () extends js.Object {
     * @default mouse
     */
   var mouse: Mouse = js.native
+  
   /**
     * A `String` denoting the type of object.
     *
     * @property type
-    * @type string
+    * @type {string}
     * @default "constraint"
     */
   var `type`: String = js.native
 }
-
 /* static members */
-@JSImport("matter-js", "MouseConstraint")
-@js.native
-object MouseConstraint extends js.Object {
+object MouseConstraint {
+  
+  @JSImport("matter-js", "MouseConstraint")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new mouse constraint.
     * All properties have default values, and many are pre-calculated automatically based on other properties.
@@ -60,9 +67,8 @@ object MouseConstraint extends js.Object {
     * @method create
     * @param {engine} engine
     * @param {} options
-    * @return {MouseConstraint} A new MouseConstraint
+    * @returns {MouseConstraint} A new MouseConstraint
     */
-  def create(engine: Engine): MouseConstraint = js.native
-  def create(engine: Engine, options: IMouseConstraintDefinition): MouseConstraint = js.native
+  inline def create(engine: Engine): MouseConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(engine.asInstanceOf[js.Any]).asInstanceOf[MouseConstraint]
+  inline def create(engine: Engine, options: IMouseConstraintDefinition): MouseConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(engine.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MouseConstraint]
 }
-

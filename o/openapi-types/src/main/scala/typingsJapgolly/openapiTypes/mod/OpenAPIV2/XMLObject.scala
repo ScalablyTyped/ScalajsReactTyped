@@ -1,37 +1,51 @@
 package typingsJapgolly.openapiTypes.mod.OpenAPIV2
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait XMLObject
-  extends /* index */ StringDictionary[js.Any] {
+  extends StObject
+     with /* index */ StringDictionary[Any] {
+  
   var attribute: js.UndefOr[Boolean] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var namespace: js.UndefOr[String] = js.undefined
+  
   var prefix: js.UndefOr[String] = js.undefined
+  
   var wrapped: js.UndefOr[Boolean] = js.undefined
 }
-
 object XMLObject {
-  @scala.inline
-  def apply(
-    StringDictionary: /* index */ StringDictionary[js.Any] = null,
-    attribute: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    namespace: String = null,
-    prefix: String = null,
-    wrapped: js.UndefOr[Boolean] = js.undefined
-  ): XMLObject = {
+  
+  inline def apply(): XMLObject = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(attribute)) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapped)) __obj.updateDynamic("wrapped")(wrapped.asInstanceOf[js.Any])
     __obj.asInstanceOf[XMLObject]
   }
+  
+  extension [Self <: XMLObject](x: Self) {
+    
+    inline def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    
+    inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    
+    inline def setWrapped(value: Boolean): Self = StObject.set(x, "wrapped", value.asInstanceOf[js.Any])
+    
+    inline def setWrappedUndefined: Self = StObject.set(x, "wrapped", js.undefined)
+  }
 }
-

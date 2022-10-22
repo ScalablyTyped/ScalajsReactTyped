@@ -1,19 +1,22 @@
 package typingsJapgolly.stripeV3.stripe.paymentMethod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EpsDetails extends js.Object {
+trait EpsDetails extends StObject {
+  
   var verified_name: String
 }
-
 object EpsDetails {
-  @scala.inline
-  def apply(verified_name: String): EpsDetails = {
-    val __obj = js.Dynamic.literal(verified_name = verified_name.asInstanceOf[js.Any])
   
+  inline def apply(verified_name: String): EpsDetails = {
+    val __obj = js.Dynamic.literal(verified_name = verified_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EpsDetails]
   }
+  
+  extension [Self <: EpsDetails](x: Self) {
+    
+    inline def setVerified_name(value: String): Self = StObject.set(x, "verified_name", value.asInstanceOf[js.Any])
+  }
 }
-

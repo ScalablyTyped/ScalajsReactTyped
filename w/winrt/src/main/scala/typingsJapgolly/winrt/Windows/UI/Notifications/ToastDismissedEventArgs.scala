@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Notifications.ToastDismissedEventArgs")
-@js.native
-class ToastDismissedEventArgs () extends IToastDismissedEventArgs {
-  /* CompleteClass */
-  override var reason: ToastDismissalReason = js.native
+trait ToastDismissedEventArgs
+  extends StObject
+     with IToastDismissedEventArgs
+object ToastDismissedEventArgs {
+  
+  inline def apply(reason: ToastDismissalReason): ToastDismissedEventArgs = {
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ToastDismissedEventArgs]
+  }
 }
-

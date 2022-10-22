@@ -1,59 +1,53 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-feet`
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-inches`
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-kilometers`
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-meters`
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-miles`
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-us-feet`
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-yards`
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.acres
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ares
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.hectares
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.imperial
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.metric
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AreaMeasurement3D extends Widget_ {
+trait AreaMeasurement3D
+  extends StObject
+     with Widget_ {
+  
+  /**
+    * The area measurement analysis object being created or modified by the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html#analysis)
+    */
+  val analysis: AreaMeasurementAnalysis = js.native
+  
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html#iconClass)
     */
   var iconClass: String = js.native
+  
   /**
     * Unit system (imperial, metric) or specific unit used for displaying the area values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html#unit)
     */
-  var unit: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares = js.native
+  var unit: SystemOrAreaUnit = js.native
+  
   /**
     * List of available units and unit systems (imperial, metric) for displaying the area values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html#unitOptions)
     */
-  var unitOptions: js.Array[
-    metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
-  ] = js.native
+  var unitOptions: js.Array[SystemOrAreaUnit] = js.native
+  
   /**
-    * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
+    * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html#view)
     */
   var view: SceneView = js.native
+  
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [AreaMeasurement3DViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html#viewModel)
     */
   var viewModel: AreaMeasurement3DViewModel = js.native
 }
-
-@JSGlobal("__esri.AreaMeasurement3D")
-@js.native
-object AreaMeasurement3D extends TopLevel[AreaMeasurement3DConstructor]
-

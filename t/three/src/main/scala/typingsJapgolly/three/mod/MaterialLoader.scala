@@ -1,13 +1,12 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "MaterialLoader")
 @js.native
-class MaterialLoader ()
-  extends typingsJapgolly.three.materialLoaderMod.MaterialLoader {
-  def this(manager: typingsJapgolly.three.loadingManagerMod.LoadingManager) = this()
+open class MaterialLoader ()
+  extends typingsJapgolly.three.srcThreeMod.MaterialLoader {
+  def this(manager: typingsJapgolly.three.srcLoadersLoadingManagerMod.LoadingManager) = this()
 }
-

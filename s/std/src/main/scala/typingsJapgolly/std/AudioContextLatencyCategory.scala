@@ -1,24 +1,20 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.balanced
   - typingsJapgolly.std.stdStrings.interactive
   - typingsJapgolly.std.stdStrings.playback
 */
-trait AudioContextLatencyCategory extends js.Object
-
+trait AudioContextLatencyCategory extends StObject
 object AudioContextLatencyCategory {
-  @scala.inline
-  def balanced: typingsJapgolly.std.stdStrings.balanced = this.cast("balanced")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def interactive: typingsJapgolly.std.stdStrings.interactive = this.cast("interactive")
-  @scala.inline
-  def playback: typingsJapgolly.std.stdStrings.playback = this.cast("playback")
+  
+  inline def balanced: typingsJapgolly.std.stdStrings.balanced = "balanced".asInstanceOf[typingsJapgolly.std.stdStrings.balanced]
+  
+  inline def interactive: typingsJapgolly.std.stdStrings.interactive = "interactive".asInstanceOf[typingsJapgolly.std.stdStrings.interactive]
+  
+  inline def playback: typingsJapgolly.std.stdStrings.playback = "playback".asInstanceOf[typingsJapgolly.std.stdStrings.playback]
 }
-

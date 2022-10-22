@@ -1,29 +1,43 @@
 package typingsJapgolly.playcanvas.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @class
-  * @name pc.RaycastResult
-  * @classdesc Object holding the result of a successful raycast hit.
-  * @description Create a new RaycastResult.
-  * @param {pc.Entity} entity - The entity that was hit.
-  * @param {pc.Vec3} point - The point at which the ray hit the entity in world space.
-  * @param {pc.Vec3} normal - The normal vector of the surface where the ray hit in world space.
-  * @property {pc.Entity} entity The entity that was hit.
-  * @property {pc.Vec3} point The point at which the ray hit the entity in world space.
-  * @property {pc.Vec3} normal The normal vector of the surface where the ray hit in world space.
+  * Object holding the result of a successful raycast hit.
   */
 @JSImport("playcanvas", "RaycastResult")
 @js.native
-class RaycastResult protected ()
-  extends typingsJapgolly.playcanvas.pc.RaycastResult {
-  def this(
-    entity: typingsJapgolly.playcanvas.pc.Entity,
-    point: typingsJapgolly.playcanvas.pc.Vec3,
-    normal: typingsJapgolly.playcanvas.pc.Vec3
-  ) = this()
+open class RaycastResult protected () extends StObject {
+  /**
+    * Create a new RaycastResult instance.
+    *
+    * @param {Entity} entity - The entity that was hit.
+    * @param {Vec3} point - The point at which the ray hit the entity in world space.
+    * @param {Vec3} normal - The normal vector of the surface where the ray hit in world space.
+    * @hideconstructor
+    */
+  def this(entity: Entity, point: Vec3, normal: Vec3) = this()
+  
+  /**
+    * The entity that was hit.
+    *
+    * @type {Entity}
+    */
+  var entity: Entity = js.native
+  
+  /**
+    * The normal vector of the surface where the ray hit in world space.
+    *
+    * @type {Vec3}
+    */
+  var normal: Vec3 = js.native
+  
+  /**
+    * The point at which the ray hit the entity in world space.
+    *
+    * @type {Vec3}
+    */
+  var point: Vec3 = js.native
 }
-

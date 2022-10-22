@@ -1,32 +1,39 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.loading
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ready
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasemapGalleryItem extends Accessor {
+trait BasemapGalleryItem
+  extends StObject
+     with Accessor {
+  
   /**
     * The item's associated basemap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-BasemapGalleryItem.html#basemap)
     */
   var basemap: Basemap = js.native
+  
   /**
     * The Error object returned if an error occurred.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-BasemapGalleryItem.html#error)
     */
   val error: Error = js.native
+  
   /**
-    * The item's state.  **Possible Values:** loading | ready | error
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-BasemapGalleryItem.html#state)
+    * The item's state.
     *
     * @default loading
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-BasemapGalleryItem.html#state)
     */
-  val state: String = js.native
+  val state: loading | ready | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.error = js.native
+  
   /**
     * The view associated with this item.
     *
@@ -34,8 +41,3 @@ trait BasemapGalleryItem extends Accessor {
     */
   var view: MapView | SceneView = js.native
 }
-
-@JSGlobal("__esri.BasemapGalleryItem")
-@js.native
-object BasemapGalleryItem extends TopLevel[BasemapGalleryItemConstructor]
-

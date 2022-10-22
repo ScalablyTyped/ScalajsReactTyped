@@ -1,15 +1,36 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MSHTML.ISVGPathSegCurvetoQuadraticSmoothAbs")
-@js.native
-class ISVGPathSegCurvetoQuadraticSmoothAbs protected () extends js.Object {
-  @JSName("MSHTML.ISVGPathSegCurvetoQuadraticSmoothAbs_typekey")
-  var MSHTMLDotISVGPathSegCurvetoQuadraticSmoothAbs_typekey: ISVGPathSegCurvetoQuadraticSmoothAbs = js.native
-  var x: Double = js.native
-  var y: Double = js.native
+trait ISVGPathSegCurvetoQuadraticSmoothAbs extends StObject {
+  
+  /* private */ @JSName("MSHTML.ISVGPathSegCurvetoQuadraticSmoothAbs_typekey")
+  var MSHTMLDotISVGPathSegCurvetoQuadraticSmoothAbs_typekey: ISVGPathSegCurvetoQuadraticSmoothAbs
+  
+  var x: Double
+  
+  var y: Double
 }
-
+object ISVGPathSegCurvetoQuadraticSmoothAbs {
+  
+  inline def apply(
+    MSHTMLDotISVGPathSegCurvetoQuadraticSmoothAbs_typekey: ISVGPathSegCurvetoQuadraticSmoothAbs,
+    x: Double,
+    y: Double
+  ): ISVGPathSegCurvetoQuadraticSmoothAbs = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSHTML.ISVGPathSegCurvetoQuadraticSmoothAbs_typekey")(MSHTMLDotISVGPathSegCurvetoQuadraticSmoothAbs_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISVGPathSegCurvetoQuadraticSmoothAbs]
+  }
+  
+  extension [Self <: ISVGPathSegCurvetoQuadraticSmoothAbs](x: Self) {
+    
+    inline def setMSHTMLDotISVGPathSegCurvetoQuadraticSmoothAbs_typekey(value: ISVGPathSegCurvetoQuadraticSmoothAbs): Self = StObject.set(x, "MSHTML.ISVGPathSegCurvetoQuadraticSmoothAbs_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+  }
+}

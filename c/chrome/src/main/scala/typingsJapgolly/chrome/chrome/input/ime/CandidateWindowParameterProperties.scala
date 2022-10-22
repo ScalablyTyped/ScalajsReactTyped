@@ -1,40 +1,47 @@
 package typingsJapgolly.chrome.chrome.input.ime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CandidateWindowParameterProperties extends js.Object {
+trait CandidateWindowParameterProperties extends StObject {
+  
   /**
     * Optional.
     * Text that is shown at the bottom of the candidate window.
     */
   var auxiliaryText: js.UndefOr[String] = js.undefined
+  
   /**
     * Optional.
     * True to display the auxiliary text, false to hide it.
     */
   var auxiliaryTextVisible: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Optional.
     * True to show the cursor, false to hide it.
     */
   var cursorVisible: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Optional.
     * The number of candidates to display per page.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
+  
   /**
     * Optional.
     * True if the candidate window should be rendered vertical, false to make it horizontal.
     */
   var vertical: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Optional.
     * True to show the Candidate window, false to hide it.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Optional.
     * Where to display the candidate window.
@@ -42,27 +49,41 @@ trait CandidateWindowParameterProperties extends js.Object {
     */
   var windowPosition: js.UndefOr[String] = js.undefined
 }
-
 object CandidateWindowParameterProperties {
-  @scala.inline
-  def apply(
-    auxiliaryText: String = null,
-    auxiliaryTextVisible: js.UndefOr[Boolean] = js.undefined,
-    cursorVisible: js.UndefOr[Boolean] = js.undefined,
-    pageSize: Int | Double = null,
-    vertical: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    windowPosition: String = null
-  ): CandidateWindowParameterProperties = {
+  
+  inline def apply(): CandidateWindowParameterProperties = {
     val __obj = js.Dynamic.literal()
-    if (auxiliaryText != null) __obj.updateDynamic("auxiliaryText")(auxiliaryText.asInstanceOf[js.Any])
-    if (!js.isUndefined(auxiliaryTextVisible)) __obj.updateDynamic("auxiliaryTextVisible")(auxiliaryTextVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(cursorVisible)) __obj.updateDynamic("cursorVisible")(cursorVisible.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (windowPosition != null) __obj.updateDynamic("windowPosition")(windowPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[CandidateWindowParameterProperties]
   }
+  
+  extension [Self <: CandidateWindowParameterProperties](x: Self) {
+    
+    inline def setAuxiliaryText(value: String): Self = StObject.set(x, "auxiliaryText", value.asInstanceOf[js.Any])
+    
+    inline def setAuxiliaryTextUndefined: Self = StObject.set(x, "auxiliaryText", js.undefined)
+    
+    inline def setAuxiliaryTextVisible(value: Boolean): Self = StObject.set(x, "auxiliaryTextVisible", value.asInstanceOf[js.Any])
+    
+    inline def setAuxiliaryTextVisibleUndefined: Self = StObject.set(x, "auxiliaryTextVisible", js.undefined)
+    
+    inline def setCursorVisible(value: Boolean): Self = StObject.set(x, "cursorVisible", value.asInstanceOf[js.Any])
+    
+    inline def setCursorVisibleUndefined: Self = StObject.set(x, "cursorVisible", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWindowPosition(value: String): Self = StObject.set(x, "windowPosition", value.asInstanceOf[js.Any])
+    
+    inline def setWindowPositionUndefined: Self = StObject.set(x, "windowPosition", js.undefined)
+  }
 }
-

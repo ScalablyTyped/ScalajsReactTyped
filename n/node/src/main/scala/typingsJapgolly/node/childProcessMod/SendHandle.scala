@@ -1,12 +1,11 @@
 package typingsJapgolly.node.childProcessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.node.netMod.Socket
-  - typingsJapgolly.node.netMod.Server
+  - typingsJapgolly.node.nodeColonnetMod.Socket
+  - typingsJapgolly.node.nodeColonnetMod.Server
 */
-trait SendHandle extends js.Object
-
+trait SendHandle extends StObject

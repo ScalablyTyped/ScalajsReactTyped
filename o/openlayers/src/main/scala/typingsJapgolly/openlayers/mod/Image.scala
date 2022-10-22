@@ -1,14 +1,14 @@
 package typingsJapgolly.openlayers.mod
 
-import org.scalajs.dom.raw.HTMLCanvasElement
-import org.scalajs.dom.raw.HTMLVideoElement
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Image")
 @js.native
-class Image protected () extends ImageBase {
+open class Image protected () extends ImageBase {
   /**
     * @param extent Extent.
     * @param resolution Resolution.
@@ -42,6 +42,16 @@ class Image protected () extends ImageBase {
     crossOrigin: String,
     imageLoadFunction: ImageLoadFunctionType
   ) = this()
+  def this(
+    extent: Extent_,
+    resolution: Double,
+    pixelRatio: Double,
+    attributions: js.Array[Attribution],
+    src: String,
+    crossOrigin: Unit,
+    imageLoadFunction: ImageLoadFunctionType
+  ) = this()
+  
   /**
     * Get the HTML image element (may be a Canvas, Image, or Video).
     * @param opt_context Object.
@@ -50,6 +60,7 @@ class Image protected () extends ImageBase {
     */
   def getImage(): HTMLCanvasElement | Image | HTMLVideoElement = js.native
   def getImage(opt_context: GlobalObject): HTMLCanvasElement | Image | HTMLVideoElement = js.native
+  
   /**
     * Load the image or retry if loading previously failed.
     * Loading is taken care of by the tile queue, and calling this method is
@@ -58,4 +69,3 @@ class Image protected () extends ImageBase {
     */
   def load(): Unit = js.native
 }
-

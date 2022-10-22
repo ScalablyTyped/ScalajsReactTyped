@@ -1,43 +1,65 @@
 package typingsJapgolly.arangodb.ArangoDB
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Transaction extends js.Object {
+trait Transaction[ReturnType] extends StObject {
+  
+  def action(params: js.Object): ReturnType
+  
   var collections: TransactionCollections | js.Array[String]
+  
   var intermediateCommitCount: js.UndefOr[Double] = js.undefined
+  
   var intermediateCommitSize: js.UndefOr[Double] = js.undefined
+  
   var lockTimeout: js.UndefOr[Double] = js.undefined
+  
   // RocksDB
   var maxTransactionsSize: js.UndefOr[Double] = js.undefined
+  
   var params: js.UndefOr[js.Object] = js.undefined
+  
   var waitForSync: js.UndefOr[Boolean] = js.undefined
-  def action(params: js.Object): Unit | String
 }
-
 object Transaction {
-  @scala.inline
-  def apply(
-    action: js.Object => CallbackTo[Unit | String],
-    collections: TransactionCollections | js.Array[String],
-    intermediateCommitCount: Int | Double = null,
-    intermediateCommitSize: Int | Double = null,
-    lockTimeout: Int | Double = null,
-    maxTransactionsSize: Int | Double = null,
-    params: js.Object = null,
-    waitForSync: js.UndefOr[Boolean] = js.undefined
-  ): Transaction = {
-    val __obj = js.Dynamic.literal(collections = collections.asInstanceOf[js.Any])
-    __obj.updateDynamic("action")(js.Any.fromFunction1((t0: js.Object) => action(t0).runNow()))
-    if (intermediateCommitCount != null) __obj.updateDynamic("intermediateCommitCount")(intermediateCommitCount.asInstanceOf[js.Any])
-    if (intermediateCommitSize != null) __obj.updateDynamic("intermediateCommitSize")(intermediateCommitSize.asInstanceOf[js.Any])
-    if (lockTimeout != null) __obj.updateDynamic("lockTimeout")(lockTimeout.asInstanceOf[js.Any])
-    if (maxTransactionsSize != null) __obj.updateDynamic("maxTransactionsSize")(maxTransactionsSize.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Transaction]
+  
+  inline def apply[ReturnType](action: js.Object => ReturnType, collections: TransactionCollections | js.Array[String]): Transaction[ReturnType] = {
+    val __obj = js.Dynamic.literal(action = js.Any.fromFunction1(action), collections = collections.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Transaction[ReturnType]]
+  }
+  
+  extension [Self <: Transaction[?], ReturnType](x: Self & Transaction[ReturnType]) {
+    
+    inline def setAction(value: js.Object => ReturnType): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+    
+    inline def setCollections(value: TransactionCollections | js.Array[String]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
+    
+    inline def setCollectionsVarargs(value: String*): Self = StObject.set(x, "collections", js.Array(value*))
+    
+    inline def setIntermediateCommitCount(value: Double): Self = StObject.set(x, "intermediateCommitCount", value.asInstanceOf[js.Any])
+    
+    inline def setIntermediateCommitCountUndefined: Self = StObject.set(x, "intermediateCommitCount", js.undefined)
+    
+    inline def setIntermediateCommitSize(value: Double): Self = StObject.set(x, "intermediateCommitSize", value.asInstanceOf[js.Any])
+    
+    inline def setIntermediateCommitSizeUndefined: Self = StObject.set(x, "intermediateCommitSize", js.undefined)
+    
+    inline def setLockTimeout(value: Double): Self = StObject.set(x, "lockTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setLockTimeoutUndefined: Self = StObject.set(x, "lockTimeout", js.undefined)
+    
+    inline def setMaxTransactionsSize(value: Double): Self = StObject.set(x, "maxTransactionsSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxTransactionsSizeUndefined: Self = StObject.set(x, "maxTransactionsSize", js.undefined)
+    
+    inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
+    inline def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
   }
 }
-

@@ -1,15 +1,17 @@
 package typingsJapgolly.blueprintjsTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/table", "RowLoadingOption")
 @js.native
-object RowLoadingOption extends js.Object {
-  /* "cells" */ val CELLS: typingsJapgolly.blueprintjsTable.esmRegionsMod.RowLoadingOption.CELLS with String = js.native
-  /* "row-header" */ val HEADER: typingsJapgolly.blueprintjsTable.esmRegionsMod.RowLoadingOption.HEADER with String = js.native
+object RowLoadingOption extends StObject {
+  
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typingsJapgolly.blueprintjsTable.esmRegionsMod.RowLoadingOption with String] = js.native
+  def apply(value: String): js.UndefOr[typingsJapgolly.blueprintjsTable.libEsmRegionsMod.RowLoadingOption & String] = js.native
+  
+  /* "cells" */ val CELLS: typingsJapgolly.blueprintjsTable.libEsmRegionsMod.RowLoadingOption.CELLS & String = js.native
+  
+  /* "row-header" */ val HEADER: typingsJapgolly.blueprintjsTable.libEsmRegionsMod.RowLoadingOption.HEADER & String = js.native
 }
-

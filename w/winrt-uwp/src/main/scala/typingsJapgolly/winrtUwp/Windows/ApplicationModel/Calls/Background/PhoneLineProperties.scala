@@ -1,88 +1,73 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Calls.Background
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhoneLineProperties extends js.Object
-
+sealed trait PhoneLineProperties extends StObject
 /** Indicates a set of property flags that are part of a phone line changed trigger. Multiple properties can be set at one time. */
 @JSGlobal("Windows.ApplicationModel.Calls.Background.PhoneLineProperties")
 @js.native
-object PhoneLineProperties extends js.Object {
+object PhoneLineProperties extends StObject {
+  
   /** The branding options for the phone line. */
   @js.native
-  sealed trait brandingOptions extends PhoneLineProperties
+  sealed trait brandingOptions
+    extends StObject
+       with PhoneLineProperties
   
   /** The ability to dial outgoing calls on the phone line. */
   @js.native
-  sealed trait canDial extends PhoneLineProperties
+  sealed trait canDial
+    extends StObject
+       with PhoneLineProperties
   
   /** The cellular details for the phone line. */
   @js.native
-  sealed trait cellularDetails extends PhoneLineProperties
+  sealed trait cellularDetails
+    extends StObject
+       with PhoneLineProperties
   
   /** The preferred display color for the phone line. */
   @js.native
-  sealed trait displayColor extends PhoneLineProperties
+  sealed trait displayColor
+    extends StObject
+       with PhoneLineProperties
   
   /** The user assigned friendly name of the phone line. */
   @js.native
-  sealed trait displayName extends PhoneLineProperties
+  sealed trait displayName
+    extends StObject
+       with PhoneLineProperties
   
   /** The name of the current network that is being used by the phone line. */
   @js.native
-  sealed trait networkName extends PhoneLineProperties
+  sealed trait networkName
+    extends StObject
+       with PhoneLineProperties
   
   /** The current network status of the phone line. */
   @js.native
-  sealed trait networkState extends PhoneLineProperties
+  sealed trait networkState
+    extends StObject
+       with PhoneLineProperties
   
   /** No property. */
   @js.native
-  sealed trait none extends PhoneLineProperties
+  sealed trait none
+    extends StObject
+       with PhoneLineProperties
   
   /** The transport (cellular or voice over IP) for the phone line. */
   @js.native
-  sealed trait transport extends PhoneLineProperties
+  sealed trait transport
+    extends StObject
+       with PhoneLineProperties
   
   /** The voice mail account associated with the phone line. */
   @js.native
-  sealed trait voicemail extends PhoneLineProperties
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhoneLineProperties with Double] = js.native
-  /* 1 */ @js.native
-  object brandingOptions extends TopLevel[brandingOptions with Double]
-  
-  /* 2 */ @js.native
-  object canDial extends TopLevel[canDial with Double]
-  
-  /* 3 */ @js.native
-  object cellularDetails extends TopLevel[cellularDetails with Double]
-  
-  /* 4 */ @js.native
-  object displayColor extends TopLevel[displayColor with Double]
-  
-  /* 5 */ @js.native
-  object displayName extends TopLevel[displayName with Double]
-  
-  /* 6 */ @js.native
-  object networkName extends TopLevel[networkName with Double]
-  
-  /* 7 */ @js.native
-  object networkState extends TopLevel[networkState with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 8 */ @js.native
-  object transport extends TopLevel[transport with Double]
-  
-  /* 9 */ @js.native
-  object voicemail extends TopLevel[voicemail with Double]
-  
+  sealed trait voicemail
+    extends StObject
+       with PhoneLineProperties
 }
-

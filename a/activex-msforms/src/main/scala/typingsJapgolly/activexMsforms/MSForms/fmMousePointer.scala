@@ -1,75 +1,71 @@
 package typingsJapgolly.activexMsforms.MSForms
 
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`0`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`10`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`11`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`12`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`13`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`14`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`15`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`1`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`2`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`3`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`6`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`7`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`8`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`99`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`9`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`0`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`10`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`11`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`12`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`13`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`14`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`15`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`1`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`2`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`3`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`6`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`7`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`8`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`99`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`13`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`1`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`2`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`99`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`0`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`14`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`11`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`3`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`12`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`15`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`6`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`7`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`8`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`9`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`10`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`13`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`1`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`2`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`99`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`0`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`14`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`11`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`3`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`12`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`15`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`6`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`7`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`8`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`9`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`10`
 */
-trait fmMousePointer extends js.Object
-
+trait fmMousePointer extends StObject
 object fmMousePointer {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fmMousePointerAppStarting: `13` = this.cast(13)
-  @scala.inline
-  def fmMousePointerArrow: `1` = this.cast(1)
-  @scala.inline
-  def fmMousePointerCross: `2` = this.cast(2)
-  @scala.inline
-  def fmMousePointerCustom: `99` = this.cast(99)
-  @scala.inline
-  def fmMousePointerDefault: `0` = this.cast(0)
-  @scala.inline
-  def fmMousePointerHelp: `14` = this.cast(14)
-  @scala.inline
-  def fmMousePointerHourGlass: `11` = this.cast(11)
-  @scala.inline
-  def fmMousePointerIBeam: `3` = this.cast(3)
-  @scala.inline
-  def fmMousePointerNoDrop: `12` = this.cast(12)
-  @scala.inline
-  def fmMousePointerSizeAll: `15` = this.cast(15)
-  @scala.inline
-  def fmMousePointerSizeNESW: `6` = this.cast(6)
-  @scala.inline
-  def fmMousePointerSizeNS: `7` = this.cast(7)
-  @scala.inline
-  def fmMousePointerSizeNWSE: `8` = this.cast(8)
-  @scala.inline
-  def fmMousePointerSizeWE: `9` = this.cast(9)
-  @scala.inline
-  def fmMousePointerUpArrow: `10` = this.cast(10)
+  
+  inline def fmMousePointerAppStarting: `13` = 13.asInstanceOf[`13`]
+  
+  inline def fmMousePointerArrow: `1` = 1.asInstanceOf[`1`]
+  
+  inline def fmMousePointerCross: `2` = 2.asInstanceOf[`2`]
+  
+  inline def fmMousePointerCustom: `99` = 99.asInstanceOf[`99`]
+  
+  inline def fmMousePointerDefault: `0` = 0.asInstanceOf[`0`]
+  
+  inline def fmMousePointerHelp: `14` = 14.asInstanceOf[`14`]
+  
+  inline def fmMousePointerHourGlass: `11` = 11.asInstanceOf[`11`]
+  
+  inline def fmMousePointerIBeam: `3` = 3.asInstanceOf[`3`]
+  
+  inline def fmMousePointerNoDrop: `12` = 12.asInstanceOf[`12`]
+  
+  inline def fmMousePointerSizeAll: `15` = 15.asInstanceOf[`15`]
+  
+  inline def fmMousePointerSizeNESW: `6` = 6.asInstanceOf[`6`]
+  
+  inline def fmMousePointerSizeNS: `7` = 7.asInstanceOf[`7`]
+  
+  inline def fmMousePointerSizeNWSE: `8` = 8.asInstanceOf[`8`]
+  
+  inline def fmMousePointerSizeWE: `9` = 9.asInstanceOf[`9`]
+  
+  inline def fmMousePointerUpArrow: `10` = 10.asInstanceOf[`10`]
 }
-

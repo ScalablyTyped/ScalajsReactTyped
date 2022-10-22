@@ -1,217 +1,74 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.ReactEventFrom
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.reactNative.mod.AccessibilityActionInfo
-import typingsJapgolly.reactNative.mod.AccessibilityRole
-import typingsJapgolly.reactNative.mod.AccessibilityState
-import typingsJapgolly.reactNative.mod.AccessibilityStates
-import typingsJapgolly.reactNative.mod.AccessibilityTrait
-import typingsJapgolly.reactNative.mod.Insets
-import typingsJapgolly.reactNative.mod.LayoutChangeEvent
-import typingsJapgolly.reactNative.mod.NodeHandle
-import typingsJapgolly.reactNative.mod.StyleProp
-import typingsJapgolly.reactNative.mod.TVParallaxProperties
-import typingsJapgolly.reactNative.mod.ViewStyle
-import typingsJapgolly.reactNative.reactNativeStrings.`box-none`
-import typingsJapgolly.reactNative.reactNativeStrings.`box-only`
-import typingsJapgolly.reactNative.reactNativeStrings.`no-hide-descendants`
-import typingsJapgolly.reactNative.reactNativeStrings.assertive
-import typingsJapgolly.reactNative.reactNativeStrings.auto
-import typingsJapgolly.reactNative.reactNativeStrings.button
-import typingsJapgolly.reactNative.reactNativeStrings.no
-import typingsJapgolly.reactNative.reactNativeStrings.none
-import typingsJapgolly.reactNative.reactNativeStrings.polite
-import typingsJapgolly.reactNative.reactNativeStrings.radiobutton_checked
-import typingsJapgolly.reactNative.reactNativeStrings.radiobutton_unchecked
-import typingsJapgolly.reactNative.reactNativeStrings.yes
-import typingsJapgolly.reactNativeChartsWrapper.AnonDataIndex
-import typingsJapgolly.reactNativeChartsWrapper.AnonDigits
-import typingsJapgolly.reactNativeChartsWrapper.AnonDurationX
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RadarChartProps extends PieRadarChartBase {
+trait RadarChartProps
+  extends StObject
+     with PieRadarChartBase {
+  
   var data: js.UndefOr[RadarData] = js.undefined
+  
   var drawWeb: js.UndefOr[Boolean] = js.undefined
+  
   var skipWebLineCount: js.UndefOr[Double] = js.undefined
+  
   var webAlpha: js.UndefOr[Double] = js.undefined
+  
   var webColor: js.UndefOr[Color] = js.undefined
+  
   var webColorInner: js.UndefOr[Color] = js.undefined
+  
   var webLineWidth: js.UndefOr[Double] = js.undefined
+  
   var webLineWidthInner: js.UndefOr[Double] = js.undefined
+  
   var yAxis: js.UndefOr[typingsJapgolly.reactNativeChartsWrapper.mod.yAxis] = js.undefined
 }
-
 object RadarChartProps {
-  @scala.inline
-  def apply(
-    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
-    accessibilityHint: String = null,
-    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
-    accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    accessibilityRole: AccessibilityRole = null,
-    accessibilityState: AccessibilityState = null,
-    accessibilityStates: js.Array[AccessibilityStates] = null,
-    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
-    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
-    accessible: js.UndefOr[Boolean] = js.undefined,
-    animation: AnonDurationX = null,
-    chartBackgroundColor: Int | Double = null,
-    chartDescription: ChartDescription = null,
-    collapsable: js.UndefOr[Boolean] = js.undefined,
-    data: RadarData = null,
-    dragDecelerationEnabled: js.UndefOr[Boolean] = js.undefined,
-    dragDecelerationFrictionCoef: Int | Double = null,
-    drawWeb: js.UndefOr[Boolean] = js.undefined,
-    hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
-    highlightPerTapEnabled: js.UndefOr[Boolean] = js.undefined,
-    highlights: js.Array[AnonDataIndex] = null,
-    hitSlop: Insets = null,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
-    isTVSelectable: js.UndefOr[Boolean] = js.undefined,
-    legend: ChartLegend = null,
-    logEnabled: js.UndefOr[Boolean] = js.undefined,
-    marker: AnonDigits = null,
-    minOffset: Int | Double = null,
-    nativeID: String = null,
-    needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
-    noDataText: String = null,
-    onAccessibilityAction: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onAccessibilityEscape: js.UndefOr[Callback] = js.undefined,
-    onAccessibilityTap: js.UndefOr[Callback] = js.undefined,
-    onChange: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onLayout: /* event */ LayoutChangeEvent => Callback = null,
-    onMagicTap: js.UndefOr[Callback] = js.undefined,
-    onMoveShouldSetResponder: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onMoveShouldSetResponderCapture: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onResponderEnd: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderGrant: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderMove: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderReject: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderRelease: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderStart: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderTerminate: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderTerminationRequest: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onSelect: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onStartShouldSetResponder: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onStartShouldSetResponderCapture: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onTouchCancel: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchEnd: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchEndCapture: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchMove: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchStart: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    pointerEvents: `box-none` | none | `box-only` | auto = null,
-    removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
-    renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
-    rotationAngle: Int | Double = null,
-    rotationEnabled: js.UndefOr[Boolean] = js.undefined,
-    shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
-    skipWebLineCount: Int | Double = null,
-    style: StyleProp[ViewStyle] = null,
-    testID: String = null,
-    touchEnabled: js.UndefOr[Boolean] = js.undefined,
-    tvParallaxMagnification: Int | Double = null,
-    tvParallaxProperties: TVParallaxProperties = null,
-    tvParallaxShiftDistanceX: Int | Double = null,
-    tvParallaxShiftDistanceY: Int | Double = null,
-    tvParallaxTiltAngle: Int | Double = null,
-    webAlpha: Int | Double = null,
-    webColor: Int | Double = null,
-    webColorInner: Int | Double = null,
-    webLineWidth: Int | Double = null,
-    webLineWidthInner: Int | Double = null,
-    xAxis: xAxis = null,
-    yAxis: yAxis = null
-  ): RadarChartProps = {
+  
+  inline def apply(): RadarChartProps = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (chartBackgroundColor != null) __obj.updateDynamic("chartBackgroundColor")(chartBackgroundColor.asInstanceOf[js.Any])
-    if (chartDescription != null) __obj.updateDynamic("chartDescription")(chartDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragDecelerationEnabled)) __obj.updateDynamic("dragDecelerationEnabled")(dragDecelerationEnabled.asInstanceOf[js.Any])
-    if (dragDecelerationFrictionCoef != null) __obj.updateDynamic("dragDecelerationFrictionCoef")(dragDecelerationFrictionCoef.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawWeb)) __obj.updateDynamic("drawWeb")(drawWeb.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightPerTapEnabled)) __obj.updateDynamic("highlightPerTapEnabled")(highlightPerTapEnabled.asInstanceOf[js.Any])
-    if (highlights != null) __obj.updateDynamic("highlights")(highlights.asInstanceOf[js.Any])
-    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (!js.isUndefined(logEnabled)) __obj.updateDynamic("logEnabled")(logEnabled.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (minOffset != null) __obj.updateDynamic("minOffset")(minOffset.asInstanceOf[js.Any])
-    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
-    if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.asInstanceOf[js.Any])
-    if (noDataText != null) __obj.updateDynamic("noDataText")(noDataText.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onAccessibilityAction(t0).runNow()))
-    onAccessibilityEscape.foreach(p => __obj.updateDynamic("onAccessibilityEscape")(p.toJsFn))
-    onAccessibilityTap.foreach(p => __obj.updateDynamic("onAccessibilityTap")(p.toJsFn))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onChange(t0).runNow()))
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactNative.mod.LayoutChangeEvent) => onLayout(t0).runNow()))
-    onMagicTap.foreach(p => __obj.updateDynamic("onMagicTap")(p.toJsFn))
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onMoveShouldSetResponder(t0).runNow()))
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onMoveShouldSetResponderCapture(t0).runNow()))
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderEnd(t0).runNow()))
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderGrant(t0).runNow()))
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderMove(t0).runNow()))
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderReject(t0).runNow()))
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderRelease(t0).runNow()))
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderStart(t0).runNow()))
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderTerminate(t0).runNow()))
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderTerminationRequest(t0).runNow()))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onSelect(t0).runNow()))
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onStartShouldSetResponder(t0).runNow()))
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onStartShouldSetResponderCapture(t0).runNow()))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchCancel(t0).runNow()))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchEnd(t0).runNow()))
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchEndCapture(t0).runNow()))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchMove(t0).runNow()))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchStart(t0).runNow()))
-    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.asInstanceOf[js.Any])
-    if (rotationAngle != null) __obj.updateDynamic("rotationAngle")(rotationAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotationEnabled)) __obj.updateDynamic("rotationEnabled")(rotationEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.asInstanceOf[js.Any])
-    if (skipWebLineCount != null) __obj.updateDynamic("skipWebLineCount")(skipWebLineCount.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchEnabled)) __obj.updateDynamic("touchEnabled")(touchEnabled.asInstanceOf[js.Any])
-    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
-    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])
-    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
-    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
-    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
-    if (webAlpha != null) __obj.updateDynamic("webAlpha")(webAlpha.asInstanceOf[js.Any])
-    if (webColor != null) __obj.updateDynamic("webColor")(webColor.asInstanceOf[js.Any])
-    if (webColorInner != null) __obj.updateDynamic("webColorInner")(webColorInner.asInstanceOf[js.Any])
-    if (webLineWidth != null) __obj.updateDynamic("webLineWidth")(webLineWidth.asInstanceOf[js.Any])
-    if (webLineWidthInner != null) __obj.updateDynamic("webLineWidthInner")(webLineWidthInner.asInstanceOf[js.Any])
-    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
-    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadarChartProps]
   }
+  
+  extension [Self <: RadarChartProps](x: Self) {
+    
+    inline def setData(value: RadarData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDrawWeb(value: Boolean): Self = StObject.set(x, "drawWeb", value.asInstanceOf[js.Any])
+    
+    inline def setDrawWebUndefined: Self = StObject.set(x, "drawWeb", js.undefined)
+    
+    inline def setSkipWebLineCount(value: Double): Self = StObject.set(x, "skipWebLineCount", value.asInstanceOf[js.Any])
+    
+    inline def setSkipWebLineCountUndefined: Self = StObject.set(x, "skipWebLineCount", js.undefined)
+    
+    inline def setWebAlpha(value: Double): Self = StObject.set(x, "webAlpha", value.asInstanceOf[js.Any])
+    
+    inline def setWebAlphaUndefined: Self = StObject.set(x, "webAlpha", js.undefined)
+    
+    inline def setWebColor(value: Color): Self = StObject.set(x, "webColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebColorInner(value: Color): Self = StObject.set(x, "webColorInner", value.asInstanceOf[js.Any])
+    
+    inline def setWebColorInnerUndefined: Self = StObject.set(x, "webColorInner", js.undefined)
+    
+    inline def setWebColorUndefined: Self = StObject.set(x, "webColor", js.undefined)
+    
+    inline def setWebLineWidth(value: Double): Self = StObject.set(x, "webLineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWebLineWidthInner(value: Double): Self = StObject.set(x, "webLineWidthInner", value.asInstanceOf[js.Any])
+    
+    inline def setWebLineWidthInnerUndefined: Self = StObject.set(x, "webLineWidthInner", js.undefined)
+    
+    inline def setWebLineWidthUndefined: Self = StObject.set(x, "webLineWidth", js.undefined)
+    
+    inline def setYAxis(value: yAxis): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
+  }
 }
-

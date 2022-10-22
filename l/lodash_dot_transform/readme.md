@@ -10,10 +10,10 @@ The lodash method `_.transform` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.transform |
 | Keywords           | lodash-modularized, transform |
-| # releases         | 0 |
-| # dependents       | 63 |
-| # downloads        | 13958577 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3820542.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

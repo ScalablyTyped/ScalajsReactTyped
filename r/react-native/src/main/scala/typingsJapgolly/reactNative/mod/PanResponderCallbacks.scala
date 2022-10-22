@@ -1,139 +1,203 @@
 package typingsJapgolly.reactNative.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.ReactEventFrom
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PanResponderCallbacks extends js.Object {
+trait PanResponderCallbacks extends StObject {
+  
   var onMoveShouldSetPanResponder: js.UndefOr[
     js.Function2[
-      ReactEventFrom[NodeHandle with Element], 
+      ReactEventFrom[NodeHandle & Element], 
       /* gestureState */ PanResponderGestureState, 
       Boolean
     ]
   ] = js.undefined
+  
   var onMoveShouldSetPanResponderCapture: js.UndefOr[
     js.Function2[
-      ReactEventFrom[NodeHandle with Element], 
+      ReactEventFrom[NodeHandle & Element], 
       /* gestureState */ PanResponderGestureState, 
       Boolean
     ]
   ] = js.undefined
+  
   var onPanResponderEnd: js.UndefOr[
     js.Function2[
-      ReactEventFrom[NodeHandle with Element], 
+      ReactEventFrom[NodeHandle & Element], 
       /* gestureState */ PanResponderGestureState, 
       Unit
     ]
   ] = js.undefined
+  
   var onPanResponderGrant: js.UndefOr[
     js.Function2[
-      ReactEventFrom[NodeHandle with Element], 
+      ReactEventFrom[NodeHandle & Element], 
       /* gestureState */ PanResponderGestureState, 
       Unit
     ]
   ] = js.undefined
+  
   var onPanResponderMove: js.UndefOr[
     js.Function2[
-      ReactEventFrom[NodeHandle with Element], 
+      ReactEventFrom[NodeHandle & Element], 
       /* gestureState */ PanResponderGestureState, 
       Unit
     ]
   ] = js.undefined
+  
   var onPanResponderReject: js.UndefOr[
     js.Function2[
-      ReactEventFrom[NodeHandle with Element], 
+      ReactEventFrom[NodeHandle & Element], 
       /* gestureState */ PanResponderGestureState, 
       Unit
     ]
   ] = js.undefined
+  
   var onPanResponderRelease: js.UndefOr[
     js.Function2[
-      ReactEventFrom[NodeHandle with Element], 
+      ReactEventFrom[NodeHandle & Element], 
       /* gestureState */ PanResponderGestureState, 
       Unit
     ]
   ] = js.undefined
+  
   var onPanResponderStart: js.UndefOr[
     js.Function2[
-      ReactEventFrom[NodeHandle with Element], 
+      ReactEventFrom[NodeHandle & Element], 
       /* gestureState */ PanResponderGestureState, 
       Unit
     ]
   ] = js.undefined
+  
   var onPanResponderTerminate: js.UndefOr[
     js.Function2[
-      ReactEventFrom[NodeHandle with Element], 
+      ReactEventFrom[NodeHandle & Element], 
       /* gestureState */ PanResponderGestureState, 
       Unit
     ]
   ] = js.undefined
+  
   var onPanResponderTerminationRequest: js.UndefOr[
     js.Function2[
-      ReactEventFrom[NodeHandle with Element], 
+      ReactEventFrom[NodeHandle & Element], 
       /* gestureState */ PanResponderGestureState, 
       Boolean
     ]
   ] = js.undefined
+  
   var onShouldBlockNativeResponder: js.UndefOr[
     js.Function2[
-      ReactEventFrom[NodeHandle with Element], 
+      ReactEventFrom[NodeHandle & Element], 
       /* gestureState */ PanResponderGestureState, 
       Boolean
     ]
   ] = js.undefined
+  
   var onStartShouldSetPanResponder: js.UndefOr[
     js.Function2[
-      ReactEventFrom[NodeHandle with Element], 
+      ReactEventFrom[NodeHandle & Element], 
       /* gestureState */ PanResponderGestureState, 
       Boolean
     ]
   ] = js.undefined
+  
   var onStartShouldSetPanResponderCapture: js.UndefOr[
     js.Function2[
-      ReactEventFrom[NodeHandle with Element], 
+      ReactEventFrom[NodeHandle & Element], 
       /* gestureState */ PanResponderGestureState, 
       Boolean
     ]
   ] = js.undefined
 }
-
 object PanResponderCallbacks {
-  @scala.inline
-  def apply(
-    onMoveShouldSetPanResponder: (ReactEventFrom[NodeHandle with Element], /* gestureState */ PanResponderGestureState) => CallbackTo[Boolean] = null,
-    onMoveShouldSetPanResponderCapture: (ReactEventFrom[NodeHandle with Element], /* gestureState */ PanResponderGestureState) => CallbackTo[Boolean] = null,
-    onPanResponderEnd: (ReactEventFrom[NodeHandle with Element], /* gestureState */ PanResponderGestureState) => Callback = null,
-    onPanResponderGrant: (ReactEventFrom[NodeHandle with Element], /* gestureState */ PanResponderGestureState) => Callback = null,
-    onPanResponderMove: (ReactEventFrom[NodeHandle with Element], /* gestureState */ PanResponderGestureState) => Callback = null,
-    onPanResponderReject: (ReactEventFrom[NodeHandle with Element], /* gestureState */ PanResponderGestureState) => Callback = null,
-    onPanResponderRelease: (ReactEventFrom[NodeHandle with Element], /* gestureState */ PanResponderGestureState) => Callback = null,
-    onPanResponderStart: (ReactEventFrom[NodeHandle with Element], /* gestureState */ PanResponderGestureState) => Callback = null,
-    onPanResponderTerminate: (ReactEventFrom[NodeHandle with Element], /* gestureState */ PanResponderGestureState) => Callback = null,
-    onPanResponderTerminationRequest: (ReactEventFrom[NodeHandle with Element], /* gestureState */ PanResponderGestureState) => CallbackTo[Boolean] = null,
-    onShouldBlockNativeResponder: (ReactEventFrom[NodeHandle with Element], /* gestureState */ PanResponderGestureState) => CallbackTo[Boolean] = null,
-    onStartShouldSetPanResponder: (ReactEventFrom[NodeHandle with Element], /* gestureState */ PanResponderGestureState) => CallbackTo[Boolean] = null,
-    onStartShouldSetPanResponderCapture: (ReactEventFrom[NodeHandle with Element], /* gestureState */ PanResponderGestureState) => CallbackTo[Boolean] = null
-  ): PanResponderCallbacks = {
+  
+  inline def apply(): PanResponderCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (onMoveShouldSetPanResponder != null) __obj.updateDynamic("onMoveShouldSetPanResponder")(js.Any.fromFunction2((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* gestureState */ typingsJapgolly.reactNative.mod.PanResponderGestureState) => onMoveShouldSetPanResponder(t0, t1).runNow()))
-    if (onMoveShouldSetPanResponderCapture != null) __obj.updateDynamic("onMoveShouldSetPanResponderCapture")(js.Any.fromFunction2((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* gestureState */ typingsJapgolly.reactNative.mod.PanResponderGestureState) => onMoveShouldSetPanResponderCapture(t0, t1).runNow()))
-    if (onPanResponderEnd != null) __obj.updateDynamic("onPanResponderEnd")(js.Any.fromFunction2((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* gestureState */ typingsJapgolly.reactNative.mod.PanResponderGestureState) => onPanResponderEnd(t0, t1).runNow()))
-    if (onPanResponderGrant != null) __obj.updateDynamic("onPanResponderGrant")(js.Any.fromFunction2((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* gestureState */ typingsJapgolly.reactNative.mod.PanResponderGestureState) => onPanResponderGrant(t0, t1).runNow()))
-    if (onPanResponderMove != null) __obj.updateDynamic("onPanResponderMove")(js.Any.fromFunction2((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* gestureState */ typingsJapgolly.reactNative.mod.PanResponderGestureState) => onPanResponderMove(t0, t1).runNow()))
-    if (onPanResponderReject != null) __obj.updateDynamic("onPanResponderReject")(js.Any.fromFunction2((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* gestureState */ typingsJapgolly.reactNative.mod.PanResponderGestureState) => onPanResponderReject(t0, t1).runNow()))
-    if (onPanResponderRelease != null) __obj.updateDynamic("onPanResponderRelease")(js.Any.fromFunction2((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* gestureState */ typingsJapgolly.reactNative.mod.PanResponderGestureState) => onPanResponderRelease(t0, t1).runNow()))
-    if (onPanResponderStart != null) __obj.updateDynamic("onPanResponderStart")(js.Any.fromFunction2((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* gestureState */ typingsJapgolly.reactNative.mod.PanResponderGestureState) => onPanResponderStart(t0, t1).runNow()))
-    if (onPanResponderTerminate != null) __obj.updateDynamic("onPanResponderTerminate")(js.Any.fromFunction2((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* gestureState */ typingsJapgolly.reactNative.mod.PanResponderGestureState) => onPanResponderTerminate(t0, t1).runNow()))
-    if (onPanResponderTerminationRequest != null) __obj.updateDynamic("onPanResponderTerminationRequest")(js.Any.fromFunction2((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* gestureState */ typingsJapgolly.reactNative.mod.PanResponderGestureState) => onPanResponderTerminationRequest(t0, t1).runNow()))
-    if (onShouldBlockNativeResponder != null) __obj.updateDynamic("onShouldBlockNativeResponder")(js.Any.fromFunction2((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* gestureState */ typingsJapgolly.reactNative.mod.PanResponderGestureState) => onShouldBlockNativeResponder(t0, t1).runNow()))
-    if (onStartShouldSetPanResponder != null) __obj.updateDynamic("onStartShouldSetPanResponder")(js.Any.fromFunction2((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* gestureState */ typingsJapgolly.reactNative.mod.PanResponderGestureState) => onStartShouldSetPanResponder(t0, t1).runNow()))
-    if (onStartShouldSetPanResponderCapture != null) __obj.updateDynamic("onStartShouldSetPanResponderCapture")(js.Any.fromFunction2((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* gestureState */ typingsJapgolly.reactNative.mod.PanResponderGestureState) => onStartShouldSetPanResponderCapture(t0, t1).runNow()))
     __obj.asInstanceOf[PanResponderCallbacks]
   }
+  
+  extension [Self <: PanResponderCallbacks](x: Self) {
+    
+    inline def setOnMoveShouldSetPanResponder(
+      value: (ReactEventFrom[NodeHandle & Element], /* gestureState */ PanResponderGestureState) => Boolean
+    ): Self = StObject.set(x, "onMoveShouldSetPanResponder", js.Any.fromFunction2(value))
+    
+    inline def setOnMoveShouldSetPanResponderCapture(
+      value: (ReactEventFrom[NodeHandle & Element], /* gestureState */ PanResponderGestureState) => Boolean
+    ): Self = StObject.set(x, "onMoveShouldSetPanResponderCapture", js.Any.fromFunction2(value))
+    
+    inline def setOnMoveShouldSetPanResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetPanResponderCapture", js.undefined)
+    
+    inline def setOnMoveShouldSetPanResponderUndefined: Self = StObject.set(x, "onMoveShouldSetPanResponder", js.undefined)
+    
+    inline def setOnPanResponderEnd(
+      value: (ReactEventFrom[NodeHandle & Element], /* gestureState */ PanResponderGestureState) => Callback
+    ): Self = StObject.set(x, "onPanResponderEnd", js.Any.fromFunction2((t0: ReactEventFrom[NodeHandle & Element], t1: /* gestureState */ PanResponderGestureState) => (value(t0, t1)).runNow()))
+    
+    inline def setOnPanResponderEndUndefined: Self = StObject.set(x, "onPanResponderEnd", js.undefined)
+    
+    inline def setOnPanResponderGrant(
+      value: (ReactEventFrom[NodeHandle & Element], /* gestureState */ PanResponderGestureState) => Callback
+    ): Self = StObject.set(x, "onPanResponderGrant", js.Any.fromFunction2((t0: ReactEventFrom[NodeHandle & Element], t1: /* gestureState */ PanResponderGestureState) => (value(t0, t1)).runNow()))
+    
+    inline def setOnPanResponderGrantUndefined: Self = StObject.set(x, "onPanResponderGrant", js.undefined)
+    
+    inline def setOnPanResponderMove(
+      value: (ReactEventFrom[NodeHandle & Element], /* gestureState */ PanResponderGestureState) => Callback
+    ): Self = StObject.set(x, "onPanResponderMove", js.Any.fromFunction2((t0: ReactEventFrom[NodeHandle & Element], t1: /* gestureState */ PanResponderGestureState) => (value(t0, t1)).runNow()))
+    
+    inline def setOnPanResponderMoveUndefined: Self = StObject.set(x, "onPanResponderMove", js.undefined)
+    
+    inline def setOnPanResponderReject(
+      value: (ReactEventFrom[NodeHandle & Element], /* gestureState */ PanResponderGestureState) => Callback
+    ): Self = StObject.set(x, "onPanResponderReject", js.Any.fromFunction2((t0: ReactEventFrom[NodeHandle & Element], t1: /* gestureState */ PanResponderGestureState) => (value(t0, t1)).runNow()))
+    
+    inline def setOnPanResponderRejectUndefined: Self = StObject.set(x, "onPanResponderReject", js.undefined)
+    
+    inline def setOnPanResponderRelease(
+      value: (ReactEventFrom[NodeHandle & Element], /* gestureState */ PanResponderGestureState) => Callback
+    ): Self = StObject.set(x, "onPanResponderRelease", js.Any.fromFunction2((t0: ReactEventFrom[NodeHandle & Element], t1: /* gestureState */ PanResponderGestureState) => (value(t0, t1)).runNow()))
+    
+    inline def setOnPanResponderReleaseUndefined: Self = StObject.set(x, "onPanResponderRelease", js.undefined)
+    
+    inline def setOnPanResponderStart(
+      value: (ReactEventFrom[NodeHandle & Element], /* gestureState */ PanResponderGestureState) => Callback
+    ): Self = StObject.set(x, "onPanResponderStart", js.Any.fromFunction2((t0: ReactEventFrom[NodeHandle & Element], t1: /* gestureState */ PanResponderGestureState) => (value(t0, t1)).runNow()))
+    
+    inline def setOnPanResponderStartUndefined: Self = StObject.set(x, "onPanResponderStart", js.undefined)
+    
+    inline def setOnPanResponderTerminate(
+      value: (ReactEventFrom[NodeHandle & Element], /* gestureState */ PanResponderGestureState) => Callback
+    ): Self = StObject.set(x, "onPanResponderTerminate", js.Any.fromFunction2((t0: ReactEventFrom[NodeHandle & Element], t1: /* gestureState */ PanResponderGestureState) => (value(t0, t1)).runNow()))
+    
+    inline def setOnPanResponderTerminateUndefined: Self = StObject.set(x, "onPanResponderTerminate", js.undefined)
+    
+    inline def setOnPanResponderTerminationRequest(
+      value: (ReactEventFrom[NodeHandle & Element], /* gestureState */ PanResponderGestureState) => Boolean
+    ): Self = StObject.set(x, "onPanResponderTerminationRequest", js.Any.fromFunction2(value))
+    
+    inline def setOnPanResponderTerminationRequestUndefined: Self = StObject.set(x, "onPanResponderTerminationRequest", js.undefined)
+    
+    inline def setOnShouldBlockNativeResponder(
+      value: (ReactEventFrom[NodeHandle & Element], /* gestureState */ PanResponderGestureState) => Boolean
+    ): Self = StObject.set(x, "onShouldBlockNativeResponder", js.Any.fromFunction2(value))
+    
+    inline def setOnShouldBlockNativeResponderUndefined: Self = StObject.set(x, "onShouldBlockNativeResponder", js.undefined)
+    
+    inline def setOnStartShouldSetPanResponder(
+      value: (ReactEventFrom[NodeHandle & Element], /* gestureState */ PanResponderGestureState) => Boolean
+    ): Self = StObject.set(x, "onStartShouldSetPanResponder", js.Any.fromFunction2(value))
+    
+    inline def setOnStartShouldSetPanResponderCapture(
+      value: (ReactEventFrom[NodeHandle & Element], /* gestureState */ PanResponderGestureState) => Boolean
+    ): Self = StObject.set(x, "onStartShouldSetPanResponderCapture", js.Any.fromFunction2(value))
+    
+    inline def setOnStartShouldSetPanResponderCaptureUndefined: Self = StObject.set(x, "onStartShouldSetPanResponderCapture", js.undefined)
+    
+    inline def setOnStartShouldSetPanResponderUndefined: Self = StObject.set(x, "onStartShouldSetPanResponder", js.undefined)
+  }
 }
-

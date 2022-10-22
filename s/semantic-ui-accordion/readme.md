@@ -10,10 +10,10 @@ Single component release of accordion
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-accordion |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 35419 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1565.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

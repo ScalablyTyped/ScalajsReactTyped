@@ -1,33 +1,48 @@
 package typingsJapgolly.bootstrapTimepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimepickerTime extends js.Object {
+trait TimepickerTime extends StObject {
+  
   var hours: js.UndefOr[Double] = js.undefined
+  
   var meridian: js.UndefOr[String] = js.undefined
+  
   var minutes: js.UndefOr[Double] = js.undefined
+  
   var seconds: js.UndefOr[Double] = js.undefined
+  
   var value: js.UndefOr[String] = js.undefined
 }
-
 object TimepickerTime {
-  @scala.inline
-  def apply(
-    hours: Int | Double = null,
-    meridian: String = null,
-    minutes: Int | Double = null,
-    seconds: Int | Double = null,
-    value: String = null
-  ): TimepickerTime = {
+  
+  inline def apply(): TimepickerTime = {
     val __obj = js.Dynamic.literal()
-    if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
-    if (meridian != null) __obj.updateDynamic("meridian")(meridian.asInstanceOf[js.Any])
-    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimepickerTime]
   }
+  
+  extension [Self <: TimepickerTime](x: Self) {
+    
+    inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+    
+    inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
+    
+    inline def setMeridian(value: String): Self = StObject.set(x, "meridian", value.asInstanceOf[js.Any])
+    
+    inline def setMeridianUndefined: Self = StObject.set(x, "meridian", js.undefined)
+    
+    inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    
+    inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
+    
+    inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    
+    inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

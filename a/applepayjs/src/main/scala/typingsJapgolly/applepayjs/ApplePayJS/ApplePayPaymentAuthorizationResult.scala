@@ -1,29 +1,39 @@
 package typingsJapgolly.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of payment authorization, including status and errors.
   */
-trait ApplePayPaymentAuthorizationResult extends js.Object {
+trait ApplePayPaymentAuthorizationResult extends StObject {
+  
   /**
     * A list of custom errors to display on the payment sheet.
     */
   var errors: js.UndefOr[js.Array[ApplePayError]] = js.undefined
+  
   /**
     * The status code for the authorization result.
     */
   var status: Double
 }
-
 object ApplePayPaymentAuthorizationResult {
-  @scala.inline
-  def apply(status: Double, errors: js.Array[ApplePayError] = null): ApplePayPaymentAuthorizationResult = {
+  
+  inline def apply(status: Double): ApplePayPaymentAuthorizationResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayPaymentAuthorizationResult]
   }
+  
+  extension [Self <: ApplePayPaymentAuthorizationResult](x: Self) {
+    
+    inline def setErrors(value: js.Array[ApplePayError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    
+    inline def setErrorsVarargs(value: ApplePayError*): Self = StObject.set(x, "errors", js.Array(value*))
+    
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,19 +1,42 @@
 package typingsJapgolly.hyperlorisTyson
 
-import typingsJapgolly.hyperlorisTyson.jsonPropertyMod.JsonPropertyOptions
-import typingsJapgolly.hyperlorisTyson.typeTokenMod.ClassType
-import typingsJapgolly.hyperlorisTyson.typeTokenMod.TypeToken
+import typingsJapgolly.hyperlorisTyson.distTypesAnnotationsJsonPropertyMod.JsonPropertyOptions
+import typingsJapgolly.hyperlorisTyson.distTypesReflectTypeTokenMod.ClassType
+import typingsJapgolly.hyperlorisTyson.distTypesReflectTypeTokenMod.TypeToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@hyperloris/tyson", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  abstract class TypeAdapter[T] ()
-    extends typingsJapgolly.hyperlorisTyson.typeAdapterMod.TypeAdapter[T]
+object mod {
   
+  @JSImport("@hyperloris/tyson", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@hyperloris/tyson", "Access")
+  @js.native
+  object Access extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[
+        typingsJapgolly.hyperlorisTyson.distTypesAnnotationsJsonPropertyMod.Access & String
+      ] = js.native
+    
+    /* "FROMJSON_ONLY" */ val FROMJSON_ONLY: typingsJapgolly.hyperlorisTyson.distTypesAnnotationsJsonPropertyMod.Access.FROMJSON_ONLY & String = js.native
+    
+    /* "TOJSON_ONLY" */ val TOJSON_ONLY: typingsJapgolly.hyperlorisTyson.distTypesAnnotationsJsonPropertyMod.Access.TOJSON_ONLY & String = js.native
+  }
+  
+  inline def JsonProperty(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")().asInstanceOf[Any]
+  inline def JsonProperty(options: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def JsonProperty(options: JsonPropertyOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  /* note: abstract class */ @JSImport("@hyperloris/tyson", "TypeAdapter")
+  @js.native
+  open class TypeAdapter[T] ()
+    extends typingsJapgolly.hyperlorisTyson.distTypesTypeAdapterMod.TypeAdapter[T]
+  
+  @JSImport("@hyperloris/tyson", "Tyson")
   @js.native
   /**
     * Creates an instance of Tyson.
@@ -21,12 +44,15 @@ object mod extends js.Object {
     * @param {TysonBuilder} [builder]
     * @memberof Tyson
     */
-  class Tyson () extends js.Object {
-    def this(builder: typingsJapgolly.hyperlorisTyson.tysonBuilderMod.TysonBuilder) = this()
-    var _factories: js.Any = js.native
-    var _serializeNulls: js.Any = js.native
-    var _typeTokenCache: js.Any = js.native
-    val serializeNulls: Boolean = js.native
+  open class Tyson () extends StObject {
+    def this(builder: typingsJapgolly.hyperlorisTyson.distTypesTysonBuilderMod.TysonBuilder) = this()
+    
+    /* private */ var _factories: Any = js.native
+    
+    /* private */ var _serializeNulls: Any = js.native
+    
+    /* private */ var _typeTokenCache: Any = js.native
+    
     /**
       * This method deserializes the specified JSON into an object|array of the specified type.
       *
@@ -36,9 +62,10 @@ object mod extends js.Object {
       * @returns an object|array of type T. Returns undefined if json or type are undefined.
       * @memberof Tyson
       */
-    def fromJson[T](json: js.Array[_], `type`: js.Array[_]): js.Array[_] = js.native
-    def fromJson[T](json: js.Array[_], `type`: ClassType[T]): js.Array[T] = js.native
+    def fromJson[T](json: js.Array[Any], `type`: js.Array[Any]): js.Array[Any] = js.native
+    def fromJson[T](json: js.Array[Any], `type`: ClassType[T]): js.Array[T] = js.native
     def fromJson[T](json: js.Object, `type`: ClassType[T]): T = js.native
+    
     /**
       * Returns the type adapter for the specified typeToken.
       * This method uses a cache to avoid re-creating a new adapter
@@ -50,8 +77,11 @@ object mod extends js.Object {
       * @throws Will throw an error if Tyson cannot deserialize / serialize typeToken
       * @memberof Tyson
       */
-    def getAdapter[T](typeToken: TypeToken[T]): typingsJapgolly.hyperlorisTyson.typeAdapterMod.TypeAdapter[T] = js.native
-    def toJson(src: js.Array[_], `type`: js.Array[_]): js.Array[_] = js.native
+    def getAdapter[T](typeToken: TypeToken[T]): typingsJapgolly.hyperlorisTyson.distTypesTypeAdapterMod.TypeAdapter[T] = js.native
+    
+    val serializeNulls: Boolean = js.native
+    
+    def toJson(src: js.Array[Any], `type`: js.Array[Any]): js.Array[Any] = js.native
     /**
       * This method serializes the specified object, into its equivalent JSON representation.
       *
@@ -60,25 +90,13 @@ object mod extends js.Object {
       * @returns JSON representation of src
       * @memberof Tyson
       */
-    def toJson(src: js.Array[_], `type`: ClassType[_]): js.Array[_] = js.native
-    def toJson(src: js.Object): js.Any = js.native
-    def toJson(src: js.Object, `type`: ClassType[_]): js.Any = js.native
+    def toJson(src: js.Array[Any], `type`: ClassType[Any]): js.Array[Any] = js.native
+    def toJson(src: js.Object): Any = js.native
+    def toJson(src: js.Object, `type`: ClassType[Any]): Any = js.native
   }
   
+  @JSImport("@hyperloris/tyson", "TysonBuilder")
   @js.native
-  class TysonBuilder ()
-    extends typingsJapgolly.hyperlorisTyson.tysonBuilderMod.TysonBuilder
-  
-  def JsonProperty(): js.Any = js.native
-  def JsonProperty(options: String): js.Any = js.native
-  def JsonProperty(options: JsonPropertyOptions): js.Any = js.native
-  @js.native
-  object Access extends js.Object {
-    /* "FROMJSON_ONLY" */ val FROMJSON_ONLY: typingsJapgolly.hyperlorisTyson.jsonPropertyMod.Access.FROMJSON_ONLY with String = js.native
-    /* "TOJSON_ONLY" */ val TOJSON_ONLY: typingsJapgolly.hyperlorisTyson.jsonPropertyMod.Access.TOJSON_ONLY with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typingsJapgolly.hyperlorisTyson.jsonPropertyMod.Access with String] = js.native
-  }
-  
+  open class TysonBuilder ()
+    extends typingsJapgolly.hyperlorisTyson.distTypesTysonBuilderMod.TysonBuilder
 }
-

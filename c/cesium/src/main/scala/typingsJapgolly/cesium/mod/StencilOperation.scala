@@ -1,65 +1,87 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StencilOperation extends js.Object
-
+sealed trait StencilOperation extends StObject
 @JSImport("cesium", "StencilOperation")
 @js.native
-object StencilOperation extends js.Object {
-  @js.native
-  sealed trait DECREMENT extends StencilOperation
-  
-  @js.native
-  sealed trait DECREMENT_WRAP extends StencilOperation
-  
-  @js.native
-  sealed trait INCREMENT extends StencilOperation
-  
-  @js.native
-  sealed trait INCREMENT_WRAP extends StencilOperation
-  
-  @js.native
-  sealed trait INVERT extends StencilOperation
-  
-  @js.native
-  sealed trait KEEP extends StencilOperation
-  
-  @js.native
-  sealed trait REPLACE extends StencilOperation
-  
-  @js.native
-  sealed trait ZERO extends StencilOperation
+object StencilOperation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StencilOperation with Double] = js.native
-  /* 4 */ @js.native
-  object DECREMENT extends TopLevel[DECREMENT with Double]
+  def apply(value: scala.Nothing): js.UndefOr[StencilOperation & scala.Nothing] = js.native
   
-  /* 7 */ @js.native
-  object DECREMENT_WRAP extends TopLevel[DECREMENT_WRAP with Double]
+  /**
+    * Decrements the stencil buffer value, clamping to zero.
+    */
+  @js.native
+  sealed trait DECREMENT
+    extends StObject
+       with StencilOperation
+  /* WebGLConstants.DECR */ val DECREMENT: typingsJapgolly.cesium.mod.StencilOperation.DECREMENT & scala.Nothing = js.native
   
-  /* 3 */ @js.native
-  object INCREMENT extends TopLevel[INCREMENT with Double]
+  /**
+    * Decrements the stencil buffer value, wrapping to the maximum unsigned byte instead of going below zero.
+    */
+  @js.native
+  sealed trait DECREMENT_WRAP
+    extends StObject
+       with StencilOperation
+  /* WebGLConstants.DECR_WRAP */ val DECREMENT_WRAP: typingsJapgolly.cesium.mod.StencilOperation.DECREMENT_WRAP & scala.Nothing = js.native
   
-  /* 6 */ @js.native
-  object INCREMENT_WRAP extends TopLevel[INCREMENT_WRAP with Double]
+  /**
+    * Increments the stencil buffer value, clamping to unsigned byte.
+    */
+  @js.native
+  sealed trait INCREMENT
+    extends StObject
+       with StencilOperation
+  /* WebGLConstants.INCR */ val INCREMENT: typingsJapgolly.cesium.mod.StencilOperation.INCREMENT & scala.Nothing = js.native
   
-  /* 5 */ @js.native
-  object INVERT extends TopLevel[INVERT with Double]
+  /**
+    * Increments the stencil buffer value, wrapping to zero when exceeding the unsigned byte range.
+    */
+  @js.native
+  sealed trait INCREMENT_WRAP
+    extends StObject
+       with StencilOperation
+  /* WebGLConstants.INCR_WRAP */ val INCREMENT_WRAP: typingsJapgolly.cesium.mod.StencilOperation.INCREMENT_WRAP & scala.Nothing = js.native
   
-  /* 1 */ @js.native
-  object KEEP extends TopLevel[KEEP with Double]
+  /**
+    * Bitwise inverts the existing stencil buffer value.
+    */
+  @js.native
+  sealed trait INVERT
+    extends StObject
+       with StencilOperation
+  /* WebGLConstants.INVERT */ val INVERT: typingsJapgolly.cesium.mod.StencilOperation.INVERT & scala.Nothing = js.native
   
-  /* 2 */ @js.native
-  object REPLACE extends TopLevel[REPLACE with Double]
+  /**
+    * Does not change the stencil buffer.
+    */
+  @js.native
+  sealed trait KEEP
+    extends StObject
+       with StencilOperation
+  /* WebGLConstants.KEEP */ val KEEP: typingsJapgolly.cesium.mod.StencilOperation.KEEP & scala.Nothing = js.native
   
-  /* 0 */ @js.native
-  object ZERO extends TopLevel[ZERO with Double]
+  /**
+    * Replaces the stencil buffer value with the reference value.
+    */
+  @js.native
+  sealed trait REPLACE
+    extends StObject
+       with StencilOperation
+  /* WebGLConstants.REPLACE */ val REPLACE: typingsJapgolly.cesium.mod.StencilOperation.REPLACE & scala.Nothing = js.native
   
+  /**
+    * Sets the stencil buffer value to zero.
+    */
+  @js.native
+  sealed trait ZERO
+    extends StObject
+       with StencilOperation
+  /* WebGLConstants.ZERO */ val ZERO: typingsJapgolly.cesium.mod.StencilOperation.ZERO & scala.Nothing = js.native
 }
-

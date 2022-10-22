@@ -10,10 +10,10 @@ Minify URLs by converting them from absolute to relative.
 | ------------------ | :-------------: |
 | Full name          | relateurl |
 | Keywords           | uri, url, minifier, minify, lint, relative, absolute |
-| # releases         | 1 |
-| # dependents       | 29 |
-| # downloads        | 187316735 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4.2304587E7 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/stevenvachon/relateurl)

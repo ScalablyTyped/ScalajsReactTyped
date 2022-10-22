@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Document
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FontFamily extends js.Object
-
+sealed trait FontFamily extends StObject
 /**
   *
   * Deprecated. The methods getFontFamily() and setFontFamily(String) now use string
@@ -37,200 +35,165 @@ sealed trait FontFamily extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Document.FontFamily")
 @js.native
-object FontFamily extends js.Object {
-  @js.native
-  sealed trait AMARANTH extends FontFamily
+object FontFamily extends StObject {
   
   @js.native
-  sealed trait ARIAL extends FontFamily
+  sealed trait AMARANTH
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait ARIAL_BLACK extends FontFamily
+  sealed trait ARIAL
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait ARIAL_NARROW extends FontFamily
+  sealed trait ARIAL_BLACK
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait ARVO extends FontFamily
+  sealed trait ARIAL_NARROW
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait CALIBRI extends FontFamily
+  sealed trait ARVO
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait CAMBRIA extends FontFamily
+  sealed trait CALIBRI
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait COMIC_SANS_MS extends FontFamily
+  sealed trait CAMBRIA
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait CONSOLAS extends FontFamily
+  sealed trait COMIC_SANS_MS
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait CORSIVA extends FontFamily
+  sealed trait CONSOLAS
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait COURIER_NEW extends FontFamily
+  sealed trait CORSIVA
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait DANCING_SCRIPT extends FontFamily
+  sealed trait COURIER_NEW
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait DROID_SANS extends FontFamily
+  sealed trait DANCING_SCRIPT
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait DROID_SERIF extends FontFamily
+  sealed trait DROID_SANS
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait GARAMOND extends FontFamily
+  sealed trait DROID_SERIF
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait GEORGIA extends FontFamily
+  sealed trait GARAMOND
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait GLORIA_HALLELUJAH extends FontFamily
+  sealed trait GEORGIA
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait GREAT_VIBES extends FontFamily
+  sealed trait GLORIA_HALLELUJAH
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait LOBSTER extends FontFamily
+  sealed trait GREAT_VIBES
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait MERRIWEATHER extends FontFamily
+  sealed trait LOBSTER
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait PACIFICO extends FontFamily
+  sealed trait MERRIWEATHER
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait PHILOSOPHER extends FontFamily
+  sealed trait PACIFICO
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait POIRET_ONE extends FontFamily
+  sealed trait PHILOSOPHER
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait QUATTROCENTO extends FontFamily
+  sealed trait POIRET_ONE
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait ROBOTO extends FontFamily
+  sealed trait QUATTROCENTO
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait SHADOWS_INTO_LIGHT extends FontFamily
+  sealed trait ROBOTO
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait SYNCOPATE extends FontFamily
+  sealed trait SHADOWS_INTO_LIGHT
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait TAHOMA extends FontFamily
+  sealed trait SYNCOPATE
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait TIMES_NEW_ROMAN extends FontFamily
+  sealed trait TAHOMA
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait TREBUCHET_MS extends FontFamily
+  sealed trait TIMES_NEW_ROMAN
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait UBUNTU extends FontFamily
+  sealed trait TREBUCHET_MS
+    extends StObject
+       with FontFamily
   
   @js.native
-  sealed trait VERDANA extends FontFamily
+  sealed trait UBUNTU
+    extends StObject
+       with FontFamily
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FontFamily with Double] = js.native
-  /* 0 */ @js.native
-  object AMARANTH extends TopLevel[AMARANTH with Double]
-  
-  /* 1 */ @js.native
-  object ARIAL extends TopLevel[ARIAL with Double]
-  
-  /* 2 */ @js.native
-  object ARIAL_BLACK extends TopLevel[ARIAL_BLACK with Double]
-  
-  /* 3 */ @js.native
-  object ARIAL_NARROW extends TopLevel[ARIAL_NARROW with Double]
-  
-  /* 4 */ @js.native
-  object ARVO extends TopLevel[ARVO with Double]
-  
-  /* 5 */ @js.native
-  object CALIBRI extends TopLevel[CALIBRI with Double]
-  
-  /* 6 */ @js.native
-  object CAMBRIA extends TopLevel[CAMBRIA with Double]
-  
-  /* 7 */ @js.native
-  object COMIC_SANS_MS extends TopLevel[COMIC_SANS_MS with Double]
-  
-  /* 8 */ @js.native
-  object CONSOLAS extends TopLevel[CONSOLAS with Double]
-  
-  /* 9 */ @js.native
-  object CORSIVA extends TopLevel[CORSIVA with Double]
-  
-  /* 10 */ @js.native
-  object COURIER_NEW extends TopLevel[COURIER_NEW with Double]
-  
-  /* 11 */ @js.native
-  object DANCING_SCRIPT extends TopLevel[DANCING_SCRIPT with Double]
-  
-  /* 12 */ @js.native
-  object DROID_SANS extends TopLevel[DROID_SANS with Double]
-  
-  /* 13 */ @js.native
-  object DROID_SERIF extends TopLevel[DROID_SERIF with Double]
-  
-  /* 14 */ @js.native
-  object GARAMOND extends TopLevel[GARAMOND with Double]
-  
-  /* 15 */ @js.native
-  object GEORGIA extends TopLevel[GEORGIA with Double]
-  
-  /* 16 */ @js.native
-  object GLORIA_HALLELUJAH extends TopLevel[GLORIA_HALLELUJAH with Double]
-  
-  /* 17 */ @js.native
-  object GREAT_VIBES extends TopLevel[GREAT_VIBES with Double]
-  
-  /* 18 */ @js.native
-  object LOBSTER extends TopLevel[LOBSTER with Double]
-  
-  /* 19 */ @js.native
-  object MERRIWEATHER extends TopLevel[MERRIWEATHER with Double]
-  
-  /* 20 */ @js.native
-  object PACIFICO extends TopLevel[PACIFICO with Double]
-  
-  /* 21 */ @js.native
-  object PHILOSOPHER extends TopLevel[PHILOSOPHER with Double]
-  
-  /* 22 */ @js.native
-  object POIRET_ONE extends TopLevel[POIRET_ONE with Double]
-  
-  /* 23 */ @js.native
-  object QUATTROCENTO extends TopLevel[QUATTROCENTO with Double]
-  
-  /* 24 */ @js.native
-  object ROBOTO extends TopLevel[ROBOTO with Double]
-  
-  /* 25 */ @js.native
-  object SHADOWS_INTO_LIGHT extends TopLevel[SHADOWS_INTO_LIGHT with Double]
-  
-  /* 26 */ @js.native
-  object SYNCOPATE extends TopLevel[SYNCOPATE with Double]
-  
-  /* 27 */ @js.native
-  object TAHOMA extends TopLevel[TAHOMA with Double]
-  
-  /* 28 */ @js.native
-  object TIMES_NEW_ROMAN extends TopLevel[TIMES_NEW_ROMAN with Double]
-  
-  /* 29 */ @js.native
-  object TREBUCHET_MS extends TopLevel[TREBUCHET_MS with Double]
-  
-  /* 30 */ @js.native
-  object UBUNTU extends TopLevel[UBUNTU with Double]
-  
-  /* 31 */ @js.native
-  object VERDANA extends TopLevel[VERDANA with Double]
-  
+  @js.native
+  sealed trait VERDANA
+    extends StObject
+       with FontFamily
 }
-

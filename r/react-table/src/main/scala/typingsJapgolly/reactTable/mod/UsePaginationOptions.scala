@@ -1,31 +1,43 @@
 package typingsJapgolly.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<{  pageCount  :number,   manualPagination  :boolean,   autoResetPage ? :boolean,   paginateExpandedRows  :boolean}> */
-trait UsePaginationOptions[D /* <: js.Object */] extends js.Object {
+/* Inlined std.Partial<{  pageCount :number,   manualPagination :boolean,   autoResetPage :boolean | undefined,   paginateExpandedRows :boolean}> */
+trait UsePaginationOptions[D /* <: js.Object */] extends StObject {
+  
   var autoResetPage: js.UndefOr[Boolean] = js.undefined
+  
   var manualPagination: js.UndefOr[Boolean] = js.undefined
+  
   var pageCount: js.UndefOr[Double] = js.undefined
+  
   var paginateExpandedRows: js.UndefOr[Boolean] = js.undefined
 }
-
 object UsePaginationOptions {
-  @scala.inline
-  def apply[D /* <: js.Object */](
-    autoResetPage: js.UndefOr[Boolean] = js.undefined,
-    manualPagination: js.UndefOr[Boolean] = js.undefined,
-    pageCount: Int | Double = null,
-    paginateExpandedRows: js.UndefOr[Boolean] = js.undefined
-  ): UsePaginationOptions[D] = {
+  
+  inline def apply[D /* <: js.Object */](): UsePaginationOptions[D] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResetPage)) __obj.updateDynamic("autoResetPage")(autoResetPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(manualPagination)) __obj.updateDynamic("manualPagination")(manualPagination.asInstanceOf[js.Any])
-    if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(paginateExpandedRows)) __obj.updateDynamic("paginateExpandedRows")(paginateExpandedRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsePaginationOptions[D]]
   }
+  
+  extension [Self <: UsePaginationOptions[?], D /* <: js.Object */](x: Self & UsePaginationOptions[D]) {
+    
+    inline def setAutoResetPage(value: Boolean): Self = StObject.set(x, "autoResetPage", value.asInstanceOf[js.Any])
+    
+    inline def setAutoResetPageUndefined: Self = StObject.set(x, "autoResetPage", js.undefined)
+    
+    inline def setManualPagination(value: Boolean): Self = StObject.set(x, "manualPagination", value.asInstanceOf[js.Any])
+    
+    inline def setManualPaginationUndefined: Self = StObject.set(x, "manualPagination", js.undefined)
+    
+    inline def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
+    
+    inline def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
+    
+    inline def setPaginateExpandedRows(value: Boolean): Self = StObject.set(x, "paginateExpandedRows", value.asInstanceOf[js.Any])
+    
+    inline def setPaginateExpandedRowsUndefined: Self = StObject.set(x, "paginateExpandedRows", js.undefined)
+  }
 }
-

@@ -1,17 +1,16 @@
 package typingsJapgolly.angularCompiler.mod
 
-import typingsJapgolly.angularCompiler.outputAstMod.TypeModifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "MapType")
 @js.native
-class MapType ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.MapType {
-  def this(valueType: typingsJapgolly.angularCompiler.outputAstMod.Type) = this()
-  def this(valueType: js.UndefOr[scala.Nothing], modifiers: js.Array[TypeModifier]) = this()
-  def this(valueType: Null, modifiers: js.Array[TypeModifier]) = this()
-  def this(valueType: typingsJapgolly.angularCompiler.outputAstMod.Type, modifiers: js.Array[TypeModifier]) = this()
+open class MapType () extends Type {
+  def this(valueType: Type) = this()
+  def this(valueType: Null, modifiers: TypeModifier) = this()
+  def this(valueType: Unit, modifiers: TypeModifier) = this()
+  def this(valueType: Type, modifiers: TypeModifier) = this()
+  
+  var valueType: Type | Null = js.native
 }
-

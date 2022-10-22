@@ -11,9 +11,9 @@ A function to get the scrolling parent of an html element.
 | Full name          | scrollparent |
 | Keywords           | browser, scroll, scrollparent, dom |
 | # releases         | 0 |
-| # dependents       | 48 |
-| # downloads        | 3451960 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1623478.3333333333 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/olahol/scrollparent.js#readme)

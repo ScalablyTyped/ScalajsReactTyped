@@ -1,9 +1,9 @@
 package typingsJapgolly.msRest.mod
 
-import typingsJapgolly.msRest.AnonName
+import typingsJapgolly.msRest.anon.Version
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest", "ServiceClient")
 @js.native
@@ -14,14 +14,17 @@ import scala.scalajs.js.annotation._
   * TokenCredentials object used for authentication.
   * @param {ServiceClientOptions} [options] The parameter options
   */
-class ServiceClient () extends js.Object {
+open class ServiceClient () extends StObject {
   def this(credentials: ServiceClientCredentials) = this()
+  def this(credentials: Unit, options: ServiceClientOptions) = this()
   def this(credentials: ServiceClientCredentials, options: ServiceClientOptions) = this()
+  
   /**
     * Adds custom information to user agent header
     * @param {any} additionalUserAgentInfo - information to be added to user agent header, as string.
     */
-  def addUserAgentInfo(additionalUserAgentInfo: js.Any): Unit = js.native
+  def addUserAgentInfo(additionalUserAgentInfo: Any): Unit = js.native
+  
   /**
     * Attempts to find package.json for the given azure nodejs package.
     * If found, returns the name and version of the package by reading the package.json
@@ -29,12 +32,13 @@ class ServiceClient () extends js.Object {
     * @param {string} managementClientDir - pass the directory of the specific azure management client.
     * @returns {object} packageJsonInfo - "name" and "version" of the desired package.
     */
-  def getPackageJsonInfo(managementClientDir: String): AnonName = js.native
+  def getPackageJsonInfo(managementClientDir: String): Version = js.native
+  
   def sendRequest[TResult](options: PathTemplateBasedRequestPrepareOptions): js.Promise[TResult] = js.native
   def sendRequest[TResult](options: PathTemplateBasedRequestPrepareOptions, callback: ServiceCallback[TResult]): Unit = js.native
   def sendRequest[TResult](options: UrlBasedRequestPrepareOptions): js.Promise[TResult] = js.native
   def sendRequest[TResult](options: UrlBasedRequestPrepareOptions, callback: ServiceCallback[TResult]): Unit = js.native
+  
   def sendRequestWithHttpOperationResponse[TResult](options: PathTemplateBasedRequestPrepareOptions): js.Promise[HttpOperationResponse[TResult]] = js.native
   def sendRequestWithHttpOperationResponse[TResult](options: UrlBasedRequestPrepareOptions): js.Promise[HttpOperationResponse[TResult]] = js.native
 }
-

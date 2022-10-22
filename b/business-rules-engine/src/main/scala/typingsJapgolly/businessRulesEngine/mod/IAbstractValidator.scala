@@ -1,42 +1,59 @@
 package typingsJapgolly.businessRulesEngine.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IAbstractValidator[T] extends js.Object {
+trait IAbstractValidator[T] extends StObject {
+  
+  def CreateAbstractListRule(name: String): IAbstractValidationRule[Any]
+  
+  def CreateAbstractRule(name: String): IAbstractValidationRule[Any]
+  
+  def CreateRule(name: String): IAbstractValidationRule[Any]
+  
   var ForList: Boolean
-  def CreateAbstractListRule(name: String): IAbstractValidationRule[_]
-  def CreateAbstractRule(name: String): IAbstractValidationRule[_]
-  def CreateRule(name: String): IAbstractValidationRule[_]
-  def RuleFor(prop: String, validator: IPropertyValidator): js.Any
-  def Validation(validatorFce: IValidatorFce): js.Any
-  def ValidationFor(prop: String, validatorFce: IValidatorFce): js.Any
-  def ValidatorFor[K](prop: String, validator: IAbstractValidator[K]): js.Any
+  
+  def RuleFor(prop: String, validator: IPropertyValidator): Any
+  
+  def Validation(validatorFce: IValidatorFce): Any
+  
+  def ValidationFor(prop: String, validatorFce: IValidatorFce): Any
+  
+  def ValidatorFor[K](prop: String, validator: IAbstractValidator[K]): Any
 }
-
 object IAbstractValidator {
-  @scala.inline
-  def apply[T](
-    CreateAbstractListRule: String => CallbackTo[IAbstractValidationRule[js.Any]],
-    CreateAbstractRule: String => CallbackTo[IAbstractValidationRule[js.Any]],
-    CreateRule: String => CallbackTo[IAbstractValidationRule[js.Any]],
+  
+  inline def apply[T](
+    CreateAbstractListRule: String => IAbstractValidationRule[Any],
+    CreateAbstractRule: String => IAbstractValidationRule[Any],
+    CreateRule: String => IAbstractValidationRule[Any],
     ForList: Boolean,
-    RuleFor: (String, IPropertyValidator) => CallbackTo[js.Any],
-    Validation: IValidatorFce => CallbackTo[js.Any],
-    ValidationFor: (String, IValidatorFce) => CallbackTo[js.Any],
-    ValidatorFor: (String, IAbstractValidator[js.Any]) => CallbackTo[js.Any]
+    RuleFor: (String, IPropertyValidator) => Any,
+    Validation: IValidatorFce => Any,
+    ValidationFor: (String, IValidatorFce) => Any,
+    ValidatorFor: (String, IAbstractValidator[Any]) => Any
   ): IAbstractValidator[T] = {
-    val __obj = js.Dynamic.literal(ForList = ForList.asInstanceOf[js.Any])
-    __obj.updateDynamic("CreateAbstractListRule")(js.Any.fromFunction1((t0: java.lang.String) => CreateAbstractListRule(t0).runNow()))
-    __obj.updateDynamic("CreateAbstractRule")(js.Any.fromFunction1((t0: java.lang.String) => CreateAbstractRule(t0).runNow()))
-    __obj.updateDynamic("CreateRule")(js.Any.fromFunction1((t0: java.lang.String) => CreateRule(t0).runNow()))
-    __obj.updateDynamic("RuleFor")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.businessRulesEngine.mod.IPropertyValidator) => RuleFor(t0, t1).runNow()))
-    __obj.updateDynamic("Validation")(js.Any.fromFunction1((t0: typingsJapgolly.businessRulesEngine.mod.IValidatorFce) => Validation(t0).runNow()))
-    __obj.updateDynamic("ValidationFor")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.businessRulesEngine.mod.IValidatorFce) => ValidationFor(t0, t1).runNow()))
-    __obj.updateDynamic("ValidatorFor")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.businessRulesEngine.mod.IAbstractValidator[js.Any]) => ValidatorFor(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(CreateAbstractListRule = js.Any.fromFunction1(CreateAbstractListRule), CreateAbstractRule = js.Any.fromFunction1(CreateAbstractRule), CreateRule = js.Any.fromFunction1(CreateRule), ForList = ForList.asInstanceOf[js.Any], RuleFor = js.Any.fromFunction2(RuleFor), Validation = js.Any.fromFunction1(Validation), ValidationFor = js.Any.fromFunction2(ValidationFor), ValidatorFor = js.Any.fromFunction2(ValidatorFor))
     __obj.asInstanceOf[IAbstractValidator[T]]
   }
+  
+  extension [Self <: IAbstractValidator[?], T](x: Self & IAbstractValidator[T]) {
+    
+    inline def setCreateAbstractListRule(value: String => IAbstractValidationRule[Any]): Self = StObject.set(x, "CreateAbstractListRule", js.Any.fromFunction1(value))
+    
+    inline def setCreateAbstractRule(value: String => IAbstractValidationRule[Any]): Self = StObject.set(x, "CreateAbstractRule", js.Any.fromFunction1(value))
+    
+    inline def setCreateRule(value: String => IAbstractValidationRule[Any]): Self = StObject.set(x, "CreateRule", js.Any.fromFunction1(value))
+    
+    inline def setForList(value: Boolean): Self = StObject.set(x, "ForList", value.asInstanceOf[js.Any])
+    
+    inline def setRuleFor(value: (String, IPropertyValidator) => Any): Self = StObject.set(x, "RuleFor", js.Any.fromFunction2(value))
+    
+    inline def setValidation(value: IValidatorFce => Any): Self = StObject.set(x, "Validation", js.Any.fromFunction1(value))
+    
+    inline def setValidationFor(value: (String, IValidatorFce) => Any): Self = StObject.set(x, "ValidationFor", js.Any.fromFunction2(value))
+    
+    inline def setValidatorFor(value: (String, IAbstractValidator[Any]) => Any): Self = StObject.set(x, "ValidatorFor", js.Any.fromFunction2(value))
+  }
 }
-

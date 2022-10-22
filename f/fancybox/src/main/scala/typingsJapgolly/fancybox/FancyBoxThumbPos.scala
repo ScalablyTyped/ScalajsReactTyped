@@ -1,32 +1,32 @@
 package typingsJapgolly.fancybox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FancyBoxThumbPos extends FancyBoxGetFitPosResults {
+trait FancyBoxThumbPos
+  extends StObject
+     with FancyBoxGetFitPosResults {
+  
   var scaleX: js.UndefOr[Double] = js.undefined
+  
   var scaleY: js.UndefOr[Double] = js.undefined
 }
-
 object FancyBoxThumbPos {
-  @scala.inline
-  def apply(
-    height: Int | Double = null,
-    left: Int | Double = null,
-    scaleX: Int | Double = null,
-    scaleY: Int | Double = null,
-    top: Int | Double = null,
-    width: Int | Double = null
-  ): FancyBoxThumbPos = {
+  
+  inline def apply(): FancyBoxThumbPos = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
-    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxThumbPos]
   }
+  
+  extension [Self <: FancyBoxThumbPos](x: Self) {
+    
+    inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    
+    inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+    
+    inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    
+    inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
+  }
 }
-

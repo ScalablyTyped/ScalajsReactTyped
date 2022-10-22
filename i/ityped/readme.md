@@ -1,7 +1,7 @@
 
 # Scala.js typings for ityped
 
-Typings are for version 0.0
+Typings are for version 1.0
 
 ## Library description:
 Dead simple animated typing, with no dependencies.
@@ -10,10 +10,10 @@ Dead simple animated typing, with no dependencies.
 | ------------------ | :-------------: |
 | Full name          | ityped |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 20899 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8620.666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/ityped)

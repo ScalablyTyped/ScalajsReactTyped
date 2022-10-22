@@ -1,113 +1,186 @@
 package typingsJapgolly.tryghostContentApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PostOrPage
-  extends Identification
+  extends StObject
+     with Identification
      with Excerpt
      with CodeInjection
      with Metadata
-     with Facebook
-     with Twitter
+     with SocialMedia
      with GhostData {
+  
   // Authors - Only shown when using Include Param
   var authors: js.UndefOr[js.Array[Author]] = js.undefined
+  
   var canonical_url: js.UndefOr[Nullable[String]] = js.undefined
+  
   var comment_id: js.UndefOr[String] = js.undefined
+  
   // Dates
   var created_at: js.UndefOr[String] = js.undefined
+  
   // Custom Template for posts and pages
-  var custom_template: js.UndefOr[String | Null] = js.undefined
+  var custom_template: js.UndefOr[Nullable[String]] = js.undefined
+  
   // Image
-  var feature_image: js.UndefOr[String | Null] = js.undefined
+  var feature_image: js.UndefOr[Nullable[String]] = js.undefined
+  
+  var feature_image_alt: js.UndefOr[Nullable[String]] = js.undefined
+  
+  var feature_image_caption: js.UndefOr[Nullable[String]] = js.undefined
+  
   var featured: js.UndefOr[Boolean] = js.undefined
-  var html: js.UndefOr[String | Null] = js.undefined
+  
+  var html: js.UndefOr[Nullable[String]] = js.undefined
+  
   // Post or Page
   var page: js.UndefOr[Boolean] = js.undefined
+  
   var plaintext: js.UndefOr[Nullable[String]] = js.undefined
+  
   var primary_author: js.UndefOr[Nullable[Author]] = js.undefined
+  
   var primary_tag: js.UndefOr[Nullable[Tag]] = js.undefined
+  
   var published_at: js.UndefOr[Nullable[String]] = js.undefined
+  
+  // Reading time
+  var reading_time: js.UndefOr[Double] = js.undefined
+  
   // Tags - Only shown when using Include param
   var tags: js.UndefOr[js.Array[Tag]] = js.undefined
+  
   // Post or Page
   var title: js.UndefOr[String] = js.undefined
+  
   var updated_at: js.UndefOr[Nullable[String]] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
+  
   // Identification
   var uuid: js.UndefOr[String] = js.undefined
 }
-
 object PostOrPage {
-  @scala.inline
-  def apply(
-    id: String,
-    slug: String,
-    authors: js.Array[Author] = null,
-    canonical_url: Nullable[String] = null,
-    codeinjection_foot: Nullable[String] = null,
-    codeinjection_head: Nullable[String] = null,
-    comment_id: String = null,
-    created_at: String = null,
-    custom_excerpt: String = null,
-    custom_template: String = null,
-    excerpt: String = null,
-    feature_image: String = null,
-    featured: js.UndefOr[Boolean] = js.undefined,
-    html: String = null,
-    meta_description: Nullable[String] = null,
-    meta_title: Nullable[String] = null,
-    og_description: Nullable[String] = null,
-    og_image: Nullable[String] = null,
-    og_title: Nullable[String] = null,
-    page: js.UndefOr[Boolean] = js.undefined,
-    plaintext: Nullable[String] = null,
-    primary_author: Nullable[Author] = null,
-    primary_tag: Nullable[Tag] = null,
-    published_at: Nullable[String] = null,
-    tags: js.Array[Tag] = null,
-    title: String = null,
-    twitter_description: Nullable[String] = null,
-    twitter_image: Nullable[String] = null,
-    twitter_title: Nullable[String] = null,
-    updated_at: Nullable[String] = null,
-    url: String = null,
-    uuid: String = null
-  ): PostOrPage = {
+  
+  inline def apply(id: String, slug: String): PostOrPage = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    if (authors != null) __obj.updateDynamic("authors")(authors.asInstanceOf[js.Any])
-    if (canonical_url != null) __obj.updateDynamic("canonical_url")(canonical_url.asInstanceOf[js.Any])
-    if (codeinjection_foot != null) __obj.updateDynamic("codeinjection_foot")(codeinjection_foot.asInstanceOf[js.Any])
-    if (codeinjection_head != null) __obj.updateDynamic("codeinjection_head")(codeinjection_head.asInstanceOf[js.Any])
-    if (comment_id != null) __obj.updateDynamic("comment_id")(comment_id.asInstanceOf[js.Any])
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
-    if (custom_excerpt != null) __obj.updateDynamic("custom_excerpt")(custom_excerpt.asInstanceOf[js.Any])
-    if (custom_template != null) __obj.updateDynamic("custom_template")(custom_template.asInstanceOf[js.Any])
-    if (excerpt != null) __obj.updateDynamic("excerpt")(excerpt.asInstanceOf[js.Any])
-    if (feature_image != null) __obj.updateDynamic("feature_image")(feature_image.asInstanceOf[js.Any])
-    if (!js.isUndefined(featured)) __obj.updateDynamic("featured")(featured.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (meta_description != null) __obj.updateDynamic("meta_description")(meta_description.asInstanceOf[js.Any])
-    if (meta_title != null) __obj.updateDynamic("meta_title")(meta_title.asInstanceOf[js.Any])
-    if (og_description != null) __obj.updateDynamic("og_description")(og_description.asInstanceOf[js.Any])
-    if (og_image != null) __obj.updateDynamic("og_image")(og_image.asInstanceOf[js.Any])
-    if (og_title != null) __obj.updateDynamic("og_title")(og_title.asInstanceOf[js.Any])
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (plaintext != null) __obj.updateDynamic("plaintext")(plaintext.asInstanceOf[js.Any])
-    if (primary_author != null) __obj.updateDynamic("primary_author")(primary_author.asInstanceOf[js.Any])
-    if (primary_tag != null) __obj.updateDynamic("primary_tag")(primary_tag.asInstanceOf[js.Any])
-    if (published_at != null) __obj.updateDynamic("published_at")(published_at.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (twitter_description != null) __obj.updateDynamic("twitter_description")(twitter_description.asInstanceOf[js.Any])
-    if (twitter_image != null) __obj.updateDynamic("twitter_image")(twitter_image.asInstanceOf[js.Any])
-    if (twitter_title != null) __obj.updateDynamic("twitter_title")(twitter_title.asInstanceOf[js.Any])
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostOrPage]
   }
+  
+  extension [Self <: PostOrPage](x: Self) {
+    
+    inline def setAuthors(value: js.Array[Author]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
+    
+    inline def setAuthorsVarargs(value: Author*): Self = StObject.set(x, "authors", js.Array(value*))
+    
+    inline def setCanonical_url(value: Nullable[String]): Self = StObject.set(x, "canonical_url", value.asInstanceOf[js.Any])
+    
+    inline def setCanonical_urlNull: Self = StObject.set(x, "canonical_url", null)
+    
+    inline def setCanonical_urlUndefined: Self = StObject.set(x, "canonical_url", js.undefined)
+    
+    inline def setComment_id(value: String): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
+    
+    inline def setComment_idUndefined: Self = StObject.set(x, "comment_id", js.undefined)
+    
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    
+    inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
+    
+    inline def setCustom_template(value: Nullable[String]): Self = StObject.set(x, "custom_template", value.asInstanceOf[js.Any])
+    
+    inline def setCustom_templateNull: Self = StObject.set(x, "custom_template", null)
+    
+    inline def setCustom_templateUndefined: Self = StObject.set(x, "custom_template", js.undefined)
+    
+    inline def setFeature_image(value: Nullable[String]): Self = StObject.set(x, "feature_image", value.asInstanceOf[js.Any])
+    
+    inline def setFeature_imageNull: Self = StObject.set(x, "feature_image", null)
+    
+    inline def setFeature_imageUndefined: Self = StObject.set(x, "feature_image", js.undefined)
+    
+    inline def setFeature_image_alt(value: Nullable[String]): Self = StObject.set(x, "feature_image_alt", value.asInstanceOf[js.Any])
+    
+    inline def setFeature_image_altNull: Self = StObject.set(x, "feature_image_alt", null)
+    
+    inline def setFeature_image_altUndefined: Self = StObject.set(x, "feature_image_alt", js.undefined)
+    
+    inline def setFeature_image_caption(value: Nullable[String]): Self = StObject.set(x, "feature_image_caption", value.asInstanceOf[js.Any])
+    
+    inline def setFeature_image_captionNull: Self = StObject.set(x, "feature_image_caption", null)
+    
+    inline def setFeature_image_captionUndefined: Self = StObject.set(x, "feature_image_caption", js.undefined)
+    
+    inline def setFeatured(value: Boolean): Self = StObject.set(x, "featured", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturedUndefined: Self = StObject.set(x, "featured", js.undefined)
+    
+    inline def setHtml(value: Nullable[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlNull: Self = StObject.set(x, "html", null)
+    
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    
+    inline def setPage(value: Boolean): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPlaintext(value: Nullable[String]): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
+    
+    inline def setPlaintextNull: Self = StObject.set(x, "plaintext", null)
+    
+    inline def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
+    
+    inline def setPrimary_author(value: Nullable[Author]): Self = StObject.set(x, "primary_author", value.asInstanceOf[js.Any])
+    
+    inline def setPrimary_authorNull: Self = StObject.set(x, "primary_author", null)
+    
+    inline def setPrimary_authorUndefined: Self = StObject.set(x, "primary_author", js.undefined)
+    
+    inline def setPrimary_tag(value: Nullable[Tag]): Self = StObject.set(x, "primary_tag", value.asInstanceOf[js.Any])
+    
+    inline def setPrimary_tagNull: Self = StObject.set(x, "primary_tag", null)
+    
+    inline def setPrimary_tagUndefined: Self = StObject.set(x, "primary_tag", js.undefined)
+    
+    inline def setPublished_at(value: Nullable[String]): Self = StObject.set(x, "published_at", value.asInstanceOf[js.Any])
+    
+    inline def setPublished_atNull: Self = StObject.set(x, "published_at", null)
+    
+    inline def setPublished_atUndefined: Self = StObject.set(x, "published_at", js.undefined)
+    
+    inline def setReading_time(value: Double): Self = StObject.set(x, "reading_time", value.asInstanceOf[js.Any])
+    
+    inline def setReading_timeUndefined: Self = StObject.set(x, "reading_time", js.undefined)
+    
+    inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setUpdated_at(value: Nullable[String]): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    
+    inline def setUpdated_atNull: Self = StObject.set(x, "updated_at", null)
+    
+    inline def setUpdated_atUndefined: Self = StObject.set(x, "updated_at", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+  }
 }
-

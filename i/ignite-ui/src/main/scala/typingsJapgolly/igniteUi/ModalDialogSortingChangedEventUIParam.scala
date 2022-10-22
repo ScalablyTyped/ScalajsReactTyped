@@ -1,42 +1,54 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModalDialogSortingChangedEventUIParam extends js.Object {
+trait ModalDialogSortingChangedEventUIParam extends StObject {
+  
   /**
-  	 * Gets the column key.
-  	 */
+    * Gets the column key.
+    */
   var columnKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets whether column should be ascending or not. If true it should be ascending
-  	 */
+    * Gets whether column should be ascending or not. If true it should be ascending
+    */
   var isAsc: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets a reference to the modal dialog element. This is a jQuery object.
-  	 */
+    * Gets a reference to the modal dialog element. This is a jQuery object.
+    */
   var modalDialogElement: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to GridSorting.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to GridSorting.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ModalDialogSortingChangedEventUIParam {
-  @scala.inline
-  def apply(
-    columnKey: String = null,
-    isAsc: js.UndefOr[Boolean] = js.undefined,
-    modalDialogElement: String = null,
-    owner: js.Any = null
-  ): ModalDialogSortingChangedEventUIParam = {
+  
+  inline def apply(): ModalDialogSortingChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAsc)) __obj.updateDynamic("isAsc")(isAsc.asInstanceOf[js.Any])
-    if (modalDialogElement != null) __obj.updateDynamic("modalDialogElement")(modalDialogElement.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalDialogSortingChangedEventUIParam]
   }
+  
+  extension [Self <: ModalDialogSortingChangedEventUIParam](x: Self) {
+    
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    
+    inline def setIsAsc(value: Boolean): Self = StObject.set(x, "isAsc", value.asInstanceOf[js.Any])
+    
+    inline def setIsAscUndefined: Self = StObject.set(x, "isAsc", js.undefined)
+    
+    inline def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
+    
+    inline def setModalDialogElementUndefined: Self = StObject.set(x, "modalDialogElement", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

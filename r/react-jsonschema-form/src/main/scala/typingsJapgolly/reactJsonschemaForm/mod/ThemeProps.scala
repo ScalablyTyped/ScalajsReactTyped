@@ -1,137 +1,276 @@
 package typingsJapgolly.reactJsonschemaForm.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.react.mod.StatelessComponent
+import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<react-jsonschema-form.react-jsonschema-form.FormProps<T>, 'schema'> */
-trait ThemeProps[T] extends js.Object {
-  var ArrayFieldTemplate: js.UndefOr[StatelessComponent[ArrayFieldTemplateProps[_]]] = js.undefined
-  var ErrorList: js.UndefOr[StatelessComponent[ErrorListProps]] = js.undefined
-  var FieldTemplate: js.UndefOr[StatelessComponent[FieldTemplateProps]] = js.undefined
-  var ObjectFieldTemplate: js.UndefOr[StatelessComponent[ObjectFieldTemplateProps[_]]] = js.undefined
+trait ThemeProps[T] extends StObject {
+  
+  var ArrayFieldTemplate: js.UndefOr[FunctionComponent[ArrayFieldTemplateProps[Any]]] = js.undefined
+  
+  var ErrorList: js.UndefOr[FunctionComponent[ErrorListProps]] = js.undefined
+  
+  var FieldTemplate: js.UndefOr[FunctionComponent[FieldTemplateProps]] = js.undefined
+  
+  var ObjectFieldTemplate: js.UndefOr[FunctionComponent[ObjectFieldTemplateProps[Any]]] = js.undefined
+  
   var acceptcharset: js.UndefOr[String] = js.undefined
+  
   var action: js.UndefOr[String] = js.undefined
+  
   var additionalMetaSchemas: js.UndefOr[js.Array[js.Object]] = js.undefined
+  
+  var autoComplete: js.UndefOr[String] = js.undefined
+  
   var autocomplete: js.UndefOr[String] = js.undefined
+  
+  var children: js.UndefOr[Node] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var customFormats: js.UndefOr[
     StringDictionary[String | js.RegExp | (js.Function1[/* data */ String, Boolean])]
   ] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var enctype: js.UndefOr[String] = js.undefined
+  
   var fields: js.UndefOr[StringDictionary[Field]] = js.undefined
-  var formContext: js.UndefOr[js.Any] = js.undefined
+  
+  var formContext: js.UndefOr[Any] = js.undefined
+  
   var formData: js.UndefOr[T] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var idPrefix: js.UndefOr[String] = js.undefined
+  
   var liveOmit: js.UndefOr[Boolean] = js.undefined
+  
   var liveValidate: js.UndefOr[Boolean] = js.undefined
+  
   var method: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var noHtml5Validate: js.UndefOr[Boolean] = js.undefined
+  
   var noValidate: js.UndefOr[Boolean] = js.undefined
+  
   var omitExtraData: js.UndefOr[Boolean] = js.undefined
+  
   var onBlur: js.UndefOr[
     js.Function2[/* id */ String, /* value */ Boolean | Double | String | Null, Unit]
   ] = js.undefined
-  var onChange: js.UndefOr[js.Function2[/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema], _]] = js.undefined
-  var onError: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined
-  var onSubmit: js.UndefOr[js.Function1[/* e */ ISubmitEvent[T], _]] = js.undefined
-  var safeRenderCompletion: js.UndefOr[Boolean] = js.undefined
-  var showErrorList: js.UndefOr[Boolean] = js.undefined
-  var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+  
+  var onChange: js.UndefOr[js.Function2[/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema], Any]] = js.undefined
+  
+  var onError: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
+  
+  var onFocus: js.UndefOr[
+    js.Function2[/* id */ String, /* value */ Boolean | Double | String | Null, Unit]
   ] = js.undefined
+  
+  var onSubmit: js.UndefOr[js.Function1[/* e */ ISubmitEvent[T], Any]] = js.undefined
+  
+  var safeRenderCompletion: js.UndefOr[Boolean] = js.undefined
+  
+  var showErrorList: js.UndefOr[Boolean] = js.undefined
+  
+  var tagName: js.UndefOr[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typingsJapgolly.reactJsonschemaForm.reactJsonschemaFormStrings.a, typingsJapgolly.reactJsonschemaForm.reactJsonschemaFormStrings.abbr, typingsJapgolly.reactJsonschemaForm.reactJsonschemaFormStrings.address */ Any
+  ] = js.undefined
+  
   var target: js.UndefOr[String] = js.undefined
+  
   var transformErrors: js.UndefOr[js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]] = js.undefined
+  
   var uiSchema: js.UndefOr[UiSchema] = js.undefined
+  
   var validate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]] = js.undefined
+  
   var widgets: js.UndefOr[StringDictionary[Widget]] = js.undefined
 }
-
 object ThemeProps {
-  @scala.inline
-  def apply[T](
-    ArrayFieldTemplate: StatelessComponent[ArrayFieldTemplateProps[_]] = null,
-    ErrorList: StatelessComponent[ErrorListProps] = null,
-    FieldTemplate: StatelessComponent[FieldTemplateProps] = null,
-    ObjectFieldTemplate: StatelessComponent[ObjectFieldTemplateProps[_]] = null,
-    acceptcharset: String = null,
-    action: String = null,
-    additionalMetaSchemas: js.Array[js.Object] = null,
-    autocomplete: String = null,
-    className: String = null,
-    customFormats: StringDictionary[String | js.RegExp | (js.Function1[/* data */ String, Boolean])] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    enctype: String = null,
-    fields: StringDictionary[Field] = null,
-    formContext: js.Any = null,
-    formData: T = null,
-    id: String = null,
-    idPrefix: String = null,
-    liveOmit: js.UndefOr[Boolean] = js.undefined,
-    liveValidate: js.UndefOr[Boolean] = js.undefined,
-    method: String = null,
-    name: String = null,
-    noHtml5Validate: js.UndefOr[Boolean] = js.undefined,
-    noValidate: js.UndefOr[Boolean] = js.undefined,
-    omitExtraData: js.UndefOr[Boolean] = js.undefined,
-    onBlur: (/* id */ String, /* value */ Boolean | Double | String | Null) => Callback = null,
-    onChange: (/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema]) => CallbackTo[js.Any] = null,
-    onError: /* e */ js.Any => CallbackTo[js.Any] = null,
-    onSubmit: /* e */ ISubmitEvent[T] => CallbackTo[js.Any] = null,
-    safeRenderCompletion: js.UndefOr[Boolean] = js.undefined,
-    showErrorList: js.UndefOr[Boolean] = js.undefined,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
-    target: String = null,
-    transformErrors: /* errors */ js.Array[AjvError] => CallbackTo[js.Array[AjvError]] = null,
-    uiSchema: UiSchema = null,
-    validate: (/* formData */ T, /* errors */ FormValidation) => CallbackTo[FormValidation] = null,
-    widgets: StringDictionary[Widget] = null
-  ): ThemeProps[T] = {
+  
+  inline def apply[T](): ThemeProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (ArrayFieldTemplate != null) __obj.updateDynamic("ArrayFieldTemplate")(ArrayFieldTemplate.asInstanceOf[js.Any])
-    if (ErrorList != null) __obj.updateDynamic("ErrorList")(ErrorList.asInstanceOf[js.Any])
-    if (FieldTemplate != null) __obj.updateDynamic("FieldTemplate")(FieldTemplate.asInstanceOf[js.Any])
-    if (ObjectFieldTemplate != null) __obj.updateDynamic("ObjectFieldTemplate")(ObjectFieldTemplate.asInstanceOf[js.Any])
-    if (acceptcharset != null) __obj.updateDynamic("acceptcharset")(acceptcharset.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (additionalMetaSchemas != null) __obj.updateDynamic("additionalMetaSchemas")(additionalMetaSchemas.asInstanceOf[js.Any])
-    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (customFormats != null) __obj.updateDynamic("customFormats")(customFormats.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (formContext != null) __obj.updateDynamic("formContext")(formContext.asInstanceOf[js.Any])
-    if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveOmit)) __obj.updateDynamic("liveOmit")(liveOmit.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveValidate)) __obj.updateDynamic("liveValidate")(liveValidate.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noHtml5Validate)) __obj.updateDynamic("noHtml5Validate")(noHtml5Validate.asInstanceOf[js.Any])
-    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitExtraData)) __obj.updateDynamic("omitExtraData")(omitExtraData.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2((t0: /* id */ java.lang.String, t1: /* value */ scala.Boolean | scala.Double | java.lang.String | scala.Null) => onBlur(t0, t1).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* e */ typingsJapgolly.reactJsonschemaForm.mod.IChangeEvent[T], t1: /* es */ js.UndefOr[typingsJapgolly.reactJsonschemaForm.mod.ErrorSchema]) => onChange(t0, t1).runNow()))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: /* e */ js.Any) => onError(t0).runNow()))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.reactJsonschemaForm.mod.ISubmitEvent[T]) => onSubmit(t0).runNow()))
-    if (!js.isUndefined(safeRenderCompletion)) __obj.updateDynamic("safeRenderCompletion")(safeRenderCompletion.asInstanceOf[js.Any])
-    if (!js.isUndefined(showErrorList)) __obj.updateDynamic("showErrorList")(showErrorList.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (transformErrors != null) __obj.updateDynamic("transformErrors")(js.Any.fromFunction1((t0: /* errors */ js.Array[typingsJapgolly.reactJsonschemaForm.mod.AjvError]) => transformErrors(t0).runNow()))
-    if (uiSchema != null) __obj.updateDynamic("uiSchema")(uiSchema.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2((t0: /* formData */ T, t1: /* errors */ typingsJapgolly.reactJsonschemaForm.mod.FormValidation) => validate(t0, t1).runNow()))
-    if (widgets != null) __obj.updateDynamic("widgets")(widgets.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeProps[T]]
   }
+  
+  extension [Self <: ThemeProps[?], T](x: Self & ThemeProps[T]) {
+    
+    inline def setAcceptcharset(value: String): Self = StObject.set(x, "acceptcharset", value.asInstanceOf[js.Any])
+    
+    inline def setAcceptcharsetUndefined: Self = StObject.set(x, "acceptcharset", js.undefined)
+    
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    
+    inline def setAdditionalMetaSchemas(value: js.Array[js.Object]): Self = StObject.set(x, "additionalMetaSchemas", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalMetaSchemasUndefined: Self = StObject.set(x, "additionalMetaSchemas", js.undefined)
+    
+    inline def setAdditionalMetaSchemasVarargs(value: js.Object*): Self = StObject.set(x, "additionalMetaSchemas", js.Array(value*))
+    
+    inline def setArrayFieldTemplate(value: FunctionComponent[ArrayFieldTemplateProps[Any]]): Self = StObject.set(x, "ArrayFieldTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setArrayFieldTemplateUndefined: Self = StObject.set(x, "ArrayFieldTemplate", js.undefined)
+    
+    inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setCustomFormats(value: StringDictionary[String | js.RegExp | (js.Function1[/* data */ String, Boolean])]): Self = StObject.set(x, "customFormats", value.asInstanceOf[js.Any])
+    
+    inline def setCustomFormatsUndefined: Self = StObject.set(x, "customFormats", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setEnctype(value: String): Self = StObject.set(x, "enctype", value.asInstanceOf[js.Any])
+    
+    inline def setEnctypeUndefined: Self = StObject.set(x, "enctype", js.undefined)
+    
+    inline def setErrorList(value: FunctionComponent[ErrorListProps]): Self = StObject.set(x, "ErrorList", value.asInstanceOf[js.Any])
+    
+    inline def setErrorListUndefined: Self = StObject.set(x, "ErrorList", js.undefined)
+    
+    inline def setFieldTemplate(value: FunctionComponent[FieldTemplateProps]): Self = StObject.set(x, "FieldTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setFieldTemplateUndefined: Self = StObject.set(x, "FieldTemplate", js.undefined)
+    
+    inline def setFields(value: StringDictionary[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFormContext(value: Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
+    
+    inline def setFormContextUndefined: Self = StObject.set(x, "formContext", js.undefined)
+    
+    inline def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    
+    inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdPrefix(value: String): Self = StObject.set(x, "idPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setIdPrefixUndefined: Self = StObject.set(x, "idPrefix", js.undefined)
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLiveOmit(value: Boolean): Self = StObject.set(x, "liveOmit", value.asInstanceOf[js.Any])
+    
+    inline def setLiveOmitUndefined: Self = StObject.set(x, "liveOmit", js.undefined)
+    
+    inline def setLiveValidate(value: Boolean): Self = StObject.set(x, "liveValidate", value.asInstanceOf[js.Any])
+    
+    inline def setLiveValidateUndefined: Self = StObject.set(x, "liveValidate", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNoHtml5Validate(value: Boolean): Self = StObject.set(x, "noHtml5Validate", value.asInstanceOf[js.Any])
+    
+    inline def setNoHtml5ValidateUndefined: Self = StObject.set(x, "noHtml5Validate", js.undefined)
+    
+    inline def setNoValidate(value: Boolean): Self = StObject.set(x, "noValidate", value.asInstanceOf[js.Any])
+    
+    inline def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
+    
+    inline def setObjectFieldTemplate(value: FunctionComponent[ObjectFieldTemplateProps[Any]]): Self = StObject.set(x, "ObjectFieldTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setObjectFieldTemplateUndefined: Self = StObject.set(x, "ObjectFieldTemplate", js.undefined)
+    
+    inline def setOmitExtraData(value: Boolean): Self = StObject.set(x, "omitExtraData", value.asInstanceOf[js.Any])
+    
+    inline def setOmitExtraDataUndefined: Self = StObject.set(x, "omitExtraData", js.undefined)
+    
+    inline def setOnBlur(value: (/* id */ String, /* value */ Boolean | Double | String | Null) => Callback): Self = StObject.set(x, "onBlur", js.Any.fromFunction2((t0: /* id */ String, t1: /* value */ Boolean | Double | String | Null) => (value(t0, t1)).runNow()))
+    
+    inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+    
+    inline def setOnChange(value: (/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema]) => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+    
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    
+    inline def setOnError(value: /* e */ Any => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    
+    inline def setOnFocus(value: (/* id */ String, /* value */ Boolean | Double | String | Null) => Callback): Self = StObject.set(x, "onFocus", js.Any.fromFunction2((t0: /* id */ String, t1: /* value */ Boolean | Double | String | Null) => (value(t0, t1)).runNow()))
+    
+    inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+    
+    inline def setOnSubmit(value: /* e */ ISubmitEvent[T] => Any): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+    
+    inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+    
+    inline def setSafeRenderCompletion(value: Boolean): Self = StObject.set(x, "safeRenderCompletion", value.asInstanceOf[js.Any])
+    
+    inline def setSafeRenderCompletionUndefined: Self = StObject.set(x, "safeRenderCompletion", js.undefined)
+    
+    inline def setShowErrorList(value: Boolean): Self = StObject.set(x, "showErrorList", value.asInstanceOf[js.Any])
+    
+    inline def setShowErrorListUndefined: Self = StObject.set(x, "showErrorList", js.undefined)
+    
+    inline def setTagName(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typingsJapgolly.reactJsonschemaForm.reactJsonschemaFormStrings.a, typingsJapgolly.reactJsonschemaForm.reactJsonschemaFormStrings.abbr, typingsJapgolly.reactJsonschemaForm.reactJsonschemaFormStrings.address */ Any
+    ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    
+    inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+    
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    
+    inline def setTransformErrors(value: /* errors */ js.Array[AjvError] => js.Array[AjvError]): Self = StObject.set(x, "transformErrors", js.Any.fromFunction1(value))
+    
+    inline def setTransformErrorsUndefined: Self = StObject.set(x, "transformErrors", js.undefined)
+    
+    inline def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
+    
+    inline def setUiSchemaUndefined: Self = StObject.set(x, "uiSchema", js.undefined)
+    
+    inline def setValidate(value: (/* formData */ T, /* errors */ FormValidation) => FormValidation): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+    
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    
+    inline def setWidgets(value: StringDictionary[Widget]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
+    
+    inline def setWidgetsUndefined: Self = StObject.set(x, "widgets", js.undefined)
+  }
 }
-

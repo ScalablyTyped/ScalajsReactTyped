@@ -1,377 +1,657 @@
 package typingsJapgolly.luxon
 
-import typingsJapgolly.luxon.mod.CalendarSystem
-import typingsJapgolly.luxon.mod.ConversionAccuracy
-import typingsJapgolly.luxon.mod.DurationUnit
-import typingsJapgolly.luxon.mod.HourCycle
-import typingsJapgolly.luxon.mod.NumberUnitLength
-import typingsJapgolly.luxon.mod.NumberingSystem
-import typingsJapgolly.luxon.mod.StringUnitLength
-import typingsJapgolly.luxon.mod.ToRelativeUnit
-import typingsJapgolly.luxon.mod.UnitLength
-import typingsJapgolly.luxon.mod.ZoneOffsetFormat
+import typingsJapgolly.luxon.srcDatetimeMod.ConversionAccuracy
+import typingsJapgolly.luxon.srcDatetimeMod.DateTimeFormatPresetValue
+import typingsJapgolly.luxon.srcDatetimeMod.DateTimeUnit
+import typingsJapgolly.luxon.srcDatetimeMod.ToRelativeUnit
+import typingsJapgolly.luxon.srcDurationMod.DurationUnit
+import typingsJapgolly.luxon.srcDurationMod.ToISOFormat
+import typingsJapgolly.luxon.srcMiscMod.HourCycle
+import typingsJapgolly.luxon.srcMiscMod.NumberUnitLength
+import typingsJapgolly.luxon.srcMiscMod.StringUnitLength
+import typingsJapgolly.luxon.srcMiscMod.UnitLength
+import typingsJapgolly.luxon.srcZoneMod.ZoneOffsetFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object luxonStrings {
+  
   @js.native
   sealed trait `2-digit`
-    extends NumberUnitLength
+    extends StObject
+       with NumberUnitLength
        with UnitLength
+  inline def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
   
   @js.native
-  sealed trait arab extends NumberingSystem
+  sealed trait DATETIME_FULL extends StObject
+  inline def DATETIME_FULL: DATETIME_FULL = "DATETIME_FULL".asInstanceOf[DATETIME_FULL]
   
   @js.native
-  sealed trait arabext extends NumberingSystem
+  sealed trait DATETIME_FULL_WITH_SECONDS extends StObject
+  inline def DATETIME_FULL_WITH_SECONDS: DATETIME_FULL_WITH_SECONDS = "DATETIME_FULL_WITH_SECONDS".asInstanceOf[DATETIME_FULL_WITH_SECONDS]
   
   @js.native
-  sealed trait bali extends NumberingSystem
+  sealed trait DATETIME_HUGE extends StObject
+  inline def DATETIME_HUGE: DATETIME_HUGE = "DATETIME_HUGE".asInstanceOf[DATETIME_HUGE]
   
   @js.native
-  sealed trait beng extends NumberingSystem
+  sealed trait DATETIME_HUGE_WITH_SECONDS extends StObject
+  inline def DATETIME_HUGE_WITH_SECONDS: DATETIME_HUGE_WITH_SECONDS = "DATETIME_HUGE_WITH_SECONDS".asInstanceOf[DATETIME_HUGE_WITH_SECONDS]
   
   @js.native
-  sealed trait buddhist extends CalendarSystem
+  sealed trait DATETIME_MED extends StObject
+  inline def DATETIME_MED: DATETIME_MED = "DATETIME_MED".asInstanceOf[DATETIME_MED]
   
   @js.native
-  sealed trait casual extends ConversionAccuracy
+  sealed trait DATETIME_MED_WITH_SECONDS extends StObject
+  inline def DATETIME_MED_WITH_SECONDS: DATETIME_MED_WITH_SECONDS = "DATETIME_MED_WITH_SECONDS".asInstanceOf[DATETIME_MED_WITH_SECONDS]
   
   @js.native
-  sealed trait chinese extends CalendarSystem
+  sealed trait DATETIME_MED_WITH_WEEKDAY extends StObject
+  inline def DATETIME_MED_WITH_WEEKDAY: DATETIME_MED_WITH_WEEKDAY = "DATETIME_MED_WITH_WEEKDAY".asInstanceOf[DATETIME_MED_WITH_WEEKDAY]
   
   @js.native
-  sealed trait coptic extends CalendarSystem
+  sealed trait DATETIME_SHORT extends StObject
+  inline def DATETIME_SHORT: DATETIME_SHORT = "DATETIME_SHORT".asInstanceOf[DATETIME_SHORT]
   
   @js.native
-  sealed trait day extends DurationUnit
+  sealed trait DATETIME_SHORT_WITH_SECONDS extends StObject
+  inline def DATETIME_SHORT_WITH_SECONDS: DATETIME_SHORT_WITH_SECONDS = "DATETIME_SHORT_WITH_SECONDS".asInstanceOf[DATETIME_SHORT_WITH_SECONDS]
+  
+  @js.native
+  sealed trait DATE_FULL extends StObject
+  inline def DATE_FULL: DATE_FULL = "DATE_FULL".asInstanceOf[DATE_FULL]
+  
+  @js.native
+  sealed trait DATE_HUGE extends StObject
+  inline def DATE_HUGE: DATE_HUGE = "DATE_HUGE".asInstanceOf[DATE_HUGE]
+  
+  @js.native
+  sealed trait DATE_MED extends StObject
+  inline def DATE_MED: DATE_MED = "DATE_MED".asInstanceOf[DATE_MED]
+  
+  @js.native
+  sealed trait DATE_MED_WITH_WEEKDAY extends StObject
+  inline def DATE_MED_WITH_WEEKDAY: DATE_MED_WITH_WEEKDAY = "DATE_MED_WITH_WEEKDAY".asInstanceOf[DATE_MED_WITH_WEEKDAY]
+  
+  @js.native
+  sealed trait DATE_SHORT extends StObject
+  inline def DATE_SHORT: DATE_SHORT = "DATE_SHORT".asInstanceOf[DATE_SHORT]
+  
+  @js.native
+  sealed trait TIME_24_SIMPLE extends StObject
+  inline def TIME_24_SIMPLE: TIME_24_SIMPLE = "TIME_24_SIMPLE".asInstanceOf[TIME_24_SIMPLE]
+  
+  @js.native
+  sealed trait TIME_24_WITH_LONG_OFFSET extends StObject
+  inline def TIME_24_WITH_LONG_OFFSET: TIME_24_WITH_LONG_OFFSET = "TIME_24_WITH_LONG_OFFSET".asInstanceOf[TIME_24_WITH_LONG_OFFSET]
+  
+  @js.native
+  sealed trait TIME_24_WITH_SECONDS extends StObject
+  inline def TIME_24_WITH_SECONDS: TIME_24_WITH_SECONDS = "TIME_24_WITH_SECONDS".asInstanceOf[TIME_24_WITH_SECONDS]
+  
+  @js.native
+  sealed trait TIME_24_WITH_SHORT_OFFSET extends StObject
+  inline def TIME_24_WITH_SHORT_OFFSET: TIME_24_WITH_SHORT_OFFSET = "TIME_24_WITH_SHORT_OFFSET".asInstanceOf[TIME_24_WITH_SHORT_OFFSET]
+  
+  @js.native
+  sealed trait TIME_SIMPLE extends StObject
+  inline def TIME_SIMPLE: TIME_SIMPLE = "TIME_SIMPLE".asInstanceOf[TIME_SIMPLE]
+  
+  @js.native
+  sealed trait TIME_WITH_LONG_OFFSET extends StObject
+  inline def TIME_WITH_LONG_OFFSET: TIME_WITH_LONG_OFFSET = "TIME_WITH_LONG_OFFSET".asInstanceOf[TIME_WITH_LONG_OFFSET]
+  
+  @js.native
+  sealed trait TIME_WITH_SECONDS extends StObject
+  inline def TIME_WITH_SECONDS: TIME_WITH_SECONDS = "TIME_WITH_SECONDS".asInstanceOf[TIME_WITH_SECONDS]
+  
+  @js.native
+  sealed trait TIME_WITH_SHORT_OFFSET extends StObject
+  inline def TIME_WITH_SHORT_OFFSET: TIME_WITH_SHORT_OFFSET = "TIME_WITH_SHORT_OFFSET".asInstanceOf[TIME_WITH_SHORT_OFFSET]
+  
+  @js.native
+  sealed trait basic
+    extends StObject
+       with ToISOFormat
+  inline def basic: basic = "basic".asInstanceOf[basic]
+  
+  @js.native
+  sealed trait casual
+    extends StObject
+       with ConversionAccuracy
+  inline def casual: casual = "casual".asInstanceOf[casual]
+  
+  @js.native
+  sealed trait constructor extends StObject
+  inline def constructor: constructor = "constructor".asInstanceOf[constructor]
+  
+  @js.native
+  sealed trait day
+    extends StObject
+       with DateTimeUnit
+       with DurationUnit
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
   sealed trait days
-    extends DurationUnit
+    extends StObject
        with ToRelativeUnit
+  inline def days: days = "days".asInstanceOf[days]
   
   @js.native
-  sealed trait deva extends NumberingSystem
+  sealed trait daysInMonth extends StObject
+  inline def daysInMonth: daysInMonth = "daysInMonth".asInstanceOf[daysInMonth]
   
   @js.native
-  sealed trait ethioaa extends CalendarSystem
+  sealed trait daysInYear extends StObject
+  inline def daysInYear: daysInYear = "daysInYear".asInstanceOf[daysInYear]
   
   @js.native
-  sealed trait ethiopic extends CalendarSystem
+  sealed trait diff extends StObject
+  inline def diff: diff = "diff".asInstanceOf[diff]
   
   @js.native
-  sealed trait fullwide extends NumberingSystem
+  sealed trait diffNow extends StObject
+  inline def diffNow: diffNow = "diffNow".asInstanceOf[diffNow]
   
   @js.native
-  sealed trait gregory extends CalendarSystem
+  sealed trait endOf extends StObject
+  inline def endOf: endOf = "endOf".asInstanceOf[endOf]
   
   @js.native
-  sealed trait gujr extends NumberingSystem
+  sealed trait equals extends StObject
+  inline def equals: equals = "equals".asInstanceOf[equals]
   
   @js.native
-  sealed trait guru extends NumberingSystem
+  sealed trait expandFormat extends StObject
+  inline def expandFormat: expandFormat = "expandFormat".asInstanceOf[expandFormat]
   
   @js.native
-  sealed trait h11 extends HourCycle
+  sealed trait extended
+    extends StObject
+       with ToISOFormat
+  inline def extended: extended = "extended".asInstanceOf[extended]
   
   @js.native
-  sealed trait h12 extends HourCycle
+  sealed trait fromFormat extends StObject
+  inline def fromFormat: fromFormat = "fromFormat".asInstanceOf[fromFormat]
   
   @js.native
-  sealed trait h23 extends HourCycle
+  sealed trait fromFormatExplain extends StObject
+  inline def fromFormatExplain: fromFormatExplain = "fromFormatExplain".asInstanceOf[fromFormatExplain]
   
   @js.native
-  sealed trait h24 extends HourCycle
+  sealed trait fromHTTP extends StObject
+  inline def fromHTTP: fromHTTP = "fromHTTP".asInstanceOf[fromHTTP]
   
   @js.native
-  sealed trait hanidec extends NumberingSystem
+  sealed trait fromISO extends StObject
+  inline def fromISO: fromISO = "fromISO".asInstanceOf[fromISO]
   
   @js.native
-  sealed trait hebrew extends CalendarSystem
+  sealed trait fromJSDate extends StObject
+  inline def fromJSDate: fromJSDate = "fromJSDate".asInstanceOf[fromJSDate]
   
   @js.native
-  sealed trait hour extends DurationUnit
+  sealed trait fromMillis extends StObject
+  inline def fromMillis: fromMillis = "fromMillis".asInstanceOf[fromMillis]
+  
+  @js.native
+  sealed trait fromObject extends StObject
+  inline def fromObject: fromObject = "fromObject".asInstanceOf[fromObject]
+  
+  @js.native
+  sealed trait fromRFC2822 extends StObject
+  inline def fromRFC2822: fromRFC2822 = "fromRFC2822".asInstanceOf[fromRFC2822]
+  
+  @js.native
+  sealed trait fromSQL extends StObject
+  inline def fromSQL: fromSQL = "fromSQL".asInstanceOf[fromSQL]
+  
+  @js.native
+  sealed trait fromSeconds extends StObject
+  inline def fromSeconds: fromSeconds = "fromSeconds".asInstanceOf[fromSeconds]
+  
+  @js.native
+  sealed trait fromString extends StObject
+  inline def fromString: fromString = "fromString".asInstanceOf[fromString]
+  
+  @js.native
+  sealed trait fromStringExplain extends StObject
+  inline def fromStringExplain: fromStringExplain = "fromStringExplain".asInstanceOf[fromStringExplain]
+  
+  @js.native
+  sealed trait get extends StObject
+  inline def get: get = "get".asInstanceOf[get]
+  
+  @js.native
+  sealed trait h11
+    extends StObject
+       with HourCycle
+  inline def h11: h11 = "h11".asInstanceOf[h11]
+  
+  @js.native
+  sealed trait h12
+    extends StObject
+       with HourCycle
+  inline def h12: h12 = "h12".asInstanceOf[h12]
+  
+  @js.native
+  sealed trait h23
+    extends StObject
+       with HourCycle
+  inline def h23: h23 = "h23".asInstanceOf[h23]
+  
+  @js.native
+  sealed trait h24
+    extends StObject
+       with HourCycle
+  inline def h24: h24 = "h24".asInstanceOf[h24]
+  
+  @js.native
+  sealed trait hasSame extends StObject
+  inline def hasSame: hasSame = "hasSame".asInstanceOf[hasSame]
+  
+  @js.native
+  sealed trait hour
+    extends StObject
+       with DateTimeUnit
+       with DurationUnit
+  inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
   sealed trait hours
-    extends DurationUnit
+    extends StObject
        with ToRelativeUnit
+  inline def hours: hours = "hours".asInstanceOf[hours]
   
   @js.native
-  sealed trait indian extends CalendarSystem
+  sealed trait invalid extends StObject
+  inline def invalid: invalid = "invalid".asInstanceOf[invalid]
   
   @js.native
-  sealed trait islamic extends CalendarSystem
+  sealed trait invalidExplanation extends StObject
+  inline def invalidExplanation: invalidExplanation = "invalidExplanation".asInstanceOf[invalidExplanation]
   
   @js.native
-  sealed trait islamicc extends CalendarSystem
+  sealed trait invalidReason extends StObject
+  inline def invalidReason: invalidReason = "invalidReason".asInstanceOf[invalidReason]
   
   @js.native
-  sealed trait iso8601 extends CalendarSystem
+  sealed trait isDateTime extends StObject
+  inline def isDateTime: isDateTime = "isDateTime".asInstanceOf[isDateTime]
   
   @js.native
-  sealed trait japanese extends CalendarSystem
+  sealed trait isInDST extends StObject
+  inline def isInDST: isInDST = "isInDST".asInstanceOf[isInDST]
   
   @js.native
-  sealed trait khmr extends NumberingSystem
+  sealed trait isInLeapYear extends StObject
+  inline def isInLeapYear: isInLeapYear = "isInLeapYear".asInstanceOf[isInLeapYear]
   
   @js.native
-  sealed trait knda extends NumberingSystem
+  sealed trait isOffsetFixed extends StObject
+  inline def isOffsetFixed: isOffsetFixed = "isOffsetFixed".asInstanceOf[isOffsetFixed]
   
   @js.native
-  sealed trait laoo extends NumberingSystem
+  sealed trait isValid extends StObject
+  inline def isValid: isValid = "isValid".asInstanceOf[isValid]
   
   @js.native
-  sealed trait latn extends NumberingSystem
+  sealed trait local extends StObject
+  inline def local: local = "local".asInstanceOf[local]
   
   @js.native
-  sealed trait limb extends NumberingSystem
+  sealed trait locale extends StObject
+  inline def locale: locale = "locale".asInstanceOf[locale]
   
   @js.native
   sealed trait long
-    extends StringUnitLength
+    extends StObject
+       with DateTimeFormatPresetValue
+       with StringUnitLength
        with UnitLength
+  inline def long: long = "long".asInstanceOf[long]
   
   @js.native
-  sealed trait longterm extends ConversionAccuracy
+  sealed trait longterm
+    extends StObject
+       with ConversionAccuracy
+  inline def longterm: longterm = "longterm".asInstanceOf[longterm]
   
   @js.native
-  sealed trait millisecond extends DurationUnit
+  sealed trait max extends StObject
+  inline def max: max = "max".asInstanceOf[max]
   
   @js.native
-  sealed trait milliseconds extends DurationUnit
+  sealed trait millisecond
+    extends StObject
+       with DateTimeUnit
+       with DurationUnit
+  inline def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
   
   @js.native
-  sealed trait minute extends DurationUnit
+  sealed trait min extends StObject
+  inline def min: min = "min".asInstanceOf[min]
+  
+  @js.native
+  sealed trait minus extends StObject
+  inline def minus: minus = "minus".asInstanceOf[minus]
+  
+  @js.native
+  sealed trait minute
+    extends StObject
+       with DateTimeUnit
+       with DurationUnit
+  inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
   sealed trait minutes
-    extends DurationUnit
+    extends StObject
        with ToRelativeUnit
+  inline def minutes: minutes = "minutes".asInstanceOf[minutes]
   
   @js.native
-  sealed trait mlym extends NumberingSystem
+  sealed trait month
+    extends StObject
+       with DateTimeUnit
+       with DurationUnit
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait mong extends NumberingSystem
+  sealed trait monthLong extends StObject
+  inline def monthLong: monthLong = "monthLong".asInstanceOf[monthLong]
   
   @js.native
-  sealed trait month extends DurationUnit
+  sealed trait monthShort extends StObject
+  inline def monthShort: monthShort = "monthShort".asInstanceOf[monthShort]
   
   @js.native
   sealed trait months
-    extends DurationUnit
+    extends StObject
        with ToRelativeUnit
-  
-  @js.native
-  sealed trait mymr extends NumberingSystem
+  inline def months: months = "months".asInstanceOf[months]
   
   @js.native
   sealed trait narrow
-    extends StringUnitLength
+    extends StObject
+       with StringUnitLength
        with UnitLength
        with ZoneOffsetFormat
+  inline def narrow: narrow = "narrow".asInstanceOf[narrow]
+  
+  @js.native
+  sealed trait now extends StObject
+  inline def now: now = "now".asInstanceOf[now]
+  
+  @js.native
+  sealed trait numberingSystem extends StObject
+  inline def numberingSystem: numberingSystem = "numberingSystem".asInstanceOf[numberingSystem]
   
   @js.native
   sealed trait numeric
-    extends NumberUnitLength
+    extends StObject
+       with DateTimeFormatPresetValue
+       with NumberUnitLength
        with UnitLength
+  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
-  sealed trait orya extends NumberingSystem
+  sealed trait offset extends StObject
+  inline def offset: offset = "offset".asInstanceOf[offset]
   
   @js.native
-  sealed trait persian extends CalendarSystem
+  sealed trait offsetNameLong extends StObject
+  inline def offsetNameLong: offsetNameLong = "offsetNameLong".asInstanceOf[offsetNameLong]
   
   @js.native
-  sealed trait quarter extends DurationUnit
+  sealed trait offsetNameShort extends StObject
+  inline def offsetNameShort: offsetNameShort = "offsetNameShort".asInstanceOf[offsetNameShort]
+  
+  @js.native
+  sealed trait ordinal extends StObject
+  inline def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
+  
+  @js.native
+  sealed trait outputCalendar extends StObject
+  inline def outputCalendar: outputCalendar = "outputCalendar".asInstanceOf[outputCalendar]
+  
+  @js.native
+  sealed trait parseFormatForOpts extends StObject
+  inline def parseFormatForOpts: parseFormatForOpts = "parseFormatForOpts".asInstanceOf[parseFormatForOpts]
+  
+  @js.native
+  sealed trait plus extends StObject
+  inline def plus: plus = "plus".asInstanceOf[plus]
+  
+  @js.native
+  sealed trait quarter
+    extends StObject
+       with DateTimeUnit
+       with DurationUnit
+  inline def quarter: quarter = "quarter".asInstanceOf[quarter]
   
   @js.native
   sealed trait quarters
-    extends DurationUnit
+    extends StObject
        with ToRelativeUnit
+  inline def quarters: quarters = "quarters".asInstanceOf[quarters]
   
   @js.native
-  sealed trait roc extends CalendarSystem
+  sealed trait reconfigure extends StObject
+  inline def reconfigure: reconfigure = "reconfigure".asInstanceOf[reconfigure]
   
   @js.native
-  sealed trait second extends DurationUnit
+  sealed trait resolvedLocaleOptions extends StObject
+  inline def resolvedLocaleOptions: resolvedLocaleOptions = "resolvedLocaleOptions".asInstanceOf[resolvedLocaleOptions]
+  
+  @js.native
+  sealed trait second
+    extends StObject
+       with DateTimeUnit
+       with DurationUnit
+  inline def second: second = "second".asInstanceOf[second]
   
   @js.native
   sealed trait seconds
-    extends DurationUnit
+    extends StObject
        with ToRelativeUnit
+  inline def seconds: seconds = "seconds".asInstanceOf[seconds]
+  
+  @js.native
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
+  
+  @js.native
+  sealed trait setLocale extends StObject
+  inline def setLocale: setLocale = "setLocale".asInstanceOf[setLocale]
+  
+  @js.native
+  sealed trait setZone extends StObject
+  inline def setZone: setZone = "setZone".asInstanceOf[setZone]
   
   @js.native
   sealed trait short
-    extends StringUnitLength
+    extends StObject
+       with DateTimeFormatPresetValue
+       with StringUnitLength
        with UnitLength
        with ZoneOffsetFormat
+  inline def short: short = "short".asInstanceOf[short]
   
   @js.native
-  sealed trait tamldec extends NumberingSystem
+  sealed trait startOf extends StObject
+  inline def startOf: startOf = "startOf".asInstanceOf[startOf]
   
   @js.native
-  sealed trait techie extends ZoneOffsetFormat
+  sealed trait techie
+    extends StObject
+       with ZoneOffsetFormat
+  inline def techie: techie = "techie".asInstanceOf[techie]
   
   @js.native
-  sealed trait telu extends NumberingSystem
+  sealed trait toBSON extends StObject
+  inline def toBSON: toBSON = "toBSON".asInstanceOf[toBSON]
   
   @js.native
-  sealed trait thai extends NumberingSystem
+  sealed trait toFormat extends StObject
+  inline def toFormat: toFormat = "toFormat".asInstanceOf[toFormat]
   
   @js.native
-  sealed trait tibt extends NumberingSystem
+  sealed trait toHTTP extends StObject
+  inline def toHTTP: toHTTP = "toHTTP".asInstanceOf[toHTTP]
   
   @js.native
-  sealed trait week extends DurationUnit
+  sealed trait toISO extends StObject
+  inline def toISO: toISO = "toISO".asInstanceOf[toISO]
+  
+  @js.native
+  sealed trait toISODate extends StObject
+  inline def toISODate: toISODate = "toISODate".asInstanceOf[toISODate]
+  
+  @js.native
+  sealed trait toISOTime extends StObject
+  inline def toISOTime: toISOTime = "toISOTime".asInstanceOf[toISOTime]
+  
+  @js.native
+  sealed trait toISOWeekDate extends StObject
+  inline def toISOWeekDate: toISOWeekDate = "toISOWeekDate".asInstanceOf[toISOWeekDate]
+  
+  @js.native
+  sealed trait toJSDate extends StObject
+  inline def toJSDate: toJSDate = "toJSDate".asInstanceOf[toJSDate]
+  
+  @js.native
+  sealed trait toJSON extends StObject
+  inline def toJSON: toJSON = "toJSON".asInstanceOf[toJSON]
+  
+  @js.native
+  sealed trait toLocal extends StObject
+  inline def toLocal: toLocal = "toLocal".asInstanceOf[toLocal]
+  
+  @js.native
+  sealed trait toLocaleParts extends StObject
+  inline def toLocaleParts: toLocaleParts = "toLocaleParts".asInstanceOf[toLocaleParts]
+  
+  @js.native
+  sealed trait toLocaleString extends StObject
+  
+  @js.native
+  sealed trait toMillis extends StObject
+  inline def toMillis: toMillis = "toMillis".asInstanceOf[toMillis]
+  
+  @js.native
+  sealed trait toObject extends StObject
+  inline def toObject: toObject = "toObject".asInstanceOf[toObject]
+  
+  @js.native
+  sealed trait toRFC2822 extends StObject
+  inline def toRFC2822: toRFC2822 = "toRFC2822".asInstanceOf[toRFC2822]
+  
+  @js.native
+  sealed trait toRelative extends StObject
+  inline def toRelative: toRelative = "toRelative".asInstanceOf[toRelative]
+  
+  @js.native
+  sealed trait toRelativeCalendar extends StObject
+  inline def toRelativeCalendar: toRelativeCalendar = "toRelativeCalendar".asInstanceOf[toRelativeCalendar]
+  
+  @js.native
+  sealed trait toSQL extends StObject
+  inline def toSQL: toSQL = "toSQL".asInstanceOf[toSQL]
+  
+  @js.native
+  sealed trait toSQLDate extends StObject
+  inline def toSQLDate: toSQLDate = "toSQLDate".asInstanceOf[toSQLDate]
+  
+  @js.native
+  sealed trait toSQLTime extends StObject
+  inline def toSQLTime: toSQLTime = "toSQLTime".asInstanceOf[toSQLTime]
+  
+  @js.native
+  sealed trait toSeconds extends StObject
+  inline def toSeconds: toSeconds = "toSeconds".asInstanceOf[toSeconds]
+  
+  @js.native
+  sealed trait toString extends StObject
+  
+  @js.native
+  sealed trait toUTC extends StObject
+  inline def toUTC: toUTC = "toUTC".asInstanceOf[toUTC]
+  
+  @js.native
+  sealed trait toUnixInteger extends StObject
+  inline def toUnixInteger: toUnixInteger = "toUnixInteger".asInstanceOf[toUnixInteger]
+  
+  @js.native
+  sealed trait until extends StObject
+  inline def until: until = "until".asInstanceOf[until]
+  
+  @js.native
+  sealed trait utc extends StObject
+  inline def utc: utc = "utc".asInstanceOf[utc]
+  
+  @js.native
+  sealed trait valueOf extends StObject
+  
+  @js.native
+  sealed trait week
+    extends StObject
+       with DateTimeUnit
+       with DurationUnit
+  inline def week: week = "week".asInstanceOf[week]
+  
+  @js.native
+  sealed trait weekNumber extends StObject
+  inline def weekNumber: weekNumber = "weekNumber".asInstanceOf[weekNumber]
+  
+  @js.native
+  sealed trait weekYear extends StObject
+  inline def weekYear: weekYear = "weekYear".asInstanceOf[weekYear]
+  
+  @js.native
+  sealed trait weekday extends StObject
+  inline def weekday: weekday = "weekday".asInstanceOf[weekday]
+  
+  @js.native
+  sealed trait weekdayLong extends StObject
+  inline def weekdayLong: weekdayLong = "weekdayLong".asInstanceOf[weekdayLong]
+  
+  @js.native
+  sealed trait weekdayShort extends StObject
+  inline def weekdayShort: weekdayShort = "weekdayShort".asInstanceOf[weekdayShort]
   
   @js.native
   sealed trait weeks
-    extends DurationUnit
+    extends StObject
        with ToRelativeUnit
+  inline def weeks: weeks = "weeks".asInstanceOf[weeks]
   
   @js.native
-  sealed trait year extends DurationUnit
+  sealed trait weeksInWeekYear extends StObject
+  inline def weeksInWeekYear: weeksInWeekYear = "weeksInWeekYear".asInstanceOf[weeksInWeekYear]
+  
+  @js.native
+  sealed trait year
+    extends StObject
+       with DateTimeUnit
+       with DurationUnit
+  inline def year: year = "year".asInstanceOf[year]
   
   @js.native
   sealed trait years
-    extends DurationUnit
+    extends StObject
        with ToRelativeUnit
+  inline def years: years = "years".asInstanceOf[years]
   
-  @scala.inline
-  def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
-  @scala.inline
-  def arab: arab = "arab".asInstanceOf[arab]
-  @scala.inline
-  def arabext: arabext = "arabext".asInstanceOf[arabext]
-  @scala.inline
-  def bali: bali = "bali".asInstanceOf[bali]
-  @scala.inline
-  def beng: beng = "beng".asInstanceOf[beng]
-  @scala.inline
-  def buddhist: buddhist = "buddhist".asInstanceOf[buddhist]
-  @scala.inline
-  def casual: casual = "casual".asInstanceOf[casual]
-  @scala.inline
-  def chinese: chinese = "chinese".asInstanceOf[chinese]
-  @scala.inline
-  def coptic: coptic = "coptic".asInstanceOf[coptic]
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
-  @scala.inline
-  def days: days = "days".asInstanceOf[days]
-  @scala.inline
-  def deva: deva = "deva".asInstanceOf[deva]
-  @scala.inline
-  def ethioaa: ethioaa = "ethioaa".asInstanceOf[ethioaa]
-  @scala.inline
-  def ethiopic: ethiopic = "ethiopic".asInstanceOf[ethiopic]
-  @scala.inline
-  def fullwide: fullwide = "fullwide".asInstanceOf[fullwide]
-  @scala.inline
-  def gregory: gregory = "gregory".asInstanceOf[gregory]
-  @scala.inline
-  def gujr: gujr = "gujr".asInstanceOf[gujr]
-  @scala.inline
-  def guru: guru = "guru".asInstanceOf[guru]
-  @scala.inline
-  def h11: h11 = "h11".asInstanceOf[h11]
-  @scala.inline
-  def h12: h12 = "h12".asInstanceOf[h12]
-  @scala.inline
-  def h23: h23 = "h23".asInstanceOf[h23]
-  @scala.inline
-  def h24: h24 = "h24".asInstanceOf[h24]
-  @scala.inline
-  def hanidec: hanidec = "hanidec".asInstanceOf[hanidec]
-  @scala.inline
-  def hebrew: hebrew = "hebrew".asInstanceOf[hebrew]
-  @scala.inline
-  def hour: hour = "hour".asInstanceOf[hour]
-  @scala.inline
-  def hours: hours = "hours".asInstanceOf[hours]
-  @scala.inline
-  def indian: indian = "indian".asInstanceOf[indian]
-  @scala.inline
-  def islamic: islamic = "islamic".asInstanceOf[islamic]
-  @scala.inline
-  def islamicc: islamicc = "islamicc".asInstanceOf[islamicc]
-  @scala.inline
-  def iso8601: iso8601 = "iso8601".asInstanceOf[iso8601]
-  @scala.inline
-  def japanese: japanese = "japanese".asInstanceOf[japanese]
-  @scala.inline
-  def khmr: khmr = "khmr".asInstanceOf[khmr]
-  @scala.inline
-  def knda: knda = "knda".asInstanceOf[knda]
-  @scala.inline
-  def laoo: laoo = "laoo".asInstanceOf[laoo]
-  @scala.inline
-  def latn: latn = "latn".asInstanceOf[latn]
-  @scala.inline
-  def limb: limb = "limb".asInstanceOf[limb]
-  @scala.inline
-  def long: long = "long".asInstanceOf[long]
-  @scala.inline
-  def longterm: longterm = "longterm".asInstanceOf[longterm]
-  @scala.inline
-  def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
-  @scala.inline
-  def milliseconds: milliseconds = "milliseconds".asInstanceOf[milliseconds]
-  @scala.inline
-  def minute: minute = "minute".asInstanceOf[minute]
-  @scala.inline
-  def minutes: minutes = "minutes".asInstanceOf[minutes]
-  @scala.inline
-  def mlym: mlym = "mlym".asInstanceOf[mlym]
-  @scala.inline
-  def mong: mong = "mong".asInstanceOf[mong]
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
-  @scala.inline
-  def months: months = "months".asInstanceOf[months]
-  @scala.inline
-  def mymr: mymr = "mymr".asInstanceOf[mymr]
-  @scala.inline
-  def narrow: narrow = "narrow".asInstanceOf[narrow]
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
-  @scala.inline
-  def orya: orya = "orya".asInstanceOf[orya]
-  @scala.inline
-  def persian: persian = "persian".asInstanceOf[persian]
-  @scala.inline
-  def quarter: quarter = "quarter".asInstanceOf[quarter]
-  @scala.inline
-  def quarters: quarters = "quarters".asInstanceOf[quarters]
-  @scala.inline
-  def roc: roc = "roc".asInstanceOf[roc]
-  @scala.inline
-  def second: second = "second".asInstanceOf[second]
-  @scala.inline
-  def seconds: seconds = "seconds".asInstanceOf[seconds]
-  @scala.inline
-  def short: short = "short".asInstanceOf[short]
-  @scala.inline
-  def tamldec: tamldec = "tamldec".asInstanceOf[tamldec]
-  @scala.inline
-  def techie: techie = "techie".asInstanceOf[techie]
-  @scala.inline
-  def telu: telu = "telu".asInstanceOf[telu]
-  @scala.inline
-  def thai: thai = "thai".asInstanceOf[thai]
-  @scala.inline
-  def tibt: tibt = "tibt".asInstanceOf[tibt]
-  @scala.inline
-  def week: week = "week".asInstanceOf[week]
-  @scala.inline
-  def weeks: weeks = "weeks".asInstanceOf[weeks]
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
-  @scala.inline
-  def years: years = "years".asInstanceOf[years]
+  @js.native
+  sealed trait zone extends StObject
+  inline def zone: zone = "zone".asInstanceOf[zone]
+  
+  @js.native
+  sealed trait zoneName extends StObject
+  inline def zoneName: zoneName = "zoneName".asInstanceOf[zoneName]
 }
-

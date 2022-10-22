@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "diff2html" : "3.4.19"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "diff2html" : "3.4.19"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

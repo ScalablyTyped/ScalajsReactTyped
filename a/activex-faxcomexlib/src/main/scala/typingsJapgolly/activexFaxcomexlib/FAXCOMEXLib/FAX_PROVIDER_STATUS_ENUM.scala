@@ -1,44 +1,40 @@
 package typingsJapgolly.activexFaxcomexlib.FAXCOMEXLib
 
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`3`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`5`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`6`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`0`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`3`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`4`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`5`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line:no-const-enum
+// eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`3`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`6`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`5`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`3`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`6`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`5`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`4`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`0`
 */
-trait FAX_PROVIDER_STATUS_ENUM extends js.Object
-
+trait FAX_PROVIDER_STATUS_ENUM extends StObject
 object FAX_PROVIDER_STATUS_ENUM {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fpsBAD_GUID: `2` = this.cast(2)
-  @scala.inline
-  def fpsBAD_VERSION: `3` = this.cast(3)
-  @scala.inline
-  def fpsCANT_INIT: `6` = this.cast(6)
-  @scala.inline
-  def fpsCANT_LINK: `5` = this.cast(5)
-  @scala.inline
-  def fpsCANT_LOAD: `4` = this.cast(4)
-  @scala.inline
-  def fpsSERVER_ERROR: `1` = this.cast(1)
-  @scala.inline
-  def fpsSUCCESS: `0` = this.cast(0)
+  
+  inline def fpsBAD_GUID: `2` = 2.asInstanceOf[`2`]
+  
+  inline def fpsBAD_VERSION: `3` = 3.asInstanceOf[`3`]
+  
+  inline def fpsCANT_INIT: `6` = 6.asInstanceOf[`6`]
+  
+  inline def fpsCANT_LINK: `5` = 5.asInstanceOf[`5`]
+  
+  inline def fpsCANT_LOAD: `4` = 4.asInstanceOf[`4`]
+  
+  inline def fpsSERVER_ERROR: `1` = 1.asInstanceOf[`1`]
+  
+  inline def fpsSUCCESS: `0` = 0.asInstanceOf[`0`]
 }
-

@@ -1,20 +1,26 @@
 package typingsJapgolly.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GlobalizationError extends js.Object {
+trait GlobalizationError extends StObject {
+  
   var code: Double
+  
   var message: String
 }
-
-@JSGlobal("GlobalizationError")
-@js.native
-object GlobalizationError extends js.Object {
-  var FORMATTING_ERROR: Double = js.native
-  var PARSING_ERROR: Double = js.native
-  var PATTERN_ERROR: Double = js.native
-  var UNKNOWN_ERROR: Double = js.native
+object GlobalizationError {
+  
+  inline def apply(code: Double, message: String): GlobalizationError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GlobalizationError]
+  }
+  
+  extension [Self <: GlobalizationError](x: Self) {
+    
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+  }
 }
-

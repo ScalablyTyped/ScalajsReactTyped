@@ -1,87 +1,82 @@
 package typingsJapgolly.rheostat.components
 
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.react.mod.ReactType
+import japgolly.scalajs.react.facade.React.ElementType
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.rheostat.mod.Algorithm
 import typingsJapgolly.rheostat.mod.Orientation
 import typingsJapgolly.rheostat.mod.Props
 import typingsJapgolly.rheostat.mod.PublicState
 import typingsJapgolly.rheostat.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Rheostat {
-  def apply(
-    algorithm: Algorithm = null,
-    autoAdjustVerticalPosition: js.UndefOr[Boolean] = js.undefined,
-    background: ReactType[_] = null,
-    className: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    getNextHandlePosition: (/* handleIdx */ Double, /* percentPosition */ Double) => CallbackTo[Double] = null,
-    handle: ReactType[_] = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    onChange: /* publicState */ PublicState => CallbackTo[js.Any] = null,
-    onClick: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onKeyPress: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onSliderDragEnd: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onSliderDragMove: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onSliderDragStart: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onValuesUpdated: /* publicState */ PublicState => CallbackTo[js.Any] = null,
-    orientation: Orientation = null,
-    pitComponent: ReactType[_] = null,
-    pitPoints: js.Array[Double] = null,
-    progressBar: ReactType[_] = null,
-    snap: js.UndefOr[Boolean] = js.undefined,
-    snapPoints: js.Array[Double] = null,
-    values: js.Array[Double] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, default, Unit, Props] = {
-    val __obj = js.Dynamic.literal()
   
-      if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoAdjustVerticalPosition)) __obj.updateDynamic("autoAdjustVerticalPosition")(autoAdjustVerticalPosition.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (getNextHandlePosition != null) __obj.updateDynamic("getNextHandlePosition")(js.Any.fromFunction2((t0: /* handleIdx */ scala.Double, t1: /* percentPosition */ scala.Double) => getNextHandlePosition(t0, t1).runNow()))
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* publicState */ typingsJapgolly.rheostat.mod.PublicState) => onChange(t0).runNow()))
-    onClick.foreach(p => __obj.updateDynamic("onClick")(p.toJsFn))
-    onKeyPress.foreach(p => __obj.updateDynamic("onKeyPress")(p.toJsFn))
-    onSliderDragEnd.foreach(p => __obj.updateDynamic("onSliderDragEnd")(p.toJsFn))
-    onSliderDragMove.foreach(p => __obj.updateDynamic("onSliderDragMove")(p.toJsFn))
-    onSliderDragStart.foreach(p => __obj.updateDynamic("onSliderDragStart")(p.toJsFn))
-    if (onValuesUpdated != null) __obj.updateDynamic("onValuesUpdated")(js.Any.fromFunction1((t0: /* publicState */ typingsJapgolly.rheostat.mod.PublicState) => onValuesUpdated(t0).runNow()))
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (pitComponent != null) __obj.updateDynamic("pitComponent")(pitComponent.asInstanceOf[js.Any])
-    if (pitPoints != null) __obj.updateDynamic("pitPoints")(pitPoints.asInstanceOf[js.Any])
-    if (progressBar != null) __obj.updateDynamic("progressBar")(progressBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
-    if (snapPoints != null) __obj.updateDynamic("snapPoints")(snapPoints.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rheostat.mod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rheostat.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rheostat.mod.Props])(children: _*)
-  }
   @JSImport("rheostat", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def algorithm(value: Algorithm): this.type = set("algorithm", value.asInstanceOf[js.Any])
+    
+    inline def autoAdjustVerticalPosition(value: Boolean): this.type = set("autoAdjustVerticalPosition", value.asInstanceOf[js.Any])
+    
+    inline def background(value: ElementType): this.type = set("background", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def getNextHandlePosition(value: (/* handleIdx */ Double, /* percentPosition */ Double) => Double): this.type = set("getNextHandlePosition", js.Any.fromFunction2(value))
+    
+    inline def handle(value: ElementType): this.type = set("handle", value.asInstanceOf[js.Any])
+    
+    inline def max(value: Double): this.type = set("max", value.asInstanceOf[js.Any])
+    
+    inline def min(value: Double): this.type = set("min", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* publicState */ PublicState => Any): this.type = set("onChange", js.Any.fromFunction1(value))
+    
+    inline def onClick(value: CallbackTo[Any]): this.type = set("onClick", value.toJsFn)
+    
+    inline def onKeyPress(value: CallbackTo[Any]): this.type = set("onKeyPress", value.toJsFn)
+    
+    inline def onSliderDragEnd(value: CallbackTo[Any]): this.type = set("onSliderDragEnd", value.toJsFn)
+    
+    inline def onSliderDragMove(value: CallbackTo[Any]): this.type = set("onSliderDragMove", value.toJsFn)
+    
+    inline def onSliderDragStart(value: CallbackTo[Any]): this.type = set("onSliderDragStart", value.toJsFn)
+    
+    inline def onValuesUpdated(value: /* publicState */ PublicState => Any): this.type = set("onValuesUpdated", js.Any.fromFunction1(value))
+    
+    inline def orientation(value: Orientation): this.type = set("orientation", value.asInstanceOf[js.Any])
+    
+    inline def pitComponent(value: ElementType): this.type = set("pitComponent", value.asInstanceOf[js.Any])
+    
+    inline def pitPoints(value: js.Array[Double]): this.type = set("pitPoints", value.asInstanceOf[js.Any])
+    
+    inline def pitPointsVarargs(value: Double*): this.type = set("pitPoints", js.Array(value*))
+    
+    inline def progressBar(value: ElementType): this.type = set("progressBar", value.asInstanceOf[js.Any])
+    
+    inline def snap(value: Boolean): this.type = set("snap", value.asInstanceOf[js.Any])
+    
+    inline def snapPoints(value: js.Array[Double]): this.type = set("snapPoints", value.asInstanceOf[js.Any])
+    
+    inline def snapPointsVarargs(value: Double*): this.type = set("snapPoints", js.Array(value*))
+    
+    inline def values(value: js.Array[Double]): this.type = set("values", value.asInstanceOf[js.Any])
+    
+    inline def valuesVarargs(value: Double*): this.type = set("values", js.Array(value*))
+  }
+  
+  implicit def make(companion: Rheostat.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

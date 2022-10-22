@@ -1,58 +1,44 @@
 package typingsJapgolly.inkSelectInput.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Component
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Component
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.inkSelectInput.mod.ItemOfSelectInput
 import typingsJapgolly.inkSelectInput.mod.SelectInputProps
 import typingsJapgolly.inkSelectInput.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object InkSelectInput {
-  def apply(
-    focus: js.UndefOr[Boolean] = js.undefined,
-    indicatorComponent: Component[js.Object, js.Object] = null,
-    initialIndex: Int | Double = null,
-    itemComponent: Component[js.Object, js.Object] = null,
-    items: js.Array[ItemOfSelectInput] = null,
-    limit: Int | Double = null,
-    onSelect: ItemOfSelectInput => Callback = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    SelectInputProps[ItemOfSelectInput], 
-    default, 
-    Unit, 
-    SelectInputProps[ItemOfSelectInput]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
-    if (indicatorComponent != null) __obj.updateDynamic("indicatorComponent")(indicatorComponent.asInstanceOf[js.Any])
-    if (initialIndex != null) __obj.updateDynamic("initialIndex")(initialIndex.asInstanceOf[js.Any])
-    if (itemComponent != null) __obj.updateDynamic("itemComponent")(itemComponent.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: typingsJapgolly.inkSelectInput.mod.ItemOfSelectInput) => onSelect(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.inkSelectInput.mod.SelectInputProps[typingsJapgolly.inkSelectInput.mod.ItemOfSelectInput], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.inkSelectInput.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.inkSelectInput.mod.SelectInputProps[typingsJapgolly.inkSelectInput.mod.ItemOfSelectInput]])(children: _*)
-  }
   @JSImport("ink-select-input", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def focus(value: Boolean): this.type = set("focus", value.asInstanceOf[js.Any])
+    
+    inline def indicatorComponent(value: Component[js.Object, js.Object]): this.type = set("indicatorComponent", value.asInstanceOf[js.Any])
+    
+    inline def initialIndex(value: Double): this.type = set("initialIndex", value.asInstanceOf[js.Any])
+    
+    inline def itemComponent(value: Component[js.Object, js.Object]): this.type = set("itemComponent", value.asInstanceOf[js.Any])
+    
+    inline def items(value: js.Array[ItemOfSelectInput]): this.type = set("items", value.asInstanceOf[js.Any])
+    
+    inline def itemsVarargs(value: ItemOfSelectInput*): this.type = set("items", js.Array(value*))
+    
+    inline def limit(value: Double): this.type = set("limit", value.asInstanceOf[js.Any])
+    
+    inline def onSelect(value: ItemOfSelectInput => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: ItemOfSelectInput) => value(t0).runNow()))
+  }
+  
+  implicit def make(companion: InkSelectInput.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SelectInputProps[ItemOfSelectInput]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

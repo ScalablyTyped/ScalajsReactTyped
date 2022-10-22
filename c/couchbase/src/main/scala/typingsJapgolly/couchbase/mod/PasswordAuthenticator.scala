@@ -1,24 +1,27 @@
 package typingsJapgolly.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Authenticator for using role-based authentication.
   */
 @JSImport("couchbase", "PasswordAuthenticator")
 @js.native
-class PasswordAuthenticator protected () extends Authenticator {
+open class PasswordAuthenticator protected ()
+  extends StObject
+     with Authenticator {
   /**
     * Create a new instance of the PasswordAuthenticator class.
     * @param username RBAC username.
     * @param password RBAC password.
     */
   def this(username: String, password: String) = this()
+  
   /* CompleteClass */
-  override var password: String = js.native
+  var password: String = js.native
+  
   /* CompleteClass */
-  override var username: String = js.native
+  var username: String = js.native
 }
-

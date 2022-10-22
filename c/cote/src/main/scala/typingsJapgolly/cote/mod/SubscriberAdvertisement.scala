@@ -1,24 +1,31 @@
 package typingsJapgolly.cote.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SubscriberAdvertisement extends Advertisement {
+trait SubscriberAdvertisement
+  extends StObject
+     with Advertisement {
+  
   /**
     * Event types that a Subscriber can listen to.
     */
   var subscribesTo: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object SubscriberAdvertisement {
-  @scala.inline
-  def apply(name: String, key: String = null, namespace: String = null, subscribesTo: js.Array[String] = null): SubscriberAdvertisement = {
+  
+  inline def apply(name: String): SubscriberAdvertisement = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (subscribesTo != null) __obj.updateDynamic("subscribesTo")(subscribesTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriberAdvertisement]
   }
+  
+  extension [Self <: SubscriberAdvertisement](x: Self) {
+    
+    inline def setSubscribesTo(value: js.Array[String]): Self = StObject.set(x, "subscribesTo", value.asInstanceOf[js.Any])
+    
+    inline def setSubscribesToUndefined: Self = StObject.set(x, "subscribesTo", js.undefined)
+    
+    inline def setSubscribesToVarargs(value: String*): Self = StObject.set(x, "subscribesTo", js.Array(value*))
+  }
 }
-

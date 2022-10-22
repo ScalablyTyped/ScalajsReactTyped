@@ -1,7 +1,7 @@
 
 # Scala.js typings for icheck
 
-Typings are for version v0.8
+Typings are for version 1.0
 
 ## Library description:
 Highly customizable checkboxes and radio buttons (jQuery & Zepto)
@@ -10,10 +10,10 @@ Highly customizable checkboxes and radio buttons (jQuery & Zepto)
 | ------------------ | :-------------: |
 | Full name          | icheck |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 637324 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 87012.0 |
+| # stars            | 7455.0 |
 
 ## Links
 - [Homepage](http://fronteed.com/iCheck/)

@@ -1,29 +1,38 @@
 package typingsJapgolly.backbone.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AddOptions extends Silenceable {
+trait AddOptions
+  extends StObject
+     with Silenceable {
+  
   var at: js.UndefOr[Double] = js.undefined
+  
   var merge: js.UndefOr[Boolean] = js.undefined
+  
   var sort: js.UndefOr[Boolean] = js.undefined
 }
-
 object AddOptions {
-  @scala.inline
-  def apply(
-    at: Int | Double = null,
-    merge: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    sort: js.UndefOr[Boolean] = js.undefined
-  ): AddOptions = {
+  
+  inline def apply(): AddOptions = {
     val __obj = js.Dynamic.literal()
-    if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOptions]
   }
+  
+  extension [Self <: AddOptions](x: Self) {
+    
+    inline def setAt(value: Double): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+    
+    inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
+    
+    inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    
+    inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+    
+    inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+  }
 }
-

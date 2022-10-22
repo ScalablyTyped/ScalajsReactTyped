@@ -1,50 +1,39 @@
 package typingsJapgolly.xmlCore
 
-import typingsJapgolly.xmlCore.mod._XmlBufferEncoding
+import typingsJapgolly.xmlCore.distTypesTypesMod._XmlBufferEncoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlCoreStrings {
-  @js.native
-  sealed trait XMLJS extends js.Object
   
   @js.native
-  sealed trait _empty extends js.Object
+  sealed trait base64
+    extends StObject
+       with _XmlBufferEncoding
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait applicationSlashxml extends js.Object
+  sealed trait base64url
+    extends StObject
+       with _XmlBufferEncoding
+  inline def base64url: base64url = "base64url".asInstanceOf[base64url]
   
   @js.native
-  sealed trait base64 extends _XmlBufferEncoding
+  sealed trait binary
+    extends StObject
+       with _XmlBufferEncoding
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
-  sealed trait base64url extends _XmlBufferEncoding
+  sealed trait hex
+    extends StObject
+       with _XmlBufferEncoding
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
-  sealed trait binary extends _XmlBufferEncoding
-  
-  @js.native
-  sealed trait hex extends _XmlBufferEncoding
-  
-  @js.native
-  sealed trait utf8 extends _XmlBufferEncoding
-  
-  @scala.inline
-  def XMLJS: XMLJS = "XMLJS".asInstanceOf[XMLJS]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def applicationSlashxml: applicationSlashxml = "application/xml".asInstanceOf[applicationSlashxml]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def base64url: base64url = "base64url".asInstanceOf[base64url]
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  sealed trait utf8
+    extends StObject
+       with _XmlBufferEncoding
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }
-

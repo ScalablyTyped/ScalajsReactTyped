@@ -1,53 +1,116 @@
 package typingsJapgolly.waterline.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LifecycleCallbacks extends js.Object {
+trait LifecycleCallbacks extends StObject {
+  
   var afterCreate: js.UndefOr[
-    (js.Array[js.Function2[/* newlyCreatedRecord */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* newlyCreatedRecord */ js.Any, /* next */ js.Function, Unit])
+    (js.Array[js.Function2[/* newlyCreatedRecord */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* newlyCreatedRecord */ Any, /* next */ js.Function, Unit])
   ] = js.undefined
+  
   var afterDestroy: js.UndefOr[
-    (js.Array[js.Function2[/* destroyedInstance */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* destroyedInstance */ js.Any, /* next */ js.Function, Unit])
+    (js.Array[js.Function2[/* destroyedInstance */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* destroyedInstance */ Any, /* next */ js.Function, Unit])
   ] = js.undefined
+  
   var afterUpdate: js.UndefOr[
-    (js.Array[js.Function2[/* valuesToUpdate */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
+    (js.Array[js.Function2[/* valuesToUpdate */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ Any, /* next */ js.Function, Unit])
   ] = js.undefined
+  
   var beforeCreate: js.UndefOr[
-    (js.Array[js.Function2[/* values */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit])
+    (js.Array[js.Function2[/* values */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ Any, /* next */ js.Function, Unit])
   ] = js.undefined
+  
   var beforeDestroy: js.UndefOr[
-    (js.Array[js.Function2[/* criteria */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
+    (js.Array[js.Function2[/* criteria */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ Any, /* next */ js.Function, Unit])
   ] = js.undefined
+  
   var beforeUpdate: js.UndefOr[
-    (js.Array[js.Function2[/* valuesToUpdate */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
+    (js.Array[js.Function2[/* valuesToUpdate */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ Any, /* next */ js.Function, Unit])
   ] = js.undefined
+  
   var beforeValidate: js.UndefOr[
-    (js.Array[js.Function2[/* vaues */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit])
+    (js.Array[js.Function2[/* vaues */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ Any, /* next */ js.Function, Unit])
   ] = js.undefined
 }
-
 object LifecycleCallbacks {
-  @scala.inline
-  def apply(
-    afterCreate: (js.Array[js.Function2[/* newlyCreatedRecord */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* newlyCreatedRecord */ js.Any, /* next */ js.Function, Unit]) = null,
-    afterDestroy: (js.Array[js.Function2[/* destroyedInstance */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* destroyedInstance */ js.Any, /* next */ js.Function, Unit]) = null,
-    afterUpdate: (js.Array[js.Function2[/* valuesToUpdate */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit]) = null,
-    beforeCreate: (js.Array[js.Function2[/* values */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit]) = null,
-    beforeDestroy: (js.Array[js.Function2[/* criteria */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit]) = null,
-    beforeUpdate: (js.Array[js.Function2[/* valuesToUpdate */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit]) = null,
-    beforeValidate: (js.Array[js.Function2[/* vaues */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit]) = null
-  ): LifecycleCallbacks = {
+  
+  inline def apply(): LifecycleCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (afterCreate != null) __obj.updateDynamic("afterCreate")(afterCreate.asInstanceOf[js.Any])
-    if (afterDestroy != null) __obj.updateDynamic("afterDestroy")(afterDestroy.asInstanceOf[js.Any])
-    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(afterUpdate.asInstanceOf[js.Any])
-    if (beforeCreate != null) __obj.updateDynamic("beforeCreate")(beforeCreate.asInstanceOf[js.Any])
-    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(beforeDestroy.asInstanceOf[js.Any])
-    if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(beforeUpdate.asInstanceOf[js.Any])
-    if (beforeValidate != null) __obj.updateDynamic("beforeValidate")(beforeValidate.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecycleCallbacks]
   }
+  
+  extension [Self <: LifecycleCallbacks](x: Self) {
+    
+    inline def setAfterCreate(
+      value: (js.Array[js.Function2[/* newlyCreatedRecord */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* newlyCreatedRecord */ Any, /* next */ js.Function, Unit])
+    ): Self = StObject.set(x, "afterCreate", value.asInstanceOf[js.Any])
+    
+    inline def setAfterCreateFunction2(value: (/* newlyCreatedRecord */ Any, /* next */ js.Function) => japgolly.scalajs.react.Callback): Self = StObject.set(x, "afterCreate", js.Any.fromFunction2((t0: /* newlyCreatedRecord */ Any, t1: /* next */ js.Function) => (value(t0, t1)).runNow()))
+    
+    inline def setAfterCreateUndefined: Self = StObject.set(x, "afterCreate", js.undefined)
+    
+    inline def setAfterCreateVarargs(value: (js.Function2[/* newlyCreatedRecord */ Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "afterCreate", js.Array(value*))
+    
+    inline def setAfterDestroy(
+      value: (js.Array[js.Function2[/* destroyedInstance */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* destroyedInstance */ Any, /* next */ js.Function, Unit])
+    ): Self = StObject.set(x, "afterDestroy", value.asInstanceOf[js.Any])
+    
+    inline def setAfterDestroyFunction2(value: (/* destroyedInstance */ Any, /* next */ js.Function) => japgolly.scalajs.react.Callback): Self = StObject.set(x, "afterDestroy", js.Any.fromFunction2((t0: /* destroyedInstance */ Any, t1: /* next */ js.Function) => (value(t0, t1)).runNow()))
+    
+    inline def setAfterDestroyUndefined: Self = StObject.set(x, "afterDestroy", js.undefined)
+    
+    inline def setAfterDestroyVarargs(value: (js.Function2[/* destroyedInstance */ Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "afterDestroy", js.Array(value*))
+    
+    inline def setAfterUpdate(
+      value: (js.Array[js.Function2[/* valuesToUpdate */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ Any, /* next */ js.Function, Unit])
+    ): Self = StObject.set(x, "afterUpdate", value.asInstanceOf[js.Any])
+    
+    inline def setAfterUpdateFunction2(value: (/* valuesToUpdate */ Any, /* next */ js.Function) => japgolly.scalajs.react.Callback): Self = StObject.set(x, "afterUpdate", js.Any.fromFunction2((t0: /* valuesToUpdate */ Any, t1: /* next */ js.Function) => (value(t0, t1)).runNow()))
+    
+    inline def setAfterUpdateUndefined: Self = StObject.set(x, "afterUpdate", js.undefined)
+    
+    inline def setAfterUpdateVarargs(value: (js.Function2[/* valuesToUpdate */ Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "afterUpdate", js.Array(value*))
+    
+    inline def setBeforeCreate(
+      value: (js.Array[js.Function2[/* values */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ Any, /* next */ js.Function, Unit])
+    ): Self = StObject.set(x, "beforeCreate", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeCreateFunction2(value: (/* vaues */ Any, /* next */ js.Function) => japgolly.scalajs.react.Callback): Self = StObject.set(x, "beforeCreate", js.Any.fromFunction2((t0: /* vaues */ Any, t1: /* next */ js.Function) => (value(t0, t1)).runNow()))
+    
+    inline def setBeforeCreateUndefined: Self = StObject.set(x, "beforeCreate", js.undefined)
+    
+    inline def setBeforeCreateVarargs(value: (js.Function2[/* values */ Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "beforeCreate", js.Array(value*))
+    
+    inline def setBeforeDestroy(
+      value: (js.Array[js.Function2[/* criteria */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ Any, /* next */ js.Function, Unit])
+    ): Self = StObject.set(x, "beforeDestroy", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeDestroyFunction2(value: (/* valuesToUpdate */ Any, /* next */ js.Function) => japgolly.scalajs.react.Callback): Self = StObject.set(x, "beforeDestroy", js.Any.fromFunction2((t0: /* valuesToUpdate */ Any, t1: /* next */ js.Function) => (value(t0, t1)).runNow()))
+    
+    inline def setBeforeDestroyUndefined: Self = StObject.set(x, "beforeDestroy", js.undefined)
+    
+    inline def setBeforeDestroyVarargs(value: (js.Function2[/* criteria */ Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "beforeDestroy", js.Array(value*))
+    
+    inline def setBeforeUpdate(
+      value: (js.Array[js.Function2[/* valuesToUpdate */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ Any, /* next */ js.Function, Unit])
+    ): Self = StObject.set(x, "beforeUpdate", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeUpdateFunction2(value: (/* valuesToUpdate */ Any, /* next */ js.Function) => japgolly.scalajs.react.Callback): Self = StObject.set(x, "beforeUpdate", js.Any.fromFunction2((t0: /* valuesToUpdate */ Any, t1: /* next */ js.Function) => (value(t0, t1)).runNow()))
+    
+    inline def setBeforeUpdateUndefined: Self = StObject.set(x, "beforeUpdate", js.undefined)
+    
+    inline def setBeforeUpdateVarargs(value: (js.Function2[/* valuesToUpdate */ Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "beforeUpdate", js.Array(value*))
+    
+    inline def setBeforeValidate(
+      value: (js.Array[js.Function2[/* vaues */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ Any, /* next */ js.Function, Unit])
+    ): Self = StObject.set(x, "beforeValidate", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeValidateFunction2(value: (/* vaues */ Any, /* next */ js.Function) => japgolly.scalajs.react.Callback): Self = StObject.set(x, "beforeValidate", js.Any.fromFunction2((t0: /* vaues */ Any, t1: /* next */ js.Function) => (value(t0, t1)).runNow()))
+    
+    inline def setBeforeValidateUndefined: Self = StObject.set(x, "beforeValidate", js.undefined)
+    
+    inline def setBeforeValidateVarargs(value: (js.Function2[/* vaues */ Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "beforeValidate", js.Array(value*))
+  }
 }
-

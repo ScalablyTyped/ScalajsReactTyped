@@ -1,19 +1,16 @@
 package typingsJapgolly.i18nextSprintfPostprocessor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object i18nextSprintfPostprocessorStrings {
-  @js.native
-  sealed trait postProcessor extends js.Object
   
   @js.native
-  sealed trait sprintf extends js.Object
+  sealed trait postProcessor extends StObject
+  inline def postProcessor: postProcessor = "postProcessor".asInstanceOf[postProcessor]
   
-  @scala.inline
-  def postProcessor: postProcessor = "postProcessor".asInstanceOf[postProcessor]
-  @scala.inline
-  def sprintf: sprintf = "sprintf".asInstanceOf[sprintf]
+  @js.native
+  sealed trait sprintf extends StObject
+  inline def sprintf: sprintf = "sprintf".asInstanceOf[sprintf]
 }
-

@@ -1,31 +1,38 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for the UniversalActionResponse objects.
   */
-trait UniversalActionResponseBuilder extends js.Object {
+trait UniversalActionResponseBuilder extends StObject {
+  
   def build(): UniversalActionResponse
+  
   def displayAddOnCards(cardObjects: js.Array[Card]): UniversalActionResponseBuilder
+  
   def setOpenLink(openLink: OpenLink): UniversalActionResponseBuilder
 }
-
 object UniversalActionResponseBuilder {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     build: CallbackTo[UniversalActionResponse],
-    displayAddOnCards: js.Array[Card] => CallbackTo[UniversalActionResponseBuilder],
-    setOpenLink: OpenLink => CallbackTo[UniversalActionResponseBuilder]
+    displayAddOnCards: js.Array[Card] => UniversalActionResponseBuilder,
+    setOpenLink: OpenLink => UniversalActionResponseBuilder
   ): UniversalActionResponseBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("displayAddOnCards")(js.Any.fromFunction1((t0: js.Array[typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Card]) => displayAddOnCards(t0).runNow()))
-    __obj.updateDynamic("setOpenLink")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.OpenLink) => setOpenLink(t0).runNow()))
+    val __obj = js.Dynamic.literal(build = build.toJsFn, displayAddOnCards = js.Any.fromFunction1(displayAddOnCards), setOpenLink = js.Any.fromFunction1(setOpenLink))
     __obj.asInstanceOf[UniversalActionResponseBuilder]
   }
+  
+  extension [Self <: UniversalActionResponseBuilder](x: Self) {
+    
+    inline def setBuild(value: CallbackTo[UniversalActionResponse]): Self = StObject.set(x, "build", value.toJsFn)
+    
+    inline def setDisplayAddOnCards(value: js.Array[Card] => UniversalActionResponseBuilder): Self = StObject.set(x, "displayAddOnCards", js.Any.fromFunction1(value))
+    
+    inline def setSetOpenLink(value: OpenLink => UniversalActionResponseBuilder): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
+  }
 }
-

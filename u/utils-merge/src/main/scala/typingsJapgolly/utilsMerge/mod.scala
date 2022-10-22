@@ -1,12 +1,14 @@
 package typingsJapgolly.utilsMerge
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("utils-merge", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default[TA, TB, TResult](a: TA, b: TB): TResult = js.native
+object mod {
+  
+  @JSImport("utils-merge", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[TA, TB, TResult](a: TA, b: TB): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[TResult]
 }
-

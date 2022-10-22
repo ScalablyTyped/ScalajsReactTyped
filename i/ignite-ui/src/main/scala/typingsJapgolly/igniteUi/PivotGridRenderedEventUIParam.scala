@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PivotGridRenderedEventUIParam extends js.Object {
+trait PivotGridRenderedEventUIParam extends StObject {
+  
   /**
-  	 * Gets reference to the igGrid widget, which represents the data.
-  	 */
-  var grid: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to the igGrid widget, which represents the data.
+    */
+  var grid: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the pivot grid.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the pivot grid.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object PivotGridRenderedEventUIParam {
-  @scala.inline
-  def apply(grid: js.Any = null, owner: js.Any = null): PivotGridRenderedEventUIParam = {
+  
+  inline def apply(): PivotGridRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridRenderedEventUIParam]
   }
+  
+  extension [Self <: PivotGridRenderedEventUIParam](x: Self) {
+    
+    inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

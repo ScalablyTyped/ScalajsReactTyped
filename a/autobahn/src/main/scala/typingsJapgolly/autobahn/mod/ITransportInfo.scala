@@ -1,23 +1,35 @@
 package typingsJapgolly.autobahn.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITransportInfo extends js.Object {
+trait ITransportInfo extends StObject {
+  
   var protocol: js.UndefOr[String] = js.undefined
+  
   var `type`: TransportType
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object ITransportInfo {
-  @scala.inline
-  def apply(`type`: TransportType, protocol: String = null, url: String = null): ITransportInfo = {
+  
+  inline def apply(`type`: TransportType): ITransportInfo = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransportInfo]
   }
+  
+  extension [Self <: ITransportInfo](x: Self) {
+    
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    
+    inline def setType(value: TransportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

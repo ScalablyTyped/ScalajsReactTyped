@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The builder for DataSourceSpec. To create a specification for certain type, use as...() method. To create a new builder, use SpreadsheetApp.newDataSourceSpec(). To use the specification, see DataSourceTable.
@@ -18,39 +18,56 @@ import scala.scalajs.js.annotation._
   *                .setParameterFromCell('LIMIT', 'namedRangeCell')
   *                .build();
   */
-trait DataSourceSpecBuilder extends js.Object {
+trait DataSourceSpecBuilder extends StObject {
+  
   def asBigQuery(): BigQueryDataSourceSpecBuilder
+  
   def build(): DataSourceSpec
+  
   def copy(): DataSourceSpecBuilder
+  
   def getParameters(): js.Array[DataSourceParameter]
+  
   def getType(): DataSourceType
+  
   def removeAllParameters(): DataSourceSpecBuilder
+  
   def removeParameter(parameterName: String): DataSourceSpecBuilder
+  
   def setParameterFromCell(parameterName: String, sourceCell: String): DataSourceSpecBuilder
 }
-
 object DataSourceSpecBuilder {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     asBigQuery: CallbackTo[BigQueryDataSourceSpecBuilder],
     build: CallbackTo[DataSourceSpec],
     copy: CallbackTo[DataSourceSpecBuilder],
     getParameters: CallbackTo[js.Array[DataSourceParameter]],
     getType: CallbackTo[DataSourceType],
     removeAllParameters: CallbackTo[DataSourceSpecBuilder],
-    removeParameter: String => CallbackTo[DataSourceSpecBuilder],
-    setParameterFromCell: (String, String) => CallbackTo[DataSourceSpecBuilder]
+    removeParameter: String => DataSourceSpecBuilder,
+    setParameterFromCell: (String, String) => DataSourceSpecBuilder
   ): DataSourceSpecBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asBigQuery")(asBigQuery.toJsFn)
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("copy")(copy.toJsFn)
-    __obj.updateDynamic("getParameters")(getParameters.toJsFn)
-    __obj.updateDynamic("getType")(getType.toJsFn)
-    __obj.updateDynamic("removeAllParameters")(removeAllParameters.toJsFn)
-    __obj.updateDynamic("removeParameter")(js.Any.fromFunction1((t0: java.lang.String) => removeParameter(t0).runNow()))
-    __obj.updateDynamic("setParameterFromCell")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => setParameterFromCell(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(asBigQuery = asBigQuery.toJsFn, build = build.toJsFn, copy = copy.toJsFn, getParameters = getParameters.toJsFn, getType = getType.toJsFn, removeAllParameters = removeAllParameters.toJsFn, removeParameter = js.Any.fromFunction1(removeParameter), setParameterFromCell = js.Any.fromFunction2(setParameterFromCell))
     __obj.asInstanceOf[DataSourceSpecBuilder]
   }
+  
+  extension [Self <: DataSourceSpecBuilder](x: Self) {
+    
+    inline def setAsBigQuery(value: CallbackTo[BigQueryDataSourceSpecBuilder]): Self = StObject.set(x, "asBigQuery", value.toJsFn)
+    
+    inline def setBuild(value: CallbackTo[DataSourceSpec]): Self = StObject.set(x, "build", value.toJsFn)
+    
+    inline def setCopy(value: CallbackTo[DataSourceSpecBuilder]): Self = StObject.set(x, "copy", value.toJsFn)
+    
+    inline def setGetParameters(value: CallbackTo[js.Array[DataSourceParameter]]): Self = StObject.set(x, "getParameters", value.toJsFn)
+    
+    inline def setGetType(value: CallbackTo[DataSourceType]): Self = StObject.set(x, "getType", value.toJsFn)
+    
+    inline def setRemoveAllParameters(value: CallbackTo[DataSourceSpecBuilder]): Self = StObject.set(x, "removeAllParameters", value.toJsFn)
+    
+    inline def setRemoveParameter(value: String => DataSourceSpecBuilder): Self = StObject.set(x, "removeParameter", js.Any.fromFunction1(value))
+    
+    inline def setSetParameterFromCell(value: (String, String) => DataSourceSpecBuilder): Self = StObject.set(x, "setParameterFromCell", js.Any.fromFunction2(value))
+  }
 }
-

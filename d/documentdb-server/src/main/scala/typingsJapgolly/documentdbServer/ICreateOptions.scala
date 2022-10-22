@@ -1,24 +1,33 @@
 package typingsJapgolly.documentdbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options associated with a create operation. */
-trait ICreateOptions extends js.Object {
+trait ICreateOptions extends StObject {
+  
   /** Disables automatic generation of "id" field of the document to be created (if it is not provided) */
   var disableAutomaticIdGeneration: js.UndefOr[String] = js.undefined
+  
   /** Specifies indexing directives. */
   var indexAction: js.UndefOr[String] = js.undefined
 }
-
 object ICreateOptions {
-  @scala.inline
-  def apply(disableAutomaticIdGeneration: String = null, indexAction: String = null): ICreateOptions = {
+  
+  inline def apply(): ICreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (disableAutomaticIdGeneration != null) __obj.updateDynamic("disableAutomaticIdGeneration")(disableAutomaticIdGeneration.asInstanceOf[js.Any])
-    if (indexAction != null) __obj.updateDynamic("indexAction")(indexAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateOptions]
   }
+  
+  extension [Self <: ICreateOptions](x: Self) {
+    
+    inline def setDisableAutomaticIdGeneration(value: String): Self = StObject.set(x, "disableAutomaticIdGeneration", value.asInstanceOf[js.Any])
+    
+    inline def setDisableAutomaticIdGenerationUndefined: Self = StObject.set(x, "disableAutomaticIdGeneration", js.undefined)
+    
+    inline def setIndexAction(value: String): Self = StObject.set(x, "indexAction", value.asInstanceOf[js.Any])
+    
+    inline def setIndexActionUndefined: Self = StObject.set(x, "indexAction", js.undefined)
+  }
 }
-

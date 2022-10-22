@@ -1,36 +1,54 @@
 package typingsJapgolly.stripeV3.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BillingDetailsAddress extends js.Object {
+trait BillingDetailsAddress extends StObject {
+  
   var city: js.UndefOr[String] = js.undefined
+  
   var country: js.UndefOr[String] = js.undefined
+  
   var line1: js.UndefOr[String] = js.undefined
+  
   var line2: js.UndefOr[String] = js.undefined
+  
   var postal_code: js.UndefOr[String] = js.undefined
+  
   var state: js.UndefOr[String] = js.undefined
 }
-
 object BillingDetailsAddress {
-  @scala.inline
-  def apply(
-    city: String = null,
-    country: String = null,
-    line1: String = null,
-    line2: String = null,
-    postal_code: String = null,
-    state: String = null
-  ): BillingDetailsAddress = {
+  
+  inline def apply(): BillingDetailsAddress = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (line1 != null) __obj.updateDynamic("line1")(line1.asInstanceOf[js.Any])
-    if (line2 != null) __obj.updateDynamic("line2")(line2.asInstanceOf[js.Any])
-    if (postal_code != null) __obj.updateDynamic("postal_code")(postal_code.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingDetailsAddress]
   }
+  
+  extension [Self <: BillingDetailsAddress](x: Self) {
+    
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    
+    inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+    
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    
+    inline def setLine1(value: String): Self = StObject.set(x, "line1", value.asInstanceOf[js.Any])
+    
+    inline def setLine1Undefined: Self = StObject.set(x, "line1", js.undefined)
+    
+    inline def setLine2(value: String): Self = StObject.set(x, "line2", value.asInstanceOf[js.Any])
+    
+    inline def setLine2Undefined: Self = StObject.set(x, "line2", js.undefined)
+    
+    inline def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
+    
+    inline def setPostal_codeUndefined: Self = StObject.set(x, "postal_code", js.undefined)
+    
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+  }
 }
-

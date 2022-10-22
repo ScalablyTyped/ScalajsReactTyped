@@ -1,21 +1,17 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.classic
   - typingsJapgolly.std.stdStrings.module
 */
-trait WorkerType extends js.Object
-
+trait WorkerType extends StObject
 object WorkerType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def classic: typingsJapgolly.std.stdStrings.classic = this.cast("classic")
-  @scala.inline
-  def module: typingsJapgolly.std.stdStrings.module = this.cast("module")
+  
+  inline def classic: typingsJapgolly.std.stdStrings.classic = "classic".asInstanceOf[typingsJapgolly.std.stdStrings.classic]
+  
+  inline def module: typingsJapgolly.std.stdStrings.module = "module".asInstanceOf[typingsJapgolly.std.stdStrings.module]
 }
-

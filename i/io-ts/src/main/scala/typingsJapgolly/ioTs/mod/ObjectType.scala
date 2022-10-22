@@ -1,13 +1,16 @@
 package typingsJapgolly.ioTs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("io-ts", "ObjectType")
 @js.native
-class ObjectType ()
-  extends Type_[js.Object, js.Object, js.Any] {
+open class ObjectType ()
+  extends Type_[js.Object, js.Object, Any] {
+  
+  /**
+    * @since 1.0.0
+    */
   val _tag: typingsJapgolly.ioTs.ioTsStrings.ObjectType = js.native
 }
-

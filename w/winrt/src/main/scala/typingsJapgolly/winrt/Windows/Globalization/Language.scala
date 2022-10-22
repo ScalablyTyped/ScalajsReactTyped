@@ -1,28 +1,16 @@
 package typingsJapgolly.winrt.Windows.Globalization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Globalization.Language")
-@js.native
-class Language protected () extends ILanguage {
-  def this(languageTag: String) = this()
-  /* CompleteClass */
-  override var displayName: String = js.native
-  /* CompleteClass */
-  override var languageTag: String = js.native
-  /* CompleteClass */
-  override var nativeName: String = js.native
-  /* CompleteClass */
-  override var script: String = js.native
+trait Language
+  extends StObject
+     with ILanguage
+object Language {
+  
+  inline def apply(displayName: String, languageTag: String, nativeName: String, script: String): Language = {
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], languageTag = languageTag.asInstanceOf[js.Any], nativeName = nativeName.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Language]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Globalization.Language")
-@js.native
-object Language extends js.Object {
-  var currentInputMethodLanguageTag: String = js.native
-  def isWellFormed(languageTag: String): Boolean = js.native
-}
-

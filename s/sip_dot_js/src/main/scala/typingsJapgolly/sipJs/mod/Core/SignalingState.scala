@@ -1,18 +1,23 @@
 package typingsJapgolly.sipJs.mod.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.SignalingState")
 @js.native
-object SignalingState extends js.Object {
-  /* "Closed" */ val Closed: typingsJapgolly.sipJs.sessionSessionMod.SignalingState.Closed with String = js.native
-  /* "HaveLocalOffer" */ val HaveLocalOffer: typingsJapgolly.sipJs.sessionSessionMod.SignalingState.HaveLocalOffer with String = js.native
-  /* "HaveRemoteOffer" */ val HaveRemoteOffer: typingsJapgolly.sipJs.sessionSessionMod.SignalingState.HaveRemoteOffer with String = js.native
-  /* "Initial" */ val Initial: typingsJapgolly.sipJs.sessionSessionMod.SignalingState.Initial with String = js.native
-  /* "Stable" */ val Stable: typingsJapgolly.sipJs.sessionSessionMod.SignalingState.Stable with String = js.native
+object SignalingState extends StObject {
+  
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typingsJapgolly.sipJs.sessionSessionMod.SignalingState with String] = js.native
+  def apply(value: String): js.UndefOr[typingsJapgolly.sipJs.libCoreSessionSessionMod.SignalingState & String] = js.native
+  
+  /* "Closed" */ val Closed: typingsJapgolly.sipJs.libCoreSessionSessionMod.SignalingState.Closed & String = js.native
+  
+  /* "HaveLocalOffer" */ val HaveLocalOffer: typingsJapgolly.sipJs.libCoreSessionSessionMod.SignalingState.HaveLocalOffer & String = js.native
+  
+  /* "HaveRemoteOffer" */ val HaveRemoteOffer: typingsJapgolly.sipJs.libCoreSessionSessionMod.SignalingState.HaveRemoteOffer & String = js.native
+  
+  /* "Initial" */ val Initial: typingsJapgolly.sipJs.libCoreSessionSessionMod.SignalingState.Initial & String = js.native
+  
+  /* "Stable" */ val Stable: typingsJapgolly.sipJs.libCoreSessionSessionMod.SignalingState.Stable & String = js.native
 }
-

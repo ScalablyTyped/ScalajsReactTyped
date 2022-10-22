@@ -1,50 +1,48 @@
 package typingsJapgolly.materialUi.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.materialUi.MaterialUI.BadgeProps
-import typingsJapgolly.materialUi.badgeMod.default
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Badge {
-  def apply(
-    badgeContent: VdomNode = null,
-    badgeStyle: CSSProperties = null,
-    className: String = null,
-    primary: js.UndefOr[Boolean] = js.undefined,
-    secondary: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[BadgeProps, default, Unit, BadgeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (badgeContent != null) __obj.updateDynamic("badgeContent")(badgeContent.rawNode.asInstanceOf[js.Any])
-    if (badgeStyle != null) __obj.updateDynamic("badgeStyle")(badgeStyle.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUi.MaterialUI.BadgeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUi.badgeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUi.MaterialUI.BadgeProps])(children: _*)
-  }
-  @JSImport("material-ui/Badge", JSImport.Default)
+  @JSImport("material-ui", "Badge")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.materialUi.mod.Badge] {
+    
+    inline def badgeContent(value: VdomNode): this.type = set("badgeContent", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def badgeContentNull: this.type = set("badgeContent", null)
+    
+    inline def badgeContentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("badgeContent", js.Array(value*))
+    
+    inline def badgeContentVdomElement(value: VdomElement): this.type = set("badgeContent", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def badgeStyle(value: CSSProperties): this.type = set("badgeStyle", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def primary(value: Boolean): this.type = set("primary", value.asInstanceOf[js.Any])
+    
+    inline def secondary(value: Boolean): this.type = set("secondary", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Badge.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: BadgeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

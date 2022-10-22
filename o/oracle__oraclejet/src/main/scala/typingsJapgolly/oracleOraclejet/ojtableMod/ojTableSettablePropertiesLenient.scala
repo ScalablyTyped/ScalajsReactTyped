@@ -1,16 +1,15 @@
 package typingsJapgolly.oracleOraclejet.ojtableMod
 
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.oracleOraclejet.Anon19
-import typingsJapgolly.oracleOraclejet.AnonColumnKey
-import typingsJapgolly.oracleOraclejet.AnonDropReorder
-import typingsJapgolly.oracleOraclejet.AnonField
-import typingsJapgolly.oracleOraclejet.AnonFooterClassName
-import typingsJapgolly.oracleOraclejet.AnonLabelAccSelectionAffordanceBottom
-import typingsJapgolly.oracleOraclejet.AnonMaxCount
-import typingsJapgolly.oracleOraclejet.AnonRowHeader
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.oracleOraclejet.anon.ColumnKey
+import typingsJapgolly.oracleOraclejet.anon.DropReorder
+import typingsJapgolly.oracleOraclejet.anon.Field
+import typingsJapgolly.oracleOraclejet.anon.FooterClassName
+import typingsJapgolly.oracleOraclejet.anon.LabelAccSelectionAffordanceBottom
+import typingsJapgolly.oracleOraclejet.anon.MaxCount
+import typingsJapgolly.oracleOraclejet.anon.RowHeader
+import typingsJapgolly.oracleOraclejet.anon.`21`
 import typingsJapgolly.oracleOraclejet.ojdataproviderMod.DataProvider
 import typingsJapgolly.oracleOraclejet.ojtableMod.ojTable.ColumnSelectionEnd
 import typingsJapgolly.oracleOraclejet.ojtableMod.ojTable.ColumnSelectionStart
@@ -26,91 +25,166 @@ import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.list
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.loadMoreOnScroll
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.none
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.rowEdit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojtable.ojTableSettableProperties<K, D>> */
 trait ojTableSettablePropertiesLenient[K, D]
-  extends /* key */ StringDictionary[js.Any] {
-  var accessibility: js.UndefOr[AnonRowHeader] = js.undefined
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
+  var accessibility: js.UndefOr[RowHeader] = js.undefined
+  
   var as: js.UndefOr[String] = js.undefined
-  var columns: js.UndefOr[js.Array[AnonField[K, D]]] = js.undefined
-  var columnsDefault: js.UndefOr[AnonFooterClassName[K, D]] = js.undefined
-  var currentRow: js.UndefOr[CurrentRow[K]] = js.undefined
-  var data: js.UndefOr[DataProvider[K, D]] = js.undefined
+  
+  var columns: js.UndefOr[(js.Array[Field[K, D]]) | Null] = js.undefined
+  
+  var columnsDefault: js.UndefOr[FooterClassName[K, D]] = js.undefined
+  
+  var currentRow: js.UndefOr[CurrentRow[K] | Null] = js.undefined
+  
+  var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.undefined
+  
   var display: js.UndefOr[list | grid] = js.undefined
-  var dnd: js.UndefOr[AnonDropReorder[K, D]] = js.undefined
+  
+  var dnd: js.UndefOr[DropReorder[K, D]] = js.undefined
+  
   var editMode: js.UndefOr[none | rowEdit] = js.undefined
+  
   var firstSelectedRow: js.UndefOr[js.Object] = js.undefined
+  
   var horizontalGridVisible: js.UndefOr[auto | enabled | disabled] = js.undefined
+  
   var rowRenderer: js.UndefOr[
-    js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]
+    (js.Function1[/* context */ RowRendererContext[K, D], String | HTMLElement | Unit]) | Null
   ] = js.undefined
+  
   var scrollPolicy: js.UndefOr[auto | loadMoreOnScroll] = js.undefined
-  var scrollPolicyOptions: js.UndefOr[AnonMaxCount] = js.undefined
-  var scrollPosition: js.UndefOr[AnonColumnKey] = js.undefined
+  
+  var scrollPolicyOptions: js.UndefOr[MaxCount] = js.undefined
+  
+  var scrollPosition: js.UndefOr[ColumnKey] = js.undefined
+  
   var selection: js.UndefOr[
     js.Array[
-      (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
+      (RowSelectionStart[K] & RowSelectionEnd[K]) | (ColumnSelectionStart[K] & ColumnSelectionEnd[K])
     ]
   ] = js.undefined
-  var selectionMode: js.UndefOr[Anon19] = js.undefined
+  
+  var selectionMode: js.UndefOr[`21`] = js.undefined
+  
   var selectionRequired: js.UndefOr[Boolean] = js.undefined
-  var translations: js.UndefOr[AnonLabelAccSelectionAffordanceBottom] = js.undefined
+  
+  var translations: js.UndefOr[LabelAccSelectionAffordanceBottom] = js.undefined
+  
   var verticalGridVisible: js.UndefOr[auto | enabled | disabled] = js.undefined
 }
-
 object ojTableSettablePropertiesLenient {
-  @scala.inline
-  def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    accessibility: AnonRowHeader = null,
-    as: String = null,
-    columns: js.Array[AnonField[K, D]] = null,
-    columnsDefault: AnonFooterClassName[K, D] = null,
-    currentRow: CurrentRow[K] = null,
-    data: DataProvider[K, D] = null,
-    display: list | grid = null,
-    dnd: AnonDropReorder[K, D] = null,
-    editMode: none | rowEdit = null,
-    firstSelectedRow: js.Object = null,
-    horizontalGridVisible: auto | enabled | disabled = null,
-    rowRenderer: /* context */ RowRendererContext[K, D] => CallbackTo[String | HTMLElement | Unit] = null,
-    scrollPolicy: auto | loadMoreOnScroll = null,
-    scrollPolicyOptions: AnonMaxCount = null,
-    scrollPosition: AnonColumnKey = null,
-    selection: js.Array[
-      (RowSelectionStart[K] with RowSelectionEnd[K]) | (ColumnSelectionStart[K] with ColumnSelectionEnd[K])
-    ] = null,
-    selectionMode: Anon19 = null,
-    selectionRequired: js.UndefOr[Boolean] = js.undefined,
-    translations: AnonLabelAccSelectionAffordanceBottom = null,
-    verticalGridVisible: auto | enabled | disabled = null
-  ): ojTableSettablePropertiesLenient[K, D] = {
+  
+  inline def apply[K, D](): ojTableSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (columnsDefault != null) __obj.updateDynamic("columnsDefault")(columnsDefault.asInstanceOf[js.Any])
-    if (currentRow != null) __obj.updateDynamic("currentRow")(currentRow.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (dnd != null) __obj.updateDynamic("dnd")(dnd.asInstanceOf[js.Any])
-    if (editMode != null) __obj.updateDynamic("editMode")(editMode.asInstanceOf[js.Any])
-    if (firstSelectedRow != null) __obj.updateDynamic("firstSelectedRow")(firstSelectedRow.asInstanceOf[js.Any])
-    if (horizontalGridVisible != null) __obj.updateDynamic("horizontalGridVisible")(horizontalGridVisible.asInstanceOf[js.Any])
-    if (rowRenderer != null) __obj.updateDynamic("rowRenderer")(js.Any.fromFunction1((t0: /* context */ typingsJapgolly.oracleOraclejet.ojtableMod.ojTable.RowRendererContext[K, D]) => rowRenderer(t0).runNow()))
-    if (scrollPolicy != null) __obj.updateDynamic("scrollPolicy")(scrollPolicy.asInstanceOf[js.Any])
-    if (scrollPolicyOptions != null) __obj.updateDynamic("scrollPolicyOptions")(scrollPolicyOptions.asInstanceOf[js.Any])
-    if (scrollPosition != null) __obj.updateDynamic("scrollPosition")(scrollPosition.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectionRequired)) __obj.updateDynamic("selectionRequired")(selectionRequired.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
-    if (verticalGridVisible != null) __obj.updateDynamic("verticalGridVisible")(verticalGridVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojTableSettablePropertiesLenient[K, D]]
   }
+  
+  extension [Self <: ojTableSettablePropertiesLenient[?, ?], K, D](x: Self & (ojTableSettablePropertiesLenient[K, D])) {
+    
+    inline def setAccessibility(value: RowHeader): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
+    
+    inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    
+    inline def setColumns(value: js.Array[Field[K, D]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsDefault(value: FooterClassName[K, D]): Self = StObject.set(x, "columnsDefault", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsDefaultUndefined: Self = StObject.set(x, "columnsDefault", js.undefined)
+    
+    inline def setColumnsNull: Self = StObject.set(x, "columns", null)
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setColumnsVarargs(value: (Field[K, D])*): Self = StObject.set(x, "columns", js.Array(value*))
+    
+    inline def setCurrentRow(value: CurrentRow[K]): Self = StObject.set(x, "currentRow", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentRowNull: Self = StObject.set(x, "currentRow", null)
+    
+    inline def setCurrentRowUndefined: Self = StObject.set(x, "currentRow", js.undefined)
+    
+    inline def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataNull: Self = StObject.set(x, "data", null)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDisplay(value: list | grid): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    
+    inline def setDnd(value: DropReorder[K, D]): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
+    
+    inline def setDndUndefined: Self = StObject.set(x, "dnd", js.undefined)
+    
+    inline def setEditMode(value: none | rowEdit): Self = StObject.set(x, "editMode", value.asInstanceOf[js.Any])
+    
+    inline def setEditModeUndefined: Self = StObject.set(x, "editMode", js.undefined)
+    
+    inline def setFirstSelectedRow(value: js.Object): Self = StObject.set(x, "firstSelectedRow", value.asInstanceOf[js.Any])
+    
+    inline def setFirstSelectedRowUndefined: Self = StObject.set(x, "firstSelectedRow", js.undefined)
+    
+    inline def setHorizontalGridVisible(value: auto | enabled | disabled): Self = StObject.set(x, "horizontalGridVisible", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalGridVisibleUndefined: Self = StObject.set(x, "horizontalGridVisible", js.undefined)
+    
+    inline def setRowRenderer(value: /* context */ RowRendererContext[K, D] => String | HTMLElement | Unit): Self = StObject.set(x, "rowRenderer", js.Any.fromFunction1(value))
+    
+    inline def setRowRendererNull: Self = StObject.set(x, "rowRenderer", null)
+    
+    inline def setRowRendererUndefined: Self = StObject.set(x, "rowRenderer", js.undefined)
+    
+    inline def setScrollPolicy(value: auto | loadMoreOnScroll): Self = StObject.set(x, "scrollPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setScrollPolicyOptions(value: MaxCount): Self = StObject.set(x, "scrollPolicyOptions", value.asInstanceOf[js.Any])
+    
+    inline def setScrollPolicyOptionsUndefined: Self = StObject.set(x, "scrollPolicyOptions", js.undefined)
+    
+    inline def setScrollPolicyUndefined: Self = StObject.set(x, "scrollPolicy", js.undefined)
+    
+    inline def setScrollPosition(value: ColumnKey): Self = StObject.set(x, "scrollPosition", value.asInstanceOf[js.Any])
+    
+    inline def setScrollPositionUndefined: Self = StObject.set(x, "scrollPosition", js.undefined)
+    
+    inline def setSelection(
+      value: js.Array[
+          (RowSelectionStart[K] & RowSelectionEnd[K]) | (ColumnSelectionStart[K] & ColumnSelectionEnd[K])
+        ]
+    ): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionMode(value: `21`): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+    
+    inline def setSelectionRequired(value: Boolean): Self = StObject.set(x, "selectionRequired", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionRequiredUndefined: Self = StObject.set(x, "selectionRequired", js.undefined)
+    
+    inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+    
+    inline def setSelectionVarargs(
+      value: ((RowSelectionStart[K] & RowSelectionEnd[K]) | (ColumnSelectionStart[K] & ColumnSelectionEnd[K]))*
+    ): Self = StObject.set(x, "selection", js.Array(value*))
+    
+    inline def setTranslations(value: LabelAccSelectionAffordanceBottom): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+    
+    inline def setVerticalGridVisible(value: auto | enabled | disabled): Self = StObject.set(x, "verticalGridVisible", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalGridVisibleUndefined: Self = StObject.set(x, "verticalGridVisible", js.undefined)
+  }
 }
-

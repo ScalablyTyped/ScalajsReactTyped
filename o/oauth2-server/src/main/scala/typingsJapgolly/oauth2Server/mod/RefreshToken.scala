@@ -1,37 +1,50 @@
 package typingsJapgolly.oauth2Server.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interface representing the refresh token and associated data.
   */
 trait RefreshToken
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var client: Client
+  
   var refreshToken: String
+  
   var refreshTokenExpiresAt: js.UndefOr[js.Date] = js.undefined
+  
   var scope: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var user: User
 }
-
 object RefreshToken {
-  @scala.inline
-  def apply(
-    client: Client,
-    refreshToken: String,
-    user: User,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    refreshTokenExpiresAt: js.Date = null,
-    scope: String | js.Array[String] = null
-  ): RefreshToken = {
+  
+  inline def apply(client: Client, refreshToken: String, user: User): RefreshToken = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (refreshTokenExpiresAt != null) __obj.updateDynamic("refreshTokenExpiresAt")(refreshTokenExpiresAt.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshToken]
   }
+  
+  extension [Self <: RefreshToken](x: Self) {
+    
+    inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshTokenExpiresAt(value: js.Date): Self = StObject.set(x, "refreshTokenExpiresAt", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshTokenExpiresAtUndefined: Self = StObject.set(x, "refreshTokenExpiresAt", js.undefined)
+    
+    inline def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
+    
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+  }
 }
-

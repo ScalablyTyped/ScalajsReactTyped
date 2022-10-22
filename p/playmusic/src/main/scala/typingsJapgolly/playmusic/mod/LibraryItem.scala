@@ -1,105 +1,198 @@
 package typingsJapgolly.playmusic.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LibraryItem extends js.Object {
+trait LibraryItem extends StObject {
+  
   var album: js.UndefOr[String] = js.undefined
+  
   var albumArtRef: js.UndefOr[js.Array[ArtRef]] = js.undefined
+  
   var albumArtist: js.UndefOr[String] = js.undefined
+  
   var artist: js.UndefOr[String] = js.undefined
+  
   var artistArtRef: js.UndefOr[js.Array[ArtRef]] = js.undefined
+  
   var artistId: js.UndefOr[js.Array[String]] = js.undefined
+  
   var beatsPerMinute: js.UndefOr[Double] = js.undefined
+  
   var clientId: js.UndefOr[String] = js.undefined
+  
   var comment: js.UndefOr[String] = js.undefined
+  
   var composer: js.UndefOr[String] = js.undefined
+  
   var creationTimestamp: js.UndefOr[String] = js.undefined
+  
   var deleted: js.UndefOr[Boolean] = js.undefined
+  
   var discNumber: js.UndefOr[Double] = js.undefined
+  
   var durationMillis: js.UndefOr[String] = js.undefined
+  
   var estimatedSize: js.UndefOr[String] = js.undefined
+  
   var genre: js.UndefOr[String] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var kind: js.UndefOr[String] = js.undefined
+  
   var lastModifiedTimestamp: js.UndefOr[String] = js.undefined
+  
   var nid: js.UndefOr[String] = js.undefined
+  
   var playCount: js.UndefOr[Double] = js.undefined
+  
   var rating: js.UndefOr[String] = js.undefined
+  
   var recentTimestamp: js.UndefOr[String] = js.undefined
+  
   var storeId: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var totalDiscCount: js.UndefOr[Double] = js.undefined
+  
   var totalTrackCount: js.UndefOr[Double] = js.undefined
+  
   var trackNumber: js.UndefOr[Double] = js.undefined
+  
   var year: js.UndefOr[Double] = js.undefined
 }
-
 object LibraryItem {
-  @scala.inline
-  def apply(
-    album: String = null,
-    albumArtRef: js.Array[ArtRef] = null,
-    albumArtist: String = null,
-    artist: String = null,
-    artistArtRef: js.Array[ArtRef] = null,
-    artistId: js.Array[String] = null,
-    beatsPerMinute: Int | Double = null,
-    clientId: String = null,
-    comment: String = null,
-    composer: String = null,
-    creationTimestamp: String = null,
-    deleted: js.UndefOr[Boolean] = js.undefined,
-    discNumber: Int | Double = null,
-    durationMillis: String = null,
-    estimatedSize: String = null,
-    genre: String = null,
-    id: String = null,
-    kind: String = null,
-    lastModifiedTimestamp: String = null,
-    nid: String = null,
-    playCount: Int | Double = null,
-    rating: String = null,
-    recentTimestamp: String = null,
-    storeId: String = null,
-    title: String = null,
-    totalDiscCount: Int | Double = null,
-    totalTrackCount: Int | Double = null,
-    trackNumber: Int | Double = null,
-    year: Int | Double = null
-  ): LibraryItem = {
+  
+  inline def apply(): LibraryItem = {
     val __obj = js.Dynamic.literal()
-    if (album != null) __obj.updateDynamic("album")(album.asInstanceOf[js.Any])
-    if (albumArtRef != null) __obj.updateDynamic("albumArtRef")(albumArtRef.asInstanceOf[js.Any])
-    if (albumArtist != null) __obj.updateDynamic("albumArtist")(albumArtist.asInstanceOf[js.Any])
-    if (artist != null) __obj.updateDynamic("artist")(artist.asInstanceOf[js.Any])
-    if (artistArtRef != null) __obj.updateDynamic("artistArtRef")(artistArtRef.asInstanceOf[js.Any])
-    if (artistId != null) __obj.updateDynamic("artistId")(artistId.asInstanceOf[js.Any])
-    if (beatsPerMinute != null) __obj.updateDynamic("beatsPerMinute")(beatsPerMinute.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (composer != null) __obj.updateDynamic("composer")(composer.asInstanceOf[js.Any])
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
-    if (discNumber != null) __obj.updateDynamic("discNumber")(discNumber.asInstanceOf[js.Any])
-    if (durationMillis != null) __obj.updateDynamic("durationMillis")(durationMillis.asInstanceOf[js.Any])
-    if (estimatedSize != null) __obj.updateDynamic("estimatedSize")(estimatedSize.asInstanceOf[js.Any])
-    if (genre != null) __obj.updateDynamic("genre")(genre.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastModifiedTimestamp != null) __obj.updateDynamic("lastModifiedTimestamp")(lastModifiedTimestamp.asInstanceOf[js.Any])
-    if (nid != null) __obj.updateDynamic("nid")(nid.asInstanceOf[js.Any])
-    if (playCount != null) __obj.updateDynamic("playCount")(playCount.asInstanceOf[js.Any])
-    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
-    if (recentTimestamp != null) __obj.updateDynamic("recentTimestamp")(recentTimestamp.asInstanceOf[js.Any])
-    if (storeId != null) __obj.updateDynamic("storeId")(storeId.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (totalDiscCount != null) __obj.updateDynamic("totalDiscCount")(totalDiscCount.asInstanceOf[js.Any])
-    if (totalTrackCount != null) __obj.updateDynamic("totalTrackCount")(totalTrackCount.asInstanceOf[js.Any])
-    if (trackNumber != null) __obj.updateDynamic("trackNumber")(trackNumber.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
     __obj.asInstanceOf[LibraryItem]
   }
+  
+  extension [Self <: LibraryItem](x: Self) {
+    
+    inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+    
+    inline def setAlbumArtRef(value: js.Array[ArtRef]): Self = StObject.set(x, "albumArtRef", value.asInstanceOf[js.Any])
+    
+    inline def setAlbumArtRefUndefined: Self = StObject.set(x, "albumArtRef", js.undefined)
+    
+    inline def setAlbumArtRefVarargs(value: ArtRef*): Self = StObject.set(x, "albumArtRef", js.Array(value*))
+    
+    inline def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
+    
+    inline def setAlbumArtistUndefined: Self = StObject.set(x, "albumArtist", js.undefined)
+    
+    inline def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
+    
+    inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
+    
+    inline def setArtistArtRef(value: js.Array[ArtRef]): Self = StObject.set(x, "artistArtRef", value.asInstanceOf[js.Any])
+    
+    inline def setArtistArtRefUndefined: Self = StObject.set(x, "artistArtRef", js.undefined)
+    
+    inline def setArtistArtRefVarargs(value: ArtRef*): Self = StObject.set(x, "artistArtRef", js.Array(value*))
+    
+    inline def setArtistId(value: js.Array[String]): Self = StObject.set(x, "artistId", value.asInstanceOf[js.Any])
+    
+    inline def setArtistIdUndefined: Self = StObject.set(x, "artistId", js.undefined)
+    
+    inline def setArtistIdVarargs(value: String*): Self = StObject.set(x, "artistId", js.Array(value*))
+    
+    inline def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
+    
+    inline def setBeatsPerMinute(value: Double): Self = StObject.set(x, "beatsPerMinute", value.asInstanceOf[js.Any])
+    
+    inline def setBeatsPerMinuteUndefined: Self = StObject.set(x, "beatsPerMinute", js.undefined)
+    
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    
+    inline def setComposer(value: String): Self = StObject.set(x, "composer", value.asInstanceOf[js.Any])
+    
+    inline def setComposerUndefined: Self = StObject.set(x, "composer", js.undefined)
+    
+    inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
+    
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    
+    inline def setDiscNumber(value: Double): Self = StObject.set(x, "discNumber", value.asInstanceOf[js.Any])
+    
+    inline def setDiscNumberUndefined: Self = StObject.set(x, "discNumber", js.undefined)
+    
+    inline def setDurationMillis(value: String): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
+    
+    inline def setDurationMillisUndefined: Self = StObject.set(x, "durationMillis", js.undefined)
+    
+    inline def setEstimatedSize(value: String): Self = StObject.set(x, "estimatedSize", value.asInstanceOf[js.Any])
+    
+    inline def setEstimatedSizeUndefined: Self = StObject.set(x, "estimatedSize", js.undefined)
+    
+    inline def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
+    
+    inline def setGenreUndefined: Self = StObject.set(x, "genre", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    
+    inline def setLastModifiedTimestamp(value: String): Self = StObject.set(x, "lastModifiedTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedTimestampUndefined: Self = StObject.set(x, "lastModifiedTimestamp", js.undefined)
+    
+    inline def setNid(value: String): Self = StObject.set(x, "nid", value.asInstanceOf[js.Any])
+    
+    inline def setNidUndefined: Self = StObject.set(x, "nid", js.undefined)
+    
+    inline def setPlayCount(value: Double): Self = StObject.set(x, "playCount", value.asInstanceOf[js.Any])
+    
+    inline def setPlayCountUndefined: Self = StObject.set(x, "playCount", js.undefined)
+    
+    inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+    
+    inline def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
+    
+    inline def setRecentTimestamp(value: String): Self = StObject.set(x, "recentTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setRecentTimestampUndefined: Self = StObject.set(x, "recentTimestamp", js.undefined)
+    
+    inline def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
+    
+    inline def setStoreIdUndefined: Self = StObject.set(x, "storeId", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTotalDiscCount(value: Double): Self = StObject.set(x, "totalDiscCount", value.asInstanceOf[js.Any])
+    
+    inline def setTotalDiscCountUndefined: Self = StObject.set(x, "totalDiscCount", js.undefined)
+    
+    inline def setTotalTrackCount(value: Double): Self = StObject.set(x, "totalTrackCount", value.asInstanceOf[js.Any])
+    
+    inline def setTotalTrackCountUndefined: Self = StObject.set(x, "totalTrackCount", js.undefined)
+    
+    inline def setTrackNumber(value: Double): Self = StObject.set(x, "trackNumber", value.asInstanceOf[js.Any])
+    
+    inline def setTrackNumberUndefined: Self = StObject.set(x, "trackNumber", js.undefined)
+    
+    inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    
+    inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+  }
 }
-

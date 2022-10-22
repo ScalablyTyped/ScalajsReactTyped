@@ -1,11 +1,8 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("WebGLProgram")
-@js.native
-object WebGLProgram extends Instantiable0[WebGLProgram]
-
+/** The WebGLProgram is part of the WebGL API and is a combination of two compiled WebGLShaders consisting of a vertex shader and a fragment shader (both written in GLSL). */
+trait WebGLProgram extends StObject

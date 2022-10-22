@@ -10,10 +10,10 @@ A binary shapefile loader, for javascript. Not many caveats
 | ------------------ | :-------------: |
 | Full name          | shpjs |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 17 |
-| # downloads        | 336726 |
-| # stars            | 2 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 56480.0 |
+| # stars            | 586.0 |
 
 ## Links
 - [Homepage](https://github.com/calvinmetcalf/shapefile-js#readme)

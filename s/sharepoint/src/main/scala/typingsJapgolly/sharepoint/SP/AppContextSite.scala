@@ -1,21 +1,15 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.AppContextSite")
 @js.native
-class AppContextSite protected () extends ClientObject {
-  def this(context: ClientRuntimeContext, siteUrl: String) = this()
+trait AppContextSite
+  extends StObject
+     with ClientObject {
+  
   def get_site(): Site = js.native
+  
   def get_web(): Web = js.native
 }
-
-/* static members */
-@JSGlobal("SP.AppContextSite")
-@js.native
-object AppContextSite extends js.Object {
-  def newObject(context: ClientRuntimeContext, siteUrl: String): AppContextSite = js.native
-}
-

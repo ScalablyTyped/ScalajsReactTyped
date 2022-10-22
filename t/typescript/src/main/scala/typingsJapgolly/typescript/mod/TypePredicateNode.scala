@@ -1,19 +1,24 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypePredicateNode
-  extends TypeNode
+  extends StObject
+     with TypeNode
      with HasType {
-  var assertsModifier: js.UndefOr[AssertsToken] = js.native
+  
+  val assertsModifier: js.UndefOr[AssertsKeyword] = js.native
+  
   @JSName("kind")
-  var kind_TypePredicateNode: typingsJapgolly.typescript.mod.SyntaxKind.TypePredicate = js.native
-  var parameterName: Identifier | ThisTypeNode = js.native
+  val kind_TypePredicateNode: typingsJapgolly.typescript.mod.SyntaxKind.TypePredicate = js.native
+  
+  val parameterName: Identifier | ThisTypeNode = js.native
+  
   @JSName("parent")
-  var parent_TypePredicateNode: SignatureDeclaration | JSDocTypeExpression = js.native
-  var `type`: js.UndefOr[TypeNode] = js.native
+  val parent_TypePredicateNode: SignatureDeclaration | JSDocTypeExpression = js.native
+  
+  val `type`: js.UndefOr[TypeNode] = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for nsqjs
 
-Typings are for version 0.9
+Typings are for version 0.12
 
 ## Library description:
 NodeJS client for NSQ
@@ -10,10 +10,10 @@ NodeJS client for NSQ
 | ------------------ | :-------------: |
 | Full name          | nsqjs |
 | Keywords           | nsq, nsq client, nsq client official, nsqjs, distributed messaging, messaging, task, task management |
-| # releases         | 5 |
-| # dependents       | 41 |
-| # downloads        | 180592 |
-| # stars            | 9 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 46747.333333333336 |
+| # stars            | 537.0 |
 
 ## Links
 - [Homepage](https://github.com/dudleycarr/nsqjs)

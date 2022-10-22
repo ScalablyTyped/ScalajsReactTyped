@@ -1,38 +1,31 @@
 package typingsJapgolly.officeJsPreview.Office
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VisibilityMode extends js.Object
-
+sealed trait VisibilityMode extends StObject
 /**
   * Visibility mode of the add-in.
   */
 @JSGlobal("Office.VisibilityMode")
 @js.native
-object VisibilityMode extends js.Object {
+object VisibilityMode extends StObject {
+  
   /**
     * UI is Hidden
     */
   @js.native
-  sealed trait hidden extends VisibilityMode
+  sealed trait hidden
+    extends StObject
+       with VisibilityMode
   
   /**
     * Displayed as taskpane
     */
   @js.native
-  sealed trait taskpane extends VisibilityMode
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[VisibilityMode with String] = js.native
-  /* "Hidden" */ @js.native
-  object hidden extends TopLevel[hidden with String]
-  
-  /* "Taskpane" */ @js.native
-  object taskpane extends TopLevel[taskpane with String]
-  
+  sealed trait taskpane
+    extends StObject
+       with VisibilityMode
 }
-

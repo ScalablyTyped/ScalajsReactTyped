@@ -1,38 +1,36 @@
 package typingsJapgolly.reactRouterGuard.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.history.mod.History
-import typingsJapgolly.history.mod.LocationState
-import typingsJapgolly.reactRouter.mod.RouterProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactRouter.anon.PartialLocation
+import typingsJapgolly.reactRouter.distLibComponentsMod.RouterProps
+import typingsJapgolly.reactRouter.distLibContextMod.Navigator
+import typingsJapgolly.remixRunRouter.distHistoryMod.Action
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Router {
-  def apply(
-    history: History[LocationState],
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[RouterProps, typingsJapgolly.reactRouterGuard.mod.Router, Unit, RouterProps] = {
-    val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactRouter.mod.RouterProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactRouterGuard.mod.Router](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactRouter.mod.RouterProps])(children: _*)
+  inline def apply(location: PartialLocation | String, navigator: Navigator): Builder = {
+    val __props = js.Dynamic.literal(location = location.asInstanceOf[js.Any], navigator = navigator.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[RouterProps]))
   }
+  
   @JSImport("react-router-guard", "Router")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def basename(value: String): this.type = set("basename", value.asInstanceOf[js.Any])
+    
+    inline def navigationType(value: Action): this.type = set("navigationType", value.asInstanceOf[js.Any])
+    
+    inline def static(value: Boolean): this.type = set("static", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: RouterProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

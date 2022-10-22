@@ -1,35 +1,31 @@
 package typingsJapgolly.amazonConnectStreams.connect
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EndpointType extends js.Object
-
+sealed trait EndpointType extends StObject
+/** This enumeration lists the different types of endpoints. */
 @JSGlobal("connect.EndpointType")
 @js.native
-object EndpointType extends js.Object {
+object EndpointType extends StObject {
+  
+  /** An endpoint pointing to an agent in the same instance. */
   @js.native
-  sealed trait AGENT extends EndpointType
+  sealed trait AGENT
+    extends StObject
+       with EndpointType
   
+  /** An endpoint pointing to a phone number. */
   @js.native
-  sealed trait PHONE_NUMBER extends EndpointType
+  sealed trait PHONE_NUMBER
+    extends StObject
+       with EndpointType
   
+  /** An endpoint pointing to a queue call flow in the same instance. */
   @js.native
-  sealed trait QUEUE extends EndpointType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[EndpointType with String] = js.native
-  /* "agent" */ @js.native
-  object AGENT extends TopLevel[AGENT with String]
-  
-  /* "phone_number" */ @js.native
-  object PHONE_NUMBER extends TopLevel[PHONE_NUMBER with String]
-  
-  /* "queue" */ @js.native
-  object QUEUE extends TopLevel[QUEUE with String]
-  
+  sealed trait QUEUE
+    extends StObject
+       with EndpointType
 }
-

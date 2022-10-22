@@ -5,32 +5,33 @@ import typingsJapgolly.materialUi.MaterialUI.Toolbar.ToolbarProps
 import typingsJapgolly.materialUi.MaterialUI.Toolbar.ToolbarSeparatorProps
 import typingsJapgolly.materialUi.MaterialUI.Toolbar.ToolbarTitleProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Toolbar", JSImport.Namespace)
-@js.native
-object toolbarMod extends js.Object {
-  @js.native
-  class Toolbar ()
-    extends Component[ToolbarProps, js.Object, js.Any]
+object toolbarMod {
   
+  @JSImport("material-ui/Toolbar", JSImport.Default)
   @js.native
-  class ToolbarGroup ()
-    extends Component[ToolbarGroupProps, js.Object, js.Any]
+  open class default () extends Toolbar
   
+  @JSImport("material-ui/Toolbar", "Toolbar")
   @js.native
-  class ToolbarSeparator ()
-    extends Component[ToolbarSeparatorProps, js.Object, js.Any]
+  open class Toolbar ()
+    extends Component[ToolbarProps, js.Object, Any]
   
+  @JSImport("material-ui/Toolbar", "ToolbarGroup")
   @js.native
-  class ToolbarTitle ()
-    extends Component[ToolbarTitleProps, js.Object, js.Any]
+  open class ToolbarGroup ()
+    extends Component[ToolbarGroupProps, js.Object, Any]
   
+  @JSImport("material-ui/Toolbar", "ToolbarSeparator")
   @js.native
-  class default ()
-    extends Component[ToolbarProps, js.Object, js.Any]
+  open class ToolbarSeparator ()
+    extends Component[ToolbarSeparatorProps, js.Object, Any]
   
+  @JSImport("material-ui/Toolbar", "ToolbarTitle")
+  @js.native
+  open class ToolbarTitle ()
+    extends Component[ToolbarTitleProps, js.Object, Any]
 }
-

@@ -1,52 +1,75 @@
 package typingsJapgolly.servicenowLondon
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenderProperties extends js.Object {
+trait RenderProperties extends StObject {
+  
   def getEncodedQuery(): String
-  def getListControl(): js.Any
+  
+  def getListControl(): Any
+  
   def getParameterValue(value: String): String
+  
   def getParameters(): js.Array[String]
+  
   def getReferringURL(): String
+  
   def getViewName(): String
-  def getWindowProperties(): js.Any
+  
+  def getWindowProperties(): Any
+  
   def isInDevStudio(): Boolean
+  
   def isInteractive(): Boolean
+  
   def isManyToMany(): Boolean
+  
   def isRelatedList(): Boolean
 }
-
 object RenderProperties {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getEncodedQuery: CallbackTo[String],
-    getListControl: CallbackTo[js.Any],
-    getParameterValue: String => CallbackTo[String],
+    getListControl: CallbackTo[Any],
+    getParameterValue: String => String,
     getParameters: CallbackTo[js.Array[String]],
     getReferringURL: CallbackTo[String],
     getViewName: CallbackTo[String],
-    getWindowProperties: CallbackTo[js.Any],
+    getWindowProperties: CallbackTo[Any],
     isInDevStudio: CallbackTo[Boolean],
     isInteractive: CallbackTo[Boolean],
     isManyToMany: CallbackTo[Boolean],
     isRelatedList: CallbackTo[Boolean]
   ): RenderProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getEncodedQuery")(getEncodedQuery.toJsFn)
-    __obj.updateDynamic("getListControl")(getListControl.toJsFn)
-    __obj.updateDynamic("getParameterValue")(js.Any.fromFunction1((t0: java.lang.String) => getParameterValue(t0).runNow()))
-    __obj.updateDynamic("getParameters")(getParameters.toJsFn)
-    __obj.updateDynamic("getReferringURL")(getReferringURL.toJsFn)
-    __obj.updateDynamic("getViewName")(getViewName.toJsFn)
-    __obj.updateDynamic("getWindowProperties")(getWindowProperties.toJsFn)
-    __obj.updateDynamic("isInDevStudio")(isInDevStudio.toJsFn)
-    __obj.updateDynamic("isInteractive")(isInteractive.toJsFn)
-    __obj.updateDynamic("isManyToMany")(isManyToMany.toJsFn)
-    __obj.updateDynamic("isRelatedList")(isRelatedList.toJsFn)
+    val __obj = js.Dynamic.literal(getEncodedQuery = getEncodedQuery.toJsFn, getListControl = getListControl.toJsFn, getParameterValue = js.Any.fromFunction1(getParameterValue), getParameters = getParameters.toJsFn, getReferringURL = getReferringURL.toJsFn, getViewName = getViewName.toJsFn, getWindowProperties = getWindowProperties.toJsFn, isInDevStudio = isInDevStudio.toJsFn, isInteractive = isInteractive.toJsFn, isManyToMany = isManyToMany.toJsFn, isRelatedList = isRelatedList.toJsFn)
     __obj.asInstanceOf[RenderProperties]
   }
+  
+  extension [Self <: RenderProperties](x: Self) {
+    
+    inline def setGetEncodedQuery(value: CallbackTo[String]): Self = StObject.set(x, "getEncodedQuery", value.toJsFn)
+    
+    inline def setGetListControl(value: CallbackTo[Any]): Self = StObject.set(x, "getListControl", value.toJsFn)
+    
+    inline def setGetParameterValue(value: String => String): Self = StObject.set(x, "getParameterValue", js.Any.fromFunction1(value))
+    
+    inline def setGetParameters(value: CallbackTo[js.Array[String]]): Self = StObject.set(x, "getParameters", value.toJsFn)
+    
+    inline def setGetReferringURL(value: CallbackTo[String]): Self = StObject.set(x, "getReferringURL", value.toJsFn)
+    
+    inline def setGetViewName(value: CallbackTo[String]): Self = StObject.set(x, "getViewName", value.toJsFn)
+    
+    inline def setGetWindowProperties(value: CallbackTo[Any]): Self = StObject.set(x, "getWindowProperties", value.toJsFn)
+    
+    inline def setIsInDevStudio(value: CallbackTo[Boolean]): Self = StObject.set(x, "isInDevStudio", value.toJsFn)
+    
+    inline def setIsInteractive(value: CallbackTo[Boolean]): Self = StObject.set(x, "isInteractive", value.toJsFn)
+    
+    inline def setIsManyToMany(value: CallbackTo[Boolean]): Self = StObject.set(x, "isManyToMany", value.toJsFn)
+    
+    inline def setIsRelatedList(value: CallbackTo[Boolean]): Self = StObject.set(x, "isRelatedList", value.toJsFn)
+  }
 }
-

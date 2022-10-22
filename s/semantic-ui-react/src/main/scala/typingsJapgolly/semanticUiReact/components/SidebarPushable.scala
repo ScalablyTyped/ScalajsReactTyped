@@ -1,49 +1,17 @@
 package typingsJapgolly.semanticUiReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandContent
-import typingsJapgolly.semanticUiReact.sidebarPushableMod.SidebarPushableProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesSidebarSidebarPushableMod.SidebarPushableProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SidebarPushable {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    as: js.Any = null,
-    className: String = null,
-    content: SemanticShorthandContent = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    SidebarPushableProps, 
-    MountedWithRawType[SidebarPushableProps, js.Object, RawMounted[SidebarPushableProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.semanticUiReact.sidebarPushableMod.SidebarPushableProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.sidebarPushableMod.SidebarPushableProps])(children: _*)
-  }
-  @JSImport("semantic-ui-react/dist/commonjs/modules/Sidebar/SidebarPushable", JSImport.Default)
+  @JSImport("semantic-ui-react", "SidebarPushable")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: SidebarPushable.type): SharedBuilder_SidebarPushableProps792597811 = new SharedBuilder_SidebarPushableProps792597811(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SidebarPushableProps): SharedBuilder_SidebarPushableProps792597811 = new SharedBuilder_SidebarPushableProps792597811(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,32 +1,24 @@
 package typingsJapgolly.reactMapGl.mod
 
+import typingsJapgolly.reactMapGl.anon.X
+import typingsJapgolly.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointerEvent extends js.Object {
+@js.native
+trait PointerEvent
+  extends StObject
+     with MouseEvent {
+  
   // backward compatibility: v3 interface
-  var features: js.Array[_]
-  var lngLat: js.Tuple2[Double, Double]
-  var point: js.Tuple2[Double, Double]
-  var srcEvent: js.Any
-  var target: js.Any
-  var `type`: String
+  var features: js.Array[Any] = js.native
+  
+  var lngLat: js.Tuple2[Double, Double] = js.native
+  
+  var offsetCenter: X = js.native
+  
+  var point: js.Tuple2[Double, Double] = js.native
+  
+  var srcEvent: Any = js.native
 }
-
-object PointerEvent {
-  @scala.inline
-  def apply(
-    features: js.Array[_],
-    lngLat: js.Tuple2[Double, Double],
-    point: js.Tuple2[Double, Double],
-    srcEvent: js.Any,
-    target: js.Any,
-    `type`: String
-  ): PointerEvent = {
-    val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any], lngLat = lngLat.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], srcEvent = srcEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PointerEvent]
-  }
-}
-

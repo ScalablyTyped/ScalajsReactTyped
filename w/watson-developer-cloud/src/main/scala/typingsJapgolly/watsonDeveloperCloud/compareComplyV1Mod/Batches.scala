@@ -1,21 +1,28 @@
 package typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The results of a successful `GET /v1/batches` request. */
-trait Batches extends js.Object {
+trait Batches extends StObject {
+  
   /** A list of the status of all batch requests. */
   var batches: js.UndefOr[js.Array[BatchStatus]] = js.undefined
 }
-
 object Batches {
-  @scala.inline
-  def apply(batches: js.Array[BatchStatus] = null): Batches = {
+  
+  inline def apply(): Batches = {
     val __obj = js.Dynamic.literal()
-    if (batches != null) __obj.updateDynamic("batches")(batches.asInstanceOf[js.Any])
     __obj.asInstanceOf[Batches]
   }
+  
+  extension [Self <: Batches](x: Self) {
+    
+    inline def setBatches(value: js.Array[BatchStatus]): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
+    
+    inline def setBatchesUndefined: Self = StObject.set(x, "batches", js.undefined)
+    
+    inline def setBatchesVarargs(value: BatchStatus*): Self = StObject.set(x, "batches", js.Array(value*))
+  }
 }
-

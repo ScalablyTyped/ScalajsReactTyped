@@ -1,33 +1,54 @@
 package typingsJapgolly.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TrimParams extends js.Object {
+trait TrimParams extends StObject {
+  
   var trim: js.UndefOr[ImgixParamType] = js.undefined
+  
   var `trim-color`: js.UndefOr[ImgixParamType] = js.undefined
+  
   var `trim-md`: js.UndefOr[ImgixParamType] = js.undefined
+  
+  var `trim-pad`: js.UndefOr[ImgixParamType] = js.undefined
+  
   var `trim-sd`: js.UndefOr[ImgixParamType] = js.undefined
+  
   var `trim-tol`: js.UndefOr[ImgixParamType] = js.undefined
 }
-
 object TrimParams {
-  @scala.inline
-  def apply(
-    trim: ImgixParamType = null,
-    `trim-color`: ImgixParamType = null,
-    `trim-md`: ImgixParamType = null,
-    `trim-sd`: ImgixParamType = null,
-    `trim-tol`: ImgixParamType = null
-  ): TrimParams = {
+  
+  inline def apply(): TrimParams = {
     val __obj = js.Dynamic.literal()
-    if (trim != null) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
-    if (`trim-color` != null) __obj.updateDynamic("trim-color")(`trim-color`.asInstanceOf[js.Any])
-    if (`trim-md` != null) __obj.updateDynamic("trim-md")(`trim-md`.asInstanceOf[js.Any])
-    if (`trim-sd` != null) __obj.updateDynamic("trim-sd")(`trim-sd`.asInstanceOf[js.Any])
-    if (`trim-tol` != null) __obj.updateDynamic("trim-tol")(`trim-tol`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrimParams]
   }
+  
+  extension [Self <: TrimParams](x: Self) {
+    
+    inline def setTrim(value: ImgixParamType): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+    
+    inline def `setTrim-color`(value: ImgixParamType): Self = StObject.set(x, "trim-color", value.asInstanceOf[js.Any])
+    
+    inline def `setTrim-colorUndefined`: Self = StObject.set(x, "trim-color", js.undefined)
+    
+    inline def `setTrim-md`(value: ImgixParamType): Self = StObject.set(x, "trim-md", value.asInstanceOf[js.Any])
+    
+    inline def `setTrim-mdUndefined`: Self = StObject.set(x, "trim-md", js.undefined)
+    
+    inline def `setTrim-pad`(value: ImgixParamType): Self = StObject.set(x, "trim-pad", value.asInstanceOf[js.Any])
+    
+    inline def `setTrim-padUndefined`: Self = StObject.set(x, "trim-pad", js.undefined)
+    
+    inline def `setTrim-sd`(value: ImgixParamType): Self = StObject.set(x, "trim-sd", value.asInstanceOf[js.Any])
+    
+    inline def `setTrim-sdUndefined`: Self = StObject.set(x, "trim-sd", js.undefined)
+    
+    inline def `setTrim-tol`(value: ImgixParamType): Self = StObject.set(x, "trim-tol", value.asInstanceOf[js.Any])
+    
+    inline def `setTrim-tolUndefined`: Self = StObject.set(x, "trim-tol", js.undefined)
+    
+    inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+  }
 }
-

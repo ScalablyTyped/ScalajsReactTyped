@@ -1,49 +1,38 @@
 package typingsJapgolly.reactRouterTabs.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactRouterTabs.mod.RoutedTabsProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RoutedTabs {
-  def apply(
-    activeTabClassName: String = null,
-    activeTabStyle: js.Object = null,
-    className: String = null,
-    startPathWith: String = null,
-    style: js.Object = null,
-    tabClassName: String = null,
-    tabStyle: js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[RoutedTabsProps, typingsJapgolly.reactRouterTabs.mod.RoutedTabs, Unit, RoutedTabsProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (activeTabClassName != null) __obj.updateDynamic("activeTabClassName")(activeTabClassName.asInstanceOf[js.Any])
-    if (activeTabStyle != null) __obj.updateDynamic("activeTabStyle")(activeTabStyle.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (startPathWith != null) __obj.updateDynamic("startPathWith")(startPathWith.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabClassName != null) __obj.updateDynamic("tabClassName")(tabClassName.asInstanceOf[js.Any])
-    if (tabStyle != null) __obj.updateDynamic("tabStyle")(tabStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactRouterTabs.mod.RoutedTabsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactRouterTabs.mod.RoutedTabs](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactRouterTabs.mod.RoutedTabsProps])(children: _*)
-  }
   @JSImport("react-router-tabs", "RoutedTabs")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def activeTabClassName(value: String): this.type = set("activeTabClassName", value.asInstanceOf[js.Any])
+    
+    inline def activeTabStyle(value: js.Object): this.type = set("activeTabStyle", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def startPathWith(value: String): this.type = set("startPathWith", value.asInstanceOf[js.Any])
+    
+    inline def style(value: js.Object): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def tabClassName(value: String): this.type = set("tabClassName", value.asInstanceOf[js.Any])
+    
+    inline def tabStyle(value: js.Object): this.type = set("tabStyle", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: RoutedTabs.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: RoutedTabsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

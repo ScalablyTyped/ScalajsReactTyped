@@ -1,19 +1,22 @@
 package typingsJapgolly.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait audioTrackSwitchedData extends js.Object {
-  var id: String
-}
-
-object audioTrackSwitchedData {
-  @scala.inline
-  def apply(id: String): audioTrackSwitchedData = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+trait AudioTrackSwitchedData extends StObject {
   
-    __obj.asInstanceOf[audioTrackSwitchedData]
+  var id: Double
+}
+object AudioTrackSwitchedData {
+  
+  inline def apply(id: Double): AudioTrackSwitchedData = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AudioTrackSwitchedData]
+  }
+  
+  extension [Self <: AudioTrackSwitchedData](x: Self) {
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }
-

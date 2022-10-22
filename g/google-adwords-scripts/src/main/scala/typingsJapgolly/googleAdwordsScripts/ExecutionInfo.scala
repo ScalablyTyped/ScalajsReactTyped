@@ -1,31 +1,40 @@
 package typingsJapgolly.googleAdwordsScripts
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExecutionInfo extends js.Object {
+trait ExecutionInfo extends StObject {
+  
   def getRemainingCreateQuota(): Double
+  
   def getRemainingGetQuota(): Double
+  
   def getRemainingTime(): Double
+  
   def isPreview(): Boolean
 }
-
 object ExecutionInfo {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getRemainingCreateQuota: CallbackTo[Double],
     getRemainingGetQuota: CallbackTo[Double],
     getRemainingTime: CallbackTo[Double],
     isPreview: CallbackTo[Boolean]
   ): ExecutionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getRemainingCreateQuota")(getRemainingCreateQuota.toJsFn)
-    __obj.updateDynamic("getRemainingGetQuota")(getRemainingGetQuota.toJsFn)
-    __obj.updateDynamic("getRemainingTime")(getRemainingTime.toJsFn)
-    __obj.updateDynamic("isPreview")(isPreview.toJsFn)
+    val __obj = js.Dynamic.literal(getRemainingCreateQuota = getRemainingCreateQuota.toJsFn, getRemainingGetQuota = getRemainingGetQuota.toJsFn, getRemainingTime = getRemainingTime.toJsFn, isPreview = isPreview.toJsFn)
     __obj.asInstanceOf[ExecutionInfo]
   }
+  
+  extension [Self <: ExecutionInfo](x: Self) {
+    
+    inline def setGetRemainingCreateQuota(value: CallbackTo[Double]): Self = StObject.set(x, "getRemainingCreateQuota", value.toJsFn)
+    
+    inline def setGetRemainingGetQuota(value: CallbackTo[Double]): Self = StObject.set(x, "getRemainingGetQuota", value.toJsFn)
+    
+    inline def setGetRemainingTime(value: CallbackTo[Double]): Self = StObject.set(x, "getRemainingTime", value.toJsFn)
+    
+    inline def setIsPreview(value: CallbackTo[Boolean]): Self = StObject.set(x, "isPreview", value.toJsFn)
+  }
 }
-

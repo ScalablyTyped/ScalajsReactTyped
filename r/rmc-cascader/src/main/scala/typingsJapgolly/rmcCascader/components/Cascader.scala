@@ -1,14 +1,22 @@
 package typingsJapgolly.rmcCascader.components
 
-import typingsJapgolly.rmcCascader.cascaderMod.default
+import typingsJapgolly.rmcCascader.libCascaderMod.default
+import typingsJapgolly.rmcCascader.libCascaderTypesMod.ICascaderDataItem
+import typingsJapgolly.rmcCascader.libCascaderTypesMod.ICascaderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object Cascader extends SharedApply_ICascaderProps1377583984[default] {
+object Cascader {
+  
+  inline def apply(data: js.Array[ICascaderDataItem]): SharedBuilder_ICascaderProps1132363685[default] = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    new SharedBuilder_ICascaderProps1132363685[default](js.Array(this.component, __props.asInstanceOf[ICascaderProps]))
+  }
+  
   @JSImport("rmc-cascader/lib/Cascader", JSImport.Default)
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: ICascaderProps): SharedBuilder_ICascaderProps1132363685[default] = new SharedBuilder_ICascaderProps1132363685[default](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

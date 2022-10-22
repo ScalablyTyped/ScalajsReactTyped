@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__types
 
-Typings are for version 0.8.5
+Typings are for version 0.16.2
 
 ## Library description:
 Default Jimp encoder/decoders.
@@ -10,10 +10,10 @@ Default Jimp encoder/decoders.
 | ------------------ | :-------------: |
 | Full name          | @jimp/types |
 | Keywords           | - |
-| # releases         | 69 |
-| # dependents       | 2 |
-| # downloads        | 14456766 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 5457223.333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40jimp%2Ftypes)

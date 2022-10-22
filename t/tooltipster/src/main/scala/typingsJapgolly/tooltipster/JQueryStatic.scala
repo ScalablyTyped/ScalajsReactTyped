@@ -1,20 +1,23 @@
 package typingsJapgolly.tooltipster
 
 import typingsJapgolly.tooltipster.JQueryTooltipster.ITooltipsterStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
+  
   var tooltipster: ITooltipsterStatic
 }
-
 object JQueryStatic {
-  @scala.inline
-  def apply(tooltipster: ITooltipsterStatic): JQueryStatic = {
-    val __obj = js.Dynamic.literal(tooltipster = tooltipster.asInstanceOf[js.Any])
   
+  inline def apply(tooltipster: ITooltipsterStatic): JQueryStatic = {
+    val __obj = js.Dynamic.literal(tooltipster = tooltipster.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
+  
+  extension [Self <: JQueryStatic](x: Self) {
+    
+    inline def setTooltipster(value: ITooltipsterStatic): Self = StObject.set(x, "tooltipster", value.asInstanceOf[js.Any])
+  }
 }
-

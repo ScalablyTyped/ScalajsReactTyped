@@ -1,41 +1,64 @@
 package typingsJapgolly.nodal.mod
 
-import typingsJapgolly.nodal.nodalNumbers.`0`
-import typingsJapgolly.nodal.nodalNumbers.`1`
+import typingsJapgolly.nodal.nodalInts.`0`
+import typingsJapgolly.nodal.nodalInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IColumnProperties extends js.Object {
+trait IColumnProperties extends StObject {
+  
   var array: js.UndefOr[Boolean] = js.undefined
+  
   var auto_increment: js.UndefOr[Boolean] = js.undefined
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  
+  var defaultValue: js.UndefOr[Any] = js.undefined
+  
   var length: js.UndefOr[Double | Null] = js.undefined
+  
   var nullable: js.UndefOr[Boolean] = js.undefined
+  
   var primary_key: js.UndefOr[`0` | `1` | Boolean] = js.undefined
+  
   var unique: js.UndefOr[`0` | `1` | Boolean] = js.undefined
 }
-
 object IColumnProperties {
-  @scala.inline
-  def apply(
-    array: js.UndefOr[Boolean] = js.undefined,
-    auto_increment: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: js.Any = null,
-    length: Int | Double = null,
-    nullable: js.UndefOr[Boolean] = js.undefined,
-    primary_key: `0` | `1` | Boolean = null,
-    unique: `0` | `1` | Boolean = null
-  ): IColumnProperties = {
+  
+  inline def apply(): IColumnProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
-    if (!js.isUndefined(auto_increment)) __obj.updateDynamic("auto_increment")(auto_increment.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
-    if (primary_key != null) __obj.updateDynamic("primary_key")(primary_key.asInstanceOf[js.Any])
-    if (unique != null) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnProperties]
   }
+  
+  extension [Self <: IColumnProperties](x: Self) {
+    
+    inline def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    
+    inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
+    
+    inline def setAuto_increment(value: Boolean): Self = StObject.set(x, "auto_increment", value.asInstanceOf[js.Any])
+    
+    inline def setAuto_incrementUndefined: Self = StObject.set(x, "auto_increment", js.undefined)
+    
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthNull: Self = StObject.set(x, "length", null)
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+    
+    inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
+    
+    inline def setPrimary_key(value: `0` | `1` | Boolean): Self = StObject.set(x, "primary_key", value.asInstanceOf[js.Any])
+    
+    inline def setPrimary_keyUndefined: Self = StObject.set(x, "primary_key", js.undefined)
+    
+    inline def setUnique(value: `0` | `1` | Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+  }
 }
-

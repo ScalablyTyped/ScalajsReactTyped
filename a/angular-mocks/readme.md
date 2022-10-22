@@ -10,10 +10,10 @@ AngularJS mocks for testing
 | ------------------ | :-------------: |
 | Full name          | angular-mocks |
 | Keywords           | angular, framework, browser, mocks, testing, client-side |
-| # releases         | 14 |
-| # dependents       | 152 |
-| # downloads        | 9948798 |
-| # stars            | 11 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 855675.6666666666 |
+| # stars            | 59430.0 |
 
 ## Links
 - [Homepage](http://angularjs.org)

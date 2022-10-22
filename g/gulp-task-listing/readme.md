@@ -10,14 +10,11 @@ Adds the ability to provide a task listing for your gulpfile
 | Full name          | gulp-task-listing |
 | Keywords           | gulpfriendly |
 | # releases         | 2 |
-| # dependents       | 49 |
-| # downloads        | 710812 |
-| # stars            | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 32815.666666666664 |
+| # stars            | 54.0 |
 
 ## Links
-- [Homepage](https://github.com/OverZealous/gulp-task-listing)
-- [Bugs](https://github.com/OverZealous/gulp-task-listing/issues)
-- [Repository](https://github.com/OverZealous/gulp-task-listing)
 - [Npm](https://www.npmjs.com/package/gulp-task-listing)
     
 

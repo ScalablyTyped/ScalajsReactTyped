@@ -1,111 +1,117 @@
 package typingsJapgolly.extjs.Ext.util
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.extjs.Ext.Array
 import typingsJapgolly.extjs.Ext.IBase
-import typingsJapgolly.extjs.Ext.IClass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IKeyNav extends IBase {
+trait IKeyNav
+  extends StObject
+     with IBase {
+  
   /** [Config Option] (String) */
   var defaultEventAction: js.UndefOr[String] = js.undefined
+  
   /** [Method] Destroy this KeyNav
-  		* @param removeEl Boolean Pass true to remove the element associated with this KeyNav.
-  		*/
+    * @param removeEl Boolean Pass true to remove the element associated with this KeyNav.
+    */
   var destroy: js.UndefOr[js.Function1[/* removeEl */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Disables this KeyNav  */
   var disable: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Enables this KeyNav  */
   var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Config Option] (String) */
   var eventName: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var forceKeyDown: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var ignoreInputFields: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Ext.util.KeyMap) */
   var keyMap: js.UndefOr[IKeyMap] = js.undefined
+  
   /** [Config Option] (Function) */
-  var processEvent: js.UndefOr[js.Any] = js.undefined
+  var processEvent: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Object) */
-  var processEventScope: js.UndefOr[js.Any] = js.undefined
+  var processEventScope: js.UndefOr[Any] = js.undefined
+  
   /** [Method] Convenience function for setting disabled enabled by boolean
-  		* @param disabled Boolean
-  		*/
+    * @param disabled Boolean
+    */
   var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Config Option] (Ext.Component/Ext.Element/HTMLElement/String) */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
 }
-
 object IKeyNav {
-  @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callParent: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    config: js.Any = null,
-    defaultEventAction: String = null,
-    destroy: /* removeEl */ js.UndefOr[Boolean] => Callback = null,
-    disable: js.UndefOr[Callback] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    enable: js.UndefOr[Callback] = js.undefined,
-    eventName: String = null,
-    extend: String = null,
-    forceKeyDown: js.UndefOr[Boolean] = js.undefined,
-    getInitialConfig: /* name */ js.UndefOr[String] => CallbackTo[js.Any] = null,
-    ignoreInputFields: js.UndefOr[Boolean] = js.undefined,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => CallbackTo[IKeyNav] = null,
-    keyMap: IKeyMap = null,
-    mixins: js.Any = null,
-    processEvent: js.Any = null,
-    processEventScope: js.Any = null,
-    requires: Array = null,
-    self: IClass = null,
-    setDisabled: /* disabled */ js.UndefOr[Boolean] => Callback = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    target: js.Any = null,
-    uses: Array = null
-  ): IKeyNav = {
+  
+  inline def apply(): IKeyNav = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callOverridden(t0).runNow()))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callParent(t0).runNow()))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callSuper(t0).runNow()))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (defaultEventAction != null) __obj.updateDynamic("defaultEventAction")(defaultEventAction.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1((t0: /* removeEl */ js.UndefOr[scala.Boolean]) => destroy(t0).runNow()))
-    disable.foreach(p => __obj.updateDynamic("disable")(p.toJsFn))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    enable.foreach(p => __obj.updateDynamic("enable")(p.toJsFn))
-    if (eventName != null) __obj.updateDynamic("eventName")(eventName.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceKeyDown)) __obj.updateDynamic("forceKeyDown")(forceKeyDown.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1((t0: /* name */ js.UndefOr[java.lang.String]) => getInitialConfig(t0).runNow()))
-    if (!js.isUndefined(ignoreInputFields)) __obj.updateDynamic("ignoreInputFields")(ignoreInputFields.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1((t0: /* config */ js.UndefOr[js.Any]) => initConfig(t0).runNow()))
-    if (keyMap != null) __obj.updateDynamic("keyMap")(keyMap.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (processEvent != null) __obj.updateDynamic("processEvent")(processEvent.asInstanceOf[js.Any])
-    if (processEventScope != null) __obj.updateDynamic("processEventScope")(processEventScope.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setDisabled != null) __obj.updateDynamic("setDisabled")(js.Any.fromFunction1((t0: /* disabled */ js.UndefOr[scala.Boolean]) => setDisabled(t0).runNow()))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeyNav]
   }
+  
+  extension [Self <: IKeyNav](x: Self) {
+    
+    inline def setDefaultEventAction(value: String): Self = StObject.set(x, "defaultEventAction", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultEventActionUndefined: Self = StObject.set(x, "defaultEventAction", js.undefined)
+    
+    inline def setDestroy(value: /* removeEl */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "destroy", js.Any.fromFunction1((t0: /* removeEl */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    
+    inline def setDisable(value: Callback): Self = StObject.set(x, "disable", value.toJsFn)
+    
+    inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setEnable(value: Callback): Self = StObject.set(x, "enable", value.toJsFn)
+    
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    
+    inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    
+    inline def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
+    
+    inline def setForceKeyDown(value: Boolean): Self = StObject.set(x, "forceKeyDown", value.asInstanceOf[js.Any])
+    
+    inline def setForceKeyDownUndefined: Self = StObject.set(x, "forceKeyDown", js.undefined)
+    
+    inline def setIgnoreInputFields(value: Boolean): Self = StObject.set(x, "ignoreInputFields", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreInputFieldsUndefined: Self = StObject.set(x, "ignoreInputFields", js.undefined)
+    
+    inline def setKeyMap(value: IKeyMap): Self = StObject.set(x, "keyMap", value.asInstanceOf[js.Any])
+    
+    inline def setKeyMapUndefined: Self = StObject.set(x, "keyMap", js.undefined)
+    
+    inline def setProcessEvent(value: Any): Self = StObject.set(x, "processEvent", value.asInstanceOf[js.Any])
+    
+    inline def setProcessEventScope(value: Any): Self = StObject.set(x, "processEventScope", value.asInstanceOf[js.Any])
+    
+    inline def setProcessEventScopeUndefined: Self = StObject.set(x, "processEventScope", js.undefined)
+    
+    inline def setProcessEventUndefined: Self = StObject.set(x, "processEvent", js.undefined)
+    
+    inline def setSetDisabled(value: /* disabled */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1((t0: /* disabled */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetDisabledUndefined: Self = StObject.set(x, "setDisabled", js.undefined)
+    
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

@@ -1,38 +1,72 @@
 package typingsJapgolly.webpack.mod
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.node.NodeJS.ErrnoException
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OutputFileSystem extends js.Object {
-  def join(paths: String*): String
-  def mkdir(path: String, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit
-  def mkdirp(path: String, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit
-  def rmdir(path: String, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit
-  def unlink(path: String, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit
-  def writeFile(path: String, data: js.Any, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit
+@js.native
+trait OutputFileSystem extends StObject {
+  
+  var dirname: js.UndefOr[js.Function1[/* arg0 */ String, String]] = js.native
+  
+  var join: js.UndefOr[js.Function2[/* arg0 */ String, /* arg1 */ String, String]] = js.native
+  
+  var lstat: js.UndefOr[
+    js.Function2[
+      /* arg0 */ String, 
+      /* arg1 */ js.Function2[/* arg0 */ js.UndefOr[Null | ErrnoException], /* arg1 */ js.UndefOr[IStats], Unit], 
+      Unit
+    ]
+  ] = js.native
+  
+  def mkdir(arg0: String, arg1: js.Function1[/* arg0 */ js.UndefOr[Null | ErrnoException], Unit]): Unit = js.native
+  
+  def readFile(
+    arg0: String,
+    arg1: js.Function2[
+      /* arg0 */ js.UndefOr[Null | ErrnoException], 
+      /* arg1 */ js.UndefOr[String | Buffer], 
+      Unit
+    ]
+  ): Unit = js.native
+  
+  var readdir: js.UndefOr[
+    js.Function2[
+      /* arg0 */ String, 
+      /* arg1 */ js.Function2[
+        /* arg0 */ js.UndefOr[Null | ErrnoException], 
+        /* arg1 */ js.UndefOr[js.Array[Buffer | IDirent | String]], 
+        Unit
+      ], 
+      Unit
+    ]
+  ] = js.native
+  
+  var relative: js.UndefOr[js.Function2[/* arg0 */ String, /* arg1 */ String, String]] = js.native
+  
+  var rmdir: js.UndefOr[
+    js.Function2[
+      /* arg0 */ String, 
+      /* arg1 */ js.Function1[/* arg0 */ js.UndefOr[Null | ErrnoException], Unit], 
+      Unit
+    ]
+  ] = js.native
+  
+  def stat(
+    arg0: String,
+    arg1: js.Function2[/* arg0 */ js.UndefOr[Null | ErrnoException], /* arg1 */ js.UndefOr[IStats], Unit]
+  ): Unit = js.native
+  
+  var unlink: js.UndefOr[
+    js.Function2[
+      /* arg0 */ String, 
+      /* arg1 */ js.Function1[/* arg0 */ js.UndefOr[Null | ErrnoException], Unit], 
+      Unit
+    ]
+  ] = js.native
+  
+  def writeFile(arg0: String, arg1: String, arg2: js.Function1[/* arg0 */ js.UndefOr[Null | ErrnoException], Unit]): Unit = js.native
+  def writeFile(arg0: String, arg1: Buffer, arg2: js.Function1[/* arg0 */ js.UndefOr[Null | ErrnoException], Unit]): Unit = js.native
 }
-
-object OutputFileSystem {
-  @scala.inline
-  def apply(
-    join: /* repeated */ String => CallbackTo[String],
-    mkdir: (String, js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) => Callback,
-    mkdirp: (String, js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) => Callback,
-    rmdir: (String, js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) => Callback,
-    unlink: (String, js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) => Callback,
-    writeFile: (String, js.Any, js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) => Callback
-  ): OutputFileSystem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("join")(js.Any.fromFunction1((t0: /* repeated */ java.lang.String) => join(t0).runNow()))
-    __obj.updateDynamic("mkdir")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Function1[/* err */ js.UndefOr[js.Error | scala.Null], scala.Unit]) => mkdir(t0, t1).runNow()))
-    __obj.updateDynamic("mkdirp")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Function1[/* err */ js.UndefOr[js.Error | scala.Null], scala.Unit]) => mkdirp(t0, t1).runNow()))
-    __obj.updateDynamic("rmdir")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Function1[/* err */ js.UndefOr[js.Error | scala.Null], scala.Unit]) => rmdir(t0, t1).runNow()))
-    __obj.updateDynamic("unlink")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Function1[/* err */ js.UndefOr[js.Error | scala.Null], scala.Unit]) => unlink(t0, t1).runNow()))
-    __obj.updateDynamic("writeFile")(js.Any.fromFunction3((t0: java.lang.String, t1: js.Any, t2: js.Function1[/* err */ js.UndefOr[js.Error | scala.Null], scala.Unit]) => writeFile(t0, t1, t2).runNow()))
-    __obj.asInstanceOf[OutputFileSystem]
-  }
-}
-

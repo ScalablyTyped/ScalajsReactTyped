@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "imagemin-pngquant" : "9.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "imagemin-pngquant" : "9.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

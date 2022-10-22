@@ -1,21 +1,15 @@
 package typingsJapgolly.cordovaPluginCamera
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * iOS-only parameters that specify the anchor element location and arrow direction
   * of the popover when selecting images from an iPad's library or album.
   */
-@JSGlobal("CameraPopoverOptions")
-@js.native
-class CameraPopoverOptions () extends js.Object {
-  def this(x: Double) = this()
-  def this(x: Double, y: Double) = this()
-  def this(x: Double, y: Double, width: Double) = this()
-  def this(x: Double, y: Double, width: Double, height: Double) = this()
-  def this(x: Double, y: Double, width: Double, height: Double, arrowDir: Double) = this()
+trait CameraPopoverOptions extends StObject {
+  
   /**
     * Direction the arrow on the popover should point. Defined in Camera.PopoverArrowDirection
     * Matches iOS UIPopoverArrowDirection constants.
@@ -25,12 +19,49 @@ class CameraPopoverOptions () extends js.Object {
     *      ARROW_RIGHT : 8,
     *      ARROW_ANY : 15
     */
-  var arrowDir: Double = js.native
-  var height: Double = js.native
-  var popoverHeight: Double = js.native
-  var popoverWidth: Double = js.native
-  var width: Double = js.native
-  var x: Double = js.native
-  var y: Double = js.native
+  var arrowDir: Double
+  
+  var height: Double
+  
+  var popoverHeight: Double
+  
+  var popoverWidth: Double
+  
+  var width: Double
+  
+  var x: Double
+  
+  var y: Double
 }
-
+object CameraPopoverOptions {
+  
+  inline def apply(
+    arrowDir: Double,
+    height: Double,
+    popoverHeight: Double,
+    popoverWidth: Double,
+    width: Double,
+    x: Double,
+    y: Double
+  ): CameraPopoverOptions = {
+    val __obj = js.Dynamic.literal(arrowDir = arrowDir.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], popoverHeight = popoverHeight.asInstanceOf[js.Any], popoverWidth = popoverWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CameraPopoverOptions]
+  }
+  
+  extension [Self <: CameraPopoverOptions](x: Self) {
+    
+    inline def setArrowDir(value: Double): Self = StObject.set(x, "arrowDir", value.asInstanceOf[js.Any])
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setPopoverHeight(value: Double): Self = StObject.set(x, "popoverHeight", value.asInstanceOf[js.Any])
+    
+    inline def setPopoverWidth(value: Double): Self = StObject.set(x, "popoverWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+  }
+}

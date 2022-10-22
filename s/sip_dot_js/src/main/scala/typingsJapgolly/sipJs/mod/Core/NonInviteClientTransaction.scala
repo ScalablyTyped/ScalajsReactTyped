@@ -1,15 +1,15 @@
 package typingsJapgolly.sipJs.mod.Core
 
-import typingsJapgolly.sipJs.coreTransportMod.Transport
-import typingsJapgolly.sipJs.transactionUserMod.ClientTransactionUser
+import typingsJapgolly.sipJs.libCoreTransactionsTransactionUserMod.ClientTransactionUser
+import typingsJapgolly.sipJs.libCoreTransportMod.Transport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.NonInviteClientTransaction")
 @js.native
-class NonInviteClientTransaction protected ()
-  extends typingsJapgolly.sipJs.coreMod.NonInviteClientTransaction {
+open class NonInviteClientTransaction protected ()
+  extends typingsJapgolly.sipJs.libCoreMod.NonInviteClientTransaction {
   /**
     * Constructor
     * Upon construction, the outgoing request's Via header is updated by calling `setViaHeader`.
@@ -22,9 +22,8 @@ class NonInviteClientTransaction protected ()
     * @param user - The transaction user.
     */
   def this(
-    request: typingsJapgolly.sipJs.messagesMod.OutgoingRequestMessage,
+    request: typingsJapgolly.sipJs.libCoreMessagesMod.OutgoingRequestMessage,
     transport: Transport,
     user: ClientTransactionUser
   ) = this()
 }
-

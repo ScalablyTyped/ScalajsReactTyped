@@ -1,189 +1,156 @@
 package typingsJapgolly.tensorflowTfjsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensorflowTfjsNodeStrings {
-  @js.native
-  sealed trait `1Dot5Dot2` extends js.Object
   
   @js.native
-  sealed trait NCDHW extends js.Object
+  sealed trait NCDHW extends StObject
+  inline def NCDHW: NCDHW = "NCDHW".asInstanceOf[NCDHW]
   
   @js.native
-  sealed trait NCHW extends js.Object
+  sealed trait NCHW extends StObject
+  inline def NCHW: NCHW = "NCHW".asInstanceOf[NCHW]
   
   @js.native
-  sealed trait NCW extends js.Object
+  sealed trait NCW extends StObject
+  inline def NCW: NCW = "NCW".asInstanceOf[NCW]
   
   @js.native
-  sealed trait NDHWC extends js.Object
+  sealed trait NDHWC extends StObject
+  inline def NDHWC: NDHWC = "NDHWC".asInstanceOf[NDHWC]
   
   @js.native
-  sealed trait NHWC extends js.Object
+  sealed trait NHWC extends StObject
+  inline def NHWC: NHWC = "NHWC".asInstanceOf[NHWC]
   
   @js.native
-  sealed trait NWC extends js.Object
+  sealed trait NWC extends StObject
+  inline def NWC: NWC = "NWC".asInstanceOf[NWC]
   
   @js.native
-  sealed trait _empty extends js.Object
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait avg extends js.Object
+  sealed trait avg extends StObject
+  inline def avg: avg = "avg".asInstanceOf[avg]
   
   @js.native
-  sealed trait batch extends js.Object
+  sealed trait batch extends StObject
+  inline def batch: batch = "batch".asInstanceOf[batch]
   
   @js.native
-  sealed trait bilinear extends js.Object
+  sealed trait bilinear extends StObject
+  inline def bilinear: bilinear = "bilinear".asInstanceOf[bilinear]
   
   @js.native
-  sealed trait bool extends js.Object
+  sealed trait bool extends StObject
+  inline def bool: bool = "bool".asInstanceOf[bool]
   
   @js.native
-  sealed trait ceil extends js.Object
+  sealed trait ceil extends StObject
+  inline def ceil: ceil = "ceil".asInstanceOf[ceil]
   
   @js.native
-  sealed trait channelsFirst extends js.Object
+  sealed trait channelsFirst extends StObject
+  inline def channelsFirst: channelsFirst = "channelsFirst".asInstanceOf[channelsFirst]
   
   @js.native
-  sealed trait channelsLast extends js.Object
+  sealed trait channelsLast extends StObject
+  inline def channelsLast: channelsLast = "channelsLast".asInstanceOf[channelsLast]
   
   @js.native
-  sealed trait cm extends js.Object
+  sealed trait cm extends StObject
+  inline def cm: cm = "cm".asInstanceOf[cm]
   
   @js.native
-  sealed trait complex64 extends js.Object
+  sealed trait complex64 extends StObject
+  inline def complex64: complex64 = "complex64".asInstanceOf[complex64]
   
   @js.native
-  sealed trait epoch extends js.Object
+  sealed trait constant extends StObject
+  inline def constant: constant = "constant".asInstanceOf[constant]
   
   @js.native
-  sealed trait euclidean extends js.Object
+  sealed trait epoch extends StObject
+  inline def epoch: epoch = "epoch".asInstanceOf[epoch]
   
   @js.native
-  sealed trait fileColonSlashSlash extends js.Object
+  sealed trait euclidean extends StObject
+  inline def euclidean: euclidean = "euclidean".asInstanceOf[euclidean]
   
   @js.native
-  sealed trait float32 extends js.Object
+  sealed trait float32 extends StObject
+  inline def float32: float32 = "float32".asInstanceOf[float32]
   
   @js.native
-  sealed trait floor extends js.Object
+  sealed trait floor extends StObject
+  inline def floor: floor = "floor".asInstanceOf[floor]
   
   @js.native
-  sealed trait fro extends js.Object
+  sealed trait fro extends StObject
+  inline def fro: fro = "fro".asInstanceOf[fro]
   
   @js.native
-  sealed trait grayscale extends js.Object
+  sealed trait grayscale extends StObject
+  inline def grayscale: grayscale = "grayscale".asInstanceOf[grayscale]
   
   @js.native
-  sealed trait in extends js.Object
+  sealed trait in extends StObject
+  inline def in: in = "in".asInstanceOf[in]
   
   @js.native
-  sealed trait int32 extends js.Object
+  sealed trait int32 extends StObject
+  inline def int32: int32 = "int32".asInstanceOf[int32]
   
   @js.native
-  sealed trait max extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait modelDotjson extends js.Object
+  sealed trait max extends StObject
+  inline def max: max = "max".asInstanceOf[max]
   
   @js.native
-  sealed trait nearest extends js.Object
+  sealed trait nearest extends StObject
+  inline def nearest: nearest = "nearest".asInstanceOf[nearest]
   
   @js.native
-  sealed trait rgb extends js.Object
+  sealed trait reflect extends StObject
+  inline def reflect: reflect = "reflect".asInstanceOf[reflect]
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait rgb extends StObject
+  inline def rgb: rgb = "rgb".asInstanceOf[rgb]
   
   @js.native
-  sealed trait same extends js.Object
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait tensorflowjsDotpb extends js.Object
+  sealed trait same extends StObject
+  inline def same: same = "same".asInstanceOf[same]
   
   @js.native
-  sealed trait valid extends js.Object
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait weightsDotbin extends js.Object
+  sealed trait symmetric extends StObject
+  inline def symmetric: symmetric = "symmetric".asInstanceOf[symmetric]
   
-  @scala.inline
-  def `1Dot5Dot2`: `1Dot5Dot2` = "1.5.2".asInstanceOf[`1Dot5Dot2`]
-  @scala.inline
-  def NCDHW: NCDHW = "NCDHW".asInstanceOf[NCDHW]
-  @scala.inline
-  def NCHW: NCHW = "NCHW".asInstanceOf[NCHW]
-  @scala.inline
-  def NCW: NCW = "NCW".asInstanceOf[NCW]
-  @scala.inline
-  def NDHWC: NDHWC = "NDHWC".asInstanceOf[NDHWC]
-  @scala.inline
-  def NHWC: NHWC = "NHWC".asInstanceOf[NHWC]
-  @scala.inline
-  def NWC: NWC = "NWC".asInstanceOf[NWC]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def avg: avg = "avg".asInstanceOf[avg]
-  @scala.inline
-  def batch: batch = "batch".asInstanceOf[batch]
-  @scala.inline
-  def bilinear: bilinear = "bilinear".asInstanceOf[bilinear]
-  @scala.inline
-  def bool: bool = "bool".asInstanceOf[bool]
-  @scala.inline
-  def ceil: ceil = "ceil".asInstanceOf[ceil]
-  @scala.inline
-  def channelsFirst: channelsFirst = "channelsFirst".asInstanceOf[channelsFirst]
-  @scala.inline
-  def channelsLast: channelsLast = "channelsLast".asInstanceOf[channelsLast]
-  @scala.inline
-  def cm: cm = "cm".asInstanceOf[cm]
-  @scala.inline
-  def complex64: complex64 = "complex64".asInstanceOf[complex64]
-  @scala.inline
-  def epoch: epoch = "epoch".asInstanceOf[epoch]
-  @scala.inline
-  def euclidean: euclidean = "euclidean".asInstanceOf[euclidean]
-  @scala.inline
-  def fileColonSlashSlash: fileColonSlashSlash = "file://".asInstanceOf[fileColonSlashSlash]
-  @scala.inline
-  def float32: float32 = "float32".asInstanceOf[float32]
-  @scala.inline
-  def floor: floor = "floor".asInstanceOf[floor]
-  @scala.inline
-  def fro: fro = "fro".asInstanceOf[fro]
-  @scala.inline
-  def grayscale: grayscale = "grayscale".asInstanceOf[grayscale]
-  @scala.inline
-  def in: in = "in".asInstanceOf[in]
-  @scala.inline
-  def int32: int32 = "int32".asInstanceOf[int32]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def modelDotjson: modelDotjson = "model.json".asInstanceOf[modelDotjson]
-  @scala.inline
-  def nearest: nearest = "nearest".asInstanceOf[nearest]
-  @scala.inline
-  def rgb: rgb = "rgb".asInstanceOf[rgb]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def same: same = "same".asInstanceOf[same]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def tensorflowjsDotpb: tensorflowjsDotpb = "tensorflowjs.pb".asInstanceOf[tensorflowjsDotpb]
-  @scala.inline
-  def valid: valid = "valid".asInstanceOf[valid]
-  @scala.inline
-  def weightsDotbin: weightsDotbin = "weights.bin".asInstanceOf[weightsDotbin]
+  @js.native
+  sealed trait valid extends StObject
+  inline def valid: valid = "valid".asInstanceOf[valid]
+  
+  @js.native
+  sealed trait wrap extends StObject
+  inline def wrap: wrap = "wrap".asInstanceOf[wrap]
 }
-

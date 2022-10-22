@@ -1,7 +1,7 @@
 
 # Scala.js typings for tape
 
-Typings are for version v4.2.30
+Typings are for version v4.13.2
 
 ## Library description:
 tap-producing test harness for node and browsers
@@ -10,15 +10,15 @@ tap-producing test harness for node and browsers
 | ------------------ | :-------------: |
 | Full name          | tape |
 | Keywords           | tap, test, harness, assert, browser |
-| # releases         | 13 |
-| # dependents       | 807 |
-| # downloads        | 25168195 |
-| # stars            | 154 |
+| # releases         | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 2419728.3333333335 |
+| # stars            | 5667.0 |
 
 ## Links
-- [Homepage](https://github.com/substack/tape)
-- [Bugs](https://github.com/substack/tape/issues)
-- [Repository](https://github.com/substack/tape)
+- [Homepage](https://github.com/ljharb/tape)
+- [Bugs](https://github.com/ljharb/tape/issues)
+- [Repository](https://github.com/ljharb/tape)
 - [Npm](https://www.npmjs.com/package/tape)
     
 

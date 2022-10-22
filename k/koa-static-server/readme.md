@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-static-server
 
-Typings are for version 1.3
+Typings are for version 1.5
 
 ## Library description:
 Static file serving middleware for koa with directory, rewrite and index support
@@ -10,10 +10,10 @@ Static file serving middleware for koa with directory, rewrite and index support
 | ------------------ | :-------------: |
 | Full name          | koa-static-server |
 | Keywords           | koa, middleware, file, static, sendfile, directory, server, folder |
-| # releases         | 4 |
-| # dependents       | 24 |
-| # downloads        | 134366 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15124.666666666666 |
+| # stars            | 57.0 |
 
 ## Links
 - [Homepage](https://github.com/pkoretic/koa-static-server#readme)

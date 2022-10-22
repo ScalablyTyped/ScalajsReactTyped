@@ -1,14 +1,24 @@
 package typingsJapgolly.angularCommon.httpMod
 
-import typingsJapgolly.angularCommon.AnonError
+import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http", "HttpErrorResponse")
 @js.native
-class HttpErrorResponse protected ()
-  extends typingsJapgolly.angularCommon.httpHttpMod.HttpErrorResponse {
-  def this(init: AnonError) = this()
+open class HttpErrorResponse protected ()
+  extends HttpResponseBase
+     with Error {
+  def this(init: typingsJapgolly.angularCommon.anon.Error) = this()
+  
+  val error: Any | Null = js.native
+  
+  /* standard es5 */
+  /* CompleteClass */
+  var message: String = js.native
+  
+  /* standard es5 */
+  /* CompleteClass */
+  var name: String = js.native
 }
-

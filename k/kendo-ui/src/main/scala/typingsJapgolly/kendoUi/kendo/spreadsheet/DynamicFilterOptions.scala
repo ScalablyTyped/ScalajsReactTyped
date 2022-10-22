@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DynamicFilterOptions extends js.Object {
+trait DynamicFilterOptions extends StObject {
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object DynamicFilterOptions {
-  @scala.inline
-  def apply(name: String = null): DynamicFilterOptions = {
+  
+  inline def apply(): DynamicFilterOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicFilterOptions]
   }
+  
+  extension [Self <: DynamicFilterOptions](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

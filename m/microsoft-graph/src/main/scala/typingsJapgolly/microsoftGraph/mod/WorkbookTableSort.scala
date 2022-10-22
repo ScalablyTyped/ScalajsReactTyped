@@ -1,35 +1,48 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookTableSort extends Entity {
+trait WorkbookTableSort
+  extends StObject
+     with Entity {
+  
   // Represents the current conditions used to last sort the table. Read-only.
-  var fields: js.UndefOr[js.Array[WorkbookSortField]] = js.undefined
+  var fields: js.UndefOr[NullableOption[js.Array[WorkbookSortField]]] = js.undefined
+  
   // Represents whether the casing impacted the last sort of the table. Read-only.
   var matchCase: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Represents Chinese character ordering method last used to sort the table. The possible values are: PinYin, StrokeCount.
     * Read-only.
     */
   var method: js.UndefOr[String] = js.undefined
 }
-
 object WorkbookTableSort {
-  @scala.inline
-  def apply(
-    fields: js.Array[WorkbookSortField] = null,
-    id: String = null,
-    matchCase: js.UndefOr[Boolean] = js.undefined,
-    method: String = null
-  ): WorkbookTableSort = {
+  
+  inline def apply(): WorkbookTableSort = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookTableSort]
   }
+  
+  extension [Self <: WorkbookTableSort](x: Self) {
+    
+    inline def setFields(value: NullableOption[js.Array[WorkbookSortField]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsNull: Self = StObject.set(x, "fields", null)
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: WorkbookSortField*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+    
+    inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+  }
 }
-

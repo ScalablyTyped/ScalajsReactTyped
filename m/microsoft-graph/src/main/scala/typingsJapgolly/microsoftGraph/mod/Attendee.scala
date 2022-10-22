@@ -1,22 +1,41 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Attendee extends AttendeeBase {
+trait Attendee
+  extends StObject
+     with AttendeeBase {
+  
+  /**
+    * An alternate date/time proposed by the attendee for a meeting request to start and end. If the attendee hasn't proposed
+    * another time, then this property is not included in a response of a GET event.
+    */
+  var proposedNewTime: js.UndefOr[NullableOption[TimeSlot]] = js.undefined
+  
   // The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.
-  var status: js.UndefOr[ResponseStatus] = js.undefined
+  var status: js.UndefOr[NullableOption[ResponseStatus]] = js.undefined
 }
-
 object Attendee {
-  @scala.inline
-  def apply(emailAddress: EmailAddress = null, status: ResponseStatus = null, `type`: AttendeeType = null): Attendee = {
+  
+  inline def apply(): Attendee = {
     val __obj = js.Dynamic.literal()
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attendee]
   }
+  
+  extension [Self <: Attendee](x: Self) {
+    
+    inline def setProposedNewTime(value: NullableOption[TimeSlot]): Self = StObject.set(x, "proposedNewTime", value.asInstanceOf[js.Any])
+    
+    inline def setProposedNewTimeNull: Self = StObject.set(x, "proposedNewTime", null)
+    
+    inline def setProposedNewTimeUndefined: Self = StObject.set(x, "proposedNewTime", js.undefined)
+    
+    inline def setStatus(value: NullableOption[ResponseStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+  }
 }
-

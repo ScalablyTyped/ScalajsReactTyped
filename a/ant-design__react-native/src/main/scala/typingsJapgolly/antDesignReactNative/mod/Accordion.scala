@@ -1,19 +1,19 @@
 package typingsJapgolly.antDesignReactNative.mod
 
-import typingsJapgolly.antDesignReactNative.accordionMod.AccordionHeader
-import typingsJapgolly.antDesignReactNative.accordionMod.default
+import typingsJapgolly.antDesignReactNative.libAccordionMod.AccordionHeader
+import typingsJapgolly.antDesignReactNative.libAccordionMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "Accordion")
 @js.native
-class Accordion[T /* <: AccordionHeader */] () extends default[T]
-
-/* static members */
-@JSImport("@ant-design/react-native", "Accordion")
-@js.native
-object Accordion extends js.Object {
-  var Panel: js.Any = js.native
+open class Accordion[T /* <: AccordionHeader */] () extends default[T]
+object Accordion {
+  
+  /* was `typeof AccordionPanel` */
+  @JSImport("@ant-design/react-native", "Accordion.Panel")
+  @js.native
+  open class Panel ()
+    extends typingsJapgolly.antDesignReactNative.libAccordionMod.default.Panel
 }
-

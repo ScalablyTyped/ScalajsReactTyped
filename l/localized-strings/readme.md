@@ -1,7 +1,7 @@
 
 # Scala.js typings for localized-strings
 
-Typings are for version 0.2.3
+Typings are for version 0.2.4
 
 ## Library description:
 Simple module to localize the strings of any JS based program using the same syntax used in the ReactLocalization and ReactNativeLocalization module, use 'npm run build' before publishing
@@ -10,10 +10,10 @@ Simple module to localize the strings of any JS based program using the same syn
 | ------------------ | :-------------: |
 | Full name          | localized-strings |
 | Keywords           | localization, internationalization, string localization, javascript, typescript, nativescript |
-| # releases         | 20 |
-| # dependents       | 5 |
-| # downloads        | 799888 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 283306.3333333333 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/stefalda/localized-strings#readme)

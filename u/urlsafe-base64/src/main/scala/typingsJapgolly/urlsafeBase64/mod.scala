@@ -1,16 +1,24 @@
 package typingsJapgolly.urlsafeBase64
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("urlsafe-base64", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  var version: String = js.native
-  def decode(base64: String): Buffer = js.native
-  def encode(buffer: Buffer): String = js.native
-  def validate(base64: String): Boolean = js.native
+object mod {
+  
+  @JSImport("urlsafe-base64", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def decode(base64: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  inline def encode(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def validate(base64: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(base64.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @JSImport("urlsafe-base64", "version")
+  @js.native
+  def version: String = js.native
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 }
-

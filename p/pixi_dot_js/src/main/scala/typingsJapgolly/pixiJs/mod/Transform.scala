@@ -1,31 +1,18 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Transform that takes care about its versions
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "Transform")
 @js.native
-class Transform ()
-  extends typingsJapgolly.pixiJs.PIXI.Transform
-
+open class Transform ()
+  extends typingsJapgolly.pixiMath.mod.Transform
 /* static members */
-@JSImport("pixi.js", "Transform")
-@js.native
-object Transform extends js.Object {
-  /**
-    * A default (identity) transform
-    *
-    * @static
-    * @constant
-    * @member {PIXI.Transform}
-    */
-  var IDENTITY: typingsJapgolly.pixiJs.PIXI.Transform = js.native
+object Transform {
+  
+  /** A default (identity) transform. */
+  @JSImport("pixi.js", "Transform.IDENTITY")
+  @js.native
+  val IDENTITY: typingsJapgolly.pixiMath.mod.Transform = js.native
 }
-

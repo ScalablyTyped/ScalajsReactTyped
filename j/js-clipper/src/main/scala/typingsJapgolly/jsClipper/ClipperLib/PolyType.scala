@@ -1,29 +1,22 @@
 package typingsJapgolly.jsClipper.ClipperLib
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PolyType extends js.Object
-
+sealed trait PolyType extends StObject
 @JSGlobal("ClipperLib.PolyType")
 @js.native
-object PolyType extends js.Object {
-  @js.native
-  sealed trait ptClip extends PolyType
+object PolyType extends StObject {
   
   @js.native
-  sealed trait ptSubject extends PolyType
+  sealed trait ptClip
+    extends StObject
+       with PolyType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PolyType with Double] = js.native
-  /* 1 */ @js.native
-  object ptClip extends TopLevel[ptClip with Double]
-  
-  /* 0 */ @js.native
-  object ptSubject extends TopLevel[ptSubject with Double]
-  
+  @js.native
+  sealed trait ptSubject
+    extends StObject
+       with PolyType
 }
-

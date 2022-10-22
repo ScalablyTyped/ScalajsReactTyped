@@ -1,31 +1,40 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`1`
-import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`2`
-import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`3`
-import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`4`
+import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`1`
+import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`2`
+import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`3`
+import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "DiagnosticSeverity")
-@js.native
-object DiagnosticSeverity extends js.Object {
+object DiagnosticSeverity {
+  
   /**
     * Reports an error.
     */
+  @JSImport("vscode-languageserver-protocol", "DiagnosticSeverity.Error")
+  @js.native
   val Error: `1` = js.native
+  
   /**
     * Reports a hint.
     */
+  @JSImport("vscode-languageserver-protocol", "DiagnosticSeverity.Hint")
+  @js.native
   val Hint: `4` = js.native
+  
   /**
     * Reports an information.
     */
+  @JSImport("vscode-languageserver-protocol", "DiagnosticSeverity.Information")
+  @js.native
   val Information: `3` = js.native
+  
   /**
     * Reports a warning.
     */
+  @JSImport("vscode-languageserver-protocol", "DiagnosticSeverity.Warning")
+  @js.native
   val Warning: `2` = js.native
 }
-

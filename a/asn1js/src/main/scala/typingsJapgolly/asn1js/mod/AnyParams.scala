@@ -1,21 +1,31 @@
 package typingsJapgolly.asn1js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnyParams extends js.Object {
+/* Inlined std.Partial<asn1js.asn1js.IAny> */
+trait AnyParams extends StObject {
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var optional: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object AnyParams {
-  @scala.inline
-  def apply(name: String = null, optional: js.UndefOr[scala.Boolean] = js.undefined): AnyParams = {
+  
+  inline def apply(): AnyParams = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyParams]
   }
+  
+  extension [Self <: AnyParams](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOptional(value: scala.Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+  }
 }
-

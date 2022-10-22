@@ -1,26 +1,35 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait backgroundColorBackgroundProperties extends BackgroundProperties {
+trait backgroundColorBackgroundProperties
+  extends StObject
+     with BackgroundProperties {
+  
   /**
-    * The color of the background. This can be autocast with an array of rgb(a) values, named string, hex string or an hsl(a) string, an object with `r`, `g`, `b`, and `a` properties, or a [Color](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html) object.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-background-ColorBackground.html#color)
+    * The color of the background.
     *
     * @default black
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-background-ColorBackground.html#color)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
-
 object backgroundColorBackgroundProperties {
-  @scala.inline
-  def apply(color: Color_ | js.Array[Double] | String = null): backgroundColorBackgroundProperties = {
+  
+  inline def apply(): backgroundColorBackgroundProperties = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[backgroundColorBackgroundProperties]
   }
+  
+  extension [Self <: backgroundColorBackgroundProperties](x: Self) {
+    
+    inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
+  }
 }
-

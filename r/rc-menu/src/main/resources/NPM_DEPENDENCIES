@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-menu" : "8.0.2"
+      "rc-menu" : "9.6.4"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-menu" : "8.0.2"
+      "rc-menu" : "9.6.4"
     }
   ],
   "compile-devDependencies" : [

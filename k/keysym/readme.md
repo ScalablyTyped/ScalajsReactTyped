@@ -10,15 +10,12 @@ Look up X11 keysyms, unicode positions, and names.
 | ------------------ | :-------------: |
 | Full name          | keysym |
 | Keywords           | x11, keysym, key, unicode |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 4606 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 142.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/node-keysym#readme)
-- [Bugs](https://github.com/substack/node-keysym/issues)
-- [Repository](https://github.com/substack/node-keysym)
 - [Npm](https://www.npmjs.com/package/keysym)
     
 

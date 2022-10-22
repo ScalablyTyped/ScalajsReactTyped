@@ -1,7 +1,7 @@
 
 # Scala.js typings for pulumi__cloud
 
-Typings are for version 0.18.2
+Typings are for version v0.30.1
 
 ## Library description:
 A highly productive, cloud neutral programming model.
@@ -10,15 +10,13 @@ A highly productive, cloud neutral programming model.
 | ------------------ | :-------------: |
 | Full name          | @pulumi/cloud |
 | Keywords           | pulumi, cloud |
-| # releases         | 290 |
-| # dependents       | 2 |
-| # downloads        | 31552 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 4773.666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://pulumi.io)
-- [Bugs](https://github.com/pulumi/pulumi-cloud/issues)
-- [Repository](https://github.com/pulumi/pulumi-cloud)
 - [Npm](https://www.npmjs.com/package/%40pulumi%2Fcloud)
     
 

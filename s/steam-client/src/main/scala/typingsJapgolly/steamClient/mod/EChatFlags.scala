@@ -1,41 +1,39 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EChatFlags extends js.Object
-
+sealed trait EChatFlags extends StObject
 @JSImport("steam-client", "EChatFlags")
 @js.native
-object EChatFlags extends js.Object {
-  @js.native
-  sealed trait InvisibleToFriends extends EChatFlags
-  
-  @js.native
-  sealed trait Locked extends EChatFlags
-  
-  @js.native
-  sealed trait Moderated extends EChatFlags
-  
-  @js.native
-  sealed trait Unjoinable extends EChatFlags
+object EChatFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EChatFlags with Double] = js.native
-  /* 2 */ @js.native
-  object InvisibleToFriends extends TopLevel[InvisibleToFriends with Double]
+  def apply(value: Double): js.UndefOr[EChatFlags & Double] = js.native
   
-  /* 1 */ @js.native
-  object Locked extends TopLevel[Locked with Double]
+  @js.native
+  sealed trait InvisibleToFriends
+    extends StObject
+       with EChatFlags
+  /* 2 */ val InvisibleToFriends: typingsJapgolly.steamClient.mod.EChatFlags.InvisibleToFriends & Double = js.native
   
-  /* 4 */ @js.native
-  object Moderated extends TopLevel[Moderated with Double]
+  @js.native
+  sealed trait Locked
+    extends StObject
+       with EChatFlags
+  /* 1 */ val Locked: typingsJapgolly.steamClient.mod.EChatFlags.Locked & Double = js.native
   
-  /* 8 */ @js.native
-  object Unjoinable extends TopLevel[Unjoinable with Double]
+  @js.native
+  sealed trait Moderated
+    extends StObject
+       with EChatFlags
+  /* 4 */ val Moderated: typingsJapgolly.steamClient.mod.EChatFlags.Moderated & Double = js.native
   
+  @js.native
+  sealed trait Unjoinable
+    extends StObject
+       with EChatFlags
+  /* 8 */ val Unjoinable: typingsJapgolly.steamClient.mod.EChatFlags.Unjoinable & Double = js.native
 }
-

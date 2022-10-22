@@ -1,11 +1,14 @@
 package typingsJapgolly.camljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISortable extends IFinalizable {
+trait ISortable
+  extends StObject
+     with IFinalizable {
+  
   /** Adds OrderBy clause to the query
     @param fieldInternalName Internal field of the first field by that the data will be sorted (ascending)
     @param override This is only necessary for large lists. DON'T use it unless you know what it is for!
@@ -14,6 +17,8 @@ trait ISortable extends IFinalizable {
   def OrderBy(fieldInternalName: String): ISortedQuery = js.native
   def OrderBy(fieldInternalName: String, `override`: Boolean): ISortedQuery = js.native
   def OrderBy(fieldInternalName: String, `override`: Boolean, useIndexForOrderBy: Boolean): ISortedQuery = js.native
+  def OrderBy(fieldInternalName: String, `override`: Unit, useIndexForOrderBy: Boolean): ISortedQuery = js.native
+  
   /** Adds OrderBy clause to the query (using descending order for the first field).
     @param fieldInternalName Internal field of the first field by that the data will be sorted (descending)
     @param override This is only necessary for large lists. DON'T use it unless you know what it is for!
@@ -22,5 +27,5 @@ trait ISortable extends IFinalizable {
   def OrderByDesc(fieldInternalName: String): ISortedQuery = js.native
   def OrderByDesc(fieldInternalName: String, `override`: Boolean): ISortedQuery = js.native
   def OrderByDesc(fieldInternalName: String, `override`: Boolean, useIndexForOrderBy: Boolean): ISortedQuery = js.native
+  def OrderByDesc(fieldInternalName: String, `override`: Unit, useIndexForOrderBy: Boolean): ISortedQuery = js.native
 }
-

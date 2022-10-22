@@ -1,16 +1,21 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "FirstWeekOfYear")
 @js.native
-object FirstWeekOfYear extends js.Object {
-  /* 0 */ val FirstDay: typingsJapgolly.officeUiFabricReact.dateValuesMod.FirstWeekOfYear.FirstDay with Double = js.native
-  /* 2 */ val FirstFourDayWeek: typingsJapgolly.officeUiFabricReact.dateValuesMod.FirstWeekOfYear.FirstFourDayWeek with Double = js.native
-  /* 1 */ val FirstFullWeek: typingsJapgolly.officeUiFabricReact.dateValuesMod.FirstWeekOfYear.FirstFullWeek with Double = js.native
+object FirstWeekOfYear extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.officeUiFabricReact.dateValuesMod.FirstWeekOfYear with Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.FirstWeekOfYear & Double
+  ] = js.native
+  
+  /* 0 */ val FirstDay: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.FirstWeekOfYear.FirstDay & Double = js.native
+  
+  /* 2 */ val FirstFourDayWeek: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.FirstWeekOfYear.FirstFourDayWeek & Double = js.native
+  
+  /* 1 */ val FirstFullWeek: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.FirstWeekOfYear.FirstFullWeek & Double = js.native
 }
-

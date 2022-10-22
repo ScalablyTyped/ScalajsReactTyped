@@ -1,8 +1,8 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 地图中的路线对象
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
-trait PlusMapsRoute extends js.Object {
+trait PlusMapsRoute extends StObject {
+  
   /**
     * 路线总距离
     * 路线从起始点到终点的距离，单位为米。
@@ -18,25 +19,29 @@ trait PlusMapsRoute extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var distance: js.UndefOr[Double] = js.undefined
+  
   /**
     * 路线终点地理坐标点
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var endPoint: js.UndefOr[PlusMapsPoint] = js.undefined
+  
   /**
     * 路线坐标点段数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var pointCount: js.UndefOr[PlusMapsPoint] = js.undefined
+  
   /**
     * 路线的地理坐标点数组
     * 路线的地理坐标点数组，数组中保存Point对象。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var pointList: js.UndefOr[js.Array[_]] = js.undefined
+  var pointList: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
     * 线路的提示信息
     * 线路提示信息，没有提示信息则返回空字符串。
@@ -44,6 +49,7 @@ trait PlusMapsRoute extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var routeTip: js.UndefOr[String] = js.undefined
+  
   /**
     * 路线起点地理坐标点
     * 
@@ -51,25 +57,39 @@ trait PlusMapsRoute extends js.Object {
     */
   var startPoint: js.UndefOr[PlusMapsPoint] = js.undefined
 }
-
 object PlusMapsRoute {
-  @scala.inline
-  def apply(
-    distance: Int | Double = null,
-    endPoint: PlusMapsPoint = null,
-    pointCount: PlusMapsPoint = null,
-    pointList: js.Array[_] = null,
-    routeTip: String = null,
-    startPoint: PlusMapsPoint = null
-  ): PlusMapsRoute = {
+  
+  inline def apply(): PlusMapsRoute = {
     val __obj = js.Dynamic.literal()
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (endPoint != null) __obj.updateDynamic("endPoint")(endPoint.asInstanceOf[js.Any])
-    if (pointCount != null) __obj.updateDynamic("pointCount")(pointCount.asInstanceOf[js.Any])
-    if (pointList != null) __obj.updateDynamic("pointList")(pointList.asInstanceOf[js.Any])
-    if (routeTip != null) __obj.updateDynamic("routeTip")(routeTip.asInstanceOf[js.Any])
-    if (startPoint != null) __obj.updateDynamic("startPoint")(startPoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMapsRoute]
   }
+  
+  extension [Self <: PlusMapsRoute](x: Self) {
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    
+    inline def setEndPoint(value: PlusMapsPoint): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
+    
+    inline def setEndPointUndefined: Self = StObject.set(x, "endPoint", js.undefined)
+    
+    inline def setPointCount(value: PlusMapsPoint): Self = StObject.set(x, "pointCount", value.asInstanceOf[js.Any])
+    
+    inline def setPointCountUndefined: Self = StObject.set(x, "pointCount", js.undefined)
+    
+    inline def setPointList(value: js.Array[Any]): Self = StObject.set(x, "pointList", value.asInstanceOf[js.Any])
+    
+    inline def setPointListUndefined: Self = StObject.set(x, "pointList", js.undefined)
+    
+    inline def setPointListVarargs(value: Any*): Self = StObject.set(x, "pointList", js.Array(value*))
+    
+    inline def setRouteTip(value: String): Self = StObject.set(x, "routeTip", value.asInstanceOf[js.Any])
+    
+    inline def setRouteTipUndefined: Self = StObject.set(x, "routeTip", js.undefined)
+    
+    inline def setStartPoint(value: PlusMapsPoint): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
+    
+    inline def setStartPointUndefined: Self = StObject.set(x, "startPoint", js.undefined)
+  }
 }
-

@@ -1,18 +1,20 @@
 package typingsJapgolly.angularForms.mod
 
-import typingsJapgolly.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "Validators")
 @js.native
-class Validators () extends js.Object
-
+open class Validators () extends StObject
 /* static members */
-@JSImport("@angular/forms", "Validators")
-@js.native
-object Validators extends js.Object {
+object Validators {
+  
+  @JSImport("@angular/forms", "Validators")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def compose(validators: js.Array[js.UndefOr[ValidatorFn | Null]]): ValidatorFn | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(validators.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn | Null]
   /**
     * @description
     * Compose multiple validators into a single function that returns the union
@@ -24,8 +26,8 @@ object Validators extends js.Object {
     * @see `updateValueAndValidity()`
     *
     */
-  def compose(): Null = js.native
-  def compose(validators: js.Array[js.UndefOr[ValidatorFn | Null]]): ValidatorFn | Null = js.native
+  inline def compose(validators: Null): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(validators.asInstanceOf[js.Any]).asInstanceOf[Null]
+  
   /**
     * @description
     * Compose multiple async validators into a single function that returns the union
@@ -37,16 +39,19 @@ object Validators extends js.Object {
     * @see `updateValueAndValidity()`
     *
     */
-  def composeAsync(validators: js.Array[AsyncValidatorFn | Null]): AsyncValidatorFn | Null = js.native
+  inline def composeAsync(validators: js.Array[AsyncValidatorFn | Null]): AsyncValidatorFn | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("composeAsync")(validators.asInstanceOf[js.Any]).asInstanceOf[AsyncValidatorFn | Null]
+  
   /**
     * @description
     * Validator that requires the control's value pass an email validation test.
     *
-    * Tests the value using a [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-    * pattern suitable for common usecases. The pattern is based on the definition of a valid email
-    * address in the [WHATWG HTML specification](https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address)
-    * with some enhancements to incorporate more RFC rules (such as rules related to domain names and
-    * the lengths of different parts of the address).
+    * Tests the value using a [regular
+    * expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+    * pattern suitable for common use cases. The pattern is based on the definition of a valid email
+    * address in the [WHATWG HTML
+    * specification](https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address) with
+    * some enhancements to incorporate more RFC rules (such as rules related to domain names and the
+    * lengths of different parts of the address).
     *
     * The differences from the WHATWG version include:
     * - Disallow `local-part` (the part before the `@` symbol) to begin or end with a period (`.`).
@@ -72,11 +77,11 @@ object Validators extends js.Object {
     * @see `updateValueAndValidity()`
     *
     */
-  def email(control: AbstractControl): ValidationErrors | Null = js.native
+  inline def email(control: AbstractControl[Any, Any]): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("email")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
+  
   /**
     * @description
     * Validator that requires the control's value to be less than or equal to the provided number.
-    * The validator exists only as a function and not as a directive.
     *
     * @usageNotes
     *
@@ -94,12 +99,14 @@ object Validators extends js.Object {
     * @see `updateValueAndValidity()`
     *
     */
-  def max(max: Double): ValidatorFn = js.native
+  inline def max(max: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(max.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  
   /**
     * @description
     * Validator that requires the length of the control's value to be less than or equal
     * to the provided maximum length. This validator is also provided by default if you use the
-    * the HTML5 `maxlength` attribute.
+    * the HTML5 `maxlength` attribute. Note that the `maxLength` validator is intended to be used
+    * only for types that have a numeric `length` property, such as strings or arrays.
     *
     * @usageNotes
     *
@@ -121,11 +128,11 @@ object Validators extends js.Object {
     * @see `updateValueAndValidity()`
     *
     */
-  def maxLength(maxLength: Double): ValidatorFn = js.native
+  inline def maxLength(maxLength: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(maxLength.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  
   /**
     * @description
     * Validator that requires the control's value to be greater than or equal to the provided number.
-    * The validator exists only as a function and not as a directive.
     *
     * @usageNotes
     *
@@ -143,12 +150,17 @@ object Validators extends js.Object {
     * @see `updateValueAndValidity()`
     *
     */
-  def min(min: Double): ValidatorFn = js.native
+  inline def min(min: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(min.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  
   /**
     * @description
     * Validator that requires the length of the control's value to be greater than or equal
     * to the provided minimum length. This validator is also provided by default if you use the
-    * the HTML5 `minlength` attribute.
+    * the HTML5 `minlength` attribute. Note that the `minLength` validator is intended to be used
+    * only for types that have a numeric `length` property, such as strings or arrays. The
+    * `minLength` validator logic is also not invoked for values when their `length` property is 0
+    * (for example in case of an empty string or an empty array), to support optional controls. You
+    * can use the standard `required` validator if empty values should not be considered valid.
     *
     * @usageNotes
     *
@@ -165,12 +177,13 @@ object Validators extends js.Object {
     * ```
     *
     * @returns A validator function that returns an error map with the
-    * `minlength` if the validation check fails, otherwise `null`.
+    * `minlength` property if the validation check fails, otherwise `null`.
     *
     * @see `updateValueAndValidity()`
     *
     */
-  def minLength(minLength: Double): ValidatorFn = js.native
+  inline def minLength(minLength: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("minLength")(minLength.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  
   /**
     * @description
     * Validator that performs no operation.
@@ -178,7 +191,8 @@ object Validators extends js.Object {
     * @see `updateValueAndValidity()`
     *
     */
-  def nullValidator(control: AbstractControl): ValidationErrors | Null = js.native
+  inline def nullValidator(control: AbstractControl[Any, Any]): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("nullValidator")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
+  
   /**
     * @description
     * Validator that requires the control's value to match a regex pattern. This validator is also
@@ -198,6 +212,25 @@ object Validators extends js.Object {
     * <input pattern="[a-zA-Z ]*">
     * ```
     *
+    * ### Pattern matching with the global or sticky flag
+    *
+    * `RegExp` objects created with the `g` or `y` flags that are passed into `Validators.pattern`
+    * can produce different results on the same input when validations are run consecutively. This is
+    * due to how the behavior of `RegExp.prototype.test` is
+    * specified in [ECMA-262](https://tc39.es/ecma262/#sec-regexpbuiltinexec)
+    * (`RegExp` preserves the index of the last match when the global or sticky flag is used).
+    * Due to this behavior, it is recommended that when using
+    * `Validators.pattern` you **do not** pass in a `RegExp` object with either the global or sticky
+    * flag enabled.
+    *
+    * ```typescript
+    * // Not recommended (since the `g` flag is used)
+    * const controlOne = new FormControl('1', Validators.pattern(/foo/g));
+    *
+    * // Good
+    * const controlTwo = new FormControl('1', Validators.pattern(/foo/));
+    * ```
+    *
     * @param pattern A regular expression to be used as is to test the values, or a string.
     * If a string is passed, the `^` character is prepended and the `$` character is
     * appended to the provided string (if not already present), and the resulting regular
@@ -209,8 +242,9 @@ object Validators extends js.Object {
     * @see `updateValueAndValidity()`
     *
     */
-  def pattern(pattern: String): ValidatorFn = js.native
-  def pattern(pattern: RegExp): ValidatorFn = js.native
+  inline def pattern(pattern: String): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  inline def pattern(pattern: js.RegExp): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  
   /**
     * @description
     * Validator that requires the control have a non-empty value.
@@ -231,7 +265,8 @@ object Validators extends js.Object {
     * @see `updateValueAndValidity()`
     *
     */
-  def required(control: AbstractControl): ValidationErrors | Null = js.native
+  inline def required(control: AbstractControl[Any, Any]): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("required")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
+  
   /**
     * @description
     * Validator that requires the control's value be true. This validator is commonly
@@ -242,7 +277,7 @@ object Validators extends js.Object {
     * ### Validate that the field value is true
     *
     * ```typescript
-    * const control = new FormControl('', Validators.requiredTrue);
+    * const control = new FormControl('some value', Validators.requiredTrue);
     *
     * console.log(control.errors); // {required: true}
     * ```
@@ -253,6 +288,5 @@ object Validators extends js.Object {
     * @see `updateValueAndValidity()`
     *
     */
-  def requiredTrue(control: AbstractControl): ValidationErrors | Null = js.native
+  inline def requiredTrue(control: AbstractControl[Any, Any]): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredTrue")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
 }
-

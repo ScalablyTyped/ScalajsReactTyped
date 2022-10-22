@@ -1,19 +1,29 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.CodeLensParams
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.CodeLensRegistrationOptions
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.CodeLensParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.CodeLensRegistrationOptions
+import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashcodeLens
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "CodeLensRequest")
-@js.native
-object CodeLensRequest extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.RequestType[
+object CodeLensRequest {
+  
+  @JSImport("vscode-languageserver-protocol", "CodeLensRequest.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "CodeLensRequest.method")
+  @js.native
+  val method: textDocumentSlashcodeLens = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "CodeLensRequest.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     CodeLensParams, 
     js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.CodeLens] | Null, 
+    js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.CodeLens], 
     Unit, 
     CodeLensRegistrationOptions
   ] = js.native
 }
-

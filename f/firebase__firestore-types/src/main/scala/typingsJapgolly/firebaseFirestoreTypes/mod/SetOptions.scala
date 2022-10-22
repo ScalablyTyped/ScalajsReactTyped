@@ -1,21 +1,32 @@
 package typingsJapgolly.firebaseFirestoreTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SetOptions extends js.Object {
+trait SetOptions extends StObject {
+  
   val merge: js.UndefOr[Boolean] = js.undefined
+  
   val mergeFields: js.UndefOr[js.Array[String | FieldPath]] = js.undefined
 }
-
 object SetOptions {
-  @scala.inline
-  def apply(merge: js.UndefOr[Boolean] = js.undefined, mergeFields: js.Array[String | FieldPath] = null): SetOptions = {
+  
+  inline def apply(): SetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
-    if (mergeFields != null) __obj.updateDynamic("mergeFields")(mergeFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions]
   }
+  
+  extension [Self <: SetOptions](x: Self) {
+    
+    inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    
+    inline def setMergeFields(value: js.Array[String | FieldPath]): Self = StObject.set(x, "mergeFields", value.asInstanceOf[js.Any])
+    
+    inline def setMergeFieldsUndefined: Self = StObject.set(x, "mergeFields", js.undefined)
+    
+    inline def setMergeFieldsVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "mergeFields", js.Array(value*))
+    
+    inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+  }
 }
-

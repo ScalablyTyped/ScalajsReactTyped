@@ -1,43 +1,27 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BubbleDatasetConfig
-  extends CommonDatasetConfig
+  extends StObject
+     with CommonDatasetConfig
      with BarLineScatterCandleBubbleConfig {
+  
   var highlightCircleWidth: js.UndefOr[Double] = js.undefined
 }
-
 object BubbleDatasetConfig {
-  @scala.inline
-  def apply(
-    axisDependency: AxisDependency = null,
-    color: Int | Double = null,
-    colors: js.Array[Color] = null,
-    drawValues: js.UndefOr[Boolean] = js.undefined,
-    highlightCircleWidth: Int | Double = null,
-    highlightColor: Int | Double = null,
-    highlightEnabled: js.UndefOr[Boolean] = js.undefined,
-    valueFormatter: ValueFormatter = null,
-    valueTextColor: Int | Double = null,
-    valueTextSize: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): BubbleDatasetConfig = {
+  
+  inline def apply(): BubbleDatasetConfig = {
     val __obj = js.Dynamic.literal()
-    if (axisDependency != null) __obj.updateDynamic("axisDependency")(axisDependency.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawValues)) __obj.updateDynamic("drawValues")(drawValues.asInstanceOf[js.Any])
-    if (highlightCircleWidth != null) __obj.updateDynamic("highlightCircleWidth")(highlightCircleWidth.asInstanceOf[js.Any])
-    if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightEnabled)) __obj.updateDynamic("highlightEnabled")(highlightEnabled.asInstanceOf[js.Any])
-    if (valueFormatter != null) __obj.updateDynamic("valueFormatter")(valueFormatter.asInstanceOf[js.Any])
-    if (valueTextColor != null) __obj.updateDynamic("valueTextColor")(valueTextColor.asInstanceOf[js.Any])
-    if (valueTextSize != null) __obj.updateDynamic("valueTextSize")(valueTextSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[BubbleDatasetConfig]
   }
+  
+  extension [Self <: BubbleDatasetConfig](x: Self) {
+    
+    inline def setHighlightCircleWidth(value: Double): Self = StObject.set(x, "highlightCircleWidth", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightCircleWidthUndefined: Self = StObject.set(x, "highlightCircleWidth", js.undefined)
+  }
 }
-

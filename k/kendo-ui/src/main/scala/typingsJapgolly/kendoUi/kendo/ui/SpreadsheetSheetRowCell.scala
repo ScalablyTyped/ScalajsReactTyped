@@ -1,84 +1,150 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpreadsheetSheetRowCell extends js.Object {
+trait SpreadsheetSheetRowCell extends StObject {
+  
   var background: js.UndefOr[String] = js.undefined
+  
   var bold: js.UndefOr[Boolean] = js.undefined
+  
   var borderBottom: js.UndefOr[SpreadsheetSheetRowCellBorderBottom] = js.undefined
+  
   var borderLeft: js.UndefOr[SpreadsheetSheetRowCellBorderLeft] = js.undefined
+  
   var borderRight: js.UndefOr[SpreadsheetSheetRowCellBorderRight] = js.undefined
+  
   var borderTop: js.UndefOr[SpreadsheetSheetRowCellBorderTop] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var comment: js.UndefOr[String] = js.undefined
+  
   var enable: js.UndefOr[Boolean] = js.undefined
+  
   var fontFamily: js.UndefOr[String] = js.undefined
+  
   var fontSize: js.UndefOr[Double] = js.undefined
+  
   var format: js.UndefOr[String] = js.undefined
+  
   var formula: js.UndefOr[String] = js.undefined
+  
   var index: js.UndefOr[Double] = js.undefined
+  
   var italic: js.UndefOr[Boolean] = js.undefined
+  
   var link: js.UndefOr[String] = js.undefined
+  
   var textAlign: js.UndefOr[String] = js.undefined
+  
   var underline: js.UndefOr[Boolean] = js.undefined
+  
   var validation: js.UndefOr[SpreadsheetSheetRowCellValidation] = js.undefined
+  
   var value: js.UndefOr[Double | String | Boolean | js.Date] = js.undefined
+  
   var verticalAlign: js.UndefOr[String] = js.undefined
+  
   var wrap: js.UndefOr[Boolean] = js.undefined
 }
-
 object SpreadsheetSheetRowCell {
-  @scala.inline
-  def apply(
-    background: String = null,
-    bold: js.UndefOr[Boolean] = js.undefined,
-    borderBottom: SpreadsheetSheetRowCellBorderBottom = null,
-    borderLeft: SpreadsheetSheetRowCellBorderLeft = null,
-    borderRight: SpreadsheetSheetRowCellBorderRight = null,
-    borderTop: SpreadsheetSheetRowCellBorderTop = null,
-    color: String = null,
-    comment: String = null,
-    enable: js.UndefOr[Boolean] = js.undefined,
-    fontFamily: String = null,
-    fontSize: Int | Double = null,
-    format: String = null,
-    formula: String = null,
-    index: Int | Double = null,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    link: String = null,
-    textAlign: String = null,
-    underline: js.UndefOr[Boolean] = js.undefined,
-    validation: SpreadsheetSheetRowCellValidation = null,
-    value: Double | String | Boolean | js.Date = null,
-    verticalAlign: String = null,
-    wrap: js.UndefOr[Boolean] = js.undefined
-  ): SpreadsheetSheetRowCell = {
+  
+  inline def apply(): SpreadsheetSheetRowCell = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
-    if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
-    if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
-    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
-    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetSheetRowCell]
   }
+  
+  extension [Self <: SpreadsheetSheetRowCell](x: Self) {
+    
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    
+    inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+    
+    inline def setBorderBottom(value: SpreadsheetSheetRowCellBorderBottom): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+    
+    inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+    
+    inline def setBorderLeft(value: SpreadsheetSheetRowCellBorderLeft): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+    
+    inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
+    
+    inline def setBorderRight(value: SpreadsheetSheetRowCellBorderRight): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
+    
+    inline def setBorderTop(value: SpreadsheetSheetRowCellBorderTop): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+    
+    inline def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    
+    inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+    
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    
+    inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    
+    inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+    
+    inline def setValidation(value: SpreadsheetSheetRowCellValidation): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+    
+    inline def setValue(value: Double | String | Boolean | js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    
+    inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+    
+    inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+  }
 }
-

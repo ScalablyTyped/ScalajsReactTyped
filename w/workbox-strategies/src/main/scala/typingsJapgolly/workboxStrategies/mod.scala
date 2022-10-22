@@ -5,42 +5,44 @@ import typingsJapgolly.workboxStrategies.cacheOnlyMod.CacheOnlyOptions
 import typingsJapgolly.workboxStrategies.networkFirstMod.NetworkFirstOptions
 import typingsJapgolly.workboxStrategies.networkOnlyMod.NetworkOnlyOptions
 import typingsJapgolly.workboxStrategies.staleWhileRevalidateMod.StaleWhileRevalidateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-strategies", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("workbox-strategies", "CacheFirst")
   @js.native
-  class CacheFirst ()
+  open class CacheFirst ()
     extends typingsJapgolly.workboxStrategies.cacheFirstMod.CacheFirst {
     def this(options: CacheFirstOptions) = this()
   }
   
+  @JSImport("workbox-strategies", "CacheOnly")
   @js.native
-  class CacheOnly ()
+  open class CacheOnly ()
     extends typingsJapgolly.workboxStrategies.cacheOnlyMod.CacheOnly {
     def this(options: CacheOnlyOptions) = this()
   }
   
+  @JSImport("workbox-strategies", "NetworkFirst")
   @js.native
-  class NetworkFirst ()
+  open class NetworkFirst ()
     extends typingsJapgolly.workboxStrategies.networkFirstMod.NetworkFirst {
     def this(options: NetworkFirstOptions) = this()
   }
   
+  @JSImport("workbox-strategies", "NetworkOnly")
   @js.native
-  class NetworkOnly ()
+  open class NetworkOnly ()
     extends typingsJapgolly.workboxStrategies.networkOnlyMod.NetworkOnly {
     def this(options: NetworkOnlyOptions) = this()
   }
   
+  @JSImport("workbox-strategies", "StaleWhileRevalidate")
   @js.native
-  class StaleWhileRevalidate ()
+  open class StaleWhileRevalidate ()
     extends typingsJapgolly.workboxStrategies.staleWhileRevalidateMod.StaleWhileRevalidate {
     def this(options: StaleWhileRevalidateOptions) = this()
   }
-  
 }
-

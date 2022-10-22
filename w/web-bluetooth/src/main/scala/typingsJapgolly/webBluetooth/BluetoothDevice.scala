@@ -1,47 +1,54 @@
 package typingsJapgolly.webBluetooth
 
+import org.scalajs.dom.Event
 import typingsJapgolly.std.EventTarget
-import typingsJapgolly.std.Event_
 import typingsJapgolly.webBluetooth.webBluetoothStrings.advertisementreceived
 import typingsJapgolly.webBluetooth.webBluetoothStrings.gattserverdisconnected
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BluetoothDevice
-  extends EventTarget
+  extends StObject
+     with EventTarget
      with BluetoothDeviceEventHandlers
      with CharacteristicEventHandlers
      with ServiceEventHandlers {
+  
+  @JSName("addEventListener")
+  def addEventListener_advertisementreceived(
+    `type`: advertisementreceived,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BluetoothAdvertisingEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_advertisementreceived(
+    `type`: advertisementreceived,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ BluetoothAdvertisingEvent, Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_gattserverdisconnected(
+    `type`: gattserverdisconnected,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_gattserverdisconnected(
+    `type`: gattserverdisconnected,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  
+  def forget(): js.Promise[Unit] = js.native
+  
   val gatt: js.UndefOr[BluetoothRemoteGATTServer] = js.native
+  
   val id: String = js.native
+  
   val name: js.UndefOr[String] = js.native
-  val uuids: js.UndefOr[js.Array[String]] = js.native
-  val watchingAdvertisements: Boolean = js.native
-  @JSName("addEventListener")
-  def addEventListener_advertisementreceived(
-    `type`: advertisementreceived,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_advertisementreceived(
-    `type`: advertisementreceived,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_gattserverdisconnected(
-    `type`: gattserverdisconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_gattserverdisconnected(
-    `type`: gattserverdisconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    useCapture: Boolean
-  ): Unit = js.native
-  def unwatchAdvertisements(): Unit = js.native
+  
   def watchAdvertisements(): js.Promise[Unit] = js.native
+  def watchAdvertisements(options: WatchAdvertisementsOptions): js.Promise[Unit] = js.native
+  
+  val watchingAdvertisements: Boolean = js.native
 }
-

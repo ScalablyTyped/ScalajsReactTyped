@@ -1,8 +1,8 @@
 package typingsJapgolly.webix.webix.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.webix.webixStrings.onAfterAdd
@@ -101,200 +101,196 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.webix.webixStrings.onViewResize
   - typingsJapgolly.webix.webixStrings.onViewShow
 */
-trait treetableEventName extends js.Object
-
+trait treetableEventName extends StObject
 object treetableEventName {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onAfterAdd: typingsJapgolly.webix.webixStrings.onAfterAdd = this.cast("onAfterAdd")
-  @scala.inline
-  def onAfterAreaAdd: typingsJapgolly.webix.webixStrings.onAfterAreaAdd = this.cast("onAfterAreaAdd")
-  @scala.inline
-  def onAfterAreaRemove: typingsJapgolly.webix.webixStrings.onAfterAreaRemove = this.cast("onAfterAreaRemove")
-  @scala.inline
-  def onAfterBlockSelect: typingsJapgolly.webix.webixStrings.onAfterBlockSelect = this.cast("onAfterBlockSelect")
-  @scala.inline
-  def onAfterClose: typingsJapgolly.webix.webixStrings.onAfterClose = this.cast("onAfterClose")
-  @scala.inline
-  def onAfterColumnDrop: typingsJapgolly.webix.webixStrings.onAfterColumnDrop = this.cast("onAfterColumnDrop")
-  @scala.inline
-  def onAfterColumnDropOrder: typingsJapgolly.webix.webixStrings.onAfterColumnDropOrder = this.cast("onAfterColumnDropOrder")
-  @scala.inline
-  def onAfterColumnHide: typingsJapgolly.webix.webixStrings.onAfterColumnHide = this.cast("onAfterColumnHide")
-  @scala.inline
-  def onAfterColumnShow: typingsJapgolly.webix.webixStrings.onAfterColumnShow = this.cast("onAfterColumnShow")
-  @scala.inline
-  def onAfterContextMenu: typingsJapgolly.webix.webixStrings.onAfterContextMenu = this.cast("onAfterContextMenu")
-  @scala.inline
-  def onAfterDelete: typingsJapgolly.webix.webixStrings.onAfterDelete = this.cast("onAfterDelete")
-  @scala.inline
-  def onAfterDrop: typingsJapgolly.webix.webixStrings.onAfterDrop = this.cast("onAfterDrop")
-  @scala.inline
-  def onAfterEditStart: typingsJapgolly.webix.webixStrings.onAfterEditStart = this.cast("onAfterEditStart")
-  @scala.inline
-  def onAfterEditStop: typingsJapgolly.webix.webixStrings.onAfterEditStop = this.cast("onAfterEditStop")
-  @scala.inline
-  def onAfterFilter: typingsJapgolly.webix.webixStrings.onAfterFilter = this.cast("onAfterFilter")
-  @scala.inline
-  def onAfterLoad: typingsJapgolly.webix.webixStrings.onAfterLoad = this.cast("onAfterLoad")
-  @scala.inline
-  def onAfterOpen: typingsJapgolly.webix.webixStrings.onAfterOpen = this.cast("onAfterOpen")
-  @scala.inline
-  def onAfterRender: typingsJapgolly.webix.webixStrings.onAfterRender = this.cast("onAfterRender")
-  @scala.inline
-  def onAfterScroll: typingsJapgolly.webix.webixStrings.onAfterScroll = this.cast("onAfterScroll")
-  @scala.inline
-  def onAfterSelect: typingsJapgolly.webix.webixStrings.onAfterSelect = this.cast("onAfterSelect")
-  @scala.inline
-  def onAfterSort: typingsJapgolly.webix.webixStrings.onAfterSort = this.cast("onAfterSort")
-  @scala.inline
-  def onAfterUnSelect: typingsJapgolly.webix.webixStrings.onAfterUnSelect = this.cast("onAfterUnSelect")
-  @scala.inline
-  def onAreaDrag: typingsJapgolly.webix.webixStrings.onAreaDrag = this.cast("onAreaDrag")
-  @scala.inline
-  def onBeforeAdd: typingsJapgolly.webix.webixStrings.onBeforeAdd = this.cast("onBeforeAdd")
-  @scala.inline
-  def onBeforeAreaAdd: typingsJapgolly.webix.webixStrings.onBeforeAreaAdd = this.cast("onBeforeAreaAdd")
-  @scala.inline
-  def onBeforeAreaRemove: typingsJapgolly.webix.webixStrings.onBeforeAreaRemove = this.cast("onBeforeAreaRemove")
-  @scala.inline
-  def onBeforeBlockSelect: typingsJapgolly.webix.webixStrings.onBeforeBlockSelect = this.cast("onBeforeBlockSelect")
-  @scala.inline
-  def onBeforeClose: typingsJapgolly.webix.webixStrings.onBeforeClose = this.cast("onBeforeClose")
-  @scala.inline
-  def onBeforeColumnDrag: typingsJapgolly.webix.webixStrings.onBeforeColumnDrag = this.cast("onBeforeColumnDrag")
-  @scala.inline
-  def onBeforeColumnDrop: typingsJapgolly.webix.webixStrings.onBeforeColumnDrop = this.cast("onBeforeColumnDrop")
-  @scala.inline
-  def onBeforeColumnDropOrder: typingsJapgolly.webix.webixStrings.onBeforeColumnDropOrder = this.cast("onBeforeColumnDropOrder")
-  @scala.inline
-  def onBeforeColumnHide: typingsJapgolly.webix.webixStrings.onBeforeColumnHide = this.cast("onBeforeColumnHide")
-  @scala.inline
-  def onBeforeColumnShow: typingsJapgolly.webix.webixStrings.onBeforeColumnShow = this.cast("onBeforeColumnShow")
-  @scala.inline
-  def onBeforeContextMenu: typingsJapgolly.webix.webixStrings.onBeforeContextMenu = this.cast("onBeforeContextMenu")
-  @scala.inline
-  def onBeforeDelete: typingsJapgolly.webix.webixStrings.onBeforeDelete = this.cast("onBeforeDelete")
-  @scala.inline
-  def onBeforeDrag: typingsJapgolly.webix.webixStrings.onBeforeDrag = this.cast("onBeforeDrag")
-  @scala.inline
-  def onBeforeDragIn: typingsJapgolly.webix.webixStrings.onBeforeDragIn = this.cast("onBeforeDragIn")
-  @scala.inline
-  def onBeforeDrop: typingsJapgolly.webix.webixStrings.onBeforeDrop = this.cast("onBeforeDrop")
-  @scala.inline
-  def onBeforeDropOut: typingsJapgolly.webix.webixStrings.onBeforeDropOut = this.cast("onBeforeDropOut")
-  @scala.inline
-  def onBeforeEditStart: typingsJapgolly.webix.webixStrings.onBeforeEditStart = this.cast("onBeforeEditStart")
-  @scala.inline
-  def onBeforeEditStop: typingsJapgolly.webix.webixStrings.onBeforeEditStop = this.cast("onBeforeEditStop")
-  @scala.inline
-  def onBeforeFilter: typingsJapgolly.webix.webixStrings.onBeforeFilter = this.cast("onBeforeFilter")
-  @scala.inline
-  def onBeforeLoad: typingsJapgolly.webix.webixStrings.onBeforeLoad = this.cast("onBeforeLoad")
-  @scala.inline
-  def onBeforeOpen: typingsJapgolly.webix.webixStrings.onBeforeOpen = this.cast("onBeforeOpen")
-  @scala.inline
-  def onBeforeRender: typingsJapgolly.webix.webixStrings.onBeforeRender = this.cast("onBeforeRender")
-  @scala.inline
-  def onBeforeSelect: typingsJapgolly.webix.webixStrings.onBeforeSelect = this.cast("onBeforeSelect")
-  @scala.inline
-  def onBeforeSort: typingsJapgolly.webix.webixStrings.onBeforeSort = this.cast("onBeforeSort")
-  @scala.inline
-  def onBeforeUnSelect: typingsJapgolly.webix.webixStrings.onBeforeUnSelect = this.cast("onBeforeUnSelect")
-  @scala.inline
-  def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
-  @scala.inline
-  def onBlur: typingsJapgolly.webix.webixStrings.onBlur = this.cast("onBlur")
-  @scala.inline
-  def onCheck: typingsJapgolly.webix.webixStrings.onCheck = this.cast("onCheck")
-  @scala.inline
-  def onCollectValues: typingsJapgolly.webix.webixStrings.onCollectValues = this.cast("onCollectValues")
-  @scala.inline
-  def onColumnGroupCollapse: typingsJapgolly.webix.webixStrings.onColumnGroupCollapse = this.cast("onColumnGroupCollapse")
-  @scala.inline
-  def onColumnResize: typingsJapgolly.webix.webixStrings.onColumnResize = this.cast("onColumnResize")
-  @scala.inline
-  def onDataRequest: typingsJapgolly.webix.webixStrings.onDataRequest = this.cast("onDataRequest")
-  @scala.inline
-  def onDataUpdate: typingsJapgolly.webix.webixStrings.onDataUpdate = this.cast("onDataUpdate")
-  @scala.inline
-  def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = this.cast("onDestruct")
-  @scala.inline
-  def onDragOut: typingsJapgolly.webix.webixStrings.onDragOut = this.cast("onDragOut")
-  @scala.inline
-  def onEditorChange: typingsJapgolly.webix.webixStrings.onEditorChange = this.cast("onEditorChange")
-  @scala.inline
-  def onEnter: typingsJapgolly.webix.webixStrings.onEnter = this.cast("onEnter")
-  @scala.inline
-  def onFocus: typingsJapgolly.webix.webixStrings.onFocus = this.cast("onFocus")
-  @scala.inline
-  def onHeaderClick: typingsJapgolly.webix.webixStrings.onHeaderClick = this.cast("onHeaderClick")
-  @scala.inline
-  def onItemCheck: typingsJapgolly.webix.webixStrings.onItemCheck = this.cast("onItemCheck")
-  @scala.inline
-  def onItemClick: typingsJapgolly.webix.webixStrings.onItemClick = this.cast("onItemClick")
-  @scala.inline
-  def onItemDblClick: typingsJapgolly.webix.webixStrings.onItemDblClick = this.cast("onItemDblClick")
-  @scala.inline
-  def onKeyPress: typingsJapgolly.webix.webixStrings.onKeyPress = this.cast("onKeyPress")
-  @scala.inline
-  def onLiveEdit: typingsJapgolly.webix.webixStrings.onLiveEdit = this.cast("onLiveEdit")
-  @scala.inline
-  def onLoadError: typingsJapgolly.webix.webixStrings.onLoadError = this.cast("onLoadError")
-  @scala.inline
-  def onLongTouch: typingsJapgolly.webix.webixStrings.onLongTouch = this.cast("onLongTouch")
-  @scala.inline
-  def onMouseMove: typingsJapgolly.webix.webixStrings.onMouseMove = this.cast("onMouseMove")
-  @scala.inline
-  def onMouseMoving: typingsJapgolly.webix.webixStrings.onMouseMoving = this.cast("onMouseMoving")
-  @scala.inline
-  def onMouseOut: typingsJapgolly.webix.webixStrings.onMouseOut = this.cast("onMouseOut")
-  @scala.inline
-  def onPaste: typingsJapgolly.webix.webixStrings.onPaste = this.cast("onPaste")
-  @scala.inline
-  def onResize: typingsJapgolly.webix.webixStrings.onResize = this.cast("onResize")
-  @scala.inline
-  def onRowResize: typingsJapgolly.webix.webixStrings.onRowResize = this.cast("onRowResize")
-  @scala.inline
-  def onScrollX: typingsJapgolly.webix.webixStrings.onScrollX = this.cast("onScrollX")
-  @scala.inline
-  def onScrollY: typingsJapgolly.webix.webixStrings.onScrollY = this.cast("onScrollY")
-  @scala.inline
-  def onSelectChange: typingsJapgolly.webix.webixStrings.onSelectChange = this.cast("onSelectChange")
-  @scala.inline
-  def onStructureLoad: typingsJapgolly.webix.webixStrings.onStructureLoad = this.cast("onStructureLoad")
-  @scala.inline
-  def onStructureUpdate: typingsJapgolly.webix.webixStrings.onStructureUpdate = this.cast("onStructureUpdate")
-  @scala.inline
-  def onSubViewClose: typingsJapgolly.webix.webixStrings.onSubViewClose = this.cast("onSubViewClose")
-  @scala.inline
-  def onSubViewCreate: typingsJapgolly.webix.webixStrings.onSubViewCreate = this.cast("onSubViewCreate")
-  @scala.inline
-  def onSubViewOpen: typingsJapgolly.webix.webixStrings.onSubViewOpen = this.cast("onSubViewOpen")
-  @scala.inline
-  def onSubViewRender: typingsJapgolly.webix.webixStrings.onSubViewRender = this.cast("onSubViewRender")
-  @scala.inline
-  def onSwipeX: typingsJapgolly.webix.webixStrings.onSwipeX = this.cast("onSwipeX")
-  @scala.inline
-  def onSwipeY: typingsJapgolly.webix.webixStrings.onSwipeY = this.cast("onSwipeY")
-  @scala.inline
-  def onTabFocus: typingsJapgolly.webix.webixStrings.onTabFocus = this.cast("onTabFocus")
-  @scala.inline
-  def onTimedKeyPress: typingsJapgolly.webix.webixStrings.onTimedKeyPress = this.cast("onTimedKeyPress")
-  @scala.inline
-  def onTouchEnd: typingsJapgolly.webix.webixStrings.onTouchEnd = this.cast("onTouchEnd")
-  @scala.inline
-  def onTouchMove: typingsJapgolly.webix.webixStrings.onTouchMove = this.cast("onTouchMove")
-  @scala.inline
-  def onTouchStart: typingsJapgolly.webix.webixStrings.onTouchStart = this.cast("onTouchStart")
-  @scala.inline
-  def onValidationError: typingsJapgolly.webix.webixStrings.onValidationError = this.cast("onValidationError")
-  @scala.inline
-  def onValidationSuccess: typingsJapgolly.webix.webixStrings.onValidationSuccess = this.cast("onValidationSuccess")
-  @scala.inline
-  def onViewResize: typingsJapgolly.webix.webixStrings.onViewResize = this.cast("onViewResize")
-  @scala.inline
-  def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  
+  inline def onAfterAdd: typingsJapgolly.webix.webixStrings.onAfterAdd = "onAfterAdd".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterAdd]
+  
+  inline def onAfterAreaAdd: typingsJapgolly.webix.webixStrings.onAfterAreaAdd = "onAfterAreaAdd".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterAreaAdd]
+  
+  inline def onAfterAreaRemove: typingsJapgolly.webix.webixStrings.onAfterAreaRemove = "onAfterAreaRemove".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterAreaRemove]
+  
+  inline def onAfterBlockSelect: typingsJapgolly.webix.webixStrings.onAfterBlockSelect = "onAfterBlockSelect".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterBlockSelect]
+  
+  inline def onAfterClose: typingsJapgolly.webix.webixStrings.onAfterClose = "onAfterClose".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterClose]
+  
+  inline def onAfterColumnDrop: typingsJapgolly.webix.webixStrings.onAfterColumnDrop = "onAfterColumnDrop".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterColumnDrop]
+  
+  inline def onAfterColumnDropOrder: typingsJapgolly.webix.webixStrings.onAfterColumnDropOrder = "onAfterColumnDropOrder".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterColumnDropOrder]
+  
+  inline def onAfterColumnHide: typingsJapgolly.webix.webixStrings.onAfterColumnHide = "onAfterColumnHide".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterColumnHide]
+  
+  inline def onAfterColumnShow: typingsJapgolly.webix.webixStrings.onAfterColumnShow = "onAfterColumnShow".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterColumnShow]
+  
+  inline def onAfterContextMenu: typingsJapgolly.webix.webixStrings.onAfterContextMenu = "onAfterContextMenu".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterContextMenu]
+  
+  inline def onAfterDelete: typingsJapgolly.webix.webixStrings.onAfterDelete = "onAfterDelete".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterDelete]
+  
+  inline def onAfterDrop: typingsJapgolly.webix.webixStrings.onAfterDrop = "onAfterDrop".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterDrop]
+  
+  inline def onAfterEditStart: typingsJapgolly.webix.webixStrings.onAfterEditStart = "onAfterEditStart".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterEditStart]
+  
+  inline def onAfterEditStop: typingsJapgolly.webix.webixStrings.onAfterEditStop = "onAfterEditStop".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterEditStop]
+  
+  inline def onAfterFilter: typingsJapgolly.webix.webixStrings.onAfterFilter = "onAfterFilter".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterFilter]
+  
+  inline def onAfterLoad: typingsJapgolly.webix.webixStrings.onAfterLoad = "onAfterLoad".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterLoad]
+  
+  inline def onAfterOpen: typingsJapgolly.webix.webixStrings.onAfterOpen = "onAfterOpen".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterOpen]
+  
+  inline def onAfterRender: typingsJapgolly.webix.webixStrings.onAfterRender = "onAfterRender".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterRender]
+  
+  inline def onAfterScroll: typingsJapgolly.webix.webixStrings.onAfterScroll = "onAfterScroll".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterScroll]
+  
+  inline def onAfterSelect: typingsJapgolly.webix.webixStrings.onAfterSelect = "onAfterSelect".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterSelect]
+  
+  inline def onAfterSort: typingsJapgolly.webix.webixStrings.onAfterSort = "onAfterSort".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterSort]
+  
+  inline def onAfterUnSelect: typingsJapgolly.webix.webixStrings.onAfterUnSelect = "onAfterUnSelect".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterUnSelect]
+  
+  inline def onAreaDrag: typingsJapgolly.webix.webixStrings.onAreaDrag = "onAreaDrag".asInstanceOf[typingsJapgolly.webix.webixStrings.onAreaDrag]
+  
+  inline def onBeforeAdd: typingsJapgolly.webix.webixStrings.onBeforeAdd = "onBeforeAdd".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeAdd]
+  
+  inline def onBeforeAreaAdd: typingsJapgolly.webix.webixStrings.onBeforeAreaAdd = "onBeforeAreaAdd".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeAreaAdd]
+  
+  inline def onBeforeAreaRemove: typingsJapgolly.webix.webixStrings.onBeforeAreaRemove = "onBeforeAreaRemove".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeAreaRemove]
+  
+  inline def onBeforeBlockSelect: typingsJapgolly.webix.webixStrings.onBeforeBlockSelect = "onBeforeBlockSelect".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeBlockSelect]
+  
+  inline def onBeforeClose: typingsJapgolly.webix.webixStrings.onBeforeClose = "onBeforeClose".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeClose]
+  
+  inline def onBeforeColumnDrag: typingsJapgolly.webix.webixStrings.onBeforeColumnDrag = "onBeforeColumnDrag".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeColumnDrag]
+  
+  inline def onBeforeColumnDrop: typingsJapgolly.webix.webixStrings.onBeforeColumnDrop = "onBeforeColumnDrop".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeColumnDrop]
+  
+  inline def onBeforeColumnDropOrder: typingsJapgolly.webix.webixStrings.onBeforeColumnDropOrder = "onBeforeColumnDropOrder".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeColumnDropOrder]
+  
+  inline def onBeforeColumnHide: typingsJapgolly.webix.webixStrings.onBeforeColumnHide = "onBeforeColumnHide".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeColumnHide]
+  
+  inline def onBeforeColumnShow: typingsJapgolly.webix.webixStrings.onBeforeColumnShow = "onBeforeColumnShow".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeColumnShow]
+  
+  inline def onBeforeContextMenu: typingsJapgolly.webix.webixStrings.onBeforeContextMenu = "onBeforeContextMenu".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeContextMenu]
+  
+  inline def onBeforeDelete: typingsJapgolly.webix.webixStrings.onBeforeDelete = "onBeforeDelete".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeDelete]
+  
+  inline def onBeforeDrag: typingsJapgolly.webix.webixStrings.onBeforeDrag = "onBeforeDrag".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeDrag]
+  
+  inline def onBeforeDragIn: typingsJapgolly.webix.webixStrings.onBeforeDragIn = "onBeforeDragIn".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeDragIn]
+  
+  inline def onBeforeDrop: typingsJapgolly.webix.webixStrings.onBeforeDrop = "onBeforeDrop".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeDrop]
+  
+  inline def onBeforeDropOut: typingsJapgolly.webix.webixStrings.onBeforeDropOut = "onBeforeDropOut".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeDropOut]
+  
+  inline def onBeforeEditStart: typingsJapgolly.webix.webixStrings.onBeforeEditStart = "onBeforeEditStart".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeEditStart]
+  
+  inline def onBeforeEditStop: typingsJapgolly.webix.webixStrings.onBeforeEditStop = "onBeforeEditStop".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeEditStop]
+  
+  inline def onBeforeFilter: typingsJapgolly.webix.webixStrings.onBeforeFilter = "onBeforeFilter".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeFilter]
+  
+  inline def onBeforeLoad: typingsJapgolly.webix.webixStrings.onBeforeLoad = "onBeforeLoad".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeLoad]
+  
+  inline def onBeforeOpen: typingsJapgolly.webix.webixStrings.onBeforeOpen = "onBeforeOpen".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeOpen]
+  
+  inline def onBeforeRender: typingsJapgolly.webix.webixStrings.onBeforeRender = "onBeforeRender".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeRender]
+  
+  inline def onBeforeSelect: typingsJapgolly.webix.webixStrings.onBeforeSelect = "onBeforeSelect".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeSelect]
+  
+  inline def onBeforeSort: typingsJapgolly.webix.webixStrings.onBeforeSort = "onBeforeSort".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeSort]
+  
+  inline def onBeforeUnSelect: typingsJapgolly.webix.webixStrings.onBeforeUnSelect = "onBeforeUnSelect".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeUnSelect]
+  
+  inline def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typingsJapgolly.webix.webixStrings.onBindRequest]
+  
+  inline def onBlur: typingsJapgolly.webix.webixStrings.onBlur = "onBlur".asInstanceOf[typingsJapgolly.webix.webixStrings.onBlur]
+  
+  inline def onCheck: typingsJapgolly.webix.webixStrings.onCheck = "onCheck".asInstanceOf[typingsJapgolly.webix.webixStrings.onCheck]
+  
+  inline def onCollectValues: typingsJapgolly.webix.webixStrings.onCollectValues = "onCollectValues".asInstanceOf[typingsJapgolly.webix.webixStrings.onCollectValues]
+  
+  inline def onColumnGroupCollapse: typingsJapgolly.webix.webixStrings.onColumnGroupCollapse = "onColumnGroupCollapse".asInstanceOf[typingsJapgolly.webix.webixStrings.onColumnGroupCollapse]
+  
+  inline def onColumnResize: typingsJapgolly.webix.webixStrings.onColumnResize = "onColumnResize".asInstanceOf[typingsJapgolly.webix.webixStrings.onColumnResize]
+  
+  inline def onDataRequest: typingsJapgolly.webix.webixStrings.onDataRequest = "onDataRequest".asInstanceOf[typingsJapgolly.webix.webixStrings.onDataRequest]
+  
+  inline def onDataUpdate: typingsJapgolly.webix.webixStrings.onDataUpdate = "onDataUpdate".asInstanceOf[typingsJapgolly.webix.webixStrings.onDataUpdate]
+  
+  inline def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typingsJapgolly.webix.webixStrings.onDestruct]
+  
+  inline def onDragOut: typingsJapgolly.webix.webixStrings.onDragOut = "onDragOut".asInstanceOf[typingsJapgolly.webix.webixStrings.onDragOut]
+  
+  inline def onEditorChange: typingsJapgolly.webix.webixStrings.onEditorChange = "onEditorChange".asInstanceOf[typingsJapgolly.webix.webixStrings.onEditorChange]
+  
+  inline def onEnter: typingsJapgolly.webix.webixStrings.onEnter = "onEnter".asInstanceOf[typingsJapgolly.webix.webixStrings.onEnter]
+  
+  inline def onFocus: typingsJapgolly.webix.webixStrings.onFocus = "onFocus".asInstanceOf[typingsJapgolly.webix.webixStrings.onFocus]
+  
+  inline def onHeaderClick: typingsJapgolly.webix.webixStrings.onHeaderClick = "onHeaderClick".asInstanceOf[typingsJapgolly.webix.webixStrings.onHeaderClick]
+  
+  inline def onItemCheck: typingsJapgolly.webix.webixStrings.onItemCheck = "onItemCheck".asInstanceOf[typingsJapgolly.webix.webixStrings.onItemCheck]
+  
+  inline def onItemClick: typingsJapgolly.webix.webixStrings.onItemClick = "onItemClick".asInstanceOf[typingsJapgolly.webix.webixStrings.onItemClick]
+  
+  inline def onItemDblClick: typingsJapgolly.webix.webixStrings.onItemDblClick = "onItemDblClick".asInstanceOf[typingsJapgolly.webix.webixStrings.onItemDblClick]
+  
+  inline def onKeyPress: typingsJapgolly.webix.webixStrings.onKeyPress = "onKeyPress".asInstanceOf[typingsJapgolly.webix.webixStrings.onKeyPress]
+  
+  inline def onLiveEdit: typingsJapgolly.webix.webixStrings.onLiveEdit = "onLiveEdit".asInstanceOf[typingsJapgolly.webix.webixStrings.onLiveEdit]
+  
+  inline def onLoadError: typingsJapgolly.webix.webixStrings.onLoadError = "onLoadError".asInstanceOf[typingsJapgolly.webix.webixStrings.onLoadError]
+  
+  inline def onLongTouch: typingsJapgolly.webix.webixStrings.onLongTouch = "onLongTouch".asInstanceOf[typingsJapgolly.webix.webixStrings.onLongTouch]
+  
+  inline def onMouseMove: typingsJapgolly.webix.webixStrings.onMouseMove = "onMouseMove".asInstanceOf[typingsJapgolly.webix.webixStrings.onMouseMove]
+  
+  inline def onMouseMoving: typingsJapgolly.webix.webixStrings.onMouseMoving = "onMouseMoving".asInstanceOf[typingsJapgolly.webix.webixStrings.onMouseMoving]
+  
+  inline def onMouseOut: typingsJapgolly.webix.webixStrings.onMouseOut = "onMouseOut".asInstanceOf[typingsJapgolly.webix.webixStrings.onMouseOut]
+  
+  inline def onPaste: typingsJapgolly.webix.webixStrings.onPaste = "onPaste".asInstanceOf[typingsJapgolly.webix.webixStrings.onPaste]
+  
+  inline def onResize: typingsJapgolly.webix.webixStrings.onResize = "onResize".asInstanceOf[typingsJapgolly.webix.webixStrings.onResize]
+  
+  inline def onRowResize: typingsJapgolly.webix.webixStrings.onRowResize = "onRowResize".asInstanceOf[typingsJapgolly.webix.webixStrings.onRowResize]
+  
+  inline def onScrollX: typingsJapgolly.webix.webixStrings.onScrollX = "onScrollX".asInstanceOf[typingsJapgolly.webix.webixStrings.onScrollX]
+  
+  inline def onScrollY: typingsJapgolly.webix.webixStrings.onScrollY = "onScrollY".asInstanceOf[typingsJapgolly.webix.webixStrings.onScrollY]
+  
+  inline def onSelectChange: typingsJapgolly.webix.webixStrings.onSelectChange = "onSelectChange".asInstanceOf[typingsJapgolly.webix.webixStrings.onSelectChange]
+  
+  inline def onStructureLoad: typingsJapgolly.webix.webixStrings.onStructureLoad = "onStructureLoad".asInstanceOf[typingsJapgolly.webix.webixStrings.onStructureLoad]
+  
+  inline def onStructureUpdate: typingsJapgolly.webix.webixStrings.onStructureUpdate = "onStructureUpdate".asInstanceOf[typingsJapgolly.webix.webixStrings.onStructureUpdate]
+  
+  inline def onSubViewClose: typingsJapgolly.webix.webixStrings.onSubViewClose = "onSubViewClose".asInstanceOf[typingsJapgolly.webix.webixStrings.onSubViewClose]
+  
+  inline def onSubViewCreate: typingsJapgolly.webix.webixStrings.onSubViewCreate = "onSubViewCreate".asInstanceOf[typingsJapgolly.webix.webixStrings.onSubViewCreate]
+  
+  inline def onSubViewOpen: typingsJapgolly.webix.webixStrings.onSubViewOpen = "onSubViewOpen".asInstanceOf[typingsJapgolly.webix.webixStrings.onSubViewOpen]
+  
+  inline def onSubViewRender: typingsJapgolly.webix.webixStrings.onSubViewRender = "onSubViewRender".asInstanceOf[typingsJapgolly.webix.webixStrings.onSubViewRender]
+  
+  inline def onSwipeX: typingsJapgolly.webix.webixStrings.onSwipeX = "onSwipeX".asInstanceOf[typingsJapgolly.webix.webixStrings.onSwipeX]
+  
+  inline def onSwipeY: typingsJapgolly.webix.webixStrings.onSwipeY = "onSwipeY".asInstanceOf[typingsJapgolly.webix.webixStrings.onSwipeY]
+  
+  inline def onTabFocus: typingsJapgolly.webix.webixStrings.onTabFocus = "onTabFocus".asInstanceOf[typingsJapgolly.webix.webixStrings.onTabFocus]
+  
+  inline def onTimedKeyPress: typingsJapgolly.webix.webixStrings.onTimedKeyPress = "onTimedKeyPress".asInstanceOf[typingsJapgolly.webix.webixStrings.onTimedKeyPress]
+  
+  inline def onTouchEnd: typingsJapgolly.webix.webixStrings.onTouchEnd = "onTouchEnd".asInstanceOf[typingsJapgolly.webix.webixStrings.onTouchEnd]
+  
+  inline def onTouchMove: typingsJapgolly.webix.webixStrings.onTouchMove = "onTouchMove".asInstanceOf[typingsJapgolly.webix.webixStrings.onTouchMove]
+  
+  inline def onTouchStart: typingsJapgolly.webix.webixStrings.onTouchStart = "onTouchStart".asInstanceOf[typingsJapgolly.webix.webixStrings.onTouchStart]
+  
+  inline def onValidationError: typingsJapgolly.webix.webixStrings.onValidationError = "onValidationError".asInstanceOf[typingsJapgolly.webix.webixStrings.onValidationError]
+  
+  inline def onValidationSuccess: typingsJapgolly.webix.webixStrings.onValidationSuccess = "onValidationSuccess".asInstanceOf[typingsJapgolly.webix.webixStrings.onValidationSuccess]
+  
+  inline def onViewResize: typingsJapgolly.webix.webixStrings.onViewResize = "onViewResize".asInstanceOf[typingsJapgolly.webix.webixStrings.onViewResize]
+  
+  inline def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typingsJapgolly.webix.webixStrings.onViewShow]
 }
-

@@ -3,130 +3,172 @@ package typingsJapgolly.reactNativeWebrtc
 import typingsJapgolly.reactNativeWebrtc.mod.MediaStreamTrackState
 import typingsJapgolly.reactNativeWebrtc.mod.RTCIceConnectionState
 import typingsJapgolly.reactNativeWebrtc.mod.RTCIceGatheringState
+import typingsJapgolly.reactNativeWebrtc.mod.RTCPeerConnectionState
 import typingsJapgolly.reactNativeWebrtc.mod.RTCSignalingState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeWebrtcStrings {
-  @js.native
-  sealed trait all extends js.Object
   
   @js.native
-  sealed trait checking extends RTCIceConnectionState
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
+  
+  @js.native
+  sealed trait balanced extends StObject
+  inline def balanced: balanced = "balanced".asInstanceOf[balanced]
+  
+  @js.native
+  sealed trait checking
+    extends StObject
+       with RTCIceConnectionState
+  inline def checking: checking = "checking".asInstanceOf[checking]
   
   @js.native
   sealed trait closed
-    extends RTCIceConnectionState
+    extends StObject
+       with RTCIceConnectionState
+       with RTCPeerConnectionState
        with RTCSignalingState
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait complete extends RTCIceGatheringState
+  sealed trait complete
+    extends StObject
+       with RTCIceGatheringState
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait completed extends RTCIceConnectionState
+  sealed trait completed
+    extends StObject
+       with RTCIceConnectionState
+  inline def completed: completed = "completed".asInstanceOf[completed]
   
   @js.native
-  sealed trait connected extends RTCIceConnectionState
+  sealed trait connected
+    extends StObject
+       with RTCIceConnectionState
+       with RTCPeerConnectionState
+  inline def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
-  sealed trait contain extends js.Object
+  sealed trait connecting
+    extends StObject
+       with RTCPeerConnectionState
+  inline def connecting: connecting = "connecting".asInstanceOf[connecting]
   
   @js.native
-  sealed trait cover extends js.Object
+  sealed trait contain extends StObject
+  inline def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
-  sealed trait disconnected extends RTCIceConnectionState
+  sealed trait cover extends StObject
+  inline def cover: cover = "cover".asInstanceOf[cover]
   
   @js.native
-  sealed trait ended extends MediaStreamTrackState
+  sealed trait disconnected
+    extends StObject
+       with RTCIceConnectionState
+       with RTCPeerConnectionState
+  inline def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   
   @js.native
-  sealed trait environment extends js.Object
+  sealed trait ended
+    extends StObject
+       with MediaStreamTrackState
+  inline def ended: ended = "ended".asInstanceOf[ended]
   
   @js.native
-  sealed trait failed extends RTCIceConnectionState
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
   
   @js.native
-  sealed trait gathering extends RTCIceGatheringState
+  sealed trait failed
+    extends StObject
+       with RTCIceConnectionState
+       with RTCPeerConnectionState
+  inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
-  sealed trait `have-local-offer` extends RTCSignalingState
+  sealed trait gathering
+    extends StObject
+       with RTCIceGatheringState
+  inline def gathering: gathering = "gathering".asInstanceOf[gathering]
   
   @js.native
-  sealed trait `have-local-pranswer` extends RTCSignalingState
+  sealed trait `have-local-offer`
+    extends StObject
+       with RTCSignalingState
+  inline def `have-local-offer`: `have-local-offer` = "have-local-offer".asInstanceOf[`have-local-offer`]
   
   @js.native
-  sealed trait `have-remote-offer` extends RTCSignalingState
+  sealed trait `have-local-pranswer`
+    extends StObject
+       with RTCSignalingState
+  inline def `have-local-pranswer`: `have-local-pranswer` = "have-local-pranswer".asInstanceOf[`have-local-pranswer`]
   
   @js.native
-  sealed trait `have-remote-pranswer` extends RTCSignalingState
+  sealed trait `have-remote-offer`
+    extends StObject
+       with RTCSignalingState
+  inline def `have-remote-offer`: `have-remote-offer` = "have-remote-offer".asInstanceOf[`have-remote-offer`]
   
   @js.native
-  sealed trait live extends MediaStreamTrackState
+  sealed trait `have-remote-pranswer`
+    extends StObject
+       with RTCSignalingState
+  inline def `have-remote-pranswer`: `have-remote-pranswer` = "have-remote-pranswer".asInstanceOf[`have-remote-pranswer`]
+  
+  @js.native
+  sealed trait live
+    extends StObject
+       with MediaStreamTrackState
+  inline def live: live = "live".asInstanceOf[live]
+  
+  @js.native
+  sealed trait `max-bundle` extends StObject
+  inline def `max-bundle`: `max-bundle` = "max-bundle".asInstanceOf[`max-bundle`]
+  
+  @js.native
+  sealed trait `max-compat` extends StObject
+  inline def `max-compat`: `max-compat` = "max-compat".asInstanceOf[`max-compat`]
+  
+  @js.native
+  sealed trait negotiate extends StObject
+  inline def negotiate: negotiate = "negotiate".asInstanceOf[negotiate]
   
   @js.native
   sealed trait `new`
-    extends RTCIceConnectionState
+    extends StObject
+       with RTCIceConnectionState
        with RTCIceGatheringState
+       with RTCPeerConnectionState
+  inline def `new`: `new` = "new".asInstanceOf[`new`]
   
   @js.native
-  sealed trait public extends js.Object
+  sealed trait nohost extends StObject
+  inline def nohost: nohost = "nohost".asInstanceOf[nohost]
   
   @js.native
-  sealed trait relay extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait stable extends RTCSignalingState
+  sealed trait relay extends StObject
+  inline def relay: relay = "relay".asInstanceOf[relay]
   
   @js.native
-  sealed trait user extends js.Object
+  sealed trait require extends StObject
+  inline def require: require = "require".asInstanceOf[require]
   
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def checking: checking = "checking".asInstanceOf[checking]
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def completed: completed = "completed".asInstanceOf[completed]
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
-  @scala.inline
-  def contain: contain = "contain".asInstanceOf[contain]
-  @scala.inline
-  def cover: cover = "cover".asInstanceOf[cover]
-  @scala.inline
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
-  @scala.inline
-  def ended: ended = "ended".asInstanceOf[ended]
-  @scala.inline
-  def environment: environment = "environment".asInstanceOf[environment]
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
-  @scala.inline
-  def gathering: gathering = "gathering".asInstanceOf[gathering]
-  @scala.inline
-  def `have-local-offer`: `have-local-offer` = "have-local-offer".asInstanceOf[`have-local-offer`]
-  @scala.inline
-  def `have-local-pranswer`: `have-local-pranswer` = "have-local-pranswer".asInstanceOf[`have-local-pranswer`]
-  @scala.inline
-  def `have-remote-offer`: `have-remote-offer` = "have-remote-offer".asInstanceOf[`have-remote-offer`]
-  @scala.inline
-  def `have-remote-pranswer`: `have-remote-pranswer` = "have-remote-pranswer".asInstanceOf[`have-remote-pranswer`]
-  @scala.inline
-  def live: live = "live".asInstanceOf[live]
-  @scala.inline
-  def `new`: `new` = "new".asInstanceOf[`new`]
-  @scala.inline
-  def public: public = "public".asInstanceOf[public]
-  @scala.inline
-  def relay: relay = "relay".asInstanceOf[relay]
-  @scala.inline
-  def stable: stable = "stable".asInstanceOf[stable]
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
+  @js.native
+  sealed trait stable
+    extends StObject
+       with RTCSignalingState
+  inline def stable: stable = "stable".asInstanceOf[stable]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
 }
-

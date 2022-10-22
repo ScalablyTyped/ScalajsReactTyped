@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@google-cloud/text-to-speech" : "4.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@google-cloud/text-to-speech" : "4.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,8 +1,8 @@
 package typingsJapgolly.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.arangodb.arangodbStrings.HEAD
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.arangodb.arangodbStrings.DELETE
   - typingsJapgolly.arangodb.arangodbStrings.OPTIONS
 */
-trait HttpMethod extends js.Object
-
+trait HttpMethod extends StObject
 object HttpMethod {
-  @scala.inline
-  def DELETE: typingsJapgolly.arangodb.arangodbStrings.DELETE = this.cast("DELETE")
-  @scala.inline
-  def GET: typingsJapgolly.arangodb.arangodbStrings.GET = this.cast("GET")
-  @scala.inline
-  def HEAD: typingsJapgolly.arangodb.arangodbStrings.HEAD = this.cast("HEAD")
-  @scala.inline
-  def OPTIONS: typingsJapgolly.arangodb.arangodbStrings.OPTIONS = this.cast("OPTIONS")
-  @scala.inline
-  def PATCH: typingsJapgolly.arangodb.arangodbStrings.PATCH = this.cast("PATCH")
-  @scala.inline
-  def POST: typingsJapgolly.arangodb.arangodbStrings.POST = this.cast("POST")
-  @scala.inline
-  def PUT: typingsJapgolly.arangodb.arangodbStrings.PUT = this.cast("PUT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def DELETE: typingsJapgolly.arangodb.arangodbStrings.DELETE = "DELETE".asInstanceOf[typingsJapgolly.arangodb.arangodbStrings.DELETE]
+  
+  inline def GET: typingsJapgolly.arangodb.arangodbStrings.GET = "GET".asInstanceOf[typingsJapgolly.arangodb.arangodbStrings.GET]
+  
+  inline def HEAD: typingsJapgolly.arangodb.arangodbStrings.HEAD = "HEAD".asInstanceOf[typingsJapgolly.arangodb.arangodbStrings.HEAD]
+  
+  inline def OPTIONS: typingsJapgolly.arangodb.arangodbStrings.OPTIONS = "OPTIONS".asInstanceOf[typingsJapgolly.arangodb.arangodbStrings.OPTIONS]
+  
+  inline def PATCH: typingsJapgolly.arangodb.arangodbStrings.PATCH = "PATCH".asInstanceOf[typingsJapgolly.arangodb.arangodbStrings.PATCH]
+  
+  inline def POST: typingsJapgolly.arangodb.arangodbStrings.POST = "POST".asInstanceOf[typingsJapgolly.arangodb.arangodbStrings.POST]
+  
+  inline def PUT: typingsJapgolly.arangodb.arangodbStrings.PUT = "PUT".asInstanceOf[typingsJapgolly.arangodb.arangodbStrings.PUT]
 }
-

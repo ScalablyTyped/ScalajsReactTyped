@@ -1,30 +1,49 @@
 package typingsJapgolly.webappsecCredentialManagement
 
 import typingsJapgolly.webappsecCredentialManagement.webappsecCredentialManagementStrings.federated
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("FederatedCredential")
-@js.native
-class FederatedCredential protected ()
-  extends SiteBoundCredential
+trait FederatedCredential
+  extends StObject
+     with SiteBoundCredential
      with CredentialType {
-  def this(data: FederatedCredentialData) = this()
+  
   /**
     * The credential’s federated identity provider’s protocol (e.g.
     * "openidconnect"). If this value is null, then the protocol can be
     * inferred from the provider.
     * @see {@link https://www.w3.org/TR/credential-management-1/#dom-federatedcredential-protocol}
     */
-  val protocol: String | Null = js.native
+  val protocol: String | Null
+  
   /**
     * The credential’s federated identity provider. Must be a absolute,
     * hierarchical, https URI with no path (e.g. https://www.facebook.com).
     * @see {@link https://www.w3.org/TR/credential-management-1/#dom-federatedcredential-provider}
     */
-  val provider: String = js.native
+  val provider: String
+  
   @JSName("type")
-  val type_FederatedCredential: federated = js.native
+  val type_FederatedCredential: federated
 }
-
+object FederatedCredential {
+  
+  inline def apply(id: String, provider: String): FederatedCredential = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], iconURL = null, name = null, protocol = null)
+    __obj.updateDynamic("type")("federated")
+    __obj.asInstanceOf[FederatedCredential]
+  }
+  
+  extension [Self <: FederatedCredential](x: Self) {
+    
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolNull: Self = StObject.set(x, "protocol", null)
+    
+    inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: federated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
+}

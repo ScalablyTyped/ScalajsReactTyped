@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Media.MediaProperties
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaPixelFormat extends js.Object
-
+sealed trait MediaPixelFormat extends StObject
 /** Defines values for media pixel formats. */
 @JSGlobal("Windows.Media.MediaProperties.MediaPixelFormat")
 @js.native
-object MediaPixelFormat extends js.Object {
+object MediaPixelFormat extends StObject {
+  
   /** BGRA8 media pixel format. */
   @js.native
-  sealed trait bgra8 extends MediaPixelFormat
+  sealed trait bgra8
+    extends StObject
+       with MediaPixelFormat
   
   /** NV12 media pixel format. */
   @js.native
-  sealed trait nv12 extends MediaPixelFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaPixelFormat with Double] = js.native
-  /* 1 */ @js.native
-  object bgra8 extends TopLevel[bgra8 with Double]
-  
-  /* 0 */ @js.native
-  object nv12 extends TopLevel[nv12 with Double]
-  
+  sealed trait nv12
+    extends StObject
+       with MediaPixelFormat
 }
-

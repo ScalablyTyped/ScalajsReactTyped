@@ -1,22 +1,18 @@
 package typingsJapgolly.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 3 for sRGB, 4 for CMYK */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.sharp.sharpNumbers.`3`
-  - typingsJapgolly.sharp.sharpNumbers.`4`
+  - typingsJapgolly.sharp.sharpInts.`3`
+  - typingsJapgolly.sharp.sharpInts.`4`
 */
-trait Channels extends js.Object
-
+trait Channels extends StObject
 object Channels {
-  @scala.inline
-  def `3`: typingsJapgolly.sharp.sharpNumbers.`3` = this.cast(3)
-  @scala.inline
-  def `4`: typingsJapgolly.sharp.sharpNumbers.`4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `3`: typingsJapgolly.sharp.sharpInts.`3` = 3.asInstanceOf[typingsJapgolly.sharp.sharpInts.`3`]
+  
+  inline def `4`: typingsJapgolly.sharp.sharpInts.`4` = 4.asInstanceOf[typingsJapgolly.sharp.sharpInts.`4`]
 }
-

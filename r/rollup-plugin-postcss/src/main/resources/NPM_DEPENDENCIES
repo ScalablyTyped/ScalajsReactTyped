@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rollup-plugin-postcss" : "4.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rollup-plugin-postcss" : "4.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,103 +1,168 @@
 package typingsJapgolly.dropboxjs.Dropbox
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.dropboxjs.Dropbox.File.Stat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Dropbox.Http")
-@js.native
-object Http extends js.Object {
+object Http {
+  
   @js.native
-  class AppInfo () extends js.Object {
+  trait AppInfo extends StObject {
+    
     var canUseDatastores: Boolean = js.native
+    
     var canUseFiles: Boolean = js.native
+    
     var canUseFullDropbox: Boolean = js.native
+    
     var hasAppFolder: Boolean = js.native
-    var key: String = js.native
-    var name: String = js.native
+    
     def icon(width: Double): Unit = js.native
     def icon(width: Double, height: Double): Unit = js.native
+    
+    var key: String = js.native
+    
+    var name: String = js.native
   }
   
-  @js.native
-  class PollResult () extends js.Object {
-    var hasChanges: Boolean = js.native
-    var retryAfter: Double = js.native
+  trait PollResult extends StObject {
+    
+    var hasChanges: Boolean
+    
+    var retryAfter: Double
+  }
+  object PollResult {
+    
+    inline def apply(hasChanges: Boolean, retryAfter: Double): PollResult = {
+      val __obj = js.Dynamic.literal(hasChanges = hasChanges.asInstanceOf[js.Any], retryAfter = retryAfter.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PollResult]
+    }
+    
+    extension [Self <: PollResult](x: Self) {
+      
+      inline def setHasChanges(value: Boolean): Self = StObject.set(x, "hasChanges", value.asInstanceOf[js.Any])
+      
+      inline def setRetryAfter(value: Double): Self = StObject.set(x, "retryAfter", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  class PulledChange () extends js.Object {
-    var path: String = js.native
-    var stat: Stat = js.native
-    var wasRemoved: Boolean = js.native
+  trait PulledChange extends StObject {
+    
+    var path: String
+    
+    var stat: Stat
+    
+    var wasRemoved: Boolean
+  }
+  object PulledChange {
+    
+    inline def apply(path: String, stat: Stat, wasRemoved: Boolean): PulledChange = {
+      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any], wasRemoved = wasRemoved.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PulledChange]
+    }
+    
+    extension [Self <: PulledChange](x: Self) {
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setStat(value: Stat): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      
+      inline def setWasRemoved(value: Boolean): Self = StObject.set(x, "wasRemoved", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  class PulledChanges () extends js.Object {
-    var blankSlate: Boolean = js.native
-    var cursorTag: String = js.native
-    var shouldBackOff: Boolean = js.native
-    var shouldPullAgain: Boolean = js.native
-    def cursor(): String = js.native
+  trait PulledChanges extends StObject {
+    
+    var blankSlate: Boolean
+    
+    def cursor(): String
+    
+    var cursorTag: String
+    
+    var shouldBackOff: Boolean
+    
+    var shouldPullAgain: Boolean
+  }
+  object PulledChanges {
+    
+    inline def apply(
+      blankSlate: Boolean,
+      cursor: CallbackTo[String],
+      cursorTag: String,
+      shouldBackOff: Boolean,
+      shouldPullAgain: Boolean
+    ): PulledChanges = {
+      val __obj = js.Dynamic.literal(blankSlate = blankSlate.asInstanceOf[js.Any], cursor = cursor.toJsFn, cursorTag = cursorTag.asInstanceOf[js.Any], shouldBackOff = shouldBackOff.asInstanceOf[js.Any], shouldPullAgain = shouldPullAgain.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PulledChanges]
+    }
+    
+    extension [Self <: PulledChanges](x: Self) {
+      
+      inline def setBlankSlate(value: Boolean): Self = StObject.set(x, "blankSlate", value.asInstanceOf[js.Any])
+      
+      inline def setCursor(value: CallbackTo[String]): Self = StObject.set(x, "cursor", value.toJsFn)
+      
+      inline def setCursorTag(value: String): Self = StObject.set(x, "cursorTag", value.asInstanceOf[js.Any])
+      
+      inline def setShouldBackOff(value: Boolean): Self = StObject.set(x, "shouldBackOff", value.asInstanceOf[js.Any])
+      
+      inline def setShouldPullAgain(value: Boolean): Self = StObject.set(x, "shouldPullAgain", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  class RangeInfo () extends js.Object {
-    var end: Double = js.native
-    var size: Double = js.native
-    var start: Double = js.native
+  trait RangeInfo extends StObject {
+    
+    var end: Double
+    
+    var size: Double
+    
+    var start: Double
+  }
+  object RangeInfo {
+    
+    inline def apply(end: Double, size: Double, start: Double): RangeInfo = {
+      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RangeInfo]
+    }
+    
+    extension [Self <: RangeInfo](x: Self) {
+      
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  class UploadCursor protected () extends js.Object {
-    def this(cursorData: String) = this()
-    def this(cursorData: js.Object) = this()
-    var expiresAt: js.Date = js.native
-    var offset: Double = js.native
-    var tag: String = js.native
-    def toJSON(): js.Object = js.native
+  trait UploadCursor extends StObject {
+    
+    var expiresAt: js.Date
+    
+    var offset: Double
+    
+    var tag: String
+    
+    def toJSON(): js.Object
   }
-  
-  /* static members */
-  @js.native
-  object AppInfo extends js.Object {
-    var ICON_LARGE: Double = js.native
-    var ICON_SMALL: Double = js.native
-    def parse(appInfo: js.Object): AppInfo = js.native
-    def parse(appInfo: js.Object, appKey: String): AppInfo = js.native
+  object UploadCursor {
+    
+    inline def apply(expiresAt: js.Date, offset: Double, tag: String, toJSON: CallbackTo[js.Object]): UploadCursor = {
+      val __obj = js.Dynamic.literal(expiresAt = expiresAt.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], toJSON = toJSON.toJsFn)
+      __obj.asInstanceOf[UploadCursor]
+    }
+    
+    extension [Self <: UploadCursor](x: Self) {
+      
+      inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      
+      inline def setToJSON(value: CallbackTo[js.Object]): Self = StObject.set(x, "toJSON", value.toJsFn)
+    }
   }
-  
-  /* static members */
-  @js.native
-  object PollResult extends js.Object {
-    def parse(response: js.Object): PollResult = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object PulledChange extends js.Object {
-    def parse(entry: js.Object): PulledChange = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object PulledChanges extends js.Object {
-    def parse(deltaInfo: js.Object): PulledChanges = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object RangeInfo extends js.Object {
-    def parse(headerValue: String): RangeInfo = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object UploadCursor extends js.Object {
-    def parse(cursorData: String): UploadCursor = js.native
-    def parse(cursorData: js.Object): UploadCursor = js.native
-  }
-  
 }
-

@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.BorderLeftProperty
+import typingsJapgolly.csstype.mod.Property.BorderLeft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BorderLeftProps[TLength] extends js.Object {
-  val borderLeft: js.UndefOr[ResponsiveValue[BorderLeftProperty[TLength]]] = js.undefined
+trait BorderLeftProps[TLength] extends StObject {
+  
+  val borderLeft: js.UndefOr[ResponsiveValue[BorderLeft[TLength]]] = js.undefined
 }
-
 object BorderLeftProps {
-  @scala.inline
-  def apply[TLength](borderLeft: ResponsiveValue[BorderLeftProperty[TLength]] = null): BorderLeftProps[TLength] = {
+  
+  inline def apply[TLength](): BorderLeftProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderLeftProps[TLength]]
   }
+  
+  extension [Self <: BorderLeftProps[?], TLength](x: Self & BorderLeftProps[TLength]) {
+    
+    inline def setBorderLeft(value: ResponsiveValue[BorderLeft[TLength]]): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+    
+    inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
+    
+    inline def setBorderLeftVarargs(value: BorderLeft[TLength]*): Self = StObject.set(x, "borderLeft", js.Array(value*))
+  }
 }
-

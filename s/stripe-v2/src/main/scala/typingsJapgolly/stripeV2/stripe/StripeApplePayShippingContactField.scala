@@ -1,8 +1,8 @@
 package typingsJapgolly.stripeV2.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.stripeV2.stripeV2Strings.phone
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.stripeV2.stripeV2Strings.postalAddress
   - typingsJapgolly.stripeV2.stripeV2Strings.name
 */
-trait StripeApplePayShippingContactField extends js.Object
-
+trait StripeApplePayShippingContactField extends StObject
 object StripeApplePayShippingContactField {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def email: typingsJapgolly.stripeV2.stripeV2Strings.email = this.cast("email")
-  @scala.inline
-  def name: typingsJapgolly.stripeV2.stripeV2Strings.name = this.cast("name")
-  @scala.inline
-  def phone: typingsJapgolly.stripeV2.stripeV2Strings.phone = this.cast("phone")
-  @scala.inline
-  def postalAddress: typingsJapgolly.stripeV2.stripeV2Strings.postalAddress = this.cast("postalAddress")
+  
+  inline def email: typingsJapgolly.stripeV2.stripeV2Strings.email = "email".asInstanceOf[typingsJapgolly.stripeV2.stripeV2Strings.email]
+  
+  inline def name: typingsJapgolly.stripeV2.stripeV2Strings.name = "name".asInstanceOf[typingsJapgolly.stripeV2.stripeV2Strings.name]
+  
+  inline def phone: typingsJapgolly.stripeV2.stripeV2Strings.phone = "phone".asInstanceOf[typingsJapgolly.stripeV2.stripeV2Strings.phone]
+  
+  inline def postalAddress: typingsJapgolly.stripeV2.stripeV2Strings.postalAddress = "postalAddress".asInstanceOf[typingsJapgolly.stripeV2.stripeV2Strings.postalAddress]
 }
-

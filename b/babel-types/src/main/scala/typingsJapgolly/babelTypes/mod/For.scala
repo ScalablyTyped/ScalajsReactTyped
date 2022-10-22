@@ -1,80 +1,54 @@
 package typingsJapgolly.babelTypes.mod
 
-import typingsJapgolly.babelTypes.babelTypesStrings.ForInStatement
-import typingsJapgolly.babelTypes.babelTypesStrings.ForOfStatement
-import typingsJapgolly.babelTypes.babelTypesStrings.ForStatement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.babelTypes.mod.ForInStatement_
   - typingsJapgolly.babelTypes.mod.ForStatement_
   - typingsJapgolly.babelTypes.mod.ForOfStatement_
 */
-trait For extends js.Object
-
+trait For extends StObject
 object For {
-  @scala.inline
-  def ForInStatement_(
+  
+  inline def ForInStatement_(
     body: Statement,
     end: Double,
     left: VariableDeclaration_ | LVal,
     loc: SourceLocation,
     right: Expression,
-    start: Double,
-    `type`: ForInStatement,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): For = {
+    start: Double
+  ): typingsJapgolly.babelTypes.mod.ForInStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[For]
+    __obj.updateDynamic("type")("ForInStatement")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ForInStatement_]
   }
-  @scala.inline
-  def ForStatement_(
+  
+  inline def ForOfStatement_(
+    body: Statement,
+    end: Double,
+    left: VariableDeclaration_ | LVal,
+    loc: SourceLocation,
+    right: Expression,
+    start: Double
+  ): typingsJapgolly.babelTypes.mod.ForOfStatement_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ForOfStatement")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ForOfStatement_]
+  }
+  
+  inline def ForStatement_(
     body: Statement,
     end: Double,
     init: VariableDeclaration_ | Expression,
     loc: SourceLocation,
     start: Double,
     test: Expression,
-    `type`: ForStatement,
-    update: Expression,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): For = {
+    update: Expression
+  ): typingsJapgolly.babelTypes.mod.ForStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[For]
-  }
-  @scala.inline
-  def ForOfStatement_(
-    body: Statement,
-    end: Double,
-    left: VariableDeclaration_ | LVal,
-    loc: SourceLocation,
-    right: Expression,
-    start: Double,
-    `type`: ForOfStatement,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): For = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[For]
+    __obj.updateDynamic("type")("ForStatement")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ForStatement_]
   }
 }
-

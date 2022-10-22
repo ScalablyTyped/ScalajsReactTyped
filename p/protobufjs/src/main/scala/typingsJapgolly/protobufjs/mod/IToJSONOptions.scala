@@ -1,20 +1,25 @@
 package typingsJapgolly.protobufjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IToJSONOptions extends js.Object {
+trait IToJSONOptions extends StObject {
+  
   /** Serializes comments. */
   var keepComments: js.UndefOr[Boolean] = js.undefined
 }
-
 object IToJSONOptions {
-  @scala.inline
-  def apply(keepComments: js.UndefOr[Boolean] = js.undefined): IToJSONOptions = {
+  
+  inline def apply(): IToJSONOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepComments)) __obj.updateDynamic("keepComments")(keepComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToJSONOptions]
   }
+  
+  extension [Self <: IToJSONOptions](x: Self) {
+    
+    inline def setKeepComments(value: Boolean): Self = StObject.set(x, "keepComments", value.asInstanceOf[js.Any])
+    
+    inline def setKeepCommentsUndefined: Self = StObject.set(x, "keepComments", js.undefined)
+  }
 }
-

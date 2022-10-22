@@ -1,45 +1,29 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.progressStepsMod.ProgressStepsOverrides
-import typingsJapgolly.baseui.progressStepsMod.ProgressStepsProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.progressStepsTypesMod.ProgressStepsOverrides
+import typingsJapgolly.baseui.progressStepsTypesMod.ProgressStepsProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ProgressSteps {
-  def apply(
-    current: Int | Double = null,
-    overrides: ProgressStepsOverrides = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    ProgressStepsProps, 
-    MountedWithRawType[ProgressStepsProps, js.Object, RawMounted[ProgressStepsProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.baseui.progressStepsMod.ProgressStepsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.progressStepsMod.ProgressStepsProps])(children: _*)
-  }
   @JSImport("baseui/progress-steps", "ProgressSteps")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def current(value: Double): this.type = set("current", value.asInstanceOf[js.Any])
+    
+    inline def overrides(value: ProgressStepsOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ProgressSteps.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ProgressStepsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

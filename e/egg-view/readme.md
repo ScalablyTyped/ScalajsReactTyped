@@ -1,7 +1,7 @@
 
 # Scala.js typings for egg-view
 
-Typings are for version 2.1.2
+Typings are for version 2.1.3
 
 ## Library description:
 Base view plugin for egg
@@ -10,10 +10,10 @@ Base view plugin for egg
 | ------------------ | :-------------: |
 | Full name          | egg-view |
 | Keywords           | egg, eggPlugin, egg-plugin, egg-view, view |
-| # releases         | 5 |
-| # dependents       | 8 |
-| # downloads        | 267920 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 148546.0 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/eggjs/egg-view#readme)

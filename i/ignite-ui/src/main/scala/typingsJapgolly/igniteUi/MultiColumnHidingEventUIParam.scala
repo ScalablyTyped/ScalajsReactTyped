@@ -1,27 +1,38 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MultiColumnHidingEventUIParam extends js.Object {
+trait MultiColumnHidingEventUIParam extends StObject {
+  
   /**
-  	 * Gets the array of the hidden column keys. Only when you click on Reset button in column chooser there is an array of column keys.
-  	 */
-  var columnKeys: js.UndefOr[js.Array[_]] = js.undefined
+    * Gets the array of the hidden column keys. Only when you click on Reset button in column chooser there is an array of column keys.
+    */
+  var columnKeys: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Gets a reference to the GridHiding widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the GridHiding widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object MultiColumnHidingEventUIParam {
-  @scala.inline
-  def apply(columnKeys: js.Array[_] = null, owner: js.Any = null): MultiColumnHidingEventUIParam = {
+  
+  inline def apply(): MultiColumnHidingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKeys != null) __obj.updateDynamic("columnKeys")(columnKeys.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiColumnHidingEventUIParam]
   }
+  
+  extension [Self <: MultiColumnHidingEventUIParam](x: Self) {
+    
+    inline def setColumnKeys(value: js.Array[Any]): Self = StObject.set(x, "columnKeys", value.asInstanceOf[js.Any])
+    
+    inline def setColumnKeysUndefined: Self = StObject.set(x, "columnKeys", js.undefined)
+    
+    inline def setColumnKeysVarargs(value: Any*): Self = StObject.set(x, "columnKeys", js.Array(value*))
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

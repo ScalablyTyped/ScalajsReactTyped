@@ -11,9 +11,9 @@ Require global npm as a local node module.
 | Full name          | global-npm |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 26 |
-| # downloads        | 413658 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 35366.333333333336 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/dracupid/global-npm#readme)

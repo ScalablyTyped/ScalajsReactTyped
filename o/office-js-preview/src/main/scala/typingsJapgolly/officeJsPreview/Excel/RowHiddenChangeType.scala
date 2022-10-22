@@ -1,43 +1,36 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RowHiddenChangeType extends js.Object
-
+sealed trait RowHiddenChangeType extends StObject
 /**
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * @remarks
+  * [Api set: ExcelApi 1.11]
   */
 @JSGlobal("Excel.RowHiddenChangeType")
 @js.native
-object RowHiddenChangeType extends js.Object {
-  /**
-    *
-    * Hidden indicates the row is hidden.
-    *
-    */
-  @js.native
-  sealed trait hidden extends RowHiddenChangeType
+object RowHiddenChangeType extends StObject {
   
   /**
-    *
-    * Unhidden indicates the row is not hidden.
-    *
+    * `Hidden` indicates that the row is hidden.
+    * @remarks
+    * [Api set: ExcelApi 1.11]
     */
   @js.native
-  sealed trait unhidden extends RowHiddenChangeType
+  sealed trait hidden
+    extends StObject
+       with RowHiddenChangeType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[RowHiddenChangeType with String] = js.native
-  /* "Hidden" */ @js.native
-  object hidden extends TopLevel[hidden with String]
-  
-  /* "Unhidden" */ @js.native
-  object unhidden extends TopLevel[unhidden with String]
-  
+  /**
+    * `Unhidden` indicates that the row is not hidden.
+    * @remarks
+    * [Api set: ExcelApi 1.11]
+    */
+  @js.native
+  sealed trait unhidden
+    extends StObject
+       with RowHiddenChangeType
 }
-

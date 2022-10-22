@@ -1,14 +1,17 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssignmentExpression[TOperator /* <: AssignmentOperatorToken */] extends BinaryExpression {
+trait AssignmentExpression[TOperator /* <: AssignmentOperatorToken */]
+  extends StObject
+     with BinaryExpression {
+  
   @JSName("left")
-  var left_AssignmentExpression: LeftHandSideExpression = js.native
+  val left_AssignmentExpression: LeftHandSideExpression = js.native
+  
   @JSName("operatorToken")
-  var operatorToken_AssignmentExpression: TOperator = js.native
+  val operatorToken_AssignmentExpression: TOperator = js.native
 }
-

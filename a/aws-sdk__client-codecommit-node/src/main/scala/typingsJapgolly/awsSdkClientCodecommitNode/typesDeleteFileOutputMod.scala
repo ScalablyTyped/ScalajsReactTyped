@@ -1,38 +1,61 @@
 package typingsJapgolly.awsSdkClientCodecommitNode
 
-import typingsJapgolly.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientCodecommitNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/types/DeleteFileOutput", JSImport.Namespace)
-@js.native
-object typesDeleteFileOutputMod extends js.Object {
-  @js.native
-  trait DeleteFileOutput extends OutputTypesUnion {
+object typesDeleteFileOutputMod {
+  
+  trait DeleteFileOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>The blob ID removed from the tree as part of deleting the file.</p>
       */
-    var blobId: String = js.native
+    var blobId: String
+    
     /**
       * <p>The full commit ID of the commit that contains the change that deletes the file.</p>
       */
-    var commitId: String = js.native
+    var commitId: String
+    
     /**
       * <p>The fully-qualified path to the file that will be deleted, including the full name and extension of that file.</p>
       */
-    var filePath: String = js.native
+    var filePath: String
+    
     /**
       * <p>The full SHA-1 pointer of the tree information for the commit that contains the delete file change.</p>
       */
-    var treeId: String = js.native
+    var treeId: String
   }
-  
+  object DeleteFileOutput {
+    
+    inline def apply($metadata: ResponseMetadata, blobId: String, commitId: String, filePath: String, treeId: String): DeleteFileOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], blobId = blobId.asInstanceOf[js.Any], commitId = commitId.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], treeId = treeId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DeleteFileOutput]
+    }
+    
+    extension [Self <: DeleteFileOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setBlobId(value: String): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
+      
+      inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+      
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      
+      inline def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

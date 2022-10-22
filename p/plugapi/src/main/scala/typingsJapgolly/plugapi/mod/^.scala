@@ -1,12 +1,14 @@
 package typingsJapgolly.plugapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plugapi", JSImport.Namespace)
 @js.native
-class ^ protected () extends PlugAPI {
+open class ^ protected ()
+  extends StObject
+     with PlugAPI {
   def this(login: PlugLogin) = this()
   def this(
     login: PlugLogin,
@@ -17,4 +19,6 @@ class ^ protected () extends PlugAPI {
       ]
   ) = this()
 }
-
+@JSImport("plugapi", JSImport.Namespace)
+@js.native
+object ^ extends StObject

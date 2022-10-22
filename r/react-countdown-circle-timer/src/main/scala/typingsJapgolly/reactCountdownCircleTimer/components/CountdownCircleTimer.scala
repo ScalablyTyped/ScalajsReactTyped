@@ -1,59 +1,113 @@
 package typingsJapgolly.reactCountdownCircleTimer.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactCountdownCircleTimer.mod.ColorType
-import typingsJapgolly.reactCountdownCircleTimer.mod.Props
-import typingsJapgolly.reactCountdownCircleTimer.mod.StrokeLinecapType
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactCountdownCircleTimer.anon.`0ColorHex1ColorHexArrayCo`
+import typingsJapgolly.reactCountdownCircleTimer.anon.`0number1numberArraynumber`
+import typingsJapgolly.reactCountdownCircleTimer.libMod.ColorFormat
+import typingsJapgolly.reactCountdownCircleTimer.libMod.OnComplete
+import typingsJapgolly.reactCountdownCircleTimer.libMod.TimeProps
+import typingsJapgolly.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.butt
+import typingsJapgolly.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.clockwise
+import typingsJapgolly.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.counterclockwise
+import typingsJapgolly.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.round
+import typingsJapgolly.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.square
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CountdownCircleTimer {
-  def apply(
-    colors: ColorType,
-    durationSeconds: Double,
-    gradientUniqueKey: String = null,
-    isLinearGradient: js.UndefOr[Boolean] = js.undefined,
-    isPlaying: js.UndefOr[Boolean] = js.undefined,
-    onComplete: js.UndefOr[CallbackTo[js.UndefOr[(js.Tuple2[Boolean, Double]) | Unit]]] = js.undefined,
-    renderTime: (/* remainingTime */ Double, /* elapsedTime */ Double, /* isPlaying */ Boolean) => CallbackTo[Node] = null,
-    size: Int | Double = null,
-    strokeLinecap: StrokeLinecapType = null,
-    strokeWidth: Int | Double = null,
-    trailColor: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, typingsJapgolly.reactCountdownCircleTimer.mod.CountdownCircleTimer, Unit, Props] = {
-    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], durationSeconds = durationSeconds.asInstanceOf[js.Any])
   
-      if (gradientUniqueKey != null) __obj.updateDynamic("gradientUniqueKey")(gradientUniqueKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLinearGradient)) __obj.updateDynamic("isLinearGradient")(isLinearGradient.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPlaying)) __obj.updateDynamic("isPlaying")(isPlaying.asInstanceOf[js.Any])
-    onComplete.foreach(p => __obj.updateDynamic("onComplete")(p.toJsFn))
-    if (renderTime != null) __obj.updateDynamic("renderTime")(js.Any.fromFunction3((t0: /* remainingTime */ scala.Double, t1: /* elapsedTime */ scala.Double, t2: /* isPlaying */ scala.Boolean) => renderTime(t0, t1, t2).runNow()))
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (trailColor != null) __obj.updateDynamic("trailColor")(trailColor.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactCountdownCircleTimer.mod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactCountdownCircleTimer.mod.CountdownCircleTimer](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactCountdownCircleTimer.mod.Props])(children: _*)
+  object MultipleColorsdurationnum {
+    
+    inline def apply(colors: `0ColorHex1ColorHexArrayCo`, colorsTime: `0number1numberArraynumber`, duration: Double): Builder = {
+      val __props = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], colorsTime = colorsTime.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
+      new Builder(js.Array(this.component, __props.asInstanceOf[typingsJapgolly.reactCountdownCircleTimer.anon.MultipleColorsdurationnum]))
+    }
+    
+    @JSImport("react-countdown-circle-timer/lib", "CountdownCircleTimer")
+    @js.native
+    val component: js.Object = js.native
+    
+    @scala.inline
+    open class Builder (val args: js.Array[Any])
+      extends AnyVal
+         with StBuildingComponent[js.Object] {
+      
+      inline def children(value: /* props */ TimeProps => Node): this.type = set("children", js.Any.fromFunction1(value))
+      
+      inline def initialRemainingTime(value: Double): this.type = set("initialRemainingTime", value.asInstanceOf[js.Any])
+      
+      inline def isPlaying(value: Boolean): this.type = set("isPlaying", value.asInstanceOf[js.Any])
+      
+      inline def isSmoothColorTransition(value: Boolean): this.type = set("isSmoothColorTransition", value.asInstanceOf[js.Any])
+      
+      inline def onComplete(value: /* totalElapsedTime */ Double => OnComplete | Unit): this.type = set("onComplete", js.Any.fromFunction1(value))
+      
+      inline def onUpdate(value: /* remainingTime */ Double => Callback): this.type = set("onUpdate", js.Any.fromFunction1((t0: /* remainingTime */ Double) => value(t0).runNow()))
+      
+      inline def rotation(value: clockwise | counterclockwise): this.type = set("rotation", value.asInstanceOf[js.Any])
+      
+      inline def size(value: Double): this.type = set("size", value.asInstanceOf[js.Any])
+      
+      inline def strokeLinecap(value: round | square | butt): this.type = set("strokeLinecap", value.asInstanceOf[js.Any])
+      
+      inline def strokeWidth(value: Double): this.type = set("strokeWidth", value.asInstanceOf[js.Any])
+      
+      inline def trailColor(value: ColorFormat): this.type = set("trailColor", value.asInstanceOf[js.Any])
+      
+      inline def trailStrokeWidth(value: Double): this.type = set("trailStrokeWidth", value.asInstanceOf[js.Any])
+      
+      inline def updateInterval(value: Double): this.type = set("updateInterval", value.asInstanceOf[js.Any])
+    }
+    
+    def withProps(p: typingsJapgolly.reactCountdownCircleTimer.anon.MultipleColorsdurationnum): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("react-countdown-circle-timer", "CountdownCircleTimer")
-  @js.native
-  object componentImport extends js.Object
   
+  object SingleColordurationnumber {
+    
+    inline def apply(colors: ColorFormat, duration: Double): Builder = {
+      val __props = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
+      new Builder(js.Array(this.component, __props.asInstanceOf[typingsJapgolly.reactCountdownCircleTimer.anon.SingleColordurationnumber]))
+    }
+    
+    @JSImport("react-countdown-circle-timer/lib", "CountdownCircleTimer")
+    @js.native
+    val component: js.Object = js.native
+    
+    @scala.inline
+    open class Builder (val args: js.Array[Any])
+      extends AnyVal
+         with StBuildingComponent[js.Object] {
+      
+      inline def children(value: /* props */ TimeProps => Node): this.type = set("children", js.Any.fromFunction1(value))
+      
+      inline def initialRemainingTime(value: Double): this.type = set("initialRemainingTime", value.asInstanceOf[js.Any])
+      
+      inline def isPlaying(value: Boolean): this.type = set("isPlaying", value.asInstanceOf[js.Any])
+      
+      inline def isSmoothColorTransition(value: Boolean): this.type = set("isSmoothColorTransition", value.asInstanceOf[js.Any])
+      
+      inline def onComplete(value: /* totalElapsedTime */ Double => OnComplete | Unit): this.type = set("onComplete", js.Any.fromFunction1(value))
+      
+      inline def onUpdate(value: /* remainingTime */ Double => Callback): this.type = set("onUpdate", js.Any.fromFunction1((t0: /* remainingTime */ Double) => value(t0).runNow()))
+      
+      inline def rotation(value: clockwise | counterclockwise): this.type = set("rotation", value.asInstanceOf[js.Any])
+      
+      inline def size(value: Double): this.type = set("size", value.asInstanceOf[js.Any])
+      
+      inline def strokeLinecap(value: round | square | butt): this.type = set("strokeLinecap", value.asInstanceOf[js.Any])
+      
+      inline def strokeWidth(value: Double): this.type = set("strokeWidth", value.asInstanceOf[js.Any])
+      
+      inline def trailColor(value: ColorFormat): this.type = set("trailColor", value.asInstanceOf[js.Any])
+      
+      inline def trailStrokeWidth(value: Double): this.type = set("trailStrokeWidth", value.asInstanceOf[js.Any])
+      
+      inline def updateInterval(value: Double): this.type = set("updateInterval", value.asInstanceOf[js.Any])
+    }
+    
+    def withProps(p: typingsJapgolly.reactCountdownCircleTimer.anon.SingleColordurationnumber): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
 }
-

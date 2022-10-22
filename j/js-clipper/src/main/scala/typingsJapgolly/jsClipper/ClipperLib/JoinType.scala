@@ -1,35 +1,27 @@
 package typingsJapgolly.jsClipper.ClipperLib
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait JoinType extends js.Object
-
+sealed trait JoinType extends StObject
 @JSGlobal("ClipperLib.JoinType")
 @js.native
-object JoinType extends js.Object {
-  @js.native
-  sealed trait jtMiter extends JoinType
+object JoinType extends StObject {
   
   @js.native
-  sealed trait jtRound extends JoinType
+  sealed trait jtMiter
+    extends StObject
+       with JoinType
   
   @js.native
-  sealed trait jtSquare extends JoinType
+  sealed trait jtRound
+    extends StObject
+       with JoinType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[JoinType with Double] = js.native
-  /* 2 */ @js.native
-  object jtMiter extends TopLevel[jtMiter with Double]
-  
-  /* 1 */ @js.native
-  object jtRound extends TopLevel[jtRound with Double]
-  
-  /* 0 */ @js.native
-  object jtSquare extends TopLevel[jtSquare with Double]
-  
+  @js.native
+  sealed trait jtSquare
+    extends StObject
+       with JoinType
 }
-

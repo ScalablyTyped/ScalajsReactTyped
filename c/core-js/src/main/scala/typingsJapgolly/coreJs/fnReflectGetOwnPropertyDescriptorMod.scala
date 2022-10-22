@@ -1,16 +1,16 @@
 package typingsJapgolly.coreJs
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.PropertyDescriptor
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/reflect/get-own-property-descriptor", JSImport.Namespace)
-@js.native
-object fnReflectGetOwnPropertyDescriptorMod
-  extends TopLevel[
-      js.Function2[/* target */ js.Any, /* propertyKey */ PropertyKey, PropertyDescriptor]
-    ]
-
+object fnReflectGetOwnPropertyDescriptorMod {
+  
+  /* was `typeof core.Reflect.getOwnPropertyDescriptor` */
+  inline def apply(target: Any, propertyKey: PropertyKey): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  
+  @JSImport("core-js/fn/reflect/get-own-property-descriptor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+}

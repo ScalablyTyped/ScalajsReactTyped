@@ -10,10 +10,10 @@ DSL that enables you to navigate and find data within your JSON documents
 | ------------------ | :-------------: |
 | Full name          | jspath |
 | Keywords           | json, path, filter, selection, jspath, jpath, jsonpath |
-| # releases         | 1 |
-| # dependents       | 38 |
-| # downloads        | 809135 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 138497.0 |
+| # stars            | 531.0 |
 
 ## Links
 - [Homepage](https://github.com/dfilatov/jspath)

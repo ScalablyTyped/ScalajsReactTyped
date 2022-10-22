@@ -1,8 +1,8 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.typescript.mod.SignatureDeclaration
@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.typescript.mod.TypeAliasDeclaration
   - typingsJapgolly.typescript.mod.JSDocTemplateTag
 */
-trait DeclarationWithTypeParameterChildren extends DeclarationWithTypeParameters
-
+trait DeclarationWithTypeParameterChildren
+  extends StObject
+     with DeclarationWithTypeParameters

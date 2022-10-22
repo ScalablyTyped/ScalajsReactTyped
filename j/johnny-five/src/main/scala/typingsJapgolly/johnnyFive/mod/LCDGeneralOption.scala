@@ -1,21 +1,30 @@
 package typingsJapgolly.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LCDGeneralOption extends js.Object {
+trait LCDGeneralOption extends StObject {
+  
   var cols: js.UndefOr[Double] = js.undefined
+  
   var rows: js.UndefOr[Double] = js.undefined
 }
-
 object LCDGeneralOption {
-  @scala.inline
-  def apply(cols: Int | Double = null, rows: Int | Double = null): LCDGeneralOption = {
+  
+  inline def apply(): LCDGeneralOption = {
     val __obj = js.Dynamic.literal()
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[LCDGeneralOption]
   }
+  
+  extension [Self <: LCDGeneralOption](x: Self) {
+    
+    inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    
+    inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+    
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+  }
 }
-

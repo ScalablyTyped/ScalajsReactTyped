@@ -11,9 +11,9 @@ A module for sequencing tasks and dependencies
 | Full name          | sequencify |
 | Keywords           | task, sequence, sequencer, compose |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 32278476 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1243682.0 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/robrich/sequencify)

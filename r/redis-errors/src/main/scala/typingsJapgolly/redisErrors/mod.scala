@@ -1,64 +1,66 @@
 package typingsJapgolly.redisErrors
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redis-errors", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("redis-errors", "AbortError")
   @js.native
-  class AbortError () extends Error {
-    var args: js.UndefOr[js.Array[_]] = js.native
+  open class AbortError () extends RedisError {
+    
+    var args: js.UndefOr[js.Array[Any]] = js.native
+    
     var command: js.UndefOr[String] = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
+  @JSImport("redis-errors", "InterruptError")
   @js.native
-  class InterruptError () extends Error {
-    var args: js.UndefOr[js.Array[_]] = js.native
+  open class InterruptError () extends RedisError {
+    
+    var args: js.UndefOr[js.Array[Any]] = js.native
+    
     var command: js.UndefOr[String] = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
+    
     var origin: js.Error = js.native
   }
   
+  @JSImport("redis-errors", "ParserError")
   @js.native
-  class ParserError protected () extends Error {
+  open class ParserError protected () extends RedisError {
     def this(message: String, buffer: String, offset: Double) = this()
+    
     var buffer: String = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
+    
     var offset: Double = js.native
   }
   
+  @JSImport("redis-errors", "RedisError")
   @js.native
-  class RedisError () extends Error {
+  open class RedisError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
   }
   
+  @JSImport("redis-errors", "ReplyError")
   @js.native
-  class ReplyError protected () extends Error {
+  open class ReplyError protected () extends RedisError {
     def this(message: String) = this()
-    var args: js.UndefOr[js.Array[_]] = js.native
+    
+    var args: js.UndefOr[js.Array[Any]] = js.native
+    
     var code: js.UndefOr[String] = js.native
+    
     var command: js.UndefOr[String] = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
-  
 }
-

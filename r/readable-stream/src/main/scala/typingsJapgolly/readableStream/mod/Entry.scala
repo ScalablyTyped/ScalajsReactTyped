@@ -1,21 +1,29 @@
 package typingsJapgolly.readableStream.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ==== BufferList ====
-trait Entry[D] extends js.Object {
+trait Entry[D] extends StObject {
+  
   var data: D
+  
   var next: Entry[D] | Null
 }
-
 object Entry {
-  @scala.inline
-  def apply[D](data: D, next: Entry[D] = null): Entry[D] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+  
+  inline def apply[D](data: D): Entry[D] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], next = null)
     __obj.asInstanceOf[Entry[D]]
   }
+  
+  extension [Self <: Entry[?], D](x: Self & Entry[D]) {
+    
+    inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setNext(value: Entry[D]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    
+    inline def setNextNull: Self = StObject.set(x, "next", null)
+  }
 }
-

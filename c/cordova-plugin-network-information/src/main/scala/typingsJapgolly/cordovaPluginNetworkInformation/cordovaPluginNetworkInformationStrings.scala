@@ -1,19 +1,16 @@
 package typingsJapgolly.cordovaPluginNetworkInformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cordovaPluginNetworkInformationStrings {
-  @js.native
-  sealed trait offline extends js.Object
   
   @js.native
-  sealed trait online extends js.Object
+  sealed trait offline extends StObject
+  inline def offline: offline = "offline".asInstanceOf[offline]
   
-  @scala.inline
-  def offline: offline = "offline".asInstanceOf[offline]
-  @scala.inline
-  def online: online = "online".asInstanceOf[online]
+  @js.native
+  sealed trait online extends StObject
+  inline def online: online = "online".asInstanceOf[online]
 }
-

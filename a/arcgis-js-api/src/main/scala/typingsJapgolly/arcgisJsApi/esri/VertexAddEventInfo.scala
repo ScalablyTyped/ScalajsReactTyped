@@ -1,45 +1,63 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`vertex-add`
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait VertexAddEventInfo
-  extends Object
+  extends StObject
+     with Object
      with CreateToolEventInfo
      with UpdateToolEventInfo {
+  
   /**
-    * An array of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) with [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometries representing the vertices that were added.
+    * An array of x,y coordinates representing the vertices added.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
     */
-  var added: js.Array[Graphic]
+  var added: js.Array[Double]
+  
   /**
     * Type is always `vertex-add`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
     */
   var `type`: `vertex-add`
+  
+  /**
+    * Contains the details of the added vertices to track changes in topology of the geometry.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
+    */
+  var vertices: js.Array[VertexAddEventInfoVertices]
 }
-
 object VertexAddEventInfo {
-  @scala.inline
-  def apply(
-    added: js.Array[Graphic],
+  
+  inline def apply(
+    added: js.Array[Double],
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    `type`: `vertex-add`
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
+    vertices: js.Array[VertexAddEventInfoVertices]
   ): VertexAddEventInfo = {
-    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertices = vertices.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("vertex-add")
     __obj.asInstanceOf[VertexAddEventInfo]
   }
+  
+  extension [Self <: VertexAddEventInfo](x: Self) {
+    
+    inline def setAdded(value: js.Array[Double]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    
+    inline def setAddedVarargs(value: Double*): Self = StObject.set(x, "added", js.Array(value*))
+    
+    inline def setType(value: `vertex-add`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setVertices(value: js.Array[VertexAddEventInfoVertices]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    
+    inline def setVerticesVarargs(value: VertexAddEventInfoVertices*): Self = StObject.set(x, "vertices", js.Array(value*))
+  }
 }
-

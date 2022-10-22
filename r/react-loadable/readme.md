@@ -10,15 +10,12 @@ A higher order component for loading components with promises
 | ------------------ | :-------------: |
 | Full name          | react-loadable |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 414 |
-| # downloads        | 16187096 |
-| # stars            | 20 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1774695.3333333333 |
+| # stars            | 16353.0 |
 
 ## Links
-- [Homepage](https://github.com/thejameskyle/react-loadable#readme)
-- [Bugs](https://github.com/thejameskyle/react-loadable/issues)
-- [Repository](https://github.com/thejameskyle/react-loadable)
 - [Npm](https://www.npmjs.com/package/react-loadable)
     
 

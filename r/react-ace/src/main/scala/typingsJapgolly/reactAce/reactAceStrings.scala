@@ -1,141 +1,172 @@
 package typingsJapgolly.reactAce
 
-import typingsJapgolly.reactAce.editorOptionsMod.EditorEvent
-import typingsJapgolly.reactAce.editorOptionsMod.EditorOption
+import typingsJapgolly.reactAce.libEditorOptionsMod.EditorEvent
+import typingsJapgolly.reactAce.libEditorOptionsMod.EditorOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactAceStrings {
-  @js.native
-  sealed trait ace extends js.Object
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait ace extends StObject
+  inline def ace: ace = "ace".asInstanceOf[ace]
   
   @js.native
-  sealed trait enableBasicAutocompletion extends EditorOption
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait enableLiveAutocompletion extends EditorOption
+  sealed trait enableBasicAutocompletion
+    extends StObject
+       with EditorOption
+  inline def enableBasicAutocompletion: enableBasicAutocompletion = "enableBasicAutocompletion".asInstanceOf[enableBasicAutocompletion]
   
   @js.native
-  sealed trait enableSnippets extends EditorOption
+  sealed trait enableLiveAutocompletion
+    extends StObject
+       with EditorOption
+  inline def enableLiveAutocompletion: enableLiveAutocompletion = "enableLiveAutocompletion".asInstanceOf[enableLiveAutocompletion]
   
   @js.native
-  sealed trait handleOptions extends EditorEvent
+  sealed trait enableSnippets
+    extends StObject
+       with EditorOption
+  inline def enableSnippets: enableSnippets = "enableSnippets".asInstanceOf[enableSnippets]
   
   @js.native
-  sealed trait highlightActiveLine extends EditorOption
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait fullLine extends StObject
+  inline def fullLine: fullLine = "fullLine".asInstanceOf[fullLine]
   
   @js.native
-  sealed trait maxLines extends EditorOption
+  sealed trait handleOptions
+    extends StObject
+       with EditorEvent
+  inline def handleOptions: handleOptions = "handleOptions".asInstanceOf[handleOptions]
   
   @js.native
-  sealed trait minLines extends EditorOption
+  sealed trait highlightActiveLine
+    extends StObject
+       with EditorOption
+  inline def highlightActiveLine: highlightActiveLine = "highlightActiveLine".asInstanceOf[highlightActiveLine]
   
   @js.native
-  sealed trait onBlur extends EditorEvent
+  sealed trait info extends StObject
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait onChange extends EditorEvent
+  sealed trait line extends StObject
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait onCopy extends EditorEvent
+  sealed trait maxLines
+    extends StObject
+       with EditorOption
+  inline def maxLines: maxLines = "maxLines".asInstanceOf[maxLines]
   
   @js.native
-  sealed trait onCursorChange extends EditorEvent
+  sealed trait minLines
+    extends StObject
+       with EditorOption
+  inline def minLines: minLines = "minLines".asInstanceOf[minLines]
   
   @js.native
-  sealed trait onFocus extends EditorEvent
+  sealed trait onBlur
+    extends StObject
+       with EditorEvent
+  inline def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
   
   @js.native
-  sealed trait onInput extends EditorEvent
+  sealed trait onChange
+    extends StObject
+       with EditorEvent
+  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
   
   @js.native
-  sealed trait onPaste extends EditorEvent
+  sealed trait onCopy
+    extends StObject
+       with EditorEvent
+  inline def onCopy: onCopy = "onCopy".asInstanceOf[onCopy]
   
   @js.native
-  sealed trait onScroll extends EditorEvent
+  sealed trait onCursorChange
+    extends StObject
+       with EditorEvent
+  inline def onCursorChange: onCursorChange = "onCursorChange".asInstanceOf[onCursorChange]
   
   @js.native
-  sealed trait onSelectionChange extends EditorEvent
+  sealed trait onFocus
+    extends StObject
+       with EditorEvent
+  inline def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
   
   @js.native
-  sealed trait readOnly extends EditorOption
+  sealed trait onInput
+    extends StObject
+       with EditorEvent
+  inline def onInput: onInput = "onInput".asInstanceOf[onInput]
   
   @js.native
-  sealed trait slim extends js.Object
+  sealed trait onPaste
+    extends StObject
+       with EditorEvent
+  inline def onPaste: onPaste = "onPaste".asInstanceOf[onPaste]
   
   @js.native
-  sealed trait smooth extends js.Object
+  sealed trait onScroll
+    extends StObject
+       with EditorEvent
+  inline def onScroll: onScroll = "onScroll".asInstanceOf[onScroll]
   
   @js.native
-  sealed trait tabSize extends EditorOption
+  sealed trait onSelectionChange
+    extends StObject
+       with EditorEvent
+  inline def onSelectionChange: onSelectionChange = "onSelectionChange".asInstanceOf[onSelectionChange]
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait readOnly
+    extends StObject
+       with EditorOption
+  inline def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
   
   @js.native
-  sealed trait updateRef extends EditorEvent
+  sealed trait screenLine extends StObject
+  inline def screenLine: screenLine = "screenLine".asInstanceOf[screenLine]
   
   @js.native
-  sealed trait wide extends js.Object
+  sealed trait slim extends StObject
+  inline def slim: slim = "slim".asInstanceOf[slim]
   
-  @scala.inline
-  def ace: ace = "ace".asInstanceOf[ace]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def enableBasicAutocompletion: enableBasicAutocompletion = "enableBasicAutocompletion".asInstanceOf[enableBasicAutocompletion]
-  @scala.inline
-  def enableLiveAutocompletion: enableLiveAutocompletion = "enableLiveAutocompletion".asInstanceOf[enableLiveAutocompletion]
-  @scala.inline
-  def enableSnippets: enableSnippets = "enableSnippets".asInstanceOf[enableSnippets]
-  @scala.inline
-  def handleOptions: handleOptions = "handleOptions".asInstanceOf[handleOptions]
-  @scala.inline
-  def highlightActiveLine: highlightActiveLine = "highlightActiveLine".asInstanceOf[highlightActiveLine]
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
-  @scala.inline
-  def maxLines: maxLines = "maxLines".asInstanceOf[maxLines]
-  @scala.inline
-  def minLines: minLines = "minLines".asInstanceOf[minLines]
-  @scala.inline
-  def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
-  @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
-  @scala.inline
-  def onCopy: onCopy = "onCopy".asInstanceOf[onCopy]
-  @scala.inline
-  def onCursorChange: onCursorChange = "onCursorChange".asInstanceOf[onCursorChange]
-  @scala.inline
-  def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
-  @scala.inline
-  def onInput: onInput = "onInput".asInstanceOf[onInput]
-  @scala.inline
-  def onPaste: onPaste = "onPaste".asInstanceOf[onPaste]
-  @scala.inline
-  def onScroll: onScroll = "onScroll".asInstanceOf[onScroll]
-  @scala.inline
-  def onSelectionChange: onSelectionChange = "onSelectionChange".asInstanceOf[onSelectionChange]
-  @scala.inline
-  def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
-  @scala.inline
-  def slim: slim = "slim".asInstanceOf[slim]
-  @scala.inline
-  def smooth: smooth = "smooth".asInstanceOf[smooth]
-  @scala.inline
-  def tabSize: tabSize = "tabSize".asInstanceOf[tabSize]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def updateRef: updateRef = "updateRef".asInstanceOf[updateRef]
-  @scala.inline
-  def wide: wide = "wide".asInstanceOf[wide]
+  @js.native
+  sealed trait smooth extends StObject
+  inline def smooth: smooth = "smooth".asInstanceOf[smooth]
+  
+  @js.native
+  sealed trait tabSize
+    extends StObject
+       with EditorOption
+  inline def tabSize: tabSize = "tabSize".asInstanceOf[tabSize]
+  
+  @js.native
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait updateRef
+    extends StObject
+       with EditorEvent
+  inline def updateRef: updateRef = "updateRef".asInstanceOf[updateRef]
+  
+  @js.native
+  sealed trait warning extends StObject
+  inline def warning: warning = "warning".asInstanceOf[warning]
+  
+  @js.native
+  sealed trait wide extends StObject
+  inline def wide: wide = "wide".asInstanceOf[wide]
 }
-

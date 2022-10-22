@@ -1,24 +1,22 @@
 package typingsJapgolly.highcharts.mod
 
+import typingsJapgolly.highcharts.highchartsStrings.day_
+import typingsJapgolly.highcharts.highchartsStrings.month_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.highcharts.highchartsStrings.day
-  - typingsJapgolly.highcharts.highchartsStrings.month
+  - typingsJapgolly.highcharts.highchartsStrings.day_
+  - typingsJapgolly.highcharts.highchartsStrings.month_
   - typingsJapgolly.highcharts.highchartsStrings.year
 */
-trait OptionsPointIntervalUnitValue extends js.Object
-
+trait OptionsPointIntervalUnitValue extends StObject
 object OptionsPointIntervalUnitValue {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def day: typingsJapgolly.highcharts.highchartsStrings.day = this.cast("day")
-  @scala.inline
-  def month: typingsJapgolly.highcharts.highchartsStrings.month = this.cast("month")
-  @scala.inline
-  def year: typingsJapgolly.highcharts.highchartsStrings.year = this.cast("year")
+  
+  inline def day: day_ = "day".asInstanceOf[day_]
+  
+  inline def month: month_ = "month".asInstanceOf[month_]
+  
+  inline def year: typingsJapgolly.highcharts.highchartsStrings.year = "year".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.year]
 }
-

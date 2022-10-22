@@ -1,35 +1,28 @@
 package typingsJapgolly.devextreme.mod.default
 
-import typingsJapgolly.devextreme.mod.DevExpress.ui.format
+import typingsJapgolly.devextreme.mod.DevExpress.ui.Format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "localization")
-@js.native
-class localization ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.localization
-
-/* static members */
-@JSImport("devextreme", "localization")
-@js.native
-object localization extends js.Object {
-  /** Converts a Date object to a string using the specified format. */
-  def formatDate(value: js.Date, format: format): String = js.native
-  /** Substitutes the provided value(s) for placeholders in a message that the key specifies. */
-  def formatMessage(key: String, value: String): String = js.native
-  def formatMessage(key: String, value: js.Array[String]): String = js.native
-  /** Converts a numeric value to a string using the specified format. */
-  def formatNumber(value: Double, format: format): String = js.native
-  /** Loads localized messages. */
-  def loadMessages(messages: js.Any): Unit = js.native
-  /** Gets the current locale identifier. */
-  def locale(): String = js.native
-  /** Sets the current locale identifier. */
-  def locale(locale: String): Unit = js.native
-  /** Parses a string into a Date object. */
-  def parseDate(text: String, format: format): js.Date = js.native
-  /** Parses a string into a numeric value. */
-  def parseNumber(text: String, format: format): Double = js.native
+object localization {
+  
+  @JSImport("devextreme", "default.localization")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def formatDate(value: js.Date, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def formatMessage(key: String, values: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMessage")(scala.List(key.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  
+  inline def formatNumber(value: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def loadMessages(messages: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadMessages")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def locale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[String]
+  inline def locale(locale: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(locale.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def parseDate(text: String, format: Format): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  
+  inline def parseNumber(text: String, format: Format): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("parseNumber")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

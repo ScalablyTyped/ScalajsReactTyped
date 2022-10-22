@@ -1,53 +1,63 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartTextVerticalAlignment extends js.Object
-
+sealed trait ChartTextVerticalAlignment extends StObject
 /**
-  *
   * Represents the vertical alignment for the specified object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartTextVerticalAlignment")
 @js.native
-object ChartTextVerticalAlignment extends js.Object {
+object ChartTextVerticalAlignment extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait bottom extends ChartTextVerticalAlignment
+  sealed trait bottom
+    extends StObject
+       with ChartTextVerticalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait center extends ChartTextVerticalAlignment
+  sealed trait center
+    extends StObject
+       with ChartTextVerticalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait distributed extends ChartTextVerticalAlignment
+  sealed trait distributed
+    extends StObject
+       with ChartTextVerticalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait justify extends ChartTextVerticalAlignment
+  sealed trait justify
+    extends StObject
+       with ChartTextVerticalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait top extends ChartTextVerticalAlignment
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartTextVerticalAlignment with String] = js.native
-  /* "Bottom" */ @js.native
-  object bottom extends TopLevel[bottom with String]
-  
-  /* "Center" */ @js.native
-  object center extends TopLevel[center with String]
-  
-  /* "Distributed" */ @js.native
-  object distributed extends TopLevel[distributed with String]
-  
-  /* "Justify" */ @js.native
-  object justify extends TopLevel[justify with String]
-  
-  /* "Top" */ @js.native
-  object top extends TopLevel[top with String]
-  
+  sealed trait top
+    extends StObject
+       with ChartTextVerticalAlignment
 }
-

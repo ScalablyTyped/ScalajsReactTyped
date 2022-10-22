@@ -1,46 +1,72 @@
 package typingsJapgolly.materialSnackbar
 
+import org.scalajs.dom.KeyboardEvent
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.materialBase.foundationMod.MDCFoundation
 import typingsJapgolly.materialSnackbar.adapterMod.MDCSnackbarAdapter
-import typingsJapgolly.std.EventListener
-import typingsJapgolly.std.Event_
+import typingsJapgolly.materialSnackbar.anon.PartialMDCSnackbarAdapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/snackbar/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
+  
+  @JSImport("@material/snackbar/foundation", JSImport.Default)
   @js.native
-  trait MDCSnackbarData extends js.Object {
-    @JSName("actionHandler")
-    var actionHandler_Original: EventListener = js.native
-    var actionOnBottom: js.UndefOr[Boolean] = js.native
-    var actionText: String = js.native
-    var message: String = js.native
-    var multiline: js.UndefOr[Boolean] = js.native
-    var timeout: js.UndefOr[Double] = js.native
-    def actionHandler(evt: Event_): Unit = js.native
+  open class default () extends MDCSnackbarFoundation {
+    def this(adapter: PartialMDCSnackbarAdapter) = this()
   }
   
+  @JSImport("@material/snackbar/foundation", "MDCSnackbarFoundation")
   @js.native
-  trait MDCSnackbarFoundation
-    extends typingsJapgolly.materialBase.foundationMod.default[MDCSnackbarAdapter] {
-    val active: Boolean = js.native
-    def dismissesOnAction(): Boolean = js.native
-    def setDismissOnAction(dismissOnAction: Boolean): Unit = js.native
-    def show(data: MDCSnackbarData): Unit = js.native
+  open class MDCSnackbarFoundation () extends MDCFoundation[MDCSnackbarAdapter] {
+    def this(adapter: PartialMDCSnackbarAdapter) = this()
+    
+    /* private */ var animationFrame: Any = js.native
+    
+    /* private */ var animationTimer: Any = js.native
+    
+    /* private */ var autoDismissTimeoutMs: Any = js.native
+    
+    /* private */ var autoDismissTimer: Any = js.native
+    
+    /* private */ var clearAutoDismissTimer: Any = js.native
+    
+    /**
+      * @param reason Why the snackbar was closed. Value will be passed to CLOSING_EVENT and CLOSED_EVENT via the
+      *     `event.detail.reason` property. Standard values are REASON_ACTION and REASON_DISMISS, but custom
+      *     client-specific values may also be used if desired.
+      */
+    def close(): Unit = js.native
+    def close(reason: String): Unit = js.native
+    
+    /* private */ var closeOnEscape: Any = js.native
+    
+    def getCloseOnEscape(): Boolean = js.native
+    
+    def getTimeoutMs(): Double = js.native
+    
+    def handleActionButtonClick(_evt: MouseEvent): Unit = js.native
+    
+    def handleActionIconClick(_evt: MouseEvent): Unit = js.native
+    
+    /* private */ var handleAnimationTimerEnd: Any = js.native
+    
+    def handleKeyDown(evt: KeyboardEvent): Unit = js.native
+    
+    def isOpen(): Boolean = js.native
+    
+    def open(): Unit = js.native
+    
+    /* private */ var opened: Any = js.native
+    
+    /**
+      * Runs the given logic on the next animation frame, using setTimeout to factor in Firefox reflow behavior.
+      */
+    /* private */ var runNextAnimationFrame: Any = js.native
+    
+    def setCloseOnEscape(closeOnEscape: Boolean): Unit = js.native
+    
+    def setTimeoutMs(timeoutMs: Double): Unit = js.native
   }
-  
-  @js.native
-  class default () extends MDCSnackbarFoundation
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    val cssClasses: typingsJapgolly.materialSnackbar.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCSnackbarAdapter = js.native
-    val strings: typingsJapgolly.materialSnackbar.constantsMod.strings = js.native
-  }
-  
 }
-

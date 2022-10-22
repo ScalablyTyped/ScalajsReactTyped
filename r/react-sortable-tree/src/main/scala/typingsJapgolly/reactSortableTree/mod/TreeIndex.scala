@@ -1,19 +1,22 @@
 package typingsJapgolly.reactSortableTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeIndex extends js.Object {
+trait TreeIndex extends StObject {
+  
   var treeIndex: Double
 }
-
 object TreeIndex {
-  @scala.inline
-  def apply(treeIndex: Double): TreeIndex = {
-    val __obj = js.Dynamic.literal(treeIndex = treeIndex.asInstanceOf[js.Any])
   
+  inline def apply(treeIndex: Double): TreeIndex = {
+    val __obj = js.Dynamic.literal(treeIndex = treeIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeIndex]
   }
+  
+  extension [Self <: TreeIndex](x: Self) {
+    
+    inline def setTreeIndex(value: Double): Self = StObject.set(x, "treeIndex", value.asInstanceOf[js.Any])
+  }
 }
-

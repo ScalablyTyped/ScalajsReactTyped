@@ -8,206 +8,240 @@ import typingsJapgolly.applepayjs.ApplePayJS.ApplePayMerchantCapability
 import typingsJapgolly.applepayjs.ApplePayJS.ApplePayPaymentMethodType
 import typingsJapgolly.applepayjs.ApplePayJS.ApplePayPaymentPassActivationState
 import typingsJapgolly.applepayjs.ApplePayJS.ApplePayShippingType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object applepayjsStrings {
-  @js.native
-  sealed trait activated extends ApplePayPaymentPassActivationState
   
   @js.native
-  sealed trait activating extends ApplePayPaymentPassActivationState
+  sealed trait activated
+    extends StObject
+       with ApplePayPaymentPassActivationState
+  inline def activated: activated = "activated".asInstanceOf[activated]
   
   @js.native
-  sealed trait addressLines extends ApplePayErrorContactField
+  sealed trait activating
+    extends StObject
+       with ApplePayPaymentPassActivationState
+  inline def activating: activating = "activating".asInstanceOf[activating]
   
   @js.native
-  sealed trait addressUnserviceable extends ApplePayErrorCode
+  sealed trait addressLines
+    extends StObject
+       with ApplePayErrorContactField
+  inline def addressLines: addressLines = "addressLines".asInstanceOf[addressLines]
   
   @js.native
-  sealed trait administrativeArea extends ApplePayErrorContactField
+  sealed trait addressUnserviceable
+    extends StObject
+       with ApplePayErrorCode
+  inline def addressUnserviceable: addressUnserviceable = "addressUnserviceable".asInstanceOf[addressUnserviceable]
   
   @js.native
-  sealed trait billingContactInvalid extends ApplePayErrorCode
+  sealed trait administrativeArea
+    extends StObject
+       with ApplePayErrorContactField
+  inline def administrativeArea: administrativeArea = "administrativeArea".asInstanceOf[administrativeArea]
   
   @js.native
-  sealed trait country extends ApplePayErrorContactField
+  sealed trait billingContactInvalid
+    extends StObject
+       with ApplePayErrorCode
+  inline def billingContactInvalid: billingContactInvalid = "billingContactInvalid".asInstanceOf[billingContactInvalid]
   
   @js.native
-  sealed trait countryCode extends ApplePayErrorContactField
+  sealed trait country
+    extends StObject
+       with ApplePayErrorContactField
+  inline def country: country = "country".asInstanceOf[country]
   
   @js.native
-  sealed trait credit extends ApplePayPaymentMethodType
+  sealed trait countryCode
+    extends StObject
+       with ApplePayErrorContactField
+  inline def countryCode: countryCode = "countryCode".asInstanceOf[countryCode]
   
   @js.native
-  sealed trait deactivated extends ApplePayPaymentPassActivationState
+  sealed trait credit
+    extends StObject
+       with ApplePayPaymentMethodType
+  inline def credit: credit = "credit".asInstanceOf[credit]
   
   @js.native
-  sealed trait debit extends ApplePayPaymentMethodType
+  sealed trait deactivated
+    extends StObject
+       with ApplePayPaymentPassActivationState
+  inline def deactivated: deactivated = "deactivated".asInstanceOf[deactivated]
   
   @js.native
-  sealed trait delivery extends ApplePayShippingType
+  sealed trait debit
+    extends StObject
+       with ApplePayPaymentMethodType
+  inline def debit: debit = "debit".asInstanceOf[debit]
   
   @js.native
-  sealed trait email extends ApplePayContactField
+  sealed trait delivery
+    extends StObject
+       with ApplePayShippingType
+  inline def delivery: delivery = "delivery".asInstanceOf[delivery]
   
   @js.native
-  sealed trait emailAddress extends ApplePayErrorContactField
+  sealed trait email
+    extends StObject
+       with ApplePayContactField
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait `final` extends ApplePayLineItemType
+  sealed trait emailAddress
+    extends StObject
+       with ApplePayErrorContactField
+  inline def emailAddress: emailAddress = "emailAddress".asInstanceOf[emailAddress]
   
   @js.native
-  sealed trait locality extends ApplePayErrorContactField
+  sealed trait `final`
+    extends StObject
+       with ApplePayLineItemType
+  inline def `final`: `final` = "final".asInstanceOf[`final`]
+  
+  @js.native
+  sealed trait locality
+    extends StObject
+       with ApplePayErrorContactField
+  inline def locality: locality = "locality".asInstanceOf[locality]
   
   @js.native
   sealed trait name
-    extends ApplePayContactField
+    extends StObject
+       with ApplePayContactField
        with ApplePayErrorContactField
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait pending extends ApplePayLineItemType
+  sealed trait pending
+    extends StObject
+       with ApplePayLineItemType
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
-  sealed trait phone extends ApplePayContactField
+  sealed trait phone
+    extends StObject
+       with ApplePayContactField
+  inline def phone: phone = "phone".asInstanceOf[phone]
   
   @js.native
-  sealed trait phoneNumber extends ApplePayErrorContactField
+  sealed trait phoneNumber
+    extends StObject
+       with ApplePayErrorContactField
+  inline def phoneNumber: phoneNumber = "phoneNumber".asInstanceOf[phoneNumber]
   
   @js.native
   sealed trait phoneticName
-    extends ApplePayContactField
+    extends StObject
+       with ApplePayContactField
        with ApplePayErrorContactField
+  inline def phoneticName: phoneticName = "phoneticName".asInstanceOf[phoneticName]
   
   @js.native
   sealed trait postalAddress
-    extends ApplePayContactField
+    extends StObject
+       with ApplePayContactField
        with ApplePayErrorContactField
+  inline def postalAddress: postalAddress = "postalAddress".asInstanceOf[postalAddress]
   
   @js.native
-  sealed trait postalCode extends ApplePayErrorContactField
+  sealed trait postalCode
+    extends StObject
+       with ApplePayErrorContactField
+  inline def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
   
   @js.native
-  sealed trait prepaid extends ApplePayPaymentMethodType
+  sealed trait prepaid
+    extends StObject
+       with ApplePayPaymentMethodType
+  inline def prepaid: prepaid = "prepaid".asInstanceOf[prepaid]
   
   @js.native
-  sealed trait requiresActivation extends ApplePayPaymentPassActivationState
+  sealed trait requiresActivation
+    extends StObject
+       with ApplePayPaymentPassActivationState
+  inline def requiresActivation: requiresActivation = "requiresActivation".asInstanceOf[requiresActivation]
   
   @js.native
-  sealed trait servicePickup extends ApplePayShippingType
+  sealed trait servicePickup
+    extends StObject
+       with ApplePayShippingType
+  inline def servicePickup: servicePickup = "servicePickup".asInstanceOf[servicePickup]
   
   @js.native
-  sealed trait shipping extends ApplePayShippingType
+  sealed trait shipping
+    extends StObject
+       with ApplePayShippingType
+  inline def shipping: shipping = "shipping".asInstanceOf[shipping]
   
   @js.native
-  sealed trait shippingContactInvalid extends ApplePayErrorCode
+  sealed trait shippingContactInvalid
+    extends StObject
+       with ApplePayErrorCode
+  inline def shippingContactInvalid: shippingContactInvalid = "shippingContactInvalid".asInstanceOf[shippingContactInvalid]
   
   @js.native
-  sealed trait store extends ApplePayPaymentMethodType
+  sealed trait store
+    extends StObject
+       with ApplePayPaymentMethodType
+  inline def store: store = "store".asInstanceOf[store]
   
   @js.native
-  sealed trait storePickup extends ApplePayShippingType
+  sealed trait storePickup
+    extends StObject
+       with ApplePayShippingType
+  inline def storePickup: storePickup = "storePickup".asInstanceOf[storePickup]
   
   @js.native
-  sealed trait subAdministrativeArea extends ApplePayErrorContactField
+  sealed trait subAdministrativeArea
+    extends StObject
+       with ApplePayErrorContactField
+  inline def subAdministrativeArea: subAdministrativeArea = "subAdministrativeArea".asInstanceOf[subAdministrativeArea]
   
   @js.native
-  sealed trait subLocality extends ApplePayErrorContactField
+  sealed trait subLocality
+    extends StObject
+       with ApplePayErrorContactField
+  inline def subLocality: subLocality = "subLocality".asInstanceOf[subLocality]
   
   @js.native
-  sealed trait supports3DS extends ApplePayMerchantCapability
+  sealed trait supports3DS
+    extends StObject
+       with ApplePayMerchantCapability
+  inline def supports3DS: supports3DS = "supports3DS".asInstanceOf[supports3DS]
   
   @js.native
-  sealed trait supportsCredit extends ApplePayMerchantCapability
+  sealed trait supportsCredit
+    extends StObject
+       with ApplePayMerchantCapability
+  inline def supportsCredit: supportsCredit = "supportsCredit".asInstanceOf[supportsCredit]
   
   @js.native
-  sealed trait supportsDebit extends ApplePayMerchantCapability
+  sealed trait supportsDebit
+    extends StObject
+       with ApplePayMerchantCapability
+  inline def supportsDebit: supportsDebit = "supportsDebit".asInstanceOf[supportsDebit]
   
   @js.native
-  sealed trait supportsEMV extends ApplePayMerchantCapability
+  sealed trait supportsEMV
+    extends StObject
+       with ApplePayMerchantCapability
+  inline def supportsEMV: supportsEMV = "supportsEMV".asInstanceOf[supportsEMV]
   
   @js.native
-  sealed trait suspended extends ApplePayPaymentPassActivationState
+  sealed trait suspended
+    extends StObject
+       with ApplePayPaymentPassActivationState
+  inline def suspended: suspended = "suspended".asInstanceOf[suspended]
   
   @js.native
-  sealed trait unknown extends ApplePayErrorCode
-  
-  @scala.inline
-  def activated: activated = "activated".asInstanceOf[activated]
-  @scala.inline
-  def activating: activating = "activating".asInstanceOf[activating]
-  @scala.inline
-  def addressLines: addressLines = "addressLines".asInstanceOf[addressLines]
-  @scala.inline
-  def addressUnserviceable: addressUnserviceable = "addressUnserviceable".asInstanceOf[addressUnserviceable]
-  @scala.inline
-  def administrativeArea: administrativeArea = "administrativeArea".asInstanceOf[administrativeArea]
-  @scala.inline
-  def billingContactInvalid: billingContactInvalid = "billingContactInvalid".asInstanceOf[billingContactInvalid]
-  @scala.inline
-  def country: country = "country".asInstanceOf[country]
-  @scala.inline
-  def countryCode: countryCode = "countryCode".asInstanceOf[countryCode]
-  @scala.inline
-  def credit: credit = "credit".asInstanceOf[credit]
-  @scala.inline
-  def deactivated: deactivated = "deactivated".asInstanceOf[deactivated]
-  @scala.inline
-  def debit: debit = "debit".asInstanceOf[debit]
-  @scala.inline
-  def delivery: delivery = "delivery".asInstanceOf[delivery]
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
-  def emailAddress: emailAddress = "emailAddress".asInstanceOf[emailAddress]
-  @scala.inline
-  def `final`: `final` = "final".asInstanceOf[`final`]
-  @scala.inline
-  def locality: locality = "locality".asInstanceOf[locality]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
-  @scala.inline
-  def phone: phone = "phone".asInstanceOf[phone]
-  @scala.inline
-  def phoneNumber: phoneNumber = "phoneNumber".asInstanceOf[phoneNumber]
-  @scala.inline
-  def phoneticName: phoneticName = "phoneticName".asInstanceOf[phoneticName]
-  @scala.inline
-  def postalAddress: postalAddress = "postalAddress".asInstanceOf[postalAddress]
-  @scala.inline
-  def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
-  @scala.inline
-  def prepaid: prepaid = "prepaid".asInstanceOf[prepaid]
-  @scala.inline
-  def requiresActivation: requiresActivation = "requiresActivation".asInstanceOf[requiresActivation]
-  @scala.inline
-  def servicePickup: servicePickup = "servicePickup".asInstanceOf[servicePickup]
-  @scala.inline
-  def shipping: shipping = "shipping".asInstanceOf[shipping]
-  @scala.inline
-  def shippingContactInvalid: shippingContactInvalid = "shippingContactInvalid".asInstanceOf[shippingContactInvalid]
-  @scala.inline
-  def store: store = "store".asInstanceOf[store]
-  @scala.inline
-  def storePickup: storePickup = "storePickup".asInstanceOf[storePickup]
-  @scala.inline
-  def subAdministrativeArea: subAdministrativeArea = "subAdministrativeArea".asInstanceOf[subAdministrativeArea]
-  @scala.inline
-  def subLocality: subLocality = "subLocality".asInstanceOf[subLocality]
-  @scala.inline
-  def supports3DS: supports3DS = "supports3DS".asInstanceOf[supports3DS]
-  @scala.inline
-  def supportsCredit: supportsCredit = "supportsCredit".asInstanceOf[supportsCredit]
-  @scala.inline
-  def supportsDebit: supportsDebit = "supportsDebit".asInstanceOf[supportsDebit]
-  @scala.inline
-  def supportsEMV: supportsEMV = "supportsEMV".asInstanceOf[supportsEMV]
-  @scala.inline
-  def suspended: suspended = "suspended".asInstanceOf[suspended]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  sealed trait unknown
+    extends StObject
+       with ApplePayErrorCode
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
 }
-

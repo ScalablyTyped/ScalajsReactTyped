@@ -1,24 +1,30 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AesCtrParams extends Algorithm {
-  var counter: scala.scalajs.js.typedarray.Int8Array | scala.scalajs.js.typedarray.Int16Array | scala.scalajs.js.typedarray.Int32Array | scala.scalajs.js.typedarray.Uint8Array | scala.scalajs.js.typedarray.Uint16Array | scala.scalajs.js.typedarray.Uint32Array | scala.scalajs.js.typedarray.Uint8ClampedArray | scala.scalajs.js.typedarray.Float32Array | scala.scalajs.js.typedarray.Float64Array | scala.scalajs.js.typedarray.DataView | scala.scalajs.js.typedarray.ArrayBuffer
+trait AesCtrParams
+  extends StObject
+     with Algorithm {
+  
+  /* standard dom */
+  var counter: BufferSource
+  
+  /* standard dom */
   var length: Double
 }
-
 object AesCtrParams {
-  @scala.inline
-  def apply(
-    counter: scala.scalajs.js.typedarray.Int8Array | scala.scalajs.js.typedarray.Int16Array | scala.scalajs.js.typedarray.Int32Array | scala.scalajs.js.typedarray.Uint8Array | scala.scalajs.js.typedarray.Uint16Array | scala.scalajs.js.typedarray.Uint32Array | scala.scalajs.js.typedarray.Uint8ClampedArray | scala.scalajs.js.typedarray.Float32Array | scala.scalajs.js.typedarray.Float64Array | scala.scalajs.js.typedarray.DataView | scala.scalajs.js.typedarray.ArrayBuffer,
-    length: Double,
-    name: java.lang.String
-  ): AesCtrParams = {
-    val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
+  inline def apply(counter: BufferSource, length: Double, name: java.lang.String): AesCtrParams = {
+    val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AesCtrParams]
   }
+  
+  extension [Self <: AesCtrParams](x: Self) {
+    
+    inline def setCounter(value: BufferSource): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+  }
 }
-

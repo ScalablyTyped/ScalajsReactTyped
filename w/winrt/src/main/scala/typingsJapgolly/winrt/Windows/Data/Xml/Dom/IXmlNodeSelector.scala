@@ -1,31 +1,39 @@
 package typingsJapgolly.winrt.Windows.Data.Xml.Dom
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IXmlNodeSelector extends js.Object {
+trait IXmlNodeSelector extends StObject {
+  
   def selectNodes(xpath: String): XmlNodeList
-  def selectNodesNS(xpath: String, namespaces: js.Any): XmlNodeList
+  
+  def selectNodesNS(xpath: String, namespaces: Any): XmlNodeList
+  
   def selectSingleNode(xpath: String): IXmlNode
-  def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode
+  
+  def selectSingleNodeNS(xpath: String, namespaces: Any): IXmlNode
 }
-
 object IXmlNodeSelector {
-  @scala.inline
-  def apply(
-    selectNodes: String => CallbackTo[XmlNodeList],
-    selectNodesNS: (String, js.Any) => CallbackTo[XmlNodeList],
-    selectSingleNode: String => CallbackTo[IXmlNode],
-    selectSingleNodeNS: (String, js.Any) => CallbackTo[IXmlNode]
+  
+  inline def apply(
+    selectNodes: String => XmlNodeList,
+    selectNodesNS: (String, Any) => XmlNodeList,
+    selectSingleNode: String => IXmlNode,
+    selectSingleNodeNS: (String, Any) => IXmlNode
   ): IXmlNodeSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selectNodes")(js.Any.fromFunction1((t0: java.lang.String) => selectNodes(t0).runNow()))
-    __obj.updateDynamic("selectNodesNS")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Any) => selectNodesNS(t0, t1).runNow()))
-    __obj.updateDynamic("selectSingleNode")(js.Any.fromFunction1((t0: java.lang.String) => selectSingleNode(t0).runNow()))
-    __obj.updateDynamic("selectSingleNodeNS")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Any) => selectSingleNodeNS(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(selectNodes = js.Any.fromFunction1(selectNodes), selectNodesNS = js.Any.fromFunction2(selectNodesNS), selectSingleNode = js.Any.fromFunction1(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction2(selectSingleNodeNS))
     __obj.asInstanceOf[IXmlNodeSelector]
   }
+  
+  extension [Self <: IXmlNodeSelector](x: Self) {
+    
+    inline def setSelectNodes(value: String => XmlNodeList): Self = StObject.set(x, "selectNodes", js.Any.fromFunction1(value))
+    
+    inline def setSelectNodesNS(value: (String, Any) => XmlNodeList): Self = StObject.set(x, "selectNodesNS", js.Any.fromFunction2(value))
+    
+    inline def setSelectSingleNode(value: String => IXmlNode): Self = StObject.set(x, "selectSingleNode", js.Any.fromFunction1(value))
+    
+    inline def setSelectSingleNodeNS(value: (String, Any) => IXmlNode): Self = StObject.set(x, "selectSingleNodeNS", js.Any.fromFunction2(value))
+  }
 }
-

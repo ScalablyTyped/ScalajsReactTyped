@@ -1,24 +1,32 @@
 package typingsJapgolly.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReGeocodePoi extends js.Object {
+trait ReGeocodePoi extends StObject {
+  
   var address: String
+  
   var businessArea: String
+  
   var direction: String
+  
   var distance: Double
+  
   var id: String
+  
   var location: LngLat
+  
   var name: String
+  
   var tel: String
+  
   var `type`: String
 }
-
 object ReGeocodePoi {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     address: String,
     businessArea: String,
     direction: String,
@@ -33,5 +41,25 @@ object ReGeocodePoi {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReGeocodePoi]
   }
+  
+  extension [Self <: ReGeocodePoi](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setBusinessArea(value: String): Self = StObject.set(x, "businessArea", value.asInstanceOf[js.Any])
+    
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setTel(value: String): Self = StObject.set(x, "tel", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

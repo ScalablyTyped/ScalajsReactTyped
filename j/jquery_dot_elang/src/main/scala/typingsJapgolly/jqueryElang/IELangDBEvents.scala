@@ -1,28 +1,40 @@
 package typingsJapgolly.jqueryElang
 
 import typingsJapgolly.jquery.JQueryDeferred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IELangDBEvents extends js.Object {
-  var insert: JQueryDeferred[_]
-  var modify: JQueryDeferred[_]
-  var remove: JQueryDeferred[_]
-  var select: JQueryDeferred[_]
+trait IELangDBEvents extends StObject {
+  
+  var insert: JQueryDeferred[Any]
+  
+  var modify: JQueryDeferred[Any]
+  
+  var remove: JQueryDeferred[Any]
+  
+  var select: JQueryDeferred[Any]
 }
-
 object IELangDBEvents {
-  @scala.inline
-  def apply(
-    insert: JQueryDeferred[_],
-    modify: JQueryDeferred[_],
-    remove: JQueryDeferred[_],
-    select: JQueryDeferred[_]
+  
+  inline def apply(
+    insert: JQueryDeferred[Any],
+    modify: JQueryDeferred[Any],
+    remove: JQueryDeferred[Any],
+    select: JQueryDeferred[Any]
   ): IELangDBEvents = {
     val __obj = js.Dynamic.literal(insert = insert.asInstanceOf[js.Any], modify = modify.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IELangDBEvents]
   }
+  
+  extension [Self <: IELangDBEvents](x: Self) {
+    
+    inline def setInsert(value: JQueryDeferred[Any]): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+    
+    inline def setModify(value: JQueryDeferred[Any]): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
+    
+    inline def setRemove(value: JQueryDeferred[Any]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    
+    inline def setSelect(value: JQueryDeferred[Any]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+  }
 }
-

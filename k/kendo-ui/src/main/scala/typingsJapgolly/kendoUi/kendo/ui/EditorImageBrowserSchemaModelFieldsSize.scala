@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorImageBrowserSchemaModelFieldsSize extends js.Object {
+trait EditorImageBrowserSchemaModelFieldsSize extends StObject {
+  
   var field: js.UndefOr[String] = js.undefined
+  
   var parse: js.UndefOr[js.Function] = js.undefined
 }
-
 object EditorImageBrowserSchemaModelFieldsSize {
-  @scala.inline
-  def apply(field: String = null, parse: js.Function = null): EditorImageBrowserSchemaModelFieldsSize = {
+  
+  inline def apply(): EditorImageBrowserSchemaModelFieldsSize = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorImageBrowserSchemaModelFieldsSize]
   }
+  
+  extension [Self <: EditorImageBrowserSchemaModelFieldsSize](x: Self) {
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setParse(value: js.Function): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+  }
 }
-

@@ -1,27 +1,23 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`-4105`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
+import typingsJapgolly.activexWord.activexWordInts.`-4105`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`-4105`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`-4105`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
 */
-trait XlCategoryType extends js.Object
-
+trait XlCategoryType extends StObject
 object XlCategoryType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlAutomaticScale: `-4105` = this.cast(-4105)
-  @scala.inline
-  def xlCategoryScale: `2` = this.cast(2)
-  @scala.inline
-  def xlTimeScale: `3` = this.cast(3)
+  
+  inline def xlAutomaticScale: `-4105` = -4105.asInstanceOf[`-4105`]
+  
+  inline def xlCategoryScale: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlTimeScale: `3` = 3.asInstanceOf[`3`]
 }
-

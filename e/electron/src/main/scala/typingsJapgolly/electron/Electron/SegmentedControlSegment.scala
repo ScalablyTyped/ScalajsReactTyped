@@ -1,33 +1,46 @@
 package typingsJapgolly.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SegmentedControlSegment extends js.Object {
-  // Docs: http://electronjs.org/docs/api/structures/segmented-control-segment
+trait SegmentedControlSegment extends StObject {
+  
+  // Docs: https://electronjs.org/docs/api/structures/segmented-control-segment
   /**
     * Whether this segment is selectable. Default: true.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The image to appear in this segment.
     */
   var icon: js.UndefOr[NativeImage_] = js.undefined
+  
   /**
     * The text to appear in this segment.
     */
   var label: js.UndefOr[String] = js.undefined
 }
-
 object SegmentedControlSegment {
-  @scala.inline
-  def apply(enabled: js.UndefOr[Boolean] = js.undefined, icon: NativeImage_ = null, label: String = null): SegmentedControlSegment = {
+  
+  inline def apply(): SegmentedControlSegment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentedControlSegment]
   }
+  
+  extension [Self <: SegmentedControlSegment](x: Self) {
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setIcon(value: NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+  }
 }
-

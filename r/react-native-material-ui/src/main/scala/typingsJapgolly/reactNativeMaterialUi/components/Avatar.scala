@@ -1,51 +1,40 @@
 package typingsJapgolly.reactNativeMaterialUi.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNative.mod.Image
-import typingsJapgolly.reactNativeMaterialUi.AnonContent
+import typingsJapgolly.reactNativeMaterialUi.anon.Content
 import typingsJapgolly.reactNativeMaterialUi.mod.AvatarProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Avatar {
-  def apply(
-    icon: String = null,
-    iconColor: String = null,
-    iconSize: Int | Double = null,
-    image: Image = null,
-    size: Int | Double = null,
-    style: AnonContent = null,
-    text: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[AvatarProps, typingsJapgolly.reactNativeMaterialUi.mod.Avatar, Unit, AvatarProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeMaterialUi.mod.AvatarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeMaterialUi.mod.Avatar](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeMaterialUi.mod.AvatarProps])(children: _*)
-  }
   @JSImport("react-native-material-ui", "Avatar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeMaterialUi.mod.Avatar] {
+    
+    inline def icon(value: String): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def iconColor(value: String): this.type = set("iconColor", value.asInstanceOf[js.Any])
+    
+    inline def iconSize(value: Double): this.type = set("iconSize", value.asInstanceOf[js.Any])
+    
+    inline def image(value: Image): this.type = set("image", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Double): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: Content): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def text(value: String): this.type = set("text", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Avatar.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: AvatarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilterDropDownClosingEventUIParam extends js.Object {
+trait FilterDropDownClosingEventUIParam extends StObject {
+  
   /**
-  	 * A reference to the drop down.
-  	 */
+    * A reference to the drop down.
+    */
   var dropDownElement: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * A reference to the hierarchy.
-  	 */
-  var hierarchy: js.UndefOr[js.Any] = js.undefined
+    * A reference to the hierarchy.
+    */
+  var hierarchy: js.UndefOr[Any] = js.undefined
 }
-
 object FilterDropDownClosingEventUIParam {
-  @scala.inline
-  def apply(dropDownElement: String = null, hierarchy: js.Any = null): FilterDropDownClosingEventUIParam = {
+  
+  inline def apply(): FilterDropDownClosingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (dropDownElement != null) __obj.updateDynamic("dropDownElement")(dropDownElement.asInstanceOf[js.Any])
-    if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterDropDownClosingEventUIParam]
   }
+  
+  extension [Self <: FilterDropDownClosingEventUIParam](x: Self) {
+    
+    inline def setDropDownElement(value: String): Self = StObject.set(x, "dropDownElement", value.asInstanceOf[js.Any])
+    
+    inline def setDropDownElementUndefined: Self = StObject.set(x, "dropDownElement", js.undefined)
+    
+    inline def setHierarchy(value: Any): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
+    
+    inline def setHierarchyUndefined: Self = StObject.set(x, "hierarchy", js.undefined)
+  }
 }
-

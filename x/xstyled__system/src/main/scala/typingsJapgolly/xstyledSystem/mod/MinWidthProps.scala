@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.MinWidthProperty
+import typingsJapgolly.csstype.mod.Property.MinWidth
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MinWidthProps[TLength] extends js.Object {
-  val minWidth: js.UndefOr[ResponsiveValue[MinWidthProperty[TLength]]] = js.undefined
+trait MinWidthProps[TLength] extends StObject {
+  
+  val minWidth: js.UndefOr[ResponsiveValue[MinWidth[TLength]]] = js.undefined
 }
-
 object MinWidthProps {
-  @scala.inline
-  def apply[TLength](minWidth: ResponsiveValue[MinWidthProperty[TLength]] = null): MinWidthProps[TLength] = {
+  
+  inline def apply[TLength](): MinWidthProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinWidthProps[TLength]]
   }
+  
+  extension [Self <: MinWidthProps[?], TLength](x: Self & MinWidthProps[TLength]) {
+    
+    inline def setMinWidth(value: ResponsiveValue[MinWidth[TLength]]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setMinWidthVarargs(value: MinWidth[TLength]*): Self = StObject.set(x, "minWidth", js.Array(value*))
+  }
 }
-

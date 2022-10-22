@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-json-stable-stringify
 
-Typings are for version 2.0
+Typings are for version 2.1.0
 
 ## Library description:
 deterministic `JSON.stringify()` - a faster version of substack's json-stable-strigify without jsonify
@@ -10,10 +10,10 @@ deterministic `JSON.stringify()` - a faster version of substack's json-stable-st
 | ------------------ | :-------------: |
 | Full name          | fast-json-stable-stringify |
 | Keywords           | json, stringify, deterministic, hash, stable |
-| # releases         | 2 |
-| # dependents       | 136 |
-| # downloads        | 542193859 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2569238633333333E8 |
+| # stars            | 198.0 |
 
 ## Links
 - [Homepage](https://github.com/epoberezkin/fast-json-stable-stringify)
@@ -24,7 +24,7 @@ deterministic `JSON.stringify()` - a faster version of substack's json-stable-st
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

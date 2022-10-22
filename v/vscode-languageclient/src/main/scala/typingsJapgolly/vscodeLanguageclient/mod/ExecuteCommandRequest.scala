@@ -1,14 +1,23 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.ExecuteCommandParams
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.ExecuteCommandRegistrationOptions
+import typingsJapgolly.vscodeLanguageclient.vscodeLanguageclientStrings.workspaceSlashexecuteCommand
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.ExecuteCommandParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.ExecuteCommandRegistrationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "ExecuteCommandRequest")
-@js.native
-object ExecuteCommandRequest extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.RequestType[ExecuteCommandParams, js.Any, Unit, ExecuteCommandRegistrationOptions] = js.native
+object ExecuteCommandRequest {
+  
+  @JSImport("vscode-languageclient", "ExecuteCommandRequest.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageclient", "ExecuteCommandRequest.method")
+  @js.native
+  val method: workspaceSlashexecuteCommand = js.native
+  
+  @JSImport("vscode-languageclient", "ExecuteCommandRequest.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[ExecuteCommandParams, Any, scala.Nothing, Unit, ExecuteCommandRegistrationOptions] = js.native
 }
-

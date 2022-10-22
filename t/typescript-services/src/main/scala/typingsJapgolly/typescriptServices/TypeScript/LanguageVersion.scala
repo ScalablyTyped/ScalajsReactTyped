@@ -1,29 +1,22 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LanguageVersion extends js.Object
-
+sealed trait LanguageVersion extends StObject
 @JSGlobal("TypeScript.LanguageVersion")
 @js.native
-object LanguageVersion extends js.Object {
-  @js.native
-  sealed trait EcmaScript3 extends LanguageVersion
+object LanguageVersion extends StObject {
   
   @js.native
-  sealed trait EcmaScript5 extends LanguageVersion
+  sealed trait EcmaScript3
+    extends StObject
+       with LanguageVersion
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LanguageVersion with Double] = js.native
-  /* 0 */ @js.native
-  object EcmaScript3 extends TopLevel[EcmaScript3 with Double]
-  
-  /* 1 */ @js.native
-  object EcmaScript5 extends TopLevel[EcmaScript5 with Double]
-  
+  @js.native
+  sealed trait EcmaScript5
+    extends StObject
+       with LanguageVersion
 }
-

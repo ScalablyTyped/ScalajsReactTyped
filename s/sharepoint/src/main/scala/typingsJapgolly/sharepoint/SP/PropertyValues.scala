@@ -1,14 +1,17 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.PropertyValues")
 @js.native
-class PropertyValues () extends ClientObject {
-  def get_fieldValues(): js.Any = js.native
-  def get_item(fieldName: String): js.Any = js.native
-  def set_item(fieldName: String, value: js.Any): Unit = js.native
+trait PropertyValues
+  extends StObject
+     with ClientObject {
+  
+  def get_fieldValues(): Any = js.native
+  
+  def get_item(fieldName: String): Any = js.native
+  
+  def set_item(fieldName: String, value: Any): Unit = js.native
 }
-

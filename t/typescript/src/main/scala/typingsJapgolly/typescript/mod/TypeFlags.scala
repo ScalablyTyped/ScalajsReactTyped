@@ -1,306 +1,303 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TypeFlags extends js.Object
-
+sealed trait TypeFlags extends StObject
 @JSImport("typescript", "TypeFlags")
 @js.native
-object TypeFlags extends js.Object {
-  @js.native
-  sealed trait Any extends TypeFlags
-  
-  @js.native
-  sealed trait BigInt extends TypeFlags
-  
-  @js.native
-  sealed trait BigIntLike extends TypeFlags
-  
-  @js.native
-  sealed trait BigIntLiteral extends TypeFlags
-  
-  @js.native
-  sealed trait Boolean extends TypeFlags
-  
-  @js.native
-  sealed trait BooleanLike extends TypeFlags
-  
-  @js.native
-  sealed trait BooleanLiteral extends TypeFlags
-  
-  @js.native
-  sealed trait Conditional extends TypeFlags
-  
-  @js.native
-  sealed trait ESSymbol extends TypeFlags
-  
-  @js.native
-  sealed trait ESSymbolLike extends TypeFlags
-  
-  @js.native
-  sealed trait Enum extends TypeFlags
-  
-  @js.native
-  sealed trait EnumLike extends TypeFlags
-  
-  @js.native
-  sealed trait EnumLiteral extends TypeFlags
-  
-  @js.native
-  sealed trait Index extends TypeFlags
-  
-  @js.native
-  sealed trait IndexedAccess extends TypeFlags
-  
-  @js.native
-  sealed trait Instantiable extends TypeFlags
-  
-  @js.native
-  sealed trait InstantiableNonPrimitive extends TypeFlags
-  
-  @js.native
-  sealed trait InstantiablePrimitive extends TypeFlags
-  
-  @js.native
-  sealed trait Intersection extends TypeFlags
-  
-  @js.native
-  sealed trait Literal extends TypeFlags
-  
-  @js.native
-  sealed trait Narrowable extends TypeFlags
-  
-  @js.native
-  sealed trait Never extends TypeFlags
-  
-  @js.native
-  sealed trait NonPrimitive extends TypeFlags
-  
-  @js.native
-  sealed trait NotUnionOrUnit extends TypeFlags
-  
-  @js.native
-  sealed trait Null extends TypeFlags
-  
-  @js.native
-  sealed trait Number extends TypeFlags
-  
-  @js.native
-  sealed trait NumberLike extends TypeFlags
-  
-  @js.native
-  sealed trait NumberLiteral extends TypeFlags
-  
-  @js.native
-  sealed trait Object extends TypeFlags
-  
-  @js.native
-  sealed trait PossiblyFalsy extends TypeFlags
-  
-  @js.native
-  sealed trait String extends TypeFlags
-  
-  @js.native
-  sealed trait StringLike extends TypeFlags
-  
-  @js.native
-  sealed trait StringLiteral extends TypeFlags
-  
-  @js.native
-  sealed trait StringOrNumberLiteral extends TypeFlags
-  
-  @js.native
-  sealed trait StructuredOrInstantiable extends TypeFlags
-  
-  @js.native
-  sealed trait StructuredType extends TypeFlags
-  
-  @js.native
-  sealed trait Substitution extends TypeFlags
-  
-  @js.native
-  sealed trait TypeParameter extends TypeFlags
-  
-  @js.native
-  sealed trait TypeVariable extends TypeFlags
-  
-  @js.native
-  sealed trait Undefined extends TypeFlags
-  
-  @js.native
-  sealed trait Union extends TypeFlags
-  
-  @js.native
-  sealed trait UnionOrIntersection extends TypeFlags
-  
-  @js.native
-  sealed trait UniqueESSymbol extends TypeFlags
-  
-  @js.native
-  sealed trait Unit extends TypeFlags
-  
-  @js.native
-  sealed trait Unknown extends TypeFlags
-  
-  @js.native
-  sealed trait Void extends TypeFlags
-  
-  @js.native
-  sealed trait VoidLike extends TypeFlags
+object TypeFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TypeFlags with Double] = js.native
-  /* 1 */ @js.native
-  object Any extends TopLevel[Any with Double]
+  def apply(value: Double): js.UndefOr[TypeFlags & Double] = js.native
   
-  /* 64 */ @js.native
-  object BigInt extends TopLevel[BigInt with Double]
+  @js.native
+  sealed trait Any
+    extends StObject
+       with TypeFlags
+  /* 1 */ val Any: typingsJapgolly.typescript.mod.TypeFlags.Any & Double = js.native
   
-  /* 2112 */ @js.native
-  object BigIntLike extends TopLevel[BigIntLike with Double]
+  @js.native
+  sealed trait BigInt
+    extends StObject
+       with TypeFlags
+  /* 64 */ val BigInt: typingsJapgolly.typescript.mod.TypeFlags.BigInt & Double = js.native
   
-  /* 2048 */ @js.native
-  object BigIntLiteral
-    extends TopLevel[typingsJapgolly.typescript.mod.TypeFlags.BigIntLiteral with Double]
+  @js.native
+  sealed trait BigIntLike
+    extends StObject
+       with TypeFlags
+  /* 2112 */ val BigIntLike: typingsJapgolly.typescript.mod.TypeFlags.BigIntLike & Double = js.native
   
-  /* 16 */ @js.native
-  object Boolean extends TopLevel[Boolean with Double]
+  @js.native
+  sealed trait BigIntLiteral
+    extends StObject
+       with TypeFlags
+  /* 2048 */ val BigIntLiteral: typingsJapgolly.typescript.mod.TypeFlags.BigIntLiteral & Double = js.native
   
-  /* 528 */ @js.native
-  object BooleanLike extends TopLevel[BooleanLike with Double]
+  @js.native
+  sealed trait Boolean
+    extends StObject
+       with TypeFlags
+  /* 16 */ val Boolean: typingsJapgolly.typescript.mod.TypeFlags.Boolean & Double = js.native
   
-  /* 512 */ @js.native
-  object BooleanLiteral
-    extends TopLevel[typingsJapgolly.typescript.mod.TypeFlags.BooleanLiteral with Double]
+  @js.native
+  sealed trait BooleanLike
+    extends StObject
+       with TypeFlags
+  /* 528 */ val BooleanLike: typingsJapgolly.typescript.mod.TypeFlags.BooleanLike & Double = js.native
   
-  /* 16777216 */ @js.native
-  object Conditional extends TopLevel[Conditional with Double]
+  @js.native
+  sealed trait BooleanLiteral
+    extends StObject
+       with TypeFlags
+  /* 512 */ val BooleanLiteral: typingsJapgolly.typescript.mod.TypeFlags.BooleanLiteral & Double = js.native
   
-  /* 4096 */ @js.native
-  object ESSymbol extends TopLevel[ESSymbol with Double]
+  @js.native
+  sealed trait Conditional
+    extends StObject
+       with TypeFlags
+  /* 16777216 */ val Conditional: typingsJapgolly.typescript.mod.TypeFlags.Conditional & Double = js.native
   
-  /* 12288 */ @js.native
-  object ESSymbolLike extends TopLevel[ESSymbolLike with Double]
+  @js.native
+  sealed trait ESSymbol
+    extends StObject
+       with TypeFlags
+  /* 4096 */ val ESSymbol: typingsJapgolly.typescript.mod.TypeFlags.ESSymbol & Double = js.native
   
-  /* 32 */ @js.native
-  object Enum extends TopLevel[Enum with Double]
+  @js.native
+  sealed trait ESSymbolLike
+    extends StObject
+       with TypeFlags
+  /* 12288 */ val ESSymbolLike: typingsJapgolly.typescript.mod.TypeFlags.ESSymbolLike & Double = js.native
   
-  /* 1056 */ @js.native
-  object EnumLike extends TopLevel[EnumLike with Double]
+  @js.native
+  sealed trait Enum
+    extends StObject
+       with TypeFlags
+  /* 32 */ val Enum: typingsJapgolly.typescript.mod.TypeFlags.Enum & Double = js.native
   
-  /* 1024 */ @js.native
-  object EnumLiteral extends TopLevel[EnumLiteral with Double]
+  @js.native
+  sealed trait EnumLike
+    extends StObject
+       with TypeFlags
+  /* 1056 */ val EnumLike: typingsJapgolly.typescript.mod.TypeFlags.EnumLike & Double = js.native
   
-  /* 4194304 */ @js.native
-  object Index extends TopLevel[Index with Double]
+  @js.native
+  sealed trait EnumLiteral
+    extends StObject
+       with TypeFlags
+  /* 1024 */ val EnumLiteral: typingsJapgolly.typescript.mod.TypeFlags.EnumLiteral & Double = js.native
   
-  /* 8388608 */ @js.native
-  object IndexedAccess extends TopLevel[IndexedAccess with Double]
+  @js.native
+  sealed trait Index
+    extends StObject
+       with TypeFlags
+  /* 4194304 */ val Index: typingsJapgolly.typescript.mod.TypeFlags.Index & Double = js.native
   
-  /* 63176704 */ @js.native
-  object Instantiable extends TopLevel[Instantiable with Double]
+  @js.native
+  sealed trait IndexedAccess
+    extends StObject
+       with TypeFlags
+  /* 8388608 */ val IndexedAccess: typingsJapgolly.typescript.mod.TypeFlags.IndexedAccess & Double = js.native
   
-  /* 58982400 */ @js.native
-  object InstantiableNonPrimitive extends TopLevel[InstantiableNonPrimitive with Double]
+  @js.native
+  sealed trait Instantiable
+    extends StObject
+       with TypeFlags
+  /* 465829888 */ val Instantiable: typingsJapgolly.typescript.mod.TypeFlags.Instantiable & Double = js.native
   
-  /* 4194304 */ @js.native
-  object InstantiablePrimitive extends TopLevel[InstantiablePrimitive with Double]
+  @js.native
+  sealed trait InstantiableNonPrimitive
+    extends StObject
+       with TypeFlags
+  /* 58982400 */ val InstantiableNonPrimitive: typingsJapgolly.typescript.mod.TypeFlags.InstantiableNonPrimitive & Double = js.native
   
-  /* 2097152 */ @js.native
-  object Intersection extends TopLevel[Intersection with Double]
+  @js.native
+  sealed trait InstantiablePrimitive
+    extends StObject
+       with TypeFlags
+  /* 406847488 */ val InstantiablePrimitive: typingsJapgolly.typescript.mod.TypeFlags.InstantiablePrimitive & Double = js.native
   
-  /* 2944 */ @js.native
-  object Literal extends TopLevel[Literal with Double]
+  @js.native
+  sealed trait Intersection
+    extends StObject
+       with TypeFlags
+  /* 2097152 */ val Intersection: typingsJapgolly.typescript.mod.TypeFlags.Intersection & Double = js.native
   
-  /* 133970943 */ @js.native
-  object Narrowable extends TopLevel[Narrowable with Double]
+  @js.native
+  sealed trait Literal
+    extends StObject
+       with TypeFlags
+  /* 2944 */ val Literal: typingsJapgolly.typescript.mod.TypeFlags.Literal & Double = js.native
   
-  /* 131072 */ @js.native
-  object Never extends TopLevel[Never with Double]
+  @js.native
+  sealed trait Narrowable
+    extends StObject
+       with TypeFlags
+  /* 536624127 */ val Narrowable: typingsJapgolly.typescript.mod.TypeFlags.Narrowable & Double = js.native
   
-  /* 67108864 */ @js.native
-  object NonPrimitive extends TopLevel[NonPrimitive with Double]
+  @js.native
+  sealed trait Never
+    extends StObject
+       with TypeFlags
+  /* 131072 */ val Never: typingsJapgolly.typescript.mod.TypeFlags.Never & Double = js.native
   
-  /* 67637251 */ @js.native
-  object NotUnionOrUnit extends TopLevel[NotUnionOrUnit with Double]
+  @js.native
+  sealed trait NonPrimitive
+    extends StObject
+       with TypeFlags
+  /* 67108864 */ val NonPrimitive: typingsJapgolly.typescript.mod.TypeFlags.NonPrimitive & Double = js.native
   
-  /* 65536 */ @js.native
-  object Null extends TopLevel[Null with Double]
+  @js.native
+  sealed trait Null
+    extends StObject
+       with TypeFlags
+  /* 65536 */ val Null: typingsJapgolly.typescript.mod.TypeFlags.Null & Double = js.native
   
-  /* 8 */ @js.native
-  object Number extends TopLevel[Number with Double]
+  @js.native
+  sealed trait Number
+    extends StObject
+       with TypeFlags
+  /* 8 */ val Number: typingsJapgolly.typescript.mod.TypeFlags.Number & Double = js.native
   
-  /* 296 */ @js.native
-  object NumberLike extends TopLevel[NumberLike with Double]
+  @js.native
+  sealed trait NumberLike
+    extends StObject
+       with TypeFlags
+  /* 296 */ val NumberLike: typingsJapgolly.typescript.mod.TypeFlags.NumberLike & Double = js.native
   
-  /* 256 */ @js.native
-  object NumberLiteral extends TopLevel[NumberLiteral with Double]
+  @js.native
+  sealed trait NumberLiteral
+    extends StObject
+       with TypeFlags
+  /* 256 */ val NumberLiteral: typingsJapgolly.typescript.mod.TypeFlags.NumberLiteral & Double = js.native
   
-  /* 524288 */ @js.native
-  object Object extends TopLevel[Object with Double]
+  @js.native
+  sealed trait Object
+    extends StObject
+       with TypeFlags
+  /* 524288 */ val Object: typingsJapgolly.typescript.mod.TypeFlags.Object & Double = js.native
   
-  /* 117724 */ @js.native
-  object PossiblyFalsy extends TopLevel[PossiblyFalsy with Double]
+  @js.native
+  sealed trait PossiblyFalsy
+    extends StObject
+       with TypeFlags
+  /* 117724 */ val PossiblyFalsy: typingsJapgolly.typescript.mod.TypeFlags.PossiblyFalsy & Double = js.native
   
-  /* 4 */ @js.native
-  object String
-    extends TopLevel[typingsJapgolly.typescript.mod.TypeFlags.String with Double]
+  @js.native
+  sealed trait String
+    extends StObject
+       with TypeFlags
+  /* 4 */ val String: typingsJapgolly.typescript.mod.TypeFlags.String & Double = js.native
   
-  /* 132 */ @js.native
-  object StringLike extends TopLevel[StringLike with Double]
+  @js.native
+  sealed trait StringLike
+    extends StObject
+       with TypeFlags
+  /* 402653316 */ val StringLike: typingsJapgolly.typescript.mod.TypeFlags.StringLike & Double = js.native
   
-  /* 128 */ @js.native
-  object StringLiteral
-    extends TopLevel[typingsJapgolly.typescript.mod.TypeFlags.StringLiteral with Double]
+  @js.native
+  sealed trait StringLiteral
+    extends StObject
+       with TypeFlags
+  /* 128 */ val StringLiteral: typingsJapgolly.typescript.mod.TypeFlags.StringLiteral & Double = js.native
   
-  /* 384 */ @js.native
-  object StringOrNumberLiteral extends TopLevel[StringOrNumberLiteral with Double]
+  @js.native
+  sealed trait StringMapping
+    extends StObject
+       with TypeFlags
+  /* 268435456 */ val StringMapping: typingsJapgolly.typescript.mod.TypeFlags.StringMapping & Double = js.native
   
-  /* 66846720 */ @js.native
-  object StructuredOrInstantiable extends TopLevel[StructuredOrInstantiable with Double]
+  @js.native
+  sealed trait StringOrNumberLiteral
+    extends StObject
+       with TypeFlags
+  /* 384 */ val StringOrNumberLiteral: typingsJapgolly.typescript.mod.TypeFlags.StringOrNumberLiteral & Double = js.native
   
-  /* 3670016 */ @js.native
-  object StructuredType
-    extends TopLevel[typingsJapgolly.typescript.mod.TypeFlags.StructuredType with Double]
+  @js.native
+  sealed trait StructuredOrInstantiable
+    extends StObject
+       with TypeFlags
+  /* 469499904 */ val StructuredOrInstantiable: typingsJapgolly.typescript.mod.TypeFlags.StructuredOrInstantiable & Double = js.native
   
-  /* 33554432 */ @js.native
-  object Substitution extends TopLevel[Substitution with Double]
+  @js.native
+  sealed trait StructuredType
+    extends StObject
+       with TypeFlags
+  /* 3670016 */ val StructuredType: typingsJapgolly.typescript.mod.TypeFlags.StructuredType & Double = js.native
   
-  /* 262144 */ @js.native
-  object TypeParameter
-    extends TopLevel[typingsJapgolly.typescript.mod.TypeFlags.TypeParameter with Double]
+  @js.native
+  sealed trait Substitution
+    extends StObject
+       with TypeFlags
+  /* 33554432 */ val Substitution: typingsJapgolly.typescript.mod.TypeFlags.Substitution & Double = js.native
   
-  /* 8650752 */ @js.native
-  object TypeVariable
-    extends TopLevel[typingsJapgolly.typescript.mod.TypeFlags.TypeVariable with Double]
+  @js.native
+  sealed trait TemplateLiteral
+    extends StObject
+       with TypeFlags
+  /* 134217728 */ val TemplateLiteral: typingsJapgolly.typescript.mod.TypeFlags.TemplateLiteral & Double = js.native
   
-  /* 32768 */ @js.native
-  object Undefined extends TopLevel[Undefined with Double]
+  @js.native
+  sealed trait TypeParameter
+    extends StObject
+       with TypeFlags
+  /* 262144 */ val TypeParameter: typingsJapgolly.typescript.mod.TypeFlags.TypeParameter & Double = js.native
   
-  /* 1048576 */ @js.native
-  object Union extends TopLevel[Union with Double]
+  @js.native
+  sealed trait TypeVariable
+    extends StObject
+       with TypeFlags
+  /* 8650752 */ val TypeVariable: typingsJapgolly.typescript.mod.TypeFlags.TypeVariable & Double = js.native
   
-  /* 3145728 */ @js.native
-  object UnionOrIntersection extends TopLevel[UnionOrIntersection with Double]
+  @js.native
+  sealed trait Undefined
+    extends StObject
+       with TypeFlags
+  /* 32768 */ val Undefined: typingsJapgolly.typescript.mod.TypeFlags.Undefined & Double = js.native
   
-  /* 8192 */ @js.native
-  object UniqueESSymbol extends TopLevel[UniqueESSymbol with Double]
+  @js.native
+  sealed trait Union
+    extends StObject
+       with TypeFlags
+  /* 1048576 */ val Union: typingsJapgolly.typescript.mod.TypeFlags.Union & Double = js.native
   
-  /* 109440 */ @js.native
-  object Unit extends TopLevel[Unit with Double]
+  @js.native
+  sealed trait UnionOrIntersection
+    extends StObject
+       with TypeFlags
+  /* 3145728 */ val UnionOrIntersection: typingsJapgolly.typescript.mod.TypeFlags.UnionOrIntersection & Double = js.native
   
-  /* 2 */ @js.native
-  object Unknown extends TopLevel[Unknown with Double]
+  @js.native
+  sealed trait UniqueESSymbol
+    extends StObject
+       with TypeFlags
+  /* 8192 */ val UniqueESSymbol: typingsJapgolly.typescript.mod.TypeFlags.UniqueESSymbol & Double = js.native
   
-  /* 16384 */ @js.native
-  object Void extends TopLevel[Void with Double]
+  @js.native
+  sealed trait Unit
+    extends StObject
+       with TypeFlags
+  /* 109440 */ val Unit: typingsJapgolly.typescript.mod.TypeFlags.Unit & Double = js.native
   
-  /* 49152 */ @js.native
-  object VoidLike extends TopLevel[VoidLike with Double]
+  @js.native
+  sealed trait Unknown
+    extends StObject
+       with TypeFlags
+  /* 2 */ val Unknown: typingsJapgolly.typescript.mod.TypeFlags.Unknown & Double = js.native
   
+  @js.native
+  sealed trait Void
+    extends StObject
+       with TypeFlags
+  /* 16384 */ val Void: typingsJapgolly.typescript.mod.TypeFlags.Void & Double = js.native
+  
+  @js.native
+  sealed trait VoidLike
+    extends StObject
+       with TypeFlags
+  /* 49152 */ val VoidLike: typingsJapgolly.typescript.mod.TypeFlags.VoidLike & Double = js.native
 }
-

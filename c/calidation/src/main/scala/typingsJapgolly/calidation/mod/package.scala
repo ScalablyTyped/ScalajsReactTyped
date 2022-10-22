@@ -1,39 +1,49 @@
-package typingsJapgolly.calidation
+package typingsJapgolly.calidation.mod
 
+import typingsJapgolly.std.Partial
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type BlacklistValidator = typingsJapgolly.calidation.mod.BlacklistValidatorConfig | (js.Function1[
-    /* context */ typingsJapgolly.calidation.mod.ValidatorContext, 
-    typingsJapgolly.calidation.mod.BlacklistValidatorConfig
-  ])
-  type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
-  type Dirty = typingsJapgolly.calidation.mod.Dictionary[scala.Boolean]
-  type Errors = typingsJapgolly.calidation.mod.Dictionary[java.lang.String | scala.Null]
-  type Fields = typingsJapgolly.calidation.mod.Dictionary[js.Any]
-  type FieldsConfig = typingsJapgolly.calidation.mod.Dictionary[typingsJapgolly.calidation.mod.FieldConfig]
-  type LengthValidator = typingsJapgolly.calidation.mod.LengthValidatorConfig | (js.Function1[
-    /* context */ typingsJapgolly.calidation.mod.ValidatorContext, 
-    typingsJapgolly.calidation.mod.LengthValidatorConfig
-  ])
-  type RegexValidator = typingsJapgolly.calidation.mod.RegexValidatorConfig | (js.Function1[
-    /* context */ typingsJapgolly.calidation.mod.ValidatorContext, 
-    typingsJapgolly.calidation.mod.RegexValidatorConfig
-  ])
-  type SimpleValidator = java.lang.String | typingsJapgolly.calidation.mod.SimpleValidatorConfig | (js.Function1[
-    /* context */ typingsJapgolly.calidation.mod.ValidatorContext, 
-    typingsJapgolly.calidation.mod.SimpleValidatorConfig
-  ])
-  type Transforms = typingsJapgolly.calidation.mod.Dictionary[js.Function1[/* value */ js.Any, js.Any]]
-  type Validator = typingsJapgolly.calidation.mod.SimpleValidator | typingsJapgolly.calidation.mod.BlacklistValidator | typingsJapgolly.calidation.mod.ValueValidator[js.Any] | typingsJapgolly.calidation.mod.RegexValidator | typingsJapgolly.calidation.mod.WhitelistValidator | typingsJapgolly.calidation.mod.LengthValidator
-  type ValueValidator[T] = typingsJapgolly.calidation.mod.ValueValidatorConfig[T] | (js.Function1[
-    /* context */ typingsJapgolly.calidation.mod.ValidatorContext, 
-    typingsJapgolly.calidation.mod.ValueValidatorConfig[T]
-  ])
-  type WhitelistValidator = typingsJapgolly.calidation.mod.WhitelistValidatorConfig | (js.Function1[
-    /* context */ typingsJapgolly.calidation.mod.ValidatorContext, 
-    typingsJapgolly.calidation.mod.RegexValidatorConfig
-  ])
-}
+
+type BlacklistValidator[T /* <: js.Object */] = BlacklistValidatorConfig[T] | (js.Function1[/* context */ ValidatorContext[T], BlacklistValidatorConfig[T]])
+
+type CustomValidatorFunction[T /* <: js.Object */] = js.Function2[
+/* config */ SimpleValidatorConfig[T], 
+/* context */ ValidatorContext[T], 
+js.Function1[
+  /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+  String | Null
+]]
+
+type Dirty[T /* <: js.Object */] = Record[/* keyof T */ String, Boolean]
+
+type Errors[T /* <: js.Object */] = Record[/* keyof T */ String, String | Null]
+
+type Fields[T /* <: js.Object */] = T
+
+type FieldsConfig[T /* <: js.Object */] = Record[
+String, 
+FieldConfig[T] | (Record[String, SimpleValidator[T] | (ValueValidator[Any, T])])]
+
+type LengthValidator[T /* <: js.Object */] = LengthValidatorConfig[T] | (js.Function1[/* context */ ValidatorContext[T], LengthValidatorConfig[T]])
+
+type RegexValidator[T /* <: js.Object */] = RegexValidatorConfig[T] | (js.Function1[/* context */ ValidatorContext[T], RegexValidatorConfig[T]])
+
+type SimpleValidator[T /* <: js.Object */] = String | SimpleValidatorConfig[T] | (js.Function1[/* context */ ValidatorContext[T], SimpleValidatorConfig[T]])
+
+type Transform[T /* <: js.Object */] = Record[
+/* keyof T */ String, 
+js.Function1[
+  /* value */ Any, 
+  /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+]]
+
+type Transforms[T /* <: js.Object */] = Partial[Transform[T]]
+
+type Validator[T /* <: js.Object */] = SimpleValidator[T] | BlacklistValidator[T] | (ValueValidator[Any, T]) | RegexValidator[T] | WhitelistValidator[T] | LengthValidator[T]
+
+type ValueValidator[P, T /* <: js.Object */] = (ValueValidatorConfig[P, T]) | (js.Function1[/* context */ ValidatorContext[T], ValueValidatorConfig[P, T]])
+
+type WhitelistValidator[T /* <: js.Object */] = WhitelistValidatorConfig[T] | (js.Function1[/* context */ ValidatorContext[T], RegexValidatorConfig[T]])

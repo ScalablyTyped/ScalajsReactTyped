@@ -1,18 +1,15 @@
 package typingsJapgolly.three.mod
 
+import typingsJapgolly.three.srcUtilsMod.ColorRepresentation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "DirectionalLight")
 @js.native
-class DirectionalLight ()
-  extends typingsJapgolly.three.directionalLightMod.DirectionalLight {
-  def this(color: String) = this()
-  def this(color: Double) = this()
-  def this(color: typingsJapgolly.three.colorMod.Color) = this()
-  def this(color: String, intensity: Double) = this()
-  def this(color: Double, intensity: Double) = this()
-  def this(color: typingsJapgolly.three.colorMod.Color, intensity: Double) = this()
+open class DirectionalLight ()
+  extends typingsJapgolly.three.srcThreeMod.DirectionalLight {
+  def this(color: ColorRepresentation) = this()
+  def this(color: Unit, intensity: Double) = this()
+  def this(color: ColorRepresentation, intensity: Double) = this()
 }
-

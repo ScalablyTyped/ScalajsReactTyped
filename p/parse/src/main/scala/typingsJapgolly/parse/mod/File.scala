@@ -1,11 +1,11 @@
 package typingsJapgolly.parse.mod
 
-import typingsJapgolly.parse.AnonBase64
-import typingsJapgolly.parse.AnonSize
-import typingsJapgolly.parse.AnonUri
+import typingsJapgolly.parse.anon.Base64
+import typingsJapgolly.parse.anon.Size
+import typingsJapgolly.parse.anon.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Parse.File is a local representation of a file that is saved to the Parse
@@ -37,15 +37,14 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse", "File")
 @js.native
-class File protected ()
-  extends typingsJapgolly.parse.mod._Global_.Parse.File {
+open class File protected ()
+  extends typingsJapgolly.parse.mod.global.Parse.File {
   def this(name: String, data: js.Array[Double]) = this()
-  def this(name: String, data: AnonBase64) = this()
-  def this(name: String, data: AnonSize) = this()
-  def this(name: String, data: AnonUri) = this()
+  def this(name: String, data: Base64) = this()
+  def this(name: String, data: Size) = this()
+  def this(name: String, data: Uri) = this()
   def this(name: String, data: js.Array[Double], `type`: String) = this()
-  def this(name: String, data: AnonBase64, `type`: String) = this()
-  def this(name: String, data: AnonSize, `type`: String) = this()
-  def this(name: String, data: AnonUri, `type`: String) = this()
+  def this(name: String, data: Base64, `type`: String) = this()
+  def this(name: String, data: Size, `type`: String) = this()
+  def this(name: String, data: Uri, `type`: String) = this()
 }
-

@@ -1,35 +1,53 @@
 package typingsJapgolly.ionic.definitionsMod
 
-import typingsJapgolly.ionic.RecordHookNamestringArray
+import typingsJapgolly.ionic.anon.RecordHookNamestringArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IProjectConfig extends ProjectFile {
+trait IProjectConfig
+  extends StObject
+     with ProjectFile {
+  
   val hooks: js.UndefOr[RecordHookNamestringArray] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   val integrations: ProjectIntegrations
+  
   var name: String
+  
   var root: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[ProjectType] = js.undefined
 }
-
 object IProjectConfig {
-  @scala.inline
-  def apply(
-    integrations: ProjectIntegrations,
-    name: String,
-    hooks: RecordHookNamestringArray = null,
-    id: String = null,
-    root: String = null,
-    `type`: ProjectType = null
-  ): IProjectConfig = {
+  
+  inline def apply(integrations: ProjectIntegrations, name: String): IProjectConfig = {
     val __obj = js.Dynamic.literal(integrations = integrations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProjectConfig]
   }
+  
+  extension [Self <: IProjectConfig](x: Self) {
+    
+    inline def setHooks(value: RecordHookNamestringArray): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIntegrations(value: ProjectIntegrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    
+    inline def setType(value: ProjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

@@ -1,28 +1,39 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientWebDocumentViewer.ParametersReset and ASPxClientReportDesigner.PreviewParametersReset events.
   */
-@JSGlobal("ASPxClientParametersResetEventArgs")
-@js.native
-class ASPxClientParametersResetEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientParametersResetEventArgs class with the specified settings.
-    * @param parametersModel A View Model object for report parameters. This value is assigned to the ASPxClientParametersResetEventArgs.ParametersViewModel property.
-    * @param parameters An array of IParameter objects. This value is assigned to the ASPxClientParametersResetEventArgs.Parameters property.
-    */
-  def this(parametersModel: js.Any, parameters: js.Array[ASPxClientWebDocumentViewerParameter]) = this()
+trait ASPxClientParametersResetEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Provides access to report parameters whose values have been reset.
     */
-  var Parameters: js.Array[ASPxClientWebDocumentViewerParameter] = js.native
+  var Parameters: js.Array[ASPxClientWebDocumentViewerParameter]
+  
   /**
     * Provides access to a View Model for report parameters.
     */
-  var ParametersViewModel: js.Any = js.native
+  var ParametersViewModel: Any
 }
-
+object ASPxClientParametersResetEventArgs {
+  
+  inline def apply(Parameters: js.Array[ASPxClientWebDocumentViewerParameter], ParametersViewModel: Any): ASPxClientParametersResetEventArgs = {
+    val __obj = js.Dynamic.literal(Parameters = Parameters.asInstanceOf[js.Any], ParametersViewModel = ParametersViewModel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientParametersResetEventArgs]
+  }
+  
+  extension [Self <: ASPxClientParametersResetEventArgs](x: Self) {
+    
+    inline def setParameters(value: js.Array[ASPxClientWebDocumentViewerParameter]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    
+    inline def setParametersVarargs(value: ASPxClientWebDocumentViewerParameter*): Self = StObject.set(x, "Parameters", js.Array(value*))
+    
+    inline def setParametersViewModel(value: Any): Self = StObject.set(x, "ParametersViewModel", value.asInstanceOf[js.Any])
+  }
+}

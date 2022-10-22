@@ -1,23 +1,19 @@
 package typingsJapgolly.activexAccess.Access
 
-import typingsJapgolly.activexAccess.activexAccessNumbers.`0`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`1`
+import typingsJapgolly.activexAccess.activexAccessInts.`0`
+import typingsJapgolly.activexAccess.activexAccessInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`1`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`0`
+  - typingsJapgolly.activexAccess.activexAccessInts.`1`
+  - typingsJapgolly.activexAccess.activexAccessInts.`0`
 */
-trait AcResourceType extends js.Object
-
+trait AcResourceType extends StObject
 object AcResourceType {
-  @scala.inline
-  def acResourceImage: `1` = this.cast(1)
-  @scala.inline
-  def acResourceTheme: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def acResourceImage: `1` = 1.asInstanceOf[`1`]
+  
+  inline def acResourceTheme: `0` = 0.asInstanceOf[`0`]
 }
-

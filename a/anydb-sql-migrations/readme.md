@@ -10,10 +10,10 @@ Database migrations for anydb-sql
 | ------------------ | :-------------: |
 | Full name          | anydb-sql-migrations |
 | Keywords           | anydb, sql, migrations |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 5101 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 251.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/spion/anydb-sql-migrations)

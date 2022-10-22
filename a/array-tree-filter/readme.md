@@ -10,10 +10,10 @@ filter in array tree
 | ------------------ | :-------------: |
 | Full name          | array-tree-filter |
 | Keywords           | array, tree, filter |
-| # releases         | 2 |
-| # dependents       | 293 |
-| # downloads        | 11713586 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3282815.3333333335 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/afc163/array-tree-filter#readme)

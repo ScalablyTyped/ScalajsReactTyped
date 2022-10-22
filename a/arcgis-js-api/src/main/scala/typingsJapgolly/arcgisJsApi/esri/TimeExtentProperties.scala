@@ -1,35 +1,44 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimeExtentProperties extends js.Object {
+trait TimeExtentProperties extends StObject {
+  
   /**
     * The end time of the time extent.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#end)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#end)
     */
   var end: js.UndefOr[DateProperties] = js.undefined
+  
   /**
     * The start time of the time extent.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#start)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html#start)
     */
   var start: js.UndefOr[DateProperties] = js.undefined
 }
-
 object TimeExtentProperties {
-  @scala.inline
-  def apply(end: DateProperties = null, start: DateProperties = null): TimeExtentProperties = {
+  
+  inline def apply(): TimeExtentProperties = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeExtentProperties]
   }
+  
+  extension [Self <: TimeExtentProperties](x: Self) {
+    
+    inline def setEnd(value: DateProperties): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setStart(value: DateProperties): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+  }
 }
-

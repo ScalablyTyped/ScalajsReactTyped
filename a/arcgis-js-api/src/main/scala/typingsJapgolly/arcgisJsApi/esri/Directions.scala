@@ -1,95 +1,146 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Directions
-  extends Widget_
+  extends StObject
+     with Widget_
      with GoTo {
+  
+  /**
+    * An authorization string used to access a resource or service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#apiKey)
+    */
+  var apiKey: String = js.native
+  
+  /**
+    * Computes a route and directions.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#getDirections)
+    */
+  def getDirections(): js.Promise[RouteLayerSolveResult] = js.native
+  
+  /**
+    * Indicates the heading level to use for the origin and destination addresses (i.e.
+    *
+    * @default 2
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#headingLevel)
+    */
+  var headingLevel: Double = js.native
+  
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#iconClass)
     */
   var iconClass: String = js.native
+  
   /**
-    * The most recent route result. Returns an object containing properties for any barriers used when generating the route, messages that may arise when solving the route, and finally an array of returned [RouteResults](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
+    * The most recent route result.
     *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
     */
   val lastRoute: DirectionsLastRoute = js.native
+  
+  /**
+    * The [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html) associated with the Directions widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#layer)
+    */
+  var layer: RouteLayer = js.native
+  
   /**
     * The maximum number of stops allowed for routing.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#maxStops)
-    *
     * @default 50
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#maxStops)
     */
   var maxStops: Double = js.native
+  
   /**
     * The URL of the REST endpoint of the Route service.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#routeServiceUrl)
+    * @deprecated since version 4.24. Use {@link module:esri/layers/RouteLayer#url url} from [layer](#layer) instead.
     *
-    * @default "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World"
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#routeServiceUrl)
     */
   var routeServiceUrl: String = js.native
+  
   /**
     * Defines the symbol used to draw the route on the map.
+    *
+    * @deprecated since version 4.24. Use {@link module:esri/layers/support/RouteSymbols#directionLines directionLines} from [layer](#layer) instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#routeSymbol)
     */
   var routeSymbol: SimpleLineSymbol = js.native
+  
   /**
-    * Controls the default properties used when [searching](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html). Note that the default `searchProperties` differ slightly from the [Search widget](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html).
+    * Saves the RouteLayer associated with the view model.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#searchProperties)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#save)
+    */
+  def save(): js.Promise[PortalItem] = js.native
+  
+  /**
+    * Saves the RouteLayer associated with the view model as a new portal item.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#saveAs)
+    */
+  def saveAs(portalItem: js.Promise[PortalItem]): js.Promise[PortalItem] = js.native
+  def saveAs(portalItem: js.Promise[PortalItem], options: DirectionsSaveAsOptions): js.Promise[PortalItem] = js.native
+  
+  /**
+    * Controls the default properties used when [searching](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html).
     *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#searchProperties)
     */
   var searchProperties: DirectionsSearchProperties = js.native
+  
   /**
     * The default stop symbols used to display locations between the origin and final destination.
+    *
+    * @deprecated since version 4.24. Use {@link module:esri/layers/support/RouteStopSymbols} from [layer](#layer) instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#stopSymbols)
     */
   var stopSymbols: DirectionsStopSymbols = js.native
+  
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#view)
     */
   var view: MapView | SceneView = js.native
+  
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [DirectionsViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#viewModel)
     */
   var viewModel: DirectionsViewModel = js.native
+  
   /**
-    * Calculate the route to the input locations and display the list of directions.
+    * The visible elements that are displayed within the widget.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#getDirections)
-    *
-    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#visibleElements)
     */
-  def getDirections(): js.Promise[RouteResult] = js.native
+  var visibleElements: DirectionsVisibleElements = js.native
+  
   /**
     * Zoom so that the full route is displayed within the current map extent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#zoomToRoute)
-    *
-    *
     */
-  def zoomToRoute(): Unit = js.native
+  def zoomToRoute(): scala.Unit = js.native
 }
-
-@JSGlobal("__esri.Directions")
-@js.native
-object Directions extends TopLevel[DirectionsConstructor]
-

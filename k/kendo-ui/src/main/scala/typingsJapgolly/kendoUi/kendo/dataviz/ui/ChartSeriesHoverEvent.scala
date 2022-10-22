@@ -1,50 +1,75 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartSeriesHoverEvent extends ChartEvent {
-  var category: js.UndefOr[js.Any] = js.undefined
-  var categoryPoints: js.UndefOr[js.Any] = js.undefined
-  var dataItem: js.UndefOr[js.Any] = js.undefined
-  var element: js.UndefOr[js.Any] = js.undefined
-  var originalEvent: js.UndefOr[js.Any] = js.undefined
-  var percentage: js.UndefOr[js.Any] = js.undefined
+trait ChartSeriesHoverEvent
+  extends StObject
+     with ChartEvent {
+  
+  var category: js.UndefOr[Any] = js.undefined
+  
+  var categoryPoints: js.UndefOr[Any] = js.undefined
+  
+  var dataItem: js.UndefOr[Any] = js.undefined
+  
+  var element: js.UndefOr[Any] = js.undefined
+  
+  var originalEvent: js.UndefOr[Any] = js.undefined
+  
+  var percentage: js.UndefOr[Any] = js.undefined
+  
   var series: js.UndefOr[ChartSeriesHoverEventSeries] = js.undefined
-  var stackValue: js.UndefOr[js.Any] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  
+  var stackValue: js.UndefOr[Any] = js.undefined
+  
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object ChartSeriesHoverEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Chart,
-    category: js.Any = null,
-    categoryPoints: js.Any = null,
-    dataItem: js.Any = null,
-    element: js.Any = null,
-    originalEvent: js.Any = null,
-    percentage: js.Any = null,
-    series: ChartSeriesHoverEventSeries = null,
-    stackValue: js.Any = null,
-    value: js.Any = null
-  ): ChartSeriesHoverEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (categoryPoints != null) __obj.updateDynamic("categoryPoints")(categoryPoints.asInstanceOf[js.Any])
-    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
-    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (stackValue != null) __obj.updateDynamic("stackValue")(stackValue.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Chart): ChartSeriesHoverEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesHoverEvent]
   }
+  
+  extension [Self <: ChartSeriesHoverEvent](x: Self) {
+    
+    inline def setCategory(value: Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryPoints(value: Any): Self = StObject.set(x, "categoryPoints", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryPointsUndefined: Self = StObject.set(x, "categoryPoints", js.undefined)
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    
+    inline def setDataItem(value: Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
+    
+    inline def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
+    
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+    
+    inline def setPercentage(value: Any): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+    
+    inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+    
+    inline def setSeries(value: ChartSeriesHoverEventSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    
+    inline def setStackValue(value: Any): Self = StObject.set(x, "stackValue", value.asInstanceOf[js.Any])
+    
+    inline def setStackValueUndefined: Self = StObject.set(x, "stackValue", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

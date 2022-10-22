@@ -1,24 +1,28 @@
 package typingsJapgolly.cytoscape.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchDegreeCentralityNormalizedResultDirected extends js.Object {
+trait SearchDegreeCentralityNormalizedResultDirected extends StObject {
+  
   /** the normalised indegree centrality of the specified node */
-  def indegree(node: NodeSingular): js.Any
+  def indegree(node: NodeSingular): Any
+  
   /** the normalised outdegree centrality of the specified node */
-  def outdegree(node: NodeSingular): js.Any
+  def outdegree(node: NodeSingular): Any
 }
-
 object SearchDegreeCentralityNormalizedResultDirected {
-  @scala.inline
-  def apply(indegree: NodeSingular => CallbackTo[js.Any], outdegree: NodeSingular => CallbackTo[js.Any]): SearchDegreeCentralityNormalizedResultDirected = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indegree")(js.Any.fromFunction1((t0: typingsJapgolly.cytoscape.mod.NodeSingular) => indegree(t0).runNow()))
-    __obj.updateDynamic("outdegree")(js.Any.fromFunction1((t0: typingsJapgolly.cytoscape.mod.NodeSingular) => outdegree(t0).runNow()))
+  
+  inline def apply(indegree: NodeSingular => Any, outdegree: NodeSingular => Any): SearchDegreeCentralityNormalizedResultDirected = {
+    val __obj = js.Dynamic.literal(indegree = js.Any.fromFunction1(indegree), outdegree = js.Any.fromFunction1(outdegree))
     __obj.asInstanceOf[SearchDegreeCentralityNormalizedResultDirected]
   }
+  
+  extension [Self <: SearchDegreeCentralityNormalizedResultDirected](x: Self) {
+    
+    inline def setIndegree(value: NodeSingular => Any): Self = StObject.set(x, "indegree", js.Any.fromFunction1(value))
+    
+    inline def setOutdegree(value: NodeSingular => Any): Self = StObject.set(x, "outdegree", js.Any.fromFunction1(value))
+  }
 }
-

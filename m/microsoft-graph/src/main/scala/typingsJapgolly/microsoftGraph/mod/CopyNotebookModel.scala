@@ -1,63 +1,138 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CopyNotebookModel extends js.Object {
-  var createdBy: js.UndefOr[String] = js.undefined
-  var createdByIdentity: js.UndefOr[IdentitySet] = js.undefined
-  var createdTime: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var isDefault: js.UndefOr[Boolean] = js.undefined
-  var isShared: js.UndefOr[Boolean] = js.undefined
-  var lastModifiedBy: js.UndefOr[String] = js.undefined
-  var lastModifiedByIdentity: js.UndefOr[IdentitySet] = js.undefined
-  var lastModifiedTime: js.UndefOr[String] = js.undefined
-  var links: js.UndefOr[NotebookLinks] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var sectionGroupsUrl: js.UndefOr[String] = js.undefined
-  var sectionsUrl: js.UndefOr[String] = js.undefined
-  var self: js.UndefOr[String] = js.undefined
-  var userRole: js.UndefOr[OnenoteUserRole] = js.undefined
+trait CopyNotebookModel extends StObject {
+  
+  var createdBy: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var createdByIdentity: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
+  
+  var createdTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var id: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var isDefault: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  var isShared: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  var lastModifiedBy: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var lastModifiedByIdentity: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
+  
+  var lastModifiedTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var links: js.UndefOr[NullableOption[NotebookLinks]] = js.undefined
+  
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var sectionGroupsUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var sectionsUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var self: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var userRole: js.UndefOr[NullableOption[OnenoteUserRole]] = js.undefined
 }
-
 object CopyNotebookModel {
-  @scala.inline
-  def apply(
-    createdBy: String = null,
-    createdByIdentity: IdentitySet = null,
-    createdTime: String = null,
-    id: String = null,
-    isDefault: js.UndefOr[Boolean] = js.undefined,
-    isShared: js.UndefOr[Boolean] = js.undefined,
-    lastModifiedBy: String = null,
-    lastModifiedByIdentity: IdentitySet = null,
-    lastModifiedTime: String = null,
-    links: NotebookLinks = null,
-    name: String = null,
-    sectionGroupsUrl: String = null,
-    sectionsUrl: String = null,
-    self: String = null,
-    userRole: OnenoteUserRole = null
-  ): CopyNotebookModel = {
+  
+  inline def apply(): CopyNotebookModel = {
     val __obj = js.Dynamic.literal()
-    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy.asInstanceOf[js.Any])
-    if (createdByIdentity != null) __obj.updateDynamic("createdByIdentity")(createdByIdentity.asInstanceOf[js.Any])
-    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(isShared)) __obj.updateDynamic("isShared")(isShared.asInstanceOf[js.Any])
-    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy.asInstanceOf[js.Any])
-    if (lastModifiedByIdentity != null) __obj.updateDynamic("lastModifiedByIdentity")(lastModifiedByIdentity.asInstanceOf[js.Any])
-    if (lastModifiedTime != null) __obj.updateDynamic("lastModifiedTime")(lastModifiedTime.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (sectionGroupsUrl != null) __obj.updateDynamic("sectionGroupsUrl")(sectionGroupsUrl.asInstanceOf[js.Any])
-    if (sectionsUrl != null) __obj.updateDynamic("sectionsUrl")(sectionsUrl.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (userRole != null) __obj.updateDynamic("userRole")(userRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyNotebookModel]
   }
+  
+  extension [Self <: CopyNotebookModel](x: Self) {
+    
+    inline def setCreatedBy(value: NullableOption[String]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedByIdentity(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdByIdentity", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedByIdentityNull: Self = StObject.set(x, "createdByIdentity", null)
+    
+    inline def setCreatedByIdentityUndefined: Self = StObject.set(x, "createdByIdentity", js.undefined)
+    
+    inline def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
+    
+    inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
+    
+    inline def setCreatedTime(value: NullableOption[String]): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedTimeNull: Self = StObject.set(x, "createdTime", null)
+    
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
+    
+    inline def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIsDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    
+    inline def setIsDefaultNull: Self = StObject.set(x, "isDefault", null)
+    
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+    
+    inline def setIsShared(value: NullableOption[Boolean]): Self = StObject.set(x, "isShared", value.asInstanceOf[js.Any])
+    
+    inline def setIsSharedNull: Self = StObject.set(x, "isShared", null)
+    
+    inline def setIsSharedUndefined: Self = StObject.set(x, "isShared", js.undefined)
+    
+    inline def setLastModifiedBy(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedByIdentity(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedByIdentity", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedByIdentityNull: Self = StObject.set(x, "lastModifiedByIdentity", null)
+    
+    inline def setLastModifiedByIdentityUndefined: Self = StObject.set(x, "lastModifiedByIdentity", js.undefined)
+    
+    inline def setLastModifiedByNull: Self = StObject.set(x, "lastModifiedBy", null)
+    
+    inline def setLastModifiedByUndefined: Self = StObject.set(x, "lastModifiedBy", js.undefined)
+    
+    inline def setLastModifiedTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedTimeNull: Self = StObject.set(x, "lastModifiedTime", null)
+    
+    inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "lastModifiedTime", js.undefined)
+    
+    inline def setLinks(value: NullableOption[NotebookLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    
+    inline def setLinksNull: Self = StObject.set(x, "links", null)
+    
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSectionGroupsUrl(value: NullableOption[String]): Self = StObject.set(x, "sectionGroupsUrl", value.asInstanceOf[js.Any])
+    
+    inline def setSectionGroupsUrlNull: Self = StObject.set(x, "sectionGroupsUrl", null)
+    
+    inline def setSectionGroupsUrlUndefined: Self = StObject.set(x, "sectionGroupsUrl", js.undefined)
+    
+    inline def setSectionsUrl(value: NullableOption[String]): Self = StObject.set(x, "sectionsUrl", value.asInstanceOf[js.Any])
+    
+    inline def setSectionsUrlNull: Self = StObject.set(x, "sectionsUrl", null)
+    
+    inline def setSectionsUrlUndefined: Self = StObject.set(x, "sectionsUrl", js.undefined)
+    
+    inline def setSelf(value: NullableOption[String]): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+    
+    inline def setSelfNull: Self = StObject.set(x, "self", null)
+    
+    inline def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
+    
+    inline def setUserRole(value: NullableOption[OnenoteUserRole]): Self = StObject.set(x, "userRole", value.asInstanceOf[js.Any])
+    
+    inline def setUserRoleNull: Self = StObject.set(x, "userRole", null)
+    
+    inline def setUserRoleUndefined: Self = StObject.set(x, "userRole", js.undefined)
+  }
 }
-

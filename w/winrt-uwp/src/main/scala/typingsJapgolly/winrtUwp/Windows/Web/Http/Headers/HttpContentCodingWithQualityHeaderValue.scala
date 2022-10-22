@@ -1,45 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.Web.Http.Headers
 
-import typingsJapgolly.winrtUwp.AnonContentCodingWithQualityHeaderValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents accept encoding information used in the Accept-Encoding HTTP header on an HTTP request. */
-@JSGlobal("Windows.Web.Http.Headers.HttpContentCodingWithQualityHeaderValue")
-@js.native
-class HttpContentCodingWithQualityHeaderValue protected () extends js.Object {
-  /**
-    * Initializes a new instance of the HttpContentCodingHeaderValue class with content-coding information.
-    * @param contentCoding The value of the content-coding to use.
-    */
-  def this(contentCoding: String) = this()
-  /**
-    * Initializes a new instance of the HttpContentCodingHeaderValue class with content-coding information and a qvalue.
-    * @param contentCoding The value of the content-coding information to use.
-    * @param quality The value of the qvalue to use.
-    */
-  def this(contentCoding: String, quality: Double) = this()
+trait HttpContentCodingWithQualityHeaderValue extends StObject {
+  
   /** Gets the value of the content-coding characteristic in the Accept-Encoding HTTP header. */
-  var contentCoding: String = js.native
+  var contentCoding: String
+  
   /** Gets the value of the qvalue attribute in the Accept-Encoding HTTP header. */
-  var quality: Double = js.native
+  var quality: Double
 }
-
-/* static members */
-@JSGlobal("Windows.Web.Http.Headers.HttpContentCodingWithQualityHeaderValue")
-@js.native
-object HttpContentCodingWithQualityHeaderValue extends js.Object {
-  /**
-    * Converts a string to an HttpContentCodingWithQualityHeaderValue instance.
-    * @param input A string that represents the content coding information in the Accept-Encoding HTTP header.
-    * @return An HttpContentCodingWithQualityHeaderValue instance.
-    */
-  def parse(input: String): HttpContentCodingWithQualityHeaderValue = js.native
-  /**
-    * Determines whether a string is valid HttpContentCodingWithQualityHeaderValue information.
-    * @param input The string to validate.
-    */
-  def tryParse(input: String): AnonContentCodingWithQualityHeaderValue = js.native
+object HttpContentCodingWithQualityHeaderValue {
+  
+  inline def apply(contentCoding: String, quality: Double): HttpContentCodingWithQualityHeaderValue = {
+    val __obj = js.Dynamic.literal(contentCoding = contentCoding.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HttpContentCodingWithQualityHeaderValue]
+  }
+  
+  extension [Self <: HttpContentCodingWithQualityHeaderValue](x: Self) {
+    
+    inline def setContentCoding(value: String): Self = StObject.set(x, "contentCoding", value.asInstanceOf[js.Any])
+    
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+  }
 }
-

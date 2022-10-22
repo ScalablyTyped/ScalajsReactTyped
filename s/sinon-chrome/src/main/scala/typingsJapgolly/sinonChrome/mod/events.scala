@@ -1,38 +1,53 @@
 package typingsJapgolly.sinonChrome.mod
 
 import typingsJapgolly.sinon.mod.SinonSpy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-chrome", "events")
-@js.native
-object events extends js.Object {
+object events {
+  
   @js.native
   trait Event
-    extends typingsJapgolly.chrome.chrome.events.Event[js.Function] {
+    extends StObject
+       with typingsJapgolly.chrome.chrome.events.Event[js.Function] {
+    
+    // Methods
+    def addListener(
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[Any]
+    ): Any = js.native
     @JSName("addListener")
-    var addListener_Original: SinonSpy = js.native
+    var addListener_Original: SinonSpy[js.Array[Any], Any] = js.native
+    
+    def applyTrigger(args: js.Array[Any]): Unit = js.native
+    
+    def applyTriggerAsync(args: js.Array[Any]): Unit = js.native
+    
+    def dispatch(args: Any*): Unit = js.native
+    
+    // Methods
+    def hasListener(
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[Any]
+    ): Any = js.native
     @JSName("hasListener")
-    var hasListener_Original: SinonSpy = js.native
+    var hasListener_Original: SinonSpy[js.Array[Any], Any] = js.native
+    
+    // Methods
+    def removeListener(
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[Any]
+    ): Any = js.native
     @JSName("removeListener")
-    var removeListener_Original: SinonSpy = js.native
+    var removeListener_Original: SinonSpy[js.Array[Any], Any] = js.native
+    
+    // Methods
+    def removeListeners(
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[Any]
+    ): Any = js.native
     @JSName("removeListeners")
-    var removeListeners_Original: SinonSpy = js.native
-    // Methods
-    def addListener(args: js.Any*): js.Any = js.native
-    def applyTrigger(args: js.Array[_]): Unit = js.native
-    def applyTriggerAsync(args: js.Array[_]): Unit = js.native
-    def dispatch(args: js.Any*): Unit = js.native
-    // Methods
-    def hasListener(args: js.Any*): js.Any = js.native
-    // Methods
-    def removeListener(args: js.Any*): js.Any = js.native
-    // Methods
-    def removeListeners(args: js.Any*): js.Any = js.native
-    def trigger(args: js.Any*): Unit = js.native
-    def triggerAsync(args: js.Any*): Unit = js.native
+    var removeListeners_Original: SinonSpy[js.Array[Any], Any] = js.native
+    
+    def trigger(args: Any*): Unit = js.native
+    
+    def triggerAsync(args: Any*): Unit = js.native
   }
-  
 }
-

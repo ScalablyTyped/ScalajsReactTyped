@@ -1,23 +1,19 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`150001`
-import typingsJapgolly.activexWord.activexWordNumbers.`150002`
+import typingsJapgolly.activexWord.activexWordInts.`150001`
+import typingsJapgolly.activexWord.activexWordInts.`150002`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`150001`
-  - typingsJapgolly.activexWord.activexWordNumbers.`150002`
+  - typingsJapgolly.activexWord.activexWordInts.`150001`
+  - typingsJapgolly.activexWord.activexWordInts.`150002`
 */
-trait WdWordDialogTabHID extends js.Object
-
+trait WdWordDialogTabHID extends StObject
 object WdWordDialogTabHID {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdDialogFilePageSetupTabPaperSize: `150001` = this.cast(150001)
-  @scala.inline
-  def wdDialogFilePageSetupTabPaperSource: `150002` = this.cast(150002)
+  
+  inline def wdDialogFilePageSetupTabPaperSize: `150001` = 150001.asInstanceOf[`150001`]
+  
+  inline def wdDialogFilePageSetupTabPaperSource: `150002` = 150002.asInstanceOf[`150002`]
 }
-

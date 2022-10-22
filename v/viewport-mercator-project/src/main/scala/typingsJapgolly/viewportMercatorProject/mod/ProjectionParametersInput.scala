@@ -1,34 +1,50 @@
 package typingsJapgolly.viewportMercatorProject.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProjectionParametersInput extends js.Object {
+trait ProjectionParametersInput extends StObject {
+  
   var altitude: js.UndefOr[Double] = js.undefined
+  
   var farZMultiplier: js.UndefOr[Double] = js.undefined
+  
   var height: Double
+  
   var nearZMultiplier: js.UndefOr[Double] = js.undefined
+  
   var pitch: js.UndefOr[Double] = js.undefined
+  
   var width: Double
 }
-
 object ProjectionParametersInput {
-  @scala.inline
-  def apply(
-    height: Double,
-    width: Double,
-    altitude: Int | Double = null,
-    farZMultiplier: Int | Double = null,
-    nearZMultiplier: Int | Double = null,
-    pitch: Int | Double = null
-  ): ProjectionParametersInput = {
+  
+  inline def apply(height: Double, width: Double): ProjectionParametersInput = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (farZMultiplier != null) __obj.updateDynamic("farZMultiplier")(farZMultiplier.asInstanceOf[js.Any])
-    if (nearZMultiplier != null) __obj.updateDynamic("nearZMultiplier")(nearZMultiplier.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectionParametersInput]
   }
+  
+  extension [Self <: ProjectionParametersInput](x: Self) {
+    
+    inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    
+    inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+    
+    inline def setFarZMultiplier(value: Double): Self = StObject.set(x, "farZMultiplier", value.asInstanceOf[js.Any])
+    
+    inline def setFarZMultiplierUndefined: Self = StObject.set(x, "farZMultiplier", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setNearZMultiplier(value: Double): Self = StObject.set(x, "nearZMultiplier", value.asInstanceOf[js.Any])
+    
+    inline def setNearZMultiplierUndefined: Self = StObject.set(x, "nearZMultiplier", js.undefined)
+    
+    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    
+    inline def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
 }
-

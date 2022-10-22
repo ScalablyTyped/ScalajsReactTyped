@@ -1,68 +1,89 @@
 package typingsJapgolly.antd.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antd.antdStrings.default
-import typingsJapgolly.antd.antdStrings.error
-import typingsJapgolly.antd.antdStrings.processing
-import typingsJapgolly.antd.antdStrings.success
-import typingsJapgolly.antd.antdStrings.warning
-import typingsJapgolly.antd.badgeMod.BadgeProps
+import typingsJapgolly.antd.antdStrings.small
+import typingsJapgolly.antd.libBadgeMod.BadgeProps
+import typingsJapgolly.antd.libBadgeRibbonMod.RibbonProps
+import typingsJapgolly.antd.libUtilColorsMod.PresetColorType
+import typingsJapgolly.antd.libUtilColorsMod.PresetStatusColorType
+import typingsJapgolly.antd.libUtilTypeMod.LiteralUnion
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Badge {
-  def apply(
-    className: String = null,
-    color: String = null,
-    count: VdomNode = null,
-    dot: js.UndefOr[Boolean] = js.undefined,
-    offset: js.Tuple2[Double | String, Double | String] = null,
-    overflowCount: Int | Double = null,
-    prefixCls: String = null,
-    scrollNumberPrefixCls: String = null,
-    showZero: js.UndefOr[Boolean] = js.undefined,
-    status: success | processing | default | error | warning = null,
-    style: CSSProperties = null,
-    text: VdomNode = null,
-    title: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[BadgeProps, typingsJapgolly.antd.badgeMod.default, Unit, BadgeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (overflowCount != null) __obj.updateDynamic("overflowCount")(overflowCount.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (scrollNumberPrefixCls != null) __obj.updateDynamic("scrollNumberPrefixCls")(scrollNumberPrefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(showZero)) __obj.updateDynamic("showZero")(showZero.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.rawNode.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.badgeMod.BadgeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.badgeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.badgeMod.BadgeProps])(children: _*)
+  object Ribbon {
+    
+    @JSImport("antd", "Badge.Ribbon")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Ribbon.type): SharedBuilder_RibbonProps1895949547 = new SharedBuilder_RibbonProps1895949547(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: RibbonProps): SharedBuilder_RibbonProps1895949547 = new SharedBuilder_RibbonProps1895949547(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("antd/lib/badge", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("antd", "Badge")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def color(value: LiteralUnion[PresetColorType, String]): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def count(value: VdomNode): this.type = set("count", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def countNull: this.type = set("count", null)
+    
+    inline def countVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("count", js.Array(value*))
+    
+    inline def countVdomElement(value: VdomElement): this.type = set("count", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def dot(value: Boolean): this.type = set("dot", value.asInstanceOf[js.Any])
+    
+    inline def offset(value: js.Tuple2[Double | String, Double | String]): this.type = set("offset", value.asInstanceOf[js.Any])
+    
+    inline def overflowCount(value: Double): this.type = set("overflowCount", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def scrollNumberPrefixCls(value: String): this.type = set("scrollNumberPrefixCls", value.asInstanceOf[js.Any])
+    
+    inline def showZero(value: Boolean): this.type = set("showZero", value.asInstanceOf[js.Any])
+    
+    inline def size(value: default | small): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def status(value: PresetStatusColorType): this.type = set("status", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def text(value: VdomNode): this.type = set("text", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def textNull: this.type = set("text", null)
+    
+    inline def textVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("text", js.Array(value*))
+    
+    inline def textVdomElement(value: VdomElement): this.type = set("text", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Badge.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: BadgeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

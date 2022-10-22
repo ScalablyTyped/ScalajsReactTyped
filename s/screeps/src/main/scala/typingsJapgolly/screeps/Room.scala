@@ -1,6 +1,8 @@
 package typingsJapgolly.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.screeps.anon.LookAtResultLookConstant
+import typingsJapgolly.screeps.anon.LookAtResultWithPosLookCo
+import typingsJapgolly.screeps.anon.Pos
 import typingsJapgolly.screeps.screepsBooleans.`false`
 import typingsJapgolly.screeps.screepsBooleans.`true`
 import typingsJapgolly.screeps.screepsStrings.constructionSite
@@ -18,9 +20,9 @@ import typingsJapgolly.screeps.screepsStrings.source
 import typingsJapgolly.screeps.screepsStrings.structure
 import typingsJapgolly.screeps.screepsStrings.terrain
 import typingsJapgolly.screeps.screepsStrings.tombstone
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object representing the room in which your units and structures are in.
@@ -30,43 +32,13 @@ import scala.scalajs.js.annotation._
   * Every object in the room contains its linked Room instance in the room property.
   */
 @js.native
-trait Room extends js.Object {
+trait Room extends StObject {
+  
   /**
     * The Controller structure of this room, if present, otherwise undefined.
     */
   var controller: js.UndefOr[StructureController] = js.native
-  /**
-    * Total amount of energy available in all spawns and extensions in the room.
-    */
-  var energyAvailable: Double = js.native
-  /**
-    * Total amount of energyCapacity of all spawns and extensions in the room.
-    */
-  var energyCapacityAvailable: Double = js.native
-  /**
-    * A shorthand to `Memory.rooms[room.name]`. You can use it for quick access the room’s specific memory data object.
-    */
-  var memory: RoomMemory = js.native
-  /**
-    * One of the `MODE_*` constants.
-    */
-  var mode: String = js.native
-  /**
-    * The name of the room.
-    */
-  var name: String = js.native
-  /**
-    * The Storage structure of this room, if present, otherwise undefined.
-    */
-  var storage: js.UndefOr[StructureStorage] = js.native
-  /**
-    * The Terminal structure of this room, if present, otherwise undefined.
-    */
-  var terminal: js.UndefOr[StructureTerminal] = js.native
-  /**
-    * A RoomVisual object for this room. You can use this object to draw simple shapes (lines, circles, text labels) in the room.
-    */
-  var visual: RoomVisual = js.native
+  
   def createConstructionSite(pos: HasRoomPosition, structureType: STRUCTURE_SPAWN): ScreepsReturnCode = js.native
   def createConstructionSite(pos: HasRoomPosition, structureType: STRUCTURE_SPAWN, name: String): ScreepsReturnCode = js.native
   def createConstructionSite(pos: HasRoomPosition, structureType: StructureConstant): ScreepsReturnCode = js.native
@@ -104,10 +76,7 @@ trait Room extends js.Object {
     */
   def createConstructionSite(x: Double, y: Double, structureType: STRUCTURE_SPAWN): ScreepsReturnCode = js.native
   def createConstructionSite(x: Double, y: Double, structureType: STRUCTURE_SPAWN, name: String): ScreepsReturnCode = js.native
-  def createFlag(pos: AnonPos): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: AnonPos, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: AnonPos, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: AnonPos, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  
   /**
     * Create new Flag at the specified location.
     * @param pos Can be a RoomPosition object or any object containing RoomPosition.
@@ -124,8 +93,20 @@ trait Room extends js.Object {
     */
   def createFlag(pos: RoomPosition): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: RoomPosition, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: RoomPosition, name: String, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: RoomPosition, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(pos: RoomPosition, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: RoomPosition, name: Unit, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: RoomPosition, name: Unit, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: RoomPosition, name: Unit, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: String, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: Unit, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: Unit, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: Pos, name: Unit, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   /**
     * Create new Flag at the specified location.
     * @param x The X position.
@@ -143,8 +124,29 @@ trait Room extends js.Object {
     */
   def createFlag(x: Double, y: Double): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(x: Double, y: Double, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(x: Double, y: Double, name: String, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(x: Double, y: Double, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(x: Double, y: Double, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(x: Double, y: Double, name: Unit, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(x: Double, y: Double, name: Unit, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(x: Double, y: Double, name: Unit, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  
+  /**
+    * Total amount of energy available in all spawns and extensions in the room.
+    */
+  var energyAvailable: Double = js.native
+  
+  /**
+    * Total amount of energyCapacity of all spawns and extensions in the room.
+    */
+  var energyCapacityAvailable: Double = js.native
+  
+  def find[S /* <: AnyStructure */](`type`: FIND_HOSTILE_STRUCTURES): js.Array[S] = js.native
+  def find[S /* <: AnyStructure */](`type`: FIND_HOSTILE_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES, S]): js.Array[S] = js.native
+  def find[S /* <: AnyStructure */](`type`: FIND_MY_STRUCTURES): js.Array[S] = js.native
+  def find[S /* <: AnyStructure */](`type`: FIND_MY_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES, S]): js.Array[S] = js.native
+  def find[S /* <: AnyStructure */](`type`: FIND_STRUCTURES): js.Array[S] = js.native
+  def find[S /* <: AnyStructure */](`type`: FIND_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES, S]): js.Array[S] = js.native
   /**
     * Find all objects of the specified type in the room.
     * @param type One of the following constants:
@@ -169,18 +171,9 @@ trait Room extends js.Object {
     * @param opts An object with additional options
     * @returns An array with the objects found.
     */
-  def find[K /* <: FindConstant */](`type`: K): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any
-  ] = js.native
-  def find[K /* <: FindConstant */](`type`: K, opts: FilterOptions[K]): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any
-  ] = js.native
-  def find[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES): js.Array[T] = js.native
-  def find[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES]): js.Array[T] = js.native
-  def find[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES): js.Array[T] = js.native
-  def find[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES]): js.Array[T] = js.native
-  def find[T /* <: Structure[StructureConstant] */](`type`: FIND_STRUCTURES): js.Array[T] = js.native
-  def find[T /* <: Structure[StructureConstant] */](`type`: FIND_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES]): js.Array[T] = js.native
+  def find[K /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any */](`type`: K): js.Array[S] = js.native
+  def find[K /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any */](`type`: K, opts: FilterOptions[K, S]): js.Array[S] = js.native
+  
   /**
     * Find the exit direction en route to another room.
     * @param room Another room name or room object.
@@ -189,6 +182,7 @@ trait Room extends js.Object {
     */
   def findExitTo(room: String): ExitConstant | ERR_NO_PATH | ERR_INVALID_ARGS = js.native
   def findExitTo(room: Room): ExitConstant | ERR_NO_PATH | ERR_INVALID_ARGS = js.native
+  
   /**
     * Find an optimal path inside the room between fromPos and toPos using A* search algorithm.
     * @param fromPos The start position.
@@ -198,11 +192,13 @@ trait Room extends js.Object {
     */
   def findPath(fromPos: RoomPosition, toPos: RoomPosition): js.Array[PathStep] = js.native
   def findPath(fromPos: RoomPosition, toPos: RoomPosition, opts: FindPathOpts): js.Array[PathStep] = js.native
+  
   /**
     * Returns an array of events happened on the previous tick in this room.
     */
   def getEventLog(): js.Array[EventItem] = js.native
   def getEventLog(raw: Boolean): js.Array[EventItem] = js.native
+  
   /**
     * Creates a RoomPosition object at the specified location.
     * @param x The X position.
@@ -210,18 +206,20 @@ trait Room extends js.Object {
     * @returns A RoomPosition object or null if it cannot be obtained.
     */
   def getPositionAt(x: Double, y: Double): RoomPosition | Null = js.native
+  
   /**
     * Get a Room.Terrain object which provides fast access to static terrain data.
     * This method works for any room in the world even if you have no access to it.
     */
   def getTerrain(): RoomTerrain = js.native
-  def lookAt(target: AnonPos): js.Array[LookAtResultLookConstant] = js.native
+  
   /**
     * Get the list of objects at the specified room position.
     * @param target Can be a RoomPosition object or any object containing RoomPosition.
     * @returns An array with objects at the specified position
     */
   def lookAt(target: RoomPosition): js.Array[LookAtResultLookConstant] = js.native
+  def lookAt(target: Pos): js.Array[LookAtResultLookConstant] = js.native
   /**
     * Get the list of objects at the specified room position.
     * @param x The X position.
@@ -229,6 +227,7 @@ trait Room extends js.Object {
     * @returns An array with objects at the specified position
     */
   def lookAt(x: Double, y: Double): js.Array[LookAtResultLookConstant] = js.native
+  
   /**
     * Get the list of objects at the specified room area. This method is more CPU efficient in comparison to multiple lookAt calls.
     * @param top The top Y boundary of the area.
@@ -252,6 +251,7 @@ trait Room extends js.Object {
     */
   @JSName("lookAtArea")
   def lookAtArea_true(top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): js.Array[LookAtResultWithPosLookCo] = js.native
+  
   def lookForAtArea(
     `type`: constructionSite,
     top: Double,
@@ -284,8 +284,8 @@ trait Room extends js.Object {
   def lookForAtArea(`type`: deposit, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Deposit, deposit] = js.native
   def lookForAtArea(`type`: energy, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Resource[RESOURCE_ENERGY], energy] = js.native
   def lookForAtArea(`type`: energy, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Resource[RESOURCE_ENERGY], energy] = js.native
-  def lookForAtArea(`type`: exit, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[_, exit] = js.native
-  def lookForAtArea(`type`: exit, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[_, exit] = js.native
+  def lookForAtArea(`type`: exit, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Any, exit] = js.native
+  def lookForAtArea(`type`: exit, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Any, exit] = js.native
   def lookForAtArea(`type`: flag, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Flag, flag] = js.native
   def lookForAtArea(`type`: flag, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Flag, flag] = js.native
   def lookForAtArea(`type`: mineral, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Mineral[MineralConstant], mineral] = js.native
@@ -325,7 +325,7 @@ trait Room extends js.Object {
   @JSName("lookForAtArea")
   def lookForAtArea_energy(`type`: energy, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Resource[RESOURCE_ENERGY], energy] = js.native
   @JSName("lookForAtArea")
-  def lookForAtArea_exit(`type`: exit, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[_, exit] = js.native
+  def lookForAtArea_exit(`type`: exit, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Any, exit] = js.native
   @JSName("lookForAtArea")
   def lookForAtArea_flag(`type`: flag, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Flag, flag] = js.native
   @JSName("lookForAtArea")
@@ -346,6 +346,7 @@ trait Room extends js.Object {
   def lookForAtArea_terrain(`type`: terrain, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Terrain, terrain] = js.native
   @JSName("lookForAtArea")
   def lookForAtArea_tombstone(`type`: tombstone, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Tombstone, tombstone] = js.native
+  
   @JSName("lookForAt")
   def lookForAt_constructionSite(`type`: constructionSite, target: HasRoomPosition): js.Array[ConstructionSite[BuildableStructureConstant]] = js.native
   /**
@@ -384,11 +385,11 @@ trait Room extends js.Object {
   @JSName("lookForAt")
   def lookForAt_energy(`type`: energy, x: Double, y: Double): js.Array[Resource[RESOURCE_ENERGY]] = js.native
   @JSName("lookForAt")
-  def lookForAt_exit(`type`: exit, target: HasRoomPosition): js.Array[_] = js.native
+  def lookForAt_exit(`type`: exit, target: HasRoomPosition): js.Array[Any] = js.native
   @JSName("lookForAt")
-  def lookForAt_exit(`type`: exit, target: RoomPosition): js.Array[_] = js.native
+  def lookForAt_exit(`type`: exit, target: RoomPosition): js.Array[Any] = js.native
   @JSName("lookForAt")
-  def lookForAt_exit(`type`: exit, x: Double, y: Double): js.Array[_] = js.native
+  def lookForAt_exit(`type`: exit, x: Double, y: Double): js.Array[Any] = js.native
   @JSName("lookForAt")
   def lookForAt_flag(`type`: flag, target: HasRoomPosition): js.Array[Flag] = js.native
   @JSName("lookForAt")
@@ -449,9 +450,34 @@ trait Room extends js.Object {
   def lookForAt_tombstone(`type`: tombstone, target: RoomPosition): js.Array[Tombstone] = js.native
   @JSName("lookForAt")
   def lookForAt_tombstone(`type`: tombstone, x: Double, y: Double): js.Array[Tombstone] = js.native
+  
+  /**
+    * A shorthand to `Memory.rooms[room.name]`. You can use it for quick access the room’s specific memory data object.
+    */
+  var memory: RoomMemory = js.native
+  
+  /**
+    * One of the `MODE_*` constants.
+    */
+  var mode: String = js.native
+  
+  /**
+    * The name of the room.
+    */
+  val name: String = js.native
+  
+  /**
+    * The Storage structure of this room, if present, otherwise undefined.
+    */
+  var storage: js.UndefOr[StructureStorage] = js.native
+  
+  /**
+    * The Terminal structure of this room, if present, otherwise undefined.
+    */
+  var terminal: js.UndefOr[StructureTerminal] = js.native
+  
+  /**
+    * A RoomVisual object for this room. You can use this object to draw simple shapes (lines, circles, text labels) in the room.
+    */
+  var visual: RoomVisual = js.native
 }
-
-@JSGlobal("Room")
-@js.native
-object Room extends TopLevel[RoomConstructor]
-

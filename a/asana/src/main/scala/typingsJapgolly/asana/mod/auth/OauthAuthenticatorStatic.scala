@@ -1,13 +1,14 @@
 package typingsJapgolly.asana.mod.auth
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OauthAuthenticatorStatic
-  extends /**
+  extends StObject
+     with /**
   * Creates an authenticator that uses Oauth for authentication.
   *
   * @param {Object} options Configure the authenticator; must specify one
@@ -22,4 +23,3 @@ trait OauthAuthenticatorStatic
   * @constructor
   */
 Instantiable1[/* options */ OauthAuthenticatorOptions, OauthAuthenticator]
-

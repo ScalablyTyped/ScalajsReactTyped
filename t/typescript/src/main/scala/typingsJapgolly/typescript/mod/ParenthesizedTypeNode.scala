@@ -1,16 +1,18 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.mod.SyntaxKind.ParenthesizedType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParenthesizedTypeNode
-  extends TypeNode
+  extends StObject
+     with TypeNode
      with HasType {
+  
   @JSName("kind")
-  var kind_ParenthesizedTypeNode: ParenthesizedType = js.native
-  var `type`: TypeNode = js.native
+  val kind_ParenthesizedTypeNode: ParenthesizedType = js.native
+  
+  val `type`: TypeNode = js.native
 }
-

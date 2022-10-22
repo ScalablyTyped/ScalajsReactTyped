@@ -1,14 +1,17 @@
 package typingsJapgolly.materialUi.components
 
+import typingsJapgolly.materialUi.MaterialUI.SvgIconProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object ImagePhotoSizeSelectLarge
-  extends SharedApply_SvgIconProps_1100155871[typingsJapgolly.materialUi.svgIconsMod.ImagePhotoSizeSelectLarge] {
+object ImagePhotoSizeSelectLarge {
+  
   @JSImport("material-ui/svg-icons", "ImagePhotoSizeSelectLarge")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: ImagePhotoSizeSelectLarge.type): SharedBuilder_SvgIconProps_115160895[typingsJapgolly.materialUi.svgIconsMod.ImagePhotoSizeSelectLarge] = new SharedBuilder_SvgIconProps_115160895[typingsJapgolly.materialUi.svgIconsMod.ImagePhotoSizeSelectLarge](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SvgIconProps): SharedBuilder_SvgIconProps_115160895[typingsJapgolly.materialUi.svgIconsMod.ImagePhotoSizeSelectLarge] = new SharedBuilder_SvgIconProps_115160895[typingsJapgolly.materialUi.svgIconsMod.ImagePhotoSizeSelectLarge](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,21 +1,66 @@
 package typingsJapgolly.activexMsforms.MSForms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MSForms.Tab")
-@js.native
-class Tab protected () extends js.Object {
-  var Accelerator: String = js.native
-  var Caption: String = js.native
-  var ControlTipText: String = js.native
-  var Enabled: Boolean = js.native
-  var Index: Double = js.native
-  @JSName("MSForms.Tab_typekey")
-  var MSFormsDotTab_typekey: Tab = js.native
-  var Name: String = js.native
-  var Tag: String = js.native
-  var Visible: Boolean = js.native
+trait Tab extends StObject {
+  
+  var Accelerator: String
+  
+  var Caption: String
+  
+  var ControlTipText: String
+  
+  var Enabled: Boolean
+  
+  var Index: Double
+  
+  /* private */ @JSName("MSForms.Tab_typekey")
+  var MSFormsDotTab_typekey: Tab
+  
+  var Name: String
+  
+  var Tag: String
+  
+  var Visible: Boolean
 }
-
+object Tab {
+  
+  inline def apply(
+    Accelerator: String,
+    Caption: String,
+    ControlTipText: String,
+    Enabled: Boolean,
+    Index: Double,
+    MSFormsDotTab_typekey: Tab,
+    Name: String,
+    Tag: String,
+    Visible: Boolean
+  ): Tab = {
+    val __obj = js.Dynamic.literal(Accelerator = Accelerator.asInstanceOf[js.Any], Caption = Caption.asInstanceOf[js.Any], ControlTipText = ControlTipText.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSForms.Tab_typekey")(MSFormsDotTab_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Tab]
+  }
+  
+  extension [Self <: Tab](x: Self) {
+    
+    inline def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    
+    inline def setControlTipText(value: String): Self = StObject.set(x, "ControlTipText", value.asInstanceOf[js.Any])
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    
+    inline def setMSFormsDotTab_typekey(value: Tab): Self = StObject.set(x, "MSForms.Tab_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+  }
+}

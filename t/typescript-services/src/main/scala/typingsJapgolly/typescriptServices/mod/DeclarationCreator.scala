@@ -1,16 +1,18 @@
 package typingsJapgolly.typescriptServices.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-services", "DeclarationCreator")
-@js.native
-object DeclarationCreator extends js.Object {
-  def create(
+object DeclarationCreator {
+  
+  @JSImport("typescript-services", "DeclarationCreator")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def create(
     document: typingsJapgolly.typescriptServices.TypeScript.Document,
     semanticInfoChain: typingsJapgolly.typescriptServices.TypeScript.SemanticInfoChain,
     compilationSettings: typingsJapgolly.typescriptServices.TypeScript.ImmutableCompilationSettings
-  ): typingsJapgolly.typescriptServices.TypeScript.PullDecl = js.native
+  ): typingsJapgolly.typescriptServices.TypeScript.PullDecl = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(document.asInstanceOf[js.Any], semanticInfoChain.asInstanceOf[js.Any], compilationSettings.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.typescriptServices.TypeScript.PullDecl]
 }
-

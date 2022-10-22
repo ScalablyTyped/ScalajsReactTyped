@@ -1,21 +1,29 @@
 package typingsJapgolly.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetStreamResult extends js.Object {
-   // readable stream instance if response status is not 200, stream will be null.
+trait GetStreamResult extends StObject {
+  
   var res: NormalSuccessResponse
-  var stream: js.UndefOr[js.Any] = js.undefined
+  
+  /** readable stream instance if response status is not 200, stream will be null. */
+  var stream: js.UndefOr[Any] = js.undefined
 }
-
 object GetStreamResult {
-  @scala.inline
-  def apply(res: NormalSuccessResponse, stream: js.Any = null): GetStreamResult = {
+  
+  inline def apply(res: NormalSuccessResponse): GetStreamResult = {
     val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any])
-    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStreamResult]
   }
+  
+  extension [Self <: GetStreamResult](x: Self) {
+    
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    
+    inline def setStream(value: Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+  }
 }
-

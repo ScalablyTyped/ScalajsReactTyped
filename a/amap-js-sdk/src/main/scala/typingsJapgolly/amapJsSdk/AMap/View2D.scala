@@ -1,13 +1,7 @@
 package typingsJapgolly.amapJsSdk.AMap
 
-import typingsJapgolly.amapJsSdk.AnonCenter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("AMap.View2D")
-@js.native
-class View2D protected () extends js.Object {
-  def this(opt: AnonCenter) = this()
-}
-
+trait View2D extends StObject

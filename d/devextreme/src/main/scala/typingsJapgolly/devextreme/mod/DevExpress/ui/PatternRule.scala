@@ -1,45 +1,56 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import typingsJapgolly.devextreme.devextremeStrings.async
-import typingsJapgolly.devextreme.devextremeStrings.compare
-import typingsJapgolly.devextreme.devextremeStrings.custom
-import typingsJapgolly.devextreme.devextremeStrings.email
-import typingsJapgolly.devextreme.devextremeStrings.numeric
 import typingsJapgolly.devextreme.devextremeStrings.pattern
-import typingsJapgolly.devextreme.devextremeStrings.range
-import typingsJapgolly.devextreme.devextremeStrings.required
-import typingsJapgolly.devextreme.devextremeStrings.stringLength
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PatternRule extends js.Object {
-  /** If set to true, empty values are valid. */
+trait PatternRule
+  extends StObject
+     with ValidationRule {
+  
+  /**
+    * If set to true, empty values are valid.
+    */
   var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the message that is shown if the rule is broken. */
+  
+  /**
+    * Specifies the message that is shown if the rule is broken.
+    */
   var message: js.UndefOr[String] = js.undefined
-  /** Specifies the regular expression that the validated value must match. */
+  
+  /**
+    * Specifies the regular expression that the validated value must match.
+    */
   var pattern: js.UndefOr[js.RegExp | String] = js.undefined
-  /** Specifies the rule type. Set it to "pattern" to use the PatternRule. */
-  var `type`: js.UndefOr[
-    required | numeric | range | stringLength | custom | compare | pattern | email | async
-  ] = js.undefined
+  
+  /**
+    * Specifies the rule type. Set it to &apos;pattern&apos; to use the PatternRule.
+    */
+  var `type`: pattern
 }
-
 object PatternRule {
-  @scala.inline
-  def apply(
-    ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined,
-    message: String = null,
-    pattern: js.RegExp | String = null,
-    `type`: required | numeric | range | stringLength | custom | compare | pattern | email | async = null
-  ): PatternRule = {
+  
+  inline def apply(): PatternRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreEmptyValue)) __obj.updateDynamic("ignoreEmptyValue")(ignoreEmptyValue.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pattern")
     __obj.asInstanceOf[PatternRule]
   }
+  
+  extension [Self <: PatternRule](x: Self) {
+    
+    inline def setIgnoreEmptyValue(value: Boolean): Self = StObject.set(x, "ignoreEmptyValue", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreEmptyValueUndefined: Self = StObject.set(x, "ignoreEmptyValue", js.undefined)
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setPattern(value: js.RegExp | String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    
+    inline def setType(value: pattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

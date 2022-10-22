@@ -6,9 +6,9 @@ import typingsJapgolly.moment.momentStrings.lll_
 import typingsJapgolly.moment.momentStrings.llll_
 import typingsJapgolly.moment.momentStrings.lt_
 import typingsJapgolly.moment.momentStrings.lts_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.moment.momentStrings.LTS
@@ -24,34 +24,30 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.moment.momentStrings.lll_
   - typingsJapgolly.moment.momentStrings.llll_
 */
-trait LongDateFormatKey extends js.Object
-
+trait LongDateFormatKey extends StObject
 object LongDateFormatKey {
-  @scala.inline
-  def L: typingsJapgolly.moment.momentStrings.L = this.cast("L")
-  @scala.inline
-  def LL: typingsJapgolly.moment.momentStrings.LL = this.cast("LL")
-  @scala.inline
-  def LLL: typingsJapgolly.moment.momentStrings.LLL = this.cast("LLL")
-  @scala.inline
-  def LLLL: typingsJapgolly.moment.momentStrings.LLLL = this.cast("LLLL")
-  @scala.inline
-  def LT: typingsJapgolly.moment.momentStrings.LT = this.cast("LT")
-  @scala.inline
-  def LTS: typingsJapgolly.moment.momentStrings.LTS = this.cast("LTS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def l: l_ = this.cast("l")
-  @scala.inline
-  def ll: ll_ = this.cast("ll")
-  @scala.inline
-  def lll: lll_ = this.cast("lll")
-  @scala.inline
-  def llll: llll_ = this.cast("llll")
-  @scala.inline
-  def lt: lt_ = this.cast("lt")
-  @scala.inline
-  def lts: lts_ = this.cast("lts")
+  
+  inline def L: typingsJapgolly.moment.momentStrings.L = "L".asInstanceOf[typingsJapgolly.moment.momentStrings.L]
+  
+  inline def LL: typingsJapgolly.moment.momentStrings.LL = "LL".asInstanceOf[typingsJapgolly.moment.momentStrings.LL]
+  
+  inline def LLL: typingsJapgolly.moment.momentStrings.LLL = "LLL".asInstanceOf[typingsJapgolly.moment.momentStrings.LLL]
+  
+  inline def LLLL: typingsJapgolly.moment.momentStrings.LLLL = "LLLL".asInstanceOf[typingsJapgolly.moment.momentStrings.LLLL]
+  
+  inline def LT: typingsJapgolly.moment.momentStrings.LT = "LT".asInstanceOf[typingsJapgolly.moment.momentStrings.LT]
+  
+  inline def LTS: typingsJapgolly.moment.momentStrings.LTS = "LTS".asInstanceOf[typingsJapgolly.moment.momentStrings.LTS]
+  
+  inline def l: l_ = "l".asInstanceOf[l_]
+  
+  inline def ll: ll_ = "ll".asInstanceOf[ll_]
+  
+  inline def lll: lll_ = "lll".asInstanceOf[lll_]
+  
+  inline def llll: llll_ = "llll".asInstanceOf[llll_]
+  
+  inline def lt: lt_ = "lt".asInstanceOf[lt_]
+  
+  inline def lts: lts_ = "lts".asInstanceOf[lts_]
 }
-

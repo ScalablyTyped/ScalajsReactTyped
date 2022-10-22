@@ -1,29 +1,33 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.drawing
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SurfaceMouseenterEvent extends SurfaceEvent {
+trait SurfaceMouseenterEvent
+  extends StObject
+     with SurfaceEvent {
+  
   var element: js.UndefOr[typingsJapgolly.kendoUi.kendo.drawing.Element] = js.undefined
-  var originalEvent: js.UndefOr[js.Any] = js.undefined
+  
+  var originalEvent: js.UndefOr[Any] = js.undefined
 }
-
 object SurfaceMouseenterEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Surface,
-    element: typingsJapgolly.kendoUi.kendo.drawing.Element = null,
-    originalEvent: js.Any = null
-  ): SurfaceMouseenterEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Surface): SurfaceMouseenterEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurfaceMouseenterEvent]
   }
+  
+  extension [Self <: SurfaceMouseenterEvent](x: Self) {
+    
+    inline def setElement(value: typingsJapgolly.kendoUi.kendo.drawing.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+  }
 }
-

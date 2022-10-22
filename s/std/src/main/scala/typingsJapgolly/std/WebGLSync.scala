@@ -1,11 +1,7 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("WebGLSync")
-@js.native
-object WebGLSync extends Instantiable0[WebGLSync]
-
+trait WebGLSync extends StObject

@@ -1,22 +1,26 @@
 package typingsJapgolly.yandexMaps.mod
 
 import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IControlParent extends IParentOnMap {
+trait IControlParent
+  extends StObject
+     with IParentOnMap {
+  
   def getChildElement(child: IControl): js.Promise[HTMLElement]
 }
-
 object IControlParent {
-  @scala.inline
-  def apply(getChildElement: IControl => CallbackTo[js.Promise[HTMLElement]], getMap: CallbackTo[Map_]): IControlParent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getChildElement")(js.Any.fromFunction1((t0: typingsJapgolly.yandexMaps.mod.IControl) => getChildElement(t0).runNow()))
-    __obj.updateDynamic("getMap")(getMap.toJsFn)
+  
+  inline def apply(getChildElement: IControl => js.Promise[HTMLElement], getMap: CallbackTo[Map_]): IControlParent = {
+    val __obj = js.Dynamic.literal(getChildElement = js.Any.fromFunction1(getChildElement), getMap = getMap.toJsFn)
     __obj.asInstanceOf[IControlParent]
   }
+  
+  extension [Self <: IControlParent](x: Self) {
+    
+    inline def setGetChildElement(value: IControl => js.Promise[HTMLElement]): Self = StObject.set(x, "getChildElement", js.Any.fromFunction1(value))
+  }
 }
-

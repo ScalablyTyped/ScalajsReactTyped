@@ -1,12 +1,18 @@
 package typingsJapgolly.reactOnsenui.mod
 
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameIsOpen
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
+import typingsJapgolly.reactOnsenui.anon.IsOpen
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "Modal")
 @js.native
-class Modal ()
-  extends typingsJapgolly.react.mod.Component[HTMLAttributesidclassNameIsOpen, js.Any, js.Any]
-
+open class Modal protected () extends Component[IsOpen, Any] {
+  def this(props: HTMLAttributesidclassName & IsOpen) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HTMLAttributesidclassName & IsOpen, context: Any) = this()
+}

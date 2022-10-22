@@ -1,34 +1,49 @@
 package typingsJapgolly.reactElemental.mod
 
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoadingBarProps extends js.Object {
+trait LoadingBarProps extends StObject {
+  
   val color: js.UndefOr[String] = js.undefined
+  
   val delay: js.UndefOr[Double] = js.undefined
+  
   val duration: js.UndefOr[Double] = js.undefined
+  
   val style: js.UndefOr[CSSProperties] = js.undefined
+  
   val thickness: js.UndefOr[Double] = js.undefined
 }
-
 object LoadingBarProps {
-  @scala.inline
-  def apply(
-    color: String = null,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
-    style: CSSProperties = null,
-    thickness: Int | Double = null
-  ): LoadingBarProps = {
+  
+  inline def apply(): LoadingBarProps = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingBarProps]
   }
+  
+  extension [Self <: LoadingBarProps](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    
+    inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
+  }
 }
-

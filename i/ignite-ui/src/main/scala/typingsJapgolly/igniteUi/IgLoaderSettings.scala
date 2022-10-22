@@ -1,46 +1,74 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IgLoaderSettings extends js.Object {
+trait IgLoaderSettings extends StObject {
+  
   var autoDetectLocale: js.UndefOr[Boolean] = js.undefined
+  
   var cssPath: String
+  
   var locale: js.UndefOr[String] = js.undefined
+  
   var localePath: js.UndefOr[String] = js.undefined
+  
   var preinit: js.UndefOr[js.Function] = js.undefined
+  
   var ready: js.UndefOr[js.Function] = js.undefined
+  
   var regional: js.UndefOr[String] = js.undefined
+  
   var resources: js.UndefOr[String] = js.undefined
+  
   var scriptPath: String
+  
   var theme: js.UndefOr[String] = js.undefined
 }
-
 object IgLoaderSettings {
-  @scala.inline
-  def apply(
-    cssPath: String,
-    scriptPath: String,
-    autoDetectLocale: js.UndefOr[Boolean] = js.undefined,
-    locale: String = null,
-    localePath: String = null,
-    preinit: js.Function = null,
-    ready: js.Function = null,
-    regional: String = null,
-    resources: String = null,
-    theme: String = null
-  ): IgLoaderSettings = {
+  
+  inline def apply(cssPath: String, scriptPath: String): IgLoaderSettings = {
     val __obj = js.Dynamic.literal(cssPath = cssPath.asInstanceOf[js.Any], scriptPath = scriptPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDetectLocale)) __obj.updateDynamic("autoDetectLocale")(autoDetectLocale.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (localePath != null) __obj.updateDynamic("localePath")(localePath.asInstanceOf[js.Any])
-    if (preinit != null) __obj.updateDynamic("preinit")(preinit.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgLoaderSettings]
   }
+  
+  extension [Self <: IgLoaderSettings](x: Self) {
+    
+    inline def setAutoDetectLocale(value: Boolean): Self = StObject.set(x, "autoDetectLocale", value.asInstanceOf[js.Any])
+    
+    inline def setAutoDetectLocaleUndefined: Self = StObject.set(x, "autoDetectLocale", js.undefined)
+    
+    inline def setCssPath(value: String): Self = StObject.set(x, "cssPath", value.asInstanceOf[js.Any])
+    
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocalePath(value: String): Self = StObject.set(x, "localePath", value.asInstanceOf[js.Any])
+    
+    inline def setLocalePathUndefined: Self = StObject.set(x, "localePath", js.undefined)
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setPreinit(value: js.Function): Self = StObject.set(x, "preinit", value.asInstanceOf[js.Any])
+    
+    inline def setPreinitUndefined: Self = StObject.set(x, "preinit", js.undefined)
+    
+    inline def setReady(value: js.Function): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+    
+    inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+    
+    inline def setRegional(value: String): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    
+    inline def setResources(value: String): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    
+    inline def setScriptPath(value: String): Self = StObject.set(x, "scriptPath", value.asInstanceOf[js.Any])
+    
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+  }
 }
-

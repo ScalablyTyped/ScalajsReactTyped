@@ -1,13 +1,10 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Core.TouchHitTestingEventArgs")
 @js.native
-class TouchHitTestingEventArgs () extends ITouchHitTestingEventArgs {
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-}
-
+trait TouchHitTestingEventArgs
+  extends StObject
+     with ITouchHitTestingEventArgs

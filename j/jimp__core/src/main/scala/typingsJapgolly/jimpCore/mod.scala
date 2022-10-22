@@ -1,50 +1,29 @@
 package typingsJapgolly.jimpCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.jimpCore.etcMod.Bitmap
-import typingsJapgolly.jimpCore.etcMod.ImageCallback
-import typingsJapgolly.jimpCore.etcMod.URLOptions
-import typingsJapgolly.jimpCore.jimpMod.Jimp
-import typingsJapgolly.jimpCore.jimpMod.JimpConstructors
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.jimpCore.typesJimpMod.Jimp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jimp/core", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class default protected () extends JimpConstructors {
-    // For custom constructors when using Jimp.appendConstructorOption
-    def this(args: js.Any*) = this()
-    def this(data: Bitmap) = this()
-    def this(data: Buffer) = this()
-    def this(image: Jimp) = this()
-    def this(path: String) = this()
-    def this(urlOptions: URLOptions) = this()
-    def this(data: Bitmap, cb: ImageCallback[JimpConstructors]) = this()
-    def this(data: Buffer, cb: ImageCallback[JimpConstructors]) = this()
-    def this(image: Jimp, cb: ImageCallback[JimpConstructors]) = this()
-    def this(path: String, cb: ImageCallback[JimpConstructors]) = this()
-    def this(urlOptions: URLOptions, cb: ImageCallback[JimpConstructors]) = this()
-    def this(w: Double, h: Double) = this()
-    def this(w: Double, h: Double, background: String) = this()
-    def this(w: Double, h: Double, background: Double) = this()
-    def this(w: Double, h: Double, cb: ImageCallback[JimpConstructors]) = this()
-    def this(w: Double, h: Double, background: String, cb: ImageCallback[JimpConstructors]) = this()
-    def this(w: Double, h: Double, background: Double, cb: ImageCallback[JimpConstructors]) = this()
-  }
+object mod {
   
-  def addConstants(constants: js.Tuple2[String, String | Double]): Unit = js.native
-  def addConstants(constants: js.Tuple2[String, String | Double], jimpInstance: Jimp): Unit = js.native
-  def addJimpMethods(methods: js.Tuple2[String, js.Function]): Unit = js.native
-  def addJimpMethods(methods: js.Tuple2[String, js.Function], jimpInstance: Jimp): Unit = js.native
-  def addType(mime: String, extensions: js.Array[String]): Unit = js.native
-  def jimpEvChange(methodName: String, method: js.Function): Unit = js.native
-  def jimpEvMethod(methodName: String, evName: String, method: js.Function): Unit = js.native
+  @JSImport("@jimp/core", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[Jimp]
+  val ^ : js.Any = js.native
   
+  @JSImport("@jimp/core", JSImport.Default)
+  @js.native
+  val default: Jimp = js.native
+  
+  inline def addConstants(constants: js.Tuple2[String, String | Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConstants")(constants.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addConstants(constants: js.Tuple2[String, String | Double], jimpInstance: Jimp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addConstants")(constants.asInstanceOf[js.Any], jimpInstance.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def addJimpMethods(methods: js.Tuple2[String, js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addJimpMethods")(methods.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addJimpMethods(methods: js.Tuple2[String, js.Function], jimpInstance: Jimp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addJimpMethods")(methods.asInstanceOf[js.Any], jimpInstance.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def addType(mime: String, extensions: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addType")(mime.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def jimpEvChange(methodName: String, method: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jimpEvChange")(methodName.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def jimpEvMethod(methodName: String, evName: String, method: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jimpEvMethod")(methodName.asInstanceOf[js.Any], evName.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

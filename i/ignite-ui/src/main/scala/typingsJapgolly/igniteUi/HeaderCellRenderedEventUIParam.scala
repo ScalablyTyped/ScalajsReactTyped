@@ -1,33 +1,46 @@
 package typingsJapgolly.igniteUi
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HeaderCellRenderedEventUIParam extends js.Object {
+trait HeaderCellRenderedEventUIParam extends StObject {
+  
   /**
-  	 * Gets the column key.
-  	 */
+    * Gets the column key.
+    */
   var columnKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the grid.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the grid.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to header cell DOM element.
-  	 */
+    * Gets a reference to header cell DOM element.
+    */
   var th: js.UndefOr[Element] = js.undefined
 }
-
 object HeaderCellRenderedEventUIParam {
-  @scala.inline
-  def apply(columnKey: String = null, owner: js.Any = null, th: Element = null): HeaderCellRenderedEventUIParam = {
+  
+  inline def apply(): HeaderCellRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (th != null) __obj.updateDynamic("th")(th.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderCellRenderedEventUIParam]
   }
+  
+  extension [Self <: HeaderCellRenderedEventUIParam](x: Self) {
+    
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setTh(value: Element): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
+    
+    inline def setThUndefined: Self = StObject.set(x, "th", js.undefined)
+  }
 }
-

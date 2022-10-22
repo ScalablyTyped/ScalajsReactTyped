@@ -1,30 +1,26 @@
 package typingsJapgolly.vueTemplateCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerNumbers.`0`
-  - typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerNumbers.`1`
-  - typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerNumbers.`2`
-  - typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerNumbers.`3`
-  - typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerNumbers.`4`
+  - typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`0`
+  - typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`1`
+  - typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`2`
+  - typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`3`
+  - typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`4`
 */
-trait SSROptimizability extends js.Object
-
+trait SSROptimizability extends StObject
 object SSROptimizability {
-  @scala.inline
-  def `0`: typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerNumbers.`0` = this.cast(0)
-  @scala.inline
-  def `1`: typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerNumbers.`1` = this.cast(1)
-  @scala.inline
-  def `2`: typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerNumbers.`2` = this.cast(2)
-  @scala.inline
-  def `3`: typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerNumbers.`3` = this.cast(3)
-  @scala.inline
-  def `4`: typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerNumbers.`4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `0`: typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`0` = 0.asInstanceOf[typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`0`]
+  
+  inline def `1`: typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`1` = 1.asInstanceOf[typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`1`]
+  
+  inline def `2`: typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`2` = 2.asInstanceOf[typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`2`]
+  
+  inline def `3`: typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`3` = 3.asInstanceOf[typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`3`]
+  
+  inline def `4`: typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`4` = 4.asInstanceOf[typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerInts.`4`]
 }
-

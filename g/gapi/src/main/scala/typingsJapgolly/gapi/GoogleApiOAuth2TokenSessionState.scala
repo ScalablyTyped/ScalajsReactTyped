@@ -1,19 +1,23 @@
 package typingsJapgolly.gapi
 
+import typingsJapgolly.gapi.anon.Authuser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GoogleApiOAuth2TokenSessionState extends js.Object {
-  var extraQueryParams: AnonAuthuser
-}
-
-object GoogleApiOAuth2TokenSessionState {
-  @scala.inline
-  def apply(extraQueryParams: AnonAuthuser): GoogleApiOAuth2TokenSessionState = {
-    val __obj = js.Dynamic.literal(extraQueryParams = extraQueryParams.asInstanceOf[js.Any])
+trait GoogleApiOAuth2TokenSessionState extends StObject {
   
+  var extraQueryParams: Authuser
+}
+object GoogleApiOAuth2TokenSessionState {
+  
+  inline def apply(extraQueryParams: Authuser): GoogleApiOAuth2TokenSessionState = {
+    val __obj = js.Dynamic.literal(extraQueryParams = extraQueryParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiOAuth2TokenSessionState]
   }
+  
+  extension [Self <: GoogleApiOAuth2TokenSessionState](x: Self) {
+    
+    inline def setExtraQueryParams(value: Authuser): Self = StObject.set(x, "extraQueryParams", value.asInstanceOf[js.Any])
+  }
 }
-

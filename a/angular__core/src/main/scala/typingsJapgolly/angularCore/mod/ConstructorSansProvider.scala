@@ -1,22 +1,31 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConstructorSansProvider extends InjectableProvider {
+trait ConstructorSansProvider
+  extends StObject
+     with InjectableProvider {
+  
   /**
     * A list of `token`s to be resolved by the injector.
     */
-  var deps: js.UndefOr[js.Array[_]] = js.undefined
+  var deps: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object ConstructorSansProvider {
-  @scala.inline
-  def apply(deps: js.Array[_] = null): ConstructorSansProvider = {
+  
+  inline def apply(): ConstructorSansProvider = {
     val __obj = js.Dynamic.literal()
-    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorSansProvider]
   }
+  
+  extension [Self <: ConstructorSansProvider](x: Self) {
+    
+    inline def setDeps(value: js.Array[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    
+    inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
+    
+    inline def setDepsVarargs(value: Any*): Self = StObject.set(x, "deps", js.Array(value*))
+  }
 }
-

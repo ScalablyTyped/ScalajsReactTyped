@@ -1,107 +1,141 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PopupOpenOptions extends Object {
+trait PopupOpenOptions
+  extends StObject
+     with Object {
+  
   /**
     * **Since:** 4.5    When `true`, indicates that only the popup header will display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
-    *
-    * @default false
     */
   var collapsed: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Sets the the [content](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#content) of the popup.
+    * Sets the [content](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#content) of the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
   var content: js.UndefOr[String | HTMLElement | Widget_] = js.undefined
+  
   /**
-    * **Since:** 4.5    This property enables multiple features in a popup to display in a list rather than displaying the first selected feature. Setting this to `true` allows the user to scroll through the list of features returned from the query and choose the selection they want to display within the popup.
+    * **Since:** 4.5    This property enables multiple features in a popup to display in a list rather than displaying the first selected feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
-    *
-    * @default false
     */
   var featureMenuOpen: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Sets the popup's [features](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#features), which populate the title and content of the popup based on each graphic's [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
   var features: js.UndefOr[js.Array[Graphic]] = js.undefined
+  
   /**
-    * When `true`, indicates the popup should fetch the content of this feature and display it. If no [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) exists, a default template is created for the layer if [defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) = `true`. In order for this option to work, there must be a valid `view` and `location` set.
+    * When `true`, indicates the popup should fetch the content of this feature and display it.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
-    *
-    * @default false
     */
   var fetchFeatures: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Sets the popup's [location](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#location), which is the geometry used to position the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
   var location: js.UndefOr[Geometry_] = js.undefined
+  
   /**
-    * Sets pending [promises](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#promises) on the popup. The popup will display once the promises resolve. Each promise must resolve to an array of [Graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
+    * Sets pending [promises](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#promises) on the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
-  var promises: js.UndefOr[js.Array[js.Promise[_]]] = js.undefined
+  var promises: js.UndefOr[js.Array[js.Promise[Any]]] = js.undefined
+  
+  /**
+    * **Since:** 4.23    When `true`, indicates that the focus should be on the popup after it has been opened.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
+    */
+  var shouldFocus: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Sets the [title](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#title) of the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
   var title: js.UndefOr[String] = js.undefined
+  
   /**
     * When `true` indicates the popup should update its [location](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#location) for each paginated feature based on the [selected feature's](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#selectedFeature) geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
-    *
-    * @default false
     */
   var updateLocationEnabled: js.UndefOr[Boolean] = js.undefined
 }
-
 object PopupOpenOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    content: String | HTMLElement | Widget_ = null,
-    featureMenuOpen: js.UndefOr[Boolean] = js.undefined,
-    features: js.Array[Graphic] = null,
-    fetchFeatures: js.UndefOr[Boolean] = js.undefined,
-    location: Geometry_ = null,
-    promises: js.Array[js.Promise[_]] = null,
-    title: String = null,
-    updateLocationEnabled: js.UndefOr[Boolean] = js.undefined
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): PopupOpenOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(featureMenuOpen)) __obj.updateDynamic("featureMenuOpen")(featureMenuOpen.asInstanceOf[js.Any])
-    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetchFeatures)) __obj.updateDynamic("fetchFeatures")(fetchFeatures.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (promises != null) __obj.updateDynamic("promises")(promises.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateLocationEnabled)) __obj.updateDynamic("updateLocationEnabled")(updateLocationEnabled.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[PopupOpenOptions]
   }
+  
+  extension [Self <: PopupOpenOptions](x: Self) {
+    
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    
+    inline def setContent(value: String | HTMLElement | Widget_): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setFeatureMenuOpen(value: Boolean): Self = StObject.set(x, "featureMenuOpen", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureMenuOpenUndefined: Self = StObject.set(x, "featureMenuOpen", js.undefined)
+    
+    inline def setFeatures(value: js.Array[Graphic]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    
+    inline def setFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "features", js.Array(value*))
+    
+    inline def setFetchFeatures(value: Boolean): Self = StObject.set(x, "fetchFeatures", value.asInstanceOf[js.Any])
+    
+    inline def setFetchFeaturesUndefined: Self = StObject.set(x, "fetchFeatures", js.undefined)
+    
+    inline def setLocation(value: Geometry_): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setPromises(value: js.Array[js.Promise[Any]]): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
+    
+    inline def setPromisesUndefined: Self = StObject.set(x, "promises", js.undefined)
+    
+    inline def setPromisesVarargs(value: js.Promise[Any]*): Self = StObject.set(x, "promises", js.Array(value*))
+    
+    inline def setShouldFocus(value: Boolean): Self = StObject.set(x, "shouldFocus", value.asInstanceOf[js.Any])
+    
+    inline def setShouldFocusUndefined: Self = StObject.set(x, "shouldFocus", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setUpdateLocationEnabled(value: Boolean): Self = StObject.set(x, "updateLocationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateLocationEnabledUndefined: Self = StObject.set(x, "updateLocationEnabled", js.undefined)
+  }
 }
-

@@ -1,17 +1,20 @@
 package typingsJapgolly.cordova
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // cordova/argscheck module
 @js.native
-trait ArgsCheck extends js.Object {
+trait ArgsCheck extends StObject {
+  
+  def checkArgs(argsSpec: String, functionName: String, args: js.Array[Any]): Unit = js.native
+  def checkArgs(argsSpec: String, functionName: String, args: js.Array[Any], callee: Any): Unit = js.native
+  
   var enableChecks: Boolean = js.native
-  def checkArgs(argsSpec: String, functionName: String, args: js.Array[_]): Unit = js.native
-  def checkArgs(argsSpec: String, functionName: String, args: js.Array[_], callee: js.Any): Unit = js.native
-  def getValue(): js.Any = js.native
-  def getValue(value: js.Any): js.Any = js.native
-  def getValue(value: js.Any, defaultValue: js.Any): js.Any = js.native
+  
+  def getValue(): Any = js.native
+  def getValue(value: Any): Any = js.native
+  def getValue(value: Any, defaultValue: Any): Any = js.native
+  def getValue(value: Unit, defaultValue: Any): Any = js.native
 }
-

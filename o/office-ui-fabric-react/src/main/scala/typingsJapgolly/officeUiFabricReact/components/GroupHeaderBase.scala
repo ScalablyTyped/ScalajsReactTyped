@@ -1,115 +1,128 @@
 package typingsJapgolly.officeUiFabricReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLButtonElement
-import typingsJapgolly.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps
-import typingsJapgolly.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderStyleProps
-import typingsJapgolly.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderStyles
-import typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroup
-import typingsJapgolly.officeUiFabricReact.withViewportMod.IViewport
+import japgolly.scalajs.react.ReactKeyboardEventFrom
+import org.scalajs.dom.HTMLButtonElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupHeaderDottypesMod.IGroupHeaderCheckboxProps
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupHeaderDottypesMod.IGroupHeaderProps
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupHeaderDottypesMod.IGroupHeaderStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupHeaderDottypesMod.IGroupHeaderStyles
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroup
+import typingsJapgolly.officeUiFabricReact.libUtilitiesDecoratorsWithViewportMod.IViewport
 import typingsJapgolly.react.mod.HTMLAttributes
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
-import typingsJapgolly.uifabricUtilities.selectionTypesMod.SelectionMode
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import typingsJapgolly.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GroupHeaderBase {
-  def apply(
-    ariaPosInSet: Int | Double = null,
-    ariaSetSize: Int | Double = null,
-    className: String = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    componentRef: IRefObject[js.Object] = null,
-    expandButtonProps: HTMLAttributes[HTMLButtonElement] = null,
-    footerText: String = null,
-    group: IGroup = null,
-    groupIndex: Int | Double = null,
-    groupLevel: Int | Double = null,
-    groupedListId: String = null,
-    groups: js.Array[IGroup] = null,
-    indentWidth: Int | Double = null,
-    isCollapsedGroupSelectVisible: js.UndefOr[Boolean] = js.undefined,
-    isGroupLoading: /* group */ IGroup => CallbackTo[Boolean] = null,
-    isSelected: js.UndefOr[Boolean] = js.undefined,
-    loadingText: String = null,
-    onGroupHeaderClick: /* group */ IGroup => Callback = null,
-    onRenderTitle: (/* props */ js.UndefOr[IGroupHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupHeaderProps], Element | Null]]) => CallbackTo[Element | Null] = null,
-    onToggleCollapse: /* group */ IGroup => Callback = null,
-    onToggleSelectGroup: /* group */ IGroup => Callback = null,
-    onToggleSummarize: /* group */ IGroup => Callback = null,
-    selectAllButtonProps: HTMLAttributes[HTMLButtonElement] = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    selectionMode: SelectionMode = null,
-    showAllLinkText: String = null,
-    styles: IStyleFunctionOrObject[IGroupHeaderStyleProps, IGroupHeaderStyles] = null,
-    theme: ITheme = null,
-    viewport: IViewport = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IGroupHeaderProps, 
-    typingsJapgolly.officeUiFabricReact.groupHeaderBaseMod.GroupHeaderBase, 
-    Unit, 
-    IGroupHeaderProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (ariaPosInSet != null) __obj.updateDynamic("ariaPosInSet")(ariaPosInSet.asInstanceOf[js.Any])
-    if (ariaSetSize != null) __obj.updateDynamic("ariaSetSize")(ariaSetSize.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (expandButtonProps != null) __obj.updateDynamic("expandButtonProps")(expandButtonProps.asInstanceOf[js.Any])
-    if (footerText != null) __obj.updateDynamic("footerText")(footerText.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (groupIndex != null) __obj.updateDynamic("groupIndex")(groupIndex.asInstanceOf[js.Any])
-    if (groupLevel != null) __obj.updateDynamic("groupLevel")(groupLevel.asInstanceOf[js.Any])
-    if (groupedListId != null) __obj.updateDynamic("groupedListId")(groupedListId.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCollapsedGroupSelectVisible)) __obj.updateDynamic("isCollapsedGroupSelectVisible")(isCollapsedGroupSelectVisible.asInstanceOf[js.Any])
-    if (isGroupLoading != null) __obj.updateDynamic("isGroupLoading")(js.Any.fromFunction1((t0: /* group */ typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroup) => isGroupLoading(t0).runNow()))
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
-    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText.asInstanceOf[js.Any])
-    if (onGroupHeaderClick != null) __obj.updateDynamic("onGroupHeaderClick")(js.Any.fromFunction1((t0: /* group */ typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroup) => onGroupHeaderClick(t0).runNow()))
-    if (onRenderTitle != null) __obj.updateDynamic("onRenderTitle")(js.Any.fromFunction2((t0: /* props */ js.UndefOr[typingsJapgolly.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps], t1: /* defaultRender */ js.UndefOr[
-  js.Function1[
-    /* props */ js.UndefOr[typingsJapgolly.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps], 
-    japgolly.scalajs.react.raw.React.Element | scala.Null
-  ]]) => onRenderTitle(t0, t1).runNow()))
-    if (onToggleCollapse != null) __obj.updateDynamic("onToggleCollapse")(js.Any.fromFunction1((t0: /* group */ typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroup) => onToggleCollapse(t0).runNow()))
-    if (onToggleSelectGroup != null) __obj.updateDynamic("onToggleSelectGroup")(js.Any.fromFunction1((t0: /* group */ typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroup) => onToggleSelectGroup(t0).runNow()))
-    if (onToggleSummarize != null) __obj.updateDynamic("onToggleSummarize")(js.Any.fromFunction1((t0: /* group */ typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroup) => onToggleSummarize(t0).runNow()))
-    if (selectAllButtonProps != null) __obj.updateDynamic("selectAllButtonProps")(selectAllButtonProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (showAllLinkText != null) __obj.updateDynamic("showAllLinkText")(showAllLinkText.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.officeUiFabricReact.groupHeaderBaseMod.GroupHeaderBase](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps])(children: _*)
-  }
   @JSImport("office-ui-fabric-react/lib/components/GroupedList/GroupHeader.base", "GroupHeaderBase")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[
+          typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupHeaderDotbaseMod.GroupHeaderBase
+        ] {
+    
+    inline def ariaColSpan(value: Double): this.type = set("ariaColSpan", value.asInstanceOf[js.Any])
+    
+    inline def ariaPosInSet(value: Double): this.type = set("ariaPosInSet", value.asInstanceOf[js.Any])
+    
+    inline def ariaRowCount(value: Double): this.type = set("ariaRowCount", value.asInstanceOf[js.Any])
+    
+    inline def ariaRowIndex(value: Double): this.type = set("ariaRowIndex", value.asInstanceOf[js.Any])
+    
+    inline def ariaSetSize(value: Double): this.type = set("ariaSetSize", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def compact(value: Boolean): this.type = set("compact", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[js.Object]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ js.Object | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ js.Object | Null) => value(t0).runNow()))
+    
+    inline def expandButtonIcon(value: String): this.type = set("expandButtonIcon", value.asInstanceOf[js.Any])
+    
+    inline def expandButtonProps(value: HTMLAttributes[HTMLButtonElement]): this.type = set("expandButtonProps", value.asInstanceOf[js.Any])
+    
+    inline def footerText(value: String): this.type = set("footerText", value.asInstanceOf[js.Any])
+    
+    inline def group(value: IGroup): this.type = set("group", value.asInstanceOf[js.Any])
+    
+    inline def groupIndex(value: Double): this.type = set("groupIndex", value.asInstanceOf[js.Any])
+    
+    inline def groupLevel(value: Double): this.type = set("groupLevel", value.asInstanceOf[js.Any])
+    
+    inline def groupedListId(value: String): this.type = set("groupedListId", value.asInstanceOf[js.Any])
+    
+    inline def groups(value: js.Array[IGroup]): this.type = set("groups", value.asInstanceOf[js.Any])
+    
+    inline def groupsVarargs(value: IGroup*): this.type = set("groups", js.Array(value*))
+    
+    inline def indentWidth(value: Double): this.type = set("indentWidth", value.asInstanceOf[js.Any])
+    
+    inline def isCollapsedGroupSelectVisible(value: Boolean): this.type = set("isCollapsedGroupSelectVisible", value.asInstanceOf[js.Any])
+    
+    inline def isGroupLoading(value: /* group */ IGroup => Boolean): this.type = set("isGroupLoading", js.Any.fromFunction1(value))
+    
+    inline def isSelected(value: Boolean): this.type = set("isSelected", value.asInstanceOf[js.Any])
+    
+    inline def loadingText(value: String): this.type = set("loadingText", value.asInstanceOf[js.Any])
+    
+    inline def onGroupHeaderClick(value: /* group */ IGroup => Callback): this.type = set("onGroupHeaderClick", js.Any.fromFunction1((t0: /* group */ IGroup) => value(t0).runNow()))
+    
+    inline def onGroupHeaderKeyUp(value: (/* ev */ ReactKeyboardEventFrom[HTMLElement], /* group */ IGroup) => Callback): this.type = set("onGroupHeaderKeyUp", js.Any.fromFunction2((t0: /* ev */ ReactKeyboardEventFrom[HTMLElement], t1: /* group */ IGroup) => (value(t0, t1)).runNow()))
+    
+    inline def onRenderGroupHeaderCheckbox(
+      value: (/* props */ js.UndefOr[IGroupHeaderCheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupHeaderCheckboxProps], Element | Null]]) => Element | Null
+    ): this.type = set("onRenderGroupHeaderCheckbox", js.Any.fromFunction2(value))
+    
+    inline def onRenderName(
+      value: (/* props */ js.UndefOr[IGroupHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupHeaderProps], Element | Null]]) => Element | Null
+    ): this.type = set("onRenderName", js.Any.fromFunction2(value))
+    
+    inline def onRenderTitle(
+      value: (/* props */ js.UndefOr[IGroupHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupHeaderProps], Element | Null]]) => Element | Null
+    ): this.type = set("onRenderTitle", js.Any.fromFunction2(value))
+    
+    inline def onToggleCollapse(value: /* group */ IGroup => Callback): this.type = set("onToggleCollapse", js.Any.fromFunction1((t0: /* group */ IGroup) => value(t0).runNow()))
+    
+    inline def onToggleSelectGroup(value: /* group */ IGroup => Callback): this.type = set("onToggleSelectGroup", js.Any.fromFunction1((t0: /* group */ IGroup) => value(t0).runNow()))
+    
+    inline def onToggleSummarize(value: /* group */ IGroup => Callback): this.type = set("onToggleSummarize", js.Any.fromFunction1((t0: /* group */ IGroup) => value(t0).runNow()))
+    
+    inline def selectAllButtonProps(value: HTMLAttributes[HTMLButtonElement]): this.type = set("selectAllButtonProps", value.asInstanceOf[js.Any])
+    
+    inline def selected(value: Boolean): this.type = set("selected", value.asInstanceOf[js.Any])
+    
+    inline def selectionMode(value: SelectionMode): this.type = set("selectionMode", value.asInstanceOf[js.Any])
+    
+    inline def showAllLinkText(value: String): this.type = set("showAllLinkText", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IStyleFunctionOrObject[IGroupHeaderStyleProps, IGroupHeaderStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IGroupHeaderStyleProps => DeepPartial[IGroupHeaderStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def useFastIcons(value: Boolean): this.type = set("useFastIcons", value.asInstanceOf[js.Any])
+    
+    inline def viewport(value: IViewport): this.type = set("viewport", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: GroupHeaderBase.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IGroupHeaderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

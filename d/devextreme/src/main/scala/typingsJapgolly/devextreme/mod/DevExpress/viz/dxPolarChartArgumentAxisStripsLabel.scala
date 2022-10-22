@@ -1,21 +1,29 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPolarChartArgumentAxisStripsLabel extends dxPolarChartCommonAxisSettingsStripStyleLabel {
-  /** Specifies the text displayed in a strip. */
+trait dxPolarChartArgumentAxisStripsLabel
+  extends StObject
+     with dxPolarChartCommonAxisSettingsStripStyleLabel {
+  
+  /**
+    * Specifies the text displayed in a strip.
+    */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object dxPolarChartArgumentAxisStripsLabel {
-  @scala.inline
-  def apply(font: Font = null, text: String = null): dxPolarChartArgumentAxisStripsLabel = {
+  
+  inline def apply(): dxPolarChartArgumentAxisStripsLabel = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartArgumentAxisStripsLabel]
   }
+  
+  extension [Self <: dxPolarChartArgumentAxisStripsLabel](x: Self) {
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

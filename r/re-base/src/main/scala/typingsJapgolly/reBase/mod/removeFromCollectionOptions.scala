@@ -1,11 +1,12 @@
 package typingsJapgolly.reBase.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait removeFromCollectionOptions extends js.Object {
+trait removeFromCollectionOptions extends StObject {
+  
   /**
     * A function that receives the created ref as its only argument. You
     * can chain any Firestore queries you want to perform. See
@@ -13,13 +14,17 @@ trait removeFromCollectionOptions extends js.Object {
     */
   var query: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
-
 object removeFromCollectionOptions {
-  @scala.inline
-  def apply(query: js.UndefOr[Callback] = js.undefined): removeFromCollectionOptions = {
+  
+  inline def apply(): removeFromCollectionOptions = {
     val __obj = js.Dynamic.literal()
-    query.foreach(p => __obj.updateDynamic("query")(p.toJsFn))
     __obj.asInstanceOf[removeFromCollectionOptions]
   }
+  
+  extension [Self <: removeFromCollectionOptions](x: Self) {
+    
+    inline def setQuery(value: Callback): Self = StObject.set(x, "query", value.toJsFn)
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+  }
 }
-

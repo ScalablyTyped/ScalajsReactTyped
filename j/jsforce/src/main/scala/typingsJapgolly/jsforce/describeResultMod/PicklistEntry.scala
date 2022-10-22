@@ -1,30 +1,46 @@
 package typingsJapgolly.jsforce.describeResultMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PicklistEntry extends js.Object {
+trait PicklistEntry extends StObject {
+  
   var active: Boolean
+  
   var defaultValue: Boolean
+  
   var label: js.UndefOr[maybe[String]] = js.undefined
+  
   var validFor: js.UndefOr[maybe[String]] = js.undefined
+  
   var value: String
 }
-
 object PicklistEntry {
-  @scala.inline
-  def apply(
-    active: Boolean,
-    defaultValue: Boolean,
-    value: String,
-    label: maybe[String] = null,
-    validFor: maybe[String] = null
-  ): PicklistEntry = {
+  
+  inline def apply(active: Boolean, defaultValue: Boolean, value: String): PicklistEntry = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (validFor != null) __obj.updateDynamic("validFor")(validFor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PicklistEntry]
   }
+  
+  extension [Self <: PicklistEntry](x: Self) {
+    
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setLabel(value: maybe[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelNull: Self = StObject.set(x, "label", null)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setValidFor(value: maybe[String]): Self = StObject.set(x, "validFor", value.asInstanceOf[js.Any])
+    
+    inline def setValidForNull: Self = StObject.set(x, "validFor", null)
+    
+    inline def setValidForUndefined: Self = StObject.set(x, "validFor", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

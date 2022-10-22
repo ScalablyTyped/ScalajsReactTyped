@@ -1,26 +1,30 @@
 package typingsJapgolly.escpos.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Adapter extends js.Object {
-  def open(args: js.Any*): Adapter
-  def write(data: Buffer, callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Adapter
+trait Adapter extends StObject {
+  
+  def open(args: Any*): Adapter
+  
+  def write(data: Buffer, callback: js.Function1[/* error */ js.UndefOr[Any], Unit]): Adapter
 }
-
 object Adapter {
-  @scala.inline
-  def apply(
-    open: /* repeated */ js.Any => CallbackTo[Adapter],
-    write: (Buffer, js.Function1[/* error */ js.UndefOr[js.Any], Unit]) => CallbackTo[Adapter]
+  
+  inline def apply(
+    open: /* repeated */ Any => Adapter,
+    write: (Buffer, js.Function1[/* error */ js.UndefOr[Any], Unit]) => Adapter
   ): Adapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("open")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => open(t0).runNow()))
-    __obj.updateDynamic("write")(js.Any.fromFunction2((t0: typingsJapgolly.node.Buffer, t1: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]) => write(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(open = js.Any.fromFunction1(open), write = js.Any.fromFunction2(write))
     __obj.asInstanceOf[Adapter]
   }
+  
+  extension [Self <: Adapter](x: Self) {
+    
+    inline def setOpen(value: /* repeated */ Any => Adapter): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    
+    inline def setWrite(value: (Buffer, js.Function1[/* error */ js.UndefOr[Any], Unit]) => Adapter): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
+  }
 }
-

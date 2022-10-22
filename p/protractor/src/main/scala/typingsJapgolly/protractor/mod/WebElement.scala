@@ -1,13 +1,13 @@
 package typingsJapgolly.protractor.mod
 
 import typingsJapgolly.seleniumWebdriver.mod.IWebElementId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "WebElement")
 @js.native
-class WebElement protected ()
+open class WebElement protected ()
   extends typingsJapgolly.seleniumWebdriver.mod.WebElement {
   def this(driver: typingsJapgolly.seleniumWebdriver.mod.WebDriver, id: String) = this()
   /**
@@ -17,18 +17,21 @@ class WebElement protected ()
     */
   def this(driver: typingsJapgolly.seleniumWebdriver.mod.WebDriver, id: js.Promise[String]) = this()
 }
-
 /* static members */
-@JSImport("protractor", "WebElement")
-@js.native
-object WebElement extends js.Object {
+object WebElement {
+  
+  @JSImport("protractor", "WebElement")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @param {string} id The raw ID.
     * @param {boolean=} opt_noLegacy Whether to exclude the legacy element key.
     * @return {!Object} The element ID for use with WebDriver's wire protocol.
     */
-  def buildId(id: String): IWebElementId = js.native
-  def buildId(id: String, opt_noLegacy: Boolean): IWebElementId = js.native
+  inline def buildId(id: String): IWebElementId = ^.asInstanceOf[js.Dynamic].applyDynamic("buildId")(id.asInstanceOf[js.Any]).asInstanceOf[IWebElementId]
+  inline def buildId(id: String, opt_noLegacy: Boolean): IWebElementId = (^.asInstanceOf[js.Dynamic].applyDynamic("buildId")(id.asInstanceOf[js.Any], opt_noLegacy.asInstanceOf[js.Any])).asInstanceOf[IWebElementId]
+  
   /**
     * Compares two WebElements for equality.
     *
@@ -37,10 +40,11 @@ object WebElement extends js.Object {
     * @return {!Promise<boolean>} A promise that will be
     *     resolved to whether the two WebElements are equal.
     */
-  def equals(
+  inline def equals(
     a: typingsJapgolly.seleniumWebdriver.mod.WebElement,
     b: typingsJapgolly.seleniumWebdriver.mod.WebElement
-  ): js.Promise[Boolean] = js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  
   /**
     * Extracts the encoded WebElement ID from the object.
     *
@@ -48,11 +52,11 @@ object WebElement extends js.Object {
     * @return {string} the extracted ID.
     * @throws {TypeError} if the object is not a valid encoded ID.
     */
-  def extractId(obj: IWebElementId): String = js.native
+  inline def extractId(obj: IWebElementId): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractId")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   /**
     * @param {?} obj the object to test.
     * @return {boolean} whether the object is a valid encoded WebElement ID.
     */
-  def isId(obj: IWebElementId): Boolean = js.native
+  inline def isId(obj: IWebElementId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isId")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }
-

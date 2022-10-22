@@ -1,9 +1,10 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1
 
-import typingsJapgolly.jsrsasign.jsrsasignBooleans.`false`
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class for ASN.1 DER encoded BitString primitive
@@ -40,13 +41,10 @@ import scala.scalajs.js.annotation._
   * //     }
   * //   }
   */
-@JSGlobal("jsrsasign.KJUR.asn1.DERBitString")
-@js.native
-class DERBitString () extends ASN1Object {
-  def this(params: ASN1ObjectParam) = this()
-  def this(params: ArrayParam[Boolean]) = this()
-  def this(params: BinParam) = this()
-  def this(params: HexParam) = this()
+trait DERBitString
+  extends StObject
+     with ASN1Object {
+  
   /**
     * set ASN.1 DER BitString by binary string
     * @param binaryString binary value string (i.e. '10111')
@@ -59,7 +57,8 @@ class DERBitString () extends ASN1Object {
     * o = new KJUR.asn1.DERBitString();
     * o.setByBooleanArray("01011");
     */
-  def setByBinaryString(binaryString: String): Unit = js.native
+  def setByBinaryString(binaryString: String): Unit
+  
   /**
     * set ASN.1 TLV value(V) by an array of boolean
     * @param booleanArray array of boolean (ex. [true, false, true])
@@ -69,31 +68,47 @@ class DERBitString () extends ASN1Object {
     * o = new KJUR.asn1.DERBitString();
     * o.setByBooleanArray([false, true, false, true, true]);
     */
-  def setByBooleanArray(booleanArray: js.Array[Boolean]): Unit = js.native
+  def setByBooleanArray(booleanArray: js.Array[Boolean]): Unit
+  
   /**
     * set ASN.1 value(V) by a hexadecimal string including unused bits
     */
-  def setHexValueIncludingUnusedBits(newHexStringIncludingUnusedBits: String): Unit = js.native
+  def setHexValueIncludingUnusedBits(newHexStringIncludingUnusedBits: String): Unit
+  
   /**
     * set ASN.1 value(V) by unused bit and hexadecimal string of value
     */
-  def setUnusedBitsAndHexValue(unusedBits: Double, hValue: String): Unit = js.native
+  def setUnusedBitsAndHexValue(unusedBits: Double, hValue: String): Unit
 }
-
-/* static members */
-@JSGlobal("jsrsasign.KJUR.asn1.DERBitString")
-@js.native
-object DERBitString extends js.Object {
-  /**
-    * generate an array of falses with specified length
-    * @param nLength length of array to generate
-    * @return array of boolean falses
-    * @description
-    * This static method may be useful to initialize boolean array.
-    * @example
-    * o = new KJUR.asn1.DERBitString();
-    * o.newFalseArray(3) → [false, false, false]
-    */
-  def newFalseArray(nLength: Double): js.Array[`false`] = js.native
+object DERBitString {
+  
+  inline def apply(
+    getEncodedHex: CallbackTo[String],
+    getFreshValueHex: CallbackTo[String],
+    getLengthHexFromValue: CallbackTo[String],
+    getValueHex: CallbackTo[String],
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setByBinaryString: String => Callback,
+    setByBooleanArray: js.Array[Boolean] => Callback,
+    setHexValueIncludingUnusedBits: String => Callback,
+    setUnusedBitsAndHexValue: (Double, String) => Callback
+  ): DERBitString = {
+    val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByBinaryString = js.Any.fromFunction1((t0: String) => setByBinaryString(t0).runNow()), setByBooleanArray = js.Any.fromFunction1((t0: js.Array[Boolean]) => setByBooleanArray(t0).runNow()), setHexValueIncludingUnusedBits = js.Any.fromFunction1((t0: String) => setHexValueIncludingUnusedBits(t0).runNow()), setUnusedBitsAndHexValue = js.Any.fromFunction2((t0: Double, t1: String) => (setUnusedBitsAndHexValue(t0, t1)).runNow()), params = null)
+    __obj.asInstanceOf[DERBitString]
+  }
+  
+  extension [Self <: DERBitString](x: Self) {
+    
+    inline def setSetByBinaryString(value: String => Callback): Self = StObject.set(x, "setByBinaryString", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setSetByBooleanArray(value: js.Array[Boolean] => Callback): Self = StObject.set(x, "setByBooleanArray", js.Any.fromFunction1((t0: js.Array[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetHexValueIncludingUnusedBits(value: String => Callback): Self = StObject.set(x, "setHexValueIncludingUnusedBits", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setSetUnusedBitsAndHexValue(value: (Double, String) => Callback): Self = StObject.set(x, "setUnusedBitsAndHexValue", js.Any.fromFunction2((t0: Double, t1: String) => (value(t0, t1)).runNow()))
+  }
 }
-

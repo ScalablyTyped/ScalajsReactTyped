@@ -1,24 +1,20 @@
 package typingsJapgolly.qlikVisualizationextensions.BackendAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.N
   - typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A
   - typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D
 */
-trait SortIndicatorType extends js.Object
-
+trait SortIndicatorType extends StObject
 object SortIndicatorType {
-  @scala.inline
-  def A: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A = this.cast("A")
-  @scala.inline
-  def D: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D = this.cast("D")
-  @scala.inline
-  def N: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.N = this.cast("N")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def A: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A = "A".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A]
+  
+  inline def D: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D = "D".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D]
+  
+  inline def N: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.N = "N".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.N]
 }
-

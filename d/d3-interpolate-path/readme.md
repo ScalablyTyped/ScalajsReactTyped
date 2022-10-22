@@ -9,14 +9,14 @@ Interpolates path `d` attribute smoothly when A and B have different number of p
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | d3-interpolate-path |
-| Keywords           | d3, d3-module, d3-interpolate, d3-interpolate-path |
-| # releases         | 3 |
-| # dependents       | 15 |
-| # downloads        | 849048 |
-| # stars            | 0 |
+| Keywords           | d3, d3-module, d3-interpolate, d3-interpolate-path, svg path, path animation, interpolation, canvas path |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 545801.0 |
+| # stars            | 288.0 |
 
 ## Links
-- [Homepage](https://github.com/pbeshai/d3-interpolate-path)
+- [Homepage](https://pbeshai.github.io/d3-interpolate-path)
 - [Bugs](https://github.com/pbeshai/d3-interpolate-path/issues)
 - [Repository](https://github.com/pbeshai/d3-interpolate-path)
 - [Npm](https://www.npmjs.com/package/d3-interpolate-path)

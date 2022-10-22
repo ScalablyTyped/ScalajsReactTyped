@@ -1,13 +1,12 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Path")
 @js.native
-class Path ()
-  extends typingsJapgolly.three.pathMod.Path {
-  def this(points: js.Array[typingsJapgolly.three.vector2Mod.Vector2]) = this()
+open class Path ()
+  extends typingsJapgolly.three.srcThreeMod.Path {
+  def this(points: js.Array[typingsJapgolly.three.srcMathVector2Mod.Vector2]) = this()
 }
-

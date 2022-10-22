@@ -1,20 +1,22 @@
 package typingsJapgolly.jqueryUrlparam
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
+  
   def urlParam(variable: String): String
 }
-
 object JQueryStatic {
-  @scala.inline
-  def apply(urlParam: String => CallbackTo[String]): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("urlParam")(js.Any.fromFunction1((t0: java.lang.String) => urlParam(t0).runNow()))
+  
+  inline def apply(urlParam: String => String): JQueryStatic = {
+    val __obj = js.Dynamic.literal(urlParam = js.Any.fromFunction1(urlParam))
     __obj.asInstanceOf[JQueryStatic]
   }
+  
+  extension [Self <: JQueryStatic](x: Self) {
+    
+    inline def setUrlParam(value: String => String): Self = StObject.set(x, "urlParam", js.Any.fromFunction1(value))
+  }
 }
-

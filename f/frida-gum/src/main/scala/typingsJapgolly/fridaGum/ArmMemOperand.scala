@@ -1,31 +1,32 @@
 package typingsJapgolly.fridaGum
 
+import typingsJapgolly.fridaGum.anon.Disp
 import typingsJapgolly.fridaGum.fridaGumStrings.mem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ArmMemOperand
-  extends ArmBaseOperand
+  extends StObject
+     with ArmBaseOperand
      with ArmOperand {
+  
   var `type`: mem
-  var value: AnonDisp
+  
+  var value: Disp
 }
-
 object ArmMemOperand {
-  @scala.inline
-  def apply(
-    subtracted: Boolean,
-    `type`: mem,
-    value: AnonDisp,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
-  ): ArmMemOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+  
+  inline def apply(access: OperandAccess, subtracted: Boolean, value: Disp): ArmMemOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mem")
     __obj.asInstanceOf[ArmMemOperand]
   }
+  
+  extension [Self <: ArmMemOperand](x: Self) {
+    
+    inline def setType(value: mem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Disp): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

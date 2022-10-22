@@ -1,13 +1,16 @@
 package typingsJapgolly.pulumiCloud.serviceMod
 
 import typingsJapgolly.pulumiPulumi.resourceMod.ResourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("@pulumi/cloud/service", "Task")
 @js.native
-class TaskCls protected () extends Task {
+open class TaskCls protected ()
+  extends StObject
+     with Task {
   /**
     * Construct a new Task, which is a Container that can be run many times as individual tasks.
     *
@@ -18,4 +21,3 @@ class TaskCls protected () extends Task {
   def this(name: String, container: Container) = this()
   def this(name: String, container: Container, opts: ResourceOptions) = this()
 }
-

@@ -1,43 +1,67 @@
 package typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Element that does not align semantically between two compared documents. */
-trait UnalignedElement extends js.Object {
+trait UnalignedElement extends StObject {
+  
   /** List of document attributes. */
   var attributes: js.UndefOr[js.Array[Attribute]] = js.undefined
+  
   /** List of functional categories into which the element falls; in other words, the subject matter of the element. */
   var categories: js.UndefOr[js.Array[CategoryComparison]] = js.undefined
+  
   /** The label assigned to the document by the value of the `file_1_label` or `file_2_label` parameters on the **Compare two documents** method. */
   var document_label: js.UndefOr[String] = js.undefined
+  
   /** The numeric location of the identified element in the document, represented with two integers labeled `begin` and `end`. */
   var location: js.UndefOr[Location] = js.undefined
+  
   /** The text of the element. */
   var text: js.UndefOr[String] = js.undefined
+  
   /** Description of the action specified by the element and whom it affects. */
   var types: js.UndefOr[js.Array[TypeLabelComparison]] = js.undefined
 }
-
 object UnalignedElement {
-  @scala.inline
-  def apply(
-    attributes: js.Array[Attribute] = null,
-    categories: js.Array[CategoryComparison] = null,
-    document_label: String = null,
-    location: Location = null,
-    text: String = null,
-    types: js.Array[TypeLabelComparison] = null
-  ): UnalignedElement = {
+  
+  inline def apply(): UnalignedElement = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (document_label != null) __obj.updateDynamic("document_label")(document_label.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnalignedElement]
   }
+  
+  extension [Self <: UnalignedElement](x: Self) {
+    
+    inline def setAttributes(value: js.Array[Attribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value*))
+    
+    inline def setCategories(value: js.Array[CategoryComparison]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    
+    inline def setCategoriesVarargs(value: CategoryComparison*): Self = StObject.set(x, "categories", js.Array(value*))
+    
+    inline def setDocument_label(value: String): Self = StObject.set(x, "document_label", value.asInstanceOf[js.Any])
+    
+    inline def setDocument_labelUndefined: Self = StObject.set(x, "document_label", js.undefined)
+    
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setTypes(value: js.Array[TypeLabelComparison]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    
+    inline def setTypesVarargs(value: TypeLabelComparison*): Self = StObject.set(x, "types", js.Array(value*))
+  }
 }
-

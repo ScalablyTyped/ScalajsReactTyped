@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-webpack
 
-Typings are for version 5.0
+Typings are for version 6.0
 
 ## Library description:
 Development and Hot Reload Middleware for Koa2
@@ -10,10 +10,10 @@ Development and Hot Reload Middleware for Koa2
 | ------------------ | :-------------: |
 | Full name          | koa-webpack |
 | Keywords           | koa, middleware, webpack |
-| # releases         | 16 |
-| # dependents       | 80 |
-| # downloads        | 2574093 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 80928.33333333333 |
+| # stars            | 443.0 |
 
 ## Links
 - [Homepage](https://github.com/shellscape/koa-webpack)

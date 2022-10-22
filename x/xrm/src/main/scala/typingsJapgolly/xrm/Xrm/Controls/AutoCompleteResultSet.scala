@@ -1,29 +1,39 @@
 package typingsJapgolly.xrm.Xrm.Controls
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for showAutoComplete argument
   */
-trait AutoCompleteResultSet extends js.Object {
+trait AutoCompleteResultSet extends StObject {
+  
   /**
     * Command to show/execute at the bottom of the results displayed
     */
   var commands: js.UndefOr[AutoCompleteCommand] = js.undefined
+  
   /**
     * Results to show
     */
   var results: js.Array[AutoCompleteResult]
 }
-
 object AutoCompleteResultSet {
-  @scala.inline
-  def apply(results: js.Array[AutoCompleteResult], commands: AutoCompleteCommand = null): AutoCompleteResultSet = {
+  
+  inline def apply(results: js.Array[AutoCompleteResult]): AutoCompleteResultSet = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
-    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCompleteResultSet]
   }
+  
+  extension [Self <: AutoCompleteResultSet](x: Self) {
+    
+    inline def setCommands(value: AutoCompleteCommand): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    
+    inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
+    
+    inline def setResults(value: js.Array[AutoCompleteResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    
+    inline def setResultsVarargs(value: AutoCompleteResult*): Self = StObject.set(x, "results", js.Array(value*))
+  }
 }
-

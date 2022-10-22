@@ -1,12 +1,14 @@
 package typingsJapgolly.reactDevtools
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-devtools", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def main(): js.Any = js.native
+object mod {
+  
+  @JSImport("react-devtools", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def main(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("main")().asInstanceOf[Any]
 }
-

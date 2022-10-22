@@ -1,27 +1,33 @@
 package typingsJapgolly.sharepoint
 
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.sharepoint.anon.Dictname
+import typingsJapgolly.sharepoint.anon.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SPClientPeoplePickerMRU")
-@js.native
-class SPClientPeoplePickerMRU () extends js.Object {
-  def GetItems(strKey: String): AnonDictname = js.native
-  def ResetCache(): Unit = js.native
-  def SetItem[T /* <: AnonKey */](strSearchTerm: String, objEntity: T): Unit = js.native
+trait SPClientPeoplePickerMRU extends StObject {
+  
+  def GetItems(strKey: String): Dictname
+  
+  def ResetCache(): Unit
+  
+  def SetItem[T /* <: Key */](strSearchTerm: String, objEntity: T): Unit
 }
-
-/* static members */
-@JSGlobal("SPClientPeoplePickerMRU")
-@js.native
-object SPClientPeoplePickerMRU extends js.Object {
-   // = 1;
-  var MaxPPMRUItems: Double = js.native
-   // = 200;
-  var PPMRUDomLocalStoreKey: String = js.native
-  var PPMRUVersion: Double = js.native
-   // = "ClientPeoplePickerMRU";
-  def GetSPClientPeoplePickerMRU(): SPClientPeoplePickerMRU = js.native
+object SPClientPeoplePickerMRU {
+  
+  inline def apply(GetItems: String => Dictname, ResetCache: Callback, SetItem: (String, Any) => Callback): SPClientPeoplePickerMRU = {
+    val __obj = js.Dynamic.literal(GetItems = js.Any.fromFunction1(GetItems), ResetCache = ResetCache.toJsFn, SetItem = js.Any.fromFunction2((t0: String, t1: Any) => (SetItem(t0, t1)).runNow()))
+    __obj.asInstanceOf[SPClientPeoplePickerMRU]
+  }
+  
+  extension [Self <: SPClientPeoplePickerMRU](x: Self) {
+    
+    inline def setGetItems(value: String => Dictname): Self = StObject.set(x, "GetItems", js.Any.fromFunction1(value))
+    
+    inline def setResetCache(value: Callback): Self = StObject.set(x, "ResetCache", value.toJsFn)
+    
+    inline def setSetItem(value: (String, Any) => Callback): Self = StObject.set(x, "SetItem", js.Any.fromFunction2((t0: String, t1: Any) => (value(t0, t1)).runNow()))
+  }
 }
-

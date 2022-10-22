@@ -1,41 +1,31 @@
 package typingsJapgolly.storybookAddonKnobs.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.storybookAddonKnobs.PickAPIonoffemitgetQueryP
-import typingsJapgolly.storybookAddonKnobs.panelMod.KnobPanelProps
-import typingsJapgolly.storybookAddonKnobs.panelMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.storybookAddonKnobs.anon.PickAPIonoffemitgetQueryP
+import typingsJapgolly.storybookAddonKnobs.distComponentsPanelMod.KnobPanelProps
+import typingsJapgolly.storybookAddonKnobs.distComponentsPanelMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Panel {
-  def apply(
-    active: Boolean,
-    api: PickAPIonoffemitgetQueryP,
-    onReset: js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[KnobPanelProps, default, Unit, KnobPanelProps] = {
-    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any])
   
-      if (onReset != null) __obj.updateDynamic("onReset")(onReset.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.storybookAddonKnobs.panelMod.KnobPanelProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.storybookAddonKnobs.panelMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.storybookAddonKnobs.panelMod.KnobPanelProps])(children: _*)
+  inline def apply(active: scala.Boolean, api: PickAPIonoffemitgetQueryP): Builder = {
+    val __props = js.Dynamic.literal(active = active.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[KnobPanelProps]))
   }
+  
   @JSImport("@storybook/addon-knobs/dist/components/Panel", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def onReset(value: js.Object): this.type = set("onReset", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: KnobPanelProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

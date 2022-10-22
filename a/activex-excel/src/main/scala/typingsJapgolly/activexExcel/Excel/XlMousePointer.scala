@@ -1,31 +1,27 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4143`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`3`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4143`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4143`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4143`
+  - typingsJapgolly.activexExcel.activexExcelInts.`3`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
 */
-trait XlMousePointer extends js.Object
-
+trait XlMousePointer extends StObject
 object XlMousePointer {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlDefault: `-4143` = this.cast(-4143)
-  @scala.inline
-  def xlIBeam: `3` = this.cast(3)
-  @scala.inline
-  def xlNorthwestArrow: `1` = this.cast(1)
-  @scala.inline
-  def xlWait: `2` = this.cast(2)
+  
+  inline def xlDefault: `-4143` = -4143.asInstanceOf[`-4143`]
+  
+  inline def xlIBeam: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlNorthwestArrow: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlWait: `2` = 2.asInstanceOf[`2`]
 }
-

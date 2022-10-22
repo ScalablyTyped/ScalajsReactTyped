@@ -1,13 +1,10 @@
 package typingsJapgolly.fundamentalReact.mod
 
-import typingsJapgolly.fundamentalReact.formRadioGroupMod.FormRadioGroupProps
-import typingsJapgolly.react.mod.Component
+import typingsJapgolly.fundamentalReact.libFormsFormRadioGroupMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fundamental-react", "FormRadioGroup")
 @js.native
-class FormRadioGroup ()
-  extends Component[FormRadioGroupProps, js.Object, js.Any]
-
+open class FormRadioGroup () extends default

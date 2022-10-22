@@ -1,21 +1,17 @@
 package typingsJapgolly.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.openlayers.openlayersStrings.pixel
   - typingsJapgolly.openlayers.openlayersStrings.image
 */
-trait RasterOperationType extends js.Object
-
+trait RasterOperationType extends StObject
 object RasterOperationType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def image: typingsJapgolly.openlayers.openlayersStrings.image = this.cast("image")
-  @scala.inline
-  def pixel: typingsJapgolly.openlayers.openlayersStrings.pixel = this.cast("pixel")
+  
+  inline def image: typingsJapgolly.openlayers.openlayersStrings.image = "image".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.image]
+  
+  inline def pixel: typingsJapgolly.openlayers.openlayersStrings.pixel = "pixel".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.pixel]
 }
-

@@ -1,25 +1,31 @@
 package typingsJapgolly.murmurhash3js
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("murmurhash3js", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  object x64 extends js.Object {
-    def hash128(`val`: String): String = js.native
-    def hash128(`val`: String, seed: Double): String = js.native
+object mod {
+  
+  object x64 {
+    
+    @JSImport("murmurhash3js", "x64")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def hash128(`val`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash128")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def hash128(`val`: String, seed: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash128")(`val`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @js.native
-  object x86 extends js.Object {
-    def hash128(`val`: String): String = js.native
-    def hash128(`val`: String, seed: Double): String = js.native
-    def hash32(`val`: String): Double = js.native
-    def hash32(`val`: String, seed: Double): Double = js.native
+  object x86 {
+    
+    @JSImport("murmurhash3js", "x86")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def hash128(`val`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash128")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def hash128(`val`: String, seed: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash128")(`val`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def hash32(`val`: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hash32")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def hash32(`val`: String, seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hash32")(`val`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
-  
 }
-

@@ -1,47 +1,37 @@
 package typingsJapgolly.winrt.Windows.Devices.Sms
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmsMessageFilter extends js.Object
-
+sealed trait SmsMessageFilter extends StObject
 @JSGlobal("Windows.Devices.Sms.SmsMessageFilter")
 @js.native
-object SmsMessageFilter extends js.Object {
-  @js.native
-  sealed trait all extends SmsMessageFilter
+object SmsMessageFilter extends StObject {
   
   @js.native
-  sealed trait draft extends SmsMessageFilter
+  sealed trait all
+    extends StObject
+       with SmsMessageFilter
   
   @js.native
-  sealed trait read extends SmsMessageFilter
+  sealed trait draft
+    extends StObject
+       with SmsMessageFilter
   
   @js.native
-  sealed trait sent extends SmsMessageFilter
+  sealed trait read
+    extends StObject
+       with SmsMessageFilter
   
   @js.native
-  sealed trait unread extends SmsMessageFilter
+  sealed trait sent
+    extends StObject
+       with SmsMessageFilter
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SmsMessageFilter with Double] = js.native
-  /* 0 */ @js.native
-  object all extends TopLevel[all with Double]
-  
-  /* 4 */ @js.native
-  object draft extends TopLevel[draft with Double]
-  
-  /* 2 */ @js.native
-  object read extends TopLevel[read with Double]
-  
-  /* 3 */ @js.native
-  object sent extends TopLevel[sent with Double]
-  
-  /* 1 */ @js.native
-  object unread extends TopLevel[unread with Double]
-  
+  @js.native
+  sealed trait unread
+    extends StObject
+       with SmsMessageFilter
 }
-

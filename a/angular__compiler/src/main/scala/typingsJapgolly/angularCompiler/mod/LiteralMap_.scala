@@ -1,18 +1,20 @@
 package typingsJapgolly.angularCompiler.mod
 
-import typingsJapgolly.angularCompiler.astMod.LiteralMapKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "LiteralMap")
 @js.native
-class LiteralMap_ protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.LiteralMap_ {
+open class LiteralMap_ protected () extends AST {
   def this(
-    span: typingsJapgolly.angularCompiler.astMod.ParseSpan,
+    span: ParseSpan,
+    sourceSpan: AbsoluteSourceSpan,
     keys: js.Array[LiteralMapKey],
-    values: js.Array[_]
+    values: js.Array[Any]
   ) = this()
+  
+  var keys: js.Array[LiteralMapKey] = js.native
+  
+  var values: js.Array[Any] = js.native
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.scrollToElement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollToElementStrings {
-  @js.native
-  sealed trait bottom extends js.Object
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait bottom extends StObject
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait middle extends StObject
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  @js.native
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for netlify-identity-widget
 
-Typings are for version 1.4
+Typings are for version 1.9
 
 ## Library description:
 Netlify Identity widget for easy integration
@@ -10,10 +10,10 @@ Netlify Identity widget for easy integration
 | ------------------ | :-------------: |
 | Full name          | netlify-identity-widget |
 | Keywords           | authentication, identity, netlify |
-| # releases         | 22 |
-| # dependents       | 13 |
-| # downloads        | 1492180 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 75276.66666666667 |
+| # stars            | 689.0 |
 
 ## Links
 - [Homepage](https://identity.netlify.com)

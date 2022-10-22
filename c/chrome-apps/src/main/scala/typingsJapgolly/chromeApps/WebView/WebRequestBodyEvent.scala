@@ -1,13 +1,20 @@
 package typingsJapgolly.chromeApps.WebView
 
 import typingsJapgolly.chromeApps.chrome.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebRequestBodyEvent
-  extends Event[js.Function1[/* details */ WebRequestBodyDetails, Unit]] {
+  extends StObject
+     with Event[js.Function1[/* details */ WebRequestBodyDetails, Unit]] {
+  
+  def addListener(
+    callback: js.Function1[/* details */ WebRequestBodyDetails, Unit],
+    filter: Unit,
+    opt_extraInfoSpec: js.Array[String]
+  ): Unit = js.native
   def addListener(callback: js.Function1[/* details */ WebRequestBodyDetails, Unit], filter: RequestFilter): Unit = js.native
   def addListener(
     callback: js.Function1[/* details */ WebRequestBodyDetails, Unit],
@@ -15,4 +22,3 @@ trait WebRequestBodyEvent
     opt_extraInfoSpec: js.Array[String]
   ): Unit = js.native
 }
-

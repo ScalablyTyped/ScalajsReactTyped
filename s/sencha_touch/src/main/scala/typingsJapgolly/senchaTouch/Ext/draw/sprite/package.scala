@@ -1,10 +1,11 @@
-package typingsJapgolly.senchaTouch.Ext.draw
+package typingsJapgolly.senchaTouch.Ext.draw.sprite
 
+import typingsJapgolly.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object sprite {
-  type IAnimationParser = typingsJapgolly.senchaTouch.Ext.IBase
-  type IAttributeParser = typingsJapgolly.senchaTouch.Ext.IBase
-}
+
+type IAnimationParser = IBase
+
+type IAttributeParser = IBase

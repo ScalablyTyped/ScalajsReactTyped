@@ -1,6 +1,7 @@
 
 # Scala.js typings for numeral
 
+Typings are for version 2.0
 
 ## Library description:
 Format and manipulate numbers.
@@ -10,9 +11,9 @@ Format and manipulate numbers.
 | Full name          | numeral |
 | Keywords           | numeral, number, format, time, money, percentage |
 | # releases         | 1 |
-| # dependents       | 1002 |
-| # downloads        | 21525824 |
-| # stars            | 76 |
+| # dependents       | 0.0 |
+| # downloads        | 4450810.666666667 |
+| # stars            | 9232.0 |
 
 ## Links
 - [Homepage](http://numeraljs.com)

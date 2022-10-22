@@ -1,20 +1,61 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.DropDown")
-@js.native
-class DropDown protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Creator: Double = js.native
-  var Default: Double = js.native
-  val ListEntries: typingsJapgolly.activexWord.Word.ListEntries = js.native
-  val Parent: js.Any = js.native
-  val Valid: Boolean = js.native
-  var Value: Double = js.native
-  @JSName("Word.DropDown_typekey")
-  var WordDotDropDown_typekey: DropDown = js.native
+trait DropDown extends StObject {
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  val Creator: Double
+  
+  var Default: Double
+  
+  val ListEntries: typingsJapgolly.activexWord.Word.ListEntries
+  
+  val Parent: Any
+  
+  val Valid: Boolean
+  
+  var Value: Double
+  
+  /* private */ @JSName("Word.DropDown_typekey")
+  var WordDotDropDown_typekey: DropDown
 }
-
+object DropDown {
+  
+  inline def apply(
+    Application: Application,
+    Creator: Double,
+    Default: Double,
+    ListEntries: ListEntries,
+    Parent: Any,
+    Valid: Boolean,
+    Value: Double,
+    WordDotDropDown_typekey: DropDown
+  ): DropDown = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Default = Default.asInstanceOf[js.Any], ListEntries = ListEntries.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Valid = Valid.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.DropDown_typekey")(WordDotDropDown_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DropDown]
+  }
+  
+  extension [Self <: DropDown](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setDefault(value: Double): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
+    
+    inline def setListEntries(value: ListEntries): Self = StObject.set(x, "ListEntries", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setValid(value: Boolean): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotDropDown_typekey(value: DropDown): Self = StObject.set(x, "Word.DropDown_typekey", value.asInstanceOf[js.Any])
+  }
+}

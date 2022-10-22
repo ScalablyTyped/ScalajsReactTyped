@@ -1,167 +1,269 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`6`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`7`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`3`
+import typingsJapgolly.activexExcel.activexExcelInts.`4`
+import typingsJapgolly.activexExcel.activexExcelInts.`5`
+import typingsJapgolly.activexExcel.activexExcelInts.`6`
+import typingsJapgolly.activexExcel.activexExcelInts.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublishObjects extends js.Object {
-  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
+trait PublishObjects extends StObject {
+  
   def apply(Index: String): PublishObject = js.native
   def apply(Index: Double): PublishObject = js.native
+  
   def Add(SourceType: XlSourceType, Filename: String): PublishObject = js.native
   def Add(SourceType: XlSourceType, Filename: String, Sheet: String): PublishObject = js.native
-  @JSName("Add")
-  def Add_2(SourceType: XlSourceType, Filename: String, Sheet: String, Source: `2`): PublishObject = js.native
-  @JSName("Add")
-  def Add_2(SourceType: XlSourceType, Filename: String, Sheet: String, Source: `2`, HtmlType: XlHtmlType): PublishObject = js.native
-  @JSName("Add")
-  def Add_2(
+  def Add(
     SourceType: XlSourceType,
     Filename: String,
     Sheet: String,
-    Source: `2`,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: String,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
+    HtmlType: Unit,
+    DivID: String
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: String,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
+    HtmlType: Unit,
+    DivID: String,
+    Title: String
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: String,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
+    HtmlType: Unit,
+    DivID: Unit,
+    Title: String
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: String,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
+    HtmlType: XlHtmlType
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: String,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
     HtmlType: XlHtmlType,
     DivID: String
   ): PublishObject = js.native
-  @JSName("Add")
-  def Add_2(
+  def Add(
     SourceType: XlSourceType,
     Filename: String,
     Sheet: String,
-    Source: `2`,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
     HtmlType: XlHtmlType,
     DivID: String,
     Title: String
   ): PublishObject = js.native
-  @JSName("Add")
-  def Add_3(SourceType: XlSourceType, Filename: String, Sheet: String, Source: `3`): PublishObject = js.native
-  @JSName("Add")
-  def Add_3(SourceType: XlSourceType, Filename: String, Sheet: String, Source: `3`, HtmlType: XlHtmlType): PublishObject = js.native
-  @JSName("Add")
-  def Add_3(
+  def Add(
     SourceType: XlSourceType,
     Filename: String,
     Sheet: String,
-    Source: `3`,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
+    HtmlType: XlHtmlType,
+    DivID: Unit,
+    Title: String
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: String,
+    Source: Unit,
+    HtmlType: Unit,
+    DivID: String
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: String,
+    Source: Unit,
+    HtmlType: Unit,
+    DivID: String,
+    Title: String
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: String,
+    Source: Unit,
+    HtmlType: Unit,
+    DivID: Unit,
+    Title: String
+  ): PublishObject = js.native
+  def Add(SourceType: XlSourceType, Filename: String, Sheet: String, Source: Unit, HtmlType: XlHtmlType): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: String,
+    Source: Unit,
     HtmlType: XlHtmlType,
     DivID: String
   ): PublishObject = js.native
-  @JSName("Add")
-  def Add_3(
+  def Add(
     SourceType: XlSourceType,
     Filename: String,
     Sheet: String,
-    Source: `3`,
+    Source: Unit,
     HtmlType: XlHtmlType,
     DivID: String,
     Title: String
   ): PublishObject = js.native
-  @JSName("Add")
-  def Add_4(SourceType: XlSourceType, Filename: String, Sheet: String, Source: `4`): PublishObject = js.native
-  @JSName("Add")
-  def Add_4(SourceType: XlSourceType, Filename: String, Sheet: String, Source: `4`, HtmlType: XlHtmlType): PublishObject = js.native
-  @JSName("Add")
-  def Add_4(
+  def Add(
     SourceType: XlSourceType,
     Filename: String,
     Sheet: String,
-    Source: `4`,
+    Source: Unit,
+    HtmlType: XlHtmlType,
+    DivID: Unit,
+    Title: String
+  ): PublishObject = js.native
+  def Add(SourceType: XlSourceType, Filename: String, Sheet: Unit, Source: `3` | `5` | `6` | `2` | `7` | `4`): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: Unit,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
+    HtmlType: Unit,
+    DivID: String
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: Unit,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
+    HtmlType: Unit,
+    DivID: String,
+    Title: String
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: Unit,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
+    HtmlType: Unit,
+    DivID: Unit,
+    Title: String
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: Unit,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
+    HtmlType: XlHtmlType
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: Unit,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
     HtmlType: XlHtmlType,
     DivID: String
   ): PublishObject = js.native
-  @JSName("Add")
-  def Add_4(
+  def Add(
     SourceType: XlSourceType,
     Filename: String,
-    Sheet: String,
-    Source: `4`,
+    Sheet: Unit,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
     HtmlType: XlHtmlType,
     DivID: String,
     Title: String
   ): PublishObject = js.native
-  @JSName("Add")
-  def Add_5(SourceType: XlSourceType, Filename: String, Sheet: String, Source: `5`): PublishObject = js.native
-  @JSName("Add")
-  def Add_5(SourceType: XlSourceType, Filename: String, Sheet: String, Source: `5`, HtmlType: XlHtmlType): PublishObject = js.native
-  @JSName("Add")
-  def Add_5(
+  def Add(
     SourceType: XlSourceType,
     Filename: String,
-    Sheet: String,
-    Source: `5`,
+    Sheet: Unit,
+    Source: `3` | `5` | `6` | `2` | `7` | `4`,
+    HtmlType: XlHtmlType,
+    DivID: Unit,
+    Title: String
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: Unit,
+    Source: Unit,
+    HtmlType: Unit,
+    DivID: String
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: Unit,
+    Source: Unit,
+    HtmlType: Unit,
+    DivID: String,
+    Title: String
+  ): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: Unit,
+    Source: Unit,
+    HtmlType: Unit,
+    DivID: Unit,
+    Title: String
+  ): PublishObject = js.native
+  def Add(SourceType: XlSourceType, Filename: String, Sheet: Unit, Source: Unit, HtmlType: XlHtmlType): PublishObject = js.native
+  def Add(
+    SourceType: XlSourceType,
+    Filename: String,
+    Sheet: Unit,
+    Source: Unit,
     HtmlType: XlHtmlType,
     DivID: String
   ): PublishObject = js.native
-  @JSName("Add")
-  def Add_5(
+  def Add(
     SourceType: XlSourceType,
     Filename: String,
-    Sheet: String,
-    Source: `5`,
+    Sheet: Unit,
+    Source: Unit,
     HtmlType: XlHtmlType,
     DivID: String,
     Title: String
   ): PublishObject = js.native
-  @JSName("Add")
-  def Add_6(SourceType: XlSourceType, Filename: String, Sheet: String, Source: `6`): PublishObject = js.native
-  @JSName("Add")
-  def Add_6(SourceType: XlSourceType, Filename: String, Sheet: String, Source: `6`, HtmlType: XlHtmlType): PublishObject = js.native
-  @JSName("Add")
-  def Add_6(
+  def Add(
     SourceType: XlSourceType,
     Filename: String,
-    Sheet: String,
-    Source: `6`,
+    Sheet: Unit,
+    Source: Unit,
     HtmlType: XlHtmlType,
-    DivID: String
-  ): PublishObject = js.native
-  @JSName("Add")
-  def Add_6(
-    SourceType: XlSourceType,
-    Filename: String,
-    Sheet: String,
-    Source: `6`,
-    HtmlType: XlHtmlType,
-    DivID: String,
+    DivID: Unit,
     Title: String
   ): PublishObject = js.native
-  @JSName("Add")
-  def Add_7(SourceType: XlSourceType, Filename: String, Sheet: String, Source: `7`): PublishObject = js.native
-  @JSName("Add")
-  def Add_7(SourceType: XlSourceType, Filename: String, Sheet: String, Source: `7`, HtmlType: XlHtmlType): PublishObject = js.native
-  @JSName("Add")
-  def Add_7(
-    SourceType: XlSourceType,
-    Filename: String,
-    Sheet: String,
-    Source: `7`,
-    HtmlType: XlHtmlType,
-    DivID: String
-  ): PublishObject = js.native
-  @JSName("Add")
-  def Add_7(
-    SourceType: XlSourceType,
-    Filename: String,
-    Sheet: String,
-    Source: `7`,
-    HtmlType: XlHtmlType,
-    DivID: String,
-    Title: String
-  ): PublishObject = js.native
+  
+  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def Delete(): Unit = js.native
+  
   def Item(Index: String): PublishObject = js.native
   def Item(Index: Double): PublishObject = js.native
+  
+  val Parent: Any = js.native
+  
   def Publish(): Unit = js.native
-  def _Default(Index: js.Any): PublishObject = js.native
+  
+  def _Default(Index: Any): PublishObject = js.native
 }
-

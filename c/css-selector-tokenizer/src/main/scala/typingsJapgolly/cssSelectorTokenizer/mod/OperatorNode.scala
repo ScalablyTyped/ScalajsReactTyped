@@ -1,32 +1,31 @@
 package typingsJapgolly.cssSelectorTokenizer.mod
 
 import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.operator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OperatorNode
-  extends SelectorNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with SelectorNodeType {
+  
   var operator: String
+  
   var `type`: operator
 }
-
 object OperatorNode {
-  @scala.inline
-  def apply(
-    operator: String,
-    `type`: operator,
-    after: String = null,
-    before: String = null,
-    name: String = null
-  ): OperatorNode = {
+  
+  inline def apply(operator: String): OperatorNode = {
     val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("operator")
     __obj.asInstanceOf[OperatorNode]
   }
+  
+  extension [Self <: OperatorNode](x: Self) {
+    
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: operator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

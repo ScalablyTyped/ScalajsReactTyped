@@ -1,7 +1,7 @@
 
 # Scala.js typings for protractor
 
-Typings are for version 5.4.3
+Typings are for version 7.0.0
 
 ## Library description:
 Webdriver E2E test wrapper for Angular.
@@ -10,10 +10,10 @@ Webdriver E2E test wrapper for Angular.
 | ------------------ | :-------------: |
 | Full name          | protractor |
 | Keywords           | angular, test, testing, webdriver, webdriverjs, selenium |
-| # releases         | 9 |
-| # dependents       | 216 |
-| # downloads        | 47051139 |
-| # stars            | 77 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5354793.333333333 |
+| # stars            | 8790.0 |
 
 ## Links
 - [Homepage](https://github.com/angular/protractor)

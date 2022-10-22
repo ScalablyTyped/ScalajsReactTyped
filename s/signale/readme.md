@@ -1,7 +1,7 @@
 
 # Scala.js typings for signale
 
-Typings are for version 1.2
+Typings are for version 1.4
 
 ## Library description:
 👋 Hackable console logger
@@ -10,10 +10,10 @@ Typings are for version 1.2
 | ------------------ | :-------------: |
 | Full name          | signale |
 | Keywords           | hackable, colorful, console, logger |
-| # releases         | 10 |
-| # dependents       | 439 |
-| # downloads        | 8331676 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4186425.3333333335 |
+| # stars            | 8663.0 |
 
 ## Links
 - [Homepage](https://github.com/klaussinani/signale#readme)

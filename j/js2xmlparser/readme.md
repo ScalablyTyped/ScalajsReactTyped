@@ -1,7 +1,7 @@
 
 # Scala.js typings for js2xmlparser
 
-Typings are for version 3.0.0
+Typings are for version 4.0.2
 
 ## Library description:
 Parses JavaScript objects into XML
@@ -10,10 +10,10 @@ Parses JavaScript objects into XML
 | ------------------ | :-------------: |
 | Full name          | js2xmlparser |
 | Keywords           | convert, converter, javascript, js, json, object, objects, parse, parser, xml |
-| # releases         | 2 |
-| # dependents       | 190 |
-| # downloads        | 25004671 |
-| # stars            | 23 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 6392579.333333333 |
+| # stars            | 188.0 |
 
 ## Links
 - [Homepage](https://github.com/michaelkourlas/node-js2xmlparser#readme)

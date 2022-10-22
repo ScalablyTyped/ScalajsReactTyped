@@ -1,17 +1,16 @@
 package typingsJapgolly.winrt.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Enumeration.EnclosureLocation")
-@js.native
-class EnclosureLocation () extends IEnclosureLocation {
-  /* CompleteClass */
-  override var inDock: Boolean = js.native
-  /* CompleteClass */
-  override var inLid: Boolean = js.native
-  /* CompleteClass */
-  override var panel: Panel = js.native
+trait EnclosureLocation
+  extends StObject
+     with IEnclosureLocation
+object EnclosureLocation {
+  
+  inline def apply(inDock: Boolean, inLid: Boolean, panel: Panel): EnclosureLocation = {
+    val __obj = js.Dynamic.literal(inDock = inDock.asInstanceOf[js.Any], inLid = inLid.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EnclosureLocation]
+  }
 }
-

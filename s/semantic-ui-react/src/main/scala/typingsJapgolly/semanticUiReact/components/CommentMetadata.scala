@@ -1,49 +1,17 @@
 package typingsJapgolly.semanticUiReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.semanticUiReact.commentMetadataMod.CommentMetadataProps
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandContent
+import typingsJapgolly.semanticUiReact.distCommonjsViewsCommentCommentMetadataMod.CommentMetadataProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CommentMetadata {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    as: js.Any = null,
-    className: String = null,
-    content: SemanticShorthandContent = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    CommentMetadataProps, 
-    MountedWithRawType[CommentMetadataProps, js.Object, RawMounted[CommentMetadataProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.semanticUiReact.commentMetadataMod.CommentMetadataProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.commentMetadataMod.CommentMetadataProps])(children: _*)
-  }
-  @JSImport("semantic-ui-react/dist/commonjs/views/Comment/CommentMetadata", JSImport.Default)
+  @JSImport("semantic-ui-react", "CommentMetadata")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: CommentMetadata.type): SharedBuilder_CommentMetadataProps1690422229 = new SharedBuilder_CommentMetadataProps1690422229(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CommentMetadataProps): SharedBuilder_CommentMetadataProps1690422229 = new SharedBuilder_CommentMetadataProps1690422229(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

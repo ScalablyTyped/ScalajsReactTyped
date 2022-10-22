@@ -1,7 +1,7 @@
 
 # Scala.js typings for rimraf
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 A deep deletion module for node (like `rm -rf`)
@@ -10,15 +10,12 @@ A deep deletion module for node (like `rm -rf`)
 | ------------------ | :-------------: |
 | Full name          | rimraf |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 8466 |
-| # downloads        | 806014508 |
-| # stars            | 320 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.80862836E8 |
+| # stars            | 4753.0 |
 
 ## Links
-- [Homepage](https://github.com/isaacs/rimraf#readme)
-- [Bugs](https://github.com/isaacs/rimraf/issues)
-- [Repository](https://github.com/isaacs/rimraf)
 - [Npm](https://www.npmjs.com/package/rimraf)
     
 

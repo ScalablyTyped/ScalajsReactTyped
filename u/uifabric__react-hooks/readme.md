@@ -1,24 +1,24 @@
 
 # Scala.js typings for uifabric__react-hooks
 
-Typings are for version 7.0.9
+Typings are for version 7.16.3
 
 ## Library description:
-UI Fabric React hooks.
+Fluent UI React hooks.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @uifabric/react-hooks |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 219174 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 170047.33333333334 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/OfficeDev/office-ui-fabric-react#readme)
-- [Bugs](https://github.com/OfficeDev/office-ui-fabric-react/issues)
-- [Repository](https://github.com/OfficeDev/office-ui-fabric-react)
+- [Homepage](https://github.com/microsoft/fluentui#readme)
+- [Bugs](https://github.com/microsoft/fluentui/issues)
+- [Repository](https://github.com/microsoft/fluentui)
 - [Npm](https://www.npmjs.com/package/%40uifabric%2Freact-hooks)
     
 

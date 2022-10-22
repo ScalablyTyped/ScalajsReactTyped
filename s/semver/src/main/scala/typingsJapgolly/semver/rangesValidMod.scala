@@ -1,27 +1,28 @@
 package typingsJapgolly.semver
 
-import typingsJapgolly.semver.mod.Options
-import typingsJapgolly.semver.rangeMod.^
+import typingsJapgolly.semver.mod.RangeOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("semver/ranges/valid", JSImport.Namespace)
-@js.native
-object rangesValidMod extends js.Object {
-  def apply(): String = js.native
-  def apply(range: js.UndefOr[scala.Nothing], optionsOrLoose: Boolean): String = js.native
-  def apply(range: js.UndefOr[scala.Nothing], optionsOrLoose: Options): String = js.native
+object rangesValidMod {
+  
   /**
     * Return the valid range or null if it's not valid
     */
-  def apply(range: String): String = js.native
-  def apply(range: String, optionsOrLoose: Boolean): String = js.native
-  def apply(range: String, optionsOrLoose: Options): String = js.native
-  def apply(range: Null, optionsOrLoose: Boolean): String = js.native
-  def apply(range: Null, optionsOrLoose: Options): String = js.native
-  def apply(range: ^): String = js.native
-  def apply(range: ^, optionsOrLoose: Boolean): String = js.native
-  def apply(range: ^, optionsOrLoose: Options): String = js.native
+  inline def apply(): String | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String | Null]
+  inline def apply(range: String): String | Null = ^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def apply(range: String, optionsOrLoose: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(range: String, optionsOrLoose: RangeOptions): String | Null = (^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(range: Null, optionsOrLoose: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(range: Null, optionsOrLoose: RangeOptions): String | Null = (^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(range: Unit, optionsOrLoose: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(range: Unit, optionsOrLoose: RangeOptions): String | Null = (^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(range: typingsJapgolly.semver.classesRangeMod.^): String | Null = ^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def apply(range: typingsJapgolly.semver.classesRangeMod.^, optionsOrLoose: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(range: typingsJapgolly.semver.classesRangeMod.^, optionsOrLoose: RangeOptions): String | Null = (^.asInstanceOf[js.Dynamic].apply(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  
+  @JSImport("semver/ranges/valid", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

@@ -1,23 +1,32 @@
 package typingsJapgolly.webidl2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParseOptions extends js.Object {
+trait ParseOptions extends StObject {
+  
   /** Boolean indicating whether the result should include EOF node or not. */
   var concrete: js.UndefOr[Boolean] = js.undefined
+  
   /** The source name, typically a filename. Errors and validation objects can indicate their origin if you pass a value. */
   var sourceName: js.UndefOr[String] = js.undefined
 }
-
 object ParseOptions {
-  @scala.inline
-  def apply(concrete: js.UndefOr[Boolean] = js.undefined, sourceName: String = null): ParseOptions = {
+  
+  inline def apply(): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(concrete)) __obj.updateDynamic("concrete")(concrete.asInstanceOf[js.Any])
-    if (sourceName != null) __obj.updateDynamic("sourceName")(sourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
+  
+  extension [Self <: ParseOptions](x: Self) {
+    
+    inline def setConcrete(value: Boolean): Self = StObject.set(x, "concrete", value.asInstanceOf[js.Any])
+    
+    inline def setConcreteUndefined: Self = StObject.set(x, "concrete", js.undefined)
+    
+    inline def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
+    
+    inline def setSourceNameUndefined: Self = StObject.set(x, "sourceName", js.undefined)
+  }
 }
-

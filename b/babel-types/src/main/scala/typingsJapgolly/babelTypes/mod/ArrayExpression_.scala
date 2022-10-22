@@ -1,36 +1,39 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.ArrayExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ArrayExpression_
-  extends Node
+  extends StObject
+     with Node
      with Expression {
+  
   var elements: js.Array[Null | Expression | SpreadElement_]
+  
   @JSName("type")
   var type_ArrayExpression_ : ArrayExpression
 }
-
 object ArrayExpression_ {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     elements: js.Array[Null | Expression | SpreadElement_],
     end: Double,
     loc: SourceLocation,
-    start: Double,
-    `type`: ArrayExpression,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
+    start: Double
   ): ArrayExpression_ = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArrayExpression")
     __obj.asInstanceOf[ArrayExpression_]
   }
+  
+  extension [Self <: ArrayExpression_](x: Self) {
+    
+    inline def setElements(value: js.Array[Null | Expression | SpreadElement_]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    
+    inline def setElementsVarargs(value: (Null | Expression | SpreadElement_)*): Self = StObject.set(x, "elements", js.Array(value*))
+    
+    inline def setType(value: ArrayExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

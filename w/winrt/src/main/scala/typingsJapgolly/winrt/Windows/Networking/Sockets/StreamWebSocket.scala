@@ -1,14 +1,13 @@
 package typingsJapgolly.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Sockets.StreamWebSocket")
 @js.native
-class StreamWebSocket () extends IStreamWebSocket {
-  /* CompleteClass */
-  override def close(): Unit = js.native
+trait StreamWebSocket
+  extends StObject
+     with IStreamWebSocket {
+  
   def dispose(): Unit = js.native
 }
-

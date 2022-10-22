@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.GridAutoFlowProperty
+import typingsJapgolly.csstype.mod.Property.GridAutoFlow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridAutoFlowProps extends js.Object {
-  val gridAutoFlow: js.UndefOr[ResponsiveValue[GridAutoFlowProperty]] = js.undefined
+trait GridAutoFlowProps extends StObject {
+  
+  val gridAutoFlow: js.UndefOr[ResponsiveValue[GridAutoFlow]] = js.undefined
 }
-
 object GridAutoFlowProps {
-  @scala.inline
-  def apply(gridAutoFlow: ResponsiveValue[GridAutoFlowProperty] = null): GridAutoFlowProps = {
+  
+  inline def apply(): GridAutoFlowProps = {
     val __obj = js.Dynamic.literal()
-    if (gridAutoFlow != null) __obj.updateDynamic("gridAutoFlow")(gridAutoFlow.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridAutoFlowProps]
   }
+  
+  extension [Self <: GridAutoFlowProps](x: Self) {
+    
+    inline def setGridAutoFlow(value: ResponsiveValue[GridAutoFlow]): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
+    
+    inline def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
+    
+    inline def setGridAutoFlowVarargs(value: GridAutoFlow*): Self = StObject.set(x, "gridAutoFlow", js.Array(value*))
+  }
 }
-

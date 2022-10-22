@@ -19,71 +19,123 @@ import typingsJapgolly.jqueryToastPlugin.jqueryToastPluginStrings.right
 import typingsJapgolly.jqueryToastPlugin.jqueryToastPluginStrings.slide
 import typingsJapgolly.jqueryToastPlugin.jqueryToastPluginStrings.success
 import typingsJapgolly.jqueryToastPlugin.jqueryToastPluginStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait toastOptions extends js.Object {
-  var afterHidden: js.UndefOr[js.Function0[_]] = js.undefined
-  var afterShown: js.UndefOr[js.Function0[_]] = js.undefined
+trait toastOptions extends StObject {
+  
+  var afterHidden: js.UndefOr[js.Function0[Any]] = js.undefined
+  
+  var afterShown: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var allowToastClose: js.UndefOr[Boolean] = js.undefined
-  var beforeHide: js.UndefOr[js.Function0[_]] = js.undefined
-  var beforeShow: js.UndefOr[js.Function0[_]] = js.undefined
+  
+  var beforeHide: js.UndefOr[js.Function0[Any]] = js.undefined
+  
+  var beforeShow: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var bgColor: js.UndefOr[String] = js.undefined
+  
   var heading: js.UndefOr[String] = js.undefined
+  
   var hideAfter: js.UndefOr[Double | `false`] = js.undefined
+  
   var icon: js.UndefOr[info | warning | error | success] = js.undefined
+  
   var loader: js.UndefOr[Boolean] = js.undefined
+  
   var loaderBg: js.UndefOr[String] = js.undefined
+  
   var position: js.UndefOr[
     `bottom-left` | `bottom-right` | `bottom-center` | `top-right` | `top-left` | `top-center` | `mid-center` | CustomPosition
   ] = js.undefined
+  
   var showHideTransition: js.UndefOr[fade | slide | plain] = js.undefined
+  
   var stack: js.UndefOr[Double | `false`] = js.undefined
+  
   var text: String
+  
   var textAlign: js.UndefOr[left | right | center] = js.undefined
+  
   var textColor: js.UndefOr[String] = js.undefined
 }
-
 object toastOptions {
-  @scala.inline
-  def apply(
-    text: String,
-    afterHidden: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    afterShown: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    allowToastClose: js.UndefOr[Boolean] = js.undefined,
-    beforeHide: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    beforeShow: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    bgColor: String = null,
-    heading: String = null,
-    hideAfter: Double | `false` = null,
-    icon: info | warning | error | success = null,
-    loader: js.UndefOr[Boolean] = js.undefined,
-    loaderBg: String = null,
-    position: `bottom-left` | `bottom-right` | `bottom-center` | `top-right` | `top-left` | `top-center` | `mid-center` | CustomPosition = null,
-    showHideTransition: fade | slide | plain = null,
-    stack: Double | `false` = null,
-    textAlign: left | right | center = null,
-    textColor: String = null
-  ): toastOptions = {
+  
+  inline def apply(text: String): toastOptions = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    afterHidden.foreach(p => __obj.updateDynamic("afterHidden")(p.toJsFn))
-    afterShown.foreach(p => __obj.updateDynamic("afterShown")(p.toJsFn))
-    if (!js.isUndefined(allowToastClose)) __obj.updateDynamic("allowToastClose")(allowToastClose.asInstanceOf[js.Any])
-    beforeHide.foreach(p => __obj.updateDynamic("beforeHide")(p.toJsFn))
-    beforeShow.foreach(p => __obj.updateDynamic("beforeShow")(p.toJsFn))
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (hideAfter != null) __obj.updateDynamic("hideAfter")(hideAfter.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(loader)) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
-    if (loaderBg != null) __obj.updateDynamic("loaderBg")(loaderBg.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (showHideTransition != null) __obj.updateDynamic("showHideTransition")(showHideTransition.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[toastOptions]
   }
+  
+  extension [Self <: toastOptions](x: Self) {
+    
+    inline def setAfterHidden(value: CallbackTo[Any]): Self = StObject.set(x, "afterHidden", value.toJsFn)
+    
+    inline def setAfterHiddenUndefined: Self = StObject.set(x, "afterHidden", js.undefined)
+    
+    inline def setAfterShown(value: CallbackTo[Any]): Self = StObject.set(x, "afterShown", value.toJsFn)
+    
+    inline def setAfterShownUndefined: Self = StObject.set(x, "afterShown", js.undefined)
+    
+    inline def setAllowToastClose(value: Boolean): Self = StObject.set(x, "allowToastClose", value.asInstanceOf[js.Any])
+    
+    inline def setAllowToastCloseUndefined: Self = StObject.set(x, "allowToastClose", js.undefined)
+    
+    inline def setBeforeHide(value: CallbackTo[Any]): Self = StObject.set(x, "beforeHide", value.toJsFn)
+    
+    inline def setBeforeHideUndefined: Self = StObject.set(x, "beforeHide", js.undefined)
+    
+    inline def setBeforeShow(value: CallbackTo[Any]): Self = StObject.set(x, "beforeShow", value.toJsFn)
+    
+    inline def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
+    
+    inline def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
+    
+    inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
+    
+    inline def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    
+    inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+    
+    inline def setHideAfter(value: Double | `false`): Self = StObject.set(x, "hideAfter", value.asInstanceOf[js.Any])
+    
+    inline def setHideAfterUndefined: Self = StObject.set(x, "hideAfter", js.undefined)
+    
+    inline def setIcon(value: info | warning | error | success): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setLoader(value: Boolean): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+    
+    inline def setLoaderBg(value: String): Self = StObject.set(x, "loaderBg", value.asInstanceOf[js.Any])
+    
+    inline def setLoaderBgUndefined: Self = StObject.set(x, "loaderBg", js.undefined)
+    
+    inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
+    
+    inline def setPosition(
+      value: `bottom-left` | `bottom-right` | `bottom-center` | `top-right` | `top-left` | `top-center` | `mid-center` | CustomPosition
+    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setShowHideTransition(value: fade | slide | plain): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
+    
+    inline def setShowHideTransitionUndefined: Self = StObject.set(x, "showHideTransition", js.undefined)
+    
+    inline def setStack(value: Double | `false`): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlign(value: left | right | center): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    
+    inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+  }
 }
-

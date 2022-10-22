@@ -1,11 +1,12 @@
 package typingsJapgolly.stormReactDiagrams.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("storm-react-diagrams", "AbstractPortFactory")
+/* note: abstract class */ @JSImport("storm-react-diagrams", "AbstractPortFactory")
 @js.native
-abstract class AbstractPortFactory[T /* <: typingsJapgolly.stormReactDiagrams.portModelMod.PortModel */] ()
-  extends typingsJapgolly.stormReactDiagrams.abstractFactoryMod.AbstractFactory[T]
-
+open class AbstractPortFactory[T /* <: typingsJapgolly.stormReactDiagrams.distSrcModelsPortModelMod.PortModel */] protected ()
+  extends typingsJapgolly.stormReactDiagrams.distSrcFactoriesAbstractPortFactoryMod.AbstractPortFactory[T] {
+  def this(name: String) = this()
+}

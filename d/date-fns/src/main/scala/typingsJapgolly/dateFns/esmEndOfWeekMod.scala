@@ -1,22 +1,23 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import typingsJapgolly.dateFns.anon.WeekStartsOn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/endOfWeek", JSImport.Namespace)
-@js.native
-object esmEndOfWeekMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(date: Double): js.Date = js.native
-    def apply(date: Double, options: AnonLocale): js.Date = js.native
-    def apply(date: Double, options: AnonWeekStartsOn): js.Date = js.native
-    def apply(date: Date): js.Date = js.native
-    def apply(date: Date, options: AnonLocale): js.Date = js.native
-    def apply(date: Date, options: AnonWeekStartsOn): js.Date = js.native
-  }
+object esmEndOfWeekMod {
   
+  object default {
+    
+    inline def apply(date: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    inline def apply(date: js.Date, options: typingsJapgolly.dateFns.anon.Locale): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    inline def apply(date: js.Date, options: WeekStartsOn): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    inline def apply(date: Double): js.Date = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    inline def apply(date: Double, options: typingsJapgolly.dateFns.anon.Locale): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    inline def apply(date: Double, options: WeekStartsOn): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    
+    @JSImport("date-fns/esm/endOfWeek", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

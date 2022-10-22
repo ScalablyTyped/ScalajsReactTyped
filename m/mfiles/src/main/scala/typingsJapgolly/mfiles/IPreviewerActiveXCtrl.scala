@@ -1,13 +1,16 @@
 package typingsJapgolly.mfiles
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPreviewerActiveXCtrl extends js.Object {
+trait IPreviewerActiveXCtrl extends StObject {
+  
   def ClearPreview(): Double
+  
   def ShowFilePreview(bstrFilename: String): Double
+  
   def ShowHitHighlightedFilePreview(
     bstrFilename: String,
     lObjType: Double,
@@ -15,23 +18,27 @@ trait IPreviewerActiveXCtrl extends js.Object {
     lObjVersion: Double,
     lFile: Double,
     lFileVersion: Double,
-    pIHitHighlightingInfo: js.Any,
+    pIHitHighlightingInfo: Any,
     bstrSearchConditions: String
   ): Double
 }
-
 object IPreviewerActiveXCtrl {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     ClearPreview: CallbackTo[Double],
-    ShowFilePreview: String => CallbackTo[Double],
-    ShowHitHighlightedFilePreview: (String, Double, Double, Double, Double, Double, js.Any, String) => CallbackTo[Double]
+    ShowFilePreview: String => Double,
+    ShowHitHighlightedFilePreview: (String, Double, Double, Double, Double, Double, Any, String) => Double
   ): IPreviewerActiveXCtrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ClearPreview")(ClearPreview.toJsFn)
-    __obj.updateDynamic("ShowFilePreview")(js.Any.fromFunction1((t0: java.lang.String) => ShowFilePreview(t0).runNow()))
-    __obj.updateDynamic("ShowHitHighlightedFilePreview")(js.Any.fromFunction8((t0: java.lang.String, t1: scala.Double, t2: scala.Double, t3: scala.Double, t4: scala.Double, t5: scala.Double, t6: js.Any, t7: java.lang.String) => ShowHitHighlightedFilePreview(t0, t1, t2, t3, t4, t5, t6, t7).runNow()))
+    val __obj = js.Dynamic.literal(ClearPreview = ClearPreview.toJsFn, ShowFilePreview = js.Any.fromFunction1(ShowFilePreview), ShowHitHighlightedFilePreview = js.Any.fromFunction8(ShowHitHighlightedFilePreview))
     __obj.asInstanceOf[IPreviewerActiveXCtrl]
   }
+  
+  extension [Self <: IPreviewerActiveXCtrl](x: Self) {
+    
+    inline def setClearPreview(value: CallbackTo[Double]): Self = StObject.set(x, "ClearPreview", value.toJsFn)
+    
+    inline def setShowFilePreview(value: String => Double): Self = StObject.set(x, "ShowFilePreview", js.Any.fromFunction1(value))
+    
+    inline def setShowHitHighlightedFilePreview(value: (String, Double, Double, Double, Double, Double, Any, String) => Double): Self = StObject.set(x, "ShowHitHighlightedFilePreview", js.Any.fromFunction8(value))
+  }
 }
-

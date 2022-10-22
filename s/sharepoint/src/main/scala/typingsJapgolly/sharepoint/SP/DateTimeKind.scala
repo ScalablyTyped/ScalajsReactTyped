@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DateTimeKind extends js.Object
-
+sealed trait DateTimeKind extends StObject
 @JSGlobal("SP.DateTimeKind")
 @js.native
-object DateTimeKind extends js.Object {
-  @js.native
-  sealed trait local extends DateTimeKind
+object DateTimeKind extends StObject {
   
   @js.native
-  sealed trait unspecified extends DateTimeKind
+  sealed trait local
+    extends StObject
+       with DateTimeKind
   
   @js.native
-  sealed trait utc extends DateTimeKind
+  sealed trait unspecified
+    extends StObject
+       with DateTimeKind
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DateTimeKind with Double] = js.native
-  /* 2 */ @js.native
-  object local extends TopLevel[local with Double]
-  
-  /* 0 */ @js.native
-  object unspecified extends TopLevel[unspecified with Double]
-  
-  /* 1 */ @js.native
-  object utc extends TopLevel[utc with Double]
-  
+  @js.native
+  sealed trait utc
+    extends StObject
+       with DateTimeKind
 }
-

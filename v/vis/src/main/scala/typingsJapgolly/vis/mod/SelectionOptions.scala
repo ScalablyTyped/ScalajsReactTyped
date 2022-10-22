@@ -1,24 +1,30 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectionOptions extends js.Object {
+trait SelectionOptions extends StObject {
+  
   var highlightEdges: js.UndefOr[Boolean] = js.undefined
+  
   var unselectAll: js.UndefOr[Boolean] = js.undefined
 }
-
 object SelectionOptions {
-  @scala.inline
-  def apply(
-    highlightEdges: js.UndefOr[Boolean] = js.undefined,
-    unselectAll: js.UndefOr[Boolean] = js.undefined
-  ): SelectionOptions = {
+  
+  inline def apply(): SelectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(highlightEdges)) __obj.updateDynamic("highlightEdges")(highlightEdges.asInstanceOf[js.Any])
-    if (!js.isUndefined(unselectAll)) __obj.updateDynamic("unselectAll")(unselectAll.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionOptions]
   }
+  
+  extension [Self <: SelectionOptions](x: Self) {
+    
+    inline def setHighlightEdges(value: Boolean): Self = StObject.set(x, "highlightEdges", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightEdgesUndefined: Self = StObject.set(x, "highlightEdges", js.undefined)
+    
+    inline def setUnselectAll(value: Boolean): Self = StObject.set(x, "unselectAll", value.asInstanceOf[js.Any])
+    
+    inline def setUnselectAllUndefined: Self = StObject.set(x, "unselectAll", js.undefined)
+  }
 }
-

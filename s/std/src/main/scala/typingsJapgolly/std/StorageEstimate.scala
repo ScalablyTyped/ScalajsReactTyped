@@ -1,21 +1,32 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StorageEstimate extends js.Object {
+trait StorageEstimate extends StObject {
+  
+  /* standard dom */
   var quota: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var usage: js.UndefOr[Double] = js.undefined
 }
-
 object StorageEstimate {
-  @scala.inline
-  def apply(quota: Int | Double = null, usage: Int | Double = null): StorageEstimate = {
+  
+  inline def apply(): StorageEstimate = {
     val __obj = js.Dynamic.literal()
-    if (quota != null) __obj.updateDynamic("quota")(quota.asInstanceOf[js.Any])
-    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageEstimate]
   }
+  
+  extension [Self <: StorageEstimate](x: Self) {
+    
+    inline def setQuota(value: Double): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
+    
+    inline def setQuotaUndefined: Self = StObject.set(x, "quota", js.undefined)
+    
+    inline def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    
+    inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+  }
 }
-

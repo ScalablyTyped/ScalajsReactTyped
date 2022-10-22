@@ -1,20 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Protection
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IPropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Protected Media Path (PMP) server to enable playback of protected content using digital rights management (DRM). */
-@JSGlobal("Windows.Media.Protection.MediaProtectionPMPServer")
-@js.native
-class MediaProtectionPMPServer protected () extends js.Object {
-  /**
-    * Initializes a new instance of the MediaProtectionPMPServer class with the specified properties.
-    * @param pProperties The set of properties used to initialize the server.
-    */
-  def this(pProperties: IPropertySet) = this()
+trait MediaProtectionPMPServer extends StObject {
+  
   /** Gets the property set for the MediaProtectionPMPServer . */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
 }
-
+object MediaProtectionPMPServer {
+  
+  inline def apply(properties: IPropertySet): MediaProtectionPMPServer = {
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaProtectionPMPServer]
+  }
+  
+  extension [Self <: MediaProtectionPMPServer](x: Self) {
+    
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+  }
+}

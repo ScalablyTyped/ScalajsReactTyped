@@ -10,10 +10,10 @@ Conditionally add a middleware to express with some common patterns.
 | ------------------ | :-------------: |
 | Full name          | express-unless |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 68 |
-| # downloads        | 8075984 |
-| # stars            | 8 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 2691064.3333333335 |
+| # stars            | 164.0 |
 
 ## Links
 - [Homepage](https://github.com/jfromaniello/express-unless#readme)

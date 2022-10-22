@@ -1,33 +1,56 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CompilerOptions extends js.Object {
+trait CompilerOptions extends StObject {
+  
   var defaultEncapsulation: js.UndefOr[ViewEncapsulation] = js.undefined
+  
+  /**
+    * @deprecated not used at all in Ivy, providing this config option has no effect.
+    */
   var missingTranslation: js.UndefOr[MissingTranslationStrategy] = js.undefined
+  
   var preserveWhitespaces: js.UndefOr[Boolean] = js.undefined
+  
   var providers: js.UndefOr[js.Array[StaticProvider]] = js.undefined
+  
+  /**
+    * @deprecated not used at all in Ivy, providing this config option has no effect.
+    */
   var useJit: js.UndefOr[Boolean] = js.undefined
 }
-
 object CompilerOptions {
-  @scala.inline
-  def apply(
-    defaultEncapsulation: ViewEncapsulation = null,
-    missingTranslation: MissingTranslationStrategy = null,
-    preserveWhitespaces: js.UndefOr[Boolean] = js.undefined,
-    providers: js.Array[StaticProvider] = null,
-    useJit: js.UndefOr[Boolean] = js.undefined
-  ): CompilerOptions = {
+  
+  inline def apply(): CompilerOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultEncapsulation != null) __obj.updateDynamic("defaultEncapsulation")(defaultEncapsulation.asInstanceOf[js.Any])
-    if (missingTranslation != null) __obj.updateDynamic("missingTranslation")(missingTranslation.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveWhitespaces)) __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces.asInstanceOf[js.Any])
-    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
-    if (!js.isUndefined(useJit)) __obj.updateDynamic("useJit")(useJit.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompilerOptions]
   }
+  
+  extension [Self <: CompilerOptions](x: Self) {
+    
+    inline def setDefaultEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "defaultEncapsulation", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultEncapsulationUndefined: Self = StObject.set(x, "defaultEncapsulation", js.undefined)
+    
+    inline def setMissingTranslation(value: MissingTranslationStrategy): Self = StObject.set(x, "missingTranslation", value.asInstanceOf[js.Any])
+    
+    inline def setMissingTranslationUndefined: Self = StObject.set(x, "missingTranslation", js.undefined)
+    
+    inline def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveWhitespacesUndefined: Self = StObject.set(x, "preserveWhitespaces", js.undefined)
+    
+    inline def setProviders(value: js.Array[StaticProvider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    
+    inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+    
+    inline def setProvidersVarargs(value: StaticProvider*): Self = StObject.set(x, "providers", js.Array(value*))
+    
+    inline def setUseJit(value: Boolean): Self = StObject.set(x, "useJit", value.asInstanceOf[js.Any])
+    
+    inline def setUseJitUndefined: Self = StObject.set(x, "useJit", js.undefined)
+  }
 }
-

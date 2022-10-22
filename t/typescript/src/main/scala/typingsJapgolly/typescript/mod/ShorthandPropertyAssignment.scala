@@ -1,26 +1,39 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ShorthandPropertyAssignment
-  extends ObjectLiteralElement
+  extends StObject
+     with ObjectLiteralElement
      with JSDocContainer
+     with HasJSDoc
+     with ObjectBindingOrAssignmentElement
      with ObjectLiteralElementLike
-     with VariableLikeDeclaration
-     with _BindingOrAssignmentElement
-     with _HasJSDoc {
-  var equalsToken: js.UndefOr[Token[typingsJapgolly.typescript.mod.SyntaxKind.EqualsToken]] = js.native
-  var exclamationToken: js.UndefOr[ExclamationToken] = js.native
+     with VariableLikeDeclaration {
+  
+  val equalsToken: js.UndefOr[EqualsToken] = js.native
+  
+  /** @deprecated A shorthand property assignment cannot have an exclamation token */
+  val exclamationToken: js.UndefOr[ExclamationToken] = js.native
+  
   @JSName("kind")
-  var kind_ShorthandPropertyAssignment: typingsJapgolly.typescript.mod.SyntaxKind.ShorthandPropertyAssignment = js.native
+  val kind_ShorthandPropertyAssignment: typingsJapgolly.typescript.mod.SyntaxKind.ShorthandPropertyAssignment = js.native
+  
+  /** @deprecated A shorthand property assignment cannot have modifiers */
+  @JSName("modifiers")
+  val modifiers_ShorthandPropertyAssignment: js.UndefOr[NodeArray[Modifier]] = js.native
+  
   @JSName("name")
-  var name_ShorthandPropertyAssignment: Identifier = js.native
-  var objectAssignmentInitializer: js.UndefOr[Expression] = js.native
+  val name_ShorthandPropertyAssignment: Identifier = js.native
+  
+  val objectAssignmentInitializer: js.UndefOr[Expression] = js.native
+  
   @JSName("parent")
-  var parent_ShorthandPropertyAssignment: ObjectLiteralExpression = js.native
-  var questionToken: js.UndefOr[QuestionToken] = js.native
+  val parent_ShorthandPropertyAssignment: ObjectLiteralExpression = js.native
+  
+  /** @deprecated A shorthand property assignment cannot have a question token */
+  val questionToken: js.UndefOr[QuestionToken] = js.native
 }
-

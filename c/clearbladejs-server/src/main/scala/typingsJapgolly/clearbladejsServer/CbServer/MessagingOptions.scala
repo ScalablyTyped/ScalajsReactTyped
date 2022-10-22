@@ -1,8 +1,7 @@
 package typingsJapgolly.clearbladejsServer.CbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MessagingOptions extends js.Object
-
+trait MessagingOptions extends StObject

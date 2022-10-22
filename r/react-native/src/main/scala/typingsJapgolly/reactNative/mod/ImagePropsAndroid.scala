@@ -3,22 +3,19 @@ package typingsJapgolly.reactNative.mod
 import typingsJapgolly.reactNative.reactNativeStrings.auto
 import typingsJapgolly.reactNative.reactNativeStrings.resize
 import typingsJapgolly.reactNative.reactNativeStrings.scale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImagePropsAndroid extends js.Object {
+trait ImagePropsAndroid extends StObject {
+  
   /**
     * Duration of fade in animation in ms. Defaults to 300
     *
     * @platform android
     */
   var fadeDuration: js.UndefOr[Double] = js.undefined
-  /**
-    * Required if loading images via 'uri' from drawable folder on Android
-    * Explanation: https://medium.com/@adamjacobb/react-native-performance-images-adf5843e120
-    */
-  var height: js.UndefOr[Double] = js.undefined
+  
   /**
     * The mechanism that should be used to resize the image when the image's dimensions
     * differ from the image view's dimensions. Defaults to auto.
@@ -33,27 +30,22 @@ trait ImagePropsAndroid extends js.Object {
     * It should also be used if the image is slightly bigger than the view.
     */
   var resizeMethod: js.UndefOr[auto | resize | scale] = js.undefined
-  /**
-    * Required if loading images via 'uri' from drawable folder on Android.
-    * Explanation: https://medium.com/@adamjacobb/react-native-performance-images-adf5843e120
-    */
-  var width: js.UndefOr[Double] = js.undefined
 }
-
 object ImagePropsAndroid {
-  @scala.inline
-  def apply(
-    fadeDuration: Int | Double = null,
-    height: Int | Double = null,
-    resizeMethod: auto | resize | scale = null,
-    width: Int | Double = null
-  ): ImagePropsAndroid = {
+  
+  inline def apply(): ImagePropsAndroid = {
     val __obj = js.Dynamic.literal()
-    if (fadeDuration != null) __obj.updateDynamic("fadeDuration")(fadeDuration.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (resizeMethod != null) __obj.updateDynamic("resizeMethod")(resizeMethod.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePropsAndroid]
   }
+  
+  extension [Self <: ImagePropsAndroid](x: Self) {
+    
+    inline def setFadeDuration(value: Double): Self = StObject.set(x, "fadeDuration", value.asInstanceOf[js.Any])
+    
+    inline def setFadeDurationUndefined: Self = StObject.set(x, "fadeDuration", js.undefined)
+    
+    inline def setResizeMethod(value: auto | resize | scale): Self = StObject.set(x, "resizeMethod", value.asInstanceOf[js.Any])
+    
+    inline def setResizeMethodUndefined: Self = StObject.set(x, "resizeMethod", js.undefined)
+  }
 }
-

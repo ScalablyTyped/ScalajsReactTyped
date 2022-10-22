@@ -9,11 +9,11 @@ SuperAgent driven library for testing HTTP servers
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | supertest |
-| Keywords           | superagent, request, tdd, bdd, http, test, testing |
-| # releases         | 11 |
-| # dependents       | 504 |
-| # downloads        | 40674280 |
-| # stars            | 275 |
+| Keywords           | bdd, http, request, superagent, tdd, test, testing |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4078922666666666E7 |
+| # stars            | 12456.0 |
 
 ## Links
 - [Homepage](https://github.com/visionmedia/supertest#readme)

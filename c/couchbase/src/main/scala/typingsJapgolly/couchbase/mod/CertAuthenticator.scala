@@ -1,8 +1,8 @@
 package typingsJapgolly.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Authenticator for performing certificate-based authentication.
@@ -12,10 +12,13 @@ import scala.scalajs.js.annotation._
 /**
   * Create a new instance of the CertAuthenticator class.
   */
-class CertAuthenticator () extends Authenticator {
+open class CertAuthenticator ()
+  extends StObject
+     with Authenticator {
+  
   /* CompleteClass */
-  override var password: String = js.native
+  var password: String = js.native
+  
   /* CompleteClass */
-  override var username: String = js.native
+  var username: String = js.native
 }
-

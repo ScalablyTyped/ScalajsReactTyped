@@ -1,10 +1,9 @@
 package typingsJapgolly.umbraco.umbraco.resources
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation._
   *
   *
   **/
-trait ILogResource extends js.Object {
+trait ILogResource extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.logResource#getEntityLog
@@ -35,6 +35,7 @@ trait ILogResource extends js.Object {
     *
     */
   def getEntityLog(id: Double): IPromise[IResourcePromise]
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.logResource#getLog
@@ -57,6 +58,7 @@ trait ILogResource extends js.Object {
     *
     */
   def getLog(`type`: LogType, since: js.Date): IPromise[IResourcePromise]
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.logResource#getUserLog
@@ -80,19 +82,23 @@ trait ILogResource extends js.Object {
     */
   def getUserLog(`type`: LogType, since: js.Date): IPromise[IResourcePromise]
 }
-
 object ILogResource {
-  @scala.inline
-  def apply(
-    getEntityLog: Double => CallbackTo[IPromise[IResourcePromise]],
-    getLog: (LogType, js.Date) => CallbackTo[IPromise[IResourcePromise]],
-    getUserLog: (LogType, js.Date) => CallbackTo[IPromise[IResourcePromise]]
+  
+  inline def apply(
+    getEntityLog: Double => IPromise[IResourcePromise],
+    getLog: (LogType, js.Date) => IPromise[IResourcePromise],
+    getUserLog: (LogType, js.Date) => IPromise[IResourcePromise]
   ): ILogResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getEntityLog")(js.Any.fromFunction1((t0: scala.Double) => getEntityLog(t0).runNow()))
-    __obj.updateDynamic("getLog")(js.Any.fromFunction2((t0: typingsJapgolly.umbraco.umbraco.resources.LogType, t1: js.Date) => getLog(t0, t1).runNow()))
-    __obj.updateDynamic("getUserLog")(js.Any.fromFunction2((t0: typingsJapgolly.umbraco.umbraco.resources.LogType, t1: js.Date) => getUserLog(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(getEntityLog = js.Any.fromFunction1(getEntityLog), getLog = js.Any.fromFunction2(getLog), getUserLog = js.Any.fromFunction2(getUserLog))
     __obj.asInstanceOf[ILogResource]
   }
+  
+  extension [Self <: ILogResource](x: Self) {
+    
+    inline def setGetEntityLog(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getEntityLog", js.Any.fromFunction1(value))
+    
+    inline def setGetLog(value: (LogType, js.Date) => IPromise[IResourcePromise]): Self = StObject.set(x, "getLog", js.Any.fromFunction2(value))
+    
+    inline def setGetUserLog(value: (LogType, js.Date) => IPromise[IResourcePromise]): Self = StObject.set(x, "getUserLog", js.Any.fromFunction2(value))
+  }
 }
-

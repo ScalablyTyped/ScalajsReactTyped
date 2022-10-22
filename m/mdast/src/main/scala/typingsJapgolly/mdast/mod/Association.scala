@@ -1,20 +1,30 @@
 package typingsJapgolly.mdast.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Association extends js.Object {
+trait Association extends StObject {
+  
   var identifier: String
-  var label: js.UndefOr[String] = js.undefined
+  
+  var label: js.UndefOr[String | Null] = js.undefined
 }
-
 object Association {
-  @scala.inline
-  def apply(identifier: String, label: String = null): Association = {
+  
+  inline def apply(identifier: String): Association = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Association]
   }
+  
+  extension [Self <: Association](x: Self) {
+    
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelNull: Self = StObject.set(x, "label", null)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+  }
 }
-

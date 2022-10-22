@@ -1,25 +1,39 @@
 package typingsJapgolly.webpackMerge
 
-import typingsJapgolly.webpackMerge.mod.MergeStrategy
+import typingsJapgolly.webpackMerge.distTypesMod.CustomizeRuleString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackMergeStrings {
-  @js.native
-  sealed trait append extends MergeStrategy
   
   @js.native
-  sealed trait prepend extends MergeStrategy
+  sealed trait append
+    extends StObject
+       with CustomizeRuleString
+  inline def append: append = "append".asInstanceOf[append]
   
   @js.native
-  sealed trait replace extends MergeStrategy
+  sealed trait `match`
+    extends StObject
+       with CustomizeRuleString
+  inline def `match`: `match` = "match".asInstanceOf[`match`]
   
-  @scala.inline
-  def append: append = "append".asInstanceOf[append]
-  @scala.inline
-  def prepend: prepend = "prepend".asInstanceOf[prepend]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  @js.native
+  sealed trait merge
+    extends StObject
+       with CustomizeRuleString
+  inline def merge: merge = "merge".asInstanceOf[merge]
+  
+  @js.native
+  sealed trait prepend
+    extends StObject
+       with CustomizeRuleString
+  inline def prepend: prepend = "prepend".asInstanceOf[prepend]
+  
+  @js.native
+  sealed trait replace
+    extends StObject
+       with CustomizeRuleString
+  inline def replace: replace = "replace".asInstanceOf[replace]
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.nivoCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nivoCore.nivoCoreStrings.basis
@@ -16,30 +16,26 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.nivoCore.nivoCoreStrings.stepAfter
   - typingsJapgolly.nivoCore.nivoCoreStrings.stepBefore
 */
-trait AreaCurve extends js.Object
-
+trait AreaCurve extends StObject
 object AreaCurve {
-  @scala.inline
-  def basis: typingsJapgolly.nivoCore.nivoCoreStrings.basis = this.cast("basis")
-  @scala.inline
-  def cardinal: typingsJapgolly.nivoCore.nivoCoreStrings.cardinal = this.cast("cardinal")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def catmullRom: typingsJapgolly.nivoCore.nivoCoreStrings.catmullRom = this.cast("catmullRom")
-  @scala.inline
-  def linear: typingsJapgolly.nivoCore.nivoCoreStrings.linear = this.cast("linear")
-  @scala.inline
-  def monotoneX: typingsJapgolly.nivoCore.nivoCoreStrings.monotoneX = this.cast("monotoneX")
-  @scala.inline
-  def monotoneY: typingsJapgolly.nivoCore.nivoCoreStrings.monotoneY = this.cast("monotoneY")
-  @scala.inline
-  def natural: typingsJapgolly.nivoCore.nivoCoreStrings.natural = this.cast("natural")
-  @scala.inline
-  def step: typingsJapgolly.nivoCore.nivoCoreStrings.step = this.cast("step")
-  @scala.inline
-  def stepAfter: typingsJapgolly.nivoCore.nivoCoreStrings.stepAfter = this.cast("stepAfter")
-  @scala.inline
-  def stepBefore: typingsJapgolly.nivoCore.nivoCoreStrings.stepBefore = this.cast("stepBefore")
+  
+  inline def basis: typingsJapgolly.nivoCore.nivoCoreStrings.basis = "basis".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.basis]
+  
+  inline def cardinal: typingsJapgolly.nivoCore.nivoCoreStrings.cardinal = "cardinal".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.cardinal]
+  
+  inline def catmullRom: typingsJapgolly.nivoCore.nivoCoreStrings.catmullRom = "catmullRom".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.catmullRom]
+  
+  inline def linear: typingsJapgolly.nivoCore.nivoCoreStrings.linear = "linear".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.linear]
+  
+  inline def monotoneX: typingsJapgolly.nivoCore.nivoCoreStrings.monotoneX = "monotoneX".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.monotoneX]
+  
+  inline def monotoneY: typingsJapgolly.nivoCore.nivoCoreStrings.monotoneY = "monotoneY".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.monotoneY]
+  
+  inline def natural: typingsJapgolly.nivoCore.nivoCoreStrings.natural = "natural".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.natural]
+  
+  inline def step: typingsJapgolly.nivoCore.nivoCoreStrings.step = "step".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.step]
+  
+  inline def stepAfter: typingsJapgolly.nivoCore.nivoCoreStrings.stepAfter = "stepAfter".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.stepAfter]
+  
+  inline def stepBefore: typingsJapgolly.nivoCore.nivoCoreStrings.stepBefore = "stepBefore".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.stepBefore]
 }
-

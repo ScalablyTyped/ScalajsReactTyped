@@ -10,10 +10,10 @@ The lodash method `_.toInteger` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.tointeger |
 | Keywords           | lodash-modularized, tointeger |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 17170 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6460.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

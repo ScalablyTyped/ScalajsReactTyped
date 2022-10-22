@@ -1,20 +1,27 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPolarChartCommonAxisSettingsStripStyleLabel extends js.Object {
-  /** Specifies font options for a strip label. */
+trait dxPolarChartCommonAxisSettingsStripStyleLabel extends StObject {
+  
+  /**
+    * Specifies font properties for a strip label.
+    */
   var font: js.UndefOr[Font] = js.undefined
 }
-
 object dxPolarChartCommonAxisSettingsStripStyleLabel {
-  @scala.inline
-  def apply(font: Font = null): dxPolarChartCommonAxisSettingsStripStyleLabel = {
+  
+  inline def apply(): dxPolarChartCommonAxisSettingsStripStyleLabel = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartCommonAxisSettingsStripStyleLabel]
   }
+  
+  extension [Self <: dxPolarChartCommonAxisSettingsStripStyleLabel](x: Self) {
+    
+    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+  }
 }
-

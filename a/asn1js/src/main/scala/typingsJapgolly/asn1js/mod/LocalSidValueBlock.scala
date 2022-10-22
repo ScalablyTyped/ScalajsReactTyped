@@ -1,39 +1,27 @@
 package typingsJapgolly.asn1js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.asn1js.mod.ILocalHexBlock because var conflicts: isHexOnly, valueHex. Inlined 
-- typingsJapgolly.asn1js.mod.LocalHexBlock because Inheritance from two classes. Inlined isHexOnly, valueHex, fromBER, toBER, toBER, toJSON */ @JSImport("asn1js", "LocalSidValueBlock")
 @js.native
-class LocalSidValueBlock () extends LocalBaseBlock {
-  def this(params: LocalSidValueBlockParams) = this()
-  var isFirstSid: scala.Boolean = js.native
-  var isHexOnly: scala.Boolean = js.native
-  var valueDec: Double = js.native
-  var valueHex: scala.scalajs.js.typedarray.ArrayBuffer = js.native
+trait LocalSidValueBlock
+  extends StObject
+     with ValueBlock
+     with ILocalSidValueBlock {
+  
   /**
-    * Base function for converting block from BER encoded array of bytes
-    * 
-    * @param {ArrayBuffer} inputBuffer ASN.1 BER encoded array
-    * @param {number} inputOffset Offset in ASN.1 BER encoded array where decoding should be started
-    * @param {number} inputLength Maximum length of array of bytes which can be using in this function
-    * @returns {number} Offset after least decoded byte
-    * 
-    * @memberOf LocalHexBlockMixin
+    * @deprecated since version 3.0.0
     */
-  def fromBER(inputBuffer: scala.scalajs.js.typedarray.ArrayBuffer, inputOffset: Double, inputLength: Double): Double = js.native
+  @JSName("valueBeforeDecode")
+  var valueBeforeDecode_FLocalSidValueBlock: js.typedarray.ArrayBuffer = js.native
+  
+  def valueBigInt_=(value: js.BigInt): Unit = js.native
+  
   /**
-    * Encoding of current ASN.1 block into ASN.1 encoded array (BER rules)
-    * 
-    * @param {boolean} [sizeOnly=false] Flag that we need only a size of encoding, not a real array of bytes
-    * @returns {ArrayBuffer}
-    * 
-    * @memberOf LocalHexBlockMixin
+    * Binary data in ArrayBuffer representation
+    *
+    * @deprecated since version 3.0.0
     */
-  def toBER(): scala.scalajs.js.typedarray.ArrayBuffer = js.native
-  def toBER(sizeOnly: scala.Boolean): scala.scalajs.js.typedarray.ArrayBuffer = js.native
+  var valueHex: js.typedarray.ArrayBuffer = js.native
 }
-

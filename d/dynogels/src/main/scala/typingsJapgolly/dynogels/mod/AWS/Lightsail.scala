@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.lightsailMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsLightsailMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.Lightsail")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Lightsail ()
+open class Lightsail ()
   extends typingsJapgolly.awsSdk.mod.Lightsail {
   def this(options: ClientConfiguration) = this()
 }
-

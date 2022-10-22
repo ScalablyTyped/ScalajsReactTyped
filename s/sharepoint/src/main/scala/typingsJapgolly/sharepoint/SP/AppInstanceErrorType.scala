@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppInstanceErrorType extends js.Object
-
+sealed trait AppInstanceErrorType extends StObject
 @JSGlobal("SP.AppInstanceErrorType")
 @js.native
-object AppInstanceErrorType extends js.Object {
-  @js.native
-  sealed trait app extends AppInstanceErrorType
+object AppInstanceErrorType extends StObject {
   
   @js.native
-  sealed trait configuration extends AppInstanceErrorType
+  sealed trait app
+    extends StObject
+       with AppInstanceErrorType
   
   @js.native
-  sealed trait transient extends AppInstanceErrorType
+  sealed trait configuration
+    extends StObject
+       with AppInstanceErrorType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppInstanceErrorType with Double] = js.native
-  /* 2 */ @js.native
-  object app extends TopLevel[app with Double]
-  
-  /* 1 */ @js.native
-  object configuration extends TopLevel[configuration with Double]
-  
-  /* 0 */ @js.native
-  object transient extends TopLevel[transient with Double]
-  
+  @js.native
+  sealed trait transient
+    extends StObject
+       with AppInstanceErrorType
 }
-

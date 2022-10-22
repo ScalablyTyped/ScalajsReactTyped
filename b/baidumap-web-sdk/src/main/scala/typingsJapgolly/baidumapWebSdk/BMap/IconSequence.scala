@@ -1,15 +1,7 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BMap.IconSequence")
-@js.native
-class IconSequence protected () extends js.Object {
-  def this(symbol: js.Symbol) = this()
-  def this(symbol: js.Symbol, offset: String) = this()
-  def this(symbol: js.Symbol, offset: String, repeat: String) = this()
-  def this(symbol: js.Symbol, offset: String, repeat: String, fixedRotation: Boolean) = this()
-}
-
+trait IconSequence extends StObject

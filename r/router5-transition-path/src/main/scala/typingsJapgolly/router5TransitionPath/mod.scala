@@ -1,17 +1,21 @@
 package typingsJapgolly.router5TransitionPath
 
-import typingsJapgolly.router5TransitionPath.transitionPathMod.State
-import typingsJapgolly.router5TransitionPath.transitionPathMod.TransitionPath
+import typingsJapgolly.router5TransitionPath.distTransitionPathMod.State
+import typingsJapgolly.router5TransitionPath.distTransitionPathMod.TransitionPath
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("router5-transition-path", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(toState: State): TransitionPath = js.native
-  def default(toState: State, fromState: State): TransitionPath = js.native
-  def nameToIDs(name: String): js.Array[String] = js.native
-  def shouldUpdateNode(nodeName: String): js.Function2[/* toState */ State, /* fromSate */ State, Boolean] = js.native
+object mod {
+  
+  @JSImport("router5-transition-path", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(toState: State): TransitionPath = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(toState.asInstanceOf[js.Any]).asInstanceOf[TransitionPath]
+  inline def default(toState: State, fromState: State): TransitionPath = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(toState.asInstanceOf[js.Any], fromState.asInstanceOf[js.Any])).asInstanceOf[TransitionPath]
+  
+  inline def nameToIDs(name: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("nameToIDs")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  inline def shouldUpdateNode(nodeName: String): js.Function2[/* toState */ State, /* fromSate */ State, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldUpdateNode")(nodeName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* toState */ State, /* fromSate */ State, Boolean]]
 }
-

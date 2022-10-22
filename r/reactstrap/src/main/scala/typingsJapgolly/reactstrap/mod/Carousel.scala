@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.carouselMod.CarouselProps
+import typingsJapgolly.reactstrap.typesLibCarouselMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "Carousel")
 @js.native
-class Carousel[T] ()
-  extends Component[CarouselProps, js.Object, js.Any]
-
+open class Carousel () extends default

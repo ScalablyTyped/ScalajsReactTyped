@@ -1,59 +1,57 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EndOfLineState extends js.Object
-
+sealed trait EndOfLineState extends StObject
 @JSImport("typescript", "EndOfLineState")
 @js.native
-object EndOfLineState extends js.Object {
-  @js.native
-  sealed trait InDoubleQuoteStringLiteral extends EndOfLineState
-  
-  @js.native
-  sealed trait InMultiLineCommentTrivia extends EndOfLineState
-  
-  @js.native
-  sealed trait InSingleQuoteStringLiteral extends EndOfLineState
-  
-  @js.native
-  sealed trait InTemplateHeadOrNoSubstitutionTemplate extends EndOfLineState
-  
-  @js.native
-  sealed trait InTemplateMiddleOrTail extends EndOfLineState
-  
-  @js.native
-  sealed trait InTemplateSubstitutionPosition extends EndOfLineState
-  
-  @js.native
-  sealed trait None extends EndOfLineState
+object EndOfLineState extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EndOfLineState with Double] = js.native
-  /* 3 */ @js.native
-  object InDoubleQuoteStringLiteral extends TopLevel[InDoubleQuoteStringLiteral with Double]
+  def apply(value: Double): js.UndefOr[EndOfLineState & Double] = js.native
   
-  /* 1 */ @js.native
-  object InMultiLineCommentTrivia extends TopLevel[InMultiLineCommentTrivia with Double]
+  @js.native
+  sealed trait InDoubleQuoteStringLiteral
+    extends StObject
+       with EndOfLineState
+  /* 3 */ val InDoubleQuoteStringLiteral: typingsJapgolly.typescript.mod.EndOfLineState.InDoubleQuoteStringLiteral & Double = js.native
   
-  /* 2 */ @js.native
-  object InSingleQuoteStringLiteral extends TopLevel[InSingleQuoteStringLiteral with Double]
+  @js.native
+  sealed trait InMultiLineCommentTrivia
+    extends StObject
+       with EndOfLineState
+  /* 1 */ val InMultiLineCommentTrivia: typingsJapgolly.typescript.mod.EndOfLineState.InMultiLineCommentTrivia & Double = js.native
   
-  /* 4 */ @js.native
-  object InTemplateHeadOrNoSubstitutionTemplate extends TopLevel[InTemplateHeadOrNoSubstitutionTemplate with Double]
+  @js.native
+  sealed trait InSingleQuoteStringLiteral
+    extends StObject
+       with EndOfLineState
+  /* 2 */ val InSingleQuoteStringLiteral: typingsJapgolly.typescript.mod.EndOfLineState.InSingleQuoteStringLiteral & Double = js.native
   
-  /* 5 */ @js.native
-  object InTemplateMiddleOrTail extends TopLevel[InTemplateMiddleOrTail with Double]
+  @js.native
+  sealed trait InTemplateHeadOrNoSubstitutionTemplate
+    extends StObject
+       with EndOfLineState
+  /* 4 */ val InTemplateHeadOrNoSubstitutionTemplate: typingsJapgolly.typescript.mod.EndOfLineState.InTemplateHeadOrNoSubstitutionTemplate & Double = js.native
   
-  /* 6 */ @js.native
-  object InTemplateSubstitutionPosition extends TopLevel[InTemplateSubstitutionPosition with Double]
+  @js.native
+  sealed trait InTemplateMiddleOrTail
+    extends StObject
+       with EndOfLineState
+  /* 5 */ val InTemplateMiddleOrTail: typingsJapgolly.typescript.mod.EndOfLineState.InTemplateMiddleOrTail & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait InTemplateSubstitutionPosition
+    extends StObject
+       with EndOfLineState
+  /* 6 */ val InTemplateSubstitutionPosition: typingsJapgolly.typescript.mod.EndOfLineState.InTemplateSubstitutionPosition & Double = js.native
   
+  @js.native
+  sealed trait None
+    extends StObject
+       with EndOfLineState
+  /* 0 */ val None: typingsJapgolly.typescript.mod.EndOfLineState.None & Double = js.native
 }
-

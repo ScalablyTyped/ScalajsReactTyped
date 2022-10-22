@@ -1,7 +1,7 @@
 
 # Scala.js typings for knockout
 
-Typings are for version v3.4.0
+Typings are for version 3.5.1
 
 ## Library description:
 Knockout makes it easier to create rich, responsive UIs with JavaScript
@@ -10,21 +10,19 @@ Knockout makes it easier to create rich, responsive UIs with JavaScript
 | ------------------ | :-------------: |
 | Full name          | knockout |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 255 |
-| # downloads        | 1378530 |
-| # stars            | 21 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 278711.0 |
+| # stars            | 10204.0 |
 
 ## Links
 - [Homepage](http://knockoutjs.com/)
-- [Bugs](https://github.com/knockout/knockout/issues)
-- [Repository](https://github.com/knockout/knockout)
 - [Npm](https://www.npmjs.com/package/knockout)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

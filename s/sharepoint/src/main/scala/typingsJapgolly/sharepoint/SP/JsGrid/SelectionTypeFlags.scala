@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SelectionTypeFlags extends js.Object
-
+sealed trait SelectionTypeFlags extends StObject
 @JSGlobal("SP.JsGrid.SelectionTypeFlags")
 @js.native
-object SelectionTypeFlags extends js.Object {
-  @js.native
-  sealed trait MultipleCellRanges extends SelectionTypeFlags
+object SelectionTypeFlags extends StObject {
   
   @js.native
-  sealed trait MultipleColRanges extends SelectionTypeFlags
+  sealed trait MultipleCellRanges
+    extends StObject
+       with SelectionTypeFlags
   
   @js.native
-  sealed trait MultipleRowRanges extends SelectionTypeFlags
+  sealed trait MultipleColRanges
+    extends StObject
+       with SelectionTypeFlags
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SelectionTypeFlags with Double] = js.native
-  /* 0 */ @js.native
-  object MultipleCellRanges extends TopLevel[MultipleCellRanges with Double]
-  
-  /* 2 */ @js.native
-  object MultipleColRanges extends TopLevel[MultipleColRanges with Double]
-  
-  /* 1 */ @js.native
-  object MultipleRowRanges extends TopLevel[MultipleRowRanges with Double]
-  
+  @js.native
+  sealed trait MultipleRowRanges
+    extends StObject
+       with SelectionTypeFlags
 }
-

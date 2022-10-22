@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.activated
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.parsed
   - typingsJapgolly.std.stdStrings.redundant
 */
-trait ServiceWorkerState extends js.Object
-
+trait ServiceWorkerState extends StObject
 object ServiceWorkerState {
-  @scala.inline
-  def activated: typingsJapgolly.std.stdStrings.activated = this.cast("activated")
-  @scala.inline
-  def activating: typingsJapgolly.std.stdStrings.activating = this.cast("activating")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def installed: typingsJapgolly.std.stdStrings.installed = this.cast("installed")
-  @scala.inline
-  def installing: typingsJapgolly.std.stdStrings.installing = this.cast("installing")
-  @scala.inline
-  def parsed: typingsJapgolly.std.stdStrings.parsed = this.cast("parsed")
-  @scala.inline
-  def redundant: typingsJapgolly.std.stdStrings.redundant = this.cast("redundant")
+  
+  inline def activated: typingsJapgolly.std.stdStrings.activated = "activated".asInstanceOf[typingsJapgolly.std.stdStrings.activated]
+  
+  inline def activating: typingsJapgolly.std.stdStrings.activating = "activating".asInstanceOf[typingsJapgolly.std.stdStrings.activating]
+  
+  inline def installed: typingsJapgolly.std.stdStrings.installed = "installed".asInstanceOf[typingsJapgolly.std.stdStrings.installed]
+  
+  inline def installing: typingsJapgolly.std.stdStrings.installing = "installing".asInstanceOf[typingsJapgolly.std.stdStrings.installing]
+  
+  inline def parsed: typingsJapgolly.std.stdStrings.parsed = "parsed".asInstanceOf[typingsJapgolly.std.stdStrings.parsed]
+  
+  inline def redundant: typingsJapgolly.std.stdStrings.redundant = "redundant".asInstanceOf[typingsJapgolly.std.stdStrings.redundant]
 }
-

@@ -1,17 +1,22 @@
 package typingsJapgolly.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CompassError extends js.Object {
+trait CompassError extends StObject {
+  
   var code: Double
 }
-
-@JSGlobal("CompassError")
-@js.native
-object CompassError extends js.Object {
-  var COMPASS_INTERNAL_ERR: Double = js.native
-  var COMPASS_NOT_SUPPORTED: Double = js.native
+object CompassError {
+  
+  inline def apply(code: Double): CompassError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompassError]
+  }
+  
+  extension [Self <: CompassError](x: Self) {
+    
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+  }
 }
-

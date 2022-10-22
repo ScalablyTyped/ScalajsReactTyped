@@ -10,10 +10,10 @@ Check if a protocol requires a certain port number to be added to an URL.
 | ------------------ | :-------------: |
 | Full name          | requires-port |
 | Keywords           | port, require, http, https, ws, wss, gopher, file, ftp, requires, requried, portnumber, url, parsing, validation, cows |
-| # releases         | 1 |
-| # dependents       | 56 |
-| # downloads        | 298967078 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6.3995803E7 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/unshiftio/requires-port)

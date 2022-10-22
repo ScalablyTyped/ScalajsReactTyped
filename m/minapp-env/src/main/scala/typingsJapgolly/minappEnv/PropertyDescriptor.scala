@@ -2,37 +2,55 @@ package typingsJapgolly.minappEnv
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PropertyDescriptor extends js.Object {
+trait PropertyDescriptor extends StObject {
+  
   var configurable: js.UndefOr[scala.Boolean] = js.undefined
+  
   var enumerable: js.UndefOr[scala.Boolean] = js.undefined
-  var get: js.UndefOr[js.Function0[_]] = js.undefined
-  var set: js.UndefOr[js.Function1[/* v */ js.Any, Unit]] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  
+  var get: js.UndefOr[js.Function0[Any]] = js.undefined
+  
+  var set: js.UndefOr[js.Function1[/* v */ Any, Unit]] = js.undefined
+  
+  var value: js.UndefOr[Any] = js.undefined
+  
   var writable: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object PropertyDescriptor {
-  @scala.inline
-  def apply(
-    configurable: js.UndefOr[scala.Boolean] = js.undefined,
-    enumerable: js.UndefOr[scala.Boolean] = js.undefined,
-    get: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    set: /* v */ js.Any => Callback = null,
-    value: js.Any = null,
-    writable: js.UndefOr[scala.Boolean] = js.undefined
-  ): PropertyDescriptor = {
+  
+  inline def apply(): PropertyDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(configurable)) __obj.updateDynamic("configurable")(configurable.asInstanceOf[js.Any])
-    if (!js.isUndefined(enumerable)) __obj.updateDynamic("enumerable")(enumerable.asInstanceOf[js.Any])
-    get.foreach(p => __obj.updateDynamic("get")(p.toJsFn))
-    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction1((t0: /* v */ js.Any) => set(t0).runNow()))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyDescriptor]
   }
+  
+  extension [Self <: PropertyDescriptor](x: Self) {
+    
+    inline def setConfigurable(value: scala.Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurableUndefined: Self = StObject.set(x, "configurable", js.undefined)
+    
+    inline def setEnumerable(value: scala.Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
+    
+    inline def setEnumerableUndefined: Self = StObject.set(x, "enumerable", js.undefined)
+    
+    inline def setGet(value: CallbackTo[Any]): Self = StObject.set(x, "get", value.toJsFn)
+    
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    
+    inline def setSet(value: /* v */ Any => Callback): Self = StObject.set(x, "set", js.Any.fromFunction1((t0: /* v */ Any) => value(t0).runNow()))
+    
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setWritable(value: scala.Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    
+    inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
+  }
 }
-

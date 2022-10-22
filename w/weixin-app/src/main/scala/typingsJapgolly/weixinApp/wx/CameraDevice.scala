@@ -1,21 +1,17 @@
 package typingsJapgolly.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.weixinApp.weixinAppStrings.front
   - typingsJapgolly.weixinApp.weixinAppStrings.back
 */
-trait CameraDevice extends js.Object
-
+trait CameraDevice extends StObject
 object CameraDevice {
-  @scala.inline
-  def back: typingsJapgolly.weixinApp.weixinAppStrings.back = this.cast("back")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def front: typingsJapgolly.weixinApp.weixinAppStrings.front = this.cast("front")
+  
+  inline def back: typingsJapgolly.weixinApp.weixinAppStrings.back = "back".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.back]
+  
+  inline def front: typingsJapgolly.weixinApp.weixinAppStrings.front = "front".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.front]
 }
-

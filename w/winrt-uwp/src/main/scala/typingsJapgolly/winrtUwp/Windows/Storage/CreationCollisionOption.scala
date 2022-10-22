@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Storage
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CreationCollisionOption extends js.Object
-
+sealed trait CreationCollisionOption extends StObject
 /** Specifies what to do if a file or folder with the specified name already exists in the current folder when you create a new file or folder. */
 @JSGlobal("Windows.Storage.CreationCollisionOption")
 @js.native
-object CreationCollisionOption extends js.Object {
+object CreationCollisionOption extends StObject {
+  
   /** Raise an exception of type System.Exception if the file or folder already exists. */
   @js.native
-  sealed trait failIfExists extends CreationCollisionOption
+  sealed trait failIfExists
+    extends StObject
+       with CreationCollisionOption
   
   /** Automatically append a number to the base of the specified name if the file or folder already exists. */
   @js.native
-  sealed trait generateUniqueName extends CreationCollisionOption
+  sealed trait generateUniqueName
+    extends StObject
+       with CreationCollisionOption
   
   /** Return the existing item if the file or folder already exists. */
   @js.native
-  sealed trait openIfExists extends CreationCollisionOption
+  sealed trait openIfExists
+    extends StObject
+       with CreationCollisionOption
   
   /** Replace the existing item if the file or folder already exists. */
   @js.native
-  sealed trait replaceExisting extends CreationCollisionOption
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CreationCollisionOption with Double] = js.native
-  /* 2 */ @js.native
-  object failIfExists extends TopLevel[failIfExists with Double]
-  
-  /* 0 */ @js.native
-  object generateUniqueName extends TopLevel[generateUniqueName with Double]
-  
-  /* 3 */ @js.native
-  object openIfExists extends TopLevel[openIfExists with Double]
-  
-  /* 1 */ @js.native
-  object replaceExisting extends TopLevel[replaceExisting with Double]
-  
+  sealed trait replaceExisting
+    extends StObject
+       with CreationCollisionOption
 }
-

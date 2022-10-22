@@ -1,15 +1,14 @@
 package typingsJapgolly.webpackStream
 
 import typingsJapgolly.node.NodeJS.ReadWriteStream
-import typingsJapgolly.webpack.mod.Compiler_.Handler
 import typingsJapgolly.webpack.mod.Configuration
+import typingsJapgolly.webpackStream.anon.FnCall
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack-stream", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Run webpack with the specified configuration and webpack instance
     *
@@ -17,9 +16,32 @@ object mod extends js.Object {
     * @param wp - A webpack object
     * @param callback - A callback with the webpack stats and error objects.
     */
-  def apply(): ReadWriteStream = js.native
-  def apply(config: Configuration): ReadWriteStream = js.native
-  def apply(config: Configuration, wp: AnonCall): ReadWriteStream = js.native
-  def apply(config: Configuration, wp: AnonCall, callback: Handler): ReadWriteStream = js.native
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(
+    config: Unit,
+    wp: Unit,
+    callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler.Handler */ Any
+  ): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], wp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(config: Unit, wp: FnCall): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], wp.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(
+    config: Unit,
+    wp: FnCall,
+    callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler.Handler */ Any
+  ): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], wp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(config: Configuration): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(
+    config: Configuration,
+    wp: Unit,
+    callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler.Handler */ Any
+  ): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], wp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(config: Configuration, wp: FnCall): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], wp.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(
+    config: Configuration,
+    wp: FnCall,
+    callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler.Handler */ Any
+  ): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], wp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  
+  @JSImport("webpack-stream", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

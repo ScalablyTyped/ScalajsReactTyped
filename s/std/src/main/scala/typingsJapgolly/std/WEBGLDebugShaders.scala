@@ -1,20 +1,23 @@
 package typingsJapgolly.std
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WEBGLDebugShaders extends js.Object {
-  def getTranslatedShaderSource(shader: org.scalajs.dom.raw.WebGLShader): java.lang.String
+trait WEBGLDebugShaders extends StObject {
+  
+  /* standard dom */
+  def getTranslatedShaderSource(shader: org.scalajs.dom.WebGLShader): java.lang.String
 }
-
 object WEBGLDebugShaders {
-  @scala.inline
-  def apply(getTranslatedShaderSource: org.scalajs.dom.raw.WebGLShader => CallbackTo[java.lang.String]): WEBGLDebugShaders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTranslatedShaderSource")(js.Any.fromFunction1((t0: org.scalajs.dom.raw.WebGLShader) => getTranslatedShaderSource(t0).runNow()))
+  
+  inline def apply(getTranslatedShaderSource: org.scalajs.dom.WebGLShader => java.lang.String): WEBGLDebugShaders = {
+    val __obj = js.Dynamic.literal(getTranslatedShaderSource = js.Any.fromFunction1(getTranslatedShaderSource))
     __obj.asInstanceOf[WEBGLDebugShaders]
   }
+  
+  extension [Self <: WEBGLDebugShaders](x: Self) {
+    
+    inline def setGetTranslatedShaderSource(value: org.scalajs.dom.WebGLShader => java.lang.String): Self = StObject.set(x, "getTranslatedShaderSource", js.Any.fromFunction1(value))
+  }
 }
-

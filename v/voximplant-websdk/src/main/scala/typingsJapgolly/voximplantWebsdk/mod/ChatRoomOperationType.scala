@@ -1,35 +1,33 @@
 package typingsJapgolly.voximplantWebsdk.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChatRoomOperationType extends js.Object
-
+sealed trait ChatRoomOperationType extends StObject
 @JSImport("voximplant-websdk", "ChatRoomOperationType")
 @js.native
-object ChatRoomOperationType extends js.Object {
-  /**
-  		* Ban operation
-  		*/
-  @js.native
-  sealed trait Ban extends ChatRoomOperationType
-  
-  /**
-  		* Unban operation
-  		*/
-  @js.native
-  sealed trait Unban extends ChatRoomOperationType
+object ChatRoomOperationType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChatRoomOperationType with Double] = js.native
-  /* 0 */ @js.native
-  object Ban extends TopLevel[Ban with Double]
+  def apply(value: Double): js.UndefOr[ChatRoomOperationType & Double] = js.native
   
-  /* 1 */ @js.native
-  object Unban extends TopLevel[Unban with Double]
+  /**
+    * Ban operation
+    */
+  @js.native
+  sealed trait Ban
+    extends StObject
+       with ChatRoomOperationType
+  /* 0 */ val Ban: typingsJapgolly.voximplantWebsdk.mod.ChatRoomOperationType.Ban & Double = js.native
   
+  /**
+    * Unban operation
+    */
+  @js.native
+  sealed trait Unban
+    extends StObject
+       with ChatRoomOperationType
+  /* 1 */ val Unban: typingsJapgolly.voximplantWebsdk.mod.ChatRoomOperationType.Unban & Double = js.native
 }
-

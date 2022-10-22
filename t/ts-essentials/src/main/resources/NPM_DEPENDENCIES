@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ts-essentials" : "1.0.4"
+      "ts-essentials" : "9.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ts-essentials" : "1.0.4"
+      "ts-essentials" : "9.3.0"
     }
   ],
   "compile-devDependencies" : [

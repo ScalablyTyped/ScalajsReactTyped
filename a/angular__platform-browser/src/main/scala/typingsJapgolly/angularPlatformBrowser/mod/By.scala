@@ -4,18 +4,20 @@ import typingsJapgolly.angularCore.mod.DebugElement
 import typingsJapgolly.angularCore.mod.DebugNode
 import typingsJapgolly.angularCore.mod.Predicate
 import typingsJapgolly.angularCore.mod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser", "By")
 @js.native
-class By () extends js.Object
-
+open class By () extends StObject
 /* static members */
-@JSImport("@angular/platform-browser", "By")
-@js.native
-object By extends js.Object {
+object By {
+  
+  @JSImport("@angular/platform-browser", "By")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Match all nodes.
     *
@@ -24,7 +26,8 @@ object By extends js.Object {
     *
     * {@example platform-browser/dom/debug/ts/by/by.ts region='by_all'}
     */
-  def all(): Predicate[DebugNode] = js.native
+  inline def all(): Predicate[DebugNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[Predicate[DebugNode]]
+  
   /**
     * Match elements by the given CSS selector.
     *
@@ -33,7 +36,8 @@ object By extends js.Object {
     *
     * {@example platform-browser/dom/debug/ts/by/by.ts region='by_css'}
     */
-  def css(selector: String): Predicate[DebugElement] = js.native
+  inline def css(selector: String): Predicate[DebugElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(selector.asInstanceOf[js.Any]).asInstanceOf[Predicate[DebugElement]]
+  
   /**
     * Match nodes that have the given directive present.
     *
@@ -42,6 +46,5 @@ object By extends js.Object {
     *
     * {@example platform-browser/dom/debug/ts/by/by.ts region='by_directive'}
     */
-  def directive(`type`: Type[_]): Predicate[DebugNode] = js.native
+  inline def directive(`type`: Type[Any]): Predicate[DebugNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("directive")(`type`.asInstanceOf[js.Any]).asInstanceOf[Predicate[DebugNode]]
 }
-

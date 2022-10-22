@@ -1,35 +1,45 @@
 package typingsJapgolly.mfiles
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IVaultSharedLinkOperations extends js.Object {
+trait IVaultSharedLinkOperations extends StObject {
+  
   def CreateSharedLink(SharedLinkCreationInfo: ISharedLinkInfo): ISharedLinkInfo
+  
   def DeleteSharedLink(AccessKey: String): Unit
+  
   def GetSharedLink(AccessKey: String): ISharedLinkInfo
+  
   def GetSharedLinks(CreatedByUser: Double): ISharedLinkInfos
+  
   def GetSharedLinksByObject(ObjID: IObjID): ISharedLinkInfos
 }
-
 object IVaultSharedLinkOperations {
-  @scala.inline
-  def apply(
-    CreateSharedLink: ISharedLinkInfo => CallbackTo[ISharedLinkInfo],
+  
+  inline def apply(
+    CreateSharedLink: ISharedLinkInfo => ISharedLinkInfo,
     DeleteSharedLink: String => Callback,
-    GetSharedLink: String => CallbackTo[ISharedLinkInfo],
-    GetSharedLinks: Double => CallbackTo[ISharedLinkInfos],
-    GetSharedLinksByObject: IObjID => CallbackTo[ISharedLinkInfos]
+    GetSharedLink: String => ISharedLinkInfo,
+    GetSharedLinks: Double => ISharedLinkInfos,
+    GetSharedLinksByObject: IObjID => ISharedLinkInfos
   ): IVaultSharedLinkOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CreateSharedLink")(js.Any.fromFunction1((t0: typingsJapgolly.mfiles.ISharedLinkInfo) => CreateSharedLink(t0).runNow()))
-    __obj.updateDynamic("DeleteSharedLink")(js.Any.fromFunction1((t0: java.lang.String) => DeleteSharedLink(t0).runNow()))
-    __obj.updateDynamic("GetSharedLink")(js.Any.fromFunction1((t0: java.lang.String) => GetSharedLink(t0).runNow()))
-    __obj.updateDynamic("GetSharedLinks")(js.Any.fromFunction1((t0: scala.Double) => GetSharedLinks(t0).runNow()))
-    __obj.updateDynamic("GetSharedLinksByObject")(js.Any.fromFunction1((t0: typingsJapgolly.mfiles.IObjID) => GetSharedLinksByObject(t0).runNow()))
+    val __obj = js.Dynamic.literal(CreateSharedLink = js.Any.fromFunction1(CreateSharedLink), DeleteSharedLink = js.Any.fromFunction1((t0: String) => DeleteSharedLink(t0).runNow()), GetSharedLink = js.Any.fromFunction1(GetSharedLink), GetSharedLinks = js.Any.fromFunction1(GetSharedLinks), GetSharedLinksByObject = js.Any.fromFunction1(GetSharedLinksByObject))
     __obj.asInstanceOf[IVaultSharedLinkOperations]
   }
+  
+  extension [Self <: IVaultSharedLinkOperations](x: Self) {
+    
+    inline def setCreateSharedLink(value: ISharedLinkInfo => ISharedLinkInfo): Self = StObject.set(x, "CreateSharedLink", js.Any.fromFunction1(value))
+    
+    inline def setDeleteSharedLink(value: String => Callback): Self = StObject.set(x, "DeleteSharedLink", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setGetSharedLink(value: String => ISharedLinkInfo): Self = StObject.set(x, "GetSharedLink", js.Any.fromFunction1(value))
+    
+    inline def setGetSharedLinks(value: Double => ISharedLinkInfos): Self = StObject.set(x, "GetSharedLinks", js.Any.fromFunction1(value))
+    
+    inline def setGetSharedLinksByObject(value: IObjID => ISharedLinkInfos): Self = StObject.set(x, "GetSharedLinksByObject", js.Any.fromFunction1(value))
+  }
 }
-

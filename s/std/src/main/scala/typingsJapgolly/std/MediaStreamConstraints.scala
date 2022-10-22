@@ -1,27 +1,46 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaStreamConstraints extends js.Object {
-  var audio: js.UndefOr[scala.Boolean | org.scalajs.dom.experimental.mediastream.MediaTrackConstraints] = js.undefined
+trait MediaStreamConstraints extends StObject {
+  
+  /* standard dom */
+  var audio: js.UndefOr[scala.Boolean | org.scalajs.dom.MediaTrackConstraints] = js.undefined
+  
+  /* standard dom */
   var peerIdentity: js.UndefOr[java.lang.String] = js.undefined
-  var video: js.UndefOr[scala.Boolean | org.scalajs.dom.experimental.mediastream.MediaTrackConstraints] = js.undefined
+  
+  /* standard dom */
+  var preferCurrentTab: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
+  var video: js.UndefOr[scala.Boolean | org.scalajs.dom.MediaTrackConstraints] = js.undefined
 }
-
 object MediaStreamConstraints {
-  @scala.inline
-  def apply(
-    audio: scala.Boolean | org.scalajs.dom.experimental.mediastream.MediaTrackConstraints = null,
-    peerIdentity: java.lang.String = null,
-    video: scala.Boolean | org.scalajs.dom.experimental.mediastream.MediaTrackConstraints = null
-  ): MediaStreamConstraints = {
+  
+  inline def apply(): MediaStreamConstraints = {
     val __obj = js.Dynamic.literal()
-    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
-    if (peerIdentity != null) __obj.updateDynamic("peerIdentity")(peerIdentity.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamConstraints]
   }
+  
+  extension [Self <: MediaStreamConstraints](x: Self) {
+    
+    inline def setAudio(value: scala.Boolean | org.scalajs.dom.MediaTrackConstraints): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    
+    inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+    
+    inline def setPeerIdentity(value: java.lang.String): Self = StObject.set(x, "peerIdentity", value.asInstanceOf[js.Any])
+    
+    inline def setPeerIdentityUndefined: Self = StObject.set(x, "peerIdentity", js.undefined)
+    
+    inline def setPreferCurrentTab(value: scala.Boolean): Self = StObject.set(x, "preferCurrentTab", value.asInstanceOf[js.Any])
+    
+    inline def setPreferCurrentTabUndefined: Self = StObject.set(x, "preferCurrentTab", js.undefined)
+    
+    inline def setVideo(value: scala.Boolean | org.scalajs.dom.MediaTrackConstraints): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+  }
 }
-

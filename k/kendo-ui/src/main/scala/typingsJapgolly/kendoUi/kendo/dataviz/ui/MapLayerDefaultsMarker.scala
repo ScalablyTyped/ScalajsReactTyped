@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapLayerDefaultsMarker extends js.Object {
+trait MapLayerDefaultsMarker extends StObject {
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   var shape: js.UndefOr[String] = js.undefined
+  
   var tooltip: js.UndefOr[MapLayerDefaultsMarkerTooltip] = js.undefined
 }
-
 object MapLayerDefaultsMarker {
-  @scala.inline
-  def apply(opacity: Int | Double = null, shape: String = null, tooltip: MapLayerDefaultsMarkerTooltip = null): MapLayerDefaultsMarker = {
+  
+  inline def apply(): MapLayerDefaultsMarker = {
     val __obj = js.Dynamic.literal()
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayerDefaultsMarker]
   }
+  
+  extension [Self <: MapLayerDefaultsMarker](x: Self) {
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def setTooltip(value: MapLayerDefaultsMarkerTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+  }
 }
-

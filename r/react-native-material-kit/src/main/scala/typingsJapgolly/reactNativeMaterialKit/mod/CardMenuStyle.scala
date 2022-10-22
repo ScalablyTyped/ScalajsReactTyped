@@ -2,31 +2,43 @@ package typingsJapgolly.reactNativeMaterialKit.mod
 
 import typingsJapgolly.reactNativeMaterialKit.reactNativeMaterialKitStrings.absolute
 import typingsJapgolly.reactNativeMaterialKit.reactNativeMaterialKitStrings.relative
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CardMenuStyle extends js.Object {
+trait CardMenuStyle extends StObject {
+  
   var backgroundColor: js.UndefOr[String] = js.undefined
+  
   var position: js.UndefOr[absolute | relative] = js.undefined
+  
   var right: js.UndefOr[Double] = js.undefined
+  
   var top: js.UndefOr[Double] = js.undefined
 }
-
 object CardMenuStyle {
-  @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    position: absolute | relative = null,
-    right: Int | Double = null,
-    top: Int | Double = null
-  ): CardMenuStyle = {
+  
+  inline def apply(): CardMenuStyle = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardMenuStyle]
   }
+  
+  extension [Self <: CardMenuStyle](x: Self) {
+    
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setPosition(value: absolute | relative): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+  }
 }
-

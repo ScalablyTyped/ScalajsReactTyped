@@ -1,34 +1,48 @@
 package typingsJapgolly.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseRecipient extends js.Object {
+trait BaseRecipient extends StObject {
+  
   /** Key/value pairs associated with a recipient. */
-  var metadata: js.UndefOr[js.Any] = js.undefined
+  var metadata: js.UndefOr[Any] = js.undefined
+  
   /** SparkPost Enterprise API only. Email to use for envelope FROM. */
   var return_path: js.UndefOr[String] = js.undefined
+  
   /** Key/value pairs associated with a recipient that are provided to the substitution engine. */
-  var substitution_data: js.UndefOr[js.Any] = js.undefined
+  var substitution_data: js.UndefOr[Any] = js.undefined
+  
   /** Array of text labels associated with a recipient. */
   var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object BaseRecipient {
-  @scala.inline
-  def apply(
-    metadata: js.Any = null,
-    return_path: String = null,
-    substitution_data: js.Any = null,
-    tags: js.Array[String] = null
-  ): BaseRecipient = {
+  
+  inline def apply(): BaseRecipient = {
     val __obj = js.Dynamic.literal()
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (return_path != null) __obj.updateDynamic("return_path")(return_path.asInstanceOf[js.Any])
-    if (substitution_data != null) __obj.updateDynamic("substitution_data")(substitution_data.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseRecipient]
   }
+  
+  extension [Self <: BaseRecipient](x: Self) {
+    
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    
+    inline def setReturn_path(value: String): Self = StObject.set(x, "return_path", value.asInstanceOf[js.Any])
+    
+    inline def setReturn_pathUndefined: Self = StObject.set(x, "return_path", js.undefined)
+    
+    inline def setSubstitution_data(value: Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
+    
+    inline def setSubstitution_dataUndefined: Self = StObject.set(x, "substitution_data", js.undefined)
+    
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
+  }
 }
-

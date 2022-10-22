@@ -1,18 +1,23 @@
 package typingsJapgolly.monacoEditor.mod
 
-import typingsJapgolly.monacoEditor.AnonAuthority
-import typingsJapgolly.monacoEditor.AnonFragment
+import typingsJapgolly.monacoEditor.anon.Authority
+import typingsJapgolly.monacoEditor.anon.Fragment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("monaco-editor", "Uri")
 @js.native
-class Uri () extends UriComponents {
+open class Uri ()
+  extends StObject
+     with UriComponents {
+  
   /* CompleteClass */
-  override var authority: String = js.native
+  var authority: String = js.native
+  
   /* CompleteClass */
-  override var fragment: String = js.native
+  var fragment: String = js.native
+  
   /**
     * Returns a string representing the corresponding file system path of this Uri.
     * Will handle UNC paths, normalizes windows drive letters to lower-case, and uses the
@@ -37,22 +42,30 @@ class Uri () extends UriComponents {
     * namely the server name, would be missing. Therefore `Uri#fsPath` exists - it's sugar to ease working
     * with URIs that represent files on disk (`file` scheme).
     */
-  val fsPath: String = js.native
+  def fsPath: String = js.native
+  
   /* CompleteClass */
-  override var path: String = js.native
+  var path: String = js.native
+  
   /* CompleteClass */
-  override var query: String = js.native
+  var query: String = js.native
+  
   /* CompleteClass */
-  override var scheme: String = js.native
+  var scheme: String = js.native
+  
   def toJSON(): UriComponents = js.native
+  
   def toString(skipEncoding: Boolean): String = js.native
-  def `with`(change: AnonAuthority): Uri = js.native
+  
+  def `with`(change: Authority): Uri = js.native
 }
-
 /* static members */
-@JSImport("monaco-editor", "Uri")
-@js.native
-object Uri extends js.Object {
+object Uri {
+  
+  @JSImport("monaco-editor", "Uri")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Uri from a file system path, e.g. `c:\my\files`,
     * `/usr/home`, or `\\server\share\some\path`.
@@ -74,23 +87,34 @@ object Uri extends js.Object {
     *
     * @param path A file system path (see `Uri#fsPath`)
     */
-  def file(path: String): Uri = js.native
-  def from(components: AnonFragment): Uri = js.native
-  def isUri(thing: js.Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = js.native
+  inline def file(path: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  
+  inline def from(components: Fragment): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(components.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  
+  inline def isUri(thing: Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUri")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.Uri */ Boolean]
+  
   /**
-    * Creates a new Uri from a string, e.g. `http://www.msft.com/some/path`,
+    * Join a Uri path with path fragments and normalizes the resulting path.
+    *
+    * @param uri The input Uri.
+    * @param pathFragment The path fragment to add to the Uri path.
+    * @returns The resulting Uri.
+    */
+  inline def joinPath(uri: Uri, pathFragment: String*): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(scala.List(uri.asInstanceOf[js.Any]).`++`(pathFragment.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Uri]
+  
+  /**
+    * Creates a new Uri from a string, e.g. `http://www.example.com/some/path`,
     * `file:///usr/home`, or `scheme:with/path`.
     *
     * @param value A string which represents an Uri (see `Uri#toString`).
     */
-  def parse(value: String): Uri = js.native
-  def parse(value: String, _strict: Boolean): Uri = js.native
-  def revive(): js.UndefOr[Uri] = js.native
-  def revive(data: Uri): js.UndefOr[Uri] = js.native
-  def revive(data: UriComponents): js.UndefOr[Uri] = js.native
-  @JSName("revive")
-  def revive_Uri(data: Uri): Uri = js.native
-  @JSName("revive")
-  def revive_Uri(data: UriComponents): Uri = js.native
+  inline def parse(value: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  inline def parse(value: String, _strict: Boolean): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any], _strict.asInstanceOf[js.Any])).asInstanceOf[Uri]
+  
+  inline def revive(): js.UndefOr[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")().asInstanceOf[js.UndefOr[Uri]]
+  inline def revive(data: Uri): js.UndefOr[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Uri]]
+  inline def revive(data: UriComponents): js.UndefOr[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Uri]]
+  
+  inline def revive_Uri(data: Uri): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  inline def revive_Uri(data: UriComponents): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[Uri]
 }
-

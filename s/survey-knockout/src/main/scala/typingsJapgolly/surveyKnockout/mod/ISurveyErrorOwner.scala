@@ -1,28 +1,32 @@
 package typingsJapgolly.surveyKnockout.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISurveyErrorOwner extends ILocalizableOwner {
+trait ISurveyErrorOwner
+  extends StObject
+     with ILocalizableOwner {
+  
   def getErrorCustomText(text: String, error: SurveyError): String
 }
-
 object ISurveyErrorOwner {
-  @scala.inline
-  def apply(
-    getErrorCustomText: (String, SurveyError) => CallbackTo[String],
+  
+  inline def apply(
+    getErrorCustomText: (String, SurveyError) => String,
     getLocale: CallbackTo[String],
-    getMarkdownHtml: String => CallbackTo[String],
-    getProcessedText: String => CallbackTo[String]
+    getMarkdownHtml: (String, String) => String,
+    getProcessedText: String => String,
+    getRenderer: String => String,
+    getRendererContext: LocalizableString => Any
   ): ISurveyErrorOwner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getErrorCustomText")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.surveyKnockout.mod.SurveyError) => getErrorCustomText(t0, t1).runNow()))
-    __obj.updateDynamic("getLocale")(getLocale.toJsFn)
-    __obj.updateDynamic("getMarkdownHtml")(js.Any.fromFunction1((t0: java.lang.String) => getMarkdownHtml(t0).runNow()))
-    __obj.updateDynamic("getProcessedText")(js.Any.fromFunction1((t0: java.lang.String) => getProcessedText(t0).runNow()))
+    val __obj = js.Dynamic.literal(getErrorCustomText = js.Any.fromFunction2(getErrorCustomText), getLocale = getLocale.toJsFn, getMarkdownHtml = js.Any.fromFunction2(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText), getRenderer = js.Any.fromFunction1(getRenderer), getRendererContext = js.Any.fromFunction1(getRendererContext))
     __obj.asInstanceOf[ISurveyErrorOwner]
   }
+  
+  extension [Self <: ISurveyErrorOwner](x: Self) {
+    
+    inline def setGetErrorCustomText(value: (String, SurveyError) => String): Self = StObject.set(x, "getErrorCustomText", js.Any.fromFunction2(value))
+  }
 }
-

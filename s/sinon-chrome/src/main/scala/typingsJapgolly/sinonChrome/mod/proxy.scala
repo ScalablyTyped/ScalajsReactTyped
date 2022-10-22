@@ -2,14 +2,23 @@ package typingsJapgolly.sinonChrome.mod
 
 import typingsJapgolly.sinonChrome.mod.events.Event
 import typingsJapgolly.sinonChrome.mod.types.StubbedChromeSetting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-chrome", "proxy")
-@js.native
-object proxy extends js.Object {
-  var onProxyError: Event = js.native
-  var settings: StubbedChromeSetting = js.native
+object proxy {
+  
+  @JSImport("sinon-chrome", "proxy")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("sinon-chrome", "proxy.onProxyError")
+  @js.native
+  def onProxyError: Event = js.native
+  inline def onProxyError_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onProxyError")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "proxy.settings")
+  @js.native
+  def settings: StubbedChromeSetting = js.native
+  inline def settings_=(x: StubbedChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("settings")(x.asInstanceOf[js.Any])
 }
-

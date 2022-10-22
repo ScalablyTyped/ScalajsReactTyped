@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-util
 
-Typings are for version 24.9.0
+Typings are for version 29.2.0
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-util |
 | Keywords           | - |
-| # releases         | 61 |
-| # dependents       | 74 |
-| # downloads        | 257383814 |
-| # stars            | 0 |
+| # releases         | 57 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5744646366666666E8 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

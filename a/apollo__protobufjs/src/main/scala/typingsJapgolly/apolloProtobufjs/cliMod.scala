@@ -1,25 +1,30 @@
 package typingsJapgolly.apolloProtobufjs
 
-import typingsJapgolly.apolloProtobufjs.pbjsMod.pbjsCallback
-import typingsJapgolly.apolloProtobufjs.pbtsMod.pbtsCallback
+import typingsJapgolly.apolloProtobufjs.cliPbjsMod.pbjsCallback
+import typingsJapgolly.apolloProtobufjs.cliPbtsMod.pbtsCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@apollo/protobufjs/cli", JSImport.Namespace)
-@js.native
-object cliMod extends js.Object {
-  @js.native
-  object pbjs extends js.Object {
-    def main(args: js.Array[String]): js.UndefOr[Double] = js.native
-    def main(args: js.Array[String], callback: pbjsCallback): js.UndefOr[Double] = js.native
+object cliMod {
+  
+  object pbjs {
+    
+    @JSImport("@apollo/protobufjs/cli", "pbjs")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def main(args: js.Array[String]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("main")(args.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+    inline def main(args: js.Array[String], callback: pbjsCallback): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("main")(args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   }
   
-  @js.native
-  object pbts extends js.Object {
-    def main(args: js.Array[String]): js.UndefOr[Double] = js.native
-    def main(args: js.Array[String], callback: pbtsCallback): js.UndefOr[Double] = js.native
+  object pbts {
+    
+    @JSImport("@apollo/protobufjs/cli", "pbts")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def main(args: js.Array[String]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("main")(args.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+    inline def main(args: js.Array[String], callback: pbtsCallback): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("main")(args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   }
-  
 }
-

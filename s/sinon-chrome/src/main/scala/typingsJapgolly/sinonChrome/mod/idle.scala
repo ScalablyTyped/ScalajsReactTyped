@@ -1,15 +1,28 @@
 package typingsJapgolly.sinonChrome.mod
 
 import typingsJapgolly.sinonChrome.mod.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-chrome", "idle")
-@js.native
-object idle extends js.Object {
-  var onStateChanged: Event = js.native
-  var queryState: SinonChromeStub = js.native
-  var setDetectionInterval: SinonChromeStub = js.native
+object idle {
+  
+  @JSImport("sinon-chrome", "idle")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("sinon-chrome", "idle.onStateChanged")
+  @js.native
+  def onStateChanged: Event = js.native
+  inline def onStateChanged_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStateChanged")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "idle.queryState")
+  @js.native
+  def queryState: SinonChromeStub = js.native
+  inline def queryState_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryState")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "idle.setDetectionInterval")
+  @js.native
+  def setDetectionInterval: SinonChromeStub = js.native
+  inline def setDetectionInterval_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setDetectionInterval")(x.asInstanceOf[js.Any])
 }
-

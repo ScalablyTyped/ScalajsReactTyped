@@ -1,37 +1,54 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SuccessHidingEventUIParam extends js.Object {
+trait SuccessHidingEventUIParam extends StObject {
+  
   /**
-  	 * Populated with options for the specific field in the collection or null.
-  	 */
-  var fieldOptions: js.UndefOr[js.Any] = js.undefined
+    * Populated with options for the specific field in the collection or null.
+    */
+  var fieldOptions: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the text of message.
-  	 */
+    * Gets the text of message.
+    */
   var message: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets reference to the igValidator widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to the igValidator widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets reference to the target of the message.
-  	 */
+    * Gets reference to the target of the message.
+    */
   var target: js.UndefOr[String] = js.undefined
 }
-
 object SuccessHidingEventUIParam {
-  @scala.inline
-  def apply(fieldOptions: js.Any = null, message: String = null, owner: js.Any = null, target: String = null): SuccessHidingEventUIParam = {
+  
+  inline def apply(): SuccessHidingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (fieldOptions != null) __obj.updateDynamic("fieldOptions")(fieldOptions.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuccessHidingEventUIParam]
   }
+  
+  extension [Self <: SuccessHidingEventUIParam](x: Self) {
+    
+    inline def setFieldOptions(value: Any): Self = StObject.set(x, "fieldOptions", value.asInstanceOf[js.Any])
+    
+    inline def setFieldOptionsUndefined: Self = StObject.set(x, "fieldOptions", js.undefined)
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

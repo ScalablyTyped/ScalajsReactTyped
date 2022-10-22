@@ -10,10 +10,10 @@ Server utilities for loadable.
 | ------------------ | :-------------: |
 | Full name          | @loadable/server |
 | Keywords           | loadable |
-| # releases         | 25 |
-| # dependents       | 35 |
-| # downloads        | 1264454 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 852782.6666666666 |
+| # stars            | 6675.0 |
 
 ## Links
 - [Homepage](https://github.com/gregberge/loadable-components#readme)

@@ -1,33 +1,39 @@
 package typingsJapgolly.reactNative.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin
+- Dropped new (args : ...any): react-native.react-native.NativeMethods
 - Dropped new (args : ...any): react-native.react-native.TimerMixin */ @JSImport("react-native", "TextInput")
 @js.native
-class TextInput ()
-  extends Component[TextInputProps, js.Object, js.Any] {
+open class TextInput ()
+  extends Component[TextInputProps, js.Object, Any] {
+  
   /**
     * Removes all text from the input.
     */
   def clear(): Unit = js.native
+  
   /**
     * Returns if the input is currently focused.
     */
   def isFocused(): Boolean = js.native
 }
-
 /* static members */
-@JSImport("react-native", "TextInput")
-@js.native
-object TextInput extends js.Object {
+object TextInput {
+  
+  @JSImport("react-native", "TextInput")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Access the current focus state.
     */
-  var State: TextInputState = js.native
+  @JSImport("react-native", "TextInput.State")
+  @js.native
+  def State: TextInputState = js.native
+  inline def State_=(x: TextInputState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("State")(x.asInstanceOf[js.Any])
 }
-

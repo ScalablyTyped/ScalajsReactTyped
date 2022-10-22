@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-dev-middleware
 
-Typings are for version 3.7
+Typings are for version 5.3.3
 
 ## Library description:
 A development middleware for webpack
@@ -9,11 +9,11 @@ A development middleware for webpack
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | webpack-dev-middleware |
-| Keywords           | webpack, middleware, develompent |
-| # releases         | 22 |
-| # dependents       | 1567 |
-| # downloads        | 316849049 |
-| # stars            | 51 |
+| Keywords           | webpack, middleware, development |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 7.336065033333333E7 |
+| # stars            | 2389.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack/webpack-dev-middleware)
@@ -24,7 +24,7 @@ A development middleware for webpack
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

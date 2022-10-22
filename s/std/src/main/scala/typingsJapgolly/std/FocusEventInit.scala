@@ -1,31 +1,29 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FocusEventInit extends UIEventInit {
-  var relatedTarget: js.UndefOr[org.scalajs.dom.raw.EventTarget | Null] = js.undefined
+trait FocusEventInit
+  extends StObject
+     with UIEventInit {
+  
+  /* standard dom */
+  var relatedTarget: js.UndefOr[org.scalajs.dom.EventTarget | Null] = js.undefined
 }
-
 object FocusEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    detail: Int | Double = null,
-    relatedTarget: org.scalajs.dom.raw.EventTarget = null,
-    view: Window_ = null
-  ): FocusEventInit = {
+  
+  inline def apply(): FocusEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[FocusEventInit]
   }
+  
+  extension [Self <: FocusEventInit](x: Self) {
+    
+    inline def setRelatedTarget(value: org.scalajs.dom.EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
+    
+    inline def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
+  }
 }
-

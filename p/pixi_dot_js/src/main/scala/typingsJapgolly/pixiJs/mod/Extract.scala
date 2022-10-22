@@ -1,8 +1,9 @@
 package typingsJapgolly.pixiJs.mod
 
+import typingsJapgolly.pixiExtensions.mod.ExtensionMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class provides renderer-specific plugins for exporting content from a renderer.
@@ -22,13 +23,43 @@ import scala.scalajs.js.annotation._
   * // Render the graphics as an HTMLImageElement
   * const image = app.renderer.plugins.extract.image(graphics);
   * document.body.appendChild(image);
-  * @class
   * @memberof PIXI
   */
 @JSImport("pixi.js", "Extract")
 @js.native
-class Extract protected ()
-  extends typingsJapgolly.pixiJs.PIXI.Extract {
-  def this(renderer: typingsJapgolly.pixiJs.PIXI.Renderer) = this()
+open class Extract protected ()
+  extends typingsJapgolly.pixiExtract.mod.Extract {
+  /**
+    * @param renderer - A reference to the current renderer
+    */
+  def this(renderer: typingsJapgolly.pixiCore.mod.Renderer) = this()
 }
-
+object Extract {
+  
+  @JSImport("pixi.js", "Extract")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Takes premultiplied pixel data and produces regular pixel data
+    * @private
+    * @param pixels - array of pixel data
+    * @param out - output array
+    */
+  /* static member */
+  inline def arrayPostDivide(pixels: js.Array[Double], out: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPostDivide")(pixels.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def arrayPostDivide(pixels: js.Array[Double], out: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPostDivide")(pixels.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def arrayPostDivide(pixels: js.Array[Double], out: js.typedarray.Uint8ClampedArray): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPostDivide")(pixels.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def arrayPostDivide(pixels: js.typedarray.Uint8Array, out: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPostDivide")(pixels.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def arrayPostDivide(pixels: js.typedarray.Uint8Array, out: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPostDivide")(pixels.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def arrayPostDivide(pixels: js.typedarray.Uint8Array, out: js.typedarray.Uint8ClampedArray): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPostDivide")(pixels.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def arrayPostDivide(pixels: js.typedarray.Uint8ClampedArray, out: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPostDivide")(pixels.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def arrayPostDivide(pixels: js.typedarray.Uint8ClampedArray, out: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPostDivide")(pixels.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def arrayPostDivide(pixels: js.typedarray.Uint8ClampedArray, out: js.typedarray.Uint8ClampedArray): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPostDivide")(pixels.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /** @ignore */
+  /* static member */
+  @JSImport("pixi.js", "Extract.extension")
+  @js.native
+  val `extension`: ExtensionMetadata = js.native
+}

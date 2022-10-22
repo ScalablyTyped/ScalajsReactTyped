@@ -1,47 +1,37 @@
 package typingsJapgolly.chrome.chrome.cast.media
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextTrackType extends js.Object
-
+sealed trait TextTrackType extends StObject
 @JSGlobal("chrome.cast.media.TextTrackType")
 @js.native
-object TextTrackType extends js.Object {
-  @js.native
-  sealed trait CAPTIONS extends TextTrackType
+object TextTrackType extends StObject {
   
   @js.native
-  sealed trait CHAPTERS extends TextTrackType
+  sealed trait CAPTIONS
+    extends StObject
+       with TextTrackType
   
   @js.native
-  sealed trait DESCRIPTIONS extends TextTrackType
+  sealed trait CHAPTERS
+    extends StObject
+       with TextTrackType
   
   @js.native
-  sealed trait METADATA extends TextTrackType
+  sealed trait DESCRIPTIONS
+    extends StObject
+       with TextTrackType
   
   @js.native
-  sealed trait SUBTITLES extends TextTrackType
+  sealed trait METADATA
+    extends StObject
+       with TextTrackType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[TextTrackType with String] = js.native
-  /* "CAPTIONS" */ @js.native
-  object CAPTIONS extends TopLevel[CAPTIONS with String]
-  
-  /* "CHAPTERS" */ @js.native
-  object CHAPTERS extends TopLevel[CHAPTERS with String]
-  
-  /* "DESCRIPTIONS" */ @js.native
-  object DESCRIPTIONS extends TopLevel[DESCRIPTIONS with String]
-  
-  /* "METADATA" */ @js.native
-  object METADATA extends TopLevel[METADATA with String]
-  
-  /* "SUBTITLES" */ @js.native
-  object SUBTITLES extends TopLevel[SUBTITLES with String]
-  
+  @js.native
+  sealed trait SUBTITLES
+    extends StObject
+       with TextTrackType
 }
-

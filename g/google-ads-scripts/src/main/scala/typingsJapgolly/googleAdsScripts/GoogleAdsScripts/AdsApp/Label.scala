@@ -1,0 +1,104 @@
+package typingsJapgolly.googleAdsScripts.GoogleAdsScripts.AdsApp
+
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/** Represents a Google Ads label. */
+trait Label extends StObject {
+  
+  /** Returns the selector of all ad groups to which the label is applied. */
+  def adGroups(): AdGroupSelector
+  
+  /** Returns the selector of all ads to which the label is applied. */
+  def ads(): AdSelector
+  
+  /** Returns the selector of all campaigns to which the label is applied. */
+  def campaigns(): CampaignSelector
+  
+  /** Returns the color code of the label. */
+  def getColor(): String
+  
+  /** Returns the description of the label. */
+  def getDescription(): String
+  
+  /** Returns the type of this entity as a String, in this case, "Label". */
+  def getEntityType(): String
+  
+  /** Returns the ID of the label. */
+  def getId(): String
+  
+  /** Returns the name of the label. */
+  def getName(): String
+  
+  /** Returns the selector of all keywords to which the label is applied. */
+  def keywords(): KeywordSelector
+  
+  /** Removes the label. */
+  def remove(): Unit
+  
+  /**
+    * Sets the background color of the label.
+    *
+    * @param color	The new color. It must be specified in either RGB form (#RRGGBB or #RGB) or one of the 16 basic CSS color names.
+    */
+  def setColor(color: String): Unit
+  
+  /** Sets the description for this label. */
+  def setDescription(description: String): Unit
+  
+  /** Changes the name of the Label. */
+  def setName(name: String): Unit
+}
+object Label {
+  
+  inline def apply(
+    adGroups: CallbackTo[AdGroupSelector],
+    ads: CallbackTo[AdSelector],
+    campaigns: CallbackTo[CampaignSelector],
+    getColor: CallbackTo[String],
+    getDescription: CallbackTo[String],
+    getEntityType: CallbackTo[String],
+    getId: CallbackTo[String],
+    getName: CallbackTo[String],
+    keywords: CallbackTo[KeywordSelector],
+    remove: Callback,
+    setColor: String => Callback,
+    setDescription: String => Callback,
+    setName: String => Callback
+  ): Label = {
+    val __obj = js.Dynamic.literal(adGroups = adGroups.toJsFn, ads = ads.toJsFn, campaigns = campaigns.toJsFn, getColor = getColor.toJsFn, getDescription = getDescription.toJsFn, getEntityType = getEntityType.toJsFn, getId = getId.toJsFn, getName = getName.toJsFn, keywords = keywords.toJsFn, remove = remove.toJsFn, setColor = js.Any.fromFunction1((t0: String) => setColor(t0).runNow()), setDescription = js.Any.fromFunction1((t0: String) => setDescription(t0).runNow()), setName = js.Any.fromFunction1((t0: String) => setName(t0).runNow()))
+    __obj.asInstanceOf[Label]
+  }
+  
+  extension [Self <: Label](x: Self) {
+    
+    inline def setAdGroups(value: CallbackTo[AdGroupSelector]): Self = StObject.set(x, "adGroups", value.toJsFn)
+    
+    inline def setAds(value: CallbackTo[AdSelector]): Self = StObject.set(x, "ads", value.toJsFn)
+    
+    inline def setCampaigns(value: CallbackTo[CampaignSelector]): Self = StObject.set(x, "campaigns", value.toJsFn)
+    
+    inline def setGetColor(value: CallbackTo[String]): Self = StObject.set(x, "getColor", value.toJsFn)
+    
+    inline def setGetDescription(value: CallbackTo[String]): Self = StObject.set(x, "getDescription", value.toJsFn)
+    
+    inline def setGetEntityType(value: CallbackTo[String]): Self = StObject.set(x, "getEntityType", value.toJsFn)
+    
+    inline def setGetId(value: CallbackTo[String]): Self = StObject.set(x, "getId", value.toJsFn)
+    
+    inline def setGetName(value: CallbackTo[String]): Self = StObject.set(x, "getName", value.toJsFn)
+    
+    inline def setKeywords(value: CallbackTo[KeywordSelector]): Self = StObject.set(x, "keywords", value.toJsFn)
+    
+    inline def setRemove(value: Callback): Self = StObject.set(x, "remove", value.toJsFn)
+    
+    inline def setSetColor(value: String => Callback): Self = StObject.set(x, "setColor", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setSetDescription(value: String => Callback): Self = StObject.set(x, "setDescription", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setSetName(value: String => Callback): Self = StObject.set(x, "setName", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+  }
+}

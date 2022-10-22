@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-pnp
 
-Typings are for version 1.1.5
+Typings are for version 1.2.0
 
 ## Library description:
 plug'n'play resolver for TypeScript
@@ -10,15 +10,12 @@ plug'n'play resolver for TypeScript
 | ------------------ | :-------------: |
 | Full name          | ts-pnp |
 | Keywords           | typescript, yarn, plugnplay, pnp |
-| # releases         | 10 |
-| # dependents       | 619 |
-| # downloads        | 61719332 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.2399336666666668E7 |
+| # stars            | 62.0 |
 
 ## Links
-- [Homepage](https://github.com/arcanis/ts-pnp)
-- [Bugs](https://github.com/arcanis/ts-pnp/issues)
-- [Repository](https://github.com/arcanis/ts-pnp)
 - [Npm](https://www.npmjs.com/package/ts-pnp)
     
 

@@ -1,21 +1,22 @@
 package typingsJapgolly.winrt.Windows.Storage.Provider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.Provider.CachedFileUpdaterUI")
-@js.native
-class CachedFileUpdaterUI () extends ICachedFileUpdaterUI {
-  /* CompleteClass */
-  override var onfileupdaterequested: js.Any = js.native
-  /* CompleteClass */
-  override var onuirequested: js.Any = js.native
-  /* CompleteClass */
-  override var title: String = js.native
-  /* CompleteClass */
-  override var uIStatus: UIStatus = js.native
-  /* CompleteClass */
-  override var updateTarget: CachedFileTarget = js.native
+trait CachedFileUpdaterUI
+  extends StObject
+     with ICachedFileUpdaterUI
+object CachedFileUpdaterUI {
+  
+  inline def apply(
+    onfileupdaterequested: Any,
+    onuirequested: Any,
+    title: String,
+    uIStatus: UIStatus,
+    updateTarget: CachedFileTarget
+  ): CachedFileUpdaterUI = {
+    val __obj = js.Dynamic.literal(onfileupdaterequested = onfileupdaterequested.asInstanceOf[js.Any], onuirequested = onuirequested.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], uIStatus = uIStatus.asInstanceOf[js.Any], updateTarget = updateTarget.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CachedFileUpdaterUI]
+  }
 }
-

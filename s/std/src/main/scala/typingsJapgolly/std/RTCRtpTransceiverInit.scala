@@ -1,27 +1,43 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCRtpTransceiverInit extends js.Object {
+trait RTCRtpTransceiverInit extends StObject {
+  
+  /* standard dom */
   var direction: js.UndefOr[RTCRtpTransceiverDirection] = js.undefined
+  
+  /* standard dom */
   var sendEncodings: js.UndefOr[js.Array[RTCRtpEncodingParameters]] = js.undefined
-  var streams: js.UndefOr[js.Array[org.scalajs.dom.experimental.mediastream.MediaStream]] = js.undefined
+  
+  /* standard dom */
+  var streams: js.UndefOr[js.Array[org.scalajs.dom.MediaStream]] = js.undefined
 }
-
 object RTCRtpTransceiverInit {
-  @scala.inline
-  def apply(
-    direction: RTCRtpTransceiverDirection = null,
-    sendEncodings: js.Array[RTCRtpEncodingParameters] = null,
-    streams: js.Array[org.scalajs.dom.experimental.mediastream.MediaStream] = null
-  ): RTCRtpTransceiverInit = {
+  
+  inline def apply(): RTCRtpTransceiverInit = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (sendEncodings != null) __obj.updateDynamic("sendEncodings")(sendEncodings.asInstanceOf[js.Any])
-    if (streams != null) __obj.updateDynamic("streams")(streams.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpTransceiverInit]
   }
+  
+  extension [Self <: RTCRtpTransceiverInit](x: Self) {
+    
+    inline def setDirection(value: RTCRtpTransceiverDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setSendEncodings(value: js.Array[RTCRtpEncodingParameters]): Self = StObject.set(x, "sendEncodings", value.asInstanceOf[js.Any])
+    
+    inline def setSendEncodingsUndefined: Self = StObject.set(x, "sendEncodings", js.undefined)
+    
+    inline def setSendEncodingsVarargs(value: RTCRtpEncodingParameters*): Self = StObject.set(x, "sendEncodings", js.Array(value*))
+    
+    inline def setStreams(value: js.Array[org.scalajs.dom.MediaStream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
+    
+    inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
+    
+    inline def setStreamsVarargs(value: org.scalajs.dom.MediaStream*): Self = StObject.set(x, "streams", js.Array(value*))
+  }
 }
-

@@ -1,18 +1,21 @@
 package typingsJapgolly.fhirJsClient.FHIR.SMART
 
-import typingsJapgolly.fhirJsClient.AnonDictpropName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FHIR Search parameter : The parameter used to by the FHIR api methods to perform search on a particular resource.
   */
-trait SearchParams extends CommonQueryFilters {
+trait SearchParams
+  extends StObject
+     with CommonQueryFilters {
+  
   /**
     * The patient id. If provided, will make the search query patient specific by adding the patien query parameter
     */
   var patient: js.UndefOr[String] = js.undefined
+  
   /**
     * The Search filter query object
     * This object syntaxs adopts mongodb-like query syntax ([see](http://docs.mongodb.org/manual/tutorial/query-documents/)
@@ -38,31 +41,31 @@ trait SearchParams extends CommonQueryFilters {
     * {'subject.name': {$exact: 'maud'}}
     * //=> subject.name:exact=maud
     */
-  var query: js.UndefOr[js.Any] = js.undefined
+  var query: js.UndefOr[Any] = js.undefined
+  
   /**
     * The name of the resource type on which the query is performed
     */
   var `type`: String
 }
-
 object SearchParams {
-  @scala.inline
-  def apply(
-    `type`: String,
-    count: Int | Double = null,
-    params: AnonDictpropName = null,
-    patient: String = null,
-    query: js.Any = null,
-    since: String = null
-  ): SearchParams = {
+  
+  inline def apply(`type`: String): SearchParams = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (patient != null) __obj.updateDynamic("patient")(patient.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchParams]
   }
+  
+  extension [Self <: SearchParams](x: Self) {
+    
+    inline def setPatient(value: String): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
+    
+    inline def setPatientUndefined: Self = StObject.set(x, "patient", js.undefined)
+    
+    inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

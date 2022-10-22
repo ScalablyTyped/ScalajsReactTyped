@@ -2,77 +2,109 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridFeatureChooser
-  extends /**
-	 * Option for igGridFeatureChooser
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   var animationDuration: js.UndefOr[Double] = js.undefined
-  var dropDownWidth: js.UndefOr[js.Any] = js.undefined
+  
+  var dropDownWidth: js.UndefOr[Any] = js.undefined
+  
   var featureChooserDropDownOpened: js.UndefOr[FeatureChooserDropDownOpenedEvent] = js.undefined
+  
   var featureChooserDropDownOpening: js.UndefOr[FeatureChooserDropDownOpeningEvent] = js.undefined
+  
   var featureChooserRendered: js.UndefOr[FeatureChooserRenderedEvent] = js.undefined
+  
   var featureChooserRendering: js.UndefOr[FeatureChooserRenderingEvent] = js.undefined
+  
   var featureToggled: js.UndefOr[FeatureToggledEvent] = js.undefined
+  
   var featureToggling: js.UndefOr[FeatureTogglingEvent] = js.undefined
+  
   /**
-  	 * Set/Get the locale language setting for the widget.
-  	 *
-  	 */
+    * Set/Get the locale language setting for the widget.
+    *
+    */
   var language: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Set/Get the locale setting for the widget.
-  	 *
-  	 */
-  var locale: js.UndefOr[js.Any] = js.undefined
+    * Set/Get the locale setting for the widget.
+    *
+    */
+  var locale: js.UndefOr[Any] = js.undefined
+  
   var menuToggling: js.UndefOr[MenuTogglingEvent] = js.undefined
+  
   /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 */
+    * Set/Get the regional setting for the widget.
+    *
+    */
   var regional: js.UndefOr[String | js.Object] = js.undefined
 }
-
 object IgGridFeatureChooser {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igGridFeatureChooser
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    animationDuration: Int | Double = null,
-    dropDownWidth: js.Any = null,
-    featureChooserDropDownOpened: (/* event */ Event_, /* ui */ FeatureChooserDropDownOpenedEventUIParam) => Callback = null,
-    featureChooserDropDownOpening: (/* event */ Event_, /* ui */ FeatureChooserDropDownOpeningEventUIParam) => Callback = null,
-    featureChooserRendered: (/* event */ Event_, /* ui */ FeatureChooserRenderedEventUIParam) => Callback = null,
-    featureChooserRendering: (/* event */ Event_, /* ui */ FeatureChooserRenderingEventUIParam) => Callback = null,
-    featureToggled: (/* event */ Event_, /* ui */ FeatureToggledEventUIParam) => Callback = null,
-    featureToggling: (/* event */ Event_, /* ui */ FeatureTogglingEventUIParam) => Callback = null,
-    language: String = null,
-    locale: js.Any = null,
-    menuToggling: (/* event */ Event_, /* ui */ MenuTogglingEventUIParam) => Callback = null,
-    regional: String | js.Object = null
-  ): IgGridFeatureChooser = {
+  
+  inline def apply(): IgGridFeatureChooser = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (dropDownWidth != null) __obj.updateDynamic("dropDownWidth")(dropDownWidth.asInstanceOf[js.Any])
-    if (featureChooserDropDownOpened != null) __obj.updateDynamic("featureChooserDropDownOpened")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.FeatureChooserDropDownOpenedEventUIParam) => featureChooserDropDownOpened(t0, t1).runNow()))
-    if (featureChooserDropDownOpening != null) __obj.updateDynamic("featureChooserDropDownOpening")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.FeatureChooserDropDownOpeningEventUIParam) => featureChooserDropDownOpening(t0, t1).runNow()))
-    if (featureChooserRendered != null) __obj.updateDynamic("featureChooserRendered")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.FeatureChooserRenderedEventUIParam) => featureChooserRendered(t0, t1).runNow()))
-    if (featureChooserRendering != null) __obj.updateDynamic("featureChooserRendering")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.FeatureChooserRenderingEventUIParam) => featureChooserRendering(t0, t1).runNow()))
-    if (featureToggled != null) __obj.updateDynamic("featureToggled")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.FeatureToggledEventUIParam) => featureToggled(t0, t1).runNow()))
-    if (featureToggling != null) __obj.updateDynamic("featureToggling")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.FeatureTogglingEventUIParam) => featureToggling(t0, t1).runNow()))
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (menuToggling != null) __obj.updateDynamic("menuToggling")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.MenuTogglingEventUIParam) => menuToggling(t0, t1).runNow()))
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridFeatureChooser]
   }
+  
+  extension [Self <: IgGridFeatureChooser](x: Self) {
+    
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+    
+    inline def setDropDownWidth(value: Any): Self = StObject.set(x, "dropDownWidth", value.asInstanceOf[js.Any])
+    
+    inline def setDropDownWidthUndefined: Self = StObject.set(x, "dropDownWidth", js.undefined)
+    
+    inline def setFeatureChooserDropDownOpened(value: (/* event */ Event, /* ui */ FeatureChooserDropDownOpenedEventUIParam) => Callback): Self = StObject.set(x, "featureChooserDropDownOpened", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ FeatureChooserDropDownOpenedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setFeatureChooserDropDownOpenedUndefined: Self = StObject.set(x, "featureChooserDropDownOpened", js.undefined)
+    
+    inline def setFeatureChooserDropDownOpening(value: (/* event */ Event, /* ui */ FeatureChooserDropDownOpeningEventUIParam) => Callback): Self = StObject.set(x, "featureChooserDropDownOpening", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ FeatureChooserDropDownOpeningEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setFeatureChooserDropDownOpeningUndefined: Self = StObject.set(x, "featureChooserDropDownOpening", js.undefined)
+    
+    inline def setFeatureChooserRendered(value: (/* event */ Event, /* ui */ FeatureChooserRenderedEventUIParam) => Callback): Self = StObject.set(x, "featureChooserRendered", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ FeatureChooserRenderedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setFeatureChooserRenderedUndefined: Self = StObject.set(x, "featureChooserRendered", js.undefined)
+    
+    inline def setFeatureChooserRendering(value: (/* event */ Event, /* ui */ FeatureChooserRenderingEventUIParam) => Callback): Self = StObject.set(x, "featureChooserRendering", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ FeatureChooserRenderingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setFeatureChooserRenderingUndefined: Self = StObject.set(x, "featureChooserRendering", js.undefined)
+    
+    inline def setFeatureToggled(value: (/* event */ Event, /* ui */ FeatureToggledEventUIParam) => Callback): Self = StObject.set(x, "featureToggled", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ FeatureToggledEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setFeatureToggledUndefined: Self = StObject.set(x, "featureToggled", js.undefined)
+    
+    inline def setFeatureToggling(value: (/* event */ Event, /* ui */ FeatureTogglingEventUIParam) => Callback): Self = StObject.set(x, "featureToggling", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ FeatureTogglingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setFeatureTogglingUndefined: Self = StObject.set(x, "featureToggling", js.undefined)
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setMenuToggling(value: (/* event */ Event, /* ui */ MenuTogglingEventUIParam) => Callback): Self = StObject.set(x, "menuToggling", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ MenuTogglingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setMenuTogglingUndefined: Self = StObject.set(x, "menuToggling", js.undefined)
+    
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+  }
 }
-

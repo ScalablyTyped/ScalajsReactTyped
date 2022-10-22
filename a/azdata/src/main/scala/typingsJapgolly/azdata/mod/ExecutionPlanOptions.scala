@@ -1,24 +1,30 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExecutionPlanOptions extends js.Object {
+trait ExecutionPlanOptions extends StObject {
+  
   var displayActualQueryPlan: js.UndefOr[Boolean] = js.undefined
+  
   var displayEstimatedQueryPlan: js.UndefOr[Boolean] = js.undefined
 }
-
 object ExecutionPlanOptions {
-  @scala.inline
-  def apply(
-    displayActualQueryPlan: js.UndefOr[Boolean] = js.undefined,
-    displayEstimatedQueryPlan: js.UndefOr[Boolean] = js.undefined
-  ): ExecutionPlanOptions = {
+  
+  inline def apply(): ExecutionPlanOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(displayActualQueryPlan)) __obj.updateDynamic("displayActualQueryPlan")(displayActualQueryPlan.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayEstimatedQueryPlan)) __obj.updateDynamic("displayEstimatedQueryPlan")(displayEstimatedQueryPlan.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionPlanOptions]
   }
+  
+  extension [Self <: ExecutionPlanOptions](x: Self) {
+    
+    inline def setDisplayActualQueryPlan(value: Boolean): Self = StObject.set(x, "displayActualQueryPlan", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayActualQueryPlanUndefined: Self = StObject.set(x, "displayActualQueryPlan", js.undefined)
+    
+    inline def setDisplayEstimatedQueryPlan(value: Boolean): Self = StObject.set(x, "displayEstimatedQueryPlan", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayEstimatedQueryPlanUndefined: Self = StObject.set(x, "displayEstimatedQueryPlan", js.undefined)
+  }
 }
-

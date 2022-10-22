@@ -1,8 +1,8 @@
 package typingsJapgolly.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.braintree.braintreeStrings.Accepted
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.braintree.braintreeStrings.Lost
   - typingsJapgolly.braintree.braintreeStrings.Won
 */
-trait DisputeStatus extends js.Object
-
+trait DisputeStatus extends StObject
 object DisputeStatus {
-  @scala.inline
-  def Accepted: typingsJapgolly.braintree.braintreeStrings.Accepted = this.cast("Accepted")
-  @scala.inline
-  def Disputed: typingsJapgolly.braintree.braintreeStrings.Disputed = this.cast("Disputed")
-  @scala.inline
-  def Expired: typingsJapgolly.braintree.braintreeStrings.Expired = this.cast("Expired")
-  @scala.inline
-  def Lost: typingsJapgolly.braintree.braintreeStrings.Lost = this.cast("Lost")
-  @scala.inline
-  def Open: typingsJapgolly.braintree.braintreeStrings.Open = this.cast("Open")
-  @scala.inline
-  def Won: typingsJapgolly.braintree.braintreeStrings.Won = this.cast("Won")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Accepted: typingsJapgolly.braintree.braintreeStrings.Accepted = "Accepted".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.Accepted]
+  
+  inline def Disputed: typingsJapgolly.braintree.braintreeStrings.Disputed = "Disputed".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.Disputed]
+  
+  inline def Expired: typingsJapgolly.braintree.braintreeStrings.Expired = "Expired".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.Expired]
+  
+  inline def Lost: typingsJapgolly.braintree.braintreeStrings.Lost = "Lost".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.Lost]
+  
+  inline def Open: typingsJapgolly.braintree.braintreeStrings.Open = "Open".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.Open]
+  
+  inline def Won: typingsJapgolly.braintree.braintreeStrings.Won = "Won".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.Won]
 }
-

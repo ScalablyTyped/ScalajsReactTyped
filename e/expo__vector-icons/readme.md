@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo__vector-icons
 
-Typings are for version 9.0
+Typings are for version 13.0.0
 
 ## Library description:
 Built-in support for popular icon fonts and the tooling to create your own Icon components from your font and glyph map. This is a wrapper around react-native-vector-icons to make it compatible with Expo.
@@ -10,10 +10,10 @@ Built-in support for popular icon fonts and the tooling to create your own Icon 
 | ------------------ | :-------------: |
 | Full name          | @expo/vector-icons |
 | Keywords           | expo |
-| # releases         | 23 |
-| # dependents       | 54 |
-| # downloads        | 2641550 |
-| # stars            | 1 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 975769.0 |
+| # stars            | 555.0 |
 
 ## Links
 - [Homepage](https://expo.github.io/vector-icons)
@@ -24,7 +24,7 @@ Built-in support for popular icon fonts and the tooling to create your own Icon 
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

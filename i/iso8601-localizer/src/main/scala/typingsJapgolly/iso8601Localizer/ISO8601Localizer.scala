@@ -1,18 +1,17 @@
 package typingsJapgolly.iso8601Localizer
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ISO8601Localizer")
-@js.native
-class ISO8601Localizer protected () extends localizer {
-  def this(userISO8601: String) = this()
-  /* CompleteClass */
-  override def localize(): String = js.native
-  /* CompleteClass */
-  override def returnAs(as: String): localizer = js.native
-  /* CompleteClass */
-  override def to(offset: Double): localizer = js.native
+trait ISO8601Localizer
+  extends StObject
+     with localizer
+object ISO8601Localizer {
+  
+  inline def apply(localize: CallbackTo[String], returnAs: String => localizer, to: Double => localizer): ISO8601Localizer = {
+    val __obj = js.Dynamic.literal(localize = localize.toJsFn, returnAs = js.Any.fromFunction1(returnAs), to = js.Any.fromFunction1(to))
+    __obj.asInstanceOf[ISO8601Localizer]
+  }
 }
-

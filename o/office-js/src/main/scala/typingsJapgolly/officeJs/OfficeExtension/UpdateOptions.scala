@@ -1,25 +1,30 @@
 package typingsJapgolly.officeJs.OfficeExtension
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides an option for suppressing an error when the object that is used to set multiple properties tries to set read-only properties.
   */
-trait UpdateOptions extends js.Object {
+trait UpdateOptions extends StObject {
+  
   /**
     * Throw an error if the passed-in property list includes read-only properties (default = true).
     */
   var throwOnReadOnly: js.UndefOr[Boolean] = js.undefined
 }
-
 object UpdateOptions {
-  @scala.inline
-  def apply(throwOnReadOnly: js.UndefOr[Boolean] = js.undefined): UpdateOptions = {
+  
+  inline def apply(): UpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(throwOnReadOnly)) __obj.updateDynamic("throwOnReadOnly")(throwOnReadOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOptions]
   }
+  
+  extension [Self <: UpdateOptions](x: Self) {
+    
+    inline def setThrowOnReadOnly(value: Boolean): Self = StObject.set(x, "throwOnReadOnly", value.asInstanceOf[js.Any])
+    
+    inline def setThrowOnReadOnlyUndefined: Self = StObject.set(x, "throwOnReadOnly", js.undefined)
+  }
 }
-

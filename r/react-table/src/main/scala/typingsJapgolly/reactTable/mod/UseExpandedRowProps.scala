@@ -1,18 +1,24 @@
 package typingsJapgolly.reactTable.mod
 
-import typingsJapgolly.reactTable.PartialTableExpandedToggl
+import typingsJapgolly.reactTable.anon.PartialTableExpandedToggl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseExpandedRowProps[D /* <: js.Object */] extends js.Object {
+trait UseExpandedRowProps[D /* <: js.Object */] extends StObject {
+  
   var canExpand: Boolean = js.native
+  
+  var depth: Double = js.native
+  
+  def getToggleRowExpandedProps(): TableExpandedToggleProps = js.native
+  def getToggleRowExpandedProps(props: PartialTableExpandedToggl): TableExpandedToggleProps = js.native
+  
   var isExpanded: Boolean = js.native
+  
   var subRows: js.Array[Row[D]] = js.native
-  def getExpandedToggleProps(): TableExpandedToggleProps = js.native
-  def getExpandedToggleProps(props: PartialTableExpandedToggl): TableExpandedToggleProps = js.native
-  def toggleExpanded(): Unit = js.native
-  def toggleExpanded(isExpanded: Boolean): Unit = js.native
+  
+  def toggleRowExpanded(): Unit = js.native
+  def toggleRowExpanded(value: Boolean): Unit = js.native
 }
-

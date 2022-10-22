@@ -1,13 +1,12 @@
-package typingsJapgolly.semanticUiSidebar
+package typingsJapgolly.semanticUiSidebar.SemanticUI
 
+import typingsJapgolly.semanticUiSidebar.SemanticUI.SidebarSettings.Param
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object SemanticUI {
-  type Sidebar = typingsJapgolly.semanticUiSidebar.SemanticUI.Sidebar_
-  /**
-    * @see {@link http://semantic-ui.com/modules/sidebar.html#/settings}
-    */
-  type SidebarSettings = typingsJapgolly.semanticUiSidebar.SemanticUI.SidebarSettings.Param
-}
+
+/**
+  * @see {@link http://semantic-ui.com/modules/sidebar.html#/settings}
+  */
+type SidebarSettings = Param

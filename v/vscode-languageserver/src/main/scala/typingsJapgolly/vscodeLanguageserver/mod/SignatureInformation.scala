@@ -1,17 +1,23 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "SignatureInformation")
-@js.native
-object SignatureInformation extends js.Object {
-  def create(label: String): typingsJapgolly.vscodeLanguageserverTypes.mod.SignatureInformation = js.native
-  def create(
+object SignatureInformation {
+  
+  @JSImport("vscode-languageserver", "SignatureInformation")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def create(
     label: String,
     documentation: String,
     parameters: typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation*
-  ): typingsJapgolly.vscodeLanguageserverTypes.mod.SignatureInformation = js.native
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.SignatureInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((scala.List(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).`++`(parameters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.SignatureInformation]
+  inline def create(
+    label: String,
+    documentation: Unit,
+    parameters: typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation*
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.SignatureInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((scala.List(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).`++`(parameters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.SignatureInformation]
 }
-

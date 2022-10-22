@@ -1,23 +1,22 @@
 package typingsJapgolly.grammarkdown.mod
 
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.AtToken
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ImportKeyword
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.AtToken
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ImportKeyword
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Import")
 @js.native
-class Import protected ()
-  extends typingsJapgolly.grammarkdown.nodesMod.Import {
+open class Import protected ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.Import {
   def this(
-    atToken: typingsJapgolly.grammarkdown.nodesMod.Token[AtToken],
-    importKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[ImportKeyword]
+    atToken: typingsJapgolly.grammarkdown.distNodesMod.Token[AtToken],
+    importKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[ImportKeyword]
   ) = this()
   def this(
-    atToken: typingsJapgolly.grammarkdown.nodesMod.Token[AtToken],
-    importKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[ImportKeyword],
-    path: typingsJapgolly.grammarkdown.nodesMod.StringLiteral
+    atToken: typingsJapgolly.grammarkdown.distNodesMod.Token[AtToken],
+    importKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[ImportKeyword],
+    path: typingsJapgolly.grammarkdown.distNodesMod.StringLiteral
   ) = this()
 }
-

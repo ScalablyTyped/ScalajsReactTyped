@@ -1,12 +1,15 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/toArray", JSImport.Namespace)
-@js.native
-object operatorToArrayMod extends js.Object {
-  def toArray[T](): js.Any = js.native
+object operatorToArrayMod {
+  
+  @JSImport("rxjs-compat/operator/toArray", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def toArray[T](): Observable_[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")().asInstanceOf[Observable_[js.Array[T]]]
 }
-

@@ -1,24 +1,36 @@
 package typingsJapgolly.firebaseFirestoreTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PersistenceSettings extends js.Object {
+trait PersistenceSettings extends StObject {
+  
+  var experimentalForceOwningTab: js.UndefOr[Boolean] = js.undefined
+  
   var experimentalTabSynchronization: js.UndefOr[Boolean] = js.undefined
+  
   var synchronizeTabs: js.UndefOr[Boolean] = js.undefined
 }
-
 object PersistenceSettings {
-  @scala.inline
-  def apply(
-    experimentalTabSynchronization: js.UndefOr[Boolean] = js.undefined,
-    synchronizeTabs: js.UndefOr[Boolean] = js.undefined
-  ): PersistenceSettings = {
+  
+  inline def apply(): PersistenceSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(experimentalTabSynchronization)) __obj.updateDynamic("experimentalTabSynchronization")(experimentalTabSynchronization.asInstanceOf[js.Any])
-    if (!js.isUndefined(synchronizeTabs)) __obj.updateDynamic("synchronizeTabs")(synchronizeTabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistenceSettings]
   }
+  
+  extension [Self <: PersistenceSettings](x: Self) {
+    
+    inline def setExperimentalForceOwningTab(value: Boolean): Self = StObject.set(x, "experimentalForceOwningTab", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalForceOwningTabUndefined: Self = StObject.set(x, "experimentalForceOwningTab", js.undefined)
+    
+    inline def setExperimentalTabSynchronization(value: Boolean): Self = StObject.set(x, "experimentalTabSynchronization", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalTabSynchronizationUndefined: Self = StObject.set(x, "experimentalTabSynchronization", js.undefined)
+    
+    inline def setSynchronizeTabs(value: Boolean): Self = StObject.set(x, "synchronizeTabs", value.asInstanceOf[js.Any])
+    
+    inline def setSynchronizeTabsUndefined: Self = StObject.set(x, "synchronizeTabs", js.undefined)
+  }
 }
-

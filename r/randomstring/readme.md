@@ -10,10 +10,10 @@ A module for generating random strings
 | ------------------ | :-------------: |
 | Full name          | randomstring |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 662 |
-| # downloads        | 9311247 |
-| # stars            | 24 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1594904.0 |
+| # stars            | 479.0 |
 
 ## Links
 - [Homepage](https://github.com/klughammer/node-randomstring)

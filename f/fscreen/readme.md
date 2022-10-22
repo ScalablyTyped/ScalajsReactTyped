@@ -4,21 +4,21 @@
 Typings are for version 1.0
 
 ## Library description:
-fullscreen spec api in a vendor agnostic wrapper
+Vendor agnostic access to the fullscreen spec api
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fscreen |
 | Keywords           | fullscreen, browser |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 784496 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 503594.3333333333 |
+| # stars            | 377.0 |
 
 ## Links
-- [Homepage](https://github.com/rafrex/fscreen#readme)
-- [Bugs](https://github.com/rafrex/fscreen/issues)
-- [Repository](https://github.com/rafrex/fscreen)
+- [Homepage](https://github.com/rafgraph/fscreen#readme)
+- [Bugs](https://github.com/rafgraph/fscreen/issues)
+- [Repository](https://github.com/rafgraph/fscreen)
 - [Npm](https://www.npmjs.com/package/fscreen)
     
 

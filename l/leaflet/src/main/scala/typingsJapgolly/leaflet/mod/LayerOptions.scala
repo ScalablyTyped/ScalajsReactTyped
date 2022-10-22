@@ -1,21 +1,30 @@
 package typingsJapgolly.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LayerOptions extends js.Object {
+trait LayerOptions extends StObject {
+  
   var attribution: js.UndefOr[String] = js.undefined
+  
   var pane: js.UndefOr[String] = js.undefined
 }
-
 object LayerOptions {
-  @scala.inline
-  def apply(attribution: String = null, pane: String = null): LayerOptions = {
+  
+  inline def apply(): LayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerOptions]
   }
+  
+  extension [Self <: LayerOptions](x: Self) {
+    
+    inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+    
+    inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+    
+    inline def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+  }
 }
-

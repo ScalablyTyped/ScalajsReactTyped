@@ -1,25 +1,20 @@
 package typingsJapgolly.std
 
-import typingsJapgolly.std.stdStrings.required_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.discouraged
   - typingsJapgolly.std.stdStrings.preferred
-  - typingsJapgolly.std.stdStrings.required_
+  - typingsJapgolly.std.stdStrings.required
 */
-trait UserVerificationRequirement extends js.Object
-
+trait UserVerificationRequirement extends StObject
 object UserVerificationRequirement {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def discouraged: typingsJapgolly.std.stdStrings.discouraged = this.cast("discouraged")
-  @scala.inline
-  def preferred: typingsJapgolly.std.stdStrings.preferred = this.cast("preferred")
-  @scala.inline
-  def required: required_ = this.cast("required")
+  
+  inline def discouraged: typingsJapgolly.std.stdStrings.discouraged = "discouraged".asInstanceOf[typingsJapgolly.std.stdStrings.discouraged]
+  
+  inline def preferred: typingsJapgolly.std.stdStrings.preferred = "preferred".asInstanceOf[typingsJapgolly.std.stdStrings.preferred]
+  
+  inline def required: typingsJapgolly.std.stdStrings.required = "required".asInstanceOf[typingsJapgolly.std.stdStrings.required]
 }
-

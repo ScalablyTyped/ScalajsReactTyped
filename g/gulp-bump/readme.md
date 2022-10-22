@@ -10,13 +10,13 @@ Bump npm versions with Gulp (gulpjs.com)
 | ------------------ | :-------------: |
 | Full name          | gulp-bump |
 | Keywords           | gulp, bump, semver, gulpplugin, version, versioning, gulp-version, gulp-plugin |
-| # releases         | 5 |
-| # dependents       | 251 |
-| # downloads        | 1217224 |
-| # stars            | 53 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 74165.33333333333 |
+| # stars            | 263.0 |
 
 ## Links
-- [Homepage](http://github.com/stevelacy/gulp-bump)
+- [Homepage](https://github.com/stevelacy/gulp-bump)
 - [Bugs](https://github.com/stevelacy/gulp-bump/issues)
 - [Repository](https://github.com/stevelacy/gulp-bump)
 - [Npm](https://www.npmjs.com/package/gulp-bump)

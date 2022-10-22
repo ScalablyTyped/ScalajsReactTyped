@@ -1,25 +1,10 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A Container represents a collection of display objects.
-  *
-  * It is the base class of all display objects that act as a container for other objects (like Sprites).
-  *
-  *```js
-  * let container = new PIXI.Container();
-  * container.addChild(sprite);
-  * ```
-  *
-  * @class
-  * @extends PIXI.DisplayObject
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "Container")
 @js.native
-class Container ()
-  extends typingsJapgolly.pixiJs.PIXI.Container
-
+open class Container[T /* <: typingsJapgolly.pixiDisplay.anon.DisplayObject */] ()
+  extends typingsJapgolly.pixiDisplay.mod.Container[T]

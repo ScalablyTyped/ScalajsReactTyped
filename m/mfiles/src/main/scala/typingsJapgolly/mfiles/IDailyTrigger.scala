@@ -1,19 +1,22 @@
 package typingsJapgolly.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDailyTrigger extends js.Object {
+trait IDailyTrigger extends StObject {
+  
   var DaysInterval: Double
 }
-
 object IDailyTrigger {
-  @scala.inline
-  def apply(DaysInterval: Double): IDailyTrigger = {
-    val __obj = js.Dynamic.literal(DaysInterval = DaysInterval.asInstanceOf[js.Any])
   
+  inline def apply(DaysInterval: Double): IDailyTrigger = {
+    val __obj = js.Dynamic.literal(DaysInterval = DaysInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDailyTrigger]
   }
+  
+  extension [Self <: IDailyTrigger](x: Self) {
+    
+    inline def setDaysInterval(value: Double): Self = StObject.set(x, "DaysInterval", value.asInstanceOf[js.Any])
+  }
 }
-

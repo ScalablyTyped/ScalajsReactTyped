@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A TextButton with a text label. You can set the background color and disable the button when
@@ -14,42 +13,61 @@ import scala.scalajs.js.annotation._
   *         .setOpenLink(CardService.newOpenLink()
   *             .setUrl("https://www.google.com"));
   */
-trait TextButton extends js.Object {
+trait TextButton extends StObject {
+  
   def setAuthorizationAction(action: AuthorizationAction): TextButton
+  
   def setBackgroundColor(backgroundColor: String): TextButton
+  
   def setComposeAction(action: Action, composedEmailType: ComposedEmailType): TextButton
+  
   def setDisabled(disabled: Boolean): TextButton
+  
   def setOnClickAction(action: Action): TextButton
+  
   def setOnClickOpenLinkAction(action: Action): TextButton
+  
   def setOpenLink(openLink: OpenLink): TextButton
+  
   def setText(text: String): TextButton
+  
   def setTextButtonStyle(textButtonStyle: TextButtonStyle): TextButton
 }
-
 object TextButton {
-  @scala.inline
-  def apply(
-    setAuthorizationAction: AuthorizationAction => CallbackTo[TextButton],
-    setBackgroundColor: String => CallbackTo[TextButton],
-    setComposeAction: (Action, ComposedEmailType) => CallbackTo[TextButton],
-    setDisabled: Boolean => CallbackTo[TextButton],
-    setOnClickAction: Action => CallbackTo[TextButton],
-    setOnClickOpenLinkAction: Action => CallbackTo[TextButton],
-    setOpenLink: OpenLink => CallbackTo[TextButton],
-    setText: String => CallbackTo[TextButton],
-    setTextButtonStyle: TextButtonStyle => CallbackTo[TextButton]
+  
+  inline def apply(
+    setAuthorizationAction: AuthorizationAction => TextButton,
+    setBackgroundColor: String => TextButton,
+    setComposeAction: (Action, ComposedEmailType) => TextButton,
+    setDisabled: Boolean => TextButton,
+    setOnClickAction: Action => TextButton,
+    setOnClickOpenLinkAction: Action => TextButton,
+    setOpenLink: OpenLink => TextButton,
+    setText: String => TextButton,
+    setTextButtonStyle: TextButtonStyle => TextButton
   ): TextButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setAuthorizationAction")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.AuthorizationAction) => setAuthorizationAction(t0).runNow()))
-    __obj.updateDynamic("setBackgroundColor")(js.Any.fromFunction1((t0: java.lang.String) => setBackgroundColor(t0).runNow()))
-    __obj.updateDynamic("setComposeAction")(js.Any.fromFunction2((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Action, t1: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.ComposedEmailType) => setComposeAction(t0, t1).runNow()))
-    __obj.updateDynamic("setDisabled")(js.Any.fromFunction1((t0: scala.Boolean) => setDisabled(t0).runNow()))
-    __obj.updateDynamic("setOnClickAction")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Action) => setOnClickAction(t0).runNow()))
-    __obj.updateDynamic("setOnClickOpenLinkAction")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Action) => setOnClickOpenLinkAction(t0).runNow()))
-    __obj.updateDynamic("setOpenLink")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.OpenLink) => setOpenLink(t0).runNow()))
-    __obj.updateDynamic("setText")(js.Any.fromFunction1((t0: java.lang.String) => setText(t0).runNow()))
-    __obj.updateDynamic("setTextButtonStyle")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.TextButtonStyle) => setTextButtonStyle(t0).runNow()))
+    val __obj = js.Dynamic.literal(setAuthorizationAction = js.Any.fromFunction1(setAuthorizationAction), setBackgroundColor = js.Any.fromFunction1(setBackgroundColor), setComposeAction = js.Any.fromFunction2(setComposeAction), setDisabled = js.Any.fromFunction1(setDisabled), setOnClickAction = js.Any.fromFunction1(setOnClickAction), setOnClickOpenLinkAction = js.Any.fromFunction1(setOnClickOpenLinkAction), setOpenLink = js.Any.fromFunction1(setOpenLink), setText = js.Any.fromFunction1(setText), setTextButtonStyle = js.Any.fromFunction1(setTextButtonStyle))
     __obj.asInstanceOf[TextButton]
   }
+  
+  extension [Self <: TextButton](x: Self) {
+    
+    inline def setSetAuthorizationAction(value: AuthorizationAction => TextButton): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
+    
+    inline def setSetBackgroundColor(value: String => TextButton): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction1(value))
+    
+    inline def setSetComposeAction(value: (Action, ComposedEmailType) => TextButton): Self = StObject.set(x, "setComposeAction", js.Any.fromFunction2(value))
+    
+    inline def setSetDisabled(value: Boolean => TextButton): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
+    
+    inline def setSetOnClickAction(value: Action => TextButton): Self = StObject.set(x, "setOnClickAction", js.Any.fromFunction1(value))
+    
+    inline def setSetOnClickOpenLinkAction(value: Action => TextButton): Self = StObject.set(x, "setOnClickOpenLinkAction", js.Any.fromFunction1(value))
+    
+    inline def setSetOpenLink(value: OpenLink => TextButton): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
+    
+    inline def setSetText(value: String => TextButton): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    
+    inline def setSetTextButtonStyle(value: TextButtonStyle => TextButton): Self = StObject.set(x, "setTextButtonStyle", js.Any.fromFunction1(value))
+  }
 }
-

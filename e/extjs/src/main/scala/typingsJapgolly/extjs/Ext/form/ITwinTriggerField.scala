@@ -5,87 +5,128 @@ import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.extjs.Ext.ICompositeElement
 import typingsJapgolly.extjs.Ext.IElement
 import typingsJapgolly.extjs.Ext.IEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ITwinTriggerField
-  extends typingsJapgolly.extjs.Ext.form.field.IText {
+  extends StObject
+     with typingsJapgolly.extjs.Ext.form.field.IText {
+  
   /** [Config Option] (Boolean) */
   var editable: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Generates the arguments for the field decorations rendering template
-  		* @returns Object The template arguments
-  		*/
+    * @returns Object The template arguments
+    */
   @JSName("getLabelableRenderData")
-  var getLabelableRenderData_ITwinTriggerField: js.UndefOr[js.Function0[_]] = js.undefined
+  var getLabelableRenderData_ITwinTriggerField: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Get the total width of the trigger button area
-  		* @returns Number The total trigger width
-  		*/
+    * @returns Number The total trigger width
+    */
   var getTriggerWidth: js.UndefOr[js.Function0[Double]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var hideTrigger: js.UndefOr[Boolean] = js.undefined
+  
   /** [Property] (Ext.Element) */
   var inputCell: js.UndefOr[IElement] = js.undefined
+  
   /** [Method] The function that should handle the trigger s click event
-  		* @param e Ext.EventObject
-  		*/
+    * @param e Ext.EventObject
+    */
   var onTriggerClick: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var repeatTriggerClick: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Sets the editable state of this field
-  		* @param editable Boolean True to allow the user to directly edit the field text. If false is passed, the user will only be able to modify the field using the trigger. Will also add a click event to the text field which will call the trigger.
-  		*/
+    * @param editable Boolean True to allow the user to directly edit the field text. If false is passed, the user will only be able to modify the field using the trigger. Will also add a click event to the text field which will call the trigger.
+    */
   var setEditable: js.UndefOr[js.Function1[/* editable */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Config Option] (String) */
   var triggerBaseCls: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var triggerCls: js.UndefOr[String] = js.undefined
+  
   /** [Property] (Ext.CompositeElement) */
   var triggerEl: js.UndefOr[ICompositeElement] = js.undefined
+  
   /** [Config Option] (String) */
   var triggerNoEditCls: js.UndefOr[String] = js.undefined
+  
   /** [Property] (Ext.Element) */
   var triggerWrap: js.UndefOr[IElement] = js.undefined
+  
   /** [Config Option] (String) */
   var triggerWrapCls: js.UndefOr[String] = js.undefined
 }
-
 object ITwinTriggerField {
-  @scala.inline
-  def apply(
-    IText: typingsJapgolly.extjs.Ext.form.field.IText = null,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    getLabelableRenderData: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getTriggerWidth: js.UndefOr[CallbackTo[Double]] = js.undefined,
-    hideTrigger: js.UndefOr[Boolean] = js.undefined,
-    inputCell: IElement = null,
-    onTriggerClick: /* e */ js.UndefOr[IEventObject] => Callback = null,
-    repeatTriggerClick: js.UndefOr[Boolean] = js.undefined,
-    setEditable: /* editable */ js.UndefOr[Boolean] => Callback = null,
-    triggerBaseCls: String = null,
-    triggerCls: String = null,
-    triggerEl: ICompositeElement = null,
-    triggerNoEditCls: String = null,
-    triggerWrap: IElement = null,
-    triggerWrapCls: String = null
-  ): ITwinTriggerField = {
+  
+  inline def apply(): ITwinTriggerField = {
     val __obj = js.Dynamic.literal()
-    if (IText != null) js.Dynamic.global.Object.assign(__obj, IText)
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    getLabelableRenderData.foreach(p => __obj.updateDynamic("getLabelableRenderData")(p.toJsFn))
-    getTriggerWidth.foreach(p => __obj.updateDynamic("getTriggerWidth")(p.toJsFn))
-    if (!js.isUndefined(hideTrigger)) __obj.updateDynamic("hideTrigger")(hideTrigger.asInstanceOf[js.Any])
-    if (inputCell != null) __obj.updateDynamic("inputCell")(inputCell.asInstanceOf[js.Any])
-    if (onTriggerClick != null) __obj.updateDynamic("onTriggerClick")(js.Any.fromFunction1((t0: /* e */ js.UndefOr[typingsJapgolly.extjs.Ext.IEventObject]) => onTriggerClick(t0).runNow()))
-    if (!js.isUndefined(repeatTriggerClick)) __obj.updateDynamic("repeatTriggerClick")(repeatTriggerClick.asInstanceOf[js.Any])
-    if (setEditable != null) __obj.updateDynamic("setEditable")(js.Any.fromFunction1((t0: /* editable */ js.UndefOr[scala.Boolean]) => setEditable(t0).runNow()))
-    if (triggerBaseCls != null) __obj.updateDynamic("triggerBaseCls")(triggerBaseCls.asInstanceOf[js.Any])
-    if (triggerCls != null) __obj.updateDynamic("triggerCls")(triggerCls.asInstanceOf[js.Any])
-    if (triggerEl != null) __obj.updateDynamic("triggerEl")(triggerEl.asInstanceOf[js.Any])
-    if (triggerNoEditCls != null) __obj.updateDynamic("triggerNoEditCls")(triggerNoEditCls.asInstanceOf[js.Any])
-    if (triggerWrap != null) __obj.updateDynamic("triggerWrap")(triggerWrap.asInstanceOf[js.Any])
-    if (triggerWrapCls != null) __obj.updateDynamic("triggerWrapCls")(triggerWrapCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITwinTriggerField]
   }
+  
+  extension [Self <: ITwinTriggerField](x: Self) {
+    
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setGetLabelableRenderData(value: CallbackTo[Any]): Self = StObject.set(x, "getLabelableRenderData", value.toJsFn)
+    
+    inline def setGetLabelableRenderDataUndefined: Self = StObject.set(x, "getLabelableRenderData", js.undefined)
+    
+    inline def setGetTriggerWidth(value: CallbackTo[Double]): Self = StObject.set(x, "getTriggerWidth", value.toJsFn)
+    
+    inline def setGetTriggerWidthUndefined: Self = StObject.set(x, "getTriggerWidth", js.undefined)
+    
+    inline def setHideTrigger(value: Boolean): Self = StObject.set(x, "hideTrigger", value.asInstanceOf[js.Any])
+    
+    inline def setHideTriggerUndefined: Self = StObject.set(x, "hideTrigger", js.undefined)
+    
+    inline def setInputCell(value: IElement): Self = StObject.set(x, "inputCell", value.asInstanceOf[js.Any])
+    
+    inline def setInputCellUndefined: Self = StObject.set(x, "inputCell", js.undefined)
+    
+    inline def setOnTriggerClick(value: /* e */ js.UndefOr[IEventObject] => Callback): Self = StObject.set(x, "onTriggerClick", js.Any.fromFunction1((t0: /* e */ js.UndefOr[IEventObject]) => value(t0).runNow()))
+    
+    inline def setOnTriggerClickUndefined: Self = StObject.set(x, "onTriggerClick", js.undefined)
+    
+    inline def setRepeatTriggerClick(value: Boolean): Self = StObject.set(x, "repeatTriggerClick", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatTriggerClickUndefined: Self = StObject.set(x, "repeatTriggerClick", js.undefined)
+    
+    inline def setSetEditable(value: /* editable */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setEditable", js.Any.fromFunction1((t0: /* editable */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetEditableUndefined: Self = StObject.set(x, "setEditable", js.undefined)
+    
+    inline def setTriggerBaseCls(value: String): Self = StObject.set(x, "triggerBaseCls", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerBaseClsUndefined: Self = StObject.set(x, "triggerBaseCls", js.undefined)
+    
+    inline def setTriggerCls(value: String): Self = StObject.set(x, "triggerCls", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerClsUndefined: Self = StObject.set(x, "triggerCls", js.undefined)
+    
+    inline def setTriggerEl(value: ICompositeElement): Self = StObject.set(x, "triggerEl", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerElUndefined: Self = StObject.set(x, "triggerEl", js.undefined)
+    
+    inline def setTriggerNoEditCls(value: String): Self = StObject.set(x, "triggerNoEditCls", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerNoEditClsUndefined: Self = StObject.set(x, "triggerNoEditCls", js.undefined)
+    
+    inline def setTriggerWrap(value: IElement): Self = StObject.set(x, "triggerWrap", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerWrapCls(value: String): Self = StObject.set(x, "triggerWrapCls", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerWrapClsUndefined: Self = StObject.set(x, "triggerWrapCls", js.undefined)
+    
+    inline def setTriggerWrapUndefined: Self = StObject.set(x, "triggerWrap", js.undefined)
+  }
 }
-

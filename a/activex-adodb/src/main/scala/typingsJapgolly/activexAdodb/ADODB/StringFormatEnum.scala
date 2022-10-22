@@ -1,14 +1,11 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StringFormatEnum {
-  @scala.inline
-  def adClipString: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adClipString: `2` = 2.asInstanceOf[`2`]
 }
-

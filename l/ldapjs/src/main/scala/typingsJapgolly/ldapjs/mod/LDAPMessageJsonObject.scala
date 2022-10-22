@@ -1,29 +1,37 @@
 package typingsJapgolly.ldapjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LDAPMessageJsonObject
-  extends /* k */ StringDictionary[js.Any] {
+  extends StObject
+     with /* k */ StringDictionary[Any] {
+  
   var controls: js.Array[Control]
+  
   var messageID: Double
+  
   var protocolOp: js.UndefOr[String] = js.undefined
 }
-
 object LDAPMessageJsonObject {
-  @scala.inline
-  def apply(
-    controls: js.Array[Control],
-    messageID: Double,
-    StringDictionary: /* k */ StringDictionary[js.Any] = null,
-    protocolOp: String = null
-  ): LDAPMessageJsonObject = {
+  
+  inline def apply(controls: js.Array[Control], messageID: Double): LDAPMessageJsonObject = {
     val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], messageID = messageID.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (protocolOp != null) __obj.updateDynamic("protocolOp")(protocolOp.asInstanceOf[js.Any])
     __obj.asInstanceOf[LDAPMessageJsonObject]
   }
+  
+  extension [Self <: LDAPMessageJsonObject](x: Self) {
+    
+    inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    
+    inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value*))
+    
+    inline def setMessageID(value: Double): Self = StObject.set(x, "messageID", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolOp(value: String): Self = StObject.set(x, "protocolOp", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolOpUndefined: Self = StObject.set(x, "protocolOp", js.undefined)
+  }
 }
-

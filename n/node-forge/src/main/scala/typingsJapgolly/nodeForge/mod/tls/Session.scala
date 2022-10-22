@@ -3,40 +3,61 @@ package typingsJapgolly.nodeForge.mod.tls
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.nodeForge.mod.md.MessageDigest
 import typingsJapgolly.nodeForge.mod.pki.Certificate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Session extends js.Object {
+trait Session extends StObject {
+  
   var cipherSuite: CipherSuite | Null
+  
   var clientCertificate: Certificate | Null
+  
   var compressionMethod: CompressionMethod | Null
+  
   var extensions: StringDictionary[js.Object]
+  
   var md5: MessageDigest
+  
   var serverCertificate: Certificate | Null
+  
   var sha1: MessageDigest
+  
   var version: ProtocolVersion | Null
 }
-
 object Session {
-  @scala.inline
-  def apply(
-    extensions: StringDictionary[js.Object],
-    md5: MessageDigest,
-    sha1: MessageDigest,
-    cipherSuite: CipherSuite = null,
-    clientCertificate: Certificate = null,
-    compressionMethod: CompressionMethod = null,
-    serverCertificate: Certificate = null,
-    version: ProtocolVersion = null
-  ): Session = {
-    val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], md5 = md5.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any])
-    if (cipherSuite != null) __obj.updateDynamic("cipherSuite")(cipherSuite.asInstanceOf[js.Any])
-    if (clientCertificate != null) __obj.updateDynamic("clientCertificate")(clientCertificate.asInstanceOf[js.Any])
-    if (compressionMethod != null) __obj.updateDynamic("compressionMethod")(compressionMethod.asInstanceOf[js.Any])
-    if (serverCertificate != null) __obj.updateDynamic("serverCertificate")(serverCertificate.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+  
+  inline def apply(extensions: StringDictionary[js.Object], md5: MessageDigest, sha1: MessageDigest): Session = {
+    val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], md5 = md5.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any], cipherSuite = null, clientCertificate = null, compressionMethod = null, serverCertificate = null, version = null)
     __obj.asInstanceOf[Session]
   }
+  
+  extension [Self <: Session](x: Self) {
+    
+    inline def setCipherSuite(value: CipherSuite): Self = StObject.set(x, "cipherSuite", value.asInstanceOf[js.Any])
+    
+    inline def setCipherSuiteNull: Self = StObject.set(x, "cipherSuite", null)
+    
+    inline def setClientCertificate(value: Certificate): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
+    
+    inline def setClientCertificateNull: Self = StObject.set(x, "clientCertificate", null)
+    
+    inline def setCompressionMethod(value: CompressionMethod): Self = StObject.set(x, "compressionMethod", value.asInstanceOf[js.Any])
+    
+    inline def setCompressionMethodNull: Self = StObject.set(x, "compressionMethod", null)
+    
+    inline def setExtensions(value: StringDictionary[js.Object]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    
+    inline def setMd5(value: MessageDigest): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
+    
+    inline def setServerCertificate(value: Certificate): Self = StObject.set(x, "serverCertificate", value.asInstanceOf[js.Any])
+    
+    inline def setServerCertificateNull: Self = StObject.set(x, "serverCertificate", null)
+    
+    inline def setSha1(value: MessageDigest): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: ProtocolVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
+  }
 }
-

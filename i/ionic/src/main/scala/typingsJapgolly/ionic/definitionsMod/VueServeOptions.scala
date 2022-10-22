@@ -1,18 +1,22 @@
 package typingsJapgolly.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VueServeOptions extends ServeOptions {
+trait VueServeOptions
+  extends StObject
+     with ServeOptions {
+  
   var configuration: js.UndefOr[String] = js.undefined
+  
   var sourcemaps: js.UndefOr[Boolean] = js.undefined
+  
   var ssl: js.UndefOr[Boolean] = js.undefined
 }
-
 object VueServeOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     `--`: js.Array[String],
     address: String,
     devapp: Boolean,
@@ -23,29 +27,25 @@ object VueServeOptions {
     livereload: Boolean,
     open: Boolean,
     port: Double,
-    proxy: Boolean,
-    browser: String = null,
-    browserOption: String = null,
-    configuration: String = null,
-    externalAddressRequired: js.UndefOr[Boolean] = js.undefined,
-    platform: String = null,
-    project: String = null,
-    sourcemaps: js.UndefOr[Boolean] = js.undefined,
-    ssl: js.UndefOr[Boolean] = js.undefined,
-    verbose: js.UndefOr[Boolean] = js.undefined
+    proxy: Boolean
   ): VueServeOptions = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], devapp = devapp.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], lab = lab.asInstanceOf[js.Any], labHost = labHost.asInstanceOf[js.Any], labPort = labPort.asInstanceOf[js.Any], livereload = livereload.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any])
     __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
-    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
-    if (browserOption != null) __obj.updateDynamic("browserOption")(browserOption.asInstanceOf[js.Any])
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalAddressRequired)) __obj.updateDynamic("externalAddressRequired")(externalAddressRequired.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourcemaps)) __obj.updateDynamic("sourcemaps")(sourcemaps.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[VueServeOptions]
   }
+  
+  extension [Self <: VueServeOptions](x: Self) {
+    
+    inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    
+    inline def setSourcemaps(value: Boolean): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
+    
+    inline def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
+    
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+  }
 }
-

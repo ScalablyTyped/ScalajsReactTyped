@@ -1,7 +1,7 @@
 
 # Scala.js typings for callsites
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
 Get callsites from the V8 stack trace API
@@ -10,15 +10,12 @@ Get callsites from the V8 stack trace API
 | ------------------ | :-------------: |
 | Full name          | callsites |
 | Keywords           | stacktrace, v8, callsite, callsites, stack, trace, function, file, line, debug |
-| # releases         | 3 |
-| # dependents       | 145 |
-| # downloads        | 616476723 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4247386233333334E8 |
+| # stars            | 220.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/callsites#readme)
-- [Bugs](https://github.com/sindresorhus/callsites/issues)
-- [Repository](https://github.com/sindresorhus/callsites)
 - [Npm](https://www.npmjs.com/package/callsites)
     
 

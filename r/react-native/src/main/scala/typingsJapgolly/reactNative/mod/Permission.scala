@@ -1,8 +1,8 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_CALENDAR
@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_CONTACTS
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_CONTACTS
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotGET_ACCOUNTS
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_BACKGROUND_LOCATION
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_FINE_LOCATION
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_COARSE_LOCATION
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECORD_AUDIO
@@ -19,69 +20,118 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_CALL_LOG
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_CALL_LOG
   - typingsJapgolly.reactNative.reactNativeStrings.comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL
+  - typingsJapgolly.reactNative.reactNativeStrings.comDotandroidDotvoicemailDotpermissionDotREAD_VOICEMAIL
+  - typingsJapgolly.reactNative.reactNativeStrings.comDotandroidDotvoicemailDotpermissionDotWRITE_VOICEMAIL
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotUSE_SIP
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotPROCESS_OUTGOING_CALLS
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBODY_SENSORS
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBODY_SENSORS_BACKGROUND
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotSEND_SMS
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECEIVE_SMS
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_SMS
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECEIVE_WAP_PUSH
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECEIVE_MMS
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_EXTERNAL_STORAGE
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_MEDIA_IMAGES
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_MEDIA_VIDEO
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_MEDIA_AUDIO
   - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_EXTERNAL_STORAGE
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBLUETOOTH_CONNECT
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBLUETOOTH_SCAN
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBLUETOOTH_ADVERTISE
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_MEDIA_LOCATION
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCEPT_HANDOVER
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACTIVITY_RECOGNITION
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotANSWER_PHONE_CALLS
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_PHONE_NUMBERS
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotUWB_RANGING
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotPOST_NOTIFICATIONS
+  - typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotNEARBY_WIFI_DEVICES
 */
-trait Permission extends js.Object
-
+trait Permission extends StObject
 object Permission {
-  @scala.inline
-  def androidDotpermissionDotACCESS_COARSE_LOCATION: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_COARSE_LOCATION = this.cast("android.permission.ACCESS_COARSE_LOCATION")
-  @scala.inline
-  def androidDotpermissionDotACCESS_FINE_LOCATION: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_FINE_LOCATION = this.cast("android.permission.ACCESS_FINE_LOCATION")
-  @scala.inline
-  def androidDotpermissionDotBODY_SENSORS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBODY_SENSORS = this.cast("android.permission.BODY_SENSORS")
-  @scala.inline
-  def androidDotpermissionDotCALL_PHONE: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotCALL_PHONE = this.cast("android.permission.CALL_PHONE")
-  @scala.inline
-  def androidDotpermissionDotCAMERA: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotCAMERA = this.cast("android.permission.CAMERA")
-  @scala.inline
-  def androidDotpermissionDotGET_ACCOUNTS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotGET_ACCOUNTS = this.cast("android.permission.GET_ACCOUNTS")
-  @scala.inline
-  def androidDotpermissionDotPROCESS_OUTGOING_CALLS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotPROCESS_OUTGOING_CALLS = this.cast("android.permission.PROCESS_OUTGOING_CALLS")
-  @scala.inline
-  def androidDotpermissionDotREAD_CALENDAR: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_CALENDAR = this.cast("android.permission.READ_CALENDAR")
-  @scala.inline
-  def androidDotpermissionDotREAD_CALL_LOG: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_CALL_LOG = this.cast("android.permission.READ_CALL_LOG")
-  @scala.inline
-  def androidDotpermissionDotREAD_CONTACTS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_CONTACTS = this.cast("android.permission.READ_CONTACTS")
-  @scala.inline
-  def androidDotpermissionDotREAD_EXTERNAL_STORAGE: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_EXTERNAL_STORAGE = this.cast("android.permission.READ_EXTERNAL_STORAGE")
-  @scala.inline
-  def androidDotpermissionDotREAD_PHONE_STATE: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_PHONE_STATE = this.cast("android.permission.READ_PHONE_STATE")
-  @scala.inline
-  def androidDotpermissionDotREAD_SMS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_SMS = this.cast("android.permission.READ_SMS")
-  @scala.inline
-  def androidDotpermissionDotRECEIVE_MMS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECEIVE_MMS = this.cast("android.permission.RECEIVE_MMS")
-  @scala.inline
-  def androidDotpermissionDotRECEIVE_SMS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECEIVE_SMS = this.cast("android.permission.RECEIVE_SMS")
-  @scala.inline
-  def androidDotpermissionDotRECEIVE_WAP_PUSH: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECEIVE_WAP_PUSH = this.cast("android.permission.RECEIVE_WAP_PUSH")
-  @scala.inline
-  def androidDotpermissionDotRECORD_AUDIO: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECORD_AUDIO = this.cast("android.permission.RECORD_AUDIO")
-  @scala.inline
-  def androidDotpermissionDotSEND_SMS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotSEND_SMS = this.cast("android.permission.SEND_SMS")
-  @scala.inline
-  def androidDotpermissionDotUSE_SIP: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotUSE_SIP = this.cast("android.permission.USE_SIP")
-  @scala.inline
-  def androidDotpermissionDotWRITE_CALENDAR: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_CALENDAR = this.cast("android.permission.WRITE_CALENDAR")
-  @scala.inline
-  def androidDotpermissionDotWRITE_CALL_LOG: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_CALL_LOG = this.cast("android.permission.WRITE_CALL_LOG")
-  @scala.inline
-  def androidDotpermissionDotWRITE_CONTACTS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_CONTACTS = this.cast("android.permission.WRITE_CONTACTS")
-  @scala.inline
-  def androidDotpermissionDotWRITE_EXTERNAL_STORAGE: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_EXTERNAL_STORAGE = this.cast("android.permission.WRITE_EXTERNAL_STORAGE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL: typingsJapgolly.reactNative.reactNativeStrings.comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL = this.cast("com.android.voicemail.permission.ADD_VOICEMAIL")
+  
+  inline def androidDotpermissionDotACCEPT_HANDOVER: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCEPT_HANDOVER = "android.permission.ACCEPT_HANDOVER".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCEPT_HANDOVER]
+  
+  inline def androidDotpermissionDotACCESS_BACKGROUND_LOCATION: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_BACKGROUND_LOCATION = "android.permission.ACCESS_BACKGROUND_LOCATION".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_BACKGROUND_LOCATION]
+  
+  inline def androidDotpermissionDotACCESS_COARSE_LOCATION: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_COARSE_LOCATION = "android.permission.ACCESS_COARSE_LOCATION".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_COARSE_LOCATION]
+  
+  inline def androidDotpermissionDotACCESS_FINE_LOCATION: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_FINE_LOCATION = "android.permission.ACCESS_FINE_LOCATION".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_FINE_LOCATION]
+  
+  inline def androidDotpermissionDotACCESS_MEDIA_LOCATION: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_MEDIA_LOCATION = "android.permission.ACCESS_MEDIA_LOCATION".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACCESS_MEDIA_LOCATION]
+  
+  inline def androidDotpermissionDotACTIVITY_RECOGNITION: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACTIVITY_RECOGNITION = "android.permission.ACTIVITY_RECOGNITION".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotACTIVITY_RECOGNITION]
+  
+  inline def androidDotpermissionDotANSWER_PHONE_CALLS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotANSWER_PHONE_CALLS = "android.permission.ANSWER_PHONE_CALLS".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotANSWER_PHONE_CALLS]
+  
+  inline def androidDotpermissionDotBLUETOOTH_ADVERTISE: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBLUETOOTH_ADVERTISE = "android.permission.BLUETOOTH_ADVERTISE".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBLUETOOTH_ADVERTISE]
+  
+  inline def androidDotpermissionDotBLUETOOTH_CONNECT: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBLUETOOTH_CONNECT = "android.permission.BLUETOOTH_CONNECT".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBLUETOOTH_CONNECT]
+  
+  inline def androidDotpermissionDotBLUETOOTH_SCAN: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBLUETOOTH_SCAN = "android.permission.BLUETOOTH_SCAN".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBLUETOOTH_SCAN]
+  
+  inline def androidDotpermissionDotBODY_SENSORS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBODY_SENSORS = "android.permission.BODY_SENSORS".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBODY_SENSORS]
+  
+  inline def androidDotpermissionDotBODY_SENSORS_BACKGROUND: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBODY_SENSORS_BACKGROUND = "android.permission.BODY_SENSORS_BACKGROUND".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotBODY_SENSORS_BACKGROUND]
+  
+  inline def androidDotpermissionDotCALL_PHONE: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotCALL_PHONE = "android.permission.CALL_PHONE".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotCALL_PHONE]
+  
+  inline def androidDotpermissionDotCAMERA: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotCAMERA = "android.permission.CAMERA".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotCAMERA]
+  
+  inline def androidDotpermissionDotGET_ACCOUNTS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotGET_ACCOUNTS = "android.permission.GET_ACCOUNTS".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotGET_ACCOUNTS]
+  
+  inline def androidDotpermissionDotNEARBY_WIFI_DEVICES: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotNEARBY_WIFI_DEVICES = "android.permission.NEARBY_WIFI_DEVICES".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotNEARBY_WIFI_DEVICES]
+  
+  inline def androidDotpermissionDotPOST_NOTIFICATIONS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotPOST_NOTIFICATIONS = "android.permission.POST_NOTIFICATIONS".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotPOST_NOTIFICATIONS]
+  
+  inline def androidDotpermissionDotPROCESS_OUTGOING_CALLS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotPROCESS_OUTGOING_CALLS = "android.permission.PROCESS_OUTGOING_CALLS".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotPROCESS_OUTGOING_CALLS]
+  
+  inline def androidDotpermissionDotREAD_CALENDAR: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_CALENDAR = "android.permission.READ_CALENDAR".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_CALENDAR]
+  
+  inline def androidDotpermissionDotREAD_CALL_LOG: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_CALL_LOG = "android.permission.READ_CALL_LOG".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_CALL_LOG]
+  
+  inline def androidDotpermissionDotREAD_CONTACTS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_CONTACTS = "android.permission.READ_CONTACTS".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_CONTACTS]
+  
+  inline def androidDotpermissionDotREAD_EXTERNAL_STORAGE: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_EXTERNAL_STORAGE = "android.permission.READ_EXTERNAL_STORAGE".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_EXTERNAL_STORAGE]
+  
+  inline def androidDotpermissionDotREAD_MEDIA_AUDIO: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_MEDIA_AUDIO = "android.permission.READ_MEDIA_AUDIO".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_MEDIA_AUDIO]
+  
+  inline def androidDotpermissionDotREAD_MEDIA_IMAGES: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_MEDIA_IMAGES = "android.permission.READ_MEDIA_IMAGES".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_MEDIA_IMAGES]
+  
+  inline def androidDotpermissionDotREAD_MEDIA_VIDEO: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_MEDIA_VIDEO = "android.permission.READ_MEDIA_VIDEO".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_MEDIA_VIDEO]
+  
+  inline def androidDotpermissionDotREAD_PHONE_NUMBERS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_PHONE_NUMBERS = "android.permission.READ_PHONE_NUMBERS".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_PHONE_NUMBERS]
+  
+  inline def androidDotpermissionDotREAD_PHONE_STATE: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_PHONE_STATE = "android.permission.READ_PHONE_STATE".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_PHONE_STATE]
+  
+  inline def androidDotpermissionDotREAD_SMS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_SMS = "android.permission.READ_SMS".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotREAD_SMS]
+  
+  inline def androidDotpermissionDotRECEIVE_MMS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECEIVE_MMS = "android.permission.RECEIVE_MMS".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECEIVE_MMS]
+  
+  inline def androidDotpermissionDotRECEIVE_SMS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECEIVE_SMS = "android.permission.RECEIVE_SMS".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECEIVE_SMS]
+  
+  inline def androidDotpermissionDotRECEIVE_WAP_PUSH: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECEIVE_WAP_PUSH = "android.permission.RECEIVE_WAP_PUSH".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECEIVE_WAP_PUSH]
+  
+  inline def androidDotpermissionDotRECORD_AUDIO: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECORD_AUDIO = "android.permission.RECORD_AUDIO".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotRECORD_AUDIO]
+  
+  inline def androidDotpermissionDotSEND_SMS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotSEND_SMS = "android.permission.SEND_SMS".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotSEND_SMS]
+  
+  inline def androidDotpermissionDotUSE_SIP: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotUSE_SIP = "android.permission.USE_SIP".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotUSE_SIP]
+  
+  inline def androidDotpermissionDotUWB_RANGING: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotUWB_RANGING = "android.permission.UWB_RANGING".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotUWB_RANGING]
+  
+  inline def androidDotpermissionDotWRITE_CALENDAR: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_CALENDAR = "android.permission.WRITE_CALENDAR".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_CALENDAR]
+  
+  inline def androidDotpermissionDotWRITE_CALL_LOG: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_CALL_LOG = "android.permission.WRITE_CALL_LOG".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_CALL_LOG]
+  
+  inline def androidDotpermissionDotWRITE_CONTACTS: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_CONTACTS = "android.permission.WRITE_CONTACTS".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_CONTACTS]
+  
+  inline def androidDotpermissionDotWRITE_EXTERNAL_STORAGE: typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_EXTERNAL_STORAGE = "android.permission.WRITE_EXTERNAL_STORAGE".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.androidDotpermissionDotWRITE_EXTERNAL_STORAGE]
+  
+  inline def comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL: typingsJapgolly.reactNative.reactNativeStrings.comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL = "com.android.voicemail.permission.ADD_VOICEMAIL".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL]
+  
+  inline def comDotandroidDotvoicemailDotpermissionDotREAD_VOICEMAIL: typingsJapgolly.reactNative.reactNativeStrings.comDotandroidDotvoicemailDotpermissionDotREAD_VOICEMAIL = "com.android.voicemail.permission.READ_VOICEMAIL".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.comDotandroidDotvoicemailDotpermissionDotREAD_VOICEMAIL]
+  
+  inline def comDotandroidDotvoicemailDotpermissionDotWRITE_VOICEMAIL: typingsJapgolly.reactNative.reactNativeStrings.comDotandroidDotvoicemailDotpermissionDotWRITE_VOICEMAIL = "com.android.voicemail.permission.WRITE_VOICEMAIL".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.comDotandroidDotvoicemailDotpermissionDotWRITE_VOICEMAIL]
 }
-

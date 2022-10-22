@@ -9,10 +9,10 @@ generate and send Wake-on-LAN magic packets
 | ------------------ | :-------------: |
 | Full name          | wake_on_lan |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 51 |
-| # downloads        | 152290 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 387380.0 |
+| # stars            | 192.0 |
 
 ## Links
 - [Homepage](https://github.com/agnat/node_wake_on_lan#readme)

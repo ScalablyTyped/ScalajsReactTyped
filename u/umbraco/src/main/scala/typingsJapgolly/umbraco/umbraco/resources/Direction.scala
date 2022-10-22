@@ -1,32 +1,25 @@
 package typingsJapgolly.umbraco.umbraco.resources
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Direction extends js.Object
-
+sealed trait Direction extends StObject
 /**
   * Can be Ascending or Descending - Default: Ascending
   */
 @JSGlobal("umbraco.resources.Direction")
 @js.native
-object Direction extends js.Object {
-  @js.native
-  sealed trait Ascending extends Direction
+object Direction extends StObject {
   
   @js.native
-  sealed trait Descending extends Direction
+  sealed trait Ascending
+    extends StObject
+       with Direction
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Direction with Double] = js.native
-  /* 0 */ @js.native
-  object Ascending extends TopLevel[Ascending with Double]
-  
-  /* 1 */ @js.native
-  object Descending extends TopLevel[Descending with Double]
-  
+  @js.native
+  sealed trait Descending
+    extends StObject
+       with Direction
 }
-

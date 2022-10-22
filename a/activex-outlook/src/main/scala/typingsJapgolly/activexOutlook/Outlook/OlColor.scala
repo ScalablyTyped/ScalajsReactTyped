@@ -1,83 +1,79 @@
 package typingsJapgolly.activexOutlook.Outlook
 
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`10`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`11`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`12`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`13`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`14`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`15`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`16`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`5`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`6`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`7`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`8`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`9`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`0`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`10`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`11`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`12`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`13`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`14`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`15`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`16`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`5`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`6`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`7`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`8`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`15`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`13`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`14`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`8`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`11`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`5`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`6`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`10`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`9`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`7`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`16`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`12`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`0`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`15`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`13`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`14`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`8`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`11`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`5`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`6`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`10`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`9`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`7`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`16`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`12`
 */
-trait OlColor extends js.Object
-
+trait OlColor extends StObject
 object OlColor {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def olAutoColor: `0` = this.cast(0)
-  @scala.inline
-  def olColorAqua: `15` = this.cast(15)
-  @scala.inline
-  def olColorBlack: `1` = this.cast(1)
-  @scala.inline
-  def olColorBlue: `13` = this.cast(13)
-  @scala.inline
-  def olColorFuchsia: `14` = this.cast(14)
-  @scala.inline
-  def olColorGray: `8` = this.cast(8)
-  @scala.inline
-  def olColorGreen: `3` = this.cast(3)
-  @scala.inline
-  def olColorLime: `11` = this.cast(11)
-  @scala.inline
-  def olColorMaroon: `2` = this.cast(2)
-  @scala.inline
-  def olColorNavy: `5` = this.cast(5)
-  @scala.inline
-  def olColorOlive: `4` = this.cast(4)
-  @scala.inline
-  def olColorPurple: `6` = this.cast(6)
-  @scala.inline
-  def olColorRed: `10` = this.cast(10)
-  @scala.inline
-  def olColorSilver: `9` = this.cast(9)
-  @scala.inline
-  def olColorTeal: `7` = this.cast(7)
-  @scala.inline
-  def olColorWhite: `16` = this.cast(16)
-  @scala.inline
-  def olColorYellow: `12` = this.cast(12)
+  
+  inline def olAutoColor: `0` = 0.asInstanceOf[`0`]
+  
+  inline def olColorAqua: `15` = 15.asInstanceOf[`15`]
+  
+  inline def olColorBlack: `1` = 1.asInstanceOf[`1`]
+  
+  inline def olColorBlue: `13` = 13.asInstanceOf[`13`]
+  
+  inline def olColorFuchsia: `14` = 14.asInstanceOf[`14`]
+  
+  inline def olColorGray: `8` = 8.asInstanceOf[`8`]
+  
+  inline def olColorGreen: `3` = 3.asInstanceOf[`3`]
+  
+  inline def olColorLime: `11` = 11.asInstanceOf[`11`]
+  
+  inline def olColorMaroon: `2` = 2.asInstanceOf[`2`]
+  
+  inline def olColorNavy: `5` = 5.asInstanceOf[`5`]
+  
+  inline def olColorOlive: `4` = 4.asInstanceOf[`4`]
+  
+  inline def olColorPurple: `6` = 6.asInstanceOf[`6`]
+  
+  inline def olColorRed: `10` = 10.asInstanceOf[`10`]
+  
+  inline def olColorSilver: `9` = 9.asInstanceOf[`9`]
+  
+  inline def olColorTeal: `7` = 7.asInstanceOf[`7`]
+  
+  inline def olColorWhite: `16` = 16.asInstanceOf[`16`]
+  
+  inline def olColorYellow: `12` = 12.asInstanceOf[`12`]
 }
-

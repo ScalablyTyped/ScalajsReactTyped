@@ -1,29 +1,24 @@
 package typingsJapgolly.wreck
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wreckStrings {
-  @js.native
-  sealed trait force extends js.Object
   
   @js.native
-  sealed trait request extends js.Object
+  sealed trait force extends StObject
+  inline def force: force = "force".asInstanceOf[force]
   
   @js.native
-  sealed trait response extends js.Object
+  sealed trait request extends StObject
+  inline def request: request = "request".asInstanceOf[request]
   
   @js.native
-  sealed trait strict extends js.Object
+  sealed trait response extends StObject
+  inline def response: response = "response".asInstanceOf[response]
   
-  @scala.inline
-  def force: force = "force".asInstanceOf[force]
-  @scala.inline
-  def request: request = "request".asInstanceOf[request]
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
+  @js.native
+  sealed trait strict extends StObject
+  inline def strict: strict = "strict".asInstanceOf[strict]
 }
-

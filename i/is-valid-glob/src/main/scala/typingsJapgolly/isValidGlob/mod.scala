@@ -1,12 +1,16 @@
 package typingsJapgolly.isValidGlob
 
+import typingsJapgolly.isValidGlob.isValidGlobBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("is-valid-glob", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(input: js.Any): Boolean = js.native
+object mod {
+  
+  inline def apply(): `false` = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[`false`]
+  inline def apply(input: Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @JSImport("is-valid-glob", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

@@ -1,11 +1,12 @@
 package typingsJapgolly.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClassSpec[D, T, S] extends js.Object {
+trait ClassSpec[D, T, S] extends StObject {
+  
   /**
     * Methods to implement.
     */
@@ -14,6 +15,7 @@ trait ClassSpec[D, T, S] extends js.Object {
       (UserMethodImplementation[D, T, S]) | (MethodSpec[UserMethodImplementation[D, T, S]])
     ]
   ] = js.undefined
+  
   /**
     * Name of the class.
     *
@@ -21,32 +23,48 @@ trait ClassSpec[D, T, S] extends js.Object {
     * for you.
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * Protocols this class conforms to.
     */
   var protocols: js.UndefOr[js.Array[Protocol]] = js.undefined
+  
   /**
     * Super-class, or `null` to create a new root class. Omit to inherit from `NSObject`.
     */
   var `super`: js.UndefOr[Object | Null] = js.undefined
 }
-
 object ClassSpec {
-  @scala.inline
-  def apply[D, T, S](
-    methods: StringDictionary[
-      (UserMethodImplementation[D, T, S]) | (MethodSpec[UserMethodImplementation[D, T, S]])
-    ] = null,
-    name: String = null,
-    protocols: js.Array[Protocol] = null,
-    `super`: Object = null
-  ): ClassSpec[D, T, S] = {
+  
+  inline def apply[D, T, S](): ClassSpec[D, T, S] = {
     val __obj = js.Dynamic.literal()
-    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    if (`super` != null) __obj.updateDynamic("super")(`super`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassSpec[D, T, S]]
   }
+  
+  extension [Self <: ClassSpec[?, ?, ?], D, T, S](x: Self & (ClassSpec[D, T, S])) {
+    
+    inline def setMethods(
+      value: StringDictionary[
+          (UserMethodImplementation[D, T, S]) | (MethodSpec[UserMethodImplementation[D, T, S]])
+        ]
+    ): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+    
+    inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setProtocols(value: js.Array[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+    
+    inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value*))
+    
+    inline def setSuper(value: Object): Self = StObject.set(x, "super", value.asInstanceOf[js.Any])
+    
+    inline def setSuperNull: Self = StObject.set(x, "super", null)
+    
+    inline def setSuperUndefined: Self = StObject.set(x, "super", js.undefined)
+  }
 }
-

@@ -1,104 +1,146 @@
 package typingsJapgolly.cote.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiscoveryOptions extends js.Object {
+trait DiscoveryOptions extends StObject {
+  
   /**
     * Address to bind to.
     */
   var address: js.UndefOr[String] = js.undefined
+  
   /**
     * Broadcast address if using broadcast.
     */
   var broadcast: js.UndefOr[String] = js.undefined
+  
   /**
     * How often to to check for missing nodes in milliseconds.
     */
   var checkInterval: js.UndefOr[Double] = js.undefined
+  
   /**
     * Prevents Monitor from drawing.
     */
   var disableScreen: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * How often to broadcast a hello packet in milliseconds.
     */
   var helloInterval: js.UndefOr[Double] = js.undefined
+  
   /**
     * Notifies when another service goes online.
     */
   var helloLogsEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Ignores messages from other services within the same process.
     */
   var ignoreProcess: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If false, disables `helloLogsEnabled` and `statusLogsEnabled` no matter
     * what value they have, and also own hello log.
     */
   var log: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Consider a master node dead if not seen in this many milliseconds.
     */
   var masterTimeout: js.UndefOr[Double] = js.undefined
+  
   /**
     * Skips key equality checks when logging.
     */
   var monitor: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Multicast address if using multicast.
     */
   var multicast: js.UndefOr[String] = js.undefined
+  
   /**
     * Consider a node dead if not seen in this many milliseconds.
     */
   var nodeTimeout: js.UndefOr[Double] = js.undefined
+  
   /**
     * Milliseconds between emissions of own status for monitoring.
     */
   var statusInterval: js.UndefOr[Double] = js.undefined
+  
   /**
     * Notifies when another service goes online or offline. If false, disables
     * `helloLogsEnabled` as well.
     */
   var statusLogsEnabled: js.UndefOr[Boolean] = js.undefined
 }
-
 object DiscoveryOptions {
-  @scala.inline
-  def apply(
-    address: String = null,
-    broadcast: String = null,
-    checkInterval: Int | Double = null,
-    disableScreen: js.UndefOr[Boolean] = js.undefined,
-    helloInterval: Int | Double = null,
-    helloLogsEnabled: js.UndefOr[Boolean] = js.undefined,
-    ignoreProcess: js.UndefOr[Boolean] = js.undefined,
-    log: js.UndefOr[Boolean] = js.undefined,
-    masterTimeout: Int | Double = null,
-    monitor: js.UndefOr[Boolean] = js.undefined,
-    multicast: String = null,
-    nodeTimeout: Int | Double = null,
-    statusInterval: Int | Double = null,
-    statusLogsEnabled: js.UndefOr[Boolean] = js.undefined
-  ): DiscoveryOptions = {
+  
+  inline def apply(): DiscoveryOptions = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (broadcast != null) __obj.updateDynamic("broadcast")(broadcast.asInstanceOf[js.Any])
-    if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScreen)) __obj.updateDynamic("disableScreen")(disableScreen.asInstanceOf[js.Any])
-    if (helloInterval != null) __obj.updateDynamic("helloInterval")(helloInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(helloLogsEnabled)) __obj.updateDynamic("helloLogsEnabled")(helloLogsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreProcess)) __obj.updateDynamic("ignoreProcess")(ignoreProcess.asInstanceOf[js.Any])
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(monitor)) __obj.updateDynamic("monitor")(monitor.asInstanceOf[js.Any])
-    if (multicast != null) __obj.updateDynamic("multicast")(multicast.asInstanceOf[js.Any])
-    if (nodeTimeout != null) __obj.updateDynamic("nodeTimeout")(nodeTimeout.asInstanceOf[js.Any])
-    if (statusInterval != null) __obj.updateDynamic("statusInterval")(statusInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusLogsEnabled)) __obj.updateDynamic("statusLogsEnabled")(statusLogsEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscoveryOptions]
   }
+  
+  extension [Self <: DiscoveryOptions](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setBroadcast(value: String): Self = StObject.set(x, "broadcast", value.asInstanceOf[js.Any])
+    
+    inline def setBroadcastUndefined: Self = StObject.set(x, "broadcast", js.undefined)
+    
+    inline def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
+    
+    inline def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
+    
+    inline def setDisableScreen(value: Boolean): Self = StObject.set(x, "disableScreen", value.asInstanceOf[js.Any])
+    
+    inline def setDisableScreenUndefined: Self = StObject.set(x, "disableScreen", js.undefined)
+    
+    inline def setHelloInterval(value: Double): Self = StObject.set(x, "helloInterval", value.asInstanceOf[js.Any])
+    
+    inline def setHelloIntervalUndefined: Self = StObject.set(x, "helloInterval", js.undefined)
+    
+    inline def setHelloLogsEnabled(value: Boolean): Self = StObject.set(x, "helloLogsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setHelloLogsEnabledUndefined: Self = StObject.set(x, "helloLogsEnabled", js.undefined)
+    
+    inline def setIgnoreProcess(value: Boolean): Self = StObject.set(x, "ignoreProcess", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreProcessUndefined: Self = StObject.set(x, "ignoreProcess", js.undefined)
+    
+    inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    
+    inline def setMasterTimeout(value: Double): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    
+    inline def setMonitor(value: Boolean): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
+    
+    inline def setMonitorUndefined: Self = StObject.set(x, "monitor", js.undefined)
+    
+    inline def setMulticast(value: String): Self = StObject.set(x, "multicast", value.asInstanceOf[js.Any])
+    
+    inline def setMulticastUndefined: Self = StObject.set(x, "multicast", js.undefined)
+    
+    inline def setNodeTimeout(value: Double): Self = StObject.set(x, "nodeTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setNodeTimeoutUndefined: Self = StObject.set(x, "nodeTimeout", js.undefined)
+    
+    inline def setStatusInterval(value: Double): Self = StObject.set(x, "statusInterval", value.asInstanceOf[js.Any])
+    
+    inline def setStatusIntervalUndefined: Self = StObject.set(x, "statusInterval", js.undefined)
+    
+    inline def setStatusLogsEnabled(value: Boolean): Self = StObject.set(x, "statusLogsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setStatusLogsEnabledUndefined: Self = StObject.set(x, "statusLogsEnabled", js.undefined)
+  }
 }
-

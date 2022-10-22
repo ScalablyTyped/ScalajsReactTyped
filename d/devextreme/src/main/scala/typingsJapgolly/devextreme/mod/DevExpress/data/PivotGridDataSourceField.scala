@@ -1,214 +1,391 @@
 package typingsJapgolly.devextreme.mod.DevExpress.data
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.devextreme.AnonAllowSearch
-import typingsJapgolly.devextreme.AnonChildren
-import typingsJapgolly.devextreme.AnonSummaryProcess
-import typingsJapgolly.devextreme.AnonValue
-import typingsJapgolly.devextreme.devextremeStrings.absoluteVariation
-import typingsJapgolly.devextreme.devextremeStrings.asc
-import typingsJapgolly.devextreme.devextremeStrings.avg
-import typingsJapgolly.devextreme.devextremeStrings.column
-import typingsJapgolly.devextreme.devextremeStrings.count
-import typingsJapgolly.devextreme.devextremeStrings.custom
-import typingsJapgolly.devextreme.devextremeStrings.date
-import typingsJapgolly.devextreme.devextremeStrings.day
-import typingsJapgolly.devextreme.devextremeStrings.dayOfWeek
-import typingsJapgolly.devextreme.devextremeStrings.desc
-import typingsJapgolly.devextreme.devextremeStrings.displayText
-import typingsJapgolly.devextreme.devextremeStrings.exclude
-import typingsJapgolly.devextreme.devextremeStrings.filter
-import typingsJapgolly.devextreme.devextremeStrings.include
-import typingsJapgolly.devextreme.devextremeStrings.max
-import typingsJapgolly.devextreme.devextremeStrings.min
-import typingsJapgolly.devextreme.devextremeStrings.month
-import typingsJapgolly.devextreme.devextremeStrings.none
-import typingsJapgolly.devextreme.devextremeStrings.number
-import typingsJapgolly.devextreme.devextremeStrings.percentOfColumnGrandTotal
-import typingsJapgolly.devextreme.devextremeStrings.percentOfColumnTotal
-import typingsJapgolly.devextreme.devextremeStrings.percentOfGrandTotal
-import typingsJapgolly.devextreme.devextremeStrings.percentOfRowGrandTotal
-import typingsJapgolly.devextreme.devextremeStrings.percentOfRowTotal
-import typingsJapgolly.devextreme.devextremeStrings.percentVariation
-import typingsJapgolly.devextreme.devextremeStrings.quarter
-import typingsJapgolly.devextreme.devextremeStrings.row
-import typingsJapgolly.devextreme.devextremeStrings.string_
-import typingsJapgolly.devextreme.devextremeStrings.sum
-import typingsJapgolly.devextreme.devextremeStrings.value
-import typingsJapgolly.devextreme.devextremeStrings.year
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.devextreme.anon.AllowSearch
+import typingsJapgolly.devextreme.anon.Children
+import typingsJapgolly.devextreme.anon.SummaryProcess
+import typingsJapgolly.devextreme.anon.Value
+import typingsJapgolly.devextreme.mod.DevExpress.common.SortOrder
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.FilterType
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.SummaryType
+import typingsJapgolly.devextreme.mod.DevExpress.data.PivotGridDataSource.PivotGridArea
+import typingsJapgolly.devextreme.mod.DevExpress.data.PivotGridDataSource.PivotGridDataType
+import typingsJapgolly.devextreme.mod.DevExpress.data.PivotGridDataSource.PivotGridGroupInterval
+import typingsJapgolly.devextreme.mod.DevExpress.data.PivotGridDataSource.PivotGridRunningTotalMode
+import typingsJapgolly.devextreme.mod.DevExpress.data.PivotGridDataSource.PivotGridSortBy
+import typingsJapgolly.devextreme.mod.DevExpress.data.PivotGridDataSource.PivotGridSummaryDisplayMode
+import typingsJapgolly.devextreme.mod.DevExpress.ui.Format
 import typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGridSummaryCell
-import typingsJapgolly.devextreme.mod.DevExpress.ui.format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PivotGridDataSourceField extends js.Object {
-  /** Specifies whether to take neighboring groups' summary values into account when calculating a running total and absolute or percent variation. */
+trait PivotGridDataSourceField extends StObject {
+  
+  /**
+    * Specifies whether to take neighboring groups&apos; summary values into account when calculating a running total and absolute or percent variation.
+    */
   var allowCrossGroupCalculation: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can expand/collapse all items within the same column or row header level using the context menu. */
+  
+  /**
+    * Allows users to expand/collapse all header items within the same header level. Ignored if the PivotGridDataSource&apos;s paginate property is true.
+    */
   var allowExpandAll: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can filter the field's values. */
+  
+  /**
+    * Specifies whether a user can filter the field&apos;s values.
+    */
   var allowFiltering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can change the field's sorting. */
+  
+  /**
+    * Specifies whether a user can change the field&apos;s sorting.
+    */
   var allowSorting: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can sort the pivot grid by summary values instead of field values. */
+  
+  /**
+    * Allows users to sort the pivot grid by summary values instead of field values. Ignored if the PivotGridDataSource&apos;s paginate property is true.
+    */
   var allowSortingBySummary: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the field's area. */
-  var area: js.UndefOr[column | typingsJapgolly.devextreme.devextremeStrings.data | filter | row] = js.undefined
-  /** Specifies the field's order among the other fields in the same area. Corresponds to the field's order in the fields array by default. */
+  
+  /**
+    * Specifies the field&apos;s area.
+    */
+  var area: js.UndefOr[PivotGridArea] = js.undefined
+  
+  /**
+    * Specifies the field&apos;s order among the other fields in the same area. Corresponds to the field&apos;s order in the fields array by default.
+    */
   var areaIndex: js.UndefOr[Double] = js.undefined
-  /** Specifies a custom aggregate function. Applies only if the summaryType is "custom" and the remoteOperations is false. Cannot be used with an XmlaStore. */
-  var calculateCustomSummary: js.UndefOr[js.Function1[/* options */ AnonSummaryProcess, _]] = js.undefined
-  /** Specifies a custom post-processing function for summary values. */
+  
+  /**
+    * Specifies a custom aggregate function. Applies only if the summaryType is &apos;custom&apos; and the remoteOperations is false. Cannot be used with an XmlaStore.
+    */
+  var calculateCustomSummary: js.UndefOr[js.Function1[/* options */ SummaryProcess, Unit]] = js.undefined
+  
+  /**
+    * Specifies a custom post-processing function for summary values.
+    */
   var calculateSummaryValue: js.UndefOr[js.Function1[/* e */ dxPivotGridSummaryCell, Double]] = js.undefined
-  /** Specifies the field's caption to be displayed in the field chooser and on the field panel. */
+  
+  /**
+    * Specifies the field&apos;s caption to be displayed in the field chooser and on the field panel.
+    */
   var caption: js.UndefOr[String] = js.undefined
-  /** Customizes the text displayed in summary cells. */
-  var customizeText: js.UndefOr[js.Function1[/* cellInfo */ AnonValue, String]] = js.undefined
-  /** Specifies which data source field provides data for the pivot grid field. */
+  
+  /**
+    * Customizes the text displayed in summary cells.
+    */
+  var customizeText: js.UndefOr[js.Function1[/* cellInfo */ Value, String]] = js.undefined
+  
+  /**
+    * Specifies which data source field provides data for the pivot grid field.
+    */
   var dataField: js.UndefOr[String] = js.undefined
-  /** Casts field values to a specific data type. */
-  var dataType: js.UndefOr[date | number | string_] = js.undefined
-  /** Specifies the name of the folder in which the field is located when displayed in the field chooser. */
+  
+  /**
+    * Casts field values to a specific data type.
+    */
+  var dataType: js.UndefOr[PivotGridDataType] = js.undefined
+  
+  /**
+    * Specifies the name of the directory in which the field is located when displayed in the field chooser.
+    */
   var displayFolder: js.UndefOr[String] = js.undefined
-  /** Specifies whether to expand all items within the field's header level. */
+  
+  /**
+    * Specifies whether to expand all items within the field&apos;s header level.
+    */
   var expanded: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user changes the current filter by including (selecting) or excluding (clearing the selection of) values. */
-  var filterType: js.UndefOr[exclude | include] = js.undefined
-  /** Specifies the values by which the field is filtered. */
-  var filterValues: js.UndefOr[js.Array[_]] = js.undefined
-  /** Formats field values before they are displayed. */
-  var format: js.UndefOr[typingsJapgolly.devextreme.mod.DevExpress.ui.format] = js.undefined
-  /** Specifies the field's index within its group. */
+  
+  /**
+    * Specifies whether a user changes the current filter by including (selecting) or excluding (clearing the selection of) values.
+    */
+  var filterType: js.UndefOr[FilterType] = js.undefined
+  
+  /**
+    * Specifies the values by which the field is filtered.
+    */
+  var filterValues: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  /**
+    * Formats field values before they are displayed.
+    */
+  var format: js.UndefOr[Format] = js.undefined
+  
+  /**
+    * Specifies the field&apos;s index within its group.
+    */
   var groupIndex: js.UndefOr[Double] = js.undefined
-  /** Specifies how the field's values are combined into groups for the headers. Cannot be used with an XmlaStore. */
-  var groupInterval: js.UndefOr[day | dayOfWeek | month | quarter | year | Double] = js.undefined
-  /** Specifies the name of the field's group. */
+  
+  /**
+    * Specifies how the field&apos;s values are combined into groups for the headers. Cannot be used with an XmlaStore.
+    */
+  var groupInterval: js.UndefOr[PivotGridGroupInterval | Double] = js.undefined
+  
+  /**
+    * Specifies the name of the field&apos;s group.
+    */
   var groupName: js.UndefOr[String] = js.undefined
-  /** Configures the field's header filter. */
-  var headerFilter: js.UndefOr[AnonAllowSearch] = js.undefined
-  /** Specifies whether the field should be treated as a measure (a field providing data for calculation). */
+  
+  /**
+    * Configures the field&apos;s header filter.
+    */
+  var headerFilter: js.UndefOr[AllowSearch] = js.undefined
+  
+  /**
+    * Specifies whether the field should be treated as a measure (a field providing data for calculation).
+    */
   var isMeasure: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the field's identifier. */
+  
+  /**
+    * Specifies the field&apos;s identifier.
+    */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies whether to calculate the running total by rows or by columns. */
-  var runningTotal: js.UndefOr[column | row] = js.undefined
-  /** Specifies a function that combines the field's values into groups for the headers. Cannot be used with an XmlaStore or remote operations. */
+  
+  /**
+    * Specifies whether to calculate the running total by rows or by columns.
+    */
+  var runningTotal: js.UndefOr[PivotGridRunningTotalMode] = js.undefined
+  
+  /**
+    * Specifies a function that combines the field&apos;s values into groups for the headers. Cannot be used with an XmlaStore or remote operations.
+    */
   var selector: js.UndefOr[js.Function] = js.undefined
-  /** Specifies whether to display the field's grand totals. Applies only if the field is in the data area. */
+  
+  /**
+    * Specifies whether to display the field&apos;s grand totals. Applies only if the field is in the data area.
+    */
   var showGrandTotals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to display the field's totals. */
+  
+  /**
+    * Specifies whether to display the field&apos;s totals.
+    */
   var showTotals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to display the field's summary values. Applies only if the field is in the data area. Inherits the showTotals' value by default. */
+  
+  /**
+    * Specifies whether to display the field&apos;s summary values. Applies only if the field is in the data area. Inherits the showTotals&apos; value by default.
+    */
   var showValues: js.UndefOr[Boolean] = js.undefined
-  /** Specifies how the field's values in the headers should be sorted. */
-  var sortBy: js.UndefOr[displayText | value | none] = js.undefined
-  /** Sorts the field's values in the headers by the specified measure's summary values. Accepts the measure's name, caption, dataField, or index in the fields array. */
+  
+  /**
+    * Specifies how the field&apos;s values in the headers should be sorted.
+    */
+  var sortBy: js.UndefOr[PivotGridSortBy] = js.undefined
+  
+  /**
+    * Sorts the field&apos;s values in the headers by the specified measure&apos;s summary values. Accepts the measure&apos;s name, caption, dataField, or index in the fields array.
+    */
   var sortBySummaryField: js.UndefOr[String] = js.undefined
-  /** Specifies a path to the column or row whose summary values should be used to sort the field's values in the headers. */
+  
+  /**
+    * Specifies a path to the column or row whose summary values should be used to sort the field&apos;s values in the headers.
+    */
   var sortBySummaryPath: js.UndefOr[js.Array[Double | String]] = js.undefined
-  /** Specifies the field values' sorting order. */
-  var sortOrder: js.UndefOr[asc | desc] = js.undefined
-  /** Specifies a custom comparison function that sorts the field's values in the headers. */
-  var sortingMethod: js.UndefOr[js.Function2[/* a */ AnonChildren, /* b */ AnonChildren, Double]] = js.undefined
-  /** Specifies a predefined post-processing function. Does not apply when the calculateSummaryValue option is set. */
-  var summaryDisplayMode: js.UndefOr[
-    absoluteVariation | percentOfColumnGrandTotal | percentOfColumnTotal | percentOfGrandTotal | percentOfRowGrandTotal | percentOfRowTotal | percentVariation
-  ] = js.undefined
-  /** Specifies how to aggregate the field's data. Cannot be used with an XmlaStore. */
-  var summaryType: js.UndefOr[avg | count | custom | max | min | sum | String] = js.undefined
-  /** Specifies whether the field is visible in the pivot grid and field chooser. */
+  
+  /**
+    * Specifies the field values&apos; sorting order.
+    */
+  var sortOrder: js.UndefOr[SortOrder] = js.undefined
+  
+  /**
+    * Specifies a custom comparison function that sorts the field&apos;s values in the headers.
+    */
+  var sortingMethod: js.UndefOr[js.Function2[/* a */ Children, /* b */ Children, Double]] = js.undefined
+  
+  /**
+    * Specifies a predefined post-processing function. Does not apply when the calculateSummaryValue property is set.
+    */
+  var summaryDisplayMode: js.UndefOr[PivotGridSummaryDisplayMode] = js.undefined
+  
+  /**
+    * Specifies how to aggregate the field&apos;s data. Cannot be used with an XmlaStore.
+    */
+  var summaryType: js.UndefOr[SummaryType | String] = js.undefined
+  
+  /**
+    * Specifies whether the field is visible in the pivot grid and field chooser.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the field's width in pixels when the field is displayed in the pivot grid. */
+  
+  /**
+    * Specifies the field&apos;s width in pixels when the field is displayed in the pivot grid.
+    */
   var width: js.UndefOr[Double] = js.undefined
-  /** Specifies whether text that does not fit into a header item should be wrapped. */
+  
+  /**
+    * Specifies whether text that does not fit into a header item should be wrapped.
+    */
   var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
 }
-
 object PivotGridDataSourceField {
-  @scala.inline
-  def apply(
-    allowCrossGroupCalculation: js.UndefOr[Boolean] = js.undefined,
-    allowExpandAll: js.UndefOr[Boolean] = js.undefined,
-    allowFiltering: js.UndefOr[Boolean] = js.undefined,
-    allowSorting: js.UndefOr[Boolean] = js.undefined,
-    allowSortingBySummary: js.UndefOr[Boolean] = js.undefined,
-    area: column | typingsJapgolly.devextreme.devextremeStrings.data | filter | row = null,
-    areaIndex: Int | Double = null,
-    calculateCustomSummary: /* options */ AnonSummaryProcess => CallbackTo[js.Any] = null,
-    calculateSummaryValue: /* e */ dxPivotGridSummaryCell => CallbackTo[Double] = null,
-    caption: String = null,
-    customizeText: /* cellInfo */ AnonValue => CallbackTo[String] = null,
-    dataField: String = null,
-    dataType: date | number | string_ = null,
-    displayFolder: String = null,
-    expanded: js.UndefOr[Boolean] = js.undefined,
-    filterType: exclude | include = null,
-    filterValues: js.Array[_] = null,
-    format: format = null,
-    groupIndex: Int | Double = null,
-    groupInterval: day | dayOfWeek | month | quarter | year | Double = null,
-    groupName: String = null,
-    headerFilter: AnonAllowSearch = null,
-    isMeasure: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    runningTotal: column | row = null,
-    selector: js.Function = null,
-    showGrandTotals: js.UndefOr[Boolean] = js.undefined,
-    showTotals: js.UndefOr[Boolean] = js.undefined,
-    showValues: js.UndefOr[Boolean] = js.undefined,
-    sortBy: displayText | value | none = null,
-    sortBySummaryField: String = null,
-    sortBySummaryPath: js.Array[Double | String] = null,
-    sortOrder: asc | desc = null,
-    sortingMethod: (/* a */ AnonChildren, /* b */ AnonChildren) => CallbackTo[Double] = null,
-    summaryDisplayMode: absoluteVariation | percentOfColumnGrandTotal | percentOfColumnTotal | percentOfGrandTotal | percentOfRowGrandTotal | percentOfRowTotal | percentVariation = null,
-    summaryType: avg | count | custom | max | min | sum | String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
-    wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
-  ): PivotGridDataSourceField = {
+  
+  inline def apply(): PivotGridDataSourceField = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCrossGroupCalculation)) __obj.updateDynamic("allowCrossGroupCalculation")(allowCrossGroupCalculation.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowExpandAll)) __obj.updateDynamic("allowExpandAll")(allowExpandAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSortingBySummary)) __obj.updateDynamic("allowSortingBySummary")(allowSortingBySummary.asInstanceOf[js.Any])
-    if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
-    if (areaIndex != null) __obj.updateDynamic("areaIndex")(areaIndex.asInstanceOf[js.Any])
-    if (calculateCustomSummary != null) __obj.updateDynamic("calculateCustomSummary")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.devextreme.AnonSummaryProcess) => calculateCustomSummary(t0).runNow()))
-    if (calculateSummaryValue != null) __obj.updateDynamic("calculateSummaryValue")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGridSummaryCell) => calculateSummaryValue(t0).runNow()))
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (customizeText != null) __obj.updateDynamic("customizeText")(js.Any.fromFunction1((t0: /* cellInfo */ typingsJapgolly.devextreme.AnonValue) => customizeText(t0).runNow()))
-    if (dataField != null) __obj.updateDynamic("dataField")(dataField.asInstanceOf[js.Any])
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (displayFolder != null) __obj.updateDynamic("displayFolder")(displayFolder.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (filterValues != null) __obj.updateDynamic("filterValues")(filterValues.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (groupIndex != null) __obj.updateDynamic("groupIndex")(groupIndex.asInstanceOf[js.Any])
-    if (groupInterval != null) __obj.updateDynamic("groupInterval")(groupInterval.asInstanceOf[js.Any])
-    if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
-    if (headerFilter != null) __obj.updateDynamic("headerFilter")(headerFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMeasure)) __obj.updateDynamic("isMeasure")(isMeasure.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (runningTotal != null) __obj.updateDynamic("runningTotal")(runningTotal.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGrandTotals)) __obj.updateDynamic("showGrandTotals")(showGrandTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(showValues)) __obj.updateDynamic("showValues")(showValues.asInstanceOf[js.Any])
-    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
-    if (sortBySummaryField != null) __obj.updateDynamic("sortBySummaryField")(sortBySummaryField.asInstanceOf[js.Any])
-    if (sortBySummaryPath != null) __obj.updateDynamic("sortBySummaryPath")(sortBySummaryPath.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
-    if (sortingMethod != null) __obj.updateDynamic("sortingMethod")(js.Any.fromFunction2((t0: /* a */ typingsJapgolly.devextreme.AnonChildren, t1: /* b */ typingsJapgolly.devextreme.AnonChildren) => sortingMethod(t0, t1).runNow()))
-    if (summaryDisplayMode != null) __obj.updateDynamic("summaryDisplayMode")(summaryDisplayMode.asInstanceOf[js.Any])
-    if (summaryType != null) __obj.updateDynamic("summaryType")(summaryType.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wordWrapEnabled)) __obj.updateDynamic("wordWrapEnabled")(wordWrapEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridDataSourceField]
   }
+  
+  extension [Self <: PivotGridDataSourceField](x: Self) {
+    
+    inline def setAllowCrossGroupCalculation(value: Boolean): Self = StObject.set(x, "allowCrossGroupCalculation", value.asInstanceOf[js.Any])
+    
+    inline def setAllowCrossGroupCalculationUndefined: Self = StObject.set(x, "allowCrossGroupCalculation", js.undefined)
+    
+    inline def setAllowExpandAll(value: Boolean): Self = StObject.set(x, "allowExpandAll", value.asInstanceOf[js.Any])
+    
+    inline def setAllowExpandAllUndefined: Self = StObject.set(x, "allowExpandAll", js.undefined)
+    
+    inline def setAllowFiltering(value: Boolean): Self = StObject.set(x, "allowFiltering", value.asInstanceOf[js.Any])
+    
+    inline def setAllowFilteringUndefined: Self = StObject.set(x, "allowFiltering", js.undefined)
+    
+    inline def setAllowSorting(value: Boolean): Self = StObject.set(x, "allowSorting", value.asInstanceOf[js.Any])
+    
+    inline def setAllowSortingBySummary(value: Boolean): Self = StObject.set(x, "allowSortingBySummary", value.asInstanceOf[js.Any])
+    
+    inline def setAllowSortingBySummaryUndefined: Self = StObject.set(x, "allowSortingBySummary", js.undefined)
+    
+    inline def setAllowSortingUndefined: Self = StObject.set(x, "allowSorting", js.undefined)
+    
+    inline def setArea(value: PivotGridArea): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    
+    inline def setAreaIndex(value: Double): Self = StObject.set(x, "areaIndex", value.asInstanceOf[js.Any])
+    
+    inline def setAreaIndexUndefined: Self = StObject.set(x, "areaIndex", js.undefined)
+    
+    inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
+    
+    inline def setCalculateCustomSummary(value: /* options */ SummaryProcess => Callback): Self = StObject.set(x, "calculateCustomSummary", js.Any.fromFunction1((t0: /* options */ SummaryProcess) => value(t0).runNow()))
+    
+    inline def setCalculateCustomSummaryUndefined: Self = StObject.set(x, "calculateCustomSummary", js.undefined)
+    
+    inline def setCalculateSummaryValue(value: /* e */ dxPivotGridSummaryCell => Double): Self = StObject.set(x, "calculateSummaryValue", js.Any.fromFunction1(value))
+    
+    inline def setCalculateSummaryValueUndefined: Self = StObject.set(x, "calculateSummaryValue", js.undefined)
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setCustomizeText(value: /* cellInfo */ Value => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
+    
+    inline def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
+    
+    inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
+    
+    inline def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
+    
+    inline def setDataType(value: PivotGridDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    
+    inline def setDisplayFolder(value: String): Self = StObject.set(x, "displayFolder", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayFolderUndefined: Self = StObject.set(x, "displayFolder", js.undefined)
+    
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    
+    inline def setFilterType(value: FilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
+    
+    inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
+    
+    inline def setFilterValues(value: js.Array[Any]): Self = StObject.set(x, "filterValues", value.asInstanceOf[js.Any])
+    
+    inline def setFilterValuesUndefined: Self = StObject.set(x, "filterValues", js.undefined)
+    
+    inline def setFilterValuesVarargs(value: Any*): Self = StObject.set(x, "filterValues", js.Array(value*))
+    
+    inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatFunction1(value: js.Date | Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
+    
+    inline def setGroupIndexUndefined: Self = StObject.set(x, "groupIndex", js.undefined)
+    
+    inline def setGroupInterval(value: PivotGridGroupInterval | Double): Self = StObject.set(x, "groupInterval", value.asInstanceOf[js.Any])
+    
+    inline def setGroupIntervalUndefined: Self = StObject.set(x, "groupInterval", js.undefined)
+    
+    inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    
+    inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
+    
+    inline def setHeaderFilter(value: AllowSearch): Self = StObject.set(x, "headerFilter", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderFilterUndefined: Self = StObject.set(x, "headerFilter", js.undefined)
+    
+    inline def setIsMeasure(value: Boolean): Self = StObject.set(x, "isMeasure", value.asInstanceOf[js.Any])
+    
+    inline def setIsMeasureUndefined: Self = StObject.set(x, "isMeasure", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRunningTotal(value: PivotGridRunningTotalMode): Self = StObject.set(x, "runningTotal", value.asInstanceOf[js.Any])
+    
+    inline def setRunningTotalUndefined: Self = StObject.set(x, "runningTotal", js.undefined)
+    
+    inline def setSelector(value: js.Function): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    
+    inline def setShowGrandTotals(value: Boolean): Self = StObject.set(x, "showGrandTotals", value.asInstanceOf[js.Any])
+    
+    inline def setShowGrandTotalsUndefined: Self = StObject.set(x, "showGrandTotals", js.undefined)
+    
+    inline def setShowTotals(value: Boolean): Self = StObject.set(x, "showTotals", value.asInstanceOf[js.Any])
+    
+    inline def setShowTotalsUndefined: Self = StObject.set(x, "showTotals", js.undefined)
+    
+    inline def setShowValues(value: Boolean): Self = StObject.set(x, "showValues", value.asInstanceOf[js.Any])
+    
+    inline def setShowValuesUndefined: Self = StObject.set(x, "showValues", js.undefined)
+    
+    inline def setSortBy(value: PivotGridSortBy): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    
+    inline def setSortBySummaryField(value: String): Self = StObject.set(x, "sortBySummaryField", value.asInstanceOf[js.Any])
+    
+    inline def setSortBySummaryFieldUndefined: Self = StObject.set(x, "sortBySummaryField", js.undefined)
+    
+    inline def setSortBySummaryPath(value: js.Array[Double | String]): Self = StObject.set(x, "sortBySummaryPath", value.asInstanceOf[js.Any])
+    
+    inline def setSortBySummaryPathUndefined: Self = StObject.set(x, "sortBySummaryPath", js.undefined)
+    
+    inline def setSortBySummaryPathVarargs(value: (Double | String)*): Self = StObject.set(x, "sortBySummaryPath", js.Array(value*))
+    
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    
+    inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    
+    inline def setSortingMethod(value: (/* a */ Children, /* b */ Children) => Double): Self = StObject.set(x, "sortingMethod", js.Any.fromFunction2(value))
+    
+    inline def setSortingMethodUndefined: Self = StObject.set(x, "sortingMethod", js.undefined)
+    
+    inline def setSummaryDisplayMode(value: PivotGridSummaryDisplayMode): Self = StObject.set(x, "summaryDisplayMode", value.asInstanceOf[js.Any])
+    
+    inline def setSummaryDisplayModeUndefined: Self = StObject.set(x, "summaryDisplayMode", js.undefined)
+    
+    inline def setSummaryType(value: SummaryType | String): Self = StObject.set(x, "summaryType", value.asInstanceOf[js.Any])
+    
+    inline def setSummaryTypeUndefined: Self = StObject.set(x, "summaryType", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setWordWrapEnabled(value: Boolean): Self = StObject.set(x, "wordWrapEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setWordWrapEnabledUndefined: Self = StObject.set(x, "wordWrapEnabled", js.undefined)
+  }
 }
-

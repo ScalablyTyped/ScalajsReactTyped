@@ -1,56 +1,70 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ArrowheadStyle extends js.Object
-
+sealed trait ArrowheadStyle extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ArrowheadStyle")
 @js.native
-object ArrowheadStyle extends js.Object {
+object ArrowheadStyle extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait diamond extends ArrowheadStyle
+  sealed trait diamond
+    extends StObject
+       with ArrowheadStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait none extends ArrowheadStyle
+  sealed trait none
+    extends StObject
+       with ArrowheadStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait open extends ArrowheadStyle
+  sealed trait open
+    extends StObject
+       with ArrowheadStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait oval extends ArrowheadStyle
+  sealed trait oval
+    extends StObject
+       with ArrowheadStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait stealth extends ArrowheadStyle
+  sealed trait stealth
+    extends StObject
+       with ArrowheadStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait triangle extends ArrowheadStyle
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ArrowheadStyle with String] = js.native
-  /* "Diamond" */ @js.native
-  object diamond extends TopLevel[diamond with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "Open" */ @js.native
-  object open extends TopLevel[open with String]
-  
-  /* "Oval" */ @js.native
-  object oval extends TopLevel[oval with String]
-  
-  /* "Stealth" */ @js.native
-  object stealth extends TopLevel[stealth with String]
-  
-  /* "Triangle" */ @js.native
-  object triangle extends TopLevel[triangle with String]
-  
+  sealed trait triangle
+    extends StObject
+       with ArrowheadStyle
 }
-

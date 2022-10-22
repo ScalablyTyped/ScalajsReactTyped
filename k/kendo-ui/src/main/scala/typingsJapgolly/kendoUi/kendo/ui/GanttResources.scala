@@ -1,34 +1,49 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import typingsJapgolly.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GanttResources extends js.Object {
+trait GanttResources extends StObject {
+  
   var dataColorField: js.UndefOr[String] = js.undefined
+  
   var dataFormatField: js.UndefOr[String] = js.undefined
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
+  
   var dataTextField: js.UndefOr[String] = js.undefined
+  
   var field: js.UndefOr[String] = js.undefined
 }
-
 object GanttResources {
-  @scala.inline
-  def apply(
-    dataColorField: String = null,
-    dataFormatField: String = null,
-    dataSource: js.Any | DataSource = null,
-    dataTextField: String = null,
-    field: String = null
-  ): GanttResources = {
+  
+  inline def apply(): GanttResources = {
     val __obj = js.Dynamic.literal()
-    if (dataColorField != null) __obj.updateDynamic("dataColorField")(dataColorField.asInstanceOf[js.Any])
-    if (dataFormatField != null) __obj.updateDynamic("dataFormatField")(dataFormatField.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttResources]
   }
+  
+  extension [Self <: GanttResources](x: Self) {
+    
+    inline def setDataColorField(value: String): Self = StObject.set(x, "dataColorField", value.asInstanceOf[js.Any])
+    
+    inline def setDataColorFieldUndefined: Self = StObject.set(x, "dataColorField", js.undefined)
+    
+    inline def setDataFormatField(value: String): Self = StObject.set(x, "dataFormatField", value.asInstanceOf[js.Any])
+    
+    inline def setDataFormatFieldUndefined: Self = StObject.set(x, "dataFormatField", js.undefined)
+    
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
+    
+    inline def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+  }
 }
-

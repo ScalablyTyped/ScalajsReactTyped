@@ -2,20 +2,18 @@ package typingsJapgolly.materialUi
 
 import typingsJapgolly.materialUi.MaterialUI.SvgIconProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/SvgIcon", JSImport.Namespace)
-@js.native
-object svgIconMod extends js.Object {
-  @js.native
-  class SvgIcon ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+object svgIconMod {
   
+  @JSImport("material-ui/SvgIcon", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class default () extends SvgIcon
   
+  @JSImport("material-ui/SvgIcon", "SvgIcon")
+  @js.native
+  open class SvgIcon ()
+    extends Component[SvgIconProps, js.Object, Any]
 }
-

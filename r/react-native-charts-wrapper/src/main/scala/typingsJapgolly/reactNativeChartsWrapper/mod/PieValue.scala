@@ -1,20 +1,28 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PieValue extends js.Object {
+trait PieValue extends StObject {
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var value: Double
 }
-
 object PieValue {
-  @scala.inline
-  def apply(value: Double, label: String = null): PieValue = {
+  
+  inline def apply(value: Double): PieValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[PieValue]
   }
+  
+  extension [Self <: PieValue](x: Self) {
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

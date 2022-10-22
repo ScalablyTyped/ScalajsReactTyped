@@ -1,34 +1,28 @@
 package typingsJapgolly.uglifyJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uglifyJsStrings {
-  @js.native
-  sealed trait all extends js.Object
   
   @js.native
-  sealed trait `inline` extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait some extends js.Object
+  sealed trait `inline` extends StObject
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait strict extends js.Object
+  sealed trait some extends StObject
+  inline def some: some = "some".asInstanceOf[some]
   
   @js.native
-  sealed trait verbose extends js.Object
+  sealed trait strict extends StObject
+  inline def strict: strict = "strict".asInstanceOf[strict]
   
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def some: some = "some".asInstanceOf[some]
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
-  @scala.inline
-  def verbose: verbose = "verbose".asInstanceOf[verbose]
+  @js.native
+  sealed trait verbose extends StObject
+  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
 }
-

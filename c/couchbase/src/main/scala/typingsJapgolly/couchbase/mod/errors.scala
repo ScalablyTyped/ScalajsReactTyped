@@ -1,321 +1,319 @@
 package typingsJapgolly.couchbase.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait errors extends js.Object
-
+sealed trait errors extends StObject
 /**
   * Enumeration of all error codes. See libcouchbase documentation for more details on what these errors represent.
   */
 @JSImport("couchbase", "errors")
 @js.native
-object errors extends js.Object {
+object errors extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[errors & Double] = js.native
+  
   /** Authentication should continue. **/
   @js.native
-  sealed trait authContinue extends errors
+  sealed trait authContinue
+    extends StObject
+       with errors
+  /* 1 */ val authContinue: typingsJapgolly.couchbase.mod.errors.authContinue & Double = js.native
   
   /** Error authenticating. **/
   @js.native
-  sealed trait authError extends errors
+  sealed trait authError
+    extends StObject
+       with errors
+  /* 2 */ val authError: typingsJapgolly.couchbase.mod.errors.authError & Double = js.native
   
   /** A bad environment variable was specified. **/
   @js.native
-  sealed trait badEnvironmentVariable extends errors
+  sealed trait badEnvironmentVariable
+    extends StObject
+       with errors
+  /* 35 */ val badEnvironmentVariable: typingsJapgolly.couchbase.mod.errors.badEnvironmentVariable & Double = js.native
   
   /** A bad handle was passed. **/
   @js.native
-  sealed trait badHandle extends errors
+  sealed trait badHandle
+    extends StObject
+       with errors
+  /* 29 */ val badHandle: typingsJapgolly.couchbase.mod.errors.badHandle & Double = js.native
   
   /** The bucket you request was not found. **/
   @js.native
-  sealed trait bukcketNotFound extends errors
+  sealed trait bukcketNotFound
+    extends StObject
+       with errors
+  /* 26 */ val bukcketNotFound: typingsJapgolly.couchbase.mod.errors.bukcketNotFound & Double = js.native
   
   /** An unknown error occured within libcouchbase. **/
   @js.native
-  sealed trait cLibGenericError extends errors
+  sealed trait cLibGenericError
+    extends StObject
+       with errors
+  /* 10 */ val cLibGenericError: typingsJapgolly.couchbase.mod.errors.cLibGenericError & Double = js.native
   
   /** Server is too busy to handle your request right now. **/
   @js.native
-  sealed trait cLibInternal extends errors
+  sealed trait cLibInternal
+    extends StObject
+       with errors
+  /* 6 */ val cLibInternal: typingsJapgolly.couchbase.mod.errors.cLibInternal & Double = js.native
   
   /** The server is out of memory. **/
   @js.native
-  sealed trait cLibOutOfMemory extends errors
+  sealed trait cLibOutOfMemory
+    extends StObject
+       with errors
+  /* 8 */ val cLibOutOfMemory: typingsJapgolly.couchbase.mod.errors.cLibOutOfMemory & Double = js.native
   
   /** An invalid arguement was passed. **/
   @js.native
-  sealed trait cLinInvalidArgument extends errors
+  sealed trait cLinInvalidArgument
+    extends StObject
+       with errors
+  /* 7 */ val cLinInvalidArgument: typingsJapgolly.couchbase.mod.errors.cLinInvalidArgument & Double = js.native
   
   /** Not all operations completed successfully. **/
   @js.native
-  sealed trait checkResults extends errors
+  sealed trait checkResults
+    extends StObject
+       with errors
+  /* 39 */ val checkResults: typingsJapgolly.couchbase.mod.errors.checkResults & Double = js.native
   
   /** libcouchbase is out of memory. **/
   @js.native
-  sealed trait clientOutOfMemory extends errors
+  sealed trait clientOutOfMemory
+    extends StObject
+       with errors
+  /* 27 */ val clientOutOfMemory: typingsJapgolly.couchbase.mod.errors.clientOutOfMemory & Double = js.native
   
   /** A temporary error occured in libcouchbase. Try again. **/
   @js.native
-  sealed trait clientTemporaryError extends errors
+  sealed trait clientTemporaryError
+    extends StObject
+       with errors
+  /* 28 */ val clientTemporaryError: typingsJapgolly.couchbase.mod.errors.clientTemporaryError & Double = js.native
   
   /** Error connecting to the server. **/
   @js.native
-  sealed trait connectError extends errors
+  sealed trait connectError
+    extends StObject
+       with errors
+  /* 25 */ val connectError: typingsJapgolly.couchbase.mod.errors.connectError & Double = js.native
   
   /** The passed incr/decr delta was invalid. **/
   @js.native
-  sealed trait deltaBadVal extends errors
+  sealed trait deltaBadVal
+    extends StObject
+       with errors
+  /* 3 */ val deltaBadVal: typingsJapgolly.couchbase.mod.errors.deltaBadVal & Double = js.native
   
   /** Duplicate items. **/
   @js.native
-  sealed trait duplicateItems extends errors
+  sealed trait duplicateItems
+    extends StObject
+       with errors
+  /* 33 */ val duplicateItems: typingsJapgolly.couchbase.mod.errors.duplicateItems & Double = js.native
   
   /** The specified durability requirements could not be satisfied. **/
   @js.native
-  sealed trait durabilityFailed extends errors
+  sealed trait durabilityFailed
+    extends StObject
+       with errors
+  /* 41 */ val durabilityFailed: typingsJapgolly.couchbase.mod.errors.durabilityFailed & Double = js.native
   
   /** Failed to find expected symbol in library. **/
   @js.native
-  sealed trait failedToFindSymbol extends errors
+  sealed trait failedToFindSymbol
+    extends StObject
+       with errors
+  /* 15 */ val failedToFindSymbol: typingsJapgolly.couchbase.mod.errors.failedToFindSymbol & Double = js.native
   
   /** Failed to open library. **/
   @js.native
-  sealed trait failedToOpenLibrary extends errors
+  sealed trait failedToOpenLibrary
+    extends StObject
+       with errors
+  /* 14 */ val failedToOpenLibrary: typingsJapgolly.couchbase.mod.errors.failedToOpenLibrary & Double = js.native
   
   /** A generic error occured in Couchnode. **/
   @js.native
-  sealed trait genericError extends errors
+  sealed trait genericError
+    extends StObject
+       with errors
+  /* 40 */ val genericError: typingsJapgolly.couchbase.mod.errors.genericError & Double = js.native
   
   /** Invalid arguements were passed. **/
   @js.native
-  sealed trait invalidArguments extends errors
+  sealed trait invalidArguments
+    extends StObject
+       with errors
+  /* 37 */ val invalidArguments: typingsJapgolly.couchbase.mod.errors.invalidArguments & Double = js.native
   
   /** The host format specified is invalid. **/
   @js.native
-  sealed trait invalidHostFormat extends errors
+  sealed trait invalidHostFormat
+    extends StObject
+       with errors
+  /* 31 */ val invalidHostFormat: typingsJapgolly.couchbase.mod.errors.invalidHostFormat & Double = js.native
   
   /** An invalid range was specified. **/
   @js.native
-  sealed trait invalidRange extends errors
+  sealed trait invalidRange
+    extends StObject
+       with errors
+  /* 9 */ val invalidRange: typingsJapgolly.couchbase.mod.errors.invalidRange & Double = js.native
   
   /** The key already exists on the server. **/
   @js.native
-  sealed trait keyAlreadyExists extends errors
+  sealed trait keyAlreadyExists
+    extends StObject
+       with errors
+  /* 12 */ val keyAlreadyExists: typingsJapgolly.couchbase.mod.errors.keyAlreadyExists & Double = js.native
   
   /** The key does not exist on the server. **/
   @js.native
-  sealed trait keyNotFound extends errors
+  sealed trait keyNotFound
+    extends StObject
+       with errors
+  /* 13 */ val keyNotFound: typingsJapgolly.couchbase.mod.errors.keyNotFound & Double = js.native
   
   /** A network error occured. **/
   @js.native
-  sealed trait networkError extends errors
+  sealed trait networkError
+    extends StObject
+       with errors
+  /* 16 */ val networkError: typingsJapgolly.couchbase.mod.errors.networkError & Double = js.native
   
   /** Key mapping failed and could not match a server. **/
   @js.native
-  sealed trait noMatchingServerForKey extends errors
+  sealed trait noMatchingServerForKey
+    extends StObject
+       with errors
+  /* 34 */ val noMatchingServerForKey: typingsJapgolly.couchbase.mod.errors.noMatchingServerForKey & Double = js.native
   
   /**  Not enough nodes to meet the operations durability requirements. **/
   @js.native
-  sealed trait notEnoughNodes extends errors
+  sealed trait notEnoughNodes
+    extends StObject
+       with errors
+  /* 32 */ val notEnoughNodes: typingsJapgolly.couchbase.mod.errors.notEnoughNodes & Double = js.native
   
   /** Operations were performed on the incorrect server. **/
   @js.native
-  sealed trait notMyVBucket extends errors
+  sealed trait notMyVBucket
+    extends StObject
+       with errors
+  /* 18 */ val notMyVBucket: typingsJapgolly.couchbase.mod.errors.notMyVBucket & Double = js.native
   
   /** The document was not stored. **/
   @js.native
-  sealed trait notSorted extends errors
+  sealed trait notSorted
+    extends StObject
+       with errors
+  /* 19 */ val notSorted: typingsJapgolly.couchbase.mod.errors.notSorted & Double = js.native
   
   /** An unsupported operation was sent to the server. **/
   @js.native
-  sealed trait notSupported extends errors
+  sealed trait notSupported
+    extends StObject
+       with errors
+  /* 20 */ val notSupported: typingsJapgolly.couchbase.mod.errors.notSupported & Double = js.native
   
   /** Object is too large to be stored on the cluster. **/
   @js.native
-  sealed trait objectTooBig extends errors
+  sealed trait objectTooBig
+    extends StObject
+       with errors
+  /* 4 */ val objectTooBig: typingsJapgolly.couchbase.mod.errors.objectTooBig & Double = js.native
   
   /** Couchnode is out of memory. **/
   @js.native
-  sealed trait outOfMemory extends errors
+  sealed trait outOfMemory
+    extends StObject
+       with errors
+  /* 36 */ val outOfMemory: typingsJapgolly.couchbase.mod.errors.outOfMemory & Double = js.native
   
   /** A protocol error occured. **/
   @js.native
-  sealed trait protocolError extends errors
+  sealed trait protocolError
+    extends StObject
+       with errors
+  /* 23 */ val protocolError: typingsJapgolly.couchbase.mod.errors.protocolError & Double = js.native
   
   /** An error occured during a RESTful operation. **/
   @js.native
-  sealed trait restError extends errors
+  sealed trait restError
+    extends StObject
+       with errors
+  /* 42 */ val restError: typingsJapgolly.couchbase.mod.errors.restError & Double = js.native
   
   /** An error occured while trying to schedule the operation. **/
   @js.native
-  sealed trait schedulingError extends errors
+  sealed trait schedulingError
+    extends StObject
+       with errors
+  /* 38 */ val schedulingError: typingsJapgolly.couchbase.mod.errors.schedulingError & Double = js.native
   
   /** A server bug caused the operation to fail. **/
   @js.native
-  sealed trait serverBug extends errors
+  sealed trait serverBug
+    extends StObject
+       with errors
+  /* 30 */ val serverBug: typingsJapgolly.couchbase.mod.errors.serverBug & Double = js.native
   
   /** Operation was successful. **/
   @js.native
-  sealed trait serverBusy extends errors
+  sealed trait serverBusy
+    extends StObject
+       with errors
+  /* 5 */ val serverBusy: typingsJapgolly.couchbase.mod.errors.serverBusy & Double = js.native
   
   /** Operation was successful. **/
   @js.native
-  sealed trait success extends errors
+  sealed trait success
+    extends StObject
+       with errors
+  /* 0 */ val success: typingsJapgolly.couchbase.mod.errors.success & Double = js.native
   
   /** A temporary error occured. Try again. **/
   @js.native
-  sealed trait temporaryError extends errors
+  sealed trait temporaryError
+    extends StObject
+       with errors
+  /* 11 */ val temporaryError: typingsJapgolly.couchbase.mod.errors.temporaryError & Double = js.native
   
   /** The operation timed out. **/
   @js.native
-  sealed trait timedOut extends errors
+  sealed trait timedOut
+    extends StObject
+       with errors
+  /* 24 */ val timedOut: typingsJapgolly.couchbase.mod.errors.timedOut & Double = js.native
   
   /** An unknown command was sent to the server. **/
   @js.native
-  sealed trait unknownCommand extends errors
+  sealed trait unknownCommand
+    extends StObject
+       with errors
+  /* 21 */ val unknownCommand: typingsJapgolly.couchbase.mod.errors.unknownCommand & Double = js.native
   
   /** An unknown host was specified. **/
   @js.native
-  sealed trait unknownHost extends errors
+  sealed trait unknownHost
+    extends StObject
+       with errors
+  /* 22 */ val unknownHost: typingsJapgolly.couchbase.mod.errors.unknownHost & Double = js.native
   
   /** Operations were performed on the incorrect server. **/
   @js.native
-  sealed trait wrongServer extends errors
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[errors with Double] = js.native
-  /* 1 */ @js.native
-  object authContinue extends TopLevel[authContinue with Double]
-  
-  /* 2 */ @js.native
-  object authError extends TopLevel[authError with Double]
-  
-  /* 35 */ @js.native
-  object badEnvironmentVariable extends TopLevel[badEnvironmentVariable with Double]
-  
-  /* 29 */ @js.native
-  object badHandle extends TopLevel[badHandle with Double]
-  
-  /* 26 */ @js.native
-  object bukcketNotFound extends TopLevel[bukcketNotFound with Double]
-  
-  /* 10 */ @js.native
-  object cLibGenericError extends TopLevel[cLibGenericError with Double]
-  
-  /* 6 */ @js.native
-  object cLibInternal extends TopLevel[cLibInternal with Double]
-  
-  /* 8 */ @js.native
-  object cLibOutOfMemory extends TopLevel[cLibOutOfMemory with Double]
-  
-  /* 7 */ @js.native
-  object cLinInvalidArgument extends TopLevel[cLinInvalidArgument with Double]
-  
-  /* 39 */ @js.native
-  object checkResults extends TopLevel[checkResults with Double]
-  
-  /* 27 */ @js.native
-  object clientOutOfMemory extends TopLevel[clientOutOfMemory with Double]
-  
-  /* 28 */ @js.native
-  object clientTemporaryError extends TopLevel[clientTemporaryError with Double]
-  
-  /* 25 */ @js.native
-  object connectError extends TopLevel[connectError with Double]
-  
-  /* 3 */ @js.native
-  object deltaBadVal extends TopLevel[deltaBadVal with Double]
-  
-  /* 33 */ @js.native
-  object duplicateItems extends TopLevel[duplicateItems with Double]
-  
-  /* 41 */ @js.native
-  object durabilityFailed extends TopLevel[durabilityFailed with Double]
-  
-  /* 15 */ @js.native
-  object failedToFindSymbol extends TopLevel[failedToFindSymbol with Double]
-  
-  /* 14 */ @js.native
-  object failedToOpenLibrary extends TopLevel[failedToOpenLibrary with Double]
-  
-  /* 40 */ @js.native
-  object genericError extends TopLevel[genericError with Double]
-  
-  /* 37 */ @js.native
-  object invalidArguments extends TopLevel[invalidArguments with Double]
-  
-  /* 31 */ @js.native
-  object invalidHostFormat extends TopLevel[invalidHostFormat with Double]
-  
-  /* 9 */ @js.native
-  object invalidRange extends TopLevel[invalidRange with Double]
-  
-  /* 12 */ @js.native
-  object keyAlreadyExists extends TopLevel[keyAlreadyExists with Double]
-  
-  /* 13 */ @js.native
-  object keyNotFound extends TopLevel[keyNotFound with Double]
-  
-  /* 16 */ @js.native
-  object networkError extends TopLevel[networkError with Double]
-  
-  /* 34 */ @js.native
-  object noMatchingServerForKey extends TopLevel[noMatchingServerForKey with Double]
-  
-  /* 32 */ @js.native
-  object notEnoughNodes extends TopLevel[notEnoughNodes with Double]
-  
-  /* 18 */ @js.native
-  object notMyVBucket extends TopLevel[notMyVBucket with Double]
-  
-  /* 19 */ @js.native
-  object notSorted extends TopLevel[notSorted with Double]
-  
-  /* 20 */ @js.native
-  object notSupported extends TopLevel[notSupported with Double]
-  
-  /* 4 */ @js.native
-  object objectTooBig extends TopLevel[objectTooBig with Double]
-  
-  /* 36 */ @js.native
-  object outOfMemory extends TopLevel[outOfMemory with Double]
-  
-  /* 23 */ @js.native
-  object protocolError extends TopLevel[protocolError with Double]
-  
-  /* 42 */ @js.native
-  object restError extends TopLevel[restError with Double]
-  
-  /* 38 */ @js.native
-  object schedulingError extends TopLevel[schedulingError with Double]
-  
-  /* 30 */ @js.native
-  object serverBug extends TopLevel[serverBug with Double]
-  
-  /* 5 */ @js.native
-  object serverBusy extends TopLevel[serverBusy with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 11 */ @js.native
-  object temporaryError extends TopLevel[temporaryError with Double]
-  
-  /* 24 */ @js.native
-  object timedOut extends TopLevel[timedOut with Double]
-  
-  /* 21 */ @js.native
-  object unknownCommand extends TopLevel[unknownCommand with Double]
-  
-  /* 22 */ @js.native
-  object unknownHost extends TopLevel[unknownHost with Double]
-  
-  /* 17 */ @js.native
-  object wrongServer extends TopLevel[wrongServer with Double]
-  
+  sealed trait wrongServer
+    extends StObject
+       with errors
+  /* 17 */ val wrongServer: typingsJapgolly.couchbase.mod.errors.wrongServer & Double = js.native
 }
-

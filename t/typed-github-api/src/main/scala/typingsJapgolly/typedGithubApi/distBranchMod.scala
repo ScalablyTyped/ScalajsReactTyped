@@ -1,31 +1,36 @@
 package typingsJapgolly.typedGithubApi
 
-import typingsJapgolly.typedGithubApi.branchRefMod.BranchRefClass
-import typingsJapgolly.typedGithubApi.interfacesBranchMod.Branch
-import typingsJapgolly.typedGithubApi.interfacesCommitMod.CommitSummary
-import typingsJapgolly.typedGithubApi.interfacesRepositoryMod.RepositoryRef
-import typingsJapgolly.typedGithubApi.repositoryRefMod.RepositoryRefClass
+import typingsJapgolly.typedGithubApi.distBranchRefMod.BranchRefClass
+import typingsJapgolly.typedGithubApi.distInterfacesBranchMod.Branch
+import typingsJapgolly.typedGithubApi.distInterfacesCommitMod.CommitSummary
+import typingsJapgolly.typedGithubApi.distInterfacesRepositoryMod.RepositoryRef
+import typingsJapgolly.typedGithubApi.distRepositoryRefMod.RepositoryRefClass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typed-github-api/dist/branch", JSImport.Namespace)
-@js.native
-object distBranchMod extends js.Object {
+object distBranchMod {
+  
+  @JSImport("typed-github-api/dist/branch", "BranchClass")
   @js.native
-  class BranchClass protected ()
+  open class BranchClass protected ()
     extends BranchRefClass
        with Branch {
-    def this(repository: RepositoryRefClass, data: typingsJapgolly.typedGithubApi.branchMod.Branch) = this()
+    def this(
+      repository: RepositoryRefClass,
+      data: typingsJapgolly.typedGithubApi.distApiInterfacesBranchMod.Branch
+    ) = this()
+    
     /* CompleteClass */
-    override var commit: CommitSummary = js.native
-    /* CompleteClass */
-    override val name: String = js.native
-    /* CompleteClass */
-    override val repository: RepositoryRef = js.native
+    var commit: CommitSummary = js.native
+    
     /* CompleteClass */
     override def loadAsync(): js.Promise[Branch | Null] = js.native
+    
+    /* CompleteClass */
+    override val name: String = js.native
+    
+    /* CompleteClass */
+    override val repository: RepositoryRef = js.native
   }
-  
 }
-

@@ -1,11 +1,13 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IterationStatement extends Statement {
-  var statement: Statement = js.native
+trait IterationStatement
+  extends StObject
+     with Statement {
+  
+  val statement: Statement = js.native
 }
-

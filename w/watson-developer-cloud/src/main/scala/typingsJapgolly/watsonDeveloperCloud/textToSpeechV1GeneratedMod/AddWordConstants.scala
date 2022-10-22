@@ -1,125 +1,122 @@
 package typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `addWord` operation. */
-@JSImport("watson-developer-cloud/text-to-speech/v1-generated", "AddWordConstants")
-@js.native
-object AddWordConstants extends js.Object {
-  @js.native
-  sealed trait PartOfSpeech extends js.Object
+object AddWordConstants {
   
-  /** **Japanese only.** The part of speech for the word. The service uses the value to produce the correct intonation for the word. You can create only a single entry, with or without a single part of speech, for any word; you cannot create multiple entries with different parts of speech for the same word. For more information, see [Working with Japanese entries](https://cloud.ibm.com/docs/services/text-to-speech/custom-rules.html#jaNotes). */
   @js.native
-  object PartOfSpeech extends js.Object {
-    @js.native
-    sealed trait DOSI extends PartOfSpeech
-    
-    @js.native
-    sealed trait FUKU extends PartOfSpeech
-    
-    @js.native
-    sealed trait GOBI extends PartOfSpeech
-    
-    @js.native
-    sealed trait HOKA extends PartOfSpeech
-    
-    @js.native
-    sealed trait JODO extends PartOfSpeech
-    
-    @js.native
-    sealed trait JOSI extends PartOfSpeech
-    
-    @js.native
-    sealed trait KATO extends PartOfSpeech
-    
-    @js.native
-    sealed trait KEDO extends PartOfSpeech
-    
-    @js.native
-    sealed trait KEYO extends PartOfSpeech
-    
-    @js.native
-    sealed trait KIGO extends PartOfSpeech
-    
-    @js.native
-    sealed trait KOYU extends PartOfSpeech
-    
-    @js.native
-    sealed trait MESI extends PartOfSpeech
-    
-    @js.native
-    sealed trait RETA extends PartOfSpeech
-    
-    @js.native
-    sealed trait STBI extends PartOfSpeech
-    
-    @js.native
-    sealed trait STTO extends PartOfSpeech
-    
-    @js.native
-    sealed trait STZO extends PartOfSpeech
-    
-    @js.native
-    sealed trait SUJI extends PartOfSpeech
+  sealed trait PartOfSpeech extends StObject
+  /** **Japanese only.** The part of speech for the word. The service uses the value to produce the correct intonation for the word. You can create only a single entry, with or without a single part of speech, for any word; you cannot create multiple entries with different parts of speech for the same word. For more information, see [Working with Japanese entries](https://cloud.ibm.com/docs/services/text-to-speech/custom-rules.html#jaNotes). */
+  @JSImport("watson-developer-cloud/text-to-speech/v1-generated", "AddWordConstants.PartOfSpeech")
+  @js.native
+  object PartOfSpeech extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[PartOfSpeech with String] = js.native
-    /* "Dosi" */ @js.native
-    object DOSI extends TopLevel[DOSI with String]
+    def apply(value: String): js.UndefOr[PartOfSpeech & String] = js.native
     
-    /* "Fuku" */ @js.native
-    object FUKU extends TopLevel[FUKU with String]
+    @js.native
+    sealed trait DOSI
+      extends StObject
+         with PartOfSpeech
+    /* "Dosi" */ val DOSI: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.DOSI & String = js.native
     
-    /* "Gobi" */ @js.native
-    object GOBI extends TopLevel[GOBI with String]
+    @js.native
+    sealed trait FUKU
+      extends StObject
+         with PartOfSpeech
+    /* "Fuku" */ val FUKU: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.FUKU & String = js.native
     
-    /* "Hoka" */ @js.native
-    object HOKA extends TopLevel[HOKA with String]
+    @js.native
+    sealed trait GOBI
+      extends StObject
+         with PartOfSpeech
+    /* "Gobi" */ val GOBI: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.GOBI & String = js.native
     
-    /* "Jodo" */ @js.native
-    object JODO extends TopLevel[JODO with String]
+    @js.native
+    sealed trait HOKA
+      extends StObject
+         with PartOfSpeech
+    /* "Hoka" */ val HOKA: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.HOKA & String = js.native
     
-    /* "Josi" */ @js.native
-    object JOSI extends TopLevel[JOSI with String]
+    @js.native
+    sealed trait JODO
+      extends StObject
+         with PartOfSpeech
+    /* "Jodo" */ val JODO: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.JODO & String = js.native
     
-    /* "Kato" */ @js.native
-    object KATO extends TopLevel[KATO with String]
+    @js.native
+    sealed trait JOSI
+      extends StObject
+         with PartOfSpeech
+    /* "Josi" */ val JOSI: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.JOSI & String = js.native
     
-    /* "Kedo" */ @js.native
-    object KEDO extends TopLevel[KEDO with String]
+    @js.native
+    sealed trait KATO
+      extends StObject
+         with PartOfSpeech
+    /* "Kato" */ val KATO: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.KATO & String = js.native
     
-    /* "Keyo" */ @js.native
-    object KEYO extends TopLevel[KEYO with String]
+    @js.native
+    sealed trait KEDO
+      extends StObject
+         with PartOfSpeech
+    /* "Kedo" */ val KEDO: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.KEDO & String = js.native
     
-    /* "Kigo" */ @js.native
-    object KIGO extends TopLevel[KIGO with String]
+    @js.native
+    sealed trait KEYO
+      extends StObject
+         with PartOfSpeech
+    /* "Keyo" */ val KEYO: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.KEYO & String = js.native
     
-    /* "Koyu" */ @js.native
-    object KOYU extends TopLevel[KOYU with String]
+    @js.native
+    sealed trait KIGO
+      extends StObject
+         with PartOfSpeech
+    /* "Kigo" */ val KIGO: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.KIGO & String = js.native
     
-    /* "Mesi" */ @js.native
-    object MESI extends TopLevel[MESI with String]
+    @js.native
+    sealed trait KOYU
+      extends StObject
+         with PartOfSpeech
+    /* "Koyu" */ val KOYU: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.KOYU & String = js.native
     
-    /* "Reta" */ @js.native
-    object RETA extends TopLevel[RETA with String]
+    @js.native
+    sealed trait MESI
+      extends StObject
+         with PartOfSpeech
+    /* "Mesi" */ val MESI: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.MESI & String = js.native
     
-    /* "Stbi" */ @js.native
-    object STBI extends TopLevel[STBI with String]
+    @js.native
+    sealed trait RETA
+      extends StObject
+         with PartOfSpeech
+    /* "Reta" */ val RETA: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.RETA & String = js.native
     
-    /* "Stto" */ @js.native
-    object STTO extends TopLevel[STTO with String]
+    @js.native
+    sealed trait STBI
+      extends StObject
+         with PartOfSpeech
+    /* "Stbi" */ val STBI: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.STBI & String = js.native
     
-    /* "Stzo" */ @js.native
-    object STZO extends TopLevel[STZO with String]
+    @js.native
+    sealed trait STTO
+      extends StObject
+         with PartOfSpeech
+    /* "Stto" */ val STTO: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.STTO & String = js.native
     
-    /* "Suji" */ @js.native
-    object SUJI extends TopLevel[SUJI with String]
+    @js.native
+    sealed trait STZO
+      extends StObject
+         with PartOfSpeech
+    /* "Stzo" */ val STZO: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.STZO & String = js.native
     
+    @js.native
+    sealed trait SUJI
+      extends StObject
+         with PartOfSpeech
+    /* "Suji" */ val SUJI: typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod.AddWordConstants.PartOfSpeech.SUJI & String = js.native
   }
-  
 }
-

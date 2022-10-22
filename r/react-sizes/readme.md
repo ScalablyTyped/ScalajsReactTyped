@@ -10,15 +10,12 @@ Hoc to easily map window sizes to props.
 | ------------------ | :-------------: |
 | Full name          | react-sizes |
 | Keywords           | react, hoc, media, query, react-sizes, react, hoc, sizes, media, query |
-| # releases         | 9 |
-| # dependents       | 25 |
-| # downloads        | 1047912 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 54787.333333333336 |
+| # stars            | 729.0 |
 
 ## Links
-- [Homepage](https://github.com/renatorib/react-sizes#readme)
-- [Bugs](https://github.com/renatorib/react-sizes/issues)
-- [Repository](https://github.com/renatorib/react-sizes)
 - [Npm](https://www.npmjs.com/package/react-sizes)
     
 

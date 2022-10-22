@@ -2,51 +2,83 @@ package typingsJapgolly.googleVisualization.google.visualization
 
 import typingsJapgolly.googleVisualization.googleVisualizationStrings.function
 import typingsJapgolly.googleVisualization.googleVisualizationStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LineChartSeriesOptions extends ChartSeriesOptionsBase {
+trait LineChartSeriesOptions
+  extends StObject
+     with ChartSeriesOptionsBase {
+  
   var annotations: js.UndefOr[ChartAnnotations] = js.undefined
+  
   var curveType: js.UndefOr[none | function] = js.undefined
+  
   var labelInLegend: js.UndefOr[String] = js.undefined
+  
   var lineDashStyle: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var lineWidth: js.UndefOr[Double] = js.undefined
+  
   var pointShape: js.UndefOr[ChartPointShape] = js.undefined
+  
   var pointSize: js.UndefOr[Double] = js.undefined
+  
   var pointsVisible: js.UndefOr[Boolean] = js.undefined
+  
   var targetAxisIndex: js.UndefOr[Double] = js.undefined
+  
   var visibleInLegend: js.UndefOr[Boolean] = js.undefined
 }
-
 object LineChartSeriesOptions {
-  @scala.inline
-  def apply(
-    annotations: ChartAnnotations = null,
-    color: String = null,
-    curveType: none | function = null,
-    labelInLegend: String = null,
-    lineDashStyle: js.Array[Double] = null,
-    lineWidth: Int | Double = null,
-    pointShape: ChartPointShape = null,
-    pointSize: Int | Double = null,
-    pointsVisible: js.UndefOr[Boolean] = js.undefined,
-    targetAxisIndex: Int | Double = null,
-    visibleInLegend: js.UndefOr[Boolean] = js.undefined
-  ): LineChartSeriesOptions = {
+  
+  inline def apply(): LineChartSeriesOptions = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (curveType != null) __obj.updateDynamic("curveType")(curveType.asInstanceOf[js.Any])
-    if (labelInLegend != null) __obj.updateDynamic("labelInLegend")(labelInLegend.asInstanceOf[js.Any])
-    if (lineDashStyle != null) __obj.updateDynamic("lineDashStyle")(lineDashStyle.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (pointShape != null) __obj.updateDynamic("pointShape")(pointShape.asInstanceOf[js.Any])
-    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible.asInstanceOf[js.Any])
-    if (targetAxisIndex != null) __obj.updateDynamic("targetAxisIndex")(targetAxisIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleInLegend)) __obj.updateDynamic("visibleInLegend")(visibleInLegend.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineChartSeriesOptions]
   }
+  
+  extension [Self <: LineChartSeriesOptions](x: Self) {
+    
+    inline def setAnnotations(value: ChartAnnotations): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    
+    inline def setCurveType(value: none | function): Self = StObject.set(x, "curveType", value.asInstanceOf[js.Any])
+    
+    inline def setCurveTypeUndefined: Self = StObject.set(x, "curveType", js.undefined)
+    
+    inline def setLabelInLegend(value: String): Self = StObject.set(x, "labelInLegend", value.asInstanceOf[js.Any])
+    
+    inline def setLabelInLegendUndefined: Self = StObject.set(x, "labelInLegend", js.undefined)
+    
+    inline def setLineDashStyle(value: js.Array[Double]): Self = StObject.set(x, "lineDashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineDashStyleUndefined: Self = StObject.set(x, "lineDashStyle", js.undefined)
+    
+    inline def setLineDashStyleVarargs(value: Double*): Self = StObject.set(x, "lineDashStyle", js.Array(value*))
+    
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
+    inline def setPointShape(value: ChartPointShape): Self = StObject.set(x, "pointShape", value.asInstanceOf[js.Any])
+    
+    inline def setPointShapeUndefined: Self = StObject.set(x, "pointShape", js.undefined)
+    
+    inline def setPointSize(value: Double): Self = StObject.set(x, "pointSize", value.asInstanceOf[js.Any])
+    
+    inline def setPointSizeUndefined: Self = StObject.set(x, "pointSize", js.undefined)
+    
+    inline def setPointsVisible(value: Boolean): Self = StObject.set(x, "pointsVisible", value.asInstanceOf[js.Any])
+    
+    inline def setPointsVisibleUndefined: Self = StObject.set(x, "pointsVisible", js.undefined)
+    
+    inline def setTargetAxisIndex(value: Double): Self = StObject.set(x, "targetAxisIndex", value.asInstanceOf[js.Any])
+    
+    inline def setTargetAxisIndexUndefined: Self = StObject.set(x, "targetAxisIndex", js.undefined)
+    
+    inline def setVisibleInLegend(value: Boolean): Self = StObject.set(x, "visibleInLegend", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleInLegendUndefined: Self = StObject.set(x, "visibleInLegend", js.undefined)
+  }
 }
-

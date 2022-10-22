@@ -1,0 +1,119 @@
+package typingsJapgolly.csstype.mod.DataType
+
+import typingsJapgolly.csstype.mod.Property._AccentColor
+import typingsJapgolly.csstype.mod.Property._BackgroundColor
+import typingsJapgolly.csstype.mod.Property._Border
+import typingsJapgolly.csstype.mod.Property._BorderBlock
+import typingsJapgolly.csstype.mod.Property._BorderBlockColor
+import typingsJapgolly.csstype.mod.Property._BorderBlockEnd
+import typingsJapgolly.csstype.mod.Property._BorderBlockEndColor
+import typingsJapgolly.csstype.mod.Property._BorderBlockStart
+import typingsJapgolly.csstype.mod.Property._BorderBlockStartColor
+import typingsJapgolly.csstype.mod.Property._BorderBottom
+import typingsJapgolly.csstype.mod.Property._BorderBottomColor
+import typingsJapgolly.csstype.mod.Property._BorderColor
+import typingsJapgolly.csstype.mod.Property._BorderInline
+import typingsJapgolly.csstype.mod.Property._BorderInlineColor
+import typingsJapgolly.csstype.mod.Property._BorderInlineEnd
+import typingsJapgolly.csstype.mod.Property._BorderInlineEndColor
+import typingsJapgolly.csstype.mod.Property._BorderInlineStart
+import typingsJapgolly.csstype.mod.Property._BorderInlineStartColor
+import typingsJapgolly.csstype.mod.Property._BorderLeft
+import typingsJapgolly.csstype.mod.Property._BorderLeftColor
+import typingsJapgolly.csstype.mod.Property._BorderRight
+import typingsJapgolly.csstype.mod.Property._BorderRightColor
+import typingsJapgolly.csstype.mod.Property._BorderTop
+import typingsJapgolly.csstype.mod.Property._BorderTopColor
+import typingsJapgolly.csstype.mod.Property._CaretColor
+import typingsJapgolly.csstype.mod.Property._ColumnRule
+import typingsJapgolly.csstype.mod.Property._ColumnRuleColor
+import typingsJapgolly.csstype.mod.Property._FloodColor
+import typingsJapgolly.csstype.mod.Property._LightingColor
+import typingsJapgolly.csstype.mod.Property._MozBorderBottomColors
+import typingsJapgolly.csstype.mod.Property._MozBorderLeftColors
+import typingsJapgolly.csstype.mod.Property._MozBorderRightColors
+import typingsJapgolly.csstype.mod.Property._MozBorderTopColors
+import typingsJapgolly.csstype.mod.Property._MsScrollbar3dlightColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarArrowColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarBaseColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarDarkshadowColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarFaceColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarHighlightColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarShadowColor
+import typingsJapgolly.csstype.mod.Property._MsScrollbarTrackColor
+import typingsJapgolly.csstype.mod.Property._Outline
+import typingsJapgolly.csstype.mod.Property._OutlineColor
+import typingsJapgolly.csstype.mod.Property._StopColor
+import typingsJapgolly.csstype.mod.Property._TextDecoration
+import typingsJapgolly.csstype.mod.Property._TextDecorationColor
+import typingsJapgolly.csstype.mod.Property._TextEmphasis
+import typingsJapgolly.csstype.mod.Property._TextEmphasisColor
+import typingsJapgolly.csstype.mod.Property._WebkitBorderBefore
+import typingsJapgolly.csstype.mod.Property._WebkitBorderBeforeColor
+import typingsJapgolly.csstype.mod.Property._WebkitTapHighlightColor
+import typingsJapgolly.csstype.mod.Property._WebkitTextFillColor
+import typingsJapgolly.csstype.mod.Property._WebkitTextStroke
+import typingsJapgolly.csstype.mod.Property._WebkitTextStrokeColor
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait _Color
+  extends StObject
+     with _AccentColor
+     with _BackgroundColor
+     with _Border[Any]
+     with _BorderBlock[Any]
+     with _BorderBlockColor
+     with _BorderBlockEnd[Any]
+     with _BorderBlockEndColor
+     with _BorderBlockStart[Any]
+     with _BorderBlockStartColor
+     with _BorderBottom[Any]
+     with _BorderBottomColor
+     with _BorderColor
+     with _BorderInline[Any]
+     with _BorderInlineColor
+     with _BorderInlineEnd[Any]
+     with _BorderInlineEndColor
+     with _BorderInlineStart[Any]
+     with _BorderInlineStartColor
+     with _BorderLeft[Any]
+     with _BorderLeftColor
+     with _BorderRight[Any]
+     with _BorderRightColor
+     with _BorderTop[Any]
+     with _BorderTopColor
+     with _CaretColor
+     with typingsJapgolly.csstype.mod.Property._Color
+     with _ColumnRule[Any]
+     with _ColumnRuleColor
+     with _FinalBgLayer[Any]
+     with _FloodColor
+     with _LightingColor
+     with _MozBorderBottomColors
+     with _MozBorderLeftColors
+     with _MozBorderRightColors
+     with _MozBorderTopColors
+     with _MsScrollbar3dlightColor
+     with _MsScrollbarArrowColor
+     with _MsScrollbarBaseColor
+     with _MsScrollbarDarkshadowColor
+     with _MsScrollbarFaceColor
+     with _MsScrollbarHighlightColor
+     with _MsScrollbarShadowColor
+     with _MsScrollbarTrackColor
+     with _Outline[Any]
+     with _OutlineColor
+     with _Paint
+     with _StopColor
+     with _TextDecoration[Any]
+     with _TextDecorationColor
+     with _TextEmphasis
+     with _TextEmphasisColor
+     with _WebkitBorderBefore[Any]
+     with _WebkitBorderBeforeColor
+     with _WebkitTapHighlightColor
+     with _WebkitTextFillColor
+     with _WebkitTextStroke[Any]
+     with _WebkitTextStrokeColor

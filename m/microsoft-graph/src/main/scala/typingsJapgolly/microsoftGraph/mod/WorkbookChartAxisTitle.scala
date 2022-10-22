@@ -1,32 +1,45 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookChartAxisTitle extends Entity {
+trait WorkbookChartAxisTitle
+  extends StObject
+     with Entity {
+  
   // Represents the formatting of chart axis title. Read-only.
-  var format: js.UndefOr[WorkbookChartAxisTitleFormat] = js.undefined
+  var format: js.UndefOr[NullableOption[WorkbookChartAxisTitleFormat]] = js.undefined
+  
   // Represents the axis title.
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // A boolean that specifies the visibility of an axis title.
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object WorkbookChartAxisTitle {
-  @scala.inline
-  def apply(
-    format: WorkbookChartAxisTitleFormat = null,
-    id: String = null,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): WorkbookChartAxisTitle = {
+  
+  inline def apply(): WorkbookChartAxisTitle = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartAxisTitle]
   }
+  
+  extension [Self <: WorkbookChartAxisTitle](x: Self) {
+    
+    inline def setFormat(value: NullableOption[WorkbookChartAxisTitleFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatNull: Self = StObject.set(x, "format", null)
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setText(value: NullableOption[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextNull: Self = StObject.set(x, "text", null)
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

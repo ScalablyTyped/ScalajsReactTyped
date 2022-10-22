@@ -1,24 +1,32 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CredentialCreationOptions extends js.Object {
+trait CredentialCreationOptions extends StObject {
+  
+  /* standard dom */
   var publicKey: js.UndefOr[PublicKeyCredentialCreationOptions] = js.undefined
-  var signal: js.UndefOr[org.scalajs.dom.experimental.AbortSignal] = js.undefined
+  
+  /* standard dom */
+  var signal: js.UndefOr[org.scalajs.dom.AbortSignal] = js.undefined
 }
-
 object CredentialCreationOptions {
-  @scala.inline
-  def apply(
-    publicKey: PublicKeyCredentialCreationOptions = null,
-    signal: org.scalajs.dom.experimental.AbortSignal = null
-  ): CredentialCreationOptions = {
+  
+  inline def apply(): CredentialCreationOptions = {
     val __obj = js.Dynamic.literal()
-    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialCreationOptions]
   }
+  
+  extension [Self <: CredentialCreationOptions](x: Self) {
+    
+    inline def setPublicKey(value: PublicKeyCredentialCreationOptions): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
+    
+    inline def setSignal(value: org.scalajs.dom.AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+  }
 }
-

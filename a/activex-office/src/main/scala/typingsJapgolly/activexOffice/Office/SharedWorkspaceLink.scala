@@ -1,26 +1,88 @@
 package typingsJapgolly.activexOffice.Office
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Office.SharedWorkspaceLink")
-@js.native
-class SharedWorkspaceLink protected () extends js.Object {
-  val Application: js.Any = js.native
-  val CreatedBy: String = js.native
-  val CreatedDate: VarDate = js.native
-  val Creator: Double = js.native
-  var Description: String = js.native
-  val ModifiedBy: String = js.native
-  val ModifiedDate: VarDate = js.native
-  var Notes: String = js.native
-  @JSName("Office.SharedWorkspaceLink_typekey")
-  var OfficeDotSharedWorkspaceLink_typekey: SharedWorkspaceLink = js.native
-  val Parent: js.Any = js.native
-  var URL: String = js.native
-  def Delete(): Unit = js.native
-  def Save(): Unit = js.native
+trait SharedWorkspaceLink extends StObject {
+  
+  val Application: Any
+  
+  val CreatedBy: String
+  
+  val CreatedDate: VarDate
+  
+  val Creator: Double
+  
+  def Delete(): Unit
+  
+  var Description: String
+  
+  val ModifiedBy: String
+  
+  val ModifiedDate: VarDate
+  
+  var Notes: String
+  
+  /* private */ @JSName("Office.SharedWorkspaceLink_typekey")
+  var OfficeDotSharedWorkspaceLink_typekey: SharedWorkspaceLink
+  
+  val Parent: Any
+  
+  def Save(): Unit
+  
+  var URL: String
 }
-
+object SharedWorkspaceLink {
+  
+  inline def apply(
+    Application: Any,
+    CreatedBy: String,
+    CreatedDate: VarDate,
+    Creator: Double,
+    Delete: Callback,
+    Description: String,
+    ModifiedBy: String,
+    ModifiedDate: VarDate,
+    Notes: String,
+    OfficeDotSharedWorkspaceLink_typekey: SharedWorkspaceLink,
+    Parent: Any,
+    Save: Callback,
+    URL: String
+  ): SharedWorkspaceLink = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], CreatedBy = CreatedBy.asInstanceOf[js.Any], CreatedDate = CreatedDate.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = Delete.toJsFn, Description = Description.asInstanceOf[js.Any], ModifiedBy = ModifiedBy.asInstanceOf[js.Any], ModifiedDate = ModifiedDate.asInstanceOf[js.Any], Notes = Notes.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Save = Save.toJsFn, URL = URL.asInstanceOf[js.Any])
+    __obj.updateDynamic("Office.SharedWorkspaceLink_typekey")(OfficeDotSharedWorkspaceLink_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SharedWorkspaceLink]
+  }
+  
+  extension [Self <: SharedWorkspaceLink](x: Self) {
+    
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedBy(value: String): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedDate(value: VarDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setDelete(value: Callback): Self = StObject.set(x, "Delete", value.toJsFn)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    
+    inline def setModifiedBy(value: String): Self = StObject.set(x, "ModifiedBy", value.asInstanceOf[js.Any])
+    
+    inline def setModifiedDate(value: VarDate): Self = StObject.set(x, "ModifiedDate", value.asInstanceOf[js.Any])
+    
+    inline def setNotes(value: String): Self = StObject.set(x, "Notes", value.asInstanceOf[js.Any])
+    
+    inline def setOfficeDotSharedWorkspaceLink_typekey(value: SharedWorkspaceLink): Self = StObject.set(x, "Office.SharedWorkspaceLink_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setSave(value: Callback): Self = StObject.set(x, "Save", value.toJsFn)
+    
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+  }
+}

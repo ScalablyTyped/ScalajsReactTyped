@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Core
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppViewBackButtonVisibility extends js.Object
-
+sealed trait AppViewBackButtonVisibility extends StObject
 /** Defines constants that specify whether the back button is shown in the system UI. */
 @JSGlobal("Windows.UI.Core.AppViewBackButtonVisibility")
 @js.native
-object AppViewBackButtonVisibility extends js.Object {
+object AppViewBackButtonVisibility extends StObject {
+  
   /** The back button is not shown and space is not reserved for it in the layout. */
   @js.native
-  sealed trait collapsed extends AppViewBackButtonVisibility
+  sealed trait collapsed
+    extends StObject
+       with AppViewBackButtonVisibility
   
   /** The back button is shown. */
   @js.native
-  sealed trait visible extends AppViewBackButtonVisibility
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppViewBackButtonVisibility with Double] = js.native
-  /* 1 */ @js.native
-  object collapsed extends TopLevel[collapsed with Double]
-  
-  /* 0 */ @js.native
-  object visible extends TopLevel[visible with Double]
-  
+  sealed trait visible
+    extends StObject
+       with AppViewBackButtonVisibility
 }
-

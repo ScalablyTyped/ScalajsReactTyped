@@ -1,15 +1,17 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "MarkupContent")
-@js.native
-object MarkupContent extends js.Object {
+object MarkupContent {
+  
+  @JSImport("vscode-languageserver", "MarkupContent")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Checks whether the given value conforms to the [MarkupContent](#MarkupContent) interface.
     */
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ Boolean = js.native
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ Boolean]
 }
-

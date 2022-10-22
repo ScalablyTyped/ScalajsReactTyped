@@ -10,10 +10,10 @@ Read a protobuf schema from the disk, parse it and resolve all imports
 | ------------------ | :-------------: |
 | Full name          | resolve-protobuf-schema |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 10561319 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3500167.3333333335 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/resolve-protobuf-schema)

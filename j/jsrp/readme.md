@@ -10,10 +10,10 @@ JavaScript SRP implementation
 | ------------------ | :-------------: |
 | Full name          | jsrp |
 | Keywords           | srp |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 8545 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 435.3333333333333 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://github.com/alax/jsrp)

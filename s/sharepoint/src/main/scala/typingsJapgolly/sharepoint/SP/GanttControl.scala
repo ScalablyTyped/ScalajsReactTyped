@@ -1,22 +1,24 @@
 package typingsJapgolly.sharepoint.SP
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.sharepoint.SP.JsGrid.ColumnInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.GanttControl")
-@js.native
-class GanttControl () extends js.Object {
-  def get_Columns(): js.Array[ColumnInfo] = js.native
+trait GanttControl extends StObject {
+  
+  def get_Columns(): js.Array[ColumnInfo]
 }
-
-/* static members */
-@JSGlobal("SP.GanttControl")
-@js.native
-object GanttControl extends js.Object {
-  var FnGanttCreationCallback: js.Array[js.Function1[/* control */ this.type, Unit]] = js.native
-  var Instances: js.Array[GanttControl] = js.native
-  def WaitForGanttCreation(callack: js.Function1[/* control */ this.type, Unit]): Unit = js.native
+object GanttControl {
+  
+  inline def apply(get_Columns: CallbackTo[js.Array[ColumnInfo]]): GanttControl = {
+    val __obj = js.Dynamic.literal(get_Columns = get_Columns.toJsFn)
+    __obj.asInstanceOf[GanttControl]
+  }
+  
+  extension [Self <: GanttControl](x: Self) {
+    
+    inline def setGet_Columns(value: CallbackTo[js.Array[ColumnInfo]]): Self = StObject.set(x, "get_Columns", value.toJsFn)
+  }
 }
-

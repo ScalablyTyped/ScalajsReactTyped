@@ -1,8 +1,8 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNative.reactNativeStrings.done
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNative.reactNativeStrings.search
   - typingsJapgolly.reactNative.reactNativeStrings.send
 */
-trait ReturnKeyType extends js.Object
-
+trait ReturnKeyType extends StObject
 object ReturnKeyType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def done: typingsJapgolly.reactNative.reactNativeStrings.done = this.cast("done")
-  @scala.inline
-  def go: typingsJapgolly.reactNative.reactNativeStrings.go = this.cast("go")
-  @scala.inline
-  def next: typingsJapgolly.reactNative.reactNativeStrings.next = this.cast("next")
-  @scala.inline
-  def search: typingsJapgolly.reactNative.reactNativeStrings.search = this.cast("search")
-  @scala.inline
-  def send: typingsJapgolly.reactNative.reactNativeStrings.send = this.cast("send")
+  
+  inline def done: typingsJapgolly.reactNative.reactNativeStrings.done = "done".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.done]
+  
+  inline def go: typingsJapgolly.reactNative.reactNativeStrings.go = "go".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.go]
+  
+  inline def next: typingsJapgolly.reactNative.reactNativeStrings.next = "next".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.next]
+  
+  inline def search: typingsJapgolly.reactNative.reactNativeStrings.search = "search".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.search]
+  
+  inline def send: typingsJapgolly.reactNative.reactNativeStrings.send = "send".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.send]
 }
-

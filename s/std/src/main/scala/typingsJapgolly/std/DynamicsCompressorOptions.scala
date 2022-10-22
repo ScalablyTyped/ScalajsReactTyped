@@ -1,39 +1,55 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DynamicsCompressorOptions extends AudioNodeOptions {
+trait DynamicsCompressorOptions
+  extends StObject
+     with AudioNodeOptions {
+  
+  /* standard dom */
   var attack: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var knee: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var ratio: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var release: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var threshold: js.UndefOr[Double] = js.undefined
 }
-
 object DynamicsCompressorOptions {
-  @scala.inline
-  def apply(
-    attack: Int | Double = null,
-    channelCount: Int | Double = null,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    knee: Int | Double = null,
-    ratio: Int | Double = null,
-    release: Int | Double = null,
-    threshold: Int | Double = null
-  ): DynamicsCompressorOptions = {
+  
+  inline def apply(): DynamicsCompressorOptions = {
     val __obj = js.Dynamic.literal()
-    if (attack != null) __obj.updateDynamic("attack")(attack.asInstanceOf[js.Any])
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (knee != null) __obj.updateDynamic("knee")(knee.asInstanceOf[js.Any])
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
-    if (release != null) __obj.updateDynamic("release")(release.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicsCompressorOptions]
   }
+  
+  extension [Self <: DynamicsCompressorOptions](x: Self) {
+    
+    inline def setAttack(value: Double): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
+    
+    inline def setAttackUndefined: Self = StObject.set(x, "attack", js.undefined)
+    
+    inline def setKnee(value: Double): Self = StObject.set(x, "knee", value.asInstanceOf[js.Any])
+    
+    inline def setKneeUndefined: Self = StObject.set(x, "knee", js.undefined)
+    
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+    
+    inline def setRelease(value: Double): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    
+    inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+    
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+  }
 }
-

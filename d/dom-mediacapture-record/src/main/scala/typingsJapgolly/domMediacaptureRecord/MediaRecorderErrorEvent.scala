@@ -1,15 +1,15 @@
 package typingsJapgolly.domMediacaptureRecord
 
-import org.scalajs.dom.raw.DOMException
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.DOMException
+import typingsJapgolly.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MediaRecorderErrorEvent")
 @js.native
-class MediaRecorderErrorEvent protected () extends Event_ {
-  def this(`type`: String, eventInitDict: MediaRecorderErrorEventInit) = this()
+trait MediaRecorderErrorEvent
+  extends StObject
+     with Event {
+  
   val error: DOMException = js.native
 }
-

@@ -1,22 +1,23 @@
 package typingsJapgolly.zoneJs
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a way to configure the interception of zone events.
   *
   * Only the `name` property is required (all other are optional).
   */
-trait ZoneSpec extends js.Object {
+trait ZoneSpec extends StObject {
+  
   /**
     * The name of the zone. Useful when debugging Zones.
     */
   var name: String
+  
   /**
     * Allows interception of task cancellation.
     *
@@ -31,9 +32,10 @@ trait ZoneSpec extends js.Object {
       /* currentZone */ Zone, 
       /* targetZone */ Zone, 
       /* task */ Task, 
-      _
+      Any
     ]
   ] = js.undefined
+  
   /**
     * Allows the interception of zone forking.
     *
@@ -49,10 +51,11 @@ trait ZoneSpec extends js.Object {
       /* parentZoneDelegate */ ZoneDelegate, 
       /* currentZone */ Zone, 
       /* targetZone */ Zone, 
-      /* zoneSpec */ ZoneSpec, 
+      /* zoneSpec */ this.type, 
       Zone
     ]
   ] = js.undefined
+  
   /**
     * Allows interception of the error handling.
     *
@@ -66,10 +69,11 @@ trait ZoneSpec extends js.Object {
       /* parentZoneDelegate */ ZoneDelegate, 
       /* currentZone */ Zone, 
       /* targetZone */ Zone, 
-      /* error */ js.Any, 
+      /* error */ Any, 
       Boolean
     ]
   ] = js.undefined
+  
   /**
     * Notifies of changes to the task queue empty status.
     *
@@ -87,6 +91,7 @@ trait ZoneSpec extends js.Object {
       Unit
     ]
   ] = js.undefined
+  
   /**
     * Allows interception of the wrapping of the callback.
     *
@@ -106,6 +111,7 @@ trait ZoneSpec extends js.Object {
       js.Function
     ]
   ] = js.undefined
+  
   /**
     * Allows interception of the callback invocation.
     *
@@ -123,23 +129,25 @@ trait ZoneSpec extends js.Object {
       /* currentZone */ Zone, 
       /* targetZone */ Zone, 
       /* delegate */ js.Function, 
-      /* applyThis */ js.Any, 
-      /* applyArgs */ js.UndefOr[js.Array[_]], 
+      /* applyThis */ Any, 
+      /* applyArgs */ js.UndefOr[js.Array[Any]], 
       /* source */ js.UndefOr[String], 
-      _
+      Any
     ]
   ] = js.undefined
+  
   var onInvokeTask: js.UndefOr[
     js.Function6[
       /* parentZoneDelegate */ ZoneDelegate, 
       /* currentZone */ Zone, 
       /* targetZone */ Zone, 
       /* task */ Task, 
-      /* applyThis */ js.Any, 
-      /* applyArgs */ js.UndefOr[js.Array[_]], 
-      _
+      /* applyThis */ Any, 
+      /* applyArgs */ js.UndefOr[js.Array[Any]], 
+      Any
     ]
   ] = js.undefined
+  
   /**
     * Allows interception of task scheduling.
     *
@@ -157,37 +165,73 @@ trait ZoneSpec extends js.Object {
       Task
     ]
   ] = js.undefined
+  
   /**
     * A set of properties to be associated with Zone. Use [Zone.get] to retrieve them.
     */
-  var properties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var properties: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
-
 object ZoneSpec {
-  @scala.inline
-  def apply(
-    name: String,
-    onCancelTask: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => CallbackTo[js.Any] = null,
-    onFork: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* zoneSpec */ ZoneSpec) => CallbackTo[Zone] = null,
-    onHandleError: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* error */ js.Any) => CallbackTo[Boolean] = null,
-    onHasTask: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* hasTaskState */ HasTaskState) => Callback = null,
-    onIntercept: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* delegate */ js.Function, /* source */ String) => CallbackTo[js.Function] = null,
-    onInvoke: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* delegate */ js.Function, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[js.Any]], /* source */ js.UndefOr[String]) => CallbackTo[js.Any] = null,
-    onInvokeTask: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[js.Any]]) => CallbackTo[js.Any] = null,
-    onScheduleTask: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => CallbackTo[Task] = null,
-    properties: StringDictionary[js.Any] = null
-  ): ZoneSpec = {
+  
+  inline def apply(name: String): ZoneSpec = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (onCancelTask != null) __obj.updateDynamic("onCancelTask")(js.Any.fromFunction4((t0: /* parentZoneDelegate */ typingsJapgolly.zoneJs.ZoneDelegate, t1: /* currentZone */ typingsJapgolly.zoneJs.Zone, t2: /* targetZone */ typingsJapgolly.zoneJs.Zone, t3: /* task */ typingsJapgolly.zoneJs.Task) => onCancelTask(t0, t1, t2, t3).runNow()))
-    if (onFork != null) __obj.updateDynamic("onFork")(js.Any.fromFunction4((t0: /* parentZoneDelegate */ typingsJapgolly.zoneJs.ZoneDelegate, t1: /* currentZone */ typingsJapgolly.zoneJs.Zone, t2: /* targetZone */ typingsJapgolly.zoneJs.Zone, t3: /* zoneSpec */ typingsJapgolly.zoneJs.ZoneSpec) => onFork(t0, t1, t2, t3).runNow()))
-    if (onHandleError != null) __obj.updateDynamic("onHandleError")(js.Any.fromFunction4((t0: /* parentZoneDelegate */ typingsJapgolly.zoneJs.ZoneDelegate, t1: /* currentZone */ typingsJapgolly.zoneJs.Zone, t2: /* targetZone */ typingsJapgolly.zoneJs.Zone, t3: /* error */ js.Any) => onHandleError(t0, t1, t2, t3).runNow()))
-    if (onHasTask != null) __obj.updateDynamic("onHasTask")(js.Any.fromFunction4((t0: /* parentZoneDelegate */ typingsJapgolly.zoneJs.ZoneDelegate, t1: /* currentZone */ typingsJapgolly.zoneJs.Zone, t2: /* targetZone */ typingsJapgolly.zoneJs.Zone, t3: /* hasTaskState */ typingsJapgolly.zoneJs.HasTaskState) => onHasTask(t0, t1, t2, t3).runNow()))
-    if (onIntercept != null) __obj.updateDynamic("onIntercept")(js.Any.fromFunction5((t0: /* parentZoneDelegate */ typingsJapgolly.zoneJs.ZoneDelegate, t1: /* currentZone */ typingsJapgolly.zoneJs.Zone, t2: /* targetZone */ typingsJapgolly.zoneJs.Zone, t3: /* delegate */ js.Function, t4: /* source */ java.lang.String) => onIntercept(t0, t1, t2, t3, t4).runNow()))
-    if (onInvoke != null) __obj.updateDynamic("onInvoke")(js.Any.fromFunction7((t0: /* parentZoneDelegate */ typingsJapgolly.zoneJs.ZoneDelegate, t1: /* currentZone */ typingsJapgolly.zoneJs.Zone, t2: /* targetZone */ typingsJapgolly.zoneJs.Zone, t3: /* delegate */ js.Function, t4: /* applyThis */ js.Any, t5: /* applyArgs */ js.UndefOr[js.Array[js.Any]], t6: /* source */ js.UndefOr[java.lang.String]) => onInvoke(t0, t1, t2, t3, t4, t5, t6).runNow()))
-    if (onInvokeTask != null) __obj.updateDynamic("onInvokeTask")(js.Any.fromFunction6((t0: /* parentZoneDelegate */ typingsJapgolly.zoneJs.ZoneDelegate, t1: /* currentZone */ typingsJapgolly.zoneJs.Zone, t2: /* targetZone */ typingsJapgolly.zoneJs.Zone, t3: /* task */ typingsJapgolly.zoneJs.Task, t4: /* applyThis */ js.Any, t5: /* applyArgs */ js.UndefOr[js.Array[js.Any]]) => onInvokeTask(t0, t1, t2, t3, t4, t5).runNow()))
-    if (onScheduleTask != null) __obj.updateDynamic("onScheduleTask")(js.Any.fromFunction4((t0: /* parentZoneDelegate */ typingsJapgolly.zoneJs.ZoneDelegate, t1: /* currentZone */ typingsJapgolly.zoneJs.Zone, t2: /* targetZone */ typingsJapgolly.zoneJs.Zone, t3: /* task */ typingsJapgolly.zoneJs.Task) => onScheduleTask(t0, t1, t2, t3).runNow()))
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneSpec]
   }
+  
+  extension [Self <: ZoneSpec](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setOnCancelTask(
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => Any
+    ): Self = StObject.set(x, "onCancelTask", js.Any.fromFunction4(value))
+    
+    inline def setOnCancelTaskUndefined: Self = StObject.set(x, "onCancelTask", js.undefined)
+    
+    inline def setOnFork(
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, ZoneSpec) => Zone
+    ): Self = StObject.set(x, "onFork", js.Any.fromFunction4(value))
+    
+    inline def setOnForkUndefined: Self = StObject.set(x, "onFork", js.undefined)
+    
+    inline def setOnHandleError(
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* error */ Any) => Boolean
+    ): Self = StObject.set(x, "onHandleError", js.Any.fromFunction4(value))
+    
+    inline def setOnHandleErrorUndefined: Self = StObject.set(x, "onHandleError", js.undefined)
+    
+    inline def setOnHasTask(
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* hasTaskState */ HasTaskState) => Callback
+    ): Self = StObject.set(x, "onHasTask", js.Any.fromFunction4((t0: /* parentZoneDelegate */ ZoneDelegate, t1: /* currentZone */ Zone, t2: /* targetZone */ Zone, t3: /* hasTaskState */ HasTaskState) => (value(t0, t1, t2, t3)).runNow()))
+    
+    inline def setOnHasTaskUndefined: Self = StObject.set(x, "onHasTask", js.undefined)
+    
+    inline def setOnIntercept(
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* delegate */ js.Function, /* source */ String) => js.Function
+    ): Self = StObject.set(x, "onIntercept", js.Any.fromFunction5(value))
+    
+    inline def setOnInterceptUndefined: Self = StObject.set(x, "onIntercept", js.undefined)
+    
+    inline def setOnInvoke(
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* delegate */ js.Function, /* applyThis */ Any, /* applyArgs */ js.UndefOr[js.Array[Any]], /* source */ js.UndefOr[String]) => Any
+    ): Self = StObject.set(x, "onInvoke", js.Any.fromFunction7(value))
+    
+    inline def setOnInvokeTask(
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task, /* applyThis */ Any, /* applyArgs */ js.UndefOr[js.Array[Any]]) => Any
+    ): Self = StObject.set(x, "onInvokeTask", js.Any.fromFunction6(value))
+    
+    inline def setOnInvokeTaskUndefined: Self = StObject.set(x, "onInvokeTask", js.undefined)
+    
+    inline def setOnInvokeUndefined: Self = StObject.set(x, "onInvoke", js.undefined)
+    
+    inline def setOnScheduleTask(
+      value: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => Task
+    ): Self = StObject.set(x, "onScheduleTask", js.Any.fromFunction4(value))
+    
+    inline def setOnScheduleTaskUndefined: Self = StObject.set(x, "onScheduleTask", js.undefined)
+    
+    inline def setProperties(value: StringDictionary[Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+  }
 }
-

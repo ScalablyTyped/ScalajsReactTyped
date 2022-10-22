@@ -1,16 +1,29 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "\u0275APP_ID_RANDOM_PROVIDER")
-@js.native
-object ɵAPPIDRANDOMPROVIDER extends js.Object {
-  var deps: js.Array[_] = js.native
-  var provide: InjectionToken[String] = js.native
-  @JSName("useFactory")
-  var useFactory_Original: js.Function0[String] = js.native
-  def useFactory(): String = js.native
+object ɵAPPIDRANDOMPROVIDER {
+  
+  @JSImport("@angular/core", "\u0275APP_ID_RANDOM_PROVIDER")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/core", "\u0275APP_ID_RANDOM_PROVIDER.deps")
+  @js.native
+  def deps: js.Array[Any] = js.native
+  inline def deps_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/core", "\u0275APP_ID_RANDOM_PROVIDER.provide")
+  @js.native
+  def provide: InjectionToken[String] = js.native
+  inline def provide_=(x: InjectionToken[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("provide")(x.asInstanceOf[js.Any])
+  
+  inline def useFactory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useFactory")().asInstanceOf[String]
+  @JSImport("@angular/core", "\u0275APP_ID_RANDOM_PROVIDER.useFactory")
+  @js.native
+  def useFactory_FɵAPPIDRANDOMPROVIDER: js.Function0[String] = js.native
+  
+  inline def useFactory_FɵAPPIDRANDOMPROVIDER_=(x: js.Function0[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useFactory")(x.asInstanceOf[js.Any])
 }
-

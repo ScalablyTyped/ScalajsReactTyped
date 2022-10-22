@@ -1,20 +1,26 @@
 package typingsJapgolly.qlikVisualizationextensions.ExtensionAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICustomArray extends ICustomControl {
+trait ICustomArray
+  extends StObject
+     with ICustomControl {
+  
   var addTranslation: String
+  
   var allowAdd: Boolean
+  
   var allowMove: Boolean
+  
   var allowRemove: Boolean
+  
   var itemTitleRef: String
 }
-
 object ICustomArray {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     addTranslation: String,
     allowAdd: Boolean,
     allowMove: Boolean,
@@ -28,5 +34,17 @@ object ICustomArray {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomArray]
   }
+  
+  extension [Self <: ICustomArray](x: Self) {
+    
+    inline def setAddTranslation(value: String): Self = StObject.set(x, "addTranslation", value.asInstanceOf[js.Any])
+    
+    inline def setAllowAdd(value: Boolean): Self = StObject.set(x, "allowAdd", value.asInstanceOf[js.Any])
+    
+    inline def setAllowMove(value: Boolean): Self = StObject.set(x, "allowMove", value.asInstanceOf[js.Any])
+    
+    inline def setAllowRemove(value: Boolean): Self = StObject.set(x, "allowRemove", value.asInstanceOf[js.Any])
+    
+    inline def setItemTitleRef(value: String): Self = StObject.set(x, "itemTitleRef", value.asInstanceOf[js.Any])
+  }
 }
-

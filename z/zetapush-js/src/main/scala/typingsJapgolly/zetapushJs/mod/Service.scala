@@ -1,19 +1,22 @@
 package typingsJapgolly.zetapushJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Service extends js.Object {
+trait Service extends StObject {
+  
   var DEFAULT_DEPLOYMENT_ID: String
 }
-
 object Service {
-  @scala.inline
-  def apply(DEFAULT_DEPLOYMENT_ID: String): Service = {
-    val __obj = js.Dynamic.literal(DEFAULT_DEPLOYMENT_ID = DEFAULT_DEPLOYMENT_ID.asInstanceOf[js.Any])
   
+  inline def apply(DEFAULT_DEPLOYMENT_ID: String): Service = {
+    val __obj = js.Dynamic.literal(DEFAULT_DEPLOYMENT_ID = DEFAULT_DEPLOYMENT_ID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]
   }
+  
+  extension [Self <: Service](x: Self) {
+    
+    inline def setDEFAULT_DEPLOYMENT_ID(value: String): Self = StObject.set(x, "DEFAULT_DEPLOYMENT_ID", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,41 +1,55 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.messageBarTypesMod.IMessageBarProps
+import typingsJapgolly.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.IMessageBarProps
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/MessageBar", JSImport.Namespace)
-@js.native
-object libMessageBarMod extends js.Object {
+object libMessageBarMod {
+  
+  @JSImport("office-ui-fabric-react/lib/MessageBar", "MessageBar")
   @js.native
-  class MessageBarBase protected ()
-    extends typingsJapgolly.officeUiFabricReact.messageBarMod.MessageBarBase {
+  val MessageBar: FunctionComponent[IMessageBarProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/MessageBar", "MessageBarBase")
+  @js.native
+  open class MessageBarBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsMessageBarMod.MessageBarBase {
     def this(props: IMessageBarProps) = this()
   }
-  
-  val MessageBar: FunctionComponent[IMessageBarProps] = js.native
   /* static members */
-  @js.native
-  object MessageBarBase extends js.Object {
-    var defaultProps: IMessageBarProps = js.native
+  object MessageBarBase {
+    
+    @JSImport("office-ui-fabric-react/lib/MessageBar", "MessageBarBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/MessageBar", "MessageBarBase.defaultProps")
+    @js.native
+    def defaultProps: IMessageBarProps = js.native
+    inline def defaultProps_=(x: IMessageBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/MessageBar", "MessageBarType")
   @js.native
-  object MessageBarType extends js.Object {
-    /* 2 */ val blocked: typingsJapgolly.officeUiFabricReact.messageBarTypesMod.MessageBarType.blocked with Double = js.native
-    /* 1 */ val error: typingsJapgolly.officeUiFabricReact.messageBarTypesMod.MessageBarType.error with Double = js.native
-    /* 0 */ val info: typingsJapgolly.officeUiFabricReact.messageBarTypesMod.MessageBarType.info with Double = js.native
-    /* 90000 */ val remove: typingsJapgolly.officeUiFabricReact.messageBarTypesMod.MessageBarType.remove with Double = js.native
-    /* 3 */ val severeWarning: typingsJapgolly.officeUiFabricReact.messageBarTypesMod.MessageBarType.severeWarning with Double = js.native
-    /* 4 */ val success: typingsJapgolly.officeUiFabricReact.messageBarTypesMod.MessageBarType.success with Double = js.native
-    /* 5 */ val warning: typingsJapgolly.officeUiFabricReact.messageBarTypesMod.MessageBarType.warning with Double = js.native
+  object MessageBarType extends StObject {
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typingsJapgolly.officeUiFabricReact.messageBarTypesMod.MessageBarType with Double
+        typingsJapgolly.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType & Double
       ] = js.native
+    
+    /* 2 */ val blocked: typingsJapgolly.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType.blocked & Double = js.native
+    
+    /* 1 */ val error: typingsJapgolly.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType.error & Double = js.native
+    
+    /* 0 */ val info: typingsJapgolly.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType.info & Double = js.native
+    
+    /* 3 */ val severeWarning: typingsJapgolly.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType.severeWarning & Double = js.native
+    
+    /* 4 */ val success: typingsJapgolly.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType.success & Double = js.native
+    
+    /* 5 */ val warning: typingsJapgolly.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType.warning & Double = js.native
   }
-  
 }
-

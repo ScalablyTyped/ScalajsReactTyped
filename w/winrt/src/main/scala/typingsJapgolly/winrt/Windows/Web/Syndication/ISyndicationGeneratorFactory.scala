@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Web.Syndication
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISyndicationGeneratorFactory extends js.Object {
+trait ISyndicationGeneratorFactory extends StObject {
+  
   def createSyndicationGenerator(text: String): SyndicationGenerator
 }
-
 object ISyndicationGeneratorFactory {
-  @scala.inline
-  def apply(createSyndicationGenerator: String => CallbackTo[SyndicationGenerator]): ISyndicationGeneratorFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createSyndicationGenerator")(js.Any.fromFunction1((t0: java.lang.String) => createSyndicationGenerator(t0).runNow()))
+  
+  inline def apply(createSyndicationGenerator: String => SyndicationGenerator): ISyndicationGeneratorFactory = {
+    val __obj = js.Dynamic.literal(createSyndicationGenerator = js.Any.fromFunction1(createSyndicationGenerator))
     __obj.asInstanceOf[ISyndicationGeneratorFactory]
   }
+  
+  extension [Self <: ISyndicationGeneratorFactory](x: Self) {
+    
+    inline def setCreateSyndicationGenerator(value: String => SyndicationGenerator): Self = StObject.set(x, "createSyndicationGenerator", js.Any.fromFunction1(value))
+  }
 }
-

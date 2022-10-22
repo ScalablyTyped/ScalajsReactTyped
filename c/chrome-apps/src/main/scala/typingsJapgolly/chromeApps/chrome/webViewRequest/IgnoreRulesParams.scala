@@ -1,11 +1,12 @@
 package typingsJapgolly.chromeApps.chrome.webViewRequest
 
 import typingsJapgolly.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IgnoreRulesParams extends js.Object {
+trait IgnoreRulesParams extends StObject {
+  
   /**
     * If set, rules with the specified tag are ignored. This ignoring is not persisted,
     * it affects only rules and their actions of the same network request stage.
@@ -14,6 +15,7 @@ trait IgnoreRulesParams extends js.Object {
     * Rules with the same priority may or may not be ignored.
     */
   var hasTag: js.UndefOr[String] = js.undefined
+  
   /**
     * If set, rules with a lower priority than the specified value are ignored.
     * This boundary is not persisted, it affects only rules and their actions
@@ -21,14 +23,21 @@ trait IgnoreRulesParams extends js.Object {
     */
   var lowerPriorityThan: js.UndefOr[integer] = js.undefined
 }
-
 object IgnoreRulesParams {
-  @scala.inline
-  def apply(hasTag: String = null, lowerPriorityThan: Int | Double = null): IgnoreRulesParams = {
+  
+  inline def apply(): IgnoreRulesParams = {
     val __obj = js.Dynamic.literal()
-    if (hasTag != null) __obj.updateDynamic("hasTag")(hasTag.asInstanceOf[js.Any])
-    if (lowerPriorityThan != null) __obj.updateDynamic("lowerPriorityThan")(lowerPriorityThan.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgnoreRulesParams]
   }
+  
+  extension [Self <: IgnoreRulesParams](x: Self) {
+    
+    inline def setHasTag(value: String): Self = StObject.set(x, "hasTag", value.asInstanceOf[js.Any])
+    
+    inline def setHasTagUndefined: Self = StObject.set(x, "hasTag", js.undefined)
+    
+    inline def setLowerPriorityThan(value: integer): Self = StObject.set(x, "lowerPriorityThan", value.asInstanceOf[js.Any])
+    
+    inline def setLowerPriorityThanUndefined: Self = StObject.set(x, "lowerPriorityThan", js.undefined)
+  }
 }
-

@@ -1,25 +1,37 @@
 package typingsJapgolly.node.cryptoMod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.node.nodeStrings.pkcs1
 import typingsJapgolly.node.nodeStrings.spki
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PublicKeyInput extends js.Object {
+trait PublicKeyInput extends StObject {
+  
   var format: js.UndefOr[KeyFormat] = js.undefined
+  
   var key: String | Buffer
+  
   var `type`: js.UndefOr[pkcs1 | spki] = js.undefined
 }
-
 object PublicKeyInput {
-  @scala.inline
-  def apply(key: String | Buffer, format: KeyFormat = null, `type`: pkcs1 | spki = null): PublicKeyInput = {
+  
+  inline def apply(key: String | Buffer): PublicKeyInput = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyInput]
   }
+  
+  extension [Self <: PublicKeyInput](x: Self) {
+    
+    inline def setFormat(value: KeyFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: pkcs1 | spki): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

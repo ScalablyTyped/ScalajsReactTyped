@@ -1,29 +1,46 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneContext
-import typingsJapgolly.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneProps
+import typingsJapgolly.officeUiFabricReact.libComponentsScrollablePaneScrollablePaneDottypesMod.IScrollablePaneContext
+import typingsJapgolly.officeUiFabricReact.libComponentsScrollablePaneScrollablePaneDottypesMod.IScrollablePaneProps
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.always
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.auto
 import typingsJapgolly.react.mod.Context
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/ScrollablePane", JSImport.Namespace)
-@js.native
-object libScrollablePaneMod extends js.Object {
+object libScrollablePaneMod {
+  
+  @JSImport("office-ui-fabric-react/lib/ScrollablePane", "ScrollablePane")
   @js.native
-  class ScrollablePaneBase protected ()
-    extends typingsJapgolly.officeUiFabricReact.scrollablePaneMod.ScrollablePaneBase {
+  val ScrollablePane: FunctionComponent[IScrollablePaneProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/ScrollablePane", "ScrollablePaneBase")
+  @js.native
+  open class ScrollablePaneBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsScrollablePaneMod.ScrollablePaneBase {
     def this(props: IScrollablePaneProps) = this()
   }
   
-  val ScrollablePane: FunctionComponent[IScrollablePaneProps] = js.native
-  val ScrollablePaneContext: Context[IScrollablePaneContext] = js.native
+  @JSImport("office-ui-fabric-react/lib/ScrollablePane", "ScrollablePaneContext")
   @js.native
-  object ScrollbarVisibility extends js.Object {
-    var always: typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.always = js.native
-    var auto: typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.auto = js.native
-  }
+  val ScrollablePaneContext: Context[IScrollablePaneContext] = js.native
   
+  object ScrollbarVisibility {
+    
+    @JSImport("office-ui-fabric-react/lib/ScrollablePane", "ScrollbarVisibility")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/ScrollablePane", "ScrollbarVisibility.always")
+    @js.native
+    def always: typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.always = js.native
+    inline def always_=(x: always): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("always")(x.asInstanceOf[js.Any])
+    
+    @JSImport("office-ui-fabric-react/lib/ScrollablePane", "ScrollbarVisibility.auto")
+    @js.native
+    def auto: typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.auto = js.native
+    inline def auto_=(x: auto): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auto")(x.asInstanceOf[js.Any])
+  }
 }
-

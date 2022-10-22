@@ -1,53 +1,63 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalTextOperator extends js.Object
-
+sealed trait ConditionalTextOperator extends StObject
 /**
-  *
   * Represents the operator of the text conditional format type.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalTextOperator")
 @js.native
-object ConditionalTextOperator extends js.Object {
+object ConditionalTextOperator extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait beginsWith extends ConditionalTextOperator
+  sealed trait beginsWith
+    extends StObject
+       with ConditionalTextOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait contains extends ConditionalTextOperator
+  sealed trait contains
+    extends StObject
+       with ConditionalTextOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait endsWith extends ConditionalTextOperator
+  sealed trait endsWith
+    extends StObject
+       with ConditionalTextOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait invalid extends ConditionalTextOperator
+  sealed trait invalid
+    extends StObject
+       with ConditionalTextOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait notContains extends ConditionalTextOperator
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalTextOperator with String] = js.native
-  /* "BeginsWith" */ @js.native
-  object beginsWith extends TopLevel[beginsWith with String]
-  
-  /* "Contains" */ @js.native
-  object contains extends TopLevel[contains with String]
-  
-  /* "EndsWith" */ @js.native
-  object endsWith extends TopLevel[endsWith with String]
-  
-  /* "Invalid" */ @js.native
-  object invalid extends TopLevel[invalid with String]
-  
-  /* "NotContains" */ @js.native
-  object notContains extends TopLevel[notContains with String]
-  
+  sealed trait notContains
+    extends StObject
+       with ConditionalTextOperator
 }
-

@@ -10,10 +10,10 @@ A React component that allow to bind events on the global scope
 | ------------------ | :-------------: |
 | Full name          | react-event-listener |
 | Keywords           | react, event, listener, binding |
-| # releases         | 15 |
-| # dependents       | 239 |
-| # downloads        | 27997235 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2315563.0 |
+| # stars            | 360.0 |
 
 ## Links
 - [Homepage](https://github.com/oliviertassinari/react-event-listener)

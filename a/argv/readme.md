@@ -10,9 +10,9 @@ CLI Argument Parser
 | Full name          | argv |
 | Keywords           | cli, argv, options |
 | # releases         | 1 |
-| # dependents       | 409 |
-| # downloads        | 14836229 |
-| # stars            | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 1216670.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/argv)

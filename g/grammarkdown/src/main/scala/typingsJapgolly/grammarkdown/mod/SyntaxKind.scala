@@ -1,115 +1,233 @@
 package typingsJapgolly.grammarkdown.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "SyntaxKind")
 @js.native
-object SyntaxKind extends js.Object {
-  /* 60 */ val Argument: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.Argument with Double = js.native
-  /* 61 */ val ArgumentList: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ArgumentList with Double = js.native
-  /* 6 */ val AtToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.AtToken with Double = js.native
-  /* 30 */ val ButKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ButKeyword with Double = js.native
-  /* 69 */ val ButNotSymbol: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ButNotSymbol with Double = js.native
-  /* 8 */ val CloseBraceToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.CloseBraceToken with Double = js.native
-  /* 11 */ val CloseBracketToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.CloseBracketToken with Double = js.native
-  /* 14 */ val CloseParenToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.CloseParenToken with Double = js.native
-  /* 17 */ val ColonColonColonToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ColonColonColonToken with Double = js.native
-  /* 16 */ val ColonColonToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ColonColonToken with Double = js.native
-  /* 15 */ val ColonToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ColonToken with Double = js.native
-  /* 18 */ val CommaToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.CommaToken with Double = js.native
-  /* 66 */ val Constraints: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.Constraints with Double = js.native
-  /* 56 */ val Define: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.Define with Double = js.native
-  /* 31 */ val DefineKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.DefineKeyword with Double = js.native
-  /* 28 */ val ElementOfToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ElementOfToken with Double = js.native
-  /* 75 */ val EmptyAssertion: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.EmptyAssertion with Double = js.native
-  /* 32 */ val EmptyKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.EmptyKeyword with Double = js.native
-  /* 5 */ val EndOfFileToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.EndOfFileToken with Double = js.native
-  /* 23 */ val EqualsEqualsToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.EqualsEqualsToken with Double = js.native
-  /* 22 */ val EqualsToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.EqualsToken with Double = js.native
-  /* 24 */ val ExclamationEqualsToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ExclamationEqualsToken with Double = js.native
-  /* 33 */ val FalseKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.FalseKeyword with Double = js.native
-  /* 1 */ val FirstCommentTrivia: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.FirstCommentTrivia with Double = js.native
-  /* 80 */ val FirstErrorNode: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.FirstErrorNode with Double = js.native
-  /* 3 */ val FirstHtmlTrivia: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.FirstHtmlTrivia with Double = js.native
-  /* 30 */ val FirstKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.FirstKeyword with Double = js.native
-  /* 46 */ val FirstLiteral: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.FirstLiteral with Double = js.native
-  /* 49 */ val FirstProseFragmentLiteral: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.FirstProseFragmentLiteral with Double = js.native
-  /* 6 */ val FirstPunctuation: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.FirstPunctuation with Double = js.native
-  /* 46 */ val FirstTextContent: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.FirstTextContent with Double = js.native
-  /* 5 */ val FirstToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.FirstToken with Double = js.native
-  /* 1 */ val FirstTrivia: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.FirstTrivia with Double = js.native
-  /* 34 */ val GoalKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.GoalKeyword with Double = js.native
-  /* 12 */ val GreaterThanToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.GreaterThanToken with Double = js.native
-  /* 35 */ val HereKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.HereKeyword with Double = js.native
-  /* 4 */ val HtmlCloseTagTrivia: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.HtmlCloseTagTrivia with Double = js.native
-  /* 3 */ val HtmlOpenTagTrivia: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.HtmlOpenTagTrivia with Double = js.native
-  /* 53 */ val Identifier: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.Identifier with Double = js.native
-  /* 55 */ val Import: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.Import with Double = js.native
-  /* 36 */ val ImportKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ImportKeyword with Double = js.native
-  /* 81 */ val InvalidAssertion: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.InvalidAssertion with Double = js.native
-  /* 80 */ val InvalidSymbol: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.InvalidSymbol with Double = js.native
-  /* 2 */ val LastCommentTrivia: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LastCommentTrivia with Double = js.native
-  /* 81 */ val LastErrorNode: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LastErrorNode with Double = js.native
-  /* 4 */ val LastHtmlTrivia: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LastHtmlTrivia with Double = js.native
-  /* 45 */ val LastKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LastKeyword with Double = js.native
-  /* 48 */ val LastLiteral: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LastLiteral with Double = js.native
-  /* 52 */ val LastProseFragmentLiteral: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LastProseFragmentLiteral with Double = js.native
-  /* 29 */ val LastPunctuation: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LastPunctuation with Double = js.native
-  /* 52 */ val LastTextContent: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LastTextContent with Double = js.native
-  /* 45 */ val LastToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LastToken with Double = js.native
-  /* 4 */ val LastTrivia: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LastTrivia with Double = js.native
-  /* 25 */ val LessThanExclamationToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LessThanExclamationToken with Double = js.native
-  /* 26 */ val LessThanMinusToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LessThanMinusToken with Double = js.native
-  /* 77 */ val LexicalGoalAssertion: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LexicalGoalAssertion with Double = js.native
-  /* 37 */ val LexicalKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LexicalKeyword with Double = js.native
-  /* 62 */ val LinkReference: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LinkReference with Double = js.native
-  /* 76 */ val LookaheadAssertion: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LookaheadAssertion with Double = js.native
-  /* 38 */ val LookaheadKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LookaheadKeyword with Double = js.native
-  /* 2 */ val MultiLineCommentTrivia: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.MultiLineCommentTrivia with Double = js.native
-  /* 39 */ val NoKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.NoKeyword with Double = js.native
-  /* 78 */ val NoSymbolHereAssertion: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.NoSymbolHereAssertion with Double = js.native
-  /* 73 */ val Nonterminal: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.Nonterminal with Double = js.native
-  /* 29 */ val NotAnElementOfToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.NotAnElementOfToken with Double = js.native
-  /* 27 */ val NotEqualToToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.NotEqualToToken with Double = js.native
-  /* 40 */ val NotKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.NotKeyword with Double = js.native
-  /* 41 */ val OfKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.OfKeyword with Double = js.native
-  /* 42 */ val OneKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.OneKeyword with Double = js.native
-  /* 63 */ val OneOfList: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.OneOfList with Double = js.native
-  /* 71 */ val OneOfSymbol: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.OneOfSymbol with Double = js.native
-  /* 7 */ val OpenBraceToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.OpenBraceToken with Double = js.native
-  /* 10 */ val OpenBracketGreaterThanToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.OpenBracketGreaterThanToken with Double = js.native
-  /* 9 */ val OpenBracketToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken with Double = js.native
-  /* 13 */ val OpenParenToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.OpenParenToken with Double = js.native
-  /* 43 */ val OrKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.OrKeyword with Double = js.native
-  /* 58 */ val Parameter: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.Parameter with Double = js.native
-  /* 59 */ val ParameterList: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ParameterList with Double = js.native
-  /* 72 */ val PlaceholderSymbol: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.PlaceholderSymbol with Double = js.native
-  /* 19 */ val PlusToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.PlusToken with Double = js.native
-  /* 57 */ val Production: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.Production with Double = js.native
-  /* 74 */ val Prose: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.Prose with Double = js.native
-  /* 79 */ val ProseAssertion: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ProseAssertion with Double = js.native
-  /* 52 */ val ProseFull: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ProseFull with Double = js.native
-  /* 49 */ val ProseHead: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ProseHead with Double = js.native
-  /* 50 */ val ProseMiddle: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ProseMiddle with Double = js.native
-  /* 51 */ val ProseTail: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ProseTail with Double = js.native
-  /* 21 */ val QuestionToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.QuestionToken with Double = js.native
-  /* 65 */ val RightHandSide: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.RightHandSide with Double = js.native
-  /* 64 */ val RightHandSideList: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.RightHandSideList with Double = js.native
-  /* 1 */ val SingleLineCommentTrivia: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.SingleLineCommentTrivia with Double = js.native
-  /* 54 */ val SourceFile: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.SourceFile with Double = js.native
-  /* 46 */ val StringLiteral: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.StringLiteral with Double = js.native
-  /* 68 */ val SymbolSet: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.SymbolSet with Double = js.native
-  /* 67 */ val SymbolSpan: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.SymbolSpan with Double = js.native
-  /* 47 */ val Terminal: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.Terminal with Double = js.native
-  /* 44 */ val ThroughKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.ThroughKeyword with Double = js.native
-  /* 20 */ val TildeToken: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.TildeToken with Double = js.native
-  /* 45 */ val TrueKeyword: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.TrueKeyword with Double = js.native
-  /* 48 */ val UnicodeCharacterLiteral: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.UnicodeCharacterLiteral with Double = js.native
-  /* 70 */ val UnicodeCharacterRange: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.UnicodeCharacterRange with Double = js.native
-  /* 0 */ val Unknown: typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.Unknown with Double = js.native
+object SyntaxKind extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.grammarkdown.tokensMod.SyntaxKind with Double] = js.native
+  def apply(value: Double): js.UndefOr[typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind & Double] = js.native
+  
+  /* 65 */ val Argument: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.Argument & Double = js.native
+  
+  /* 66 */ val ArgumentList: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ArgumentList & Double = js.native
+  
+  /* 7 */ val AtToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.AtToken & Double = js.native
+  
+  /* 31 */ val ButKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ButKeyword & Double = js.native
+  
+  /* 74 */ val ButNotSymbol: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ButNotSymbol & Double = js.native
+  
+  /* 9 */ val CloseBraceToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.CloseBraceToken & Double = js.native
+  
+  /* 12 */ val CloseBracketToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.CloseBracketToken & Double = js.native
+  
+  /* 15 */ val CloseParenToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.CloseParenToken & Double = js.native
+  
+  /* 18 */ val ColonColonColonToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ColonColonColonToken & Double = js.native
+  
+  /* 17 */ val ColonColonToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ColonColonToken & Double = js.native
+  
+  /* 16 */ val ColonToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ColonToken & Double = js.native
+  
+  /* 19 */ val CommaToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.CommaToken & Double = js.native
+  
+  /* 71 */ val Constraints: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.Constraints & Double = js.native
+  
+  /* 33 */ val DefaultKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.DefaultKeyword & Double = js.native
+  
+  /* 60 */ val Define: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.Define & Double = js.native
+  
+  /* 32 */ val DefineKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.DefineKeyword & Double = js.native
+  
+  /* 29 */ val ElementOfToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ElementOfToken & Double = js.native
+  
+  /* 81 */ val EmptyAssertion: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.EmptyAssertion & Double = js.native
+  
+  /* 34 */ val EmptyKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.EmptyKeyword & Double = js.native
+  
+  /* 6 */ val EndOfFileToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.EndOfFileToken & Double = js.native
+  
+  /* 24 */ val EqualsEqualsToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.EqualsEqualsToken & Double = js.native
+  
+  /* 23 */ val EqualsToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.EqualsToken & Double = js.native
+  
+  /* 25 */ val ExclamationEqualsToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ExclamationEqualsToken & Double = js.native
+  
+  /* 35 */ val FalseKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.FalseKeyword & Double = js.native
+  
+  /* 1 */ val FirstCommentTrivia: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.FirstCommentTrivia & Double = js.native
+  
+  /* 86 */ val FirstErrorNode: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.FirstErrorNode & Double = js.native
+  
+  /* 4 */ val FirstHtmlTagTrivia: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.FirstHtmlTagTrivia & Double = js.native
+  
+  /* 3 */ val FirstHtmlTrivia: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.FirstHtmlTrivia & Double = js.native
+  
+  /* 31 */ val FirstKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.FirstKeyword & Double = js.native
+  
+  /* 49 */ val FirstLiteral: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.FirstLiteral & Double = js.native
+  
+  /* 53 */ val FirstProseFragmentLiteral: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.FirstProseFragmentLiteral & Double = js.native
+  
+  /* 7 */ val FirstPunctuation: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.FirstPunctuation & Double = js.native
+  
+  /* 49 */ val FirstTextContent: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.FirstTextContent & Double = js.native
+  
+  /* 6 */ val FirstToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.FirstToken & Double = js.native
+  
+  /* 1 */ val FirstTrivia: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.FirstTrivia & Double = js.native
+  
+  /* 36 */ val GoalKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.GoalKeyword & Double = js.native
+  
+  /* 13 */ val GreaterThanToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.GreaterThanToken & Double = js.native
+  
+  /* 37 */ val HereKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.HereKeyword & Double = js.native
+  
+  /* 5 */ val HtmlCloseTagTrivia: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.HtmlCloseTagTrivia & Double = js.native
+  
+  /* 3 */ val HtmlCommentTrivia: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.HtmlCommentTrivia & Double = js.native
+  
+  /* 4 */ val HtmlOpenTagTrivia: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.HtmlOpenTagTrivia & Double = js.native
+  
+  /* 57 */ val Identifier: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.Identifier & Double = js.native
+  
+  /* 59 */ val Import: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.Import & Double = js.native
+  
+  /* 38 */ val ImportKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ImportKeyword & Double = js.native
+  
+  /* 87 */ val InvalidAssertion: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.InvalidAssertion & Double = js.native
+  
+  /* 86 */ val InvalidSymbol: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.InvalidSymbol & Double = js.native
+  
+  /* 2 */ val LastCommentTrivia: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LastCommentTrivia & Double = js.native
+  
+  /* 87 */ val LastErrorNode: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LastErrorNode & Double = js.native
+  
+  /* 5 */ val LastHtmlTagTrivia: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LastHtmlTagTrivia & Double = js.native
+  
+  /* 5 */ val LastHtmlTrivia: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LastHtmlTrivia & Double = js.native
+  
+  /* 48 */ val LastKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LastKeyword & Double = js.native
+  
+  /* 52 */ val LastLiteral: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LastLiteral & Double = js.native
+  
+  /* 56 */ val LastProseFragmentLiteral: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LastProseFragmentLiteral & Double = js.native
+  
+  /* 30 */ val LastPunctuation: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LastPunctuation & Double = js.native
+  
+  /* 57 */ val LastTextContent: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LastTextContent & Double = js.native
+  
+  /* 48 */ val LastToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LastToken & Double = js.native
+  
+  /* 5 */ val LastTrivia: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LastTrivia & Double = js.native
+  
+  /* 26 */ val LessThanExclamationToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LessThanExclamationToken & Double = js.native
+  
+  /* 27 */ val LessThanMinusToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LessThanMinusToken & Double = js.native
+  
+  /* 83 */ val LexicalGoalAssertion: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LexicalGoalAssertion & Double = js.native
+  
+  /* 39 */ val LexicalKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LexicalKeyword & Double = js.native
+  
+  /* 61 */ val Line: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.Line & Double = js.native
+  
+  /* 40 */ val LineKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LineKeyword & Double = js.native
+  
+  /* 67 */ val LinkReference: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LinkReference & Double = js.native
+  
+  /* 82 */ val LookaheadAssertion: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LookaheadAssertion & Double = js.native
+  
+  /* 41 */ val LookaheadKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LookaheadKeyword & Double = js.native
+  
+  /* 2 */ val MultiLineCommentTrivia: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.MultiLineCommentTrivia & Double = js.native
+  
+  /* 42 */ val NoKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.NoKeyword & Double = js.native
+  
+  /* 84 */ val NoSymbolHereAssertion: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.NoSymbolHereAssertion & Double = js.native
+  
+  /* 78 */ val Nonterminal: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.Nonterminal & Double = js.native
+  
+  /* 30 */ val NotAnElementOfToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.NotAnElementOfToken & Double = js.native
+  
+  /* 28 */ val NotEqualToToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.NotEqualToToken & Double = js.native
+  
+  /* 43 */ val NotKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.NotKeyword & Double = js.native
+  
+  /* 50 */ val NumberLiteral: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.NumberLiteral & Double = js.native
+  
+  /* 44 */ val OfKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.OfKeyword & Double = js.native
+  
+  /* 45 */ val OneKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.OneKeyword & Double = js.native
+  
+  /* 68 */ val OneOfList: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.OneOfList & Double = js.native
+  
+  /* 76 */ val OneOfSymbol: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.OneOfSymbol & Double = js.native
+  
+  /* 8 */ val OpenBraceToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.OpenBraceToken & Double = js.native
+  
+  /* 11 */ val OpenBracketGreaterThanToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.OpenBracketGreaterThanToken & Double = js.native
+  
+  /* 10 */ val OpenBracketToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.OpenBracketToken & Double = js.native
+  
+  /* 14 */ val OpenParenToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.OpenParenToken & Double = js.native
+  
+  /* 46 */ val OrKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.OrKeyword & Double = js.native
+  
+  /* 63 */ val Parameter: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.Parameter & Double = js.native
+  
+  /* 64 */ val ParameterList: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ParameterList & Double = js.native
+  
+  /* 77 */ val PlaceholderSymbol: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.PlaceholderSymbol & Double = js.native
+  
+  /* 20 */ val PlusToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.PlusToken & Double = js.native
+  
+  /* 62 */ val Production: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.Production & Double = js.native
+  
+  /* 80 */ val Prose: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.Prose & Double = js.native
+  
+  /* 85 */ val ProseAssertion: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ProseAssertion & Double = js.native
+  
+  /* 56 */ val ProseFull: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ProseFull & Double = js.native
+  
+  /* 53 */ val ProseHead: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ProseHead & Double = js.native
+  
+  /* 54 */ val ProseMiddle: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ProseMiddle & Double = js.native
+  
+  /* 55 */ val ProseTail: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ProseTail & Double = js.native
+  
+  /* 22 */ val QuestionToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.QuestionToken & Double = js.native
+  
+  /* 70 */ val RightHandSide: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.RightHandSide & Double = js.native
+  
+  /* 69 */ val RightHandSideList: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.RightHandSideList & Double = js.native
+  
+  /* 1 */ val SingleLineCommentTrivia: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.SingleLineCommentTrivia & Double = js.native
+  
+  /* 58 */ val SourceFile: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.SourceFile & Double = js.native
+  
+  /* 49 */ val StringLiteral: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.StringLiteral & Double = js.native
+  
+  /* 73 */ val SymbolSet: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.SymbolSet & Double = js.native
+  
+  /* 72 */ val SymbolSpan: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.SymbolSpan & Double = js.native
+  
+  /* 79 */ val Terminal: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.Terminal & Double = js.native
+  
+  /* 51 */ val TerminalLiteral: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.TerminalLiteral & Double = js.native
+  
+  /* 47 */ val ThroughKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.ThroughKeyword & Double = js.native
+  
+  /* 21 */ val TildeToken: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.TildeToken & Double = js.native
+  
+  /* 48 */ val TrueKeyword: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.TrueKeyword & Double = js.native
+  
+  /* 52 */ val UnicodeCharacterLiteral: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.UnicodeCharacterLiteral & Double = js.native
+  
+  /* 75 */ val UnicodeCharacterRange: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.UnicodeCharacterRange & Double = js.native
+  
+  /* 0 */ val Unknown: typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.Unknown & Double = js.native
 }
-

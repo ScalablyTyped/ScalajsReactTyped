@@ -1,21 +1,32 @@
 package typingsJapgolly.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageSourceOptions extends js.Object {
+trait ImageSourceOptions extends StObject {
+  
   var coordinates: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object ImageSourceOptions {
-  @scala.inline
-  def apply(coordinates: js.Array[js.Array[Double]] = null, url: String = null): ImageSourceOptions = {
+  
+  inline def apply(): ImageSourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageSourceOptions]
   }
+  
+  extension [Self <: ImageSourceOptions](x: Self) {
+    
+    inline def setCoordinates(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    
+    inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
+    
+    inline def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value*))
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

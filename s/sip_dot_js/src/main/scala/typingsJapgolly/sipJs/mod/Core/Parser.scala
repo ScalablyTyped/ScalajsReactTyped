@@ -1,28 +1,34 @@
 package typingsJapgolly.sipJs.mod.Core
 
-import typingsJapgolly.sipJs.AnonError
+import typingsJapgolly.sipJs.anon.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js", "Core.Parser")
-@js.native
-object Parser extends js.Object {
-  def getHeader(data: js.Any, headerStart: Double): Double = js.native
-  def parseHeader(
-    message: typingsJapgolly.sipJs.incomingRequestMessageMod.IncomingRequestMessage,
-    data: js.Any,
+object Parser {
+  
+  @JSImport("sip.js", "Core.Parser")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getHeader(data: Any, headerStart: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeader")(data.asInstanceOf[js.Any], headerStart.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def parseHeader(
+    message: typingsJapgolly.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage,
+    data: Any,
     headerStart: Double,
     headerEnd: Double
-  ): Boolean | AnonError = js.native
-  def parseHeader(
-    message: typingsJapgolly.sipJs.incomingResponseMessageMod.IncomingResponseMessage,
-    data: js.Any,
+  ): Boolean | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHeader")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headerStart.asInstanceOf[js.Any], headerEnd.asInstanceOf[js.Any])).asInstanceOf[Boolean | Error]
+  inline def parseHeader(
+    message: typingsJapgolly.sipJs.libCoreMessagesIncomingResponseMessageMod.IncomingResponseMessage,
+    data: Any,
     headerStart: Double,
     headerEnd: Double
-  ): Boolean | AnonError = js.native
-  def parseMessage(data: String, logger: typingsJapgolly.sipJs.loggerMod.Logger): js.UndefOr[
-    typingsJapgolly.sipJs.incomingRequestMessageMod.IncomingRequestMessage | typingsJapgolly.sipJs.incomingResponseMessageMod.IncomingResponseMessage
-  ] = js.native
+  ): Boolean | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHeader")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headerStart.asInstanceOf[js.Any], headerEnd.asInstanceOf[js.Any])).asInstanceOf[Boolean | Error]
+  
+  inline def parseMessage(data: String, logger: typingsJapgolly.sipJs.libCoreLogLoggerMod.Logger): js.UndefOr[
+    typingsJapgolly.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage | typingsJapgolly.sipJs.libCoreMessagesIncomingResponseMessageMod.IncomingResponseMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMessage")(data.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+    typingsJapgolly.sipJs.libCoreMessagesIncomingRequestMessageMod.IncomingRequestMessage | typingsJapgolly.sipJs.libCoreMessagesIncomingResponseMessageMod.IncomingResponseMessage
+  ]]
 }
-

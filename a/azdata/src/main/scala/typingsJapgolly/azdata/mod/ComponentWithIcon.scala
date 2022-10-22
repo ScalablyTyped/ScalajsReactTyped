@@ -1,38 +1,33 @@
 package typingsJapgolly.azdata.mod
 
-import typingsJapgolly.azdata.AnonDark
-import typingsJapgolly.vscode.mod.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ComponentWithIcon extends js.Object {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.azdata.mod.ComponentProperties because Already inherited
+- typingsJapgolly.azdata.mod.ComponentWithIconProperties because var conflicts: CSSStyles, ariaHidden, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined iconPath, iconHeight, iconWidth, title */ @js.native
+trait ComponentWithIcon
+  extends StObject
+     with Component {
+  
   /**
-  		 * @deprecated This will be moved to `ComponentWithIconProperties`
-  		 */
-  var iconHeight: js.UndefOr[Double | String] = js.undefined
+    * The height of the icon
+    */
+  var iconHeight: js.UndefOr[Double | String] = js.native
+  
   /**
-  		 * @deprecated This will be moved to `ComponentWithIconProperties`
-  		 */
-  var iconPath: js.UndefOr[String | Uri | AnonDark] = js.undefined
+    * The path for the icon with optional dark-theme away alternative
+    */
+  var iconPath: js.UndefOr[IconPath] = js.native
+  
   /**
-  		 * @deprecated This will be moved to `ComponentWithIconProperties`
-  		 */
-  var iconWidth: js.UndefOr[Double | String] = js.undefined
+    * The width of the icon
+    */
+  var iconWidth: js.UndefOr[Double | String] = js.native
+  
+  /**
+    * The title for the icon. This title will show when hovered over
+    */
+  var title: js.UndefOr[String] = js.native
 }
-
-object ComponentWithIcon {
-  @scala.inline
-  def apply(
-    iconHeight: Double | String = null,
-    iconPath: String | Uri | AnonDark = null,
-    iconWidth: Double | String = null
-  ): ComponentWithIcon = {
-    val __obj = js.Dynamic.literal()
-    if (iconHeight != null) __obj.updateDynamic("iconHeight")(iconHeight.asInstanceOf[js.Any])
-    if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath.asInstanceOf[js.Any])
-    if (iconWidth != null) __obj.updateDynamic("iconWidth")(iconWidth.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ComponentWithIcon]
-  }
-}
-

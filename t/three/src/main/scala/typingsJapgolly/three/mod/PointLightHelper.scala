@@ -1,21 +1,24 @@
 package typingsJapgolly.three.mod
 
+import typingsJapgolly.three.srcUtilsMod.ColorRepresentation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "PointLightHelper")
 @js.native
-class PointLightHelper protected ()
-  extends typingsJapgolly.three.pointLightHelperMod.PointLightHelper {
-  def this(light: typingsJapgolly.three.pointLightMod.PointLight) = this()
-  def this(light: typingsJapgolly.three.pointLightMod.PointLight, sphereSize: Double) = this()
-  def this(light: typingsJapgolly.three.pointLightMod.PointLight, sphereSize: Double, color: String) = this()
-  def this(light: typingsJapgolly.three.pointLightMod.PointLight, sphereSize: Double, color: Double) = this()
+open class PointLightHelper protected ()
+  extends typingsJapgolly.three.srcThreeMod.PointLightHelper {
+  def this(light: typingsJapgolly.three.srcLightsPointLightMod.PointLight) = this()
+  def this(light: typingsJapgolly.three.srcLightsPointLightMod.PointLight, sphereSize: Double) = this()
   def this(
-    light: typingsJapgolly.three.pointLightMod.PointLight,
+    light: typingsJapgolly.three.srcLightsPointLightMod.PointLight,
     sphereSize: Double,
-    color: typingsJapgolly.three.colorMod.Color
+    color: ColorRepresentation
+  ) = this()
+  def this(
+    light: typingsJapgolly.three.srcLightsPointLightMod.PointLight,
+    sphereSize: Unit,
+    color: ColorRepresentation
   ) = this()
 }
-

@@ -1,48 +1,62 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.Element
+import typingsJapgolly.devextreme.mod.DevExpress.core.UserDefinedElement
+import typingsJapgolly.devextreme.mod.DevExpress.core.template
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxTabPanelItem extends CollectionWidgetItem {
-  /** Specifies a badge text for the tab. */
+trait dxTabPanelItem
+  extends StObject
+     with CollectionWidgetItem {
+  
+  /**
+    * Specifies a badge text for the tab.
+    */
   var badge: js.UndefOr[String] = js.undefined
-  /** Specifies the icon to be displayed in the tab's title. */
+  
+  /**
+    * Specifies the icon to be displayed in the tab&apos;s title.
+    */
   var icon: js.UndefOr[String] = js.undefined
-  /** Specifies a template that should be used to render the tab for this item only. */
-  var tabTemplate: js.UndefOr[
-    typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery])
-  ] = js.undefined
-  /** Specifies the item title text displayed on a corresponding tab. */
+  
+  /**
+    * Specifies a template that should be used to render the tab for this item only.
+    */
+  var tabTemplate: js.UndefOr[template | (js.Function0[String | UserDefinedElement[Element]])] = js.undefined
+  
+  /**
+    * Specifies the item title text displayed on a corresponding tab.
+    */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object dxTabPanelItem {
-  @scala.inline
-  def apply(
-    badge: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    html: String = null,
-    icon: String = null,
-    tabTemplate: typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery]) = null,
-    template: typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery]) = null,
-    text: String = null,
-    title: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxTabPanelItem = {
+  
+  inline def apply(): dxTabPanelItem = {
     val __obj = js.Dynamic.literal()
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (tabTemplate != null) __obj.updateDynamic("tabTemplate")(tabTemplate.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxTabPanelItem]
   }
+  
+  extension [Self <: dxTabPanelItem](x: Self) {
+    
+    inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setTabTemplate(value: template | (js.Function0[String | UserDefinedElement[Element]])): Self = StObject.set(x, "tabTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setTabTemplateCallbackTo(value: CallbackTo[String | UserDefinedElement[Element]]): Self = StObject.set(x, "tabTemplate", value.toJsFn)
+    
+    inline def setTabTemplateUndefined: Self = StObject.set(x, "tabTemplate", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

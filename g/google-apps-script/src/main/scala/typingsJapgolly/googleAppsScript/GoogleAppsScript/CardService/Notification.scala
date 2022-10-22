@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A notification shown to the user as a response to interacting with a UI element.
@@ -20,16 +19,19 @@ import scala.scalajs.js.annotation._
   *           .build();
   *     }
   */
-trait Notification extends js.Object {
+trait Notification extends StObject {
+  
   def setText(text: String): Notification
 }
-
 object Notification {
-  @scala.inline
-  def apply(setText: String => CallbackTo[Notification]): Notification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setText")(js.Any.fromFunction1((t0: java.lang.String) => setText(t0).runNow()))
+  
+  inline def apply(setText: String => Notification): Notification = {
+    val __obj = js.Dynamic.literal(setText = js.Any.fromFunction1(setText))
     __obj.asInstanceOf[Notification]
   }
+  
+  extension [Self <: Notification](x: Self) {
+    
+    inline def setSetText(value: String => Notification): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+  }
 }
-

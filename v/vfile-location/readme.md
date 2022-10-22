@@ -1,30 +1,27 @@
 
 # Scala.js typings for vfile-location
 
-Typings are for version 2.0
+Typings are for version 4.0.1
 
 ## Library description:
-Convert between positions (line and column-based) and offsets (range-based) locations in a virtual file
+vfile utility to convert between positional (line and column-based) and offset (range-based) locations
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | vfile-location |
-| Keywords           | remark, comment, message, marker, control |
-| # releases         | 5 |
-| # dependents       | 18 |
-| # downloads        | 65873111 |
-| # stars            | 0 |
+| Keywords           | vfile, vfile-util, util, utility, virtual, file, location, point, position, offset |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3071601E7 |
+| # stars            | 11.0 |
 
 ## Links
-- [Homepage](https://github.com/vfile/vfile-location#readme)
-- [Bugs](https://github.com/vfile/vfile-location/issues)
-- [Repository](https://github.com/vfile/vfile-location)
 - [Npm](https://www.npmjs.com/package/vfile-location)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

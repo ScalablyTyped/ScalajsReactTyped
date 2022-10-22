@@ -1,23 +1,33 @@
 package typingsJapgolly.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IEnum extends AnyNestedObject {
+trait IEnum
+  extends StObject
+     with AnyNestedObject {
+  
   /** Enum options */
-  var options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var options: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
   /** Enum values */
   var values: StringDictionary[Double]
 }
-
 object IEnum {
-  @scala.inline
-  def apply(values: StringDictionary[Double], options: StringDictionary[js.Any] = null): IEnum = {
+  
+  inline def apply(values: StringDictionary[Double]): IEnum = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEnum]
   }
+  
+  extension [Self <: IEnum](x: Self) {
+    
+    inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setValues(value: StringDictionary[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+  }
 }
-

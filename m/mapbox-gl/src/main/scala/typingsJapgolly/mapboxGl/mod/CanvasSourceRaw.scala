@@ -1,31 +1,30 @@
 package typingsJapgolly.mapboxGl.mod
 
-import org.scalajs.dom.raw.HTMLCanvasElement
+import org.scalajs.dom.HTMLCanvasElement
 import typingsJapgolly.mapboxGl.mapboxGlStrings.canvas
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CanvasSourceRaw
-  extends Source
+  extends StObject
+     with Source
      with CanvasSourceOptions
-     with AnySourceData {
+     with _AnySourceData {
+  
   @JSName("type")
   var type_CanvasSourceRaw: canvas
 }
-
 object CanvasSourceRaw {
-  @scala.inline
-  def apply(
-    canvas: String | HTMLCanvasElement,
-    coordinates: js.Array[js.Array[Double]],
-    `type`: canvas,
-    animate: js.UndefOr[Boolean] = js.undefined
-  ): CanvasSourceRaw = {
+  
+  inline def apply(canvas: String | HTMLCanvasElement, coordinates: js.Array[js.Array[Double]]): CanvasSourceRaw = {
     val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], coordinates = coordinates.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("canvas")
     __obj.asInstanceOf[CanvasSourceRaw]
   }
+  
+  extension [Self <: CanvasSourceRaw](x: Self) {
+    
+    inline def setType(value: canvas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,23 +1,27 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
-import typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentUri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "VersionedTextDocumentIdentifier")
-@js.native
-object VersionedTextDocumentIdentifier extends js.Object {
-  def create(uri: DocumentUri): typingsJapgolly.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier = js.native
+object VersionedTextDocumentIdentifier {
+  
+  @JSImport("vscode-languageserver", "VersionedTextDocumentIdentifier")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new VersionedTextDocumentIdentifier literal.
     * @param uri The document's uri.
-    * @param uri The document's text.
+    * @param version The document's version.
     */
-  def create(uri: DocumentUri, version: Double): typingsJapgolly.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier = js.native
+  inline def create(
+    uri: typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentUri,
+    version: typingsJapgolly.vscodeLanguageserverTypes.mod.integer
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier]
+  
   /**
     * Checks whether the given literal conforms to the [VersionedTextDocumentIdentifier](#VersionedTextDocumentIdentifier) interface.
     */
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean = js.native
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean]
 }
-

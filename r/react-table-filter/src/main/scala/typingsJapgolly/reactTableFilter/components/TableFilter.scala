@@ -1,43 +1,37 @@
 package typingsJapgolly.reactTableFilter.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactTableFilter.mod.TabfilterProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableFilter {
-  def apply(
-    rows: String | js.Array[String] | StringDictionary[Boolean],
-    onFilterUpdate: (js.Array[String], js.Array[js.Any]) => CallbackTo[js.Array[js.Any] | Unit],
-    initialFilters: String | js.Array[String] | StringDictionary[Boolean] = null,
-    rowClass: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TabfilterProps, typingsJapgolly.reactTableFilter.mod.TableFilter, Unit, TabfilterProps] = {
-    val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onFilterUpdate")(js.Any.fromFunction2((t0: js.Array[java.lang.String], t1: js.Array[js.Any]) => onFilterUpdate(t0, t1).runNow()))
-    if (initialFilters != null) __obj.updateDynamic("initialFilters")(initialFilters.asInstanceOf[js.Any])
-    if (rowClass != null) __obj.updateDynamic("rowClass")(rowClass.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactTableFilter.mod.TabfilterProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactTableFilter.mod.TableFilter](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactTableFilter.mod.TabfilterProps])(children: _*)
+  inline def apply(
+    onFilterUpdate: (js.Array[String], js.Array[Any]) => js.Array[Any] | Unit,
+    rows: String | js.Array[String] | StringDictionary[Boolean]
+  ): Builder = {
+    val __props = js.Dynamic.literal(onFilterUpdate = js.Any.fromFunction2(onFilterUpdate), rows = rows.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[TabfilterProps]))
   }
+  
   @JSImport("react-table-filter", "TableFilter")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactTableFilter.mod.TableFilter] {
+    
+    inline def initialFilters(value: String | js.Array[String] | StringDictionary[Boolean]): this.type = set("initialFilters", value.asInstanceOf[js.Any])
+    
+    inline def initialFiltersVarargs(value: String*): this.type = set("initialFilters", js.Array(value*))
+    
+    inline def rowClass(value: String): this.type = set("rowClass", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: TabfilterProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

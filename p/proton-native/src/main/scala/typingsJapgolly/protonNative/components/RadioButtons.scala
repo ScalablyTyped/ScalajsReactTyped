@@ -1,65 +1,49 @@
 package typingsJapgolly.protonNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.protonNative.AnonH
-import typingsJapgolly.protonNative.AnonX
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.protonNative.anon.H
+import typingsJapgolly.protonNative.anon.X
 import typingsJapgolly.protonNative.mod.RadioButtonsProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RadioButtons {
-  def apply(
-    align: AnonH = null,
-    column: Int | Double = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    expand: AnonH = null,
-    label: String = null,
-    onSelect: /* selected */ Double => Callback = null,
-    row: Int | Double = null,
-    selected: Int | Double = null,
-    span: AnonX = null,
-    stretchy: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    RadioButtonsProps, 
-    typingsJapgolly.protonNative.mod.RadioButtons, 
-    Unit, 
-    RadioButtonsProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* selected */ scala.Double) => onSelect(t0).runNow()))
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.protonNative.mod.RadioButtonsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.protonNative.mod.RadioButtons](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.protonNative.mod.RadioButtonsProps])(children: _*)
-  }
   @JSImport("proton-native", "RadioButtons")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.protonNative.mod.RadioButtons] {
+    
+    inline def align(value: H): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def column(value: Double): this.type = set("column", value.asInstanceOf[js.Any])
+    
+    inline def enabled(value: Boolean): this.type = set("enabled", value.asInstanceOf[js.Any])
+    
+    inline def expand(value: H): this.type = set("expand", value.asInstanceOf[js.Any])
+    
+    inline def label(value: String): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def onSelect(value: /* selected */ Double => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: /* selected */ Double) => value(t0).runNow()))
+    
+    inline def row(value: Double): this.type = set("row", value.asInstanceOf[js.Any])
+    
+    inline def selected(value: Double): this.type = set("selected", value.asInstanceOf[js.Any])
+    
+    inline def span(value: X): this.type = set("span", value.asInstanceOf[js.Any])
+    
+    inline def stretchy(value: Boolean): this.type = set("stretchy", value.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: RadioButtons.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: RadioButtonsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

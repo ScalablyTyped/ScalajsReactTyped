@@ -1,38 +1,30 @@
 package typingsJapgolly.ejWebAll.ej.Sunburst
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SunburstHorizontalAlignment extends js.Object
-
+sealed trait SunburstHorizontalAlignment extends StObject
 @JSGlobal("ej.Sunburst.SunburstHorizontalAlignment")
 @js.native
-object SunburstHorizontalAlignment extends js.Object {
-  //string
-  @js.native
-  sealed trait Center extends SunburstHorizontalAlignment
+object SunburstHorizontalAlignment extends StObject {
   
   //string
   @js.native
-  sealed trait Left extends SunburstHorizontalAlignment
+  sealed trait Center
+    extends StObject
+       with SunburstHorizontalAlignment
   
   //string
   @js.native
-  sealed trait Right extends SunburstHorizontalAlignment
+  sealed trait Left
+    extends StObject
+       with SunburstHorizontalAlignment
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SunburstHorizontalAlignment with Double] = js.native
-  /* 0 */ @js.native
-  object Center extends TopLevel[Center with Double]
-  
-  /* 1 */ @js.native
-  object Left extends TopLevel[Left with Double]
-  
-  /* 2 */ @js.native
-  object Right extends TopLevel[Right with Double]
-  
+  //string
+  @js.native
+  sealed trait Right
+    extends StObject
+       with SunburstHorizontalAlignment
 }
-

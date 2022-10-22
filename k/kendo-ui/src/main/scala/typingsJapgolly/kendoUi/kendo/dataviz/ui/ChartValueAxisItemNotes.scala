@@ -1,36 +1,56 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartValueAxisItemNotes extends js.Object {
+trait ChartValueAxisItemNotes extends StObject {
+  
   var data: js.UndefOr[js.Array[ChartValueAxisItemNotesDataItem]] = js.undefined
+  
   var icon: js.UndefOr[ChartValueAxisItemNotesIcon] = js.undefined
+  
   var label: js.UndefOr[ChartValueAxisItemNotesLabel] = js.undefined
+  
   var line: js.UndefOr[ChartValueAxisItemNotesLine] = js.undefined
+  
   var position: js.UndefOr[String] = js.undefined
+  
   var visual: js.UndefOr[js.Function] = js.undefined
 }
-
 object ChartValueAxisItemNotes {
-  @scala.inline
-  def apply(
-    data: js.Array[ChartValueAxisItemNotesDataItem] = null,
-    icon: ChartValueAxisItemNotesIcon = null,
-    label: ChartValueAxisItemNotesLabel = null,
-    line: ChartValueAxisItemNotesLine = null,
-    position: String = null,
-    visual: js.Function = null
-  ): ChartValueAxisItemNotes = {
+  
+  inline def apply(): ChartValueAxisItemNotes = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartValueAxisItemNotes]
   }
+  
+  extension [Self <: ChartValueAxisItemNotes](x: Self) {
+    
+    inline def setData(value: js.Array[ChartValueAxisItemNotesDataItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: ChartValueAxisItemNotesDataItem*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setIcon(value: ChartValueAxisItemNotesIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setLabel(value: ChartValueAxisItemNotesLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLine(value: ChartValueAxisItemNotesLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setVisual(value: js.Function): Self = StObject.set(x, "visual", value.asInstanceOf[js.Any])
+    
+    inline def setVisualUndefined: Self = StObject.set(x, "visual", js.undefined)
+  }
 }
-

@@ -1,10 +1,7 @@
 package typingsJapgolly.reactNativeCollapsible.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.reactNativeCollapsible.mod.CollapsibleProps
@@ -13,47 +10,43 @@ import typingsJapgolly.reactNativeCollapsible.mod.default
 import typingsJapgolly.reactNativeCollapsible.reactNativeCollapsibleStrings.bottom
 import typingsJapgolly.reactNativeCollapsible.reactNativeCollapsibleStrings.center
 import typingsJapgolly.reactNativeCollapsible.reactNativeCollapsibleStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactNativeCollapsible {
-  def apply(
-    align: top | center | bottom = null,
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    collapsedHeight: Int | Double = null,
-    duration: Int | Double = null,
-    easing: EasingMode | js.Any = null,
-    enablePointerEvents: js.UndefOr[Boolean] = js.undefined,
-    onAnimationEnd: js.UndefOr[Callback] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CollapsibleProps, default, Unit, CollapsibleProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (collapsedHeight != null) __obj.updateDynamic("collapsedHeight")(collapsedHeight.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePointerEvents)) __obj.updateDynamic("enablePointerEvents")(enablePointerEvents.asInstanceOf[js.Any])
-    onAnimationEnd.foreach(p => __obj.updateDynamic("onAnimationEnd")(p.toJsFn))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeCollapsible.mod.CollapsibleProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeCollapsible.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeCollapsible.mod.CollapsibleProps])(children: _*)
-  }
   @JSImport("react-native-collapsible", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def align(value: top | center | bottom): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def collapsed(value: Boolean): this.type = set("collapsed", value.asInstanceOf[js.Any])
+    
+    inline def collapsedHeight(value: Double): this.type = set("collapsedHeight", value.asInstanceOf[js.Any])
+    
+    inline def duration(value: Double): this.type = set("duration", value.asInstanceOf[js.Any])
+    
+    inline def easing(value: EasingMode | Any): this.type = set("easing", value.asInstanceOf[js.Any])
+    
+    inline def enablePointerEvents(value: Boolean): this.type = set("enablePointerEvents", value.asInstanceOf[js.Any])
+    
+    inline def onAnimationEnd(value: Callback): this.type = set("onAnimationEnd", value.toJsFn)
+    
+    inline def renderChildrenCollapsed(value: Boolean): this.type = set("renderChildrenCollapsed", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+  }
+  
+  implicit def make(companion: ReactNativeCollapsible.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CollapsibleProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,10 +1,11 @@
 package typingsJapgolly.pulumiCloud.serviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HostProperties extends js.Object {
+trait HostProperties extends StObject {
+  
   /**
     * The operating system of the host.
     *
@@ -12,13 +13,17 @@ trait HostProperties extends js.Object {
     */
   var os: js.UndefOr[HostOperatingSystem] = js.undefined
 }
-
 object HostProperties {
-  @scala.inline
-  def apply(os: HostOperatingSystem = null): HostProperties = {
+  
+  inline def apply(): HostProperties = {
     val __obj = js.Dynamic.literal()
-    if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostProperties]
   }
+  
+  extension [Self <: HostProperties](x: Self) {
+    
+    inline def setOs(value: HostOperatingSystem): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    
+    inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
+  }
 }
-

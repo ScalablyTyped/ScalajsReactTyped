@@ -1,69 +1,65 @@
 package typingsJapgolly.reactCodemirror.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.codemirror.mod.Editor
-import typingsJapgolly.codemirror.mod.EditorChange
-import typingsJapgolly.codemirror.mod.EditorConfiguration
-import typingsJapgolly.codemirror.mod.ScrollInfo
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactCodemirror.ReactCodeMirror.ReactCodeMirrorProps
 import typingsJapgolly.reactCodemirror.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactCodemirror {
-  def apply(
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    autoSave: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    codeMirrorInstance: (/* host */ js.Any, /* options */ js.UndefOr[EditorConfiguration]) => CallbackTo[Editor] = null,
-    defaultValue: String = null,
-    name: String = null,
-    onChange: (/* newValue */ String, /* change */ EditorChange) => CallbackTo[js.Any] = null,
-    onCursorActivity: /* codemirror */ Editor => CallbackTo[js.Any] = null,
-    onFocusChange: /* focused */ Boolean => CallbackTo[js.Any] = null,
-    onScroll: /* scrollInfo */ ScrollInfo => CallbackTo[js.Any] = null,
-    options: EditorConfiguration = null,
-    path: String = null,
-    preserveScrollPosition: js.UndefOr[Boolean] = js.undefined,
-    value: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ReactCodeMirrorProps, ^, Unit, ReactCodeMirrorProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSave)) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (codeMirrorInstance != null) __obj.updateDynamic("codeMirrorInstance")(js.Any.fromFunction2((t0: /* host */ js.Any, t1: /* options */ js.UndefOr[typingsJapgolly.codemirror.mod.EditorConfiguration]) => codeMirrorInstance(t0, t1).runNow()))
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* newValue */ java.lang.String, t1: /* change */ typingsJapgolly.codemirror.mod.EditorChange) => onChange(t0, t1).runNow()))
-    if (onCursorActivity != null) __obj.updateDynamic("onCursorActivity")(js.Any.fromFunction1((t0: /* codemirror */ typingsJapgolly.codemirror.mod.Editor) => onCursorActivity(t0).runNow()))
-    if (onFocusChange != null) __obj.updateDynamic("onFocusChange")(js.Any.fromFunction1((t0: /* focused */ scala.Boolean) => onFocusChange(t0).runNow()))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1((t0: /* scrollInfo */ typingsJapgolly.codemirror.mod.ScrollInfo) => onScroll(t0).runNow()))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveScrollPosition)) __obj.updateDynamic("preserveScrollPosition")(preserveScrollPosition.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactCodemirror.ReactCodeMirror.ReactCodeMirrorProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactCodemirror.mod.^](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactCodemirror.ReactCodeMirror.ReactCodeMirrorProps])(children: _*)
-  }
   @JSImport("react-codemirror", JSImport.Namespace)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[^] {
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def autoSave(value: Boolean): this.type = set("autoSave", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def codeMirrorInstance(
+      value: (/* host */ Any, /* options */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.EditorConfiguration */ Any
+        ]) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Editor */ Any
+    ): this.type = set("codeMirrorInstance", js.Any.fromFunction2(value))
+    
+    inline def defaultValue(value: String): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onChange(
+      value: (/* newValue */ String, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.EditorChange */ /* change */ Any) => Any
+    ): this.type = set("onChange", js.Any.fromFunction2(value))
+    
+    inline def onCursorActivity(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Editor */ /* codemirror */ Any => Any
+    ): this.type = set("onCursorActivity", js.Any.fromFunction1(value))
+    
+    inline def onFocusChange(value: /* focused */ Boolean => Any): this.type = set("onFocusChange", js.Any.fromFunction1(value))
+    
+    inline def onScroll(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.ScrollInfo */ /* scrollInfo */ Any => Any
+    ): this.type = set("onScroll", js.Any.fromFunction1(value))
+    
+    inline def options(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.EditorConfiguration */ Any
+    ): this.type = set("options", value.asInstanceOf[js.Any])
+    
+    inline def path(value: String): this.type = set("path", value.asInstanceOf[js.Any])
+    
+    inline def preserveScrollPosition(value: Boolean): this.type = set("preserveScrollPosition", value.asInstanceOf[js.Any])
+    
+    inline def value(value: String): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactCodemirror.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ReactCodeMirrorProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,60 +1,137 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typingsJapgolly.jsrsasign.AnonPrvkeyobj
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * X.509 Certificate class to sign and generate hex encoded certificate
-  * @param params associative array of parameters (ex. {'tbscertobj': obj, 'prvkeyobj': key})
+  * @param params JSON object for Certificate parameters
   * @description
-  * As for argument 'params' for constructor, you can specify one of
-  * following properties:
+  * <br/>
+  * This class provides Certificate ASN.1 class structure
+  * defined in
+  * <a href="https://tools.ietf.org/html/rfc5280#section-4.1">
+  * RFC 5280 4.1</a>.
+  * <pre>
+  * Certificate  ::=  SEQUENCE  {
+  *      tbsCertificate       TBSCertificate,
+  *      signatureAlgorithm   AlgorithmIdentifier,
+  *      signatureValue       BIT STRING  }
+  * </pre>
+  * Parameter "params" JSON object can be
+  * the same as {@link KJUR.asn1.x509.TBSCertificate}.
+  * Then they are used to generate TBSCertificate.
+  * Additionally just for Certificate, following parameters can be used:
+  * <ul>
+  * <li>{TBSCertfificate}tbsobj -
+  * specifies {@link KJUR.asn1.x509.TBSCertificate}
+  * object to be signed if needed.
+  * When this isn't specified,
+  * this will be set from other parametes of TBSCertificate.
+  * <li>{Object}cakey (OPTION) - specifies certificate signing private key.
+  * Parameter "cakey" or "sighex" shall be specified. Following
+  * values can be specified:
+  *   <ul>
+  *   <li>PKCS#1/5 or PKCS#8 PEM string of private key
+  *   <li>RSAKey/DSA/ECDSA key object. {@link KEYUTIL.getKey} is useful
+  *   to generate a key object.
+  *   </ul>
   *
-  * - tbscertobj - specify `KJUR.asn1.x509.TBSCertificate` object
-  * - prvkeyobj - specify `RSAKey`, `KJUR.crypto.ECDSA` or `KJUR.crypto.DSA` object for CA private key to sign the certificate
-  *
-  * NOTE1: 'params' can be omitted.
+  * <li>{String}sighex (OPTION) - hexadecimal string of signature value
+  * (i.e. ASN.1 value(V) of signatureValue BIT STRING without
+  * unused bits)
+  * </ul>
+  * CAUTION: APIs of this class have been totally updated without
+  * backward compatibility since jsrsasign 9.0.0.<br/>
+  * NOTE1: 'params' can be omitted.<br/>
   * NOTE2: DSA/ECDSA is also supported for CA signging key from asn1x509 1.0.6.
   * @example
-  * var caKey = KEYUTIL.getKey(caKeyPEM); // CA's private key
-  * var cert = new KJUR.asn1x509.Certificate({'tbscertobj': tbs, 'prvkeyobj': caKey});
-  * cert.sign(); // issue certificate by CA's private key
-  * var certPEM = cert.getPEMString();
+  * var cert = new KJUR.asn1.x509.Certificate({
+  *  version: 3,
+  *  serial: {hex: "1234..."},
+  *  sigalg: "SHA256withRSAandMGF1",
+  *  ...
+  *  sighex: "1d3f..." // sign() method won't be called
+  * });
   *
-  * // Certificate  ::=  SEQUENCE  {
-  * //     tbsCertificate       TBSCertificate,
-  * //     signatureAlgorithm   AlgorithmIdentifier,
-  * //     signature            BIT STRING  }
+  * // sighex will by calculated by signing with cakey
+  * var cert = new KJUR.asn1.x509.Certificate({
+  *  version: 3,
+  *  serial: {hex: "2345..."},
+  *  sigalg: "SHA256withRSA",
+  *  ...
+  *  cakey: "-----BEGIN PRIVATE KEY..."
+  * });
+  *
+  * // use TBSCertificate object to sign
+  * var cert = new KJUR.asn1.x509.Certificate({
+  *  tbsobj: <<OBJ>>,
+  *  sigalg: "SHA256withRSA",
+  *  cakey: "-----BEGIN PRIVATE KEY..."
+  * });
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.Certificate")
-@js.native
-class Certificate () extends ASN1Object {
-  def this(params: AnonPrvkeyobj) = this()
+trait Certificate
+  extends StObject
+     with ASN1Object {
+  
   /**
     * get PEM formatted certificate string after signed
     * @return PEM formatted string of certificate
+    * @since jsrsasign 9.0.0 asn1hex 2.0.0
+    * @description
+    * This method returns a string of PEM formatted
+    * certificate.
     * @example
-    * var cert = new KJUR.asn1.x509.Certificate({'tbscertobj': tbs, 'prvkeyobj': prvKey});
-    * cert.sign();
-    * var sPEM = cert.getPEMString();
+    * cert = new KJUR.asn1.x509.Certificate({...});
+    * cert.getPEM() &rarr;
+    * "-----BEGIN CERTIFICATE-----\r\n..."
     */
-  def getPEMString(): String = js.native
+  def getPEM(): String
+  
   /**
-    * set signature value internally by hex string
+    * set parameter<br/>
+    * @param params JSON object of certificate parameters
+    * @description
+    * This method will set parameter
+    * {@link KJUR.asn1.x509.Certificate#params}
+    * to this object.
     * @example
-    * var cert = new KJUR.asn1.x509.Certificate({'tbscertobj': tbs});
-    * cert.setSignatureHex('01020304');
+    * cert = new KJUR.asn1.x509.Certificate();
+    * cert.setByParam({
+    *   version: 3,
+    *   serial: {hex: "1234..."},
+    *   ...
+    * });
     */
-  def setSignatureHex(sigHex: String): Unit = js.native
-  /**
-    * sign TBSCertificate and set signature value internally
-    * @example
-    * var cert = new KJUR.asn1.x509.Certificate({tbscertobj: tbs, prvkeyobj: prvKey});
-    * cert.sign();
-    */
-  def sign(): Unit = js.native
+  def setByParam(params: X509CertificateParams): Unit
 }
-
+object Certificate {
+  
+  inline def apply(
+    getEncodedHex: CallbackTo[String],
+    getFreshValueHex: CallbackTo[String],
+    getLengthHexFromValue: CallbackTo[String],
+    getPEM: CallbackTo[String],
+    getValueHex: CallbackTo[String],
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setByParam: X509CertificateParams => Callback
+  ): Certificate = {
+    val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getPEM = getPEM.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByParam = js.Any.fromFunction1((t0: X509CertificateParams) => setByParam(t0).runNow()), params = null)
+    __obj.asInstanceOf[Certificate]
+  }
+  
+  extension [Self <: Certificate](x: Self) {
+    
+    inline def setGetPEM(value: CallbackTo[String]): Self = StObject.set(x, "getPEM", value.toJsFn)
+    
+    inline def setSetByParam(value: X509CertificateParams => Callback): Self = StObject.set(x, "setByParam", js.Any.fromFunction1((t0: X509CertificateParams) => value(t0).runNow()))
+  }
+}

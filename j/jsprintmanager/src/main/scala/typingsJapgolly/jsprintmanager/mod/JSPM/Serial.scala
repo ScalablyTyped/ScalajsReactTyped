@@ -1,117 +1,116 @@
 package typingsJapgolly.jsprintmanager.mod.JSPM
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsprintmanager", "JSPM.Serial")
-@js.native
-object Serial extends js.Object {
-  @js.native
-  sealed trait Handshake extends js.Object
+object Serial {
   
   @js.native
-  sealed trait Parity extends js.Object
-  
+  sealed trait Handshake extends StObject
+  @JSImport("jsprintmanager", "JSPM.Serial.Handshake")
   @js.native
-  sealed trait StopBits extends js.Object
-  
-  @js.native
-  object Handshake extends js.Object {
-    @js.native
-    sealed trait None extends Handshake
-    
-    @js.native
-    sealed trait RequestToSend extends Handshake
-    
-    @js.native
-    sealed trait RequestToSendXOnXOff extends Handshake
-    
-    @js.native
-    sealed trait XOnXOff extends Handshake
+  object Handshake extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Handshake with Double] = js.native
-    /* 0 */ @js.native
-    object None extends TopLevel[None with Double]
+    def apply(value: Double): js.UndefOr[Handshake & Double] = js.native
     
-    /* 1 */ @js.native
-    object RequestToSend extends TopLevel[RequestToSend with Double]
+    @js.native
+    sealed trait None
+      extends StObject
+         with Handshake
+    /* 0 */ val None: typingsJapgolly.jsprintmanager.mod.JSPM.Serial.Handshake.None & Double = js.native
     
-    /* 2 */ @js.native
-    object RequestToSendXOnXOff extends TopLevel[RequestToSendXOnXOff with Double]
+    @js.native
+    sealed trait RequestToSend
+      extends StObject
+         with Handshake
+    /* 1 */ val RequestToSend: typingsJapgolly.jsprintmanager.mod.JSPM.Serial.Handshake.RequestToSend & Double = js.native
     
-    /* 3 */ @js.native
-    object XOnXOff extends TopLevel[XOnXOff with Double]
+    @js.native
+    sealed trait RequestToSendXOnXOff
+      extends StObject
+         with Handshake
+    /* 2 */ val RequestToSendXOnXOff: typingsJapgolly.jsprintmanager.mod.JSPM.Serial.Handshake.RequestToSendXOnXOff & Double = js.native
     
+    @js.native
+    sealed trait XOnXOff
+      extends StObject
+         with Handshake
+    /* 3 */ val XOnXOff: typingsJapgolly.jsprintmanager.mod.JSPM.Serial.Handshake.XOnXOff & Double = js.native
   }
   
   @js.native
-  object Parity extends js.Object {
-    @js.native
-    sealed trait Even extends Parity
-    
-    @js.native
-    sealed trait Mark extends Parity
-    
-    @js.native
-    sealed trait None extends Parity
-    
-    @js.native
-    sealed trait Odd extends Parity
-    
-    @js.native
-    sealed trait Space extends Parity
+  sealed trait Parity extends StObject
+  @JSImport("jsprintmanager", "JSPM.Serial.Parity")
+  @js.native
+  object Parity extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Parity with Double] = js.native
-    /* 2 */ @js.native
-    object Even extends TopLevel[Even with Double]
+    def apply(value: Double): js.UndefOr[Parity & Double] = js.native
     
-    /* 3 */ @js.native
-    object Mark extends TopLevel[Mark with Double]
+    @js.native
+    sealed trait Even
+      extends StObject
+         with Parity
+    /* 2 */ val Even: typingsJapgolly.jsprintmanager.mod.JSPM.Serial.Parity.Even & Double = js.native
     
-    /* 0 */ @js.native
-    object None extends TopLevel[None with Double]
+    @js.native
+    sealed trait Mark
+      extends StObject
+         with Parity
+    /* 3 */ val Mark: typingsJapgolly.jsprintmanager.mod.JSPM.Serial.Parity.Mark & Double = js.native
     
-    /* 1 */ @js.native
-    object Odd extends TopLevel[Odd with Double]
+    @js.native
+    sealed trait None
+      extends StObject
+         with Parity
+    /* 0 */ val None: typingsJapgolly.jsprintmanager.mod.JSPM.Serial.Parity.None & Double = js.native
     
-    /* 4 */ @js.native
-    object Space extends TopLevel[Space with Double]
+    @js.native
+    sealed trait Odd
+      extends StObject
+         with Parity
+    /* 1 */ val Odd: typingsJapgolly.jsprintmanager.mod.JSPM.Serial.Parity.Odd & Double = js.native
     
+    @js.native
+    sealed trait Space
+      extends StObject
+         with Parity
+    /* 4 */ val Space: typingsJapgolly.jsprintmanager.mod.JSPM.Serial.Parity.Space & Double = js.native
   }
   
   @js.native
-  object StopBits extends js.Object {
-    @js.native
-    sealed trait None extends StopBits
-    
-    @js.native
-    sealed trait One extends StopBits
-    
-    @js.native
-    sealed trait OnePointFive extends StopBits
-    
-    @js.native
-    sealed trait Two extends StopBits
+  sealed trait StopBits extends StObject
+  @JSImport("jsprintmanager", "JSPM.Serial.StopBits")
+  @js.native
+  object StopBits extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[StopBits with Double] = js.native
-    /* 0 */ @js.native
-    object None extends TopLevel[None with Double]
+    def apply(value: Double): js.UndefOr[StopBits & Double] = js.native
     
-    /* 1 */ @js.native
-    object One extends TopLevel[One with Double]
+    @js.native
+    sealed trait None
+      extends StObject
+         with StopBits
+    /* 0 */ val None: typingsJapgolly.jsprintmanager.mod.JSPM.Serial.StopBits.None & Double = js.native
     
-    /* 3 */ @js.native
-    object OnePointFive extends TopLevel[OnePointFive with Double]
+    @js.native
+    sealed trait One
+      extends StObject
+         with StopBits
+    /* 1 */ val One: typingsJapgolly.jsprintmanager.mod.JSPM.Serial.StopBits.One & Double = js.native
     
-    /* 2 */ @js.native
-    object Two extends TopLevel[Two with Double]
+    @js.native
+    sealed trait OnePointFive
+      extends StObject
+         with StopBits
+    /* 3 */ val OnePointFive: typingsJapgolly.jsprintmanager.mod.JSPM.Serial.StopBits.OnePointFive & Double = js.native
     
+    @js.native
+    sealed trait Two
+      extends StObject
+         with StopBits
+    /* 2 */ val Two: typingsJapgolly.jsprintmanager.mod.JSPM.Serial.StopBits.Two & Double = js.native
   }
-  
 }
-

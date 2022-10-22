@@ -1,49 +1,56 @@
 package typingsJapgolly.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the criteria of the color scale.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
-trait ConditionalColorScaleCriteria extends js.Object {
+trait ConditionalColorScaleCriteria extends StObject {
+  
   /**
+    * The maximum point of the color scale criterion.
     *
-    * The maximum point Color Scale Criterion.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var maximum: ConditionalColorScaleCriterion
+  
   /**
+    * The midpoint of the color scale criterion, if the color scale is a 3-color scale.
     *
-    * The midpoint Color Scale Criterion if the color scale is a 3-color scale.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var midpoint: js.UndefOr[ConditionalColorScaleCriterion] = js.undefined
+  
   /**
+    * The minimum point of the color scale criterion.
     *
-    * The minimum point Color Scale Criterion.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var minimum: ConditionalColorScaleCriterion
 }
-
 object ConditionalColorScaleCriteria {
-  @scala.inline
-  def apply(
-    maximum: ConditionalColorScaleCriterion,
-    minimum: ConditionalColorScaleCriterion,
-    midpoint: ConditionalColorScaleCriterion = null
-  ): ConditionalColorScaleCriteria = {
+  
+  inline def apply(maximum: ConditionalColorScaleCriterion, minimum: ConditionalColorScaleCriterion): ConditionalColorScaleCriteria = {
     val __obj = js.Dynamic.literal(maximum = maximum.asInstanceOf[js.Any], minimum = minimum.asInstanceOf[js.Any])
-    if (midpoint != null) __obj.updateDynamic("midpoint")(midpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalColorScaleCriteria]
   }
+  
+  extension [Self <: ConditionalColorScaleCriteria](x: Self) {
+    
+    inline def setMaximum(value: ConditionalColorScaleCriterion): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    
+    inline def setMidpoint(value: ConditionalColorScaleCriterion): Self = StObject.set(x, "midpoint", value.asInstanceOf[js.Any])
+    
+    inline def setMidpointUndefined: Self = StObject.set(x, "midpoint", js.undefined)
+    
+    inline def setMinimum(value: ConditionalColorScaleCriterion): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+  }
 }
-

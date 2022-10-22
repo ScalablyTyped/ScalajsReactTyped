@@ -1,70 +1,74 @@
 package typingsJapgolly.jupyterlabObservables
 
-import typingsJapgolly.jupyterlabObservables.modeldbMod.ObservableType
-import typingsJapgolly.jupyterlabObservables.observablemapMod.IObservableMap.ChangeType
+import typingsJapgolly.jupyterlabObservables.libModeldbMod.ObservableType
+import typingsJapgolly.jupyterlabObservables.libObservablelistMod.IObservableList.ChangeType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jupyterlabObservablesStrings {
-  @js.native
-  sealed trait List extends ObservableType
   
   @js.native
-  sealed trait Map extends ObservableType
+  sealed trait List
+    extends StObject
+       with ObservableType
+  inline def List: List = "List".asInstanceOf[List]
   
   @js.native
-  sealed trait String extends ObservableType
+  sealed trait Map
+    extends StObject
+       with ObservableType
+  inline def Map: Map = "Map".asInstanceOf[Map]
   
   @js.native
-  sealed trait Value extends ObservableType
+  sealed trait String
+    extends StObject
+       with ObservableType
+  inline def String: String = "String".asInstanceOf[String]
+  
+  @js.native
+  sealed trait Value
+    extends StObject
+       with ObservableType
+  inline def Value: Value = "Value".asInstanceOf[Value]
   
   @js.native
   sealed trait add
-    extends ChangeType
-       with typingsJapgolly.jupyterlabObservables.observablelistMod.IObservableList.ChangeType
+    extends StObject
+       with ChangeType
+       with typingsJapgolly.jupyterlabObservables.libObservablemapMod.IObservableMap.ChangeType
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
-  sealed trait change extends ChangeType
+  sealed trait change
+    extends StObject
+       with typingsJapgolly.jupyterlabObservables.libObservablemapMod.IObservableMap.ChangeType
+  inline def change: change = "change".asInstanceOf[change]
   
   @js.native
   sealed trait insert
-    extends typingsJapgolly.jupyterlabObservables.observablestringMod.IObservableString.ChangeType
+    extends StObject
+       with typingsJapgolly.jupyterlabObservables.libObservablestringMod.IObservableString.ChangeType
+  inline def insert: insert = "insert".asInstanceOf[insert]
   
   @js.native
   sealed trait move
-    extends typingsJapgolly.jupyterlabObservables.observablelistMod.IObservableList.ChangeType
+    extends StObject
+       with ChangeType
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
   sealed trait remove
-    extends ChangeType
-       with typingsJapgolly.jupyterlabObservables.observablelistMod.IObservableList.ChangeType
-       with typingsJapgolly.jupyterlabObservables.observablestringMod.IObservableString.ChangeType
+    extends StObject
+       with ChangeType
+       with typingsJapgolly.jupyterlabObservables.libObservablemapMod.IObservableMap.ChangeType
+       with typingsJapgolly.jupyterlabObservables.libObservablestringMod.IObservableString.ChangeType
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
   sealed trait set
-    extends typingsJapgolly.jupyterlabObservables.observablelistMod.IObservableList.ChangeType
-       with typingsJapgolly.jupyterlabObservables.observablestringMod.IObservableString.ChangeType
-  
-  @scala.inline
-  def List: List = "List".asInstanceOf[List]
-  @scala.inline
-  def Map: Map = "Map".asInstanceOf[Map]
-  @scala.inline
-  def String: String = "String".asInstanceOf[String]
-  @scala.inline
-  def Value: Value = "Value".asInstanceOf[Value]
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
+    extends StObject
+       with ChangeType
+       with typingsJapgolly.jupyterlabObservables.libObservablestringMod.IObservableString.ChangeType
+  inline def set: set = "set".asInstanceOf[set]
 }
-

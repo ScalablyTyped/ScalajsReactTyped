@@ -3,185 +3,225 @@ package typingsJapgolly.web3Utils
 import typingsJapgolly.web3Utils.mod.AbiType
 import typingsJapgolly.web3Utils.mod.StateMutabilityType
 import typingsJapgolly.web3Utils.mod.Unit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object web3UtilsStrings {
-  @js.native
-  sealed trait Gwei extends Unit
   
   @js.native
-  sealed trait Kwei extends Unit
+  sealed trait Gwei
+    extends StObject
+       with Unit
+  inline def Gwei: Gwei = "Gwei".asInstanceOf[Gwei]
   
   @js.native
-  sealed trait Mwei extends Unit
+  sealed trait Kwei
+    extends StObject
+       with Unit
+  inline def Kwei: Kwei = "Kwei".asInstanceOf[Kwei]
   
   @js.native
-  sealed trait babbage extends Unit
+  sealed trait Mwei
+    extends StObject
+       with Unit
+  inline def Mwei: Mwei = "Mwei".asInstanceOf[Mwei]
   
   @js.native
-  sealed trait constructor extends AbiType
+  sealed trait babbage
+    extends StObject
+       with Unit
+  inline def babbage: babbage = "babbage".asInstanceOf[babbage]
   
   @js.native
-  sealed trait ether extends Unit
+  sealed trait constructor
+    extends StObject
+       with AbiType
+  inline def constructor: constructor = "constructor".asInstanceOf[constructor]
   
   @js.native
-  sealed trait event extends AbiType
+  sealed trait ether
+    extends StObject
+       with Unit
+  inline def ether: ether = "ether".asInstanceOf[ether]
   
   @js.native
-  sealed trait fallback extends AbiType
+  sealed trait event
+    extends StObject
+       with AbiType
+  inline def event: event = "event".asInstanceOf[event]
   
   @js.native
-  sealed trait femtoether extends Unit
+  sealed trait fallback
+    extends StObject
+       with AbiType
+  inline def fallback: fallback = "fallback".asInstanceOf[fallback]
   
   @js.native
-  sealed trait finney extends Unit
+  sealed trait femtoether
+    extends StObject
+       with Unit
+  inline def femtoether: femtoether = "femtoether".asInstanceOf[femtoether]
   
   @js.native
-  sealed trait function extends AbiType
+  sealed trait finney
+    extends StObject
+       with Unit
+  inline def finney: finney = "finney".asInstanceOf[finney]
   
   @js.native
-  sealed trait gether extends Unit
+  sealed trait function
+    extends StObject
+       with AbiType
+  inline def function: function = "function".asInstanceOf[function]
   
   @js.native
-  sealed trait grand extends Unit
+  sealed trait gether
+    extends StObject
+       with Unit
+  inline def gether: gether = "gether".asInstanceOf[gether]
   
   @js.native
-  sealed trait gwei_ extends Unit
+  sealed trait grand
+    extends StObject
+       with Unit
+  inline def grand: grand = "grand".asInstanceOf[grand]
   
   @js.native
-  sealed trait kether extends Unit
+  sealed trait gwei_
+    extends StObject
+       with Unit
+  inline def gwei_ : gwei_ = "gwei".asInstanceOf[gwei_]
   
   @js.native
-  sealed trait kwei_ extends Unit
+  sealed trait kether
+    extends StObject
+       with Unit
+  inline def kether: kether = "kether".asInstanceOf[kether]
   
   @js.native
-  sealed trait lovelace extends Unit
+  sealed trait kwei_
+    extends StObject
+       with Unit
+  inline def kwei_ : kwei_ = "kwei".asInstanceOf[kwei_]
   
   @js.native
-  sealed trait mether extends Unit
+  sealed trait lovelace
+    extends StObject
+       with Unit
+  inline def lovelace: lovelace = "lovelace".asInstanceOf[lovelace]
   
   @js.native
-  sealed trait micro extends Unit
+  sealed trait mether
+    extends StObject
+       with Unit
+  inline def mether: mether = "mether".asInstanceOf[mether]
   
   @js.native
-  sealed trait microether extends Unit
+  sealed trait micro
+    extends StObject
+       with Unit
+  inline def micro: micro = "micro".asInstanceOf[micro]
   
   @js.native
-  sealed trait milli extends Unit
+  sealed trait microether
+    extends StObject
+       with Unit
+  inline def microether: microether = "microether".asInstanceOf[microether]
   
   @js.native
-  sealed trait milliether extends Unit
+  sealed trait milli
+    extends StObject
+       with Unit
+  inline def milli: milli = "milli".asInstanceOf[milli]
   
   @js.native
-  sealed trait mwei_ extends Unit
+  sealed trait milliether
+    extends StObject
+       with Unit
+  inline def milliether: milliether = "milliether".asInstanceOf[milliether]
   
   @js.native
-  sealed trait nano extends Unit
+  sealed trait mwei_
+    extends StObject
+       with Unit
+  inline def mwei_ : mwei_ = "mwei".asInstanceOf[mwei_]
   
   @js.native
-  sealed trait nanoether extends Unit
+  sealed trait nano
+    extends StObject
+       with Unit
+  inline def nano: nano = "nano".asInstanceOf[nano]
   
   @js.native
-  sealed trait noether extends Unit
+  sealed trait nanoether
+    extends StObject
+       with Unit
+  inline def nanoether: nanoether = "nanoether".asInstanceOf[nanoether]
   
   @js.native
-  sealed trait nonpayable extends StateMutabilityType
+  sealed trait noether
+    extends StObject
+       with Unit
+  inline def noether: noether = "noether".asInstanceOf[noether]
   
   @js.native
-  sealed trait payable extends StateMutabilityType
+  sealed trait nonpayable
+    extends StObject
+       with StateMutabilityType
+  inline def nonpayable: nonpayable = "nonpayable".asInstanceOf[nonpayable]
   
   @js.native
-  sealed trait picoether extends Unit
+  sealed trait payable
+    extends StObject
+       with StateMutabilityType
+  inline def payable: payable = "payable".asInstanceOf[payable]
   
   @js.native
-  sealed trait pure extends StateMutabilityType
+  sealed trait picoether
+    extends StObject
+       with Unit
+  inline def picoether: picoether = "picoether".asInstanceOf[picoether]
   
   @js.native
-  sealed trait shannon extends Unit
+  sealed trait pure
+    extends StObject
+       with StateMutabilityType
+  inline def pure: pure = "pure".asInstanceOf[pure]
   
   @js.native
-  sealed trait szabo extends Unit
+  sealed trait receive
+    extends StObject
+       with AbiType
+  inline def receive: receive = "receive".asInstanceOf[receive]
   
   @js.native
-  sealed trait tether extends Unit
+  sealed trait shannon
+    extends StObject
+       with Unit
+  inline def shannon: shannon = "shannon".asInstanceOf[shannon]
   
   @js.native
-  sealed trait view extends StateMutabilityType
+  sealed trait szabo
+    extends StObject
+       with Unit
+  inline def szabo: szabo = "szabo".asInstanceOf[szabo]
   
   @js.native
-  sealed trait wei extends Unit
+  sealed trait tether
+    extends StObject
+       with Unit
+  inline def tether: tether = "tether".asInstanceOf[tether]
   
-  @scala.inline
-  def Gwei: Gwei = "Gwei".asInstanceOf[Gwei]
-  @scala.inline
-  def Kwei: Kwei = "Kwei".asInstanceOf[Kwei]
-  @scala.inline
-  def Mwei: Mwei = "Mwei".asInstanceOf[Mwei]
-  @scala.inline
-  def babbage: babbage = "babbage".asInstanceOf[babbage]
-  @scala.inline
-  def constructor: constructor = "constructor".asInstanceOf[constructor]
-  @scala.inline
-  def ether: ether = "ether".asInstanceOf[ether]
-  @scala.inline
-  def event: event = "event".asInstanceOf[event]
-  @scala.inline
-  def fallback: fallback = "fallback".asInstanceOf[fallback]
-  @scala.inline
-  def femtoether: femtoether = "femtoether".asInstanceOf[femtoether]
-  @scala.inline
-  def finney: finney = "finney".asInstanceOf[finney]
-  @scala.inline
-  def function: function = "function".asInstanceOf[function]
-  @scala.inline
-  def gether: gether = "gether".asInstanceOf[gether]
-  @scala.inline
-  def grand: grand = "grand".asInstanceOf[grand]
-  @scala.inline
-  def gwei_ : gwei_ = "gwei".asInstanceOf[gwei_]
-  @scala.inline
-  def kether: kether = "kether".asInstanceOf[kether]
-  @scala.inline
-  def kwei_ : kwei_ = "kwei".asInstanceOf[kwei_]
-  @scala.inline
-  def lovelace: lovelace = "lovelace".asInstanceOf[lovelace]
-  @scala.inline
-  def mether: mether = "mether".asInstanceOf[mether]
-  @scala.inline
-  def micro: micro = "micro".asInstanceOf[micro]
-  @scala.inline
-  def microether: microether = "microether".asInstanceOf[microether]
-  @scala.inline
-  def milli: milli = "milli".asInstanceOf[milli]
-  @scala.inline
-  def milliether: milliether = "milliether".asInstanceOf[milliether]
-  @scala.inline
-  def mwei_ : mwei_ = "mwei".asInstanceOf[mwei_]
-  @scala.inline
-  def nano: nano = "nano".asInstanceOf[nano]
-  @scala.inline
-  def nanoether: nanoether = "nanoether".asInstanceOf[nanoether]
-  @scala.inline
-  def noether: noether = "noether".asInstanceOf[noether]
-  @scala.inline
-  def nonpayable: nonpayable = "nonpayable".asInstanceOf[nonpayable]
-  @scala.inline
-  def payable: payable = "payable".asInstanceOf[payable]
-  @scala.inline
-  def picoether: picoether = "picoether".asInstanceOf[picoether]
-  @scala.inline
-  def pure: pure = "pure".asInstanceOf[pure]
-  @scala.inline
-  def shannon: shannon = "shannon".asInstanceOf[shannon]
-  @scala.inline
-  def szabo: szabo = "szabo".asInstanceOf[szabo]
-  @scala.inline
-  def tether: tether = "tether".asInstanceOf[tether]
-  @scala.inline
-  def view: view = "view".asInstanceOf[view]
-  @scala.inline
-  def wei: wei = "wei".asInstanceOf[wei]
+  @js.native
+  sealed trait view
+    extends StObject
+       with StateMutabilityType
+  inline def view: view = "view".asInstanceOf[view]
+  
+  @js.native
+  sealed trait wei
+    extends StObject
+       with Unit
+  inline def wei: wei = "wei".asInstanceOf[wei]
 }
-

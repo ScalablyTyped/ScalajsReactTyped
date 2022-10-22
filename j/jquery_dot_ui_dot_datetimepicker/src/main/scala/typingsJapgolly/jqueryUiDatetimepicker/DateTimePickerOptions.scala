@@ -1,384 +1,476 @@
 package typingsJapgolly.jqueryUiDatetimepicker
 
-import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.jqueryui.JQueryUI.DatepickerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DateTimePickerOptions extends DatepickerOptions {
-   //Default: true - Whether to show the timepicker within the datepicker.
+trait DateTimePickerOptions
+  extends StObject
+     with DatepickerOptions {
+  
+  //Default: true - Whether to show the timepicker within the datepicker.
   var addSliderAccess: js.UndefOr[Boolean] = js.undefined
-   //Default: 'strict' - How to parse the time string. Two methods are provided: 'strict' which must match the timeFormat exactly, and 'loose' which uses javascript's new Date(timeString) to guess the time. You may also pass in a function(timeFormat, timeString, options) to handle the parsing yourself, returning a simple object:      
+  
+  //Default: 'strict' - How to parse the time string. Two methods are provided: 'strict' which must match the timeFormat exactly, and 'loose' which uses javascript's new Date(timeString) to guess the time. You may also pass in a function(timeFormat, timeString, options) to handle the parsing yourself, returning a simple object:      
   // Alt field options
   var altFieldTimeOnly: js.UndefOr[Boolean] = js.undefined
-    //Default: true - When altField is used from datepicker altField will only receive the formatted time and the original field only receives date.
+  
+  //Default: true - When altField is used from datepicker altField will only receive the formatted time and the original field only receives date.
   var altSeparator: js.UndefOr[String] = js.undefined
-        //Default: (timeSuffix option) - String always placed after the formatted time in the altField.
+  
+  //Default: (timeSuffix option) - String always placed after the formatted time in the altField.
   var altTimeFormat: js.UndefOr[String] = js.undefined
-         //Default: (separator option) - String placed between formatted date and formatted time in the altField.
+  
+  //Default: (separator option) - String placed between formatted date and formatted time in the altField.
   var altTimeSuffix: js.UndefOr[String] = js.undefined
-   //Default: null - Function to be called when a date is chosen or time has changed(parameters: datetimeText, datepickerInstance).
+  
+  //Default: null - Function to be called when a date is chosen or time has changed(parameters: datetimeText, datepickerInstance).
   var alwaysSetTime: js.UndefOr[Boolean] = js.undefined
-        //Default: "Done", A Localization Setting - Text for the Close button.
+  
+  //Default: "Done", A Localization Setting - Text for the Close button.
   var amNames: js.UndefOr[String] = js.undefined
-           //Default: false, A Localization Setting - Right to Left support. 
+  
+  //Default: false, A Localization Setting - Right to Left support. 
   // Timefield options
   var controlType: js.UndefOr[String] = js.undefined
-   //Default: null - Object to pass to sliderAccess when used.
+  
+  //Default: null - Object to pass to sliderAccess when used.
   var defaultValue: js.UndefOr[String] = js.undefined
-     //Default: 1 - Microseconds per step the slider makes.
+  
+  //Default: 1 - Microseconds per step the slider makes.
   var hour: js.UndefOr[Double] = js.undefined
-      //Default: 999 - The maximum microsecond allowed for all dates.
+  
+  //Default: 999 - The maximum microsecond allowed for all dates.
   var hourGrid: js.UndefOr[Double] = js.undefined
-      //Default: 0 - The minimum microsecond allowed for all dates.
+  
+  //Default: 0 - The minimum microsecond allowed for all dates.
   var hourMax: js.UndefOr[Double] = js.undefined
-        //Default: null - Initial timezone set.This is the offset in minutes.If null the browser's local timezone will be used. If you're timezone is "-0400" you would use - 240. For backwards compatibility you may pass "-0400", however the timezone is stored in minutes and more reliable.
+  
+  //Default: null - Initial timezone set.This is the offset in minutes.If null the browser's local timezone will be used. If you're timezone is "-0400" you would use - 240. For backwards compatibility you may pass "-0400", however the timezone is stored in minutes and more reliable.
   var hourMin: js.UndefOr[Double] = js.undefined
-         //Default: "Time", A Localization Setting - Label used within timepicker for the formatted time.
+  
+  //Default: "Time", A Localization Setting - Label used within timepicker for the formatted time.
   var hourText: js.UndefOr[String] = js.undefined
-   //Default: null - Date object of the minimum datetime allowed.Also available as minDate.
+  
+  //Default: null - Date object of the minimum datetime allowed.Also available as minDate.
   var maxDateTime: js.UndefOr[js.Date] = js.undefined
-         //Default: 0 - Initial millisecond set.
+  
+  //Default: 0 - Initial millisecond set.
   var microsec: js.UndefOr[Double] = js.undefined
-     //Default: 0 - When greater than 0 a label grid will be genereated under the slider.This number represents the units (in milliseconds) between labels.
+  
+  //Default: 0 - When greater than 0 a label grid will be genereated under the slider.This number represents the units (in milliseconds) between labels.
   var microsecGrid: js.UndefOr[Double] = js.undefined
-      //Default: 999 - The maximum millisecond allowed for all dates.
+  
+  //Default: 999 - The maximum millisecond allowed for all dates.
   var microsecMax: js.UndefOr[Double] = js.undefined
-      //Default: 0 - The minimum millisecond allowed for all dates.
+  
+  //Default: 0 - The minimum millisecond allowed for all dates.
   var microsecMin: js.UndefOr[Double] = js.undefined
-     //Default: "Millisecond", A Localization Setting - Label used to identify the millisecond slider.
+  
+  //Default: "Millisecond", A Localization Setting - Label used to identify the millisecond slider.
   var microsecText: js.UndefOr[String] = js.undefined
-           //Default: 0 - Initial second set.
+  
+  //Default: 0 - Initial second set.
   var millisec: js.UndefOr[Double] = js.undefined
-       //Default: 0 - When greater than 0 a label grid will be genereated under the slider.This number represents the units (in seconds) between labels.
+  
+  //Default: 0 - When greater than 0 a label grid will be genereated under the slider.This number represents the units (in seconds) between labels.
   var millisecGrid: js.UndefOr[Double] = js.undefined
-        //Default: 59 - The maximum second allowed for all dates.
+  
+  //Default: 59 - The maximum second allowed for all dates.
   var millisecMax: js.UndefOr[Double] = js.undefined
-        //Default: 0 - The minimum second allowed for all dates.
+  
+  //Default: 0 - The minimum second allowed for all dates.
   var millisecMin: js.UndefOr[Double] = js.undefined
-       //Default: "Second", A Localization Setting - Label used to identify the second slider.
+  
+  //Default: "Second", A Localization Setting - Label used to identify the second slider.
   var millisecText: js.UndefOr[String] = js.undefined
-   //Default: null - String of the default time value placed in the input on focus when the input is empty.
+  
+  //Default: null - String of the default time value placed in the input on focus when the input is empty.
   var minDateTime: js.UndefOr[js.Date] = js.undefined
-             //Default: 0 - Initial hour set.
+  
+  //Default: 0 - Initial hour set.
   var minute: js.UndefOr[Double] = js.undefined
-         //Default: 0 - When greater than 0 a label grid will be generated under the slider.This number represents the units (in hours) between labels.
+  
+  //Default: 0 - When greater than 0 a label grid will be generated under the slider.This number represents the units (in hours) between labels.
   var minuteGrid: js.UndefOr[Double] = js.undefined
-          //Default: 23 - The maximum hour allowed for all dates.
+  
+  //Default: 23 - The maximum hour allowed for all dates.
   var minuteMax: js.UndefOr[Double] = js.undefined
-          //Default: 0 - The minimum hour allowed for all dates.
+  
+  //Default: 0 - The minimum hour allowed for all dates.
   var minuteMin: js.UndefOr[Double] = js.undefined
-         //Default: "Hour", A Localization Setting - Label used to identify the hour slider.
+  
+  //Default: "Hour", A Localization Setting - Label used to identify the hour slider.
   var minuteText: js.UndefOr[String] = js.undefined
-   //Default: false - Hide the datepicker and only provide a time interface.
+  
+  //Default: false - Hide the datepicker and only provide a time interface.
   @JSName("onSelect")
-  var onSelect_DateTimePickerOptions: js.UndefOr[js.Function0[_]] = js.undefined
-   //Default: null - Date object of the maximum datetime allowed.Also Available as maxDate.
+  var onSelect_DateTimePickerOptions: js.UndefOr[js.Function0[Any]] = js.undefined
+  
+  //Default: null - Date object of the maximum datetime allowed.Also Available as maxDate.
   var parse: js.UndefOr[String] = js.undefined
-   //Default: " " - When formatting the time this string is placed between the formatted date and formatted time.
+  
+  //Default: " " - When formatting the time this string is placed between the formatted date and formatted time.
   var pickerTimeFormat: js.UndefOr[String] = js.undefined
-   //Default: (timeFormat option) - How to format the time displayed within the timepicker.
+  
+  //Default: (timeFormat option) - How to format the time displayed within the timepicker.
   var pickerTimeSuffix: js.UndefOr[String] = js.undefined
-          //Default: ['AM', 'A'], A Localization Setting - Array of strings to try and parse against to determine AM.
+  
+  //Default: ['AM', 'A'], A Localization Setting - Array of strings to try and parse against to determine AM.
   var pmNames: js.UndefOr[String] = js.undefined
-           //Default: 0 - Initial minute set.
+  
+  //Default: 0 - Initial minute set.
   var second: js.UndefOr[Double] = js.undefined
-       //Default: 0 - When greater than 0 a label grid will be generated under the slider.This number represents the units (in minutes) between labels.
+  
+  //Default: 0 - When greater than 0 a label grid will be generated under the slider.This number represents the units (in minutes) between labels.
   var secondGrid: js.UndefOr[Double] = js.undefined
-        //Default: 59 - The maximum minute allowed for all dates.
+  
+  //Default: 59 - The maximum minute allowed for all dates.
   var secondMax: js.UndefOr[Double] = js.undefined
-        //Default: 0 - The minimum minute allowed for all dates.
+  
+  //Default: 0 - The minimum minute allowed for all dates.
   var secondMin: js.UndefOr[Double] = js.undefined
-       //Default: "Minute", A Localization Setting - Label used to identify the minute slider.
+  
+  //Default: "Minute", A Localization Setting - Label used to identify the minute slider.
   var secondText: js.UndefOr[String] = js.undefined
-   //Default: true - Always have a time set internally, even before user has chosen one.
+  
+  //Default: true - Always have a time set internally, even before user has chosen one.
   var separator: js.UndefOr[String] = js.undefined
-      //Default: 'slider' - Whether to use 'slider' or 'select'.If 'slider' is unavailable through jQueryUI, 'select' will be used.For advanced usage you may pass an object which implements "create", "options", "value" methods to use controls other than sliders or selects.See the _controls property in the source code for more details.
+  
+  //Default: 'slider' - Whether to use 'slider' or 'select'.If 'slider' is unavailable through jQueryUI, 'select' will be used.For advanced usage you may pass an object which implements "create", "options", "value" methods to use controls other than sliders or selects.See the _controls property in the source code for more details.
   var showHour: js.UndefOr[Boolean] = js.undefined
-   //Default: null - Whether to show the millisecond control. The default of null will use detection from timeFormat.
+  
+  //Default: null - Whether to show the millisecond control. The default of null will use detection from timeFormat.
   var showMicrosec: js.UndefOr[Boolean] = js.undefined
-     //Default: null - Whether to show the second control. The default of null will use detection from timeFormat.
+  
+  //Default: null - Whether to show the second control. The default of null will use detection from timeFormat.
   var showMillisec: js.UndefOr[Boolean] = js.undefined
-       //Default: null - Whether to show the hour control. The default of null will use detection from timeFormat.
+  
+  //Default: null - Whether to show the hour control. The default of null will use detection from timeFormat.
   var showMinute: js.UndefOr[Boolean] = js.undefined
-     //Default: null - Whether to show the minute control. The default of null will use detection from timeFormat.
+  
+  //Default: null - Whether to show the minute control. The default of null will use detection from timeFormat.
   var showSecond: js.UndefOr[Boolean] = js.undefined
-   //Default: null - Whether to show the timezone select.
+  
+  //Default: null - Whether to show the timezone select.
   var showTime: js.UndefOr[Boolean] = js.undefined
-   //Default: (timeSuffix option) - String to place after the formatted time within the timepicker.
+  
+  //Default: (timeSuffix option) - String to place after the formatted time within the timepicker.
   var showTimepicker: js.UndefOr[Boolean] = js.undefined
-   //Default: null - Whether to show the microsecond control. The default of null will use detection from timeFormat.
+  
+  //Default: null - Whether to show the microsecond control. The default of null will use detection from timeFormat.
   var showTimezone: js.UndefOr[Boolean] = js.undefined
-   //Default: false - Adds the sliderAccess plugin to sliders within timepicker
-  var sliderAccessArgs: js.UndefOr[js.Any] = js.undefined
-        //Default: true - Whether to show the time selected within the datetimepicker.
+  
+  //Default: false - Adds the sliderAccess plugin to sliders within timepicker
+  var sliderAccessArgs: js.UndefOr[Any] = js.undefined
+  
+  //Default: true - Whether to show the time selected within the datetimepicker.
   var stepHour: js.UndefOr[Double] = js.undefined
-     //Default: 1 - Milliseconds per step the slider makes.
+  
+  //Default: 1 - Milliseconds per step the slider makes.
   var stepMicrosec: js.UndefOr[Double] = js.undefined
-       //Default: 1 - Seconds per step the slider makes.
+  
+  //Default: 1 - Seconds per step the slider makes.
   var stepMillisec: js.UndefOr[Double] = js.undefined
-         //Default: 1 - Hours per step the slider makes.
+  
+  //Default: 1 - Hours per step the slider makes.
   var stepMinute: js.UndefOr[Double] = js.undefined
-       //Default: 1 - Minutes per step the slider makes.
+  
+  //Default: 1 - Minutes per step the slider makes.
   var stepSecond: js.UndefOr[Double] = js.undefined
-          //Default: ['PM', 'P'], A Localization Setting - Array of strings to try and parse against to determine PM.
+  
+  //Default: ['PM', 'P'], A Localization Setting - Array of strings to try and parse against to determine PM.
   var timeFormat: js.UndefOr[String] = js.undefined
-   //Default: true - Whether to show the button panel at the bottom.This is generally needed.
+  
+  //Default: true - Whether to show the button panel at the bottom.This is generally needed.
   var timeOnly: js.UndefOr[Boolean] = js.undefined
-       //Default: "", A Localization Setting - String to place after the formatted time.
+  
+  //Default: "", A Localization Setting - String to place after the formatted time.
   var timeOnlyTitle: js.UndefOr[String] = js.undefined
-       //Default: "HH:mm", A Localization Setting - String of format tokens to be replaced with the time.See Formatting.
+  
+  //Default: "HH:mm", A Localization Setting - String of format tokens to be replaced with the time.See Formatting.
   var timeSuffix: js.UndefOr[String] = js.undefined
-    //Default: "Choose Time", A Localization Setting - Title of the wigit when using only timepicker.
+  
+  //Default: "Choose Time", A Localization Setting - Title of the wigit when using only timepicker.
   var timeText: js.UndefOr[String] = js.undefined
-         //Default: 0 - Initial microsecond set. Note: Javascript's native Date object does not natively support microseconds. Timepicker adds ability to simply Date.setMicroseconds(m) and Date.getMicroseconds(). Date comparisons will not acknowledge microseconds. Use this only for display purposes.
+  
+  //Default: 0 - Initial microsecond set. Note: Javascript's native Date object does not natively support microseconds. Timepicker adds ability to simply Date.setMicroseconds(m) and Date.getMicroseconds(). Date comparisons will not acknowledge microseconds. Use this only for display purposes.
   var timezone: js.UndefOr[Double] = js.undefined
-     //Default: 0 - When greater than 0 a label grid will be genereated under the slider.This number represents the units (in microseconds) between labels.
+  
+  //Default: 0 - When greater than 0 a label grid will be genereated under the slider.This number represents the units (in microseconds) between labels.
   // Timezone options
   var timezoneList: js.UndefOr[js.Array[TimezoneOptions]] = js.undefined
-     //Default: "Microsecond", A Localization Setting - Label used to identify the microsecond slider.
+  
+  //Default: "Microsecond", A Localization Setting - Label used to identify the microsecond slider.
   var timezoneText: js.UndefOr[String] = js.undefined
 }
-
 object DateTimePickerOptions {
-  @scala.inline
-  def apply(
-    addSliderAccess: js.UndefOr[Boolean] = js.undefined,
-    altField: js.Any = null,
-    altFieldTimeOnly: js.UndefOr[Boolean] = js.undefined,
-    altFormat: String = null,
-    altSeparator: String = null,
-    altTimeFormat: String = null,
-    altTimeSuffix: String = null,
-    alwaysSetTime: js.UndefOr[Boolean] = js.undefined,
-    amNames: String = null,
-    appendText: String = null,
-    autoSize: js.UndefOr[Boolean] = js.undefined,
-    autohide: js.UndefOr[Boolean] = js.undefined,
-    beforeShow: (/* input */ Element, /* inst */ js.Any) => CallbackTo[DatepickerOptions] = null,
-    beforeShowDay: /* date */ js.Date => CallbackTo[js.Array[js.Any]] = null,
-    buttonImage: String = null,
-    buttonImageOnly: js.UndefOr[Boolean] = js.undefined,
-    buttonText: String = null,
-    calculateWeek: /* date */ js.Date => CallbackTo[String] = null,
-    changeMonth: js.UndefOr[Boolean] = js.undefined,
-    changeYear: js.UndefOr[Boolean] = js.undefined,
-    closeText: String = null,
-    constrainInput: js.UndefOr[Boolean] = js.undefined,
-    controlType: String = null,
-    currentText: String = null,
-    dateFormat: String = null,
-    dayNames: js.Array[String] = null,
-    dayNamesMin: js.Array[String] = null,
-    dayNamesShort: js.Array[String] = null,
-    defaultDate: js.Any = null,
-    defaultValue: String = null,
-    duration: String = null,
-    endDate: js.Date = null,
-    firstDay: Int | Double = null,
-    gotoCurrent: js.UndefOr[Boolean] = js.undefined,
-    hideIfNoPrevNext: js.UndefOr[Boolean] = js.undefined,
-    hour: Int | Double = null,
-    hourGrid: Int | Double = null,
-    hourMax: Int | Double = null,
-    hourMin: Int | Double = null,
-    hourText: String = null,
-    isRTL: js.UndefOr[Boolean] = js.undefined,
-    maxDate: js.Any = null,
-    maxDateTime: js.Date = null,
-    microsec: Int | Double = null,
-    microsecGrid: Int | Double = null,
-    microsecMax: Int | Double = null,
-    microsecMin: Int | Double = null,
-    microsecText: String = null,
-    millisec: Int | Double = null,
-    millisecGrid: Int | Double = null,
-    millisecMax: Int | Double = null,
-    millisecMin: Int | Double = null,
-    millisecText: String = null,
-    minDate: js.Any = null,
-    minDateTime: js.Date = null,
-    minute: Int | Double = null,
-    minuteGrid: Int | Double = null,
-    minuteMax: Int | Double = null,
-    minuteMin: Int | Double = null,
-    minuteText: String = null,
-    monthNames: js.Array[String] = null,
-    monthNamesShort: js.Array[String] = null,
-    navigationAsDateFormat: js.UndefOr[Boolean] = js.undefined,
-    nextText: String = null,
-    numberOfMonths: js.Any = null,
-    onChangeMonthYear: (/* year */ Double, /* month */ Double, /* inst */ js.Any) => Callback = null,
-    onClose: (/* dateText */ String, /* inst */ js.Any) => Callback = null,
-    onSelect: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    parse: String = null,
-    pickerTimeFormat: String = null,
-    pickerTimeSuffix: String = null,
-    pmNames: String = null,
-    prevText: String = null,
-    second: Int | Double = null,
-    secondGrid: Int | Double = null,
-    secondMax: Int | Double = null,
-    secondMin: Int | Double = null,
-    secondText: String = null,
-    selectOtherMonths: js.UndefOr[Boolean] = js.undefined,
-    separator: String = null,
-    shortYearCutoff: js.Any = null,
-    showAnim: String = null,
-    showButtonPanel: js.UndefOr[Boolean] = js.undefined,
-    showCurrentAtPos: Int | Double = null,
-    showHour: js.UndefOr[Boolean] = js.undefined,
-    showMicrosec: js.UndefOr[Boolean] = js.undefined,
-    showMillisec: js.UndefOr[Boolean] = js.undefined,
-    showMinute: js.UndefOr[Boolean] = js.undefined,
-    showMonthAfterYear: js.UndefOr[Boolean] = js.undefined,
-    showOn: String = null,
-    showOptions: js.Any = null,
-    showOtherMonths: js.UndefOr[Boolean] = js.undefined,
-    showSecond: js.UndefOr[Boolean] = js.undefined,
-    showTime: js.UndefOr[Boolean] = js.undefined,
-    showTimepicker: js.UndefOr[Boolean] = js.undefined,
-    showTimezone: js.UndefOr[Boolean] = js.undefined,
-    showWeek: js.UndefOr[Boolean] = js.undefined,
-    sliderAccessArgs: js.Any = null,
-    stepHour: Int | Double = null,
-    stepMicrosec: Int | Double = null,
-    stepMillisec: Int | Double = null,
-    stepMinute: Int | Double = null,
-    stepMonths: Int | Double = null,
-    stepSecond: Int | Double = null,
-    timeFormat: String = null,
-    timeOnly: js.UndefOr[Boolean] = js.undefined,
-    timeOnlyTitle: String = null,
-    timeSuffix: String = null,
-    timeText: String = null,
-    timezone: Int | Double = null,
-    timezoneList: js.Array[TimezoneOptions] = null,
-    timezoneText: String = null,
-    weekHeader: String = null,
-    yearRange: String = null,
-    yearSuffix: String = null
-  ): DateTimePickerOptions = {
+  
+  inline def apply(): DateTimePickerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addSliderAccess)) __obj.updateDynamic("addSliderAccess")(addSliderAccess.asInstanceOf[js.Any])
-    if (altField != null) __obj.updateDynamic("altField")(altField.asInstanceOf[js.Any])
-    if (!js.isUndefined(altFieldTimeOnly)) __obj.updateDynamic("altFieldTimeOnly")(altFieldTimeOnly.asInstanceOf[js.Any])
-    if (altFormat != null) __obj.updateDynamic("altFormat")(altFormat.asInstanceOf[js.Any])
-    if (altSeparator != null) __obj.updateDynamic("altSeparator")(altSeparator.asInstanceOf[js.Any])
-    if (altTimeFormat != null) __obj.updateDynamic("altTimeFormat")(altTimeFormat.asInstanceOf[js.Any])
-    if (altTimeSuffix != null) __obj.updateDynamic("altTimeSuffix")(altTimeSuffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysSetTime)) __obj.updateDynamic("alwaysSetTime")(alwaysSetTime.asInstanceOf[js.Any])
-    if (amNames != null) __obj.updateDynamic("amNames")(amNames.asInstanceOf[js.Any])
-    if (appendText != null) __obj.updateDynamic("appendText")(appendText.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide.asInstanceOf[js.Any])
-    if (beforeShow != null) __obj.updateDynamic("beforeShow")(js.Any.fromFunction2((t0: /* input */ org.scalajs.dom.raw.Element, t1: /* inst */ js.Any) => beforeShow(t0, t1).runNow()))
-    if (beforeShowDay != null) __obj.updateDynamic("beforeShowDay")(js.Any.fromFunction1((t0: /* date */ js.Date) => beforeShowDay(t0).runNow()))
-    if (buttonImage != null) __obj.updateDynamic("buttonImage")(buttonImage.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonImageOnly)) __obj.updateDynamic("buttonImageOnly")(buttonImageOnly.asInstanceOf[js.Any])
-    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText.asInstanceOf[js.Any])
-    if (calculateWeek != null) __obj.updateDynamic("calculateWeek")(js.Any.fromFunction1((t0: /* date */ js.Date) => calculateWeek(t0).runNow()))
-    if (!js.isUndefined(changeMonth)) __obj.updateDynamic("changeMonth")(changeMonth.asInstanceOf[js.Any])
-    if (!js.isUndefined(changeYear)) __obj.updateDynamic("changeYear")(changeYear.asInstanceOf[js.Any])
-    if (closeText != null) __obj.updateDynamic("closeText")(closeText.asInstanceOf[js.Any])
-    if (!js.isUndefined(constrainInput)) __obj.updateDynamic("constrainInput")(constrainInput.asInstanceOf[js.Any])
-    if (controlType != null) __obj.updateDynamic("controlType")(controlType.asInstanceOf[js.Any])
-    if (currentText != null) __obj.updateDynamic("currentText")(currentText.asInstanceOf[js.Any])
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames.asInstanceOf[js.Any])
-    if (dayNamesMin != null) __obj.updateDynamic("dayNamesMin")(dayNamesMin.asInstanceOf[js.Any])
-    if (dayNamesShort != null) __obj.updateDynamic("dayNamesShort")(dayNamesShort.asInstanceOf[js.Any])
-    if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
-    if (!js.isUndefined(gotoCurrent)) __obj.updateDynamic("gotoCurrent")(gotoCurrent.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideIfNoPrevNext)) __obj.updateDynamic("hideIfNoPrevNext")(hideIfNoPrevNext.asInstanceOf[js.Any])
-    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (hourGrid != null) __obj.updateDynamic("hourGrid")(hourGrid.asInstanceOf[js.Any])
-    if (hourMax != null) __obj.updateDynamic("hourMax")(hourMax.asInstanceOf[js.Any])
-    if (hourMin != null) __obj.updateDynamic("hourMin")(hourMin.asInstanceOf[js.Any])
-    if (hourText != null) __obj.updateDynamic("hourText")(hourText.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (maxDateTime != null) __obj.updateDynamic("maxDateTime")(maxDateTime.asInstanceOf[js.Any])
-    if (microsec != null) __obj.updateDynamic("microsec")(microsec.asInstanceOf[js.Any])
-    if (microsecGrid != null) __obj.updateDynamic("microsecGrid")(microsecGrid.asInstanceOf[js.Any])
-    if (microsecMax != null) __obj.updateDynamic("microsecMax")(microsecMax.asInstanceOf[js.Any])
-    if (microsecMin != null) __obj.updateDynamic("microsecMin")(microsecMin.asInstanceOf[js.Any])
-    if (microsecText != null) __obj.updateDynamic("microsecText")(microsecText.asInstanceOf[js.Any])
-    if (millisec != null) __obj.updateDynamic("millisec")(millisec.asInstanceOf[js.Any])
-    if (millisecGrid != null) __obj.updateDynamic("millisecGrid")(millisecGrid.asInstanceOf[js.Any])
-    if (millisecMax != null) __obj.updateDynamic("millisecMax")(millisecMax.asInstanceOf[js.Any])
-    if (millisecMin != null) __obj.updateDynamic("millisecMin")(millisecMin.asInstanceOf[js.Any])
-    if (millisecText != null) __obj.updateDynamic("millisecText")(millisecText.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minDateTime != null) __obj.updateDynamic("minDateTime")(minDateTime.asInstanceOf[js.Any])
-    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
-    if (minuteGrid != null) __obj.updateDynamic("minuteGrid")(minuteGrid.asInstanceOf[js.Any])
-    if (minuteMax != null) __obj.updateDynamic("minuteMax")(minuteMax.asInstanceOf[js.Any])
-    if (minuteMin != null) __obj.updateDynamic("minuteMin")(minuteMin.asInstanceOf[js.Any])
-    if (minuteText != null) __obj.updateDynamic("minuteText")(minuteText.asInstanceOf[js.Any])
-    if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])
-    if (monthNamesShort != null) __obj.updateDynamic("monthNamesShort")(monthNamesShort.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigationAsDateFormat)) __obj.updateDynamic("navigationAsDateFormat")(navigationAsDateFormat.asInstanceOf[js.Any])
-    if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
-    if (numberOfMonths != null) __obj.updateDynamic("numberOfMonths")(numberOfMonths.asInstanceOf[js.Any])
-    if (onChangeMonthYear != null) __obj.updateDynamic("onChangeMonthYear")(js.Any.fromFunction3((t0: /* year */ scala.Double, t1: /* month */ scala.Double, t2: /* inst */ js.Any) => onChangeMonthYear(t0, t1, t2).runNow()))
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2((t0: /* dateText */ java.lang.String, t1: /* inst */ js.Any) => onClose(t0, t1).runNow()))
-    onSelect.foreach(p => __obj.updateDynamic("onSelect")(p.toJsFn))
-    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
-    if (pickerTimeFormat != null) __obj.updateDynamic("pickerTimeFormat")(pickerTimeFormat.asInstanceOf[js.Any])
-    if (pickerTimeSuffix != null) __obj.updateDynamic("pickerTimeSuffix")(pickerTimeSuffix.asInstanceOf[js.Any])
-    if (pmNames != null) __obj.updateDynamic("pmNames")(pmNames.asInstanceOf[js.Any])
-    if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
-    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
-    if (secondGrid != null) __obj.updateDynamic("secondGrid")(secondGrid.asInstanceOf[js.Any])
-    if (secondMax != null) __obj.updateDynamic("secondMax")(secondMax.asInstanceOf[js.Any])
-    if (secondMin != null) __obj.updateDynamic("secondMin")(secondMin.asInstanceOf[js.Any])
-    if (secondText != null) __obj.updateDynamic("secondText")(secondText.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectOtherMonths)) __obj.updateDynamic("selectOtherMonths")(selectOtherMonths.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (shortYearCutoff != null) __obj.updateDynamic("shortYearCutoff")(shortYearCutoff.asInstanceOf[js.Any])
-    if (showAnim != null) __obj.updateDynamic("showAnim")(showAnim.asInstanceOf[js.Any])
-    if (!js.isUndefined(showButtonPanel)) __obj.updateDynamic("showButtonPanel")(showButtonPanel.asInstanceOf[js.Any])
-    if (showCurrentAtPos != null) __obj.updateDynamic("showCurrentAtPos")(showCurrentAtPos.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMicrosec)) __obj.updateDynamic("showMicrosec")(showMicrosec.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMillisec)) __obj.updateDynamic("showMillisec")(showMillisec.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMonthAfterYear)) __obj.updateDynamic("showMonthAfterYear")(showMonthAfterYear.asInstanceOf[js.Any])
-    if (showOn != null) __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
-    if (showOptions != null) __obj.updateDynamic("showOptions")(showOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOtherMonths)) __obj.updateDynamic("showOtherMonths")(showOtherMonths.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTime)) __obj.updateDynamic("showTime")(showTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTimepicker)) __obj.updateDynamic("showTimepicker")(showTimepicker.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTimezone)) __obj.updateDynamic("showTimezone")(showTimezone.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeek)) __obj.updateDynamic("showWeek")(showWeek.asInstanceOf[js.Any])
-    if (sliderAccessArgs != null) __obj.updateDynamic("sliderAccessArgs")(sliderAccessArgs.asInstanceOf[js.Any])
-    if (stepHour != null) __obj.updateDynamic("stepHour")(stepHour.asInstanceOf[js.Any])
-    if (stepMicrosec != null) __obj.updateDynamic("stepMicrosec")(stepMicrosec.asInstanceOf[js.Any])
-    if (stepMillisec != null) __obj.updateDynamic("stepMillisec")(stepMillisec.asInstanceOf[js.Any])
-    if (stepMinute != null) __obj.updateDynamic("stepMinute")(stepMinute.asInstanceOf[js.Any])
-    if (stepMonths != null) __obj.updateDynamic("stepMonths")(stepMonths.asInstanceOf[js.Any])
-    if (stepSecond != null) __obj.updateDynamic("stepSecond")(stepSecond.asInstanceOf[js.Any])
-    if (timeFormat != null) __obj.updateDynamic("timeFormat")(timeFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeOnly)) __obj.updateDynamic("timeOnly")(timeOnly.asInstanceOf[js.Any])
-    if (timeOnlyTitle != null) __obj.updateDynamic("timeOnlyTitle")(timeOnlyTitle.asInstanceOf[js.Any])
-    if (timeSuffix != null) __obj.updateDynamic("timeSuffix")(timeSuffix.asInstanceOf[js.Any])
-    if (timeText != null) __obj.updateDynamic("timeText")(timeText.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
-    if (timezoneList != null) __obj.updateDynamic("timezoneList")(timezoneList.asInstanceOf[js.Any])
-    if (timezoneText != null) __obj.updateDynamic("timezoneText")(timezoneText.asInstanceOf[js.Any])
-    if (weekHeader != null) __obj.updateDynamic("weekHeader")(weekHeader.asInstanceOf[js.Any])
-    if (yearRange != null) __obj.updateDynamic("yearRange")(yearRange.asInstanceOf[js.Any])
-    if (yearSuffix != null) __obj.updateDynamic("yearSuffix")(yearSuffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimePickerOptions]
   }
+  
+  extension [Self <: DateTimePickerOptions](x: Self) {
+    
+    inline def setAddSliderAccess(value: Boolean): Self = StObject.set(x, "addSliderAccess", value.asInstanceOf[js.Any])
+    
+    inline def setAddSliderAccessUndefined: Self = StObject.set(x, "addSliderAccess", js.undefined)
+    
+    inline def setAltFieldTimeOnly(value: Boolean): Self = StObject.set(x, "altFieldTimeOnly", value.asInstanceOf[js.Any])
+    
+    inline def setAltFieldTimeOnlyUndefined: Self = StObject.set(x, "altFieldTimeOnly", js.undefined)
+    
+    inline def setAltSeparator(value: String): Self = StObject.set(x, "altSeparator", value.asInstanceOf[js.Any])
+    
+    inline def setAltSeparatorUndefined: Self = StObject.set(x, "altSeparator", js.undefined)
+    
+    inline def setAltTimeFormat(value: String): Self = StObject.set(x, "altTimeFormat", value.asInstanceOf[js.Any])
+    
+    inline def setAltTimeFormatUndefined: Self = StObject.set(x, "altTimeFormat", js.undefined)
+    
+    inline def setAltTimeSuffix(value: String): Self = StObject.set(x, "altTimeSuffix", value.asInstanceOf[js.Any])
+    
+    inline def setAltTimeSuffixUndefined: Self = StObject.set(x, "altTimeSuffix", js.undefined)
+    
+    inline def setAlwaysSetTime(value: Boolean): Self = StObject.set(x, "alwaysSetTime", value.asInstanceOf[js.Any])
+    
+    inline def setAlwaysSetTimeUndefined: Self = StObject.set(x, "alwaysSetTime", js.undefined)
+    
+    inline def setAmNames(value: String): Self = StObject.set(x, "amNames", value.asInstanceOf[js.Any])
+    
+    inline def setAmNamesUndefined: Self = StObject.set(x, "amNames", js.undefined)
+    
+    inline def setControlType(value: String): Self = StObject.set(x, "controlType", value.asInstanceOf[js.Any])
+    
+    inline def setControlTypeUndefined: Self = StObject.set(x, "controlType", js.undefined)
+    
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    
+    inline def setHourGrid(value: Double): Self = StObject.set(x, "hourGrid", value.asInstanceOf[js.Any])
+    
+    inline def setHourGridUndefined: Self = StObject.set(x, "hourGrid", js.undefined)
+    
+    inline def setHourMax(value: Double): Self = StObject.set(x, "hourMax", value.asInstanceOf[js.Any])
+    
+    inline def setHourMaxUndefined: Self = StObject.set(x, "hourMax", js.undefined)
+    
+    inline def setHourMin(value: Double): Self = StObject.set(x, "hourMin", value.asInstanceOf[js.Any])
+    
+    inline def setHourMinUndefined: Self = StObject.set(x, "hourMin", js.undefined)
+    
+    inline def setHourText(value: String): Self = StObject.set(x, "hourText", value.asInstanceOf[js.Any])
+    
+    inline def setHourTextUndefined: Self = StObject.set(x, "hourText", js.undefined)
+    
+    inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+    
+    inline def setMaxDateTime(value: js.Date): Self = StObject.set(x, "maxDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDateTimeUndefined: Self = StObject.set(x, "maxDateTime", js.undefined)
+    
+    inline def setMicrosec(value: Double): Self = StObject.set(x, "microsec", value.asInstanceOf[js.Any])
+    
+    inline def setMicrosecGrid(value: Double): Self = StObject.set(x, "microsecGrid", value.asInstanceOf[js.Any])
+    
+    inline def setMicrosecGridUndefined: Self = StObject.set(x, "microsecGrid", js.undefined)
+    
+    inline def setMicrosecMax(value: Double): Self = StObject.set(x, "microsecMax", value.asInstanceOf[js.Any])
+    
+    inline def setMicrosecMaxUndefined: Self = StObject.set(x, "microsecMax", js.undefined)
+    
+    inline def setMicrosecMin(value: Double): Self = StObject.set(x, "microsecMin", value.asInstanceOf[js.Any])
+    
+    inline def setMicrosecMinUndefined: Self = StObject.set(x, "microsecMin", js.undefined)
+    
+    inline def setMicrosecText(value: String): Self = StObject.set(x, "microsecText", value.asInstanceOf[js.Any])
+    
+    inline def setMicrosecTextUndefined: Self = StObject.set(x, "microsecText", js.undefined)
+    
+    inline def setMicrosecUndefined: Self = StObject.set(x, "microsec", js.undefined)
+    
+    inline def setMillisec(value: Double): Self = StObject.set(x, "millisec", value.asInstanceOf[js.Any])
+    
+    inline def setMillisecGrid(value: Double): Self = StObject.set(x, "millisecGrid", value.asInstanceOf[js.Any])
+    
+    inline def setMillisecGridUndefined: Self = StObject.set(x, "millisecGrid", js.undefined)
+    
+    inline def setMillisecMax(value: Double): Self = StObject.set(x, "millisecMax", value.asInstanceOf[js.Any])
+    
+    inline def setMillisecMaxUndefined: Self = StObject.set(x, "millisecMax", js.undefined)
+    
+    inline def setMillisecMin(value: Double): Self = StObject.set(x, "millisecMin", value.asInstanceOf[js.Any])
+    
+    inline def setMillisecMinUndefined: Self = StObject.set(x, "millisecMin", js.undefined)
+    
+    inline def setMillisecText(value: String): Self = StObject.set(x, "millisecText", value.asInstanceOf[js.Any])
+    
+    inline def setMillisecTextUndefined: Self = StObject.set(x, "millisecText", js.undefined)
+    
+    inline def setMillisecUndefined: Self = StObject.set(x, "millisec", js.undefined)
+    
+    inline def setMinDateTime(value: js.Date): Self = StObject.set(x, "minDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setMinDateTimeUndefined: Self = StObject.set(x, "minDateTime", js.undefined)
+    
+    inline def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+    
+    inline def setMinuteGrid(value: Double): Self = StObject.set(x, "minuteGrid", value.asInstanceOf[js.Any])
+    
+    inline def setMinuteGridUndefined: Self = StObject.set(x, "minuteGrid", js.undefined)
+    
+    inline def setMinuteMax(value: Double): Self = StObject.set(x, "minuteMax", value.asInstanceOf[js.Any])
+    
+    inline def setMinuteMaxUndefined: Self = StObject.set(x, "minuteMax", js.undefined)
+    
+    inline def setMinuteMin(value: Double): Self = StObject.set(x, "minuteMin", value.asInstanceOf[js.Any])
+    
+    inline def setMinuteMinUndefined: Self = StObject.set(x, "minuteMin", js.undefined)
+    
+    inline def setMinuteText(value: String): Self = StObject.set(x, "minuteText", value.asInstanceOf[js.Any])
+    
+    inline def setMinuteTextUndefined: Self = StObject.set(x, "minuteText", js.undefined)
+    
+    inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+    
+    inline def setOnSelect(value: CallbackTo[Any]): Self = StObject.set(x, "onSelect", value.toJsFn)
+    
+    inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+    
+    inline def setParse(value: String): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    
+    inline def setPickerTimeFormat(value: String): Self = StObject.set(x, "pickerTimeFormat", value.asInstanceOf[js.Any])
+    
+    inline def setPickerTimeFormatUndefined: Self = StObject.set(x, "pickerTimeFormat", js.undefined)
+    
+    inline def setPickerTimeSuffix(value: String): Self = StObject.set(x, "pickerTimeSuffix", value.asInstanceOf[js.Any])
+    
+    inline def setPickerTimeSuffixUndefined: Self = StObject.set(x, "pickerTimeSuffix", js.undefined)
+    
+    inline def setPmNames(value: String): Self = StObject.set(x, "pmNames", value.asInstanceOf[js.Any])
+    
+    inline def setPmNamesUndefined: Self = StObject.set(x, "pmNames", js.undefined)
+    
+    inline def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    
+    inline def setSecondGrid(value: Double): Self = StObject.set(x, "secondGrid", value.asInstanceOf[js.Any])
+    
+    inline def setSecondGridUndefined: Self = StObject.set(x, "secondGrid", js.undefined)
+    
+    inline def setSecondMax(value: Double): Self = StObject.set(x, "secondMax", value.asInstanceOf[js.Any])
+    
+    inline def setSecondMaxUndefined: Self = StObject.set(x, "secondMax", js.undefined)
+    
+    inline def setSecondMin(value: Double): Self = StObject.set(x, "secondMin", value.asInstanceOf[js.Any])
+    
+    inline def setSecondMinUndefined: Self = StObject.set(x, "secondMin", js.undefined)
+    
+    inline def setSecondText(value: String): Self = StObject.set(x, "secondText", value.asInstanceOf[js.Any])
+    
+    inline def setSecondTextUndefined: Self = StObject.set(x, "secondText", js.undefined)
+    
+    inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+    
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    
+    inline def setShowHour(value: Boolean): Self = StObject.set(x, "showHour", value.asInstanceOf[js.Any])
+    
+    inline def setShowHourUndefined: Self = StObject.set(x, "showHour", js.undefined)
+    
+    inline def setShowMicrosec(value: Boolean): Self = StObject.set(x, "showMicrosec", value.asInstanceOf[js.Any])
+    
+    inline def setShowMicrosecUndefined: Self = StObject.set(x, "showMicrosec", js.undefined)
+    
+    inline def setShowMillisec(value: Boolean): Self = StObject.set(x, "showMillisec", value.asInstanceOf[js.Any])
+    
+    inline def setShowMillisecUndefined: Self = StObject.set(x, "showMillisec", js.undefined)
+    
+    inline def setShowMinute(value: Boolean): Self = StObject.set(x, "showMinute", value.asInstanceOf[js.Any])
+    
+    inline def setShowMinuteUndefined: Self = StObject.set(x, "showMinute", js.undefined)
+    
+    inline def setShowSecond(value: Boolean): Self = StObject.set(x, "showSecond", value.asInstanceOf[js.Any])
+    
+    inline def setShowSecondUndefined: Self = StObject.set(x, "showSecond", js.undefined)
+    
+    inline def setShowTime(value: Boolean): Self = StObject.set(x, "showTime", value.asInstanceOf[js.Any])
+    
+    inline def setShowTimeUndefined: Self = StObject.set(x, "showTime", js.undefined)
+    
+    inline def setShowTimepicker(value: Boolean): Self = StObject.set(x, "showTimepicker", value.asInstanceOf[js.Any])
+    
+    inline def setShowTimepickerUndefined: Self = StObject.set(x, "showTimepicker", js.undefined)
+    
+    inline def setShowTimezone(value: Boolean): Self = StObject.set(x, "showTimezone", value.asInstanceOf[js.Any])
+    
+    inline def setShowTimezoneUndefined: Self = StObject.set(x, "showTimezone", js.undefined)
+    
+    inline def setSliderAccessArgs(value: Any): Self = StObject.set(x, "sliderAccessArgs", value.asInstanceOf[js.Any])
+    
+    inline def setSliderAccessArgsUndefined: Self = StObject.set(x, "sliderAccessArgs", js.undefined)
+    
+    inline def setStepHour(value: Double): Self = StObject.set(x, "stepHour", value.asInstanceOf[js.Any])
+    
+    inline def setStepHourUndefined: Self = StObject.set(x, "stepHour", js.undefined)
+    
+    inline def setStepMicrosec(value: Double): Self = StObject.set(x, "stepMicrosec", value.asInstanceOf[js.Any])
+    
+    inline def setStepMicrosecUndefined: Self = StObject.set(x, "stepMicrosec", js.undefined)
+    
+    inline def setStepMillisec(value: Double): Self = StObject.set(x, "stepMillisec", value.asInstanceOf[js.Any])
+    
+    inline def setStepMillisecUndefined: Self = StObject.set(x, "stepMillisec", js.undefined)
+    
+    inline def setStepMinute(value: Double): Self = StObject.set(x, "stepMinute", value.asInstanceOf[js.Any])
+    
+    inline def setStepMinuteUndefined: Self = StObject.set(x, "stepMinute", js.undefined)
+    
+    inline def setStepSecond(value: Double): Self = StObject.set(x, "stepSecond", value.asInstanceOf[js.Any])
+    
+    inline def setStepSecondUndefined: Self = StObject.set(x, "stepSecond", js.undefined)
+    
+    inline def setTimeFormat(value: String): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
+    
+    inline def setTimeFormatUndefined: Self = StObject.set(x, "timeFormat", js.undefined)
+    
+    inline def setTimeOnly(value: Boolean): Self = StObject.set(x, "timeOnly", value.asInstanceOf[js.Any])
+    
+    inline def setTimeOnlyTitle(value: String): Self = StObject.set(x, "timeOnlyTitle", value.asInstanceOf[js.Any])
+    
+    inline def setTimeOnlyTitleUndefined: Self = StObject.set(x, "timeOnlyTitle", js.undefined)
+    
+    inline def setTimeOnlyUndefined: Self = StObject.set(x, "timeOnly", js.undefined)
+    
+    inline def setTimeSuffix(value: String): Self = StObject.set(x, "timeSuffix", value.asInstanceOf[js.Any])
+    
+    inline def setTimeSuffixUndefined: Self = StObject.set(x, "timeSuffix", js.undefined)
+    
+    inline def setTimeText(value: String): Self = StObject.set(x, "timeText", value.asInstanceOf[js.Any])
+    
+    inline def setTimeTextUndefined: Self = StObject.set(x, "timeText", js.undefined)
+    
+    inline def setTimezone(value: Double): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    
+    inline def setTimezoneList(value: js.Array[TimezoneOptions]): Self = StObject.set(x, "timezoneList", value.asInstanceOf[js.Any])
+    
+    inline def setTimezoneListUndefined: Self = StObject.set(x, "timezoneList", js.undefined)
+    
+    inline def setTimezoneListVarargs(value: TimezoneOptions*): Self = StObject.set(x, "timezoneList", js.Array(value*))
+    
+    inline def setTimezoneText(value: String): Self = StObject.set(x, "timezoneText", value.asInstanceOf[js.Any])
+    
+    inline def setTimezoneTextUndefined: Self = StObject.set(x, "timezoneText", js.undefined)
+    
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+  }
 }
-

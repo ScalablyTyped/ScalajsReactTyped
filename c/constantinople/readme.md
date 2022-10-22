@@ -1,7 +1,7 @@
 
 # Scala.js typings for constantinople
 
-Typings are for version 3.1.2
+Typings are for version 4.0.1
 
 ## Library description:
 Determine whether a JavaScript expression evaluates to a constant
@@ -10,10 +10,10 @@ Determine whether a JavaScript expression evaluates to a constant
 | ------------------ | :-------------: |
 | Full name          | constantinople |
 | Keywords           | constant, ast, tooling |
-| # releases         | 5 |
-| # dependents       | 48 |
-| # downloads        | 32860559 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6402403.333333333 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/ForbesLindesay/constantinople#readme)

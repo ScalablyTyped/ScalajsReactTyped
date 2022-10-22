@@ -1,42 +1,36 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GroupOption extends js.Object
-
+sealed trait GroupOption extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.GroupOption")
 @js.native
-object GroupOption extends js.Object {
+object GroupOption extends StObject {
+  
   /**
-    *
     * Group by columns.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
-  sealed trait byColumns extends GroupOption
+  sealed trait byColumns
+    extends StObject
+       with GroupOption
   
   /**
-    *
     * Group by rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
-  sealed trait byRows extends GroupOption
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[GroupOption with String] = js.native
-  /* "ByColumns" */ @js.native
-  object byColumns extends TopLevel[byColumns with String]
-  
-  /* "ByRows" */ @js.native
-  object byRows extends TopLevel[byRows with String]
-  
+  sealed trait byRows
+    extends StObject
+       with GroupOption
 }
-

@@ -10,10 +10,10 @@ A modern smooth scrolling library.
 | ------------------ | :-------------: |
 | Full name          | jump.js |
 | Keywords           | smooth, scroll |
-| # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 2306894 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 356059.0 |
+| # stars            | 3473.0 |
 
 ## Links
 - [Homepage](https://github.com/callmecavs/jump.js#readme)

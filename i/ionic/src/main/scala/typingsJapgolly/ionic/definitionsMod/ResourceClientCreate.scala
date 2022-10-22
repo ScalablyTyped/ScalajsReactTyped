@@ -1,20 +1,22 @@
 package typingsJapgolly.ionic.definitionsMod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResourceClientCreate[T /* <: js.Object */, U /* <: js.Object */] extends js.Object {
+trait ResourceClientCreate[T /* <: js.Object */, U /* <: js.Object */] extends StObject {
+  
   def create(details: U): js.Promise[T]
 }
-
 object ResourceClientCreate {
-  @scala.inline
-  def apply[T /* <: js.Object */, U /* <: js.Object */](create: U => CallbackTo[js.Promise[T]]): ResourceClientCreate[T, U] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(js.Any.fromFunction1((t0: U) => create(t0).runNow()))
+  
+  inline def apply[T /* <: js.Object */, U /* <: js.Object */](create: U => js.Promise[T]): ResourceClientCreate[T, U] = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[ResourceClientCreate[T, U]]
   }
+  
+  extension [Self <: ResourceClientCreate[?, ?], T /* <: js.Object */, U /* <: js.Object */](x: Self & (ResourceClientCreate[T, U])) {
+    
+    inline def setCreate(value: U => js.Promise[T]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+  }
 }
-

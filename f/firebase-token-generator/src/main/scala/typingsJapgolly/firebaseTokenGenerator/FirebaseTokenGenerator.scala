@@ -1,18 +1,12 @@
 package typingsJapgolly.firebaseTokenGenerator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("FirebaseTokenGenerator")
 @js.native
-class FirebaseTokenGenerator protected () extends js.Object {
-  /**
-    * Builds a new object that can generate Firebase authentication tokens.
-    * @constructor
-    * @param { String } secret The secret for the Firebase being used (get yours from the Firebase Admin Console).
-    */
-  def this(secret: String) = this()
+trait FirebaseTokenGenerator extends StObject {
+  
   /**
     * Creates a token that authenticates a client with arbitrary data "data", and the specified options.
     *
@@ -31,7 +25,6 @@ class FirebaseTokenGenerator protected () extends js.Object {
     *                f) "iat" -- (Number) (internal-only, for testing) Set the issued at time for the generated token
     * @return {String} The authentication token
     */
-  def createToken(data: js.Any): String = js.native
-  def createToken(data: js.Any, options: TokenOptions): String = js.native
+  def createToken(data: Any): String = js.native
+  def createToken(data: Any, options: TokenOptions): String = js.native
 }
-

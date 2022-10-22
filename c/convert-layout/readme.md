@@ -10,10 +10,10 @@ Converts text from one keyboard layout to other
 | ------------------ | :-------------: |
 | Full name          | convert-layout |
 | Keywords           | keyboard, keyboard layout, russian, english, change, qwerty, belarusian, german, kazakh, spanish, ukrainian, hebrew, persian, farsi |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 40613 |
-| # stars            | 2 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 20516.333333333332 |
+| # stars            | 227.0 |
 
 ## Links
 - [Homepage](https://github.com/ai/convert-layout#readme)

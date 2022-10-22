@@ -1,10 +1,11 @@
 package typingsJapgolly.sequelize.mod
 
-import typingsJapgolly.sequelize.Anon1
-import typingsJapgolly.sequelize.AnonQuery
+import typingsJapgolly.sequelize.anon.Query
+import typingsJapgolly.sequelize.anon.`2`
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the main class, the entry point to sequelize. To use it, you just need to
@@ -20,20 +21,15 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Sequelize
-  extends SequelizeStaticAndInstance
-     with Hooks[js.Any] {
+  extends StObject
+     with SequelizeStaticAndInstance
+     with Hooks[Any] {
+  
   /**
     * A reference to Sequelize constructor from sequelize. Useful for accessing DataTypes, Errors etc.
     */
   var Sequelize: SequelizeStatic = js.native
-  /**
-    * Defined models.
-    */
-  var models: ModelsHashInterface = js.native
-  /**
-    * Defined options.
-    */
-  var options: Options = js.native
+  
   /**
     * Test the connection by trying to authenticate
     *
@@ -41,6 +37,7 @@ trait Sequelize
     */
   def authenticate(): typingsJapgolly.bluebird.mod.^[Unit] = js.native
   def authenticate(options: QueryOptions): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Close all connections used by this sequelize instance, and free all references so the instance can be
     * garbage collected.
@@ -49,6 +46,7 @@ trait Sequelize
     * instances, and want to garbage collect some of them.
     */
   def close(): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Create a new database schema.
     *
@@ -60,11 +58,13 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def createSchema(schema: String, options: Anon1): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def createSchema(schema: String, options: `2`): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  
   /**
     * Returns the database version
     */
   def databaseVersion(): typingsJapgolly.bluebird.mod.^[String] = js.native
+  
   /**
     * Define a new model, representing a table in the DB.
     *
@@ -123,14 +123,16 @@ trait Sequelize
     attributes: DefineModelAttributes[TCreationAttributes],
     options: DefineOptions[TInstance]
   ): Model[TInstance, TAttributes, TCreationAttributes] = js.native
+  
   /**
     * Drop all tables defined through this sequelize instance. This is done by calling Model.drop on each model
     * @see {Model#drop} for options
     *
     * @param options The options passed to each call to Model.drop
     */
-  def drop(): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def drop(options: DropOptions): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def drop(): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  def drop(options: DropOptions): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  
   /**
     * Drop all schemas
     *
@@ -141,7 +143,8 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def dropAllSchemas(options: Anon1): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def dropAllSchemas(options: `2`): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  
   /**
     * Drop a single schema
     *
@@ -153,21 +156,25 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def dropSchema(schema: String, options: Anon1): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def dropSchema(schema: String, options: `2`): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  
   /**
     * Escape value.
     *
     * @param value Value that needs to be escaped
     */
   def escape(value: String): String = js.native
+  
   /**
     * Returns the specified dialect.
     */
   def getDialect(): String = js.native
+  
   /**
     * Returns an instance of QueryInterface.
     */
   def getQueryInterface(): QueryInterface = js.native
+  
   /**
     * Imports a model defined in another file
     *
@@ -193,18 +200,31 @@ trait Sequelize
       Model[TInstance, TAttributes, TAttributes]
     ]
   ): Model[TInstance, TAttributes, TAttributes] = js.native
+  
   /**
     * Checks whether a model with the given name is defined
     *
     * @param modelName The name of a model defined with Sequelize.define
     */
   def isDefined(modelName: String): Boolean = js.native
+  
   /**
     * Fetch a Model which is already defined
     *
     * @param modelName The name of a model defined with Sequelize.define
     */
   def model[TInstance, TAttributes](modelName: String): Model[TInstance, TAttributes, TAttributes] = js.native
+  
+  /**
+    * Defined models.
+    */
+  var models: ModelsHashInterface = js.native
+  
+  /**
+    * Defined options.
+    */
+  var options: Options = js.native
+  
   /**
     * Execute a query on the DB, with the posibility to bypass all the sequelize goodness.
     *
@@ -227,14 +247,16 @@ trait Sequelize
     * @param sql
     * @param options Query options
     */
-  def query(sql: String): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def query(sql: String, options: QueryOptions): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def query(sql: AnonQuery): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def query(sql: AnonQuery, options: QueryOptions): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def query(sql: String): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  def query(sql: String, options: QueryOptions): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  def query(sql: Query): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  def query(sql: Query, options: QueryOptions): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  
   /**
     * Get the fn for random based on the dialect
     */
   def random(): fn = js.native
+  
   /**
     * Execute a query which would set an environment or user variable. The variables are set per connection,
     * so this function needs a transaction.
@@ -244,7 +266,8 @@ trait Sequelize
     * @param variables Object with multiple variables.
     * @param options Query options.
     */
-  def set(variables: js.Object, options: QueryOptionsTransactionRequired): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def set(variables: js.Object, options: QueryOptionsTransactionRequired): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  
   /**
     * Show all defined schemas
     *
@@ -255,17 +278,19 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def showAllSchemas(options: Anon1): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def showAllSchemas(options: `2`): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  
   /**
     * Sync all defined models to the DB.
     *
     * @param options Sync Options
     */
-  def sync(): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def sync(options: SyncOptions): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def sync(): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  def sync(options: SyncOptions): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  
   def transaction(): typingsJapgolly.bluebird.mod.^[Transaction] = js.native
   def transaction(options: TransactionOptions): typingsJapgolly.bluebird.mod.^[Transaction] = js.native
-  def transaction[T](autoCallback: js.Function1[/* t */ Transaction, js.Thenable[T]]): typingsJapgolly.bluebird.mod.^[T] = js.native
+  def transaction[T](autoCallback: js.Function1[/* t */ Transaction, PromiseLike[T]]): typingsJapgolly.bluebird.mod.^[T] = js.native
   /**
     * Start a transaction. When using transactions, you should pass the transaction in the options argument
     * in order for the query to happen under that transaction
@@ -311,7 +336,8 @@ trait Sequelize
     * @param options Transaction Options
     * @param autoCallback Callback for the transaction
     */
-  def transaction[T](options: TransactionOptions, autoCallback: js.Function1[/* t */ Transaction, js.Thenable[T]]): typingsJapgolly.bluebird.mod.^[T] = js.native
+  def transaction[T](options: TransactionOptions, autoCallback: js.Function1[/* t */ Transaction, PromiseLike[T]]): typingsJapgolly.bluebird.mod.^[T] = js.native
+  
   /**
     * Truncate all tables defined through the sequelize models. This is done
     * by calling Model.truncate() on each model.
@@ -320,9 +346,9 @@ trait Sequelize
     * @param {Boolean|function} [options.transaction]
     * @param {Boolean|function} [options.logging] A function that logs sql queries, or false for no logging
     */
-  def truncate(): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def truncate(options: DestroyOptions): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def truncate(): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  def truncate(options: DestroyOptions): typingsJapgolly.bluebird.mod.^[Any] = js.native
+  
   def validate(): typingsJapgolly.bluebird.mod.^[ValidationError] = js.native
   def validate(options: QueryOptions): typingsJapgolly.bluebird.mod.^[ValidationError] = js.native
 }
-

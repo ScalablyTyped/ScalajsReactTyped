@@ -1,27 +1,23 @@
 package typingsJapgolly.activexInfopath.InfoPath
 
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`1`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`3`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`4`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`1`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`3`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`1`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`4`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`3`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`1`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`4`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`3`
 */
-trait XdConfirmButtons extends js.Object
-
+trait XdConfirmButtons extends StObject
 object XdConfirmButtons {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xdOKCancel: `1` = this.cast(1)
-  @scala.inline
-  def xdYesNo: `4` = this.cast(4)
-  @scala.inline
-  def xdYesNoCancel: `3` = this.cast(3)
+  
+  inline def xdOKCancel: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xdYesNo: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xdYesNoCancel: `3` = 3.asInstanceOf[`3`]
 }
-

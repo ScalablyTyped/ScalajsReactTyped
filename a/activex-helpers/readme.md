@@ -1,7 +1,7 @@
 
 # Scala.js typings for activex-helpers
 
-Typings are for version 1.0.2
+Typings are for version 1.0.3
 
 ## Library description:
 Event handler management, and parameterized property setters, for ActiveX objects
@@ -10,10 +10,10 @@ Event handler management, and parameterized property setters, for ActiveX object
 | ------------------ | :-------------: |
 | Full name          | activex-helpers |
 | Keywords           | activex, events |
-| # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 8678 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1011.6666666666666 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/zspitz/activex-js-helpers#readme)

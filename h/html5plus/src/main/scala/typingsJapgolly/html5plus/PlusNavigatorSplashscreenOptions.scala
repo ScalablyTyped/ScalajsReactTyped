@@ -1,15 +1,16 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 更新应用启动界面要设置的参数
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
   */
-trait PlusNavigatorSplashscreenOptions extends js.Object {
+trait PlusNavigatorSplashscreenOptions extends StObject {
+  
   /**
     * 是否自动关闭启动界面
     * true表示应用启动后自动关闭启动界面，false表示应用启动后不自动关闭启动界面，需要在应用调用plus.navigator.closeSplashscreen()方法关闭。
@@ -17,14 +18,16 @@ trait PlusNavigatorSplashscreenOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   var autoclose: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * 是否自动关闭启动界面（WAP2APP应用）
     * 与autoclose属性值作用一致，仅在WAP2APP应用中有效。
-    * 	不推荐设置此值，如果未设置会自动使用autoclose属性值。
+    *     不推荐设置此值，如果未设置会自动使用autoclose属性值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   var autoclose_w2a: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * 启动界面延时关闭时间
     * 仅在设置为自动关闭启动界面时有效。
@@ -32,14 +35,16 @@ trait PlusNavigatorSplashscreenOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   var delay: js.UndefOr[Double] = js.undefined
+  
   /**
     * 启动界面延时关闭时间（WAP2APP应用）
     * 与delay属性值作用一致，仅在WAP2APP应用中有效。
-    * 	不推荐设置此值，如果未设置会自动使用delay属性值。
+    *     不推荐设置此值，如果未设置会自动使用delay属性值。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
     */
   var delay_w2a: js.UndefOr[Double] = js.undefined
+  
   /**
     * 启动界面的图片路径
     * 仅支持本地文件路径，图片必须为png格式。
@@ -48,23 +53,33 @@ trait PlusNavigatorSplashscreenOptions extends js.Object {
     */
   var image: js.UndefOr[String] = js.undefined
 }
-
 object PlusNavigatorSplashscreenOptions {
-  @scala.inline
-  def apply(
-    autoclose: js.UndefOr[Boolean] = js.undefined,
-    autoclose_w2a: js.UndefOr[Boolean] = js.undefined,
-    delay: Int | Double = null,
-    delay_w2a: Int | Double = null,
-    image: String = null
-  ): PlusNavigatorSplashscreenOptions = {
+  
+  inline def apply(): PlusNavigatorSplashscreenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoclose_w2a)) __obj.updateDynamic("autoclose_w2a")(autoclose_w2a.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (delay_w2a != null) __obj.updateDynamic("delay_w2a")(delay_w2a.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNavigatorSplashscreenOptions]
   }
+  
+  extension [Self <: PlusNavigatorSplashscreenOptions](x: Self) {
+    
+    inline def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
+    
+    inline def setAutocloseUndefined: Self = StObject.set(x, "autoclose", js.undefined)
+    
+    inline def setAutoclose_w2a(value: Boolean): Self = StObject.set(x, "autoclose_w2a", value.asInstanceOf[js.Any])
+    
+    inline def setAutoclose_w2aUndefined: Self = StObject.set(x, "autoclose_w2a", js.undefined)
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setDelay_w2a(value: Double): Self = StObject.set(x, "delay_w2a", value.asInstanceOf[js.Any])
+    
+    inline def setDelay_w2aUndefined: Self = StObject.set(x, "delay_w2a", js.undefined)
+    
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+  }
 }
-

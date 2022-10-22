@@ -1,43 +1,88 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
-import typingsJapgolly.googleVisualization.AnonBarLabelStyle
+import typingsJapgolly.googleVisualization.anon.BarLabelStyle
+import typingsJapgolly.googleVisualization.anon.IsHtml
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimelineOptions extends js.Object {
+trait TimelineOptions extends StObject {
+  
   var avoidOverlappingGridLines: js.UndefOr[Boolean] = js.undefined
+  
   var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
+  
   var colors: js.UndefOr[js.Array[String]] = js.undefined
+  
   var enableInteractivity: js.UndefOr[Boolean] = js.undefined
+  
+  var fontName: js.UndefOr[String] = js.undefined
+  
+  var fontSize: js.UndefOr[Double] = js.undefined
+  
   var forceIFrame: js.UndefOr[Boolean] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
-  var timeline: js.UndefOr[AnonBarLabelStyle] = js.undefined
+  
+  var timeline: js.UndefOr[BarLabelStyle] = js.undefined
+  
+  var tooltip: js.UndefOr[IsHtml] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object TimelineOptions {
-  @scala.inline
-  def apply(
-    avoidOverlappingGridLines: js.UndefOr[Boolean] = js.undefined,
-    backgroundColor: String | ChartStrokeFill = null,
-    colors: js.Array[String] = null,
-    enableInteractivity: js.UndefOr[Boolean] = js.undefined,
-    forceIFrame: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    timeline: AnonBarLabelStyle = null,
-    width: Int | Double = null
-  ): TimelineOptions = {
+  
+  inline def apply(): TimelineOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(avoidOverlappingGridLines)) __obj.updateDynamic("avoidOverlappingGridLines")(avoidOverlappingGridLines.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceIFrame)) __obj.updateDynamic("forceIFrame")(forceIFrame.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (timeline != null) __obj.updateDynamic("timeline")(timeline.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineOptions]
   }
+  
+  extension [Self <: TimelineOptions](x: Self) {
+    
+    inline def setAvoidOverlappingGridLines(value: Boolean): Self = StObject.set(x, "avoidOverlappingGridLines", value.asInstanceOf[js.Any])
+    
+    inline def setAvoidOverlappingGridLinesUndefined: Self = StObject.set(x, "avoidOverlappingGridLines", js.undefined)
+    
+    inline def setBackgroundColor(value: String | ChartStrokeFill): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
+    
+    inline def setEnableInteractivity(value: Boolean): Self = StObject.set(x, "enableInteractivity", value.asInstanceOf[js.Any])
+    
+    inline def setEnableInteractivityUndefined: Self = StObject.set(x, "enableInteractivity", js.undefined)
+    
+    inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+    
+    inline def setFontNameUndefined: Self = StObject.set(x, "fontName", js.undefined)
+    
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setForceIFrame(value: Boolean): Self = StObject.set(x, "forceIFrame", value.asInstanceOf[js.Any])
+    
+    inline def setForceIFrameUndefined: Self = StObject.set(x, "forceIFrame", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setTimeline(value: BarLabelStyle): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+    
+    inline def setTimelineUndefined: Self = StObject.set(x, "timeline", js.undefined)
+    
+    inline def setTooltip(value: IsHtml): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

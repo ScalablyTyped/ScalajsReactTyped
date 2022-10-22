@@ -1,36 +1,52 @@
 package typingsJapgolly.winrt.Windows.Storage
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IMapView
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IPropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IApplicationDataContainer extends js.Object {
+trait IApplicationDataContainer extends StObject {
+  
   var containers: IMapView[String, ApplicationDataContainer]
-  var locality: ApplicationDataLocality
-  var name: String
-  var values: IPropertySet
+  
   def createContainer(name: String, disposition: ApplicationDataCreateDisposition): ApplicationDataContainer
+  
   def deleteContainer(name: String): Unit
+  
+  var locality: ApplicationDataLocality
+  
+  var name: String
+  
+  var values: IPropertySet
 }
-
 object IApplicationDataContainer {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     containers: IMapView[String, ApplicationDataContainer],
-    createContainer: (String, ApplicationDataCreateDisposition) => CallbackTo[ApplicationDataContainer],
+    createContainer: (String, ApplicationDataCreateDisposition) => ApplicationDataContainer,
     deleteContainer: String => Callback,
     locality: ApplicationDataLocality,
     name: String,
     values: IPropertySet
   ): IApplicationDataContainer = {
-    val __obj = js.Dynamic.literal(containers = containers.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-    __obj.updateDynamic("createContainer")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.winrt.Windows.Storage.ApplicationDataCreateDisposition) => createContainer(t0, t1).runNow()))
-    __obj.updateDynamic("deleteContainer")(js.Any.fromFunction1((t0: java.lang.String) => deleteContainer(t0).runNow()))
+    val __obj = js.Dynamic.literal(containers = containers.asInstanceOf[js.Any], createContainer = js.Any.fromFunction2(createContainer), deleteContainer = js.Any.fromFunction1((t0: String) => deleteContainer(t0).runNow()), locality = locality.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IApplicationDataContainer]
   }
+  
+  extension [Self <: IApplicationDataContainer](x: Self) {
+    
+    inline def setContainers(value: IMapView[String, ApplicationDataContainer]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+    
+    inline def setCreateContainer(value: (String, ApplicationDataCreateDisposition) => ApplicationDataContainer): Self = StObject.set(x, "createContainer", js.Any.fromFunction2(value))
+    
+    inline def setDeleteContainer(value: String => Callback): Self = StObject.set(x, "deleteContainer", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setLocality(value: ApplicationDataLocality): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setValues(value: IPropertySet): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+  }
 }
-

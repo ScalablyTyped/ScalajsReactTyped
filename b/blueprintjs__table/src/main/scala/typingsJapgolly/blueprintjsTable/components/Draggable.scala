@@ -1,55 +1,43 @@
 package typingsJapgolly.blueprintjsTable.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.blueprintjsTable.draggableMod.ICoordinateData
-import typingsJapgolly.blueprintjsTable.draggableMod.IDraggableProps
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsTable.libEsmInteractionsDragTypesMod.ICoordinateData
+import typingsJapgolly.blueprintjsTable.libEsmInteractionsDraggableMod.IDraggableProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Draggable {
-  def apply(
-    className: String = null,
-    onActivate: /* event */ MouseEvent => CallbackTo[Boolean] = null,
-    onClick: /* event */ MouseEvent => Callback = null,
-    onDoubleClick: /* event */ MouseEvent => Callback = null,
-    onDragEnd: (/* event */ MouseEvent, /* coords */ ICoordinateData) => Callback = null,
-    onDragMove: (/* event */ MouseEvent, /* coords */ ICoordinateData) => Callback = null,
-    preventDefault: js.UndefOr[Boolean] = js.undefined,
-    stopPropagation: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[IDraggableProps, typingsJapgolly.blueprintjsTable.mod.Draggable, Unit, IDraggableProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (onActivate != null) __obj.updateDynamic("onActivate")(js.Any.fromFunction1((t0: /* event */ org.scalajs.dom.raw.MouseEvent) => onActivate(t0).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* event */ org.scalajs.dom.raw.MouseEvent) => onClick(t0).runNow()))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1((t0: /* event */ org.scalajs.dom.raw.MouseEvent) => onDoubleClick(t0).runNow()))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction2((t0: /* event */ org.scalajs.dom.raw.MouseEvent, t1: /* coords */ typingsJapgolly.blueprintjsTable.draggableMod.ICoordinateData) => onDragEnd(t0, t1).runNow()))
-    if (onDragMove != null) __obj.updateDynamic("onDragMove")(js.Any.fromFunction2((t0: /* event */ org.scalajs.dom.raw.MouseEvent, t1: /* coords */ typingsJapgolly.blueprintjsTable.draggableMod.ICoordinateData) => onDragMove(t0, t1).runNow()))
-    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsTable.draggableMod.IDraggableProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsTable.mod.Draggable](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsTable.draggableMod.IDraggableProps])(children: _*)
-  }
   @JSImport("@blueprintjs/table", "Draggable")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsTable.mod.Draggable] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def onActivate(value: /* event */ MouseEvent => Boolean): this.type = set("onActivate", js.Any.fromFunction1(value))
+    
+    inline def onClick(value: /* event */ MouseEvent => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: /* event */ MouseEvent) => value(t0).runNow()))
+    
+    inline def onDoubleClick(value: /* event */ MouseEvent => Callback): this.type = set("onDoubleClick", js.Any.fromFunction1((t0: /* event */ MouseEvent) => value(t0).runNow()))
+    
+    inline def onDragEnd(value: (/* event */ MouseEvent, /* coords */ ICoordinateData) => Callback): this.type = set("onDragEnd", js.Any.fromFunction2((t0: /* event */ MouseEvent, t1: /* coords */ ICoordinateData) => (value(t0, t1)).runNow()))
+    
+    inline def onDragMove(value: (/* event */ MouseEvent, /* coords */ ICoordinateData) => Callback): this.type = set("onDragMove", js.Any.fromFunction2((t0: /* event */ MouseEvent, t1: /* coords */ ICoordinateData) => (value(t0, t1)).runNow()))
+    
+    inline def preventDefault(value: Boolean): this.type = set("preventDefault", value.asInstanceOf[js.Any])
+    
+    inline def stopPropagation(value: Boolean): this.type = set("stopPropagation", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Draggable.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IDraggableProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleMaps.googleMapsStrings.dailyLimitExceeded
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.googleMaps.googleMapsStrings.notFound
   - typingsJapgolly.googleMaps.googleMapsStrings.parseError
 */
-trait GeolocationErrorReason extends js.Object
-
+trait GeolocationErrorReason extends StObject
 object GeolocationErrorReason {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dailyLimitExceeded: typingsJapgolly.googleMaps.googleMapsStrings.dailyLimitExceeded = this.cast("dailyLimitExceeded")
-  @scala.inline
-  def keyInvalid: typingsJapgolly.googleMaps.googleMapsStrings.keyInvalid = this.cast("keyInvalid")
-  @scala.inline
-  def notFound: typingsJapgolly.googleMaps.googleMapsStrings.notFound = this.cast("notFound")
-  @scala.inline
-  def parseError: typingsJapgolly.googleMaps.googleMapsStrings.parseError = this.cast("parseError")
-  @scala.inline
-  def userRateLimitExceeded: typingsJapgolly.googleMaps.googleMapsStrings.userRateLimitExceeded = this.cast("userRateLimitExceeded")
+  
+  inline def dailyLimitExceeded: typingsJapgolly.googleMaps.googleMapsStrings.dailyLimitExceeded = "dailyLimitExceeded".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.dailyLimitExceeded]
+  
+  inline def keyInvalid: typingsJapgolly.googleMaps.googleMapsStrings.keyInvalid = "keyInvalid".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.keyInvalid]
+  
+  inline def notFound: typingsJapgolly.googleMaps.googleMapsStrings.notFound = "notFound".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.notFound]
+  
+  inline def parseError: typingsJapgolly.googleMaps.googleMapsStrings.parseError = "parseError".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.parseError]
+  
+  inline def userRateLimitExceeded: typingsJapgolly.googleMaps.googleMapsStrings.userRateLimitExceeded = "userRateLimitExceeded".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.userRateLimitExceeded]
 }
-

@@ -1,124 +1,72 @@
 package typingsJapgolly.reduxSagaCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reduxSagaCoreStrings {
-  @js.native
-  sealed trait `@@redux-sagaSlashSELF_CANCELLATION` extends js.Object
   
   @js.native
-  sealed trait ACTION_CHANNEL extends js.Object
+  sealed trait `@@redux-sagaSlashSELF_CANCELLATION` extends StObject
+  inline def `@@redux-sagaSlashSELF_CANCELLATION`: `@@redux-sagaSlashSELF_CANCELLATION` = "@@redux-saga/SELF_CANCELLATION".asInstanceOf[`@@redux-sagaSlashSELF_CANCELLATION`]
   
   @js.native
-  sealed trait ALL extends js.Object
+  sealed trait ACTION_CHANNEL extends StObject
+  inline def ACTION_CHANNEL: ACTION_CHANNEL = "ACTION_CHANNEL".asInstanceOf[ACTION_CHANNEL]
   
   @js.native
-  sealed trait AnonContext extends js.Object
+  sealed trait ALL extends StObject
+  inline def ALL: ALL = "ALL".asInstanceOf[ALL]
   
   @js.native
-  sealed trait AnonContextFn extends js.Object
+  sealed trait CALL extends StObject
+  inline def CALL: CALL = "CALL".asInstanceOf[CALL]
   
   @js.native
-  sealed trait CALL extends js.Object
+  sealed trait CANCEL extends StObject
+  inline def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
   
   @js.native
-  sealed trait CANCEL extends js.Object
+  sealed trait CANCELLED extends StObject
+  inline def CANCELLED: CANCELLED = "CANCELLED".asInstanceOf[CANCELLED]
   
   @js.native
-  sealed trait CANCELLED extends js.Object
+  sealed trait CPS extends StObject
+  inline def CPS: CPS = "CPS".asInstanceOf[CPS]
   
   @js.native
-  sealed trait CPS extends js.Object
+  sealed trait FLUSH extends StObject
+  inline def FLUSH: FLUSH = "FLUSH".asInstanceOf[FLUSH]
   
   @js.native
-  sealed trait FLUSH extends js.Object
+  sealed trait FORK extends StObject
+  inline def FORK: FORK = "FORK".asInstanceOf[FORK]
   
   @js.native
-  sealed trait FORK extends js.Object
+  sealed trait GET_CONTEXT extends StObject
+  inline def GET_CONTEXT: GET_CONTEXT = "GET_CONTEXT".asInstanceOf[GET_CONTEXT]
   
   @js.native
-  sealed trait GET_CONTEXT extends js.Object
+  sealed trait JOIN extends StObject
+  inline def JOIN: JOIN = "JOIN".asInstanceOf[JOIN]
   
   @js.native
-  sealed trait JOIN extends js.Object
+  sealed trait PUT extends StObject
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait RACE extends StObject
+  inline def RACE: RACE = "RACE".asInstanceOf[RACE]
   
   @js.native
-  sealed trait RACE extends js.Object
+  sealed trait SELECT extends StObject
+  inline def SELECT: SELECT = "SELECT".asInstanceOf[SELECT]
   
   @js.native
-  sealed trait SELECT extends js.Object
+  sealed trait SET_CONTEXT extends StObject
+  inline def SET_CONTEXT: SET_CONTEXT = "SET_CONTEXT".asInstanceOf[SET_CONTEXT]
   
   @js.native
-  sealed trait SET_CONTEXT extends js.Object
-  
-  @js.native
-  sealed trait TAKE extends js.Object
-  
-  @js.native
-  sealed trait apply extends js.Object
-  
-  @js.native
-  sealed trait call_ extends js.Object
-  
-  @js.native
-  sealed trait cps_ extends js.Object
-  
-  @js.native
-  sealed trait fork_ extends js.Object
-  
-  @js.native
-  sealed trait spawn extends js.Object
-  
-  @scala.inline
-  def `@@redux-sagaSlashSELF_CANCELLATION`: `@@redux-sagaSlashSELF_CANCELLATION` = "@@redux-saga/SELF_CANCELLATION".asInstanceOf[`@@redux-sagaSlashSELF_CANCELLATION`]
-  @scala.inline
-  def ACTION_CHANNEL: ACTION_CHANNEL = "ACTION_CHANNEL".asInstanceOf[ACTION_CHANNEL]
-  @scala.inline
-  def ALL: ALL = "ALL".asInstanceOf[ALL]
-  @scala.inline
-  def AnonContext: AnonContext = "AnonContext".asInstanceOf[AnonContext]
-  @scala.inline
-  def AnonContextFn: AnonContextFn = "AnonContextFn".asInstanceOf[AnonContextFn]
-  @scala.inline
-  def CALL: CALL = "CALL".asInstanceOf[CALL]
-  @scala.inline
-  def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
-  @scala.inline
-  def CANCELLED: CANCELLED = "CANCELLED".asInstanceOf[CANCELLED]
-  @scala.inline
-  def CPS: CPS = "CPS".asInstanceOf[CPS]
-  @scala.inline
-  def FLUSH: FLUSH = "FLUSH".asInstanceOf[FLUSH]
-  @scala.inline
-  def FORK: FORK = "FORK".asInstanceOf[FORK]
-  @scala.inline
-  def GET_CONTEXT: GET_CONTEXT = "GET_CONTEXT".asInstanceOf[GET_CONTEXT]
-  @scala.inline
-  def JOIN: JOIN = "JOIN".asInstanceOf[JOIN]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def RACE: RACE = "RACE".asInstanceOf[RACE]
-  @scala.inline
-  def SELECT: SELECT = "SELECT".asInstanceOf[SELECT]
-  @scala.inline
-  def SET_CONTEXT: SET_CONTEXT = "SET_CONTEXT".asInstanceOf[SET_CONTEXT]
-  @scala.inline
-  def TAKE: TAKE = "TAKE".asInstanceOf[TAKE]
-  @scala.inline
-  def apply: apply = "apply".asInstanceOf[apply]
-  @scala.inline
-  def call_ : call_ = "call".asInstanceOf[call_]
-  @scala.inline
-  def cps_ : cps_ = "cps".asInstanceOf[cps_]
-  @scala.inline
-  def fork_ : fork_ = "fork".asInstanceOf[fork_]
-  @scala.inline
-  def spawn: spawn = "spawn".asInstanceOf[spawn]
+  sealed trait TAKE extends StObject
+  inline def TAKE: TAKE = "TAKE".asInstanceOf[TAKE]
 }
-

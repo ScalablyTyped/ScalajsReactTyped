@@ -1,19 +1,24 @@
 package typingsJapgolly.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateItemRelationships extends js.Object {
+trait CreateItemRelationships extends StObject {
+  
   var storage: js.UndefOr[CreateItemRelationshipsStorage] = js.undefined
 }
-
 object CreateItemRelationships {
-  @scala.inline
-  def apply(storage: CreateItemRelationshipsStorage = null): CreateItemRelationships = {
+  
+  inline def apply(): CreateItemRelationships = {
     val __obj = js.Dynamic.literal()
-    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateItemRelationships]
   }
+  
+  extension [Self <: CreateItemRelationships](x: Self) {
+    
+    inline def setStorage(value: CreateItemRelationshipsStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    
+    inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+  }
 }
-

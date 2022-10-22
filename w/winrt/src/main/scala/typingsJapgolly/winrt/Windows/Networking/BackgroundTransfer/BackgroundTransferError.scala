@@ -1,18 +1,7 @@
 package typingsJapgolly.winrt.Windows.Networking.BackgroundTransfer
 
-import typingsJapgolly.winrt.Windows.Web.WebErrorStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferError")
-@js.native
-class BackgroundTransferError () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferError")
-@js.native
-object BackgroundTransferError extends js.Object {
-  def getStatus(hresult: Double): WebErrorStatus = js.native
-}
-
+trait BackgroundTransferError extends StObject

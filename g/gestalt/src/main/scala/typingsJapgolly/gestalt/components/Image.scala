@@ -1,54 +1,64 @@
 package typingsJapgolly.gestalt.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.gestalt.gestaltStrings.`lazy`
+import typingsJapgolly.gestalt.gestaltStrings.`use-credentials`
+import typingsJapgolly.gestalt.gestaltStrings.anonymous
+import typingsJapgolly.gestalt.gestaltStrings.async
+import typingsJapgolly.gestalt.gestaltStrings.auto
 import typingsJapgolly.gestalt.gestaltStrings.contain
 import typingsJapgolly.gestalt.gestaltStrings.cover
+import typingsJapgolly.gestalt.gestaltStrings.eager
+import typingsJapgolly.gestalt.gestaltStrings.high
+import typingsJapgolly.gestalt.gestaltStrings.img
+import typingsJapgolly.gestalt.gestaltStrings.low
 import typingsJapgolly.gestalt.gestaltStrings.none
+import typingsJapgolly.gestalt.gestaltStrings.presentation
+import typingsJapgolly.gestalt.gestaltStrings.sync
 import typingsJapgolly.gestalt.mod.ImageProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Image {
-  def apply(
-    alt: String,
-    color: String,
-    naturalHeight: Double,
-    naturalWidth: Double,
-    src: String,
-    fit: cover | contain | none = null,
-    onError: js.UndefOr[Callback] = js.undefined,
-    onLoad: js.UndefOr[Callback] = js.undefined,
-    size: String = null,
-    srcSet: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ImageProps, typingsJapgolly.gestalt.mod.Image, Unit, ImageProps] = {
-    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], naturalHeight = naturalHeight.asInstanceOf[js.Any], naturalWidth = naturalWidth.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
   
-      if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
-    onError.foreach(p => __obj.updateDynamic("onError")(p.toJsFn))
-    onLoad.foreach(p => __obj.updateDynamic("onLoad")(p.toJsFn))
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.gestalt.mod.ImageProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.gestalt.mod.Image](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.gestalt.mod.ImageProps])(children: _*)
+  inline def apply(alt: String, color: String, naturalHeight: Double, naturalWidth: Double, src: String): Builder = {
+    val __props = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], naturalHeight = naturalHeight.asInstanceOf[js.Any], naturalWidth = naturalWidth.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ImageProps]))
   }
+  
   @JSImport("gestalt", "Image")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def crossOrigin(value: anonymous | `use-credentials`): this.type = set("crossOrigin", value.asInstanceOf[js.Any])
+    
+    inline def decoding(value: sync | async | auto): this.type = set("decoding", value.asInstanceOf[js.Any])
+    
+    inline def elementTiming(value: String): this.type = set("elementTiming", value.asInstanceOf[js.Any])
+    
+    inline def fit(value: cover | contain | none): this.type = set("fit", value.asInstanceOf[js.Any])
+    
+    inline def importance(value: high | low | auto): this.type = set("importance", value.asInstanceOf[js.Any])
+    
+    inline def loading(value: eager | `lazy` | auto): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def onError(value: Callback): this.type = set("onError", value.toJsFn)
+    
+    inline def onLoad(value: Callback): this.type = set("onLoad", value.toJsFn)
+    
+    inline def role(value: img | presentation): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def sizes(value: String): this.type = set("sizes", value.asInstanceOf[js.Any])
+    
+    inline def srcSet(value: String): this.type = set("srcSet", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ImageProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

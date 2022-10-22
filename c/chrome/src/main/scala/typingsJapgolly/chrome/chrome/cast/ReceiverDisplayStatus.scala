@@ -1,20 +1,28 @@
 package typingsJapgolly.chrome.chrome.cast
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("chrome.cast.ReceiverDisplayStatus")
-@js.native
-class ReceiverDisplayStatus protected () extends js.Object {
-  /**
-    * @param {string} statusText
-    * @param {!Array<chrome.cast.Image>} appImages
-    * @constructor
-    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.ReceiverDisplayStatus
-    */
-  def this(statusText: String, appImages: js.Array[Image]) = this()
-  var appImages: js.Array[Image] = js.native
-  var statusText: String = js.native
+trait ReceiverDisplayStatus extends StObject {
+  
+  var appImages: js.Array[Image]
+  
+  var statusText: String
 }
-
+object ReceiverDisplayStatus {
+  
+  inline def apply(appImages: js.Array[Image], statusText: String): ReceiverDisplayStatus = {
+    val __obj = js.Dynamic.literal(appImages = appImages.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReceiverDisplayStatus]
+  }
+  
+  extension [Self <: ReceiverDisplayStatus](x: Self) {
+    
+    inline def setAppImages(value: js.Array[Image]): Self = StObject.set(x, "appImages", value.asInstanceOf[js.Any])
+    
+    inline def setAppImagesVarargs(value: Image*): Self = StObject.set(x, "appImages", js.Array(value*))
+    
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+  }
+}

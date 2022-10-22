@@ -1,13 +1,22 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.LogMessageParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.LogMessageParams
+import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.windowSlashlogMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "LogMessageNotification")
-@js.native
-object LogMessageNotification extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.NotificationType[LogMessageParams, Unit] = js.native
+object LogMessageNotification {
+  
+  @JSImport("vscode-languageserver-protocol", "LogMessageNotification.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "LogMessageNotification.method")
+  @js.native
+  val method: windowSlashlogMessage = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "LogMessageNotification.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[LogMessageParams, Unit] = js.native
 }
-

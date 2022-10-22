@@ -1,38 +1,55 @@
 package typingsJapgolly.dav.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined dav.dav.Partial<dav.dav.Request> */
-trait RequestOptions extends js.Object {
-  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.undefined
+trait RequestOptions extends StObject {
+  
+  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], Any]] = js.undefined
+  
   var method: js.UndefOr[String] = js.undefined
-  var onerror: js.UndefOr[js.Function1[/* error */ js.Error, _]] = js.undefined
+  
+  var onerror: js.UndefOr[js.Function1[/* error */ js.Error, Any]] = js.undefined
+  
   var requestData: js.UndefOr[String] = js.undefined
-  var transformRequest: js.UndefOr[js.Function1[/* xhr */ js.Any, _]] = js.undefined
-  var transformResponse: js.UndefOr[js.Function1[/* xhr */ js.Any, _]] = js.undefined
+  
+  var transformRequest: js.UndefOr[js.Function1[/* xhr */ Any, Any]] = js.undefined
+  
+  var transformResponse: js.UndefOr[js.Function1[/* xhr */ Any, Any]] = js.undefined
 }
-
 object RequestOptions {
-  @scala.inline
-  def apply(
-    constructor: /* options */ js.UndefOr[RequestOptions] => CallbackTo[js.Any] = null,
-    method: String = null,
-    onerror: /* error */ js.Error => CallbackTo[js.Any] = null,
-    requestData: String = null,
-    transformRequest: /* xhr */ js.Any => CallbackTo[js.Any] = null,
-    transformResponse: /* xhr */ js.Any => CallbackTo[js.Any] = null
-  ): RequestOptions = {
+  
+  inline def apply(): RequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (constructor != null) __obj.updateDynamic("constructor")(js.Any.fromFunction1((t0: /* options */ js.UndefOr[typingsJapgolly.dav.mod.RequestOptions]) => constructor(t0).runNow()))
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction1((t0: /* error */ js.Error) => onerror(t0).runNow()))
-    if (requestData != null) __obj.updateDynamic("requestData")(requestData.asInstanceOf[js.Any])
-    if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction1((t0: /* xhr */ js.Any) => transformRequest(t0).runNow()))
-    if (transformResponse != null) __obj.updateDynamic("transformResponse")(js.Any.fromFunction1((t0: /* xhr */ js.Any) => transformResponse(t0).runNow()))
     __obj.asInstanceOf[RequestOptions]
   }
+  
+  extension [Self <: RequestOptions](x: Self) {
+    
+    inline def setConstructor(value: /* options */ js.UndefOr[RequestOptions] => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    
+    inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setOnerror(value: /* error */ js.Error => Any): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+    
+    inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+    
+    inline def setRequestData(value: String): Self = StObject.set(x, "requestData", value.asInstanceOf[js.Any])
+    
+    inline def setRequestDataUndefined: Self = StObject.set(x, "requestData", js.undefined)
+    
+    inline def setTransformRequest(value: /* xhr */ Any => Any): Self = StObject.set(x, "transformRequest", js.Any.fromFunction1(value))
+    
+    inline def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
+    
+    inline def setTransformResponse(value: /* xhr */ Any => Any): Self = StObject.set(x, "transformResponse", js.Any.fromFunction1(value))
+    
+    inline def setTransformResponseUndefined: Self = StObject.set(x, "transformResponse", js.undefined)
+  }
 }
-

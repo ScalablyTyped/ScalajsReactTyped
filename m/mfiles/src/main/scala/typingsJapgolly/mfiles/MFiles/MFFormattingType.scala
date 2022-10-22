@@ -1,14 +1,11 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`0`
+import typingsJapgolly.mfiles.mfilesInts.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MFFormattingType {
-  @scala.inline
-  def None: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def None: `0` = 0.asInstanceOf[`0`]
 }
-

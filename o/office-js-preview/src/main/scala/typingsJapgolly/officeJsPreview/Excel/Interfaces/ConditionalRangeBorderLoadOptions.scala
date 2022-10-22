@@ -1,42 +1,70 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the border of an object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
-@js.native
-trait ConditionalRangeBorderLoadOptions extends js.Object {
+trait ConditionalRangeBorderLoadOptions extends StObject {
+  
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var color: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Constant value that indicates the specific side of the border. See `Excel.ConditionalRangeBorderIndex` for details.
     *
-    * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var sideIndex: js.UndefOr[Boolean] = js.native
+  var sideIndex: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.
     *
-    * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var style: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Boolean] = js.undefined
 }
-
+object ConditionalRangeBorderLoadOptions {
+  
+  inline def apply(): ConditionalRangeBorderLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ConditionalRangeBorderLoadOptions]
+  }
+  
+  extension [Self <: ConditionalRangeBorderLoadOptions](x: Self) {
+    
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    
+    inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setSideIndex(value: Boolean): Self = StObject.set(x, "sideIndex", value.asInstanceOf[js.Any])
+    
+    inline def setSideIndexUndefined: Self = StObject.set(x, "sideIndex", js.undefined)
+    
+    inline def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
+}

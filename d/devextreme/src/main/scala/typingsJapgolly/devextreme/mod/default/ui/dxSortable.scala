@@ -1,19 +1,11 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.DOMComponent
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxSortableOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxSortable")
+@JSImport("devextreme", "default.ui.dxSortable")
 @js.native
-class dxSortable protected () extends DOMComponent {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxSortableOptions) = this()
-  def this(element: Element, options: dxSortableOptions) = this()
-}
-
+open class dxSortable ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxSortable

@@ -1,13 +1,14 @@
 package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalajs.dom.Node
 import typingsJapgolly.datatablesNet.JQuery
-import typingsJapgolly.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowChildMethodModel extends js.Object {
+trait RowChildMethodModel extends StObject {
+  
   /**
     * Get the child row(s) that have been set for a parent row
     */
@@ -22,31 +23,34 @@ trait RowChildMethodModel extends js.Object {
   def apply(data: String, className: String): RowChildMethods = js.native
   def apply(data: js.Array[String | Double | JQuery]): RowChildMethods = js.native
   def apply(data: js.Array[String | Double | JQuery], className: String): RowChildMethods = js.native
-  def apply(data: JQuery): RowChildMethods = js.native
-  def apply(data: JQuery, className: String): RowChildMethods = js.native
   def apply(data: Node): RowChildMethods = js.native
   def apply(data: Node, className: String): RowChildMethods = js.native
+  def apply(data: JQuery): RowChildMethods = js.native
+  def apply(data: JQuery, className: String): RowChildMethods = js.native
   /**
     * Get the child row(s) that have been set for a parent row
     *
     * @param showRemove This parameter can be given as true or false
     */
   def apply(showRemove: Boolean): RowChildMethods = js.native
+  
   /**
     * Hide the child row(s) of a parent row
     */
   def hide(): Api = js.native
+  
   /**
     * Check if the child rows of a parent row are visible
     */
   def isShown(): Api = js.native
+  
   /**
     * Remove child row(s) from display and release any allocated memory
     */
   def remove(): Api = js.native
+  
   /**
     * Show the child row(s) of a parent row
     */
   def show(): Api = js.native
 }
-

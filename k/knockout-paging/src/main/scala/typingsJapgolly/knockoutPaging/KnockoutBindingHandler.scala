@@ -1,23 +1,26 @@
 package typingsJapgolly.knockoutPaging
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.knockoutPaging.anon.ControlsDescendantBindings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KnockoutBindingHandler extends js.Object {
+trait KnockoutBindingHandler extends StObject {
+  
   var init: js.UndefOr[
     js.Function5[
-      /* element */ js.Any, 
-      /* valueAccessor */ js.Function0[_], 
+      /* element */ Any, 
+      /* valueAccessor */ js.Function0[Any], 
       /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], 
-      /* viewModel */ js.UndefOr[js.Any], 
+      /* viewModel */ js.UndefOr[Any], 
       /* bindingContext */ js.UndefOr[KnockoutBindingContext], 
-      Unit | AnonControlsDescendantBindings
+      Unit | ControlsDescendantBindings
     ]
   ] = js.undefined
-  var options: js.UndefOr[js.Any] = js.undefined
+  
+  var options: js.UndefOr[Any] = js.undefined
+  
   var preprocess: js.UndefOr[
     js.Function3[
       /* value */ String, 
@@ -26,33 +29,47 @@ trait KnockoutBindingHandler extends js.Object {
       String
     ]
   ] = js.undefined
+  
   var update: js.UndefOr[
     js.Function5[
-      /* element */ js.Any, 
-      /* valueAccessor */ js.Function0[_], 
+      /* element */ Any, 
+      /* valueAccessor */ js.Function0[Any], 
       /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], 
-      /* viewModel */ js.UndefOr[js.Any], 
+      /* viewModel */ js.UndefOr[Any], 
       /* bindingContext */ js.UndefOr[KnockoutBindingContext], 
       Unit
     ]
   ] = js.undefined
 }
-
 object KnockoutBindingHandler {
-  @scala.inline
-  def apply(
-    init: (/* element */ js.Any, /* valueAccessor */ js.Function0[js.Any], /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], /* viewModel */ js.UndefOr[js.Any], /* bindingContext */ js.UndefOr[KnockoutBindingContext]) => CallbackTo[Unit | AnonControlsDescendantBindings] = null,
-    options: js.Any = null,
-    preprocess: (/* value */ String, /* name */ String, /* addBindingCallback */ js.UndefOr[js.Function2[/* name */ String, /* value */ String, Unit]]) => CallbackTo[String] = null,
-    update: (/* element */ js.Any, /* valueAccessor */ js.Function0[js.Any], /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], /* viewModel */ js.UndefOr[js.Any], /* bindingContext */ js.UndefOr[KnockoutBindingContext]) => Callback = null
-  ): KnockoutBindingHandler = {
+  
+  inline def apply(): KnockoutBindingHandler = {
     val __obj = js.Dynamic.literal()
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction5((t0: /* element */ js.Any, t1: /* valueAccessor */ js.Function0[js.Any], t2: /* allBindingsAccessor */ js.UndefOr[typingsJapgolly.knockoutPaging.KnockoutAllBindingsAccessor], t3: /* viewModel */ js.UndefOr[js.Any], t4: /* bindingContext */ js.UndefOr[typingsJapgolly.knockoutPaging.KnockoutBindingContext]) => init(t0, t1, t2, t3, t4).runNow()))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (preprocess != null) __obj.updateDynamic("preprocess")(js.Any.fromFunction3((t0: /* value */ java.lang.String, t1: /* name */ java.lang.String, t2: /* addBindingCallback */ js.UndefOr[
-  js.Function2[/* name */ java.lang.String, /* value */ java.lang.String, scala.Unit]]) => preprocess(t0, t1, t2).runNow()))
-    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction5((t0: /* element */ js.Any, t1: /* valueAccessor */ js.Function0[js.Any], t2: /* allBindingsAccessor */ js.UndefOr[typingsJapgolly.knockoutPaging.KnockoutAllBindingsAccessor], t3: /* viewModel */ js.UndefOr[js.Any], t4: /* bindingContext */ js.UndefOr[typingsJapgolly.knockoutPaging.KnockoutBindingContext]) => update(t0, t1, t2, t3, t4).runNow()))
     __obj.asInstanceOf[KnockoutBindingHandler]
   }
+  
+  extension [Self <: KnockoutBindingHandler](x: Self) {
+    
+    inline def setInit(
+      value: (/* element */ Any, /* valueAccessor */ js.Function0[Any], /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], /* viewModel */ js.UndefOr[Any], /* bindingContext */ js.UndefOr[KnockoutBindingContext]) => Unit | ControlsDescendantBindings
+    ): Self = StObject.set(x, "init", js.Any.fromFunction5(value))
+    
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setPreprocess(
+      value: (/* value */ String, /* name */ String, /* addBindingCallback */ js.UndefOr[js.Function2[/* name */ String, /* value */ String, Unit]]) => String
+    ): Self = StObject.set(x, "preprocess", js.Any.fromFunction3(value))
+    
+    inline def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
+    
+    inline def setUpdate(
+      value: (/* element */ Any, /* valueAccessor */ js.Function0[Any], /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], /* viewModel */ js.UndefOr[Any], /* bindingContext */ js.UndefOr[KnockoutBindingContext]) => Callback
+    ): Self = StObject.set(x, "update", js.Any.fromFunction5((t0: /* element */ Any, t1: /* valueAccessor */ js.Function0[Any], t2: /* allBindingsAccessor */ js.UndefOr[KnockoutAllBindingsAccessor], t3: /* viewModel */ js.UndefOr[Any], t4: /* bindingContext */ js.UndefOr[KnockoutBindingContext]) => (value(t0, t1, t2, t3, t4)).runNow()))
+    
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+  }
 }
-

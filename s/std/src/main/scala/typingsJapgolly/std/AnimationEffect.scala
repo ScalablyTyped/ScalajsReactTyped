@@ -1,19 +1,19 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationEffect extends js.Object {
+trait AnimationEffect extends StObject {
+  
+  /* standard dom */
   def getComputedTiming(): ComputedEffectTiming = js.native
+  
+  /* standard dom */
   def getTiming(): EffectTiming = js.native
+  
+  /* standard dom */
   def updateTiming(): Unit = js.native
   def updateTiming(timing: OptionalEffectTiming): Unit = js.native
 }
-
-@JSGlobal("AnimationEffect")
-@js.native
-object AnimationEffect extends Instantiable0[AnimationEffect]
-

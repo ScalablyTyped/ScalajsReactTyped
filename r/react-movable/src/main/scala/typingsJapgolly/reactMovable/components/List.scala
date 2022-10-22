@@ -1,57 +1,50 @@
 package typingsJapgolly.reactMovable.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactMovable.AnonChildren
-import typingsJapgolly.reactMovable.AnonElements
-import typingsJapgolly.reactMovable.AnonIndex
-import typingsJapgolly.reactMovable.AnonNewIndex
-import typingsJapgolly.reactMovable.listMod.default
-import typingsJapgolly.reactMovable.typesMod.IProps
-import typingsJapgolly.reactMovable.typesMod.IVoiceover
+import japgolly.scalajs.react.facade.React.Node
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactMovable.libTypesMod.BeforeDragParams
+import typingsJapgolly.reactMovable.libTypesMod.IProps
+import typingsJapgolly.reactMovable.libTypesMod.IVoiceover
+import typingsJapgolly.reactMovable.libTypesMod.OnChangeMeta
+import typingsJapgolly.reactMovable.libTypesMod.RenderItemParams
+import typingsJapgolly.reactMovable.libTypesMod.RenderListParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object List {
-  def apply[Value](
+  
+  inline def apply[Value](
     lockVertically: Boolean,
+    onChange: OnChangeMeta => Callback,
     removableByMove: Boolean,
+    renderItem: RenderItemParams[Value] => Node,
+    renderList: RenderListParams => Node,
     transitionDuration: Double,
     values: js.Array[Value],
-    voiceover: IVoiceover,
-    onChange: AnonNewIndex => Callback,
-    renderItem: AnonIndex[Value] => CallbackTo[Node],
-    renderList: AnonChildren => CallbackTo[Node],
-    beforeDrag: /* params */ AnonElements => Callback = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[IProps[Value], default[Value], Unit, IProps[Value]] = {
-    val __obj = js.Dynamic.literal(lockVertically = lockVertically.asInstanceOf[js.Any], removableByMove = removableByMove.asInstanceOf[js.Any], transitionDuration = transitionDuration.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], voiceover = voiceover.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.reactMovable.AnonNewIndex) => onChange(t0).runNow()))
-    __obj.updateDynamic("renderItem")(js.Any.fromFunction1((t0: typingsJapgolly.reactMovable.AnonIndex[Value]) => renderItem(t0).runNow()))
-    __obj.updateDynamic("renderList")(js.Any.fromFunction1((t0: typingsJapgolly.reactMovable.AnonChildren) => renderList(t0).runNow()))
-    if (beforeDrag != null) __obj.updateDynamic("beforeDrag")(js.Any.fromFunction1((t0: /* params */ typingsJapgolly.reactMovable.AnonElements) => beforeDrag(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactMovable.typesMod.IProps[Value], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactMovable.listMod.default[Value]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactMovable.typesMod.IProps[Value]])(children: _*)
+    voiceover: IVoiceover
+  ): Builder[Value] = {
+    val __props = js.Dynamic.literal(lockVertically = lockVertically.asInstanceOf[js.Any], onChange = js.Any.fromFunction1((t0: OnChangeMeta) => onChange(t0).runNow()), removableByMove = removableByMove.asInstanceOf[js.Any], renderItem = js.Any.fromFunction1(renderItem), renderList = js.Any.fromFunction1(renderList), transitionDuration = transitionDuration.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], voiceover = voiceover.asInstanceOf[js.Any])
+    new Builder[Value](js.Array(this.component, __props.asInstanceOf[IProps[Value]]))
   }
-  @JSImport("react-movable/lib/List", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("react-movable", "List")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder[Value] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactMovable.mod.List[Value]] {
+    
+    inline def beforeDrag(value: /* params */ BeforeDragParams => Callback): this.type = set("beforeDrag", js.Any.fromFunction1((t0: /* params */ BeforeDragParams) => value(t0).runNow()))
+    
+    inline def container(value: Element): this.type = set("container", value.asInstanceOf[js.Any])
+    
+    inline def containerNull: this.type = set("container", null)
+  }
+  
+  def withProps[Value](p: IProps[Value]): Builder[Value] = new Builder[Value](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

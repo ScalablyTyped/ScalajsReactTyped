@@ -2,19 +2,21 @@ package typingsJapgolly.typescriptServices.TypeScript
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IIterationStatementSyntax extends IStatementSyntax {
+trait IIterationStatementSyntax
+  extends StObject
+     with IStatementSyntax {
+  
   def isIterationStatement(): Boolean
 }
-
 object IIterationStatementSyntax {
-  @scala.inline
-  def apply(
-    accept: ISyntaxVisitor => CallbackTo[js.Any],
-    childAt: Double => CallbackTo[ISyntaxElement],
+  
+  inline def apply(
+    accept: ISyntaxVisitor => Any,
+    childAt: Double => ISyntaxElement,
     childCount: CallbackTo[Double],
     collectTextElements: js.Array[String] => Callback,
     firstToken: CallbackTo[ISyntaxToken],
@@ -35,35 +37,15 @@ object IIterationStatementSyntax {
     trailingTrivia: CallbackTo[ISyntaxTriviaList],
     trailingTriviaWidth: CallbackTo[Double],
     width: CallbackTo[Double],
-    withLeadingTrivia: ISyntaxTriviaList => CallbackTo[ISyntaxNodeOrToken],
-    withTrailingTrivia: ISyntaxTriviaList => CallbackTo[ISyntaxNodeOrToken]
+    withLeadingTrivia: ISyntaxTriviaList => ISyntaxNodeOrToken,
+    withTrailingTrivia: ISyntaxTriviaList => ISyntaxNodeOrToken
   ): IIterationStatementSyntax = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accept")(js.Any.fromFunction1((t0: typingsJapgolly.typescriptServices.TypeScript.ISyntaxVisitor) => accept(t0).runNow()))
-    __obj.updateDynamic("childAt")(js.Any.fromFunction1((t0: scala.Double) => childAt(t0).runNow()))
-    __obj.updateDynamic("childCount")(childCount.toJsFn)
-    __obj.updateDynamic("collectTextElements")(js.Any.fromFunction1((t0: js.Array[java.lang.String]) => collectTextElements(t0).runNow()))
-    __obj.updateDynamic("firstToken")(firstToken.toJsFn)
-    __obj.updateDynamic("fullText")(fullText.toJsFn)
-    __obj.updateDynamic("fullWidth")(fullWidth.toJsFn)
-    __obj.updateDynamic("isIncrementallyUnusable")(isIncrementallyUnusable.toJsFn)
-    __obj.updateDynamic("isIterationStatement")(isIterationStatement.toJsFn)
-    __obj.updateDynamic("isList")(isList.toJsFn)
-    __obj.updateDynamic("isNode")(isNode.toJsFn)
-    __obj.updateDynamic("isSeparatedList")(isSeparatedList.toJsFn)
-    __obj.updateDynamic("isStatement")(isStatement.toJsFn)
-    __obj.updateDynamic("isToken")(isToken.toJsFn)
-    __obj.updateDynamic("isTypeScriptSpecific")(isTypeScriptSpecific.toJsFn)
-    __obj.updateDynamic("kind")(kind.toJsFn)
-    __obj.updateDynamic("lastToken")(lastToken.toJsFn)
-    __obj.updateDynamic("leadingTrivia")(leadingTrivia.toJsFn)
-    __obj.updateDynamic("leadingTriviaWidth")(leadingTriviaWidth.toJsFn)
-    __obj.updateDynamic("trailingTrivia")(trailingTrivia.toJsFn)
-    __obj.updateDynamic("trailingTriviaWidth")(trailingTriviaWidth.toJsFn)
-    __obj.updateDynamic("width")(width.toJsFn)
-    __obj.updateDynamic("withLeadingTrivia")(js.Any.fromFunction1((t0: typingsJapgolly.typescriptServices.TypeScript.ISyntaxTriviaList) => withLeadingTrivia(t0).runNow()))
-    __obj.updateDynamic("withTrailingTrivia")(js.Any.fromFunction1((t0: typingsJapgolly.typescriptServices.TypeScript.ISyntaxTriviaList) => withTrailingTrivia(t0).runNow()))
+    val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), childAt = js.Any.fromFunction1(childAt), childCount = childCount.toJsFn, collectTextElements = js.Any.fromFunction1((t0: js.Array[String]) => collectTextElements(t0).runNow()), firstToken = firstToken.toJsFn, fullText = fullText.toJsFn, fullWidth = fullWidth.toJsFn, isIncrementallyUnusable = isIncrementallyUnusable.toJsFn, isIterationStatement = isIterationStatement.toJsFn, isList = isList.toJsFn, isNode = isNode.toJsFn, isSeparatedList = isSeparatedList.toJsFn, isStatement = isStatement.toJsFn, isToken = isToken.toJsFn, isTypeScriptSpecific = isTypeScriptSpecific.toJsFn, kind = kind.toJsFn, lastToken = lastToken.toJsFn, leadingTrivia = leadingTrivia.toJsFn, leadingTriviaWidth = leadingTriviaWidth.toJsFn, trailingTrivia = trailingTrivia.toJsFn, trailingTriviaWidth = trailingTriviaWidth.toJsFn, width = width.toJsFn, withLeadingTrivia = js.Any.fromFunction1(withLeadingTrivia), withTrailingTrivia = js.Any.fromFunction1(withTrailingTrivia))
     __obj.asInstanceOf[IIterationStatementSyntax]
   }
+  
+  extension [Self <: IIterationStatementSyntax](x: Self) {
+    
+    inline def setIsIterationStatement(value: CallbackTo[Boolean]): Self = StObject.set(x, "isIterationStatement", value.toJsFn)
+  }
 }
-

@@ -1,42 +1,54 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModalDialogMovingEventUIParam extends js.Object {
+trait ModalDialogMovingEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the modal dialog element. This is a jQuery object.
-  	 */
+    * Gets a reference to the modal dialog element. This is a jQuery object.
+    */
   var modalDialogElement: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the original position of the GroupBy Dialog div as { top, left } object, relative to the page.
-  	 */
-  var originalPosition: js.UndefOr[js.Any] = js.undefined
+    * Gets the original position of the GroupBy Dialog div as { top, left } object, relative to the page.
+    */
+  var originalPosition: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets access the GroupBy widget object.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets access the GroupBy widget object.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the current position of the GroupBy Dialog div as { top, left } object, relative to the page.
-  	 */
-  var position: js.UndefOr[js.Any] = js.undefined
+    * Gets the current position of the GroupBy Dialog div as { top, left } object, relative to the page.
+    */
+  var position: js.UndefOr[Any] = js.undefined
 }
-
 object ModalDialogMovingEventUIParam {
-  @scala.inline
-  def apply(
-    modalDialogElement: String = null,
-    originalPosition: js.Any = null,
-    owner: js.Any = null,
-    position: js.Any = null
-  ): ModalDialogMovingEventUIParam = {
+  
+  inline def apply(): ModalDialogMovingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (modalDialogElement != null) __obj.updateDynamic("modalDialogElement")(modalDialogElement.asInstanceOf[js.Any])
-    if (originalPosition != null) __obj.updateDynamic("originalPosition")(originalPosition.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalDialogMovingEventUIParam]
   }
+  
+  extension [Self <: ModalDialogMovingEventUIParam](x: Self) {
+    
+    inline def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
+    
+    inline def setModalDialogElementUndefined: Self = StObject.set(x, "modalDialogElement", js.undefined)
+    
+    inline def setOriginalPosition(value: Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalPositionUndefined: Self = StObject.set(x, "originalPosition", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+  }
 }
-

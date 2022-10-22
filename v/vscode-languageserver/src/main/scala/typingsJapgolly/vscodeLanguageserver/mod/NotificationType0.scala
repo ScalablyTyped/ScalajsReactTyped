@@ -1,13 +1,12 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver", "NotificationType0")
 @js.native
-class NotificationType0[RO] protected ()
-  extends typingsJapgolly.vscodeLanguageserverProtocol.mod.NotificationType0[RO] {
+open class NotificationType0 protected ()
+  extends typingsJapgolly.vscodeLanguageserverProtocol.mod.NotificationType0 {
   def this(method: String) = this()
 }
-

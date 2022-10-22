@@ -1,7 +1,7 @@
 
 # Scala.js typings for pako
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 zlib port to javascript - fast, modularized, with browser support
@@ -10,13 +10,13 @@ zlib port to javascript - fast, modularized, with browser support
 | ------------------ | :-------------: |
 | Full name          | pako |
 | Keywords           | zlib, deflate, inflate, gzip |
-| # releases         | 5 |
-| # dependents       | 474 |
-| # downloads        | 402260924 |
-| # stars            | 26 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 7.850913933333333E7 |
+| # stars            | 4144.0 |
 
 ## Links
-- [Homepage](https://github.com/nodeca/pako)
+- [Homepage](https://github.com/nodeca/pako#readme)
 - [Bugs](https://github.com/nodeca/pako/issues)
 - [Repository](https://github.com/nodeca/pako)
 - [Npm](https://www.npmjs.com/package/pako)

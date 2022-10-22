@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-notes
 
-Typings are for version 5.3.13
+Typings are for version 5.3.21
 
 ## Library description:
 Write notes for your Storybook stories.
@@ -10,13 +10,13 @@ Write notes for your Storybook stories.
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-notes |
 | Keywords           | addon, notes, storybook |
-| # releases         | 416 |
-| # dependents       | 42 |
-| # downloads        | 6693425 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 460485.0 |
+| # stars            | 72512.0 |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/addons/notes)
+- [Homepage](https://github.com/storybookjs/storybook#readme)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-notes)

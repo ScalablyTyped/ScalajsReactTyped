@@ -1,17 +1,26 @@
-package typingsJapgolly.minappEnv
+package typingsJapgolly.minappEnv.DB
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.minappEnv.IAPIParam
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object DB {
-  type DocumentId = java.lang.String | scala.Double
-  type ICountDocumentOptions = typingsJapgolly.minappEnv.DB.IDBAPIParam
-  type IDBAPIParam = typingsJapgolly.minappEnv.IAPIParam[js.Any]
-  type IGetDocumentOptions = typingsJapgolly.minappEnv.DB.IDBAPIParam
-  type IQueryCondition = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type IRemoveSingleDocumentOptions = typingsJapgolly.minappEnv.DB.IDBAPIParam
-  type IStringQueryCondition = java.lang.String
-  type IStringUpdateCondition = java.lang.String
-  type IUpdateCondition = org.scalablytyped.runtime.StringDictionary[js.Any]
-}
+
+type DocumentId = String | Double
+
+type ICountDocumentOptions = IDBAPIParam
+
+type IDBAPIParam = IAPIParam[Any]
+
+type IGetDocumentOptions = IDBAPIParam
+
+type IQueryCondition = StringDictionary[Any]
+
+type IRemoveSingleDocumentOptions = IDBAPIParam
+
+type IStringQueryCondition = String
+
+type IStringUpdateCondition = String
+
+type IUpdateCondition = StringDictionary[Any]

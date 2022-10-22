@@ -1,26 +1,31 @@
 package typingsJapgolly.officeJsPreview.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "section.toJSON()". */
-trait SectionData extends js.Object {
+/** An interface describing the data returned by calling `section.toJSON()`. */
+trait SectionData extends StObject {
+  
   /**
+    * Gets the body object of the section. This does not include the header/footer and other section metadata.
     *
-    * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only.
-    *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var body: js.UndefOr[BodyData] = js.undefined
 }
-
 object SectionData {
-  @scala.inline
-  def apply(body: BodyData = null): SectionData = {
+  
+  inline def apply(): SectionData = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionData]
   }
+  
+  extension [Self <: SectionData](x: Self) {
+    
+    inline def setBody(value: BodyData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+  }
 }
-

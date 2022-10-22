@@ -1,30 +1,44 @@
 package typingsJapgolly.mathjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UnitDefinition extends js.Object {
+trait UnitDefinition extends StObject {
+  
   var aliases: js.UndefOr[js.Array[String]] = js.undefined
+  
   var definition: js.UndefOr[String | Unit] = js.undefined
+  
   var offset: js.UndefOr[Double] = js.undefined
+  
   var prefixes: js.UndefOr[String] = js.undefined
 }
-
 object UnitDefinition {
-  @scala.inline
-  def apply(
-    aliases: js.Array[String] = null,
-    definition: String | Unit = null,
-    offset: Int | Double = null,
-    prefixes: String = null
-  ): UnitDefinition = {
+  
+  inline def apply(): UnitDefinition = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (prefixes != null) __obj.updateDynamic("prefixes")(prefixes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnitDefinition]
   }
+  
+  extension [Self <: UnitDefinition](x: Self) {
+    
+    inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
+    
+    inline def setDefinition(value: String | Unit): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    
+    inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setPrefixes(value: String): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
+  }
 }
-

@@ -1,29 +1,27 @@
 package typingsJapgolly.monacoEditor.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MarkerTag extends js.Object
-
+sealed trait MarkerTag extends StObject
 @JSImport("monaco-editor", "MarkerTag")
 @js.native
-object MarkerTag extends js.Object {
-  @js.native
-  sealed trait Deprecated extends MarkerTag
-  
-  @js.native
-  sealed trait Unnecessary extends MarkerTag
+object MarkerTag extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MarkerTag with Double] = js.native
-  /* 2 */ @js.native
-  object Deprecated extends TopLevel[Deprecated with Double]
+  def apply(value: Double): js.UndefOr[MarkerTag & Double] = js.native
   
-  /* 1 */ @js.native
-  object Unnecessary extends TopLevel[Unnecessary with Double]
+  @js.native
+  sealed trait Deprecated
+    extends StObject
+       with MarkerTag
+  /* 2 */ val Deprecated: typingsJapgolly.monacoEditor.mod.MarkerTag.Deprecated & Double = js.native
   
+  @js.native
+  sealed trait Unnecessary
+    extends StObject
+       with MarkerTag
+  /* 1 */ val Unnecessary: typingsJapgolly.monacoEditor.mod.MarkerTag.Unnecessary & Double = js.native
 }
-

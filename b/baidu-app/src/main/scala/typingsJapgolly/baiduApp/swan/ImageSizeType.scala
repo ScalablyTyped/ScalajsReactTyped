@@ -1,8 +1,8 @@
 package typingsJapgolly.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #endregion
@@ -12,14 +12,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.baiduApp.baiduAppStrings.original
   - typingsJapgolly.baiduApp.baiduAppStrings.compressed
 */
-trait ImageSizeType extends js.Object
-
+trait ImageSizeType extends StObject
 object ImageSizeType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def compressed: typingsJapgolly.baiduApp.baiduAppStrings.compressed = this.cast("compressed")
-  @scala.inline
-  def original: typingsJapgolly.baiduApp.baiduAppStrings.original = this.cast("original")
+  
+  inline def compressed: typingsJapgolly.baiduApp.baiduAppStrings.compressed = "compressed".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.compressed]
+  
+  inline def original: typingsJapgolly.baiduApp.baiduAppStrings.original = "original".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.original]
 }
-

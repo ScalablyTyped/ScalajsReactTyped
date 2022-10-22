@@ -3,49 +3,53 @@ package typingsJapgolly.reactNativePopupDialog
 import typingsJapgolly.reactNativePopupDialog.mod.AlignTypes
 import typingsJapgolly.reactNativePopupDialog.mod.OverlayPointerEventTypes
 import typingsJapgolly.reactNativePopupDialog.mod.SlideFromTypes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativePopupDialogStrings {
-  @js.native
-  sealed trait auto extends OverlayPointerEventTypes
   
   @js.native
-  sealed trait bottom extends SlideFromTypes
+  sealed trait auto
+    extends StObject
+       with OverlayPointerEventTypes
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait center extends AlignTypes
+  sealed trait bottom
+    extends StObject
+       with SlideFromTypes
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @js.native
+  sealed trait center
+    extends StObject
+       with AlignTypes
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait left
-    extends AlignTypes
+    extends StObject
+       with AlignTypes
        with SlideFromTypes
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait none extends OverlayPointerEventTypes
+  sealed trait none
+    extends StObject
+       with OverlayPointerEventTypes
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait right
-    extends AlignTypes
+    extends StObject
+       with AlignTypes
        with SlideFromTypes
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait top extends SlideFromTypes
-  
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  sealed trait top
+    extends StObject
+       with SlideFromTypes
+  inline def top: top = "top".asInstanceOf[top]
 }
-

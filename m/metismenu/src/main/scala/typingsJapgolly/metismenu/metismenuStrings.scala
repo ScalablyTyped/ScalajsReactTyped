@@ -1,34 +1,36 @@
 package typingsJapgolly.metismenu
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metismenuStrings {
-  @js.native
-  sealed trait dispose extends js.Object
   
   @js.native
-  sealed trait hiddenDotmetisMenu extends MetisMenuEvents
+  sealed trait dispose extends StObject
+  inline def dispose: dispose = "dispose".asInstanceOf[dispose]
   
   @js.native
-  sealed trait hideDotmetisMenu extends MetisMenuEvents
+  sealed trait hiddenDotmetisMenu
+    extends StObject
+       with MetisMenuEvents
+  inline def hiddenDotmetisMenu: hiddenDotmetisMenu = "hidden.metisMenu".asInstanceOf[hiddenDotmetisMenu]
   
   @js.native
-  sealed trait showDotmetisMenu extends MetisMenuEvents
+  sealed trait hideDotmetisMenu
+    extends StObject
+       with MetisMenuEvents
+  inline def hideDotmetisMenu: hideDotmetisMenu = "hide.metisMenu".asInstanceOf[hideDotmetisMenu]
   
   @js.native
-  sealed trait shownDotmetisMenu extends MetisMenuEvents
+  sealed trait showDotmetisMenu
+    extends StObject
+       with MetisMenuEvents
+  inline def showDotmetisMenu: showDotmetisMenu = "show.metisMenu".asInstanceOf[showDotmetisMenu]
   
-  @scala.inline
-  def dispose: dispose = "dispose".asInstanceOf[dispose]
-  @scala.inline
-  def hiddenDotmetisMenu: hiddenDotmetisMenu = "hidden.metisMenu".asInstanceOf[hiddenDotmetisMenu]
-  @scala.inline
-  def hideDotmetisMenu: hideDotmetisMenu = "hide.metisMenu".asInstanceOf[hideDotmetisMenu]
-  @scala.inline
-  def showDotmetisMenu: showDotmetisMenu = "show.metisMenu".asInstanceOf[showDotmetisMenu]
-  @scala.inline
-  def shownDotmetisMenu: shownDotmetisMenu = "shown.metisMenu".asInstanceOf[shownDotmetisMenu]
+  @js.native
+  sealed trait shownDotmetisMenu
+    extends StObject
+       with MetisMenuEvents
+  inline def shownDotmetisMenu: shownDotmetisMenu = "shown.metisMenu".asInstanceOf[shownDotmetisMenu]
 }
-

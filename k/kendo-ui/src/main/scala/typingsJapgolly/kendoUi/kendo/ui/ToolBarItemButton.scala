@@ -1,66 +1,114 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ToolBarItemButton extends js.Object {
-  var attributes: js.UndefOr[js.Any] = js.undefined
+trait ToolBarItemButton extends StObject {
+  
+  var attributes: js.UndefOr[Any] = js.undefined
+  
   var click: js.UndefOr[js.Function] = js.undefined
+  
   var enable: js.UndefOr[Boolean] = js.undefined
+  
   var group: js.UndefOr[String] = js.undefined
+  
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var imageUrl: js.UndefOr[String] = js.undefined
+  
   var selected: js.UndefOr[Boolean] = js.undefined
+  
   var showIcon: js.UndefOr[String] = js.undefined
+  
   var showText: js.UndefOr[String] = js.undefined
+  
   var spriteCssClass: js.UndefOr[String] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
+  
   var togglable: js.UndefOr[Boolean] = js.undefined
+  
   var toggle: js.UndefOr[js.Function] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object ToolBarItemButton {
-  @scala.inline
-  def apply(
-    attributes: js.Any = null,
-    click: js.Function = null,
-    enable: js.UndefOr[Boolean] = js.undefined,
-    group: String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
-    id: String = null,
-    imageUrl: String = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    showIcon: String = null,
-    showText: String = null,
-    spriteCssClass: String = null,
-    text: String = null,
-    togglable: js.UndefOr[Boolean] = js.undefined,
-    toggle: js.Function = null,
-    url: String = null
-  ): ToolBarItemButton = {
+  
+  inline def apply(): ToolBarItemButton = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (showIcon != null) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])
-    if (showText != null) __obj.updateDynamic("showText")(showText.asInstanceOf[js.Any])
-    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(togglable)) __obj.updateDynamic("togglable")(togglable.asInstanceOf[js.Any])
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolBarItemButton]
   }
+  
+  extension [Self <: ToolBarItemButton](x: Self) {
+    
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setShowIcon(value: String): Self = StObject.set(x, "showIcon", value.asInstanceOf[js.Any])
+    
+    inline def setShowIconUndefined: Self = StObject.set(x, "showIcon", js.undefined)
+    
+    inline def setShowText(value: String): Self = StObject.set(x, "showText", value.asInstanceOf[js.Any])
+    
+    inline def setShowTextUndefined: Self = StObject.set(x, "showText", js.undefined)
+    
+    inline def setSpriteCssClass(value: String): Self = StObject.set(x, "spriteCssClass", value.asInstanceOf[js.Any])
+    
+    inline def setSpriteCssClassUndefined: Self = StObject.set(x, "spriteCssClass", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setTogglable(value: Boolean): Self = StObject.set(x, "togglable", value.asInstanceOf[js.Any])
+    
+    inline def setTogglableUndefined: Self = StObject.set(x, "togglable", js.undefined)
+    
+    inline def setToggle(value: js.Function): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+    
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

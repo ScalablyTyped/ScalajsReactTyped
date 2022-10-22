@@ -1,22 +1,31 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilterOperatorsBoolean extends js.Object {
+trait FilterOperatorsBoolean extends StObject {
+  
   @JSName("eq")
   var eq_FFilterOperatorsBoolean: js.UndefOr[String] = js.undefined
+  
   var neq: js.UndefOr[String] = js.undefined
 }
-
 object FilterOperatorsBoolean {
-  @scala.inline
-  def apply(eq: String = null, neq: String = null): FilterOperatorsBoolean = {
+  
+  inline def apply(): FilterOperatorsBoolean = {
     val __obj = js.Dynamic.literal()
-    if (eq != null) __obj.updateDynamic("eq")(eq.asInstanceOf[js.Any])
-    if (neq != null) __obj.updateDynamic("neq")(neq.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOperatorsBoolean]
   }
+  
+  extension [Self <: FilterOperatorsBoolean](x: Self) {
+    
+    inline def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
+    
+    inline def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
+    
+    inline def setNeq(value: String): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
+    
+    inline def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
+  }
 }
-

@@ -1,64 +1,52 @@
 package typingsJapgolly.fullpageJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fullpageJsStrings {
-  @js.native
-  sealed trait all extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait cover extends js.Object
+  sealed trait bottom extends StObject
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait fingersonly extends js.Object
+  sealed trait cover extends StObject
+  inline def cover: cover = "cover".asInstanceOf[cover]
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait fingersonly extends StObject
+  inline def fingersonly: fingersonly = "fingersonly".asInstanceOf[fingersonly]
   
   @js.native
-  sealed trait mouseonly extends js.Object
+  sealed trait horizontal extends StObject
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait reveal extends js.Object
+  sealed trait mouseonly extends StObject
+  inline def mouseonly: mouseonly = "mouseonly".asInstanceOf[mouseonly]
   
   @js.native
-  sealed trait sections extends js.Object
+  sealed trait reveal extends StObject
+  inline def reveal: reveal = "reveal".asInstanceOf[reveal]
   
   @js.native
-  sealed trait slides extends js.Object
+  sealed trait sections extends StObject
+  inline def sections: sections = "sections".asInstanceOf[sections]
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait slides extends StObject
+  inline def slides: slides = "slides".asInstanceOf[slides]
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
   
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def cover: cover = "cover".asInstanceOf[cover]
-  @scala.inline
-  def fingersonly: fingersonly = "fingersonly".asInstanceOf[fingersonly]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def mouseonly: mouseonly = "mouseonly".asInstanceOf[mouseonly]
-  @scala.inline
-  def reveal: reveal = "reveal".asInstanceOf[reveal]
-  @scala.inline
-  def sections: sections = "sections".asInstanceOf[sections]
-  @scala.inline
-  def slides: slides = "slides".asInstanceOf[slides]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @js.native
+  sealed trait vertical extends StObject
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
-

@@ -1,16 +1,22 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode", "extensions")
-@js.native
-object extensions extends js.Object {
-  val all: js.Array[Extension[js.Any]] = js.native
+object extensions {
+  
+  @JSImport("vscode", "extensions")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("vscode", "extensions.all")
+  @js.native
+  val all: js.Array[Extension[Any]] = js.native
+  
+  inline def getExtension[T](extensionId: String): js.UndefOr[Extension[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Extension[T]]]
+  
+  @JSImport("vscode", "extensions.onDidChange")
+  @js.native
   val onDidChange: Event[Unit] = js.native
-  def getExtension(extensionId: String): js.UndefOr[Extension[_]] = js.native
-  @JSName("getExtension")
-  def getExtension_T[T](extensionId: String): js.UndefOr[Extension[T]] = js.native
 }
-

@@ -1,15 +1,24 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AuthenticatorResponse extends js.Object {
-  val clientDataJSON: scala.scalajs.js.typedarray.ArrayBuffer
+/** Available only in secure contexts. */
+trait AuthenticatorResponse extends StObject {
+  
+  /* standard dom */
+  val clientDataJSON: js.typedarray.ArrayBuffer
 }
-
-@JSGlobal("AuthenticatorResponse")
-@js.native
-object AuthenticatorResponse extends Instantiable0[AuthenticatorResponse]
-
+object AuthenticatorResponse {
+  
+  inline def apply(clientDataJSON: js.typedarray.ArrayBuffer): AuthenticatorResponse = {
+    val __obj = js.Dynamic.literal(clientDataJSON = clientDataJSON.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AuthenticatorResponse]
+  }
+  
+  extension [Self <: AuthenticatorResponse](x: Self) {
+    
+    inline def setClientDataJSON(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "clientDataJSON", value.asInstanceOf[js.Any])
+  }
+}

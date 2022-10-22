@@ -1,26 +1,27 @@
 package typingsJapgolly.kineticjs.Kinetic
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICollection extends js.Object {
+trait ICollection extends StObject {
+  
   @JSName("apply")
-  def apply(method: js.Function, `val`: js.Any): js.Any
-  def each(func: js.Function0[_]): js.Any
+  def apply(method: js.Function, `val`: Any): Any
+  
+  def each(func: js.Function0[Any]): Any
 }
-
 object ICollection {
-  @scala.inline
-  def apply(
-    apply: (js.Function, js.Any) => CallbackTo[js.Any],
-    each: js.Function0[js.Any] => CallbackTo[js.Any]
-  ): ICollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(js.Any.fromFunction2((t0: js.Function, t1: js.Any) => apply(t0, t1).runNow()))
-    __obj.updateDynamic("each")(js.Any.fromFunction1((t0: js.Function0[js.Any]) => each(t0).runNow()))
+  
+  inline def apply(apply: (js.Function, Any) => Any, each: js.Function0[Any] => Any): ICollection = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction2(apply), each = js.Any.fromFunction1(each))
     __obj.asInstanceOf[ICollection]
   }
+  
+  extension [Self <: ICollection](x: Self) {
+    
+    inline def setApply(value: (js.Function, Any) => Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    
+    inline def setEach(value: js.Function0[Any] => Any): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,17 +1,19 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxLinkedObjectInfo...
   */
-trait INxLinkedObjectInfo extends js.Object {
+trait INxLinkedObjectInfo extends StObject {
+  
   /**
     * Information about the linked object.
     */
   var qInfo: INxInfo
+  
   /**
     * Identifier of the root object.
     * If the linked object is a child, the root identifier is the identifier of the parent.
@@ -20,13 +22,17 @@ trait INxLinkedObjectInfo extends js.Object {
     */
   var qRootId: String
 }
-
 object INxLinkedObjectInfo {
-  @scala.inline
-  def apply(qInfo: INxInfo, qRootId: String): INxLinkedObjectInfo = {
-    val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qRootId = qRootId.asInstanceOf[js.Any])
   
+  inline def apply(qInfo: INxInfo, qRootId: String): INxLinkedObjectInfo = {
+    val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qRootId = qRootId.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxLinkedObjectInfo]
   }
+  
+  extension [Self <: INxLinkedObjectInfo](x: Self) {
+    
+    inline def setQInfo(value: INxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
+    
+    inline def setQRootId(value: String): Self = StObject.set(x, "qRootId", value.asInstanceOf[js.Any])
+  }
 }
-

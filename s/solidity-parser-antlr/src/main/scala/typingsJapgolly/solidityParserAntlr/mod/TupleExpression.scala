@@ -1,35 +1,39 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.solidityParserAntlr.mod.ASTNode because Already inherited
-- typingsJapgolly.solidityParserAntlr.mod.Expression because Already inherited
-- typingsJapgolly.solidityParserAntlr.mod.ASTNode because Already inherited */ trait TupleExpression
-  extends PrimaryExpression
-     with BaseASTNode {
+trait TupleExpression
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with Expression
+     with PrimaryExpression {
+  
   var components: js.Array[Expression]
+  
   var isArray: Boolean
+  
   @JSName("type")
   var type_TupleExpression: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression
 }
-
 object TupleExpression {
-  @scala.inline
-  def apply(
-    components: js.Array[Expression],
-    isArray: Boolean,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): TupleExpression = {
+  
+  inline def apply(components: js.Array[Expression], isArray: Boolean): TupleExpression = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], isArray = isArray.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TupleExpression")
     __obj.asInstanceOf[TupleExpression]
   }
+  
+  extension [Self <: TupleExpression](x: Self) {
+    
+    inline def setComponents(value: js.Array[Expression]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    
+    inline def setComponentsVarargs(value: Expression*): Self = StObject.set(x, "components", js.Array(value*))
+    
+    inline def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

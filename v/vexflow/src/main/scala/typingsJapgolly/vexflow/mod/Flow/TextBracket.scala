@@ -1,21 +1,38 @@
 package typingsJapgolly.vexflow.mod.Flow
 
-import typingsJapgolly.vexflow.AnonPosition
+import typingsJapgolly.vexflow.anon.Position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexflow", "Flow.TextBracket")
 @js.native
-class TextBracket protected ()
-  extends typingsJapgolly.vexflow.Vex.Flow.TextBracket {
-  def this(bracket_data: AnonPosition) = this()
+open class TextBracket protected ()
+  extends StObject
+     with typingsJapgolly.vexflow.Vex.Flow.TextBracket {
+  def this(bracket_data: Position) = this()
 }
-
-/* static members */
-@JSImport("vexflow", "Flow.TextBracket")
-@js.native
-object TextBracket extends js.Object {
-  var DEBUG: Boolean = js.native
+object TextBracket {
+  
+  @JSImport("vexflow", "Flow.TextBracket")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("vexflow", "Flow.TextBracket.DEBUG")
+  @js.native
+  def DEBUG: Boolean = js.native
+  inline def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("vexflow", "Flow.TextBracket.Positions")
+  @js.native
+  object Positions extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typingsJapgolly.vexflow.Vex.Flow.TextBracket.Positions & Double] = js.native
+    
+    /* -1 */ val BOTTOM: typingsJapgolly.vexflow.Vex.Flow.TextBracket.Positions.BOTTOM & Double = js.native
+    
+    /* 1 */ val TOP: typingsJapgolly.vexflow.Vex.Flow.TextBracket.Positions.TOP & Double = js.native
+  }
 }
-

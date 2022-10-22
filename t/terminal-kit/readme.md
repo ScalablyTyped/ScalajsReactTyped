@@ -1,7 +1,7 @@
 
 # Scala.js typings for terminal-kit
 
-Typings are for version 1.28
+Typings are for version 2.5
 
 ## Library description:
 256 colors, keys and mouse, input field, progress bars, screen buffer (including 32-bit composition and image loading), text buffer, and many more... Whether you just need colors and styles, build a simple interactive command line tool or a complexe termi
@@ -9,11 +9,11 @@ Typings are for version 1.28
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | terminal-kit |
-| Keywords           | terminal, console, ansi, xterm, color, 256 colors, true color, style, input, input field, mouse, gpm, cursor, menu, progress bar, screenbuffer, textbuffer, 32-bit, composition, image, png, jpeg, gif |
-| # releases         | 113 |
-| # dependents       | 224 |
-| # downloads        | 661330 |
-| # stars            | 45 |
+| Keywords           | terminal, console, ansi, cli, xterm, color, 256 colors, true color, style, input, input field, mouse, gpm, cursor, menu, spinner, progress bar, screenbuffer, textbuffer, 32-bit, composition, image, png, jpeg, gif |
+| # releases         | 91 |
+| # dependents       | 0.0 |
+| # downloads        | 189740.66666666666 |
+| # stars            | 2632.0 |
 
 ## Links
 - [Homepage](https://github.com/cronvel/terminal-kit#readme)

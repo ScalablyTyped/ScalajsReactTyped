@@ -1,23 +1,19 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`0`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`0`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`0`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`0`
 */
-trait ADCPROP_AUTORECALC_ENUM extends js.Object
-
+trait ADCPROP_AUTORECALC_ENUM extends StObject
 object ADCPROP_AUTORECALC_ENUM {
-  @scala.inline
-  def adRecalcAlways: `1` = this.cast(1)
-  @scala.inline
-  def adRecalcUpFront: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adRecalcAlways: `1` = 1.asInstanceOf[`1`]
+  
+  inline def adRecalcUpFront: `0` = 0.asInstanceOf[`0`]
 }
-

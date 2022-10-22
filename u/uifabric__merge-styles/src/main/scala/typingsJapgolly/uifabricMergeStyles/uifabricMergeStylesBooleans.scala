@@ -1,15 +1,15 @@
 package typingsJapgolly.uifabricMergeStyles
 
-import typingsJapgolly.uifabricMergeStyles.istyleMod._IStyleBase
+import typingsJapgolly.uifabricMergeStyles.libIstyleMod._IStyleBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uifabricMergeStylesBooleans {
-  @js.native
-  sealed trait `false` extends _IStyleBase
   
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  @js.native
+  sealed trait `false`
+    extends StObject
+       with _IStyleBase
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }
-

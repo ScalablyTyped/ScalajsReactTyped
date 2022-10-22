@@ -1,23 +1,31 @@
 package typingsJapgolly.gapiCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CalendarListInsertParameters extends js.Object {
+trait CalendarListInsertParameters extends StObject {
+  
   // Parameters
   // Optional query parameters
   var colorRgbFormat: js.UndefOr[Boolean] = js.undefined
+  
   // CalendarList resource
   var resource: CalendarListInput
 }
-
 object CalendarListInsertParameters {
-  @scala.inline
-  def apply(resource: CalendarListInput, colorRgbFormat: js.UndefOr[Boolean] = js.undefined): CalendarListInsertParameters = {
+  
+  inline def apply(resource: CalendarListInput): CalendarListInsertParameters = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorRgbFormat)) __obj.updateDynamic("colorRgbFormat")(colorRgbFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarListInsertParameters]
   }
+  
+  extension [Self <: CalendarListInsertParameters](x: Self) {
+    
+    inline def setColorRgbFormat(value: Boolean): Self = StObject.set(x, "colorRgbFormat", value.asInstanceOf[js.Any])
+    
+    inline def setColorRgbFormatUndefined: Self = StObject.set(x, "colorRgbFormat", js.undefined)
+    
+    inline def setResource(value: CalendarListInput): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+  }
 }
-

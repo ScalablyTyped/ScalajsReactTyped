@@ -6,13 +6,15 @@ import typingsJapgolly.minappEnv.minappEnvStrings.`4g`
 import typingsJapgolly.minappEnv.minappEnvStrings.none
 import typingsJapgolly.minappEnv.minappEnvStrings.unknown
 import typingsJapgolly.minappEnv.minappEnvStrings.wifi
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnNetworkStatusChangeCallbackResult extends js.Object {
+trait OnNetworkStatusChangeCallbackResult extends StObject {
+  
   /** 当前是否有网络链接 */
   var isConnected: Boolean
+  
   /** 网络类型
     *
     * 可选值：
@@ -24,13 +26,17 @@ trait OnNetworkStatusChangeCallbackResult extends js.Object {
     * - 'none': 无网络; */
   var networkType: wifi | `2g` | `3g` | `4g` | unknown | none
 }
-
 object OnNetworkStatusChangeCallbackResult {
-  @scala.inline
-  def apply(isConnected: Boolean, networkType: wifi | `2g` | `3g` | `4g` | unknown | none): OnNetworkStatusChangeCallbackResult = {
-    val __obj = js.Dynamic.literal(isConnected = isConnected.asInstanceOf[js.Any], networkType = networkType.asInstanceOf[js.Any])
   
+  inline def apply(isConnected: Boolean, networkType: wifi | `2g` | `3g` | `4g` | unknown | none): OnNetworkStatusChangeCallbackResult = {
+    val __obj = js.Dynamic.literal(isConnected = isConnected.asInstanceOf[js.Any], networkType = networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnNetworkStatusChangeCallbackResult]
   }
+  
+  extension [Self <: OnNetworkStatusChangeCallbackResult](x: Self) {
+    
+    inline def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkType(value: wifi | `2g` | `3g` | `4g` | unknown | none): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+  }
 }
-

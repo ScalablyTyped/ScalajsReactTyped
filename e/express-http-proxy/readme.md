@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-http-proxy
 
-Typings are for version 1.5
+Typings are for version 1.6
 
 ## Library description:
 http proxy middleware for express
@@ -10,10 +10,10 @@ http proxy middleware for express
 | ------------------ | :-------------: |
 | Full name          | express-http-proxy |
 | Keywords           | express-http-proxy |
-| # releases         | 7 |
-| # dependents       | 273 |
-| # downloads        | 4539639 |
-| # stars            | 40 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1169554.3333333333 |
+| # stars            | 1091.0 |
 
 ## Links
 - [Homepage](https://github.com/villadora/express-http-proxy#readme)

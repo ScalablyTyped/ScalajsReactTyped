@@ -2,20 +2,18 @@ package typingsJapgolly.materialUi
 
 import typingsJapgolly.materialUi.MaterialUI.CircularProgressProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/CircularProgress", JSImport.Namespace)
-@js.native
-object circularProgressMod extends js.Object {
-  @js.native
-  class CircularProgress ()
-    extends Component[CircularProgressProps, js.Object, js.Any]
+object circularProgressMod {
   
+  @JSImport("material-ui/CircularProgress", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CircularProgressProps, js.Object, js.Any]
+  open class default () extends CircularProgress
   
+  @JSImport("material-ui/CircularProgress", "CircularProgress")
+  @js.native
+  open class CircularProgress ()
+    extends Component[CircularProgressProps, js.Object, Any]
 }
-

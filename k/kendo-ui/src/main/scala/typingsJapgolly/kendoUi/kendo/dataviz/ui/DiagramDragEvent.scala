@@ -1,32 +1,39 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramDragEvent extends DiagramEvent {
+trait DiagramDragEvent
+  extends StObject
+     with DiagramEvent {
+  
   var connectionHandle: js.UndefOr[String] = js.undefined
-  var connections: js.UndefOr[js.Any] = js.undefined
-  var shapes: js.UndefOr[js.Any] = js.undefined
+  
+  var connections: js.UndefOr[Any] = js.undefined
+  
+  var shapes: js.UndefOr[Any] = js.undefined
 }
-
 object DiagramDragEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Diagram,
-    connectionHandle: String = null,
-    connections: js.Any = null,
-    shapes: js.Any = null
-  ): DiagramDragEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (connectionHandle != null) __obj.updateDynamic("connectionHandle")(connectionHandle.asInstanceOf[js.Any])
-    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
-    if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Diagram): DiagramDragEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramDragEvent]
   }
+  
+  extension [Self <: DiagramDragEvent](x: Self) {
+    
+    inline def setConnectionHandle(value: String): Self = StObject.set(x, "connectionHandle", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionHandleUndefined: Self = StObject.set(x, "connectionHandle", js.undefined)
+    
+    inline def setConnections(value: Any): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
+    
+    inline def setShapes(value: Any): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+    
+    inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
+  }
 }
-

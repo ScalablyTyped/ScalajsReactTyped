@@ -1,23 +1,20 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait backgroundColorBackground extends Background {
+trait backgroundColorBackground
+  extends StObject
+     with Background {
+  
   /**
-    * The color of the background. This can be autocast with an array of rgb(a) values, named string, hex string or an hsl(a) string, an object with `r`, `g`, `b`, and `a` properties, or a [Color](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html) object.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-background-ColorBackground.html#color)
+    * The color of the background.
     *
     * @default black
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-background-ColorBackground.html#color)
     */
   var color: Color_ = js.native
 }
-
-@JSGlobal("__esri.backgroundColorBackground")
-@js.native
-object backgroundColorBackground extends TopLevel[backgroundColorBackgroundConstructor]
-

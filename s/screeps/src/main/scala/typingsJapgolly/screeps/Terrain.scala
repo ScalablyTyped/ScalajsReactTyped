@@ -1,8 +1,8 @@
 package typingsJapgolly.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * This file creates literal versions of many of the constants
@@ -14,16 +14,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.screeps.screepsStrings.swamp
   - typingsJapgolly.screeps.screepsStrings.wall
 */
-trait Terrain extends js.Object
-
+trait Terrain extends StObject
 object Terrain {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def plain: typingsJapgolly.screeps.screepsStrings.plain = this.cast("plain")
-  @scala.inline
-  def swamp: typingsJapgolly.screeps.screepsStrings.swamp = this.cast("swamp")
-  @scala.inline
-  def wall: typingsJapgolly.screeps.screepsStrings.wall = this.cast("wall")
+  
+  inline def plain: typingsJapgolly.screeps.screepsStrings.plain = "plain".asInstanceOf[typingsJapgolly.screeps.screepsStrings.plain]
+  
+  inline def swamp: typingsJapgolly.screeps.screepsStrings.swamp = "swamp".asInstanceOf[typingsJapgolly.screeps.screepsStrings.swamp]
+  
+  inline def wall: typingsJapgolly.screeps.screepsStrings.wall = "wall".asInstanceOf[typingsJapgolly.screeps.screepsStrings.wall]
 }
-

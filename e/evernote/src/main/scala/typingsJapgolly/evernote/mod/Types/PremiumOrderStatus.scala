@@ -1,53 +1,51 @@
 package typingsJapgolly.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PremiumOrderStatus extends js.Object
-
+sealed trait PremiumOrderStatus extends StObject
 @JSImport("evernote", "Types.PremiumOrderStatus")
 @js.native
-object PremiumOrderStatus extends js.Object {
-  @js.native
-  sealed trait ACTIVE extends PremiumOrderStatus
-  
-  @js.native
-  sealed trait CANCELED extends PremiumOrderStatus
-  
-  @js.native
-  sealed trait CANCELLATION_PENDING extends PremiumOrderStatus
-  
-  @js.native
-  sealed trait FAILED extends PremiumOrderStatus
-  
-  @js.native
-  sealed trait NONE extends PremiumOrderStatus
-  
-  @js.native
-  sealed trait PENDING extends PremiumOrderStatus
+object PremiumOrderStatus extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PremiumOrderStatus with Double] = js.native
-  /* 2 */ @js.native
-  object ACTIVE extends TopLevel[ACTIVE with Double]
+  def apply(value: Double): js.UndefOr[PremiumOrderStatus & Double] = js.native
   
-  /* 5 */ @js.native
-  object CANCELED extends TopLevel[CANCELED with Double]
+  @js.native
+  sealed trait ACTIVE
+    extends StObject
+       with PremiumOrderStatus
+  /* 2 */ val ACTIVE: typingsJapgolly.evernote.mod.Types.PremiumOrderStatus.ACTIVE & Double = js.native
   
-  /* 4 */ @js.native
-  object CANCELLATION_PENDING extends TopLevel[CANCELLATION_PENDING with Double]
+  @js.native
+  sealed trait CANCELED
+    extends StObject
+       with PremiumOrderStatus
+  /* 5 */ val CANCELED: typingsJapgolly.evernote.mod.Types.PremiumOrderStatus.CANCELED & Double = js.native
   
-  /* 3 */ @js.native
-  object FAILED extends TopLevel[FAILED with Double]
+  @js.native
+  sealed trait CANCELLATION_PENDING
+    extends StObject
+       with PremiumOrderStatus
+  /* 4 */ val CANCELLATION_PENDING: typingsJapgolly.evernote.mod.Types.PremiumOrderStatus.CANCELLATION_PENDING & Double = js.native
   
-  /* 0 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
+  @js.native
+  sealed trait FAILED
+    extends StObject
+       with PremiumOrderStatus
+  /* 3 */ val FAILED: typingsJapgolly.evernote.mod.Types.PremiumOrderStatus.FAILED & Double = js.native
   
-  /* 1 */ @js.native
-  object PENDING extends TopLevel[PENDING with Double]
+  @js.native
+  sealed trait NONE
+    extends StObject
+       with PremiumOrderStatus
+  /* 0 */ val NONE: typingsJapgolly.evernote.mod.Types.PremiumOrderStatus.NONE & Double = js.native
   
+  @js.native
+  sealed trait PENDING
+    extends StObject
+       with PremiumOrderStatus
+  /* 1 */ val PENDING: typingsJapgolly.evernote.mod.Types.PremiumOrderStatus.PENDING & Double = js.native
 }
-

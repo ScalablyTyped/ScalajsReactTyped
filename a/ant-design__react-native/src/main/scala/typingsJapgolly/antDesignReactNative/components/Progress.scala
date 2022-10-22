@@ -1,58 +1,50 @@
 package typingsJapgolly.antDesignReactNative.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.fixed
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.normal
-import typingsJapgolly.antDesignReactNative.progressMod.ProgressProps
-import typingsJapgolly.antDesignReactNative.progressMod.default
-import typingsJapgolly.antDesignReactNative.progressStyleMod.ProgressStyle
+import typingsJapgolly.antDesignReactNative.libProgressMod.ProgressProps
+import typingsJapgolly.antDesignReactNative.libProgressStyleMod.ProgressStyle
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Progress {
-  def apply(
-    appearTransition: js.UndefOr[Boolean] = js.undefined,
-    barStyle: StyleProp[ViewStyle] = null,
-    percent: Int | Double = null,
-    position: fixed | normal = null,
-    style: StyleProp[ViewStyle] = null,
-    styles: Partial[ProgressStyle] = null,
-    unfilled: js.UndefOr[Boolean] = js.undefined,
-    wrapWidth: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ProgressProps, default, Unit, ProgressProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(appearTransition)) __obj.updateDynamic("appearTransition")(appearTransition.asInstanceOf[js.Any])
-    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(unfilled)) __obj.updateDynamic("unfilled")(unfilled.asInstanceOf[js.Any])
-    if (wrapWidth != null) __obj.updateDynamic("wrapWidth")(wrapWidth.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.progressMod.ProgressProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.progressMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.progressMod.ProgressProps])(children: _*)
-  }
-  @JSImport("@ant-design/react-native/lib/progress", JSImport.Default)
+  @JSImport("@ant-design/react-native", "Progress")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.Progress] {
+    
+    inline def appearTransition(value: Boolean): this.type = set("appearTransition", value.asInstanceOf[js.Any])
+    
+    inline def barStyle(value: StyleProp[ViewStyle]): this.type = set("barStyle", value.asInstanceOf[js.Any])
+    
+    inline def barStyleNull: this.type = set("barStyle", null)
+    
+    inline def percent(value: Double): this.type = set("percent", value.asInstanceOf[js.Any])
+    
+    inline def position(value: fixed | normal): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: Partial[ProgressStyle]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def unfilled(value: Boolean): this.type = set("unfilled", value.asInstanceOf[js.Any])
+    
+    inline def wrapWidth(value: Double): this.type = set("wrapWidth", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Progress.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ProgressProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

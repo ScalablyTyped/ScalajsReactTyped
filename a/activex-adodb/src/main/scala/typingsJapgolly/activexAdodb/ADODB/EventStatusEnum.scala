@@ -1,35 +1,31 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`3`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`4`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`5`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`3`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`4`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`4`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`3`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`5`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`4`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`3`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`5`
 */
-trait EventStatusEnum extends js.Object
-
+trait EventStatusEnum extends StObject
 object EventStatusEnum {
-  @scala.inline
-  def adStatusCancel: `4` = this.cast(4)
-  @scala.inline
-  def adStatusCantDeny: `3` = this.cast(3)
-  @scala.inline
-  def adStatusErrorsOccurred: `2` = this.cast(2)
-  @scala.inline
-  def adStatusOK: `1` = this.cast(1)
-  @scala.inline
-  def adStatusUnwantedEvent: `5` = this.cast(5)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adStatusCancel: `4` = 4.asInstanceOf[`4`]
+  
+  inline def adStatusCantDeny: `3` = 3.asInstanceOf[`3`]
+  
+  inline def adStatusErrorsOccurred: `2` = 2.asInstanceOf[`2`]
+  
+  inline def adStatusOK: `1` = 1.asInstanceOf[`1`]
+  
+  inline def adStatusUnwantedEvent: `5` = 5.asInstanceOf[`5`]
 }
-

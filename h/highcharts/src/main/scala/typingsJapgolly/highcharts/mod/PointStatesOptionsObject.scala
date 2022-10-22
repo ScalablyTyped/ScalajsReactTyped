@@ -1,42 +1,59 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointStatesOptionsObject extends js.Object {
+trait PointStatesOptionsObject extends StObject {
+  
   /**
-    * The hover state for a single point marker.
+    * (Highcharts, Highstock) The hover state for a single point marker.
     */
   var hover: js.UndefOr[PointStatesHoverOptionsObject] = js.undefined
+  
   /**
-    * The hover state for a single point marker.
+    * (Highcharts) The opposite state of a hover for a single point node.
+    * Applied to all not connected nodes to the hovered one.
     */
   var inactive: js.UndefOr[PointStatesInactiveOptionsObject] = js.undefined
+  
   /**
-    * The hover state for a single point marker.
+    * (Highcharts, Highstock) The normal state of a single point marker.
+    * Currently only used for setting animation when returning to normal state
+    * from hover.
     */
   var normal: js.UndefOr[PointStatesNormalOptionsObject] = js.undefined
+  
   /**
-    * The hover state for a single point marker.
+    * (Highcharts, Highstock) The appearance of the point marker when selected.
+    * In order to allow a point to be selected, set the
+    * `series.allowPointSelect` option to true.
     */
   var select: js.UndefOr[PointStatesSelectOptionsObject] = js.undefined
 }
-
 object PointStatesOptionsObject {
-  @scala.inline
-  def apply(
-    hover: PointStatesHoverOptionsObject = null,
-    inactive: PointStatesInactiveOptionsObject = null,
-    normal: PointStatesNormalOptionsObject = null,
-    select: PointStatesSelectOptionsObject = null
-  ): PointStatesOptionsObject = {
+  
+  inline def apply(): PointStatesOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
-    if (inactive != null) __obj.updateDynamic("inactive")(inactive.asInstanceOf[js.Any])
-    if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointStatesOptionsObject]
   }
+  
+  extension [Self <: PointStatesOptionsObject](x: Self) {
+    
+    inline def setHover(value: PointStatesHoverOptionsObject): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    
+    inline def setInactive(value: PointStatesInactiveOptionsObject): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
+    
+    inline def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
+    
+    inline def setNormal(value: PointStatesNormalOptionsObject): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    
+    inline def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
+    
+    inline def setSelect(value: PointStatesSelectOptionsObject): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+  }
 }
-

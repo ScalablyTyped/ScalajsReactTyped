@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpreadsheetSheetRowCellBorderLeft extends js.Object {
+trait SpreadsheetSheetRowCellBorderLeft extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var size: js.UndefOr[String] = js.undefined
 }
-
 object SpreadsheetSheetRowCellBorderLeft {
-  @scala.inline
-  def apply(color: String = null, size: String = null): SpreadsheetSheetRowCellBorderLeft = {
+  
+  inline def apply(): SpreadsheetSheetRowCellBorderLeft = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetSheetRowCellBorderLeft]
   }
+  
+  extension [Self <: SpreadsheetSheetRowCellBorderLeft](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+  }
 }
-

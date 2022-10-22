@@ -1,93 +1,102 @@
 package typingsJapgolly.clovelcedPluginAudiomanagement
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.clovelcedPluginAudiomanagement.anon.MaxVolume
+import typingsJapgolly.clovelcedPluginAudiomanagement.anon.Volume
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("clovelced-plugin-audiomanagement", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("clovelced-plugin-audiomanagement", JSImport.Namespace)
   @js.native
-  sealed trait AudioMode extends js.Object
+  val ^ : js.Any = js.native
   
   @js.native
-  sealed trait VolumeType extends js.Object
+  sealed trait AudioMode extends StObject
+  @JSImport("clovelced-plugin-audiomanagement", "AudioMode")
+  @js.native
+  object AudioMode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[AudioMode & Double] = js.native
+    
+    @js.native
+    sealed trait NORMAL
+      extends StObject
+         with AudioMode
+    /* 1 */ val NORMAL: typingsJapgolly.clovelcedPluginAudiomanagement.mod.AudioMode.NORMAL & Double = js.native
+    
+    @js.native
+    sealed trait SILENT
+      extends StObject
+         with AudioMode
+    /* 0 */ val SILENT: typingsJapgolly.clovelcedPluginAudiomanagement.mod.AudioMode.SILENT & Double = js.native
+    
+    @js.native
+    sealed trait VIBRATE
+      extends StObject
+         with AudioMode
+    /* 0 */ val VIBRATE: typingsJapgolly.clovelcedPluginAudiomanagement.mod.AudioMode.VIBRATE & Double = js.native
+  }
   
-  def getAudioMode(
-    onSuccess: js.Function1[/* results */ AnonAudioMode, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): Unit = js.native
-  def getMaxVolume(
+  @js.native
+  sealed trait VolumeType extends StObject
+  @JSImport("clovelced-plugin-audiomanagement", "VolumeType")
+  @js.native
+  object VolumeType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[VolumeType & Double] = js.native
+    
+    @js.native
+    sealed trait MUSIC
+      extends StObject
+         with VolumeType
+    /* 0 */ val MUSIC: typingsJapgolly.clovelcedPluginAudiomanagement.mod.VolumeType.MUSIC & Double = js.native
+    
+    @js.native
+    sealed trait NOTIFICATION
+      extends StObject
+         with VolumeType
+    /* 1 */ val NOTIFICATION: typingsJapgolly.clovelcedPluginAudiomanagement.mod.VolumeType.NOTIFICATION & Double = js.native
+    
+    @js.native
+    sealed trait RING
+      extends StObject
+         with VolumeType
+    /* 0 */ val RING: typingsJapgolly.clovelcedPluginAudiomanagement.mod.VolumeType.RING & Double = js.native
+    
+    @js.native
+    sealed trait SYSTEM
+      extends StObject
+         with VolumeType
+    /* 2 */ val SYSTEM: typingsJapgolly.clovelcedPluginAudiomanagement.mod.VolumeType.SYSTEM & Double = js.native
+  }
+  
+  inline def getAudioMode(
+    onSuccess: js.Function1[/* results */ typingsJapgolly.clovelcedPluginAudiomanagement.anon.AudioMode, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAudioMode")(onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def getMaxVolume(
     `type`: VolumeType,
-    onSuccess: js.Function1[/* results */ AnonMaxVolume, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): Unit = js.native
-  def getVolume(
+    onSuccess: js.Function1[/* results */ MaxVolume, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxVolume")(`type`.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def getVolume(
     `type`: VolumeType,
-    onSuccess: js.Function1[/* results */ AnonVolume, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): Unit = js.native
-  def setAudioMode(mode: AudioMode, onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
-  def setVolume(
+    onSuccess: js.Function1[/* results */ Volume, Unit],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(`type`.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setAudioMode(mode: AudioMode, onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAudioMode")(mode.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setVolume(
     `type`: VolumeType,
     volume: Double,
     onSuccess: js.Function0[Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
-  ): Unit = js.native
-  @js.native
-  object AudioMode extends js.Object {
-    @js.native
-    sealed trait NORMAL extends AudioMode
-    
-    @js.native
-    sealed trait SILENT extends AudioMode
-    
-    @js.native
-    sealed trait VIBRATE extends AudioMode
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[AudioMode with Double] = js.native
-    /* 1 */ @js.native
-    object NORMAL extends TopLevel[NORMAL with Double]
-    
-    /* 0 */ @js.native
-    object SILENT extends TopLevel[SILENT with Double]
-    
-    /* 0 */ @js.native
-    object VIBRATE extends TopLevel[VIBRATE with Double]
-    
-  }
-  
-  @js.native
-  object VolumeType extends js.Object {
-    @js.native
-    sealed trait MUSIC extends VolumeType
-    
-    @js.native
-    sealed trait NOTIFICATION extends VolumeType
-    
-    @js.native
-    sealed trait RING extends VolumeType
-    
-    @js.native
-    sealed trait SYSTEM extends VolumeType
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[VolumeType with Double] = js.native
-    /* 0 */ @js.native
-    object MUSIC extends TopLevel[MUSIC with Double]
-    
-    /* 1 */ @js.native
-    object NOTIFICATION extends TopLevel[NOTIFICATION with Double]
-    
-    /* 0 */ @js.native
-    object RING extends TopLevel[RING with Double]
-    
-    /* 2 */ @js.native
-    object SYSTEM extends TopLevel[SYSTEM with Double]
-    
-  }
-  
+    onError: js.Function1[/* error */ Any, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVolume")(`type`.asInstanceOf[js.Any], volume.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

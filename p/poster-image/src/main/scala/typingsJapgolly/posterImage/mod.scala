@@ -1,15 +1,17 @@
 package typingsJapgolly.posterImage
 
-import typingsJapgolly.std.Blob
-import typingsJapgolly.std.File
+import org.scalajs.dom.Blob
+import org.scalajs.dom.File
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("poster-image", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(file: Blob): js.Promise[org.scalajs.dom.raw.Blob] = js.native
-  def apply(file: File): js.Promise[org.scalajs.dom.raw.Blob] = js.native
+object mod {
+  
+  inline def apply(file: Blob): js.Promise[Blob] = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Blob]]
+  inline def apply(file: File): js.Promise[Blob] = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Blob]]
+  
+  @JSImport("poster-image", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

@@ -1,14 +1,18 @@
 package typingsJapgolly.angularCompiler.mod
 
-import typingsJapgolly.angularCompiler.AnonClosedByChildren
+import typingsJapgolly.angularCompiler.anon.ClosedByChildren
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "HtmlTagDefinition")
 @js.native
-class HtmlTagDefinition ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.HtmlTagDefinition {
-  def this(hasClosedByChildrenImplicitNamespacePrefixContentTypeClosedByParentIsVoidIgnoreFirstLf: AnonClosedByChildren) = this()
+open class HtmlTagDefinition ()
+  extends StObject
+     with TagDefinition {
+  def this(hasClosedByChildrenImplicitNamespacePrefixContentTypeClosedByParentIsVoidIgnoreFirstLfPreventNamespaceInheritance: ClosedByChildren) = this()
+  
+  /* private */ var closedByChildren: Any = js.native
+  
+  /* private */ var contentType: Any = js.native
 }
-

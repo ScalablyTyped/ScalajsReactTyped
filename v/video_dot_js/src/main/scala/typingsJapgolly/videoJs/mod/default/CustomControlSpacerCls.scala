@@ -2,14 +2,17 @@ package typingsJapgolly.videoJs.mod.default
 
 import typingsJapgolly.videoJs.mod.videojs.Component.ReadyCallback
 import typingsJapgolly.videoJs.mod.videojs.ComponentOptions
+import typingsJapgolly.videoJs.mod.videojs.CustomControlSpacer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "CustomControlSpacer")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js", "default.CustomControlSpacer")
 @js.native
-class CustomControlSpacerCls protected ()
-  extends typingsJapgolly.videoJs.mod.videojs.CustomControlSpacer {
+open class CustomControlSpacerCls protected ()
+  extends StObject
+     with CustomControlSpacer {
   /**
     * Creates an instance of this class.
     *
@@ -24,10 +27,10 @@ class CustomControlSpacerCls protected ()
     */
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player) = this()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player, options: ComponentOptions) = this()
+  def this(player: typingsJapgolly.videoJs.mod.videojs.Player, options: Unit, ready: ReadyCallback) = this()
   def this(
     player: typingsJapgolly.videoJs.mod.videojs.Player,
     options: ComponentOptions,
     ready: ReadyCallback
   ) = this()
 }
-

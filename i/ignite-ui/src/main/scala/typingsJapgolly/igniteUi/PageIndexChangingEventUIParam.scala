@@ -1,32 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PageIndexChangingEventUIParam extends js.Object {
+trait PageIndexChangingEventUIParam extends StObject {
+  
   /**
-  	 * Gets current page index.
-  	 */
+    * Gets current page index.
+    */
   var currentPageIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets new page index.
-  	 */
+    * Gets new page index.
+    */
   var newPageIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets reference to GridPaging.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to GridPaging.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object PageIndexChangingEventUIParam {
-  @scala.inline
-  def apply(currentPageIndex: Int | Double = null, newPageIndex: Int | Double = null, owner: js.Any = null): PageIndexChangingEventUIParam = {
+  
+  inline def apply(): PageIndexChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (currentPageIndex != null) __obj.updateDynamic("currentPageIndex")(currentPageIndex.asInstanceOf[js.Any])
-    if (newPageIndex != null) __obj.updateDynamic("newPageIndex")(newPageIndex.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageIndexChangingEventUIParam]
   }
+  
+  extension [Self <: PageIndexChangingEventUIParam](x: Self) {
+    
+    inline def setCurrentPageIndex(value: Double): Self = StObject.set(x, "currentPageIndex", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentPageIndexUndefined: Self = StObject.set(x, "currentPageIndex", js.undefined)
+    
+    inline def setNewPageIndex(value: Double): Self = StObject.set(x, "newPageIndex", value.asInstanceOf[js.Any])
+    
+    inline def setNewPageIndexUndefined: Self = StObject.set(x, "newPageIndex", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

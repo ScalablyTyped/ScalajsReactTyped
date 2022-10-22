@@ -1,7 +1,7 @@
 
 # Scala.js typings for typestyle
 
-Typings are for version 2.0.4
+Typings are for version 2.4.0
 
 ## Library description:
 TypeSafe CSS
@@ -10,10 +10,10 @@ TypeSafe CSS
 | ------------------ | :-------------: |
 | Full name          | typestyle |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 111 |
-| # downloads        | 1493479 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 342499.6666666667 |
+| # stars            | 2985.0 |
 
 ## Links
 - [Homepage](https://github.com/typestyle/typestyle#readme)

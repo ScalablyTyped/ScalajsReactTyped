@@ -1,35 +1,31 @@
 package typingsJapgolly.activexOutlook.Outlook
 
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`5`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`7`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`0`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`5`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`5`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`7`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`5`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`7`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`0`
 */
-trait OlMeetingStatus extends js.Object
-
+trait OlMeetingStatus extends StObject
 object OlMeetingStatus {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def olMeeting: `1` = this.cast(1)
-  @scala.inline
-  def olMeetingCanceled: `5` = this.cast(5)
-  @scala.inline
-  def olMeetingReceived: `3` = this.cast(3)
-  @scala.inline
-  def olMeetingReceivedAndCanceled: `7` = this.cast(7)
-  @scala.inline
-  def olNonMeeting: `0` = this.cast(0)
+  
+  inline def olMeeting: `1` = 1.asInstanceOf[`1`]
+  
+  inline def olMeetingCanceled: `5` = 5.asInstanceOf[`5`]
+  
+  inline def olMeetingReceived: `3` = 3.asInstanceOf[`3`]
+  
+  inline def olMeetingReceivedAndCanceled: `7` = 7.asInstanceOf[`7`]
+  
+  inline def olNonMeeting: `0` = 0.asInstanceOf[`0`]
 }
-

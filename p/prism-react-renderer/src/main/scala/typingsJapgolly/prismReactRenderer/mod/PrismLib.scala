@@ -1,27 +1,34 @@
 package typingsJapgolly.prismReactRenderer.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PrismLib extends js.Object {
-  var languages: LanguageDict
+trait PrismLib extends StObject {
+  
   def highlight(code: String, grammar: PrismGrammar, language: Language): String
+  
+  var languages: LanguageDict
+  
   def tokenize(code: String, grammar: PrismGrammar, language: Language): js.Array[PrismToken | String]
 }
-
 object PrismLib {
-  @scala.inline
-  def apply(
-    highlight: (String, PrismGrammar, Language) => CallbackTo[String],
+  
+  inline def apply(
+    highlight: (String, PrismGrammar, Language) => String,
     languages: LanguageDict,
-    tokenize: (String, PrismGrammar, Language) => CallbackTo[js.Array[PrismToken | String]]
+    tokenize: (String, PrismGrammar, Language) => js.Array[PrismToken | String]
   ): PrismLib = {
-    val __obj = js.Dynamic.literal(languages = languages.asInstanceOf[js.Any])
-    __obj.updateDynamic("highlight")(js.Any.fromFunction3((t0: java.lang.String, t1: typingsJapgolly.prismReactRenderer.mod.PrismGrammar, t2: typingsJapgolly.prismReactRenderer.mod.Language) => highlight(t0, t1, t2).runNow()))
-    __obj.updateDynamic("tokenize")(js.Any.fromFunction3((t0: java.lang.String, t1: typingsJapgolly.prismReactRenderer.mod.PrismGrammar, t2: typingsJapgolly.prismReactRenderer.mod.Language) => tokenize(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(highlight = js.Any.fromFunction3(highlight), languages = languages.asInstanceOf[js.Any], tokenize = js.Any.fromFunction3(tokenize))
     __obj.asInstanceOf[PrismLib]
   }
+  
+  extension [Self <: PrismLib](x: Self) {
+    
+    inline def setHighlight(value: (String, PrismGrammar, Language) => String): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
+    
+    inline def setLanguages(value: LanguageDict): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    
+    inline def setTokenize(value: (String, PrismGrammar, Language) => js.Array[PrismToken | String]): Self = StObject.set(x, "tokenize", js.Any.fromFunction3(value))
+  }
 }
-

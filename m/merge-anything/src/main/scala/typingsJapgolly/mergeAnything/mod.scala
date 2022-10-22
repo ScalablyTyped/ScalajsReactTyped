@@ -1,17 +1,35 @@
 package typingsJapgolly.mergeAnything
 
-import typingsJapgolly.mergeAnything.mergeMod.IConfig
+import typingsJapgolly.mergeAnything.distTypesMergeMod.ExpandDeep
+import typingsJapgolly.mergeAnything.mergeAnythingStrings.deep
+import typingsJapgolly.std.Record
+import typingsJapgolly.tsToolbelt.outMiscBuiltInMod.BuiltIn
+import typingsJapgolly.tsToolbelt.outObjectAssignMod.Assign
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("merge-anything", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def concatArrays(originVal: js.Any, newVal: js.Any): js.Any = js.native
-  def default(origin: js.Any, newComers: js.Any*): js.Any = js.native
-  def default(origin: IConfig, newComers: js.Any*): js.Any = js.native
-  def merge(origin: js.Any, newComers: js.Any*): js.Any = js.native
-  def merge(origin: IConfig, newComers: js.Any*): js.Any = js.native
+object mod {
+  
+  @JSImport("merge-anything", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def concatArrays(originVal: Any, newVal: Any): Any | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatArrays")(originVal.asInstanceOf[js.Any], newVal.asInstanceOf[js.Any])).asInstanceOf[Any | js.Array[Any]]
+  
+  inline def merge[T /* <: Record[String, Any] */, Tn /* <: js.Array[Record[String, Any]] */](
+    `object`: T,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param otherObjects because its type Tn is not an array type */ otherObjects: Tn
+  ): ExpandDeep[Assign[T, Tn, deep, BuiltIn, Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(`object`.asInstanceOf[js.Any], otherObjects.asInstanceOf[js.Any])).asInstanceOf[ExpandDeep[Assign[T, Tn, deep, BuiltIn, Unit]]]
+  
+  inline def mergeAndCompare[T /* <: Record[String, Any] */, Tn /* <: js.Array[Record[String, Any]] */](
+    compareFn: js.Function3[/* prop1 */ Any, /* prop2 */ Any, /* propName */ String | js.Symbol, Any],
+    `object`: T,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param otherObjects because its type Tn is not an array type */ otherObjects: Tn
+  ): ExpandDeep[Assign[T, Tn, deep, BuiltIn, Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeAndCompare")(compareFn.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], otherObjects.asInstanceOf[js.Any])).asInstanceOf[ExpandDeep[Assign[T, Tn, deep, BuiltIn, Unit]]]
+  
+  inline def mergeAndConcat[T /* <: Record[String, Any] */, Tn /* <: js.Array[Record[String, Any]] */](
+    `object`: T,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param otherObjects because its type Tn is not an array type */ otherObjects: Tn
+  ): ExpandDeep[Assign[T, Tn, deep, BuiltIn, Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeAndConcat")(`object`.asInstanceOf[js.Any], otherObjects.asInstanceOf[js.Any])).asInstanceOf[ExpandDeep[Assign[T, Tn, deep, BuiltIn, Unit]]]
 }
-

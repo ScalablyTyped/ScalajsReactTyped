@@ -1,8 +1,7 @@
 package typingsJapgolly.devextreme.mod.DevExpress.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Guid extends js.Object
-
+trait Guid extends StObject

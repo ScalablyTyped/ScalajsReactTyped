@@ -3,21 +3,49 @@ package typingsJapgolly.fortawesomeFreeSolidSvgIcons
 import typingsJapgolly.fortawesomeFontawesomeCommonTypes.mod.IconDefinition
 import typingsJapgolly.fortawesomeFontawesomeCommonTypes.mod.IconName
 import typingsJapgolly.fortawesomeFontawesomeCommonTypes.mod.IconPrefix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fortawesome/free-solid-svg-icons/faGrinBeam", JSImport.Namespace)
-@js.native
-object faGrinBeamMod extends js.Object {
+object faGrinBeamMod {
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faGrinBeam", "aliases")
+  @js.native
+  val aliases: js.Array[String | Double] = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faGrinBeam", "definition")
+  @js.native
   val definition: IconDefinition = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faGrinBeam", "faGrinBeam")
+  @js.native
   val faGrinBeam: IconDefinition = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faGrinBeam", "height")
+  @js.native
   val height: Double = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faGrinBeam", "iconName")
+  @js.native
   val iconName: IconName = js.native
-  val ligatures: js.Array[String] = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faGrinBeam", "ligatures")
+  @js.native
+  val ligatures: js.Array[String | Double] = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faGrinBeam", "prefix")
+  @js.native
   val prefix: IconPrefix = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faGrinBeam", "svgPathData")
+  @js.native
   val svgPathData: String = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faGrinBeam", "unicode")
+  @js.native
   val unicode: String = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faGrinBeam", "width")
+  @js.native
   val width: Double = js.native
 }
-

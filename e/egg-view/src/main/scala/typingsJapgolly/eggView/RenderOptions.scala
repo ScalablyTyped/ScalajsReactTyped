@@ -1,33 +1,47 @@
 package typingsJapgolly.eggView
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject * / any */ trait RenderOptions extends js.Object {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject * / any */ trait RenderOptions extends StObject {
+  
   var locals: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject */ Any
   ] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var root: js.UndefOr[String] = js.undefined
+  
   var viewEngine: js.UndefOr[String] = js.undefined
 }
-
 object RenderOptions {
-  @scala.inline
-  def apply(
-    locals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject */ js.Any = null,
-    name: String = null,
-    root: String = null,
-    viewEngine: String = null
-  ): RenderOptions = {
+  
+  inline def apply(): RenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (locals != null) __obj.updateDynamic("locals")(locals.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (viewEngine != null) __obj.updateDynamic("viewEngine")(viewEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]
   }
+  
+  extension [Self <: RenderOptions](x: Self) {
+    
+    inline def setLocals(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject */ Any
+    ): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+    
+    inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    
+    inline def setViewEngine(value: String): Self = StObject.set(x, "viewEngine", value.asInstanceOf[js.Any])
+    
+    inline def setViewEngineUndefined: Self = StObject.set(x, "viewEngine", js.undefined)
+  }
 }
-

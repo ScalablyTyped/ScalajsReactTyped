@@ -1,25 +1,21 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.algorithmic
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.multipart
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ColorRamp
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
+  
   /**
     * A string value representing the color ramp type.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ColorRamp.html#type)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ColorRamp.html#type)
     */
   val `type`: algorithmic | multipart = js.native
 }
-
-@JSGlobal("__esri.ColorRamp")
-@js.native
-object ColorRamp extends TopLevel[ColorRampConstructor]
-

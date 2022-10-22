@@ -1,61 +1,62 @@
 package typingsJapgolly.gestalt.components
 
-import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.gestalt.gestaltStrings.MasonryDefaultLayout
-import typingsJapgolly.gestalt.gestaltStrings.MasonryUniformRowLayout
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.gestalt.anon.Data
+import typingsJapgolly.gestalt.anon.From
+import typingsJapgolly.gestalt.gestaltBooleans.`false`
+import typingsJapgolly.gestalt.gestaltStrings.basic
+import typingsJapgolly.gestalt.gestaltStrings.basicCentered
+import typingsJapgolly.gestalt.gestaltStrings.flexible
+import typingsJapgolly.gestalt.gestaltStrings.serverRenderedFlexible
+import typingsJapgolly.gestalt.gestaltStrings.uniformRow
 import typingsJapgolly.gestalt.mod.MasonryProps
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Masonry {
-  def apply(
-    comp: ComponentType[js.Object],
-    items: js.Array[_],
-    columnWidth: Int | Double = null,
-    flexible: js.UndefOr[Boolean] = js.undefined,
-    gutterWidth: Int | Double = null,
-    layout: MasonryDefaultLayout | MasonryUniformRowLayout = null,
-    loadItems: js.UndefOr[Callback] = js.undefined,
-    measurementStore: js.Any = null,
-    minCols: Int | Double = null,
-    scrollContainer: js.UndefOr[CallbackTo[HTMLElement]] = js.undefined,
-    virtualize: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[MasonryProps, typingsJapgolly.gestalt.mod.Masonry, Unit, MasonryProps] = {
-    val __obj = js.Dynamic.literal(comp = comp.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
   
-      if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(flexible)) __obj.updateDynamic("flexible")(flexible.asInstanceOf[js.Any])
-    if (gutterWidth != null) __obj.updateDynamic("gutterWidth")(gutterWidth.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    loadItems.foreach(p => __obj.updateDynamic("loadItems")(p.toJsFn))
-    if (measurementStore != null) __obj.updateDynamic("measurementStore")(measurementStore.asInstanceOf[js.Any])
-    if (minCols != null) __obj.updateDynamic("minCols")(minCols.asInstanceOf[js.Any])
-    scrollContainer.foreach(p => __obj.updateDynamic("scrollContainer")(p.toJsFn))
-    if (!js.isUndefined(virtualize)) __obj.updateDynamic("virtualize")(virtualize.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.gestalt.mod.MasonryProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.gestalt.mod.Masonry](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.gestalt.mod.MasonryProps])(children: _*)
+  inline def apply(Item: ComponentType[Data[Any]], items: js.Array[Any]): Builder = {
+    val __props = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[MasonryProps[Any]]))
   }
+  
   @JSImport("gestalt", "Masonry")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def columnWidth(value: Double): this.type = set("columnWidth", value.asInstanceOf[js.Any])
+    
+    inline def flexible(value: Boolean): this.type = set("flexible", value.asInstanceOf[js.Any])
+    
+    inline def gutterWidth(value: Double): this.type = set("gutterWidth", value.asInstanceOf[js.Any])
+    
+    inline def layout(value: basic | basicCentered | flexible | serverRenderedFlexible | uniformRow): this.type = set("layout", value.asInstanceOf[js.Any])
+    
+    inline def loadItems(value: `false` | (js.Function1[/* _arg */ js.UndefOr[From], js.UndefOr[Boolean | js.Object]])): this.type = set("loadItems", value.asInstanceOf[js.Any])
+    
+    inline def loadItemsFunction1(value: /* _arg */ js.UndefOr[From] => js.UndefOr[Boolean | js.Object]): this.type = set("loadItems", js.Any.fromFunction1(value))
+    
+    inline def measurementStore(value: Any): this.type = set("measurementStore", value.asInstanceOf[js.Any])
+    
+    inline def minCols(value: Double): this.type = set("minCols", value.asInstanceOf[js.Any])
+    
+    inline def scrollContainer(value: CallbackTo[HTMLElement]): this.type = set("scrollContainer", value.toJsFn)
+    
+    inline def virtualBoundsBottom(value: Double): this.type = set("virtualBoundsBottom", value.asInstanceOf[js.Any])
+    
+    inline def virtualBoundsTop(value: Double): this.type = set("virtualBoundsTop", value.asInstanceOf[js.Any])
+    
+    inline def virtualize(value: Boolean): this.type = set("virtualize", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: MasonryProps[Any]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

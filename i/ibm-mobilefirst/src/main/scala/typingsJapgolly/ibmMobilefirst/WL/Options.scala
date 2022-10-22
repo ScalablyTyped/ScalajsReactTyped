@@ -1,28 +1,37 @@
 package typingsJapgolly.ibmMobilefirst.WL
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Options extends js.Object {
-  var invocationContext: js.UndefOr[js.Any] = js.undefined
+trait Options extends StObject {
+  
+  var invocationContext: js.UndefOr[Any] = js.undefined
+  
   var onFailure: js.UndefOr[js.Function1[/* response */ IResponse, Unit]] = js.undefined
+  
   var onSuccess: js.UndefOr[js.Function1[/* response */ IResponse, Unit]] = js.undefined
 }
-
 object Options {
-  @scala.inline
-  def apply(
-    invocationContext: js.Any = null,
-    onFailure: /* response */ IResponse => Callback = null,
-    onSuccess: /* response */ IResponse => Callback = null
-  ): Options = {
+  
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
-    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1((t0: /* response */ typingsJapgolly.ibmMobilefirst.WL.IResponse) => onFailure(t0).runNow()))
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1((t0: /* response */ typingsJapgolly.ibmMobilefirst.WL.IResponse) => onSuccess(t0).runNow()))
     __obj.asInstanceOf[Options]
   }
+  
+  extension [Self <: Options](x: Self) {
+    
+    inline def setInvocationContext(value: Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+    
+    inline def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
+    
+    inline def setOnFailure(value: /* response */ IResponse => Callback): Self = StObject.set(x, "onFailure", js.Any.fromFunction1((t0: /* response */ IResponse) => value(t0).runNow()))
+    
+    inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+    
+    inline def setOnSuccess(value: /* response */ IResponse => Callback): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1((t0: /* response */ IResponse) => value(t0).runNow()))
+    
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+  }
 }
-

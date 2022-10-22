@@ -1,41 +1,55 @@
 package typingsJapgolly.reactNativeFbsdk.mod
 
 import typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.photo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SharePhotoContent extends ShareContent {
+trait SharePhotoContent
+  extends StObject
+     with ShareContent {
+  
   /**
     * Common parameters for share content;
     */
   var commonParameters: js.UndefOr[ShareContentCommonParameters] = js.undefined
+  
   /**
     * The type of content to be shared is photo.
     */
   var contentType: photo
+  
   /**
     * URL for the content being shared.
     */
   var contentUrl: js.UndefOr[String] = js.undefined
+  
   /**
     * Photos to be shared.
     */
   var photos: js.Array[SharePhoto]
 }
-
 object SharePhotoContent {
-  @scala.inline
-  def apply(
-    contentType: photo,
-    photos: js.Array[SharePhoto],
-    commonParameters: ShareContentCommonParameters = null,
-    contentUrl: String = null
-  ): SharePhotoContent = {
-    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any])
-    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters.asInstanceOf[js.Any])
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
+  
+  inline def apply(photos: js.Array[SharePhoto]): SharePhotoContent = {
+    val __obj = js.Dynamic.literal(contentType = "photo", photos = photos.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharePhotoContent]
   }
+  
+  extension [Self <: SharePhotoContent](x: Self) {
+    
+    inline def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
+    
+    inline def setCommonParametersUndefined: Self = StObject.set(x, "commonParameters", js.undefined)
+    
+    inline def setContentType(value: photo): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+    
+    inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+    
+    inline def setPhotos(value: js.Array[SharePhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+    
+    inline def setPhotosVarargs(value: SharePhoto*): Self = StObject.set(x, "photos", js.Array(value*))
+  }
 }
-

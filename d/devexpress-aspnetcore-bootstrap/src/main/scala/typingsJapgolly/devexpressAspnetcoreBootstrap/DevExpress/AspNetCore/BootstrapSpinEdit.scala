@@ -7,19 +7,27 @@ import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstr
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.numberChanged
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.textChanged
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.userInput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapSpinEdit")
 @js.native
-class BootstrapSpinEdit () extends BootstrapClientEdit {
+trait BootstrapSpinEdit
+  extends StObject
+     with BootstrapClientEdit {
+  
   def getButtonVisible(number: Double): Boolean = js.native
+  
   def getCaretPosition(): Double = js.native
+  
   def getMaxValue(): Double = js.native
+  
   def getMinValue(): Double = js.native
+  
   def getNumber(): Double = js.native
+  
   def getText(): String = js.native
+  
   @JSName("off")
   def off_buttonClick(eventName: buttonClick): this.type = js.native
   @JSName("off")
@@ -69,6 +77,7 @@ class BootstrapSpinEdit () extends BootstrapClientEdit {
     eventName: userInput,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_buttonClick(
     eventName: buttonClick,
@@ -104,6 +113,7 @@ class BootstrapSpinEdit () extends BootstrapClientEdit {
     eventName: userInput,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_buttonClick(
     eventName: buttonClick,
@@ -139,14 +149,22 @@ class BootstrapSpinEdit () extends BootstrapClientEdit {
     eventName: userInput,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   def selectAll(): Unit = js.native
+  
   def setButtonVisible(number: Double, value: Boolean): Unit = js.native
+  
   def setCaretPosition(position: Double): Unit = js.native
+  
   def setMaxValue(value: Double): Unit = js.native
+  
   def setMinValue(value: Double): Unit = js.native
+  
   def setNumber(number: Double): Unit = js.native
+  
   def setSelection(startPos: Double, endPos: Double, scrollToSelection: Boolean): Unit = js.native
+  
   def setText(text: String): Unit = js.native
+  
   def setValue(number: Double): Unit = js.native
 }
-

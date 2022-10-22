@@ -1,7 +1,7 @@
 
 # Scala.js typings for md5
 
-Typings are for version v2.1.0
+Typings are for version 2.3
 
 ## Library description:
 js function for hashing messages with MD5
@@ -10,10 +10,10 @@ js function for hashing messages with MD5
 | ------------------ | :-------------: |
 | Full name          | md5 |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 2237 |
-| # downloads        | 77665950 |
-| # stars            | 69 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9712422E7 |
+| # stars            | 833.0 |
 
 ## Links
 - [Homepage](https://github.com/pvorb/node-md5#readme)

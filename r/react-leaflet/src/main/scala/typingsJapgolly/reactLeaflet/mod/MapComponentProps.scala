@@ -1,21 +1,30 @@
 package typingsJapgolly.reactLeaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapComponentProps extends js.Object {
+trait MapComponentProps extends StObject {
+  
   var leaflet: js.UndefOr[LeafletContext] = js.undefined
+  
   var pane: js.UndefOr[String] = js.undefined
 }
-
 object MapComponentProps {
-  @scala.inline
-  def apply(leaflet: LeafletContext = null, pane: String = null): MapComponentProps = {
+  
+  inline def apply(): MapComponentProps = {
     val __obj = js.Dynamic.literal()
-    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapComponentProps]
   }
+  
+  extension [Self <: MapComponentProps](x: Self) {
+    
+    inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
+    
+    inline def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
+    
+    inline def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+  }
 }
-

@@ -1,10 +1,16 @@
-package typingsJapgolly.prismReactRenderer
+package typingsJapgolly.prismReactRenderer.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.prismReactRenderer.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type PrismGrammar = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type StyleObj = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Null]
-}
+
+inline def Prism: PrismLib = ^.asInstanceOf[js.Dynamic].selectDynamic("Prism").asInstanceOf[PrismLib]
+
+inline def defaultProps: DefaultProps_ = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultProps").asInstanceOf[DefaultProps_]
+
+type PrismGrammar = StringDictionary[Any]
+
+type StyleObj = StringDictionary[String | Double | Null]

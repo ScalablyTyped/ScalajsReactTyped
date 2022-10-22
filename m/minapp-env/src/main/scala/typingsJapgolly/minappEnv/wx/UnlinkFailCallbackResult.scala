@@ -1,10 +1,11 @@
 package typingsJapgolly.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UnlinkFailCallbackResult extends js.Object {
+trait UnlinkFailCallbackResult extends StObject {
+  
   /** 错误信息
     *
     * 可选值：
@@ -13,13 +14,15 @@ trait UnlinkFailCallbackResult extends js.Object {
     * - 'fail operation not permitted, unlink ${filePath}': 传入的 filePath 是一个目录; */
   var errMsg: String
 }
-
 object UnlinkFailCallbackResult {
-  @scala.inline
-  def apply(errMsg: String): UnlinkFailCallbackResult = {
-    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
   
+  inline def apply(errMsg: String): UnlinkFailCallbackResult = {
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnlinkFailCallbackResult]
   }
+  
+  extension [Self <: UnlinkFailCallbackResult](x: Self) {
+    
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+  }
 }
-

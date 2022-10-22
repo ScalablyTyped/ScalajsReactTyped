@@ -1,15 +1,17 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IWebDriverOptionsCookie extends js.Object {
+trait IWebDriverOptionsCookie extends StObject {
+  
   /**
     * The domain the cookie is visible to. Defaults to the current browsing
     * context's document's URL when adding a cookie.
     */
   var domain: js.UndefOr[String] = js.undefined
+  
   /**
     * When the cookie expires.
     *
@@ -23,48 +25,65 @@ trait IWebDriverOptionsCookie extends js.Object {
     * @type {(!Date|number|undefined)}
     */
   var expiry: js.UndefOr[Double | js.Date] = js.undefined
+  
   /**
     * Whether the cookie is an HTTP only cookie. Defaults to false when adding a
     * new cookie.
     */
   var httpOnly: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The name of the cookie.
     */
   var name: String
+  
   /**
     * The cookie path. Defaults to "/" when adding a cookie.
     */
   var path: js.UndefOr[String] = js.undefined
+  
   /**
     * Whether the cookie is a secure cookie. Defaults to false when adding a new
     * cookie.
     */
   var secure: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The cookie value.
     */
   var value: String
 }
-
 object IWebDriverOptionsCookie {
-  @scala.inline
-  def apply(
-    name: String,
-    value: String,
-    domain: String = null,
-    expiry: Double | js.Date = null,
-    httpOnly: js.UndefOr[Boolean] = js.undefined,
-    path: String = null,
-    secure: js.UndefOr[Boolean] = js.undefined
-  ): IWebDriverOptionsCookie = {
+  
+  inline def apply(name: String, value: String): IWebDriverOptionsCookie = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (expiry != null) __obj.updateDynamic("expiry")(expiry.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebDriverOptionsCookie]
   }
+  
+  extension [Self <: IWebDriverOptionsCookie](x: Self) {
+    
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    
+    inline def setExpiry(value: Double | js.Date): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
+    
+    inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
+    
+    inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+    
+    inline def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+    
+    inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

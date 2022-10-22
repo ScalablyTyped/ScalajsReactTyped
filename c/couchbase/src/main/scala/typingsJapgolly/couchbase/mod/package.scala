@@ -1,13 +1,12 @@
-package typingsJapgolly.couchbase
+package typingsJapgolly.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Bucket = typingsJapgolly.couchbase.mod.Bucket_
-  type PrependOptions = typingsJapgolly.couchbase.mod.AppendOptions
-  type RemoveOptions = typingsJapgolly.couchbase.mod.AppendOptions
-  type SearchQuery = typingsJapgolly.couchbase.mod.SearchQuery_
-  type UpsertOptions = typingsJapgolly.couchbase.mod.ReplaceOptions
-}
+
+type PrependOptions = AppendOptions
+
+type RemoveOptions = AppendOptions
+
+type UpsertOptions = ReplaceOptions

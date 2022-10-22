@@ -1,183 +1,409 @@
 package typingsJapgolly.googlepay
 
-import typingsJapgolly.googlepay.google.payments.api.AllowedAuthMethod
-import typingsJapgolly.googlepay.google.payments.api.AllowedCardNetwork
 import typingsJapgolly.googlepay.google.payments.api.BillingAddressFormat
 import typingsJapgolly.googlepay.google.payments.api.ButtonColor
+import typingsJapgolly.googlepay.google.payments.api.ButtonSizeMode
 import typingsJapgolly.googlepay.google.payments.api.ButtonType
+import typingsJapgolly.googlepay.google.payments.api.CallbackIntent
+import typingsJapgolly.googlepay.google.payments.api.CallbackTrigger
+import typingsJapgolly.googlepay.google.payments.api.CardAuthMethod
+import typingsJapgolly.googlepay.google.payments.api.CardNetwork
 import typingsJapgolly.googlepay.google.payments.api.CheckoutOption
 import typingsJapgolly.googlepay.google.payments.api.DisplayItemStatus
 import typingsJapgolly.googlepay.google.payments.api.DisplayItemType
-import typingsJapgolly.googlepay.google.payments.api.EnvironmentType
-import typingsJapgolly.googlepay.google.payments.api.ErrorStatusCode
-import typingsJapgolly.googlepay.google.payments.api.TokenizationType
+import typingsJapgolly.googlepay.google.payments.api.Environment
+import typingsJapgolly.googlepay.google.payments.api.ErrorReason
+import typingsJapgolly.googlepay.google.payments.api.PaymentMethodTokenizationType
+import typingsJapgolly.googlepay.google.payments.api.PaymentMethodType
+import typingsJapgolly.googlepay.google.payments.api.PaymentsErrorStatusCode
 import typingsJapgolly.googlepay.google.payments.api.TotalPriceStatus
+import typingsJapgolly.googlepay.google.payments.api.TransactionState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googlepayStrings {
-  @js.native
-  sealed trait AMEX extends AllowedCardNetwork
   
   @js.native
-  sealed trait BUYER_ACCOUNT_ERROR extends ErrorStatusCode
+  sealed trait AMEX
+    extends StObject
+       with CardNetwork
+  inline def AMEX: AMEX = "AMEX".asInstanceOf[AMEX]
   
   @js.native
-  sealed trait CANCELED extends ErrorStatusCode
+  sealed trait BUYER_ACCOUNT_ERROR
+    extends StObject
+       with PaymentsErrorStatusCode
+  inline def BUYER_ACCOUNT_ERROR: BUYER_ACCOUNT_ERROR = "BUYER_ACCOUNT_ERROR".asInstanceOf[BUYER_ACCOUNT_ERROR]
   
   @js.native
-  sealed trait CARD extends js.Object
+  sealed trait CARD
+    extends StObject
+       with PaymentMethodType
+  inline def CARD: CARD = "CARD".asInstanceOf[CARD]
   
   @js.native
-  sealed trait COMPLETE_IMMEDIATE_PURCHASE extends CheckoutOption
+  sealed trait COMPLETE_IMMEDIATE_PURCHASE
+    extends StObject
+       with CheckoutOption
+  inline def COMPLETE_IMMEDIATE_PURCHASE: COMPLETE_IMMEDIATE_PURCHASE = "COMPLETE_IMMEDIATE_PURCHASE".asInstanceOf[COMPLETE_IMMEDIATE_PURCHASE]
   
   @js.native
-  sealed trait CRYPTOGRAM_3DS extends AllowedAuthMethod
+  sealed trait CRYPTOGRAM_3DS
+    extends StObject
+       with CardAuthMethod
+  inline def CRYPTOGRAM_3DS: CRYPTOGRAM_3DS = "CRYPTOGRAM_3DS".asInstanceOf[CRYPTOGRAM_3DS]
   
   @js.native
-  sealed trait DEFAULT extends CheckoutOption
+  sealed trait DEFAULT
+    extends StObject
+       with CheckoutOption
+  inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   
   @js.native
-  sealed trait DEVELOPER_ERROR extends ErrorStatusCode
+  sealed trait DEVELOPER_ERROR
+    extends StObject
+       with PaymentsErrorStatusCode
+  inline def DEVELOPER_ERROR: DEVELOPER_ERROR = "DEVELOPER_ERROR".asInstanceOf[DEVELOPER_ERROR]
   
   @js.native
-  sealed trait DIRECT extends TokenizationType
+  sealed trait DIRECT
+    extends StObject
+       with PaymentMethodTokenizationType
+  inline def DIRECT: DIRECT = "DIRECT".asInstanceOf[DIRECT]
   
   @js.native
-  sealed trait DISCOVER extends AllowedCardNetwork
+  sealed trait DISCOUNT
+    extends StObject
+       with DisplayItemType
+  inline def DISCOUNT: DISCOUNT = "DISCOUNT".asInstanceOf[DISCOUNT]
   
   @js.native
-  sealed trait ESTIMATED extends TotalPriceStatus
+  sealed trait DISCOVER
+    extends StObject
+       with CardNetwork
+  inline def DISCOVER: DISCOVER = "DISCOVER".asInstanceOf[DISCOVER]
+  
+  @js.native
+  sealed trait ELECTRON
+    extends StObject
+       with CardNetwork
+  inline def ELECTRON: ELECTRON = "ELECTRON".asInstanceOf[ELECTRON]
+  
+  @js.native
+  sealed trait ELO
+    extends StObject
+       with CardNetwork
+  inline def ELO: ELO = "ELO".asInstanceOf[ELO]
+  
+  @js.native
+  sealed trait ELO_DEBIT
+    extends StObject
+       with CardNetwork
+  inline def ELO_DEBIT: ELO_DEBIT = "ELO_DEBIT".asInstanceOf[ELO_DEBIT]
+  
+  @js.native
+  sealed trait ERROR
+    extends StObject
+       with TransactionState
+  inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
+  
+  @js.native
+  sealed trait ESTIMATED
+    extends StObject
+       with TotalPriceStatus
+  inline def ESTIMATED: ESTIMATED = "ESTIMATED".asInstanceOf[ESTIMATED]
   
   @js.native
   sealed trait FINAL
-    extends DisplayItemStatus
+    extends StObject
+       with DisplayItemStatus
        with TotalPriceStatus
+  inline def FINAL: FINAL = "FINAL".asInstanceOf[FINAL]
   
   @js.native
-  sealed trait FULL extends BillingAddressFormat
+  sealed trait FULL
+    extends StObject
+       with BillingAddressFormat
+  inline def FULL: FULL = "FULL".asInstanceOf[FULL]
   
   @js.native
-  sealed trait INTERAC extends AllowedCardNetwork
+  sealed trait INITIALIZE
+    extends StObject
+       with CallbackTrigger
+  inline def INITIALIZE: INITIALIZE = "INITIALIZE".asInstanceOf[INITIALIZE]
   
   @js.native
-  sealed trait INTERNAL_ERROR extends ErrorStatusCode
+  sealed trait INTERAC
+    extends StObject
+       with CardNetwork
+  inline def INTERAC: INTERAC = "INTERAC".asInstanceOf[INTERAC]
   
   @js.native
-  sealed trait JCB extends AllowedCardNetwork
+  sealed trait INTERNAL_ERROR
+    extends StObject
+       with PaymentsErrorStatusCode
+  inline def INTERNAL_ERROR: INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[INTERNAL_ERROR]
   
   @js.native
-  sealed trait LINE_ITEM extends DisplayItemType
+  sealed trait JCB
+    extends StObject
+       with CardNetwork
+  inline def JCB: JCB = "JCB".asInstanceOf[JCB]
   
   @js.native
-  sealed trait MASTERCARD extends AllowedCardNetwork
+  sealed trait LINE_ITEM
+    extends StObject
+       with DisplayItemType
+  inline def LINE_ITEM: LINE_ITEM = "LINE_ITEM".asInstanceOf[LINE_ITEM]
   
   @js.native
-  sealed trait MIN extends BillingAddressFormat
+  sealed trait MAESTRO
+    extends StObject
+       with CardNetwork
+  inline def MAESTRO: MAESTRO = "MAESTRO".asInstanceOf[MAESTRO]
   
   @js.native
-  sealed trait NOT_CURRENTLY_KNOWN extends TotalPriceStatus
+  sealed trait MASTERCARD
+    extends StObject
+       with CardNetwork
+  inline def MASTERCARD: MASTERCARD = "MASTERCARD".asInstanceOf[MASTERCARD]
   
   @js.native
-  sealed trait PAN_ONLY extends AllowedAuthMethod
+  sealed trait MERCHANT_ACCOUNT_ERROR
+    extends StObject
+       with PaymentsErrorStatusCode
+  inline def MERCHANT_ACCOUNT_ERROR: MERCHANT_ACCOUNT_ERROR = "MERCHANT_ACCOUNT_ERROR".asInstanceOf[MERCHANT_ACCOUNT_ERROR]
   
   @js.native
-  sealed trait PAYMENT_GATEWAY extends TokenizationType
+  sealed trait MIN
+    extends StObject
+       with BillingAddressFormat
+  inline def MIN: MIN = "MIN".asInstanceOf[MIN]
   
   @js.native
-  sealed trait PENDING extends DisplayItemStatus
+  sealed trait NOT_CURRENTLY_KNOWN
+    extends StObject
+       with TotalPriceStatus
+  inline def NOT_CURRENTLY_KNOWN: NOT_CURRENTLY_KNOWN = "NOT_CURRENTLY_KNOWN".asInstanceOf[NOT_CURRENTLY_KNOWN]
   
   @js.native
-  sealed trait PRODUCTION extends EnvironmentType
+  sealed trait OFFER
+    extends StObject
+       with CallbackIntent
+       with CallbackTrigger
+  inline def OFFER: OFFER = "OFFER".asInstanceOf[OFFER]
   
   @js.native
-  sealed trait SUBTOTAL extends DisplayItemType
+  sealed trait OFFER_INVALID
+    extends StObject
+       with ErrorReason
+  inline def OFFER_INVALID: OFFER_INVALID = "OFFER_INVALID".asInstanceOf[OFFER_INVALID]
   
   @js.native
-  sealed trait TEST extends EnvironmentType
+  sealed trait OTHER_ERROR
+    extends StObject
+       with ErrorReason
+  inline def OTHER_ERROR: OTHER_ERROR = "OTHER_ERROR".asInstanceOf[OTHER_ERROR]
   
   @js.native
-  sealed trait VISA extends AllowedCardNetwork
+  sealed trait PAN_ONLY
+    extends StObject
+       with CardAuthMethod
+  inline def PAN_ONLY: PAN_ONLY = "PAN_ONLY".asInstanceOf[PAN_ONLY]
   
   @js.native
-  sealed trait black extends ButtonColor
+  sealed trait PAYMENT_AUTHORIZATION
+    extends StObject
+       with CallbackIntent
+  inline def PAYMENT_AUTHORIZATION: PAYMENT_AUTHORIZATION = "PAYMENT_AUTHORIZATION".asInstanceOf[PAYMENT_AUTHORIZATION]
   
   @js.native
-  sealed trait default_ extends ButtonColor
+  sealed trait PAYMENT_DATA_INVALID
+    extends StObject
+       with ErrorReason
+  inline def PAYMENT_DATA_INVALID: PAYMENT_DATA_INVALID = "PAYMENT_DATA_INVALID".asInstanceOf[PAYMENT_DATA_INVALID]
   
   @js.native
-  sealed trait long extends ButtonType
+  sealed trait PAYMENT_GATEWAY
+    extends StObject
+       with PaymentMethodTokenizationType
+  inline def PAYMENT_GATEWAY: PAYMENT_GATEWAY = "PAYMENT_GATEWAY".asInstanceOf[PAYMENT_GATEWAY]
   
   @js.native
-  sealed trait short extends ButtonType
+  sealed trait PAYMENT_METHOD
+    extends StObject
+       with CallbackIntent
+  inline def PAYMENT_METHOD: PAYMENT_METHOD = "PAYMENT_METHOD".asInstanceOf[PAYMENT_METHOD]
   
   @js.native
-  sealed trait white extends ButtonColor
+  sealed trait PAYPAL
+    extends StObject
+       with PaymentMethodType
+  inline def PAYPAL: PAYPAL = "PAYPAL".asInstanceOf[PAYPAL]
   
-  @scala.inline
-  def AMEX: AMEX = "AMEX".asInstanceOf[AMEX]
-  @scala.inline
-  def BUYER_ACCOUNT_ERROR: BUYER_ACCOUNT_ERROR = "BUYER_ACCOUNT_ERROR".asInstanceOf[BUYER_ACCOUNT_ERROR]
-  @scala.inline
-  def CANCELED: CANCELED = "CANCELED".asInstanceOf[CANCELED]
-  @scala.inline
-  def CARD: CARD = "CARD".asInstanceOf[CARD]
-  @scala.inline
-  def COMPLETE_IMMEDIATE_PURCHASE: COMPLETE_IMMEDIATE_PURCHASE = "COMPLETE_IMMEDIATE_PURCHASE".asInstanceOf[COMPLETE_IMMEDIATE_PURCHASE]
-  @scala.inline
-  def CRYPTOGRAM_3DS: CRYPTOGRAM_3DS = "CRYPTOGRAM_3DS".asInstanceOf[CRYPTOGRAM_3DS]
-  @scala.inline
-  def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
-  @scala.inline
-  def DEVELOPER_ERROR: DEVELOPER_ERROR = "DEVELOPER_ERROR".asInstanceOf[DEVELOPER_ERROR]
-  @scala.inline
-  def DIRECT: DIRECT = "DIRECT".asInstanceOf[DIRECT]
-  @scala.inline
-  def DISCOVER: DISCOVER = "DISCOVER".asInstanceOf[DISCOVER]
-  @scala.inline
-  def ESTIMATED: ESTIMATED = "ESTIMATED".asInstanceOf[ESTIMATED]
-  @scala.inline
-  def FINAL: FINAL = "FINAL".asInstanceOf[FINAL]
-  @scala.inline
-  def FULL: FULL = "FULL".asInstanceOf[FULL]
-  @scala.inline
-  def INTERAC: INTERAC = "INTERAC".asInstanceOf[INTERAC]
-  @scala.inline
-  def INTERNAL_ERROR: INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[INTERNAL_ERROR]
-  @scala.inline
-  def JCB: JCB = "JCB".asInstanceOf[JCB]
-  @scala.inline
-  def LINE_ITEM: LINE_ITEM = "LINE_ITEM".asInstanceOf[LINE_ITEM]
-  @scala.inline
-  def MASTERCARD: MASTERCARD = "MASTERCARD".asInstanceOf[MASTERCARD]
-  @scala.inline
-  def MIN: MIN = "MIN".asInstanceOf[MIN]
-  @scala.inline
-  def NOT_CURRENTLY_KNOWN: NOT_CURRENTLY_KNOWN = "NOT_CURRENTLY_KNOWN".asInstanceOf[NOT_CURRENTLY_KNOWN]
-  @scala.inline
-  def PAN_ONLY: PAN_ONLY = "PAN_ONLY".asInstanceOf[PAN_ONLY]
-  @scala.inline
-  def PAYMENT_GATEWAY: PAYMENT_GATEWAY = "PAYMENT_GATEWAY".asInstanceOf[PAYMENT_GATEWAY]
-  @scala.inline
-  def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
-  @scala.inline
-  def PRODUCTION: PRODUCTION = "PRODUCTION".asInstanceOf[PRODUCTION]
-  @scala.inline
-  def SUBTOTAL: SUBTOTAL = "SUBTOTAL".asInstanceOf[SUBTOTAL]
-  @scala.inline
-  def TEST: TEST = "TEST".asInstanceOf[TEST]
-  @scala.inline
-  def VISA: VISA = "VISA".asInstanceOf[VISA]
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
-  @scala.inline
-  def default_ : default_ = "default".asInstanceOf[default_]
-  @scala.inline
-  def long: long = "long".asInstanceOf[long]
-  @scala.inline
-  def short: short = "short".asInstanceOf[short]
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
+  @js.native
+  sealed trait PENDING
+    extends StObject
+       with DisplayItemStatus
+  inline def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
+  
+  @js.native
+  sealed trait PRODUCTION
+    extends StObject
+       with Environment
+  inline def PRODUCTION: PRODUCTION = "PRODUCTION".asInstanceOf[PRODUCTION]
+  
+  @js.native
+  sealed trait SHIPPING_ADDRESS
+    extends StObject
+       with CallbackIntent
+       with CallbackTrigger
+  inline def SHIPPING_ADDRESS: SHIPPING_ADDRESS = "SHIPPING_ADDRESS".asInstanceOf[SHIPPING_ADDRESS]
+  
+  @js.native
+  sealed trait SHIPPING_ADDRESS_INVALID
+    extends StObject
+       with ErrorReason
+  inline def SHIPPING_ADDRESS_INVALID: SHIPPING_ADDRESS_INVALID = "SHIPPING_ADDRESS_INVALID".asInstanceOf[SHIPPING_ADDRESS_INVALID]
+  
+  @js.native
+  sealed trait SHIPPING_ADDRESS_UNSERVICEABLE
+    extends StObject
+       with ErrorReason
+  inline def SHIPPING_ADDRESS_UNSERVICEABLE: SHIPPING_ADDRESS_UNSERVICEABLE = "SHIPPING_ADDRESS_UNSERVICEABLE".asInstanceOf[SHIPPING_ADDRESS_UNSERVICEABLE]
+  
+  @js.native
+  sealed trait SHIPPING_OPTION
+    extends StObject
+       with CallbackIntent
+       with CallbackTrigger
+       with DisplayItemType
+  inline def SHIPPING_OPTION: SHIPPING_OPTION = "SHIPPING_OPTION".asInstanceOf[SHIPPING_OPTION]
+  
+  @js.native
+  sealed trait SHIPPING_OPTION_INVALID
+    extends StObject
+       with ErrorReason
+  inline def SHIPPING_OPTION_INVALID: SHIPPING_OPTION_INVALID = "SHIPPING_OPTION_INVALID".asInstanceOf[SHIPPING_OPTION_INVALID]
+  
+  @js.native
+  sealed trait SUBTOTAL
+    extends StObject
+       with DisplayItemType
+  inline def SUBTOTAL: SUBTOTAL = "SUBTOTAL".asInstanceOf[SUBTOTAL]
+  
+  @js.native
+  sealed trait SUCCESS
+    extends StObject
+       with TransactionState
+  inline def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
+  
+  @js.native
+  sealed trait TAX
+    extends StObject
+       with DisplayItemType
+  inline def TAX: TAX = "TAX".asInstanceOf[TAX]
+  
+  @js.native
+  sealed trait TEST
+    extends StObject
+       with Environment
+  inline def TEST: TEST = "TEST".asInstanceOf[TEST]
+  
+  @js.native
+  sealed trait VISA
+    extends StObject
+       with CardNetwork
+  inline def VISA: VISA = "VISA".asInstanceOf[VISA]
+  
+  @js.native
+  sealed trait black
+    extends StObject
+       with ButtonColor
+  inline def black: black = "black".asInstanceOf[black]
+  
+  @js.native
+  sealed trait book
+    extends StObject
+       with ButtonType
+  inline def book: book = "book".asInstanceOf[book]
+  
+  @js.native
+  sealed trait buy
+    extends StObject
+       with ButtonType
+  inline def buy: buy = "buy".asInstanceOf[buy]
+  
+  @js.native
+  sealed trait checkout
+    extends StObject
+       with ButtonType
+  inline def checkout: checkout = "checkout".asInstanceOf[checkout]
+  
+  @js.native
+  sealed trait default_
+    extends StObject
+       with ButtonColor
+  inline def default_ : default_ = "default".asInstanceOf[default_]
+  
+  @js.native
+  sealed trait donate
+    extends StObject
+       with ButtonType
+  inline def donate: donate = "donate".asInstanceOf[donate]
+  
+  @js.native
+  sealed trait fill
+    extends StObject
+       with ButtonSizeMode
+  inline def fill: fill = "fill".asInstanceOf[fill]
+  
+  @js.native
+  sealed trait long
+    extends StObject
+       with ButtonType
+  inline def long: long = "long".asInstanceOf[long]
+  
+  @js.native
+  sealed trait order
+    extends StObject
+       with ButtonType
+  inline def order: order = "order".asInstanceOf[order]
+  
+  @js.native
+  sealed trait pay
+    extends StObject
+       with ButtonType
+  inline def pay: pay = "pay".asInstanceOf[pay]
+  
+  @js.native
+  sealed trait plain
+    extends StObject
+       with ButtonType
+  inline def plain: plain = "plain".asInstanceOf[plain]
+  
+  @js.native
+  sealed trait short
+    extends StObject
+       with ButtonType
+  inline def short: short = "short".asInstanceOf[short]
+  
+  @js.native
+  sealed trait static
+    extends StObject
+       with ButtonSizeMode
+  inline def static: static = "static".asInstanceOf[static]
+  
+  @js.native
+  sealed trait subscribe
+    extends StObject
+       with ButtonType
+  inline def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
+  
+  @js.native
+  sealed trait white
+    extends StObject
+       with ButtonColor
+  inline def white: white = "white".asInstanceOf[white]
 }
-

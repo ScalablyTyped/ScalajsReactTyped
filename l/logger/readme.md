@@ -11,9 +11,9 @@ A simple logging library that combines the simple APIs of Ruby's logger.rb and b
 | Full name          | logger |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 41 |
-| # downloads        | 221179 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 33213.333333333336 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/logger)

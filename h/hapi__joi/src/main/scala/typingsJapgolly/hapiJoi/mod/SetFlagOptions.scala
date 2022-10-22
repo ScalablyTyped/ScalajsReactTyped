@@ -1,20 +1,24 @@
 package typingsJapgolly.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SetFlagOptions extends js.Object {
+trait SetFlagOptions extends StObject {
+  
   @JSName("clone")
   var clone_FSetFlagOptions: Boolean
 }
-
 object SetFlagOptions {
-  @scala.inline
-  def apply(clone: Boolean): SetFlagOptions = {
-    val __obj = js.Dynamic.literal(clone = clone.asInstanceOf[js.Any])
   
+  inline def apply(clone_ : Boolean): SetFlagOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clone")(clone_.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetFlagOptions]
   }
+  
+  extension [Self <: SetFlagOptions](x: Self) {
+    
+    inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+  }
 }
-

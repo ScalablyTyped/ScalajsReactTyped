@@ -1,16 +1,18 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageMediaInfoValueProperties extends js.Object {
+trait ImageMediaInfoValueProperties extends StObject {
+  
   /**
     * A string containing a URL to be launched in a browser when a user clicks the image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ImageMediaInfoValue.html#linkURL)
     */
   var linkURL: js.UndefOr[String] = js.undefined
+  
   /**
     * A string containing the URL to the image.
     *
@@ -18,14 +20,21 @@ trait ImageMediaInfoValueProperties extends js.Object {
     */
   var sourceURL: js.UndefOr[String] = js.undefined
 }
-
 object ImageMediaInfoValueProperties {
-  @scala.inline
-  def apply(linkURL: String = null, sourceURL: String = null): ImageMediaInfoValueProperties = {
+  
+  inline def apply(): ImageMediaInfoValueProperties = {
     val __obj = js.Dynamic.literal()
-    if (linkURL != null) __obj.updateDynamic("linkURL")(linkURL.asInstanceOf[js.Any])
-    if (sourceURL != null) __obj.updateDynamic("sourceURL")(sourceURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageMediaInfoValueProperties]
   }
+  
+  extension [Self <: ImageMediaInfoValueProperties](x: Self) {
+    
+    inline def setLinkURL(value: String): Self = StObject.set(x, "linkURL", value.asInstanceOf[js.Any])
+    
+    inline def setLinkURLUndefined: Self = StObject.set(x, "linkURL", js.undefined)
+    
+    inline def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
+    
+    inline def setSourceURLUndefined: Self = StObject.set(x, "sourceURL", js.undefined)
+  }
 }
-

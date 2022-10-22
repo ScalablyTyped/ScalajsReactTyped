@@ -1,25 +1,20 @@
 organization := "org.scalablytyped.japgolly"
 name := "rollup-plugin-delete"
-version := "1.2.0-00f27f"
-scalaVersion := "2.13.1"
+version := "2.0.0-db33d2"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "braces" % "3.0-dt-20190422Z-85b342",
-  "org.scalablytyped.japgolly" %%% "del" % "5.1.0-9176d6",
-  "org.scalablytyped.japgolly" %%% "estree" % "0.0-unknown-dt-20200225Z-8345da",
-  "org.scalablytyped.japgolly" %%% "fast-glob" % "2.2.7-43bb85",
-  "org.scalablytyped.japgolly" %%% "glob" % "7.1-dt-20200226Z-d017c7",
-  "org.scalablytyped.japgolly" %%% "globby" % "10.0.2-47df4c",
-  "org.scalablytyped.japgolly" %%% "micromatch" % "4.0-dt-20200226Z-151cf5",
-  "org.scalablytyped.japgolly" %%% "minimatch" % "3.0-dt-20200226Z-7b8745",
-  "org.scalablytyped.japgolly" %%% "mrmlnc__readdir-enhanced" % "2.2.1-fefe9e",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "rollup" % "1.31.1-2992d0",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "del" % "7.0.0-59f38e",
+  "org.scalablytyped.japgolly" %%% "fast-glob" % "3.2.12-562d0b",
+  "org.scalablytyped.japgolly" %%% "globby" % "13.1.2-0a6eca",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "nodelib__fs_dot_scandir" % "2.1.5-c85205",
+  "org.scalablytyped.japgolly" %%% "nodelib__fs_dot_stat" % "2.0.5-e29e02",
+  "org.scalablytyped.japgolly" %%% "nodelib__fs_dot_walk" % "1.2.8-894cf3",
+  "org.scalablytyped.japgolly" %%% "rollup" % "3.2.2-3943b7",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

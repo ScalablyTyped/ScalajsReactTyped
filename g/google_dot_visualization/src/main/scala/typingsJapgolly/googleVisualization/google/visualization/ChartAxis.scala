@@ -1,91 +1,166 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartAxis extends js.Object {
-  var allowContainerBoundaryTextCufoff: js.UndefOr[Boolean] = js.undefined
+trait ChartAxis extends StObject {
+  
+  var allowContainerBoundaryTextCutoff: js.UndefOr[Boolean] = js.undefined
+  
   var baseline: js.UndefOr[Double] = js.undefined
-   // This option is only supported for a continuous axis. https://developers.google.com/chart/interactive/docs/customizing_axes#Terminology
+  
+  // This option is only supported for a continuous axis. https://developers.google.com/chart/interactive/docs/customizing_axes#Terminology
   var baselineColor: js.UndefOr[String] = js.undefined
-   // google's documentation on this is wrong, specifies it as a number. The color of the baseline for the horizontal axis. Can be any HTML color string, for example: 'red' or '#00cc00'
+  
+  // google's documentation on this is wrong, specifies it as a number. The color of the baseline for the horizontal axis. Can be any HTML color string, for example: 'red' or '#00cc00'
   var direction: js.UndefOr[Double] = js.undefined
-   // The direction in which the values along the horizontal axis grow. Specify -1 to reverse the order of the values.
+  
+  // The direction in which the values along the horizontal axis grow. Specify -1 to reverse the order of the values.
   var format: js.UndefOr[String] = js.undefined
-   // icu pattern set http://icu-project.org/apiref/icu4c/classDecimalFormat.html#_details
+  
+  // icu pattern set http://icu-project.org/apiref/icu4c/classDecimalFormat.html#_details
   var gridlines: js.UndefOr[ChartGridlines] = js.undefined
+  
   var logScale: js.UndefOr[Boolean] = js.undefined
+  
   var maxAlternation: js.UndefOr[Double] = js.undefined
+  
   var maxTextLines: js.UndefOr[Double] = js.undefined
+  
   var maxValue: js.UndefOr[Double | js.Date | js.Array[Double]] = js.undefined
+  
   var minTextSpacing: js.UndefOr[Double] = js.undefined
+  
   var minValue: js.UndefOr[Double | js.Date | js.Array[Double]] = js.undefined
+  
   var minorGridlines: js.UndefOr[ChartGridlines] = js.undefined
+  
   var showTextEvery: js.UndefOr[Double] = js.undefined
+  
   var slantedText: js.UndefOr[Boolean] = js.undefined
+  
   var slantedTextAngle: js.UndefOr[Double] = js.undefined
+  
   var textPosition: js.UndefOr[String] = js.undefined
+  
   var textStyle: js.UndefOr[ChartTextStyle] = js.undefined
-  var ticks: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var ticks: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var titleTextStyle: js.UndefOr[ChartTextStyle] = js.undefined
+  
   var viewWindow: js.UndefOr[ChartViewWindow] = js.undefined
+  
   var viewWindowMode: js.UndefOr[String] = js.undefined
 }
-
 object ChartAxis {
-  @scala.inline
-  def apply(
-    allowContainerBoundaryTextCufoff: js.UndefOr[Boolean] = js.undefined,
-    baseline: Int | Double = null,
-    baselineColor: String = null,
-    direction: Int | Double = null,
-    format: String = null,
-    gridlines: ChartGridlines = null,
-    logScale: js.UndefOr[Boolean] = js.undefined,
-    maxAlternation: Int | Double = null,
-    maxTextLines: Int | Double = null,
-    maxValue: Double | js.Date | js.Array[Double] = null,
-    minTextSpacing: Int | Double = null,
-    minValue: Double | js.Date | js.Array[Double] = null,
-    minorGridlines: ChartGridlines = null,
-    showTextEvery: Int | Double = null,
-    slantedText: js.UndefOr[Boolean] = js.undefined,
-    slantedTextAngle: Int | Double = null,
-    textPosition: String = null,
-    textStyle: ChartTextStyle = null,
-    ticks: js.Array[_] = null,
-    title: String = null,
-    titleTextStyle: ChartTextStyle = null,
-    viewWindow: ChartViewWindow = null,
-    viewWindowMode: String = null
-  ): ChartAxis = {
+  
+  inline def apply(): ChartAxis = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowContainerBoundaryTextCufoff)) __obj.updateDynamic("allowContainerBoundaryTextCufoff")(allowContainerBoundaryTextCufoff.asInstanceOf[js.Any])
-    if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
-    if (baselineColor != null) __obj.updateDynamic("baselineColor")(baselineColor.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (gridlines != null) __obj.updateDynamic("gridlines")(gridlines.asInstanceOf[js.Any])
-    if (!js.isUndefined(logScale)) __obj.updateDynamic("logScale")(logScale.asInstanceOf[js.Any])
-    if (maxAlternation != null) __obj.updateDynamic("maxAlternation")(maxAlternation.asInstanceOf[js.Any])
-    if (maxTextLines != null) __obj.updateDynamic("maxTextLines")(maxTextLines.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minTextSpacing != null) __obj.updateDynamic("minTextSpacing")(minTextSpacing.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (minorGridlines != null) __obj.updateDynamic("minorGridlines")(minorGridlines.asInstanceOf[js.Any])
-    if (showTextEvery != null) __obj.updateDynamic("showTextEvery")(showTextEvery.asInstanceOf[js.Any])
-    if (!js.isUndefined(slantedText)) __obj.updateDynamic("slantedText")(slantedText.asInstanceOf[js.Any])
-    if (slantedTextAngle != null) __obj.updateDynamic("slantedTextAngle")(slantedTextAngle.asInstanceOf[js.Any])
-    if (textPosition != null) __obj.updateDynamic("textPosition")(textPosition.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle.asInstanceOf[js.Any])
-    if (viewWindow != null) __obj.updateDynamic("viewWindow")(viewWindow.asInstanceOf[js.Any])
-    if (viewWindowMode != null) __obj.updateDynamic("viewWindowMode")(viewWindowMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxis]
   }
+  
+  extension [Self <: ChartAxis](x: Self) {
+    
+    inline def setAllowContainerBoundaryTextCutoff(value: Boolean): Self = StObject.set(x, "allowContainerBoundaryTextCutoff", value.asInstanceOf[js.Any])
+    
+    inline def setAllowContainerBoundaryTextCutoffUndefined: Self = StObject.set(x, "allowContainerBoundaryTextCutoff", js.undefined)
+    
+    inline def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+    
+    inline def setBaselineColor(value: String): Self = StObject.set(x, "baselineColor", value.asInstanceOf[js.Any])
+    
+    inline def setBaselineColorUndefined: Self = StObject.set(x, "baselineColor", js.undefined)
+    
+    inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
+    
+    inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setGridlines(value: ChartGridlines): Self = StObject.set(x, "gridlines", value.asInstanceOf[js.Any])
+    
+    inline def setGridlinesUndefined: Self = StObject.set(x, "gridlines", js.undefined)
+    
+    inline def setLogScale(value: Boolean): Self = StObject.set(x, "logScale", value.asInstanceOf[js.Any])
+    
+    inline def setLogScaleUndefined: Self = StObject.set(x, "logScale", js.undefined)
+    
+    inline def setMaxAlternation(value: Double): Self = StObject.set(x, "maxAlternation", value.asInstanceOf[js.Any])
+    
+    inline def setMaxAlternationUndefined: Self = StObject.set(x, "maxAlternation", js.undefined)
+    
+    inline def setMaxTextLines(value: Double): Self = StObject.set(x, "maxTextLines", value.asInstanceOf[js.Any])
+    
+    inline def setMaxTextLinesUndefined: Self = StObject.set(x, "maxTextLines", js.undefined)
+    
+    inline def setMaxValue(value: Double | js.Date | js.Array[Double]): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    
+    inline def setMaxValueVarargs(value: Double*): Self = StObject.set(x, "maxValue", js.Array(value*))
+    
+    inline def setMinTextSpacing(value: Double): Self = StObject.set(x, "minTextSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setMinTextSpacingUndefined: Self = StObject.set(x, "minTextSpacing", js.undefined)
+    
+    inline def setMinValue(value: Double | js.Date | js.Array[Double]): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    
+    inline def setMinValueVarargs(value: Double*): Self = StObject.set(x, "minValue", js.Array(value*))
+    
+    inline def setMinorGridlines(value: ChartGridlines): Self = StObject.set(x, "minorGridlines", value.asInstanceOf[js.Any])
+    
+    inline def setMinorGridlinesUndefined: Self = StObject.set(x, "minorGridlines", js.undefined)
+    
+    inline def setShowTextEvery(value: Double): Self = StObject.set(x, "showTextEvery", value.asInstanceOf[js.Any])
+    
+    inline def setShowTextEveryUndefined: Self = StObject.set(x, "showTextEvery", js.undefined)
+    
+    inline def setSlantedText(value: Boolean): Self = StObject.set(x, "slantedText", value.asInstanceOf[js.Any])
+    
+    inline def setSlantedTextAngle(value: Double): Self = StObject.set(x, "slantedTextAngle", value.asInstanceOf[js.Any])
+    
+    inline def setSlantedTextAngleUndefined: Self = StObject.set(x, "slantedTextAngle", js.undefined)
+    
+    inline def setSlantedTextUndefined: Self = StObject.set(x, "slantedText", js.undefined)
+    
+    inline def setTextPosition(value: String): Self = StObject.set(x, "textPosition", value.asInstanceOf[js.Any])
+    
+    inline def setTextPositionUndefined: Self = StObject.set(x, "textPosition", js.undefined)
+    
+    inline def setTextStyle(value: ChartTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    
+    inline def setTicks(value: js.Array[Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    
+    inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
+    
+    inline def setTicksVarargs(value: Any*): Self = StObject.set(x, "ticks", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleTextStyle(value: ChartTextStyle): Self = StObject.set(x, "titleTextStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTitleTextStyleUndefined: Self = StObject.set(x, "titleTextStyle", js.undefined)
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setViewWindow(value: ChartViewWindow): Self = StObject.set(x, "viewWindow", value.asInstanceOf[js.Any])
+    
+    inline def setViewWindowMode(value: String): Self = StObject.set(x, "viewWindowMode", value.asInstanceOf[js.Any])
+    
+    inline def setViewWindowModeUndefined: Self = StObject.set(x, "viewWindowMode", js.undefined)
+    
+    inline def setViewWindowUndefined: Self = StObject.set(x, "viewWindow", js.undefined)
+  }
 }
-

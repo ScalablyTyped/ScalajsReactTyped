@@ -1,49 +1,66 @@
 package typingsJapgolly.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ɵChangeDetectorStatus extends js.Object
-
+sealed trait ɵChangeDetectorStatus extends StObject
 @JSImport("@angular/core", "\u0275ChangeDetectorStatus")
 @js.native
-object ɵChangeDetectorStatus extends js.Object {
+object ɵChangeDetectorStatus extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[ɵChangeDetectorStatus & Double] = js.native
+  
   /**
     * A state in which change detection continues automatically until explicitly
     * deactivated.
     */
   @js.native
-  sealed trait CheckAlways extends ɵChangeDetectorStatus
+  sealed trait CheckAlways
+    extends StObject
+       with ɵChangeDetectorStatus
+  /* 2 */ val CheckAlways: typingsJapgolly.angularCore.mod.ɵChangeDetectorStatus.CheckAlways & Double = js.native
   
   /**
     * A state in which, after calling `detectChanges()`, the change detector
     * state becomes `Checked`, and must be explicitly invoked or reactivated.
     */
   @js.native
-  sealed trait CheckOnce extends ɵChangeDetectorStatus
+  sealed trait CheckOnce
+    extends StObject
+       with ɵChangeDetectorStatus
+  /* 0 */ val CheckOnce: typingsJapgolly.angularCore.mod.ɵChangeDetectorStatus.CheckOnce & Double = js.native
   
   /**
     * A state in which change detection is skipped until the change detector mode
     * becomes `CheckOnce`.
     */
   @js.native
-  sealed trait Checked extends ɵChangeDetectorStatus
+  sealed trait Checked
+    extends StObject
+       with ɵChangeDetectorStatus
+  /* 1 */ val Checked: typingsJapgolly.angularCore.mod.ɵChangeDetectorStatus.Checked & Double = js.native
   
   /**
     * Indicates that the change detector has been destroyed.
     */
   @js.native
-  sealed trait Destroyed extends ɵChangeDetectorStatus
+  sealed trait Destroyed
+    extends StObject
+       with ɵChangeDetectorStatus
+  /* 5 */ val Destroyed: typingsJapgolly.angularCore.mod.ɵChangeDetectorStatus.Destroyed & Double = js.native
   
   /**
     * A state in which a change detector sub tree is not a part of the main tree and
     * should be skipped.
     */
   @js.native
-  sealed trait Detached extends ɵChangeDetectorStatus
+  sealed trait Detached
+    extends StObject
+       with ɵChangeDetectorStatus
+  /* 3 */ val Detached: typingsJapgolly.angularCore.mod.ɵChangeDetectorStatus.Detached & Double = js.native
   
   /**
     * Indicates that the change detector encountered an error checking a binding
@@ -51,27 +68,8 @@ object ɵChangeDetectorStatus extends js.Object {
     * detectors in this state do not detect changes.
     */
   @js.native
-  sealed trait Errored extends ɵChangeDetectorStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ɵChangeDetectorStatus with Double] = js.native
-  /* 2 */ @js.native
-  object CheckAlways extends TopLevel[CheckAlways with Double]
-  
-  /* 0 */ @js.native
-  object CheckOnce extends TopLevel[CheckOnce with Double]
-  
-  /* 1 */ @js.native
-  object Checked extends TopLevel[Checked with Double]
-  
-  /* 5 */ @js.native
-  object Destroyed extends TopLevel[Destroyed with Double]
-  
-  /* 3 */ @js.native
-  object Detached extends TopLevel[Detached with Double]
-  
-  /* 4 */ @js.native
-  object Errored extends TopLevel[Errored with Double]
-  
+  sealed trait Errored
+    extends StObject
+       with ɵChangeDetectorStatus
+  /* 4 */ val Errored: typingsJapgolly.angularCore.mod.ɵChangeDetectorStatus.Errored & Double = js.native
 }
-

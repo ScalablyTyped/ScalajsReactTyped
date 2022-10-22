@@ -1,95 +1,77 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Background
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SystemTriggerType extends js.Object
-
+sealed trait SystemTriggerType extends StObject
 @JSGlobal("Windows.ApplicationModel.Background.SystemTriggerType")
 @js.native
-object SystemTriggerType extends js.Object {
-  @js.native
-  sealed trait controlChannelReset extends SystemTriggerType
+object SystemTriggerType extends StObject {
   
   @js.native
-  sealed trait internetAvailable extends SystemTriggerType
+  sealed trait controlChannelReset
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait invalid extends SystemTriggerType
+  sealed trait internetAvailable
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait lockScreenApplicationAdded extends SystemTriggerType
+  sealed trait invalid
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait lockScreenApplicationRemoved extends SystemTriggerType
+  sealed trait lockScreenApplicationAdded
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait networkStateChange extends SystemTriggerType
+  sealed trait lockScreenApplicationRemoved
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait onlineIdConnectedStateChange extends SystemTriggerType
+  sealed trait networkStateChange
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait servicingComplete extends SystemTriggerType
+  sealed trait onlineIdConnectedStateChange
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait sessionConnected extends SystemTriggerType
+  sealed trait servicingComplete
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait smsReceived extends SystemTriggerType
+  sealed trait sessionConnected
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait timeZoneChange extends SystemTriggerType
+  sealed trait smsReceived
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait userAway extends SystemTriggerType
+  sealed trait timeZoneChange
+    extends StObject
+       with SystemTriggerType
   
   @js.native
-  sealed trait userPresent extends SystemTriggerType
+  sealed trait userAway
+    extends StObject
+       with SystemTriggerType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SystemTriggerType with Double] = js.native
-  /* 5 */ @js.native
-  object controlChannelReset extends TopLevel[controlChannelReset with Double]
-  
-  /* 6 */ @js.native
-  object internetAvailable extends TopLevel[internetAvailable with Double]
-  
-  /* 0 */ @js.native
-  object invalid extends TopLevel[invalid with Double]
-  
-  /* 9 */ @js.native
-  object lockScreenApplicationAdded extends TopLevel[lockScreenApplicationAdded with Double]
-  
-  /* 10 */ @js.native
-  object lockScreenApplicationRemoved extends TopLevel[lockScreenApplicationRemoved with Double]
-  
-  /* 4 */ @js.native
-  object networkStateChange extends TopLevel[networkStateChange with Double]
-  
-  /* 12 */ @js.native
-  object onlineIdConnectedStateChange extends TopLevel[onlineIdConnectedStateChange with Double]
-  
-  /* 8 */ @js.native
-  object servicingComplete extends TopLevel[servicingComplete with Double]
-  
-  /* 7 */ @js.native
-  object sessionConnected extends TopLevel[sessionConnected with Double]
-  
-  /* 1 */ @js.native
-  object smsReceived extends TopLevel[smsReceived with Double]
-  
-  /* 11 */ @js.native
-  object timeZoneChange extends TopLevel[timeZoneChange with Double]
-  
-  /* 3 */ @js.native
-  object userAway extends TopLevel[userAway with Double]
-  
-  /* 2 */ @js.native
-  object userPresent extends TopLevel[userPresent with Double]
-  
+  @js.native
+  sealed trait userPresent
+    extends StObject
+       with SystemTriggerType
 }
-

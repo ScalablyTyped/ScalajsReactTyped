@@ -1,17 +1,23 @@
 package typingsJapgolly.angularCommon.httpMod
 
-import typingsJapgolly.angularCommon.AnonHeaders
+import typingsJapgolly.angularCommon.anon.Status
+import typingsJapgolly.angularCommon.httpMod.HttpEventType.ResponseHeader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http", "HttpHeaderResponse")
 @js.native
 /**
   * Create a new `HttpHeaderResponse` with the given parameters.
   */
-class HttpHeaderResponse ()
-  extends typingsJapgolly.angularCommon.httpHttpMod.HttpHeaderResponse {
-  def this(init: AnonHeaders) = this()
+open class HttpHeaderResponse ()
+  extends HttpResponseBase
+     with HttpEvent[Any] {
+  def this(init: Status) = this()
+  
+  def clone(update: Status): HttpHeaderResponse = js.native
+  
+  @JSName("type")
+  val type_HttpHeaderResponse: ResponseHeader = js.native
 }
-

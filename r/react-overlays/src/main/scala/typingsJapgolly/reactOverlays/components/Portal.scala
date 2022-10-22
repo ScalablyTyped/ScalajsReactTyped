@@ -1,40 +1,37 @@
 package typingsJapgolly.reactOverlays.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactOverlays.portalMod.PortalProps
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import japgolly.scalajs.react.facade.React.RefHandle
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactOverlays.esmPortalMod.PortalProps
+import typingsJapgolly.reactOverlays.esmUseWaitForDOMRefMod.DOMContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Portal {
-  def apply(
-    container: Node | js.Function = null,
-    onRendered: js.Function = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PortalProps, typingsJapgolly.reactOverlays.mod.Portal, Unit, PortalProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (onRendered != null) __obj.updateDynamic("onRendered")(onRendered.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactOverlays.portalMod.PortalProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactOverlays.mod.Portal](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactOverlays.portalMod.PortalProps])(children: _*)
-  }
-  @JSImport("react-overlays", "Portal")
+  @JSImport("react-overlays/esm", "Portal")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def container(value: DOMContainer[HTMLElement]): this.type = set("container", value.asInstanceOf[js.Any])
+    
+    inline def containerCallbackTo(value: CallbackTo[HTMLElement | RefHandle[HTMLElement] | Null]): this.type = set("container", value.toJsFn)
+    
+    inline def containerNull: this.type = set("container", null)
+    
+    inline def onRendered(value: /* element */ Any => Callback): this.type = set("onRendered", js.Any.fromFunction1((t0: /* element */ Any) => value(t0).runNow()))
+  }
+  
+  implicit def make(companion: Portal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PortalProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

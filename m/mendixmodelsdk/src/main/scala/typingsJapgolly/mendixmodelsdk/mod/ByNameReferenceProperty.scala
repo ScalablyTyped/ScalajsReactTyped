@@ -1,28 +1,29 @@
 package typingsJapgolly.mendixmodelsdk.mod
 
-import typingsJapgolly.mendixmodelsdk.elementsMod.IAbstractElement
-import typingsJapgolly.mendixmodelsdk.structuresMod.IStructureClass
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalElementsMod.IAbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.IStructureClass
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "ByNameReferenceProperty")
 @js.native
-class ByNameReferenceProperty[T /* <: IAbstractElement */] protected ()
-  extends typingsJapgolly.mendixmodelsdk.propertiesMod.ByNameReferenceProperty[T] {
+open class ByNameReferenceProperty[T /* <: IAbstractElement */] protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcSdkInternalPropertiesMod.ByNameReferenceProperty[T] {
   def this(
     declaredOn: IStructureClass,
-    parent: typingsJapgolly.mendixmodelsdk.elementsMod.AbstractElement,
+    parent: typingsJapgolly.mendixmodelsdk.srcSdkInternalElementsMod.AbstractElement[IAbstractModel, Container],
     name: String,
     initialValue: T,
     _targetType: String
   ) = this()
   def this(
     declaredOn: IStructureClass,
-    parent: typingsJapgolly.mendixmodelsdk.elementsMod.AbstractElement,
+    parent: typingsJapgolly.mendixmodelsdk.srcSdkInternalElementsMod.AbstractElement[IAbstractModel, Container],
     name: String,
     initialValue: Null,
     _targetType: String
   ) = this()
 }
-

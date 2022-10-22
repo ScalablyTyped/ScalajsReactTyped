@@ -1,41 +1,45 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalDataBarAxisFormat extends js.Object
-
+sealed trait ConditionalDataBarAxisFormat extends StObject
 /**
+  * Represents the format options for a data bar axis.
   *
-  * Represents the format options for a Data Bar Axis.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalDataBarAxisFormat")
 @js.native
-object ConditionalDataBarAxisFormat extends js.Object {
+object ConditionalDataBarAxisFormat extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait automatic extends ConditionalDataBarAxisFormat
+  sealed trait automatic
+    extends StObject
+       with ConditionalDataBarAxisFormat
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait cellMidPoint extends ConditionalDataBarAxisFormat
+  sealed trait cellMidPoint
+    extends StObject
+       with ConditionalDataBarAxisFormat
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait none extends ConditionalDataBarAxisFormat
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalDataBarAxisFormat with String] = js.native
-  /* "Automatic" */ @js.native
-  object automatic extends TopLevel[automatic with String]
-  
-  /* "CellMidPoint" */ @js.native
-  object cellMidPoint extends TopLevel[cellMidPoint with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
+  sealed trait none
+    extends StObject
+       with ConditionalDataBarAxisFormat
 }
-

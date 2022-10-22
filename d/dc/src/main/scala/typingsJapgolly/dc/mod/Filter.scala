@@ -1,20 +1,22 @@
 package typingsJapgolly.dc.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Filter extends js.Object {
-  def isFiltered(value: js.Any): Boolean
+trait Filter extends StObject {
+  
+  def isFiltered(value: Any): Boolean
 }
-
 object Filter {
-  @scala.inline
-  def apply(isFiltered: js.Any => CallbackTo[Boolean]): Filter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isFiltered")(js.Any.fromFunction1((t0: js.Any) => isFiltered(t0).runNow()))
+  
+  inline def apply(isFiltered: Any => Boolean): Filter = {
+    val __obj = js.Dynamic.literal(isFiltered = js.Any.fromFunction1(isFiltered))
     __obj.asInstanceOf[Filter]
   }
+  
+  extension [Self <: Filter](x: Self) {
+    
+    inline def setIsFiltered(value: Any => Boolean): Self = StObject.set(x, "isFiltered", js.Any.fromFunction1(value))
+  }
 }
-

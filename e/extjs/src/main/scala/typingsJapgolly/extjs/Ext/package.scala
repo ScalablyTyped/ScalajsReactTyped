@@ -1,28 +1,50 @@
-package typingsJapgolly.extjs
+package typingsJapgolly.extjs.Ext
 
+import typingsJapgolly.extjs.Ext.data.IConnection
+import typingsJapgolly.extjs.Ext.dom.IHelper
+import typingsJapgolly.extjs.Ext.util.IMixedCollection
+import typingsJapgolly.extjs.Ext.util.ITaskRunner
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Ext {
-  type IAjax = typingsJapgolly.extjs.Ext.data.IConnection
-  type IButtonToggleManager = typingsJapgolly.extjs.Ext.IBase
-  type IComponentManager = typingsJapgolly.extjs.Ext.IAbstractManager
-  type IComponentMgr = typingsJapgolly.extjs.Ext.IAbstractManager
-  type IComponentQuery = typingsJapgolly.extjs.Ext.IBase
-  type ICompositeElement = typingsJapgolly.extjs.Ext.dom.ICompositeElementLite
-  type IDomHelper = typingsJapgolly.extjs.Ext.dom.IHelper
-  type IMessageBox = typingsJapgolly.extjs.Ext.window.IMessageBox
-  type IModelManager = typingsJapgolly.extjs.Ext.IAbstractManager
-  type IModelMgr = typingsJapgolly.extjs.Ext.IAbstractManager
-  type IMsg = typingsJapgolly.extjs.Ext.window.IMessageBox
-  type IPerf = typingsJapgolly.extjs.Ext.IBase
-  type IPluginManager = typingsJapgolly.extjs.Ext.IAbstractManager
-  type IPluginMgr = typingsJapgolly.extjs.Ext.IAbstractManager
-  type IQuickTips = typingsJapgolly.extjs.Ext.IBase
-  type IShadowPool = typingsJapgolly.extjs.Ext.IBase
-  type IStoreManager = typingsJapgolly.extjs.Ext.util.IMixedCollection
-  type IStoreMgr = typingsJapgolly.extjs.Ext.util.IMixedCollection
-  type ITaskManager = typingsJapgolly.extjs.Ext.util.ITaskRunner
-  type IWindowManager = typingsJapgolly.extjs.Ext.IZIndexManager
-}
+
+type IAjax = IConnection
+
+type IButtonToggleManager = IBase
+
+type IComponentManager = IAbstractManager
+
+type IComponentMgr = IAbstractManager
+
+type IComponentQuery = IBase
+
+type ICompositeElement = typingsJapgolly.extjs.Ext.dom.ICompositeElementLite
+
+type IDomHelper = IHelper
+
+type IMessageBox = typingsJapgolly.extjs.Ext.window.IMessageBox
+
+type IModelManager = IAbstractManager
+
+type IModelMgr = IAbstractManager
+
+type IMsg = typingsJapgolly.extjs.Ext.window.IMessageBox
+
+type IPerf = IBase
+
+type IPluginManager = IAbstractManager
+
+type IPluginMgr = IAbstractManager
+
+type IQuickTips = IBase
+
+type IShadowPool = IBase
+
+type IStoreManager = IMixedCollection
+
+type IStoreMgr = IMixedCollection
+
+type ITaskManager = ITaskRunner
+
+type IWindowManager = IZIndexManager

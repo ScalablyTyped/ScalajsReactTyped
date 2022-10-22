@@ -1,56 +1,48 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SlicerSortType extends js.Object
-
+sealed trait SlicerSortType extends StObject
 /**
+  * Specifies the slicer sort behavior for `Slicer.sortBy`.
   *
-  * Specifies the slicer sort behavior for Slicer.sortBy API.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.SlicerSortType")
 @js.native
-object SlicerSortType extends js.Object {
+object SlicerSortType extends StObject {
+  
   /**
-    *
     * Sort slicer items in ascending order by item captions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
-  sealed trait ascending extends SlicerSortType
+  sealed trait ascending
+    extends StObject
+       with SlicerSortType
   
   /**
-    *
     * Sort slicer items in the order provided by the data source.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
-  sealed trait dataSourceOrder extends SlicerSortType
+  sealed trait dataSourceOrder
+    extends StObject
+       with SlicerSortType
   
   /**
-    *
     * Sort slicer items in descending order by item captions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
-  sealed trait descending extends SlicerSortType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SlicerSortType with String] = js.native
-  /* "Ascending" */ @js.native
-  object ascending extends TopLevel[ascending with String]
-  
-  /* "DataSourceOrder" */ @js.native
-  object dataSourceOrder extends TopLevel[dataSourceOrder with String]
-  
-  /* "Descending" */ @js.native
-  object descending extends TopLevel[descending with String]
-  
+  sealed trait descending
+    extends StObject
+       with SlicerSortType
 }
-

@@ -1,54 +1,52 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextEditorRevealType extends js.Object
-
+sealed trait TextEditorRevealType extends StObject
 @JSImport("vscode", "TextEditorRevealType")
 @js.native
-object TextEditorRevealType extends js.Object {
-  /**
-  		 * The range will always be revealed at the top of the viewport.
-  		 */
-  @js.native
-  sealed trait AtTop extends TextEditorRevealType
-  
-  /**
-  		 * The range will be revealed with as little scrolling as possible.
-  		 */
-  @js.native
-  sealed trait Default extends TextEditorRevealType
-  
-  /**
-  		 * The range will always be revealed in the center of the viewport.
-  		 */
-  @js.native
-  sealed trait InCenter extends TextEditorRevealType
-  
-  /**
-  		 * If the range is outside the viewport, it will be revealed in the center of the viewport.
-  		 * Otherwise, it will be revealed with as little scrolling as possible.
-  		 */
-  @js.native
-  sealed trait InCenterIfOutsideViewport extends TextEditorRevealType
+object TextEditorRevealType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextEditorRevealType with Double] = js.native
-  /* 3 */ @js.native
-  object AtTop extends TopLevel[AtTop with Double]
+  def apply(value: Double): js.UndefOr[TextEditorRevealType & Double] = js.native
   
-  /* 0 */ @js.native
-  object Default extends TopLevel[Default with Double]
+  /**
+    * The range will always be revealed at the top of the viewport.
+    */
+  @js.native
+  sealed trait AtTop
+    extends StObject
+       with TextEditorRevealType
+  /* 3 */ val AtTop: typingsJapgolly.vscode.mod.TextEditorRevealType.AtTop & Double = js.native
   
-  /* 1 */ @js.native
-  object InCenter extends TopLevel[InCenter with Double]
+  /**
+    * The range will be revealed with as little scrolling as possible.
+    */
+  @js.native
+  sealed trait Default
+    extends StObject
+       with TextEditorRevealType
+  /* 0 */ val Default: typingsJapgolly.vscode.mod.TextEditorRevealType.Default & Double = js.native
   
-  /* 2 */ @js.native
-  object InCenterIfOutsideViewport extends TopLevel[InCenterIfOutsideViewport with Double]
+  /**
+    * The range will always be revealed in the center of the viewport.
+    */
+  @js.native
+  sealed trait InCenter
+    extends StObject
+       with TextEditorRevealType
+  /* 1 */ val InCenter: typingsJapgolly.vscode.mod.TextEditorRevealType.InCenter & Double = js.native
   
+  /**
+    * If the range is outside the viewport, it will be revealed in the center of the viewport.
+    * Otherwise, it will be revealed with as little scrolling as possible.
+    */
+  @js.native
+  sealed trait InCenterIfOutsideViewport
+    extends StObject
+       with TextEditorRevealType
+  /* 2 */ val InCenterIfOutsideViewport: typingsJapgolly.vscode.mod.TextEditorRevealType.InCenterIfOutsideViewport & Double = js.native
 }
-

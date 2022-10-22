@@ -1,19 +1,8 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables you to detect whether your app is in design mode in a visual designer. */
-@JSGlobal("Windows.ApplicationModel.DesignMode")
-@js.native
-abstract class DesignMode () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.ApplicationModel.DesignMode")
-@js.native
-object DesignMode extends js.Object {
-  /** Gets a value that indicates whether the process is running in design mode. */
-  var designModeEnabled: Boolean = js.native
-}
-
+trait DesignMode extends StObject

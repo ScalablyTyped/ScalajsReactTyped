@@ -1,16 +1,13 @@
 package typingsJapgolly.p5.mod
 
-import typingsJapgolly.std.AudioNode
+import org.scalajs.dom.AudioNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaElement extends js.Object {
-  /**
-    *   Path to the media element source.
-    */
-  var src: js.Any = js.native
+trait MediaElement extends StObject {
+  
   /**
     *   Schedule events to trigger every time a
     *   MediaElement (audio/video) reaches a playback cue
@@ -35,63 +32,73 @@ trait MediaElement extends js.Object {
     *   @return id ID of this cue, useful for
     *   removeCue(id)
     */
-  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, _]): Double = js.native
-  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, _], value: js.Object): Double = js.native
+  def addCue(time: Double, callback: js.Function1[/* repeated */ Any, Any]): Double = js.native
+  def addCue(time: Double, callback: js.Function1[/* repeated */ Any, Any], value: js.Object): Double = js.native
+  
   /**
-    *   Set HTML5 media element to autoplay or not.
-    *   @param autoplay whether the element should
+    *   Set HTML5 media element to autoplay or not. If no
+    *   argument is specified, by default it will
+    *   autoplay.
+    *   @param shouldAutoplay whether the element should
     *   autoplay
     *   @chainable
     */
-  def autoplay(autoplay: Boolean): MediaElement = js.native
+  def autoplay(shouldAutoplay: Boolean): MediaElement = js.native
+  
   /**
     *   Remove all of the callbacks that had originally
     *   been scheduled via the addCue method.
     *   @param id ID of the cue, as returned by addCue
     */
   def clearCues(id: Double): Unit = js.native
+  
   def connect(audioNode: js.Object): Unit = js.native
   /**
     *   Send the audio output of this element to a
     *   specified audioNode or p5.sound object. If no
-    *   element is provided, connects to p5's master
-    *   output. That connection is established when this
-    *   method is first called. All connections are
-    *   removed by the .disconnect() method. This method
-    *   is meant to be used with the p5.sound.js addon
-    *   library.
+    *   element is provided, connects to p5's main output.
+    *   That connection is established when this method is
+    *   first called. All connections are removed by the
+    *   .disconnect() method. This method is meant to be
+    *   used with the p5.sound.js addon library.
     *   @param audioNode AudioNode from the Web Audio API,
     *   or an object from the p5.sound library
     */
   def connect(audioNode: AudioNode): Unit = js.native
+  
   /**
     *   Disconnect all Web Audio routing, including to
-    *   master output. This is useful if you want to
+    *   main output. This is useful if you want to
     *   re-route the output through audio effects, for
     *   example.
     */
   def disconnect(): Unit = js.native
+  
   /**
     *   Returns the duration of the HTML5 media element.
     *   @return duration
     */
   def duration(): Double = js.native
+  
   /**
     *   Hide the default mediaElement controls.
     */
   def hideControls(): Unit = js.native
+  
   /**
     *   Set 'loop' to true for an HTML5 media element, and
     *   starts playing.
     *   @chainable
     */
   def loop(): MediaElement = js.native
+  
   /**
     *   Set 'loop' to false for an HTML5 media element.
     *   Element will stop when it reaches the end.
     *   @chainable
     */
   def noLoop(): MediaElement = js.native
+  
   /**
     *   Schedule an event to be called when the audio or
     *   video element reaches the end. If the element is
@@ -102,28 +109,33 @@ trait MediaElement extends js.Object {
     *   passed in as the argument to the callback.
     *   @chainable
     */
-  def onended(callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
+  def onended(callback: js.Function1[/* repeated */ Any, Any]): MediaElement = js.native
+  
   /**
     *   Pauses an HTML5 media element.
     *   @chainable
     */
   def pause(): MediaElement = js.native
+  
   /**
     *   Play an HTML5 media element.
     *   @chainable
     */
   def play(): MediaElement = js.native
+  
   /**
     *   Remove a callback based on its ID. The ID is
     *   returned by the addCue method.
     *   @param id ID of the cue, as returned by addCue
     */
   def removeCue(id: Double): Unit = js.native
+  
   /**
     *   Show the default MediaElement controls, as
     *   determined by the web browser.
     */
   def showControls(): Unit = js.native
+  
   /**
     *   If no arguments are given, returns the current
     *   playback speed of the element. The speed parameter
@@ -149,12 +161,19 @@ trait MediaElement extends js.Object {
     *   @chainable
     */
   def speed(speed: Double): MediaElement = js.native
+  
+  /**
+    *   Path to the media element source.
+    */
+  var src: Any = js.native
+  
   /**
     *   Stops an HTML5 media element (sets current time to
     *   zero).
     *   @chainable
     */
   def stop(): MediaElement = js.native
+  
   /**
     *   If no arguments are given, returns the current
     *   time of the element. If an argument is given the
@@ -170,6 +189,7 @@ trait MediaElement extends js.Object {
     *   @chainable
     */
   def time(time: Double): MediaElement = js.native
+  
   /**
     *   Sets volume for this HTML5 media element. If no
     *   argument is given, returns the current volume.
@@ -184,4 +204,3 @@ trait MediaElement extends js.Object {
     */
   def volume(`val`: Double): MediaElement = js.native
 }
-

@@ -1,11 +1,12 @@
 package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnsMethodsModel extends js.Object {
+trait ColumnsMethodsModel extends StObject {
+  
   /**
     * Select all columns
     *
@@ -18,12 +19,12 @@ trait ColumnsMethodsModel extends js.Object {
     * @param cellSelector Cell selector.
     * @param Option used to specify how the cells should be ordered, and if paging or filtering in the table should be taken into account.
     */
-  def apply(columnSelector: js.Any): ColumnsMethods = js.native
-  def apply(columnSelector: js.Any, modifier: ObjectSelectorModifier): ColumnsMethods = js.native
+  def apply(columnSelector: Any): ColumnsMethods = js.native
+  def apply(columnSelector: Any, modifier: ObjectSelectorModifier): ColumnsMethods = js.native
   def apply(modifier: ObjectSelectorModifier): ColumnsMethods = js.native
+  
   /**
     * Recalculate the column widths for layout.
     */
   def adjust(): Api = js.native
 }
-

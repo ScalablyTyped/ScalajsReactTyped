@@ -1,26 +1,42 @@
 package typingsJapgolly.awsSdkClientCodecommitNode
 
-import typingsJapgolly.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientCodecommitNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/types/PutRepositoryTriggersOutput", JSImport.Namespace)
-@js.native
-object typesPutRepositoryTriggersOutputMod extends js.Object {
-  @js.native
-  trait PutRepositoryTriggersOutput extends OutputTypesUnion {
+object typesPutRepositoryTriggersOutputMod {
+  
+  trait PutRepositoryTriggersOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>The system-generated unique ID for the create or update operation.</p>
       */
-    var configurationId: js.UndefOr[String] = js.native
+    var configurationId: js.UndefOr[String] = js.undefined
   }
-  
+  object PutRepositoryTriggersOutput {
+    
+    inline def apply($metadata: ResponseMetadata): PutRepositoryTriggersOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PutRepositoryTriggersOutput]
+    }
+    
+    extension [Self <: PutRepositoryTriggersOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setConfigurationId(value: String): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
+      
+      inline def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
+    }
+  }
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.azdata.azdataStrings.nowrap
   - typingsJapgolly.azdata.azdataStrings.wrap
   - typingsJapgolly.azdata.azdataStrings.`wrap-reverse`
 */
-trait FlexWrapType extends js.Object
-
+trait FlexWrapType extends StObject
 object FlexWrapType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def nowrap: typingsJapgolly.azdata.azdataStrings.nowrap = this.cast("nowrap")
-  @scala.inline
-  def wrap: typingsJapgolly.azdata.azdataStrings.wrap = this.cast("wrap")
-  @scala.inline
-  def `wrap-reverse`: typingsJapgolly.azdata.azdataStrings.`wrap-reverse` = this.cast("wrap-reverse")
+  
+  inline def nowrap: typingsJapgolly.azdata.azdataStrings.nowrap = "nowrap".asInstanceOf[typingsJapgolly.azdata.azdataStrings.nowrap]
+  
+  inline def wrap: typingsJapgolly.azdata.azdataStrings.wrap = "wrap".asInstanceOf[typingsJapgolly.azdata.azdataStrings.wrap]
+  
+  inline def `wrap-reverse`: typingsJapgolly.azdata.azdataStrings.`wrap-reverse` = "wrap-reverse".asInstanceOf[typingsJapgolly.azdata.azdataStrings.`wrap-reverse`]
 }
-

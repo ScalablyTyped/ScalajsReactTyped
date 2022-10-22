@@ -1,27 +1,32 @@
 package typingsJapgolly.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-fbsdk", "ShareDialog")
-@js.native
-object ShareDialog extends js.Object {
+object ShareDialog {
+  
+  @JSImport("react-native-fbsdk", "ShareDialog")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Check if the dialog can be shown.
     */
-  def canShow(shareContent: ShareContent): js.Promise[Boolean] = js.native
+  inline def canShow(shareContent: ShareContent): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canShow")(shareContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  
   /**
     * Sets the mode for the share dialog.
     */
-  def setMode(mode: ShareDialogMode): Unit = js.native
+  inline def setMode(mode: ShareDialogMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /**
     * Sets whether or not the native share dialog should fail when it encounters a data error.
     */
-  def setShouldFailOnDataError(shouldFailOnDataError: Boolean): Unit = js.native
+  inline def setShouldFailOnDataError(shouldFailOnDataError: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShouldFailOnDataError")(shouldFailOnDataError.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /**
     * Shows the dialog using the specified content.
     */
-  def show(shareContent: ShareContent): js.Promise[_] = js.native
+  inline def show(shareContent: ShareContent): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(shareContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 }
-

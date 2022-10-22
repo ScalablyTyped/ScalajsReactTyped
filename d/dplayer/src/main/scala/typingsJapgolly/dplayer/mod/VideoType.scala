@@ -1,8 +1,8 @@
 package typingsJapgolly.dplayer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.dplayer.dplayerStrings.auto
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.dplayer.dplayerStrings.webtorrent
   - typingsJapgolly.dplayer.dplayerStrings.normal
 */
-trait VideoType extends js.Object
-
+trait VideoType extends StObject
 object VideoType {
-  @scala.inline
-  def auto: typingsJapgolly.dplayer.dplayerStrings.auto = this.cast("auto")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dash: typingsJapgolly.dplayer.dplayerStrings.dash = this.cast("dash")
-  @scala.inline
-  def flv: typingsJapgolly.dplayer.dplayerStrings.flv = this.cast("flv")
-  @scala.inline
-  def hls: typingsJapgolly.dplayer.dplayerStrings.hls = this.cast("hls")
-  @scala.inline
-  def normal: typingsJapgolly.dplayer.dplayerStrings.normal = this.cast("normal")
-  @scala.inline
-  def webtorrent: typingsJapgolly.dplayer.dplayerStrings.webtorrent = this.cast("webtorrent")
+  
+  inline def auto: typingsJapgolly.dplayer.dplayerStrings.auto = "auto".asInstanceOf[typingsJapgolly.dplayer.dplayerStrings.auto]
+  
+  inline def dash: typingsJapgolly.dplayer.dplayerStrings.dash = "dash".asInstanceOf[typingsJapgolly.dplayer.dplayerStrings.dash]
+  
+  inline def flv: typingsJapgolly.dplayer.dplayerStrings.flv = "flv".asInstanceOf[typingsJapgolly.dplayer.dplayerStrings.flv]
+  
+  inline def hls: typingsJapgolly.dplayer.dplayerStrings.hls = "hls".asInstanceOf[typingsJapgolly.dplayer.dplayerStrings.hls]
+  
+  inline def normal: typingsJapgolly.dplayer.dplayerStrings.normal = "normal".asInstanceOf[typingsJapgolly.dplayer.dplayerStrings.normal]
+  
+  inline def webtorrent: typingsJapgolly.dplayer.dplayerStrings.webtorrent = "webtorrent".asInstanceOf[typingsJapgolly.dplayer.dplayerStrings.webtorrent]
 }
-

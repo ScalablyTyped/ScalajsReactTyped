@@ -1,23 +1,27 @@
 package typingsJapgolly.nodelibFsStat
 
-import typingsJapgolly.node.fsMod.PathLike
-import typingsJapgolly.node.fsMod.Stats
-import typingsJapgolly.nodelibFsStat.statMod.AsyncCallback
+import typingsJapgolly.nodelibFsStat.outSettingsMod.Options
+import typingsJapgolly.nodelibFsStat.outSettingsMod.default
+import typingsJapgolly.nodelibFsStat.outTypesMod.Stats
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@nodelib/fs.stat", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def stat(path: PathLike): js.Promise[Stats] = js.native
-  def stat(path: PathLike, opts: Options): js.Promise[Stats] = js.native
-  def statCallback(path: PathLike, callback: AsyncCallback): Unit = js.native
-  def statCallback(path: PathLike, opts: Options, callback: AsyncCallback): Unit = js.native
-  def statSync(path: PathLike): Stats = js.native
-  def statSync(path: PathLike, opts: Options): Stats = js.native
-  type FileSystemAdapter = typingsJapgolly.nodelibFsStat.fsMod.FileSystemAdapter
-  type Options = typingsJapgolly.nodelibFsStat.optionsMod.Options
-  type StatAsyncCallback = AsyncCallback
+object mod {
+  
+  @JSImport("@nodelib/fs.stat", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@nodelib/fs.stat", "Settings")
+  @js.native
+  open class Settings () extends default {
+    def this(_options: Options) = this()
+  }
+  
+  inline def statSync(path: String): Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("statSync")(path.asInstanceOf[js.Any]).asInstanceOf[Stats]
+  inline def statSync(path: String, optionsOrSettings: Options): Stats = (^.asInstanceOf[js.Dynamic].applyDynamic("statSync")(path.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any])).asInstanceOf[Stats]
+  inline def statSync(path: String, optionsOrSettings: default): Stats = (^.asInstanceOf[js.Dynamic].applyDynamic("statSync")(path.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any])).asInstanceOf[Stats]
+  
+  type AsyncCallback = typingsJapgolly.nodelibFsStat.outProvidersAsyncMod.AsyncCallback
 }
-

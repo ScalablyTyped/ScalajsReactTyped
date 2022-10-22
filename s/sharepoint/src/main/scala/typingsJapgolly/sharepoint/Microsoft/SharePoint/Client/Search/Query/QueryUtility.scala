@@ -1,19 +1,7 @@
 package typingsJapgolly.sharepoint.Microsoft.SharePoint.Client.Search.Query
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryUtility")
-@js.native
-class QueryUtility () extends js.Object
-
-/* static members */
-@JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryUtility")
-@js.native
-object QueryUtility extends js.Object {
-  def create(name: String, `val`: js.Any): QueryPropertyValue = js.native
-  def getQueryPropertyValueType(`val`: QueryPropertyValue): QueryPropertyValueType = js.native
-  def queryPropertyValueToObject(`val`: QueryPropertyValue): js.Any = js.native
-}
-
+trait QueryUtility extends StObject

@@ -1,15 +1,16 @@
 package typingsJapgolly.reactInstantsearchDom
 
+import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.reactInstantsearchDom.anon.PickInstantSearchPropswid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-instantsearch-dom/server", JSImport.Namespace)
-@js.native
-object serverMod extends js.Object {
-  def createInstantSearch(): AnonFindResultsState = js.native
-  def createInstantSearch(
-    defaultAlgoliaClient: js.Function3[/* appId */ String, /* apiKey */ String, /* options */ AnonUseRequestCache, js.Object]
-  ): AnonFindResultsState = js.native
+object serverMod {
+  
+  @JSImport("react-instantsearch-dom/server", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def findResultsState[TProps /* <: PickInstantSearchPropswid */](App: ComponentType[TProps], props: TProps): js.Promise[js.UndefOr[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findResultsState")(App.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[Any]]]
 }
-

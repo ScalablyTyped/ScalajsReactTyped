@@ -1,19 +1,16 @@
 package typingsJapgolly.imageThumbnail
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageThumbnailStrings {
-  @js.native
-  sealed trait base64 extends js.Object
   
   @js.native
-  sealed trait buffer extends js.Object
+  sealed trait base64 extends StObject
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  @js.native
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
 }
-

@@ -1,37 +1,57 @@
 package typingsJapgolly.kendoUi.kendo.data
 
 import typingsJapgolly.kendoUi.JQueryAjaxSettings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSourceTransportCreate extends JQueryAjaxSettings {
+trait DataSourceTransportCreate
+  extends StObject
+     with JQueryAjaxSettings {
+  
   var cache: js.UndefOr[Boolean] = js.undefined
+  
   var contentType: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
   var dataType: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[js.Any] = js.undefined
+  
+  var url: js.UndefOr[Any] = js.undefined
 }
-
 object DataSourceTransportCreate {
-  @scala.inline
-  def apply(
-    cache: js.UndefOr[Boolean] = js.undefined,
-    contentType: String = null,
-    data: js.Any = null,
-    dataType: String = null,
-    `type`: String = null,
-    url: js.Any = null
-  ): DataSourceTransportCreate = {
+  
+  inline def apply(): DataSourceTransportCreate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceTransportCreate]
   }
+  
+  extension [Self <: DataSourceTransportCreate](x: Self) {
+    
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

@@ -1,135 +1,278 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SignIn extends Entity {
-  // App name displayed in the Azure Portal.
-  var appDisplayName: js.UndefOr[String] = js.undefined
-  // Unique GUID representing the app ID in the Azure Active Directory.
-  var appId: js.UndefOr[String] = js.undefined
-  var appliedConditionalAccessPolicies: js.UndefOr[js.Array[AppliedConditionalAccessPolicy]] = js.undefined
+trait SignIn
+  extends StObject
+     with Entity {
+  
+  // App name displayed in the Azure Portal. Supports $filter (eq and startsWith operators only).
+  var appDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // Unique GUID representing the app ID in the Azure Active Directory. Supports $filter (eq operator only).
+  var appId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var appliedConditionalAccessPolicies: js.UndefOr[NullableOption[js.Array[AppliedConditionalAccessPolicy]]] = js.undefined
+  
   /**
-    * Identifies the legacy client used for sign-in activity. Includes Browser, Exchange Active Sync, modern clients, IMAP,
-    * MAPI, SMTP, and POP.
+    * Identifies the client used for the sign-in activity. Modern authentication clients include Browser and modern clients.
+    * Legacy authentication clients include Exchange ActiveSync, IMAP, MAPI, SMTP, POP, and other clients. Supports $filter
+    * (eq operator only).
     */
-  var clientAppUsed: js.UndefOr[String] = js.undefined
+  var clientAppUsed: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * Reports status of an activated conditional access policy. Possible values are: success, failure, notApplied, and
-    * unknownFutureValue.
+    * unknownFutureValue. Supports $filter (eq operator only).
     */
-  var conditionalAccessStatus: js.UndefOr[ConditionalAccessStatus] = js.undefined
-  // The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity.
-  var correlationId: js.UndefOr[String] = js.undefined
-  // Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as '2014-01-01T00:00:00Z'.
+  var conditionalAccessStatus: js.UndefOr[NullableOption[ConditionalAccessStatus]] = js.undefined
+  
+  /**
+    * The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity. Supports
+    * $filter (eq operator only).
+    */
+  var correlationId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  /**
+    * Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as 2014-01-01T00:00:00Z.
+    * Supports $orderby and $filter (eq, le, and ge operators only).
+    */
   var createdDateTime: js.UndefOr[String] = js.undefined
-  // Device information from where the sign-in occurred; includes device ID, operating system, and browser.
-  var deviceDetail: js.UndefOr[DeviceDetail] = js.undefined
-  // IP address of the client used to sign in.
-  var ipAddress: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Device information from where the sign-in occurred; includes device ID, operating system, and browser. Supports $filter
+    * (eq and startsWith operators only) on browser and operatingSytem properties.
+    */
+  var deviceDetail: js.UndefOr[NullableOption[DeviceDetail]] = js.undefined
+  
+  // IP address of the client used to sign in. Supports $filter (eq and startsWith operators only).
+  var ipAddress: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Indicates if a sign-in is interactive or not.
-  var isInteractive: js.UndefOr[Boolean] = js.undefined
-  // Provides the city, state, and country code where the sign-in originated.
-  var location: js.UndefOr[SignInLocation] = js.undefined
-  // Name of the resource the user signed into.
-  var resourceDisplayName: js.UndefOr[String] = js.undefined
-  // ID of the resource that the user signed into.
-  var resourceId: js.UndefOr[String] = js.undefined
+  var isInteractive: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  /**
+    * Provides the city, state, and country code where the sign-in originated. Supports $filter (eq and startsWith operators
+    * only) on city, state, and countryOrRegion properties.
+    */
+  var location: js.UndefOr[NullableOption[SignInLocation]] = js.undefined
+  
+  // Name of the resource the user signed into. Supports $filter (eq operator only).
+  var resourceDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // ID of the resource that the user signed into. Supports $filter (eq operator only).
+  var resourceId: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: none,
     * adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset,
     * adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser,
     * adminConfirmedSigninCompromised, unknownFutureValue. The value none means that no action has been performed on the user
-    * or sign-in so far. Note: Details for this property require an Azure AD Premium P2 license. Other licenses return the
-    * value hidden.
+    * or sign-in so far. Supports $filter (eq operator only).Note: Details for this property require an Azure AD Premium P2
+    * license. Other licenses return the value hidden.
     */
-  var riskDetail: js.UndefOr[RiskDetail] = js.undefined
+  var riskDetail: js.UndefOr[NullableOption[RiskDetail]] = js.undefined
+  
   /**
     * Risk event types associated with the sign-in. The possible values are: unlikelyTravel, anonymizedIPAddress,
     * maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials,
-    * investigationsThreatIntelligence, generic, and unknownFutureValue.
+    * investigationsThreatIntelligence, generic, and unknownFutureValue. Supports $filter (eq operator only).
     */
-  var riskEventTypes: js.UndefOr[js.Array[RiskEventType]] = js.undefined
+  var riskEventTypes: js.UndefOr[NullableOption[js.Array[RiskEventType]]] = js.undefined
+  
+  /**
+    * The list of risk event types associated with the sign-in. Possible values: unlikelyTravel, anonymizedIPAddress,
+    * maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials,
+    * investigationsThreatIntelligence, generic, or unknownFutureValue. Supports $filter (eq and startsWith operators only).
+    */
+  var riskEventTypes_v2: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
+  
   /**
     * Aggregated risk level. The possible values are: none, low, medium, high, hidden, and unknownFutureValue. The value
-    * hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Note: Details for this property are
-    * only available for Azure AD Premium P2 customers. All other customers will be returned hidden.
+    * hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Supports $filter (eq operator only).
+    * Note: Details for this property are only available for Azure AD Premium P2 customers. All other customers will be
+    * returned hidden.
     */
-  var riskLevelAggregated: js.UndefOr[RiskLevel] = js.undefined
+  var riskLevelAggregated: js.UndefOr[NullableOption[RiskLevel]] = js.undefined
+  
   /**
     * Risk level during sign-in. The possible values are: none, low, medium, high, hidden, and unknownFutureValue. The value
-    * hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Note: Details for this property are
-    * only available for Azure AD Premium P2 customers. All other customers will be returned hidden.
+    * hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Supports $filter (eq operator only).
+    * Note: Details for this property are only available for Azure AD Premium P2 customers. All other customers will be
+    * returned hidden.
     */
-  var riskLevelDuringSignIn: js.UndefOr[RiskLevel] = js.undefined
+  var riskLevelDuringSignIn: js.UndefOr[NullableOption[RiskLevel]] = js.undefined
+  
   /**
     * Reports status of the risky user, sign-in, or a risk event. The possible values are: none, confirmedSafe, remediated,
-    * dismissed, atRisk, confirmedCompromised, unknownFutureValue.
+    * dismissed, atRisk, confirmedCompromised, unknownFutureValue. Supports $filter (eq operator only).
     */
-  var riskState: js.UndefOr[RiskState] = js.undefined
-  // Sign-in status. Possible values include Success and Failure.
-  var status: js.UndefOr[SignInStatus] = js.undefined
-  // Display name of the user that initiated the sign-in.
-  var userDisplayName: js.UndefOr[String] = js.undefined
-  // ID of the user that initiated the sign-in.
+  var riskState: js.UndefOr[NullableOption[RiskState]] = js.undefined
+  
+  /**
+    * Sign-in status. Includes the error code and description of the error (in case of a sign-in failure). Supports $filter
+    * (eq operator only) on errorCode property.
+    */
+  var status: js.UndefOr[NullableOption[SignInStatus]] = js.undefined
+  
+  // Display name of the user that initiated the sign-in. Supports $filter (eq and startsWith operators only).
+  var userDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // ID of the user that initiated the sign-in. Supports $filter (eq operator only).
   var userId: js.UndefOr[String] = js.undefined
-  // User principal name of the user that initiated the sign-in.
-  var userPrincipalName: js.UndefOr[String] = js.undefined
+  
+  // User principal name of the user that initiated the sign-in. Supports $filter (eq and startsWith operators only).
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object SignIn {
-  @scala.inline
-  def apply(
-    appDisplayName: String = null,
-    appId: String = null,
-    appliedConditionalAccessPolicies: js.Array[AppliedConditionalAccessPolicy] = null,
-    clientAppUsed: String = null,
-    conditionalAccessStatus: ConditionalAccessStatus = null,
-    correlationId: String = null,
-    createdDateTime: String = null,
-    deviceDetail: DeviceDetail = null,
-    id: String = null,
-    ipAddress: String = null,
-    isInteractive: js.UndefOr[Boolean] = js.undefined,
-    location: SignInLocation = null,
-    resourceDisplayName: String = null,
-    resourceId: String = null,
-    riskDetail: RiskDetail = null,
-    riskEventTypes: js.Array[RiskEventType] = null,
-    riskLevelAggregated: RiskLevel = null,
-    riskLevelDuringSignIn: RiskLevel = null,
-    riskState: RiskState = null,
-    status: SignInStatus = null,
-    userDisplayName: String = null,
-    userId: String = null,
-    userPrincipalName: String = null
-  ): SignIn = {
+  
+  inline def apply(): SignIn = {
     val __obj = js.Dynamic.literal()
-    if (appDisplayName != null) __obj.updateDynamic("appDisplayName")(appDisplayName.asInstanceOf[js.Any])
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (appliedConditionalAccessPolicies != null) __obj.updateDynamic("appliedConditionalAccessPolicies")(appliedConditionalAccessPolicies.asInstanceOf[js.Any])
-    if (clientAppUsed != null) __obj.updateDynamic("clientAppUsed")(clientAppUsed.asInstanceOf[js.Any])
-    if (conditionalAccessStatus != null) __obj.updateDynamic("conditionalAccessStatus")(conditionalAccessStatus.asInstanceOf[js.Any])
-    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (deviceDetail != null) __obj.updateDynamic("deviceDetail")(deviceDetail.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (resourceDisplayName != null) __obj.updateDynamic("resourceDisplayName")(resourceDisplayName.asInstanceOf[js.Any])
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    if (riskDetail != null) __obj.updateDynamic("riskDetail")(riskDetail.asInstanceOf[js.Any])
-    if (riskEventTypes != null) __obj.updateDynamic("riskEventTypes")(riskEventTypes.asInstanceOf[js.Any])
-    if (riskLevelAggregated != null) __obj.updateDynamic("riskLevelAggregated")(riskLevelAggregated.asInstanceOf[js.Any])
-    if (riskLevelDuringSignIn != null) __obj.updateDynamic("riskLevelDuringSignIn")(riskLevelDuringSignIn.asInstanceOf[js.Any])
-    if (riskState != null) __obj.updateDynamic("riskState")(riskState.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (userDisplayName != null) __obj.updateDynamic("userDisplayName")(userDisplayName.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
-    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignIn]
   }
+  
+  extension [Self <: SignIn](x: Self) {
+    
+    inline def setAppDisplayName(value: NullableOption[String]): Self = StObject.set(x, "appDisplayName", value.asInstanceOf[js.Any])
+    
+    inline def setAppDisplayNameNull: Self = StObject.set(x, "appDisplayName", null)
+    
+    inline def setAppDisplayNameUndefined: Self = StObject.set(x, "appDisplayName", js.undefined)
+    
+    inline def setAppId(value: NullableOption[String]): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    
+    inline def setAppIdNull: Self = StObject.set(x, "appId", null)
+    
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    
+    inline def setAppliedConditionalAccessPolicies(value: NullableOption[js.Array[AppliedConditionalAccessPolicy]]): Self = StObject.set(x, "appliedConditionalAccessPolicies", value.asInstanceOf[js.Any])
+    
+    inline def setAppliedConditionalAccessPoliciesNull: Self = StObject.set(x, "appliedConditionalAccessPolicies", null)
+    
+    inline def setAppliedConditionalAccessPoliciesUndefined: Self = StObject.set(x, "appliedConditionalAccessPolicies", js.undefined)
+    
+    inline def setAppliedConditionalAccessPoliciesVarargs(value: AppliedConditionalAccessPolicy*): Self = StObject.set(x, "appliedConditionalAccessPolicies", js.Array(value*))
+    
+    inline def setClientAppUsed(value: NullableOption[String]): Self = StObject.set(x, "clientAppUsed", value.asInstanceOf[js.Any])
+    
+    inline def setClientAppUsedNull: Self = StObject.set(x, "clientAppUsed", null)
+    
+    inline def setClientAppUsedUndefined: Self = StObject.set(x, "clientAppUsed", js.undefined)
+    
+    inline def setConditionalAccessStatus(value: NullableOption[ConditionalAccessStatus]): Self = StObject.set(x, "conditionalAccessStatus", value.asInstanceOf[js.Any])
+    
+    inline def setConditionalAccessStatusNull: Self = StObject.set(x, "conditionalAccessStatus", null)
+    
+    inline def setConditionalAccessStatusUndefined: Self = StObject.set(x, "conditionalAccessStatus", js.undefined)
+    
+    inline def setCorrelationId(value: NullableOption[String]): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
+    
+    inline def setCorrelationIdNull: Self = StObject.set(x, "correlationId", null)
+    
+    inline def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
+    
+    inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    
+    inline def setDeviceDetail(value: NullableOption[DeviceDetail]): Self = StObject.set(x, "deviceDetail", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceDetailNull: Self = StObject.set(x, "deviceDetail", null)
+    
+    inline def setDeviceDetailUndefined: Self = StObject.set(x, "deviceDetail", js.undefined)
+    
+    inline def setIpAddress(value: NullableOption[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressNull: Self = StObject.set(x, "ipAddress", null)
+    
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    
+    inline def setIsInteractive(value: NullableOption[Boolean]): Self = StObject.set(x, "isInteractive", value.asInstanceOf[js.Any])
+    
+    inline def setIsInteractiveNull: Self = StObject.set(x, "isInteractive", null)
+    
+    inline def setIsInteractiveUndefined: Self = StObject.set(x, "isInteractive", js.undefined)
+    
+    inline def setLocation(value: NullableOption[SignInLocation]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setResourceDisplayName(value: NullableOption[String]): Self = StObject.set(x, "resourceDisplayName", value.asInstanceOf[js.Any])
+    
+    inline def setResourceDisplayNameNull: Self = StObject.set(x, "resourceDisplayName", null)
+    
+    inline def setResourceDisplayNameUndefined: Self = StObject.set(x, "resourceDisplayName", js.undefined)
+    
+    inline def setResourceId(value: NullableOption[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    
+    inline def setResourceIdNull: Self = StObject.set(x, "resourceId", null)
+    
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    
+    inline def setRiskDetail(value: NullableOption[RiskDetail]): Self = StObject.set(x, "riskDetail", value.asInstanceOf[js.Any])
+    
+    inline def setRiskDetailNull: Self = StObject.set(x, "riskDetail", null)
+    
+    inline def setRiskDetailUndefined: Self = StObject.set(x, "riskDetail", js.undefined)
+    
+    inline def setRiskEventTypes(value: NullableOption[js.Array[RiskEventType]]): Self = StObject.set(x, "riskEventTypes", value.asInstanceOf[js.Any])
+    
+    inline def setRiskEventTypesNull: Self = StObject.set(x, "riskEventTypes", null)
+    
+    inline def setRiskEventTypesUndefined: Self = StObject.set(x, "riskEventTypes", js.undefined)
+    
+    inline def setRiskEventTypesVarargs(value: RiskEventType*): Self = StObject.set(x, "riskEventTypes", js.Array(value*))
+    
+    inline def setRiskEventTypes_v2(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "riskEventTypes_v2", value.asInstanceOf[js.Any])
+    
+    inline def setRiskEventTypes_v2Null: Self = StObject.set(x, "riskEventTypes_v2", null)
+    
+    inline def setRiskEventTypes_v2Undefined: Self = StObject.set(x, "riskEventTypes_v2", js.undefined)
+    
+    inline def setRiskEventTypes_v2Varargs(value: String*): Self = StObject.set(x, "riskEventTypes_v2", js.Array(value*))
+    
+    inline def setRiskLevelAggregated(value: NullableOption[RiskLevel]): Self = StObject.set(x, "riskLevelAggregated", value.asInstanceOf[js.Any])
+    
+    inline def setRiskLevelAggregatedNull: Self = StObject.set(x, "riskLevelAggregated", null)
+    
+    inline def setRiskLevelAggregatedUndefined: Self = StObject.set(x, "riskLevelAggregated", js.undefined)
+    
+    inline def setRiskLevelDuringSignIn(value: NullableOption[RiskLevel]): Self = StObject.set(x, "riskLevelDuringSignIn", value.asInstanceOf[js.Any])
+    
+    inline def setRiskLevelDuringSignInNull: Self = StObject.set(x, "riskLevelDuringSignIn", null)
+    
+    inline def setRiskLevelDuringSignInUndefined: Self = StObject.set(x, "riskLevelDuringSignIn", js.undefined)
+    
+    inline def setRiskState(value: NullableOption[RiskState]): Self = StObject.set(x, "riskState", value.asInstanceOf[js.Any])
+    
+    inline def setRiskStateNull: Self = StObject.set(x, "riskState", null)
+    
+    inline def setRiskStateUndefined: Self = StObject.set(x, "riskState", js.undefined)
+    
+    inline def setStatus(value: NullableOption[SignInStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setUserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
+    
+    inline def setUserDisplayNameNull: Self = StObject.set(x, "userDisplayName", null)
+    
+    inline def setUserDisplayNameUndefined: Self = StObject.set(x, "userDisplayName", js.undefined)
+    
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    
+    inline def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
+    
+    inline def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
+    
+    inline def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
+  }
 }
-

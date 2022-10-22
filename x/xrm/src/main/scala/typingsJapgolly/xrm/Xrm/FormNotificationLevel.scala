@@ -1,8 +1,8 @@
 package typingsJapgolly.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Form Notification Levels for {@link Ui.setFormNotification formContext.ui.setFormNotification()}.
@@ -13,16 +13,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.INFO
   - typingsJapgolly.xrm.xrmStrings.WARNING
 */
-trait FormNotificationLevel extends js.Object
-
+trait FormNotificationLevel extends StObject
 object FormNotificationLevel {
-  @scala.inline
-  def ERROR: typingsJapgolly.xrm.xrmStrings.ERROR = this.cast("ERROR")
-  @scala.inline
-  def INFO: typingsJapgolly.xrm.xrmStrings.INFO = this.cast("INFO")
-  @scala.inline
-  def WARNING: typingsJapgolly.xrm.xrmStrings.WARNING = this.cast("WARNING")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ERROR: typingsJapgolly.xrm.xrmStrings.ERROR = "ERROR".asInstanceOf[typingsJapgolly.xrm.xrmStrings.ERROR]
+  
+  inline def INFO: typingsJapgolly.xrm.xrmStrings.INFO = "INFO".asInstanceOf[typingsJapgolly.xrm.xrmStrings.INFO]
+  
+  inline def WARNING: typingsJapgolly.xrm.xrmStrings.WARNING = "WARNING".asInstanceOf[typingsJapgolly.xrm.xrmStrings.WARNING]
 }
-

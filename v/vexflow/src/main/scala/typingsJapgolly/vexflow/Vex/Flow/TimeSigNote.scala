@@ -1,16 +1,18 @@
 package typingsJapgolly.vexflow.Vex.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Vex.Flow.TimeSigNote")
 @js.native
-class TimeSigNote protected () extends Note {
-  def this(timeSpec: String, customPadding: Double) = this()
+trait TimeSigNote
+  extends StObject
+     with Note {
+  
   def addToModifierContext(): TimeSigNote = js.native
+  
   def draw(): Unit = js.native
+  
   @JSName("setStave")
   def setStave_Unit(stave: Stave): Unit = js.native
 }
-

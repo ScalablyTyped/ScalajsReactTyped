@@ -1,23 +1,32 @@
 package typingsJapgolly.apolloProtobufjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IFetchOptions extends js.Object {
+trait IFetchOptions extends StObject {
+  
   /** Whether expecting a binary response */
   var binary: js.UndefOr[Boolean] = js.undefined
+  
   /** If `true`, forces the use of XMLHttpRequest */
   var xhr: js.UndefOr[Boolean] = js.undefined
 }
-
 object IFetchOptions {
-  @scala.inline
-  def apply(binary: js.UndefOr[Boolean] = js.undefined, xhr: js.UndefOr[Boolean] = js.undefined): IFetchOptions = {
+  
+  inline def apply(): IFetchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
-    if (!js.isUndefined(xhr)) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFetchOptions]
   }
+  
+  extension [Self <: IFetchOptions](x: Self) {
+    
+    inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    
+    inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    
+    inline def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+  }
 }
-

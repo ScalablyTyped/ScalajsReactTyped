@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PDFViewerPdfjsProcessing extends js.Object {
-  var file: js.UndefOr[js.Any | String] = js.undefined
+trait PDFViewerPdfjsProcessing extends StObject {
+  
+  var file: js.UndefOr[Any | String] = js.undefined
 }
-
 object PDFViewerPdfjsProcessing {
-  @scala.inline
-  def apply(file: js.Any | String = null): PDFViewerPdfjsProcessing = {
+  
+  inline def apply(): PDFViewerPdfjsProcessing = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerPdfjsProcessing]
   }
+  
+  extension [Self <: PDFViewerPdfjsProcessing](x: Self) {
+    
+    inline def setFile(value: Any | String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+  }
 }
-

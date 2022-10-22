@@ -1,43 +1,24 @@
 package typingsJapgolly.uifabricUtilities.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.uifabricUtilities.baseComponentTypesMod.IBaseProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.uifabricUtilities.libBaseComponentDottypesMod.IBaseProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This component has complicated props, you'll have to assemble `props` yourself using js.Dynamic.literal(...) or similar. */
+/* The props of this component has an unsupported shape. You can use `set` manually to use it, but with no compiler support :/ . Could't extract props from TProps because couldn't resolve ClassTree. */
 object BaseComponent {
-  def apply[TProps /* <: IBaseProps[js.Any] */, TState](
-    props: TProps with js.Object,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    TProps with js.Object, 
-    typingsJapgolly.uifabricUtilities.mod.BaseComponent[TProps, TState], 
-    Unit, 
-    TProps with js.Object
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      js.Dynamic.global.Object.assign(__obj, props)
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
+  def apply[TProps /* <: IBaseProps[Any] */, TState](p: TProps): Builder[TProps, TState] = new Builder[TProps, TState](js.Array(this.component, p.asInstanceOf[js.Any]))
   
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  TProps with js.Object, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.uifabricUtilities.mod.BaseComponent[TProps, TState]](this.componentImport)
-    f(__obj.asInstanceOf[TProps with js.Object])(children: _*)
-  }
   @JSImport("@uifabric/utilities", "BaseComponent")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[TProps /* <: IBaseProps[Any] */, TState] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.uifabricUtilities.mod.BaseComponent[TProps, TState]]
+  
+  implicit def make[TProps /* <: IBaseProps[Any] */, TState](companion: BaseComponent.type): Builder[TProps, TState] = new Builder[TProps, TState](js.Array(this.component, js.Dictionary.empty))()
 }
-

@@ -1,24 +1,33 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DocumentSentimentResults. */
-trait DocumentSentimentResults extends js.Object {
+trait DocumentSentimentResults extends StObject {
+  
   /** Indicates whether the sentiment is positive, neutral, or negative. */
   var label: js.UndefOr[String] = js.undefined
+  
   /** Sentiment score from -1 (negative) to 1 (positive). */
   var score: js.UndefOr[Double] = js.undefined
 }
-
 object DocumentSentimentResults {
-  @scala.inline
-  def apply(label: String = null, score: Int | Double = null): DocumentSentimentResults = {
+  
+  inline def apply(): DocumentSentimentResults = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSentimentResults]
   }
+  
+  extension [Self <: DocumentSentimentResults](x: Self) {
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+  }
 }
-

@@ -2,210 +2,322 @@ package typingsJapgolly.extjs.Ext.form
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.extjs.Ext.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.extjs.Ext.IClass because Already inherited
 - typingsJapgolly.extjs.Ext.IBase because Already inherited
-- typingsJapgolly.extjs.Ext.form.field.IField because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, disabled, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined name, submitValue, validateOnChange, value, isFormField, originalValue, batchChanges, beforeReset, checkChange, checkDirty, clearInvalid, extractFileInput, getErrors, getModelData, getName, getSubmitData, getValue, initField, initValue, isDirty, isEqual, isFileUpload, isValid, markInvalid, reset, resetOriginalValue, setValue, transformOriginalValue, validate */ trait ICheckboxGroup extends IFieldContainer {
+- typingsJapgolly.extjs.Ext.form.field.IField because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, disabled, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined name, submitValue, validateOnChange, value, isFormField, originalValue, batchChanges, beforeReset, checkChange, checkDirty, clearInvalid, extractFileInput, getErrors, getModelData, getName, getSubmitData, getValue, initField, initValue, isDirty, isEqual, isFileUpload, isValid, markInvalid, reset, resetOriginalValue, setValue, transformOriginalValue, validate */ trait ICheckboxGroup
+  extends StObject
+     with IFieldContainer {
+  
   /** [Config Option] (Boolean) */
   var allowBlank: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] A utility for grouping a set of modifications which may trigger value changes into a single transaction to prevent e
-  		* @param fn Object A function containing the transaction code
-  		*/
-  var batchChanges: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param fn Object A function containing the transaction code
+    */
+  var batchChanges: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Template method before a field is reset  */
   var beforeReset: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Config Option] (String) */
   var blankText: js.UndefOr[String] = js.undefined
+  
   /** [Method] Checks whether the value of the field has changed since the last time it was checked  */
   var checkChange: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Method] Checks the isDirty state of the field and if it has changed since the last time it was checked fires the dirtychange  */
   var checkDirty: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Method] Clear any invalid styles messages for this field  */
   var clearInvalid: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Config Option] (String/Number/Number[]) */
-  var columns: js.UndefOr[js.Any] = js.undefined
+  var columns: js.UndefOr[Any] = js.undefined
+  
   /** [Method] Only relevant if the instance s isFileUpload method returns true
-  		* @returns HTMLElement
-  		*/
-  var extractFileInput: js.UndefOr[js.Function0[_ | HTMLElement]] = js.undefined
+    * @returns HTMLElement
+    */
+  var extractFileInput: js.UndefOr[js.Function0[Any | HTMLElement]] = js.undefined
+  
   /** [Method] Returns an Array of all checkboxes in the container which are currently checked
-  		* @returns Ext.form.field.Checkbox[] Array of Ext.form.field.Checkbox components
-  		*/
+    * @returns Ext.form.field.Checkbox[] Array of Ext.form.field.Checkbox components
+    */
   var getChecked: js.UndefOr[js.Function0[Array]] = js.undefined
+  
   /** [Method] Runs CheckboxGroup s validations and returns an array of any errors
-  		* @returns String[] Array of all validation errors
-  		*/
-  var getErrors: js.UndefOr[js.Function0[Array] | (js.Function1[/* value */ js.UndefOr[js.Any], _])] = js.undefined
+    * @returns String[] Array of all validation errors
+    */
+  var getErrors: js.UndefOr[js.Function0[Array] | (js.Function1[/* value */ js.UndefOr[Any], Any])] = js.undefined
+  
   /** [Method] Don t return any data for the model the form will get the info from the individual checkboxes themselves
-  		* @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
-  		*/
-  var getModelData: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
+    */
+  var getModelData: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the name attribute of the field
-  		* @returns String name The field name
-  		*/
+    * @returns String name The field name
+    */
   var getName: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Don t return any data for submit the form will get the info from the individual checkboxes themselves
-  		* @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
-  		*/
-  var getSubmitData: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
+    */
+  var getSubmitData: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns an object containing the values of all checked checkboxes within the group  */
-  var getValue: js.UndefOr[js.Function0[_ | Unit]] = js.undefined
+  var getValue: js.UndefOr[js.Function0[Any | Unit]] = js.undefined
+  
   /** [Method] Initializes this Field mixin on the current instance  */
   var initField: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Method] Initializes the field s value based on the initial config  */
   var initValue: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Method] private override
-  		* @returns Boolean True if this field has been changed from its original value (and is not disabled), false otherwise.
-  		*/
-  var isDirty: js.UndefOr[js.Function0[_ | Boolean]] = js.undefined
+    * @returns Boolean True if this field has been changed from its original value (and is not disabled), false otherwise.
+    */
+  var isDirty: js.UndefOr[js.Function0[Any | Boolean]] = js.undefined
+  
   /** [Method] private override  the group value is a complex object compare using object serialization
-  		* @param value1 Object
-  		* @param value2 Object
-  		* @returns Boolean True if the values are equal, false if inequal.
-  		*/
-  var isEqual: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], _ | Boolean]] = js.undefined
+    * @param value1 Object
+    * @param value2 Object
+    * @returns Boolean True if the values are equal, false if inequal.
+    */
+  var isEqual: js.UndefOr[js.Function2[js.UndefOr[Any], js.UndefOr[Any], Any | Boolean]] = js.undefined
+  
   /** [Method] Returns whether this Field is a file upload field if it returns true forms will use special techniques for submitti
-  		* @returns Boolean
-  		*/
-  var isFileUpload: js.UndefOr[js.Function0[_ | Boolean]] = js.undefined
+    * @returns Boolean
+    */
+  var isFileUpload: js.UndefOr[js.Function0[Any | Boolean]] = js.undefined
+  
   /** [Property] (Boolean) */
   var isFormField: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value
-  		* @returns Boolean True if the value is valid, else false
-  		*/
-  var isValid: js.UndefOr[js.Function0[_ | Boolean]] = js.undefined
+    * @returns Boolean True if the value is valid, else false
+    */
+  var isValid: js.UndefOr[js.Function0[Any | Boolean]] = js.undefined
+  
   /** [Method] Associate one or more error messages with this field
-  		* @param errors String/String[] The error message(s) for the field.
-  		*/
-  var markInvalid: js.UndefOr[js.Function1[js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param errors String/String[] The error message(s) for the field.
+    */
+  var markInvalid: js.UndefOr[js.Function1[js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Config Option] (String) */
   var name: js.UndefOr[String] = js.undefined
+  
   /** [Method] When a checkbox is added to the group monitor it for changes
-  		* @param field Object
-  		*/
+    * @param field Object
+    */
   @JSName("onAdd")
-  var onAdd_ICheckboxGroup: js.UndefOr[js.Function1[/* field */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onAdd_ICheckboxGroup: js.UndefOr[js.Function1[/* field */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Called when a Ext form Labelable instance is removed from the container s subtree
-  		* @param item Object
-  		*/
+    * @param item Object
+    */
   @JSName("onRemove")
-  var onRemove_ICheckboxGroup: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onRemove_ICheckboxGroup: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Property] (Object) */
-  var originalValue: js.UndefOr[js.Any] = js.undefined
+  var originalValue: js.UndefOr[Any] = js.undefined
+  
   /** [Method] Resets the checked state of all checkboxes in the group to their originally loaded values and clears any validation m  */
   var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Method] Resets the field s originalValue property so it matches the current value  */
   var resetOriginalValue: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Method] Sets the value s of all checkboxes in the group
-  		* @param value Object The mapping of checkbox names to values.
-  		* @returns Ext.form.CheckboxGroup this
-  		*/
-  var setValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], this.type | _]] = js.undefined
+    * @param value Object The mapping of checkbox names to values.
+    * @returns Ext.form.CheckboxGroup this
+    */
+  var setValue: js.UndefOr[js.Function1[js.UndefOr[Any], this.type | Any]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var submitValue: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Allows for any necessary modifications before the original value is set
-  		* @param value Object The initial value
-  		* @returns Object The modified initial value
-  		*/
-  var transformOriginalValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.undefined
+    * @param value Object The initial value
+    * @returns Object The modified initial value
+    */
+  var transformOriginalValue: js.UndefOr[js.Function1[js.UndefOr[Any], Any]] = js.undefined
+  
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value and fires the vali
-  		* @returns Boolean True if the value is valid, else false
-  		*/
-  var validate: js.UndefOr[js.Function0[_ | Boolean]] = js.undefined
+    * @returns Boolean True if the value is valid, else false
+    */
+  var validate: js.UndefOr[js.Function0[Any | Boolean]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var validateOnChange: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Object) */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var vertical: js.UndefOr[Boolean] = js.undefined
 }
-
 object ICheckboxGroup {
-  @scala.inline
-  def apply(
-    IFieldContainer: IFieldContainer = null,
-    allowBlank: js.UndefOr[Boolean] = js.undefined,
-    batchChanges: js.UndefOr[js.Any] => Callback = null,
-    beforeReset: js.UndefOr[Callback] = js.undefined,
-    blankText: String = null,
-    checkChange: js.UndefOr[Callback] = js.undefined,
-    checkDirty: js.UndefOr[Callback] = js.undefined,
-    clearInvalid: js.UndefOr[Callback] = js.undefined,
-    columns: js.Any = null,
-    extractFileInput: js.UndefOr[CallbackTo[js.Any | HTMLElement]] = js.undefined,
-    getChecked: js.UndefOr[CallbackTo[Array]] = js.undefined,
-    getErrors: js.Function0[Array] | (js.Function1[/* value */ js.UndefOr[js.Any], _]) = null,
-    getModelData: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getName: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getSubmitData: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getValue: js.UndefOr[CallbackTo[js.Any | Unit]] = js.undefined,
-    initField: js.UndefOr[Callback] = js.undefined,
-    initValue: js.UndefOr[Callback] = js.undefined,
-    isDirty: js.UndefOr[CallbackTo[js.Any | Boolean]] = js.undefined,
-    isEqual: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => CallbackTo[js.Any | Boolean] = null,
-    isFileUpload: js.UndefOr[CallbackTo[js.Any | Boolean]] = js.undefined,
-    isFormField: js.UndefOr[Boolean] = js.undefined,
-    isValid: js.UndefOr[CallbackTo[js.Any | Boolean]] = js.undefined,
-    markInvalid: js.UndefOr[js.Any] => Callback = null,
-    name: String = null,
-    onAdd: /* field */ js.UndefOr[js.Any] => Callback = null,
-    onRemove: /* item */ js.UndefOr[js.Any] => Callback = null,
-    originalValue: js.Any = null,
-    reset: js.UndefOr[Callback] = js.undefined,
-    resetOriginalValue: js.UndefOr[Callback] = js.undefined,
-    setValue: js.UndefOr[js.Any] => CallbackTo[ICheckboxGroup | js.Any] = null,
-    submitValue: js.UndefOr[Boolean] = js.undefined,
-    transformOriginalValue: js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    validate: js.UndefOr[CallbackTo[js.Any | Boolean]] = js.undefined,
-    validateOnChange: js.UndefOr[Boolean] = js.undefined,
-    value: js.Any = null,
-    vertical: js.UndefOr[Boolean] = js.undefined
-  ): ICheckboxGroup = {
+  
+  inline def apply(): ICheckboxGroup = {
     val __obj = js.Dynamic.literal()
-    if (IFieldContainer != null) js.Dynamic.global.Object.assign(__obj, IFieldContainer)
-    if (!js.isUndefined(allowBlank)) __obj.updateDynamic("allowBlank")(allowBlank.asInstanceOf[js.Any])
-    if (batchChanges != null) __obj.updateDynamic("batchChanges")(js.Any.fromFunction1((t0: js.UndefOr[js.Any]) => batchChanges(t0).runNow()))
-    beforeReset.foreach(p => __obj.updateDynamic("beforeReset")(p.toJsFn))
-    if (blankText != null) __obj.updateDynamic("blankText")(blankText.asInstanceOf[js.Any])
-    checkChange.foreach(p => __obj.updateDynamic("checkChange")(p.toJsFn))
-    checkDirty.foreach(p => __obj.updateDynamic("checkDirty")(p.toJsFn))
-    clearInvalid.foreach(p => __obj.updateDynamic("clearInvalid")(p.toJsFn))
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    extractFileInput.foreach(p => __obj.updateDynamic("extractFileInput")(p.toJsFn))
-    getChecked.foreach(p => __obj.updateDynamic("getChecked")(p.toJsFn))
-    if (getErrors != null) __obj.updateDynamic("getErrors")(getErrors.asInstanceOf[js.Any])
-    getModelData.foreach(p => __obj.updateDynamic("getModelData")(p.toJsFn))
-    getName.foreach(p => __obj.updateDynamic("getName")(p.toJsFn))
-    getSubmitData.foreach(p => __obj.updateDynamic("getSubmitData")(p.toJsFn))
-    getValue.foreach(p => __obj.updateDynamic("getValue")(p.toJsFn))
-    initField.foreach(p => __obj.updateDynamic("initField")(p.toJsFn))
-    initValue.foreach(p => __obj.updateDynamic("initValue")(p.toJsFn))
-    isDirty.foreach(p => __obj.updateDynamic("isDirty")(p.toJsFn))
-    if (isEqual != null) __obj.updateDynamic("isEqual")(js.Any.fromFunction2((t0: js.UndefOr[js.Any], t1: js.UndefOr[js.Any]) => isEqual(t0, t1).runNow()))
-    isFileUpload.foreach(p => __obj.updateDynamic("isFileUpload")(p.toJsFn))
-    if (!js.isUndefined(isFormField)) __obj.updateDynamic("isFormField")(isFormField.asInstanceOf[js.Any])
-    isValid.foreach(p => __obj.updateDynamic("isValid")(p.toJsFn))
-    if (markInvalid != null) __obj.updateDynamic("markInvalid")(js.Any.fromFunction1((t0: js.UndefOr[js.Any]) => markInvalid(t0).runNow()))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1((t0: /* field */ js.UndefOr[js.Any]) => onAdd(t0).runNow()))
-    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1((t0: /* item */ js.UndefOr[js.Any]) => onRemove(t0).runNow()))
-    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue.asInstanceOf[js.Any])
-    reset.foreach(p => __obj.updateDynamic("reset")(p.toJsFn))
-    resetOriginalValue.foreach(p => __obj.updateDynamic("resetOriginalValue")(p.toJsFn))
-    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1((t0: js.UndefOr[js.Any]) => setValue(t0).runNow()))
-    if (!js.isUndefined(submitValue)) __obj.updateDynamic("submitValue")(submitValue.asInstanceOf[js.Any])
-    if (transformOriginalValue != null) __obj.updateDynamic("transformOriginalValue")(js.Any.fromFunction1((t0: js.UndefOr[js.Any]) => transformOriginalValue(t0).runNow()))
-    validate.foreach(p => __obj.updateDynamic("validate")(p.toJsFn))
-    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckboxGroup]
   }
+  
+  extension [Self <: ICheckboxGroup](x: Self) {
+    
+    inline def setAllowBlank(value: Boolean): Self = StObject.set(x, "allowBlank", value.asInstanceOf[js.Any])
+    
+    inline def setAllowBlankUndefined: Self = StObject.set(x, "allowBlank", js.undefined)
+    
+    inline def setBatchChanges(value: js.UndefOr[Any] => Callback): Self = StObject.set(x, "batchChanges", js.Any.fromFunction1((t0: js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setBatchChangesUndefined: Self = StObject.set(x, "batchChanges", js.undefined)
+    
+    inline def setBeforeReset(value: Callback): Self = StObject.set(x, "beforeReset", value.toJsFn)
+    
+    inline def setBeforeResetUndefined: Self = StObject.set(x, "beforeReset", js.undefined)
+    
+    inline def setBlankText(value: String): Self = StObject.set(x, "blankText", value.asInstanceOf[js.Any])
+    
+    inline def setBlankTextUndefined: Self = StObject.set(x, "blankText", js.undefined)
+    
+    inline def setCheckChange(value: Callback): Self = StObject.set(x, "checkChange", value.toJsFn)
+    
+    inline def setCheckChangeUndefined: Self = StObject.set(x, "checkChange", js.undefined)
+    
+    inline def setCheckDirty(value: Callback): Self = StObject.set(x, "checkDirty", value.toJsFn)
+    
+    inline def setCheckDirtyUndefined: Self = StObject.set(x, "checkDirty", js.undefined)
+    
+    inline def setClearInvalid(value: Callback): Self = StObject.set(x, "clearInvalid", value.toJsFn)
+    
+    inline def setClearInvalidUndefined: Self = StObject.set(x, "clearInvalid", js.undefined)
+    
+    inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setExtractFileInput(value: CallbackTo[Any | HTMLElement]): Self = StObject.set(x, "extractFileInput", value.toJsFn)
+    
+    inline def setExtractFileInputUndefined: Self = StObject.set(x, "extractFileInput", js.undefined)
+    
+    inline def setGetChecked(value: CallbackTo[Array]): Self = StObject.set(x, "getChecked", value.toJsFn)
+    
+    inline def setGetCheckedUndefined: Self = StObject.set(x, "getChecked", js.undefined)
+    
+    inline def setGetErrors(value: js.Function0[Array] | (js.Function1[/* value */ js.UndefOr[Any], Any])): Self = StObject.set(x, "getErrors", value.asInstanceOf[js.Any])
+    
+    inline def setGetErrorsCallbackTo(value: CallbackTo[Array]): Self = StObject.set(x, "getErrors", value.toJsFn)
+    
+    inline def setGetErrorsFunction1(value: /* value */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getErrors", js.Any.fromFunction1(value))
+    
+    inline def setGetErrorsUndefined: Self = StObject.set(x, "getErrors", js.undefined)
+    
+    inline def setGetModelData(value: CallbackTo[Any]): Self = StObject.set(x, "getModelData", value.toJsFn)
+    
+    inline def setGetModelDataUndefined: Self = StObject.set(x, "getModelData", js.undefined)
+    
+    inline def setGetName(value: CallbackTo[String]): Self = StObject.set(x, "getName", value.toJsFn)
+    
+    inline def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
+    
+    inline def setGetSubmitData(value: CallbackTo[Any]): Self = StObject.set(x, "getSubmitData", value.toJsFn)
+    
+    inline def setGetSubmitDataUndefined: Self = StObject.set(x, "getSubmitData", js.undefined)
+    
+    inline def setGetValue(value: CallbackTo[Any | Unit]): Self = StObject.set(x, "getValue", value.toJsFn)
+    
+    inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
+    
+    inline def setInitField(value: Callback): Self = StObject.set(x, "initField", value.toJsFn)
+    
+    inline def setInitFieldUndefined: Self = StObject.set(x, "initField", js.undefined)
+    
+    inline def setInitValue(value: Callback): Self = StObject.set(x, "initValue", value.toJsFn)
+    
+    inline def setInitValueUndefined: Self = StObject.set(x, "initValue", js.undefined)
+    
+    inline def setIsDirty(value: CallbackTo[Any | Boolean]): Self = StObject.set(x, "isDirty", value.toJsFn)
+    
+    inline def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
+    
+    inline def setIsEqual(value: (js.UndefOr[Any], js.UndefOr[Any]) => Any | Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
+    
+    inline def setIsEqualUndefined: Self = StObject.set(x, "isEqual", js.undefined)
+    
+    inline def setIsFileUpload(value: CallbackTo[Any | Boolean]): Self = StObject.set(x, "isFileUpload", value.toJsFn)
+    
+    inline def setIsFileUploadUndefined: Self = StObject.set(x, "isFileUpload", js.undefined)
+    
+    inline def setIsFormField(value: Boolean): Self = StObject.set(x, "isFormField", value.asInstanceOf[js.Any])
+    
+    inline def setIsFormFieldUndefined: Self = StObject.set(x, "isFormField", js.undefined)
+    
+    inline def setIsValid(value: CallbackTo[Any | Boolean]): Self = StObject.set(x, "isValid", value.toJsFn)
+    
+    inline def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
+    
+    inline def setMarkInvalid(value: js.UndefOr[Any] => Callback): Self = StObject.set(x, "markInvalid", js.Any.fromFunction1((t0: js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setMarkInvalidUndefined: Self = StObject.set(x, "markInvalid", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOnAdd(value: /* field */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "onAdd", js.Any.fromFunction1((t0: /* field */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+    
+    inline def setOnRemove(value: /* item */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "onRemove", js.Any.fromFunction1((t0: /* item */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
+    
+    inline def setOriginalValue(value: Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalValueUndefined: Self = StObject.set(x, "originalValue", js.undefined)
+    
+    inline def setReset(value: Callback): Self = StObject.set(x, "reset", value.toJsFn)
+    
+    inline def setResetOriginalValue(value: Callback): Self = StObject.set(x, "resetOriginalValue", value.toJsFn)
+    
+    inline def setResetOriginalValueUndefined: Self = StObject.set(x, "resetOriginalValue", js.undefined)
+    
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    
+    inline def setSetValue(value: js.UndefOr[Any] => ICheckboxGroup | Any): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    
+    inline def setSubmitValue(value: Boolean): Self = StObject.set(x, "submitValue", value.asInstanceOf[js.Any])
+    
+    inline def setSubmitValueUndefined: Self = StObject.set(x, "submitValue", js.undefined)
+    
+    inline def setTransformOriginalValue(value: js.UndefOr[Any] => Any): Self = StObject.set(x, "transformOriginalValue", js.Any.fromFunction1(value))
+    
+    inline def setTransformOriginalValueUndefined: Self = StObject.set(x, "transformOriginalValue", js.undefined)
+    
+    inline def setValidate(value: CallbackTo[Any | Boolean]): Self = StObject.set(x, "validate", value.toJsFn)
+    
+    inline def setValidateOnChange(value: Boolean): Self = StObject.set(x, "validateOnChange", value.asInstanceOf[js.Any])
+    
+    inline def setValidateOnChangeUndefined: Self = StObject.set(x, "validateOnChange", js.undefined)
+    
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+  }
 }
-

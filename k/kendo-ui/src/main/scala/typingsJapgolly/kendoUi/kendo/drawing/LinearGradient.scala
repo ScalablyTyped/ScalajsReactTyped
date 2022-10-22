@@ -1,21 +1,23 @@
 package typingsJapgolly.kendoUi.kendo.drawing
 
 import typingsJapgolly.kendoUi.kendo.geometry.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.drawing.LinearGradient")
 @js.native
-class LinearGradient () extends Gradient {
-  def this(options: LinearGradientOptions) = this()
+trait LinearGradient
+  extends StObject
+     with Gradient {
+  
+  def end(): Point = js.native
+  def end(end: Any): Unit = js.native
+  def end(end: Point): Unit = js.native
+  
   @JSName("options")
   var options_LinearGradient: LinearGradientOptions = js.native
-  def end(): Point = js.native
-  def end(end: js.Any): Unit = js.native
-  def end(end: Point): Unit = js.native
+  
   def start(): Point = js.native
-  def start(start: js.Any): Unit = js.native
+  def start(start: Any): Unit = js.native
   def start(start: Point): Unit = js.native
 }
-

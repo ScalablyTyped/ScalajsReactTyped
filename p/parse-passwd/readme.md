@@ -11,9 +11,9 @@ Parse a passwd file into a list of users.
 | Full name          | parse-passwd |
 | Keywords           | etc, etc-passwd, etc/passwd, parse, parse-passwd, passwd |
 | # releases         | 1 |
-| # dependents       | 16 |
-| # downloads        | 212116928 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0875659666666668E7 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/doowb/parse-passwd)

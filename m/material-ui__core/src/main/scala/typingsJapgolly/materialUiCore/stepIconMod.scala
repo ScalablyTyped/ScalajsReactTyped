@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.stepIconStepIconMod.StepIconProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/StepIcon", JSImport.Namespace)
-@js.native
-object stepIconMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[StepIconProps, ComponentState, js.Any] {
-    def this(props: StepIconProps) = this()
-    def this(props: StepIconProps, context: js.Any) = this()
-  }
+object stepIconMod {
   
+  @JSImport("@material-ui/core/StepIcon", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[StepIconProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: StepIconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

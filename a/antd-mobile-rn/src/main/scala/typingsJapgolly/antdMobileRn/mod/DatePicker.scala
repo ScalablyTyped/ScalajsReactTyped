@@ -1,21 +1,29 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.AnonAntLocale
-import typingsJapgolly.antdMobileRn.AnonMinuteStep
-import typingsJapgolly.antdMobileRn.datePickerIndexNativeMod.default
+import typingsJapgolly.antdMobileRn.anon.AntLocale
+import typingsJapgolly.antdMobileRn.anon.MinuteStep
+import typingsJapgolly.antdMobileRn.libDatePickerIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "DatePicker")
 @js.native
-class DatePicker () extends default
-
+open class DatePicker () extends default
 /* static members */
-@JSImport("antd-mobile-rn", "DatePicker")
-@js.native
-object DatePicker extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonMinuteStep = js.native
+object DatePicker {
+  
+  @JSImport("antd-mobile-rn", "DatePicker")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "DatePicker.contextTypes")
+  @js.native
+  def contextTypes: AntLocale = js.native
+  inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile-rn", "DatePicker.defaultProps")
+  @js.native
+  def defaultProps: MinuteStep = js.native
+  inline def defaultProps_=(x: MinuteStep): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

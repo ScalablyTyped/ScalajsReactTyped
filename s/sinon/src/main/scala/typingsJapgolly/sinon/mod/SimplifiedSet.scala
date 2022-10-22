@@ -1,20 +1,22 @@
 package typingsJapgolly.sinon.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SimplifiedSet extends js.Object {
-  def has(el: js.Any): Boolean
+trait SimplifiedSet extends StObject {
+  
+  def has(el: Any): Boolean
 }
-
 object SimplifiedSet {
-  @scala.inline
-  def apply(has: js.Any => CallbackTo[Boolean]): SimplifiedSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("has")(js.Any.fromFunction1((t0: js.Any) => has(t0).runNow()))
+  
+  inline def apply(has: Any => Boolean): SimplifiedSet = {
+    val __obj = js.Dynamic.literal(has = js.Any.fromFunction1(has))
     __obj.asInstanceOf[SimplifiedSet]
   }
+  
+  extension [Self <: SimplifiedSet](x: Self) {
+    
+    inline def setHas(value: Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+  }
 }
-

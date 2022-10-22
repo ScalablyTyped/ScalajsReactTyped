@@ -1,30 +1,26 @@
 package typingsJapgolly.zetapushJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SmartClientOptions extends Options {
+trait SmartClientOptions
+  extends StObject
+     with Options {
+  
   var deployment: js.UndefOr[SmartClientDeployment] = js.undefined
 }
-
 object SmartClientOptions {
-  @scala.inline
-  def apply(
-    sandboxId: String,
-    apiUrl: String = null,
-    deployment: SmartClientDeployment = null,
-    forceHttps: js.UndefOr[Boolean] = js.undefined,
-    resource: String = null,
-    transports: js.Array[_] = null
-  ): SmartClientOptions = {
+  
+  inline def apply(sandboxId: String): SmartClientOptions = {
     val __obj = js.Dynamic.literal(sandboxId = sandboxId.asInstanceOf[js.Any])
-    if (apiUrl != null) __obj.updateDynamic("apiUrl")(apiUrl.asInstanceOf[js.Any])
-    if (deployment != null) __obj.updateDynamic("deployment")(deployment.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceHttps)) __obj.updateDynamic("forceHttps")(forceHttps.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartClientOptions]
   }
+  
+  extension [Self <: SmartClientOptions](x: Self) {
+    
+    inline def setDeployment(value: SmartClientDeployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+    
+    inline def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
+  }
 }
-

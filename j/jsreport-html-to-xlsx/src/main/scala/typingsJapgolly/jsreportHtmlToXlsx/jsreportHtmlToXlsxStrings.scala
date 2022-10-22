@@ -1,25 +1,25 @@
 package typingsJapgolly.jsreportHtmlToXlsx
 
-import typingsJapgolly.jsreportHtmlToXlsx.mod.jsreportCoreAugmentingMod.htmlEngine
+import typingsJapgolly.jsreportHtmlToXlsx.mod.htmlEngine
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsreportHtmlToXlsxStrings {
-  @js.native
-  sealed trait chrome extends htmlEngine
   
   @js.native
-  sealed trait `html-to-xlsx` extends js.Object
+  sealed trait chrome
+    extends StObject
+       with htmlEngine
+  inline def chrome: chrome = "chrome".asInstanceOf[chrome]
   
   @js.native
-  sealed trait phantom extends htmlEngine
+  sealed trait `html-to-xlsx` extends StObject
+  inline def `html-to-xlsx`: `html-to-xlsx` = "html-to-xlsx".asInstanceOf[`html-to-xlsx`]
   
-  @scala.inline
-  def chrome: chrome = "chrome".asInstanceOf[chrome]
-  @scala.inline
-  def `html-to-xlsx`: `html-to-xlsx` = "html-to-xlsx".asInstanceOf[`html-to-xlsx`]
-  @scala.inline
-  def phantom: phantom = "phantom".asInstanceOf[phantom]
+  @js.native
+  sealed trait phantom
+    extends StObject
+       with htmlEngine
+  inline def phantom: phantom = "phantom".asInstanceOf[phantom]
 }
-

@@ -1,33 +1,39 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.monacoEditor.mod.CancellationToken
 import typingsJapgolly.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentColorProvider extends js.Object {
+trait DocumentColorProvider extends StObject {
+  
   /**
     * Provide the string representations for a color.
     */
   def provideColorPresentations(model: ITextModel, colorInfo: IColorInformation, token: CancellationToken): ProviderResult[js.Array[IColorPresentation]]
+  
   /**
     * Provides the color ranges for a specific model.
     */
   def provideDocumentColors(model: ITextModel, token: CancellationToken): ProviderResult[js.Array[IColorInformation]]
 }
-
 object DocumentColorProvider {
-  @scala.inline
-  def apply(
-    provideColorPresentations: (ITextModel, IColorInformation, CancellationToken) => CallbackTo[ProviderResult[js.Array[IColorPresentation]]],
-    provideDocumentColors: (ITextModel, CancellationToken) => CallbackTo[ProviderResult[js.Array[IColorInformation]]]
+  
+  inline def apply(
+    provideColorPresentations: (ITextModel, IColorInformation, CancellationToken) => ProviderResult[js.Array[IColorPresentation]],
+    provideDocumentColors: (ITextModel, CancellationToken) => ProviderResult[js.Array[IColorInformation]]
   ): DocumentColorProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideColorPresentations")(js.Any.fromFunction3((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.languages.IColorInformation, t2: typingsJapgolly.monacoEditor.mod.CancellationToken) => provideColorPresentations(t0, t1, t2).runNow()))
-    __obj.updateDynamic("provideDocumentColors")(js.Any.fromFunction2((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.CancellationToken) => provideDocumentColors(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(provideColorPresentations = js.Any.fromFunction3(provideColorPresentations), provideDocumentColors = js.Any.fromFunction2(provideDocumentColors))
     __obj.asInstanceOf[DocumentColorProvider]
   }
+  
+  extension [Self <: DocumentColorProvider](x: Self) {
+    
+    inline def setProvideColorPresentations(
+      value: (ITextModel, IColorInformation, CancellationToken) => ProviderResult[js.Array[IColorPresentation]]
+    ): Self = StObject.set(x, "provideColorPresentations", js.Any.fromFunction3(value))
+    
+    inline def setProvideDocumentColors(value: (ITextModel, CancellationToken) => ProviderResult[js.Array[IColorInformation]]): Self = StObject.set(x, "provideDocumentColors", js.Any.fromFunction2(value))
+  }
 }
-

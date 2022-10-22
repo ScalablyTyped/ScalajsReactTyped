@@ -1,39 +1,37 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.YieldExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait YieldExpression_
-  extends Node
+  extends StObject
+     with Node
      with Expression
      with Terminatorless {
+  
   var argument: Expression
+  
   var delegate: Boolean
+  
   @JSName("type")
   var type_YieldExpression_ : YieldExpression
 }
-
 object YieldExpression_ {
-  @scala.inline
-  def apply(
-    argument: Expression,
-    delegate: Boolean,
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: YieldExpression,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): YieldExpression_ = {
+  
+  inline def apply(argument: Expression, delegate: Boolean, end: Double, loc: SourceLocation, start: Double): YieldExpression_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], delegate = delegate.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("YieldExpression")
     __obj.asInstanceOf[YieldExpression_]
   }
+  
+  extension [Self <: YieldExpression_](x: Self) {
+    
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    
+    inline def setDelegate(value: Boolean): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: YieldExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,20 +1,23 @@
 package typingsJapgolly.hapiJoi.mod
 
-import typingsJapgolly.hapiJoi.AnonFrom
+import typingsJapgolly.hapiJoi.anon.To
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExtensionTermManifest extends js.Object {
-  var mapped: AnonFrom
-}
-
-object ExtensionTermManifest {
-  @scala.inline
-  def apply(mapped: AnonFrom): ExtensionTermManifest = {
-    val __obj = js.Dynamic.literal(mapped = mapped.asInstanceOf[js.Any])
+trait ExtensionTermManifest extends StObject {
   
+  var mapped: To
+}
+object ExtensionTermManifest {
+  
+  inline def apply(mapped: To): ExtensionTermManifest = {
+    val __obj = js.Dynamic.literal(mapped = mapped.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionTermManifest]
   }
+  
+  extension [Self <: ExtensionTermManifest](x: Self) {
+    
+    inline def setMapped(value: To): Self = StObject.set(x, "mapped", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,19 +1,23 @@
 package typingsJapgolly.minecraftScriptingTypesServer
 
+import typingsJapgolly.minecraftScriptingTypesServer.minecraftScriptingTypesServerBooleans.`false`
+import typingsJapgolly.minecraftScriptingTypesServer.minecraftScriptingTypesServerBooleans.`true`
 import typingsJapgolly.minecraftScriptingTypesShared.IBlock
 import typingsJapgolly.minecraftScriptingTypesShared.IEntity
 import typingsJapgolly.minecraftScriptingTypesShared.IQuery
 import typingsJapgolly.minecraftScriptingTypesShared.ISystem
 import typingsJapgolly.minecraftScriptingTypesShared.ITickingArea
 import typingsJapgolly.minecraftScriptingTypesShared.VectorXYZ
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IServerSystem[TSystem]
-  extends ISystem[TSystem]
+  extends StObject
+     with ISystem[TSystem]
      with IVanillaServerSystemBase {
+  
   /**
     * Creates an entity and applies the specified template as defined in JSON. This allows you to quickly create an entity from the applied Behavior Packs as the base for an entity created in scripting. The entity will be spawned into the world with all the components, component groups, and event triggers that are defined in the JSON file of the identifier specified. Only works on scripts registered on the server.NOTE: Entities are created first on the server, with the client notified of new entities afterwards. Be aware that if you send the result object to the client right away, the created entity might not exist on the client yet.
     * @param type Specifies the type of the entity that is being created by the template. Valid inputs are `entity` and `item_entity`
@@ -22,6 +26,7 @@ trait IServerSystem[TSystem]
     * @return null Something went wrong when creating the entity
     */
   def createEntity(`type`: String, templateIdentifier: String): IEntity | Null = js.native
+  
   ////////////////////////////////////////////////
   // Commands
   ////////////////////////////////////////////////
@@ -32,6 +37,7 @@ trait IServerSystem[TSystem]
     * 
     */
   def executeCommand(command: String, callback: js.Function1[/* callback */ IExecuteCommandCallback, Unit]): Unit = js.native
+  
   /**
     * Allows you to get a block from the world when provided a JavaScript object containing a position. The block must be within a ticking area.
     * @param tickingArea The ticking area the block is in
@@ -53,6 +59,7 @@ trait IServerSystem[TSystem]
     * @return null Something went wrong when retrieving the block
     */
   def getBlock(tickingArea: ITickingArea, x: Double, y: Double, z: Double): IBlock | Null = js.native
+  
   /**
     * Allows you to get an array of blocks from the world when provided a minimum and maximum position. The blocks must be within a ticking area.
     * @param tickingArea The ticking area the blocks are in
@@ -83,6 +90,7 @@ trait IServerSystem[TSystem]
     yMax: Double,
     zMax: Double
   ): js.Array[js.Array[IBlock]] | Null = js.native
+  
   /**
     * Checks if the given entity has the specified component.
     * @param entityObject The EntityObject that was retrieved from a call to createEntity() or retrieved from an event
@@ -91,7 +99,7 @@ trait IServerSystem[TSystem]
     * @return false The EntityObject doesn't have the component
     * @return null An unknown component was passed in or something else went wrong when checking if the EntityObject had the component
     */
-  def hasComponent(entity: IEntity, componentIdentifier: String): Boolean | Null = js.native
+  def hasComponent(entityObject: IEntity, componentIdentifier: String): `true` | `false` | Null = js.native
   /**
     * Looks for the specified component in the entity. If it exists, retrieves the data from the component and returns it.
     * @param entity The `IEntityObject` that was retrieved from a call to `createEntity()` or retrieved from an event
@@ -99,6 +107,7 @@ trait IServerSystem[TSystem]
     * @returns true if the component is present, false if it is not, or null if an unknown component was passed in or something else went wrong when checking if the EntityObject had the component
     */
   def hasComponent(entity: IEntity, componentIdentifier: MinecraftComponent): Boolean | Null = js.native
+  
   /**
     * Allows you to register a query. A query will contain all entities that meet the filter requirement.
     * No filters are added by default when you register a query so it will capture all entities.
@@ -109,6 +118,10 @@ trait IServerSystem[TSystem]
   def registerQuery(component: String, componentField1: String): IQuery | Null = js.native
   def registerQuery(component: String, componentField1: String, componentField2: String): IQuery | Null = js.native
   def registerQuery(component: String, componentField1: String, componentField2: String, componentField3: String): IQuery | Null = js.native
+  def registerQuery(component: String, componentField1: String, componentField2: Unit, componentField3: String): IQuery | Null = js.native
+  def registerQuery(component: String, componentField1: Unit, componentField2: String): IQuery | Null = js.native
+  def registerQuery(component: String, componentField1: Unit, componentField2: String, componentField3: String): IQuery | Null = js.native
+  def registerQuery(component: String, componentField1: Unit, componentField2: Unit, componentField3: String): IQuery | Null = js.native
   /**
     * Allows you to register a query that will only show entities that have the given component and define which fields of that component will be used as a filter when getting the entities from the query.
     * 
@@ -126,5 +139,23 @@ trait IServerSystem[TSystem]
     componentField2: String,
     componentField3: String
   ): IQuery | Null = js.native
+  def registerQuery(
+    component: MinecraftComponent,
+    componentField1: String,
+    componentField2: Unit,
+    componentField3: String
+  ): IQuery | Null = js.native
+  def registerQuery(component: MinecraftComponent, componentField1: Unit, componentField2: String): IQuery | Null = js.native
+  def registerQuery(
+    component: MinecraftComponent,
+    componentField1: Unit,
+    componentField2: String,
+    componentField3: String
+  ): IQuery | Null = js.native
+  def registerQuery(
+    component: MinecraftComponent,
+    componentField1: Unit,
+    componentField2: Unit,
+    componentField3: String
+  ): IQuery | Null = js.native
 }
-

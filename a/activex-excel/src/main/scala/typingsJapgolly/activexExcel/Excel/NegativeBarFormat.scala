@@ -1,20 +1,61 @@
 package typingsJapgolly.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Excel.NegativeBarFormat")
-@js.native
-class NegativeBarFormat protected () extends js.Object {
-  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
-  val BorderColor: FormatColor = js.native
-  var BorderColorType: XlDataBarNegativeColorType = js.native
-  val Color: FormatColor = js.native
-  var ColorType: XlDataBarNegativeColorType = js.native
-  val Creator: XlCreator = js.native
-  @JSName("Excel.NegativeBarFormat_typekey")
-  var ExcelDotNegativeBarFormat_typekey: NegativeBarFormat = js.native
-  val Parent: js.Any = js.native
+trait NegativeBarFormat extends StObject {
+  
+  val Application: typingsJapgolly.activexExcel.Excel.Application
+  
+  val BorderColor: FormatColor
+  
+  var BorderColorType: XlDataBarNegativeColorType
+  
+  val Color: FormatColor
+  
+  var ColorType: XlDataBarNegativeColorType
+  
+  val Creator: XlCreator
+  
+  /* private */ @JSName("Excel.NegativeBarFormat_typekey")
+  var ExcelDotNegativeBarFormat_typekey: NegativeBarFormat
+  
+  val Parent: Any
 }
-
+object NegativeBarFormat {
+  
+  inline def apply(
+    Application: Application,
+    BorderColor: FormatColor,
+    BorderColorType: XlDataBarNegativeColorType,
+    Color: FormatColor,
+    ColorType: XlDataBarNegativeColorType,
+    Creator: XlCreator,
+    ExcelDotNegativeBarFormat_typekey: NegativeBarFormat,
+    Parent: Any
+  ): NegativeBarFormat = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], BorderColor = BorderColor.asInstanceOf[js.Any], BorderColorType = BorderColorType.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], ColorType = ColorType.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.NegativeBarFormat_typekey")(ExcelDotNegativeBarFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NegativeBarFormat]
+  }
+  
+  extension [Self <: NegativeBarFormat](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColor(value: FormatColor): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorType(value: XlDataBarNegativeColorType): Self = StObject.set(x, "BorderColorType", value.asInstanceOf[js.Any])
+    
+    inline def setColor(value: FormatColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    
+    inline def setColorType(value: XlDataBarNegativeColorType): Self = StObject.set(x, "ColorType", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setExcelDotNegativeBarFormat_typekey(value: NegativeBarFormat): Self = StObject.set(x, "Excel.NegativeBarFormat_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+  }
+}

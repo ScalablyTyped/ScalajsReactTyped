@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Storage.FileProperties
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ThumbnailType extends js.Object
-
+sealed trait ThumbnailType extends StObject
 /** Indicates whether the thumbnail is an icon or an image. */
 @JSGlobal("Windows.Storage.FileProperties.ThumbnailType")
 @js.native
-object ThumbnailType extends js.Object {
+object ThumbnailType extends StObject {
+  
   /** The thumbnail is an icon. */
   @js.native
-  sealed trait icon extends ThumbnailType
+  sealed trait icon
+    extends StObject
+       with ThumbnailType
   
   /** The thumbnail is an image. */
   @js.native
-  sealed trait image extends ThumbnailType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ThumbnailType with Double] = js.native
-  /* 1 */ @js.native
-  object icon extends TopLevel[icon with Double]
-  
-  /* 0 */ @js.native
-  object image extends TopLevel[image with Double]
-  
+  sealed trait image
+    extends StObject
+       with ThumbnailType
 }
-

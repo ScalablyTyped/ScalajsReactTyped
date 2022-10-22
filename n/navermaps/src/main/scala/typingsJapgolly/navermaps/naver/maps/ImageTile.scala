@@ -1,16 +1,18 @@
 package typingsJapgolly.navermaps.naver.maps
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("naver.maps.ImageTile")
 @js.native
-class ImageTile protected () extends Tile {
-  def this(imageTileOptions: ImageTileOptions) = this()
+trait ImageTile
+  extends StObject
+     with Tile {
+  
   def getImageElements(): js.Array[HTMLElement] = js.native
+  
   def getUrls(): js.Array[String] = js.native
+  
   def setUrls(urls: js.Array[String]): Unit = js.native
 }
-

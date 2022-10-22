@@ -1,42 +1,66 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LinearGaugePointerItem extends js.Object {
+trait LinearGaugePointerItem extends StObject {
+  
   var border: js.UndefOr[LinearGaugePointerItemBorder] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[Double | js.Any] = js.undefined
+  
+  var margin: js.UndefOr[Double | Any] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   var shape: js.UndefOr[String] = js.undefined
+  
   var size: js.UndefOr[Double] = js.undefined
+  
   var track: js.UndefOr[LinearGaugePointerItemTrack] = js.undefined
+  
   var value: js.UndefOr[Double] = js.undefined
 }
-
 object LinearGaugePointerItem {
-  @scala.inline
-  def apply(
-    border: LinearGaugePointerItemBorder = null,
-    color: String = null,
-    margin: Double | js.Any = null,
-    opacity: Int | Double = null,
-    shape: String = null,
-    size: Int | Double = null,
-    track: LinearGaugePointerItemTrack = null,
-    value: Int | Double = null
-  ): LinearGaugePointerItem = {
+  
+  inline def apply(): LinearGaugePointerItem = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinearGaugePointerItem]
   }
+  
+  extension [Self <: LinearGaugePointerItem](x: Self) {
+    
+    inline def setBorder(value: LinearGaugePointerItemBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setMargin(value: Double | Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setTrack(value: LinearGaugePointerItemTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    
+    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

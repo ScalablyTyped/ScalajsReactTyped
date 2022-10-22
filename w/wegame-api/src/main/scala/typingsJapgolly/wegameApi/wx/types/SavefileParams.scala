@@ -1,35 +1,49 @@
 package typingsJapgolly.wegameApi.wx.types
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.wegameApi.AnonErrMsg
-import typingsJapgolly.wegameApi.AnonSavedFilePath
+import typingsJapgolly.wegameApi.anon.ErrMsg
+import typingsJapgolly.wegameApi.anon.SavedFilePath
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SavefileParams extends js.Object {
+trait SavefileParams extends StObject {
+  
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var fail: js.UndefOr[js.Function1[/* res */ AnonErrMsg, Unit]] = js.undefined
+  
+  var fail: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.undefined
+  
   var filePath: js.UndefOr[String] = js.undefined
-  var success: js.UndefOr[js.Function1[/* res */ AnonSavedFilePath, Unit]] = js.undefined
+  
+  var success: js.UndefOr[js.Function1[/* res */ SavedFilePath, Unit]] = js.undefined
+  
   var tempFilePath: String
 }
-
 object SavefileParams {
-  @scala.inline
-  def apply(
-    tempFilePath: String,
-    complete: js.UndefOr[Callback] = js.undefined,
-    fail: /* res */ AnonErrMsg => Callback = null,
-    filePath: String = null,
-    success: /* res */ AnonSavedFilePath => Callback = null
-  ): SavefileParams = {
+  
+  inline def apply(tempFilePath: String): SavefileParams = {
     val __obj = js.Dynamic.literal(tempFilePath = tempFilePath.asInstanceOf[js.Any])
-    complete.foreach(p => __obj.updateDynamic("complete")(p.toJsFn))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.wegameApi.AnonErrMsg) => fail(t0).runNow()))
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.wegameApi.AnonSavedFilePath) => success(t0).runNow()))
     __obj.asInstanceOf[SavefileParams]
   }
+  
+  extension [Self <: SavefileParams](x: Self) {
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setFail(value: /* res */ ErrMsg => Callback): Self = StObject.set(x, "fail", js.Any.fromFunction1((t0: /* res */ ErrMsg) => value(t0).runNow()))
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    
+    inline def setSuccess(value: /* res */ SavedFilePath => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ SavedFilePath) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+  }
 }
-

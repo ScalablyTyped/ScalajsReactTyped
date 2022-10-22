@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-joyride
 
-Typings are for version 2.2.1
+Typings are for version 2.5.3
 
 ## Library description:
 Create guided tours for your apps
@@ -10,10 +10,10 @@ Create guided tours for your apps
 | ------------------ | :-------------: |
 | Full name          | react-joyride |
 | Keywords           | react, react-component, tooltips, joyride, walkthroughs, tour |
-| # releases         | 36 |
-| # dependents       | 19 |
-| # downloads        | 1738388 |
-| # stars            | 4 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 784800.6666666666 |
+| # stars            | 4817.0 |
 
 ## Links
 - [Homepage](https://react-joyride.com/)

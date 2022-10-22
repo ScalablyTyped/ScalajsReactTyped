@@ -1,20 +1,28 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridViewBatchEditRowValidatingEventArgs extends EventArgs {
-  val validationInfo: js.Any
+trait GridViewBatchEditRowValidatingEventArgs
+  extends StObject
+     with EventArgs {
+  
+  val validationInfo: Any
+  
   val visibleIndex: Double
 }
-
 object GridViewBatchEditRowValidatingEventArgs {
-  @scala.inline
-  def apply(sender: Control, validationInfo: js.Any, visibleIndex: Double): GridViewBatchEditRowValidatingEventArgs = {
-    val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any], validationInfo = validationInfo.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
   
+  inline def apply(sender: Control, validationInfo: Any, visibleIndex: Double): GridViewBatchEditRowValidatingEventArgs = {
+    val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any], validationInfo = validationInfo.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridViewBatchEditRowValidatingEventArgs]
   }
+  
+  extension [Self <: GridViewBatchEditRowValidatingEventArgs](x: Self) {
+    
+    inline def setValidationInfo(value: Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.windows
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.fridaGumStrings.linux
   - typingsJapgolly.fridaGum.fridaGumStrings.qnx
 */
-trait Platform extends js.Object
-
+trait Platform extends StObject
 object Platform {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def darwin: typingsJapgolly.fridaGum.fridaGumStrings.darwin = this.cast("darwin")
-  @scala.inline
-  def linux: typingsJapgolly.fridaGum.fridaGumStrings.linux = this.cast("linux")
-  @scala.inline
-  def qnx: typingsJapgolly.fridaGum.fridaGumStrings.qnx = this.cast("qnx")
-  @scala.inline
-  def windows: typingsJapgolly.fridaGum.fridaGumStrings.windows = this.cast("windows")
+  
+  inline def darwin: typingsJapgolly.fridaGum.fridaGumStrings.darwin = "darwin".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.darwin]
+  
+  inline def linux: typingsJapgolly.fridaGum.fridaGumStrings.linux = "linux".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.linux]
+  
+  inline def qnx: typingsJapgolly.fridaGum.fridaGumStrings.qnx = "qnx".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.qnx]
+  
+  inline def windows: typingsJapgolly.fridaGum.fridaGumStrings.windows = "windows".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.windows]
 }
-

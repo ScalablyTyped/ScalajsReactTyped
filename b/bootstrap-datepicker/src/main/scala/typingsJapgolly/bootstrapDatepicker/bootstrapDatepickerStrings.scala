@@ -1,149 +1,174 @@
 package typingsJapgolly.bootstrapDatepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bootstrapDatepickerStrings {
-  @js.native
-  sealed trait auto extends DatepickerOrientations
   
   @js.native
-  sealed trait `auto left` extends DatepickerOrientations
+  sealed trait auto
+    extends StObject
+       with DatepickerOrientations
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait `auto right` extends DatepickerOrientations
+  sealed trait `auto left`
+    extends StObject
+       with DatepickerOrientations
+  inline def `auto left`: `auto left` = ("auto left").asInstanceOf[`auto left`]
   
   @js.native
-  sealed trait `bottom auto` extends DatepickerOrientations
+  sealed trait `auto right`
+    extends StObject
+       with DatepickerOrientations
+  inline def `auto right`: `auto right` = ("auto right").asInstanceOf[`auto right`]
   
   @js.native
-  sealed trait `bottom left` extends DatepickerOrientations
+  sealed trait `bottom auto`
+    extends StObject
+       with DatepickerOrientations
+  inline def `bottom auto`: `bottom auto` = ("bottom auto").asInstanceOf[`bottom auto`]
   
   @js.native
-  sealed trait `bottom right` extends DatepickerOrientations
+  sealed trait `bottom left`
+    extends StObject
+       with DatepickerOrientations
+  inline def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
   
   @js.native
-  sealed trait centuries extends DatepickerViewModes
+  sealed trait `bottom right`
+    extends StObject
+       with DatepickerOrientations
+  inline def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
   
   @js.native
-  sealed trait changeCentury extends DatepickerEvents
+  sealed trait centuries
+    extends StObject
+       with DatepickerViewModes
+  inline def centuries: centuries = "centuries".asInstanceOf[centuries]
   
   @js.native
-  sealed trait changeDate extends DatepickerEvents
+  sealed trait changeCentury
+    extends StObject
+       with DatepickerEvents
+  inline def changeCentury: changeCentury = "changeCentury".asInstanceOf[changeCentury]
   
   @js.native
-  sealed trait changeDecade extends DatepickerEvents
+  sealed trait changeDate
+    extends StObject
+       with DatepickerEvents
+  inline def changeDate: changeDate = "changeDate".asInstanceOf[changeDate]
   
   @js.native
-  sealed trait changeMonth extends DatepickerEvents
+  sealed trait changeDecade
+    extends StObject
+       with DatepickerEvents
+  inline def changeDecade: changeDecade = "changeDecade".asInstanceOf[changeDecade]
   
   @js.native
-  sealed trait changeYear extends DatepickerEvents
+  sealed trait changeMonth
+    extends StObject
+       with DatepickerEvents
+  inline def changeMonth: changeMonth = "changeMonth".asInstanceOf[changeMonth]
   
   @js.native
-  sealed trait clearDate extends DatepickerEvents
+  sealed trait changeYear
+    extends StObject
+       with DatepickerEvents
+  inline def changeYear: changeYear = "changeYear".asInstanceOf[changeYear]
   
   @js.native
-  sealed trait days extends DatepickerViewModes
+  sealed trait clearDate
+    extends StObject
+       with DatepickerEvents
+  inline def clearDate: clearDate = "clearDate".asInstanceOf[clearDate]
   
   @js.native
-  sealed trait decades extends DatepickerViewModes
+  sealed trait days
+    extends StObject
+       with DatepickerViewModes
+  inline def days: days = "days".asInstanceOf[days]
   
   @js.native
-  sealed trait hide extends DatepickerEvents
+  sealed trait decades
+    extends StObject
+       with DatepickerViewModes
+  inline def decades: decades = "decades".asInstanceOf[decades]
   
   @js.native
-  sealed trait `left bottom` extends DatepickerOrientations
+  sealed trait hide
+    extends StObject
+       with DatepickerEvents
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
-  sealed trait `left top` extends DatepickerOrientations
+  sealed trait `left bottom`
+    extends StObject
+       with DatepickerOrientations
+  inline def `left bottom`: `left bottom` = ("left bottom").asInstanceOf[`left bottom`]
   
   @js.native
-  sealed trait linked extends js.Object
+  sealed trait `left top`
+    extends StObject
+       with DatepickerOrientations
+  inline def `left top`: `left top` = ("left top").asInstanceOf[`left top`]
   
   @js.native
-  sealed trait millenium extends DatepickerViewModes
+  sealed trait linked extends StObject
+  inline def linked: linked = "linked".asInstanceOf[linked]
   
   @js.native
-  sealed trait months extends DatepickerViewModes
+  sealed trait millenium
+    extends StObject
+       with DatepickerViewModes
+  inline def millenium: millenium = "millenium".asInstanceOf[millenium]
   
   @js.native
-  sealed trait `right bottom` extends DatepickerOrientations
+  sealed trait months
+    extends StObject
+       with DatepickerViewModes
+  inline def months: months = "months".asInstanceOf[months]
   
   @js.native
-  sealed trait `right top` extends DatepickerOrientations
+  sealed trait `right bottom`
+    extends StObject
+       with DatepickerOrientations
+  inline def `right bottom`: `right bottom` = ("right bottom").asInstanceOf[`right bottom`]
   
   @js.native
-  sealed trait show extends DatepickerEvents
+  sealed trait `right top`
+    extends StObject
+       with DatepickerOrientations
+  inline def `right top`: `right top` = ("right top").asInstanceOf[`right top`]
   
   @js.native
-  sealed trait `top auto` extends DatepickerOrientations
+  sealed trait show
+    extends StObject
+       with DatepickerEvents
+  inline def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait `top left` extends DatepickerOrientations
+  sealed trait `top auto`
+    extends StObject
+       with DatepickerOrientations
+  inline def `top auto`: `top auto` = ("top auto").asInstanceOf[`top auto`]
   
   @js.native
-  sealed trait `top right` extends DatepickerOrientations
+  sealed trait `top left`
+    extends StObject
+       with DatepickerOrientations
+  inline def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
   
   @js.native
-  sealed trait years extends DatepickerViewModes
+  sealed trait `top right`
+    extends StObject
+       with DatepickerOrientations
+  inline def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
   
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def `auto left`: `auto left` = "auto left".asInstanceOf[`auto left`]
-  @scala.inline
-  def `auto right`: `auto right` = "auto right".asInstanceOf[`auto right`]
-  @scala.inline
-  def `bottom auto`: `bottom auto` = "bottom auto".asInstanceOf[`bottom auto`]
-  @scala.inline
-  def `bottom left`: `bottom left` = "bottom left".asInstanceOf[`bottom left`]
-  @scala.inline
-  def `bottom right`: `bottom right` = "bottom right".asInstanceOf[`bottom right`]
-  @scala.inline
-  def centuries: centuries = "centuries".asInstanceOf[centuries]
-  @scala.inline
-  def changeCentury: changeCentury = "changeCentury".asInstanceOf[changeCentury]
-  @scala.inline
-  def changeDate: changeDate = "changeDate".asInstanceOf[changeDate]
-  @scala.inline
-  def changeDecade: changeDecade = "changeDecade".asInstanceOf[changeDecade]
-  @scala.inline
-  def changeMonth: changeMonth = "changeMonth".asInstanceOf[changeMonth]
-  @scala.inline
-  def changeYear: changeYear = "changeYear".asInstanceOf[changeYear]
-  @scala.inline
-  def clearDate: clearDate = "clearDate".asInstanceOf[clearDate]
-  @scala.inline
-  def days: days = "days".asInstanceOf[days]
-  @scala.inline
-  def decades: decades = "decades".asInstanceOf[decades]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def `left bottom`: `left bottom` = "left bottom".asInstanceOf[`left bottom`]
-  @scala.inline
-  def `left top`: `left top` = "left top".asInstanceOf[`left top`]
-  @scala.inline
-  def linked: linked = "linked".asInstanceOf[linked]
-  @scala.inline
-  def millenium: millenium = "millenium".asInstanceOf[millenium]
-  @scala.inline
-  def months: months = "months".asInstanceOf[months]
-  @scala.inline
-  def `right bottom`: `right bottom` = "right bottom".asInstanceOf[`right bottom`]
-  @scala.inline
-  def `right top`: `right top` = "right top".asInstanceOf[`right top`]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
-  @scala.inline
-  def `top auto`: `top auto` = "top auto".asInstanceOf[`top auto`]
-  @scala.inline
-  def `top left`: `top left` = "top left".asInstanceOf[`top left`]
-  @scala.inline
-  def `top right`: `top right` = "top right".asInstanceOf[`top right`]
-  @scala.inline
-  def years: years = "years".asInstanceOf[years]
+  @js.native
+  sealed trait years
+    extends StObject
+       with DatepickerViewModes
+  inline def years: years = "years".asInstanceOf[years]
 }
-

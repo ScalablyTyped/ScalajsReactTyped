@@ -1,21 +1,30 @@
 package typingsJapgolly.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResetPasswordOptions extends js.Object {
+trait ResetPasswordOptions extends StObject {
+  
   var connection: String
+  
   var email: String
+  
   var password: String
 }
-
 object ResetPasswordOptions {
-  @scala.inline
-  def apply(connection: String, email: String, password: String): ResetPasswordOptions = {
-    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
   
+  inline def apply(connection: String, email: String, password: String): ResetPasswordOptions = {
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetPasswordOptions]
   }
+  
+  extension [Self <: ResetPasswordOptions](x: Self) {
+    
+    inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+  }
 }
-

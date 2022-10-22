@@ -1,12 +1,10 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.PullStringConstantTypeSymbol")
 @js.native
-class PullStringConstantTypeSymbol protected () extends PullPrimitiveTypeSymbol {
-  def this(name: String) = this()
-}
-
+trait PullStringConstantTypeSymbol
+  extends StObject
+     with PullPrimitiveTypeSymbol

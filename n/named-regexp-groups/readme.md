@@ -10,10 +10,10 @@ Regular expressions with named capture groups and named back-references
 | ------------------ | :-------------: |
 | Full name          | named-regexp-groups |
 | Keywords           | backreference, capture, expression, group, named, regex, regexp, regular |
-| # releases         | 6 |
-| # dependents       | 11 |
-| # downloads        | 42215 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 11972.0 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/commenthol/named-regexp-groups/)

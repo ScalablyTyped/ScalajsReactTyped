@@ -1,22 +1,40 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCRtpContributingSource extends js.Object {
+trait RTCRtpContributingSource extends StObject {
+  
+  /* standard dom */
   var audioLevel: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var rtpTimestamp: Double
+  
+  /* standard dom */
   var source: Double
-  var timestamp: Double
+  
+  /* standard dom */
+  var timestamp: DOMHighResTimeStamp
 }
-
 object RTCRtpContributingSource {
-  @scala.inline
-  def apply(rtpTimestamp: Double, source: Double, timestamp: Double, audioLevel: Int | Double = null): RTCRtpContributingSource = {
+  
+  inline def apply(rtpTimestamp: Double, source: Double, timestamp: DOMHighResTimeStamp): RTCRtpContributingSource = {
     val __obj = js.Dynamic.literal(rtpTimestamp = rtpTimestamp.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-    if (audioLevel != null) __obj.updateDynamic("audioLevel")(audioLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpContributingSource]
   }
+  
+  extension [Self <: RTCRtpContributingSource](x: Self) {
+    
+    inline def setAudioLevel(value: Double): Self = StObject.set(x, "audioLevel", value.asInstanceOf[js.Any])
+    
+    inline def setAudioLevelUndefined: Self = StObject.set(x, "audioLevel", js.undefined)
+    
+    inline def setRtpTimestamp(value: Double): Self = StObject.set(x, "rtpTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setTimestamp(value: DOMHighResTimeStamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+  }
 }
-

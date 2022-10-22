@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.decrypt
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.verify
   - typingsJapgolly.std.stdStrings.wrapKey
 */
-trait KeyUsage extends js.Object
-
+trait KeyUsage extends StObject
 object KeyUsage {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def decrypt: typingsJapgolly.std.stdStrings.decrypt = this.cast("decrypt")
-  @scala.inline
-  def deriveBits: typingsJapgolly.std.stdStrings.deriveBits = this.cast("deriveBits")
-  @scala.inline
-  def deriveKey: typingsJapgolly.std.stdStrings.deriveKey = this.cast("deriveKey")
-  @scala.inline
-  def encrypt: typingsJapgolly.std.stdStrings.encrypt = this.cast("encrypt")
-  @scala.inline
-  def sign: typingsJapgolly.std.stdStrings.sign = this.cast("sign")
-  @scala.inline
-  def unwrapKey: typingsJapgolly.std.stdStrings.unwrapKey = this.cast("unwrapKey")
-  @scala.inline
-  def verify: typingsJapgolly.std.stdStrings.verify = this.cast("verify")
-  @scala.inline
-  def wrapKey: typingsJapgolly.std.stdStrings.wrapKey = this.cast("wrapKey")
+  
+  inline def decrypt: typingsJapgolly.std.stdStrings.decrypt = "decrypt".asInstanceOf[typingsJapgolly.std.stdStrings.decrypt]
+  
+  inline def deriveBits: typingsJapgolly.std.stdStrings.deriveBits = "deriveBits".asInstanceOf[typingsJapgolly.std.stdStrings.deriveBits]
+  
+  inline def deriveKey: typingsJapgolly.std.stdStrings.deriveKey = "deriveKey".asInstanceOf[typingsJapgolly.std.stdStrings.deriveKey]
+  
+  inline def encrypt: typingsJapgolly.std.stdStrings.encrypt = "encrypt".asInstanceOf[typingsJapgolly.std.stdStrings.encrypt]
+  
+  inline def sign: typingsJapgolly.std.stdStrings.sign = "sign".asInstanceOf[typingsJapgolly.std.stdStrings.sign]
+  
+  inline def unwrapKey: typingsJapgolly.std.stdStrings.unwrapKey = "unwrapKey".asInstanceOf[typingsJapgolly.std.stdStrings.unwrapKey]
+  
+  inline def verify: typingsJapgolly.std.stdStrings.verify = "verify".asInstanceOf[typingsJapgolly.std.stdStrings.verify]
+  
+  inline def wrapKey: typingsJapgolly.std.stdStrings.wrapKey = "wrapKey".asInstanceOf[typingsJapgolly.std.stdStrings.wrapKey]
 }
-

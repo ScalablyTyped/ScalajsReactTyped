@@ -1,63 +1,74 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridResponsiveAllowedColumnWidthPerType
-  extends /**
-	 * Option for IgGridResponsiveAllowedColumnWidthPerType
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Minimal width in pixels bool columns can take before forcing vertical rendering
-  	 *
-  	 */
+    * Minimal width in pixels bool columns can take before forcing vertical rendering
+    *
+    */
   var bool: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Minimal width in pixels date columns can take before forcing vertical rendering
-  	 *
-  	 */
+    * Minimal width in pixels date columns can take before forcing vertical rendering
+    *
+    */
   var date: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Minimal width in pixels number columns can take before forcing vertical rendering
-  	 *
-  	 */
+    * Minimal width in pixels number columns can take before forcing vertical rendering
+    *
+    */
   var number: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Minimal width in pixels object columns can take before forcing vertical rendering
-  	 *
-  	 */
+    * Minimal width in pixels object columns can take before forcing vertical rendering
+    *
+    */
   var `object`: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Minimal width in pixels string columns can take before forcing vertical rendering
-  	 *
-  	 */
+    * Minimal width in pixels string columns can take before forcing vertical rendering
+    *
+    */
   var string: js.UndefOr[Double] = js.undefined
 }
-
 object IgGridResponsiveAllowedColumnWidthPerType {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgGridResponsiveAllowedColumnWidthPerType
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    bool: Int | Double = null,
-    date: Int | Double = null,
-    number: Int | Double = null,
-    `object`: Int | Double = null,
-    string: Int | Double = null
-  ): IgGridResponsiveAllowedColumnWidthPerType = {
+  
+  inline def apply(): IgGridResponsiveAllowedColumnWidthPerType = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (bool != null) __obj.updateDynamic("bool")(bool.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridResponsiveAllowedColumnWidthPerType]
   }
+  
+  extension [Self <: IgGridResponsiveAllowedColumnWidthPerType](x: Self) {
+    
+    inline def setBool(value: Double): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
+    
+    inline def setBoolUndefined: Self = StObject.set(x, "bool", js.undefined)
+    
+    inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    
+    inline def setObject(value: Double): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    
+    inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+    
+    inline def setString(value: Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+  }
 }
-

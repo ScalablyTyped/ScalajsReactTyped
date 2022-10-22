@@ -1,29 +1,24 @@
 package typingsJapgolly.std
 
 import typingsJapgolly.std.stdStrings.nfc_
-import typingsJapgolly.std.stdStrings.usb_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.ble
   - typingsJapgolly.std.stdStrings.internal
   - typingsJapgolly.std.stdStrings.nfc_
-  - typingsJapgolly.std.stdStrings.usb_
+  - typingsJapgolly.std.stdStrings.usb
 */
-trait AuthenticatorTransport extends js.Object
-
+trait AuthenticatorTransport extends StObject
 object AuthenticatorTransport {
-  @scala.inline
-  def ble: typingsJapgolly.std.stdStrings.ble = this.cast("ble")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def internal: typingsJapgolly.std.stdStrings.internal = this.cast("internal")
-  @scala.inline
-  def nfc: nfc_ = this.cast("nfc")
-  @scala.inline
-  def usb: usb_ = this.cast("usb")
+  
+  inline def ble: typingsJapgolly.std.stdStrings.ble = "ble".asInstanceOf[typingsJapgolly.std.stdStrings.ble]
+  
+  inline def internal: typingsJapgolly.std.stdStrings.internal = "internal".asInstanceOf[typingsJapgolly.std.stdStrings.internal]
+  
+  inline def nfc: nfc_ = "nfc".asInstanceOf[nfc_]
+  
+  inline def usb: typingsJapgolly.std.stdStrings.usb = "usb".asInstanceOf[typingsJapgolly.std.stdStrings.usb]
 }
-

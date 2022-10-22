@@ -1,19 +1,24 @@
 package typingsJapgolly.reactMdl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShadowedComponent extends js.Object {
+trait ShadowedComponent extends StObject {
+  
   var shadow: js.UndefOr[Double] = js.undefined
 }
-
 object ShadowedComponent {
-  @scala.inline
-  def apply(shadow: Int | Double = null): ShadowedComponent = {
+  
+  inline def apply(): ShadowedComponent = {
     val __obj = js.Dynamic.literal()
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowedComponent]
   }
+  
+  extension [Self <: ShadowedComponent](x: Self) {
+    
+    inline def setShadow(value: Double): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+  }
 }
-

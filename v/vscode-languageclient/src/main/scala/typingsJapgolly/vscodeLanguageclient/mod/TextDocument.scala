@@ -1,27 +1,36 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
-import typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentUri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "TextDocument")
-@js.native
-object TextDocument extends js.Object {
-  def applyEdits(
+object TextDocument {
+  
+  @JSImport("vscode-languageclient", "TextDocument")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def applyEdits(
     document: typingsJapgolly.vscodeLanguageserverTypes.mod.TextDocument,
     edits: js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.TextEdit]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("applyEdits")(document.asInstanceOf[js.Any], edits.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * Creates a new ITextDocument literal from the given uri and content.
     * @param uri The document's uri.
-    * @param languageId  The document's language Id.
+    * @param languageId The document's language Id.
+    * @param version The document's version.
     * @param content The document's content.
     */
-  def create(uri: DocumentUri, languageId: String, version: Double, content: String): typingsJapgolly.vscodeLanguageserverTypes.mod.TextDocument = js.native
+  inline def create(
+    uri: typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentUri,
+    languageId: String,
+    version: typingsJapgolly.vscodeLanguageserverTypes.mod.integer,
+    content: String
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.TextDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any], version.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.TextDocument]
+  
   /**
     * Checks whether the given literal conforms to the [ITextDocument](#ITextDocument) interface.
     */
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocument */ Boolean = js.native
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocument */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocument */ Boolean]
 }
-

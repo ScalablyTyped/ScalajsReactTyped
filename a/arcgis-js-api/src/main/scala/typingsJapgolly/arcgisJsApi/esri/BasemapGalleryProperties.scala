@@ -1,67 +1,109 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalajs.dom.raw.HTMLElement
+import typingsJapgolly.arcgisJsApi.anon.MapViewPropertiestype2d
+import typingsJapgolly.arcgisJsApi.anon.SceneViewPropertiestype3d
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BasemapGalleryProperties extends WidgetProperties {
+trait BasemapGalleryProperties
+  extends StObject
+     with WidgetProperties {
+  
   /**
     * The map's [basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#activeBasemap)
     */
   var activeBasemap: js.UndefOr[BasemapProperties] = js.undefined
+  
+  /**
+    * When `true`, sets the widget to a disabled state so the user cannot interact with it.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#disabled)
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates the heading level to use for the message "No basemaps available" when no basemaps are available in the BasemapGallery.
+    *
+    * @default 2
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#headingLevel)
+    */
+  var headingLevel: js.UndefOr[Double] = js.undefined
+  
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#iconClass)
     */
   var iconClass: js.UndefOr[String] = js.undefined
+  
   /**
-    * The source for basemaps that the widget will display. This property can be autocast with an array or [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [Basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html)s, a [Portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html) instance, or a URL to a portal instance. The default source is a [PortalBasemapsSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html) that points to the default portal instance set in [esriConfig.portalUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#portalUrl).
+    * The source for basemaps that the widget will display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#source)
     */
-  var source: js.UndefOr[LocalBasemapsSourceProperties | PortalBasemapsSourceProperties] = js.undefined
+  var source: js.UndefOr[
+    LocalBasemapsSourceProperties | PortalBasemapsSourceProperties | CollectionProperties[BasemapProperties] | js.Array[BasemapProperties] | PortalProperties
+  ] = js.undefined
+  
   /**
-    * The view from which the widget will operate. This view provides access to the active [basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) via the view's [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#map) property.
+    * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
+  
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [BasemapGalleryViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-BasemapGalleryViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#viewModel)
     */
   var viewModel: js.UndefOr[BasemapGalleryViewModelProperties] = js.undefined
 }
-
 object BasemapGalleryProperties {
-  @scala.inline
-  def apply(
-    activeBasemap: BasemapProperties = null,
-    container: String | HTMLElement = null,
-    destroyed: js.UndefOr[Boolean] = js.undefined,
-    iconClass: String = null,
-    id: String = null,
-    label: String = null,
-    source: LocalBasemapsSourceProperties | PortalBasemapsSourceProperties = null,
-    view: MapViewProperties | SceneViewProperties = null,
-    viewModel: BasemapGalleryViewModelProperties = null
-  ): BasemapGalleryProperties = {
+  
+  inline def apply(): BasemapGalleryProperties = {
     val __obj = js.Dynamic.literal()
-    if (activeBasemap != null) __obj.updateDynamic("activeBasemap")(activeBasemap.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasemapGalleryProperties]
   }
+  
+  extension [Self <: BasemapGalleryProperties](x: Self) {
+    
+    inline def setActiveBasemap(value: BasemapProperties): Self = StObject.set(x, "activeBasemap", value.asInstanceOf[js.Any])
+    
+    inline def setActiveBasemapUndefined: Self = StObject.set(x, "activeBasemap", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setHeadingLevel(value: Double): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
+    
+    inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
+    
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    
+    inline def setSource(
+      value: LocalBasemapsSourceProperties | PortalBasemapsSourceProperties | CollectionProperties[BasemapProperties] | js.Array[BasemapProperties] | PortalProperties
+    ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setSourceVarargs(value: BasemapProperties*): Self = StObject.set(x, "source", js.Array(value*))
+    
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewModel(value: BasemapGalleryViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

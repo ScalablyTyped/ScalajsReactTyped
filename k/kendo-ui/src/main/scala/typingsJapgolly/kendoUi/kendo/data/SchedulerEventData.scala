@@ -1,51 +1,84 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchedulerEventData extends js.Object {
+trait SchedulerEventData extends StObject {
+  
   var description: js.UndefOr[String] = js.undefined
+  
   var end: js.UndefOr[js.Date] = js.undefined
+  
   var endTimezone: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[js.Any] = js.undefined
+  
+  var id: js.UndefOr[Any] = js.undefined
+  
   var isAllDay: js.UndefOr[Boolean] = js.undefined
+  
   var recurrenceException: js.UndefOr[String] = js.undefined
-  var recurrenceId: js.UndefOr[js.Any] = js.undefined
+  
+  var recurrenceId: js.UndefOr[Any] = js.undefined
+  
   var recurrenceRule: js.UndefOr[String] = js.undefined
+  
   var start: js.UndefOr[js.Date] = js.undefined
+  
   var startTimezone: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
 }
-
 object SchedulerEventData {
-  @scala.inline
-  def apply(
-    description: String = null,
-    end: js.Date = null,
-    endTimezone: String = null,
-    id: js.Any = null,
-    isAllDay: js.UndefOr[Boolean] = js.undefined,
-    recurrenceException: String = null,
-    recurrenceId: js.Any = null,
-    recurrenceRule: String = null,
-    start: js.Date = null,
-    startTimezone: String = null,
-    title: String = null
-  ): SchedulerEventData = {
+  
+  inline def apply(): SchedulerEventData = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (endTimezone != null) __obj.updateDynamic("endTimezone")(endTimezone.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAllDay)) __obj.updateDynamic("isAllDay")(isAllDay.asInstanceOf[js.Any])
-    if (recurrenceException != null) __obj.updateDynamic("recurrenceException")(recurrenceException.asInstanceOf[js.Any])
-    if (recurrenceId != null) __obj.updateDynamic("recurrenceId")(recurrenceId.asInstanceOf[js.Any])
-    if (recurrenceRule != null) __obj.updateDynamic("recurrenceRule")(recurrenceRule.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (startTimezone != null) __obj.updateDynamic("startTimezone")(startTimezone.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerEventData]
   }
+  
+  extension [Self <: SchedulerEventData](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndTimezone(value: String): Self = StObject.set(x, "endTimezone", value.asInstanceOf[js.Any])
+    
+    inline def setEndTimezoneUndefined: Self = StObject.set(x, "endTimezone", js.undefined)
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIsAllDay(value: Boolean): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
+    
+    inline def setIsAllDayUndefined: Self = StObject.set(x, "isAllDay", js.undefined)
+    
+    inline def setRecurrenceException(value: String): Self = StObject.set(x, "recurrenceException", value.asInstanceOf[js.Any])
+    
+    inline def setRecurrenceExceptionUndefined: Self = StObject.set(x, "recurrenceException", js.undefined)
+    
+    inline def setRecurrenceId(value: Any): Self = StObject.set(x, "recurrenceId", value.asInstanceOf[js.Any])
+    
+    inline def setRecurrenceIdUndefined: Self = StObject.set(x, "recurrenceId", js.undefined)
+    
+    inline def setRecurrenceRule(value: String): Self = StObject.set(x, "recurrenceRule", value.asInstanceOf[js.Any])
+    
+    inline def setRecurrenceRuleUndefined: Self = StObject.set(x, "recurrenceRule", js.undefined)
+    
+    inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimezone(value: String): Self = StObject.set(x, "startTimezone", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimezoneUndefined: Self = StObject.set(x, "startTimezone", js.undefined)
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

@@ -3,21 +3,49 @@ package typingsJapgolly.fortawesomeFreeSolidSvgIcons
 import typingsJapgolly.fortawesomeFontawesomeCommonTypes.mod.IconDefinition
 import typingsJapgolly.fortawesomeFontawesomeCommonTypes.mod.IconName
 import typingsJapgolly.fortawesomeFontawesomeCommonTypes.mod.IconPrefix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fortawesome/free-solid-svg-icons/faHandSpock", JSImport.Namespace)
-@js.native
-object faHandSpockMod extends js.Object {
+object faHandSpockMod {
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faHandSpock", "aliases")
+  @js.native
+  val aliases: js.Array[String | Double] = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faHandSpock", "definition")
+  @js.native
   val definition: IconDefinition = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faHandSpock", "faHandSpock")
+  @js.native
   val faHandSpock: IconDefinition = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faHandSpock", "height")
+  @js.native
   val height: Double = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faHandSpock", "iconName")
+  @js.native
   val iconName: IconName = js.native
-  val ligatures: js.Array[String] = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faHandSpock", "ligatures")
+  @js.native
+  val ligatures: js.Array[String | Double] = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faHandSpock", "prefix")
+  @js.native
   val prefix: IconPrefix = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faHandSpock", "svgPathData")
+  @js.native
   val svgPathData: String = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faHandSpock", "unicode")
+  @js.native
   val unicode: String = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faHandSpock", "width")
+  @js.native
   val width: Double = js.native
 }
-

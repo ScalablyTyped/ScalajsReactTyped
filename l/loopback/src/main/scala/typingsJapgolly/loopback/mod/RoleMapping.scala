@@ -1,8 +1,8 @@
 package typingsJapgolly.loopback.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The `RoleMapping` model extends from the built in `loopback.Model` type.
@@ -14,13 +14,9 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "RoleMapping")
 @js.native
-class RoleMapping () extends PersistedModel {
-  /** Description Text description. */
-  var description: String = js.native
-  /** Generated ID. */
-  var id: String = js.native
-  /** Name of the role. */
-  var name: String = js.native
+open class RoleMapping protected () extends PersistedModel {
+  def this(data: Any) = this()
+  
   /**
     * Get the application principal
     * @callback {() => void} callback
@@ -28,6 +24,7 @@ class RoleMapping () extends PersistedModel {
     * @param {Application} application
     */
   def application(callback: js.Function2[/* err */ js.Error, /* application */ Application, Unit]): Unit = js.native
+  
   /**
     * Get the child role principal
     * @callback {() => void} callback
@@ -35,6 +32,16 @@ class RoleMapping () extends PersistedModel {
     * @param {User} childUser
     */
   def childRole(callback: js.Function2[/* err */ js.Error, /* childUser */ User, Unit]): Unit = js.native
+  
+  /** Description Text description. */
+  var description: String = js.native
+  
+  /** Generated ID. */
+  var id: String = js.native
+  
+  /** Name of the role. */
+  var name: String = js.native
+  
   /**
     * Get the user principal
     * @callback {() => void} callback
@@ -43,4 +50,3 @@ class RoleMapping () extends PersistedModel {
     */
   def user(callback: js.Function2[/* err */ js.Error, /* user */ User, Unit]): Unit = js.native
 }
-

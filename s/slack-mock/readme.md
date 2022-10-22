@@ -10,10 +10,10 @@ Slack API mocker
 | ------------------ | :-------------: |
 | Full name          | slack-mock |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 13449 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 752.3333333333334 |
+| # stars            | 61.0 |
 
 ## Links
 - [Homepage](https://github.com/Skellington-Closet/slack-mock#readme)

@@ -1,22 +1,27 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LangNavigationOptions extends js.Object {
+trait LangNavigationOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock) Translations for all field names used in popup.
     */
-  var popup: js.UndefOr[js.Object | LangNavigationPopupOptions] = js.undefined
+  var popup: js.UndefOr[LangNavigationPopupOptions] = js.undefined
 }
-
 object LangNavigationOptions {
-  @scala.inline
-  def apply(popup: js.Object | LangNavigationPopupOptions = null): LangNavigationOptions = {
+  
+  inline def apply(): LangNavigationOptions = {
     val __obj = js.Dynamic.literal()
-    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangNavigationOptions]
   }
+  
+  extension [Self <: LangNavigationOptions](x: Self) {
+    
+    inline def setPopup(value: LangNavigationPopupOptions): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    
+    inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+  }
 }
-

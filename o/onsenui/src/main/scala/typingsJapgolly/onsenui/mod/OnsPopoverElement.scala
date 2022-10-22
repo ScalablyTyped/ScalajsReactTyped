@@ -1,36 +1,66 @@
 package typingsJapgolly.onsenui.mod
 
+import org.scalajs.dom.EventListenerOptions
+import typingsJapgolly.std.AddEventListenerOptions
+import typingsJapgolly.std.EventListenerOrEventListenerObject
 import typingsJapgolly.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @modifier android Display an Android style popover
   * @description A component that displays a popover next to an element
   */
 @js.native
-trait OnsPopoverElement extends HTMLElement {
+trait OnsPopoverElement
+  extends StObject
+     with HTMLElement {
+  
+  /* standard dom */
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  
+  var animationOptions: js.UndefOr[js.Object] = js.native
+  
   /**
     * @description A boolean value that specifies whether the popover is cancelable or not. When the popover is cancelable it can be closed by tapping the background or by pressing the back button on Android devices.
     */
   var cancelable: Boolean = js.native
+  
   /**
-    * @description Retrieve the back- button handler.
+    * @description If set the popover will cover the target on the screen.
     */
-  var onDeviceBackButton: js.Any = js.native
-  /**
-    * @description Whether the dialog is visible or not.
-    */
-  var visible: Boolean = js.native
+  var coverTarget: Boolean = js.native
+  
   /**
     * @param {Object} [options] Parameter object
     * @param {String} [options.animation] Animation name. Available animations are "fade" and "none"
     * @return Resolves to the hidden element
     * @description Close the popover
     */
-  def hide(): js.Promise[org.scalajs.dom.raw.HTMLElement] = js.native
-  def hide(options: PopoverOptions): js.Promise[org.scalajs.dom.raw.HTMLElement] = js.native
+  def hide(): js.Promise[org.scalajs.dom.HTMLElement] = js.native
+  def hide(options: PopoverOptions): js.Promise[org.scalajs.dom.HTMLElement] = js.native
+  
+  var maskColor: js.UndefOr[String] = js.native
+  
+  /**
+    * @description Retrieve the back- button handler.
+    */
+  var onDeviceBackButton: Any = js.native
+  
+  /* standard dom */
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  
   /**
     * @param {String|Event|HTMLElement} target Target element. Can be either a CSS selector, an event object or a DOM element
     * @param {Object} [options] Parameter object
@@ -38,7 +68,16 @@ trait OnsPopoverElement extends HTMLElement {
     * @return Resolves to the displayed element
     * @description Open the popover and point it at a target. The target can be either an event, a css selector or a DOM element
     */
-  def show(target: js.Any): js.Promise[org.scalajs.dom.raw.HTMLElement] = js.native
-  def show(target: js.Any, options: PopoverOptions): js.Promise[org.scalajs.dom.raw.HTMLElement] = js.native
+  def show(target: Any): js.Promise[org.scalajs.dom.HTMLElement] = js.native
+  def show(target: Any, options: PopoverOptions): js.Promise[org.scalajs.dom.HTMLElement] = js.native
+  
+  /**
+    * @description Specifies the ID of the default element for the popover.
+    */
+  var target: String = js.native
+  
+  /**
+    * @description Whether the dialog is visible or not.
+    */
+  var visible: Boolean = js.native
 }
-

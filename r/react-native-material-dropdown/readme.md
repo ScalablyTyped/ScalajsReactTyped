@@ -10,10 +10,10 @@ Material dropdown
 | ------------------ | :-------------: |
 | Full name          | react-native-material-dropdown |
 | Keywords           | react, react-component, react-native, ios, android, material, dropdown, spinner, select |
-| # releases         | 9 |
-| # dependents       | 12 |
-| # downloads        | 509312 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 49032.333333333336 |
+| # stars            | 694.0 |
 
 ## Links
 - [Homepage](https://github.com/n4kz/react-native-material-dropdown#readme)

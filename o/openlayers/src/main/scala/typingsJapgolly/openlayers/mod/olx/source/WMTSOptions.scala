@@ -1,7 +1,7 @@
 package typingsJapgolly.openlayers.mod.olx.source
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.openlayers.mod.Attribution
 import typingsJapgolly.openlayers.mod.AttributionLike
 import typingsJapgolly.openlayers.mod.GlobalObject
 import typingsJapgolly.openlayers.mod.ImageTile
@@ -13,23 +13,36 @@ import typingsJapgolly.openlayers.mod.TileLoadFunctionType
 import typingsJapgolly.openlayers.mod.olx.LogoOptions
 import typingsJapgolly.openlayers.mod.source.WMTSRequestEncoding
 import typingsJapgolly.openlayers.mod.tilegrid.WMTS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WMTSOptions extends js.Object {
+trait WMTSOptions extends StObject {
+  
   var attributions: js.UndefOr[AttributionLike] = js.undefined
+  
   var cacheSize: js.UndefOr[Double] = js.undefined
+  
   var crossOrigin: js.UndefOr[String] = js.undefined
+  
   var dimensions: js.UndefOr[GlobalObject] = js.undefined
+  
   var format: js.UndefOr[String] = js.undefined
+  
   var layer: String
+  
   var logo: js.UndefOr[String | LogoOptions] = js.undefined
+  
   var matrixSet: String
+  
   var projection: ProjectionLike
+  
   var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
+  
   var requestEncoding: js.UndefOr[WMTSRequestEncoding | String] = js.undefined
+  
   var style: String
+  
   var tileClass: js.UndefOr[
     js.Function6[
       /* n */ ImageTile, 
@@ -38,60 +51,109 @@ trait WMTSOptions extends js.Object {
       /* s1 */ String, 
       /* s2 */ String, 
       /* type */ TileLoadFunctionType, 
-      _
+      Any
     ]
   ] = js.undefined
+  
   var tileGrid: WMTS
+  
   var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.undefined
+  
   var tilePixelRatio: js.UndefOr[Double] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
+  
   var urls: js.UndefOr[js.Array[String]] = js.undefined
+  
   var version: js.UndefOr[String] = js.undefined
+  
   var wrapX: js.UndefOr[Boolean] = js.undefined
 }
-
 object WMTSOptions {
-  @scala.inline
-  def apply(
-    layer: String,
-    matrixSet: String,
-    style: String,
-    tileGrid: WMTS,
-    attributions: AttributionLike = null,
-    cacheSize: Int | Double = null,
-    crossOrigin: String = null,
-    dimensions: GlobalObject = null,
-    format: String = null,
-    logo: String | LogoOptions = null,
-    projection: ProjectionLike = null,
-    reprojectionErrorThreshold: Int | Double = null,
-    requestEncoding: WMTSRequestEncoding | String = null,
-    tileClass: (/* n */ ImageTile, /* coords */ TileCoord, /* state */ State, /* s1 */ String, /* s2 */ String, /* type */ TileLoadFunctionType) => CallbackTo[js.Any] = null,
-    tileLoadFunction: (/* tile */ Tile, /* url */ String) => Callback = null,
-    tilePixelRatio: Int | Double = null,
-    url: String = null,
-    urls: js.Array[String] = null,
-    version: String = null,
-    wrapX: js.UndefOr[Boolean] = js.undefined
-  ): WMTSOptions = {
+  
+  inline def apply(layer: String, matrixSet: String, style: String, tileGrid: WMTS): WMTSOptions = {
     val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], matrixSet = matrixSet.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], tileGrid = tileGrid.asInstanceOf[js.Any])
-    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
-    if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
-    if (requestEncoding != null) __obj.updateDynamic("requestEncoding")(requestEncoding.asInstanceOf[js.Any])
-    if (tileClass != null) __obj.updateDynamic("tileClass")(js.Any.fromFunction6((t0: /* n */ typingsJapgolly.openlayers.mod.ImageTile, t1: /* coords */ typingsJapgolly.openlayers.mod.TileCoord, t2: /* state */ typingsJapgolly.openlayers.mod.Tile.State, t3: /* s1 */ java.lang.String, t4: /* s2 */ java.lang.String, t5: /* type */ typingsJapgolly.openlayers.mod.TileLoadFunctionType) => tileClass(t0, t1, t2, t3, t4, t5).runNow()))
-    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(js.Any.fromFunction2((t0: /* tile */ typingsJapgolly.openlayers.mod.Tile, t1: /* url */ java.lang.String) => tileLoadFunction(t0, t1).runNow()))
-    if (tilePixelRatio != null) __obj.updateDynamic("tilePixelRatio")(tilePixelRatio.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[WMTSOptions]
   }
+  
+  extension [Self <: WMTSOptions](x: Self) {
+    
+    inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
+    
+    inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
+    
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
+    
+    inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
+    
+    inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
+    
+    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    
+    inline def setDimensions(value: GlobalObject): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setLogo(value: String | LogoOptions): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    
+    inline def setMatrixSet(value: String): Self = StObject.set(x, "matrixSet", value.asInstanceOf[js.Any])
+    
+    inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    
+    inline def setReprojectionErrorThreshold(value: Double): Self = StObject.set(x, "reprojectionErrorThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setReprojectionErrorThresholdUndefined: Self = StObject.set(x, "reprojectionErrorThreshold", js.undefined)
+    
+    inline def setRequestEncoding(value: WMTSRequestEncoding | String): Self = StObject.set(x, "requestEncoding", value.asInstanceOf[js.Any])
+    
+    inline def setRequestEncodingUndefined: Self = StObject.set(x, "requestEncoding", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setTileClass(
+      value: (/* n */ ImageTile, /* coords */ TileCoord, /* state */ State, /* s1 */ String, /* s2 */ String, /* type */ TileLoadFunctionType) => Any
+    ): Self = StObject.set(x, "tileClass", js.Any.fromFunction6(value))
+    
+    inline def setTileClassUndefined: Self = StObject.set(x, "tileClass", js.undefined)
+    
+    inline def setTileGrid(value: WMTS): Self = StObject.set(x, "tileGrid", value.asInstanceOf[js.Any])
+    
+    inline def setTileLoadFunction(value: (/* tile */ Tile, /* url */ String) => Callback): Self = StObject.set(x, "tileLoadFunction", js.Any.fromFunction2((t0: /* tile */ Tile, t1: /* url */ String) => (value(t0, t1)).runNow()))
+    
+    inline def setTileLoadFunctionUndefined: Self = StObject.set(x, "tileLoadFunction", js.undefined)
+    
+    inline def setTilePixelRatio(value: Double): Self = StObject.set(x, "tilePixelRatio", value.asInstanceOf[js.Any])
+    
+    inline def setTilePixelRatioUndefined: Self = StObject.set(x, "tilePixelRatio", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    
+    inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+    
+    inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+  }
 }
-

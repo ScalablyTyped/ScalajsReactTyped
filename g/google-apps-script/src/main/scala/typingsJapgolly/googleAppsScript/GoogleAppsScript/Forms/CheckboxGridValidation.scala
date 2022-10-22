@@ -1,8 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A DataValidation for a CheckboxGridItem.
@@ -19,5 +19,4 @@ import scala.scalajs.js.annotation._
   *     checkboxGridItem.setValidation(checkboxGridValidation);
   */
 // tslint:disable-next-line: no-empty-interface
-trait CheckboxGridValidation extends js.Object
-
+trait CheckboxGridValidation extends StObject

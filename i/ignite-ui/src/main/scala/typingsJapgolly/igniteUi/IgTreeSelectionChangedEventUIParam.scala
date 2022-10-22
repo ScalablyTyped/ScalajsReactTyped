@@ -1,32 +1,49 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IgTreeSelectionChangedEventUIParam extends js.Object {
+trait IgTreeSelectionChangedEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the newly added nodes to the selection.
-  	 */
-  var newNodes: js.UndefOr[js.Array[_]] = js.undefined
+    * Gets a reference to the newly added nodes to the selection.
+    */
+  var newNodes: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Gets a reference to the tree.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the tree.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to currently selected nodes.
-  	 */
-  var selectedNodes: js.UndefOr[js.Array[_]] = js.undefined
+    * Gets a reference to currently selected nodes.
+    */
+  var selectedNodes: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object IgTreeSelectionChangedEventUIParam {
-  @scala.inline
-  def apply(newNodes: js.Array[_] = null, owner: js.Any = null, selectedNodes: js.Array[_] = null): IgTreeSelectionChangedEventUIParam = {
+  
+  inline def apply(): IgTreeSelectionChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (newNodes != null) __obj.updateDynamic("newNodes")(newNodes.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (selectedNodes != null) __obj.updateDynamic("selectedNodes")(selectedNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeSelectionChangedEventUIParam]
   }
+  
+  extension [Self <: IgTreeSelectionChangedEventUIParam](x: Self) {
+    
+    inline def setNewNodes(value: js.Array[Any]): Self = StObject.set(x, "newNodes", value.asInstanceOf[js.Any])
+    
+    inline def setNewNodesUndefined: Self = StObject.set(x, "newNodes", js.undefined)
+    
+    inline def setNewNodesVarargs(value: Any*): Self = StObject.set(x, "newNodes", js.Array(value*))
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setSelectedNodes(value: js.Array[Any]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedNodesUndefined: Self = StObject.set(x, "selectedNodes", js.undefined)
+    
+    inline def setSelectedNodesVarargs(value: Any*): Self = StObject.set(x, "selectedNodes", js.Array(value*))
+  }
 }
-

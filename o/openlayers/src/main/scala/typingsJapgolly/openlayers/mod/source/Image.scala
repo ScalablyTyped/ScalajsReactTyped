@@ -1,9 +1,9 @@
 package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.SourceImageOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.Image")
 @js.native
-class Image protected () extends Source {
+open class Image protected () extends Source {
   /**
     * @classdesc
     * Abstract base class; normally only used for creating subclasses and not
@@ -28,4 +28,3 @@ class Image protected () extends Source {
     */
   def this(options: SourceImageOptions) = this()
 }
-

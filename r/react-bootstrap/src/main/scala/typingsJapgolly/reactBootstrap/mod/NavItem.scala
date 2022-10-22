@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.navItemMod.NavItemProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "NavItem")
 @js.native
-class NavItem ()
-  extends Component[NavItemProps, js.Object, js.Any]
-
+open class NavItem ()
+  extends typingsJapgolly.reactBootstrap.libMod.NavItem

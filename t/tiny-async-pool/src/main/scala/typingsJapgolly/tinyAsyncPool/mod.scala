@@ -1,12 +1,12 @@
 package typingsJapgolly.tinyAsyncPool
 
+import typingsJapgolly.std.AsyncIterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tiny-async-pool", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Runs multiple promise-returning & async functions in a limited concurrency pool.
     * It rejects immediately as soon as one of the promises rejects.
@@ -21,10 +21,13 @@ object mod extends js.Object {
     * @template IN Type of the input array
     * @template OUT Type of the resolves of the promises
     */
-  def apply[IN, OUT](
+  inline def apply[IN, OUT](
     poolLimit: Double,
     array: js.Array[IN],
     iteratorFn: js.Function1[/* generator */ IN, js.Promise[OUT]]
-  ): js.Promise[js.Array[OUT]] = js.native
+  ): AsyncIterableIterator[OUT] = (^.asInstanceOf[js.Dynamic].apply(poolLimit.asInstanceOf[js.Any], array.asInstanceOf[js.Any], iteratorFn.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[OUT]]
+  
+  @JSImport("tiny-async-pool", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

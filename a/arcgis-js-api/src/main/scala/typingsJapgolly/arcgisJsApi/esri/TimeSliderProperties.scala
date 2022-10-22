@@ -1,123 +1,214 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalajs.dom.raw.HTMLElement
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.arcgisJsApi.anon.MapViewPropertiestype2d
+import typingsJapgolly.arcgisJsApi.anon.SceneViewPropertiestype3d
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`cumulative-from-end`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`cumulative-from-start`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`time-window`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.auto
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.compact
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.extent
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.instant
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.max
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.min
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.wide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimeSliderProperties extends WidgetProperties {
+trait TimeSliderProperties
+  extends StObject
+     with WidgetProperties {
+  
   /**
-    * The temporal extent of the entire slider. It defines the entire time period within which you can visualize your time aware data using the time slider widget.
+    * Defines actions that will appear in a menu when the user clicks the ellipsis button ![timeSlider-actions-menu](https://developers.arcgis.com/javascript/latest/assets/img/apiref/widgets/timeslider/ellipsis.png) in the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#actions)
+    */
+  var actions: js.UndefOr[CollectionProperties[Action]] = js.undefined
+  
+  /**
+    * When `true`, sets the widget to a disabled state so the user cannot interact with it.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#disabled)
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The temporal extent of the entire slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#fullTimeExtent)
     */
   var fullTimeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
+  
+  /**
+    * A function used to specify custom formatting and styling of the min, max, and extent labels of the TimeSlider.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#labelFormatFunction)
+    */
+  var labelFormatFunction: js.UndefOr[DateLabelFormatter] = js.undefined
+  
+  /**
+    * Determines the layout used by the TimeSlider widget.
+    *
+    * @default auto
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#layout)
+    */
+  var layout: js.UndefOr[auto | compact | wide] = js.undefined
+  
   /**
     * When `true`, the time slider will play its animation in a loop.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#loop)
+    * @default false
     *
-    * @default true
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#loop)
     */
   var loop: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The time slider mode. This property is used for defining if the temporal data will be displayed cumulatively up to a point in time, a single instant in time, or within a time range. See the following table for possible values.
-    *
-    * Possible Values       | Description   | Example |
-    * ----------------------|-------------- | ------- |
-    * instant               | The slider will show temporal data that falls on a single instance in time. Set the [values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#values) property to an array with one date. | <img alt="mode-instance" src="../../assets/img/apiref/widgets/timeslider/mode-instance.png"> |
-    * time-window           | The slider will show temporal data that falls within a given time range. This is the default. Set [values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#values) property to an array with two dates. | <img alt="mode-instance" src="../../assets/img/apiref/widgets/timeslider/mode-time-window.png"> |
-    * cumulative-from-start | Similar to `time-window` with the start time is always pinned to the start of the slider. Set the [values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#values) property to have one date, which is the end date. | <img alt="mode-instance" src="../../assets/img/apiref/widgets/timeslider/mode-from-start.png"> |
-    * cumulative-from-end   | Also, similar to the `time-window` with the end time pinned to the end of the slider. Set the [values](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#values) property to have one date, which is the start date. | <img alt="mode-instance" src="../../assets/img/apiref/widgets/timeslider/mode-from-end.png"> |
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#mode)
+    * The time slider mode.
     *
     * @default "time-window"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#mode)
     */
   var mode: js.UndefOr[instant | `time-window` | `cumulative-from-start` | `cumulative-from-end`] = js.undefined
+  
   /**
     * The time (in milliseconds) between animation steps.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#playRate)
-    *
     * @default 1000
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#playRate)
     */
   var playRate: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Defines specific locations on the time slider where thumbs will snap to when manipulated. If unspecified, ten evenly spaced stops will be added.  To define regularly spaced stops based on specified [time interval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html) and [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html), use [StopsByInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByInterval). Use [StopsByCount](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByCount) to define evenly spaced timeline stops. Lastly, for irregular dates use [StopsByDates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByDates). Please refer below for examples of each of these objects.  If a declaration using [StopsByInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByInterval) will result in excess of 10,000 stops then TimeSlider will default to generating ten evenly spaced stops.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#stops)
+    * Defines specific locations on the time slider where thumbs will snap to when manipulated.
     *
     * @default { count : 10 }
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#stops)
     */
   var stops: js.UndefOr[StopsByDates | StopsByCount | StopsByInterval] = js.undefined
+  
+  /**
+    * When set, overrides the default TimeSlider ticks labelling system.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#tickConfigs)
+    */
+  var tickConfigs: js.UndefOr[js.Array[TickConfig]] = js.undefined
+  
+  /**
+    * The current time extent of the time slider.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#timeExtent)
+    */
+  var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
+  
   /**
     * Shows/hides time in the display.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#timeVisible)
-    *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#timeVisible)
     */
   var timeVisible: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The user defined time extent. Values define the current location of time slider thumbs. The "time-window" [mode](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#mode) has two values, the other modes only have one.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#values)
-    *
-    * @default null
-    */
-  var values: js.UndefOr[js.Array[DateProperties]] = js.undefined
-  /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). If this property is set, the TimeSlider widget will update the view's timeExtent property whenever the time slider is manipulated or updated programmatically. This property will affect any time-aware layer in the view.
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
+  
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [TimeSliderViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider-TimeSliderViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#viewModel)
     */
   var viewModel: js.UndefOr[TimeSliderViewModelProperties] = js.undefined
 }
-
 object TimeSliderProperties {
-  @scala.inline
-  def apply(
-    container: String | HTMLElement = null,
-    destroyed: js.UndefOr[Boolean] = js.undefined,
-    fullTimeExtent: TimeExtentProperties = null,
-    id: String = null,
-    label: String = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    mode: instant | `time-window` | `cumulative-from-start` | `cumulative-from-end` = null,
-    playRate: Int | Double = null,
-    stops: StopsByDates | StopsByCount | StopsByInterval = null,
-    timeVisible: js.UndefOr[Boolean] = js.undefined,
-    values: js.Array[DateProperties] = null,
-    view: MapViewProperties | SceneViewProperties = null,
-    viewModel: TimeSliderViewModelProperties = null
-  ): TimeSliderProperties = {
+  
+  inline def apply(): TimeSliderProperties = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
-    if (fullTimeExtent != null) __obj.updateDynamic("fullTimeExtent")(fullTimeExtent.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (playRate != null) __obj.updateDynamic("playRate")(playRate.asInstanceOf[js.Any])
-    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeVisible)) __obj.updateDynamic("timeVisible")(timeVisible.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeSliderProperties]
   }
+  
+  extension [Self <: TimeSliderProperties](x: Self) {
+    
+    inline def setActions(value: CollectionProperties[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setFullTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "fullTimeExtent", value.asInstanceOf[js.Any])
+    
+    inline def setFullTimeExtentUndefined: Self = StObject.set(x, "fullTimeExtent", js.undefined)
+    
+    inline def setLabelFormatFunction(
+      value: (/* value */ js.Date | js.Array[js.Date], /* type */ js.UndefOr[min | max | extent], /* element */ js.UndefOr[HTMLElement], /* layout */ js.UndefOr[compact | wide]) => Callback
+    ): Self = StObject.set(x, "labelFormatFunction", js.Any.fromFunction4((t0: /* value */ js.Date | js.Array[js.Date], t1: /* type */ js.UndefOr[min | max | extent], t2: /* element */ js.UndefOr[HTMLElement], t3: /* layout */ js.UndefOr[compact | wide]) => (value(t0, t1, t2, t3)).runNow()))
+    
+    inline def setLabelFormatFunctionUndefined: Self = StObject.set(x, "labelFormatFunction", js.undefined)
+    
+    inline def setLayout(value: auto | compact | wide): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    
+    inline def setMode(value: instant | `time-window` | `cumulative-from-start` | `cumulative-from-end`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setPlayRate(value: Double): Self = StObject.set(x, "playRate", value.asInstanceOf[js.Any])
+    
+    inline def setPlayRateUndefined: Self = StObject.set(x, "playRate", js.undefined)
+    
+    inline def setStops(value: StopsByDates | StopsByCount | StopsByInterval): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    
+    inline def setTickConfigs(value: js.Array[TickConfig]): Self = StObject.set(x, "tickConfigs", value.asInstanceOf[js.Any])
+    
+    inline def setTickConfigsUndefined: Self = StObject.set(x, "tickConfigs", js.undefined)
+    
+    inline def setTickConfigsVarargs(value: TickConfig*): Self = StObject.set(x, "tickConfigs", js.Array(value*))
+    
+    inline def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
+    
+    inline def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
+    
+    inline def setTimeVisible(value: Boolean): Self = StObject.set(x, "timeVisible", value.asInstanceOf[js.Any])
+    
+    inline def setTimeVisibleUndefined: Self = StObject.set(x, "timeVisible", js.undefined)
+    
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewModel(value: TimeSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

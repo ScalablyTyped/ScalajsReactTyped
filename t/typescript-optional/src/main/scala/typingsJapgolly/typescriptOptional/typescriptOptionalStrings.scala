@@ -1,19 +1,16 @@
 package typingsJapgolly.typescriptOptional
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typescriptOptionalStrings {
-  @js.native
-  sealed trait empty extends js.Object
   
   @js.native
-  sealed trait present extends js.Object
+  sealed trait empty extends StObject
+  inline def empty: empty = "empty".asInstanceOf[empty]
   
-  @scala.inline
-  def empty: empty = "empty".asInstanceOf[empty]
-  @scala.inline
-  def present: present = "present".asInstanceOf[present]
+  @js.native
+  sealed trait present extends StObject
+  inline def present: present = "present".asInstanceOf[present]
 }
-

@@ -1,53 +1,42 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services.Formatting
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FormattingRequestKind extends js.Object
-
+sealed trait FormattingRequestKind extends StObject
 @JSGlobal("TypeScript.Services.Formatting.FormattingRequestKind")
 @js.native
-object FormattingRequestKind extends js.Object {
-  @js.native
-  sealed trait FormatDocument extends FormattingRequestKind
+object FormattingRequestKind extends StObject {
   
   @js.native
-  sealed trait FormatOnClosingCurlyBrace extends FormattingRequestKind
+  sealed trait FormatDocument
+    extends StObject
+       with FormattingRequestKind
   
   @js.native
-  sealed trait FormatOnEnter extends FormattingRequestKind
+  sealed trait FormatOnClosingCurlyBrace
+    extends StObject
+       with FormattingRequestKind
   
   @js.native
-  sealed trait FormatOnPaste extends FormattingRequestKind
+  sealed trait FormatOnEnter
+    extends StObject
+       with FormattingRequestKind
   
   @js.native
-  sealed trait FormatOnSemicolon extends FormattingRequestKind
+  sealed trait FormatOnPaste
+    extends StObject
+       with FormattingRequestKind
   
   @js.native
-  sealed trait FormatSelection extends FormattingRequestKind
+  sealed trait FormatOnSemicolon
+    extends StObject
+       with FormattingRequestKind
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FormattingRequestKind with Double] = js.native
-  /* 0 */ @js.native
-  object FormatDocument extends TopLevel[FormatDocument with Double]
-  
-  /* 4 */ @js.native
-  object FormatOnClosingCurlyBrace extends TopLevel[FormatOnClosingCurlyBrace with Double]
-  
-  /* 2 */ @js.native
-  object FormatOnEnter extends TopLevel[FormatOnEnter with Double]
-  
-  /* 5 */ @js.native
-  object FormatOnPaste extends TopLevel[FormatOnPaste with Double]
-  
-  /* 3 */ @js.native
-  object FormatOnSemicolon extends TopLevel[FormatOnSemicolon with Double]
-  
-  /* 1 */ @js.native
-  object FormatSelection extends TopLevel[FormatSelection with Double]
-  
+  @js.native
+  sealed trait FormatSelection
+    extends StObject
+       with FormattingRequestKind
 }
-

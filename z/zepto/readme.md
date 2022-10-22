@@ -10,10 +10,10 @@ Zepto is a minimalist JavaScript library for modern browsers with a largely jQue
 | ------------------ | :-------------: |
 | Full name          | zepto |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 86 |
-| # downloads        | 1686035 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 619994.0 |
+| # stars            | 14949.0 |
 
 ## Links
 - [Homepage](http://zeptojs.com)

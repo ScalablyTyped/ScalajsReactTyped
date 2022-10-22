@@ -1,39 +1,62 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Quaternion")
 @js.native
 /**
-	 * @param x x coordinate
-	 * @param y y coordinate
-	 * @param z z coordinate
-	 * @param w w coordinate
-	 */
-class Quaternion ()
-  extends typingsJapgolly.three.quaternionMod.Quaternion {
+  * @param x x coordinate
+  * @param y y coordinate
+  * @param z z coordinate
+  * @param w w coordinate
+  */
+open class Quaternion ()
+  extends typingsJapgolly.three.srcThreeMod.Quaternion {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
+  def this(x: Unit, y: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
+  def this(x: Double, y: Unit, z: Double) = this()
+  def this(x: Unit, y: Double, z: Double) = this()
+  def this(x: Unit, y: Unit, z: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
+  def this(x: Double, y: Double, z: Unit, w: Double) = this()
+  def this(x: Double, y: Unit, z: Double, w: Double) = this()
+  def this(x: Double, y: Unit, z: Unit, w: Double) = this()
+  def this(x: Unit, y: Double, z: Double, w: Double) = this()
+  def this(x: Unit, y: Double, z: Unit, w: Double) = this()
+  def this(x: Unit, y: Unit, z: Double, w: Double) = this()
+  def this(x: Unit, y: Unit, z: Unit, w: Double) = this()
 }
-
 /* static members */
-@JSImport("three", "Quaternion")
-@js.native
-object Quaternion extends js.Object {
+object Quaternion {
+  
+  @JSImport("three", "Quaternion")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def multiplyQuaternionsFlat(
+    dst: js.Array[Double],
+    dstOffset: Double,
+    src0: js.Array[Double],
+    srcOffset: Double,
+    src1: js.Array[Double],
+    stcOffset1: Double
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyQuaternionsFlat")(dst.asInstanceOf[js.Any], dstOffset.asInstanceOf[js.Any], src0.asInstanceOf[js.Any], srcOffset.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], stcOffset1.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
   /**
-  	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
-  	 */
-  def slerp(
-    qa: typingsJapgolly.three.quaternionMod.Quaternion,
-    qb: typingsJapgolly.three.quaternionMod.Quaternion,
-    qm: typingsJapgolly.three.quaternionMod.Quaternion,
+    * @deprecated Use qm.slerpQuaternions( qa, qb, t ) instead..
+    */
+  inline def slerp(
+    qa: typingsJapgolly.three.srcMathQuaternionMod.Quaternion,
+    qb: typingsJapgolly.three.srcMathQuaternionMod.Quaternion,
+    qm: typingsJapgolly.three.srcMathQuaternionMod.Quaternion,
     t: Double
-  ): typingsJapgolly.three.quaternionMod.Quaternion = js.native
-  def slerpFlat(
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("slerp")(qa.asInstanceOf[js.Any], qb.asInstanceOf[js.Any], qm.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def slerpFlat(
     dst: js.Array[Double],
     dstOffset: Double,
     src0: js.Array[Double],
@@ -41,6 +64,5 @@ object Quaternion extends js.Object {
     src1: js.Array[Double],
     stcOffset1: Double,
     t: Double
-  ): typingsJapgolly.three.quaternionMod.Quaternion = js.native
+  ): typingsJapgolly.three.srcMathQuaternionMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("slerpFlat")(dst.asInstanceOf[js.Any], dstOffset.asInstanceOf[js.Any], src0.asInstanceOf[js.Any], srcOffset.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], stcOffset1.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.three.srcMathQuaternionMod.Quaternion]
 }
-

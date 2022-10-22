@@ -1,47 +1,42 @@
 package typingsJapgolly.ol
 
-import org.scalajs.dom.raw.HTMLCanvasElement
-import org.scalajs.dom.raw.HTMLImageElement
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.HTMLImageElement
 import typingsJapgolly.ol.colorMod.Color
 import typingsJapgolly.ol.imageStateMod.ImageState
 import typingsJapgolly.ol.sizeMod.Size
 import typingsJapgolly.ol.styleCircleMod.Options
 import typingsJapgolly.ol.styleCircleMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/style", JSImport.Namespace)
-@js.native
-object styleMod extends js.Object {
+object styleMod {
+  
+  @JSImport("ol/style", "Circle")
   @js.native
-  class Circle () extends default {
+  open class Circle () extends default {
     def this(opt_options: Options) = this()
   }
   
+  @JSImport("ol/style", "Fill")
   @js.native
-  class Fill ()
-    extends typingsJapgolly.ol.fillMod.default {
-    def this(opt_options: typingsJapgolly.ol.fillMod.Options) = this()
+  open class Fill ()
+    extends typingsJapgolly.ol.styleFillMod.default {
+    def this(opt_options: typingsJapgolly.ol.styleFillMod.Options) = this()
   }
   
+  @JSImport("ol/style", "Icon")
   @js.native
-  class Icon ()
-    extends typingsJapgolly.ol.iconMod.default {
-    def this(opt_options: typingsJapgolly.ol.iconMod.Options) = this()
+  open class Icon ()
+    extends typingsJapgolly.ol.styleIconMod.default {
+    def this(opt_options: typingsJapgolly.ol.styleIconMod.Options) = this()
   }
   
+  @JSImport("ol/style", "IconImage")
   @js.native
-  class IconImage protected ()
-    extends typingsJapgolly.ol.iconImageMod.default {
-    def this(
-      image: HTMLCanvasElement,
-      src: js.UndefOr[scala.Nothing],
-      size: Size,
-      crossOrigin: String,
-      imageState: ImageState,
-      color: Color
-    ) = this()
+  open class IconImage protected ()
+    extends typingsJapgolly.ol.styleIconImageMod.default {
     def this(
       image: HTMLCanvasElement,
       src: String,
@@ -51,8 +46,8 @@ object styleMod extends js.Object {
       color: Color
     ) = this()
     def this(
-      image: HTMLImageElement,
-      src: js.UndefOr[scala.Nothing],
+      image: HTMLCanvasElement,
+      src: Unit,
       size: Size,
       crossOrigin: String,
       imageState: ImageState,
@@ -66,37 +61,48 @@ object styleMod extends js.Object {
       imageState: ImageState,
       color: Color
     ) = this()
+    def this(
+      image: HTMLImageElement,
+      src: Unit,
+      size: Size,
+      crossOrigin: String,
+      imageState: ImageState,
+      color: Color
+    ) = this()
   }
   
+  /* note: abstract class */ @JSImport("ol/style", "Image")
   @js.native
-  abstract class Image protected ()
+  open class Image protected ()
     extends typingsJapgolly.ol.styleImageMod.default {
     def this(options: typingsJapgolly.ol.styleImageMod.Options) = this()
   }
   
+  @JSImport("ol/style", "RegularShape")
   @js.native
-  class RegularShape protected ()
-    extends typingsJapgolly.ol.regularShapeMod.default {
-    def this(options: typingsJapgolly.ol.regularShapeMod.Options) = this()
+  open class RegularShape protected ()
+    extends typingsJapgolly.ol.styleRegularShapeMod.default {
+    def this(options: typingsJapgolly.ol.styleRegularShapeMod.Options) = this()
   }
   
+  @JSImport("ol/style", "Stroke")
   @js.native
-  class Stroke ()
-    extends typingsJapgolly.ol.strokeMod.default {
-    def this(opt_options: typingsJapgolly.ol.strokeMod.Options) = this()
+  open class Stroke ()
+    extends typingsJapgolly.ol.styleStrokeMod.default {
+    def this(opt_options: typingsJapgolly.ol.styleStrokeMod.Options) = this()
   }
   
+  @JSImport("ol/style", "Style")
   @js.native
-  class Style ()
+  open class Style ()
     extends typingsJapgolly.ol.styleStyleMod.default {
     def this(opt_options: typingsJapgolly.ol.styleStyleMod.Options) = this()
   }
   
+  @JSImport("ol/style", "Text")
   @js.native
-  class Text ()
-    extends typingsJapgolly.ol.textMod.default {
-    def this(opt_options: typingsJapgolly.ol.textMod.Options) = this()
+  open class Text ()
+    extends typingsJapgolly.ol.styleTextMod.default {
+    def this(opt_options: typingsJapgolly.ol.styleTextMod.Options) = this()
   }
-  
 }
-

@@ -3,9 +3,9 @@ package typingsJapgolly.umbraco.umbraco.services
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.angular.mod.IScope
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -15,7 +15,8 @@ import scala.scalajs.js.annotation._
   * @description
   * A service containing all logic for all of the Umbraco TinyMCE plugins
   */
-trait ITinyMceService extends js.Object {
+trait ITinyMceService extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.services.tinyMceService#configuration
@@ -26,6 +27,7 @@ trait ITinyMceService extends js.Object {
     *
     */
   def configuration(): js.Array[ITinyMcePlugin]
+  
   /**
     * @ngdoc method
     * @name umbraco.services.tinyMceService#createInsertEmbeddedMedia
@@ -38,6 +40,7 @@ trait ITinyMceService extends js.Object {
     * @param {Object} $scope the current controller scope
     */
   def createInsertEmbeddedMedia(editor: js.Object, $scope: IScope): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.tinyMceService#createUmbracoMacro
@@ -50,6 +53,7 @@ trait ITinyMceService extends js.Object {
     * @param {Object} $scope the current controller scope
     */
   def createInsertMacro(editor: js.Object, $scope: IScope): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.tinyMceService#createMediaPicker
@@ -62,6 +66,7 @@ trait ITinyMceService extends js.Object {
     * @param {Object} $scope the current controller scope
     */
   def createMediaPicker(editor: js.Object): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.tinyMceService#defaultPrevalues
@@ -73,23 +78,29 @@ trait ITinyMceService extends js.Object {
     */
   def defaultPrevalues(): IConfiguration
 }
-
 object ITinyMceService {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     configuration: CallbackTo[js.Array[ITinyMcePlugin]],
     createInsertEmbeddedMedia: (js.Object, IScope) => Callback,
     createInsertMacro: (js.Object, IScope) => Callback,
     createMediaPicker: js.Object => Callback,
     defaultPrevalues: CallbackTo[IConfiguration]
   ): ITinyMceService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configuration")(configuration.toJsFn)
-    __obj.updateDynamic("createInsertEmbeddedMedia")(js.Any.fromFunction2((t0: js.Object, t1: typingsJapgolly.angular.mod.IScope) => createInsertEmbeddedMedia(t0, t1).runNow()))
-    __obj.updateDynamic("createInsertMacro")(js.Any.fromFunction2((t0: js.Object, t1: typingsJapgolly.angular.mod.IScope) => createInsertMacro(t0, t1).runNow()))
-    __obj.updateDynamic("createMediaPicker")(js.Any.fromFunction1((t0: js.Object) => createMediaPicker(t0).runNow()))
-    __obj.updateDynamic("defaultPrevalues")(defaultPrevalues.toJsFn)
+    val __obj = js.Dynamic.literal(configuration = configuration.toJsFn, createInsertEmbeddedMedia = js.Any.fromFunction2((t0: js.Object, t1: IScope) => (createInsertEmbeddedMedia(t0, t1)).runNow()), createInsertMacro = js.Any.fromFunction2((t0: js.Object, t1: IScope) => (createInsertMacro(t0, t1)).runNow()), createMediaPicker = js.Any.fromFunction1((t0: js.Object) => createMediaPicker(t0).runNow()), defaultPrevalues = defaultPrevalues.toJsFn)
     __obj.asInstanceOf[ITinyMceService]
   }
+  
+  extension [Self <: ITinyMceService](x: Self) {
+    
+    inline def setConfiguration(value: CallbackTo[js.Array[ITinyMcePlugin]]): Self = StObject.set(x, "configuration", value.toJsFn)
+    
+    inline def setCreateInsertEmbeddedMedia(value: (js.Object, IScope) => Callback): Self = StObject.set(x, "createInsertEmbeddedMedia", js.Any.fromFunction2((t0: js.Object, t1: IScope) => (value(t0, t1)).runNow()))
+    
+    inline def setCreateInsertMacro(value: (js.Object, IScope) => Callback): Self = StObject.set(x, "createInsertMacro", js.Any.fromFunction2((t0: js.Object, t1: IScope) => (value(t0, t1)).runNow()))
+    
+    inline def setCreateMediaPicker(value: js.Object => Callback): Self = StObject.set(x, "createMediaPicker", js.Any.fromFunction1((t0: js.Object) => value(t0).runNow()))
+    
+    inline def setDefaultPrevalues(value: CallbackTo[IConfiguration]): Self = StObject.set(x, "defaultPrevalues", value.toJsFn)
+  }
 }
-

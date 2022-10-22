@@ -1,21 +1,27 @@
 package typingsJapgolly.adler32
 
-import typingsJapgolly.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("adler-32", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("adler-32", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def bstr(data: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bstr")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def bstr(data: String, seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bstr")(data.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def buf(data: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("buf")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def buf(data: js.Array[Double], seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("buf")(data.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def buf(data: js.typedarray.Uint8Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("buf")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def buf(data: js.typedarray.Uint8Array, seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("buf")(data.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def str(data: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("str")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def str(data: String, seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("str")(data.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @JSImport("adler-32", "version")
+  @js.native
   val version: String = js.native
-  def bstr(data: String): Double = js.native
-  def bstr(data: String, seed: Double): Double = js.native
-  def buf(data: js.Array[Double]): Double = js.native
-  def buf(data: js.Array[Double], seed: Double): Double = js.native
-  def buf(data: Uint8Array): Double = js.native
-  def buf(data: Uint8Array, seed: Double): Double = js.native
-  def str(data: String): Double = js.native
-  def str(data: String, seed: Double): Double = js.native
 }
-

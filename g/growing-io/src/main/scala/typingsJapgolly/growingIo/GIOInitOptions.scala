@@ -1,20 +1,25 @@
 package typingsJapgolly.growingIo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GIOInitOptions extends js.Object {
+trait GIOInitOptions extends StObject {
+  
   /** 配置imp类型的数据关闭发送 */
   var imp: js.UndefOr[Boolean] = js.undefined
 }
-
 object GIOInitOptions {
-  @scala.inline
-  def apply(imp: js.UndefOr[Boolean] = js.undefined): GIOInitOptions = {
+  
+  inline def apply(): GIOInitOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(imp)) __obj.updateDynamic("imp")(imp.asInstanceOf[js.Any])
     __obj.asInstanceOf[GIOInitOptions]
   }
+  
+  extension [Self <: GIOInitOptions](x: Self) {
+    
+    inline def setImp(value: Boolean): Self = StObject.set(x, "imp", value.asInstanceOf[js.Any])
+    
+    inline def setImpUndefined: Self = StObject.set(x, "imp", js.undefined)
+  }
 }
-

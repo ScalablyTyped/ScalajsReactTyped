@@ -1,21 +1,17 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.eq
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.like
 */
-trait FilterCondition extends js.Object
-
+trait FilterCondition extends StObject
 object FilterCondition {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def eq: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.eq = this.cast("eq")
-  @scala.inline
-  def like: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.like = this.cast("like")
+  
+  inline def eq: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.eq = "eq".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.eq]
+  
+  inline def like: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.like = "like".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.like]
 }
-

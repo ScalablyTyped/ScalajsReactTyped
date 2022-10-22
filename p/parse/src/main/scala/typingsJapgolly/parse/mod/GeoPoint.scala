@@ -1,9 +1,9 @@
 package typingsJapgolly.parse.mod
 
-import typingsJapgolly.parse.AnonLatitude
+import typingsJapgolly.parse.anon.Latitude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new GeoPoint with any of the following forms:<br>
@@ -29,10 +29,9 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse", "GeoPoint")
 @js.native
-class GeoPoint ()
-  extends typingsJapgolly.parse.mod._Global_.Parse.GeoPoint {
+open class GeoPoint ()
+  extends typingsJapgolly.parse.mod.global.Parse.GeoPoint {
   def this(coords: js.Tuple2[Double, Double]) = this()
-  def this(coords: AnonLatitude) = this()
+  def this(coords: Latitude) = this()
   def this(latitude: Double, longitude: Double) = this()
 }
-

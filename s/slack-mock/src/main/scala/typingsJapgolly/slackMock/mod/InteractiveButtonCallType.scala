@@ -1,29 +1,27 @@
 package typingsJapgolly.slackMock.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InteractiveButtonCallType extends js.Object
-
+sealed trait InteractiveButtonCallType extends StObject
 @JSImport("slack-mock", "InteractiveButtonCallType")
 @js.native
-object InteractiveButtonCallType extends js.Object {
-  @js.native
-  sealed trait response extends InteractiveButtonCallType
-  
-  @js.native
-  sealed trait response_url extends InteractiveButtonCallType
+object InteractiveButtonCallType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[InteractiveButtonCallType with String] = js.native
-  /* "response" */ @js.native
-  object response extends TopLevel[response with String]
+  def apply(value: String): js.UndefOr[InteractiveButtonCallType & String] = js.native
   
-  /* "response_url" */ @js.native
-  object response_url extends TopLevel[response_url with String]
+  @js.native
+  sealed trait response
+    extends StObject
+       with InteractiveButtonCallType
+  /* "response" */ val response: typingsJapgolly.slackMock.mod.InteractiveButtonCallType.response & String = js.native
   
+  @js.native
+  sealed trait response_url
+    extends StObject
+       with InteractiveButtonCallType
+  /* "response_url" */ val response_url: typingsJapgolly.slackMock.mod.InteractiveButtonCallType.response_url & String = js.native
 }
-

@@ -1,23 +1,36 @@
 package typingsJapgolly.reactNativeMaterialKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProgressStyle extends js.Object {
+trait ProgressStyle extends StObject {
+  
   var backgroundColor: js.UndefOr[String] = js.undefined
+  
   var bufferColor: js.UndefOr[String] = js.undefined
+  
   var progressColor: js.UndefOr[String] = js.undefined
 }
-
 object ProgressStyle {
-  @scala.inline
-  def apply(backgroundColor: String = null, bufferColor: String = null, progressColor: String = null): ProgressStyle = {
+  
+  inline def apply(): ProgressStyle = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (bufferColor != null) __obj.updateDynamic("bufferColor")(bufferColor.asInstanceOf[js.Any])
-    if (progressColor != null) __obj.updateDynamic("progressColor")(progressColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressStyle]
   }
+  
+  extension [Self <: ProgressStyle](x: Self) {
+    
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setBufferColor(value: String): Self = StObject.set(x, "bufferColor", value.asInstanceOf[js.Any])
+    
+    inline def setBufferColorUndefined: Self = StObject.set(x, "bufferColor", js.undefined)
+    
+    inline def setProgressColor(value: String): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
+    
+    inline def setProgressColorUndefined: Self = StObject.set(x, "progressColor", js.undefined)
+  }
 }
-

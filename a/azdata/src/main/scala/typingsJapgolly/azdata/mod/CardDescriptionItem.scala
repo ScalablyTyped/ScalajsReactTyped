@@ -2,25 +2,41 @@ package typingsJapgolly.azdata.mod
 
 import typingsJapgolly.azdata.azdataStrings.bold
 import typingsJapgolly.azdata.azdataStrings.normal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CardDescriptionItem extends js.Object {
+trait CardDescriptionItem extends StObject {
+  
   var fontWeight: js.UndefOr[normal | bold] = js.undefined
+  
   var label: String
+  
   var tooltip: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[String] = js.undefined
 }
-
 object CardDescriptionItem {
-  @scala.inline
-  def apply(label: String, fontWeight: normal | bold = null, tooltip: String = null, value: String = null): CardDescriptionItem = {
+  
+  inline def apply(label: String): CardDescriptionItem = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardDescriptionItem]
   }
+  
+  extension [Self <: CardDescriptionItem](x: Self) {
+    
+    inline def setFontWeight(value: normal | bold): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

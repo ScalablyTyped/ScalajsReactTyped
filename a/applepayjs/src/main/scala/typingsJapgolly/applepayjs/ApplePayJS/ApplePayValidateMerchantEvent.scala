@@ -1,18 +1,19 @@
 package typingsJapgolly.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The attributes contained by the onvalidatemerchant callback function.
   */
-@JSGlobal("ApplePayJS.ApplePayValidateMerchantEvent")
 @js.native
-abstract class ApplePayValidateMerchantEvent () extends Event {
+trait ApplePayValidateMerchantEvent
+  extends StObject
+     with Event {
+  
   /**
     * The URL your server must use to validate itself and obtain a merchant session object.
     */
   val validationURL: String = js.native
 }
-

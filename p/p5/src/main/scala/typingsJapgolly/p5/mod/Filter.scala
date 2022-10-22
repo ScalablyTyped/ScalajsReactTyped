@@ -1,17 +1,21 @@
 package typingsJapgolly.p5.mod
 
-import org.scalajs.dom.raw.DelayNode
+import org.scalajs.dom.DelayNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filter extends Effect {
+trait Filter
+  extends StObject
+     with Effect {
+  
   /**
     *   The p5.Filter is built with a  Web Audio
     *   BiquadFilter Node.
     */
   var biquadFilter: DelayNode = js.native
+  
   /**
     *   Set the filter frequency, in Hz, from 10 to 22050
     *   (the range of human hearing, although in reality
@@ -23,6 +27,7 @@ trait Filter extends Effect {
     */
   def freq(freq: Double): Double = js.native
   def freq(freq: Double, timeFromNow: Double): Double = js.native
+  
   /**
     *   Controls the gain attribute of a Biquad Filter.
     *   This is distinctly different from .amp() which is
@@ -33,6 +38,7 @@ trait Filter extends Effect {
     *   @return Returns the current or updated gain value
     */
   def gain(gain: Double): Double = js.native
+  
   /**
     *   Filter an audio signal according to a set of
     *   filter parameters.
@@ -44,6 +50,8 @@ trait Filter extends Effect {
   def process(Signal: js.Object): Unit = js.native
   def process(Signal: js.Object, freq: Double): Unit = js.native
   def process(Signal: js.Object, freq: Double, res: Double): Unit = js.native
+  def process(Signal: js.Object, freq: Unit, res: Double): Unit = js.native
+  
   /**
     *   Controls either width of a bandpass frequency, or
     *   the resonance of a low/highpass cutoff frequency.
@@ -55,6 +63,7 @@ trait Filter extends Effect {
     */
   def res(res: Double): Double = js.native
   def res(res: Double, timeFromNow: Double): Double = js.native
+  
   /**
     *   Set the frequency and the resonance of the filter.
     *   @param [freq] Frequency in Hz, from 10 to 22050
@@ -66,6 +75,11 @@ trait Filter extends Effect {
   def set(freq: Double): Unit = js.native
   def set(freq: Double, res: Double): Unit = js.native
   def set(freq: Double, res: Double, timeFromNow: Double): Unit = js.native
+  def set(freq: Double, res: Unit, timeFromNow: Double): Unit = js.native
+  def set(freq: Unit, res: Double): Unit = js.native
+  def set(freq: Unit, res: Double, timeFromNow: Double): Unit = js.native
+  def set(freq: Unit, res: Unit, timeFromNow: Double): Unit = js.native
+  
   /**
     *   Set the type of a p5.Filter. Possible types
     *   include: "lowpass" (default), "highpass",
@@ -73,6 +87,7 @@ trait Filter extends Effect {
     *   "notch", "allpass".
     */
   def setType(t: String): Unit = js.native
+  
   /**
     *   Toggle function. Switches between the specified
     *   type and allpass
@@ -80,4 +95,3 @@ trait Filter extends Effect {
     */
   def toggle(): Boolean = js.native
 }
-

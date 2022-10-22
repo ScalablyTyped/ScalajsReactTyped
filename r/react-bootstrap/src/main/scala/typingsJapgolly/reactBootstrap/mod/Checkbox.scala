@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.checkboxMod.CheckboxProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "Checkbox")
 @js.native
-class Checkbox ()
-  extends Component[CheckboxProps, js.Object, js.Any]
-
+open class Checkbox ()
+  extends typingsJapgolly.reactBootstrap.libMod.Checkbox

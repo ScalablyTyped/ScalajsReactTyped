@@ -1,33 +1,48 @@
 package typingsJapgolly.jqueryTruncateHtml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TruncateOptions extends js.Object {
+trait TruncateOptions extends StObject {
+  
   var ellipsis: js.UndefOr[String] = js.undefined
+  
   var length: js.UndefOr[Double] = js.undefined
+  
   var noBreaks: js.UndefOr[Boolean] = js.undefined
+  
   var stripTags: js.UndefOr[Boolean] = js.undefined
+  
   var words: js.UndefOr[Boolean] = js.undefined
 }
-
 object TruncateOptions {
-  @scala.inline
-  def apply(
-    ellipsis: String = null,
-    length: Int | Double = null,
-    noBreaks: js.UndefOr[Boolean] = js.undefined,
-    stripTags: js.UndefOr[Boolean] = js.undefined,
-    words: js.UndefOr[Boolean] = js.undefined
-  ): TruncateOptions = {
+  
+  inline def apply(): TruncateOptions = {
     val __obj = js.Dynamic.literal()
-    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(noBreaks)) __obj.updateDynamic("noBreaks")(noBreaks.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripTags)) __obj.updateDynamic("stripTags")(stripTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(words)) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[TruncateOptions]
   }
+  
+  extension [Self <: TruncateOptions](x: Self) {
+    
+    inline def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+    
+    inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    
+    inline def setNoBreaks(value: Boolean): Self = StObject.set(x, "noBreaks", value.asInstanceOf[js.Any])
+    
+    inline def setNoBreaksUndefined: Self = StObject.set(x, "noBreaks", js.undefined)
+    
+    inline def setStripTags(value: Boolean): Self = StObject.set(x, "stripTags", value.asInstanceOf[js.Any])
+    
+    inline def setStripTagsUndefined: Self = StObject.set(x, "stripTags", js.undefined)
+    
+    inline def setWords(value: Boolean): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    
+    inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+  }
 }
-

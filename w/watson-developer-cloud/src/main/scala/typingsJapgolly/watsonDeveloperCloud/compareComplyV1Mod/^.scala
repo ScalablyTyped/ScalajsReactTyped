@@ -1,15 +1,15 @@
 package typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IBM Watson&trade; Compare and Comply analyzes governing documents to provide details about critical aspects of the documents.
   */
 @JSImport("watson-developer-cloud/compare-comply/v1", JSImport.Namespace)
 @js.native
-class ^ protected () extends CompareComplyV1 {
+open class ^ protected () extends CompareComplyV1 {
   /**
     * Construct a CompareComplyV1 object.
     *
@@ -28,10 +28,6 @@ class ^ protected () extends CompareComplyV1 {
     */
   def this(options: Options) = this()
 }
-
 @JSImport("watson-developer-cloud/compare-comply/v1", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  var URL: String = js.native
-}
-
+object ^ extends StObject

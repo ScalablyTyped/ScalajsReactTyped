@@ -1,70 +1,45 @@
 package typingsJapgolly.pixiJs.mod
 
+import typingsJapgolly.pixiMath.mod.IShape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A class to contain data useful for Graphics objects
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "GraphicsData")
 @js.native
-class GraphicsData protected ()
-  extends typingsJapgolly.pixiJs.PIXI.GraphicsData {
-  def this(shape: typingsJapgolly.pixiJs.PIXI.Circle) = this()
-  def this(shape: typingsJapgolly.pixiJs.PIXI.Ellipse) = this()
-  def this(shape: typingsJapgolly.pixiJs.PIXI.Polygon) = this()
-  def this(shape: typingsJapgolly.pixiJs.PIXI.Rectangle) = this()
-  def this(shape: typingsJapgolly.pixiJs.PIXI.Circle, fillStyle: typingsJapgolly.pixiJs.PIXI.FillStyle) = this()
-  def this(shape: typingsJapgolly.pixiJs.PIXI.Ellipse, fillStyle: typingsJapgolly.pixiJs.PIXI.FillStyle) = this()
-  def this(shape: typingsJapgolly.pixiJs.PIXI.Polygon, fillStyle: typingsJapgolly.pixiJs.PIXI.FillStyle) = this()
-  def this(shape: typingsJapgolly.pixiJs.PIXI.Rectangle, fillStyle: typingsJapgolly.pixiJs.PIXI.FillStyle) = this()
+open class GraphicsData protected ()
+  extends typingsJapgolly.pixiGraphics.mod.GraphicsData {
+  /**
+    * @param {PIXI.Circle|PIXI.Ellipse|PIXI.Polygon|PIXI.Rectangle|PIXI.RoundedRectangle} shape - The shape object to draw.
+    * @param fillStyle - the width of the line to draw
+    * @param lineStyle - the color of the line to draw
+    * @param matrix - Transform matrix
+    */
+  def this(shape: IShape) = this()
+  def this(shape: IShape, fillStyle: typingsJapgolly.pixiGraphics.mod.FillStyle) = this()
+  def this(shape: IShape, fillStyle: Unit, lineStyle: typingsJapgolly.pixiGraphics.mod.LineStyle) = this()
   def this(
-    shape: typingsJapgolly.pixiJs.PIXI.Circle,
-    fillStyle: typingsJapgolly.pixiJs.PIXI.FillStyle,
-    lineStyle: typingsJapgolly.pixiJs.PIXI.LineStyle
+    shape: IShape,
+    fillStyle: typingsJapgolly.pixiGraphics.mod.FillStyle,
+    lineStyle: typingsJapgolly.pixiGraphics.mod.LineStyle
+  ) = this()
+  def this(shape: IShape, fillStyle: Unit, lineStyle: Unit, matrix: typingsJapgolly.pixiMath.mod.Matrix) = this()
+  def this(
+    shape: IShape,
+    fillStyle: Unit,
+    lineStyle: typingsJapgolly.pixiGraphics.mod.LineStyle,
+    matrix: typingsJapgolly.pixiMath.mod.Matrix
   ) = this()
   def this(
-    shape: typingsJapgolly.pixiJs.PIXI.Ellipse,
-    fillStyle: typingsJapgolly.pixiJs.PIXI.FillStyle,
-    lineStyle: typingsJapgolly.pixiJs.PIXI.LineStyle
+    shape: IShape,
+    fillStyle: typingsJapgolly.pixiGraphics.mod.FillStyle,
+    lineStyle: Unit,
+    matrix: typingsJapgolly.pixiMath.mod.Matrix
   ) = this()
   def this(
-    shape: typingsJapgolly.pixiJs.PIXI.Polygon,
-    fillStyle: typingsJapgolly.pixiJs.PIXI.FillStyle,
-    lineStyle: typingsJapgolly.pixiJs.PIXI.LineStyle
-  ) = this()
-  def this(
-    shape: typingsJapgolly.pixiJs.PIXI.Rectangle,
-    fillStyle: typingsJapgolly.pixiJs.PIXI.FillStyle,
-    lineStyle: typingsJapgolly.pixiJs.PIXI.LineStyle
-  ) = this()
-  def this(
-    shape: typingsJapgolly.pixiJs.PIXI.Circle,
-    fillStyle: typingsJapgolly.pixiJs.PIXI.FillStyle,
-    lineStyle: typingsJapgolly.pixiJs.PIXI.LineStyle,
-    matrix: typingsJapgolly.pixiJs.PIXI.Matrix
-  ) = this()
-  def this(
-    shape: typingsJapgolly.pixiJs.PIXI.Ellipse,
-    fillStyle: typingsJapgolly.pixiJs.PIXI.FillStyle,
-    lineStyle: typingsJapgolly.pixiJs.PIXI.LineStyle,
-    matrix: typingsJapgolly.pixiJs.PIXI.Matrix
-  ) = this()
-  def this(
-    shape: typingsJapgolly.pixiJs.PIXI.Polygon,
-    fillStyle: typingsJapgolly.pixiJs.PIXI.FillStyle,
-    lineStyle: typingsJapgolly.pixiJs.PIXI.LineStyle,
-    matrix: typingsJapgolly.pixiJs.PIXI.Matrix
-  ) = this()
-  def this(
-    shape: typingsJapgolly.pixiJs.PIXI.Rectangle,
-    fillStyle: typingsJapgolly.pixiJs.PIXI.FillStyle,
-    lineStyle: typingsJapgolly.pixiJs.PIXI.LineStyle,
-    matrix: typingsJapgolly.pixiJs.PIXI.Matrix
+    shape: IShape,
+    fillStyle: typingsJapgolly.pixiGraphics.mod.FillStyle,
+    lineStyle: typingsJapgolly.pixiGraphics.mod.LineStyle,
+    matrix: typingsJapgolly.pixiMath.mod.Matrix
   ) = this()
 }
-

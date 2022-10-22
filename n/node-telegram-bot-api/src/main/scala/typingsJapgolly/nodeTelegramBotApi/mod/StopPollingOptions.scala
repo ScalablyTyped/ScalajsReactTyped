@@ -1,21 +1,30 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StopPollingOptions extends js.Object {
+trait StopPollingOptions extends StObject {
+  
   var cancel: js.UndefOr[Boolean] = js.undefined
+  
   var reason: js.UndefOr[String] = js.undefined
 }
-
 object StopPollingOptions {
-  @scala.inline
-  def apply(cancel: js.UndefOr[Boolean] = js.undefined, reason: String = null): StopPollingOptions = {
+  
+  inline def apply(): StopPollingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopPollingOptions]
   }
+  
+  extension [Self <: StopPollingOptions](x: Self) {
+    
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+  }
 }
-

@@ -2,20 +2,25 @@ package typingsJapgolly.minappEnv.DB
 
 import typingsJapgolly.minappEnv.Array
 import typingsJapgolly.minappEnv.IAPISuccessParam
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IQueryResult extends IAPISuccessParam {
+trait IQueryResult
+  extends StObject
+     with IAPISuccessParam {
+  
   var data: Array[IDocumentData]
 }
-
 object IQueryResult {
-  @scala.inline
-  def apply(data: Array[IDocumentData], errMsg: String): IQueryResult = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
   
+  inline def apply(data: Array[IDocumentData], errMsg: String): IQueryResult = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryResult]
   }
+  
+  extension [Self <: IQueryResult](x: Self) {
+    
+    inline def setData(value: Array[IDocumentData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+  }
 }
-

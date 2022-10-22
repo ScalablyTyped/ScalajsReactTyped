@@ -10,10 +10,10 @@ Library to parse and normalize ISBNs
 | ------------------ | :-------------: |
 | Full name          | isbn-utils |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 13022 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1957.0 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/GitbookIO/isbn-utils#readme)

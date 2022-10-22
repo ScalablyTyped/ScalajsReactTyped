@@ -1,26 +1,31 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Setting object, for use in `setting.set({ ... })`. */
-trait SettingUpdateData extends js.Object {
+trait SettingUpdateData extends StObject {
+  
   /**
-    *
     * Represents the value stored for this setting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object SettingUpdateData {
-  @scala.inline
-  def apply(value: js.Any = null): SettingUpdateData = {
+  
+  inline def apply(): SettingUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingUpdateData]
   }
+  
+  extension [Self <: SettingUpdateData](x: Self) {
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

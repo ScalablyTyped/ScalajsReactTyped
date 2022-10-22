@@ -1,89 +1,111 @@
 package typingsJapgolly.officeJsPreview.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "documentCreated.toJSON()". */
-trait DocumentCreatedData extends js.Object {
+/** An interface describing the data returned by calling `documentCreated.toJSON()`. */
+trait DocumentCreatedData extends StObject {
+  
   /**
+    * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
     *
-    * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
-    *
+    * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   var body: js.UndefOr[BodyData] = js.undefined
+  
   /**
+    * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
     *
-    * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
-    *
+    * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.undefined
+  
   /**
+    * Gets the custom XML parts in the document.
     *
-    * Gets the custom XML parts in the document. Read-only.
-    *
+    * @remarks
     * [Api set: WordApiHiddenDocument 1.4]
-    * @beta
     */
   var customXmlParts: js.UndefOr[js.Array[CustomXmlPartData]] = js.undefined
+  
   /**
+    * Gets the properties of the document.
     *
-    * Gets the properties of the document. Read-only.
-    *
+    * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   var properties: js.UndefOr[DocumentPropertiesData] = js.undefined
+  
   /**
+    * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
     *
-    * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-    *
+    * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   var saved: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Gets the collection of section objects in the document.
     *
-    * Gets the collection of section objects in the document. Read-only.
-    *
+    * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
-    * @beta
     */
   var sections: js.UndefOr[js.Array[SectionData]] = js.undefined
+  
   /**
+    * Gets the add-in's settings in the document.
     *
-    * Gets the add-in's settings in the document. Read-only.
-    *
+    * @remarks
     * [Api set: WordApiHiddenDocument 1.4]
-    * @beta
     */
   var settings: js.UndefOr[js.Array[SettingData]] = js.undefined
 }
-
 object DocumentCreatedData {
-  @scala.inline
-  def apply(
-    body: BodyData = null,
-    contentControls: js.Array[ContentControlData] = null,
-    customXmlParts: js.Array[CustomXmlPartData] = null,
-    properties: DocumentPropertiesData = null,
-    saved: js.UndefOr[Boolean] = js.undefined,
-    sections: js.Array[SectionData] = null,
-    settings: js.Array[SettingData] = null
-  ): DocumentCreatedData = {
+  
+  inline def apply(): DocumentCreatedData = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls.asInstanceOf[js.Any])
-    if (customXmlParts != null) __obj.updateDynamic("customXmlParts")(customXmlParts.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(saved)) __obj.updateDynamic("saved")(saved.asInstanceOf[js.Any])
-    if (sections != null) __obj.updateDynamic("sections")(sections.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentCreatedData]
   }
+  
+  extension [Self <: DocumentCreatedData](x: Self) {
+    
+    inline def setBody(value: BodyData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setContentControls(value: js.Array[ContentControlData]): Self = StObject.set(x, "contentControls", value.asInstanceOf[js.Any])
+    
+    inline def setContentControlsUndefined: Self = StObject.set(x, "contentControls", js.undefined)
+    
+    inline def setContentControlsVarargs(value: ContentControlData*): Self = StObject.set(x, "contentControls", js.Array(value*))
+    
+    inline def setCustomXmlParts(value: js.Array[CustomXmlPartData]): Self = StObject.set(x, "customXmlParts", value.asInstanceOf[js.Any])
+    
+    inline def setCustomXmlPartsUndefined: Self = StObject.set(x, "customXmlParts", js.undefined)
+    
+    inline def setCustomXmlPartsVarargs(value: CustomXmlPartData*): Self = StObject.set(x, "customXmlParts", js.Array(value*))
+    
+    inline def setProperties(value: DocumentPropertiesData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setSaved(value: Boolean): Self = StObject.set(x, "saved", value.asInstanceOf[js.Any])
+    
+    inline def setSavedUndefined: Self = StObject.set(x, "saved", js.undefined)
+    
+    inline def setSections(value: js.Array[SectionData]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    
+    inline def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
+    
+    inline def setSectionsVarargs(value: SectionData*): Self = StObject.set(x, "sections", js.Array(value*))
+    
+    inline def setSettings(value: js.Array[SettingData]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    
+    inline def setSettingsVarargs(value: SettingData*): Self = StObject.set(x, "settings", js.Array(value*))
+  }
 }
-

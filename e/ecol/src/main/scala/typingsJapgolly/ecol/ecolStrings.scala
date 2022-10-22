@@ -1,25 +1,27 @@
 package typingsJapgolly.ecol
 
-import typingsJapgolly.ecol.collectionEventMod.CollectionEvent.Type
+import typingsJapgolly.ecol.libBasicCollectionEventMod.CollectionEvent.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecolStrings {
-  @js.native
-  sealed trait erase extends Type
   
   @js.native
-  sealed trait insert extends Type
+  sealed trait erase
+    extends StObject
+       with Type
+  inline def erase: erase = "erase".asInstanceOf[erase]
   
   @js.native
-  sealed trait refresh extends Type
+  sealed trait insert
+    extends StObject
+       with Type
+  inline def insert: insert = "insert".asInstanceOf[insert]
   
-  @scala.inline
-  def erase: erase = "erase".asInstanceOf[erase]
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
+  @js.native
+  sealed trait refresh
+    extends StObject
+       with Type
+  inline def refresh: refresh = "refresh".asInstanceOf[refresh]
 }
-

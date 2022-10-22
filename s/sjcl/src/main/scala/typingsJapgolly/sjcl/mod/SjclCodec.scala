@@ -1,23 +1,27 @@
 package typingsJapgolly.sjcl.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
-trait SjclCodec[T] extends js.Object {
+trait SjclCodec[T] extends StObject {
+  
   def fromBits(bits: BitArray_): T
+  
   def toBits(value: T): BitArray_
 }
-
 object SjclCodec {
-  @scala.inline
-  def apply[T](fromBits: BitArray_ => CallbackTo[T], toBits: T => CallbackTo[BitArray_]): SjclCodec[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromBits")(js.Any.fromFunction1((t0: typingsJapgolly.sjcl.mod.BitArray_) => fromBits(t0).runNow()))
-    __obj.updateDynamic("toBits")(js.Any.fromFunction1((t0: T) => toBits(t0).runNow()))
+  
+  inline def apply[T](fromBits: BitArray_ => T, toBits: T => BitArray_): SjclCodec[T] = {
+    val __obj = js.Dynamic.literal(fromBits = js.Any.fromFunction1(fromBits), toBits = js.Any.fromFunction1(toBits))
     __obj.asInstanceOf[SjclCodec[T]]
   }
+  
+  extension [Self <: SjclCodec[?], T](x: Self & SjclCodec[T]) {
+    
+    inline def setFromBits(value: BitArray_ => T): Self = StObject.set(x, "fromBits", js.Any.fromFunction1(value))
+    
+    inline def setToBits(value: T => BitArray_): Self = StObject.set(x, "toBits", js.Any.fromFunction1(value))
+  }
 }
-

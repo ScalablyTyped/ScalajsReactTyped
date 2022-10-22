@@ -1,78 +1,75 @@
 package typingsJapgolly.officeUiFabricReact.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.officeUiFabricReact.focusZoneTypesMod.IFocusZoneProps
-import typingsJapgolly.officeUiFabricReact.overflowSetTypesMod.IOverflowSet
-import typingsJapgolly.officeUiFabricReact.overflowSetTypesMod.IOverflowSetItemProps
-import typingsJapgolly.officeUiFabricReact.overflowSetTypesMod.IOverflowSetProps
-import typingsJapgolly.officeUiFabricReact.overflowSetTypesMod.IOverflowSetStyles
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiReactFocus.libComponentsFocusZoneFocusZoneDottypesMod.IFocusZoneProps
+import typingsJapgolly.officeUiFabricReact.libComponentsOverflowSetOverflowSetDottypesMod.IOverflowSet
+import typingsJapgolly.officeUiFabricReact.libComponentsOverflowSetOverflowSetDottypesMod.IOverflowSetItemProps
+import typingsJapgolly.officeUiFabricReact.libComponentsOverflowSetOverflowSetDottypesMod.IOverflowSetProps
+import typingsJapgolly.officeUiFabricReact.libComponentsOverflowSetOverflowSetDottypesMod.IOverflowSetStyles
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.end
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.start
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object OverflowSetBase {
-  def apply(
-    onRenderItem: IOverflowSetItemProps => CallbackTo[js.Any],
-    onRenderOverflowButton: (/* props */ js.UndefOr[js.Array[js.Any]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[js.Any]], Element | Null]]) => CallbackTo[Element | Null],
-    className: String = null,
-    componentRef: IRefObject[IOverflowSet] = null,
-    doNotContainWithinFocusZone: js.UndefOr[Boolean] = js.undefined,
-    focusZoneProps: IFocusZoneProps = null,
-    itemSubMenuProvider: /* item */ IOverflowSetItemProps => CallbackTo[js.UndefOr[js.Array[js.Any]]] = null,
-    items: js.Array[IOverflowSetItemProps] = null,
-    keytipSequences: js.Array[String] = null,
-    overflowItems: js.Array[IOverflowSetItemProps] = null,
-    role: String = null,
-    styles: IStyleFunctionOrObject[IOverflowSetProps, IOverflowSetStyles] = null,
-    vertical: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IOverflowSetProps, 
-    typingsJapgolly.officeUiFabricReact.mod.OverflowSetBase, 
-    Unit, 
-    IOverflowSetProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("onRenderItem")(js.Any.fromFunction1((t0: typingsJapgolly.officeUiFabricReact.overflowSetTypesMod.IOverflowSetItemProps) => onRenderItem(t0).runNow()))
-    __obj.updateDynamic("onRenderOverflowButton")(js.Any.fromFunction2((t0: /* props */ js.UndefOr[js.Array[js.Any]], t1: /* defaultRender */ js.UndefOr[
-  js.Function1[
-    /* props */ js.UndefOr[js.Array[js.Any]], 
-    japgolly.scalajs.react.raw.React.Element | scala.Null
-  ]]) => onRenderOverflowButton(t0, t1).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotContainWithinFocusZone)) __obj.updateDynamic("doNotContainWithinFocusZone")(doNotContainWithinFocusZone.asInstanceOf[js.Any])
-    if (focusZoneProps != null) __obj.updateDynamic("focusZoneProps")(focusZoneProps.asInstanceOf[js.Any])
-    if (itemSubMenuProvider != null) __obj.updateDynamic("itemSubMenuProvider")(js.Any.fromFunction1((t0: /* item */ typingsJapgolly.officeUiFabricReact.overflowSetTypesMod.IOverflowSetItemProps) => itemSubMenuProvider(t0).runNow()))
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (keytipSequences != null) __obj.updateDynamic("keytipSequences")(keytipSequences.asInstanceOf[js.Any])
-    if (overflowItems != null) __obj.updateDynamic("overflowItems")(overflowItems.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.officeUiFabricReact.overflowSetTypesMod.IOverflowSetProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.officeUiFabricReact.mod.OverflowSetBase](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.overflowSetTypesMod.IOverflowSetProps])(children: _*)
+  inline def apply(
+    onRenderItem: IOverflowSetItemProps => Any,
+    onRenderOverflowButton: (/* props */ js.UndefOr[js.Array[Any]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[Any]], Element | Null]]) => Element | Null
+  ): Builder = {
+    val __props = js.Dynamic.literal(onRenderItem = js.Any.fromFunction1(onRenderItem), onRenderOverflowButton = js.Any.fromFunction2(onRenderOverflowButton))
+    new Builder(js.Array(this.component, __props.asInstanceOf[IOverflowSetProps]))
   }
+  
   @JSImport("office-ui-fabric-react", "OverflowSetBase")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.officeUiFabricReact.mod.OverflowSetBase] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[IOverflowSet]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ IOverflowSet | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ IOverflowSet | Null) => value(t0).runNow()))
+    
+    inline def doNotContainWithinFocusZone(value: Boolean): this.type = set("doNotContainWithinFocusZone", value.asInstanceOf[js.Any])
+    
+    inline def focusZoneProps(value: IFocusZoneProps): this.type = set("focusZoneProps", value.asInstanceOf[js.Any])
+    
+    inline def itemSubMenuProvider(value: /* item */ IOverflowSetItemProps => js.UndefOr[js.Array[Any] | Boolean]): this.type = set("itemSubMenuProvider", js.Any.fromFunction1(value))
+    
+    inline def items(value: js.Array[IOverflowSetItemProps]): this.type = set("items", value.asInstanceOf[js.Any])
+    
+    inline def itemsVarargs(value: IOverflowSetItemProps*): this.type = set("items", js.Array(value*))
+    
+    inline def keytipSequences(value: js.Array[String]): this.type = set("keytipSequences", value.asInstanceOf[js.Any])
+    
+    inline def keytipSequencesVarargs(value: String*): this.type = set("keytipSequences", js.Array(value*))
+    
+    inline def overflowItems(value: js.Array[IOverflowSetItemProps]): this.type = set("overflowItems", value.asInstanceOf[js.Any])
+    
+    inline def overflowItemsVarargs(value: IOverflowSetItemProps*): this.type = set("overflowItems", js.Array(value*))
+    
+    inline def overflowSide(value: start | end): this.type = set("overflowSide", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IStyleFunctionOrObject[IOverflowSetProps, IOverflowSetStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IOverflowSetProps => DeepPartial[IOverflowSetStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def vertical(value: Boolean): this.type = set("vertical", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IOverflowSetProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,31 +1,27 @@
 package typingsJapgolly.activexMsforms.MSForms
 
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`0`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`1`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`2`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`3`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`0`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`1`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`2`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`3`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`1`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`0`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`2`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`3`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`1`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`0`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`2`
 */
-trait fmEnAutoSize extends js.Object
-
+trait fmEnAutoSize extends StObject
 object fmEnAutoSize {
-  @scala.inline
-  def _fmEnAutoSizeBoth: `3` = this.cast(3)
-  @scala.inline
-  def _fmEnAutoSizeHorizontal: `1` = this.cast(1)
-  @scala.inline
-  def _fmEnAutoSizeNone: `0` = this.cast(0)
-  @scala.inline
-  def _fmEnAutoSizeVertical: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def _fmEnAutoSizeBoth: `3` = 3.asInstanceOf[`3`]
+  
+  inline def _fmEnAutoSizeHorizontal: `1` = 1.asInstanceOf[`1`]
+  
+  inline def _fmEnAutoSizeNone: `0` = 0.asInstanceOf[`0`]
+  
+  inline def _fmEnAutoSizeVertical: `2` = 2.asInstanceOf[`2`]
 }
-

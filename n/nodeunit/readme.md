@@ -9,10 +9,10 @@ Easy unit testing for node.js and the browser.
 | ------------------ | :-------------: |
 | Full name          | nodeunit |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 189 |
-| # downloads        | 1826303 |
-| # stars            | 24 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 176285.33333333334 |
+| # stars            | 1913.0 |
 
 ## Links
 - [Homepage](https://github.com/caolan/nodeunit#readme)

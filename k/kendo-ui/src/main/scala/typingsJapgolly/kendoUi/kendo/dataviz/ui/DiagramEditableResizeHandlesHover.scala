@@ -1,24 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramEditableResizeHandlesHover extends js.Object {
+trait DiagramEditableResizeHandlesHover extends StObject {
+  
   var fill: js.UndefOr[String | DiagramEditableResizeHandlesHoverFill] = js.undefined
+  
   var stroke: js.UndefOr[DiagramEditableResizeHandlesHoverStroke] = js.undefined
 }
-
 object DiagramEditableResizeHandlesHover {
-  @scala.inline
-  def apply(
-    fill: String | DiagramEditableResizeHandlesHoverFill = null,
-    stroke: DiagramEditableResizeHandlesHoverStroke = null
-  ): DiagramEditableResizeHandlesHover = {
+  
+  inline def apply(): DiagramEditableResizeHandlesHover = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramEditableResizeHandlesHover]
   }
+  
+  extension [Self <: DiagramEditableResizeHandlesHover](x: Self) {
+    
+    inline def setFill(value: String | DiagramEditableResizeHandlesHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setStroke(value: DiagramEditableResizeHandlesHoverStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+  }
 }
-

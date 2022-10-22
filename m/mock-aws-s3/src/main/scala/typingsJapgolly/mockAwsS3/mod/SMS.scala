@@ -1,17 +1,16 @@
 package typingsJapgolly.mockAwsS3.mod
 
-import typingsJapgolly.awsSdk.smsMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsSmsMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "SMS")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class SMS ()
+open class SMS ()
   extends typingsJapgolly.awsSdk.mod.SMS {
   def this(options: ClientConfiguration) = this()
 }
-

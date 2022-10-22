@@ -1,31 +1,52 @@
 package typingsJapgolly.awsSdkClientCodecommitNode
 
-import typingsJapgolly.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkClientCodecommitNode.typesOutputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientCodecommitNode.typesPullRequestEventMod.UnmarshalledPullRequestEvent
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/types/DescribePullRequestEventsOutput", JSImport.Namespace)
-@js.native
-object typesDescribePullRequestEventsOutputMod extends js.Object {
-  @js.native
-  trait DescribePullRequestEventsOutput extends OutputTypesUnion {
+object typesDescribePullRequestEventsOutputMod {
+  
+  trait DescribePullRequestEventsOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>An enumeration token that can be used in a request to return the next batch of the results.</p>
       */
-    var nextToken: js.UndefOr[String] = js.native
+    var nextToken: js.UndefOr[String] = js.undefined
+    
     /**
       * <p>Information about the pull request events.</p>
       */
-    var pullRequestEvents: js.Array[UnmarshalledPullRequestEvent] = js.native
+    var pullRequestEvents: js.Array[UnmarshalledPullRequestEvent]
   }
-  
+  object DescribePullRequestEventsOutput {
+    
+    inline def apply($metadata: ResponseMetadata, pullRequestEvents: js.Array[UnmarshalledPullRequestEvent]): DescribePullRequestEventsOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], pullRequestEvents = pullRequestEvents.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DescribePullRequestEventsOutput]
+    }
+    
+    extension [Self <: DescribePullRequestEventsOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      
+      inline def setPullRequestEvents(value: js.Array[UnmarshalledPullRequestEvent]): Self = StObject.set(x, "pullRequestEvents", value.asInstanceOf[js.Any])
+      
+      inline def setPullRequestEventsVarargs(value: UnmarshalledPullRequestEvent*): Self = StObject.set(x, "pullRequestEvents", js.Array(value*))
+    }
+  }
 }
-

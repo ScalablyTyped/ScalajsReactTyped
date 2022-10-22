@@ -1,92 +1,139 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.AnonGoButton
-import typingsJapgolly.antd.antdStrings.`jump-next`
-import typingsJapgolly.antd.antdStrings.`jump-prev`
-import typingsJapgolly.antd.antdStrings.next
-import typingsJapgolly.antd.antdStrings.page
-import typingsJapgolly.antd.antdStrings.prev
-import typingsJapgolly.antd.paginationMod.default
-import typingsJapgolly.antd.paginationPaginationMod.PaginationProps
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.antdStrings.default
+import typingsJapgolly.antd.antdStrings.small
+import typingsJapgolly.antd.libPaginationPaginationMod.PaginationProps
+import typingsJapgolly.rcPagination.mod.PaginationLocale
+import typingsJapgolly.rcPagination.rcPaginationStrings.`jump-next`
+import typingsJapgolly.rcPagination.rcPaginationStrings.`jump-prev`
+import typingsJapgolly.rcPagination.rcPaginationStrings.next
+import typingsJapgolly.rcPagination.rcPaginationStrings.page
+import typingsJapgolly.rcPagination.rcPaginationStrings.prev
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Pagination {
-  def apply(
-    className: String = null,
-    current: Int | Double = null,
-    defaultCurrent: Int | Double = null,
-    defaultPageSize: Int | Double = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    hideOnSinglePage: js.UndefOr[Boolean] = js.undefined,
-    itemRender: (/* page */ Double, /* type */ page | prev | next | `jump-prev` | `jump-next`, /* originalElement */ japgolly.scalajs.react.raw.React.Element) => CallbackTo[Node] = null,
-    locale: js.Object = null,
-    onChange: (/* page */ Double, /* pageSize */ js.UndefOr[Double]) => Callback = null,
-    onShowSizeChange: (/* current */ Double, /* size */ Double) => Callback = null,
-    pageSize: Int | Double = null,
-    pageSizeOptions: js.Array[String] = null,
-    prefixCls: String = null,
-    role: String = null,
-    selectPrefixCls: String = null,
-    showLessItems: js.UndefOr[Boolean] = js.undefined,
-    showQuickJumper: Boolean | AnonGoButton = null,
-    showSizeChanger: js.UndefOr[Boolean] = js.undefined,
-    showTotal: (/* total */ Double, /* range */ js.Tuple2[Double, Double]) => CallbackTo[Node] = null,
-    simple: js.UndefOr[Boolean] = js.undefined,
-    size: String = null,
-    style: CSSProperties = null,
-    total: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PaginationProps, default, Unit, PaginationProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (defaultCurrent != null) __obj.updateDynamic("defaultCurrent")(defaultCurrent.asInstanceOf[js.Any])
-    if (defaultPageSize != null) __obj.updateDynamic("defaultPageSize")(defaultPageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnSinglePage)) __obj.updateDynamic("hideOnSinglePage")(hideOnSinglePage.asInstanceOf[js.Any])
-    if (itemRender != null) __obj.updateDynamic("itemRender")(js.Any.fromFunction3((t0: /* page */ scala.Double, t1: /* type */ typingsJapgolly.antd.antdStrings.page | typingsJapgolly.antd.antdStrings.prev | typingsJapgolly.antd.antdStrings.next | typingsJapgolly.antd.antdStrings.`jump-prev` | typingsJapgolly.antd.antdStrings.`jump-next`, t2: /* originalElement */ japgolly.scalajs.react.raw.React.Element) => itemRender(t0, t1, t2).runNow()))
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* page */ scala.Double, t1: /* pageSize */ js.UndefOr[scala.Double]) => onChange(t0, t1).runNow()))
-    if (onShowSizeChange != null) __obj.updateDynamic("onShowSizeChange")(js.Any.fromFunction2((t0: /* current */ scala.Double, t1: /* size */ scala.Double) => onShowSizeChange(t0, t1).runNow()))
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageSizeOptions != null) __obj.updateDynamic("pageSizeOptions")(pageSizeOptions.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (selectPrefixCls != null) __obj.updateDynamic("selectPrefixCls")(selectPrefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLessItems)) __obj.updateDynamic("showLessItems")(showLessItems.asInstanceOf[js.Any])
-    if (showQuickJumper != null) __obj.updateDynamic("showQuickJumper")(showQuickJumper.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSizeChanger)) __obj.updateDynamic("showSizeChanger")(showSizeChanger.asInstanceOf[js.Any])
-    if (showTotal != null) __obj.updateDynamic("showTotal")(js.Any.fromFunction2((t0: /* total */ scala.Double, t1: /* range */ js.Tuple2[scala.Double, scala.Double]) => showTotal(t0, t1).runNow()))
-    if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.paginationPaginationMod.PaginationProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.paginationMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.paginationPaginationMod.PaginationProps])(children: _*)
-  }
-  @JSImport("antd/lib/pagination", JSImport.Default)
+  @JSImport("antd", "Pagination")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def current(value: Double): this.type = set("current", value.asInstanceOf[js.Any])
+    
+    inline def defaultCurrent(value: Double): this.type = set("defaultCurrent", value.asInstanceOf[js.Any])
+    
+    inline def defaultPageSize(value: Double): this.type = set("defaultPageSize", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def hideOnSinglePage(value: Boolean): this.type = set("hideOnSinglePage", value.asInstanceOf[js.Any])
+    
+    inline def itemRender(
+      value: (/* page */ Double, /* type */ page | prev | next | `jump-prev` | `jump-next`, /* element */ japgolly.scalajs.react.facade.React.Node) => japgolly.scalajs.react.facade.React.Node
+    ): this.type = set("itemRender", js.Any.fromFunction3(value))
+    
+    inline def jumpNextIcon(value: ComponentType[js.Object] | japgolly.scalajs.react.facade.React.Node): this.type = set("jumpNextIcon", value.asInstanceOf[js.Any])
+    
+    inline def jumpNextIconNull: this.type = set("jumpNextIcon", null)
+    
+    inline def jumpNextIconVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("jumpNextIcon", js.Array(value*))
+    
+    inline def jumpNextIconVdomElement(value: VdomElement): this.type = set("jumpNextIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def jumpPrevIcon(value: ComponentType[js.Object] | japgolly.scalajs.react.facade.React.Node): this.type = set("jumpPrevIcon", value.asInstanceOf[js.Any])
+    
+    inline def jumpPrevIconNull: this.type = set("jumpPrevIcon", null)
+    
+    inline def jumpPrevIconVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("jumpPrevIcon", js.Array(value*))
+    
+    inline def jumpPrevIconVdomElement(value: VdomElement): this.type = set("jumpPrevIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def locale(value: PaginationLocale): this.type = set("locale", value.asInstanceOf[js.Any])
+    
+    inline def nextIcon(value: ComponentType[js.Object] | japgolly.scalajs.react.facade.React.Node): this.type = set("nextIcon", value.asInstanceOf[js.Any])
+    
+    inline def nextIconNull: this.type = set("nextIcon", null)
+    
+    inline def nextIconVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("nextIcon", js.Array(value*))
+    
+    inline def nextIconVdomElement(value: VdomElement): this.type = set("nextIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onChange(value: (/* page */ Double, /* pageSize */ Double) => Callback): this.type = set("onChange", js.Any.fromFunction2((t0: /* page */ Double, t1: /* pageSize */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def onShowSizeChange(value: (/* current */ Double, /* size */ Double) => Callback): this.type = set("onShowSizeChange", js.Any.fromFunction2((t0: /* current */ Double, t1: /* size */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def pageSize(value: Double): this.type = set("pageSize", value.asInstanceOf[js.Any])
+    
+    inline def pageSizeOptions(value: js.Array[Double | String]): this.type = set("pageSizeOptions", value.asInstanceOf[js.Any])
+    
+    inline def pageSizeOptionsVarargs(value: (Double | String)*): this.type = set("pageSizeOptions", js.Array(value*))
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def prevIcon(value: ComponentType[js.Object] | japgolly.scalajs.react.facade.React.Node): this.type = set("prevIcon", value.asInstanceOf[js.Any])
+    
+    inline def prevIconNull: this.type = set("prevIcon", null)
+    
+    inline def prevIconVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("prevIcon", js.Array(value*))
+    
+    inline def prevIconVdomElement(value: VdomElement): this.type = set("prevIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def responsive(value: Boolean): this.type = set("responsive", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def selectComponentClass(value: ComponentType[js.Object]): this.type = set("selectComponentClass", value.asInstanceOf[js.Any])
+    
+    inline def selectPrefixCls(value: String): this.type = set("selectPrefixCls", value.asInstanceOf[js.Any])
+    
+    inline def showLessItems(value: Boolean): this.type = set("showLessItems", value.asInstanceOf[js.Any])
+    
+    inline def showPrevNextJumpers(value: Boolean): this.type = set("showPrevNextJumpers", value.asInstanceOf[js.Any])
+    
+    inline def showQuickJumper(value: Boolean | js.Object): this.type = set("showQuickJumper", value.asInstanceOf[js.Any])
+    
+    inline def showSizeChanger(value: Boolean): this.type = set("showSizeChanger", value.asInstanceOf[js.Any])
+    
+    inline def showTitle(value: Boolean): this.type = set("showTitle", value.asInstanceOf[js.Any])
+    
+    inline def showTotal(
+      value: (/* total */ Double, /* range */ js.Tuple2[Double, Double]) => japgolly.scalajs.react.facade.React.Node
+    ): this.type = set("showTotal", js.Any.fromFunction2(value))
+    
+    inline def simple(value: Boolean): this.type = set("simple", value.asInstanceOf[js.Any])
+    
+    inline def size(value: default | small): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def total(value: Double): this.type = set("total", value.asInstanceOf[js.Any])
+    
+    inline def totalBoundaryShowSizeChanger(value: Double): this.type = set("totalBoundaryShowSizeChanger", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Pagination.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PaginationProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

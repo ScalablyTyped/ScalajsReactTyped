@@ -1,48 +1,63 @@
 package typingsJapgolly.mendixmodelsdk.mod.microflows
 
-import typingsJapgolly.mendixmodelsdk.baseModelMod.IModel
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit
-import typingsJapgolly.mendixmodelsdk.microflowsMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/call-web-service-action relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/call-web-service-action relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk", "microflows.WebServiceCallAction")
 @js.native
-class WebServiceCallAction protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.microflows.WebServiceCallAction {
+open class WebServiceCallAction protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.microflows.WebServiceCallAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "microflows.WebServiceCallAction")
-@js.native
-object WebServiceCallAction extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object WebServiceCallAction {
+  
+  @JSImport("mendixmodelsdk", "microflows.WebServiceCallAction")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates and returns a new WebServiceCallAction instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
-  def create(model: IModel): typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction = js.native
+  /* static member */
+  inline def create(model: IModel): typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.WebServiceCallAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.WebServiceCallAction]
+  
   /**
     * Creates and returns a new WebServiceCallAction instance in the SDK and on the server.
     * The new WebServiceCallAction will be automatically stored in the 'action' property
     * of the parent ActionActivity element passed as argument.
     */
-  def createIn(container: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.ActionActivity): typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction = js.native
+  /* static member */
+  inline def createIn(container: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ActionActivity): typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.WebServiceCallAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.WebServiceCallAction]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.WebServiceCallAction.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.WebServiceCallAction.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

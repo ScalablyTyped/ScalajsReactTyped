@@ -3,16 +3,16 @@ package typingsJapgolly.azureArmResource.mod
 import typingsJapgolly.msRest.mod.ServiceClientCredentials
 import typingsJapgolly.msRestAzure.mod.AzureServiceClientOptions
 import typingsJapgolly.msRestAzure.mod.CloudErrorParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource", "ManagementLockClient")
-@js.native
-object ManagementLockClient extends js.Object {
+object ManagementLockClient {
+  
+  @JSImport("azure-arm-resource", "ManagementLockClient.default")
   @js.native
-  class ManagementLockClient protected ()
-    extends typingsJapgolly.azureArmResource.managementLockClientMod.ManagementLockClient {
+  open class default protected ()
+    extends typingsJapgolly.azureArmResource.libLockManagementLockClientMod.default {
     /**
       * Initializes a new instance of the ManagementLockClient class.
       * @constructor
@@ -48,11 +48,18 @@ object ManagementLockClient extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      subscriptionId: String,
+      baseUri: Unit,
+      options: AzureServiceClientOptions
+    ) = this()
   }
   
+  @JSImport("azure-arm-resource", "ManagementLockClient.ManagementLockClient")
   @js.native
-  class default protected ()
-    extends typingsJapgolly.azureArmResource.managementLockClientMod.default {
+  open class ManagementLockClient protected ()
+    extends typingsJapgolly.azureArmResource.libLockManagementLockClientMod.ManagementLockClient {
     /**
       * Initializes a new instance of the ManagementLockClient class.
       * @constructor
@@ -88,21 +95,26 @@ object ManagementLockClient extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      subscriptionId: String,
+      baseUri: Unit,
+      options: AzureServiceClientOptions
+    ) = this()
   }
   
-  @js.native
-  object ManagementLockModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typingsJapgolly.msRestAzure.mod.BaseResource
+  object ManagementLockModels {
     
+    @JSImport("azure-arm-resource", "ManagementLockClient.ManagementLockModels.BaseResource")
     @js.native
-    class CloudError protected ()
-      extends typingsJapgolly.azureArmResource.managementLockClientMod.ManagementLockModels.CloudError {
+    open class BaseResource ()
+      extends typingsJapgolly.azureArmResource.libLockManagementLockClientMod.ManagementLockModels.BaseResource
+    
+    @JSImport("azure-arm-resource", "ManagementLockClient.ManagementLockModels.CloudError")
+    @js.native
+    open class CloudError protected ()
+      extends typingsJapgolly.azureArmResource.libLockManagementLockClientMod.ManagementLockModels.CloudError {
       def this(parameters: CloudErrorParameters) = this()
     }
-    
   }
-  
 }
-

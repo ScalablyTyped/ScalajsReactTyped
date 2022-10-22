@@ -10,10 +10,10 @@ keyfile operations for ssb
 | ------------------ | :-------------: |
 | Full name          | ssb-keys |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 69 |
-| # downloads        | 27949 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 7179.0 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/ssbc/ssb-keys)

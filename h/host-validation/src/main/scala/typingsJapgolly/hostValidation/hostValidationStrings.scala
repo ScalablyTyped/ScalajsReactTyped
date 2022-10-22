@@ -1,19 +1,16 @@
 package typingsJapgolly.hostValidation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hostValidationStrings {
-  @js.native
-  sealed trait both extends js.Object
   
   @js.native
-  sealed trait either extends js.Object
+  sealed trait both extends StObject
+  inline def both: both = "both".asInstanceOf[both]
   
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def either: either = "either".asInstanceOf[either]
+  @js.native
+  sealed trait either extends StObject
+  inline def either: either = "either".asInstanceOf[either]
 }
-

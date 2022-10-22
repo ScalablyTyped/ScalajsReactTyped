@@ -1,33 +1,34 @@
 package typingsJapgolly.css.mod
 
-import typingsJapgolly.css.AnonContent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Declaration extends Node {
+trait Declaration
+  extends StObject
+     with Node {
+  
   /** The property name, trimmed from whitespace and comments. May not be empty. */
   var property: js.UndefOr[String] = js.undefined
+  
   /** The value of the property, trimmed from whitespace and comments. Empty values are allowed. */
   var value: js.UndefOr[String] = js.undefined
 }
-
 object Declaration {
-  @scala.inline
-  def apply(
-    parent: Node = null,
-    position: AnonContent = null,
-    property: String = null,
-    `type`: String = null,
-    value: String = null
-  ): Declaration = {
+  
+  inline def apply(): Declaration = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
+  
+  extension [Self <: Declaration](x: Self) {
+    
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

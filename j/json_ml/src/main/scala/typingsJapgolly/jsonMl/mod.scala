@@ -1,19 +1,36 @@
 package typingsJapgolly.jsonMl
 
-import typingsJapgolly.cheerio.Cheerio_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("json_ml", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def parse(xml: String): js.Array[Node] = js.native
-  def parse(xml: String, trim: Boolean): js.Array[Node] = js.native
-  def stringify(`object`: js.Array[Node]): String = js.native
-  def stringify(`object`: js.Array[Node], replacer: js.Function1[/* node */ Cheerio_, _]): String = js.native
-  def stringify(`object`: js.Array[Node], replacer: js.Function1[/* node */ Cheerio_, _], indent: Double): String = js.native
-  def stringify(`object`: js.Array[Node], replacer: Null, indent: Double): String = js.native
-  type Node = String | (Array[String | js.Any])
+object mod {
+  
+  @JSImport("json_ml", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def parse(xml: String): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
+  inline def parse(xml: String, trim: Boolean): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any], trim.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
+  
+  inline def stringify(`object`: js.Array[Node]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(
+    `object`: js.Array[Node],
+    replacer: js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify cheerio.Cheerio */ /* node */ Any, 
+      Any
+    ]
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(
+    `object`: js.Array[Node],
+    replacer: js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify cheerio.Cheerio */ /* node */ Any, 
+      Any
+    ],
+    indent: Double
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(`object`: js.Array[Node], replacer: Null, indent: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(`object`: js.Array[Node], replacer: Unit, indent: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  type Node = String | (Array[String | Any])
 }
-

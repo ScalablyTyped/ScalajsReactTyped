@@ -1,71 +1,69 @@
 package typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EntityStatus extends js.Object
-
+sealed trait EntityStatus extends StObject
 @JSImport("azure-sb", "Azure.ServiceBus.Results.Models.EntityStatus")
 @js.native
-object EntityStatus extends js.Object {
-  @js.native
-  sealed trait Active extends EntityStatus
-  
-  @js.native
-  sealed trait Creating extends EntityStatus
-  
-  @js.native
-  sealed trait Deleting extends EntityStatus
-  
-  @js.native
-  sealed trait Disabled extends EntityStatus
-  
-  @js.native
-  sealed trait ReceiveDisabled extends EntityStatus
-  
-  @js.native
-  sealed trait Renaming extends EntityStatus
-  
-  @js.native
-  sealed trait Restoring extends EntityStatus
-  
-  @js.native
-  sealed trait SendDisabled extends EntityStatus
-  
-  @js.native
-  sealed trait Unknown extends EntityStatus
+object EntityStatus extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[EntityStatus with String] = js.native
-  /* "Active" */ @js.native
-  object Active extends TopLevel[Active with String]
+  def apply(value: String): js.UndefOr[EntityStatus & String] = js.native
   
-  /* "Creating" */ @js.native
-  object Creating extends TopLevel[Creating with String]
+  @js.native
+  sealed trait Active
+    extends StObject
+       with EntityStatus
+  /* "Active" */ val Active: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityStatus.Active & String = js.native
   
-  /* "Deleting" */ @js.native
-  object Deleting extends TopLevel[Deleting with String]
+  @js.native
+  sealed trait Creating
+    extends StObject
+       with EntityStatus
+  /* "Creating" */ val Creating: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityStatus.Creating & String = js.native
   
-  /* "Disabled" */ @js.native
-  object Disabled extends TopLevel[Disabled with String]
+  @js.native
+  sealed trait Deleting
+    extends StObject
+       with EntityStatus
+  /* "Deleting" */ val Deleting: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityStatus.Deleting & String = js.native
   
-  /* "ReceiveDisabled" */ @js.native
-  object ReceiveDisabled extends TopLevel[ReceiveDisabled with String]
+  @js.native
+  sealed trait Disabled
+    extends StObject
+       with EntityStatus
+  /* "Disabled" */ val Disabled: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityStatus.Disabled & String = js.native
   
-  /* "Renaming" */ @js.native
-  object Renaming extends TopLevel[Renaming with String]
+  @js.native
+  sealed trait ReceiveDisabled
+    extends StObject
+       with EntityStatus
+  /* "ReceiveDisabled" */ val ReceiveDisabled: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityStatus.ReceiveDisabled & String = js.native
   
-  /* "Restoring" */ @js.native
-  object Restoring extends TopLevel[Restoring with String]
+  @js.native
+  sealed trait Renaming
+    extends StObject
+       with EntityStatus
+  /* "Renaming" */ val Renaming: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityStatus.Renaming & String = js.native
   
-  /* "SendDisabled" */ @js.native
-  object SendDisabled extends TopLevel[SendDisabled with String]
+  @js.native
+  sealed trait Restoring
+    extends StObject
+       with EntityStatus
+  /* "Restoring" */ val Restoring: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityStatus.Restoring & String = js.native
   
-  /* "Unknown" */ @js.native
-  object Unknown extends TopLevel[Unknown with String]
+  @js.native
+  sealed trait SendDisabled
+    extends StObject
+       with EntityStatus
+  /* "SendDisabled" */ val SendDisabled: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityStatus.SendDisabled & String = js.native
   
+  @js.native
+  sealed trait Unknown
+    extends StObject
+       with EntityStatus
+  /* "Unknown" */ val Unknown: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityStatus.Unknown & String = js.native
 }
-

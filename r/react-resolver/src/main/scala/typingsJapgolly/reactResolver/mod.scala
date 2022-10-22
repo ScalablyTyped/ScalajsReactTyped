@@ -1,46 +1,61 @@
 package typingsJapgolly.reactResolver
 
-import org.scalablytyped.runtime.TopLevel
-import org.scalajs.dom.raw.Node
+import org.scalajs.dom.Node
 import typingsJapgolly.react.mod.ComponentType
 import typingsJapgolly.react.mod.Factory
-import typingsJapgolly.react.mod.StatelessComponent
+import typingsJapgolly.react.mod.FunctionComponent
+import typingsJapgolly.reactResolver.anon.Data
 import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-resolver", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  trait Resolver extends js.Object {
-    def render(factory: Factory[_]): Unit = js.native
-    def render(factory: Factory[_], root: Node): Unit = js.native
-    def resolve[P](factory: Factory[P]): js.Promise[AnonData[P]] = js.native
-  }
+object mod {
   
-  def client(loadingComponent: ComponentType[_]): js.Function1[/* component */ ComponentType[_], StatelessComponent[_]] = js.native
-  def context[K /* <: String */](prop: K): js.Function1[/* component */ ComponentType[_], StatelessComponent[js.Any with (Record[K, _])]] = js.native
-  def resolve[OwnProps, ResolvableProps, MoreProps](
-    resolversMap: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof ResolvableProps ]: react-resolver.react-resolver.ResolveFn<OwnProps & MoreProps, ResolvableProps[K]>}
-    */ typingsJapgolly.reactResolver.reactResolverStrings.resolve with ResolvableProps
+  @JSImport("react-resolver", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @js.native
+  trait Resolver extends StObject {
+    
+    def render(factory: Factory[Any]): Unit = js.native
+    def render(factory: Factory[Any], root: Node): Unit = js.native
+    
+    def resolve[P](factory: Factory[P]): js.Promise[Data[P]] = js.native
+  }
+  @JSImport("react-resolver", "Resolver")
+  @js.native
+  val Resolver: typingsJapgolly.reactResolver.mod.Resolver = js.native
+  
+  inline def client(loadingComponent: ComponentType[Any]): js.Function1[/* component */ ComponentType[Any], FunctionComponent[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("client")(loadingComponent.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[Any], FunctionComponent[Any]]]
+  
+  inline def context[K /* <: String */](prop: K): js.Function1[/* component */ ComponentType[Any], FunctionComponent[Any & (Record[K, Any])]] = ^.asInstanceOf[js.Dynamic].applyDynamic("context")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[Any], FunctionComponent[Any & (Record[K, Any])]]]
+  
+  inline def resolve[OwnProps, ResolvableProps, MoreProps](
+    resolversMap: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof ResolvableProps ]: react-resolver.react-resolver.ResolveFn<OwnProps & MoreProps, ResolvableProps[K]>} */ js.Any
   ): js.Function1[
     /* component */ ComponentType[
-      OwnProps with typingsJapgolly.reactResolver.reactResolverStrings.resolve with ResolvableProps
+      OwnProps & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof ResolvableProps ]:? ResolvableProps[K]} */ js.Any)
     ], 
-    StatelessComponent[OwnProps with MoreProps]
-  ] = js.native
-  def resolve[OwnProps, K /* <: String */, V, MoreProps](prop: K, resolveFn: ResolveFn[OwnProps with MoreProps, V]): js.Function1[
+    FunctionComponent[OwnProps & MoreProps]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(resolversMap.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* component */ ComponentType[
-      OwnProps with typingsJapgolly.reactResolver.reactResolverStrings.resolve with js.Any
+      OwnProps & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof ResolvableProps ]:? ResolvableProps[K]} */ js.Any)
     ], 
-    StatelessComponent[OwnProps with MoreProps]
-  ] = js.native
-  @js.native
-  object Resolver extends TopLevel[Resolver]
+    FunctionComponent[OwnProps & MoreProps]
+  ]]
+  inline def resolve[OwnProps, K /* <: String */, V, MoreProps](prop: K, resolveFn: ResolveFn[OwnProps & MoreProps, V]): js.Function1[
+    /* component */ ComponentType[
+      OwnProps & (/* import warning: importer.ImportType#apply Failed type conversion: {[ C in K ]: V} */ js.Any)
+    ], 
+    FunctionComponent[OwnProps & MoreProps]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(prop.asInstanceOf[js.Any], resolveFn.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ ComponentType[
+      OwnProps & (/* import warning: importer.ImportType#apply Failed type conversion: {[ C in K ]: V} */ js.Any)
+    ], 
+    FunctionComponent[OwnProps & MoreProps]
+  ]]
   
   type ResolveFn[Props, V] = js.Function1[/* props */ Props, js.Promise[V]]
 }
-

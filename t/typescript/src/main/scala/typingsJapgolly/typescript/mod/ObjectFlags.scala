@@ -1,132 +1,129 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ObjectFlags extends js.Object
-
+sealed trait ObjectFlags extends StObject
 @JSImport("typescript", "ObjectFlags")
 @js.native
-object ObjectFlags extends js.Object {
-  @js.native
-  sealed trait Anonymous extends ObjectFlags
-  
-  @js.native
-  sealed trait ArrayLiteral extends ObjectFlags
-  
-  @js.native
-  sealed trait Class extends ObjectFlags
-  
-  @js.native
-  sealed trait ClassOrInterface extends ObjectFlags
-  
-  @js.native
-  sealed trait ContainsSpread extends ObjectFlags
-  
-  @js.native
-  sealed trait EvolvingArray extends ObjectFlags
-  
-  @js.native
-  sealed trait FreshLiteral extends ObjectFlags
-  
-  @js.native
-  sealed trait Instantiated extends ObjectFlags
-  
-  @js.native
-  sealed trait Interface extends ObjectFlags
-  
-  @js.native
-  sealed trait JSLiteral extends ObjectFlags
-  
-  @js.native
-  sealed trait JsxAttributes extends ObjectFlags
-  
-  @js.native
-  sealed trait Mapped extends ObjectFlags
-  
-  @js.native
-  sealed trait MarkerType extends ObjectFlags
-  
-  @js.native
-  sealed trait ObjectLiteral extends ObjectFlags
-  
-  @js.native
-  sealed trait ObjectLiteralPatternWithComputedProperties extends ObjectFlags
-  
-  @js.native
-  sealed trait ObjectRestType extends ObjectFlags
-  
-  @js.native
-  sealed trait Reference extends ObjectFlags
-  
-  @js.native
-  sealed trait ReverseMapped extends ObjectFlags
-  
-  @js.native
-  sealed trait Tuple extends ObjectFlags
+object ObjectFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ObjectFlags with Double] = js.native
-  /* 16 */ @js.native
-  object Anonymous extends TopLevel[Anonymous with Double]
+  def apply(value: Double): js.UndefOr[ObjectFlags & Double] = js.native
   
-  /* 65536 */ @js.native
-  object ArrayLiteral extends TopLevel[ArrayLiteral with Double]
+  @js.native
+  sealed trait Anonymous
+    extends StObject
+       with ObjectFlags
+  /* 16 */ val Anonymous: typingsJapgolly.typescript.mod.ObjectFlags.Anonymous & Double = js.native
   
-  /* 1 */ @js.native
-  object Class extends TopLevel[Class with Double]
+  @js.native
+  sealed trait ArrayLiteral
+    extends StObject
+       with ObjectFlags
+  /* 16384 */ val ArrayLiteral: typingsJapgolly.typescript.mod.ObjectFlags.ArrayLiteral & Double = js.native
   
-  /* 3 */ @js.native
-  object ClassOrInterface extends TopLevel[ClassOrInterface with Double]
+  @js.native
+  sealed trait Class
+    extends StObject
+       with ObjectFlags
+  /* 1 */ val Class: typingsJapgolly.typescript.mod.ObjectFlags.Class & Double = js.native
   
-  /* 1024 */ @js.native
-  object ContainsSpread extends TopLevel[ContainsSpread with Double]
+  @js.native
+  sealed trait ClassOrInterface
+    extends StObject
+       with ObjectFlags
+  /* 3 */ val ClassOrInterface: typingsJapgolly.typescript.mod.ObjectFlags.ClassOrInterface & Double = js.native
   
-  /* 256 */ @js.native
-  object EvolvingArray extends TopLevel[EvolvingArray with Double]
+  @js.native
+  sealed trait ContainsSpread
+    extends StObject
+       with ObjectFlags
+  /* 2097152 */ val ContainsSpread: typingsJapgolly.typescript.mod.ObjectFlags.ContainsSpread & Double = js.native
   
-  /* 32768 */ @js.native
-  object FreshLiteral extends TopLevel[FreshLiteral with Double]
+  @js.native
+  sealed trait EvolvingArray
+    extends StObject
+       with ObjectFlags
+  /* 256 */ val EvolvingArray: typingsJapgolly.typescript.mod.ObjectFlags.EvolvingArray & Double = js.native
   
-  /* 64 */ @js.native
-  object Instantiated extends TopLevel[Instantiated with Double]
+  @js.native
+  sealed trait FreshLiteral
+    extends StObject
+       with ObjectFlags
+  /* 8192 */ val FreshLiteral: typingsJapgolly.typescript.mod.ObjectFlags.FreshLiteral & Double = js.native
   
-  /* 2 */ @js.native
-  object Interface extends TopLevel[Interface with Double]
+  @js.native
+  sealed trait Instantiated
+    extends StObject
+       with ObjectFlags
+  /* 64 */ val Instantiated: typingsJapgolly.typescript.mod.ObjectFlags.Instantiated & Double = js.native
   
-  /* 16384 */ @js.native
-  object JSLiteral extends TopLevel[JSLiteral with Double]
+  @js.native
+  sealed trait InstantiationExpressionType
+    extends StObject
+       with ObjectFlags
+  /* 8388608 */ val InstantiationExpressionType: typingsJapgolly.typescript.mod.ObjectFlags.InstantiationExpressionType & Double = js.native
   
-  /* 4096 */ @js.native
-  object JsxAttributes
-    extends TopLevel[typingsJapgolly.typescript.mod.ObjectFlags.JsxAttributes with Double]
+  @js.native
+  sealed trait Interface
+    extends StObject
+       with ObjectFlags
+  /* 2 */ val Interface: typingsJapgolly.typescript.mod.ObjectFlags.Interface & Double = js.native
   
-  /* 32 */ @js.native
-  object Mapped extends TopLevel[Mapped with Double]
+  @js.native
+  sealed trait JSLiteral
+    extends StObject
+       with ObjectFlags
+  /* 4096 */ val JSLiteral: typingsJapgolly.typescript.mod.ObjectFlags.JSLiteral & Double = js.native
   
-  /* 8192 */ @js.native
-  object MarkerType extends TopLevel[MarkerType with Double]
+  @js.native
+  sealed trait JsxAttributes
+    extends StObject
+       with ObjectFlags
+  /* 2048 */ val JsxAttributes: typingsJapgolly.typescript.mod.ObjectFlags.JsxAttributes & Double = js.native
   
-  /* 128 */ @js.native
-  object ObjectLiteral extends TopLevel[ObjectLiteral with Double]
+  @js.native
+  sealed trait Mapped
+    extends StObject
+       with ObjectFlags
+  /* 32 */ val Mapped: typingsJapgolly.typescript.mod.ObjectFlags.Mapped & Double = js.native
   
-  /* 512 */ @js.native
-  object ObjectLiteralPatternWithComputedProperties extends TopLevel[ObjectLiteralPatternWithComputedProperties with Double]
+  @js.native
+  sealed trait ObjectLiteral
+    extends StObject
+       with ObjectFlags
+  /* 128 */ val ObjectLiteral: typingsJapgolly.typescript.mod.ObjectFlags.ObjectLiteral & Double = js.native
   
-  /* 131072 */ @js.native
-  object ObjectRestType extends TopLevel[ObjectRestType with Double]
+  @js.native
+  sealed trait ObjectLiteralPatternWithComputedProperties
+    extends StObject
+       with ObjectFlags
+  /* 512 */ val ObjectLiteralPatternWithComputedProperties: typingsJapgolly.typescript.mod.ObjectFlags.ObjectLiteralPatternWithComputedProperties & Double = js.native
   
-  /* 4 */ @js.native
-  object Reference extends TopLevel[Reference with Double]
+  @js.native
+  sealed trait ObjectRestType
+    extends StObject
+       with ObjectFlags
+  /* 4194304 */ val ObjectRestType: typingsJapgolly.typescript.mod.ObjectFlags.ObjectRestType & Double = js.native
   
-  /* 2048 */ @js.native
-  object ReverseMapped extends TopLevel[ReverseMapped with Double]
+  @js.native
+  sealed trait Reference
+    extends StObject
+       with ObjectFlags
+  /* 4 */ val Reference: typingsJapgolly.typescript.mod.ObjectFlags.Reference & Double = js.native
   
-  /* 8 */ @js.native
-  object Tuple extends TopLevel[Tuple with Double]
+  @js.native
+  sealed trait ReverseMapped
+    extends StObject
+       with ObjectFlags
+  /* 1024 */ val ReverseMapped: typingsJapgolly.typescript.mod.ObjectFlags.ReverseMapped & Double = js.native
   
+  @js.native
+  sealed trait Tuple
+    extends StObject
+       with ObjectFlags
+  /* 8 */ val Tuple: typingsJapgolly.typescript.mod.ObjectFlags.Tuple & Double = js.native
 }
-

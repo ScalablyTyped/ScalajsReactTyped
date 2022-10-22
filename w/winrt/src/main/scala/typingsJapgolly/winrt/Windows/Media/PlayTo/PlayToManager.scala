@@ -1,25 +1,16 @@
 package typingsJapgolly.winrt.Windows.Media.PlayTo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.PlayTo.PlayToManager")
-@js.native
-class PlayToManager () extends IPlayToManager {
-  /* CompleteClass */
-  override var defaultSourceSelection: Boolean = js.native
-  /* CompleteClass */
-  override var onsourcerequested: js.Any = js.native
-  /* CompleteClass */
-  override var onsourceselected: js.Any = js.native
+trait PlayToManager
+  extends StObject
+     with IPlayToManager
+object PlayToManager {
+  
+  inline def apply(defaultSourceSelection: Boolean, onsourcerequested: Any, onsourceselected: Any): PlayToManager = {
+    val __obj = js.Dynamic.literal(defaultSourceSelection = defaultSourceSelection.asInstanceOf[js.Any], onsourcerequested = onsourcerequested.asInstanceOf[js.Any], onsourceselected = onsourceselected.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayToManager]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Media.PlayTo.PlayToManager")
-@js.native
-object PlayToManager extends js.Object {
-  def getForCurrentView(): PlayToManager = js.native
-  def showPlayToUI(): Unit = js.native
-}
-

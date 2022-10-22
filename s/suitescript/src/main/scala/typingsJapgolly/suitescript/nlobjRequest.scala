@@ -1,9 +1,9 @@
 package typingsJapgolly.suitescript
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjRequest used for scripting web requests in Suitelets
@@ -14,11 +14,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait nlobjRequest
-  extends /**
+  extends StObject
+     with /**
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
+  
   /**
     * return an Object containing field names to file objects for all uploaded files.
     * @return {Object}
@@ -29,7 +31,8 @@ Instantiable0[js.Any] {
     * @since 2009.1
     * @return
     */
-  def getAllFiles(): js.Any = js.native
+  def getAllFiles(): Any = js.native
+  
   /**
     * return an Object containing all the request headers and their values.
     * @return {Object}
@@ -40,7 +43,8 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @return
     */
-  def getAllHeaders(): js.Any = js.native
+  def getAllHeaders(): Any = js.native
+  
   /**
     * return an Object containing all the request parameters and their values.
     * @return {Object}
@@ -50,7 +54,8 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @return
     */
-  def getAllParameters(): js.Any = js.native
+  def getAllParameters(): Any = js.native
+  
   /**
     * return the body of the POST request
     * @return {string}
@@ -60,7 +65,8 @@ Instantiable0[js.Any] {
     * @since 2008.1
     * @return
     */
-  def getBody(): js.Any = js.native
+  def getBody(): Any = js.native
+  
   /**
     * return the value of an uploaded file.
     * @param {string} name file field name
@@ -74,6 +80,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getFile(name: String): nlobjFile = js.native
+  
   /**
     * return the value of a request header.
     * @param {string} name
@@ -87,6 +94,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getHeader(name: String): String = js.native
+  
   /**
     * return the number of lines in a sublist.
     * @param {string} group sublist name
@@ -100,6 +108,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getLineItemCount(group: String): String | Double = js.native
+  
   /**
     * return the value of a sublist value.
     * @param {string}    group sublist name
@@ -116,7 +125,8 @@ Instantiable0[js.Any] {
     * @param line
     * @return
     */
-  def getLineItemValue(group: String, name: String, line: js.Any): String = js.native
+  def getLineItemValue(group: String, name: String, line: Any): String = js.native
+  
   /**
     * return the METHOD of the request
     * @return {string}
@@ -127,6 +137,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getMethod(): String = js.native
+  
   /**
     * return the value of a request parameter.
     *
@@ -140,6 +151,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getParameter(name: String): String = js.native
+  
   /**
     * return the values of a request parameter as an Array.
     *
@@ -152,6 +164,7 @@ Instantiable0[js.Any] {
     * @param name
     */
   def getParameterValues(name: String): Unit = js.native
+  
   /**
     * return the URL of the request
     * @return {string}
@@ -163,4 +176,3 @@ Instantiable0[js.Any] {
     */
   def getURL(): String = js.native
 }
-

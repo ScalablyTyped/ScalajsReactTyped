@@ -1,27 +1,36 @@
 package typingsJapgolly.eventsource
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EventInit extends js.Object {
+trait EventInit extends StObject {
+  
   var bubbles: js.UndefOr[Boolean] = js.undefined
+  
   var cancelable: js.UndefOr[Boolean] = js.undefined
+  
   var composed: js.UndefOr[Boolean] = js.undefined
 }
-
 object EventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[Boolean] = js.undefined,
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    composed: js.UndefOr[Boolean] = js.undefined
-  ): EventInit = {
+  
+  inline def apply(): EventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventInit]
   }
+  
+  extension [Self <: EventInit](x: Self) {
+    
+    inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+    
+    inline def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
+    
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    
+    inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+    
+    inline def setComposed(value: Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
+    
+    inline def setComposedUndefined: Self = StObject.set(x, "composed", js.undefined)
+  }
 }
-

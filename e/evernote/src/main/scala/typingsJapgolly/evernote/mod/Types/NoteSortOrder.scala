@@ -1,47 +1,45 @@
 package typingsJapgolly.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NoteSortOrder extends js.Object
-
+sealed trait NoteSortOrder extends StObject
 @JSImport("evernote", "Types.NoteSortOrder")
 @js.native
-object NoteSortOrder extends js.Object {
-  @js.native
-  sealed trait CREATED extends NoteSortOrder
-  
-  @js.native
-  sealed trait RELEVANCE extends NoteSortOrder
-  
-  @js.native
-  sealed trait TITLE extends NoteSortOrder
-  
-  @js.native
-  sealed trait UPDATED extends NoteSortOrder
-  
-  @js.native
-  sealed trait UPDATE_SEQUENCE_NUMBER extends NoteSortOrder
+object NoteSortOrder extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NoteSortOrder with Double] = js.native
-  /* 1 */ @js.native
-  object CREATED extends TopLevel[CREATED with Double]
+  def apply(value: Double): js.UndefOr[NoteSortOrder & Double] = js.native
   
-  /* 3 */ @js.native
-  object RELEVANCE extends TopLevel[RELEVANCE with Double]
+  @js.native
+  sealed trait CREATED
+    extends StObject
+       with NoteSortOrder
+  /* 1 */ val CREATED: typingsJapgolly.evernote.mod.Types.NoteSortOrder.CREATED & Double = js.native
   
-  /* 5 */ @js.native
-  object TITLE extends TopLevel[TITLE with Double]
+  @js.native
+  sealed trait RELEVANCE
+    extends StObject
+       with NoteSortOrder
+  /* 3 */ val RELEVANCE: typingsJapgolly.evernote.mod.Types.NoteSortOrder.RELEVANCE & Double = js.native
   
-  /* 2 */ @js.native
-  object UPDATED extends TopLevel[UPDATED with Double]
+  @js.native
+  sealed trait TITLE
+    extends StObject
+       with NoteSortOrder
+  /* 5 */ val TITLE: typingsJapgolly.evernote.mod.Types.NoteSortOrder.TITLE & Double = js.native
   
-  /* 4 */ @js.native
-  object UPDATE_SEQUENCE_NUMBER extends TopLevel[UPDATE_SEQUENCE_NUMBER with Double]
+  @js.native
+  sealed trait UPDATED
+    extends StObject
+       with NoteSortOrder
+  /* 2 */ val UPDATED: typingsJapgolly.evernote.mod.Types.NoteSortOrder.UPDATED & Double = js.native
   
+  @js.native
+  sealed trait UPDATE_SEQUENCE_NUMBER
+    extends StObject
+       with NoteSortOrder
+  /* 4 */ val UPDATE_SEQUENCE_NUMBER: typingsJapgolly.evernote.mod.Types.NoteSortOrder.UPDATE_SEQUENCE_NUMBER & Double = js.native
 }
-

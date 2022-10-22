@@ -1,30 +1,31 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ModifierDefinition
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
+  
   var name: String
+  
   @JSName("type")
   var type_ModifierDefinition: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ModifierDefinition
 }
-
 object ModifierDefinition {
-  @scala.inline
-  def apply(
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ModifierDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ModifierDefinition = {
+  
+  inline def apply(name: String): ModifierDefinition = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ModifierDefinition")
     __obj.asInstanceOf[ModifierDefinition]
   }
+  
+  extension [Self <: ModifierDefinition](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ModifierDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

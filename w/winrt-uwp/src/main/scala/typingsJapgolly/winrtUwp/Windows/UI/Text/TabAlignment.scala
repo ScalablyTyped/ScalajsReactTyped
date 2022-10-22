@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TabAlignment extends js.Object
-
+sealed trait TabAlignment extends StObject
 /** Alignment options for tab positions. */
 @JSGlobal("Windows.UI.Text.TabAlignment")
 @js.native
-object TabAlignment extends js.Object {
+object TabAlignment extends StObject {
+  
   /** A vertical bar is positioned at the tab position. Text is not affected. Alignment bars on nearby lines at the same position form a continuous vertical line. */
   @js.native
-  sealed trait bar extends TabAlignment
+  sealed trait bar
+    extends StObject
+       with TabAlignment
   
   /** Text is centered on the tab position. */
   @js.native
-  sealed trait center extends TabAlignment
+  sealed trait center
+    extends StObject
+       with TabAlignment
   
   /** The decimal point is set at the tab position. This is useful for aligning a column of decimal numbers. */
   @js.native
-  sealed trait decimal extends TabAlignment
+  sealed trait decimal
+    extends StObject
+       with TabAlignment
   
   /** Text is left justified from the tab position. This is the default. */
   @js.native
-  sealed trait left extends TabAlignment
+  sealed trait left
+    extends StObject
+       with TabAlignment
   
   /** Text is right justified from the tab position. */
   @js.native
-  sealed trait right extends TabAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TabAlignment with Double] = js.native
-  /* 4 */ @js.native
-  object bar extends TopLevel[bar with Double]
-  
-  /* 1 */ @js.native
-  object center extends TopLevel[center with Double]
-  
-  /* 3 */ @js.native
-  object decimal extends TopLevel[decimal with Double]
-  
-  /* 0 */ @js.native
-  object left extends TopLevel[left with Double]
-  
-  /* 2 */ @js.native
-  object right extends TopLevel[right with Double]
-  
+  sealed trait right
+    extends StObject
+       with TabAlignment
 }
-

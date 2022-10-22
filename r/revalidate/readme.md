@@ -10,10 +10,10 @@ Elegant and composable validations
 | ------------------ | :-------------: |
 | Full name          | revalidate |
 | Keywords           | functional, validation, validate, form |
-| # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 259295 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 55882.333333333336 |
+| # stars            | 365.0 |
 
 ## Links
 - [Homepage](https://github.com/jfairbank/revalidate#readme)

@@ -1,38 +1,43 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SheetVisibility extends js.Object
-
+sealed trait SheetVisibility extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.SheetVisibility")
 @js.native
-object SheetVisibility extends js.Object {
+object SheetVisibility extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait hidden extends SheetVisibility
+  sealed trait hidden
+    extends StObject
+       with SheetVisibility
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait veryHidden extends SheetVisibility
+  sealed trait veryHidden
+    extends StObject
+       with SheetVisibility
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait visible extends SheetVisibility
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SheetVisibility with String] = js.native
-  /* "Hidden" */ @js.native
-  object hidden extends TopLevel[hidden with String]
-  
-  /* "VeryHidden" */ @js.native
-  object veryHidden extends TopLevel[veryHidden with String]
-  
-  /* "Visible" */ @js.native
-  object visible extends TopLevel[visible with String]
-  
+  sealed trait visible
+    extends StObject
+       with SheetVisibility
 }
-

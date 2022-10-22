@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.Storage
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ApplicationDataCreateDisposition extends js.Object
-
+sealed trait ApplicationDataCreateDisposition extends StObject
 @JSGlobal("Windows.Storage.ApplicationDataCreateDisposition")
 @js.native
-object ApplicationDataCreateDisposition extends js.Object {
-  @js.native
-  sealed trait always extends ApplicationDataCreateDisposition
+object ApplicationDataCreateDisposition extends StObject {
   
   @js.native
-  sealed trait existing extends ApplicationDataCreateDisposition
+  sealed trait always
+    extends StObject
+       with ApplicationDataCreateDisposition
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ApplicationDataCreateDisposition with Double] = js.native
-  /* 0 */ @js.native
-  object always extends TopLevel[always with Double]
-  
-  /* 1 */ @js.native
-  object existing extends TopLevel[existing with Double]
-  
+  @js.native
+  sealed trait existing
+    extends StObject
+       with ApplicationDataCreateDisposition
 }
-

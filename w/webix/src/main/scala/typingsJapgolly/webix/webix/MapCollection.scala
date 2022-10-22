@@ -1,13 +1,7 @@
 package typingsJapgolly.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapCollection extends js.Object
-
-@JSGlobal("webix.MapCollection")
-@js.native
-object MapCollection extends TopLevel[MapCollection]
-
+trait MapCollection extends StObject

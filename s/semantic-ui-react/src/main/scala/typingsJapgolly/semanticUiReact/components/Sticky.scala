@@ -1,67 +1,64 @@
 package typingsJapgolly.semanticUiReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.semanticUiReact.stickyMod.default
-import typingsJapgolly.semanticUiReact.stickyStickyMod.StickyProps
+import org.scalajs.dom.Document
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.Window
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.semanticUiReact.distCommonjsModulesStickyStickyMod.StickyProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Sticky {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    as: js.Any = null,
-    bottomOffset: Int | Double = null,
-    className: String = null,
-    context: js.Object | japgolly.scalajs.react.raw.React.Ref = null,
-    offset: Int | Double = null,
-    onBottom: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ StickyProps) => Callback = null,
-    onStick: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ StickyProps) => Callback = null,
-    onTop: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ StickyProps) => Callback = null,
-    onUnstick: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ StickyProps) => Callback = null,
-    pushing: js.UndefOr[Boolean] = js.undefined,
-    scrollContext: js.Object | japgolly.scalajs.react.raw.React.Ref = null,
-    styleElement: js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[StickyProps, default, Unit, StickyProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (bottomOffset != null) __obj.updateDynamic("bottomOffset")(bottomOffset.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onBottom != null) __obj.updateDynamic("onBottom")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.stickyStickyMod.StickyProps) => onBottom(t0, t1).runNow()))
-    if (onStick != null) __obj.updateDynamic("onStick")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.stickyStickyMod.StickyProps) => onStick(t0, t1).runNow()))
-    if (onTop != null) __obj.updateDynamic("onTop")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.stickyStickyMod.StickyProps) => onTop(t0, t1).runNow()))
-    if (onUnstick != null) __obj.updateDynamic("onUnstick")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.stickyStickyMod.StickyProps) => onUnstick(t0, t1).runNow()))
-    if (!js.isUndefined(pushing)) __obj.updateDynamic("pushing")(pushing.asInstanceOf[js.Any])
-    if (scrollContext != null) __obj.updateDynamic("scrollContext")(scrollContext.asInstanceOf[js.Any])
-    if (styleElement != null) __obj.updateDynamic("styleElement")(styleElement.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.stickyStickyMod.StickyProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.stickyMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.stickyStickyMod.StickyProps])(children: _*)
-  }
-  @JSImport("semantic-ui-react/dist/commonjs/modules/Sticky", JSImport.Default)
+  @JSImport("semantic-ui-react", "Sticky")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.semanticUiReact.mod.Sticky] {
+    
+    inline def active(value: Boolean): this.type = set("active", value.asInstanceOf[js.Any])
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def bottomOffset(value: Double): this.type = set("bottomOffset", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def context(value: Document | Window | HTMLElement | typingsJapgolly.react.mod.Ref[HTMLElement]): this.type = set("context", value.asInstanceOf[js.Any])
+    
+    inline def contextFunction1(value: HTMLElement | Null => Callback): this.type = set("context", js.Any.fromFunction1((t0: HTMLElement | Null) => value(t0).runNow()))
+    
+    inline def contextNull: this.type = set("context", null)
+    
+    inline def offset(value: Double): this.type = set("offset", value.asInstanceOf[js.Any])
+    
+    inline def onBottom(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ StickyProps) => Callback): this.type = set("onBottom", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ StickyProps) => (value(t0, t1)).runNow()))
+    
+    inline def onStick(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ StickyProps) => Callback): this.type = set("onStick", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ StickyProps) => (value(t0, t1)).runNow()))
+    
+    inline def onTop(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ StickyProps) => Callback): this.type = set("onTop", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ StickyProps) => (value(t0, t1)).runNow()))
+    
+    inline def onUnstick(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ StickyProps) => Callback): this.type = set("onUnstick", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ StickyProps) => (value(t0, t1)).runNow()))
+    
+    inline def pushing(value: Boolean): this.type = set("pushing", value.asInstanceOf[js.Any])
+    
+    inline def scrollContext(value: Document | Window | HTMLElement | typingsJapgolly.react.mod.Ref[HTMLElement]): this.type = set("scrollContext", value.asInstanceOf[js.Any])
+    
+    inline def scrollContextFunction1(value: HTMLElement | Null => Callback): this.type = set("scrollContext", js.Any.fromFunction1((t0: HTMLElement | Null) => value(t0).runNow()))
+    
+    inline def scrollContextNull: this.type = set("scrollContext", null)
+    
+    inline def styleElement(value: CSSProperties): this.type = set("styleElement", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Sticky.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: StickyProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

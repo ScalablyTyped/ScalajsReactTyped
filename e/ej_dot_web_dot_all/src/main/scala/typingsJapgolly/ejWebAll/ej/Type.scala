@@ -1,29 +1,22 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Type extends js.Object
-
+sealed trait Type extends StObject
 @JSGlobal("ej.Type")
 @js.native
-object Type extends js.Object {
-  @js.native
-  sealed trait Overlay extends Type
+object Type extends StObject {
   
   @js.native
-  sealed trait Slide extends Type
+  sealed trait Overlay
+    extends StObject
+       with Type
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Type with Double] = js.native
-  /* 0 */ @js.native
-  object Overlay extends TopLevel[Overlay with Double]
-  
-  /* 1 */ @js.native
-  object Slide extends TopLevel[Slide with Double]
-  
+  @js.native
+  sealed trait Slide
+    extends StObject
+       with Type
 }
-

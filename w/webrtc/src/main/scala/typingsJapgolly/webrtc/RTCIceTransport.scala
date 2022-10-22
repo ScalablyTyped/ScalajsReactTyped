@@ -1,52 +1,128 @@
 package typingsJapgolly.webrtc
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.experimental.webrtc.RTCIceCandidate
-import org.scalajs.dom.experimental.webrtc.RTCIceGatheringState
-import typingsJapgolly.std.RTCIceCandidatePair
-import typingsJapgolly.std.RTCIceParameters
+import org.scalajs.dom.Event
+import org.scalajs.dom.EventListenerOptions
+import org.scalajs.dom.RTCIceCandidate
+import org.scalajs.dom.RTCIceGatheringState
+import typingsJapgolly.std.AddEventListenerOptions
+import typingsJapgolly.std.EventTarget
+import typingsJapgolly.webrtc.webrtcStrings.gatheringstatechange
+import typingsJapgolly.webrtc.webrtcStrings.selectedcandidatepairchange
+import typingsJapgolly.webrtc.webrtcStrings.statechange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCIceTransport extends js.Object {
-  //readonly role: RTCIceRole;
+@js.native
+trait RTCIceTransport
+  extends StObject
+     with EventTarget {
+  
+  @JSName("addEventListener")
+  def addEventListener_gatheringstatechange(
+    `type`: gatheringstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_gatheringstatechange(
+    `type`: gatheringstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_gatheringstatechange(
+    `type`: gatheringstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectedcandidatepairchange(
+    `type`: selectedcandidatepairchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectedcandidatepairchange(
+    `type`: selectedcandidatepairchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectedcandidatepairchange(
+    `type`: selectedcandidatepairchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  
   //readonly component: RTCIceComponent;
   //readonly state: RTCIceTransportState;
-  val gatheringState: RTCIceGatheringState
-  var ongatheringstatechange: IceTransportEventHandler
-  var onselectedcandidatepairchange: IceTransportEventHandler
-  var onstatechange: IceTransportEventHandler
-  def getLocalCandidates(): js.Array[RTCIceCandidate]
-  def getLocalParameters(): RTCIceParameters | Null
-  def getRemoteCandidates(): js.Array[RTCIceCandidate]
-  def getRemoteParameters(): RTCIceParameters | Null
-  def getSelectedCandidatePair(): RTCIceCandidatePair | Null
+  val gatheringState: RTCIceGatheringState = js.native
+  
+  def getLocalCandidates(): js.Array[RTCIceCandidate] = js.native
+  
+  def getLocalParameters(): RTCIceParameters | Null = js.native
+  
+  def getRemoteCandidates(): js.Array[RTCIceCandidate] = js.native
+  
+  def getRemoteParameters(): RTCIceParameters | Null = js.native
+  
+  def getSelectedCandidatePair(): RTCIceCandidatePair | Null = js.native
+  
+  var ongatheringstatechange: IceTransportEventHandler = js.native
+  
+  var onselectedcandidatepairchange: IceTransportEventHandler = js.native
+  
+  var onstatechange: IceTransportEventHandler = js.native
+  
+  @JSName("removeEventListener")
+  def removeEventListener_gatheringstatechange(
+    `type`: gatheringstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_gatheringstatechange(
+    `type`: gatheringstatechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectedcandidatepairchange(
+    `type`: selectedcandidatepairchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectedcandidatepairchange(
+    `type`: selectedcandidatepairchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: Boolean
+  ): Unit = js.native
+  
+  val role: RTCIceRole = js.native
 }
-
-object RTCIceTransport {
-  @scala.inline
-  def apply(
-    gatheringState: RTCIceGatheringState,
-    getLocalCandidates: CallbackTo[js.Array[RTCIceCandidate]],
-    getLocalParameters: CallbackTo[RTCIceParameters | Null],
-    getRemoteCandidates: CallbackTo[js.Array[RTCIceCandidate]],
-    getRemoteParameters: CallbackTo[RTCIceParameters | Null],
-    getSelectedCandidatePair: CallbackTo[RTCIceCandidatePair | Null],
-    ongatheringstatechange: IceTransportEventHandler = null,
-    onselectedcandidatepairchange: IceTransportEventHandler = null,
-    onstatechange: IceTransportEventHandler = null
-  ): RTCIceTransport = {
-    val __obj = js.Dynamic.literal(gatheringState = gatheringState.asInstanceOf[js.Any])
-    __obj.updateDynamic("getLocalCandidates")(getLocalCandidates.toJsFn)
-    __obj.updateDynamic("getLocalParameters")(getLocalParameters.toJsFn)
-    __obj.updateDynamic("getRemoteCandidates")(getRemoteCandidates.toJsFn)
-    __obj.updateDynamic("getRemoteParameters")(getRemoteParameters.toJsFn)
-    __obj.updateDynamic("getSelectedCandidatePair")(getSelectedCandidatePair.toJsFn)
-    if (ongatheringstatechange != null) __obj.updateDynamic("ongatheringstatechange")(ongatheringstatechange.asInstanceOf[js.Any])
-    if (onselectedcandidatepairchange != null) __obj.updateDynamic("onselectedcandidatepairchange")(onselectedcandidatepairchange.asInstanceOf[js.Any])
-    if (onstatechange != null) __obj.updateDynamic("onstatechange")(onstatechange.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RTCIceTransport]
-  }
-}
-

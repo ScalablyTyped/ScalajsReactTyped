@@ -1,25 +1,31 @@
 package typingsJapgolly.sketchapp
 
 import typingsJapgolly.sketchapp.sketchappStrings.curvePoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SketchMSCurvePoint extends js.Object {
+trait SketchMSCurvePoint extends StObject {
+  
   var _class: curvePoint
+  
   var cornerRadius: Double
+  
   var curveFrom: SketchMSPointString
+  
   var curveMode: SketchMSCurveMode
+  
   var curveTo: SketchMSPointString
+  
   var hasCurveFrom: Boolean
+  
   var hasCurveTo: Boolean
+  
   var point: SketchMSPointString
 }
-
 object SketchMSCurvePoint {
-  @scala.inline
-  def apply(
-    _class: curvePoint,
+  
+  inline def apply(
     cornerRadius: Double,
     curveFrom: SketchMSPointString,
     curveMode: SketchMSCurveMode,
@@ -28,9 +34,26 @@ object SketchMSCurvePoint {
     hasCurveTo: Boolean,
     point: SketchMSPointString
   ): SketchMSCurvePoint = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], cornerRadius = cornerRadius.asInstanceOf[js.Any], curveFrom = curveFrom.asInstanceOf[js.Any], curveMode = curveMode.asInstanceOf[js.Any], curveTo = curveTo.asInstanceOf[js.Any], hasCurveFrom = hasCurveFrom.asInstanceOf[js.Any], hasCurveTo = hasCurveTo.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(_class = "curvePoint", cornerRadius = cornerRadius.asInstanceOf[js.Any], curveFrom = curveFrom.asInstanceOf[js.Any], curveMode = curveMode.asInstanceOf[js.Any], curveTo = curveTo.asInstanceOf[js.Any], hasCurveFrom = hasCurveFrom.asInstanceOf[js.Any], hasCurveTo = hasCurveTo.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSCurvePoint]
   }
+  
+  extension [Self <: SketchMSCurvePoint](x: Self) {
+    
+    inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+    
+    inline def setCurveFrom(value: SketchMSPointString): Self = StObject.set(x, "curveFrom", value.asInstanceOf[js.Any])
+    
+    inline def setCurveMode(value: SketchMSCurveMode): Self = StObject.set(x, "curveMode", value.asInstanceOf[js.Any])
+    
+    inline def setCurveTo(value: SketchMSPointString): Self = StObject.set(x, "curveTo", value.asInstanceOf[js.Any])
+    
+    inline def setHasCurveFrom(value: Boolean): Self = StObject.set(x, "hasCurveFrom", value.asInstanceOf[js.Any])
+    
+    inline def setHasCurveTo(value: Boolean): Self = StObject.set(x, "hasCurveTo", value.asInstanceOf[js.Any])
+    
+    inline def setPoint(value: SketchMSPointString): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    
+    inline def set_class(value: curvePoint): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+  }
 }
-

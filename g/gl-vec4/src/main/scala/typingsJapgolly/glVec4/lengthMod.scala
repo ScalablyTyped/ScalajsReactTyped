@@ -1,12 +1,14 @@
 package typingsJapgolly.glVec4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gl-vec4/length", JSImport.Namespace)
-@js.native
-object lengthMod extends js.Object {
-  def default(a: js.Array[Double]): Double = js.native
+object lengthMod {
+  
+  @JSImport("gl-vec4/length", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(a: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
 }
-

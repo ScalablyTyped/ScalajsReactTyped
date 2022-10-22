@@ -1,14 +1,24 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Import
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the PhotoImportFindItemsResult::SelectionChanged event. */
-@JSGlobal("Windows.Media.Import.PhotoImportSelectionChangedEventArgs")
-@js.native
-abstract class PhotoImportSelectionChangedEventArgs () extends js.Object {
+trait PhotoImportSelectionChangedEventArgs extends StObject {
+  
   /** Gets a value indicating whether no items are selected after the selection has changed. */
-  var isSelectionEmpty: Boolean = js.native
+  var isSelectionEmpty: Boolean
 }
-
+object PhotoImportSelectionChangedEventArgs {
+  
+  inline def apply(isSelectionEmpty: Boolean): PhotoImportSelectionChangedEventArgs = {
+    val __obj = js.Dynamic.literal(isSelectionEmpty = isSelectionEmpty.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhotoImportSelectionChangedEventArgs]
+  }
+  
+  extension [Self <: PhotoImportSelectionChangedEventArgs](x: Self) {
+    
+    inline def setIsSelectionEmpty(value: Boolean): Self = StObject.set(x, "isSelectionEmpty", value.asInstanceOf[js.Any])
+  }
+}

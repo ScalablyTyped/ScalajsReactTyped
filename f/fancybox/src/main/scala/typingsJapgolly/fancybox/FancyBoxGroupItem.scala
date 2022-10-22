@@ -5,23 +5,35 @@ import typingsJapgolly.fancybox.fancyboxStrings.ajax
 import typingsJapgolly.fancybox.fancyboxStrings.html
 import typingsJapgolly.fancybox.fancyboxStrings.iframe
 import typingsJapgolly.fancybox.fancyboxStrings.image
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FancyBoxGroupItem extends js.Object {
+trait FancyBoxGroupItem extends StObject {
+  
   var opts: js.UndefOr[FancyBoxOptions] = js.undefined
+  
   var src: String
+  
   var `type`: js.UndefOr[image | `inline` | ajax | iframe | html] = js.undefined
 }
-
 object FancyBoxGroupItem {
-  @scala.inline
-  def apply(src: String, opts: FancyBoxOptions = null, `type`: image | `inline` | ajax | iframe | html = null): FancyBoxGroupItem = {
+  
+  inline def apply(src: String): FancyBoxGroupItem = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
-    if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxGroupItem]
   }
+  
+  extension [Self <: FancyBoxGroupItem](x: Self) {
+    
+    inline def setOpts(value: FancyBoxOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+    
+    inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
+    
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: image | `inline` | ajax | iframe | html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

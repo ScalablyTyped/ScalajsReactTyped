@@ -1,8 +1,8 @@
 package typingsJapgolly.qrcode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qrcode.qrcodeStrings.low
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qrcode.qrcodeStrings.Q
   - typingsJapgolly.qrcode.qrcodeStrings.H
 */
-trait QRCodeErrorCorrectionLevel extends js.Object
-
+trait QRCodeErrorCorrectionLevel extends StObject
 object QRCodeErrorCorrectionLevel {
-  @scala.inline
-  def H: typingsJapgolly.qrcode.qrcodeStrings.H = this.cast("H")
-  @scala.inline
-  def L: typingsJapgolly.qrcode.qrcodeStrings.L = this.cast("L")
-  @scala.inline
-  def M: typingsJapgolly.qrcode.qrcodeStrings.M = this.cast("M")
-  @scala.inline
-  def Q: typingsJapgolly.qrcode.qrcodeStrings.Q = this.cast("Q")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def high: typingsJapgolly.qrcode.qrcodeStrings.high = this.cast("high")
-  @scala.inline
-  def low: typingsJapgolly.qrcode.qrcodeStrings.low = this.cast("low")
-  @scala.inline
-  def medium: typingsJapgolly.qrcode.qrcodeStrings.medium = this.cast("medium")
-  @scala.inline
-  def quartile: typingsJapgolly.qrcode.qrcodeStrings.quartile = this.cast("quartile")
+  
+  inline def H: typingsJapgolly.qrcode.qrcodeStrings.H = "H".asInstanceOf[typingsJapgolly.qrcode.qrcodeStrings.H]
+  
+  inline def L: typingsJapgolly.qrcode.qrcodeStrings.L = "L".asInstanceOf[typingsJapgolly.qrcode.qrcodeStrings.L]
+  
+  inline def M: typingsJapgolly.qrcode.qrcodeStrings.M = "M".asInstanceOf[typingsJapgolly.qrcode.qrcodeStrings.M]
+  
+  inline def Q: typingsJapgolly.qrcode.qrcodeStrings.Q = "Q".asInstanceOf[typingsJapgolly.qrcode.qrcodeStrings.Q]
+  
+  inline def high: typingsJapgolly.qrcode.qrcodeStrings.high = "high".asInstanceOf[typingsJapgolly.qrcode.qrcodeStrings.high]
+  
+  inline def low: typingsJapgolly.qrcode.qrcodeStrings.low = "low".asInstanceOf[typingsJapgolly.qrcode.qrcodeStrings.low]
+  
+  inline def medium: typingsJapgolly.qrcode.qrcodeStrings.medium = "medium".asInstanceOf[typingsJapgolly.qrcode.qrcodeStrings.medium]
+  
+  inline def quartile: typingsJapgolly.qrcode.qrcodeStrings.quartile = "quartile".asInstanceOf[typingsJapgolly.qrcode.qrcodeStrings.quartile]
 }
-

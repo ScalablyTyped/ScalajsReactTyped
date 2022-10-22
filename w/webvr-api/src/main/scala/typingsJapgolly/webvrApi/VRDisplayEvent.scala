@@ -1,18 +1,16 @@
 package typingsJapgolly.webvrApi
 
-import org.scalablytyped.runtime.Instantiable2
-import typingsJapgolly.std.Event_
+import typingsJapgolly.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VRDisplayEvent extends Event_ {
+trait VRDisplayEvent
+  extends StObject
+     with Event {
+  
   val display: VRDisplay = js.native
+  
   val reason: VRDisplayEventReasonDtAlias | Null = js.native
 }
-
-@JSGlobal("VRDisplayEvent")
-@js.native
-object VRDisplayEvent extends Instantiable2[/* type */ String, /* eventInitDict */ VRDisplayEventInit, VRDisplayEvent]
-

@@ -1,0 +1,24 @@
+package typingsJapgolly.ajv
+
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.ajv.ajvStrings.`enum`
+import typingsJapgolly.ajv.anon.AllowedValues
+import typingsJapgolly.ajv.distTypesMod.CodeKeywordDefinition
+import typingsJapgolly.ajv.distTypesMod.ErrorObject
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distVocabulariesJtdEnumMod extends Shortcut {
+  
+  @JSImport("ajv/dist/vocabularies/jtd/enum", JSImport.Default)
+  @js.native
+  val default: CodeKeywordDefinition = js.native
+  
+  type JTDEnumError = ErrorObject[`enum`, AllowedValues, js.Array[String]]
+  
+  type _To = CodeKeywordDefinition
+  
+  /* This means you don't have to write `default`, but can instead just say `distVocabulariesJtdEnumMod.foo` */
+  override def _to: CodeKeywordDefinition = default
+}

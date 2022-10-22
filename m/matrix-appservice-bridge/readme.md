@@ -1,7 +1,7 @@
 
 # Scala.js typings for matrix-appservice-bridge
 
-Typings are for version 1.11
+Typings are for version 6.0.0
 
 ## Library description:
 Bridging infrastructure for Matrix Application Services
@@ -10,10 +10,10 @@ Bridging infrastructure for Matrix Application Services
 | ------------------ | :-------------: |
 | Full name          | matrix-appservice-bridge |
 | Keywords           | matrix-org |
-| # releases         | 19 |
-| # dependents       | 6 |
-| # downloads        | 13138 |
-| # stars            | 0 |
+| # releases         | 31 |
+| # dependents       | 0.0 |
+| # downloads        | 2603.6666666666665 |
+| # stars            | 120.0 |
 
 ## Links
 - [Homepage](https://github.com/matrix-org/matrix-appservice-bridge#readme)
@@ -24,7 +24,7 @@ Bridging infrastructure for Matrix Application Services
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,19 +1,35 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Enumeration
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IMapView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains updated properties for a DeviceInformation object. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceInformationUpdate")
-@js.native
-abstract class DeviceInformationUpdate () extends js.Object {
+trait DeviceInformationUpdate extends StObject {
+  
   /** The DeviceInformation ID of the updated device. */
-  var id: String = js.native
+  var id: String
+  
   /** Gets the type of device for the updated device. */
-  var kind: DeviceInformationKind = js.native
+  var kind: DeviceInformationKind
+  
   /** The changed properties in a update to a DeviceInformation object. */
-  var properties: IMapView[String, _] = js.native
+  var properties: IMapView[String, Any]
 }
-
+object DeviceInformationUpdate {
+  
+  inline def apply(id: String, kind: DeviceInformationKind, properties: IMapView[String, Any]): DeviceInformationUpdate = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeviceInformationUpdate]
+  }
+  
+  extension [Self <: DeviceInformationUpdate](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setKind(value: DeviceInformationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: IMapView[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,44 +1,20 @@
 package typingsJapgolly.hapiHapi.mod
 
-import typingsJapgolly.hapiHapi.AnonEtag
-import typingsJapgolly.hapiHapi.ReadonlyRequest
+import typingsJapgolly.hapiHapi.anon.Etag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponseToolkit extends js.Object {
+trait ResponseToolkit extends StObject {
+  
   /**
     * A response symbol. When returned by a lifecycle method, the request lifecycle skips to the finalizing step
     * without further interaction with the node response stream. It is the developer's responsibility to write
     * and end the response directly via [request.raw.res](https://github.com/hapijs/hapi/blob/master/API.md#request.raw).
     */
   val abandon: js.Symbol = js.native
-  /**
-    * A response symbol. When returned by a lifecycle method, the request lifecycle skips to the finalizing step after
-    * calling request.raw.res.end()) to close the the node response stream.
-    */
-  val close: js.Symbol = js.native
-  /**
-    * A response symbol. Provides access to the route or server context set via the route [bind](https://github.com/hapijs/hapi/blob/master/API.md#route.options.bind)
-    * option or [server.bind()](https://github.com/hapijs/hapi/blob/master/API.md#server.bind()).
-    */
-  val context: js.Any = js.native
-  /**
-    * A response symbol. When returned by a lifecycle method, the request lifecycle continues without changing the response.
-    */
-  val continue: js.Symbol = js.native
-  /**
-    * The [server realm](https://github.com/hapijs/hapi/blob/master/API.md#server.realm) associated with the matching
-    * route. Defaults to the root server realm in the onRequest step.
-    */
-  val realm: ServerRealm = js.native
-  /**
-    * Access: read only and public request interface.
-    * The [request] object. This is a duplication of the request lifecycle method argument used by
-    * [toolkit decorations](https://github.com/hapijs/hapi/blob/master/API.md#server.decorate()) to access the current request.
-    */
-  val request: ReadonlyRequest = js.native
+  
   /**
     * Used by the [authentication] method to pass back valid credentials where:
     * @param data - an object with:
@@ -47,6 +23,24 @@ trait ResponseToolkit extends js.Object {
     * @return Return value: an internal authentication object.
     */
   def authenticated(data: AuthenticationData): Auth = js.native
+  
+  /**
+    * A response symbol. When returned by a lifecycle method, the request lifecycle skips to the finalizing step after
+    * calling request.raw.res.end()) to close the the node response stream.
+    */
+  val close: js.Symbol = js.native
+  
+  /**
+    * A response symbol. Provides access to the route or server context set via the route [bind](https://github.com/hapijs/hapi/blob/master/API.md#route.options.bind)
+    * option or [server.bind()](https://github.com/hapijs/hapi/blob/master/API.md#server.bind()).
+    */
+  val context: Any = js.native
+  
+  /**
+    * A response symbol. When returned by a lifecycle method, the request lifecycle continues without changing the response.
+    */
+  val continue: js.Symbol = js.native
+  
   /**
     * Sets the response 'ETag' and 'Last-Modified' headers and checks for any conditional request headers to decide if
     * the response is going to qualify for an HTTP 304 (Not Modified). If the entity values match the request
@@ -63,7 +57,14 @@ trait ResponseToolkit extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-hentityoptions)
     */
   def entity(): js.UndefOr[ResponseObject] = js.native
-  def entity(options: AnonEtag): js.UndefOr[ResponseObject] = js.native
+  def entity(options: Etag): js.UndefOr[ResponseObject] = js.native
+  
+  /**
+    * The [server realm](https://github.com/hapijs/hapi/blob/master/API.md#server.realm) associated with the matching
+    * route. Defaults to the root server realm in the onRequest step.
+    */
+  val realm: ServerRealm = js.native
+  
   /**
     * Redirects the client to the specified uri. Same as calling h.response().redirect(uri).
     * @param url
@@ -72,6 +73,14 @@ trait ResponseToolkit extends js.Object {
     */
   def redirect(): ResponseObject = js.native
   def redirect(uri: String): ResponseObject = js.native
+  
+  /**
+    * Access: read only and public request interface.
+    * The [request] object. This is a duplication of the request lifecycle method argument used by
+    * [toolkit decorations](https://github.com/hapijs/hapi/blob/master/API.md#server.decorate()) to access the current request.
+    */
+  val request: Request = js.native
+  
   /**
     * Wraps the provided value and returns a response object which allows customizing the response
     * (e.g. setting the HTTP status code, custom headers, etc.), where:
@@ -81,6 +90,7 @@ trait ResponseToolkit extends js.Object {
     */
   def response(): ResponseObject = js.native
   def response(value: ResponseValue): ResponseObject = js.native
+  
   /**
     * Sets a response cookie using the same arguments as response.state().
     * @param name of the cookie
@@ -93,6 +103,7 @@ trait ResponseToolkit extends js.Object {
   def state(name: String, value: String, options: ServerStateCookieOptions): Unit = js.native
   def state(name: String, value: js.Object): Unit = js.native
   def state(name: String, value: js.Object, options: ServerStateCookieOptions): Unit = js.native
+  
   /**
     * Used by the [authentication] method to indicate authentication failed and pass back the credentials received where:
     * @param error - (required) the authentication error.
@@ -106,8 +117,9 @@ trait ResponseToolkit extends js.Object {
     * There is no difference between throwing the error or passing it with the h.unauthenticated() method is no credentials are passed, but it might still be helpful for code clarity.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-hunauthenticatederror-data)
     */
-  def unauthenticated(error: js.Error): Unit = js.native
-  def unauthenticated(error: js.Error, data: AuthenticationData): Unit = js.native
+  def unauthenticated(error: js.Error): Auth = js.native
+  def unauthenticated(error: js.Error, data: AuthenticationData): Auth = js.native
+  
   /**
     * Clears a response cookie using the same arguments as
     * @param name of the cookie
@@ -118,4 +130,3 @@ trait ResponseToolkit extends js.Object {
   def unstate(name: String): Unit = js.native
   def unstate(name: String, options: ServerStateCookieOptions): Unit = js.native
 }
-

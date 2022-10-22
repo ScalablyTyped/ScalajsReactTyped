@@ -1,10 +1,9 @@
 package typingsJapgolly.officeJsPreview
 
 import typingsJapgolly.officeJsPreview.OfficeExtension.ClientRequestContext
-import typingsJapgolly.officeJsPreview.OfficeExtension.RequestUrlAndHeaderInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////////////////////////////////////////////////
 ///////////////// End OfficeExtension runtime //////////////////
@@ -13,15 +12,7 @@ import scala.scalajs.js.annotation._
 ////////////////////////////////////////////////////////////////
 ////////////////////// Begin OfficeCore ////////////////////////
 ////////////////////////////////////////////////////////////////
-@JSGlobal("OfficeCore")
-@js.native
-object OfficeCore extends js.Object {
-  @js.native
-  class RequestContext () extends ClientRequestContext {
-    def this(url: String) = this()
-    def this(url: js.Any) = this()
-    def this(url: RequestUrlAndHeaderInfo) = this()
-  }
+object OfficeCore {
   
+  type RequestContext = ClientRequestContext
 }
-

@@ -1,46 +1,59 @@
 package typingsJapgolly.stormReactDiagrams.mod
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("storm-react-diagrams", "Toolkit")
 @js.native
-class Toolkit ()
-  extends typingsJapgolly.stormReactDiagrams.toolkitMod.Toolkit
-
+open class Toolkit ()
+  extends typingsJapgolly.stormReactDiagrams.distSrcToolkitMod.Toolkit
 /* static members */
-@JSImport("storm-react-diagrams", "Toolkit")
-@js.native
-object Toolkit extends js.Object {
-  var TESTING: Boolean = js.native
-  var TESTING_UID: Double = js.native
+object Toolkit {
+  
+  @JSImport("storm-react-diagrams", "Toolkit")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("storm-react-diagrams", "Toolkit.TESTING")
+  @js.native
+  def TESTING: Boolean = js.native
+  inline def TESTING_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TESTING")(x.asInstanceOf[js.Any])
+  
+  @JSImport("storm-react-diagrams", "Toolkit.TESTING_UID")
+  @js.native
+  def TESTING_UID: Double = js.native
+  inline def TESTING_UID_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TESTING_UID")(x.asInstanceOf[js.Any])
+  
   /**
     * Generats a unique ID (thanks Stack overflow :3)
     * @returns {String}
     */
-  def UID(): String = js.native
+  inline def UID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UID")().asInstanceOf[String]
+  
   /**
     * Finds the closest element as a polyfill
     *
     * @param  {Element} element  [description]
     * @param  {string}  selector [description]
     */
-  def closest(element: Element, selector: String): js.Any = js.native
-  def generateCurvePath(
-    firstPoint: typingsJapgolly.stormReactDiagrams.pointModelMod.PointModel,
-    lastPoint: typingsJapgolly.stormReactDiagrams.pointModelMod.PointModel
-  ): String = js.native
-  def generateCurvePath(
-    firstPoint: typingsJapgolly.stormReactDiagrams.pointModelMod.PointModel,
-    lastPoint: typingsJapgolly.stormReactDiagrams.pointModelMod.PointModel,
+  inline def closest(element: Element, selector: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def generateCurvePath(
+    firstPoint: typingsJapgolly.stormReactDiagrams.distSrcModelsPointModelMod.PointModel,
+    lastPoint: typingsJapgolly.stormReactDiagrams.distSrcModelsPointModelMod.PointModel
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCurvePath")(firstPoint.asInstanceOf[js.Any], lastPoint.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generateCurvePath(
+    firstPoint: typingsJapgolly.stormReactDiagrams.distSrcModelsPointModelMod.PointModel,
+    lastPoint: typingsJapgolly.stormReactDiagrams.distSrcModelsPointModelMod.PointModel,
     curvy: Double
-  ): String = js.native
-  def generateDynamicPath(pathCoords: js.Array[js.Array[Double]]): js.Any = js.native
-  def generateLinePath(
-    firstPoint: typingsJapgolly.stormReactDiagrams.pointModelMod.PointModel,
-    lastPoint: typingsJapgolly.stormReactDiagrams.pointModelMod.PointModel
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCurvePath")(firstPoint.asInstanceOf[js.Any], lastPoint.asInstanceOf[js.Any], curvy.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def generateDynamicPath(pathCoords: js.Array[js.Array[Double]]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateDynamicPath")(pathCoords.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def generateLinePath(
+    firstPoint: typingsJapgolly.stormReactDiagrams.distSrcModelsPointModelMod.PointModel,
+    lastPoint: typingsJapgolly.stormReactDiagrams.distSrcModelsPointModelMod.PointModel
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateLinePath")(firstPoint.asInstanceOf[js.Any], lastPoint.asInstanceOf[js.Any])).asInstanceOf[String]
 }
-

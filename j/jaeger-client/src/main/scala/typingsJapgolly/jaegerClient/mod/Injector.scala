@@ -2,20 +2,23 @@ package typingsJapgolly.jaegerClient.mod
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.opentracing.mod.SpanContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Injector extends js.Object {
-  def inject(spanContext: SpanContext, carrier: js.Any): Unit
+trait Injector extends StObject {
+  
+  def inject(spanContext: SpanContext, carrier: Any): Unit
 }
-
 object Injector {
-  @scala.inline
-  def apply(inject: (SpanContext, js.Any) => Callback): Injector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inject")(js.Any.fromFunction2((t0: typingsJapgolly.opentracing.mod.SpanContext, t1: js.Any) => inject(t0, t1).runNow()))
+  
+  inline def apply(inject: (SpanContext, Any) => Callback): Injector = {
+    val __obj = js.Dynamic.literal(inject = js.Any.fromFunction2((t0: SpanContext, t1: Any) => (inject(t0, t1)).runNow()))
     __obj.asInstanceOf[Injector]
   }
+  
+  extension [Self <: Injector](x: Self) {
+    
+    inline def setInject(value: (SpanContext, Any) => Callback): Self = StObject.set(x, "inject", js.Any.fromFunction2((t0: SpanContext, t1: Any) => (value(t0, t1)).runNow()))
+  }
 }
-

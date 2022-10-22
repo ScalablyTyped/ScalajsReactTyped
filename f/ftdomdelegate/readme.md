@@ -3,16 +3,16 @@
 
 
 ## Library description:
-Create and manage a DOM event delegator.
+FT's dom delegate library is a library for creating and binding to events on all target elements matching the given selector.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ftdomdelegate |
-| Keywords           | origami, component, ft |
-| # releases         | 9 |
-| # dependents       | 13 |
-| # downloads        | 32653 |
-| # stars            | 0 |
+| Keywords           | delegate, dom, events, listener |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 33243.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/ftdomdelegate)

@@ -1,42 +1,56 @@
 package typingsJapgolly.mendixmodelsdk.mod.expressions
 
-import typingsJapgolly.mendixmodelsdk.expressionsMod.StructureVersionInfo
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcGenExpressionsMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interfaces and instance classes for types from the Mendix sub meta model `Expressions`.
   */
 /**
-  * See: {@link https://docs.mendix.com/refguide7/microflow-expressions relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide9/expressions relevant section in reference guide}
   *
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *
+  * @ignore
+  *
+  * In version 9.8.0: deleted
   * In version 7.9.0: introduced
   */
-@JSImport("mendixmodelsdk", "expressions.Expression")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "expressions.Expression")
 @js.native
-abstract class Expression protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.expressions.Expression {
+open class Expression protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.expressions.Expression {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "expressions.Expression")
-@js.native
-object Expression extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object Expression {
+  
+  @JSImport("mendixmodelsdk", "expressions.Expression")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.Expression.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.Expression.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

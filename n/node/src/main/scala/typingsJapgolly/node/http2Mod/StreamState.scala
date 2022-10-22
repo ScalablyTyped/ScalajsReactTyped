@@ -1,36 +1,54 @@
 package typingsJapgolly.node.http2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StreamState extends js.Object {
+trait StreamState extends StObject {
+  
   var localClose: js.UndefOr[Double] = js.undefined
+  
   var localWindowSize: js.UndefOr[Double] = js.undefined
+  
   var remoteClose: js.UndefOr[Double] = js.undefined
+  
   var state: js.UndefOr[Double] = js.undefined
+  
   var sumDependencyWeight: js.UndefOr[Double] = js.undefined
+  
   var weight: js.UndefOr[Double] = js.undefined
 }
-
 object StreamState {
-  @scala.inline
-  def apply(
-    localClose: Int | Double = null,
-    localWindowSize: Int | Double = null,
-    remoteClose: Int | Double = null,
-    state: Int | Double = null,
-    sumDependencyWeight: Int | Double = null,
-    weight: Int | Double = null
-  ): StreamState = {
+  
+  inline def apply(): StreamState = {
     val __obj = js.Dynamic.literal()
-    if (localClose != null) __obj.updateDynamic("localClose")(localClose.asInstanceOf[js.Any])
-    if (localWindowSize != null) __obj.updateDynamic("localWindowSize")(localWindowSize.asInstanceOf[js.Any])
-    if (remoteClose != null) __obj.updateDynamic("remoteClose")(remoteClose.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (sumDependencyWeight != null) __obj.updateDynamic("sumDependencyWeight")(sumDependencyWeight.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamState]
   }
+  
+  extension [Self <: StreamState](x: Self) {
+    
+    inline def setLocalClose(value: Double): Self = StObject.set(x, "localClose", value.asInstanceOf[js.Any])
+    
+    inline def setLocalCloseUndefined: Self = StObject.set(x, "localClose", js.undefined)
+    
+    inline def setLocalWindowSize(value: Double): Self = StObject.set(x, "localWindowSize", value.asInstanceOf[js.Any])
+    
+    inline def setLocalWindowSizeUndefined: Self = StObject.set(x, "localWindowSize", js.undefined)
+    
+    inline def setRemoteClose(value: Double): Self = StObject.set(x, "remoteClose", value.asInstanceOf[js.Any])
+    
+    inline def setRemoteCloseUndefined: Self = StObject.set(x, "remoteClose", js.undefined)
+    
+    inline def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setSumDependencyWeight(value: Double): Self = StObject.set(x, "sumDependencyWeight", value.asInstanceOf[js.Any])
+    
+    inline def setSumDependencyWeightUndefined: Self = StObject.set(x, "sumDependencyWeight", js.undefined)
+    
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

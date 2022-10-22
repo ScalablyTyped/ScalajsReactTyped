@@ -2,57 +2,71 @@ package typingsJapgolly.slickgrid.Slick
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RowMetadata[T] extends js.Object {
+trait RowMetadata[T /* <: SlickData */] extends StObject {
+  
   /**
-  		 * Metadata related to individual columns
-  		 */
+    * Metadata related to individual columns
+    */
   var columns: js.UndefOr[
     (/**
-  			 * Metadata indexed by column id
-  			 */
-  StringDictionary[ColumnMetadata[T]]) with (/**
-  			 * Metadata indexed by column index
-  			 */
+    * Metadata indexed by column id
+    */
+  StringDictionary[ColumnMetadata[T]]) & (/**
+    * Metadata indexed by column index
+    */
   NumberDictionary[ColumnMetadata[T]])
   ] = js.undefined
+  
   /**
-  		 * One or more (space-separated) CSS classes to be added to the entire row.
-  		 */
+    * One or more (space-separated) CSS classes to be added to the entire row.
+    */
   var cssClasses: js.UndefOr[String] = js.undefined
+  
   /**
-  		 * Whether or not any cells in the row can be set as "active".
-  		 */
+    * Whether or not any cells in the row can be set as "active".
+    */
   var focusable: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		 * Whether or not a row or any cells in it can be selected.
-  		 */
+    * Whether or not a row or any cells in it can be selected.
+    */
   var selectable: js.UndefOr[Boolean] = js.undefined
 }
-
 object RowMetadata {
-  @scala.inline
-  def apply[T](
-    columns: (/**
-  			 * Metadata indexed by column id
-  			 */
-  StringDictionary[ColumnMetadata[T]]) with (/**
-  			 * Metadata indexed by column index
-  			 */
-  NumberDictionary[ColumnMetadata[T]]) = null,
-    cssClasses: String = null,
-    focusable: js.UndefOr[Boolean] = js.undefined,
-    selectable: js.UndefOr[Boolean] = js.undefined
-  ): RowMetadata[T] = {
+  
+  inline def apply[T /* <: SlickData */](): RowMetadata[T] = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (cssClasses != null) __obj.updateDynamic("cssClasses")(cssClasses.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowMetadata[T]]
   }
+  
+  extension [Self <: RowMetadata[?], T /* <: SlickData */](x: Self & RowMetadata[T]) {
+    
+    inline def setColumns(
+      value: (/**
+      * Metadata indexed by column id
+      */
+    StringDictionary[ColumnMetadata[T]]) & (/**
+      * Metadata indexed by column index
+      */
+    NumberDictionary[ColumnMetadata[T]])
+    ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setCssClasses(value: String): Self = StObject.set(x, "cssClasses", value.asInstanceOf[js.Any])
+    
+    inline def setCssClassesUndefined: Self = StObject.set(x, "cssClasses", js.undefined)
+    
+    inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+    
+    inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
+    
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+  }
 }
-

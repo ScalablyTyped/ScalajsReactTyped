@@ -2,33 +2,74 @@ package typingsJapgolly.sheetify
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.std.TemplateStringsArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sheetify", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(src: String): String = js.native
-  def apply(src: String, filename: String): String = js.native
-  def apply(src: String, filename: String, options: StringDictionary[js.Any]): String = js.native
-  def apply(
+object mod {
+  
+  inline def apply(src: String): String = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(src: String, filename: String): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(src: String, filename: String, options: StringDictionary[Any]): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(
     src: String,
     filename: String,
-    options: StringDictionary[js.Any],
+    options: StringDictionary[Any],
     done: js.Function3[/* err */ js.Error, /* css */ String, /* prefix */ String, Unit]
-  ): String = js.native
-  def apply(src: String, options: StringDictionary[js.Any]): Unit = js.native
-  def apply(src: TemplateStringsArray): String = js.native
-  def apply(src: TemplateStringsArray, filename: String): String = js.native
-  def apply(src: TemplateStringsArray, filename: String, options: StringDictionary[js.Any]): String = js.native
-  def apply(
+  ): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(
+    src: String,
+    filename: String,
+    options: Unit,
+    done: js.Function3[/* err */ js.Error, /* css */ String, /* prefix */ String, Unit]
+  ): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(src: String, filename: Unit, options: StringDictionary[Any]): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(
+    src: String,
+    filename: Unit,
+    options: StringDictionary[Any],
+    done: js.Function3[/* err */ js.Error, /* css */ String, /* prefix */ String, Unit]
+  ): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(
+    src: String,
+    filename: Unit,
+    options: Unit,
+    done: js.Function3[/* err */ js.Error, /* css */ String, /* prefix */ String, Unit]
+  ): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(src: String, options: StringDictionary[Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(src: TemplateStringsArray): String = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(src: TemplateStringsArray, filename: String): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(src: TemplateStringsArray, filename: String, options: StringDictionary[Any]): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(
     src: TemplateStringsArray,
     filename: String,
-    options: StringDictionary[js.Any],
+    options: StringDictionary[Any],
     done: js.Function3[/* err */ js.Error, /* css */ String, /* prefix */ String, Unit]
-  ): String = js.native
-  def apply(src: TemplateStringsArray, options: StringDictionary[js.Any]): Unit = js.native
-  def getPrefix(css: String): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(
+    src: TemplateStringsArray,
+    filename: String,
+    options: Unit,
+    done: js.Function3[/* err */ js.Error, /* css */ String, /* prefix */ String, Unit]
+  ): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(src: TemplateStringsArray, filename: Unit, options: StringDictionary[Any]): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(
+    src: TemplateStringsArray,
+    filename: Unit,
+    options: StringDictionary[Any],
+    done: js.Function3[/* err */ js.Error, /* css */ String, /* prefix */ String, Unit]
+  ): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(
+    src: TemplateStringsArray,
+    filename: Unit,
+    options: Unit,
+    done: js.Function3[/* err */ js.Error, /* css */ String, /* prefix */ String, Unit]
+  ): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(src: TemplateStringsArray, options: StringDictionary[Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("sheetify", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getPrefix(css: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefix")(css.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

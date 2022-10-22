@@ -1,60 +1,112 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ItemActivityStat extends Entity {
+trait ItemActivityStat
+  extends StObject
+     with Entity {
+  
   // Statistics about the access actions in this interval. Read-only.
-  var access: js.UndefOr[ItemActionStat] = js.undefined
+  var access: js.UndefOr[NullableOption[ItemActionStat]] = js.undefined
+  
   // Exposes the itemActivities represented in this itemActivityStat resource.
-  var activities: js.UndefOr[js.Array[ItemActivity]] = js.undefined
+  var activities: js.UndefOr[NullableOption[js.Array[ItemActivity]]] = js.undefined
+  
   // Statistics about the create actions in this interval. Read-only.
-  var create: js.UndefOr[ItemActionStat] = js.undefined
+  var create: js.UndefOr[NullableOption[ItemActionStat]] = js.undefined
+  
   // Statistics about the delete actions in this interval. Read-only.
-  var delete: js.UndefOr[ItemActionStat] = js.undefined
+  var delete: js.UndefOr[NullableOption[ItemActionStat]] = js.undefined
+  
   // Statistics about the edit actions in this interval. Read-only.
-  var edit: js.UndefOr[ItemActionStat] = js.undefined
+  var edit: js.UndefOr[NullableOption[ItemActionStat]] = js.undefined
+  
   // When the interval ends. Read-only.
-  var endDateTime: js.UndefOr[String] = js.undefined
+  var endDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Indicates that the statistics in this interval are based on incomplete data. Read-only.
-  var incompleteData: js.UndefOr[IncompleteData] = js.undefined
+  var incompleteData: js.UndefOr[NullableOption[IncompleteData]] = js.undefined
+  
   // Indicates whether the item is 'trending.' Read-only.
-  var isTrending: js.UndefOr[Boolean] = js.undefined
+  var isTrending: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // Statistics about the move actions in this interval. Read-only.
-  var move: js.UndefOr[ItemActionStat] = js.undefined
+  var move: js.UndefOr[NullableOption[ItemActionStat]] = js.undefined
+  
   // When the interval starts. Read-only.
-  var startDateTime: js.UndefOr[String] = js.undefined
+  var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ItemActivityStat {
-  @scala.inline
-  def apply(
-    access: ItemActionStat = null,
-    activities: js.Array[ItemActivity] = null,
-    create: ItemActionStat = null,
-    delete: ItemActionStat = null,
-    edit: ItemActionStat = null,
-    endDateTime: String = null,
-    id: String = null,
-    incompleteData: IncompleteData = null,
-    isTrending: js.UndefOr[Boolean] = js.undefined,
-    move: ItemActionStat = null,
-    startDateTime: String = null
-  ): ItemActivityStat = {
+  
+  inline def apply(): ItemActivityStat = {
     val __obj = js.Dynamic.literal()
-    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (activities != null) __obj.updateDynamic("activities")(activities.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
-    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
-    if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
-    if (endDateTime != null) __obj.updateDynamic("endDateTime")(endDateTime.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (incompleteData != null) __obj.updateDynamic("incompleteData")(incompleteData.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTrending)) __obj.updateDynamic("isTrending")(isTrending.asInstanceOf[js.Any])
-    if (move != null) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
-    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemActivityStat]
   }
+  
+  extension [Self <: ItemActivityStat](x: Self) {
+    
+    inline def setAccess(value: NullableOption[ItemActionStat]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    
+    inline def setAccessNull: Self = StObject.set(x, "access", null)
+    
+    inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+    
+    inline def setActivities(value: NullableOption[js.Array[ItemActivity]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+    
+    inline def setActivitiesNull: Self = StObject.set(x, "activities", null)
+    
+    inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
+    
+    inline def setActivitiesVarargs(value: ItemActivity*): Self = StObject.set(x, "activities", js.Array(value*))
+    
+    inline def setCreate(value: NullableOption[ItemActionStat]): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    
+    inline def setCreateNull: Self = StObject.set(x, "create", null)
+    
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    
+    inline def setDelete(value: NullableOption[ItemActionStat]): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteNull: Self = StObject.set(x, "delete", null)
+    
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    
+    inline def setEdit(value: NullableOption[ItemActionStat]): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    
+    inline def setEditNull: Self = StObject.set(x, "edit", null)
+    
+    inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    
+    inline def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
+    
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
+    
+    inline def setIncompleteData(value: NullableOption[IncompleteData]): Self = StObject.set(x, "incompleteData", value.asInstanceOf[js.Any])
+    
+    inline def setIncompleteDataNull: Self = StObject.set(x, "incompleteData", null)
+    
+    inline def setIncompleteDataUndefined: Self = StObject.set(x, "incompleteData", js.undefined)
+    
+    inline def setIsTrending(value: NullableOption[Boolean]): Self = StObject.set(x, "isTrending", value.asInstanceOf[js.Any])
+    
+    inline def setIsTrendingNull: Self = StObject.set(x, "isTrending", null)
+    
+    inline def setIsTrendingUndefined: Self = StObject.set(x, "isTrending", js.undefined)
+    
+    inline def setMove(value: NullableOption[ItemActionStat]): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+    
+    inline def setMoveNull: Self = StObject.set(x, "move", null)
+    
+    inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+    
+    inline def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
+    
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+  }
 }
-

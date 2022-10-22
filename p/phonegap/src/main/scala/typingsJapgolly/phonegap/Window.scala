@@ -1,26 +1,31 @@
 package typingsJapgolly.phonegap
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Window extends js.Object {
-  var requestFileSystem: js.Any
+trait Window extends StObject {
+  
   def openDatabase(
     database_name: String,
     database_version: String,
     database_displayname: String,
     database_size: Double
   ): Database
+  
+  var requestFileSystem: Any
 }
-
 object Window {
-  @scala.inline
-  def apply(openDatabase: (String, String, String, Double) => CallbackTo[Database], requestFileSystem: js.Any): Window = {
-    val __obj = js.Dynamic.literal(requestFileSystem = requestFileSystem.asInstanceOf[js.Any])
-    __obj.updateDynamic("openDatabase")(js.Any.fromFunction4((t0: java.lang.String, t1: java.lang.String, t2: java.lang.String, t3: scala.Double) => openDatabase(t0, t1, t2, t3).runNow()))
+  
+  inline def apply(openDatabase: (String, String, String, Double) => Database, requestFileSystem: Any): Window = {
+    val __obj = js.Dynamic.literal(openDatabase = js.Any.fromFunction4(openDatabase), requestFileSystem = requestFileSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
+  
+  extension [Self <: Window](x: Self) {
+    
+    inline def setOpenDatabase(value: (String, String, String, Double) => Database): Self = StObject.set(x, "openDatabase", js.Any.fromFunction4(value))
+    
+    inline def setRequestFileSystem(value: Any): Self = StObject.set(x, "requestFileSystem", value.asInstanceOf[js.Any])
+  }
 }
-

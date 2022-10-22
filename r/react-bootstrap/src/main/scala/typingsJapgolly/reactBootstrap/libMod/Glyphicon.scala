@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.libMod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.glyphiconMod.GlyphiconProps
+import typingsJapgolly.reactBootstrap.libGlyphiconMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "Glyphicon")
 @js.native
-class Glyphicon ()
-  extends Component[GlyphiconProps, js.Object, js.Any]
-
+open class Glyphicon () extends ^

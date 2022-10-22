@@ -1,46 +1,73 @@
 package typingsJapgolly.terminalKit.terminalMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SingleLineMenuOptions extends js.Object {
+trait SingleLineMenuOptions extends StObject {
+  
   var cancelable: js.UndefOr[Boolean] = js.undefined
+  
   var exitOnUnexpectedKey: js.UndefOr[Boolean] = js.undefined
+  
   var keyBindings: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var nextPageHint: js.UndefOr[String] = js.undefined
+  
   var previousPageHint: js.UndefOr[String] = js.undefined
+  
   var selectedStyle: js.UndefOr[CTerminal] = js.undefined
+  
   var separator: js.UndefOr[String] = js.undefined
+  
   var style: js.UndefOr[CTerminal] = js.undefined
+  
   var y: js.UndefOr[Double] = js.undefined
 }
-
 object SingleLineMenuOptions {
-  @scala.inline
-  def apply(
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    exitOnUnexpectedKey: js.UndefOr[Boolean] = js.undefined,
-    keyBindings: StringDictionary[String] = null,
-    nextPageHint: String = null,
-    previousPageHint: String = null,
-    selectedStyle: CTerminal = null,
-    separator: String = null,
-    style: CTerminal = null,
-    y: Int | Double = null
-  ): SingleLineMenuOptions = {
+  
+  inline def apply(): SingleLineMenuOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitOnUnexpectedKey)) __obj.updateDynamic("exitOnUnexpectedKey")(exitOnUnexpectedKey.asInstanceOf[js.Any])
-    if (keyBindings != null) __obj.updateDynamic("keyBindings")(keyBindings.asInstanceOf[js.Any])
-    if (nextPageHint != null) __obj.updateDynamic("nextPageHint")(nextPageHint.asInstanceOf[js.Any])
-    if (previousPageHint != null) __obj.updateDynamic("previousPageHint")(previousPageHint.asInstanceOf[js.Any])
-    if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleLineMenuOptions]
   }
+  
+  extension [Self <: SingleLineMenuOptions](x: Self) {
+    
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    
+    inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+    
+    inline def setExitOnUnexpectedKey(value: Boolean): Self = StObject.set(x, "exitOnUnexpectedKey", value.asInstanceOf[js.Any])
+    
+    inline def setExitOnUnexpectedKeyUndefined: Self = StObject.set(x, "exitOnUnexpectedKey", js.undefined)
+    
+    inline def setKeyBindings(value: StringDictionary[String]): Self = StObject.set(x, "keyBindings", value.asInstanceOf[js.Any])
+    
+    inline def setKeyBindingsUndefined: Self = StObject.set(x, "keyBindings", js.undefined)
+    
+    inline def setNextPageHint(value: String): Self = StObject.set(x, "nextPageHint", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageHintUndefined: Self = StObject.set(x, "nextPageHint", js.undefined)
+    
+    inline def setPreviousPageHint(value: String): Self = StObject.set(x, "previousPageHint", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousPageHintUndefined: Self = StObject.set(x, "previousPageHint", js.undefined)
+    
+    inline def setSelectedStyle(value: CTerminal): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
+    
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    
+    inline def setStyle(value: CTerminal): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

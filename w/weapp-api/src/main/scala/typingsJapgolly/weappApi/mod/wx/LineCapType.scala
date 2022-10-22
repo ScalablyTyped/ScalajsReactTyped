@@ -1,24 +1,20 @@
 package typingsJapgolly.weappApi.mod.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.weappApi.weappApiStrings.butt
   - typingsJapgolly.weappApi.weappApiStrings.round
   - typingsJapgolly.weappApi.weappApiStrings.square
 */
-trait LineCapType extends js.Object
-
+trait LineCapType extends StObject
 object LineCapType {
-  @scala.inline
-  def butt: typingsJapgolly.weappApi.weappApiStrings.butt = this.cast("butt")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def round: typingsJapgolly.weappApi.weappApiStrings.round = this.cast("round")
-  @scala.inline
-  def square: typingsJapgolly.weappApi.weappApiStrings.square = this.cast("square")
+  
+  inline def butt: typingsJapgolly.weappApi.weappApiStrings.butt = "butt".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.butt]
+  
+  inline def round: typingsJapgolly.weappApi.weappApiStrings.round = "round".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.round]
+  
+  inline def square: typingsJapgolly.weappApi.weappApiStrings.square = "square".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.square]
 }
-

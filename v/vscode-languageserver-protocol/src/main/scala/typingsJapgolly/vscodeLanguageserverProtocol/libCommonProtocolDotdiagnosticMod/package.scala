@@ -1,0 +1,10 @@
+package typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolDotdiagnosticMod
+
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.StaticRegistrationOptions
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentRegistrationOptions
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+
+type DiagnosticRegistrationOptions = TextDocumentRegistrationOptions & DiagnosticOptions & StaticRegistrationOptions

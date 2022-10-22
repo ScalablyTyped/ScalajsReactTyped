@@ -1,32 +1,35 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait UsingForDeclaration
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
+  
   var libraryName: String
+  
   var typeName: TypeName
+  
   @JSName("type")
   var type_UsingForDeclaration: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.UsingForDeclaration
 }
-
 object UsingForDeclaration {
-  @scala.inline
-  def apply(
-    libraryName: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.UsingForDeclaration,
-    typeName: TypeName,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): UsingForDeclaration = {
+  
+  inline def apply(libraryName: String, typeName: TypeName): UsingForDeclaration = {
     val __obj = js.Dynamic.literal(libraryName = libraryName.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UsingForDeclaration")
     __obj.asInstanceOf[UsingForDeclaration]
   }
+  
+  extension [Self <: UsingForDeclaration](x: Self) {
+    
+    inline def setLibraryName(value: String): Self = StObject.set(x, "libraryName", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.UsingForDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeName(value: TypeName): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
+  }
 }
-

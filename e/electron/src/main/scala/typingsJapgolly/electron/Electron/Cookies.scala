@@ -6,13 +6,14 @@ import typingsJapgolly.electron.electronStrings.evicted
 import typingsJapgolly.electron.electronStrings.expired
 import typingsJapgolly.electron.electronStrings.explicit
 import typingsJapgolly.electron.electronStrings.overwrite
+import typingsJapgolly.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Electron.Cookies")
 @js.native
-class Cookies () extends EventEmitter {
+trait Cookies extends EventEmitter {
+  
   def addListener(
     event: changed,
     listener: js.Function4[
@@ -23,25 +24,23 @@ class Cookies () extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
+  
   /**
+    * A promise which resolves when the cookie store has been flushed
+    *
     * Writes any unwritten cookies data to disk.
     */
   def flushStore(): js.Promise[Unit] = js.native
+  
   /**
-    * Writes any unwritten cookies data to disk. Deprecated Soon
+    * A promise which resolves an array of cookie objects.
+    *
+    * Sends a request to get all cookies matching `filter`, and resolves a promise
+    * with the response.
     */
-  def flushStore(callback: js.Function): Unit = js.native
-  /**
-    * Sends a request to get all cookies matching filter, and resolves a promise with
-    * the response.
-    */
-  def get(filter: Filter): js.Promise[js.Array[Cookie]] = js.native
-  /**
-    * Sends a request to get all cookies matching filter, callback will be called with
-    * callback(error, cookies) on complete. Deprecated Soon
-    */
-  def get(filter: Filter, callback: js.Function2[/* error */ js.Error, /* cookies */ js.Array[Cookie], Unit]): Unit = js.native
-  // Docs: http://electronjs.org/docs/api/cookies
+  def get(filter: CookiesGetFilter): js.Promise[js.Array[Cookie]] = js.native
+  
+  // Docs: https://electronjs.org/docs/api/cookies
   /**
     * Emitted when a cookie is changed because it was added, edited, removed, or
     * expired.
@@ -56,6 +55,7 @@ class Cookies () extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
+  
   def once(
     event: changed,
     listener: js.Function4[
@@ -66,15 +66,14 @@ class Cookies () extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
+  
   /**
-    * Removes the cookies matching url and name
+    * A promise which resolves when the cookie has been removed
+    *
+    * Removes the cookies matching `url` and `name`
     */
   def remove(url: String, name: String): js.Promise[Unit] = js.native
-  /**
-    * Removes the cookies matching url and name, callback will called with callback()
-    * on complete. Deprecated Soon
-    */
-  def remove(url: String, name: String, callback: js.Function): Unit = js.native
+  
   def removeListener(
     event: changed,
     listener: js.Function4[
@@ -85,14 +84,11 @@ class Cookies () extends EventEmitter {
       Unit
     ]
   ): this.type = js.native
+  
   /**
-    * Sets a cookie with details.
+    * A promise which resolves when the cookie has been set
+    *
+    * Sets a cookie with `details`.
     */
-  def set(details: Details): js.Promise[Unit] = js.native
-  /**
-    * Sets a cookie with details, callback will be called with callback(error) on
-    * complete. Deprecated Soon
-    */
-  def set(details: Details, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
+  def set(details: CookiesSetDetails): js.Promise[Unit] = js.native
 }
-

@@ -1,91 +1,140 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
-import japgolly.scalajs.react.Callback
-import typingsJapgolly.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Resizable //////////////////////////////////////////////////
-trait ResizableOptions extends ResizableEvents {
-  var alsoResize: js.UndefOr[js.Any] = js.undefined
-   // Selector, JQuery or Element
+trait ResizableOptions
+  extends StObject
+     with ResizableEvents {
+  
+  var alsoResize: js.UndefOr[Any] = js.undefined
+  
+  // Selector, JQuery or Element
   var animate: js.UndefOr[Boolean] = js.undefined
-  var animateDuration: js.UndefOr[js.Any] = js.undefined
-   // number or string
+  
+  var animateDuration: js.UndefOr[Any] = js.undefined
+  
+  // number or string
   var animateEasing: js.UndefOr[String] = js.undefined
-  var aspectRatio: js.UndefOr[js.Any] = js.undefined
-   // boolean or number
+  
+  var aspectRatio: js.UndefOr[Any] = js.undefined
+  
+  // boolean or number
   var autoHide: js.UndefOr[Boolean] = js.undefined
+  
   var cancel: js.UndefOr[String] = js.undefined
-  var containment: js.UndefOr[js.Any] = js.undefined
-   // Selector, Element or string
+  
+  var containment: js.UndefOr[Any] = js.undefined
+  
+  // Selector, Element or string
   var delay: js.UndefOr[Double] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var distance: js.UndefOr[Double] = js.undefined
+  
   var ghost: js.UndefOr[Boolean] = js.undefined
-  var grid: js.UndefOr[js.Any] = js.undefined
-  var handles: js.UndefOr[js.Any] = js.undefined
-   // string or object
+  
+  var grid: js.UndefOr[Any] = js.undefined
+  
+  var handles: js.UndefOr[Any] = js.undefined
+  
+  // string or object
   var helper: js.UndefOr[String] = js.undefined
+  
   var maxHeight: js.UndefOr[Double] = js.undefined
+  
   var maxWidth: js.UndefOr[Double] = js.undefined
+  
   var minHeight: js.UndefOr[Double] = js.undefined
+  
   var minWidth: js.UndefOr[Double] = js.undefined
 }
-
 object ResizableOptions {
-  @scala.inline
-  def apply(
-    alsoResize: js.Any = null,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    animateDuration: js.Any = null,
-    animateEasing: String = null,
-    aspectRatio: js.Any = null,
-    autoHide: js.UndefOr[Boolean] = js.undefined,
-    cancel: String = null,
-    containment: js.Any = null,
-    create: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Callback = null,
-    delay: Int | Double = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    distance: Int | Double = null,
-    ghost: js.UndefOr[Boolean] = js.undefined,
-    grid: js.Any = null,
-    handles: js.Any = null,
-    helper: String = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    resize: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Callback = null,
-    start: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Callback = null,
-    stop: (/* event */ JQueryEventObject, /* ui */ ResizableUIParams) => Callback = null
-  ): ResizableOptions = {
+  
+  inline def apply(): ResizableOptions = {
     val __obj = js.Dynamic.literal()
-    if (alsoResize != null) __obj.updateDynamic("alsoResize")(alsoResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (animateDuration != null) __obj.updateDynamic("animateDuration")(animateDuration.asInstanceOf[js.Any])
-    if (animateEasing != null) __obj.updateDynamic("animateEasing")(animateEasing.asInstanceOf[js.Any])
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.ResizableUIParams) => create(t0, t1).runNow()))
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (!js.isUndefined(ghost)) __obj.updateDynamic("ghost")(ghost.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (handles != null) __obj.updateDynamic("handles")(handles.asInstanceOf[js.Any])
-    if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.ResizableUIParams) => resize(t0, t1).runNow()))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.ResizableUIParams) => start(t0, t1).runNow()))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.ResizableUIParams) => stop(t0, t1).runNow()))
     __obj.asInstanceOf[ResizableOptions]
   }
+  
+  extension [Self <: ResizableOptions](x: Self) {
+    
+    inline def setAlsoResize(value: Any): Self = StObject.set(x, "alsoResize", value.asInstanceOf[js.Any])
+    
+    inline def setAlsoResizeUndefined: Self = StObject.set(x, "alsoResize", js.undefined)
+    
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateDuration(value: Any): Self = StObject.set(x, "animateDuration", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateDurationUndefined: Self = StObject.set(x, "animateDuration", js.undefined)
+    
+    inline def setAnimateEasing(value: String): Self = StObject.set(x, "animateEasing", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateEasingUndefined: Self = StObject.set(x, "animateEasing", js.undefined)
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setAspectRatio(value: Any): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+    
+    inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
+    
+    inline def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
+    
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setContainment(value: Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    
+    inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    
+    inline def setGhost(value: Boolean): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
+    
+    inline def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
+    
+    inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    
+    inline def setHandles(value: Any): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
+    
+    inline def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
+    
+    inline def setHelper(value: String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    
+    inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
+    
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+  }
 }
-

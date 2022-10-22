@@ -1,46 +1,56 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxListItem extends CollectionWidgetItem {
-  /** Specifies the text of a badge displayed for the list item. */
+trait dxListItem
+  extends StObject
+     with CollectionWidgetItem {
+  
+  /**
+    * Specifies the text of a badge displayed for the list item.
+    */
   var badge: js.UndefOr[String] = js.undefined
-  /** Specifies the list item's icon. */
+  
+  /**
+    * Specifies the list item&apos;s icon.
+    */
   var icon: js.UndefOr[String] = js.undefined
-  /** Specifies the name of the list items group in a grouped list. */
+  
+  /**
+    * Specifies the name of the list items group in a grouped list.
+    */
   var key: js.UndefOr[String] = js.undefined
-  /** Specifies whether or not to display a chevron for the list item. */
+  
+  /**
+    * Specifies whether or not to display a chevron for the list item.
+    */
   var showChevron: js.UndefOr[Boolean] = js.undefined
 }
-
 object dxListItem {
-  @scala.inline
-  def apply(
-    badge: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    html: String = null,
-    icon: String = null,
-    key: String = null,
-    showChevron: js.UndefOr[Boolean] = js.undefined,
-    template: typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery]) = null,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxListItem = {
+  
+  inline def apply(): dxListItem = {
     val __obj = js.Dynamic.literal()
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(showChevron)) __obj.updateDynamic("showChevron")(showChevron.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxListItem]
   }
+  
+  extension [Self <: dxListItem](x: Self) {
+    
+    inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setShowChevron(value: Boolean): Self = StObject.set(x, "showChevron", value.asInstanceOf[js.Any])
+    
+    inline def setShowChevronUndefined: Self = StObject.set(x, "showChevron", js.undefined)
+  }
 }
-

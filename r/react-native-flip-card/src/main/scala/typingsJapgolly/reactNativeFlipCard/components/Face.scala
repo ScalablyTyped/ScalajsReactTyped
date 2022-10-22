@@ -1,37 +1,22 @@
 package typingsJapgolly.reactNativeFlipCard.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.react.mod.global.JSX.Element
 import typingsJapgolly.reactNativeFlipCard.mod.FaceProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Face {
-  def apply(
-    chilren: js.Array[Element],
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[FaceProps, typingsJapgolly.reactNativeFlipCard.mod.Face, Unit, FaceProps] = {
-    val __obj = js.Dynamic.literal(chilren = chilren.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeFlipCard.mod.FaceProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeFlipCard.mod.Face](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeFlipCard.mod.FaceProps])(children: _*)
+  inline def apply(chilren: js.Array[Element]): Default[typingsJapgolly.reactNativeFlipCard.mod.Face] = {
+    val __props = js.Dynamic.literal(chilren = chilren.asInstanceOf[js.Any])
+    new Default[typingsJapgolly.reactNativeFlipCard.mod.Face](js.Array(this.component, __props.asInstanceOf[FaceProps]))
   }
+  
   @JSImport("react-native-flip-card", "Face")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: FaceProps): Default[typingsJapgolly.reactNativeFlipCard.mod.Face] = new Default[typingsJapgolly.reactNativeFlipCard.mod.Face](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

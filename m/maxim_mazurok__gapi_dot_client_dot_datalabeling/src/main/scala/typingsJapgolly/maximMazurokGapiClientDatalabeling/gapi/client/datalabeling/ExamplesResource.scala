@@ -1,0 +1,20 @@
+package typingsJapgolly.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
+
+import typingsJapgolly.gapiClient.gapi.client.Request
+import typingsJapgolly.maximMazurokGapiClientDatalabeling.anon.Fields
+import typingsJapgolly.maximMazurokGapiClientDatalabeling.anon.Filter
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait ExamplesResource extends StObject {
+  
+  /** Gets an example by resource name, including both data and annotation. */
+  def get(): Request[GoogleCloudDatalabelingV1beta1Example] = js.native
+  def get(request: Filter): Request[GoogleCloudDatalabelingV1beta1Example] = js.native
+  
+  /** Lists examples in an annotated dataset. Pagination is supported. */
+  def list(): Request[GoogleCloudDatalabelingV1beta1ListExamplesResponse] = js.native
+  def list(request: Fields): Request[GoogleCloudDatalabelingV1beta1ListExamplesResponse] = js.native
+}

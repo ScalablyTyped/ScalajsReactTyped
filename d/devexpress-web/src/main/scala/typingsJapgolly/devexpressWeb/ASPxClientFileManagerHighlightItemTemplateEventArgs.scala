@@ -1,38 +1,51 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.HighlightItemTemplate event.
   */
-@JSGlobal("ASPxClientFileManagerHighlightItemTemplateEventArgs")
-@js.native
-class ASPxClientFileManagerHighlightItemTemplateEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientFileManagerHighlightItemTemplateEventArgs class.
-    * @param filterValue A string that is a filter value specified by the filter box.
-    * @param itemName A string that is the name of an item currently being processed.
-    * @param templateElement An object that is an element containing the template.
-    * @param highlightCssClassName A string that is the name of the cascading style sheet (CSS) class associated with an item in highlighted state.
-    */
-  def this(filterValue: String, itemName: String, templateElement: js.Any, highlightCssClassName: String) = this()
+trait ASPxClientFileManagerHighlightItemTemplateEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets a string that is a filter value specified by the filter box.
     */
-  var filterValue: String = js.native
+  var filterValue: String
+  
   /**
     * Get the name of the cascading style sheet (CSS) class associated with an item in the highlighted state.
     */
-  var highlightCssClassName: String = js.native
+  var highlightCssClassName: String
+  
   /**
     * Gets the name of the item currently being processed.
     */
-  var itemName: String = js.native
+  var itemName: String
+  
   /**
     * Gets an element containing the item template.
     */
-  var templateElement: String = js.native
+  var templateElement: String
 }
-
+object ASPxClientFileManagerHighlightItemTemplateEventArgs {
+  
+  inline def apply(filterValue: String, highlightCssClassName: String, itemName: String, templateElement: String): ASPxClientFileManagerHighlightItemTemplateEventArgs = {
+    val __obj = js.Dynamic.literal(filterValue = filterValue.asInstanceOf[js.Any], highlightCssClassName = highlightCssClassName.asInstanceOf[js.Any], itemName = itemName.asInstanceOf[js.Any], templateElement = templateElement.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientFileManagerHighlightItemTemplateEventArgs]
+  }
+  
+  extension [Self <: ASPxClientFileManagerHighlightItemTemplateEventArgs](x: Self) {
+    
+    inline def setFilterValue(value: String): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightCssClassName(value: String): Self = StObject.set(x, "highlightCssClassName", value.asInstanceOf[js.Any])
+    
+    inline def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateElement(value: String): Self = StObject.set(x, "templateElement", value.asInstanceOf[js.Any])
+  }
+}

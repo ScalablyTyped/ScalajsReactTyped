@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-mailchimp-subscribe
 
-Typings are for version 2.0
+Typings are for version 2.1
 
 ## Library description:
 react-mailchimp-subscribe React component
@@ -10,10 +10,10 @@ react-mailchimp-subscribe React component
 | ------------------ | :-------------: |
 | Full name          | react-mailchimp-subscribe |
 | Keywords           | react-component |
-| # releases         | 6 |
-| # dependents       | 10 |
-| # downloads        | 205466 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 71686.0 |
+| # stars            | 214.0 |
 
 ## Links
 - [Homepage](https://revolunet.github.io/react-mailchimp-subscribe/)

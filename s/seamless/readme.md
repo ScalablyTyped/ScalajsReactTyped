@@ -10,10 +10,10 @@ Beautiful, seamless iframes with seamless.js -----------------------------------
 | ------------------ | :-------------: |
 | Full name          | seamless |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 14881 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2464.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/seamless)

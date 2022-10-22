@@ -1,755 +1,852 @@
 package typingsJapgolly.monacoEditor.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KeyCode extends js.Object
-
+sealed trait KeyCode extends StObject
 @JSImport("monaco-editor", "KeyCode")
 @js.native
-object KeyCode extends js.Object {
-  @js.native
-  sealed trait ABNT_C1 extends KeyCode
-  
-  @js.native
-  sealed trait ABNT_C2 extends KeyCode
-  
-  @js.native
-  sealed trait Alt extends KeyCode
-  
-  @js.native
-  sealed trait Backspace extends KeyCode
-  
-  @js.native
-  sealed trait CapsLock extends KeyCode
-  
-  @js.native
-  sealed trait ContextMenu extends KeyCode
-  
-  @js.native
-  sealed trait Ctrl extends KeyCode
-  
-  @js.native
-  sealed trait Delete extends KeyCode
-  
-  @js.native
-  sealed trait DownArrow extends KeyCode
-  
-  @js.native
-  sealed trait End extends KeyCode
-  
-  @js.native
-  sealed trait Enter extends KeyCode
-  
-  @js.native
-  sealed trait Escape extends KeyCode
-  
-  @js.native
-  sealed trait F1 extends KeyCode
-  
-  @js.native
-  sealed trait F10 extends KeyCode
-  
-  @js.native
-  sealed trait F11 extends KeyCode
-  
-  @js.native
-  sealed trait F12 extends KeyCode
-  
-  @js.native
-  sealed trait F13 extends KeyCode
-  
-  @js.native
-  sealed trait F14 extends KeyCode
-  
-  @js.native
-  sealed trait F15 extends KeyCode
-  
-  @js.native
-  sealed trait F16 extends KeyCode
-  
-  @js.native
-  sealed trait F17 extends KeyCode
-  
-  @js.native
-  sealed trait F18 extends KeyCode
-  
-  @js.native
-  sealed trait F19 extends KeyCode
-  
-  @js.native
-  sealed trait F2 extends KeyCode
-  
-  @js.native
-  sealed trait F3 extends KeyCode
-  
-  @js.native
-  sealed trait F4 extends KeyCode
-  
-  @js.native
-  sealed trait F5 extends KeyCode
-  
-  @js.native
-  sealed trait F6 extends KeyCode
-  
-  @js.native
-  sealed trait F7 extends KeyCode
-  
-  @js.native
-  sealed trait F8 extends KeyCode
-  
-  @js.native
-  sealed trait F9 extends KeyCode
-  
-  @js.native
-  sealed trait Home extends KeyCode
-  
-  @js.native
-  sealed trait Insert extends KeyCode
-  
-  @js.native
-  sealed trait KEY_0 extends KeyCode
-  
-  @js.native
-  sealed trait KEY_1 extends KeyCode
-  
-  @js.native
-  sealed trait KEY_2 extends KeyCode
-  
-  @js.native
-  sealed trait KEY_3 extends KeyCode
-  
-  @js.native
-  sealed trait KEY_4 extends KeyCode
-  
-  @js.native
-  sealed trait KEY_5 extends KeyCode
-  
-  @js.native
-  sealed trait KEY_6 extends KeyCode
-  
-  @js.native
-  sealed trait KEY_7 extends KeyCode
-  
-  @js.native
-  sealed trait KEY_8 extends KeyCode
-  
-  @js.native
-  sealed trait KEY_9 extends KeyCode
-  
-  @js.native
-  sealed trait KEY_A extends KeyCode
-  
-  @js.native
-  sealed trait KEY_B extends KeyCode
-  
-  @js.native
-  sealed trait KEY_C extends KeyCode
-  
-  @js.native
-  sealed trait KEY_D extends KeyCode
-  
-  @js.native
-  sealed trait KEY_E extends KeyCode
-  
-  @js.native
-  sealed trait KEY_F extends KeyCode
-  
-  @js.native
-  sealed trait KEY_G extends KeyCode
-  
-  @js.native
-  sealed trait KEY_H extends KeyCode
-  
-  @js.native
-  sealed trait KEY_I extends KeyCode
-  
-  /**
-    * Cover all key codes when IME is processing input.
-    */
-  @js.native
-  sealed trait KEY_IN_COMPOSITION extends KeyCode
-  
-  @js.native
-  sealed trait KEY_J extends KeyCode
-  
-  @js.native
-  sealed trait KEY_K extends KeyCode
-  
-  @js.native
-  sealed trait KEY_L extends KeyCode
-  
-  @js.native
-  sealed trait KEY_M extends KeyCode
-  
-  @js.native
-  sealed trait KEY_N extends KeyCode
-  
-  @js.native
-  sealed trait KEY_O extends KeyCode
-  
-  @js.native
-  sealed trait KEY_P extends KeyCode
-  
-  @js.native
-  sealed trait KEY_Q extends KeyCode
-  
-  @js.native
-  sealed trait KEY_R extends KeyCode
-  
-  @js.native
-  sealed trait KEY_S extends KeyCode
-  
-  @js.native
-  sealed trait KEY_T extends KeyCode
-  
-  @js.native
-  sealed trait KEY_U extends KeyCode
-  
-  @js.native
-  sealed trait KEY_V extends KeyCode
-  
-  @js.native
-  sealed trait KEY_W extends KeyCode
-  
-  @js.native
-  sealed trait KEY_X extends KeyCode
-  
-  @js.native
-  sealed trait KEY_Y extends KeyCode
-  
-  @js.native
-  sealed trait KEY_Z extends KeyCode
-  
-  @js.native
-  sealed trait LeftArrow extends KeyCode
+object KeyCode extends StObject {
   
-  /**
-    * Placed last to cover the length of the enum.
-    * Please do not depend on this value!
-    */
-  @js.native
-  sealed trait MAX_VALUE extends KeyCode
-  
-  @js.native
-  sealed trait Meta extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_0 extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_1 extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_2 extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_3 extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_4 extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_5 extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_6 extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_7 extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_8 extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_9 extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_ADD extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_DECIMAL extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_DIVIDE extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_MULTIPLY extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_SEPARATOR extends KeyCode
-  
-  @js.native
-  sealed trait NUMPAD_SUBTRACT extends KeyCode
-  
-  @js.native
-  sealed trait NumLock extends KeyCode
-  
-  /**
-    * Either the angle bracket key or the backslash key on the RT 102-key keyboard.
-    */
-  @js.native
-  sealed trait OEM_102 extends KeyCode
-  
-  /**
-    * Used for miscellaneous characters; it can vary by keyboard.
-    */
-  @js.native
-  sealed trait OEM_8 extends KeyCode
-  
-  @js.native
-  sealed trait PageDown extends KeyCode
-  
-  @js.native
-  sealed trait PageUp extends KeyCode
-  
-  @js.native
-  sealed trait PauseBreak extends KeyCode
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[KeyCode & Double] = js.native
   
   @js.native
-  sealed trait RightArrow extends KeyCode
+  sealed trait ABNT_C1
+    extends StObject
+       with KeyCode
+  /* 110 */ val ABNT_C1: typingsJapgolly.monacoEditor.mod.KeyCode.ABNT_C1 & Double = js.native
   
   @js.native
-  sealed trait ScrollLock extends KeyCode
+  sealed trait ABNT_C2
+    extends StObject
+       with KeyCode
+  /* 111 */ val ABNT_C2: typingsJapgolly.monacoEditor.mod.KeyCode.ABNT_C2 & Double = js.native
   
   @js.native
-  sealed trait Shift extends KeyCode
+  sealed trait Alt
+    extends StObject
+       with KeyCode
+  /* 6 */ val Alt: typingsJapgolly.monacoEditor.mod.KeyCode.Alt & Double = js.native
   
   @js.native
-  sealed trait Space extends KeyCode
+  sealed trait AudioVolumeDown
+    extends StObject
+       with KeyCode
+  /* 114 */ val AudioVolumeDown: typingsJapgolly.monacoEditor.mod.KeyCode.AudioVolumeDown & Double = js.native
   
   @js.native
-  sealed trait Tab extends KeyCode
+  sealed trait AudioVolumeMute
+    extends StObject
+       with KeyCode
+  /* 112 */ val AudioVolumeMute: typingsJapgolly.monacoEditor.mod.KeyCode.AudioVolumeMute & Double = js.native
   
-  /**
-    * Used for miscellaneous characters; it can vary by keyboard.
-    * For the US standard keyboard, the '\|' key
-    */
   @js.native
-  sealed trait US_BACKSLASH extends KeyCode
+  sealed trait AudioVolumeUp
+    extends StObject
+       with KeyCode
+  /* 113 */ val AudioVolumeUp: typingsJapgolly.monacoEditor.mod.KeyCode.AudioVolumeUp & Double = js.native
   
   /**
     * Used for miscellaneous characters; it can vary by keyboard.
     * For the US standard keyboard, the '`~' key
     */
   @js.native
-  sealed trait US_BACKTICK extends KeyCode
+  sealed trait Backquote
+    extends StObject
+       with KeyCode
+  /* 86 */ val Backquote: typingsJapgolly.monacoEditor.mod.KeyCode.Backquote & Double = js.native
   
   /**
     * Used for miscellaneous characters; it can vary by keyboard.
-    * For the US standard keyboard, the ']}' key
+    * For the US standard keyboard, the '\|' key
     */
   @js.native
-  sealed trait US_CLOSE_SQUARE_BRACKET extends KeyCode
+  sealed trait Backslash
+    extends StObject
+       with KeyCode
+  /* 88 */ val Backslash: typingsJapgolly.monacoEditor.mod.KeyCode.Backslash & Double = js.native
   
-  /**
-    * For any country/region, the ',' key
-    * For the US standard keyboard, the ',<' key
-    */
   @js.native
-  sealed trait US_COMMA extends KeyCode
-  
-  /**
-    * For any country/region, the '.' key
-    * For the US standard keyboard, the '.>' key
-    */
-  @js.native
-  sealed trait US_DOT extends KeyCode
-  
-  /**
-    * For any country/region, the '+' key
-    * For the US standard keyboard, the '=+' key
-    */
-  @js.native
-  sealed trait US_EQUAL extends KeyCode
-  
-  /**
-    * For any country/region, the '-' key
-    * For the US standard keyboard, the '-_' key
-    */
-  @js.native
-  sealed trait US_MINUS extends KeyCode
+  sealed trait Backspace
+    extends StObject
+       with KeyCode
+  /* 1 */ val Backspace: typingsJapgolly.monacoEditor.mod.KeyCode.Backspace & Double = js.native
   
   /**
     * Used for miscellaneous characters; it can vary by keyboard.
     * For the US standard keyboard, the '[{' key
     */
   @js.native
-  sealed trait US_OPEN_SQUARE_BRACKET extends KeyCode
+  sealed trait BracketLeft
+    extends StObject
+       with KeyCode
+  /* 87 */ val BracketLeft: typingsJapgolly.monacoEditor.mod.KeyCode.BracketLeft & Double = js.native
+  
+  /**
+    * Used for miscellaneous characters; it can vary by keyboard.
+    * For the US standard keyboard, the ']}' key
+    */
+  @js.native
+  sealed trait BracketRight
+    extends StObject
+       with KeyCode
+  /* 89 */ val BracketRight: typingsJapgolly.monacoEditor.mod.KeyCode.BracketRight & Double = js.native
+  
+  @js.native
+  sealed trait BrowserBack
+    extends StObject
+       with KeyCode
+  /* 117 */ val BrowserBack: typingsJapgolly.monacoEditor.mod.KeyCode.BrowserBack & Double = js.native
+  
+  @js.native
+  sealed trait BrowserForward
+    extends StObject
+       with KeyCode
+  /* 118 */ val BrowserForward: typingsJapgolly.monacoEditor.mod.KeyCode.BrowserForward & Double = js.native
+  
+  @js.native
+  sealed trait BrowserHome
+    extends StObject
+       with KeyCode
+  /* 116 */ val BrowserHome: typingsJapgolly.monacoEditor.mod.KeyCode.BrowserHome & Double = js.native
+  
+  @js.native
+  sealed trait BrowserSearch
+    extends StObject
+       with KeyCode
+  /* 115 */ val BrowserSearch: typingsJapgolly.monacoEditor.mod.KeyCode.BrowserSearch & Double = js.native
+  
+  @js.native
+  sealed trait CapsLock
+    extends StObject
+       with KeyCode
+  /* 8 */ val CapsLock: typingsJapgolly.monacoEditor.mod.KeyCode.CapsLock & Double = js.native
+  
+  /**
+    * VK_CLEAR, 0x0C, CLEAR key
+    */
+  @js.native
+  sealed trait Clear
+    extends StObject
+       with KeyCode
+  /* 126 */ val Clear: typingsJapgolly.monacoEditor.mod.KeyCode.Clear & Double = js.native
+  
+  /**
+    * For any country/region, the ',' key
+    * For the US standard keyboard, the ',<' key
+    */
+  @js.native
+  sealed trait Comma
+    extends StObject
+       with KeyCode
+  /* 82 */ val Comma: typingsJapgolly.monacoEditor.mod.KeyCode.Comma & Double = js.native
+  
+  @js.native
+  sealed trait ContextMenu
+    extends StObject
+       with KeyCode
+  /* 58 */ val ContextMenu: typingsJapgolly.monacoEditor.mod.KeyCode.ContextMenu & Double = js.native
+  
+  @js.native
+  sealed trait Ctrl
+    extends StObject
+       with KeyCode
+  /* 5 */ val Ctrl: typingsJapgolly.monacoEditor.mod.KeyCode.Ctrl & Double = js.native
+  
+  @js.native
+  sealed trait Delete
+    extends StObject
+       with KeyCode
+  /* 20 */ val Delete: typingsJapgolly.monacoEditor.mod.KeyCode.Delete & Double = js.native
+  
+  @js.native
+  sealed trait DependsOnKbLayout
+    extends StObject
+       with KeyCode
+  /* -1 */ val DependsOnKbLayout: typingsJapgolly.monacoEditor.mod.KeyCode.DependsOnKbLayout & Double = js.native
+  
+  @js.native
+  sealed trait Digit0
+    extends StObject
+       with KeyCode
+  /* 21 */ val Digit0: typingsJapgolly.monacoEditor.mod.KeyCode.Digit0 & Double = js.native
+  
+  @js.native
+  sealed trait Digit1
+    extends StObject
+       with KeyCode
+  /* 22 */ val Digit1: typingsJapgolly.monacoEditor.mod.KeyCode.Digit1 & Double = js.native
+  
+  @js.native
+  sealed trait Digit2
+    extends StObject
+       with KeyCode
+  /* 23 */ val Digit2: typingsJapgolly.monacoEditor.mod.KeyCode.Digit2 & Double = js.native
+  
+  @js.native
+  sealed trait Digit3
+    extends StObject
+       with KeyCode
+  /* 24 */ val Digit3: typingsJapgolly.monacoEditor.mod.KeyCode.Digit3 & Double = js.native
+  
+  @js.native
+  sealed trait Digit4
+    extends StObject
+       with KeyCode
+  /* 25 */ val Digit4: typingsJapgolly.monacoEditor.mod.KeyCode.Digit4 & Double = js.native
+  
+  @js.native
+  sealed trait Digit5
+    extends StObject
+       with KeyCode
+  /* 26 */ val Digit5: typingsJapgolly.monacoEditor.mod.KeyCode.Digit5 & Double = js.native
+  
+  @js.native
+  sealed trait Digit6
+    extends StObject
+       with KeyCode
+  /* 27 */ val Digit6: typingsJapgolly.monacoEditor.mod.KeyCode.Digit6 & Double = js.native
+  
+  @js.native
+  sealed trait Digit7
+    extends StObject
+       with KeyCode
+  /* 28 */ val Digit7: typingsJapgolly.monacoEditor.mod.KeyCode.Digit7 & Double = js.native
+  
+  @js.native
+  sealed trait Digit8
+    extends StObject
+       with KeyCode
+  /* 29 */ val Digit8: typingsJapgolly.monacoEditor.mod.KeyCode.Digit8 & Double = js.native
+  
+  @js.native
+  sealed trait Digit9
+    extends StObject
+       with KeyCode
+  /* 30 */ val Digit9: typingsJapgolly.monacoEditor.mod.KeyCode.Digit9 & Double = js.native
+  
+  @js.native
+  sealed trait DownArrow
+    extends StObject
+       with KeyCode
+  /* 18 */ val DownArrow: typingsJapgolly.monacoEditor.mod.KeyCode.DownArrow & Double = js.native
+  
+  @js.native
+  sealed trait End
+    extends StObject
+       with KeyCode
+  /* 13 */ val End: typingsJapgolly.monacoEditor.mod.KeyCode.End & Double = js.native
+  
+  @js.native
+  sealed trait Enter
+    extends StObject
+       with KeyCode
+  /* 3 */ val Enter: typingsJapgolly.monacoEditor.mod.KeyCode.Enter & Double = js.native
+  
+  /**
+    * For any country/region, the '+' key
+    * For the US standard keyboard, the '=+' key
+    */
+  @js.native
+  sealed trait Equal
+    extends StObject
+       with KeyCode
+  /* 81 */ val Equal: typingsJapgolly.monacoEditor.mod.KeyCode.Equal & Double = js.native
+  
+  @js.native
+  sealed trait Escape
+    extends StObject
+       with KeyCode
+  /* 9 */ val Escape: typingsJapgolly.monacoEditor.mod.KeyCode.Escape & Double = js.native
+  
+  @js.native
+  sealed trait F1
+    extends StObject
+       with KeyCode
+  /* 59 */ val F1: typingsJapgolly.monacoEditor.mod.KeyCode.F1 & Double = js.native
+  
+  @js.native
+  sealed trait F10
+    extends StObject
+       with KeyCode
+  /* 68 */ val F10: typingsJapgolly.monacoEditor.mod.KeyCode.F10 & Double = js.native
+  
+  @js.native
+  sealed trait F11
+    extends StObject
+       with KeyCode
+  /* 69 */ val F11: typingsJapgolly.monacoEditor.mod.KeyCode.F11 & Double = js.native
+  
+  @js.native
+  sealed trait F12
+    extends StObject
+       with KeyCode
+  /* 70 */ val F12: typingsJapgolly.monacoEditor.mod.KeyCode.F12 & Double = js.native
+  
+  @js.native
+  sealed trait F13
+    extends StObject
+       with KeyCode
+  /* 71 */ val F13: typingsJapgolly.monacoEditor.mod.KeyCode.F13 & Double = js.native
+  
+  @js.native
+  sealed trait F14
+    extends StObject
+       with KeyCode
+  /* 72 */ val F14: typingsJapgolly.monacoEditor.mod.KeyCode.F14 & Double = js.native
+  
+  @js.native
+  sealed trait F15
+    extends StObject
+       with KeyCode
+  /* 73 */ val F15: typingsJapgolly.monacoEditor.mod.KeyCode.F15 & Double = js.native
+  
+  @js.native
+  sealed trait F16
+    extends StObject
+       with KeyCode
+  /* 74 */ val F16: typingsJapgolly.monacoEditor.mod.KeyCode.F16 & Double = js.native
+  
+  @js.native
+  sealed trait F17
+    extends StObject
+       with KeyCode
+  /* 75 */ val F17: typingsJapgolly.monacoEditor.mod.KeyCode.F17 & Double = js.native
+  
+  @js.native
+  sealed trait F18
+    extends StObject
+       with KeyCode
+  /* 76 */ val F18: typingsJapgolly.monacoEditor.mod.KeyCode.F18 & Double = js.native
+  
+  @js.native
+  sealed trait F19
+    extends StObject
+       with KeyCode
+  /* 77 */ val F19: typingsJapgolly.monacoEditor.mod.KeyCode.F19 & Double = js.native
+  
+  @js.native
+  sealed trait F2
+    extends StObject
+       with KeyCode
+  /* 60 */ val F2: typingsJapgolly.monacoEditor.mod.KeyCode.F2 & Double = js.native
+  
+  @js.native
+  sealed trait F3
+    extends StObject
+       with KeyCode
+  /* 61 */ val F3: typingsJapgolly.monacoEditor.mod.KeyCode.F3 & Double = js.native
+  
+  @js.native
+  sealed trait F4
+    extends StObject
+       with KeyCode
+  /* 62 */ val F4: typingsJapgolly.monacoEditor.mod.KeyCode.F4 & Double = js.native
+  
+  @js.native
+  sealed trait F5
+    extends StObject
+       with KeyCode
+  /* 63 */ val F5: typingsJapgolly.monacoEditor.mod.KeyCode.F5 & Double = js.native
+  
+  @js.native
+  sealed trait F6
+    extends StObject
+       with KeyCode
+  /* 64 */ val F6: typingsJapgolly.monacoEditor.mod.KeyCode.F6 & Double = js.native
+  
+  @js.native
+  sealed trait F7
+    extends StObject
+       with KeyCode
+  /* 65 */ val F7: typingsJapgolly.monacoEditor.mod.KeyCode.F7 & Double = js.native
+  
+  @js.native
+  sealed trait F8
+    extends StObject
+       with KeyCode
+  /* 66 */ val F8: typingsJapgolly.monacoEditor.mod.KeyCode.F8 & Double = js.native
+  
+  @js.native
+  sealed trait F9
+    extends StObject
+       with KeyCode
+  /* 67 */ val F9: typingsJapgolly.monacoEditor.mod.KeyCode.F9 & Double = js.native
+  
+  @js.native
+  sealed trait Home
+    extends StObject
+       with KeyCode
+  /* 14 */ val Home: typingsJapgolly.monacoEditor.mod.KeyCode.Home & Double = js.native
+  
+  @js.native
+  sealed trait Insert
+    extends StObject
+       with KeyCode
+  /* 19 */ val Insert: typingsJapgolly.monacoEditor.mod.KeyCode.Insert & Double = js.native
+  
+  /**
+    * Either the angle bracket key or the backslash key on the RT 102-key keyboard.
+    */
+  @js.native
+  sealed trait IntlBackslash
+    extends StObject
+       with KeyCode
+  /* 92 */ val IntlBackslash: typingsJapgolly.monacoEditor.mod.KeyCode.IntlBackslash & Double = js.native
+  
+  /**
+    * Cover all key codes when IME is processing input.
+    */
+  @js.native
+  sealed trait KEY_IN_COMPOSITION
+    extends StObject
+       with KeyCode
+  /* 109 */ val KEY_IN_COMPOSITION: typingsJapgolly.monacoEditor.mod.KeyCode.KEY_IN_COMPOSITION & Double = js.native
+  
+  @js.native
+  sealed trait KeyA
+    extends StObject
+       with KeyCode
+  /* 31 */ val KeyA: typingsJapgolly.monacoEditor.mod.KeyCode.KeyA & Double = js.native
+  
+  @js.native
+  sealed trait KeyB
+    extends StObject
+       with KeyCode
+  /* 32 */ val KeyB: typingsJapgolly.monacoEditor.mod.KeyCode.KeyB & Double = js.native
+  
+  @js.native
+  sealed trait KeyC
+    extends StObject
+       with KeyCode
+  /* 33 */ val KeyC: typingsJapgolly.monacoEditor.mod.KeyCode.KeyC & Double = js.native
+  
+  @js.native
+  sealed trait KeyD
+    extends StObject
+       with KeyCode
+  /* 34 */ val KeyD: typingsJapgolly.monacoEditor.mod.KeyCode.KeyD & Double = js.native
+  
+  @js.native
+  sealed trait KeyE
+    extends StObject
+       with KeyCode
+  /* 35 */ val KeyE: typingsJapgolly.monacoEditor.mod.KeyCode.KeyE & Double = js.native
+  
+  @js.native
+  sealed trait KeyF
+    extends StObject
+       with KeyCode
+  /* 36 */ val KeyF: typingsJapgolly.monacoEditor.mod.KeyCode.KeyF & Double = js.native
+  
+  @js.native
+  sealed trait KeyG
+    extends StObject
+       with KeyCode
+  /* 37 */ val KeyG: typingsJapgolly.monacoEditor.mod.KeyCode.KeyG & Double = js.native
+  
+  @js.native
+  sealed trait KeyH
+    extends StObject
+       with KeyCode
+  /* 38 */ val KeyH: typingsJapgolly.monacoEditor.mod.KeyCode.KeyH & Double = js.native
+  
+  @js.native
+  sealed trait KeyI
+    extends StObject
+       with KeyCode
+  /* 39 */ val KeyI: typingsJapgolly.monacoEditor.mod.KeyCode.KeyI & Double = js.native
+  
+  @js.native
+  sealed trait KeyJ
+    extends StObject
+       with KeyCode
+  /* 40 */ val KeyJ: typingsJapgolly.monacoEditor.mod.KeyCode.KeyJ & Double = js.native
+  
+  @js.native
+  sealed trait KeyK
+    extends StObject
+       with KeyCode
+  /* 41 */ val KeyK: typingsJapgolly.monacoEditor.mod.KeyCode.KeyK & Double = js.native
+  
+  @js.native
+  sealed trait KeyL
+    extends StObject
+       with KeyCode
+  /* 42 */ val KeyL: typingsJapgolly.monacoEditor.mod.KeyCode.KeyL & Double = js.native
+  
+  @js.native
+  sealed trait KeyM
+    extends StObject
+       with KeyCode
+  /* 43 */ val KeyM: typingsJapgolly.monacoEditor.mod.KeyCode.KeyM & Double = js.native
+  
+  @js.native
+  sealed trait KeyN
+    extends StObject
+       with KeyCode
+  /* 44 */ val KeyN: typingsJapgolly.monacoEditor.mod.KeyCode.KeyN & Double = js.native
+  
+  @js.native
+  sealed trait KeyO
+    extends StObject
+       with KeyCode
+  /* 45 */ val KeyO: typingsJapgolly.monacoEditor.mod.KeyCode.KeyO & Double = js.native
+  
+  @js.native
+  sealed trait KeyP
+    extends StObject
+       with KeyCode
+  /* 46 */ val KeyP: typingsJapgolly.monacoEditor.mod.KeyCode.KeyP & Double = js.native
+  
+  @js.native
+  sealed trait KeyQ
+    extends StObject
+       with KeyCode
+  /* 47 */ val KeyQ: typingsJapgolly.monacoEditor.mod.KeyCode.KeyQ & Double = js.native
+  
+  @js.native
+  sealed trait KeyR
+    extends StObject
+       with KeyCode
+  /* 48 */ val KeyR: typingsJapgolly.monacoEditor.mod.KeyCode.KeyR & Double = js.native
+  
+  @js.native
+  sealed trait KeyS
+    extends StObject
+       with KeyCode
+  /* 49 */ val KeyS: typingsJapgolly.monacoEditor.mod.KeyCode.KeyS & Double = js.native
+  
+  @js.native
+  sealed trait KeyT
+    extends StObject
+       with KeyCode
+  /* 50 */ val KeyT: typingsJapgolly.monacoEditor.mod.KeyCode.KeyT & Double = js.native
+  
+  @js.native
+  sealed trait KeyU
+    extends StObject
+       with KeyCode
+  /* 51 */ val KeyU: typingsJapgolly.monacoEditor.mod.KeyCode.KeyU & Double = js.native
+  
+  @js.native
+  sealed trait KeyV
+    extends StObject
+       with KeyCode
+  /* 52 */ val KeyV: typingsJapgolly.monacoEditor.mod.KeyCode.KeyV & Double = js.native
+  
+  @js.native
+  sealed trait KeyW
+    extends StObject
+       with KeyCode
+  /* 53 */ val KeyW: typingsJapgolly.monacoEditor.mod.KeyCode.KeyW & Double = js.native
+  
+  @js.native
+  sealed trait KeyX
+    extends StObject
+       with KeyCode
+  /* 54 */ val KeyX: typingsJapgolly.monacoEditor.mod.KeyCode.KeyX & Double = js.native
+  
+  @js.native
+  sealed trait KeyY
+    extends StObject
+       with KeyCode
+  /* 55 */ val KeyY: typingsJapgolly.monacoEditor.mod.KeyCode.KeyY & Double = js.native
+  
+  @js.native
+  sealed trait KeyZ
+    extends StObject
+       with KeyCode
+  /* 56 */ val KeyZ: typingsJapgolly.monacoEditor.mod.KeyCode.KeyZ & Double = js.native
+  
+  @js.native
+  sealed trait LaunchApp2
+    extends StObject
+       with KeyCode
+  /* 125 */ val LaunchApp2: typingsJapgolly.monacoEditor.mod.KeyCode.LaunchApp2 & Double = js.native
+  
+  @js.native
+  sealed trait LaunchMail
+    extends StObject
+       with KeyCode
+  /* 124 */ val LaunchMail: typingsJapgolly.monacoEditor.mod.KeyCode.LaunchMail & Double = js.native
+  
+  @js.native
+  sealed trait LaunchMediaPlayer
+    extends StObject
+       with KeyCode
+  /* 123 */ val LaunchMediaPlayer: typingsJapgolly.monacoEditor.mod.KeyCode.LaunchMediaPlayer & Double = js.native
+  
+  @js.native
+  sealed trait LeftArrow
+    extends StObject
+       with KeyCode
+  /* 15 */ val LeftArrow: typingsJapgolly.monacoEditor.mod.KeyCode.LeftArrow & Double = js.native
+  
+  /**
+    * Placed last to cover the length of the enum.
+    * Please do not depend on this value!
+    */
+  @js.native
+  sealed trait MAX_VALUE
+    extends StObject
+       with KeyCode
+  /* 127 */ val MAX_VALUE: typingsJapgolly.monacoEditor.mod.KeyCode.MAX_VALUE & Double = js.native
+  
+  @js.native
+  sealed trait MediaPlayPause
+    extends StObject
+       with KeyCode
+  /* 122 */ val MediaPlayPause: typingsJapgolly.monacoEditor.mod.KeyCode.MediaPlayPause & Double = js.native
+  
+  @js.native
+  sealed trait MediaStop
+    extends StObject
+       with KeyCode
+  /* 121 */ val MediaStop: typingsJapgolly.monacoEditor.mod.KeyCode.MediaStop & Double = js.native
+  
+  @js.native
+  sealed trait MediaTrackNext
+    extends StObject
+       with KeyCode
+  /* 119 */ val MediaTrackNext: typingsJapgolly.monacoEditor.mod.KeyCode.MediaTrackNext & Double = js.native
+  
+  @js.native
+  sealed trait MediaTrackPrevious
+    extends StObject
+       with KeyCode
+  /* 120 */ val MediaTrackPrevious: typingsJapgolly.monacoEditor.mod.KeyCode.MediaTrackPrevious & Double = js.native
+  
+  @js.native
+  sealed trait Meta
+    extends StObject
+       with KeyCode
+  /* 57 */ val Meta: typingsJapgolly.monacoEditor.mod.KeyCode.Meta & Double = js.native
+  
+  /**
+    * For any country/region, the '-' key
+    * For the US standard keyboard, the '-_' key
+    */
+  @js.native
+  sealed trait Minus
+    extends StObject
+       with KeyCode
+  /* 83 */ val Minus: typingsJapgolly.monacoEditor.mod.KeyCode.Minus & Double = js.native
+  
+  @js.native
+  sealed trait NUMPAD_SEPARATOR
+    extends StObject
+       with KeyCode
+  /* 105 */ val NUMPAD_SEPARATOR: typingsJapgolly.monacoEditor.mod.KeyCode.NUMPAD_SEPARATOR & Double = js.native
+  
+  @js.native
+  sealed trait NumLock
+    extends StObject
+       with KeyCode
+  /* 78 */ val NumLock: typingsJapgolly.monacoEditor.mod.KeyCode.NumLock & Double = js.native
+  
+  @js.native
+  sealed trait Numpad0
+    extends StObject
+       with KeyCode
+  /* 93 */ val Numpad0: typingsJapgolly.monacoEditor.mod.KeyCode.Numpad0 & Double = js.native
+  
+  @js.native
+  sealed trait Numpad1
+    extends StObject
+       with KeyCode
+  /* 94 */ val Numpad1: typingsJapgolly.monacoEditor.mod.KeyCode.Numpad1 & Double = js.native
+  
+  @js.native
+  sealed trait Numpad2
+    extends StObject
+       with KeyCode
+  /* 95 */ val Numpad2: typingsJapgolly.monacoEditor.mod.KeyCode.Numpad2 & Double = js.native
+  
+  @js.native
+  sealed trait Numpad3
+    extends StObject
+       with KeyCode
+  /* 96 */ val Numpad3: typingsJapgolly.monacoEditor.mod.KeyCode.Numpad3 & Double = js.native
+  
+  @js.native
+  sealed trait Numpad4
+    extends StObject
+       with KeyCode
+  /* 97 */ val Numpad4: typingsJapgolly.monacoEditor.mod.KeyCode.Numpad4 & Double = js.native
+  
+  @js.native
+  sealed trait Numpad5
+    extends StObject
+       with KeyCode
+  /* 98 */ val Numpad5: typingsJapgolly.monacoEditor.mod.KeyCode.Numpad5 & Double = js.native
+  
+  @js.native
+  sealed trait Numpad6
+    extends StObject
+       with KeyCode
+  /* 99 */ val Numpad6: typingsJapgolly.monacoEditor.mod.KeyCode.Numpad6 & Double = js.native
+  
+  @js.native
+  sealed trait Numpad7
+    extends StObject
+       with KeyCode
+  /* 100 */ val Numpad7: typingsJapgolly.monacoEditor.mod.KeyCode.Numpad7 & Double = js.native
+  
+  @js.native
+  sealed trait Numpad8
+    extends StObject
+       with KeyCode
+  /* 101 */ val Numpad8: typingsJapgolly.monacoEditor.mod.KeyCode.Numpad8 & Double = js.native
+  
+  @js.native
+  sealed trait Numpad9
+    extends StObject
+       with KeyCode
+  /* 102 */ val Numpad9: typingsJapgolly.monacoEditor.mod.KeyCode.Numpad9 & Double = js.native
+  
+  @js.native
+  sealed trait NumpadAdd
+    extends StObject
+       with KeyCode
+  /* 104 */ val NumpadAdd: typingsJapgolly.monacoEditor.mod.KeyCode.NumpadAdd & Double = js.native
+  
+  @js.native
+  sealed trait NumpadDecimal
+    extends StObject
+       with KeyCode
+  /* 107 */ val NumpadDecimal: typingsJapgolly.monacoEditor.mod.KeyCode.NumpadDecimal & Double = js.native
+  
+  @js.native
+  sealed trait NumpadDivide
+    extends StObject
+       with KeyCode
+  /* 108 */ val NumpadDivide: typingsJapgolly.monacoEditor.mod.KeyCode.NumpadDivide & Double = js.native
+  
+  @js.native
+  sealed trait NumpadMultiply
+    extends StObject
+       with KeyCode
+  /* 103 */ val NumpadMultiply: typingsJapgolly.monacoEditor.mod.KeyCode.NumpadMultiply & Double = js.native
+  
+  @js.native
+  sealed trait NumpadSubtract
+    extends StObject
+       with KeyCode
+  /* 106 */ val NumpadSubtract: typingsJapgolly.monacoEditor.mod.KeyCode.NumpadSubtract & Double = js.native
+  
+  /**
+    * Used for miscellaneous characters; it can vary by keyboard.
+    */
+  @js.native
+  sealed trait OEM_8
+    extends StObject
+       with KeyCode
+  /* 91 */ val OEM_8: typingsJapgolly.monacoEditor.mod.KeyCode.OEM_8 & Double = js.native
+  
+  @js.native
+  sealed trait PageDown
+    extends StObject
+       with KeyCode
+  /* 12 */ val PageDown: typingsJapgolly.monacoEditor.mod.KeyCode.PageDown & Double = js.native
+  
+  @js.native
+  sealed trait PageUp
+    extends StObject
+       with KeyCode
+  /* 11 */ val PageUp: typingsJapgolly.monacoEditor.mod.KeyCode.PageUp & Double = js.native
+  
+  @js.native
+  sealed trait PauseBreak
+    extends StObject
+       with KeyCode
+  /* 7 */ val PauseBreak: typingsJapgolly.monacoEditor.mod.KeyCode.PauseBreak & Double = js.native
+  
+  /**
+    * For any country/region, the '.' key
+    * For the US standard keyboard, the '.>' key
+    */
+  @js.native
+  sealed trait Period
+    extends StObject
+       with KeyCode
+  /* 84 */ val Period: typingsJapgolly.monacoEditor.mod.KeyCode.Period & Double = js.native
   
   /**
     * Used for miscellaneous characters; it can vary by keyboard.
     * For the US standard keyboard, the ''"' key
     */
   @js.native
-  sealed trait US_QUOTE extends KeyCode
+  sealed trait Quote
+    extends StObject
+       with KeyCode
+  /* 90 */ val Quote: typingsJapgolly.monacoEditor.mod.KeyCode.Quote & Double = js.native
+  
+  @js.native
+  sealed trait RightArrow
+    extends StObject
+       with KeyCode
+  /* 17 */ val RightArrow: typingsJapgolly.monacoEditor.mod.KeyCode.RightArrow & Double = js.native
+  
+  @js.native
+  sealed trait ScrollLock
+    extends StObject
+       with KeyCode
+  /* 79 */ val ScrollLock: typingsJapgolly.monacoEditor.mod.KeyCode.ScrollLock & Double = js.native
   
   /**
     * Used for miscellaneous characters; it can vary by keyboard.
     * For the US standard keyboard, the ';:' key
     */
   @js.native
-  sealed trait US_SEMICOLON extends KeyCode
+  sealed trait Semicolon
+    extends StObject
+       with KeyCode
+  /* 80 */ val Semicolon: typingsJapgolly.monacoEditor.mod.KeyCode.Semicolon & Double = js.native
+  
+  @js.native
+  sealed trait Shift
+    extends StObject
+       with KeyCode
+  /* 4 */ val Shift: typingsJapgolly.monacoEditor.mod.KeyCode.Shift & Double = js.native
   
   /**
     * Used for miscellaneous characters; it can vary by keyboard.
     * For the US standard keyboard, the '/?' key
     */
   @js.native
-  sealed trait US_SLASH extends KeyCode
+  sealed trait Slash
+    extends StObject
+       with KeyCode
+  /* 85 */ val Slash: typingsJapgolly.monacoEditor.mod.KeyCode.Slash & Double = js.native
+  
+  @js.native
+  sealed trait Space
+    extends StObject
+       with KeyCode
+  /* 10 */ val Space: typingsJapgolly.monacoEditor.mod.KeyCode.Space & Double = js.native
+  
+  @js.native
+  sealed trait Tab
+    extends StObject
+       with KeyCode
+  /* 2 */ val Tab: typingsJapgolly.monacoEditor.mod.KeyCode.Tab & Double = js.native
   
   /**
     * Placed first to cover the 0 value of the enum.
     */
   @js.native
-  sealed trait Unknown extends KeyCode
+  sealed trait Unknown
+    extends StObject
+       with KeyCode
+  /* 0 */ val Unknown: typingsJapgolly.monacoEditor.mod.KeyCode.Unknown & Double = js.native
   
   @js.native
-  sealed trait UpArrow extends KeyCode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KeyCode with Double] = js.native
-  /* 110 */ @js.native
-  object ABNT_C1 extends TopLevel[ABNT_C1 with Double]
-  
-  /* 111 */ @js.native
-  object ABNT_C2 extends TopLevel[ABNT_C2 with Double]
-  
-  /* 6 */ @js.native
-  object Alt extends TopLevel[Alt with Double]
-  
-  /* 1 */ @js.native
-  object Backspace extends TopLevel[Backspace with Double]
-  
-  /* 8 */ @js.native
-  object CapsLock extends TopLevel[CapsLock with Double]
-  
-  /* 58 */ @js.native
-  object ContextMenu extends TopLevel[ContextMenu with Double]
-  
-  /* 5 */ @js.native
-  object Ctrl extends TopLevel[Ctrl with Double]
-  
-  /* 20 */ @js.native
-  object Delete extends TopLevel[Delete with Double]
-  
-  /* 18 */ @js.native
-  object DownArrow extends TopLevel[DownArrow with Double]
-  
-  /* 13 */ @js.native
-  object End extends TopLevel[End with Double]
-  
-  /* 3 */ @js.native
-  object Enter extends TopLevel[Enter with Double]
-  
-  /* 9 */ @js.native
-  object Escape extends TopLevel[Escape with Double]
-  
-  /* 59 */ @js.native
-  object F1 extends TopLevel[F1 with Double]
-  
-  /* 68 */ @js.native
-  object F10 extends TopLevel[F10 with Double]
-  
-  /* 69 */ @js.native
-  object F11 extends TopLevel[F11 with Double]
-  
-  /* 70 */ @js.native
-  object F12 extends TopLevel[F12 with Double]
-  
-  /* 71 */ @js.native
-  object F13 extends TopLevel[F13 with Double]
-  
-  /* 72 */ @js.native
-  object F14 extends TopLevel[F14 with Double]
-  
-  /* 73 */ @js.native
-  object F15 extends TopLevel[F15 with Double]
-  
-  /* 74 */ @js.native
-  object F16 extends TopLevel[F16 with Double]
-  
-  /* 75 */ @js.native
-  object F17 extends TopLevel[F17 with Double]
-  
-  /* 76 */ @js.native
-  object F18 extends TopLevel[F18 with Double]
-  
-  /* 77 */ @js.native
-  object F19 extends TopLevel[F19 with Double]
-  
-  /* 60 */ @js.native
-  object F2 extends TopLevel[F2 with Double]
-  
-  /* 61 */ @js.native
-  object F3 extends TopLevel[F3 with Double]
-  
-  /* 62 */ @js.native
-  object F4 extends TopLevel[F4 with Double]
-  
-  /* 63 */ @js.native
-  object F5 extends TopLevel[F5 with Double]
-  
-  /* 64 */ @js.native
-  object F6 extends TopLevel[F6 with Double]
-  
-  /* 65 */ @js.native
-  object F7 extends TopLevel[F7 with Double]
-  
-  /* 66 */ @js.native
-  object F8 extends TopLevel[F8 with Double]
-  
-  /* 67 */ @js.native
-  object F9 extends TopLevel[F9 with Double]
-  
-  /* 14 */ @js.native
-  object Home extends TopLevel[Home with Double]
-  
-  /* 19 */ @js.native
-  object Insert extends TopLevel[Insert with Double]
-  
-  /* 21 */ @js.native
-  object KEY_0 extends TopLevel[KEY_0 with Double]
-  
-  /* 22 */ @js.native
-  object KEY_1 extends TopLevel[KEY_1 with Double]
-  
-  /* 23 */ @js.native
-  object KEY_2 extends TopLevel[KEY_2 with Double]
-  
-  /* 24 */ @js.native
-  object KEY_3 extends TopLevel[KEY_3 with Double]
-  
-  /* 25 */ @js.native
-  object KEY_4 extends TopLevel[KEY_4 with Double]
-  
-  /* 26 */ @js.native
-  object KEY_5 extends TopLevel[KEY_5 with Double]
-  
-  /* 27 */ @js.native
-  object KEY_6 extends TopLevel[KEY_6 with Double]
-  
-  /* 28 */ @js.native
-  object KEY_7 extends TopLevel[KEY_7 with Double]
-  
-  /* 29 */ @js.native
-  object KEY_8 extends TopLevel[KEY_8 with Double]
-  
-  /* 30 */ @js.native
-  object KEY_9 extends TopLevel[KEY_9 with Double]
-  
-  /* 31 */ @js.native
-  object KEY_A extends TopLevel[KEY_A with Double]
-  
-  /* 32 */ @js.native
-  object KEY_B extends TopLevel[KEY_B with Double]
-  
-  /* 33 */ @js.native
-  object KEY_C extends TopLevel[KEY_C with Double]
-  
-  /* 34 */ @js.native
-  object KEY_D extends TopLevel[KEY_D with Double]
-  
-  /* 35 */ @js.native
-  object KEY_E extends TopLevel[KEY_E with Double]
-  
-  /* 36 */ @js.native
-  object KEY_F extends TopLevel[KEY_F with Double]
-  
-  /* 37 */ @js.native
-  object KEY_G extends TopLevel[KEY_G with Double]
-  
-  /* 38 */ @js.native
-  object KEY_H extends TopLevel[KEY_H with Double]
-  
-  /* 39 */ @js.native
-  object KEY_I extends TopLevel[KEY_I with Double]
-  
-  /* 109 */ @js.native
-  object KEY_IN_COMPOSITION extends TopLevel[KEY_IN_COMPOSITION with Double]
-  
-  /* 40 */ @js.native
-  object KEY_J extends TopLevel[KEY_J with Double]
-  
-  /* 41 */ @js.native
-  object KEY_K extends TopLevel[KEY_K with Double]
-  
-  /* 42 */ @js.native
-  object KEY_L extends TopLevel[KEY_L with Double]
-  
-  /* 43 */ @js.native
-  object KEY_M extends TopLevel[KEY_M with Double]
-  
-  /* 44 */ @js.native
-  object KEY_N extends TopLevel[KEY_N with Double]
-  
-  /* 45 */ @js.native
-  object KEY_O extends TopLevel[KEY_O with Double]
-  
-  /* 46 */ @js.native
-  object KEY_P extends TopLevel[KEY_P with Double]
-  
-  /* 47 */ @js.native
-  object KEY_Q extends TopLevel[KEY_Q with Double]
-  
-  /* 48 */ @js.native
-  object KEY_R extends TopLevel[KEY_R with Double]
-  
-  /* 49 */ @js.native
-  object KEY_S extends TopLevel[KEY_S with Double]
-  
-  /* 50 */ @js.native
-  object KEY_T extends TopLevel[KEY_T with Double]
-  
-  /* 51 */ @js.native
-  object KEY_U extends TopLevel[KEY_U with Double]
-  
-  /* 52 */ @js.native
-  object KEY_V extends TopLevel[KEY_V with Double]
-  
-  /* 53 */ @js.native
-  object KEY_W extends TopLevel[KEY_W with Double]
-  
-  /* 54 */ @js.native
-  object KEY_X extends TopLevel[KEY_X with Double]
-  
-  /* 55 */ @js.native
-  object KEY_Y extends TopLevel[KEY_Y with Double]
-  
-  /* 56 */ @js.native
-  object KEY_Z extends TopLevel[KEY_Z with Double]
-  
-  /* 15 */ @js.native
-  object LeftArrow extends TopLevel[LeftArrow with Double]
-  
-  /* 112 */ @js.native
-  object MAX_VALUE extends TopLevel[MAX_VALUE with Double]
-  
-  /* 57 */ @js.native
-  object Meta extends TopLevel[Meta with Double]
-  
-  /* 93 */ @js.native
-  object NUMPAD_0 extends TopLevel[NUMPAD_0 with Double]
-  
-  /* 94 */ @js.native
-  object NUMPAD_1 extends TopLevel[NUMPAD_1 with Double]
-  
-  /* 95 */ @js.native
-  object NUMPAD_2 extends TopLevel[NUMPAD_2 with Double]
-  
-  /* 96 */ @js.native
-  object NUMPAD_3 extends TopLevel[NUMPAD_3 with Double]
-  
-  /* 97 */ @js.native
-  object NUMPAD_4 extends TopLevel[NUMPAD_4 with Double]
-  
-  /* 98 */ @js.native
-  object NUMPAD_5 extends TopLevel[NUMPAD_5 with Double]
-  
-  /* 99 */ @js.native
-  object NUMPAD_6 extends TopLevel[NUMPAD_6 with Double]
-  
-  /* 100 */ @js.native
-  object NUMPAD_7 extends TopLevel[NUMPAD_7 with Double]
-  
-  /* 101 */ @js.native
-  object NUMPAD_8 extends TopLevel[NUMPAD_8 with Double]
-  
-  /* 102 */ @js.native
-  object NUMPAD_9 extends TopLevel[NUMPAD_9 with Double]
-  
-  /* 104 */ @js.native
-  object NUMPAD_ADD extends TopLevel[NUMPAD_ADD with Double]
-  
-  /* 107 */ @js.native
-  object NUMPAD_DECIMAL extends TopLevel[NUMPAD_DECIMAL with Double]
-  
-  /* 108 */ @js.native
-  object NUMPAD_DIVIDE extends TopLevel[NUMPAD_DIVIDE with Double]
-  
-  /* 103 */ @js.native
-  object NUMPAD_MULTIPLY extends TopLevel[NUMPAD_MULTIPLY with Double]
-  
-  /* 105 */ @js.native
-  object NUMPAD_SEPARATOR extends TopLevel[NUMPAD_SEPARATOR with Double]
-  
-  /* 106 */ @js.native
-  object NUMPAD_SUBTRACT extends TopLevel[NUMPAD_SUBTRACT with Double]
-  
-  /* 78 */ @js.native
-  object NumLock extends TopLevel[NumLock with Double]
-  
-  /* 92 */ @js.native
-  object OEM_102 extends TopLevel[OEM_102 with Double]
-  
-  /* 91 */ @js.native
-  object OEM_8 extends TopLevel[OEM_8 with Double]
-  
-  /* 12 */ @js.native
-  object PageDown extends TopLevel[PageDown with Double]
-  
-  /* 11 */ @js.native
-  object PageUp extends TopLevel[PageUp with Double]
-  
-  /* 7 */ @js.native
-  object PauseBreak extends TopLevel[PauseBreak with Double]
-  
-  /* 17 */ @js.native
-  object RightArrow extends TopLevel[RightArrow with Double]
-  
-  /* 79 */ @js.native
-  object ScrollLock extends TopLevel[ScrollLock with Double]
-  
-  /* 4 */ @js.native
-  object Shift extends TopLevel[Shift with Double]
-  
-  /* 10 */ @js.native
-  object Space extends TopLevel[Space with Double]
-  
-  /* 2 */ @js.native
-  object Tab extends TopLevel[Tab with Double]
-  
-  /* 88 */ @js.native
-  object US_BACKSLASH extends TopLevel[US_BACKSLASH with Double]
-  
-  /* 86 */ @js.native
-  object US_BACKTICK extends TopLevel[US_BACKTICK with Double]
-  
-  /* 89 */ @js.native
-  object US_CLOSE_SQUARE_BRACKET extends TopLevel[US_CLOSE_SQUARE_BRACKET with Double]
-  
-  /* 82 */ @js.native
-  object US_COMMA extends TopLevel[US_COMMA with Double]
-  
-  /* 84 */ @js.native
-  object US_DOT extends TopLevel[US_DOT with Double]
-  
-  /* 81 */ @js.native
-  object US_EQUAL extends TopLevel[US_EQUAL with Double]
-  
-  /* 83 */ @js.native
-  object US_MINUS extends TopLevel[US_MINUS with Double]
-  
-  /* 87 */ @js.native
-  object US_OPEN_SQUARE_BRACKET extends TopLevel[US_OPEN_SQUARE_BRACKET with Double]
-  
-  /* 90 */ @js.native
-  object US_QUOTE extends TopLevel[US_QUOTE with Double]
-  
-  /* 80 */ @js.native
-  object US_SEMICOLON extends TopLevel[US_SEMICOLON with Double]
-  
-  /* 85 */ @js.native
-  object US_SLASH extends TopLevel[US_SLASH with Double]
-  
-  /* 0 */ @js.native
-  object Unknown extends TopLevel[Unknown with Double]
-  
-  /* 16 */ @js.native
-  object UpArrow extends TopLevel[UpArrow with Double]
-  
+  sealed trait UpArrow
+    extends StObject
+       with KeyCode
+  /* 16 */ val UpArrow: typingsJapgolly.monacoEditor.mod.KeyCode.UpArrow & Double = js.native
 }
-

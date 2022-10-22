@@ -4,16 +4,16 @@
 Typings are for version 1.1
 
 ## Library description:
-N3 parser that implements the RDFJS Sink interface
+N3 parser that implements the RDF/JS Sink interface
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/parser-n3 |
 | Keywords           | rdf, rdfjs, parser, n3, ntriples, turtle |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 5724 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 12656.333333333334 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/parser-n3)

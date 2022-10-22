@@ -1,134 +1,139 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Microsoft.Maps.LocationRect")
-@js.native
-class LocationRect protected () extends js.Object {
-  /**
-    * @constructor
-    * @param center The center of the LocationRect.
-    * @param width The width of the LocationRect in degrees.
-    * @param height The height of the LocationRect in degrees.
-    */
-  def this(center: Location, width: Double, height: Double) = this()
-  /** The location that defines the center of the rectangle. */
-  var center: Location = js.native
-  /** The height, in degrees, of the rectangle. */
-  var height: Double = js.native
-  /** The width, in degrees, of the rectangle. */
-  var width: Double = js.native
+trait LocationRect extends StObject {
+  
   /**
     * Scales the size of a LocationRect by multiplying the width and height properties by a percentage.
     * @param percentage A percentage value to increase the size of the LocationRect by.
     */
-  def buffer(percentage: Double): Unit = js.native
+  def buffer(percentage: Double): Unit
+  
+  /** The location that defines the center of the rectangle. */
+  var center: Location
+  
   /**
     * Gets whether the specified Location is within the LocationRect.
     * @returns A boolean indicating if a location is within a LocationRect.
     */
-  def contains(location: Location): Boolean = js.native
+  def contains(location: Location): Boolean
+  
   /**
     * Determines if the LocationRect crosses the 180th meridian.
     * @returns A boolean indicating if the LocationRect crosses the international date line (-180/180 degrees longitude).
     */
-  def crossesInternationalDateLine(): Boolean = js.native
+  def crossesInternationalDateLine(): Boolean
+  
   /**
     * Gets the longitude that defines the eastern edge of the LocationRect.
     * @returns The eastern longitude value of the LocationRect.
     */
-  def getEast(): Double = js.native
+  def getEast(): Double
+  
   /**
     * Gets the latitude that defines the northern edge of the LocationRect.
     * @returns The northern latitude value of the LocationRect.
     */
-  def getNorth(): Double = js.native
+  def getNorth(): Double
+  
   /**
     * Gets the Location that defines the northwest corner of the LocationRect.
     * @returns The northwest corner location of the LocationRect.
     */
-  def getNorthwest(): Location = js.native
+  def getNorthwest(): Location
+  
   /**
     * Gets the latitude that defines the southern edge of the LocationRect.
     * @returns The southern latitude value of the LocationRect.
     */
-  def getSouth(): Double = js.native
+  def getSouth(): Double
+  
   /**
     * Gets the Location that defines the southeast corner of the LocationRect.
     * @returns The southeast corner location of the LocationRect.
     */
-  def getSoutheast(): Location = js.native
+  def getSoutheast(): Location
+  
   /**
     * Gets the latitude that defines the western edge of the LocationRect.
     * @returns The western longitude value of the LocationRect.
     */
-  def getWest(): Double = js.native
+  def getWest(): Double
+  
+  /** The height, in degrees, of the rectangle. */
+  var height: Double
+  
   /**
     * Gets whether the specified LocationRect intersects with this LocationRect.
     * @param rect A second LocationRect to test for intersection with.
     * @returns A boolean indicating if a second LocationRect interests with this LocationRect.
     */
-  def intersects(rect: LocationRect): Boolean = js.native
+  def intersects(rect: LocationRect): Boolean
+  
   /**
     * If a LocationRect crosses the international date line, this method splits it into two LocationRect objects and returns them as an array.
     * @returns An array of LocationRects, that are split by the international date line (-180/180 degrees longitude)
     */
-  def splitByInternationalDateLine(): js.Array[LocationRect] = js.native
+  def splitByInternationalDateLine(): js.Array[LocationRect]
+  
+  /** The width, in degrees, of the rectangle. */
+  var width: Double
 }
-
-/* static members */
-@JSGlobal("Microsoft.Maps.LocationRect")
-@js.native
-object LocationRect extends js.Object {
-  /**
-    * Gets a LocationRect using the specified locations for the northwest and southeast corners.
-    * @param northwest The north west corner of the LocationRect.
-    * @param southeast The south east corner of the LocationRect.
-    * @returns A LocationRect using the specified locations for the northwest and southeast corners.
-    */
-  def fromCorners(northwest: Location, southeast: Location): LocationRect = js.native
-  /**
-    * Gets a LocationRect using the specified northern and southern latitudes and western and eastern longitudes for the rectangle boundaries.
-    * @param north The northern latitude of the LocationRect.
-    * @param west The western longitude of the LocationRect.
-    * @param south The southern latitude of the LocationRect.
-    * @param east The eastern longitude of the LocationRect.
-    * @returns A LocationRect defined by the specified northern and southern latitudes and western and eastern longitudes for the rectangle boundaries.
-    */
-  def fromEdges(north: Double, west: Double, south: Double, east: Double): LocationRect = js.native
-  /**
-    * Gets a LocationRect using a list of locations.
-    * @param locations A list of locations.
-    * @returns A LocationRect that encloses all the specified locations.
-    */
-  def fromLocations(locations: Location*): LocationRect = js.native
-  /**
-    * Gets a LocationRect using an array of locations.
-    * @param locations An array of locations.
-    * @returns A LocationRect that encloses all the specified locations.
-    */
-  def fromLocations(locations: js.Array[Location]): LocationRect = js.native
-  def fromShapes(shapes: js.Array[IPrimitive | js.Array[IPrimitive]]): LocationRect = js.native
-  /**
-    * Calculates the LocationRect for an indivudal shape or an array of shapes.
-    * @param shapes An indivudal shape or an array of shapes to calculate the LocationRect for.
-    * @returns A LocationRect for the shapes.
-    */
-  def fromShapes(shapes: IPrimitive): LocationRect = js.native
-  /**
-    * Creates a LocationRect from a string with the following format: "north,west,south,east". North, west, south and east specify the coordinate number values.
-    * @param str A string that repsents a LocationRect with the format "north,west,south,east".
-    * @returns A LocationRect defined by the specified northern and southern latitudes and western and eastern longitudes for the rectangle boundaries that have been parsed by the string.
-    */
-  def fromString(str: String): LocationRect = js.native
-  /**
-    * A static function that merges two LocationRect to form a new LocationRect which represents the combined area of the two LocationRect objects.
-    * @param rect1 The first LocationRect to merge with the second LocationRect.
-    * @param rect2 The second LocationRect to merge with the first LocationRect.
-    * @returns A new LocationRect which represents the combined area of the two LocationRect objects.
-    */
-  def merge(rect1: LocationRect, rect2: LocationRect): LocationRect = js.native
+object LocationRect {
+  
+  inline def apply(
+    buffer: Double => Callback,
+    center: Location,
+    contains: Location => Boolean,
+    crossesInternationalDateLine: CallbackTo[Boolean],
+    getEast: CallbackTo[Double],
+    getNorth: CallbackTo[Double],
+    getNorthwest: CallbackTo[Location],
+    getSouth: CallbackTo[Double],
+    getSoutheast: CallbackTo[Location],
+    getWest: CallbackTo[Double],
+    height: Double,
+    intersects: LocationRect => Boolean,
+    splitByInternationalDateLine: CallbackTo[js.Array[LocationRect]],
+    width: Double
+  ): LocationRect = {
+    val __obj = js.Dynamic.literal(buffer = js.Any.fromFunction1((t0: Double) => buffer(t0).runNow()), center = center.asInstanceOf[js.Any], contains = js.Any.fromFunction1(contains), crossesInternationalDateLine = crossesInternationalDateLine.toJsFn, getEast = getEast.toJsFn, getNorth = getNorth.toJsFn, getNorthwest = getNorthwest.toJsFn, getSouth = getSouth.toJsFn, getSoutheast = getSoutheast.toJsFn, getWest = getWest.toJsFn, height = height.asInstanceOf[js.Any], intersects = js.Any.fromFunction1(intersects), splitByInternationalDateLine = splitByInternationalDateLine.toJsFn, width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocationRect]
+  }
+  
+  extension [Self <: LocationRect](x: Self) {
+    
+    inline def setBuffer(value: Double => Callback): Self = StObject.set(x, "buffer", js.Any.fromFunction1((t0: Double) => value(t0).runNow()))
+    
+    inline def setCenter(value: Location): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    
+    inline def setContains(value: Location => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    
+    inline def setCrossesInternationalDateLine(value: CallbackTo[Boolean]): Self = StObject.set(x, "crossesInternationalDateLine", value.toJsFn)
+    
+    inline def setGetEast(value: CallbackTo[Double]): Self = StObject.set(x, "getEast", value.toJsFn)
+    
+    inline def setGetNorth(value: CallbackTo[Double]): Self = StObject.set(x, "getNorth", value.toJsFn)
+    
+    inline def setGetNorthwest(value: CallbackTo[Location]): Self = StObject.set(x, "getNorthwest", value.toJsFn)
+    
+    inline def setGetSouth(value: CallbackTo[Double]): Self = StObject.set(x, "getSouth", value.toJsFn)
+    
+    inline def setGetSoutheast(value: CallbackTo[Location]): Self = StObject.set(x, "getSoutheast", value.toJsFn)
+    
+    inline def setGetWest(value: CallbackTo[Double]): Self = StObject.set(x, "getWest", value.toJsFn)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setIntersects(value: LocationRect => Boolean): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
+    
+    inline def setSplitByInternationalDateLine(value: CallbackTo[js.Array[LocationRect]]): Self = StObject.set(x, "splitByInternationalDateLine", value.toJsFn)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
 }
-

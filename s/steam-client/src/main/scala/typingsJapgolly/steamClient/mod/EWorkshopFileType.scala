@@ -1,125 +1,123 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EWorkshopFileType extends js.Object
-
+sealed trait EWorkshopFileType extends StObject
 @JSImport("steam-client", "EWorkshopFileType")
 @js.native
-object EWorkshopFileType extends js.Object {
-  @js.native
-  sealed trait Art extends EWorkshopFileType
-  
-  @js.native
-  sealed trait Collection extends EWorkshopFileType
-  
-  @js.native
-  sealed trait Community extends EWorkshopFileType
-  
-  @js.native
-  sealed trait Concept extends EWorkshopFileType
-  
-  @js.native
-  sealed trait ControllerBinding extends EWorkshopFileType
-  
-  @js.native
-  sealed trait First extends EWorkshopFileType
-  
-  @js.native
-  sealed trait Game extends EWorkshopFileType
-  
-  @js.native
-  sealed trait GameManagedItem extends EWorkshopFileType
-  
-  @js.native
-  sealed trait IntegratedGuide extends EWorkshopFileType
-  
-  @js.native
-  sealed trait Max extends EWorkshopFileType
-  
-  @js.native
-  sealed trait Merch extends EWorkshopFileType
-  
-  @js.native
-  sealed trait Microtransaction extends EWorkshopFileType
-  
-  @js.native
-  sealed trait Screenshot extends EWorkshopFileType
-  
-  @js.native
-  sealed trait Software extends EWorkshopFileType
-  
-  @js.native
-  sealed trait SteamVideo extends EWorkshopFileType
-  
-  @js.native
-  sealed trait SteamworksAccessInvite extends EWorkshopFileType
-  
-  @js.native
-  sealed trait Video extends EWorkshopFileType
-  
-  @js.native
-  sealed trait WebGuide extends EWorkshopFileType
+object EWorkshopFileType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EWorkshopFileType with Double] = js.native
-  /* 3 */ @js.native
-  object Art extends TopLevel[Art with Double]
+  def apply(value: Double): js.UndefOr[EWorkshopFileType & Double] = js.native
   
-  /* 2 */ @js.native
-  object Collection extends TopLevel[Collection with Double]
+  @js.native
+  sealed trait Art
+    extends StObject
+       with EWorkshopFileType
+  /* 3 */ val Art: typingsJapgolly.steamClient.mod.EWorkshopFileType.Art & Double = js.native
   
-  /* 0 */ @js.native
-  object Community extends TopLevel[Community with Double]
+  @js.native
+  sealed trait Collection
+    extends StObject
+       with EWorkshopFileType
+  /* 2 */ val Collection: typingsJapgolly.steamClient.mod.EWorkshopFileType.Collection & Double = js.native
   
-  /* 8 */ @js.native
-  object Concept extends TopLevel[Concept with Double]
+  @js.native
+  sealed trait Community
+    extends StObject
+       with EWorkshopFileType
+  /* 0 */ val Community: typingsJapgolly.steamClient.mod.EWorkshopFileType.Community & Double = js.native
   
-  /* 12 */ @js.native
-  object ControllerBinding extends TopLevel[ControllerBinding with Double]
+  @js.native
+  sealed trait Concept
+    extends StObject
+       with EWorkshopFileType
+  /* 8 */ val Concept: typingsJapgolly.steamClient.mod.EWorkshopFileType.Concept & Double = js.native
   
-  /* 0 */ @js.native
-  object First extends TopLevel[First with Double]
+  @js.native
+  sealed trait ControllerBinding
+    extends StObject
+       with EWorkshopFileType
+  /* 12 */ val ControllerBinding: typingsJapgolly.steamClient.mod.EWorkshopFileType.ControllerBinding & Double = js.native
   
-  /* 6 */ @js.native
-  object Game extends TopLevel[Game with Double]
+  @js.native
+  sealed trait First
+    extends StObject
+       with EWorkshopFileType
+  /* 0 */ val First: typingsJapgolly.steamClient.mod.EWorkshopFileType.First & Double = js.native
   
-  /* 15 */ @js.native
-  object GameManagedItem extends TopLevel[GameManagedItem with Double]
+  @js.native
+  sealed trait Game
+    extends StObject
+       with EWorkshopFileType
+  /* 6 */ val Game: typingsJapgolly.steamClient.mod.EWorkshopFileType.Game & Double = js.native
   
-  /* 10 */ @js.native
-  object IntegratedGuide extends TopLevel[IntegratedGuide with Double]
+  @js.native
+  sealed trait GameManagedItem
+    extends StObject
+       with EWorkshopFileType
+  /* 15 */ val GameManagedItem: typingsJapgolly.steamClient.mod.EWorkshopFileType.GameManagedItem & Double = js.native
   
-  /* 16 */ @js.native
-  object Max extends TopLevel[Max with Double]
+  @js.native
+  sealed trait IntegratedGuide
+    extends StObject
+       with EWorkshopFileType
+  /* 10 */ val IntegratedGuide: typingsJapgolly.steamClient.mod.EWorkshopFileType.IntegratedGuide & Double = js.native
   
-  /* 11 */ @js.native
-  object Merch extends TopLevel[Merch with Double]
+  @js.native
+  sealed trait Max
+    extends StObject
+       with EWorkshopFileType
+  /* 16 */ val Max: typingsJapgolly.steamClient.mod.EWorkshopFileType.Max & Double = js.native
   
-  /* 1 */ @js.native
-  object Microtransaction extends TopLevel[Microtransaction with Double]
+  @js.native
+  sealed trait Merch
+    extends StObject
+       with EWorkshopFileType
+  /* 11 */ val Merch: typingsJapgolly.steamClient.mod.EWorkshopFileType.Merch & Double = js.native
   
-  /* 5 */ @js.native
-  object Screenshot extends TopLevel[Screenshot with Double]
+  @js.native
+  sealed trait Microtransaction
+    extends StObject
+       with EWorkshopFileType
+  /* 1 */ val Microtransaction: typingsJapgolly.steamClient.mod.EWorkshopFileType.Microtransaction & Double = js.native
   
-  /* 7 */ @js.native
-  object Software extends TopLevel[Software with Double]
+  @js.native
+  sealed trait Screenshot
+    extends StObject
+       with EWorkshopFileType
+  /* 5 */ val Screenshot: typingsJapgolly.steamClient.mod.EWorkshopFileType.Screenshot & Double = js.native
   
-  /* 14 */ @js.native
-  object SteamVideo extends TopLevel[SteamVideo with Double]
+  @js.native
+  sealed trait Software
+    extends StObject
+       with EWorkshopFileType
+  /* 7 */ val Software: typingsJapgolly.steamClient.mod.EWorkshopFileType.Software & Double = js.native
   
-  /* 13 */ @js.native
-  object SteamworksAccessInvite extends TopLevel[SteamworksAccessInvite with Double]
+  @js.native
+  sealed trait SteamVideo
+    extends StObject
+       with EWorkshopFileType
+  /* 14 */ val SteamVideo: typingsJapgolly.steamClient.mod.EWorkshopFileType.SteamVideo & Double = js.native
   
-  /* 4 */ @js.native
-  object Video extends TopLevel[Video with Double]
+  @js.native
+  sealed trait SteamworksAccessInvite
+    extends StObject
+       with EWorkshopFileType
+  /* 13 */ val SteamworksAccessInvite: typingsJapgolly.steamClient.mod.EWorkshopFileType.SteamworksAccessInvite & Double = js.native
   
-  /* 9 */ @js.native
-  object WebGuide extends TopLevel[WebGuide with Double]
+  @js.native
+  sealed trait Video
+    extends StObject
+       with EWorkshopFileType
+  /* 4 */ val Video: typingsJapgolly.steamClient.mod.EWorkshopFileType.Video & Double = js.native
   
+  @js.native
+  sealed trait WebGuide
+    extends StObject
+       with EWorkshopFileType
+  /* 9 */ val WebGuide: typingsJapgolly.steamClient.mod.EWorkshopFileType.WebGuide & Double = js.native
 }
-

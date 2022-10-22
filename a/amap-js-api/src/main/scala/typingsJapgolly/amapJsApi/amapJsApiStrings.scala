@@ -14,1248 +14,1357 @@ import typingsJapgolly.amapJsApi.AMap.Text.TextAlign
 import typingsJapgolly.amapJsApi.AMap.Text.VerticalAlign
 import typingsJapgolly.amapJsApi.AMap.convertFrom.SearchStatus
 import typingsJapgolly.amapJsApi.AMap.convertFrom.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amapJsApiStrings {
-  @js.native
-  sealed trait `2D` extends ViewMode
   
   @js.native
-  sealed trait `3D` extends ViewMode
+  sealed trait `2D`
+    extends StObject
+       with ViewMode
+  inline def `2D`: `2D` = "2D".asInstanceOf[`2D`]
   
   @js.native
-  sealed trait AMAP_ANIMATION_BOUNCE extends AnimationName
+  sealed trait `3D`
+    extends StObject
+       with ViewMode
+  inline def `3D`: `3D` = "3D".asInstanceOf[`3D`]
   
   @js.native
-  sealed trait AMAP_ANIMATION_DROP extends AnimationName
+  sealed trait AMAP_ANIMATION_BOUNCE
+    extends StObject
+       with AnimationName
+  inline def AMAP_ANIMATION_BOUNCE: AMAP_ANIMATION_BOUNCE = "AMAP_ANIMATION_BOUNCE".asInstanceOf[AMAP_ANIMATION_BOUNCE]
   
   @js.native
-  sealed trait AMAP_ANIMATION_NONE extends AnimationName
+  sealed trait AMAP_ANIMATION_DROP
+    extends StObject
+       with AnimationName
+  inline def AMAP_ANIMATION_DROP: AMAP_ANIMATION_DROP = "AMAP_ANIMATION_DROP".asInstanceOf[AMAP_ANIMATION_DROP]
   
   @js.native
-  sealed trait EPGS3395 extends js.Object
+  sealed trait AMAP_ANIMATION_NONE
+    extends StObject
+       with AnimationName
+  inline def AMAP_ANIMATION_NONE: AMAP_ANIMATION_NONE = "AMAP_ANIMATION_NONE".asInstanceOf[AMAP_ANIMATION_NONE]
   
   @js.native
-  sealed trait EPGS3857 extends js.Object
+  sealed trait EPGS3395 extends StObject
+  inline def EPGS3395: EPGS3395 = "EPGS3395".asInstanceOf[EPGS3395]
   
   @js.native
-  sealed trait EPGS4326 extends js.Object
+  sealed trait EPGS3857 extends StObject
+  inline def EPGS3857: EPGS3857 = "EPGS3857".asInstanceOf[EPGS3857]
   
   @js.native
-  sealed trait EPSG3395 extends js.Object
+  sealed trait EPGS4326 extends StObject
+  inline def EPGS4326: EPGS4326 = "EPGS4326".asInstanceOf[EPGS4326]
   
   @js.native
-  sealed trait EPSG3857 extends js.Object
+  sealed trait EPSG3395 extends StObject
+  inline def EPSG3395: EPSG3395 = "EPSG3395".asInstanceOf[EPSG3395]
   
   @js.native
-  sealed trait EPSG4326 extends js.Object
+  sealed trait EPSG3857 extends StObject
+  inline def EPSG3857: EPSG3857 = "EPSG3857".asInstanceOf[EPSG3857]
   
   @js.native
-  sealed trait FALSE extends js.Object
+  sealed trait EPSG4326 extends StObject
+  inline def EPSG4326: EPSG4326 = "EPSG4326".asInstanceOf[EPSG4326]
   
   @js.native
-  sealed trait Feature extends js.Object
+  sealed trait FALSE extends StObject
+  inline def FALSE: FALSE = "FALSE".asInstanceOf[FALSE]
   
   @js.native
-  sealed trait FeatureCollection extends js.Object
+  sealed trait Feature extends StObject
+  inline def Feature: Feature = "Feature".asInstanceOf[Feature]
   
   @js.native
-  sealed trait GeometryCollection extends js.Object
+  sealed trait FeatureCollection extends StObject
+  inline def FeatureCollection: FeatureCollection = "FeatureCollection".asInstanceOf[FeatureCollection]
   
   @js.native
-  sealed trait LineString extends js.Object
+  sealed trait GeometryCollection extends StObject
+  inline def GeometryCollection: GeometryCollection = "GeometryCollection".asInstanceOf[GeometryCollection]
   
   @js.native
-  sealed trait MultiLineString extends js.Object
+  sealed trait LineString extends StObject
+  inline def LineString: LineString = "LineString".asInstanceOf[LineString]
   
   @js.native
-  sealed trait MultiPoint extends js.Object
+  sealed trait MultiLineString extends StObject
+  inline def MultiLineString: MultiLineString = "MultiLineString".asInstanceOf[MultiLineString]
   
   @js.native
-  sealed trait MultiPolygon extends js.Object
+  sealed trait MultiPoint extends StObject
+  inline def MultiPoint: MultiPoint = "MultiPoint".asInstanceOf[MultiPoint]
   
   @js.native
-  sealed trait Omit extends js.Object
+  sealed trait MultiPolygon extends StObject
+  inline def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
   
   @js.native
-  sealed trait Point extends js.Object
+  sealed trait Point extends StObject
+  inline def Point: Point = "Point".asInstanceOf[Point]
   
   @js.native
-  sealed trait Polygon extends js.Object
+  sealed trait Polygon extends StObject
+  inline def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
   
   @js.native
-  sealed trait TRUE extends js.Object
+  sealed trait TRUE extends StObject
+  inline def TRUE: TRUE = "TRUE".asInstanceOf[TRUE]
   
   @js.native
-  sealed trait a extends js.Object
+  sealed trait a extends StObject
+  inline def a: a = "a".asInstanceOf[a]
   
   @js.native
-  sealed trait abbr extends js.Object
+  sealed trait abbr extends StObject
+  inline def abbr: abbr = "abbr".asInstanceOf[abbr]
   
   @js.native
-  sealed trait address extends js.Object
+  sealed trait abort extends StObject
+  inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait address extends StObject
+  inline def address: address = "address".asInstanceOf[address]
   
   @js.native
-  sealed trait android extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait applet extends js.Object
+  sealed trait android extends StObject
+  inline def android: android = "android".asInstanceOf[android]
   
   @js.native
-  sealed trait area extends js.Object
+  sealed trait animationcancel extends StObject
+  inline def animationcancel: animationcancel = "animationcancel".asInstanceOf[animationcancel]
   
   @js.native
-  sealed trait article extends js.Object
+  sealed trait animationend extends StObject
+  inline def animationend: animationend = "animationend".asInstanceOf[animationend]
   
   @js.native
-  sealed trait aside extends js.Object
+  sealed trait animationiteration extends StObject
+  inline def animationiteration: animationiteration = "animationiteration".asInstanceOf[animationiteration]
   
   @js.native
-  sealed trait audio extends js.Object
+  sealed trait animationstart extends StObject
+  inline def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
   
   @js.native
-  sealed trait b extends js.Object
+  sealed trait area extends StObject
+  inline def area: area = "area".asInstanceOf[area]
   
   @js.native
-  sealed trait baidu extends Type
+  sealed trait article extends StObject
+  inline def article: article = "article".asInstanceOf[article]
   
   @js.native
-  sealed trait base extends js.Object
+  sealed trait aside extends StObject
+  inline def aside: aside = "aside".asInstanceOf[aside]
   
   @js.native
-  sealed trait basefont extends js.Object
+  sealed trait audio extends StObject
+  inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait bdi extends js.Object
+  sealed trait auxclick extends StObject
+  inline def auxclick: auxclick = "auxclick".asInstanceOf[auxclick]
   
   @js.native
-  sealed trait bdo extends js.Object
+  sealed trait b extends StObject
+  inline def b: b = "b".asInstanceOf[b]
   
   @js.native
-  sealed trait bevel extends StrokeLineJoin
+  sealed trait baidu
+    extends StObject
+       with Type
+  inline def baidu: baidu = "baidu".asInstanceOf[baidu]
+  
+  @js.native
+  sealed trait base extends StObject
+  inline def base: base = "base".asInstanceOf[base]
+  
+  @js.native
+  sealed trait bdi extends StObject
+  inline def bdi: bdi = "bdi".asInstanceOf[bdi]
+  
+  @js.native
+  sealed trait bdo extends StObject
+  inline def bdo: bdo = "bdo".asInstanceOf[bdo]
+  
+  @js.native
+  sealed trait beforeinput extends StObject
+  inline def beforeinput: beforeinput = "beforeinput".asInstanceOf[beforeinput]
+  
+  @js.native
+  sealed trait bevel
+    extends StObject
+       with StrokeLineJoin
+  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
   sealed trait bg
-    extends typingsJapgolly.amapJsApi.AMap.Map.Feature
+    extends StObject
+       with typingsJapgolly.amapJsApi.AMap.Map.Feature
+  inline def bg: bg = "bg".asInstanceOf[bg]
   
   @js.native
-  sealed trait blockquote extends js.Object
+  sealed trait blockquote extends StObject
+  inline def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   
   @js.native
-  sealed trait body extends js.Object
+  sealed trait blur extends StObject
+  inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
-  sealed trait bold extends FontWeight
+  sealed trait body extends StObject
+  inline def body: body = "body".asInstanceOf[body]
+  
+  @js.native
+  sealed trait bold
+    extends StObject
+       with FontWeight
+  inline def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
   sealed trait bottom
-    extends LabelDirection
+    extends StObject
+       with LabelDirection
        with TextDirection
        with VerticalAlign
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait `bottom-center`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typingsJapgolly.amapJsApi.AMap.Marker.Anchor
        with typingsJapgolly.amapJsApi.AMap.InfoWindow.Anchor
+  inline def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
   
   @js.native
   sealed trait `bottom-left`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typingsJapgolly.amapJsApi.AMap.Marker.Anchor
        with typingsJapgolly.amapJsApi.AMap.InfoWindow.Anchor
+  inline def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   
   @js.native
   sealed trait `bottom-right`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typingsJapgolly.amapJsApi.AMap.Marker.Anchor
        with typingsJapgolly.amapJsApi.AMap.InfoWindow.Anchor
+  inline def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
   @js.native
-  sealed trait br extends js.Object
+  sealed trait br extends StObject
+  inline def br: br = "br".asInstanceOf[br]
   
   @js.native
   sealed trait building
-    extends typingsJapgolly.amapJsApi.AMap.Map.Feature
+    extends StObject
+       with typingsJapgolly.amapJsApi.AMap.Map.Feature
+  inline def building: building = "building".asInstanceOf[building]
   
   @js.native
-  sealed trait butt extends StrokeLineCap
+  sealed trait butt
+    extends StObject
+       with StrokeLineCap
+  inline def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait button extends StObject
+  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait c extends js.Object
+  sealed trait c extends StObject
+  inline def c: c = "c".asInstanceOf[c]
   
   @js.native
-  sealed trait canvas extends js.Object
+  sealed trait canplay extends StObject
+  inline def canplay: canplay = "canplay".asInstanceOf[canplay]
   
   @js.native
-  sealed trait caption extends js.Object
+  sealed trait canplaythrough extends StObject
+  inline def canplaythrough: canplaythrough = "canplaythrough".asInstanceOf[canplaythrough]
+  
+  @js.native
+  sealed trait canvas extends StObject
+  inline def canvas: canvas = "canvas".asInstanceOf[canvas]
+  
+  @js.native
+  sealed trait caption extends StObject
+  inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
   sealed trait center
-    extends Anchor
+    extends StObject
+       with Anchor
        with typingsJapgolly.amapJsApi.AMap.Marker.Anchor
        with typingsJapgolly.amapJsApi.AMap.InfoWindow.Anchor
        with LabelDirection
        with TextAlign
        with TextDirection
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait change extends js.Object
+  sealed trait change extends StObject
+  inline def change: change = "change".asInstanceOf[change]
   
   @js.native
-  sealed trait circle extends js.Object
+  sealed trait circle extends StObject
+  inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
-  sealed trait cite extends js.Object
+  sealed trait cite extends StObject
+  inline def cite: cite = "cite".asInstanceOf[cite]
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait click extends StObject
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait code extends js.Object
+  sealed trait code extends StObject
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
-  sealed trait col extends js.Object
+  sealed trait col extends StObject
+  inline def col: col = "col".asInstanceOf[col]
   
   @js.native
-  sealed trait colgroup extends js.Object
+  sealed trait colgroup extends StObject
+  inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
-  sealed trait complete extends SearchStatus
+  sealed trait complete
+    extends StObject
+       with SearchStatus
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait contextmenu extends js.Object
+  sealed trait compositionend extends StObject
+  inline def compositionend: compositionend = "compositionend".asInstanceOf[compositionend]
   
   @js.native
-  sealed trait d extends js.Object
+  sealed trait compositionstart extends StObject
+  inline def compositionstart: compositionstart = "compositionstart".asInstanceOf[compositionstart]
   
   @js.native
-  sealed trait dashed extends StrokeStyle
+  sealed trait compositionupdate extends StObject
+  inline def compositionupdate: compositionupdate = "compositionupdate".asInstanceOf[compositionupdate]
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait contextmenu extends StObject
+  inline def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
   @js.native
-  sealed trait datalist extends js.Object
+  sealed trait copy extends StObject
+  inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait dblclick extends js.Object
+  sealed trait cuechange extends StObject
+  inline def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
   
   @js.native
-  sealed trait dd extends js.Object
+  sealed trait cut extends StObject
+  inline def cut: cut = "cut".asInstanceOf[cut]
   
   @js.native
-  sealed trait del extends js.Object
+  sealed trait d extends StObject
+  inline def d: d = "d".asInstanceOf[d]
   
   @js.native
-  sealed trait details extends js.Object
+  sealed trait dashed
+    extends StObject
+       with StrokeStyle
+  inline def dashed: dashed = "dashed".asInstanceOf[dashed]
   
   @js.native
-  sealed trait dfn extends js.Object
+  sealed trait data extends StObject
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait dialog extends js.Object
+  sealed trait datalist extends StObject
+  inline def datalist: datalist = "datalist".asInstanceOf[datalist]
   
   @js.native
-  sealed trait dir extends js.Object
+  sealed trait dblclick extends StObject
+  inline def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   
   @js.native
-  sealed trait div extends js.Object
+  sealed trait dd extends StObject
+  inline def dd: dd = "dd".asInstanceOf[dd]
   
   @js.native
-  sealed trait dl extends js.Object
+  sealed trait del extends StObject
+  inline def del: del = "del".asInstanceOf[del]
   
   @js.native
-  sealed trait dragend extends js.Object
+  sealed trait details extends StObject
+  inline def details: details = "details".asInstanceOf[details]
   
   @js.native
-  sealed trait dragging extends js.Object
+  sealed trait dfn extends StObject
+  inline def dfn: dfn = "dfn".asInstanceOf[dfn]
   
   @js.native
-  sealed trait dragstart extends js.Object
+  sealed trait dialog extends StObject
+  inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait dt extends js.Object
+  sealed trait div extends StObject
+  inline def div: div = "div".asInstanceOf[div]
   
   @js.native
-  sealed trait dv extends js.Object
+  sealed trait dl extends StObject
+  inline def dl: dl = "dl".asInstanceOf[dl]
   
   @js.native
-  sealed trait em extends js.Object
+  sealed trait drag extends StObject
+  inline def drag: drag = "drag".asInstanceOf[drag]
   
   @js.native
-  sealed trait embed extends js.Object
+  sealed trait dragend extends StObject
+  inline def dragend: dragend = "dragend".asInstanceOf[dragend]
   
   @js.native
-  sealed trait en extends Lang
+  sealed trait dragenter extends StObject
+  inline def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
   
   @js.native
-  sealed trait error extends SearchStatus
+  sealed trait dragging extends StObject
+  inline def dragging: dragging = "dragging".asInstanceOf[dragging]
   
   @js.native
-  sealed trait fieldset extends js.Object
+  sealed trait dragleave extends StObject
+  inline def dragleave: dragleave = "dragleave".asInstanceOf[dragleave]
   
   @js.native
-  sealed trait figcaption extends js.Object
+  sealed trait dragover extends StObject
+  inline def dragover: dragover = "dragover".asInstanceOf[dragover]
   
   @js.native
-  sealed trait figure extends js.Object
+  sealed trait dragstart extends StObject
+  inline def dragstart: dragstart = "dragstart".asInstanceOf[dragstart]
   
   @js.native
-  sealed trait font extends js.Object
+  sealed trait drop extends StObject
+  inline def drop: drop = "drop".asInstanceOf[drop]
   
   @js.native
-  sealed trait footer extends js.Object
+  sealed trait dt extends StObject
+  inline def dt: dt = "dt".asInstanceOf[dt]
   
   @js.native
-  sealed trait form extends js.Object
+  sealed trait durationchange extends StObject
+  inline def durationchange: durationchange = "durationchange".asInstanceOf[durationchange]
   
   @js.native
-  sealed trait frame extends js.Object
+  sealed trait dv extends StObject
+  inline def dv: dv = "dv".asInstanceOf[dv]
   
   @js.native
-  sealed trait frameset extends js.Object
+  sealed trait em extends StObject
+  inline def em: em = "em".asInstanceOf[em]
   
   @js.native
-  sealed trait gps extends Type
+  sealed trait embed extends StObject
+  inline def embed: embed = "embed".asInstanceOf[embed]
   
   @js.native
-  sealed trait h1 extends js.Object
+  sealed trait emptied extends StObject
+  inline def emptied: emptied = "emptied".asInstanceOf[emptied]
   
   @js.native
-  sealed trait h2 extends js.Object
+  sealed trait en
+    extends StObject
+       with Lang
+  inline def en: en = "en".asInstanceOf[en]
   
   @js.native
-  sealed trait h3 extends js.Object
+  sealed trait ended extends StObject
+  inline def ended: ended = "ended".asInstanceOf[ended]
   
   @js.native
-  sealed trait h4 extends js.Object
+  sealed trait error
+    extends StObject
+       with SearchStatus
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait h5 extends js.Object
+  sealed trait fieldset extends StObject
+  inline def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
   
   @js.native
-  sealed trait h6 extends js.Object
+  sealed trait figcaption extends StObject
+  inline def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait figure extends StObject
+  inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
-  sealed trait header extends js.Object
+  sealed trait focus extends StObject
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait hgroup extends js.Object
+  sealed trait focusin extends StObject
+  inline def focusin: focusin = "focusin".asInstanceOf[focusin]
   
   @js.native
-  sealed trait hide extends js.Object
+  sealed trait focusout extends StObject
+  inline def focusout: focusout = "focusout".asInstanceOf[focusout]
   
   @js.native
-  sealed trait hotspotclick extends js.Object
+  sealed trait footer extends StObject
+  inline def footer: footer = "footer".asInstanceOf[footer]
   
   @js.native
-  sealed trait hotspotout extends js.Object
+  sealed trait form extends StObject
+  inline def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait hotspotover extends js.Object
+  sealed trait formdata extends StObject
+  inline def formdata: formdata = "formdata".asInstanceOf[formdata]
   
   @js.native
-  sealed trait hr extends js.Object
+  sealed trait fullscreenchange extends StObject
+  inline def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
   
   @js.native
-  sealed trait html extends js.Object
+  sealed trait fullscreenerror extends StObject
+  inline def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
   
   @js.native
-  sealed trait i extends js.Object
+  sealed trait gotpointercapture extends StObject
+  inline def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
   
   @js.native
-  sealed trait iframe extends js.Object
+  sealed trait gps
+    extends StObject
+       with Type
+  inline def gps: gps = "gps".asInstanceOf[gps]
   
   @js.native
-  sealed trait img extends js.Object
+  sealed trait h1 extends StObject
+  inline def h1: h1 = "h1".asInstanceOf[h1]
   
   @js.native
-  sealed trait input extends js.Object
+  sealed trait h2 extends StObject
+  inline def h2: h2 = "h2".asInstanceOf[h2]
   
   @js.native
-  sealed trait ins extends js.Object
+  sealed trait h3 extends StObject
+  inline def h3: h3 = "h3".asInstanceOf[h3]
   
   @js.native
-  sealed trait ios extends js.Object
+  sealed trait h4 extends StObject
+  inline def h4: h4 = "h4".asInstanceOf[h4]
   
   @js.native
-  sealed trait items extends js.Object
+  sealed trait h5 extends StObject
+  inline def h5: h5 = "h5".asInstanceOf[h5]
   
   @js.native
-  sealed trait kbd extends js.Object
+  sealed trait h6 extends StObject
+  inline def h6: h6 = "h6".asInstanceOf[h6]
   
   @js.native
-  sealed trait label extends js.Object
+  sealed trait head extends StObject
+  inline def head: head = "head".asInstanceOf[head]
+  
+  @js.native
+  sealed trait header extends StObject
+  inline def header: header = "header".asInstanceOf[header]
+  
+  @js.native
+  sealed trait hgroup extends StObject
+  inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
+  
+  @js.native
+  sealed trait hide extends StObject
+  inline def hide: hide = "hide".asInstanceOf[hide]
+  
+  @js.native
+  sealed trait hotspotclick extends StObject
+  inline def hotspotclick: hotspotclick = "hotspotclick".asInstanceOf[hotspotclick]
+  
+  @js.native
+  sealed trait hotspotout extends StObject
+  inline def hotspotout: hotspotout = "hotspotout".asInstanceOf[hotspotout]
+  
+  @js.native
+  sealed trait hotspotover extends StObject
+  inline def hotspotover: hotspotover = "hotspotover".asInstanceOf[hotspotover]
+  
+  @js.native
+  sealed trait hr extends StObject
+  inline def hr: hr = "hr".asInstanceOf[hr]
+  
+  @js.native
+  sealed trait html extends StObject
+  inline def html: html = "html".asInstanceOf[html]
+  
+  @js.native
+  sealed trait i extends StObject
+  inline def i: i = "i".asInstanceOf[i]
+  
+  @js.native
+  sealed trait iframe extends StObject
+  inline def iframe: iframe = "iframe".asInstanceOf[iframe]
+  
+  @js.native
+  sealed trait img extends StObject
+  inline def img: img = "img".asInstanceOf[img]
+  
+  @js.native
+  sealed trait input extends StObject
+  inline def input: input = "input".asInstanceOf[input]
+  
+  @js.native
+  sealed trait ins extends StObject
+  inline def ins: ins = "ins".asInstanceOf[ins]
+  
+  @js.native
+  sealed trait invalid extends StObject
+  inline def invalid: invalid = "invalid".asInstanceOf[invalid]
+  
+  @js.native
+  sealed trait ios extends StObject
+  inline def ios: ios = "ios".asInstanceOf[ios]
+  
+  @js.native
+  sealed trait items extends StObject
+  inline def items: items = "items".asInstanceOf[items]
+  
+  @js.native
+  sealed trait kbd extends StObject
+  inline def kbd: kbd = "kbd".asInstanceOf[kbd]
+  
+  @js.native
+  sealed trait keydown extends StObject
+  inline def keydown: keydown = "keydown".asInstanceOf[keydown]
+  
+  @js.native
+  sealed trait keypress extends StObject
+  inline def keypress: keypress = "keypress".asInstanceOf[keypress]
+  
+  @js.native
+  sealed trait keyup extends StObject
+  inline def keyup: keyup = "keyup".asInstanceOf[keyup]
+  
+  @js.native
+  sealed trait label extends StObject
+  inline def label: label = "label".asInstanceOf[label]
   
   @js.native
   sealed trait left
-    extends LabelDirection
+    extends StObject
+       with LabelDirection
        with TextAlign
        with TextDirection
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait legend extends js.Object
+  sealed trait legend extends StObject
+  inline def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
-  sealed trait li extends js.Object
+  sealed trait li extends StObject
+  inline def li: li = "li".asInstanceOf[li]
   
   @js.native
-  sealed trait link extends js.Object
+  sealed trait link extends StObject
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait lnglat extends js.Object
+  sealed trait lnglat extends StObject
+  inline def lnglat: lnglat = "lnglat".asInstanceOf[lnglat]
   
   @js.native
-  sealed trait mac extends js.Object
+  sealed trait load extends StObject
+  inline def load: load = "load".asInstanceOf[load]
   
   @js.native
-  sealed trait main extends js.Object
+  sealed trait loadeddata extends StObject
+  inline def loadeddata: loadeddata = "loadeddata".asInstanceOf[loadeddata]
   
   @js.native
-  sealed trait map extends js.Object
+  sealed trait loadedmetadata extends StObject
+  inline def loadedmetadata: loadedmetadata = "loadedmetadata".asInstanceOf[loadedmetadata]
   
   @js.native
-  sealed trait mapbar extends Type
+  sealed trait loadstart extends StObject
+  inline def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   
   @js.native
-  sealed trait mapmove extends js.Object
+  sealed trait lostpointercapture extends StObject
+  inline def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
   
   @js.native
-  sealed trait mark extends js.Object
+  sealed trait mac extends StObject
+  inline def mac: mac = "mac".asInstanceOf[mac]
   
   @js.native
-  sealed trait marker extends js.Object
+  sealed trait main extends StObject
+  inline def main: main = "main".asInstanceOf[main]
   
   @js.native
-  sealed trait marquee extends js.Object
+  sealed trait map extends StObject
+  inline def map: map = "map".asInstanceOf[map]
   
   @js.native
-  sealed trait menu extends js.Object
+  sealed trait mapbar
+    extends StObject
+       with Type
+  inline def mapbar: mapbar = "mapbar".asInstanceOf[mapbar]
   
   @js.native
-  sealed trait meta extends js.Object
+  sealed trait mapmove extends StObject
+  inline def mapmove: mapmove = "mapmove".asInstanceOf[mapmove]
   
   @js.native
-  sealed trait meter extends js.Object
+  sealed trait mark extends StObject
+  inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
-  sealed trait middle extends VerticalAlign
+  sealed trait marker extends StObject
+  inline def marker: marker = "marker".asInstanceOf[marker]
+  
+  @js.native
+  sealed trait menu extends StObject
+  inline def menu: menu = "menu".asInstanceOf[menu]
+  
+  @js.native
+  sealed trait meta extends StObject
+  inline def meta: meta = "meta".asInstanceOf[meta]
+  
+  @js.native
+  sealed trait meter extends StObject
+  inline def meter: meter = "meter".asInstanceOf[meter]
+  
+  @js.native
+  sealed trait middle
+    extends StObject
+       with VerticalAlign
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
   sealed trait `middle-left`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typingsJapgolly.amapJsApi.AMap.Marker.Anchor
        with typingsJapgolly.amapJsApi.AMap.InfoWindow.Anchor
+  inline def `middle-left`: `middle-left` = "middle-left".asInstanceOf[`middle-left`]
   
   @js.native
   sealed trait `middle-right`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typingsJapgolly.amapJsApi.AMap.Marker.Anchor
        with typingsJapgolly.amapJsApi.AMap.InfoWindow.Anchor
+  inline def `middle-right`: `middle-right` = "middle-right".asInstanceOf[`middle-right`]
   
   @js.native
-  sealed trait miter extends StrokeLineJoin
+  sealed trait miter
+    extends StObject
+       with StrokeLineJoin
+  inline def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
-  sealed trait mousedown extends js.Object
+  sealed trait mousedown extends StObject
+  inline def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   
   @js.native
-  sealed trait mousemove extends js.Object
+  sealed trait mouseenter extends StObject
+  inline def mouseenter: mouseenter = "mouseenter".asInstanceOf[mouseenter]
   
   @js.native
-  sealed trait mouseout extends js.Object
+  sealed trait mouseleave extends StObject
+  inline def mouseleave: mouseleave = "mouseleave".asInstanceOf[mouseleave]
   
   @js.native
-  sealed trait mouseover extends js.Object
+  sealed trait mousemove extends StObject
+  inline def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
   
   @js.native
-  sealed trait mouseup extends js.Object
+  sealed trait mouseout extends StObject
+  inline def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
   
   @js.native
-  sealed trait mousewheel extends js.Object
+  sealed trait mouseover extends StObject
+  inline def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
   
   @js.native
-  sealed trait movealong extends js.Object
+  sealed trait mouseup extends StObject
+  inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   
   @js.native
-  sealed trait moveend extends js.Object
+  sealed trait mousewheel extends StObject
+  inline def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
   
   @js.native
-  sealed trait movestart extends js.Object
+  sealed trait movealong extends StObject
+  inline def movealong: movealong = "movealong".asInstanceOf[movealong]
   
   @js.native
-  sealed trait moving extends js.Object
+  sealed trait moveend extends StObject
+  inline def moveend: moveend = "moveend".asInstanceOf[moveend]
   
   @js.native
-  sealed trait mv extends js.Object
+  sealed trait movestart extends StObject
+  inline def movestart: movestart = "movestart".asInstanceOf[movestart]
   
   @js.native
-  sealed trait nav extends js.Object
+  sealed trait moving extends StObject
+  inline def moving: moving = "moving".asInstanceOf[moving]
   
   @js.native
-  sealed trait normal extends FontWeight
+  sealed trait mv extends StObject
+  inline def mv: mv = "mv".asInstanceOf[mv]
   
   @js.native
-  sealed trait noscript extends js.Object
+  sealed trait nav extends StObject
+  inline def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait normal
+    extends StObject
+       with FontWeight
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait ol extends js.Object
+  sealed trait noscript extends StObject
+  inline def noscript: noscript = "noscript".asInstanceOf[noscript]
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait `object` extends StObject
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait optgroup extends js.Object
+  sealed trait ol extends StObject
+  inline def ol: ol = "ol".asInstanceOf[ol]
   
   @js.native
-  sealed trait option extends js.Object
+  sealed trait open extends StObject
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait options extends js.Object
+  sealed trait optgroup extends StObject
+  inline def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   
   @js.native
-  sealed trait other extends js.Object
+  sealed trait option extends StObject
+  inline def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait output extends js.Object
+  sealed trait options extends StObject
+  inline def options: options = "options".asInstanceOf[options]
   
   @js.native
-  sealed trait p extends js.Object
+  sealed trait other extends StObject
+  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait param extends js.Object
+  sealed trait output extends StObject
+  inline def output: output = "output".asInstanceOf[output]
   
   @js.native
-  sealed trait picture extends js.Object
+  sealed trait p extends StObject
+  inline def p: p = "p".asInstanceOf[p]
+  
+  @js.native
+  sealed trait paste extends StObject
+  inline def paste: paste = "paste".asInstanceOf[paste]
+  
+  @js.native
+  sealed trait pause extends StObject
+  inline def pause: pause = "pause".asInstanceOf[pause]
+  
+  @js.native
+  sealed trait picture extends StObject
+  inline def picture: picture = "picture".asInstanceOf[picture]
+  
+  @js.native
+  sealed trait play extends StObject
+  inline def play: play = "play".asInstanceOf[play]
+  
+  @js.native
+  sealed trait playing extends StObject
+  inline def playing: playing = "playing".asInstanceOf[playing]
   
   @js.native
   sealed trait point_
-    extends typingsJapgolly.amapJsApi.AMap.Map.Feature
+    extends StObject
+       with typingsJapgolly.amapJsApi.AMap.Map.Feature
+  inline def point_ : point_ = "point".asInstanceOf[point_]
   
   @js.native
-  sealed trait poly extends js.Object
+  sealed trait pointercancel extends StObject
+  inline def pointercancel: pointercancel = "pointercancel".asInstanceOf[pointercancel]
   
   @js.native
-  sealed trait polygon_ extends js.Object
+  sealed trait pointerdown extends StObject
+  inline def pointerdown: pointerdown = "pointerdown".asInstanceOf[pointerdown]
   
   @js.native
-  sealed trait polyline extends js.Object
+  sealed trait pointerenter extends StObject
+  inline def pointerenter: pointerenter = "pointerenter".asInstanceOf[pointerenter]
   
   @js.native
-  sealed trait pre extends js.Object
+  sealed trait pointerleave extends StObject
+  inline def pointerleave: pointerleave = "pointerleave".asInstanceOf[pointerleave]
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait pointermove extends StObject
+  inline def pointermove: pointermove = "pointermove".asInstanceOf[pointermove]
   
   @js.native
-  sealed trait px extends js.Object
+  sealed trait pointerout extends StObject
+  inline def pointerout: pointerout = "pointerout".asInstanceOf[pointerout]
   
   @js.native
-  sealed trait q extends js.Object
+  sealed trait pointerover extends StObject
+  inline def pointerover: pointerover = "pointerover".asInstanceOf[pointerover]
   
   @js.native
-  sealed trait rdblclick extends js.Object
+  sealed trait pointerup extends StObject
+  inline def pointerup: pointerup = "pointerup".asInstanceOf[pointerup]
   
   @js.native
-  sealed trait rect extends js.Object
+  sealed trait poly extends StObject
+  inline def poly: poly = "poly".asInstanceOf[poly]
   
   @js.native
-  sealed trait resize extends js.Object
+  sealed trait polygon_ extends StObject
+  inline def polygon_ : polygon_ = "polygon".asInstanceOf[polygon_]
+  
+  @js.native
+  sealed trait polyline extends StObject
+  inline def polyline: polyline = "polyline".asInstanceOf[polyline]
+  
+  @js.native
+  sealed trait pre extends StObject
+  inline def pre: pre = "pre".asInstanceOf[pre]
+  
+  @js.native
+  sealed trait progress extends StObject
+  inline def progress: progress = "progress".asInstanceOf[progress]
+  
+  @js.native
+  sealed trait px extends StObject
+  inline def px: px = "px".asInstanceOf[px]
+  
+  @js.native
+  sealed trait q extends StObject
+  inline def q: q = "q".asInstanceOf[q]
+  
+  @js.native
+  sealed trait ratechange extends StObject
+  inline def ratechange: ratechange = "ratechange".asInstanceOf[ratechange]
+  
+  @js.native
+  sealed trait rdblclick extends StObject
+  inline def rdblclick: rdblclick = "rdblclick".asInstanceOf[rdblclick]
+  
+  @js.native
+  sealed trait rect extends StObject
+  inline def rect: rect = "rect".asInstanceOf[rect]
+  
+  @js.native
+  sealed trait reset extends StObject
+  inline def reset: reset = "reset".asInstanceOf[reset]
+  
+  @js.native
+  sealed trait resize extends StObject
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
   sealed trait right
-    extends LabelDirection
+    extends StObject
+       with LabelDirection
        with TextAlign
        with TextDirection
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait rightclick extends js.Object
+  sealed trait rightclick extends StObject
+  inline def rightclick: rightclick = "rightclick".asInstanceOf[rightclick]
   
   @js.native
   sealed trait road
-    extends typingsJapgolly.amapJsApi.AMap.Map.Feature
+    extends StObject
+       with typingsJapgolly.amapJsApi.AMap.Map.Feature
+  inline def road: road = "road".asInstanceOf[road]
   
   @js.native
   sealed trait round
-    extends StrokeLineCap
+    extends StObject
+       with StrokeLineCap
        with StrokeLineJoin
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait rp extends js.Object
+  sealed trait rp extends StObject
+  inline def rp: rp = "rp".asInstanceOf[rp]
   
   @js.native
-  sealed trait rt extends js.Object
+  sealed trait rt extends StObject
+  inline def rt: rt = "rt".asInstanceOf[rt]
   
   @js.native
-  sealed trait ruby extends js.Object
+  sealed trait ruby extends StObject
+  inline def ruby: ruby = "ruby".asInstanceOf[ruby]
   
   @js.native
-  sealed trait s extends js.Object
+  sealed trait s extends StObject
+  inline def s: s = "s".asInstanceOf[s]
   
   @js.native
-  sealed trait samp extends js.Object
+  sealed trait samp extends StObject
+  inline def samp: samp = "samp".asInstanceOf[samp]
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait script extends StObject
+  inline def script: script = "script".asInstanceOf[script]
   
   @js.native
-  sealed trait section extends js.Object
+  sealed trait scroll extends StObject
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait section extends StObject
+  inline def section: section = "section".asInstanceOf[section]
   
   @js.native
-  sealed trait setBounds extends js.Object
+  sealed trait securitypolicyviolation extends StObject
+  inline def securitypolicyviolation: securitypolicyviolation = "securitypolicyviolation".asInstanceOf[securitypolicyviolation]
   
   @js.native
-  sealed trait setCenter extends js.Object
+  sealed trait seeked extends StObject
+  inline def seeked: seeked = "seeked".asInstanceOf[seeked]
   
   @js.native
-  sealed trait setPath extends js.Object
+  sealed trait seeking extends StObject
+  inline def seeking: seeking = "seeking".asInstanceOf[seeking]
   
   @js.native
-  sealed trait setRadius extends js.Object
+  sealed trait select extends StObject
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait show extends js.Object
+  sealed trait selectionchange extends StObject
+  inline def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
   
   @js.native
-  sealed trait slot extends js.Object
+  sealed trait selectstart extends StObject
+  inline def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   
   @js.native
-  sealed trait small extends js.Object
+  sealed trait setBounds extends StObject
+  inline def setBounds: setBounds = "setBounds".asInstanceOf[setBounds]
   
   @js.native
-  sealed trait solid extends StrokeStyle
+  sealed trait setCenter extends StObject
+  inline def setCenter: setCenter = "setCenter".asInstanceOf[setCenter]
   
   @js.native
-  sealed trait source extends js.Object
+  sealed trait setPath extends StObject
+  inline def setPath: setPath = "setPath".asInstanceOf[setPath]
   
   @js.native
-  sealed trait span extends js.Object
+  sealed trait setRadius extends StObject
+  inline def setRadius: setRadius = "setRadius".asInstanceOf[setRadius]
   
   @js.native
-  sealed trait square extends StrokeLineCap
+  sealed trait show extends StObject
+  inline def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait strong extends js.Object
+  sealed trait slot extends StObject
+  inline def slot: slot = "slot".asInstanceOf[slot]
   
   @js.native
-  sealed trait style extends js.Object
+  sealed trait slotchange extends StObject
+  inline def slotchange: slotchange = "slotchange".asInstanceOf[slotchange]
   
   @js.native
-  sealed trait sub extends js.Object
+  sealed trait small extends StObject
+  inline def small: small = "small".asInstanceOf[small]
   
   @js.native
-  sealed trait summary extends js.Object
+  sealed trait solid
+    extends StObject
+       with StrokeStyle
+  inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
-  sealed trait sup extends js.Object
+  sealed trait source extends StObject
+  inline def source: source = "source".asInstanceOf[source]
   
   @js.native
-  sealed trait table extends js.Object
+  sealed trait span extends StObject
+  inline def span: span = "span".asInstanceOf[span]
   
   @js.native
-  sealed trait tbody extends js.Object
+  sealed trait square
+    extends StObject
+       with StrokeLineCap
+  inline def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait td extends js.Object
+  sealed trait stalled extends StObject
+  inline def stalled: stalled = "stalled".asInstanceOf[stalled]
   
   @js.native
-  sealed trait template extends js.Object
+  sealed trait strong extends StObject
+  inline def strong: strong = "strong".asInstanceOf[strong]
   
   @js.native
-  sealed trait textarea extends js.Object
+  sealed trait style extends StObject
+  inline def style: style = "style".asInstanceOf[style]
   
   @js.native
-  sealed trait tfoot extends js.Object
+  sealed trait sub extends StObject
+  inline def sub: sub = "sub".asInstanceOf[sub]
   
   @js.native
-  sealed trait th extends js.Object
+  sealed trait submit extends StObject
+  inline def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
-  sealed trait thead extends js.Object
+  sealed trait summary extends StObject
+  inline def summary: summary = "summary".asInstanceOf[summary]
   
   @js.native
-  sealed trait thin extends FontWeight
+  sealed trait sup extends StObject
+  inline def sup: sup = "sup".asInstanceOf[sup]
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait suspend extends StObject
+  inline def suspend: suspend = "suspend".asInstanceOf[suspend]
   
   @js.native
-  sealed trait title extends js.Object
+  sealed trait table extends StObject
+  inline def table: table = "table".asInstanceOf[table]
+  
+  @js.native
+  sealed trait tbody extends StObject
+  inline def tbody: tbody = "tbody".asInstanceOf[tbody]
+  
+  @js.native
+  sealed trait td extends StObject
+  inline def td: td = "td".asInstanceOf[td]
+  
+  @js.native
+  sealed trait template extends StObject
+  inline def template: template = "template".asInstanceOf[template]
+  
+  @js.native
+  sealed trait textarea extends StObject
+  inline def textarea: textarea = "textarea".asInstanceOf[textarea]
+  
+  @js.native
+  sealed trait tfoot extends StObject
+  inline def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
+  
+  @js.native
+  sealed trait th extends StObject
+  inline def th: th = "th".asInstanceOf[th]
+  
+  @js.native
+  sealed trait thead extends StObject
+  inline def thead: thead = "thead".asInstanceOf[thead]
+  
+  @js.native
+  sealed trait thin
+    extends StObject
+       with FontWeight
+  inline def thin: thin = "thin".asInstanceOf[thin]
+  
+  @js.native
+  sealed trait time extends StObject
+  inline def time: time = "time".asInstanceOf[time]
+  
+  @js.native
+  sealed trait timeupdate extends StObject
+  inline def timeupdate: timeupdate = "timeupdate".asInstanceOf[timeupdate]
+  
+  @js.native
+  sealed trait title extends StObject
+  inline def title: title = "title".asInstanceOf[title]
+  
+  @js.native
+  sealed trait toggle extends StObject
+  inline def toggle: toggle = "toggle".asInstanceOf[toggle]
   
   @js.native
   sealed trait top
-    extends LabelDirection
+    extends StObject
+       with LabelDirection
        with TextDirection
        with VerticalAlign
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait `top-center`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typingsJapgolly.amapJsApi.AMap.Marker.Anchor
        with typingsJapgolly.amapJsApi.AMap.InfoWindow.Anchor
+  inline def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
   
   @js.native
   sealed trait `top-left`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typingsJapgolly.amapJsApi.AMap.Marker.Anchor
        with typingsJapgolly.amapJsApi.AMap.InfoWindow.Anchor
+  inline def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   
   @js.native
   sealed trait `top-right`
-    extends Anchor
+    extends StObject
+       with Anchor
        with typingsJapgolly.amapJsApi.AMap.Marker.Anchor
        with typingsJapgolly.amapJsApi.AMap.InfoWindow.Anchor
+  inline def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
   @js.native
-  sealed trait touchend extends js.Object
+  sealed trait touchcancel extends StObject
+  inline def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
   
   @js.native
-  sealed trait touchmove extends js.Object
+  sealed trait touchend extends StObject
+  inline def touchend: touchend = "touchend".asInstanceOf[touchend]
   
   @js.native
-  sealed trait touchstart extends js.Object
+  sealed trait touchmove extends StObject
+  inline def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
   
   @js.native
-  sealed trait tr extends js.Object
+  sealed trait touchstart extends StObject
+  inline def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   
   @js.native
-  sealed trait track extends js.Object
+  sealed trait tr extends StObject
+  inline def tr: tr = "tr".asInstanceOf[tr]
   
   @js.native
-  sealed trait u extends js.Object
+  sealed trait track extends StObject
+  inline def track: track = "track".asInstanceOf[track]
   
   @js.native
-  sealed trait ul extends js.Object
+  sealed trait transitioncancel extends StObject
+  inline def transitioncancel: transitioncancel = "transitioncancel".asInstanceOf[transitioncancel]
   
   @js.native
-  sealed trait v extends js.Object
+  sealed trait transitionend extends StObject
+  inline def transitionend: transitionend = "transitionend".asInstanceOf[transitionend]
   
   @js.native
-  sealed trait `var` extends js.Object
+  sealed trait transitionrun extends StObject
+  inline def transitionrun: transitionrun = "transitionrun".asInstanceOf[transitionrun]
   
   @js.native
-  sealed trait video extends js.Object
+  sealed trait transitionstart extends StObject
+  inline def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
   
   @js.native
-  sealed trait vw extends js.Object
+  sealed trait u extends StObject
+  inline def u: u = "u".asInstanceOf[u]
   
   @js.native
-  sealed trait wbr extends js.Object
+  sealed trait ul extends StObject
+  inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
-  sealed trait windows extends js.Object
+  sealed trait v extends StObject
+  inline def v: v = "v".asInstanceOf[v]
   
   @js.native
-  sealed trait zh_cn extends Lang
+  sealed trait `var` extends StObject
+  inline def `var`: `var` = "var".asInstanceOf[`var`]
   
   @js.native
-  sealed trait zh_en extends Lang
+  sealed trait video extends StObject
+  inline def video: video = "video".asInstanceOf[video]
   
   @js.native
-  sealed trait zoomchange extends js.Object
+  sealed trait volumechange extends StObject
+  inline def volumechange: volumechange = "volumechange".asInstanceOf[volumechange]
   
   @js.native
-  sealed trait zoomend extends js.Object
+  sealed trait vw extends StObject
+  inline def vw: vw = "vw".asInstanceOf[vw]
   
   @js.native
-  sealed trait zoomstart extends js.Object
+  sealed trait waiting extends StObject
+  inline def waiting: waiting = "waiting".asInstanceOf[waiting]
   
-  @scala.inline
-  def `2D`: `2D` = "2D".asInstanceOf[`2D`]
-  @scala.inline
-  def `3D`: `3D` = "3D".asInstanceOf[`3D`]
-  @scala.inline
-  def AMAP_ANIMATION_BOUNCE: AMAP_ANIMATION_BOUNCE = "AMAP_ANIMATION_BOUNCE".asInstanceOf[AMAP_ANIMATION_BOUNCE]
-  @scala.inline
-  def AMAP_ANIMATION_DROP: AMAP_ANIMATION_DROP = "AMAP_ANIMATION_DROP".asInstanceOf[AMAP_ANIMATION_DROP]
-  @scala.inline
-  def AMAP_ANIMATION_NONE: AMAP_ANIMATION_NONE = "AMAP_ANIMATION_NONE".asInstanceOf[AMAP_ANIMATION_NONE]
-  @scala.inline
-  def EPGS3395: EPGS3395 = "EPGS3395".asInstanceOf[EPGS3395]
-  @scala.inline
-  def EPGS3857: EPGS3857 = "EPGS3857".asInstanceOf[EPGS3857]
-  @scala.inline
-  def EPGS4326: EPGS4326 = "EPGS4326".asInstanceOf[EPGS4326]
-  @scala.inline
-  def EPSG3395: EPSG3395 = "EPSG3395".asInstanceOf[EPSG3395]
-  @scala.inline
-  def EPSG3857: EPSG3857 = "EPSG3857".asInstanceOf[EPSG3857]
-  @scala.inline
-  def EPSG4326: EPSG4326 = "EPSG4326".asInstanceOf[EPSG4326]
-  @scala.inline
-  def FALSE: FALSE = "FALSE".asInstanceOf[FALSE]
-  @scala.inline
-  def Feature: Feature = "Feature".asInstanceOf[Feature]
-  @scala.inline
-  def FeatureCollection: FeatureCollection = "FeatureCollection".asInstanceOf[FeatureCollection]
-  @scala.inline
-  def GeometryCollection: GeometryCollection = "GeometryCollection".asInstanceOf[GeometryCollection]
-  @scala.inline
-  def LineString: LineString = "LineString".asInstanceOf[LineString]
-  @scala.inline
-  def MultiLineString: MultiLineString = "MultiLineString".asInstanceOf[MultiLineString]
-  @scala.inline
-  def MultiPoint: MultiPoint = "MultiPoint".asInstanceOf[MultiPoint]
-  @scala.inline
-  def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
-  @scala.inline
-  def Omit: Omit = "Omit".asInstanceOf[Omit]
-  @scala.inline
-  def Point: Point = "Point".asInstanceOf[Point]
-  @scala.inline
-  def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
-  @scala.inline
-  def TRUE: TRUE = "TRUE".asInstanceOf[TRUE]
-  @scala.inline
-  def a: a = "a".asInstanceOf[a]
-  @scala.inline
-  def abbr: abbr = "abbr".asInstanceOf[abbr]
-  @scala.inline
-  def address: address = "address".asInstanceOf[address]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def android: android = "android".asInstanceOf[android]
-  @scala.inline
-  def applet: applet = "applet".asInstanceOf[applet]
-  @scala.inline
-  def area: area = "area".asInstanceOf[area]
-  @scala.inline
-  def article: article = "article".asInstanceOf[article]
-  @scala.inline
-  def aside: aside = "aside".asInstanceOf[aside]
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
-  @scala.inline
-  def b: b = "b".asInstanceOf[b]
-  @scala.inline
-  def baidu: baidu = "baidu".asInstanceOf[baidu]
-  @scala.inline
-  def base: base = "base".asInstanceOf[base]
-  @scala.inline
-  def basefont: basefont = "basefont".asInstanceOf[basefont]
-  @scala.inline
-  def bdi: bdi = "bdi".asInstanceOf[bdi]
-  @scala.inline
-  def bdo: bdo = "bdo".asInstanceOf[bdo]
-  @scala.inline
-  def bevel: bevel = "bevel".asInstanceOf[bevel]
-  @scala.inline
-  def bg: bg = "bg".asInstanceOf[bg]
-  @scala.inline
-  def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
-  @scala.inline
-  def bold: bold = "bold".asInstanceOf[bold]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
-  @scala.inline
-  def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
-  @scala.inline
-  def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
-  @scala.inline
-  def br: br = "br".asInstanceOf[br]
-  @scala.inline
-  def building: building = "building".asInstanceOf[building]
-  @scala.inline
-  def butt: butt = "butt".asInstanceOf[butt]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def c: c = "c".asInstanceOf[c]
-  @scala.inline
-  def canvas: canvas = "canvas".asInstanceOf[canvas]
-  @scala.inline
-  def caption: caption = "caption".asInstanceOf[caption]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def circle: circle = "circle".asInstanceOf[circle]
-  @scala.inline
-  def cite: cite = "cite".asInstanceOf[cite]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def col: col = "col".asInstanceOf[col]
-  @scala.inline
-  def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
-  @scala.inline
-  def d: d = "d".asInstanceOf[d]
-  @scala.inline
-  def dashed: dashed = "dashed".asInstanceOf[dashed]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def datalist: datalist = "datalist".asInstanceOf[datalist]
-  @scala.inline
-  def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
-  @scala.inline
-  def dd: dd = "dd".asInstanceOf[dd]
-  @scala.inline
-  def del: del = "del".asInstanceOf[del]
-  @scala.inline
-  def details: details = "details".asInstanceOf[details]
-  @scala.inline
-  def dfn: dfn = "dfn".asInstanceOf[dfn]
-  @scala.inline
-  def dialog: dialog = "dialog".asInstanceOf[dialog]
-  @scala.inline
-  def dir: dir = "dir".asInstanceOf[dir]
-  @scala.inline
-  def div: div = "div".asInstanceOf[div]
-  @scala.inline
-  def dl: dl = "dl".asInstanceOf[dl]
-  @scala.inline
-  def dragend: dragend = "dragend".asInstanceOf[dragend]
-  @scala.inline
-  def dragging: dragging = "dragging".asInstanceOf[dragging]
-  @scala.inline
-  def dragstart: dragstart = "dragstart".asInstanceOf[dragstart]
-  @scala.inline
-  def dt: dt = "dt".asInstanceOf[dt]
-  @scala.inline
-  def dv: dv = "dv".asInstanceOf[dv]
-  @scala.inline
-  def em: em = "em".asInstanceOf[em]
-  @scala.inline
-  def embed: embed = "embed".asInstanceOf[embed]
-  @scala.inline
-  def en: en = "en".asInstanceOf[en]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
-  @scala.inline
-  def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
-  @scala.inline
-  def figure: figure = "figure".asInstanceOf[figure]
-  @scala.inline
-  def font: font = "font".asInstanceOf[font]
-  @scala.inline
-  def footer: footer = "footer".asInstanceOf[footer]
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
-  @scala.inline
-  def frame: frame = "frame".asInstanceOf[frame]
-  @scala.inline
-  def frameset: frameset = "frameset".asInstanceOf[frameset]
-  @scala.inline
-  def gps: gps = "gps".asInstanceOf[gps]
-  @scala.inline
-  def h1: h1 = "h1".asInstanceOf[h1]
-  @scala.inline
-  def h2: h2 = "h2".asInstanceOf[h2]
-  @scala.inline
-  def h3: h3 = "h3".asInstanceOf[h3]
-  @scala.inline
-  def h4: h4 = "h4".asInstanceOf[h4]
-  @scala.inline
-  def h5: h5 = "h5".asInstanceOf[h5]
-  @scala.inline
-  def h6: h6 = "h6".asInstanceOf[h6]
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
-  @scala.inline
-  def header: header = "header".asInstanceOf[header]
-  @scala.inline
-  def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def hotspotclick: hotspotclick = "hotspotclick".asInstanceOf[hotspotclick]
-  @scala.inline
-  def hotspotout: hotspotout = "hotspotout".asInstanceOf[hotspotout]
-  @scala.inline
-  def hotspotover: hotspotover = "hotspotover".asInstanceOf[hotspotover]
-  @scala.inline
-  def hr: hr = "hr".asInstanceOf[hr]
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def i: i = "i".asInstanceOf[i]
-  @scala.inline
-  def iframe: iframe = "iframe".asInstanceOf[iframe]
-  @scala.inline
-  def img: img = "img".asInstanceOf[img]
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
-  def ins: ins = "ins".asInstanceOf[ins]
-  @scala.inline
-  def ios: ios = "ios".asInstanceOf[ios]
-  @scala.inline
-  def items: items = "items".asInstanceOf[items]
-  @scala.inline
-  def kbd: kbd = "kbd".asInstanceOf[kbd]
-  @scala.inline
-  def label: label = "label".asInstanceOf[label]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def legend: legend = "legend".asInstanceOf[legend]
-  @scala.inline
-  def li: li = "li".asInstanceOf[li]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def lnglat: lnglat = "lnglat".asInstanceOf[lnglat]
-  @scala.inline
-  def mac: mac = "mac".asInstanceOf[mac]
-  @scala.inline
-  def main: main = "main".asInstanceOf[main]
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
-  @scala.inline
-  def mapbar: mapbar = "mapbar".asInstanceOf[mapbar]
-  @scala.inline
-  def mapmove: mapmove = "mapmove".asInstanceOf[mapmove]
-  @scala.inline
-  def mark: mark = "mark".asInstanceOf[mark]
-  @scala.inline
-  def marker: marker = "marker".asInstanceOf[marker]
-  @scala.inline
-  def marquee: marquee = "marquee".asInstanceOf[marquee]
-  @scala.inline
-  def menu: menu = "menu".asInstanceOf[menu]
-  @scala.inline
-  def meta: meta = "meta".asInstanceOf[meta]
-  @scala.inline
-  def meter: meter = "meter".asInstanceOf[meter]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def `middle-left`: `middle-left` = "middle-left".asInstanceOf[`middle-left`]
-  @scala.inline
-  def `middle-right`: `middle-right` = "middle-right".asInstanceOf[`middle-right`]
-  @scala.inline
-  def miter: miter = "miter".asInstanceOf[miter]
-  @scala.inline
-  def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
-  @scala.inline
-  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
-  @scala.inline
-  def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
-  @scala.inline
-  def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
-  @scala.inline
-  def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
-  @scala.inline
-  def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
-  @scala.inline
-  def movealong: movealong = "movealong".asInstanceOf[movealong]
-  @scala.inline
-  def moveend: moveend = "moveend".asInstanceOf[moveend]
-  @scala.inline
-  def movestart: movestart = "movestart".asInstanceOf[movestart]
-  @scala.inline
-  def moving: moving = "moving".asInstanceOf[moving]
-  @scala.inline
-  def mv: mv = "mv".asInstanceOf[mv]
-  @scala.inline
-  def nav: nav = "nav".asInstanceOf[nav]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def noscript: noscript = "noscript".asInstanceOf[noscript]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def ol: ol = "ol".asInstanceOf[ol]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
-  @scala.inline
-  def option: option = "option".asInstanceOf[option]
-  @scala.inline
-  def options: options = "options".asInstanceOf[options]
-  @scala.inline
-  def other: other = "other".asInstanceOf[other]
-  @scala.inline
-  def output: output = "output".asInstanceOf[output]
-  @scala.inline
-  def p: p = "p".asInstanceOf[p]
-  @scala.inline
-  def param: param = "param".asInstanceOf[param]
-  @scala.inline
-  def picture: picture = "picture".asInstanceOf[picture]
-  @scala.inline
-  def point_ : point_ = "point".asInstanceOf[point_]
-  @scala.inline
-  def poly: poly = "poly".asInstanceOf[poly]
-  @scala.inline
-  def polygon_ : polygon_ = "polygon".asInstanceOf[polygon_]
-  @scala.inline
-  def polyline: polyline = "polyline".asInstanceOf[polyline]
-  @scala.inline
-  def pre: pre = "pre".asInstanceOf[pre]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def px: px = "px".asInstanceOf[px]
-  @scala.inline
-  def q: q = "q".asInstanceOf[q]
-  @scala.inline
-  def rdblclick: rdblclick = "rdblclick".asInstanceOf[rdblclick]
-  @scala.inline
-  def rect: rect = "rect".asInstanceOf[rect]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rightclick: rightclick = "rightclick".asInstanceOf[rightclick]
-  @scala.inline
-  def road: road = "road".asInstanceOf[road]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def rp: rp = "rp".asInstanceOf[rp]
-  @scala.inline
-  def rt: rt = "rt".asInstanceOf[rt]
-  @scala.inline
-  def ruby: ruby = "ruby".asInstanceOf[ruby]
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
-  @scala.inline
-  def samp: samp = "samp".asInstanceOf[samp]
-  @scala.inline
-  def script: script = "script".asInstanceOf[script]
-  @scala.inline
-  def section: section = "section".asInstanceOf[section]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def setBounds: setBounds = "setBounds".asInstanceOf[setBounds]
-  @scala.inline
-  def setCenter: setCenter = "setCenter".asInstanceOf[setCenter]
-  @scala.inline
-  def setPath: setPath = "setPath".asInstanceOf[setPath]
-  @scala.inline
-  def setRadius: setRadius = "setRadius".asInstanceOf[setRadius]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
-  @scala.inline
-  def slot: slot = "slot".asInstanceOf[slot]
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
-  @scala.inline
-  def solid: solid = "solid".asInstanceOf[solid]
-  @scala.inline
-  def source: source = "source".asInstanceOf[source]
-  @scala.inline
-  def span: span = "span".asInstanceOf[span]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
-  @scala.inline
-  def strong: strong = "strong".asInstanceOf[strong]
-  @scala.inline
-  def style: style = "style".asInstanceOf[style]
-  @scala.inline
-  def sub: sub = "sub".asInstanceOf[sub]
-  @scala.inline
-  def summary: summary = "summary".asInstanceOf[summary]
-  @scala.inline
-  def sup: sup = "sup".asInstanceOf[sup]
-  @scala.inline
-  def table: table = "table".asInstanceOf[table]
-  @scala.inline
-  def tbody: tbody = "tbody".asInstanceOf[tbody]
-  @scala.inline
-  def td: td = "td".asInstanceOf[td]
-  @scala.inline
-  def template: template = "template".asInstanceOf[template]
-  @scala.inline
-  def textarea: textarea = "textarea".asInstanceOf[textarea]
-  @scala.inline
-  def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
-  @scala.inline
-  def th: th = "th".asInstanceOf[th]
-  @scala.inline
-  def thead: thead = "thead".asInstanceOf[thead]
-  @scala.inline
-  def thin: thin = "thin".asInstanceOf[thin]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def title: title = "title".asInstanceOf[title]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
-  @scala.inline
-  def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
-  @scala.inline
-  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
-  @scala.inline
-  def touchend: touchend = "touchend".asInstanceOf[touchend]
-  @scala.inline
-  def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
-  @scala.inline
-  def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
-  @scala.inline
-  def tr: tr = "tr".asInstanceOf[tr]
-  @scala.inline
-  def track: track = "track".asInstanceOf[track]
-  @scala.inline
-  def u: u = "u".asInstanceOf[u]
-  @scala.inline
-  def ul: ul = "ul".asInstanceOf[ul]
-  @scala.inline
-  def v: v = "v".asInstanceOf[v]
-  @scala.inline
-  def `var`: `var` = "var".asInstanceOf[`var`]
-  @scala.inline
-  def video: video = "video".asInstanceOf[video]
-  @scala.inline
-  def vw: vw = "vw".asInstanceOf[vw]
-  @scala.inline
-  def wbr: wbr = "wbr".asInstanceOf[wbr]
-  @scala.inline
-  def windows: windows = "windows".asInstanceOf[windows]
-  @scala.inline
-  def zh_cn: zh_cn = "zh_cn".asInstanceOf[zh_cn]
-  @scala.inline
-  def zh_en: zh_en = "zh_en".asInstanceOf[zh_en]
-  @scala.inline
-  def zoomchange: zoomchange = "zoomchange".asInstanceOf[zoomchange]
-  @scala.inline
-  def zoomend: zoomend = "zoomend".asInstanceOf[zoomend]
-  @scala.inline
-  def zoomstart: zoomstart = "zoomstart".asInstanceOf[zoomstart]
+  @js.native
+  sealed trait wbr extends StObject
+  inline def wbr: wbr = "wbr".asInstanceOf[wbr]
+  
+  @js.native
+  sealed trait webkitanimationend extends StObject
+  inline def webkitanimationend: webkitanimationend = "webkitanimationend".asInstanceOf[webkitanimationend]
+  
+  @js.native
+  sealed trait webkitanimationiteration extends StObject
+  inline def webkitanimationiteration: webkitanimationiteration = "webkitanimationiteration".asInstanceOf[webkitanimationiteration]
+  
+  @js.native
+  sealed trait webkitanimationstart extends StObject
+  inline def webkitanimationstart: webkitanimationstart = "webkitanimationstart".asInstanceOf[webkitanimationstart]
+  
+  @js.native
+  sealed trait webkittransitionend extends StObject
+  inline def webkittransitionend: webkittransitionend = "webkittransitionend".asInstanceOf[webkittransitionend]
+  
+  @js.native
+  sealed trait wheel extends StObject
+  inline def wheel: wheel = "wheel".asInstanceOf[wheel]
+  
+  @js.native
+  sealed trait windows extends StObject
+  inline def windows: windows = "windows".asInstanceOf[windows]
+  
+  @js.native
+  sealed trait zh_cn
+    extends StObject
+       with Lang
+  inline def zh_cn: zh_cn = "zh_cn".asInstanceOf[zh_cn]
+  
+  @js.native
+  sealed trait zh_en
+    extends StObject
+       with Lang
+  inline def zh_en: zh_en = "zh_en".asInstanceOf[zh_en]
+  
+  @js.native
+  sealed trait zoomchange extends StObject
+  inline def zoomchange: zoomchange = "zoomchange".asInstanceOf[zoomchange]
+  
+  @js.native
+  sealed trait zoomend extends StObject
+  inline def zoomend: zoomend = "zoomend".asInstanceOf[zoomend]
+  
+  @js.native
+  sealed trait zoomstart extends StObject
+  inline def zoomstart: zoomstart = "zoomstart".asInstanceOf[zoomstart]
 }
-

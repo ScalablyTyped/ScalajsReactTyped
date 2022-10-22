@@ -1,58 +1,115 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProgressBarOptions extends js.Object {
+trait ProgressBarOptions extends StObject {
+  
   var animation: js.UndefOr[Boolean | ProgressBarAnimation] = js.undefined
+  
+  var ariaRole: js.UndefOr[Boolean] = js.undefined
+  
   var change: js.UndefOr[js.Function1[/* e */ ProgressBarChangeEvent, Unit]] = js.undefined
+  
   var chunkCount: js.UndefOr[Double] = js.undefined
+  
   var complete: js.UndefOr[js.Function1[/* e */ ProgressBarCompleteEvent, Unit]] = js.undefined
+  
   var enable: js.UndefOr[Boolean] = js.undefined
+  
+  var label: js.UndefOr[String] = js.undefined
+  
+  var labelId: js.UndefOr[String] = js.undefined
+  
   var max: js.UndefOr[Double] = js.undefined
+  
   var min: js.UndefOr[Double] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var orientation: js.UndefOr[String] = js.undefined
+  
   var reverse: js.UndefOr[Boolean] = js.undefined
+  
   var showStatus: js.UndefOr[Boolean] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[Double] = js.undefined
 }
-
 object ProgressBarOptions {
-  @scala.inline
-  def apply(
-    animation: Boolean | ProgressBarAnimation = null,
-    change: /* e */ ProgressBarChangeEvent => Callback = null,
-    chunkCount: Int | Double = null,
-    complete: /* e */ ProgressBarCompleteEvent => Callback = null,
-    enable: js.UndefOr[Boolean] = js.undefined,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    name: String = null,
-    orientation: String = null,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    showStatus: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null,
-    value: Int | Double = null
-  ): ProgressBarOptions = {
+  
+  inline def apply(): ProgressBarOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ProgressBarChangeEvent) => change(t0).runNow()))
-    if (chunkCount != null) __obj.updateDynamic("chunkCount")(chunkCount.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ProgressBarCompleteEvent) => complete(t0).runNow()))
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (!js.isUndefined(showStatus)) __obj.updateDynamic("showStatus")(showStatus.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressBarOptions]
   }
+  
+  extension [Self <: ProgressBarOptions](x: Self) {
+    
+    inline def setAnimation(value: Boolean | ProgressBarAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setAriaRole(value: Boolean): Self = StObject.set(x, "ariaRole", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRoleUndefined: Self = StObject.set(x, "ariaRole", js.undefined)
+    
+    inline def setChange(value: /* e */ ProgressBarChangeEvent => Callback): Self = StObject.set(x, "change", js.Any.fromFunction1((t0: /* e */ ProgressBarChangeEvent) => value(t0).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setChunkCount(value: Double): Self = StObject.set(x, "chunkCount", value.asInstanceOf[js.Any])
+    
+    inline def setChunkCountUndefined: Self = StObject.set(x, "chunkCount", js.undefined)
+    
+    inline def setComplete(value: /* e */ ProgressBarCompleteEvent => Callback): Self = StObject.set(x, "complete", js.Any.fromFunction1((t0: /* e */ ProgressBarCompleteEvent) => value(t0).runNow()))
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
+    
+    inline def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    
+    inline def setShowStatus(value: Boolean): Self = StObject.set(x, "showStatus", value.asInstanceOf[js.Any])
+    
+    inline def setShowStatusUndefined: Self = StObject.set(x, "showStatus", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

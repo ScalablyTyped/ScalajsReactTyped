@@ -1,94 +1,181 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.AnonEditorOptions
-import typingsJapgolly.devextreme.AnonLocation
-import typingsJapgolly.devextreme.devextremeStrings.button
-import typingsJapgolly.devextreme.devextremeStrings.empty
-import typingsJapgolly.devextreme.devextremeStrings.group
-import typingsJapgolly.devextreme.devextremeStrings.simple
-import typingsJapgolly.devextreme.devextremeStrings.tabbed
-import typingsJapgolly.devextreme.mod.DevExpress.core.dxElement
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.devextreme.anon.Alignment
+import typingsJapgolly.devextreme.mod.DevExpress.core.DxElement_
+import typingsJapgolly.devextreme.mod.DevExpress.core.UserDefinedElement
+import typingsJapgolly.devextreme.mod.DevExpress.core.template
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxForm.FormItemComponent
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxForm.FormItemType
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxForm.SimpleItemTemplateData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxFormSimpleItem extends js.Object {
-  /** Specifies the number of columns spanned by the item. */
+trait dxFormSimpleItem extends StObject {
+  
+  /**
+    * Specifies the number of columns spanned by the item.
+    */
   var colSpan: js.UndefOr[Double] = js.undefined
-  /** Specifies a CSS class to be applied to the form item. */
+  
+  /**
+    * Specifies a CSS class to be applied to the form item.
+    */
   var cssClass: js.UndefOr[String] = js.undefined
-  /** Specifies the path to the formData object field bound to the current form item. */
+  
+  /**
+    * Specifies the path to the formData object field bound to the current form item.
+    */
   var dataField: js.UndefOr[String] = js.undefined
-  /** Configures the form item's editor. */
-  var editorOptions: js.UndefOr[js.Any] = js.undefined
-  /** Specifies which editor widget is used to display and edit the form item value. */
-  var editorType: js.UndefOr[
-    typingsJapgolly.devextreme.devextremeStrings.dxAutocomplete | typingsJapgolly.devextreme.devextremeStrings.dxCalendar | typingsJapgolly.devextreme.devextremeStrings.dxCheckBox | typingsJapgolly.devextreme.devextremeStrings.dxColorBox | typingsJapgolly.devextreme.devextremeStrings.dxDateBox | typingsJapgolly.devextreme.devextremeStrings.dxDropDownBox | typingsJapgolly.devextreme.devextremeStrings.dxHtmlEditor | typingsJapgolly.devextreme.devextremeStrings.dxLookup | typingsJapgolly.devextreme.devextremeStrings.dxNumberBox | typingsJapgolly.devextreme.devextremeStrings.dxRadioGroup | typingsJapgolly.devextreme.devextremeStrings.dxRangeSlider | typingsJapgolly.devextreme.devextremeStrings.dxSelectBox | typingsJapgolly.devextreme.devextremeStrings.dxSlider | typingsJapgolly.devextreme.devextremeStrings.dxSwitch | typingsJapgolly.devextreme.devextremeStrings.dxTagBox | typingsJapgolly.devextreme.devextremeStrings.dxTextArea | typingsJapgolly.devextreme.devextremeStrings.dxTextBox
-  ] = js.undefined
-  /** Specifies the help text displayed for the current form item. */
+  
+  /**
+    * Configures the form item&apos;s editor.
+    */
+  var editorOptions: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * Specifies which editor UI component is used to display and edit the form item value.
+    */
+  var editorType: js.UndefOr[FormItemComponent] = js.undefined
+  
+  /**
+    * Specifies the help text displayed for the current form item.
+    */
   var helpText: js.UndefOr[String] = js.undefined
-  /** Specifies whether the current form item is required. */
+  
+  /**
+    * Specifies whether the current form item is required.
+    */
   var isRequired: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the item's type. Set it to "simple" to create a simple item. */
-  var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
-  /** Specifies options for the form item label. */
-  var label: js.UndefOr[AnonLocation] = js.undefined
-  /** Specifies a name that identifies the form item. */
+  
+  /**
+    * Specifies the item&apos;s type. Set it to &apos;simple&apos; to create a simple item.
+    */
+  var itemType: js.UndefOr[FormItemType] = js.undefined
+  
+  /**
+    * Specifies properties for the form item label.
+    */
+  var label: js.UndefOr[Alignment] = js.undefined
+  
+  /**
+    * Specifies a name that identifies the form item.
+    */
   var name: js.UndefOr[String] = js.undefined
-  /** A template to be used for rendering the form item. */
+  
+  /**
+    * A template that can be used to replace the default editor with custom content.
+    */
   var template: js.UndefOr[
-    typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function2[/* data */ AnonEditorOptions, /* itemElement */ dxElement, String | Element | JQuery])
+    typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function2[
+      /* data */ SimpleItemTemplateData, 
+      /* itemElement */ DxElement_[HTMLElement], 
+      String | UserDefinedElement[Element]
+    ])
   ] = js.undefined
-  /** An array of validation rules to be checked for the form item editor. */
+  
+  /**
+    * An array of validation rules to be checked for the form item editor.
+    */
   var validationRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
   ] = js.undefined
-  /** Specifies whether or not the current form item is visible. */
+  
+  /**
+    * Specifies whether or not the current form item is visible.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the sequence number of the item in a form, group or tab. */
+  
+  /**
+    * Specifies the sequence number of the item in a form, group or tab.
+    */
   var visibleIndex: js.UndefOr[Double] = js.undefined
 }
-
 object dxFormSimpleItem {
-  @scala.inline
-  def apply(
-    colSpan: Int | Double = null,
-    cssClass: String = null,
-    dataField: String = null,
-    editorOptions: js.Any = null,
-    editorType: typingsJapgolly.devextreme.devextremeStrings.dxAutocomplete | typingsJapgolly.devextreme.devextremeStrings.dxCalendar | typingsJapgolly.devextreme.devextremeStrings.dxCheckBox | typingsJapgolly.devextreme.devextremeStrings.dxColorBox | typingsJapgolly.devextreme.devextremeStrings.dxDateBox | typingsJapgolly.devextreme.devextremeStrings.dxDropDownBox | typingsJapgolly.devextreme.devextremeStrings.dxHtmlEditor | typingsJapgolly.devextreme.devextremeStrings.dxLookup | typingsJapgolly.devextreme.devextremeStrings.dxNumberBox | typingsJapgolly.devextreme.devextremeStrings.dxRadioGroup | typingsJapgolly.devextreme.devextremeStrings.dxRangeSlider | typingsJapgolly.devextreme.devextremeStrings.dxSelectBox | typingsJapgolly.devextreme.devextremeStrings.dxSlider | typingsJapgolly.devextreme.devextremeStrings.dxSwitch | typingsJapgolly.devextreme.devextremeStrings.dxTagBox | typingsJapgolly.devextreme.devextremeStrings.dxTextArea | typingsJapgolly.devextreme.devextremeStrings.dxTextBox = null,
-    helpText: String = null,
-    isRequired: js.UndefOr[Boolean] = js.undefined,
-    itemType: empty | group | simple | tabbed | button = null,
-    label: AnonLocation = null,
-    name: String = null,
-    template: typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function2[/* data */ AnonEditorOptions, /* itemElement */ dxElement, String | Element | JQuery]) = null,
-    validationRules: js.Array[
-      RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-    ] = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    visibleIndex: Int | Double = null
-  ): dxFormSimpleItem = {
+  
+  inline def apply(): dxFormSimpleItem = {
     val __obj = js.Dynamic.literal()
-    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (dataField != null) __obj.updateDynamic("dataField")(dataField.asInstanceOf[js.Any])
-    if (editorOptions != null) __obj.updateDynamic("editorOptions")(editorOptions.asInstanceOf[js.Any])
-    if (editorType != null) __obj.updateDynamic("editorType")(editorType.asInstanceOf[js.Any])
-    if (helpText != null) __obj.updateDynamic("helpText")(helpText.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (visibleIndex != null) __obj.updateDynamic("visibleIndex")(visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxFormSimpleItem]
   }
+  
+  extension [Self <: dxFormSimpleItem](x: Self) {
+    
+    inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+    
+    inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+    
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    
+    inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
+    
+    inline def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
+    
+    inline def setEditorOptions(value: Any): Self = StObject.set(x, "editorOptions", value.asInstanceOf[js.Any])
+    
+    inline def setEditorOptionsUndefined: Self = StObject.set(x, "editorOptions", js.undefined)
+    
+    inline def setEditorType(value: FormItemComponent): Self = StObject.set(x, "editorType", value.asInstanceOf[js.Any])
+    
+    inline def setEditorTypeUndefined: Self = StObject.set(x, "editorType", js.undefined)
+    
+    inline def setHelpText(value: String): Self = StObject.set(x, "helpText", value.asInstanceOf[js.Any])
+    
+    inline def setHelpTextUndefined: Self = StObject.set(x, "helpText", js.undefined)
+    
+    inline def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
+    
+    inline def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
+    
+    inline def setItemType(value: FormItemType): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+    
+    inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
+    
+    inline def setLabel(value: Alignment): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setTemplate(
+      value: template | (js.Function2[
+          /* data */ SimpleItemTemplateData, 
+          /* itemElement */ DxElement_[HTMLElement], 
+          String | UserDefinedElement[Element]
+        ])
+    ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateFunction2(
+      value: (/* data */ SimpleItemTemplateData, /* itemElement */ DxElement_[HTMLElement]) => String | UserDefinedElement[Element]
+    ): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setValidationRules(
+      value: js.Array[
+          RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
+        ]
+    ): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+    
+    inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
+    
+    inline def setValidationRulesVarargs(
+      value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
+    ): Self = StObject.set(x, "validationRules", js.Array(value*))
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleIndexUndefined: Self = StObject.set(x, "visibleIndex", js.undefined)
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

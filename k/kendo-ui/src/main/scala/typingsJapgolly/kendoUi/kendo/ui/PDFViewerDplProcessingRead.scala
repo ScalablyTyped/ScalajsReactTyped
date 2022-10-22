@@ -1,25 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PDFViewerDplProcessingRead extends js.Object {
+trait PDFViewerDplProcessingRead extends StObject {
+  
   var dataType: js.UndefOr[String] = js.undefined
+  
   var pageField: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object PDFViewerDplProcessingRead {
-  @scala.inline
-  def apply(dataType: String = null, pageField: String = null, `type`: String = null, url: String = null): PDFViewerDplProcessingRead = {
+  
+  inline def apply(): PDFViewerDplProcessingRead = {
     val __obj = js.Dynamic.literal()
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (pageField != null) __obj.updateDynamic("pageField")(pageField.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerDplProcessingRead]
   }
+  
+  extension [Self <: PDFViewerDplProcessingRead](x: Self) {
+    
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    
+    inline def setPageField(value: String): Self = StObject.set(x, "pageField", value.asInstanceOf[js.Any])
+    
+    inline def setPageFieldUndefined: Self = StObject.set(x, "pageField", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

@@ -1,161 +1,214 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgVideoPlayerLocale
-  extends /**
-	 * Option for IgVideoPlayerLocale
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Gets/Sets ad message text.
-  	 *
-  	 */
+    * Gets/Sets ad message text.
+    *
+    */
   var adMessage: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets long ad message text.
-  	 *
-  	 */
+    * Gets/Sets long ad message text.
+    *
+    */
   var adMessageLong: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets ad message text when no duration is specified.
-  	 *
-  	 */
+    * Gets/Sets ad message text when no duration is specified.
+    *
+    */
   var adMessageNoDuration: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets new ad window title.
-  	 *
-  	 */
+    * Gets/Sets new ad window title.
+    *
+    */
   var adNewWindowTip: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets buffering label text.
-  	 *
-  	 */
+    * Gets/Sets buffering label text.
+    *
+    */
   var buffering: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets enter fullscreen button title.
-  	 *
-  	 */
+    * Gets/Sets enter fullscreen button title.
+    *
+    */
   var enterFullscreen: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets exit fullscreen button title.
-  	 *
-  	 */
+    * Gets/Sets exit fullscreen button title.
+    *
+    */
   var exitFullscreen: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets live video title.
-  	 *
-  	 */
+    * Gets/Sets live video title.
+    *
+    */
   var live: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets live stream video title.
-  	 *
-  	 */
+    * Gets/Sets live stream video title.
+    *
+    */
   var liveStream: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets paused button title.
-  	 *
-  	 */
+    * Gets/Sets paused button title.
+    *
+    */
   var paused: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets play button title.
-  	 *
-  	 */
+    * Gets/Sets play button title.
+    *
+    */
   var play: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets playing button title.
-  	 *
-  	 */
+    * Gets/Sets playing button title.
+    *
+    */
   var playing: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets progress label long format.
-  	 *
-  	 */
+    * Gets/Sets progress label long format.
+    *
+    */
   var progressLabelLongFormat: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets progress label short format.
-  	 *
-  	 */
+    * Gets/Sets progress label short format.
+    *
+    */
   var progressLabelShortFormat: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets related videos text.
-  	 *
-  	 */
+    * Gets/Sets related videos text.
+    *
+    */
   var relatedVideos: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets replay button text.
-  	 *
-  	 */
+    * Gets/Sets replay button text.
+    *
+    */
   var replayButton: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets replay button tooltip.
-  	 *
-  	 */
+    * Gets/Sets replay button tooltip.
+    *
+    */
   var replayTooltip: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets skip to button title.
-  	 *
-  	 */
+    * Gets/Sets skip to button title.
+    *
+    */
   var skipTo: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets volume button title.
-  	 *
-  	 */
+    * Gets/Sets volume button title.
+    *
+    */
   var volume: js.UndefOr[Boolean] = js.undefined
 }
-
 object IgVideoPlayerLocale {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgVideoPlayerLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    adMessage: js.UndefOr[Boolean] = js.undefined,
-    adMessageLong: js.UndefOr[Boolean] = js.undefined,
-    adMessageNoDuration: js.UndefOr[Boolean] = js.undefined,
-    adNewWindowTip: js.UndefOr[Boolean] = js.undefined,
-    buffering: js.UndefOr[Boolean] = js.undefined,
-    enterFullscreen: js.UndefOr[Boolean] = js.undefined,
-    exitFullscreen: js.UndefOr[Boolean] = js.undefined,
-    live: js.UndefOr[Boolean] = js.undefined,
-    liveStream: js.UndefOr[Boolean] = js.undefined,
-    paused: js.UndefOr[Boolean] = js.undefined,
-    play: js.UndefOr[Boolean] = js.undefined,
-    playing: js.UndefOr[Boolean] = js.undefined,
-    progressLabelLongFormat: js.UndefOr[Boolean] = js.undefined,
-    progressLabelShortFormat: js.UndefOr[Boolean] = js.undefined,
-    relatedVideos: js.UndefOr[Boolean] = js.undefined,
-    replayButton: js.UndefOr[Boolean] = js.undefined,
-    replayTooltip: js.UndefOr[Boolean] = js.undefined,
-    skipTo: js.UndefOr[Boolean] = js.undefined,
-    volume: js.UndefOr[Boolean] = js.undefined
-  ): IgVideoPlayerLocale = {
+  
+  inline def apply(): IgVideoPlayerLocale = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(adMessage)) __obj.updateDynamic("adMessage")(adMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(adMessageLong)) __obj.updateDynamic("adMessageLong")(adMessageLong.asInstanceOf[js.Any])
-    if (!js.isUndefined(adMessageNoDuration)) __obj.updateDynamic("adMessageNoDuration")(adMessageNoDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(adNewWindowTip)) __obj.updateDynamic("adNewWindowTip")(adNewWindowTip.asInstanceOf[js.Any])
-    if (!js.isUndefined(buffering)) __obj.updateDynamic("buffering")(buffering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enterFullscreen)) __obj.updateDynamic("enterFullscreen")(enterFullscreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitFullscreen)) __obj.updateDynamic("exitFullscreen")(exitFullscreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveStream)) __obj.updateDynamic("liveStream")(liveStream.asInstanceOf[js.Any])
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
-    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
-    if (!js.isUndefined(playing)) __obj.updateDynamic("playing")(playing.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressLabelLongFormat)) __obj.updateDynamic("progressLabelLongFormat")(progressLabelLongFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressLabelShortFormat)) __obj.updateDynamic("progressLabelShortFormat")(progressLabelShortFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(relatedVideos)) __obj.updateDynamic("relatedVideos")(relatedVideos.asInstanceOf[js.Any])
-    if (!js.isUndefined(replayButton)) __obj.updateDynamic("replayButton")(replayButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(replayTooltip)) __obj.updateDynamic("replayTooltip")(replayTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipTo)) __obj.updateDynamic("skipTo")(skipTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgVideoPlayerLocale]
   }
+  
+  extension [Self <: IgVideoPlayerLocale](x: Self) {
+    
+    inline def setAdMessage(value: Boolean): Self = StObject.set(x, "adMessage", value.asInstanceOf[js.Any])
+    
+    inline def setAdMessageLong(value: Boolean): Self = StObject.set(x, "adMessageLong", value.asInstanceOf[js.Any])
+    
+    inline def setAdMessageLongUndefined: Self = StObject.set(x, "adMessageLong", js.undefined)
+    
+    inline def setAdMessageNoDuration(value: Boolean): Self = StObject.set(x, "adMessageNoDuration", value.asInstanceOf[js.Any])
+    
+    inline def setAdMessageNoDurationUndefined: Self = StObject.set(x, "adMessageNoDuration", js.undefined)
+    
+    inline def setAdMessageUndefined: Self = StObject.set(x, "adMessage", js.undefined)
+    
+    inline def setAdNewWindowTip(value: Boolean): Self = StObject.set(x, "adNewWindowTip", value.asInstanceOf[js.Any])
+    
+    inline def setAdNewWindowTipUndefined: Self = StObject.set(x, "adNewWindowTip", js.undefined)
+    
+    inline def setBuffering(value: Boolean): Self = StObject.set(x, "buffering", value.asInstanceOf[js.Any])
+    
+    inline def setBufferingUndefined: Self = StObject.set(x, "buffering", js.undefined)
+    
+    inline def setEnterFullscreen(value: Boolean): Self = StObject.set(x, "enterFullscreen", value.asInstanceOf[js.Any])
+    
+    inline def setEnterFullscreenUndefined: Self = StObject.set(x, "enterFullscreen", js.undefined)
+    
+    inline def setExitFullscreen(value: Boolean): Self = StObject.set(x, "exitFullscreen", value.asInstanceOf[js.Any])
+    
+    inline def setExitFullscreenUndefined: Self = StObject.set(x, "exitFullscreen", js.undefined)
+    
+    inline def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
+    
+    inline def setLiveStream(value: Boolean): Self = StObject.set(x, "liveStream", value.asInstanceOf[js.Any])
+    
+    inline def setLiveStreamUndefined: Self = StObject.set(x, "liveStream", js.undefined)
+    
+    inline def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
+    
+    inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+    
+    inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+    
+    inline def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+    
+    inline def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
+    
+    inline def setPlaying(value: Boolean): Self = StObject.set(x, "playing", value.asInstanceOf[js.Any])
+    
+    inline def setPlayingUndefined: Self = StObject.set(x, "playing", js.undefined)
+    
+    inline def setProgressLabelLongFormat(value: Boolean): Self = StObject.set(x, "progressLabelLongFormat", value.asInstanceOf[js.Any])
+    
+    inline def setProgressLabelLongFormatUndefined: Self = StObject.set(x, "progressLabelLongFormat", js.undefined)
+    
+    inline def setProgressLabelShortFormat(value: Boolean): Self = StObject.set(x, "progressLabelShortFormat", value.asInstanceOf[js.Any])
+    
+    inline def setProgressLabelShortFormatUndefined: Self = StObject.set(x, "progressLabelShortFormat", js.undefined)
+    
+    inline def setRelatedVideos(value: Boolean): Self = StObject.set(x, "relatedVideos", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedVideosUndefined: Self = StObject.set(x, "relatedVideos", js.undefined)
+    
+    inline def setReplayButton(value: Boolean): Self = StObject.set(x, "replayButton", value.asInstanceOf[js.Any])
+    
+    inline def setReplayButtonUndefined: Self = StObject.set(x, "replayButton", js.undefined)
+    
+    inline def setReplayTooltip(value: Boolean): Self = StObject.set(x, "replayTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setReplayTooltipUndefined: Self = StObject.set(x, "replayTooltip", js.undefined)
+    
+    inline def setSkipTo(value: Boolean): Self = StObject.set(x, "skipTo", value.asInstanceOf[js.Any])
+    
+    inline def setSkipToUndefined: Self = StObject.set(x, "skipTo", js.undefined)
+    
+    inline def setVolume(value: Boolean): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+  }
 }
-

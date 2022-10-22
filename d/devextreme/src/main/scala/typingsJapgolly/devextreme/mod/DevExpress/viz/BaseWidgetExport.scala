@@ -1,68 +1,99 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLCanvasElement
-import org.scalajs.dom.raw.SVGElement
-import typingsJapgolly.devextreme.devextremeStrings.GIF
-import typingsJapgolly.devextreme.devextremeStrings.JPEG
-import typingsJapgolly.devextreme.devextremeStrings.PDF
-import typingsJapgolly.devextreme.devextremeStrings.PNG
-import typingsJapgolly.devextreme.devextremeStrings.SVG
-import typingsJapgolly.devextreme.mod._Global_.JQueryPromise
-import typingsJapgolly.devextreme.mod._Global_.Promise
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.SVGElement
+import typingsJapgolly.devextreme.mod.DevExpress.common.ExportFormat
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Configures the exporting and printing features. */
-trait BaseWidgetExport extends js.Object {
-  /** Specifies the color that will fill transparent regions in the resulting file or document. */
+trait BaseWidgetExport extends StObject {
+  
+  /**
+    * Specifies the color that will fill transparent regions in the resulting file or document.
+    */
   var backgroundColor: js.UndefOr[String] = js.undefined
-  /** Enables the client-side exporting in the widget. */
+  
+  /**
+    * Enables the client-side exporting in the UI component.
+    */
   var enabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a default name for the file to which the widget will be exported. */
+  
+  /**
+    * Specifies a default name for the file to which the UI component will be exported.
+    */
   var fileName: js.UndefOr[String] = js.undefined
-  /** Specifies a set of export formats. */
-  var formats: js.UndefOr[js.Array[GIF | JPEG | PDF | PNG | SVG]] = js.undefined
-  /** Adds an empty space around the exported widget; measured in pixels. */
+  
+  /**
+    * Specifies a set of export formats.
+    */
+  var formats: js.UndefOr[js.Array[ExportFormat]] = js.undefined
+  
+  /**
+    * Adds an empty space around the exported UI component; measured in pixels.
+    */
   var margin: js.UndefOr[Double] = js.undefined
-  /** Enables the printing feature in the widget. Applies only if the export.enabled option is true. */
+  
+  /**
+    * Enables the printing feature in the UI component. Applies only if the export.enabled property is true.
+    */
   var printingEnabled: js.UndefOr[Boolean] = js.undefined
-  /** @deprecated [important] Since v10, Safari browser supports API for saving files, and this option is no longer required. */
-  /** Specifies the URL of the server-side proxy that streams the resulting file to the end user to enable exporting in the Safari browser. */
+  
+  /**
+    * Specifies the URL of the server-side proxy that streams the resulting file to the end user to enable exporting in the Safari browser.
+    * @deprecated Since v10, Safari browser supports API for saving files, and this property is no longer required.
+    */
   var proxyUrl: js.UndefOr[String] = js.undefined
-  /** A function that renders SVG markup on the HTML canvas. Required to export custom SVG elements (for example, markerTemplate). */
+  
+  /**
+    * A function that renders SVG markup on the HTML canvas. Required to export custom SVG elements (for example, markerTemplate).
+    */
   var svgToCanvas: js.UndefOr[
-    js.Function2[
-      /* svg */ SVGElement, 
-      /* canvas */ HTMLCanvasElement, 
-      Promise[Unit] | JQueryPromise[Unit]
-    ]
+    js.Function2[/* svg */ SVGElement, /* canvas */ HTMLCanvasElement, PromiseLike[Unit]]
   ] = js.undefined
 }
-
 object BaseWidgetExport {
-  @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    fileName: String = null,
-    formats: js.Array[GIF | JPEG | PDF | PNG | SVG] = null,
-    margin: Int | Double = null,
-    printingEnabled: js.UndefOr[Boolean] = js.undefined,
-    proxyUrl: String = null,
-    svgToCanvas: (/* svg */ SVGElement, /* canvas */ HTMLCanvasElement) => CallbackTo[Promise[Unit] | JQueryPromise[Unit]] = null
-  ): BaseWidgetExport = {
+  
+  inline def apply(): BaseWidgetExport = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(printingEnabled)) __obj.updateDynamic("printingEnabled")(printingEnabled.asInstanceOf[js.Any])
-    if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl.asInstanceOf[js.Any])
-    if (svgToCanvas != null) __obj.updateDynamic("svgToCanvas")(js.Any.fromFunction2((t0: /* svg */ org.scalajs.dom.raw.SVGElement, t1: /* canvas */ org.scalajs.dom.raw.HTMLCanvasElement) => svgToCanvas(t0, t1).runNow()))
     __obj.asInstanceOf[BaseWidgetExport]
   }
+  
+  extension [Self <: BaseWidgetExport](x: Self) {
+    
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    
+    inline def setFormats(value: js.Array[ExportFormat]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    
+    inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+    
+    inline def setFormatsVarargs(value: ExportFormat*): Self = StObject.set(x, "formats", js.Array(value*))
+    
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setPrintingEnabled(value: Boolean): Self = StObject.set(x, "printingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPrintingEnabledUndefined: Self = StObject.set(x, "printingEnabled", js.undefined)
+    
+    inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+    
+    inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
+    
+    inline def setSvgToCanvas(value: (/* svg */ SVGElement, /* canvas */ HTMLCanvasElement) => PromiseLike[Unit]): Self = StObject.set(x, "svgToCanvas", js.Any.fromFunction2(value))
+    
+    inline def setSvgToCanvasUndefined: Self = StObject.set(x, "svgToCanvas", js.undefined)
+  }
 }
-

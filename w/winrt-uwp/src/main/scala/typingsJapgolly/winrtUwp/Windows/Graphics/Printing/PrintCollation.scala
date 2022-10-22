@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Graphics.Printing
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintCollation extends js.Object
-
+sealed trait PrintCollation extends StObject
 /** Specifies the collation option. */
 @JSGlobal("Windows.Graphics.Printing.PrintCollation")
 @js.native
-object PrintCollation extends js.Object {
-  /** An option to specify that collation has been selected for the printed output. */
-  @js.native
-  sealed trait collated extends PrintCollation
+object PrintCollation extends StObject {
   
   /** The default collation option. */
   @js.native
-  sealed trait default extends PrintCollation
+  sealed trait default
+    extends StObject
+       with PrintCollation
+  
+  /** An option to specify that collation has been selected for the printed output. */
+  @js.native
+  sealed trait collated
+    extends StObject
+       with PrintCollation
   
   /** An unsupported collation option. */
   @js.native
-  sealed trait notAvailable extends PrintCollation
+  sealed trait notAvailable
+    extends StObject
+       with PrintCollation
   
   /** A custom collation option that is specific to the print device. */
   @js.native
-  sealed trait printerCustom extends PrintCollation
+  sealed trait printerCustom
+    extends StObject
+       with PrintCollation
   
   /** An option to specify that collation has not been selected for the printed output. */
   @js.native
-  sealed trait uncollated extends PrintCollation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PrintCollation with Double] = js.native
-  /* 3 */ @js.native
-  object collated extends TopLevel[collated with Double]
-  
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object notAvailable extends TopLevel[notAvailable with Double]
-  
-  /* 2 */ @js.native
-  object printerCustom extends TopLevel[printerCustom with Double]
-  
-  /* 4 */ @js.native
-  object uncollated extends TopLevel[uncollated with Double]
-  
+  sealed trait uncollated
+    extends StObject
+       with PrintCollation
 }
-

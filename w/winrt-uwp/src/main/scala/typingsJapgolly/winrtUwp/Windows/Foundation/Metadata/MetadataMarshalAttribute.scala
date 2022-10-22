@@ -1,11 +1,8 @@
 package typingsJapgolly.winrtUwp.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates that tools should create an entry for an interface when creating an application package. */
-@JSGlobal("Windows.Foundation.Metadata.MetadataMarshalAttribute")
-@js.native
-abstract class MetadataMarshalAttribute () extends js.Object
-
+trait MetadataMarshalAttribute extends StObject

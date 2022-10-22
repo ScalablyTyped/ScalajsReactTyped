@@ -1,21 +1,17 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LEFT
   - typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT
 */
-trait AxisDependency extends js.Object
-
+trait AxisDependency extends StObject
 object AxisDependency {
-  @scala.inline
-  def LEFT: typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LEFT = this.cast("LEFT")
-  @scala.inline
-  def RIGHT: typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT = this.cast("RIGHT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def LEFT: typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LEFT = "LEFT".asInstanceOf[typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LEFT]
+  
+  inline def RIGHT: typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT = "RIGHT".asInstanceOf[typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.RIGHT]
 }
-

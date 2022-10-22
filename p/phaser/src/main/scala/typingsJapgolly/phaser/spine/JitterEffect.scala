@@ -1,20 +1,35 @@
 package typingsJapgolly.phaser.spine
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.JitterEffect")
-@js.native
-class JitterEffect protected () extends VertexEffect {
-  def this(jitterX: Double, jitterY: Double) = this()
-  var jitterX: Double = js.native
-  var jitterY: Double = js.native
-  /* CompleteClass */
-  override def begin(skeleton: Skeleton): Unit = js.native
-  /* CompleteClass */
-  override def end(): Unit = js.native
-  /* CompleteClass */
-  override def transform(position: Vector2, uv: Vector2, light: Color, dark: Color): Unit = js.native
+trait JitterEffect
+  extends StObject
+     with VertexEffect {
+  
+  var jitterX: Double
+  
+  var jitterY: Double
 }
-
+object JitterEffect {
+  
+  inline def apply(
+    begin: Skeleton => Callback,
+    end: Callback,
+    jitterX: Double,
+    jitterY: Double,
+    transform: (Vector2, Vector2, Color, Color) => Callback
+  ): JitterEffect = {
+    val __obj = js.Dynamic.literal(begin = js.Any.fromFunction1((t0: Skeleton) => begin(t0).runNow()), end = end.toJsFn, jitterX = jitterX.asInstanceOf[js.Any], jitterY = jitterY.asInstanceOf[js.Any], transform = js.Any.fromFunction4((t0: Vector2, t1: Vector2, t2: Color, t3: Color) => (transform(t0, t1, t2, t3)).runNow()))
+    __obj.asInstanceOf[JitterEffect]
+  }
+  
+  extension [Self <: JitterEffect](x: Self) {
+    
+    inline def setJitterX(value: Double): Self = StObject.set(x, "jitterX", value.asInstanceOf[js.Any])
+    
+    inline def setJitterY(value: Double): Self = StObject.set(x, "jitterY", value.asInstanceOf[js.Any])
+  }
+}

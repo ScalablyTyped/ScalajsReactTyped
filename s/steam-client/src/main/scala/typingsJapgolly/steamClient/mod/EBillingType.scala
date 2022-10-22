@@ -1,119 +1,117 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EBillingType extends js.Object
-
+sealed trait EBillingType extends StObject
 @JSImport("steam-client", "EBillingType")
 @js.native
-object EBillingType extends js.Object {
-  @js.native
-  sealed trait AutoGrant extends EBillingType
-  
-  @js.native
-  sealed trait BillMonthly extends EBillingType
-  
-  @js.native
-  sealed trait BillOnceOnly extends EBillingType
-  
-  @js.native
-  sealed trait BillOnceOrCDKey extends EBillingType
-  
-  @js.native
-  sealed trait CommercialLicense extends EBillingType
-  
-  @js.native
-  sealed trait FreeCommercialLicense extends EBillingType
-  
-  @js.native
-  sealed trait FreeOnDemand extends EBillingType
-  
-  @js.native
-  sealed trait Gift extends EBillingType
-  
-  @js.native
-  sealed trait GuestPass extends EBillingType
-  
-  @js.native
-  sealed trait HardwarePromo extends EBillingType
-  
-  @js.native
-  sealed trait NoCost extends EBillingType
-  
-  @js.native
-  sealed trait NumBillingTypes extends EBillingType
-  
-  @js.native
-  sealed trait OEMTicket extends EBillingType
-  
-  @js.native
-  sealed trait ProofOfPrepurchaseOnly extends EBillingType
-  
-  @js.native
-  sealed trait RecurringOption extends EBillingType
-  
-  @js.native
-  sealed trait Rental extends EBillingType
-  
-  @js.native
-  sealed trait Repurchaseable extends EBillingType
+object EBillingType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EBillingType with Double] = js.native
-  /* 7 */ @js.native
-  object AutoGrant extends TopLevel[AutoGrant with Double]
+  def apply(value: Double): js.UndefOr[EBillingType & Double] = js.native
   
-  /* 2 */ @js.native
-  object BillMonthly extends TopLevel[BillMonthly with Double]
+  @js.native
+  sealed trait AutoGrant
+    extends StObject
+       with EBillingType
+  /* 7 */ val AutoGrant: typingsJapgolly.steamClient.mod.EBillingType.AutoGrant & Double = js.native
   
-  /* 1 */ @js.native
-  object BillOnceOnly extends TopLevel[BillOnceOnly with Double]
+  @js.native
+  sealed trait BillMonthly
+    extends StObject
+       with EBillingType
+  /* 2 */ val BillMonthly: typingsJapgolly.steamClient.mod.EBillingType.BillMonthly & Double = js.native
   
-  /* 10 */ @js.native
-  object BillOnceOrCDKey extends TopLevel[BillOnceOrCDKey with Double]
+  @js.native
+  sealed trait BillOnceOnly
+    extends StObject
+       with EBillingType
+  /* 1 */ val BillOnceOnly: typingsJapgolly.steamClient.mod.EBillingType.BillOnceOnly & Double = js.native
   
-  /* 14 */ @js.native
-  object CommercialLicense extends TopLevel[CommercialLicense with Double]
+  @js.native
+  sealed trait BillOnceOrCDKey
+    extends StObject
+       with EBillingType
+  /* 10 */ val BillOnceOrCDKey: typingsJapgolly.steamClient.mod.EBillingType.BillOnceOrCDKey & Double = js.native
   
-  /* 15 */ @js.native
-  object FreeCommercialLicense extends TopLevel[FreeCommercialLicense with Double]
+  @js.native
+  sealed trait CommercialLicense
+    extends StObject
+       with EBillingType
+  /* 14 */ val CommercialLicense: typingsJapgolly.steamClient.mod.EBillingType.CommercialLicense & Double = js.native
   
-  /* 12 */ @js.native
-  object FreeOnDemand extends TopLevel[FreeOnDemand with Double]
+  @js.native
+  sealed trait FreeCommercialLicense
+    extends StObject
+       with EBillingType
+  /* 15 */ val FreeCommercialLicense: typingsJapgolly.steamClient.mod.EBillingType.FreeCommercialLicense & Double = js.native
   
-  /* 6 */ @js.native
-  object Gift extends TopLevel[Gift with Double]
+  @js.native
+  sealed trait FreeOnDemand
+    extends StObject
+       with EBillingType
+  /* 12 */ val FreeOnDemand: typingsJapgolly.steamClient.mod.EBillingType.FreeOnDemand & Double = js.native
   
-  /* 4 */ @js.native
-  object GuestPass extends TopLevel[GuestPass with Double]
+  @js.native
+  sealed trait Gift
+    extends StObject
+       with EBillingType
+  /* 6 */ val Gift: typingsJapgolly.steamClient.mod.EBillingType.Gift & Double = js.native
   
-  /* 5 */ @js.native
-  object HardwarePromo extends TopLevel[HardwarePromo with Double]
+  @js.native
+  sealed trait GuestPass
+    extends StObject
+       with EBillingType
+  /* 4 */ val GuestPass: typingsJapgolly.steamClient.mod.EBillingType.GuestPass & Double = js.native
   
-  /* 0 */ @js.native
-  object NoCost extends TopLevel[NoCost with Double]
+  @js.native
+  sealed trait HardwarePromo
+    extends StObject
+       with EBillingType
+  /* 5 */ val HardwarePromo: typingsJapgolly.steamClient.mod.EBillingType.HardwarePromo & Double = js.native
   
-  /* 16 */ @js.native
-  object NumBillingTypes extends TopLevel[NumBillingTypes with Double]
+  @js.native
+  sealed trait NoCost
+    extends StObject
+       with EBillingType
+  /* 0 */ val NoCost: typingsJapgolly.steamClient.mod.EBillingType.NoCost & Double = js.native
   
-  /* 8 */ @js.native
-  object OEMTicket extends TopLevel[OEMTicket with Double]
+  @js.native
+  sealed trait NumBillingTypes
+    extends StObject
+       with EBillingType
+  /* 16 */ val NumBillingTypes: typingsJapgolly.steamClient.mod.EBillingType.NumBillingTypes & Double = js.native
   
-  /* 3 */ @js.native
-  object ProofOfPrepurchaseOnly extends TopLevel[ProofOfPrepurchaseOnly with Double]
+  @js.native
+  sealed trait OEMTicket
+    extends StObject
+       with EBillingType
+  /* 8 */ val OEMTicket: typingsJapgolly.steamClient.mod.EBillingType.OEMTicket & Double = js.native
   
-  /* 9 */ @js.native
-  object RecurringOption extends TopLevel[RecurringOption with Double]
+  @js.native
+  sealed trait ProofOfPrepurchaseOnly
+    extends StObject
+       with EBillingType
+  /* 3 */ val ProofOfPrepurchaseOnly: typingsJapgolly.steamClient.mod.EBillingType.ProofOfPrepurchaseOnly & Double = js.native
   
-  /* 13 */ @js.native
-  object Rental extends TopLevel[Rental with Double]
+  @js.native
+  sealed trait RecurringOption
+    extends StObject
+       with EBillingType
+  /* 9 */ val RecurringOption: typingsJapgolly.steamClient.mod.EBillingType.RecurringOption & Double = js.native
   
-  /* 11 */ @js.native
-  object Repurchaseable extends TopLevel[Repurchaseable with Double]
+  @js.native
+  sealed trait Rental
+    extends StObject
+       with EBillingType
+  /* 13 */ val Rental: typingsJapgolly.steamClient.mod.EBillingType.Rental & Double = js.native
   
+  @js.native
+  sealed trait Repurchaseable
+    extends StObject
+       with EBillingType
+  /* 11 */ val Repurchaseable: typingsJapgolly.steamClient.mod.EBillingType.Repurchaseable & Double = js.native
 }
-

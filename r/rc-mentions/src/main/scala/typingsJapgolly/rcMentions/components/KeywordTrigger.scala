@@ -1,53 +1,49 @@
 package typingsJapgolly.rcMentions.components
 
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.rcMentions.keywordTriggerMod.KeywordTriggerProps
-import typingsJapgolly.rcMentions.keywordTriggerMod.default
-import typingsJapgolly.rcMentions.mentionsMod.Placement
-import typingsJapgolly.rcMentions.optionMod.OptionProps
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.rcMentions.esKeywordTriggerMod.KeywordTriggerProps
+import typingsJapgolly.rcMentions.esKeywordTriggerMod.default
+import typingsJapgolly.rcMentions.esMentionsMod.Direction
+import typingsJapgolly.rcMentions.esMentionsMod.Placement
+import typingsJapgolly.rcMentions.esOptionMod.OptionProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object KeywordTrigger {
-  def apply(
-    options: js.Array[OptionProps],
-    getPopupContainer: js.UndefOr[CallbackTo[HTMLElement]] = js.undefined,
-    loading: js.UndefOr[Boolean] = js.undefined,
-    placement: Placement = null,
-    prefixCls: String = null,
-    transitionName: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[KeywordTriggerProps, default, Unit, KeywordTriggerProps] = {
-    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
   
-      getPopupContainer.foreach(p => __obj.updateDynamic("getPopupContainer")(p.toJsFn))
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rcMentions.keywordTriggerMod.KeywordTriggerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rcMentions.keywordTriggerMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rcMentions.keywordTriggerMod.KeywordTriggerProps])(children: _*)
+  inline def apply(options: js.Array[OptionProps]): Builder = {
+    val __props = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[KeywordTriggerProps]))
   }
-  @JSImport("rc-mentions/lib/KeywordTrigger", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("rc-mentions/es/KeywordTrigger", JSImport.Default)
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def direction(value: Direction): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def dropdownClassName(value: String): this.type = set("dropdownClassName", value.asInstanceOf[js.Any])
+    
+    inline def getPopupContainer(value: CallbackTo[HTMLElement]): this.type = set("getPopupContainer", value.toJsFn)
+    
+    inline def loading(value: Boolean): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def placement(value: Placement): this.type = set("placement", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def transitionName(value: String): this.type = set("transitionName", value.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: KeywordTriggerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

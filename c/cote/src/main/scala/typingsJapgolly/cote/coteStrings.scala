@@ -1,19 +1,16 @@
 package typingsJapgolly.cote
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coteStrings {
-  @js.native
-  sealed trait coteColonadded extends js.Object
   
   @js.native
-  sealed trait coteColonremoved extends js.Object
+  sealed trait coteColonadded extends StObject
+  inline def coteColonadded: coteColonadded = "cote:added".asInstanceOf[coteColonadded]
   
-  @scala.inline
-  def coteColonadded: coteColonadded = "cote:added".asInstanceOf[coteColonadded]
-  @scala.inline
-  def coteColonremoved: coteColonremoved = "cote:removed".asInstanceOf[coteColonremoved]
+  @js.native
+  sealed trait coteColonremoved extends StObject
+  inline def coteColonremoved: coteColonremoved = "cote:removed".asInstanceOf[coteColonremoved]
 }
-

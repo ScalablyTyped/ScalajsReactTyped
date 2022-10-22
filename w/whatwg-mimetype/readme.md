@@ -1,7 +1,7 @@
 
 # Scala.js typings for whatwg-mimetype
 
-Typings are for version 2.1
+Typings are for version 3.0
 
 ## Library description:
 Parses, serializes, and manipulates MIME types, according to the WHATWG MIME Sniffing Standard
@@ -10,10 +10,10 @@ Parses, serializes, and manipulates MIME types, according to the WHATWG MIME Sni
 | ------------------ | :-------------: |
 | Full name          | whatwg-mimetype |
 | Keywords           | content-type, mime type, mimesniff, http, whatwg |
-| # releases         | 7 |
-| # dependents       | 39 |
-| # downloads        | 177944978 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 7.2187143E7 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdom/whatwg-mimetype#readme)

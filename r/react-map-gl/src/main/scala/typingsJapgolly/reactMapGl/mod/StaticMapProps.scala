@@ -1,82 +1,59 @@
 package typingsJapgolly.reactMapGl.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.reactMapGl.AnonHeight
-import typingsJapgolly.reactMapGl.AnonMaxPitch
+import typingsJapgolly.reactMapGl.anon.Height
+import typingsJapgolly.reactMapGl.anon.MaxPitch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StaticMapProps extends MapboxProps {
+trait StaticMapProps
+  extends StObject
+     with MapboxProps {
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var disableTokenWarning: js.UndefOr[Boolean] = js.undefined
-  var onResize: js.UndefOr[js.Function1[/* dimensions */ AnonHeight, Unit]] = js.undefined
+  
+  var onResize: js.UndefOr[js.Function1[/* dimensions */ Height, Unit]] = js.undefined
+  
   var preventStyleDiffing: js.UndefOr[Boolean] = js.undefined
+  
   var style: js.UndefOr[js.Object] = js.undefined
-  var visibilityConstraints: js.UndefOr[AnonMaxPitch] = js.undefined
+  
+  var visibilityConstraints: js.UndefOr[MaxPitch] = js.undefined
 }
-
 object StaticMapProps {
-  @scala.inline
-  def apply(
-    height: Double | String,
-    width: Double | String,
-    altitude: Int | Double = null,
-    attributionControl: js.UndefOr[Boolean] = js.undefined,
-    bearing: Int | Double = null,
-    className: String = null,
-    container: js.Object = null,
-    disableTokenWarning: js.UndefOr[Boolean] = js.undefined,
-    gl: js.Object = null,
-    latitude: Int | Double = null,
-    longitude: Int | Double = null,
-    mapOptions: js.Object = null,
-    mapStyle: String | js.Object = null,
-    mapboxApiAccessToken: String = null,
-    onError: /* e */ MapError => Callback = null,
-    onLoad: /* event */ MapLoadEvent => Callback = null,
-    onResize: /* dimensions */ AnonHeight => Callback = null,
-    pitch: Int | Double = null,
-    preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined,
-    preventStyleDiffing: js.UndefOr[Boolean] = js.undefined,
-    reuseMap: js.UndefOr[Boolean] = js.undefined,
-    reuseMaps: js.UndefOr[Boolean] = js.undefined,
-    style: js.Object = null,
-    transformRequest: (/* url */ js.UndefOr[String], /* resourceType */ js.UndefOr[String]) => CallbackTo[MapRequest] = null,
-    viewState: ViewState = null,
-    visibilityConstraints: AnonMaxPitch = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zoom: Int | Double = null
-  ): StaticMapProps = {
+  
+  inline def apply(height: Double | String, width: Double | String): StaticMapProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl.asInstanceOf[js.Any])
-    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableTokenWarning)) __obj.updateDynamic("disableTokenWarning")(disableTokenWarning.asInstanceOf[js.Any])
-    if (gl != null) __obj.updateDynamic("gl")(gl.asInstanceOf[js.Any])
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
-    if (mapOptions != null) __obj.updateDynamic("mapOptions")(mapOptions.asInstanceOf[js.Any])
-    if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle.asInstanceOf[js.Any])
-    if (mapboxApiAccessToken != null) __obj.updateDynamic("mapboxApiAccessToken")(mapboxApiAccessToken.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.reactMapGl.mod.MapError) => onError(t0).runNow()))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.MapLoadEvent) => onLoad(t0).runNow()))
-    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1((t0: /* dimensions */ typingsJapgolly.reactMapGl.AnonHeight) => onResize(t0).runNow()))
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventStyleDiffing)) __obj.updateDynamic("preventStyleDiffing")(preventStyleDiffing.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseMap)) __obj.updateDynamic("reuseMap")(reuseMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseMaps)) __obj.updateDynamic("reuseMaps")(reuseMaps.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction2((t0: /* url */ js.UndefOr[java.lang.String], t1: /* resourceType */ js.UndefOr[java.lang.String]) => transformRequest(t0, t1).runNow()))
-    if (viewState != null) __obj.updateDynamic("viewState")(viewState.asInstanceOf[js.Any])
-    if (visibilityConstraints != null) __obj.updateDynamic("visibilityConstraints")(visibilityConstraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticMapProps]
   }
+  
+  extension [Self <: StaticMapProps](x: Self) {
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setDisableTokenWarning(value: Boolean): Self = StObject.set(x, "disableTokenWarning", value.asInstanceOf[js.Any])
+    
+    inline def setDisableTokenWarningUndefined: Self = StObject.set(x, "disableTokenWarning", js.undefined)
+    
+    inline def setOnResize(value: /* dimensions */ Height => Callback): Self = StObject.set(x, "onResize", js.Any.fromFunction1((t0: /* dimensions */ Height) => value(t0).runNow()))
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+    
+    inline def setPreventStyleDiffing(value: Boolean): Self = StObject.set(x, "preventStyleDiffing", value.asInstanceOf[js.Any])
+    
+    inline def setPreventStyleDiffingUndefined: Self = StObject.set(x, "preventStyleDiffing", js.undefined)
+    
+    inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setVisibilityConstraints(value: MaxPitch): Self = StObject.set(x, "visibilityConstraints", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityConstraintsUndefined: Self = StObject.set(x, "visibilityConstraints", js.undefined)
+  }
 }
-

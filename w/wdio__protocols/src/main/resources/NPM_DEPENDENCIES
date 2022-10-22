@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wdio/protocols" : "7.22.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wdio/protocols" : "7.22.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

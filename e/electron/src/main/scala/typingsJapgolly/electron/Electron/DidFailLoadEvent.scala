@@ -1,14 +1,19 @@
 package typingsJapgolly.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DidFailLoadEvent extends Event {
+trait DidFailLoadEvent
+  extends StObject
+     with Event {
+  
   var errorCode: Double = js.native
+  
   var errorDescription: String = js.native
+  
   var isMainFrame: Boolean = js.native
+  
   var validatedURL: String = js.native
 }
-

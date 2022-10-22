@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Autocomplete suggestions to supplement a TextInput widget.
@@ -13,21 +12,23 @@ import scala.scalajs.js.annotation._
   *             .addSuggestion("First suggestion")
   *             .addSuggestion("Second suggestion"))
   */
-trait Suggestions extends js.Object {
+trait Suggestions extends StObject {
+  
   def addSuggestion(suggestion: String): Suggestions
+  
   def addSuggestions(suggestions: js.Array[String]): Suggestions
 }
-
 object Suggestions {
-  @scala.inline
-  def apply(
-    addSuggestion: String => CallbackTo[Suggestions],
-    addSuggestions: js.Array[String] => CallbackTo[Suggestions]
-  ): Suggestions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addSuggestion")(js.Any.fromFunction1((t0: java.lang.String) => addSuggestion(t0).runNow()))
-    __obj.updateDynamic("addSuggestions")(js.Any.fromFunction1((t0: js.Array[java.lang.String]) => addSuggestions(t0).runNow()))
+  
+  inline def apply(addSuggestion: String => Suggestions, addSuggestions: js.Array[String] => Suggestions): Suggestions = {
+    val __obj = js.Dynamic.literal(addSuggestion = js.Any.fromFunction1(addSuggestion), addSuggestions = js.Any.fromFunction1(addSuggestions))
     __obj.asInstanceOf[Suggestions]
   }
+  
+  extension [Self <: Suggestions](x: Self) {
+    
+    inline def setAddSuggestion(value: String => Suggestions): Self = StObject.set(x, "addSuggestion", js.Any.fromFunction1(value))
+    
+    inline def setAddSuggestions(value: js.Array[String] => Suggestions): Self = StObject.set(x, "addSuggestions", js.Any.fromFunction1(value))
+  }
 }
-

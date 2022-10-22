@@ -1,71 +1,94 @@
 package typingsJapgolly.node.inspectorMod.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Detailed information about exception (or error) that was thrown during script compilation or execution.
   */
-trait ExceptionDetails extends js.Object {
+trait ExceptionDetails extends StObject {
+  
   /**
     * Column number of the exception location (0-based).
     */
   var columnNumber: Double
+  
   /**
     * Exception object if available.
     */
   var exception: js.UndefOr[RemoteObject] = js.undefined
+  
   /**
     * Exception id.
     */
   var exceptionId: Double
+  
   /**
     * Identifier of the context where exception happened.
     */
   var executionContextId: js.UndefOr[ExecutionContextId] = js.undefined
+  
   /**
     * Line number of the exception location (0-based).
     */
   var lineNumber: Double
+  
   /**
     * Script ID of the exception location.
     */
   var scriptId: js.UndefOr[ScriptId] = js.undefined
+  
   /**
     * JavaScript stack trace if available.
     */
   var stackTrace: js.UndefOr[StackTrace] = js.undefined
+  
   /**
     * Exception text, which should be used together with exception object when available.
     */
   var text: String
+  
   /**
     * URL of the exception location, to be used when the script was not reported.
     */
   var url: js.UndefOr[String] = js.undefined
 }
-
 object ExceptionDetails {
-  @scala.inline
-  def apply(
-    columnNumber: Double,
-    exceptionId: Double,
-    lineNumber: Double,
-    text: String,
-    exception: RemoteObject = null,
-    executionContextId: Int | Double = null,
-    scriptId: ScriptId = null,
-    stackTrace: StackTrace = null,
-    url: String = null
-  ): ExceptionDetails = {
+  
+  inline def apply(columnNumber: Double, exceptionId: Double, lineNumber: Double, text: String): ExceptionDetails = {
     val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], exceptionId = exceptionId.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (exception != null) __obj.updateDynamic("exception")(exception.asInstanceOf[js.Any])
-    if (executionContextId != null) __obj.updateDynamic("executionContextId")(executionContextId.asInstanceOf[js.Any])
-    if (scriptId != null) __obj.updateDynamic("scriptId")(scriptId.asInstanceOf[js.Any])
-    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExceptionDetails]
   }
+  
+  extension [Self <: ExceptionDetails](x: Self) {
+    
+    inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+    
+    inline def setException(value: RemoteObject): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+    
+    inline def setExceptionId(value: Double): Self = StObject.set(x, "exceptionId", value.asInstanceOf[js.Any])
+    
+    inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
+    
+    inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
+    
+    inline def setExecutionContextIdUndefined: Self = StObject.set(x, "executionContextId", js.undefined)
+    
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    
+    inline def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
+    
+    inline def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
+    
+    inline def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
+    
+    inline def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

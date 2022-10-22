@@ -1,85 +1,153 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DialogOptions extends js.Object {
+trait DialogOptions extends StObject {
+  
   var actions: js.UndefOr[js.Array[DialogAction]] = js.undefined
+  
   var animation: js.UndefOr[Boolean | DialogAnimation] = js.undefined
+  
   var buttonLayout: js.UndefOr[String] = js.undefined
+  
   var closable: js.UndefOr[Boolean] = js.undefined
+  
   var close: js.UndefOr[js.Function1[/* e */ DialogCloseEvent, Unit]] = js.undefined
+  
   var content: js.UndefOr[String] = js.undefined
+  
   var height: js.UndefOr[Double | String] = js.undefined
+  
   var hide: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.undefined
+  
   var initOpen: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.undefined
+  
   var maxHeight: js.UndefOr[Double] = js.undefined
+  
   var maxWidth: js.UndefOr[Double] = js.undefined
+  
   var messages: js.UndefOr[DialogMessages] = js.undefined
+  
   var minHeight: js.UndefOr[Double] = js.undefined
+  
   var minWidth: js.UndefOr[Double] = js.undefined
+  
   var modal: js.UndefOr[Boolean | DialogModal] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var open: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.undefined
+  
   var show: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.undefined
+  
   var size: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String | Boolean] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
+  
   var width: js.UndefOr[Double | String] = js.undefined
 }
-
 object DialogOptions {
-  @scala.inline
-  def apply(
-    actions: js.Array[DialogAction] = null,
-    animation: Boolean | DialogAnimation = null,
-    buttonLayout: String = null,
-    closable: js.UndefOr[Boolean] = js.undefined,
-    close: /* e */ DialogCloseEvent => Callback = null,
-    content: String = null,
-    height: Double | String = null,
-    hide: /* e */ DialogEvent => Callback = null,
-    initOpen: /* e */ DialogEvent => Callback = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    messages: DialogMessages = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    modal: Boolean | DialogModal = null,
-    name: String = null,
-    open: /* e */ DialogEvent => Callback = null,
-    show: /* e */ DialogEvent => Callback = null,
-    size: String = null,
-    title: String | Boolean = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String = null
-  ): DialogOptions = {
+  
+  inline def apply(): DialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (buttonLayout != null) __obj.updateDynamic("buttonLayout")(buttonLayout.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.DialogCloseEvent) => close(t0).runNow()))
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.DialogEvent) => hide(t0).runNow()))
-    if (initOpen != null) __obj.updateDynamic("initOpen")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.DialogEvent) => initOpen(t0).runNow()))
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.DialogEvent) => open(t0).runNow()))
-    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.DialogEvent) => show(t0).runNow()))
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogOptions]
   }
+  
+  extension [Self <: DialogOptions](x: Self) {
+    
+    inline def setActions(value: js.Array[DialogAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    
+    inline def setActionsVarargs(value: DialogAction*): Self = StObject.set(x, "actions", js.Array(value*))
+    
+    inline def setAnimation(value: Boolean | DialogAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setButtonLayout(value: String): Self = StObject.set(x, "buttonLayout", value.asInstanceOf[js.Any])
+    
+    inline def setButtonLayoutUndefined: Self = StObject.set(x, "buttonLayout", js.undefined)
+    
+    inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
+    
+    inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
+    
+    inline def setClose(value: /* e */ DialogCloseEvent => Callback): Self = StObject.set(x, "close", js.Any.fromFunction1((t0: /* e */ DialogCloseEvent) => value(t0).runNow()))
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHide(value: /* e */ DialogEvent => Callback): Self = StObject.set(x, "hide", js.Any.fromFunction1((t0: /* e */ DialogEvent) => value(t0).runNow()))
+    
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    
+    inline def setInitOpen(value: /* e */ DialogEvent => Callback): Self = StObject.set(x, "initOpen", js.Any.fromFunction1((t0: /* e */ DialogEvent) => value(t0).runNow()))
+    
+    inline def setInitOpenUndefined: Self = StObject.set(x, "initOpen", js.undefined)
+    
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMessages(value: DialogMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setModal(value: Boolean | DialogModal): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+    
+    inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOpen(value: /* e */ DialogEvent => Callback): Self = StObject.set(x, "open", js.Any.fromFunction1((t0: /* e */ DialogEvent) => value(t0).runNow()))
+    
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    
+    inline def setShow(value: /* e */ DialogEvent => Callback): Self = StObject.set(x, "show", js.Any.fromFunction1((t0: /* e */ DialogEvent) => value(t0).runNow()))
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setTitle(value: String | Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

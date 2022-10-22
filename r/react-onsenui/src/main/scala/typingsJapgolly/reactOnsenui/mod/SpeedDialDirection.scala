@@ -1,8 +1,8 @@
 package typingsJapgolly.reactOnsenui.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactOnsenui.reactOnsenuiStrings.up
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactOnsenui.reactOnsenuiStrings.left
   - typingsJapgolly.reactOnsenui.reactOnsenuiStrings.right
 */
-trait SpeedDialDirection extends js.Object
-
+trait SpeedDialDirection extends StObject
 object SpeedDialDirection {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def down: typingsJapgolly.reactOnsenui.reactOnsenuiStrings.down = this.cast("down")
-  @scala.inline
-  def left: typingsJapgolly.reactOnsenui.reactOnsenuiStrings.left = this.cast("left")
-  @scala.inline
-  def right: typingsJapgolly.reactOnsenui.reactOnsenuiStrings.right = this.cast("right")
-  @scala.inline
-  def up: typingsJapgolly.reactOnsenui.reactOnsenuiStrings.up = this.cast("up")
+  
+  inline def down: typingsJapgolly.reactOnsenui.reactOnsenuiStrings.down = "down".asInstanceOf[typingsJapgolly.reactOnsenui.reactOnsenuiStrings.down]
+  
+  inline def left: typingsJapgolly.reactOnsenui.reactOnsenuiStrings.left = "left".asInstanceOf[typingsJapgolly.reactOnsenui.reactOnsenuiStrings.left]
+  
+  inline def right: typingsJapgolly.reactOnsenui.reactOnsenuiStrings.right = "right".asInstanceOf[typingsJapgolly.reactOnsenui.reactOnsenuiStrings.right]
+  
+  inline def up: typingsJapgolly.reactOnsenui.reactOnsenuiStrings.up = "up".asInstanceOf[typingsJapgolly.reactOnsenui.reactOnsenuiStrings.up]
 }
-

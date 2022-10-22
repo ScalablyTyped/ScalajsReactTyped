@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Activation
 
 import typingsJapgolly.winrt.Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs")
-@js.native
-class ShareTargetActivatedEventArgs () extends IShareTargetActivatedEventArgs {
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var shareOperation: ShareOperation = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
+trait ShareTargetActivatedEventArgs
+  extends StObject
+     with IShareTargetActivatedEventArgs
+object ShareTargetActivatedEventArgs {
+  
+  inline def apply(
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    shareOperation: ShareOperation,
+    splashScreen: SplashScreen
+  ): ShareTargetActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], shareOperation = shareOperation.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShareTargetActivatedEventArgs]
+  }
 }
-

@@ -1,58 +1,70 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dotDensityCreateRendererParamsAttributes extends Object {
+trait dotDensityCreateRendererParamsAttributes
+  extends StObject
+     with Object {
+  
   /**
     * The name of a numeric field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
   var field: js.UndefOr[String] = js.undefined
+  
   /**
-    * The label describing the field name (or category) in the legend. This is should be used if the given field doesn't have an intuitive field name or alias. For example, for a field named `dem` representing the total vote count for the Democratic party, you can set the label to `Democrat` to clarify the name of the category in the final visualization.
+    * The label describing the field name (or category) in the legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
   var label: js.UndefOr[String] = js.undefined
+  
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a number. This expression can reference field values using the `$feature` global variable. This property overrides the `field` property and therefore is used instead of an input `field` value.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
   var valueExpression: js.UndefOr[String] = js.undefined
+  
   /**
     * Text describing the value returned from the `valueExpression`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
   var valueExpressionTitle: js.UndefOr[String] = js.undefined
 }
-
 object dotDensityCreateRendererParamsAttributes {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    field: String = null,
-    label: String = null,
-    valueExpression: String = null,
-    valueExpressionTitle: String = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): dotDensityCreateRendererParamsAttributes = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
-    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[dotDensityCreateRendererParamsAttributes]
   }
+  
+  extension [Self <: dotDensityCreateRendererParamsAttributes](x: Self) {
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
+    
+    inline def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
+    
+    inline def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
+    
+    inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
+  }
 }
-

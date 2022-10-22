@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-sqlite-storage
 
-Typings are for version 3.3
+Typings are for version 5.0
 
 ## Library description:
 SQLite3 bindings for React Native (Android & iOS)
@@ -10,10 +10,10 @@ SQLite3 bindings for React Native (Android & iOS)
 | ------------------ | :-------------: |
 | Full name          | react-native-sqlite-storage |
 | Keywords           | react-native-sqlite-storage, react-native-sqlite, react-component, reactnative, react-native, sqlite, sqlite3, ios, android, promise, cordova-sqlite-storage |
-| # releases         | 10 |
-| # dependents       | 18 |
-| # downloads        | 297993 |
-| # stars            | 10 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 81286.0 |
+| # stars            | 2452.0 |
 
 ## Links
 - [Homepage](https://github.com/andpor/react-native-sqlite-storage)

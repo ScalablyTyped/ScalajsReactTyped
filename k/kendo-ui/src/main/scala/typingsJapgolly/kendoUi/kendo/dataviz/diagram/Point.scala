@@ -1,16 +1,18 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.diagram
 
-import typingsJapgolly.kendoUi.kendo.Observable_
+import typingsJapgolly.kendoUi.kendo.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.dataviz.diagram.Point")
 @js.native
-class Point protected () extends Observable_ {
-  def this(x: Double, y: Double) = this()
+trait Point
+  extends StObject
+     with Observable {
+  
   var options: PointOptions = js.native
+  
   var x: Double = js.native
+  
   var y: Double = js.native
 }
-

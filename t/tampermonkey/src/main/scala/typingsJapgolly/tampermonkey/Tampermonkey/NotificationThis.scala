@@ -1,34 +1,24 @@
 package typingsJapgolly.tampermonkey.Tampermonkey
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NotificationThis extends Notification {
+trait NotificationThis
+  extends StObject
+     with Notification {
+  
   var id: String
 }
-
 object NotificationThis {
-  @scala.inline
-  def apply(
-    id: String,
-    highlight: js.UndefOr[Boolean] = js.undefined,
-    image: String = null,
-    onclick: NotificationOnClick = null,
-    ondone: NotificationOnDone = null,
-    text: String = null,
-    timeout: Int | Double = null,
-    title: String = null
-  ): NotificationThis = {
+  
+  inline def apply(id: String): NotificationThis = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick.asInstanceOf[js.Any])
-    if (ondone != null) __obj.updateDynamic("ondone")(ondone.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationThis]
   }
+  
+  extension [Self <: NotificationThis](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+  }
 }
-

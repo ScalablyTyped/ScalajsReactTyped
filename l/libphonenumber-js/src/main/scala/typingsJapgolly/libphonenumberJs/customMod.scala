@@ -1,132 +1,217 @@
 package typingsJapgolly.libphonenumberJs
 
+import typingsJapgolly.libphonenumberJs.anon.DefaultCallingCode
+import typingsJapgolly.libphonenumberJs.anon.DefaultCountry
+import typingsJapgolly.libphonenumberJs.anon.Extract
+import typingsJapgolly.libphonenumberJs.anon.`0`
 import typingsJapgolly.libphonenumberJs.mod.FormatNumberOptions
 import typingsJapgolly.libphonenumberJs.mod.ParseNumberOptions
 import typingsJapgolly.libphonenumberJs.mod.ParsedNumber
 import typingsJapgolly.libphonenumberJs.typesMod.CountryCallingCode
 import typingsJapgolly.libphonenumberJs.typesMod.CountryCode
-import typingsJapgolly.libphonenumberJs.typesMod.Metadata
+import typingsJapgolly.libphonenumberJs.typesMod.E164Number
+import typingsJapgolly.libphonenumberJs.typesMod.Examples
+import typingsJapgolly.libphonenumberJs.typesMod.MetadataJson
 import typingsJapgolly.libphonenumberJs.typesMod.NationalNumber
 import typingsJapgolly.libphonenumberJs.typesMod.NumberFormat
 import typingsJapgolly.libphonenumberJs.typesMod.NumberFound
 import typingsJapgolly.libphonenumberJs.typesMod.NumberFoundLegacy
 import typingsJapgolly.libphonenumberJs.typesMod.NumberType
+import typingsJapgolly.libphonenumberJs.typesMod.NumberingPlan
 import typingsJapgolly.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("libphonenumber-js/custom", JSImport.Namespace)
-@js.native
-object customMod extends js.Object {
+object customMod {
+  
+  @JSImport("libphonenumber-js/custom", JSImport.Namespace)
   @js.native
-  class AsYouType protected () extends js.Object {
-    def this(defaultCountryCode: js.UndefOr[scala.Nothing], metadata: Metadata) = this()
-    def this(defaultCountryCode: AnonDefaultCallingCode, metadata: Metadata) = this()
-    def this(defaultCountryCode: CountryCode, metadata: Metadata) = this()
+  val ^ : js.Any = js.native
+  
+  inline def default(text: String, defaultCountry: Extract, metadata: MetadataJson): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber]
+  inline def default(text: String, defaultCountry: CountryCode, metadata: MetadataJson): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber]
+  inline def default(text: String, metadata: MetadataJson): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber]
+  
+  @JSImport("libphonenumber-js/custom", "AsYouType")
+  @js.native
+  open class AsYouType protected () extends StObject {
+    def this(defaultCountryCode: Unit, metadata: MetadataJson) = this()
+    def this(defaultCountryCode: DefaultCallingCode, metadata: MetadataJson) = this()
+    def this(defaultCountryCode: CountryCode, metadata: MetadataJson) = this()
+    
     var country: js.UndefOr[CountryCode] = js.native
+    
+    def getCallingCode(): js.UndefOr[String] = js.native
+    
+    def getChars(): String = js.native
+    
+    def getCountry(): js.UndefOr[CountryCode] = js.native
+    
     def getNationalNumber(): String = js.native
+    
     def getNumber(): js.UndefOr[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber] = js.native
-    def getTemplate(): js.UndefOr[String] = js.native
+    
+    def getNumberValue(): js.UndefOr[E164Number] = js.native
+    
+    def getTemplate(): String = js.native
+    
     def input(text: String): String = js.native
+    
+    def isInternational(): Boolean = js.native
+    
+    def isPossible(): Boolean = js.native
+    
+    def isValid(): Boolean = js.native
+    
     def reset(): Unit = js.native
   }
   
+  @JSImport("libphonenumber-js/custom", "Metadata")
   @js.native
-  class ParseError ()
+  open class Metadata protected () extends StObject {
+    def this(metadata: MetadataJson) = this()
+    
+    var numberingPlan: js.UndefOr[NumberingPlan] = js.native
+    
+    def selectNumberingPlan(country: CountryCode): Unit = js.native
+  }
+  
+  @JSImport("libphonenumber-js/custom", "ParseError")
+  @js.native
+  open class ParseError ()
     extends typingsJapgolly.libphonenumberJs.typesMod.ParseError
   
+  @JSImport("libphonenumber-js/custom", "ParsedNumberSearch")
   @js.native
-  class ParsedNumberSearch protected () extends js.Object {
-    def this(text: String, metadata: Metadata) = this()
-    def this(text: String, options: AnonDefaultCountryCountryCode, metadata: Metadata) = this()
+  open class ParsedNumberSearch protected () extends StObject {
+    def this(text: String, metadata: MetadataJson) = this()
+    def this(text: String, options: `0`, metadata: MetadataJson) = this()
+    
     def hasNext(): Boolean = js.native
+    
     def next(): js.UndefOr[NumberFoundLegacy] = js.native
   }
   
+  @JSImport("libphonenumber-js/custom", "PhoneNumber")
   @js.native
-  class PhoneNumber protected ()
+  open class PhoneNumber protected ()
     extends typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber {
     def this(
       countryCallingCodeOrCountry: CountryCallingCode,
       nationalNumber: NationalNumber,
-      metadata: Metadata
+      metadata: MetadataJson
     ) = this()
-    def this(countryCallingCodeOrCountry: CountryCode, nationalNumber: NationalNumber, metadata: Metadata) = this()
+    def this(countryCallingCodeOrCountry: CountryCode, nationalNumber: NationalNumber, metadata: MetadataJson) = this()
   }
   
+  @JSImport("libphonenumber-js/custom", "PhoneNumberMatcher")
   @js.native
-  class PhoneNumberMatcher protected () extends js.Object {
-    def this(text: String, metadata: Metadata) = this()
-    def this(text: String, options: AnonDefaultCountry, metadata: Metadata) = this()
+  open class PhoneNumberMatcher protected () extends StObject {
+    def this(text: String, metadata: MetadataJson) = this()
+    def this(text: String, options: DefaultCountry, metadata: MetadataJson) = this()
+    
     def hasNext(): Boolean = js.native
+    
     def next(): js.UndefOr[NumberFound] = js.native
   }
   
-  def findNumbers(text: String, metadata: Metadata): js.Array[NumberFoundLegacy] = js.native
-  def findNumbers(text: String, options: AnonDefaultCountry, metadata: Metadata): js.Array[NumberFound] = js.native
-  def findNumbers(text: String, options: CountryCode, metadata: Metadata): js.Array[NumberFound] = js.native
-  def findParsedNumbers(text: String, metadata: Metadata): js.Array[NumberFoundLegacy] = js.native
-  def findParsedNumbers(text: String, options: AnonDefaultCountryCountryCode, metadata: Metadata): js.Array[NumberFoundLegacy] = js.native
-  def findParsedNumbers(text: String, options: CountryCode, metadata: Metadata): js.Array[NumberFoundLegacy] = js.native
-  def findPhoneNumbersInText(text: String, metadata: Metadata): js.Array[NumberFound] = js.native
-  def findPhoneNumbersInText(text: String, options: AnonDefaultCallingCode, metadata: Metadata): js.Array[NumberFound] = js.native
-  def findPhoneNumbersInText(text: String, options: CountryCode, metadata: Metadata): js.Array[NumberFound] = js.native
-  def format(parsedNumber: ParsedNumber, format: NumberFormat, metadata: Metadata): String = js.native
-  def format(phone: NationalNumber, country: CountryCode, format: NumberFormat, metadata: Metadata): String = js.native
-  def format(phone: NationalNumber, format: NumberFormat, metadata: Metadata): String = js.native
-  def formatIncompletePhoneNumber(number: String, countryCode: CountryCode, metadata: Metadata): String = js.native
-  def formatIncompletePhoneNumber(number: String, metadata: Metadata): String = js.native
-  def formatNumber(parsedNumber: ParsedNumber, format: NumberFormat, metadata: Metadata): String = js.native
-  def formatNumber(parsedNumber: ParsedNumber, format: NumberFormat, options: FormatNumberOptions, metadata: Metadata): String = js.native
-  def formatNumber(phone: NationalNumber, country: CountryCode, format: NumberFormat, metadata: Metadata): String = js.native
-  def formatNumber(
+  inline def findNumbers(text: String, metadata: MetadataJson): js.Array[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNumbers")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFoundLegacy]]
+  inline def findNumbers(text: String, options: DefaultCountry, metadata: MetadataJson): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
+  inline def findNumbers(text: String, options: CountryCode, metadata: MetadataJson): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
+  
+  inline def findParsedNumbers(text: String, metadata: MetadataJson): js.Array[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("findParsedNumbers")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFoundLegacy]]
+  inline def findParsedNumbers(text: String, options: `0`, metadata: MetadataJson): js.Array[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("findParsedNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFoundLegacy]]
+  inline def findParsedNumbers(text: String, options: CountryCode, metadata: MetadataJson): js.Array[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("findParsedNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFoundLegacy]]
+  
+  inline def findPhoneNumbersInText(text: String, metadata: MetadataJson): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPhoneNumbersInText")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
+  inline def findPhoneNumbersInText(text: String, options: DefaultCallingCode, metadata: MetadataJson): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
+  inline def findPhoneNumbersInText(text: String, options: CountryCode, metadata: MetadataJson): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
+  
+  inline def format(parsedNumber: ParsedNumber, format: NumberFormat, metadata: MetadataJson): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(parsedNumber.asInstanceOf[js.Any], format.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(phone: NationalNumber, country: CountryCode, format: NumberFormat, metadata: MetadataJson): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(phone.asInstanceOf[js.Any], country.asInstanceOf[js.Any], format.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(phone: NationalNumber, format: NumberFormat, metadata: MetadataJson): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(phone.asInstanceOf[js.Any], format.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def formatIncompletePhoneNumber(number: String, countryCode: CountryCode, metadata: MetadataJson): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatIncompletePhoneNumber")(number.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatIncompletePhoneNumber(number: String, metadata: MetadataJson): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatIncompletePhoneNumber")(number.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def formatNumber(parsedNumber: ParsedNumber, format: NumberFormat, metadata: MetadataJson): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(parsedNumber.asInstanceOf[js.Any], format.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatNumber(
+    parsedNumber: ParsedNumber,
+    format: NumberFormat,
+    options: FormatNumberOptions,
+    metadata: MetadataJson
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(parsedNumber.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatNumber(phone: NationalNumber, country: CountryCode, format: NumberFormat, metadata: MetadataJson): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(phone.asInstanceOf[js.Any], country.asInstanceOf[js.Any], format.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatNumber(
     phone: NationalNumber,
     country: CountryCode,
     format: NumberFormat,
     options: FormatNumberOptions,
-    metadata: Metadata
-  ): String = js.native
-  def formatNumber(phone: NationalNumber, format: NumberFormat, metadata: Metadata): String = js.native
-  def formatNumber(phone: NationalNumber, format: NumberFormat, options: FormatNumberOptions, metadata: Metadata): String = js.native
-  def getCountries(metadata: Metadata): js.Array[CountryCode] = js.native
-  def getCountryCallingCode(countryCode: CountryCode, metadata: Metadata): CountryCallingCode = js.native
-  def getExampleNumber(country: CountryCode, examples: countryinCountryCodeNatio, metadata: Metadata): js.UndefOr[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber] = js.native
-  def getExtPrefix(countryCode: CountryCode, metadata: Metadata): String = js.native
-  def getNumberType(parsedNumber: ParsedNumber, metadata: Metadata): NumberType = js.native
-  def getNumberType(phone: NationalNumber, country: CountryCode, metadata: Metadata): NumberType = js.native
-  def getNumberType(phone: NationalNumber, metadata: Metadata): NumberType = js.native
-  def getPhoneCode(countryCode: CountryCode, metadata: Metadata): CountryCallingCode = js.native
-  def isPossibleNumber(parsedNumber: ParsedNumber, metadata: Metadata): Boolean = js.native
-  def isPossibleNumber(phone: NationalNumber, country: CountryCode, metadata: Metadata): Boolean = js.native
-  def isPossibleNumber(phone: NationalNumber, metadata: Metadata): Boolean = js.native
-  def isSupportedCountry(countryCode: CountryCode, metadata: Metadata): Boolean = js.native
-  def isValidNumber(parsedNumber: ParsedNumber, metadata: Metadata): Boolean = js.native
-  def isValidNumber(phone: NationalNumber, country: CountryCode, metadata: Metadata): Boolean = js.native
-  def isValidNumber(phone: NationalNumber, metadata: Metadata): Boolean = js.native
-  def isValidNumberForRegion(phone: NationalNumber, country: CountryCode, metadata: Metadata): Boolean = js.native
-  def parse(text: String, metadata: Metadata): ParsedNumber = js.native
-  def parse(text: String, options: ParseNumberOptions, metadata: Metadata): ParsedNumber = js.native
-  def parse(text: String, options: CountryCode, metadata: Metadata): ParsedNumber = js.native
-  def parseDigits(character: String): String = js.native
-  def parseIncompletePhoneNumber(text: String): String = js.native
-  def parseNumber(text: String, metadata: Metadata): ParsedNumber | js.Object = js.native
-  def parseNumber(text: String, options: ParseNumberOptions, metadata: Metadata): ParsedNumber | js.Object = js.native
-  def parseNumber(text: String, options: CountryCode, metadata: Metadata): ParsedNumber | js.Object = js.native
-  def parsePhoneNumber(text: String, defaultCountry: CountryCode, metadata: Metadata): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = js.native
-  def parsePhoneNumber(text: String, metadata: Metadata): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = js.native
-  def parsePhoneNumberCharacter(character: String): String = js.native
-  def parsePhoneNumberFromString(text: String, defaultCountry: AnonDefaultCallingCode, metadata: Metadata): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = js.native
-  def parsePhoneNumberFromString(text: String, defaultCountry: CountryCode, metadata: Metadata): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = js.native
-  def parsePhoneNumberFromString(text: String, metadata: Metadata): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = js.native
-  def searchNumbers(text: String, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
-  def searchNumbers(text: String, options: AnonDefaultCountry, metadata: Metadata): IterableIterator[NumberFound] = js.native
-  def searchNumbers(text: String, options: CountryCode, metadata: Metadata): IterableIterator[NumberFound] = js.native
-  def searchParsedNumbers(text: String, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
-  def searchParsedNumbers(text: String, options: AnonDefaultCountryCountryCode, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
-  def searchParsedNumbers(text: String, options: CountryCode, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
-  def searchPhoneNumbersInText(text: String, metadata: Metadata): IterableIterator[NumberFound] = js.native
-  def searchPhoneNumbersInText(text: String, options: AnonDefaultCallingCode, metadata: Metadata): IterableIterator[NumberFound] = js.native
-  def searchPhoneNumbersInText(text: String, options: CountryCode, metadata: Metadata): IterableIterator[NumberFound] = js.native
+    metadata: MetadataJson
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(phone.asInstanceOf[js.Any], country.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatNumber(phone: NationalNumber, format: NumberFormat, metadata: MetadataJson): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(phone.asInstanceOf[js.Any], format.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatNumber(phone: NationalNumber, format: NumberFormat, options: FormatNumberOptions, metadata: MetadataJson): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(phone.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def getCountries(metadata: MetadataJson): js.Array[CountryCode] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountries")(metadata.asInstanceOf[js.Any]).asInstanceOf[js.Array[CountryCode]]
+  
+  inline def getCountryCallingCode(countryCode: CountryCode, metadata: MetadataJson): CountryCallingCode = (^.asInstanceOf[js.Dynamic].applyDynamic("getCountryCallingCode")(countryCode.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[CountryCallingCode]
+  
+  inline def getExampleNumber(country: CountryCode, examples: Examples, metadata: MetadataJson): js.UndefOr[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("getExampleNumber")(country.asInstanceOf[js.Any], examples.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber]]
+  
+  inline def getExtPrefix(countryCode: CountryCode, metadata: MetadataJson): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtPrefix")(countryCode.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def getNumberType(parsedNumber: ParsedNumber, metadata: MetadataJson): NumberType = (^.asInstanceOf[js.Dynamic].applyDynamic("getNumberType")(parsedNumber.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[NumberType]
+  inline def getNumberType(phone: NationalNumber, country: CountryCode, metadata: MetadataJson): NumberType = (^.asInstanceOf[js.Dynamic].applyDynamic("getNumberType")(phone.asInstanceOf[js.Any], country.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[NumberType]
+  inline def getNumberType(phone: NationalNumber, metadata: MetadataJson): NumberType = (^.asInstanceOf[js.Dynamic].applyDynamic("getNumberType")(phone.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[NumberType]
+  
+  inline def getPhoneCode(countryCode: CountryCode, metadata: MetadataJson): CountryCallingCode = (^.asInstanceOf[js.Dynamic].applyDynamic("getPhoneCode")(countryCode.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[CountryCallingCode]
+  
+  inline def isPossibleNumber(parsedNumber: ParsedNumber, metadata: MetadataJson): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPossibleNumber")(parsedNumber.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPossibleNumber(phone: NationalNumber, country: CountryCode, metadata: MetadataJson): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPossibleNumber")(phone.asInstanceOf[js.Any], country.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPossibleNumber(phone: NationalNumber, metadata: MetadataJson): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPossibleNumber")(phone.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isSupportedCountry(countryCode: CountryCode, metadata: MetadataJson): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedCountry")(countryCode.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isValidNumber(parsedNumber: ParsedNumber, metadata: MetadataJson): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumber")(parsedNumber.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValidNumber(phone: NationalNumber, country: CountryCode, metadata: MetadataJson): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumber")(phone.asInstanceOf[js.Any], country.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValidNumber(phone: NationalNumber, metadata: MetadataJson): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumber")(phone.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isValidNumberForRegion(phone: NationalNumber, country: CountryCode, metadata: MetadataJson): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumberForRegion")(phone.asInstanceOf[js.Any], country.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def parse(text: String, metadata: MetadataJson): ParsedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[ParsedNumber]
+  inline def parse(text: String, options: ParseNumberOptions, metadata: MetadataJson): ParsedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[ParsedNumber]
+  inline def parse(text: String, options: CountryCode, metadata: MetadataJson): ParsedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[ParsedNumber]
+  
+  inline def parseDigits(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDigits")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def parseIncompletePhoneNumber(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseIncompletePhoneNumber")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def parseNumber(text: String, metadata: MetadataJson): ParsedNumber | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parseNumber")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[ParsedNumber | js.Object]
+  inline def parseNumber(text: String, options: ParseNumberOptions, metadata: MetadataJson): ParsedNumber | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parseNumber")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[ParsedNumber | js.Object]
+  inline def parseNumber(text: String, options: CountryCode, metadata: MetadataJson): ParsedNumber | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parseNumber")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[ParsedNumber | js.Object]
+  
+  inline def parsePhoneNumber(text: String, defaultCountry: CountryCode, metadata: MetadataJson): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumber")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber]
+  inline def parsePhoneNumber(text: String, metadata: MetadataJson): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumber")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber]
+  
+  inline def parsePhoneNumberCharacter(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumberCharacter")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def parsePhoneNumberFromString(text: String, defaultCountry: Extract, metadata: MetadataJson): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumberFromString")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber]
+  inline def parsePhoneNumberFromString(text: String, defaultCountry: CountryCode, metadata: MetadataJson): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumberFromString")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber]
+  inline def parsePhoneNumberFromString(text: String, metadata: MetadataJson): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumberFromString")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber]
+  
+  inline def parsePhoneNumberWithError(text: String, defaultCountry: CountryCode, metadata: MetadataJson): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumberWithError")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber]
+  inline def parsePhoneNumberWithError(text: String, metadata: MetadataJson): typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumberWithError")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.libphonenumberJs.typesMod.PhoneNumber]
+  
+  inline def searchNumbers(text: String, metadata: MetadataJson): IterableIterator[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchNumbers")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFoundLegacy]]
+  inline def searchNumbers(text: String, options: DefaultCountry, metadata: MetadataJson): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
+  inline def searchNumbers(text: String, options: CountryCode, metadata: MetadataJson): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
+  
+  inline def searchParsedNumbers(text: String, metadata: MetadataJson): IterableIterator[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchParsedNumbers")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFoundLegacy]]
+  inline def searchParsedNumbers(text: String, options: `0`, metadata: MetadataJson): IterableIterator[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchParsedNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFoundLegacy]]
+  inline def searchParsedNumbers(text: String, options: CountryCode, metadata: MetadataJson): IterableIterator[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchParsedNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFoundLegacy]]
+  
+  inline def searchPhoneNumbersInText(text: String, metadata: MetadataJson): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchPhoneNumbersInText")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
+  inline def searchPhoneNumbersInText(text: String, options: DefaultCallingCode, metadata: MetadataJson): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
+  inline def searchPhoneNumbersInText(text: String, options: CountryCode, metadata: MetadataJson): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
 }
-

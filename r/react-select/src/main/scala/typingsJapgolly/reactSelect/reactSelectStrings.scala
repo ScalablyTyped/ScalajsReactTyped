@@ -1,223 +1,417 @@
 package typingsJapgolly.reactSelect
 
-import typingsJapgolly.reactSelect.selectMod.FormatOptionLabelContext
-import typingsJapgolly.reactSelect.transitionsMod.TransitionState
-import typingsJapgolly.reactSelect.typesMod.ActionTypes
-import typingsJapgolly.reactSelect.typesMod.FocusDirection
-import typingsJapgolly.reactSelect.typesMod.InputActionTypes
-import typingsJapgolly.reactSelect.typesMod.MenuPlacement
-import typingsJapgolly.reactSelect.typesMod.MenuPosition
+import typingsJapgolly.reactSelect.distDeclarationsSrcAccessibilityMod.GuidanceContext
+import typingsJapgolly.reactSelect.distDeclarationsSrcAccessibilityMod.OptionContext
+import typingsJapgolly.reactSelect.distDeclarationsSrcSelectMod.FormatOptionLabelContext
+import typingsJapgolly.reactSelect.distDeclarationsSrcTypesMod.CoercedMenuPlacement
+import typingsJapgolly.reactSelect.distDeclarationsSrcTypesMod.FocusDirection
+import typingsJapgolly.reactSelect.distDeclarationsSrcTypesMod.InputAction
+import typingsJapgolly.reactSelect.distDeclarationsSrcTypesMod.MenuPlacement
+import typingsJapgolly.reactSelect.distDeclarationsSrcTypesMod.MenuPosition
+import typingsJapgolly.reactSelect.distDeclarationsSrcTypesMod.SetValueAction
+import typingsJapgolly.reactSelect.distDeclarationsSrcUseAsyncMod.AsyncManagedPropKeys
+import typingsJapgolly.reactSelect.distDeclarationsSrcUseStateManagerMod.StateManagedPropKeys
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactSelectStrings {
-  @js.native
-  sealed trait DeepNonNullable extends js.Object
   
   @js.native
-  sealed trait SelectComponentsProps extends js.Object
+  sealed trait absolute
+    extends StObject
+       with MenuPosition
+  inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
-  sealed trait absolute extends MenuPosition
+  sealed trait any extends StObject
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait any extends js.Object
+  sealed trait assertive extends StObject
+  inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait auto extends MenuPlacement
+  sealed trait auto
+    extends StObject
+       with MenuPlacement
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait bottom extends MenuPlacement
+  sealed trait bottom
+    extends StObject
+       with CoercedMenuPlacement
+       with MenuPlacement
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait clear extends ActionTypes
+  sealed trait cacheOptions extends StObject
+  inline def cacheOptions: cacheOptions = "cacheOptions".asInstanceOf[cacheOptions]
   
   @js.native
-  sealed trait `create-option` extends ActionTypes
+  sealed trait className extends StObject
+  inline def className: className = "className".asInstanceOf[className]
   
   @js.native
-  sealed trait `deselect-option` extends ActionTypes
+  sealed trait clear extends StObject
+  inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
-  sealed trait down extends FocusDirection
+  sealed trait clearIndicator extends StObject
+  inline def clearIndicator: clearIndicator = "clearIndicator".asInstanceOf[clearIndicator]
   
   @js.native
-  sealed trait exited extends TransitionState
+  sealed trait clearValue extends StObject
+  inline def clearValue: clearValue = "clearValue".asInstanceOf[clearValue]
   
   @js.native
-  sealed trait exiting extends TransitionState
+  sealed trait container extends StObject
+  inline def container: container = "container".asInstanceOf[container]
   
   @js.native
-  sealed trait first extends FocusDirection
+  sealed trait control extends StObject
+  inline def control: control = "control".asInstanceOf[control]
   
   @js.native
-  sealed trait fixed extends MenuPosition
+  sealed trait `create-option` extends StObject
+  inline def `create-option`: `create-option` = "create-option".asInstanceOf[`create-option`]
   
   @js.native
-  sealed trait group extends js.Object
+  sealed trait cx extends StObject
+  inline def cx: cx = "cx".asInstanceOf[cx]
   
   @js.native
-  sealed trait input extends js.Object
+  sealed trait defaultInputValue extends StObject
+  inline def defaultInputValue: defaultInputValue = "defaultInputValue".asInstanceOf[defaultInputValue]
   
   @js.native
-  sealed trait `input-blur` extends InputActionTypes
+  sealed trait defaultMenuIsOpen extends StObject
+  inline def defaultMenuIsOpen: defaultMenuIsOpen = "defaultMenuIsOpen".asInstanceOf[defaultMenuIsOpen]
   
   @js.native
-  sealed trait `input-change` extends InputActionTypes
+  sealed trait defaultOptions extends StObject
+  inline def defaultOptions: defaultOptions = "defaultOptions".asInstanceOf[defaultOptions]
   
   @js.native
-  sealed trait inputValue extends js.Object
+  sealed trait defaultValue extends StObject
+  inline def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
   
   @js.native
-  sealed trait last extends FocusDirection
+  sealed trait `deselect-option`
+    extends StObject
+       with SetValueAction
+  inline def `deselect-option`: `deselect-option` = "deselect-option".asInstanceOf[`deselect-option`]
   
   @js.native
-  sealed trait listbox extends js.Object
+  sealed trait down
+    extends StObject
+       with FocusDirection
+  inline def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait menu extends FormatOptionLabelContext
+  sealed trait dropdownIndicator extends StObject
+  inline def dropdownIndicator: dropdownIndicator = "dropdownIndicator".asInstanceOf[dropdownIndicator]
   
   @js.native
-  sealed trait `menu-close` extends InputActionTypes
+  sealed trait filterOption
+    extends StObject
+       with AsyncManagedPropKeys
+  inline def filterOption: filterOption = "filterOption".asInstanceOf[filterOption]
   
   @js.native
-  sealed trait menuIsOpen extends js.Object
+  sealed trait first
+    extends StObject
+       with FocusDirection
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
-  sealed trait next extends js.Object
+  sealed trait fixed
+    extends StObject
+       with MenuPosition
+  inline def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
-  sealed trait onChange extends js.Object
+  sealed trait getStyles extends StObject
+  inline def getStyles: getStyles = "getStyles".asInstanceOf[getStyles]
   
   @js.native
-  sealed trait onInputChange extends js.Object
+  sealed trait getValue extends StObject
+  inline def getValue: getValue = "getValue".asInstanceOf[getValue]
   
   @js.native
-  sealed trait onMenuClose extends js.Object
+  sealed trait grammar extends StObject
+  inline def grammar: grammar = "grammar".asInstanceOf[grammar]
   
   @js.native
-  sealed trait onMenuOpen extends js.Object
+  sealed trait group extends StObject
+  inline def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait option extends js.Object
+  sealed trait groupHeading extends StObject
+  inline def groupHeading: groupHeading = "groupHeading".asInstanceOf[groupHeading]
   
   @js.native
-  sealed trait pagedown extends FocusDirection
+  sealed trait hasValue extends StObject
+  inline def hasValue: hasValue = "hasValue".asInstanceOf[hasValue]
   
   @js.native
-  sealed trait pageup extends FocusDirection
+  sealed trait indicatorSeparator extends StObject
+  inline def indicatorSeparator: indicatorSeparator = "indicatorSeparator".asInstanceOf[indicatorSeparator]
   
   @js.native
-  sealed trait `pop-value` extends ActionTypes
+  sealed trait indicatorsContainer extends StObject
+  inline def indicatorsContainer: indicatorsContainer = "indicatorsContainer".asInstanceOf[indicatorsContainer]
   
   @js.native
-  sealed trait previous extends js.Object
+  sealed trait `initial-input-focus` extends StObject
+  inline def `initial-input-focus`: `initial-input-focus` = "initial-input-focus".asInstanceOf[`initial-input-focus`]
   
   @js.native
-  sealed trait `remove-value` extends ActionTypes
+  sealed trait input
+    extends StObject
+       with GuidanceContext
+  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
-  sealed trait `select-option` extends ActionTypes
+  sealed trait `input-blur`
+    extends StObject
+       with InputAction
+  inline def `input-blur`: `input-blur` = "input-blur".asInstanceOf[`input-blur`]
+  
+  @js.native
+  sealed trait `input-change`
+    extends StObject
+       with InputAction
+  inline def `input-change`: `input-change` = "input-change".asInstanceOf[`input-change`]
+  
+  @js.native
+  sealed trait inputValue
+    extends StObject
+       with StateManagedPropKeys
+  inline def inputValue: inputValue = "inputValue".asInstanceOf[inputValue]
+  
+  @js.native
+  sealed trait isLoading
+    extends StObject
+       with AsyncManagedPropKeys
+  inline def isLoading: isLoading = "isLoading".asInstanceOf[isLoading]
+  
+  @js.native
+  sealed trait isMulti extends StObject
+  inline def isMulti: isMulti = "isMulti".asInstanceOf[isMulti]
+  
+  @js.native
+  sealed trait isRtl extends StObject
+  inline def isRtl: isRtl = "isRtl".asInstanceOf[isRtl]
+  
+  @js.native
+  sealed trait last
+    extends StObject
+       with FocusDirection
+  inline def last: last = "last".asInstanceOf[last]
+  
+  @js.native
+  sealed trait listbox extends StObject
+  inline def listbox: listbox = "listbox".asInstanceOf[listbox]
+  
+  @js.native
+  sealed trait `live-region` extends StObject
+  inline def `live-region`: `live-region` = "live-region".asInstanceOf[`live-region`]
+  
+  @js.native
+  sealed trait loadOptions extends StObject
+  inline def loadOptions: loadOptions = "loadOptions".asInstanceOf[loadOptions]
+  
+  @js.native
+  sealed trait loadingIndicator extends StObject
+  inline def loadingIndicator: loadingIndicator = "loadingIndicator".asInstanceOf[loadingIndicator]
+  
+  @js.native
+  sealed trait loadingMessage extends StObject
+  inline def loadingMessage: loadingMessage = "loadingMessage".asInstanceOf[loadingMessage]
+  
+  @js.native
+  sealed trait menu
+    extends StObject
+       with FormatOptionLabelContext
+       with GuidanceContext
+       with OptionContext
+  inline def menu: menu = "menu".asInstanceOf[menu]
+  
+  @js.native
+  sealed trait `menu-close`
+    extends StObject
+       with InputAction
+  inline def `menu-close`: `menu-close` = "menu-close".asInstanceOf[`menu-close`]
+  
+  @js.native
+  sealed trait menuIsOpen
+    extends StObject
+       with StateManagedPropKeys
+  inline def menuIsOpen: menuIsOpen = "menuIsOpen".asInstanceOf[menuIsOpen]
+  
+  @js.native
+  sealed trait menuList extends StObject
+  inline def menuList: menuList = "menuList".asInstanceOf[menuList]
+  
+  @js.native
+  sealed trait menuPortal extends StObject
+  inline def menuPortal: menuPortal = "menuPortal".asInstanceOf[menuPortal]
+  
+  @js.native
+  sealed trait multiValue extends StObject
+  inline def multiValue: multiValue = "multiValue".asInstanceOf[multiValue]
+  
+  @js.native
+  sealed trait multiValueLabel extends StObject
+  inline def multiValueLabel: multiValueLabel = "multiValueLabel".asInstanceOf[multiValueLabel]
+  
+  @js.native
+  sealed trait multiValueRemove extends StObject
+  inline def multiValueRemove: multiValueRemove = "multiValueRemove".asInstanceOf[multiValueRemove]
+  
+  @js.native
+  sealed trait next extends StObject
+  inline def next: next = "next".asInstanceOf[next]
+  
+  @js.native
+  sealed trait noOptionsMessage extends StObject
+  inline def noOptionsMessage: noOptionsMessage = "noOptionsMessage".asInstanceOf[noOptionsMessage]
+  
+  @js.native
+  sealed trait off extends StObject
+  inline def off: off = "off".asInstanceOf[off]
+  
+  @js.native
+  sealed trait onChange
+    extends StObject
+       with StateManagedPropKeys
+  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
+  
+  @js.native
+  sealed trait onInputChange
+    extends StObject
+       with AsyncManagedPropKeys
+       with StateManagedPropKeys
+  inline def onInputChange: onInputChange = "onInputChange".asInstanceOf[onInputChange]
+  
+  @js.native
+  sealed trait onMenuClose
+    extends StObject
+       with StateManagedPropKeys
+  inline def onMenuClose: onMenuClose = "onMenuClose".asInstanceOf[onMenuClose]
+  
+  @js.native
+  sealed trait onMenuOpen
+    extends StObject
+       with StateManagedPropKeys
+  inline def onMenuOpen: onMenuOpen = "onMenuOpen".asInstanceOf[onMenuOpen]
+  
+  @js.native
+  sealed trait option extends StObject
+  inline def option: option = "option".asInstanceOf[option]
+  
+  @js.native
+  sealed trait options
+    extends StObject
+       with AsyncManagedPropKeys
+  inline def options: options = "options".asInstanceOf[options]
+  
+  @js.native
+  sealed trait pagedown
+    extends StObject
+       with FocusDirection
+  inline def pagedown: pagedown = "pagedown".asInstanceOf[pagedown]
+  
+  @js.native
+  sealed trait pageup
+    extends StObject
+       with FocusDirection
+  inline def pageup: pageup = "pageup".asInstanceOf[pageup]
+  
+  @js.native
+  sealed trait placeholder extends StObject
+  inline def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
+  
+  @js.native
+  sealed trait polite extends StObject
+  inline def polite: polite = "polite".asInstanceOf[polite]
+  
+  @js.native
+  sealed trait `pop-value` extends StObject
+  inline def `pop-value`: `pop-value` = "pop-value".asInstanceOf[`pop-value`]
+  
+  @js.native
+  sealed trait previous extends StObject
+  inline def previous: previous = "previous".asInstanceOf[previous]
+  
+  @js.native
+  sealed trait `remove-value` extends StObject
+  inline def `remove-value`: `remove-value` = "remove-value".asInstanceOf[`remove-value`]
+  
+  @js.native
+  sealed trait `select-option`
+    extends StObject
+       with SetValueAction
+  inline def `select-option`: `select-option` = "select-option".asInstanceOf[`select-option`]
+  
+  @js.native
+  sealed trait selectOption extends StObject
+  inline def selectOption: selectOption = "selectOption".asInstanceOf[selectOption]
+  
+  @js.native
+  sealed trait selectProps extends StObject
+  inline def selectProps: selectProps = "selectProps".asInstanceOf[selectProps]
   
   @js.native
   sealed trait `set-value`
-    extends ActionTypes
-       with InputActionTypes
+    extends StObject
+       with InputAction
+  inline def `set-value`: `set-value` = "set-value".asInstanceOf[`set-value`]
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait setValue extends StObject
+  inline def setValue: setValue = "setValue".asInstanceOf[setValue]
   
   @js.native
-  sealed trait top extends MenuPlacement
+  sealed trait singleValue extends StObject
+  inline def singleValue: singleValue = "singleValue".asInstanceOf[singleValue]
   
   @js.native
-  sealed trait up extends FocusDirection
+  sealed trait spelling extends StObject
+  inline def spelling: spelling = "spelling".asInstanceOf[spelling]
   
   @js.native
-  sealed trait value extends FormatOptionLabelContext
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
   
-  @scala.inline
-  def DeepNonNullable: DeepNonNullable = "DeepNonNullable".asInstanceOf[DeepNonNullable]
-  @scala.inline
-  def SelectComponentsProps: SelectComponentsProps = "SelectComponentsProps".asInstanceOf[SelectComponentsProps]
-  @scala.inline
-  def absolute: absolute = "absolute".asInstanceOf[absolute]
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def clear: clear = "clear".asInstanceOf[clear]
-  @scala.inline
-  def `create-option`: `create-option` = "create-option".asInstanceOf[`create-option`]
-  @scala.inline
-  def `deselect-option`: `deselect-option` = "deselect-option".asInstanceOf[`deselect-option`]
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def exited: exited = "exited".asInstanceOf[exited]
-  @scala.inline
-  def exiting: exiting = "exiting".asInstanceOf[exiting]
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
-  @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
-  @scala.inline
-  def group: group = "group".asInstanceOf[group]
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
-  def `input-blur`: `input-blur` = "input-blur".asInstanceOf[`input-blur`]
-  @scala.inline
-  def `input-change`: `input-change` = "input-change".asInstanceOf[`input-change`]
-  @scala.inline
-  def inputValue: inputValue = "inputValue".asInstanceOf[inputValue]
-  @scala.inline
-  def last: last = "last".asInstanceOf[last]
-  @scala.inline
-  def listbox: listbox = "listbox".asInstanceOf[listbox]
-  @scala.inline
-  def menu: menu = "menu".asInstanceOf[menu]
-  @scala.inline
-  def `menu-close`: `menu-close` = "menu-close".asInstanceOf[`menu-close`]
-  @scala.inline
-  def menuIsOpen: menuIsOpen = "menuIsOpen".asInstanceOf[menuIsOpen]
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
-  @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
-  @scala.inline
-  def onInputChange: onInputChange = "onInputChange".asInstanceOf[onInputChange]
-  @scala.inline
-  def onMenuClose: onMenuClose = "onMenuClose".asInstanceOf[onMenuClose]
-  @scala.inline
-  def onMenuOpen: onMenuOpen = "onMenuOpen".asInstanceOf[onMenuOpen]
-  @scala.inline
-  def option: option = "option".asInstanceOf[option]
-  @scala.inline
-  def pagedown: pagedown = "pagedown".asInstanceOf[pagedown]
-  @scala.inline
-  def pageup: pageup = "pageup".asInstanceOf[pageup]
-  @scala.inline
-  def `pop-value`: `pop-value` = "pop-value".asInstanceOf[`pop-value`]
-  @scala.inline
-  def previous: previous = "previous".asInstanceOf[previous]
-  @scala.inline
-  def `remove-value`: `remove-value` = "remove-value".asInstanceOf[`remove-value`]
-  @scala.inline
-  def `select-option`: `select-option` = "select-option".asInstanceOf[`select-option`]
-  @scala.inline
-  def `set-value`: `set-value` = "set-value".asInstanceOf[`set-value`]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
+  @js.native
+  sealed trait theme extends StObject
+  inline def theme: theme = "theme".asInstanceOf[theme]
+  
+  @js.native
+  sealed trait top
+    extends StObject
+       with CoercedMenuPlacement
+       with MenuPlacement
+  inline def top: top = "top".asInstanceOf[top]
+  
+  @js.native
+  sealed trait up
+    extends StObject
+       with FocusDirection
+  inline def up: up = "up".asInstanceOf[up]
+  
+  @js.native
+  sealed trait value
+    extends StObject
+       with FormatOptionLabelContext
+       with GuidanceContext
+       with OptionContext
+       with StateManagedPropKeys
+  inline def value: value = "value".asInstanceOf[value]
+  
+  @js.native
+  sealed trait valueContainer extends StObject
+  inline def valueContainer: valueContainer = "valueContainer".asInstanceOf[valueContainer]
 }
-

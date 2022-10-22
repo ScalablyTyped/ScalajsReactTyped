@@ -1,18 +1,14 @@
 package typingsJapgolly.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidateData extends js.Object {
+trait ValidateData extends StObject {
+  
   def clearValidation(): Unit = js.native
+  
   def validate(): Boolean = js.native
-  def validate(mode: js.Any): Boolean = js.native
+  def validate(mode: Any): Boolean = js.native
 }
-
-@JSGlobal("webix.ValidateData")
-@js.native
-object ValidateData extends TopLevel[ValidateData]
-

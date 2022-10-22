@@ -1,12 +1,12 @@
 package typingsJapgolly.protractor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "Session")
 @js.native
-class Session protected ()
+open class Session protected ()
   extends typingsJapgolly.seleniumWebdriver.mod.Session {
   def this(id: String, capabilities: js.Object) = this()
   // region Constructors
@@ -16,6 +16,5 @@ class Session protected ()
     *     capabilities.
     * @constructor
     */
-  def this(id: String, capabilities: typingsJapgolly.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
+  def this(id: String, capabilities: typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities) = this()
 }
-

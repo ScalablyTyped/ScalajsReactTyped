@@ -1,53 +1,42 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClickContext extends js.Object
-
+sealed trait ClickContext extends StObject
 @JSGlobal("SP.JsGrid.ClickContext")
 @js.native
-object ClickContext extends js.Object {
-  @js.native
-  sealed trait Cell extends ClickContext
+object ClickContext extends StObject {
   
   @js.native
-  sealed trait ColumnHeader extends ClickContext
+  sealed trait Cell
+    extends StObject
+       with ClickContext
   
   @js.native
-  sealed trait Gantt extends ClickContext
+  sealed trait ColumnHeader
+    extends StObject
+       with ClickContext
   
   @js.native
-  sealed trait Other extends ClickContext
+  sealed trait Gantt
+    extends StObject
+       with ClickContext
   
   @js.native
-  sealed trait RowHeader extends ClickContext
+  sealed trait Other
+    extends StObject
+       with ClickContext
   
   @js.native
-  sealed trait SelectAllSquare extends ClickContext
+  sealed trait RowHeader
+    extends StObject
+       with ClickContext
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ClickContext with Double] = js.native
-  /* 3 */ @js.native
-  object Cell extends TopLevel[Cell with Double]
-  
-  /* 2 */ @js.native
-  object ColumnHeader extends TopLevel[ColumnHeader with Double]
-  
-  /* 4 */ @js.native
-  object Gantt extends TopLevel[Gantt with Double]
-  
-  /* 5 */ @js.native
-  object Other extends TopLevel[Other with Double]
-  
-  /* 1 */ @js.native
-  object RowHeader extends TopLevel[RowHeader with Double]
-  
-  /* 0 */ @js.native
-  object SelectAllSquare extends TopLevel[SelectAllSquare with Double]
-  
+  @js.native
+  sealed trait SelectAllSquare
+    extends StObject
+       with ClickContext
 }
-

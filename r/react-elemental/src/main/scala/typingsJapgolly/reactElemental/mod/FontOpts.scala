@@ -1,22 +1,31 @@
 package typingsJapgolly.reactElemental.mod
 
-import typingsJapgolly.reactElemental.AnonRegular
+import typingsJapgolly.reactElemental.anon.Regular
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FontOpts extends js.Object {
-  var primary: js.UndefOr[AnonRegular] = js.undefined
-  var secondary: js.UndefOr[AnonRegular] = js.undefined
+trait FontOpts extends StObject {
+  
+  var primary: js.UndefOr[Regular] = js.undefined
+  
+  var secondary: js.UndefOr[Regular] = js.undefined
 }
-
 object FontOpts {
-  @scala.inline
-  def apply(primary: AnonRegular = null, secondary: AnonRegular = null): FontOpts = {
+  
+  inline def apply(): FontOpts = {
     val __obj = js.Dynamic.literal()
-    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontOpts]
   }
+  
+  extension [Self <: FontOpts](x: Self) {
+    
+    inline def setPrimary(value: Regular): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    
+    inline def setSecondary(value: Regular): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+  }
 }
-

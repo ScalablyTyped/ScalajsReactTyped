@@ -1,92 +1,124 @@
 package typingsJapgolly.officeJsPreview.OneNote
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NoteTagType extends js.Object
-
+sealed trait NoteTagType extends StObject
 /**
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.NoteTagType")
 @js.native
-object NoteTagType extends js.Object {
+object NoteTagType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait address extends NoteTagType
+  sealed trait address
+    extends StObject
+       with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait contact extends NoteTagType
+  sealed trait contact
+    extends StObject
+       with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait critical extends NoteTagType
+  sealed trait critical
+    extends StObject
+       with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait idea extends NoteTagType
+  sealed trait idea
+    extends StObject
+       with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait important extends NoteTagType
+  sealed trait important
+    extends StObject
+       with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait phoneNumber extends NoteTagType
+  sealed trait phoneNumber
+    extends StObject
+       with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait question extends NoteTagType
+  sealed trait question
+    extends StObject
+       with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait toDo extends NoteTagType
+  sealed trait toDo
+    extends StObject
+       with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait toDoPriority1 extends NoteTagType
+  sealed trait toDoPriority1
+    extends StObject
+       with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait toDoPriority2 extends NoteTagType
+  sealed trait toDoPriority2
+    extends StObject
+       with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait unknown extends NoteTagType
+  sealed trait unknown
+    extends StObject
+       with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait website extends NoteTagType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[NoteTagType with String] = js.native
-  /* "Address" */ @js.native
-  object address extends TopLevel[address with String]
-  
-  /* "Contact" */ @js.native
-  object contact extends TopLevel[contact with String]
-  
-  /* "Critical" */ @js.native
-  object critical extends TopLevel[critical with String]
-  
-  /* "Idea" */ @js.native
-  object idea extends TopLevel[idea with String]
-  
-  /* "Important" */ @js.native
-  object important extends TopLevel[important with String]
-  
-  /* "PhoneNumber" */ @js.native
-  object phoneNumber extends TopLevel[phoneNumber with String]
-  
-  /* "Question" */ @js.native
-  object question extends TopLevel[question with String]
-  
-  /* "ToDo" */ @js.native
-  object toDo extends TopLevel[toDo with String]
-  
-  /* "ToDoPriority1" */ @js.native
-  object toDoPriority1 extends TopLevel[toDoPriority1 with String]
-  
-  /* "ToDoPriority2" */ @js.native
-  object toDoPriority2 extends TopLevel[toDoPriority2 with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
-  
-  /* "Website" */ @js.native
-  object website extends TopLevel[website with String]
-  
+  sealed trait website
+    extends StObject
+       with NoteTagType
 }
-

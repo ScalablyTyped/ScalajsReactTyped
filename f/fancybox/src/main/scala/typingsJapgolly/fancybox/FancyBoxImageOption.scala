@@ -1,10 +1,11 @@
 package typingsJapgolly.fancybox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FancyBoxImageOption extends js.Object {
+trait FancyBoxImageOption extends StObject {
+  
   /**
     * Wait for images to load before displaying
     *   true  - wait for image to load and then display;
@@ -13,13 +14,15 @@ trait FancyBoxImageOption extends js.Object {
     */
   var preload: Boolean
 }
-
 object FancyBoxImageOption {
-  @scala.inline
-  def apply(preload: Boolean): FancyBoxImageOption = {
-    val __obj = js.Dynamic.literal(preload = preload.asInstanceOf[js.Any])
   
+  inline def apply(preload: Boolean): FancyBoxImageOption = {
+    val __obj = js.Dynamic.literal(preload = preload.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxImageOption]
   }
+  
+  extension [Self <: FancyBoxImageOption](x: Self) {
+    
+    inline def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+  }
 }
-

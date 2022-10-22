@@ -1,26 +1,27 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AutoCompleteFilteringEvent extends AutoCompleteEvent {
-  var filter: js.UndefOr[js.Any] = js.undefined
+trait AutoCompleteFilteringEvent
+  extends StObject
+     with AutoCompleteEvent {
+  
+  var filter: js.UndefOr[Any] = js.undefined
 }
-
 object AutoCompleteFilteringEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: AutoComplete,
-    filter: js.Any = null
-  ): AutoCompleteFilteringEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: AutoComplete): AutoCompleteFilteringEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCompleteFilteringEvent]
   }
+  
+  extension [Self <: AutoCompleteFilteringEvent](x: Self) {
+    
+    inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+  }
 }
-

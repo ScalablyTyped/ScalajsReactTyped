@@ -1,47 +1,72 @@
 package typingsJapgolly.select2.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.select2.mod._Global_.JQuery
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.select2.mod.global.JQuery
 import typingsJapgolly.select2.select2Strings.ltr
 import typingsJapgolly.select2.select2Strings.rtl
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Options[Result, RemoteResult] extends js.Object {
+trait Options[Result, RemoteResult] extends StObject {
+  
   var ajax: js.UndefOr[AjaxOptions[Result, RemoteResult]] = js.undefined
+  
   var allowClear: js.UndefOr[Boolean] = js.undefined
+  
   var amdBase: js.UndefOr[String] = js.undefined
+  
   var amdLanguageBase: js.UndefOr[String] = js.undefined
+  
   var closeOnSelect: js.UndefOr[Boolean] = js.undefined
-  var containerCss: js.UndefOr[js.Any] = js.undefined
+  
+  var containerCss: js.UndefOr[Any] = js.undefined
+  
   var containerCssClass: js.UndefOr[String] = js.undefined
+  
   // Not in https://select2.org/configuration/options-api
-  var createTag: js.UndefOr[js.Function1[/* params */ SearchOptions, IdTextPair | Null]] = js.undefined
+  var createTag: js.UndefOr[
+    js.Function1[/* params */ SearchOptions, (IdTextPair & (Record[String, Any])) | Null]
+  ] = js.undefined
+  
   var data: js.UndefOr[js.Array[DataFormat | GroupedDataFormat]] = js.undefined
-  var dataAdapter: js.UndefOr[js.Any] = js.undefined
+  
+  var dataAdapter: js.UndefOr[Any] = js.undefined
+  
   var debug: js.UndefOr[Boolean] = js.undefined
+  
   var dir: js.UndefOr[ltr | rtl] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var dropdownAdapter: js.UndefOr[js.Any] = js.undefined
+  
+  var dropdownAdapter: js.UndefOr[Any] = js.undefined
+  
   var dropdownAutoWidth: js.UndefOr[Boolean] = js.undefined
-  var dropdownCss: js.UndefOr[js.Any] = js.undefined
+  
+  var dropdownCss: js.UndefOr[Any] = js.undefined
+  
   var dropdownCssClass: js.UndefOr[String] = js.undefined
+  
   var dropdownParent: js.UndefOr[JQuery[HTMLElement]] = js.undefined
+  
   var escapeMarkup: js.UndefOr[js.Function1[/* markup */ String, String]] = js.undefined
+  
   var initSelection: js.UndefOr[
     js.Function2[
       /* element */ JQuery[HTMLElement], 
-      /* callback */ js.Function1[/* data */ js.Any, Unit], 
+      /* callback */ js.Function1[/* data */ Any, Unit], 
       Unit
     ]
   ] = js.undefined
+  
   var insertTag: js.UndefOr[
     js.Function2[/* data */ js.Array[OptionData | IdTextPair], /* tag */ IdTextPair, Unit]
   ] = js.undefined
+  
   var language: js.UndefOr[String | Translation] = js.undefined
+  
   var matcher: js.UndefOr[
     js.Function2[
       /* params */ SearchOptions, 
@@ -49,131 +74,243 @@ trait Options[Result, RemoteResult] extends js.Object {
       OptGroupData | OptionData | Null
     ]
   ] = js.undefined
+  
   var maximumInputLength: js.UndefOr[Double] = js.undefined
+  
   var maximumSelectionLength: js.UndefOr[Double] = js.undefined
+  
   var minimumInputLength: js.UndefOr[Double] = js.undefined
+  
   var minimumResultsForSearch: js.UndefOr[Double] = js.undefined
+  
   var multiple: js.UndefOr[Boolean] = js.undefined
+  
   var placeholder: js.UndefOr[String | IdTextPair] = js.undefined
-  var resultsAdapter: js.UndefOr[js.Any] = js.undefined
+  
+  var resultsAdapter: js.UndefOr[Any] = js.undefined
+  
   var selectOnClose: js.UndefOr[Boolean] = js.undefined
-  var selectionAdapter: js.UndefOr[js.Any] = js.undefined
+  
+  var selectionAdapter: js.UndefOr[Any] = js.undefined
+  
   var sorter: js.UndefOr[
     js.Function1[
       /* data */ js.Array[OptGroupData | OptionData | IdTextPair], 
       js.Array[OptGroupData | OptionData | IdTextPair]
     ]
   ] = js.undefined
+  
   var tags: js.UndefOr[Boolean] = js.undefined
+  
   var templateResult: js.UndefOr[
     js.Function1[/* result */ LoadingData | Result, String | JQuery[HTMLElement] | Null]
   ] = js.undefined
+  
   var templateSelection: js.UndefOr[
-    js.Function1[/* selection */ IdTextPair | LoadingData | Result, String | JQuery[HTMLElement]]
+    js.Function2[
+      /* selection */ IdTextPair | LoadingData | Result, 
+      /* container */ JQuery[HTMLElement], 
+      String | JQuery[HTMLElement]
+    ]
   ] = js.undefined
+  
   var theme: js.UndefOr[String] = js.undefined
+  
   var tokenSeparators: js.UndefOr[js.Array[String]] = js.undefined
+  
   var tokenizer: js.UndefOr[
     js.Function4[
       /* input */ String, 
-      /* selection */ js.Array[_], 
+      /* selection */ js.Array[Any], 
       /* selectCallback */ js.Function0[Unit], 
-      /* options */ Options[DataFormat | GroupedDataFormat, _], 
+      /* options */ Options[DataFormat | GroupedDataFormat, Any], 
       String
     ]
   ] = js.undefined
+  
   var width: js.UndefOr[String] = js.undefined
 }
-
 object Options {
-  @scala.inline
-  def apply[Result, RemoteResult](
-    ajax: AjaxOptions[Result, RemoteResult] = null,
-    allowClear: js.UndefOr[Boolean] = js.undefined,
-    amdBase: String = null,
-    amdLanguageBase: String = null,
-    closeOnSelect: js.UndefOr[Boolean] = js.undefined,
-    containerCss: js.Any = null,
-    containerCssClass: String = null,
-    createTag: /* params */ SearchOptions => CallbackTo[IdTextPair | Null] = null,
-    data: js.Array[DataFormat | GroupedDataFormat] = null,
-    dataAdapter: js.Any = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    dir: ltr | rtl = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    dropdownAdapter: js.Any = null,
-    dropdownAutoWidth: js.UndefOr[Boolean] = js.undefined,
-    dropdownCss: js.Any = null,
-    dropdownCssClass: String = null,
-    dropdownParent: JQuery[HTMLElement] = null,
-    escapeMarkup: /* markup */ String => CallbackTo[String] = null,
-    initSelection: (/* element */ JQuery[HTMLElement], /* callback */ js.Function1[/* data */ js.Any, Unit]) => Callback = null,
-    insertTag: (/* data */ js.Array[OptionData | IdTextPair], /* tag */ IdTextPair) => Callback = null,
-    language: String | Translation = null,
-    matcher: (/* params */ SearchOptions, /* data */ OptGroupData | OptionData) => CallbackTo[OptGroupData | OptionData | Null] = null,
-    maximumInputLength: Int | Double = null,
-    maximumSelectionLength: Int | Double = null,
-    minimumInputLength: Int | Double = null,
-    minimumResultsForSearch: Int | Double = null,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    placeholder: String | IdTextPair = null,
-    resultsAdapter: js.Any = null,
-    selectOnClose: js.UndefOr[Boolean] = js.undefined,
-    selectionAdapter: js.Any = null,
-    sorter: /* data */ js.Array[OptGroupData | OptionData | IdTextPair] => CallbackTo[js.Array[OptGroupData | OptionData | IdTextPair]] = null,
-    tags: js.UndefOr[Boolean] = js.undefined,
-    templateResult: /* result */ LoadingData | Result => CallbackTo[String | JQuery[HTMLElement] | Null] = null,
-    templateSelection: /* selection */ IdTextPair | LoadingData | Result => CallbackTo[String | JQuery[HTMLElement]] = null,
-    theme: String = null,
-    tokenSeparators: js.Array[String] = null,
-    tokenizer: (/* input */ String, /* selection */ js.Array[js.Any], /* selectCallback */ js.Function0[Unit], /* options */ Options[DataFormat | GroupedDataFormat, js.Any]) => CallbackTo[String] = null,
-    width: String = null
-  ): Options[Result, RemoteResult] = {
+  
+  inline def apply[Result, RemoteResult](): Options[Result, RemoteResult] = {
     val __obj = js.Dynamic.literal()
-    if (ajax != null) __obj.updateDynamic("ajax")(ajax.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
-    if (amdBase != null) __obj.updateDynamic("amdBase")(amdBase.asInstanceOf[js.Any])
-    if (amdLanguageBase != null) __obj.updateDynamic("amdLanguageBase")(amdLanguageBase.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect.asInstanceOf[js.Any])
-    if (containerCss != null) __obj.updateDynamic("containerCss")(containerCss.asInstanceOf[js.Any])
-    if (containerCssClass != null) __obj.updateDynamic("containerCssClass")(containerCssClass.asInstanceOf[js.Any])
-    if (createTag != null) __obj.updateDynamic("createTag")(js.Any.fromFunction1((t0: /* params */ typingsJapgolly.select2.mod.SearchOptions) => createTag(t0).runNow()))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataAdapter != null) __obj.updateDynamic("dataAdapter")(dataAdapter.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (dropdownAdapter != null) __obj.updateDynamic("dropdownAdapter")(dropdownAdapter.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropdownAutoWidth)) __obj.updateDynamic("dropdownAutoWidth")(dropdownAutoWidth.asInstanceOf[js.Any])
-    if (dropdownCss != null) __obj.updateDynamic("dropdownCss")(dropdownCss.asInstanceOf[js.Any])
-    if (dropdownCssClass != null) __obj.updateDynamic("dropdownCssClass")(dropdownCssClass.asInstanceOf[js.Any])
-    if (dropdownParent != null) __obj.updateDynamic("dropdownParent")(dropdownParent.asInstanceOf[js.Any])
-    if (escapeMarkup != null) __obj.updateDynamic("escapeMarkup")(js.Any.fromFunction1((t0: /* markup */ java.lang.String) => escapeMarkup(t0).runNow()))
-    if (initSelection != null) __obj.updateDynamic("initSelection")(js.Any.fromFunction2((t0: /* element */ typingsJapgolly.select2.mod._Global_.JQuery[org.scalajs.dom.raw.HTMLElement], t1: /* callback */ js.Function1[/* data */ js.Any, scala.Unit]) => initSelection(t0, t1).runNow()))
-    if (insertTag != null) __obj.updateDynamic("insertTag")(js.Any.fromFunction2((t0: /* data */ js.Array[typingsJapgolly.select2.mod.OptionData | typingsJapgolly.select2.mod.IdTextPair], t1: /* tag */ typingsJapgolly.select2.mod.IdTextPair) => insertTag(t0, t1).runNow()))
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (matcher != null) __obj.updateDynamic("matcher")(js.Any.fromFunction2((t0: /* params */ typingsJapgolly.select2.mod.SearchOptions, t1: /* data */ typingsJapgolly.select2.mod.OptGroupData | typingsJapgolly.select2.mod.OptionData) => matcher(t0, t1).runNow()))
-    if (maximumInputLength != null) __obj.updateDynamic("maximumInputLength")(maximumInputLength.asInstanceOf[js.Any])
-    if (maximumSelectionLength != null) __obj.updateDynamic("maximumSelectionLength")(maximumSelectionLength.asInstanceOf[js.Any])
-    if (minimumInputLength != null) __obj.updateDynamic("minimumInputLength")(minimumInputLength.asInstanceOf[js.Any])
-    if (minimumResultsForSearch != null) __obj.updateDynamic("minimumResultsForSearch")(minimumResultsForSearch.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (resultsAdapter != null) __obj.updateDynamic("resultsAdapter")(resultsAdapter.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectOnClose)) __obj.updateDynamic("selectOnClose")(selectOnClose.asInstanceOf[js.Any])
-    if (selectionAdapter != null) __obj.updateDynamic("selectionAdapter")(selectionAdapter.asInstanceOf[js.Any])
-    if (sorter != null) __obj.updateDynamic("sorter")(js.Any.fromFunction1((t0: /* data */ js.Array[
-  typingsJapgolly.select2.mod.OptGroupData | typingsJapgolly.select2.mod.OptionData | typingsJapgolly.select2.mod.IdTextPair]) => sorter(t0).runNow()))
-    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (templateResult != null) __obj.updateDynamic("templateResult")(js.Any.fromFunction1((t0: /* result */ typingsJapgolly.select2.mod.LoadingData | Result) => templateResult(t0).runNow()))
-    if (templateSelection != null) __obj.updateDynamic("templateSelection")(js.Any.fromFunction1((t0: /* selection */ typingsJapgolly.select2.mod.IdTextPair | typingsJapgolly.select2.mod.LoadingData | Result) => templateSelection(t0).runNow()))
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (tokenSeparators != null) __obj.updateDynamic("tokenSeparators")(tokenSeparators.asInstanceOf[js.Any])
-    if (tokenizer != null) __obj.updateDynamic("tokenizer")(js.Any.fromFunction4((t0: /* input */ java.lang.String, t1: /* selection */ js.Array[js.Any], t2: /* selectCallback */ js.Function0[scala.Unit], t3: /* options */ typingsJapgolly.select2.mod.Options[
-  typingsJapgolly.select2.mod.DataFormat | typingsJapgolly.select2.mod.GroupedDataFormat, 
-  js.Any]) => tokenizer(t0, t1, t2, t3).runNow()))
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[Result, RemoteResult]]
   }
+  
+  extension [Self <: Options[?, ?], Result, RemoteResult](x: Self & (Options[Result, RemoteResult])) {
+    
+    inline def setAjax(value: AjaxOptions[Result, RemoteResult]): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
+    
+    inline def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
+    
+    inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
+    
+    inline def setAllowClearUndefined: Self = StObject.set(x, "allowClear", js.undefined)
+    
+    inline def setAmdBase(value: String): Self = StObject.set(x, "amdBase", value.asInstanceOf[js.Any])
+    
+    inline def setAmdBaseUndefined: Self = StObject.set(x, "amdBase", js.undefined)
+    
+    inline def setAmdLanguageBase(value: String): Self = StObject.set(x, "amdLanguageBase", value.asInstanceOf[js.Any])
+    
+    inline def setAmdLanguageBaseUndefined: Self = StObject.set(x, "amdLanguageBase", js.undefined)
+    
+    inline def setCloseOnSelect(value: Boolean): Self = StObject.set(x, "closeOnSelect", value.asInstanceOf[js.Any])
+    
+    inline def setCloseOnSelectUndefined: Self = StObject.set(x, "closeOnSelect", js.undefined)
+    
+    inline def setContainerCss(value: Any): Self = StObject.set(x, "containerCss", value.asInstanceOf[js.Any])
+    
+    inline def setContainerCssClass(value: String): Self = StObject.set(x, "containerCssClass", value.asInstanceOf[js.Any])
+    
+    inline def setContainerCssClassUndefined: Self = StObject.set(x, "containerCssClass", js.undefined)
+    
+    inline def setContainerCssUndefined: Self = StObject.set(x, "containerCss", js.undefined)
+    
+    inline def setCreateTag(value: /* params */ SearchOptions => (IdTextPair & (Record[String, Any])) | Null): Self = StObject.set(x, "createTag", js.Any.fromFunction1(value))
+    
+    inline def setCreateTagUndefined: Self = StObject.set(x, "createTag", js.undefined)
+    
+    inline def setData(value: js.Array[DataFormat | GroupedDataFormat]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataAdapter(value: Any): Self = StObject.set(x, "dataAdapter", value.asInstanceOf[js.Any])
+    
+    inline def setDataAdapterUndefined: Self = StObject.set(x, "dataAdapter", js.undefined)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: (DataFormat | GroupedDataFormat)*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    
+    inline def setDir(value: ltr | rtl): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setDropdownAdapter(value: Any): Self = StObject.set(x, "dropdownAdapter", value.asInstanceOf[js.Any])
+    
+    inline def setDropdownAdapterUndefined: Self = StObject.set(x, "dropdownAdapter", js.undefined)
+    
+    inline def setDropdownAutoWidth(value: Boolean): Self = StObject.set(x, "dropdownAutoWidth", value.asInstanceOf[js.Any])
+    
+    inline def setDropdownAutoWidthUndefined: Self = StObject.set(x, "dropdownAutoWidth", js.undefined)
+    
+    inline def setDropdownCss(value: Any): Self = StObject.set(x, "dropdownCss", value.asInstanceOf[js.Any])
+    
+    inline def setDropdownCssClass(value: String): Self = StObject.set(x, "dropdownCssClass", value.asInstanceOf[js.Any])
+    
+    inline def setDropdownCssClassUndefined: Self = StObject.set(x, "dropdownCssClass", js.undefined)
+    
+    inline def setDropdownCssUndefined: Self = StObject.set(x, "dropdownCss", js.undefined)
+    
+    inline def setDropdownParent(value: JQuery[HTMLElement]): Self = StObject.set(x, "dropdownParent", value.asInstanceOf[js.Any])
+    
+    inline def setDropdownParentUndefined: Self = StObject.set(x, "dropdownParent", js.undefined)
+    
+    inline def setEscapeMarkup(value: /* markup */ String => String): Self = StObject.set(x, "escapeMarkup", js.Any.fromFunction1(value))
+    
+    inline def setEscapeMarkupUndefined: Self = StObject.set(x, "escapeMarkup", js.undefined)
+    
+    inline def setInitSelection(
+      value: (/* element */ JQuery[HTMLElement], /* callback */ js.Function1[/* data */ Any, Unit]) => Callback
+    ): Self = StObject.set(x, "initSelection", js.Any.fromFunction2((t0: /* element */ JQuery[HTMLElement], t1: /* callback */ js.Function1[/* data */ Any, Unit]) => (value(t0, t1)).runNow()))
+    
+    inline def setInitSelectionUndefined: Self = StObject.set(x, "initSelection", js.undefined)
+    
+    inline def setInsertTag(value: (/* data */ js.Array[OptionData | IdTextPair], /* tag */ IdTextPair) => Callback): Self = StObject.set(x, "insertTag", js.Any.fromFunction2((t0: /* data */ js.Array[OptionData | IdTextPair], t1: /* tag */ IdTextPair) => (value(t0, t1)).runNow()))
+    
+    inline def setInsertTagUndefined: Self = StObject.set(x, "insertTag", js.undefined)
+    
+    inline def setLanguage(value: String | Translation): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setMatcher(
+      value: (/* params */ SearchOptions, /* data */ OptGroupData | OptionData) => OptGroupData | OptionData | Null
+    ): Self = StObject.set(x, "matcher", js.Any.fromFunction2(value))
+    
+    inline def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
+    
+    inline def setMaximumInputLength(value: Double): Self = StObject.set(x, "maximumInputLength", value.asInstanceOf[js.Any])
+    
+    inline def setMaximumInputLengthUndefined: Self = StObject.set(x, "maximumInputLength", js.undefined)
+    
+    inline def setMaximumSelectionLength(value: Double): Self = StObject.set(x, "maximumSelectionLength", value.asInstanceOf[js.Any])
+    
+    inline def setMaximumSelectionLengthUndefined: Self = StObject.set(x, "maximumSelectionLength", js.undefined)
+    
+    inline def setMinimumInputLength(value: Double): Self = StObject.set(x, "minimumInputLength", value.asInstanceOf[js.Any])
+    
+    inline def setMinimumInputLengthUndefined: Self = StObject.set(x, "minimumInputLength", js.undefined)
+    
+    inline def setMinimumResultsForSearch(value: Double): Self = StObject.set(x, "minimumResultsForSearch", value.asInstanceOf[js.Any])
+    
+    inline def setMinimumResultsForSearchUndefined: Self = StObject.set(x, "minimumResultsForSearch", js.undefined)
+    
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    
+    inline def setPlaceholder(value: String | IdTextPair): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    
+    inline def setResultsAdapter(value: Any): Self = StObject.set(x, "resultsAdapter", value.asInstanceOf[js.Any])
+    
+    inline def setResultsAdapterUndefined: Self = StObject.set(x, "resultsAdapter", js.undefined)
+    
+    inline def setSelectOnClose(value: Boolean): Self = StObject.set(x, "selectOnClose", value.asInstanceOf[js.Any])
+    
+    inline def setSelectOnCloseUndefined: Self = StObject.set(x, "selectOnClose", js.undefined)
+    
+    inline def setSelectionAdapter(value: Any): Self = StObject.set(x, "selectionAdapter", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionAdapterUndefined: Self = StObject.set(x, "selectionAdapter", js.undefined)
+    
+    inline def setSorter(
+      value: /* data */ js.Array[OptGroupData | OptionData | IdTextPair] => js.Array[OptGroupData | OptionData | IdTextPair]
+    ): Self = StObject.set(x, "sorter", js.Any.fromFunction1(value))
+    
+    inline def setSorterUndefined: Self = StObject.set(x, "sorter", js.undefined)
+    
+    inline def setTags(value: Boolean): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTemplateResult(value: /* result */ LoadingData | Result => String | JQuery[HTMLElement] | Null): Self = StObject.set(x, "templateResult", js.Any.fromFunction1(value))
+    
+    inline def setTemplateResultUndefined: Self = StObject.set(x, "templateResult", js.undefined)
+    
+    inline def setTemplateSelection(
+      value: (/* selection */ IdTextPair | LoadingData | Result, /* container */ JQuery[HTMLElement]) => String | JQuery[HTMLElement]
+    ): Self = StObject.set(x, "templateSelection", js.Any.fromFunction2(value))
+    
+    inline def setTemplateSelectionUndefined: Self = StObject.set(x, "templateSelection", js.undefined)
+    
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setTokenSeparators(value: js.Array[String]): Self = StObject.set(x, "tokenSeparators", value.asInstanceOf[js.Any])
+    
+    inline def setTokenSeparatorsUndefined: Self = StObject.set(x, "tokenSeparators", js.undefined)
+    
+    inline def setTokenSeparatorsVarargs(value: String*): Self = StObject.set(x, "tokenSeparators", js.Array(value*))
+    
+    inline def setTokenizer(
+      value: (/* input */ String, /* selection */ js.Array[Any], /* selectCallback */ js.Function0[Unit], /* options */ Options[DataFormat | GroupedDataFormat, Any]) => String
+    ): Self = StObject.set(x, "tokenizer", js.Any.fromFunction4(value))
+    
+    inline def setTokenizerUndefined: Self = StObject.set(x, "tokenizer", js.undefined)
+    
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

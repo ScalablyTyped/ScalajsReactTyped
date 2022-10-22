@@ -1,44 +1,46 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQuery
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.Calendar")
 @js.native
-class Calendar protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: CalendarOptions) = this()
-  @JSName("options")
-  var options_Calendar: CalendarOptions = js.native
-  var wrapper: JQuery = js.native
+trait Calendar
+  extends StObject
+     with Widget {
+  
   def current(): js.Date = js.native
+  
   def max(): js.Date = js.native
   def max(value: String): Unit = js.native
-  def max(value: Date): Unit = js.native
+  def max(value: js.Date): Unit = js.native
+  
   def min(): js.Date = js.native
   def min(value: String): Unit = js.native
-  def min(value: Date): Unit = js.native
+  def min(value: js.Date): Unit = js.native
+  
   def navigate(value: js.Date, view: String): Unit = js.native
+  
   def navigateDown(value: js.Date): Unit = js.native
+  
   def navigateToFuture(): Unit = js.native
+  
   def navigateToPast(): Unit = js.native
+  
   def navigateUp(): Unit = js.native
-  def selectDates(): Unit = js.native
+  
+  @JSName("options")
+  var options_Calendar: CalendarOptions = js.native
+  
+  def selectDates(): Any = js.native
+  def selectDates(dates: Any): Unit = js.native
+  
   def value(): js.Date = js.native
   def value(value: String): Unit = js.native
-  def value(value: Date): Unit = js.native
-  def view(): js.Any = js.native
+  def value(value: js.Date): Unit = js.native
+  
+  def view(): Any = js.native
+  
+  var wrapper: JQuery = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.ui.Calendar")
-@js.native
-object Calendar extends js.Object {
-  var fn: Calendar = js.native
-  def extend(proto: js.Object): Calendar = js.native
-}
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Callbacks to invoke synchronously before and after a function call.
@@ -11,25 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.ScriptInvocationListenerCallbacks
   - typingsJapgolly.fridaGum.NativeInvocationListenerCallbacks
 */
-trait InvocationListenerCallbacks extends js.Object
-
+trait InvocationListenerCallbacks extends StObject
 object InvocationListenerCallbacks {
-  @scala.inline
-  def ScriptInvocationListenerCallbacks(
-    onEnter: js.ThisFunction1[/* this */ InvocationContext, /* args */ InvocationArguments, Unit] = null,
-    onLeave: js.ThisFunction1[/* this */ InvocationContext, /* retval */ InvocationReturnValue, Unit] = null
-  ): InvocationListenerCallbacks = {
+  
+  inline def NativeInvocationListenerCallbacks(): typingsJapgolly.fridaGum.NativeInvocationListenerCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InvocationListenerCallbacks]
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.NativeInvocationListenerCallbacks]
   }
-  @scala.inline
-  def NativeInvocationListenerCallbacks(onEnter: NativePointer = null, onLeave: NativePointer = null): InvocationListenerCallbacks = {
+  
+  inline def ScriptInvocationListenerCallbacks(): typingsJapgolly.fridaGum.ScriptInvocationListenerCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InvocationListenerCallbacks]
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.ScriptInvocationListenerCallbacks]
   }
 }
-

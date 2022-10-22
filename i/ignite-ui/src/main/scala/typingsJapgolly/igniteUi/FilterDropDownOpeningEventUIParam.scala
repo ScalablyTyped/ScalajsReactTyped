@@ -1,22 +1,27 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilterDropDownOpeningEventUIParam extends js.Object {
+trait FilterDropDownOpeningEventUIParam extends StObject {
+  
   /**
-  	 * A reference to the hierarchy.
-  	 */
-  var hierarchy: js.UndefOr[js.Any] = js.undefined
+    * A reference to the hierarchy.
+    */
+  var hierarchy: js.UndefOr[Any] = js.undefined
 }
-
 object FilterDropDownOpeningEventUIParam {
-  @scala.inline
-  def apply(hierarchy: js.Any = null): FilterDropDownOpeningEventUIParam = {
+  
+  inline def apply(): FilterDropDownOpeningEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterDropDownOpeningEventUIParam]
   }
+  
+  extension [Self <: FilterDropDownOpeningEventUIParam](x: Self) {
+    
+    inline def setHierarchy(value: Any): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
+    
+    inline def setHierarchyUndefined: Self = StObject.set(x, "hierarchy", js.undefined)
+  }
 }
-

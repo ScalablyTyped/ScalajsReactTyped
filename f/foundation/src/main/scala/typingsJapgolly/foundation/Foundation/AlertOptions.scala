@@ -1,21 +1,26 @@
 package typingsJapgolly.foundation.Foundation
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/alert_boxes.html
-trait AlertOptions extends js.Object {
-  var callback: js.UndefOr[js.Function0[_]] = js.undefined
+trait AlertOptions extends StObject {
+  
+  var callback: js.UndefOr[js.Function0[Any]] = js.undefined
 }
-
 object AlertOptions {
-  @scala.inline
-  def apply(callback: js.UndefOr[CallbackTo[js.Any]] = js.undefined): AlertOptions = {
+  
+  inline def apply(): AlertOptions = {
     val __obj = js.Dynamic.literal()
-    callback.foreach(p => __obj.updateDynamic("callback")(p.toJsFn))
     __obj.asInstanceOf[AlertOptions]
   }
+  
+  extension [Self <: AlertOptions](x: Self) {
+    
+    inline def setCallback(value: CallbackTo[Any]): Self = StObject.set(x, "callback", value.toJsFn)
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+  }
 }
-

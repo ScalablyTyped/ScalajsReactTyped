@@ -1,57 +1,72 @@
 package typingsJapgolly.reactNativeVersionCheck
 
+import typingsJapgolly.reactNativeVersionCheck.anon.AppID
+import typingsJapgolly.reactNativeVersionCheck.anon.CurrentVersion
+import typingsJapgolly.reactNativeVersionCheck.anon.FetchOptions
+import typingsJapgolly.reactNativeVersionCheck.anon.IgnoreErrors
+import typingsJapgolly.reactNativeVersionCheck.anon.IsNeeded
+import typingsJapgolly.reactNativeVersionCheck.anon.PackageName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-version-check", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  object default extends js.Object {
+object mod {
+  
+  object default {
+    
+    @JSImport("react-native-version-check", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns url of App Store of app.
       */
-    def getAppStoreUrl(): js.Promise[String] = js.native
-    def getAppStoreUrl(option: AnonAppID): js.Promise[String] = js.native
+    inline def getAppStoreUrl(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppStoreUrl")().asInstanceOf[js.Promise[String]]
+    inline def getAppStoreUrl(option: IgnoreErrors): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppStoreUrl")(option.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    
     /**
       * Returns device's country code of 2 characters.
       */
-    def getCountry(): js.Promise[String] = js.native
+    inline def getCountry(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountry")().asInstanceOf[js.Promise[String]]
+    
     /**
       * Returns current app build number.
       */
-    def getCurrentBuildNumber(): Double = js.native
+    inline def getCurrentBuildNumber(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentBuildNumber")().asInstanceOf[Double]
+    
     /**
       * Returns current app version.
       */
-    def getCurrentVersion(): String = js.native
+    inline def getCurrentVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentVersion")().asInstanceOf[String]
+    
     /**
       * Returns the latest app version parsed from url. Returns null when parsing error occurs.
       */
-    def getLatestVersion(): js.Promise[String] = js.native
-    def getLatestVersion(option: AnonFetchOptions): js.Promise[String] = js.native
+    inline def getLatestVersion(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLatestVersion")().asInstanceOf[js.Promise[String]]
+    inline def getLatestVersion(option: FetchOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLatestVersion")(option.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    
     /**
       * Returns package name of app.
       */
-    def getPackageName(): String = js.native
+    inline def getPackageName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageName")().asInstanceOf[String]
+    
     /**
       * Returns url of Play Store of app.
       */
-    def getPlayStoreUrl(): js.Promise[String] = js.native
-    def getPlayStoreUrl(option: AnonIgnoreErrors): js.Promise[String] = js.native
+    inline def getPlayStoreUrl(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlayStoreUrl")().asInstanceOf[js.Promise[String]]
+    inline def getPlayStoreUrl(option: PackageName): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlayStoreUrl")(option.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    
     /**
       * Returns url of Play Market or App Store of app.
       */
-    def getStoreUrl(): js.Promise[String] = js.native
-    def getStoreUrl(option: AnonAppID): js.Promise[String] = js.native
+    inline def getStoreUrl(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStoreUrl")().asInstanceOf[js.Promise[String]]
+    inline def getStoreUrl(option: AppID): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStoreUrl")(option.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    
     /**
       * Returns an object contains with boolean value whether update needed, current version and latest version.
       * Current and the latest app versions are first split by delimiter, and check each split numbers into depth.
       */
-    def needUpdate(): js.Promise[AnonIsNeeded] = js.native
-    def needUpdate(option: AnonCurrentVersion): js.Promise[AnonIsNeeded] = js.native
+    inline def needUpdate(): js.Promise[IsNeeded] = ^.asInstanceOf[js.Dynamic].applyDynamic("needUpdate")().asInstanceOf[js.Promise[IsNeeded]]
+    inline def needUpdate(option: CurrentVersion): js.Promise[IsNeeded] = ^.asInstanceOf[js.Dynamic].applyDynamic("needUpdate")(option.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IsNeeded]]
   }
-  
 }
-

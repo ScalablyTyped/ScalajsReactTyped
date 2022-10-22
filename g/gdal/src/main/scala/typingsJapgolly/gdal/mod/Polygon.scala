@@ -1,13 +1,14 @@
 package typingsJapgolly.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gdal", "Polygon")
 @js.native
-class Polygon () extends Geometry {
-  var rings: PolygonRings = js.native
+open class Polygon () extends Geometry {
+  
   def getArea(): Double = js.native
+  
+  var rings: PolygonRings = js.native
 }
-

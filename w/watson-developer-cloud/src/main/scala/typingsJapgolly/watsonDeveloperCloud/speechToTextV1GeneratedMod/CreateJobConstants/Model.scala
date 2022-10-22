@@ -1,138 +1,136 @@
 package typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Model extends js.Object
-
+sealed trait Model extends StObject
 /** The identifier of the model that is to be used for the recognition request. See [Languages and models](https://cloud.ibm.com/docs/services/speech-to-text/models.html). */
 @JSImport("watson-developer-cloud/speech-to-text/v1-generated", "CreateJobConstants.Model")
 @js.native
-object Model extends js.Object {
-  @js.native
-  sealed trait AR_AR_BROADBANDMODEL extends Model
-  
-  @js.native
-  sealed trait DE_DE_BROADBANDMODEL extends Model
-  
-  @js.native
-  sealed trait DE_DE_NARROWBANDMODEL extends Model
-  
-  @js.native
-  sealed trait EN_GB_BROADBANDMODEL extends Model
-  
-  @js.native
-  sealed trait EN_GB_NARROWBANDMODEL extends Model
-  
-  @js.native
-  sealed trait EN_US_BROADBANDMODEL extends Model
-  
-  @js.native
-  sealed trait EN_US_NARROWBANDMODEL extends Model
-  
-  @js.native
-  sealed trait EN_US_SHORTFORM_NARROWBANDMODEL extends Model
-  
-  @js.native
-  sealed trait ES_ES_BROADBANDMODEL extends Model
-  
-  @js.native
-  sealed trait ES_ES_NARROWBANDMODEL extends Model
-  
-  @js.native
-  sealed trait FR_FR_BROADBANDMODEL extends Model
-  
-  @js.native
-  sealed trait FR_FR_NARROWBANDMODEL extends Model
-  
-  @js.native
-  sealed trait JA_JP_BROADBANDMODEL extends Model
-  
-  @js.native
-  sealed trait JA_JP_NARROWBANDMODEL extends Model
-  
-  @js.native
-  sealed trait KO_KR_BROADBANDMODEL extends Model
-  
-  @js.native
-  sealed trait KO_KR_NARROWBANDMODEL extends Model
-  
-  @js.native
-  sealed trait PT_BR_BROADBANDMODEL extends Model
-  
-  @js.native
-  sealed trait PT_BR_NARROWBANDMODEL extends Model
-  
-  @js.native
-  sealed trait ZH_CN_BROADBANDMODEL extends Model
-  
-  @js.native
-  sealed trait ZH_CN_NARROWBANDMODEL extends Model
+object Model extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[Model with String] = js.native
-  /* "ar-AR_BroadbandModel" */ @js.native
-  object AR_AR_BROADBANDMODEL extends TopLevel[AR_AR_BROADBANDMODEL with String]
+  def apply(value: String): js.UndefOr[Model & String] = js.native
   
-  /* "de-DE_BroadbandModel" */ @js.native
-  object DE_DE_BROADBANDMODEL extends TopLevel[DE_DE_BROADBANDMODEL with String]
+  @js.native
+  sealed trait AR_AR_BROADBANDMODEL
+    extends StObject
+       with Model
+  /* "ar-AR_BroadbandModel" */ val AR_AR_BROADBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.AR_AR_BROADBANDMODEL & String = js.native
   
-  /* "de-DE_NarrowbandModel" */ @js.native
-  object DE_DE_NARROWBANDMODEL extends TopLevel[DE_DE_NARROWBANDMODEL with String]
+  @js.native
+  sealed trait DE_DE_BROADBANDMODEL
+    extends StObject
+       with Model
+  /* "de-DE_BroadbandModel" */ val DE_DE_BROADBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.DE_DE_BROADBANDMODEL & String = js.native
   
-  /* "en-GB_BroadbandModel" */ @js.native
-  object EN_GB_BROADBANDMODEL extends TopLevel[EN_GB_BROADBANDMODEL with String]
+  @js.native
+  sealed trait DE_DE_NARROWBANDMODEL
+    extends StObject
+       with Model
+  /* "de-DE_NarrowbandModel" */ val DE_DE_NARROWBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.DE_DE_NARROWBANDMODEL & String = js.native
   
-  /* "en-GB_NarrowbandModel" */ @js.native
-  object EN_GB_NARROWBANDMODEL extends TopLevel[EN_GB_NARROWBANDMODEL with String]
+  @js.native
+  sealed trait EN_GB_BROADBANDMODEL
+    extends StObject
+       with Model
+  /* "en-GB_BroadbandModel" */ val EN_GB_BROADBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.EN_GB_BROADBANDMODEL & String = js.native
   
-  /* "en-US_BroadbandModel" */ @js.native
-  object EN_US_BROADBANDMODEL extends TopLevel[EN_US_BROADBANDMODEL with String]
+  @js.native
+  sealed trait EN_GB_NARROWBANDMODEL
+    extends StObject
+       with Model
+  /* "en-GB_NarrowbandModel" */ val EN_GB_NARROWBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.EN_GB_NARROWBANDMODEL & String = js.native
   
-  /* "en-US_NarrowbandModel" */ @js.native
-  object EN_US_NARROWBANDMODEL extends TopLevel[EN_US_NARROWBANDMODEL with String]
+  @js.native
+  sealed trait EN_US_BROADBANDMODEL
+    extends StObject
+       with Model
+  /* "en-US_BroadbandModel" */ val EN_US_BROADBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.EN_US_BROADBANDMODEL & String = js.native
   
-  /* "en-US_ShortForm_NarrowbandModel" */ @js.native
-  object EN_US_SHORTFORM_NARROWBANDMODEL extends TopLevel[EN_US_SHORTFORM_NARROWBANDMODEL with String]
+  @js.native
+  sealed trait EN_US_NARROWBANDMODEL
+    extends StObject
+       with Model
+  /* "en-US_NarrowbandModel" */ val EN_US_NARROWBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.EN_US_NARROWBANDMODEL & String = js.native
   
-  /* "es-ES_BroadbandModel" */ @js.native
-  object ES_ES_BROADBANDMODEL extends TopLevel[ES_ES_BROADBANDMODEL with String]
+  @js.native
+  sealed trait EN_US_SHORTFORM_NARROWBANDMODEL
+    extends StObject
+       with Model
+  /* "en-US_ShortForm_NarrowbandModel" */ val EN_US_SHORTFORM_NARROWBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.EN_US_SHORTFORM_NARROWBANDMODEL & String = js.native
   
-  /* "es-ES_NarrowbandModel" */ @js.native
-  object ES_ES_NARROWBANDMODEL extends TopLevel[ES_ES_NARROWBANDMODEL with String]
+  @js.native
+  sealed trait ES_ES_BROADBANDMODEL
+    extends StObject
+       with Model
+  /* "es-ES_BroadbandModel" */ val ES_ES_BROADBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.ES_ES_BROADBANDMODEL & String = js.native
   
-  /* "fr-FR_BroadbandModel" */ @js.native
-  object FR_FR_BROADBANDMODEL extends TopLevel[FR_FR_BROADBANDMODEL with String]
+  @js.native
+  sealed trait ES_ES_NARROWBANDMODEL
+    extends StObject
+       with Model
+  /* "es-ES_NarrowbandModel" */ val ES_ES_NARROWBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.ES_ES_NARROWBANDMODEL & String = js.native
   
-  /* "fr-FR_NarrowbandModel" */ @js.native
-  object FR_FR_NARROWBANDMODEL extends TopLevel[FR_FR_NARROWBANDMODEL with String]
+  @js.native
+  sealed trait FR_FR_BROADBANDMODEL
+    extends StObject
+       with Model
+  /* "fr-FR_BroadbandModel" */ val FR_FR_BROADBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.FR_FR_BROADBANDMODEL & String = js.native
   
-  /* "ja-JP_BroadbandModel" */ @js.native
-  object JA_JP_BROADBANDMODEL extends TopLevel[JA_JP_BROADBANDMODEL with String]
+  @js.native
+  sealed trait FR_FR_NARROWBANDMODEL
+    extends StObject
+       with Model
+  /* "fr-FR_NarrowbandModel" */ val FR_FR_NARROWBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.FR_FR_NARROWBANDMODEL & String = js.native
   
-  /* "ja-JP_NarrowbandModel" */ @js.native
-  object JA_JP_NARROWBANDMODEL extends TopLevel[JA_JP_NARROWBANDMODEL with String]
+  @js.native
+  sealed trait JA_JP_BROADBANDMODEL
+    extends StObject
+       with Model
+  /* "ja-JP_BroadbandModel" */ val JA_JP_BROADBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.JA_JP_BROADBANDMODEL & String = js.native
   
-  /* "ko-KR_BroadbandModel" */ @js.native
-  object KO_KR_BROADBANDMODEL extends TopLevel[KO_KR_BROADBANDMODEL with String]
+  @js.native
+  sealed trait JA_JP_NARROWBANDMODEL
+    extends StObject
+       with Model
+  /* "ja-JP_NarrowbandModel" */ val JA_JP_NARROWBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.JA_JP_NARROWBANDMODEL & String = js.native
   
-  /* "ko-KR_NarrowbandModel" */ @js.native
-  object KO_KR_NARROWBANDMODEL extends TopLevel[KO_KR_NARROWBANDMODEL with String]
+  @js.native
+  sealed trait KO_KR_BROADBANDMODEL
+    extends StObject
+       with Model
+  /* "ko-KR_BroadbandModel" */ val KO_KR_BROADBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.KO_KR_BROADBANDMODEL & String = js.native
   
-  /* "pt-BR_BroadbandModel" */ @js.native
-  object PT_BR_BROADBANDMODEL extends TopLevel[PT_BR_BROADBANDMODEL with String]
+  @js.native
+  sealed trait KO_KR_NARROWBANDMODEL
+    extends StObject
+       with Model
+  /* "ko-KR_NarrowbandModel" */ val KO_KR_NARROWBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.KO_KR_NARROWBANDMODEL & String = js.native
   
-  /* "pt-BR_NarrowbandModel" */ @js.native
-  object PT_BR_NARROWBANDMODEL extends TopLevel[PT_BR_NARROWBANDMODEL with String]
+  @js.native
+  sealed trait PT_BR_BROADBANDMODEL
+    extends StObject
+       with Model
+  /* "pt-BR_BroadbandModel" */ val PT_BR_BROADBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.PT_BR_BROADBANDMODEL & String = js.native
   
-  /* "zh-CN_BroadbandModel" */ @js.native
-  object ZH_CN_BROADBANDMODEL extends TopLevel[ZH_CN_BROADBANDMODEL with String]
+  @js.native
+  sealed trait PT_BR_NARROWBANDMODEL
+    extends StObject
+       with Model
+  /* "pt-BR_NarrowbandModel" */ val PT_BR_NARROWBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.PT_BR_NARROWBANDMODEL & String = js.native
   
-  /* "zh-CN_NarrowbandModel" */ @js.native
-  object ZH_CN_NARROWBANDMODEL extends TopLevel[ZH_CN_NARROWBANDMODEL with String]
+  @js.native
+  sealed trait ZH_CN_BROADBANDMODEL
+    extends StObject
+       with Model
+  /* "zh-CN_BroadbandModel" */ val ZH_CN_BROADBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.ZH_CN_BROADBANDMODEL & String = js.native
   
+  @js.native
+  sealed trait ZH_CN_NARROWBANDMODEL
+    extends StObject
+       with Model
+  /* "zh-CN_NarrowbandModel" */ val ZH_CN_NARROWBANDMODEL: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model.ZH_CN_NARROWBANDMODEL & String = js.native
 }
-

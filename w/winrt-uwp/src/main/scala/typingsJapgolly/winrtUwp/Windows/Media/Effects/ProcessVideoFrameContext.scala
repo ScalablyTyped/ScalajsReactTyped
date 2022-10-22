@@ -1,17 +1,30 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Effects
 
 import typingsJapgolly.winrtUwp.Windows.Media.VideoFrame
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides context for performing a custom video effect operation within the ProcessFrame method. */
-@JSGlobal("Windows.Media.Effects.ProcessVideoFrameContext")
-@js.native
-abstract class ProcessVideoFrameContext () extends js.Object {
+trait ProcessVideoFrameContext extends StObject {
+  
   /** Gets the input frame for a video effect operation. */
-  var inputFrame: VideoFrame = js.native
+  var inputFrame: VideoFrame
+  
   /** Gets the output frame for a video effect operation. */
-  var outputFrame: VideoFrame = js.native
+  var outputFrame: VideoFrame
 }
-
+object ProcessVideoFrameContext {
+  
+  inline def apply(inputFrame: VideoFrame, outputFrame: VideoFrame): ProcessVideoFrameContext = {
+    val __obj = js.Dynamic.literal(inputFrame = inputFrame.asInstanceOf[js.Any], outputFrame = outputFrame.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProcessVideoFrameContext]
+  }
+  
+  extension [Self <: ProcessVideoFrameContext](x: Self) {
+    
+    inline def setInputFrame(value: VideoFrame): Self = StObject.set(x, "inputFrame", value.asInstanceOf[js.Any])
+    
+    inline def setOutputFrame(value: VideoFrame): Self = StObject.set(x, "outputFrame", value.asInstanceOf[js.Any])
+  }
+}

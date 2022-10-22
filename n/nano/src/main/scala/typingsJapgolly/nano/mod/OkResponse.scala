@@ -1,22 +1,26 @@
 package typingsJapgolly.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/database/common.html#delete--db
-// http://docs.couchdb.org/en/latest/api/database/compact.html#post--db-_compact
-trait OkResponse extends js.Object {
-  // Operation status
+/** OK response
+  * @see Delete docs: {@link http://docs.couchdb.org/en/latest/api/database/common.html#delete--db}
+  * @see Compaction docs: {@link http://docs.couchdb.org/en/latest/api/database/compact.html#post--db-_compact} */
+trait OkResponse extends StObject {
+  
+  /** Operation status */
   var ok: Boolean
 }
-
 object OkResponse {
-  @scala.inline
-  def apply(ok: Boolean): OkResponse = {
-    val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
   
+  inline def apply(ok: Boolean): OkResponse = {
+    val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
     __obj.asInstanceOf[OkResponse]
   }
+  
+  extension [Self <: OkResponse](x: Self) {
+    
+    inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+  }
 }
-

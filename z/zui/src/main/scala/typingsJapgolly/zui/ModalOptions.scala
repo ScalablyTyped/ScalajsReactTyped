@@ -1,33 +1,45 @@
 package typingsJapgolly.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * bootstrap
   */
-trait ModalOptions extends js.Object {
+trait ModalOptions extends StObject {
+  
   var backdrop: js.UndefOr[Boolean | String] = js.undefined
+  
   var keyboard: js.UndefOr[Boolean] = js.undefined
+  
   var remote: js.UndefOr[String] = js.undefined
+  
   var show: js.UndefOr[Boolean] = js.undefined
 }
-
 object ModalOptions {
-  @scala.inline
-  def apply(
-    backdrop: Boolean | String = null,
-    keyboard: js.UndefOr[Boolean] = js.undefined,
-    remote: String = null,
-    show: js.UndefOr[Boolean] = js.undefined
-  ): ModalOptions = {
+  
+  inline def apply(): ModalOptions = {
     val __obj = js.Dynamic.literal()
-    if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalOptions]
   }
+  
+  extension [Self <: ModalOptions](x: Self) {
+    
+    inline def setBackdrop(value: Boolean | String): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+    
+    inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
+    
+    inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    
+    inline def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+    
+    inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+    
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+  }
 }
-

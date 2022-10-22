@@ -1,18 +1,19 @@
 package typingsJapgolly.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MatterJS.GridFactory")
 @js.native
-class GridFactory () extends js.Object {
+trait GridFactory extends StObject {
+  
   /**
     * Clears the grid.
     * @method clear
     * @param {grid} grid
     */
   def clear(grid: Grid): Unit = js.native
+  
   /**
     * Creates a new grid.
     * @method create
@@ -21,6 +22,7 @@ class GridFactory () extends js.Object {
     */
   def create(): Grid = js.native
   def create(options: IGridDefinition): Grid = js.native
+  
   /**
     * Updates the grid.
     * @method update
@@ -31,4 +33,3 @@ class GridFactory () extends js.Object {
     */
   def update(grid: Grid, bodies: js.Array[BodyType], engine: Engine, forceUpdate: Boolean): Unit = js.native
 }
-

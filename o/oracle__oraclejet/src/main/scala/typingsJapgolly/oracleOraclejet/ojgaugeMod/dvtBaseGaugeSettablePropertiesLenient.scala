@@ -1,32 +1,37 @@
 package typingsJapgolly.oracleOraclejet.ojgaugeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.oracleOraclejet.AnonLabelAndValue
+import typingsJapgolly.oracleOraclejet.anon.LabelAndValue
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.off
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.on
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojgauge.dvtBaseGaugeSettableProperties> */
 trait dvtBaseGaugeSettablePropertiesLenient
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[AnonLabelAndValue] = js.undefined
+  
+  var translations: js.UndefOr[LabelAndValue] = js.undefined
 }
-
 object dvtBaseGaugeSettablePropertiesLenient {
-  @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    trackResize: on | off = null,
-    translations: AnonLabelAndValue = null
-  ): dvtBaseGaugeSettablePropertiesLenient = {
+  
+  inline def apply(): dvtBaseGaugeSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (trackResize != null) __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[dvtBaseGaugeSettablePropertiesLenient]
   }
+  
+  extension [Self <: dvtBaseGaugeSettablePropertiesLenient](x: Self) {
+    
+    inline def setTrackResize(value: on | off): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
+    
+    inline def setTrackResizeUndefined: Self = StObject.set(x, "trackResize", js.undefined)
+    
+    inline def setTranslations(value: LabelAndValue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+  }
 }
-

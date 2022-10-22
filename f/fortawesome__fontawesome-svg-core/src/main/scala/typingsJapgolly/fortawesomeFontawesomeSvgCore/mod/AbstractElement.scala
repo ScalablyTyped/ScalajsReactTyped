@@ -1,21 +1,34 @@
 package typingsJapgolly.fortawesomeFontawesomeSvgCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AbstractElement extends js.Object {
-  var attributes: js.Any
+trait AbstractElement extends StObject {
+  
+  var attributes: Any
+  
   var children: js.UndefOr[js.Array[AbstractElement]] = js.undefined
+  
   var tag: String
 }
-
 object AbstractElement {
-  @scala.inline
-  def apply(attributes: js.Any, tag: String, children: js.Array[AbstractElement] = null): AbstractElement = {
+  
+  inline def apply(attributes: Any, tag: String): AbstractElement = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractElement]
   }
+  
+  extension [Self <: AbstractElement](x: Self) {
+    
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setChildren(value: js.Array[AbstractElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: AbstractElement*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+  }
 }
-

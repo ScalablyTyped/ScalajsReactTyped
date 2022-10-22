@@ -1,24 +1,27 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InitialViewPropertiesProperties extends js.Object {
+trait InitialViewPropertiesProperties extends StObject {
+  
   /**
     * The background color of the [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#background)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#background)
     */
   var background: js.UndefOr[ColorBackgroundProperties] = js.undefined
+  
   /**
-    * The spatial reference of the [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html). This indicates the [Projected Coordinate System](https://developers.arcgis.com/rest/services-reference/projected-coordinate-systems.htm) or the [Geographic Coordinate System](https://developers.arcgis.com/rest/services-reference/geographic-coordinate-systems.htm) used to locate geographic features in the map.
+    * The spatial reference of the [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#spatialReference)
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  
   /**
     * The initial viewpoint of the [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).
     *
@@ -26,19 +29,25 @@ trait InitialViewPropertiesProperties extends js.Object {
     */
   var viewpoint: js.UndefOr[ViewpointProperties] = js.undefined
 }
-
 object InitialViewPropertiesProperties {
-  @scala.inline
-  def apply(
-    background: ColorBackgroundProperties = null,
-    spatialReference: SpatialReferenceProperties = null,
-    viewpoint: ViewpointProperties = null
-  ): InitialViewPropertiesProperties = {
+  
+  inline def apply(): InitialViewPropertiesProperties = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
-    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitialViewPropertiesProperties]
   }
+  
+  extension [Self <: InitialViewPropertiesProperties](x: Self) {
+    
+    inline def setBackground(value: ColorBackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    
+    inline def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
+    
+    inline def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
+  }
 }
-

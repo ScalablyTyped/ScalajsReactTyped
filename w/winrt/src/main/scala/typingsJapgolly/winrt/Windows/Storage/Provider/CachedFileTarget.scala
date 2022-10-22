@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.Storage.Provider
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CachedFileTarget extends js.Object
-
+sealed trait CachedFileTarget extends StObject
 @JSGlobal("Windows.Storage.Provider.CachedFileTarget")
 @js.native
-object CachedFileTarget extends js.Object {
-  @js.native
-  sealed trait local extends CachedFileTarget
+object CachedFileTarget extends StObject {
   
   @js.native
-  sealed trait remote extends CachedFileTarget
+  sealed trait local
+    extends StObject
+       with CachedFileTarget
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CachedFileTarget with Double] = js.native
-  /* 0 */ @js.native
-  object local extends TopLevel[local with Double]
-  
-  /* 1 */ @js.native
-  object remote extends TopLevel[remote with Double]
-  
+  @js.native
+  sealed trait remote
+    extends StObject
+       with CachedFileTarget
 }
-

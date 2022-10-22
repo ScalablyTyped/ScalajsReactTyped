@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Store
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ProductType extends js.Object
-
+sealed trait ProductType extends StObject
 /** Specifies the product type for an in-app product. */
 @JSGlobal("Windows.ApplicationModel.Store.ProductType")
 @js.native
-object ProductType extends js.Object {
+object ProductType extends StObject {
+  
   /** A consumable product. */
   @js.native
-  sealed trait consumable extends ProductType
+  sealed trait consumable
+    extends StObject
+       with ProductType
   
   /** A durable product. */
   @js.native
-  sealed trait durable extends ProductType
+  sealed trait durable
+    extends StObject
+       with ProductType
   
   /** The product type is unknown. */
   @js.native
-  sealed trait unknown extends ProductType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ProductType with Double] = js.native
-  /* 2 */ @js.native
-  object consumable extends TopLevel[consumable with Double]
-  
-  /* 1 */ @js.native
-  object durable extends TopLevel[durable with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  sealed trait unknown
+    extends StObject
+       with ProductType
 }
-

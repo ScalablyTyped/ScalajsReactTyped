@@ -10,15 +10,12 @@ Sane aims to be fast, small, and reliable file system watcher.
 | ------------------ | :-------------: |
 | Full name          | sane |
 | Keywords           | watch, file, fswatcher, watchfile, fs, watching |
-| # releases         | 14 |
-| # dependents       | 140 |
-| # downloads        | 246844707 |
-| # stars            | 13 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4.0791151E7 |
+| # stars            | 378.0 |
 
 ## Links
-- [Homepage](https://github.com/amasad/sane)
-- [Bugs](https://github.com/amasad/sane/issues)
-- [Repository](https://github.com/amasad/sane)
 - [Npm](https://www.npmjs.com/package/sane)
     
 

@@ -1,20 +1,20 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/isAfter", JSImport.Namespace)
-@js.native
-object esmIsAfterMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(date: Double, dateToCompare: Double): Boolean = js.native
-    def apply(date: Double, dateToCompare: Date): Boolean = js.native
-    def apply(date: Date, dateToCompare: Double): Boolean = js.native
-    def apply(date: Date, dateToCompare: Date): Boolean = js.native
-  }
+object esmIsAfterMod {
   
+  object default {
+    
+    inline def apply(date: js.Date, dateToCompare: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], dateToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(date: js.Date, dateToCompare: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], dateToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(date: Double, dateToCompare: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], dateToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(date: Double, dateToCompare: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], dateToCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @JSImport("date-fns/esm/isAfter", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

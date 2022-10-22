@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fluentui/dom-utilities" : "2.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fluentui/dom-utilities" : "2.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,21 +1,30 @@
 package typingsJapgolly.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NoiseReductionParams extends js.Object {
+trait NoiseReductionParams extends StObject {
+  
   var nr: js.UndefOr[ImgixParamType] = js.undefined
+  
   var nrs: js.UndefOr[ImgixParamType] = js.undefined
 }
-
 object NoiseReductionParams {
-  @scala.inline
-  def apply(nr: ImgixParamType = null, nrs: ImgixParamType = null): NoiseReductionParams = {
+  
+  inline def apply(): NoiseReductionParams = {
     val __obj = js.Dynamic.literal()
-    if (nr != null) __obj.updateDynamic("nr")(nr.asInstanceOf[js.Any])
-    if (nrs != null) __obj.updateDynamic("nrs")(nrs.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoiseReductionParams]
   }
+  
+  extension [Self <: NoiseReductionParams](x: Self) {
+    
+    inline def setNr(value: ImgixParamType): Self = StObject.set(x, "nr", value.asInstanceOf[js.Any])
+    
+    inline def setNrUndefined: Self = StObject.set(x, "nr", js.undefined)
+    
+    inline def setNrs(value: ImgixParamType): Self = StObject.set(x, "nrs", value.asInstanceOf[js.Any])
+    
+    inline def setNrsUndefined: Self = StObject.set(x, "nrs", js.undefined)
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for exit
 
-Typings are for version 0.1.2
+Typings are for version 0.1
 
 ## Library description:
 A replacement for process.exit that ensures stdio are fully drained before exiting.
@@ -10,10 +10,10 @@ A replacement for process.exit that ensures stdio are fully drained before exiti
 | ------------------ | :-------------: |
 | Full name          | exit |
 | Keywords           | exit, process, stdio, stdout, stderr, drain, flush, 3584 |
-| # releases         | 0 |
-| # dependents       | 224 |
-| # downloads        | 238784683 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.828484233333333E7 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/cowboy/node-exit)

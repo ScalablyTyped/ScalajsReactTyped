@@ -1,42 +1,66 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.diagram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LayoutOptions extends js.Object {
+trait LayoutOptions extends StObject {
+  
   var alignContent: js.UndefOr[String] = js.undefined
+  
   var alignItems: js.UndefOr[String] = js.undefined
+  
   var justifyContent: js.UndefOr[String] = js.undefined
+  
   var lineSpacing: js.UndefOr[Double] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var orientation: js.UndefOr[String] = js.undefined
+  
   var spacing: js.UndefOr[Double] = js.undefined
+  
   var wrap: js.UndefOr[Boolean] = js.undefined
 }
-
 object LayoutOptions {
-  @scala.inline
-  def apply(
-    alignContent: String = null,
-    alignItems: String = null,
-    justifyContent: String = null,
-    lineSpacing: Int | Double = null,
-    name: String = null,
-    orientation: String = null,
-    spacing: Int | Double = null,
-    wrap: js.UndefOr[Boolean] = js.undefined
-  ): LayoutOptions = {
+  
+  inline def apply(): LayoutOptions = {
     val __obj = js.Dynamic.literal()
-    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
-    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
-    if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutOptions]
   }
+  
+  extension [Self <: LayoutOptions](x: Self) {
+    
+    inline def setAlignContent(value: String): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
+    
+    inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
+    
+    inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    
+    inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
+    
+    inline def setJustifyContent(value: String): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+    
+    inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
+    
+    inline def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    
+    inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+    
+    inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+  }
 }
-

@@ -1,14 +1,20 @@
 package typingsJapgolly.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/util", JSImport.Namespace)
-@js.native
-object utilMod extends js.Object {
+object utilMod {
+  
+  @JSImport("ol/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("ol/util", "VERSION")
+  @js.native
   val VERSION: String = js.native
-  def `abstract`(): js.Any = js.native
-  def getUid(obj: js.Any): String = js.native
+  
+  inline def `abstract`(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("abstract")().asInstanceOf[Any]
+  
+  inline def getUid(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUid")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

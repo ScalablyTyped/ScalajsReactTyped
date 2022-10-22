@@ -1,15 +1,13 @@
 package typingsJapgolly.blueprintjsTable.mod
 
-import typingsJapgolly.blueprintjsTable.editableNameMod.IEditableNameProps
+import typingsJapgolly.blueprintjsTable.libEsmHeadersEditableNameMod.IEditableNameProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/table", "EditableName")
 @js.native
-class EditableName protected ()
-  extends typingsJapgolly.blueprintjsTable.editableNameMod.EditableName {
+open class EditableName protected ()
+  extends typingsJapgolly.blueprintjsTable.libEsmHeadersEditableNameMod.EditableName {
   def this(props: IEditableNameProps) = this()
-  def this(props: IEditableNameProps, context: js.Any) = this()
 }
-

@@ -1,23 +1,45 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SiteCollection extends js.Object {
+trait SiteCollection extends StObject {
+  
+  // The geographic region code for where this site collection resides. Read-only.
+  var dataLocationCode: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The hostname for the site collection. Read-only.
-  var hostname: js.UndefOr[String] = js.undefined
+  var hostname: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // If present, indicates that this is a root site collection in SharePoint. Read-only.
-  var root: js.UndefOr[Root] = js.undefined
+  var root: js.UndefOr[NullableOption[Root]] = js.undefined
 }
-
 object SiteCollection {
-  @scala.inline
-  def apply(hostname: String = null, root: Root = null): SiteCollection = {
+  
+  inline def apply(): SiteCollection = {
     val __obj = js.Dynamic.literal()
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiteCollection]
   }
+  
+  extension [Self <: SiteCollection](x: Self) {
+    
+    inline def setDataLocationCode(value: NullableOption[String]): Self = StObject.set(x, "dataLocationCode", value.asInstanceOf[js.Any])
+    
+    inline def setDataLocationCodeNull: Self = StObject.set(x, "dataLocationCode", null)
+    
+    inline def setDataLocationCodeUndefined: Self = StObject.set(x, "dataLocationCode", js.undefined)
+    
+    inline def setHostname(value: NullableOption[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    
+    inline def setHostnameNull: Self = StObject.set(x, "hostname", null)
+    
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    
+    inline def setRoot(value: NullableOption[Root]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootNull: Self = StObject.set(x, "root", null)
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+  }
 }
-

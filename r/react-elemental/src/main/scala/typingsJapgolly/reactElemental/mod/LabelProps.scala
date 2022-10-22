@@ -1,21 +1,30 @@
 package typingsJapgolly.reactElemental.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LabelProps extends js.Object {
+trait LabelProps extends StObject {
+  
   val label: js.UndefOr[String] = js.undefined
+  
   val sublabel: js.UndefOr[String] = js.undefined
 }
-
 object LabelProps {
-  @scala.inline
-  def apply(label: String = null, sublabel: String = null): LabelProps = {
+  
+  inline def apply(): LabelProps = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (sublabel != null) __obj.updateDynamic("sublabel")(sublabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelProps]
   }
+  
+  extension [Self <: LabelProps](x: Self) {
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setSublabel(value: String): Self = StObject.set(x, "sublabel", value.asInstanceOf[js.Any])
+    
+    inline def setSublabelUndefined: Self = StObject.set(x, "sublabel", js.undefined)
+  }
 }
-

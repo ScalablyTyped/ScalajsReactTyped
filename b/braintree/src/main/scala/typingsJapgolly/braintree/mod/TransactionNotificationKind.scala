@@ -1,24 +1,22 @@
 package typingsJapgolly.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.braintree.braintreeStrings.transaction_disbursed
   - typingsJapgolly.braintree.braintreeStrings.transaction_settled
   - typingsJapgolly.braintree.braintreeStrings.transaction_settlement_declined
 */
-trait TransactionNotificationKind extends _WebhookNotificationKind
-
+trait TransactionNotificationKind
+  extends StObject
+     with _WebhookNotificationKind
 object TransactionNotificationKind {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def transaction_disbursed: typingsJapgolly.braintree.braintreeStrings.transaction_disbursed = this.cast("transaction_disbursed")
-  @scala.inline
-  def transaction_settled: typingsJapgolly.braintree.braintreeStrings.transaction_settled = this.cast("transaction_settled")
-  @scala.inline
-  def transaction_settlement_declined: typingsJapgolly.braintree.braintreeStrings.transaction_settlement_declined = this.cast("transaction_settlement_declined")
+  
+  inline def transaction_disbursed: typingsJapgolly.braintree.braintreeStrings.transaction_disbursed = "transaction_disbursed".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.transaction_disbursed]
+  
+  inline def transaction_settled: typingsJapgolly.braintree.braintreeStrings.transaction_settled = "transaction_settled".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.transaction_settled]
+  
+  inline def transaction_settlement_declined: typingsJapgolly.braintree.braintreeStrings.transaction_settlement_declined = "transaction_settlement_declined".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.transaction_settlement_declined]
 }
-

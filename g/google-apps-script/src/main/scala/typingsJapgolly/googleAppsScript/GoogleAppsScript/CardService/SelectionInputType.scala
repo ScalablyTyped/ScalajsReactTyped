@@ -1,38 +1,30 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SelectionInputType extends js.Object
-
+sealed trait SelectionInputType extends StObject
 /**
   * Type of selection input.
   */
 @JSGlobal("GoogleAppsScript.Card_Service.SelectionInputType")
 @js.native
-object SelectionInputType extends js.Object {
-  @js.native
-  sealed trait CHECK_BOX extends SelectionInputType
+object SelectionInputType extends StObject {
   
   @js.native
-  sealed trait DROPDOWN extends SelectionInputType
+  sealed trait CHECK_BOX
+    extends StObject
+       with SelectionInputType
   
   @js.native
-  sealed trait RADIO_BUTTON extends SelectionInputType
+  sealed trait DROPDOWN
+    extends StObject
+       with SelectionInputType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SelectionInputType with Double] = js.native
-  /* 0 */ @js.native
-  object CHECK_BOX extends TopLevel[CHECK_BOX with Double]
-  
-  /* 2 */ @js.native
-  object DROPDOWN extends TopLevel[DROPDOWN with Double]
-  
-  /* 1 */ @js.native
-  object RADIO_BUTTON extends TopLevel[RADIO_BUTTON with Double]
-  
+  @js.native
+  sealed trait RADIO_BUTTON
+    extends StObject
+       with SelectionInputType
 }
-

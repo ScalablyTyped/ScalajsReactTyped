@@ -1,8 +1,8 @@
 package typingsJapgolly.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gm.gmStrings.Point
@@ -21,40 +21,36 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gm.gmStrings.Bessel
   - typingsJapgolly.gm.gmStrings.Sinc
 */
-trait FilterType extends js.Object
-
+trait FilterType extends StObject
 object FilterType {
-  @scala.inline
-  def Bessel: typingsJapgolly.gm.gmStrings.Bessel = this.cast("Bessel")
-  @scala.inline
-  def Blackman: typingsJapgolly.gm.gmStrings.Blackman = this.cast("Blackman")
-  @scala.inline
-  def Box: typingsJapgolly.gm.gmStrings.Box = this.cast("Box")
-  @scala.inline
-  def Catrom: typingsJapgolly.gm.gmStrings.Catrom = this.cast("Catrom")
-  @scala.inline
-  def Cubic: typingsJapgolly.gm.gmStrings.Cubic = this.cast("Cubic")
-  @scala.inline
-  def Gaussian: typingsJapgolly.gm.gmStrings.Gaussian = this.cast("Gaussian")
-  @scala.inline
-  def Hamming: typingsJapgolly.gm.gmStrings.Hamming = this.cast("Hamming")
-  @scala.inline
-  def Hanning: typingsJapgolly.gm.gmStrings.Hanning = this.cast("Hanning")
-  @scala.inline
-  def Hermite: typingsJapgolly.gm.gmStrings.Hermite = this.cast("Hermite")
-  @scala.inline
-  def Lanczos: typingsJapgolly.gm.gmStrings.Lanczos = this.cast("Lanczos")
-  @scala.inline
-  def Mitchell: typingsJapgolly.gm.gmStrings.Mitchell = this.cast("Mitchell")
-  @scala.inline
-  def Point: typingsJapgolly.gm.gmStrings.Point = this.cast("Point")
-  @scala.inline
-  def Quadratic: typingsJapgolly.gm.gmStrings.Quadratic = this.cast("Quadratic")
-  @scala.inline
-  def Sinc: typingsJapgolly.gm.gmStrings.Sinc = this.cast("Sinc")
-  @scala.inline
-  def Triangle: typingsJapgolly.gm.gmStrings.Triangle = this.cast("Triangle")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Bessel: typingsJapgolly.gm.gmStrings.Bessel = "Bessel".asInstanceOf[typingsJapgolly.gm.gmStrings.Bessel]
+  
+  inline def Blackman: typingsJapgolly.gm.gmStrings.Blackman = "Blackman".asInstanceOf[typingsJapgolly.gm.gmStrings.Blackman]
+  
+  inline def Box: typingsJapgolly.gm.gmStrings.Box = "Box".asInstanceOf[typingsJapgolly.gm.gmStrings.Box]
+  
+  inline def Catrom: typingsJapgolly.gm.gmStrings.Catrom = "Catrom".asInstanceOf[typingsJapgolly.gm.gmStrings.Catrom]
+  
+  inline def Cubic: typingsJapgolly.gm.gmStrings.Cubic = "Cubic".asInstanceOf[typingsJapgolly.gm.gmStrings.Cubic]
+  
+  inline def Gaussian: typingsJapgolly.gm.gmStrings.Gaussian = "Gaussian".asInstanceOf[typingsJapgolly.gm.gmStrings.Gaussian]
+  
+  inline def Hamming: typingsJapgolly.gm.gmStrings.Hamming = "Hamming".asInstanceOf[typingsJapgolly.gm.gmStrings.Hamming]
+  
+  inline def Hanning: typingsJapgolly.gm.gmStrings.Hanning = "Hanning".asInstanceOf[typingsJapgolly.gm.gmStrings.Hanning]
+  
+  inline def Hermite: typingsJapgolly.gm.gmStrings.Hermite = "Hermite".asInstanceOf[typingsJapgolly.gm.gmStrings.Hermite]
+  
+  inline def Lanczos: typingsJapgolly.gm.gmStrings.Lanczos = "Lanczos".asInstanceOf[typingsJapgolly.gm.gmStrings.Lanczos]
+  
+  inline def Mitchell: typingsJapgolly.gm.gmStrings.Mitchell = "Mitchell".asInstanceOf[typingsJapgolly.gm.gmStrings.Mitchell]
+  
+  inline def Point: typingsJapgolly.gm.gmStrings.Point = "Point".asInstanceOf[typingsJapgolly.gm.gmStrings.Point]
+  
+  inline def Quadratic: typingsJapgolly.gm.gmStrings.Quadratic = "Quadratic".asInstanceOf[typingsJapgolly.gm.gmStrings.Quadratic]
+  
+  inline def Sinc: typingsJapgolly.gm.gmStrings.Sinc = "Sinc".asInstanceOf[typingsJapgolly.gm.gmStrings.Sinc]
+  
+  inline def Triangle: typingsJapgolly.gm.gmStrings.Triangle = "Triangle".asInstanceOf[typingsJapgolly.gm.gmStrings.Triangle]
 }
-

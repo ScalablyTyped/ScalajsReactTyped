@@ -10,10 +10,10 @@ Fixes stack traces for files with source maps
 | ------------------ | :-------------: |
 | Full name          | source-map-support |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 2488 |
-| # downloads        | 694074099 |
-| # stars            | 30 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.56325871E8 |
+| # stars            | 2026.0 |
 
 ## Links
 - [Homepage](https://github.com/evanw/node-source-map-support#readme)

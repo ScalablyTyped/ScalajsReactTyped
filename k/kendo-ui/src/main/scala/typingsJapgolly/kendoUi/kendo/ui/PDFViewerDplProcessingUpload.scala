@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PDFViewerDplProcessingUpload extends js.Object {
+trait PDFViewerDplProcessingUpload extends StObject {
+  
   var saveField: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object PDFViewerDplProcessingUpload {
-  @scala.inline
-  def apply(saveField: String = null, url: String = null): PDFViewerDplProcessingUpload = {
+  
+  inline def apply(): PDFViewerDplProcessingUpload = {
     val __obj = js.Dynamic.literal()
-    if (saveField != null) __obj.updateDynamic("saveField")(saveField.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerDplProcessingUpload]
   }
+  
+  extension [Self <: PDFViewerDplProcessingUpload](x: Self) {
+    
+    inline def setSaveField(value: String): Self = StObject.set(x, "saveField", value.asInstanceOf[js.Any])
+    
+    inline def setSaveFieldUndefined: Self = StObject.set(x, "saveField", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

@@ -1,22 +1,26 @@
 package typingsJapgolly.convertLayout
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait layout extends js.Object {
+trait layout extends StObject {
+  
   def fromEn(s: String): String
+  
   def toEn(s: String): String
 }
-
 object layout {
-  @scala.inline
-  def apply(fromEn: String => CallbackTo[String], toEn: String => CallbackTo[String]): layout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromEn")(js.Any.fromFunction1((t0: java.lang.String) => fromEn(t0).runNow()))
-    __obj.updateDynamic("toEn")(js.Any.fromFunction1((t0: java.lang.String) => toEn(t0).runNow()))
+  
+  inline def apply(fromEn: String => String, toEn: String => String): layout = {
+    val __obj = js.Dynamic.literal(fromEn = js.Any.fromFunction1(fromEn), toEn = js.Any.fromFunction1(toEn))
     __obj.asInstanceOf[layout]
   }
+  
+  extension [Self <: layout](x: Self) {
+    
+    inline def setFromEn(value: String => String): Self = StObject.set(x, "fromEn", js.Any.fromFunction1(value))
+    
+    inline def setToEn(value: String => String): Self = StObject.set(x, "toEn", js.Any.fromFunction1(value))
+  }
 }
-

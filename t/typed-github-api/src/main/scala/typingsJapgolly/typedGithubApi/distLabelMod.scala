@@ -1,29 +1,31 @@
 package typingsJapgolly.typedGithubApi
 
-import typingsJapgolly.typedGithubApi.githubRefMod.GitHubRef
-import typingsJapgolly.typedGithubApi.githubRefMod.OptionsOrRef
-import typingsJapgolly.typedGithubApi.interfacesLabelMod.Label
+import typingsJapgolly.typedGithubApi.distGithubRefMod.GitHubRef
+import typingsJapgolly.typedGithubApi.distGithubRefMod.OptionsOrRef
+import typingsJapgolly.typedGithubApi.distInterfacesLabelMod.Label
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typed-github-api/dist/label", JSImport.Namespace)
-@js.native
-object distLabelMod extends js.Object {
+object distLabelMod {
+  
+  @JSImport("typed-github-api/dist/label", "LabelClass")
   @js.native
-  class LabelClass protected ()
+  open class LabelClass protected ()
     extends GitHubRef
        with Label {
-    def this(data: typingsJapgolly.typedGithubApi.labelMod.Label, options: OptionsOrRef) = this()
+    def this(data: typingsJapgolly.typedGithubApi.distApiInterfacesLabelMod.Label, options: OptionsOrRef) = this()
+    
     /* CompleteClass */
-    override var color: String = js.native
+    var default: Boolean = js.native
+    
     /* CompleteClass */
-    override var default: Boolean = js.native
+    var color: String = js.native
+    
     /* CompleteClass */
-    override var id: Double = js.native
+    var id: Double = js.native
+    
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
   }
-  
 }
-

@@ -1,30 +1,30 @@
 package typingsJapgolly.jqueryElang
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.jquery.JQuery_
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.jquery.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IFnJQuery extends js.Object {
+trait IFnJQuery extends StObject {
+  
   def fnPlugin(
-    context: JQuery_[HTMLElement],
-    options: js.Any,
+    context: JQuery[HTMLElement],
+    options: Any,
     command: String,
     pluginName: String,
     pluginDataAttribute: String
-  ): JQuery_[HTMLElement]
+  ): JQuery[HTMLElement]
 }
-
 object IFnJQuery {
-  @scala.inline
-  def apply(
-    fnPlugin: (JQuery_[HTMLElement], js.Any, String, String, String) => CallbackTo[JQuery_[HTMLElement]]
-  ): IFnJQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fnPlugin")(js.Any.fromFunction5((t0: typingsJapgolly.jquery.JQuery_[org.scalajs.dom.raw.HTMLElement], t1: js.Any, t2: java.lang.String, t3: java.lang.String, t4: java.lang.String) => fnPlugin(t0, t1, t2, t3, t4).runNow()))
+  
+  inline def apply(fnPlugin: (JQuery[HTMLElement], Any, String, String, String) => JQuery[HTMLElement]): IFnJQuery = {
+    val __obj = js.Dynamic.literal(fnPlugin = js.Any.fromFunction5(fnPlugin))
     __obj.asInstanceOf[IFnJQuery]
   }
+  
+  extension [Self <: IFnJQuery](x: Self) {
+    
+    inline def setFnPlugin(value: (JQuery[HTMLElement], Any, String, String, String) => JQuery[HTMLElement]): Self = StObject.set(x, "fnPlugin", js.Any.fromFunction5(value))
+  }
 }
-

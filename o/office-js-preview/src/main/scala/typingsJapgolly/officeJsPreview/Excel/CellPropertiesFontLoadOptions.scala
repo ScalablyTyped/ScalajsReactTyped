@@ -1,114 +1,144 @@
 package typingsJapgolly.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Specifies which properties to load on the `format.font` object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
-trait CellPropertiesFontLoadOptions extends js.Object {
+trait CellPropertiesFontLoadOptions extends StObject {
+  
   /**
+    * Specifies whether to load the `bold` property.
     *
-    * Specifies whether to load on the `bold` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `color` property.
     *
-    * Specifies whether to load on the `color` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `italic` property.
     *
-    * Specifies whether to load on the `italic` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `name` property.
     *
-    * Specifies whether to load on the `name` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var name: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `size` property.
     *
-    * Specifies whether to load on the `size` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var size: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `strikethrough` property.
     *
-    * Specifies whether to load on the `strikethrough` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var strikethrough: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `subscript` property.
     *
-    * Specifies whether to load on the `subscript` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var subscript: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `superscript` property.
     *
-    * Specifies whether to load on the `superscript` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var superscript: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `tintAndShade` property.
     *
-    * Specifies whether to load on the `tintAndShade` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `underline` property.
     *
-    * Specifies whether to load on the `underline` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var underline: js.UndefOr[Boolean] = js.undefined
 }
-
 object CellPropertiesFontLoadOptions {
-  @scala.inline
-  def apply(
-    bold: js.UndefOr[Boolean] = js.undefined,
-    color: js.UndefOr[Boolean] = js.undefined,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    name: js.UndefOr[Boolean] = js.undefined,
-    size: js.UndefOr[Boolean] = js.undefined,
-    strikethrough: js.UndefOr[Boolean] = js.undefined,
-    subscript: js.UndefOr[Boolean] = js.undefined,
-    superscript: js.UndefOr[Boolean] = js.undefined,
-    tintAndShade: js.UndefOr[Boolean] = js.undefined,
-    underline: js.UndefOr[Boolean] = js.undefined
-  ): CellPropertiesFontLoadOptions = {
+  
+  inline def apply(): CellPropertiesFontLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.asInstanceOf[js.Any])
-    if (!js.isUndefined(subscript)) __obj.updateDynamic("subscript")(subscript.asInstanceOf[js.Any])
-    if (!js.isUndefined(superscript)) __obj.updateDynamic("superscript")(superscript.asInstanceOf[js.Any])
-    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellPropertiesFontLoadOptions]
   }
+  
+  extension [Self <: CellPropertiesFontLoadOptions](x: Self) {
+    
+    inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    
+    inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+    
+    inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    
+    inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+    
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+    
+    inline def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
+    
+    inline def setSubscript(value: Boolean): Self = StObject.set(x, "subscript", value.asInstanceOf[js.Any])
+    
+    inline def setSubscriptUndefined: Self = StObject.set(x, "subscript", js.undefined)
+    
+    inline def setSuperscript(value: Boolean): Self = StObject.set(x, "superscript", value.asInstanceOf[js.Any])
+    
+    inline def setSuperscriptUndefined: Self = StObject.set(x, "superscript", js.undefined)
+    
+    inline def setTintAndShade(value: Boolean): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
+    
+    inline def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
+    
+    inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+  }
 }
-

@@ -1,26 +1,45 @@
 package typingsJapgolly.baseui
 
-import typingsJapgolly.baseui.tableMod.SortableHeadCellProps
-import typingsJapgolly.react.mod.FC
-import typingsJapgolly.styletronReact.mod.StyletronComponent
+import typingsJapgolly.baseui.anon.Cursor
+import typingsJapgolly.baseui.anon.GridColumn
+import typingsJapgolly.baseui.anon.GridTemplateColumns
+import typingsJapgolly.baseui.baseuiStrings.div
+import typingsJapgolly.baseui.tableTypesMod.HeadCellProps
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.styletronReact.libTypesMod.StyletronComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("baseui/table-grid", JSImport.Namespace)
-@js.native
-object tableGridMod extends js.Object {
-  val SortableHeadCell: FC[SortableHeadCellProps] = js.native
-  val StyledBodyCell: StyletronComponent[js.Any] = js.native
-  val StyledHeadCell: StyletronComponent[js.Any] = js.native
-  val StyledTable: StyletronComponent[js.Any] = js.native
+object tableGridMod {
+  
+  @JSImport("baseui/table-grid", JSImport.Namespace)
   @js.native
-  object SORT_DIRECTION extends js.Object {
-    /* "ASC" */ val ASC: typingsJapgolly.baseui.tableMod.SORT_DIRECTION.ASC with String = js.native
-    /* "DESC" */ val DESC: typingsJapgolly.baseui.tableMod.SORT_DIRECTION.DESC with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typingsJapgolly.baseui.tableMod.SORT_DIRECTION with String] = js.native
+  val ^ : js.Any = js.native
+  
+  /* Inlined std.Readonly<{ readonly ASC :'ASC',  readonly DESC :'DESC'}> */
+  object SORT_DIRECTION {
+    
+    @JSImport("baseui/table-grid", "SORT_DIRECTION.ASC")
+    @js.native
+    val ASC: typingsJapgolly.baseui.baseuiStrings.ASC = js.native
+    
+    @JSImport("baseui/table-grid", "SORT_DIRECTION.DESC")
+    @js.native
+    val DESC: typingsJapgolly.baseui.baseuiStrings.DESC = js.native
   }
   
+  inline def SortableHeadCell(props: HeadCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SortableHeadCell")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @JSImport("baseui/table-grid", "StyledBodyCell")
+  @js.native
+  val StyledBodyCell: StyletronComponent[div, GridColumn] = js.native
+  
+  @JSImport("baseui/table-grid", "StyledHeadCell")
+  @js.native
+  val StyledHeadCell: StyletronComponent[div, Cursor] = js.native
+  
+  @JSImport("baseui/table-grid", "StyledTable")
+  @js.native
+  val StyledTable: StyletronComponent[div, GridTemplateColumns] = js.native
 }
-

@@ -1,23 +1,15 @@
 package typingsJapgolly.vexflow.Vex.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Vex.Flow.Clef")
 @js.native
-class Clef protected () extends StaveModifier {
-  def this(clef: String) = this()
-  def this(clef: String, size: String) = this()
-  def this(clef: String, size: String, annotation: String) = this()
+trait Clef
+  extends StObject
+     with StaveModifier {
+  
   def addEndModifier(stave: Stave): Unit = js.native
+  
   def addModifier(stave: Stave): Unit = js.native
 }
-
-/* static members */
-@JSGlobal("Vex.Flow.Clef")
-@js.native
-object Clef extends js.Object {
-  var DEBUG: Boolean = js.native
-}
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChatRenderAttachmentsOptionsAttachments extends js.Object {
-  var content: js.UndefOr[js.Any] = js.undefined
+trait ChatRenderAttachmentsOptionsAttachments extends StObject {
+  
+  var content: js.UndefOr[Any] = js.undefined
+  
   var contentType: js.UndefOr[String] = js.undefined
 }
-
 object ChatRenderAttachmentsOptionsAttachments {
-  @scala.inline
-  def apply(content: js.Any = null, contentType: String = null): ChatRenderAttachmentsOptionsAttachments = {
+  
+  inline def apply(): ChatRenderAttachmentsOptionsAttachments = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRenderAttachmentsOptionsAttachments]
   }
+  
+  extension [Self <: ChatRenderAttachmentsOptionsAttachments](x: Self) {
+    
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+  }
 }
-

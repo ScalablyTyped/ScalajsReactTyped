@@ -1,17 +1,21 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JsxText
-  extends LiteralLikeNode
-     with JsxChild {
-  var containsOnlyTriviaWhiteSpaces: Boolean = js.native
+  extends StObject
+     with LiteralLikeNode
+     with JsxChild
+     with LiteralToken {
+  
+  val containsOnlyTriviaWhiteSpaces: Boolean = js.native
+  
   @JSName("kind")
-  var kind_JsxText: typingsJapgolly.typescript.mod.SyntaxKind.JsxText = js.native
+  val kind_JsxText: typingsJapgolly.typescript.mod.SyntaxKind.JsxText = js.native
+  
   @JSName("parent")
-  var parent_JsxText: JsxElement = js.native
+  val parent_JsxText: JsxElement | JsxFragment = js.native
 }
-

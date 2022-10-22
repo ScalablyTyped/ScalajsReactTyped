@@ -1,15 +1,16 @@
 package typingsJapgolly.minappEnv.wx
 
-import typingsJapgolly.minappEnv.minappEnvNumbers.`-1`
-import typingsJapgolly.minappEnv.minappEnvNumbers.`10001`
-import typingsJapgolly.minappEnv.minappEnvNumbers.`10002`
-import typingsJapgolly.minappEnv.minappEnvNumbers.`10003`
-import typingsJapgolly.minappEnv.minappEnvNumbers.`10004`
+import typingsJapgolly.minappEnv.minappEnvInts.`-1`
+import typingsJapgolly.minappEnv.minappEnvInts.`10001`
+import typingsJapgolly.minappEnv.minappEnvInts.`10002`
+import typingsJapgolly.minappEnv.minappEnvInts.`10003`
+import typingsJapgolly.minappEnv.minappEnvInts.`10004`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InnerAudioContextOnErrorCallbackResult extends js.Object {
+trait InnerAudioContextOnErrorCallbackResult extends StObject {
+  
   /**
     *
     * 可选值：
@@ -20,13 +21,15 @@ trait InnerAudioContextOnErrorCallbackResult extends js.Object {
     * - -1: 未知错误; */
   var errCode: `10001` | `10002` | `10003` | `10004` | `-1`
 }
-
 object InnerAudioContextOnErrorCallbackResult {
-  @scala.inline
-  def apply(errCode: `10001` | `10002` | `10003` | `10004` | `-1`): InnerAudioContextOnErrorCallbackResult = {
-    val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any])
   
+  inline def apply(errCode: `10001` | `10002` | `10003` | `10004` | `-1`): InnerAudioContextOnErrorCallbackResult = {
+    val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[InnerAudioContextOnErrorCallbackResult]
   }
+  
+  extension [Self <: InnerAudioContextOnErrorCallbackResult](x: Self) {
+    
+    inline def setErrCode(value: `10001` | `10002` | `10003` | `10004` | `-1`): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+  }
 }
-

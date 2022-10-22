@@ -1,36 +1,26 @@
 package typingsJapgolly.asn1js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UTCTimeParams extends LocalHexBlockParams {
-  var value: js.UndefOr[String] = js.undefined
+trait UTCTimeParams
+  extends StObject
+     with LocalSimpleStringBlockParams {
+  
   var valueDate: js.UndefOr[js.Date] = js.undefined
 }
-
 object UTCTimeParams {
-  @scala.inline
-  def apply(
-    blockLength: Int | Double = null,
-    error: String = null,
-    isHexOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    value: String = null,
-    valueBeforeDecode: scala.scalajs.js.typedarray.ArrayBuffer = null,
-    valueDate: js.Date = null,
-    valueHex: scala.scalajs.js.typedarray.ArrayBuffer = null,
-    warnings: js.Array[String] = null
-  ): UTCTimeParams = {
+  
+  inline def apply(): UTCTimeParams = {
     val __obj = js.Dynamic.literal()
-    if (blockLength != null) __obj.updateDynamic("blockLength")(blockLength.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHexOnly)) __obj.updateDynamic("isHexOnly")(isHexOnly.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueBeforeDecode != null) __obj.updateDynamic("valueBeforeDecode")(valueBeforeDecode.asInstanceOf[js.Any])
-    if (valueDate != null) __obj.updateDynamic("valueDate")(valueDate.asInstanceOf[js.Any])
-    if (valueHex != null) __obj.updateDynamic("valueHex")(valueHex.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[UTCTimeParams]
   }
+  
+  extension [Self <: UTCTimeParams](x: Self) {
+    
+    inline def setValueDate(value: js.Date): Self = StObject.set(x, "valueDate", value.asInstanceOf[js.Any])
+    
+    inline def setValueDateUndefined: Self = StObject.set(x, "valueDate", js.undefined)
+  }
 }
-

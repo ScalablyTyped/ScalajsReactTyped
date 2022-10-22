@@ -1,20 +1,22 @@
 package typingsJapgolly.ionic.definitionsMod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITelemetry extends js.Object {
+trait ITelemetry extends StObject {
+  
   def sendCommand(command: String, args: js.Array[String]): js.Promise[Unit]
 }
-
 object ITelemetry {
-  @scala.inline
-  def apply(sendCommand: (String, js.Array[String]) => CallbackTo[js.Promise[Unit]]): ITelemetry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sendCommand")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Array[java.lang.String]) => sendCommand(t0, t1).runNow()))
+  
+  inline def apply(sendCommand: (String, js.Array[String]) => js.Promise[Unit]): ITelemetry = {
+    val __obj = js.Dynamic.literal(sendCommand = js.Any.fromFunction2(sendCommand))
     __obj.asInstanceOf[ITelemetry]
   }
+  
+  extension [Self <: ITelemetry](x: Self) {
+    
+    inline def setSendCommand(value: (String, js.Array[String]) => js.Promise[Unit]): Self = StObject.set(x, "sendCommand", js.Any.fromFunction2(value))
+  }
 }
-

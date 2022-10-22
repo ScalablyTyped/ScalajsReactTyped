@@ -1,28 +1,23 @@
 package typingsJapgolly.inboxsdk.mod.Lists
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.inboxsdk.mod.Lists.ThreadRowAttachmentIconUrlDescriptor
   - typingsJapgolly.inboxsdk.mod.Lists.ThreadRowAttachmentIconHtmlDescriptor
 */
-trait ThreadRowAttachmentIconDescriptor extends js.Object
-
+trait ThreadRowAttachmentIconDescriptor extends StObject
 object ThreadRowAttachmentIconDescriptor {
-  @scala.inline
-  def ThreadRowAttachmentIconUrlDescriptor(iconUrl: String, iconClass: String = null, tooltip: String = null): ThreadRowAttachmentIconDescriptor = {
-    val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ThreadRowAttachmentIconDescriptor]
-  }
-  @scala.inline
-  def ThreadRowAttachmentIconHtmlDescriptor(iconHtml: String, tooltip: String = null): ThreadRowAttachmentIconDescriptor = {
+  
+  inline def ThreadRowAttachmentIconHtmlDescriptor(iconHtml: String): typingsJapgolly.inboxsdk.mod.Lists.ThreadRowAttachmentIconHtmlDescriptor = {
     val __obj = js.Dynamic.literal(iconHtml = iconHtml.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ThreadRowAttachmentIconDescriptor]
+    __obj.asInstanceOf[typingsJapgolly.inboxsdk.mod.Lists.ThreadRowAttachmentIconHtmlDescriptor]
+  }
+  
+  inline def ThreadRowAttachmentIconUrlDescriptor(iconUrl: String): typingsJapgolly.inboxsdk.mod.Lists.ThreadRowAttachmentIconUrlDescriptor = {
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.inboxsdk.mod.Lists.ThreadRowAttachmentIconUrlDescriptor]
   }
 }
-

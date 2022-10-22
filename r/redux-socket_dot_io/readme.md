@@ -10,10 +10,10 @@ An opinionated connector between socket.io and redux
 | ------------------ | :-------------: |
 | Full name          | redux-socket.io |
 | Keywords           | redux, middleware, socket.io, action |
-| # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 50742 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 12839.666666666666 |
+| # stars            | 405.0 |
 
 ## Links
 - [Homepage](https://github.com/itaylor/redux-socket.io#readme)

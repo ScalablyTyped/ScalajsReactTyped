@@ -1,18 +1,35 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.mod.LoDashImplicitWrapper
+import typingsJapgolly.lodash.mod.Collection
+import typingsJapgolly.lodash.mod.Function
+import typingsJapgolly.lodash.mod.Object
+import typingsJapgolly.lodash.mod.Primitive
 import typingsJapgolly.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashBindKey extends js.Object {
+trait LodashBindKey extends StObject {
+  
+  def apply(`object`: js.Object): LodashBindKey1x1 = js.native
+  def apply(`object`: js.Object, key: String): js.Function1[/* repeated */ Any, Any] = js.native
+  def apply(`object`: __, key: String): LodashBindKey1x2 = js.native
+  
+  def placeholder(): typingsJapgolly.lodash.mod.String = js.native
+  def placeholder(value: String): typingsJapgolly.lodash.mod.String = js.native
+  def placeholder[T /* <: js.UndefOr[Null] */](value: T): Primitive[T] = js.native
+  def placeholder[T](value: typingsJapgolly.lodash.mod.List[T]): Collection[T] = js.native
   @JSName("placeholder")
   var placeholder_Original: __ = js.native
-  def apply(`object`: js.Object): LodashBindKey1x1 = js.native
-  def apply(`object`: js.Object, key: String): js.Function1[/* repeated */ js.Any, _] = js.native
-  def apply(`object`: __, key: String): LodashBindKey1x2 = js.native
+  @JSName("placeholder")
+  def placeholder_T_Collection[T](): Collection[T] = js.native
+  @JSName("placeholder")
+  def placeholder_T_Function[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T] = js.native
+  @JSName("placeholder")
+  def placeholder_T_Object[T /* <: js.Object */](): Object[T] = js.native
+  @JSName("placeholder")
+  def placeholder_T_Object[T /* <: js.Object */](value: T): Object[T] = js.native
   /**
     * Creates a lodash object which wraps value to enable implicit method chain sequences.
     * Methods that operate on and return arrays, collections, and functions can be chained together.
@@ -81,6 +98,6 @@ trait LodashBindKey extends js.Object {
     * toString, toUpper, trim, trimEnd, trimStart, truncate, unescape, uniqueId, upperCase,
     * upperFirst, value, and words.
     **/
-  def placeholder[T](value: T): LoDashImplicitWrapper[T] = js.native
+  @JSName("placeholder")
+  def placeholder_TrapAny_Intersection[TrapAny /* <: typingsJapgolly.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & typingsJapgolly.lodash.mod.String = js.native
 }
-

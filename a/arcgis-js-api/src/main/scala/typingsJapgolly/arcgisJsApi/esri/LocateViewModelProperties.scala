@@ -1,32 +1,34 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LocateViewModelProperties
-  extends GeolocationPositioningProperties
-     with GoToProperties
-
+  extends StObject
+     with GeolocationPositioningProperties
+     with GoToProperties {
+  
+  /**
+    * Indicates whether to display the [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) of the result graphic from the [locate()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate-LocateViewModel.html#locate) method.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate-LocateViewModel.html#popupEnabled)
+    */
+  var popupEnabled: js.UndefOr[Boolean] = js.undefined
+}
 object LocateViewModelProperties {
-  @scala.inline
-  def apply(
-    geolocationOptions: js.Any = null,
-    goToLocationEnabled: js.UndefOr[Boolean] = js.undefined,
-    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Callback = null,
-    graphic: GraphicProperties = null,
-    scale: Int | Double = null,
-    view: MapViewProperties | SceneViewProperties = null
-  ): LocateViewModelProperties = {
+  
+  inline def apply(): LocateViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (geolocationOptions != null) __obj.updateDynamic("geolocationOptions")(geolocationOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(goToLocationEnabled)) __obj.updateDynamic("goToLocationEnabled")(goToLocationEnabled.asInstanceOf[js.Any])
-    if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2((t0: /* view */ typingsJapgolly.arcgisJsApi.esri.MapView | typingsJapgolly.arcgisJsApi.esri.SceneView, t1: /* goToParameters */ js.Any) => goToOverride(t0, t1).runNow()))
-    if (graphic != null) __obj.updateDynamic("graphic")(graphic.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocateViewModelProperties]
   }
+  
+  extension [Self <: LocateViewModelProperties](x: Self) {
+    
+    inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
+  }
 }
-

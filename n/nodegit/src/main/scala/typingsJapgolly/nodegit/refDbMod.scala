@@ -1,24 +1,27 @@
 package typingsJapgolly.nodegit
 
 import typingsJapgolly.nodegit.repositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/ref-db", JSImport.Namespace)
-@js.native
-object refDbMod extends js.Object {
+object refDbMod {
+  
+  @JSImport("nodegit/ref-db", "Refdb")
   @js.native
-  class Refdb () extends js.Object {
+  open class Refdb () extends StObject {
+    
     def compress(): Double = js.native
+    
     def free(): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object Refdb extends js.Object {
-    def open(repo: Repository): js.Promise[Refdb] = js.native
+  object Refdb {
+    
+    @JSImport("nodegit/ref-db", "Refdb")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def open(repo: Repository): js.Promise[Refdb] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Refdb]]
   }
-  
 }
-

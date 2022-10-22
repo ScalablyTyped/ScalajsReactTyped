@@ -1,38 +1,31 @@
 package typingsJapgolly.winjs.WinJS.UI
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GroupHeaderTapBehavior extends js.Object
-
+sealed trait GroupHeaderTapBehavior extends StObject
 /**
   * Specifies how group headers in a ListView respond to the tap interaction.
   **/
 @JSGlobal("WinJS.UI.GroupHeaderTapBehavior")
 @js.native
-object GroupHeaderTapBehavior extends js.Object {
+object GroupHeaderTapBehavior extends StObject {
+  
   /**
     * The group is invoked.
     **/
   @js.native
-  sealed trait invoke extends GroupHeaderTapBehavior
+  sealed trait invoke
+    extends StObject
+       with GroupHeaderTapBehavior
   
   /**
     * Nothing happens.
     **/
   @js.native
-  sealed trait none extends GroupHeaderTapBehavior
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GroupHeaderTapBehavior with Double] = js.native
-  /* 0 */ @js.native
-  object invoke extends TopLevel[invoke with Double]
-  
-  /* 1 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  sealed trait none
+    extends StObject
+       with GroupHeaderTapBehavior
 }
-

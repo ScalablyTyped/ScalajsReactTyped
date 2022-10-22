@@ -3,24 +3,6 @@
 
 Typings are for version 0.21
 
-## Library description:
-React Components that Implement Google's Material Design.
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | material-ui |
-| Keywords           | react, react-component, material design, material-ui |
-| # releases         | 26 |
-| # dependents       | 951 |
-| # downloads        | 7782191 |
-| # stars            | 154 |
-
-## Links
-- [Homepage](http://material-ui.com/)
-- [Bugs](https://github.com/callemall/material-ui/issues)
-- [Repository](https://github.com/callemall/material-ui)
-- [Npm](https://www.npmjs.com/package/material-ui)
-    
 
 
 ## Note

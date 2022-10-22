@@ -1,21 +1,15 @@
 package typingsJapgolly.mailcheck
 
-import japgolly.scalajs.react.Callback
-import typingsJapgolly.mailcheck.MailcheckModule.IOptions
+import typingsJapgolly.mailcheck.MailcheckModule.IAsynchronousOptions
+import typingsJapgolly.mailcheck.MailcheckModule.ISuggestion
+import typingsJapgolly.mailcheck.MailcheckModule.ISynchronousOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQuery extends js.Object {
-  def mailcheck(opts: IOptions): Unit
+@js.native
+trait JQuery extends StObject {
+  
+  def mailcheck(opts: IAsynchronousOptions): Unit = js.native
+  def mailcheck(opts: ISynchronousOptions): ISuggestion | Unit = js.native
 }
-
-object JQuery {
-  @scala.inline
-  def apply(mailcheck: IOptions => Callback): JQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mailcheck")(js.Any.fromFunction1((t0: typingsJapgolly.mailcheck.MailcheckModule.IOptions) => mailcheck(t0).runNow()))
-    __obj.asInstanceOf[JQuery]
-  }
-}
-

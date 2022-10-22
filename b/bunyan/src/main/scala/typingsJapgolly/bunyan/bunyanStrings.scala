@@ -1,40 +1,45 @@
 package typingsJapgolly.bunyan
 
 import typingsJapgolly.bunyan.mod.LogLevelString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bunyanStrings {
-  @js.native
-  sealed trait debug extends LogLevelString
   
   @js.native
-  sealed trait error extends LogLevelString
+  sealed trait debug
+    extends StObject
+       with LogLevelString
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait fatal extends LogLevelString
+  sealed trait error
+    extends StObject
+       with LogLevelString
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait info extends LogLevelString
+  sealed trait fatal
+    extends StObject
+       with LogLevelString
+  inline def fatal: fatal = "fatal".asInstanceOf[fatal]
   
   @js.native
-  sealed trait trace extends LogLevelString
+  sealed trait info
+    extends StObject
+       with LogLevelString
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait warn extends LogLevelString
+  sealed trait trace
+    extends StObject
+       with LogLevelString
+  inline def trace: trace = "trace".asInstanceOf[trace]
   
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fatal: fatal = "fatal".asInstanceOf[fatal]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def trace: trace = "trace".asInstanceOf[trace]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  @js.native
+  sealed trait warn
+    extends StObject
+       with LogLevelString
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }
-

@@ -1,28 +1,32 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObservableObjectSetEvent extends ObservableObjectEvent {
+trait ObservableObjectSetEvent
+  extends StObject
+     with ObservableObjectEvent {
+  
   var preventDefault: js.UndefOr[js.Function] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object ObservableObjectSetEvent {
-  @scala.inline
-  def apply(
-    field: String = null,
-    preventDefault: js.Function = null,
-    sender: ObservableObject = null,
-    value: js.Any = null
-  ): ObservableObjectSetEvent = {
+  
+  inline def apply(): ObservableObjectSetEvent = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (preventDefault != null) __obj.updateDynamic("preventDefault")(preventDefault.asInstanceOf[js.Any])
-    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObservableObjectSetEvent]
   }
+  
+  extension [Self <: ObservableObjectSetEvent](x: Self) {
+    
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    
+    inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

@@ -1,39 +1,32 @@
 package typingsJapgolly.jsonPatch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonPatchStrings {
-  @js.native
-  sealed trait add extends js.Object
   
   @js.native
-  sealed trait copy extends js.Object
+  sealed trait add extends StObject
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
-  sealed trait move extends js.Object
+  sealed trait copy extends StObject
+  inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait remove extends js.Object
+  sealed trait move extends StObject
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait replace extends js.Object
+  sealed trait remove extends StObject
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
-  sealed trait test extends js.Object
+  sealed trait replace extends StObject
+  inline def replace: replace = "replace".asInstanceOf[replace]
   
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
-  @scala.inline
-  def test: test = "test".asInstanceOf[test]
+  @js.native
+  sealed trait test extends StObject
+  inline def test: test = "test".asInstanceOf[test]
 }
-

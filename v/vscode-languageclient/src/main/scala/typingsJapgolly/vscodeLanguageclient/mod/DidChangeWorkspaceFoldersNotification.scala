@@ -1,13 +1,22 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolWorkspaceFoldersMod.DidChangeWorkspaceFoldersParams
+import typingsJapgolly.vscodeLanguageclient.vscodeLanguageclientStrings.workspaceSlashdidChangeWorkspaceFolders
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolDotworkspaceFolderMod.DidChangeWorkspaceFoldersParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "DidChangeWorkspaceFoldersNotification")
-@js.native
-object DidChangeWorkspaceFoldersNotification extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.NotificationType[DidChangeWorkspaceFoldersParams, Unit] = js.native
+object DidChangeWorkspaceFoldersNotification {
+  
+  @JSImport("vscode-languageclient", "DidChangeWorkspaceFoldersNotification.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageclient", "DidChangeWorkspaceFoldersNotification.method")
+  @js.native
+  val method: workspaceSlashdidChangeWorkspaceFolders = js.native
+  
+  @JSImport("vscode-languageclient", "DidChangeWorkspaceFoldersNotification.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[DidChangeWorkspaceFoldersParams, Unit] = js.native
 }
-

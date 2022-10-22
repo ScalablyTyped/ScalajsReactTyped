@@ -1,22 +1,31 @@
 package typingsJapgolly.hlsJs.mod
 
+import typingsJapgolly.hlsJs.anon.Tdecrypt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait fragDecryptedData extends js.Object {
-  var frag: Fragment
-  var id: String
-  var payload: js.Any
-  var stats: Stats
-}
-
-object fragDecryptedData {
-  @scala.inline
-  def apply(frag: Fragment, id: String, payload: js.Any, stats: Stats): fragDecryptedData = {
-    val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
+trait FragDecryptedData extends StObject {
   
-    __obj.asInstanceOf[fragDecryptedData]
+  var frag: Fragment
+  
+  var payload: js.typedarray.ArrayBuffer
+  
+  var stats: Tdecrypt
+}
+object FragDecryptedData {
+  
+  inline def apply(frag: Fragment, payload: js.typedarray.ArrayBuffer, stats: Tdecrypt): FragDecryptedData = {
+    val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FragDecryptedData]
+  }
+  
+  extension [Self <: FragDecryptedData](x: Self) {
+    
+    inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
+    
+    inline def setPayload(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setStats(value: Tdecrypt): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }
-

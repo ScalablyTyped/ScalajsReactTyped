@@ -1,8 +1,8 @@
 package typingsJapgolly.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Client Types for {@link ClientContext.getClient clientContext.getClient()}.
@@ -14,18 +14,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.Mobile
   - typingsJapgolly.xrm.xrmStrings.UnifiedServiceDesk
 */
-trait Client extends js.Object
-
+trait Client extends StObject
 object Client {
-  @scala.inline
-  def Mobile: typingsJapgolly.xrm.xrmStrings.Mobile = this.cast("Mobile")
-  @scala.inline
-  def Outlook: typingsJapgolly.xrm.xrmStrings.Outlook = this.cast("Outlook")
-  @scala.inline
-  def UnifiedServiceDesk: typingsJapgolly.xrm.xrmStrings.UnifiedServiceDesk = this.cast("UnifiedServiceDesk")
-  @scala.inline
-  def Web: typingsJapgolly.xrm.xrmStrings.Web = this.cast("Web")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Mobile: typingsJapgolly.xrm.xrmStrings.Mobile = "Mobile".asInstanceOf[typingsJapgolly.xrm.xrmStrings.Mobile]
+  
+  inline def Outlook: typingsJapgolly.xrm.xrmStrings.Outlook = "Outlook".asInstanceOf[typingsJapgolly.xrm.xrmStrings.Outlook]
+  
+  inline def UnifiedServiceDesk: typingsJapgolly.xrm.xrmStrings.UnifiedServiceDesk = "UnifiedServiceDesk".asInstanceOf[typingsJapgolly.xrm.xrmStrings.UnifiedServiceDesk]
+  
+  inline def Web: typingsJapgolly.xrm.xrmStrings.Web = "Web".asInstanceOf[typingsJapgolly.xrm.xrmStrings.Web]
 }
-

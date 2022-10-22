@@ -1,6 +1,7 @@
 
 # Scala.js typings for gulp-rename
 
+Typings are for version 2.0
 
 ## Library description:
 Rename files
@@ -9,10 +10,10 @@ Rename files
 | ------------------ | :-------------: |
 | Full name          | gulp-rename |
 | Keywords           | gulpplugin |
-| # releases         | 5 |
-| # dependents       | 2587 |
-| # downloads        | 38082275 |
-| # stars            | 323 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2880739.6666666665 |
+| # stars            | 692.0 |
 
 ## Links
 - [Homepage](https://github.com/hparra/gulp-rename)

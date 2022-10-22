@@ -1,35 +1,26 @@
 package typingsJapgolly.pulsarClient.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pulsar-client", "MessageId")
 @js.native
-class MessageId () extends js.Object {
-  /**
-    * Serialize the message id into a Buffer for storing.
-    */
+open class MessageId () extends StObject {
+  
   def serialize(): Buffer = js.native
 }
-
 /* static members */
-@JSImport("pulsar-client", "MessageId")
-@js.native
-object MessageId extends js.Object {
-  /**
-    * Deserialize a message id object from a Buffer.
-    * @param data
-    */
-  def deserialize(data: Buffer): MessageId = js.native
-  /**
-    * MessageId representing the earliest, or oldest available message stored in the topic.
-    */
-  def earliest(): MessageId = js.native
-  /**
-    * MessageId representing the latest, or last published message in the topic.
-    */
-  def latest(): MessageId = js.native
+object MessageId {
+  
+  @JSImport("pulsar-client", "MessageId")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def deserialize(data: Buffer): MessageId = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[MessageId]
+  
+  inline def earliest(): MessageId = ^.asInstanceOf[js.Dynamic].applyDynamic("earliest")().asInstanceOf[MessageId]
+  
+  inline def latest(): MessageId = ^.asInstanceOf[js.Dynamic].applyDynamic("latest")().asInstanceOf[MessageId]
 }
-

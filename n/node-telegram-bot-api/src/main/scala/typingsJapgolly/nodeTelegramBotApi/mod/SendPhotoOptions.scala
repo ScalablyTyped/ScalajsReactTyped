@@ -1,27 +1,32 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SendPhotoOptions extends SendBasicOptions {
+trait SendPhotoOptions
+  extends StObject
+     with SendBasicOptions {
+  
   var caption: js.UndefOr[String] = js.undefined
+  
+  var parse_mode: js.UndefOr[ParseMode] = js.undefined
 }
-
 object SendPhotoOptions {
-  @scala.inline
-  def apply(
-    caption: String = null,
-    disable_notification: js.UndefOr[Boolean] = js.undefined,
-    reply_markup: InlineKeyboardMarkup | ReplyKeyboardMarkup | ReplyKeyboardRemove | ForceReply = null,
-    reply_to_message_id: Int | Double = null
-  ): SendPhotoOptions = {
+  
+  inline def apply(): SendPhotoOptions = {
     val __obj = js.Dynamic.literal()
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_notification)) __obj.updateDynamic("disable_notification")(disable_notification.asInstanceOf[js.Any])
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (reply_to_message_id != null) __obj.updateDynamic("reply_to_message_id")(reply_to_message_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendPhotoOptions]
   }
+  
+  extension [Self <: SendPhotoOptions](x: Self) {
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setParse_mode(value: ParseMode): Self = StObject.set(x, "parse_mode", value.asInstanceOf[js.Any])
+    
+    inline def setParse_modeUndefined: Self = StObject.set(x, "parse_mode", js.undefined)
+  }
 }
-

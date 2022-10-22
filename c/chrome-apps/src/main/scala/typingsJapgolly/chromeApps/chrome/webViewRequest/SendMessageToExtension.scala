@@ -1,17 +1,31 @@
 package typingsJapgolly.chromeApps.chrome.webViewRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Triggers the webviewWebRequest.*OnMessageEvent* event which are used in webviews.
   */
-@JSGlobal("chrome.webViewRequest.SendMessageToExtension")
-@js.native
-class SendMessageToExtension protected () extends OnRequestActions {
-  def this(parameters: SendMessageParams) = this()
-  val instanceType: String = js.native
-  val typeGuard: typingsJapgolly.chromeApps.chromeAppsStrings.SendMessageToExtension = js.native
+trait SendMessageToExtension
+  extends StObject
+     with OnRequestActions {
+  
+  val instanceType: String
+  
+  /* protected */ val typeGuard: typingsJapgolly.chromeApps.chromeAppsStrings.SendMessageToExtension
 }
-
+object SendMessageToExtension {
+  
+  inline def apply(instanceType: String): SendMessageToExtension = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "SendMessageToExtension")
+    __obj.asInstanceOf[SendMessageToExtension]
+  }
+  
+  extension [Self <: SendMessageToExtension](x: Self) {
+    
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    
+    inline def setTypeGuard(value: typingsJapgolly.chromeApps.chromeAppsStrings.SendMessageToExtension): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+  }
+}

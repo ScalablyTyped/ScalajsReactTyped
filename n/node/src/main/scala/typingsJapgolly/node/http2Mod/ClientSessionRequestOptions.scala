@@ -1,33 +1,55 @@
 package typingsJapgolly.node.http2Mod
 
+import typingsJapgolly.node.AbortSignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClientSessionRequestOptions extends js.Object {
+trait ClientSessionRequestOptions extends StObject {
+  
   var endStream: js.UndefOr[Boolean] = js.undefined
+  
   var exclusive: js.UndefOr[Boolean] = js.undefined
+  
   var parent: js.UndefOr[Double] = js.undefined
+  
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  
   var waitForTrailers: js.UndefOr[Boolean] = js.undefined
+  
   var weight: js.UndefOr[Double] = js.undefined
 }
-
 object ClientSessionRequestOptions {
-  @scala.inline
-  def apply(
-    endStream: js.UndefOr[Boolean] = js.undefined,
-    exclusive: js.UndefOr[Boolean] = js.undefined,
-    parent: Int | Double = null,
-    waitForTrailers: js.UndefOr[Boolean] = js.undefined,
-    weight: Int | Double = null
-  ): ClientSessionRequestOptions = {
+  
+  inline def apply(): ClientSessionRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(endStream)) __obj.updateDynamic("endStream")(endStream.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForTrailers)) __obj.updateDynamic("waitForTrailers")(waitForTrailers.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientSessionRequestOptions]
   }
+  
+  extension [Self <: ClientSessionRequestOptions](x: Self) {
+    
+    inline def setEndStream(value: Boolean): Self = StObject.set(x, "endStream", value.asInstanceOf[js.Any])
+    
+    inline def setEndStreamUndefined: Self = StObject.set(x, "endStream", js.undefined)
+    
+    inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    
+    inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+    
+    inline def setParent(value: Double): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    
+    inline def setWaitForTrailers(value: Boolean): Self = StObject.set(x, "waitForTrailers", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForTrailersUndefined: Self = StObject.set(x, "waitForTrailers", js.undefined)
+    
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

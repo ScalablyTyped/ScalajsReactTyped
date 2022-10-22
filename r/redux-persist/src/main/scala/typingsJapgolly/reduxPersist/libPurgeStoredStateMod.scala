@@ -1,13 +1,15 @@
 package typingsJapgolly.reduxPersist
 
-import typingsJapgolly.reduxPersist.typesMod.PersistConfig
+import typingsJapgolly.reduxPersist.esTypesMod.PersistConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-persist/lib/purgeStoredState", JSImport.Namespace)
-@js.native
-object libPurgeStoredStateMod extends js.Object {
-  def default[S](config: PersistConfig[S, _, _, _]): js.Any = js.native
+object libPurgeStoredStateMod {
+  
+  @JSImport("redux-persist/lib/purgeStoredState", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[S](config: PersistConfig[S, Any, Any, Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Any]
 }
-

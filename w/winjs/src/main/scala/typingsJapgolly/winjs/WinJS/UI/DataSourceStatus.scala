@@ -1,47 +1,39 @@
 package typingsJapgolly.winjs.WinJS.UI
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataSourceStatus extends js.Object
-
+sealed trait DataSourceStatus extends StObject
 /**
   * Describes the status of an IListDataSource.
   **/
 @JSGlobal("WinJS.UI.DataSourceStatus")
 @js.native
-object DataSourceStatus extends js.Object {
+object DataSourceStatus extends StObject {
+  
   /**
     * The IListDataSource failed to load.
     **/
   @js.native
-  sealed trait failure extends DataSourceStatus
+  sealed trait failure
+    extends StObject
+       with DataSourceStatus
   
   /**
     * The IListDataSource is ready.
     **/
   @js.native
-  sealed trait ready extends DataSourceStatus
+  sealed trait ready
+    extends StObject
+       with DataSourceStatus
   
   /**
     * The IListDataSource is still loading.
     **/
   @js.native
-  sealed trait waiting extends DataSourceStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DataSourceStatus with Double] = js.native
-  /* 2 */ @js.native
-  object failure extends TopLevel[failure with Double]
-  
-  /* 0 */ @js.native
-  object ready extends TopLevel[ready with Double]
-  
-  /* 1 */ @js.native
-  object waiting extends TopLevel[waiting with Double]
-  
+  sealed trait waiting
+    extends StObject
+       with DataSourceStatus
 }
-

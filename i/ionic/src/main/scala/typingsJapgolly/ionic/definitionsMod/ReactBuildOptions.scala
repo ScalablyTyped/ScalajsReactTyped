@@ -1,42 +1,47 @@
 package typingsJapgolly.ionic.definitionsMod
 
 import typingsJapgolly.ionic.ionicStrings.react
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReactBuildOptions extends BuildOptions[react] {
+trait ReactBuildOptions
+  extends StObject
+     with BuildOptions[react] {
+  
   var ci: js.UndefOr[Boolean] = js.undefined
+  
   var inlineRuntimeChunk: js.UndefOr[Boolean] = js.undefined
+  
   var publicUrl: js.UndefOr[String] = js.undefined
+  
   var sourceMap: js.UndefOr[Boolean] = js.undefined
 }
-
 object ReactBuildOptions {
-  @scala.inline
-  def apply(
-    `--`: js.Array[String],
-    engine: String,
-    `type`: react,
-    ci: js.UndefOr[Boolean] = js.undefined,
-    inlineRuntimeChunk: js.UndefOr[Boolean] = js.undefined,
-    platform: String = null,
-    project: String = null,
-    publicUrl: String = null,
-    sourceMap: js.UndefOr[Boolean] = js.undefined,
-    verbose: js.UndefOr[Boolean] = js.undefined
-  ): ReactBuildOptions = {
+  
+  inline def apply(`--`: js.Array[String], engine: String): ReactBuildOptions = {
     val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
     __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(ci)) __obj.updateDynamic("ci")(ci.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineRuntimeChunk)) __obj.updateDynamic("inlineRuntimeChunk")(inlineRuntimeChunk.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
-    if (publicUrl != null) __obj.updateDynamic("publicUrl")(publicUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("react")
     __obj.asInstanceOf[ReactBuildOptions]
   }
+  
+  extension [Self <: ReactBuildOptions](x: Self) {
+    
+    inline def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
+    
+    inline def setCiUndefined: Self = StObject.set(x, "ci", js.undefined)
+    
+    inline def setInlineRuntimeChunk(value: Boolean): Self = StObject.set(x, "inlineRuntimeChunk", value.asInstanceOf[js.Any])
+    
+    inline def setInlineRuntimeChunkUndefined: Self = StObject.set(x, "inlineRuntimeChunk", js.undefined)
+    
+    inline def setPublicUrl(value: String): Self = StObject.set(x, "publicUrl", value.asInstanceOf[js.Any])
+    
+    inline def setPublicUrlUndefined: Self = StObject.set(x, "publicUrl", js.undefined)
+    
+    inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+    
+    inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+  }
 }
-

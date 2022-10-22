@@ -1,19 +1,19 @@
 
 # Scala.js typings for popmotion
 
-Typings are for version 8.7.1
+Typings are for version 11.0.5
 
 ## Library description:
-A functional, reactive motion library.
+The animator's toolbox
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | popmotion |
 | Keywords           | animation, ux, ui, popmotion, canvas animation, dom animation, dom, pointer tracking, mouse, mouse tracking, touch, touch tracking, physics, interaction, interface, svg |
-| # releases         | 63 |
-| # dependents       | 61 |
-| # downloads        | 4746449 |
-| # stars            | 8 |
+| # releases         | 46 |
+| # dependents       | 0.0 |
+| # downloads        | 5619040.0 |
+| # stars            | 18980.0 |
 
 ## Links
 - [Homepage](https://popmotion.io/)

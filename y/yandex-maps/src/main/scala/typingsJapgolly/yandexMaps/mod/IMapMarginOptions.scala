@@ -1,19 +1,24 @@
 package typingsJapgolly.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IMapMarginOptions extends js.Object {
+trait IMapMarginOptions extends StObject {
+  
   var useMapMargin: js.UndefOr[Boolean] = js.undefined
 }
-
 object IMapMarginOptions {
-  @scala.inline
-  def apply(useMapMargin: js.UndefOr[Boolean] = js.undefined): IMapMarginOptions = {
+  
+  inline def apply(): IMapMarginOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapMarginOptions]
   }
+  
+  extension [Self <: IMapMarginOptions](x: Self) {
+    
+    inline def setUseMapMargin(value: Boolean): Self = StObject.set(x, "useMapMargin", value.asInstanceOf[js.Any])
+    
+    inline def setUseMapMarginUndefined: Self = StObject.set(x, "useMapMargin", js.undefined)
+  }
 }
-

@@ -1,15 +1,14 @@
 organization := "org.scalablytyped.japgolly"
 name := "physijs"
-version := "0.0-unknown-dt-20200225Z-2381ee"
-scalaVersion := "2.13.1"
+version := "1.0.4-bbaa57"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "three" % "0.109.0-aeed2b")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "three" % "0.144-dt-20220902Z-0d26e6",
+  "org.scalablytyped.japgolly" %%% "webxr" % "0.5-dt-20220721Z-685295")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

@@ -1,33 +1,24 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GroupButtonMode extends js.Object
-
+sealed trait GroupButtonMode extends StObject
 @JSGlobal("ej.GroupButtonMode")
 @js.native
-object GroupButtonMode extends js.Object {
+object GroupButtonMode extends StObject {
+  
   //Sets the GroupButton to work as checkbox mode
   @js.native
-  sealed trait CheckBox extends GroupButtonMode
+  sealed trait CheckBox
+    extends StObject
+       with GroupButtonMode
   
   //Sets the RadioButton to work as radio button mode
   @js.native
-  sealed trait RadioButton extends GroupButtonMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GroupButtonMode with Double] = js.native
-  /* 0 */ @js.native
-  object CheckBox
-    extends TopLevel[typingsJapgolly.ejWebAll.ej.GroupButtonMode.CheckBox with Double]
-  
-  /* 1 */ @js.native
-  object RadioButton
-    extends TopLevel[typingsJapgolly.ejWebAll.ej.GroupButtonMode.RadioButton with Double]
-  
+  sealed trait RadioButton
+    extends StObject
+       with GroupButtonMode
 }
-

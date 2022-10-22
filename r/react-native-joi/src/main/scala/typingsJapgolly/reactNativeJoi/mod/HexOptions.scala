@@ -1,23 +1,28 @@
 package typingsJapgolly.reactNativeJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HexOptions extends js.Object {
+trait HexOptions extends StObject {
+  
   /**
     * hex decoded representation must be byte aligned.
     * @default false
     */
   var byteAligned: js.UndefOr[Boolean] = js.undefined
 }
-
 object HexOptions {
-  @scala.inline
-  def apply(byteAligned: js.UndefOr[Boolean] = js.undefined): HexOptions = {
+  
+  inline def apply(): HexOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(byteAligned)) __obj.updateDynamic("byteAligned")(byteAligned.asInstanceOf[js.Any])
     __obj.asInstanceOf[HexOptions]
   }
+  
+  extension [Self <: HexOptions](x: Self) {
+    
+    inline def setByteAligned(value: Boolean): Self = StObject.set(x, "byteAligned", value.asInstanceOf[js.Any])
+    
+    inline def setByteAlignedUndefined: Self = StObject.set(x, "byteAligned", js.undefined)
+  }
 }
-

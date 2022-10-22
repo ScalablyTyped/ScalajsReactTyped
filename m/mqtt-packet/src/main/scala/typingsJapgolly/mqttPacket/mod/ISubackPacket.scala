@@ -1,34 +1,45 @@
 package typingsJapgolly.mqttPacket.mod
 
-import typingsJapgolly.mqttPacket.AnonReasonString
 import typingsJapgolly.mqttPacket.mqttPacketStrings.suback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ISubackPacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
+  
   @JSName("cmd")
   var cmd_ISubackPacket: suback
+  
   var granted: js.Array[Double | js.Object]
-  var properties: js.UndefOr[AnonReasonString] = js.undefined
+  
+  var properties: js.UndefOr[typingsJapgolly.mqttPacket.anon.UserProperties] = js.undefined
+  
+  var reasonCode: js.UndefOr[Double] = js.undefined
 }
-
 object ISubackPacket {
-  @scala.inline
-  def apply(
-    cmd: suback,
-    granted: js.Array[Double | js.Object],
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonReasonString = null
-  ): ISubackPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], granted = granted.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+  
+  inline def apply(granted: js.Array[Double | js.Object]): ISubackPacket = {
+    val __obj = js.Dynamic.literal(cmd = "suback", granted = granted.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubackPacket]
   }
+  
+  extension [Self <: ISubackPacket](x: Self) {
+    
+    inline def setCmd(value: suback): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    
+    inline def setGranted(value: js.Array[Double | js.Object]): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
+    
+    inline def setGrantedVarargs(value: (Double | js.Object)*): Self = StObject.set(x, "granted", js.Array(value*))
+    
+    inline def setProperties(value: typingsJapgolly.mqttPacket.anon.UserProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setReasonCode(value: Double): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
+    
+    inline def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
+  }
 }
-

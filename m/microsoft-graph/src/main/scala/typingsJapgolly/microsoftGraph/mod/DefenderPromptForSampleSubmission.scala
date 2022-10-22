@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.neverSendData
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.sendAllDataWithoutPrompting
 */
-trait DefenderPromptForSampleSubmission extends js.Object
-
+trait DefenderPromptForSampleSubmission extends StObject
 object DefenderPromptForSampleSubmission {
-  @scala.inline
-  def alwaysPrompt: typingsJapgolly.microsoftGraph.microsoftGraphStrings.alwaysPrompt = this.cast("alwaysPrompt")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def neverSendData: typingsJapgolly.microsoftGraph.microsoftGraphStrings.neverSendData = this.cast("neverSendData")
-  @scala.inline
-  def promptBeforeSendingPersonalData: typingsJapgolly.microsoftGraph.microsoftGraphStrings.promptBeforeSendingPersonalData = this.cast("promptBeforeSendingPersonalData")
-  @scala.inline
-  def sendAllDataWithoutPrompting: typingsJapgolly.microsoftGraph.microsoftGraphStrings.sendAllDataWithoutPrompting = this.cast("sendAllDataWithoutPrompting")
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  
+  inline def alwaysPrompt: typingsJapgolly.microsoftGraph.microsoftGraphStrings.alwaysPrompt = "alwaysPrompt".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.alwaysPrompt]
+  
+  inline def neverSendData: typingsJapgolly.microsoftGraph.microsoftGraphStrings.neverSendData = "neverSendData".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.neverSendData]
+  
+  inline def promptBeforeSendingPersonalData: typingsJapgolly.microsoftGraph.microsoftGraphStrings.promptBeforeSendingPersonalData = "promptBeforeSendingPersonalData".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.promptBeforeSendingPersonalData]
+  
+  inline def sendAllDataWithoutPrompting: typingsJapgolly.microsoftGraph.microsoftGraphStrings.sendAllDataWithoutPrompting = "sendAllDataWithoutPrompting".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.sendAllDataWithoutPrompting]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

@@ -1,49 +1,66 @@
 package typingsJapgolly.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Exception extends js.Object {
+trait Exception extends StObject {
+  
   /**
     * An array of exception objects each of which is considered a cause of this exception.
     */
   var innerExceptions: js.UndefOr[js.Array[Exception]] = js.undefined
+  
   /**
     * A string that identifies the kind of exception, for example, the fully qualified type name of an object that was
     * thrown, or the symbolic name of a signal.
     */
   var kind: js.UndefOr[String] = js.undefined
+  
   /**
     * A message that describes the exception.
     */
   var message: js.UndefOr[String] = js.undefined
+  
   /**
     * Key/value pairs that provide additional information about the exception.
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
+  
   /**
     * The sequence of function calls leading to the exception.
     */
   var stack: js.UndefOr[Stack] = js.undefined
 }
-
 object Exception {
-  @scala.inline
-  def apply(
-    innerExceptions: js.Array[Exception] = null,
-    kind: String = null,
-    message: String = null,
-    properties: PropertyBag = null,
-    stack: Stack = null
-  ): Exception = {
+  
+  inline def apply(): Exception = {
     val __obj = js.Dynamic.literal()
-    if (innerExceptions != null) __obj.updateDynamic("innerExceptions")(innerExceptions.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[Exception]
   }
+  
+  extension [Self <: Exception](x: Self) {
+    
+    inline def setInnerExceptions(value: js.Array[Exception]): Self = StObject.set(x, "innerExceptions", value.asInstanceOf[js.Any])
+    
+    inline def setInnerExceptionsUndefined: Self = StObject.set(x, "innerExceptions", js.undefined)
+    
+    inline def setInnerExceptionsVarargs(value: Exception*): Self = StObject.set(x, "innerExceptions", js.Array(value*))
+    
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setStack(value: Stack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+  }
 }
-

@@ -1,19 +1,24 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotSupertrendChangeTrendLineOptions extends js.Object {
+trait PlotSupertrendChangeTrendLineOptions extends StObject {
+  
   var styles: js.UndefOr[PlotSupertrendChangeTrendLineStylesOptions] = js.undefined
 }
-
 object PlotSupertrendChangeTrendLineOptions {
-  @scala.inline
-  def apply(styles: PlotSupertrendChangeTrendLineStylesOptions = null): PlotSupertrendChangeTrendLineOptions = {
+  
+  inline def apply(): PlotSupertrendChangeTrendLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSupertrendChangeTrendLineOptions]
   }
+  
+  extension [Self <: PlotSupertrendChangeTrendLineOptions](x: Self) {
+    
+    inline def setStyles(value: PlotSupertrendChangeTrendLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+  }
 }
-

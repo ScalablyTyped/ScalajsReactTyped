@@ -1,80 +1,122 @@
 package typingsJapgolly.pickadate.Pickadate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // KlassOptions shared between date and time pickers
-trait KlassOptions extends js.Object {
-   // default 'picker__input'
+trait KlassOptions extends StObject {
+  
+  // default 'picker__input'
   var active: js.UndefOr[String] = js.undefined
-   // default 'picker__wrap'
+  
+  // default 'picker__wrap'
   var box: js.UndefOr[String] = js.undefined
-   // default 'picker__day--today' or 'picker__list-item--now'
+  
+  // default 'picker__day--today' or 'picker__list-item--now'
   // Clear button
   var buttonClear: js.UndefOr[String] = js.undefined
-   // default 'picker__box'
+  
+  // default 'picker__box'
   // Day/Time states
   var disabled: js.UndefOr[String] = js.undefined
-   // default 'picker--opened'
+  
+  // default 'picker--opened'
   var focused: js.UndefOr[String] = js.undefined
-   // default 'picker__holder'
+  
+  // default 'picker__holder'
   // The picker frame, wrapper, and box
   var frame: js.UndefOr[String] = js.undefined
+  
   // default 'picker__day--selected' or 'picker__list-item--selected'
   var highlighted: js.UndefOr[String] = js.undefined
-   // default 'picker--focused'
+  
+  // default 'picker--focused'
   // The picker holder
   var holder: js.UndefOr[String] = js.undefined
+  
   // The element states
   var input: js.UndefOr[String] = js.undefined
+  
   // default 'picker__day--highlighted' or 'picker__list-item--highlighted'
   var now: js.UndefOr[String] = js.undefined
-   // default 'picker' or 'picker picker--time'
+  
+  // default 'picker' or 'picker picker--time'
   var opened: js.UndefOr[String] = js.undefined
-   // default 'picker__input--active'
+  
+  // default 'picker__input--active'
   // The root picker and states
   var picker: js.UndefOr[String] = js.undefined
-   // default 'picker__day--disabled' or 'picker__list-item--disabled'
+  
+  // default 'picker__day--disabled' or 'picker__list-item--disabled'
   var selected: js.UndefOr[String] = js.undefined
-   // default 'picker__frame'
+  
+  // default 'picker__frame'
   var wrap: js.UndefOr[String] = js.undefined
 }
-
 object KlassOptions {
-  @scala.inline
-  def apply(
-    active: String = null,
-    box: String = null,
-    buttonClear: String = null,
-    disabled: String = null,
-    focused: String = null,
-    frame: String = null,
-    highlighted: String = null,
-    holder: String = null,
-    input: String = null,
-    now: String = null,
-    opened: String = null,
-    picker: String = null,
-    selected: String = null,
-    wrap: String = null
-  ): KlassOptions = {
+  
+  inline def apply(): KlassOptions = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (box != null) __obj.updateDynamic("box")(box.asInstanceOf[js.Any])
-    if (buttonClear != null) __obj.updateDynamic("buttonClear")(buttonClear.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (highlighted != null) __obj.updateDynamic("highlighted")(highlighted.asInstanceOf[js.Any])
-    if (holder != null) __obj.updateDynamic("holder")(holder.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
-    if (opened != null) __obj.updateDynamic("opened")(opened.asInstanceOf[js.Any])
-    if (picker != null) __obj.updateDynamic("picker")(picker.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[KlassOptions]
   }
+  
+  extension [Self <: KlassOptions](x: Self) {
+    
+    inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    
+    inline def setBox(value: String): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
+    
+    inline def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
+    
+    inline def setButtonClear(value: String): Self = StObject.set(x, "buttonClear", value.asInstanceOf[js.Any])
+    
+    inline def setButtonClearUndefined: Self = StObject.set(x, "buttonClear", js.undefined)
+    
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+    
+    inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
+    
+    inline def setFrame(value: String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    
+    inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+    
+    inline def setHighlighted(value: String): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightedUndefined: Self = StObject.set(x, "highlighted", js.undefined)
+    
+    inline def setHolder(value: String): Self = StObject.set(x, "holder", value.asInstanceOf[js.Any])
+    
+    inline def setHolderUndefined: Self = StObject.set(x, "holder", js.undefined)
+    
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    
+    inline def setNow(value: String): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+    
+    inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+    
+    inline def setOpened(value: String): Self = StObject.set(x, "opened", value.asInstanceOf[js.Any])
+    
+    inline def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
+    
+    inline def setPicker(value: String): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+    
+    inline def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
+    
+    inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setWrap(value: String): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+    
+    inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+  }
 }
-

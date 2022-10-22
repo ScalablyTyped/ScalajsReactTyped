@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_GE_LIMIT
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_GT_LIMIT
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_LT_LIMIT
 */
-trait OtherLimitModeType extends js.Object
-
+trait OtherLimitModeType extends StObject
 object OtherLimitModeType {
-  @scala.inline
-  def OTHER_GE_LIMIT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_GE_LIMIT = this.cast("OTHER_GE_LIMIT")
-  @scala.inline
-  def OTHER_GT_LIMIT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_GT_LIMIT = this.cast("OTHER_GT_LIMIT")
-  @scala.inline
-  def OTHER_LE_LIMIT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_LE_LIMIT = this.cast("OTHER_LE_LIMIT")
-  @scala.inline
-  def OTHER_LT_LIMIT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_LT_LIMIT = this.cast("OTHER_LT_LIMIT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def OTHER_GE_LIMIT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_GE_LIMIT = "OTHER_GE_LIMIT".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_GE_LIMIT]
+  
+  inline def OTHER_GT_LIMIT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_GT_LIMIT = "OTHER_GT_LIMIT".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_GT_LIMIT]
+  
+  inline def OTHER_LE_LIMIT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_LE_LIMIT = "OTHER_LE_LIMIT".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_LE_LIMIT]
+  
+  inline def OTHER_LT_LIMIT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_LT_LIMIT = "OTHER_LT_LIMIT".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER_LT_LIMIT]
 }
-

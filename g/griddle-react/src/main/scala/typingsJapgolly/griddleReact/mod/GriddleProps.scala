@@ -1,67 +1,101 @@
 package typingsJapgolly.griddleReact.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.griddleReact.AnonFilterPlaceholder
-import typingsJapgolly.redux.mod.AnyAction
-import typingsJapgolly.redux.mod.Dispatch
-import typingsJapgolly.redux.mod.Middleware
+import typingsJapgolly.griddleReact.anon.FilterPlaceholder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GriddleProps[T]
-  extends GriddlePlugin
-     with GriddleInitialState {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- scala.Any because Inheritance from two classes. Inlined 
+- scala.AnyRef because Inheritance from two classes. Inlined 
+- scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+- js.Any because Inheritance from two classes. Inlined 
+- scala.AnyRef because Inheritance from two classes. Inlined 
+- js.Object because Inheritance from two classes. Inlined 
+- js.Any because Inheritance from two classes. Inlined 
+- org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+- js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+- org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined 
+- typingsJapgolly.griddleReact.mod.GriddleInitialState because Inheritance from two classes. Inlined enableSettings, pageProperties, sortMethod, sortProperties, textProperties */ trait GriddleProps[T]
+  extends StObject
+     with GriddlePlugin {
+  
   var core: js.UndefOr[GriddlePlugin] = js.undefined
+  
   var data: js.UndefOr[js.Array[T]] = js.undefined
+  
+  var enableSettings: js.UndefOr[Boolean] = js.undefined
+  
+  var pageProperties: js.UndefOr[GriddlePageProperties] = js.undefined
+  
   var plugins: js.UndefOr[js.Array[GriddlePlugin]] = js.undefined
+  
+  var sortMethod: js.UndefOr[
+    js.Function3[
+      /* data */ js.Array[Any], 
+      /* column */ String, 
+      /* sortAscending */ js.UndefOr[Boolean], 
+      Double
+    ]
+  ] = js.undefined
+  
+  var sortProperties: js.UndefOr[js.Array[GriddleSortKey]] = js.undefined
+  
   var storeKey: js.UndefOr[String] = js.undefined
+  
+  var textProperties: js.UndefOr[FilterPlaceholder] = js.undefined
 }
-
 object GriddleProps {
-  @scala.inline
-  def apply[T](
-    components: GriddleComponents = null,
-    core: GriddlePlugin = null,
-    data: js.Array[T] = null,
-    enableSettings: js.UndefOr[Boolean] = js.undefined,
-    events: GriddleEvents = null,
-    initialState: GriddleInitialState = null,
-    listeners: PropertyBag[Listener] = null,
-    pageProperties: GriddlePageProperties = null,
-    plugins: js.Array[GriddlePlugin] = null,
-    reducer: PropertyBag[Reducer] = null,
-    reduxMiddleware: js.Array[Middleware[js.Object, _, Dispatch[AnyAction]]] = null,
-    renderProperties: GriddleRenderProperties = null,
-    selectors: PropertyBag[Selector] = null,
-    settingsComponentObjects: PropertyBag[SettingsComponentObject] = null,
-    sortMethod: (/* data */ js.Array[js.Any], /* column */ String, /* sortAscending */ js.UndefOr[Boolean]) => CallbackTo[Double] = null,
-    sortProperties: js.Array[GriddleSortKey] = null,
-    storeKey: String = null,
-    styleConfig: GriddleStyleConfig = null,
-    textProperties: AnonFilterPlaceholder = null
-  ): GriddleProps[T] = {
+  
+  inline def apply[T](): GriddleProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (core != null) __obj.updateDynamic("core")(core.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSettings)) __obj.updateDynamic("enableSettings")(enableSettings.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (pageProperties != null) __obj.updateDynamic("pageProperties")(pageProperties.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (reducer != null) __obj.updateDynamic("reducer")(reducer.asInstanceOf[js.Any])
-    if (reduxMiddleware != null) __obj.updateDynamic("reduxMiddleware")(reduxMiddleware.asInstanceOf[js.Any])
-    if (renderProperties != null) __obj.updateDynamic("renderProperties")(renderProperties.asInstanceOf[js.Any])
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
-    if (settingsComponentObjects != null) __obj.updateDynamic("settingsComponentObjects")(settingsComponentObjects.asInstanceOf[js.Any])
-    if (sortMethod != null) __obj.updateDynamic("sortMethod")(js.Any.fromFunction3((t0: /* data */ js.Array[js.Any], t1: /* column */ java.lang.String, t2: /* sortAscending */ js.UndefOr[scala.Boolean]) => sortMethod(t0, t1, t2).runNow()))
-    if (sortProperties != null) __obj.updateDynamic("sortProperties")(sortProperties.asInstanceOf[js.Any])
-    if (storeKey != null) __obj.updateDynamic("storeKey")(storeKey.asInstanceOf[js.Any])
-    if (styleConfig != null) __obj.updateDynamic("styleConfig")(styleConfig.asInstanceOf[js.Any])
-    if (textProperties != null) __obj.updateDynamic("textProperties")(textProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[GriddleProps[T]]
   }
+  
+  extension [Self <: GriddleProps[?], T](x: Self & GriddleProps[T]) {
+    
+    inline def setCore(value: GriddlePlugin): Self = StObject.set(x, "core", value.asInstanceOf[js.Any])
+    
+    inline def setCoreUndefined: Self = StObject.set(x, "core", js.undefined)
+    
+    inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setEnableSettings(value: Boolean): Self = StObject.set(x, "enableSettings", value.asInstanceOf[js.Any])
+    
+    inline def setEnableSettingsUndefined: Self = StObject.set(x, "enableSettings", js.undefined)
+    
+    inline def setPageProperties(value: GriddlePageProperties): Self = StObject.set(x, "pageProperties", value.asInstanceOf[js.Any])
+    
+    inline def setPagePropertiesUndefined: Self = StObject.set(x, "pageProperties", js.undefined)
+    
+    inline def setPlugins(value: js.Array[GriddlePlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    
+    inline def setPluginsVarargs(value: GriddlePlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
+    
+    inline def setSortMethod(
+      value: (/* data */ js.Array[Any], /* column */ String, /* sortAscending */ js.UndefOr[Boolean]) => Double
+    ): Self = StObject.set(x, "sortMethod", js.Any.fromFunction3(value))
+    
+    inline def setSortMethodUndefined: Self = StObject.set(x, "sortMethod", js.undefined)
+    
+    inline def setSortProperties(value: js.Array[GriddleSortKey]): Self = StObject.set(x, "sortProperties", value.asInstanceOf[js.Any])
+    
+    inline def setSortPropertiesUndefined: Self = StObject.set(x, "sortProperties", js.undefined)
+    
+    inline def setSortPropertiesVarargs(value: GriddleSortKey*): Self = StObject.set(x, "sortProperties", js.Array(value*))
+    
+    inline def setStoreKey(value: String): Self = StObject.set(x, "storeKey", value.asInstanceOf[js.Any])
+    
+    inline def setStoreKeyUndefined: Self = StObject.set(x, "storeKey", js.undefined)
+    
+    inline def setTextProperties(value: FilterPlaceholder): Self = StObject.set(x, "textProperties", value.asInstanceOf[js.Any])
+    
+    inline def setTextPropertiesUndefined: Self = StObject.set(x, "textProperties", js.undefined)
+  }
 }
-

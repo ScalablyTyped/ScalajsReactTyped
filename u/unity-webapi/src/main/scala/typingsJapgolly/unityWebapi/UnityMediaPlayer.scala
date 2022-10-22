@@ -1,49 +1,69 @@
 package typingsJapgolly.unityWebapi
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UnityMediaPlayer extends js.Object {
-  def getPlaybackstate(response: js.Function): js.Any
-  def onNext(onNextCallback: js.Function): js.Any
-  def onPlayPause(onPlayPauseCallback: js.Function): js.Any
-  def onPrevious(onPreviousCallback: js.Function): js.Any
-  def setCanGoNext(cangonext: Boolean): js.Any
-  def setCanGoPrev(cangoprev: Boolean): js.Any
-  def setCanPause(canpause: Boolean): js.Any
-  def setCanPlay(canplay: Boolean): js.Any
-  def setPlaybackstate(state: UnityPlaybackState): js.Any
-  def setTrack(trackMetadata: UnityTrackMetadata): js.Any
+trait UnityMediaPlayer extends StObject {
+  
+  def getPlaybackstate(response: js.Function): Any
+  
+  def onNext(onNextCallback: js.Function): Any
+  
+  def onPlayPause(onPlayPauseCallback: js.Function): Any
+  
+  def onPrevious(onPreviousCallback: js.Function): Any
+  
+  def setCanGoNext(cangonext: Boolean): Any
+  
+  def setCanGoPrev(cangoprev: Boolean): Any
+  
+  def setCanPause(canpause: Boolean): Any
+  
+  def setCanPlay(canplay: Boolean): Any
+  
+  def setPlaybackstate(state: UnityPlaybackState): Any
+  
+  def setTrack(trackMetadata: UnityTrackMetadata): Any
 }
-
 object UnityMediaPlayer {
-  @scala.inline
-  def apply(
-    getPlaybackstate: js.Function => CallbackTo[js.Any],
-    onNext: js.Function => CallbackTo[js.Any],
-    onPlayPause: js.Function => CallbackTo[js.Any],
-    onPrevious: js.Function => CallbackTo[js.Any],
-    setCanGoNext: Boolean => CallbackTo[js.Any],
-    setCanGoPrev: Boolean => CallbackTo[js.Any],
-    setCanPause: Boolean => CallbackTo[js.Any],
-    setCanPlay: Boolean => CallbackTo[js.Any],
-    setPlaybackstate: UnityPlaybackState => CallbackTo[js.Any],
-    setTrack: UnityTrackMetadata => CallbackTo[js.Any]
+  
+  inline def apply(
+    getPlaybackstate: js.Function => Any,
+    onNext: js.Function => Any,
+    onPlayPause: js.Function => Any,
+    onPrevious: js.Function => Any,
+    setCanGoNext: Boolean => Any,
+    setCanGoPrev: Boolean => Any,
+    setCanPause: Boolean => Any,
+    setCanPlay: Boolean => Any,
+    setPlaybackstate: UnityPlaybackState => Any,
+    setTrack: UnityTrackMetadata => Any
   ): UnityMediaPlayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPlaybackstate")(js.Any.fromFunction1((t0: js.Function) => getPlaybackstate(t0).runNow()))
-    __obj.updateDynamic("onNext")(js.Any.fromFunction1((t0: js.Function) => onNext(t0).runNow()))
-    __obj.updateDynamic("onPlayPause")(js.Any.fromFunction1((t0: js.Function) => onPlayPause(t0).runNow()))
-    __obj.updateDynamic("onPrevious")(js.Any.fromFunction1((t0: js.Function) => onPrevious(t0).runNow()))
-    __obj.updateDynamic("setCanGoNext")(js.Any.fromFunction1((t0: scala.Boolean) => setCanGoNext(t0).runNow()))
-    __obj.updateDynamic("setCanGoPrev")(js.Any.fromFunction1((t0: scala.Boolean) => setCanGoPrev(t0).runNow()))
-    __obj.updateDynamic("setCanPause")(js.Any.fromFunction1((t0: scala.Boolean) => setCanPause(t0).runNow()))
-    __obj.updateDynamic("setCanPlay")(js.Any.fromFunction1((t0: scala.Boolean) => setCanPlay(t0).runNow()))
-    __obj.updateDynamic("setPlaybackstate")(js.Any.fromFunction1((t0: typingsJapgolly.unityWebapi.UnityPlaybackState) => setPlaybackstate(t0).runNow()))
-    __obj.updateDynamic("setTrack")(js.Any.fromFunction1((t0: typingsJapgolly.unityWebapi.UnityTrackMetadata) => setTrack(t0).runNow()))
+    val __obj = js.Dynamic.literal(getPlaybackstate = js.Any.fromFunction1(getPlaybackstate), onNext = js.Any.fromFunction1(onNext), onPlayPause = js.Any.fromFunction1(onPlayPause), onPrevious = js.Any.fromFunction1(onPrevious), setCanGoNext = js.Any.fromFunction1(setCanGoNext), setCanGoPrev = js.Any.fromFunction1(setCanGoPrev), setCanPause = js.Any.fromFunction1(setCanPause), setCanPlay = js.Any.fromFunction1(setCanPlay), setPlaybackstate = js.Any.fromFunction1(setPlaybackstate), setTrack = js.Any.fromFunction1(setTrack))
     __obj.asInstanceOf[UnityMediaPlayer]
   }
+  
+  extension [Self <: UnityMediaPlayer](x: Self) {
+    
+    inline def setGetPlaybackstate(value: js.Function => Any): Self = StObject.set(x, "getPlaybackstate", js.Any.fromFunction1(value))
+    
+    inline def setOnNext(value: js.Function => Any): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
+    
+    inline def setOnPlayPause(value: js.Function => Any): Self = StObject.set(x, "onPlayPause", js.Any.fromFunction1(value))
+    
+    inline def setOnPrevious(value: js.Function => Any): Self = StObject.set(x, "onPrevious", js.Any.fromFunction1(value))
+    
+    inline def setSetCanGoNext(value: Boolean => Any): Self = StObject.set(x, "setCanGoNext", js.Any.fromFunction1(value))
+    
+    inline def setSetCanGoPrev(value: Boolean => Any): Self = StObject.set(x, "setCanGoPrev", js.Any.fromFunction1(value))
+    
+    inline def setSetCanPause(value: Boolean => Any): Self = StObject.set(x, "setCanPause", js.Any.fromFunction1(value))
+    
+    inline def setSetCanPlay(value: Boolean => Any): Self = StObject.set(x, "setCanPlay", js.Any.fromFunction1(value))
+    
+    inline def setSetPlaybackstate(value: UnityPlaybackState => Any): Self = StObject.set(x, "setPlaybackstate", js.Any.fromFunction1(value))
+    
+    inline def setSetTrack(value: UnityTrackMetadata => Any): Self = StObject.set(x, "setTrack", js.Any.fromFunction1(value))
+  }
 }
-

@@ -11,9 +11,9 @@ Polyfill the ECMA-402 Intl API (except collation)
 | Full name          | intl |
 | Keywords           | intl, i18n, internationalization, ecma402, polyfill |
 | # releases         | 1 |
-| # dependents       | 433 |
-| # downloads        | 21651618 |
-| # stars            | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 2874436.3333333335 |
+| # stars            | 1693.0 |
 
 ## Links
 - [Homepage](https://github.com/andyearnshaw/Intl.js#readme)

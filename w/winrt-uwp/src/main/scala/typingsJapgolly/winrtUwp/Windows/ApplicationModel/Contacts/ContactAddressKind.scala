@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactAddressKind extends js.Object
-
+sealed trait ContactAddressKind extends StObject
 /** Specifies the kinds of contact addresses. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactAddressKind")
 @js.native
-object ContactAddressKind extends js.Object {
+object ContactAddressKind extends StObject {
+  
   /** The home address of the contact. */
   @js.native
-  sealed trait home extends ContactAddressKind
+  sealed trait home
+    extends StObject
+       with ContactAddressKind
   
   /** An address of the contact other than home or work. */
   @js.native
-  sealed trait other extends ContactAddressKind
+  sealed trait other
+    extends StObject
+       with ContactAddressKind
   
   /** The work address of the contact. */
   @js.native
-  sealed trait work extends ContactAddressKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactAddressKind with Double] = js.native
-  /* 0 */ @js.native
-  object home extends TopLevel[home with Double]
-  
-  /* 2 */ @js.native
-  object other extends TopLevel[other with Double]
-  
-  /* 1 */ @js.native
-  object work extends TopLevel[work with Double]
-  
+  sealed trait work
+    extends StObject
+       with ContactAddressKind
 }
-

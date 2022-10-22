@@ -1,22 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a system event that triggers a background task to run. */
-@JSGlobal("Windows.ApplicationModel.Background.SystemTrigger")
-@js.native
-class SystemTrigger protected () extends js.Object {
-  /**
-    * Initializes a new instance of a system event trigger.
-    * @param triggerType Specifies the system event type.
-    * @param oneShot True if the system event trigger will be used once; false if it will be used every time the event occurs.
-    */
-  def this(triggerType: SystemTriggerType, oneShot: Boolean) = this()
+trait SystemTrigger extends StObject {
+  
   /** Gets whether a system event trigger will be used only once. */
-  var oneShot: Boolean = js.native
+  var oneShot: Boolean
+  
   /** Gets the system event type of a system event trigger. */
-  var triggerType: SystemTriggerType = js.native
+  var triggerType: SystemTriggerType
 }
-
+object SystemTrigger {
+  
+  inline def apply(oneShot: Boolean, triggerType: SystemTriggerType): SystemTrigger = {
+    val __obj = js.Dynamic.literal(oneShot = oneShot.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SystemTrigger]
+  }
+  
+  extension [Self <: SystemTrigger](x: Self) {
+    
+    inline def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerType(value: SystemTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+  }
+}

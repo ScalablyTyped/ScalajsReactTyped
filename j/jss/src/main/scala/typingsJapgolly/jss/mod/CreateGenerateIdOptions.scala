@@ -1,19 +1,24 @@
 package typingsJapgolly.jss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateGenerateIdOptions extends js.Object {
+trait CreateGenerateIdOptions extends StObject {
+  
   var minify: js.UndefOr[Boolean] = js.undefined
 }
-
 object CreateGenerateIdOptions {
-  @scala.inline
-  def apply(minify: js.UndefOr[Boolean] = js.undefined): CreateGenerateIdOptions = {
+  
+  inline def apply(): CreateGenerateIdOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGenerateIdOptions]
   }
+  
+  extension [Self <: CreateGenerateIdOptions](x: Self) {
+    
+    inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
+    
+    inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
+  }
 }
-

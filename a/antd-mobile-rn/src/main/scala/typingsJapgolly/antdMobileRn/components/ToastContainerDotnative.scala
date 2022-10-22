@@ -1,51 +1,42 @@
 package typingsJapgolly.antdMobileRn.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.toastContainerNativeMod.ToastProps
-import typingsJapgolly.antdMobileRn.toastContainerNativeMod.default
-import typingsJapgolly.antdMobileRn.toastStyleIndexNativeMod.IToastStyle
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.libToastStyleIndexDotnativeMod.IToastStyle
+import typingsJapgolly.antdMobileRn.libToastToastContainerDotnativeMod.ToastProps
+import typingsJapgolly.antdMobileRn.libToastToastContainerDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ToastContainerDotnative {
-  def apply(
-    content: String,
-    duration: Int | Double = null,
-    mask: js.UndefOr[Boolean] = js.undefined,
-    onAnimationEnd: js.UndefOr[Callback] = js.undefined,
-    onClose: js.UndefOr[Callback] = js.undefined,
-    styles: IToastStyle = null,
-    `type`: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ToastProps, default, Unit, ToastProps] = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
   
-      if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    onAnimationEnd.foreach(p => __obj.updateDynamic("onAnimationEnd")(p.toJsFn))
-    onClose.foreach(p => __obj.updateDynamic("onClose")(p.toJsFn))
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.toastContainerNativeMod.ToastProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.toastContainerNativeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.toastContainerNativeMod.ToastProps])(children: _*)
+  inline def apply(content: String): Builder = {
+    val __props = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ToastProps]))
   }
+  
   @JSImport("antd-mobile-rn/lib/toast/ToastContainer.native", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def duration(value: Double): this.type = set("duration", value.asInstanceOf[js.Any])
+    
+    inline def mask(value: Boolean): this.type = set("mask", value.asInstanceOf[js.Any])
+    
+    inline def onAnimationEnd(value: Callback): this.type = set("onAnimationEnd", value.toJsFn)
+    
+    inline def onClose(value: Callback): this.type = set("onClose", value.toJsFn)
+    
+    inline def styles(value: IToastStyle): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: String): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ToastProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

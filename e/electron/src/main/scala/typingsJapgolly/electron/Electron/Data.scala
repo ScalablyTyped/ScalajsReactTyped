@@ -1,36 +1,51 @@
 package typingsJapgolly.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Data extends js.Object {
+trait Data extends StObject {
+  
   /**
-    * The title of the URL at text.
+    * The title of the URL at `text`.
     */
   var bookmark: js.UndefOr[String] = js.undefined
+  
   var html: js.UndefOr[String] = js.undefined
+  
   var image: js.UndefOr[NativeImage_] = js.undefined
+  
   var rtf: js.UndefOr[String] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
 }
-
 object Data {
-  @scala.inline
-  def apply(
-    bookmark: String = null,
-    html: String = null,
-    image: NativeImage_ = null,
-    rtf: String = null,
-    text: String = null
-  ): Data = {
+  
+  inline def apply(): Data = {
     val __obj = js.Dynamic.literal()
-    if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (rtf != null) __obj.updateDynamic("rtf")(rtf.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
+  
+  extension [Self <: Data](x: Self) {
+    
+    inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
+    
+    inline def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
+    
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    
+    inline def setImage(value: NativeImage_): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    
+    inline def setRtf(value: String): Self = StObject.set(x, "rtf", value.asInstanceOf[js.Any])
+    
+    inline def setRtfUndefined: Self = StObject.set(x, "rtf", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

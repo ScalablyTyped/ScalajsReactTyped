@@ -1,8 +1,8 @@
 package typingsJapgolly.winjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion Properties
 //#region Objects
@@ -11,8 +11,9 @@ import scala.scalajs.js.annotation._
   **/
 @JSImport("winjs", "ErrorFromName")
 @js.native
-class ErrorFromName protected ()
-  extends typingsJapgolly.winjs.WinJS.ErrorFromName {
+open class ErrorFromName protected ()
+  extends StObject
+     with typingsJapgolly.winjs.WinJS.ErrorFromName {
   //#region Constructors
   /**
     * Creates an Error object with the specified name and message properties.
@@ -23,16 +24,20 @@ class ErrorFromName protected ()
   def this(name: String) = this()
   def this(name: String, message: String) = this()
 }
-
-/* static members */
-@JSImport("winjs", "ErrorFromName")
-@js.native
-object ErrorFromName extends js.Object {
+object ErrorFromName {
+  
+  @JSImport("winjs", "ErrorFromName")
+  @js.native
+  val ^ : js.Any = js.native
+  
   //#endregion Constructors
   //#region Properties
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSImport("winjs", "ErrorFromName.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }
-

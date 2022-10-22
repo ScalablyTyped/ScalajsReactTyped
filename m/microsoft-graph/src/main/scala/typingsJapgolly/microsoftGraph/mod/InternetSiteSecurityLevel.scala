@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.mediumHigh
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.high
 */
-trait InternetSiteSecurityLevel extends js.Object
-
+trait InternetSiteSecurityLevel extends StObject
 object InternetSiteSecurityLevel {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def high: typingsJapgolly.microsoftGraph.microsoftGraphStrings.high = this.cast("high")
-  @scala.inline
-  def medium: typingsJapgolly.microsoftGraph.microsoftGraphStrings.medium = this.cast("medium")
-  @scala.inline
-  def mediumHigh: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mediumHigh = this.cast("mediumHigh")
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  
+  inline def high: typingsJapgolly.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.high]
+  
+  inline def medium: typingsJapgolly.microsoftGraph.microsoftGraphStrings.medium = "medium".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.medium]
+  
+  inline def mediumHigh: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mediumHigh = "mediumHigh".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.mediumHigh]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

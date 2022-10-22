@@ -1,46 +1,54 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.TSIndexSignature
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait TSIndexSignature_
-  extends TSTypeElement
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with TSTypeElement
+     with TypeScript {
+  
   var parameters: js.Array[Identifier_]
+  
   var readonly: Boolean | Null
+  
+  var static: Boolean | Null
+  
   var typeAnnotation: TSTypeAnnotation_ | Null
+  
   @JSName("type")
   var type_TSIndexSignature_ : TSIndexSignature
 }
-
 object TSIndexSignature_ {
-  @scala.inline
-  def apply(
-    parameters: js.Array[Identifier_],
-    `type`: TSIndexSignature,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TSTypeAnnotation_ = null
-  ): TSIndexSignature_ = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+  
+  inline def apply(parameters: js.Array[Identifier_]): TSIndexSignature_ = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, readonly = null, start = null, static = null, trailingComments = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("TSIndexSignature")
     __obj.asInstanceOf[TSIndexSignature_]
   }
+  
+  extension [Self <: TSIndexSignature_](x: Self) {
+    
+    inline def setParameters(value: js.Array[Identifier_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setParametersVarargs(value: Identifier_ *): Self = StObject.set(x, "parameters", js.Array(value*))
+    
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    
+    inline def setReadonlyNull: Self = StObject.set(x, "readonly", null)
+    
+    inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    
+    inline def setStaticNull: Self = StObject.set(x, "static", null)
+    
+    inline def setType(value: TSIndexSignature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotation(value: TSTypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
+  }
 }
-

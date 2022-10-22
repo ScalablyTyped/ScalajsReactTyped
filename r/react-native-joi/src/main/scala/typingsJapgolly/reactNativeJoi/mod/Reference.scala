@@ -1,14 +1,19 @@
 package typingsJapgolly.reactNativeJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Reference extends JoiObject {
+trait Reference
+  extends StObject
+     with JoiObject {
+  
+  def apply(value: Any, validationOptions: ValidationOptions): Any = js.native
+  
   var isContext: Boolean = js.native
+  
   var key: String = js.native
+  
   var path: String = js.native
-  def apply(value: js.Any, validationOptions: ValidationOptions): js.Any = js.native
 }
-

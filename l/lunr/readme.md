@@ -10,14 +10,14 @@ Simple full-text search in your browser.
 | ------------------ | :-------------: |
 | Full name          | lunr |
 | Keywords           | search |
-| # releases         | 15 |
-| # dependents       | 252 |
-| # downloads        | 12113673 |
-| # stars            | 21 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5029623.666666667 |
+| # stars            | 8114.0 |
 
 ## Links
 - [Homepage](https://lunrjs.com)
-- [Bugs](http://github.com/olivernn/lunr.js/issues)
+- [Bugs](https://github.com/olivernn/lunr.js/issues)
 - [Repository](https://github.com/olivernn/lunr.js)
 - [Npm](https://www.npmjs.com/package/lunr)
     

@@ -1,32 +1,27 @@
-package typingsJapgolly.dropboxjs
+package typingsJapgolly.dropboxjs.Dropbox
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.dropboxjs.Dropbox.File.Stat
+import typingsJapgolly.dropboxjs.Dropbox.Http.RangeInfo
+import typingsJapgolly.dropboxjs.Dropbox.Http.UploadCursor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Dropbox {
-  type ClientFileReadCallback = js.Function4[
-    /* err */ typingsJapgolly.dropboxjs.Dropbox.ApiError, 
-    /* fileContents */ java.lang.String, 
-    /* stat */ typingsJapgolly.dropboxjs.Dropbox.File.Stat, 
-    /* rangeInfo */ typingsJapgolly.dropboxjs.Dropbox.Http.RangeInfo, 
-    scala.Unit
-  ]
-  type ClientFileWriteCallback = js.Function2[
-    /* err */ typingsJapgolly.dropboxjs.Dropbox.ApiError, 
-    /* stat */ typingsJapgolly.dropboxjs.Dropbox.File.Stat, 
-    scala.Unit
-  ]
-  type FileStatCallback = js.Function2[
-    /* err */ typingsJapgolly.dropboxjs.Dropbox.ApiError, 
-    /* stat */ typingsJapgolly.dropboxjs.Dropbox.File.Stat, 
-    scala.Unit
-  ]
-  type QueryParams = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type QueryParamsCallback = js.Function1[/* queryParams */ typingsJapgolly.dropboxjs.Dropbox.QueryParams, scala.Unit]
-  type ResumableUploadStepCallback = js.Function2[
-    /* err */ typingsJapgolly.dropboxjs.Dropbox.ApiError, 
-    /* uploadCursor */ typingsJapgolly.dropboxjs.Dropbox.Http.UploadCursor, 
-    scala.Unit
-  ]
-}
+
+type ClientFileReadCallback = js.Function4[
+/* err */ ApiError, 
+/* fileContents */ String, 
+/* stat */ Stat, 
+/* rangeInfo */ RangeInfo, 
+Unit]
+
+type ClientFileWriteCallback = js.Function2[/* err */ ApiError, /* stat */ Stat, Unit]
+
+type FileStatCallback = js.Function2[/* err */ ApiError, /* stat */ Stat, Unit]
+
+type QueryParams = StringDictionary[Any]
+
+type QueryParamsCallback = js.Function1[/* queryParams */ QueryParams, Unit]
+
+type ResumableUploadStepCallback = js.Function2[/* err */ ApiError, /* uploadCursor */ UploadCursor, Unit]

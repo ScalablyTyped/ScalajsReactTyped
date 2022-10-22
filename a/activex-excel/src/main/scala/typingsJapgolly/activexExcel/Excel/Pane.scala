@@ -1,39 +1,73 @@
 package typingsJapgolly.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Excel.Pane")
 @js.native
-class Pane protected () extends js.Object {
-  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
-  val Creator: XlCreator = js.native
-  @JSName("Excel.Pane_typekey")
-  var ExcelDotPane_typekey: Pane = js.native
-  val Index: Double = js.native
-  val Parent: js.Any = js.native
-  var ScrollColumn: Double = js.native
-  var ScrollRow: Double = js.native
-  @JSName("VisibleRange")
-  val VisibleRange_Original: Range = js.native
+trait Pane extends StObject {
+  
   def Activate(): Boolean = js.native
-  def LargeScroll(): js.Any = js.native
-  def LargeScroll(Down: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Double, ToRight: Double): js.Any = js.native
-  def LargeScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
+  
+  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
+  
+  val Creator: XlCreator = js.native
+  
+  /* private */ @JSName("Excel.Pane_typekey")
+  var ExcelDotPane_typekey: Pane = js.native
+  
+  val Index: Double = js.native
+  
+  def LargeScroll(): Any = js.native
+  def LargeScroll(Down: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Double, ToRight: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Double, ToRight: Unit, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Unit, ToRight: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Unit, ToRight: Double, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Double, Up: Unit, ToRight: Unit, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Double, ToRight: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Double, ToRight: Double, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Double, ToRight: Unit, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Double, ToLeft: Double): Any = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Double): Any = js.native
+  
+  val Parent: Any = js.native
+  
   def PointsToScreenPixelsX(Points: Double): Double = js.native
+  
   def PointsToScreenPixelsY(Points: Double): Double = js.native
+  
+  var ScrollColumn: Double = js.native
+  
   def ScrollIntoView(Left: Double, Top: Double, Width: Double, Height: Double): Unit = js.native
   def ScrollIntoView(Left: Double, Top: Double, Width: Double, Height: Double, Start: Boolean): Unit = js.native
-  def SmallScroll(): js.Any = js.native
-  def SmallScroll(Down: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Double, ToRight: Double): js.Any = js.native
-  def SmallScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): js.Any = js.native
+  
+  var ScrollRow: Double = js.native
+  
+  def SmallScroll(): Any = js.native
+  def SmallScroll(Down: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Double, ToRight: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Double, ToRight: Double, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Double, ToRight: Unit, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Unit, ToRight: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Unit, ToRight: Double, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Double, Up: Unit, ToRight: Unit, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Double, ToRight: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Double, ToRight: Double, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Double, ToRight: Unit, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Double, ToLeft: Double): Any = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Double): Any = js.native
+  
   def VisibleRange(Address: String): Range = js.native
   def VisibleRange(RowIndex: Double): Range = js.native
   def VisibleRange(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  @JSName("VisibleRange")
+  val VisibleRange_Original: Range = js.native
 }
-

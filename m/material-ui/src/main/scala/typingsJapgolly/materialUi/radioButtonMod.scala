@@ -1,23 +1,22 @@
 package typingsJapgolly.materialUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/RadioButton", JSImport.Namespace)
-@js.native
-object radioButtonMod extends js.Object {
+object radioButtonMod {
+  
+  @JSImport("material-ui/RadioButton", JSImport.Default)
   @js.native
-  class RadioButton ()
+  open class default () extends RadioButton
+  
+  @JSImport("material-ui/RadioButton", "RadioButton")
+  @js.native
+  open class RadioButton ()
     extends typingsJapgolly.materialUi.MaterialUI.Switches.RadioButton
   
+  @JSImport("material-ui/RadioButton", "RadioButtonGroup")
   @js.native
-  class RadioButtonGroup ()
+  open class RadioButtonGroup ()
     extends typingsJapgolly.materialUi.MaterialUI.Switches.RadioButtonGroup
-  
-  @js.native
-  class default ()
-    extends typingsJapgolly.materialUi.MaterialUI.Switches.RadioButton
-  
 }
-

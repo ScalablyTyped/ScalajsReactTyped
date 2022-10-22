@@ -1,8 +1,8 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.abort
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.fridaGumStrings.`single-step`
   - typingsJapgolly.fridaGum.fridaGumStrings.system
 */
-trait ExceptionType extends js.Object
-
+trait ExceptionType extends StObject
 object ExceptionType {
-  @scala.inline
-  def abort: typingsJapgolly.fridaGum.fridaGumStrings.abort = this.cast("abort")
-  @scala.inline
-  def `access-violation`: typingsJapgolly.fridaGum.fridaGumStrings.`access-violation` = this.cast("access-violation")
-  @scala.inline
-  def arithmetic: typingsJapgolly.fridaGum.fridaGumStrings.arithmetic = this.cast("arithmetic")
-  @scala.inline
-  def breakpoint: typingsJapgolly.fridaGum.fridaGumStrings.breakpoint = this.cast("breakpoint")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `guard-page`: typingsJapgolly.fridaGum.fridaGumStrings.`guard-page` = this.cast("guard-page")
-  @scala.inline
-  def `illegal-instruction`: typingsJapgolly.fridaGum.fridaGumStrings.`illegal-instruction` = this.cast("illegal-instruction")
-  @scala.inline
-  def `single-step`: typingsJapgolly.fridaGum.fridaGumStrings.`single-step` = this.cast("single-step")
-  @scala.inline
-  def `stack-overflow`: typingsJapgolly.fridaGum.fridaGumStrings.`stack-overflow` = this.cast("stack-overflow")
-  @scala.inline
-  def system: typingsJapgolly.fridaGum.fridaGumStrings.system = this.cast("system")
+  
+  inline def abort: typingsJapgolly.fridaGum.fridaGumStrings.abort = "abort".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.abort]
+  
+  inline def `access-violation`: typingsJapgolly.fridaGum.fridaGumStrings.`access-violation` = "access-violation".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.`access-violation`]
+  
+  inline def arithmetic: typingsJapgolly.fridaGum.fridaGumStrings.arithmetic = "arithmetic".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.arithmetic]
+  
+  inline def breakpoint: typingsJapgolly.fridaGum.fridaGumStrings.breakpoint = "breakpoint".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.breakpoint]
+  
+  inline def `guard-page`: typingsJapgolly.fridaGum.fridaGumStrings.`guard-page` = "guard-page".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.`guard-page`]
+  
+  inline def `illegal-instruction`: typingsJapgolly.fridaGum.fridaGumStrings.`illegal-instruction` = "illegal-instruction".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.`illegal-instruction`]
+  
+  inline def `single-step`: typingsJapgolly.fridaGum.fridaGumStrings.`single-step` = "single-step".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.`single-step`]
+  
+  inline def `stack-overflow`: typingsJapgolly.fridaGum.fridaGumStrings.`stack-overflow` = "stack-overflow".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.`stack-overflow`]
+  
+  inline def system: typingsJapgolly.fridaGum.fridaGumStrings.system = "system".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.system]
 }
-

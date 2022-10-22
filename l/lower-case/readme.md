@@ -1,7 +1,7 @@
 
 # Scala.js typings for lower-case
 
-Typings are for version 1.1.4
+Typings are for version 2.0.2
 
 ## Library description:
 Transforms the string to lower case
@@ -10,10 +10,10 @@ Transforms the string to lower case
 | ------------------ | :-------------: |
 | Full name          | lower-case |
 | Keywords           | lower, case, downcase, locale, convert, transform |
-| # releases         | 3 |
-| # dependents       | 34 |
-| # downloads        | 219119032 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 7.149445433333333E7 |
+| # stars            | 1776.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/lower-case#readme)

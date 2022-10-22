@@ -1,14 +1,18 @@
 package typingsJapgolly.prettier
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.prettier.mod.Parser
+import typingsJapgolly.prettier.anon.Graphql
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("prettier/parser-graphql", JSImport.Namespace)
-@js.native
-object parserGraphqlMod extends js.Object {
-  var parsers: StringDictionary[Parser] = js.native
+object parserGraphqlMod {
+  
+  @JSImport("prettier/parser-graphql", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("prettier/parser-graphql", "parsers")
+  @js.native
+  def parsers: Graphql = js.native
+  inline def parsers_=(x: Graphql): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parsers")(x.asInstanceOf[js.Any])
 }
-

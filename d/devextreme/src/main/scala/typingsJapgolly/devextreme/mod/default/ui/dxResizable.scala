@@ -1,19 +1,13 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.devextreme.mod.DevExpress.DOMComponent
 import typingsJapgolly.devextreme.mod.DevExpress.ui.dxResizableOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxResizable")
+@JSImport("devextreme", "default.ui.dxResizable")
 @js.native
-class dxResizable protected () extends DOMComponent {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxResizableOptions) = this()
-  def this(element: Element, options: dxResizableOptions) = this()
-}
-
+open class dxResizable ()
+  extends StObject
+     with DOMComponent[dxResizableOptions]

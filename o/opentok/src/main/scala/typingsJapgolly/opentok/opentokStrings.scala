@@ -2,118 +2,163 @@ package typingsJapgolly.opentok
 
 import typingsJapgolly.opentok.mod.ArchiveMode
 import typingsJapgolly.opentok.mod.ArchiveStatus
+import typingsJapgolly.opentok.mod.BroadcastLayoutType
 import typingsJapgolly.opentok.mod.MediaMode
 import typingsJapgolly.opentok.mod.OutputMode
 import typingsJapgolly.opentok.mod.Role
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object opentokStrings {
-  @js.native
-  sealed trait always extends ArchiveMode
   
   @js.native
-  sealed trait available extends ArchiveStatus
+  sealed trait `1280x720` extends StObject
+  inline def `1280x720`: `1280x720` = "1280x720".asInstanceOf[`1280x720`]
   
   @js.native
-  sealed trait bestFit extends js.Object
+  sealed trait `640x480` extends StObject
+  inline def `640x480`: `640x480` = "640x480".asInstanceOf[`640x480`]
   
   @js.native
-  sealed trait composed extends OutputMode
+  sealed trait always
+    extends StObject
+       with ArchiveMode
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait custom extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait expired extends ArchiveStatus
+  sealed trait available
+    extends StObject
+       with ArchiveStatus
+  inline def available: available = "available".asInstanceOf[available]
   
   @js.native
-  sealed trait failed extends ArchiveStatus
+  sealed trait bestFit
+    extends StObject
+       with BroadcastLayoutType
+  inline def bestFit: bestFit = "bestFit".asInstanceOf[bestFit]
   
   @js.native
-  sealed trait horizontalPresentation extends js.Object
+  sealed trait camera extends StObject
+  inline def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
-  sealed trait individual extends OutputMode
+  sealed trait composed
+    extends StObject
+       with OutputMode
+  inline def composed: composed = "composed".asInstanceOf[composed]
   
   @js.native
-  sealed trait manual extends ArchiveMode
+  sealed trait custom extends StObject
+  inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
-  sealed trait moderator extends Role
+  sealed trait expired
+    extends StObject
+       with ArchiveStatus
+  inline def expired: expired = "expired".asInstanceOf[expired]
   
   @js.native
-  sealed trait paused extends ArchiveStatus
+  sealed trait failed
+    extends StObject
+       with ArchiveStatus
+  inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
-  sealed trait pip extends js.Object
+  sealed trait focus
+    extends StObject
+       with BroadcastLayoutType
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait publisher extends Role
+  sealed trait horizontalPresentation
+    extends StObject
+       with BroadcastLayoutType
+  inline def horizontalPresentation: horizontalPresentation = "horizontalPresentation".asInstanceOf[horizontalPresentation]
   
   @js.native
-  sealed trait relayed extends MediaMode
+  sealed trait individual
+    extends StObject
+       with OutputMode
+  inline def individual: individual = "individual".asInstanceOf[individual]
   
   @js.native
-  sealed trait routed extends MediaMode
+  sealed trait manual
+    extends StObject
+       with ArchiveMode
+  inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
-  sealed trait started extends ArchiveStatus
+  sealed trait moderator
+    extends StObject
+       with Role
+  inline def moderator: moderator = "moderator".asInstanceOf[moderator]
   
   @js.native
-  sealed trait stopped extends ArchiveStatus
+  sealed trait paused
+    extends StObject
+       with ArchiveStatus
+  inline def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
-  sealed trait subscriber extends Role
+  sealed trait pip
+    extends StObject
+       with BroadcastLayoutType
+  inline def pip: pip = "pip".asInstanceOf[pip]
   
   @js.native
-  sealed trait uploaded extends ArchiveStatus
+  sealed trait publisher
+    extends StObject
+       with Role
+  inline def publisher: publisher = "publisher".asInstanceOf[publisher]
   
   @js.native
-  sealed trait verticalPresentation extends js.Object
+  sealed trait relayed
+    extends StObject
+       with MediaMode
+  inline def relayed: relayed = "relayed".asInstanceOf[relayed]
   
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def available: available = "available".asInstanceOf[available]
-  @scala.inline
-  def bestFit: bestFit = "bestFit".asInstanceOf[bestFit]
-  @scala.inline
-  def composed: composed = "composed".asInstanceOf[composed]
-  @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
-  @scala.inline
-  def expired: expired = "expired".asInstanceOf[expired]
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
-  @scala.inline
-  def horizontalPresentation: horizontalPresentation = "horizontalPresentation".asInstanceOf[horizontalPresentation]
-  @scala.inline
-  def individual: individual = "individual".asInstanceOf[individual]
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def moderator: moderator = "moderator".asInstanceOf[moderator]
-  @scala.inline
-  def paused: paused = "paused".asInstanceOf[paused]
-  @scala.inline
-  def pip: pip = "pip".asInstanceOf[pip]
-  @scala.inline
-  def publisher: publisher = "publisher".asInstanceOf[publisher]
-  @scala.inline
-  def relayed: relayed = "relayed".asInstanceOf[relayed]
-  @scala.inline
-  def routed: routed = "routed".asInstanceOf[routed]
-  @scala.inline
-  def started: started = "started".asInstanceOf[started]
-  @scala.inline
-  def stopped: stopped = "stopped".asInstanceOf[stopped]
-  @scala.inline
-  def subscriber: subscriber = "subscriber".asInstanceOf[subscriber]
-  @scala.inline
-  def uploaded: uploaded = "uploaded".asInstanceOf[uploaded]
-  @scala.inline
-  def verticalPresentation: verticalPresentation = "verticalPresentation".asInstanceOf[verticalPresentation]
+  @js.native
+  sealed trait routed
+    extends StObject
+       with MediaMode
+  inline def routed: routed = "routed".asInstanceOf[routed]
+  
+  @js.native
+  sealed trait screen extends StObject
+  inline def screen: screen = "screen".asInstanceOf[screen]
+  
+  @js.native
+  sealed trait started
+    extends StObject
+       with ArchiveStatus
+  inline def started: started = "started".asInstanceOf[started]
+  
+  @js.native
+  sealed trait stopped
+    extends StObject
+       with ArchiveStatus
+  inline def stopped: stopped = "stopped".asInstanceOf[stopped]
+  
+  @js.native
+  sealed trait subscriber
+    extends StObject
+       with Role
+  inline def subscriber: subscriber = "subscriber".asInstanceOf[subscriber]
+  
+  @js.native
+  sealed trait uploaded
+    extends StObject
+       with ArchiveStatus
+  inline def uploaded: uploaded = "uploaded".asInstanceOf[uploaded]
+  
+  @js.native
+  sealed trait verticalPresentation
+    extends StObject
+       with BroadcastLayoutType
+  inline def verticalPresentation: verticalPresentation = "verticalPresentation".asInstanceOf[verticalPresentation]
 }
-

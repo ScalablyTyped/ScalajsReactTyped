@@ -1,19 +1,24 @@
 package typingsJapgolly.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomPrint extends js.Object {
+trait CustomPrint extends StObject {
+  
   @JSName("$customPrint")
-  var $customPrint_Original: WebixCallback = js.native
+  def $customPrint(args: Any*): Any
   @JSName("$customPrint")
-  def $customPrint(args: js.Any*): js.Any = js.native
+  var $customPrint_Original: WebixCallback
 }
-
-@JSImport("webix", "CustomPrint")
-@js.native
-object CustomPrint extends TopLevel[CustomPrint]
-
+object CustomPrint {
+  
+  @JSImport("webix", "CustomPrint")
+  @js.native
+  val ^ : CustomPrint = js.native
+  
+  extension [Self <: CustomPrint](x: Self) {
+    
+    inline def set$customPrint(value: WebixCallback): Self = StObject.set(x, "$customPrint", value.asInstanceOf[js.Any])
+  }
+}

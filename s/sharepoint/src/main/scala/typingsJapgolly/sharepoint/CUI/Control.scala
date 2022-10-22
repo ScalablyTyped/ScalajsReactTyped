@@ -1,27 +1,51 @@
 package typingsJapgolly.sharepoint.CUI
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.microsoftAjax.Sys.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("CUI.Control")
-@js.native
-class Control protected ()
-  extends IDisposable
+trait Control
+  extends StObject
+     with IDisposable
      with IMenuItem {
-  def this(root: Root, id: String, properties: ControlProperties) = this()
-  def createComponentForDisplayMode(displayMode: String): js.Any = js.native
-  //#region Methods
-  /**
-    * Releases resources held by an object that implements the Sys.IDisposable interface.
-    * Implement the dispose method to close or release resources held by an object, or to prepare an object for reuse.
-    */
-  /* CompleteClass */
-  override def dispose(): scala.Unit = js.native
-  def get_enabled(): Boolean = js.native
-  def get_id(): String = js.native
-  def get_root(): Root = js.native
-  def set_enabled(enabled: Boolean): Boolean = js.native
+  
+  def createComponentForDisplayMode(displayMode: String): Any
+  
+  def get_enabled(): Boolean
+  
+  def get_id(): String
+  
+  def get_root(): Root
+  
+  def set_enabled(enabled: Boolean): Boolean
 }
-
+object Control {
+  
+  inline def apply(
+    createComponentForDisplayMode: String => Any,
+    dispose: Callback,
+    get_enabled: CallbackTo[Boolean],
+    get_id: CallbackTo[String],
+    get_root: CallbackTo[Root],
+    set_enabled: Boolean => Boolean
+  ): Control = {
+    val __obj = js.Dynamic.literal(createComponentForDisplayMode = js.Any.fromFunction1(createComponentForDisplayMode), dispose = dispose.toJsFn, get_enabled = get_enabled.toJsFn, get_id = get_id.toJsFn, get_root = get_root.toJsFn, set_enabled = js.Any.fromFunction1(set_enabled))
+    __obj.asInstanceOf[Control]
+  }
+  
+  extension [Self <: Control](x: Self) {
+    
+    inline def setCreateComponentForDisplayMode(value: String => Any): Self = StObject.set(x, "createComponentForDisplayMode", js.Any.fromFunction1(value))
+    
+    inline def setGet_enabled(value: CallbackTo[Boolean]): Self = StObject.set(x, "get_enabled", value.toJsFn)
+    
+    inline def setGet_id(value: CallbackTo[String]): Self = StObject.set(x, "get_id", value.toJsFn)
+    
+    inline def setGet_root(value: CallbackTo[Root]): Self = StObject.set(x, "get_root", value.toJsFn)
+    
+    inline def setSet_enabled(value: Boolean => Boolean): Self = StObject.set(x, "set_enabled", js.Any.fromFunction1(value))
+  }
+}

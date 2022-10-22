@@ -1,0 +1,377 @@
+package typingsJapgolly.devtoolsProtocol.mod.Protocol.Page
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NotPrimaryMainFrame
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabled
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RelatedActiveContentsExist
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.HTTPStatusNotOK
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SchemeNotHTTPOrHTTPS
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Loading
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WasGrantedMediaAccess
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DisableForRenderFrameHostCalled
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DomainNotAllowed
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.HTTPMethodNotGET
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SubframeIsNavigating
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Timeout
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheLimit
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.JavaScriptExecution
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessKilled
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessCrashed
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SchedulerTrackedFeatureUsed
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ConflictingBrowsingInstance
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheFlushed
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ServiceWorkerVersionActivation
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SessionRestored
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ServiceWorkerPostMessage
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EnteredBackForwardCacheBeforeServiceWorkerHostAdded
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RenderFrameHostReused_SameSite
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RenderFrameHostReused_CrossSite
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ServiceWorkerClaim
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.IgnoreEventAndEvict
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.HaveInnerContents
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.TimeoutPuttingInCache
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabledByLowMemory
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabledByCommandLine
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NetworkRequestDatapipeDrainedAsBytesConsumer
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NetworkRequestRedirected
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NetworkRequestTimeout
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NetworkExceedsBufferLimit
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NavigationCancelledWhileRestoring
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NotMostRecentNavigationEntry
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabledForPrerender
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.UserAgentOverrideDiffers
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ForegroundCacheLimit
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BrowsingInstanceNotSwapped
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabledForDelegate
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.UnloadHandlerExistsInMainFrame
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.UnloadHandlerExistsInSubFrame
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ServiceWorkerUnregistration
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheControlNoStore
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheControlNoStoreCookieModified
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheControlNoStoreHTTPOnlyCookieModified
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NoResponseHead
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Unknown
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ActivationNavigationsDisallowedForBug1234857
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ErrorDocument
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.FencedFramesEmbedder
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebSocket
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebTransport
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebRTC
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MainResourceHasCacheControlNoStore
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MainResourceHasCacheControlNoCache
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SubresourceHasCacheControlNoStore
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SubresourceHasCacheControlNoCache
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContainsPlugins
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DocumentLoaded
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DedicatedWorkerOrWorklet
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestOthers
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingIndexedDBTransaction
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedNotificationsPermission
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedMIDIPermission
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedAudioCapturePermission
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedVideoCapturePermission
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedBackForwardCacheBlockedSensors
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedBackgroundWorkPermission
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BroadcastChannel
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.IndexedDBConnection
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebXR
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SharedWorker
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebLocks
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebHID
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebShare
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedStorageAccessGrant
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebNfc
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestFetch
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestXHR
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.AppBanner
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Printing
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebDatabase
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PictureInPicture
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Portal
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SpeechRecognizer
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.IdleManager
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PaymentManager
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SpeechSynthesis
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.KeyboardLock
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebOTPService
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestDirectSocket
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InjectedJavascript
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InjectedStyleSheet
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Dummy
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentSecurityHandler
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentWebAuthenticationAPI
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentFileChooser
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentSerial
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentFileSystemAccess
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentMediaDevicesDispatcherHost
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentWebBluetooth
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentWebUSB
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentMediaSessionService
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentScreenReader
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderPopupBlockerTabHelper
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderSafeBrowsingTriggeredPopupBlocker
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderSafeBrowsingThreatDetails
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderAppBannerManager
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderDomDistillerViewerSource
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderDomDistillerSelfDeletingRequestDelegate
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderOomInterventionTabHelper
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderOfflinePage
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderChromePasswordManagerClientBindCredentialManager
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderPermissionRequestManager
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderModalDialog
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderExtensions
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderExtensionMessaging
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderExtensionMessagingForOpenPort
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderExtensionSentMessageToCachedFrame
+*/
+trait BackForwardCacheNotRestoredReason extends StObject
+object BackForwardCacheNotRestoredReason {
+  
+  inline def ActivationNavigationsDisallowedForBug1234857: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ActivationNavigationsDisallowedForBug1234857 = "ActivationNavigationsDisallowedForBug1234857".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ActivationNavigationsDisallowedForBug1234857]
+  
+  inline def AppBanner: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.AppBanner = "AppBanner".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.AppBanner]
+  
+  inline def BackForwardCacheDisabled: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabled = "BackForwardCacheDisabled".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabled]
+  
+  inline def BackForwardCacheDisabledByCommandLine: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabledByCommandLine = "BackForwardCacheDisabledByCommandLine".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabledByCommandLine]
+  
+  inline def BackForwardCacheDisabledByLowMemory: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabledByLowMemory = "BackForwardCacheDisabledByLowMemory".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabledByLowMemory]
+  
+  inline def BackForwardCacheDisabledForDelegate: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabledForDelegate = "BackForwardCacheDisabledForDelegate".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabledForDelegate]
+  
+  inline def BackForwardCacheDisabledForPrerender: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabledForPrerender = "BackForwardCacheDisabledForPrerender".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabledForPrerender]
+  
+  inline def BroadcastChannel: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BroadcastChannel = "BroadcastChannel".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BroadcastChannel]
+  
+  inline def BrowsingInstanceNotSwapped: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BrowsingInstanceNotSwapped = "BrowsingInstanceNotSwapped".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.BrowsingInstanceNotSwapped]
+  
+  inline def CacheControlNoStore: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheControlNoStore = "CacheControlNoStore".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheControlNoStore]
+  
+  inline def CacheControlNoStoreCookieModified: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheControlNoStoreCookieModified = "CacheControlNoStoreCookieModified".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheControlNoStoreCookieModified]
+  
+  inline def CacheControlNoStoreHTTPOnlyCookieModified: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheControlNoStoreHTTPOnlyCookieModified = "CacheControlNoStoreHTTPOnlyCookieModified".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheControlNoStoreHTTPOnlyCookieModified]
+  
+  inline def CacheFlushed: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheFlushed = "CacheFlushed".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheFlushed]
+  
+  inline def CacheLimit: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheLimit = "CacheLimit".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CacheLimit]
+  
+  inline def ConflictingBrowsingInstance: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ConflictingBrowsingInstance = "ConflictingBrowsingInstance".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ConflictingBrowsingInstance]
+  
+  inline def ContainsPlugins: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContainsPlugins = "ContainsPlugins".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContainsPlugins]
+  
+  inline def ContentFileChooser: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentFileChooser = "ContentFileChooser".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentFileChooser]
+  
+  inline def ContentFileSystemAccess: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentFileSystemAccess = "ContentFileSystemAccess".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentFileSystemAccess]
+  
+  inline def ContentMediaDevicesDispatcherHost: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentMediaDevicesDispatcherHost = "ContentMediaDevicesDispatcherHost".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentMediaDevicesDispatcherHost]
+  
+  inline def ContentMediaSessionService: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentMediaSessionService = "ContentMediaSessionService".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentMediaSessionService]
+  
+  inline def ContentScreenReader: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentScreenReader = "ContentScreenReader".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentScreenReader]
+  
+  inline def ContentSecurityHandler: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentSecurityHandler = "ContentSecurityHandler".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentSecurityHandler]
+  
+  inline def ContentSerial: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentSerial = "ContentSerial".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentSerial]
+  
+  inline def ContentWebAuthenticationAPI: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentWebAuthenticationAPI = "ContentWebAuthenticationAPI".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentWebAuthenticationAPI]
+  
+  inline def ContentWebBluetooth: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentWebBluetooth = "ContentWebBluetooth".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentWebBluetooth]
+  
+  inline def ContentWebUSB: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentWebUSB = "ContentWebUSB".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ContentWebUSB]
+  
+  inline def DedicatedWorkerOrWorklet: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DedicatedWorkerOrWorklet = "DedicatedWorkerOrWorklet".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DedicatedWorkerOrWorklet]
+  
+  inline def DisableForRenderFrameHostCalled: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DisableForRenderFrameHostCalled = "DisableForRenderFrameHostCalled".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DisableForRenderFrameHostCalled]
+  
+  inline def DocumentLoaded: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DocumentLoaded = "DocumentLoaded".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DocumentLoaded]
+  
+  inline def DomainNotAllowed: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DomainNotAllowed = "DomainNotAllowed".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DomainNotAllowed]
+  
+  inline def Dummy: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Dummy = "Dummy".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Dummy]
+  
+  inline def EmbedderAppBannerManager: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderAppBannerManager = "EmbedderAppBannerManager".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderAppBannerManager]
+  
+  inline def EmbedderChromePasswordManagerClientBindCredentialManager: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderChromePasswordManagerClientBindCredentialManager = "EmbedderChromePasswordManagerClientBindCredentialManager".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderChromePasswordManagerClientBindCredentialManager]
+  
+  inline def EmbedderDomDistillerSelfDeletingRequestDelegate: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderDomDistillerSelfDeletingRequestDelegate = "EmbedderDomDistillerSelfDeletingRequestDelegate".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderDomDistillerSelfDeletingRequestDelegate]
+  
+  inline def EmbedderDomDistillerViewerSource: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderDomDistillerViewerSource = "EmbedderDomDistillerViewerSource".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderDomDistillerViewerSource]
+  
+  inline def EmbedderExtensionMessaging: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderExtensionMessaging = "EmbedderExtensionMessaging".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderExtensionMessaging]
+  
+  inline def EmbedderExtensionMessagingForOpenPort: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderExtensionMessagingForOpenPort = "EmbedderExtensionMessagingForOpenPort".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderExtensionMessagingForOpenPort]
+  
+  inline def EmbedderExtensionSentMessageToCachedFrame: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderExtensionSentMessageToCachedFrame = "EmbedderExtensionSentMessageToCachedFrame".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderExtensionSentMessageToCachedFrame]
+  
+  inline def EmbedderExtensions: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderExtensions = "EmbedderExtensions".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderExtensions]
+  
+  inline def EmbedderModalDialog: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderModalDialog = "EmbedderModalDialog".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderModalDialog]
+  
+  inline def EmbedderOfflinePage: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderOfflinePage = "EmbedderOfflinePage".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderOfflinePage]
+  
+  inline def EmbedderOomInterventionTabHelper: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderOomInterventionTabHelper = "EmbedderOomInterventionTabHelper".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderOomInterventionTabHelper]
+  
+  inline def EmbedderPermissionRequestManager: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderPermissionRequestManager = "EmbedderPermissionRequestManager".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderPermissionRequestManager]
+  
+  inline def EmbedderPopupBlockerTabHelper: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderPopupBlockerTabHelper = "EmbedderPopupBlockerTabHelper".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderPopupBlockerTabHelper]
+  
+  inline def EmbedderSafeBrowsingThreatDetails: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderSafeBrowsingThreatDetails = "EmbedderSafeBrowsingThreatDetails".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderSafeBrowsingThreatDetails]
+  
+  inline def EmbedderSafeBrowsingTriggeredPopupBlocker: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderSafeBrowsingTriggeredPopupBlocker = "EmbedderSafeBrowsingTriggeredPopupBlocker".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EmbedderSafeBrowsingTriggeredPopupBlocker]
+  
+  inline def EnteredBackForwardCacheBeforeServiceWorkerHostAdded: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EnteredBackForwardCacheBeforeServiceWorkerHostAdded = "EnteredBackForwardCacheBeforeServiceWorkerHostAdded".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.EnteredBackForwardCacheBeforeServiceWorkerHostAdded]
+  
+  inline def ErrorDocument: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ErrorDocument = "ErrorDocument".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ErrorDocument]
+  
+  inline def FencedFramesEmbedder: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.FencedFramesEmbedder = "FencedFramesEmbedder".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.FencedFramesEmbedder]
+  
+  inline def ForegroundCacheLimit: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ForegroundCacheLimit = "ForegroundCacheLimit".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ForegroundCacheLimit]
+  
+  inline def HTTPMethodNotGET: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.HTTPMethodNotGET = "HTTPMethodNotGET".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.HTTPMethodNotGET]
+  
+  inline def HTTPStatusNotOK: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.HTTPStatusNotOK = "HTTPStatusNotOK".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.HTTPStatusNotOK]
+  
+  inline def HaveInnerContents: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.HaveInnerContents = "HaveInnerContents".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.HaveInnerContents]
+  
+  inline def IdleManager: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.IdleManager = "IdleManager".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.IdleManager]
+  
+  inline def IgnoreEventAndEvict: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.IgnoreEventAndEvict = "IgnoreEventAndEvict".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.IgnoreEventAndEvict]
+  
+  inline def IndexedDBConnection: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.IndexedDBConnection = "IndexedDBConnection".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.IndexedDBConnection]
+  
+  inline def InjectedJavascript: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InjectedJavascript = "InjectedJavascript".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InjectedJavascript]
+  
+  inline def InjectedStyleSheet: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InjectedStyleSheet = "InjectedStyleSheet".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InjectedStyleSheet]
+  
+  inline def JavaScriptExecution: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.JavaScriptExecution = "JavaScriptExecution".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.JavaScriptExecution]
+  
+  inline def KeyboardLock: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.KeyboardLock = "KeyboardLock".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.KeyboardLock]
+  
+  inline def Loading: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Loading = "Loading".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Loading]
+  
+  inline def MainResourceHasCacheControlNoCache: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MainResourceHasCacheControlNoCache = "MainResourceHasCacheControlNoCache".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MainResourceHasCacheControlNoCache]
+  
+  inline def MainResourceHasCacheControlNoStore: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MainResourceHasCacheControlNoStore = "MainResourceHasCacheControlNoStore".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MainResourceHasCacheControlNoStore]
+  
+  inline def NavigationCancelledWhileRestoring: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NavigationCancelledWhileRestoring = "NavigationCancelledWhileRestoring".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NavigationCancelledWhileRestoring]
+  
+  inline def NetworkExceedsBufferLimit: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NetworkExceedsBufferLimit = "NetworkExceedsBufferLimit".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NetworkExceedsBufferLimit]
+  
+  inline def NetworkRequestDatapipeDrainedAsBytesConsumer: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NetworkRequestDatapipeDrainedAsBytesConsumer = "NetworkRequestDatapipeDrainedAsBytesConsumer".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NetworkRequestDatapipeDrainedAsBytesConsumer]
+  
+  inline def NetworkRequestRedirected: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NetworkRequestRedirected = "NetworkRequestRedirected".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NetworkRequestRedirected]
+  
+  inline def NetworkRequestTimeout: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NetworkRequestTimeout = "NetworkRequestTimeout".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NetworkRequestTimeout]
+  
+  inline def NoResponseHead: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NoResponseHead = "NoResponseHead".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NoResponseHead]
+  
+  inline def NotMostRecentNavigationEntry: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NotMostRecentNavigationEntry = "NotMostRecentNavigationEntry".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NotMostRecentNavigationEntry]
+  
+  inline def NotPrimaryMainFrame: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NotPrimaryMainFrame = "NotPrimaryMainFrame".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NotPrimaryMainFrame]
+  
+  inline def OutstandingIndexedDBTransaction: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingIndexedDBTransaction = "OutstandingIndexedDBTransaction".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingIndexedDBTransaction]
+  
+  inline def OutstandingNetworkRequestDirectSocket: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestDirectSocket = "OutstandingNetworkRequestDirectSocket".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestDirectSocket]
+  
+  inline def OutstandingNetworkRequestFetch: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestFetch = "OutstandingNetworkRequestFetch".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestFetch]
+  
+  inline def OutstandingNetworkRequestOthers: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestOthers = "OutstandingNetworkRequestOthers".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestOthers]
+  
+  inline def OutstandingNetworkRequestXHR: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestXHR = "OutstandingNetworkRequestXHR".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.OutstandingNetworkRequestXHR]
+  
+  inline def PaymentManager: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PaymentManager = "PaymentManager".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PaymentManager]
+  
+  inline def PictureInPicture: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PictureInPicture = "PictureInPicture".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PictureInPicture]
+  
+  inline def Portal: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Portal = "Portal".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Portal]
+  
+  inline def Printing: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Printing = "Printing".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Printing]
+  
+  inline def RelatedActiveContentsExist: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RelatedActiveContentsExist = "RelatedActiveContentsExist".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RelatedActiveContentsExist]
+  
+  inline def RenderFrameHostReused_CrossSite: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RenderFrameHostReused_CrossSite = "RenderFrameHostReused_CrossSite".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RenderFrameHostReused_CrossSite]
+  
+  inline def RenderFrameHostReused_SameSite: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RenderFrameHostReused_SameSite = "RenderFrameHostReused_SameSite".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RenderFrameHostReused_SameSite]
+  
+  inline def RendererProcessCrashed: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessCrashed = "RendererProcessCrashed".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessCrashed]
+  
+  inline def RendererProcessKilled: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessKilled = "RendererProcessKilled".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessKilled]
+  
+  inline def RequestedAudioCapturePermission: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedAudioCapturePermission = "RequestedAudioCapturePermission".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedAudioCapturePermission]
+  
+  inline def RequestedBackForwardCacheBlockedSensors: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedBackForwardCacheBlockedSensors = "RequestedBackForwardCacheBlockedSensors".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedBackForwardCacheBlockedSensors]
+  
+  inline def RequestedBackgroundWorkPermission: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedBackgroundWorkPermission = "RequestedBackgroundWorkPermission".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedBackgroundWorkPermission]
+  
+  inline def RequestedMIDIPermission: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedMIDIPermission = "RequestedMIDIPermission".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedMIDIPermission]
+  
+  inline def RequestedNotificationsPermission: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedNotificationsPermission = "RequestedNotificationsPermission".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedNotificationsPermission]
+  
+  inline def RequestedStorageAccessGrant: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedStorageAccessGrant = "RequestedStorageAccessGrant".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedStorageAccessGrant]
+  
+  inline def RequestedVideoCapturePermission: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedVideoCapturePermission = "RequestedVideoCapturePermission".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RequestedVideoCapturePermission]
+  
+  inline def SchedulerTrackedFeatureUsed: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SchedulerTrackedFeatureUsed = "SchedulerTrackedFeatureUsed".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SchedulerTrackedFeatureUsed]
+  
+  inline def SchemeNotHTTPOrHTTPS: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SchemeNotHTTPOrHTTPS = "SchemeNotHTTPOrHTTPS".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SchemeNotHTTPOrHTTPS]
+  
+  inline def ServiceWorkerClaim: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ServiceWorkerClaim = "ServiceWorkerClaim".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ServiceWorkerClaim]
+  
+  inline def ServiceWorkerPostMessage: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ServiceWorkerPostMessage = "ServiceWorkerPostMessage".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ServiceWorkerPostMessage]
+  
+  inline def ServiceWorkerUnregistration: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ServiceWorkerUnregistration = "ServiceWorkerUnregistration".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ServiceWorkerUnregistration]
+  
+  inline def ServiceWorkerVersionActivation: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ServiceWorkerVersionActivation = "ServiceWorkerVersionActivation".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.ServiceWorkerVersionActivation]
+  
+  inline def SessionRestored: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SessionRestored = "SessionRestored".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SessionRestored]
+  
+  inline def SharedWorker: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SharedWorker = "SharedWorker".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SharedWorker]
+  
+  inline def SpeechRecognizer: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SpeechRecognizer = "SpeechRecognizer".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SpeechRecognizer]
+  
+  inline def SpeechSynthesis: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SpeechSynthesis = "SpeechSynthesis".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SpeechSynthesis]
+  
+  inline def SubframeIsNavigating: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SubframeIsNavigating = "SubframeIsNavigating".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SubframeIsNavigating]
+  
+  inline def SubresourceHasCacheControlNoCache: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SubresourceHasCacheControlNoCache = "SubresourceHasCacheControlNoCache".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SubresourceHasCacheControlNoCache]
+  
+  inline def SubresourceHasCacheControlNoStore: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SubresourceHasCacheControlNoStore = "SubresourceHasCacheControlNoStore".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.SubresourceHasCacheControlNoStore]
+  
+  inline def Timeout: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Timeout = "Timeout".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Timeout]
+  
+  inline def TimeoutPuttingInCache: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.TimeoutPuttingInCache = "TimeoutPuttingInCache".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.TimeoutPuttingInCache]
+  
+  inline def Unknown: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Unknown = "Unknown".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.Unknown]
+  
+  inline def UnloadHandlerExistsInMainFrame: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.UnloadHandlerExistsInMainFrame = "UnloadHandlerExistsInMainFrame".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.UnloadHandlerExistsInMainFrame]
+  
+  inline def UnloadHandlerExistsInSubFrame: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.UnloadHandlerExistsInSubFrame = "UnloadHandlerExistsInSubFrame".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.UnloadHandlerExistsInSubFrame]
+  
+  inline def UserAgentOverrideDiffers: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.UserAgentOverrideDiffers = "UserAgentOverrideDiffers".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.UserAgentOverrideDiffers]
+  
+  inline def WasGrantedMediaAccess: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WasGrantedMediaAccess = "WasGrantedMediaAccess".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WasGrantedMediaAccess]
+  
+  inline def WebDatabase: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebDatabase = "WebDatabase".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebDatabase]
+  
+  inline def WebHID: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebHID = "WebHID".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebHID]
+  
+  inline def WebLocks: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebLocks = "WebLocks".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebLocks]
+  
+  inline def WebNfc: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebNfc = "WebNfc".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebNfc]
+  
+  inline def WebOTPService: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebOTPService = "WebOTPService".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebOTPService]
+  
+  inline def WebRTC: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebRTC = "WebRTC".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebRTC]
+  
+  inline def WebShare: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebShare = "WebShare".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebShare]
+  
+  inline def WebSocket: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebSocket = "WebSocket".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebSocket]
+  
+  inline def WebTransport: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebTransport = "WebTransport".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebTransport]
+  
+  inline def WebXR: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebXR = "WebXR".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WebXR]
+}

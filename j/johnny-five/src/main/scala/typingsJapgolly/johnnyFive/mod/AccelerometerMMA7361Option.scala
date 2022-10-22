@@ -1,20 +1,26 @@
 package typingsJapgolly.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AccelerometerMMA7361Option extends AccelerometerGeneralOption {
+trait AccelerometerMMA7361Option
+  extends StObject
+     with AccelerometerGeneralOption {
+  
   var sleepPin: js.UndefOr[Double | String] = js.undefined
 }
-
 object AccelerometerMMA7361Option {
-  @scala.inline
-  def apply(controller: String = null, sleepPin: Double | String = null): AccelerometerMMA7361Option = {
+  
+  inline def apply(): AccelerometerMMA7361Option = {
     val __obj = js.Dynamic.literal()
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (sleepPin != null) __obj.updateDynamic("sleepPin")(sleepPin.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccelerometerMMA7361Option]
   }
+  
+  extension [Self <: AccelerometerMMA7361Option](x: Self) {
+    
+    inline def setSleepPin(value: Double | String): Self = StObject.set(x, "sleepPin", value.asInstanceOf[js.Any])
+    
+    inline def setSleepPinUndefined: Self = StObject.set(x, "sleepPin", js.undefined)
+  }
 }
-

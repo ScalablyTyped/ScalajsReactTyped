@@ -1,19 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FullscreenOptions extends js.Object {
+trait FullscreenOptions extends StObject {
+  
+  /* standard dom */
   var navigationUI: js.UndefOr[FullscreenNavigationUI] = js.undefined
 }
-
 object FullscreenOptions {
-  @scala.inline
-  def apply(navigationUI: FullscreenNavigationUI = null): FullscreenOptions = {
+  
+  inline def apply(): FullscreenOptions = {
     val __obj = js.Dynamic.literal()
-    if (navigationUI != null) __obj.updateDynamic("navigationUI")(navigationUI.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullscreenOptions]
   }
+  
+  extension [Self <: FullscreenOptions](x: Self) {
+    
+    inline def setNavigationUI(value: FullscreenNavigationUI): Self = StObject.set(x, "navigationUI", value.asInstanceOf[js.Any])
+    
+    inline def setNavigationUIUndefined: Self = StObject.set(x, "navigationUI", js.undefined)
+  }
 }
-

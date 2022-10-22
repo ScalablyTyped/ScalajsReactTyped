@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.tableMod.TableProps
+import typingsJapgolly.reactstrap.typesLibTableMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "Table")
 @js.native
-class Table[T] ()
-  extends Component[TableProps, js.Object, js.Any]
-
+open class Table () extends default

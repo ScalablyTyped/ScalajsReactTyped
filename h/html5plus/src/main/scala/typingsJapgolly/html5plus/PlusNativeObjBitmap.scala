@@ -1,8 +1,8 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 原生图片对象
@@ -11,14 +11,8 @@ import scala.scalajs.js.annotation._
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
 @js.native
-trait PlusNativeObjBitmap extends js.Object {
-  /**
-    * Bitmap对象的标识
-    * 在创建Bitmap对象时设置，如果没有设置标识，此属性值为null。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
-    */
-  var id: js.UndefOr[String] = js.native
+trait PlusNativeObjBitmap extends StObject {
+  
   /**
     * 销毁Bitmap图片
     * 释放Bitmap图片占用的内存资源，销毁后图片对象将不可使用，其id属性值为undefined，调用其所有方法操作都会失败。
@@ -26,15 +20,17 @@ trait PlusNativeObjBitmap extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def clear(): Unit = js.native
+  
   /**
     * 静态方法，获取指定标识的Bitmap图片对象
     * 在应用中已创建的图片对象中查找指定标识的Bitmap对象并返回。
-    * 	若存在多个相同标识的Bitmap图片，则返回第一个创建的Bitmap图片。
+    *     若存在多个相同标识的Bitmap图片，则返回第一个创建的Bitmap图片。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def getBitmapById(): PlusNativeObjBitmap = js.native
   def getBitmapById(id: String): PlusNativeObjBitmap = js.native
+  
   /**
     * 静态方法，获取所有Bitmap图片对象
     * 获取应用运行期创建的所有Bitmap图片对象，包含所有空Bitmap对象，不包含已经销毁的Bitmap对象。返回的Bitmap对象在数组中按创建的属性排列，及数组中第一个是最先创建的Bitmap对象。
@@ -42,10 +38,19 @@ trait PlusNativeObjBitmap extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def getItems(): js.Array[PlusNativeObj] = js.native
+  
+  /**
+    * Bitmap对象的标识
+    * 在创建Bitmap对象时设置，如果没有设置标识，此属性值为null。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
+    */
+  var id: js.UndefOr[String] = js.native
+  
   /**
     * 加载Bitmap图片
     * 从指定的路径（仅支持本地文件系统）中加载图片，此操作将覆盖之前的图片内容，
-    * 	如果加载图片失败则保留之前的图片内容。
+    *     如果加载图片失败则保留之前的图片内容。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -55,12 +60,21 @@ trait PlusNativeObjBitmap extends js.Object {
   def load(
     path: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
+  def load(path: String, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def load(path: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+  def load(
+    path: Unit,
+    successCallback: js.Function0[Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
+  ): Unit = js.native
+  def load(path: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  
   /**
     * 加载Base64编码格式图片到Bitmap对象
     * 从Base64编码格式图片数据中加载图片，此操作将覆盖之前的图片内容，
-    * 	如果加载图片失败则保留之前的图片内容。
+    *     如果加载图片失败则保留之前的图片内容。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
@@ -70,16 +84,26 @@ trait PlusNativeObjBitmap extends js.Object {
   def loadBase64Data(
     data: String,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
+  def loadBase64Data(data: String, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def loadBase64Data(data: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+  def loadBase64Data(
+    data: Unit,
+    successCallback: js.Function0[Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
+  ): Unit = js.native
+  def loadBase64Data(data: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  
   /**
     * 回收Bitmap图片内存
     * 释放Bitmap图片占用的内存资源，但不销毁图片对象，依然可以继续使用图片对象。
-    * 	当图片对象再次被使用时会自动从设置的路径（构造函数或load/save方法设置）加载到内存中。
+    *     当图片对象再次被使用时会自动从设置的路径（构造函数或load/save方法设置）加载到内存中。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def recycle(): Unit = js.native
+  
   /**
     * 保存图片
     * 将图片保存到指定的路径（仅支持本地文件系统），如果图片为空或者指定的路径文件已经存在则返回失败。
@@ -88,18 +112,69 @@ trait PlusNativeObjBitmap extends js.Object {
     */
   def save(): Unit = js.native
   def save(path: String): Unit = js.native
+  def save(path: String, options: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def save(
+    path: String,
+    options: Unit,
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: String,
+    options: Unit,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* result */ Any, Unit]
+  ): Unit = js.native
   def save(path: String, options: PlusNativeObjBitmapSaveOptions): Unit = js.native
   def save(
     path: String,
     options: PlusNativeObjBitmapSaveOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def save(
     path: String,
     options: PlusNativeObjBitmapSaveOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
+  def save(
+    path: String,
+    options: PlusNativeObjBitmapSaveOptions,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* result */ Any, Unit]
+  ): Unit = js.native
+  def save(path: Unit, options: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def save(
+    path: Unit,
+    options: Unit,
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: Unit,
+    options: Unit,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* result */ Any, Unit]
+  ): Unit = js.native
+  def save(path: Unit, options: PlusNativeObjBitmapSaveOptions): Unit = js.native
+  def save(
+    path: Unit,
+    options: PlusNativeObjBitmapSaveOptions,
+    successCallback: js.Function1[/* result */ Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: Unit,
+    options: PlusNativeObjBitmapSaveOptions,
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: Unit,
+    options: PlusNativeObjBitmapSaveOptions,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* result */ Any, Unit]
+  ): Unit = js.native
+  
   /**
     * 获取图片的Base64编码数据
     * 读取图片的数据内容，并转换为Base64编码格式字符串。
@@ -108,4 +183,3 @@ trait PlusNativeObjBitmap extends js.Object {
     */
   def toBase64Data(): String = js.native
 }
-

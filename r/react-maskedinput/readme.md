@@ -10,15 +10,12 @@ Masked <input/> React component
 | ------------------ | :-------------: |
 | Full name          | react-maskedinput |
 | Keywords           | react, masked, input, react-component |
-| # releases         | 2 |
-| # dependents       | 41 |
-| # downloads        | 1268493 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 92373.33333333333 |
+| # stars            | 714.0 |
 
 ## Links
-- [Homepage](https://github.com/insin/react-maskedinput)
-- [Bugs](https://github.com/insin/react-maskedinput/issues)
-- [Repository](https://github.com/insin/react-maskedinput)
 - [Npm](https://www.npmjs.com/package/react-maskedinput)
     
 

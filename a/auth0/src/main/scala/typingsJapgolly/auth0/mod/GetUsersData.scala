@@ -1,42 +1,66 @@
 package typingsJapgolly.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetUsersData extends js.Object {
+trait GetUsersData extends StObject {
+  
   var connection: js.UndefOr[String] = js.undefined
+  
   var fields: js.UndefOr[String] = js.undefined
+  
   var include_fields: js.UndefOr[Boolean] = js.undefined
+  
   var page: js.UndefOr[Double] = js.undefined
+  
   var per_page: js.UndefOr[Double] = js.undefined
+  
   var q: js.UndefOr[String] = js.undefined
+  
   var search_engine: js.UndefOr[String] = js.undefined
+  
   var sort: js.UndefOr[String] = js.undefined
 }
-
 object GetUsersData {
-  @scala.inline
-  def apply(
-    connection: String = null,
-    fields: String = null,
-    include_fields: js.UndefOr[Boolean] = js.undefined,
-    page: Int | Double = null,
-    per_page: Int | Double = null,
-    q: String = null,
-    search_engine: String = null,
-    sort: String = null
-  ): GetUsersData = {
+  
+  inline def apply(): GetUsersData = {
     val __obj = js.Dynamic.literal()
-    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_fields)) __obj.updateDynamic("include_fields")(include_fields.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (search_engine != null) __obj.updateDynamic("search_engine")(search_engine.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsersData]
   }
+  
+  extension [Self <: GetUsersData](x: Self) {
+    
+    inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setInclude_fields(value: Boolean): Self = StObject.set(x, "include_fields", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_fieldsUndefined: Self = StObject.set(x, "include_fields", js.undefined)
+    
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    
+    inline def setSearch_engine(value: String): Self = StObject.set(x, "search_engine", value.asInstanceOf[js.Any])
+    
+    inline def setSearch_engineUndefined: Self = StObject.set(x, "search_engine", js.undefined)
+    
+    inline def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+  }
 }
-

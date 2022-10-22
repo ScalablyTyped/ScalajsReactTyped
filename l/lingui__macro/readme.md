@@ -1,7 +1,7 @@
 
 # Scala.js typings for lingui__macro
 
-Typings are for version 2.7
+Typings are for version 3.14.0
 
 ## Library description:
 Macro for generating messages in ICU MessageFormat syntax
@@ -10,10 +10,10 @@ Macro for generating messages in ICU MessageFormat syntax
 | ------------------ | :-------------: |
 | Full name          | @lingui/macro |
 | Keywords           | babel-plugin-macros |
-| # releases         | 20 |
-| # dependents       | 3 |
-| # downloads        | 829178 |
-| # stars            | 0 |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 335308.6666666667 |
+| # stars            | 3451.0 |
 
 ## Links
 - [Homepage](https://github.com/lingui/js-lingui#readme)
@@ -24,7 +24,7 @@ Macro for generating messages in ICU MessageFormat syntax
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,33 +1,57 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.BatchEditEndEditing event.
   */
-@JSGlobal("ASPxClientGridViewBatchEditEndEditingEventArgs")
-@js.native
-class ASPxClientGridViewBatchEditEndEditingEventArgs protected () extends ASPxClientCancelEventArgs {
+trait ASPxClientGridViewBatchEditEndEditingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
-    * Initializes a new instance of the ASPxClientGridViewBatchEditEndEditingEventArgs class.
-    * @param visibleIndex An integer value that specifies the visible index.
-    * @param rowValues An object that provides the row values.
-    * @param key An object that provides the row key.
+    * Gets the column to which the edited cell belongs.
     */
-  def this(visibleIndex: Double, rowValues: js.Any, key: js.Any) = this()
+  var focusedColumn: ASPxClientGridViewColumn
+  
   /**
     * Gets the row's key.
     */
-  var key: js.Any = js.native
+  var key: Any
+  
   /**
     * Gets a hashtable that maintains information about editable cells.
     */
-  var rowValues: js.Any = js.native
+  var rowValues: Any
+  
   /**
     * Gets the visible index of the row whose cells has been edited.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
-
+object ASPxClientGridViewBatchEditEndEditingEventArgs {
+  
+  inline def apply(
+    cancel: Boolean,
+    focusedColumn: ASPxClientGridViewColumn,
+    key: Any,
+    rowValues: Any,
+    visibleIndex: Double
+  ): ASPxClientGridViewBatchEditEndEditingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], focusedColumn = focusedColumn.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], rowValues = rowValues.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientGridViewBatchEditEndEditingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientGridViewBatchEditEndEditingEventArgs](x: Self) {
+    
+    inline def setFocusedColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
+    
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setRowValues(value: Any): Self = StObject.set(x, "rowValues", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+  }
+}

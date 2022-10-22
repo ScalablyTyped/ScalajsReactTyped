@@ -1,20 +1,28 @@
 package typingsJapgolly.nano.mod
 
-import typingsJapgolly.nano.AnonRev
+import typingsJapgolly.nano.anon.Rev
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentResponseRow[D] extends DocumentResponseRowMeta {
-  var doc: js.UndefOr[D with Document] = js.undefined
+/** Bulk API per-document response with document body. */
+trait DocumentResponseRow[D]
+  extends StObject
+     with DocumentResponseRowMeta {
+  
+  var doc: js.UndefOr[D & Document] = js.undefined
 }
-
 object DocumentResponseRow {
-  @scala.inline
-  def apply[D](id: String, key: String, value: AnonRev, doc: D with Document = null): DocumentResponseRow[D] = {
+  
+  inline def apply[D](id: String, key: String, value: Rev): DocumentResponseRow[D] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentResponseRow[D]]
   }
+  
+  extension [Self <: DocumentResponseRow[?], D](x: Self & DocumentResponseRow[D]) {
+    
+    inline def setDoc(value: D & Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+    
+    inline def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
+  }
 }
-

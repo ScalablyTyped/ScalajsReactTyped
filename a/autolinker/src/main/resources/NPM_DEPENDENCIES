@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "autolinker" : "3.11.1"
+      "autolinker" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "autolinker" : "3.11.1"
+      "autolinker" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

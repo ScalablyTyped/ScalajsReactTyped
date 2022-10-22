@@ -1,690 +1,743 @@
 package typingsJapgolly.turndown
 
 import typingsJapgolly.turndown.mod.TagName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object turndownStrings {
-  @js.native
-  sealed trait `-_` extends js.Object
-  
-  @js.native
-  sealed trait Asterisk extends js.Object
-  
-  @js.native
-  sealed trait AsteriskAsterisk extends js.Object
-  
-  @js.native
-  sealed trait GraveaccentGraveaccentGraveaccent extends js.Object
-  
-  @js.native
-  sealed trait Plussign extends js.Object
-  
-  @js.native
-  sealed trait TildeTildeTilde extends js.Object
-  
-  @js.native
-  sealed trait __ extends js.Object
-  
-  @js.native
-  sealed trait _underscore extends js.Object
   
   @js.native
-  sealed trait a extends TagName
+  sealed trait `-_` extends StObject
+  inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
-  sealed trait abbr extends TagName
+  sealed trait Asterisk extends StObject
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
-  sealed trait address extends TagName
+  sealed trait AsteriskAsterisk extends StObject
+  inline def AsteriskAsterisk: AsteriskAsterisk = "**".asInstanceOf[AsteriskAsterisk]
   
   @js.native
-  sealed trait applet extends TagName
+  sealed trait GraveaccentGraveaccentGraveaccent extends StObject
+  inline def GraveaccentGraveaccentGraveaccent: GraveaccentGraveaccentGraveaccent = "```".asInstanceOf[GraveaccentGraveaccentGraveaccent]
   
   @js.native
-  sealed trait area extends TagName
+  sealed trait Plussign extends StObject
+  inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
   @js.native
-  sealed trait article extends TagName
+  sealed trait TildeTildeTilde extends StObject
+  inline def TildeTildeTilde: TildeTildeTilde = "~~~".asInstanceOf[TildeTildeTilde]
   
   @js.native
-  sealed trait aside extends TagName
+  sealed trait __ extends StObject
+  inline def __ : __ = "__".asInstanceOf[__]
   
   @js.native
-  sealed trait atx extends js.Object
+  sealed trait _underscore extends StObject
+  inline def _underscore: _underscore = "_".asInstanceOf[_underscore]
   
   @js.native
-  sealed trait audio extends TagName
+  sealed trait a
+    extends StObject
+       with TagName
+  inline def a: a = "a".asInstanceOf[a]
   
   @js.native
-  sealed trait b extends TagName
+  sealed trait abbr
+    extends StObject
+       with TagName
+  inline def abbr: abbr = "abbr".asInstanceOf[abbr]
   
   @js.native
-  sealed trait base extends TagName
+  sealed trait address
+    extends StObject
+       with TagName
+  inline def address: address = "address".asInstanceOf[address]
   
   @js.native
-  sealed trait basefont extends TagName
+  sealed trait area
+    extends StObject
+       with TagName
+  inline def area: area = "area".asInstanceOf[area]
   
   @js.native
-  sealed trait bdi extends TagName
+  sealed trait article
+    extends StObject
+       with TagName
+  inline def article: article = "article".asInstanceOf[article]
   
   @js.native
-  sealed trait bdo extends TagName
+  sealed trait aside
+    extends StObject
+       with TagName
+  inline def aside: aside = "aside".asInstanceOf[aside]
   
   @js.native
-  sealed trait blockquote extends TagName
+  sealed trait atx extends StObject
+  inline def atx: atx = "atx".asInstanceOf[atx]
   
   @js.native
-  sealed trait body extends TagName
+  sealed trait audio
+    extends StObject
+       with TagName
+  inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait br extends TagName
+  sealed trait b
+    extends StObject
+       with TagName
+  inline def b: b = "b".asInstanceOf[b]
   
   @js.native
-  sealed trait button extends TagName
+  sealed trait base
+    extends StObject
+       with TagName
+  inline def base: base = "base".asInstanceOf[base]
   
   @js.native
-  sealed trait canvas extends TagName
+  sealed trait bdi
+    extends StObject
+       with TagName
+  inline def bdi: bdi = "bdi".asInstanceOf[bdi]
   
   @js.native
-  sealed trait caption extends TagName
+  sealed trait bdo
+    extends StObject
+       with TagName
+  inline def bdo: bdo = "bdo".asInstanceOf[bdo]
   
   @js.native
-  sealed trait cite extends TagName
+  sealed trait blockquote
+    extends StObject
+       with TagName
+  inline def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   
   @js.native
-  sealed trait code extends TagName
+  sealed trait body
+    extends StObject
+       with TagName
+  inline def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait col extends TagName
+  sealed trait br
+    extends StObject
+       with TagName
+  inline def br: br = "br".asInstanceOf[br]
   
   @js.native
-  sealed trait colgroup extends TagName
+  sealed trait button
+    extends StObject
+       with TagName
+  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait collapsed extends js.Object
+  sealed trait canvas
+    extends StObject
+       with TagName
+  inline def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
-  sealed trait data extends TagName
+  sealed trait caption
+    extends StObject
+       with TagName
+  inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
-  sealed trait datalist extends TagName
+  sealed trait cite
+    extends StObject
+       with TagName
+  inline def cite: cite = "cite".asInstanceOf[cite]
   
   @js.native
-  sealed trait dd extends TagName
+  sealed trait code
+    extends StObject
+       with TagName
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
-  sealed trait del extends TagName
+  sealed trait col
+    extends StObject
+       with TagName
+  inline def col: col = "col".asInstanceOf[col]
   
   @js.native
-  sealed trait details extends TagName
+  sealed trait colgroup
+    extends StObject
+       with TagName
+  inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
-  sealed trait dfn extends TagName
+  sealed trait collapsed extends StObject
+  inline def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
   
   @js.native
-  sealed trait dialog extends TagName
+  sealed trait data
+    extends StObject
+       with TagName
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait dir extends TagName
+  sealed trait datalist
+    extends StObject
+       with TagName
+  inline def datalist: datalist = "datalist".asInstanceOf[datalist]
   
   @js.native
-  sealed trait div extends TagName
+  sealed trait dd
+    extends StObject
+       with TagName
+  inline def dd: dd = "dd".asInstanceOf[dd]
   
   @js.native
-  sealed trait dl extends TagName
+  sealed trait del
+    extends StObject
+       with TagName
+  inline def del: del = "del".asInstanceOf[del]
   
   @js.native
-  sealed trait dt extends TagName
+  sealed trait details
+    extends StObject
+       with TagName
+  inline def details: details = "details".asInstanceOf[details]
   
   @js.native
-  sealed trait em extends TagName
+  sealed trait dfn
+    extends StObject
+       with TagName
+  inline def dfn: dfn = "dfn".asInstanceOf[dfn]
   
   @js.native
-  sealed trait embed extends TagName
+  sealed trait dialog
+    extends StObject
+       with TagName
+  inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait fenced extends js.Object
+  sealed trait div
+    extends StObject
+       with TagName
+  inline def div: div = "div".asInstanceOf[div]
   
   @js.native
-  sealed trait fieldset extends TagName
+  sealed trait dl
+    extends StObject
+       with TagName
+  inline def dl: dl = "dl".asInstanceOf[dl]
   
   @js.native
-  sealed trait figcaption extends TagName
+  sealed trait dt
+    extends StObject
+       with TagName
+  inline def dt: dt = "dt".asInstanceOf[dt]
   
   @js.native
-  sealed trait figure extends TagName
+  sealed trait em
+    extends StObject
+       with TagName
+  inline def em: em = "em".asInstanceOf[em]
   
   @js.native
-  sealed trait font extends TagName
+  sealed trait embed
+    extends StObject
+       with TagName
+  inline def embed: embed = "embed".asInstanceOf[embed]
   
   @js.native
-  sealed trait footer extends TagName
+  sealed trait fenced extends StObject
+  inline def fenced: fenced = "fenced".asInstanceOf[fenced]
   
   @js.native
-  sealed trait form extends TagName
+  sealed trait fieldset
+    extends StObject
+       with TagName
+  inline def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
   
   @js.native
-  sealed trait frame extends TagName
+  sealed trait figcaption
+    extends StObject
+       with TagName
+  inline def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
   
   @js.native
-  sealed trait frameset extends TagName
+  sealed trait figure
+    extends StObject
+       with TagName
+  inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
-  sealed trait full extends js.Object
+  sealed trait footer
+    extends StObject
+       with TagName
+  inline def footer: footer = "footer".asInstanceOf[footer]
   
   @js.native
-  sealed trait h1 extends TagName
+  sealed trait form
+    extends StObject
+       with TagName
+  inline def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait h2 extends TagName
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait h3 extends TagName
+  sealed trait h1
+    extends StObject
+       with TagName
+  inline def h1: h1 = "h1".asInstanceOf[h1]
   
   @js.native
-  sealed trait h4 extends TagName
+  sealed trait h2
+    extends StObject
+       with TagName
+  inline def h2: h2 = "h2".asInstanceOf[h2]
   
   @js.native
-  sealed trait h5 extends TagName
+  sealed trait h3
+    extends StObject
+       with TagName
+  inline def h3: h3 = "h3".asInstanceOf[h3]
   
   @js.native
-  sealed trait h6 extends TagName
+  sealed trait h4
+    extends StObject
+       with TagName
+  inline def h4: h4 = "h4".asInstanceOf[h4]
   
   @js.native
-  sealed trait head extends TagName
+  sealed trait h5
+    extends StObject
+       with TagName
+  inline def h5: h5 = "h5".asInstanceOf[h5]
   
   @js.native
-  sealed trait header extends TagName
+  sealed trait h6
+    extends StObject
+       with TagName
+  inline def h6: h6 = "h6".asInstanceOf[h6]
   
   @js.native
-  sealed trait hgroup extends TagName
+  sealed trait head
+    extends StObject
+       with TagName
+  inline def head: head = "head".asInstanceOf[head]
   
   @js.native
-  sealed trait hr extends TagName
+  sealed trait header
+    extends StObject
+       with TagName
+  inline def header: header = "header".asInstanceOf[header]
   
   @js.native
-  sealed trait html extends TagName
+  sealed trait hgroup
+    extends StObject
+       with TagName
+  inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
-  sealed trait i extends TagName
+  sealed trait hr
+    extends StObject
+       with TagName
+  inline def hr: hr = "hr".asInstanceOf[hr]
   
   @js.native
-  sealed trait iframe extends TagName
+  sealed trait html
+    extends StObject
+       with TagName
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
-  sealed trait img extends TagName
+  sealed trait i
+    extends StObject
+       with TagName
+  inline def i: i = "i".asInstanceOf[i]
   
   @js.native
-  sealed trait indented extends js.Object
+  sealed trait iframe
+    extends StObject
+       with TagName
+  inline def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
-  sealed trait inlined extends js.Object
+  sealed trait img
+    extends StObject
+       with TagName
+  inline def img: img = "img".asInstanceOf[img]
   
   @js.native
-  sealed trait input extends TagName
+  sealed trait indented extends StObject
+  inline def indented: indented = "indented".asInstanceOf[indented]
   
   @js.native
-  sealed trait ins extends TagName
+  sealed trait inlined extends StObject
+  inline def inlined: inlined = "inlined".asInstanceOf[inlined]
   
   @js.native
-  sealed trait kbd extends TagName
+  sealed trait input
+    extends StObject
+       with TagName
+  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
-  sealed trait label extends TagName
+  sealed trait ins
+    extends StObject
+       with TagName
+  inline def ins: ins = "ins".asInstanceOf[ins]
   
   @js.native
-  sealed trait legend extends TagName
+  sealed trait kbd
+    extends StObject
+       with TagName
+  inline def kbd: kbd = "kbd".asInstanceOf[kbd]
   
   @js.native
-  sealed trait li extends TagName
+  sealed trait label
+    extends StObject
+       with TagName
+  inline def label: label = "label".asInstanceOf[label]
   
   @js.native
-  sealed trait link extends TagName
+  sealed trait legend
+    extends StObject
+       with TagName
+  inline def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
-  sealed trait main extends TagName
+  sealed trait li
+    extends StObject
+       with TagName
+  inline def li: li = "li".asInstanceOf[li]
   
   @js.native
-  sealed trait map extends TagName
+  sealed trait link
+    extends StObject
+       with TagName
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait mark extends TagName
+  sealed trait main
+    extends StObject
+       with TagName
+  inline def main: main = "main".asInstanceOf[main]
   
   @js.native
-  sealed trait marquee extends TagName
+  sealed trait map
+    extends StObject
+       with TagName
+  inline def map: map = "map".asInstanceOf[map]
   
   @js.native
-  sealed trait menu extends TagName
+  sealed trait mark
+    extends StObject
+       with TagName
+  inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
-  sealed trait meta extends TagName
+  sealed trait menu
+    extends StObject
+       with TagName
+  inline def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
-  sealed trait meter extends TagName
+  sealed trait meta
+    extends StObject
+       with TagName
+  inline def meta: meta = "meta".asInstanceOf[meta]
   
   @js.native
-  sealed trait nav extends TagName
+  sealed trait meter
+    extends StObject
+       with TagName
+  inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
-  sealed trait noscript extends TagName
+  sealed trait nav
+    extends StObject
+       with TagName
+  inline def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
-  sealed trait `object` extends TagName
+  sealed trait noscript
+    extends StObject
+       with TagName
+  inline def noscript: noscript = "noscript".asInstanceOf[noscript]
   
   @js.native
-  sealed trait ol extends TagName
+  sealed trait `object`
+    extends StObject
+       with TagName
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait optgroup extends TagName
+  sealed trait ol
+    extends StObject
+       with TagName
+  inline def ol: ol = "ol".asInstanceOf[ol]
   
   @js.native
-  sealed trait option extends TagName
+  sealed trait optgroup
+    extends StObject
+       with TagName
+  inline def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   
   @js.native
-  sealed trait output extends TagName
+  sealed trait option
+    extends StObject
+       with TagName
+  inline def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait p extends TagName
+  sealed trait output
+    extends StObject
+       with TagName
+  inline def output: output = "output".asInstanceOf[output]
   
   @js.native
-  sealed trait param extends TagName
+  sealed trait p
+    extends StObject
+       with TagName
+  inline def p: p = "p".asInstanceOf[p]
   
   @js.native
-  sealed trait picture extends TagName
+  sealed trait picture
+    extends StObject
+       with TagName
+  inline def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
-  sealed trait pre extends TagName
+  sealed trait pre
+    extends StObject
+       with TagName
+  inline def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
-  sealed trait progress extends TagName
+  sealed trait progress
+    extends StObject
+       with TagName
+  inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait q extends TagName
+  sealed trait q
+    extends StObject
+       with TagName
+  inline def q: q = "q".asInstanceOf[q]
   
   @js.native
-  sealed trait referenced extends js.Object
+  sealed trait referenced extends StObject
+  inline def referenced: referenced = "referenced".asInstanceOf[referenced]
   
   @js.native
-  sealed trait rp extends TagName
+  sealed trait rp
+    extends StObject
+       with TagName
+  inline def rp: rp = "rp".asInstanceOf[rp]
   
   @js.native
-  sealed trait rt extends TagName
+  sealed trait rt
+    extends StObject
+       with TagName
+  inline def rt: rt = "rt".asInstanceOf[rt]
   
   @js.native
-  sealed trait ruby extends TagName
+  sealed trait ruby
+    extends StObject
+       with TagName
+  inline def ruby: ruby = "ruby".asInstanceOf[ruby]
   
   @js.native
-  sealed trait s extends TagName
+  sealed trait s
+    extends StObject
+       with TagName
+  inline def s: s = "s".asInstanceOf[s]
   
   @js.native
-  sealed trait samp extends TagName
+  sealed trait samp
+    extends StObject
+       with TagName
+  inline def samp: samp = "samp".asInstanceOf[samp]
   
   @js.native
-  sealed trait script extends TagName
+  sealed trait script
+    extends StObject
+       with TagName
+  inline def script: script = "script".asInstanceOf[script]
   
   @js.native
-  sealed trait section extends TagName
+  sealed trait section
+    extends StObject
+       with TagName
+  inline def section: section = "section".asInstanceOf[section]
   
   @js.native
-  sealed trait select extends TagName
+  sealed trait select
+    extends StObject
+       with TagName
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait setext extends js.Object
+  sealed trait setext extends StObject
+  inline def setext: setext = "setext".asInstanceOf[setext]
   
   @js.native
-  sealed trait shortcut extends js.Object
+  sealed trait shortcut extends StObject
+  inline def shortcut: shortcut = "shortcut".asInstanceOf[shortcut]
   
   @js.native
-  sealed trait slot extends TagName
+  sealed trait slot
+    extends StObject
+       with TagName
+  inline def slot: slot = "slot".asInstanceOf[slot]
   
   @js.native
-  sealed trait small extends TagName
+  sealed trait small
+    extends StObject
+       with TagName
+  inline def small: small = "small".asInstanceOf[small]
   
   @js.native
-  sealed trait source extends TagName
+  sealed trait source
+    extends StObject
+       with TagName
+  inline def source: source = "source".asInstanceOf[source]
   
   @js.native
-  sealed trait span extends TagName
+  sealed trait span
+    extends StObject
+       with TagName
+  inline def span: span = "span".asInstanceOf[span]
   
   @js.native
-  sealed trait strong extends TagName
+  sealed trait strong
+    extends StObject
+       with TagName
+  inline def strong: strong = "strong".asInstanceOf[strong]
   
   @js.native
-  sealed trait style extends TagName
+  sealed trait style
+    extends StObject
+       with TagName
+  inline def style: style = "style".asInstanceOf[style]
   
   @js.native
-  sealed trait sub extends TagName
+  sealed trait sub
+    extends StObject
+       with TagName
+  inline def sub: sub = "sub".asInstanceOf[sub]
   
   @js.native
-  sealed trait summary extends TagName
+  sealed trait summary
+    extends StObject
+       with TagName
+  inline def summary: summary = "summary".asInstanceOf[summary]
   
   @js.native
-  sealed trait sup extends TagName
+  sealed trait sup
+    extends StObject
+       with TagName
+  inline def sup: sup = "sup".asInstanceOf[sup]
   
   @js.native
-  sealed trait table extends TagName
+  sealed trait table
+    extends StObject
+       with TagName
+  inline def table: table = "table".asInstanceOf[table]
   
   @js.native
-  sealed trait tbody extends TagName
+  sealed trait tbody
+    extends StObject
+       with TagName
+  inline def tbody: tbody = "tbody".asInstanceOf[tbody]
   
   @js.native
-  sealed trait td extends TagName
+  sealed trait td
+    extends StObject
+       with TagName
+  inline def td: td = "td".asInstanceOf[td]
   
   @js.native
-  sealed trait template extends TagName
+  sealed trait template
+    extends StObject
+       with TagName
+  inline def template: template = "template".asInstanceOf[template]
   
   @js.native
-  sealed trait textarea extends TagName
+  sealed trait textarea
+    extends StObject
+       with TagName
+  inline def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
-  sealed trait tfoot extends TagName
+  sealed trait tfoot
+    extends StObject
+       with TagName
+  inline def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
   
   @js.native
-  sealed trait th extends TagName
+  sealed trait th
+    extends StObject
+       with TagName
+  inline def th: th = "th".asInstanceOf[th]
   
   @js.native
-  sealed trait thead extends TagName
+  sealed trait thead
+    extends StObject
+       with TagName
+  inline def thead: thead = "thead".asInstanceOf[thead]
   
   @js.native
-  sealed trait time extends TagName
+  sealed trait time
+    extends StObject
+       with TagName
+  inline def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait title extends TagName
+  sealed trait title
+    extends StObject
+       with TagName
+  inline def title: title = "title".asInstanceOf[title]
   
   @js.native
-  sealed trait tr extends TagName
+  sealed trait tr
+    extends StObject
+       with TagName
+  inline def tr: tr = "tr".asInstanceOf[tr]
   
   @js.native
-  sealed trait track extends TagName
+  sealed trait track
+    extends StObject
+       with TagName
+  inline def track: track = "track".asInstanceOf[track]
   
   @js.native
-  sealed trait u extends TagName
+  sealed trait u
+    extends StObject
+       with TagName
+  inline def u: u = "u".asInstanceOf[u]
   
   @js.native
-  sealed trait ul extends TagName
+  sealed trait ul
+    extends StObject
+       with TagName
+  inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
-  sealed trait `var` extends TagName
+  sealed trait `var`
+    extends StObject
+       with TagName
+  inline def `var`: `var` = "var".asInstanceOf[`var`]
   
   @js.native
-  sealed trait video extends TagName
+  sealed trait video
+    extends StObject
+       with TagName
+  inline def video: video = "video".asInstanceOf[video]
   
   @js.native
-  sealed trait wbr extends TagName
-  
-  @scala.inline
-  def `-_`: `-_` = "-".asInstanceOf[`-_`]
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  @scala.inline
-  def AsteriskAsterisk: AsteriskAsterisk = "**".asInstanceOf[AsteriskAsterisk]
-  @scala.inline
-  def GraveaccentGraveaccentGraveaccent: GraveaccentGraveaccentGraveaccent = "```".asInstanceOf[GraveaccentGraveaccentGraveaccent]
-  @scala.inline
-  def Plussign: Plussign = "+".asInstanceOf[Plussign]
-  @scala.inline
-  def TildeTildeTilde: TildeTildeTilde = "~~~".asInstanceOf[TildeTildeTilde]
-  @scala.inline
-  def __ : __ = "__".asInstanceOf[__]
-  @scala.inline
-  def _underscore: _underscore = "_".asInstanceOf[_underscore]
-  @scala.inline
-  def a: a = "a".asInstanceOf[a]
-  @scala.inline
-  def abbr: abbr = "abbr".asInstanceOf[abbr]
-  @scala.inline
-  def address: address = "address".asInstanceOf[address]
-  @scala.inline
-  def applet: applet = "applet".asInstanceOf[applet]
-  @scala.inline
-  def area: area = "area".asInstanceOf[area]
-  @scala.inline
-  def article: article = "article".asInstanceOf[article]
-  @scala.inline
-  def aside: aside = "aside".asInstanceOf[aside]
-  @scala.inline
-  def atx: atx = "atx".asInstanceOf[atx]
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
-  @scala.inline
-  def b: b = "b".asInstanceOf[b]
-  @scala.inline
-  def base: base = "base".asInstanceOf[base]
-  @scala.inline
-  def basefont: basefont = "basefont".asInstanceOf[basefont]
-  @scala.inline
-  def bdi: bdi = "bdi".asInstanceOf[bdi]
-  @scala.inline
-  def bdo: bdo = "bdo".asInstanceOf[bdo]
-  @scala.inline
-  def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
-  @scala.inline
-  def br: br = "br".asInstanceOf[br]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def canvas: canvas = "canvas".asInstanceOf[canvas]
-  @scala.inline
-  def caption: caption = "caption".asInstanceOf[caption]
-  @scala.inline
-  def cite: cite = "cite".asInstanceOf[cite]
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def col: col = "col".asInstanceOf[col]
-  @scala.inline
-  def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
-  @scala.inline
-  def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def datalist: datalist = "datalist".asInstanceOf[datalist]
-  @scala.inline
-  def dd: dd = "dd".asInstanceOf[dd]
-  @scala.inline
-  def del: del = "del".asInstanceOf[del]
-  @scala.inline
-  def details: details = "details".asInstanceOf[details]
-  @scala.inline
-  def dfn: dfn = "dfn".asInstanceOf[dfn]
-  @scala.inline
-  def dialog: dialog = "dialog".asInstanceOf[dialog]
-  @scala.inline
-  def dir: dir = "dir".asInstanceOf[dir]
-  @scala.inline
-  def div: div = "div".asInstanceOf[div]
-  @scala.inline
-  def dl: dl = "dl".asInstanceOf[dl]
-  @scala.inline
-  def dt: dt = "dt".asInstanceOf[dt]
-  @scala.inline
-  def em: em = "em".asInstanceOf[em]
-  @scala.inline
-  def embed: embed = "embed".asInstanceOf[embed]
-  @scala.inline
-  def fenced: fenced = "fenced".asInstanceOf[fenced]
-  @scala.inline
-  def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
-  @scala.inline
-  def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
-  @scala.inline
-  def figure: figure = "figure".asInstanceOf[figure]
-  @scala.inline
-  def font: font = "font".asInstanceOf[font]
-  @scala.inline
-  def footer: footer = "footer".asInstanceOf[footer]
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
-  @scala.inline
-  def frame: frame = "frame".asInstanceOf[frame]
-  @scala.inline
-  def frameset: frameset = "frameset".asInstanceOf[frameset]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
-  @scala.inline
-  def h1: h1 = "h1".asInstanceOf[h1]
-  @scala.inline
-  def h2: h2 = "h2".asInstanceOf[h2]
-  @scala.inline
-  def h3: h3 = "h3".asInstanceOf[h3]
-  @scala.inline
-  def h4: h4 = "h4".asInstanceOf[h4]
-  @scala.inline
-  def h5: h5 = "h5".asInstanceOf[h5]
-  @scala.inline
-  def h6: h6 = "h6".asInstanceOf[h6]
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
-  @scala.inline
-  def header: header = "header".asInstanceOf[header]
-  @scala.inline
-  def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
-  @scala.inline
-  def hr: hr = "hr".asInstanceOf[hr]
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def i: i = "i".asInstanceOf[i]
-  @scala.inline
-  def iframe: iframe = "iframe".asInstanceOf[iframe]
-  @scala.inline
-  def img: img = "img".asInstanceOf[img]
-  @scala.inline
-  def indented: indented = "indented".asInstanceOf[indented]
-  @scala.inline
-  def inlined: inlined = "inlined".asInstanceOf[inlined]
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
-  def ins: ins = "ins".asInstanceOf[ins]
-  @scala.inline
-  def kbd: kbd = "kbd".asInstanceOf[kbd]
-  @scala.inline
-  def label: label = "label".asInstanceOf[label]
-  @scala.inline
-  def legend: legend = "legend".asInstanceOf[legend]
-  @scala.inline
-  def li: li = "li".asInstanceOf[li]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def main: main = "main".asInstanceOf[main]
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
-  @scala.inline
-  def mark: mark = "mark".asInstanceOf[mark]
-  @scala.inline
-  def marquee: marquee = "marquee".asInstanceOf[marquee]
-  @scala.inline
-  def menu: menu = "menu".asInstanceOf[menu]
-  @scala.inline
-  def meta: meta = "meta".asInstanceOf[meta]
-  @scala.inline
-  def meter: meter = "meter".asInstanceOf[meter]
-  @scala.inline
-  def nav: nav = "nav".asInstanceOf[nav]
-  @scala.inline
-  def noscript: noscript = "noscript".asInstanceOf[noscript]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def ol: ol = "ol".asInstanceOf[ol]
-  @scala.inline
-  def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
-  @scala.inline
-  def option: option = "option".asInstanceOf[option]
-  @scala.inline
-  def output: output = "output".asInstanceOf[output]
-  @scala.inline
-  def p: p = "p".asInstanceOf[p]
-  @scala.inline
-  def param: param = "param".asInstanceOf[param]
-  @scala.inline
-  def picture: picture = "picture".asInstanceOf[picture]
-  @scala.inline
-  def pre: pre = "pre".asInstanceOf[pre]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def q: q = "q".asInstanceOf[q]
-  @scala.inline
-  def referenced: referenced = "referenced".asInstanceOf[referenced]
-  @scala.inline
-  def rp: rp = "rp".asInstanceOf[rp]
-  @scala.inline
-  def rt: rt = "rt".asInstanceOf[rt]
-  @scala.inline
-  def ruby: ruby = "ruby".asInstanceOf[ruby]
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
-  @scala.inline
-  def samp: samp = "samp".asInstanceOf[samp]
-  @scala.inline
-  def script: script = "script".asInstanceOf[script]
-  @scala.inline
-  def section: section = "section".asInstanceOf[section]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def setext: setext = "setext".asInstanceOf[setext]
-  @scala.inline
-  def shortcut: shortcut = "shortcut".asInstanceOf[shortcut]
-  @scala.inline
-  def slot: slot = "slot".asInstanceOf[slot]
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
-  @scala.inline
-  def source: source = "source".asInstanceOf[source]
-  @scala.inline
-  def span: span = "span".asInstanceOf[span]
-  @scala.inline
-  def strong: strong = "strong".asInstanceOf[strong]
-  @scala.inline
-  def style: style = "style".asInstanceOf[style]
-  @scala.inline
-  def sub: sub = "sub".asInstanceOf[sub]
-  @scala.inline
-  def summary: summary = "summary".asInstanceOf[summary]
-  @scala.inline
-  def sup: sup = "sup".asInstanceOf[sup]
-  @scala.inline
-  def table: table = "table".asInstanceOf[table]
-  @scala.inline
-  def tbody: tbody = "tbody".asInstanceOf[tbody]
-  @scala.inline
-  def td: td = "td".asInstanceOf[td]
-  @scala.inline
-  def template: template = "template".asInstanceOf[template]
-  @scala.inline
-  def textarea: textarea = "textarea".asInstanceOf[textarea]
-  @scala.inline
-  def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
-  @scala.inline
-  def th: th = "th".asInstanceOf[th]
-  @scala.inline
-  def thead: thead = "thead".asInstanceOf[thead]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def title: title = "title".asInstanceOf[title]
-  @scala.inline
-  def tr: tr = "tr".asInstanceOf[tr]
-  @scala.inline
-  def track: track = "track".asInstanceOf[track]
-  @scala.inline
-  def u: u = "u".asInstanceOf[u]
-  @scala.inline
-  def ul: ul = "ul".asInstanceOf[ul]
-  @scala.inline
-  def `var`: `var` = "var".asInstanceOf[`var`]
-  @scala.inline
-  def video: video = "video".asInstanceOf[video]
-  @scala.inline
-  def wbr: wbr = "wbr".asInstanceOf[wbr]
+  sealed trait wbr
+    extends StObject
+       with TagName
+  inline def wbr: wbr = "wbr".asInstanceOf[wbr]
 }
-

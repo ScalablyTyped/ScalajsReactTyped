@@ -1,46 +1,60 @@
 package typingsJapgolly.slickgrid.Slick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SlickGridCheckBoxSelectColumnOptions extends PluginOptions {
+trait SlickGridCheckBoxSelectColumnOptions
+  extends StObject
+     with PluginOptions {
+  
   /**
     * Column to add the checkbox to
     * @default "_checkbox_selector"
     */
   var columnId: js.UndefOr[String] = js.undefined
+  
   /**
     * CSS class to be added to cells in this column
     * @default null
     */
   var cssClass: js.UndefOr[String] = js.undefined
+  
   /**
     * Tooltip text to display for this column
     * @default "Select/Deselect All"
     */
   var toolTip: js.UndefOr[String] = js.undefined
+  
   /**
     * Width of the column
     * @default 30
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object SlickGridCheckBoxSelectColumnOptions {
-  @scala.inline
-  def apply(
-    columnId: String = null,
-    cssClass: String = null,
-    toolTip: String = null,
-    width: Int | Double = null
-  ): SlickGridCheckBoxSelectColumnOptions = {
+  
+  inline def apply(): SlickGridCheckBoxSelectColumnOptions = {
     val __obj = js.Dynamic.literal()
-    if (columnId != null) __obj.updateDynamic("columnId")(columnId.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlickGridCheckBoxSelectColumnOptions]
   }
+  
+  extension [Self <: SlickGridCheckBoxSelectColumnOptions](x: Self) {
+    
+    inline def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
+    
+    inline def setColumnIdUndefined: Self = StObject.set(x, "columnId", js.undefined)
+    
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    
+    inline def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
+    
+    inline def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

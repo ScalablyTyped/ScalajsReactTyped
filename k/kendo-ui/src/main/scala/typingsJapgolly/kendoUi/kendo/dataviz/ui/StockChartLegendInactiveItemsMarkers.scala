@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockChartLegendInactiveItemsMarkers extends js.Object {
+trait StockChartLegendInactiveItemsMarkers extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
 }
-
 object StockChartLegendInactiveItemsMarkers {
-  @scala.inline
-  def apply(color: String = null): StockChartLegendInactiveItemsMarkers = {
+  
+  inline def apply(): StockChartLegendInactiveItemsMarkers = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartLegendInactiveItemsMarkers]
   }
+  
+  extension [Self <: StockChartLegendInactiveItemsMarkers](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+  }
 }
-

@@ -9,10 +9,10 @@ RSS feed generator. Add RSS feeds to any project. Supports enclosures and GeoRSS
 | ------------------ | :-------------: |
 | Full name          | rss |
 | Keywords           | rss, xml, atom, podcasts, ghost, feed, feed builder, rss feed |
-| # releases         | 1 |
-| # dependents       | 177 |
-| # downloads        | 2475056 |
-| # stars            | 30 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 508901.3333333333 |
+| # stars            | 885.0 |
 
 ## Links
 - [Homepage](http://github.com/dylang/node-rss)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__stylis
 
-Typings are for version 0.8.4
+Typings are for version 0.8.5
 
 ## Library description:
 A custom build of Stylis
@@ -9,11 +9,11 @@ A custom build of Stylis
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @emotion/stylis |
-| Keywords           | - |
-| # releases         | 22 |
-| # dependents       | 11 |
-| # downloads        | 83914985 |
-| # stars            | 0 |
+| Keywords           | styles, emotion, react, css, css-in-js |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7424551666666668E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/emotion-js/emotion#readme)

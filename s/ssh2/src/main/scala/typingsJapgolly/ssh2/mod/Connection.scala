@@ -6,46 +6,46 @@ import typingsJapgolly.ssh2.ssh2Strings.`cancel-tcpip-forward`
 import typingsJapgolly.ssh2.ssh2Strings.`streamlocal-forward@opensshDotcom`
 import typingsJapgolly.ssh2.ssh2Strings.`tcpip-forward`
 import typingsJapgolly.ssh2.ssh2Strings.authentication
-import typingsJapgolly.ssh2.ssh2Strings.close
-import typingsJapgolly.ssh2.ssh2Strings.continue
+import typingsJapgolly.ssh2.ssh2Strings.close_
 import typingsJapgolly.ssh2.ssh2Strings.end
 import typingsJapgolly.ssh2.ssh2Strings.error
+import typingsJapgolly.ssh2.ssh2Strings.greeting
+import typingsJapgolly.ssh2.ssh2Strings.handshake
 import typingsJapgolly.ssh2.ssh2Strings.opensshDotstreamlocal
 import typingsJapgolly.ssh2.ssh2Strings.ready
 import typingsJapgolly.ssh2.ssh2Strings.rekey
 import typingsJapgolly.ssh2.ssh2Strings.request
 import typingsJapgolly.ssh2.ssh2Strings.session
 import typingsJapgolly.ssh2.ssh2Strings.tcpip
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Connection extends EventEmitter {
+  
   var authenticated: Boolean = js.native
-  var noMoreSessions: Boolean = js.native
+  
   // Connection methods
   /**
     * Closes the client connection.
-    *
-    * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
-  def end(): Boolean = js.native
+  def end(): this.type = js.native
+  
   /**
     * Alert the client of an incoming TCP connection on `boundAddr` on port `boundPort` from
     * `remoteAddr` on port `remotePort`.
-    *
-    * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
   def forwardOut(
     boundAddr: String,
     boundPort: Double,
     remoteAddr: String,
     remotePort: Double,
-    callback: js.Function2[/* err */ js.UndefOr[js.Error], /* channel */ ServerChannel, Unit]
-  ): Boolean = js.native
-  def on(event: String, listener: js.Function): this.type = js.native
-  def on(event: js.Symbol, listener: js.Function): this.type = js.native
+    callback: ServerCallback
+  ): this.type = js.native
+  
+  var noMoreSessions: Boolean = js.native
+  
   /**
     * Emitted when the client has sent a global request for name.
     * If info.bindPort === 0, you should pass the chosen port to accept so that the client will know what port was bound.
@@ -68,17 +68,12 @@ trait Connection extends EventEmitter {
     * Emitted when the client has requested authentication.
     */
   @JSName("on")
-  def on_authentication(event: authentication, listener: js.Function1[/* authCtx */ AuthContext, Unit]): this.type = js.native
+  def on_authentication(event: authentication, listener: js.Function1[/* context */ AuthContext, Unit]): this.type = js.native
   /**
     * Emitted when the client socket was closed.
     */
   @JSName("on")
-  def on_close(event: close, listener: js.Function1[/* hadError */ Boolean, Unit]): this.type = js.native
-  /**
-    * Emitted when more requests/data can be sent to the client (after a Connection method returned false).
-    */
-  @JSName("on")
-  def on_continue(event: continue, listener: js.Function0[Unit]): this.type = js.native
+  def on_close(event: close_, listener: js.Function0[Unit]): this.type = js.native
   /**
     * Emitted when the socket has disconnected.
     */
@@ -88,7 +83,17 @@ trait Connection extends EventEmitter {
     * Emitted when an error occurrs.
     */
   @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
+  def on_error(event: error, listener: ErrorCallback): this.type = js.native
+  /**
+    * Emitted if the server sends a greeting header
+    */
+  @JSName("on")
+  def on_greeting(event: greeting, listener: js.Function1[/* greeting */ String, Unit]): this.type = js.native
+  /**
+    * Emitted when the Alogrithms have been negotiated; emitted every time there is a rekey
+    */
+  @JSName("on")
+  def on_handshake(event: handshake, listener: js.Function1[/* negotiated */ NegotiatedAlgorithms, Unit]): this.type = js.native
   /**
     * Emitted when the client has requested a connection to a UNIX domain socket.
     */
@@ -96,8 +101,8 @@ trait Connection extends EventEmitter {
   def on_opensshstreamlocal(
     event: opensshDotstreamlocal,
     listener: js.Function3[
-      /* accept */ js.Function0[ServerChannel], 
-      /* reject */ js.Function0[Boolean], 
+      /* accept */ AcceptConnection[ServerChannel], 
+      /* reject */ RejectConnection, 
       /* info */ SocketRequestInfo, 
       Unit
     ]
@@ -113,28 +118,13 @@ trait Connection extends EventEmitter {
   @JSName("on")
   def on_rekey(event: rekey, listener: js.Function0[Unit]): this.type = js.native
   /**
-    * Emitted when the client has sent a global request for name.
-    * If info.bindPort === 0, you should pass the chosen port to accept so that the client will know what port was bound.
-    */
-  @JSName("on")
-  def on_request(
-    event: request,
-    listener: js.Function4[
-      /* accept */ js.UndefOr[js.Function1[/* chosenPort */ js.UndefOr[Double], Unit]], 
-      /* reject */ js.UndefOr[js.Function0[Unit]], 
-      /* name */ String, 
-      /* info */ TcpipBindInfo | SocketBindInfo, 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
     * Emitted when the client has requested a new session.
     * Sessions are used to start interactive shells, execute commands, request X11 forwarding, etc.
     */
   @JSName("on")
   def on_session(
     event: session,
-    listener: js.Function2[/* accept */ js.Function0[Session], /* reject */ js.Function0[Boolean], Unit]
+    listener: js.Function2[/* accept */ AcceptConnection[Session], /* reject */ RejectConnection, Unit]
   ): this.type = js.native
   /**
     * Emitted when the client has requested an outbound (TCP) connection.
@@ -143,18 +133,20 @@ trait Connection extends EventEmitter {
   def on_tcpip(
     event: tcpip,
     listener: js.Function3[
-      /* accept */ js.Function0[ServerChannel], 
-      /* reject */ js.Function0[Boolean], 
+      /* accept */ AcceptConnection[ServerChannel], 
+      /* reject */ RejectConnection, 
       /* info */ TcpipRequestInfo, 
       Unit
     ]
   ): this.type = js.native
+  
   /**
     * Alert the client of an incoming UNIX domain socket connection on socketPath.
     *
     * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
-  def openssh_forwardOutStreamLocal(socketPath: String, callback: js.Function2[/* err */ js.Error, /* channel */ ServerChannel, Unit]): Boolean = js.native
+  def openssh_forwardOutStreamLocal(socketPath: String, callback: ServerCallback): this.type = js.native
+  
   /**
     * Initiates a rekeying with the client.
     *
@@ -162,17 +154,11 @@ trait Connection extends EventEmitter {
     *
     * @param callback An optional callback added as a one-time handler for the `rekey` event.
     */
-  def rekey(): Boolean = js.native
-  def rekey(callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Boolean = js.native
+  def rekey(): Unit = js.native
+  def rekey(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Alert the client of an incoming X11 client connection from `originAddr` on port `originPort`.
-    *
-    * Returns `false` if you should wait for the `continue` event before sending any more traffic.
     */
-  def x11(
-    originAddr: String,
-    originPort: Double,
-    callback: js.Function2[/* err */ js.UndefOr[js.Error], /* channel */ ServerChannel, Unit]
-  ): Boolean = js.native
+  def x11(originAddr: String, originPort: Double, channel: ServerCallback): this.type = js.native
 }
-

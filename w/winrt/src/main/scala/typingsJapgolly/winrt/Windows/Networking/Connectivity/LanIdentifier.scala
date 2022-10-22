@@ -1,17 +1,16 @@
 package typingsJapgolly.winrt.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Connectivity.LanIdentifier")
-@js.native
-class LanIdentifier () extends ILanIdentifier {
-  /* CompleteClass */
-  override var infrastructureId: LanIdentifierData = js.native
-  /* CompleteClass */
-  override var networkAdapterId: String = js.native
-  /* CompleteClass */
-  override var portId: LanIdentifierData = js.native
+trait LanIdentifier
+  extends StObject
+     with ILanIdentifier
+object LanIdentifier {
+  
+  inline def apply(infrastructureId: LanIdentifierData, networkAdapterId: String, portId: LanIdentifierData): LanIdentifier = {
+    val __obj = js.Dynamic.literal(infrastructureId = infrastructureId.asInstanceOf[js.Any], networkAdapterId = networkAdapterId.asInstanceOf[js.Any], portId = portId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LanIdentifier]
+  }
 }
-

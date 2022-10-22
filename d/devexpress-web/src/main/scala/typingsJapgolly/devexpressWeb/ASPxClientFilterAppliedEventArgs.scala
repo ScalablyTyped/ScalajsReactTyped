@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFilterControl.Applied event.
   */
-@JSGlobal("ASPxClientFilterAppliedEventArgs")
-@js.native
-class ASPxClientFilterAppliedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientFilterAppliedEventArgs class.
-    * @param filterExpression A string value that specifies the filter expression currently being applied. This value is assigned to the ASPxClientFilterAppliedEventArgs.filterExpression property.
-    */
-  def this(filterExpression: String) = this()
+trait ASPxClientFilterAppliedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the filter expression currently being applied.
     */
-  var filterExpression: String = js.native
+  var filterExpression: String
 }
-
+object ASPxClientFilterAppliedEventArgs {
+  
+  inline def apply(filterExpression: String): ASPxClientFilterAppliedEventArgs = {
+    val __obj = js.Dynamic.literal(filterExpression = filterExpression.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientFilterAppliedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientFilterAppliedEventArgs](x: Self) {
+    
+    inline def setFilterExpression(value: String): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
+  }
+}

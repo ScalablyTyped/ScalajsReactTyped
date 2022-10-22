@@ -1,31 +1,41 @@
 package typingsJapgolly.useCallbackRef
 
-import japgolly.scalajs.react.raw.React.RefHandle
+import japgolly.scalajs.react.facade.React.RefHandle
 import typingsJapgolly.react.mod.MutableRefObject
-import typingsJapgolly.useCallbackRef.typesMod.ReactRef
-import typingsJapgolly.useCallbackRef.typesMod.RefCallback
-import typingsJapgolly.useCallbackRef.typesMod.RefObject
+import typingsJapgolly.useCallbackRef.distEs5TypesMod.ReactRef
+import typingsJapgolly.useCallbackRef.distEs5TypesMod.RefCallback
+import typingsJapgolly.useCallbackRef.distEs5TypesMod.RefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("use-callback-ref", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def assignRef[T](ref: ReactRef[T]): ReactRef[T] = js.native
-  def assignRef[T](ref: ReactRef[T], value: T): ReactRef[T] = js.native
-  def createCallbackRef[T](callback: js.Function2[/* newValue */ T | Null, /* lastValue */ T | Null, _]): RefHandle[T] = js.native
-  def mergeRefs[T](refs: js.Array[ReactRef[T]]): MutableRefObject[T | Null] = js.native
-  def refToCallback[T](ref: ReactRef[T]): RefCallback[T] = js.native
-  def transformRef[T, K](ref: ReactRef[K], transformer: js.Function1[/* original */ T, K]): RefObject[T] = js.native
-  def useCallbackRef[T](initialValue: T, callback: js.Function2[/* newValue */ T | Null, /* lastValue */ T | Null, Unit]): MutableRefObject[T | Null] = js.native
-  def useCallbackRef[T](
+object mod {
+  
+  @JSImport("use-callback-ref", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def assignRef[T](ref: ReactRef[T]): ReactRef[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("assignRef")(ref.asInstanceOf[js.Any]).asInstanceOf[ReactRef[T]]
+  inline def assignRef[T](ref: ReactRef[T], value: T): ReactRef[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("assignRef")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ReactRef[T]]
+  
+  inline def createCallbackRef[T](callback: js.Function2[/* newValue */ T | Null, /* lastValue */ T | Null, Any]): RefHandle[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCallbackRef")(callback.asInstanceOf[js.Any]).asInstanceOf[RefHandle[T]]
+  
+  inline def mergeRefs[T](refs: js.Array[ReactRef[T]]): MutableRefObject[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeRefs")(refs.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[T | Null]]
+  
+  inline def refToCallback[T](ref: ReactRef[T]): RefCallback[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("refToCallback")(ref.asInstanceOf[js.Any]).asInstanceOf[RefCallback[T]]
+  
+  inline def transformRef[T, K](ref: ReactRef[K], transformer: js.Function1[/* original */ T | Null, K]): RefObject[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformRef")(ref.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[RefObject[T]]
+  
+  inline def useCallbackRef[T](initialValue: T, callback: js.Function2[/* newValue */ T | Null, /* lastValue */ T | Null, Unit]): MutableRefObject[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCallbackRef")(initialValue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MutableRefObject[T | Null]]
+  inline def useCallbackRef[T](
     initialValue: Null,
     callback: js.Function2[/* newValue */ T | Null, /* lastValue */ T | Null, Unit]
-  ): MutableRefObject[T | Null] = js.native
-  def useMergeRefs[T](refs: js.Array[ReactRef[T]]): MutableRefObject[T | Null] = js.native
-  def useMergeRefs[T](refs: js.Array[ReactRef[T]], defaultValue: T): MutableRefObject[T | Null] = js.native
-  def useRefToCallback[T](ref: ReactRef[T]): RefCallback[T] = js.native
-  def useTransformRef[T, K](ref: ReactRef[K], transformer: js.Function1[/* original */ T, K]): RefObject[T] = js.native
+  ): MutableRefObject[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCallbackRef")(initialValue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MutableRefObject[T | Null]]
+  
+  inline def useMergeRefs[T](refs: js.Array[ReactRef[T]]): MutableRefObject[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMergeRefs")(refs.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[T | Null]]
+  inline def useMergeRefs[T](refs: js.Array[ReactRef[T]], defaultValue: T): MutableRefObject[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("useMergeRefs")(refs.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[MutableRefObject[T | Null]]
+  
+  inline def useRefToCallback[T](ref: ReactRef[T]): RefCallback[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRefToCallback")(ref.asInstanceOf[js.Any]).asInstanceOf[RefCallback[T]]
+  
+  inline def useTransformRef[T, K](ref: ReactRef[K], transformer: js.Function1[/* original */ T | Null, K]): RefObject[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useTransformRef")(ref.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[RefObject[T]]
 }
-

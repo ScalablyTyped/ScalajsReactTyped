@@ -3,52 +3,100 @@ package typingsJapgolly.awsSdkClientS3Node
 import typingsJapgolly.awsSdkClientS3Node.awsSdkClientS3NodeStrings.AES256
 import typingsJapgolly.awsSdkClientS3Node.awsSdkClientS3NodeStrings.awsColonkms
 import typingsJapgolly.awsSdkClientS3Node.awsSdkClientS3NodeStrings.requester_
-import typingsJapgolly.awsSdkClientS3Node.outputTypesUnionMod._OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.MetadataBearer
+import typingsJapgolly.awsSdkClientS3Node.typesOutputTypesUnionMod._OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/types/PutObjectOutput", JSImport.Namespace)
-@js.native
-object typesPutObjectOutputMod extends js.Object {
-  @js.native
+object typesPutObjectOutputMod {
+  
   trait PutObjectOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
+    
     /**
       * <p>Entity tag for the uploaded object.</p>
       */
-    var ETag: js.UndefOr[String] = js.native
+    var ETag: js.UndefOr[String] = js.undefined
+    
     /**
       * <p>If the object expiration is configured, this will contain the expiration date (expiry-date) and rule ID (rule-id). The value of rule-id is URL encoded.</p>
       */
-    var Expiration: js.UndefOr[String] = js.native
+    var Expiration: js.UndefOr[String] = js.undefined
+    
     /**
       * <p>If present, indicates that the requester was successfully charged for the request.</p>
       */
-    var RequestCharged: js.UndefOr[requester_ | String] = js.native
+    var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
+    
     /**
       * <p>If server-side encryption with a customer-provided encryption key was requested, the response will include this header confirming the encryption algorithm used.</p>
       */
-    var SSECustomerAlgorithm: js.UndefOr[String] = js.native
+    var SSECustomerAlgorithm: js.UndefOr[String] = js.undefined
+    
     /**
       * <p>If server-side encryption with a customer-provided encryption key was requested, the response will include this header to provide round trip message integrity verification of the customer-provided encryption key.</p>
       */
-    var SSECustomerKeyMD5: js.UndefOr[String] = js.native
+    var SSECustomerKeyMD5: js.UndefOr[String] = js.undefined
+    
     /**
       * <p>If present, specifies the ID of the AWS Key Management Service (KMS) master encryption key that was used for the object.</p>
       */
-    var SSEKMSKeyId: js.UndefOr[String] = js.native
+    var SSEKMSKeyId: js.UndefOr[String] = js.undefined
+    
     /**
       * <p>The Server-side encryption algorithm used when storing this object in S3 (e.g., AES256, aws:kms).</p>
       */
-    var ServerSideEncryption: js.UndefOr[AES256 | awsColonkms | String] = js.native
+    var ServerSideEncryption: js.UndefOr[AES256 | awsColonkms | String] = js.undefined
+    
     /**
       * <p>Version of the object.</p>
       */
-    var VersionId: js.UndefOr[String] = js.native
+    var VersionId: js.UndefOr[String] = js.undefined
   }
-  
+  object PutObjectOutput {
+    
+    inline def apply($metadata: ResponseMetadata): PutObjectOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PutObjectOutput]
+    }
+    
+    extension [Self <: PutObjectOutput](x: Self) {
+      
+      inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+      
+      inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+      
+      inline def setExpiration(value: String): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
+      
+      inline def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
+      
+      inline def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+      
+      inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+      
+      inline def setSSECustomerAlgorithm(value: String): Self = StObject.set(x, "SSECustomerAlgorithm", value.asInstanceOf[js.Any])
+      
+      inline def setSSECustomerAlgorithmUndefined: Self = StObject.set(x, "SSECustomerAlgorithm", js.undefined)
+      
+      inline def setSSECustomerKeyMD5(value: String): Self = StObject.set(x, "SSECustomerKeyMD5", value.asInstanceOf[js.Any])
+      
+      inline def setSSECustomerKeyMD5Undefined: Self = StObject.set(x, "SSECustomerKeyMD5", js.undefined)
+      
+      inline def setSSEKMSKeyId(value: String): Self = StObject.set(x, "SSEKMSKeyId", value.asInstanceOf[js.Any])
+      
+      inline def setSSEKMSKeyIdUndefined: Self = StObject.set(x, "SSEKMSKeyId", js.undefined)
+      
+      inline def setServerSideEncryption(value: AES256 | awsColonkms | String): Self = StObject.set(x, "ServerSideEncryption", value.asInstanceOf[js.Any])
+      
+      inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "ServerSideEncryption", js.undefined)
+      
+      inline def setVersionId(value: String): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+      
+      inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    }
+  }
 }
-

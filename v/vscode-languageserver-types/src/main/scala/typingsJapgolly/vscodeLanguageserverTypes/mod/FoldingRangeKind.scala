@@ -1,44 +1,29 @@
 package typingsJapgolly.vscodeLanguageserverTypes.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait FoldingRangeKind extends js.Object
-
-@JSImport("vscode-languageserver-types", "FoldingRangeKind")
-@js.native
-object FoldingRangeKind extends js.Object {
+object FoldingRangeKind {
+  
   /**
     * Folding range for a comment
     */
+  @JSImport("vscode-languageserver-types", "FoldingRangeKind.Comment")
   @js.native
-  sealed trait Comment extends FoldingRangeKind
+  val Comment: /* "comment" */ String = js.native
   
   /**
-    * Folding range for a imports or includes
+    * Folding range for an import or include
     */
+  @JSImport("vscode-languageserver-types", "FoldingRangeKind.Imports")
   @js.native
-  sealed trait Imports extends FoldingRangeKind
+  val Imports: /* "imports" */ String = js.native
   
   /**
     * Folding range for a region (e.g. `#region`)
     */
+  @JSImport("vscode-languageserver-types", "FoldingRangeKind.Region")
   @js.native
-  sealed trait Region extends FoldingRangeKind
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[FoldingRangeKind with String] = js.native
-  /* "comment" */ @js.native
-  object Comment extends TopLevel[Comment with String]
-  
-  /* "imports" */ @js.native
-  object Imports extends TopLevel[Imports with String]
-  
-  /* "region" */ @js.native
-  object Region extends TopLevel[Region with String]
-  
+  val Region: /* "region" */ String = js.native
 }
-

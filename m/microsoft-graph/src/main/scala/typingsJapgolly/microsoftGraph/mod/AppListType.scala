@@ -1,25 +1,21 @@
 package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.appsInListCompliant
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.appsNotInListCompliant
 */
-trait AppListType extends js.Object
-
+trait AppListType extends StObject
 object AppListType {
-  @scala.inline
-  def appsInListCompliant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.appsInListCompliant = this.cast("appsInListCompliant")
-  @scala.inline
-  def appsNotInListCompliant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.appsNotInListCompliant = this.cast("appsNotInListCompliant")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def none: none_ = this.cast("none")
+  
+  inline def appsInListCompliant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.appsInListCompliant = "appsInListCompliant".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.appsInListCompliant]
+  
+  inline def appsNotInListCompliant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.appsNotInListCompliant = "appsNotInListCompliant".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.appsNotInListCompliant]
+  
+  inline def none: none_ = "none".asInstanceOf[none_]
 }
-

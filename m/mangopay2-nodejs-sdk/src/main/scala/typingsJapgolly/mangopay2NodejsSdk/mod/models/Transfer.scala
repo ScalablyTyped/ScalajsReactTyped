@@ -1,92 +1,107 @@
 package typingsJapgolly.mangopay2NodejsSdk.mod.models
 
-import typingsJapgolly.mangopay2NodejsSdk.PartialCreateTransfer
+import typingsJapgolly.mangopay2NodejsSdk.anon.PartialCreateTransfer
 import typingsJapgolly.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSFER
-import typingsJapgolly.mangopay2NodejsSdk.mod.MoneyData
-import typingsJapgolly.mangopay2NodejsSdk.mod.Timestamp
-import typingsJapgolly.mangopay2NodejsSdk.mod.transaction.TransactionNature
-import typingsJapgolly.mangopay2NodejsSdk.mod.transaction.TransactionStatus
-import typingsJapgolly.mangopay2NodejsSdk.mod.transfer.TransferData
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsMoneyMod.money.MoneyData
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionNature
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionStatus
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsTransferMod.transfer.TransferData
+import typingsJapgolly.mangopay2NodejsSdk.typingsTypesMod.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.Transfer")
 @js.native
-class Transfer protected ()
+open class Transfer protected ()
   extends EntityBase[TransferData]
      with TransferData {
   def this(data: PartialCreateTransfer) = this()
+  
   /**
     * A user's ID
     */
   /* CompleteClass */
-  override var AuthorId: String = js.native
+  var AuthorId: String = js.native
+  
   /* CompleteClass */
-  override var CreationDate: Double = js.native
+  var CreationDate: Double = js.native
+  
   /**
     * Details about the funds that are being credited (DebitedFunds – Fees = CreditedFunds)
     */
   /* CompleteClass */
-  override var CreditedFunds: MoneyData = js.native
+  var CreditedFunds: MoneyData = js.native
+  
   /**
     * The user ID who is credited (defaults to the owner of the wallet)
     */
   /* CompleteClass */
-  override var CreditedUserId: String = js.native
+  var CreditedUserId: String = js.native
+  
   /**
     * The ID of the wallet where money will be credited
     */
   /* CompleteClass */
-  override var CreditedWalletId: String = js.native
+  var CreditedWalletId: String = js.native
+  
   /**
     * Information about the funds that are being debited
     */
   /* CompleteClass */
-  override var DebitedFunds: MoneyData = js.native
+  var DebitedFunds: MoneyData = js.native
+  
   /**
     * The ID of the wallet that was debited
     */
   /* CompleteClass */
-  override var DebitedWalletId: String = js.native
+  var DebitedWalletId: String = js.native
+  
   /**
     * When the transaction happened
     */
   /* CompleteClass */
-  override var ExecutionDate: Timestamp = js.native
+  var ExecutionDate: Timestamp = js.native
+  
   /**
     * Information about the fees that were taken by the client for this transaction (and were hence transferred to the Client's platform wallet)
     */
   /* CompleteClass */
-  override var Fees: MoneyData = js.native
+  var Fees: MoneyData = js.native
+  
   /* CompleteClass */
-  override var Id: String = js.native
+  var Id: String = js.native
+  
   /**
     * The nature of the transaction
     */
   /* CompleteClass */
-  override var Nature: TransactionNature = js.native
+  var Nature: TransactionNature = js.native
+  
   /**
     * The result code
     */
   /* CompleteClass */
-  override var ResultCode: String = js.native
+  var ResultCode: String = js.native
+  
   /**
     * A verbal explanation of the ResultCode
     */
   /* CompleteClass */
-  override var ResultMessage: String = js.native
+  var ResultMessage: String = js.native
+  
   /**
     * The status of the transaction
     */
   /* CompleteClass */
-  override var Status: TransactionStatus = js.native
+  var Status: TransactionStatus = js.native
+  
   /* CompleteClass */
-  override var Tag: String = js.native
+  var Tag: String = js.native
+  
   /**
     * The type of the transaction
     */
   /* CompleteClass */
-  override var Type: TRANSFER = js.native
+  var Type: TRANSFER = js.native
 }
-

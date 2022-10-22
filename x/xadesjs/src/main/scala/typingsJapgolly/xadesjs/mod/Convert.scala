@@ -1,24 +1,30 @@
 package typingsJapgolly.xadesjs.mod
 
 import typingsJapgolly.std.BufferSource
-import typingsJapgolly.xmlCore.mod.XmlBufferEncoding
+import typingsJapgolly.xmlCore.distTypesTypesMod.XmlBufferEncoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs", "Convert")
 @js.native
-class Convert ()
+open class Convert ()
   extends typingsJapgolly.xmlCore.mod.Convert
-
 /* static members */
-@JSImport("xadesjs", "Convert")
-@js.native
-object Convert extends js.Object {
-  /* protected */ def Base64Padding(base64: String): String = js.native
-  def FromBase64(base64Text: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-  def FromBase64Url(base64url: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-  def FromBinary(text: String): scala.scalajs.js.typedarray.Uint8Array = js.native
+object Convert {
+  
+  @JSImport("xadesjs", "Convert")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def Base64Padding(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Base64Padding")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def FromBase64(base64Text: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64")(base64Text.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def FromBase64Url(base64url: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64Url")(base64url.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def FromBinary(text: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBinary")(text.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  
   /**
     * Converts Date to string
     *
@@ -28,7 +34,8 @@ object Convert extends js.Object {
     *
     * @memberOf Convert
     */
-  def FromDateTime(dateTime: js.Date): String = js.native
+  inline def FromDateTime(dateTime: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FromDateTime")(dateTime.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   /**
     * Converts HEX string to buffer
     *
@@ -38,13 +45,19 @@ object Convert extends js.Object {
     *
     * @memberOf Convert
     */
-  def FromHex(hexString: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-  def FromString(str: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-  def FromString(str: String, enc: XmlBufferEncoding): scala.scalajs.js.typedarray.Uint8Array = js.native
-  def FromUtf8String(text: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-  def ToBase64(buf: scala.scalajs.js.typedarray.Uint8Array): String = js.native
-  def ToBase64Url(data: scala.scalajs.js.typedarray.Uint8Array): String = js.native
-  def ToBinary(buffer: scala.scalajs.js.typedarray.Uint8Array): String = js.native
+  inline def FromHex(hexString: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromHex")(hexString.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def FromString(str: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def FromString(str: String, enc: XmlBufferEncoding): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def FromUtf8String(text: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromUtf8String")(text.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def ToBase64(buf: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def ToBase64Url(data: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64Url")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def ToBinary(buffer: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBinary")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   /**
     * Converts string to Date
     *
@@ -54,15 +67,17 @@ object Convert extends js.Object {
     *
     * @memberOf Convert
     */
-  def ToDateTime(dateTime: String): js.Date = js.native
+  inline def ToDateTime(dateTime: String): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTime")(dateTime.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+  
   /**
     * Converts buffer to HEX string
     * @param  {BufferSource} buffer Incoming buffer
     * @returns string
     */
-  def ToHex(buffer: scala.scalajs.js.typedarray.Uint8Array): String = js.native
-  def ToString(buffer: BufferSource): String = js.native
-  def ToString(buffer: BufferSource, enc: XmlBufferEncoding): String = js.native
-  def ToUtf8String(buffer: scala.scalajs.js.typedarray.Uint8Array): String = js.native
+  inline def ToHex(buffer: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToHex")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def ToString(buffer: BufferSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ToString(buffer: BufferSource, enc: XmlBufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(buffer.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def ToUtf8String(buffer: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToUtf8String")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

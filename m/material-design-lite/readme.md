@@ -11,9 +11,9 @@ Material Design Components in CSS, JS and HTML
 | Full name          | material-design-lite |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 91 |
-| # downloads        | 610285 |
-| # stars            | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 237535.0 |
+| # stars            | 32055.0 |
 
 ## Links
 - [Homepage](https://github.com/google/material-design-lite#readme)

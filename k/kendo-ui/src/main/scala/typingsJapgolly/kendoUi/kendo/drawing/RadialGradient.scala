@@ -1,20 +1,22 @@
 package typingsJapgolly.kendoUi.kendo.drawing
 
 import typingsJapgolly.kendoUi.kendo.geometry.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.drawing.RadialGradient")
 @js.native
-class RadialGradient () extends Gradient {
-  def this(options: RadialGradientOptions) = this()
+trait RadialGradient
+  extends StObject
+     with Gradient {
+  
+  def center(): Point = js.native
+  def center(center: Any): Unit = js.native
+  def center(center: Point): Unit = js.native
+  
   @JSName("options")
   var options_RadialGradient: RadialGradientOptions = js.native
-  def center(): Point = js.native
-  def center(center: js.Any): Unit = js.native
-  def center(center: Point): Unit = js.native
+  
   def radius(): Double = js.native
   def radius(value: Double): Unit = js.native
 }
-

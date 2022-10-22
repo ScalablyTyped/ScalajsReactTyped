@@ -1,8 +1,8 @@
 package typingsJapgolly.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.braintree.braintreeStrings.application_incomplete
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.braintree.braintreeStrings.three_d_secure
   - typingsJapgolly.braintree.braintreeStrings.token_issuance
 */
-trait GatewayRejectionReason extends js.Object
-
+trait GatewayRejectionReason extends StObject
 object GatewayRejectionReason {
-  @scala.inline
-  def application_incomplete: typingsJapgolly.braintree.braintreeStrings.application_incomplete = this.cast("application_incomplete")
-  @scala.inline
-  def avs: typingsJapgolly.braintree.braintreeStrings.avs = this.cast("avs")
-  @scala.inline
-  def avs_and_cvv: typingsJapgolly.braintree.braintreeStrings.avs_and_cvv = this.cast("avs_and_cvv")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def cvv: typingsJapgolly.braintree.braintreeStrings.cvv = this.cast("cvv")
-  @scala.inline
-  def duplicate: typingsJapgolly.braintree.braintreeStrings.duplicate = this.cast("duplicate")
-  @scala.inline
-  def fraud: typingsJapgolly.braintree.braintreeStrings.fraud = this.cast("fraud")
-  @scala.inline
-  def risk_threshold: typingsJapgolly.braintree.braintreeStrings.risk_threshold = this.cast("risk_threshold")
-  @scala.inline
-  def three_d_secure: typingsJapgolly.braintree.braintreeStrings.three_d_secure = this.cast("three_d_secure")
-  @scala.inline
-  def token_issuance: typingsJapgolly.braintree.braintreeStrings.token_issuance = this.cast("token_issuance")
+  
+  inline def application_incomplete: typingsJapgolly.braintree.braintreeStrings.application_incomplete = "application_incomplete".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.application_incomplete]
+  
+  inline def avs: typingsJapgolly.braintree.braintreeStrings.avs = "avs".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.avs]
+  
+  inline def avs_and_cvv: typingsJapgolly.braintree.braintreeStrings.avs_and_cvv = "avs_and_cvv".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.avs_and_cvv]
+  
+  inline def cvv: typingsJapgolly.braintree.braintreeStrings.cvv = "cvv".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.cvv]
+  
+  inline def duplicate: typingsJapgolly.braintree.braintreeStrings.duplicate = "duplicate".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.duplicate]
+  
+  inline def fraud: typingsJapgolly.braintree.braintreeStrings.fraud = "fraud".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.fraud]
+  
+  inline def risk_threshold: typingsJapgolly.braintree.braintreeStrings.risk_threshold = "risk_threshold".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.risk_threshold]
+  
+  inline def three_d_secure: typingsJapgolly.braintree.braintreeStrings.three_d_secure = "three_d_secure".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.three_d_secure]
+  
+  inline def token_issuance: typingsJapgolly.braintree.braintreeStrings.token_issuance = "token_issuance".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.token_issuance]
 }
-

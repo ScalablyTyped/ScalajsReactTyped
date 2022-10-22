@@ -1,19 +1,27 @@
-package typingsJapgolly.blueimpLoadImage
+package typingsJapgolly.blueimpLoadImage.mod
 
+import org.scalablytyped.runtime.NumberDictionary
+import org.scalajs.dom.Event
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type AspectRatio = scala.Double
-  type Exif = org.scalablytyped.runtime.NumberDictionary[scala.Double | java.lang.String | js.Array[java.lang.String]]
-  type Iptc = org.scalablytyped.runtime.NumberDictionary[scala.Double | java.lang.String | js.Array[java.lang.String]]
-  type LoadImageCallback = js.Function2[
-    /* eventOrImage */ typingsJapgolly.std.Event_ | org.scalajs.dom.raw.HTMLCanvasElement | org.scalajs.dom.raw.HTMLImageElement, 
-    /* data */ js.UndefOr[typingsJapgolly.blueimpLoadImage.mod.MetaData], 
-    scala.Unit
-  ]
-  type LoadImageOptions = typingsJapgolly.blueimpLoadImage.mod.BasicOptions with typingsJapgolly.blueimpLoadImage.mod.CanvasOptions with typingsJapgolly.blueimpLoadImage.mod.CropOptions with typingsJapgolly.blueimpLoadImage.mod.MetaOptions
-  type Orientation = scala.Double | scala.Boolean
-  type ParseMetaDataCallback = js.Function1[/* data */ typingsJapgolly.blueimpLoadImage.mod.ImageHead, scala.Unit]
-}
+
+type AspectRatio = Double
+
+type ExifTagValue = Double | String | js.Array[String]
+
+type Iptc = NumberDictionary[Double | String | js.Array[String]]
+
+type LoadImageCallback = js.Function2[
+/* eventOrImage */ Event | HTMLCanvasElement | HTMLImageElement, 
+/* data */ js.UndefOr[MetaData], 
+Unit]
+
+type LoadImageOptions = BasicOptions & CanvasOptions & CropOptions & MetaOptions
+
+type Orientation = Double | Boolean
+
+type ParseMetaDataCallback = js.Function1[/* data */ MetaData, Unit]

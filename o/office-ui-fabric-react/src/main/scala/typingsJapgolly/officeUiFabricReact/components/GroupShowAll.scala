@@ -1,13 +1,17 @@
 package typingsJapgolly.officeUiFabricReact.components
 
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupShowAllDottypesMod.IGroupShowAllProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object GroupShowAll extends SharedApply_IGroupShowAllProps_1088411827 {
+object GroupShowAll {
+  
   @JSImport("office-ui-fabric-react", "GroupShowAll")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: GroupShowAll.type): SharedBuilder_IGroupShowAllProps910745868 = new SharedBuilder_IGroupShowAllProps910745868(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IGroupShowAllProps): SharedBuilder_IGroupShowAllProps910745868 = new SharedBuilder_IGroupShowAllProps910745868(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

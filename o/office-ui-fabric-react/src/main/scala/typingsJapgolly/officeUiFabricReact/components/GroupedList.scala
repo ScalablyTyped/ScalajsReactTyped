@@ -1,99 +1,101 @@
 package typingsJapgolly.officeUiFabricReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.officeUiFabricReact.AnonCallback
-import typingsJapgolly.officeUiFabricReact.dragdropInterfacesMod.IDragDropEvents
-import typingsJapgolly.officeUiFabricReact.dragdropInterfacesMod.IDragDropHelper
-import typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroup
-import typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroupRenderProps
-import typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroupedList
-import typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroupedListProps
-import typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroupedListStyleProps
-import typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroupedListStyles
-import typingsJapgolly.officeUiFabricReact.listTypesMod.IListProps
-import typingsJapgolly.officeUiFabricReact.withViewportMod.IViewport
-import typingsJapgolly.react.mod.LegacyRef
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
-import typingsJapgolly.uifabricUtilities.selectionTypesMod.IObjectWithKey
-import typingsJapgolly.uifabricUtilities.selectionTypesMod.ISelection
-import typingsJapgolly.uifabricUtilities.selectionTypesMod.SelectionMode
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiReactFocus.libComponentsFocusZoneFocusZoneDottypesMod.IFocusZoneProps
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroup
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroupRenderProps
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroupedList
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroupedListProps
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroupedListStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroupedListStyles
+import typingsJapgolly.officeUiFabricReact.libComponentsListListDottypesMod.IListProps
+import typingsJapgolly.officeUiFabricReact.libUtilitiesDecoratorsWithViewportMod.IViewport
+import typingsJapgolly.officeUiFabricReact.libUtilitiesDragdropInterfacesMod.IDragDropEvents
+import typingsJapgolly.officeUiFabricReact.libUtilitiesDragdropInterfacesMod.IDragDropHelper
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import typingsJapgolly.uifabricUtilities.libSelectionSelectionDottypesMod.IObjectWithKey
+import typingsJapgolly.uifabricUtilities.libSelectionSelectionDottypesMod.ISelection
+import typingsJapgolly.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GroupedList {
-  def apply(
-    items: js.Array[_],
-    onRenderCell: (js.UndefOr[Double], js.UndefOr[js.Any], js.UndefOr[Double]) => CallbackTo[Node],
-    className: String = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    componentRef: IRefObject[IGroupedList] = null,
-    dragDropEvents: IDragDropEvents = null,
-    dragDropHelper: IDragDropHelper = null,
-    eventsToRegister: js.Array[AnonCallback] = null,
-    getGroupHeight: (/* group */ IGroup, /* groupIndex */ Double) => CallbackTo[Double] = null,
-    groupProps: IGroupRenderProps = null,
-    groups: js.Array[IGroup] = null,
-    listProps: IListProps[_] = null,
-    onGroupExpandStateChanged: /* isSomeGroupExpanded */ Boolean => Callback = null,
-    onShouldVirtualize: /* props */ IListProps[js.Any] => CallbackTo[Boolean] = null,
-    selection: ISelection[IObjectWithKey] = null,
-    selectionMode: SelectionMode = null,
-    styles: IStyleFunctionOrObject[IGroupedListStyleProps, IGroupedListStyles] = null,
-    theme: ITheme = null,
-    usePageCache: js.UndefOr[Boolean] = js.undefined,
-    viewport: IViewport = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IGroupedListProps, 
-    LegacyRef[typingsJapgolly.officeUiFabricReact.groupedListBaseMod.GroupedListBase], 
-    Unit, 
-    IGroupedListProps
-  ] = {
-    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onRenderCell")(js.Any.fromFunction3((t0: js.UndefOr[scala.Double], t1: js.UndefOr[js.Any], t2: js.UndefOr[scala.Double]) => onRenderCell(t0, t1, t2).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (dragDropEvents != null) __obj.updateDynamic("dragDropEvents")(dragDropEvents.asInstanceOf[js.Any])
-    if (dragDropHelper != null) __obj.updateDynamic("dragDropHelper")(dragDropHelper.asInstanceOf[js.Any])
-    if (eventsToRegister != null) __obj.updateDynamic("eventsToRegister")(eventsToRegister.asInstanceOf[js.Any])
-    if (getGroupHeight != null) __obj.updateDynamic("getGroupHeight")(js.Any.fromFunction2((t0: /* group */ typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroup, t1: /* groupIndex */ scala.Double) => getGroupHeight(t0, t1).runNow()))
-    if (groupProps != null) __obj.updateDynamic("groupProps")(groupProps.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])
-    if (onGroupExpandStateChanged != null) __obj.updateDynamic("onGroupExpandStateChanged")(js.Any.fromFunction1((t0: /* isSomeGroupExpanded */ scala.Boolean) => onGroupExpandStateChanged(t0).runNow()))
-    if (onShouldVirtualize != null) __obj.updateDynamic("onShouldVirtualize")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.officeUiFabricReact.listTypesMod.IListProps[js.Any]) => onShouldVirtualize(t0).runNow()))
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePageCache)) __obj.updateDynamic("usePageCache")(usePageCache.asInstanceOf[js.Any])
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroupedListProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.react.mod.LegacyRef[typingsJapgolly.officeUiFabricReact.groupedListBaseMod.GroupedListBase]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.groupedListTypesMod.IGroupedListProps])(children: _*)
+  inline def apply(
+    items: js.Array[Any],
+    onRenderCell: (js.UndefOr[Double | Unit], js.UndefOr[Any | Unit], js.UndefOr[Double]) => Node
+  ): Builder = {
+    val __props = js.Dynamic.literal(items = items.asInstanceOf[js.Any], onRenderCell = js.Any.fromFunction3(onRenderCell))
+    new Builder(js.Array(this.component, __props.asInstanceOf[IGroupedListProps]))
   }
+  
   @JSImport("office-ui-fabric-react", "GroupedList")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[
+          typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupedListDotbaseMod.GroupedListBase
+        ] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def compact(value: Boolean): this.type = set("compact", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[IGroupedList]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ IGroupedList | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ IGroupedList | Null) => value(t0).runNow()))
+    
+    inline def dragDropEvents(value: IDragDropEvents): this.type = set("dragDropEvents", value.asInstanceOf[js.Any])
+    
+    inline def dragDropHelper(value: IDragDropHelper): this.type = set("dragDropHelper", value.asInstanceOf[js.Any])
+    
+    inline def eventsToRegister(value: js.Array[typingsJapgolly.officeUiFabricReact.anon.Callback]): this.type = set("eventsToRegister", value.asInstanceOf[js.Any])
+    
+    inline def eventsToRegisterVarargs(value: typingsJapgolly.officeUiFabricReact.anon.Callback*): this.type = set("eventsToRegister", js.Array(value*))
+    
+    inline def focusZoneProps(value: IFocusZoneProps): this.type = set("focusZoneProps", value.asInstanceOf[js.Any])
+    
+    inline def getGroupHeight(value: (/* group */ IGroup, /* groupIndex */ Double) => Double): this.type = set("getGroupHeight", js.Any.fromFunction2(value))
+    
+    inline def groupProps(value: IGroupRenderProps): this.type = set("groupProps", value.asInstanceOf[js.Any])
+    
+    inline def groups(value: js.Array[IGroup]): this.type = set("groups", value.asInstanceOf[js.Any])
+    
+    inline def groupsVarargs(value: IGroup*): this.type = set("groups", js.Array(value*))
+    
+    inline def listProps(value: IListProps[Any]): this.type = set("listProps", value.asInstanceOf[js.Any])
+    
+    inline def onGroupExpandStateChanged(value: /* isSomeGroupExpanded */ Boolean => Callback): this.type = set("onGroupExpandStateChanged", js.Any.fromFunction1((t0: /* isSomeGroupExpanded */ Boolean) => value(t0).runNow()))
+    
+    inline def onShouldVirtualize(value: /* props */ IListProps[Any] => Boolean): this.type = set("onShouldVirtualize", js.Any.fromFunction1(value))
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def rootListProps(value: IListProps[Any]): this.type = set("rootListProps", value.asInstanceOf[js.Any])
+    
+    inline def selection(value: ISelection[IObjectWithKey]): this.type = set("selection", value.asInstanceOf[js.Any])
+    
+    inline def selectionMode(value: SelectionMode): this.type = set("selectionMode", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IStyleFunctionOrObject[IGroupedListStyleProps, IGroupedListStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IGroupedListStyleProps => DeepPartial[IGroupedListStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def usePageCache(value: Boolean): this.type = set("usePageCache", value.asInstanceOf[js.Any])
+    
+    inline def viewport(value: IViewport): this.type = set("viewport", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IGroupedListProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

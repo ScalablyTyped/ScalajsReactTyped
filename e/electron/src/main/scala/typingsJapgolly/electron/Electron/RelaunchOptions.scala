@@ -1,21 +1,32 @@
 package typingsJapgolly.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RelaunchOptions extends js.Object {
+trait RelaunchOptions extends StObject {
+  
   var args: js.UndefOr[js.Array[String]] = js.undefined
+  
   var execPath: js.UndefOr[String] = js.undefined
 }
-
 object RelaunchOptions {
-  @scala.inline
-  def apply(args: js.Array[String] = null, execPath: String = null): RelaunchOptions = {
+  
+  inline def apply(): RelaunchOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (execPath != null) __obj.updateDynamic("execPath")(execPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelaunchOptions]
   }
+  
+  extension [Self <: RelaunchOptions](x: Self) {
+    
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
+    
+    inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
+    
+    inline def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
+  }
 }
-

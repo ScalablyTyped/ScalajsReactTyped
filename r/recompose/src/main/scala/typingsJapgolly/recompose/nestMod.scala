@@ -1,15 +1,17 @@
 package typingsJapgolly.recompose
 
-import japgolly.scalajs.react.raw.React.ComponentClassP
+import japgolly.scalajs.react.facade.React.ComponentClassP
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/acdlite/recompose/blob/master/docs/API.md#nest
-@JSImport("recompose/nest", JSImport.Namespace)
-@js.native
-object nestMod extends js.Object {
-  def default(Components: (String | ComponentType[_])*): ComponentClassP[js.Object] = js.native
+object nestMod {
+  
+  @JSImport("recompose/nest", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(Components: (String | ComponentType[Any])*): ComponentClassP[Any & js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Components.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ComponentClassP[Any & js.Object]]
 }
-

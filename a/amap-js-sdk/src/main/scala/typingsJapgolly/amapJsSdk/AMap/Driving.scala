@@ -1,37 +1,51 @@
 package typingsJapgolly.amapJsSdk.AMap
 
-import typingsJapgolly.amapJsSdk.AnonDestination
-import typingsJapgolly.amapJsSdk.AnonExtensions
-import typingsJapgolly.amapJsSdk.AnonKeyword
-import typingsJapgolly.amapJsSdk.AnonWaypoints
+import typingsJapgolly.amapJsSdk.anon.Destination
+import typingsJapgolly.amapJsSdk.anon.Keyword
+import typingsJapgolly.amapJsSdk.anon.Waypoints
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("AMap.Driving")
 @js.native
-class Driving () extends EventBindable {
-  def this(options: AnonExtensions) = this()
+trait Driving
+  extends StObject
+     with EventBindable {
+  
   def clear(): Unit = js.native
+  
   def clearAvoidPolygons(): Unit = js.native
+  
   def clearAvoidRoad(): Unit = js.native
+  
   def getAvlidPolygons(): js.Array[js.Array[LngLat]] = js.native
+  
   def getAvoidRoad(): String = js.native
+  
   def search(origin: LngLat, destination: LngLat): Unit = js.native
-  def search(origin: LngLat, destination: LngLat, opts: AnonWaypoints): Unit = js.native
   def search(
     origin: LngLat,
     destination: LngLat,
-    opts: AnonWaypoints,
+    opts: Unit,
+    callback: js.Function2[/* status */ String, /* result */ String | DrivingResult, Unit]
+  ): Unit = js.native
+  def search(origin: LngLat, destination: LngLat, opts: Waypoints): Unit = js.native
+  def search(
+    origin: LngLat,
+    destination: LngLat,
+    opts: Waypoints,
     callback: js.Function2[/* status */ String, /* result */ String | DrivingResult, Unit]
   ): Unit = js.native
   def search(
-    point: js.Array[AnonKeyword],
+    point: js.Array[Keyword],
     callback: js.Function2[/* status */ String, /* result */ String | DrivingResult, Unit]
   ): Unit = js.native
-  def searchOnAMAP(obj: AnonDestination): Unit = js.native
+  
+  def searchOnAMAP(obj: Destination): Unit = js.native
+  
   def setAvoidPolygons(path: js.Array[js.Array[LngLat]]): Unit = js.native
+  
   def setAvoidRoad(road: String): Unit = js.native
+  
   def setPolicy(policy: DrivingPolicy): Unit = js.native
 }
-

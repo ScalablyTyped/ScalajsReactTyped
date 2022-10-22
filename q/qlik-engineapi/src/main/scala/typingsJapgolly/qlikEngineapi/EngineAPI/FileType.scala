@@ -1,24 +1,20 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CSV_C
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CSV_T
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OOXML
 */
-trait FileType extends js.Object
-
+trait FileType extends StObject
 object FileType {
-  @scala.inline
-  def CSV_C: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CSV_C = this.cast("CSV_C")
-  @scala.inline
-  def CSV_T: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CSV_T = this.cast("CSV_T")
-  @scala.inline
-  def OOXML: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OOXML = this.cast("OOXML")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CSV_C: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CSV_C = "CSV_C".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CSV_C]
+  
+  inline def CSV_T: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CSV_T = "CSV_T".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CSV_T]
+  
+  inline def OOXML: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OOXML = "OOXML".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OOXML]
 }
-

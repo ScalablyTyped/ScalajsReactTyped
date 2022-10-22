@@ -1,47 +1,37 @@
 package typingsJapgolly.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EasPasswordHistoryResult extends js.Object
-
+sealed trait EasPasswordHistoryResult extends StObject
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordHistoryResult")
 @js.native
-object EasPasswordHistoryResult extends js.Object {
-  @js.native
-  sealed trait canBeCompliant extends EasPasswordHistoryResult
+object EasPasswordHistoryResult extends StObject {
   
   @js.native
-  sealed trait compliant extends EasPasswordHistoryResult
+  sealed trait canBeCompliant
+    extends StObject
+       with EasPasswordHistoryResult
   
   @js.native
-  sealed trait invalidParameter extends EasPasswordHistoryResult
+  sealed trait compliant
+    extends StObject
+       with EasPasswordHistoryResult
   
   @js.native
-  sealed trait notEvaluated extends EasPasswordHistoryResult
+  sealed trait invalidParameter
+    extends StObject
+       with EasPasswordHistoryResult
   
   @js.native
-  sealed trait requestedPolicyIsStricter extends EasPasswordHistoryResult
+  sealed trait notEvaluated
+    extends StObject
+       with EasPasswordHistoryResult
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EasPasswordHistoryResult with Double] = js.native
-  /* 2 */ @js.native
-  object canBeCompliant extends TopLevel[canBeCompliant with Double]
-  
-  /* 1 */ @js.native
-  object compliant extends TopLevel[compliant with Double]
-  
-  /* 4 */ @js.native
-  object invalidParameter extends TopLevel[invalidParameter with Double]
-  
-  /* 0 */ @js.native
-  object notEvaluated extends TopLevel[notEvaluated with Double]
-  
-  /* 3 */ @js.native
-  object requestedPolicyIsStricter extends TopLevel[requestedPolicyIsStricter with Double]
-  
+  @js.native
+  sealed trait requestedPolicyIsStricter
+    extends StObject
+       with EasPasswordHistoryResult
 }
-

@@ -1,12 +1,15 @@
 package typingsJapgolly.storybookAddonJest
 
+import typingsJapgolly.storybookAddonJest.anon.FilesExt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/addon-jest", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def withTests(userOptions: AnonFilesExt): js.Function1[/* repeated */ js.Any, _] = js.native
+object mod {
+  
+  @JSImport("@storybook/addon-jest", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def withTests(userOptions: FilesExt): js.Function1[/* repeated */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTests")(userOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Any]]
 }
-

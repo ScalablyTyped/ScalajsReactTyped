@@ -1,14 +1,18 @@
 package typingsJapgolly.prettier
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.prettier.mod.Parser
+import typingsJapgolly.prettier.anon.Css
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("prettier/parser-postcss", JSImport.Namespace)
-@js.native
-object parserPostcssMod extends js.Object {
-  var parsers: StringDictionary[Parser] = js.native
+object parserPostcssMod {
+  
+  @JSImport("prettier/parser-postcss", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("prettier/parser-postcss", "parsers")
+  @js.native
+  def parsers: Css = js.native
+  inline def parsers_=(x: Css): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parsers")(x.asInstanceOf[js.Any])
 }
-

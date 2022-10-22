@@ -1,10 +1,9 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "TenderCardDetailsEntryMethod")
 @js.native
-class TenderCardDetailsEntryMethod () extends js.Object
-
+open class TenderCardDetailsEntryMethod () extends StObject

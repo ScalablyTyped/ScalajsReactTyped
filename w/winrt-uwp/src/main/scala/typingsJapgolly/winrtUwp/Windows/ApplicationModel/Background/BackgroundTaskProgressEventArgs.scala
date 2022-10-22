@@ -1,16 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents progress information for a task at the time a progress update notification is sent. */
-@JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskProgressEventArgs")
-@js.native
-abstract class BackgroundTaskProgressEventArgs () extends js.Object {
+trait BackgroundTaskProgressEventArgs extends StObject {
+  
   /** Gets the identifier of the background task instance for this progress status notification. */
-  var instanceId: String = js.native
+  var instanceId: String
+  
   /** Gets progress status for a background task instance. */
-  var progress: Double = js.native
+  var progress: Double
 }
-
+object BackgroundTaskProgressEventArgs {
+  
+  inline def apply(instanceId: String, progress: Double): BackgroundTaskProgressEventArgs = {
+    val __obj = js.Dynamic.literal(instanceId = instanceId.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BackgroundTaskProgressEventArgs]
+  }
+  
+  extension [Self <: BackgroundTaskProgressEventArgs](x: Self) {
+    
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+  }
+}

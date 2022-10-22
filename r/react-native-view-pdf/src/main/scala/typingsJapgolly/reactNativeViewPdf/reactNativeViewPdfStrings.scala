@@ -1,90 +1,48 @@
 package typingsJapgolly.reactNativeViewPdf
 
-import typingsJapgolly.reactNativeViewPdf.mod.HTTPMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeViewPdfStrings {
-  @js.native
-  sealed trait CONNECT extends HTTPMethod
   
   @js.native
-  sealed trait DELETE extends HTTPMethod
+  sealed trait base64 extends StObject
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait GET extends HTTPMethod
+  sealed trait bundle extends StObject
+  inline def bundle: bundle = "bundle".asInstanceOf[bundle]
   
   @js.native
-  sealed trait HEAD extends HTTPMethod
+  sealed trait cachesDirectory extends StObject
+  inline def cachesDirectory: cachesDirectory = "cachesDirectory".asInstanceOf[cachesDirectory]
   
   @js.native
-  sealed trait OPTIONS extends HTTPMethod
+  sealed trait documentsDirectory extends StObject
+  inline def documentsDirectory: documentsDirectory = "documentsDirectory".asInstanceOf[documentsDirectory]
   
   @js.native
-  sealed trait PATCH extends HTTPMethod
+  sealed trait file extends StObject
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait POST extends HTTPMethod
+  sealed trait libraryDirectory extends StObject
+  inline def libraryDirectory: libraryDirectory = "libraryDirectory".asInstanceOf[libraryDirectory]
   
   @js.native
-  sealed trait PUT extends HTTPMethod
+  sealed trait tempDirectory extends StObject
+  inline def tempDirectory: tempDirectory = "tempDirectory".asInstanceOf[tempDirectory]
   
   @js.native
-  sealed trait TRACE extends HTTPMethod
+  sealed trait url extends StObject
+  inline def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait `utf-16` extends StObject
+  inline def `utf-16`: `utf-16` = "utf-16".asInstanceOf[`utf-16`]
   
   @js.native
-  sealed trait bundle extends js.Object
-  
-  @js.native
-  sealed trait documentsDirectory extends js.Object
-  
-  @js.native
-  sealed trait file extends js.Object
-  
-  @js.native
-  sealed trait url extends js.Object
-  
-  @js.native
-  sealed trait `utf-16` extends js.Object
-  
-  @js.native
-  sealed trait `utf-8` extends js.Object
-  
-  @scala.inline
-  def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def bundle: bundle = "bundle".asInstanceOf[bundle]
-  @scala.inline
-  def documentsDirectory: documentsDirectory = "documentsDirectory".asInstanceOf[documentsDirectory]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
-  @scala.inline
-  def `utf-16`: `utf-16` = "utf-16".asInstanceOf[`utf-16`]
-  @scala.inline
-  def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
+  sealed trait `utf-8` extends StObject
+  inline def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
 }
-

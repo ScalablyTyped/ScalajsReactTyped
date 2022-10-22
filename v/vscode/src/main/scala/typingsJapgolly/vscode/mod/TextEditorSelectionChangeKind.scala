@@ -1,45 +1,42 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextEditorSelectionChangeKind extends js.Object
-
+sealed trait TextEditorSelectionChangeKind extends StObject
 @JSImport("vscode", "TextEditorSelectionChangeKind")
 @js.native
-object TextEditorSelectionChangeKind extends js.Object {
-  /**
-  		 * Selection changed because a command ran.
-  		 */
-  @js.native
-  sealed trait Command extends TextEditorSelectionChangeKind
-  
-  /**
-  		 * Selection changed due to typing in the editor.
-  		 */
-  @js.native
-  sealed trait Keyboard extends TextEditorSelectionChangeKind
-  
-  /**
-  		 * Selection change due to clicking in the editor.
-  		 */
-  @js.native
-  sealed trait Mouse extends TextEditorSelectionChangeKind
+object TextEditorSelectionChangeKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextEditorSelectionChangeKind with Double] = js.native
-  /* 3 */ @js.native
-  object Command
-    extends TopLevel[typingsJapgolly.vscode.mod.TextEditorSelectionChangeKind.Command with Double]
+  def apply(value: Double): js.UndefOr[TextEditorSelectionChangeKind & Double] = js.native
   
-  /* 1 */ @js.native
-  object Keyboard extends TopLevel[Keyboard with Double]
+  /**
+    * Selection changed because a command ran.
+    */
+  @js.native
+  sealed trait Command
+    extends StObject
+       with TextEditorSelectionChangeKind
+  /* 3 */ val Command: typingsJapgolly.vscode.mod.TextEditorSelectionChangeKind.Command & Double = js.native
   
-  /* 2 */ @js.native
-  object Mouse extends TopLevel[Mouse with Double]
+  /**
+    * Selection changed due to typing in the editor.
+    */
+  @js.native
+  sealed trait Keyboard
+    extends StObject
+       with TextEditorSelectionChangeKind
+  /* 1 */ val Keyboard: typingsJapgolly.vscode.mod.TextEditorSelectionChangeKind.Keyboard & Double = js.native
   
+  /**
+    * Selection change due to clicking in the editor.
+    */
+  @js.native
+  sealed trait Mouse
+    extends StObject
+       with TextEditorSelectionChangeKind
+  /* 2 */ val Mouse: typingsJapgolly.vscode.mod.TextEditorSelectionChangeKind.Mouse & Double = js.native
 }
-

@@ -1,38 +1,48 @@
 package typingsJapgolly.officeJsPreview.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SelectionMode extends js.Object
-
+sealed trait SelectionMode extends StObject
 /**
-  * [Api set: WordApi]
+  * This enum sets where the cursor (insertion point) in the document is after a selection.
+  *
+  * @remarks
+  * [Api set: WordApi 1.1]
   */
 @JSGlobal("Word.SelectionMode")
 @js.native
-object SelectionMode extends js.Object {
+object SelectionMode extends StObject {
+  
+  /**
+    * The cursor is at the end of the selection (just after the end of the selected range).
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
-  sealed trait end extends SelectionMode
+  sealed trait end
+    extends StObject
+       with SelectionMode
   
+  /**
+    * The entire range is selected.
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
-  sealed trait select extends SelectionMode
+  sealed trait select
+    extends StObject
+       with SelectionMode
   
+  /**
+    * The cursor is at the beginning of the selection (just before the start of the selected range).
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
   @js.native
-  sealed trait start extends SelectionMode
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SelectionMode with String] = js.native
-  /* "End" */ @js.native
-  object end extends TopLevel[end with String]
-  
-  /* "Select" */ @js.native
-  object select extends TopLevel[select with String]
-  
-  /* "Start" */ @js.native
-  object start extends TopLevel[start with String]
-  
+  sealed trait start
+    extends StObject
+       with SelectionMode
 }
-

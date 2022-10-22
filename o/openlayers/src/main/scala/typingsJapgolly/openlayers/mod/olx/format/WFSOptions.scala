@@ -2,31 +2,45 @@ package typingsJapgolly.openlayers.mod.olx.format
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.openlayers.mod.format.GMLBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WFSOptions extends js.Object {
+trait WFSOptions extends StObject {
+  
   var featureNS: js.UndefOr[StringDictionary[String] | String] = js.undefined
+  
   var featureType: js.UndefOr[js.Array[String] | String] = js.undefined
+  
   var gmlFormat: js.UndefOr[GMLBase] = js.undefined
+  
   var schemaLocation: js.UndefOr[String] = js.undefined
 }
-
 object WFSOptions {
-  @scala.inline
-  def apply(
-    featureNS: StringDictionary[String] | String = null,
-    featureType: js.Array[String] | String = null,
-    gmlFormat: GMLBase = null,
-    schemaLocation: String = null
-  ): WFSOptions = {
+  
+  inline def apply(): WFSOptions = {
     val __obj = js.Dynamic.literal()
-    if (featureNS != null) __obj.updateDynamic("featureNS")(featureNS.asInstanceOf[js.Any])
-    if (featureType != null) __obj.updateDynamic("featureType")(featureType.asInstanceOf[js.Any])
-    if (gmlFormat != null) __obj.updateDynamic("gmlFormat")(gmlFormat.asInstanceOf[js.Any])
-    if (schemaLocation != null) __obj.updateDynamic("schemaLocation")(schemaLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[WFSOptions]
   }
+  
+  extension [Self <: WFSOptions](x: Self) {
+    
+    inline def setFeatureNS(value: StringDictionary[String] | String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureNSUndefined: Self = StObject.set(x, "featureNS", js.undefined)
+    
+    inline def setFeatureType(value: js.Array[String] | String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
+    
+    inline def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value*))
+    
+    inline def setGmlFormat(value: GMLBase): Self = StObject.set(x, "gmlFormat", value.asInstanceOf[js.Any])
+    
+    inline def setGmlFormatUndefined: Self = StObject.set(x, "gmlFormat", js.undefined)
+    
+    inline def setSchemaLocation(value: String): Self = StObject.set(x, "schemaLocation", value.asInstanceOf[js.Any])
+    
+    inline def setSchemaLocationUndefined: Self = StObject.set(x, "schemaLocation", js.undefined)
+  }
 }
-

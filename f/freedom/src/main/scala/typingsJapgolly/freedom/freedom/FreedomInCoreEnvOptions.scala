@@ -1,22 +1,31 @@
 package typingsJapgolly.freedom.freedom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FreedomInCoreEnvOptions extends js.Object {
+trait FreedomInCoreEnvOptions extends StObject {
+  
   var debug: js.UndefOr[String] = js.undefined
-    // debug level
+  
+  // debug level
   var logger: js.UndefOr[String] = js.undefined
 }
-
 object FreedomInCoreEnvOptions {
-  @scala.inline
-  def apply(debug: String = null, logger: String = null): FreedomInCoreEnvOptions = {
+  
+  inline def apply(): FreedomInCoreEnvOptions = {
     val __obj = js.Dynamic.literal()
-    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreedomInCoreEnvOptions]
   }
+  
+  extension [Self <: FreedomInCoreEnvOptions](x: Self) {
+    
+    inline def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    
+    inline def setLogger(value: String): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    
+    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+  }
 }
-

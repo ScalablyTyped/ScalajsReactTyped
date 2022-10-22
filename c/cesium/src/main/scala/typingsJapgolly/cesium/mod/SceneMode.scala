@@ -1,42 +1,52 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SceneMode extends js.Object
-
+sealed trait SceneMode extends StObject
 @JSImport("cesium", "SceneMode")
 @js.native
-object SceneMode extends js.Object {
-  @js.native
-  sealed trait COLUMBUS_VIEW extends SceneMode
-  
-  @js.native
-  sealed trait MORPHING extends SceneMode
-  
-  @js.native
-  sealed trait SCENE2D extends SceneMode
-  
-  @js.native
-  sealed trait SCENE3D extends SceneMode
+object SceneMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SceneMode with Double] = js.native
-  def getMorphTime(value: SceneMode): Double = js.native
-  /* 1 */ @js.native
-  object COLUMBUS_VIEW extends TopLevel[COLUMBUS_VIEW with Double]
+  def apply(value: Double): js.UndefOr[SceneMode & Double] = js.native
   
-  /* 0 */ @js.native
-  object MORPHING extends TopLevel[MORPHING with Double]
+  /**
+    * Columbus View mode.  A 2.5D perspective view where the map is laid out
+    * flat and objects with non-zero height are drawn above it.
+    */
+  @js.native
+  sealed trait COLUMBUS_VIEW
+    extends StObject
+       with SceneMode
+  /* 1 */ val COLUMBUS_VIEW: typingsJapgolly.cesium.mod.SceneMode.COLUMBUS_VIEW & Double = js.native
   
-  /* 2 */ @js.native
-  object SCENE2D extends TopLevel[SCENE2D with Double]
+  /**
+    * Morphing between mode, e.g., 3D to 2D.
+    */
+  @js.native
+  sealed trait MORPHING
+    extends StObject
+       with SceneMode
+  /* 0 */ val MORPHING: typingsJapgolly.cesium.mod.SceneMode.MORPHING & Double = js.native
   
-  /* 3 */ @js.native
-  object SCENE3D extends TopLevel[SCENE3D with Double]
+  /**
+    * 2D mode.  The map is viewed top-down with an orthographic projection.
+    */
+  @js.native
+  sealed trait SCENE2D
+    extends StObject
+       with SceneMode
+  /* 2 */ val SCENE2D: typingsJapgolly.cesium.mod.SceneMode.SCENE2D & Double = js.native
   
+  /**
+    * 3D mode.  A traditional 3D perspective view of the globe.
+    */
+  @js.native
+  sealed trait SCENE3D
+    extends StObject
+       with SceneMode
+  /* 3 */ val SCENE3D: typingsJapgolly.cesium.mod.SceneMode.SCENE3D & Double = js.native
 }
-

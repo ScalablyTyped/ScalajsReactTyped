@@ -1,50 +1,41 @@
 package typingsJapgolly.semanticUiSite
 
 import typingsJapgolly.semanticUiSite.SemanticUI.Site
-import typingsJapgolly.semanticUiSite.SemanticUI.Site.NamespaceStubSettings
 import typingsJapgolly.semanticUiSite.SemanticUI.SiteSettings
-import typingsJapgolly.semanticUiSite.semanticUiSiteStrings.debug
 import typingsJapgolly.semanticUiSite.semanticUiSiteStrings.destroy
-import typingsJapgolly.semanticUiSite.semanticUiSiteStrings.modules
-import typingsJapgolly.semanticUiSite.semanticUiSiteStrings.name
-import typingsJapgolly.semanticUiSite.semanticUiSiteStrings.namespace
-import typingsJapgolly.semanticUiSite.semanticUiSiteStrings.namespaceStub
-import typingsJapgolly.semanticUiSite.semanticUiSiteStrings.performance
 import typingsJapgolly.semanticUiSite.semanticUiSiteStrings.setting
-import typingsJapgolly.semanticUiSite.semanticUiSiteStrings.silent
-import typingsJapgolly.semanticUiSite.semanticUiSiteStrings.siteNamespace
-import typingsJapgolly.semanticUiSite.semanticUiSiteStrings.verbose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
+  
+  def site(): JQuery
+  def site(settings: SiteSettings): JQuery
   @JSName("site")
-  var site_Original: Site = js.native
-  def site(): JQuery = js.native
-  def site(behavior: setting, name: debug): Boolean = js.native
-  def site(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def site(behavior: setting, name: modules): js.Array[String] = js.native
-  def site(behavior: setting, name: modules, value: js.Array[String]): JQuery = js.native
-  def site(behavior: setting, name: name): String = js.native
-  def site(behavior: setting, name: namespace): String = js.native
-  def site(behavior: setting, name: namespaceStub): NamespaceStubSettings = js.native
-  def site(behavior: setting, name: namespaceStub, value: NamespaceStubSettings): JQuery = js.native
-  def site(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def site(behavior: setting, name: name, value: String): JQuery = js.native
-  def site(behavior: setting, name: performance): Boolean = js.native
-  def site(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def site(behavior: setting, name: silent): Boolean = js.native
-  def site(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def site(behavior: setting, name: siteNamespace): String = js.native
-  def site(behavior: setting, name: siteNamespace, value: String): JQuery = js.native
-  def site(behavior: setting, name: verbose): Boolean = js.native
-  def site(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def site(settings: SiteSettings): JQuery = js.native
+  var site_Original: Site
   @JSName("site")
-  def site_destroy(behavior: destroy): JQuery = js.native
+  def site_destroy(behavior: destroy): JQuery
   @JSName("site")
-  def site_setting(behavior: setting, value: SiteSettings): JQuery = js.native
+  def site_setting(behavior: setting, value: SiteSettings): JQuery
+  @JSName("site")
+  def site_setting[K /* <: /* keyof semantic-ui-site.SemanticUI.SiteSettings */ String */](
+    behavior: setting,
+    name: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-site.SemanticUI.SiteSettings._Impl[K] */ js.Any
+  ): JQuery
+  @JSName("site")
+  def site_setting[K /* <: /* keyof semantic-ui-site.SemanticUI.SiteSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-site.SemanticUI.SiteSettings._Impl[K] */ js.Any
 }
-
+object JQueryStatic {
+  
+  inline def apply(site: Site): JQueryStatic = {
+    val __obj = js.Dynamic.literal(site = site.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQueryStatic]
+  }
+  
+  extension [Self <: JQueryStatic](x: Self) {
+    
+    inline def setSite(value: Site): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+  }
+}

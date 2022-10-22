@@ -1,33 +1,48 @@
 package typingsJapgolly.kafkaNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RetryOptions extends js.Object {
+trait RetryOptions extends StObject {
+  
   var factor: js.UndefOr[Double] = js.undefined
+  
   var maxTimeout: js.UndefOr[Double] = js.undefined
+  
   var minTimeout: js.UndefOr[Double] = js.undefined
+  
   var randomize: js.UndefOr[Boolean] = js.undefined
+  
   var retries: js.UndefOr[Double] = js.undefined
 }
-
 object RetryOptions {
-  @scala.inline
-  def apply(
-    factor: Int | Double = null,
-    maxTimeout: Int | Double = null,
-    minTimeout: Int | Double = null,
-    randomize: js.UndefOr[Boolean] = js.undefined,
-    retries: Int | Double = null
-  ): RetryOptions = {
+  
+  inline def apply(): RetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
-    if (maxTimeout != null) __obj.updateDynamic("maxTimeout")(maxTimeout.asInstanceOf[js.Any])
-    if (minTimeout != null) __obj.updateDynamic("minTimeout")(minTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize.asInstanceOf[js.Any])
-    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions]
   }
+  
+  extension [Self <: RetryOptions](x: Self) {
+    
+    inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+    
+    inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+    
+    inline def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
+    
+    inline def setMinTimeout(value: Double): Self = StObject.set(x, "minTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setMinTimeoutUndefined: Self = StObject.set(x, "minTimeout", js.undefined)
+    
+    inline def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
+    
+    inline def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
+    
+    inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+    
+    inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+  }
 }
-

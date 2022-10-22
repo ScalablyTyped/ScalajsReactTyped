@@ -1,26 +1,46 @@
-package typingsJapgolly.slackMock
+package typingsJapgolly.slackMock.mod
 
+import typingsJapgolly.nock.mod.ReplyHeaders
+import typingsJapgolly.node.httpMod.IncomingHttpHeaders
+import typingsJapgolly.node.urlMod.Url
+import typingsJapgolly.slackMock.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type EventHttpHeaders = typingsJapgolly.node.httpMod.IncomingHttpHeaders
-  // Events
-  type EventUrl = java.lang.String | typingsJapgolly.node.urlMod.Url
-  type IncomingWebhookHttpHeaders = typingsJapgolly.nock.mod.ReplyHeaders
-  // Incoming Webhooks
-  type IncomingWebhookUrl = java.lang.String
-  type InteractiveButtonHttpHeaders = typingsJapgolly.nock.mod.ReplyHeaders
-  // Interactive Buttons
-  type InteractiveButtonUrl = java.lang.String | typingsJapgolly.node.urlMod.Url
-  type OutgoingWebhookHttpHeaders = typingsJapgolly.node.httpMod.IncomingHttpHeaders
-  // Outgoing Webhooks
-  type OutgoingWebhookUrl = java.lang.String | typingsJapgolly.node.urlMod.Url
-  type SlashCommandHttpHeaders = typingsJapgolly.node.httpMod.IncomingHttpHeaders
-  // Slash Commands
-  type SlashCommandUrl = java.lang.String | typingsJapgolly.node.urlMod.Url
-  type WebHttpHeaders = typingsJapgolly.nock.mod.ReplyHeaders
-  // Web
-  type WebUrl = java.lang.String
-}
+
+inline def apply(): Instance_ = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance_]
+inline def apply(config: ConfigOptions): Instance_ = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Instance_]
+
+inline def instance: Instance_ = ^.asInstanceOf[js.Dynamic].selectDynamic("instance").asInstanceOf[Instance_]
+inline def instance_=(x: Instance_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+
+type EventHttpHeaders = IncomingHttpHeaders
+
+// Events
+type EventUrl = String | Url
+
+type IncomingWebhookHttpHeaders = ReplyHeaders
+
+// Incoming Webhooks
+type IncomingWebhookUrl = String
+
+type InteractiveButtonHttpHeaders = ReplyHeaders
+
+// Interactive Buttons
+type InteractiveButtonUrl = String | Url
+
+type OutgoingWebhookHttpHeaders = IncomingHttpHeaders
+
+// Outgoing Webhooks
+type OutgoingWebhookUrl = String | Url
+
+type SlashCommandHttpHeaders = IncomingHttpHeaders
+
+// Slash Commands
+type SlashCommandUrl = String | Url
+
+type WebHttpHeaders = ReplyHeaders
+
+// Web
+type WebUrl = String

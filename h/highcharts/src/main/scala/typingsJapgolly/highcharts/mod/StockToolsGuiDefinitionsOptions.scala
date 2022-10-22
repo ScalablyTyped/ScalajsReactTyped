@@ -1,63 +1,108 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockToolsGuiDefinitionsOptions extends js.Object {
+trait StockToolsGuiDefinitionsOptions extends StObject {
+  
   var advanced: js.UndefOr[StockToolsGuiDefinitionsAdvancedOptions] = js.undefined
+  
   var crookedLines: js.UndefOr[StockToolsGuiDefinitionsCrookedLinesOptions] = js.undefined
+  
   var currentPriceIndicator: js.UndefOr[StockToolsGuiDefinitionsCurrentPriceIndicatorOptions] = js.undefined
+  
   var flags: js.UndefOr[StockToolsGuiDefinitionsFlagsOptions] = js.undefined
+  
   var fullScreen: js.UndefOr[StockToolsGuiDefinitionsFullScreenOptions] = js.undefined
+  
   var indicators: js.UndefOr[StockToolsGuiDefinitionsIndicatorsOptions] = js.undefined
+  
   var lines: js.UndefOr[StockToolsGuiDefinitionsLinesOptions] = js.undefined
+  
   var measure: js.UndefOr[StockToolsGuiDefinitionsMeasureOptions] = js.undefined
+  
   var saveChart: js.UndefOr[StockToolsGuiDefinitionsSaveChartOptions] = js.undefined
+  
   var separator: js.UndefOr[StockToolsGuiDefinitionsSeparatorOptions] = js.undefined
+  
   var simpleShapes: js.UndefOr[StockToolsGuiDefinitionsSimpleShapesOptions] = js.undefined
+  
   var toggleAnnotations: js.UndefOr[StockToolsGuiDefinitionsToggleAnnotationsOptions] = js.undefined
+  
   var typeChange: js.UndefOr[StockToolsGuiDefinitionsTypeChangeOptions] = js.undefined
+  
   var verticalLabels: js.UndefOr[StockToolsGuiDefinitionsVerticalLabelsOptions] = js.undefined
+  
   var zoomChange: js.UndefOr[StockToolsGuiDefinitionsZoomChangeOptions] = js.undefined
 }
-
 object StockToolsGuiDefinitionsOptions {
-  @scala.inline
-  def apply(
-    advanced: StockToolsGuiDefinitionsAdvancedOptions = null,
-    crookedLines: StockToolsGuiDefinitionsCrookedLinesOptions = null,
-    currentPriceIndicator: StockToolsGuiDefinitionsCurrentPriceIndicatorOptions = null,
-    flags: StockToolsGuiDefinitionsFlagsOptions = null,
-    fullScreen: StockToolsGuiDefinitionsFullScreenOptions = null,
-    indicators: StockToolsGuiDefinitionsIndicatorsOptions = null,
-    lines: StockToolsGuiDefinitionsLinesOptions = null,
-    measure: StockToolsGuiDefinitionsMeasureOptions = null,
-    saveChart: StockToolsGuiDefinitionsSaveChartOptions = null,
-    separator: StockToolsGuiDefinitionsSeparatorOptions = null,
-    simpleShapes: StockToolsGuiDefinitionsSimpleShapesOptions = null,
-    toggleAnnotations: StockToolsGuiDefinitionsToggleAnnotationsOptions = null,
-    typeChange: StockToolsGuiDefinitionsTypeChangeOptions = null,
-    verticalLabels: StockToolsGuiDefinitionsVerticalLabelsOptions = null,
-    zoomChange: StockToolsGuiDefinitionsZoomChangeOptions = null
-  ): StockToolsGuiDefinitionsOptions = {
+  
+  inline def apply(): StockToolsGuiDefinitionsOptions = {
     val __obj = js.Dynamic.literal()
-    if (advanced != null) __obj.updateDynamic("advanced")(advanced.asInstanceOf[js.Any])
-    if (crookedLines != null) __obj.updateDynamic("crookedLines")(crookedLines.asInstanceOf[js.Any])
-    if (currentPriceIndicator != null) __obj.updateDynamic("currentPriceIndicator")(currentPriceIndicator.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (fullScreen != null) __obj.updateDynamic("fullScreen")(fullScreen.asInstanceOf[js.Any])
-    if (indicators != null) __obj.updateDynamic("indicators")(indicators.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
-    if (saveChart != null) __obj.updateDynamic("saveChart")(saveChart.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (simpleShapes != null) __obj.updateDynamic("simpleShapes")(simpleShapes.asInstanceOf[js.Any])
-    if (toggleAnnotations != null) __obj.updateDynamic("toggleAnnotations")(toggleAnnotations.asInstanceOf[js.Any])
-    if (typeChange != null) __obj.updateDynamic("typeChange")(typeChange.asInstanceOf[js.Any])
-    if (verticalLabels != null) __obj.updateDynamic("verticalLabels")(verticalLabels.asInstanceOf[js.Any])
-    if (zoomChange != null) __obj.updateDynamic("zoomChange")(zoomChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsOptions]
   }
+  
+  extension [Self <: StockToolsGuiDefinitionsOptions](x: Self) {
+    
+    inline def setAdvanced(value: StockToolsGuiDefinitionsAdvancedOptions): Self = StObject.set(x, "advanced", value.asInstanceOf[js.Any])
+    
+    inline def setAdvancedUndefined: Self = StObject.set(x, "advanced", js.undefined)
+    
+    inline def setCrookedLines(value: StockToolsGuiDefinitionsCrookedLinesOptions): Self = StObject.set(x, "crookedLines", value.asInstanceOf[js.Any])
+    
+    inline def setCrookedLinesUndefined: Self = StObject.set(x, "crookedLines", js.undefined)
+    
+    inline def setCurrentPriceIndicator(value: StockToolsGuiDefinitionsCurrentPriceIndicatorOptions): Self = StObject.set(x, "currentPriceIndicator", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentPriceIndicatorUndefined: Self = StObject.set(x, "currentPriceIndicator", js.undefined)
+    
+    inline def setFlags(value: StockToolsGuiDefinitionsFlagsOptions): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    
+    inline def setFullScreen(value: StockToolsGuiDefinitionsFullScreenOptions): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+    
+    inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
+    
+    inline def setIndicators(value: StockToolsGuiDefinitionsIndicatorsOptions): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
+    
+    inline def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
+    
+    inline def setLines(value: StockToolsGuiDefinitionsLinesOptions): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    
+    inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+    
+    inline def setMeasure(value: StockToolsGuiDefinitionsMeasureOptions): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
+    
+    inline def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
+    
+    inline def setSaveChart(value: StockToolsGuiDefinitionsSaveChartOptions): Self = StObject.set(x, "saveChart", value.asInstanceOf[js.Any])
+    
+    inline def setSaveChartUndefined: Self = StObject.set(x, "saveChart", js.undefined)
+    
+    inline def setSeparator(value: StockToolsGuiDefinitionsSeparatorOptions): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    
+    inline def setSimpleShapes(value: StockToolsGuiDefinitionsSimpleShapesOptions): Self = StObject.set(x, "simpleShapes", value.asInstanceOf[js.Any])
+    
+    inline def setSimpleShapesUndefined: Self = StObject.set(x, "simpleShapes", js.undefined)
+    
+    inline def setToggleAnnotations(value: StockToolsGuiDefinitionsToggleAnnotationsOptions): Self = StObject.set(x, "toggleAnnotations", value.asInstanceOf[js.Any])
+    
+    inline def setToggleAnnotationsUndefined: Self = StObject.set(x, "toggleAnnotations", js.undefined)
+    
+    inline def setTypeChange(value: StockToolsGuiDefinitionsTypeChangeOptions): Self = StObject.set(x, "typeChange", value.asInstanceOf[js.Any])
+    
+    inline def setTypeChangeUndefined: Self = StObject.set(x, "typeChange", js.undefined)
+    
+    inline def setVerticalLabels(value: StockToolsGuiDefinitionsVerticalLabelsOptions): Self = StObject.set(x, "verticalLabels", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalLabelsUndefined: Self = StObject.set(x, "verticalLabels", js.undefined)
+    
+    inline def setZoomChange(value: StockToolsGuiDefinitionsZoomChangeOptions): Self = StObject.set(x, "zoomChange", value.asInstanceOf[js.Any])
+    
+    inline def setZoomChangeUndefined: Self = StObject.set(x, "zoomChange", js.undefined)
+  }
 }
-

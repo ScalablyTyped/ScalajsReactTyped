@@ -1,53 +1,64 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.JSXElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait JSXElement_
-  extends Expression
+  extends StObject
      with BaseNode
+     with Expression
      with Immutable
      with JSX {
+  
   var children: js.Array[
     JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_
   ]
+  
   var closingElement: JSXClosingElement_ | Null
+  
   var openingElement: JSXOpeningElement_
-  var selfClosing: js.Any
+  
+  var selfClosing: Boolean | Null
+  
   @JSName("type")
   var type_JSXElement_ : JSXElement
 }
-
 object JSXElement_ {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     children: js.Array[
       JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_
     ],
-    openingElement: JSXOpeningElement_,
-    selfClosing: js.Any,
-    `type`: JSXElement,
-    closingElement: JSXClosingElement_ = null,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
+    openingElement: JSXOpeningElement_
   ): JSXElement_ = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (closingElement != null) __obj.updateDynamic("closingElement")(closingElement.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any], closingElement = null, end = null, innerComments = null, leadingComments = null, loc = null, selfClosing = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("JSXElement")
     __obj.asInstanceOf[JSXElement_]
   }
+  
+  extension [Self <: JSXElement_](x: Self) {
+    
+    inline def setChildren(
+      value: js.Array[
+          JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_
+        ]
+    ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenVarargs(value: (JSXText_ | JSXExpressionContainer_ | JSXSpreadChild_ | JSXElement_ | JSXFragment_)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setClosingElement(value: JSXClosingElement_): Self = StObject.set(x, "closingElement", value.asInstanceOf[js.Any])
+    
+    inline def setClosingElementNull: Self = StObject.set(x, "closingElement", null)
+    
+    inline def setOpeningElement(value: JSXOpeningElement_): Self = StObject.set(x, "openingElement", value.asInstanceOf[js.Any])
+    
+    inline def setSelfClosing(value: Boolean): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
+    
+    inline def setSelfClosingNull: Self = StObject.set(x, "selfClosing", null)
+    
+    inline def setType(value: JSXElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

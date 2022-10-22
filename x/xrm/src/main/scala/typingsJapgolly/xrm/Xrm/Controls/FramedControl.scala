@@ -2,10 +2,11 @@ package typingsJapgolly.xrm.Xrm.Controls
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLIFrameElement
+import org.scalajs.dom.HTMLIFrameElement
+import typingsJapgolly.xrm.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for a framed control, which is either a Web Resource or an Iframe.
@@ -13,19 +14,33 @@ import scala.scalajs.js.annotation._
   * @remarks     An Iframe control provides additional methods, so use {@link IframeControl} where
   *              appropriate.  Silverlight controls should use {@link SilverlightControl}.
   */
-trait FramedControl extends Control {
+trait FramedControl
+  extends StObject
+     with Control {
+  
+  /**
+    * Returns the content window that represents an IFRAME or web resource.
+    * @returns A promise that contains a content window instance representing an IFRAME or web resource.
+    * @remarks This method is supported only on Unified Interface.  The implementer is expected to call
+    * a custom function within the returned window that will receive the Xrm and formContext objects as
+    * parameters.
+    */
+  def getContentWindow(): js.Promise[Window]
+  
   /**
     * Gets the DOM element containing the control.
     * @returns The container object.
     * @remarks Unavailable for Microsoft Dynamics CRM for tablets.
     */
   def getObject(): HTMLIFrameElement
+  
   /**
     * Gets the URL value of the control.
     * @returns The source URL.
     * @remarks Unavailable for Microsoft Dynamics CRM for tablets.
     */
   def getSrc(): String
+  
   /**
     * Sets the URL value of the control.
     * @param src The source URL.
@@ -33,10 +48,10 @@ trait FramedControl extends Control {
     */
   def setSrc(src: String): Unit
 }
-
 object FramedControl {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
+    getContentWindow: CallbackTo[js.Promise[Window]],
     getControlType: CallbackTo[ControlType | String],
     getLabel: CallbackTo[String],
     getName: CallbackTo[String],
@@ -47,17 +62,18 @@ object FramedControl {
     setLabel: String => Callback,
     setSrc: String => Callback
   ): FramedControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getControlType")(getControlType.toJsFn)
-    __obj.updateDynamic("getLabel")(getLabel.toJsFn)
-    __obj.updateDynamic("getName")(getName.toJsFn)
-    __obj.updateDynamic("getObject")(getObject.toJsFn)
-    __obj.updateDynamic("getParent")(getParent.toJsFn)
-    __obj.updateDynamic("getSrc")(getSrc.toJsFn)
-    __obj.updateDynamic("getVisible")(getVisible.toJsFn)
-    __obj.updateDynamic("setLabel")(js.Any.fromFunction1((t0: java.lang.String) => setLabel(t0).runNow()))
-    __obj.updateDynamic("setSrc")(js.Any.fromFunction1((t0: java.lang.String) => setSrc(t0).runNow()))
+    val __obj = js.Dynamic.literal(getContentWindow = getContentWindow.toJsFn, getControlType = getControlType.toJsFn, getLabel = getLabel.toJsFn, getName = getName.toJsFn, getObject = getObject.toJsFn, getParent = getParent.toJsFn, getSrc = getSrc.toJsFn, getVisible = getVisible.toJsFn, setLabel = js.Any.fromFunction1((t0: String) => setLabel(t0).runNow()), setSrc = js.Any.fromFunction1((t0: String) => setSrc(t0).runNow()))
     __obj.asInstanceOf[FramedControl]
   }
+  
+  extension [Self <: FramedControl](x: Self) {
+    
+    inline def setGetContentWindow(value: CallbackTo[js.Promise[Window]]): Self = StObject.set(x, "getContentWindow", value.toJsFn)
+    
+    inline def setGetObject(value: CallbackTo[HTMLIFrameElement]): Self = StObject.set(x, "getObject", value.toJsFn)
+    
+    inline def setGetSrc(value: CallbackTo[String]): Self = StObject.set(x, "getSrc", value.toJsFn)
+    
+    inline def setSetSrc(value: String => Callback): Self = StObject.set(x, "setSrc", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+  }
 }
-

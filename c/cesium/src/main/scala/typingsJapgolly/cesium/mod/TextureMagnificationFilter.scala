@@ -1,29 +1,33 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextureMagnificationFilter extends js.Object
-
+sealed trait TextureMagnificationFilter extends StObject
 @JSImport("cesium", "TextureMagnificationFilter")
 @js.native
-object TextureMagnificationFilter extends js.Object {
-  @js.native
-  sealed trait LINEAR extends TextureMagnificationFilter
-  
-  @js.native
-  sealed trait NEAREST extends TextureMagnificationFilter
+object TextureMagnificationFilter extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextureMagnificationFilter with Double] = js.native
-  /* 0 */ @js.native
-  object LINEAR extends TopLevel[LINEAR with Double]
+  def apply(value: scala.Nothing): js.UndefOr[TextureMagnificationFilter & scala.Nothing] = js.native
   
-  /* 1 */ @js.native
-  object NEAREST extends TopLevel[NEAREST with Double]
+  /**
+    * Samples the texture through bi-linear interpolation of the four nearest pixels. This produces smoother results than <code>NEAREST</code> filtering.
+    */
+  @js.native
+  sealed trait LINEAR
+    extends StObject
+       with TextureMagnificationFilter
+  /* WebGLConstants.LINEAR */ val LINEAR: typingsJapgolly.cesium.mod.TextureMagnificationFilter.LINEAR & scala.Nothing = js.native
   
+  /**
+    * Samples the texture by returning the closest pixel.
+    */
+  @js.native
+  sealed trait NEAREST
+    extends StObject
+       with TextureMagnificationFilter
+  /* WebGLConstants.NEAREST */ val NEAREST: typingsJapgolly.cesium.mod.TextureMagnificationFilter.NEAREST & scala.Nothing = js.native
 }
-

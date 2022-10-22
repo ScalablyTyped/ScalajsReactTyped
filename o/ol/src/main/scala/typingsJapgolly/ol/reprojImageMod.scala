@@ -1,28 +1,31 @@
 package typingsJapgolly.ol
 
 import typingsJapgolly.ol.extentMod.Extent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/reproj/Image", JSImport.Namespace)
-@js.native
-object reprojImageMod extends js.Object {
-  @js.native
-  trait ReprojImage
-    extends typingsJapgolly.ol.imageBaseMod.default {
-    def getProjection(): typingsJapgolly.ol.projectionMod.default = js.native
-  }
+object reprojImageMod {
   
+  @JSImport("ol/reproj/Image", JSImport.Default)
   @js.native
-  class default protected () extends ReprojImage {
+  open class default protected () extends ReprojImage {
     def this(
-      sourceProj: typingsJapgolly.ol.projectionMod.default,
-      targetProj: typingsJapgolly.ol.projectionMod.default,
+      sourceProj: typingsJapgolly.ol.projProjectionMod.default,
+      targetProj: typingsJapgolly.ol.projProjectionMod.default,
       targetExtent: Extent,
       targetResolution: Double,
       pixelRatio: Double,
       getImageFunction: FunctionType
+    ) = this()
+    def this(
+      sourceProj: typingsJapgolly.ol.projProjectionMod.default,
+      targetProj: typingsJapgolly.ol.projProjectionMod.default,
+      targetExtent: Extent,
+      targetResolution: Double,
+      pixelRatio: Double,
+      getImageFunction: FunctionType,
+      opt_contextOptions: Any
     ) = this()
   }
   
@@ -32,5 +35,11 @@ object reprojImageMod extends js.Object {
     /* p2 */ Double, 
     typingsJapgolly.ol.imageBaseMod.default
   ]
+  
+  @js.native
+  trait ReprojImage
+    extends typingsJapgolly.ol.imageBaseMod.default {
+    
+    def getProjection(): typingsJapgolly.ol.projProjectionMod.default = js.native
+  }
 }
-

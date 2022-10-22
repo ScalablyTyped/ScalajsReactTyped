@@ -1,108 +1,198 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockChartNavigatorSeriesItem extends js.Object {
+trait StockChartNavigatorSeriesItem extends StObject {
+  
   var aggregate: js.UndefOr[String | js.Function] = js.undefined
+  
   var axis: js.UndefOr[String] = js.undefined
+  
   var border: js.UndefOr[StockChartNavigatorSeriesItemBorder] = js.undefined
+  
   var categoryField: js.UndefOr[String] = js.undefined
+  
   var closeField: js.UndefOr[String] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var colorField: js.UndefOr[String] = js.undefined
+  
   var dashType: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
   var downColor: js.UndefOr[String] = js.undefined
+  
   var downColorField: js.UndefOr[String] = js.undefined
+  
   var field: js.UndefOr[String] = js.undefined
+  
   var gap: js.UndefOr[Double] = js.undefined
+  
   var highField: js.UndefOr[String] = js.undefined
+  
   var highlight: js.UndefOr[StockChartNavigatorSeriesItemHighlight] = js.undefined
+  
   var labels: js.UndefOr[StockChartNavigatorSeriesItemLabels] = js.undefined
+  
   var line: js.UndefOr[String | StockChartNavigatorSeriesItemLine] = js.undefined
+  
   var lowField: js.UndefOr[String] = js.undefined
+  
   var markers: js.UndefOr[StockChartNavigatorSeriesItemMarkers] = js.undefined
+  
   var missingValues: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   var openField: js.UndefOr[String] = js.undefined
+  
   var overlay: js.UndefOr[StockChartNavigatorSeriesItemOverlay] = js.undefined
+  
   var spacing: js.UndefOr[Double] = js.undefined
+  
   var stack: js.UndefOr[Boolean | String | StockChartNavigatorSeriesItemStack] = js.undefined
+  
   var style: js.UndefOr[String] = js.undefined
+  
   var tooltip: js.UndefOr[StockChartNavigatorSeriesItemTooltip] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object StockChartNavigatorSeriesItem {
-  @scala.inline
-  def apply(
-    aggregate: String | js.Function = null,
-    axis: String = null,
-    border: StockChartNavigatorSeriesItemBorder = null,
-    categoryField: String = null,
-    closeField: String = null,
-    color: String = null,
-    colorField: String = null,
-    dashType: String = null,
-    data: js.Any = null,
-    downColor: String = null,
-    downColorField: String = null,
-    field: String = null,
-    gap: Int | Double = null,
-    highField: String = null,
-    highlight: StockChartNavigatorSeriesItemHighlight = null,
-    labels: StockChartNavigatorSeriesItemLabels = null,
-    line: String | StockChartNavigatorSeriesItemLine = null,
-    lowField: String = null,
-    markers: StockChartNavigatorSeriesItemMarkers = null,
-    missingValues: String = null,
-    name: String = null,
-    opacity: Int | Double = null,
-    openField: String = null,
-    overlay: StockChartNavigatorSeriesItemOverlay = null,
-    spacing: Int | Double = null,
-    stack: Boolean | String | StockChartNavigatorSeriesItemStack = null,
-    style: String = null,
-    tooltip: StockChartNavigatorSeriesItemTooltip = null,
-    `type`: String = null,
-    width: Int | Double = null
-  ): StockChartNavigatorSeriesItem = {
+  
+  inline def apply(): StockChartNavigatorSeriesItem = {
     val __obj = js.Dynamic.literal()
-    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (categoryField != null) __obj.updateDynamic("categoryField")(categoryField.asInstanceOf[js.Any])
-    if (closeField != null) __obj.updateDynamic("closeField")(closeField.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorField != null) __obj.updateDynamic("colorField")(colorField.asInstanceOf[js.Any])
-    if (dashType != null) __obj.updateDynamic("dashType")(dashType.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (downColor != null) __obj.updateDynamic("downColor")(downColor.asInstanceOf[js.Any])
-    if (downColorField != null) __obj.updateDynamic("downColorField")(downColorField.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (highField != null) __obj.updateDynamic("highField")(highField.asInstanceOf[js.Any])
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (lowField != null) __obj.updateDynamic("lowField")(lowField.asInstanceOf[js.Any])
-    if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
-    if (missingValues != null) __obj.updateDynamic("missingValues")(missingValues.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (openField != null) __obj.updateDynamic("openField")(openField.asInstanceOf[js.Any])
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartNavigatorSeriesItem]
   }
+  
+  extension [Self <: StockChartNavigatorSeriesItem](x: Self) {
+    
+    inline def setAggregate(value: String | js.Function): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    
+    inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
+    
+    inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    
+    inline def setBorder(value: StockChartNavigatorSeriesItemBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setCategoryField(value: String): Self = StObject.set(x, "categoryField", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryFieldUndefined: Self = StObject.set(x, "categoryField", js.undefined)
+    
+    inline def setCloseField(value: String): Self = StObject.set(x, "closeField", value.asInstanceOf[js.Any])
+    
+    inline def setCloseFieldUndefined: Self = StObject.set(x, "closeField", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorField(value: String): Self = StObject.set(x, "colorField", value.asInstanceOf[js.Any])
+    
+    inline def setColorFieldUndefined: Self = StObject.set(x, "colorField", js.undefined)
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setDashType(value: String): Self = StObject.set(x, "dashType", value.asInstanceOf[js.Any])
+    
+    inline def setDashTypeUndefined: Self = StObject.set(x, "dashType", js.undefined)
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDownColor(value: String): Self = StObject.set(x, "downColor", value.asInstanceOf[js.Any])
+    
+    inline def setDownColorField(value: String): Self = StObject.set(x, "downColorField", value.asInstanceOf[js.Any])
+    
+    inline def setDownColorFieldUndefined: Self = StObject.set(x, "downColorField", js.undefined)
+    
+    inline def setDownColorUndefined: Self = StObject.set(x, "downColor", js.undefined)
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    
+    inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+    
+    inline def setHighField(value: String): Self = StObject.set(x, "highField", value.asInstanceOf[js.Any])
+    
+    inline def setHighFieldUndefined: Self = StObject.set(x, "highField", js.undefined)
+    
+    inline def setHighlight(value: StockChartNavigatorSeriesItemHighlight): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    
+    inline def setLabels(value: StockChartNavigatorSeriesItemLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setLine(value: String | StockChartNavigatorSeriesItemLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    
+    inline def setLowField(value: String): Self = StObject.set(x, "lowField", value.asInstanceOf[js.Any])
+    
+    inline def setLowFieldUndefined: Self = StObject.set(x, "lowField", js.undefined)
+    
+    inline def setMarkers(value: StockChartNavigatorSeriesItemMarkers): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+    
+    inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
+    
+    inline def setMissingValues(value: String): Self = StObject.set(x, "missingValues", value.asInstanceOf[js.Any])
+    
+    inline def setMissingValuesUndefined: Self = StObject.set(x, "missingValues", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setOpenField(value: String): Self = StObject.set(x, "openField", value.asInstanceOf[js.Any])
+    
+    inline def setOpenFieldUndefined: Self = StObject.set(x, "openField", js.undefined)
+    
+    inline def setOverlay(value: StockChartNavigatorSeriesItemOverlay): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+    
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    
+    inline def setStack(value: Boolean | String | StockChartNavigatorSeriesItemStack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTooltip(value: StockChartNavigatorSeriesItemTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

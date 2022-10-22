@@ -1,7 +1,7 @@
 
 # Scala.js typings for webtorrent
 
-Typings are for version 0.107
+Typings are for version 0.109
 
 ## Library description:
 Streaming torrent client
@@ -10,10 +10,10 @@ Streaming torrent client
 | ------------------ | :-------------: |
 | Full name          | webtorrent |
 | Keywords           | bittorrent, bittorrent client, download, mad science, p2p, peer-to-peer, peers, streaming, swarm, torrent, web torrent, webrtc, webrtc data, webtorrent |
-| # releases         | 47 |
-| # dependents       | 93 |
-| # downloads        | 189963 |
-| # stars            | 60 |
+| # releases         | 108 |
+| # dependents       | 0.0 |
+| # downloads        | 57557.333333333336 |
+| # stars            | 26950.0 |
 
 ## Links
 - [Homepage](https://webtorrent.io)

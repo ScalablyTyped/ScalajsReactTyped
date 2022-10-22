@@ -1,29 +1,27 @@
 package typingsJapgolly.nodeForge.mod.tls
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HeartbeatMessageType extends js.Object
-
+sealed trait HeartbeatMessageType extends StObject
 @JSImport("node-forge", "tls.HeartbeatMessageType")
 @js.native
-object HeartbeatMessageType extends js.Object {
-  @js.native
-  sealed trait heartbeat_request extends HeartbeatMessageType
-  
-  @js.native
-  sealed trait heartbeat_response extends HeartbeatMessageType
+object HeartbeatMessageType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HeartbeatMessageType with Double] = js.native
-  /* 1 */ @js.native
-  object heartbeat_request extends TopLevel[heartbeat_request with Double]
+  def apply(value: Double): js.UndefOr[HeartbeatMessageType & Double] = js.native
   
-  /* 2 */ @js.native
-  object heartbeat_response extends TopLevel[heartbeat_response with Double]
+  @js.native
+  sealed trait heartbeat_request
+    extends StObject
+       with HeartbeatMessageType
+  /* 1 */ val heartbeat_request: typingsJapgolly.nodeForge.mod.tls.HeartbeatMessageType.heartbeat_request & Double = js.native
   
+  @js.native
+  sealed trait heartbeat_response
+    extends StObject
+       with HeartbeatMessageType
+  /* 2 */ val heartbeat_response: typingsJapgolly.nodeForge.mod.tls.HeartbeatMessageType.heartbeat_response & Double = js.native
 }
-

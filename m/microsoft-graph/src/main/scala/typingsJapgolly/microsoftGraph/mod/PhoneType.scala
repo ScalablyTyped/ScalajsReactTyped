@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.home
@@ -16,30 +16,26 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.pager
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.radio
 */
-trait PhoneType extends js.Object
-
+trait PhoneType extends StObject
 object PhoneType {
-  @scala.inline
-  def assistant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.assistant = this.cast("assistant")
-  @scala.inline
-  def business: typingsJapgolly.microsoftGraph.microsoftGraphStrings.business = this.cast("business")
-  @scala.inline
-  def businessFax: typingsJapgolly.microsoftGraph.microsoftGraphStrings.businessFax = this.cast("businessFax")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def home: typingsJapgolly.microsoftGraph.microsoftGraphStrings.home = this.cast("home")
-  @scala.inline
-  def homeFax: typingsJapgolly.microsoftGraph.microsoftGraphStrings.homeFax = this.cast("homeFax")
-  @scala.inline
-  def mobile: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mobile = this.cast("mobile")
-  @scala.inline
-  def other: typingsJapgolly.microsoftGraph.microsoftGraphStrings.other = this.cast("other")
-  @scala.inline
-  def otherFax: typingsJapgolly.microsoftGraph.microsoftGraphStrings.otherFax = this.cast("otherFax")
-  @scala.inline
-  def pager: typingsJapgolly.microsoftGraph.microsoftGraphStrings.pager = this.cast("pager")
-  @scala.inline
-  def radio: typingsJapgolly.microsoftGraph.microsoftGraphStrings.radio = this.cast("radio")
+  
+  inline def assistant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.assistant = "assistant".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.assistant]
+  
+  inline def business: typingsJapgolly.microsoftGraph.microsoftGraphStrings.business = "business".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.business]
+  
+  inline def businessFax: typingsJapgolly.microsoftGraph.microsoftGraphStrings.businessFax = "businessFax".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.businessFax]
+  
+  inline def home: typingsJapgolly.microsoftGraph.microsoftGraphStrings.home = "home".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.home]
+  
+  inline def homeFax: typingsJapgolly.microsoftGraph.microsoftGraphStrings.homeFax = "homeFax".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.homeFax]
+  
+  inline def mobile: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mobile = "mobile".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.mobile]
+  
+  inline def other: typingsJapgolly.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.other]
+  
+  inline def otherFax: typingsJapgolly.microsoftGraph.microsoftGraphStrings.otherFax = "otherFax".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.otherFax]
+  
+  inline def pager: typingsJapgolly.microsoftGraph.microsoftGraphStrings.pager = "pager".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.pager]
+  
+  inline def radio: typingsJapgolly.microsoftGraph.microsoftGraphStrings.radio = "radio".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.radio]
 }
-

@@ -1,45 +1,43 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TaskRevealKind extends js.Object
-
+sealed trait TaskRevealKind extends StObject
 @JSImport("vscode", "TaskRevealKind")
 @js.native
-object TaskRevealKind extends js.Object {
-  /**
-  		 * Always brings the terminal to front if the task is executed.
-  		 */
-  @js.native
-  sealed trait Always extends TaskRevealKind
-  
-  /**
-  		 * The terminal never comes to front when the task is executed.
-  		 */
-  @js.native
-  sealed trait Never extends TaskRevealKind
-  
-  /**
-  		 * Only brings the terminal to front if a problem is detected executing the task
-  		 * (e.g. the task couldn't be started because).
-  		 */
-  @js.native
-  sealed trait Silent extends TaskRevealKind
+object TaskRevealKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TaskRevealKind with Double] = js.native
-  /* 1 */ @js.native
-  object Always extends TopLevel[Always with Double]
+  def apply(value: Double): js.UndefOr[TaskRevealKind & Double] = js.native
   
-  /* 3 */ @js.native
-  object Never extends TopLevel[Never with Double]
+  /**
+    * Always brings the terminal to front if the task is executed.
+    */
+  @js.native
+  sealed trait Always
+    extends StObject
+       with TaskRevealKind
+  /* 1 */ val Always: typingsJapgolly.vscode.mod.TaskRevealKind.Always & Double = js.native
   
-  /* 2 */ @js.native
-  object Silent extends TopLevel[Silent with Double]
+  /**
+    * The terminal never comes to front when the task is executed.
+    */
+  @js.native
+  sealed trait Never
+    extends StObject
+       with TaskRevealKind
+  /* 3 */ val Never: typingsJapgolly.vscode.mod.TaskRevealKind.Never & Double = js.native
   
+  /**
+    * Only brings the terminal to front if a problem is detected executing the task
+    * (e.g. the task couldn't be started because).
+    */
+  @js.native
+  sealed trait Silent
+    extends StObject
+       with TaskRevealKind
+  /* 2 */ val Silent: typingsJapgolly.vscode.mod.TaskRevealKind.Silent & Double = js.native
 }
-

@@ -10,10 +10,10 @@ The lodash method `_.once` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.once |
 | Keywords           | lodash-modularized, once |
-| # releases         | 0 |
-| # dependents       | 76 |
-| # downloads        | 122351717 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.6835117E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

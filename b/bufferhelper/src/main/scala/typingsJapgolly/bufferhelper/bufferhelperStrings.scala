@@ -1,45 +1,51 @@
 package typingsJapgolly.bufferhelper
 
 import typingsJapgolly.bufferhelper.mod.encoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferhelperStrings {
-  @js.native
-  sealed trait ascii extends encoding
   
   @js.native
-  sealed trait base64 extends encoding
+  sealed trait ascii
+    extends StObject
+       with encoding
+  inline def ascii: ascii = "ascii".asInstanceOf[ascii]
   
   @js.native
-  sealed trait binary extends encoding
+  sealed trait base64
+    extends StObject
+       with encoding
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait hex extends encoding
+  sealed trait binary
+    extends StObject
+       with encoding
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
-  sealed trait ucs2 extends encoding
+  sealed trait hex
+    extends StObject
+       with encoding
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
-  sealed trait utf16le extends encoding
+  sealed trait ucs2
+    extends StObject
+       with encoding
+  inline def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
   
   @js.native
-  sealed trait utf8 extends encoding
+  sealed trait utf16le
+    extends StObject
+       with encoding
+  inline def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
   
-  @scala.inline
-  def ascii: ascii = "ascii".asInstanceOf[ascii]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
-  @scala.inline
-  def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
-  @scala.inline
-  def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  @js.native
+  sealed trait utf8
+    extends StObject
+       with encoding
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }
-

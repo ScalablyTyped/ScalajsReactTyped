@@ -1,50 +1,47 @@
 package typingsJapgolly.autobahn
 
 import typingsJapgolly.autobahn.mod.DefaultTransportType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autobahnStrings {
-  @js.native
-  sealed trait first extends js.Object
   
   @js.native
-  sealed trait last extends js.Object
+  sealed trait first extends StObject
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
-  sealed trait longpoll extends DefaultTransportType
+  sealed trait last extends StObject
+  inline def last: last = "last".asInstanceOf[last]
   
   @js.native
-  sealed trait random extends js.Object
+  sealed trait longpoll
+    extends StObject
+       with DefaultTransportType
+  inline def longpoll: longpoll = "longpoll".asInstanceOf[longpoll]
   
   @js.native
-  sealed trait rawsocket extends DefaultTransportType
+  sealed trait random extends StObject
+  inline def random: random = "random".asInstanceOf[random]
   
   @js.native
-  sealed trait roundrobin extends js.Object
+  sealed trait rawsocket
+    extends StObject
+       with DefaultTransportType
+  inline def rawsocket: rawsocket = "rawsocket".asInstanceOf[rawsocket]
   
   @js.native
-  sealed trait single extends js.Object
+  sealed trait roundrobin extends StObject
+  inline def roundrobin: roundrobin = "roundrobin".asInstanceOf[roundrobin]
   
   @js.native
-  sealed trait websocket extends DefaultTransportType
+  sealed trait single extends StObject
+  inline def single: single = "single".asInstanceOf[single]
   
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
-  @scala.inline
-  def last: last = "last".asInstanceOf[last]
-  @scala.inline
-  def longpoll: longpoll = "longpoll".asInstanceOf[longpoll]
-  @scala.inline
-  def random: random = "random".asInstanceOf[random]
-  @scala.inline
-  def rawsocket: rawsocket = "rawsocket".asInstanceOf[rawsocket]
-  @scala.inline
-  def roundrobin: roundrobin = "roundrobin".asInstanceOf[roundrobin]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
-  @scala.inline
-  def websocket: websocket = "websocket".asInstanceOf[websocket]
+  @js.native
+  sealed trait websocket
+    extends StObject
+       with DefaultTransportType
+  inline def websocket: websocket = "websocket".asInstanceOf[websocket]
 }
-

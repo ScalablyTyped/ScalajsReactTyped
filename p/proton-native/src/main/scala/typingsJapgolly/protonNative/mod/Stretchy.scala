@@ -1,10 +1,11 @@
 package typingsJapgolly.protonNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Stretchy extends js.Object {
+trait Stretchy extends StObject {
+  
   /**
     * Whether the component should stretch to fill the available space. Defaults to true.
     *
@@ -16,13 +17,17 @@ trait Stretchy extends js.Object {
     */
   var stretchy: js.UndefOr[Boolean] = js.undefined
 }
-
 object Stretchy {
-  @scala.inline
-  def apply(stretchy: js.UndefOr[Boolean] = js.undefined): Stretchy = {
+  
+  inline def apply(): Stretchy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stretchy]
   }
+  
+  extension [Self <: Stretchy](x: Self) {
+    
+    inline def setStretchy(value: Boolean): Self = StObject.set(x, "stretchy", value.asInstanceOf[js.Any])
+    
+    inline def setStretchyUndefined: Self = StObject.set(x, "stretchy", js.undefined)
+  }
 }
-

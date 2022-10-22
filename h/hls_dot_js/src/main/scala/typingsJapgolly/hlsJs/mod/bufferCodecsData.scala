@@ -1,22 +1,30 @@
 package typingsJapgolly.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// interface mediaDetachingData {}
-// interface mediaDetachedData {}
-// interface bufferResetData {}
-trait bufferCodecsData extends js.Object {
-  var tracks: Tracks
-}
-
-object bufferCodecsData {
-  @scala.inline
-  def apply(tracks: Tracks): bufferCodecsData = {
-    val __obj = js.Dynamic.literal(tracks = tracks.asInstanceOf[js.Any])
+trait BufferCodecsData extends StObject {
   
-    __obj.asInstanceOf[bufferCodecsData]
+  var audio: js.UndefOr[Track] = js.undefined
+  
+  var video: js.UndefOr[Track] = js.undefined
+}
+object BufferCodecsData {
+  
+  inline def apply(): BufferCodecsData = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[BufferCodecsData]
+  }
+  
+  extension [Self <: BufferCodecsData](x: Self) {
+    
+    inline def setAudio(value: Track): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    
+    inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+    
+    inline def setVideo(value: Track): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
   }
 }
-

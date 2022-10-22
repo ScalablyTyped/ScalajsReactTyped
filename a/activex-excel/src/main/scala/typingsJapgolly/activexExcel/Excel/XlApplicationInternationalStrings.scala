@@ -1,111 +1,109 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`10`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`11`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`12`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`13`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`14`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`15`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`16`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`17`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`18`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`19`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`20`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`21`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`22`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`23`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`24`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`25`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`26`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`6`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`7`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`8`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`9`
+import typingsJapgolly.activexExcel.activexExcelInts.`10`
+import typingsJapgolly.activexExcel.activexExcelInts.`11`
+import typingsJapgolly.activexExcel.activexExcelInts.`12`
+import typingsJapgolly.activexExcel.activexExcelInts.`13`
+import typingsJapgolly.activexExcel.activexExcelInts.`14`
+import typingsJapgolly.activexExcel.activexExcelInts.`15`
+import typingsJapgolly.activexExcel.activexExcelInts.`16`
+import typingsJapgolly.activexExcel.activexExcelInts.`17`
+import typingsJapgolly.activexExcel.activexExcelInts.`18`
+import typingsJapgolly.activexExcel.activexExcelInts.`19`
+import typingsJapgolly.activexExcel.activexExcelInts.`20`
+import typingsJapgolly.activexExcel.activexExcelInts.`21`
+import typingsJapgolly.activexExcel.activexExcelInts.`22`
+import typingsJapgolly.activexExcel.activexExcelInts.`23`
+import typingsJapgolly.activexExcel.activexExcelInts.`24`
+import typingsJapgolly.activexExcel.activexExcelInts.`25`
+import typingsJapgolly.activexExcel.activexExcelInts.`26`
+import typingsJapgolly.activexExcel.activexExcelInts.`3`
+import typingsJapgolly.activexExcel.activexExcelInts.`4`
+import typingsJapgolly.activexExcel.activexExcelInts.`5`
+import typingsJapgolly.activexExcel.activexExcelInts.`6`
+import typingsJapgolly.activexExcel.activexExcelInts.`7`
+import typingsJapgolly.activexExcel.activexExcelInts.`8`
+import typingsJapgolly.activexExcel.activexExcelInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`16`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`14`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`25`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`26`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`12`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`10`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`9`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`8`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`13`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`11`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`7`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`6`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`17`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`21`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`22`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`23`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`20`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`15`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`24`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`18`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`19`
+  - typingsJapgolly.activexExcel.activexExcelInts.`16`
+  - typingsJapgolly.activexExcel.activexExcelInts.`14`
+  - typingsJapgolly.activexExcel.activexExcelInts.`25`
+  - typingsJapgolly.activexExcel.activexExcelInts.`3`
+  - typingsJapgolly.activexExcel.activexExcelInts.`26`
+  - typingsJapgolly.activexExcel.activexExcelInts.`12`
+  - typingsJapgolly.activexExcel.activexExcelInts.`10`
+  - typingsJapgolly.activexExcel.activexExcelInts.`5`
+  - typingsJapgolly.activexExcel.activexExcelInts.`9`
+  - typingsJapgolly.activexExcel.activexExcelInts.`8`
+  - typingsJapgolly.activexExcel.activexExcelInts.`13`
+  - typingsJapgolly.activexExcel.activexExcelInts.`11`
+  - typingsJapgolly.activexExcel.activexExcelInts.`7`
+  - typingsJapgolly.activexExcel.activexExcelInts.`6`
+  - typingsJapgolly.activexExcel.activexExcelInts.`17`
+  - typingsJapgolly.activexExcel.activexExcelInts.`21`
+  - typingsJapgolly.activexExcel.activexExcelInts.`22`
+  - typingsJapgolly.activexExcel.activexExcelInts.`23`
+  - typingsJapgolly.activexExcel.activexExcelInts.`20`
+  - typingsJapgolly.activexExcel.activexExcelInts.`15`
+  - typingsJapgolly.activexExcel.activexExcelInts.`24`
+  - typingsJapgolly.activexExcel.activexExcelInts.`4`
+  - typingsJapgolly.activexExcel.activexExcelInts.`18`
+  - typingsJapgolly.activexExcel.activexExcelInts.`19`
 */
-trait XlApplicationInternationalStrings extends XlApplicationInternational
-
+trait XlApplicationInternationalStrings
+  extends StObject
+     with XlApplicationInternational
 object XlApplicationInternationalStrings {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlAlternateArraySeparator: `16` = this.cast(16)
-  @scala.inline
-  def xlColumnSeparator: `14` = this.cast(14)
-  @scala.inline
-  def xlCurrencyCode: `25` = this.cast(25)
-  @scala.inline
-  def xlDateSeparator: `17` = this.cast(17)
-  @scala.inline
-  def xlDayCode: `21` = this.cast(21)
-  @scala.inline
-  def xlDecimalSeparator: `3` = this.cast(3)
-  @scala.inline
-  def xlGeneralFormatName: `26` = this.cast(26)
-  @scala.inline
-  def xlHourCode: `22` = this.cast(22)
-  @scala.inline
-  def xlLeftBrace: `12` = this.cast(12)
-  @scala.inline
-  def xlLeftBracket: `10` = this.cast(10)
-  @scala.inline
-  def xlListSeparator: `5` = this.cast(5)
-  @scala.inline
-  def xlLowerCaseColumnLetter: `9` = this.cast(9)
-  @scala.inline
-  def xlLowerCaseRowLetter: `8` = this.cast(8)
-  @scala.inline
-  def xlMinuteCode: `23` = this.cast(23)
-  @scala.inline
-  def xlMonthCode: `20` = this.cast(20)
-  @scala.inline
-  def xlRightBrace: `13` = this.cast(13)
-  @scala.inline
-  def xlRightBracket: `11` = this.cast(11)
-  @scala.inline
-  def xlRowSeparator: `15` = this.cast(15)
-  @scala.inline
-  def xlSecondCode: `24` = this.cast(24)
-  @scala.inline
-  def xlThousandsSeparator: `4` = this.cast(4)
-  @scala.inline
-  def xlTimeSeparator: `18` = this.cast(18)
-  @scala.inline
-  def xlUpperCaseColumnLetter: `7` = this.cast(7)
-  @scala.inline
-  def xlUpperCaseRowLetter: `6` = this.cast(6)
-  @scala.inline
-  def xlYearCode: `19` = this.cast(19)
+  
+  inline def xlAlternateArraySeparator: `16` = 16.asInstanceOf[`16`]
+  
+  inline def xlColumnSeparator: `14` = 14.asInstanceOf[`14`]
+  
+  inline def xlCurrencyCode: `25` = 25.asInstanceOf[`25`]
+  
+  inline def xlDateSeparator: `17` = 17.asInstanceOf[`17`]
+  
+  inline def xlDayCode: `21` = 21.asInstanceOf[`21`]
+  
+  inline def xlDecimalSeparator: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlGeneralFormatName: `26` = 26.asInstanceOf[`26`]
+  
+  inline def xlHourCode: `22` = 22.asInstanceOf[`22`]
+  
+  inline def xlLeftBrace: `12` = 12.asInstanceOf[`12`]
+  
+  inline def xlLeftBracket: `10` = 10.asInstanceOf[`10`]
+  
+  inline def xlListSeparator: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlLowerCaseColumnLetter: `9` = 9.asInstanceOf[`9`]
+  
+  inline def xlLowerCaseRowLetter: `8` = 8.asInstanceOf[`8`]
+  
+  inline def xlMinuteCode: `23` = 23.asInstanceOf[`23`]
+  
+  inline def xlMonthCode: `20` = 20.asInstanceOf[`20`]
+  
+  inline def xlRightBrace: `13` = 13.asInstanceOf[`13`]
+  
+  inline def xlRightBracket: `11` = 11.asInstanceOf[`11`]
+  
+  inline def xlRowSeparator: `15` = 15.asInstanceOf[`15`]
+  
+  inline def xlSecondCode: `24` = 24.asInstanceOf[`24`]
+  
+  inline def xlThousandsSeparator: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlTimeSeparator: `18` = 18.asInstanceOf[`18`]
+  
+  inline def xlUpperCaseColumnLetter: `7` = 7.asInstanceOf[`7`]
+  
+  inline def xlUpperCaseRowLetter: `6` = 6.asInstanceOf[`6`]
+  
+  inline def xlYearCode: `19` = 19.asInstanceOf[`19`]
 }
-

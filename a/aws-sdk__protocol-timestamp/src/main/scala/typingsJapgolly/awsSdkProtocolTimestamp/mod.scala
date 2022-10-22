@@ -1,24 +1,28 @@
 package typingsJapgolly.awsSdkProtocolTimestamp
 
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/protocol-timestamp", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def epoch(time: String): Double = js.native
-  def epoch(time: Double): Double = js.native
-  def epoch(time: Date): Double = js.native
-  def iso8601(time: String): String = js.native
-  def iso8601(time: Double): String = js.native
-  def iso8601(time: Date): String = js.native
-  def rfc822(time: String): String = js.native
-  def rfc822(time: Double): String = js.native
-  def rfc822(time: Date): String = js.native
-  def toDate(time: String): js.Date = js.native
-  def toDate(time: Double): js.Date = js.native
-  def toDate(time: Date): js.Date = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/protocol-timestamp", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def epoch(time: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("epoch")(time.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def epoch(time: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("epoch")(time.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def epoch(time: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("epoch")(time.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def iso8601(time: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8601")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def iso8601(time: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8601")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def iso8601(time: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("iso8601")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def rfc822(time: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rfc822")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def rfc822(time: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rfc822")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def rfc822(time: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rfc822")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def toDate(time: String): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toDate")(time.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+  inline def toDate(time: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toDate")(time.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+  inline def toDate(time: Double): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toDate")(time.asInstanceOf[js.Any]).asInstanceOf[js.Date]
 }
-

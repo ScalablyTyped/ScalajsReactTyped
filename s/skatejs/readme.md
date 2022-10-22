@@ -10,15 +10,12 @@ Skate is a library built on top of the W3C web component specs that enables you 
 | ------------------ | :-------------: |
 | Full name          | skatejs |
 | Keywords           | components, custom, dom, elements, web, vdom, virtual |
-| # releases         | 9 |
-| # dependents       | 34 |
-| # downloads        | 1512634 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 68941.66666666667 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/skatejs/skatejs#readme)
-- [Bugs](https://github.com/skatejs/skatejs/issues)
-- [Repository](https://github.com/skatejs/skatejs)
 - [Npm](https://www.npmjs.com/package/skatejs)
     
 

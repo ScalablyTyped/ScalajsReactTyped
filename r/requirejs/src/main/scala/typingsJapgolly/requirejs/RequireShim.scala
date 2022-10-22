@@ -1,42 +1,52 @@
 package typingsJapgolly.requirejs
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequireShim extends js.Object {
+trait RequireShim extends StObject {
+  
   /**
-  	* List of dependencies.
-  	**/
+    * List of dependencies.
+    **/
   var deps: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-  	* Name the module will be exported as.
-  	**/
+    * Name the module will be exported as.
+    **/
   var exports: js.UndefOr[String] = js.undefined
+  
   /**
-  	* Initialize function with all dependcies passed in,
-  	* if the function returns a value then that value is used
-  	* as the module export value instead of the object
-  	* found via the 'exports' string.
-  	* @param dependencies
-  	* @return
-  	**/
-  var init: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+    * Initialize function with all dependcies passed in,
+    * if the function returns a value then that value is used
+    * as the module export value instead of the object
+    * found via the 'exports' string.
+    * @param dependencies
+    * @return
+    **/
+  var init: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
 }
-
 object RequireShim {
-  @scala.inline
-  def apply(
-    deps: js.Array[String] = null,
-    exports: String = null,
-    init: /* repeated */ js.Any => CallbackTo[js.Any] = null
-  ): RequireShim = {
+  
+  inline def apply(): RequireShim = {
     val __obj = js.Dynamic.literal()
-    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
-    if (exports != null) __obj.updateDynamic("exports")(exports.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => init(t0).runNow()))
     __obj.asInstanceOf[RequireShim]
   }
+  
+  extension [Self <: RequireShim](x: Self) {
+    
+    inline def setDeps(value: js.Array[String]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    
+    inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
+    
+    inline def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value*))
+    
+    inline def setExports(value: String): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    
+    inline def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
+    
+    inline def setInit(value: /* repeated */ Any => Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+  }
 }
-

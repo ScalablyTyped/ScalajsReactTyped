@@ -1,35 +1,56 @@
 package typingsJapgolly.sharepoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Sod extends js.Object {
+trait Sod extends StObject {
+  
   var depkeys: js.UndefOr[js.Array[String]] = js.undefined
+  
   var key: String
+  
   var loaded: Boolean
-  var qfn: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var qfn: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var reset: js.UndefOr[Boolean] = js.undefined
+  
   var state: Sods
+  
   var url: String
 }
-
 object Sod {
-  @scala.inline
-  def apply(
-    key: String,
-    loaded: Boolean,
-    state: Sods,
-    url: String,
-    depkeys: js.Array[String] = null,
-    qfn: js.Array[_] = null,
-    reset: js.UndefOr[Boolean] = js.undefined
-  ): Sod = {
+  
+  inline def apply(key: String, loaded: Boolean, state: Sods, url: String): Sod = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    if (depkeys != null) __obj.updateDynamic("depkeys")(depkeys.asInstanceOf[js.Any])
-    if (qfn != null) __obj.updateDynamic("qfn")(qfn.asInstanceOf[js.Any])
-    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sod]
   }
+  
+  extension [Self <: Sod](x: Self) {
+    
+    inline def setDepkeys(value: js.Array[String]): Self = StObject.set(x, "depkeys", value.asInstanceOf[js.Any])
+    
+    inline def setDepkeysUndefined: Self = StObject.set(x, "depkeys", js.undefined)
+    
+    inline def setDepkeysVarargs(value: String*): Self = StObject.set(x, "depkeys", js.Array(value*))
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    
+    inline def setQfn(value: js.Array[Any]): Self = StObject.set(x, "qfn", value.asInstanceOf[js.Any])
+    
+    inline def setQfnUndefined: Self = StObject.set(x, "qfn", js.undefined)
+    
+    inline def setQfnVarargs(value: Any*): Self = StObject.set(x, "qfn", js.Array(value*))
+    
+    inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    
+    inline def setState(value: Sods): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

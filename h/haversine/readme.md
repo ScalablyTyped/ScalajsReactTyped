@@ -10,10 +10,10 @@ A simple haversine module
 | ------------------ | :-------------: |
 | Full name          | haversine |
 | Keywords           | haversine, distance, coordinates, geolocation |
-| # releases         | 2 |
-| # dependents       | 28 |
-| # downloads        | 682474 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 87352.33333333333 |
+| # stars            | 274.0 |
 
 ## Links
 - [Homepage](https://github.com/niix/haversine#readme)

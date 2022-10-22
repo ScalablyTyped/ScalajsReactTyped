@@ -1,19 +1,20 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.typescript.mod.TextRange because Already inherited
-- typingsJapgolly.typescript.mod.Node because Already inherited
-- typingsJapgolly.typescript.mod.Declaration because var conflicts: decorators, end, flags, kind, modifiers, parent, pos. Inlined _declarationBrand */ @js.native
+@js.native
 trait NumericLiteral
-  extends LiteralExpression
+  extends StObject
+     with LiteralExpression
+     with Declaration
      with DeclarationName
-     with PropertyName {
-  var _declarationBrand: js.Any = js.native
+     with JsonObjectExpression
+     with LiteralToken
+     with PropertyName
+     with PropertyNameLiteral {
+  
   @JSName("kind")
-  var kind_NumericLiteral: typingsJapgolly.typescript.mod.SyntaxKind.NumericLiteral = js.native
+  val kind_NumericLiteral: typingsJapgolly.typescript.mod.SyntaxKind.NumericLiteral = js.native
 }
-

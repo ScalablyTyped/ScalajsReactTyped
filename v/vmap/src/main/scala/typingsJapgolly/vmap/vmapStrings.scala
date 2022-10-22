@@ -1,39 +1,32 @@
 package typingsJapgolly.vmap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vmapStrings {
-  @js.native
-  sealed trait breakEnd extends js.Object
   
   @js.native
-  sealed trait breakStart extends js.Object
+  sealed trait breakEnd extends StObject
+  inline def breakEnd: breakEnd = "breakEnd".asInstanceOf[breakEnd]
   
   @js.native
-  sealed trait display extends js.Object
+  sealed trait breakStart extends StObject
+  inline def breakStart: breakStart = "breakStart".asInstanceOf[breakStart]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait display extends StObject
+  inline def display: display = "display".asInstanceOf[display]
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait nonlinear extends js.Object
+  sealed trait linear extends StObject
+  inline def linear: linear = "linear".asInstanceOf[linear]
   
-  @scala.inline
-  def breakEnd: breakEnd = "breakEnd".asInstanceOf[breakEnd]
-  @scala.inline
-  def breakStart: breakStart = "breakStart".asInstanceOf[breakStart]
-  @scala.inline
-  def display: display = "display".asInstanceOf[display]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
-  @scala.inline
-  def nonlinear: nonlinear = "nonlinear".asInstanceOf[nonlinear]
+  @js.native
+  sealed trait nonlinear extends StObject
+  inline def nonlinear: nonlinear = "nonlinear".asInstanceOf[nonlinear]
 }
-

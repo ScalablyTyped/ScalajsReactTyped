@@ -1,24 +1,29 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LineOfSightTargetProperties extends js.Object {
+trait LineOfSightTargetProperties extends StObject {
+  
   /**
-    * A [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) representing the location of the target. Once the location is set, a new line of sight analysis will synchronously calculate the intersection and the visibility.
+    * A [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) representing the location of the target.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightTarget.html#location)
     */
   var location: js.UndefOr[PointProperties] = js.undefined
 }
-
 object LineOfSightTargetProperties {
-  @scala.inline
-  def apply(location: PointProperties = null): LineOfSightTargetProperties = {
+  
+  inline def apply(): LineOfSightTargetProperties = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineOfSightTargetProperties]
   }
+  
+  extension [Self <: LineOfSightTargetProperties](x: Self) {
+    
+    inline def setLocation(value: PointProperties): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+  }
 }
-

@@ -1,28 +1,35 @@
 package typingsJapgolly.businessRulesEngine.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.q.mod.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IValidator extends js.Object {
+trait IValidator extends StObject {
+  
   var Error: IError
-  def Validate(context: js.Any): IValidationFailure
-  def ValidateAsync(context: js.Any): Promise[IValidationFailure]
+  
+  def Validate(context: Any): IValidationFailure
+  
+  def ValidateAsync(context: Any): Promise[IValidationFailure]
 }
-
 object IValidator {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     Error: IError,
-    Validate: js.Any => CallbackTo[IValidationFailure],
-    ValidateAsync: js.Any => CallbackTo[Promise[IValidationFailure]]
+    Validate: Any => IValidationFailure,
+    ValidateAsync: Any => Promise[IValidationFailure]
   ): IValidator = {
-    val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any])
-    __obj.updateDynamic("Validate")(js.Any.fromFunction1((t0: js.Any) => Validate(t0).runNow()))
-    __obj.updateDynamic("ValidateAsync")(js.Any.fromFunction1((t0: js.Any) => ValidateAsync(t0).runNow()))
+    val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any], Validate = js.Any.fromFunction1(Validate), ValidateAsync = js.Any.fromFunction1(ValidateAsync))
     __obj.asInstanceOf[IValidator]
   }
+  
+  extension [Self <: IValidator](x: Self) {
+    
+    inline def setError(value: IError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    
+    inline def setValidate(value: Any => IValidationFailure): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
+    
+    inline def setValidateAsync(value: Any => Promise[IValidationFailure]): Self = StObject.set(x, "ValidateAsync", js.Any.fromFunction1(value))
+  }
 }
-

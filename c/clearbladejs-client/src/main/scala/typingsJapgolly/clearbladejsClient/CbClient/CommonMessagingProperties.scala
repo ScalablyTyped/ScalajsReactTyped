@@ -1,36 +1,54 @@
 package typingsJapgolly.clearbladejsClient.CbClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommonMessagingProperties extends js.Object {
+trait CommonMessagingProperties extends StObject {
+  
   var cleanSession: js.UndefOr[Boolean] = js.undefined
+  
   var hosts: js.UndefOr[String] = js.undefined
+  
   var onFailure: js.UndefOr[js.Function] = js.undefined
+  
   var onSuccess: js.UndefOr[js.Function] = js.undefined
+  
   var ports: js.UndefOr[String] = js.undefined
+  
   var useSSL: js.UndefOr[Boolean] = js.undefined
 }
-
 object CommonMessagingProperties {
-  @scala.inline
-  def apply(
-    cleanSession: js.UndefOr[Boolean] = js.undefined,
-    hosts: String = null,
-    onFailure: js.Function = null,
-    onSuccess: js.Function = null,
-    ports: String = null,
-    useSSL: js.UndefOr[Boolean] = js.undefined
-  ): CommonMessagingProperties = {
+  
+  inline def apply(): CommonMessagingProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cleanSession)) __obj.updateDynamic("cleanSession")(cleanSession.asInstanceOf[js.Any])
-    if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure.asInstanceOf[js.Any])
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess.asInstanceOf[js.Any])
-    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonMessagingProperties]
   }
+  
+  extension [Self <: CommonMessagingProperties](x: Self) {
+    
+    inline def setCleanSession(value: Boolean): Self = StObject.set(x, "cleanSession", value.asInstanceOf[js.Any])
+    
+    inline def setCleanSessionUndefined: Self = StObject.set(x, "cleanSession", js.undefined)
+    
+    inline def setHosts(value: String): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+    
+    inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
+    
+    inline def setOnFailure(value: js.Function): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
+    
+    inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+    
+    inline def setOnSuccess(value: js.Function): Self = StObject.set(x, "onSuccess", value.asInstanceOf[js.Any])
+    
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    
+    inline def setPorts(value: String): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    
+    inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+    
+    inline def setUseSSL(value: Boolean): Self = StObject.set(x, "useSSL", value.asInstanceOf[js.Any])
+    
+    inline def setUseSSLUndefined: Self = StObject.set(x, "useSSL", js.undefined)
+  }
 }
-

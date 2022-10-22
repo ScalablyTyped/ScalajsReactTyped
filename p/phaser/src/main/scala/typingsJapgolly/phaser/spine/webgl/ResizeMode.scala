@@ -1,35 +1,27 @@
 package typingsJapgolly.phaser.spine.webgl
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ResizeMode extends js.Object
-
+sealed trait ResizeMode extends StObject
 @JSGlobal("spine.webgl.ResizeMode")
 @js.native
-object ResizeMode extends js.Object {
-  @js.native
-  sealed trait Expand extends ResizeMode
+object ResizeMode extends StObject {
   
   @js.native
-  sealed trait Fit extends ResizeMode
+  sealed trait Expand
+    extends StObject
+       with ResizeMode
   
   @js.native
-  sealed trait Stretch extends ResizeMode
+  sealed trait Fit
+    extends StObject
+       with ResizeMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ResizeMode with Double] = js.native
-  /* 1 */ @js.native
-  object Expand extends TopLevel[Expand with Double]
-  
-  /* 2 */ @js.native
-  object Fit extends TopLevel[Fit with Double]
-  
-  /* 0 */ @js.native
-  object Stretch extends TopLevel[Stretch with Double]
-  
+  @js.native
+  sealed trait Stretch
+    extends StObject
+       with ResizeMode
 }
-

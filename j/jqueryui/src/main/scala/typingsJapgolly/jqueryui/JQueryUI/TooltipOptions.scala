@@ -1,53 +1,82 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
-import japgolly.scalajs.react.Callback
-import typingsJapgolly.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.jqueryui.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Tooltip //////////////////////////////////////////////////
-trait TooltipOptions extends TooltipEvents {
-  var content: js.UndefOr[js.Any] = js.undefined
-   // () or string
+trait TooltipOptions
+  extends StObject
+     with TooltipEvents {
+  
+  var classes: js.UndefOr[StringDictionary[String]] = js.undefined
+  
+  var content: js.UndefOr[Any] = js.undefined
+  
+  // () or string
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var hide: js.UndefOr[js.Any] = js.undefined
-   // boolean, number, string or object
-  var items: js.UndefOr[String] = js.undefined
-  var position: js.UndefOr[js.Any] = js.undefined
-   // TODO
-  var show: js.UndefOr[js.Any] = js.undefined
-   // boolean, number, string or object
+  
+  var hide: js.UndefOr[Any] = js.undefined
+  
+  // boolean, number, string or object
+  var items: js.UndefOr[String | JQuery] = js.undefined
+  
+  var position: js.UndefOr[Any] = js.undefined
+  
+  // TODO
+  var show: js.UndefOr[Any] = js.undefined
+  
+  // boolean, number, string or object
   var tooltipClass: js.UndefOr[String] = js.undefined
+  
+  // deprecated in jQuery UI 1.12
   var track: js.UndefOr[Boolean] = js.undefined
 }
-
 object TooltipOptions {
-  @scala.inline
-  def apply(
-    close: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Callback = null,
-    content: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    hide: js.Any = null,
-    items: String = null,
-    open: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Callback = null,
-    position: js.Any = null,
-    show: js.Any = null,
-    tooltipClass: String = null,
-    track: js.UndefOr[Boolean] = js.undefined
-  ): TooltipOptions = {
+  
+  inline def apply(): TooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.TooltipUIParams) => close(t0, t1).runNow()))
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.TooltipUIParams) => open(t0, t1).runNow()))
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (tooltipClass != null) __obj.updateDynamic("tooltipClass")(tooltipClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(track)) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipOptions]
   }
+  
+  extension [Self <: TooltipOptions](x: Self) {
+    
+    inline def setClasses(value: StringDictionary[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setHide(value: Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    
+    inline def setItems(value: String | JQuery): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setShow(value: Any): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    
+    inline def setTooltipClass(value: String): Self = StObject.set(x, "tooltipClass", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipClassUndefined: Self = StObject.set(x, "tooltipClass", js.undefined)
+    
+    inline def setTrack(value: Boolean): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    
+    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+  }
 }
-

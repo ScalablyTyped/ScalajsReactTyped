@@ -1,10 +1,9 @@
 package typingsJapgolly.jsJoda.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("js-joda", "TemporalField")
+/* note: abstract class */ @JSImport("js-joda", "TemporalField")
 @js.native
-abstract class TemporalField () extends js.Object
-
+open class TemporalField () extends StObject

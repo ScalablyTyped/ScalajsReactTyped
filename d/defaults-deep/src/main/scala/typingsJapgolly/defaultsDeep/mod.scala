@@ -1,14 +1,17 @@
 package typingsJapgolly.defaultsDeep
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("defaults-deep", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(objs: Obj*): Obj = js.native
-  type Obj = StringDictionary[js.Any]
+object mod {
+  
+  inline def apply(objs: Obj*): Obj = ^.asInstanceOf[js.Dynamic].apply(objs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Obj]
+  
+  @JSImport("defaults-deep", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  type Obj = StringDictionary[Any]
 }
-

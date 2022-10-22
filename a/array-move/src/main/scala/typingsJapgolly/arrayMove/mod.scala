@@ -1,60 +1,16 @@
 package typingsJapgolly.arrayMove
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("array-move", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  // TODO: Remove this for the next major release
-  @JSName("default")
-  var default_Original: AnonCall = js.native
-  /**
-  	Move an array item to a different position.
-  	@param array - The array to move the item in.
-  	@param from - Index of item to move. If negative, it will begin that many elements from the end.
-  	@param to - Index of where to move the item. If negative, it will begin that many elements from the end.
-  	@returns A new array with the item moved to the new position.
-  	@example
-  	```
-  	import arrayMove = require('array-move');
-  	const input = ['a', 'b', 'c'];
-  	arrayMove(input, 1, 2);
-  	//=> ['a', 'c', 'b']
-  	arrayMove(input, -1, 0);
-  	//=> ['c', 'a', 'b']
-  	arrayMove(input, -2, -3);
-  	//=> ['b', 'a', 'c']
-  	```
-  	*/
-  def apply[ValueType](array: js.Array[ValueType], from: Double, to: Double): js.Array[ValueType] = js.native
-  /**
-  	Move an array item to a different position.
-  	@param array - The array to move the item in.
-  	@param from - Index of item to move. If negative, it will begin that many elements from the end.
-  	@param to - Index of where to move the item. If negative, it will begin that many elements from the end.
-  	@returns A new array with the item moved to the new position.
-  	@example
-  	```
-  	import arrayMove = require('array-move');
-  	const input = ['a', 'b', 'c'];
-  	arrayMove(input, 1, 2);
-  	//=> ['a', 'c', 'b']
-  	arrayMove(input, -1, 0);
-  	//=> ['c', 'a', 'b']
-  	arrayMove(input, -2, -3);
-  	//=> ['b', 'a', 'c']
-  	```
-  	*/
-  // TODO: Remove this for the next major release
-  def default[ValueType](array: js.Array[ValueType], from: Double, to: Double): js.Array[ValueType] = js.native
-  /**
-  	Moves the item to the new position in the input array. Useful for huge arrays where absolute performance is needed.
-  	@param array - The array to modify.
-  	@param from - Index of item to move. If negative, it will begin that many elements from the end.
-  	@param to - Index of where to move the item. If negative, it will begin that many elements from the end.
-  	*/
-  def mutate(array: js.Array[_], from: Double, to: Double): Unit = js.native
+object mod {
+  
+  @JSImport("array-move", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def arrayMoveImmutable[ValueType](array: js.Array[ValueType], fromIndex: Double, toIndex: Double): js.Array[ValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMoveImmutable")(array.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[ValueType]]
+  
+  inline def arrayMoveMutable(array: js.Array[Any], fromIndex: Double, toIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMoveMutable")(array.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

@@ -1,11 +1,12 @@
 package typingsJapgolly.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebDriverProtocolNavigation extends js.Object {
+trait WebDriverProtocolNavigation extends StObject {
+  
   /**
     * Navigate backwards in the browser history, if possible.
     */
@@ -13,6 +14,7 @@ trait WebDriverProtocolNavigation extends js.Object {
   def back(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Navigate forwards in the browser history, if possible.
     */
@@ -20,6 +22,7 @@ trait WebDriverProtocolNavigation extends js.Object {
   def forward(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Refresh the current page.
     */
@@ -27,6 +30,7 @@ trait WebDriverProtocolNavigation extends js.Object {
   def refresh(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Get the current page title.
     *
@@ -41,6 +45,7 @@ trait WebDriverProtocolNavigation extends js.Object {
   def title(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
+  
   /**
     * Retrieve the URL of the current page or navigate to a new URL.
     *
@@ -67,32 +72,13 @@ trait WebDriverProtocolNavigation extends js.Object {
   def url(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
-  /**
-    * Retrieve the URL of the current page or navigate to a new URL.
-    *
-    * @example
-    * module.exports = {
-    *  'demo Test' : function(browser) {
-    *     browser.url(function(result) {
-    *       // return the current url
-    *       console.log(result);
-    *     });
-    *     //
-    *     // navigate to new url:
-    *     browser.url('{URL}');
-    *     //
-    *     //
-    *     // navigate to new url:
-    *     browser.url('{URL}', function(result) {
-    *       console.log(result);
-    *     });
-    *   }
-    * }
-    */
   def url(url: String): this.type = js.native
   def url(
     url: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
   ): this.type = js.native
+  def url(
+    url: Unit,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
+  ): this.type = js.native
 }
-

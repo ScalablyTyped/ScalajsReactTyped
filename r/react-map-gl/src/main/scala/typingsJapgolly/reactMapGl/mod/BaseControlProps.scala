@@ -1,30 +1,42 @@
 package typingsJapgolly.reactMapGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseControlProps extends js.Object {
+trait BaseControlProps extends StObject {
+  
   var captureClick: js.UndefOr[Boolean] = js.undefined
+  
   var captureDoubleClick: js.UndefOr[Boolean] = js.undefined
+  
   var captureDrag: js.UndefOr[Boolean] = js.undefined
+  
   var captureScroll: js.UndefOr[Boolean] = js.undefined
 }
-
 object BaseControlProps {
-  @scala.inline
-  def apply(
-    captureClick: js.UndefOr[Boolean] = js.undefined,
-    captureDoubleClick: js.UndefOr[Boolean] = js.undefined,
-    captureDrag: js.UndefOr[Boolean] = js.undefined,
-    captureScroll: js.UndefOr[Boolean] = js.undefined
-  ): BaseControlProps = {
+  
+  inline def apply(): BaseControlProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDoubleClick)) __obj.updateDynamic("captureDoubleClick")(captureDoubleClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDrag)) __obj.updateDynamic("captureDrag")(captureDrag.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureScroll)) __obj.updateDynamic("captureScroll")(captureScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseControlProps]
   }
+  
+  extension [Self <: BaseControlProps](x: Self) {
+    
+    inline def setCaptureClick(value: Boolean): Self = StObject.set(x, "captureClick", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureClickUndefined: Self = StObject.set(x, "captureClick", js.undefined)
+    
+    inline def setCaptureDoubleClick(value: Boolean): Self = StObject.set(x, "captureDoubleClick", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureDoubleClickUndefined: Self = StObject.set(x, "captureDoubleClick", js.undefined)
+    
+    inline def setCaptureDrag(value: Boolean): Self = StObject.set(x, "captureDrag", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureDragUndefined: Self = StObject.set(x, "captureDrag", js.undefined)
+    
+    inline def setCaptureScroll(value: Boolean): Self = StObject.set(x, "captureScroll", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureScrollUndefined: Self = StObject.set(x, "captureScroll", js.undefined)
+  }
 }
-

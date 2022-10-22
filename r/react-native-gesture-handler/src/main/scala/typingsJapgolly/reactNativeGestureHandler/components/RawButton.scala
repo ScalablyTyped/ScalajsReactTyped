@@ -1,75 +1,94 @@
 package typingsJapgolly.reactNativeGestureHandler.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactNativeGestureHandler.AnonBottom
-import typingsJapgolly.reactNativeGestureHandler.AnonBottomHeight
-import typingsJapgolly.reactNativeGestureHandler.AnonHeight
-import typingsJapgolly.reactNativeGestureHandler.AnonLeft
-import typingsJapgolly.reactNativeGestureHandler.AnonRight
-import typingsJapgolly.reactNativeGestureHandler.mod.NativeViewGestureHandlerGestureEvent
-import typingsJapgolly.reactNativeGestureHandler.mod.NativeViewGestureHandlerStateChangeEvent
-import typingsJapgolly.reactNativeGestureHandler.mod.RawButtonProperties
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.Ref
+import typingsJapgolly.react.mod.RefAttributes
+import typingsJapgolly.reactNativeGestureHandler.libTypescriptComponentsGestureButtonsMod.RawButtonProps
+import typingsJapgolly.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.GestureEvent
+import typingsJapgolly.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HandlerStateChangeEvent
+import typingsJapgolly.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HitSlop
+import typingsJapgolly.reactNativeGestureHandler.libTypescriptHandlersNativeViewGestureHandlerMod.NativeViewGestureHandlerPayload
+import typingsJapgolly.reactNativeGestureHandler.libTypescriptHandlersNativeViewGestureHandlerMod.NativeViewGestureHandlerProps_
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RawButton {
-  def apply(
-    accessibilityLabel: String = null,
-    disallowInterruption: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    exclusive: js.UndefOr[Boolean] = js.undefined,
-    hitSlop: Double | AnonBottom | AnonLeft | AnonRight | AnonHeight | AnonBottomHeight = null,
-    id: String = null,
-    onGestureEvent: /* event */ NativeViewGestureHandlerGestureEvent => Callback = null,
-    onHandlerStateChange: /* event */ NativeViewGestureHandlerStateChangeEvent => Callback = null,
-    shouldActivateOnStart: js.UndefOr[Boolean] = js.undefined,
-    shouldCancelWhenOutside: js.UndefOr[Boolean] = js.undefined,
-    simultaneousHandlers: Ref | js.Array[Ref] = null,
-    testID: String = null,
-    waitFor: Ref | js.Array[Ref] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    RawButtonProperties, 
-    typingsJapgolly.reactNativeGestureHandler.mod.RawButton, 
-    Unit, 
-    RawButtonProperties
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(disallowInterruption)) __obj.updateDynamic("disallowInterruption")(disallowInterruption.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
-    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (onGestureEvent != null) __obj.updateDynamic("onGestureEvent")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactNativeGestureHandler.mod.NativeViewGestureHandlerGestureEvent) => onGestureEvent(t0).runNow()))
-    if (onHandlerStateChange != null) __obj.updateDynamic("onHandlerStateChange")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactNativeGestureHandler.mod.NativeViewGestureHandlerStateChangeEvent) => onHandlerStateChange(t0).runNow()))
-    if (!js.isUndefined(shouldActivateOnStart)) __obj.updateDynamic("shouldActivateOnStart")(shouldActivateOnStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldCancelWhenOutside)) __obj.updateDynamic("shouldCancelWhenOutside")(shouldCancelWhenOutside.asInstanceOf[js.Any])
-    if (simultaneousHandlers != null) __obj.updateDynamic("simultaneousHandlers")(simultaneousHandlers.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeGestureHandler.mod.RawButtonProperties, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeGestureHandler.mod.RawButton](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeGestureHandler.mod.RawButtonProperties])(children: _*)
-  }
   @JSImport("react-native-gesture-handler", "RawButton")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[ComponentType[Any] & js.Object] {
+    
+    inline def borderless(value: Boolean): this.type = set("borderless", value.asInstanceOf[js.Any])
+    
+    inline def cancelsTouchesInView(value: Boolean): this.type = set("cancelsTouchesInView", value.asInstanceOf[js.Any])
+    
+    inline def disallowInterruption(value: Boolean): this.type = set("disallowInterruption", value.asInstanceOf[js.Any])
+    
+    inline def enabled(value: Boolean): this.type = set("enabled", value.asInstanceOf[js.Any])
+    
+    inline def exclusive(value: Boolean): this.type = set("exclusive", value.asInstanceOf[js.Any])
+    
+    inline def foreground(value: Boolean): this.type = set("foreground", value.asInstanceOf[js.Any])
+    
+    inline def hitSlop(value: HitSlop): this.type = set("hitSlop", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def onActivated(value: /* event */ HandlerStateChangeEvent[Record[String, Any]] => Callback): this.type = set("onActivated", js.Any.fromFunction1((t0: /* event */ HandlerStateChangeEvent[Record[String, Any]]) => value(t0).runNow()))
+    
+    inline def onBegan(value: /* event */ HandlerStateChangeEvent[Record[String, Any]] => Callback): this.type = set("onBegan", js.Any.fromFunction1((t0: /* event */ HandlerStateChangeEvent[Record[String, Any]]) => value(t0).runNow()))
+    
+    inline def onCancelled(value: /* event */ HandlerStateChangeEvent[Record[String, Any]] => Callback): this.type = set("onCancelled", js.Any.fromFunction1((t0: /* event */ HandlerStateChangeEvent[Record[String, Any]]) => value(t0).runNow()))
+    
+    inline def onEnded(value: /* event */ HandlerStateChangeEvent[Record[String, Any]] => Callback): this.type = set("onEnded", js.Any.fromFunction1((t0: /* event */ HandlerStateChangeEvent[Record[String, Any]]) => value(t0).runNow()))
+    
+    inline def onFailed(value: /* event */ HandlerStateChangeEvent[Record[String, Any]] => Callback): this.type = set("onFailed", js.Any.fromFunction1((t0: /* event */ HandlerStateChangeEvent[Record[String, Any]]) => value(t0).runNow()))
+    
+    inline def onGestureEvent(value: /* event */ GestureEvent[NativeViewGestureHandlerPayload] => Callback): this.type = set("onGestureEvent", js.Any.fromFunction1((t0: /* event */ GestureEvent[NativeViewGestureHandlerPayload]) => value(t0).runNow()))
+    
+    inline def onHandlerStateChange(value: /* event */ HandlerStateChangeEvent[NativeViewGestureHandlerPayload] => Callback): this.type = set("onHandlerStateChange", js.Any.fromFunction1((t0: /* event */ HandlerStateChangeEvent[NativeViewGestureHandlerPayload]) => value(t0).runNow()))
+    
+    inline def rippleColor(value: Any): this.type = set("rippleColor", value.asInstanceOf[js.Any])
+    
+    inline def rippleRadius(value: Double): this.type = set("rippleRadius", value.asInstanceOf[js.Any])
+    
+    inline def rippleRadiusNull: this.type = set("rippleRadius", null)
+    
+    inline def shouldActivateOnStart(value: Boolean): this.type = set("shouldActivateOnStart", value.asInstanceOf[js.Any])
+    
+    inline def shouldCancelWhenOutside(value: Boolean): this.type = set("shouldCancelWhenOutside", value.asInstanceOf[js.Any])
+    
+    inline def simultaneousHandlers(value: Ref[Any] | js.Array[Ref[Any]]): this.type = set("simultaneousHandlers", value.asInstanceOf[js.Any])
+    
+    inline def simultaneousHandlersFunction1(value: Any | Null => Callback): this.type = set("simultaneousHandlers", js.Any.fromFunction1((t0: Any | Null) => value(t0).runNow()))
+    
+    inline def simultaneousHandlersNull: this.type = set("simultaneousHandlers", null)
+    
+    inline def simultaneousHandlersVarargs(value: Ref[Any]*): this.type = set("simultaneousHandlers", js.Array(value*))
+    
+    inline def testID(value: String): this.type = set("testID", value.asInstanceOf[js.Any])
+    
+    inline def touchSoundDisabled(value: Boolean): this.type = set("touchSoundDisabled", value.asInstanceOf[js.Any])
+    
+    inline def waitFor(value: Ref[Any] | js.Array[Ref[Any]]): this.type = set("waitFor", value.asInstanceOf[js.Any])
+    
+    inline def waitForFunction1(value: Any | Null => Callback): this.type = set("waitFor", js.Any.fromFunction1((t0: Any | Null) => value(t0).runNow()))
+    
+    inline def waitForNull: this.type = set("waitFor", null)
+    
+    inline def waitForVarargs(value: Ref[Any]*): this.type = set("waitFor", js.Array(value*))
+  }
+  
+  implicit def make(companion: RawButton.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: RawButtonProps & NativeViewGestureHandlerProps_ & RefAttributes[ComponentType[Any]]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

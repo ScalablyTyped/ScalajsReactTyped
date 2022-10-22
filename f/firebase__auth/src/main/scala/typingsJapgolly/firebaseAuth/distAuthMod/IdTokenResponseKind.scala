@@ -1,0 +1,72 @@
+package typingsJapgolly.firebaseAuth.distAuthMod
+
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignCreateAuthUriResponse
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignDeleteAccountResponse
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignDownloadAccountResponse
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignEmailLinkSigninResponse
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignGetAccountInfoResponse
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignGetOobConfirmationCodeResponse
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignGetRecaptchaParamResponse
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignResetPasswordResponse
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignSetAccountInfoResponse
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignSignupNewUserResponse
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignUploadAccountResponse
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignVerifyAssertionResponse
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignVerifyCustomTokenResponse
+import typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignVerifyPasswordResponse
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/**
+  * The possible types of the `IdTokenResponse`
+  *
+  * @internal
+  */
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignCreateAuthUriResponse
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignDeleteAccountResponse
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignDownloadAccountResponse
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignEmailLinkSigninResponse
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignGetAccountInfoResponse
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignGetOobConfirmationCodeResponse
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignGetRecaptchaParamResponse
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignResetPasswordResponse
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignSetAccountInfoResponse
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignSignupNewUserResponse
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignUploadAccountResponse
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignVerifyAssertionResponse
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignVerifyCustomTokenResponse
+  - typingsJapgolly.firebaseAuth.firebaseAuthStrings.identitytoolkitNumbersignVerifyPasswordResponse
+*/
+trait IdTokenResponseKind extends StObject
+object IdTokenResponseKind {
+  
+  inline def CreateAuthUri: identitytoolkitNumbersignCreateAuthUriResponse = "identitytoolkit#CreateAuthUriResponse".asInstanceOf[identitytoolkitNumbersignCreateAuthUriResponse]
+  
+  inline def DeleteAccount: identitytoolkitNumbersignDeleteAccountResponse = "identitytoolkit#DeleteAccountResponse".asInstanceOf[identitytoolkitNumbersignDeleteAccountResponse]
+  
+  inline def DownloadAccount: identitytoolkitNumbersignDownloadAccountResponse = "identitytoolkit#DownloadAccountResponse".asInstanceOf[identitytoolkitNumbersignDownloadAccountResponse]
+  
+  inline def EmailLinkSignin: identitytoolkitNumbersignEmailLinkSigninResponse = "identitytoolkit#EmailLinkSigninResponse".asInstanceOf[identitytoolkitNumbersignEmailLinkSigninResponse]
+  
+  inline def GetAccountInfo: identitytoolkitNumbersignGetAccountInfoResponse = "identitytoolkit#GetAccountInfoResponse".asInstanceOf[identitytoolkitNumbersignGetAccountInfoResponse]
+  
+  inline def GetOobConfirmationCode: identitytoolkitNumbersignGetOobConfirmationCodeResponse = "identitytoolkit#GetOobConfirmationCodeResponse".asInstanceOf[identitytoolkitNumbersignGetOobConfirmationCodeResponse]
+  
+  inline def GetRecaptchaParam: identitytoolkitNumbersignGetRecaptchaParamResponse = "identitytoolkit#GetRecaptchaParamResponse".asInstanceOf[identitytoolkitNumbersignGetRecaptchaParamResponse]
+  
+  inline def ResetPassword: identitytoolkitNumbersignResetPasswordResponse = "identitytoolkit#ResetPasswordResponse".asInstanceOf[identitytoolkitNumbersignResetPasswordResponse]
+  
+  inline def SetAccountInfo: identitytoolkitNumbersignSetAccountInfoResponse = "identitytoolkit#SetAccountInfoResponse".asInstanceOf[identitytoolkitNumbersignSetAccountInfoResponse]
+  
+  inline def SignupNewUser: identitytoolkitNumbersignSignupNewUserResponse = "identitytoolkit#SignupNewUserResponse".asInstanceOf[identitytoolkitNumbersignSignupNewUserResponse]
+  
+  inline def UploadAccount: identitytoolkitNumbersignUploadAccountResponse = "identitytoolkit#UploadAccountResponse".asInstanceOf[identitytoolkitNumbersignUploadAccountResponse]
+  
+  inline def VerifyAssertion: identitytoolkitNumbersignVerifyAssertionResponse = "identitytoolkit#VerifyAssertionResponse".asInstanceOf[identitytoolkitNumbersignVerifyAssertionResponse]
+  
+  inline def VerifyCustomToken: identitytoolkitNumbersignVerifyCustomTokenResponse = "identitytoolkit#VerifyCustomTokenResponse".asInstanceOf[identitytoolkitNumbersignVerifyCustomTokenResponse]
+  
+  inline def VerifyPassword: identitytoolkitNumbersignVerifyPasswordResponse = "identitytoolkit#VerifyPasswordResponse".asInstanceOf[identitytoolkitNumbersignVerifyPasswordResponse]
+}

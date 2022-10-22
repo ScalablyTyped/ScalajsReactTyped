@@ -10,15 +10,12 @@ A JavaScript code analyzer for deep, cross-editor language support
 | ------------------ | :-------------: |
 | Full name          | tern |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 70 |
-| # downloads        | 562498 |
-| # stars            | 6 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 41837.0 |
+| # stars            | 4203.0 |
 
 ## Links
-- [Homepage](https://github.com/ternjs/tern#readme)
-- [Bugs](https://github.com/ternjs/tern/issues)
-- [Repository](https://github.com/ternjs/tern)
 - [Npm](https://www.npmjs.com/package/tern)
     
 

@@ -1,55 +1,49 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.baseuiStrings.compact
-import typingsJapgolly.baseui.baseuiStrings.default_
-import typingsJapgolly.baseui.baseuiStrings.large_
-import typingsJapgolly.baseui.selectMod.AutosizeInputOverrides
-import typingsJapgolly.baseui.selectMod.AutosizeInputProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.baseuiStrings.$size
+import typingsJapgolly.baseui.baseuiStrings.defaultValue
+import typingsJapgolly.baseui.baseuiStrings.input
+import typingsJapgolly.baseui.baseuiStrings.inputRef
+import typingsJapgolly.baseui.baseuiStrings.overrides
+import typingsJapgolly.baseui.baseuiStrings.value
+import typingsJapgolly.baseui.selectTypesMod.AutosizeInputOverrides
+import typingsJapgolly.baseui.selectTypesMod.AutosizeInputProps
+import typingsJapgolly.baseui.selectTypesMod.SharedStylePropsArg
+import typingsJapgolly.baseui.selectTypesMod.Size
+import typingsJapgolly.react.mod.ComponentProps
+import typingsJapgolly.std.Omit
+import typingsJapgolly.styletronReact.libTypesMod.StyletronComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AutosizeInput {
-  def apply(
-    $size: default_ | compact | large_ = null,
-    defaultValue: String = null,
-    inputRef: Ref = null,
-    overrides: AutosizeInputOverrides = null,
-    value: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    AutosizeInputProps, 
-    typingsJapgolly.baseui.selectMod.AutosizeInput, 
-    Unit, 
-    AutosizeInputProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if ($size != null) __obj.updateDynamic("$size")($size.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.selectMod.AutosizeInputProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.selectMod.AutosizeInput](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.selectMod.AutosizeInputProps])(children: _*)
+  inline def apply($size: Size, inputRef: Any => Any, overrides: AutosizeInputOverrides, value: String): Builder = {
+    val __props = js.Dynamic.literal($size = $size.asInstanceOf[js.Any], inputRef = js.Any.fromFunction1(inputRef), overrides = overrides.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[AutosizeInputProps & (Omit[
+    ComponentProps[StyletronComponent[input, SharedStylePropsArg]], 
+    /* keyof baseui.baseui/select/types.AutosizeInputProps */ value | defaultValue | inputRef | overrides | $size
+  ])]))
   }
+  
   @JSImport("baseui/select", "AutosizeInput")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.selectMod.AutosizeInput] {
+    
+    inline def defaultValue(value: String): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(
+    p: AutosizeInputProps & (Omit[
+      ComponentProps[StyletronComponent[input, SharedStylePropsArg]], 
+      /* keyof baseui.baseui/select/types.AutosizeInputProps */ value | defaultValue | inputRef | overrides | $size
+    ])
+  ): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

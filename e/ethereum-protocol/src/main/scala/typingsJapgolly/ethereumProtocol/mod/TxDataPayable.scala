@@ -1,34 +1,28 @@
 package typingsJapgolly.ethereumProtocol.mod
 
 import typingsJapgolly.bignumberJs.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TxDataPayable extends TxData {
+trait TxDataPayable
+  extends StObject
+     with TxData {
+  
   @JSName("value")
   var value_TxDataPayable: js.UndefOr[default] = js.undefined
 }
-
 object TxDataPayable {
-  @scala.inline
-  def apply(
-    from: String,
-    data: String = null,
-    gas: Double | String | default = null,
-    gasPrice: Double | String | default = null,
-    nonce: Int | Double = null,
-    to: String = null,
-    value: default = null
-  ): TxDataPayable = {
+  
+  inline def apply(from: String): TxDataPayable = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (gas != null) __obj.updateDynamic("gas")(gas.asInstanceOf[js.Any])
-    if (gasPrice != null) __obj.updateDynamic("gasPrice")(gasPrice.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TxDataPayable]
   }
+  
+  extension [Self <: TxDataPayable](x: Self) {
+    
+    inline def setValue(value: default): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

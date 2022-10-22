@@ -1,34 +1,34 @@
 package typingsJapgolly.qlik.mod
 
 import typingsJapgolly.qlik.qlikStrings.boolean
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CustomPropertyCheckbox
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
+  
   var defaultValue: js.UndefOr[Boolean] = js.undefined
+  
   @JSName("type")
   var type_CustomPropertyCheckbox: boolean
 }
-
 object CustomPropertyCheckbox {
-  @scala.inline
-  def apply(
-    `type`: boolean,
-    defaultValue: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null
-  ): CustomPropertyCheckbox = {
+  
+  inline def apply(): CustomPropertyCheckbox = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[CustomPropertyCheckbox]
   }
+  
+  extension [Self <: CustomPropertyCheckbox](x: Self) {
+    
+    inline def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

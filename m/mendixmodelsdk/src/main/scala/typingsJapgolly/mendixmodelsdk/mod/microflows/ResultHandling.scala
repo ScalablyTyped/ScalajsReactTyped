@@ -1,46 +1,51 @@
 package typingsJapgolly.mendixmodelsdk.mod.microflows
 
-import typingsJapgolly.mendixmodelsdk.baseModelMod.IModel
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit
-import typingsJapgolly.mendixmodelsdk.microflowsMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "microflows.ResultHandling")
 @js.native
-class ResultHandling protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.microflows.ResultHandling {
+open class ResultHandling protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.microflows.ResultHandling {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "microflows.ResultHandling")
-@js.native
-object ResultHandling extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object ResultHandling {
+  
+  @JSImport("mendixmodelsdk", "microflows.ResultHandling")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates and returns a new ResultHandling instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
-  def create(model: IModel): typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.ResultHandling = js.native
+  /* static member */
+  inline def create(model: IModel): typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling]
+  
   /**
     * Creates and returns a new ResultHandling instance in the SDK and on the server.
     * The new ResultHandling will be automatically stored in the 'resultHandling' property
     * of the parent ImportXmlAction element passed as argument.
     */
-  def createInImportXmlActionUnderResultHandling(container: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.ImportXmlAction): typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.ResultHandling = js.native
+  /* static member */
+  inline def createInImportXmlActionUnderResultHandling(container: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ImportXmlAction): typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportXmlActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling]
+  
   /**
     * Creates and returns a new ResultHandling instance in the SDK and on the server.
     * The new ResultHandling will be automatically stored in the 'resultHandling' property
@@ -49,12 +54,26 @@ object ResultHandling extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.6.0 and higher
     */
-  def createInRestCallActionUnderResultHandling(container: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.RestCallAction): typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.ResultHandling = js.native
+  /* static member */
+  inline def createInRestCallActionUnderResultHandling(container: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.RestCallAction): typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling]
+  
   /**
     * Creates and returns a new ResultHandling instance in the SDK and on the server.
     * The new ResultHandling will be automatically stored in the 'resultHandling' property
     * of the parent WebServiceCallAction element passed as argument.
     */
-  def createInWebServiceCallActionUnderResultHandling(container: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.ResultHandling = js.native
+  /* static member */
+  inline def createInWebServiceCallActionUnderResultHandling(container: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.WebServiceCallAction): typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.ResultHandling.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.ResultHandling.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

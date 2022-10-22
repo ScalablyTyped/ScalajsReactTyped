@@ -1,20 +1,27 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Deleted extends js.Object {
+trait Deleted extends StObject {
+  
   // Represents the state of the deleted item.
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object Deleted {
-  @scala.inline
-  def apply(state: String = null): Deleted = {
+  
+  inline def apply(): Deleted = {
     val __obj = js.Dynamic.literal()
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deleted]
   }
+  
+  extension [Self <: Deleted](x: Self) {
+    
+    inline def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+  }
 }
-

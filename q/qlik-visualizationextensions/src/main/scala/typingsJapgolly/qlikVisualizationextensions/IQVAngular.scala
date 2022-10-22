@@ -7,14 +7,16 @@ import typingsJapgolly.angular.mod.IController
 import typingsJapgolly.angular.mod.IDirectiveFactory
 import typingsJapgolly.angular.mod.IScope
 import typingsJapgolly.angular.mod.Injectable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IQVAngular extends js.Object {
+trait IQVAngular extends StObject {
+  
   @JSName("$injector")
-  var $injector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IInjectorService */ js.Any = js.native
+  var $injector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IInjectorService */ Any = js.native
+  
   /**
     * Register a new directive with the compiler.
     *
@@ -28,8 +30,10 @@ trait IQVAngular extends js.Object {
   def directive(
     `object`: StringDictionary[Injectable[IDirectiveFactory[IScope, JQLite, IAttributes, IController]]]
   ): Unit = js.native
+  
   def filter(name: String, filterFactoryFunction: Injectable[js.Function]): Unit = js.native
   def filter(`object`: StringDictionary[Injectable[js.Function]]): Unit = js.native
+  
   /**
     * Register a service constructor, which will be invoked with new to create
     * the service instance. This is short for registering a service where its
@@ -42,4 +46,3 @@ trait IQVAngular extends js.Object {
   def service[T](name: String, serviceConstructor: Injectable[js.Function]): T = js.native
   def service[T](`object`: StringDictionary[Injectable[js.Function]]): T = js.native
 }
-

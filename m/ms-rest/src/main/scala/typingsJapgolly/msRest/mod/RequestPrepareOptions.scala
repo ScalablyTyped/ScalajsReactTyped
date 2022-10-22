@@ -1,52 +1,85 @@
 package typingsJapgolly.msRest.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestPrepareOptions extends js.Object {
+trait RequestPrepareOptions extends StObject {
+  
   var baseUrl: js.UndefOr[String] = js.undefined
-  var body: js.UndefOr[js.Any] = js.undefined
+  
+  var body: js.UndefOr[Any] = js.undefined
+  
   var bodyIsStream: js.UndefOr[Boolean] = js.undefined
+  
   var deserializationMapper: Mapper
+  
   var disableClientRequestId: js.UndefOr[Boolean] = js.undefined
+  
   var disableJsonStringifyOnBody: js.UndefOr[Boolean] = js.undefined
-  var formData: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  
+  var formData: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
+  var headers: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
   var method: String
-  var pathParameters: js.UndefOr[StringDictionary[js.Any | UrlParameterValue]] = js.undefined
-  var queryParameters: js.UndefOr[StringDictionary[js.Any | UrlParameterValue]] = js.undefined
+  
+  var pathParameters: js.UndefOr[StringDictionary[Any | UrlParameterValue]] = js.undefined
+  
+  var queryParameters: js.UndefOr[StringDictionary[Any | UrlParameterValue]] = js.undefined
+  
   var serializationMapper: Mapper
 }
-
 object RequestPrepareOptions {
-  @scala.inline
-  def apply(
-    deserializationMapper: Mapper,
-    method: String,
-    serializationMapper: Mapper,
-    baseUrl: String = null,
-    body: js.Any = null,
-    bodyIsStream: js.UndefOr[Boolean] = js.undefined,
-    disableClientRequestId: js.UndefOr[Boolean] = js.undefined,
-    disableJsonStringifyOnBody: js.UndefOr[Boolean] = js.undefined,
-    formData: StringDictionary[js.Any] = null,
-    headers: StringDictionary[js.Any] = null,
-    pathParameters: StringDictionary[js.Any | UrlParameterValue] = null,
-    queryParameters: StringDictionary[js.Any | UrlParameterValue] = null
-  ): RequestPrepareOptions = {
+  
+  inline def apply(deserializationMapper: Mapper, method: String, serializationMapper: Mapper): RequestPrepareOptions = {
     val __obj = js.Dynamic.literal(deserializationMapper = deserializationMapper.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], serializationMapper = serializationMapper.asInstanceOf[js.Any])
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(bodyIsStream)) __obj.updateDynamic("bodyIsStream")(bodyIsStream.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableClientRequestId)) __obj.updateDynamic("disableClientRequestId")(disableClientRequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableJsonStringifyOnBody)) __obj.updateDynamic("disableJsonStringifyOnBody")(disableJsonStringifyOnBody.asInstanceOf[js.Any])
-    if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (pathParameters != null) __obj.updateDynamic("pathParameters")(pathParameters.asInstanceOf[js.Any])
-    if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestPrepareOptions]
   }
+  
+  extension [Self <: RequestPrepareOptions](x: Self) {
+    
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    
+    inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+    
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyIsStream(value: Boolean): Self = StObject.set(x, "bodyIsStream", value.asInstanceOf[js.Any])
+    
+    inline def setBodyIsStreamUndefined: Self = StObject.set(x, "bodyIsStream", js.undefined)
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setDeserializationMapper(value: Mapper): Self = StObject.set(x, "deserializationMapper", value.asInstanceOf[js.Any])
+    
+    inline def setDisableClientRequestId(value: Boolean): Self = StObject.set(x, "disableClientRequestId", value.asInstanceOf[js.Any])
+    
+    inline def setDisableClientRequestIdUndefined: Self = StObject.set(x, "disableClientRequestId", js.undefined)
+    
+    inline def setDisableJsonStringifyOnBody(value: Boolean): Self = StObject.set(x, "disableJsonStringifyOnBody", value.asInstanceOf[js.Any])
+    
+    inline def setDisableJsonStringifyOnBodyUndefined: Self = StObject.set(x, "disableJsonStringifyOnBody", js.undefined)
+    
+    inline def setFormData(value: StringDictionary[Any]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    
+    inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
+    
+    inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setPathParameters(value: StringDictionary[Any | UrlParameterValue]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
+    
+    inline def setPathParametersUndefined: Self = StObject.set(x, "pathParameters", js.undefined)
+    
+    inline def setQueryParameters(value: StringDictionary[Any | UrlParameterValue]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+    
+    inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
+    
+    inline def setSerializationMapper(value: Mapper): Self = StObject.set(x, "serializationMapper", value.asInstanceOf[js.Any])
+  }
 }
-

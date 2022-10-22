@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PDFViewerMessagesDialogsExportAsDialogLabels extends js.Object {
+trait PDFViewerMessagesDialogsExportAsDialogLabels extends StObject {
+  
   var fileName: js.UndefOr[String] = js.undefined
+  
   var page: js.UndefOr[String] = js.undefined
+  
   var saveAsType: js.UndefOr[String] = js.undefined
 }
-
 object PDFViewerMessagesDialogsExportAsDialogLabels {
-  @scala.inline
-  def apply(fileName: String = null, page: String = null, saveAsType: String = null): PDFViewerMessagesDialogsExportAsDialogLabels = {
+  
+  inline def apply(): PDFViewerMessagesDialogsExportAsDialogLabels = {
     val __obj = js.Dynamic.literal()
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (saveAsType != null) __obj.updateDynamic("saveAsType")(saveAsType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerMessagesDialogsExportAsDialogLabels]
   }
+  
+  extension [Self <: PDFViewerMessagesDialogsExportAsDialogLabels](x: Self) {
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    
+    inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setSaveAsType(value: String): Self = StObject.set(x, "saveAsType", value.asInstanceOf[js.Any])
+    
+    inline def setSaveAsTypeUndefined: Self = StObject.set(x, "saveAsType", js.undefined)
+  }
 }
-

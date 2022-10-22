@@ -1,39 +1,35 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`131072`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`256`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`512`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`768`
+import typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`131072`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`256`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`512`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`768`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`768`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`256`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`131072`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`512`
+  - typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`768`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`256`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`131072`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`512`
 */
-trait HTMLBorderStyle extends js.Object
-
+trait HTMLBorderStyle extends StObject
 object HTMLBorderStyle {
-  @scala.inline
-  def HTMLBorderStyleNormal: `0` = this.cast(0)
-  @scala.inline
-  def HTMLBorderStyleRaised: `256` = this.cast(256)
-  @scala.inline
-  def HTMLBorderStyleStatic: `131072` = this.cast(131072)
-  @scala.inline
-  def HTMLBorderStyleSunken: `512` = this.cast(512)
-  @scala.inline
-  def HTMLBorderStyle_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  def HTMLBorderStylecombined: `768` = this.cast(768)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def HTMLBorderStyleNormal: `0` = 0.asInstanceOf[`0`]
+  
+  inline def HTMLBorderStyleRaised: `256` = 256.asInstanceOf[`256`]
+  
+  inline def HTMLBorderStyleStatic: `131072` = 131072.asInstanceOf[`131072`]
+  
+  inline def HTMLBorderStyleSunken: `512` = 512.asInstanceOf[`512`]
+  
+  inline def HTMLBorderStyle_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
+  
+  inline def HTMLBorderStylecombined: `768` = 768.asInstanceOf[`768`]
 }
-

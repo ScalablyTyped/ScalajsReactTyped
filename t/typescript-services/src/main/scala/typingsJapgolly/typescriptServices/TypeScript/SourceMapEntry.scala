@@ -1,27 +1,54 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.SourceMapEntry")
-@js.native
-class SourceMapEntry protected () extends js.Object {
-  def this(
+trait SourceMapEntry extends StObject {
+  
+  var emittedColumn: Double
+  
+  var emittedFile: String
+  
+  var emittedLine: Double
+  
+  var sourceColumn: Double
+  
+  var sourceFile: String
+  
+  var sourceLine: Double
+  
+  var sourceName: String
+}
+object SourceMapEntry {
+  
+  inline def apply(
+    emittedColumn: Double,
     emittedFile: String,
     emittedLine: Double,
-    emittedColumn: Double,
+    sourceColumn: Double,
     sourceFile: String,
     sourceLine: Double,
-    sourceColumn: Double,
     sourceName: String
-  ) = this()
-  var emittedColumn: Double = js.native
-  var emittedFile: String = js.native
-  var emittedLine: Double = js.native
-  var sourceColumn: Double = js.native
-  var sourceFile: String = js.native
-  var sourceLine: Double = js.native
-  var sourceName: String = js.native
+  ): SourceMapEntry = {
+    val __obj = js.Dynamic.literal(emittedColumn = emittedColumn.asInstanceOf[js.Any], emittedFile = emittedFile.asInstanceOf[js.Any], emittedLine = emittedLine.asInstanceOf[js.Any], sourceColumn = sourceColumn.asInstanceOf[js.Any], sourceFile = sourceFile.asInstanceOf[js.Any], sourceLine = sourceLine.asInstanceOf[js.Any], sourceName = sourceName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SourceMapEntry]
+  }
+  
+  extension [Self <: SourceMapEntry](x: Self) {
+    
+    inline def setEmittedColumn(value: Double): Self = StObject.set(x, "emittedColumn", value.asInstanceOf[js.Any])
+    
+    inline def setEmittedFile(value: String): Self = StObject.set(x, "emittedFile", value.asInstanceOf[js.Any])
+    
+    inline def setEmittedLine(value: Double): Self = StObject.set(x, "emittedLine", value.asInstanceOf[js.Any])
+    
+    inline def setSourceColumn(value: Double): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
+    
+    inline def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
+    
+    inline def setSourceLine(value: Double): Self = StObject.set(x, "sourceLine", value.asInstanceOf[js.Any])
+    
+    inline def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
+  }
 }
-

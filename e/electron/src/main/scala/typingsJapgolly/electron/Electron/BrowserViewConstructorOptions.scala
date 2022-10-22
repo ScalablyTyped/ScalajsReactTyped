@@ -1,22 +1,27 @@
 package typingsJapgolly.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BrowserViewConstructorOptions extends js.Object {
+trait BrowserViewConstructorOptions extends StObject {
+  
   /**
-    * See .
+    * See BrowserWindow.
     */
   var webPreferences: js.UndefOr[WebPreferences] = js.undefined
 }
-
 object BrowserViewConstructorOptions {
-  @scala.inline
-  def apply(webPreferences: WebPreferences = null): BrowserViewConstructorOptions = {
+  
+  inline def apply(): BrowserViewConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (webPreferences != null) __obj.updateDynamic("webPreferences")(webPreferences.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserViewConstructorOptions]
   }
+  
+  extension [Self <: BrowserViewConstructorOptions](x: Self) {
+    
+    inline def setWebPreferences(value: WebPreferences): Self = StObject.set(x, "webPreferences", value.asInstanceOf[js.Any])
+    
+    inline def setWebPreferencesUndefined: Self = StObject.set(x, "webPreferences", js.undefined)
+  }
 }
-

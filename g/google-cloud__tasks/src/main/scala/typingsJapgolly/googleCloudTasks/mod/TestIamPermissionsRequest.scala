@@ -1,19 +1,26 @@
 package typingsJapgolly.googleCloudTasks.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TestIamPermissionsRequest extends js.Object {
+trait TestIamPermissionsRequest extends StObject {
+  
   var permissions: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object TestIamPermissionsRequest {
-  @scala.inline
-  def apply(permissions: js.Array[String] = null): TestIamPermissionsRequest = {
+  
+  inline def apply(): TestIamPermissionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestIamPermissionsRequest]
   }
+  
+  extension [Self <: TestIamPermissionsRequest](x: Self) {
+    
+    inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value*))
+  }
 }
-

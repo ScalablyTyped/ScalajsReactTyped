@@ -1,7 +1,7 @@
 
 # Scala.js typings for tar
 
-Typings are for version 4.0
+Typings are for version 6.1
 
 ## Library description:
 tar for node
@@ -10,10 +10,10 @@ tar for node
 | ------------------ | :-------------: |
 | Full name          | tar |
 | Keywords           | - |
-| # releases         | 25 |
-| # dependents       | 1475 |
-| # downloads        | 512435598 |
-| # stars            | 45 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 9.4845824E7 |
+| # stars            | 681.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/node-tar#readme)

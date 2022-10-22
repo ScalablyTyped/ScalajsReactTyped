@@ -1,29 +1,40 @@
 package typingsJapgolly.catalog.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AudioSpecimenProps extends js.Object {
+trait AudioSpecimenProps extends StObject {
+  
   var autoplay: js.UndefOr[Boolean] = js.undefined
+  
   var loop: js.UndefOr[Boolean] = js.undefined
+  
   var src: String
+  
   var title: js.UndefOr[String] = js.undefined
 }
-
 object AudioSpecimenProps {
-  @scala.inline
-  def apply(
-    src: String,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    title: String = null
-  ): AudioSpecimenProps = {
+  
+  inline def apply(src: String): AudioSpecimenProps = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioSpecimenProps]
   }
+  
+  extension [Self <: AudioSpecimenProps](x: Self) {
+    
+    inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    
+    inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+    
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

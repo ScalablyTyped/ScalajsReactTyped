@@ -11,9 +11,9 @@ Fast random sampling using reservoir sampling
 | Full name          | reservoir |
 | Keywords           | reservoir, sampling, iterator |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 16970 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 32993.666666666664 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/imbcmdth/reservoir#readme)

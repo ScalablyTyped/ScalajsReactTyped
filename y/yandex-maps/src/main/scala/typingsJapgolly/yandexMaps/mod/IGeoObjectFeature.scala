@@ -1,21 +1,30 @@
 package typingsJapgolly.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IGeoObjectFeature extends js.Object {
+trait IGeoObjectFeature extends StObject {
+  
   var geometry: js.UndefOr[IGeometry | IGeometryJson] = js.undefined
+  
   var properties: js.UndefOr[IDataManager | js.Object] = js.undefined
 }
-
 object IGeoObjectFeature {
-  @scala.inline
-  def apply(geometry: IGeometry | IGeometryJson = null, properties: IDataManager | js.Object = null): IGeoObjectFeature = {
+  
+  inline def apply(): IGeoObjectFeature = {
     val __obj = js.Dynamic.literal()
-    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoObjectFeature]
   }
+  
+  extension [Self <: IGeoObjectFeature](x: Self) {
+    
+    inline def setGeometry(value: IGeometry | IGeometryJson): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+    
+    inline def setProperties(value: IDataManager | js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+  }
 }
-

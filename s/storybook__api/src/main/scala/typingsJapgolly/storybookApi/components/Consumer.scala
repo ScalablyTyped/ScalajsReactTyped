@@ -1,48 +1,46 @@
 package typingsJapgolly.storybookApi.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.FunctionComponent
 import typingsJapgolly.storybookApi.mod.Combo
-import typingsJapgolly.storybookApi.mod.ConsumerProps
-import typingsJapgolly.storybookApi.mod.SubState
+import typingsJapgolly.storybookApi.mod.ManagerConsumerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Consumer {
-  def apply(
-    filter: Combo => CallbackTo[SubState] = null,
-    pure: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: Combo | SubState => CallbackTo[Element | Null]
-  ): UnmountedWithRoot[
-    ConsumerProps[SubState, Combo], 
-    typingsJapgolly.storybookApi.mod.Consumer, 
-    Unit, 
-    ConsumerProps[SubState, Combo]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("children")(js.Any.fromFunction1((t0: typingsJapgolly.storybookApi.mod.Combo | typingsJapgolly.storybookApi.mod.SubState) => children(t0).runNow()))
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1((t0: typingsJapgolly.storybookApi.mod.Combo) => filter(t0).runNow()))
-    if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.storybookApi.mod.ConsumerProps[typingsJapgolly.storybookApi.mod.SubState, typingsJapgolly.storybookApi.mod.Combo], 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.storybookApi.mod.Consumer](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.storybookApi.mod.ConsumerProps[typingsJapgolly.storybookApi.mod.SubState, typingsJapgolly.storybookApi.mod.Combo]])
+  inline def apply[P](): Builder[P] = {
+    val __props = js.Dynamic.literal()
+    new Builder[P](js.Array(this.component, __props.asInstanceOf[ManagerConsumerProps[P]]))
   }
+  
   @JSImport("@storybook/api", "Consumer")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[P] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def children(value: FunctionComponent[P] | Node): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenNull: this.type = set("children", null)
+    
+    inline def childrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def filter(value: /* combo */ Combo => P): this.type = set("filter", js.Any.fromFunction1(value))
+  }
+  
+  implicit def make[P](companion: Consumer.type): Builder[P] = new Builder[P](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps[P](p: ManagerConsumerProps[P]): Builder[P] = new Builder[P](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

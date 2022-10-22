@@ -1,7 +1,7 @@
 
 # Scala.js typings for universalify
 
-Typings are for version 0.1
+Typings are for version 1.0
 
 ## Library description:
 Make a callback- or promise-based function support both promises and callbacks.
@@ -10,10 +10,10 @@ Make a callback- or promise-based function support both promises and callbacks.
 | ------------------ | :-------------: |
 | Full name          | universalify |
 | Keywords           | callback, native, promise |
-| # releases         | 2 |
-| # dependents       | 66 |
-| # downloads        | 324409346 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8715928766666666E8 |
+| # stars            | 97.0 |
 
 ## Links
 - [Homepage](https://github.com/RyanZim/universalify#readme)

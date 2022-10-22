@@ -1,27 +1,109 @@
-package typingsJapgolly.plotlyJs
+package typingsJapgolly.plotlyJs.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.plotlyJs.anon.PartialConfig
+import typingsJapgolly.plotlyJs.anon.PartialFrame
+import typingsJapgolly.plotlyJs.anon.PartialLayout
+import typingsJapgolly.plotlyJs.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ButtonClickEvent = js.Function2[
-    /* gd */ typingsJapgolly.plotlyJs.mod.PlotlyHTMLElement, 
-    /* ev */ org.scalajs.dom.raw.MouseEvent, 
-    scala.Unit
-  ]
-  type Color = java.lang.String | scala.Double | (js.Array[
-    js.UndefOr[
-      (js.Array[js.UndefOr[java.lang.String | scala.Double | scala.Null]]) | scala.Double | scala.Null | java.lang.String
-    ]
-  ])
-  type ColorScale = java.lang.String | (js.Array[java.lang.String | (js.Tuple2[scala.Double, java.lang.String])])
-  type Datum = java.lang.String | scala.Double | js.Date | scala.Null
-  type ErrorBar = typingsJapgolly.plotlyJs.PartialErrorOptions with (typingsJapgolly.plotlyJs.AnonType | typingsJapgolly.plotlyJs.AnonArray)
-  type MarkerSymbol = java.lang.String | scala.Double | (js.Array[java.lang.String | scala.Double])
-  type PlotRestyleEvent = js.Tuple2[js.Any, js.Array[scala.Double]]
-  type Root = java.lang.String | org.scalajs.dom.raw.HTMLElement
-  type ScatterData = typingsJapgolly.plotlyJs.mod.PlotData
-  type ScatterMarker = typingsJapgolly.plotlyJs.mod.PlotMarker
-  type TypedArray = scala.scalajs.js.typedarray.Int8Array | scala.scalajs.js.typedarray.Uint8Array | scala.scalajs.js.typedarray.Int16Array | scala.scalajs.js.typedarray.Uint16Array | scala.scalajs.js.typedarray.Int32Array | scala.scalajs.js.typedarray.Uint32Array | scala.scalajs.js.typedarray.Uint8ClampedArray | scala.scalajs.js.typedarray.Float32Array | scala.scalajs.js.typedarray.Float64Array
-}
+
+inline def Plots: StaticPlots = ^.asInstanceOf[js.Dynamic].selectDynamic("Plots").asInstanceOf[StaticPlots]
+
+inline def addFrames(root: Root, frames: js.Array[PartialFrame]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("addFrames")(root.asInstanceOf[js.Any], frames.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+
+inline def addTraces(root: Root, traces: js.Array[Data]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def addTraces(root: Root, traces: js.Array[Data], newIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def addTraces(root: Root, traces: js.Array[Data], newIndices: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def addTraces(root: Root, traces: Data): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def addTraces(root: Root, traces: Data, newIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def addTraces(root: Root, traces: Data, newIndices: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+
+inline def deleteFrames(root: Root, frames: js.Array[Double]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteFrames")(root.asInstanceOf[js.Any], frames.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+
+inline def deleteTraces(root: Root, indices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteTraces")(root.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def deleteTraces(root: Root, indices: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteTraces")(root.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+
+inline def downloadImage(root: RootOrData, opts: DownloadImgopts): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadImage")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+
+inline def extendTraces(root: Root, update: js.Array[Data], indices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def extendTraces(root: Root, update: js.Array[Data], indices: js.Array[Double], maxPoints: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], maxPoints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def extendTraces(root: Root, update: js.Array[Data], indices: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def extendTraces(root: Root, update: js.Array[Data], indices: Double, maxPoints: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], maxPoints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def extendTraces(root: Root, update: Data, indices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def extendTraces(root: Root, update: Data, indices: js.Array[Double], maxPoints: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], maxPoints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def extendTraces(root: Root, update: Data, indices: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def extendTraces(root: Root, update: Data, indices: Double, maxPoints: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], maxPoints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+
+inline def moveTraces(root: Root, currentIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def moveTraces(root: Root, currentIndices: js.Array[Double], newIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def moveTraces(root: Root, currentIndices: js.Array[Double], newIndices: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def moveTraces(root: Root, currentIndices: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def moveTraces(root: Root, currentIndices: Double, newIndices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def moveTraces(root: Root, currentIndices: Double, newIndices: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+
+inline def newPlot(root: Root, data: js.Array[Data]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("newPlot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def newPlot(root: Root, data: js.Array[Data], layout: Unit, config: PartialConfig): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("newPlot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def newPlot(root: Root, data: js.Array[Data], layout: PartialLayout): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("newPlot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def newPlot(root: Root, data: js.Array[Data], layout: PartialLayout, config: PartialConfig): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("newPlot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+
+inline def prependTraces(root: Root, update: js.Array[Data], indices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("prependTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def prependTraces(root: Root, update: js.Array[Data], indices: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("prependTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def prependTraces(root: Root, update: Data, indices: js.Array[Double]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("prependTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def prependTraces(root: Root, update: Data, indices: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("prependTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+
+inline def purge(root: Root): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purge")(root.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def react(root: Root, data: js.Array[Data]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("react")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def react(root: Root, data: js.Array[Data], layout: Unit, config: PartialConfig): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("react")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def react(root: Root, data: js.Array[Data], layout: PartialLayout): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("react")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def react(root: Root, data: js.Array[Data], layout: PartialLayout, config: PartialConfig): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("react")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+
+inline def redraw(root: Root): js.Promise[PlotlyHTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("redraw")(root.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+
+inline def register(modules: js.Array[PlotlyModule]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(modules.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def register(modules: PlotlyModule): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(modules.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def relayout(root: Root, layout: PartialLayout): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("relayout")(root.asInstanceOf[js.Any], layout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+
+inline def restyle(root: Root, aobj: Data): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("restyle")(root.asInstanceOf[js.Any], aobj.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def restyle(root: Root, aobj: Data, traces: js.Array[Double]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("restyle")(root.asInstanceOf[js.Any], aobj.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def restyle(root: Root, aobj: Data, traces: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("restyle")(root.asInstanceOf[js.Any], aobj.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+
+inline def toImage(root: RootOrData): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toImage")(root.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+inline def toImage(root: RootOrData, opts: ToImgopts): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("toImage")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+
+inline def update(root: Root, traceUpdate: Data, layoutUpdate: PartialLayout): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(root.asInstanceOf[js.Any], traceUpdate.asInstanceOf[js.Any], layoutUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def update(root: Root, traceUpdate: Data, layoutUpdate: PartialLayout, traces: js.Array[Double]): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(root.asInstanceOf[js.Any], traceUpdate.asInstanceOf[js.Any], layoutUpdate.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+inline def update(root: Root, traceUpdate: Data, layoutUpdate: PartialLayout, traces: Double): js.Promise[PlotlyHTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(root.asInstanceOf[js.Any], traceUpdate.asInstanceOf[js.Any], layoutUpdate.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PlotlyHTMLElement]]
+
+type ButtonClickEvent = js.Function2[/* gd */ PlotlyHTMLElement, /* ev */ MouseEvent, Unit]
+
+type Color = String | Double | (js.Array[
+js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String]])
+
+type ColorScale = String | (js.Array[String | (js.Tuple2[Double, String])])
+
+type DTickValue = Double | String
+
+type Datum = String | Double | js.Date | Null
+
+type MarkerSymbol = String | Double | (js.Array[String | Double])
+
+type PlotRestyleEvent = js.Tuple2[PlotRestyleEventUpdate, js.Array[Double]]
+
+type PlotRestyleEventUpdate = StringDictionary[Any]
+
+type Root = String | HTMLElement
+
+type RootOrData = Root | PlotlyDataLayoutConfig
+
+type ScatterData = PlotData
+
+type ScatterMarker = PlotMarker
+
+type TypedArray = js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Uint8ClampedArray | js.typedarray.Float32Array | js.typedarray.Float64Array

@@ -1,34 +1,43 @@
 package typingsJapgolly.coinbaseCommerceNode.mod
 
-import typingsJapgolly.coinbaseCommerceNode.AnonDictkey
+import typingsJapgolly.coinbaseCommerceNode.anon.Dictkey
 import typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.DELETE
 import typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.GET
 import typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.POST
 import typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.PUT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Options extends js.Object {
+trait Options extends StObject {
+  
   var body: String
-  var headers: AnonDictkey
+  
+  var headers: Dictkey
+  
   var method: GET | POST | DELETE | PUT
+  
   var timeout: Double
+  
   var url: String
 }
-
 object Options {
-  @scala.inline
-  def apply(
-    body: String,
-    headers: AnonDictkey,
-    method: GET | POST | DELETE | PUT,
-    timeout: Double,
-    url: String
-  ): Options = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
+  inline def apply(body: String, headers: Dictkey, method: GET | POST | DELETE | PUT, timeout: Double, url: String): Options = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  
+  extension [Self <: Options](x: Self) {
+    
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setHeaders(value: Dictkey): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setMethod(value: GET | POST | DELETE | PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

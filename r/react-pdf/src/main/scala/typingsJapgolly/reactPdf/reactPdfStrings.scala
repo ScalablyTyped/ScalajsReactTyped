@@ -1,44 +1,36 @@
 package typingsJapgolly.reactPdf
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactPdfStrings {
-  @js.native
-  sealed trait _blank extends js.Object
   
   @js.native
-  sealed trait _parent extends js.Object
+  sealed trait _blank extends StObject
+  inline def _blank: _blank = "_blank".asInstanceOf[_blank]
   
   @js.native
-  sealed trait _self extends js.Object
+  sealed trait _parent extends StObject
+  inline def _parent: _parent = "_parent".asInstanceOf[_parent]
   
   @js.native
-  sealed trait _top extends js.Object
+  sealed trait _self extends StObject
+  inline def _self: _self = "_self".asInstanceOf[_self]
   
   @js.native
-  sealed trait canvas extends js.Object
+  sealed trait _top extends StObject
+  inline def _top: _top = "_top".asInstanceOf[_top]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait canvas extends StObject
+  inline def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
-  sealed trait svg extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
-  @scala.inline
-  def _blank: _blank = "_blank".asInstanceOf[_blank]
-  @scala.inline
-  def _parent: _parent = "_parent".asInstanceOf[_parent]
-  @scala.inline
-  def _self: _self = "_self".asInstanceOf[_self]
-  @scala.inline
-  def _top: _top = "_top".asInstanceOf[_top]
-  @scala.inline
-  def canvas: canvas = "canvas".asInstanceOf[canvas]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def svg: svg = "svg".asInstanceOf[svg]
+  @js.native
+  sealed trait svg extends StObject
+  inline def svg: svg = "svg".asInstanceOf[svg]
 }
-

@@ -2,16 +2,33 @@ package typingsJapgolly.sharepoint.SP.JsGrid.EventArgs
 
 import typingsJapgolly.microsoftAjax.Sys.UI.DomEvent
 import typingsJapgolly.sharepoint.SP.JsGrid.IEventArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.JsGrid.EventArgs.SingleCellKeyDown")
-@js.native
-class SingleCellKeyDown protected () extends IEventArgs {
-  def this(eventInfo: DomEvent, recordKey: Double, fieldKey: String) = this()
-  var eventInfo: DomEvent = js.native
-  var fieldKey: String = js.native
-  var recordKey: Double = js.native
+trait SingleCellKeyDown
+  extends StObject
+     with IEventArgs {
+  
+  var eventInfo: DomEvent
+  
+  var fieldKey: String
+  
+  var recordKey: Double
 }
-
+object SingleCellKeyDown {
+  
+  inline def apply(eventInfo: DomEvent, fieldKey: String, recordKey: Double): SingleCellKeyDown = {
+    val __obj = js.Dynamic.literal(eventInfo = eventInfo.asInstanceOf[js.Any], fieldKey = fieldKey.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SingleCellKeyDown]
+  }
+  
+  extension [Self <: SingleCellKeyDown](x: Self) {
+    
+    inline def setEventInfo(value: DomEvent): Self = StObject.set(x, "eventInfo", value.asInstanceOf[js.Any])
+    
+    inline def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
+    
+    inline def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
+  }
+}

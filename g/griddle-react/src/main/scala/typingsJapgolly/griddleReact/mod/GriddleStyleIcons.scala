@@ -1,21 +1,30 @@
 package typingsJapgolly.griddleReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GriddleStyleIcons extends js.Object {
-  var sortAscendingIcon: js.UndefOr[js.Any] = js.undefined
-  var sortDescendingIcon: js.UndefOr[js.Any] = js.undefined
+trait GriddleStyleIcons extends StObject {
+  
+  var sortAscendingIcon: js.UndefOr[Any] = js.undefined
+  
+  var sortDescendingIcon: js.UndefOr[Any] = js.undefined
 }
-
 object GriddleStyleIcons {
-  @scala.inline
-  def apply(sortAscendingIcon: js.Any = null, sortDescendingIcon: js.Any = null): GriddleStyleIcons = {
+  
+  inline def apply(): GriddleStyleIcons = {
     val __obj = js.Dynamic.literal()
-    if (sortAscendingIcon != null) __obj.updateDynamic("sortAscendingIcon")(sortAscendingIcon.asInstanceOf[js.Any])
-    if (sortDescendingIcon != null) __obj.updateDynamic("sortDescendingIcon")(sortDescendingIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[GriddleStyleIcons]
   }
+  
+  extension [Self <: GriddleStyleIcons](x: Self) {
+    
+    inline def setSortAscendingIcon(value: Any): Self = StObject.set(x, "sortAscendingIcon", value.asInstanceOf[js.Any])
+    
+    inline def setSortAscendingIconUndefined: Self = StObject.set(x, "sortAscendingIcon", js.undefined)
+    
+    inline def setSortDescendingIcon(value: Any): Self = StObject.set(x, "sortDescendingIcon", value.asInstanceOf[js.Any])
+    
+    inline def setSortDescendingIconUndefined: Self = StObject.set(x, "sortDescendingIcon", js.undefined)
+  }
 }
-

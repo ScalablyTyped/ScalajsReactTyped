@@ -1,49 +1,80 @@
 package typingsJapgolly.phaser.spine
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.SkeletonBinary")
-@js.native
-class SkeletonBinary protected () extends js.Object {
-  def this(attachmentLoader: AttachmentLoader) = this()
-  var attachmentLoader: AttachmentLoader = js.native
-  var linkedMeshes: js.Any = js.native
-  var readAnimation: js.Any = js.native
-  var readAttachment: js.Any = js.native
-  var readCurve: js.Any = js.native
-  var readFloatArray: js.Any = js.native
-  var readShortArray: js.Any = js.native
-  var readSkin: js.Any = js.native
-  var readVertices: js.Any = js.native
-  var scale: Double = js.native
-  def readSkeletonData(binary: scala.scalajs.js.typedarray.Uint8Array): SkeletonData = js.native
-  def setCurve(timeline: CurveTimeline, frameIndex: Double, cx1: Double, cy1: Double, cx2: Double, cy2: Double): Unit = js.native
+trait SkeletonBinary extends StObject {
+  
+  var attachmentLoader: AttachmentLoader
+  
+  /* private */ var linkedMeshes: Any
+  
+  /* private */ var readAnimation: Any
+  
+  /* private */ var readAttachment: Any
+  
+  /* private */ var readCurve: Any
+  
+  /* private */ var readFloatArray: Any
+  
+  /* private */ var readShortArray: Any
+  
+  def readSkeletonData(binary: js.typedarray.Uint8Array): SkeletonData
+  
+  /* private */ var readSkin: Any
+  
+  /* private */ var readVertices: Any
+  
+  var scale: Double
+  
+  def setCurve(timeline: CurveTimeline, frameIndex: Double, cx1: Double, cy1: Double, cx2: Double, cy2: Double): Unit
 }
-
-/* static members */
-@JSGlobal("spine.SkeletonBinary")
-@js.native
-object SkeletonBinary extends js.Object {
-  var AttachmentTypeValues: js.Array[Double] = js.native
-  var BONE_ROTATE: Double = js.native
-  var BONE_SCALE: Double = js.native
-  var BONE_SHEAR: Double = js.native
-  var BONE_TRANSLATE: Double = js.native
-  var BlendModeValues: js.Array[BlendMode] = js.native
-  var CURVE_BEZIER: Double = js.native
-  var CURVE_LINEAR: Double = js.native
-  var CURVE_STEPPED: Double = js.native
-  var PATH_MIX: Double = js.native
-  var PATH_POSITION: Double = js.native
-  var PATH_SPACING: Double = js.native
-  var PositionModeValues: js.Array[PositionMode] = js.native
-  var RotateModeValues: js.Array[RotateMode] = js.native
-  var SLOT_ATTACHMENT: Double = js.native
-  var SLOT_COLOR: Double = js.native
-  var SLOT_TWO_COLOR: Double = js.native
-  var SpacingModeValues: js.Array[SpacingMode] = js.native
-  var TransformModeValues: js.Array[TransformMode] = js.native
+object SkeletonBinary {
+  
+  inline def apply(
+    attachmentLoader: AttachmentLoader,
+    linkedMeshes: Any,
+    readAnimation: Any,
+    readAttachment: Any,
+    readCurve: Any,
+    readFloatArray: Any,
+    readShortArray: Any,
+    readSkeletonData: js.typedarray.Uint8Array => SkeletonData,
+    readSkin: Any,
+    readVertices: Any,
+    scale: Double,
+    setCurve: (CurveTimeline, Double, Double, Double, Double, Double) => Callback
+  ): SkeletonBinary = {
+    val __obj = js.Dynamic.literal(attachmentLoader = attachmentLoader.asInstanceOf[js.Any], linkedMeshes = linkedMeshes.asInstanceOf[js.Any], readAnimation = readAnimation.asInstanceOf[js.Any], readAttachment = readAttachment.asInstanceOf[js.Any], readCurve = readCurve.asInstanceOf[js.Any], readFloatArray = readFloatArray.asInstanceOf[js.Any], readShortArray = readShortArray.asInstanceOf[js.Any], readSkeletonData = js.Any.fromFunction1(readSkeletonData), readSkin = readSkin.asInstanceOf[js.Any], readVertices = readVertices.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], setCurve = js.Any.fromFunction6((t0: CurveTimeline, t1: Double, t2: Double, t3: Double, t4: Double, t5: Double) => (setCurve(t0, t1, t2, t3, t4, t5)).runNow()))
+    __obj.asInstanceOf[SkeletonBinary]
+  }
+  
+  extension [Self <: SkeletonBinary](x: Self) {
+    
+    inline def setAttachmentLoader(value: AttachmentLoader): Self = StObject.set(x, "attachmentLoader", value.asInstanceOf[js.Any])
+    
+    inline def setLinkedMeshes(value: Any): Self = StObject.set(x, "linkedMeshes", value.asInstanceOf[js.Any])
+    
+    inline def setReadAnimation(value: Any): Self = StObject.set(x, "readAnimation", value.asInstanceOf[js.Any])
+    
+    inline def setReadAttachment(value: Any): Self = StObject.set(x, "readAttachment", value.asInstanceOf[js.Any])
+    
+    inline def setReadCurve(value: Any): Self = StObject.set(x, "readCurve", value.asInstanceOf[js.Any])
+    
+    inline def setReadFloatArray(value: Any): Self = StObject.set(x, "readFloatArray", value.asInstanceOf[js.Any])
+    
+    inline def setReadShortArray(value: Any): Self = StObject.set(x, "readShortArray", value.asInstanceOf[js.Any])
+    
+    inline def setReadSkeletonData(value: js.typedarray.Uint8Array => SkeletonData): Self = StObject.set(x, "readSkeletonData", js.Any.fromFunction1(value))
+    
+    inline def setReadSkin(value: Any): Self = StObject.set(x, "readSkin", value.asInstanceOf[js.Any])
+    
+    inline def setReadVertices(value: Any): Self = StObject.set(x, "readVertices", value.asInstanceOf[js.Any])
+    
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setSetCurve(value: (CurveTimeline, Double, Double, Double, Double, Double) => Callback): Self = StObject.set(x, "setCurve", js.Any.fromFunction6((t0: CurveTimeline, t1: Double, t2: Double, t3: Double, t4: Double, t5: Double) => (value(t0, t1, t2, t3, t4, t5)).runNow()))
+  }
 }
-

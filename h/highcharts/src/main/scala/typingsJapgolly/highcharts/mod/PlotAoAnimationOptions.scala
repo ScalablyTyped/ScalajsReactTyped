@@ -1,19 +1,24 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotAoAnimationOptions extends js.Object {
-  var duration: js.UndefOr[Double] = js.undefined
+trait PlotAoAnimationOptions extends StObject {
+  
+  var defer: js.UndefOr[Double] = js.undefined
 }
-
 object PlotAoAnimationOptions {
-  @scala.inline
-  def apply(duration: Int | Double = null): PlotAoAnimationOptions = {
+  
+  inline def apply(): PlotAoAnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotAoAnimationOptions]
   }
+  
+  extension [Self <: PlotAoAnimationOptions](x: Self) {
+    
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+  }
 }
-

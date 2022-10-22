@@ -1,22 +1,26 @@
 package typingsJapgolly.openlayers.mod.olx.format
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.Node
+import org.scalajs.dom.Node
 import typingsJapgolly.openlayers.mod.Feature
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GPXOptions extends js.Object {
-  var readExtensions: js.UndefOr[js.Function2[/* feature */ Feature, /* node */ Node, _]] = js.undefined
+trait GPXOptions extends StObject {
+  
+  var readExtensions: js.UndefOr[js.Function2[/* feature */ Feature, /* node */ Node, Any]] = js.undefined
 }
-
 object GPXOptions {
-  @scala.inline
-  def apply(readExtensions: (/* feature */ Feature, /* node */ Node) => CallbackTo[js.Any] = null): GPXOptions = {
+  
+  inline def apply(): GPXOptions = {
     val __obj = js.Dynamic.literal()
-    if (readExtensions != null) __obj.updateDynamic("readExtensions")(js.Any.fromFunction2((t0: /* feature */ typingsJapgolly.openlayers.mod.Feature, t1: /* node */ org.scalajs.dom.raw.Node) => readExtensions(t0, t1).runNow()))
     __obj.asInstanceOf[GPXOptions]
   }
+  
+  extension [Self <: GPXOptions](x: Self) {
+    
+    inline def setReadExtensions(value: (/* feature */ Feature, /* node */ Node) => Any): Self = StObject.set(x, "readExtensions", js.Any.fromFunction2(value))
+    
+    inline def setReadExtensionsUndefined: Self = StObject.set(x, "readExtensions", js.undefined)
+  }
 }
-

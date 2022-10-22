@@ -2,11 +2,12 @@ package typingsJapgolly.reactNative.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PixelRatioStatic extends js.Object {
+trait PixelRatioStatic extends StObject {
+  
   /*
     Returns the device pixel density. Some examples:
     PixelRatio.get() === 1
@@ -25,6 +26,7 @@ trait PixelRatioStatic extends js.Object {
     Nexus 6
     */
   def get(): Double
+  
   /*
     Returns the scaling factor for font sizes. This is the ratio that is
     used to calculate the absolute font size, so any elements that
@@ -35,11 +37,13 @@ trait PixelRatioStatic extends js.Object {
     on iOS it will always return the default pixel ratio.
     */
   def getFontScale(): Double
+  
   /**
     * Converts a layout size (dp) to pixel size (px).
     * Guaranteed to return an integer number.
     */
   def getPixelSizeForLayoutSize(layoutSize: Double): Double
+  
   /**
     * Rounds a layout size (dp) to the nearest layout size that
     * corresponds to an integer number of pixels. For example,
@@ -48,28 +52,35 @@ trait PixelRatioStatic extends js.Object {
     * which corresponds to exactly (8.33 * 3) = 25 pixels.
     */
   def roundToNearestPixel(layoutSize: Double): Double
+  
   /**
     * No-op for iOS, but used on the web. Should not be documented. [sic]
     */
   def startDetecting(): Unit
 }
-
 object PixelRatioStatic {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     get: CallbackTo[Double],
     getFontScale: CallbackTo[Double],
-    getPixelSizeForLayoutSize: Double => CallbackTo[Double],
-    roundToNearestPixel: Double => CallbackTo[Double],
+    getPixelSizeForLayoutSize: Double => Double,
+    roundToNearestPixel: Double => Double,
     startDetecting: Callback
   ): PixelRatioStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get.toJsFn)
-    __obj.updateDynamic("getFontScale")(getFontScale.toJsFn)
-    __obj.updateDynamic("getPixelSizeForLayoutSize")(js.Any.fromFunction1((t0: scala.Double) => getPixelSizeForLayoutSize(t0).runNow()))
-    __obj.updateDynamic("roundToNearestPixel")(js.Any.fromFunction1((t0: scala.Double) => roundToNearestPixel(t0).runNow()))
-    __obj.updateDynamic("startDetecting")(startDetecting.toJsFn)
+    val __obj = js.Dynamic.literal(get = get.toJsFn, getFontScale = getFontScale.toJsFn, getPixelSizeForLayoutSize = js.Any.fromFunction1(getPixelSizeForLayoutSize), roundToNearestPixel = js.Any.fromFunction1(roundToNearestPixel), startDetecting = startDetecting.toJsFn)
     __obj.asInstanceOf[PixelRatioStatic]
   }
+  
+  extension [Self <: PixelRatioStatic](x: Self) {
+    
+    inline def setGet(value: CallbackTo[Double]): Self = StObject.set(x, "get", value.toJsFn)
+    
+    inline def setGetFontScale(value: CallbackTo[Double]): Self = StObject.set(x, "getFontScale", value.toJsFn)
+    
+    inline def setGetPixelSizeForLayoutSize(value: Double => Double): Self = StObject.set(x, "getPixelSizeForLayoutSize", js.Any.fromFunction1(value))
+    
+    inline def setRoundToNearestPixel(value: Double => Double): Self = StObject.set(x, "roundToNearestPixel", js.Any.fromFunction1(value))
+    
+    inline def setStartDetecting(value: Callback): Self = StObject.set(x, "startDetecting", value.toJsFn)
+  }
 }
-

@@ -1,29 +1,38 @@
 package typingsJapgolly.jquerymobile
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SliderEvents extends js.Object {
+trait SliderEvents extends StObject {
+  
   var create: js.UndefOr[JQueryMobileEvent] = js.undefined
+  
   var slidestart: js.UndefOr[JQueryMobileEvent] = js.undefined
+  
   var slidestop: js.UndefOr[JQueryMobileEvent] = js.undefined
 }
-
 object SliderEvents {
-  @scala.inline
-  def apply(
-    create: (/* event */ Event_, /* ui */ js.Any) => Callback = null,
-    slidestart: (/* event */ Event_, /* ui */ js.Any) => Callback = null,
-    slidestop: (/* event */ Event_, /* ui */ js.Any) => Callback = null
-  ): SliderEvents = {
+  
+  inline def apply(): SliderEvents = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ js.Any) => create(t0, t1).runNow()))
-    if (slidestart != null) __obj.updateDynamic("slidestart")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ js.Any) => slidestart(t0, t1).runNow()))
-    if (slidestop != null) __obj.updateDynamic("slidestop")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ js.Any) => slidestop(t0, t1).runNow()))
     __obj.asInstanceOf[SliderEvents]
   }
+  
+  extension [Self <: SliderEvents](x: Self) {
+    
+    inline def setCreate(value: (/* event */ Event, /* ui */ Any) => Callback): Self = StObject.set(x, "create", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    
+    inline def setSlidestart(value: (/* event */ Event, /* ui */ Any) => Callback): Self = StObject.set(x, "slidestart", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setSlidestartUndefined: Self = StObject.set(x, "slidestart", js.undefined)
+    
+    inline def setSlidestop(value: (/* event */ Event, /* ui */ Any) => Callback): Self = StObject.set(x, "slidestop", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setSlidestopUndefined: Self = StObject.set(x, "slidestop", js.undefined)
+  }
 }
-

@@ -1,32 +1,40 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services.Formatting
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.typescriptServices.TypeScript.TextSpan
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITextSnapshot extends js.Object {
+trait ITextSnapshot extends StObject {
+  
   def getLineFromLineNumber(lineNumber: Double): ITextSnapshotLine
+  
   def getLineFromPosition(position: Double): ITextSnapshotLine
+  
   def getLineNumberFromPosition(position: Double): Double
+  
   def getText(span: TextSpan): String
 }
-
 object ITextSnapshot {
-  @scala.inline
-  def apply(
-    getLineFromLineNumber: Double => CallbackTo[ITextSnapshotLine],
-    getLineFromPosition: Double => CallbackTo[ITextSnapshotLine],
-    getLineNumberFromPosition: Double => CallbackTo[Double],
-    getText: TextSpan => CallbackTo[String]
+  
+  inline def apply(
+    getLineFromLineNumber: Double => ITextSnapshotLine,
+    getLineFromPosition: Double => ITextSnapshotLine,
+    getLineNumberFromPosition: Double => Double,
+    getText: TextSpan => String
   ): ITextSnapshot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLineFromLineNumber")(js.Any.fromFunction1((t0: scala.Double) => getLineFromLineNumber(t0).runNow()))
-    __obj.updateDynamic("getLineFromPosition")(js.Any.fromFunction1((t0: scala.Double) => getLineFromPosition(t0).runNow()))
-    __obj.updateDynamic("getLineNumberFromPosition")(js.Any.fromFunction1((t0: scala.Double) => getLineNumberFromPosition(t0).runNow()))
-    __obj.updateDynamic("getText")(js.Any.fromFunction1((t0: typingsJapgolly.typescriptServices.TypeScript.TextSpan) => getText(t0).runNow()))
+    val __obj = js.Dynamic.literal(getLineFromLineNumber = js.Any.fromFunction1(getLineFromLineNumber), getLineFromPosition = js.Any.fromFunction1(getLineFromPosition), getLineNumberFromPosition = js.Any.fromFunction1(getLineNumberFromPosition), getText = js.Any.fromFunction1(getText))
     __obj.asInstanceOf[ITextSnapshot]
   }
+  
+  extension [Self <: ITextSnapshot](x: Self) {
+    
+    inline def setGetLineFromLineNumber(value: Double => ITextSnapshotLine): Self = StObject.set(x, "getLineFromLineNumber", js.Any.fromFunction1(value))
+    
+    inline def setGetLineFromPosition(value: Double => ITextSnapshotLine): Self = StObject.set(x, "getLineFromPosition", js.Any.fromFunction1(value))
+    
+    inline def setGetLineNumberFromPosition(value: Double => Double): Self = StObject.set(x, "getLineNumberFromPosition", js.Any.fromFunction1(value))
+    
+    inline def setGetText(value: TextSpan => String): Self = StObject.set(x, "getText", js.Any.fromFunction1(value))
+  }
 }
-

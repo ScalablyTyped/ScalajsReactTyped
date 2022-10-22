@@ -1,29 +1,31 @@
 package typingsJapgolly.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DropResult extends DragUpdate {
+trait DropResult
+  extends StObject
+     with DragUpdate {
+  
   var reason: DropReason
 }
-
 object DropResult {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     draggableId: DraggableId,
     mode: MovementMode,
     reason: DropReason,
     source: DraggableLocation,
-    `type`: TypeId,
-    combine: Combine = null,
-    destination: DraggableLocation = null
+    `type`: TypeId
   ): DropResult = {
     val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (combine != null) __obj.updateDynamic("combine")(combine.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropResult]
   }
+  
+  extension [Self <: DropResult](x: Self) {
+    
+    inline def setReason(value: DropReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+  }
 }
-

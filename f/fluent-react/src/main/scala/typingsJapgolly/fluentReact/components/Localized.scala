@@ -1,40 +1,29 @@
 package typingsJapgolly.fluentReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.fluentReact.mod.LocalizedProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Localized {
-  def apply(
-    id: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    attrs: js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[LocalizedProps, typingsJapgolly.fluentReact.mod.Localized, Unit, LocalizedProps] = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.fluentReact.mod.LocalizedProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.fluentReact.mod.Localized](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.fluentReact.mod.LocalizedProps])(children: _*)
+  inline def apply(id: String): Builder = {
+    val __props = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[LocalizedProps]))
   }
+  
   @JSImport("fluent-react", "Localized")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.fluentReact.mod.Localized] {
+    
+    inline def attrs(value: js.Object): this.type = set("attrs", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: LocalizedProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,42 +1,56 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnenoteOperation extends Operation {
+trait OnenoteOperation
+  extends StObject
+     with Operation {
+  
   // The error returned by the operation.
-  var error: js.UndefOr[OnenoteOperationError] = js.undefined
-  // The operation percent complete if the operation is still in running status
-  var percentComplete: js.UndefOr[String] = js.undefined
+  var error: js.UndefOr[NullableOption[OnenoteOperationError]] = js.undefined
+  
+  // The operation percent complete if the operation is still in running status.
+  var percentComplete: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The resource id.
-  var resourceId: js.UndefOr[String] = js.undefined
+  var resourceId: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The resource URI for the object. For example, the resource URI for a copied page or section.
-  var resourceLocation: js.UndefOr[String] = js.undefined
+  var resourceLocation: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object OnenoteOperation {
-  @scala.inline
-  def apply(
-    createdDateTime: String = null,
-    error: OnenoteOperationError = null,
-    id: String = null,
-    lastActionDateTime: String = null,
-    percentComplete: String = null,
-    resourceId: String = null,
-    resourceLocation: String = null,
-    status: OperationStatus = null
-  ): OnenoteOperation = {
+  
+  inline def apply(): OnenoteOperation = {
     val __obj = js.Dynamic.literal()
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastActionDateTime != null) __obj.updateDynamic("lastActionDateTime")(lastActionDateTime.asInstanceOf[js.Any])
-    if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete.asInstanceOf[js.Any])
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    if (resourceLocation != null) __obj.updateDynamic("resourceLocation")(resourceLocation.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnenoteOperation]
   }
+  
+  extension [Self <: OnenoteOperation](x: Self) {
+    
+    inline def setError(value: NullableOption[OnenoteOperationError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorNull: Self = StObject.set(x, "error", null)
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setPercentComplete(value: NullableOption[String]): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
+    
+    inline def setPercentCompleteNull: Self = StObject.set(x, "percentComplete", null)
+    
+    inline def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
+    
+    inline def setResourceId(value: NullableOption[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    
+    inline def setResourceIdNull: Self = StObject.set(x, "resourceId", null)
+    
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    
+    inline def setResourceLocation(value: NullableOption[String]): Self = StObject.set(x, "resourceLocation", value.asInstanceOf[js.Any])
+    
+    inline def setResourceLocationNull: Self = StObject.set(x, "resourceLocation", null)
+    
+    inline def setResourceLocationUndefined: Self = StObject.set(x, "resourceLocation", js.undefined)
+  }
 }
-

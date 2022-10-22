@@ -1,82 +1,86 @@
 package typingsJapgolly.gzipSize
 
 import typingsJapgolly.gzipSize.gzipSizeStrings.`gzip-size`
-import typingsJapgolly.node.Buffer
-import typingsJapgolly.node.streamMod.Transform
+import typingsJapgolly.node.bufferMod.global.Buffer
+import typingsJapgolly.node.nodeColonstreamMod.PassThrough
 import typingsJapgolly.node.zlibMod.ZlibOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gzip-size", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("gzip-size", JSImport.Namespace)
   @js.native
-  trait GzipSizeStream extends Transform {
-    /**
-    		Contains the gzip size of the stream after it is finished. Since this happens asynchronously, it is recommended you use the `gzip-size` event instead.
-    		*/
-    var gzipSize: js.UndefOr[Double] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def gzipSize(input: String): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  inline def gzipSize(input: String, options: Options): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("gzipSize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  inline def gzipSize(input: Buffer): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  inline def gzipSize(input: Buffer, options: Options): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("gzipSize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  
+  inline def gzipSizeFromFile(filePath: String): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSizeFromFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  inline def gzipSizeFromFile(filePath: String, options: Options): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("gzipSizeFromFile")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  
+  inline def gzipSizeFromFileSync(filePath: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSizeFromFileSync")(filePath.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def gzipSizeFromFileSync(filePath: String, options: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("gzipSizeFromFileSync")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def gzipSizeStream(): GzipSizeStream_ = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSizeStream")().asInstanceOf[GzipSizeStream_]
+  inline def gzipSizeStream(options: Options): GzipSizeStream_ = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSizeStream")(options.asInstanceOf[js.Any]).asInstanceOf[GzipSizeStream_]
+  
+  inline def gzipSizeSync(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSizeSync")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def gzipSizeSync(input: String, options: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("gzipSizeSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def gzipSizeSync(input: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSizeSync")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def gzipSizeSync(input: Buffer, options: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("gzipSizeSync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @js.native
+  trait GzipSizeStream_ extends PassThrough {
+    
+    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_gzipsize(event: `gzip-size`, listener: js.Function1[/* size */ Double, Unit]): this.type = js.native
+    
+    def emit(event: String, args: Any*): Boolean = js.native
+    def emit(event: js.Symbol, args: Any*): Boolean = js.native
     @JSName("emit")
     def emit_gzipsize(event: `gzip-size`, size: Double): Boolean = js.native
+    
+    /**
+    	Contains the gzip size of the stream after it is finished. Since this happens asynchronously, it is recommended you use the `gzip-size` event instead.
+    	*/
+    var gzipSize: js.UndefOr[Double] = js.native
+    
+    def off(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def off(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("off")
     def off_gzipsize(event: `gzip-size`, listener: js.Function1[/* size */ Double, Unit]): this.type = js.native
+    
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_gzipsize(event: `gzip-size`, listener: js.Function1[/* size */ Double, Unit]): this.type = js.native
+    
+    def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("once")
     def once_gzipsize(event: `gzip-size`, listener: js.Function1[/* size */ Double, Unit]): this.type = js.native
+    
+    def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_gzipsize(event: `gzip-size`, listener: js.Function1[/* size */ Double, Unit]): this.type = js.native
+    
+    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_gzipsize(event: `gzip-size`, listener: js.Function1[/* size */ Double, Unit]): this.type = js.native
+    
+    def removeListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_gzipsize(event: `gzip-size`, listener: js.Function1[/* size */ Double, Unit]): this.type = js.native
   }
   
-  /**
-  	Get the gzipped size of a string or buffer.
-  	@returns The gzipped size of `input`.
-  	*/
-  def apply(input: String): js.Promise[Double] = js.native
-  def apply(input: String, options: Options): js.Promise[Double] = js.native
-  def apply(input: Buffer): js.Promise[Double] = js.native
-  def apply(input: Buffer, options: Options): js.Promise[Double] = js.native
-  /**
-  	Get the gzipped size of a file.
-  	@returns The size of the file.
-  	*/
-  def file(path: String): js.Promise[Double] = js.native
-  def file(path: String, options: Options): js.Promise[Double] = js.native
-  /**
-  	Synchronously get the gzipped size of a file.
-  	@returns The size of the file.
-  	*/
-  def fileSync(path: String): Double = js.native
-  def fileSync(path: String, options: Options): Double = js.native
-  /**
-  	@returns A stream that emits a `gzip-size` event and has a `gzipSize` property.
-  	*/
-  def stream(): GzipSizeStream = js.native
-  def stream(options: Options): GzipSizeStream = js.native
-  /**
-  	Synchronously get the gzipped size of a string or buffer.
-  	@returns The gzipped size of `input`.
-  	@example
-  	```
-  	import gzipSize = require('gzip-size');
-  	const text = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.';
-  	console.log(text.length);
-  	//=> 191
-  	console.log(gzipSize.sync(text));
-  	//=> 78
-  	```
-  	*/
-  def sync(input: String): Double = js.native
-  def sync(input: String, options: Options): Double = js.native
-  def sync(input: Buffer): Double = js.native
-  def sync(input: Buffer, options: Options): Double = js.native
   type Options = ZlibOptions
 }
-

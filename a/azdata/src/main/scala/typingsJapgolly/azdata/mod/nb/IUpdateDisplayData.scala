@@ -1,24 +1,27 @@
 package typingsJapgolly.azdata.mod.nb
 
-import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.azdata.azdataStrings.update_display_data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IUpdateDisplayData
-  extends IDisplayResult
+  extends StObject
+     with IDisplayResult
      with Output {
+  
   @JSName("output_type")
   var output_type_IUpdateDisplayData: update_display_data
 }
-
 object IUpdateDisplayData {
-  @scala.inline
-  def apply(data: StringDictionary[js.Any], output_type: update_display_data, metadata: js.Object = null): IUpdateDisplayData = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], output_type = output_type.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+  
+  inline def apply(data: DisplayResultData): IUpdateDisplayData = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], output_type = "update_display_data")
     __obj.asInstanceOf[IUpdateDisplayData]
   }
+  
+  extension [Self <: IUpdateDisplayData](x: Self) {
+    
+    inline def setOutput_type(value: update_display_data): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
+  }
 }
-

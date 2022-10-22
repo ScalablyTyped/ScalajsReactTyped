@@ -1,60 +1,62 @@
 package typingsJapgolly.materialUi.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
 import japgolly.scalajs.react.ReactTouchEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Component
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.materialUi.MaterialUI.ChipProps
-import typingsJapgolly.materialUi.chipMod.default
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Chip {
-  def apply(
-    backgroundColor: String = null,
-    className: String = null,
-    containerElement: Node | String = null,
-    deleteIconStyle: CSSProperties = null,
-    labelColor: String = null,
-    labelStyle: CSSProperties = null,
-    onClick: ReactMouseEventFrom[typingsJapgolly.materialUi.MaterialUI.Chip with Element] => Callback = null,
-    onRequestDelete: ReactTouchEventFrom[typingsJapgolly.materialUi.MaterialUI.Chip with Element] => Callback = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ChipProps, default, Unit, ChipProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (containerElement != null) __obj.updateDynamic("containerElement")(containerElement.asInstanceOf[js.Any])
-    if (deleteIconStyle != null) __obj.updateDynamic("deleteIconStyle")(deleteIconStyle.asInstanceOf[js.Any])
-    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[typingsJapgolly.materialUi.MaterialUI.Chip with org.scalajs.dom.raw.Element]) => onClick(t0).runNow()))
-    if (onRequestDelete != null) __obj.updateDynamic("onRequestDelete")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[typingsJapgolly.materialUi.MaterialUI.Chip with org.scalajs.dom.raw.Element]) => onRequestDelete(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUi.MaterialUI.ChipProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUi.chipMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUi.MaterialUI.ChipProps])(children: _*)
-  }
-  @JSImport("material-ui/Chip", JSImport.Default)
+  @JSImport("material-ui", "Chip")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.materialUi.mod.Chip] {
+    
+    inline def backgroundColor(value: String): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def containerElement(value: Node | String): this.type = set("containerElement", value.asInstanceOf[js.Any])
+    
+    inline def containerElementNull: this.type = set("containerElement", null)
+    
+    inline def containerElementVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("containerElement", js.Array(value*))
+    
+    inline def containerElementVdomElement(value: VdomElement): this.type = set("containerElement", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def deleteIconStyle(value: CSSProperties): this.type = set("deleteIconStyle", value.asInstanceOf[js.Any])
+    
+    inline def labelColor(value: String): this.type = set("labelColor", value.asInstanceOf[js.Any])
+    
+    inline def labelStyle(value: CSSProperties): this.type = set("labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def onClick(
+      value: ReactMouseEventFrom[(Component[ChipProps & js.Object, js.Object]) & org.scalajs.dom.Element] => Callback
+    ): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[(Component[ChipProps & js.Object, js.Object]) & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onRequestDelete(
+      value: ReactTouchEventFrom[(Component[ChipProps & js.Object, js.Object]) & org.scalajs.dom.Element] => Callback
+    ): this.type = set("onRequestDelete", js.Any.fromFunction1((t0: ReactTouchEventFrom[(Component[ChipProps & js.Object, js.Object]) & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Chip.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ChipProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

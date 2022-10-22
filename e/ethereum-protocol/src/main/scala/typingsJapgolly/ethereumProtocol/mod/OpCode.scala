@@ -1,77 +1,75 @@
 package typingsJapgolly.ethereumProtocol.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OpCode extends js.Object
-
+sealed trait OpCode extends StObject
 @JSImport("ethereum-protocol", "OpCode")
 @js.native
-object OpCode extends js.Object {
-  @js.native
-  sealed trait Call extends OpCode
-  
-  @js.native
-  sealed trait CallCode extends OpCode
-  
-  @js.native
-  sealed trait Create extends OpCode
-  
-  @js.native
-  sealed trait DelegateCall extends OpCode
-  
-  @js.native
-  sealed trait Invalid extends OpCode
-  
-  @js.native
-  sealed trait Return extends OpCode
-  
-  @js.native
-  sealed trait Revert extends OpCode
-  
-  @js.native
-  sealed trait SelfDestruct extends OpCode
-  
-  @js.native
-  sealed trait StaticCall extends OpCode
-  
-  @js.native
-  sealed trait Stop extends OpCode
+object OpCode extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[OpCode with String] = js.native
-  /* "CALL" */ @js.native
-  object Call extends TopLevel[Call with String]
+  def apply(value: String): js.UndefOr[OpCode & String] = js.native
   
-  /* "CALLCODE" */ @js.native
-  object CallCode extends TopLevel[CallCode with String]
+  @js.native
+  sealed trait Call
+    extends StObject
+       with OpCode
+  /* "CALL" */ val Call: typingsJapgolly.ethereumProtocol.mod.OpCode.Call & String = js.native
   
-  /* "CREATE" */ @js.native
-  object Create extends TopLevel[Create with String]
+  @js.native
+  sealed trait CallCode
+    extends StObject
+       with OpCode
+  /* "CALLCODE" */ val CallCode: typingsJapgolly.ethereumProtocol.mod.OpCode.CallCode & String = js.native
   
-  /* "DELEGATECALL" */ @js.native
-  object DelegateCall extends TopLevel[DelegateCall with String]
+  @js.native
+  sealed trait Create
+    extends StObject
+       with OpCode
+  /* "CREATE" */ val Create: typingsJapgolly.ethereumProtocol.mod.OpCode.Create & String = js.native
   
-  /* "INVALID" */ @js.native
-  object Invalid extends TopLevel[Invalid with String]
+  @js.native
+  sealed trait DelegateCall
+    extends StObject
+       with OpCode
+  /* "DELEGATECALL" */ val DelegateCall: typingsJapgolly.ethereumProtocol.mod.OpCode.DelegateCall & String = js.native
   
-  /* "RETURN" */ @js.native
-  object Return extends TopLevel[Return with String]
+  @js.native
+  sealed trait Invalid
+    extends StObject
+       with OpCode
+  /* "INVALID" */ val Invalid: typingsJapgolly.ethereumProtocol.mod.OpCode.Invalid & String = js.native
   
-  /* "REVERT" */ @js.native
-  object Revert extends TopLevel[Revert with String]
+  @js.native
+  sealed trait Return
+    extends StObject
+       with OpCode
+  /* "RETURN" */ val Return: typingsJapgolly.ethereumProtocol.mod.OpCode.Return & String = js.native
   
-  /* "SELFDESTRUCT" */ @js.native
-  object SelfDestruct extends TopLevel[SelfDestruct with String]
+  @js.native
+  sealed trait Revert
+    extends StObject
+       with OpCode
+  /* "REVERT" */ val Revert: typingsJapgolly.ethereumProtocol.mod.OpCode.Revert & String = js.native
   
-  /* "STATICCALL" */ @js.native
-  object StaticCall extends TopLevel[StaticCall with String]
+  @js.native
+  sealed trait SelfDestruct
+    extends StObject
+       with OpCode
+  /* "SELFDESTRUCT" */ val SelfDestruct: typingsJapgolly.ethereumProtocol.mod.OpCode.SelfDestruct & String = js.native
   
-  /* "STOP" */ @js.native
-  object Stop extends TopLevel[Stop with String]
+  @js.native
+  sealed trait StaticCall
+    extends StObject
+       with OpCode
+  /* "STATICCALL" */ val StaticCall: typingsJapgolly.ethereumProtocol.mod.OpCode.StaticCall & String = js.native
   
+  @js.native
+  sealed trait Stop
+    extends StObject
+       with OpCode
+  /* "STOP" */ val Stop: typingsJapgolly.ethereumProtocol.mod.OpCode.Stop & String = js.native
 }
-

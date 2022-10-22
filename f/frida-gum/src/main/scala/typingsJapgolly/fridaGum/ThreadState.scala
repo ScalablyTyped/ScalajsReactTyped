@@ -1,8 +1,8 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.running
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.fridaGumStrings.uninterruptible
   - typingsJapgolly.fridaGum.fridaGumStrings.halted
 */
-trait ThreadState extends js.Object
-
+trait ThreadState extends StObject
 object ThreadState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def halted: typingsJapgolly.fridaGum.fridaGumStrings.halted = this.cast("halted")
-  @scala.inline
-  def running: typingsJapgolly.fridaGum.fridaGumStrings.running = this.cast("running")
-  @scala.inline
-  def stopped: typingsJapgolly.fridaGum.fridaGumStrings.stopped = this.cast("stopped")
-  @scala.inline
-  def uninterruptible: typingsJapgolly.fridaGum.fridaGumStrings.uninterruptible = this.cast("uninterruptible")
-  @scala.inline
-  def waiting: typingsJapgolly.fridaGum.fridaGumStrings.waiting = this.cast("waiting")
+  
+  inline def halted: typingsJapgolly.fridaGum.fridaGumStrings.halted = "halted".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.halted]
+  
+  inline def running: typingsJapgolly.fridaGum.fridaGumStrings.running = "running".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.running]
+  
+  inline def stopped: typingsJapgolly.fridaGum.fridaGumStrings.stopped = "stopped".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.stopped]
+  
+  inline def uninterruptible: typingsJapgolly.fridaGum.fridaGumStrings.uninterruptible = "uninterruptible".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.uninterruptible]
+  
+  inline def waiting: typingsJapgolly.fridaGum.fridaGumStrings.waiting = "waiting".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.waiting]
 }
-

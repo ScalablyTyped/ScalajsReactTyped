@@ -1,16 +1,16 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Background.SystemTrigger")
-@js.native
-class SystemTrigger protected () extends ISystemTrigger {
-  def this(triggerType: SystemTriggerType, oneShot: Boolean) = this()
-  /* CompleteClass */
-  override var oneShot: Boolean = js.native
-  /* CompleteClass */
-  override var triggerType: SystemTriggerType = js.native
+trait SystemTrigger
+  extends StObject
+     with ISystemTrigger
+object SystemTrigger {
+  
+  inline def apply(oneShot: Boolean, triggerType: SystemTriggerType): SystemTrigger = {
+    val __obj = js.Dynamic.literal(oneShot = oneShot.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SystemTrigger]
+  }
 }
-

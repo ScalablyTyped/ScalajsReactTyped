@@ -1,55 +1,30 @@
 package typingsJapgolly.inquirer.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.inquirer.inquirerStrings.checkbox
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides options for a question for the `CheckboxPrompt`.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait CheckboxQuestion[T /* <: Answers */]
-  extends ListQuestionOptionsBase[T, CheckboxChoiceMap[T]]
-     with DistinctQuestion[T] {
+  extends StObject
+     with LoopableListQuestionOptionsBase[T, CheckboxChoiceMap[T]] {
+  
   /**
     * @inheritdoc
     */
   @JSName("type")
   var type_CheckboxQuestion: checkbox
 }
-
 object CheckboxQuestion {
-  @scala.inline
-  def apply[T /* <: Answers */](
-    `type`: checkbox,
-    choices: AsyncDynamicQuestionProperty[js.Array[DistinctChoice[CheckboxChoiceMap[T]]], T] = null,
-    default: AsyncDynamicQuestionProperty[_, T] = null,
-    filter: /* input */ js.Any => CallbackTo[js.Any] = null,
-    message: AsyncDynamicQuestionProperty[String, T] = null,
-    name: KeyUnion[T] = null,
-    pageSize: Int | Double = null,
-    prefix: String = null,
-    suffix: String = null,
-    validate: (/* input */ js.Any, /* answers */ js.UndefOr[T]) => CallbackTo[Boolean | String | (js.Promise[Boolean | String])] = null,
-    when: AsyncDynamicQuestionProperty[Boolean, T] = null
-  ): CheckboxQuestion[T] = {
+  
+  inline def apply[T /* <: Answers */](): CheckboxQuestion[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1((t0: /* input */ js.Any) => filter(t0).runNow()))
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2((t0: /* input */ js.Any, t1: /* answers */ js.UndefOr[T]) => validate(t0, t1).runNow()))
-    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("checkbox")
     __obj.asInstanceOf[CheckboxQuestion[T]]
   }
+  
+  extension [Self <: CheckboxQuestion[?], T /* <: Answers */](x: Self & CheckboxQuestion[T]) {
+    
+    inline def setType(value: checkbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

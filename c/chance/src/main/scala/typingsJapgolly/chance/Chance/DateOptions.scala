@@ -1,39 +1,60 @@
 package typingsJapgolly.chance.Chance
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DateOptions extends js.Object {
+trait DateOptions extends StObject {
+  
   var american: js.UndefOr[Boolean] = js.undefined
+  
   var day: js.UndefOr[Double] = js.undefined
+  
   var max: js.UndefOr[js.Date] = js.undefined
+  
   var min: js.UndefOr[js.Date] = js.undefined
+  
   var month: js.UndefOr[Double] = js.undefined
+  
   var string: js.UndefOr[Boolean] = js.undefined
+  
   var year: js.UndefOr[Double] = js.undefined
 }
-
 object DateOptions {
-  @scala.inline
-  def apply(
-    american: js.UndefOr[Boolean] = js.undefined,
-    day: Int | Double = null,
-    max: js.Date = null,
-    min: js.Date = null,
-    month: Int | Double = null,
-    string: js.UndefOr[Boolean] = js.undefined,
-    year: Int | Double = null
-  ): DateOptions = {
+  
+  inline def apply(): DateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(american)) __obj.updateDynamic("american")(american.asInstanceOf[js.Any])
-    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (!js.isUndefined(string)) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateOptions]
   }
+  
+  extension [Self <: DateOptions](x: Self) {
+    
+    inline def setAmerican(value: Boolean): Self = StObject.set(x, "american", value.asInstanceOf[js.Any])
+    
+    inline def setAmericanUndefined: Self = StObject.set(x, "american", js.undefined)
+    
+    inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    
+    inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+    
+    inline def setMax(value: js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: js.Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    
+    inline def setString(value: Boolean): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+    
+    inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    
+    inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+  }
 }
-

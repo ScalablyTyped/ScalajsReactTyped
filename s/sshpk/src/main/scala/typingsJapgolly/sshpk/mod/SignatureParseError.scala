@@ -1,17 +1,28 @@
 package typingsJapgolly.sshpk.mod
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sshpk", "SignatureParseError")
 @js.native
-class SignatureParseError protected () extends Error {
-  def this(`type`: String, format: String, innerErr: js.Any) = this()
+open class SignatureParseError protected ()
+  extends StObject
+     with Error {
+  def this(`type`: String, format: String, innerErr: js.Error) = this()
+  
+  var format: String = js.native
+  
+  var innerErr: js.Error = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var message: String = js.native
+  var message: String = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var name: String = js.native
+  var name: String = js.native
+  
+  var `type`: String = js.native
 }
-

@@ -1,27 +1,36 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParserOpts extends js.Object {
+trait ParserOpts extends StObject {
+  
   var loc: js.UndefOr[Boolean] = js.undefined
+  
   var range: js.UndefOr[Boolean] = js.undefined
+  
   var tolerant: js.UndefOr[Boolean] = js.undefined
 }
-
 object ParserOpts {
-  @scala.inline
-  def apply(
-    loc: js.UndefOr[Boolean] = js.undefined,
-    range: js.UndefOr[Boolean] = js.undefined,
-    tolerant: js.UndefOr[Boolean] = js.undefined
-  ): ParserOpts = {
+  
+  inline def apply(): ParserOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (!js.isUndefined(tolerant)) __obj.updateDynamic("tolerant")(tolerant.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOpts]
   }
+  
+  extension [Self <: ParserOpts](x: Self) {
+    
+    inline def setLoc(value: Boolean): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    
+    inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    
+    inline def setTolerant(value: Boolean): Self = StObject.set(x, "tolerant", value.asInstanceOf[js.Any])
+    
+    inline def setTolerantUndefined: Self = StObject.set(x, "tolerant", js.undefined)
+  }
 }
-

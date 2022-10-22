@@ -3,16 +3,18 @@ package typingsJapgolly.virtualDom
 import typingsJapgolly.virtualDom.VirtualDOM.VChild
 import typingsJapgolly.virtualDom.VirtualDOM.VNode
 import typingsJapgolly.virtualDom.VirtualDOM.createProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("virtual-dom/h", JSImport.Namespace)
-@js.native
-object hMod extends js.Object {
-  def apply(tagName: String, children: String): VNode = js.native
-  def apply(tagName: String, children: js.Array[VChild]): VNode = js.native
-  def apply(tagName: String, properties: createProperties, children: String): VNode = js.native
-  def apply(tagName: String, properties: createProperties, children: js.Array[VChild]): VNode = js.native
+object hMod {
+  
+  inline def apply(tagName: String, children: String): VNode = (^.asInstanceOf[js.Dynamic].apply(tagName.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(tagName: String, children: js.Array[VChild]): VNode = (^.asInstanceOf[js.Dynamic].apply(tagName.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(tagName: String, properties: createProperties, children: String): VNode = (^.asInstanceOf[js.Dynamic].apply(tagName.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  inline def apply(tagName: String, properties: createProperties, children: js.Array[VChild]): VNode = (^.asInstanceOf[js.Dynamic].apply(tagName.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  
+  @JSImport("virtual-dom/h", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

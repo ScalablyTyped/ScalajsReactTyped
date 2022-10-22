@@ -1,60 +1,67 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.auto
-import typingsJapgolly.antDesignReactNative.popoverMod.PopoverProps
-import typingsJapgolly.antDesignReactNative.popoverMod.default
-import typingsJapgolly.antDesignReactNative.popoverStyleMod.PopoverStyle
+import typingsJapgolly.antDesignReactNative.libPopoverMod.PopoverProps
+import typingsJapgolly.antDesignReactNative.libPopoverStyleMod.PopoverStyle
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
-import typingsJapgolly.reactNativeModalPopover.popoverGeometryMod.Placement
+import typingsJapgolly.reactNativeModalPopover.libPopoverGeometryMod.Placement
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Popover {
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    onSelect: (/* node */ js.Any, /* index */ js.UndefOr[Double]) => Callback = null,
-    overlay: VdomNode = null,
-    placement: Placement | auto = null,
-    renderOverlayComponent: /* node */ Node => CallbackTo[Node] = null,
-    styles: Partial[PopoverStyle] = null,
-    triggerStyle: StyleProp[ViewStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PopoverProps, default, Unit, PopoverProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2((t0: /* node */ js.Any, t1: /* index */ js.UndefOr[scala.Double]) => onSelect(t0, t1).runNow()))
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.rawNode.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (renderOverlayComponent != null) __obj.updateDynamic("renderOverlayComponent")(js.Any.fromFunction1((t0: /* node */ japgolly.scalajs.react.raw.React.Node) => renderOverlayComponent(t0).runNow()))
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (triggerStyle != null) __obj.updateDynamic("triggerStyle")(triggerStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.popoverMod.PopoverProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.popoverMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.popoverMod.PopoverProps])(children: _*)
-  }
-  @JSImport("@ant-design/react-native/lib/popover", JSImport.Default)
+  @JSImport("@ant-design/react-native", "Popover")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.Popover] {
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def duration(value: Double): this.type = set("duration", value.asInstanceOf[js.Any])
+    
+    inline def easing(value: /* show */ Boolean => js.Function1[/* value */ Double, Double]): this.type = set("easing", js.Any.fromFunction1(value))
+    
+    inline def onDismiss(value: Callback): this.type = set("onDismiss", value.toJsFn)
+    
+    inline def onSelect(value: (/* node */ Any, /* index */ js.UndefOr[Double]) => Callback): this.type = set("onSelect", js.Any.fromFunction2((t0: /* node */ Any, t1: /* index */ js.UndefOr[Double]) => (value(t0, t1)).runNow()))
+    
+    inline def overlay(value: VdomNode): this.type = set("overlay", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def overlayNull: this.type = set("overlay", null)
+    
+    inline def overlayVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("overlay", js.Array(value*))
+    
+    inline def overlayVdomElement(value: VdomElement): this.type = set("overlay", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def placement(value: Placement | auto): this.type = set("placement", value.asInstanceOf[js.Any])
+    
+    inline def renderOverlayComponent(value: (/* node */ Node, /* closePopover */ js.Function0[Unit]) => Node): this.type = set("renderOverlayComponent", js.Any.fromFunction2(value))
+    
+    inline def styles(value: Partial[PopoverStyle]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def triggerStyle(value: StyleProp[ViewStyle]): this.type = set("triggerStyle", value.asInstanceOf[js.Any])
+    
+    inline def triggerStyleNull: this.type = set("triggerStyle", null)
+    
+    inline def useNativeDriver(value: Boolean): this.type = set("useNativeDriver", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Popover.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PopoverProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

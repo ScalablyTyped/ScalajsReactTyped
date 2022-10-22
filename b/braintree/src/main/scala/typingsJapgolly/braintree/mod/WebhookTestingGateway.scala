@@ -1,22 +1,22 @@
 package typingsJapgolly.braintree.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebhookTestingGateway extends js.Object {
+trait WebhookTestingGateway extends StObject {
+  
   def sampleNotification(kind: WebhookNotificationKind, id: String): js.Promise[SampleNotification]
 }
-
 object WebhookTestingGateway {
-  @scala.inline
-  def apply(
-    sampleNotification: (WebhookNotificationKind, String) => CallbackTo[js.Promise[SampleNotification]]
-  ): WebhookTestingGateway = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sampleNotification")(js.Any.fromFunction2((t0: typingsJapgolly.braintree.mod.WebhookNotificationKind, t1: java.lang.String) => sampleNotification(t0, t1).runNow()))
+  
+  inline def apply(sampleNotification: (WebhookNotificationKind, String) => js.Promise[SampleNotification]): WebhookTestingGateway = {
+    val __obj = js.Dynamic.literal(sampleNotification = js.Any.fromFunction2(sampleNotification))
     __obj.asInstanceOf[WebhookTestingGateway]
   }
+  
+  extension [Self <: WebhookTestingGateway](x: Self) {
+    
+    inline def setSampleNotification(value: (WebhookNotificationKind, String) => js.Promise[SampleNotification]): Self = StObject.set(x, "sampleNotification", js.Any.fromFunction2(value))
+  }
 }
-

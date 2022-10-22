@@ -1,17 +1,19 @@
 package typingsJapgolly.isNumber
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("is-number", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Will test to see if the argument is a valid number, excluding Infinity and NaN.
     * @param num Any value that should be tested for being a number
     * @returns true if the parameter is a valid number, otherwise false
     */
-  def apply(num: js.Any): Boolean = js.native
+  inline def apply(num: Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @JSImport("is-number", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

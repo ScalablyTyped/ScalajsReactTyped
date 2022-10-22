@@ -1,47 +1,37 @@
 package typingsJapgolly.chrome.chrome.cast.media
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextTrackEdgeType extends js.Object
-
+sealed trait TextTrackEdgeType extends StObject
 @JSGlobal("chrome.cast.media.TextTrackEdgeType")
 @js.native
-object TextTrackEdgeType extends js.Object {
-  @js.native
-  sealed trait DEPRESSED extends TextTrackEdgeType
+object TextTrackEdgeType extends StObject {
   
   @js.native
-  sealed trait DROP_SHADOW extends TextTrackEdgeType
+  sealed trait DEPRESSED
+    extends StObject
+       with TextTrackEdgeType
   
   @js.native
-  sealed trait NONE extends TextTrackEdgeType
+  sealed trait DROP_SHADOW
+    extends StObject
+       with TextTrackEdgeType
   
   @js.native
-  sealed trait OUTLINE extends TextTrackEdgeType
+  sealed trait NONE
+    extends StObject
+       with TextTrackEdgeType
   
   @js.native
-  sealed trait RAISED extends TextTrackEdgeType
+  sealed trait OUTLINE
+    extends StObject
+       with TextTrackEdgeType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[TextTrackEdgeType with String] = js.native
-  /* "DEPRESSED" */ @js.native
-  object DEPRESSED extends TopLevel[DEPRESSED with String]
-  
-  /* "DROP_SHADOW" */ @js.native
-  object DROP_SHADOW extends TopLevel[DROP_SHADOW with String]
-  
-  /* "NONE" */ @js.native
-  object NONE extends TopLevel[NONE with String]
-  
-  /* "OUTLINE" */ @js.native
-  object OUTLINE extends TopLevel[OUTLINE with String]
-  
-  /* "RAISED" */ @js.native
-  object RAISED extends TopLevel[RAISED with String]
-  
+  @js.native
+  sealed trait RAISED
+    extends StObject
+       with TextTrackEdgeType
 }
-

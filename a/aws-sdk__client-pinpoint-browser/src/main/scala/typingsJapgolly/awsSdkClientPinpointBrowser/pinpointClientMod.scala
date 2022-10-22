@@ -1,50 +1,36 @@
 package typingsJapgolly.awsSdkClientPinpointBrowser
 
-import org.scalajs.dom.raw.Blob
-import typingsJapgolly.awsSdkClientPinpointBrowser.inputTypesUnionMod.InputTypesUnion
-import typingsJapgolly.awsSdkClientPinpointBrowser.outputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientPinpointBrowser.pinpointConfigurationMod.PinpointConfiguration
 import typingsJapgolly.awsSdkClientPinpointBrowser.pinpointConfigurationMod.PinpointResolvedConfiguration
-import typingsJapgolly.awsSdkMiddlewareStack.mod.MiddlewareStack
-import typingsJapgolly.awsSdkTypes.commandMod.Command
+import typingsJapgolly.awsSdkClientPinpointBrowser.typesInputTypesUnionMod.InputTypesUnion
+import typingsJapgolly.awsSdkClientPinpointBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesCommandMod.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/PinpointClient", JSImport.Namespace)
-@js.native
-object pinpointClientMod extends js.Object {
+object pinpointClientMod {
+  
+  @JSImport("@aws-sdk/client-pinpoint-browser/PinpointClient", "PinpointClient")
   @js.native
-  class PinpointClient protected () extends js.Object {
+  open class PinpointClient protected () extends StObject {
     def this(configuration: PinpointConfiguration) = this()
-    val config: PinpointResolvedConfiguration = js.native
-    val middlewareStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob] = js.native
+    
+    /* protected */ val config: PinpointResolvedConfiguration = js.native
+    
     def destroy(): Unit = js.native
+    
+    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any = js.native
+    
     /**
       * This will need to be revised when the command interface lands.
       */
     def send[InputType /* <: InputTypesUnion */, OutputType /* <: OutputTypesUnion */](
-      command: Command[
-          InputTypesUnion, 
-          InputType, 
-          OutputTypesUnion, 
-          OutputType, 
-          PinpointResolvedConfiguration, 
-          Blob
-        ]
+      command: Command[InputTypesUnion, InputType, OutputTypesUnion, OutputType, PinpointResolvedConfiguration]
     ): js.Promise[OutputType] = js.native
     def send[InputType /* <: InputTypesUnion */, OutputType /* <: OutputTypesUnion */](
-      command: Command[
-          InputTypesUnion, 
-          InputType, 
-          OutputTypesUnion, 
-          OutputType, 
-          PinpointResolvedConfiguration, 
-          Blob
-        ],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[OutputType], Unit]
+      command: Command[InputTypesUnion, InputType, OutputTypesUnion, OutputType, PinpointResolvedConfiguration],
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
     ): Unit = js.native
   }
-  
 }
-

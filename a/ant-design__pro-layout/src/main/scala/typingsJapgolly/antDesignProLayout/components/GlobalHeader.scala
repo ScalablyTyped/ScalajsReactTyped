@@ -1,63 +1,134 @@
 package typingsJapgolly.antDesignProLayout.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.ReactMouseEventFrom
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignProLayout.globalHeaderMod.GlobalHeaderProps
-import typingsJapgolly.antDesignProLayout.globalHeaderMod.default
-import typingsJapgolly.antDesignProLayout.typingsMod.WithFalse
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignProLayout.anon.AutoClose
+import typingsJapgolly.antDesignProLayout.anon.AvatarPropstitleReactNode
+import typingsJapgolly.antDesignProLayout.antDesignProLayoutBooleans.`false`
+import typingsJapgolly.antDesignProLayout.antDesignProLayoutStrings.group
+import typingsJapgolly.antDesignProLayout.antDesignProLayoutStrings.header
+import typingsJapgolly.antDesignProLayout.antDesignProLayoutStrings.light
+import typingsJapgolly.antDesignProLayout.antDesignProLayoutStrings.mix
+import typingsJapgolly.antDesignProLayout.antDesignProLayoutStrings.realDark
+import typingsJapgolly.antDesignProLayout.antDesignProLayoutStrings.side
+import typingsJapgolly.antDesignProLayout.antDesignProLayoutStrings.sider
+import typingsJapgolly.antDesignProLayout.antDesignProLayoutStrings.sub
+import typingsJapgolly.antDesignProLayout.antDesignProLayoutStrings.top
+import typingsJapgolly.antDesignProLayout.esComponentsGlobalHeaderMod.GlobalHeaderProps
+import typingsJapgolly.antDesignProLayout.esComponentsHeaderMod.HeaderViewProps
+import typingsJapgolly.antDesignProLayout.esComponentsSiderMenuSiderMenuMod.PrivateSiderMenuProps
+import typingsJapgolly.antDesignProLayout.esDefaultSettingsMod.ContentWidth
+import typingsJapgolly.antDesignProLayout.esTypingsMod.MenuDataItem
+import typingsJapgolly.antDesignProLayout.esTypingsMod.WithFalse
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GlobalHeader {
-  def apply(
-    className: String = null,
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    collapsedButtonRender: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], Node]] = null,
-    isMobile: js.UndefOr[Boolean] = js.undefined,
-    logo: VdomNode = null,
-    menuHeaderRender: WithFalse[
-      js.Function3[/* logo */ Node, /* title */ Node, /* props */ js.UndefOr[GlobalHeaderProps], Node]
-    ] = null,
-    menuRender: /* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/lib/BasicLayout.BasicLayoutProps['menuRender'] */ js.Any = null,
-    onCollapse: /* collapsed */ Boolean => Callback = null,
-    rightContentRender: WithFalse[js.Function1[GlobalHeaderProps, Node]] = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[GlobalHeaderProps, default, Unit, GlobalHeaderProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (collapsedButtonRender != null) __obj.updateDynamic("collapsedButtonRender")(collapsedButtonRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.asInstanceOf[js.Any])
-    if (logo != null) __obj.updateDynamic("logo")(logo.rawNode.asInstanceOf[js.Any])
-    if (menuHeaderRender != null) __obj.updateDynamic("menuHeaderRender")(menuHeaderRender.asInstanceOf[js.Any])
-    if (menuRender != null) __obj.updateDynamic("menuRender")(menuRender.asInstanceOf[js.Any])
-    if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1((t0: /* collapsed */ scala.Boolean) => onCollapse(t0).runNow()))
-    if (rightContentRender != null) __obj.updateDynamic("rightContentRender")(rightContentRender.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignProLayout.globalHeaderMod.GlobalHeaderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignProLayout.globalHeaderMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignProLayout.globalHeaderMod.GlobalHeaderProps])(children: _*)
+  inline def apply(matchMenuKeys: js.Array[String]): Builder = {
+    val __props = js.Dynamic.literal(matchMenuKeys = matchMenuKeys.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[GlobalHeaderProps & PrivateSiderMenuProps]))
   }
-  @JSImport("@ant-design/pro-layout/lib/GlobalHeader", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("@ant-design/pro-layout/es/components/GlobalHeader", "GlobalHeader")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def actionsRender(value: WithFalse[js.Function1[/* props */ HeaderViewProps, js.Array[Node]]]): this.type = set("actionsRender", value.asInstanceOf[js.Any])
+    
+    inline def actionsRenderFunction1(value: /* props */ HeaderViewProps => js.Array[Node]): this.type = set("actionsRender", js.Any.fromFunction1(value))
+    
+    inline def avatarProps(value: WithFalse[AvatarPropstitleReactNode]): this.type = set("avatarProps", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def collapsed(value: Boolean): this.type = set("collapsed", value.asInstanceOf[js.Any])
+    
+    inline def collapsedButtonRender(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/SiderMenu.SiderMenuProps['collapsedButtonRender'] */ js.Any
+    ): this.type = set("collapsedButtonRender", value.asInstanceOf[js.Any])
+    
+    inline def colorPrimary(value: String): this.type = set("colorPrimary", value.asInstanceOf[js.Any])
+    
+    inline def colorWeak(value: Boolean): this.type = set("colorWeak", value.asInstanceOf[js.Any])
+    
+    inline def contentWidth(value: ContentWidth): this.type = set("contentWidth", value.asInstanceOf[js.Any])
+    
+    inline def fixSiderbar(value: Boolean): this.type = set("fixSiderbar", value.asInstanceOf[js.Any])
+    
+    inline def fixedHeader(value: Boolean): this.type = set("fixedHeader", value.asInstanceOf[js.Any])
+    
+    inline def headerContentRender(value: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ Node, Node]]): this.type = set("headerContentRender", value.asInstanceOf[js.Any])
+    
+    inline def headerContentRenderFunction2(value: (/* props */ HeaderViewProps, /* defaultDom */ Node) => Node): this.type = set("headerContentRender", js.Any.fromFunction2(value))
+    
+    inline def iconfontUrl(value: String): this.type = set("iconfontUrl", value.asInstanceOf[js.Any])
+    
+    inline def isMobile(value: Boolean): this.type = set("isMobile", value.asInstanceOf[js.Any])
+    
+    inline def layout(value: side | top | mix): this.type = set("layout", value.asInstanceOf[js.Any])
+    
+    inline def logo(value: VdomNode): this.type = set("logo", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def logoNull: this.type = set("logo", null)
+    
+    inline def logoVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("logo", js.Array(value*))
+    
+    inline def logoVdomElement(value: VdomElement): this.type = set("logo", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def menu(value: AutoClose): this.type = set("menu", value.asInstanceOf[js.Any])
+    
+    inline def menuData(value: js.Array[MenuDataItem]): this.type = set("menuData", value.asInstanceOf[js.Any])
+    
+    inline def menuDataVarargs(value: MenuDataItem*): this.type = set("menuData", js.Array(value*))
+    
+    inline def menuHeaderRender(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @ant-design/pro-layout.@ant-design/pro-layout/es/components/SiderMenu/SiderMenu.SiderMenuProps['menuHeaderRender'] */ js.Any
+    ): this.type = set("menuHeaderRender", value.asInstanceOf[js.Any])
+    
+    inline def menuRender(value: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ Node, Node]]): this.type = set("menuRender", value.asInstanceOf[js.Any])
+    
+    inline def menuRenderFunction2(value: (/* props */ HeaderViewProps, /* defaultDom */ Node) => Node): this.type = set("menuRender", js.Any.fromFunction2(value))
+    
+    inline def menuRenderType(value: header | sider): this.type = set("menuRenderType", value.asInstanceOf[js.Any])
+    
+    inline def navTheme(value: realDark | light): this.type = set("navTheme", value.asInstanceOf[js.Any])
+    
+    inline def onCollapse(value: /* collapsed */ Boolean => Callback): this.type = set("onCollapse", js.Any.fromFunction1((t0: /* collapsed */ Boolean) => value(t0).runNow()))
+    
+    inline def onMenuHeaderClick(value: /* e */ ReactMouseEventFrom[HTMLDivElement] => Callback): this.type = set("onMenuHeaderClick", js.Any.fromFunction1((t0: /* e */ ReactMouseEventFrom[HTMLDivElement]) => value(t0).runNow()))
+    
+    inline def originCollapsed(value: Boolean): this.type = set("originCollapsed", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def rightContentRender(value: WithFalse[js.Function1[/* props */ HeaderViewProps, Node]]): this.type = set("rightContentRender", value.asInstanceOf[js.Any])
+    
+    inline def rightContentRenderFunction1(value: /* props */ HeaderViewProps => Node): this.type = set("rightContentRender", js.Any.fromFunction1(value))
+    
+    inline def siderMenuType(value: sub | group): this.type = set("siderMenuType", value.asInstanceOf[js.Any])
+    
+    inline def splitMenus(value: Boolean): this.type = set("splitMenus", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String | `false`): this.type = set("title", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: GlobalHeaderProps & PrivateSiderMenuProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

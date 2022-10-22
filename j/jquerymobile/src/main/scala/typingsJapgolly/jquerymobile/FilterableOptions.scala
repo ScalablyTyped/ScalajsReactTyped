@@ -1,45 +1,70 @@
 package typingsJapgolly.jquerymobile
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilterableOptions extends js.Object {
-  var children: js.UndefOr[js.Any] = js.undefined
+trait FilterableOptions extends StObject {
+  
+  var children: js.UndefOr[Any] = js.undefined
+  
   var defaults: js.UndefOr[Boolean] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var enhanced: js.UndefOr[Boolean] = js.undefined
+  
   var filterCallback: js.UndefOr[js.Function2[/* index */ Double, /* searchValue */ js.UndefOr[String], Boolean]] = js.undefined
+  
   var filterPlaceholder: js.UndefOr[String] = js.undefined
+  
   var filterReveal: js.UndefOr[Boolean] = js.undefined
+  
   var filterTheme: js.UndefOr[String] = js.undefined
-  var input: js.Any
+  
+  var input: Any
 }
-
 object FilterableOptions {
-  @scala.inline
-  def apply(
-    input: js.Any,
-    children: js.Any = null,
-    defaults: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    enhanced: js.UndefOr[Boolean] = js.undefined,
-    filterCallback: (/* index */ Double, /* searchValue */ js.UndefOr[String]) => CallbackTo[Boolean] = null,
-    filterPlaceholder: String = null,
-    filterReveal: js.UndefOr[Boolean] = js.undefined,
-    filterTheme: String = null
-  ): FilterableOptions = {
+  
+  inline def apply(input: Any): FilterableOptions = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(enhanced)) __obj.updateDynamic("enhanced")(enhanced.asInstanceOf[js.Any])
-    if (filterCallback != null) __obj.updateDynamic("filterCallback")(js.Any.fromFunction2((t0: /* index */ scala.Double, t1: /* searchValue */ js.UndefOr[java.lang.String]) => filterCallback(t0, t1).runNow()))
-    if (filterPlaceholder != null) __obj.updateDynamic("filterPlaceholder")(filterPlaceholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterReveal)) __obj.updateDynamic("filterReveal")(filterReveal.asInstanceOf[js.Any])
-    if (filterTheme != null) __obj.updateDynamic("filterTheme")(filterTheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterableOptions]
   }
+  
+  extension [Self <: FilterableOptions](x: Self) {
+    
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setEnhanced(value: Boolean): Self = StObject.set(x, "enhanced", value.asInstanceOf[js.Any])
+    
+    inline def setEnhancedUndefined: Self = StObject.set(x, "enhanced", js.undefined)
+    
+    inline def setFilterCallback(value: (/* index */ Double, /* searchValue */ js.UndefOr[String]) => Boolean): Self = StObject.set(x, "filterCallback", js.Any.fromFunction2(value))
+    
+    inline def setFilterCallbackUndefined: Self = StObject.set(x, "filterCallback", js.undefined)
+    
+    inline def setFilterPlaceholder(value: String): Self = StObject.set(x, "filterPlaceholder", value.asInstanceOf[js.Any])
+    
+    inline def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
+    
+    inline def setFilterReveal(value: Boolean): Self = StObject.set(x, "filterReveal", value.asInstanceOf[js.Any])
+    
+    inline def setFilterRevealUndefined: Self = StObject.set(x, "filterReveal", js.undefined)
+    
+    inline def setFilterTheme(value: String): Self = StObject.set(x, "filterTheme", value.asInstanceOf[js.Any])
+    
+    inline def setFilterThemeUndefined: Self = StObject.set(x, "filterTheme", js.undefined)
+    
+    inline def setInput(value: Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for optional-js
 
-Typings are for version 2.1.1
+Typings are for version 2.3.0
 
 ## Library description:
 Optionals for JS - wrapper for possibly undefined values, inspired by Java Optional API
@@ -10,10 +10,10 @@ Optionals for JS - wrapper for possibly undefined values, inspired by Java Optio
 | ------------------ | :-------------: |
 | Full name          | optional-js |
 | Keywords           | optional, java, javascript |
-| # releases         | 6 |
-| # dependents       | 10 |
-| # downloads        | 2132649 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1158908.3333333333 |
+| # stars            | 75.0 |
 
 ## Links
 - [Homepage](https://github.com/JasonStorey/Optional.js)

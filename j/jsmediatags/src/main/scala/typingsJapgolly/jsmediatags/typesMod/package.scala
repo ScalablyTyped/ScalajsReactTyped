@@ -1,22 +1,26 @@
-package typingsJapgolly.jsmediatags
+package typingsJapgolly.jsmediatags.typesMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.jsmediatags.build2MediaFileReaderMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object typesMod {
-  type Byte = scala.Double
-  type ByteArray = js.Array[typingsJapgolly.jsmediatags.typesMod.Byte]
-  type DataType = js.Array[scala.Double] | typingsJapgolly.jsmediatags.typesMod.TypedArray | java.lang.String
-  type FrameReaderSignature = js.Function5[
-    /* offset */ scala.Double, 
-    /* length */ scala.Double, 
-    /* data */ typingsJapgolly.jsmediatags.mediaFileReaderMod.default, 
-    /* flags */ js.UndefOr[js.Any], 
-    /* id3header */ js.UndefOr[typingsJapgolly.jsmediatags.typesMod.TagHeader], 
-    js.Any
-  ]
-  type TagFrames = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.jsmediatags.typesMod.TagFrame]
-  type Tags = typingsJapgolly.jsmediatags.typesMod.ShortcutTags with typingsJapgolly.jsmediatags.typesMod.TagFrames
-  type TypedArray = scala.scalajs.js.typedarray.Int8Array | scala.scalajs.js.typedarray.Uint8Array | scala.scalajs.js.typedarray.Int16Array | scala.scalajs.js.typedarray.Uint16Array | scala.scalajs.js.typedarray.Int32Array | scala.scalajs.js.typedarray.Uint32Array | scala.scalajs.js.typedarray.Uint8ClampedArray | scala.scalajs.js.typedarray.Float32Array | scala.scalajs.js.typedarray.Float64Array
-}
+
+type Byte = Double
+
+type ByteArray = js.Array[Byte]
+
+type DataType = js.Array[Double] | TypedArray | String
+
+type FrameReaderSignature = js.Function5[
+/* offset */ Double, 
+/* length */ Double, 
+/* data */ default, 
+/* flags */ js.UndefOr[Any], 
+/* id3header */ js.UndefOr[TagHeader], 
+Any]
+
+type TagFrames = StringDictionary[TagFrame]
+
+type TypedArray = js.typedarray.Int8Array | js.typedarray.Uint8Array | js.typedarray.Int16Array | js.typedarray.Uint16Array | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Uint8ClampedArray | js.typedarray.Float32Array | js.typedarray.Float64Array

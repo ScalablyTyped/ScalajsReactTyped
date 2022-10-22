@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client events which can't be cancelled and allow the event's processing to be passed to the server side.
   */
-@JSGlobal("ASPxClientProcessingModeEventArgs")
-@js.native
-class ASPxClientProcessingModeEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientProcessingModeEventArgs object.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side. Initializes the ASPxClientProcessingModeEventArgs.processOnServer property.
-    */
-  def this(processOnServer: Boolean) = this()
+trait ASPxClientProcessingModeEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets or sets a value that specifies whether the event should be finally processed on the server side.
     */
-  var processOnServer: Boolean = js.native
+  var processOnServer: Boolean
 }
-
+object ASPxClientProcessingModeEventArgs {
+  
+  inline def apply(processOnServer: Boolean): ASPxClientProcessingModeEventArgs = {
+    val __obj = js.Dynamic.literal(processOnServer = processOnServer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientProcessingModeEventArgs]
+  }
+  
+  extension [Self <: ASPxClientProcessingModeEventArgs](x: Self) {
+    
+    inline def setProcessOnServer(value: Boolean): Self = StObject.set(x, "processOnServer", value.asInstanceOf[js.Any])
+  }
+}

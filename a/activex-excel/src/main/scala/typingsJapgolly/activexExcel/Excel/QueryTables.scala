@@ -1,25 +1,32 @@
 package typingsJapgolly.activexExcel.Excel
 
 import typingsJapgolly.activexAdodb.ADODB.Recordset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryTables extends js.Object {
-  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
+trait QueryTables extends StObject {
+  
   def apply(Index: String): QueryTable = js.native
   def apply(Index: Double): QueryTable = js.native
+  
   def Add(Connection: String, Destination: Range): QueryTable = js.native
   def Add(Connection: String, Destination: Range, Sql: String): QueryTable = js.native
   def Add(Connection: Recordset, Destination: Range): QueryTable = js.native
   def Add(Connection: typingsJapgolly.activexDao.DAO.Recordset, Destination: Range): QueryTable = js.native
   def Add(Connection: QueryTable, Destination: Range): QueryTable = js.native
+  
+  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def Item(Index: String): QueryTable = js.native
   def Item(Index: Double): QueryTable = js.native
-  def _Default(Index: js.Any): QueryTable = js.native
+  
+  val Parent: Any = js.native
+  
+  def _Default(Index: Any): QueryTable = js.native
 }
-

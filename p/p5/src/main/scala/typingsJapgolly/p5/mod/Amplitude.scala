@@ -1,11 +1,12 @@
 package typingsJapgolly.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Amplitude extends js.Object {
+trait Amplitude extends StObject {
+  
   /**
     *   Returns a single Amplitude reading at the moment
     *   it is called. For continuous readings, run in the
@@ -16,24 +17,28 @@ trait Amplitude extends js.Object {
     */
   def getLevel(): Double = js.native
   def getLevel(channel: Double): Double = js.native
+  
   /**
-    *   Connects to the p5sound instance (master output)
-    *   by default. Optionally, you can pass in a specific
+    *   Connects to the p5sound instance (main output) by
+    *   default. Optionally, you can pass in a specific
     *   source (i.e. a soundfile).
     *   @param [snd] set the sound source (optional,
-    *   defaults to master output)
+    *   defaults to main output)
     *   @param [smoothing] a range between 0.0 and 1.0 to
     *   smooth amplitude readings
     */
   def setInput(): Unit = js.native
-  def setInput(snd: js.Any): Unit = js.native
-  def setInput(snd: js.Any, smoothing: Double): Unit = js.native
+  def setInput(snd: Any): Unit = js.native
+  def setInput(snd: Any, smoothing: Double): Unit = js.native
+  def setInput(snd: Unit, smoothing: Double): Unit = js.native
+  
   /**
     *   Smooth Amplitude analysis by averaging with the
     *   last analysis frame. Off by default.
     *   @param set smoothing from 0.0 <= 1
     */
   def smooth(set: Double): Unit = js.native
+  
   /**
     *   Determines whether the results of
     *   Amplitude.process() will be Normalized. To
@@ -52,4 +57,3 @@ trait Amplitude extends js.Object {
   def toggleNormalize(): Unit = js.native
   def toggleNormalize(boolean: Boolean): Unit = js.native
 }
-

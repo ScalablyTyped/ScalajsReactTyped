@@ -1,32 +1,34 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SortDataOption extends js.Object
-
+sealed trait SortDataOption extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.SortDataOption")
 @js.native
-object SortDataOption extends js.Object {
+object SortDataOption extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait normal extends SortDataOption
+  sealed trait normal
+    extends StObject
+       with SortDataOption
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait textAsNumber extends SortDataOption
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SortDataOption with String] = js.native
-  /* "Normal" */ @js.native
-  object normal extends TopLevel[normal with String]
-  
-  /* "TextAsNumber" */ @js.native
-  object textAsNumber extends TopLevel[textAsNumber with String]
-  
+  sealed trait textAsNumber
+    extends StObject
+       with SortDataOption
 }
-

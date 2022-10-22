@@ -1,10 +1,7 @@
 package typingsJapgolly.box2d.Box2D.Collision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Box2D.Collision.b2DynamicTreeNode")
-@js.native
-class b2DynamicTreeNode () extends js.Object
-
+trait b2DynamicTreeNode extends StObject

@@ -1,90 +1,105 @@
 package typingsJapgolly.geopattern
 
 import typingsJapgolly.geopattern.mod.GeneratorType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geopatternStrings {
-  @js.native
-  sealed trait chevrons extends GeneratorType
   
   @js.native
-  sealed trait concentricCircles extends GeneratorType
+  sealed trait chevrons
+    extends StObject
+       with GeneratorType
+  inline def chevrons: chevrons = "chevrons".asInstanceOf[chevrons]
   
   @js.native
-  sealed trait diamonds extends GeneratorType
+  sealed trait concentricCircles
+    extends StObject
+       with GeneratorType
+  inline def concentricCircles: concentricCircles = "concentricCircles".asInstanceOf[concentricCircles]
   
   @js.native
-  sealed trait hexagons extends GeneratorType
+  sealed trait diamonds
+    extends StObject
+       with GeneratorType
+  inline def diamonds: diamonds = "diamonds".asInstanceOf[diamonds]
   
   @js.native
-  sealed trait mosaicSquares extends GeneratorType
+  sealed trait hexagons
+    extends StObject
+       with GeneratorType
+  inline def hexagons: hexagons = "hexagons".asInstanceOf[hexagons]
   
   @js.native
-  sealed trait nestedSquares extends GeneratorType
+  sealed trait mosaicSquares
+    extends StObject
+       with GeneratorType
+  inline def mosaicSquares: mosaicSquares = "mosaicSquares".asInstanceOf[mosaicSquares]
   
   @js.native
-  sealed trait octagons extends GeneratorType
+  sealed trait nestedSquares
+    extends StObject
+       with GeneratorType
+  inline def nestedSquares: nestedSquares = "nestedSquares".asInstanceOf[nestedSquares]
   
   @js.native
-  sealed trait overlappingCircles extends GeneratorType
+  sealed trait octogons
+    extends StObject
+       with GeneratorType
+  inline def octogons: octogons = "octogons".asInstanceOf[octogons]
   
   @js.native
-  sealed trait overlappingRings extends GeneratorType
+  sealed trait overlappingCircles
+    extends StObject
+       with GeneratorType
+  inline def overlappingCircles: overlappingCircles = "overlappingCircles".asInstanceOf[overlappingCircles]
   
   @js.native
-  sealed trait plaid extends GeneratorType
+  sealed trait overlappingRings
+    extends StObject
+       with GeneratorType
+  inline def overlappingRings: overlappingRings = "overlappingRings".asInstanceOf[overlappingRings]
   
   @js.native
-  sealed trait plusSigns extends GeneratorType
+  sealed trait plaid
+    extends StObject
+       with GeneratorType
+  inline def plaid: plaid = "plaid".asInstanceOf[plaid]
   
   @js.native
-  sealed trait sineWaves extends GeneratorType
+  sealed trait plusSigns
+    extends StObject
+       with GeneratorType
+  inline def plusSigns: plusSigns = "plusSigns".asInstanceOf[plusSigns]
   
   @js.native
-  sealed trait squares extends GeneratorType
+  sealed trait sineWaves
+    extends StObject
+       with GeneratorType
+  inline def sineWaves: sineWaves = "sineWaves".asInstanceOf[sineWaves]
   
   @js.native
-  sealed trait tessellation extends GeneratorType
+  sealed trait squares
+    extends StObject
+       with GeneratorType
+  inline def squares: squares = "squares".asInstanceOf[squares]
   
   @js.native
-  sealed trait triangles extends GeneratorType
+  sealed trait tessellation
+    extends StObject
+       with GeneratorType
+  inline def tessellation: tessellation = "tessellation".asInstanceOf[tessellation]
   
   @js.native
-  sealed trait xes extends GeneratorType
+  sealed trait triangles
+    extends StObject
+       with GeneratorType
+  inline def triangles: triangles = "triangles".asInstanceOf[triangles]
   
-  @scala.inline
-  def chevrons: chevrons = "chevrons".asInstanceOf[chevrons]
-  @scala.inline
-  def concentricCircles: concentricCircles = "concentricCircles".asInstanceOf[concentricCircles]
-  @scala.inline
-  def diamonds: diamonds = "diamonds".asInstanceOf[diamonds]
-  @scala.inline
-  def hexagons: hexagons = "hexagons".asInstanceOf[hexagons]
-  @scala.inline
-  def mosaicSquares: mosaicSquares = "mosaicSquares".asInstanceOf[mosaicSquares]
-  @scala.inline
-  def nestedSquares: nestedSquares = "nestedSquares".asInstanceOf[nestedSquares]
-  @scala.inline
-  def octagons: octagons = "octagons".asInstanceOf[octagons]
-  @scala.inline
-  def overlappingCircles: overlappingCircles = "overlappingCircles".asInstanceOf[overlappingCircles]
-  @scala.inline
-  def overlappingRings: overlappingRings = "overlappingRings".asInstanceOf[overlappingRings]
-  @scala.inline
-  def plaid: plaid = "plaid".asInstanceOf[plaid]
-  @scala.inline
-  def plusSigns: plusSigns = "plusSigns".asInstanceOf[plusSigns]
-  @scala.inline
-  def sineWaves: sineWaves = "sineWaves".asInstanceOf[sineWaves]
-  @scala.inline
-  def squares: squares = "squares".asInstanceOf[squares]
-  @scala.inline
-  def tessellation: tessellation = "tessellation".asInstanceOf[tessellation]
-  @scala.inline
-  def triangles: triangles = "triangles".asInstanceOf[triangles]
-  @scala.inline
-  def xes: xes = "xes".asInstanceOf[xes]
+  @js.native
+  sealed trait xes
+    extends StObject
+       with GeneratorType
+  inline def xes: xes = "xes".asInstanceOf[xes]
 }
-

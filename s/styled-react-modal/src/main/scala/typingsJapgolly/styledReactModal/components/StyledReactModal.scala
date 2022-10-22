@@ -1,57 +1,52 @@
 package typingsJapgolly.styledReactModal.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLDivElement
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.styledReactModal.mod.ModalProps
 import typingsJapgolly.styledReactModal.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StyledReactModal {
-  def apply(
-    isOpen: Boolean,
-    afterClose: js.UndefOr[Callback] = js.undefined,
-    afterOpen: js.UndefOr[Callback] = js.undefined,
-    allowScroll: js.UndefOr[Boolean] = js.undefined,
-    backgroundProps: js.Object = null,
-    beforeClose: js.Promise[Unit] | js.Function0[Unit] = null,
-    beforeOpen: js.Promise[Unit] | js.Function0[Unit] = null,
-    onBackgroundClick: /* event */ ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onEscapeKeydown: /* event */ Event_ => Callback = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ModalProps, default, Unit, ModalProps] = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
   
-      afterClose.foreach(p => __obj.updateDynamic("afterClose")(p.toJsFn))
-    afterOpen.foreach(p => __obj.updateDynamic("afterOpen")(p.toJsFn))
-    if (!js.isUndefined(allowScroll)) __obj.updateDynamic("allowScroll")(allowScroll.asInstanceOf[js.Any])
-    if (backgroundProps != null) __obj.updateDynamic("backgroundProps")(backgroundProps.asInstanceOf[js.Any])
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose.asInstanceOf[js.Any])
-    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen.asInstanceOf[js.Any])
-    if (onBackgroundClick != null) __obj.updateDynamic("onBackgroundClick")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onBackgroundClick(t0).runNow()))
-    if (onEscapeKeydown != null) __obj.updateDynamic("onEscapeKeydown")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.std.Event_) => onEscapeKeydown(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.styledReactModal.mod.ModalProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.styledReactModal.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.styledReactModal.mod.ModalProps])(children: _*)
+  inline def apply(isOpen: Boolean): Builder = {
+    val __props = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ModalProps]))
   }
+  
   @JSImport("styled-react-modal", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def afterClose(value: Callback): this.type = set("afterClose", value.toJsFn)
+    
+    inline def afterOpen(value: Callback): this.type = set("afterOpen", value.toJsFn)
+    
+    inline def allowScroll(value: Boolean): this.type = set("allowScroll", value.asInstanceOf[js.Any])
+    
+    inline def backgroundProps(value: js.Object): this.type = set("backgroundProps", value.asInstanceOf[js.Any])
+    
+    inline def beforeClose(value: js.Promise[Unit] | js.Function0[Unit]): this.type = set("beforeClose", value.asInstanceOf[js.Any])
+    
+    inline def beforeCloseCallback(value: Callback): this.type = set("beforeClose", value.toJsFn)
+    
+    inline def beforeOpen(value: js.Promise[Unit] | js.Function0[Unit]): this.type = set("beforeOpen", value.asInstanceOf[js.Any])
+    
+    inline def beforeOpenCallback(value: Callback): this.type = set("beforeOpen", value.toJsFn)
+    
+    inline def onBackgroundClick(value: /* event */ ReactMouseEventFrom[HTMLDivElement] => Callback): this.type = set("onBackgroundClick", js.Any.fromFunction1((t0: /* event */ ReactMouseEventFrom[HTMLDivElement]) => value(t0).runNow()))
+    
+    inline def onEscapeKeydown(value: /* event */ Event => Callback): this.type = set("onEscapeKeydown", js.Any.fromFunction1((t0: /* event */ Event) => value(t0).runNow()))
+  }
+  
+  def withProps(p: ModalProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.mapboxGl.mapboxGlStrings.Unknown
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.mapboxGl.mapboxGlStrings.SpriteJSON
   - typingsJapgolly.mapboxGl.mapboxGlStrings.Image
 */
-trait ResourceType extends js.Object
-
+trait ResourceType extends StObject
 object ResourceType {
-  @scala.inline
-  def Glyphs: typingsJapgolly.mapboxGl.mapboxGlStrings.Glyphs = this.cast("Glyphs")
-  @scala.inline
-  def Image: typingsJapgolly.mapboxGl.mapboxGlStrings.Image = this.cast("Image")
-  @scala.inline
-  def Source: typingsJapgolly.mapboxGl.mapboxGlStrings.Source = this.cast("Source")
-  @scala.inline
-  def SpriteImage: typingsJapgolly.mapboxGl.mapboxGlStrings.SpriteImage = this.cast("SpriteImage")
-  @scala.inline
-  def SpriteJSON: typingsJapgolly.mapboxGl.mapboxGlStrings.SpriteJSON = this.cast("SpriteJSON")
-  @scala.inline
-  def Style: typingsJapgolly.mapboxGl.mapboxGlStrings.Style = this.cast("Style")
-  @scala.inline
-  def Tile: typingsJapgolly.mapboxGl.mapboxGlStrings.Tile = this.cast("Tile")
-  @scala.inline
-  def Unknown: typingsJapgolly.mapboxGl.mapboxGlStrings.Unknown = this.cast("Unknown")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Glyphs: typingsJapgolly.mapboxGl.mapboxGlStrings.Glyphs = "Glyphs".asInstanceOf[typingsJapgolly.mapboxGl.mapboxGlStrings.Glyphs]
+  
+  inline def Image: typingsJapgolly.mapboxGl.mapboxGlStrings.Image = "Image".asInstanceOf[typingsJapgolly.mapboxGl.mapboxGlStrings.Image]
+  
+  inline def Source: typingsJapgolly.mapboxGl.mapboxGlStrings.Source = "Source".asInstanceOf[typingsJapgolly.mapboxGl.mapboxGlStrings.Source]
+  
+  inline def SpriteImage: typingsJapgolly.mapboxGl.mapboxGlStrings.SpriteImage = "SpriteImage".asInstanceOf[typingsJapgolly.mapboxGl.mapboxGlStrings.SpriteImage]
+  
+  inline def SpriteJSON: typingsJapgolly.mapboxGl.mapboxGlStrings.SpriteJSON = "SpriteJSON".asInstanceOf[typingsJapgolly.mapboxGl.mapboxGlStrings.SpriteJSON]
+  
+  inline def Style: typingsJapgolly.mapboxGl.mapboxGlStrings.Style = "Style".asInstanceOf[typingsJapgolly.mapboxGl.mapboxGlStrings.Style]
+  
+  inline def Tile: typingsJapgolly.mapboxGl.mapboxGlStrings.Tile = "Tile".asInstanceOf[typingsJapgolly.mapboxGl.mapboxGlStrings.Tile]
+  
+  inline def Unknown: typingsJapgolly.mapboxGl.mapboxGlStrings.Unknown = "Unknown".asInstanceOf[typingsJapgolly.mapboxGl.mapboxGlStrings.Unknown]
 }
-

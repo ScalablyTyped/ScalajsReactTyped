@@ -10,10 +10,10 @@ A simple spinner
 | ------------------ | :-------------: |
 | Full name          | cli-spinner |
 | Keywords           | cli |
-| # releases         | 3 |
-| # dependents       | 677 |
-| # downloads        | 4987560 |
-| # stars            | 27 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 944856.6666666666 |
+| # stars            | 251.0 |
 
 ## Links
 - [Homepage](https://github.com/helloIAmPau/node-spinner#readme)

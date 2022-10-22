@@ -1,7 +1,7 @@
 
 # Scala.js typings for monaco-editor
 
-Typings are for version 0.18.1
+Typings are for version 0.34.0
 
 ## Library description:
 A browser based code editor
@@ -10,15 +10,15 @@ A browser based code editor
 | ------------------ | :-------------: |
 | Full name          | monaco-editor |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 190 |
-| # downloads        | 4425449 |
-| # stars            | 9 |
+| # releases         | 261 |
+| # dependents       | 0.0 |
+| # downloads        | 2306695.3333333335 |
+| # stars            | 31490.0 |
 
 ## Links
-- [Homepage](https://github.com/Microsoft/monaco-editor#readme)
-- [Bugs](https://github.com/Microsoft/monaco-editor/issues)
-- [Repository](https://github.com/Microsoft/monaco-editor)
+- [Homepage](https://github.com/microsoft/monaco-editor#readme)
+- [Bugs](https://github.com/microsoft/monaco-editor/issues)
+- [Repository](https://github.com/microsoft/monaco-editor)
 - [Npm](https://www.npmjs.com/package/monaco-editor)
     
 

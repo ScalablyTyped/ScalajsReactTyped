@@ -1,18 +1,30 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Calls
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for querying the phone call entries. */
-@JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryEntryQueryOptions")
-@js.native
-/** Creates a new PhoneCallHistoryEntryQueryOptions object. */
-class PhoneCallHistoryEntryQueryOptions () extends js.Object {
+trait PhoneCallHistoryEntryQueryOptions extends StObject {
+  
   /** Gets or sets the query filter based on the type of media. */
-  var desiredMedia: PhoneCallHistoryEntryQueryDesiredMedia = js.native
+  var desiredMedia: PhoneCallHistoryEntryQueryDesiredMedia
+  
   /** Get the query filter based on the source ID of the phone call entry. */
-  var sourceIds: IVector[String] = js.native
+  var sourceIds: IVector[String]
 }
-
+object PhoneCallHistoryEntryQueryOptions {
+  
+  inline def apply(desiredMedia: PhoneCallHistoryEntryQueryDesiredMedia, sourceIds: IVector[String]): PhoneCallHistoryEntryQueryOptions = {
+    val __obj = js.Dynamic.literal(desiredMedia = desiredMedia.asInstanceOf[js.Any], sourceIds = sourceIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhoneCallHistoryEntryQueryOptions]
+  }
+  
+  extension [Self <: PhoneCallHistoryEntryQueryOptions](x: Self) {
+    
+    inline def setDesiredMedia(value: PhoneCallHistoryEntryQueryDesiredMedia): Self = StObject.set(x, "desiredMedia", value.asInstanceOf[js.Any])
+    
+    inline def setSourceIds(value: IVector[String]): Self = StObject.set(x, "sourceIds", value.asInstanceOf[js.Any])
+  }
+}

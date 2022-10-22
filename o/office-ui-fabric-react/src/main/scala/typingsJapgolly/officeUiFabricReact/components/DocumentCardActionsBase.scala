@@ -1,59 +1,53 @@
 package typingsJapgolly.officeUiFabricReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.officeUiFabricReact.buttonTypesMod.IButtonProps
-import typingsJapgolly.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActions
-import typingsJapgolly.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActionsProps
-import typingsJapgolly.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActionsStyleProps
-import typingsJapgolly.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActionsStyles
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsButtonButtonDottypesMod.IButtonProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardActionsDottypesMod.IDocumentCardActions
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardActionsDottypesMod.IDocumentCardActionsProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardActionsDottypesMod.IDocumentCardActionsStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardActionsDottypesMod.IDocumentCardActionsStyles
 import typingsJapgolly.std.Number
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DocumentCardActionsBase {
-  def apply(
-    actions: js.Array[IButtonProps],
-    className: String = null,
-    componentRef: IRefObject[IDocumentCardActions] = null,
-    styles: IStyleFunctionOrObject[IDocumentCardActionsStyleProps, IDocumentCardActionsStyles] = null,
-    theme: ITheme = null,
-    views: Number = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IDocumentCardActionsProps, 
-    typingsJapgolly.officeUiFabricReact.documentCardActionsBaseMod.DocumentCardActionsBase, 
-    Unit, 
-    IDocumentCardActionsProps
-  ] = {
-    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActionsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.officeUiFabricReact.documentCardActionsBaseMod.DocumentCardActionsBase](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActionsProps])(children: _*)
+  inline def apply(actions: js.Array[IButtonProps]): Builder = {
+    val __props = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IDocumentCardActionsProps]))
   }
+  
   @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardActions.base", "DocumentCardActionsBase")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[
+          typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardActionsDotbaseMod.DocumentCardActionsBase
+        ] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[IDocumentCardActions]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ IDocumentCardActions | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ IDocumentCardActions | Null) => value(t0).runNow()))
+    
+    inline def styles(value: IStyleFunctionOrObject[IDocumentCardActionsStyleProps, IDocumentCardActionsStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IDocumentCardActionsStyleProps => DeepPartial[IDocumentCardActionsStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def views(value: Number): this.type = set("views", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IDocumentCardActionsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

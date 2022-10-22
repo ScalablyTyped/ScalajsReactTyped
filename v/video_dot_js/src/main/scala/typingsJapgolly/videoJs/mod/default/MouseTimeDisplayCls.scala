@@ -1,14 +1,17 @@
 package typingsJapgolly.videoJs.mod.default
 
 import typingsJapgolly.videoJs.mod.videojs.ComponentOptions
+import typingsJapgolly.videoJs.mod.videojs.MouseTimeDisplay
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "MouseTimeDisplay")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js", "default.MouseTimeDisplay")
 @js.native
-class MouseTimeDisplayCls protected ()
-  extends typingsJapgolly.videoJs.mod.videojs.MouseTimeDisplay {
+open class MouseTimeDisplayCls protected ()
+  extends StObject
+     with MouseTimeDisplay {
   /**
     * Creates an instance of this class.
     *
@@ -21,4 +24,3 @@ class MouseTimeDisplayCls protected ()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player) = this()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player, options: ComponentOptions) = this()
 }
-

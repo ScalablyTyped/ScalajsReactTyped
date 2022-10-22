@@ -1,42 +1,29 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.layerMod.LayersManagerProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.anon.AppContainer
+import typingsJapgolly.baseui.layerTypesMod.LayersManagerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LayersManager {
-  def apply(
-    zIndex: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    LayersManagerProps, 
-    typingsJapgolly.baseui.layerMod.LayersManager, 
-    Unit, 
-    LayersManagerProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.layerMod.LayersManagerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.layerMod.LayersManager](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.layerMod.LayersManagerProps])(children: _*)
-  }
   @JSImport("baseui/layer", "LayersManager")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.layerMod.LayersManager] {
+    
+    inline def overrides(value: AppContainer): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def zIndex(value: Double): this.type = set("zIndex", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: LayersManager.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: LayersManagerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

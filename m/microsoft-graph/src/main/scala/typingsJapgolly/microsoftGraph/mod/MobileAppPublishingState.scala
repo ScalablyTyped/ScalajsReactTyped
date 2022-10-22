@@ -1,24 +1,20 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.notPublished
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.processing
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.published
 */
-trait MobileAppPublishingState extends js.Object
-
+trait MobileAppPublishingState extends StObject
 object MobileAppPublishingState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def notPublished: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notPublished = this.cast("notPublished")
-  @scala.inline
-  def processing: typingsJapgolly.microsoftGraph.microsoftGraphStrings.processing = this.cast("processing")
-  @scala.inline
-  def published: typingsJapgolly.microsoftGraph.microsoftGraphStrings.published = this.cast("published")
+  
+  inline def notPublished: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notPublished = "notPublished".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notPublished]
+  
+  inline def processing: typingsJapgolly.microsoftGraph.microsoftGraphStrings.processing = "processing".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.processing]
+  
+  inline def published: typingsJapgolly.microsoftGraph.microsoftGraphStrings.published = "published".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.published]
 }
-

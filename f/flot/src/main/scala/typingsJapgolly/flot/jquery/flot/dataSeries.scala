@@ -1,42 +1,26 @@
 package typingsJapgolly.flot.jquery.flot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dataSeries extends seriesOptions {
-  var data: js.Array[_]
+trait dataSeries
+  extends StObject
+     with seriesOptions {
+  
+  var data: js.Array[Any]
 }
-
 object dataSeries {
-  @scala.inline
-  def apply(
-    data: js.Array[_],
-    bars: barsOptions = null,
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    color: js.Any = null,
-    highlightColor: js.Any = null,
-    hoverable: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    lines: linesOptions = null,
-    points: pointsOptions = null,
-    shadowSize: Int | Double = null,
-    xaxis: Int | Double = null,
-    yaxis: Int | Double = null
-  ): dataSeries = {
+  
+  inline def apply(data: js.Array[Any]): dataSeries = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (bars != null) __obj.updateDynamic("bars")(bars.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (shadowSize != null) __obj.updateDynamic("shadowSize")(shadowSize.asInstanceOf[js.Any])
-    if (xaxis != null) __obj.updateDynamic("xaxis")(xaxis.asInstanceOf[js.Any])
-    if (yaxis != null) __obj.updateDynamic("yaxis")(yaxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[dataSeries]
   }
+  
+  extension [Self <: dataSeries](x: Self) {
+    
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
+  }
 }
-

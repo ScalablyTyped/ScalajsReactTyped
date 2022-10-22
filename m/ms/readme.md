@@ -10,15 +10,15 @@ Tiny millisecond conversion utility
 | ------------------ | :-------------: |
 | Full name          | ms |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 1217 |
-| # downloads        | 1565506212 |
-| # stars            | 113 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 7.054232136666666E8 |
+| # stars            | 4221.0 |
 
 ## Links
-- [Homepage](https://github.com/zeit/ms#readme)
-- [Bugs](https://github.com/zeit/ms/issues)
-- [Repository](https://github.com/zeit/ms)
+- [Homepage](https://github.com/vercel/ms#readme)
+- [Bugs](https://github.com/vercel/ms/issues)
+- [Repository](https://github.com/vercel/ms)
 - [Npm](https://www.npmjs.com/package/ms)
     
 

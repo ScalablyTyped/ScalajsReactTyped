@@ -1,14 +1,15 @@
 package typingsJapgolly.tensorflowTfjsNode.mod
 
+import typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor
 import typingsJapgolly.tensorflowTfjsCore.distTypesMod.DataType
-import typingsJapgolly.tensorflowTfjsLayers.constraintsMod.Constraint
+import typingsJapgolly.tensorflowTfjsLayers.distConstraintsMod.Constraint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node", "LayerVariable")
 @js.native
-class LayerVariable protected ()
+open class LayerVariable protected ()
   extends typingsJapgolly.tensorflowTfjs.mod.LayerVariable {
   /**
     * Construct Variable from a `tf.Tensor`.
@@ -24,28 +25,88 @@ class LayerVariable protected ()
     * variable after optimize updates
     * @throws ValueError if `name` is `null` or `undefined`.
     */
-  def this(`val`: typingsJapgolly.tensorflowTfjsCore.mod.Tensor_[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank]) = this()
+  def this(`val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank]) = this()
+  def this(`val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank], dtype: DataType) = this()
+  def this(`val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank], dtype: Unit, name: String) = this()
+  def this(`val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank], dtype: DataType, name: String) = this()
   def this(
-    `val`: typingsJapgolly.tensorflowTfjsCore.mod.Tensor_[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
-    dtype: DataType
+    `val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
+    dtype: Unit,
+    name: String,
+    trainable: Boolean
   ) = this()
   def this(
-    `val`: typingsJapgolly.tensorflowTfjsCore.mod.Tensor_[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
-    dtype: DataType,
-    name: String
+    `val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
+    dtype: Unit,
+    name: Unit,
+    trainable: Boolean
   ) = this()
   def this(
-    `val`: typingsJapgolly.tensorflowTfjsCore.mod.Tensor_[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
+    `val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
     dtype: DataType,
     name: String,
     trainable: Boolean
   ) = this()
   def this(
-    `val`: typingsJapgolly.tensorflowTfjsCore.mod.Tensor_[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
+    `val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
+    dtype: DataType,
+    name: Unit,
+    trainable: Boolean
+  ) = this()
+  def this(
+    `val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
+    dtype: Unit,
+    name: String,
+    trainable: Boolean,
+    constraint: Constraint
+  ) = this()
+  def this(
+    `val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
+    dtype: Unit,
+    name: String,
+    trainable: Unit,
+    constraint: Constraint
+  ) = this()
+  def this(
+    `val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
+    dtype: Unit,
+    name: Unit,
+    trainable: Boolean,
+    constraint: Constraint
+  ) = this()
+  def this(
+    `val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
+    dtype: Unit,
+    name: Unit,
+    trainable: Unit,
+    constraint: Constraint
+  ) = this()
+  def this(
+    `val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
     dtype: DataType,
     name: String,
     trainable: Boolean,
     constraint: Constraint
   ) = this()
+  def this(
+    `val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
+    dtype: DataType,
+    name: String,
+    trainable: Unit,
+    constraint: Constraint
+  ) = this()
+  def this(
+    `val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
+    dtype: DataType,
+    name: Unit,
+    trainable: Boolean,
+    constraint: Constraint
+  ) = this()
+  def this(
+    `val`: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
+    dtype: DataType,
+    name: Unit,
+    trainable: Unit,
+    constraint: Constraint
+  ) = this()
 }
-

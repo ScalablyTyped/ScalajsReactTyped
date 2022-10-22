@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.libMod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.tooltipMod.TooltipProps
+import typingsJapgolly.reactBootstrap.libTooltipMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "Tooltip")
 @js.native
-class Tooltip ()
-  extends Component[TooltipProps, js.Object, js.Any]
-
+open class Tooltip () extends ^

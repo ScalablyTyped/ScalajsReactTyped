@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "debounce-fn" : "3.0.1"
+      "debounce-fn" : "5.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "debounce-fn" : "3.0.1"
+      "debounce-fn" : "5.1.2"
     }
   ],
   "compile-devDependencies" : [

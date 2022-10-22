@@ -1,45 +1,36 @@
 package typingsJapgolly.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FilterType extends js.Object
-
+sealed trait FilterType extends StObject
 @JSGlobal("tableau.FilterType")
 @js.native
-object FilterType extends js.Object {
+object FilterType extends StObject {
+  
   /** Categorical filters are used to filter to a set of values within the domain. */
   @js.native
-  sealed trait CATEGORICAL extends FilterType
+  sealed trait CATEGORICAL
+    extends StObject
+       with FilterType
   
   /** Hierarchical filters are used to filter to a set of values organized into a hierarchy within the domain. */
   @js.native
-  sealed trait HIERARCHICAL extends FilterType
+  sealed trait HIERARCHICAL
+    extends StObject
+       with FilterType
   
   /** Quantitative filters are used to filter to a range of values from a continuous domain. */
   @js.native
-  sealed trait QUANTITATIVE extends FilterType
+  sealed trait QUANTITATIVE
+    extends StObject
+       with FilterType
   
   /** Relative date filters are used to filter a date/time domain to a range of values relative to a fixed point in time. */
   @js.native
-  sealed trait RELATIVE_DATE extends FilterType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[FilterType with String] = js.native
-  /* "categorical" */ @js.native
-  object CATEGORICAL extends TopLevel[CATEGORICAL with String]
-  
-  /* "hierarchical" */ @js.native
-  object HIERARCHICAL extends TopLevel[HIERARCHICAL with String]
-  
-  /* "quantitative" */ @js.native
-  object QUANTITATIVE extends TopLevel[QUANTITATIVE with String]
-  
-  /* "relativedate" */ @js.native
-  object RELATIVE_DATE extends TopLevel[RELATIVE_DATE with String]
-  
+  sealed trait RELATIVE_DATE
+    extends StObject
+       with FilterType
 }
-

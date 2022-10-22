@@ -1,103 +1,120 @@
 package typingsJapgolly.mangopay2NodejsSdk.mod.models
 
-import typingsJapgolly.mangopay2NodejsSdk.MakeKeysRequiredPartialUsAddress
+import typingsJapgolly.mangopay2NodejsSdk.anon.MakeKeysRequiredPartialUsAddress
 import typingsJapgolly.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DECLARATIVE
 import typingsJapgolly.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NATURAL
 import typingsJapgolly.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NORMAL
-import typingsJapgolly.mangopay2NodejsSdk.mod.Timestamp
-import typingsJapgolly.mangopay2NodejsSdk.mod.address.AddressData
-import typingsJapgolly.mangopay2NodejsSdk.mod.user.UserNaturalData
-import typingsJapgolly.mangopay2NodejsSdk.typesMod.CountryISO
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsAddressMod.address.AddressData
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsUserMod.user.UserNaturalData
+import typingsJapgolly.mangopay2NodejsSdk.typingsTypesMod.CountryISO
+import typingsJapgolly.mangopay2NodejsSdk.typingsTypesMod.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.UserNatural")
 @js.native
-class UserNatural protected ()
+open class UserNatural protected ()
   extends EntityBase[UserNaturalData]
      with UserNaturalData {
   def this(data: MakeKeysRequiredPartialUsAddress) = this()
+  
   /**
     * The user address
     */
   /* CompleteClass */
-  override var Address: String | AddressData = js.native
+  var Address: String | AddressData = js.native
+  
   /**
     * The date of birth of the user - be careful to set the right timezone (should be UTC) to avoid 00h becoming 23h (and hence interpreted as the day before)
     */
   /* CompleteClass */
-  override var Birthday: Timestamp = js.native
+  var Birthday: Timestamp = js.native
+  
   /**
     * The capacity of this user - for use with UBO declarations
     */
   /* CompleteClass */
-  override var Capacity: NORMAL | DECLARATIVE = js.native
+  var Capacity: NORMAL | DECLARATIVE = js.native
+  
   /**
     * The user’s country of residence. ISO 3166-1 alpha-2 format is expected
     */
   /* CompleteClass */
-  override var CountryOfResidence: CountryISO = js.native
+  var CountryOfResidence: CountryISO = js.native
+  
   /* CompleteClass */
-  override var CreationDate: Double = js.native
+  var CreationDate: Double = js.native
+  
   /**
     * The person's email address (not more than 12 consecutive numbers) - must be a valid email
     */
   /* CompleteClass */
-  override var Email: String = js.native
+  var Email: String = js.native
+  
   /**
     * The name of the user
     */
   /* CompleteClass */
-  override var FirstName: String = js.native
+  var FirstName: String = js.native
+  
   /* CompleteClass */
-  override var Id: String = js.native
+  var Id: String = js.native
+  
   /* CompleteClass */
-  override var IncomeRange: typingsJapgolly.mangopay2NodejsSdk.mod.user.IncomeRange = js.native
+  var IncomeRange: typingsJapgolly.mangopay2NodejsSdk.typingsModelsUserMod.user.IncomeRange = js.native
+  
   /**
     * KYC Level (LIGHT or REGULAR)
     */
   /* CompleteClass */
-  override var KYCLevel: typingsJapgolly.mangopay2NodejsSdk.mod.user.KYCLevel = js.native
+  var KYCLevel: typingsJapgolly.mangopay2NodejsSdk.typingsModelsUserMod.user.KYCLevel = js.native
+  
   /**
     * The last name of the user
     */
   /* CompleteClass */
-  override var LastName: String = js.native
+  var LastName: String = js.native
+  
   /**
     * The user’s nationality. ISO 3166-1 alpha-2 format is expected
     */
   /* CompleteClass */
-  override var Nationality: CountryISO = js.native
+  var Nationality: CountryISO = js.native
+  
   /**
     * User’s occupation, ie. Work
     */
   /* CompleteClass */
-  override var Occupation: String = js.native
+  var Occupation: String = js.native
+  
   /**
     * Type of user
     */
   /* CompleteClass */
-  override var PersonType: typingsJapgolly.mangopay2NodejsSdk.mod.user.PersonType = js.native
+  var PersonType: typingsJapgolly.mangopay2NodejsSdk.typingsModelsUserMod.user.PersonType = js.native
   /* CompleteClass */
   @JSName("PersonType")
-  override var PersonType_UserNaturalData: NATURAL = js.native
+  var PersonType_UserNaturalData: NATURAL = js.native
+  
   /**
     * Maximum length is 255 characters
     */
   /* CompleteClass */
-  override var ProofOfAddress: String | Null = js.native
+  var ProofOfAddress: String | Null = js.native
+  
   /**
     * Maximum length is 255 characters
     */
   /* CompleteClass */
-  override var ProofOfIdentity: String | Null = js.native
+  var ProofOfIdentity: String | Null = js.native
+  
   /* CompleteClass */
-  override var Tag: String = js.native
+  var Tag: String = js.native
+  
   /**
     * Sets the person type for the model
     * @param personType
     */
-  def setPersonType(`type`: typingsJapgolly.mangopay2NodejsSdk.mod.user.PersonType): Unit = js.native
+  def setPersonType(`type`: typingsJapgolly.mangopay2NodejsSdk.typingsModelsUserMod.user.PersonType): Unit = js.native
 }
-

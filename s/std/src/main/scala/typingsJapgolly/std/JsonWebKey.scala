@@ -1,72 +1,148 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JsonWebKey extends js.Object {
+trait JsonWebKey extends StObject {
+  
+  /* standard dom */
   var alg: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var crv: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var d: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var dp: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var dq: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var e: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var ext: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var k: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var key_ops: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  
+  /* standard dom */
   var kty: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var n: js.UndefOr[java.lang.String] = js.undefined
-  var oth: js.UndefOr[js.Array[org.scalajs.dom.crypto.RsaOtherPrimesInfo]] = js.undefined
+  
+  /* standard dom */
+  var oth: js.UndefOr[js.Array[org.scalajs.dom.RsaOtherPrimesInfo]] = js.undefined
+  
+  /* standard dom */
   var p: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var q: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var qi: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var use: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var x: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var y: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object JsonWebKey {
-  @scala.inline
-  def apply(
-    alg: java.lang.String = null,
-    crv: java.lang.String = null,
-    d: java.lang.String = null,
-    dp: java.lang.String = null,
-    dq: java.lang.String = null,
-    e: java.lang.String = null,
-    ext: js.UndefOr[scala.Boolean] = js.undefined,
-    k: java.lang.String = null,
-    key_ops: js.Array[java.lang.String] = null,
-    kty: java.lang.String = null,
-    n: java.lang.String = null,
-    oth: js.Array[org.scalajs.dom.crypto.RsaOtherPrimesInfo] = null,
-    p: java.lang.String = null,
-    q: java.lang.String = null,
-    qi: java.lang.String = null,
-    use: java.lang.String = null,
-    x: java.lang.String = null,
-    y: java.lang.String = null
-  ): JsonWebKey = {
+  
+  inline def apply(): JsonWebKey = {
     val __obj = js.Dynamic.literal()
-    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
-    if (crv != null) __obj.updateDynamic("crv")(crv.asInstanceOf[js.Any])
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (dp != null) __obj.updateDynamic("dp")(dp.asInstanceOf[js.Any])
-    if (dq != null) __obj.updateDynamic("dq")(dq.asInstanceOf[js.Any])
-    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
-    if (!js.isUndefined(ext)) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (k != null) __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
-    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops.asInstanceOf[js.Any])
-    if (kty != null) __obj.updateDynamic("kty")(kty.asInstanceOf[js.Any])
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
-    if (oth != null) __obj.updateDynamic("oth")(oth.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (qi != null) __obj.updateDynamic("qi")(qi.asInstanceOf[js.Any])
-    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonWebKey]
   }
+  
+  extension [Self <: JsonWebKey](x: Self) {
+    
+    inline def setAlg(value: java.lang.String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+    
+    inline def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
+    
+    inline def setCrv(value: java.lang.String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
+    
+    inline def setCrvUndefined: Self = StObject.set(x, "crv", js.undefined)
+    
+    inline def setD(value: java.lang.String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    
+    inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+    
+    inline def setDp(value: java.lang.String): Self = StObject.set(x, "dp", value.asInstanceOf[js.Any])
+    
+    inline def setDpUndefined: Self = StObject.set(x, "dp", js.undefined)
+    
+    inline def setDq(value: java.lang.String): Self = StObject.set(x, "dq", value.asInstanceOf[js.Any])
+    
+    inline def setDqUndefined: Self = StObject.set(x, "dq", js.undefined)
+    
+    inline def setE(value: java.lang.String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    
+    inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
+    
+    inline def setExt(value: scala.Boolean): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    
+    inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+    
+    inline def setK(value: java.lang.String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+    
+    inline def setKUndefined: Self = StObject.set(x, "k", js.undefined)
+    
+    inline def setKey_ops(value: js.Array[java.lang.String]): Self = StObject.set(x, "key_ops", value.asInstanceOf[js.Any])
+    
+    inline def setKey_opsUndefined: Self = StObject.set(x, "key_ops", js.undefined)
+    
+    inline def setKey_opsVarargs(value: java.lang.String*): Self = StObject.set(x, "key_ops", js.Array(value*))
+    
+    inline def setKty(value: java.lang.String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
+    
+    inline def setKtyUndefined: Self = StObject.set(x, "kty", js.undefined)
+    
+    inline def setN(value: java.lang.String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    
+    inline def setNUndefined: Self = StObject.set(x, "n", js.undefined)
+    
+    inline def setOth(value: js.Array[org.scalajs.dom.RsaOtherPrimesInfo]): Self = StObject.set(x, "oth", value.asInstanceOf[js.Any])
+    
+    inline def setOthUndefined: Self = StObject.set(x, "oth", js.undefined)
+    
+    inline def setOthVarargs(value: org.scalajs.dom.RsaOtherPrimesInfo*): Self = StObject.set(x, "oth", js.Array(value*))
+    
+    inline def setP(value: java.lang.String): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    
+    inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+    
+    inline def setQ(value: java.lang.String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    
+    inline def setQi(value: java.lang.String): Self = StObject.set(x, "qi", value.asInstanceOf[js.Any])
+    
+    inline def setQiUndefined: Self = StObject.set(x, "qi", js.undefined)
+    
+    inline def setUse(value: java.lang.String): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    
+    inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+    
+    inline def setX(value: java.lang.String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: java.lang.String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

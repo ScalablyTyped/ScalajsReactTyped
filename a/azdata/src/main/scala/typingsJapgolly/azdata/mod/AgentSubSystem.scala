@@ -1,89 +1,87 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AgentSubSystem extends js.Object
-
+sealed trait AgentSubSystem extends StObject
 @JSImport("azdata", "AgentSubSystem")
 @js.native
-object AgentSubSystem extends js.Object {
-  @js.native
-  sealed trait ActiveScripting extends AgentSubSystem
-  
-  @js.native
-  sealed trait AnalysisCommands extends AgentSubSystem
-  
-  @js.native
-  sealed trait AnalysisQuery extends AgentSubSystem
-  
-  @js.native
-  sealed trait CmdExec extends AgentSubSystem
-  
-  @js.native
-  sealed trait Distribution extends AgentSubSystem
-  
-  @js.native
-  sealed trait LogReader extends AgentSubSystem
-  
-  @js.native
-  sealed trait Merge extends AgentSubSystem
-  
-  @js.native
-  sealed trait PowerShell extends AgentSubSystem
-  
-  @js.native
-  sealed trait QueueReader extends AgentSubSystem
-  
-  @js.native
-  sealed trait Snapshot extends AgentSubSystem
-  
-  @js.native
-  sealed trait Ssis extends AgentSubSystem
-  
-  @js.native
-  sealed trait TransactSql extends AgentSubSystem
+object AgentSubSystem extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AgentSubSystem with Double] = js.native
-  /* 2 */ @js.native
-  object ActiveScripting extends TopLevel[ActiveScripting with Double]
+  def apply(value: Double): js.UndefOr[AgentSubSystem & Double] = js.native
   
-  /* 10 */ @js.native
-  object AnalysisCommands extends TopLevel[AnalysisCommands with Double]
+  @js.native
+  sealed trait ActiveScripting
+    extends StObject
+       with AgentSubSystem
+  /* 2 */ val ActiveScripting: typingsJapgolly.azdata.mod.AgentSubSystem.ActiveScripting & Double = js.native
   
-  /* 9 */ @js.native
-  object AnalysisQuery extends TopLevel[AnalysisQuery with Double]
+  @js.native
+  sealed trait AnalysisCommands
+    extends StObject
+       with AgentSubSystem
+  /* 10 */ val AnalysisCommands: typingsJapgolly.azdata.mod.AgentSubSystem.AnalysisCommands & Double = js.native
   
-  /* 3 */ @js.native
-  object CmdExec extends TopLevel[CmdExec with Double]
+  @js.native
+  sealed trait AnalysisQuery
+    extends StObject
+       with AgentSubSystem
+  /* 9 */ val AnalysisQuery: typingsJapgolly.azdata.mod.AgentSubSystem.AnalysisQuery & Double = js.native
   
-  /* 6 */ @js.native
-  object Distribution extends TopLevel[Distribution with Double]
+  @js.native
+  sealed trait CmdExec
+    extends StObject
+       with AgentSubSystem
+  /* 3 */ val CmdExec: typingsJapgolly.azdata.mod.AgentSubSystem.CmdExec & Double = js.native
   
-  /* 5 */ @js.native
-  object LogReader extends TopLevel[LogReader with Double]
+  @js.native
+  sealed trait Distribution
+    extends StObject
+       with AgentSubSystem
+  /* 6 */ val Distribution: typingsJapgolly.azdata.mod.AgentSubSystem.Distribution & Double = js.native
   
-  /* 7 */ @js.native
-  object Merge extends TopLevel[Merge with Double]
+  @js.native
+  sealed trait LogReader
+    extends StObject
+       with AgentSubSystem
+  /* 5 */ val LogReader: typingsJapgolly.azdata.mod.AgentSubSystem.LogReader & Double = js.native
   
-  /* 12 */ @js.native
-  object PowerShell extends TopLevel[PowerShell with Double]
+  @js.native
+  sealed trait Merge
+    extends StObject
+       with AgentSubSystem
+  /* 7 */ val Merge: typingsJapgolly.azdata.mod.AgentSubSystem.Merge & Double = js.native
   
-  /* 8 */ @js.native
-  object QueueReader extends TopLevel[QueueReader with Double]
+  @js.native
+  sealed trait PowerShell
+    extends StObject
+       with AgentSubSystem
+  /* 12 */ val PowerShell: typingsJapgolly.azdata.mod.AgentSubSystem.PowerShell & Double = js.native
   
-  /* 4 */ @js.native
-  object Snapshot extends TopLevel[Snapshot with Double]
+  @js.native
+  sealed trait QueueReader
+    extends StObject
+       with AgentSubSystem
+  /* 8 */ val QueueReader: typingsJapgolly.azdata.mod.AgentSubSystem.QueueReader & Double = js.native
   
-  /* 11 */ @js.native
-  object Ssis extends TopLevel[Ssis with Double]
+  @js.native
+  sealed trait Snapshot
+    extends StObject
+       with AgentSubSystem
+  /* 4 */ val Snapshot: typingsJapgolly.azdata.mod.AgentSubSystem.Snapshot & Double = js.native
   
-  /* 1 */ @js.native
-  object TransactSql extends TopLevel[TransactSql with Double]
+  @js.native
+  sealed trait Ssis
+    extends StObject
+       with AgentSubSystem
+  /* 11 */ val Ssis: typingsJapgolly.azdata.mod.AgentSubSystem.Ssis & Double = js.native
   
+  @js.native
+  sealed trait TransactSql
+    extends StObject
+       with AgentSubSystem
+  /* 1 */ val TransactSql: typingsJapgolly.azdata.mod.AgentSubSystem.TransactSql & Double = js.native
 }
-

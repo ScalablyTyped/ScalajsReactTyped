@@ -1,8 +1,8 @@
 package typingsJapgolly.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A payment card's type of payment.
@@ -13,18 +13,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.applepayjs.applepayjsStrings.prepaid
   - typingsJapgolly.applepayjs.applepayjsStrings.store
 */
-trait ApplePayPaymentMethodType extends js.Object
-
+trait ApplePayPaymentMethodType extends StObject
 object ApplePayPaymentMethodType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def credit: typingsJapgolly.applepayjs.applepayjsStrings.credit = this.cast("credit")
-  @scala.inline
-  def debit: typingsJapgolly.applepayjs.applepayjsStrings.debit = this.cast("debit")
-  @scala.inline
-  def prepaid: typingsJapgolly.applepayjs.applepayjsStrings.prepaid = this.cast("prepaid")
-  @scala.inline
-  def store: typingsJapgolly.applepayjs.applepayjsStrings.store = this.cast("store")
+  
+  inline def credit: typingsJapgolly.applepayjs.applepayjsStrings.credit = "credit".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.credit]
+  
+  inline def debit: typingsJapgolly.applepayjs.applepayjsStrings.debit = "debit".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.debit]
+  
+  inline def prepaid: typingsJapgolly.applepayjs.applepayjsStrings.prepaid = "prepaid".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.prepaid]
+  
+  inline def store: typingsJapgolly.applepayjs.applepayjsStrings.store = "store".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.store]
 }
-

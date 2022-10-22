@@ -1,11 +1,12 @@
 package typingsJapgolly.officeJsPreview.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the Application object, for use in "application.set({ ... })". */
-trait ApplicationUpdateData extends js.Object {
+/** An interface for updating data on the Application object, for use in `application.set({ ... })`. */
+trait ApplicationUpdateData extends StObject {
+  
   /**
     *
     * Show or hide the iFrame application borders.
@@ -13,6 +14,7 @@ trait ApplicationUpdateData extends js.Object {
     * [Api set:  1.1]
     */
   var showBorders: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Show or hide the standard toolbars.
@@ -21,14 +23,21 @@ trait ApplicationUpdateData extends js.Object {
     */
   var showToolbars: js.UndefOr[Boolean] = js.undefined
 }
-
 object ApplicationUpdateData {
-  @scala.inline
-  def apply(showBorders: js.UndefOr[Boolean] = js.undefined, showToolbars: js.UndefOr[Boolean] = js.undefined): ApplicationUpdateData = {
+  
+  inline def apply(): ApplicationUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showBorders)) __obj.updateDynamic("showBorders")(showBorders.asInstanceOf[js.Any])
-    if (!js.isUndefined(showToolbars)) __obj.updateDynamic("showToolbars")(showToolbars.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationUpdateData]
   }
+  
+  extension [Self <: ApplicationUpdateData](x: Self) {
+    
+    inline def setShowBorders(value: Boolean): Self = StObject.set(x, "showBorders", value.asInstanceOf[js.Any])
+    
+    inline def setShowBordersUndefined: Self = StObject.set(x, "showBorders", js.undefined)
+    
+    inline def setShowToolbars(value: Boolean): Self = StObject.set(x, "showToolbars", value.asInstanceOf[js.Any])
+    
+    inline def setShowToolbarsUndefined: Self = StObject.set(x, "showToolbars", js.undefined)
+  }
 }
-

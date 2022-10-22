@@ -1,12 +1,13 @@
 package typingsJapgolly.jqueryNotifybar
 
 import typingsJapgolly.jqueryNotifybar.JQueryNotifyBar.NotifyBarOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
+  
   /**
     * Show notify bar.
     *
@@ -15,4 +16,3 @@ trait JQueryStatic extends js.Object {
   def notifyBar(): Unit = js.native
   def notifyBar(options: NotifyBarOptions): Unit = js.native
 }
-

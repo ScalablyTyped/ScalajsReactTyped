@@ -1,14 +1,19 @@
 package typingsJapgolly.materialDrawer
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materialDrawer.focusTrapMod.FocusTrap
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.materialDom.focusTrapMod.FocusOptions
+import typingsJapgolly.materialDom.focusTrapMod.FocusTrap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/drawer/util", JSImport.Namespace)
-@js.native
-object utilMod extends js.Object {
-  def createFocusTrapInstance(surfaceEl: Element, focusTrapFactory: js.Function0[FocusTrap]): FocusTrap = js.native
+object utilMod {
+  
+  @JSImport("@material/drawer/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDrawerFocusTrapFactory): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusTrapInstance")(surfaceEl.asInstanceOf[js.Any], focusTrapFactory.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
+  
+  type MDCDrawerFocusTrapFactory = js.Function2[/* element */ HTMLElement, /* options */ FocusOptions, FocusTrap]
 }
-

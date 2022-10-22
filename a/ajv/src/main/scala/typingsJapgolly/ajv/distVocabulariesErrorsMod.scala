@@ -1,0 +1,18 @@
+package typingsJapgolly.ajv
+
+import typingsJapgolly.ajv.distCompileValidateDataTypeMod.TypeError
+import typingsJapgolly.ajv.distVocabulariesApplicatorMod.ApplicatorKeywordError
+import typingsJapgolly.ajv.distVocabulariesDiscriminatorMod.DiscriminatorError
+import typingsJapgolly.ajv.distVocabulariesFormatFormatMod.FormatError
+import typingsJapgolly.ajv.distVocabulariesUnevaluatedUnevaluatedItemsMod.UnevaluatedItemsError
+import typingsJapgolly.ajv.distVocabulariesUnevaluatedUnevaluatedPropertiesMod.UnevaluatedPropertiesError
+import typingsJapgolly.ajv.distVocabulariesValidationDependentRequiredMod.DependentRequiredError
+import typingsJapgolly.ajv.distVocabulariesValidationMod.ValidationKeywordError
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distVocabulariesErrorsMod {
+  
+  type DefinedError = TypeError | ApplicatorKeywordError | ValidationKeywordError | FormatError | UnevaluatedPropertiesError | UnevaluatedItemsError | DependentRequiredError | DiscriminatorError
+}

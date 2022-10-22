@@ -1,26 +1,45 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProvisionedPlan extends js.Object {
+trait ProvisionedPlan extends StObject {
+  
   // For example, 'Enabled'.
-  var capabilityStatus: js.UndefOr[String] = js.undefined
+  var capabilityStatus: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // For example, 'Success'.
-  var provisioningStatus: js.UndefOr[String] = js.undefined
+  var provisioningStatus: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The name of the service; for example, 'AccessControlS2S'
-  var service: js.UndefOr[String] = js.undefined
+  var service: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ProvisionedPlan {
-  @scala.inline
-  def apply(capabilityStatus: String = null, provisioningStatus: String = null, service: String = null): ProvisionedPlan = {
+  
+  inline def apply(): ProvisionedPlan = {
     val __obj = js.Dynamic.literal()
-    if (capabilityStatus != null) __obj.updateDynamic("capabilityStatus")(capabilityStatus.asInstanceOf[js.Any])
-    if (provisioningStatus != null) __obj.updateDynamic("provisioningStatus")(provisioningStatus.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionedPlan]
   }
+  
+  extension [Self <: ProvisionedPlan](x: Self) {
+    
+    inline def setCapabilityStatus(value: NullableOption[String]): Self = StObject.set(x, "capabilityStatus", value.asInstanceOf[js.Any])
+    
+    inline def setCapabilityStatusNull: Self = StObject.set(x, "capabilityStatus", null)
+    
+    inline def setCapabilityStatusUndefined: Self = StObject.set(x, "capabilityStatus", js.undefined)
+    
+    inline def setProvisioningStatus(value: NullableOption[String]): Self = StObject.set(x, "provisioningStatus", value.asInstanceOf[js.Any])
+    
+    inline def setProvisioningStatusNull: Self = StObject.set(x, "provisioningStatus", null)
+    
+    inline def setProvisioningStatusUndefined: Self = StObject.set(x, "provisioningStatus", js.undefined)
+    
+    inline def setService(value: NullableOption[String]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    
+    inline def setServiceNull: Self = StObject.set(x, "service", null)
+    
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+  }
 }
-

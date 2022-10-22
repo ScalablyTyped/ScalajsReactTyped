@@ -1,101 +1,87 @@
 package typingsJapgolly.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ASPxClientSpreadsheetPopupMenuType extends js.Object
-
+sealed trait ASPxClientSpreadsheetPopupMenuType extends StObject
 /**
   * Lists values that identify the context menu type.
   */
 @JSGlobal("ASPxClientSpreadsheetPopupMenuType")
 @js.native
-object ASPxClientSpreadsheetPopupMenuType extends js.Object {
+object ASPxClientSpreadsheetPopupMenuType extends StObject {
+  
   /**
     * Specifies a context menu which can be invoked by clicking the AutoFilter drop-down arrow.
     */
   @js.native
-  sealed trait AutoFilter extends ASPxClientSpreadsheetPopupMenuType
+  sealed trait AutoFilter
+    extends StObject
+       with ASPxClientSpreadsheetPopupMenuType
   
   /**
     * Specifies a context menu which can be invoked by right-clicking any cell in a worksheet.
     */
   @js.native
-  sealed trait Cell extends ASPxClientSpreadsheetPopupMenuType
+  sealed trait Cell
+    extends StObject
+       with ASPxClientSpreadsheetPopupMenuType
   
   /**
     * Specifies a context menu which can be invoked by right-clicking a chart in a worksheet.
     */
   @js.native
-  sealed trait Chart extends ASPxClientSpreadsheetPopupMenuType
+  sealed trait Chart
+    extends StObject
+       with ASPxClientSpreadsheetPopupMenuType
   
   /**
     * Specifies a context menu which can be invoked by right-clicking a column header.
     */
   @js.native
-  sealed trait ColumnHeading extends ASPxClientSpreadsheetPopupMenuType
+  sealed trait ColumnHeading
+    extends StObject
+       with ASPxClientSpreadsheetPopupMenuType
   
   /**
     * Specifies a context menu which can be invoked by right-clicking a picture embedded in a worksheet.
     */
   @js.native
-  sealed trait Picture extends ASPxClientSpreadsheetPopupMenuType
+  sealed trait Picture
+    extends StObject
+       with ASPxClientSpreadsheetPopupMenuType
   
   /**
     * Specifies a context menu which can be invoked by right-clicking any cell in a pivot table.
     */
   @js.native
-  sealed trait PivotTable extends ASPxClientSpreadsheetPopupMenuType
+  sealed trait PivotTable
+    extends StObject
+       with ASPxClientSpreadsheetPopupMenuType
   
   /**
     * Specifies a context menu which can be invoked by clicking the AutoFilter drop-down arrow on the row or column label of a pivot table.
     */
   @js.native
-  sealed trait PivotTableAutoFilter extends ASPxClientSpreadsheetPopupMenuType
+  sealed trait PivotTableAutoFilter
+    extends StObject
+       with ASPxClientSpreadsheetPopupMenuType
   
   /**
     * Specifies a context menu which can be invoked by right-clicking a row header.
     */
   @js.native
-  sealed trait RowHeading extends ASPxClientSpreadsheetPopupMenuType
+  sealed trait RowHeading
+    extends StObject
+       with ASPxClientSpreadsheetPopupMenuType
   
   /**
     * Specifies a context menu which can be invoked by right-clicking a worksheet tab.
     */
   @js.native
-  sealed trait SheetTab extends ASPxClientSpreadsheetPopupMenuType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ASPxClientSpreadsheetPopupMenuType with Double] = js.native
-  /* 8 */ @js.native
-  object AutoFilter extends TopLevel[AutoFilter with Double]
-  
-  /* 7 */ @js.native
-  object Cell extends TopLevel[Cell with Double]
-  
-  /* 5 */ @js.native
-  object Chart extends TopLevel[Chart with Double]
-  
-  /* 0 */ @js.native
-  object ColumnHeading extends TopLevel[ColumnHeading with Double]
-  
-  /* 4 */ @js.native
-  object Picture extends TopLevel[Picture with Double]
-  
-  /* 9 */ @js.native
-  object PivotTable extends TopLevel[PivotTable with Double]
-  
-  /* 10 */ @js.native
-  object PivotTableAutoFilter extends TopLevel[PivotTableAutoFilter with Double]
-  
-  /* 1 */ @js.native
-  object RowHeading extends TopLevel[RowHeading with Double]
-  
-  /* 3 */ @js.native
-  object SheetTab extends TopLevel[SheetTab with Double]
-  
+  sealed trait SheetTab
+    extends StObject
+       with ASPxClientSpreadsheetPopupMenuType
 }
-

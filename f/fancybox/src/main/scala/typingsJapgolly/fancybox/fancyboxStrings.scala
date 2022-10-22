@@ -1,129 +1,114 @@
 package typingsJapgolly.fancybox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fancyboxStrings {
-  @js.native
-  sealed trait ajax extends js.Object
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait ajax extends StObject
+  inline def ajax: ajax = "ajax".asInstanceOf[ajax]
   
   @js.native
-  sealed trait circular extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait close extends FancyBoxInteractionTypes
+  sealed trait circular extends StObject
+  inline def circular: circular = "circular".asInstanceOf[circular]
   
   @js.native
-  sealed trait download extends js.Object
+  sealed trait close
+    extends StObject
+       with FancyBoxInteractionTypes
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait fade extends js.Object
+  sealed trait download extends StObject
+  inline def download: download = "download".asInstanceOf[download]
   
   @js.native
-  sealed trait fullScreen extends js.Object
+  sealed trait fade extends StObject
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
-  sealed trait html extends js.Object
+  sealed trait fullScreen extends StObject
+  inline def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
   
   @js.native
-  sealed trait iframe extends js.Object
+  sealed trait html extends StObject
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait iframe extends StObject
+  inline def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
-  sealed trait `inline` extends js.Object
+  sealed trait image extends StObject
+  inline def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait next extends FancyBoxInteractionTypes
+  sealed trait `inline` extends StObject
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait nextOrClose extends FancyBoxInteractionTypes
+  sealed trait next
+    extends StObject
+       with FancyBoxInteractionTypes
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait rotate extends js.Object
+  sealed trait nextOrClose
+    extends StObject
+       with FancyBoxInteractionTypes
+  inline def nextOrClose: nextOrClose = "nextOrClose".asInstanceOf[nextOrClose]
   
   @js.native
-  sealed trait share extends js.Object
+  sealed trait rotate extends StObject
+  inline def rotate: rotate = "rotate".asInstanceOf[rotate]
   
   @js.native
-  sealed trait slide extends js.Object
+  sealed trait share extends StObject
+  inline def share: share = "share".asInstanceOf[share]
   
   @js.native
-  sealed trait slideShow extends js.Object
+  sealed trait slide extends StObject
+  inline def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
-  sealed trait thumbs extends js.Object
+  sealed trait slideShow extends StObject
+  inline def slideShow: slideShow = "slideShow".asInstanceOf[slideShow]
   
   @js.native
-  sealed trait toggleControls extends FancyBoxInteractionTypes
+  sealed trait thumbs extends StObject
+  inline def thumbs: thumbs = "thumbs".asInstanceOf[thumbs]
   
   @js.native
-  sealed trait tube extends js.Object
+  sealed trait toggleControls
+    extends StObject
+       with FancyBoxInteractionTypes
+  inline def toggleControls: toggleControls = "toggleControls".asInstanceOf[toggleControls]
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait tube extends StObject
+  inline def tube: tube = "tube".asInstanceOf[tube]
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait x extends StObject
+  inline def x: x = "x".asInstanceOf[x]
   
   @js.native
-  sealed trait zoom extends FancyBoxInteractionTypes
+  sealed trait y extends StObject
+  inline def y: y = "y".asInstanceOf[y]
   
   @js.native
-  sealed trait `zoom-in-out` extends js.Object
+  sealed trait zoom
+    extends StObject
+       with FancyBoxInteractionTypes
+  inline def zoom: zoom = "zoom".asInstanceOf[zoom]
   
-  @scala.inline
-  def ajax: ajax = "ajax".asInstanceOf[ajax]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def circular: circular = "circular".asInstanceOf[circular]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def download: download = "download".asInstanceOf[download]
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
-  @scala.inline
-  def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def iframe: iframe = "iframe".asInstanceOf[iframe]
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
-  @scala.inline
-  def nextOrClose: nextOrClose = "nextOrClose".asInstanceOf[nextOrClose]
-  @scala.inline
-  def rotate: rotate = "rotate".asInstanceOf[rotate]
-  @scala.inline
-  def share: share = "share".asInstanceOf[share]
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
-  @scala.inline
-  def slideShow: slideShow = "slideShow".asInstanceOf[slideShow]
-  @scala.inline
-  def thumbs: thumbs = "thumbs".asInstanceOf[thumbs]
-  @scala.inline
-  def toggleControls: toggleControls = "toggleControls".asInstanceOf[toggleControls]
-  @scala.inline
-  def tube: tube = "tube".asInstanceOf[tube]
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
-  @scala.inline
-  def zoom: zoom = "zoom".asInstanceOf[zoom]
-  @scala.inline
-  def `zoom-in-out`: `zoom-in-out` = "zoom-in-out".asInstanceOf[`zoom-in-out`]
+  @js.native
+  sealed trait `zoom-in-out` extends StObject
+  inline def `zoom-in-out`: `zoom-in-out` = "zoom-in-out".asInstanceOf[`zoom-in-out`]
 }
-

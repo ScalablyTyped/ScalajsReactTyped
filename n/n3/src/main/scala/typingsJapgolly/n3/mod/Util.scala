@@ -1,34 +1,55 @@
 package typingsJapgolly.n3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("n3", "Util")
-@js.native
-object Util extends js.Object {
-  def inDefaultGraph(value: typingsJapgolly.rdfJs.mod.Quad): Boolean = js.native
-  def isBlankNode(): Boolean = js.native
-  def isBlankNode(value: typingsJapgolly.rdfJs.mod.Term): Boolean = js.native
-  def isDefaultGraph(): Boolean = js.native
-  def isDefaultGraph(value: typingsJapgolly.rdfJs.mod.Term): Boolean = js.native
-  def isLiteral(): Boolean = js.native
-  def isLiteral(value: typingsJapgolly.rdfJs.mod.Term): Boolean = js.native
-  def isNamedNode(): Boolean = js.native
-  def isNamedNode(value: typingsJapgolly.rdfJs.mod.Term): Boolean = js.native
-  def isVariable(): Boolean = js.native
-  def isVariable(value: typingsJapgolly.rdfJs.mod.Term): Boolean = js.native
-  def prefix(iri: String): PrefixedToIri = js.native
-  def prefix(iri: String, factory: typingsJapgolly.rdfJs.mod.DataFactory[typingsJapgolly.rdfJs.mod.Quad]): PrefixedToIri = js.native
-  def prefix(iri: typingsJapgolly.rdfJs.mod.NamedNode): PrefixedToIri = js.native
-  def prefix(
-    iri: typingsJapgolly.rdfJs.mod.NamedNode,
-    factory: typingsJapgolly.rdfJs.mod.DataFactory[typingsJapgolly.rdfJs.mod.Quad]
-  ): PrefixedToIri = js.native
-  def prefixes(defaultPrefixes: Prefixes[typingsJapgolly.rdfJs.mod.NamedNode | String]): js.Function1[/* prefix */ String, PrefixedToIri] = js.native
-  def prefixes(
-    defaultPrefixes: Prefixes[typingsJapgolly.rdfJs.mod.NamedNode | String],
-    factory: typingsJapgolly.rdfJs.mod.DataFactory[typingsJapgolly.rdfJs.mod.Quad]
-  ): js.Function1[/* prefix */ String, PrefixedToIri] = js.native
+object Util {
+  
+  @JSImport("n3", "Util")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def inDefaultGraph(value: typingsJapgolly.rdfjsTypes.dataModelMod.Quad): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("inDefaultGraph")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isBlankNode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlankNode")().asInstanceOf[Boolean]
+  inline def isBlankNode(value: typingsJapgolly.rdfjsTypes.dataModelMod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlankNode")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isDefaultGraph(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefaultGraph")().asInstanceOf[Boolean]
+  inline def isDefaultGraph(value: typingsJapgolly.rdfjsTypes.dataModelMod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefaultGraph")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isLiteral(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteral")().asInstanceOf[Boolean]
+  inline def isLiteral(value: typingsJapgolly.rdfjsTypes.dataModelMod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isNamedNode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedNode")().asInstanceOf[Boolean]
+  inline def isNamedNode(value: typingsJapgolly.rdfjsTypes.dataModelMod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedNode")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isVariable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariable")().asInstanceOf[Boolean]
+  inline def isVariable(value: typingsJapgolly.rdfjsTypes.dataModelMod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariable")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def prefix(iri: String): PrefixedToIri = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any]).asInstanceOf[PrefixedToIri]
+  inline def prefix(
+    iri: String,
+    factory: typingsJapgolly.rdfjsTypes.dataModelMod.DataFactory[
+      typingsJapgolly.rdfjsTypes.dataModelMod.Quad, 
+      typingsJapgolly.rdfjsTypes.dataModelMod.Quad
+    ]
+  ): PrefixedToIri = (^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[PrefixedToIri]
+  inline def prefix(iri: typingsJapgolly.rdfjsTypes.dataModelMod.NamedNode[String]): PrefixedToIri = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any]).asInstanceOf[PrefixedToIri]
+  inline def prefix(
+    iri: typingsJapgolly.rdfjsTypes.dataModelMod.NamedNode[String],
+    factory: typingsJapgolly.rdfjsTypes.dataModelMod.DataFactory[
+      typingsJapgolly.rdfjsTypes.dataModelMod.Quad, 
+      typingsJapgolly.rdfjsTypes.dataModelMod.Quad
+    ]
+  ): PrefixedToIri = (^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[PrefixedToIri]
+  
+  inline def prefixes(defaultPrefixes: Prefixes[typingsJapgolly.rdfjsTypes.dataModelMod.NamedNode[String] | String]): js.Function1[/* prefix */ String, PrefixedToIri] = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixes")(defaultPrefixes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* prefix */ String, PrefixedToIri]]
+  inline def prefixes(
+    defaultPrefixes: Prefixes[typingsJapgolly.rdfjsTypes.dataModelMod.NamedNode[String] | String],
+    factory: typingsJapgolly.rdfjsTypes.dataModelMod.DataFactory[
+      typingsJapgolly.rdfjsTypes.dataModelMod.Quad, 
+      typingsJapgolly.rdfjsTypes.dataModelMod.Quad
+    ]
+  ): js.Function1[/* prefix */ String, PrefixedToIri] = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixes")(defaultPrefixes.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* prefix */ String, PrefixedToIri]]
 }
-

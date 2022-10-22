@@ -1,49 +1,51 @@
 package typingsJapgolly.reachCombobox.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.reachCombobox.mod.ComboboxPopoverProps
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
+import japgolly.scalajs.react.facade.React.RefHandle
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reachCombobox.anon.ComboboxPopoverPropsParti
+import typingsJapgolly.reachCombobox.reachComboboxStrings.div
+import typingsJapgolly.reachPolymorphic.anon.As
+import typingsJapgolly.reachPolymorphic.mod.Merge
+import typingsJapgolly.reachPopover.mod.Position
+import typingsJapgolly.reachPopover.mod.PossibleNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ComboboxPopover {
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
-    ClassAttributes: ClassAttributes[HTMLElement] = null,
-    portal: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    ComboboxPopoverProps, 
-    MountedWithRawType[ComboboxPopoverProps, js.Object, RawMounted[ComboboxPopoverProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(portal)) __obj.updateDynamic("portal")(portal.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.reachCombobox.mod.ComboboxPopoverProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reachCombobox.mod.ComboboxPopoverProps])(children: _*)
-  }
   @JSImport("@reach/combobox", "ComboboxPopover")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def as(value: div): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def hidden(value: Boolean): this.type = set("hidden", value.asInstanceOf[js.Any])
+    
+    inline def portal(value: Boolean): this.type = set("portal", value.asInstanceOf[js.Any])
+    
+    inline def position(value: Position): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def targetRef(value: RefHandle[PossibleNode]): this.type = set("targetRef", value.asInstanceOf[js.Any])
+    
+    inline def unstable_observableRefs(value: js.Array[RefHandle[PossibleNode]]): this.type = set("unstable_observableRefs", value.asInstanceOf[js.Any])
+    
+    inline def unstable_observableRefsVarargs(value: RefHandle[PossibleNode]*): this.type = set("unstable_observableRefs", js.Array(value*))
+    
+    inline def unstable_skipInitialPortalRender(value: Boolean): this.type = set("unstable_skipInitialPortalRender", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ComboboxPopover.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(
+    p: Merge[
+      /* import warning: importer.ImportType#apply Failed type conversion: IntrinsicElementString extends react.react.ElementType<any> ? react.react.ComponentPropsWithRef<IntrinsicElementString> : never */ js.Any, 
+      ComboboxPopoverPropsParti & As[div]
+    ]
+  ): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

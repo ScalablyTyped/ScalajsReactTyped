@@ -1,33 +1,33 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`coded-value`
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.inherited
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.range
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CodedValueDomainProperties extends DomainProperties {
+trait CodedValueDomainProperties
+  extends StObject
+     with DomainProperties {
+  
   /**
-    * An array of the coded values in the domain. See the object specification table below for the properties each item in the array should contain.
+    * An array of the coded values in the domain.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#codedValues)
     */
-  var codedValues: js.UndefOr[js.Array[CodedValueDomainCodedValues]] = js.undefined
+  var codedValues: js.UndefOr[js.Array[CodedValue]] = js.undefined
 }
-
 object CodedValueDomainProperties {
-  @scala.inline
-  def apply(
-    codedValues: js.Array[CodedValueDomainCodedValues] = null,
-    name: String = null,
-    `type`: range | `coded-value` | inherited = null
-  ): CodedValueDomainProperties = {
+  
+  inline def apply(): CodedValueDomainProperties = {
     val __obj = js.Dynamic.literal()
-    if (codedValues != null) __obj.updateDynamic("codedValues")(codedValues.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodedValueDomainProperties]
   }
+  
+  extension [Self <: CodedValueDomainProperties](x: Self) {
+    
+    inline def setCodedValues(value: js.Array[CodedValue]): Self = StObject.set(x, "codedValues", value.asInstanceOf[js.Any])
+    
+    inline def setCodedValuesUndefined: Self = StObject.set(x, "codedValues", js.undefined)
+    
+    inline def setCodedValuesVarargs(value: CodedValue*): Self = StObject.set(x, "codedValues", js.Array(value*))
+  }
 }
-

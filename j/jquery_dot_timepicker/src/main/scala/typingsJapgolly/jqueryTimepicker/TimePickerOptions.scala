@@ -1,17 +1,21 @@
 package typingsJapgolly.jqueryTimepicker
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimePickerOptions extends js.Object {
+trait TimePickerOptions extends StObject {
+  
   /** Selector for an alternate field to store selected time into */
   var altField: js.UndefOr[String] = js.undefined
+  
   /** Define the locale text for periods. */
   var amPmText: js.UndefOr[js.Tuple2[String, String]] = js.undefined
+  
   /** Display text following the input box, e.g. showing the format */
   var appendText: js.UndefOr[String] = js.undefined
+  
   /**
     * Position of the input element to match
     *
@@ -19,159 +23,260 @@ trait TimePickerOptions extends js.Object {
     * See the position utility for more info : http://jqueryui.com/demos/position/
     */
   var atPosition: js.UndefOr[String] = js.undefined
+  
   /** Define a callback function executed before the timepicker is shown */
-  var beforeShow: js.UndefOr[js.Function0[_]] = js.undefined
+  var beforeShow: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /**
     * 'button' element that will trigger the timepicker.
     *
     * "button" for trigger button, or "both" for either (not yet implemented).
     */
   var button: js.UndefOr[String] = js.undefined
+  
   /** Text for the confirmation button (ok button).*/
   var closeButtonText: js.UndefOr[String] = js.undefined
+  
   /**
     * Used as default time when input field is empty or for inline timePicker
     * (set to 'now' for the current time, '' for no highlighted time)
     **/
   var defaultTime: js.UndefOr[String] = js.undefined
+  
   /** Text for the deselect button */
   var deselectButtonText: js.UndefOr[String] = js.undefined
+  
   // Localization
   /** Define the locale text for "Hours" */
   var hourText: js.UndefOr[String] = js.undefined
+  
   var hours: js.UndefOr[TimePickerHour] = js.undefined
+  
   /** Define the locale text for "Minute" */
   var minuteText: js.UndefOr[String] = js.undefined
+  
   var minutes: js.UndefOr[TimePickerMinutes] = js.undefined
+  
   /**
     * Position of the dialog relative to the input.
     *
     * See the position utility for more info : http://jqueryui.com/demos/position/
     */
   var myPosition: js.UndefOr[String] = js.undefined
+  
   /** Text for the 'now' button.*/
   var nowButtonText: js.UndefOr[String] = js.undefined
+  
   /** Define a callback function when the timepicker is closed */
-  var onClose: js.UndefOr[js.Function2[/* timeText */ String, /* inst */ js.Any, _]] = js.undefined
+  var onClose: js.UndefOr[js.Function2[/* timeText */ String, /* inst */ Any, Any]] = js.undefined
+  
   //NEW: 2011-02-03
   /** callback for enabling / disabling on selectable hours  ex : function(hour) { return true; } */
-  var onHourShow: js.UndefOr[js.Function0[_]] = js.undefined
+  var onHourShow: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** callback for enabling / disabling on time selection  ex : function(hour,minute) { return true; } */
-  var onMinuteShow: js.UndefOr[js.Function0[_]] = js.undefined
+  var onMinuteShow: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** Define a callback function when a hour / minutes is selected */
-  var onSelect: js.UndefOr[js.Function2[/* timeText */ String, /* inst */ js.Any, _]] = js.undefined
+  var onSelect: js.UndefOr[js.Function2[/* timeText */ String, /* inst */ Any, Any]] = js.undefined
+  
   /** optionally parse inputs of whole hours with minutes omitted */
   var optionalMinutes: js.UndefOr[Boolean] = js.undefined
+  
   /** The character to use to separate the time from the time period. */
   var periodSeparator: js.UndefOr[String] = js.undefined
+  
   /** number of rows for the input tables, minimum 2, makes more sense if you use multiple of 2 */
   var rows: js.UndefOr[Double] = js.undefined
+  
   /** Name of jQuery animation for popup */
   var showAnim: js.UndefOr[String] = js.undefined
+  
   // buttons
   /** shows an OK button to confirm the edit */
   var showCloseButton: js.UndefOr[Boolean] = js.undefined
+  
   /** Shows the deselect time button */
   var showDeselectButton: js.UndefOr[Boolean] = js.undefined
+  
   // 2011-08-05 0.2.4
   /** display the hours section of the dialog */
   var showHours: js.UndefOr[Boolean] = js.undefined
+  
   /** Define whether or not to show a leading zero for hours < 10. [true/false] */
   var showLeadingZero: js.UndefOr[Boolean] = js.undefined
+  
   /** display the minute section of the dialog */
   var showMinutes: js.UndefOr[Boolean] = js.undefined
+  
   /** Define whether or not to show a leading zero for minutes < 10. */
   var showMinutesLeadingZero: js.UndefOr[Boolean] = js.undefined
+  
   /** Shows the 'now' button */
   var showNowButton: js.UndefOr[Boolean] = js.undefined
+  
   /** 'focus' for popup on focus, */
   var showOn: js.UndefOr[String] = js.undefined
+  
   /** Options for enhanced animations */
-  var showOptions: js.UndefOr[js.Any] = js.undefined
+  var showOptions: js.UndefOr[Any] = js.undefined
+  
   /** Define whether or not to show AM/PM with selected time */
   var showPeriod: js.UndefOr[Boolean] = js.undefined
+  
   /** Show the AM/PM labels on the left of the time picker */
   var showPeriodLabels: js.UndefOr[Boolean] = js.undefined
+  
   /** The character to use to separate hours and minutes. */
   var timeSeparator: js.UndefOr[String] = js.undefined
 }
-
 object TimePickerOptions {
-  @scala.inline
-  def apply(
-    altField: String = null,
-    amPmText: js.Tuple2[String, String] = null,
-    appendText: String = null,
-    atPosition: String = null,
-    beforeShow: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    button: String = null,
-    closeButtonText: String = null,
-    defaultTime: String = null,
-    deselectButtonText: String = null,
-    hourText: String = null,
-    hours: TimePickerHour = null,
-    minuteText: String = null,
-    minutes: TimePickerMinutes = null,
-    myPosition: String = null,
-    nowButtonText: String = null,
-    onClose: (/* timeText */ String, /* inst */ js.Any) => CallbackTo[js.Any] = null,
-    onHourShow: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onMinuteShow: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onSelect: (/* timeText */ String, /* inst */ js.Any) => CallbackTo[js.Any] = null,
-    optionalMinutes: js.UndefOr[Boolean] = js.undefined,
-    periodSeparator: String = null,
-    rows: Int | Double = null,
-    showAnim: String = null,
-    showCloseButton: js.UndefOr[Boolean] = js.undefined,
-    showDeselectButton: js.UndefOr[Boolean] = js.undefined,
-    showHours: js.UndefOr[Boolean] = js.undefined,
-    showLeadingZero: js.UndefOr[Boolean] = js.undefined,
-    showMinutes: js.UndefOr[Boolean] = js.undefined,
-    showMinutesLeadingZero: js.UndefOr[Boolean] = js.undefined,
-    showNowButton: js.UndefOr[Boolean] = js.undefined,
-    showOn: String = null,
-    showOptions: js.Any = null,
-    showPeriod: js.UndefOr[Boolean] = js.undefined,
-    showPeriodLabels: js.UndefOr[Boolean] = js.undefined,
-    timeSeparator: String = null
-  ): TimePickerOptions = {
+  
+  inline def apply(): TimePickerOptions = {
     val __obj = js.Dynamic.literal()
-    if (altField != null) __obj.updateDynamic("altField")(altField.asInstanceOf[js.Any])
-    if (amPmText != null) __obj.updateDynamic("amPmText")(amPmText.asInstanceOf[js.Any])
-    if (appendText != null) __obj.updateDynamic("appendText")(appendText.asInstanceOf[js.Any])
-    if (atPosition != null) __obj.updateDynamic("atPosition")(atPosition.asInstanceOf[js.Any])
-    beforeShow.foreach(p => __obj.updateDynamic("beforeShow")(p.toJsFn))
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (closeButtonText != null) __obj.updateDynamic("closeButtonText")(closeButtonText.asInstanceOf[js.Any])
-    if (defaultTime != null) __obj.updateDynamic("defaultTime")(defaultTime.asInstanceOf[js.Any])
-    if (deselectButtonText != null) __obj.updateDynamic("deselectButtonText")(deselectButtonText.asInstanceOf[js.Any])
-    if (hourText != null) __obj.updateDynamic("hourText")(hourText.asInstanceOf[js.Any])
-    if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
-    if (minuteText != null) __obj.updateDynamic("minuteText")(minuteText.asInstanceOf[js.Any])
-    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
-    if (myPosition != null) __obj.updateDynamic("myPosition")(myPosition.asInstanceOf[js.Any])
-    if (nowButtonText != null) __obj.updateDynamic("nowButtonText")(nowButtonText.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2((t0: /* timeText */ java.lang.String, t1: /* inst */ js.Any) => onClose(t0, t1).runNow()))
-    onHourShow.foreach(p => __obj.updateDynamic("onHourShow")(p.toJsFn))
-    onMinuteShow.foreach(p => __obj.updateDynamic("onMinuteShow")(p.toJsFn))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2((t0: /* timeText */ java.lang.String, t1: /* inst */ js.Any) => onSelect(t0, t1).runNow()))
-    if (!js.isUndefined(optionalMinutes)) __obj.updateDynamic("optionalMinutes")(optionalMinutes.asInstanceOf[js.Any])
-    if (periodSeparator != null) __obj.updateDynamic("periodSeparator")(periodSeparator.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (showAnim != null) __obj.updateDynamic("showAnim")(showAnim.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDeselectButton)) __obj.updateDynamic("showDeselectButton")(showDeselectButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHours)) __obj.updateDynamic("showHours")(showHours.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLeadingZero)) __obj.updateDynamic("showLeadingZero")(showLeadingZero.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinutes)) __obj.updateDynamic("showMinutes")(showMinutes.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinutesLeadingZero)) __obj.updateDynamic("showMinutesLeadingZero")(showMinutesLeadingZero.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNowButton)) __obj.updateDynamic("showNowButton")(showNowButton.asInstanceOf[js.Any])
-    if (showOn != null) __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
-    if (showOptions != null) __obj.updateDynamic("showOptions")(showOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPeriod)) __obj.updateDynamic("showPeriod")(showPeriod.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPeriodLabels)) __obj.updateDynamic("showPeriodLabels")(showPeriodLabels.asInstanceOf[js.Any])
-    if (timeSeparator != null) __obj.updateDynamic("timeSeparator")(timeSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePickerOptions]
   }
+  
+  extension [Self <: TimePickerOptions](x: Self) {
+    
+    inline def setAltField(value: String): Self = StObject.set(x, "altField", value.asInstanceOf[js.Any])
+    
+    inline def setAltFieldUndefined: Self = StObject.set(x, "altField", js.undefined)
+    
+    inline def setAmPmText(value: js.Tuple2[String, String]): Self = StObject.set(x, "amPmText", value.asInstanceOf[js.Any])
+    
+    inline def setAmPmTextUndefined: Self = StObject.set(x, "amPmText", js.undefined)
+    
+    inline def setAppendText(value: String): Self = StObject.set(x, "appendText", value.asInstanceOf[js.Any])
+    
+    inline def setAppendTextUndefined: Self = StObject.set(x, "appendText", js.undefined)
+    
+    inline def setAtPosition(value: String): Self = StObject.set(x, "atPosition", value.asInstanceOf[js.Any])
+    
+    inline def setAtPositionUndefined: Self = StObject.set(x, "atPosition", js.undefined)
+    
+    inline def setBeforeShow(value: CallbackTo[Any]): Self = StObject.set(x, "beforeShow", value.toJsFn)
+    
+    inline def setBeforeShowUndefined: Self = StObject.set(x, "beforeShow", js.undefined)
+    
+    inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    
+    inline def setCloseButtonText(value: String): Self = StObject.set(x, "closeButtonText", value.asInstanceOf[js.Any])
+    
+    inline def setCloseButtonTextUndefined: Self = StObject.set(x, "closeButtonText", js.undefined)
+    
+    inline def setDefaultTime(value: String): Self = StObject.set(x, "defaultTime", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultTimeUndefined: Self = StObject.set(x, "defaultTime", js.undefined)
+    
+    inline def setDeselectButtonText(value: String): Self = StObject.set(x, "deselectButtonText", value.asInstanceOf[js.Any])
+    
+    inline def setDeselectButtonTextUndefined: Self = StObject.set(x, "deselectButtonText", js.undefined)
+    
+    inline def setHourText(value: String): Self = StObject.set(x, "hourText", value.asInstanceOf[js.Any])
+    
+    inline def setHourTextUndefined: Self = StObject.set(x, "hourText", js.undefined)
+    
+    inline def setHours(value: TimePickerHour): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+    
+    inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
+    
+    inline def setMinuteText(value: String): Self = StObject.set(x, "minuteText", value.asInstanceOf[js.Any])
+    
+    inline def setMinuteTextUndefined: Self = StObject.set(x, "minuteText", js.undefined)
+    
+    inline def setMinutes(value: TimePickerMinutes): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    
+    inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
+    
+    inline def setMyPosition(value: String): Self = StObject.set(x, "myPosition", value.asInstanceOf[js.Any])
+    
+    inline def setMyPositionUndefined: Self = StObject.set(x, "myPosition", js.undefined)
+    
+    inline def setNowButtonText(value: String): Self = StObject.set(x, "nowButtonText", value.asInstanceOf[js.Any])
+    
+    inline def setNowButtonTextUndefined: Self = StObject.set(x, "nowButtonText", js.undefined)
+    
+    inline def setOnClose(value: (/* timeText */ String, /* inst */ Any) => Any): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+    
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+    
+    inline def setOnHourShow(value: CallbackTo[Any]): Self = StObject.set(x, "onHourShow", value.toJsFn)
+    
+    inline def setOnHourShowUndefined: Self = StObject.set(x, "onHourShow", js.undefined)
+    
+    inline def setOnMinuteShow(value: CallbackTo[Any]): Self = StObject.set(x, "onMinuteShow", value.toJsFn)
+    
+    inline def setOnMinuteShowUndefined: Self = StObject.set(x, "onMinuteShow", js.undefined)
+    
+    inline def setOnSelect(value: (/* timeText */ String, /* inst */ Any) => Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+    
+    inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+    
+    inline def setOptionalMinutes(value: Boolean): Self = StObject.set(x, "optionalMinutes", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalMinutesUndefined: Self = StObject.set(x, "optionalMinutes", js.undefined)
+    
+    inline def setPeriodSeparator(value: String): Self = StObject.set(x, "periodSeparator", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodSeparatorUndefined: Self = StObject.set(x, "periodSeparator", js.undefined)
+    
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    
+    inline def setShowAnim(value: String): Self = StObject.set(x, "showAnim", value.asInstanceOf[js.Any])
+    
+    inline def setShowAnimUndefined: Self = StObject.set(x, "showAnim", js.undefined)
+    
+    inline def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
+    
+    inline def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
+    
+    inline def setShowDeselectButton(value: Boolean): Self = StObject.set(x, "showDeselectButton", value.asInstanceOf[js.Any])
+    
+    inline def setShowDeselectButtonUndefined: Self = StObject.set(x, "showDeselectButton", js.undefined)
+    
+    inline def setShowHours(value: Boolean): Self = StObject.set(x, "showHours", value.asInstanceOf[js.Any])
+    
+    inline def setShowHoursUndefined: Self = StObject.set(x, "showHours", js.undefined)
+    
+    inline def setShowLeadingZero(value: Boolean): Self = StObject.set(x, "showLeadingZero", value.asInstanceOf[js.Any])
+    
+    inline def setShowLeadingZeroUndefined: Self = StObject.set(x, "showLeadingZero", js.undefined)
+    
+    inline def setShowMinutes(value: Boolean): Self = StObject.set(x, "showMinutes", value.asInstanceOf[js.Any])
+    
+    inline def setShowMinutesLeadingZero(value: Boolean): Self = StObject.set(x, "showMinutesLeadingZero", value.asInstanceOf[js.Any])
+    
+    inline def setShowMinutesLeadingZeroUndefined: Self = StObject.set(x, "showMinutesLeadingZero", js.undefined)
+    
+    inline def setShowMinutesUndefined: Self = StObject.set(x, "showMinutes", js.undefined)
+    
+    inline def setShowNowButton(value: Boolean): Self = StObject.set(x, "showNowButton", value.asInstanceOf[js.Any])
+    
+    inline def setShowNowButtonUndefined: Self = StObject.set(x, "showNowButton", js.undefined)
+    
+    inline def setShowOn(value: String): Self = StObject.set(x, "showOn", value.asInstanceOf[js.Any])
+    
+    inline def setShowOnUndefined: Self = StObject.set(x, "showOn", js.undefined)
+    
+    inline def setShowOptions(value: Any): Self = StObject.set(x, "showOptions", value.asInstanceOf[js.Any])
+    
+    inline def setShowOptionsUndefined: Self = StObject.set(x, "showOptions", js.undefined)
+    
+    inline def setShowPeriod(value: Boolean): Self = StObject.set(x, "showPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setShowPeriodLabels(value: Boolean): Self = StObject.set(x, "showPeriodLabels", value.asInstanceOf[js.Any])
+    
+    inline def setShowPeriodLabelsUndefined: Self = StObject.set(x, "showPeriodLabels", js.undefined)
+    
+    inline def setShowPeriodUndefined: Self = StObject.set(x, "showPeriod", js.undefined)
+    
+    inline def setTimeSeparator(value: String): Self = StObject.set(x, "timeSeparator", value.asInstanceOf[js.Any])
+    
+    inline def setTimeSeparatorUndefined: Self = StObject.set(x, "timeSeparator", js.undefined)
+  }
 }
-

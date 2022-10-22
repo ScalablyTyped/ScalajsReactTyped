@@ -1,12 +1,11 @@
-package typingsJapgolly.dymoLabelFramework.dymo.label
+package typingsJapgolly.dymoLabelFramework.dymo.label.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object framework {
-  /**
-  	 * Undocumented
-  	 */
-  type AddPrinterUriCallback = js.Function1[/* printerUri */ java.lang.String, js.Any]
-}
+
+/**
+  * Undocumented
+  */
+type AddPrinterUriCallback = js.Function1[/* printerUri */ String, Any]

@@ -1,93 +1,77 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ListLevelPermissionMask extends js.Object
-
+sealed trait ListLevelPermissionMask extends StObject
 @JSGlobal("SP.ListLevelPermissionMask")
 @js.native
-object ListLevelPermissionMask extends js.Object {
-   // : 16,
+object ListLevelPermissionMask extends StObject {
+  
+  // : 8,
   @js.native
-  sealed trait approveItems extends ListLevelPermissionMask
+  sealed trait approveItems
+    extends StObject
+       with ListLevelPermissionMask
   
-   // : 256,
+  // : 128,
   @js.native
-  sealed trait breakCheckout extends ListLevelPermissionMask
+  sealed trait breakCheckout
+    extends StObject
+       with ListLevelPermissionMask
   
-   // : 8,
+  // : 4,
   @js.native
-  sealed trait deleteListItems extends ListLevelPermissionMask
+  sealed trait deleteListItems
+    extends StObject
+       with ListLevelPermissionMask
   
-   // : 128,
+  // : 64,
   @js.native
-  sealed trait deleteVersions extends ListLevelPermissionMask
+  sealed trait deleteVersions
+    extends StObject
+       with ListLevelPermissionMask
   
-   // : 4,
+  // : 2,
   @js.native
-  sealed trait editListItems extends ListLevelPermissionMask
+  sealed trait editListItems
+    extends StObject
+       with ListLevelPermissionMask
   
-   // : 2,
+  // : 1,
   @js.native
-  sealed trait insertListItems extends ListLevelPermissionMask
+  sealed trait insertListItems
+    extends StObject
+       with ListLevelPermissionMask
+  
+  // : 512,
+  @js.native
+  sealed trait manageLists
+    extends StObject
+       with ListLevelPermissionMask
+  
+  // : 256,
+  @js.native
+  sealed trait managePersonalViews
+    extends StObject
+       with ListLevelPermissionMask
+  
+  // : 16,
+  @js.native
+  sealed trait openItems
+    extends StObject
+       with ListLevelPermissionMask
   
   @js.native
-  sealed trait manageLists extends ListLevelPermissionMask
+  sealed trait viewListItems
+    extends StObject
+       with ListLevelPermissionMask
   
-   // : 512,
+  // : 32,
   @js.native
-  sealed trait managePersonalViews extends ListLevelPermissionMask
-  
-   // : 32,
-  @js.native
-  sealed trait openItems extends ListLevelPermissionMask
-  
-   // : 1,
-  @js.native
-  sealed trait viewListItems extends ListLevelPermissionMask
-  
-   // : 64,
-  @js.native
-  sealed trait viewVersions extends ListLevelPermissionMask
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ListLevelPermissionMask with Double] = js.native
-  /* 4 */ @js.native
-  object approveItems extends TopLevel[approveItems with Double]
-  
-  /* 8 */ @js.native
-  object breakCheckout extends TopLevel[breakCheckout with Double]
-  
-  /* 3 */ @js.native
-  object deleteListItems extends TopLevel[deleteListItems with Double]
-  
-  /* 7 */ @js.native
-  object deleteVersions extends TopLevel[deleteVersions with Double]
-  
-  /* 2 */ @js.native
-  object editListItems extends TopLevel[editListItems with Double]
-  
-  /* 1 */ @js.native
-  object insertListItems extends TopLevel[insertListItems with Double]
-  
-  /* 10 */ @js.native
-  object manageLists extends TopLevel[manageLists with Double]
-  
-  /* 9 */ @js.native
-  object managePersonalViews extends TopLevel[managePersonalViews with Double]
-  
-  /* 5 */ @js.native
-  object openItems extends TopLevel[openItems with Double]
-  
-  /* 0 */ @js.native
-  object viewListItems extends TopLevel[viewListItems with Double]
-  
-  /* 6 */ @js.native
-  object viewVersions extends TopLevel[viewVersions with Double]
-  
+  sealed trait viewVersions
+    extends StObject
+       with ListLevelPermissionMask
 }
-

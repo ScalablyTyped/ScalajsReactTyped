@@ -1,41 +1,39 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.NumericTextBox")
 @js.native
-class NumericTextBox protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: NumericTextBoxOptions) = this()
-  @JSName("options")
-  var options_NumericTextBox: NumericTextBoxOptions = js.native
-  var wrapper: JQuery = js.native
+trait NumericTextBox
+  extends StObject
+     with Widget {
+  
   def enable(enable: Boolean): Unit = js.native
+  
   def focus(): Unit = js.native
+  
   def max(): Double = js.native
   def max(value: String): Unit = js.native
   def max(value: Double): Unit = js.native
+  
   def min(): Double = js.native
   def min(value: String): Unit = js.native
   def min(value: Double): Unit = js.native
+  
+  @JSName("options")
+  var options_NumericTextBox: NumericTextBoxOptions = js.native
+  
   def readonly(readonly: Boolean): Unit = js.native
+  
   def step(): Double = js.native
   def step(value: String): Unit = js.native
   def step(value: Double): Unit = js.native
+  
   def value(): Double = js.native
   def value(value: String): Unit = js.native
   def value(value: Double): Unit = js.native
+  
+  var wrapper: JQuery = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.ui.NumericTextBox")
-@js.native
-object NumericTextBox extends js.Object {
-  var fn: NumericTextBox = js.native
-  def extend(proto: js.Object): NumericTextBox = js.native
-}
-

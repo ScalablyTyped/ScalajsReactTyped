@@ -1,22 +1,21 @@
 package typingsJapgolly.grammarkdown.mod
 
-import typingsJapgolly.grammarkdown.nodesMod.AssertionKind
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.CloseBracketToken
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.OpenBracketGreaterThanToken
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
+import typingsJapgolly.grammarkdown.distTokensMod.AssertionKind
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.CloseBracketToken
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.OpenBracketGreaterThanToken
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.OpenBracketToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grammarkdown", "AssertionBase")
+/* note: abstract class */ @JSImport("grammarkdown", "AssertionBase")
 @js.native
-abstract class AssertionBase[TKind /* <: AssertionKind */, TBracket /* <: OpenBracketToken | OpenBracketGreaterThanToken */] protected ()
-  extends typingsJapgolly.grammarkdown.nodesMod.AssertionBase[TKind, TBracket] {
-  def this(kind: TKind, openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[TBracket]) = this()
+open class AssertionBase[TKind /* <: AssertionKind */, TBracket /* <: OpenBracketToken | OpenBracketGreaterThanToken */] protected ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.AssertionBase[TKind, TBracket] {
+  def this(kind: TKind, openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[TBracket]) = this()
   def this(
     kind: TKind,
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[TBracket],
-    closeBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[CloseBracketToken]
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[TBracket],
+    closeBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
 }
-

@@ -1,20 +1,16 @@
 package typingsJapgolly.winrt.Windows.Devices.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Input.MouseDevice")
-@js.native
-class MouseDevice () extends IMouseDevice {
-  /* CompleteClass */
-  override var onmousemoved: js.Any = js.native
+trait MouseDevice
+  extends StObject
+     with IMouseDevice
+object MouseDevice {
+  
+  inline def apply(onmousemoved: Any): MouseDevice = {
+    val __obj = js.Dynamic.literal(onmousemoved = onmousemoved.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MouseDevice]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Devices.Input.MouseDevice")
-@js.native
-object MouseDevice extends js.Object {
-  def getForCurrentView(): MouseDevice = js.native
-}
-

@@ -1,56 +1,64 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridHidingColumnSetting
-  extends /**
-	 * Option for IgGridHidingColumnSetting
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Allows the column to be hidden.
-  	 *
-  	 */
+    * Allows the column to be hidden.
+    *
+    */
   var allowHiding: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Column index. Can be used in place of column key. the preferred way of populating a column setting is to always use the column keys as identifiers.
-  	 *
-  	 */
+    * Column index. Can be used in place of column key. the preferred way of populating a column setting is to always use the column keys as identifiers.
+    *
+    */
   var columnIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Column key. this is a required property in every column setting if columnIndex is not set.
-  	 *
-  	 */
+    * Column key. this is a required property in every column setting if columnIndex is not set.
+    *
+    */
   var columnKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Sets the initial visibility of the column.
-  	 *
-  	 */
+    * Sets the initial visibility of the column.
+    *
+    */
   var hidden: js.UndefOr[Boolean] = js.undefined
 }
-
 object IgGridHidingColumnSetting {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgGridHidingColumnSetting
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    allowHiding: js.UndefOr[Boolean] = js.undefined,
-    columnIndex: Int | Double = null,
-    columnKey: String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined
-  ): IgGridHidingColumnSetting = {
+  
+  inline def apply(): IgGridHidingColumnSetting = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowHiding)) __obj.updateDynamic("allowHiding")(allowHiding.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridHidingColumnSetting]
   }
+  
+  extension [Self <: IgGridHidingColumnSetting](x: Self) {
+    
+    inline def setAllowHiding(value: Boolean): Self = StObject.set(x, "allowHiding", value.asInstanceOf[js.Any])
+    
+    inline def setAllowHidingUndefined: Self = StObject.set(x, "allowHiding", js.undefined)
+    
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+  }
 }
-

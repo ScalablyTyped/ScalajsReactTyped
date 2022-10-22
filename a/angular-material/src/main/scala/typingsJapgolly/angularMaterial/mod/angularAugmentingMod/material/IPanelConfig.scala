@@ -1,114 +1,200 @@
 package typingsJapgolly.angularMaterial.mod.angularAugmentingMod.material
 
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
 import typingsJapgolly.angular.JQuery
+import typingsJapgolly.angular.mod.IController
 import typingsJapgolly.angular.mod.IControllerConstructor
 import typingsJapgolly.angular.mod.Injectable
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPanelConfig extends js.Object {
-   // default: false
+trait IPanelConfig extends StObject {
+  
+  // default: false
   var animation: js.UndefOr[IPanelAnimation] = js.undefined
+  
   var attachTo: js.UndefOr[String | JQuery | Element] = js.undefined
+  
   var bindToController: js.UndefOr[Boolean] = js.undefined
+  
   var clickOutsideToClose: js.UndefOr[Boolean] = js.undefined
+  
   var controller: js.UndefOr[String | Injectable[IControllerConstructor]] = js.undefined
+  
   var controllerAs: js.UndefOr[String] = js.undefined
-   // default: false
+  
+  // default: false
   var disableParentScroll: js.UndefOr[Boolean] = js.undefined
-   // default: false
+  
+  // default: false
   var escapeToClose: js.UndefOr[Boolean] = js.undefined
-   // default: false
+  
+  // default: false
   var focusOnOpen: js.UndefOr[Boolean] = js.undefined
-   // default: true
+  
+  // default: true
   var fullscreen: js.UndefOr[Boolean] = js.undefined
+  
   var hasBackdrop: js.UndefOr[Boolean] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
-   // default: true
-  var locals: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var onCloseSuccess: js.UndefOr[js.Function2[/* panel */ IPanelRef, /* closeReason */ String, _]] = js.undefined
-   // default: false
-  var onDomAdded: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.undefined
-  var onDomRemoved: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.undefined
-  var onOpenComplete: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.undefined
-  var onRemoving: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.undefined
+  
+  // default: true
+  var locals: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
+  var onCloseSuccess: js.UndefOr[js.Function2[/* panel */ IPanelRef, /* closeReason */ String, Any]] = js.undefined
+  
+  // default: false
+  var onDomAdded: js.UndefOr[js.Function1[/* repeated */ Any, PromiseLike[Unit] | Unit]] = js.undefined
+  
+  var onDomRemoved: js.UndefOr[js.Function1[/* repeated */ Any, PromiseLike[Unit] | Unit]] = js.undefined
+  
+  var onOpenComplete: js.UndefOr[js.Function1[/* repeated */ Any, PromiseLike[Unit] | Unit]] = js.undefined
+  
+  var onRemoving: js.UndefOr[js.Function1[/* repeated */ Any, PromiseLike[Unit] | Unit]] = js.undefined
+  
   var origin: js.UndefOr[String | JQuery | Element] = js.undefined
+  
   var panelClass: js.UndefOr[String] = js.undefined
-   // default: 80
+  
+  // default: 80
   var position: js.UndefOr[IPanelPosition] = js.undefined
+  
   var propagateContainerEvents: js.UndefOr[Boolean] = js.undefined
+  
   var resolve: js.UndefOr[ResolveObject] = js.undefined
+  
   var template: js.UndefOr[String] = js.undefined
+  
   var templateUrl: js.UndefOr[String] = js.undefined
-   // default: false
+  
+  // default: false
   var trapFocus: js.UndefOr[Boolean] = js.undefined
+  
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object IPanelConfig {
-  @scala.inline
-  def apply(
-    animation: IPanelAnimation = null,
-    attachTo: String | JQuery | Element = null,
-    bindToController: js.UndefOr[Boolean] = js.undefined,
-    clickOutsideToClose: js.UndefOr[Boolean] = js.undefined,
-    controller: String | Injectable[IControllerConstructor] = null,
-    controllerAs: String = null,
-    disableParentScroll: js.UndefOr[Boolean] = js.undefined,
-    escapeToClose: js.UndefOr[Boolean] = js.undefined,
-    focusOnOpen: js.UndefOr[Boolean] = js.undefined,
-    fullscreen: js.UndefOr[Boolean] = js.undefined,
-    hasBackdrop: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    locals: StringDictionary[js.Any] = null,
-    onCloseSuccess: (/* panel */ IPanelRef, /* closeReason */ String) => CallbackTo[js.Any] = null,
-    onDomAdded: /* repeated */ js.Any => CallbackTo[js.Thenable[Unit] | Unit] = null,
-    onDomRemoved: /* repeated */ js.Any => CallbackTo[js.Thenable[Unit] | Unit] = null,
-    onOpenComplete: /* repeated */ js.Any => CallbackTo[js.Thenable[Unit] | Unit] = null,
-    onRemoving: /* repeated */ js.Any => CallbackTo[js.Thenable[Unit] | Unit] = null,
-    origin: String | JQuery | Element = null,
-    panelClass: String = null,
-    position: IPanelPosition = null,
-    propagateContainerEvents: js.UndefOr[Boolean] = js.undefined,
-    resolve: ResolveObject = null,
-    template: String = null,
-    templateUrl: String = null,
-    trapFocus: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
-  ): IPanelConfig = {
+  
+  inline def apply(): IPanelConfig = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(bindToController)) __obj.updateDynamic("bindToController")(bindToController.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickOutsideToClose)) __obj.updateDynamic("clickOutsideToClose")(clickOutsideToClose.asInstanceOf[js.Any])
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableParentScroll)) __obj.updateDynamic("disableParentScroll")(disableParentScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(escapeToClose)) __obj.updateDynamic("escapeToClose")(escapeToClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusOnOpen)) __obj.updateDynamic("focusOnOpen")(focusOnOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasBackdrop)) __obj.updateDynamic("hasBackdrop")(hasBackdrop.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (locals != null) __obj.updateDynamic("locals")(locals.asInstanceOf[js.Any])
-    if (onCloseSuccess != null) __obj.updateDynamic("onCloseSuccess")(js.Any.fromFunction2((t0: /* panel */ typingsJapgolly.angularMaterial.mod.angularAugmentingMod.material.IPanelRef, t1: /* closeReason */ java.lang.String) => onCloseSuccess(t0, t1).runNow()))
-    if (onDomAdded != null) __obj.updateDynamic("onDomAdded")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onDomAdded(t0).runNow()))
-    if (onDomRemoved != null) __obj.updateDynamic("onDomRemoved")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onDomRemoved(t0).runNow()))
-    if (onOpenComplete != null) __obj.updateDynamic("onOpenComplete")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onOpenComplete(t0).runNow()))
-    if (onRemoving != null) __obj.updateDynamic("onRemoving")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onRemoving(t0).runNow()))
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (panelClass != null) __obj.updateDynamic("panelClass")(panelClass.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(propagateContainerEvents)) __obj.updateDynamic("propagateContainerEvents")(propagateContainerEvents.asInstanceOf[js.Any])
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(trapFocus)) __obj.updateDynamic("trapFocus")(trapFocus.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanelConfig]
   }
+  
+  extension [Self <: IPanelConfig](x: Self) {
+    
+    inline def setAnimation(value: IPanelAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setAttachTo(value: String | JQuery | Element): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
+    
+    inline def setAttachToUndefined: Self = StObject.set(x, "attachTo", js.undefined)
+    
+    inline def setBindToController(value: Boolean): Self = StObject.set(x, "bindToController", value.asInstanceOf[js.Any])
+    
+    inline def setBindToControllerUndefined: Self = StObject.set(x, "bindToController", js.undefined)
+    
+    inline def setClickOutsideToClose(value: Boolean): Self = StObject.set(x, "clickOutsideToClose", value.asInstanceOf[js.Any])
+    
+    inline def setClickOutsideToCloseUndefined: Self = StObject.set(x, "clickOutsideToClose", js.undefined)
+    
+    inline def setController(value: String | Injectable[IControllerConstructor]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    
+    inline def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
+    
+    inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
+    
+    inline def setControllerFunction1(value: /* repeated */ Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
+    
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    
+    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value*))
+    
+    inline def setDisableParentScroll(value: Boolean): Self = StObject.set(x, "disableParentScroll", value.asInstanceOf[js.Any])
+    
+    inline def setDisableParentScrollUndefined: Self = StObject.set(x, "disableParentScroll", js.undefined)
+    
+    inline def setEscapeToClose(value: Boolean): Self = StObject.set(x, "escapeToClose", value.asInstanceOf[js.Any])
+    
+    inline def setEscapeToCloseUndefined: Self = StObject.set(x, "escapeToClose", js.undefined)
+    
+    inline def setFocusOnOpen(value: Boolean): Self = StObject.set(x, "focusOnOpen", value.asInstanceOf[js.Any])
+    
+    inline def setFocusOnOpenUndefined: Self = StObject.set(x, "focusOnOpen", js.undefined)
+    
+    inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+    
+    inline def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
+    
+    inline def setHasBackdrop(value: Boolean): Self = StObject.set(x, "hasBackdrop", value.asInstanceOf[js.Any])
+    
+    inline def setHasBackdropUndefined: Self = StObject.set(x, "hasBackdrop", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLocals(value: StringDictionary[Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+    
+    inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
+    
+    inline def setOnCloseSuccess(value: (/* panel */ IPanelRef, /* closeReason */ String) => Any): Self = StObject.set(x, "onCloseSuccess", js.Any.fromFunction2(value))
+    
+    inline def setOnCloseSuccessUndefined: Self = StObject.set(x, "onCloseSuccess", js.undefined)
+    
+    inline def setOnDomAdded(value: /* repeated */ Any => PromiseLike[Unit] | Unit): Self = StObject.set(x, "onDomAdded", js.Any.fromFunction1(value))
+    
+    inline def setOnDomAddedUndefined: Self = StObject.set(x, "onDomAdded", js.undefined)
+    
+    inline def setOnDomRemoved(value: /* repeated */ Any => PromiseLike[Unit] | Unit): Self = StObject.set(x, "onDomRemoved", js.Any.fromFunction1(value))
+    
+    inline def setOnDomRemovedUndefined: Self = StObject.set(x, "onDomRemoved", js.undefined)
+    
+    inline def setOnOpenComplete(value: /* repeated */ Any => PromiseLike[Unit] | Unit): Self = StObject.set(x, "onOpenComplete", js.Any.fromFunction1(value))
+    
+    inline def setOnOpenCompleteUndefined: Self = StObject.set(x, "onOpenComplete", js.undefined)
+    
+    inline def setOnRemoving(value: /* repeated */ Any => PromiseLike[Unit] | Unit): Self = StObject.set(x, "onRemoving", js.Any.fromFunction1(value))
+    
+    inline def setOnRemovingUndefined: Self = StObject.set(x, "onRemoving", js.undefined)
+    
+    inline def setOrigin(value: String | JQuery | Element): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    
+    inline def setPanelClass(value: String): Self = StObject.set(x, "panelClass", value.asInstanceOf[js.Any])
+    
+    inline def setPanelClassUndefined: Self = StObject.set(x, "panelClass", js.undefined)
+    
+    inline def setPosition(value: IPanelPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setPropagateContainerEvents(value: Boolean): Self = StObject.set(x, "propagateContainerEvents", value.asInstanceOf[js.Any])
+    
+    inline def setPropagateContainerEventsUndefined: Self = StObject.set(x, "propagateContainerEvents", js.undefined)
+    
+    inline def setResolve(value: ResolveObject): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+    
+    inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+    
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+    
+    inline def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
+    
+    inline def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

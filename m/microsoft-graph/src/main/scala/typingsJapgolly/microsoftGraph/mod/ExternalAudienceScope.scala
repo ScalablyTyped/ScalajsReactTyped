@@ -1,25 +1,21 @@
 package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.contactsOnly
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.all
 */
-trait ExternalAudienceScope extends js.Object
-
+trait ExternalAudienceScope extends StObject
 object ExternalAudienceScope {
-  @scala.inline
-  def all: typingsJapgolly.microsoftGraph.microsoftGraphStrings.all = this.cast("all")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def contactsOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.contactsOnly = this.cast("contactsOnly")
-  @scala.inline
-  def none: none_ = this.cast("none")
+  
+  inline def all: typingsJapgolly.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.all]
+  
+  inline def contactsOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.contactsOnly = "contactsOnly".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.contactsOnly]
+  
+  inline def none: none_ = "none".asInstanceOf[none_]
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.slackMock.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConfigOptions extends js.Object {
+trait ConfigOptions extends StObject {
+  
   var logLevel: js.UndefOr[String] = js.undefined
+  
   var rtmPort: js.UndefOr[Double] = js.undefined
 }
-
 object ConfigOptions {
-  @scala.inline
-  def apply(logLevel: String = null, rtmPort: Int | Double = null): ConfigOptions = {
+  
+  inline def apply(): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (rtmPort != null) __obj.updateDynamic("rtmPort")(rtmPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
+  
+  extension [Self <: ConfigOptions](x: Self) {
+    
+    inline def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    
+    inline def setRtmPort(value: Double): Self = StObject.set(x, "rtmPort", value.asInstanceOf[js.Any])
+    
+    inline def setRtmPortUndefined: Self = StObject.set(x, "rtmPort", js.undefined)
+  }
 }
-

@@ -1,27 +1,23 @@
 package typingsJapgolly.activexInfopath.InfoPath
 
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`1`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`2`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`3`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`1`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`2`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`1`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`3`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`2`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`1`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`3`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`2`
 */
-trait XdWindowState extends js.Object
-
+trait XdWindowState extends StObject
 object XdWindowState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xdWindowStateMaximize: `1` = this.cast(1)
-  @scala.inline
-  def xdWindowStateMinimize: `3` = this.cast(3)
-  @scala.inline
-  def xdWindowStateNormal: `2` = this.cast(2)
+  
+  inline def xdWindowStateMaximize: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xdWindowStateMinimize: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xdWindowStateNormal: `2` = 2.asInstanceOf[`2`]
 }
-

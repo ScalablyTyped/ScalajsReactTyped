@@ -1,7 +1,7 @@
 
 # Scala.js typings for utility
 
-Typings are for version 1.16.1
+Typings are for version 1.17.0
 
 ## Library description:
 A collection of useful utilities.
@@ -10,10 +10,10 @@ A collection of useful utilities.
 | ------------------ | :-------------: |
 | Full name          | utility |
 | Keywords           | utility, util, utils, sha256, sha1, hash, hex |
-| # releases         | 8 |
-| # dependents       | 182 |
-| # downloads        | 4473764 |
-| # stars            | 23 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1105110.6666666667 |
+| # stars            | 1222.0 |
 
 ## Links
 - [Homepage](https://github.com/node-modules/utility)

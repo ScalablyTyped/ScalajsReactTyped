@@ -1,9 +1,7 @@
 package typingsJapgolly.reactJsonView.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.reactJsonView.mod.CollapsedFieldProps
 import typingsJapgolly.reactJsonView.mod.InteractionProps
@@ -13,75 +11,88 @@ import typingsJapgolly.reactJsonView.mod.ReactJsonViewProps
 import typingsJapgolly.reactJsonView.mod.ThemeKeys
 import typingsJapgolly.reactJsonView.mod.ThemeObject
 import typingsJapgolly.reactJsonView.mod.TypeDefaultValue
-import typingsJapgolly.reactJsonView.mod.default
 import typingsJapgolly.reactJsonView.reactJsonViewBooleans.`false`
 import typingsJapgolly.reactJsonView.reactJsonViewStrings.circle
 import typingsJapgolly.reactJsonView.reactJsonViewStrings.square
 import typingsJapgolly.reactJsonView.reactJsonViewStrings.triangle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactJsonView {
-  def apply(
-    src: js.Object,
-    collapseStringsAfterLength: Double | `false` = null,
-    collapsed: Boolean | Double = null,
-    defaultValue: TypeDefaultValue | js.Array[TypeDefaultValue] = null,
-    displayDataTypes: js.UndefOr[Boolean] = js.undefined,
-    displayObjectSize: js.UndefOr[Boolean] = js.undefined,
-    enableClipboard: Boolean | (js.Function1[/* copy */ OnCopyProps, Unit]) = null,
-    groupArraysAfterLength: Int | Double = null,
-    iconStyle: circle | triangle | square = null,
-    indentWidth: Int | Double = null,
-    name: String | `false` = null,
-    onAdd: (js.Function1[/* add */ InteractionProps, `false` | _]) | `false` = null,
-    onDelete: (js.Function1[/* del */ InteractionProps, `false` | _]) | `false` = null,
-    onEdit: (js.Function1[/* edit */ InteractionProps, `false` | _]) | `false` = null,
-    onSelect: (js.Function1[/* select */ OnSelectProps, Unit]) | `false` = null,
-    shouldCollapse: `false` | (js.Function1[/* field */ CollapsedFieldProps, Boolean]) = null,
-    sortKeys: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    theme: ThemeKeys | ThemeObject = null,
-    validationMessage: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ReactJsonViewProps, default, Unit, ReactJsonViewProps] = {
-    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
   
-      if (collapseStringsAfterLength != null) __obj.updateDynamic("collapseStringsAfterLength")(collapseStringsAfterLength.asInstanceOf[js.Any])
-    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayDataTypes)) __obj.updateDynamic("displayDataTypes")(displayDataTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayObjectSize)) __obj.updateDynamic("displayObjectSize")(displayObjectSize.asInstanceOf[js.Any])
-    if (enableClipboard != null) __obj.updateDynamic("enableClipboard")(enableClipboard.asInstanceOf[js.Any])
-    if (groupArraysAfterLength != null) __obj.updateDynamic("groupArraysAfterLength")(groupArraysAfterLength.asInstanceOf[js.Any])
-    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
-    if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd.asInstanceOf[js.Any])
-    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete.asInstanceOf[js.Any])
-    if (onEdit != null) __obj.updateDynamic("onEdit")(onEdit.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
-    if (shouldCollapse != null) __obj.updateDynamic("shouldCollapse")(shouldCollapse.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortKeys)) __obj.updateDynamic("sortKeys")(sortKeys.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactJsonView.mod.ReactJsonViewProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactJsonView.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactJsonView.mod.ReactJsonViewProps])(children: _*)
+  inline def apply(src: js.Object): Builder = {
+    val __props = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ReactJsonViewProps]))
   }
+  
   @JSImport("react-json-view", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def collapseStringsAfterLength(value: Double | `false`): this.type = set("collapseStringsAfterLength", value.asInstanceOf[js.Any])
+    
+    inline def collapsed(value: Boolean | Double): this.type = set("collapsed", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: TypeDefaultValue | js.Array[TypeDefaultValue]): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def defaultValueNull: this.type = set("defaultValue", null)
+    
+    inline def defaultValueVarargs(value: TypeDefaultValue*): this.type = set("defaultValue", js.Array(value*))
+    
+    inline def displayDataTypes(value: Boolean): this.type = set("displayDataTypes", value.asInstanceOf[js.Any])
+    
+    inline def displayObjectSize(value: Boolean): this.type = set("displayObjectSize", value.asInstanceOf[js.Any])
+    
+    inline def enableClipboard(value: Boolean | (js.Function1[/* copy */ OnCopyProps, Unit])): this.type = set("enableClipboard", value.asInstanceOf[js.Any])
+    
+    inline def enableClipboardFunction1(value: /* copy */ OnCopyProps => Callback): this.type = set("enableClipboard", js.Any.fromFunction1((t0: /* copy */ OnCopyProps) => value(t0).runNow()))
+    
+    inline def groupArraysAfterLength(value: Double): this.type = set("groupArraysAfterLength", value.asInstanceOf[js.Any])
+    
+    inline def iconStyle(value: circle | triangle | square): this.type = set("iconStyle", value.asInstanceOf[js.Any])
+    
+    inline def indentWidth(value: Double): this.type = set("indentWidth", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String | `false`): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def nameNull: this.type = set("name", null)
+    
+    inline def onAdd(value: (js.Function1[/* add */ InteractionProps, `false` | Any]) | `false`): this.type = set("onAdd", value.asInstanceOf[js.Any])
+    
+    inline def onAddFunction1(value: /* add */ InteractionProps => `false` | Any): this.type = set("onAdd", js.Any.fromFunction1(value))
+    
+    inline def onDelete(value: (js.Function1[/* del */ InteractionProps, `false` | Any]) | `false`): this.type = set("onDelete", value.asInstanceOf[js.Any])
+    
+    inline def onDeleteFunction1(value: /* del */ InteractionProps => `false` | Any): this.type = set("onDelete", js.Any.fromFunction1(value))
+    
+    inline def onEdit(value: (js.Function1[/* edit */ InteractionProps, `false` | Any]) | `false`): this.type = set("onEdit", value.asInstanceOf[js.Any])
+    
+    inline def onEditFunction1(value: /* edit */ InteractionProps => `false` | Any): this.type = set("onEdit", js.Any.fromFunction1(value))
+    
+    inline def onSelect(value: (js.Function1[/* select */ OnSelectProps, Unit]) | `false`): this.type = set("onSelect", value.asInstanceOf[js.Any])
+    
+    inline def onSelectFunction1(value: /* select */ OnSelectProps => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: /* select */ OnSelectProps) => value(t0).runNow()))
+    
+    inline def quotesOnKeys(value: Boolean): this.type = set("quotesOnKeys", value.asInstanceOf[js.Any])
+    
+    inline def shouldCollapse(value: `false` | (js.Function1[/* field */ CollapsedFieldProps, Boolean])): this.type = set("shouldCollapse", value.asInstanceOf[js.Any])
+    
+    inline def shouldCollapseFunction1(value: /* field */ CollapsedFieldProps => Boolean): this.type = set("shouldCollapse", js.Any.fromFunction1(value))
+    
+    inline def sortKeys(value: Boolean): this.type = set("sortKeys", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: ThemeKeys | ThemeObject): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def validationMessage(value: String): this.type = set("validationMessage", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ReactJsonViewProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

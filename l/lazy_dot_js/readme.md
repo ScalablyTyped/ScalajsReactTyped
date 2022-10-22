@@ -10,10 +10,10 @@ Like Underscore, but lazier
 | ------------------ | :-------------: |
 | Full name          | lazy.js |
 | Keywords           | lazy, functional, performance, speed, util |
-| # releases         | 2 |
-| # dependents       | 73 |
-| # downloads        | 612628 |
-| # stars            | 18 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 88967.33333333333 |
+| # stars            | 6002.0 |
 
 ## Links
 - [Homepage](http://dtao.github.io/lazy.js/)

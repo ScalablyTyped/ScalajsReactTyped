@@ -1,25 +1,14 @@
 package typingsJapgolly.std
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigatorContentUtils extends js.Object {
-  def registerProtocolHandler(scheme: java.lang.String, url: java.lang.String, title: java.lang.String): Unit
-  def unregisterProtocolHandler(scheme: java.lang.String, url: java.lang.String): Unit
+@js.native
+trait NavigatorContentUtils extends StObject {
+  
+  /** Available only in secure contexts. */
+  /* standard dom */
+  def registerProtocolHandler(scheme: java.lang.String, url: java.lang.String): Unit = js.native
+  def registerProtocolHandler(scheme: java.lang.String, url: org.scalajs.dom.URL): Unit = js.native
 }
-
-object NavigatorContentUtils {
-  @scala.inline
-  def apply(
-    registerProtocolHandler: (java.lang.String, java.lang.String, java.lang.String) => Callback,
-    unregisterProtocolHandler: (java.lang.String, java.lang.String) => Callback
-  ): NavigatorContentUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registerProtocolHandler")(js.Any.fromFunction3((t0: java.lang.String, t1: java.lang.String, t2: java.lang.String) => registerProtocolHandler(t0, t1, t2).runNow()))
-    __obj.updateDynamic("unregisterProtocolHandler")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => unregisterProtocolHandler(t0, t1).runNow()))
-    __obj.asInstanceOf[NavigatorContentUtils]
-  }
-}
-

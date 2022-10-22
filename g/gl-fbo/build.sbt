@@ -1,16 +1,14 @@
 organization := "org.scalablytyped.japgolly"
 name := "gl-fbo"
-version := "2.0-dt-20200219Z-6c5ecf"
-scalaVersion := "2.13.1"
+version := "2.0-dt-20211202Z-7a0e64"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "gl-texture2d" % "2.1-dt-20180801Z-82eb94",
-  "org.scalablytyped.japgolly" %%% "ndarray" % "1.0-dt-20190212Z-fde09a",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "gl-texture2d" % "2.1-dt-20211223Z-43a5d9",
+  "org.scalablytyped.japgolly" %%% "ndarray" % "1.0-dt-20211202Z-93c1a3",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

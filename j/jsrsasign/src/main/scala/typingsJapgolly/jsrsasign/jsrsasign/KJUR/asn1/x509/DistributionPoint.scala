@@ -1,9 +1,9 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typingsJapgolly.jsrsasign.AnonDpobj
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DistributionPoint ASN.1 structure class
@@ -30,10 +30,19 @@ import scala.scalajs.js.annotation._
   *      aACompromise            (8) }
   * ```
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.DistributionPoint")
-@js.native
-class DistributionPoint () extends js.Object {
-  def this(params: AnonDpobj) = this()
-  def getEncodedHex(): String = js.native
+trait DistributionPoint extends StObject {
+  
+  def getEncodedHex(): String
 }
-
+object DistributionPoint {
+  
+  inline def apply(getEncodedHex: CallbackTo[String]): DistributionPoint = {
+    val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn)
+    __obj.asInstanceOf[DistributionPoint]
+  }
+  
+  extension [Self <: DistributionPoint](x: Self) {
+    
+    inline def setGetEncodedHex(value: CallbackTo[String]): Self = StObject.set(x, "getEncodedHex", value.toJsFn)
+  }
+}

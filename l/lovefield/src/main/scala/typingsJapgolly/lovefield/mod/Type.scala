@@ -1,59 +1,57 @@
 package typingsJapgolly.lovefield.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Type extends js.Object
-
+sealed trait Type extends StObject
 @JSImport("lovefield", "Type")
 @js.native
-object Type extends js.Object {
-  @js.native
-  sealed trait ARRAY_BUFFER extends Type
-  
-  @js.native
-  sealed trait BOOLEAN extends Type
-  
-  @js.native
-  sealed trait DATE_TIME extends Type
-  
-  @js.native
-  sealed trait INTEGER extends Type
-  
-  @js.native
-  sealed trait NUMBER extends Type
-  
-  @js.native
-  sealed trait OBJECT extends Type
-  
-  @js.native
-  sealed trait STRING extends Type
+object Type extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Type with Double] = js.native
-  /* 0 */ @js.native
-  object ARRAY_BUFFER extends TopLevel[ARRAY_BUFFER with Double]
+  def apply(value: Double): js.UndefOr[Type & Double] = js.native
   
-  /* 1 */ @js.native
-  object BOOLEAN extends TopLevel[BOOLEAN with Double]
+  @js.native
+  sealed trait ARRAY_BUFFER
+    extends StObject
+       with Type
+  /* 0 */ val ARRAY_BUFFER: typingsJapgolly.lovefield.mod.Type.ARRAY_BUFFER & Double = js.native
   
-  /* 2 */ @js.native
-  object DATE_TIME extends TopLevel[DATE_TIME with Double]
+  @js.native
+  sealed trait BOOLEAN
+    extends StObject
+       with Type
+  /* 1 */ val BOOLEAN: typingsJapgolly.lovefield.mod.Type.BOOLEAN & Double = js.native
   
-  /* 3 */ @js.native
-  object INTEGER extends TopLevel[INTEGER with Double]
+  @js.native
+  sealed trait DATE_TIME
+    extends StObject
+       with Type
+  /* 2 */ val DATE_TIME: typingsJapgolly.lovefield.mod.Type.DATE_TIME & Double = js.native
   
-  /* 4 */ @js.native
-  object NUMBER extends TopLevel[NUMBER with Double]
+  @js.native
+  sealed trait INTEGER
+    extends StObject
+       with Type
+  /* 3 */ val INTEGER: typingsJapgolly.lovefield.mod.Type.INTEGER & Double = js.native
   
-  /* 5 */ @js.native
-  object OBJECT extends TopLevel[OBJECT with Double]
+  @js.native
+  sealed trait NUMBER
+    extends StObject
+       with Type
+  /* 4 */ val NUMBER: typingsJapgolly.lovefield.mod.Type.NUMBER & Double = js.native
   
-  /* 6 */ @js.native
-  object STRING extends TopLevel[STRING with Double]
+  @js.native
+  sealed trait OBJECT
+    extends StObject
+       with Type
+  /* 5 */ val OBJECT: typingsJapgolly.lovefield.mod.Type.OBJECT & Double = js.native
   
+  @js.native
+  sealed trait STRING
+    extends StObject
+       with Type
+  /* 6 */ val STRING: typingsJapgolly.lovefield.mod.Type.STRING & Double = js.native
 }
-

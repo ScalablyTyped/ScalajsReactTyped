@@ -1,8 +1,8 @@
 package typingsJapgolly.pkgcloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.pkgcloud.pkgcloudStrings.amazon
@@ -20,38 +20,34 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.pkgcloud.pkgcloudStrings.redistogo
   - typingsJapgolly.pkgcloud.pkgcloudStrings.telefonic
 */
-trait Providers extends js.Object
-
+trait Providers extends StObject
 object Providers {
-  @scala.inline
-  def amazon: typingsJapgolly.pkgcloud.pkgcloudStrings.amazon = this.cast("amazon")
-  @scala.inline
-  def azure: typingsJapgolly.pkgcloud.pkgcloudStrings.azure = this.cast("azure")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def digitalocean: typingsJapgolly.pkgcloud.pkgcloudStrings.digitalocean = this.cast("digitalocean")
-  @scala.inline
-  def google: typingsJapgolly.pkgcloud.pkgcloudStrings.google = this.cast("google")
-  @scala.inline
-  def hp: typingsJapgolly.pkgcloud.pkgcloudStrings.hp = this.cast("hp")
-  @scala.inline
-  def iriscouch: typingsJapgolly.pkgcloud.pkgcloudStrings.iriscouch = this.cast("iriscouch")
-  @scala.inline
-  def joyent: typingsJapgolly.pkgcloud.pkgcloudStrings.joyent = this.cast("joyent")
-  @scala.inline
-  def mongohq: typingsJapgolly.pkgcloud.pkgcloudStrings.mongohq = this.cast("mongohq")
-  @scala.inline
-  def mongolab: typingsJapgolly.pkgcloud.pkgcloudStrings.mongolab = this.cast("mongolab")
-  @scala.inline
-  def oneandone: typingsJapgolly.pkgcloud.pkgcloudStrings.oneandone = this.cast("oneandone")
-  @scala.inline
-  def openstack: typingsJapgolly.pkgcloud.pkgcloudStrings.openstack = this.cast("openstack")
-  @scala.inline
-  def rackspace: typingsJapgolly.pkgcloud.pkgcloudStrings.rackspace = this.cast("rackspace")
-  @scala.inline
-  def redistogo: typingsJapgolly.pkgcloud.pkgcloudStrings.redistogo = this.cast("redistogo")
-  @scala.inline
-  def telefonic: typingsJapgolly.pkgcloud.pkgcloudStrings.telefonic = this.cast("telefonic")
+  
+  inline def amazon: typingsJapgolly.pkgcloud.pkgcloudStrings.amazon = "amazon".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.amazon]
+  
+  inline def azure: typingsJapgolly.pkgcloud.pkgcloudStrings.azure = "azure".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.azure]
+  
+  inline def digitalocean: typingsJapgolly.pkgcloud.pkgcloudStrings.digitalocean = "digitalocean".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.digitalocean]
+  
+  inline def google: typingsJapgolly.pkgcloud.pkgcloudStrings.google = "google".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.google]
+  
+  inline def hp: typingsJapgolly.pkgcloud.pkgcloudStrings.hp = "hp".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.hp]
+  
+  inline def iriscouch: typingsJapgolly.pkgcloud.pkgcloudStrings.iriscouch = "iriscouch".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.iriscouch]
+  
+  inline def joyent: typingsJapgolly.pkgcloud.pkgcloudStrings.joyent = "joyent".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.joyent]
+  
+  inline def mongohq: typingsJapgolly.pkgcloud.pkgcloudStrings.mongohq = "mongohq".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.mongohq]
+  
+  inline def mongolab: typingsJapgolly.pkgcloud.pkgcloudStrings.mongolab = "mongolab".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.mongolab]
+  
+  inline def oneandone: typingsJapgolly.pkgcloud.pkgcloudStrings.oneandone = "oneandone".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.oneandone]
+  
+  inline def openstack: typingsJapgolly.pkgcloud.pkgcloudStrings.openstack = "openstack".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.openstack]
+  
+  inline def rackspace: typingsJapgolly.pkgcloud.pkgcloudStrings.rackspace = "rackspace".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.rackspace]
+  
+  inline def redistogo: typingsJapgolly.pkgcloud.pkgcloudStrings.redistogo = "redistogo".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.redistogo]
+  
+  inline def telefonic: typingsJapgolly.pkgcloud.pkgcloudStrings.telefonic = "telefonic".asInstanceOf[typingsJapgolly.pkgcloud.pkgcloudStrings.telefonic]
 }
-

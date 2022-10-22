@@ -9,36 +9,51 @@ import typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.none
 import typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.normal
 import typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.oblique
 import typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.underline
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Font extends js.Object {
+trait Font extends StObject {
+  
   var decoration: js.UndefOr[`line-through` | underline | none] = js.undefined
+  
   var family: js.UndefOr[String] = js.undefined
-   // "<fontFamily>";
+  
+  // "<fontFamily>";
   var size: js.UndefOr[Double] = js.undefined
-   // <fontSize>;
+  
+  // <fontSize>;
   var style: js.UndefOr[italic | normal | oblique] = js.undefined
+  
   var weight: js.UndefOr[bold | bolder | lighter | normal] = js.undefined
 }
-
 object Font {
-  @scala.inline
-  def apply(
-    decoration: `line-through` | underline | none = null,
-    family: String = null,
-    size: Int | Double = null,
-    style: italic | normal | oblique = null,
-    weight: bold | bolder | lighter | normal = null
-  ): Font = {
+  
+  inline def apply(): Font = {
     val __obj = js.Dynamic.literal()
-    if (decoration != null) __obj.updateDynamic("decoration")(decoration.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Font]
   }
+  
+  extension [Self <: Font](x: Self) {
+    
+    inline def setDecoration(value: `line-through` | underline | none): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
+    
+    inline def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
+    
+    inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setStyle(value: italic | normal | oblique): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setWeight(value: bold | bolder | lighter | normal): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

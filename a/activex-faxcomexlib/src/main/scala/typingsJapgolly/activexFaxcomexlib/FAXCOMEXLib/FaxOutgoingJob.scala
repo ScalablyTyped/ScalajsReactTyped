@@ -1,83 +1,233 @@
 package typingsJapgolly.activexFaxcomexlib.FAXCOMEXLib
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxOutgoingJob Class */
-@JSGlobal("FAXCOMEXLib.FaxOutgoingJob")
-@js.native
-class FaxOutgoingJob protected () extends js.Object {
+trait FaxOutgoingJob extends StObject {
+  
   /** Available operations, a bit-wise combination of FAX_JOB_OPERATIONS values */
-  val AvailableOperations: FAX_JOB_OPERATIONS_ENUM = js.native
+  val AvailableOperations: FAX_JOB_OPERATIONS_ENUM
+  
   /** Called Station ID */
-  val CSID: String = js.native
-  /** Page currently in transmision */
-  val CurrentPage: Double = js.native
-  /** Device ID that transmits the job */
-  val DeviceId: Double = js.native
-  /** Document's friendly name */
-  val DocumentName: String = js.native
-  /** Extended status description */
-  val ExtendedStatus: String = js.native
-  /** Code of the job's extended status */
-  val ExtendedStatusCode: FAX_JOB_EXTENDED_STATUS_ENUM = js.native
-  @JSName("FAXCOMEXLib.FaxOutgoingJob_typekey")
-  var FAXCOMEXLibDotFaxOutgoingJob_typekey: FaxOutgoingJob = js.native
-  /** Whether to group broadcast receipts */
-  val GroupBroadcastReceipts: Boolean = js.native
-  /** Has Cover page */
-  val HasCoverPage: Boolean = js.native
-  /** Unique job ID */
-  val Id: String = js.native
-  /** Time the job was originally scheduled to be transmitted */
-  val OriginalScheduledTime: VarDate = js.native
-  /** Total number of pages */
-  val Pages: Double = js.native
-  /** Priority of the fax */
-  val Priority: FAX_PRIORITY_TYPE_ENUM = js.native
-  /** Address of the receipt */
-  val ReceiptAddress: String = js.native
-  /** Type of receipt */
-  val ReceiptType: FAX_RECEIPT_TYPE_ENUM = js.native
-  /** Recipient information object */
-  val Recipient: FaxRecipient = js.native
-  /** Number of failed transmission retries */
-  val Retries: Double = js.native
-  /** When to send the fax */
-  val ScheduleType: FAX_SCHEDULE_TYPE_ENUM = js.native
-  /** The time the fax job is scheduled to be transmitted */
-  val ScheduledTime: VarDate = js.native
-  /** Sender information object */
-  val Sender: FaxSender = js.native
-  /** Size in bytes of TIFF file */
-  val Size: Double = js.native
-  /** Current queue status of the job */
-  val Status: FAX_JOB_STATUS_ENUM = js.native
-  /** Cover page's subject field */
-  val Subject: String = js.native
-  /** Unique ID the submission process created for the Job */
-  val SubmissionId: String = js.native
-  /** Time the job was submitted */
-  val SubmissionTime: VarDate = js.native
-  /** Transmitting Station ID */
-  val TSID: String = js.native
-  /** The time the fax job finished its transmission */
-  val TransmissionEnd: VarDate = js.native
-  /** The time the fax job started its transmission */
-  val TransmissionStart: VarDate = js.native
+  val CSID: String
+  
   /** Cancel the outbound job */
-  def Cancel(): Unit = js.native
+  def Cancel(): Unit
+  
   /** Copy the job's TIFF image */
-  def CopyTiff(bstrTiffPath: String): Unit = js.native
+  def CopyTiff(bstrTiffPath: String): Unit
+  
+  /** Page currently in transmision */
+  val CurrentPage: Double
+  
+  /** Device ID that transmits the job */
+  val DeviceId: Double
+  
+  /** Document's friendly name */
+  val DocumentName: String
+  
+  /** Extended status description */
+  val ExtendedStatus: String
+  
+  /** Code of the job's extended status */
+  val ExtendedStatusCode: FAX_JOB_EXTENDED_STATUS_ENUM
+  
+  /* private */ @JSName("FAXCOMEXLib.FaxOutgoingJob_typekey")
+  var FAXCOMEXLibDotFaxOutgoingJob_typekey: FaxOutgoingJob
+  
+  /** Whether to group broadcast receipts */
+  val GroupBroadcastReceipts: Boolean
+  
+  /** Has Cover page */
+  val HasCoverPage: Boolean
+  
+  /** Unique job ID */
+  val Id: String
+  
+  /** Time the job was originally scheduled to be transmitted */
+  val OriginalScheduledTime: VarDate
+  
+  /** Total number of pages */
+  val Pages: Double
+  
   /** Pause the outbound job */
-  def Pause(): Unit = js.native
+  def Pause(): Unit
+  
+  /** Priority of the fax */
+  val Priority: FAX_PRIORITY_TYPE_ENUM
+  
+  /** Address of the receipt */
+  val ReceiptAddress: String
+  
+  /** Type of receipt */
+  val ReceiptType: FAX_RECEIPT_TYPE_ENUM
+  
+  /** Recipient information object */
+  val Recipient: FaxRecipient
+  
   /** Refresh the object */
-  def Refresh(): Unit = js.native
+  def Refresh(): Unit
+  
   /** Restart the outbound job */
-  def Restart(): Unit = js.native
+  def Restart(): Unit
+  
   /** Resume the outbound job */
-  def Resume(): Unit = js.native
+  def Resume(): Unit
+  
+  /** Number of failed transmission retries */
+  val Retries: Double
+  
+  /** When to send the fax */
+  val ScheduleType: FAX_SCHEDULE_TYPE_ENUM
+  
+  /** The time the fax job is scheduled to be transmitted */
+  val ScheduledTime: VarDate
+  
+  /** Sender information object */
+  val Sender: FaxSender
+  
+  /** Size in bytes of TIFF file */
+  val Size: Double
+  
+  /** Current queue status of the job */
+  val Status: FAX_JOB_STATUS_ENUM
+  
+  /** Cover page's subject field */
+  val Subject: String
+  
+  /** Unique ID the submission process created for the Job */
+  val SubmissionId: String
+  
+  /** Time the job was submitted */
+  val SubmissionTime: VarDate
+  
+  /** Transmitting Station ID */
+  val TSID: String
+  
+  /** The time the fax job finished its transmission */
+  val TransmissionEnd: VarDate
+  
+  /** The time the fax job started its transmission */
+  val TransmissionStart: VarDate
 }
-
+object FaxOutgoingJob {
+  
+  inline def apply(
+    AvailableOperations: FAX_JOB_OPERATIONS_ENUM,
+    CSID: String,
+    Cancel: Callback,
+    CopyTiff: String => Callback,
+    CurrentPage: Double,
+    DeviceId: Double,
+    DocumentName: String,
+    ExtendedStatus: String,
+    ExtendedStatusCode: FAX_JOB_EXTENDED_STATUS_ENUM,
+    FAXCOMEXLibDotFaxOutgoingJob_typekey: FaxOutgoingJob,
+    GroupBroadcastReceipts: Boolean,
+    HasCoverPage: Boolean,
+    Id: String,
+    OriginalScheduledTime: VarDate,
+    Pages: Double,
+    Pause: Callback,
+    Priority: FAX_PRIORITY_TYPE_ENUM,
+    ReceiptAddress: String,
+    ReceiptType: FAX_RECEIPT_TYPE_ENUM,
+    Recipient: FaxRecipient,
+    Refresh: Callback,
+    Restart: Callback,
+    Resume: Callback,
+    Retries: Double,
+    ScheduleType: FAX_SCHEDULE_TYPE_ENUM,
+    ScheduledTime: VarDate,
+    Sender: FaxSender,
+    Size: Double,
+    Status: FAX_JOB_STATUS_ENUM,
+    Subject: String,
+    SubmissionId: String,
+    SubmissionTime: VarDate,
+    TSID: String,
+    TransmissionEnd: VarDate,
+    TransmissionStart: VarDate
+  ): FaxOutgoingJob = {
+    val __obj = js.Dynamic.literal(AvailableOperations = AvailableOperations.asInstanceOf[js.Any], CSID = CSID.asInstanceOf[js.Any], Cancel = Cancel.toJsFn, CopyTiff = js.Any.fromFunction1((t0: String) => CopyTiff(t0).runNow()), CurrentPage = CurrentPage.asInstanceOf[js.Any], DeviceId = DeviceId.asInstanceOf[js.Any], DocumentName = DocumentName.asInstanceOf[js.Any], ExtendedStatus = ExtendedStatus.asInstanceOf[js.Any], ExtendedStatusCode = ExtendedStatusCode.asInstanceOf[js.Any], GroupBroadcastReceipts = GroupBroadcastReceipts.asInstanceOf[js.Any], HasCoverPage = HasCoverPage.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], OriginalScheduledTime = OriginalScheduledTime.asInstanceOf[js.Any], Pages = Pages.asInstanceOf[js.Any], Pause = Pause.toJsFn, Priority = Priority.asInstanceOf[js.Any], ReceiptAddress = ReceiptAddress.asInstanceOf[js.Any], ReceiptType = ReceiptType.asInstanceOf[js.Any], Recipient = Recipient.asInstanceOf[js.Any], Refresh = Refresh.toJsFn, Restart = Restart.toJsFn, Resume = Resume.toJsFn, Retries = Retries.asInstanceOf[js.Any], ScheduleType = ScheduleType.asInstanceOf[js.Any], ScheduledTime = ScheduledTime.asInstanceOf[js.Any], Sender = Sender.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], SubmissionId = SubmissionId.asInstanceOf[js.Any], SubmissionTime = SubmissionTime.asInstanceOf[js.Any], TSID = TSID.asInstanceOf[js.Any], TransmissionEnd = TransmissionEnd.asInstanceOf[js.Any], TransmissionStart = TransmissionStart.asInstanceOf[js.Any])
+    __obj.updateDynamic("FAXCOMEXLib.FaxOutgoingJob_typekey")(FAXCOMEXLibDotFaxOutgoingJob_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FaxOutgoingJob]
+  }
+  
+  extension [Self <: FaxOutgoingJob](x: Self) {
+    
+    inline def setAvailableOperations(value: FAX_JOB_OPERATIONS_ENUM): Self = StObject.set(x, "AvailableOperations", value.asInstanceOf[js.Any])
+    
+    inline def setCSID(value: String): Self = StObject.set(x, "CSID", value.asInstanceOf[js.Any])
+    
+    inline def setCancel(value: Callback): Self = StObject.set(x, "Cancel", value.toJsFn)
+    
+    inline def setCopyTiff(value: String => Callback): Self = StObject.set(x, "CopyTiff", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setCurrentPage(value: Double): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceId(value: Double): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentName(value: String): Self = StObject.set(x, "DocumentName", value.asInstanceOf[js.Any])
+    
+    inline def setExtendedStatus(value: String): Self = StObject.set(x, "ExtendedStatus", value.asInstanceOf[js.Any])
+    
+    inline def setExtendedStatusCode(value: FAX_JOB_EXTENDED_STATUS_ENUM): Self = StObject.set(x, "ExtendedStatusCode", value.asInstanceOf[js.Any])
+    
+    inline def setFAXCOMEXLibDotFaxOutgoingJob_typekey(value: FaxOutgoingJob): Self = StObject.set(x, "FAXCOMEXLib.FaxOutgoingJob_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setGroupBroadcastReceipts(value: Boolean): Self = StObject.set(x, "GroupBroadcastReceipts", value.asInstanceOf[js.Any])
+    
+    inline def setHasCoverPage(value: Boolean): Self = StObject.set(x, "HasCoverPage", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalScheduledTime(value: VarDate): Self = StObject.set(x, "OriginalScheduledTime", value.asInstanceOf[js.Any])
+    
+    inline def setPages(value: Double): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
+    
+    inline def setPause(value: Callback): Self = StObject.set(x, "Pause", value.toJsFn)
+    
+    inline def setPriority(value: FAX_PRIORITY_TYPE_ENUM): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    
+    inline def setReceiptAddress(value: String): Self = StObject.set(x, "ReceiptAddress", value.asInstanceOf[js.Any])
+    
+    inline def setReceiptType(value: FAX_RECEIPT_TYPE_ENUM): Self = StObject.set(x, "ReceiptType", value.asInstanceOf[js.Any])
+    
+    inline def setRecipient(value: FaxRecipient): Self = StObject.set(x, "Recipient", value.asInstanceOf[js.Any])
+    
+    inline def setRefresh(value: Callback): Self = StObject.set(x, "Refresh", value.toJsFn)
+    
+    inline def setRestart(value: Callback): Self = StObject.set(x, "Restart", value.toJsFn)
+    
+    inline def setResume(value: Callback): Self = StObject.set(x, "Resume", value.toJsFn)
+    
+    inline def setRetries(value: Double): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
+    
+    inline def setScheduleType(value: FAX_SCHEDULE_TYPE_ENUM): Self = StObject.set(x, "ScheduleType", value.asInstanceOf[js.Any])
+    
+    inline def setScheduledTime(value: VarDate): Self = StObject.set(x, "ScheduledTime", value.asInstanceOf[js.Any])
+    
+    inline def setSender(value: FaxSender): Self = StObject.set(x, "Sender", value.asInstanceOf[js.Any])
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    
+    inline def setStatus(value: FAX_JOB_STATUS_ENUM): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    
+    inline def setSubmissionId(value: String): Self = StObject.set(x, "SubmissionId", value.asInstanceOf[js.Any])
+    
+    inline def setSubmissionTime(value: VarDate): Self = StObject.set(x, "SubmissionTime", value.asInstanceOf[js.Any])
+    
+    inline def setTSID(value: String): Self = StObject.set(x, "TSID", value.asInstanceOf[js.Any])
+    
+    inline def setTransmissionEnd(value: VarDate): Self = StObject.set(x, "TransmissionEnd", value.asInstanceOf[js.Any])
+    
+    inline def setTransmissionStart(value: VarDate): Self = StObject.set(x, "TransmissionStart", value.asInstanceOf[js.Any])
+  }
+}

@@ -10,15 +10,12 @@ File system persister for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/adapter-puppeteer |
 | Keywords           | polly, pollyjs, record, replay, fs, file |
-| # releases         | 25 |
-| # dependents       | 0 |
-| # downloads        | 81675 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 14472.0 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
-- [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Fadapter-puppeteer)
     
 

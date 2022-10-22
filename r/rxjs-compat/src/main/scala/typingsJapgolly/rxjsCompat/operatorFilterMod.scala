@@ -1,17 +1,19 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/filter", JSImport.Namespace)
-@js.native
-object operatorFilterMod extends js.Object {
-  def filter[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): js.Any = js.native
-  def filter[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean], thisArg: js.Any): js.Any = js.native
-  @JSName("filter")
-  def filter_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean]): js.Any = js.native
-  @JSName("filter")
-  def filter_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean], thisArg: js.Any): js.Any = js.native
+object operatorFilterMod {
+  
+  @JSImport("rxjs-compat/operator/filter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def filter[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[Observable_[T]]
+  inline def filter[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean], thisArg: Any): Observable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Observable_[T]]
+  
+  inline def filter_TS[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean]): Observable_[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[Observable_[S]]
+  inline def filter_TS[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean], thisArg: Any): Observable_[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Observable_[S]]
 }
-

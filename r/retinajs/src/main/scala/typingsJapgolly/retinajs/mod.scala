@@ -1,12 +1,11 @@
 package typingsJapgolly.retinajs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("retinajs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   // var hasWindow: boolean;
   // var environment: number;
   // var srcReplace: RegExp;
@@ -22,7 +21,10 @@ object mod extends js.Object {
   // function manualSwapImage(image: any, hdsrc: string): void;
   // function getImages(images: any[] | null): any[];
   // function cleanBgImg(img: any): any;
-  def apply(): Unit = js.native
-  def apply(images: js.Any): Unit = js.native
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(images: Any): Unit = ^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("retinajs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

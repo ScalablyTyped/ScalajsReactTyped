@@ -1,24 +1,33 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Returns a five-level taxonomy of the content. The top three categories are returned. Supported languages: Arabic, English, French, German, Italian, Japanese, Korean, Portuguese, Spanish. */
-trait CategoriesOptions extends js.Object {
+trait CategoriesOptions extends StObject {
+  
   /** Maximum number of categories to return. */
   var limit: js.UndefOr[Double] = js.undefined
+  
   /** Enter a [custom model](https://cloud.ibm.com/docs/services/natural-language-understanding/customizing.html) ID to override the standard categories model. */
   var model: js.UndefOr[String] = js.undefined
 }
-
 object CategoriesOptions {
-  @scala.inline
-  def apply(limit: Int | Double = null, model: String = null): CategoriesOptions = {
+  
+  inline def apply(): CategoriesOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoriesOptions]
   }
+  
+  extension [Self <: CategoriesOptions](x: Self) {
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+  }
 }
-

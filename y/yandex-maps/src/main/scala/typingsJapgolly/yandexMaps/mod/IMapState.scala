@@ -1,42 +1,76 @@
 package typingsJapgolly.yandexMaps.mod
 
+import typingsJapgolly.yandexMaps.mod.control.RulerControl
+import typingsJapgolly.yandexMaps.mod.control.TypeSelector
+import typingsJapgolly.yandexMaps.mod.control.ZoomControl
 import typingsJapgolly.yandexMaps.yandexMapsStrings.yandexNumbersignhybrid
 import typingsJapgolly.yandexMaps.yandexMapsStrings.yandexNumbersignmap
 import typingsJapgolly.yandexMaps.yandexMapsStrings.yandexNumbersignsatellite
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IMapState extends js.Object {
+trait IMapState extends StObject {
+  
   var behaviors: js.UndefOr[js.Array[String]] = js.undefined
+  
   var bounds: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
+  
   var center: js.UndefOr[js.Array[Double]] = js.undefined
-  var controls: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var controls: js.UndefOr[js.Array[String | ZoomControl | RulerControl | TypeSelector]] = js.undefined
+  
   var margin: js.UndefOr[js.Array[js.Array[Double] | Double]] = js.undefined
+  
   var `type`: js.UndefOr[yandexNumbersignmap | yandexNumbersignsatellite | yandexNumbersignhybrid] = js.undefined
+  
   var zoom: js.UndefOr[Double] = js.undefined
 }
-
 object IMapState {
-  @scala.inline
-  def apply(
-    behaviors: js.Array[String] = null,
-    bounds: js.Array[js.Array[Double]] = null,
-    center: js.Array[Double] = null,
-    controls: js.Array[String] = null,
-    margin: js.Array[js.Array[Double] | Double] = null,
-    `type`: yandexNumbersignmap | yandexNumbersignsatellite | yandexNumbersignhybrid = null,
-    zoom: Int | Double = null
-  ): IMapState = {
+  
+  inline def apply(): IMapState = {
     val __obj = js.Dynamic.literal()
-    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapState]
   }
+  
+  extension [Self <: IMapState](x: Self) {
+    
+    inline def setBehaviors(value: js.Array[String]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
+    
+    inline def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
+    
+    inline def setBehaviorsVarargs(value: String*): Self = StObject.set(x, "behaviors", js.Array(value*))
+    
+    inline def setBounds(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    
+    inline def setBoundsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "bounds", js.Array(value*))
+    
+    inline def setCenter(value: js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    
+    inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value*))
+    
+    inline def setControls(value: js.Array[String | ZoomControl | RulerControl | TypeSelector]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    
+    inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+    
+    inline def setControlsVarargs(value: (String | ZoomControl | RulerControl | TypeSelector)*): Self = StObject.set(x, "controls", js.Array(value*))
+    
+    inline def setMargin(value: js.Array[js.Array[Double] | Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "margin", js.Array(value*))
+    
+    inline def setType(value: yandexNumbersignmap | yandexNumbersignsatellite | yandexNumbersignhybrid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+  }
 }
-

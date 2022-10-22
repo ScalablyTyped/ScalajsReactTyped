@@ -5,25 +5,27 @@ import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typingsJapgolly.winrtUwp.Windows.Foundation.TypedEventHandler
 import typingsJapgolly.winrtUwp.Windows.WinRTEvent
 import typingsJapgolly.winrtUwp.winrtUwpStrings.pairingrequested
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a custom pairing for a DeviceInformation object. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceInformationCustomPairing")
 @js.native
-abstract class DeviceInformationCustomPairing () extends js.Object {
-  /** Raised when a pairing action is requested. */
-  @JSName("onpairingrequested")
-  var onpairingrequested_Original: TypedEventHandler[DeviceInformationCustomPairing, DevicePairingRequestedEventArgs] = js.native
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+trait DeviceInformationCustomPairing extends StObject {
+  
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pairingrequested(
     `type`: pairingrequested,
     listener: TypedEventHandler[DeviceInformationCustomPairing, DevicePairingRequestedEventArgs]
   ): Unit = js.native
+  
   /** Raised when a pairing action is requested. */
-  def onpairingrequested(ev: DevicePairingRequestedEventArgs with WinRTEvent[DeviceInformationCustomPairing]): Unit = js.native
+  def onpairingrequested(ev: DevicePairingRequestedEventArgs & WinRTEvent[DeviceInformationCustomPairing]): Unit = js.native
+  /** Raised when a pairing action is requested. */
+  @JSName("onpairingrequested")
+  var onpairingrequested_Original: TypedEventHandler[DeviceInformationCustomPairing, DevicePairingRequestedEventArgs] = js.native
+  
   /**
     * Attempts to pair the device.
     * @param pairingKindsSupported The different pairing kinds supported by this DeviceInformation object.
@@ -49,11 +51,11 @@ abstract class DeviceInformationCustomPairing () extends js.Object {
     minProtectionLevel: DevicePairingProtectionLevel,
     devicePairingSettings: IDevicePairingSettings
   ): IPromiseWithIAsyncOperation[DevicePairingResult] = js.native
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pairingrequested(
     `type`: pairingrequested,
     listener: TypedEventHandler[DeviceInformationCustomPairing, DevicePairingRequestedEventArgs]
   ): Unit = js.native
 }
-

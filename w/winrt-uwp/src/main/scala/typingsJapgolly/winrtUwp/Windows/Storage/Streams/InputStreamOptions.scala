@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Storage.Streams
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InputStreamOptions extends js.Object
-
+sealed trait InputStreamOptions extends StObject
 /** Specifies the read options for an input stream. */
 @JSGlobal("Windows.Storage.Streams.InputStreamOptions")
 @js.native
-object InputStreamOptions extends js.Object {
+object InputStreamOptions extends StObject {
+  
   /** No options are specified. */
   @js.native
-  sealed trait none extends InputStreamOptions
+  sealed trait none
+    extends StObject
+       with InputStreamOptions
   
   /** The asynchronous read operation completes when one or more bytes is available. */
   @js.native
-  sealed trait partial extends InputStreamOptions
+  sealed trait partial
+    extends StObject
+       with InputStreamOptions
   
   /** The asynchronous read operation may optionally read ahead and prefetch additional bytes. */
   @js.native
-  sealed trait readAhead extends InputStreamOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InputStreamOptions with Double] = js.native
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object partial extends TopLevel[partial with Double]
-  
-  /* 2 */ @js.native
-  object readAhead extends TopLevel[readAhead with Double]
-  
+  sealed trait readAhead
+    extends StObject
+       with InputStreamOptions
 }
-

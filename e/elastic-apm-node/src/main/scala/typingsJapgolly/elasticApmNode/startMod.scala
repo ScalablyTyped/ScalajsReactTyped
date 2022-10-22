@@ -1,21 +1,19 @@
 package typingsJapgolly.elasticApmNode
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typingsJapgolly.elasticApmNode.mod.Agent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("elastic-apm-node/start", JSImport.Namespace)
-@js.native
-object startMod extends TopLevel[Agent] {
-  // Inlined from @types/aws-lambda - start
-  @js.native
-  object AwsLambda extends js.Object
+object startMod extends Shortcut {
   
-  // Inlined from @types/connect - start
+  @JSImport("elastic-apm-node/start", JSImport.Namespace)
   @js.native
-  object Connect extends js.Object
+  val ^ : Agent = js.native
   
+  type _To = Agent
+  
+  /* This means you don't have to write `^`, but can instead just say `startMod.foo` */
+  override def _to: Agent = ^
 }
-

@@ -1,44 +1,60 @@
 package typingsJapgolly.protonNative.mod
 
-import typingsJapgolly.protonNative.AnonH
-import typingsJapgolly.protonNative.AnonX
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
 import typingsJapgolly.protonNative.protonNativeStrings.bevel
 import typingsJapgolly.protonNative.protonNativeStrings.flat
 import typingsJapgolly.protonNative.protonNativeStrings.miter
 import typingsJapgolly.protonNative.protonNativeStrings.round
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AreaBaseProps
-  extends GridChildrenProps
+  extends StObject
+     with GridChildrenProps
      with Label
      with Stretchy {
+  
+  var children: js.UndefOr[Node] = js.undefined
+  
   /**
     * The fill color for the component.
     */
   var fill: js.UndefOr[String] = js.undefined
+  
   /**
     * The opacity of the fill (between 0 and 1). Gets multiplied with the fill colors alpha value.
     */
   var fillOpacity: js.UndefOr[Double] = js.undefined
+  
   /**
     * The stroke (line) color for the component.
     */
   var stroke: js.UndefOr[String] = js.undefined
+  
   var strokeLinecap: js.UndefOr[flat | round | bevel] = js.undefined
+  
   var strokeLinejoin: js.UndefOr[miter | round | bevel] = js.undefined
+  
   /**
     * How far to extend the stroke at a sharp corner when using `strokeLinejoin='miter'`
     * @see https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-miterlimit
     * for a more detailed explanation.
     */
   var strokeMiterlimit: js.UndefOr[Double] = js.undefined
+  
   /**
     * The opacity of the stroke (between 0 and 1). Gets multiplied with the stroke colors alpha value.
     */
   var strokeOpacity: js.UndefOr[Double] = js.undefined
+  
   var strokeWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * List of transformations to apply to the component (are quite similar to SVG transformations). Example for multiple transformations: `transform="translate(100, 100) rotate(90)"`.
     *
@@ -46,45 +62,59 @@ trait AreaBaseProps
     */
   var transform: js.UndefOr[String] = js.undefined
 }
-
 object AreaBaseProps {
-  @scala.inline
-  def apply(
-    align: AnonH = null,
-    column: Int | Double = null,
-    expand: AnonH = null,
-    fill: String = null,
-    fillOpacity: Int | Double = null,
-    label: String = null,
-    row: Int | Double = null,
-    span: AnonX = null,
-    stretchy: js.UndefOr[Boolean] = js.undefined,
-    stroke: String = null,
-    strokeLinecap: flat | round | bevel = null,
-    strokeLinejoin: miter | round | bevel = null,
-    strokeMiterlimit: Int | Double = null,
-    strokeOpacity: Int | Double = null,
-    strokeWidth: Int | Double = null,
-    transform: String = null
-  ): AreaBaseProps = {
+  
+  inline def apply(): AreaBaseProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
-    if (strokeLinejoin != null) __obj.updateDynamic("strokeLinejoin")(strokeLinejoin.asInstanceOf[js.Any])
-    if (strokeMiterlimit != null) __obj.updateDynamic("strokeMiterlimit")(strokeMiterlimit.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaBaseProps]
   }
+  
+  extension [Self <: AreaBaseProps](x: Self) {
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeLinecap(value: flat | round | bevel): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
+    
+    inline def setStrokeLinejoin(value: miter | round | bevel): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
+    
+    inline def setStrokeMiterlimit(value: Double): Self = StObject.set(x, "strokeMiterlimit", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeMiterlimitUndefined: Self = StObject.set(x, "strokeMiterlimit", js.undefined)
+    
+    inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    
+    inline def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+  }
 }
-

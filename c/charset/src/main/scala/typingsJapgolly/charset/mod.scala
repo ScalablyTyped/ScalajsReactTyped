@@ -1,15 +1,14 @@
 package typingsJapgolly.charset
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.node.httpMod.IncomingHttpHeaders
 import typingsJapgolly.node.httpMod.IncomingMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("charset", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * guess data charset from req.headers, xml, html content-type meta tag
     *
@@ -30,15 +29,20 @@ object mod extends js.Object {
     * @param peekSize max content peek size, default is 512
     * @return charset, lower case, e.g.: utf8, gbk, gb2312, .... If can\'t guess, return null
     */
-  // tslint:disable-next-line strict-export-declare-modifiers
-  def apply(obj: String): String | Null = js.native
-  def apply(obj: String, data: Buffer): String | Null = js.native
-  def apply(obj: String, data: Buffer, peekSize: Double): String | Null = js.native
-  def apply(obj: IncomingHttpHeaders): String | Null = js.native
-  def apply(obj: IncomingHttpHeaders, data: Buffer): String | Null = js.native
-  def apply(obj: IncomingHttpHeaders, data: Buffer, peekSize: Double): String | Null = js.native
-  def apply(obj: IncomingMessage): String | Null = js.native
-  def apply(obj: IncomingMessage, data: Buffer): String | Null = js.native
-  def apply(obj: IncomingMessage, data: Buffer, peekSize: Double): String | Null = js.native
+  inline def apply(obj: String): String | Null = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def apply(obj: String, data: Unit, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: String, data: Buffer): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: String, data: Buffer, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingHttpHeaders): String | Null = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingHttpHeaders, data: Unit, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingHttpHeaders, data: Buffer): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingHttpHeaders, data: Buffer, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingMessage): String | Null = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingMessage, data: Unit, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingMessage, data: Buffer): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(obj: IncomingMessage, data: Buffer, peekSize: Double): String | Null = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any], peekSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  
+  @JSImport("charset", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

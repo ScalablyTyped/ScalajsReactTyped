@@ -1,13 +1,15 @@
 package typingsJapgolly.lazyProperty
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lazy-property", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(`object`: js.Object, name: String, initializer: js.Function0[_]): Unit = js.native
-  def apply(`object`: js.Object, name: String, initializer: js.Function0[_], enumerable: Boolean): Unit = js.native
+object mod {
+  
+  inline def apply(`object`: js.Object, name: String, initializer: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(`object`: js.Object, name: String, initializer: js.Function0[Any], enumerable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any], enumerable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("lazy-property", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

@@ -1,329 +1,264 @@
 package typingsJapgolly.jqueryui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryuiStrings {
-  @js.native
-  sealed trait altField extends js.Object
   
   @js.native
-  sealed trait altFormat extends js.Object
+  sealed trait altField extends StObject
+  inline def altField: altField = "altField".asInstanceOf[altField]
   
   @js.native
-  sealed trait appendText extends js.Object
+  sealed trait altFormat extends StObject
+  inline def altFormat: altFormat = "altFormat".asInstanceOf[altFormat]
   
   @js.native
-  sealed trait autoSize extends js.Object
+  sealed trait appendText extends StObject
+  inline def appendText: appendText = "appendText".asInstanceOf[appendText]
   
   @js.native
-  sealed trait autohide extends js.Object
+  sealed trait autoSize extends StObject
+  inline def autoSize: autoSize = "autoSize".asInstanceOf[autoSize]
   
   @js.native
-  sealed trait beforeShow extends js.Object
+  sealed trait autohide extends StObject
+  inline def autohide: autohide = "autohide".asInstanceOf[autohide]
   
   @js.native
-  sealed trait beforeShowDay extends js.Object
+  sealed trait beforeShow extends StObject
+  inline def beforeShow: beforeShow = "beforeShow".asInstanceOf[beforeShow]
   
   @js.native
-  sealed trait blur extends js.Object
+  sealed trait beforeShowDay extends StObject
+  inline def beforeShowDay: beforeShowDay = "beforeShowDay".asInstanceOf[beforeShowDay]
   
   @js.native
-  sealed trait buttonImage extends js.Object
+  sealed trait blur extends StObject
+  inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
-  sealed trait buttonImageOnly extends js.Object
+  sealed trait buttonImage extends StObject
+  inline def buttonImage: buttonImage = "buttonImage".asInstanceOf[buttonImage]
   
   @js.native
-  sealed trait buttonText extends js.Object
+  sealed trait buttonImageOnly extends StObject
+  inline def buttonImageOnly: buttonImageOnly = "buttonImageOnly".asInstanceOf[buttonImageOnly]
   
   @js.native
-  sealed trait calculateWeek extends js.Object
+  sealed trait buttonText extends StObject
+  inline def buttonText: buttonText = "buttonText".asInstanceOf[buttonText]
   
   @js.native
-  sealed trait changeMonth extends js.Object
+  sealed trait calculateWeek extends StObject
+  inline def calculateWeek: calculateWeek = "calculateWeek".asInstanceOf[calculateWeek]
   
   @js.native
-  sealed trait changeYear extends js.Object
+  sealed trait changeMonth extends StObject
+  inline def changeMonth: changeMonth = "changeMonth".asInstanceOf[changeMonth]
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait changeYear extends StObject
+  inline def changeYear: changeYear = "changeYear".asInstanceOf[changeYear]
   
   @js.native
-  sealed trait closeText extends js.Object
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait collapse extends js.Object
+  sealed trait closeText extends StObject
+  inline def closeText: closeText = "closeText".asInstanceOf[closeText]
   
   @js.native
-  sealed trait collapseAll extends js.Object
+  sealed trait collapse extends StObject
+  inline def collapse: collapse = "collapse".asInstanceOf[collapse]
   
   @js.native
-  sealed trait constrainInput extends js.Object
+  sealed trait collapseAll extends StObject
+  inline def collapseAll: collapseAll = "collapseAll".asInstanceOf[collapseAll]
   
   @js.native
-  sealed trait currentText extends js.Object
+  sealed trait constrainInput extends StObject
+  inline def constrainInput: constrainInput = "constrainInput".asInstanceOf[constrainInput]
   
   @js.native
-  sealed trait dateFormat extends js.Object
+  sealed trait currentText extends StObject
+  inline def currentText: currentText = "currentText".asInstanceOf[currentText]
   
   @js.native
-  sealed trait dayNames extends js.Object
+  sealed trait dateFormat extends StObject
+  inline def dateFormat: dateFormat = "dateFormat".asInstanceOf[dateFormat]
   
   @js.native
-  sealed trait dayNamesMin extends js.Object
+  sealed trait dayNames extends StObject
+  inline def dayNames: dayNames = "dayNames".asInstanceOf[dayNames]
   
   @js.native
-  sealed trait dayNamesShort extends js.Object
+  sealed trait dayNamesMin extends StObject
+  inline def dayNamesMin: dayNamesMin = "dayNamesMin".asInstanceOf[dayNamesMin]
   
   @js.native
-  sealed trait defaultDate extends js.Object
+  sealed trait dayNamesShort extends StObject
+  inline def dayNamesShort: dayNamesShort = "dayNamesShort".asInstanceOf[dayNamesShort]
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait defaultDate extends StObject
+  inline def defaultDate: defaultDate = "defaultDate".asInstanceOf[defaultDate]
   
   @js.native
-  sealed trait dialog extends js.Object
+  sealed trait destroy extends StObject
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait disable extends js.Object
+  sealed trait dialog extends StObject
+  inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait duration extends js.Object
+  sealed trait disable extends StObject
+  inline def disable: disable = "disable".asInstanceOf[disable]
   
   @js.native
-  sealed trait enable extends js.Object
+  sealed trait duration extends StObject
+  inline def duration: duration = "duration".asInstanceOf[duration]
   
   @js.native
-  sealed trait endDate extends js.Object
+  sealed trait enable extends StObject
+  inline def enable: enable = "enable".asInstanceOf[enable]
   
   @js.native
-  sealed trait firstDay extends js.Object
+  sealed trait endDate extends StObject
+  inline def endDate: endDate = "endDate".asInstanceOf[endDate]
   
   @js.native
-  sealed trait focus extends js.Object
+  sealed trait firstDay extends StObject
+  inline def firstDay: firstDay = "firstDay".asInstanceOf[firstDay]
   
   @js.native
-  sealed trait getDate extends js.Object
+  sealed trait focus extends StObject
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait gotoCurrent extends js.Object
+  sealed trait getDate extends StObject
+  inline def getDate: getDate = "getDate".asInstanceOf[getDate]
   
   @js.native
-  sealed trait hide extends js.Object
+  sealed trait gotoCurrent extends StObject
+  inline def gotoCurrent: gotoCurrent = "gotoCurrent".asInstanceOf[gotoCurrent]
   
   @js.native
-  sealed trait instance extends js.Object
+  sealed trait hide extends StObject
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
-  sealed trait isDisabled extends js.Object
+  sealed trait instance extends StObject
+  inline def instance: instance = "instance".asInstanceOf[instance]
   
   @js.native
-  sealed trait isFirstItem extends js.Object
+  sealed trait isDisabled extends StObject
+  inline def isDisabled: isDisabled = "isDisabled".asInstanceOf[isDisabled]
   
   @js.native
-  sealed trait isLastItem extends js.Object
+  sealed trait isFirstItem extends StObject
+  inline def isFirstItem: isFirstItem = "isFirstItem".asInstanceOf[isFirstItem]
   
   @js.native
-  sealed trait isOpen extends js.Object
+  sealed trait isLastItem extends StObject
+  inline def isLastItem: isLastItem = "isLastItem".asInstanceOf[isLastItem]
   
   @js.native
-  sealed trait load extends js.Object
+  sealed trait isOpen extends StObject
+  inline def isOpen: isOpen = "isOpen".asInstanceOf[isOpen]
   
   @js.native
-  sealed trait menuWidget extends js.Object
+  sealed trait load extends StObject
+  inline def load: load = "load".asInstanceOf[load]
   
   @js.native
-  sealed trait moveToTop extends js.Object
+  sealed trait menuWidget extends StObject
+  inline def menuWidget: menuWidget = "menuWidget".asInstanceOf[menuWidget]
   
   @js.native
-  sealed trait next extends js.Object
+  sealed trait moveToTop extends StObject
+  inline def moveToTop: moveToTop = "moveToTop".asInstanceOf[moveToTop]
   
   @js.native
-  sealed trait nextPage extends js.Object
+  sealed trait next extends StObject
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait nextPage extends StObject
+  inline def nextPage: nextPage = "nextPage".asInstanceOf[nextPage]
   
   @js.native
-  sealed trait option extends js.Object
+  sealed trait open extends StObject
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait pageDown extends js.Object
+  sealed trait option extends StObject
+  inline def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait pageUp extends js.Object
+  sealed trait pageDown extends StObject
+  inline def pageDown: pageDown = "pageDown".asInstanceOf[pageDown]
   
   @js.native
-  sealed trait previous extends js.Object
+  sealed trait pageUp extends StObject
+  inline def pageUp: pageUp = "pageUp".asInstanceOf[pageUp]
   
   @js.native
-  sealed trait previousPage extends js.Object
+  sealed trait previous extends StObject
+  inline def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
-  sealed trait refresh extends js.Object
+  sealed trait previousPage extends StObject
+  inline def previousPage: previousPage = "previousPage".asInstanceOf[previousPage]
   
   @js.native
-  sealed trait search extends js.Object
+  sealed trait refresh extends StObject
+  inline def refresh: refresh = "refresh".asInstanceOf[refresh]
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait search extends StObject
+  inline def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait serialize extends js.Object
+  sealed trait select extends StObject
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait setDate extends js.Object
+  sealed trait serialize extends StObject
+  inline def serialize: serialize = "serialize".asInstanceOf[serialize]
   
   @js.native
-  sealed trait show extends js.Object
+  sealed trait setDate extends StObject
+  inline def setDate: setDate = "setDate".asInstanceOf[setDate]
   
   @js.native
-  sealed trait stepDown extends js.Object
+  sealed trait show extends StObject
+  inline def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait stepUp extends js.Object
+  sealed trait stepDown extends StObject
+  inline def stepDown: stepDown = "stepDown".asInstanceOf[stepDown]
   
   @js.native
-  sealed trait toArray extends js.Object
+  sealed trait stepUp extends StObject
+  inline def stepUp: stepUp = "stepUp".asInstanceOf[stepUp]
   
   @js.native
-  sealed trait value extends js.Object
+  sealed trait toArray extends StObject
+  inline def toArray: toArray = "toArray".asInstanceOf[toArray]
   
   @js.native
-  sealed trait values extends js.Object
+  sealed trait value extends StObject
+  inline def value: value = "value".asInstanceOf[value]
   
   @js.native
-  sealed trait widget extends js.Object
+  sealed trait values extends StObject
+  inline def values: values = "values".asInstanceOf[values]
   
-  @scala.inline
-  def altField: altField = "altField".asInstanceOf[altField]
-  @scala.inline
-  def altFormat: altFormat = "altFormat".asInstanceOf[altFormat]
-  @scala.inline
-  def appendText: appendText = "appendText".asInstanceOf[appendText]
-  @scala.inline
-  def autoSize: autoSize = "autoSize".asInstanceOf[autoSize]
-  @scala.inline
-  def autohide: autohide = "autohide".asInstanceOf[autohide]
-  @scala.inline
-  def beforeShow: beforeShow = "beforeShow".asInstanceOf[beforeShow]
-  @scala.inline
-  def beforeShowDay: beforeShowDay = "beforeShowDay".asInstanceOf[beforeShowDay]
-  @scala.inline
-  def blur: blur = "blur".asInstanceOf[blur]
-  @scala.inline
-  def buttonImage: buttonImage = "buttonImage".asInstanceOf[buttonImage]
-  @scala.inline
-  def buttonImageOnly: buttonImageOnly = "buttonImageOnly".asInstanceOf[buttonImageOnly]
-  @scala.inline
-  def buttonText: buttonText = "buttonText".asInstanceOf[buttonText]
-  @scala.inline
-  def calculateWeek: calculateWeek = "calculateWeek".asInstanceOf[calculateWeek]
-  @scala.inline
-  def changeMonth: changeMonth = "changeMonth".asInstanceOf[changeMonth]
-  @scala.inline
-  def changeYear: changeYear = "changeYear".asInstanceOf[changeYear]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def closeText: closeText = "closeText".asInstanceOf[closeText]
-  @scala.inline
-  def collapse: collapse = "collapse".asInstanceOf[collapse]
-  @scala.inline
-  def collapseAll: collapseAll = "collapseAll".asInstanceOf[collapseAll]
-  @scala.inline
-  def constrainInput: constrainInput = "constrainInput".asInstanceOf[constrainInput]
-  @scala.inline
-  def currentText: currentText = "currentText".asInstanceOf[currentText]
-  @scala.inline
-  def dateFormat: dateFormat = "dateFormat".asInstanceOf[dateFormat]
-  @scala.inline
-  def dayNames: dayNames = "dayNames".asInstanceOf[dayNames]
-  @scala.inline
-  def dayNamesMin: dayNamesMin = "dayNamesMin".asInstanceOf[dayNamesMin]
-  @scala.inline
-  def dayNamesShort: dayNamesShort = "dayNamesShort".asInstanceOf[dayNamesShort]
-  @scala.inline
-  def defaultDate: defaultDate = "defaultDate".asInstanceOf[defaultDate]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def dialog: dialog = "dialog".asInstanceOf[dialog]
-  @scala.inline
-  def disable: disable = "disable".asInstanceOf[disable]
-  @scala.inline
-  def duration: duration = "duration".asInstanceOf[duration]
-  @scala.inline
-  def enable: enable = "enable".asInstanceOf[enable]
-  @scala.inline
-  def endDate: endDate = "endDate".asInstanceOf[endDate]
-  @scala.inline
-  def firstDay: firstDay = "firstDay".asInstanceOf[firstDay]
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
-  @scala.inline
-  def getDate: getDate = "getDate".asInstanceOf[getDate]
-  @scala.inline
-  def gotoCurrent: gotoCurrent = "gotoCurrent".asInstanceOf[gotoCurrent]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def instance: instance = "instance".asInstanceOf[instance]
-  @scala.inline
-  def isDisabled: isDisabled = "isDisabled".asInstanceOf[isDisabled]
-  @scala.inline
-  def isFirstItem: isFirstItem = "isFirstItem".asInstanceOf[isFirstItem]
-  @scala.inline
-  def isLastItem: isLastItem = "isLastItem".asInstanceOf[isLastItem]
-  @scala.inline
-  def isOpen: isOpen = "isOpen".asInstanceOf[isOpen]
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
-  @scala.inline
-  def menuWidget: menuWidget = "menuWidget".asInstanceOf[menuWidget]
-  @scala.inline
-  def moveToTop: moveToTop = "moveToTop".asInstanceOf[moveToTop]
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
-  @scala.inline
-  def nextPage: nextPage = "nextPage".asInstanceOf[nextPage]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def option: option = "option".asInstanceOf[option]
-  @scala.inline
-  def pageDown: pageDown = "pageDown".asInstanceOf[pageDown]
-  @scala.inline
-  def pageUp: pageUp = "pageUp".asInstanceOf[pageUp]
-  @scala.inline
-  def previous: previous = "previous".asInstanceOf[previous]
-  @scala.inline
-  def previousPage: previousPage = "previousPage".asInstanceOf[previousPage]
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def serialize: serialize = "serialize".asInstanceOf[serialize]
-  @scala.inline
-  def setDate: setDate = "setDate".asInstanceOf[setDate]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
-  @scala.inline
-  def stepDown: stepDown = "stepDown".asInstanceOf[stepDown]
-  @scala.inline
-  def stepUp: stepUp = "stepUp".asInstanceOf[stepUp]
-  @scala.inline
-  def toArray: toArray = "toArray".asInstanceOf[toArray]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
-  @scala.inline
-  def values: values = "values".asInstanceOf[values]
-  @scala.inline
-  def widget: widget = "widget".asInstanceOf[widget]
+  @js.native
+  sealed trait widget extends StObject
+  inline def widget: widget = "widget".asInstanceOf[widget]
 }
-

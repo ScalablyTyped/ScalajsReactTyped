@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for client BeginCallback events.
   */
-@JSGlobal("MVCxClientBeginCallbackEventArgs")
-@js.native
-class MVCxClientBeginCallbackEventArgs protected () extends ASPxClientBeginCallbackEventArgs {
-  /**
-    * Initializes a new instance of the MVCxClientBeginCallbackEventArgs class.
-    * @param command A string value that is the name of the command that initiated a callback.
-    */
-  def this(command: String) = this()
+trait MVCxClientBeginCallbackEventArgs
+  extends StObject
+     with ASPxClientBeginCallbackEventArgs {
+  
   /**
     * Gets an object containing specific information (if any, as name/value pairs) that should be passed as a request parameter from the client to the server side for further processing.
     */
-  var customArgs: js.Any = js.native
+  var customArgs: Any
 }
-
+object MVCxClientBeginCallbackEventArgs {
+  
+  inline def apply(command: String, customArgs: Any): MVCxClientBeginCallbackEventArgs = {
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], customArgs = customArgs.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MVCxClientBeginCallbackEventArgs]
+  }
+  
+  extension [Self <: MVCxClientBeginCallbackEventArgs](x: Self) {
+    
+    inline def setCustomArgs(value: Any): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
+  }
+}

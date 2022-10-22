@@ -1,10 +1,9 @@
 package typingsJapgolly.umbraco.umbraco.services
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation._
   * @description
   * Tracks the various application state variables when working in the back office, raises events when state changes.
   */
-trait IAppState extends js.Object {
+trait IAppState extends StObject {
+  
   /**
     * @ngdoc function
     * @name umbraco.services.angularHelper#getGlobalState
@@ -26,6 +26,7 @@ trait IAppState extends js.Object {
     * to be publicly mutable and allow setting arbitrary values
     */
   def getGlobalState(key: String): IGlobalState
+  
   /**
     * @ngdoc function
     * @name umbraco.services.angularHelper#getMenuState
@@ -37,6 +38,7 @@ trait IAppState extends js.Object {
     * to be publicly mutable and allow setting arbitrary values
     */
   def getMenuState(key: String): IStateObject
+  
   /**
     * @ngdoc function
     * @name umbraco.services.angularHelper#getSectionState
@@ -48,8 +50,10 @@ trait IAppState extends js.Object {
     * to be publicly mutable and allow setting arbitrary values
     */
   def getSectionState(key: String): ISectionState
+  
   /** function to validate and set the state on a state object */
   def getState(stateObj: IStateObject, key: String, stateObjName: String): IStateObject
+  
   /**
     * @ngdoc function
     * @name umbraco.services.angularHelper#getTreeState
@@ -61,6 +65,7 @@ trait IAppState extends js.Object {
     * to be publicly mutable and allow setting arbitrary values
     */
   def getTreeState(key: String): ITreeState
+  
   /**
     * @ngdoc function
     * @name umbraco.services.angularHelper#setGlobalState
@@ -71,6 +76,7 @@ trait IAppState extends js.Object {
     * Sets a global state value by key
     */
   def setGlobalState(key: String, value: Boolean): Unit
+  
   /**
     * @ngdoc function
     * @name umbraco.services.angularHelper#setMenuState
@@ -81,6 +87,7 @@ trait IAppState extends js.Object {
     * Sets a section state value by key
     */
   def setMenuState(key: String, value: IMenuState): Unit
+  
   /**
     * @ngdoc function
     * @name umbraco.services.angularHelper#setSectionState
@@ -91,8 +98,10 @@ trait IAppState extends js.Object {
     * Sets a section state value by key
     */
   def setSectionState(key: String, value: ISectionState): Unit
+  
   /** function to validate and set the state on a state object */
-  def setState(stateObj: IStateObject, key: String, value: js.Any, stateObjName: String): Unit
+  def setState(stateObj: IStateObject, key: String, value: Any, stateObjName: String): Unit
+  
   /**
     * @ngdoc function
     * @name umbraco.services.angularHelper#setTreeState
@@ -104,33 +113,44 @@ trait IAppState extends js.Object {
     */
   def setTreeState(key: String, value: ITreeState): Unit
 }
-
 object IAppState {
-  @scala.inline
-  def apply(
-    getGlobalState: String => CallbackTo[IGlobalState],
-    getMenuState: String => CallbackTo[IStateObject],
-    getSectionState: String => CallbackTo[ISectionState],
-    getState: (IStateObject, String, String) => CallbackTo[IStateObject],
-    getTreeState: String => CallbackTo[ITreeState],
+  
+  inline def apply(
+    getGlobalState: String => IGlobalState,
+    getMenuState: String => IStateObject,
+    getSectionState: String => ISectionState,
+    getState: (IStateObject, String, String) => IStateObject,
+    getTreeState: String => ITreeState,
     setGlobalState: (String, Boolean) => Callback,
     setMenuState: (String, IMenuState) => Callback,
     setSectionState: (String, ISectionState) => Callback,
-    setState: (IStateObject, String, js.Any, String) => Callback,
+    setState: (IStateObject, String, Any, String) => Callback,
     setTreeState: (String, ITreeState) => Callback
   ): IAppState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getGlobalState")(js.Any.fromFunction1((t0: java.lang.String) => getGlobalState(t0).runNow()))
-    __obj.updateDynamic("getMenuState")(js.Any.fromFunction1((t0: java.lang.String) => getMenuState(t0).runNow()))
-    __obj.updateDynamic("getSectionState")(js.Any.fromFunction1((t0: java.lang.String) => getSectionState(t0).runNow()))
-    __obj.updateDynamic("getState")(js.Any.fromFunction3((t0: typingsJapgolly.umbraco.umbraco.services.IStateObject, t1: java.lang.String, t2: java.lang.String) => getState(t0, t1, t2).runNow()))
-    __obj.updateDynamic("getTreeState")(js.Any.fromFunction1((t0: java.lang.String) => getTreeState(t0).runNow()))
-    __obj.updateDynamic("setGlobalState")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Boolean) => setGlobalState(t0, t1).runNow()))
-    __obj.updateDynamic("setMenuState")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.umbraco.umbraco.services.IMenuState) => setMenuState(t0, t1).runNow()))
-    __obj.updateDynamic("setSectionState")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.umbraco.umbraco.services.ISectionState) => setSectionState(t0, t1).runNow()))
-    __obj.updateDynamic("setState")(js.Any.fromFunction4((t0: typingsJapgolly.umbraco.umbraco.services.IStateObject, t1: java.lang.String, t2: js.Any, t3: java.lang.String) => setState(t0, t1, t2, t3).runNow()))
-    __obj.updateDynamic("setTreeState")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.umbraco.umbraco.services.ITreeState) => setTreeState(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(getGlobalState = js.Any.fromFunction1(getGlobalState), getMenuState = js.Any.fromFunction1(getMenuState), getSectionState = js.Any.fromFunction1(getSectionState), getState = js.Any.fromFunction3(getState), getTreeState = js.Any.fromFunction1(getTreeState), setGlobalState = js.Any.fromFunction2((t0: String, t1: Boolean) => (setGlobalState(t0, t1)).runNow()), setMenuState = js.Any.fromFunction2((t0: String, t1: IMenuState) => (setMenuState(t0, t1)).runNow()), setSectionState = js.Any.fromFunction2((t0: String, t1: ISectionState) => (setSectionState(t0, t1)).runNow()), setState = js.Any.fromFunction4((t0: IStateObject, t1: String, t2: Any, t3: String) => (setState(t0, t1, t2, t3)).runNow()), setTreeState = js.Any.fromFunction2((t0: String, t1: ITreeState) => (setTreeState(t0, t1)).runNow()))
     __obj.asInstanceOf[IAppState]
   }
+  
+  extension [Self <: IAppState](x: Self) {
+    
+    inline def setGetGlobalState(value: String => IGlobalState): Self = StObject.set(x, "getGlobalState", js.Any.fromFunction1(value))
+    
+    inline def setGetMenuState(value: String => IStateObject): Self = StObject.set(x, "getMenuState", js.Any.fromFunction1(value))
+    
+    inline def setGetSectionState(value: String => ISectionState): Self = StObject.set(x, "getSectionState", js.Any.fromFunction1(value))
+    
+    inline def setGetState(value: (IStateObject, String, String) => IStateObject): Self = StObject.set(x, "getState", js.Any.fromFunction3(value))
+    
+    inline def setGetTreeState(value: String => ITreeState): Self = StObject.set(x, "getTreeState", js.Any.fromFunction1(value))
+    
+    inline def setSetGlobalState(value: (String, Boolean) => Callback): Self = StObject.set(x, "setGlobalState", js.Any.fromFunction2((t0: String, t1: Boolean) => (value(t0, t1)).runNow()))
+    
+    inline def setSetMenuState(value: (String, IMenuState) => Callback): Self = StObject.set(x, "setMenuState", js.Any.fromFunction2((t0: String, t1: IMenuState) => (value(t0, t1)).runNow()))
+    
+    inline def setSetSectionState(value: (String, ISectionState) => Callback): Self = StObject.set(x, "setSectionState", js.Any.fromFunction2((t0: String, t1: ISectionState) => (value(t0, t1)).runNow()))
+    
+    inline def setSetState(value: (IStateObject, String, Any, String) => Callback): Self = StObject.set(x, "setState", js.Any.fromFunction4((t0: IStateObject, t1: String, t2: Any, t3: String) => (value(t0, t1, t2, t3)).runNow()))
+    
+    inline def setSetTreeState(value: (String, ITreeState) => Callback): Self = StObject.set(x, "setTreeState", js.Any.fromFunction2((t0: String, t1: ITreeState) => (value(t0, t1)).runNow()))
+  }
 }
-

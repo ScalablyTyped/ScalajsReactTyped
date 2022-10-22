@@ -1,23 +1,32 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimeSlot extends js.Object {
-  // The date, time, and time zone that a period begins.
-  var end: js.UndefOr[DateTimeTimeZone] = js.undefined
+trait TimeSlot extends StObject {
+  
   // The date, time, and time zone that a period ends.
+  var end: js.UndefOr[DateTimeTimeZone] = js.undefined
+  
+  // The date, time, and time zone that a period begins.
   var start: js.UndefOr[DateTimeTimeZone] = js.undefined
 }
-
 object TimeSlot {
-  @scala.inline
-  def apply(end: DateTimeTimeZone = null, start: DateTimeTimeZone = null): TimeSlot = {
+  
+  inline def apply(): TimeSlot = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeSlot]
   }
+  
+  extension [Self <: TimeSlot](x: Self) {
+    
+    inline def setEnd(value: DateTimeTimeZone): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setStart(value: DateTimeTimeZone): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+  }
 }
-

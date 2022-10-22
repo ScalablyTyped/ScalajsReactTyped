@@ -3,21 +3,49 @@ package typingsJapgolly.fortawesomeFreeSolidSvgIcons
 import typingsJapgolly.fortawesomeFontawesomeCommonTypes.mod.IconDefinition
 import typingsJapgolly.fortawesomeFontawesomeCommonTypes.mod.IconName
 import typingsJapgolly.fortawesomeFontawesomeCommonTypes.mod.IconPrefix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fortawesome/free-solid-svg-icons/faBreadSlice", JSImport.Namespace)
-@js.native
-object faBreadSliceMod extends js.Object {
+object faBreadSliceMod {
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBreadSlice", "aliases")
+  @js.native
+  val aliases: js.Array[String | Double] = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBreadSlice", "definition")
+  @js.native
   val definition: IconDefinition = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBreadSlice", "faBreadSlice")
+  @js.native
   val faBreadSlice: IconDefinition = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBreadSlice", "height")
+  @js.native
   val height: Double = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBreadSlice", "iconName")
+  @js.native
   val iconName: IconName = js.native
-  val ligatures: js.Array[String] = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBreadSlice", "ligatures")
+  @js.native
+  val ligatures: js.Array[String | Double] = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBreadSlice", "prefix")
+  @js.native
   val prefix: IconPrefix = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBreadSlice", "svgPathData")
+  @js.native
   val svgPathData: String = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBreadSlice", "unicode")
+  @js.native
   val unicode: String = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBreadSlice", "width")
+  @js.native
   val width: Double = js.native
 }
-

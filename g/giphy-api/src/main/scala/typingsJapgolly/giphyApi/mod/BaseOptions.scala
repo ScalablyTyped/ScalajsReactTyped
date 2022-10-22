@@ -1,20 +1,28 @@
 package typingsJapgolly.giphyApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseOptions extends js.Object {
+trait BaseOptions extends StObject {
+  
   var fmt: js.UndefOr[Format] = js.undefined
+  
   var rating: Rating
 }
-
 object BaseOptions {
-  @scala.inline
-  def apply(rating: Rating, fmt: Format = null): BaseOptions = {
+  
+  inline def apply(rating: Rating): BaseOptions = {
     val __obj = js.Dynamic.literal(rating = rating.asInstanceOf[js.Any])
-    if (fmt != null) __obj.updateDynamic("fmt")(fmt.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseOptions]
   }
+  
+  extension [Self <: BaseOptions](x: Self) {
+    
+    inline def setFmt(value: Format): Self = StObject.set(x, "fmt", value.asInstanceOf[js.Any])
+    
+    inline def setFmtUndefined: Self = StObject.set(x, "fmt", js.undefined)
+    
+    inline def setRating(value: Rating): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+  }
 }
-

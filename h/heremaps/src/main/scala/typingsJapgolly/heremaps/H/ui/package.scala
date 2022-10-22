@@ -1,17 +1,24 @@
-package typingsJapgolly.heremaps.H
+package typingsJapgolly.heremaps.H.ui
 
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object ui {
-  type DistanceMeasurement = typingsJapgolly.heremaps.H.ui.DistanceMeasurement_
-  type ES6Element = org.scalajs.dom.raw.Element
-  type InfoBubble = typingsJapgolly.heremaps.H.ui.InfoBubble_
-  type MapSettingsControl = typingsJapgolly.heremaps.H.ui.MapSettingsControl_
-  type Pano = typingsJapgolly.heremaps.H.ui.Pano_
-  type ScaleBar = typingsJapgolly.heremaps.H.ui.ScaleBar_
-  type UI = typingsJapgolly.heremaps.H.ui.UI_
-  type ZoomControl = typingsJapgolly.heremaps.H.ui.ZoomControl_
-  type ZoomRectangle = typingsJapgolly.heremaps.H.ui.ZoomRectangle_
-}
+
+/**
+  * This class represents a distance measurement control which helps calculating distances between geographical locations indicated by the user clicks.
+  */
+type DistanceMeasurement = Control
+
+type ES6Element = Element
+
+/**
+  * This class represents the UI controls for panorama
+  */
+type Pano = Control
+
+/**
+  * This class represents a zoom rectangle control element that allows zooming to the selected area on the screen.
+  */
+type ZoomRectangle = Control

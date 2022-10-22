@@ -1,10 +1,11 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NearestRoadsRequest extends js.Object {
+trait NearestRoadsRequest extends StObject {
+  
   /**
     * A list of latitude/longitude pairs. Latitude and longitude values should be separated by commas.
     * Coordinates should be separated by the pipe character: "|".
@@ -12,13 +13,17 @@ trait NearestRoadsRequest extends js.Object {
     */
   var points: js.Array[LatLng]
 }
-
 object NearestRoadsRequest {
-  @scala.inline
-  def apply(points: js.Array[LatLng]): NearestRoadsRequest = {
-    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
   
+  inline def apply(points: js.Array[LatLng]): NearestRoadsRequest = {
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     __obj.asInstanceOf[NearestRoadsRequest]
   }
+  
+  extension [Self <: NearestRoadsRequest](x: Self) {
+    
+    inline def setPoints(value: js.Array[LatLng]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    
+    inline def setPointsVarargs(value: LatLng*): Self = StObject.set(x, "points", js.Array(value*))
+  }
 }
-

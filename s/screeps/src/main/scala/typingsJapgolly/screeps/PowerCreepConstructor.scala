@@ -1,11 +1,14 @@
 package typingsJapgolly.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PowerCreepConstructor extends ConstructorById[PowerCreep] {
+trait PowerCreepConstructor
+  extends StObject
+     with ConstructorById[PowerCreep] {
+  
   /**
     * A static method to create new Power Creep instance in your account. It will be added in an unspawned state,
     * use spawn method to spawn it in the world.
@@ -17,4 +20,3 @@ trait PowerCreepConstructor extends ConstructorById[PowerCreep] {
     */
   def create(name: String, className: PowerClassConstant): OK | ERR_NAME_EXISTS | ERR_NOT_ENOUGH_RESOURCES = js.native
 }
-

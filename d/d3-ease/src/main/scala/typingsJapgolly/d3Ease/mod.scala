@@ -1,19 +1,122 @@
 package typingsJapgolly.d3Ease
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("d3-ease", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("d3-ease", JSImport.Namespace)
   @js.native
-  trait BackEasingFactory extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("d3-ease", "easeBack")
+  @js.native
+  val easeBack: BackEasingFactory = js.native
+  
+  @JSImport("d3-ease", "easeBackIn")
+  @js.native
+  val easeBackIn: BackEasingFactory = js.native
+  
+  @JSImport("d3-ease", "easeBackInOut")
+  @js.native
+  val easeBackInOut: BackEasingFactory = js.native
+  
+  @JSImport("d3-ease", "easeBackOut")
+  @js.native
+  val easeBackOut: BackEasingFactory = js.native
+  
+  inline def easeBounce(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounce")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeBounceIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounceIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeBounceInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounceInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeBounceOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeBounceOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeCircle(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircle")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeCircleIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircleIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeCircleInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircleInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeCircleOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCircleOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeCubic(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubic")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeCubicIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubicIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeCubicInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubicInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeCubicOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeCubicOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @JSImport("d3-ease", "easeElastic")
+  @js.native
+  val easeElastic: ElasticEasingFactory = js.native
+  
+  @JSImport("d3-ease", "easeElasticIn")
+  @js.native
+  val easeElasticIn: ElasticEasingFactory = js.native
+  
+  @JSImport("d3-ease", "easeElasticInOut")
+  @js.native
+  val easeElasticInOut: ElasticEasingFactory = js.native
+  
+  @JSImport("d3-ease", "easeElasticOut")
+  @js.native
+  val easeElasticOut: ElasticEasingFactory = js.native
+  
+  inline def easeExp(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExp")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeExpIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExpIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeExpInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExpInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeExpOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeExpOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeLinear(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeLinear")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @JSImport("d3-ease", "easePoly")
+  @js.native
+  val easePoly: PolynomialEasingFactory = js.native
+  
+  @JSImport("d3-ease", "easePolyIn")
+  @js.native
+  val easePolyIn: PolynomialEasingFactory = js.native
+  
+  @JSImport("d3-ease", "easePolyInOut")
+  @js.native
+  val easePolyInOut: PolynomialEasingFactory = js.native
+  
+  @JSImport("d3-ease", "easePolyOut")
+  @js.native
+  val easePolyOut: PolynomialEasingFactory = js.native
+  
+  inline def easeQuad(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuad")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeQuadIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuadIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeQuadInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuadInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeQuadOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeQuadOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeSin(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSin")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeSinIn(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSinIn")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeSinInOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSinInOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def easeSinOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSinOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @js.native
+  trait BackEasingFactory extends StObject {
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def apply(normalizedTime: Double): Double = js.native
+    
     /**
       * Returns a new back easing with the specified overshoot s.
       * The degree of overshoot is configurable; if not specified, it defaults to 1.70158.
@@ -24,12 +127,14 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait ElasticEasingFactory extends js.Object {
+  trait ElasticEasingFactory extends StObject {
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def apply(normalizedTime: Double): Double = js.native
+    
     /**
       * Returns a new elastic easing with the specified amplitude a.
       * Defaults to 1,if not specified.
@@ -37,6 +142,7 @@ object mod extends js.Object {
       * @param a Amplitude for elastic easing.
       */
     def amplitude(a: Double): ElasticEasingFactory = js.native
+    
     /**
       * Returns a new elastic easing with the specified amplitude a.
       * Defaults to 0.3,if not specified.
@@ -47,12 +153,14 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait PolynomialEasingFactory extends js.Object {
+  trait PolynomialEasingFactory extends StObject {
+    
     /**
       * Calculate eased time.
       * @param normalizedTime Normalized time typically in the range [0, 1]
       */
     def apply(normalizedTime: Double): Double = js.native
+    
     /**
       * Returns a new polynomial easing with the specified exponent e.
       * If the exponent is not specified, it defaults to 3, equivalent to cubic.
@@ -61,43 +169,4 @@ object mod extends js.Object {
       */
     def exponent(e: Double): PolynomialEasingFactory = js.native
   }
-  
-  val easeBack: BackEasingFactory = js.native
-  val easeBackIn: BackEasingFactory = js.native
-  val easeBackInOut: BackEasingFactory = js.native
-  val easeBackOut: BackEasingFactory = js.native
-  val easeElastic: ElasticEasingFactory = js.native
-  val easeElasticIn: ElasticEasingFactory = js.native
-  val easeElasticInOut: ElasticEasingFactory = js.native
-  val easeElasticOut: ElasticEasingFactory = js.native
-  val easePoly: PolynomialEasingFactory = js.native
-  val easePolyIn: PolynomialEasingFactory = js.native
-  val easePolyInOut: PolynomialEasingFactory = js.native
-  val easePolyOut: PolynomialEasingFactory = js.native
-  def easeBounce(normalizedTime: Double): Double = js.native
-  def easeBounceIn(normalizedTime: Double): Double = js.native
-  def easeBounceInOut(normalizedTime: Double): Double = js.native
-  def easeBounceOut(normalizedTime: Double): Double = js.native
-  def easeCircle(normalizedTime: Double): Double = js.native
-  def easeCircleIn(normalizedTime: Double): Double = js.native
-  def easeCircleInOut(normalizedTime: Double): Double = js.native
-  def easeCircleOut(normalizedTime: Double): Double = js.native
-  def easeCubic(normalizedTime: Double): Double = js.native
-  def easeCubicIn(normalizedTime: Double): Double = js.native
-  def easeCubicInOut(normalizedTime: Double): Double = js.native
-  def easeCubicOut(normalizedTime: Double): Double = js.native
-  def easeExp(normalizedTime: Double): Double = js.native
-  def easeExpIn(normalizedTime: Double): Double = js.native
-  def easeExpInOut(normalizedTime: Double): Double = js.native
-  def easeExpOut(normalizedTime: Double): Double = js.native
-  def easeLinear(normalizedTime: Double): Double = js.native
-  def easeQuad(normalizedTime: Double): Double = js.native
-  def easeQuadIn(normalizedTime: Double): Double = js.native
-  def easeQuadInOut(normalizedTime: Double): Double = js.native
-  def easeQuadOut(normalizedTime: Double): Double = js.native
-  def easeSin(normalizedTime: Double): Double = js.native
-  def easeSinIn(normalizedTime: Double): Double = js.native
-  def easeSinInOut(normalizedTime: Double): Double = js.native
-  def easeSinOut(normalizedTime: Double): Double = js.native
 }
-

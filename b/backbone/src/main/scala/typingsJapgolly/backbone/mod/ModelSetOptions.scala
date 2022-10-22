@@ -1,20 +1,17 @@
 package typingsJapgolly.backbone.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ModelSetOptions
-  extends Silenceable
+  extends StObject
+     with Silenceable
      with Validable
-
 object ModelSetOptions {
-  @scala.inline
-  def apply(silent: js.UndefOr[Boolean] = js.undefined, validate: js.UndefOr[Boolean] = js.undefined): ModelSetOptions = {
+  
+  inline def apply(): ModelSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelSetOptions]
   }
 }
-

@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Storage
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StorageItemTypes extends js.Object
-
+sealed trait StorageItemTypes extends StObject
 @JSGlobal("Windows.Storage.StorageItemTypes")
 @js.native
-object StorageItemTypes extends js.Object {
-  @js.native
-  sealed trait file extends StorageItemTypes
+object StorageItemTypes extends StObject {
   
   @js.native
-  sealed trait folder extends StorageItemTypes
+  sealed trait file
+    extends StObject
+       with StorageItemTypes
   
   @js.native
-  sealed trait none extends StorageItemTypes
+  sealed trait folder
+    extends StObject
+       with StorageItemTypes
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StorageItemTypes with Double] = js.native
-  /* 1 */ @js.native
-  object file extends TopLevel[file with Double]
-  
-  /* 2 */ @js.native
-  object folder extends TopLevel[folder with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  @js.native
+  sealed trait none
+    extends StObject
+       with StorageItemTypes
 }
-

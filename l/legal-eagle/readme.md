@@ -10,10 +10,10 @@ A tool for listing the licenses of all dependencies of a node module
 | ------------------ | :-------------: |
 | Full name          | legal-eagle |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 91403 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17023.0 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/atom/legal-eagle#readme)

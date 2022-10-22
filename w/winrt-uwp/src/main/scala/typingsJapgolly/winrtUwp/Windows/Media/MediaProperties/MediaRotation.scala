@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Media.MediaProperties
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaRotation extends js.Object
-
+sealed trait MediaRotation extends StObject
 /** Defines the direction and angle of a media rotation transform. */
 @JSGlobal("Windows.Media.MediaProperties.MediaRotation")
 @js.native
-object MediaRotation extends js.Object {
+object MediaRotation extends StObject {
+  
   /** Rotate 180 degrees clockwise. */
   @js.native
-  sealed trait clockwise180Degrees extends MediaRotation
+  sealed trait clockwise180Degrees
+    extends StObject
+       with MediaRotation
   
   /** Rotate 270 degrees clockwise. */
   @js.native
-  sealed trait clockwise270Degrees extends MediaRotation
+  sealed trait clockwise270Degrees
+    extends StObject
+       with MediaRotation
   
   /** Rotate 90 degrees clockwise. */
   @js.native
-  sealed trait clockwise90Degrees extends MediaRotation
+  sealed trait clockwise90Degrees
+    extends StObject
+       with MediaRotation
   
   /** No rotation. */
   @js.native
-  sealed trait none extends MediaRotation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaRotation with Double] = js.native
-  /* 2 */ @js.native
-  object clockwise180Degrees extends TopLevel[clockwise180Degrees with Double]
-  
-  /* 3 */ @js.native
-  object clockwise270Degrees extends TopLevel[clockwise270Degrees with Double]
-  
-  /* 1 */ @js.native
-  object clockwise90Degrees extends TopLevel[clockwise90Degrees with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  sealed trait none
+    extends StObject
+       with MediaRotation
 }
-

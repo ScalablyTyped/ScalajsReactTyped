@@ -1,24 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartZoomable extends js.Object {
+trait ChartZoomable extends StObject {
+  
   var mousewheel: js.UndefOr[Boolean | ChartZoomableMousewheel] = js.undefined
+  
   var selection: js.UndefOr[Boolean | ChartZoomableSelection] = js.undefined
 }
-
 object ChartZoomable {
-  @scala.inline
-  def apply(
-    mousewheel: Boolean | ChartZoomableMousewheel = null,
-    selection: Boolean | ChartZoomableSelection = null
-  ): ChartZoomable = {
+  
+  inline def apply(): ChartZoomable = {
     val __obj = js.Dynamic.literal()
-    if (mousewheel != null) __obj.updateDynamic("mousewheel")(mousewheel.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartZoomable]
   }
+  
+  extension [Self <: ChartZoomable](x: Self) {
+    
+    inline def setMousewheel(value: Boolean | ChartZoomableMousewheel): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
+    
+    inline def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
+    
+    inline def setSelection(value: Boolean | ChartZoomableSelection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+  }
 }
-

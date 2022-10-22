@@ -1,42 +1,36 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintOrder extends js.Object
-
+sealed trait PrintOrder extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PrintOrder")
 @js.native
-object PrintOrder extends js.Object {
+object PrintOrder extends StObject {
+  
   /**
-    *
     * Process down the rows before processing across pages or page fields to the right.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait downThenOver extends PrintOrder
+  sealed trait downThenOver
+    extends StObject
+       with PrintOrder
   
   /**
-    *
     * Process across pages or page fields to the right before moving down the rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait overThenDown extends PrintOrder
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PrintOrder with String] = js.native
-  /* "DownThenOver" */ @js.native
-  object downThenOver extends TopLevel[downThenOver with String]
-  
-  /* "OverThenDown" */ @js.native
-  object overThenDown extends TopLevel[overThenDown with String]
-  
+  sealed trait overThenDown
+    extends StObject
+       with PrintOrder
 }
-

@@ -1,35 +1,42 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ModelAnimationLoop extends js.Object
-
+sealed trait ModelAnimationLoop extends StObject
 @JSImport("cesium", "ModelAnimationLoop")
 @js.native
-object ModelAnimationLoop extends js.Object {
-  @js.native
-  sealed trait MIRRORED_REPEAT extends ModelAnimationLoop
-  
-  @js.native
-  sealed trait NONE extends ModelAnimationLoop
-  
-  @js.native
-  sealed trait REPEAT extends ModelAnimationLoop
+object ModelAnimationLoop extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ModelAnimationLoop with Double] = js.native
-  /* 2 */ @js.native
-  object MIRRORED_REPEAT extends TopLevel[MIRRORED_REPEAT with Double]
+  def apply(value: Double): js.UndefOr[ModelAnimationLoop & Double] = js.native
   
-  /* 0 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
+  /**
+    * Loop the animation.  First, playing it forward, then in reverse, then forward, and so on.
+    */
+  @js.native
+  sealed trait MIRRORED_REPEAT
+    extends StObject
+       with ModelAnimationLoop
+  /* 2 */ val MIRRORED_REPEAT: typingsJapgolly.cesium.mod.ModelAnimationLoop.MIRRORED_REPEAT & Double = js.native
   
-  /* 1 */ @js.native
-  object REPEAT extends TopLevel[REPEAT with Double]
+  /**
+    * Play the animation once; do not loop it.
+    */
+  @js.native
+  sealed trait NONE
+    extends StObject
+       with ModelAnimationLoop
+  /* 0 */ val NONE: typingsJapgolly.cesium.mod.ModelAnimationLoop.NONE & Double = js.native
   
+  /**
+    * Loop the animation playing it from the start immediately after it stops.
+    */
+  @js.native
+  sealed trait REPEAT
+    extends StObject
+       with ModelAnimationLoop
+  /* 1 */ val REPEAT: typingsJapgolly.cesium.mod.ModelAnimationLoop.REPEAT & Double = js.native
 }
-

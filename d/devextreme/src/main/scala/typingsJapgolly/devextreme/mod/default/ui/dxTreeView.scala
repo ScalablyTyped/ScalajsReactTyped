@@ -1,19 +1,11 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxTreeViewOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxTreeView")
+@JSImport("devextreme", "default.ui.dxTreeView")
 @js.native
-class dxTreeView protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.dxTreeView {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxTreeViewOptions) = this()
-  def this(element: Element, options: dxTreeViewOptions) = this()
-}
-
+open class dxTreeView[TKey] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxTreeView[TKey]

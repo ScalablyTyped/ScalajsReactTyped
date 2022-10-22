@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-player
 
-Typings are for version 1.15.2
+Typings are for version 2.11.0
 
 ## Library description:
 A React component for playing a variety of URLs, including file paths, YouTube, Facebook, Twitch, SoundCloud, Streamable, Vimeo, Wistia and DailyMotion
@@ -10,10 +10,10 @@ A React component for playing a variety of URLs, including file paths, YouTube, 
 | ------------------ | :-------------: |
 | Full name          | react-player |
 | Keywords           | react, media, player, video, audio, youtube, facebook, twitch, soundcloud, streamable, vimeo, wistia, dailymotion, hls, dash, react-component |
-| # releases         | 38 |
-| # dependents       | 134 |
-| # downloads        | 4396895 |
-| # stars            | 16 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 2291437.6666666665 |
+| # stars            | 6872.0 |
 
 ## Links
 - [Homepage](https://github.com/CookPete/react-player)

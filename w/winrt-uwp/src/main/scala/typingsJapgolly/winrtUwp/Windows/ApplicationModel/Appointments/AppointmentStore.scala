@@ -9,25 +9,24 @@ import typingsJapgolly.winrtUwp.Windows.Foundation.TypedEventHandler
 import typingsJapgolly.winrtUwp.Windows.UI.Popups.Placement
 import typingsJapgolly.winrtUwp.Windows.WinRTEvent
 import typingsJapgolly.winrtUwp.winrtUwpStrings.storechanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a store that contains appointments. */
-@JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStore")
 @js.native
-abstract class AppointmentStore () extends js.Object {
-  /** Returns the AppointmentStoreChangeTracker associated with the appointment store. */
-  var changeTracker: AppointmentStoreChangeTracker = js.native
-  /** Occurs when the AppointmentStore changes. */
-  @JSName("onstorechanged")
-  var onstorechanged_Original: TypedEventHandler[AppointmentStore, AppointmentStoreChangedEventArgs] = js.native
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+trait AppointmentStore extends StObject {
+  
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_storechanged(
     `type`: storechanged,
     listener: TypedEventHandler[AppointmentStore, AppointmentStoreChangedEventArgs]
   ): Unit = js.native
+  
+  /** Returns the AppointmentStoreChangeTracker associated with the appointment store. */
+  var changeTracker: AppointmentStoreChangeTracker = js.native
+  
   /**
     * Asynchronously creates a new AppointmentCalendar within the appointment store using the specified parameters.
     * @param name The name for the new AppointmentCalendar .
@@ -41,24 +40,26 @@ abstract class AppointmentStore () extends js.Object {
     * @return An async operation that provides access to the newly created AppointmentCalendar .
     */
   def createAppointmentCalendarAsync(name: String, userDataAccountId: String): IPromiseWithIAsyncOperation[AppointmentCalendar] = js.native
+  
   /**
     * Retrieves a list of all of the appointment calendars in the appointment store.
     * @return An asynchronous operation that returns an IVectorView upon successful completion.
     */
-  def findAppointmentCalendarsAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findAppointmentCalendarsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Retrieves a list of appointment calendars in the appointment store that meet the criteria specified by the supplied FindAppointmentCalendarsOptions object..
     * @param options The object that specifies the criteria that determines which appointment calendars are returned.
     * @return An asynchronous operation that returns an IVectorView upon successful completion.
     */
-  def findAppointmentCalendarsAsync(options: FindAppointmentCalendarsOptions): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findAppointmentCalendarsAsync(options: FindAppointmentCalendarsOptions): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
+  
   /**
     * Retrieves a list of appointments in the appointment calendar that fall within the specified date range.
     * @param rangeStart The start of the date range for which appointments are retrieved.
     * @param rangeLength The length of the date range for which appointments are retrieved.
     * @return An asynchronous operation that returns an IVectorView upon successful completion.
     */
-  def findAppointmentsAsync(rangeStart: js.Date, rangeLength: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findAppointmentsAsync(rangeStart: js.Date, rangeLength: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Retrieves a list of appointments in the appointment calendar that fall within the specified date range and meet the criteria specified by the supplied FindAppointmentsOptions object..
     * @param rangeStart The start of the date range for which appointments are retrieved.
@@ -66,7 +67,8 @@ abstract class AppointmentStore () extends js.Object {
     * @param options The object that specifies the criteria that determines which appointments are returned.
     * @return An asynchronous operation that returns an IVectorView upon successful completion.
     */
-  def findAppointmentsAsync(rangeStart: js.Date, rangeLength: Double, options: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findAppointmentsAsync(rangeStart: js.Date, rangeLength: Double, options: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
+  
   /**
     * Returns an AppointmentConflictResult representing a conflict between the specified appointment and an existing appointment in the appointment store.
     * @param appointment The appointment for which a conflict is sought.
@@ -80,24 +82,28 @@ abstract class AppointmentStore () extends js.Object {
     * @return An asynchronous operation that returns an AppointmentConflictResult upon successful completion.
     */
   def findConflictAsync(appointment: Appointment, instanceStartTime: js.Date): IPromiseWithIAsyncOperation[AppointmentConflictResult] = js.native
+  
   /**
     * Returns a list of LocalId values for appointment instances with the specified RoamingId value.
     * @param roamingId The RoamingId value for which local ID values are sought.
     * @return An asynchronous operation that returns an IVectorView upon successful completion.
     */
-  def findLocalIdsFromRoamingIdAsync(roamingId: String): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findLocalIdsFromRoamingIdAsync(roamingId: String): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
+  
   /**
     * Retrieves the Appointment with the specified LocalId .
     * @param localId The LocalId of the appointment to be retrieved.
     * @return An asynchronous operation that returns an Appointment upon successful completion.
     */
   def getAppointmentAsync(localId: String): IPromiseWithIAsyncOperation[Appointment] = js.native
+  
   /**
     * Retrieves the AppointmentCalendar with the specified LocalId or RemoteId .
     * @param calendarId The LocalId or RemoteId of the AppointmentCalendar to be retrieved.
     * @return An asynchronous operation that returns an AppointmentCalendar upon successful completion.
     */
   def getAppointmentCalendarAsync(calendarId: String): IPromiseWithIAsyncOperation[AppointmentCalendar] = js.native
+  
   /**
     * Retrieves the instance of the Appointment with the specified LocalId and the specified start time.
     * @param localId The LocalId of the appointment instance to be retrieved.
@@ -105,6 +111,7 @@ abstract class AppointmentStore () extends js.Object {
     * @return An asynchronous operation that returns an Appointment upon successful completion.
     */
   def getAppointmentInstanceAsync(localId: String, instanceStartTime: js.Date): IPromiseWithIAsyncOperation[Appointment] = js.native
+  
   /**
     * Moves the specified Appointment object to the specified AppointmentCalendar .
     * @param appointment The appointment to be moved.
@@ -112,14 +119,20 @@ abstract class AppointmentStore () extends js.Object {
     * @return An asynchronous action.
     */
   def moveAppointmentAsync(appointment: Appointment, destinationCalendar: AppointmentCalendar): IPromiseWithIAsyncAction = js.native
+  
   /** Occurs when the AppointmentStore changes. */
-  def onstorechanged(ev: AppointmentStoreChangedEventArgs with WinRTEvent[AppointmentStore]): Unit = js.native
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def onstorechanged(ev: AppointmentStoreChangedEventArgs & WinRTEvent[AppointmentStore]): Unit = js.native
+  /** Occurs when the AppointmentStore changes. */
+  @JSName("onstorechanged")
+  var onstorechanged_Original: TypedEventHandler[AppointmentStore, AppointmentStoreChangedEventArgs] = js.native
+  
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_storechanged(
     `type`: storechanged,
     listener: TypedEventHandler[AppointmentStore, AppointmentStoreChangedEventArgs]
   ): Unit = js.native
+  
   /**
     * Shows the Appointments provider Add Appointment UI, to enable the user to add an appointment.
     * @param appointment The object representing the information for the appointment to add.
@@ -127,6 +140,7 @@ abstract class AppointmentStore () extends js.Object {
     * @return When this method completes, it returns a String object that represents the RoamingId of the appointment. If the appointment identifier returned is an empty string, the appointment was not added to the Appointments provider app.
     */
   def showAddAppointmentAsync(appointment: Appointment, selection: Rect): IPromiseWithIAsyncOperation[String] = js.native
+  
   /**
     * Shows the Appointments provider Appointment Details UI, to enable the user to view the specified appointment.
     * @param localId The LocalId of the appointment to be displayed.
@@ -140,12 +154,14 @@ abstract class AppointmentStore () extends js.Object {
     * @return An asynchronous action.
     */
   def showAppointmentDetailsAsync(localId: String, instanceStartDate: js.Date): IPromiseWithIAsyncAction = js.native
+  
   /**
     * Shows the Appointments provider Add Appointment UI including the full edit experience, to enable the user to add an appointment.
     * @param appointment The appointment to be added.
     * @return When this method completes, it returns a String object that represents the RoamingId of the appointment. If the appointment identifier returned is an empty string, the appointment was not added to the Appointments provider app.
     */
   def showEditNewAppointmentAsync(appointment: Appointment): IPromiseWithIAsyncOperation[String] = js.native
+  
   /**
     * Shows the Appointments provider Remove Appointment UI, to enable the user to remove an appointment.
     * @param localId The LocalId of the appointment to be removed.
@@ -162,6 +178,7 @@ abstract class AppointmentStore () extends js.Object {
     * @return When this method completes, it returns a Boolean value that indicates whether the Appointment provider app removed the appointment.
     */
   def showRemoveAppointmentAsync(localId: String, selection: Rect, preferredPlacement: Placement, instanceStartDate: js.Date): IPromiseWithIAsyncOperation[Boolean] = js.native
+  
   /**
     * Shows the Appointments provider Replace Appointment UI, to enable the user to replace an appointment.
     * @param localId The LocalId of the appointment to be replaced.
@@ -187,4 +204,3 @@ abstract class AppointmentStore () extends js.Object {
     instanceStartDate: js.Date
   ): IPromiseWithIAsyncOperation[String] = js.native
 }
-

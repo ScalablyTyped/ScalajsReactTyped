@@ -1,8 +1,8 @@
 package typingsJapgolly.canvasjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.canvasjs.canvasjsStrings.solid
@@ -17,32 +17,28 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.canvasjs.canvasjsStrings.longDashDot
   - typingsJapgolly.canvasjs.canvasjsStrings.longDashDotDot
 */
-trait DashType extends js.Object
-
+trait DashType extends StObject
 object DashType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dash: typingsJapgolly.canvasjs.canvasjsStrings.dash = this.cast("dash")
-  @scala.inline
-  def dashDot: typingsJapgolly.canvasjs.canvasjsStrings.dashDot = this.cast("dashDot")
-  @scala.inline
-  def dot: typingsJapgolly.canvasjs.canvasjsStrings.dot = this.cast("dot")
-  @scala.inline
-  def longDash: typingsJapgolly.canvasjs.canvasjsStrings.longDash = this.cast("longDash")
-  @scala.inline
-  def longDashDot: typingsJapgolly.canvasjs.canvasjsStrings.longDashDot = this.cast("longDashDot")
-  @scala.inline
-  def longDashDotDot: typingsJapgolly.canvasjs.canvasjsStrings.longDashDotDot = this.cast("longDashDotDot")
-  @scala.inline
-  def shortDash: typingsJapgolly.canvasjs.canvasjsStrings.shortDash = this.cast("shortDash")
-  @scala.inline
-  def shortDashDot: typingsJapgolly.canvasjs.canvasjsStrings.shortDashDot = this.cast("shortDashDot")
-  @scala.inline
-  def shortDashDotDot: typingsJapgolly.canvasjs.canvasjsStrings.shortDashDotDot = this.cast("shortDashDotDot")
-  @scala.inline
-  def shortDot: typingsJapgolly.canvasjs.canvasjsStrings.shortDot = this.cast("shortDot")
-  @scala.inline
-  def solid: typingsJapgolly.canvasjs.canvasjsStrings.solid = this.cast("solid")
+  
+  inline def dash: typingsJapgolly.canvasjs.canvasjsStrings.dash = "dash".asInstanceOf[typingsJapgolly.canvasjs.canvasjsStrings.dash]
+  
+  inline def dashDot: typingsJapgolly.canvasjs.canvasjsStrings.dashDot = "dashDot".asInstanceOf[typingsJapgolly.canvasjs.canvasjsStrings.dashDot]
+  
+  inline def dot: typingsJapgolly.canvasjs.canvasjsStrings.dot = "dot".asInstanceOf[typingsJapgolly.canvasjs.canvasjsStrings.dot]
+  
+  inline def longDash: typingsJapgolly.canvasjs.canvasjsStrings.longDash = "longDash".asInstanceOf[typingsJapgolly.canvasjs.canvasjsStrings.longDash]
+  
+  inline def longDashDot: typingsJapgolly.canvasjs.canvasjsStrings.longDashDot = "longDashDot".asInstanceOf[typingsJapgolly.canvasjs.canvasjsStrings.longDashDot]
+  
+  inline def longDashDotDot: typingsJapgolly.canvasjs.canvasjsStrings.longDashDotDot = "longDashDotDot".asInstanceOf[typingsJapgolly.canvasjs.canvasjsStrings.longDashDotDot]
+  
+  inline def shortDash: typingsJapgolly.canvasjs.canvasjsStrings.shortDash = "shortDash".asInstanceOf[typingsJapgolly.canvasjs.canvasjsStrings.shortDash]
+  
+  inline def shortDashDot: typingsJapgolly.canvasjs.canvasjsStrings.shortDashDot = "shortDashDot".asInstanceOf[typingsJapgolly.canvasjs.canvasjsStrings.shortDashDot]
+  
+  inline def shortDashDotDot: typingsJapgolly.canvasjs.canvasjsStrings.shortDashDotDot = "shortDashDotDot".asInstanceOf[typingsJapgolly.canvasjs.canvasjsStrings.shortDashDotDot]
+  
+  inline def shortDot: typingsJapgolly.canvasjs.canvasjsStrings.shortDot = "shortDot".asInstanceOf[typingsJapgolly.canvasjs.canvasjsStrings.shortDot]
+  
+  inline def solid: typingsJapgolly.canvasjs.canvasjsStrings.solid = "solid".asInstanceOf[typingsJapgolly.canvasjs.canvasjsStrings.solid]
 }
-

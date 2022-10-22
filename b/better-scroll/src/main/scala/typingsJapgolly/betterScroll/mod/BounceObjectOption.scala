@@ -1,30 +1,42 @@
 package typingsJapgolly.betterScroll.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BounceObjectOption extends js.Object {
+trait BounceObjectOption extends StObject {
+  
   var bottom: js.UndefOr[Boolean] = js.undefined
+  
   var left: js.UndefOr[Boolean] = js.undefined
+  
   var right: js.UndefOr[Boolean] = js.undefined
+  
   var top: js.UndefOr[Boolean] = js.undefined
 }
-
 object BounceObjectOption {
-  @scala.inline
-  def apply(
-    bottom: js.UndefOr[Boolean] = js.undefined,
-    left: js.UndefOr[Boolean] = js.undefined,
-    right: js.UndefOr[Boolean] = js.undefined,
-    top: js.UndefOr[Boolean] = js.undefined
-  ): BounceObjectOption = {
+  
+  inline def apply(): BounceObjectOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[BounceObjectOption]
   }
+  
+  extension [Self <: BounceObjectOption](x: Self) {
+    
+    inline def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    
+    inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    
+    inline def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+  }
 }
-

@@ -1,57 +1,132 @@
 package typingsJapgolly.pg.mod
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.node.streamMod.Duplex
 import typingsJapgolly.node.tlsMod.ConnectionOptions
 import typingsJapgolly.pg.pgBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClientConfig extends js.Object {
+trait ClientConfig extends StObject {
+  
+  var application_name: js.UndefOr[String] = js.undefined
+  
   var connectionString: js.UndefOr[String] = js.undefined
+  
+  var connectionTimeoutMillis: js.UndefOr[Double] = js.undefined
+  
   var database: js.UndefOr[String] = js.undefined
+  
   var host: js.UndefOr[String] = js.undefined
+  
+  var idle_in_transaction_session_timeout: js.UndefOr[Double] = js.undefined
+  
   var keepAlive: js.UndefOr[Boolean] = js.undefined
+  
   var keepAliveInitialDelayMillis: js.UndefOr[Double] = js.undefined
-  var password: js.UndefOr[String] = js.undefined
+  
+  var options: js.UndefOr[String] = js.undefined
+  
+  var parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined
+  
+  var password: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
+  
   var port: js.UndefOr[Double] = js.undefined
+  
   var query_timeout: js.UndefOr[Double] = js.undefined
+  
   var ssl: js.UndefOr[Boolean | ConnectionOptions] = js.undefined
+  
   var statement_timeout: js.UndefOr[`false` | Double] = js.undefined
+  
   var stream: js.UndefOr[Duplex] = js.undefined
+  
+  var types: js.UndefOr[CustomTypesConfig] = js.undefined
+  
   var user: js.UndefOr[String] = js.undefined
 }
-
 object ClientConfig {
-  @scala.inline
-  def apply(
-    connectionString: String = null,
-    database: String = null,
-    host: String = null,
-    keepAlive: js.UndefOr[Boolean] = js.undefined,
-    keepAliveInitialDelayMillis: Int | Double = null,
-    password: String = null,
-    port: Int | Double = null,
-    query_timeout: Int | Double = null,
-    ssl: Boolean | ConnectionOptions = null,
-    statement_timeout: `false` | Double = null,
-    stream: Duplex = null,
-    user: String = null
-  ): ClientConfig = {
+  
+  inline def apply(): ClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString.asInstanceOf[js.Any])
-    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
-    if (keepAliveInitialDelayMillis != null) __obj.updateDynamic("keepAliveInitialDelayMillis")(keepAliveInitialDelayMillis.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (query_timeout != null) __obj.updateDynamic("query_timeout")(query_timeout.asInstanceOf[js.Any])
-    if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (statement_timeout != null) __obj.updateDynamic("statement_timeout")(statement_timeout.asInstanceOf[js.Any])
-    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfig]
   }
+  
+  extension [Self <: ClientConfig](x: Self) {
+    
+    inline def setApplication_name(value: String): Self = StObject.set(x, "application_name", value.asInstanceOf[js.Any])
+    
+    inline def setApplication_nameUndefined: Self = StObject.set(x, "application_name", js.undefined)
+    
+    inline def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionStringUndefined: Self = StObject.set(x, "connectionString", js.undefined)
+    
+    inline def setConnectionTimeoutMillis(value: Double): Self = StObject.set(x, "connectionTimeoutMillis", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionTimeoutMillisUndefined: Self = StObject.set(x, "connectionTimeoutMillis", js.undefined)
+    
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setIdle_in_transaction_session_timeout(value: Double): Self = StObject.set(x, "idle_in_transaction_session_timeout", value.asInstanceOf[js.Any])
+    
+    inline def setIdle_in_transaction_session_timeoutUndefined: Self = StObject.set(x, "idle_in_transaction_session_timeout", js.undefined)
+    
+    inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+    
+    inline def setKeepAliveInitialDelayMillis(value: Double): Self = StObject.set(x, "keepAliveInitialDelayMillis", value.asInstanceOf[js.Any])
+    
+    inline def setKeepAliveInitialDelayMillisUndefined: Self = StObject.set(x, "keepAliveInitialDelayMillis", js.undefined)
+    
+    inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
+    
+    inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setParseInputDatesAsUTC(value: Boolean): Self = StObject.set(x, "parseInputDatesAsUTC", value.asInstanceOf[js.Any])
+    
+    inline def setParseInputDatesAsUTCUndefined: Self = StObject.set(x, "parseInputDatesAsUTC", js.undefined)
+    
+    inline def setPassword(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    
+    inline def setPasswordCallbackTo(value: CallbackTo[String | js.Promise[String]]): Self = StObject.set(x, "password", value.toJsFn)
+    
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    inline def setQuery_timeout(value: Double): Self = StObject.set(x, "query_timeout", value.asInstanceOf[js.Any])
+    
+    inline def setQuery_timeoutUndefined: Self = StObject.set(x, "query_timeout", js.undefined)
+    
+    inline def setSsl(value: Boolean | ConnectionOptions): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    
+    inline def setStatement_timeout(value: `false` | Double): Self = StObject.set(x, "statement_timeout", value.asInstanceOf[js.Any])
+    
+    inline def setStatement_timeoutUndefined: Self = StObject.set(x, "statement_timeout", js.undefined)
+    
+    inline def setStream(value: Duplex): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    
+    inline def setTypes(value: CustomTypesConfig): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+  }
 }
-

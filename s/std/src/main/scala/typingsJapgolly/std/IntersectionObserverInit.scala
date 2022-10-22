@@ -1,27 +1,43 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IntersectionObserverInit extends js.Object {
-  var root: js.UndefOr[org.scalajs.dom.raw.Element | Null] = js.undefined
+trait IntersectionObserverInit extends StObject {
+  
+  /* standard dom */
+  var root: js.UndefOr[org.scalajs.dom.Element | org.scalajs.dom.Document | Null] = js.undefined
+  
+  /* standard dom */
   var rootMargin: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var threshold: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
-
 object IntersectionObserverInit {
-  @scala.inline
-  def apply(
-    root: org.scalajs.dom.raw.Element = null,
-    rootMargin: java.lang.String = null,
-    threshold: Double | js.Array[Double] = null
-  ): IntersectionObserverInit = {
+  
+  inline def apply(): IntersectionObserverInit = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (rootMargin != null) __obj.updateDynamic("rootMargin")(rootMargin.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntersectionObserverInit]
   }
+  
+  extension [Self <: IntersectionObserverInit](x: Self) {
+    
+    inline def setRoot(value: org.scalajs.dom.Element | org.scalajs.dom.Document): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootMargin(value: java.lang.String): Self = StObject.set(x, "rootMargin", value.asInstanceOf[js.Any])
+    
+    inline def setRootMarginUndefined: Self = StObject.set(x, "rootMargin", js.undefined)
+    
+    inline def setRootNull: Self = StObject.set(x, "root", null)
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    
+    inline def setThreshold(value: Double | js.Array[Double]): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    
+    inline def setThresholdVarargs(value: Double*): Self = StObject.set(x, "threshold", js.Array(value*))
+  }
 }
-

@@ -1,27 +1,30 @@
 package typingsJapgolly.nivoLine.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.nivoAxes.mod.AxisProps
-import typingsJapgolly.nivoColors.mod.OrdinalColorsInstruction
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.ReactMouseEventFrom
+import japgolly.scalajs.react.facade.React.Node
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.nivoAxes.distTypesTypesMod.AxisProps
+import typingsJapgolly.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typingsJapgolly.nivoCore.mod.Box
 import typingsJapgolly.nivoCore.mod.CartesianMarkerProps
 import typingsJapgolly.nivoCore.mod.Dimensions
 import typingsJapgolly.nivoCore.mod.Theme
-import typingsJapgolly.nivoLegends.mod.LegendProps
-import typingsJapgolly.nivoLine.mod.DataFormatter
-import typingsJapgolly.nivoLine.mod.Layer
+import typingsJapgolly.nivoCore.mod.ValueFormat
+import typingsJapgolly.nivoLegends.distTypesTypesMod.LegendProps
+import typingsJapgolly.nivoLine.anon.ReadonlyPointSymbolProps
+import typingsJapgolly.nivoLine.mod.CanvasLayer
+import typingsJapgolly.nivoLine.mod.DatumValue
 import typingsJapgolly.nivoLine.mod.LineCanvasProps
-import typingsJapgolly.nivoLine.mod.LineSerieData
-import typingsJapgolly.nivoLine.mod.LineSliceData
-import typingsJapgolly.nivoLine.mod.LineValue
-import typingsJapgolly.nivoLine.mod.TooltipFormatter
-import typingsJapgolly.nivoLine.mod.TooltipProp
+import typingsJapgolly.nivoLine.mod.Point
+import typingsJapgolly.nivoLine.mod.PointTooltip
+import typingsJapgolly.nivoLine.mod.Serie
+import typingsJapgolly.nivoLine.mod.SliceTooltip
 import typingsJapgolly.nivoLine.nivoLineBooleans.`false`
+import typingsJapgolly.nivoLine.nivoLineStrings.basis
+import typingsJapgolly.nivoLine.nivoLineStrings.cardinal
+import typingsJapgolly.nivoLine.nivoLineStrings.catmullRom
 import typingsJapgolly.nivoLine.nivoLineStrings.linear
 import typingsJapgolly.nivoLine.nivoLineStrings.monotoneX
 import typingsJapgolly.nivoLine.nivoLineStrings.monotoneY
@@ -31,113 +34,139 @@ import typingsJapgolly.nivoLine.nivoLineStrings.stepAfter
 import typingsJapgolly.nivoLine.nivoLineStrings.stepBefore
 import typingsJapgolly.nivoLine.nivoLineStrings.x
 import typingsJapgolly.nivoLine.nivoLineStrings.y
-import typingsJapgolly.nivoScales.mod.Scale
-import typingsJapgolly.nivoTooltip.mod.CrosshairType
+import typingsJapgolly.nivoScales.distTypesTypesMod.ScaleSpec
+import typingsJapgolly.nivoScales.distTypesTypesMod.TicksSpec
+import typingsJapgolly.nivoTooltip.distTypesTypesMod.CrosshairType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LineCanvas {
-  def apply(
-    data: js.Array[LineSerieData],
-    height: Double,
-    width: Double,
-    areaBaselineValue: LineValue = null,
-    areaOpacity: Int | Double = null,
-    axisBottom: AxisProps = null,
-    axisLeft: AxisProps = null,
-    axisRight: AxisProps = null,
-    axisTop: AxisProps = null,
-    colors: OrdinalColorsInstruction[_] = null,
-    crosshairType: CrosshairType = null,
-    curve: linear | monotoneX | monotoneY | natural | stepBefore | step | stepAfter = null,
-    debugMesh: js.UndefOr[Boolean] = js.undefined,
-    debugSlices: js.UndefOr[Boolean] = js.undefined,
-    enableArea: js.UndefOr[Boolean] = js.undefined,
-    enableCrosshair: js.UndefOr[Boolean] = js.undefined,
-    enableGridX: js.UndefOr[Boolean] = js.undefined,
-    enableGridY: js.UndefOr[Boolean] = js.undefined,
-    enablePoints: js.UndefOr[Boolean] = js.undefined,
-    enableSlices: x | y | `false` = null,
-    isInteractive: js.UndefOr[Boolean] = js.undefined,
-    layers: js.Array[Layer] = null,
-    legends: js.Array[LegendProps] = null,
-    lineWidth: Int | Double = null,
-    margin: Box = null,
-    markers: js.Array[CartesianMarkerProps] = null,
-    pixelRatio: Int | Double = null,
-    pointBorderColor: js.Any = null,
-    pointBorderWidth: Int | Double = null,
-    pointColor: js.Any = null,
-    pointSize: Int | Double = null,
-    sliceTooltip: /* data */ LineSliceData => CallbackTo[Node] = null,
-    theme: Theme = null,
-    tooltip: TooltipProp = null,
-    tooltipFormat: TooltipFormatter | String = null,
-    xFormat: String | DataFormatter = null,
-    xScale: Scale = null,
-    yFormat: String | DataFormatter = null,
-    yScale: Scale = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    LineCanvasProps with Dimensions, 
-    typingsJapgolly.nivoLine.mod.LineCanvas, 
-    Unit, 
-    LineCanvasProps with Dimensions
-  ] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
-      if (areaBaselineValue != null) __obj.updateDynamic("areaBaselineValue")(areaBaselineValue.asInstanceOf[js.Any])
-    if (areaOpacity != null) __obj.updateDynamic("areaOpacity")(areaOpacity.asInstanceOf[js.Any])
-    if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom.asInstanceOf[js.Any])
-    if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft.asInstanceOf[js.Any])
-    if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight.asInstanceOf[js.Any])
-    if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (crosshairType != null) __obj.updateDynamic("crosshairType")(crosshairType.asInstanceOf[js.Any])
-    if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugMesh)) __obj.updateDynamic("debugMesh")(debugMesh.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugSlices)) __obj.updateDynamic("debugSlices")(debugSlices.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableArea)) __obj.updateDynamic("enableArea")(enableArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCrosshair)) __obj.updateDynamic("enableCrosshair")(enableCrosshair.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridX)) __obj.updateDynamic("enableGridX")(enableGridX.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridY)) __obj.updateDynamic("enableGridY")(enableGridY.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePoints)) __obj.updateDynamic("enablePoints")(enablePoints.asInstanceOf[js.Any])
-    if (enableSlices != null) __obj.updateDynamic("enableSlices")(enableSlices.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (legends != null) __obj.updateDynamic("legends")(legends.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (pointBorderColor != null) __obj.updateDynamic("pointBorderColor")(pointBorderColor.asInstanceOf[js.Any])
-    if (pointBorderWidth != null) __obj.updateDynamic("pointBorderWidth")(pointBorderWidth.asInstanceOf[js.Any])
-    if (pointColor != null) __obj.updateDynamic("pointColor")(pointColor.asInstanceOf[js.Any])
-    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (sliceTooltip != null) __obj.updateDynamic("sliceTooltip")(js.Any.fromFunction1((t0: /* data */ typingsJapgolly.nivoLine.mod.LineSliceData) => sliceTooltip(t0).runNow()))
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])
-    if (xFormat != null) __obj.updateDynamic("xFormat")(xFormat.asInstanceOf[js.Any])
-    if (xScale != null) __obj.updateDynamic("xScale")(xScale.asInstanceOf[js.Any])
-    if (yFormat != null) __obj.updateDynamic("yFormat")(yFormat.asInstanceOf[js.Any])
-    if (yScale != null) __obj.updateDynamic("yScale")(yScale.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.nivoLine.mod.LineCanvasProps with typingsJapgolly.nivoCore.mod.Dimensions, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.nivoLine.mod.LineCanvas](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.nivoLine.mod.LineCanvasProps with typingsJapgolly.nivoCore.mod.Dimensions])(children: _*)
+  inline def apply(data: js.Array[Serie], height: Double, width: Double): Builder = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[LineCanvasProps & Dimensions]))
   }
+  
   @JSImport("@nivo/line", "LineCanvas")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.nivoLine.mod.LineCanvas] {
+    
+    inline def areaBaselineValue(value: DatumValue): this.type = set("areaBaselineValue", value.asInstanceOf[js.Any])
+    
+    inline def areaOpacity(value: Double): this.type = set("areaOpacity", value.asInstanceOf[js.Any])
+    
+    inline def axisBottom(value: AxisProps[Any]): this.type = set("axisBottom", value.asInstanceOf[js.Any])
+    
+    inline def axisBottomNull: this.type = set("axisBottom", null)
+    
+    inline def axisLeft(value: AxisProps[Any]): this.type = set("axisLeft", value.asInstanceOf[js.Any])
+    
+    inline def axisLeftNull: this.type = set("axisLeft", null)
+    
+    inline def axisRight(value: AxisProps[Any]): this.type = set("axisRight", value.asInstanceOf[js.Any])
+    
+    inline def axisRightNull: this.type = set("axisRight", null)
+    
+    inline def axisTop(value: AxisProps[Any]): this.type = set("axisTop", value.asInstanceOf[js.Any])
+    
+    inline def axisTopNull: this.type = set("axisTop", null)
+    
+    inline def colors(value: OrdinalColorScaleConfig[Any]): this.type = set("colors", value.asInstanceOf[js.Any])
+    
+    inline def colorsFunction1(value: Any => String): this.type = set("colors", js.Any.fromFunction1(value))
+    
+    inline def colorsVarargs(value: String*): this.type = set("colors", js.Array(value*))
+    
+    inline def crosshairType(value: CrosshairType): this.type = set("crosshairType", value.asInstanceOf[js.Any])
+    
+    inline def curve(
+      value: basis | cardinal | catmullRom | linear | monotoneX | monotoneY | natural | step | stepAfter | stepBefore
+    ): this.type = set("curve", value.asInstanceOf[js.Any])
+    
+    inline def debugMesh(value: Boolean): this.type = set("debugMesh", value.asInstanceOf[js.Any])
+    
+    inline def debugSlices(value: Boolean): this.type = set("debugSlices", value.asInstanceOf[js.Any])
+    
+    inline def enableArea(value: Boolean): this.type = set("enableArea", value.asInstanceOf[js.Any])
+    
+    inline def enableCrosshair(value: Boolean): this.type = set("enableCrosshair", value.asInstanceOf[js.Any])
+    
+    inline def enableGridX(value: Boolean): this.type = set("enableGridX", value.asInstanceOf[js.Any])
+    
+    inline def enableGridY(value: Boolean): this.type = set("enableGridY", value.asInstanceOf[js.Any])
+    
+    inline def enablePoints(value: Boolean): this.type = set("enablePoints", value.asInstanceOf[js.Any])
+    
+    inline def enableSlices(value: x | y | `false`): this.type = set("enableSlices", value.asInstanceOf[js.Any])
+    
+    inline def gridXValues(value: TicksSpec[DatumValue]): this.type = set("gridXValues", value.asInstanceOf[js.Any])
+    
+    inline def gridXValuesVarargs(value: DatumValue*): this.type = set("gridXValues", js.Array(value*))
+    
+    inline def gridYValues(value: TicksSpec[DatumValue]): this.type = set("gridYValues", value.asInstanceOf[js.Any])
+    
+    inline def gridYValuesVarargs(value: DatumValue*): this.type = set("gridYValues", js.Array(value*))
+    
+    inline def isInteractive(value: Boolean): this.type = set("isInteractive", value.asInstanceOf[js.Any])
+    
+    inline def layers(value: js.Array[CanvasLayer]): this.type = set("layers", value.asInstanceOf[js.Any])
+    
+    inline def layersVarargs(value: CanvasLayer*): this.type = set("layers", js.Array(value*))
+    
+    inline def legends(value: js.Array[LegendProps]): this.type = set("legends", value.asInstanceOf[js.Any])
+    
+    inline def legendsVarargs(value: LegendProps*): this.type = set("legends", js.Array(value*))
+    
+    inline def lineWidth(value: Double): this.type = set("lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def margin(value: Box): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def markers(value: js.Array[CartesianMarkerProps[typingsJapgolly.nivoCore.mod.DatumValue]]): this.type = set("markers", value.asInstanceOf[js.Any])
+    
+    inline def markersVarargs(value: CartesianMarkerProps[typingsJapgolly.nivoCore.mod.DatumValue]*): this.type = set("markers", js.Array(value*))
+    
+    inline def onClick(value: (/* point */ Point, /* event */ ReactMouseEventFrom[Element]) => Callback): this.type = set("onClick", js.Any.fromFunction2((t0: /* point */ Point, t1: /* event */ ReactMouseEventFrom[Element]) => (value(t0, t1)).runNow()))
+    
+    inline def onMouseEnter(value: (/* point */ Point, /* event */ ReactMouseEventFrom[Element]) => Callback): this.type = set("onMouseEnter", js.Any.fromFunction2((t0: /* point */ Point, t1: /* event */ ReactMouseEventFrom[Element]) => (value(t0, t1)).runNow()))
+    
+    inline def onMouseLeave(value: (/* point */ Point, /* event */ ReactMouseEventFrom[Element]) => Callback): this.type = set("onMouseLeave", js.Any.fromFunction2((t0: /* point */ Point, t1: /* event */ ReactMouseEventFrom[Element]) => (value(t0, t1)).runNow()))
+    
+    inline def onMouseMove(value: (/* point */ Point, /* event */ ReactMouseEventFrom[Element]) => Callback): this.type = set("onMouseMove", js.Any.fromFunction2((t0: /* point */ Point, t1: /* event */ ReactMouseEventFrom[Element]) => (value(t0, t1)).runNow()))
+    
+    inline def pixelRatio(value: Double): this.type = set("pixelRatio", value.asInstanceOf[js.Any])
+    
+    inline def pointBorderColor(value: Any): this.type = set("pointBorderColor", value.asInstanceOf[js.Any])
+    
+    inline def pointBorderWidth(value: Double): this.type = set("pointBorderWidth", value.asInstanceOf[js.Any])
+    
+    inline def pointColor(value: Any): this.type = set("pointColor", value.asInstanceOf[js.Any])
+    
+    inline def pointSize(value: Double): this.type = set("pointSize", value.asInstanceOf[js.Any])
+    
+    inline def pointSymbol(value: /* props */ ReadonlyPointSymbolProps => Node): this.type = set("pointSymbol", js.Any.fromFunction1(value))
+    
+    inline def sliceTooltip(value: SliceTooltip): this.type = set("sliceTooltip", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: Theme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def tooltip(value: PointTooltip): this.type = set("tooltip", value.asInstanceOf[js.Any])
+    
+    inline def tooltipFormat(value: ValueFormat[DatumValue, Unit]): this.type = set("tooltipFormat", value.asInstanceOf[js.Any])
+    
+    inline def xFormat(value: ValueFormat[DatumValue, Unit]): this.type = set("xFormat", value.asInstanceOf[js.Any])
+    
+    inline def xScale(value: ScaleSpec): this.type = set("xScale", value.asInstanceOf[js.Any])
+    
+    inline def yFormat(value: ValueFormat[DatumValue, Unit]): this.type = set("yFormat", value.asInstanceOf[js.Any])
+    
+    inline def yScale(value: ScaleSpec): this.type = set("yScale", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: LineCanvasProps & Dimensions): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,115 +1,213 @@
 package typingsJapgolly.webix.mod.ui
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.webix.mod.EventHash
 import typingsJapgolly.webix.mod.WebixCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dashboardConfig extends js.Object {
-  var animate: js.UndefOr[js.Any] = js.undefined
+trait dashboardConfig extends StObject {
+  
+  var animate: js.UndefOr[Any] = js.undefined
+  
   var autoplace: js.UndefOr[Boolean] = js.undefined
+  
   var borderless: js.UndefOr[Boolean] = js.undefined
+  
   var cellHeight: js.UndefOr[Double] = js.undefined
+  
   var cellWidth: js.UndefOr[Double] = js.undefined
-  var cells: js.UndefOr[js.Array[_]] = js.undefined
-  var cols: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var cells: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var cols: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var container: js.UndefOr[String | HTMLElement] = js.undefined
-  var css: js.UndefOr[js.Any] = js.undefined
+  
+  var css: js.UndefOr[Any] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var factory: js.UndefOr[WebixCallback] = js.undefined
+  
   var gravity: js.UndefOr[Double] = js.undefined
+  
   var gridColumns: js.UndefOr[Double] = js.undefined
+  
   var gridRows: js.UndefOr[Double] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
   var id: js.UndefOr[String | Double] = js.undefined
+  
   var margin: js.UndefOr[Double] = js.undefined
+  
   var maxHeight: js.UndefOr[Double] = js.undefined
+  
   var maxWidth: js.UndefOr[Double] = js.undefined
+  
   var minHeight: js.UndefOr[Double] = js.undefined
+  
   var minWidth: js.UndefOr[Double] = js.undefined
+  
   var on: js.UndefOr[EventHash] = js.undefined
+  
   var padding: js.UndefOr[Double] = js.undefined
+  
   var paddingX: js.UndefOr[Double] = js.undefined
+  
   var paddingY: js.UndefOr[Double] = js.undefined
+  
   var responsive: js.UndefOr[String] = js.undefined
-  var rows: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var rows: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var view: js.UndefOr[String] = js.undefined
+  
   var visibleBatch: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object dashboardConfig {
-  @scala.inline
-  def apply(
-    animate: js.Any = null,
-    autoplace: js.UndefOr[Boolean] = js.undefined,
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    cellHeight: Int | Double = null,
-    cellWidth: Int | Double = null,
-    cells: js.Array[_] = null,
-    cols: js.Array[_] = null,
-    container: String | HTMLElement = null,
-    css: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    factory: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    gravity: Int | Double = null,
-    gridColumns: Int | Double = null,
-    gridRows: Int | Double = null,
-    height: Int | Double = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    id: String | Double = null,
-    margin: Int | Double = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    on: EventHash = null,
-    padding: Int | Double = null,
-    paddingX: Int | Double = null,
-    paddingY: Int | Double = null,
-    responsive: String = null,
-    rows: js.Array[_] = null,
-    view: String = null,
-    visibleBatch: String = null,
-    width: Int | Double = null
-  ): dashboardConfig = {
+  
+  inline def apply(): dashboardConfig = {
     val __obj = js.Dynamic.literal()
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplace)) __obj.updateDynamic("autoplace")(autoplace.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (cellHeight != null) __obj.updateDynamic("cellHeight")(cellHeight.asInstanceOf[js.Any])
-    if (cellWidth != null) __obj.updateDynamic("cellWidth")(cellWidth.asInstanceOf[js.Any])
-    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (factory != null) __obj.updateDynamic("factory")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => factory(t0).runNow()))
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (gridColumns != null) __obj.updateDynamic("gridColumns")(gridColumns.asInstanceOf[js.Any])
-    if (gridRows != null) __obj.updateDynamic("gridRows")(gridRows.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
-    if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
-    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (visibleBatch != null) __obj.updateDynamic("visibleBatch")(visibleBatch.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dashboardConfig]
   }
+  
+  extension [Self <: dashboardConfig](x: Self) {
+    
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setAutoplace(value: Boolean): Self = StObject.set(x, "autoplace", value.asInstanceOf[js.Any])
+    
+    inline def setAutoplaceUndefined: Self = StObject.set(x, "autoplace", js.undefined)
+    
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    
+    inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
+    
+    inline def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
+    
+    inline def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
+    
+    inline def setCellWidthUndefined: Self = StObject.set(x, "cellWidth", js.undefined)
+    
+    inline def setCells(value: js.Array[Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    
+    inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
+    
+    inline def setCellsVarargs(value: Any*): Self = StObject.set(x, "cells", js.Array(value*))
+    
+    inline def setCols(value: js.Array[Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    
+    inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+    
+    inline def setColsVarargs(value: Any*): Self = StObject.set(x, "cols", js.Array(value*))
+    
+    inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setFactory(value: WebixCallback): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+    
+    inline def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
+    
+    inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    
+    inline def setGridColumns(value: Double): Self = StObject.set(x, "gridColumns", value.asInstanceOf[js.Any])
+    
+    inline def setGridColumnsUndefined: Self = StObject.set(x, "gridColumns", js.undefined)
+    
+    inline def setGridRows(value: Double): Self = StObject.set(x, "gridRows", value.asInstanceOf[js.Any])
+    
+    inline def setGridRowsUndefined: Self = StObject.set(x, "gridRows", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
+    
+    inline def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
+    
+    inline def setResponsive(value: String): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+    
+    inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+    
+    inline def setRows(value: js.Array[Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    
+    inline def setRowsVarargs(value: Any*): Self = StObject.set(x, "rows", js.Array(value*))
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setVisibleBatch(value: String): Self = StObject.set(x, "visibleBatch", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleBatchUndefined: Self = StObject.set(x, "visibleBatch", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

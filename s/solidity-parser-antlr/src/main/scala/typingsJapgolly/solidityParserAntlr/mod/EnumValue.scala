@@ -1,30 +1,31 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EnumValue
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
+  
   var name: String
+  
   @JSName("type")
   var type_EnumValue: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EnumValue
 }
-
 object EnumValue {
-  @scala.inline
-  def apply(
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EnumValue,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): EnumValue = {
+  
+  inline def apply(name: String): EnumValue = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EnumValue")
     __obj.asInstanceOf[EnumValue]
   }
+  
+  extension [Self <: EnumValue](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EnumValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

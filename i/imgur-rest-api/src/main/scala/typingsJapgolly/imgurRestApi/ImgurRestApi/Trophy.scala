@@ -1,23 +1,30 @@
 package typingsJapgolly.imgurRestApi.ImgurRestApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Trophy extends js.Object {
+trait Trophy extends StObject {
+  
   var data: String
+  
   var data_link: String
+  
   var datetime: Double
+  
   var description: String
+  
   var id: Double
+  
   var image: String
+  
   var name: String
+  
   var name_clean: String
 }
-
 object Trophy {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     data: String,
     data_link: String,
     datetime: Double,
@@ -28,8 +35,25 @@ object Trophy {
     name_clean: String
   ): Trophy = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], data_link = data_link.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], name_clean = name_clean.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Trophy]
   }
+  
+  extension [Self <: Trophy](x: Self) {
+    
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setData_link(value: String): Self = StObject.set(x, "data_link", value.asInstanceOf[js.Any])
+    
+    inline def setDatetime(value: Double): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setName_clean(value: String): Self = StObject.set(x, "name_clean", value.asInstanceOf[js.Any])
+  }
 }
-

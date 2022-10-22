@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Appointments
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppointmentStoreAccessType extends js.Object
-
+sealed trait AppointmentStoreAccessType extends StObject
 /** Specifies the level of access granted to an AppointmentStore . */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStoreAccessType")
 @js.native
-object AppointmentStoreAccessType extends js.Object {
+object AppointmentStoreAccessType extends StObject {
+  
   /** The appointment store has read-only access to all calendars on the device. */
   @js.native
-  sealed trait allCalendarsReadOnly extends AppointmentStoreAccessType
+  sealed trait allCalendarsReadOnly
+    extends StObject
+       with AppointmentStoreAccessType
   
   /** The appointment store has read and write access to all calendars created by the calling app. */
   @js.native
-  sealed trait allCalendarsReadWrite extends AppointmentStoreAccessType
+  sealed trait allCalendarsReadWrite
+    extends StObject
+       with AppointmentStoreAccessType
   
   /** The appointment store has read and write access to appointment calendars created by the calling app. */
   @js.native
-  sealed trait appCalendarsReadWrite extends AppointmentStoreAccessType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppointmentStoreAccessType with Double] = js.native
-  /* 1 */ @js.native
-  object allCalendarsReadOnly extends TopLevel[allCalendarsReadOnly with Double]
-  
-  /* 2 */ @js.native
-  object allCalendarsReadWrite extends TopLevel[allCalendarsReadWrite with Double]
-  
-  /* 0 */ @js.native
-  object appCalendarsReadWrite extends TopLevel[appCalendarsReadWrite with Double]
-  
+  sealed trait appCalendarsReadWrite
+    extends StObject
+       with AppointmentStoreAccessType
 }
-

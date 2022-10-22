@@ -1,19 +1,24 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SignatureHelpItemsOptions extends js.Object {
+trait SignatureHelpItemsOptions extends StObject {
+  
   var triggerReason: js.UndefOr[SignatureHelpTriggerReason] = js.undefined
 }
-
 object SignatureHelpItemsOptions {
-  @scala.inline
-  def apply(triggerReason: SignatureHelpTriggerReason = null): SignatureHelpItemsOptions = {
+  
+  inline def apply(): SignatureHelpItemsOptions = {
     val __obj = js.Dynamic.literal()
-    if (triggerReason != null) __obj.updateDynamic("triggerReason")(triggerReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureHelpItemsOptions]
   }
+  
+  extension [Self <: SignatureHelpItemsOptions](x: Self) {
+    
+    inline def setTriggerReason(value: SignatureHelpTriggerReason): Self = StObject.set(x, "triggerReason", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerReasonUndefined: Self = StObject.set(x, "triggerReason", js.undefined)
+  }
 }
-

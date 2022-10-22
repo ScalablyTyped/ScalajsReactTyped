@@ -10,10 +10,10 @@ jwt as promised
 | ------------------ | :-------------: |
 | Full name          | jwt-then |
 | Keywords           | jwt, then, promise |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 14663 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1660.3333333333333 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/fl0w/jwt-then#readme)

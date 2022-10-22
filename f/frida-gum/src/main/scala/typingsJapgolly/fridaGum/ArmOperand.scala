@@ -1,16 +1,9 @@
 package typingsJapgolly.fridaGum
 
-import typingsJapgolly.fridaGum.fridaGumStrings.cimm
-import typingsJapgolly.fridaGum.fridaGumStrings.fp
-import typingsJapgolly.fridaGum.fridaGumStrings.imm
-import typingsJapgolly.fridaGum.fridaGumStrings.mem
-import typingsJapgolly.fridaGum.fridaGumStrings.pimm
-import typingsJapgolly.fridaGum.fridaGumStrings.reg
-import typingsJapgolly.fridaGum.fridaGumStrings.setend
-import typingsJapgolly.fridaGum.fridaGumStrings.sysreg
+import typingsJapgolly.fridaGum.anon.Disp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.ArmRegOperand
@@ -22,120 +15,54 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.ArmSetendOperand
   - typingsJapgolly.fridaGum.ArmSysregOperand
 */
-trait ArmOperand extends js.Object
-
+trait ArmOperand extends StObject
 object ArmOperand {
-  @scala.inline
-  def ArmSetendOperand(
-    subtracted: Boolean,
-    `type`: setend,
-    value: Endian,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
-  ): ArmOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ArmOperand]
+  
+  inline def ArmCimmOperand(access: OperandAccess, subtracted: Boolean, value: Double): typingsJapgolly.fridaGum.ArmCimmOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("cimm")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.ArmCimmOperand]
   }
-  @scala.inline
-  def ArmImmOperand(
-    subtracted: Boolean,
-    `type`: imm,
-    value: Double,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
-  ): ArmOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ArmOperand]
+  
+  inline def ArmFpOperand(access: OperandAccess, subtracted: Boolean, value: Double): typingsJapgolly.fridaGum.ArmFpOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("fp")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.ArmFpOperand]
   }
-  @scala.inline
-  def ArmSysregOperand(
-    subtracted: Boolean,
-    `type`: sysreg,
-    value: ArmRegister,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
-  ): ArmOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ArmOperand]
+  
+  inline def ArmImmOperand(access: OperandAccess, subtracted: Boolean, value: Double): typingsJapgolly.fridaGum.ArmImmOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("imm")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.ArmImmOperand]
   }
-  @scala.inline
-  def ArmRegOperand(
-    subtracted: Boolean,
-    `type`: reg,
-    value: ArmRegister,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
-  ): ArmOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ArmOperand]
+  
+  inline def ArmMemOperand(access: OperandAccess, subtracted: Boolean, value: Disp): typingsJapgolly.fridaGum.ArmMemOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mem")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.ArmMemOperand]
   }
-  @scala.inline
-  def ArmCimmOperand(
-    subtracted: Boolean,
-    `type`: cimm,
-    value: Double,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
-  ): ArmOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ArmOperand]
+  
+  inline def ArmPimmOperand(access: OperandAccess, subtracted: Boolean, value: Double): typingsJapgolly.fridaGum.ArmPimmOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pimm")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.ArmPimmOperand]
   }
-  @scala.inline
-  def ArmFpOperand(
-    subtracted: Boolean,
-    `type`: fp,
-    value: Double,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
-  ): ArmOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ArmOperand]
+  
+  inline def ArmRegOperand(access: OperandAccess, subtracted: Boolean, value: ArmRegister): typingsJapgolly.fridaGum.ArmRegOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("reg")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.ArmRegOperand]
   }
-  @scala.inline
-  def ArmMemOperand(
-    subtracted: Boolean,
-    `type`: mem,
-    value: AnonDisp,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
-  ): ArmOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ArmOperand]
+  
+  inline def ArmSetendOperand(access: OperandAccess, subtracted: Boolean, value: Endian): typingsJapgolly.fridaGum.ArmSetendOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("setend")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.ArmSetendOperand]
   }
-  @scala.inline
-  def ArmPimmOperand(
-    subtracted: Boolean,
-    `type`: pimm,
-    value: Double,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
-  ): ArmOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ArmOperand]
+  
+  inline def ArmSysregOperand(access: OperandAccess, subtracted: Boolean, value: ArmRegister): typingsJapgolly.fridaGum.ArmSysregOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sysreg")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.ArmSysregOperand]
   }
 }
-

@@ -1,14 +1,13 @@
 package typingsJapgolly.devextreme.mod.default
 
-import typingsJapgolly.devextreme.mod.DevExpress.ComponentOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "Component")
+@JSImport("devextreme", "default.Component")
 @js.native
-class Component ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.Component {
-  def this(options: ComponentOptions[typingsJapgolly.devextreme.mod.DevExpress.Component]) = this()
+open class Component[TProperties] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.Component[TProperties] {
+  def this(options: TProperties) = this()
 }
-

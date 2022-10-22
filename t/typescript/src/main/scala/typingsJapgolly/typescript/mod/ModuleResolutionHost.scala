@@ -2,44 +2,72 @@ package typingsJapgolly.typescript.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModuleResolutionHost extends js.Object {
+trait ModuleResolutionHost extends StObject {
+  
   var directoryExists: js.UndefOr[js.Function1[/* directoryName */ java.lang.String, Boolean]] = js.undefined
+  
+  def fileExists(fileName: java.lang.String): Boolean
+  
   var getCurrentDirectory: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  
   var getDirectories: js.UndefOr[js.Function1[/* path */ java.lang.String, js.Array[java.lang.String]]] = js.undefined
+  
+  def readFile(fileName: java.lang.String): js.UndefOr[java.lang.String]
+  
   /**
     * Resolve a symbolic link.
     * @see https://nodejs.org/api/fs.html#fs_fs_realpathsync_path_options
     */
   var realpath: js.UndefOr[js.Function1[/* path */ java.lang.String, java.lang.String]] = js.undefined
+  
   var trace: js.UndefOr[js.Function1[/* s */ java.lang.String, Unit]] = js.undefined
-  def fileExists(fileName: java.lang.String): Boolean
-  def readFile(fileName: java.lang.String): js.UndefOr[java.lang.String]
+  
+  var useCaseSensitiveFileNames: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
 }
-
 object ModuleResolutionHost {
-  @scala.inline
-  def apply(
-    fileExists: java.lang.String => CallbackTo[Boolean],
-    readFile: java.lang.String => CallbackTo[js.UndefOr[java.lang.String]],
-    directoryExists: /* directoryName */ java.lang.String => CallbackTo[Boolean] = null,
-    getCurrentDirectory: js.UndefOr[CallbackTo[java.lang.String]] = js.undefined,
-    getDirectories: /* path */ java.lang.String => CallbackTo[js.Array[java.lang.String]] = null,
-    realpath: /* path */ java.lang.String => CallbackTo[java.lang.String] = null,
-    trace: /* s */ java.lang.String => Callback = null
+  
+  inline def apply(
+    fileExists: java.lang.String => Boolean,
+    readFile: java.lang.String => js.UndefOr[java.lang.String]
   ): ModuleResolutionHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileExists")(js.Any.fromFunction1((t0: java.lang.String) => fileExists(t0).runNow()))
-    __obj.updateDynamic("readFile")(js.Any.fromFunction1((t0: java.lang.String) => readFile(t0).runNow()))
-    if (directoryExists != null) __obj.updateDynamic("directoryExists")(js.Any.fromFunction1((t0: /* directoryName */ java.lang.String) => directoryExists(t0).runNow()))
-    getCurrentDirectory.foreach(p => __obj.updateDynamic("getCurrentDirectory")(p.toJsFn))
-    if (getDirectories != null) __obj.updateDynamic("getDirectories")(js.Any.fromFunction1((t0: /* path */ java.lang.String) => getDirectories(t0).runNow()))
-    if (realpath != null) __obj.updateDynamic("realpath")(js.Any.fromFunction1((t0: /* path */ java.lang.String) => realpath(t0).runNow()))
-    if (trace != null) __obj.updateDynamic("trace")(js.Any.fromFunction1((t0: /* s */ java.lang.String) => trace(t0).runNow()))
+    val __obj = js.Dynamic.literal(fileExists = js.Any.fromFunction1(fileExists), readFile = js.Any.fromFunction1(readFile))
     __obj.asInstanceOf[ModuleResolutionHost]
   }
+  
+  extension [Self <: ModuleResolutionHost](x: Self) {
+    
+    inline def setDirectoryExists(value: /* directoryName */ java.lang.String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
+    
+    inline def setDirectoryExistsUndefined: Self = StObject.set(x, "directoryExists", js.undefined)
+    
+    inline def setFileExists(value: java.lang.String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
+    
+    inline def setGetCurrentDirectory(value: CallbackTo[java.lang.String]): Self = StObject.set(x, "getCurrentDirectory", value.toJsFn)
+    
+    inline def setGetCurrentDirectoryUndefined: Self = StObject.set(x, "getCurrentDirectory", js.undefined)
+    
+    inline def setGetDirectories(value: /* path */ java.lang.String => js.Array[java.lang.String]): Self = StObject.set(x, "getDirectories", js.Any.fromFunction1(value))
+    
+    inline def setGetDirectoriesUndefined: Self = StObject.set(x, "getDirectories", js.undefined)
+    
+    inline def setReadFile(value: java.lang.String => js.UndefOr[java.lang.String]): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
+    
+    inline def setRealpath(value: /* path */ java.lang.String => java.lang.String): Self = StObject.set(x, "realpath", js.Any.fromFunction1(value))
+    
+    inline def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
+    
+    inline def setTrace(value: /* s */ java.lang.String => Callback): Self = StObject.set(x, "trace", js.Any.fromFunction1((t0: /* s */ java.lang.String) => value(t0).runNow()))
+    
+    inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+    
+    inline def setUseCaseSensitiveFileNames(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "useCaseSensitiveFileNames", value.asInstanceOf[js.Any])
+    
+    inline def setUseCaseSensitiveFileNamesCallbackTo(value: CallbackTo[Boolean]): Self = StObject.set(x, "useCaseSensitiveFileNames", value.toJsFn)
+    
+    inline def setUseCaseSensitiveFileNamesUndefined: Self = StObject.set(x, "useCaseSensitiveFileNames", js.undefined)
+  }
 }
-

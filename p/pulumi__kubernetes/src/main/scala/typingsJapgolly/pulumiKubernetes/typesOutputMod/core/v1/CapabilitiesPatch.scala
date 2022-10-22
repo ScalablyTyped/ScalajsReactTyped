@@ -1,0 +1,39 @@
+package typingsJapgolly.pulumiKubernetes.typesOutputMod.core.v1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/**
+  * Adds and removes POSIX capabilities from running containers.
+  */
+trait CapabilitiesPatch extends StObject {
+  
+  /**
+    * Added capabilities
+    */
+  var add: js.Array[String]
+  
+  /**
+    * Removed capabilities
+    */
+  var drop: js.Array[String]
+}
+object CapabilitiesPatch {
+  
+  inline def apply(add: js.Array[String], drop: js.Array[String]): CapabilitiesPatch = {
+    val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CapabilitiesPatch]
+  }
+  
+  extension [Self <: CapabilitiesPatch](x: Self) {
+    
+    inline def setAdd(value: js.Array[String]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    
+    inline def setAddVarargs(value: String*): Self = StObject.set(x, "add", js.Array(value*))
+    
+    inline def setDrop(value: js.Array[String]): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+    
+    inline def setDropVarargs(value: String*): Self = StObject.set(x, "drop", js.Array(value*))
+  }
+}

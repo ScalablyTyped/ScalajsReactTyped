@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.atLeastAlphanumeric
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols
 */
-trait AndroidWorkProfileRequiredPasswordType extends js.Object
-
+trait AndroidWorkProfileRequiredPasswordType extends StObject
 object AndroidWorkProfileRequiredPasswordType {
-  @scala.inline
-  def alphanumericWithSymbols: typingsJapgolly.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols = this.cast("alphanumericWithSymbols")
-  @scala.inline
-  def atLeastAlphabetic: typingsJapgolly.microsoftGraph.microsoftGraphStrings.atLeastAlphabetic = this.cast("atLeastAlphabetic")
-  @scala.inline
-  def atLeastAlphanumeric: typingsJapgolly.microsoftGraph.microsoftGraphStrings.atLeastAlphanumeric = this.cast("atLeastAlphanumeric")
-  @scala.inline
-  def atLeastNumeric: typingsJapgolly.microsoftGraph.microsoftGraphStrings.atLeastNumeric = this.cast("atLeastNumeric")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def deviceDefault: typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault = this.cast("deviceDefault")
-  @scala.inline
-  def lowSecurityBiometric: typingsJapgolly.microsoftGraph.microsoftGraphStrings.lowSecurityBiometric = this.cast("lowSecurityBiometric")
-  @scala.inline
-  def numericComplex: typingsJapgolly.microsoftGraph.microsoftGraphStrings.numericComplex = this.cast("numericComplex")
-  @scala.inline
-  def required: typingsJapgolly.microsoftGraph.microsoftGraphStrings.required = this.cast("required")
+  
+  inline def alphanumericWithSymbols: typingsJapgolly.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols = "alphanumericWithSymbols".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols]
+  
+  inline def atLeastAlphabetic: typingsJapgolly.microsoftGraph.microsoftGraphStrings.atLeastAlphabetic = "atLeastAlphabetic".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.atLeastAlphabetic]
+  
+  inline def atLeastAlphanumeric: typingsJapgolly.microsoftGraph.microsoftGraphStrings.atLeastAlphanumeric = "atLeastAlphanumeric".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.atLeastAlphanumeric]
+  
+  inline def atLeastNumeric: typingsJapgolly.microsoftGraph.microsoftGraphStrings.atLeastNumeric = "atLeastNumeric".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.atLeastNumeric]
+  
+  inline def deviceDefault: typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault]
+  
+  inline def lowSecurityBiometric: typingsJapgolly.microsoftGraph.microsoftGraphStrings.lowSecurityBiometric = "lowSecurityBiometric".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.lowSecurityBiometric]
+  
+  inline def numericComplex: typingsJapgolly.microsoftGraph.microsoftGraphStrings.numericComplex = "numericComplex".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.numericComplex]
+  
+  inline def required: typingsJapgolly.microsoftGraph.microsoftGraphStrings.required = "required".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.required]
 }
-

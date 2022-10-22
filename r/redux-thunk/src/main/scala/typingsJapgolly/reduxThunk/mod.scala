@@ -1,28 +1,21 @@
 package typingsJapgolly.reduxThunk
 
-import typingsJapgolly.redux.mod.Action
+import org.scalablytyped.runtime.Shortcut
 import typingsJapgolly.redux.mod.AnyAction
-import typingsJapgolly.redux.mod.Middleware
+import typingsJapgolly.reduxThunk.anon.WithExtraArgument
+import typingsJapgolly.reduxThunk.esTypesMod.ThunkMiddleware
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-thunk", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  trait ThunkDispatch[S, E, A /* <: Action[_] */] extends js.Object {
-    def apply[T /* <: A */](action: T): T = js.native
-    def apply[R](asyncAction: ThunkAction[R, S, E, A]): R = js.native
-  }
+object mod extends Shortcut {
   
-  val default: (ThunkMiddleware[js.Object, AnyAction, js.UndefOr[scala.Nothing]]) with AnonWithExtraArgument = js.native
-  type ThunkAction[R, S, E, A /* <: Action[_] */] = js.Function3[
-    /* dispatch */ ThunkDispatch[S, E, A], 
-    /* getState */ js.Function0[S], 
-    /* extraArgument */ E, 
-    R
-  ]
-  type ThunkMiddleware[S, A /* <: Action[_] */, E] = Middleware[ThunkDispatch[S, E, A], S, ThunkDispatch[S, E, A]]
+  @JSImport("redux-thunk", JSImport.Default)
+  @js.native
+  val default: (ThunkMiddleware[Any, AnyAction, Unit]) & WithExtraArgument = js.native
+  
+  type _To = (ThunkMiddleware[Any, AnyAction, Unit]) & WithExtraArgument
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: (ThunkMiddleware[Any, AnyAction, Unit]) & WithExtraArgument = default
 }
-

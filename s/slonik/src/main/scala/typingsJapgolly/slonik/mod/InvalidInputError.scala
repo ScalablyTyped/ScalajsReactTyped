@@ -1,16 +1,9 @@
 package typingsJapgolly.slonik.mod
 
-import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("slonik", "InvalidInputError")
 @js.native
-class InvalidInputError () extends Error {
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-}
-
+open class InvalidInputError () extends SlonikError

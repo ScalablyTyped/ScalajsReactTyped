@@ -1,39 +1,54 @@
 package typingsJapgolly.siesta.Siesta.Test.Action
 
 import typingsJapgolly.siesta.Siesta.Test.IAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
   */
-trait Drag extends IAction {
-  var by: js.UndefOr[js.Any] = js.undefined
+trait Drag
+  extends StObject
+     with IAction {
+  
+  var by: js.UndefOr[Any] = js.undefined
+  
   var dragOnly: js.UndefOr[Boolean] = js.undefined
-  var source: js.UndefOr[js.Any] = js.undefined
-  var target: js.UndefOr[js.Any] = js.undefined
-  var to: js.UndefOr[js.Any] = js.undefined
+  
+  var source: js.UndefOr[Any] = js.undefined
+  
+  var target: js.UndefOr[Any] = js.undefined
+  
+  var to: js.UndefOr[Any] = js.undefined
 }
-
 object Drag {
-  @scala.inline
-  def apply(
-    by: js.Any = null,
-    desc: String = null,
-    dragOnly: js.UndefOr[Boolean] = js.undefined,
-    source: js.Any = null,
-    target: js.Any = null,
-    to: js.Any = null
-  ): Drag = {
+  
+  inline def apply(): Drag = {
     val __obj = js.Dynamic.literal()
-    if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
-    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragOnly)) __obj.updateDynamic("dragOnly")(dragOnly.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Drag]
   }
+  
+  extension [Self <: Drag](x: Self) {
+    
+    inline def setBy(value: Any): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
+    
+    inline def setByUndefined: Self = StObject.set(x, "by", js.undefined)
+    
+    inline def setDragOnly(value: Boolean): Self = StObject.set(x, "dragOnly", value.asInstanceOf[js.Any])
+    
+    inline def setDragOnlyUndefined: Self = StObject.set(x, "dragOnly", js.undefined)
+    
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    
+    inline def setTo(value: Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+  }
 }
-

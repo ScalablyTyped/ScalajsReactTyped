@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-pg-migrate
 
-Typings are for version 3.23.3
+Typings are for version 6.2.2
 
 ## Library description:
 Postgresql database migration management tool for node.js
@@ -10,10 +10,10 @@ Postgresql database migration management tool for node.js
 | ------------------ | :-------------: |
 | Full name          | node-pg-migrate |
 | Keywords           | db, database, migrate, migration, migrations, migrator, db-migrate, sql, pg, postgre, postgres, postgresql, cockroach, cockroachdb, extensible, expandable, programatic, programable, api |
-| # releases         | 77 |
-| # dependents       | 9 |
-| # downloads        | 350251 |
-| # stars            | 7 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 157926.0 |
+| # stars            | 1078.0 |
 
 ## Links
 - [Homepage](https://github.com/salsita/node-pg-migrate#readme)

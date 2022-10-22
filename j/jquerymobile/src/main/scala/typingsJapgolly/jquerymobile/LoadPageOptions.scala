@@ -1,39 +1,60 @@
 package typingsJapgolly.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoadPageOptions extends js.Object {
-  var data: js.UndefOr[js.Any] = js.undefined
+trait LoadPageOptions extends StObject {
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
   var loadMsgDelay: js.UndefOr[Double] = js.undefined
+  
   var pageContainer: js.UndefOr[JQuery] = js.undefined
+  
   var reloadPage: js.UndefOr[Boolean] = js.undefined
+  
   var role: js.UndefOr[String] = js.undefined
+  
   var showLoadMsg: js.UndefOr[Boolean] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object LoadPageOptions {
-  @scala.inline
-  def apply(
-    data: js.Any = null,
-    loadMsgDelay: Int | Double = null,
-    pageContainer: JQuery = null,
-    reloadPage: js.UndefOr[Boolean] = js.undefined,
-    role: String = null,
-    showLoadMsg: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null
-  ): LoadPageOptions = {
+  
+  inline def apply(): LoadPageOptions = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (loadMsgDelay != null) __obj.updateDynamic("loadMsgDelay")(loadMsgDelay.asInstanceOf[js.Any])
-    if (pageContainer != null) __obj.updateDynamic("pageContainer")(pageContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(reloadPage)) __obj.updateDynamic("reloadPage")(reloadPage.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLoadMsg)) __obj.updateDynamic("showLoadMsg")(showLoadMsg.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadPageOptions]
   }
+  
+  extension [Self <: LoadPageOptions](x: Self) {
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setLoadMsgDelay(value: Double): Self = StObject.set(x, "loadMsgDelay", value.asInstanceOf[js.Any])
+    
+    inline def setLoadMsgDelayUndefined: Self = StObject.set(x, "loadMsgDelay", js.undefined)
+    
+    inline def setPageContainer(value: JQuery): Self = StObject.set(x, "pageContainer", value.asInstanceOf[js.Any])
+    
+    inline def setPageContainerUndefined: Self = StObject.set(x, "pageContainer", js.undefined)
+    
+    inline def setReloadPage(value: Boolean): Self = StObject.set(x, "reloadPage", value.asInstanceOf[js.Any])
+    
+    inline def setReloadPageUndefined: Self = StObject.set(x, "reloadPage", js.undefined)
+    
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    
+    inline def setShowLoadMsg(value: Boolean): Self = StObject.set(x, "showLoadMsg", value.asInstanceOf[js.Any])
+    
+    inline def setShowLoadMsgUndefined: Self = StObject.set(x, "showLoadMsg", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

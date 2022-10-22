@@ -1,78 +1,140 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SparklineValueAxisItem extends js.Object {
-  var axisCrossingValue: js.UndefOr[js.Any | js.Date] = js.undefined
+trait SparklineValueAxisItem extends StObject {
+  
+  var axisCrossingValue: js.UndefOr[Any | js.Date] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var crosshair: js.UndefOr[SparklineValueAxisItemCrosshair] = js.undefined
+  
   var labels: js.UndefOr[SparklineValueAxisItemLabels] = js.undefined
+  
   var line: js.UndefOr[SparklineValueAxisItemLine] = js.undefined
+  
   var majorGridLines: js.UndefOr[SparklineValueAxisItemMajorGridLines] = js.undefined
+  
   var majorTicks: js.UndefOr[SparklineValueAxisItemMajorTicks] = js.undefined
+  
   var majorUnit: js.UndefOr[Double] = js.undefined
+  
   var max: js.UndefOr[Double] = js.undefined
+  
   var min: js.UndefOr[Double] = js.undefined
+  
   var minorGridLines: js.UndefOr[SparklineValueAxisItemMinorGridLines] = js.undefined
+  
   var minorTicks: js.UndefOr[SparklineValueAxisItemMinorTicks] = js.undefined
+  
   var minorUnit: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[js.Any] = js.undefined
+  
+  var name: js.UndefOr[Any] = js.undefined
+  
   var narrowRange: js.UndefOr[Boolean] = js.undefined
+  
   var notes: js.UndefOr[SparklineValueAxisItemNotes] = js.undefined
+  
   var plotBands: js.UndefOr[js.Array[SparklineValueAxisItemPlotBand]] = js.undefined
+  
   var reverse: js.UndefOr[Boolean] = js.undefined
+  
   var title: js.UndefOr[SparklineValueAxisItemTitle] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object SparklineValueAxisItem {
-  @scala.inline
-  def apply(
-    axisCrossingValue: js.Any | js.Date = null,
-    color: String = null,
-    crosshair: SparklineValueAxisItemCrosshair = null,
-    labels: SparklineValueAxisItemLabels = null,
-    line: SparklineValueAxisItemLine = null,
-    majorGridLines: SparklineValueAxisItemMajorGridLines = null,
-    majorTicks: SparklineValueAxisItemMajorTicks = null,
-    majorUnit: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    minorGridLines: SparklineValueAxisItemMinorGridLines = null,
-    minorTicks: SparklineValueAxisItemMinorTicks = null,
-    minorUnit: Int | Double = null,
-    name: js.Any = null,
-    narrowRange: js.UndefOr[Boolean] = js.undefined,
-    notes: SparklineValueAxisItemNotes = null,
-    plotBands: js.Array[SparklineValueAxisItemPlotBand] = null,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    title: SparklineValueAxisItemTitle = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): SparklineValueAxisItem = {
+  
+  inline def apply(): SparklineValueAxisItem = {
     val __obj = js.Dynamic.literal()
-    if (axisCrossingValue != null) __obj.updateDynamic("axisCrossingValue")(axisCrossingValue.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (majorGridLines != null) __obj.updateDynamic("majorGridLines")(majorGridLines.asInstanceOf[js.Any])
-    if (majorTicks != null) __obj.updateDynamic("majorTicks")(majorTicks.asInstanceOf[js.Any])
-    if (majorUnit != null) __obj.updateDynamic("majorUnit")(majorUnit.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minorGridLines != null) __obj.updateDynamic("minorGridLines")(minorGridLines.asInstanceOf[js.Any])
-    if (minorTicks != null) __obj.updateDynamic("minorTicks")(minorTicks.asInstanceOf[js.Any])
-    if (minorUnit != null) __obj.updateDynamic("minorUnit")(minorUnit.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(narrowRange)) __obj.updateDynamic("narrowRange")(narrowRange.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (plotBands != null) __obj.updateDynamic("plotBands")(plotBands.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineValueAxisItem]
   }
+  
+  extension [Self <: SparklineValueAxisItem](x: Self) {
+    
+    inline def setAxisCrossingValue(value: Any | js.Date): Self = StObject.set(x, "axisCrossingValue", value.asInstanceOf[js.Any])
+    
+    inline def setAxisCrossingValueUndefined: Self = StObject.set(x, "axisCrossingValue", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setCrosshair(value: SparklineValueAxisItemCrosshair): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
+    
+    inline def setCrosshairUndefined: Self = StObject.set(x, "crosshair", js.undefined)
+    
+    inline def setLabels(value: SparklineValueAxisItemLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setLine(value: SparklineValueAxisItemLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    
+    inline def setMajorGridLines(value: SparklineValueAxisItemMajorGridLines): Self = StObject.set(x, "majorGridLines", value.asInstanceOf[js.Any])
+    
+    inline def setMajorGridLinesUndefined: Self = StObject.set(x, "majorGridLines", js.undefined)
+    
+    inline def setMajorTicks(value: SparklineValueAxisItemMajorTicks): Self = StObject.set(x, "majorTicks", value.asInstanceOf[js.Any])
+    
+    inline def setMajorTicksUndefined: Self = StObject.set(x, "majorTicks", js.undefined)
+    
+    inline def setMajorUnit(value: Double): Self = StObject.set(x, "majorUnit", value.asInstanceOf[js.Any])
+    
+    inline def setMajorUnitUndefined: Self = StObject.set(x, "majorUnit", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setMinorGridLines(value: SparklineValueAxisItemMinorGridLines): Self = StObject.set(x, "minorGridLines", value.asInstanceOf[js.Any])
+    
+    inline def setMinorGridLinesUndefined: Self = StObject.set(x, "minorGridLines", js.undefined)
+    
+    inline def setMinorTicks(value: SparklineValueAxisItemMinorTicks): Self = StObject.set(x, "minorTicks", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTicksUndefined: Self = StObject.set(x, "minorTicks", js.undefined)
+    
+    inline def setMinorUnit(value: Double): Self = StObject.set(x, "minorUnit", value.asInstanceOf[js.Any])
+    
+    inline def setMinorUnitUndefined: Self = StObject.set(x, "minorUnit", js.undefined)
+    
+    inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNarrowRange(value: Boolean): Self = StObject.set(x, "narrowRange", value.asInstanceOf[js.Any])
+    
+    inline def setNarrowRangeUndefined: Self = StObject.set(x, "narrowRange", js.undefined)
+    
+    inline def setNotes(value: SparklineValueAxisItemNotes): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    
+    inline def setPlotBands(value: js.Array[SparklineValueAxisItemPlotBand]): Self = StObject.set(x, "plotBands", value.asInstanceOf[js.Any])
+    
+    inline def setPlotBandsUndefined: Self = StObject.set(x, "plotBands", js.undefined)
+    
+    inline def setPlotBandsVarargs(value: SparklineValueAxisItemPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value*))
+    
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    
+    inline def setTitle(value: SparklineValueAxisItemTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

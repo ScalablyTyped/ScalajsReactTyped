@@ -1,8 +1,8 @@
 package typingsJapgolly.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A string indicating the selection behaviour from user input.
@@ -16,14 +16,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.cytoscape.cytoscapeStrings.additive
   - typingsJapgolly.cytoscape.cytoscapeStrings.single
 */
-trait SelectionType extends js.Object
-
+trait SelectionType extends StObject
 object SelectionType {
-  @scala.inline
-  def additive: typingsJapgolly.cytoscape.cytoscapeStrings.additive = this.cast("additive")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def single: typingsJapgolly.cytoscape.cytoscapeStrings.single = this.cast("single")
+  
+  inline def additive: typingsJapgolly.cytoscape.cytoscapeStrings.additive = "additive".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.additive]
+  
+  inline def single: typingsJapgolly.cytoscape.cytoscapeStrings.single = "single".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.single]
 }
-

@@ -1,11 +1,8 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("WebGLBuffer")
-@js.native
-object WebGLBuffer extends Instantiable0[WebGLBuffer]
-
+/** Part of the WebGL API and represents an opaque buffer object storing data such as vertices or colors. */
+trait WebGLBuffer extends StObject

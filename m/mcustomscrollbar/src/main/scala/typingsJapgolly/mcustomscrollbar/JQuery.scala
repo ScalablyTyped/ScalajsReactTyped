@@ -2,12 +2,13 @@ package typingsJapgolly.mcustomscrollbar
 
 import typingsJapgolly.mcustomscrollbar.MCustomScrollbar.CustomScrollbarOptions
 import typingsJapgolly.mcustomscrollbar.MCustomScrollbar.ScrollToParameterOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   /**
     * Creates a new mCustomScrollbar with the specified or default options
     *
@@ -28,7 +29,6 @@ trait JQuery extends js.Object {
     * @param parameter String or pixel integer value to specify where to scroll to e.g. "bottom", "top" or 20
     * @param options Override default options
     */
-  def mCustomScrollbar(scrollTo: String, parameter: js.Any): JQuery = js.native
-  def mCustomScrollbar(scrollTo: String, parameter: js.Any, options: ScrollToParameterOptions): JQuery = js.native
+  def mCustomScrollbar(scrollTo: String, parameter: Any): JQuery = js.native
+  def mCustomScrollbar(scrollTo: String, parameter: Any, options: ScrollToParameterOptions): JQuery = js.native
 }
-

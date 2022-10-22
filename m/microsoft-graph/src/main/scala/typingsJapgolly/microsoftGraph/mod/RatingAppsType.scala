@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.allAllowed
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove12
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove17
 */
-trait RatingAppsType extends js.Object
-
+trait RatingAppsType extends StObject
 object RatingAppsType {
-  @scala.inline
-  def agesAbove12: typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove12 = this.cast("agesAbove12")
-  @scala.inline
-  def agesAbove17: typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove17 = this.cast("agesAbove17")
-  @scala.inline
-  def agesAbove4: typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove4 = this.cast("agesAbove4")
-  @scala.inline
-  def agesAbove9: typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove9 = this.cast("agesAbove9")
-  @scala.inline
-  def allAllowed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allAllowed = this.cast("allAllowed")
-  @scala.inline
-  def allBlocked: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allBlocked = this.cast("allBlocked")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def agesAbove12: typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove12 = "agesAbove12".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove12]
+  
+  inline def agesAbove17: typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove17 = "agesAbove17".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove17]
+  
+  inline def agesAbove4: typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove4 = "agesAbove4".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove4]
+  
+  inline def agesAbove9: typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove9 = "agesAbove9".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove9]
+  
+  inline def allAllowed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.allAllowed]
+  
+  inline def allBlocked: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.allBlocked]
 }
-

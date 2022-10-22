@@ -10,10 +10,10 @@ Insanely configurable logging for Node.js
 | ------------------ | :-------------: |
 | Full name          | bristol |
 | Keywords           | log, datatype, commoninfomodel, json |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 138497 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7414.0 |
+| # stars            | 110.0 |
 
 ## Links
 - [Homepage](https://github.com/TomFrost/Bristol)

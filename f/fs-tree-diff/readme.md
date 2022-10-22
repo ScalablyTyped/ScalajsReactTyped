@@ -1,7 +1,7 @@
 
 # Scala.js typings for fs-tree-diff
 
-Typings are for version 0.5.9
+Typings are for version 2.0.1
 
 ## Library description:
 Backs out file tree changes
@@ -10,10 +10,10 @@ Backs out file tree changes
 | ------------------ | :-------------: |
 | Full name          | fs-tree-diff |
 | Keywords           | broccoli |
-| # releases         | 8 |
-| # dependents       | 42 |
-| # downloads        | 16936695 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2651849.0 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/stefanpenner/fs-tree-diff#readme)

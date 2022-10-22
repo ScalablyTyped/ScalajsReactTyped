@@ -1,54 +1,50 @@
 package typingsJapgolly.gestalt.components
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.gestalt.gestaltStrings.down
-import typingsJapgolly.gestalt.gestaltStrings.left
-import typingsJapgolly.gestalt.gestaltStrings.lg
-import typingsJapgolly.gestalt.gestaltStrings.md
-import typingsJapgolly.gestalt.gestaltStrings.right
-import typingsJapgolly.gestalt.gestaltStrings.sm
-import typingsJapgolly.gestalt.gestaltStrings.up
-import typingsJapgolly.gestalt.gestaltStrings.xl
-import typingsJapgolly.gestalt.gestaltStrings.xs
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.gestalt.mod.FourDirections
+import typingsJapgolly.gestalt.mod.Indexable
 import typingsJapgolly.gestalt.mod.TooltipProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tooltip {
-  def apply(
-    anchor: js.Any,
-    onDismiss: Callback,
-    idealDirection: up | right | down | left = null,
-    positionRelativeToAnchor: js.UndefOr[Boolean] = js.undefined,
-    size: xs | sm | md | lg | xl = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TooltipProps, typingsJapgolly.gestalt.mod.Tooltip, Unit, TooltipProps] = {
-    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onDismiss")(onDismiss.toJsFn)
-    if (idealDirection != null) __obj.updateDynamic("idealDirection")(idealDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionRelativeToAnchor)) __obj.updateDynamic("positionRelativeToAnchor")(positionRelativeToAnchor.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.gestalt.mod.TooltipProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.gestalt.mod.Tooltip](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.gestalt.mod.TooltipProps])(children: _*)
+  inline def apply(text: String): Builder = {
+    val __props = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[TooltipProps]))
   }
+  
   @JSImport("gestalt", "Tooltip")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def accessibilityLabel(value: String): this.type = set("accessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def idealDirection(value: FourDirections): this.type = set("idealDirection", value.asInstanceOf[js.Any])
+    
+    inline def `inline`(value: Boolean): this.type = set("inline", value.asInstanceOf[js.Any])
+    
+    inline def link(value: VdomNode): this.type = set("link", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def linkNull: this.type = set("link", null)
+    
+    inline def linkVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("link", js.Array(value*))
+    
+    inline def linkVdomElement(value: VdomElement): this.type = set("link", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def zIndex(value: Indexable): this.type = set("zIndex", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: TooltipProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -10,10 +10,10 @@ Keep same and cross domain iFrames sized to their content with support for windo
 | ------------------ | :-------------: |
 | Full name          | iframe-resizer |
 | Keywords           | CrossDomain, Cross-Domain, iFrame, Resizing, Resizer, postMessage, autoheight, auto-height, iframe-auto-height, height-iframe, heightiframe, width, mutationObserver, RWD, responsiveiframes, responsive-iframes, jquery-plugin |
-| # releases         | 25 |
-| # dependents       | 80 |
-| # downloads        | 3050178 |
-| # stars            | 4 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1133390.0 |
+| # stars            | 5808.0 |
 
 ## Links
 - [Homepage](https://github.com/davidjbradshaw/iframe-resizer)

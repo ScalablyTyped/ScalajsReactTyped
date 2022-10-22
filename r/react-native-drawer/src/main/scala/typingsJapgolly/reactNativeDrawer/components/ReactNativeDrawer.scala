@@ -2,11 +2,12 @@ package typingsJapgolly.reactNativeDrawer.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNative.mod.ScaledSize
 import typingsJapgolly.reactNativeDrawer.mod.DrawerProperties
 import typingsJapgolly.reactNativeDrawer.mod.DrawerStyles
@@ -22,89 +23,91 @@ import typingsJapgolly.reactNativeDrawer.reactNativeDrawerStrings.overlay
 import typingsJapgolly.reactNativeDrawer.reactNativeDrawerStrings.right
 import typingsJapgolly.reactNativeDrawer.reactNativeDrawerStrings.static
 import typingsJapgolly.reactNativeDrawer.reactNativeDrawerStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactNativeDrawer {
-  def apply(
-    acceptDoubleTap: js.UndefOr[Boolean] = js.undefined,
-    acceptPan: js.UndefOr[Boolean] = js.undefined,
-    acceptPanOnDrawer: js.UndefOr[Boolean] = js.undefined,
-    acceptTap: js.UndefOr[Boolean] = js.undefined,
-    captureGestures: Boolean | open | closed = null,
-    closedDrawerOffset: js.Function0[Double] | Double = null,
-    content: VdomNode = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elevation: Int | Double = null,
-    initializeOpen: Int | Double = null,
-    negotiatePan: js.UndefOr[Boolean] = js.undefined,
-    onClose: js.UndefOr[Callback] = js.undefined,
-    onCloseStart: js.UndefOr[Callback] = js.undefined,
-    onDragStart: js.UndefOr[Callback] = js.undefined,
-    onOpen: js.UndefOr[Callback] = js.undefined,
-    onOpenStart: js.UndefOr[Callback] = js.undefined,
-    open: js.UndefOr[Boolean] = js.undefined,
-    openDrawerOffset: (js.Function1[/* viewport */ ScaledSize, Double]) | Double = null,
-    panCloseMask: Int | Double = null,
-    panOpenMask: Int | Double = null,
-    panThreshold: Int | Double = null,
-    side: left | right | top | bottom = null,
-    styles: DrawerStyles = null,
-    tapToClose: js.UndefOr[Boolean] = js.undefined,
-    tweenDuration: Int | Double = null,
-    tweenEasing: TweenFunctions = null,
-    tweenHandler: /* ratio */ Double => CallbackTo[NestedViewStyles] = null,
-    `type`: displace | overlay | static = null,
-    useInteractionManager: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[DrawerProperties, default, Unit, DrawerProperties] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(acceptDoubleTap)) __obj.updateDynamic("acceptDoubleTap")(acceptDoubleTap.asInstanceOf[js.Any])
-    if (!js.isUndefined(acceptPan)) __obj.updateDynamic("acceptPan")(acceptPan.asInstanceOf[js.Any])
-    if (!js.isUndefined(acceptPanOnDrawer)) __obj.updateDynamic("acceptPanOnDrawer")(acceptPanOnDrawer.asInstanceOf[js.Any])
-    if (!js.isUndefined(acceptTap)) __obj.updateDynamic("acceptTap")(acceptTap.asInstanceOf[js.Any])
-    if (captureGestures != null) __obj.updateDynamic("captureGestures")(captureGestures.asInstanceOf[js.Any])
-    if (closedDrawerOffset != null) __obj.updateDynamic("closedDrawerOffset")(closedDrawerOffset.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (initializeOpen != null) __obj.updateDynamic("initializeOpen")(initializeOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(negotiatePan)) __obj.updateDynamic("negotiatePan")(negotiatePan.asInstanceOf[js.Any])
-    onClose.foreach(p => __obj.updateDynamic("onClose")(p.toJsFn))
-    onCloseStart.foreach(p => __obj.updateDynamic("onCloseStart")(p.toJsFn))
-    onDragStart.foreach(p => __obj.updateDynamic("onDragStart")(p.toJsFn))
-    onOpen.foreach(p => __obj.updateDynamic("onOpen")(p.toJsFn))
-    onOpenStart.foreach(p => __obj.updateDynamic("onOpenStart")(p.toJsFn))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (openDrawerOffset != null) __obj.updateDynamic("openDrawerOffset")(openDrawerOffset.asInstanceOf[js.Any])
-    if (panCloseMask != null) __obj.updateDynamic("panCloseMask")(panCloseMask.asInstanceOf[js.Any])
-    if (panOpenMask != null) __obj.updateDynamic("panOpenMask")(panOpenMask.asInstanceOf[js.Any])
-    if (panThreshold != null) __obj.updateDynamic("panThreshold")(panThreshold.asInstanceOf[js.Any])
-    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(tapToClose)) __obj.updateDynamic("tapToClose")(tapToClose.asInstanceOf[js.Any])
-    if (tweenDuration != null) __obj.updateDynamic("tweenDuration")(tweenDuration.asInstanceOf[js.Any])
-    if (tweenEasing != null) __obj.updateDynamic("tweenEasing")(tweenEasing.asInstanceOf[js.Any])
-    if (tweenHandler != null) __obj.updateDynamic("tweenHandler")(js.Any.fromFunction1((t0: /* ratio */ scala.Double) => tweenHandler(t0).runNow()))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useInteractionManager)) __obj.updateDynamic("useInteractionManager")(useInteractionManager.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeDrawer.mod.DrawerProperties, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeDrawer.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeDrawer.mod.DrawerProperties])(children: _*)
-  }
   @JSImport("react-native-drawer", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def acceptDoubleTap(value: Boolean): this.type = set("acceptDoubleTap", value.asInstanceOf[js.Any])
+    
+    inline def acceptPan(value: Boolean): this.type = set("acceptPan", value.asInstanceOf[js.Any])
+    
+    inline def acceptPanOnDrawer(value: Boolean): this.type = set("acceptPanOnDrawer", value.asInstanceOf[js.Any])
+    
+    inline def acceptTap(value: Boolean): this.type = set("acceptTap", value.asInstanceOf[js.Any])
+    
+    inline def captureGestures(value: Boolean | open | closed): this.type = set("captureGestures", value.asInstanceOf[js.Any])
+    
+    inline def closedDrawerOffset(value: js.Function0[Double] | Double): this.type = set("closedDrawerOffset", value.asInstanceOf[js.Any])
+    
+    inline def closedDrawerOffsetCallbackTo(value: CallbackTo[Double]): this.type = set("closedDrawerOffset", value.toJsFn)
+    
+    inline def content(value: VdomNode): this.type = set("content", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def elevation(value: Double): this.type = set("elevation", value.asInstanceOf[js.Any])
+    
+    inline def initializeOpen(value: Double): this.type = set("initializeOpen", value.asInstanceOf[js.Any])
+    
+    inline def negotiatePan(value: Boolean): this.type = set("negotiatePan", value.asInstanceOf[js.Any])
+    
+    inline def onClose(value: Callback): this.type = set("onClose", value.toJsFn)
+    
+    inline def onCloseStart(value: Callback): this.type = set("onCloseStart", value.toJsFn)
+    
+    inline def onDragStart(value: Callback): this.type = set("onDragStart", value.toJsFn)
+    
+    inline def onOpen(value: Callback): this.type = set("onOpen", value.toJsFn)
+    
+    inline def onOpenStart(value: Callback): this.type = set("onOpenStart", value.toJsFn)
+    
+    inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+    
+    inline def openDrawerOffset(value: (js.Function1[/* viewport */ ScaledSize, Double]) | Double): this.type = set("openDrawerOffset", value.asInstanceOf[js.Any])
+    
+    inline def openDrawerOffsetFunction1(value: /* viewport */ ScaledSize => Double): this.type = set("openDrawerOffset", js.Any.fromFunction1(value))
+    
+    inline def panCloseMask(value: Double): this.type = set("panCloseMask", value.asInstanceOf[js.Any])
+    
+    inline def panOpenMask(value: Double): this.type = set("panOpenMask", value.asInstanceOf[js.Any])
+    
+    inline def panThreshold(value: Double): this.type = set("panThreshold", value.asInstanceOf[js.Any])
+    
+    inline def side(value: left | right | top | bottom): this.type = set("side", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: DrawerStyles): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def tapToClose(value: Boolean): this.type = set("tapToClose", value.asInstanceOf[js.Any])
+    
+    inline def tweenDuration(value: Double): this.type = set("tweenDuration", value.asInstanceOf[js.Any])
+    
+    inline def tweenEasing(value: TweenFunctions): this.type = set("tweenEasing", value.asInstanceOf[js.Any])
+    
+    inline def tweenHandler(value: /* ratio */ Double => NestedViewStyles): this.type = set("tweenHandler", js.Any.fromFunction1(value))
+    
+    inline def `type`(value: displace | overlay | static): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def useInteractionManager(value: Boolean): this.type = set("useInteractionManager", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactNativeDrawer.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: DrawerProperties): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,39 +1,51 @@
 package typingsJapgolly.materialCheckbox
 
+import typingsJapgolly.materialBase.foundationMod.MDCFoundation
 import typingsJapgolly.materialCheckbox.adapterMod.MDCCheckboxAdapter
+import typingsJapgolly.materialCheckbox.anon.PartialMDCCheckboxAdapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/checkbox/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
+  
+  @JSImport("@material/checkbox/foundation", JSImport.Default)
   @js.native
-  trait MDCCheckboxFoundation
-    extends typingsJapgolly.materialBase.foundationMod.default[MDCCheckboxAdapter] {
-    def getValue(): String = js.native
+  open class default () extends MDCCheckboxFoundation {
+    def this(adapter: PartialMDCCheckboxAdapter) = this()
+  }
+  
+  @JSImport("@material/checkbox/foundation", "MDCCheckboxFoundation")
+  @js.native
+  open class MDCCheckboxFoundation () extends MDCFoundation[MDCCheckboxAdapter] {
+    def this(adapter: PartialMDCCheckboxAdapter) = this()
+    
+    /* private */ var animEndLatchTimer: Any = js.native
+    
+    /* private */ var currentAnimationClass: Any = js.native
+    
+    /* private */ var currentCheckState: Any = js.native
+    
+    /* private */ var determineCheckState: Any = js.native
+    
+    /* private */ var enableAnimationEndHandler: Any = js.native
+    
+    /* private */ var getTransitionAnimationClass: Any = js.native
+    
+    /**
+      * Handles the animationend event for the checkbox
+      */
     def handleAnimationEnd(): Unit = js.native
+    
+    /**
+      * Handles the change event for the checkbox
+      */
     def handleChange(): Unit = js.native
-    def isChecked(): Boolean = js.native
-    def isDisabled(): Boolean = js.native
-    def isIndeterminate(): Boolean = js.native
-    def setChecked(checked: Boolean): Unit = js.native
+    
     def setDisabled(disabled: Boolean): Unit = js.native
-    def setIndeterminate(indeterminate: Boolean): Unit = js.native
-    def setValue(value: String): Unit = js.native
+    
+    /* private */ var transitionCheckState: Any = js.native
+    
+    /* private */ var updateAriaChecked: Any = js.native
   }
-  
-  @js.native
-  class default () extends MDCCheckboxFoundation
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    val cssClasses: typingsJapgolly.materialCheckbox.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCCheckboxAdapter = js.native
-    val numbers: typingsJapgolly.materialCheckbox.constantsMod.numbers = js.native
-    val strings: typingsJapgolly.materialCheckbox.constantsMod.strings = js.native
-  }
-  
 }
-

@@ -1,38 +1,55 @@
 package typingsJapgolly.dav.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined dav.dav.Partial<dav.dav.VCard> */
-trait VCardOptions extends js.Object {
+trait VCardOptions extends StObject {
+  
   var addressBook: js.UndefOr[AddressBook] = js.undefined
+  
   var addressData: js.UndefOr[String] = js.undefined
-  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.undefined
+  
+  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], Any]] = js.undefined
+  
   var data: js.UndefOr[String] = js.undefined
+  
   var etag: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object VCardOptions {
-  @scala.inline
-  def apply(
-    addressBook: AddressBook = null,
-    addressData: String = null,
-    constructor: /* options */ js.UndefOr[VCardOptions] => CallbackTo[js.Any] = null,
-    data: String = null,
-    etag: String = null,
-    url: String = null
-  ): VCardOptions = {
+  
+  inline def apply(): VCardOptions = {
     val __obj = js.Dynamic.literal()
-    if (addressBook != null) __obj.updateDynamic("addressBook")(addressBook.asInstanceOf[js.Any])
-    if (addressData != null) __obj.updateDynamic("addressData")(addressData.asInstanceOf[js.Any])
-    if (constructor != null) __obj.updateDynamic("constructor")(js.Any.fromFunction1((t0: /* options */ js.UndefOr[typingsJapgolly.dav.mod.VCardOptions]) => constructor(t0).runNow()))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[VCardOptions]
   }
+  
+  extension [Self <: VCardOptions](x: Self) {
+    
+    inline def setAddressBook(value: AddressBook): Self = StObject.set(x, "addressBook", value.asInstanceOf[js.Any])
+    
+    inline def setAddressBookUndefined: Self = StObject.set(x, "addressBook", js.undefined)
+    
+    inline def setAddressData(value: String): Self = StObject.set(x, "addressData", value.asInstanceOf[js.Any])
+    
+    inline def setAddressDataUndefined: Self = StObject.set(x, "addressData", js.undefined)
+    
+    inline def setConstructor(value: /* options */ js.UndefOr[VCardOptions] => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    
+    inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+    
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

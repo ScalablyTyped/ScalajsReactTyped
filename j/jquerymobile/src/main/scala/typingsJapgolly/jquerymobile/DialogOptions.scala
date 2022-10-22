@@ -1,33 +1,48 @@
 package typingsJapgolly.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DialogOptions extends js.Object {
+trait DialogOptions extends StObject {
+  
   var closeBtn: js.UndefOr[String] = js.undefined
+  
   var closeBtnText: js.UndefOr[String] = js.undefined
+  
   var corners: js.UndefOr[Boolean] = js.undefined
+  
   var initSelector: js.UndefOr[String] = js.undefined
+  
   var overlayTheme: js.UndefOr[String] = js.undefined
 }
-
 object DialogOptions {
-  @scala.inline
-  def apply(
-    closeBtn: String = null,
-    closeBtnText: String = null,
-    corners: js.UndefOr[Boolean] = js.undefined,
-    initSelector: String = null,
-    overlayTheme: String = null
-  ): DialogOptions = {
+  
+  inline def apply(): DialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (closeBtn != null) __obj.updateDynamic("closeBtn")(closeBtn.asInstanceOf[js.Any])
-    if (closeBtnText != null) __obj.updateDynamic("closeBtnText")(closeBtnText.asInstanceOf[js.Any])
-    if (!js.isUndefined(corners)) __obj.updateDynamic("corners")(corners.asInstanceOf[js.Any])
-    if (initSelector != null) __obj.updateDynamic("initSelector")(initSelector.asInstanceOf[js.Any])
-    if (overlayTheme != null) __obj.updateDynamic("overlayTheme")(overlayTheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogOptions]
   }
+  
+  extension [Self <: DialogOptions](x: Self) {
+    
+    inline def setCloseBtn(value: String): Self = StObject.set(x, "closeBtn", value.asInstanceOf[js.Any])
+    
+    inline def setCloseBtnText(value: String): Self = StObject.set(x, "closeBtnText", value.asInstanceOf[js.Any])
+    
+    inline def setCloseBtnTextUndefined: Self = StObject.set(x, "closeBtnText", js.undefined)
+    
+    inline def setCloseBtnUndefined: Self = StObject.set(x, "closeBtn", js.undefined)
+    
+    inline def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
+    
+    inline def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
+    
+    inline def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
+    
+    inline def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
+    
+    inline def setOverlayTheme(value: String): Self = StObject.set(x, "overlayTheme", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayThemeUndefined: Self = StObject.set(x, "overlayTheme", js.undefined)
+  }
 }
-

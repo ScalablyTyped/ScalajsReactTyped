@@ -1,13 +1,16 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeOfExpression extends UnaryExpression {
-  var expression: UnaryExpression = js.native
+trait TypeOfExpression
+  extends StObject
+     with UnaryExpression {
+  
+  val expression: UnaryExpression = js.native
+  
   @JSName("kind")
-  var kind_TypeOfExpression: typingsJapgolly.typescript.mod.SyntaxKind.TypeOfExpression = js.native
+  val kind_TypeOfExpression: typingsJapgolly.typescript.mod.SyntaxKind.TypeOfExpression = js.native
 }
-

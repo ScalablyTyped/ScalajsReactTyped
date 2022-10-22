@@ -2,50 +2,57 @@ package typingsJapgolly.qrImage
 
 import typingsJapgolly.qrImage.mod.ecLevel
 import typingsJapgolly.qrImage.mod.imageType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object qrImageStrings {
-  @js.native
-  sealed trait H extends ecLevel
   
   @js.native
-  sealed trait L extends ecLevel
+  sealed trait H
+    extends StObject
+       with ecLevel
+  inline def H: H = "H".asInstanceOf[H]
   
   @js.native
-  sealed trait M extends ecLevel
+  sealed trait L
+    extends StObject
+       with ecLevel
+  inline def L: L = "L".asInstanceOf[L]
   
   @js.native
-  sealed trait Q extends ecLevel
+  sealed trait M
+    extends StObject
+       with ecLevel
+  inline def M: M = "M".asInstanceOf[M]
   
   @js.native
-  sealed trait eps extends imageType
+  sealed trait Q
+    extends StObject
+       with ecLevel
+  inline def Q: Q = "Q".asInstanceOf[Q]
   
   @js.native
-  sealed trait pdf extends imageType
+  sealed trait eps
+    extends StObject
+       with imageType
+  inline def eps: eps = "eps".asInstanceOf[eps]
   
   @js.native
-  sealed trait png extends imageType
+  sealed trait pdf
+    extends StObject
+       with imageType
+  inline def pdf: pdf = "pdf".asInstanceOf[pdf]
   
   @js.native
-  sealed trait svg extends imageType
+  sealed trait png
+    extends StObject
+       with imageType
+  inline def png: png = "png".asInstanceOf[png]
   
-  @scala.inline
-  def H: H = "H".asInstanceOf[H]
-  @scala.inline
-  def L: L = "L".asInstanceOf[L]
-  @scala.inline
-  def M: M = "M".asInstanceOf[M]
-  @scala.inline
-  def Q: Q = "Q".asInstanceOf[Q]
-  @scala.inline
-  def eps: eps = "eps".asInstanceOf[eps]
-  @scala.inline
-  def pdf: pdf = "pdf".asInstanceOf[pdf]
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
-  @scala.inline
-  def svg: svg = "svg".asInstanceOf[svg]
+  @js.native
+  sealed trait svg
+    extends StObject
+       with imageType
+  inline def svg: svg = "svg".asInstanceOf[svg]
 }
-

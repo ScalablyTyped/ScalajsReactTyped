@@ -10,10 +10,10 @@ file store for tough-cookie
 | ------------------ | :-------------: |
 | Full name          | tough-cookie-filestore |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 53 |
-| # downloads        | 217047 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1593.6666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/tough-cookie-filestore)

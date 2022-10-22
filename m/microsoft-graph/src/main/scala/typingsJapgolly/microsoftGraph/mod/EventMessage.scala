@@ -1,101 +1,105 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EventMessage extends Message {
+trait EventMessage
+  extends StObject
+     with Message {
+  
+  var endDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
+  
   /**
     * The event associated with the event message. The assumption for attendees or room resources is that the Calendar
     * Attendant is set to automatically update the calendar with an event when meeting request event messages arrive.
     * Navigation property. Read-only.
     */
-  var event: js.UndefOr[Event] = js.undefined
-  /**
-    * The type of event message: none, meetingRequest, meetingCancelled, meetingAccepted, meetingTenativelyAccepted,
-    * meetingDeclined.
-    */
-  var meetingMessageType: js.UndefOr[MeetingMessageType] = js.undefined
+  var event: js.UndefOr[NullableOption[Event]] = js.undefined
+  
+  var isAllDay: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  var isDelegated: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  var isOutOfDate: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  var location: js.UndefOr[NullableOption[Location]] = js.undefined
+  
+  var meetingMessageType: js.UndefOr[NullableOption[MeetingMessageType]] = js.undefined
+  
+  var recurrence: js.UndefOr[NullableOption[PatternedRecurrence]] = js.undefined
+  
+  var startDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
+  
+  var `type`: js.UndefOr[NullableOption[EventType]] = js.undefined
 }
-
 object EventMessage {
-  @scala.inline
-  def apply(
-    attachments: js.Array[Attachment] = null,
-    bccRecipients: js.Array[Recipient] = null,
-    body: ItemBody = null,
-    bodyPreview: String = null,
-    categories: js.Array[String] = null,
-    ccRecipients: js.Array[Recipient] = null,
-    changeKey: String = null,
-    conversationId: String = null,
-    createdDateTime: String = null,
-    event: Event = null,
-    extensions: js.Array[Extension] = null,
-    flag: FollowupFlag = null,
-    from: Recipient = null,
-    hasAttachments: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    importance: Importance = null,
-    inferenceClassification: InferenceClassificationType = null,
-    internetMessageHeaders: js.Array[InternetMessageHeader] = null,
-    internetMessageId: String = null,
-    isDeliveryReceiptRequested: js.UndefOr[Boolean] = js.undefined,
-    isDraft: js.UndefOr[Boolean] = js.undefined,
-    isRead: js.UndefOr[Boolean] = js.undefined,
-    isReadReceiptRequested: js.UndefOr[Boolean] = js.undefined,
-    lastModifiedDateTime: String = null,
-    meetingMessageType: MeetingMessageType = null,
-    multiValueExtendedProperties: js.Array[MultiValueLegacyExtendedProperty] = null,
-    parentFolderId: String = null,
-    receivedDateTime: String = null,
-    replyTo: js.Array[Recipient] = null,
-    sender: Recipient = null,
-    sentDateTime: String = null,
-    singleValueExtendedProperties: js.Array[SingleValueLegacyExtendedProperty] = null,
-    subject: String = null,
-    toRecipients: js.Array[Recipient] = null,
-    uniqueBody: ItemBody = null,
-    webLink: String = null
-  ): EventMessage = {
+  
+  inline def apply(): EventMessage = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
-    if (bccRecipients != null) __obj.updateDynamic("bccRecipients")(bccRecipients.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (bodyPreview != null) __obj.updateDynamic("bodyPreview")(bodyPreview.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (ccRecipients != null) __obj.updateDynamic("ccRecipients")(ccRecipients.asInstanceOf[js.Any])
-    if (changeKey != null) __obj.updateDynamic("changeKey")(changeKey.asInstanceOf[js.Any])
-    if (conversationId != null) __obj.updateDynamic("conversationId")(conversationId.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasAttachments)) __obj.updateDynamic("hasAttachments")(hasAttachments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (importance != null) __obj.updateDynamic("importance")(importance.asInstanceOf[js.Any])
-    if (inferenceClassification != null) __obj.updateDynamic("inferenceClassification")(inferenceClassification.asInstanceOf[js.Any])
-    if (internetMessageHeaders != null) __obj.updateDynamic("internetMessageHeaders")(internetMessageHeaders.asInstanceOf[js.Any])
-    if (internetMessageId != null) __obj.updateDynamic("internetMessageId")(internetMessageId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDeliveryReceiptRequested)) __obj.updateDynamic("isDeliveryReceiptRequested")(isDeliveryReceiptRequested.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDraft)) __obj.updateDynamic("isDraft")(isDraft.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRead)) __obj.updateDynamic("isRead")(isRead.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReadReceiptRequested)) __obj.updateDynamic("isReadReceiptRequested")(isReadReceiptRequested.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (meetingMessageType != null) __obj.updateDynamic("meetingMessageType")(meetingMessageType.asInstanceOf[js.Any])
-    if (multiValueExtendedProperties != null) __obj.updateDynamic("multiValueExtendedProperties")(multiValueExtendedProperties.asInstanceOf[js.Any])
-    if (parentFolderId != null) __obj.updateDynamic("parentFolderId")(parentFolderId.asInstanceOf[js.Any])
-    if (receivedDateTime != null) __obj.updateDynamic("receivedDateTime")(receivedDateTime.asInstanceOf[js.Any])
-    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])
-    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
-    if (sentDateTime != null) __obj.updateDynamic("sentDateTime")(sentDateTime.asInstanceOf[js.Any])
-    if (singleValueExtendedProperties != null) __obj.updateDynamic("singleValueExtendedProperties")(singleValueExtendedProperties.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (toRecipients != null) __obj.updateDynamic("toRecipients")(toRecipients.asInstanceOf[js.Any])
-    if (uniqueBody != null) __obj.updateDynamic("uniqueBody")(uniqueBody.asInstanceOf[js.Any])
-    if (webLink != null) __obj.updateDynamic("webLink")(webLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventMessage]
   }
+  
+  extension [Self <: EventMessage](x: Self) {
+    
+    inline def setEndDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
+    
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
+    
+    inline def setEvent(value: NullableOption[Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventNull: Self = StObject.set(x, "event", null)
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    
+    inline def setIsAllDay(value: NullableOption[Boolean]): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
+    
+    inline def setIsAllDayNull: Self = StObject.set(x, "isAllDay", null)
+    
+    inline def setIsAllDayUndefined: Self = StObject.set(x, "isAllDay", js.undefined)
+    
+    inline def setIsDelegated(value: NullableOption[Boolean]): Self = StObject.set(x, "isDelegated", value.asInstanceOf[js.Any])
+    
+    inline def setIsDelegatedNull: Self = StObject.set(x, "isDelegated", null)
+    
+    inline def setIsDelegatedUndefined: Self = StObject.set(x, "isDelegated", js.undefined)
+    
+    inline def setIsOutOfDate(value: NullableOption[Boolean]): Self = StObject.set(x, "isOutOfDate", value.asInstanceOf[js.Any])
+    
+    inline def setIsOutOfDateNull: Self = StObject.set(x, "isOutOfDate", null)
+    
+    inline def setIsOutOfDateUndefined: Self = StObject.set(x, "isOutOfDate", js.undefined)
+    
+    inline def setLocation(value: NullableOption[Location]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setMeetingMessageType(value: NullableOption[MeetingMessageType]): Self = StObject.set(x, "meetingMessageType", value.asInstanceOf[js.Any])
+    
+    inline def setMeetingMessageTypeNull: Self = StObject.set(x, "meetingMessageType", null)
+    
+    inline def setMeetingMessageTypeUndefined: Self = StObject.set(x, "meetingMessageType", js.undefined)
+    
+    inline def setRecurrence(value: NullableOption[PatternedRecurrence]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
+    
+    inline def setRecurrenceNull: Self = StObject.set(x, "recurrence", null)
+    
+    inline def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
+    
+    inline def setStartDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
+    
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    
+    inline def setType(value: NullableOption[EventType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

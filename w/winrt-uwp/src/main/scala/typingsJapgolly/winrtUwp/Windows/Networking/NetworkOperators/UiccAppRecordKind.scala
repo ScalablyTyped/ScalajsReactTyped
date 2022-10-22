@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UiccAppRecordKind extends js.Object
-
+sealed trait UiccAppRecordKind extends StObject
 /** Describes the kinds of UICC application record. */
 @JSGlobal("Windows.Networking.NetworkOperators.UiccAppRecordKind")
 @js.native
-object UiccAppRecordKind extends js.Object {
+object UiccAppRecordKind extends StObject {
+  
   /** A file that consists of a sequence of records. */
   @js.native
-  sealed trait recordOriented extends UiccAppRecordKind
+  sealed trait recordOriented
+    extends StObject
+       with UiccAppRecordKind
   
   /** A transparent file - a sequence of bytes without further structure . */
   @js.native
-  sealed trait transparent extends UiccAppRecordKind
+  sealed trait transparent
+    extends StObject
+       with UiccAppRecordKind
   
   /** An unknown app record kind. For example, a UICC app that is enumerable by the modem, but is not an app used for cellular registration, would be reported as Unknown. */
   @js.native
-  sealed trait unknown extends UiccAppRecordKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UiccAppRecordKind with Double] = js.native
-  /* 2 */ @js.native
-  object recordOriented extends TopLevel[recordOriented with Double]
-  
-  /* 1 */ @js.native
-  object transparent extends TopLevel[transparent with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  sealed trait unknown
+    extends StObject
+       with UiccAppRecordKind
 }
-

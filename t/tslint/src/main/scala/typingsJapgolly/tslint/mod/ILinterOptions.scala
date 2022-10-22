@@ -1,33 +1,49 @@
 package typingsJapgolly.tslint.mod
 
-import typingsJapgolly.tslint.formatterMod.FormatterConstructor
+import typingsJapgolly.tslint.libLanguageFormatterFormatterMod.FormatterConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ILinterOptions extends js.Object {
+trait ILinterOptions extends StObject {
+  
   var fix: Boolean
+  
   var formatter: js.UndefOr[String | FormatterConstructor] = js.undefined
+  
   var formattersDirectory: js.UndefOr[String] = js.undefined
+  
   var quiet: js.UndefOr[Boolean] = js.undefined
+  
   var rulesDirectory: js.UndefOr[String | js.Array[String]] = js.undefined
 }
-
 object ILinterOptions {
-  @scala.inline
-  def apply(
-    fix: Boolean,
-    formatter: String | FormatterConstructor = null,
-    formattersDirectory: String = null,
-    quiet: js.UndefOr[Boolean] = js.undefined,
-    rulesDirectory: String | js.Array[String] = null
-  ): ILinterOptions = {
+  
+  inline def apply(fix: Boolean): ILinterOptions = {
     val __obj = js.Dynamic.literal(fix = fix.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (formattersDirectory != null) __obj.updateDynamic("formattersDirectory")(formattersDirectory.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
-    if (rulesDirectory != null) __obj.updateDynamic("rulesDirectory")(rulesDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILinterOptions]
   }
+  
+  extension [Self <: ILinterOptions](x: Self) {
+    
+    inline def setFix(value: Boolean): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
+    
+    inline def setFormatter(value: String | FormatterConstructor): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    
+    inline def setFormattersDirectory(value: String): Self = StObject.set(x, "formattersDirectory", value.asInstanceOf[js.Any])
+    
+    inline def setFormattersDirectoryUndefined: Self = StObject.set(x, "formattersDirectory", js.undefined)
+    
+    inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+    
+    inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+    
+    inline def setRulesDirectory(value: String | js.Array[String]): Self = StObject.set(x, "rulesDirectory", value.asInstanceOf[js.Any])
+    
+    inline def setRulesDirectoryUndefined: Self = StObject.set(x, "rulesDirectory", js.undefined)
+    
+    inline def setRulesDirectoryVarargs(value: String*): Self = StObject.set(x, "rulesDirectory", js.Array(value*))
+  }
 }
-

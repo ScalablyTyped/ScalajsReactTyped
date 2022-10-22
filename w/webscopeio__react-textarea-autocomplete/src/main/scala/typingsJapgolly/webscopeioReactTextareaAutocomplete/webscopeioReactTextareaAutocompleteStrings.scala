@@ -1,46 +1,27 @@
 package typingsJapgolly.webscopeioReactTextareaAutocomplete
 
-import typingsJapgolly.webscopeioReactTextareaAutocomplete.mod.PickedAttributes
 import typingsJapgolly.webscopeioReactTextareaAutocomplete.mod._CaretPositionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webscopeioReactTextareaAutocompleteStrings {
-  @js.native
-  sealed trait end extends _CaretPositionType
   
   @js.native
-  sealed trait next extends _CaretPositionType
+  sealed trait end
+    extends StObject
+       with _CaretPositionType
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait onBlur extends PickedAttributes
+  sealed trait next
+    extends StObject
+       with _CaretPositionType
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait onChange extends PickedAttributes
-  
-  @js.native
-  sealed trait onSelect extends PickedAttributes
-  
-  @js.native
-  sealed trait start extends _CaretPositionType
-  
-  @js.native
-  sealed trait value extends PickedAttributes
-  
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
-  @scala.inline
-  def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
-  @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
-  @scala.inline
-  def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
+  sealed trait start
+    extends StObject
+       with _CaretPositionType
+  inline def start: start = "start".asInstanceOf[start]
 }
-

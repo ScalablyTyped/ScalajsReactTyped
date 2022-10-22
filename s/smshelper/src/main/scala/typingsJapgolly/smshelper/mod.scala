@@ -3,15 +3,19 @@ package typingsJapgolly.smshelper
 import typingsJapgolly.smshelper.smshelperStrings.GSM_7BIT
 import typingsJapgolly.smshelper.smshelperStrings.GSM_7BIT_EX
 import typingsJapgolly.smshelper.smshelperStrings.UTF16
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("smshelper", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def count(text: String): Double = js.native
-  def detectEncoding(text: String): GSM_7BIT | GSM_7BIT_EX | UTF16 = js.native
-  def parts(text: String): Double = js.native
+object mod {
+  
+  @JSImport("smshelper", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def count(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def detectEncoding(text: String): GSM_7BIT | GSM_7BIT_EX | UTF16 = ^.asInstanceOf[js.Dynamic].applyDynamic("detectEncoding")(text.asInstanceOf[js.Any]).asInstanceOf[GSM_7BIT | GSM_7BIT_EX | UTF16]
+  
+  inline def parts(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parts")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
 }
-

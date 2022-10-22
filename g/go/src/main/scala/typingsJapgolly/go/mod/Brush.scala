@@ -1,8 +1,8 @@
 package typingsJapgolly.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Brush holds color information and describes how to draw the inside
@@ -19,29 +19,14 @@ import scala.scalajs.js.annotation._
   * Construct a solid color Brush that holds the given color information.
   * @param {string=} color a well-formed CSS string describing a solid color brush; if not supplied uses 'black'.
   */
-class Brush () extends js.Object {
+open class Brush () extends StObject {
   def this(color: String) = this()
   /**
     * Construct a Brush class of a given type.
     * @param {EnumValue} type one of the values  Brush.Solid, Brush.Linear, Brush.Radial, Brush.Pattern.
     */
   def this(`type`: EnumValue) = this()
-  /**Gets or sets the color of a solid Brush.*/
-  var color: String = js.native
-  /**Gets or sets a Map holding all of the color stops used in this gradient, where the key is a number, the fractional distance between zero and one (inclusive), and where the corresponding value is a color string.*/
-  var colorStops: Map[Double, String] = js.native
-  /**Gets or sets the ending location for a linear or radial gradient.*/
-  var end: Spot = js.native
-  /**Gets or sets the radius of a radial brush at the end location.*/
-  var endRadius: Double = js.native
-  /**Gets or sets the pattern of a brush of type Brush.Pattern, an HTMLImageElement or HTMLCanvasElement or HTMLVideoElement.*/
-  var pattern: js.Any = js.native
-  /**Gets or sets the starting location for a linear or radial gradient.*/
-  var start: Spot = js.native
-  /**Gets or sets the radius of a radial brush at the start location.*/
-  var startRadius: Double = js.native
-  /**Gets or sets the type of brush.*/
-  var `type`: EnumValue = js.native
+  
   /**
     * Specify a particular color at a particular fraction of the distance.
     * If the  .type is Brush.Solid, change the type to Brush.Linear.
@@ -51,32 +36,81 @@ class Brush () extends js.Object {
     * @param {string} color a CSS color string
     */
   def addColorStop(loc: Double, color: String): Unit = js.native
+  
+  /**Gets or sets the color of a solid Brush.*/
+  var color: String = js.native
+  
+  /**Gets or sets a Map holding all of the color stops used in this gradient, where the key is a number, the fractional distance between zero and one (inclusive), and where the corresponding value is a color string.*/
+  var colorStops: Map[Double, String] = js.native
+  
   /**
     * Create a copy of this Brush, with the same values.
     */
   def copy(): Brush = js.native
+  
+  /**Gets or sets the ending location for a linear or radial gradient.*/
+  var end: Spot = js.native
+  
+  /**Gets or sets the radius of a radial brush at the end location.*/
+  var endRadius: Double = js.native
+  
+  /**Gets or sets the pattern of a brush of type Brush.Pattern, an HTMLImageElement or HTMLCanvasElement or HTMLVideoElement.*/
+  var pattern: Any = js.native
+  
+  /**Gets or sets the starting location for a linear or radial gradient.*/
+  var start: Spot = js.native
+  
+  /**Gets or sets the radius of a radial brush at the start location.*/
+  var startRadius: Double = js.native
+  
+  /**Gets or sets the type of brush.*/
+  var `type`: EnumValue = js.native
 }
-
-/* static members */
-@JSImport("go", "Brush")
-@js.native
-object Brush extends js.Object {
+object Brush {
+  
+  @JSImport("go", "Brush")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**For linear gradient brushes, used as the value for Brush.type.*/
-  var Linear: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Brush.Linear")
+  @js.native
+  def Linear: EnumValue = js.native
+  inline def Linear_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Linear")(x.asInstanceOf[js.Any])
+  
   /**For pattern brushes, used as the value for Brush.type.*/
-  var Pattern: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Brush.Pattern")
+  @js.native
+  def Pattern: EnumValue = js.native
+  inline def Pattern_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pattern")(x.asInstanceOf[js.Any])
+  
   /**For radial gradient brushes, used as the value for Brush.type.*/
-  var Radial: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Brush.Radial")
+  @js.native
+  def Radial: EnumValue = js.native
+  inline def Radial_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Radial")(x.asInstanceOf[js.Any])
+  
   /**For simple, solid color brushes, used as the value for Brush.type.*/
-  var Solid: EnumValue = js.native
-  def isValidColor(color: String): Boolean = js.native
+  /* static member */
+  @JSImport("go", "Brush.Solid")
+  @js.native
+  def Solid: EnumValue = js.native
+  inline def Solid_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Solid")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  inline def isValidColor(color: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidColor")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   /**
     * This static function can be used to generate a random color string.
     * @param {number=} min a number between zero and 255, defaults to 128.
     * @param {number=} max a number between zero and 255, defaults to 255.
     */
-  def randomColor(): String = js.native
-  def randomColor(min: Double): String = js.native
-  def randomColor(min: Double, max: Double): String = js.native
+  /* static member */
+  inline def randomColor(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")().asInstanceOf[String]
+  inline def randomColor(min: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")(min.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def randomColor(min: Double, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def randomColor(min: Unit, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
 }
-

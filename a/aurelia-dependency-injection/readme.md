@@ -1,7 +1,7 @@
 
 # Scala.js typings for aurelia-dependency-injection
 
-Typings are for version 1.5.1
+Typings are for version 1.5.2
 
 ## Library description:
 A lightweight, extensible dependency injection container for JavaScript.
@@ -10,10 +10,10 @@ A lightweight, extensible dependency injection container for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | aurelia-dependency-injection |
 | Keywords           | aurelia, di, dependency injection, ioc |
-| # releases         | 7 |
-| # dependents       | 117 |
-| # downloads        | 566625 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 59104.333333333336 |
+| # stars            | 158.0 |
 
 ## Links
 - [Homepage](http://aurelia.io)

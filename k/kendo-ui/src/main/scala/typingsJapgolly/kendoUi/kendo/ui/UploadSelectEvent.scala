@@ -1,29 +1,35 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UploadSelectEvent extends UploadEvent {
-  var e: js.UndefOr[js.Any] = js.undefined
-  var files: js.UndefOr[js.Array[_]] = js.undefined
+trait UploadSelectEvent
+  extends StObject
+     with UploadEvent {
+  
+  var e: js.UndefOr[Any] = js.undefined
+  
+  var files: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object UploadSelectEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Upload,
-    e: js.Any = null,
-    files: js.Array[_] = null
-  ): UploadSelectEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Upload): UploadSelectEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadSelectEvent]
   }
+  
+  extension [Self <: UploadSelectEvent](x: Self) {
+    
+    inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    
+    inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
+    
+    inline def setFiles(value: js.Array[Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    
+    inline def setFilesVarargs(value: Any*): Self = StObject.set(x, "files", js.Array(value*))
+  }
 }
-

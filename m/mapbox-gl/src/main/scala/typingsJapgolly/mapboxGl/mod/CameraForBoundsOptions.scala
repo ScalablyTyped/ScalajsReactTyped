@@ -1,37 +1,32 @@
 package typingsJapgolly.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CameraForBoundsOptions extends CameraOptions {
+trait CameraForBoundsOptions
+  extends StObject
+     with CameraOptions {
+  
   var maxZoom: js.UndefOr[Double] = js.undefined
+  
   var offset: js.UndefOr[PointLike] = js.undefined
-  var padding: js.UndefOr[Double | PaddingOptions] = js.undefined
 }
-
 object CameraForBoundsOptions {
-  @scala.inline
-  def apply(
-    around: LngLatLike = null,
-    bearing: Int | Double = null,
-    center: LngLatLike = null,
-    maxZoom: Int | Double = null,
-    offset: PointLike = null,
-    padding: Double | PaddingOptions = null,
-    pitch: Int | Double = null,
-    zoom: Int | Double = null
-  ): CameraForBoundsOptions = {
+  
+  inline def apply(): CameraForBoundsOptions = {
     val __obj = js.Dynamic.literal()
-    if (around != null) __obj.updateDynamic("around")(around.asInstanceOf[js.Any])
-    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraForBoundsOptions]
   }
+  
+  extension [Self <: CameraForBoundsOptions](x: Self) {
+    
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    
+    inline def setOffset(value: PointLike): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+  }
 }
-

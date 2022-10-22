@@ -1,6 +1,7 @@
 
 # Scala.js typings for escape-html
 
+Typings are for version 1.0
 
 ## Library description:
 Escape string for use in HTML
@@ -10,9 +11,9 @@ Escape string for use in HTML
 | Full name          | escape-html |
 | Keywords           | escape, html, utility |
 | # releases         | 1 |
-| # dependents       | 751 |
-| # downloads        | 438855392 |
-| # stars            | 37 |
+| # dependents       | 0.0 |
+| # downloads        | 1.00135354E8 |
+| # stars            | 381.0 |
 
 ## Links
 - [Homepage](https://github.com/component/escape-html)

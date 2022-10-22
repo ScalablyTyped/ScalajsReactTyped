@@ -2,29 +2,31 @@ package typingsJapgolly.estree.mod
 
 import typingsJapgolly.estree.estreeStrings.Block
 import typingsJapgolly.estree.estreeStrings.Line
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Comment extends BaseNodeWithoutComments {
+trait Comment
+  extends StObject
+     with BaseNodeWithoutComments {
+  
   @JSName("type")
   var type_Comment: Line | Block
+  
   var value: String
 }
-
 object Comment {
-  @scala.inline
-  def apply(
-    `type`: Line | Block,
-    value: String,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null
-  ): Comment = {
+  
+  inline def apply(`type`: Line | Block, value: String): Comment = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
+  
+  extension [Self <: Comment](x: Self) {
+    
+    inline def setType(value: Line | Block): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

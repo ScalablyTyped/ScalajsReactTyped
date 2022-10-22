@@ -1,8 +1,9 @@
 package typingsJapgolly.puppeteer.mod
 
+import typingsJapgolly.puppeteer.puppeteerStrings.clear_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.puppeteer.puppeteerStrings.log
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.puppeteer.puppeteerStrings.dirxml
   - typingsJapgolly.puppeteer.puppeteerStrings.table
   - typingsJapgolly.puppeteer.puppeteerStrings.trace
-  - typingsJapgolly.puppeteer.puppeteerStrings.clear
+  - typingsJapgolly.puppeteer.puppeteerStrings.clear_
   - typingsJapgolly.puppeteer.puppeteerStrings.startGroup
   - typingsJapgolly.puppeteer.puppeteerStrings.startGroupCollapsed
   - typingsJapgolly.puppeteer.puppeteerStrings.endGroup
@@ -23,47 +24,46 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.puppeteer.puppeteerStrings.profileEnd
   - typingsJapgolly.puppeteer.puppeteerStrings.count
   - typingsJapgolly.puppeteer.puppeteerStrings.timeEnd
+  - typingsJapgolly.puppeteer.puppeteerStrings.verbose
 */
-trait ConsoleMessageType extends js.Object
-
+trait ConsoleMessageType extends StObject
 object ConsoleMessageType {
-  @scala.inline
-  def assert: typingsJapgolly.puppeteer.puppeteerStrings.assert = this.cast("assert")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def clear: typingsJapgolly.puppeteer.puppeteerStrings.clear = this.cast("clear")
-  @scala.inline
-  def count: typingsJapgolly.puppeteer.puppeteerStrings.count = this.cast("count")
-  @scala.inline
-  def debug: typingsJapgolly.puppeteer.puppeteerStrings.debug = this.cast("debug")
-  @scala.inline
-  def dir: typingsJapgolly.puppeteer.puppeteerStrings.dir = this.cast("dir")
-  @scala.inline
-  def dirxml: typingsJapgolly.puppeteer.puppeteerStrings.dirxml = this.cast("dirxml")
-  @scala.inline
-  def endGroup: typingsJapgolly.puppeteer.puppeteerStrings.endGroup = this.cast("endGroup")
-  @scala.inline
-  def error: typingsJapgolly.puppeteer.puppeteerStrings.error = this.cast("error")
-  @scala.inline
-  def info: typingsJapgolly.puppeteer.puppeteerStrings.info = this.cast("info")
-  @scala.inline
-  def log: typingsJapgolly.puppeteer.puppeteerStrings.log = this.cast("log")
-  @scala.inline
-  def profile: typingsJapgolly.puppeteer.puppeteerStrings.profile = this.cast("profile")
-  @scala.inline
-  def profileEnd: typingsJapgolly.puppeteer.puppeteerStrings.profileEnd = this.cast("profileEnd")
-  @scala.inline
-  def startGroup: typingsJapgolly.puppeteer.puppeteerStrings.startGroup = this.cast("startGroup")
-  @scala.inline
-  def startGroupCollapsed: typingsJapgolly.puppeteer.puppeteerStrings.startGroupCollapsed = this.cast("startGroupCollapsed")
-  @scala.inline
-  def table: typingsJapgolly.puppeteer.puppeteerStrings.table = this.cast("table")
-  @scala.inline
-  def timeEnd: typingsJapgolly.puppeteer.puppeteerStrings.timeEnd = this.cast("timeEnd")
-  @scala.inline
-  def trace: typingsJapgolly.puppeteer.puppeteerStrings.trace = this.cast("trace")
-  @scala.inline
-  def warning: typingsJapgolly.puppeteer.puppeteerStrings.warning = this.cast("warning")
+  
+  inline def assert: typingsJapgolly.puppeteer.puppeteerStrings.assert = "assert".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.assert]
+  
+  inline def clear: clear_ = "clear".asInstanceOf[clear_]
+  
+  inline def count: typingsJapgolly.puppeteer.puppeteerStrings.count = "count".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.count]
+  
+  inline def debug: typingsJapgolly.puppeteer.puppeteerStrings.debug = "debug".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.debug]
+  
+  inline def dir: typingsJapgolly.puppeteer.puppeteerStrings.dir = "dir".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.dir]
+  
+  inline def dirxml: typingsJapgolly.puppeteer.puppeteerStrings.dirxml = "dirxml".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.dirxml]
+  
+  inline def endGroup: typingsJapgolly.puppeteer.puppeteerStrings.endGroup = "endGroup".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.endGroup]
+  
+  inline def error: typingsJapgolly.puppeteer.puppeteerStrings.error = "error".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.error]
+  
+  inline def info: typingsJapgolly.puppeteer.puppeteerStrings.info = "info".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.info]
+  
+  inline def log: typingsJapgolly.puppeteer.puppeteerStrings.log = "log".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.log]
+  
+  inline def profile: typingsJapgolly.puppeteer.puppeteerStrings.profile = "profile".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.profile]
+  
+  inline def profileEnd: typingsJapgolly.puppeteer.puppeteerStrings.profileEnd = "profileEnd".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.profileEnd]
+  
+  inline def startGroup: typingsJapgolly.puppeteer.puppeteerStrings.startGroup = "startGroup".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.startGroup]
+  
+  inline def startGroupCollapsed: typingsJapgolly.puppeteer.puppeteerStrings.startGroupCollapsed = "startGroupCollapsed".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.startGroupCollapsed]
+  
+  inline def table: typingsJapgolly.puppeteer.puppeteerStrings.table = "table".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.table]
+  
+  inline def timeEnd: typingsJapgolly.puppeteer.puppeteerStrings.timeEnd = "timeEnd".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.timeEnd]
+  
+  inline def trace: typingsJapgolly.puppeteer.puppeteerStrings.trace = "trace".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.trace]
+  
+  inline def verbose: typingsJapgolly.puppeteer.puppeteerStrings.verbose = "verbose".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.verbose]
+  
+  inline def warning: typingsJapgolly.puppeteer.puppeteerStrings.warning = "warning".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.warning]
 }
-

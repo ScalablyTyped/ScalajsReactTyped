@@ -1,130 +1,119 @@
 package typingsJapgolly.parse
 
-import typingsJapgolly.parse.mod._Global_.Parse.Schema.TYPE
+import typingsJapgolly.parse.mod.global.Parse.Schema.TYPE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseStrings {
-  @js.native
-  sealed trait Array extends TYPE
   
   @js.native
-  sealed trait Boolean extends TYPE
+  sealed trait ACL extends StObject
+  inline def ACL: ACL = "ACL".asInstanceOf[ACL]
   
   @js.native
-  sealed trait Date extends TYPE
+  sealed trait Array
+    extends StObject
+       with TYPE
+  inline def Array: Array = "Array".asInstanceOf[Array]
   
   @js.native
-  sealed trait File extends TYPE
+  sealed trait Boolean
+    extends StObject
+       with TYPE
+  inline def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
   
   @js.native
-  sealed trait GeoPoint extends TYPE
+  sealed trait Date
+    extends StObject
+       with TYPE
+  inline def Date: Date = "Date".asInstanceOf[Date]
   
   @js.native
-  sealed trait Number extends TYPE
+  sealed trait File
+    extends StObject
+       with TYPE
+  inline def File: File = "File".asInstanceOf[File]
   
   @js.native
-  sealed trait Object extends TYPE
+  sealed trait GeoPoint
+    extends StObject
+       with TYPE
+  inline def GeoPoint: GeoPoint = "GeoPoint".asInstanceOf[GeoPoint]
   
   @js.native
-  sealed trait Pointer extends TYPE
+  sealed trait Number
+    extends StObject
+       with TYPE
+  inline def Number: Number = "Number".asInstanceOf[Number]
   
   @js.native
-  sealed trait Polygon extends TYPE
+  sealed trait Object
+    extends StObject
+       with TYPE
+  inline def Object: Object = "Object".asInstanceOf[Object]
   
   @js.native
-  sealed trait Relation extends TYPE
+  sealed trait Pointer
+    extends StObject
+       with TYPE
+  inline def Pointer: Pointer = "Pointer".asInstanceOf[Pointer]
   
   @js.native
-  sealed trait String extends TYPE
+  sealed trait Polygon
+    extends StObject
+       with TYPE
+  inline def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
   
   @js.native
-  sealed trait ToJSON extends js.Object
+  sealed trait Relation
+    extends StObject
+       with TYPE
+  inline def Relation: Relation = "Relation".asInstanceOf[Relation]
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait String
+    extends StObject
+       with TYPE
+  inline def String: String = "String".asInstanceOf[String]
   
   @js.native
-  sealed trait create extends js.Object
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait createdAt extends js.Object
+  sealed trait create extends StObject
+  inline def create: create = "create".asInstanceOf[create]
   
   @js.native
-  sealed trait define extends js.Object
+  sealed trait createdAt extends StObject
+  inline def createdAt: createdAt = "createdAt".asInstanceOf[createdAt]
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete extends StObject
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait enter extends js.Object
+  sealed trait enter extends StObject
+  inline def enter: enter = "enter".asInstanceOf[enter]
   
   @js.native
-  sealed trait leave extends js.Object
+  sealed trait leave extends StObject
+  inline def leave: leave = "leave".asInstanceOf[leave]
   
   @js.native
-  sealed trait objectId extends js.Object
+  sealed trait objectId extends StObject
+  inline def objectId: objectId = "objectId".asInstanceOf[objectId]
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait open extends StObject
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait run extends js.Object
+  sealed trait update extends StObject
+  inline def update: update = "update".asInstanceOf[update]
   
   @js.native
-  sealed trait update extends js.Object
-  
-  @js.native
-  sealed trait updatedAt extends js.Object
-  
-  @scala.inline
-  def Array: Array = "Array".asInstanceOf[Array]
-  @scala.inline
-  def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
-  @scala.inline
-  def Date: Date = "Date".asInstanceOf[Date]
-  @scala.inline
-  def File: File = "File".asInstanceOf[File]
-  @scala.inline
-  def GeoPoint: GeoPoint = "GeoPoint".asInstanceOf[GeoPoint]
-  @scala.inline
-  def Number: Number = "Number".asInstanceOf[Number]
-  @scala.inline
-  def Object: Object = "Object".asInstanceOf[Object]
-  @scala.inline
-  def Pointer: Pointer = "Pointer".asInstanceOf[Pointer]
-  @scala.inline
-  def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
-  @scala.inline
-  def Relation: Relation = "Relation".asInstanceOf[Relation]
-  @scala.inline
-  def String: String = "String".asInstanceOf[String]
-  @scala.inline
-  def ToJSON: ToJSON = "ToJSON".asInstanceOf[ToJSON]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
-  @scala.inline
-  def createdAt: createdAt = "createdAt".asInstanceOf[createdAt]
-  @scala.inline
-  def define: define = "define".asInstanceOf[define]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def enter: enter = "enter".asInstanceOf[enter]
-  @scala.inline
-  def leave: leave = "leave".asInstanceOf[leave]
-  @scala.inline
-  def objectId: objectId = "objectId".asInstanceOf[objectId]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def run: run = "run".asInstanceOf[run]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def updatedAt: updatedAt = "updatedAt".asInstanceOf[updatedAt]
+  sealed trait updatedAt extends StObject
+  inline def updatedAt: updatedAt = "updatedAt".asInstanceOf[updatedAt]
 }
-

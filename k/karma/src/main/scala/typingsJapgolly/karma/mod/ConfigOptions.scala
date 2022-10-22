@@ -1,20 +1,25 @@
 package typingsJapgolly.karma.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.log4js.mod.Appender
 import typingsJapgolly.node.httpsMod.ServerOptions
+import typingsJapgolly.node.nodeColonhttpMod.IncomingMessage
+import typingsJapgolly.node.nodeColonhttpMod.ServerResponse
+import typingsJapgolly.node.nodeColonnetMod.Socket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConfigOptions extends js.Object {
+trait ConfigOptions extends StObject {
+  
   /**
     * @description Enable or disable watching files and executing the tests whenever one of these files changes.
     * @default true
     */
   var autoWatch: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * @description When Karma is watching the files for changes, it tries to batch multiple changes into a single run
     * so that the test runner doesn't try to start and restart running tests more than it should.
@@ -23,6 +28,7 @@ trait ConfigOptions extends js.Object {
     * @default 250
     */
   var autoWatchBatchDelay: js.UndefOr[Double] = js.undefined
+  
   /**
     * @default ''
     * @description The root path location that will be used to resolve all relative paths defined in <code>files</code> and <code>exclude</code>.
@@ -30,15 +36,18 @@ trait ConfigOptions extends js.Object {
     * the <code>__dirname</code> of the configuration file.
     */
   var basePath: js.UndefOr[String] = js.undefined
+  
   /**
     * This is the same as middleware except that these middleware will be run before karma's own middleware.
     * @default []
     */
   var beforeMiddleware: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * Configure how the browser console is logged with the following properties, all of which are optional
     */
   var browserConsoleLogOptions: js.UndefOr[BrowserConsoleLogOptions] = js.undefined
+  
   /**
     * @default 2000
     * @description How long does Karma wait for a browser to reconnect (in ms).
@@ -50,6 +59,7 @@ trait ConfigOptions extends js.Object {
     * </p>
     */
   var browserDisconnectTimeout: js.UndefOr[Double] = js.undefined
+  
   /**
     * @default 0
     * @description The number of disconnections tolerated.
@@ -61,6 +71,7 @@ trait ConfigOptions extends js.Object {
     * </p>
     */
   var browserDisconnectTolerance: js.UndefOr[Double] = js.undefined
+  
   /**
     * @default 10000
     * @description How long will Karma wait for a message from a browser before disconnecting from it (in ms).
@@ -70,11 +81,13 @@ trait ConfigOptions extends js.Object {
     * </p>
     */
   var browserNoActivityTimeout: js.UndefOr[Double] = js.undefined
+  
   /**
     * Timeout for the client socket connection (in ms)
     * @default 20000
     */
   var browserSocketTimeout: js.UndefOr[Double] = js.undefined
+  
   /**
     * @default []
     * Possible Values:
@@ -83,6 +96,13 @@ trait ConfigOptions extends js.Object {
     *     <li>ChromeCanary (launcher comes installed with Karma)</li>
     *     <li>PhantomJS (launcher comes installed with Karma)</li>
     *     <li>Firefox (launcher requires karma-firefox-launcher plugin)</li>
+    *     <li>FirefoxHeadless (launcher requires karma-firefox-launcher plugin)</li>
+    *     <li>FirefoxDeveloper (launcher requires karma-firefox-launcher plugin)</li>
+    *     <li>FirefoxDeveloperHeadless (launcher requires karma-firefox-launcher plugin)</li>
+    *     <li>FirefoxAurora (launcher requires karma-firefox-launcher plugin)</li>
+    *     <li>FirefoxAuroraHeadless (launcher requires karma-firefox-launcher plugin)</li>
+    *     <li>FirefoxNightly (launcher requires karma-firefox-launcher plugin)</li>
+    *     <li>FirefoxNightlyHeadless (launcher requires karma-firefox-launcher plugin)</li>
     *     <li>Opera (launcher requires karma-opera-launcher plugin)</li>
     *     <li>Internet Explorer (launcher requires karma-ie-launcher plugin)</li>
     *     <li>Safari (launcher requires karma-safari-launcher plugin)</li>
@@ -93,6 +113,7 @@ trait ConfigOptions extends js.Object {
     * the Karma web server is listening (by default it is <code>http://localhost:9876/</code>).
     */
   var browsers: js.UndefOr[js.Array[AutomatedBrowsers | String]] = js.undefined
+  
   /**
     * @default 60000
     * @description Timeout for capturing a browser (in ms).
@@ -103,12 +124,15 @@ trait ConfigOptions extends js.Object {
     * </p>
     */
   var captureTimeout: js.UndefOr[Double] = js.undefined
+  
   var client: js.UndefOr[ClientOptions] = js.undefined
+  
   /**
     * @default true
     * @description Enable or disable colors in the output (reporters and logs).
     */
   var colors: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * @default 'Infinity'
     * @description How many browsers Karma launches in parallel.
@@ -117,105 +141,133 @@ trait ConfigOptions extends js.Object {
     * you can specify how many browsers should be running at once at any given point in time.
     */
   var concurrency: js.UndefOr[Double] = js.undefined
+  
   /**
     * When true, this will append the crossorigin attribute to generated script tags,
     * which enables better error reporting for JavaScript files served from a different origin
     * @default true
     */
   var crossOriginAttribute: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If null (default), uses karma's own client_with_context.html file (which is used when client.runInParent set to true).
     * @default undefined
     */
   var customClientContextFile: js.UndefOr[String] = js.undefined
+  
   /**
     * If null (default), uses karma's own context.html file.
     * @default undefined
     */
   var customContextFile: js.UndefOr[String] = js.undefined
+  
   /**
     * If null (default), uses karma's own debug.html file.
     * @default undefined
     */
   var customDebugFile: js.UndefOr[String] = js.undefined
+  
   /**
     * Custom HTTP headers that will be set upon serving files by Karma's web server.
     * Custom headers are useful, especially with upcoming browser features like Service Workers.
     * @default undefined
     */
   var customHeaders: js.UndefOr[js.Array[CustomHeaders]] = js.undefined
+  
   var customLaunchers: js.UndefOr[StringDictionary[CustomLauncher]] = js.undefined
+  
   /**
     * When true, this will start the karma server in another process, writing no output to the console.
     * The server can be stopped using the karma stop command.
     * @default false
     */
   var detached: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * @default []
     * @description List of files/patterns to exclude from loaded files.
     */
   var exclude: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * Enable or disable failure on running empty test-suites.
     * If disabled the program will return exit-code 0 and display a warning.
     * @default true
     */
   var failOnEmptyTestSuite: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Enable or disable failure on failing tests.
     * @default true
     */
   var failOnFailingTestSuite: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Enable or disable failure on tests deliberately disabled, eg fit() or xit() tests in jasmine.
     * Use this to prevent accidental disabling tests needed to validate production.
     * @default true
     */
   var failOnSkippedTests: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * @default []
     * @description List of files/patterns to load in the browser.
     */
   var files: js.UndefOr[js.Array[FilePattern | String]] = js.undefined
+  
   /**
     * Force socket.io to use JSONP polling instead of XHR polling
     * @default false
     */
   var forceJSONP: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * A new error message line
     * @default undefined
     */
   var formatError: js.UndefOr[js.Function1[/* msg */ String, String]] = js.undefined
+  
   /**
     * @default []
     * @description List of test frameworks you want to use. Typically, you will set this to ['jasmine'], ['mocha'] or ['qunit']...
     * Please note just about all frameworks in Karma require an additional plugin/framework library to be installed (via NPM).
     */
   var frameworks: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * @default 'localhost'
     * @description Hostname to be used when capturing browsers.
     */
   var hostname: js.UndefOr[String] = js.undefined
+  
   /**
     * Module used for Karma webserver
     * @default undefined
     */
   var httpModule: js.UndefOr[String] = js.undefined
+  
   /**
     * @default {}
     * @description Options object to be used by Node's https class.
     * Object description can be found in the
     * [NodeJS.org API docs](https://nodejs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener)
     */
-  var httpsServerOptions: js.UndefOr[ServerOptions] = js.undefined
+  var httpsServerOptions: js.UndefOr[
+    ServerOptions[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[typingsJapgolly.node.httpMod.IncomingMessage]
+      ]
+    ]
+  ] = js.undefined
+  
   /**
     * Address that the server will listen on. Change to 'localhost' to only listen to the loopback, or '::' to listen on all IPv6 interfaces
     * @default '0.0.0.0' or `LISTEN_ADDR`
     */
   var listenAddress: js.UndefOr[String] = js.undefined
+  
   /**
     * @default config.LOG_INFO
     * Possible values:
@@ -229,11 +281,13 @@ trait ConfigOptions extends js.Object {
     * @description Level of logging.
     */
   var logLevel: js.UndefOr[String] = js.undefined
+  
   /**
     * @default [{type: 'console'}]
     * @description A list of log appenders to be used. See the documentation for [log4js] for more information.
     */
   var loggers: js.UndefOr[StringDictionary[Appender] | js.Array[Appender]] = js.undefined
+  
   /**
     * @default []
     * @description List of names of additional middleware you want the
@@ -246,18 +300,21 @@ trait ConfigOptions extends js.Object {
     * [Express](http://expressjs.com/guide/using-middleware.html) docs).
     */
   var middleware: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * @default {}
     * @description Redefine default mapping from file extensions to MIME-type.
     * Set property name to required MIME, provide Array of extensions (without dots) as it's value.
     */
   var mime: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
+  
   /**
     * Socket.io pingTimeout in ms, https://socket.io/docs/server-api/#new-Server-httpServer-options.
     * Very slow networks may need values up to 60000. Larger values delay discovery of deadlock in tests or browser crashes.
     * @default 5000
     */
   var pingTimeout: js.UndefOr[Double] = js.undefined
+  
   /**
     * @default ['karma-*']
     * @description List of plugins to load. A plugin can be a string (in which case it will be required
@@ -266,11 +323,13 @@ trait ConfigOptions extends js.Object {
     * Note: Just about all plugins in Karma require an additional library to be installed (via NPM).
     */
   var plugins: js.UndefOr[js.Array[PluginName | InlinePluginDef]] = js.undefined
+  
   /**
     * @default 9876
     * @description The port where the web server will be listening.
     */
   var port: js.UndefOr[Double] = js.undefined
+  
   /**
     * @default {'**\/ *.coffee': 'coffee'}
     * @description A map of preprocessors to use.
@@ -288,11 +347,13 @@ trait ConfigOptions extends js.Object {
     *
     */
   var preprocessors: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
+  
   /**
     * How long will Karma wait for browser process to terminate before sending a SIGKILL signal
     * @default 2000
     */
   var processKillTimeout: js.UndefOr[Double] = js.undefined
+  
   /**
     * @default 'http:'
     * Possible Values:
@@ -305,35 +366,41 @@ trait ConfigOptions extends js.Object {
     * Note: Using <code>'https:'</code> requires you to specify <code>httpsServerOptions</code>.
     */
   var protocol: js.UndefOr[String] = js.undefined
+  
   /**
     * @default {}
     * @description A map of path-proxy pairs
     * The proxy can be specified directly by the target url or path, or with an object to configure more options
     */
   var proxies: js.UndefOr[PathProxyPairs] = js.undefined
+  
   /**
     * Called when requesting Proxy
     * @default undefined
     */
   var proxyReq: js.UndefOr[
-    js.Function4[/* proxyReq */ js.Any, /* req */ js.Any, /* res */ js.Any, /* options */ js.Object, Unit]
+    js.Function4[/* proxyReq */ Any, /* req */ Any, /* res */ Any, /* options */ js.Object, Unit]
   ] = js.undefined
+  
   /**
     * Called when respnsing Proxy
     * @default undefined
     */
-  var proxyRes: js.UndefOr[js.Function3[/* proxyRes */ js.Any, /* req */ js.Any, /* res */ js.Any, Unit]] = js.undefined
+  var proxyRes: js.UndefOr[js.Function3[/* proxyRes */ Any, /* req */ Any, /* res */ Any, Unit]] = js.undefined
+  
   /**
     * @default true
     * @description Whether or not Karma or any browsers should raise an error when an inavlid SSL certificate is found.
     */
   var proxyValidateSSL: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * @default 0
     * @description Karma will report all the tests that are slower than given time limit (in ms).
     * This is disabled by default (since the default value is 0).
     */
   var reportSlowerThan: js.UndefOr[Double] = js.undefined
+  
   /**
     * @default ['progress']
     * Possible Values:
@@ -346,17 +413,20 @@ trait ConfigOptions extends js.Object {
     * Note: Just about all additional reporters in Karma (other than progress) require an additional library to be installed (via NPM).
     */
   var reporters: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * When Karma is watching the files for changes, it will delay a new run
     * until the current run is finished. Enabling this setting
     * will cancel the current run and start a new run immediately when a change is detected.
     */
   var restartOnFileChange: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * When a browser crashes, karma will try to relaunch. This defines how many times karma should relaunch a browser before giving up.
     * @default 2
     */
   var retryLimit: js.UndefOr[Double] = js.undefined
+  
   /**
     * @default false
     * @description Continuous Integration mode.
@@ -364,6 +434,7 @@ trait ConfigOptions extends js.Object {
     * on whether all tests passed or any tests failed.
     */
   var singleRun: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * @default ['polling', 'websocket']
     * @description An array of allowed transport methods between the browser and testing server. This configuration setting
@@ -371,10 +442,12 @@ trait ConfigOptions extends js.Object {
     * between browsers and the testing server).
     */
   var transports: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * For use when the Karma server needs to be run behind a proxy that changes the base url, etc
     */
   var upstreamProxy: js.UndefOr[UpstreamProxy] = js.undefined
+  
   /**
     * @default '/'
     * @description The base url, where Karma runs.
@@ -383,123 +456,263 @@ trait ConfigOptions extends js.Object {
     */
   var urlRoot: js.UndefOr[String] = js.undefined
 }
-
 object ConfigOptions {
-  @scala.inline
-  def apply(
-    autoWatch: js.UndefOr[Boolean] = js.undefined,
-    autoWatchBatchDelay: Int | Double = null,
-    basePath: String = null,
-    beforeMiddleware: js.Array[String] = null,
-    browserConsoleLogOptions: BrowserConsoleLogOptions = null,
-    browserDisconnectTimeout: Int | Double = null,
-    browserDisconnectTolerance: Int | Double = null,
-    browserNoActivityTimeout: Int | Double = null,
-    browserSocketTimeout: Int | Double = null,
-    browsers: js.Array[AutomatedBrowsers | String] = null,
-    captureTimeout: Int | Double = null,
-    client: ClientOptions = null,
-    colors: js.UndefOr[Boolean] = js.undefined,
-    concurrency: Int | Double = null,
-    crossOriginAttribute: js.UndefOr[Boolean] = js.undefined,
-    customClientContextFile: String = null,
-    customContextFile: String = null,
-    customDebugFile: String = null,
-    customHeaders: js.Array[CustomHeaders] = null,
-    customLaunchers: StringDictionary[CustomLauncher] = null,
-    detached: js.UndefOr[Boolean] = js.undefined,
-    exclude: js.Array[String] = null,
-    failOnEmptyTestSuite: js.UndefOr[Boolean] = js.undefined,
-    failOnFailingTestSuite: js.UndefOr[Boolean] = js.undefined,
-    failOnSkippedTests: js.UndefOr[Boolean] = js.undefined,
-    files: js.Array[FilePattern | String] = null,
-    forceJSONP: js.UndefOr[Boolean] = js.undefined,
-    formatError: /* msg */ String => CallbackTo[String] = null,
-    frameworks: js.Array[String] = null,
-    hostname: String = null,
-    httpModule: String = null,
-    httpsServerOptions: ServerOptions = null,
-    listenAddress: String = null,
-    logLevel: String = null,
-    loggers: StringDictionary[Appender] | js.Array[Appender] = null,
-    middleware: js.Array[String] = null,
-    mime: StringDictionary[js.Array[String]] = null,
-    pingTimeout: Int | Double = null,
-    plugins: js.Array[PluginName | InlinePluginDef] = null,
-    port: Int | Double = null,
-    preprocessors: StringDictionary[String | js.Array[String]] = null,
-    processKillTimeout: Int | Double = null,
-    protocol: String = null,
-    proxies: PathProxyPairs = null,
-    proxyReq: (/* proxyReq */ js.Any, /* req */ js.Any, /* res */ js.Any, /* options */ js.Object) => Callback = null,
-    proxyRes: (/* proxyRes */ js.Any, /* req */ js.Any, /* res */ js.Any) => Callback = null,
-    proxyValidateSSL: js.UndefOr[Boolean] = js.undefined,
-    reportSlowerThan: Int | Double = null,
-    reporters: js.Array[String] = null,
-    restartOnFileChange: js.UndefOr[Boolean] = js.undefined,
-    retryLimit: Int | Double = null,
-    singleRun: js.UndefOr[Boolean] = js.undefined,
-    transports: js.Array[String] = null,
-    upstreamProxy: UpstreamProxy = null,
-    urlRoot: String = null
-  ): ConfigOptions = {
+  
+  inline def apply(): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoWatch)) __obj.updateDynamic("autoWatch")(autoWatch.asInstanceOf[js.Any])
-    if (autoWatchBatchDelay != null) __obj.updateDynamic("autoWatchBatchDelay")(autoWatchBatchDelay.asInstanceOf[js.Any])
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
-    if (beforeMiddleware != null) __obj.updateDynamic("beforeMiddleware")(beforeMiddleware.asInstanceOf[js.Any])
-    if (browserConsoleLogOptions != null) __obj.updateDynamic("browserConsoleLogOptions")(browserConsoleLogOptions.asInstanceOf[js.Any])
-    if (browserDisconnectTimeout != null) __obj.updateDynamic("browserDisconnectTimeout")(browserDisconnectTimeout.asInstanceOf[js.Any])
-    if (browserDisconnectTolerance != null) __obj.updateDynamic("browserDisconnectTolerance")(browserDisconnectTolerance.asInstanceOf[js.Any])
-    if (browserNoActivityTimeout != null) __obj.updateDynamic("browserNoActivityTimeout")(browserNoActivityTimeout.asInstanceOf[js.Any])
-    if (browserSocketTimeout != null) __obj.updateDynamic("browserSocketTimeout")(browserSocketTimeout.asInstanceOf[js.Any])
-    if (browsers != null) __obj.updateDynamic("browsers")(browsers.asInstanceOf[js.Any])
-    if (captureTimeout != null) __obj.updateDynamic("captureTimeout")(captureTimeout.asInstanceOf[js.Any])
-    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
-    if (!js.isUndefined(crossOriginAttribute)) __obj.updateDynamic("crossOriginAttribute")(crossOriginAttribute.asInstanceOf[js.Any])
-    if (customClientContextFile != null) __obj.updateDynamic("customClientContextFile")(customClientContextFile.asInstanceOf[js.Any])
-    if (customContextFile != null) __obj.updateDynamic("customContextFile")(customContextFile.asInstanceOf[js.Any])
-    if (customDebugFile != null) __obj.updateDynamic("customDebugFile")(customDebugFile.asInstanceOf[js.Any])
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
-    if (customLaunchers != null) __obj.updateDynamic("customLaunchers")(customLaunchers.asInstanceOf[js.Any])
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnEmptyTestSuite)) __obj.updateDynamic("failOnEmptyTestSuite")(failOnEmptyTestSuite.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnFailingTestSuite)) __obj.updateDynamic("failOnFailingTestSuite")(failOnFailingTestSuite.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnSkippedTests)) __obj.updateDynamic("failOnSkippedTests")(failOnSkippedTests.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceJSONP)) __obj.updateDynamic("forceJSONP")(forceJSONP.asInstanceOf[js.Any])
-    if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1((t0: /* msg */ java.lang.String) => formatError(t0).runNow()))
-    if (frameworks != null) __obj.updateDynamic("frameworks")(frameworks.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (httpModule != null) __obj.updateDynamic("httpModule")(httpModule.asInstanceOf[js.Any])
-    if (httpsServerOptions != null) __obj.updateDynamic("httpsServerOptions")(httpsServerOptions.asInstanceOf[js.Any])
-    if (listenAddress != null) __obj.updateDynamic("listenAddress")(listenAddress.asInstanceOf[js.Any])
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (loggers != null) __obj.updateDynamic("loggers")(loggers.asInstanceOf[js.Any])
-    if (middleware != null) __obj.updateDynamic("middleware")(middleware.asInstanceOf[js.Any])
-    if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
-    if (pingTimeout != null) __obj.updateDynamic("pingTimeout")(pingTimeout.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (preprocessors != null) __obj.updateDynamic("preprocessors")(preprocessors.asInstanceOf[js.Any])
-    if (processKillTimeout != null) __obj.updateDynamic("processKillTimeout")(processKillTimeout.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (proxies != null) __obj.updateDynamic("proxies")(proxies.asInstanceOf[js.Any])
-    if (proxyReq != null) __obj.updateDynamic("proxyReq")(js.Any.fromFunction4((t0: /* proxyReq */ js.Any, t1: /* req */ js.Any, t2: /* res */ js.Any, t3: /* options */ js.Object) => proxyReq(t0, t1, t2, t3).runNow()))
-    if (proxyRes != null) __obj.updateDynamic("proxyRes")(js.Any.fromFunction3((t0: /* proxyRes */ js.Any, t1: /* req */ js.Any, t2: /* res */ js.Any) => proxyRes(t0, t1, t2).runNow()))
-    if (!js.isUndefined(proxyValidateSSL)) __obj.updateDynamic("proxyValidateSSL")(proxyValidateSSL.asInstanceOf[js.Any])
-    if (reportSlowerThan != null) __obj.updateDynamic("reportSlowerThan")(reportSlowerThan.asInstanceOf[js.Any])
-    if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
-    if (!js.isUndefined(restartOnFileChange)) __obj.updateDynamic("restartOnFileChange")(restartOnFileChange.asInstanceOf[js.Any])
-    if (retryLimit != null) __obj.updateDynamic("retryLimit")(retryLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleRun)) __obj.updateDynamic("singleRun")(singleRun.asInstanceOf[js.Any])
-    if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
-    if (upstreamProxy != null) __obj.updateDynamic("upstreamProxy")(upstreamProxy.asInstanceOf[js.Any])
-    if (urlRoot != null) __obj.updateDynamic("urlRoot")(urlRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
+  
+  extension [Self <: ConfigOptions](x: Self) {
+    
+    inline def setAutoWatch(value: Boolean): Self = StObject.set(x, "autoWatch", value.asInstanceOf[js.Any])
+    
+    inline def setAutoWatchBatchDelay(value: Double): Self = StObject.set(x, "autoWatchBatchDelay", value.asInstanceOf[js.Any])
+    
+    inline def setAutoWatchBatchDelayUndefined: Self = StObject.set(x, "autoWatchBatchDelay", js.undefined)
+    
+    inline def setAutoWatchUndefined: Self = StObject.set(x, "autoWatch", js.undefined)
+    
+    inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+    
+    inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+    
+    inline def setBeforeMiddleware(value: js.Array[String]): Self = StObject.set(x, "beforeMiddleware", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeMiddlewareUndefined: Self = StObject.set(x, "beforeMiddleware", js.undefined)
+    
+    inline def setBeforeMiddlewareVarargs(value: String*): Self = StObject.set(x, "beforeMiddleware", js.Array(value*))
+    
+    inline def setBrowserConsoleLogOptions(value: BrowserConsoleLogOptions): Self = StObject.set(x, "browserConsoleLogOptions", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserConsoleLogOptionsUndefined: Self = StObject.set(x, "browserConsoleLogOptions", js.undefined)
+    
+    inline def setBrowserDisconnectTimeout(value: Double): Self = StObject.set(x, "browserDisconnectTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserDisconnectTimeoutUndefined: Self = StObject.set(x, "browserDisconnectTimeout", js.undefined)
+    
+    inline def setBrowserDisconnectTolerance(value: Double): Self = StObject.set(x, "browserDisconnectTolerance", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserDisconnectToleranceUndefined: Self = StObject.set(x, "browserDisconnectTolerance", js.undefined)
+    
+    inline def setBrowserNoActivityTimeout(value: Double): Self = StObject.set(x, "browserNoActivityTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserNoActivityTimeoutUndefined: Self = StObject.set(x, "browserNoActivityTimeout", js.undefined)
+    
+    inline def setBrowserSocketTimeout(value: Double): Self = StObject.set(x, "browserSocketTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserSocketTimeoutUndefined: Self = StObject.set(x, "browserSocketTimeout", js.undefined)
+    
+    inline def setBrowsers(value: js.Array[AutomatedBrowsers | String]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
+    
+    inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
+    
+    inline def setBrowsersVarargs(value: (AutomatedBrowsers | String)*): Self = StObject.set(x, "browsers", js.Array(value*))
+    
+    inline def setCaptureTimeout(value: Double): Self = StObject.set(x, "captureTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureTimeoutUndefined: Self = StObject.set(x, "captureTimeout", js.undefined)
+    
+    inline def setClient(value: ClientOptions): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    
+    inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    
+    inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+    
+    inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+    
+    inline def setCrossOriginAttribute(value: Boolean): Self = StObject.set(x, "crossOriginAttribute", value.asInstanceOf[js.Any])
+    
+    inline def setCrossOriginAttributeUndefined: Self = StObject.set(x, "crossOriginAttribute", js.undefined)
+    
+    inline def setCustomClientContextFile(value: String): Self = StObject.set(x, "customClientContextFile", value.asInstanceOf[js.Any])
+    
+    inline def setCustomClientContextFileUndefined: Self = StObject.set(x, "customClientContextFile", js.undefined)
+    
+    inline def setCustomContextFile(value: String): Self = StObject.set(x, "customContextFile", value.asInstanceOf[js.Any])
+    
+    inline def setCustomContextFileUndefined: Self = StObject.set(x, "customContextFile", js.undefined)
+    
+    inline def setCustomDebugFile(value: String): Self = StObject.set(x, "customDebugFile", value.asInstanceOf[js.Any])
+    
+    inline def setCustomDebugFileUndefined: Self = StObject.set(x, "customDebugFile", js.undefined)
+    
+    inline def setCustomHeaders(value: js.Array[CustomHeaders]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+    
+    inline def setCustomHeadersVarargs(value: CustomHeaders*): Self = StObject.set(x, "customHeaders", js.Array(value*))
+    
+    inline def setCustomLaunchers(value: StringDictionary[CustomLauncher]): Self = StObject.set(x, "customLaunchers", value.asInstanceOf[js.Any])
+    
+    inline def setCustomLaunchersUndefined: Self = StObject.set(x, "customLaunchers", js.undefined)
+    
+    inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    
+    inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+    
+    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
+    
+    inline def setFailOnEmptyTestSuite(value: Boolean): Self = StObject.set(x, "failOnEmptyTestSuite", value.asInstanceOf[js.Any])
+    
+    inline def setFailOnEmptyTestSuiteUndefined: Self = StObject.set(x, "failOnEmptyTestSuite", js.undefined)
+    
+    inline def setFailOnFailingTestSuite(value: Boolean): Self = StObject.set(x, "failOnFailingTestSuite", value.asInstanceOf[js.Any])
+    
+    inline def setFailOnFailingTestSuiteUndefined: Self = StObject.set(x, "failOnFailingTestSuite", js.undefined)
+    
+    inline def setFailOnSkippedTests(value: Boolean): Self = StObject.set(x, "failOnSkippedTests", value.asInstanceOf[js.Any])
+    
+    inline def setFailOnSkippedTestsUndefined: Self = StObject.set(x, "failOnSkippedTests", js.undefined)
+    
+    inline def setFiles(value: js.Array[FilePattern | String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    
+    inline def setFilesVarargs(value: (FilePattern | String)*): Self = StObject.set(x, "files", js.Array(value*))
+    
+    inline def setForceJSONP(value: Boolean): Self = StObject.set(x, "forceJSONP", value.asInstanceOf[js.Any])
+    
+    inline def setForceJSONPUndefined: Self = StObject.set(x, "forceJSONP", js.undefined)
+    
+    inline def setFormatError(value: /* msg */ String => String): Self = StObject.set(x, "formatError", js.Any.fromFunction1(value))
+    
+    inline def setFormatErrorUndefined: Self = StObject.set(x, "formatError", js.undefined)
+    
+    inline def setFrameworks(value: js.Array[String]): Self = StObject.set(x, "frameworks", value.asInstanceOf[js.Any])
+    
+    inline def setFrameworksUndefined: Self = StObject.set(x, "frameworks", js.undefined)
+    
+    inline def setFrameworksVarargs(value: String*): Self = StObject.set(x, "frameworks", js.Array(value*))
+    
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    
+    inline def setHttpModule(value: String): Self = StObject.set(x, "httpModule", value.asInstanceOf[js.Any])
+    
+    inline def setHttpModuleUndefined: Self = StObject.set(x, "httpModule", js.undefined)
+    
+    inline def setHttpsServerOptions(
+      value: ServerOptions[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typingsJapgolly.node.httpMod.IncomingMessage]
+          ]
+        ]
+    ): Self = StObject.set(x, "httpsServerOptions", value.asInstanceOf[js.Any])
+    
+    inline def setHttpsServerOptionsUndefined: Self = StObject.set(x, "httpsServerOptions", js.undefined)
+    
+    inline def setListenAddress(value: String): Self = StObject.set(x, "listenAddress", value.asInstanceOf[js.Any])
+    
+    inline def setListenAddressUndefined: Self = StObject.set(x, "listenAddress", js.undefined)
+    
+    inline def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    
+    inline def setLoggers(value: StringDictionary[Appender] | js.Array[Appender]): Self = StObject.set(x, "loggers", value.asInstanceOf[js.Any])
+    
+    inline def setLoggersUndefined: Self = StObject.set(x, "loggers", js.undefined)
+    
+    inline def setLoggersVarargs(value: Appender*): Self = StObject.set(x, "loggers", js.Array(value*))
+    
+    inline def setMiddleware(value: js.Array[String]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+    
+    inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
+    
+    inline def setMiddlewareVarargs(value: String*): Self = StObject.set(x, "middleware", js.Array(value*))
+    
+    inline def setMime(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+    
+    inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+    
+    inline def setPingTimeout(value: Double): Self = StObject.set(x, "pingTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setPingTimeoutUndefined: Self = StObject.set(x, "pingTimeout", js.undefined)
+    
+    inline def setPlugins(value: js.Array[PluginName | InlinePluginDef]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    
+    inline def setPluginsVarargs(value: (PluginName | InlinePluginDef)*): Self = StObject.set(x, "plugins", js.Array(value*))
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    inline def setPreprocessors(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "preprocessors", value.asInstanceOf[js.Any])
+    
+    inline def setPreprocessorsUndefined: Self = StObject.set(x, "preprocessors", js.undefined)
+    
+    inline def setProcessKillTimeout(value: Double): Self = StObject.set(x, "processKillTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setProcessKillTimeoutUndefined: Self = StObject.set(x, "processKillTimeout", js.undefined)
+    
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    
+    inline def setProxies(value: PathProxyPairs): Self = StObject.set(x, "proxies", value.asInstanceOf[js.Any])
+    
+    inline def setProxiesUndefined: Self = StObject.set(x, "proxies", js.undefined)
+    
+    inline def setProxyReq(value: (/* proxyReq */ Any, /* req */ Any, /* res */ Any, /* options */ js.Object) => Callback): Self = StObject.set(x, "proxyReq", js.Any.fromFunction4((t0: /* proxyReq */ Any, t1: /* req */ Any, t2: /* res */ Any, t3: /* options */ js.Object) => (value(t0, t1, t2, t3)).runNow()))
+    
+    inline def setProxyReqUndefined: Self = StObject.set(x, "proxyReq", js.undefined)
+    
+    inline def setProxyRes(value: (/* proxyRes */ Any, /* req */ Any, /* res */ Any) => Callback): Self = StObject.set(x, "proxyRes", js.Any.fromFunction3((t0: /* proxyRes */ Any, t1: /* req */ Any, t2: /* res */ Any) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setProxyResUndefined: Self = StObject.set(x, "proxyRes", js.undefined)
+    
+    inline def setProxyValidateSSL(value: Boolean): Self = StObject.set(x, "proxyValidateSSL", value.asInstanceOf[js.Any])
+    
+    inline def setProxyValidateSSLUndefined: Self = StObject.set(x, "proxyValidateSSL", js.undefined)
+    
+    inline def setReportSlowerThan(value: Double): Self = StObject.set(x, "reportSlowerThan", value.asInstanceOf[js.Any])
+    
+    inline def setReportSlowerThanUndefined: Self = StObject.set(x, "reportSlowerThan", js.undefined)
+    
+    inline def setReporters(value: js.Array[String]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
+    
+    inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
+    
+    inline def setReportersVarargs(value: String*): Self = StObject.set(x, "reporters", js.Array(value*))
+    
+    inline def setRestartOnFileChange(value: Boolean): Self = StObject.set(x, "restartOnFileChange", value.asInstanceOf[js.Any])
+    
+    inline def setRestartOnFileChangeUndefined: Self = StObject.set(x, "restartOnFileChange", js.undefined)
+    
+    inline def setRetryLimit(value: Double): Self = StObject.set(x, "retryLimit", value.asInstanceOf[js.Any])
+    
+    inline def setRetryLimitUndefined: Self = StObject.set(x, "retryLimit", js.undefined)
+    
+    inline def setSingleRun(value: Boolean): Self = StObject.set(x, "singleRun", value.asInstanceOf[js.Any])
+    
+    inline def setSingleRunUndefined: Self = StObject.set(x, "singleRun", js.undefined)
+    
+    inline def setTransports(value: js.Array[String]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
+    
+    inline def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
+    
+    inline def setTransportsVarargs(value: String*): Self = StObject.set(x, "transports", js.Array(value*))
+    
+    inline def setUpstreamProxy(value: UpstreamProxy): Self = StObject.set(x, "upstreamProxy", value.asInstanceOf[js.Any])
+    
+    inline def setUpstreamProxyUndefined: Self = StObject.set(x, "upstreamProxy", js.undefined)
+    
+    inline def setUrlRoot(value: String): Self = StObject.set(x, "urlRoot", value.asInstanceOf[js.Any])
+    
+    inline def setUrlRootUndefined: Self = StObject.set(x, "urlRoot", js.undefined)
+  }
 }
-

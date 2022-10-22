@@ -1,16 +1,20 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScriptInvocationListenerCallbacks extends InvocationListenerCallbacks {
+trait ScriptInvocationListenerCallbacks
+  extends StObject
+     with InvocationListenerCallbacks {
+  
   /**
     * Called synchronously when a thread is about to enter the target function.
     */
   var onEnter: js.UndefOr[
     js.ThisFunction1[/* this */ InvocationContext, /* args */ InvocationArguments, Unit]
   ] = js.undefined
+  
   /**
     * Called synchronously when a thread is about to leave the target function.
     */
@@ -18,17 +22,21 @@ trait ScriptInvocationListenerCallbacks extends InvocationListenerCallbacks {
     js.ThisFunction1[/* this */ InvocationContext, /* retval */ InvocationReturnValue, Unit]
   ] = js.undefined
 }
-
 object ScriptInvocationListenerCallbacks {
-  @scala.inline
-  def apply(
-    onEnter: js.ThisFunction1[/* this */ InvocationContext, /* args */ InvocationArguments, Unit] = null,
-    onLeave: js.ThisFunction1[/* this */ InvocationContext, /* retval */ InvocationReturnValue, Unit] = null
-  ): ScriptInvocationListenerCallbacks = {
+  
+  inline def apply(): ScriptInvocationListenerCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptInvocationListenerCallbacks]
   }
+  
+  extension [Self <: ScriptInvocationListenerCallbacks](x: Self) {
+    
+    inline def setOnEnter(value: js.ThisFunction1[/* this */ InvocationContext, /* args */ InvocationArguments, Unit]): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+    
+    inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+    
+    inline def setOnLeave(value: js.ThisFunction1[/* this */ InvocationContext, /* retval */ InvocationReturnValue, Unit]): Self = StObject.set(x, "onLeave", value.asInstanceOf[js.Any])
+    
+    inline def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
+  }
 }
-

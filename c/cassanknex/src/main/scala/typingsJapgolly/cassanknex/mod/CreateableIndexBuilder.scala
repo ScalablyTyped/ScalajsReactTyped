@@ -1,20 +1,22 @@
 package typingsJapgolly.cassanknex.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateableIndexBuilder extends js.Object {
+trait CreateableIndexBuilder extends StObject {
+  
   def withOptions(opts: MappedDict[String]): this.type
 }
-
 object CreateableIndexBuilder {
-  @scala.inline
-  def apply(withOptions: MappedDict[String] => CallbackTo[CreateableIndexBuilder]): CreateableIndexBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withOptions")(js.Any.fromFunction1((t0: typingsJapgolly.cassanknex.mod.MappedDict[java.lang.String]) => withOptions(t0).runNow()))
+  
+  inline def apply(withOptions: MappedDict[String] => CreateableIndexBuilder): CreateableIndexBuilder = {
+    val __obj = js.Dynamic.literal(withOptions = js.Any.fromFunction1(withOptions))
     __obj.asInstanceOf[CreateableIndexBuilder]
   }
+  
+  extension [Self <: CreateableIndexBuilder](x: Self) {
+    
+    inline def setWithOptions(value: MappedDict[String] => CreateableIndexBuilder): Self = StObject.set(x, "withOptions", js.Any.fromFunction1(value))
+  }
 }
-

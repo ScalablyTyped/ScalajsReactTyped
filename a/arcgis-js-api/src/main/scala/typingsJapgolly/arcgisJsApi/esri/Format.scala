@@ -1,66 +1,77 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Format extends js.Object {
+@js.native
+trait Format
+  extends StObject
+     with Accessor {
+  
   /**
-    * Contains information that describes how this Format should be converted.  This property should only be set when creating a custom Format.
+    * Contains information that describes how this Format should be converted.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#conversionInfo)
+    */
+  var conversionInfo: ConversionInfo = js.native
+  
+  /**
+    * A array of [Coordinate Segments](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#CoordinateSegment).
     *
     * @default null
-    */
-  var conversionInfo: ConversionInfo
-  /**
-    * A array of [Coordinate Segments](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#CoordinateSegment).  Each segment represents a section of the Format's coordinate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#coordinateSegments)
+    */
+  var coordinateSegments: js.Array[CoordinateSegment] = js.native
+  
+  /**
+    * A string that serves as a pattern describing how this Format should be displayed.
     *
     * @default null
-    */
-  var coordinateSegments: js.Array[CoordinateSegment]
-  /**
-    * A string that serves as a pattern describing how this Format should be displayed.  The pattern should contain all of aliases specified by the Format's [coordinateSegments property](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#coordinateSegments).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#currentPattern)
+    */
+  var currentPattern: String = js.native
+  
+  /**
+    * The default pattern describing how this Format should be displayed.
     *
     * @default null
-    */
-  var currentPattern: String
-  /**
-    * The default pattern describing how this Format should be displayed.  See [currentPattern](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#currentPattern).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#defaultPattern)
+    */
+  var defaultPattern: String = js.native
+  
+  /**
+    * A string that is used to label this Format in the UI.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#label)
+    */
+  var label: String = js.native
+  
+  /**
+    * The name of the coordinate.
     *
     * @default null
-    */
-  var defaultPattern: String
-  /**
-    * The name of the coordinate.  A [CoordinateConversion](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html) widget should not contain multiple Formats with the same name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#name)
-    *
-    * @default null
     */
-  var name: String
+  var name: String = js.native
+  
   /**
-    * The [SpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html) for this format.  Coordinates generated for a format will be derived from points in this spatial reference.
+    * The [SpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html) for this format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#spatialReference)
     */
-  var spatialReference: SpatialReference
+  var spatialReference: SpatialReference = js.native
+  
   /**
     * The view model of the [CoordinateConversion](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html) widget that is utilizing this format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#viewModel)
     */
-  var viewModel: CoordinateConversionViewModel
+  var viewModel: CoordinateConversionViewModel = js.native
 }
-
-@JSGlobal("__esri.Format")
-@js.native
-object Format extends TopLevel[Format]
-

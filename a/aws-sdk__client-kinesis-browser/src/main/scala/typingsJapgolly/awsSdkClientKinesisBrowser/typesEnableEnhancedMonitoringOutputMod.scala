@@ -8,22 +8,24 @@ import typingsJapgolly.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStri
 import typingsJapgolly.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.OutgoingRecords
 import typingsJapgolly.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ReadProvisionedThroughputExceeded
 import typingsJapgolly.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.WriteProvisionedThroughputExceeded
-import typingsJapgolly.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientKinesisBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/types/EnableEnhancedMonitoringOutput", JSImport.Namespace)
-@js.native
-object typesEnableEnhancedMonitoringOutputMod extends js.Object {
-  @js.native
-  trait EnableEnhancedMonitoringOutput extends OutputTypesUnion {
+object typesEnableEnhancedMonitoringOutputMod {
+  
+  trait EnableEnhancedMonitoringOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>Represents the current state of the metrics that are in the enhanced state before the operation.</p>
       */
@@ -31,7 +33,8 @@ object typesEnableEnhancedMonitoringOutputMod extends js.Object {
         js.Array[
           IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
         ]
-      ] = js.native
+      ] = js.undefined
+    
     /**
       * <p>Represents the list of all the metrics that would be in the enhanced state after the operation.</p>
       */
@@ -39,12 +42,51 @@ object typesEnableEnhancedMonitoringOutputMod extends js.Object {
         js.Array[
           IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
         ]
-      ] = js.native
+      ] = js.undefined
+    
     /**
       * <p>The name of the Kinesis data stream.</p>
       */
-    var StreamName: js.UndefOr[String] = js.native
+    var StreamName: js.UndefOr[String] = js.undefined
   }
-  
+  object EnableEnhancedMonitoringOutput {
+    
+    inline def apply($metadata: ResponseMetadata): EnableEnhancedMonitoringOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EnableEnhancedMonitoringOutput]
+    }
+    
+    extension [Self <: EnableEnhancedMonitoringOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentShardLevelMetrics(
+        value: js.Array[
+              IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
+            ]
+      ): Self = StObject.set(x, "CurrentShardLevelMetrics", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentShardLevelMetricsUndefined: Self = StObject.set(x, "CurrentShardLevelMetrics", js.undefined)
+      
+      inline def setCurrentShardLevelMetricsVarargs(
+        value: (IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String)*
+      ): Self = StObject.set(x, "CurrentShardLevelMetrics", js.Array(value*))
+      
+      inline def setDesiredShardLevelMetrics(
+        value: js.Array[
+              IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String
+            ]
+      ): Self = StObject.set(x, "DesiredShardLevelMetrics", value.asInstanceOf[js.Any])
+      
+      inline def setDesiredShardLevelMetricsUndefined: Self = StObject.set(x, "DesiredShardLevelMetrics", js.undefined)
+      
+      inline def setDesiredShardLevelMetricsVarargs(
+        value: (IncomingBytes | IncomingRecords | OutgoingBytes | OutgoingRecords | WriteProvisionedThroughputExceeded | ReadProvisionedThroughputExceeded | IteratorAgeMilliseconds | ALL | String)*
+      ): Self = StObject.set(x, "DesiredShardLevelMetrics", js.Array(value*))
+      
+      inline def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+      
+      inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
+    }
+  }
 }
-

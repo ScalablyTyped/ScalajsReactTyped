@@ -1,13 +1,17 @@
-package typingsJapgolly.extjs.Ext
+package typingsJapgolly.extjs.Ext.dd
 
+import typingsJapgolly.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object dd {
-  type IDDM = typingsJapgolly.extjs.Ext.IBase
-  type IDragDropManager = typingsJapgolly.extjs.Ext.IBase
-  type IDragDropMgr = typingsJapgolly.extjs.Ext.IBase
-  type IRegistry = typingsJapgolly.extjs.Ext.IBase
-  type IScrollManager = typingsJapgolly.extjs.Ext.IBase
-}
+
+type IDDM = IBase
+
+type IDragDropManager = IBase
+
+type IDragDropMgr = IBase
+
+type IRegistry = IBase
+
+type IScrollManager = IBase

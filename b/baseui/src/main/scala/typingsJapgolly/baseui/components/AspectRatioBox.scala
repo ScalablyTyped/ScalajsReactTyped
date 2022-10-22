@@ -1,178 +1,582 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.ElementType
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.aspectRatioBoxMod.AspectRatioBoxProps
-import typingsJapgolly.baseui.blockMod.AlignContent
-import typingsJapgolly.baseui.blockMod.AlignItems
-import typingsJapgolly.baseui.blockMod.AlignSelf
-import typingsJapgolly.baseui.blockMod.BlockOverrides
-import typingsJapgolly.baseui.blockMod.BlockProps
-import typingsJapgolly.baseui.blockMod.Flex
-import typingsJapgolly.baseui.blockMod.FlexDirection
-import typingsJapgolly.baseui.blockMod.GridAutoFlow
-import typingsJapgolly.baseui.blockMod.JustifyContent
-import typingsJapgolly.baseui.blockMod.JustifyItems
-import typingsJapgolly.baseui.blockMod.JustifySelf
-import typingsJapgolly.baseui.blockMod.Position
-import typingsJapgolly.baseui.blockMod.Responsive
-import typingsJapgolly.baseui.blockMod.Scale
-import typingsJapgolly.styletronReact.mod.StyleProp
+import japgolly.scalajs.react.facade.React.ElementType
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.aspectRatioBoxTypesMod.AspectRatioBoxProps
+import typingsJapgolly.baseui.blockTypesMod.AlignContent
+import typingsJapgolly.baseui.blockTypesMod.AlignItems
+import typingsJapgolly.baseui.blockTypesMod.AlignSelf
+import typingsJapgolly.baseui.blockTypesMod.BlockOverrides
+import typingsJapgolly.baseui.blockTypesMod.Display
+import typingsJapgolly.baseui.blockTypesMod.Flex
+import typingsJapgolly.baseui.blockTypesMod.FlexDirection
+import typingsJapgolly.baseui.blockTypesMod.GridAutoFlow
+import typingsJapgolly.baseui.blockTypesMod.JustifyContent
+import typingsJapgolly.baseui.blockTypesMod.JustifyItems
+import typingsJapgolly.baseui.blockTypesMod.JustifySelf
+import typingsJapgolly.baseui.blockTypesMod.Position
+import typingsJapgolly.baseui.blockTypesMod.Responsive
+import typingsJapgolly.baseui.blockTypesMod.Scale
+import typingsJapgolly.baseui.blockTypesMod.StyledBlockProps
+import typingsJapgolly.baseui.blockTypesMod.WhiteSpace
+import typingsJapgolly.react.mod.ComponentProps
+import typingsJapgolly.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AspectRatioBox {
-  def apply(
-    $style: StyleProp[BlockProps] = null,
-    alignContent: Responsive[AlignContent] = null,
-    alignItems: Responsive[AlignItems] = null,
-    alignSelf: Responsive[AlignSelf] = null,
-    as: ElementType = null,
-    aspectRatio: Int | Double = null,
-    backgroundColor: Responsive[String] = null,
-    bottom: Responsive[Scale] = null,
-    color: Responsive[String] = null,
-    display: Responsive[typingsJapgolly.baseui.blockMod.Display] = null,
-    flex: Responsive[Flex] = null,
-    flexDirection: Responsive[FlexDirection] = null,
-    flexWrap: Responsive[Boolean] = null,
-    font: String | js.Array[String] = null,
-    grid: Responsive[String] = null,
-    gridArea: Responsive[String] = null,
-    gridAutoColumns: Responsive[String] = null,
-    gridAutoFlow: Responsive[GridAutoFlow] = null,
-    gridAutoRows: Responsive[String] = null,
-    gridColumn: Responsive[String] = null,
-    gridColumnEnd: Responsive[String] = null,
-    gridColumnGap: Responsive[Scale] = null,
-    gridColumnStart: Responsive[String] = null,
-    gridGap: Responsive[Scale] = null,
-    gridRow: Responsive[String] = null,
-    gridRowEnd: Responsive[String] = null,
-    gridRowGap: Responsive[Scale] = null,
-    gridRowStart: Responsive[String] = null,
-    gridTemplate: Responsive[String] = null,
-    gridTemplateAreas: Responsive[String] = null,
-    gridTemplateColumns: Responsive[String] = null,
-    gridTemplateRows: Responsive[String] = null,
-    height: Responsive[Scale] = null,
-    justifyContent: Responsive[JustifyContent] = null,
-    justifyItems: Responsive[JustifyItems] = null,
-    justifySelf: Responsive[JustifySelf] = null,
-    left: Responsive[Scale] = null,
-    margin: Responsive[Scale] = null,
-    marginBottom: Responsive[Scale] = null,
-    marginLeft: Responsive[Scale] = null,
-    marginRight: Responsive[Scale] = null,
-    marginTop: Responsive[Scale] = null,
-    maxHeight: Responsive[Scale] = null,
-    maxWidth: Responsive[Scale] = null,
-    minHeight: Responsive[Scale] = null,
-    minWidth: Responsive[Scale] = null,
-    overflow: Responsive[typingsJapgolly.baseui.blockMod.Overflow] = null,
-    overrides: BlockOverrides = null,
-    padding: Responsive[Scale] = null,
-    paddingBottom: Responsive[Scale] = null,
-    paddingLeft: Responsive[Scale] = null,
-    paddingRight: Responsive[Scale] = null,
-    paddingTop: Responsive[Scale] = null,
-    placeContent: Responsive[String] = null,
-    placeItems: Responsive[String] = null,
-    placeSelf: Responsive[String] = null,
-    position: Responsive[Position] = null,
-    right: Responsive[Scale] = null,
-    src: String = null,
-    top: Responsive[Scale] = null,
-    width: Responsive[Scale] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    AspectRatioBoxProps, 
-    typingsJapgolly.baseui.aspectRatioBoxMod.AspectRatioBox, 
-    Unit, 
-    AspectRatioBoxProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if ($style != null) __obj.updateDynamic("$style")($style.asInstanceOf[js.Any])
-    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
-    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (flexDirection != null) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
-    if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (gridAutoColumns != null) __obj.updateDynamic("gridAutoColumns")(gridAutoColumns.asInstanceOf[js.Any])
-    if (gridAutoFlow != null) __obj.updateDynamic("gridAutoFlow")(gridAutoFlow.asInstanceOf[js.Any])
-    if (gridAutoRows != null) __obj.updateDynamic("gridAutoRows")(gridAutoRows.asInstanceOf[js.Any])
-    if (gridColumn != null) __obj.updateDynamic("gridColumn")(gridColumn.asInstanceOf[js.Any])
-    if (gridColumnEnd != null) __obj.updateDynamic("gridColumnEnd")(gridColumnEnd.asInstanceOf[js.Any])
-    if (gridColumnGap != null) __obj.updateDynamic("gridColumnGap")(gridColumnGap.asInstanceOf[js.Any])
-    if (gridColumnStart != null) __obj.updateDynamic("gridColumnStart")(gridColumnStart.asInstanceOf[js.Any])
-    if (gridGap != null) __obj.updateDynamic("gridGap")(gridGap.asInstanceOf[js.Any])
-    if (gridRow != null) __obj.updateDynamic("gridRow")(gridRow.asInstanceOf[js.Any])
-    if (gridRowEnd != null) __obj.updateDynamic("gridRowEnd")(gridRowEnd.asInstanceOf[js.Any])
-    if (gridRowGap != null) __obj.updateDynamic("gridRowGap")(gridRowGap.asInstanceOf[js.Any])
-    if (gridRowStart != null) __obj.updateDynamic("gridRowStart")(gridRowStart.asInstanceOf[js.Any])
-    if (gridTemplate != null) __obj.updateDynamic("gridTemplate")(gridTemplate.asInstanceOf[js.Any])
-    if (gridTemplateAreas != null) __obj.updateDynamic("gridTemplateAreas")(gridTemplateAreas.asInstanceOf[js.Any])
-    if (gridTemplateColumns != null) __obj.updateDynamic("gridTemplateColumns")(gridTemplateColumns.asInstanceOf[js.Any])
-    if (gridTemplateRows != null) __obj.updateDynamic("gridTemplateRows")(gridTemplateRows.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
-    if (justifyItems != null) __obj.updateDynamic("justifyItems")(justifyItems.asInstanceOf[js.Any])
-    if (justifySelf != null) __obj.updateDynamic("justifySelf")(justifySelf.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (placeContent != null) __obj.updateDynamic("placeContent")(placeContent.asInstanceOf[js.Any])
-    if (placeItems != null) __obj.updateDynamic("placeItems")(placeItems.asInstanceOf[js.Any])
-    if (placeSelf != null) __obj.updateDynamic("placeSelf")(placeSelf.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.aspectRatioBoxMod.AspectRatioBoxProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.aspectRatioBoxMod.AspectRatioBox](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.aspectRatioBoxMod.AspectRatioBoxProps])(children: _*)
+  inline def apply[C /* <: ElementType */](): Builder[C] = {
+    val __props = js.Dynamic.literal()
+    new Builder[C](js.Array(this.component, __props.asInstanceOf[AspectRatioBoxProps[C] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<C> extends {  ref :infer R | undefined} ? {  ref :R | undefined} : {} */ js.Any) & (Omit[
+    StyledBlockProps & ComponentProps[C], 
+    /* keyof baseui.baseui/aspect-ratio-box/types.AspectRatioBoxProps<react.react.ElementType<any>> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 69, starting with typingsJapgolly.baseui.baseuiStrings.aspectRatio, typingsJapgolly.baseui.baseuiStrings.children, typingsJapgolly.baseui.baseuiStrings.as_ */ Any
+  ])]))
   }
+  
   @JSImport("baseui/aspect-ratio-box", "AspectRatioBox")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[C /* <: ElementType */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def $alignContent(value: Responsive[AlignContent]): this.type = set("$alignContent", value.asInstanceOf[js.Any])
+    
+    inline def $alignContentVarargs(value: AlignContent*): this.type = set("$alignContent", js.Array(value*))
+    
+    inline def $alignItems(value: Responsive[AlignItems]): this.type = set("$alignItems", value.asInstanceOf[js.Any])
+    
+    inline def $alignItemsVarargs(value: AlignItems*): this.type = set("$alignItems", js.Array(value*))
+    
+    inline def $alignSelf(value: Responsive[AlignSelf]): this.type = set("$alignSelf", value.asInstanceOf[js.Any])
+    
+    inline def $alignSelfVarargs(value: AlignSelf*): this.type = set("$alignSelf", js.Array(value*))
+    
+    inline def $backgroundAttachment(value: Responsive[String]): this.type = set("$backgroundAttachment", value.asInstanceOf[js.Any])
+    
+    inline def $backgroundAttachmentVarargs(value: String*): this.type = set("$backgroundAttachment", js.Array(value*))
+    
+    inline def $backgroundClip(value: Responsive[String]): this.type = set("$backgroundClip", value.asInstanceOf[js.Any])
+    
+    inline def $backgroundClipVarargs(value: String*): this.type = set("$backgroundClip", js.Array(value*))
+    
+    inline def $backgroundColor(value: Responsive[String]): this.type = set("$backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def $backgroundColorVarargs(value: String*): this.type = set("$backgroundColor", js.Array(value*))
+    
+    inline def $backgroundImage(value: Responsive[String]): this.type = set("$backgroundImage", value.asInstanceOf[js.Any])
+    
+    inline def $backgroundImageVarargs(value: String*): this.type = set("$backgroundImage", js.Array(value*))
+    
+    inline def $backgroundOrigin(value: Responsive[String]): this.type = set("$backgroundOrigin", value.asInstanceOf[js.Any])
+    
+    inline def $backgroundOriginVarargs(value: String*): this.type = set("$backgroundOrigin", js.Array(value*))
+    
+    inline def $backgroundPosition(value: Responsive[String]): this.type = set("$backgroundPosition", value.asInstanceOf[js.Any])
+    
+    inline def $backgroundPositionVarargs(value: String*): this.type = set("$backgroundPosition", js.Array(value*))
+    
+    inline def $backgroundRepeat(value: Responsive[String]): this.type = set("$backgroundRepeat", value.asInstanceOf[js.Any])
+    
+    inline def $backgroundRepeatVarargs(value: String*): this.type = set("$backgroundRepeat", js.Array(value*))
+    
+    inline def $backgroundSize(value: Responsive[String]): this.type = set("$backgroundSize", value.asInstanceOf[js.Any])
+    
+    inline def $backgroundSizeVarargs(value: String*): this.type = set("$backgroundSize", js.Array(value*))
+    
+    inline def $bottom(value: Responsive[Scale]): this.type = set("$bottom", value.asInstanceOf[js.Any])
+    
+    inline def $bottomVarargs(value: Scale*): this.type = set("$bottom", js.Array(value*))
+    
+    inline def $color(value: Responsive[String]): this.type = set("$color", value.asInstanceOf[js.Any])
+    
+    inline def $colorVarargs(value: String*): this.type = set("$color", js.Array(value*))
+    
+    inline def $display(value: Responsive[Display]): this.type = set("$display", value.asInstanceOf[js.Any])
+    
+    inline def $displayVarargs(value: Display*): this.type = set("$display", js.Array(value*))
+    
+    inline def $flex(value: Responsive[Flex]): this.type = set("$flex", value.asInstanceOf[js.Any])
+    
+    inline def $flexDirection(value: Responsive[FlexDirection]): this.type = set("$flexDirection", value.asInstanceOf[js.Any])
+    
+    inline def $flexDirectionVarargs(value: FlexDirection*): this.type = set("$flexDirection", js.Array(value*))
+    
+    inline def $flexVarargs(value: Flex*): this.type = set("$flex", js.Array(value*))
+    
+    inline def $flexWrap(value: Responsive[Boolean]): this.type = set("$flexWrap", value.asInstanceOf[js.Any])
+    
+    inline def $flexWrapVarargs(value: Boolean*): this.type = set("$flexWrap", js.Array(value*))
+    
+    inline def $font(value: Responsive[String]): this.type = set("$font", value.asInstanceOf[js.Any])
+    
+    inline def $fontVarargs(value: String*): this.type = set("$font", js.Array(value*))
+    
+    inline def $grid(value: Responsive[String]): this.type = set("$grid", value.asInstanceOf[js.Any])
+    
+    inline def $gridArea(value: Responsive[String]): this.type = set("$gridArea", value.asInstanceOf[js.Any])
+    
+    inline def $gridAreaVarargs(value: String*): this.type = set("$gridArea", js.Array(value*))
+    
+    inline def $gridAutoColumns(value: Responsive[String]): this.type = set("$gridAutoColumns", value.asInstanceOf[js.Any])
+    
+    inline def $gridAutoColumnsVarargs(value: String*): this.type = set("$gridAutoColumns", js.Array(value*))
+    
+    inline def $gridAutoFlow(value: Responsive[GridAutoFlow]): this.type = set("$gridAutoFlow", value.asInstanceOf[js.Any])
+    
+    inline def $gridAutoFlowVarargs(value: GridAutoFlow*): this.type = set("$gridAutoFlow", js.Array(value*))
+    
+    inline def $gridAutoRows(value: Responsive[String]): this.type = set("$gridAutoRows", value.asInstanceOf[js.Any])
+    
+    inline def $gridAutoRowsVarargs(value: String*): this.type = set("$gridAutoRows", js.Array(value*))
+    
+    inline def $gridColumn(value: Responsive[String]): this.type = set("$gridColumn", value.asInstanceOf[js.Any])
+    
+    inline def $gridColumnEnd(value: Responsive[String]): this.type = set("$gridColumnEnd", value.asInstanceOf[js.Any])
+    
+    inline def $gridColumnEndVarargs(value: String*): this.type = set("$gridColumnEnd", js.Array(value*))
+    
+    inline def $gridColumnGap(value: Responsive[Scale]): this.type = set("$gridColumnGap", value.asInstanceOf[js.Any])
+    
+    inline def $gridColumnGapVarargs(value: Scale*): this.type = set("$gridColumnGap", js.Array(value*))
+    
+    inline def $gridColumnStart(value: Responsive[String]): this.type = set("$gridColumnStart", value.asInstanceOf[js.Any])
+    
+    inline def $gridColumnStartVarargs(value: String*): this.type = set("$gridColumnStart", js.Array(value*))
+    
+    inline def $gridColumnVarargs(value: String*): this.type = set("$gridColumn", js.Array(value*))
+    
+    inline def $gridGap(value: Responsive[Scale]): this.type = set("$gridGap", value.asInstanceOf[js.Any])
+    
+    inline def $gridGapVarargs(value: Scale*): this.type = set("$gridGap", js.Array(value*))
+    
+    inline def $gridRow(value: Responsive[String]): this.type = set("$gridRow", value.asInstanceOf[js.Any])
+    
+    inline def $gridRowEnd(value: Responsive[String]): this.type = set("$gridRowEnd", value.asInstanceOf[js.Any])
+    
+    inline def $gridRowEndVarargs(value: String*): this.type = set("$gridRowEnd", js.Array(value*))
+    
+    inline def $gridRowGap(value: Responsive[Scale]): this.type = set("$gridRowGap", value.asInstanceOf[js.Any])
+    
+    inline def $gridRowGapVarargs(value: Scale*): this.type = set("$gridRowGap", js.Array(value*))
+    
+    inline def $gridRowStart(value: Responsive[String]): this.type = set("$gridRowStart", value.asInstanceOf[js.Any])
+    
+    inline def $gridRowStartVarargs(value: String*): this.type = set("$gridRowStart", js.Array(value*))
+    
+    inline def $gridRowVarargs(value: String*): this.type = set("$gridRow", js.Array(value*))
+    
+    inline def $gridTemplate(value: Responsive[String]): this.type = set("$gridTemplate", value.asInstanceOf[js.Any])
+    
+    inline def $gridTemplateAreas(value: Responsive[String]): this.type = set("$gridTemplateAreas", value.asInstanceOf[js.Any])
+    
+    inline def $gridTemplateAreasVarargs(value: String*): this.type = set("$gridTemplateAreas", js.Array(value*))
+    
+    inline def $gridTemplateColumns(value: Responsive[String]): this.type = set("$gridTemplateColumns", value.asInstanceOf[js.Any])
+    
+    inline def $gridTemplateColumnsVarargs(value: String*): this.type = set("$gridTemplateColumns", js.Array(value*))
+    
+    inline def $gridTemplateRows(value: Responsive[String]): this.type = set("$gridTemplateRows", value.asInstanceOf[js.Any])
+    
+    inline def $gridTemplateRowsVarargs(value: String*): this.type = set("$gridTemplateRows", js.Array(value*))
+    
+    inline def $gridTemplateVarargs(value: String*): this.type = set("$gridTemplate", js.Array(value*))
+    
+    inline def $gridVarargs(value: String*): this.type = set("$grid", js.Array(value*))
+    
+    inline def $height(value: Responsive[Scale]): this.type = set("$height", value.asInstanceOf[js.Any])
+    
+    inline def $heightVarargs(value: Scale*): this.type = set("$height", js.Array(value*))
+    
+    inline def $justifyContent(value: Responsive[JustifyContent]): this.type = set("$justifyContent", value.asInstanceOf[js.Any])
+    
+    inline def $justifyContentVarargs(value: JustifyContent*): this.type = set("$justifyContent", js.Array(value*))
+    
+    inline def $justifyItems(value: Responsive[JustifyItems]): this.type = set("$justifyItems", value.asInstanceOf[js.Any])
+    
+    inline def $justifyItemsVarargs(value: JustifyItems*): this.type = set("$justifyItems", js.Array(value*))
+    
+    inline def $justifySelf(value: Responsive[JustifySelf]): this.type = set("$justifySelf", value.asInstanceOf[js.Any])
+    
+    inline def $justifySelfVarargs(value: JustifySelf*): this.type = set("$justifySelf", js.Array(value*))
+    
+    inline def $left(value: Responsive[Scale]): this.type = set("$left", value.asInstanceOf[js.Any])
+    
+    inline def $leftVarargs(value: Scale*): this.type = set("$left", js.Array(value*))
+    
+    inline def $margin(value: Responsive[Scale]): this.type = set("$margin", value.asInstanceOf[js.Any])
+    
+    inline def $marginBottom(value: Responsive[Scale]): this.type = set("$marginBottom", value.asInstanceOf[js.Any])
+    
+    inline def $marginBottomVarargs(value: Scale*): this.type = set("$marginBottom", js.Array(value*))
+    
+    inline def $marginLeft(value: Responsive[Scale]): this.type = set("$marginLeft", value.asInstanceOf[js.Any])
+    
+    inline def $marginLeftVarargs(value: Scale*): this.type = set("$marginLeft", js.Array(value*))
+    
+    inline def $marginRight(value: Responsive[Scale]): this.type = set("$marginRight", value.asInstanceOf[js.Any])
+    
+    inline def $marginRightVarargs(value: Scale*): this.type = set("$marginRight", js.Array(value*))
+    
+    inline def $marginTop(value: Responsive[Scale]): this.type = set("$marginTop", value.asInstanceOf[js.Any])
+    
+    inline def $marginTopVarargs(value: Scale*): this.type = set("$marginTop", js.Array(value*))
+    
+    inline def $marginVarargs(value: Scale*): this.type = set("$margin", js.Array(value*))
+    
+    inline def $maxHeight(value: Responsive[Scale]): this.type = set("$maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def $maxHeightVarargs(value: Scale*): this.type = set("$maxHeight", js.Array(value*))
+    
+    inline def $maxWidth(value: Responsive[Scale]): this.type = set("$maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def $maxWidthVarargs(value: Scale*): this.type = set("$maxWidth", js.Array(value*))
+    
+    inline def $minHeight(value: Responsive[Scale]): this.type = set("$minHeight", value.asInstanceOf[js.Any])
+    
+    inline def $minHeightVarargs(value: Scale*): this.type = set("$minHeight", js.Array(value*))
+    
+    inline def $minWidth(value: Responsive[Scale]): this.type = set("$minWidth", value.asInstanceOf[js.Any])
+    
+    inline def $minWidthVarargs(value: Scale*): this.type = set("$minWidth", js.Array(value*))
+    
+    inline def $overflow(value: Responsive[typingsJapgolly.baseui.blockTypesMod.Overflow]): this.type = set("$overflow", value.asInstanceOf[js.Any])
+    
+    inline def $overflowVarargs(value: typingsJapgolly.baseui.blockTypesMod.Overflow*): this.type = set("$overflow", js.Array(value*))
+    
+    inline def $padding(value: Responsive[Scale]): this.type = set("$padding", value.asInstanceOf[js.Any])
+    
+    inline def $paddingBottom(value: Responsive[Scale]): this.type = set("$paddingBottom", value.asInstanceOf[js.Any])
+    
+    inline def $paddingBottomVarargs(value: Scale*): this.type = set("$paddingBottom", js.Array(value*))
+    
+    inline def $paddingLeft(value: Responsive[Scale]): this.type = set("$paddingLeft", value.asInstanceOf[js.Any])
+    
+    inline def $paddingLeftVarargs(value: Scale*): this.type = set("$paddingLeft", js.Array(value*))
+    
+    inline def $paddingRight(value: Responsive[Scale]): this.type = set("$paddingRight", value.asInstanceOf[js.Any])
+    
+    inline def $paddingRightVarargs(value: Scale*): this.type = set("$paddingRight", js.Array(value*))
+    
+    inline def $paddingTop(value: Responsive[Scale]): this.type = set("$paddingTop", value.asInstanceOf[js.Any])
+    
+    inline def $paddingTopVarargs(value: Scale*): this.type = set("$paddingTop", js.Array(value*))
+    
+    inline def $paddingVarargs(value: Scale*): this.type = set("$padding", js.Array(value*))
+    
+    inline def $placeContent(value: Responsive[String]): this.type = set("$placeContent", value.asInstanceOf[js.Any])
+    
+    inline def $placeContentVarargs(value: String*): this.type = set("$placeContent", js.Array(value*))
+    
+    inline def $placeItems(value: Responsive[String]): this.type = set("$placeItems", value.asInstanceOf[js.Any])
+    
+    inline def $placeItemsVarargs(value: String*): this.type = set("$placeItems", js.Array(value*))
+    
+    inline def $placeSelf(value: Responsive[String]): this.type = set("$placeSelf", value.asInstanceOf[js.Any])
+    
+    inline def $placeSelfVarargs(value: String*): this.type = set("$placeSelf", js.Array(value*))
+    
+    inline def $position(value: Responsive[Position]): this.type = set("$position", value.asInstanceOf[js.Any])
+    
+    inline def $positionVarargs(value: Position*): this.type = set("$position", js.Array(value*))
+    
+    inline def $right(value: Responsive[Scale]): this.type = set("$right", value.asInstanceOf[js.Any])
+    
+    inline def $rightVarargs(value: Scale*): this.type = set("$right", js.Array(value*))
+    
+    inline def $textOverflow(value: Responsive[String]): this.type = set("$textOverflow", value.asInstanceOf[js.Any])
+    
+    inline def $textOverflowVarargs(value: String*): this.type = set("$textOverflow", js.Array(value*))
+    
+    inline def $top(value: Responsive[Scale]): this.type = set("$top", value.asInstanceOf[js.Any])
+    
+    inline def $topVarargs(value: Scale*): this.type = set("$top", js.Array(value*))
+    
+    inline def $whiteSpace(value: Responsive[WhiteSpace]): this.type = set("$whiteSpace", value.asInstanceOf[js.Any])
+    
+    inline def $whiteSpaceVarargs(value: WhiteSpace*): this.type = set("$whiteSpace", js.Array(value*))
+    
+    inline def $width(value: Responsive[Scale]): this.type = set("$width", value.asInstanceOf[js.Any])
+    
+    inline def $widthVarargs(value: Scale*): this.type = set("$width", js.Array(value*))
+    
+    inline def alignContent(value: Responsive[AlignContent]): this.type = set("alignContent", value.asInstanceOf[js.Any])
+    
+    inline def alignContentVarargs(value: AlignContent*): this.type = set("alignContent", js.Array(value*))
+    
+    inline def alignItems(value: Responsive[AlignItems]): this.type = set("alignItems", value.asInstanceOf[js.Any])
+    
+    inline def alignItemsVarargs(value: AlignItems*): this.type = set("alignItems", js.Array(value*))
+    
+    inline def alignSelf(value: Responsive[AlignSelf]): this.type = set("alignSelf", value.asInstanceOf[js.Any])
+    
+    inline def alignSelfVarargs(value: AlignSelf*): this.type = set("alignSelf", js.Array(value*))
+    
+    inline def as(value: C): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def aspectRatio(value: Double): this.type = set("aspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def backgroundAttachment(value: Responsive[String]): this.type = set("backgroundAttachment", value.asInstanceOf[js.Any])
+    
+    inline def backgroundAttachmentVarargs(value: String*): this.type = set("backgroundAttachment", js.Array(value*))
+    
+    inline def backgroundClip(value: Responsive[String]): this.type = set("backgroundClip", value.asInstanceOf[js.Any])
+    
+    inline def backgroundClipVarargs(value: String*): this.type = set("backgroundClip", js.Array(value*))
+    
+    inline def backgroundColor(value: Responsive[String]): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def backgroundColorVarargs(value: String*): this.type = set("backgroundColor", js.Array(value*))
+    
+    inline def backgroundImage(value: Responsive[String]): this.type = set("backgroundImage", value.asInstanceOf[js.Any])
+    
+    inline def backgroundImageVarargs(value: String*): this.type = set("backgroundImage", js.Array(value*))
+    
+    inline def backgroundOrigin(value: Responsive[String]): this.type = set("backgroundOrigin", value.asInstanceOf[js.Any])
+    
+    inline def backgroundOriginVarargs(value: String*): this.type = set("backgroundOrigin", js.Array(value*))
+    
+    inline def backgroundPosition(value: Responsive[String]): this.type = set("backgroundPosition", value.asInstanceOf[js.Any])
+    
+    inline def backgroundPositionVarargs(value: String*): this.type = set("backgroundPosition", js.Array(value*))
+    
+    inline def backgroundRepeat(value: Responsive[String]): this.type = set("backgroundRepeat", value.asInstanceOf[js.Any])
+    
+    inline def backgroundRepeatVarargs(value: String*): this.type = set("backgroundRepeat", js.Array(value*))
+    
+    inline def backgroundSize(value: Responsive[String]): this.type = set("backgroundSize", value.asInstanceOf[js.Any])
+    
+    inline def backgroundSizeVarargs(value: String*): this.type = set("backgroundSize", js.Array(value*))
+    
+    inline def bottom(value: Responsive[Scale]): this.type = set("bottom", value.asInstanceOf[js.Any])
+    
+    inline def bottomVarargs(value: Scale*): this.type = set("bottom", js.Array(value*))
+    
+    inline def color(value: Responsive[String]): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def colorVarargs(value: String*): this.type = set("color", js.Array(value*))
+    
+    inline def display(value: Responsive[Display]): this.type = set("display", value.asInstanceOf[js.Any])
+    
+    inline def displayVarargs(value: Display*): this.type = set("display", js.Array(value*))
+    
+    inline def flex(value: Responsive[Flex]): this.type = set("flex", value.asInstanceOf[js.Any])
+    
+    inline def flexDirection(value: Responsive[FlexDirection]): this.type = set("flexDirection", value.asInstanceOf[js.Any])
+    
+    inline def flexDirectionVarargs(value: FlexDirection*): this.type = set("flexDirection", js.Array(value*))
+    
+    inline def flexVarargs(value: Flex*): this.type = set("flex", js.Array(value*))
+    
+    inline def flexWrap(value: Responsive[Boolean]): this.type = set("flexWrap", value.asInstanceOf[js.Any])
+    
+    inline def flexWrapVarargs(value: Boolean*): this.type = set("flexWrap", js.Array(value*))
+    
+    inline def font(value: String | js.Array[String]): this.type = set("font", value.asInstanceOf[js.Any])
+    
+    inline def fontVarargs(value: String*): this.type = set("font", js.Array(value*))
+    
+    inline def grid(value: Responsive[String]): this.type = set("grid", value.asInstanceOf[js.Any])
+    
+    inline def gridArea(value: Responsive[String]): this.type = set("gridArea", value.asInstanceOf[js.Any])
+    
+    inline def gridAreaVarargs(value: String*): this.type = set("gridArea", js.Array(value*))
+    
+    inline def gridAutoColumns(value: Responsive[String]): this.type = set("gridAutoColumns", value.asInstanceOf[js.Any])
+    
+    inline def gridAutoColumnsVarargs(value: String*): this.type = set("gridAutoColumns", js.Array(value*))
+    
+    inline def gridAutoFlow(value: Responsive[GridAutoFlow]): this.type = set("gridAutoFlow", value.asInstanceOf[js.Any])
+    
+    inline def gridAutoFlowVarargs(value: GridAutoFlow*): this.type = set("gridAutoFlow", js.Array(value*))
+    
+    inline def gridAutoRows(value: Responsive[String]): this.type = set("gridAutoRows", value.asInstanceOf[js.Any])
+    
+    inline def gridAutoRowsVarargs(value: String*): this.type = set("gridAutoRows", js.Array(value*))
+    
+    inline def gridColumn(value: Responsive[String]): this.type = set("gridColumn", value.asInstanceOf[js.Any])
+    
+    inline def gridColumnEnd(value: Responsive[String]): this.type = set("gridColumnEnd", value.asInstanceOf[js.Any])
+    
+    inline def gridColumnEndVarargs(value: String*): this.type = set("gridColumnEnd", js.Array(value*))
+    
+    inline def gridColumnGap(value: Responsive[Scale]): this.type = set("gridColumnGap", value.asInstanceOf[js.Any])
+    
+    inline def gridColumnGapVarargs(value: Scale*): this.type = set("gridColumnGap", js.Array(value*))
+    
+    inline def gridColumnStart(value: Responsive[String]): this.type = set("gridColumnStart", value.asInstanceOf[js.Any])
+    
+    inline def gridColumnStartVarargs(value: String*): this.type = set("gridColumnStart", js.Array(value*))
+    
+    inline def gridColumnVarargs(value: String*): this.type = set("gridColumn", js.Array(value*))
+    
+    inline def gridGap(value: Responsive[Scale]): this.type = set("gridGap", value.asInstanceOf[js.Any])
+    
+    inline def gridGapVarargs(value: Scale*): this.type = set("gridGap", js.Array(value*))
+    
+    inline def gridRow(value: Responsive[String]): this.type = set("gridRow", value.asInstanceOf[js.Any])
+    
+    inline def gridRowEnd(value: Responsive[String]): this.type = set("gridRowEnd", value.asInstanceOf[js.Any])
+    
+    inline def gridRowEndVarargs(value: String*): this.type = set("gridRowEnd", js.Array(value*))
+    
+    inline def gridRowGap(value: Responsive[Scale]): this.type = set("gridRowGap", value.asInstanceOf[js.Any])
+    
+    inline def gridRowGapVarargs(value: Scale*): this.type = set("gridRowGap", js.Array(value*))
+    
+    inline def gridRowStart(value: Responsive[String]): this.type = set("gridRowStart", value.asInstanceOf[js.Any])
+    
+    inline def gridRowStartVarargs(value: String*): this.type = set("gridRowStart", js.Array(value*))
+    
+    inline def gridRowVarargs(value: String*): this.type = set("gridRow", js.Array(value*))
+    
+    inline def gridTemplate(value: Responsive[String]): this.type = set("gridTemplate", value.asInstanceOf[js.Any])
+    
+    inline def gridTemplateAreas(value: Responsive[String]): this.type = set("gridTemplateAreas", value.asInstanceOf[js.Any])
+    
+    inline def gridTemplateAreasVarargs(value: String*): this.type = set("gridTemplateAreas", js.Array(value*))
+    
+    inline def gridTemplateColumns(value: Responsive[String]): this.type = set("gridTemplateColumns", value.asInstanceOf[js.Any])
+    
+    inline def gridTemplateColumnsVarargs(value: String*): this.type = set("gridTemplateColumns", js.Array(value*))
+    
+    inline def gridTemplateRows(value: Responsive[String]): this.type = set("gridTemplateRows", value.asInstanceOf[js.Any])
+    
+    inline def gridTemplateRowsVarargs(value: String*): this.type = set("gridTemplateRows", js.Array(value*))
+    
+    inline def gridTemplateVarargs(value: String*): this.type = set("gridTemplate", js.Array(value*))
+    
+    inline def gridVarargs(value: String*): this.type = set("grid", js.Array(value*))
+    
+    inline def height(value: Responsive[Scale]): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def heightVarargs(value: Scale*): this.type = set("height", js.Array(value*))
+    
+    inline def justifyContent(value: Responsive[JustifyContent]): this.type = set("justifyContent", value.asInstanceOf[js.Any])
+    
+    inline def justifyContentVarargs(value: JustifyContent*): this.type = set("justifyContent", js.Array(value*))
+    
+    inline def justifyItems(value: Responsive[JustifyItems]): this.type = set("justifyItems", value.asInstanceOf[js.Any])
+    
+    inline def justifyItemsVarargs(value: JustifyItems*): this.type = set("justifyItems", js.Array(value*))
+    
+    inline def justifySelf(value: Responsive[JustifySelf]): this.type = set("justifySelf", value.asInstanceOf[js.Any])
+    
+    inline def justifySelfVarargs(value: JustifySelf*): this.type = set("justifySelf", js.Array(value*))
+    
+    inline def left(value: Responsive[Scale]): this.type = set("left", value.asInstanceOf[js.Any])
+    
+    inline def leftVarargs(value: Scale*): this.type = set("left", js.Array(value*))
+    
+    inline def margin(value: Responsive[Scale]): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def marginBottom(value: Responsive[Scale]): this.type = set("marginBottom", value.asInstanceOf[js.Any])
+    
+    inline def marginBottomVarargs(value: Scale*): this.type = set("marginBottom", js.Array(value*))
+    
+    inline def marginLeft(value: Responsive[Scale]): this.type = set("marginLeft", value.asInstanceOf[js.Any])
+    
+    inline def marginLeftVarargs(value: Scale*): this.type = set("marginLeft", js.Array(value*))
+    
+    inline def marginRight(value: Responsive[Scale]): this.type = set("marginRight", value.asInstanceOf[js.Any])
+    
+    inline def marginRightVarargs(value: Scale*): this.type = set("marginRight", js.Array(value*))
+    
+    inline def marginTop(value: Responsive[Scale]): this.type = set("marginTop", value.asInstanceOf[js.Any])
+    
+    inline def marginTopVarargs(value: Scale*): this.type = set("marginTop", js.Array(value*))
+    
+    inline def marginVarargs(value: Scale*): this.type = set("margin", js.Array(value*))
+    
+    inline def maxHeight(value: Responsive[Scale]): this.type = set("maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def maxHeightVarargs(value: Scale*): this.type = set("maxHeight", js.Array(value*))
+    
+    inline def maxWidth(value: Responsive[Scale]): this.type = set("maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def maxWidthVarargs(value: Scale*): this.type = set("maxWidth", js.Array(value*))
+    
+    inline def minHeight(value: Responsive[Scale]): this.type = set("minHeight", value.asInstanceOf[js.Any])
+    
+    inline def minHeightVarargs(value: Scale*): this.type = set("minHeight", js.Array(value*))
+    
+    inline def minWidth(value: Responsive[Scale]): this.type = set("minWidth", value.asInstanceOf[js.Any])
+    
+    inline def minWidthVarargs(value: Scale*): this.type = set("minWidth", js.Array(value*))
+    
+    inline def overflow(value: Responsive[typingsJapgolly.baseui.blockTypesMod.Overflow]): this.type = set("overflow", value.asInstanceOf[js.Any])
+    
+    inline def overflowVarargs(value: typingsJapgolly.baseui.blockTypesMod.Overflow*): this.type = set("overflow", js.Array(value*))
+    
+    inline def overrides(value: BlockOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def padding(value: Responsive[Scale]): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def paddingBottom(value: Responsive[Scale]): this.type = set("paddingBottom", value.asInstanceOf[js.Any])
+    
+    inline def paddingBottomVarargs(value: Scale*): this.type = set("paddingBottom", js.Array(value*))
+    
+    inline def paddingLeft(value: Responsive[Scale]): this.type = set("paddingLeft", value.asInstanceOf[js.Any])
+    
+    inline def paddingLeftVarargs(value: Scale*): this.type = set("paddingLeft", js.Array(value*))
+    
+    inline def paddingRight(value: Responsive[Scale]): this.type = set("paddingRight", value.asInstanceOf[js.Any])
+    
+    inline def paddingRightVarargs(value: Scale*): this.type = set("paddingRight", js.Array(value*))
+    
+    inline def paddingTop(value: Responsive[Scale]): this.type = set("paddingTop", value.asInstanceOf[js.Any])
+    
+    inline def paddingTopVarargs(value: Scale*): this.type = set("paddingTop", js.Array(value*))
+    
+    inline def paddingVarargs(value: Scale*): this.type = set("padding", js.Array(value*))
+    
+    inline def placeContent(value: Responsive[String]): this.type = set("placeContent", value.asInstanceOf[js.Any])
+    
+    inline def placeContentVarargs(value: String*): this.type = set("placeContent", js.Array(value*))
+    
+    inline def placeItems(value: Responsive[String]): this.type = set("placeItems", value.asInstanceOf[js.Any])
+    
+    inline def placeItemsVarargs(value: String*): this.type = set("placeItems", js.Array(value*))
+    
+    inline def placeSelf(value: Responsive[String]): this.type = set("placeSelf", value.asInstanceOf[js.Any])
+    
+    inline def placeSelfVarargs(value: String*): this.type = set("placeSelf", js.Array(value*))
+    
+    inline def position(value: Responsive[Position]): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def positionVarargs(value: Position*): this.type = set("position", js.Array(value*))
+    
+    inline def right(value: Responsive[Scale]): this.type = set("right", value.asInstanceOf[js.Any])
+    
+    inline def rightVarargs(value: Scale*): this.type = set("right", js.Array(value*))
+    
+    inline def textOverflow(value: Responsive[String]): this.type = set("textOverflow", value.asInstanceOf[js.Any])
+    
+    inline def textOverflowVarargs(value: String*): this.type = set("textOverflow", js.Array(value*))
+    
+    inline def top(value: Responsive[Scale]): this.type = set("top", value.asInstanceOf[js.Any])
+    
+    inline def topVarargs(value: Scale*): this.type = set("top", js.Array(value*))
+    
+    inline def whiteSpace(value: Responsive[WhiteSpace]): this.type = set("whiteSpace", value.asInstanceOf[js.Any])
+    
+    inline def whiteSpaceVarargs(value: WhiteSpace*): this.type = set("whiteSpace", js.Array(value*))
+    
+    inline def width(value: Responsive[Scale]): this.type = set("width", value.asInstanceOf[js.Any])
+    
+    inline def widthVarargs(value: Scale*): this.type = set("width", js.Array(value*))
+  }
+  
+  implicit def make[C /* <: ElementType */](companion: AspectRatioBox.type): Builder[C] = new Builder[C](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps[C /* <: ElementType */](
+    p: AspectRatioBoxProps[C] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<C> extends {  ref :infer R | undefined} ? {  ref :R | undefined} : {} */ js.Any) & (Omit[
+      StyledBlockProps & ComponentProps[C], 
+      /* keyof baseui.baseui/aspect-ratio-box/types.AspectRatioBoxProps<react.react.ElementType<any>> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 69, starting with typingsJapgolly.baseui.baseuiStrings.aspectRatio, typingsJapgolly.baseui.baseuiStrings.children, typingsJapgolly.baseui.baseuiStrings.as_ */ Any
+    ])
+  ): Builder[C] = new Builder[C](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,24 +1,34 @@
 package typingsJapgolly.three.mod
 
-import org.scalajs.dom.raw.HTMLVideoElement
+import org.scalajs.dom.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "VideoTexture")
 @js.native
-class VideoTexture protected ()
-  extends typingsJapgolly.three.videoTextureMod.VideoTexture {
+open class VideoTexture protected ()
+  extends typingsJapgolly.three.srcThreeMod.VideoTexture {
+  /**
+    * @param video
+    * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+    * @param [wrapS=THREE.ClampToEdgeWrapping]
+    * @param [wrapT=THREE.ClampToEdgeWrapping]
+    * @param [magFilter=THREE.LinearFilter]
+    * @param [minFilter=THREE.LinearFilter]
+    * @param [format=THREE.RGBAFormat]
+    * @param [type=THREE.UnsignedByteType]
+    * @param [anisotropy=1]
+    */
   def this(
     video: HTMLVideoElement,
-    mapping: js.UndefOr[typingsJapgolly.three.constantsMod.Mapping],
-    wrapS: js.UndefOr[typingsJapgolly.three.constantsMod.Wrapping],
-    wrapT: js.UndefOr[typingsJapgolly.three.constantsMod.Wrapping],
-    magFilter: js.UndefOr[typingsJapgolly.three.constantsMod.TextureFilter],
-    minFilter: js.UndefOr[typingsJapgolly.three.constantsMod.TextureFilter],
-    format: js.UndefOr[typingsJapgolly.three.constantsMod.PixelFormat],
-    `type`: js.UndefOr[typingsJapgolly.three.constantsMod.TextureDataType],
+    mapping: js.UndefOr[typingsJapgolly.three.srcConstantsMod.Mapping],
+    wrapS: js.UndefOr[typingsJapgolly.three.srcConstantsMod.Wrapping],
+    wrapT: js.UndefOr[typingsJapgolly.three.srcConstantsMod.Wrapping],
+    magFilter: js.UndefOr[typingsJapgolly.three.srcConstantsMod.TextureFilter],
+    minFilter: js.UndefOr[typingsJapgolly.three.srcConstantsMod.TextureFilter],
+    format: js.UndefOr[typingsJapgolly.three.srcConstantsMod.PixelFormat],
+    `type`: js.UndefOr[typingsJapgolly.three.srcConstantsMod.TextureDataType],
     anisotropy: js.UndefOr[Double]
   ) = this()
 }
-

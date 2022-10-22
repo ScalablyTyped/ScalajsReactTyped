@@ -2,28 +2,37 @@ package typingsJapgolly.openlayers.mod.olx.source
 
 import typingsJapgolly.openlayers.mod.ProjectionLike
 import typingsJapgolly.openlayers.mod.tilegrid.TileGrid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TileDebugOptions extends js.Object {
+trait TileDebugOptions extends StObject {
+  
   var projection: ProjectionLike
+  
   var tileGrid: js.UndefOr[TileGrid] = js.undefined
+  
   var wrapX: js.UndefOr[Boolean] = js.undefined
 }
-
 object TileDebugOptions {
-  @scala.inline
-  def apply(
-    projection: ProjectionLike = null,
-    tileGrid: TileGrid = null,
-    wrapX: js.UndefOr[Boolean] = js.undefined
-  ): TileDebugOptions = {
+  
+  inline def apply(): TileDebugOptions = {
     val __obj = js.Dynamic.literal()
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileDebugOptions]
   }
+  
+  extension [Self <: TileDebugOptions](x: Self) {
+    
+    inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    
+    inline def setTileGrid(value: TileGrid): Self = StObject.set(x, "tileGrid", value.asInstanceOf[js.Any])
+    
+    inline def setTileGridUndefined: Self = StObject.set(x, "tileGrid", js.undefined)
+    
+    inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+    
+    inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+  }
 }
-

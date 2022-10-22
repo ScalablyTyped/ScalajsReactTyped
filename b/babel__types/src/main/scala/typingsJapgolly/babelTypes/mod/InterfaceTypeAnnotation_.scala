@@ -1,44 +1,43 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.InterfaceTypeAnnotation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait InterfaceTypeAnnotation_
-  extends Flow
+  extends StObject
      with BaseNode
+     with Flow
      with FlowType {
+  
   var body: ObjectTypeAnnotation_
+  
   var `extends`: js.Array[InterfaceExtends_] | Null
+  
   @JSName("type")
   var type_InterfaceTypeAnnotation_ : InterfaceTypeAnnotation
 }
-
 object InterfaceTypeAnnotation_ {
-  @scala.inline
-  def apply(
-    body: ObjectTypeAnnotation_,
-    `type`: InterfaceTypeAnnotation,
-    end: Int | Double = null,
-    `extends`: js.Array[InterfaceExtends_] = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): InterfaceTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(body: ObjectTypeAnnotation_): InterfaceTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("InterfaceTypeAnnotation")
+    __obj.updateDynamic("extends")(null)
     __obj.asInstanceOf[InterfaceTypeAnnotation_]
   }
+  
+  extension [Self <: InterfaceTypeAnnotation_](x: Self) {
+    
+    inline def setBody(value: ObjectTypeAnnotation_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setExtends(value: js.Array[InterfaceExtends_]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+    
+    inline def setExtendsNull: Self = StObject.set(x, "extends", null)
+    
+    inline def setExtendsVarargs(value: InterfaceExtends_ *): Self = StObject.set(x, "extends", js.Array(value*))
+    
+    inline def setType(value: InterfaceTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

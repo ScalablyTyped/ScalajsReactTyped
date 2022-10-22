@@ -1,21 +1,31 @@
 package typingsJapgolly.oracleOraclejet.ojdataproviderMod
 
 import typingsJapgolly.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FetchByKeysParameters[K] extends js.Object {
+trait FetchByKeysParameters[K] extends StObject {
+  
   var attributes: js.UndefOr[js.Array[String | FetchAttribute]] = js.undefined
+  
   var keys: Set[K]
 }
-
 object FetchByKeysParameters {
-  @scala.inline
-  def apply[K](keys: Set[K], attributes: js.Array[String | FetchAttribute] = null): FetchByKeysParameters[K] = {
+  
+  inline def apply[K](keys: Set[K]): FetchByKeysParameters[K] = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchByKeysParameters[K]]
   }
+  
+  extension [Self <: FetchByKeysParameters[?], K](x: Self & FetchByKeysParameters[K]) {
+    
+    inline def setAttributes(value: js.Array[String | FetchAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setAttributesVarargs(value: (String | FetchAttribute)*): Self = StObject.set(x, "attributes", js.Array(value*))
+    
+    inline def setKeys(value: Set[K]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+  }
 }
-

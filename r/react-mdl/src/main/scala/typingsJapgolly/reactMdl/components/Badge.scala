@@ -1,42 +1,39 @@
 package typingsJapgolly.reactMdl.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactMdl.mod.BadgeProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Badge {
-  def apply(
-    text: String | Double,
-    className: String = null,
-    noBackground: js.UndefOr[Boolean] = js.undefined,
-    overlap: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[BadgeProps, typingsJapgolly.reactMdl.mod.Badge, Unit, BadgeProps] = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(noBackground)) __obj.updateDynamic("noBackground")(noBackground.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlap)) __obj.updateDynamic("overlap")(overlap.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactMdl.mod.BadgeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactMdl.mod.Badge](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactMdl.mod.BadgeProps])(children: _*)
+  inline def apply(text: String | Double): Builder = {
+    val __props = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[BadgeProps]))
   }
+  
   @JSImport("react-mdl", "Badge")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactMdl.mod.Badge] {
+    
+    inline def children(value: String | Element): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def noBackground(value: Boolean): this.type = set("noBackground", value.asInstanceOf[js.Any])
+    
+    inline def overlap(value: Boolean): this.type = set("overlap", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: BadgeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,19 +1,16 @@
 package typingsJapgolly.knuddelsUserappsApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object knuddelsUserappsApiStrings {
-  @js.native
-  sealed trait GET extends js.Object
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait GET extends StObject
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
+  @js.native
+  sealed trait POST extends StObject
+  inline def POST: POST = "POST".asInstanceOf[POST]
 }
-

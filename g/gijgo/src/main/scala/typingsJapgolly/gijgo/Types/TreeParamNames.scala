@@ -1,19 +1,24 @@
 package typingsJapgolly.gijgo.Types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeParamNames extends js.Object {
+trait TreeParamNames extends StObject {
+  
   var parentId: js.UndefOr[String] = js.undefined
 }
-
 object TreeParamNames {
-  @scala.inline
-  def apply(parentId: String = null): TreeParamNames = {
+  
+  inline def apply(): TreeParamNames = {
     val __obj = js.Dynamic.literal()
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeParamNames]
   }
+  
+  extension [Self <: TreeParamNames](x: Self) {
+    
+    inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+  }
 }
-

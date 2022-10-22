@@ -10,10 +10,10 @@ Caseless object set/get/has, very useful when working with HTTP headers.
 | ------------------ | :-------------: |
 | Full name          | caseless |
 | Keywords           | headers, http, caseless |
-| # releases         | 0 |
-| # dependents       | 126 |
-| # downloads        | 582772183 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8.572817733333333E7 |
+| # stars            | 94.0 |
 
 ## Links
 - [Homepage](https://github.com/mikeal/caseless#readme)

@@ -1,17 +1,25 @@
-package typingsJapgolly.blessed.mod
+package typingsJapgolly.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Widgets {
-  type ButtonOptions = typingsJapgolly.blessed.mod.Widgets.BoxOptions
-  type IOptions = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type InputOptions = typingsJapgolly.blessed.mod.Widgets.BoxOptions
-  type LoadingOptions = typingsJapgolly.blessed.mod.Widgets.BoxOptions
-  type MessageOptions = typingsJapgolly.blessed.mod.Widgets.BoxOptions
-  type PromptOptions = typingsJapgolly.blessed.mod.Widgets.BoxOptions
-  type QuestionOptions = typingsJapgolly.blessed.mod.Widgets.BoxOptions
-  type RadioButtonOptions = typingsJapgolly.blessed.mod.Widgets.BoxOptions
-  type RadioSetOptions = typingsJapgolly.blessed.mod.Widgets.BoxOptions
-}
+
+type ButtonOptions = BoxOptions
+
+type IOptions = StringDictionary[Any]
+
+type InputOptions = BoxOptions
+
+type LoadingOptions = BoxOptions
+
+type MessageOptions = BoxOptions
+
+type PromptOptions = BoxOptions
+
+type QuestionOptions = BoxOptions
+
+type RadioButtonOptions = BoxOptions
+
+type RadioSetOptions = BoxOptions

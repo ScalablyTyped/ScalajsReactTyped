@@ -2,48 +2,35 @@ package typingsJapgolly.materialIconButton
 
 import typingsJapgolly.materialBase.foundationMod.MDCFoundation
 import typingsJapgolly.materialIconButton.adapterMod.MDCIconButtonToggleAdapter
+import typingsJapgolly.materialIconButton.anon.PartialMDCIconButtonToggl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/icon-button/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
+  
+  @JSImport("@material/icon-button/foundation", JSImport.Default)
   @js.native
-  class MDCIconButtonToggleFoundation () extends MDCFoundation[MDCIconButtonToggleAdapter] {
+  open class default () extends MDCIconButtonToggleFoundation {
     def this(adapter: PartialMDCIconButtonToggl) = this()
-    // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
-    /* CompleteClass */
-    override def destroy(): Unit = js.native
+  }
+  
+  @JSImport("@material/icon-button/foundation", "MDCIconButtonToggleFoundation")
+  @js.native
+  open class MDCIconButtonToggleFoundation () extends MDCFoundation[MDCIconButtonToggleAdapter] {
+    def this(adapter: PartialMDCIconButtonToggl) = this()
+    
     def handleClick(): Unit = js.native
-    // Subclasses should override this method to perform initialization routines (registering events, etc.)
-    /* CompleteClass */
-    override def init(): Unit = js.native
+    
+    /**
+      * Whether the icon button has an aria label that changes depending on
+      * toggled state.
+      */
+    /* private */ var hasToggledAriaLabel: Any = js.native
+    
     def isOn(): Boolean = js.native
+    
     def toggle(): Unit = js.native
     def toggle(isOn: Boolean): Unit = js.native
   }
-  
-  @js.native
-  class default () extends MDCIconButtonToggleFoundation {
-    def this(adapter: PartialMDCIconButtonToggl) = this()
-  }
-  
-  /* static members */
-  @js.native
-  object MDCIconButtonToggleFoundation extends js.Object {
-    val cssClasses: AnonICONBUTTONON = js.native
-    val defaultAdapter: MDCIconButtonToggleAdapter = js.native
-    val strings: AnonARIAPRESSED = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    val cssClasses: AnonICONBUTTONON = js.native
-    val defaultAdapter: MDCIconButtonToggleAdapter = js.native
-    val strings: AnonARIAPRESSED = js.native
-  }
-  
 }
-

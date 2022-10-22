@@ -1,16 +1,35 @@
 package typingsJapgolly.angularOdataResources.OData
 
-import typingsJapgolly.angularOdataResources.AnonAdd
+import typingsJapgolly.angularOdataResources.anon.Add
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("OData.Operators")
-@js.native
-class Operators () extends js.Object {
-  var operators: AnonAdd = js.native
-  var rtrim: js.Any = js.native
-  def convert(from: String): js.Any = js.native
-  /* private */ def trim(value: js.Any): js.Any = js.native
+trait Operators extends StObject {
+  
+  def convert(from: String): Any
+  
+  var operators: Add
+  
+  /* private */ var rtrim: Any
+  
+  /* private */ def trim(value: Any): Any
 }
-
+object Operators {
+  
+  inline def apply(convert: String => Any, operators: Add, rtrim: Any, trim: Any => Any): Operators = {
+    val __obj = js.Dynamic.literal(convert = js.Any.fromFunction1(convert), operators = operators.asInstanceOf[js.Any], rtrim = rtrim.asInstanceOf[js.Any], trim = js.Any.fromFunction1(trim))
+    __obj.asInstanceOf[Operators]
+  }
+  
+  extension [Self <: Operators](x: Self) {
+    
+    inline def setConvert(value: String => Any): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
+    
+    inline def setOperators(value: Add): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
+    
+    inline def setRtrim(value: Any): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
+    
+    inline def setTrim(value: Any => Any): Self = StObject.set(x, "trim", js.Any.fromFunction1(value))
+  }
+}

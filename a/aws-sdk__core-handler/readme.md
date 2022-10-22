@@ -10,10 +10,10 @@ AWS SDK Core Handler
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/core-handler |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 368 |
-| # downloads        | 37316 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15666.666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fcore-handler)

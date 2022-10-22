@@ -1,15 +1,19 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "ElementType")
 @js.native
-object ElementType extends js.Object {
-  /* 1 */ val anchor: typingsJapgolly.officeUiFabricReact.buttonTypesMod.ElementType.anchor with Double = js.native
-  /* 0 */ val button: typingsJapgolly.officeUiFabricReact.buttonTypesMod.ElementType.button with Double = js.native
+object ElementType extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.officeUiFabricReact.buttonTypesMod.ElementType with Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typingsJapgolly.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ElementType & Double
+  ] = js.native
+  
+  /* 1 */ val anchor: typingsJapgolly.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ElementType.anchor & Double = js.native
+  
+  /* 0 */ val button: typingsJapgolly.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ElementType.button & Double = js.native
 }
-

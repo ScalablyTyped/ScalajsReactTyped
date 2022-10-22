@@ -1,22 +1,24 @@
 package typingsJapgolly.aureliaDependencyInjection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-dependency-injection", "Optional")
 @js.native
-class Optional_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protected () extends js.Object {
+open class Optional_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] protected () extends StObject {
   def this(key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) = this()
   def this(key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs], checkParent: Boolean) = this()
+  
   def get(container: Container): TImpl = js.native
 }
-
 /* static members */
-@JSImport("aurelia-dependency-injection", "Optional")
-@js.native
-object Optional_ extends js.Object {
-  def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): Optional_[TBase, TImpl, TArgs] = js.native
-  def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs], checkParent: Boolean): Optional_[TBase, TImpl, TArgs] = js.native
+object Optional_ {
+  
+  @JSImport("aurelia-dependency-injection", "Optional")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): Optional_[TBase, TImpl, TArgs] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(key.asInstanceOf[js.Any]).asInstanceOf[Optional_[TBase, TImpl, TArgs]]
+  inline def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs], checkParent: Boolean): Optional_[TBase, TImpl, TArgs] = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(key.asInstanceOf[js.Any], checkParent.asInstanceOf[js.Any])).asInstanceOf[Optional_[TBase, TImpl, TArgs]]
 }
-

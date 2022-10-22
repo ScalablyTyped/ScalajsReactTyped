@@ -1,42 +1,47 @@
 package typingsJapgolly.aliApp.my
 
-import japgolly.scalajs.react.Callback
 import typingsJapgolly.aliApp.aliAppStrings.GET
 import typingsJapgolly.aliApp.aliAppStrings.POST
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ConnectSocketOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   /** 请求的参数 */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
+  
   /** 设置请求的头部 */
   var header: js.UndefOr[RequestHeader] = js.undefined
+  
   var method: js.UndefOr[GET | POST] = js.undefined
+  
   /** 目标服务器url */
   var url: String
 }
-
 object ConnectSocketOptions {
-  @scala.inline
-  def apply(
-    url: String,
-    complete: /* res */ js.Any => Callback = null,
-    data: js.Any = null,
-    fail: js.Any => Callback = null,
-    header: RequestHeader = null,
-    method: GET | POST = null,
-    success: js.Any => Callback = null
-  ): ConnectSocketOptions = {
+  
+  inline def apply(url: String): ConnectSocketOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: js.Any) => success(t0).runNow()))
     __obj.asInstanceOf[ConnectSocketOptions]
   }
+  
+  extension [Self <: ConnectSocketOptions](x: Self) {
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setHeader(value: RequestHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setMethod(value: GET | POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

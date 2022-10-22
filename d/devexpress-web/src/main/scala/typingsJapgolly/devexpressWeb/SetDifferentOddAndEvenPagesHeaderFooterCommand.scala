@@ -1,15 +1,17 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change the header/footer edit mode so it allows creation of a different header or footer for odd and even pages of a document or section.
   */
-@JSGlobal("SetDifferentOddAndEvenPagesHeaderFooterCommand")
 @js.native
-class SetDifferentOddAndEvenPagesHeaderFooterCommand () extends CommandWithBooleanStateBase {
+trait SetDifferentOddAndEvenPagesHeaderFooterCommand
+  extends StObject
+     with CommandWithBooleanStateBase {
+  
   /**
     * Executes the SetDifferentOddAndEvenPagesHeaderFooterCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param differentOddAndEvenPages true to apply a different text for the header and footer of the odd and even pages , false to remove the difference.
@@ -17,4 +19,3 @@ class SetDifferentOddAndEvenPagesHeaderFooterCommand () extends CommandWithBoole
   def execute(): Boolean = js.native
   def execute(differentOddAndEvenPages: Boolean): Boolean = js.native
 }
-

@@ -3,344 +3,377 @@ package typingsJapgolly.senchaTouch.Ext.draw.sprite
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.senchaTouch.Ext.Array
-import typingsJapgolly.senchaTouch.Ext.IClass
 import typingsJapgolly.senchaTouch.Ext.draw.ISurface
 import typingsJapgolly.senchaTouch.Ext.mixin.IObservable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISprite extends IObservable {
+trait ISprite
+  extends StObject
+     with IObservable {
+  
   /** [Config Option] (Number) */
   var A: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Array) */
   var An: js.UndefOr[Array] = js.undefined
+  
   /** [Property] (Object) */
-  var attr: js.UndefOr[js.Any] = js.undefined
+  var attr: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Number) */
   var fillOpacity: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (String) */
   var fillStyle: js.UndefOr[String] = js.undefined
+  
   /** [Method] Returns the bounding box for the given Sprite as calculated with the Canvas engine
-  		* @param isWithoutTransform Boolean Whether to calculate the bounding box with the current transforms or not.
-  		*/
+    * @param isWithoutTransform Boolean Whether to calculate the bounding box with the current transforms or not.
+    */
   var getBBox: js.UndefOr[js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Subclass can rewrite this function to gain better performance
-  		* @param isWithoutTransform Boolean
-  		* @returns Array
-  		*/
+    * @param isWithoutTransform Boolean
+    * @returns Array
+    */
   var getBBoxCenter: js.UndefOr[js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], Array]] = js.undefined
+  
   /** [Method] Returns the value of parent
-  		* @returns Object
-  		*/
-  var getParent: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getParent: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Config Option] (Number) */
   var globalAlpha: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Hide the sprite
-  		* @returns Ext.draw.sprite.Sprite this
-  		*/
+    * @returns Ext.draw.sprite.Sprite this
+    */
   var hide: js.UndefOr[js.Function0[this.type]] = js.undefined
+  
   /** [Config Option] (String) */
   var lineCap: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var lineJoin: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Number) */
   var lineWidth: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Number) */
   var miterLimit: js.UndefOr[Double] = js.undefined
+  
   /** [Method] Called before rendering  */
   var preRender: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_ISprite: js.UndefOr[
-    js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+    js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
   ] = js.undefined
+  
   /** [Method] Render method
-  		* @param surface Ext.draw.Surface The surface.
-  		* @param ctx Object A context object compatible with CanvasRenderingContext2D.
-  		* @param region Array The clip region (or called dirty rect) of the current rendering. Not be confused with surface.getRegion().
-  		* @returns * returns false to stop rendering in this frame. All the sprite haven't been rendered will have their dirty flag untouched.
-  		*/
+    * @param surface Ext.draw.Surface The surface.
+    * @param ctx Object A context object compatible with CanvasRenderingContext2D.
+    * @param region Array The clip region (or called dirty rect) of the current rendering. Not be confused with surface.getRegion().
+    * @returns * returns false to stop rendering in this frame. All the sprite haven't been rendered will have their dirty flag untouched.
+    */
   var render: js.UndefOr[
     js.Function3[
       /* surface */ js.UndefOr[ISurface], 
-      /* ctx */ js.UndefOr[js.Any], 
+      /* ctx */ js.UndefOr[Any], 
       /* region */ js.UndefOr[Array], 
-      _
+      Any
     ]
   ] = js.undefined
+  
   /** [Config Option] (Number) */
   var rotationCenterX: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Number) */
   var rotationCenterY: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Number) */
   var rotationRads: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Number) */
   var scalingCenterX: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Number) */
   var scalingCenterY: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Number) */
   var scalingX: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Number) */
   var scalingY: js.UndefOr[Double] = js.undefined
+  
   /** [Method] Set attributes of the sprite
-  		* @param changes Object The content of the change.
-  		* @param bypassNormalization Boolean true to avoid normalization of the given changes.
-  		* @param avoidCopy Boolean true to avoid copying the changes object. The content of object may be destroyed.
-  		*/
+    * @param changes Object The content of the change.
+    * @param bypassNormalization Boolean true to avoid normalization of the given changes.
+    * @param avoidCopy Boolean true to avoid copying the changes object. The content of object may be destroyed.
+    */
   var setAttributes: js.UndefOr[
     js.Function3[
-      /* changes */ js.UndefOr[js.Any], 
+      /* changes */ js.UndefOr[Any], 
       /* bypassNormalization */ js.UndefOr[Boolean], 
       /* avoidCopy */ js.UndefOr[Boolean], 
       Unit
     ]
   ] = js.undefined
+  
   /** [Method] Set attributes of the sprite assuming the names and values have already been normalized
-  		* @param changes Object The content of the change.
-  		* @param avoidCopy Boolean true to avoid copying the changes object. The content of object may be destroyed.
-  		*/
+    * @param changes Object The content of the change.
+    * @param avoidCopy Boolean true to avoid copying the changes object. The content of object may be destroyed.
+    */
   var setAttributesBypassingNormalization: js.UndefOr[
-    js.Function2[/* changes */ js.UndefOr[js.Any], /* avoidCopy */ js.UndefOr[Boolean], Unit]
+    js.Function2[/* changes */ js.UndefOr[Any], /* avoidCopy */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
+  
   /** [Method] Sets the value of parent
-  		* @param parent Object The new value.
-  		*/
-  var setParent: js.UndefOr[js.Function1[/* parent */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param parent Object The new value.
+    */
+  var setParent: js.UndefOr[js.Function1[/* parent */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Config Option] (Number) */
   var shadowBlur: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (String) */
   var shadowColor: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Number) */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Number) */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
+  
   /** [Method] Show the sprite
-  		* @returns Ext.draw.sprite.Sprite this
-  		*/
+    * @returns Ext.draw.sprite.Sprite this
+    */
   var show: js.UndefOr[js.Function0[this.type]] = js.undefined
+  
   /** [Config Option] (Number) */
   var strokeOpacity: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (String) */
   var strokeStyle: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var transformFillStroke: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Number) */
   var translationX: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Number) */
   var translationY: js.UndefOr[Double] = js.undefined
+  
   /** [Method] Subclass will fill the plain object with x y width height information of the plain bounding box of this sprite
-  		* @param plain Object Target object.
-  		*/
-  var updatePlainBBox: js.UndefOr[js.Function1[/* plain */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param plain Object Target object.
+    */
+  var updatePlainBBox: js.UndefOr[js.Function1[/* plain */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Subclass will fill the plain object with x y width height information of the transformed bounding box of this sprite
-  		* @param transform Object Target object.
-  		* @param plain Object Auxiliary object providing information of plain object.
-  		*/
-  var updateTransformedBBox: js.UndefOr[
-    js.Function2[/* transform */ js.UndefOr[js.Any], /* plain */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+    * @param transform Object Target object.
+    * @param plain Object Auxiliary object providing information of plain object.
+    */
+  var updateTransformedBBox: js.UndefOr[js.Function2[/* transform */ js.UndefOr[Any], /* plain */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Applies sprite s attributes to the given context
-  		* @param ctx Object Context to apply sprite's attributes to.
-  		* @param region Array The region of the context to be affected by gradients.
-  		*/
-  var useAttributes: js.UndefOr[js.Function2[/* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[Array], Unit]] = js.undefined
+    * @param ctx Object Context to apply sprite's attributes to.
+    * @param region Array The region of the context to be affected by gradients.
+    */
+  var useAttributes: js.UndefOr[js.Function2[/* ctx */ js.UndefOr[Any], /* region */ js.UndefOr[Array], Unit]] = js.undefined
+  
   /** [Config Option] (Number) */
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object ISprite {
-  @scala.inline
-  def apply(
-    A: Int | Double = null,
-    An: Array = null,
-    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    addEvents: /* eventNames */ js.UndefOr[js.Any] => Callback = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Callback = null,
-    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    attr: js.Any = null,
-    bubbleEvents: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callParent: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    clearListeners: js.UndefOr[Callback] = js.undefined,
-    config: js.Any = null,
-    destroy: js.UndefOr[Callback] = js.undefined,
-    enableBubble: /* events */ js.UndefOr[js.Any] => Callback = null,
-    extend: String = null,
-    fillOpacity: Int | Double = null,
-    fillStyle: String = null,
-    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => CallbackTo[Boolean] = null,
-    getBBox: /* isWithoutTransform */ js.UndefOr[Boolean] => Callback = null,
-    getBBoxCenter: /* isWithoutTransform */ js.UndefOr[Boolean] => CallbackTo[Array] = null,
-    getBubbleEvents: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getId: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getInitialConfig: /* name */ js.UndefOr[String] => CallbackTo[js.Any] = null,
-    getListeners: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getParent: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    globalAlpha: Int | Double = null,
-    hasListener: /* eventName */ js.UndefOr[String] => CallbackTo[Boolean] = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    hide: js.UndefOr[CallbackTo[ISprite]] = js.undefined,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    lineCap: String = null,
-    lineJoin: String = null,
-    lineWidth: Int | Double = null,
-    listeners: js.Any = null,
-    miterLimit: Int | Double = null,
-    mixins: js.Any = null,
-    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Callback = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Callback = null,
-    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    platformConfig: js.Any = null,
-    preRender: js.UndefOr[Callback] = js.undefined,
-    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => CallbackTo[IObservable] = null,
-    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Callback = null,
-    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Callback = null,
-    render: (/* surface */ js.UndefOr[ISurface], /* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[Array]) => CallbackTo[js.Any] = null,
-    resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Callback = null,
-    rotationCenterX: Int | Double = null,
-    rotationCenterY: Int | Double = null,
-    rotationRads: Int | Double = null,
-    scalingCenterX: Int | Double = null,
-    scalingCenterY: Int | Double = null,
-    scalingX: Int | Double = null,
-    scalingY: Int | Double = null,
-    self: IClass = null,
-    setAttributes: (/* changes */ js.UndefOr[js.Any], /* bypassNormalization */ js.UndefOr[Boolean], /* avoidCopy */ js.UndefOr[Boolean]) => Callback = null,
-    setAttributesBypassingNormalization: (/* changes */ js.UndefOr[js.Any], /* avoidCopy */ js.UndefOr[Boolean]) => Callback = null,
-    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Callback = null,
-    setListeners: /* listeners */ js.UndefOr[js.Any] => Callback = null,
-    setParent: /* parent */ js.UndefOr[js.Any] => Callback = null,
-    shadowBlur: Int | Double = null,
-    shadowColor: String = null,
-    shadowOffsetX: Int | Double = null,
-    shadowOffsetY: Int | Double = null,
-    show: js.UndefOr[CallbackTo[ISprite]] = js.undefined,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    strokeOpacity: Int | Double = null,
-    strokeStyle: String = null,
-    suspendEvents: js.UndefOr[Callback] = js.undefined,
-    transformFillStroke: js.UndefOr[Boolean] = js.undefined,
-    translationX: Int | Double = null,
-    translationY: Int | Double = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Callback = null,
-    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    updatePlainBBox: /* plain */ js.UndefOr[js.Any] => Callback = null,
-    updateTransformedBBox: (/* transform */ js.UndefOr[js.Any], /* plain */ js.UndefOr[js.Any]) => Callback = null,
-    useAttributes: (/* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[Array]) => Callback = null,
-    uses: Array = null,
-    zIndex: Int | Double = null
-  ): ISprite = {
+  
+  inline def apply(): ISprite = {
     val __obj = js.Dynamic.literal()
-    if (A != null) __obj.updateDynamic("A")(A.asInstanceOf[js.Any])
-    if (An != null) __obj.updateDynamic("An")(An.asInstanceOf[js.Any])
-    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => addAfterListener(t0, t1, t2, t3).runNow()))
-    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => addBeforeListener(t0, t1, t2, t3).runNow()))
-    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1((t0: /* eventNames */ js.UndefOr[js.Any]) => addEvents(t0).runNow()))
-    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any], t4: /* order */ js.UndefOr[java.lang.String]) => addListener(t0, t1, t2, t3, t4).runNow()))
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5((t0: /* object */ js.UndefOr[js.Any], t1: /* eventName */ js.UndefOr[js.Any], t2: /* fn */ js.UndefOr[js.Any], t3: /* scope */ js.UndefOr[js.Any], t4: /* options */ js.UndefOr[js.Any]) => addManagedListener(t0, t1, t2, t3, t4).runNow()))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (attr != null) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
-    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callOverridden(t0).runNow()))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callParent(t0).runNow()))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callSuper(t0).runNow()))
-    clearListeners.foreach(p => __obj.updateDynamic("clearListeners")(p.toJsFn))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    destroy.foreach(p => __obj.updateDynamic("destroy")(p.toJsFn))
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1((t0: /* events */ js.UndefOr[js.Any]) => enableBubble(t0).runNow()))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
-    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[java.lang.String], t1: /* args */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.Array], t2: /* fn */ js.UndefOr[js.Any], t3: /* scope */ js.UndefOr[js.Any]) => fireAction(t0, t1, t2, t3).runNow()))
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2((t0: /* eventName */ java.lang.String, t1: /* repeated */ js.Any) => fireEvent(t0, t1).runNow()))
-    if (getBBox != null) __obj.updateDynamic("getBBox")(js.Any.fromFunction1((t0: /* isWithoutTransform */ js.UndefOr[scala.Boolean]) => getBBox(t0).runNow()))
-    if (getBBoxCenter != null) __obj.updateDynamic("getBBoxCenter")(js.Any.fromFunction1((t0: /* isWithoutTransform */ js.UndefOr[scala.Boolean]) => getBBoxCenter(t0).runNow()))
-    getBubbleEvents.foreach(p => __obj.updateDynamic("getBubbleEvents")(p.toJsFn))
-    getId.foreach(p => __obj.updateDynamic("getId")(p.toJsFn))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1((t0: /* name */ js.UndefOr[java.lang.String]) => getInitialConfig(t0).runNow()))
-    getListeners.foreach(p => __obj.updateDynamic("getListeners")(p.toJsFn))
-    getParent.foreach(p => __obj.updateDynamic("getParent")(p.toJsFn))
-    if (globalAlpha != null) __obj.updateDynamic("globalAlpha")(globalAlpha.asInstanceOf[js.Any])
-    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1((t0: /* eventName */ js.UndefOr[java.lang.String]) => hasListener(t0).runNow()))
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    hide.foreach(p => __obj.updateDynamic("hide")(p.toJsFn))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1((t0: /* instanceConfig */ js.UndefOr[js.Any]) => initConfig(t0).runNow()))
-    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (miterLimit != null) __obj.updateDynamic("miterLimit")(miterLimit.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5((t0: /* object */ js.UndefOr[js.Any], t1: /* eventName */ js.UndefOr[js.Any], t2: /* fn */ js.UndefOr[js.Any], t3: /* scope */ js.UndefOr[js.Any], t4: /* options */ js.UndefOr[js.Any]) => mon(t0, t1, t2, t3, t4).runNow()))
-    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4((t0: /* object */ js.UndefOr[js.Any], t1: /* eventName */ js.UndefOr[js.Any], t2: /* fn */ js.UndefOr[js.Any], t3: /* scope */ js.UndefOr[js.Any]) => mun(t0, t1, t2, t3).runNow()))
-    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any], t4: /* order */ js.UndefOr[java.lang.String]) => on(t0, t1, t2, t3, t4).runNow()))
-    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => onAfter(t0, t1, t2, t3).runNow()))
-    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => onBefore(t0, t1, t2, t3).runNow()))
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    preRender.foreach(p => __obj.updateDynamic("preRender")(p.toJsFn))
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2((t0: /* object */ js.UndefOr[js.Any], t1: /* events */ js.UndefOr[js.Any]) => relayEvents(t0, t1).runNow()))
-    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => removeAfterListener(t0, t1, t2, t3).runNow()))
-    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => removeBeforeListener(t0, t1, t2, t3).runNow()))
-    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any], t4: /* order */ js.UndefOr[java.lang.String]) => removeListener(t0, t1, t2, t3, t4).runNow()))
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4((t0: /* object */ js.UndefOr[js.Any], t1: /* eventName */ js.UndefOr[js.Any], t2: /* fn */ js.UndefOr[js.Any], t3: /* scope */ js.UndefOr[js.Any]) => removeManagedListener(t0, t1, t2, t3).runNow()))
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction3((t0: /* surface */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.draw.ISurface], t1: /* ctx */ js.UndefOr[js.Any], t2: /* region */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.Array]) => render(t0, t1, t2).runNow()))
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1((t0: /* discardQueuedEvents */ js.UndefOr[scala.Boolean]) => resumeEvents(t0).runNow()))
-    if (rotationCenterX != null) __obj.updateDynamic("rotationCenterX")(rotationCenterX.asInstanceOf[js.Any])
-    if (rotationCenterY != null) __obj.updateDynamic("rotationCenterY")(rotationCenterY.asInstanceOf[js.Any])
-    if (rotationRads != null) __obj.updateDynamic("rotationRads")(rotationRads.asInstanceOf[js.Any])
-    if (scalingCenterX != null) __obj.updateDynamic("scalingCenterX")(scalingCenterX.asInstanceOf[js.Any])
-    if (scalingCenterY != null) __obj.updateDynamic("scalingCenterY")(scalingCenterY.asInstanceOf[js.Any])
-    if (scalingX != null) __obj.updateDynamic("scalingX")(scalingX.asInstanceOf[js.Any])
-    if (scalingY != null) __obj.updateDynamic("scalingY")(scalingY.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setAttributes != null) __obj.updateDynamic("setAttributes")(js.Any.fromFunction3((t0: /* changes */ js.UndefOr[js.Any], t1: /* bypassNormalization */ js.UndefOr[scala.Boolean], t2: /* avoidCopy */ js.UndefOr[scala.Boolean]) => setAttributes(t0, t1, t2).runNow()))
-    if (setAttributesBypassingNormalization != null) __obj.updateDynamic("setAttributesBypassingNormalization")(js.Any.fromFunction2((t0: /* changes */ js.UndefOr[js.Any], t1: /* avoidCopy */ js.UndefOr[scala.Boolean]) => setAttributesBypassingNormalization(t0, t1).runNow()))
-    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1((t0: /* bubbleEvents */ js.UndefOr[js.Any]) => setBubbleEvents(t0).runNow()))
-    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1((t0: /* listeners */ js.UndefOr[js.Any]) => setListeners(t0).runNow()))
-    if (setParent != null) __obj.updateDynamic("setParent")(js.Any.fromFunction1((t0: /* parent */ js.UndefOr[js.Any]) => setParent(t0).runNow()))
-    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
-    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
-    if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
-    if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
-    show.foreach(p => __obj.updateDynamic("show")(p.toJsFn))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
-    suspendEvents.foreach(p => __obj.updateDynamic("suspendEvents")(p.toJsFn))
-    if (!js.isUndefined(transformFillStroke)) __obj.updateDynamic("transformFillStroke")(transformFillStroke.asInstanceOf[js.Any])
-    if (translationX != null) __obj.updateDynamic("translationX")(translationX.asInstanceOf[js.Any])
-    if (translationY != null) __obj.updateDynamic("translationY")(translationY.asInstanceOf[js.Any])
-    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any], t4: /* order */ js.UndefOr[java.lang.String]) => un(t0, t1, t2, t3, t4).runNow()))
-    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => unAfter(t0, t1, t2, t3).runNow()))
-    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => unBefore(t0, t1, t2, t3).runNow()))
-    if (updatePlainBBox != null) __obj.updateDynamic("updatePlainBBox")(js.Any.fromFunction1((t0: /* plain */ js.UndefOr[js.Any]) => updatePlainBBox(t0).runNow()))
-    if (updateTransformedBBox != null) __obj.updateDynamic("updateTransformedBBox")(js.Any.fromFunction2((t0: /* transform */ js.UndefOr[js.Any], t1: /* plain */ js.UndefOr[js.Any]) => updateTransformedBBox(t0, t1).runNow()))
-    if (useAttributes != null) __obj.updateDynamic("useAttributes")(js.Any.fromFunction2((t0: /* ctx */ js.UndefOr[js.Any], t1: /* region */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.Array]) => useAttributes(t0, t1).runNow()))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISprite]
   }
+  
+  extension [Self <: ISprite](x: Self) {
+    
+    inline def setA(value: Double): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
+    
+    inline def setAUndefined: Self = StObject.set(x, "A", js.undefined)
+    
+    inline def setAn(value: Array): Self = StObject.set(x, "An", value.asInstanceOf[js.Any])
+    
+    inline def setAnUndefined: Self = StObject.set(x, "An", js.undefined)
+    
+    inline def setAttr(value: Any): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    
+    inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
+    
+    inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    
+    inline def setFillStyle(value: String): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
+    
+    inline def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
+    
+    inline def setGetBBox(value: /* isWithoutTransform */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "getBBox", js.Any.fromFunction1((t0: /* isWithoutTransform */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setGetBBoxCenter(value: /* isWithoutTransform */ js.UndefOr[Boolean] => Array): Self = StObject.set(x, "getBBoxCenter", js.Any.fromFunction1(value))
+    
+    inline def setGetBBoxCenterUndefined: Self = StObject.set(x, "getBBoxCenter", js.undefined)
+    
+    inline def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
+    
+    inline def setGetParent(value: CallbackTo[Any]): Self = StObject.set(x, "getParent", value.toJsFn)
+    
+    inline def setGetParentUndefined: Self = StObject.set(x, "getParent", js.undefined)
+    
+    inline def setGlobalAlpha(value: Double): Self = StObject.set(x, "globalAlpha", value.asInstanceOf[js.Any])
+    
+    inline def setGlobalAlphaUndefined: Self = StObject.set(x, "globalAlpha", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setHide(value: CallbackTo[ISprite]): Self = StObject.set(x, "hide", value.toJsFn)
+    
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    
+    inline def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+    
+    inline def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
+    
+    inline def setLineJoin(value: String): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
+    
+    inline def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
+    
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
+    inline def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
+    
+    inline def setMiterLimitUndefined: Self = StObject.set(x, "miterLimit", js.undefined)
+    
+    inline def setPreRender(value: Callback): Self = StObject.set(x, "preRender", value.toJsFn)
+    
+    inline def setPreRenderUndefined: Self = StObject.set(x, "preRender", js.undefined)
+    
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    
+    inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+    
+    inline def setRender(
+      value: (/* surface */ js.UndefOr[ISurface], /* ctx */ js.UndefOr[Any], /* region */ js.UndefOr[Array]) => Any
+    ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+    
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    
+    inline def setRotationCenterX(value: Double): Self = StObject.set(x, "rotationCenterX", value.asInstanceOf[js.Any])
+    
+    inline def setRotationCenterXUndefined: Self = StObject.set(x, "rotationCenterX", js.undefined)
+    
+    inline def setRotationCenterY(value: Double): Self = StObject.set(x, "rotationCenterY", value.asInstanceOf[js.Any])
+    
+    inline def setRotationCenterYUndefined: Self = StObject.set(x, "rotationCenterY", js.undefined)
+    
+    inline def setRotationRads(value: Double): Self = StObject.set(x, "rotationRads", value.asInstanceOf[js.Any])
+    
+    inline def setRotationRadsUndefined: Self = StObject.set(x, "rotationRads", js.undefined)
+    
+    inline def setScalingCenterX(value: Double): Self = StObject.set(x, "scalingCenterX", value.asInstanceOf[js.Any])
+    
+    inline def setScalingCenterXUndefined: Self = StObject.set(x, "scalingCenterX", js.undefined)
+    
+    inline def setScalingCenterY(value: Double): Self = StObject.set(x, "scalingCenterY", value.asInstanceOf[js.Any])
+    
+    inline def setScalingCenterYUndefined: Self = StObject.set(x, "scalingCenterY", js.undefined)
+    
+    inline def setScalingX(value: Double): Self = StObject.set(x, "scalingX", value.asInstanceOf[js.Any])
+    
+    inline def setScalingXUndefined: Self = StObject.set(x, "scalingX", js.undefined)
+    
+    inline def setScalingY(value: Double): Self = StObject.set(x, "scalingY", value.asInstanceOf[js.Any])
+    
+    inline def setScalingYUndefined: Self = StObject.set(x, "scalingY", js.undefined)
+    
+    inline def setSetAttributes(
+      value: (/* changes */ js.UndefOr[Any], /* bypassNormalization */ js.UndefOr[Boolean], /* avoidCopy */ js.UndefOr[Boolean]) => Callback
+    ): Self = StObject.set(x, "setAttributes", js.Any.fromFunction3((t0: /* changes */ js.UndefOr[Any], t1: /* bypassNormalization */ js.UndefOr[Boolean], t2: /* avoidCopy */ js.UndefOr[Boolean]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setSetAttributesBypassingNormalization(value: (/* changes */ js.UndefOr[Any], /* avoidCopy */ js.UndefOr[Boolean]) => Callback): Self = StObject.set(x, "setAttributesBypassingNormalization", js.Any.fromFunction2((t0: /* changes */ js.UndefOr[Any], t1: /* avoidCopy */ js.UndefOr[Boolean]) => (value(t0, t1)).runNow()))
+    
+    inline def setSetAttributesBypassingNormalizationUndefined: Self = StObject.set(x, "setAttributesBypassingNormalization", js.undefined)
+    
+    inline def setSetAttributesUndefined: Self = StObject.set(x, "setAttributes", js.undefined)
+    
+    inline def setSetParent(value: /* parent */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setParent", js.Any.fromFunction1((t0: /* parent */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetParentUndefined: Self = StObject.set(x, "setParent", js.undefined)
+    
+    inline def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
+    
+    inline def setShadowBlurUndefined: Self = StObject.set(x, "shadowBlur", js.undefined)
+    
+    inline def setShadowColor(value: String): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    
+    inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
+    
+    inline def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
+    
+    inline def setShadowOffsetXUndefined: Self = StObject.set(x, "shadowOffsetX", js.undefined)
+    
+    inline def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
+    
+    inline def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
+    
+    inline def setShow(value: CallbackTo[ISprite]): Self = StObject.set(x, "show", value.toJsFn)
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    
+    inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+    
+    inline def setStrokeStyle(value: String): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
+    
+    inline def setTransformFillStroke(value: Boolean): Self = StObject.set(x, "transformFillStroke", value.asInstanceOf[js.Any])
+    
+    inline def setTransformFillStrokeUndefined: Self = StObject.set(x, "transformFillStroke", js.undefined)
+    
+    inline def setTranslationX(value: Double): Self = StObject.set(x, "translationX", value.asInstanceOf[js.Any])
+    
+    inline def setTranslationXUndefined: Self = StObject.set(x, "translationX", js.undefined)
+    
+    inline def setTranslationY(value: Double): Self = StObject.set(x, "translationY", value.asInstanceOf[js.Any])
+    
+    inline def setTranslationYUndefined: Self = StObject.set(x, "translationY", js.undefined)
+    
+    inline def setUpdatePlainBBox(value: /* plain */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "updatePlainBBox", js.Any.fromFunction1((t0: /* plain */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setUpdatePlainBBoxUndefined: Self = StObject.set(x, "updatePlainBBox", js.undefined)
+    
+    inline def setUpdateTransformedBBox(value: (/* transform */ js.UndefOr[Any], /* plain */ js.UndefOr[Any]) => Callback): Self = StObject.set(x, "updateTransformedBBox", js.Any.fromFunction2((t0: /* transform */ js.UndefOr[Any], t1: /* plain */ js.UndefOr[Any]) => (value(t0, t1)).runNow()))
+    
+    inline def setUpdateTransformedBBoxUndefined: Self = StObject.set(x, "updateTransformedBBox", js.undefined)
+    
+    inline def setUseAttributes(value: (/* ctx */ js.UndefOr[Any], /* region */ js.UndefOr[Array]) => Callback): Self = StObject.set(x, "useAttributes", js.Any.fromFunction2((t0: /* ctx */ js.UndefOr[Any], t1: /* region */ js.UndefOr[Array]) => (value(t0, t1)).runNow()))
+    
+    inline def setUseAttributesUndefined: Self = StObject.set(x, "useAttributes", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

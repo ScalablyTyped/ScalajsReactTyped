@@ -1,37 +1,21 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "WritePropExpr")
 @js.native
-class WritePropExpr protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.WritePropExpr {
-  def this(
-    receiver: typingsJapgolly.angularCompiler.outputAstMod.Expression,
-    name: String,
-    value: typingsJapgolly.angularCompiler.outputAstMod.Expression
-  ) = this()
-  def this(
-    receiver: typingsJapgolly.angularCompiler.outputAstMod.Expression,
-    name: String,
-    value: typingsJapgolly.angularCompiler.outputAstMod.Expression,
-    `type`: typingsJapgolly.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(
-    receiver: typingsJapgolly.angularCompiler.outputAstMod.Expression,
-    name: String,
-    value: typingsJapgolly.angularCompiler.outputAstMod.Expression,
-    `type`: Null,
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    receiver: typingsJapgolly.angularCompiler.outputAstMod.Expression,
-    name: String,
-    value: typingsJapgolly.angularCompiler.outputAstMod.Expression,
-    `type`: typingsJapgolly.angularCompiler.outputAstMod.Type,
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+open class WritePropExpr protected () extends Expression {
+  def this(receiver: Expression, name: String, value: Expression) = this()
+  def this(receiver: Expression, name: String, value: Expression, `type`: Type) = this()
+  def this(receiver: Expression, name: String, value: Expression, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(receiver: Expression, name: String, value: Expression, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(receiver: Expression, name: String, value: Expression, `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  
+  var name: String = js.native
+  
+  var receiver: Expression = js.native
+  
+  var value: Expression = js.native
 }
-

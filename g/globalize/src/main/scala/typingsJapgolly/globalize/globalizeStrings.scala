@@ -1,94 +1,223 @@
 package typingsJapgolly.globalize
 
+import typingsJapgolly.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+import typingsJapgolly.globalize.distGlobalizeNumberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalizeStrings {
-  @js.native
-  sealed trait accounting extends js.Object
   
   @js.native
-  sealed trait cardinal extends js.Object
+  sealed trait accounting extends StObject
+  inline def accounting: accounting = "accounting".asInstanceOf[accounting]
   
   @js.native
-  sealed trait ceil extends js.Object
+  sealed trait cardinal extends StObject
+  inline def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
   
   @js.native
-  sealed trait code extends js.Object
+  sealed trait ceil extends StObject
+  inline def ceil: ceil = "ceil".asInstanceOf[ceil]
   
   @js.native
-  sealed trait decimal extends js.Object
+  sealed trait code extends StObject
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
-  sealed trait floor extends js.Object
+  sealed trait compact
+    extends StObject
+       with NumberFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.NumberFormatPartTypes
+  inline def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
-  sealed trait full extends js.Object
+  sealed trait day
+    extends StObject
+       with DateFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.DateFormatPartTypes
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait long extends js.Object
+  sealed trait dayperiod
+    extends StObject
+       with DateFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.DateFormatPartTypes
+  inline def dayperiod: dayperiod = "dayperiod".asInstanceOf[dayperiod]
   
   @js.native
-  sealed trait medium extends js.Object
+  sealed trait decimal
+    extends StObject
+       with NumberFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.NumberFormatPartTypes
+  inline def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait era
+    extends StObject
+       with DateFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.DateFormatPartTypes
+  inline def era: era = "era".asInstanceOf[era]
   
   @js.native
-  sealed trait narrow extends js.Object
+  sealed trait floor extends StObject
+  inline def floor: floor = "floor".asInstanceOf[floor]
   
   @js.native
-  sealed trait ordinal extends js.Object
+  sealed trait fraction
+    extends StObject
+       with NumberFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.NumberFormatPartTypes
+  inline def fraction: fraction = "fraction".asInstanceOf[fraction]
   
   @js.native
-  sealed trait percent extends js.Object
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait group
+    extends StObject
+       with NumberFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.NumberFormatPartTypes
+  inline def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait short extends js.Object
+  sealed trait hour
+    extends StObject
+       with DateFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.DateFormatPartTypes
+  inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
-  sealed trait symbol extends js.Object
+  sealed trait infinity
+    extends StObject
+       with NumberFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.NumberFormatPartTypes
+  inline def infinity: infinity = "infinity".asInstanceOf[infinity]
   
   @js.native
-  sealed trait truncate extends js.Object
+  sealed trait integer
+    extends StObject
+       with NumberFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.NumberFormatPartTypes
+  inline def integer: integer = "integer".asInstanceOf[integer]
   
-  @scala.inline
-  def accounting: accounting = "accounting".asInstanceOf[accounting]
-  @scala.inline
-  def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
-  @scala.inline
-  def ceil: ceil = "ceil".asInstanceOf[ceil]
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def decimal: decimal = "decimal".asInstanceOf[decimal]
-  @scala.inline
-  def floor: floor = "floor".asInstanceOf[floor]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
-  @scala.inline
-  def long: long = "long".asInstanceOf[long]
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def narrow: narrow = "narrow".asInstanceOf[narrow]
-  @scala.inline
-  def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
-  @scala.inline
-  def percent: percent = "percent".asInstanceOf[percent]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def short: short = "short".asInstanceOf[short]
-  @scala.inline
-  def symbol: symbol = "symbol".asInstanceOf[symbol]
-  @scala.inline
-  def truncate: truncate = "truncate".asInstanceOf[truncate]
+  @js.native
+  sealed trait literal
+    extends StObject
+       with DateFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.DateFormatPartTypes
+       with NumberFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.NumberFormatPartTypes
+  inline def literal: literal = "literal".asInstanceOf[literal]
+  
+  @js.native
+  sealed trait long extends StObject
+  inline def long: long = "long".asInstanceOf[long]
+  
+  @js.native
+  sealed trait medium extends StObject
+  inline def medium: medium = "medium".asInstanceOf[medium]
+  
+  @js.native
+  sealed trait minusSign
+    extends StObject
+       with NumberFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.NumberFormatPartTypes
+  inline def minusSign: minusSign = "minusSign".asInstanceOf[minusSign]
+  
+  @js.native
+  sealed trait minute
+    extends StObject
+       with DateFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.DateFormatPartTypes
+  inline def minute: minute = "minute".asInstanceOf[minute]
+  
+  @js.native
+  sealed trait month
+    extends StObject
+       with DateFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.DateFormatPartTypes
+  inline def month: month = "month".asInstanceOf[month]
+  
+  @js.native
+  sealed trait name extends StObject
+  inline def name: name = "name".asInstanceOf[name]
+  
+  @js.native
+  sealed trait nan
+    extends StObject
+       with NumberFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.NumberFormatPartTypes
+  inline def nan: nan = "nan".asInstanceOf[nan]
+  
+  @js.native
+  sealed trait narrow extends StObject
+  inline def narrow: narrow = "narrow".asInstanceOf[narrow]
+  
+  @js.native
+  sealed trait ordinal extends StObject
+  inline def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
+  
+  @js.native
+  sealed trait percent extends StObject
+  inline def percent: percent = "percent".asInstanceOf[percent]
+  
+  @js.native
+  sealed trait percentSign
+    extends StObject
+       with NumberFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.NumberFormatPartTypes
+  inline def percentSign: percentSign = "percentSign".asInstanceOf[percentSign]
+  
+  @js.native
+  sealed trait plusSign
+    extends StObject
+       with NumberFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.NumberFormatPartTypes
+  inline def plusSign: plusSign = "plusSign".asInstanceOf[plusSign]
+  
+  @js.native
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
+  
+  @js.native
+  sealed trait second
+    extends StObject
+       with DateFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.DateFormatPartTypes
+  inline def second: second = "second".asInstanceOf[second]
+  
+  @js.native
+  sealed trait short extends StObject
+  inline def short: short = "short".asInstanceOf[short]
+  
+  @js.native
+  sealed trait symbol extends StObject
+  inline def symbol: symbol = "symbol".asInstanceOf[symbol]
+  
+  @js.native
+  sealed trait truncate extends StObject
+  inline def truncate: truncate = "truncate".asInstanceOf[truncate]
+  
+  @js.native
+  sealed trait weekday
+    extends StObject
+       with DateFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.DateFormatPartTypes
+  inline def weekday: weekday = "weekday".asInstanceOf[weekday]
+  
+  @js.native
+  sealed trait year
+    extends StObject
+       with DateFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.DateFormatPartTypes
+  inline def year: year = "year".asInstanceOf[year]
+  
+  @js.native
+  sealed trait zone
+    extends StObject
+       with DateFormatPartTypes
+       with typingsJapgolly.globalize.distGlobalizeMod.DateFormatPartTypes
+  inline def zone: zone = "zone".asInstanceOf[zone]
 }
-

@@ -1,81 +1,67 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.XboxLive
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait XboxLiveEndpointPairCreationStatus extends js.Object
-
+sealed trait XboxLiveEndpointPairCreationStatus extends StObject
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
 @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairCreationStatus")
 @js.native
-object XboxLiveEndpointPairCreationStatus extends js.Object {
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  @js.native
-  sealed trait canceled extends XboxLiveEndpointPairCreationStatus
+object XboxLiveEndpointPairCreationStatus extends StObject {
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait localSystemNotAuthorized extends XboxLiveEndpointPairCreationStatus
+  sealed trait canceled
+    extends StObject
+       with XboxLiveEndpointPairCreationStatus
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait noCompatibleNetworkPaths extends XboxLiveEndpointPairCreationStatus
+  sealed trait localSystemNotAuthorized
+    extends StObject
+       with XboxLiveEndpointPairCreationStatus
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait noLocalNetworks extends XboxLiveEndpointPairCreationStatus
+  sealed trait noCompatibleNetworkPaths
+    extends StObject
+       with XboxLiveEndpointPairCreationStatus
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait refusedDueToConfiguration extends XboxLiveEndpointPairCreationStatus
+  sealed trait noLocalNetworks
+    extends StObject
+       with XboxLiveEndpointPairCreationStatus
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait remoteSystemNotAuthorized extends XboxLiveEndpointPairCreationStatus
+  sealed trait refusedDueToConfiguration
+    extends StObject
+       with XboxLiveEndpointPairCreationStatus
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait succeeded extends XboxLiveEndpointPairCreationStatus
+  sealed trait remoteSystemNotAuthorized
+    extends StObject
+       with XboxLiveEndpointPairCreationStatus
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait timedOut extends XboxLiveEndpointPairCreationStatus
+  sealed trait succeeded
+    extends StObject
+       with XboxLiveEndpointPairCreationStatus
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait unexpectedInternalError extends XboxLiveEndpointPairCreationStatus
+  sealed trait timedOut
+    extends StObject
+       with XboxLiveEndpointPairCreationStatus
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[XboxLiveEndpointPairCreationStatus with Double] = js.native
-  /* 4 */ @js.native
-  object canceled extends TopLevel[canceled with Double]
-  
-  /* 3 */ @js.native
-  object localSystemNotAuthorized extends TopLevel[localSystemNotAuthorized with Double]
-  
-  /* 2 */ @js.native
-  object noCompatibleNetworkPaths extends TopLevel[noCompatibleNetworkPaths with Double]
-  
-  /* 1 */ @js.native
-  object noLocalNetworks extends TopLevel[noLocalNetworks with Double]
-  
-  /* 7 */ @js.native
-  object refusedDueToConfiguration extends TopLevel[refusedDueToConfiguration with Double]
-  
-  /* 6 */ @js.native
-  object remoteSystemNotAuthorized extends TopLevel[remoteSystemNotAuthorized with Double]
-  
-  /* 0 */ @js.native
-  object succeeded extends TopLevel[succeeded with Double]
-  
-  /* 5 */ @js.native
-  object timedOut extends TopLevel[timedOut with Double]
-  
-  /* 8 */ @js.native
-  object unexpectedInternalError extends TopLevel[unexpectedInternalError with Double]
-  
+  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @js.native
+  sealed trait unexpectedInternalError
+    extends StObject
+       with XboxLiveEndpointPairCreationStatus
 }
-

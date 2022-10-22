@@ -1,25 +1,64 @@
 package typingsJapgolly.sipJs.mod.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js", "Core.C")
-@js.native
-object C extends js.Object {
-  val ACK: typingsJapgolly.sipJs.sipJsStrings.ACK = js.native
-  val BYE: typingsJapgolly.sipJs.sipJsStrings.BYE = js.native
-  val CANCEL: typingsJapgolly.sipJs.sipJsStrings.CANCEL = js.native
-  val INFO: typingsJapgolly.sipJs.sipJsStrings.INFO = js.native
-  val INVITE: typingsJapgolly.sipJs.sipJsStrings.INVITE = js.native
-  val MESSAGE: typingsJapgolly.sipJs.sipJsStrings.MESSAGE = js.native
-  val NOTIFY: typingsJapgolly.sipJs.sipJsStrings.NOTIFY = js.native
-  val OPTIONS: typingsJapgolly.sipJs.sipJsStrings.OPTIONS = js.native
-  val PRACK: typingsJapgolly.sipJs.sipJsStrings.PRACK = js.native
-  val PUBLISH: typingsJapgolly.sipJs.sipJsStrings.PUBLISH = js.native
-  val REFER: typingsJapgolly.sipJs.sipJsStrings.REFER = js.native
-  val REGISTER: typingsJapgolly.sipJs.sipJsStrings.REGISTER = js.native
-  val SUBSCRIBE: typingsJapgolly.sipJs.sipJsStrings.SUBSCRIBE = js.native
-  val UPDATE: typingsJapgolly.sipJs.sipJsStrings.UPDATE = js.native
+object C {
+  
+  @JSImport("sip.js", "Core.C.ACK")
+  @js.native
+  val ACK: /* "ACK" */ String = js.native
+  
+  @JSImport("sip.js", "Core.C.BYE")
+  @js.native
+  val BYE: /* "BYE" */ String = js.native
+  
+  @JSImport("sip.js", "Core.C.CANCEL")
+  @js.native
+  val CANCEL: /* "CANCEL" */ String = js.native
+  
+  @JSImport("sip.js", "Core.C.INFO")
+  @js.native
+  val INFO: /* "INFO" */ String = js.native
+  
+  @JSImport("sip.js", "Core.C.INVITE")
+  @js.native
+  val INVITE: /* "INVITE" */ String = js.native
+  
+  @JSImport("sip.js", "Core.C.MESSAGE")
+  @js.native
+  val MESSAGE: /* "MESSAGE" */ String = js.native
+  
+  @JSImport("sip.js", "Core.C.NOTIFY")
+  @js.native
+  val NOTIFY: /* "NOTIFY" */ String = js.native
+  
+  @JSImport("sip.js", "Core.C.OPTIONS")
+  @js.native
+  val OPTIONS: /* "OPTIONS" */ String = js.native
+  
+  @JSImport("sip.js", "Core.C.PRACK")
+  @js.native
+  val PRACK: /* "PRACK" */ String = js.native
+  
+  @JSImport("sip.js", "Core.C.PUBLISH")
+  @js.native
+  val PUBLISH: /* "PUBLISH" */ String = js.native
+  
+  @JSImport("sip.js", "Core.C.REFER")
+  @js.native
+  val REFER: /* "REFER" */ String = js.native
+  
+  @JSImport("sip.js", "Core.C.REGISTER")
+  @js.native
+  val REGISTER: /* "REGISTER" */ String = js.native
+  
+  @JSImport("sip.js", "Core.C.SUBSCRIBE")
+  @js.native
+  val SUBSCRIBE: /* "SUBSCRIBE" */ String = js.native
+  
+  @JSImport("sip.js", "Core.C.UPDATE")
+  @js.native
+  val UPDATE: /* "UPDATE" */ String = js.native
 }
-

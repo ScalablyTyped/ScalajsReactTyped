@@ -1,12 +1,14 @@
 package typingsJapgolly.mumath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mumath/within", JSImport.Namespace)
-@js.native
-object withinMod extends js.Object {
-  def apply(value: Double, left: Double, right: Double): Double = js.native
+object withinMod {
+  
+  inline def apply(value: Double, left: Double, right: Double): Double = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @JSImport("mumath/within", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

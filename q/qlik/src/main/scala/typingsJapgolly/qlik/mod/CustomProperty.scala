@@ -5,32 +5,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.qlik.qlikStrings.StringExpr
 import typingsJapgolly.qlik.qlikStrings.StringExpression
 import typingsJapgolly.qlik.qlikStrings.ValueExpression
-import typingsJapgolly.qlik.qlikStrings._empty
-import typingsJapgolly.qlik.qlikStrings.`color-picker`
-import typingsJapgolly.qlik.qlikStrings.always
-import typingsJapgolly.qlik.qlikStrings.array
-import typingsJapgolly.qlik.qlikStrings.boolean
-import typingsJapgolly.qlik.qlikStrings.button
-import typingsJapgolly.qlik.qlikStrings.buttongroup
 import typingsJapgolly.qlik.qlikStrings.dimension
-import typingsJapgolly.qlik.qlikStrings.dropdown
-import typingsJapgolly.qlik.qlikStrings.expression
-import typingsJapgolly.qlik.qlikStrings.integer
-import typingsJapgolly.qlik.qlikStrings.items
-import typingsJapgolly.qlik.qlikStrings.link
 import typingsJapgolly.qlik.qlikStrings.measure
-import typingsJapgolly.qlik.qlikStrings.media
-import typingsJapgolly.qlik.qlikStrings.number
-import typingsJapgolly.qlik.qlikStrings.optional
-import typingsJapgolly.qlik.qlikStrings.radiobuttons
-import typingsJapgolly.qlik.qlikStrings.slider
-import typingsJapgolly.qlik.qlikStrings.string
-import typingsJapgolly.qlik.qlikStrings.switch
-import typingsJapgolly.qlik.qlikStrings.text
-import typingsJapgolly.qlik.qlikStrings.textarea
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlik.mod.CustomPropertyString
@@ -53,372 +32,120 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlik.mod.CustomPropertyExpression
   - typingsJapgolly.qlik.mod.CustomPropertyItems
 */
-trait CustomProperty extends js.Object
-
+trait CustomProperty extends StObject
 object CustomProperty {
-  @scala.inline
-  def CustomPropertyNumber(
-    `type`: number,
-    component: String = null,
-    defaultValue: Int | Double = null,
-    label: String = null,
-    max: String = null,
-    min: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null
-  ): CustomProperty = {
+  
+  inline def CustomPropertyArray(component: Unit): typingsJapgolly.qlik.mod.CustomPropertyArray = {
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("array")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyArray]
+  }
+  
+  inline def CustomPropertyButton(action: VisualizationOptions => Callback): typingsJapgolly.qlik.mod.CustomPropertyButton = {
+    val __obj = js.Dynamic.literal(action = js.Any.fromFunction1((t0: VisualizationOptions) => action(t0).runNow()), component = "button")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyButton]
+  }
+  
+  inline def CustomPropertyButtonGroup(): typingsJapgolly.qlik.mod.CustomPropertyButtonGroup = {
+    val __obj = js.Dynamic.literal(component = "buttongroup")
+    __obj.updateDynamic("type")("string")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyButtonGroup]
+  }
+  
+  inline def CustomPropertyCheckbox(): typingsJapgolly.qlik.mod.CustomPropertyCheckbox = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
+    __obj.updateDynamic("type")("boolean")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyCheckbox]
   }
-  @scala.inline
-  def CustomPropertyColorPicker(
-    component: `color-picker`,
-    `type`: integer,
-    defaultValue: Int | Double = null,
-    label: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
+  
+  inline def CustomPropertyColorPicker(): typingsJapgolly.qlik.mod.CustomPropertyColorPicker = {
+    val __obj = js.Dynamic.literal(component = "color-picker")
+    __obj.updateDynamic("type")("integer")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyColorPicker]
   }
-  @scala.inline
-  def CustomPropertyCheckbox(
-    `type`: boolean,
-    defaultValue: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
+  
+  inline def CustomPropertyDropdown(ref: String): typingsJapgolly.qlik.mod.CustomPropertyDropdown = {
+    val __obj = js.Dynamic.literal(component = "dropdown", ref = ref.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyDropdown]
   }
-  @scala.inline
-  def CustomPropertyLink(
-    component: link,
-    label: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null,
-    `type`: string | integer | number | array | boolean | items = null,
-    url: String = null
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
-  }
-  @scala.inline
-  def CustomPropertyRangeSlider(
-    component: slider,
-    `type`: array,
-    defaultValue: Int | Double = null,
-    label: String = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null,
-    step: Int | Double = null
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
-  }
-  @scala.inline
-  def CustomPropertySwitch(
-    component: switch,
-    `type`: boolean,
-    defaultValue: String = null,
-    label: String = null,
-    options: CustomPropertyOptions = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
-  }
-  @scala.inline
-  def CustomPropertyButtonGroup(
-    component: buttongroup,
-    `type`: string,
-    defaultValue: String = null,
-    label: String = null,
-    options: js.Array[ButtonGroupOption] | js.Function0[js.Array[ButtonGroupOption]] = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
-  }
-  @scala.inline
-  def CustomPropertyExpression(
-    component: expression,
+  
+  inline def CustomPropertyExpression(
     expressionType: dimension | measure | StringExpr | typingsJapgolly.qlik.qlikStrings.ValueExpr | ValueExpression | StringExpression,
-    defaultValue: String = null,
-    label: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null,
-    `type`: js.UndefOr[scala.Nothing] = js.undefined
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], expressionType = expressionType.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
-  }
-  @scala.inline
-  def CustomPropertySlider(
-    component: slider,
-    `type`: number,
-    defaultValue: Int | Double = null,
-    label: String = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null,
-    step: Int | Double = null
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
+    `type`: Unit
+  ): typingsJapgolly.qlik.mod.CustomPropertyExpression = {
+    val __obj = js.Dynamic.literal(component = "expression", expressionType = expressionType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyExpression]
   }
-  @scala.inline
-  def CustomPropertyText(
-    component: text,
-    label: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null,
-    `type`: string | integer | number | array | boolean | items = null
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
-  }
-  @scala.inline
-  def CustomPropertyButton(
-    action: VisualizationOptions => Callback,
-    component: button,
-    label: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null,
-    `type`: string | integer | number | array | boolean | items = null
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("action")(js.Any.fromFunction1((t0: typingsJapgolly.qlik.mod.VisualizationOptions) => action(t0).runNow()))
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
-  }
-  @scala.inline
-  def CustomPropertyDropdown(
-    component: dropdown,
-    ref: String,
-    `type`: string,
-    defaultValue: String = null,
-    label: String = null,
-    options: CustomPropertyOptions = null,
-    show: Boolean | ShowFunction = null
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
-  }
-  @scala.inline
-  def CustomPropertyRadio(
-    component: radiobuttons,
-    `type`: string,
-    defaultValue: String = null,
-    label: String = null,
-    options: CustomPropertyOptions = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
-  }
-  @scala.inline
-  def CustomProperyMedia(
-    component: media,
-    `type`: string,
-    label: String = null,
-    layoutRef: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (layoutRef != null) __obj.updateDynamic("layoutRef")(layoutRef.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
-  }
-  @scala.inline
-  def CustomPropertyArray(
-    `type`: array,
-    addTranslation: String = null,
-    allowAdd: js.UndefOr[Boolean] = js.undefined,
-    allowMove: js.UndefOr[Boolean] = js.undefined,
-    allowRemove: js.UndefOr[Boolean] = js.undefined,
-    component: js.UndefOr[scala.Nothing] = js.undefined,
-    itemTitleRef: String = null,
-    label: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null
-  ): CustomProperty = {
+  
+  inline def CustomPropertyInteger(): typingsJapgolly.qlik.mod.CustomPropertyInteger = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (addTranslation != null) __obj.updateDynamic("addTranslation")(addTranslation.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowAdd)) __obj.updateDynamic("allowAdd")(allowAdd.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMove)) __obj.updateDynamic("allowMove")(allowMove.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowRemove)) __obj.updateDynamic("allowRemove")(allowRemove.asInstanceOf[js.Any])
-    if (!js.isUndefined(component)) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (itemTitleRef != null) __obj.updateDynamic("itemTitleRef")(itemTitleRef.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
+    __obj.updateDynamic("type")("integer")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyInteger]
   }
-  @scala.inline
-  def CustomPropertyItems(
-    items: StringDictionary[CustomProperty],
-    `type`: items,
-    label: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null
-  ): CustomProperty = {
+  
+  inline def CustomPropertyItems(items: StringDictionary[CustomProperty]): typingsJapgolly.qlik.mod.CustomPropertyItems = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
+    __obj.updateDynamic("type")("items")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyItems]
   }
-  @scala.inline
-  def CustomPropertyString(
-    `type`: string,
-    defaultValue: String = null,
-    expression: always | optional | _empty = null,
-    label: String = null,
-    maxLength: Int | Double = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null
-  ): CustomProperty = {
+  
+  inline def CustomPropertyLink(): typingsJapgolly.qlik.mod.CustomPropertyLink = {
+    val __obj = js.Dynamic.literal(component = "link")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyLink]
+  }
+  
+  inline def CustomPropertyNumber(): typingsJapgolly.qlik.mod.CustomPropertyNumber = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
+    __obj.updateDynamic("type")("number")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyNumber]
   }
-  @scala.inline
-  def CustomPropertyInteger(
-    `type`: integer,
-    component: String = null,
-    defaultValue: Int | Double = null,
-    label: String = null,
-    max: String = null,
-    min: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null
-  ): CustomProperty = {
+  
+  inline def CustomPropertyRadio(): typingsJapgolly.qlik.mod.CustomPropertyRadio = {
+    val __obj = js.Dynamic.literal(component = "radiobuttons")
+    __obj.updateDynamic("type")("string")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyRadio]
+  }
+  
+  inline def CustomPropertyRangeSlider(): typingsJapgolly.qlik.mod.CustomPropertyRangeSlider = {
+    val __obj = js.Dynamic.literal(component = "slider")
+    __obj.updateDynamic("type")("array")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyRangeSlider]
+  }
+  
+  inline def CustomPropertySlider(): typingsJapgolly.qlik.mod.CustomPropertySlider = {
+    val __obj = js.Dynamic.literal(component = "slider")
+    __obj.updateDynamic("type")("number")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertySlider]
+  }
+  
+  inline def CustomPropertyString(): typingsJapgolly.qlik.mod.CustomPropertyString = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
+    __obj.updateDynamic("type")("string")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyString]
   }
-  @scala.inline
-  def CustomPropertyTextArea(
-    component: textarea,
-    `type`: string,
-    defaultValue: String = null,
-    label: String = null,
-    maxlength: Int | Double = null,
-    ref: String = null,
-    rows: Int | Double = null,
-    show: Boolean | ShowFunction = null
-  ): CustomProperty = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomProperty]
+  
+  inline def CustomPropertySwitch(): typingsJapgolly.qlik.mod.CustomPropertySwitch = {
+    val __obj = js.Dynamic.literal(component = "switch")
+    __obj.updateDynamic("type")("boolean")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertySwitch]
+  }
+  
+  inline def CustomPropertyText(): typingsJapgolly.qlik.mod.CustomPropertyText = {
+    val __obj = js.Dynamic.literal(component = "text")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyText]
+  }
+  
+  inline def CustomPropertyTextArea(): typingsJapgolly.qlik.mod.CustomPropertyTextArea = {
+    val __obj = js.Dynamic.literal(component = "textarea")
+    __obj.updateDynamic("type")("string")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomPropertyTextArea]
+  }
+  
+  inline def CustomProperyMedia(): typingsJapgolly.qlik.mod.CustomProperyMedia = {
+    val __obj = js.Dynamic.literal(component = "media")
+    __obj.updateDynamic("type")("string")
+    __obj.asInstanceOf[typingsJapgolly.qlik.mod.CustomProperyMedia]
   }
 }
-

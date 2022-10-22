@@ -1,31 +1,47 @@
 package typingsJapgolly.pgPromise.mod
 
 import typingsJapgolly.pgPromise.pgPromiseStrings.array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IParameterizedQuery extends _QueryParam {
+trait IParameterizedQuery
+  extends StObject
+     with _QueryParam {
+  
   var binary: js.UndefOr[Boolean] = js.undefined
+  
   var rowMode: js.UndefOr[Unit | array] = js.undefined
+  
   var text: js.UndefOr[String | QueryFile] = js.undefined
-  var values: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var values: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object IParameterizedQuery {
-  @scala.inline
-  def apply(
-    binary: js.UndefOr[Boolean] = js.undefined,
-    rowMode: Unit | array = null,
-    text: String | QueryFile = null,
-    values: js.Array[_] = null
-  ): IParameterizedQuery = {
+  
+  inline def apply(): IParameterizedQuery = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
-    if (rowMode != null) __obj.updateDynamic("rowMode")(rowMode.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParameterizedQuery]
   }
+  
+  extension [Self <: IParameterizedQuery](x: Self) {
+    
+    inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    
+    inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    
+    inline def setRowMode(value: Unit | array): Self = StObject.set(x, "rowMode", value.asInstanceOf[js.Any])
+    
+    inline def setRowModeUndefined: Self = StObject.set(x, "rowMode", js.undefined)
+    
+    inline def setText(value: String | QueryFile): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

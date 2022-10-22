@@ -1,13 +1,27 @@
-package typingsJapgolly.chance
+package typingsJapgolly.chance.Chance
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Chance {
-  type MixinDescriptor = org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]
-  // A more rigorous approach might be to produce
-  // the correct options interfaces for each method
-  type Options = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type Seed = scala.Double | java.lang.String
-}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.chance.chanceBooleans.`false`
+  - scala.Null
+  - scala.Unit
+  - typingsJapgolly.chance.chanceInts.`0`
+  - scala.Double
+  - typingsJapgolly.chance.chanceStrings._empty
+*/
+type FalsyType = js.UndefOr[_FalsyType | Null | Double]
+
+type MixinDescriptor = StringDictionary[js.Function1[/* repeated */ Any, Any]]
+
+type NameOptions = FullNameOptions & FirstNameOptions & LastNameOptions & PrefixOptions
+
+// A more rigorous approach might be to produce
+// the correct options interfaces for each method
+type Options = StringDictionary[Any]
+
+type Seed = Double | String

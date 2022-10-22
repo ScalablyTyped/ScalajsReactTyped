@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/channels" : "5.3.13"
+      "@storybook/channels" : "6.5.12"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/channels" : "5.3.13"
+      "@storybook/channels" : "6.5.12"
     }
   ],
   "compile-devDependencies" : [

@@ -1,24 +1,31 @@
 package typingsJapgolly.chromeApps.chrome.runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// For chrome.sockets ///
-trait SocketTcpPermission extends js.Object {
+trait SocketTcpPermission extends StObject {
+  
   /**
     * The host:port pattern for connect operations.
     * *:* are allowed
     */
   var connect: js.UndefOr[String | js.Array[String]] = js.undefined
 }
-
 object SocketTcpPermission {
-  @scala.inline
-  def apply(connect: String | js.Array[String] = null): SocketTcpPermission = {
+  
+  inline def apply(): SocketTcpPermission = {
     val __obj = js.Dynamic.literal()
-    if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketTcpPermission]
   }
+  
+  extension [Self <: SocketTcpPermission](x: Self) {
+    
+    inline def setConnect(value: String | js.Array[String]): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+    
+    inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+    
+    inline def setConnectVarargs(value: String*): Self = StObject.set(x, "connect", js.Array(value*))
+  }
 }
-

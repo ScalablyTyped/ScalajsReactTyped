@@ -1,24 +1,27 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
 import typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.photo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InputMediaPhoto
-  extends InputMediaBase
+  extends StObject
+     with InputMediaBase
      with InputMedia {
+  
   var `type`: photo
 }
-
 object InputMediaPhoto {
-  @scala.inline
-  def apply(media: String, `type`: photo, caption: String = null, parse_mode: ParseMode = null): InputMediaPhoto = {
+  
+  inline def apply(media: String): InputMediaPhoto = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (parse_mode != null) __obj.updateDynamic("parse_mode")(parse_mode.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("photo")
     __obj.asInstanceOf[InputMediaPhoto]
   }
+  
+  extension [Self <: InputMediaPhoto](x: Self) {
+    
+    inline def setType(value: photo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

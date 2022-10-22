@@ -2,44 +2,27 @@ package typingsJapgolly.angularForms.mod
 
 import typingsJapgolly.angularCore.mod.OnDestroy
 import typingsJapgolly.angularCore.mod.OnInit
+import typingsJapgolly.angularCore.mod.ɵɵDirectiveDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import typingsJapgolly.angularForms.angularFormsBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "AbstractFormGroupDirective")
 @js.native
-class AbstractFormGroupDirective ()
+open class AbstractFormGroupDirective ()
   extends ControlContainer
      with OnInit
      with OnDestroy {
-  /**
-    * @description
-    * The async validators registered with this group.
-    */
-  val asyncValidator: AsyncValidatorFn | Null = js.native
-  /**
-    * @description
-    * The `FormGroup` bound to this directive.
-    */
-  @JSName("control")
-  val control_AbstractFormGroupDirective: FormGroup = js.native
-  /**
-    * @description
-    * The path to this group from the top-level directive.
-    */
-  @JSName("path")
-  val path_AbstractFormGroupDirective: js.Array[String] = js.native
-  /**
-    * @description
-    * The synchronous validators registered with this group.
-    */
-  val validator: ValidatorFn | Null = js.native
+  
   /**
     * A callback method that performs custom clean-up, invoked immediately
-    * after a directive, pipe, or service instance is destroyed.
+    * before a directive, pipe, or service instance is destroyed.
     */
   /* CompleteClass */
   override def ngOnDestroy(): Unit = js.native
+  
   /**
     * A callback method that is invoked immediately after the
     * default change detector has checked the directive's
@@ -50,4 +33,40 @@ class AbstractFormGroupDirective ()
   /* CompleteClass */
   override def ngOnInit(): Unit = js.native
 }
-
+/* static members */
+object AbstractFormGroupDirective {
+  
+  @JSImport("@angular/forms", "AbstractFormGroupDirective")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/forms", "AbstractFormGroupDirective.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    AbstractFormGroupDirective, 
+    scala.Nothing, 
+    scala.Nothing, 
+    js.Object, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[
+      AbstractFormGroupDirective, 
+      scala.Nothing, 
+      scala.Nothing, 
+      js.Object, 
+      js.Object, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `false`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/forms", "AbstractFormGroupDirective.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[AbstractFormGroupDirective, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[AbstractFormGroupDirective, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+}

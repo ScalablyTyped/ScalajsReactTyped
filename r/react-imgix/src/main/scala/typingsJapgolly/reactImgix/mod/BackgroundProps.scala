@@ -1,32 +1,46 @@
 package typingsJapgolly.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BackgroundProps extends js.Object {
+trait BackgroundProps extends StObject {
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var disableLibraryParam: js.UndefOr[Boolean] = js.undefined
+  
   var htmlAttributes: js.UndefOr[ImgixHTMLAttributes] = js.undefined
-  var imgixParams: js.UndefOr[ImigixParams] = js.undefined
+  
+  var imgixParams: js.UndefOr[ImgixParams] = js.undefined
+  
   var src: String
 }
-
 object BackgroundProps {
-  @scala.inline
-  def apply(
-    src: String,
-    className: String = null,
-    disableLibraryParam: js.UndefOr[Boolean] = js.undefined,
-    htmlAttributes: ImgixHTMLAttributes = null,
-    imgixParams: ImigixParams = null
-  ): BackgroundProps = {
+  
+  inline def apply(src: String): BackgroundProps = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableLibraryParam)) __obj.updateDynamic("disableLibraryParam")(disableLibraryParam.asInstanceOf[js.Any])
-    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
-    if (imgixParams != null) __obj.updateDynamic("imgixParams")(imgixParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundProps]
   }
+  
+  extension [Self <: BackgroundProps](x: Self) {
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setDisableLibraryParam(value: Boolean): Self = StObject.set(x, "disableLibraryParam", value.asInstanceOf[js.Any])
+    
+    inline def setDisableLibraryParamUndefined: Self = StObject.set(x, "disableLibraryParam", js.undefined)
+    
+    inline def setHtmlAttributes(value: ImgixHTMLAttributes): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
+    
+    inline def setImgixParams(value: ImgixParams): Self = StObject.set(x, "imgixParams", value.asInstanceOf[js.Any])
+    
+    inline def setImgixParamsUndefined: Self = StObject.set(x, "imgixParams", js.undefined)
+    
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+  }
 }
-

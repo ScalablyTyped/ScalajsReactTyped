@@ -1,37 +1,29 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HierarchyMode extends js.Object
-
+sealed trait HierarchyMode extends StObject
 @JSGlobal("SP.JsGrid.HierarchyMode")
 @js.native
-object HierarchyMode extends js.Object {
+object HierarchyMode extends StObject {
+  
+  // 1,
   @js.native
-  sealed trait Grouping extends HierarchyMode
+  sealed trait Grouping
+    extends StObject
+       with HierarchyMode
   
-   // 0,
   @js.native
-  sealed trait None extends HierarchyMode
+  sealed trait None
+    extends StObject
+       with HierarchyMode
   
-   // 1,
+  // 0,
   @js.native
-  sealed trait Standard extends HierarchyMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HierarchyMode with Double] = js.native
-  /* 2 */ @js.native
-  object Grouping extends TopLevel[Grouping with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 1 */ @js.native
-  object Standard extends TopLevel[Standard with Double]
-  
+  sealed trait Standard
+    extends StObject
+       with HierarchyMode
 }
-

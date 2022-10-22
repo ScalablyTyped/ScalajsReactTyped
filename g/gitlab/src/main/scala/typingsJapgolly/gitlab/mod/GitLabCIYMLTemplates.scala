@@ -1,14 +1,13 @@
 package typingsJapgolly.gitlab.mod
 
-import typingsJapgolly.gitlab.baseServiceMod.BaseServiceOptions
+import typingsJapgolly.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitlab", "GitLabCIYMLTemplates")
 @js.native
-class GitLabCIYMLTemplates ()
-  extends typingsJapgolly.gitlab.servicesMod.GitLabCIYMLTemplates {
+open class GitLabCIYMLTemplates protected ()
+  extends typingsJapgolly.gitlab.distTypesCoreServicesMod.GitLabCIYMLTemplates {
   def this(options: BaseServiceOptions) = this()
 }
-

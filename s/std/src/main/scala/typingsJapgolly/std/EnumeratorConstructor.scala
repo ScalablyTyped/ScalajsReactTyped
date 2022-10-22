@@ -1,14 +1,16 @@
 package typingsJapgolly.std
 
 import org.scalablytyped.runtime.Instantiable1
+import typingsJapgolly.std.anon.Item
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EnumeratorConstructor
-  extends Instantiable1[
-      (/* collection */ Anon1[js.Object]) | (/* collection */ js.Any) | (/* safearray */ SafeArray[js.Object]), 
+  extends StObject
+     with /* standard scripthost */
+Instantiable1[
+      (/* collection */ Any) | (/* collection */ Item[js.Object]) | (/* safearray */ SafeArray[js.Object]), 
       Enumerator[js.Object]
     ]
-

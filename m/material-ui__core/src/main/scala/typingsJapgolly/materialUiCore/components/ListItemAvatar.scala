@@ -1,48 +1,44 @@
 package typingsJapgolly.materialUiCore.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Ref
-import japgolly.scalajs.react.raw.React.RefHandle
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.materialUiCore.PartialClassNameMapListItIcon
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.materialUiCore.anon.PartialClassNameMapListIt
 import typingsJapgolly.materialUiCore.listItemAvatarListItemAvatarMod.ListItemAvatarProps
-import typingsJapgolly.materialUiCore.listItemAvatarMod.default
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.Ref
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ListItemAvatar {
-  def apply(
-    className: String = null,
-    classes: PartialClassNameMapListItIcon = null,
-    innerRef: Ref | RefHandle[_] = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ListItemAvatarProps, default, Unit, ListItemAvatarProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUiCore.listItemAvatarListItemAvatarMod.ListItemAvatarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUiCore.listItemAvatarMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUiCore.listItemAvatarListItemAvatarMod.ListItemAvatarProps])(children: _*)
-  }
-  @JSImport("@material-ui/core/ListItemAvatar", JSImport.Default)
+  @JSImport("@material-ui/core", "ListItemAvatar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def classes(value: PartialClassNameMapListIt): this.type = set("classes", value.asInstanceOf[js.Any])
+    
+    inline def innerRef(value: Ref[Any]): this.type = set("innerRef", value.asInstanceOf[js.Any])
+    
+    inline def innerRefFunction1(value: Any | Null => Callback): this.type = set("innerRef", js.Any.fromFunction1((t0: Any | Null) => value(t0).runNow()))
+    
+    inline def innerRefNull: this.type = set("innerRef", null)
+    
+    inline def ref(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {} extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+    ): this.type = set("ref", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ListItemAvatar.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ListItemAvatarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

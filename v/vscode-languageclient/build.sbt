@@ -1,19 +1,16 @@
 organization := "org.scalablytyped.japgolly"
 name := "vscode-languageclient"
-version := "5.2.1-b24222"
-scalaVersion := "2.13.1"
+version := "8.0.2-d0ca87"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "vscode" % "1.42-dt-20200225Z-2a2256",
-  "org.scalablytyped.japgolly" %%% "vscode-jsonrpc" % "4.0.0-c9070f",
-  "org.scalablytyped.japgolly" %%% "vscode-languageserver-protocol" % "3.14.1-5a0d4c",
-  "org.scalablytyped.japgolly" %%% "vscode-languageserver-types" % "3.15.1-e10a0e")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "vscode" % "1.72-dt-20221006Z-6e77a6",
+  "org.scalablytyped.japgolly" %%% "vscode-jsonrpc" % "8.0.2-9231e1",
+  "org.scalablytyped.japgolly" %%% "vscode-languageserver-protocol" % "3.17.2-818217",
+  "org.scalablytyped.japgolly" %%% "vscode-languageserver-types" % "3.17.2-1182b9")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

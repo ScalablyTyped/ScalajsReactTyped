@@ -1,52 +1,80 @@
 package typingsJapgolly.teechart.Tee
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IAnnotation extends ITool {
-  var bounds: IRectangle
-  var format: IFormat
-  var items: js.Array[IAnnotation]
-  var margins: IMargins
-  var position: IPoint
-  var text: String
-  var transparent: Boolean
-  var visible: Boolean
+trait IAnnotation
+  extends StObject
+     with ITool {
+  
   def add(text: String): IAnnotation
+  
+  var bounds: IRectangle
+  
+  var format: IFormat
+  
+  var items: js.Array[IAnnotation]
+  
+  var margins: IMargins
+  
+  var position: IPoint
+  
   def resize(): Unit
+  
+  var text: String
+  
+  var transparent: Boolean
+  
+  var visible: Boolean
 }
-
 object IAnnotation {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     active: Boolean,
-    add: String => CallbackTo[IAnnotation],
+    add: String => IAnnotation,
     bounds: IRectangle,
     chart: IChart,
-    clicked: IPoint => CallbackTo[Boolean],
+    clicked: IPoint => Boolean,
     draw: Callback,
     format: IFormat,
     items: js.Array[IAnnotation],
     margins: IMargins,
-    mousedown: js.Any => CallbackTo[Boolean],
-    mousemove: js.Any => CallbackTo[Boolean],
+    mousedown: Any => Boolean,
+    mousemove: Any => Boolean,
     position: IPoint,
     resize: Callback,
     text: String,
     transparent: Boolean,
     visible: Boolean
   ): IAnnotation = {
-    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], margins = margins.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], transparent = transparent.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
-    __obj.updateDynamic("add")(js.Any.fromFunction1((t0: java.lang.String) => add(t0).runNow()))
-    __obj.updateDynamic("clicked")(js.Any.fromFunction1((t0: typingsJapgolly.teechart.Tee.IPoint) => clicked(t0).runNow()))
-    __obj.updateDynamic("draw")(draw.toJsFn)
-    __obj.updateDynamic("mousedown")(js.Any.fromFunction1((t0: js.Any) => mousedown(t0).runNow()))
-    __obj.updateDynamic("mousemove")(js.Any.fromFunction1((t0: js.Any) => mousemove(t0).runNow()))
-    __obj.updateDynamic("resize")(resize.toJsFn)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], add = js.Any.fromFunction1(add), bounds = bounds.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], clicked = js.Any.fromFunction1(clicked), draw = draw.toJsFn, format = format.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], margins = margins.asInstanceOf[js.Any], mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), position = position.asInstanceOf[js.Any], resize = resize.toJsFn, text = text.asInstanceOf[js.Any], transparent = transparent.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnnotation]
   }
+  
+  extension [Self <: IAnnotation](x: Self) {
+    
+    inline def setAdd(value: String => IAnnotation): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    
+    inline def setBounds(value: IRectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    
+    inline def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setItems(value: js.Array[IAnnotation]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsVarargs(value: IAnnotation*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setMargins(value: IMargins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: IPoint): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setResize(value: Callback): Self = StObject.set(x, "resize", value.toJsFn)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,21 +1,32 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.TextDocumentPositionParams
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolDottypeDefinitionMod.TypeDefinitionParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolDottypeDefinitionMod.TypeDefinitionRegistrationOptions
+import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashtypeDefinition
+import typingsJapgolly.vscodeLanguageserverTypes.mod.Definition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "TypeDefinitionRequest")
-@js.native
-object TypeDefinitionRequest extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.RequestType[
-    TextDocumentPositionParams, 
-    typingsJapgolly.vscodeLanguageserverTypes.mod.Location | (js.Array[
+object TypeDefinitionRequest {
+  
+  @JSImport("vscode-languageserver-protocol", "TypeDefinitionRequest.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "TypeDefinitionRequest.method")
+  @js.native
+  val method: textDocumentSlashtypeDefinition = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "TypeDefinitionRequest.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
+    TypeDefinitionParams, 
+    Definition | js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.LocationLink] | Null, 
+    js.Array[
       typingsJapgolly.vscodeLanguageserverTypes.mod.Location | typingsJapgolly.vscodeLanguageserverTypes.mod.LocationLink
-    ]) | Null, 
+    ], 
     Unit, 
-    TextDocumentRegistrationOptions
+    TypeDefinitionRegistrationOptions
   ] = js.native
 }
-

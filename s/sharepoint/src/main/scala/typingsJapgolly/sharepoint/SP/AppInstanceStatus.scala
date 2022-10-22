@@ -1,77 +1,62 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppInstanceStatus extends js.Object
-
+sealed trait AppInstanceStatus extends StObject
 @JSGlobal("SP.AppInstanceStatus")
 @js.native
-object AppInstanceStatus extends js.Object {
-  @js.native
-  sealed trait canceling extends AppInstanceStatus
+object AppInstanceStatus extends StObject {
   
   @js.native
-  sealed trait disabled extends AppInstanceStatus
+  sealed trait canceling
+    extends StObject
+       with AppInstanceStatus
   
   @js.native
-  sealed trait disabling extends AppInstanceStatus
+  sealed trait disabled
+    extends StObject
+       with AppInstanceStatus
   
   @js.native
-  sealed trait initialized extends AppInstanceStatus
+  sealed trait disabling
+    extends StObject
+       with AppInstanceStatus
   
   @js.native
-  sealed trait installed extends AppInstanceStatus
+  sealed trait initialized
+    extends StObject
+       with AppInstanceStatus
   
   @js.native
-  sealed trait installing extends AppInstanceStatus
+  sealed trait installed
+    extends StObject
+       with AppInstanceStatus
   
   @js.native
-  sealed trait invalidStatus extends AppInstanceStatus
+  sealed trait installing
+    extends StObject
+       with AppInstanceStatus
   
   @js.native
-  sealed trait uninstalling extends AppInstanceStatus
+  sealed trait invalidStatus
+    extends StObject
+       with AppInstanceStatus
   
   @js.native
-  sealed trait upgradeCanceling extends AppInstanceStatus
+  sealed trait uninstalling
+    extends StObject
+       with AppInstanceStatus
   
   @js.native
-  sealed trait upgrading extends AppInstanceStatus
+  sealed trait upgradeCanceling
+    extends StObject
+       with AppInstanceStatus
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppInstanceStatus with Double] = js.native
-  /* 2 */ @js.native
-  object canceling extends TopLevel[canceling with Double]
-  
-  /* 9 */ @js.native
-  object disabled extends TopLevel[disabled with Double]
-  
-  /* 8 */ @js.native
-  object disabling extends TopLevel[disabling with Double]
-  
-  /* 6 */ @js.native
-  object initialized extends TopLevel[initialized with Double]
-  
-  /* 4 */ @js.native
-  object installed extends TopLevel[installed with Double]
-  
-  /* 1 */ @js.native
-  object installing extends TopLevel[installing with Double]
-  
-  /* 0 */ @js.native
-  object invalidStatus extends TopLevel[invalidStatus with Double]
-  
-  /* 3 */ @js.native
-  object uninstalling extends TopLevel[uninstalling with Double]
-  
-  /* 7 */ @js.native
-  object upgradeCanceling extends TopLevel[upgradeCanceling with Double]
-  
-  /* 5 */ @js.native
-  object upgrading extends TopLevel[upgrading with Double]
-  
+  @js.native
+  sealed trait upgrading
+    extends StObject
+       with AppInstanceStatus
 }
-

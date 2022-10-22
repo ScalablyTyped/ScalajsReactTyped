@@ -1,29 +1,26 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.distTypesInternalTypesMod.SchedulerLike
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/windowTime", JSImport.Namespace)
-@js.native
-object operatorWindowTimeMod extends js.Object {
-  def windowTime[T](windowTimeSpan: Double): js.Any = js.native
-  def windowTime[T](
-    windowTimeSpan: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  def windowTime[T](windowTimeSpan: Double, windowCreationInterval: Double): js.Any = js.native
-  def windowTime[T](windowTimeSpan: Double, windowCreationInterval: Double, maxWindowSize: Double): js.Any = js.native
-  def windowTime[T](
+object operatorWindowTimeMod {
+  
+  @JSImport("rxjs-compat/operator/windowTime", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def windowTime[T](windowTimeSpan: Double): Observable_[Observable_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("windowTime")(windowTimeSpan.asInstanceOf[js.Any]).asInstanceOf[Observable_[Observable_[T]]]
+  inline def windowTime[T](windowTimeSpan: Double, scheduler: SchedulerLike): Observable_[Observable_[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("windowTime")(windowTimeSpan.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable_[Observable_[T]]]
+  inline def windowTime[T](windowTimeSpan: Double, windowCreationInterval: Double): Observable_[Observable_[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("windowTime")(windowTimeSpan.asInstanceOf[js.Any], windowCreationInterval.asInstanceOf[js.Any])).asInstanceOf[Observable_[Observable_[T]]]
+  inline def windowTime[T](windowTimeSpan: Double, windowCreationInterval: Double, maxWindowSize: Double): Observable_[Observable_[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("windowTime")(windowTimeSpan.asInstanceOf[js.Any], windowCreationInterval.asInstanceOf[js.Any], maxWindowSize.asInstanceOf[js.Any])).asInstanceOf[Observable_[Observable_[T]]]
+  inline def windowTime[T](
     windowTimeSpan: Double,
     windowCreationInterval: Double,
     maxWindowSize: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  def windowTime[T](
-    windowTimeSpan: Double,
-    windowCreationInterval: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+    scheduler: SchedulerLike
+  ): Observable_[Observable_[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("windowTime")(windowTimeSpan.asInstanceOf[js.Any], windowCreationInterval.asInstanceOf[js.Any], maxWindowSize.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable_[Observable_[T]]]
+  inline def windowTime[T](windowTimeSpan: Double, windowCreationInterval: Double, scheduler: SchedulerLike): Observable_[Observable_[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("windowTime")(windowTimeSpan.asInstanceOf[js.Any], windowCreationInterval.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable_[Observable_[T]]]
 }
-

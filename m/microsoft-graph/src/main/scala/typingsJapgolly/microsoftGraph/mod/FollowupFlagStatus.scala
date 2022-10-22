@@ -1,24 +1,20 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.notFlagged
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.complete
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.flagged
 */
-trait FollowupFlagStatus extends js.Object
-
+trait FollowupFlagStatus extends StObject
 object FollowupFlagStatus {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def complete: typingsJapgolly.microsoftGraph.microsoftGraphStrings.complete = this.cast("complete")
-  @scala.inline
-  def flagged: typingsJapgolly.microsoftGraph.microsoftGraphStrings.flagged = this.cast("flagged")
-  @scala.inline
-  def notFlagged: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notFlagged = this.cast("notFlagged")
+  
+  inline def complete: typingsJapgolly.microsoftGraph.microsoftGraphStrings.complete = "complete".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.complete]
+  
+  inline def flagged: typingsJapgolly.microsoftGraph.microsoftGraphStrings.flagged = "flagged".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.flagged]
+  
+  inline def notFlagged: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notFlagged = "notFlagged".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notFlagged]
 }
-

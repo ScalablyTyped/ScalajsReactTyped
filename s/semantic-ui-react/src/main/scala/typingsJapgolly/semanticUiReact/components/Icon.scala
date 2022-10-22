@@ -1,80 +1,78 @@
 package typingsJapgolly.semanticUiReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.semanticUiReact.genericMod.SemanticCOLORS
-import typingsJapgolly.semanticUiReact.genericMod.SemanticICONS
-import typingsJapgolly.semanticUiReact.iconIconMod.IconCorner
-import typingsJapgolly.semanticUiReact.iconIconMod.IconProps
-import typingsJapgolly.semanticUiReact.iconIconMod.IconSizeProp
-import typingsJapgolly.semanticUiReact.iconMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.semanticUiReact.distCommonjsElementsIconIconGroupMod.IconGroupProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsIconIconMod.IconCorner
+import typingsJapgolly.semanticUiReact.distCommonjsElementsIconIconMod.IconProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsIconIconMod.IconSizeProp
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticICONS
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.clockwise
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.counterclockwise
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.horizontally
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.vertically
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Icon {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    `aria-hidden`: String = null,
-    `aria-label`: String = null,
-    as: js.Any = null,
-    bordered: js.UndefOr[Boolean] = js.undefined,
-    circular: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    color: SemanticCOLORS = null,
-    corner: Boolean | IconCorner = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    fitted: js.UndefOr[Boolean] = js.undefined,
-    flipped: horizontally | vertically = null,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    link: js.UndefOr[Boolean] = js.undefined,
-    loading: js.UndefOr[Boolean] = js.undefined,
-    name: SemanticICONS = null,
-    rotated: clockwise | counterclockwise = null,
-    size: IconSizeProp = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[IconProps, default, Unit, IconProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`aria-hidden` != null) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
-    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (corner != null) __obj.updateDynamic("corner")(corner.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(fitted)) __obj.updateDynamic("fitted")(fitted.asInstanceOf[js.Any])
-    if (flipped != null) __obj.updateDynamic("flipped")(flipped.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
-    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (rotated != null) __obj.updateDynamic("rotated")(rotated.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.iconIconMod.IconProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.iconMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.iconIconMod.IconProps])(children: _*)
+  object Group {
+    
+    @JSImport("semantic-ui-react", "Icon.Group")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Group.type): SharedBuilder_IconGroupProps1901602356 = new SharedBuilder_IconGroupProps1901602356(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: IconGroupProps): SharedBuilder_IconGroupProps1901602356 = new SharedBuilder_IconGroupProps1901602356(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/elements/Icon", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("semantic-ui-react", "Icon")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.semanticUiReact.mod.Icon] {
+    
+    inline def `aria-hidden`(value: String): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
+    
+    inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def bordered(value: Boolean): this.type = set("bordered", value.asInstanceOf[js.Any])
+    
+    inline def circular(value: Boolean): this.type = set("circular", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def color(value: SemanticCOLORS): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def corner(value: Boolean | IconCorner): this.type = set("corner", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def fitted(value: Boolean): this.type = set("fitted", value.asInstanceOf[js.Any])
+    
+    inline def flipped(value: horizontally | vertically): this.type = set("flipped", value.asInstanceOf[js.Any])
+    
+    inline def inverted(value: Boolean): this.type = set("inverted", value.asInstanceOf[js.Any])
+    
+    inline def link(value: Boolean): this.type = set("link", value.asInstanceOf[js.Any])
+    
+    inline def loading(value: Boolean): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def name(value: SemanticICONS): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def rotated(value: clockwise | counterclockwise): this.type = set("rotated", value.asInstanceOf[js.Any])
+    
+    inline def size(value: IconSizeProp): this.type = set("size", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Icon.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IconProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

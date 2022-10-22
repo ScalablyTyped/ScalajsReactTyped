@@ -1,7 +1,7 @@
 
 # Scala.js typings for pubsub-js
 
-Typings are for version 1.5.2
+Typings are for version 1.8.0
 
 ## Library description:
 Dependency free publish/subscribe library
@@ -11,9 +11,9 @@ Dependency free publish/subscribe library
 | Full name          | pubsub-js |
 | Keywords           | pub/sub, pubsub, publish/subscribe, publish, subscribe |
 | # releases         | 5 |
-| # dependents       | 140 |
-| # downloads        | 1623996 |
-| # stars            | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 342354.0 |
+| # stars            | 4179.0 |
 
 ## Links
 - [Homepage](https://github.com/mroderick/PubSubJS#readme)

@@ -1,10 +1,7 @@
 package typingsJapgolly.reactRecaptcha.components
 
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactRecaptcha.mod.RecaptchaProps
 import typingsJapgolly.reactRecaptcha.mod.^
 import typingsJapgolly.reactRecaptcha.reactRecaptchaStrings.`inline`
@@ -19,63 +16,55 @@ import typingsJapgolly.reactRecaptcha.reactRecaptchaStrings.invisible
 import typingsJapgolly.reactRecaptcha.reactRecaptchaStrings.light
 import typingsJapgolly.reactRecaptcha.reactRecaptchaStrings.normal
 import typingsJapgolly.reactRecaptcha.reactRecaptchaStrings.onload
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactRecaptcha {
-  def apply(
-    badge: bottomright | bottomleft | `inline` = null,
-    className: String = null,
-    elementID: String = null,
-    expiredCallback: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    expiredCallbackName: String = null,
-    hl: String = null,
-    onloadCallback: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onloadCallbackName: String = null,
-    render: onload | explicit = null,
-    sitekey: String = null,
-    size: normal | compact | invisible = null,
-    tabindex: Double | String = null,
-    theme: dark | light = null,
-    `type`: audio | image = null,
-    verifyCallback: /* response */ String => CallbackTo[js.Any] = null,
-    verifyCallbackName: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[RecaptchaProps, ^, Unit, RecaptchaProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (elementID != null) __obj.updateDynamic("elementID")(elementID.asInstanceOf[js.Any])
-    expiredCallback.foreach(p => __obj.updateDynamic("expiredCallback")(p.toJsFn))
-    if (expiredCallbackName != null) __obj.updateDynamic("expiredCallbackName")(expiredCallbackName.asInstanceOf[js.Any])
-    if (hl != null) __obj.updateDynamic("hl")(hl.asInstanceOf[js.Any])
-    onloadCallback.foreach(p => __obj.updateDynamic("onloadCallback")(p.toJsFn))
-    if (onloadCallbackName != null) __obj.updateDynamic("onloadCallbackName")(onloadCallbackName.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (sitekey != null) __obj.updateDynamic("sitekey")(sitekey.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (verifyCallback != null) __obj.updateDynamic("verifyCallback")(js.Any.fromFunction1((t0: /* response */ java.lang.String) => verifyCallback(t0).runNow()))
-    if (verifyCallbackName != null) __obj.updateDynamic("verifyCallbackName")(verifyCallbackName.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactRecaptcha.mod.RecaptchaProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactRecaptcha.mod.^](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactRecaptcha.mod.RecaptchaProps])(children: _*)
-  }
   @JSImport("react-recaptcha", JSImport.Namespace)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[^] {
+    
+    inline def badge(value: bottomright | bottomleft | `inline`): this.type = set("badge", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def elementID(value: String): this.type = set("elementID", value.asInstanceOf[js.Any])
+    
+    inline def expiredCallback(value: CallbackTo[Any]): this.type = set("expiredCallback", value.toJsFn)
+    
+    inline def expiredCallbackName(value: String): this.type = set("expiredCallbackName", value.asInstanceOf[js.Any])
+    
+    inline def hl(value: String): this.type = set("hl", value.asInstanceOf[js.Any])
+    
+    inline def onloadCallback(value: CallbackTo[Any]): this.type = set("onloadCallback", value.toJsFn)
+    
+    inline def onloadCallbackName(value: String): this.type = set("onloadCallbackName", value.asInstanceOf[js.Any])
+    
+    inline def render(value: onload | explicit): this.type = set("render", value.asInstanceOf[js.Any])
+    
+    inline def sitekey(value: String): this.type = set("sitekey", value.asInstanceOf[js.Any])
+    
+    inline def size(value: normal | compact | invisible): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def tabindex(value: Double | String): this.type = set("tabindex", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: dark | light): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: audio | image): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def verifyCallback(value: /* response */ String => Any): this.type = set("verifyCallback", js.Any.fromFunction1(value))
+    
+    inline def verifyCallbackName(value: String): this.type = set("verifyCallbackName", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactRecaptcha.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: RecaptchaProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

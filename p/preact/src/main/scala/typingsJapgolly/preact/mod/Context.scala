@@ -1,20 +1,40 @@
 package typingsJapgolly.preact.mod
 
-import typingsJapgolly.preact.Anon0
-import typingsJapgolly.preact.AnonValue
+import typingsJapgolly.preact.anon.Children
+import typingsJapgolly.preact.anon.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Context[T] extends js.Object {
+trait Context[T] extends StObject {
+  
+  def Consumer(props: RenderableProps[Children[T], Any]): VNode[Any] | Null
+  def Consumer(props: RenderableProps[Children[T], Any], context: Any): VNode[Any] | Null
   @JSName("Consumer")
-  var Consumer_Original: Consumer[T] = js.native
+  var Consumer_Original: Consumer[T]
+  
+  def Provider(props: RenderableProps[Value[T], Any]): VNode[Any] | Null
+  def Provider(props: RenderableProps[Value[T], Any], context: Any): VNode[Any] | Null
   @JSName("Provider")
-  var Provider_Original: Provider[T] = js.native
-  def Consumer(props: RenderableProps[Anon0[T], _]): VNode[_] | Null = js.native
-  def Consumer(props: RenderableProps[Anon0[T], _], context: js.Any): VNode[_] | Null = js.native
-  def Provider(props: RenderableProps[AnonValue[T], _]): VNode[_] | Null = js.native
-  def Provider(props: RenderableProps[AnonValue[T], _], context: js.Any): VNode[_] | Null = js.native
+  var Provider_Original: Provider[T]
+  
+  var displayName: js.UndefOr[String] = js.undefined
 }
-
+object Context {
+  
+  inline def apply[T](Consumer: Consumer[T], Provider: Provider[T]): Context[T] = {
+    val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Context[T]]
+  }
+  
+  extension [Self <: Context[?], T](x: Self & Context[T]) {
+    
+    inline def setConsumer(value: Consumer[T]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setProvider(value: Provider[T]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
+  }
+}

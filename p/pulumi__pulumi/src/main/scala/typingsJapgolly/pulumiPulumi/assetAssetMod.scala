@@ -1,54 +1,61 @@
 package typingsJapgolly.pulumiPulumi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/pulumi/asset/asset", JSImport.Namespace)
-@js.native
-object assetAssetMod extends js.Object {
-  @js.native
-  abstract class Asset () extends js.Object
+object assetAssetMod {
   
+  /* note: abstract class */ @JSImport("@pulumi/pulumi/asset/asset", "Asset")
   @js.native
-  class FileAsset protected () extends Asset {
+  open class Asset () extends StObject
+  /* static members */
+  object Asset {
+    
+    @JSImport("@pulumi/pulumi/asset/asset", "Asset")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Returns true if the given object is an instance of an Asset.  This is designed to work even when
+      * multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    inline def isInstance(obj: Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean]
+  }
+  
+  @JSImport("@pulumi/pulumi/asset/asset", "FileAsset")
+  @js.native
+  open class FileAsset protected () extends Asset {
     def this(path: String) = this()
     def this(path: js.Promise[String]) = this()
+    
     /**
       * The path to the asset file.
       */
     val path: js.Promise[String] = js.native
   }
   
+  @JSImport("@pulumi/pulumi/asset/asset", "RemoteAsset")
   @js.native
-  class RemoteAsset protected () extends Asset {
+  open class RemoteAsset protected () extends Asset {
     def this(uri: String) = this()
     def this(uri: js.Promise[String]) = this()
+    
     /**
       * The URI where the asset lives.
       */
     val uri: js.Promise[String] = js.native
   }
   
+  @JSImport("@pulumi/pulumi/asset/asset", "StringAsset")
   @js.native
-  class StringAsset protected () extends Asset {
+  open class StringAsset protected () extends Asset {
     def this(text: String) = this()
     def this(text: js.Promise[String]) = this()
+    
     /**
       * The string contents.
       */
     val text: js.Promise[String] = js.native
   }
-  
-  /* static members */
-  @js.native
-  object Asset extends js.Object {
-    /**
-      * Returns true if the given object is an instance of an Asset.  This is designed to work even when
-      * multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean = js.native
-  }
-  
 }
-

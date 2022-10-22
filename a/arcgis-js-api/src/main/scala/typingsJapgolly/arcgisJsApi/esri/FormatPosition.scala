@@ -1,19 +1,22 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FormatPosition extends Object {
+trait FormatPosition
+  extends StObject
+     with Object {
+  
   /**
     * A string representing the location.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#Position)
     */
   var coordinate: String
+  
   /**
     * A point geometry representing the location described by the conversion.
     *
@@ -21,20 +24,23 @@ trait FormatPosition extends Object {
     */
   var location: Point
 }
-
 object FormatPosition {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     coordinate: String,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     location: Point,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean]
+    propertyIsEnumerable: PropertyKey => Boolean
   ): FormatPosition = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], coordinate = coordinate.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], coordinate = coordinate.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), location = location.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[FormatPosition]
   }
+  
+  extension [Self <: FormatPosition](x: Self) {
+    
+    inline def setCoordinate(value: String): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
+    
+    inline def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+  }
 }
-

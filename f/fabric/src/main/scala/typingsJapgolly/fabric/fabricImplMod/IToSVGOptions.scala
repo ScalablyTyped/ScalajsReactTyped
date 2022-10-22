@@ -1,48 +1,63 @@
 package typingsJapgolly.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IToSVGOptions extends js.Object {
+trait IToSVGOptions extends StObject {
+  
   /**
-  	 * Encoding of SVG output
-  	 */
+    * Encoding of SVG output
+    */
   var encoding: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * desired height of svg with or without units
-  	 */
-  var height: js.UndefOr[Double] = js.undefined
+    * desired height of svg with or without units
+    */
+  var height: js.UndefOr[Double | String] = js.undefined
+  
   /**
-  	 * If true xml tag is not included
-  	 */
+    * If true xml tag is not included
+    */
   var suppressPreamble: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * SVG viewbox object
-  	 */
+    * SVG viewbox object
+    */
   var viewBox: js.UndefOr[IViewBox] = js.undefined
+  
   /**
-  	 * desired width of svg with or without units
-  	 */
-  var width: js.UndefOr[Double] = js.undefined
+    * desired width of svg with or without units
+    */
+  var width: js.UndefOr[Double | String] = js.undefined
 }
-
 object IToSVGOptions {
-  @scala.inline
-  def apply(
-    encoding: String = null,
-    height: Int | Double = null,
-    suppressPreamble: js.UndefOr[Boolean] = js.undefined,
-    viewBox: IViewBox = null,
-    width: Int | Double = null
-  ): IToSVGOptions = {
+  
+  inline def apply(): IToSVGOptions = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressPreamble)) __obj.updateDynamic("suppressPreamble")(suppressPreamble.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToSVGOptions]
   }
+  
+  extension [Self <: IToSVGOptions](x: Self) {
+    
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setSuppressPreamble(value: Boolean): Self = StObject.set(x, "suppressPreamble", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressPreambleUndefined: Self = StObject.set(x, "suppressPreamble", js.undefined)
+    
+    inline def setViewBox(value: IViewBox): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+    
+    inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

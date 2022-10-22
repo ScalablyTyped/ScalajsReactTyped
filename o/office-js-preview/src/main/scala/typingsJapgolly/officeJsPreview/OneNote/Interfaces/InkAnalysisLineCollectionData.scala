@@ -1,20 +1,27 @@
 package typingsJapgolly.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "inkAnalysisLineCollection.toJSON()". */
-trait InkAnalysisLineCollectionData extends js.Object {
+/** An interface describing the data returned by calling `inkAnalysisLineCollection.toJSON()`. */
+trait InkAnalysisLineCollectionData extends StObject {
+  
   var items: js.UndefOr[js.Array[InkAnalysisLineData]] = js.undefined
 }
-
 object InkAnalysisLineCollectionData {
-  @scala.inline
-  def apply(items: js.Array[InkAnalysisLineData] = null): InkAnalysisLineCollectionData = {
+  
+  inline def apply(): InkAnalysisLineCollectionData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkAnalysisLineCollectionData]
   }
+  
+  extension [Self <: InkAnalysisLineCollectionData](x: Self) {
+    
+    inline def setItems(value: js.Array[InkAnalysisLineData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: InkAnalysisLineData*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

@@ -1,21 +1,17 @@
 package typingsJapgolly.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chromeApps.chromeAppsStrings.IPv4
   - typingsJapgolly.chromeApps.chromeAppsStrings.IPv6
 */
-trait IPConfigurationType extends js.Object
-
+trait IPConfigurationType extends StObject
 object IPConfigurationType {
-  @scala.inline
-  def IPv4: typingsJapgolly.chromeApps.chromeAppsStrings.IPv4 = this.cast("IPv4")
-  @scala.inline
-  def IPv6: typingsJapgolly.chromeApps.chromeAppsStrings.IPv6 = this.cast("IPv6")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def IPv4: typingsJapgolly.chromeApps.chromeAppsStrings.IPv4 = "IPv4".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.IPv4]
+  
+  inline def IPv6: typingsJapgolly.chromeApps.chromeAppsStrings.IPv6 = "IPv6".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.IPv6]
 }
-

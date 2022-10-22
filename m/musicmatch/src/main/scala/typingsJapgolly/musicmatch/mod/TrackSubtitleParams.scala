@@ -3,34 +3,49 @@ package typingsJapgolly.musicmatch.mod
 import typingsJapgolly.musicmatch.musicmatchStrings.dfxp
 import typingsJapgolly.musicmatch.musicmatchStrings.lrc
 import typingsJapgolly.musicmatch.musicmatchStrings.stledu
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TrackSubtitleParams extends js.Object {
+trait TrackSubtitleParams extends StObject {
+  
   var f_subtitle_length: js.UndefOr[Double] = js.undefined
+  
   var f_subtitle_length_max_deviation: js.UndefOr[Double] = js.undefined
+  
   var subtitle_format: js.UndefOr[lrc | dfxp | stledu] = js.undefined
+  
   var track_id: js.UndefOr[Double] = js.undefined
+  
   var track_mbid: js.UndefOr[Double] = js.undefined
 }
-
 object TrackSubtitleParams {
-  @scala.inline
-  def apply(
-    f_subtitle_length: Int | Double = null,
-    f_subtitle_length_max_deviation: Int | Double = null,
-    subtitle_format: lrc | dfxp | stledu = null,
-    track_id: Int | Double = null,
-    track_mbid: Int | Double = null
-  ): TrackSubtitleParams = {
+  
+  inline def apply(): TrackSubtitleParams = {
     val __obj = js.Dynamic.literal()
-    if (f_subtitle_length != null) __obj.updateDynamic("f_subtitle_length")(f_subtitle_length.asInstanceOf[js.Any])
-    if (f_subtitle_length_max_deviation != null) __obj.updateDynamic("f_subtitle_length_max_deviation")(f_subtitle_length_max_deviation.asInstanceOf[js.Any])
-    if (subtitle_format != null) __obj.updateDynamic("subtitle_format")(subtitle_format.asInstanceOf[js.Any])
-    if (track_id != null) __obj.updateDynamic("track_id")(track_id.asInstanceOf[js.Any])
-    if (track_mbid != null) __obj.updateDynamic("track_mbid")(track_mbid.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackSubtitleParams]
   }
+  
+  extension [Self <: TrackSubtitleParams](x: Self) {
+    
+    inline def setF_subtitle_length(value: Double): Self = StObject.set(x, "f_subtitle_length", value.asInstanceOf[js.Any])
+    
+    inline def setF_subtitle_lengthUndefined: Self = StObject.set(x, "f_subtitle_length", js.undefined)
+    
+    inline def setF_subtitle_length_max_deviation(value: Double): Self = StObject.set(x, "f_subtitle_length_max_deviation", value.asInstanceOf[js.Any])
+    
+    inline def setF_subtitle_length_max_deviationUndefined: Self = StObject.set(x, "f_subtitle_length_max_deviation", js.undefined)
+    
+    inline def setSubtitle_format(value: lrc | dfxp | stledu): Self = StObject.set(x, "subtitle_format", value.asInstanceOf[js.Any])
+    
+    inline def setSubtitle_formatUndefined: Self = StObject.set(x, "subtitle_format", js.undefined)
+    
+    inline def setTrack_id(value: Double): Self = StObject.set(x, "track_id", value.asInstanceOf[js.Any])
+    
+    inline def setTrack_idUndefined: Self = StObject.set(x, "track_id", js.undefined)
+    
+    inline def setTrack_mbid(value: Double): Self = StObject.set(x, "track_mbid", value.asInstanceOf[js.Any])
+    
+    inline def setTrack_mbidUndefined: Self = StObject.set(x, "track_mbid", js.undefined)
+  }
 }
-

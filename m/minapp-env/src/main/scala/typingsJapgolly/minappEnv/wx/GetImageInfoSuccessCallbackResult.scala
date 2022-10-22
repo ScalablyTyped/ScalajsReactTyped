@@ -8,13 +8,15 @@ import typingsJapgolly.minappEnv.minappEnvStrings.down
 import typingsJapgolly.minappEnv.minappEnvStrings.left
 import typingsJapgolly.minappEnv.minappEnvStrings.right
 import typingsJapgolly.minappEnv.minappEnvStrings.up
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetImageInfoSuccessCallbackResult extends js.Object {
+trait GetImageInfoSuccessCallbackResult extends StObject {
+  
   /** 图片原始高度，单位px。不考虑旋转。 */
   var height: Double
+  
   /** [拍照时设备方向](http://sylvana.net/jpegcrop/exif_orientation.html)
     *
     * 可选值：
@@ -29,19 +31,21 @@ trait GetImageInfoSuccessCallbackResult extends js.Object {
     *
     * 最低基础库： `1.9.90` */
   var orientation: up | `up-mirrored` | down | `down-mirrored` | `left-mirrored` | right | `right-mirrored` | left
+  
   /** 图片的本地路径 */
   var path: String
+  
   /** 图片格式
     *
     * 最低基础库： `1.9.90` */
   var `type`: String
+  
   /** 图片原始宽度，单位px。不考虑旋转。 */
   var width: Double
 }
-
 object GetImageInfoSuccessCallbackResult {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     height: Double,
     orientation: up | `up-mirrored` | down | `down-mirrored` | `left-mirrored` | right | `right-mirrored` | left,
     path: String,
@@ -52,5 +56,19 @@ object GetImageInfoSuccessCallbackResult {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetImageInfoSuccessCallbackResult]
   }
+  
+  extension [Self <: GetImageInfoSuccessCallbackResult](x: Self) {
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setOrientation(
+      value: up | `up-mirrored` | down | `down-mirrored` | `left-mirrored` | right | `right-mirrored` | left
+    ): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,33 +1,48 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockChartCategoryAxisItemNotesDataItem extends js.Object {
+trait StockChartCategoryAxisItemNotesDataItem extends StObject {
+  
   var icon: js.UndefOr[StockChartCategoryAxisItemNotesDataItemIcon] = js.undefined
+  
   var label: js.UndefOr[StockChartCategoryAxisItemNotesDataItemLabel] = js.undefined
+  
   var line: js.UndefOr[StockChartCategoryAxisItemNotesDataItemLine] = js.undefined
+  
   var position: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object StockChartCategoryAxisItemNotesDataItem {
-  @scala.inline
-  def apply(
-    icon: StockChartCategoryAxisItemNotesDataItemIcon = null,
-    label: StockChartCategoryAxisItemNotesDataItemLabel = null,
-    line: StockChartCategoryAxisItemNotesDataItemLine = null,
-    position: String = null,
-    value: js.Any = null
-  ): StockChartCategoryAxisItemNotesDataItem = {
+  
+  inline def apply(): StockChartCategoryAxisItemNotesDataItem = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartCategoryAxisItemNotesDataItem]
   }
+  
+  extension [Self <: StockChartCategoryAxisItemNotesDataItem](x: Self) {
+    
+    inline def setIcon(value: StockChartCategoryAxisItemNotesDataItemIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setLabel(value: StockChartCategoryAxisItemNotesDataItemLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLine(value: StockChartCategoryAxisItemNotesDataItemLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

@@ -1,22 +1,23 @@
 package typingsJapgolly.winrt.Windows.Media.Capture
 
 import typingsJapgolly.winrt.Windows.Foundation.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Capture.CameraCaptureUIPhotoCaptureSettings")
-@js.native
-class CameraCaptureUIPhotoCaptureSettings () extends ICameraCaptureUIPhotoCaptureSettings {
-  /* CompleteClass */
-  override var allowCropping: Boolean = js.native
-  /* CompleteClass */
-  override var croppedAspectRatio: Size = js.native
-  /* CompleteClass */
-  override var croppedSizeInPixels: Size = js.native
-  /* CompleteClass */
-  override var format: CameraCaptureUIPhotoFormat = js.native
-  /* CompleteClass */
-  override var maxResolution: CameraCaptureUIMaxPhotoResolution = js.native
+trait CameraCaptureUIPhotoCaptureSettings
+  extends StObject
+     with ICameraCaptureUIPhotoCaptureSettings
+object CameraCaptureUIPhotoCaptureSettings {
+  
+  inline def apply(
+    allowCropping: Boolean,
+    croppedAspectRatio: Size,
+    croppedSizeInPixels: Size,
+    format: CameraCaptureUIPhotoFormat,
+    maxResolution: CameraCaptureUIMaxPhotoResolution
+  ): CameraCaptureUIPhotoCaptureSettings = {
+    val __obj = js.Dynamic.literal(allowCropping = allowCropping.asInstanceOf[js.Any], croppedAspectRatio = croppedAspectRatio.asInstanceOf[js.Any], croppedSizeInPixels = croppedSizeInPixels.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], maxResolution = maxResolution.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CameraCaptureUIPhotoCaptureSettings]
+  }
 }
-

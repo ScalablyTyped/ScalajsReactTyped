@@ -1,23 +1,36 @@
 package typingsJapgolly.jqueryLeanmodal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQueryLeanModalOption extends js.Object {
+trait JQueryLeanModalOption extends StObject {
+  
   var closeButton: js.UndefOr[String] = js.undefined
+  
   var overlay: js.UndefOr[Double] = js.undefined
+  
   var top: js.UndefOr[Double] = js.undefined
 }
-
 object JQueryLeanModalOption {
-  @scala.inline
-  def apply(closeButton: String = null, overlay: Int | Double = null, top: Int | Double = null): JQueryLeanModalOption = {
+  
+  inline def apply(): JQueryLeanModalOption = {
     val __obj = js.Dynamic.literal()
-    if (closeButton != null) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryLeanModalOption]
   }
+  
+  extension [Self <: JQueryLeanModalOption](x: Self) {
+    
+    inline def setCloseButton(value: String): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+    
+    inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+    
+    inline def setOverlay(value: Double): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+  }
 }
-

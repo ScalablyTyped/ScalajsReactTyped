@@ -1,27 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.diagram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConnectionStartCap extends js.Object {
+trait ConnectionStartCap extends StObject {
+  
   var fill: js.UndefOr[String | ConnectionStartCapFill] = js.undefined
+  
   var stroke: js.UndefOr[String | ConnectionStartCapStroke] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object ConnectionStartCap {
-  @scala.inline
-  def apply(
-    fill: String | ConnectionStartCapFill = null,
-    stroke: String | ConnectionStartCapStroke = null,
-    `type`: String = null
-  ): ConnectionStartCap = {
+  
+  inline def apply(): ConnectionStartCap = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionStartCap]
   }
+  
+  extension [Self <: ConnectionStartCap](x: Self) {
+    
+    inline def setFill(value: String | ConnectionStartCapFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setStroke(value: String | ConnectionStartCapStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

@@ -11,9 +11,9 @@ Convert number to fraction
 | Full name          | num2fraction |
 | Keywords           | fraction, number, math, maths, arithmetic, gcd, rational |
 | # releases         | 1 |
-| # dependents       | 25 |
-| # downloads        | 245626362 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.0995566666666664E7 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/yisibl/num2fraction#readme)

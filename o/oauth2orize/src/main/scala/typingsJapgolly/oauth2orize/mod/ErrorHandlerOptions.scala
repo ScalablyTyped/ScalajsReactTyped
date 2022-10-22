@@ -1,19 +1,24 @@
 package typingsJapgolly.oauth2orize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ErrorHandlerOptions extends js.Object {
+trait ErrorHandlerOptions extends StObject {
+  
   var mode: js.UndefOr[String] = js.undefined
 }
-
 object ErrorHandlerOptions {
-  @scala.inline
-  def apply(mode: String = null): ErrorHandlerOptions = {
+  
+  inline def apply(): ErrorHandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorHandlerOptions]
   }
+  
+  extension [Self <: ErrorHandlerOptions](x: Self) {
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+  }
 }
-

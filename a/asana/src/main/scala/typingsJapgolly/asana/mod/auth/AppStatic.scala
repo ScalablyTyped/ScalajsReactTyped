@@ -1,13 +1,14 @@
 package typingsJapgolly.asana.mod.auth
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AppStatic
-  extends /**
+  extends StObject
+     with /**
   * An abstraction around an App used with Asana.
   *
   * @options {Object} Options to construct the app
@@ -19,4 +20,3 @@ trait AppStatic
   * @constructor
   */
 Instantiable1[/* options */ AppOptions, App]
-

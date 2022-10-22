@@ -1,36 +1,36 @@
 package typingsJapgolly.chromeApps.chrome.runtime
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.chromeApps.Anon3D
-import typingsJapgolly.chromeApps.AnonAccepttlschannelid
-import typingsJapgolly.chromeApps.AnonActions
-import typingsJapgolly.chromeApps.AnonBackground
-import typingsJapgolly.chromeApps.AnonClientid
-import typingsJapgolly.chromeApps.AnonConfigurable
-import typingsJapgolly.chromeApps.AnonContentsecuritypolicy
-import typingsJapgolly.chromeApps.AnonDefaulticon
-import typingsJapgolly.chromeApps.AnonDescription
-import typingsJapgolly.chromeApps.AnonEmail
-import typingsJapgolly.chromeApps.AnonExtensions
-import typingsJapgolly.chromeApps.AnonFilters
-import typingsJapgolly.chromeApps.AnonId
-import typingsJapgolly.chromeApps.AnonLowenergy
-import typingsJapgolly.chromeApps.AnonManagedschema
-import typingsJapgolly.chromeApps.AnonMatches
-import typingsJapgolly.chromeApps.AnonMimetype
-import typingsJapgolly.chromeApps.AnonNEWNOTE
-import typingsJapgolly.chromeApps.AnonNaclarch
-import typingsJapgolly.chromeApps.AnonPartitions
-import typingsJapgolly.chromeApps.AnonTcp
+import typingsJapgolly.chromeApps.anon.Accepttlschannelid
+import typingsJapgolly.chromeApps.anon.Actions
+import typingsJapgolly.chromeApps.anon.Background
+import typingsJapgolly.chromeApps.anon.Clientid
+import typingsJapgolly.chromeApps.anon.Configurable
+import typingsJapgolly.chromeApps.anon.Contentsecuritypolicy
+import typingsJapgolly.chromeApps.anon.Defaulticon
+import typingsJapgolly.chromeApps.anon.Email
+import typingsJapgolly.chromeApps.anon.Extensions
+import typingsJapgolly.chromeApps.anon.FiltersArray
+import typingsJapgolly.chromeApps.anon.Global
+import typingsJapgolly.chromeApps.anon.Id
+import typingsJapgolly.chromeApps.anon.Lowenergy
+import typingsJapgolly.chromeApps.anon.Managedschema
+import typingsJapgolly.chromeApps.anon.Matches
+import typingsJapgolly.chromeApps.anon.Mimetype
+import typingsJapgolly.chromeApps.anon.NEWNOTE
+import typingsJapgolly.chromeApps.anon.Naclarch
+import typingsJapgolly.chromeApps.anon.Partitions
+import typingsJapgolly.chromeApps.anon.Tcp
+import typingsJapgolly.chromeApps.anon.`3D`
 import typingsJapgolly.chromeApps.chrome.ToStringLiteral
-import typingsJapgolly.chromeApps.chromeAppsNumbers.`2`
-import typingsJapgolly.chromeApps.chromeAppsStrings.new_note
-import typingsJapgolly.std.Exclude
+import typingsJapgolly.chromeApps.chromeAppsInts.`2`
+import typingsJapgolly.chromeApps.chromeAppsStrings.NEW_NOTE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PartialManifest extends js.Object {
+trait PartialManifest extends StObject {
+  
   //////////////
   // OPTIONAL //
   //////////////
@@ -44,7 +44,16 @@ trait PartialManifest extends js.Object {
     * @example
     * 'action_handlers': ['new_note']
     */
-  var action_handlers: js.UndefOr[js.Array[ToStringLiteral[AnonNEWNOTE, String, Exclude[String, new_note]]]] = js.undefined
+  var action_handlers: js.UndefOr[
+    js.Array[
+      ToStringLiteral[
+        NEWNOTE, 
+        NEW_NOTE, 
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NEW_NOTE :'new_note'} extends keyof {  NEW_NOTE :'new_note'} ? std.Exclude<keyof {  NEW_NOTE :'new_note'}, 'new_note'> : never */ js.Any
+      ]
+    ]
+  ] = js.undefined
+  
   //////////////
   // REQUIRED //
   //////////////
@@ -53,33 +62,39 @@ trait PartialManifest extends js.Object {
     * Also used by hosted apps to specify the URLs that the app uses.
     * @required
     */
-  var app: AnonBackground
+  var app: Background
+  
   /**
     * App author information
     * @see[Not implemented anywhere in code]{@link https://github.com/chromium/chromium/blob/master/chrome/browser/chromeos/extensions/device_local_account_management_policy_provider.cc#L46}
     */
-  var author: js.UndefOr[AnonEmail | js.Any] = js.undefined
+  var author: js.UndefOr[Email | Any] = js.undefined
+  
   /**
     * Allows inspection of page contents, not enabled on stable anyways except for whitelist.
     * @see[Docs]{@link https://github.com/chromium/chromium/blob/master/extensions/common/manifest_handlers/automation.cc}
     */
   var automation: js.UndefOr[AutomationOptions | Boolean] = js.undefined
+  
   /**
     * Note: The 'bluetooth' manifest permission is used by the
     * chrome.bluetooth, chrome.bluetoothSocket and
     * chrome.bluetoothLowEnergy APIs.
     * @requires Platforms: Chrome OS, Windows and Mac
     */
-  var bluetooth: js.UndefOr[AnonLowenergy] = js.undefined
+  var bluetooth: js.UndefOr[Lowenergy] = js.undefined
+  
   /**
     * Use the commands API to add keyboard shortcuts that trigger actions in your app.
     * E.g. an action to open the browser action or send a command to the app.
     */
-  var commands: js.UndefOr[StringDictionary[AnonDescription]] = js.undefined
+  var commands: js.UndefOr[StringDictionary[Global]] = js.undefined
+  
   /**
     * An implementation detail (actually written by Chrome, not the app author).
     */
   val current_locale: js.UndefOr[String] = js.undefined
+  
   /////////////////
   // RECOMMENDED //
   /////////////////
@@ -90,6 +105,7 @@ trait PartialManifest extends js.Object {
     * @see[Internationalization]{@see https://developer.chrome.com/extensions/i18n}
     */
   var default_locale: js.UndefOr[String] = js.undefined
+  
   /**
     * A plain text string (no HTML or other formatting; no more than 132 characters)
     * that describes the extension. The description should be suitable for both the
@@ -98,10 +114,13 @@ trait PartialManifest extends js.Object {
     * @see[Internationalization]{@see https://developer.chrome.com/extensions/i18n}
     */
   var description: js.UndefOr[String] = js.undefined
+  
   /** Restricted to whitelist */
   var display_in_launcher: js.UndefOr[Boolean] = js.undefined
+  
   /** Restricted to whitelist */
   var display_in_new_tab_page: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The *event_rules* manifest property provides a mechanism to add rules that
     * intercept, block, or modify web requests in-flight using **declarativeWebRequest**
@@ -109,26 +128,31 @@ trait PartialManifest extends js.Object {
     * to read the page's content using **declarativeContent**.
     * @see[event_rules docs]{@link https://developer.chrome.com/extensions/manifest/event_rules}
     */
-  var event_rules: js.UndefOr[js.Array[AnonActions]] = js.undefined
+  var event_rules: js.UndefOr[js.Array[Actions]] = js.undefined
+  
   /**
     * Declares which extensions, apps, and web pages can connect
     * to your extension via runtime.connect and runtime.sendMessage.
     */
-  var externally_connectable: AnonAccepttlschannelid
+  var externally_connectable: Accepttlschannelid
+  
   /**
     * @requires Permissions: 'fileBrowserHandle'
     * @requires Location': 'component'
     * You can specify locale-specific strings for the value of 'default_title'
     */
-  var file_browser_handlers: js.UndefOr[js.Array[AnonDefaulticon]] = js.undefined
+  var file_browser_handlers: js.UndefOr[js.Array[Defaulticon]] = js.undefined
+  
   /**
     * Triggers a launch of the app when one of these files are handled.
     */
-  var file_handlers: js.UndefOr[StringDictionary[AnonExtensions]] = js.undefined
+  var file_handlers: js.UndefOr[StringDictionary[Extensions]] = js.undefined
+  
   /**
     * Files app uses above information in order to render related UI elements approprietly.
     */
-  var file_system_provider_capabilities: js.UndefOr[AnonConfigurable] = js.undefined
+  var file_system_provider_capabilities: js.UndefOr[Configurable] = js.undefined
+  
   /**
     * One or more icons that represent the extension, app, or theme.
     * You should always provide a 128x128 icon; it's used during
@@ -151,13 +175,16 @@ trait PartialManifest extends js.Object {
     *            '128': 'icon128.png' },
     */
   var icons: js.UndefOr[ManifestIcons] = js.undefined
+  
   /**
     * Import resources from another extension / app.
     * @see[Shared modules]{@link https://developer.chrome.com/apps/shared_modules}
     */
-  var `import`: js.UndefOr[js.Array[AnonId]] = js.undefined
+  var `import`: js.UndefOr[js.Array[Id]] = js.undefined
+  
   /** This value can be used to control the unique ID of an app when it is loaded during development. */
   var key: js.UndefOr[String] = js.undefined
+  
   /**
     * One integer specifying the version of the manifest file format your package requires.
     * As of Chrome 18, developers should specify 2 (without quotes).
@@ -165,14 +192,17 @@ trait PartialManifest extends js.Object {
     * @required
     */
   var manifest_version: `2`
+  
   /**
     * The minimum version of Chrome that your app, if any.
     * @example
     * 'minimum_chrome_version': '33.0.1715.0'
     */
   var minimum_chrome_version: js.UndefOr[String] = js.undefined
+  
   /** One or more mappings from MIME types to the Native Client module that handles each type. */
-  var nacl_modules: js.UndefOr[js.Array[AnonMimetype]] = js.undefined
+  var nacl_modules: js.UndefOr[js.Array[Mimetype]] = js.undefined
+  
   /**
     * The *name* (maximum of 45 characters) is the primary identifier
     * of the app and is a required field.
@@ -187,35 +217,41 @@ trait PartialManifest extends js.Object {
     * @requires string - Maximum 45 characters!
     */
   var name: String
+  
   /**
     * Use the Chrome Identity API to authenticate users:
     * the getAuthToken for users logged into their Google Account
     * and the launchWebAuthFlow for users logged into a non-Google account.
     */
-  var oauth2: js.UndefOr[AnonClientid] = js.undefined
+  var oauth2: js.UndefOr[Clientid] = js.undefined
+  
   /**
     * Whether the app is expected to work offline.
     * When Chrome detects that it is offline, apps with this field set to true will be highlighted on the New Tab page.
     */
   var offline_enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Use the chrome.permissions API to request declared optional permissions
     * at run time rather than install time, so users understand why the
     * permissions are needed and grant only those that are necessary.
     */
   var optional_permissions: js.UndefOr[js.Array[js.Array[UrlMatches] | OptionalPermission | String]] = js.undefined
+  
   /**
     * Permissions help to limit damage if your app is compromised by malware.
     * Some permissions are also displayed to users before installation,
     * as detailed in Permission Warnings.
     */
   var permissions: js.UndefOr[js.Array[Permission | String]] = js.undefined
+  
   /**
     * Native Client
     * @see[NDK Docs]{@link https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/doc/devguide/distributing.rst}
     * @see[Chromium Source]{@link https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/tools/fix_manifest.py}
     */
-  var platforms: js.UndefOr[js.Array[AnonNaclarch]] = js.undefined
+  var platforms: js.UndefOr[js.Array[Naclarch]] = js.undefined
+  
   /**
     * Technologies required by the app. Hosting sites such
     * as the Chrome Web Store may use this list to dissuade
@@ -224,14 +260,16 @@ trait PartialManifest extends js.Object {
     * include '3D' and 'plugins'; additional requirements checks
     * may be added in the future.
     */
-  var requirements: js.UndefOr[Anon3D] = js.undefined
+  var requirements: js.UndefOr[`3D`] = js.undefined
+  
   /**
     * @deprecated
     * Warning: Starting in version 57, Chrome will no longer allow external web content
     * (including embedded frames and scripts) inside sandboxed pages.
     * Please use a webview instead.
     */
-  var sandbox: js.UndefOr[AnonContentsecuritypolicy] = js.undefined
+  var sandbox: js.UndefOr[Contentsecuritypolicy] = js.undefined
+  
   /**
     * The short_name (maximum of 12 characters recommended) is
     * a short version of the app's name. It is an optional field
@@ -245,13 +283,16 @@ trait PartialManifest extends js.Object {
     * @see[Internationalization]{@see https://developer.chrome.com/extensions/i18n}
     */
   var short_name: js.UndefOr[String] = js.undefined
+  
   /** Doc missing. Declared as a feature, but unused. */
-  var signature: js.UndefOr[js.Any] = js.undefined
+  var signature: js.UndefOr[Any] = js.undefined
+  
   /**
     * The sockets manifest property declares which permissions are available
     * for the sockets.udp, sockets.tcp and sockets.tcpServer APIs.
     */
-  var sockets: js.UndefOr[AnonTcp] = js.undefined
+  var sockets: js.UndefOr[Tcp] = js.undefined
+  
   /**
     * Unlike the local and sync storage areas,
     * the managed storage area requires its structure
@@ -265,7 +306,8 @@ trait PartialManifest extends js.Object {
     * After declaring the policies they can be read from the storage.managed API.
     * It's up to the app to enforce the policies configured by the administrator.
     */
-  var storage: js.UndefOr[AnonManagedschema] = js.undefined
+  var storage: js.UndefOr[Managedschema] = js.undefined
+  
   // system_indicator?: any; // Deprecated / removed: https://bugs.chromium.org/p/chromium/issues/detail?id=142450
   /**
     * If you publish using the Chrome Developer Dashboard, ignore this field.
@@ -278,6 +320,7 @@ trait PartialManifest extends js.Object {
     * @see[Documentation]{@link https://developer.chrome.com/apps/autoupdate}
     */
   var update_url: js.UndefOr[String] = js.undefined
+  
   /**
     * Used by packaged apps to specify URL patterns the app wants to intercept and handle.
     * An app can define multiple URL handlers under this manifest entry,
@@ -293,9 +336,11 @@ trait PartialManifest extends js.Object {
     * @see[Documentation]{@link https://developer.chrome.com/apps/manifest/url_handlers}
     *
     */
-  var url_handlers: js.UndefOr[StringDictionary[AnonMatches]] = js.undefined
+  var url_handlers: js.UndefOr[StringDictionary[Matches]] = js.undefined
+  
   /** The usbPrinters manifest property declares which USB printers are supported by an app using the printerProvider API. */
-  var usb_printers: js.UndefOr[AnonFilters] = js.undefined
+  var usb_printers: js.UndefOr[FiltersArray] = js.undefined
+  
   /**
     * One to four dot-separated integers identifying the version of this app.
     * A couple of rules apply to the integers: they must be between 0 and 65535, inclusive,
@@ -305,6 +350,7 @@ trait PartialManifest extends js.Object {
     * @required
     */
   var version: String
+  
   /**
     * version_name can be set to a descriptive version string and will be used for display purposes if present.
     * If no version_name is present, the version field will be used for display purposes as well.
@@ -314,6 +360,7 @@ trait PartialManifest extends js.Object {
     * 'version_name': 'Gold Edition'
     */
   var version_name: js.UndefOr[String] = js.undefined
+  
   /**
     * By default, webviews are prevented from loading any resources packaged with the app.
     * However, webview partitions may be granted access to these resources via a webview.partitions
@@ -322,90 +369,195 @@ trait PartialManifest extends js.Object {
     * contain the * wildcard.
     * @see[Accessing packaged resources]{@link https://developer.chrome.com/apps/tags/webview#local_resources}
     */
-  var webview: js.UndefOr[AnonPartitions] = js.undefined
+  var webview: js.UndefOr[Partitions] = js.undefined
 }
-
 object PartialManifest {
-  @scala.inline
-  def apply(
-    app: AnonBackground,
-    externally_connectable: AnonAccepttlschannelid,
-    manifest_version: `2`,
-    name: String,
-    version: String,
-    action_handlers: js.Array[ToStringLiteral[AnonNEWNOTE, String, Exclude[String, new_note]]] = null,
-    author: AnonEmail | js.Any = null,
-    automation: AutomationOptions | Boolean = null,
-    bluetooth: AnonLowenergy = null,
-    commands: StringDictionary[AnonDescription] = null,
-    current_locale: String = null,
-    default_locale: String = null,
-    description: String = null,
-    display_in_launcher: js.UndefOr[Boolean] = js.undefined,
-    display_in_new_tab_page: js.UndefOr[Boolean] = js.undefined,
-    event_rules: js.Array[AnonActions] = null,
-    file_browser_handlers: js.Array[AnonDefaulticon] = null,
-    file_handlers: StringDictionary[AnonExtensions] = null,
-    file_system_provider_capabilities: AnonConfigurable = null,
-    icons: ManifestIcons = null,
-    `import`: js.Array[AnonId] = null,
-    key: String = null,
-    minimum_chrome_version: String = null,
-    nacl_modules: js.Array[AnonMimetype] = null,
-    oauth2: AnonClientid = null,
-    offline_enabled: js.UndefOr[Boolean] = js.undefined,
-    optional_permissions: js.Array[js.Array[UrlMatches] | OptionalPermission | String] = null,
-    permissions: js.Array[Permission | String] = null,
-    platforms: js.Array[AnonNaclarch] = null,
-    requirements: Anon3D = null,
-    sandbox: AnonContentsecuritypolicy = null,
-    short_name: String = null,
-    signature: js.Any = null,
-    sockets: AnonTcp = null,
-    storage: AnonManagedschema = null,
-    update_url: String = null,
-    url_handlers: StringDictionary[AnonMatches] = null,
-    usb_printers: AnonFilters = null,
-    version_name: String = null,
-    webview: AnonPartitions = null
-  ): PartialManifest = {
-    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], externally_connectable = externally_connectable.asInstanceOf[js.Any], manifest_version = manifest_version.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (action_handlers != null) __obj.updateDynamic("action_handlers")(action_handlers.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (automation != null) __obj.updateDynamic("automation")(automation.asInstanceOf[js.Any])
-    if (bluetooth != null) __obj.updateDynamic("bluetooth")(bluetooth.asInstanceOf[js.Any])
-    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
-    if (current_locale != null) __obj.updateDynamic("current_locale")(current_locale.asInstanceOf[js.Any])
-    if (default_locale != null) __obj.updateDynamic("default_locale")(default_locale.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(display_in_launcher)) __obj.updateDynamic("display_in_launcher")(display_in_launcher.asInstanceOf[js.Any])
-    if (!js.isUndefined(display_in_new_tab_page)) __obj.updateDynamic("display_in_new_tab_page")(display_in_new_tab_page.asInstanceOf[js.Any])
-    if (event_rules != null) __obj.updateDynamic("event_rules")(event_rules.asInstanceOf[js.Any])
-    if (file_browser_handlers != null) __obj.updateDynamic("file_browser_handlers")(file_browser_handlers.asInstanceOf[js.Any])
-    if (file_handlers != null) __obj.updateDynamic("file_handlers")(file_handlers.asInstanceOf[js.Any])
-    if (file_system_provider_capabilities != null) __obj.updateDynamic("file_system_provider_capabilities")(file_system_provider_capabilities.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (`import` != null) __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (minimum_chrome_version != null) __obj.updateDynamic("minimum_chrome_version")(minimum_chrome_version.asInstanceOf[js.Any])
-    if (nacl_modules != null) __obj.updateDynamic("nacl_modules")(nacl_modules.asInstanceOf[js.Any])
-    if (oauth2 != null) __obj.updateDynamic("oauth2")(oauth2.asInstanceOf[js.Any])
-    if (!js.isUndefined(offline_enabled)) __obj.updateDynamic("offline_enabled")(offline_enabled.asInstanceOf[js.Any])
-    if (optional_permissions != null) __obj.updateDynamic("optional_permissions")(optional_permissions.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (platforms != null) __obj.updateDynamic("platforms")(platforms.asInstanceOf[js.Any])
-    if (requirements != null) __obj.updateDynamic("requirements")(requirements.asInstanceOf[js.Any])
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
-    if (short_name != null) __obj.updateDynamic("short_name")(short_name.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
-    if (sockets != null) __obj.updateDynamic("sockets")(sockets.asInstanceOf[js.Any])
-    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
-    if (update_url != null) __obj.updateDynamic("update_url")(update_url.asInstanceOf[js.Any])
-    if (url_handlers != null) __obj.updateDynamic("url_handlers")(url_handlers.asInstanceOf[js.Any])
-    if (usb_printers != null) __obj.updateDynamic("usb_printers")(usb_printers.asInstanceOf[js.Any])
-    if (version_name != null) __obj.updateDynamic("version_name")(version_name.asInstanceOf[js.Any])
-    if (webview != null) __obj.updateDynamic("webview")(webview.asInstanceOf[js.Any])
+  
+  inline def apply(app: Background, externally_connectable: Accepttlschannelid, name: String, version: String): PartialManifest = {
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], externally_connectable = externally_connectable.asInstanceOf[js.Any], manifest_version = 2, name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialManifest]
   }
+  
+  extension [Self <: PartialManifest](x: Self) {
+    
+    inline def setAction_handlers(
+      value: js.Array[
+          ToStringLiteral[
+            NEWNOTE, 
+            NEW_NOTE, 
+            /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NEW_NOTE :'new_note'} extends keyof {  NEW_NOTE :'new_note'} ? std.Exclude<keyof {  NEW_NOTE :'new_note'}, 'new_note'> : never */ js.Any
+          ]
+        ]
+    ): Self = StObject.set(x, "action_handlers", value.asInstanceOf[js.Any])
+    
+    inline def setAction_handlersUndefined: Self = StObject.set(x, "action_handlers", js.undefined)
+    
+    inline def setAction_handlersVarargs(
+      value: (ToStringLiteral[
+          NEWNOTE, 
+          NEW_NOTE, 
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  NEW_NOTE :'new_note'} extends keyof {  NEW_NOTE :'new_note'} ? std.Exclude<keyof {  NEW_NOTE :'new_note'}, 'new_note'> : never */ js.Any
+        ])*
+    ): Self = StObject.set(x, "action_handlers", js.Array(value*))
+    
+    inline def setApp(value: Background): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    
+    inline def setAuthor(value: Email | Any): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    
+    inline def setAutomation(value: AutomationOptions | Boolean): Self = StObject.set(x, "automation", value.asInstanceOf[js.Any])
+    
+    inline def setAutomationUndefined: Self = StObject.set(x, "automation", js.undefined)
+    
+    inline def setBluetooth(value: Lowenergy): Self = StObject.set(x, "bluetooth", value.asInstanceOf[js.Any])
+    
+    inline def setBluetoothUndefined: Self = StObject.set(x, "bluetooth", js.undefined)
+    
+    inline def setCommands(value: StringDictionary[Global]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    
+    inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
+    
+    inline def setCurrent_locale(value: String): Self = StObject.set(x, "current_locale", value.asInstanceOf[js.Any])
+    
+    inline def setCurrent_localeUndefined: Self = StObject.set(x, "current_locale", js.undefined)
+    
+    inline def setDefault_locale(value: String): Self = StObject.set(x, "default_locale", value.asInstanceOf[js.Any])
+    
+    inline def setDefault_localeUndefined: Self = StObject.set(x, "default_locale", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDisplay_in_launcher(value: Boolean): Self = StObject.set(x, "display_in_launcher", value.asInstanceOf[js.Any])
+    
+    inline def setDisplay_in_launcherUndefined: Self = StObject.set(x, "display_in_launcher", js.undefined)
+    
+    inline def setDisplay_in_new_tab_page(value: Boolean): Self = StObject.set(x, "display_in_new_tab_page", value.asInstanceOf[js.Any])
+    
+    inline def setDisplay_in_new_tab_pageUndefined: Self = StObject.set(x, "display_in_new_tab_page", js.undefined)
+    
+    inline def setEvent_rules(value: js.Array[Actions]): Self = StObject.set(x, "event_rules", value.asInstanceOf[js.Any])
+    
+    inline def setEvent_rulesUndefined: Self = StObject.set(x, "event_rules", js.undefined)
+    
+    inline def setEvent_rulesVarargs(value: Actions*): Self = StObject.set(x, "event_rules", js.Array(value*))
+    
+    inline def setExternally_connectable(value: Accepttlschannelid): Self = StObject.set(x, "externally_connectable", value.asInstanceOf[js.Any])
+    
+    inline def setFile_browser_handlers(value: js.Array[Defaulticon]): Self = StObject.set(x, "file_browser_handlers", value.asInstanceOf[js.Any])
+    
+    inline def setFile_browser_handlersUndefined: Self = StObject.set(x, "file_browser_handlers", js.undefined)
+    
+    inline def setFile_browser_handlersVarargs(value: Defaulticon*): Self = StObject.set(x, "file_browser_handlers", js.Array(value*))
+    
+    inline def setFile_handlers(value: StringDictionary[Extensions]): Self = StObject.set(x, "file_handlers", value.asInstanceOf[js.Any])
+    
+    inline def setFile_handlersUndefined: Self = StObject.set(x, "file_handlers", js.undefined)
+    
+    inline def setFile_system_provider_capabilities(value: Configurable): Self = StObject.set(x, "file_system_provider_capabilities", value.asInstanceOf[js.Any])
+    
+    inline def setFile_system_provider_capabilitiesUndefined: Self = StObject.set(x, "file_system_provider_capabilities", js.undefined)
+    
+    inline def setIcons(value: ManifestIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    
+    inline def setImport(value: js.Array[Id]): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
+    
+    inline def setImportUndefined: Self = StObject.set(x, "import", js.undefined)
+    
+    inline def setImportVarargs(value: Id*): Self = StObject.set(x, "import", js.Array(value*))
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setManifest_version(value: `2`): Self = StObject.set(x, "manifest_version", value.asInstanceOf[js.Any])
+    
+    inline def setMinimum_chrome_version(value: String): Self = StObject.set(x, "minimum_chrome_version", value.asInstanceOf[js.Any])
+    
+    inline def setMinimum_chrome_versionUndefined: Self = StObject.set(x, "minimum_chrome_version", js.undefined)
+    
+    inline def setNacl_modules(value: js.Array[Mimetype]): Self = StObject.set(x, "nacl_modules", value.asInstanceOf[js.Any])
+    
+    inline def setNacl_modulesUndefined: Self = StObject.set(x, "nacl_modules", js.undefined)
+    
+    inline def setNacl_modulesVarargs(value: Mimetype*): Self = StObject.set(x, "nacl_modules", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setOauth2(value: Clientid): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
+    
+    inline def setOauth2Undefined: Self = StObject.set(x, "oauth2", js.undefined)
+    
+    inline def setOffline_enabled(value: Boolean): Self = StObject.set(x, "offline_enabled", value.asInstanceOf[js.Any])
+    
+    inline def setOffline_enabledUndefined: Self = StObject.set(x, "offline_enabled", js.undefined)
+    
+    inline def setOptional_permissions(value: js.Array[js.Array[UrlMatches] | OptionalPermission | String]): Self = StObject.set(x, "optional_permissions", value.asInstanceOf[js.Any])
+    
+    inline def setOptional_permissionsUndefined: Self = StObject.set(x, "optional_permissions", js.undefined)
+    
+    inline def setOptional_permissionsVarargs(value: (js.Array[UrlMatches] | OptionalPermission | String)*): Self = StObject.set(x, "optional_permissions", js.Array(value*))
+    
+    inline def setPermissions(value: js.Array[Permission | String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    
+    inline def setPermissionsVarargs(value: (Permission | String)*): Self = StObject.set(x, "permissions", js.Array(value*))
+    
+    inline def setPlatforms(value: js.Array[Naclarch]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
+    
+    inline def setPlatformsVarargs(value: Naclarch*): Self = StObject.set(x, "platforms", js.Array(value*))
+    
+    inline def setRequirements(value: `3D`): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
+    
+    inline def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
+    
+    inline def setSandbox(value: Contentsecuritypolicy): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    
+    inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+    
+    inline def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
+    
+    inline def setShort_nameUndefined: Self = StObject.set(x, "short_name", js.undefined)
+    
+    inline def setSignature(value: Any): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    
+    inline def setSockets(value: Tcp): Self = StObject.set(x, "sockets", value.asInstanceOf[js.Any])
+    
+    inline def setSocketsUndefined: Self = StObject.set(x, "sockets", js.undefined)
+    
+    inline def setStorage(value: Managedschema): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    
+    inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+    
+    inline def setUpdate_url(value: String): Self = StObject.set(x, "update_url", value.asInstanceOf[js.Any])
+    
+    inline def setUpdate_urlUndefined: Self = StObject.set(x, "update_url", js.undefined)
+    
+    inline def setUrl_handlers(value: StringDictionary[Matches]): Self = StObject.set(x, "url_handlers", value.asInstanceOf[js.Any])
+    
+    inline def setUrl_handlersUndefined: Self = StObject.set(x, "url_handlers", js.undefined)
+    
+    inline def setUsb_printers(value: FiltersArray): Self = StObject.set(x, "usb_printers", value.asInstanceOf[js.Any])
+    
+    inline def setUsb_printersUndefined: Self = StObject.set(x, "usb_printers", js.undefined)
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersion_name(value: String): Self = StObject.set(x, "version_name", value.asInstanceOf[js.Any])
+    
+    inline def setVersion_nameUndefined: Self = StObject.set(x, "version_name", js.undefined)
+    
+    inline def setWebview(value: Partitions): Self = StObject.set(x, "webview", value.asInstanceOf[js.Any])
+    
+    inline def setWebviewUndefined: Self = StObject.set(x, "webview", js.undefined)
+  }
 }
-

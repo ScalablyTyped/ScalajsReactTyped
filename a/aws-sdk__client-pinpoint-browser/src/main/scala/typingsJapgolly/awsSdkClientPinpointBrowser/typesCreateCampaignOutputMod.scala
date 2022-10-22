@@ -1,27 +1,41 @@
 package typingsJapgolly.awsSdkClientPinpointBrowser
 
-import typingsJapgolly.awsSdkClientPinpointBrowser.outputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientPinpointBrowser.typesCampaignResponseMod.UnmarshalledCampaignResponse
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientPinpointBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/types/CreateCampaignOutput", JSImport.Namespace)
-@js.native
-object typesCreateCampaignOutputMod extends js.Object {
-  @js.native
-  trait CreateCampaignOutput extends OutputTypesUnion {
+object typesCreateCampaignOutputMod {
+  
+  trait CreateCampaignOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * Campaign definition
       */
-    var CampaignResponse: UnmarshalledCampaignResponse = js.native
+    var CampaignResponse: UnmarshalledCampaignResponse
   }
-  
+  object CreateCampaignOutput {
+    
+    inline def apply($metadata: ResponseMetadata, CampaignResponse: UnmarshalledCampaignResponse): CreateCampaignOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], CampaignResponse = CampaignResponse.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CreateCampaignOutput]
+    }
+    
+    extension [Self <: CreateCampaignOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setCampaignResponse(value: UnmarshalledCampaignResponse): Self = StObject.set(x, "CampaignResponse", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

@@ -1,35 +1,48 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CornerType extends js.Object
-
+sealed trait CornerType extends StObject
 @JSImport("cesium", "CornerType")
 @js.native
-object CornerType extends js.Object {
-  @js.native
-  sealed trait BEVELED extends CornerType
-  
-  @js.native
-  sealed trait MITERED extends CornerType
-  
-  @js.native
-  sealed trait ROUNDED extends CornerType
+object CornerType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CornerType with Double] = js.native
-  /* 2 */ @js.native
-  object BEVELED extends TopLevel[BEVELED with Double]
+  def apply(value: Double): js.UndefOr[CornerType & Double] = js.native
   
-  /* 1 */ @js.native
-  object MITERED extends TopLevel[MITERED with Double]
+  /**
+    * <img src="Images/CornerTypeBeveled.png" style="vertical-align: middle;" width="186" height="189" />
+    *
+    * Corner is clipped.
+    */
+  @js.native
+  sealed trait BEVELED
+    extends StObject
+       with CornerType
+  /* 2 */ val BEVELED: typingsJapgolly.cesium.mod.CornerType.BEVELED & Double = js.native
   
-  /* 0 */ @js.native
-  object ROUNDED extends TopLevel[ROUNDED with Double]
+  /**
+    * <img src="Images/CornerTypeMitered.png" style="vertical-align: middle;" width="186" height="189" />
+    *
+    * Corner point is the intersection of adjacent edges.
+    */
+  @js.native
+  sealed trait MITERED
+    extends StObject
+       with CornerType
+  /* 1 */ val MITERED: typingsJapgolly.cesium.mod.CornerType.MITERED & Double = js.native
   
+  /**
+    * <img src="Images/CornerTypeRounded.png" style="vertical-align: middle;" width="186" height="189" />
+    *
+    * Corner has a smooth edge.
+    */
+  @js.native
+  sealed trait ROUNDED
+    extends StObject
+       with CornerType
+  /* 0 */ val ROUNDED: typingsJapgolly.cesium.mod.CornerType.ROUNDED & Double = js.native
 }
-

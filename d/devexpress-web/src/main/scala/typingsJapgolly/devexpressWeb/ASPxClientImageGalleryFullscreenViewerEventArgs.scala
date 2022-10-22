@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientImageGallery.FullscreenViewerActiveItemIndexChanged event.
   */
-@JSGlobal("ASPxClientImageGalleryFullscreenViewerEventArgs")
-@js.native
-class ASPxClientImageGalleryFullscreenViewerEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientImageGalleryFullscreenViewerEventArgs class.
-    * @param index A Int32 value that is the processed item index.
-    * @param name A String value that specifies the processed item's unique identifier name.
-    */
-  def this(index: Double, name: String) = this()
+trait ASPxClientImageGalleryFullscreenViewerEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the index of the item related to the event.
     */
-  var index: Double = js.native
+  var index: Double
+  
   /**
     * Gets the unique identifier name of the item related to the event.
     */
-  var name: String = js.native
+  var name: String
 }
-
+object ASPxClientImageGalleryFullscreenViewerEventArgs {
+  
+  inline def apply(index: Double, name: String): ASPxClientImageGalleryFullscreenViewerEventArgs = {
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientImageGalleryFullscreenViewerEventArgs]
+  }
+  
+  extension [Self <: ASPxClientImageGalleryFullscreenViewerEventArgs](x: Self) {
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
+}

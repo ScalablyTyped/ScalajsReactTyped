@@ -1,22 +1,27 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExpandedEventUIParam extends js.Object {
+trait ExpandedEventUIParam extends StObject {
+  
   /**
-  	 * Used to get a reference the igSplitButton.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Used to get a reference the igSplitButton.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ExpandedEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null): ExpandedEventUIParam = {
+  
+  inline def apply(): ExpandedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandedEventUIParam]
   }
+  
+  extension [Self <: ExpandedEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

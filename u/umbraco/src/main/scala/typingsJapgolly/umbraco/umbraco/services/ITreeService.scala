@@ -1,9 +1,9 @@
 package typingsJapgolly.umbraco.umbraco.services
 
 import typingsJapgolly.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -14,7 +14,8 @@ import scala.scalajs.js.annotation._
   * The tree service factory, used internally by the umbTree and umbTreeItem directives
   */
 @js.native
-trait ITreeService extends js.Object {
+trait ITreeService extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#clearCache
@@ -31,6 +32,7 @@ trait ITreeService extends js.Object {
     */
   def clearCache(): Unit = js.native
   def clearCache(args: ICacheArgs): Unit = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#getChildNode
@@ -42,7 +44,8 @@ trait ITreeService extends js.Object {
     * @param {object} treeNode to retrive child node from
     * @param {int} id id of child node
     */
-  def getChildNode(treeNode: js.Object, id: Double): js.Any = js.native
+  def getChildNode(treeNode: js.Object, id: Double): Any = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#getChildren
@@ -55,7 +58,8 @@ trait ITreeService extends js.Object {
     * @param {object} args.node tree node object to retrieve the children for
     * @param {string} args.section current section alias
     */
-  def getChildren(args: js.Any*): js.Any = js.native
+  def getChildren(args: Any*): Any = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#getDescendantNode
@@ -68,7 +72,8 @@ trait ITreeService extends js.Object {
     * @param {int} id id of descendant node
     * @param {string} treeAlias - optional tree alias, if fetching descendant node from a child of a listview document
     */
-  def getDescendantNode(treeNode: js.Object, id: Double, treeAlias: String): js.Any = js.native
+  def getDescendantNode(treeNode: js.Object, id: Double, treeAlias: String): Any = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#getMenu
@@ -80,7 +85,8 @@ trait ITreeService extends js.Object {
     * @param {object} args Arguments
     * @param {string} args.treeNode tree node object to retrieve the menu for
     */
-  def getMenu(args: js.Any*): js.Any = js.native
+  def getMenu(args: Any*): Any = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#getPath
@@ -92,6 +98,7 @@ trait ITreeService extends js.Object {
     * @param {object} node Tree node to retrieve path for
     */
   def getPath(node: js.Object): String = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#getTree
@@ -104,7 +111,8 @@ trait ITreeService extends js.Object {
     * @param {string} args.section Section alias
     * @param {string} args.cacheKey Optional cachekey
     */
-  def getTree(args: ITreeArgs): IPromise[_] = js.native
+  def getTree(args: ITreeArgs): IPromise[Any] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#getTreeAlias
@@ -116,6 +124,7 @@ trait ITreeService extends js.Object {
     * @param {object} treeNode to retrive tree alias from
     */
   def getTreeAlias(treeNode: js.Object): String = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#getTreePackageFolder
@@ -129,6 +138,7 @@ trait ITreeService extends js.Object {
     * @param {String} treeAlias The tree alias to check
     */
   def getTreePackageFolder(treeAlias: String): IPackageFolder = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#getTreeRoot
@@ -139,7 +149,8 @@ trait ITreeService extends js.Object {
     * Gets the root node of the current tree type for a given tree node
     * @param {object} treeNode to retrive tree root node from
     */
-  def getTreeRoot(treeNode: js.Object): js.Any = js.native
+  def getTreeRoot(treeNode: js.Object): Any = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#loadNodeChildren
@@ -153,7 +164,8 @@ trait ITreeService extends js.Object {
     * @param {object} args.node The tree node
     * @param {object} args.section The current section
     */
-  def loadNodeChildren(args: INodeArgs): IPromise[_] = js.native
+  def loadNodeChildren(args: INodeArgs): IPromise[Any] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#reloadNode
@@ -165,6 +177,7 @@ trait ITreeService extends js.Object {
     * @param {object} node Tree node to reload
     */
   def reloadNode(node: js.Object): Unit = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#removeChildNodes
@@ -176,6 +189,7 @@ trait ITreeService extends js.Object {
     * @param {object} treeNode the node to remove children from
     */
   def removeChildNodes(treeNode: js.Object): Unit = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.services.treeService#removeNode
@@ -188,4 +202,3 @@ trait ITreeService extends js.Object {
     */
   def removeNode(treeNode: js.Object): Unit = js.native
 }
-

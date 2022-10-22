@@ -4,32 +4,38 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`absolute-value`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`high-four-bit`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`low-four-bit`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`modulo-ten`
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.none
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointCloudUniqueValueRendererProperties extends PointCloudRendererProperties {
+trait PointCloudUniqueValueRendererProperties
+  extends StObject
+     with PointCloudRendererProperties {
+  
   /**
-    * Each element in the array is an object that matches a unique value with a specific color. Features with equal values to those specified here will be assigned the associated color. For example, you may choose to visualize points representing low vegetation with a green color and points representing power lines with a gray color. Each object has the following specification:
+    * Each element in the array is an object that matches a unique value with a specific color.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#colorUniqueValueInfos)
     */
   var colorUniqueValueInfos: js.UndefOr[js.Array[PointCloudUniqueValueRendererColorUniqueValueInfos]] = js.undefined
+  
   /**
     * The name of the field whose values are used to drive the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#field)
     */
   var field: js.UndefOr[String] = js.undefined
+  
   /**
     * A transform that is applied to the field value before evaluating the renderer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#fieldTransformType)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#fieldTransformType)
     */
-  var fieldTransformType: js.UndefOr[none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`] = js.undefined
+  var fieldTransformType: js.UndefOr[none_ | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`] = js.undefined
+  
   /**
     * An object providing options for displaying the renderer in the Legend.
     *
@@ -37,27 +43,31 @@ trait PointCloudUniqueValueRendererProperties extends PointCloudRendererProperti
     */
   var legendOptions: js.UndefOr[PointCloudUniqueValueRendererLegendOptions] = js.undefined
 }
-
 object PointCloudUniqueValueRendererProperties {
-  @scala.inline
-  def apply(
-    colorModulation: PointCloudRendererColorModulation = null,
-    colorUniqueValueInfos: js.Array[PointCloudUniqueValueRendererColorUniqueValueInfos] = null,
-    field: String = null,
-    fieldTransformType: none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten` = null,
-    legendOptions: PointCloudUniqueValueRendererLegendOptions = null,
-    pointSizeAlgorithm: PointCloudRendererPointSizeAlgorithm = null,
-    pointsPerInch: Int | Double = null
-  ): PointCloudUniqueValueRendererProperties = {
+  
+  inline def apply(): PointCloudUniqueValueRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation.asInstanceOf[js.Any])
-    if (colorUniqueValueInfos != null) __obj.updateDynamic("colorUniqueValueInfos")(colorUniqueValueInfos.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (fieldTransformType != null) __obj.updateDynamic("fieldTransformType")(fieldTransformType.asInstanceOf[js.Any])
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
-    if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm.asInstanceOf[js.Any])
-    if (pointsPerInch != null) __obj.updateDynamic("pointsPerInch")(pointsPerInch.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudUniqueValueRendererProperties]
   }
+  
+  extension [Self <: PointCloudUniqueValueRendererProperties](x: Self) {
+    
+    inline def setColorUniqueValueInfos(value: js.Array[PointCloudUniqueValueRendererColorUniqueValueInfos]): Self = StObject.set(x, "colorUniqueValueInfos", value.asInstanceOf[js.Any])
+    
+    inline def setColorUniqueValueInfosUndefined: Self = StObject.set(x, "colorUniqueValueInfos", js.undefined)
+    
+    inline def setColorUniqueValueInfosVarargs(value: PointCloudUniqueValueRendererColorUniqueValueInfos*): Self = StObject.set(x, "colorUniqueValueInfos", js.Array(value*))
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldTransformType(value: none_ | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`): Self = StObject.set(x, "fieldTransformType", value.asInstanceOf[js.Any])
+    
+    inline def setFieldTransformTypeUndefined: Self = StObject.set(x, "fieldTransformType", js.undefined)
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setLegendOptions(value: PointCloudUniqueValueRendererLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+  }
 }
-

@@ -1,28 +1,36 @@
 package typingsJapgolly.lodash.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// throttle
-trait ThrottleSettings extends js.Object {
+trait ThrottleSettings extends StObject {
+  
   /**
-    * If you'd like to disable the leading-edge call, pass this as false.
+    * @see _.leading
     */
   var leading: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * If you'd like to disable the execution on the trailing-edge, pass false.
+    * @see _.trailing
     */
   var trailing: js.UndefOr[Boolean] = js.undefined
 }
-
 object ThrottleSettings {
-  @scala.inline
-  def apply(leading: js.UndefOr[Boolean] = js.undefined, trailing: js.UndefOr[Boolean] = js.undefined): ThrottleSettings = {
+  
+  inline def apply(): ThrottleSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading.asInstanceOf[js.Any])
-    if (!js.isUndefined(trailing)) __obj.updateDynamic("trailing")(trailing.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThrottleSettings]
   }
+  
+  extension [Self <: ThrottleSettings](x: Self) {
+    
+    inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+    
+    inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+    
+    inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+    
+    inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+  }
 }
-

@@ -1,19 +1,24 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AgentNotebookInfo extends AgentJobInfo {
+trait AgentNotebookInfo
+  extends StObject
+     with AgentJobInfo {
+  
   var executeDatabase: String
+  
   var lastRunNotebookError: String
+  
   var targetDatabase: String
+  
   var templateId: Double
 }
-
 object AgentNotebookInfo {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     alerts: js.Array[AgentAlertInfo],
     category: String,
     categoryId: Double,
@@ -47,8 +52,17 @@ object AgentNotebookInfo {
     templateId: Double
   ): AgentNotebookInfo = {
     val __obj = js.Dynamic.literal(alerts = alerts.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], categoryId = categoryId.asInstanceOf[js.Any], categoryType = categoryType.asInstanceOf[js.Any], currentExecutionStatus = currentExecutionStatus.asInstanceOf[js.Any], currentExecutionStep = currentExecutionStep.asInstanceOf[js.Any], deleteLevel = deleteLevel.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], emailLevel = emailLevel.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], eventLogLevel = eventLogLevel.asInstanceOf[js.Any], executeDatabase = executeDatabase.asInstanceOf[js.Any], hasSchedule = hasSchedule.asInstanceOf[js.Any], hasStep = hasStep.asInstanceOf[js.Any], hasTarget = hasTarget.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], jobSchedules = jobSchedules.asInstanceOf[js.Any], jobSteps = jobSteps.asInstanceOf[js.Any], lastRun = lastRun.asInstanceOf[js.Any], lastRunNotebookError = lastRunNotebookError.asInstanceOf[js.Any], lastRunOutcome = lastRunOutcome.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nextRun = nextRun.asInstanceOf[js.Any], operatorToEmail = operatorToEmail.asInstanceOf[js.Any], operatorToPage = operatorToPage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], pageLevel = pageLevel.asInstanceOf[js.Any], runnable = runnable.asInstanceOf[js.Any], startStepId = startStepId.asInstanceOf[js.Any], targetDatabase = targetDatabase.asInstanceOf[js.Any], templateId = templateId.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AgentNotebookInfo]
   }
+  
+  extension [Self <: AgentNotebookInfo](x: Self) {
+    
+    inline def setExecuteDatabase(value: String): Self = StObject.set(x, "executeDatabase", value.asInstanceOf[js.Any])
+    
+    inline def setLastRunNotebookError(value: String): Self = StObject.set(x, "lastRunNotebookError", value.asInstanceOf[js.Any])
+    
+    inline def setTargetDatabase(value: String): Self = StObject.set(x, "targetDatabase", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateId(value: Double): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+  }
 }
-

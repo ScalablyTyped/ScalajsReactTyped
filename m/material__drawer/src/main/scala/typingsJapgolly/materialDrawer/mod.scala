@@ -1,59 +1,144 @@
 package typingsJapgolly.materialDrawer
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materialBase.componentMod.default
-import typingsJapgolly.materialDrawer.adapterMod.MDCDrawerAdapter
-import typingsJapgolly.materialDrawer.focusTrapMod.FocusTrap
-import typingsJapgolly.materialList.mod.MDCList
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.materialBase.Element
+import typingsJapgolly.materialDom.focusTrapMod.FocusTrap
+import typingsJapgolly.materialDrawer.anon.PartialMDCDrawerAdapter
+import typingsJapgolly.materialDrawer.utilMod.MDCDrawerFocusTrapFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/drawer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@material/drawer", JSImport.Default)
   @js.native
-  class MDCDismissibleDrawerFoundation protected ()
-    extends typingsJapgolly.materialDrawer.foundationMod.MDCDismissibleDrawerFoundation {
-    def this(adapter: MDCDrawerAdapter) = this()
+  open class default ()
+    extends typingsJapgolly.materialDrawer.modalFoundationMod.default {
+    def this(adapter: PartialMDCDrawerAdapter) = this()
   }
   
+  @JSImport("@material/drawer", "MDCDismissibleDrawerFoundation")
   @js.native
-  class MDCDrawer protected ()
-    extends default[
-          MDCDrawer, 
-          typingsJapgolly.materialDrawer.foundationMod.MDCDismissibleDrawerFoundation | typingsJapgolly.materialDrawer.modalFoundationMod.MDCModalDrawerFoundation
-        ] {
-    def this(args: js.Any*) = this()
-    /**
-      * Returns true if drawer is in the open position.
-      */
-    var open: Boolean = js.native
-    def initialize(focusTrapFactory: FocusTrap, listFactory: MDCList): Unit = js.native
+  open class MDCDismissibleDrawerFoundation ()
+    extends typingsJapgolly.materialDrawer.dismissibleFoundationMod.MDCDismissibleDrawerFoundation {
+    def this(adapter: PartialMDCDrawerAdapter) = this()
   }
   
+  @JSImport("@material/drawer", "MDCDrawer")
   @js.native
-  class MDCModalDrawerFoundation ()
-    extends typingsJapgolly.materialDrawer.modalFoundationMod.MDCModalDrawerFoundation
-  
+  open class MDCDrawer protected ()
+    extends typingsJapgolly.materialDrawer.componentMod.MDCDrawer {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(
+      root: Element,
+      foundation: typingsJapgolly.materialDrawer.dismissibleFoundationMod.MDCDismissibleDrawerFoundation,
+      args: Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCDismissibleDrawerFoundation extends js.Object {
-    val cssClasses: typingsJapgolly.materialDrawer.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCDrawerAdapter = js.native
-    val strings: typingsJapgolly.materialDrawer.constantsMod.strings = js.native
+  object MDCDrawer {
+    
+    @JSImport("@material/drawer", "MDCDrawer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: org.scalajs.dom.Element): typingsJapgolly.materialDrawer.componentMod.MDCDrawer = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materialDrawer.componentMod.MDCDrawer]
   }
   
-  /* static members */
+  @JSImport("@material/drawer", "MDCModalDrawerFoundation")
   @js.native
-  object MDCDrawer extends js.Object {
-    def attachTo(root: Element): MDCDrawer = js.native
+  open class MDCModalDrawerFoundation ()
+    extends typingsJapgolly.materialDrawer.modalFoundationMod.MDCModalDrawerFoundation {
+    def this(adapter: PartialMDCDrawerAdapter) = this()
   }
   
-  @js.native
-  object util extends js.Object {
-    def createFocusTrapInstance(surfaceEl: Element, focusTrapFactory: js.Function0[FocusTrap]): FocusTrap = js.native
+  object cssClasses {
+    
+    @JSImport("@material/drawer", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/drawer", "cssClasses.ANIMATE")
+    @js.native
+    def ANIMATE: String = js.native
+    inline def ANIMATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANIMATE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/drawer", "cssClasses.CLOSING")
+    @js.native
+    def CLOSING: String = js.native
+    inline def CLOSING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/drawer", "cssClasses.DISMISSIBLE")
+    @js.native
+    def DISMISSIBLE: String = js.native
+    inline def DISMISSIBLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISMISSIBLE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/drawer", "cssClasses.MODAL")
+    @js.native
+    def MODAL: String = js.native
+    inline def MODAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODAL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/drawer", "cssClasses.OPEN")
+    @js.native
+    def OPEN: String = js.native
+    
+    @JSImport("@material/drawer", "cssClasses.OPENING")
+    @js.native
+    def OPENING: String = js.native
+    inline def OPENING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENING")(x.asInstanceOf[js.Any])
+    
+    inline def OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/drawer", "cssClasses.ROOT")
+    @js.native
+    def ROOT: String = js.native
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
+  object strings {
+    
+    @JSImport("@material/drawer", "strings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/drawer", "strings.APP_CONTENT_SELECTOR")
+    @js.native
+    def APP_CONTENT_SELECTOR: String = js.native
+    inline def APP_CONTENT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APP_CONTENT_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/drawer", "strings.CLOSE_EVENT")
+    @js.native
+    def CLOSE_EVENT: String = js.native
+    inline def CLOSE_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_EVENT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/drawer", "strings.LIST_ITEM_ACTIVATED_SELECTOR")
+    @js.native
+    def LIST_ITEM_ACTIVATED_SELECTOR: String = js.native
+    inline def LIST_ITEM_ACTIVATED_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST_ITEM_ACTIVATED_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/drawer", "strings.LIST_SELECTOR")
+    @js.native
+    def LIST_SELECTOR: String = js.native
+    inline def LIST_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/drawer", "strings.OPEN_EVENT")
+    @js.native
+    def OPEN_EVENT: String = js.native
+    inline def OPEN_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN_EVENT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/drawer", "strings.SCRIM_SELECTOR")
+    @js.native
+    def SCRIM_SELECTOR: String = js.native
+    inline def SCRIM_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCRIM_SELECTOR")(x.asInstanceOf[js.Any])
+  }
+  
+  object util {
+    
+    @JSImport("@material/drawer", "util")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDrawerFocusTrapFactory): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusTrapInstance")(surfaceEl.asInstanceOf[js.Any], focusTrapFactory.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
+  }
 }
-

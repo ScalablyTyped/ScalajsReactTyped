@@ -1,61 +1,46 @@
 package typingsJapgolly.glReactDom.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.WebGLContextAttributes
-import org.scalajs.dom.raw.WebGLRenderingContext
+import org.scalajs.dom.WebGLContextAttributes
+import org.scalajs.dom.WebGLRenderingContext
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.glReactDom.glviewdomMod.GLViewDOMProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GLViewDOM {
-  def apply(
-    height: Double,
-    width: Double,
-    debug: Int | Double = null,
-    onContextCreate: /* gl */ WebGLRenderingContext => Callback = null,
-    onContextFailure: /* e */ js.Error => Callback = null,
-    onContextLost: js.UndefOr[Callback] = js.undefined,
-    onContextRestored: /* gl */ WebGLRenderingContext => Callback = null,
-    pixelRatio: Int | Double = null,
-    style: js.Any = null,
-    webglContextAttributes: WebGLContextAttributes = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    GLViewDOMProps, 
-    typingsJapgolly.glReactDom.glviewdomMod.GLViewDOM, 
-    Unit, 
-    GLViewDOMProps
-  ] = {
-    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
-      if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (onContextCreate != null) __obj.updateDynamic("onContextCreate")(js.Any.fromFunction1((t0: /* gl */ org.scalajs.dom.raw.WebGLRenderingContext) => onContextCreate(t0).runNow()))
-    if (onContextFailure != null) __obj.updateDynamic("onContextFailure")(js.Any.fromFunction1((t0: /* e */ js.Error) => onContextFailure(t0).runNow()))
-    onContextLost.foreach(p => __obj.updateDynamic("onContextLost")(p.toJsFn))
-    if (onContextRestored != null) __obj.updateDynamic("onContextRestored")(js.Any.fromFunction1((t0: /* gl */ org.scalajs.dom.raw.WebGLRenderingContext) => onContextRestored(t0).runNow()))
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (webglContextAttributes != null) __obj.updateDynamic("webglContextAttributes")(webglContextAttributes.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.glReactDom.glviewdomMod.GLViewDOMProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.glReactDom.glviewdomMod.GLViewDOM](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.glReactDom.glviewdomMod.GLViewDOMProps])(children: _*)
+  inline def apply(height: Double, width: Double): Builder = {
+    val __props = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[GLViewDOMProps]))
   }
+  
   @JSImport("gl-react-dom/GLViewDOM", "GLViewDOM")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.glReactDom.glviewdomMod.GLViewDOM] {
+    
+    inline def debug(value: Double): this.type = set("debug", value.asInstanceOf[js.Any])
+    
+    inline def onContextCreate(value: /* gl */ WebGLRenderingContext => Callback): this.type = set("onContextCreate", js.Any.fromFunction1((t0: /* gl */ WebGLRenderingContext) => value(t0).runNow()))
+    
+    inline def onContextFailure(value: /* e */ js.Error => Callback): this.type = set("onContextFailure", js.Any.fromFunction1((t0: /* e */ js.Error) => value(t0).runNow()))
+    
+    inline def onContextLost(value: Callback): this.type = set("onContextLost", value.toJsFn)
+    
+    inline def onContextRestored(value: /* gl */ WebGLRenderingContext => Callback): this.type = set("onContextRestored", js.Any.fromFunction1((t0: /* gl */ WebGLRenderingContext) => value(t0).runNow()))
+    
+    inline def pixelRatio(value: Double): this.type = set("pixelRatio", value.asInstanceOf[js.Any])
+    
+    inline def style(value: Any): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def webglContextAttributes(value: WebGLContextAttributes): this.type = set("webglContextAttributes", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: GLViewDOMProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

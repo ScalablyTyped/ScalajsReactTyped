@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-sitemap-xml
 
-Typings are for version 1.0
+Typings are for version 3.0
 
 ## Library description:
 Express middleware to serve `sitemap.xml` from a list of URLs
@@ -10,10 +10,10 @@ Express middleware to serve `sitemap.xml` from a list of URLs
 | ------------------ | :-------------: |
 | Full name          | express-sitemap-xml |
 | Keywords           | express, google, serve sitemap, serve sitemap.xml, site map, site map xml, sitemap, sitemap generator, sitemap xml, sitemap.xml, sitemaps, xml |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 35000 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 7832.0 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/express-sitemap-xml)

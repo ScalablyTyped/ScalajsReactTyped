@@ -1,13 +1,10 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information for custom drawing a crosshair cursor on the client side.
   */
-@JSGlobal("ASPxClientCrosshairDrawInfo")
-@js.native
-class ASPxClientCrosshairDrawInfo () extends js.Object
-
+trait ASPxClientCrosshairDrawInfo extends StObject

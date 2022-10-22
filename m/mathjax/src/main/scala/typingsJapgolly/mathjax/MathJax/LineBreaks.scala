@@ -1,14 +1,16 @@
 package typingsJapgolly.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LineBreaks extends js.Object {
+trait LineBreaks extends StObject {
+  
   /*This controls the automatic breaking of expressions: when false, only linebreak="newline" is processed; when
     * true, line breaks are inserted automatically in long expressions.
     */
   var automatic: js.UndefOr[Boolean] = js.undefined
+  
   /*This controls how wide the lines of mathematics can be.
     * Use an explicit width like "30em" for a fixed width. Use "container" to compute the size from the containing
     * element. Use "nn% container" for a portion of the container. Use "nn%" for a portion of the window size.
@@ -17,14 +19,21 @@ trait LineBreaks extends js.Object {
     */
   var width: js.UndefOr[String] = js.undefined
 }
-
 object LineBreaks {
-  @scala.inline
-  def apply(automatic: js.UndefOr[Boolean] = js.undefined, width: String = null): LineBreaks = {
+  
+  inline def apply(): LineBreaks = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(automatic)) __obj.updateDynamic("automatic")(automatic.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineBreaks]
   }
+  
+  extension [Self <: LineBreaks](x: Self) {
+    
+    inline def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
+    
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

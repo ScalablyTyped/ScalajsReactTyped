@@ -1,18 +1,28 @@
-package typingsJapgolly.typescriptServices
+package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object TypeScript {
-  type IClassElementSyntax = typingsJapgolly.typescriptServices.TypeScript.ISyntaxNode
-  type IIndexable[T] = org.scalablytyped.runtime.StringDictionary[T]
-  type IMemberDeclarationSyntax = typingsJapgolly.typescriptServices.TypeScript.IClassElementSyntax
-  type IModuleElementSyntax = typingsJapgolly.typescriptServices.TypeScript.ISyntaxNode
-  type INameSyntax = typingsJapgolly.typescriptServices.TypeScript.ITypeSyntax
-  type IPropertyAssignmentSyntax = typingsJapgolly.typescriptServices.TypeScript.IClassElementSyntax
-  type ISyntaxNode = typingsJapgolly.typescriptServices.TypeScript.ISyntaxNodeOrToken
-  type ITypeMemberSyntax = typingsJapgolly.typescriptServices.TypeScript.ISyntaxNode
-  type ITypeSyntax = typingsJapgolly.typescriptServices.TypeScript.ISyntaxNodeOrToken
-  type TypeArgumentMap = org.scalablytyped.runtime.NumberDictionary[typingsJapgolly.typescriptServices.TypeScript.PullTypeSymbol]
-}
+
+type IClassElementSyntax = ISyntaxNode
+
+type IIndexable[T] = StringDictionary[T]
+
+type IMemberDeclarationSyntax = IClassElementSyntax
+
+type IModuleElementSyntax = ISyntaxNode
+
+type INameSyntax = ITypeSyntax
+
+type IPropertyAssignmentSyntax = IClassElementSyntax
+
+type ISyntaxNode = ISyntaxNodeOrToken
+
+type ITypeMemberSyntax = ISyntaxNode
+
+type ITypeSyntax = ISyntaxNodeOrToken
+
+type TypeArgumentMap = NumberDictionary[PullTypeSymbol]

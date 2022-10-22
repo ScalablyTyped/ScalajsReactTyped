@@ -11,9 +11,9 @@ Provides StructuredSource and functionality for converting range and loc vice ve
 | Full name          | structured-source |
 | Keywords           | location, range, abstract, syntax, tree |
 | # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 1474874 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 383824.0 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/Constellation/structured-source)

@@ -1,26 +1,42 @@
 package typingsJapgolly.awsSdkClientGlacierNode
 
-import typingsJapgolly.awsSdkClientGlacierNode.outputTypesUnionMod._OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientGlacierNode.typesOutputTypesUnionMod._OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/types/PurchaseProvisionedCapacityOutput", JSImport.Namespace)
-@js.native
-object typesPurchaseProvisionedCapacityOutputMod extends js.Object {
-  @js.native
-  trait PurchaseProvisionedCapacityOutput extends _OutputTypesUnion {
+object typesPurchaseProvisionedCapacityOutputMod {
+  
+  trait PurchaseProvisionedCapacityOutput
+    extends StObject
+       with _OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>The ID that identifies the provisioned capacity unit.</p>
       */
-    var capacityId: js.UndefOr[String] = js.native
+    var capacityId: js.UndefOr[String] = js.undefined
   }
-  
+  object PurchaseProvisionedCapacityOutput {
+    
+    inline def apply($metadata: ResponseMetadata): PurchaseProvisionedCapacityOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PurchaseProvisionedCapacityOutput]
+    }
+    
+    extension [Self <: PurchaseProvisionedCapacityOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setCapacityId(value: String): Self = StObject.set(x, "capacityId", value.asInstanceOf[js.Any])
+      
+      inline def setCapacityIdUndefined: Self = StObject.set(x, "capacityId", js.undefined)
+    }
+  }
 }
-

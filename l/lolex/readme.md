@@ -10,10 +10,10 @@ Fake JavaScript timers
 | ------------------ | :-------------: |
 | Full name          | lolex |
 | Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 57 |
-| # downloads        | 130228166 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7036663333333332E7 |
+| # stars            | 707.0 |
 
 ## Links
 - [Homepage](http://github.com/sinonjs/lolex)

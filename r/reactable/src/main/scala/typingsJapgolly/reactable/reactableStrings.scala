@@ -1,20 +1,21 @@
 package typingsJapgolly.reactable
 
 import typingsJapgolly.reactable.mod.SortDirection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactableStrings {
-  @js.native
-  sealed trait asc extends SortDirection
   
   @js.native
-  sealed trait desc extends SortDirection
+  sealed trait asc
+    extends StObject
+       with SortDirection
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  @js.native
+  sealed trait desc
+    extends StObject
+       with SortDirection
+  inline def desc: desc = "desc".asInstanceOf[desc]
 }
-

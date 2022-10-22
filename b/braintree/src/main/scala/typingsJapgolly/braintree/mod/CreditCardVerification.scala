@@ -1,30 +1,46 @@
 package typingsJapgolly.braintree.mod
 
-import typingsJapgolly.braintree.AnonBin
-import typingsJapgolly.braintree.AnonCountryName
+import typingsJapgolly.braintree.anon.Bin
+import typingsJapgolly.braintree.anon.CountryName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "CreditCardVerification")
 @js.native
-class CreditCardVerification () extends js.Object {
+open class CreditCardVerification () extends StObject {
+  
   var amount: String = js.native
+  
   var avsErrorResponseCode: js.UndefOr[String] = js.native
+  
   var avsPostalCodeResponseCode: js.UndefOr[String] = js.native
-  var avsScreetAddressResponseCode: js.UndefOr[String] = js.native
-  var billing: js.UndefOr[AnonCountryName] = js.native
-  var createdAt: js.Date = js.native
-  var creditCard: js.UndefOr[AnonBin] = js.native
+  
+  var avsStreetAddressResponseCode: js.UndefOr[String] = js.native
+  
+  var billing: js.UndefOr[CountryName] = js.native
+  
+  var createdAt: String = js.native
+  
+  var creditCard: js.UndefOr[Bin] = js.native
+  
   var currencyIsoCode: String = js.native
+  
   var cvvResponseCode: String = js.native
+  
   var gatewayRejectionReason: js.UndefOr[String] = js.native
+  
   var id: String = js.native
+  
   var merchantAccountId: String = js.native
+  
   var processorResponseCode: String = js.native
+  
   var processorResponseText: String = js.native
+  
   var processorResponseType: String = js.native
+  
   var riskData: js.UndefOr[TransactionRiskData] = js.native
+  
   var status: String = js.native
 }
-

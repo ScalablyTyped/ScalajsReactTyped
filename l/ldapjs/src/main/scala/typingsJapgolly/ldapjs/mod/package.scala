@@ -1,32 +1,32 @@
-package typingsJapgolly.ldapjs
+package typingsJapgolly.ldapjs.mod
 
+import typingsJapgolly.ldapjs.mod.^
+import typingsJapgolly.ldapjs.mod.dn.DN
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type CallBack = js.Function2[
-    /* error */ typingsJapgolly.ldapjs.mod.Error, 
-    /* result */ js.UndefOr[js.Any], 
-    scala.Unit
-  ]
-  type CompareCallback = js.Function2[
-    /* error */ typingsJapgolly.ldapjs.mod.Error, 
-    /* matched */ js.UndefOr[scala.Boolean], 
-    scala.Unit
-  ]
-  type Control = js.Any
-  type ErrorCallback = js.Function1[/* error */ typingsJapgolly.ldapjs.mod.Error, scala.Unit]
-  type ExopCallback = js.Function3[
-    /* error */ typingsJapgolly.ldapjs.mod.Error, 
-    /* value */ java.lang.String, 
-    /* result */ js.UndefOr[js.Any], 
-    scala.Unit
-  ]
-  type SearchCallBack = js.Function2[
-    /* error */ typingsJapgolly.ldapjs.mod.Error | scala.Null, 
-    /* result */ typingsJapgolly.ldapjs.mod.SearchCallbackResponse, 
-    scala.Unit
-  ]
-  type SearchReference = js.Any
-}
+
+inline def createClient(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[Client]
+inline def createClient(options: ClientOptions): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[Client]
+
+inline def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
+inline def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+
+inline def parseDN(dn: String): DN = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDN")(dn.asInstanceOf[js.Any]).asInstanceOf[DN]
+
+inline def parseFilter(filterString: String): Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFilter")(filterString.asInstanceOf[js.Any]).asInstanceOf[Filter]
+
+type CallBack = js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[Any], Unit]
+
+type CompareCallback = js.Function2[/* error */ Error | Null, /* matched */ js.UndefOr[Boolean], Unit]
+
+type Control = Any
+
+type ErrorCallback = js.Function1[/* error */ Error, Unit]
+
+type ExopCallback = js.Function3[/* error */ Error | Null, /* value */ String, /* result */ js.UndefOr[Any], Unit]
+
+type SearchCallBack = js.Function2[/* error */ Error | Null, /* result */ SearchCallbackResponse, Unit]
+
+type SearchReference = Any

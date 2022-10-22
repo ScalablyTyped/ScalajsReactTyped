@@ -1,19 +1,24 @@
 package typingsJapgolly.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AccelerometerGeneralOption extends js.Object {
+trait AccelerometerGeneralOption extends StObject {
+  
   var controller: js.UndefOr[String] = js.undefined
 }
-
 object AccelerometerGeneralOption {
-  @scala.inline
-  def apply(controller: String = null): AccelerometerGeneralOption = {
+  
+  inline def apply(): AccelerometerGeneralOption = {
     val __obj = js.Dynamic.literal()
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccelerometerGeneralOption]
   }
+  
+  extension [Self <: AccelerometerGeneralOption](x: Self) {
+    
+    inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+  }
 }
-

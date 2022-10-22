@@ -2,15 +2,19 @@ package typingsJapgolly.ol
 
 import typingsJapgolly.ol.extentMod.Extent
 import typingsJapgolly.ol.tilegridTileGridMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/loadingstrategy", JSImport.Namespace)
-@js.native
-object loadingstrategyMod extends js.Object {
-  def all(extent: Extent, resolution: Double): js.Array[Extent] = js.native
-  def bbox(extent: Extent, resolution: Double): js.Array[Extent] = js.native
-  def tile(tileGrid: default): js.Function2[/* p0 */ Extent, /* p1 */ Double, js.Array[Extent]] = js.native
+object loadingstrategyMod {
+  
+  @JSImport("ol/loadingstrategy", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def all(extent: Extent, resolution: Double): js.Array[Extent] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(extent.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any])).asInstanceOf[js.Array[Extent]]
+  
+  inline def bbox(extent: Extent, resolution: Double): js.Array[Extent] = (^.asInstanceOf[js.Dynamic].applyDynamic("bbox")(extent.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any])).asInstanceOf[js.Array[Extent]]
+  
+  inline def tile(tileGrid: default): js.Function2[/* p0 */ Extent, /* p1 */ Double, js.Array[Extent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tile")(tileGrid.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* p0 */ Extent, /* p1 */ Double, js.Array[Extent]]]
 }
-

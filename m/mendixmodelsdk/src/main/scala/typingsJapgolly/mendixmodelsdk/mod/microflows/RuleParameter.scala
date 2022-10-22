@@ -1,35 +1,46 @@
 package typingsJapgolly.mendixmodelsdk.mod.microflows
 
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit
-import typingsJapgolly.mendixmodelsdk.microflowsMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/parameter relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/parameter relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk", "microflows.RuleParameter")
 @js.native
-class RuleParameter protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.microflows.RuleParameter {
+open class RuleParameter protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.microflows.RuleParameter {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "microflows.RuleParameter")
-@js.native
-object RuleParameter extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object RuleParameter {
+  
+  @JSImport("mendixmodelsdk", "microflows.RuleParameter")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.RuleParameter.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.RuleParameter.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

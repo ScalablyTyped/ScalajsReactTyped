@@ -3,32 +3,52 @@ package typingsJapgolly.tryghostContentApi.mod
 import typingsJapgolly.tryghostContentApi.tryghostContentApiStrings.canary
 import typingsJapgolly.tryghostContentApi.tryghostContentApiStrings.v2
 import typingsJapgolly.tryghostContentApi.tryghostContentApiStrings.v3
+import typingsJapgolly.tryghostContentApi.tryghostContentApiStrings.v4
+import typingsJapgolly.tryghostContentApi.tryghostContentApiStrings.v5Dot0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GhostContentAPIOptions extends js.Object {
+trait GhostContentAPIOptions extends StObject {
+  
   /** @default "ghost" */
   var ghostPath: js.UndefOr[String] = js.undefined
+  
   /** @deprecated since version v2 */
   var host: js.UndefOr[String] = js.undefined
+  
   var key: String
+  
   var url: String
+  
   /**
     * Version of GhostContentAPI
     *
-    * Supported Versions: 'v2', 'v3', 'canary'
+    * Supported Versions: 'v2', 'v3', 'v4', 'v5.0', 'canary'
     */
-  var version: v2 | v3 | canary
+  var version: v2 | v3 | v4 | v5Dot0 | canary
 }
-
 object GhostContentAPIOptions {
-  @scala.inline
-  def apply(key: String, url: String, version: v2 | v3 | canary, ghostPath: String = null, host: String = null): GhostContentAPIOptions = {
+  
+  inline def apply(key: String, url: String, version: v2 | v3 | v4 | v5Dot0 | canary): GhostContentAPIOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (ghostPath != null) __obj.updateDynamic("ghostPath")(ghostPath.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     __obj.asInstanceOf[GhostContentAPIOptions]
   }
+  
+  extension [Self <: GhostContentAPIOptions](x: Self) {
+    
+    inline def setGhostPath(value: String): Self = StObject.set(x, "ghostPath", value.asInstanceOf[js.Any])
+    
+    inline def setGhostPathUndefined: Self = StObject.set(x, "ghostPath", js.undefined)
+    
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: v2 | v3 | v4 | v5Dot0 | canary): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+  }
 }
-

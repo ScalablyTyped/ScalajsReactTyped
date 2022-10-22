@@ -1,12 +1,14 @@
 package typingsJapgolly.stemmer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stemmer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(value: String): String = js.native
+object mod {
+  
+  @JSImport("stemmer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def stemmer(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stemmer")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

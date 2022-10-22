@@ -1,21 +1,25 @@
 package typingsJapgolly.winrt.Windows.Media.Capture
 
 import typingsJapgolly.winrt.Windows.Foundation.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICameraCaptureUIPhotoCaptureSettings extends js.Object {
+trait ICameraCaptureUIPhotoCaptureSettings extends StObject {
+  
   var allowCropping: Boolean
+  
   var croppedAspectRatio: Size
+  
   var croppedSizeInPixels: Size
+  
   var format: CameraCaptureUIPhotoFormat
+  
   var maxResolution: CameraCaptureUIMaxPhotoResolution
 }
-
 object ICameraCaptureUIPhotoCaptureSettings {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     allowCropping: Boolean,
     croppedAspectRatio: Size,
     croppedSizeInPixels: Size,
@@ -23,8 +27,19 @@ object ICameraCaptureUIPhotoCaptureSettings {
     maxResolution: CameraCaptureUIMaxPhotoResolution
   ): ICameraCaptureUIPhotoCaptureSettings = {
     val __obj = js.Dynamic.literal(allowCropping = allowCropping.asInstanceOf[js.Any], croppedAspectRatio = croppedAspectRatio.asInstanceOf[js.Any], croppedSizeInPixels = croppedSizeInPixels.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], maxResolution = maxResolution.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ICameraCaptureUIPhotoCaptureSettings]
   }
+  
+  extension [Self <: ICameraCaptureUIPhotoCaptureSettings](x: Self) {
+    
+    inline def setAllowCropping(value: Boolean): Self = StObject.set(x, "allowCropping", value.asInstanceOf[js.Any])
+    
+    inline def setCroppedAspectRatio(value: Size): Self = StObject.set(x, "croppedAspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def setCroppedSizeInPixels(value: Size): Self = StObject.set(x, "croppedSizeInPixels", value.asInstanceOf[js.Any])
+    
+    inline def setFormat(value: CameraCaptureUIPhotoFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setMaxResolution(value: CameraCaptureUIMaxPhotoResolution): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,155 +1,146 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.ghost
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.large
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.primary
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.small
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.warning
-import typingsJapgolly.antDesignReactNative.buttonMod.ButtonProps
-import typingsJapgolly.antDesignReactNative.buttonMod.default
-import typingsJapgolly.antDesignReactNative.buttonStyleMod.ButtonStyles
+import typingsJapgolly.antDesignReactNative.libButtonMod.ButtonProps
+import typingsJapgolly.antDesignReactNative.libButtonStyleMod.ButtonStyles
 import typingsJapgolly.reactNative.mod.AccessibilityActionInfo
 import typingsJapgolly.reactNative.mod.AccessibilityRole
 import typingsJapgolly.reactNative.mod.AccessibilityState
-import typingsJapgolly.reactNative.mod.AccessibilityStates
-import typingsJapgolly.reactNative.mod.AccessibilityTrait
+import typingsJapgolly.reactNative.mod.AccessibilityValue
+import typingsJapgolly.reactNative.mod.ColorValue
 import typingsJapgolly.reactNative.mod.Insets
-import typingsJapgolly.reactNative.mod.LayoutChangeEvent
 import typingsJapgolly.reactNative.mod.NodeHandle
 import typingsJapgolly.reactNative.mod.StyleProp
-import typingsJapgolly.reactNative.mod.TVParallaxProperties
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.reactNative.reactNativeStrings.`no-hide-descendants`
 import typingsJapgolly.reactNative.reactNativeStrings.assertive
 import typingsJapgolly.reactNative.reactNativeStrings.auto
-import typingsJapgolly.reactNative.reactNativeStrings.button
 import typingsJapgolly.reactNative.reactNativeStrings.no
 import typingsJapgolly.reactNative.reactNativeStrings.none
 import typingsJapgolly.reactNative.reactNativeStrings.polite
-import typingsJapgolly.reactNative.reactNativeStrings.radiobutton_checked
-import typingsJapgolly.reactNative.reactNativeStrings.radiobutton_unchecked
 import typingsJapgolly.reactNative.reactNativeStrings.yes
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Button {
-  def apply(
-    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
-    accessibilityHint: String = null,
-    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
-    accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    accessibilityRole: AccessibilityRole = null,
-    accessibilityState: AccessibilityState = null,
-    accessibilityStates: js.Array[AccessibilityStates] = null,
-    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
-    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
-    accessible: js.UndefOr[Boolean] = js.undefined,
-    activeOpacity: Int | Double = null,
-    activeStyle: StyleProp[ViewStyle] = null,
-    delayLongPress: Int | Double = null,
-    delayPressIn: Int | Double = null,
-    delayPressOut: Int | Double = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
-    hitSlop: Insets = null,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
-    loading: js.UndefOr[Boolean] = js.undefined,
-    onAccessibilityAction: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onAccessibilityEscape: js.UndefOr[Callback] = js.undefined,
-    onAccessibilityTap: js.UndefOr[Callback] = js.undefined,
-    onBlur: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onFocus: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onHideUnderlay: js.UndefOr[Callback] = js.undefined,
-    onLayout: /* event */ LayoutChangeEvent => Callback = null,
-    onLongPress: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onMagicTap: js.UndefOr[Callback] = js.undefined,
-    onPress: /* _ */ js.UndefOr[js.Any] => Callback = null,
-    onPressIn: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onPressOut: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onShowUnderlay: js.UndefOr[Callback] = js.undefined,
-    pressRetentionOffset: Insets = null,
-    size: large | small = null,
-    style: StyleProp[ViewStyle] = null,
-    styles: Partial[ButtonStyles] = null,
-    testID: String = null,
-    tvParallaxProperties: TVParallaxProperties = null,
-    `type`: primary | warning | ghost = null,
-    underlayColor: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ButtonProps, default, Unit, ButtonProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
-    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
-    if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle.asInstanceOf[js.Any])
-    if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
-    if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
-    if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
-    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onAccessibilityAction(t0).runNow()))
-    onAccessibilityEscape.foreach(p => __obj.updateDynamic("onAccessibilityEscape")(p.toJsFn))
-    onAccessibilityTap.foreach(p => __obj.updateDynamic("onAccessibilityTap")(p.toJsFn))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onBlur(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
-    onHideUnderlay.foreach(p => __obj.updateDynamic("onHideUnderlay")(p.toJsFn))
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactNative.mod.LayoutChangeEvent) => onLayout(t0).runNow()))
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onLongPress(t0).runNow()))
-    onMagicTap.foreach(p => __obj.updateDynamic("onMagicTap")(p.toJsFn))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1((t0: /* _ */ js.UndefOr[js.Any]) => onPress(t0).runNow()))
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPressIn(t0).runNow()))
-    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPressOut(t0).runNow()))
-    onShowUnderlay.foreach(p => __obj.updateDynamic("onShowUnderlay")(p.toJsFn))
-    if (pressRetentionOffset != null) __obj.updateDynamic("pressRetentionOffset")(pressRetentionOffset.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.buttonMod.ButtonProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.buttonMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.buttonMod.ButtonProps])(children: _*)
-  }
-  @JSImport("@ant-design/react-native/lib/button", JSImport.Default)
+  @JSImport("@ant-design/react-native", "Button")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.Button] {
+    
+    inline def accessibilityActions(value: js.Array[AccessibilityActionInfo]): this.type = set("accessibilityActions", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityActionsVarargs(value: AccessibilityActionInfo*): this.type = set("accessibilityActions", js.Array(value*))
+    
+    inline def accessibilityElementsHidden(value: Boolean): this.type = set("accessibilityElementsHidden", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityHint(value: String): this.type = set("accessibilityHint", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityIgnoresInvertColors(value: Boolean): this.type = set("accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLabel(value: String): this.type = set("accessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLabelledBy(value: String | js.Array[String]): this.type = set("accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLabelledByVarargs(value: String*): this.type = set("accessibilityLabelledBy", js.Array(value*))
+    
+    inline def accessibilityLanguage(value: String): this.type = set("accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLiveRegion(value: none | polite | assertive): this.type = set("accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityRole(value: AccessibilityRole): this.type = set("accessibilityRole", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityState(value: AccessibilityState): this.type = set("accessibilityState", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityValue(value: AccessibilityValue): this.type = set("accessibilityValue", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityViewIsModal(value: Boolean): this.type = set("accessibilityViewIsModal", value.asInstanceOf[js.Any])
+    
+    inline def accessible(value: Boolean): this.type = set("accessible", value.asInstanceOf[js.Any])
+    
+    inline def activeOpacity(value: Double): this.type = set("activeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def activeStyle(value: StyleProp[ViewStyle]): this.type = set("activeStyle", value.asInstanceOf[js.Any])
+    
+    inline def activeStyleNull: this.type = set("activeStyle", null)
+    
+    inline def delayLongPress(value: Double): this.type = set("delayLongPress", value.asInstanceOf[js.Any])
+    
+    inline def delayPressIn(value: Double): this.type = set("delayPressIn", value.asInstanceOf[js.Any])
+    
+    inline def delayPressOut(value: Double): this.type = set("delayPressOut", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def disabledNull: this.type = set("disabled", null)
+    
+    inline def hitSlop(value: Insets): this.type = set("hitSlop", value.asInstanceOf[js.Any])
+    
+    inline def importantForAccessibility(value: auto | yes | no | `no-hide-descendants`): this.type = set("importantForAccessibility", value.asInstanceOf[js.Any])
+    
+    inline def loading(value: Boolean): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def onAccessibilityAction(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onAccessibilityAction", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onAccessibilityEscape(value: Callback): this.type = set("onAccessibilityEscape", value.toJsFn)
+    
+    inline def onAccessibilityTap(value: Callback): this.type = set("onAccessibilityTap", value.toJsFn)
+    
+    inline def onBlur(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onFocus(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onHideUnderlay(value: Callback): this.type = set("onHideUnderlay", value.toJsFn)
+    
+    inline def onLayout(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onLayout", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onLongPress(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onLongPress", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onMagicTap(value: Callback): this.type = set("onMagicTap", value.toJsFn)
+    
+    inline def onPress(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPress", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPressIn(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPressIn", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPressOut(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPressOut", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onShowUnderlay(value: Callback): this.type = set("onShowUnderlay", value.toJsFn)
+    
+    inline def pressRetentionOffset(value: Insets): this.type = set("pressRetentionOffset", value.asInstanceOf[js.Any])
+    
+    inline def size(value: large | small): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: Partial[ButtonStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def testID(value: String): this.type = set("testID", value.asInstanceOf[js.Any])
+    
+    inline def touchSoundDisabled(value: Boolean): this.type = set("touchSoundDisabled", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: primary | warning | ghost): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def underlayColor(value: ColorValue): this.type = set("underlayColor", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Button.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ButtonProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

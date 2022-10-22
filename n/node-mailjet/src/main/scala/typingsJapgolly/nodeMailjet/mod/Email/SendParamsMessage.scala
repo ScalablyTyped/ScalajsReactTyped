@@ -1,79 +1,150 @@
 package typingsJapgolly.nodeMailjet.mod.Email
 
-import typingsJapgolly.nodeMailjet.AnonEmail
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SendParamsMessage extends js.Object {
+trait SendParamsMessage extends StObject {
+  
   var Attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
+  
   var Bcc: js.UndefOr[js.Array[SendParamsRecipient]] = js.undefined
+  
   var Cc: js.UndefOr[js.Array[SendParamsRecipient]] = js.undefined
+  
   var CustomCampaign: js.UndefOr[String] = js.undefined
+  
   var CustomID: js.UndefOr[String] = js.undefined
+  
   var DeduplicateCampaign: js.UndefOr[Boolean] = js.undefined
+  
   var EventPayload: js.UndefOr[String] = js.undefined
-  var From: AnonEmail
+  
+  var From: typingsJapgolly.nodeMailjet.anon.Email
+  
   var HTMLPart: js.UndefOr[String] = js.undefined
+  
   var Headers: js.UndefOr[js.Object] = js.undefined
+  
   var InlinedAttachments: js.UndefOr[js.Array[InlinedAttachment]] = js.undefined
+  
   var MonitoringCategory: js.UndefOr[String] = js.undefined
+  
   var ReplyTo: js.UndefOr[SendParamsRecipient] = js.undefined
-  var Sender: js.UndefOr[AnonEmail] = js.undefined
-  var Subject: String
+  
+  var Sender: js.UndefOr[typingsJapgolly.nodeMailjet.anon.Email] = js.undefined
+  
+  var Subject: js.UndefOr[String] = js.undefined
+  
   var TemplateID: js.UndefOr[Double] = js.undefined
+  
   var TemplateLanguage: js.UndefOr[Boolean] = js.undefined
+  
   var TextPart: js.UndefOr[String] = js.undefined
+  
   var To: js.Array[SendParamsRecipient]
+  
   var URLTags: js.UndefOr[String] = js.undefined
+  
   var Variables: js.UndefOr[js.Object] = js.undefined
 }
-
 object SendParamsMessage {
-  @scala.inline
-  def apply(
-    From: AnonEmail,
-    Subject: String,
-    To: js.Array[SendParamsRecipient],
-    Attachments: js.Array[Attachment] = null,
-    Bcc: js.Array[SendParamsRecipient] = null,
-    Cc: js.Array[SendParamsRecipient] = null,
-    CustomCampaign: String = null,
-    CustomID: String = null,
-    DeduplicateCampaign: js.UndefOr[Boolean] = js.undefined,
-    EventPayload: String = null,
-    HTMLPart: String = null,
-    Headers: js.Object = null,
-    InlinedAttachments: js.Array[InlinedAttachment] = null,
-    MonitoringCategory: String = null,
-    ReplyTo: SendParamsRecipient = null,
-    Sender: AnonEmail = null,
-    TemplateID: Int | Double = null,
-    TemplateLanguage: js.UndefOr[Boolean] = js.undefined,
-    TextPart: String = null,
-    URLTags: String = null,
-    Variables: js.Object = null
-  ): SendParamsMessage = {
-    val __obj = js.Dynamic.literal(From = From.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], To = To.asInstanceOf[js.Any])
-    if (Attachments != null) __obj.updateDynamic("Attachments")(Attachments.asInstanceOf[js.Any])
-    if (Bcc != null) __obj.updateDynamic("Bcc")(Bcc.asInstanceOf[js.Any])
-    if (Cc != null) __obj.updateDynamic("Cc")(Cc.asInstanceOf[js.Any])
-    if (CustomCampaign != null) __obj.updateDynamic("CustomCampaign")(CustomCampaign.asInstanceOf[js.Any])
-    if (CustomID != null) __obj.updateDynamic("CustomID")(CustomID.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeduplicateCampaign)) __obj.updateDynamic("DeduplicateCampaign")(DeduplicateCampaign.asInstanceOf[js.Any])
-    if (EventPayload != null) __obj.updateDynamic("EventPayload")(EventPayload.asInstanceOf[js.Any])
-    if (HTMLPart != null) __obj.updateDynamic("HTMLPart")(HTMLPart.asInstanceOf[js.Any])
-    if (Headers != null) __obj.updateDynamic("Headers")(Headers.asInstanceOf[js.Any])
-    if (InlinedAttachments != null) __obj.updateDynamic("InlinedAttachments")(InlinedAttachments.asInstanceOf[js.Any])
-    if (MonitoringCategory != null) __obj.updateDynamic("MonitoringCategory")(MonitoringCategory.asInstanceOf[js.Any])
-    if (ReplyTo != null) __obj.updateDynamic("ReplyTo")(ReplyTo.asInstanceOf[js.Any])
-    if (Sender != null) __obj.updateDynamic("Sender")(Sender.asInstanceOf[js.Any])
-    if (TemplateID != null) __obj.updateDynamic("TemplateID")(TemplateID.asInstanceOf[js.Any])
-    if (!js.isUndefined(TemplateLanguage)) __obj.updateDynamic("TemplateLanguage")(TemplateLanguage.asInstanceOf[js.Any])
-    if (TextPart != null) __obj.updateDynamic("TextPart")(TextPart.asInstanceOf[js.Any])
-    if (URLTags != null) __obj.updateDynamic("URLTags")(URLTags.asInstanceOf[js.Any])
-    if (Variables != null) __obj.updateDynamic("Variables")(Variables.asInstanceOf[js.Any])
+  
+  inline def apply(From: typingsJapgolly.nodeMailjet.anon.Email, To: js.Array[SendParamsRecipient]): SendParamsMessage = {
+    val __obj = js.Dynamic.literal(From = From.asInstanceOf[js.Any], To = To.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendParamsMessage]
   }
+  
+  extension [Self <: SendParamsMessage](x: Self) {
+    
+    inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
+    
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
+    
+    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "Attachments", js.Array(value*))
+    
+    inline def setBcc(value: js.Array[SendParamsRecipient]): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
+    
+    inline def setBccUndefined: Self = StObject.set(x, "Bcc", js.undefined)
+    
+    inline def setBccVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "Bcc", js.Array(value*))
+    
+    inline def setCc(value: js.Array[SendParamsRecipient]): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
+    
+    inline def setCcUndefined: Self = StObject.set(x, "Cc", js.undefined)
+    
+    inline def setCcVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "Cc", js.Array(value*))
+    
+    inline def setCustomCampaign(value: String): Self = StObject.set(x, "CustomCampaign", value.asInstanceOf[js.Any])
+    
+    inline def setCustomCampaignUndefined: Self = StObject.set(x, "CustomCampaign", js.undefined)
+    
+    inline def setCustomID(value: String): Self = StObject.set(x, "CustomID", value.asInstanceOf[js.Any])
+    
+    inline def setCustomIDUndefined: Self = StObject.set(x, "CustomID", js.undefined)
+    
+    inline def setDeduplicateCampaign(value: Boolean): Self = StObject.set(x, "DeduplicateCampaign", value.asInstanceOf[js.Any])
+    
+    inline def setDeduplicateCampaignUndefined: Self = StObject.set(x, "DeduplicateCampaign", js.undefined)
+    
+    inline def setEventPayload(value: String): Self = StObject.set(x, "EventPayload", value.asInstanceOf[js.Any])
+    
+    inline def setEventPayloadUndefined: Self = StObject.set(x, "EventPayload", js.undefined)
+    
+    inline def setFrom(value: typingsJapgolly.nodeMailjet.anon.Email): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    
+    inline def setHTMLPart(value: String): Self = StObject.set(x, "HTMLPart", value.asInstanceOf[js.Any])
+    
+    inline def setHTMLPartUndefined: Self = StObject.set(x, "HTMLPart", js.undefined)
+    
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
+    
+    inline def setInlinedAttachments(value: js.Array[InlinedAttachment]): Self = StObject.set(x, "InlinedAttachments", value.asInstanceOf[js.Any])
+    
+    inline def setInlinedAttachmentsUndefined: Self = StObject.set(x, "InlinedAttachments", js.undefined)
+    
+    inline def setInlinedAttachmentsVarargs(value: InlinedAttachment*): Self = StObject.set(x, "InlinedAttachments", js.Array(value*))
+    
+    inline def setMonitoringCategory(value: String): Self = StObject.set(x, "MonitoringCategory", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoringCategoryUndefined: Self = StObject.set(x, "MonitoringCategory", js.undefined)
+    
+    inline def setReplyTo(value: SendParamsRecipient): Self = StObject.set(x, "ReplyTo", value.asInstanceOf[js.Any])
+    
+    inline def setReplyToUndefined: Self = StObject.set(x, "ReplyTo", js.undefined)
+    
+    inline def setSender(value: typingsJapgolly.nodeMailjet.anon.Email): Self = StObject.set(x, "Sender", value.asInstanceOf[js.Any])
+    
+    inline def setSenderUndefined: Self = StObject.set(x, "Sender", js.undefined)
+    
+    inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    
+    inline def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
+    
+    inline def setTemplateID(value: Double): Self = StObject.set(x, "TemplateID", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateIDUndefined: Self = StObject.set(x, "TemplateID", js.undefined)
+    
+    inline def setTemplateLanguage(value: Boolean): Self = StObject.set(x, "TemplateLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateLanguageUndefined: Self = StObject.set(x, "TemplateLanguage", js.undefined)
+    
+    inline def setTextPart(value: String): Self = StObject.set(x, "TextPart", value.asInstanceOf[js.Any])
+    
+    inline def setTextPartUndefined: Self = StObject.set(x, "TextPart", js.undefined)
+    
+    inline def setTo(value: js.Array[SendParamsRecipient]): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    
+    inline def setToVarargs(value: SendParamsRecipient*): Self = StObject.set(x, "To", js.Array(value*))
+    
+    inline def setURLTags(value: String): Self = StObject.set(x, "URLTags", value.asInstanceOf[js.Any])
+    
+    inline def setURLTagsUndefined: Self = StObject.set(x, "URLTags", js.undefined)
+    
+    inline def setVariables(value: js.Object): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
+    
+    inline def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
+  }
 }
-

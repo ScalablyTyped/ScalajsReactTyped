@@ -1,10 +1,13 @@
-package typingsJapgolly
+package typingsJapgolly.w3cCssTypedObjectModelLevel1
 
+import typingsJapgolly.std.CSSNumberish
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object w3cCssTypedObjectModelLevel1 {
-  type CSSNumberish = scala.Double | typingsJapgolly.w3cCssTypedObjectModelLevel1.CSSNumericValue
-  type CSSUnparsedSegment = java.lang.String | typingsJapgolly.w3cCssTypedObjectModelLevel1.CSSVariableReferenceValue
-}
+
+type CSSImageValue = CSSStyleValue
+
+type CSSNumberOrNumeric = CSSNumberish | CSSNumericValue
+
+type CSSUnparsedSegment = String | CSSVariableReferenceValue

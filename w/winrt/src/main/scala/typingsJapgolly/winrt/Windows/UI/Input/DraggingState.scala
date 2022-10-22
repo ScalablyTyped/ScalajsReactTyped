@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.UI.Input
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DraggingState extends js.Object
-
+sealed trait DraggingState extends StObject
 @JSGlobal("Windows.UI.Input.DraggingState")
 @js.native
-object DraggingState extends js.Object {
-  @js.native
-  sealed trait completed extends DraggingState
+object DraggingState extends StObject {
   
   @js.native
-  sealed trait continuing extends DraggingState
+  sealed trait completed
+    extends StObject
+       with DraggingState
   
   @js.native
-  sealed trait started extends DraggingState
+  sealed trait continuing
+    extends StObject
+       with DraggingState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DraggingState with Double] = js.native
-  /* 2 */ @js.native
-  object completed extends TopLevel[completed with Double]
-  
-  /* 1 */ @js.native
-  object continuing extends TopLevel[continuing with Double]
-  
-  /* 0 */ @js.native
-  object started extends TopLevel[started with Double]
-  
+  @js.native
+  sealed trait started
+    extends StObject
+       with DraggingState
 }
-

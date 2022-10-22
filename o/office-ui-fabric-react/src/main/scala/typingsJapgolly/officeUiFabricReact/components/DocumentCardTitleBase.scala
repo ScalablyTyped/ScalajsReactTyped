@@ -1,59 +1,53 @@
 package typingsJapgolly.officeUiFabricReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitle
-import typingsJapgolly.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitleProps
-import typingsJapgolly.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitleStyleProps
-import typingsJapgolly.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitleStyles
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardTitleDottypesMod.IDocumentCardTitle
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardTitleDottypesMod.IDocumentCardTitleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardTitleDottypesMod.IDocumentCardTitleStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardTitleDottypesMod.IDocumentCardTitleStyles
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DocumentCardTitleBase {
-  def apply(
-    title: String,
-    className: String = null,
-    componentRef: IRefObject[IDocumentCardTitle] = null,
-    shouldTruncate: js.UndefOr[Boolean] = js.undefined,
-    showAsSecondaryTitle: js.UndefOr[Boolean] = js.undefined,
-    styles: IStyleFunctionOrObject[IDocumentCardTitleStyleProps, IDocumentCardTitleStyles] = null,
-    theme: ITheme = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IDocumentCardTitleProps, 
-    typingsJapgolly.officeUiFabricReact.documentCardTitleBaseMod.DocumentCardTitleBase, 
-    Unit, 
-    IDocumentCardTitleProps
-  ] = {
-    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldTruncate)) __obj.updateDynamic("shouldTruncate")(shouldTruncate.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAsSecondaryTitle)) __obj.updateDynamic("showAsSecondaryTitle")(showAsSecondaryTitle.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitleProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.officeUiFabricReact.documentCardTitleBaseMod.DocumentCardTitleBase](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitleProps])(children: _*)
+  inline def apply(title: String): Builder = {
+    val __props = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IDocumentCardTitleProps]))
   }
+  
   @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardTitle.base", "DocumentCardTitleBase")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[
+          typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardTitleDotbaseMod.DocumentCardTitleBase
+        ] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[IDocumentCardTitle]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ IDocumentCardTitle | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ IDocumentCardTitle | Null) => value(t0).runNow()))
+    
+    inline def shouldTruncate(value: Boolean): this.type = set("shouldTruncate", value.asInstanceOf[js.Any])
+    
+    inline def showAsSecondaryTitle(value: Boolean): this.type = set("showAsSecondaryTitle", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IStyleFunctionOrObject[IDocumentCardTitleStyleProps, IDocumentCardTitleStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IDocumentCardTitleStyleProps => DeepPartial[IDocumentCardTitleStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IDocumentCardTitleProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

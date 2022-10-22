@@ -4,34 +4,34 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.firstOfMany
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.last
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.lastOfMany
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.single
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointCloudReturnFilterProperties extends PointCloudFilterProperties {
+trait PointCloudReturnFilterProperties
+  extends StObject
+     with PointCloudFilterProperties {
+  
   /**
-    * An array of return types used to filter points. Possible values for the return types are:
-    *
-    * Value | Description
-    * ------|------------
-    * `firstOfMany` | The point was the first to be collected in a series of many returns.
-    * `last` | The last point in a series of many returns or a single point.
-    * `lastOfMany` | The last point in a series of many returns.
-    * `single` | All the points that were collected from laser pulses with a single return.
-    *
+    * An array of return types used to filter points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudReturnFilter.html#includedReturns)
     */
   var includedReturns: js.UndefOr[js.Array[firstOfMany | last | lastOfMany | single]] = js.undefined
 }
-
 object PointCloudReturnFilterProperties {
-  @scala.inline
-  def apply(field: String = null, includedReturns: js.Array[firstOfMany | last | lastOfMany | single] = null): PointCloudReturnFilterProperties = {
+  
+  inline def apply(): PointCloudReturnFilterProperties = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (includedReturns != null) __obj.updateDynamic("includedReturns")(includedReturns.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudReturnFilterProperties]
   }
+  
+  extension [Self <: PointCloudReturnFilterProperties](x: Self) {
+    
+    inline def setIncludedReturns(value: js.Array[firstOfMany | last | lastOfMany | single]): Self = StObject.set(x, "includedReturns", value.asInstanceOf[js.Any])
+    
+    inline def setIncludedReturnsUndefined: Self = StObject.set(x, "includedReturns", js.undefined)
+    
+    inline def setIncludedReturnsVarargs(value: (firstOfMany | last | lastOfMany | single)*): Self = StObject.set(x, "includedReturns", js.Array(value*))
+  }
 }
-

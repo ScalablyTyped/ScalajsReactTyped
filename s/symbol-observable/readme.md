@@ -1,7 +1,7 @@
 
 # Scala.js typings for symbol-observable
 
-Typings are for version 1.2.0
+Typings are for version 4.0.0
 
 ## Library description:
 Symbol.observable ponyfill
@@ -10,10 +10,10 @@ Symbol.observable ponyfill
 | ------------------ | :-------------: |
 | Full name          | symbol-observable |
 | Keywords           | symbol, observable, observables, ponyfill, polyfill, shim |
-| # releases         | 3 |
-| # dependents       | 238 |
-| # downloads        | 331050896 |
-| # stars            | 2 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 5.8021889E7 |
+| # stars            | 180.0 |
 
 ## Links
 - [Homepage](https://github.com/blesh/symbol-observable#readme)

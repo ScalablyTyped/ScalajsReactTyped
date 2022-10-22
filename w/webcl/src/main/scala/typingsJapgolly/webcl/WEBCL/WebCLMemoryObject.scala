@@ -1,24 +1,28 @@
 package typingsJapgolly.webcl.WEBCL
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.6
-trait WebCLMemoryObject extends js.Object {
-  def getInfo(name: MemInfo): js.Any
+trait WebCLMemoryObject extends StObject {
+  
+  def getInfo(name: MemInfo): Any
+  
   def release(): Unit
 }
-
 object WebCLMemoryObject {
-  @scala.inline
-  def apply(getInfo: MemInfo => CallbackTo[js.Any], release: Callback): WebCLMemoryObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getInfo")(js.Any.fromFunction1((t0: typingsJapgolly.webcl.WEBCL.MemInfo) => getInfo(t0).runNow()))
-    __obj.updateDynamic("release")(release.toJsFn)
+  
+  inline def apply(getInfo: MemInfo => Any, release: Callback): WebCLMemoryObject = {
+    val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo), release = release.toJsFn)
     __obj.asInstanceOf[WebCLMemoryObject]
   }
+  
+  extension [Self <: WebCLMemoryObject](x: Self) {
+    
+    inline def setGetInfo(value: MemInfo => Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
+    
+    inline def setRelease(value: Callback): Self = StObject.set(x, "release", value.toJsFn)
+  }
 }
-

@@ -1,29 +1,21 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.EnumElementSyntax")
 @js.native
-class EnumElementSyntax protected () extends SyntaxNode {
-  def this(
-    propertyName: ISyntaxToken,
-    equalsValueClause: EqualsValueClauseSyntax,
-    parsedInStrictMode: Boolean
-  ) = this()
+trait EnumElementSyntax
+  extends StObject
+     with SyntaxNode {
+  
   var equalsValueClause: EqualsValueClauseSyntax = js.native
+  
   var propertyName: ISyntaxToken = js.native
+  
   def update(propertyName: ISyntaxToken, equalsValueClause: EqualsValueClauseSyntax): EnumElementSyntax = js.native
+  
   def withEqualsValueClause(equalsValueClause: EqualsValueClauseSyntax): EnumElementSyntax = js.native
+  
   def withPropertyName(propertyName: ISyntaxToken): EnumElementSyntax = js.native
 }
-
-/* static members */
-@JSGlobal("TypeScript.EnumElementSyntax")
-@js.native
-object EnumElementSyntax extends js.Object {
-  def create(propertyName: ISyntaxToken): EnumElementSyntax = js.native
-  def create1(propertyName: ISyntaxToken): EnumElementSyntax = js.native
-}
-

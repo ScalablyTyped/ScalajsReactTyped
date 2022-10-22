@@ -1,16 +1,19 @@
 package typingsJapgolly.onsenui.mod
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @description Utility methods to create different kinds of alert dialogs. There are three methods available: alert, confirm and prompt
   */
-@JSImport("onsenui", "notification")
-@js.native
-object notification extends js.Object {
+object notification {
+  
+  @JSImport("onsenui", "notification")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @param {Object} options Parameter object
     * @param {String} [options.message] Alert message
@@ -26,10 +29,11 @@ object notification extends js.Object {
     *   The content of the message can be either simple text or HTML
     *   Must specify either message or messageHTML
     */
-  def alert(message: String): js.Promise[HTMLElement] = js.native
-  def alert(message: String, options: AlertOptions): js.Promise[HTMLElement] = js.native
-  def alert(message: AlertOptions): js.Promise[HTMLElement] = js.native
-  def alert(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = js.native
+  inline def alert(message: String): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
+  inline def alert(message: String, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
+  inline def alert(message: AlertOptions): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
+  inline def alert(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
+  
   /**
     * @param {Object} options Parameter object
     * @param {String} [options.message] Confirmation question
@@ -49,10 +53,11 @@ object notification extends js.Object {
     *   The default button labels are "Cancel" and "OK" but they can be customized
     *   Must specify either message or messageHTML
     */
-  def confirm(message: String): js.Promise[HTMLElement] = js.native
-  def confirm(message: String, options: AlertOptions): js.Promise[HTMLElement] = js.native
-  def confirm(message: AlertOptions): js.Promise[HTMLElement] = js.native
-  def confirm(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = js.native
+  inline def confirm(message: String): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
+  inline def confirm(message: String, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
+  inline def confirm(message: AlertOptions): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
+  inline def confirm(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
+  
   /**
     * @param {Object} options Parameter object
     * @param {String} [options.message] Prompt question
@@ -71,10 +76,10 @@ object notification extends js.Object {
     *   Display a dialog with a prompt to ask the user a question
     *   Must specify either message or messageHTML
     */
-  def prompt(message: String): js.Promise[HTMLElement] = js.native
-  def prompt(message: String, options: AlertOptions): js.Promise[HTMLElement] = js.native
-  def prompt(message: AlertOptions): js.Promise[HTMLElement] = js.native
-  def prompt(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = js.native
-  def toast(args: js.Any*): js.Any = js.native
+  inline def prompt(message: String): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
+  inline def prompt(message: String, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
+  inline def prompt(message: AlertOptions): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
+  inline def prompt(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
+  
+  inline def toast(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toast")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
 }
-

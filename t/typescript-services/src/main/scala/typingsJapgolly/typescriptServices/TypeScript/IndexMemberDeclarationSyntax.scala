@@ -1,33 +1,27 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.IndexMemberDeclarationSyntax")
 @js.native
-class IndexMemberDeclarationSyntax protected () extends SyntaxNode {
-  def this(
-    modifiers: ISyntaxList,
-    indexSignature: IndexSignatureSyntax,
-    semicolonToken: ISyntaxToken,
-    parsedInStrictMode: Boolean
-  ) = this()
+trait IndexMemberDeclarationSyntax
+  extends StObject
+     with SyntaxNode {
+  
   var indexSignature: IndexSignatureSyntax = js.native
+  
   var modifiers: ISyntaxList = js.native
+  
   var semicolonToken: ISyntaxToken = js.native
+  
   def update(modifiers: ISyntaxList, indexSignature: IndexSignatureSyntax, semicolonToken: ISyntaxToken): IndexMemberDeclarationSyntax = js.native
+  
   def withIndexSignature(indexSignature: IndexSignatureSyntax): IndexMemberDeclarationSyntax = js.native
+  
   def withModifier(modifier: ISyntaxToken): IndexMemberDeclarationSyntax = js.native
+  
   def withModifiers(modifiers: ISyntaxList): IndexMemberDeclarationSyntax = js.native
+  
   def withSemicolonToken(semicolonToken: ISyntaxToken): IndexMemberDeclarationSyntax = js.native
 }
-
-/* static members */
-@JSGlobal("TypeScript.IndexMemberDeclarationSyntax")
-@js.native
-object IndexMemberDeclarationSyntax extends js.Object {
-  def create(indexSignature: IndexSignatureSyntax, semicolonToken: ISyntaxToken): IndexMemberDeclarationSyntax = js.native
-  def create1(indexSignature: IndexSignatureSyntax): IndexMemberDeclarationSyntax = js.native
-}
-

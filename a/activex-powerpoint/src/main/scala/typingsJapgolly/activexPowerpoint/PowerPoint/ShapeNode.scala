@@ -2,20 +2,57 @@ package typingsJapgolly.activexPowerpoint.PowerPoint
 
 import typingsJapgolly.activexOffice.Office.MsoEditingType
 import typingsJapgolly.activexOffice.Office.MsoSegmentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("PowerPoint.ShapeNode")
-@js.native
-class ShapeNode protected () extends js.Object {
-  val Application: js.Any = js.native
-  val Creator: Double = js.native
-  val EditingType: MsoEditingType = js.native
-  val Parent: js.Any = js.native
-  val Points: js.Any = js.native
-  @JSName("PowerPoint.ShapeNode_typekey")
-  var PowerPointDotShapeNode_typekey: ShapeNode = js.native
-  val SegmentType: MsoSegmentType = js.native
+trait ShapeNode extends StObject {
+  
+  val Application: Any
+  
+  val Creator: Double
+  
+  val EditingType: MsoEditingType
+  
+  val Parent: Any
+  
+  val Points: Any
+  
+  /* private */ @JSName("PowerPoint.ShapeNode_typekey")
+  var PowerPointDotShapeNode_typekey: ShapeNode
+  
+  val SegmentType: MsoSegmentType
 }
-
+object ShapeNode {
+  
+  inline def apply(
+    Application: Any,
+    Creator: Double,
+    EditingType: MsoEditingType,
+    Parent: Any,
+    Points: Any,
+    PowerPointDotShapeNode_typekey: ShapeNode,
+    SegmentType: MsoSegmentType
+  ): ShapeNode = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], EditingType = EditingType.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Points = Points.asInstanceOf[js.Any], SegmentType = SegmentType.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.ShapeNode_typekey")(PowerPointDotShapeNode_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShapeNode]
+  }
+  
+  extension [Self <: ShapeNode](x: Self) {
+    
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setEditingType(value: MsoEditingType): Self = StObject.set(x, "EditingType", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setPoints(value: Any): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
+    
+    inline def setPowerPointDotShapeNode_typekey(value: ShapeNode): Self = StObject.set(x, "PowerPoint.ShapeNode_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setSegmentType(value: MsoSegmentType): Self = StObject.set(x, "SegmentType", value.asInstanceOf[js.Any])
+  }
+}

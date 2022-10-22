@@ -1,67 +1,55 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Sms
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmsMessageType extends js.Object
-
+sealed trait SmsMessageType extends StObject
 /** This enumerated type defines the format of the SMS message. */
 @JSGlobal("Windows.Devices.Sms.SmsMessageType")
 @js.native
-object SmsMessageType extends js.Object {
+object SmsMessageType extends StObject {
+  
   /** An application-directed message (a visual voicemail message on a specific port, for example). */
   @js.native
-  sealed trait app extends SmsMessageType
+  sealed trait app
+    extends StObject
+       with SmsMessageType
   
   /** The SMS message is in binary format. */
   @js.native
-  sealed trait binary extends SmsMessageType
+  sealed trait binary
+    extends StObject
+       with SmsMessageType
   
   /** A cell broadcast message. */
   @js.native
-  sealed trait broadcast extends SmsMessageType
+  sealed trait broadcast
+    extends StObject
+       with SmsMessageType
   
   /** A send status message. */
   @js.native
-  sealed trait status extends SmsMessageType
+  sealed trait status
+    extends StObject
+       with SmsMessageType
   
   /** The SMS message is in text format. */
   @js.native
-  sealed trait text extends SmsMessageType
+  sealed trait text
+    extends StObject
+       with SmsMessageType
   
   /** A legacy voicemail message waiting indication message. */
   @js.native
-  sealed trait voicemail extends SmsMessageType
+  sealed trait voicemail
+    extends StObject
+       with SmsMessageType
   
   /** A WAP Push message (an MMS message, for example). */
   @js.native
-  sealed trait wap extends SmsMessageType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SmsMessageType with Double] = js.native
-  /* 3 */ @js.native
-  object app extends TopLevel[app with Double]
-  
-  /* 0 */ @js.native
-  object binary extends TopLevel[binary with Double]
-  
-  /* 4 */ @js.native
-  object broadcast extends TopLevel[broadcast with Double]
-  
-  /* 6 */ @js.native
-  object status extends TopLevel[status with Double]
-  
-  /* 1 */ @js.native
-  object text extends TopLevel[text with Double]
-  
-  /* 5 */ @js.native
-  object voicemail extends TopLevel[voicemail with Double]
-  
-  /* 2 */ @js.native
-  object wap extends TopLevel[wap with Double]
-  
+  sealed trait wap
+    extends StObject
+       with SmsMessageType
 }
-

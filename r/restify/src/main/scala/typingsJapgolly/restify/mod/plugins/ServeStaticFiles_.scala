@@ -1,29 +1,37 @@
 package typingsJapgolly.restify.mod.plugins
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.restify.mod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServeStaticFiles_ extends js.Object {
+trait ServeStaticFiles_ extends StObject {
+  
   var etag: js.UndefOr[String] = js.undefined
+  
   var maxAge: js.UndefOr[Double] = js.undefined
-  var setHeaders: js.UndefOr[js.Function3[/* res */ Response, /* path */ String, /* stat */ js.Any, _]] = js.undefined
+  
+  var setHeaders: js.UndefOr[js.Function3[/* res */ Response, /* path */ String, /* stat */ Any, Any]] = js.undefined
 }
-
 object ServeStaticFiles_ {
-  @scala.inline
-  def apply(
-    etag: String = null,
-    maxAge: Int | Double = null,
-    setHeaders: (/* res */ Response, /* path */ String, /* stat */ js.Any) => CallbackTo[js.Any] = null
-  ): ServeStaticFiles_ = {
+  
+  inline def apply(): ServeStaticFiles_ = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (setHeaders != null) __obj.updateDynamic("setHeaders")(js.Any.fromFunction3((t0: /* res */ typingsJapgolly.restify.mod.Response, t1: /* path */ java.lang.String, t2: /* stat */ js.Any) => setHeaders(t0, t1, t2).runNow()))
     __obj.asInstanceOf[ServeStaticFiles_]
   }
+  
+  extension [Self <: ServeStaticFiles_](x: Self) {
+    
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    
+    inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+    
+    inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+    
+    inline def setSetHeaders(value: (/* res */ Response, /* path */ String, /* stat */ Any) => Any): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
+    
+    inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
+  }
 }
-

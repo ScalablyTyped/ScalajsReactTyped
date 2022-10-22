@@ -1,34 +1,46 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FlexItemLayout extends js.Object {
+trait FlexItemLayout extends StObject {
+  
   /**
-  		 * Matches the CSS style key and its available values.
-  		 */
-  var CSSStyles: js.UndefOr[StringDictionary[String]] = js.undefined
+    * Matches the CSS style key and its available values.
+    */
+  var CSSStyles: js.UndefOr[CssStyles] = js.undefined
+  
   /**
-  		 * Matches the flex CSS property and its available values.
-  		 * Default is "1 1 auto".
-  		 */
+    * Matches the flex CSS property and its available values.
+    * Default is "1 1 auto".
+    */
   var flex: js.UndefOr[String] = js.undefined
+  
   /**
-  		 * Matches the order CSS property and its available values.
-  		 */
+    * Matches the order CSS property and its available values.
+    */
   var order: js.UndefOr[Double] = js.undefined
 }
-
 object FlexItemLayout {
-  @scala.inline
-  def apply(CSSStyles: StringDictionary[String] = null, flex: String = null, order: Int | Double = null): FlexItemLayout = {
+  
+  inline def apply(): FlexItemLayout = {
     val __obj = js.Dynamic.literal()
-    if (CSSStyles != null) __obj.updateDynamic("CSSStyles")(CSSStyles.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexItemLayout]
   }
+  
+  extension [Self <: FlexItemLayout](x: Self) {
+    
+    inline def setCSSStyles(value: CssStyles): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
+    
+    inline def setCSSStylesUndefined: Self = StObject.set(x, "CSSStyles", js.undefined)
+    
+    inline def setFlex(value: String): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    
+    inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+    
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+  }
 }
-

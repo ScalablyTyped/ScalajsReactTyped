@@ -1,42 +1,44 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgTreeGridUpdatingLocale
-  extends /**
-	 * Option for IgTreeGridUpdatingLocale
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Specifies the label of the add child button in touch environment.
-  	 *
-  	 */
+    * Specifies the label of the add child button in touch environment.
+    *
+    */
   var addChildButtonLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies the add child tooltip text.
-  	 *
-  	 */
+    * Specifies the add child tooltip text.
+    *
+    */
   var addChildTooltip: js.UndefOr[String] = js.undefined
 }
-
 object IgTreeGridUpdatingLocale {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgTreeGridUpdatingLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    addChildButtonLabel: String = null,
-    addChildTooltip: String = null
-  ): IgTreeGridUpdatingLocale = {
+  
+  inline def apply(): IgTreeGridUpdatingLocale = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (addChildButtonLabel != null) __obj.updateDynamic("addChildButtonLabel")(addChildButtonLabel.asInstanceOf[js.Any])
-    if (addChildTooltip != null) __obj.updateDynamic("addChildTooltip")(addChildTooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeGridUpdatingLocale]
   }
+  
+  extension [Self <: IgTreeGridUpdatingLocale](x: Self) {
+    
+    inline def setAddChildButtonLabel(value: String): Self = StObject.set(x, "addChildButtonLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAddChildButtonLabelUndefined: Self = StObject.set(x, "addChildButtonLabel", js.undefined)
+    
+    inline def setAddChildTooltip(value: String): Self = StObject.set(x, "addChildTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setAddChildTooltipUndefined: Self = StObject.set(x, "addChildTooltip", js.undefined)
+  }
 }
-

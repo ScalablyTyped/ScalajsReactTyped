@@ -1,64 +1,64 @@
 package typingsJapgolly.tampermonkey
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tampermonkeyStrings {
-  @js.native
-  sealed trait GET extends js.Object
   
   @js.native
-  sealed trait HEAD extends js.Object
+  sealed trait GET extends StObject
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait HEAD extends StObject
+  inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
-  sealed trait arraybuffer extends js.Object
+  sealed trait POST extends StObject
+  inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait blob extends js.Object
+  sealed trait arraybuffer extends StObject
+  inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait blob extends StObject
+  inline def blob: blob = "blob".asInstanceOf[blob]
   
   @js.native
-  sealed trait not_enabled extends js.Object
+  sealed trait browser extends StObject
+  inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
-  sealed trait not_permitted extends js.Object
+  sealed trait disabled extends StObject
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait not_succeeded extends js.Object
+  sealed trait json extends StObject
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait not_supported extends js.Object
+  sealed trait native extends StObject
+  inline def native: native = "native".asInstanceOf[native]
   
   @js.native
-  sealed trait not_whitelisted extends js.Object
+  sealed trait not_enabled extends StObject
+  inline def not_enabled: not_enabled = "not_enabled".asInstanceOf[not_enabled]
   
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def not_enabled: not_enabled = "not_enabled".asInstanceOf[not_enabled]
-  @scala.inline
-  def not_permitted: not_permitted = "not_permitted".asInstanceOf[not_permitted]
-  @scala.inline
-  def not_succeeded: not_succeeded = "not_succeeded".asInstanceOf[not_succeeded]
-  @scala.inline
-  def not_supported: not_supported = "not_supported".asInstanceOf[not_supported]
-  @scala.inline
-  def not_whitelisted: not_whitelisted = "not_whitelisted".asInstanceOf[not_whitelisted]
+  @js.native
+  sealed trait not_permitted extends StObject
+  inline def not_permitted: not_permitted = "not_permitted".asInstanceOf[not_permitted]
+  
+  @js.native
+  sealed trait not_succeeded extends StObject
+  inline def not_succeeded: not_succeeded = "not_succeeded".asInstanceOf[not_succeeded]
+  
+  @js.native
+  sealed trait not_supported extends StObject
+  inline def not_supported: not_supported = "not_supported".asInstanceOf[not_supported]
+  
+  @js.native
+  sealed trait not_whitelisted extends StObject
+  inline def not_whitelisted: not_whitelisted = "not_whitelisted".asInstanceOf[not_whitelisted]
 }
-

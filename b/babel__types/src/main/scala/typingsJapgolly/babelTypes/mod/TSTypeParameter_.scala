@@ -1,45 +1,57 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.TSTypeParameter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TSTypeParameter_
-  extends BaseNode
-     with _Node {
-  var constraint: TSType | Null
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait TSTypeParameter_
+  extends StObject
+     with BaseNode
+     with TypeScript {
+  
   var default: TSType | Null
+  
+  var constraint: TSType | Null
+  
+  var in: Boolean | Null
+  
   var name: String
+  
+  var out: Boolean | Null
+  
   @JSName("type")
   var type_TSTypeParameter_ : TSTypeParameter
 }
-
 object TSTypeParameter_ {
-  @scala.inline
-  def apply(
-    name: String,
-    `type`: TSTypeParameter,
-    constraint: TSType = null,
-    default: TSType = null,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): TSTypeParameter_ = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(name: String): TSTypeParameter_ = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], constraint = null, default = null, end = null, in = null, innerComments = null, leadingComments = null, loc = null, out = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSTypeParameter")
     __obj.asInstanceOf[TSTypeParameter_]
   }
+  
+  extension [Self <: TSTypeParameter_](x: Self) {
+    
+    inline def setConstraint(value: TSType): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    
+    inline def setConstraintNull: Self = StObject.set(x, "constraint", null)
+    
+    inline def setDefault(value: TSType): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultNull: Self = StObject.set(x, "default", null)
+    
+    inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    
+    inline def setInNull: Self = StObject.set(x, "in", null)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setOut(value: Boolean): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
+    
+    inline def setOutNull: Self = StObject.set(x, "out", null)
+    
+    inline def setType(value: TSTypeParameter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

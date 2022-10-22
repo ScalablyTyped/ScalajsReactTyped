@@ -1,41 +1,32 @@
 package typingsJapgolly.amazonConnectStreams.connect
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SoftphoneCallType extends js.Object
-
+sealed trait SoftphoneCallType extends StObject
 @JSGlobal("connect.SoftphoneCallType")
 @js.native
-object SoftphoneCallType extends js.Object {
-  @js.native
-  sealed trait AUDIO_ONLY extends SoftphoneCallType
+object SoftphoneCallType extends StObject {
   
   @js.native
-  sealed trait AUDIO_VIDEO extends SoftphoneCallType
+  sealed trait AUDIO_ONLY
+    extends StObject
+       with SoftphoneCallType
   
   @js.native
-  sealed trait NONE extends SoftphoneCallType
+  sealed trait AUDIO_VIDEO
+    extends StObject
+       with SoftphoneCallType
   
   @js.native
-  sealed trait VIDEO_ONLY extends SoftphoneCallType
+  sealed trait NONE
+    extends StObject
+       with SoftphoneCallType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SoftphoneCallType with String] = js.native
-  /* "audio_only" */ @js.native
-  object AUDIO_ONLY extends TopLevel[AUDIO_ONLY with String]
-  
-  /* "audio_video" */ @js.native
-  object AUDIO_VIDEO extends TopLevel[AUDIO_VIDEO with String]
-  
-  /* "none" */ @js.native
-  object NONE extends TopLevel[NONE with String]
-  
-  /* "video_only" */ @js.native
-  object VIDEO_ONLY extends TopLevel[VIDEO_ONLY with String]
-  
+  @js.native
+  sealed trait VIDEO_ONLY
+    extends StObject
+       with SoftphoneCallType
 }
-

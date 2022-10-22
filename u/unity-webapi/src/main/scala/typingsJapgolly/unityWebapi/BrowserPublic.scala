@@ -1,20 +1,22 @@
 package typingsJapgolly.unityWebapi
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BrowserPublic extends js.Object {
+trait BrowserPublic extends StObject {
+  
   def getUnityObject(version: Double): Unity
 }
-
 object BrowserPublic {
-  @scala.inline
-  def apply(getUnityObject: Double => CallbackTo[Unity]): BrowserPublic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getUnityObject")(js.Any.fromFunction1((t0: scala.Double) => getUnityObject(t0).runNow()))
+  
+  inline def apply(getUnityObject: Double => Unity): BrowserPublic = {
+    val __obj = js.Dynamic.literal(getUnityObject = js.Any.fromFunction1(getUnityObject))
     __obj.asInstanceOf[BrowserPublic]
   }
+  
+  extension [Self <: BrowserPublic](x: Self) {
+    
+    inline def setGetUnityObject(value: Double => Unity): Self = StObject.set(x, "getUnityObject", js.Any.fromFunction1(value))
+  }
 }
-

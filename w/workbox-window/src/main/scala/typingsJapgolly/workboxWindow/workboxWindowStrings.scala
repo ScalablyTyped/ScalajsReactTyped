@@ -1,54 +1,44 @@
 package typingsJapgolly.workboxWindow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workboxWindowStrings {
-  @js.native
-  sealed trait activated extends js.Object
   
   @js.native
-  sealed trait controlling extends js.Object
+  sealed trait activated extends StObject
+  inline def activated: activated = "activated".asInstanceOf[activated]
   
   @js.native
-  sealed trait externalactivated extends js.Object
+  sealed trait controlling extends StObject
+  inline def controlling: controlling = "controlling".asInstanceOf[controlling]
   
   @js.native
-  sealed trait externalinstalled extends js.Object
+  sealed trait externalactivated extends StObject
+  inline def externalactivated: externalactivated = "externalactivated".asInstanceOf[externalactivated]
   
   @js.native
-  sealed trait externalwaiting extends js.Object
+  sealed trait externalinstalled extends StObject
+  inline def externalinstalled: externalinstalled = "externalinstalled".asInstanceOf[externalinstalled]
   
   @js.native
-  sealed trait installed extends js.Object
+  sealed trait externalwaiting extends StObject
+  inline def externalwaiting: externalwaiting = "externalwaiting".asInstanceOf[externalwaiting]
   
   @js.native
-  sealed trait message extends js.Object
+  sealed trait installed extends StObject
+  inline def installed: installed = "installed".asInstanceOf[installed]
   
   @js.native
-  sealed trait redundant extends js.Object
+  sealed trait message extends StObject
+  inline def message: message = "message".asInstanceOf[message]
   
   @js.native
-  sealed trait waiting extends js.Object
+  sealed trait redundant extends StObject
+  inline def redundant: redundant = "redundant".asInstanceOf[redundant]
   
-  @scala.inline
-  def activated: activated = "activated".asInstanceOf[activated]
-  @scala.inline
-  def controlling: controlling = "controlling".asInstanceOf[controlling]
-  @scala.inline
-  def externalactivated: externalactivated = "externalactivated".asInstanceOf[externalactivated]
-  @scala.inline
-  def externalinstalled: externalinstalled = "externalinstalled".asInstanceOf[externalinstalled]
-  @scala.inline
-  def externalwaiting: externalwaiting = "externalwaiting".asInstanceOf[externalwaiting]
-  @scala.inline
-  def installed: installed = "installed".asInstanceOf[installed]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def redundant: redundant = "redundant".asInstanceOf[redundant]
-  @scala.inline
-  def waiting: waiting = "waiting".asInstanceOf[waiting]
+  @js.native
+  sealed trait waiting extends StObject
+  inline def waiting: waiting = "waiting".asInstanceOf[waiting]
 }
-

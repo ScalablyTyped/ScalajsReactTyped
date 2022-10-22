@@ -1,29 +1,40 @@
 package typingsJapgolly.reactCircularProgressbar
 
-import japgolly.scalajs.react.raw.React.Element
-import typingsJapgolly.reactCircularProgressbar.circularProgressbarMod.default
-import typingsJapgolly.reactCircularProgressbar.circularProgressbarWithChildrenMod.CircularProgressbarWithChildrenProps
-import typingsJapgolly.reactCircularProgressbar.typesMod.CircularProgressbarDefaultProps
-import typingsJapgolly.reactCircularProgressbar.typesMod.CircularProgressbarStyles
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactCircularProgressbar.anon.BackgroundColor
+import typingsJapgolly.reactCircularProgressbar.distCircularProgressbarMod.default
+import typingsJapgolly.reactCircularProgressbar.distCircularProgressbarWithChildrenMod.CircularProgressbarWithChildrenProps
+import typingsJapgolly.reactCircularProgressbar.distTypesMod.CircularProgressbarDefaultProps
+import typingsJapgolly.reactCircularProgressbar.distTypesMod.CircularProgressbarStyles
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-circular-progressbar", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class CircularProgressbar () extends default
+object mod {
   
-  def CircularProgressbarWithChildren(props: CircularProgressbarWithChildrenProps): Element = js.native
-  def buildStyles(
-    hasRotationStrokeLinecapTextColorTextSizePathColorPathTransitionPathTransitionDurationTrailColorBackgroundColor: AnonBackgroundColor
-  ): CircularProgressbarStyles = js.native
-  /* static members */
+  @JSImport("react-circular-progressbar", JSImport.Namespace)
   @js.native
-  object CircularProgressbar extends js.Object {
-    var defaultProps: CircularProgressbarDefaultProps = js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-circular-progressbar", "CircularProgressbar")
+  @js.native
+  open class CircularProgressbar () extends default
+  object CircularProgressbar {
+    
+    @JSImport("react-circular-progressbar", "CircularProgressbar")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("react-circular-progressbar", "CircularProgressbar.defaultProps")
+    @js.native
+    def defaultProps: CircularProgressbarDefaultProps = js.native
+    inline def defaultProps_=(x: CircularProgressbarDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  inline def CircularProgressbarWithChildren(props: CircularProgressbarWithChildrenProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CircularProgressbarWithChildren")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def buildStyles(
+    hasRotationStrokeLinecapTextColorTextSizePathColorPathTransitionPathTransitionDurationTrailColorBackgroundColor: BackgroundColor
+  ): CircularProgressbarStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("buildStyles")(hasRotationStrokeLinecapTextColorTextSizePathColorPathTransitionPathTransitionDurationTrailColorBackgroundColor.asInstanceOf[js.Any]).asInstanceOf[CircularProgressbarStyles]
 }
-

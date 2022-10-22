@@ -1,21 +1,30 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Image extends js.Object {
+trait Image extends StObject {
+  
   var selected: js.UndefOr[String] = js.undefined
+  
   var unselected: js.UndefOr[String] = js.undefined
 }
-
 object Image {
-  @scala.inline
-  def apply(selected: String = null, unselected: String = null): Image = {
+  
+  inline def apply(): Image = {
     val __obj = js.Dynamic.literal()
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (unselected != null) __obj.updateDynamic("unselected")(unselected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
+  
+  extension [Self <: Image](x: Self) {
+    
+    inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setUnselected(value: String): Self = StObject.set(x, "unselected", value.asInstanceOf[js.Any])
+    
+    inline def setUnselectedUndefined: Self = StObject.set(x, "unselected", js.undefined)
+  }
 }
-

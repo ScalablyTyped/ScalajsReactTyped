@@ -1,23 +1,34 @@
 package typingsJapgolly.cashaddrjs
 
+import typingsJapgolly.cashaddrjs.anon.Hash
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cashaddrjs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("cashaddrjs", JSImport.Namespace)
   @js.native
-  class ValidationError protected () extends Error {
+  val ^ : js.Any = js.native
+  
+  @JSImport("cashaddrjs", "ValidationError")
+  @js.native
+  open class ValidationError protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
   }
   
-  def decode(address: String): AnonHash = js.native
-  def encode(prefix: String, `type`: String, hash: scala.scalajs.js.typedarray.Uint8Array): String = js.native
+  inline def decode(address: String): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(address.asInstanceOf[js.Any]).asInstanceOf[Hash]
+  
+  inline def encode(prefix: String, `type`: String, hash: js.typedarray.Uint8Array): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(prefix.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[String]
 }
-

@@ -1,37 +1,55 @@
 package typingsJapgolly.gamequery
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpriteOptions extends js.Object {
-  var animation: js.UndefOr[js.Any] = js.undefined
-  var callback: js.UndefOr[js.Function0[_]] = js.undefined
+trait SpriteOptions extends StObject {
+  
+  var animation: js.UndefOr[Any] = js.undefined
+  
+  var callback: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var posx: js.UndefOr[Double] = js.undefined
+  
   var posy: js.UndefOr[Double] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object SpriteOptions {
-  @scala.inline
-  def apply(
-    animation: js.Any = null,
-    callback: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    height: Int | Double = null,
-    posx: Int | Double = null,
-    posy: Int | Double = null,
-    width: Int | Double = null
-  ): SpriteOptions = {
+  
+  inline def apply(): SpriteOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    callback.foreach(p => __obj.updateDynamic("callback")(p.toJsFn))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (posx != null) __obj.updateDynamic("posx")(posx.asInstanceOf[js.Any])
-    if (posy != null) __obj.updateDynamic("posy")(posy.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpriteOptions]
   }
+  
+  extension [Self <: SpriteOptions](x: Self) {
+    
+    inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setCallback(value: CallbackTo[Any]): Self = StObject.set(x, "callback", value.toJsFn)
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setPosx(value: Double): Self = StObject.set(x, "posx", value.asInstanceOf[js.Any])
+    
+    inline def setPosxUndefined: Self = StObject.set(x, "posx", js.undefined)
+    
+    inline def setPosy(value: Double): Self = StObject.set(x, "posy", value.asInstanceOf[js.Any])
+    
+    inline def setPosyUndefined: Self = StObject.set(x, "posy", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

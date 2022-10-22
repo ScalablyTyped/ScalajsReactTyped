@@ -1,41 +1,21 @@
 package typingsJapgolly.reactBreadcrumbsDynamic.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent.Default
 import typingsJapgolly.reactBreadcrumbsDynamic.mod.BreadcrumbsItemProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BreadcrumbsItem {
-  def apply(
-    to: String,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    BreadcrumbsItemProps, 
-    typingsJapgolly.reactBreadcrumbsDynamic.mod.BreadcrumbsItem, 
-    Unit, 
-    BreadcrumbsItemProps
-  ] = {
-    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBreadcrumbsDynamic.mod.BreadcrumbsItemProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactBreadcrumbsDynamic.mod.BreadcrumbsItem](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBreadcrumbsDynamic.mod.BreadcrumbsItemProps])(children: _*)
+  inline def apply(to: String): Default[typingsJapgolly.reactBreadcrumbsDynamic.mod.BreadcrumbsItem] = {
+    val __props = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
+    new Default[typingsJapgolly.reactBreadcrumbsDynamic.mod.BreadcrumbsItem](js.Array(this.component, __props.asInstanceOf[BreadcrumbsItemProps]))
   }
+  
   @JSImport("react-breadcrumbs-dynamic", "BreadcrumbsItem")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: BreadcrumbsItemProps): Default[typingsJapgolly.reactBreadcrumbsDynamic.mod.BreadcrumbsItem] = new Default[typingsJapgolly.reactBreadcrumbsDynamic.mod.BreadcrumbsItem](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,12 +1,8 @@
 package typingsJapgolly.reactNativeFbsdk.mod
 
-import typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.`open-graph`
-import typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.link
-import typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.photo
-import typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeFbsdk.mod.ShareLinkContent
@@ -14,69 +10,26 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNativeFbsdk.mod.ShareVideoContent
   - typingsJapgolly.reactNativeFbsdk.mod.ShareOpenGraphContent
 */
-trait ShareContent extends js.Object
-
+trait ShareContent extends StObject
 object ShareContent {
-  @scala.inline
-  def ShareLinkContent(
-    contentType: link,
-    contentUrl: String,
-    commonParameters: ShareContentCommonParameters = null,
-    contentDescription: String = null,
-    contentTitle: String = null,
-    imageUrl: String = null,
-    quote: String = null
-  ): ShareContent = {
-    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], contentUrl = contentUrl.asInstanceOf[js.Any])
-    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters.asInstanceOf[js.Any])
-    if (contentDescription != null) __obj.updateDynamic("contentDescription")(contentDescription.asInstanceOf[js.Any])
-    if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ShareContent]
+  
+  inline def ShareLinkContent(contentUrl: String): typingsJapgolly.reactNativeFbsdk.mod.ShareLinkContent = {
+    val __obj = js.Dynamic.literal(contentType = "link", contentUrl = contentUrl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.reactNativeFbsdk.mod.ShareLinkContent]
   }
-  @scala.inline
-  def SharePhotoContent(
-    contentType: photo,
-    photos: js.Array[SharePhoto],
-    commonParameters: ShareContentCommonParameters = null,
-    contentUrl: String = null
-  ): ShareContent = {
-    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any])
-    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters.asInstanceOf[js.Any])
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ShareContent]
+  
+  inline def ShareOpenGraphContent(action: ShareOpenGraphAction, previewPropertyName: String): typingsJapgolly.reactNativeFbsdk.mod.ShareOpenGraphContent = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], contentType = "open-graph", previewPropertyName = previewPropertyName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.reactNativeFbsdk.mod.ShareOpenGraphContent]
   }
-  @scala.inline
-  def ShareVideoContent(
-    contentType: video,
-    video: ShareVideo,
-    commonParameters: ShareContentCommonParameters = null,
-    contentDescription: String = null,
-    contentTitle: String = null,
-    contentUrl: String = null,
-    previewPhoto: SharePhoto = null
-  ): ShareContent = {
-    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
-    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters.asInstanceOf[js.Any])
-    if (contentDescription != null) __obj.updateDynamic("contentDescription")(contentDescription.asInstanceOf[js.Any])
-    if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle.asInstanceOf[js.Any])
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
-    if (previewPhoto != null) __obj.updateDynamic("previewPhoto")(previewPhoto.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ShareContent]
+  
+  inline def SharePhotoContent(photos: js.Array[SharePhoto]): typingsJapgolly.reactNativeFbsdk.mod.SharePhotoContent = {
+    val __obj = js.Dynamic.literal(contentType = "photo", photos = photos.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.reactNativeFbsdk.mod.SharePhotoContent]
   }
-  @scala.inline
-  def ShareOpenGraphContent(
-    action: ShareOpenGraphAction,
-    contentType: `open-graph`,
-    previewPropertyName: String,
-    commonParameters: ShareContentCommonParameters = null,
-    contentUrl: String = null
-  ): ShareContent = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], previewPropertyName = previewPropertyName.asInstanceOf[js.Any])
-    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters.asInstanceOf[js.Any])
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ShareContent]
+  
+  inline def ShareVideoContent(video: ShareVideo): typingsJapgolly.reactNativeFbsdk.mod.ShareVideoContent = {
+    val __obj = js.Dynamic.literal(contentType = "video", video = video.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.reactNativeFbsdk.mod.ShareVideoContent]
   }
 }
-

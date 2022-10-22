@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.libMod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.rowMod.RowProps
+import typingsJapgolly.reactBootstrap.libRowMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "Row")
 @js.native
-class Row ()
-  extends Component[RowProps, js.Object, js.Any]
-
+open class Row () extends ^

@@ -1,16 +1,19 @@
 package typingsJapgolly.blueprintjsTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/table", "RenderMode")
 @js.native
-object RenderMode extends js.Object {
-  /* "batch" */ val BATCH: typingsJapgolly.blueprintjsTable.renderModeMod.RenderMode.BATCH with String = js.native
-  /* "batch-on-update" */ val BATCH_ON_UPDATE: typingsJapgolly.blueprintjsTable.renderModeMod.RenderMode.BATCH_ON_UPDATE with String = js.native
-  /* "none" */ val NONE: typingsJapgolly.blueprintjsTable.renderModeMod.RenderMode.NONE with String = js.native
+object RenderMode extends StObject {
+  
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typingsJapgolly.blueprintjsTable.renderModeMod.RenderMode with String] = js.native
+  def apply(value: String): js.UndefOr[typingsJapgolly.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode & String] = js.native
+  
+  /* "batch" */ val BATCH: typingsJapgolly.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode.BATCH & String = js.native
+  
+  /* "batch-on-update" */ val BATCH_ON_UPDATE: typingsJapgolly.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode.BATCH_ON_UPDATE & String = js.native
+  
+  /* "none" */ val NONE: typingsJapgolly.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode.NONE & String = js.native
 }
-

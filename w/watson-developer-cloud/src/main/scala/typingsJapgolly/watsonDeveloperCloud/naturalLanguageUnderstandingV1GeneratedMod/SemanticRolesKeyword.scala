@@ -1,21 +1,26 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SemanticRolesKeyword. */
-trait SemanticRolesKeyword extends js.Object {
+trait SemanticRolesKeyword extends StObject {
+  
   /** The keyword text. */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object SemanticRolesKeyword {
-  @scala.inline
-  def apply(text: String = null): SemanticRolesKeyword = {
+  
+  inline def apply(): SemanticRolesKeyword = {
     val __obj = js.Dynamic.literal()
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticRolesKeyword]
   }
+  
+  extension [Self <: SemanticRolesKeyword](x: Self) {
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

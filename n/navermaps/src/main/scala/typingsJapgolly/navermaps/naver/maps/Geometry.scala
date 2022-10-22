@@ -1,14 +1,15 @@
 package typingsJapgolly.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("naver.maps.Geometry")
 @js.native
-class Geometry protected () extends KVO {
-  def this(rawGeometry: js.Any) = this()
+trait Geometry
+  extends StObject
+     with KVO {
+  
   def getCoords(): ArrayOfCoords = js.native
+  
   def getType(): String = js.native
 }
-

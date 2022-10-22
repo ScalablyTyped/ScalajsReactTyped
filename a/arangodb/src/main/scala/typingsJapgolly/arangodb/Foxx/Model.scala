@@ -1,27 +1,34 @@
 package typingsJapgolly.arangodb.Foxx
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Model extends js.Object {
-  var forClient: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
-  var fromClient: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
+trait Model extends StObject {
+  
+  var forClient: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
+  
+  var fromClient: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
+  
   var schema: Schema
 }
-
 object Model {
-  @scala.inline
-  def apply(
-    schema: Schema,
-    forClient: /* value */ js.Any => CallbackTo[js.Any] = null,
-    fromClient: /* value */ js.Any => CallbackTo[js.Any] = null
-  ): Model = {
+  
+  inline def apply(schema: Schema): Model = {
     val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
-    if (forClient != null) __obj.updateDynamic("forClient")(js.Any.fromFunction1((t0: /* value */ js.Any) => forClient(t0).runNow()))
-    if (fromClient != null) __obj.updateDynamic("fromClient")(js.Any.fromFunction1((t0: /* value */ js.Any) => fromClient(t0).runNow()))
     __obj.asInstanceOf[Model]
   }
+  
+  extension [Self <: Model](x: Self) {
+    
+    inline def setForClient(value: /* value */ Any => Any): Self = StObject.set(x, "forClient", js.Any.fromFunction1(value))
+    
+    inline def setForClientUndefined: Self = StObject.set(x, "forClient", js.undefined)
+    
+    inline def setFromClient(value: /* value */ Any => Any): Self = StObject.set(x, "fromClient", js.Any.fromFunction1(value))
+    
+    inline def setFromClientUndefined: Self = StObject.set(x, "fromClient", js.undefined)
+    
+    inline def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+  }
 }
-

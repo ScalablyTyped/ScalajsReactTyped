@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access gradient (color) conditions in ConditionalFormatRuleApis.
@@ -27,21 +27,29 @@ import scala.scalajs.js.annotation._
   *         gradient.getMaxColor(), gradient.getMaxType(), gradient.getMaxValue());
   *     }
   */
-trait GradientCondition extends js.Object {
+trait GradientCondition extends StObject {
+  
   def getMaxColor(): String
+  
   def getMaxType(): InterpolationType | Null
+  
   def getMaxValue(): String
+  
   def getMidColor(): String
+  
   def getMidType(): InterpolationType | Null
+  
   def getMidValue(): String
+  
   def getMinColor(): String
+  
   def getMinType(): InterpolationType | Null
+  
   def getMinValue(): String
 }
-
 object GradientCondition {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getMaxColor: CallbackTo[String],
     getMaxType: CallbackTo[InterpolationType | Null],
     getMaxValue: CallbackTo[String],
@@ -52,17 +60,28 @@ object GradientCondition {
     getMinType: CallbackTo[InterpolationType | Null],
     getMinValue: CallbackTo[String]
   ): GradientCondition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getMaxColor")(getMaxColor.toJsFn)
-    __obj.updateDynamic("getMaxType")(getMaxType.toJsFn)
-    __obj.updateDynamic("getMaxValue")(getMaxValue.toJsFn)
-    __obj.updateDynamic("getMidColor")(getMidColor.toJsFn)
-    __obj.updateDynamic("getMidType")(getMidType.toJsFn)
-    __obj.updateDynamic("getMidValue")(getMidValue.toJsFn)
-    __obj.updateDynamic("getMinColor")(getMinColor.toJsFn)
-    __obj.updateDynamic("getMinType")(getMinType.toJsFn)
-    __obj.updateDynamic("getMinValue")(getMinValue.toJsFn)
+    val __obj = js.Dynamic.literal(getMaxColor = getMaxColor.toJsFn, getMaxType = getMaxType.toJsFn, getMaxValue = getMaxValue.toJsFn, getMidColor = getMidColor.toJsFn, getMidType = getMidType.toJsFn, getMidValue = getMidValue.toJsFn, getMinColor = getMinColor.toJsFn, getMinType = getMinType.toJsFn, getMinValue = getMinValue.toJsFn)
     __obj.asInstanceOf[GradientCondition]
   }
+  
+  extension [Self <: GradientCondition](x: Self) {
+    
+    inline def setGetMaxColor(value: CallbackTo[String]): Self = StObject.set(x, "getMaxColor", value.toJsFn)
+    
+    inline def setGetMaxType(value: CallbackTo[InterpolationType | Null]): Self = StObject.set(x, "getMaxType", value.toJsFn)
+    
+    inline def setGetMaxValue(value: CallbackTo[String]): Self = StObject.set(x, "getMaxValue", value.toJsFn)
+    
+    inline def setGetMidColor(value: CallbackTo[String]): Self = StObject.set(x, "getMidColor", value.toJsFn)
+    
+    inline def setGetMidType(value: CallbackTo[InterpolationType | Null]): Self = StObject.set(x, "getMidType", value.toJsFn)
+    
+    inline def setGetMidValue(value: CallbackTo[String]): Self = StObject.set(x, "getMidValue", value.toJsFn)
+    
+    inline def setGetMinColor(value: CallbackTo[String]): Self = StObject.set(x, "getMinColor", value.toJsFn)
+    
+    inline def setGetMinType(value: CallbackTo[InterpolationType | Null]): Self = StObject.set(x, "getMinType", value.toJsFn)
+    
+    inline def setGetMinValue(value: CallbackTo[String]): Self = StObject.set(x, "getMinValue", value.toJsFn)
+  }
 }
-

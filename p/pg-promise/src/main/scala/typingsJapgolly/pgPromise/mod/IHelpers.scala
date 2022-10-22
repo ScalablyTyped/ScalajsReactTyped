@@ -2,55 +2,107 @@ package typingsJapgolly.pgPromise.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typingsJapgolly.pgPromise.AnonEmptyUpdate
-import typingsJapgolly.pgPromise.AnonOptions
+import typingsJapgolly.pgPromise.anon.EmptyUpdate
+import typingsJapgolly.pgPromise.anon.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Query Formatting Helpers
 // API: http://vitaly-t.github.io/pg-promise/helpers.html
 @js.native
-trait IHelpers extends js.Object {
-  var Column: Instantiable1[/* col */ String | IColumnConfig, typingsJapgolly.pgPromise.mod.Column] = js.native
-  var ColumnSet: Instantiable2[
-    /* columns */ Column, 
-    js.UndefOr[/* options */ IColumnSetOptions], 
-    typingsJapgolly.pgPromise.mod.ColumnSet
+trait IHelpers extends StObject {
+  
+  var Column: Instantiable1[
+    /* col */ String | (IColumnConfig[/* import warning: RewrittenClass.unapply cls was tparam T */ Any]), 
+    typingsJapgolly.pgPromise.mod.Column[js.Object]
   ] = js.native
+  
+  var ColumnSet: Instantiable2[
+    /* columns */ Column[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
+    /* options */ js.UndefOr[IColumnSetOptions], 
+    typingsJapgolly.pgPromise.mod.ColumnSet[js.Object]
+  ] = js.native
+  
   var TableName: Instantiable1[/* table */ String | ITable, typingsJapgolly.pgPromise.mod.TableName] = js.native
-  def concat(queries: js.Array[String | QueryFile | AnonOptions]): String = js.native
+  
+  def concat(queries: js.Array[String | QueryFile | Options]): String = js.native
+  
   def insert(data: js.Array[js.Object]): String = js.native
-  def insert(data: js.Array[js.Object], columns: QueryColumns): String = js.native
-  def insert(data: js.Array[js.Object], columns: QueryColumns, table: String): String = js.native
-  def insert(data: js.Array[js.Object], columns: QueryColumns, table: ITable): String = js.native
-  def insert(data: js.Array[js.Object], columns: QueryColumns, table: TableName): String = js.native
+  def insert(data: js.Array[js.Object], columns: Null, table: String): String = js.native
+  def insert(data: js.Array[js.Object], columns: Null, table: ITable): String = js.native
+  def insert(data: js.Array[js.Object], columns: Null, table: TableName): String = js.native
+  def insert(data: js.Array[js.Object], columns: Unit, table: String): String = js.native
+  def insert(data: js.Array[js.Object], columns: Unit, table: ITable): String = js.native
+  def insert(data: js.Array[js.Object], columns: Unit, table: TableName): String = js.native
+  def insert(data: js.Array[js.Object], columns: QueryColumns[Any]): String = js.native
+  def insert(data: js.Array[js.Object], columns: QueryColumns[Any], table: String): String = js.native
+  def insert(data: js.Array[js.Object], columns: QueryColumns[Any], table: ITable): String = js.native
+  def insert(data: js.Array[js.Object], columns: QueryColumns[Any], table: TableName): String = js.native
   def insert(data: js.Object): String = js.native
-  def insert(data: js.Object, columns: QueryColumns): String = js.native
-  def insert(data: js.Object, columns: QueryColumns, table: String): String = js.native
-  def insert(data: js.Object, columns: QueryColumns, table: ITable): String = js.native
-  def insert(data: js.Object, columns: QueryColumns, table: TableName): String = js.native
+  def insert(data: js.Object, columns: Null, table: String): String = js.native
+  def insert(data: js.Object, columns: Null, table: ITable): String = js.native
+  def insert(data: js.Object, columns: Null, table: TableName): String = js.native
+  def insert(data: js.Object, columns: Unit, table: String): String = js.native
+  def insert(data: js.Object, columns: Unit, table: ITable): String = js.native
+  def insert(data: js.Object, columns: Unit, table: TableName): String = js.native
+  def insert(data: js.Object, columns: QueryColumns[Any]): String = js.native
+  def insert(data: js.Object, columns: QueryColumns[Any], table: String): String = js.native
+  def insert(data: js.Object, columns: QueryColumns[Any], table: ITable): String = js.native
+  def insert(data: js.Object, columns: QueryColumns[Any], table: TableName): String = js.native
+  
   def sets(data: js.Object): String = js.native
-  def sets(data: js.Object, columns: QueryColumns): String = js.native
-  def update(data: js.Array[js.Object]): js.Any = js.native
-  def update(data: js.Array[js.Object], columns: QueryColumns): js.Any = js.native
-  def update(data: js.Array[js.Object], columns: QueryColumns, table: String): js.Any = js.native
-  def update(data: js.Array[js.Object], columns: QueryColumns, table: String, options: AnonEmptyUpdate): js.Any = js.native
-  def update(data: js.Array[js.Object], columns: QueryColumns, table: ITable): js.Any = js.native
-  def update(data: js.Array[js.Object], columns: QueryColumns, table: ITable, options: AnonEmptyUpdate): js.Any = js.native
-  def update(data: js.Array[js.Object], columns: QueryColumns, table: TableName): js.Any = js.native
-  def update(data: js.Array[js.Object], columns: QueryColumns, table: TableName, options: AnonEmptyUpdate): js.Any = js.native
-  def update(data: js.Object): js.Any = js.native
-  def update(data: js.Object, columns: QueryColumns): js.Any = js.native
-  def update(data: js.Object, columns: QueryColumns, table: String): js.Any = js.native
-  def update(data: js.Object, columns: QueryColumns, table: String, options: AnonEmptyUpdate): js.Any = js.native
-  def update(data: js.Object, columns: QueryColumns, table: ITable): js.Any = js.native
-  def update(data: js.Object, columns: QueryColumns, table: ITable, options: AnonEmptyUpdate): js.Any = js.native
-  def update(data: js.Object, columns: QueryColumns, table: TableName): js.Any = js.native
-  def update(data: js.Object, columns: QueryColumns, table: TableName, options: AnonEmptyUpdate): js.Any = js.native
+  def sets(data: js.Object, columns: QueryColumns[Any]): String = js.native
+  
+  def update(data: js.Array[js.Object]): Any = js.native
+  def update(data: js.Array[js.Object], columns: Null, table: String): Any = js.native
+  def update(data: js.Array[js.Object], columns: Null, table: String, options: EmptyUpdate): Any = js.native
+  def update(data: js.Array[js.Object], columns: Null, table: Unit, options: EmptyUpdate): Any = js.native
+  def update(data: js.Array[js.Object], columns: Null, table: ITable): Any = js.native
+  def update(data: js.Array[js.Object], columns: Null, table: ITable, options: EmptyUpdate): Any = js.native
+  def update(data: js.Array[js.Object], columns: Null, table: TableName): Any = js.native
+  def update(data: js.Array[js.Object], columns: Null, table: TableName, options: EmptyUpdate): Any = js.native
+  def update(data: js.Array[js.Object], columns: Unit, table: String): Any = js.native
+  def update(data: js.Array[js.Object], columns: Unit, table: String, options: EmptyUpdate): Any = js.native
+  def update(data: js.Array[js.Object], columns: Unit, table: Unit, options: EmptyUpdate): Any = js.native
+  def update(data: js.Array[js.Object], columns: Unit, table: ITable): Any = js.native
+  def update(data: js.Array[js.Object], columns: Unit, table: ITable, options: EmptyUpdate): Any = js.native
+  def update(data: js.Array[js.Object], columns: Unit, table: TableName): Any = js.native
+  def update(data: js.Array[js.Object], columns: Unit, table: TableName, options: EmptyUpdate): Any = js.native
+  def update(data: js.Array[js.Object], columns: QueryColumns[Any]): Any = js.native
+  def update(data: js.Array[js.Object], columns: QueryColumns[Any], table: String): Any = js.native
+  def update(data: js.Array[js.Object], columns: QueryColumns[Any], table: String, options: EmptyUpdate): Any = js.native
+  def update(data: js.Array[js.Object], columns: QueryColumns[Any], table: Unit, options: EmptyUpdate): Any = js.native
+  def update(data: js.Array[js.Object], columns: QueryColumns[Any], table: ITable): Any = js.native
+  def update(data: js.Array[js.Object], columns: QueryColumns[Any], table: ITable, options: EmptyUpdate): Any = js.native
+  def update(data: js.Array[js.Object], columns: QueryColumns[Any], table: TableName): Any = js.native
+  def update(data: js.Array[js.Object], columns: QueryColumns[Any], table: TableName, options: EmptyUpdate): Any = js.native
+  def update(data: js.Object): Any = js.native
+  def update(data: js.Object, columns: Null, table: String): Any = js.native
+  def update(data: js.Object, columns: Null, table: String, options: EmptyUpdate): Any = js.native
+  def update(data: js.Object, columns: Null, table: Unit, options: EmptyUpdate): Any = js.native
+  def update(data: js.Object, columns: Null, table: ITable): Any = js.native
+  def update(data: js.Object, columns: Null, table: ITable, options: EmptyUpdate): Any = js.native
+  def update(data: js.Object, columns: Null, table: TableName): Any = js.native
+  def update(data: js.Object, columns: Null, table: TableName, options: EmptyUpdate): Any = js.native
+  def update(data: js.Object, columns: Unit, table: String): Any = js.native
+  def update(data: js.Object, columns: Unit, table: String, options: EmptyUpdate): Any = js.native
+  def update(data: js.Object, columns: Unit, table: Unit, options: EmptyUpdate): Any = js.native
+  def update(data: js.Object, columns: Unit, table: ITable): Any = js.native
+  def update(data: js.Object, columns: Unit, table: ITable, options: EmptyUpdate): Any = js.native
+  def update(data: js.Object, columns: Unit, table: TableName): Any = js.native
+  def update(data: js.Object, columns: Unit, table: TableName, options: EmptyUpdate): Any = js.native
+  def update(data: js.Object, columns: QueryColumns[Any]): Any = js.native
+  def update(data: js.Object, columns: QueryColumns[Any], table: String): Any = js.native
+  def update(data: js.Object, columns: QueryColumns[Any], table: String, options: EmptyUpdate): Any = js.native
+  def update(data: js.Object, columns: QueryColumns[Any], table: Unit, options: EmptyUpdate): Any = js.native
+  def update(data: js.Object, columns: QueryColumns[Any], table: ITable): Any = js.native
+  def update(data: js.Object, columns: QueryColumns[Any], table: ITable, options: EmptyUpdate): Any = js.native
+  def update(data: js.Object, columns: QueryColumns[Any], table: TableName): Any = js.native
+  def update(data: js.Object, columns: QueryColumns[Any], table: TableName, options: EmptyUpdate): Any = js.native
+  
   def values(data: js.Array[js.Object]): String = js.native
-  def values(data: js.Array[js.Object], columns: QueryColumns): String = js.native
+  def values(data: js.Array[js.Object], columns: QueryColumns[Any]): String = js.native
   def values(data: js.Object): String = js.native
-  def values(data: js.Object, columns: QueryColumns): String = js.native
+  def values(data: js.Object, columns: QueryColumns[Any]): String = js.native
 }
-

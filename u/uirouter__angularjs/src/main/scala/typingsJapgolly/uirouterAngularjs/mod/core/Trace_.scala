@@ -1,12 +1,11 @@
 package typingsJapgolly.uirouterAngularjs.mod.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "core.Trace")
 @js.native
-/** @hidden */
-class Trace_ ()
+/** @internal */
+open class Trace_ ()
   extends typingsJapgolly.uirouterCore.mod.Trace_
-

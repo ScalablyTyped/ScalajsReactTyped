@@ -1,24 +1,20 @@
 package typingsJapgolly.reactNavigation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNavigation.reactNavigationStrings.`react-navigationSlashSTACK`
   - typingsJapgolly.reactNavigation.reactNavigationStrings.`react-navigationSlashTABS`
   - typingsJapgolly.reactNavigation.reactNavigationStrings.`react-navigationSlashDRAWER`
 */
-trait NavigatorType extends js.Object
-
+trait NavigatorType extends StObject
 object NavigatorType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `react-navigationSlashDRAWER`: typingsJapgolly.reactNavigation.reactNavigationStrings.`react-navigationSlashDRAWER` = this.cast("react-navigation/DRAWER")
-  @scala.inline
-  def `react-navigationSlashSTACK`: typingsJapgolly.reactNavigation.reactNavigationStrings.`react-navigationSlashSTACK` = this.cast("react-navigation/STACK")
-  @scala.inline
-  def `react-navigationSlashTABS`: typingsJapgolly.reactNavigation.reactNavigationStrings.`react-navigationSlashTABS` = this.cast("react-navigation/TABS")
+  
+  inline def `react-navigationSlashDRAWER`: typingsJapgolly.reactNavigation.reactNavigationStrings.`react-navigationSlashDRAWER` = "react-navigation/DRAWER".asInstanceOf[typingsJapgolly.reactNavigation.reactNavigationStrings.`react-navigationSlashDRAWER`]
+  
+  inline def `react-navigationSlashSTACK`: typingsJapgolly.reactNavigation.reactNavigationStrings.`react-navigationSlashSTACK` = "react-navigation/STACK".asInstanceOf[typingsJapgolly.reactNavigation.reactNavigationStrings.`react-navigationSlashSTACK`]
+  
+  inline def `react-navigationSlashTABS`: typingsJapgolly.reactNavigation.reactNavigationStrings.`react-navigationSlashTABS` = "react-navigation/TABS".asInstanceOf[typingsJapgolly.reactNavigation.reactNavigationStrings.`react-navigationSlashTABS`]
 }
-

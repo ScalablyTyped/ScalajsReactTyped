@@ -1,16 +1,19 @@
 package typingsJapgolly.videoJs.mod.videojs
 
 import typingsJapgolly.videoJs.mod.videojs.EventTarget.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The initial play button that shows before the video has played. The hiding of the
   * `BigPlayButton` get done via CSS and `Player` states.
   */
 @js.native
-trait BigPlayButton extends Button {
+trait BigPlayButton
+  extends StObject
+     with Button {
+  
   /**
     * Called when this BigPlayButton gets mouse pressed down
     *
@@ -21,4 +24,3 @@ trait BigPlayButton extends Button {
     */
   def handleMouseDown(event: Event): Unit = js.native
 }
-

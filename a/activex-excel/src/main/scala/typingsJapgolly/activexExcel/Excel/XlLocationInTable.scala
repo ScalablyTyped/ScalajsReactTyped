@@ -1,51 +1,47 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4110`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4153`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`6`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`7`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`8`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4110`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4153`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`3`
+import typingsJapgolly.activexExcel.activexExcelInts.`4`
+import typingsJapgolly.activexExcel.activexExcelInts.`5`
+import typingsJapgolly.activexExcel.activexExcelInts.`6`
+import typingsJapgolly.activexExcel.activexExcelInts.`7`
+import typingsJapgolly.activexExcel.activexExcelInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4110`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`7`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`6`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4153`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`8`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4110`
+  - typingsJapgolly.activexExcel.activexExcelInts.`5`
+  - typingsJapgolly.activexExcel.activexExcelInts.`3`
+  - typingsJapgolly.activexExcel.activexExcelInts.`7`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`6`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4153`
+  - typingsJapgolly.activexExcel.activexExcelInts.`4`
+  - typingsJapgolly.activexExcel.activexExcelInts.`8`
 */
-trait XlLocationInTable extends js.Object
-
+trait XlLocationInTable extends StObject
 object XlLocationInTable {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlColumnHeader: `-4110` = this.cast(-4110)
-  @scala.inline
-  def xlColumnItem: `5` = this.cast(5)
-  @scala.inline
-  def xlDataHeader: `3` = this.cast(3)
-  @scala.inline
-  def xlDataItem: `7` = this.cast(7)
-  @scala.inline
-  def xlPageHeader: `2` = this.cast(2)
-  @scala.inline
-  def xlPageItem: `6` = this.cast(6)
-  @scala.inline
-  def xlRowHeader: `-4153` = this.cast(-4153)
-  @scala.inline
-  def xlRowItem: `4` = this.cast(4)
-  @scala.inline
-  def xlTableBody: `8` = this.cast(8)
+  
+  inline def xlColumnHeader: `-4110` = -4110.asInstanceOf[`-4110`]
+  
+  inline def xlColumnItem: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlDataHeader: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlDataItem: `7` = 7.asInstanceOf[`7`]
+  
+  inline def xlPageHeader: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlPageItem: `6` = 6.asInstanceOf[`6`]
+  
+  inline def xlRowHeader: `-4153` = -4153.asInstanceOf[`-4153`]
+  
+  inline def xlRowItem: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlTableBody: `8` = 8.asInstanceOf[`8`]
 }
-

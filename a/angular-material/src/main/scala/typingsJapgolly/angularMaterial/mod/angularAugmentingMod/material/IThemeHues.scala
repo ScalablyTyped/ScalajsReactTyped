@@ -1,25 +1,42 @@
 package typingsJapgolly.angularMaterial.mod.angularAugmentingMod.material
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IThemeHues extends js.Object {
+trait IThemeHues extends StObject {
+  
   var default: js.UndefOr[String] = js.undefined
+  
   var `hue-1`: js.UndefOr[String] = js.undefined
+  
   var `hue-2`: js.UndefOr[String] = js.undefined
+  
   var `hue-3`: js.UndefOr[String] = js.undefined
 }
-
 object IThemeHues {
-  @scala.inline
-  def apply(default: String = null, `hue-1`: String = null, `hue-2`: String = null, `hue-3`: String = null): IThemeHues = {
+  
+  inline def apply(): IThemeHues = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (`hue-1` != null) __obj.updateDynamic("hue-1")(`hue-1`.asInstanceOf[js.Any])
-    if (`hue-2` != null) __obj.updateDynamic("hue-2")(`hue-2`.asInstanceOf[js.Any])
-    if (`hue-3` != null) __obj.updateDynamic("hue-3")(`hue-3`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThemeHues]
   }
+  
+  extension [Self <: IThemeHues](x: Self) {
+    
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def `setHue-1`(value: String): Self = StObject.set(x, "hue-1", value.asInstanceOf[js.Any])
+    
+    inline def `setHue-1Undefined`: Self = StObject.set(x, "hue-1", js.undefined)
+    
+    inline def `setHue-2`(value: String): Self = StObject.set(x, "hue-2", value.asInstanceOf[js.Any])
+    
+    inline def `setHue-2Undefined`: Self = StObject.set(x, "hue-2", js.undefined)
+    
+    inline def `setHue-3`(value: String): Self = StObject.set(x, "hue-3", value.asInstanceOf[js.Any])
+    
+    inline def `setHue-3Undefined`: Self = StObject.set(x, "hue-3", js.undefined)
+  }
 }
-

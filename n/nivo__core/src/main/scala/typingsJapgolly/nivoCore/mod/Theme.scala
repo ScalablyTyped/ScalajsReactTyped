@@ -1,48 +1,105 @@
 package typingsJapgolly.nivoCore.mod
 
-import typingsJapgolly.nivoCore.PartialcontainerPartialCS
-import typingsJapgolly.nivoCore.PartialdomainPartiallineP
-import typingsJapgolly.nivoCore.PartiallineColorstringlin
-import typingsJapgolly.nivoCore.PartiallinePartialCSSProp
-import typingsJapgolly.nivoCore.PartialtextPartialCSSProp
+import typingsJapgolly.nivoCore.anon.PartialcontainerPartialCS
+import typingsJapgolly.nivoCore.anon.PartialdomainPartiallineP
+import typingsJapgolly.nivoCore.anon.PartialhiddenPartialsymbo
+import typingsJapgolly.nivoCore.anon.PartiallineColorstringlin
+import typingsJapgolly.nivoCore.anon.PartiallinePartialPartial
+import typingsJapgolly.nivoCore.anon.PartiallinePartialstrokes
+import typingsJapgolly.nivoCore.anon.PartialtextPartialPartial
+import typingsJapgolly.nivoCore.anon.PartialtextPartialfillstr
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<{  background  :string,   axis  :std.Partial<{  domain  :std.Partial<{  line  :std.Partial<react.react.CSSProperties>}>,   ticks  :std.Partial<{  line  :std.Partial<react.react.CSSProperties>,   text  :std.Partial<react.react.CSSProperties>}>,   legend  :std.Partial<{  text  :std.Partial<react.react.CSSProperties>}>}>,   grid  :std.Partial<{  line  :std.Partial<react.react.CSSProperties>}>,   legends  :std.Partial<{  text  :std.Partial<react.react.CSSProperties>}>,   labels  :std.Partial<{  text  :std.Partial<react.react.CSSProperties>}>,   markers  :std.Partial<{  lineColor  :string,   lineStrokeWidth  :number,   textColor  :string,   fontSize  :string | 0}>,   dots  :std.Partial<{  text  :std.Partial<react.react.CSSProperties>}>,   tooltip  :std.Partial<{  container  :std.Partial<react.react.CSSProperties>,   basic  :std.Partial<react.react.CSSProperties>,   chip  :std.Partial<react.react.CSSProperties>,   table  :std.Partial<react.react.CSSProperties>,   tableCell  :std.Partial<react.react.CSSProperties>}>}> */
-trait Theme extends js.Object {
+/* Inlined std.Partial<std.Pick<@nivo/core.@nivo/core.CompleteTheme, 'background' | 'fontFamily' | 'fontSize' | 'textColor'> & {  crosshair :std.Partial<{  line :std.Partial<@nivo/core.@nivo/core.CompleteTheme['crosshair']['line']>}>,   axis :std.Partial<{  domain :std.Partial<{  line :std.Partial<@nivo/core.@nivo/core.CompleteTheme['axis']['domain']['line']>}>,   ticks :std.Partial<{  line :std.Partial<@nivo/core.@nivo/core.CompleteTheme['axis']['ticks']['line']>,   text :std.Partial<@nivo/core.@nivo/core.CompleteTheme['axis']['ticks']['text']>}>,   legend :std.Partial<{  text :std.Partial<@nivo/core.@nivo/core.CompleteTheme['axis']['legend']['text']>}>}>,   grid :std.Partial<{  line :std.Partial<@nivo/core.@nivo/core.CompleteTheme['grid']['line']>}>,   legends :std.Partial<{  hidden :std.Partial<{  symbol :@nivo/core.@nivo/core.CompleteTheme['legends']['hidden']['symbol'],   text :@nivo/core.@nivo/core.CompleteTheme['legends']['hidden']['text']}>,   title :std.Partial<{  text :std.Partial<@nivo/core.@nivo/core.CompleteTheme['legends']['title']['text']>}>,   text :std.Partial<@nivo/core.@nivo/core.CompleteTheme['legends']['text']>,   ticks :std.Partial<{  line :std.Partial<@nivo/core.@nivo/core.CompleteTheme['legends']['ticks']['line']>,   text :std.Partial<@nivo/core.@nivo/core.CompleteTheme['legends']['ticks']['text']>}>}>,   labels :std.Partial<{  text :std.Partial<@nivo/core.@nivo/core.CompleteTheme['labels']['text']>}>,   markers :std.Partial<@nivo/core.@nivo/core.CompleteTheme['markers']>,   dots :std.Partial<{  text :std.Partial<@nivo/core.@nivo/core.CompleteTheme['dots']['text']>}>,   tooltip :std.Partial<@nivo/core.@nivo/core.CompleteTheme['tooltip']>,   annotations :std.Partial<{  text :std.Partial<@nivo/core.@nivo/core.CompleteTheme['annotations']['text']>,   link :std.Partial<@nivo/core.@nivo/core.CompleteTheme['annotations']['link']>,   outline :std.Partial<@nivo/core.@nivo/core.CompleteTheme['annotations']['outline']>,   symbol :std.Partial<@nivo/core.@nivo/core.CompleteTheme['annotations']['symbol']>}>}> */
+trait Theme extends StObject {
+  
+  var annotations: js.UndefOr[PartialtextPartialfillstr] = js.undefined
+  
   var axis: js.UndefOr[PartialdomainPartiallineP] = js.undefined
+  
   var background: js.UndefOr[String] = js.undefined
-  var dots: js.UndefOr[PartialtextPartialCSSProp] = js.undefined
-  var grid: js.UndefOr[PartiallinePartialCSSProp] = js.undefined
-  var labels: js.UndefOr[PartialtextPartialCSSProp] = js.undefined
-  var legends: js.UndefOr[PartialtextPartialCSSProp] = js.undefined
+  
+  var crosshair: js.UndefOr[PartiallinePartialstrokes] = js.undefined
+  
+  var dots: js.UndefOr[PartialtextPartialPartial] = js.undefined
+  
+  var fontFamily: js.UndefOr[String] = js.undefined
+  
+  var fontSize: js.UndefOr[Double] = js.undefined
+  
+  var grid: js.UndefOr[PartiallinePartialPartial] = js.undefined
+  
+  var labels: js.UndefOr[PartialtextPartialPartial] = js.undefined
+  
+  var legends: js.UndefOr[PartialhiddenPartialsymbo] = js.undefined
+  
   var markers: js.UndefOr[PartiallineColorstringlin] = js.undefined
+  
+  var textColor: js.UndefOr[String] = js.undefined
+  
   var tooltip: js.UndefOr[PartialcontainerPartialCS] = js.undefined
 }
-
 object Theme {
-  @scala.inline
-  def apply(
-    axis: PartialdomainPartiallineP = null,
-    background: String = null,
-    dots: PartialtextPartialCSSProp = null,
-    grid: PartiallinePartialCSSProp = null,
-    labels: PartialtextPartialCSSProp = null,
-    legends: PartialtextPartialCSSProp = null,
-    markers: PartiallineColorstringlin = null,
-    tooltip: PartialcontainerPartialCS = null
-  ): Theme = {
+  
+  inline def apply(): Theme = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (dots != null) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (legends != null) __obj.updateDynamic("legends")(legends.asInstanceOf[js.Any])
-    if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme]
   }
+  
+  extension [Self <: Theme](x: Self) {
+    
+    inline def setAnnotations(value: PartialtextPartialfillstr): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    
+    inline def setAxis(value: PartialdomainPartiallineP): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setCrosshair(value: PartiallinePartialstrokes): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
+    
+    inline def setCrosshairUndefined: Self = StObject.set(x, "crosshair", js.undefined)
+    
+    inline def setDots(value: PartialtextPartialPartial): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
+    
+    inline def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
+    
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setGrid(value: PartiallinePartialPartial): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    
+    inline def setLabels(value: PartialtextPartialPartial): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setLegends(value: PartialhiddenPartialsymbo): Self = StObject.set(x, "legends", value.asInstanceOf[js.Any])
+    
+    inline def setLegendsUndefined: Self = StObject.set(x, "legends", js.undefined)
+    
+    inline def setMarkers(value: PartiallineColorstringlin): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+    
+    inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
+    
+    inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    
+    inline def setTooltip(value: PartialcontainerPartialCS): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+  }
 }
-

@@ -1,30 +1,38 @@
 package typingsJapgolly.hashtable
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IHashtableOptions[TKey] extends js.Object {
+trait IHashtableOptions[TKey] extends StObject {
+  
   @JSName("equals")
   var equals_FIHashtableOptions: js.UndefOr[js.Function2[/* key1 */ TKey, /* key2 */ TKey, Boolean]] = js.undefined
+  
   @JSName("hashCode")
-  var hashCode_FIHashtableOptions: js.UndefOr[js.Function1[/* key */ TKey, _]] = js.undefined
+  var hashCode_FIHashtableOptions: js.UndefOr[js.Function1[/* key */ TKey, Any]] = js.undefined
+  
   var replaceDuplicateKey: js.UndefOr[Boolean] = js.undefined
 }
-
 object IHashtableOptions {
-  @scala.inline
-  def apply[TKey](
-    equals: (/* key1 */ TKey, /* key2 */ TKey) => CallbackTo[Boolean] = null,
-    hashCode: /* key */ TKey => CallbackTo[js.Any] = null,
-    replaceDuplicateKey: js.UndefOr[Boolean] = js.undefined
-  ): IHashtableOptions[TKey] = {
+  
+  inline def apply[TKey](): IHashtableOptions[TKey] = {
     val __obj = js.Dynamic.literal()
-    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2((t0: /* key1 */ TKey, t1: /* key2 */ TKey) => equals(t0, t1).runNow()))
-    if (hashCode != null) __obj.updateDynamic("hashCode")(js.Any.fromFunction1((t0: /* key */ TKey) => hashCode(t0).runNow()))
-    if (!js.isUndefined(replaceDuplicateKey)) __obj.updateDynamic("replaceDuplicateKey")(replaceDuplicateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHashtableOptions[TKey]]
   }
+  
+  extension [Self <: IHashtableOptions[?], TKey](x: Self & IHashtableOptions[TKey]) {
+    
+    inline def setEquals_(value: (/* key1 */ TKey, /* key2 */ TKey) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+    
+    inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+    
+    inline def setHashCode_(value: /* key */ TKey => Any): Self = StObject.set(x, "hashCode", js.Any.fromFunction1(value))
+    
+    inline def setHashCode_Undefined: Self = StObject.set(x, "hashCode", js.undefined)
+    
+    inline def setReplaceDuplicateKey(value: Boolean): Self = StObject.set(x, "replaceDuplicateKey", value.asInstanceOf[js.Any])
+    
+    inline def setReplaceDuplicateKeyUndefined: Self = StObject.set(x, "replaceDuplicateKey", js.undefined)
+  }
 }
-

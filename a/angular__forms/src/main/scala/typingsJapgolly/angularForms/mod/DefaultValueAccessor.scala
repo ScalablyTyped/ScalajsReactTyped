@@ -2,118 +2,81 @@ package typingsJapgolly.angularForms.mod
 
 import typingsJapgolly.angularCore.mod.ElementRef
 import typingsJapgolly.angularCore.mod.Renderer2
+import typingsJapgolly.angularCore.mod.ɵɵDirectiveDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import typingsJapgolly.angularForms.angularFormsBooleans.`false`
+import typingsJapgolly.angularForms.anon.Optional
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/forms", "DefaultValueAccessor")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.angularForms.mod.ControlValueAccessor because var conflicts: setDisabledState. Inlined writeValue */ @JSImport("@angular/forms", "DefaultValueAccessor")
 @js.native
-class DefaultValueAccessor protected () extends ControlValueAccessor {
-  def this(_renderer: Renderer2, _elementRef: ElementRef[_], _compositionMode: Boolean) = this()
+open class DefaultValueAccessor protected ()
+  extends StObject
+     with BaseControlValueAccessor {
+  def this(renderer: Renderer2, elementRef: ElementRef[Any], _compositionMode: Boolean) = this()
+  
   /** Whether the user is creating a composition string (IME events). */
-  var _composing: js.Any = js.native
-  var _compositionMode: js.Any = js.native
-  var _elementRef: js.Any = js.native
-  var _renderer: js.Any = js.native
+  /* private */ var _composing: Any = js.native
+  
+  /* private */ var _compositionMode: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _elementRef: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _renderer: Any = js.native
+  
   /**
-    * @description
-    * The registered callback function called when an input event occurs on the input element.
+    * The registered callback function called when a change or input event occurs on the input
+    * element.
+    * @nodoc
     */
-  def onChange(_underscore: js.Any): Unit = js.native
+  /* CompleteClass */
+  override def onChange(_underscore: Any): Unit = js.native
+  
   /**
-    * @description
     * The registered callback function called when a blur event occurs on the input element.
-    */
-  def onTouched(): Unit = js.native
-  /**
-    * @description
-    * Registers a callback function that is called when the control's value
-    * changes in the UI.
-    *
-    * This method is called by the forms API on initialization to update the form
-    * model when values propagate from the view to the model.
-    *
-    * When implementing the `registerOnChange` method in your own value accessor,
-    * save the given function so your class calls it at the appropriate time.
-    *
-    * @usageNotes
-    * ### Store the change function
-    *
-    * The following example stores the provided function as an internal method.
-    *
-    * ```ts
-    * registerOnChange(fn: (_: any) => void): void {
-    *   this._onChange = fn;
-    * }
-    * ```
-    *
-    * When the value changes in the UI, call the registered
-    * function to allow the forms API to update itself:
-    *
-    * ```ts
-    * host: {
-    *    '(change)': '_onChange($event.target.value)'
-    * }
-    * ```
-    *
-    * @param fn The callback function to register
+    * @nodoc
     */
   /* CompleteClass */
-  override def registerOnChange(fn: js.Any): Unit = js.native
+  override def onTouched(): Unit = js.native
+  
   /**
-    * @description
     * Registers a function called when the control value changes.
-    *
-    * @param fn The callback function
-    */
-  def registerOnChange(fn: js.Function1[/* _ */ js.Any, Unit]): Unit = js.native
-  /**
-    * @description
-    * Registers a callback function is called by the forms API on initialization
-    * to update the form model on blur.
-    *
-    * When implementing `registerOnTouched` in your own value accessor, save the given
-    * function so your class calls it when the control should be considered
-    * blurred or "touched".
-    *
-    * @usageNotes
-    * ### Store the callback function
-    *
-    * The following example stores the provided function as an internal method.
-    *
-    * ```ts
-    * registerOnTouched(fn: any): void {
-    *   this._onTouched = fn;
-    * }
-    * ```
-    *
-    * On blur (or equivalent), your class should call the registered function to allow
-    * the forms API to update itself:
-    *
-    * ```ts
-    * host: {
-    *    '(blur)': '_onTouched()'
-    * }
-    * ```
-    *
-    * @param fn The callback function to register
+    * @nodoc
     */
   /* CompleteClass */
-  override def registerOnTouched(fn: js.Any): Unit = js.native
+  override def registerOnChange(fn: js.Function1[/* _ */ Any, js.Object]): Unit = js.native
+  
   /**
-    * @description
     * Registers a function called when the control is touched.
-    *
-    * @param fn The callback function
+    * @nodoc
     */
-  def registerOnTouched(fn: js.Function0[Unit]): Unit = js.native
+  /* CompleteClass */
+  override def registerOnTouched(fn: js.Function0[Unit]): Unit = js.native
+  
   /**
-    * Sets the "disabled" property on the input element.
-    *
-    * @param isDisabled The disabled value
+    * Sets the "disabled" property on the range input element.
+    * @nodoc
     */
-  @JSName("setDisabledState")
-  def setDisabledState_MDefaultValueAccessor(isDisabled: Boolean): Unit = js.native
+  /* CompleteClass */
+  override def setDisabledState(isDisabled: Boolean): Unit = js.native
+  
+  /**
+    * Helper method that sets a property on a target element using the current Renderer
+    * implementation.
+    * @nodoc
+    */
+  /* protected */ /* CompleteClass */
+  override def setProperty(key: String, value: Any): Unit = js.native
+  
+  /**
+    * Sets the "value" property on the input element.
+    * @nodoc
+    */
   /**
     * @description
     * Writes a new value to the element.
@@ -134,7 +97,42 @@ class DefaultValueAccessor protected () extends ControlValueAccessor {
     *
     * @param obj The new value for the element
     */
-  /* CompleteClass */
-  override def writeValue(obj: js.Any): Unit = js.native
+  def writeValue(value: Any): Unit = js.native
 }
-
+/* static members */
+object DefaultValueAccessor {
+  
+  @JSImport("@angular/forms", "DefaultValueAccessor")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/forms", "DefaultValueAccessor.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    DefaultValueAccessor, 
+    /* input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl] */ String, 
+    scala.Nothing, 
+    js.Object, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[
+      DefaultValueAccessor, 
+      /* input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl] */ String, 
+      scala.Nothing, 
+      js.Object, 
+      js.Object, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `false`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/forms", "DefaultValueAccessor.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[DefaultValueAccessor, js.Tuple3[Null, Null, Optional]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[DefaultValueAccessor, js.Tuple3[Null, Null, Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+}

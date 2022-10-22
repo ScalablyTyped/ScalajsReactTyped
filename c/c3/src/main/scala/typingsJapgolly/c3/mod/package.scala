@@ -1,23 +1,37 @@
-package typingsJapgolly.c3
+package typingsJapgolly.c3.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.c3.anon.ValueOf
+import typingsJapgolly.c3.anon.`3`
+import typingsJapgolly.c3.c3Strings.x
+import typingsJapgolly.c3.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ArrayOrSingle[T /* <: js.Any */] = T | js.Array[T]
-  type ArrayOrString = typingsJapgolly.c3.mod.ArrayOrSingle[java.lang.String]
-  type Domain = js.Tuple2[scala.Double, scala.Double]
-  type ExpandOptions = scala.Boolean | typingsJapgolly.c3.AnonDurationNumber
-  type FormatFunction = js.Function4[
-    /* v */ scala.Double | typingsJapgolly.c3.AnonValueOf, 
-    /* id */ java.lang.String, 
-    /* i */ scala.Double, 
-    /* j */ scala.Double, 
-    java.lang.String
-  ]
-  type Primitive = java.lang.String | scala.Boolean | scala.Double | js.Date | scala.Null
-  type PrimitiveArray = js.Array[typingsJapgolly.c3.mod.Primitive]
-  type RedrawOptions = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
-  type UpdateAndRedrawOptions = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
-}
+
+inline def generate(config: ChartConfiguration): ChartAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(config.asInstanceOf[js.Any]).asInstanceOf[ChartAPI]
+
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
+
+type ArrayOrSingle[T /* <: Any */] = T | js.Array[T]
+
+type ArrayOrString = ArrayOrSingle[String]
+
+type AxisName = XAxisName | YAxisName
+
+type Domain = js.Tuple2[Double, Double]
+
+type ExpandOptions = Boolean | `3`
+
+type FormatFunction = js.Function4[/* v */ Double | ValueOf, /* id */ String, /* i */ Double, /* j */ Double, String]
+
+type Primitive = String | Boolean | Double | js.Date | Null
+
+type PrimitiveArray = js.Array[Primitive]
+
+type RedrawOptions = StringDictionary[Boolean]
+
+type UpdateAndRedrawOptions = StringDictionary[Boolean]
+
+type XAxisName = x

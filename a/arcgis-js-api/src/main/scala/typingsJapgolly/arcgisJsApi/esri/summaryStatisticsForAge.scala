@@ -1,28 +1,34 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait summaryStatisticsForAge extends js.Object {
+/**
+  * Function for generating statistics for the age of features in a layer based on a given start time and end time.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html)
+  */
+trait summaryStatisticsForAge extends StObject {
+  
   /**
-    * Returns an object containing various statistics describing an age value (e.g. the difference between a given end time from a start time) in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html).
+    * Returns an object containing various statistics describing an age value (e.g.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
-    *
-    * @param params See the table below for details of each parameter.
-    * @param params.layer The layer from which to generate age statistics for the given `startTime` and `endTime`.
-    * @param params.startTime The start time for the age calculation. This can be a field name or a date value, such as `Date.now()`. If a `Date` is provided, then the `endTime` parameter must be a field name.
-    * @param params.endTime The end time for the age calculation. This can be a field name or a date value, such as `Date.now()`. If a `Date` is provided, then the `startTime` parameter must be a field name.
-    * @param params.unit The desired units of the age result.  **Possible Values:** years | months | days | hours | minutes | seconds
-    * @param params.view The view in which features will be rendered.
-    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
     */
   def summaryStatisticsForAge(params: summaryStatisticsForAgeSummaryStatisticsForAgeParams): js.Promise[SummaryStatisticsResult]
 }
-
-@JSGlobal("__esri.summaryStatisticsForAge")
-@js.native
-object summaryStatisticsForAge extends TopLevel[summaryStatisticsForAge]
-
+object summaryStatisticsForAge {
+  
+  inline def apply(
+    summaryStatisticsForAge: summaryStatisticsForAgeSummaryStatisticsForAgeParams => js.Promise[SummaryStatisticsResult]
+  ): summaryStatisticsForAge = {
+    val __obj = js.Dynamic.literal(summaryStatisticsForAge = js.Any.fromFunction1(summaryStatisticsForAge))
+    __obj.asInstanceOf[summaryStatisticsForAge]
+  }
+  
+  extension [Self <: summaryStatisticsForAge](x: Self) {
+    
+    inline def setSummaryStatisticsForAge(value: summaryStatisticsForAgeSummaryStatisticsForAgeParams => js.Promise[SummaryStatisticsResult]): Self = StObject.set(x, "summaryStatisticsForAge", js.Any.fromFunction1(value))
+  }
+}

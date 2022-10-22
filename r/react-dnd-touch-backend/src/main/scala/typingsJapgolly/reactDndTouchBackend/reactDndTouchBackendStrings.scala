@@ -1,49 +1,40 @@
 package typingsJapgolly.reactDndTouchBackend
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactDndTouchBackendStrings {
-  @js.native
-  sealed trait contextmenu extends js.Object
   
   @js.native
-  sealed trait keydown extends js.Object
+  sealed trait contextmenu extends StObject
+  inline def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
   @js.native
-  sealed trait mousedown extends js.Object
+  sealed trait keydown extends StObject
+  inline def keydown: keydown = "keydown".asInstanceOf[keydown]
   
   @js.native
-  sealed trait mousemove extends js.Object
+  sealed trait mousedown extends StObject
+  inline def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   
   @js.native
-  sealed trait mouseup extends js.Object
+  sealed trait mousemove extends StObject
+  inline def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
   
   @js.native
-  sealed trait touchend extends js.Object
+  sealed trait mouseup extends StObject
+  inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   
   @js.native
-  sealed trait touchmove extends js.Object
+  sealed trait touchend extends StObject
+  inline def touchend: touchend = "touchend".asInstanceOf[touchend]
   
   @js.native
-  sealed trait touchstart extends js.Object
+  sealed trait touchmove extends StObject
+  inline def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
   
-  @scala.inline
-  def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
-  @scala.inline
-  def keydown: keydown = "keydown".asInstanceOf[keydown]
-  @scala.inline
-  def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
-  @scala.inline
-  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
-  @scala.inline
-  def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
-  @scala.inline
-  def touchend: touchend = "touchend".asInstanceOf[touchend]
-  @scala.inline
-  def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
-  @scala.inline
-  def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
+  @js.native
+  sealed trait touchstart extends StObject
+  inline def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
 }
-

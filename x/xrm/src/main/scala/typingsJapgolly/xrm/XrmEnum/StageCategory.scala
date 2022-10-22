@@ -1,46 +1,42 @@
 package typingsJapgolly.xrm.XrmEnum
 
-import typingsJapgolly.xrm.xrmNumbers.`0`
-import typingsJapgolly.xrm.xrmNumbers.`1`
-import typingsJapgolly.xrm.xrmNumbers.`2`
-import typingsJapgolly.xrm.xrmNumbers.`3`
-import typingsJapgolly.xrm.xrmNumbers.`4`
-import typingsJapgolly.xrm.xrmNumbers.`5`
-import typingsJapgolly.xrm.xrmNumbers.`6`
+import typingsJapgolly.xrm.xrmInts.`0`
+import typingsJapgolly.xrm.xrmInts.`1`
+import typingsJapgolly.xrm.xrmInts.`2`
+import typingsJapgolly.xrm.xrmInts.`3`
+import typingsJapgolly.xrm.xrmInts.`4`
+import typingsJapgolly.xrm.xrmInts.`5`
+import typingsJapgolly.xrm.xrmInts.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enumeration of stage categories.
   */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.xrm.xrmNumbers.`0`
-  - typingsJapgolly.xrm.xrmNumbers.`1`
-  - typingsJapgolly.xrm.xrmNumbers.`2`
-  - typingsJapgolly.xrm.xrmNumbers.`3`
-  - typingsJapgolly.xrm.xrmNumbers.`4`
-  - typingsJapgolly.xrm.xrmNumbers.`5`
-  - typingsJapgolly.xrm.xrmNumbers.`6`
+  - typingsJapgolly.xrm.xrmInts.`0`
+  - typingsJapgolly.xrm.xrmInts.`1`
+  - typingsJapgolly.xrm.xrmInts.`2`
+  - typingsJapgolly.xrm.xrmInts.`3`
+  - typingsJapgolly.xrm.xrmInts.`4`
+  - typingsJapgolly.xrm.xrmInts.`5`
+  - typingsJapgolly.xrm.xrmInts.`6`
 */
-trait StageCategory extends js.Object
-
+trait StageCategory extends StObject
 object StageCategory {
-  @scala.inline
-  def Close: `3` = this.cast(3)
-  @scala.inline
-  def Develop: `1` = this.cast(1)
-  @scala.inline
-  def Identify: `4` = this.cast(4)
-  @scala.inline
-  def Propose: `2` = this.cast(2)
-  @scala.inline
-  def Qualify: `0` = this.cast(0)
-  @scala.inline
-  def Research: `5` = this.cast(5)
-  @scala.inline
-  def Resolve: `6` = this.cast(6)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Close: `3` = 3.asInstanceOf[`3`]
+  
+  inline def Develop: `1` = 1.asInstanceOf[`1`]
+  
+  inline def Identify: `4` = 4.asInstanceOf[`4`]
+  
+  inline def Propose: `2` = 2.asInstanceOf[`2`]
+  
+  inline def Qualify: `0` = 0.asInstanceOf[`0`]
+  
+  inline def Research: `5` = 5.asInstanceOf[`5`]
+  
+  inline def Resolve: `6` = 6.asInstanceOf[`6`]
 }
-

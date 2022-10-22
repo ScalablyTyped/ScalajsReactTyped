@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Storage.Provider
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CachedFileOptions extends js.Object
-
+sealed trait CachedFileOptions extends StObject
 @JSGlobal("Windows.Storage.Provider.CachedFileOptions")
 @js.native
-object CachedFileOptions extends js.Object {
-  @js.native
-  sealed trait denyAccessWhenOffline extends CachedFileOptions
+object CachedFileOptions extends StObject {
   
   @js.native
-  sealed trait none extends CachedFileOptions
+  sealed trait denyAccessWhenOffline
+    extends StObject
+       with CachedFileOptions
   
   @js.native
-  sealed trait requireUpdateOnAccess extends CachedFileOptions
+  sealed trait none
+    extends StObject
+       with CachedFileOptions
   
   @js.native
-  sealed trait useCachedFileWhenOffline extends CachedFileOptions
+  sealed trait requireUpdateOnAccess
+    extends StObject
+       with CachedFileOptions
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CachedFileOptions with Double] = js.native
-  /* 3 */ @js.native
-  object denyAccessWhenOffline extends TopLevel[denyAccessWhenOffline with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object requireUpdateOnAccess extends TopLevel[requireUpdateOnAccess with Double]
-  
-  /* 2 */ @js.native
-  object useCachedFileWhenOffline extends TopLevel[useCachedFileWhenOffline with Double]
-  
+  @js.native
+  sealed trait useCachedFileWhenOffline
+    extends StObject
+       with CachedFileOptions
 }
-

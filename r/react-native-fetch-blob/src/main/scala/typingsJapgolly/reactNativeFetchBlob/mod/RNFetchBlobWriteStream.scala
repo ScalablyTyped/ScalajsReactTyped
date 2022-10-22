@@ -1,32 +1,39 @@
 package typingsJapgolly.reactNativeFetchBlob.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RNFetchBlobWriteStream extends js.Object {
+trait RNFetchBlobWriteStream extends StObject {
+  
   var append: Boolean
-  var encoding: String
-  var id: String
+  
   def close(): Unit
+  
+  var encoding: String
+  
+  var id: String
+  
   def write(data: String): js.Promise[Unit]
 }
-
 object RNFetchBlobWriteStream {
-  @scala.inline
-  def apply(
-    append: Boolean,
-    close: Callback,
-    encoding: String,
-    id: String,
-    write: String => CallbackTo[js.Promise[Unit]]
-  ): RNFetchBlobWriteStream = {
-    val __obj = js.Dynamic.literal(append = append.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("close")(close.toJsFn)
-    __obj.updateDynamic("write")(js.Any.fromFunction1((t0: java.lang.String) => write(t0).runNow()))
+  
+  inline def apply(append: Boolean, close: Callback, encoding: String, id: String, write: String => js.Promise[Unit]): RNFetchBlobWriteStream = {
+    val __obj = js.Dynamic.literal(append = append.asInstanceOf[js.Any], close = close.toJsFn, encoding = encoding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], write = js.Any.fromFunction1(write))
     __obj.asInstanceOf[RNFetchBlobWriteStream]
   }
+  
+  extension [Self <: RNFetchBlobWriteStream](x: Self) {
+    
+    inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+    
+    inline def setClose(value: Callback): Self = StObject.set(x, "close", value.toJsFn)
+    
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setWrite(value: String => js.Promise[Unit]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+  }
 }
-

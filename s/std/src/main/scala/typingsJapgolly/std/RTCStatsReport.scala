@@ -1,15 +1,10 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RTCStatsReport
-  extends ReadonlyMap[java.lang.String, js.Any]
-
-@JSGlobal("RTCStatsReport")
-@js.native
-object RTCStatsReport extends Instantiable0[RTCStatsReport]
-
+  extends StObject
+     with ReadonlyMap[java.lang.String, Any]

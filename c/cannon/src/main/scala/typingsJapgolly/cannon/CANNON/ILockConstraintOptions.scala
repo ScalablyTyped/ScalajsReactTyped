@@ -1,19 +1,24 @@
 package typingsJapgolly.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ILockConstraintOptions extends js.Object {
+trait ILockConstraintOptions extends StObject {
+  
   var maxForce: js.UndefOr[Double] = js.undefined
 }
-
 object ILockConstraintOptions {
-  @scala.inline
-  def apply(maxForce: Int | Double = null): ILockConstraintOptions = {
+  
+  inline def apply(): ILockConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxForce != null) __obj.updateDynamic("maxForce")(maxForce.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILockConstraintOptions]
   }
+  
+  extension [Self <: ILockConstraintOptions](x: Self) {
+    
+    inline def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
+    
+    inline def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
+  }
 }
-

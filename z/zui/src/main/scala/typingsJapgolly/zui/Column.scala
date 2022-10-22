@@ -1,39 +1,60 @@
 package typingsJapgolly.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Column extends js.Object {
+trait Column extends StObject {
+  
   var colClass: js.UndefOr[String] = js.undefined
+  
   var flex: js.UndefOr[Boolean] = js.undefined
+  
   var ignore: js.UndefOr[Boolean] = js.undefined
+  
   var sort: js.UndefOr[String] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object Column {
-  @scala.inline
-  def apply(
-    colClass: String = null,
-    flex: js.UndefOr[Boolean] = js.undefined,
-    ignore: js.UndefOr[Boolean] = js.undefined,
-    sort: String = null,
-    text: String = null,
-    `type`: String = null,
-    width: Int | Double = null
-  ): Column = {
+  
+  inline def apply(): Column = {
     val __obj = js.Dynamic.literal()
-    if (colClass != null) __obj.updateDynamic("colClass")(colClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
+  
+  extension [Self <: Column](x: Self) {
+    
+    inline def setColClass(value: String): Self = StObject.set(x, "colClass", value.asInstanceOf[js.Any])
+    
+    inline def setColClassUndefined: Self = StObject.set(x, "colClass", js.undefined)
+    
+    inline def setFlex(value: Boolean): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    
+    inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+    
+    inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+    
+    inline def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

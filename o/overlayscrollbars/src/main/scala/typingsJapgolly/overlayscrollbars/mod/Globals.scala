@@ -1,50 +1,93 @@
 package typingsJapgolly.overlayscrollbars.mod
 
-import typingsJapgolly.overlayscrollbars.AnonI
-import typingsJapgolly.overlayscrollbars.AnonXBoolean
-import typingsJapgolly.overlayscrollbars.AnonXNumber
+import typingsJapgolly.overlayscrollbars.anon.I
+import typingsJapgolly.overlayscrollbars.anon.X
+import typingsJapgolly.overlayscrollbars.anon.XBoolean
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Globals extends js.Object {
+trait Globals extends StObject {
+  
   var autoUpdateLoop: Boolean
+  
   var autoUpdateRecommended: Boolean
+  
   var cssCalc: String | Null
-  var nativeScrollbarIsOverlaid: AnonXBoolean
-  var nativeScrollbarSize: AnonXNumber
+  
+  var nativeScrollbarIsOverlaid: XBoolean
+  
+  var nativeScrollbarSize: X
+  
   var nativeScrollbarStyling: Boolean
-  var overlayScrollbarDummySize: AnonXNumber
+  
+  var overlayScrollbarDummySize: X
+  
   var restrictedMeasuring: Boolean
-  var rtlScrollBehavior: AnonI
+  
+  var rtlScrollBehavior: I
+  
   var supportMutationObserver: Boolean
+  
   var supportPassiveEvents: Boolean
+  
   var supportResizeObserver: Boolean
+  
   var supportTransform: Boolean
+  
   var supportTransition: Boolean
 }
-
 object Globals {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     autoUpdateLoop: Boolean,
     autoUpdateRecommended: Boolean,
-    nativeScrollbarIsOverlaid: AnonXBoolean,
-    nativeScrollbarSize: AnonXNumber,
+    nativeScrollbarIsOverlaid: XBoolean,
+    nativeScrollbarSize: X,
     nativeScrollbarStyling: Boolean,
-    overlayScrollbarDummySize: AnonXNumber,
+    overlayScrollbarDummySize: X,
     restrictedMeasuring: Boolean,
-    rtlScrollBehavior: AnonI,
+    rtlScrollBehavior: I,
     supportMutationObserver: Boolean,
     supportPassiveEvents: Boolean,
     supportResizeObserver: Boolean,
     supportTransform: Boolean,
-    supportTransition: Boolean,
-    cssCalc: String = null
+    supportTransition: Boolean
   ): Globals = {
-    val __obj = js.Dynamic.literal(autoUpdateLoop = autoUpdateLoop.asInstanceOf[js.Any], autoUpdateRecommended = autoUpdateRecommended.asInstanceOf[js.Any], nativeScrollbarIsOverlaid = nativeScrollbarIsOverlaid.asInstanceOf[js.Any], nativeScrollbarSize = nativeScrollbarSize.asInstanceOf[js.Any], nativeScrollbarStyling = nativeScrollbarStyling.asInstanceOf[js.Any], overlayScrollbarDummySize = overlayScrollbarDummySize.asInstanceOf[js.Any], restrictedMeasuring = restrictedMeasuring.asInstanceOf[js.Any], rtlScrollBehavior = rtlScrollBehavior.asInstanceOf[js.Any], supportMutationObserver = supportMutationObserver.asInstanceOf[js.Any], supportPassiveEvents = supportPassiveEvents.asInstanceOf[js.Any], supportResizeObserver = supportResizeObserver.asInstanceOf[js.Any], supportTransform = supportTransform.asInstanceOf[js.Any], supportTransition = supportTransition.asInstanceOf[js.Any])
-    if (cssCalc != null) __obj.updateDynamic("cssCalc")(cssCalc.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoUpdateLoop = autoUpdateLoop.asInstanceOf[js.Any], autoUpdateRecommended = autoUpdateRecommended.asInstanceOf[js.Any], nativeScrollbarIsOverlaid = nativeScrollbarIsOverlaid.asInstanceOf[js.Any], nativeScrollbarSize = nativeScrollbarSize.asInstanceOf[js.Any], nativeScrollbarStyling = nativeScrollbarStyling.asInstanceOf[js.Any], overlayScrollbarDummySize = overlayScrollbarDummySize.asInstanceOf[js.Any], restrictedMeasuring = restrictedMeasuring.asInstanceOf[js.Any], rtlScrollBehavior = rtlScrollBehavior.asInstanceOf[js.Any], supportMutationObserver = supportMutationObserver.asInstanceOf[js.Any], supportPassiveEvents = supportPassiveEvents.asInstanceOf[js.Any], supportResizeObserver = supportResizeObserver.asInstanceOf[js.Any], supportTransform = supportTransform.asInstanceOf[js.Any], supportTransition = supportTransition.asInstanceOf[js.Any], cssCalc = null)
     __obj.asInstanceOf[Globals]
   }
+  
+  extension [Self <: Globals](x: Self) {
+    
+    inline def setAutoUpdateLoop(value: Boolean): Self = StObject.set(x, "autoUpdateLoop", value.asInstanceOf[js.Any])
+    
+    inline def setAutoUpdateRecommended(value: Boolean): Self = StObject.set(x, "autoUpdateRecommended", value.asInstanceOf[js.Any])
+    
+    inline def setCssCalc(value: String): Self = StObject.set(x, "cssCalc", value.asInstanceOf[js.Any])
+    
+    inline def setCssCalcNull: Self = StObject.set(x, "cssCalc", null)
+    
+    inline def setNativeScrollbarIsOverlaid(value: XBoolean): Self = StObject.set(x, "nativeScrollbarIsOverlaid", value.asInstanceOf[js.Any])
+    
+    inline def setNativeScrollbarSize(value: X): Self = StObject.set(x, "nativeScrollbarSize", value.asInstanceOf[js.Any])
+    
+    inline def setNativeScrollbarStyling(value: Boolean): Self = StObject.set(x, "nativeScrollbarStyling", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayScrollbarDummySize(value: X): Self = StObject.set(x, "overlayScrollbarDummySize", value.asInstanceOf[js.Any])
+    
+    inline def setRestrictedMeasuring(value: Boolean): Self = StObject.set(x, "restrictedMeasuring", value.asInstanceOf[js.Any])
+    
+    inline def setRtlScrollBehavior(value: I): Self = StObject.set(x, "rtlScrollBehavior", value.asInstanceOf[js.Any])
+    
+    inline def setSupportMutationObserver(value: Boolean): Self = StObject.set(x, "supportMutationObserver", value.asInstanceOf[js.Any])
+    
+    inline def setSupportPassiveEvents(value: Boolean): Self = StObject.set(x, "supportPassiveEvents", value.asInstanceOf[js.Any])
+    
+    inline def setSupportResizeObserver(value: Boolean): Self = StObject.set(x, "supportResizeObserver", value.asInstanceOf[js.Any])
+    
+    inline def setSupportTransform(value: Boolean): Self = StObject.set(x, "supportTransform", value.asInstanceOf[js.Any])
+    
+    inline def setSupportTransition(value: Boolean): Self = StObject.set(x, "supportTransition", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -2,370 +2,507 @@ package typingsJapgolly.senchaTouch.Ext.data
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.senchaTouch.Ext.Array
 import typingsJapgolly.senchaTouch.Ext.IBase
-import typingsJapgolly.senchaTouch.Ext.IClass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IRequest extends IBase {
+trait IRequest
+  extends StObject
+     with IBase {
+  
   /** [Config Option] (String) */
   var action: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var callbackKey: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var disableCaching: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Returns the value of action
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getAction: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns the value of args
-  		* @returns Object
-  		*/
-  var getArgs: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getArgs: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of callback
-  		* @returns Object
-  		*/
-  var getCallback: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getCallback: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of callbackKey
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getCallbackKey: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns the value of directFn
-  		* @returns Object
-  		*/
-  var getDirectFn: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getDirectFn: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of disableCaching
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getDisableCaching: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Returns the value of headers
-  		* @returns Object
-  		*/
-  var getHeaders: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getHeaders: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of jsonData
-  		* @returns Object
-  		*/
-  var getJsonData: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getJsonData: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of method
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getMethod: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns the value of operation
-  		* @returns Ext.data.Operation
-  		*/
+    * @returns Ext.data.Operation
+    */
   var getOperation: js.UndefOr[js.Function0[IOperation]] = js.undefined
+  
   /** [Method] Returns the value of params
-  		* @returns Object
-  		*/
-  var getParams: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getParams: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of password
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getPassword: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns the value of proxy
-  		* @returns Ext.data.proxy.Proxy
-  		*/
+    * @returns Ext.data.proxy.Proxy
+    */
   var getProxy: js.UndefOr[js.Function0[typingsJapgolly.senchaTouch.Ext.data.proxy.IProxy]] = js.undefined
+  
   /** [Method] Returns the value of records
-  		* @returns Object
-  		*/
-  var getRecords: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getRecords: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of scope
-  		* @returns Object
-  		*/
-  var getScope: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getScope: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of timeout
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getTimeout: js.UndefOr[js.Function0[Double]] = js.undefined
+  
   /** [Method] Returns the value of url
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns the value of useDefaultXhrHeader
-  		* @returns Object
-  		*/
-  var getUseDefaultXhrHeader: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getUseDefaultXhrHeader: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of username
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getUsername: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns the value of withCredentials
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getWithCredentials: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Returns the value of xmlData
-  		* @returns Object
-  		*/
-  var getXmlData: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getXmlData: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Config Option] (Object) */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Object) */
-  var jsonData: js.UndefOr[js.Any] = js.undefined
+  var jsonData: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Ext.data.JsonP) */
   var jsonp: js.UndefOr[IJsonP] = js.undefined
+  
   /** [Config Option] (String) */
   var method: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Ext.data.Operation) */
   var operation: js.UndefOr[IOperation] = js.undefined
+  
   /** [Config Option] (Object) */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String) */
   var password: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Ext.data.proxy.Proxy) */
   var proxy: js.UndefOr[typingsJapgolly.senchaTouch.Ext.data.proxy.IProxy] = js.undefined
+  
   /** [Method] Sets the value of action
-  		* @param action String The new value.
-  		*/
+    * @param action String The new value.
+    */
   var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of args
-  		* @param args Object The new value.
-  		*/
-  var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param args Object The new value.
+    */
+  var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of callback
-  		* @param callback Object The new value.
-  		*/
-  var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param callback Object The new value.
+    */
+  var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of callbackKey
-  		* @param callbackKey String The new value.
-  		*/
+    * @param callbackKey String The new value.
+    */
   var setCallbackKey: js.UndefOr[js.Function1[/* callbackKey */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of directFn
-  		* @param directFn Object The new value.
-  		*/
-  var setDirectFn: js.UndefOr[js.Function1[/* directFn */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param directFn Object The new value.
+    */
+  var setDirectFn: js.UndefOr[js.Function1[/* directFn */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of disableCaching
-  		* @param disableCaching Boolean The new value.
-  		*/
+    * @param disableCaching Boolean The new value.
+    */
   var setDisableCaching: js.UndefOr[js.Function1[/* disableCaching */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Sets the value of headers
-  		* @param headers Object The new value.
-  		*/
-  var setHeaders: js.UndefOr[js.Function1[/* headers */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param headers Object The new value.
+    */
+  var setHeaders: js.UndefOr[js.Function1[/* headers */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of jsonData
-  		* @param jsonData Object The new value.
-  		*/
-  var setJsonData: js.UndefOr[js.Function1[/* jsonData */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param jsonData Object The new value.
+    */
+  var setJsonData: js.UndefOr[js.Function1[/* jsonData */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of method
-  		* @param method String The new value.
-  		*/
+    * @param method String The new value.
+    */
   var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of operation
-  		* @param operation Ext.data.Operation The new value.
-  		*/
+    * @param operation Ext.data.Operation The new value.
+    */
   var setOperation: js.UndefOr[js.Function1[/* operation */ js.UndefOr[IOperation], Unit]] = js.undefined
+  
   /** [Method] Sets the value of params
-  		* @param params Object The new value.
-  		*/
-  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param params Object The new value.
+    */
+  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of password
-  		* @param password String The new value.
-  		*/
+    * @param password String The new value.
+    */
   var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of proxy
-  		* @param proxy Ext.data.proxy.Proxy The new value.
-  		*/
+    * @param proxy Ext.data.proxy.Proxy The new value.
+    */
   var setProxy: js.UndefOr[
     js.Function1[/* proxy */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.data.proxy.IProxy], Unit]
   ] = js.undefined
+  
   /** [Method] Sets the value of records
-  		* @param records Object The new value.
-  		*/
-  var setRecords: js.UndefOr[js.Function1[/* records */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param records Object The new value.
+    */
+  var setRecords: js.UndefOr[js.Function1[/* records */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of scope
-  		* @param scope Object The new value.
-  		*/
-  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param scope Object The new value.
+    */
+  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of timeout
-  		* @param timeout Number The new value.
-  		*/
+    * @param timeout Number The new value.
+    */
   var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.undefined
+  
   /** [Method] Sets the value of url
-  		* @param url String The new value.
-  		*/
+    * @param url String The new value.
+    */
   var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of useDefaultXhrHeader
-  		* @param useDefaultXhrHeader Object The new value.
-  		*/
-  var setUseDefaultXhrHeader: js.UndefOr[js.Function1[/* useDefaultXhrHeader */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param useDefaultXhrHeader Object The new value.
+    */
+  var setUseDefaultXhrHeader: js.UndefOr[js.Function1[/* useDefaultXhrHeader */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of username
-  		* @param username String The new value.
-  		*/
+    * @param username String The new value.
+    */
   var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of withCredentials
-  		* @param withCredentials Boolean The new value.
-  		*/
+    * @param withCredentials Boolean The new value.
+    */
   var setWithCredentials: js.UndefOr[js.Function1[/* withCredentials */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Sets the value of xmlData
-  		* @param xmlData Object The new value.
-  		*/
-  var setXmlData: js.UndefOr[js.Function1[/* xmlData */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param xmlData Object The new value.
+    */
+  var setXmlData: js.UndefOr[js.Function1[/* xmlData */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Config Option] (String) */
   var url: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var username: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var withCredentials: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Object) */
-  var xmlData: js.UndefOr[js.Any] = js.undefined
+  var xmlData: js.UndefOr[Any] = js.undefined
 }
-
 object IRequest {
-  @scala.inline
-  def apply(
-    action: String = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callParent: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callbackKey: String = null,
-    config: js.Any = null,
-    destroy: js.UndefOr[Callback] = js.undefined,
-    disableCaching: js.UndefOr[Boolean] = js.undefined,
-    extend: String = null,
-    getAction: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getArgs: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getCallback: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getCallbackKey: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getDirectFn: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getDisableCaching: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    getHeaders: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getInitialConfig: /* name */ js.UndefOr[String] => CallbackTo[js.Any] = null,
-    getJsonData: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getMethod: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getOperation: js.UndefOr[CallbackTo[IOperation]] = js.undefined,
-    getParams: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getPassword: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getProxy: js.UndefOr[CallbackTo[typingsJapgolly.senchaTouch.Ext.data.proxy.IProxy]] = js.undefined,
-    getRecords: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getScope: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getTimeout: js.UndefOr[CallbackTo[Double]] = js.undefined,
-    getUrl: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getUseDefaultXhrHeader: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getUsername: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getWithCredentials: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    getXmlData: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    headers: js.Any = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    jsonData: js.Any = null,
-    jsonp: IJsonP = null,
-    method: String = null,
-    mixins: js.Any = null,
-    operation: IOperation = null,
-    params: js.Any = null,
-    password: String = null,
-    platformConfig: js.Any = null,
-    proxy: typingsJapgolly.senchaTouch.Ext.data.proxy.IProxy = null,
-    self: IClass = null,
-    setAction: /* action */ js.UndefOr[String] => Callback = null,
-    setArgs: /* args */ js.UndefOr[js.Any] => Callback = null,
-    setCallback: /* callback */ js.UndefOr[js.Any] => Callback = null,
-    setCallbackKey: /* callbackKey */ js.UndefOr[String] => Callback = null,
-    setDirectFn: /* directFn */ js.UndefOr[js.Any] => Callback = null,
-    setDisableCaching: /* disableCaching */ js.UndefOr[Boolean] => Callback = null,
-    setHeaders: /* headers */ js.UndefOr[js.Any] => Callback = null,
-    setJsonData: /* jsonData */ js.UndefOr[js.Any] => Callback = null,
-    setMethod: /* method */ js.UndefOr[String] => Callback = null,
-    setOperation: /* operation */ js.UndefOr[IOperation] => Callback = null,
-    setParams: /* params */ js.UndefOr[js.Any] => Callback = null,
-    setPassword: /* password */ js.UndefOr[String] => Callback = null,
-    setProxy: /* proxy */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.data.proxy.IProxy] => Callback = null,
-    setRecords: /* records */ js.UndefOr[js.Any] => Callback = null,
-    setScope: /* scope */ js.UndefOr[js.Any] => Callback = null,
-    setTimeout: /* timeout */ js.UndefOr[Double] => Callback = null,
-    setUrl: /* url */ js.UndefOr[String] => Callback = null,
-    setUseDefaultXhrHeader: /* useDefaultXhrHeader */ js.UndefOr[js.Any] => Callback = null,
-    setUsername: /* username */ js.UndefOr[String] => Callback = null,
-    setWithCredentials: /* withCredentials */ js.UndefOr[Boolean] => Callback = null,
-    setXmlData: /* xmlData */ js.UndefOr[js.Any] => Callback = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    url: String = null,
-    username: String = null,
-    uses: Array = null,
-    withCredentials: js.UndefOr[Boolean] = js.undefined,
-    xmlData: js.Any = null
-  ): IRequest = {
+  
+  inline def apply(): IRequest = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callOverridden(t0).runNow()))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callParent(t0).runNow()))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callSuper(t0).runNow()))
-    if (callbackKey != null) __obj.updateDynamic("callbackKey")(callbackKey.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    destroy.foreach(p => __obj.updateDynamic("destroy")(p.toJsFn))
-    if (!js.isUndefined(disableCaching)) __obj.updateDynamic("disableCaching")(disableCaching.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    getAction.foreach(p => __obj.updateDynamic("getAction")(p.toJsFn))
-    getArgs.foreach(p => __obj.updateDynamic("getArgs")(p.toJsFn))
-    getCallback.foreach(p => __obj.updateDynamic("getCallback")(p.toJsFn))
-    getCallbackKey.foreach(p => __obj.updateDynamic("getCallbackKey")(p.toJsFn))
-    getDirectFn.foreach(p => __obj.updateDynamic("getDirectFn")(p.toJsFn))
-    getDisableCaching.foreach(p => __obj.updateDynamic("getDisableCaching")(p.toJsFn))
-    getHeaders.foreach(p => __obj.updateDynamic("getHeaders")(p.toJsFn))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1((t0: /* name */ js.UndefOr[java.lang.String]) => getInitialConfig(t0).runNow()))
-    getJsonData.foreach(p => __obj.updateDynamic("getJsonData")(p.toJsFn))
-    getMethod.foreach(p => __obj.updateDynamic("getMethod")(p.toJsFn))
-    getOperation.foreach(p => __obj.updateDynamic("getOperation")(p.toJsFn))
-    getParams.foreach(p => __obj.updateDynamic("getParams")(p.toJsFn))
-    getPassword.foreach(p => __obj.updateDynamic("getPassword")(p.toJsFn))
-    getProxy.foreach(p => __obj.updateDynamic("getProxy")(p.toJsFn))
-    getRecords.foreach(p => __obj.updateDynamic("getRecords")(p.toJsFn))
-    getScope.foreach(p => __obj.updateDynamic("getScope")(p.toJsFn))
-    getTimeout.foreach(p => __obj.updateDynamic("getTimeout")(p.toJsFn))
-    getUrl.foreach(p => __obj.updateDynamic("getUrl")(p.toJsFn))
-    getUseDefaultXhrHeader.foreach(p => __obj.updateDynamic("getUseDefaultXhrHeader")(p.toJsFn))
-    getUsername.foreach(p => __obj.updateDynamic("getUsername")(p.toJsFn))
-    getWithCredentials.foreach(p => __obj.updateDynamic("getWithCredentials")(p.toJsFn))
-    getXmlData.foreach(p => __obj.updateDynamic("getXmlData")(p.toJsFn))
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1((t0: /* instanceConfig */ js.UndefOr[js.Any]) => initConfig(t0).runNow()))
-    if (jsonData != null) __obj.updateDynamic("jsonData")(jsonData.asInstanceOf[js.Any])
-    if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setAction != null) __obj.updateDynamic("setAction")(js.Any.fromFunction1((t0: /* action */ js.UndefOr[java.lang.String]) => setAction(t0).runNow()))
-    if (setArgs != null) __obj.updateDynamic("setArgs")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => setArgs(t0).runNow()))
-    if (setCallback != null) __obj.updateDynamic("setCallback")(js.Any.fromFunction1((t0: /* callback */ js.UndefOr[js.Any]) => setCallback(t0).runNow()))
-    if (setCallbackKey != null) __obj.updateDynamic("setCallbackKey")(js.Any.fromFunction1((t0: /* callbackKey */ js.UndefOr[java.lang.String]) => setCallbackKey(t0).runNow()))
-    if (setDirectFn != null) __obj.updateDynamic("setDirectFn")(js.Any.fromFunction1((t0: /* directFn */ js.UndefOr[js.Any]) => setDirectFn(t0).runNow()))
-    if (setDisableCaching != null) __obj.updateDynamic("setDisableCaching")(js.Any.fromFunction1((t0: /* disableCaching */ js.UndefOr[scala.Boolean]) => setDisableCaching(t0).runNow()))
-    if (setHeaders != null) __obj.updateDynamic("setHeaders")(js.Any.fromFunction1((t0: /* headers */ js.UndefOr[js.Any]) => setHeaders(t0).runNow()))
-    if (setJsonData != null) __obj.updateDynamic("setJsonData")(js.Any.fromFunction1((t0: /* jsonData */ js.UndefOr[js.Any]) => setJsonData(t0).runNow()))
-    if (setMethod != null) __obj.updateDynamic("setMethod")(js.Any.fromFunction1((t0: /* method */ js.UndefOr[java.lang.String]) => setMethod(t0).runNow()))
-    if (setOperation != null) __obj.updateDynamic("setOperation")(js.Any.fromFunction1((t0: /* operation */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.data.IOperation]) => setOperation(t0).runNow()))
-    if (setParams != null) __obj.updateDynamic("setParams")(js.Any.fromFunction1((t0: /* params */ js.UndefOr[js.Any]) => setParams(t0).runNow()))
-    if (setPassword != null) __obj.updateDynamic("setPassword")(js.Any.fromFunction1((t0: /* password */ js.UndefOr[java.lang.String]) => setPassword(t0).runNow()))
-    if (setProxy != null) __obj.updateDynamic("setProxy")(js.Any.fromFunction1((t0: /* proxy */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.data.proxy.IProxy]) => setProxy(t0).runNow()))
-    if (setRecords != null) __obj.updateDynamic("setRecords")(js.Any.fromFunction1((t0: /* records */ js.UndefOr[js.Any]) => setRecords(t0).runNow()))
-    if (setScope != null) __obj.updateDynamic("setScope")(js.Any.fromFunction1((t0: /* scope */ js.UndefOr[js.Any]) => setScope(t0).runNow()))
-    if (setTimeout != null) __obj.updateDynamic("setTimeout")(js.Any.fromFunction1((t0: /* timeout */ js.UndefOr[scala.Double]) => setTimeout(t0).runNow()))
-    if (setUrl != null) __obj.updateDynamic("setUrl")(js.Any.fromFunction1((t0: /* url */ js.UndefOr[java.lang.String]) => setUrl(t0).runNow()))
-    if (setUseDefaultXhrHeader != null) __obj.updateDynamic("setUseDefaultXhrHeader")(js.Any.fromFunction1((t0: /* useDefaultXhrHeader */ js.UndefOr[js.Any]) => setUseDefaultXhrHeader(t0).runNow()))
-    if (setUsername != null) __obj.updateDynamic("setUsername")(js.Any.fromFunction1((t0: /* username */ js.UndefOr[java.lang.String]) => setUsername(t0).runNow()))
-    if (setWithCredentials != null) __obj.updateDynamic("setWithCredentials")(js.Any.fromFunction1((t0: /* withCredentials */ js.UndefOr[scala.Boolean]) => setWithCredentials(t0).runNow()))
-    if (setXmlData != null) __obj.updateDynamic("setXmlData")(js.Any.fromFunction1((t0: /* xmlData */ js.UndefOr[js.Any]) => setXmlData(t0).runNow()))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
-    if (xmlData != null) __obj.updateDynamic("xmlData")(xmlData.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRequest]
   }
+  
+  extension [Self <: IRequest](x: Self) {
+    
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    
+    inline def setCallbackKey(value: String): Self = StObject.set(x, "callbackKey", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackKeyUndefined: Self = StObject.set(x, "callbackKey", js.undefined)
+    
+    inline def setDisableCaching(value: Boolean): Self = StObject.set(x, "disableCaching", value.asInstanceOf[js.Any])
+    
+    inline def setDisableCachingUndefined: Self = StObject.set(x, "disableCaching", js.undefined)
+    
+    inline def setGetAction(value: CallbackTo[String]): Self = StObject.set(x, "getAction", value.toJsFn)
+    
+    inline def setGetActionUndefined: Self = StObject.set(x, "getAction", js.undefined)
+    
+    inline def setGetArgs(value: CallbackTo[Any]): Self = StObject.set(x, "getArgs", value.toJsFn)
+    
+    inline def setGetArgsUndefined: Self = StObject.set(x, "getArgs", js.undefined)
+    
+    inline def setGetCallback(value: CallbackTo[Any]): Self = StObject.set(x, "getCallback", value.toJsFn)
+    
+    inline def setGetCallbackKey(value: CallbackTo[String]): Self = StObject.set(x, "getCallbackKey", value.toJsFn)
+    
+    inline def setGetCallbackKeyUndefined: Self = StObject.set(x, "getCallbackKey", js.undefined)
+    
+    inline def setGetCallbackUndefined: Self = StObject.set(x, "getCallback", js.undefined)
+    
+    inline def setGetDirectFn(value: CallbackTo[Any]): Self = StObject.set(x, "getDirectFn", value.toJsFn)
+    
+    inline def setGetDirectFnUndefined: Self = StObject.set(x, "getDirectFn", js.undefined)
+    
+    inline def setGetDisableCaching(value: CallbackTo[Boolean]): Self = StObject.set(x, "getDisableCaching", value.toJsFn)
+    
+    inline def setGetDisableCachingUndefined: Self = StObject.set(x, "getDisableCaching", js.undefined)
+    
+    inline def setGetHeaders(value: CallbackTo[Any]): Self = StObject.set(x, "getHeaders", value.toJsFn)
+    
+    inline def setGetHeadersUndefined: Self = StObject.set(x, "getHeaders", js.undefined)
+    
+    inline def setGetJsonData(value: CallbackTo[Any]): Self = StObject.set(x, "getJsonData", value.toJsFn)
+    
+    inline def setGetJsonDataUndefined: Self = StObject.set(x, "getJsonData", js.undefined)
+    
+    inline def setGetMethod(value: CallbackTo[String]): Self = StObject.set(x, "getMethod", value.toJsFn)
+    
+    inline def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
+    
+    inline def setGetOperation(value: CallbackTo[IOperation]): Self = StObject.set(x, "getOperation", value.toJsFn)
+    
+    inline def setGetOperationUndefined: Self = StObject.set(x, "getOperation", js.undefined)
+    
+    inline def setGetParams(value: CallbackTo[Any]): Self = StObject.set(x, "getParams", value.toJsFn)
+    
+    inline def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
+    
+    inline def setGetPassword(value: CallbackTo[String]): Self = StObject.set(x, "getPassword", value.toJsFn)
+    
+    inline def setGetPasswordUndefined: Self = StObject.set(x, "getPassword", js.undefined)
+    
+    inline def setGetProxy(value: CallbackTo[typingsJapgolly.senchaTouch.Ext.data.proxy.IProxy]): Self = StObject.set(x, "getProxy", value.toJsFn)
+    
+    inline def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
+    
+    inline def setGetRecords(value: CallbackTo[Any]): Self = StObject.set(x, "getRecords", value.toJsFn)
+    
+    inline def setGetRecordsUndefined: Self = StObject.set(x, "getRecords", js.undefined)
+    
+    inline def setGetScope(value: CallbackTo[Any]): Self = StObject.set(x, "getScope", value.toJsFn)
+    
+    inline def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
+    
+    inline def setGetTimeout(value: CallbackTo[Double]): Self = StObject.set(x, "getTimeout", value.toJsFn)
+    
+    inline def setGetTimeoutUndefined: Self = StObject.set(x, "getTimeout", js.undefined)
+    
+    inline def setGetUrl(value: CallbackTo[String]): Self = StObject.set(x, "getUrl", value.toJsFn)
+    
+    inline def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
+    
+    inline def setGetUseDefaultXhrHeader(value: CallbackTo[Any]): Self = StObject.set(x, "getUseDefaultXhrHeader", value.toJsFn)
+    
+    inline def setGetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "getUseDefaultXhrHeader", js.undefined)
+    
+    inline def setGetUsername(value: CallbackTo[String]): Self = StObject.set(x, "getUsername", value.toJsFn)
+    
+    inline def setGetUsernameUndefined: Self = StObject.set(x, "getUsername", js.undefined)
+    
+    inline def setGetWithCredentials(value: CallbackTo[Boolean]): Self = StObject.set(x, "getWithCredentials", value.toJsFn)
+    
+    inline def setGetWithCredentialsUndefined: Self = StObject.set(x, "getWithCredentials", js.undefined)
+    
+    inline def setGetXmlData(value: CallbackTo[Any]): Self = StObject.set(x, "getXmlData", value.toJsFn)
+    
+    inline def setGetXmlDataUndefined: Self = StObject.set(x, "getXmlData", js.undefined)
+    
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setJsonData(value: Any): Self = StObject.set(x, "jsonData", value.asInstanceOf[js.Any])
+    
+    inline def setJsonDataUndefined: Self = StObject.set(x, "jsonData", js.undefined)
+    
+    inline def setJsonp(value: IJsonP): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+    
+    inline def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setOperation(value: IOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    
+    inline def setProxy(value: typingsJapgolly.senchaTouch.Ext.data.proxy.IProxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    
+    inline def setSetAction(value: /* action */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setAction", js.Any.fromFunction1((t0: /* action */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetActionUndefined: Self = StObject.set(x, "setAction", js.undefined)
+    
+    inline def setSetArgs(value: /* args */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setArgs", js.Any.fromFunction1((t0: /* args */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetArgsUndefined: Self = StObject.set(x, "setArgs", js.undefined)
+    
+    inline def setSetCallback(value: /* callback */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setCallback", js.Any.fromFunction1((t0: /* callback */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetCallbackKey(value: /* callbackKey */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setCallbackKey", js.Any.fromFunction1((t0: /* callbackKey */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetCallbackKeyUndefined: Self = StObject.set(x, "setCallbackKey", js.undefined)
+    
+    inline def setSetCallbackUndefined: Self = StObject.set(x, "setCallback", js.undefined)
+    
+    inline def setSetDirectFn(value: /* directFn */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setDirectFn", js.Any.fromFunction1((t0: /* directFn */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetDirectFnUndefined: Self = StObject.set(x, "setDirectFn", js.undefined)
+    
+    inline def setSetDisableCaching(value: /* disableCaching */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setDisableCaching", js.Any.fromFunction1((t0: /* disableCaching */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetDisableCachingUndefined: Self = StObject.set(x, "setDisableCaching", js.undefined)
+    
+    inline def setSetHeaders(value: /* headers */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1((t0: /* headers */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
+    
+    inline def setSetJsonData(value: /* jsonData */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setJsonData", js.Any.fromFunction1((t0: /* jsonData */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetJsonDataUndefined: Self = StObject.set(x, "setJsonData", js.undefined)
+    
+    inline def setSetMethod(value: /* method */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setMethod", js.Any.fromFunction1((t0: /* method */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetMethodUndefined: Self = StObject.set(x, "setMethod", js.undefined)
+    
+    inline def setSetOperation(value: /* operation */ js.UndefOr[IOperation] => Callback): Self = StObject.set(x, "setOperation", js.Any.fromFunction1((t0: /* operation */ js.UndefOr[IOperation]) => value(t0).runNow()))
+    
+    inline def setSetOperationUndefined: Self = StObject.set(x, "setOperation", js.undefined)
+    
+    inline def setSetParams(value: /* params */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setParams", js.Any.fromFunction1((t0: /* params */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetParamsUndefined: Self = StObject.set(x, "setParams", js.undefined)
+    
+    inline def setSetPassword(value: /* password */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setPassword", js.Any.fromFunction1((t0: /* password */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetPasswordUndefined: Self = StObject.set(x, "setPassword", js.undefined)
+    
+    inline def setSetProxy(value: /* proxy */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.data.proxy.IProxy] => Callback): Self = StObject.set(x, "setProxy", js.Any.fromFunction1((t0: /* proxy */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.data.proxy.IProxy]) => value(t0).runNow()))
+    
+    inline def setSetProxyUndefined: Self = StObject.set(x, "setProxy", js.undefined)
+    
+    inline def setSetRecords(value: /* records */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setRecords", js.Any.fromFunction1((t0: /* records */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetRecordsUndefined: Self = StObject.set(x, "setRecords", js.undefined)
+    
+    inline def setSetScope(value: /* scope */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setScope", js.Any.fromFunction1((t0: /* scope */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
+    
+    inline def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Callback): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1((t0: /* timeout */ js.UndefOr[Double]) => value(t0).runNow()))
+    
+    inline def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
+    
+    inline def setSetUrl(value: /* url */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setUrl", js.Any.fromFunction1((t0: /* url */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
+    
+    inline def setSetUseDefaultXhrHeader(value: /* useDefaultXhrHeader */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setUseDefaultXhrHeader", js.Any.fromFunction1((t0: /* useDefaultXhrHeader */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "setUseDefaultXhrHeader", js.undefined)
+    
+    inline def setSetUsername(value: /* username */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setUsername", js.Any.fromFunction1((t0: /* username */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetUsernameUndefined: Self = StObject.set(x, "setUsername", js.undefined)
+    
+    inline def setSetWithCredentials(value: /* withCredentials */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setWithCredentials", js.Any.fromFunction1((t0: /* withCredentials */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetWithCredentialsUndefined: Self = StObject.set(x, "setWithCredentials", js.undefined)
+    
+    inline def setSetXmlData(value: /* xmlData */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setXmlData", js.Any.fromFunction1((t0: /* xmlData */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetXmlDataUndefined: Self = StObject.set(x, "setXmlData", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    
+    inline def setXmlData(value: Any): Self = StObject.set(x, "xmlData", value.asInstanceOf[js.Any])
+    
+    inline def setXmlDataUndefined: Self = StObject.set(x, "xmlData", js.undefined)
+  }
 }
-

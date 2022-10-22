@@ -1,32 +1,25 @@
 package typingsJapgolly.navermaps.naver.maps
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Animation extends js.Object
-
+sealed trait Animation extends StObject
 /**
   * Members
   */
 @JSGlobal("naver.maps.Animation")
 @js.native
-object Animation extends js.Object {
-  @js.native
-  sealed trait BOUNCE extends Animation
+object Animation extends StObject {
   
   @js.native
-  sealed trait DROP extends Animation
+  sealed trait BOUNCE
+    extends StObject
+       with Animation
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Animation with Double] = js.native
-  /* 1 */ @js.native
-  object BOUNCE extends TopLevel[BOUNCE with Double]
-  
-  /* 0 */ @js.native
-  object DROP extends TopLevel[DROP with Double]
-  
+  @js.native
+  sealed trait DROP
+    extends StObject
+       with Animation
 }
-

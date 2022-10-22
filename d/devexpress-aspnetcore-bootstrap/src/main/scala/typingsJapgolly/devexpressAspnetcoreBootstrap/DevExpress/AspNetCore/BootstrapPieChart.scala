@@ -14,16 +14,31 @@ import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstr
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.pointSelectionChanged
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.tooltipHidden
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.tooltipShown
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapPieChart")
 @js.native
-class BootstrapPieChart () extends Control {
+trait BootstrapPieChart
+  extends StObject
+     with Control {
+  
   def exportTo(format: String, fileName: String): Unit = js.native
-  def getDataSource(): js.Any = js.native
-  def getInstance(): js.Any = js.native
+  
+  def getDataSource(): Any = js.native
+  
+  def getInstance(): Any = js.native
+  
+  def off(
+    eventName: Unit,
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[
+        BootstrapChartElementActionEventArgs | BootstrapChartElementClickEventArgs | BootstrapChartErrorEventArgs | BootstrapChartEventArgsBase | BootstrapChartExportEventArgs | BootstrapChartOptionChangedEventArgs
+      ], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_disposing(eventName: disposing): this.type = js.native
   @JSName("off")
@@ -150,6 +165,7 @@ class BootstrapPieChart () extends Control {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("on")
   def on_disposing(
     eventName: disposing,
@@ -248,6 +264,7 @@ class BootstrapPieChart () extends Control {
       Unit
     ]
   ): this.type = js.native
+  
   @JSName("once")
   def once_disposing(
     eventName: disposing,
@@ -346,8 +363,10 @@ class BootstrapPieChart () extends Control {
       Unit
     ]
   ): this.type = js.native
+  
   def print(): Unit = js.native
-  def setDataSource(dataSource: js.Any): Unit = js.native
-  def setOptions(options: js.Any): Unit = js.native
+  
+  def setDataSource(dataSource: Any): Unit = js.native
+  
+  def setOptions(options: Any): Unit = js.native
 }
-

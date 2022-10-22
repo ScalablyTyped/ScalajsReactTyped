@@ -1,29 +1,31 @@
 package typingsJapgolly.protobufjs.minimalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs/minimal", "Writer")
 @js.native
 /** Constructs a new writer instance. */
-class Writer ()
+open class Writer ()
   extends typingsJapgolly.protobufjs.mod.Writer
-
 /* static members */
-@JSImport("protobufjs/minimal", "Writer")
-@js.native
-object Writer extends js.Object {
+object Writer {
+  
+  @JSImport("protobufjs/minimal", "Writer")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Allocates a buffer of the specified size.
     * @param size Buffer size
     * @returns Buffer
     */
-  def alloc(size: Double): scala.scalajs.js.typedarray.Uint8Array = js.native
+  inline def alloc(size: Double): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  
   /**
     * Creates a new writer.
     * @returns A {@link BufferWriter} when Buffers are supported, otherwise a {@link Writer}
     */
-  def create(): typingsJapgolly.protobufjs.mod.BufferWriter | typingsJapgolly.protobufjs.mod.Writer = js.native
+  inline def create(): typingsJapgolly.protobufjs.mod.BufferWriter | typingsJapgolly.protobufjs.mod.Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typingsJapgolly.protobufjs.mod.BufferWriter | typingsJapgolly.protobufjs.mod.Writer]
 }
-

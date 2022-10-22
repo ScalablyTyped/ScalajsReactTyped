@@ -1,29 +1,93 @@
 package typingsJapgolly.three.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.three.shaderLibMod.Shader
+import typingsJapgolly.three.srcRenderersShadersShaderLibMod.Shader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three", "ShaderLib")
-@js.native
-object ShaderLib extends /* name */ StringDictionary[Shader] {
-  var background: Shader = js.native
-  var basic: Shader = js.native
-  var cube: Shader = js.native
-  var dashed: Shader = js.native
-  var depth: Shader = js.native
-  var distanceRGBA: Shader = js.native
-  var equirect: Shader = js.native
-  var lambert: Shader = js.native
-  var matcap: Shader = js.native
-  var normal: Shader = js.native
-  var phong: Shader = js.native
-  var physical: Shader = js.native
-  var points: Shader = js.native
-  var shadow: Shader = js.native
-  var sprite: Shader = js.native
-  var standard: Shader = js.native
+object ShaderLib {
+  
+  @JSImport("three", "ShaderLib")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("three", "ShaderLib.background")
+  @js.native
+  def background: Shader = js.native
+  inline def background_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("background")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.basic")
+  @js.native
+  def basic: Shader = js.native
+  inline def basic_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("basic")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.cube")
+  @js.native
+  def cube: Shader = js.native
+  inline def cube_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cube")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.dashed")
+  @js.native
+  def dashed: Shader = js.native
+  inline def dashed_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dashed")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.depth")
+  @js.native
+  def depth: Shader = js.native
+  inline def depth_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("depth")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.distanceRGBA")
+  @js.native
+  def distanceRGBA: Shader = js.native
+  inline def distanceRGBA_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("distanceRGBA")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.equirect")
+  @js.native
+  def equirect: Shader = js.native
+  inline def equirect_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("equirect")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.lambert")
+  @js.native
+  def lambert: Shader = js.native
+  inline def lambert_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lambert")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.matcap")
+  @js.native
+  def matcap: Shader = js.native
+  inline def matcap_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matcap")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.normal")
+  @js.native
+  def normal: Shader = js.native
+  inline def normal_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.phong")
+  @js.native
+  def phong: Shader = js.native
+  inline def phong_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phong")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.physical")
+  @js.native
+  def physical: Shader = js.native
+  inline def physical_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("physical")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.points")
+  @js.native
+  def points: Shader = js.native
+  inline def points_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("points")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.shadow")
+  @js.native
+  def shadow: Shader = js.native
+  inline def shadow_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shadow")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.sprite")
+  @js.native
+  def sprite: Shader = js.native
+  inline def sprite_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sprite")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderLib.standard")
+  @js.native
+  def standard: Shader = js.native
+  inline def standard_=(x: Shader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("standard")(x.asInstanceOf[js.Any])
 }
-

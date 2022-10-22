@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.Storage.Provider
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReadActivationMode extends js.Object
-
+sealed trait ReadActivationMode extends StObject
 @JSGlobal("Windows.Storage.Provider.ReadActivationMode")
 @js.native
-object ReadActivationMode extends js.Object {
-  @js.native
-  sealed trait beforeAccess extends ReadActivationMode
+object ReadActivationMode extends StObject {
   
   @js.native
-  sealed trait notNeeded extends ReadActivationMode
+  sealed trait beforeAccess
+    extends StObject
+       with ReadActivationMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ReadActivationMode with Double] = js.native
-  /* 1 */ @js.native
-  object beforeAccess extends TopLevel[beforeAccess with Double]
-  
-  /* 0 */ @js.native
-  object notNeeded extends TopLevel[notNeeded with Double]
-  
+  @js.native
+  sealed trait notNeeded
+    extends StObject
+       with ReadActivationMode
 }
-

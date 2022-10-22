@@ -1,28 +1,32 @@
 package typingsJapgolly.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MatcherSubtitleParams extends MatcherLyricsParams {
+trait MatcherSubtitleParams
+  extends StObject
+     with MatcherLyricsParams {
+  
   var f_subtitle_length: js.UndefOr[Double] = js.undefined
+  
   var f_subtitle_length_max_deviation: js.UndefOr[Double] = js.undefined
 }
-
 object MatcherSubtitleParams {
-  @scala.inline
-  def apply(
-    f_subtitle_length: Int | Double = null,
-    f_subtitle_length_max_deviation: Int | Double = null,
-    q_artist: String = null,
-    q_track: String = null
-  ): MatcherSubtitleParams = {
+  
+  inline def apply(): MatcherSubtitleParams = {
     val __obj = js.Dynamic.literal()
-    if (f_subtitle_length != null) __obj.updateDynamic("f_subtitle_length")(f_subtitle_length.asInstanceOf[js.Any])
-    if (f_subtitle_length_max_deviation != null) __obj.updateDynamic("f_subtitle_length_max_deviation")(f_subtitle_length_max_deviation.asInstanceOf[js.Any])
-    if (q_artist != null) __obj.updateDynamic("q_artist")(q_artist.asInstanceOf[js.Any])
-    if (q_track != null) __obj.updateDynamic("q_track")(q_track.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatcherSubtitleParams]
   }
+  
+  extension [Self <: MatcherSubtitleParams](x: Self) {
+    
+    inline def setF_subtitle_length(value: Double): Self = StObject.set(x, "f_subtitle_length", value.asInstanceOf[js.Any])
+    
+    inline def setF_subtitle_lengthUndefined: Self = StObject.set(x, "f_subtitle_length", js.undefined)
+    
+    inline def setF_subtitle_length_max_deviation(value: Double): Self = StObject.set(x, "f_subtitle_length_max_deviation", value.asInstanceOf[js.Any])
+    
+    inline def setF_subtitle_length_max_deviationUndefined: Self = StObject.set(x, "f_subtitle_length_max_deviation", js.undefined)
+  }
 }
-

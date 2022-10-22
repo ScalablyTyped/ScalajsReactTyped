@@ -1,84 +1,152 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockChartValueAxisItem extends js.Object {
-  var axisCrossingValue: js.UndefOr[js.Any | js.Date] = js.undefined
+trait StockChartValueAxisItem extends StObject {
+  
+  var axisCrossingValue: js.UndefOr[Any | js.Date] = js.undefined
+  
   var background: js.UndefOr[String] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var crosshair: js.UndefOr[StockChartValueAxisItemCrosshair] = js.undefined
+  
   var labels: js.UndefOr[StockChartValueAxisItemLabels] = js.undefined
+  
   var line: js.UndefOr[StockChartValueAxisItemLine] = js.undefined
+  
   var majorGridLines: js.UndefOr[StockChartValueAxisItemMajorGridLines] = js.undefined
+  
   var majorTicks: js.UndefOr[StockChartValueAxisItemMajorTicks] = js.undefined
+  
   var majorUnit: js.UndefOr[Double] = js.undefined
+  
   var max: js.UndefOr[Double] = js.undefined
+  
   var min: js.UndefOr[Double] = js.undefined
+  
   var minorGridLines: js.UndefOr[StockChartValueAxisItemMinorGridLines] = js.undefined
+  
   var minorTicks: js.UndefOr[StockChartValueAxisItemMinorTicks] = js.undefined
+  
   var minorUnit: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[js.Any] = js.undefined
+  
+  var name: js.UndefOr[Any] = js.undefined
+  
   var narrowRange: js.UndefOr[Boolean] = js.undefined
+  
   var notes: js.UndefOr[StockChartValueAxisItemNotes] = js.undefined
+  
   var pane: js.UndefOr[String] = js.undefined
+  
   var plotBands: js.UndefOr[js.Array[StockChartValueAxisItemPlotBand]] = js.undefined
+  
   var reverse: js.UndefOr[Boolean] = js.undefined
+  
   var title: js.UndefOr[StockChartValueAxisItemTitle] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object StockChartValueAxisItem {
-  @scala.inline
-  def apply(
-    axisCrossingValue: js.Any | js.Date = null,
-    background: String = null,
-    color: String = null,
-    crosshair: StockChartValueAxisItemCrosshair = null,
-    labels: StockChartValueAxisItemLabels = null,
-    line: StockChartValueAxisItemLine = null,
-    majorGridLines: StockChartValueAxisItemMajorGridLines = null,
-    majorTicks: StockChartValueAxisItemMajorTicks = null,
-    majorUnit: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    minorGridLines: StockChartValueAxisItemMinorGridLines = null,
-    minorTicks: StockChartValueAxisItemMinorTicks = null,
-    minorUnit: Int | Double = null,
-    name: js.Any = null,
-    narrowRange: js.UndefOr[Boolean] = js.undefined,
-    notes: StockChartValueAxisItemNotes = null,
-    pane: String = null,
-    plotBands: js.Array[StockChartValueAxisItemPlotBand] = null,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    title: StockChartValueAxisItemTitle = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): StockChartValueAxisItem = {
+  
+  inline def apply(): StockChartValueAxisItem = {
     val __obj = js.Dynamic.literal()
-    if (axisCrossingValue != null) __obj.updateDynamic("axisCrossingValue")(axisCrossingValue.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (majorGridLines != null) __obj.updateDynamic("majorGridLines")(majorGridLines.asInstanceOf[js.Any])
-    if (majorTicks != null) __obj.updateDynamic("majorTicks")(majorTicks.asInstanceOf[js.Any])
-    if (majorUnit != null) __obj.updateDynamic("majorUnit")(majorUnit.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minorGridLines != null) __obj.updateDynamic("minorGridLines")(minorGridLines.asInstanceOf[js.Any])
-    if (minorTicks != null) __obj.updateDynamic("minorTicks")(minorTicks.asInstanceOf[js.Any])
-    if (minorUnit != null) __obj.updateDynamic("minorUnit")(minorUnit.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(narrowRange)) __obj.updateDynamic("narrowRange")(narrowRange.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (plotBands != null) __obj.updateDynamic("plotBands")(plotBands.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartValueAxisItem]
   }
+  
+  extension [Self <: StockChartValueAxisItem](x: Self) {
+    
+    inline def setAxisCrossingValue(value: Any | js.Date): Self = StObject.set(x, "axisCrossingValue", value.asInstanceOf[js.Any])
+    
+    inline def setAxisCrossingValueUndefined: Self = StObject.set(x, "axisCrossingValue", js.undefined)
+    
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setCrosshair(value: StockChartValueAxisItemCrosshair): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
+    
+    inline def setCrosshairUndefined: Self = StObject.set(x, "crosshair", js.undefined)
+    
+    inline def setLabels(value: StockChartValueAxisItemLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setLine(value: StockChartValueAxisItemLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    
+    inline def setMajorGridLines(value: StockChartValueAxisItemMajorGridLines): Self = StObject.set(x, "majorGridLines", value.asInstanceOf[js.Any])
+    
+    inline def setMajorGridLinesUndefined: Self = StObject.set(x, "majorGridLines", js.undefined)
+    
+    inline def setMajorTicks(value: StockChartValueAxisItemMajorTicks): Self = StObject.set(x, "majorTicks", value.asInstanceOf[js.Any])
+    
+    inline def setMajorTicksUndefined: Self = StObject.set(x, "majorTicks", js.undefined)
+    
+    inline def setMajorUnit(value: Double): Self = StObject.set(x, "majorUnit", value.asInstanceOf[js.Any])
+    
+    inline def setMajorUnitUndefined: Self = StObject.set(x, "majorUnit", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setMinorGridLines(value: StockChartValueAxisItemMinorGridLines): Self = StObject.set(x, "minorGridLines", value.asInstanceOf[js.Any])
+    
+    inline def setMinorGridLinesUndefined: Self = StObject.set(x, "minorGridLines", js.undefined)
+    
+    inline def setMinorTicks(value: StockChartValueAxisItemMinorTicks): Self = StObject.set(x, "minorTicks", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTicksUndefined: Self = StObject.set(x, "minorTicks", js.undefined)
+    
+    inline def setMinorUnit(value: Double): Self = StObject.set(x, "minorUnit", value.asInstanceOf[js.Any])
+    
+    inline def setMinorUnitUndefined: Self = StObject.set(x, "minorUnit", js.undefined)
+    
+    inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNarrowRange(value: Boolean): Self = StObject.set(x, "narrowRange", value.asInstanceOf[js.Any])
+    
+    inline def setNarrowRangeUndefined: Self = StObject.set(x, "narrowRange", js.undefined)
+    
+    inline def setNotes(value: StockChartValueAxisItemNotes): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    
+    inline def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    
+    inline def setPlotBands(value: js.Array[StockChartValueAxisItemPlotBand]): Self = StObject.set(x, "plotBands", value.asInstanceOf[js.Any])
+    
+    inline def setPlotBandsUndefined: Self = StObject.set(x, "plotBands", js.undefined)
+    
+    inline def setPlotBandsVarargs(value: StockChartValueAxisItemPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value*))
+    
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    
+    inline def setTitle(value: StockChartValueAxisItemTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

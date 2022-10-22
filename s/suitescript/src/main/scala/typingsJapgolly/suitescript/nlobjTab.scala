@@ -1,9 +1,9 @@
 package typingsJapgolly.suitescript
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjTab used for scriptable tab or subtab.
@@ -14,11 +14,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait nlobjTab
-  extends /**
+  extends StObject
+     with /**
   *
   * @return
   */
-Instantiable0[/* nlobjTab */ js.Any] {
+Instantiable0[Any] {
+  
   /**
     * set helper text for this tab or subtab.
     *
@@ -30,6 +32,7 @@ Instantiable0[/* nlobjTab */ js.Any] {
     * @return
     */
   def setHelpText(help: String): js.Function0[Unit] = js.native
+  
   /**
     * set the label for this tab or subtab.
     *
@@ -42,4 +45,3 @@ Instantiable0[/* nlobjTab */ js.Any] {
     */
   def setLabel(label: String): js.Function0[Unit] = js.native
 }
-

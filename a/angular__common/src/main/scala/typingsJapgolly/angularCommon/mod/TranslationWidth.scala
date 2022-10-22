@@ -1,45 +1,43 @@
 package typingsJapgolly.angularCommon.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TranslationWidth extends js.Object
-
+sealed trait TranslationWidth extends StObject
 @JSImport("@angular/common", "TranslationWidth")
 @js.native
-object TranslationWidth extends js.Object {
+object TranslationWidth extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[TranslationWidth & Double] = js.native
+  
   /** 3 characters for `en-US`. For example: 'Sun' */
   @js.native
-  sealed trait Abbreviated extends TranslationWidth
+  sealed trait Abbreviated
+    extends StObject
+       with TranslationWidth
+  /* 1 */ val Abbreviated: typingsJapgolly.angularCommon.mod.TranslationWidth.Abbreviated & Double = js.native
   
   /** 1 character for `en-US`. For example: 'S' */
   @js.native
-  sealed trait Narrow extends TranslationWidth
+  sealed trait Narrow
+    extends StObject
+       with TranslationWidth
+  /* 0 */ val Narrow: typingsJapgolly.angularCommon.mod.TranslationWidth.Narrow & Double = js.native
   
   /** 2 characters for `en-US`, For example: "Su" */
   @js.native
-  sealed trait Short extends TranslationWidth
+  sealed trait Short
+    extends StObject
+       with TranslationWidth
+  /* 3 */ val Short: typingsJapgolly.angularCommon.mod.TranslationWidth.Short & Double = js.native
   
   /** Full length for `en-US`. For example: "Sunday" */
   @js.native
-  sealed trait Wide extends TranslationWidth
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TranslationWidth with Double] = js.native
-  /* 1 */ @js.native
-  object Abbreviated extends TopLevel[Abbreviated with Double]
-  
-  /* 0 */ @js.native
-  object Narrow extends TopLevel[Narrow with Double]
-  
-  /* 3 */ @js.native
-  object Short extends TopLevel[Short with Double]
-  
-  /* 2 */ @js.native
-  object Wide extends TopLevel[Wide with Double]
-  
+  sealed trait Wide
+    extends StObject
+       with TranslationWidth
+  /* 2 */ val Wide: typingsJapgolly.angularCommon.mod.TranslationWidth.Wide & Double = js.native
 }
-

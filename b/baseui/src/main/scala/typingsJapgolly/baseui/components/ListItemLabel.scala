@@ -1,45 +1,42 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.listMod.LabelPropsT
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.listTypesMod.LabelOverrides
+import typingsJapgolly.baseui.listTypesMod.LabelProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ListItemLabel {
-  def apply(
-    description: VdomNode = null,
-    sublist: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    LabelPropsT, 
-    MountedWithRawType[LabelPropsT, js.Object, RawMounted[LabelPropsT, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (description != null) __obj.updateDynamic("description")(description.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(sublist)) __obj.updateDynamic("sublist")(sublist.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.baseui.listMod.LabelPropsT, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.listMod.LabelPropsT])(children: _*)
-  }
   @JSImport("baseui/list", "ListItemLabel")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def description(value: VdomNode): this.type = set("description", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def descriptionNull: this.type = set("description", null)
+    
+    inline def descriptionVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("description", js.Array(value*))
+    
+    inline def descriptionVdomElement(value: VdomElement): this.type = set("description", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def overrides(value: LabelOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def sublist(value: Boolean): this.type = set("sublist", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ListItemLabel.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: LabelProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

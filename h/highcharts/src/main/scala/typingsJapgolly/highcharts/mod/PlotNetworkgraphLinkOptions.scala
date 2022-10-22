@@ -1,32 +1,54 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotNetworkgraphLinkOptions extends js.Object {
+trait PlotNetworkgraphLinkOptions extends StObject {
+  
   /**
     * (Highcharts) Color of the link between two nodes.
     */
   var color: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts) A name for the dash style to use for links.
     */
   var dashStyle: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts) Opacity of the link between two nodes.
+    */
+  var opacity: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Width (px) of the link between two nodes.
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object PlotNetworkgraphLinkOptions {
-  @scala.inline
-  def apply(color: String = null, dashStyle: String = null, width: Int | Double = null): PlotNetworkgraphLinkOptions = {
+  
+  inline def apply(): PlotNetworkgraphLinkOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotNetworkgraphLinkOptions]
   }
+  
+  extension [Self <: PlotNetworkgraphLinkOptions](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

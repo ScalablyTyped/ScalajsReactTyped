@@ -10,10 +10,10 @@ HTTP proxying for the masses
 | ------------------ | :-------------: |
 | Full name          | http-proxy |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 1491 |
-| # downloads        | 288568211 |
-| # stars            | 181 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.5361594E7 |
+| # stars            | 12849.0 |
 
 ## Links
 - [Homepage](https://github.com/http-party/node-http-proxy#readme)

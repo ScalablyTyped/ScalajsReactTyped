@@ -1,24 +1,32 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AttendeeBase extends Recipient {
+trait AttendeeBase
+  extends StObject
+     with Recipient {
+  
   /**
     * The type of attendee. The possible values are: required, optional, resource. Currently if the attendee is a person,
     * findMeetingTimes always considers the person is of the Required type.
     */
-  var `type`: js.UndefOr[AttendeeType] = js.undefined
+  var `type`: js.UndefOr[NullableOption[AttendeeType]] = js.undefined
 }
-
 object AttendeeBase {
-  @scala.inline
-  def apply(emailAddress: EmailAddress = null, `type`: AttendeeType = null): AttendeeBase = {
+  
+  inline def apply(): AttendeeBase = {
     val __obj = js.Dynamic.literal()
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttendeeBase]
   }
+  
+  extension [Self <: AttendeeBase](x: Self) {
+    
+    inline def setType(value: NullableOption[AttendeeType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

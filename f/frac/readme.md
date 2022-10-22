@@ -10,10 +10,10 @@ Rational approximation with bounded denominator
 | ------------------ | :-------------: |
 | Full name          | frac |
 | Keywords           | math, fraction, rational, approximation |
-| # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 17237403 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5884586.333333333 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](http://sheetjs.com/opensource)

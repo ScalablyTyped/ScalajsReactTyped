@@ -1,9 +1,9 @@
 package typingsJapgolly.winjs.mod.UI
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a command to be displayed in a Menu object.
@@ -17,19 +17,25 @@ import scala.scalajs.js.annotation._
   * @param element The DOM element that will host the control.
   * @param options The set of properties and values to apply to the new MenuCommand.
   **/
-class MenuCommand ()
-  extends typingsJapgolly.winjs.WinJS.UI.MenuCommand {
+open class MenuCommand ()
+  extends StObject
+     with typingsJapgolly.winjs.WinJS.UI.MenuCommand {
   def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
+  def this(element: Unit, options: Any) = this()
 }
-
-/* static members */
-@JSImport("winjs", "UI.MenuCommand")
-@js.native
-object MenuCommand extends js.Object {
+object MenuCommand {
+  
+  @JSImport("winjs", "UI.MenuCommand")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSImport("winjs", "UI.MenuCommand.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }
-

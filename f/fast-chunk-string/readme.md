@@ -10,10 +10,10 @@ Chunk string into equal substrings with unicode support
 | ------------------ | :-------------: |
 | Full name          | fast-chunk-string |
 | Keywords           | string, split, chunk, unicode, utf, utf8, substring |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 135170 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2311.6666666666665 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/vladgolubev/fast-chunk-string#readme)

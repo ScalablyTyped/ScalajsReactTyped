@@ -1,27 +1,27 @@
 package typingsJapgolly.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UserDefinedFunction extends UserScriptable {
+trait UserDefinedFunction
+  extends StObject
+     with UserScriptable {
+  
   /** Type of function */
   var userDefinedFunctionType: js.UndefOr[UserDefinedFunctionType] = js.undefined
 }
-
 object UserDefinedFunction {
-  @scala.inline
-  def apply(
-    id: String,
-    body: UserFunction = null,
-    serverScript: UserFunction = null,
-    userDefinedFunctionType: UserDefinedFunctionType = null
-  ): UserDefinedFunction = {
+  
+  inline def apply(id: String): UserDefinedFunction = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (serverScript != null) __obj.updateDynamic("serverScript")(serverScript.asInstanceOf[js.Any])
-    if (userDefinedFunctionType != null) __obj.updateDynamic("userDefinedFunctionType")(userDefinedFunctionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDefinedFunction]
   }
+  
+  extension [Self <: UserDefinedFunction](x: Self) {
+    
+    inline def setUserDefinedFunctionType(value: UserDefinedFunctionType): Self = StObject.set(x, "userDefinedFunctionType", value.asInstanceOf[js.Any])
+    
+    inline def setUserDefinedFunctionTypeUndefined: Self = StObject.set(x, "userDefinedFunctionType", js.undefined)
+  }
 }
-

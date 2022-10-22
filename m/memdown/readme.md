@@ -10,10 +10,10 @@ An drop-in replacement for LevelDOWN that works in memory only
 | ------------------ | :-------------: |
 | Full name          | memdown |
 | Keywords           | level, leveldb, leveldown, levelup, memory |
-| # releases         | 7 |
-| # dependents       | 162 |
-| # downloads        | 3510764 |
-| # stars            | 4 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2441991.0 |
+| # stars            | 272.0 |
 
 ## Links
 - [Homepage](https://github.com/Level/memdown)

@@ -2,9 +2,9 @@ package typingsJapgolly.xrm.XrmEnum
 
 import typingsJapgolly.xrm.xrmStrings.saveandclose
 import typingsJapgolly.xrm.xrmStrings.saveandnew
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: {@link Entity.save Entity} Save Modes
@@ -16,14 +16,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.saveandclose
   - typingsJapgolly.xrm.xrmStrings.saveandnew
 */
-trait EntitySaveMode extends js.Object
-
+trait EntitySaveMode extends StObject
 object EntitySaveMode {
-  @scala.inline
-  def SaveAndClose: saveandclose = this.cast("saveandclose")
-  @scala.inline
-  def SaveAndNew: saveandnew = this.cast("saveandnew")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def SaveAndClose: saveandclose = "saveandclose".asInstanceOf[saveandclose]
+  
+  inline def SaveAndNew: saveandnew = "saveandnew".asInstanceOf[saveandnew]
 }
-

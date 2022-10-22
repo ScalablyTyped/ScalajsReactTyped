@@ -1,13 +1,13 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
 import typingsJapgolly.std.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "WebElementPromise")
 @js.native
-class WebElementPromise protected ()
+open class WebElementPromise protected ()
   extends WebElement
      with Promise[WebElement] {
   /**
@@ -18,4 +18,3 @@ class WebElementPromise protected ()
     */
   def this(driver: WebDriver, el: js.Promise[WebElement]) = this()
 }
-

@@ -1,19 +1,23 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.DataTransfer
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.DataTransfer.DataProviderRequest")
-@js.native
-class DataProviderRequest () extends IDataProviderRequest {
-  /* CompleteClass */
-  override var deadline: js.Date = js.native
-  /* CompleteClass */
-  override var formatId: String = js.native
-  /* CompleteClass */
-  override def getDeferral(): DataProviderDeferral = js.native
-  /* CompleteClass */
-  override def setData(value: js.Any): Unit = js.native
+trait DataProviderRequest
+  extends StObject
+     with IDataProviderRequest
+object DataProviderRequest {
+  
+  inline def apply(
+    deadline: js.Date,
+    formatId: String,
+    getDeferral: CallbackTo[DataProviderDeferral],
+    setData: Any => Callback
+  ): DataProviderRequest = {
+    val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], formatId = formatId.asInstanceOf[js.Any], getDeferral = getDeferral.toJsFn, setData = js.Any.fromFunction1((t0: Any) => setData(t0).runNow()))
+    __obj.asInstanceOf[DataProviderRequest]
+  }
 }
-

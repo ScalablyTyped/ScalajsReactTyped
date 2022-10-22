@@ -1,89 +1,72 @@
 package typingsJapgolly.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EasRequireEncryptionResult extends js.Object
-
+sealed trait EasRequireEncryptionResult extends StObject
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult")
 @js.native
-object EasRequireEncryptionResult extends js.Object {
-  @js.native
-  sealed trait canBeCompliant extends EasRequireEncryptionResult
+object EasRequireEncryptionResult extends StObject {
   
   @js.native
-  sealed trait compliant extends EasRequireEncryptionResult
+  sealed trait canBeCompliant
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait deFixedDataNotSupported extends EasRequireEncryptionResult
+  sealed trait compliant
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait deHardwareNotCompliant extends EasRequireEncryptionResult
+  sealed trait deFixedDataNotSupported
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait deOsVolumeNotProtected extends EasRequireEncryptionResult
+  sealed trait deHardwareNotCompliant
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait deProtectionNotYetEnabled extends EasRequireEncryptionResult
+  sealed trait deOsVolumeNotProtected
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait deProtectionSuspended extends EasRequireEncryptionResult
+  sealed trait deProtectionNotYetEnabled
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait deWinReNotConfigured extends EasRequireEncryptionResult
+  sealed trait deProtectionSuspended
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait noFeatureLicense extends EasRequireEncryptionResult
+  sealed trait deWinReNotConfigured
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait notEvaluated extends EasRequireEncryptionResult
+  sealed trait noFeatureLicense
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait notProvisionedOnAllVolumes extends EasRequireEncryptionResult
+  sealed trait notEvaluated
+    extends StObject
+       with EasRequireEncryptionResult
   
   @js.native
-  sealed trait osNotProtected extends EasRequireEncryptionResult
+  sealed trait notProvisionedOnAllVolumes
+    extends StObject
+       with EasRequireEncryptionResult
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EasRequireEncryptionResult with Double] = js.native
-  /* 2 */ @js.native
-  object canBeCompliant extends TopLevel[canBeCompliant with Double]
-  
-  /* 1 */ @js.native
-  object compliant extends TopLevel[compliant with Double]
-  
-  /* 4 */ @js.native
-  object deFixedDataNotSupported extends TopLevel[deFixedDataNotSupported with Double]
-  
-  /* 5 */ @js.native
-  object deHardwareNotCompliant extends TopLevel[deHardwareNotCompliant with Double]
-  
-  /* 8 */ @js.native
-  object deOsVolumeNotProtected extends TopLevel[deOsVolumeNotProtected with Double]
-  
-  /* 9 */ @js.native
-  object deProtectionNotYetEnabled extends TopLevel[deProtectionNotYetEnabled with Double]
-  
-  /* 7 */ @js.native
-  object deProtectionSuspended extends TopLevel[deProtectionSuspended with Double]
-  
-  /* 6 */ @js.native
-  object deWinReNotConfigured extends TopLevel[deWinReNotConfigured with Double]
-  
-  /* 10 */ @js.native
-  object noFeatureLicense extends TopLevel[noFeatureLicense with Double]
-  
-  /* 0 */ @js.native
-  object notEvaluated extends TopLevel[notEvaluated with Double]
-  
-  /* 3 */ @js.native
-  object notProvisionedOnAllVolumes extends TopLevel[notProvisionedOnAllVolumes with Double]
-  
-  /* 11 */ @js.native
-  object osNotProtected extends TopLevel[osNotProtected with Double]
-  
+  @js.native
+  sealed trait osNotProtected
+    extends StObject
+       with EasRequireEncryptionResult
 }
-

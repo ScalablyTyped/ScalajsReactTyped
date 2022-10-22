@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Devices
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FocusMode extends js.Object
-
+sealed trait FocusMode extends StObject
 /** Defines the values for focus mode. */
 @JSGlobal("Windows.Media.Devices.FocusMode")
 @js.native
-object FocusMode extends js.Object {
+object FocusMode extends StObject {
+  
   /** Use autofocus. */
   @js.native
-  sealed trait auto extends FocusMode
+  sealed trait auto
+    extends StObject
+       with FocusMode
   
   /** Continuously adjust focus. */
   @js.native
-  sealed trait continuous extends FocusMode
+  sealed trait continuous
+    extends StObject
+       with FocusMode
   
   /** Use manual focus. */
   @js.native
-  sealed trait manual extends FocusMode
+  sealed trait manual
+    extends StObject
+       with FocusMode
   
   /** Focus once. */
   @js.native
-  sealed trait single extends FocusMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FocusMode with Double] = js.native
-  /* 0 */ @js.native
-  object auto extends TopLevel[auto with Double]
-  
-  /* 2 */ @js.native
-  object continuous extends TopLevel[continuous with Double]
-  
-  /* 3 */ @js.native
-  object manual extends TopLevel[manual with Double]
-  
-  /* 1 */ @js.native
-  object single extends TopLevel[single with Double]
-  
+  sealed trait single
+    extends StObject
+       with FocusMode
 }
-

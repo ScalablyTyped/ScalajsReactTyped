@@ -1,27 +1,36 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotVbpVolumeDivisionStylesOptions extends js.Object {
+trait PlotVbpVolumeDivisionStylesOptions extends StObject {
+  
   /**
     * (Highstock) Color of negative volume bars.
     */
   var negativeColor: js.UndefOr[ColorString] = js.undefined
+  
   /**
     * (Highstock) Color of positive volume bars.
     */
   var positiveColor: js.UndefOr[ColorString] = js.undefined
 }
-
 object PlotVbpVolumeDivisionStylesOptions {
-  @scala.inline
-  def apply(negativeColor: ColorString = null, positiveColor: ColorString = null): PlotVbpVolumeDivisionStylesOptions = {
+  
+  inline def apply(): PlotVbpVolumeDivisionStylesOptions = {
     val __obj = js.Dynamic.literal()
-    if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor.asInstanceOf[js.Any])
-    if (positiveColor != null) __obj.updateDynamic("positiveColor")(positiveColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotVbpVolumeDivisionStylesOptions]
   }
+  
+  extension [Self <: PlotVbpVolumeDivisionStylesOptions](x: Self) {
+    
+    inline def setNegativeColor(value: ColorString): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
+    
+    inline def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
+    
+    inline def setPositiveColor(value: ColorString): Self = StObject.set(x, "positiveColor", value.asInstanceOf[js.Any])
+    
+    inline def setPositiveColorUndefined: Self = StObject.set(x, "positiveColor", js.undefined)
+  }
 }
-

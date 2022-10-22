@@ -10,10 +10,10 @@ The lodash method `_.now` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.now |
 | Keywords           | lodash-modularized, now |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 2491979 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 108966.33333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

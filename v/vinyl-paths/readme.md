@@ -9,10 +9,10 @@ Get the file paths in a `vinyl` stream
 | ------------------ | :-------------: |
 | Full name          | vinyl-paths |
 | Keywords           | gulpplugin, vinyl, gulp, paths, path, file, tap, through, stream |
-| # releases         | 3 |
-| # dependents       | 125 |
-| # downloads        | 1952866 |
-| # stars            | 12 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 155829.33333333334 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/vinyl-paths#readme)

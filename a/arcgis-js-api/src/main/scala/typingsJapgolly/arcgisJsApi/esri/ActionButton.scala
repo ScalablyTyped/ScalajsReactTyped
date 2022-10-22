@@ -1,20 +1,29 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.button
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ActionButton extends ActionBase {
+@js.native
+trait ActionButton
+  extends StObject
+     with ActionBase {
+  
   /**
-    * The URL to an image that will be used to represent the action. This property will be used as a background image for the node. It may be used in conjunction with the `className` property or by itself. If neither `image` nor `className` are specified, a default icon ![default icon](https://developers.arcgis.com/javascript/assets/img/guide/whats-new/41/default-action.png) will display.
+    * The URL to an image that will be used to represent the action.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html#image)
     */
-  var image: String
+  var image: String = js.native
+  
+  /**
+    * Specifies the type of action.
+    *
+    * @default "button"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html#type)
+    */
+  @JSName("type")
+  val type_ActionButton: button = js.native
 }
-
-@JSGlobal("__esri.ActionButton")
-@js.native
-object ActionButton extends TopLevel[ActionButtonConstructor]
-

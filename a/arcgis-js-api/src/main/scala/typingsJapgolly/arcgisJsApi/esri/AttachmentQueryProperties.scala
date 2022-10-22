@@ -1,108 +1,164 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AttachmentQueryProperties extends js.Object {
+trait AttachmentQueryProperties extends StObject {
+  
   /**
-    * The file format that is supported by query attachment. For example, `image/jpeg`. See the [ArcGIS REST API documentation](https://developers.arcgis.com/rest/services-reference/query-attachments-feature-service-layer-.htm) for more information on supported attachment types.  Requires an ArcGIS Server service 10.5 or greater and feature layer's [capabilities.query.supportsAttachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) to be `true`.
+    * The file format that is supported by query attachment.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#attachmentTypes)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#attachmentTypes)
     */
   var attachmentTypes: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * The where clause to be applied to attachment queries. Only attachments that satisfy the `attachmentsWhere` clause will be returned.
+    * The where clause to be applied to attachment queries.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#attachmentsWhere)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#attachmentsWhere)
     */
   var attachmentsWhere: js.UndefOr[String] = js.undefined
+  
   /**
-    * An array of globalIds for the features in the layer being queried. The query results will return attachments only for specified global ids.  Requires an ArcGIS Server service 10.5 or greater and feature layer's [capabilities.query.supportsAttachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) to be `true`.
+    * Indicates if the service should cache the attachment query results.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#globalIds)
+    * @default undefined
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#cacheHint)
+    */
+  var cacheHint: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * An array of globalIds for the features in the layer being queried.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#globalIds)
     */
   var globalIds: js.UndefOr[js.Array[Double]] = js.undefined
+  
   /**
     * Used to query for attachments that match the provided `keywords`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#keywords)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#keywords)
     */
   var keywords: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * Used to query for attachments that match this `name`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#name)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#name)
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
-    * The number of features to retrieve. This option should be used in conjunction with the [start property](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#start). Use this to implement paging (i.e. to retrieve "pages" of results when querying). Default Value is `10`.  If not provided, but an instance of AttachmentQuery has a `start` property, then the default value of `num` is `maxRecordCount`. The maximum value for this parameter is the value of the layer's `maxRecordCount` of the service, which can be found at the REST endpoint of the feature layer.  Requires an ArcGIS Server service 10.5 or greater and feature layer's [capabilities.query.supportsAttachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) to be `true`.
+    * The number of features to retrieve.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#num)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#num)
     */
   var num: js.UndefOr[Double] = js.undefined
+  
   /**
-    * An array of objectIds of the features to be queried for attachments. When the feature layer's [capabilities.query.supportsAttachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) property is `false`, it only accepts a single `objectId`.
+    * An array of objectIds of the features to be queried for attachments.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#objectIds)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#objectIds)
     */
   var objectIds: js.UndefOr[js.Array[Double]] = js.undefined
+  
   /**
-    * If `true`, the [Exchangeable image file format](https://en.wikipedia.org/wiki/Exif) for the attachment will be included in [attachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#exifInfo). The layer's capabilities.attachment.supportsExifInfo must be `true` for the attachment query to return `exifInfo` for the attachments.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#returnMetadata)
+    * If `true`, the [Exchangeable image file format](https://en.wikipedia.org/wiki/Exif) for the attachment will be included in [attachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#exifInfo).
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#returnMetadata)
     */
   var returnMetadata: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The file size of the attachment is specified in bytes. You can enter a file size range [1000,15000] to query for attachments. The query result will return all attachments within the specified file size range (1000 - 15000).  Requires an ArcGIS Server service 10.5 or greater and feature layer's [capabilities.query.supportsAttachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) to be `true`.
+    * The file size of the attachment is specified in bytes.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#size)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#size)
     */
   var size: js.UndefOr[js.Array[Double]] = js.undefined
+  
   /**
-    * This option fetches query results by skipping a specified number of records. The query results start from the next record. The default value is `0`. This parameter only applies when the feature layer's [capabilities.query.supportsPagination](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) is `true`. You can use this option to fetch records that are beyond `maxRecordCount`.  Requires an ArcGIS Server service 10.5 or greater and feature layer's [capabilities.query.supportsAttachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) to be `true`.
+    * This option fetches query results by skipping a specified number of records.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#start)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#start)
     */
   var start: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The `where` clause to be applied to the layer. Only features that satisfy the `where` clause and are in the list of [objectIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#objectIds) will be returned. Requires an ArcGIS Server service 10.5 or greater and feature layer's [capabilities.query.supportsAttachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) to be `true`.
+    * The `where` clause to be applied to the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#where)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#where)
     */
   var where: js.UndefOr[String] = js.undefined
 }
-
 object AttachmentQueryProperties {
-  @scala.inline
-  def apply(
-    attachmentTypes: js.Array[String] = null,
-    attachmentsWhere: String = null,
-    globalIds: js.Array[Double] = null,
-    keywords: js.Array[String] = null,
-    name: String = null,
-    num: Int | Double = null,
-    objectIds: js.Array[Double] = null,
-    returnMetadata: js.UndefOr[Boolean] = js.undefined,
-    size: js.Array[Double] = null,
-    start: Int | Double = null,
-    where: String = null
-  ): AttachmentQueryProperties = {
+  
+  inline def apply(): AttachmentQueryProperties = {
     val __obj = js.Dynamic.literal()
-    if (attachmentTypes != null) __obj.updateDynamic("attachmentTypes")(attachmentTypes.asInstanceOf[js.Any])
-    if (attachmentsWhere != null) __obj.updateDynamic("attachmentsWhere")(attachmentsWhere.asInstanceOf[js.Any])
-    if (globalIds != null) __obj.updateDynamic("globalIds")(globalIds.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
-    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnMetadata)) __obj.updateDynamic("returnMetadata")(returnMetadata.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentQueryProperties]
   }
+  
+  extension [Self <: AttachmentQueryProperties](x: Self) {
+    
+    inline def setAttachmentTypes(value: js.Array[String]): Self = StObject.set(x, "attachmentTypes", value.asInstanceOf[js.Any])
+    
+    inline def setAttachmentTypesUndefined: Self = StObject.set(x, "attachmentTypes", js.undefined)
+    
+    inline def setAttachmentTypesVarargs(value: String*): Self = StObject.set(x, "attachmentTypes", js.Array(value*))
+    
+    inline def setAttachmentsWhere(value: String): Self = StObject.set(x, "attachmentsWhere", value.asInstanceOf[js.Any])
+    
+    inline def setAttachmentsWhereUndefined: Self = StObject.set(x, "attachmentsWhere", js.undefined)
+    
+    inline def setCacheHint(value: Boolean): Self = StObject.set(x, "cacheHint", value.asInstanceOf[js.Any])
+    
+    inline def setCacheHintUndefined: Self = StObject.set(x, "cacheHint", js.undefined)
+    
+    inline def setGlobalIds(value: js.Array[Double]): Self = StObject.set(x, "globalIds", value.asInstanceOf[js.Any])
+    
+    inline def setGlobalIdsUndefined: Self = StObject.set(x, "globalIds", js.undefined)
+    
+    inline def setGlobalIdsVarargs(value: Double*): Self = StObject.set(x, "globalIds", js.Array(value*))
+    
+    inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    
+    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
+    
+    inline def setNumUndefined: Self = StObject.set(x, "num", js.undefined)
+    
+    inline def setObjectIds(value: js.Array[Double]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
+    
+    inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
+    
+    inline def setObjectIdsVarargs(value: Double*): Self = StObject.set(x, "objectIds", js.Array(value*))
+    
+    inline def setReturnMetadata(value: Boolean): Self = StObject.set(x, "returnMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setReturnMetadataUndefined: Self = StObject.set(x, "returnMetadata", js.undefined)
+    
+    inline def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
+    
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+  }
 }
-

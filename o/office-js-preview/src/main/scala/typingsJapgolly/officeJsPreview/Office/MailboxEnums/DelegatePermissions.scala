@@ -1,80 +1,68 @@
 package typingsJapgolly.officeJsPreview.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DelegatePermissions extends js.Object
-
+sealed trait DelegatePermissions extends StObject
 /**
-  * This bit mask represents a delegate's permissions on a shared folder.
-  *
-  * [Api set: Mailbox 1.8]
+  * This bitmask represents a delegate's permissions on a shared folder, or a user's permissions on a shared mailbox.
   *
   * @remarks
-  * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * [Api set: Mailbox 1.8]
+  *
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.DelegatePermissions")
 @js.native
-object DelegatePermissions extends js.Object {
-  /**
-    * Delegate has permission to delete any items.
-    */
-  @js.native
-  sealed trait DeleteAll extends DelegatePermissions
+object DelegatePermissions extends StObject {
   
   /**
-    * Delegate has permission to delete only the items they created.
+    * Delegate or user has permission to delete any items.
     */
   @js.native
-  sealed trait DeleteOwn extends DelegatePermissions
+  sealed trait DeleteAll
+    extends StObject
+       with DelegatePermissions
   
   /**
-    * Delegate has permission to edit any items.
+    * Delegate or user has permission to delete only the items they created.
     */
   @js.native
-  sealed trait EditAll extends DelegatePermissions
+  sealed trait DeleteOwn
+    extends StObject
+       with DelegatePermissions
   
   /**
-    * Delegate has permission to edit only they items they created.
+    * Delegate or user has permission to edit any items.
     */
   @js.native
-  sealed trait EditOwn extends DelegatePermissions
+  sealed trait EditAll
+    extends StObject
+       with DelegatePermissions
   
   /**
-    * Delegate has permission to read items.
+    * Delegate or user has permission to edit only they items they created.
     */
   @js.native
-  sealed trait Read extends DelegatePermissions
+  sealed trait EditOwn
+    extends StObject
+       with DelegatePermissions
   
   /**
-    * Delegate has permission to create and write items.
+    * Delegate or user has permission to read items.
     */
   @js.native
-  sealed trait Write extends DelegatePermissions
+  sealed trait Read
+    extends StObject
+       with DelegatePermissions
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DelegatePermissions with Double] = js.native
-  /* 8 */ @js.native
-  object DeleteAll extends TopLevel[DeleteAll with Double]
-  
-  /* 4 */ @js.native
-  object DeleteOwn extends TopLevel[DeleteOwn with Double]
-  
-  /* 32 */ @js.native
-  object EditAll extends TopLevel[EditAll with Double]
-  
-  /* 16 */ @js.native
-  object EditOwn extends TopLevel[EditOwn with Double]
-  
-  /* 1 */ @js.native
-  object Read extends TopLevel[Read with Double]
-  
-  /* 2 */ @js.native
-  object Write extends TopLevel[Write with Double]
-  
+  /**
+    * Delegate or user has permission to create and write items.
+    */
+  @js.native
+  sealed trait Write
+    extends StObject
+       with DelegatePermissions
 }
-

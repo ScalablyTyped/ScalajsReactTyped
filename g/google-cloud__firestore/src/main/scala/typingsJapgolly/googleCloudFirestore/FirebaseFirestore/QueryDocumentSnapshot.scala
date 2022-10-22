@@ -1,17 +1,20 @@
 package typingsJapgolly.googleCloudFirestore.FirebaseFirestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("FirebaseFirestore.QueryDocumentSnapshot")
 @js.native
-class QueryDocumentSnapshot[T] protected () extends DocumentSnapshot[T] {
+trait QueryDocumentSnapshot[T]
+  extends StObject
+     with DocumentSnapshot[T] {
+  
   /**
     * The time the document was created.
     */
   @JSName("createTime")
   val createTime_QueryDocumentSnapshot: Timestamp = js.native
+  
   /**
     * The time the document was last updated (at the time the snapshot was
     * generated).
@@ -19,4 +22,3 @@ class QueryDocumentSnapshot[T] protected () extends DocumentSnapshot[T] {
   @JSName("updateTime")
   val updateTime_QueryDocumentSnapshot: Timestamp = js.native
 }
-

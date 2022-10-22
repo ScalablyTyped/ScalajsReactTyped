@@ -1,167 +1,165 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClassificationType extends js.Object
-
+sealed trait ClassificationType extends StObject
 @JSImport("typescript", "ClassificationType")
 @js.native
-object ClassificationType extends js.Object {
-  @js.native
-  sealed trait bigintLiteral extends ClassificationType
-  
-  @js.native
-  sealed trait className extends ClassificationType
-  
-  @js.native
-  sealed trait comment extends ClassificationType
-  
-  @js.native
-  sealed trait docCommentTagName extends ClassificationType
-  
-  @js.native
-  sealed trait enumName extends ClassificationType
-  
-  @js.native
-  sealed trait identifier extends ClassificationType
-  
-  @js.native
-  sealed trait interfaceName extends ClassificationType
-  
-  @js.native
-  sealed trait jsxAttribute extends ClassificationType
-  
-  @js.native
-  sealed trait jsxAttributeStringLiteralValue extends ClassificationType
-  
-  @js.native
-  sealed trait jsxCloseTagName extends ClassificationType
-  
-  @js.native
-  sealed trait jsxOpenTagName extends ClassificationType
-  
-  @js.native
-  sealed trait jsxSelfClosingTagName extends ClassificationType
-  
-  @js.native
-  sealed trait jsxText extends ClassificationType
-  
-  @js.native
-  sealed trait keyword extends ClassificationType
-  
-  @js.native
-  sealed trait moduleName extends ClassificationType
-  
-  @js.native
-  sealed trait numericLiteral extends ClassificationType
-  
-  @js.native
-  sealed trait operator extends ClassificationType
-  
-  @js.native
-  sealed trait parameterName extends ClassificationType
-  
-  @js.native
-  sealed trait punctuation extends ClassificationType
-  
-  @js.native
-  sealed trait regularExpressionLiteral extends ClassificationType
-  
-  @js.native
-  sealed trait stringLiteral extends ClassificationType
-  
-  @js.native
-  sealed trait text extends ClassificationType
-  
-  @js.native
-  sealed trait typeAliasName extends ClassificationType
-  
-  @js.native
-  sealed trait typeParameterName extends ClassificationType
-  
-  @js.native
-  sealed trait whiteSpace extends ClassificationType
+object ClassificationType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ClassificationType with Double] = js.native
-  /* 25 */ @js.native
-  object bigintLiteral extends TopLevel[bigintLiteral with Double]
+  def apply(value: Double): js.UndefOr[ClassificationType & Double] = js.native
   
-  /* 11 */ @js.native
-  object className extends TopLevel[className with Double]
+  @js.native
+  sealed trait bigintLiteral
+    extends StObject
+       with ClassificationType
+  /* 25 */ val bigintLiteral: typingsJapgolly.typescript.mod.ClassificationType.bigintLiteral & Double = js.native
   
-  /* 1 */ @js.native
-  object comment extends TopLevel[comment with Double]
+  @js.native
+  sealed trait className
+    extends StObject
+       with ClassificationType
+  /* 11 */ val className: typingsJapgolly.typescript.mod.ClassificationType.className & Double = js.native
   
-  /* 18 */ @js.native
-  object docCommentTagName extends TopLevel[docCommentTagName with Double]
+  @js.native
+  sealed trait comment
+    extends StObject
+       with ClassificationType
+  /* 1 */ val comment: typingsJapgolly.typescript.mod.ClassificationType.comment & Double = js.native
   
-  /* 12 */ @js.native
-  object enumName extends TopLevel[enumName with Double]
+  @js.native
+  sealed trait docCommentTagName
+    extends StObject
+       with ClassificationType
+  /* 18 */ val docCommentTagName: typingsJapgolly.typescript.mod.ClassificationType.docCommentTagName & Double = js.native
   
-  /* 2 */ @js.native
-  object identifier extends TopLevel[identifier with Double]
+  @js.native
+  sealed trait enumName
+    extends StObject
+       with ClassificationType
+  /* 12 */ val enumName: typingsJapgolly.typescript.mod.ClassificationType.enumName & Double = js.native
   
-  /* 13 */ @js.native
-  object interfaceName extends TopLevel[interfaceName with Double]
+  @js.native
+  sealed trait identifier
+    extends StObject
+       with ClassificationType
+  /* 2 */ val identifier: typingsJapgolly.typescript.mod.ClassificationType.identifier & Double = js.native
   
-  /* 22 */ @js.native
-  object jsxAttribute extends TopLevel[jsxAttribute with Double]
+  @js.native
+  sealed trait interfaceName
+    extends StObject
+       with ClassificationType
+  /* 13 */ val interfaceName: typingsJapgolly.typescript.mod.ClassificationType.interfaceName & Double = js.native
   
-  /* 24 */ @js.native
-  object jsxAttributeStringLiteralValue extends TopLevel[jsxAttributeStringLiteralValue with Double]
+  @js.native
+  sealed trait jsxAttribute
+    extends StObject
+       with ClassificationType
+  /* 22 */ val jsxAttribute: typingsJapgolly.typescript.mod.ClassificationType.jsxAttribute & Double = js.native
   
-  /* 20 */ @js.native
-  object jsxCloseTagName extends TopLevel[jsxCloseTagName with Double]
+  @js.native
+  sealed trait jsxAttributeStringLiteralValue
+    extends StObject
+       with ClassificationType
+  /* 24 */ val jsxAttributeStringLiteralValue: typingsJapgolly.typescript.mod.ClassificationType.jsxAttributeStringLiteralValue & Double = js.native
   
-  /* 19 */ @js.native
-  object jsxOpenTagName extends TopLevel[jsxOpenTagName with Double]
+  @js.native
+  sealed trait jsxCloseTagName
+    extends StObject
+       with ClassificationType
+  /* 20 */ val jsxCloseTagName: typingsJapgolly.typescript.mod.ClassificationType.jsxCloseTagName & Double = js.native
   
-  /* 21 */ @js.native
-  object jsxSelfClosingTagName extends TopLevel[jsxSelfClosingTagName with Double]
+  @js.native
+  sealed trait jsxOpenTagName
+    extends StObject
+       with ClassificationType
+  /* 19 */ val jsxOpenTagName: typingsJapgolly.typescript.mod.ClassificationType.jsxOpenTagName & Double = js.native
   
-  /* 23 */ @js.native
-  object jsxText extends TopLevel[jsxText with Double]
+  @js.native
+  sealed trait jsxSelfClosingTagName
+    extends StObject
+       with ClassificationType
+  /* 21 */ val jsxSelfClosingTagName: typingsJapgolly.typescript.mod.ClassificationType.jsxSelfClosingTagName & Double = js.native
   
-  /* 3 */ @js.native
-  object keyword extends TopLevel[keyword with Double]
+  @js.native
+  sealed trait jsxText
+    extends StObject
+       with ClassificationType
+  /* 23 */ val jsxText: typingsJapgolly.typescript.mod.ClassificationType.jsxText & Double = js.native
   
-  /* 14 */ @js.native
-  object moduleName extends TopLevel[moduleName with Double]
+  @js.native
+  sealed trait keyword
+    extends StObject
+       with ClassificationType
+  /* 3 */ val keyword: typingsJapgolly.typescript.mod.ClassificationType.keyword & Double = js.native
   
-  /* 4 */ @js.native
-  object numericLiteral extends TopLevel[numericLiteral with Double]
+  @js.native
+  sealed trait moduleName
+    extends StObject
+       with ClassificationType
+  /* 14 */ val moduleName: typingsJapgolly.typescript.mod.ClassificationType.moduleName & Double = js.native
   
-  /* 5 */ @js.native
-  object operator extends TopLevel[operator with Double]
+  @js.native
+  sealed trait numericLiteral
+    extends StObject
+       with ClassificationType
+  /* 4 */ val numericLiteral: typingsJapgolly.typescript.mod.ClassificationType.numericLiteral & Double = js.native
   
-  /* 17 */ @js.native
-  object parameterName extends TopLevel[parameterName with Double]
+  @js.native
+  sealed trait operator
+    extends StObject
+       with ClassificationType
+  /* 5 */ val operator: typingsJapgolly.typescript.mod.ClassificationType.operator & Double = js.native
   
-  /* 10 */ @js.native
-  object punctuation extends TopLevel[punctuation with Double]
+  @js.native
+  sealed trait parameterName
+    extends StObject
+       with ClassificationType
+  /* 17 */ val parameterName: typingsJapgolly.typescript.mod.ClassificationType.parameterName & Double = js.native
   
-  /* 7 */ @js.native
-  object regularExpressionLiteral extends TopLevel[regularExpressionLiteral with Double]
+  @js.native
+  sealed trait punctuation
+    extends StObject
+       with ClassificationType
+  /* 10 */ val punctuation: typingsJapgolly.typescript.mod.ClassificationType.punctuation & Double = js.native
   
-  /* 6 */ @js.native
-  object stringLiteral extends TopLevel[stringLiteral with Double]
+  @js.native
+  sealed trait regularExpressionLiteral
+    extends StObject
+       with ClassificationType
+  /* 7 */ val regularExpressionLiteral: typingsJapgolly.typescript.mod.ClassificationType.regularExpressionLiteral & Double = js.native
   
-  /* 9 */ @js.native
-  object text extends TopLevel[text with Double]
+  @js.native
+  sealed trait stringLiteral
+    extends StObject
+       with ClassificationType
+  /* 6 */ val stringLiteral: typingsJapgolly.typescript.mod.ClassificationType.stringLiteral & Double = js.native
   
-  /* 16 */ @js.native
-  object typeAliasName extends TopLevel[typeAliasName with Double]
+  @js.native
+  sealed trait text
+    extends StObject
+       with ClassificationType
+  /* 9 */ val text: typingsJapgolly.typescript.mod.ClassificationType.text & Double = js.native
   
-  /* 15 */ @js.native
-  object typeParameterName extends TopLevel[typeParameterName with Double]
+  @js.native
+  sealed trait typeAliasName
+    extends StObject
+       with ClassificationType
+  /* 16 */ val typeAliasName: typingsJapgolly.typescript.mod.ClassificationType.typeAliasName & Double = js.native
   
-  /* 8 */ @js.native
-  object whiteSpace extends TopLevel[whiteSpace with Double]
+  @js.native
+  sealed trait typeParameterName
+    extends StObject
+       with ClassificationType
+  /* 15 */ val typeParameterName: typingsJapgolly.typescript.mod.ClassificationType.typeParameterName & Double = js.native
   
+  @js.native
+  sealed trait whiteSpace
+    extends StObject
+       with ClassificationType
+  /* 8 */ val whiteSpace: typingsJapgolly.typescript.mod.ClassificationType.whiteSpace & Double = js.native
 }
-

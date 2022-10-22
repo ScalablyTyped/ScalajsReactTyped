@@ -1,0 +1,119 @@
+package typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.DataType
+
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._AccentColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BackgroundColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Border
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlock
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockEnd
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockEndColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockStart
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBlockStartColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBottom
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderBottomColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInline
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineEnd
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineEndColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineStart
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderInlineStartColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderLeft
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderLeftColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderRight
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderRightColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderTop
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._BorderTopColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._CaretColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ColumnRule
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._ColumnRuleColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._FloodColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._LightingColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MozBorderBottomColors
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MozBorderLeftColors
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MozBorderRightColors
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MozBorderTopColors
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbar3dlightColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarArrowColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarBaseColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarDarkshadowColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarFaceColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarHighlightColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarShadowColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._MsScrollbarTrackColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Outline
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._OutlineColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._StopColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextDecoration
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextDecorationColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextEmphasis
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._TextEmphasisColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitBorderBefore
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitBorderBeforeColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitTapHighlightColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitTextFillColor
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitTextStroke
+import typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._WebkitTextStrokeColor
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait _Color
+  extends StObject
+     with _AccentColor
+     with _BackgroundColor
+     with _Border[Any]
+     with _BorderBlock[Any]
+     with _BorderBlockColor
+     with _BorderBlockEnd[Any]
+     with _BorderBlockEndColor
+     with _BorderBlockStart[Any]
+     with _BorderBlockStartColor
+     with _BorderBottom[Any]
+     with _BorderBottomColor
+     with _BorderColor
+     with _BorderInline[Any]
+     with _BorderInlineColor
+     with _BorderInlineEnd[Any]
+     with _BorderInlineEndColor
+     with _BorderInlineStart[Any]
+     with _BorderInlineStartColor
+     with _BorderLeft[Any]
+     with _BorderLeftColor
+     with _BorderRight[Any]
+     with _BorderRightColor
+     with _BorderTop[Any]
+     with _BorderTopColor
+     with _CaretColor
+     with typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`.Property._Color
+     with _ColumnRule[Any]
+     with _ColumnRuleColor
+     with _FinalBgLayer[Any]
+     with _FloodColor
+     with _LightingColor
+     with _MozBorderBottomColors
+     with _MozBorderLeftColors
+     with _MozBorderRightColors
+     with _MozBorderTopColors
+     with _MsScrollbar3dlightColor
+     with _MsScrollbarArrowColor
+     with _MsScrollbarBaseColor
+     with _MsScrollbarDarkshadowColor
+     with _MsScrollbarFaceColor
+     with _MsScrollbarHighlightColor
+     with _MsScrollbarShadowColor
+     with _MsScrollbarTrackColor
+     with _Outline[Any]
+     with _OutlineColor
+     with _Paint
+     with _StopColor
+     with _TextDecoration[Any]
+     with _TextDecorationColor
+     with _TextEmphasis
+     with _TextEmphasisColor
+     with _WebkitBorderBefore[Any]
+     with _WebkitBorderBeforeColor
+     with _WebkitTapHighlightColor
+     with _WebkitTextFillColor
+     with _WebkitTextStroke[Any]
+     with _WebkitTextStrokeColor

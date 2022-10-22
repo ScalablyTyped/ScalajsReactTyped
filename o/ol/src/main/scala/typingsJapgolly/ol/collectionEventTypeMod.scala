@@ -1,32 +1,37 @@
 package typingsJapgolly.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/CollectionEventType", JSImport.Namespace)
-@js.native
-object collectionEventTypeMod extends js.Object {
-  @js.native
-  sealed trait CollectionEventType extends js.Object
+object collectionEventTypeMod {
   
+  @JSImport("ol/CollectionEventType", JSImport.Default)
   @js.native
-  object CollectionEventType extends js.Object {
-    @js.native
-    sealed trait ADD extends CollectionEventType
+  object default extends StObject {
     
-    @js.native
-    sealed trait REMOVE extends CollectionEventType
-    
-  }
-  
-  @js.native
-  object default extends js.Object {
-    /* "add" */ val ADD: typingsJapgolly.ol.collectionEventTypeMod.CollectionEventType.ADD with String = js.native
-    /* "remove" */ val REMOVE: typingsJapgolly.ol.collectionEventTypeMod.CollectionEventType.REMOVE with String = js.native
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[CollectionEventType with String] = js.native
+    def apply(value: String): js.UndefOr[CollectionEventType & String] = js.native
+    
+    /* "add" */ val ADD: typingsJapgolly.ol.collectionEventTypeMod.CollectionEventType.ADD & String = js.native
+    
+    /* "remove" */ val REMOVE: typingsJapgolly.ol.collectionEventTypeMod.CollectionEventType.REMOVE & String = js.native
   }
   
+  @js.native
+  sealed trait CollectionEventType extends StObject
+  @JSImport("ol/CollectionEventType", "CollectionEventType")
+  @js.native
+  object CollectionEventType extends StObject {
+    
+    @js.native
+    sealed trait ADD
+      extends StObject
+         with CollectionEventType
+    
+    @js.native
+    sealed trait REMOVE
+      extends StObject
+         with CollectionEventType
+  }
 }
-

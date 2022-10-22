@@ -1,14 +1,11 @@
 package typingsJapgolly.activexDao.DAO
 
-import typingsJapgolly.activexDao.activexDaoNumbers.`1`
+import typingsJapgolly.activexDao.activexDaoInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CommitTransOptionsEnum {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dbForceOSFlush: `1` = this.cast(1)
+  
+  inline def dbForceOSFlush: `1` = 1.asInstanceOf[`1`]
 }
-

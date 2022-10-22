@@ -1,35 +1,39 @@
 package typingsJapgolly.reactMdl.mod
 
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
+import typingsJapgolly.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LayoutProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any] {
+  extends StObject
+     with HTMLProps[Any] {
+  
   var fixedDrawer: js.UndefOr[Boolean] = js.undefined
+  
   var fixedHeader: js.UndefOr[Boolean] = js.undefined
+  
   var fixedTabs: js.UndefOr[Boolean] = js.undefined
 }
-
 object LayoutProps {
-  @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    fixedDrawer: js.UndefOr[Boolean] = js.undefined,
-    fixedHeader: js.UndefOr[Boolean] = js.undefined,
-    fixedTabs: js.UndefOr[Boolean] = js.undefined
-  ): LayoutProps = {
+  
+  inline def apply(): LayoutProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(fixedDrawer)) __obj.updateDynamic("fixedDrawer")(fixedDrawer.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedTabs)) __obj.updateDynamic("fixedTabs")(fixedTabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutProps]
   }
+  
+  extension [Self <: LayoutProps](x: Self) {
+    
+    inline def setFixedDrawer(value: Boolean): Self = StObject.set(x, "fixedDrawer", value.asInstanceOf[js.Any])
+    
+    inline def setFixedDrawerUndefined: Self = StObject.set(x, "fixedDrawer", js.undefined)
+    
+    inline def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
+    
+    inline def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
+    
+    inline def setFixedTabs(value: Boolean): Self = StObject.set(x, "fixedTabs", value.asInstanceOf[js.Any])
+    
+    inline def setFixedTabsUndefined: Self = StObject.set(x, "fixedTabs", js.undefined)
+  }
 }
-

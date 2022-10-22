@@ -1,8 +1,8 @@
 package typingsJapgolly.wegameApi.wx.types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.wegameApi.wegameApiStrings.green
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.wegameApi.wegameApiStrings.dark
   - typingsJapgolly.wegameApi.wegameApiStrings.light
 */
-trait GameClubButtonIcon extends js.Object
-
+trait GameClubButtonIcon extends StObject
 object GameClubButtonIcon {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dark: typingsJapgolly.wegameApi.wegameApiStrings.dark = this.cast("dark")
-  @scala.inline
-  def green: typingsJapgolly.wegameApi.wegameApiStrings.green = this.cast("green")
-  @scala.inline
-  def light: typingsJapgolly.wegameApi.wegameApiStrings.light = this.cast("light")
-  @scala.inline
-  def white: typingsJapgolly.wegameApi.wegameApiStrings.white = this.cast("white")
+  
+  inline def dark: typingsJapgolly.wegameApi.wegameApiStrings.dark = "dark".asInstanceOf[typingsJapgolly.wegameApi.wegameApiStrings.dark]
+  
+  inline def green: typingsJapgolly.wegameApi.wegameApiStrings.green = "green".asInstanceOf[typingsJapgolly.wegameApi.wegameApiStrings.green]
+  
+  inline def light: typingsJapgolly.wegameApi.wegameApiStrings.light = "light".asInstanceOf[typingsJapgolly.wegameApi.wegameApiStrings.light]
+  
+  inline def white: typingsJapgolly.wegameApi.wegameApiStrings.white = "white".asInstanceOf[typingsJapgolly.wegameApi.wegameApiStrings.white]
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.fastclick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FastClickOptions extends js.Object {
+trait FastClickOptions extends StObject {
+  
   var tapDelay: js.UndefOr[Double] = js.undefined
+  
   var touchBoundary: js.UndefOr[Double] = js.undefined
 }
-
 object FastClickOptions {
-  @scala.inline
-  def apply(tapDelay: Int | Double = null, touchBoundary: Int | Double = null): FastClickOptions = {
+  
+  inline def apply(): FastClickOptions = {
     val __obj = js.Dynamic.literal()
-    if (tapDelay != null) __obj.updateDynamic("tapDelay")(tapDelay.asInstanceOf[js.Any])
-    if (touchBoundary != null) __obj.updateDynamic("touchBoundary")(touchBoundary.asInstanceOf[js.Any])
     __obj.asInstanceOf[FastClickOptions]
   }
+  
+  extension [Self <: FastClickOptions](x: Self) {
+    
+    inline def setTapDelay(value: Double): Self = StObject.set(x, "tapDelay", value.asInstanceOf[js.Any])
+    
+    inline def setTapDelayUndefined: Self = StObject.set(x, "tapDelay", js.undefined)
+    
+    inline def setTouchBoundary(value: Double): Self = StObject.set(x, "touchBoundary", value.asInstanceOf[js.Any])
+    
+    inline def setTouchBoundaryUndefined: Self = StObject.set(x, "touchBoundary", js.undefined)
+  }
 }
-

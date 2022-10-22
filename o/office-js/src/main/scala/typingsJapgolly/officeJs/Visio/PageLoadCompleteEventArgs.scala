@@ -1,8 +1,8 @@
 package typingsJapgolly.officeJs.Visio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-trait PageLoadCompleteEventArgs extends js.Object {
+trait PageLoadCompleteEventArgs extends StObject {
+  
   /**
     *
     * Gets the name of the page that raised the PageLoad event.
@@ -18,6 +19,7 @@ trait PageLoadCompleteEventArgs extends js.Object {
     * [Api set:  1.1]
     */
   var pageName: String
+  
   /**
     *
     * Gets the success or failure of the PageLoadComplete event.
@@ -26,13 +28,17 @@ trait PageLoadCompleteEventArgs extends js.Object {
     */
   var success: Boolean
 }
-
 object PageLoadCompleteEventArgs {
-  @scala.inline
-  def apply(pageName: String, success: Boolean): PageLoadCompleteEventArgs = {
-    val __obj = js.Dynamic.literal(pageName = pageName.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
+  inline def apply(pageName: String, success: Boolean): PageLoadCompleteEventArgs = {
+    val __obj = js.Dynamic.literal(pageName = pageName.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageLoadCompleteEventArgs]
   }
+  
+  extension [Self <: PageLoadCompleteEventArgs](x: Self) {
+    
+    inline def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
+    
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+  }
 }
-

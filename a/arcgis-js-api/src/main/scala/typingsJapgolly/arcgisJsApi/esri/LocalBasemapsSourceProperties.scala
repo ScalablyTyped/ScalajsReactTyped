@@ -1,10 +1,11 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LocalBasemapsSourceProperties extends js.Object {
+trait LocalBasemapsSourceProperties extends StObject {
+  
   /**
     * A collection of [Basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html)s.
     *
@@ -12,13 +13,19 @@ trait LocalBasemapsSourceProperties extends js.Object {
     */
   var basemaps: js.UndefOr[CollectionProperties[BasemapProperties]] = js.undefined
 }
-
 object LocalBasemapsSourceProperties {
-  @scala.inline
-  def apply(basemaps: CollectionProperties[BasemapProperties] = null): LocalBasemapsSourceProperties = {
+  
+  inline def apply(): LocalBasemapsSourceProperties = {
     val __obj = js.Dynamic.literal()
-    if (basemaps != null) __obj.updateDynamic("basemaps")(basemaps.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalBasemapsSourceProperties]
   }
+  
+  extension [Self <: LocalBasemapsSourceProperties](x: Self) {
+    
+    inline def setBasemaps(value: CollectionProperties[BasemapProperties]): Self = StObject.set(x, "basemaps", value.asInstanceOf[js.Any])
+    
+    inline def setBasemapsUndefined: Self = StObject.set(x, "basemaps", js.undefined)
+    
+    inline def setBasemapsVarargs(value: BasemapProperties*): Self = StObject.set(x, "basemaps", js.Array(value*))
+  }
 }
-

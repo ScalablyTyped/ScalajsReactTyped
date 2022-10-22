@@ -1,25 +1,33 @@
 package typingsJapgolly.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ILineChange extends IChange {
+trait ILineChange
+  extends StObject
+     with IChange {
+  
   val charChanges: js.UndefOr[js.Array[ICharChange]] = js.undefined
 }
-
 object ILineChange {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     modifiedEndLineNumber: Double,
     modifiedStartLineNumber: Double,
     originalEndLineNumber: Double,
-    originalStartLineNumber: Double,
-    charChanges: js.Array[ICharChange] = null
+    originalStartLineNumber: Double
   ): ILineChange = {
     val __obj = js.Dynamic.literal(modifiedEndLineNumber = modifiedEndLineNumber.asInstanceOf[js.Any], modifiedStartLineNumber = modifiedStartLineNumber.asInstanceOf[js.Any], originalEndLineNumber = originalEndLineNumber.asInstanceOf[js.Any], originalStartLineNumber = originalStartLineNumber.asInstanceOf[js.Any])
-    if (charChanges != null) __obj.updateDynamic("charChanges")(charChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILineChange]
   }
+  
+  extension [Self <: ILineChange](x: Self) {
+    
+    inline def setCharChanges(value: js.Array[ICharChange]): Self = StObject.set(x, "charChanges", value.asInstanceOf[js.Any])
+    
+    inline def setCharChangesUndefined: Self = StObject.set(x, "charChanges", js.undefined)
+    
+    inline def setCharChangesVarargs(value: ICharChange*): Self = StObject.set(x, "charChanges", js.Array(value*))
+  }
 }
-

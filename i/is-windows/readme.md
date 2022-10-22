@@ -10,10 +10,10 @@ Returns true if the platform is windows. UMD module, works with node.js, commonj
 | ------------------ | :-------------: |
 | Full name          | is-windows |
 | Keywords           | check, cywin, is, is-windows, nix, operating system, os, platform, process, unix, win, win32, windows |
-| # releases         | 2 |
-| # dependents       | 154 |
-| # downloads        | 446000070 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.751748633333333E7 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/is-windows)

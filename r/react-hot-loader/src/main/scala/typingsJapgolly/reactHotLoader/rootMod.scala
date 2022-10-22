@@ -1,14 +1,16 @@
 package typingsJapgolly.reactHotLoader
 
 import typingsJapgolly.reactHotLoader.mod.AppContainerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-hot-loader/root", JSImport.Namespace)
-@js.native
-object rootMod extends js.Object {
-  def hot[T](Component: T): T = js.native
-  def hot[T](Component: T, props: AppContainerProps): T = js.native
+object rootMod {
+  
+  @JSImport("react-hot-loader/root", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def hot[T](Component: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("hot")(Component.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def hot[T](Component: T, props: AppContainerProps): T = (^.asInstanceOf[js.Dynamic].applyDynamic("hot")(Component.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[T]
 }
-

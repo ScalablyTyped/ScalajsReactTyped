@@ -1,20 +1,28 @@
 package typingsJapgolly.asana.mod.resources
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Membership extends js.Object {
+trait Membership extends StObject {
+  
   var project: Resource
+  
   var section: Resource | Null
 }
-
 object Membership {
-  @scala.inline
-  def apply(project: Resource, section: Resource = null): Membership = {
-    val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
-    if (section != null) __obj.updateDynamic("section")(section.asInstanceOf[js.Any])
+  
+  inline def apply(project: Resource): Membership = {
+    val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], section = null)
     __obj.asInstanceOf[Membership]
   }
+  
+  extension [Self <: Membership](x: Self) {
+    
+    inline def setProject(value: Resource): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    
+    inline def setSection(value: Resource): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    
+    inline def setSectionNull: Self = StObject.set(x, "section", null)
+  }
 }
-

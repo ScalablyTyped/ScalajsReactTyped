@@ -1,23 +1,28 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LegendAccessibilityKeyboardNavigationOptions extends js.Object {
+trait LegendAccessibilityKeyboardNavigationOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable keyboard navigation for
     * the legend.
     */
-  var enabled: js.UndefOr[js.Any] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
-
 object LegendAccessibilityKeyboardNavigationOptions {
-  @scala.inline
-  def apply(enabled: js.Any = null): LegendAccessibilityKeyboardNavigationOptions = {
+  
+  inline def apply(): LegendAccessibilityKeyboardNavigationOptions = {
     val __obj = js.Dynamic.literal()
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendAccessibilityKeyboardNavigationOptions]
   }
+  
+  extension [Self <: LegendAccessibilityKeyboardNavigationOptions](x: Self) {
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+  }
 }
-

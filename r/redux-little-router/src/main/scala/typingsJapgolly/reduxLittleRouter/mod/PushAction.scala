@@ -1,21 +1,29 @@
 package typingsJapgolly.reduxLittleRouter.mod
 
-import typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.ROUTER_PUSH
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PushAction extends RouterActions {
+trait PushAction
+  extends StObject
+     with RouterActions {
+  
   var payload: Location
-  var `type`: ROUTER_PUSH
+  
+  var `type`: /* "ROUTER_PUSH" */ String
 }
-
 object PushAction {
-  @scala.inline
-  def apply(payload: Location, `type`: ROUTER_PUSH): PushAction = {
+  
+  inline def apply(payload: Location, `type`: /* "ROUTER_PUSH" */ String): PushAction = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushAction]
   }
+  
+  extension [Self <: PushAction](x: Self) {
+    
+    inline def setPayload(value: Location): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: /* "ROUTER_PUSH" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

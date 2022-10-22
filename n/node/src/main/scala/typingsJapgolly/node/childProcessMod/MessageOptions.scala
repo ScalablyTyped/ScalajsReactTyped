@@ -1,19 +1,24 @@
 package typingsJapgolly.node.childProcessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MessageOptions extends js.Object {
+trait MessageOptions extends StObject {
+  
   var keepOpen: js.UndefOr[Boolean] = js.undefined
 }
-
 object MessageOptions {
-  @scala.inline
-  def apply(keepOpen: js.UndefOr[Boolean] = js.undefined): MessageOptions = {
+  
+  inline def apply(): MessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepOpen)) __obj.updateDynamic("keepOpen")(keepOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageOptions]
   }
+  
+  extension [Self <: MessageOptions](x: Self) {
+    
+    inline def setKeepOpen(value: Boolean): Self = StObject.set(x, "keepOpen", value.asInstanceOf[js.Any])
+    
+    inline def setKeepOpenUndefined: Self = StObject.set(x, "keepOpen", js.undefined)
+  }
 }
-

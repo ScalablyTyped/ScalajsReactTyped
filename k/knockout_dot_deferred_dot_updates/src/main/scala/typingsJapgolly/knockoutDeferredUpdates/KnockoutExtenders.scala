@@ -1,21 +1,23 @@
 package typingsJapgolly.knockoutDeferredUpdates
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Deferred extender
-trait KnockoutExtenders extends js.Object {
-  def deferred(target: js.Any, value: Boolean): js.Any
+trait KnockoutExtenders extends StObject {
+  
+  def deferred(target: Any, value: Boolean): Any
 }
-
 object KnockoutExtenders {
-  @scala.inline
-  def apply(deferred: (js.Any, Boolean) => CallbackTo[js.Any]): KnockoutExtenders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deferred")(js.Any.fromFunction2((t0: js.Any, t1: scala.Boolean) => deferred(t0, t1).runNow()))
+  
+  inline def apply(deferred: (Any, Boolean) => Any): KnockoutExtenders = {
+    val __obj = js.Dynamic.literal(deferred = js.Any.fromFunction2(deferred))
     __obj.asInstanceOf[KnockoutExtenders]
   }
+  
+  extension [Self <: KnockoutExtenders](x: Self) {
+    
+    inline def setDeferred(value: (Any, Boolean) => Any): Self = StObject.set(x, "deferred", js.Any.fromFunction2(value))
+  }
 }
-

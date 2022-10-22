@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockChartNavigatorSeriesItemStack extends js.Object {
+trait StockChartNavigatorSeriesItemStack extends StObject {
+  
   var group: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object StockChartNavigatorSeriesItemStack {
-  @scala.inline
-  def apply(group: String = null, `type`: String = null): StockChartNavigatorSeriesItemStack = {
+  
+  inline def apply(): StockChartNavigatorSeriesItemStack = {
     val __obj = js.Dynamic.literal()
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartNavigatorSeriesItemStack]
   }
+  
+  extension [Self <: StockChartNavigatorSeriesItemStack](x: Self) {
+    
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

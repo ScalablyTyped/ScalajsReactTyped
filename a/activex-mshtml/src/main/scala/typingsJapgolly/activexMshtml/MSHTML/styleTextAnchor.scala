@@ -1,35 +1,31 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`3`
+import typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`2`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`3`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
+  - typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`3`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`2`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
 */
-trait styleTextAnchor extends js.Object
-
+trait styleTextAnchor extends StObject
 object styleTextAnchor {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def styleTextAnchorEnd: `3` = this.cast(3)
-  @scala.inline
-  def styleTextAnchorMiddle: `2` = this.cast(2)
-  @scala.inline
-  def styleTextAnchorNotSet: `0` = this.cast(0)
-  @scala.inline
-  def styleTextAnchorStart: `1` = this.cast(1)
-  @scala.inline
-  def styleTextAnchor_Max: `2147483647` = this.cast(2147483647)
+  
+  inline def styleTextAnchorEnd: `3` = 3.asInstanceOf[`3`]
+  
+  inline def styleTextAnchorMiddle: `2` = 2.asInstanceOf[`2`]
+  
+  inline def styleTextAnchorNotSet: `0` = 0.asInstanceOf[`0`]
+  
+  inline def styleTextAnchorStart: `1` = 1.asInstanceOf[`1`]
+  
+  inline def styleTextAnchor_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }
-

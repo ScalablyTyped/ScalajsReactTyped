@@ -10,10 +10,10 @@ A Leaflet layer control with support for grouping overlays together
 | ------------------ | :-------------: |
 | Full name          | leaflet-groupedlayercontrol |
 | Keywords           | leaflet, overlay, groups, grouped, control, plugin |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 18113 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7790.0 |
+| # stars            | 242.0 |
 
 ## Links
 - [Homepage](https://github.com/ismyrnow/leaflet-groupedlayercontrol)

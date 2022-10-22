@@ -2,9 +2,9 @@ package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.Coordinate_
 import typingsJapgolly.openlayers.mod.olx.source.TileUTFGridOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.TileUTFGrid")
 @js.native
-class TileUTFGrid protected () extends Tile {
+open class TileUTFGrid protected () extends Tile {
   /**
     * @classdesc
     * Layer source for UTFGrid interaction data loaded from TileJSON format.
@@ -24,6 +24,7 @@ class TileUTFGrid protected () extends Tile {
     * @api
     */
   def this(options: TileUTFGridOptions) = this()
+  
   /**
     * Calls the callback (synchronously by default) with the available data
     * for given coordinate and resolution (or `null` if not yet loaded or
@@ -37,20 +38,28 @@ class TileUTFGrid protected () extends Tile {
     * @template T
     * @api
     */
-  def forDataAtCoordinateAndResolution(coordinate: Coordinate_, resolution: Double, callback: js.Function1[/* d */ js.Any, _]): Unit = js.native
+  def forDataAtCoordinateAndResolution(coordinate: Coordinate_, resolution: Double, callback: js.Function1[/* d */ Any, Any]): Unit = js.native
   def forDataAtCoordinateAndResolution(
     coordinate: Coordinate_,
     resolution: Double,
-    callback: js.Function1[/* d */ js.Any, _],
-    opt_this: js.Any
+    callback: js.Function1[/* d */ Any, Any],
+    opt_this: Any
   ): Unit = js.native
   def forDataAtCoordinateAndResolution(
     coordinate: Coordinate_,
     resolution: Double,
-    callback: js.Function1[/* d */ js.Any, _],
-    opt_this: js.Any,
+    callback: js.Function1[/* d */ Any, Any],
+    opt_this: Any,
     opt_request: Boolean
   ): Unit = js.native
+  def forDataAtCoordinateAndResolution(
+    coordinate: Coordinate_,
+    resolution: Double,
+    callback: js.Function1[/* d */ Any, Any],
+    opt_this: Unit,
+    opt_request: Boolean
+  ): Unit = js.native
+  
   /**
     * Return the template from TileJSON.
     * @return The template from TileJSON.
@@ -58,4 +67,3 @@ class TileUTFGrid protected () extends Tile {
     */
   def getTemplate(): String = js.native
 }
-

@@ -1,44 +1,44 @@
 package typingsJapgolly.materializeCss.M
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materializeCss.MElements
-import typingsJapgolly.materializeCss.PartialCollapsibleOptions
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("M.Collapsible")
-@js.native
-class Collapsible () extends Component[CollapsibleOptions] {
+trait Collapsible
+  extends StObject
+     with Component[CollapsibleOptions] {
+  
   /**
     * Close collapsible section
     * @param n Nth section to close
     */
-  def close(n: Double): Unit = js.native
+  def close(n: Double): Unit
+  
   /**
     * Open collapsible section
     * @param n Nth section to open
     */
-  def open(n: Double): Unit = js.native
+  def open(n: Double): Unit
 }
-
-/* static members */
-@JSGlobal("M.Collapsible")
-@js.native
-object Collapsible extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): Collapsible = js.native
-  /**
-    * Init Collapsibles
-    */
-  def init(els: MElements): js.Array[Collapsible] = js.native
-  def init(els: MElements, options: PartialCollapsibleOptions): js.Array[Collapsible] = js.native
-  /**
-    * Init Collapsible
-    */
-  def init(els: typingsJapgolly.std.Element): Collapsible = js.native
-  def init(els: typingsJapgolly.std.Element, options: PartialCollapsibleOptions): Collapsible = js.native
+object Collapsible {
+  
+  inline def apply(
+    close: Double => Callback,
+    destroy: Callback,
+    el: Element,
+    open: Double => Callback,
+    options: CollapsibleOptions
+  ): Collapsible = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction1((t0: Double) => close(t0).runNow()), destroy = destroy.toJsFn, el = el.asInstanceOf[js.Any], open = js.Any.fromFunction1((t0: Double) => open(t0).runNow()), options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Collapsible]
+  }
+  
+  extension [Self <: Collapsible](x: Self) {
+    
+    inline def setClose(value: Double => Callback): Self = StObject.set(x, "close", js.Any.fromFunction1((t0: Double) => value(t0).runNow()))
+    
+    inline def setOpen(value: Double => Callback): Self = StObject.set(x, "open", js.Any.fromFunction1((t0: Double) => value(t0).runNow()))
+  }
 }
-

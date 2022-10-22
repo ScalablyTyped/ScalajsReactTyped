@@ -1,28 +1,25 @@
 package typingsJapgolly.twitterForWeb
 
-import typingsJapgolly.twitterForWeb.twitterForWebStrings.likes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.twitterForWeb.AnonScreenNameSourceType
-  - typingsJapgolly.twitterForWeb.AnonUserId
+  - typingsJapgolly.twitterForWeb.anon.ScreenNameSourceType
+  - typingsJapgolly.twitterForWeb.anon.UserId
 */
-trait TwitterTimelineWidgetLikesDataSource extends _TwitterTimelineWidgetDataSource
-
+trait TwitterTimelineWidgetLikesDataSource
+  extends StObject
+     with _TwitterTimelineWidgetDataSource
 object TwitterTimelineWidgetLikesDataSource {
-  @scala.inline
-  def AnonScreenNameSourceType(screenName: String, sourceType: likes): TwitterTimelineWidgetLikesDataSource = {
-    val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[TwitterTimelineWidgetLikesDataSource]
+  inline def ScreenNameSourceType(screenName: String): typingsJapgolly.twitterForWeb.anon.ScreenNameSourceType = {
+    val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = "likes")
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.anon.ScreenNameSourceType]
   }
-  @scala.inline
-  def AnonUserId(sourceType: likes, userId: String): TwitterTimelineWidgetLikesDataSource = {
-    val __obj = js.Dynamic.literal(sourceType = sourceType.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[TwitterTimelineWidgetLikesDataSource]
+  inline def UserId(userId: String): typingsJapgolly.twitterForWeb.anon.UserId = {
+    val __obj = js.Dynamic.literal(sourceType = "likes", userId = userId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.anon.UserId]
   }
 }
-

@@ -1,125 +1,171 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeFontUnderlineStyle extends js.Object
-
+sealed trait ShapeFontUnderlineStyle extends StObject
 /**
-  *
   * The type of underline applied to a font.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeFontUnderlineStyle")
 @js.native
-object ShapeFontUnderlineStyle extends js.Object {
+object ShapeFontUnderlineStyle extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dash extends ShapeFontUnderlineStyle
+  sealed trait dash
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dashHeavy extends ShapeFontUnderlineStyle
+  sealed trait dashHeavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dashLong extends ShapeFontUnderlineStyle
+  sealed trait dashLong
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dashLongHeavy extends ShapeFontUnderlineStyle
+  sealed trait dashLongHeavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dotDash extends ShapeFontUnderlineStyle
+  sealed trait dotDash
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dotDashHeavy extends ShapeFontUnderlineStyle
+  sealed trait dotDashHeavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dotDotDash extends ShapeFontUnderlineStyle
+  sealed trait dotDotDash
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dotDotDashHeavy extends ShapeFontUnderlineStyle
+  sealed trait dotDotDashHeavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dotted extends ShapeFontUnderlineStyle
+  sealed trait dotted
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dottedHeavy extends ShapeFontUnderlineStyle
+  sealed trait dottedHeavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait double extends ShapeFontUnderlineStyle
+  sealed trait double
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait heavy extends ShapeFontUnderlineStyle
+  sealed trait heavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait none extends ShapeFontUnderlineStyle
+  sealed trait none
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait single extends ShapeFontUnderlineStyle
+  sealed trait single
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait wavy extends ShapeFontUnderlineStyle
+  sealed trait wavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait wavyDouble extends ShapeFontUnderlineStyle
+  sealed trait wavyDouble
+    extends StObject
+       with ShapeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait wavyHeavy extends ShapeFontUnderlineStyle
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeFontUnderlineStyle with String] = js.native
-  /* "Dash" */ @js.native
-  object dash extends TopLevel[dash with String]
-  
-  /* "DashHeavy" */ @js.native
-  object dashHeavy extends TopLevel[dashHeavy with String]
-  
-  /* "DashLong" */ @js.native
-  object dashLong extends TopLevel[dashLong with String]
-  
-  /* "DashLongHeavy" */ @js.native
-  object dashLongHeavy extends TopLevel[dashLongHeavy with String]
-  
-  /* "DotDash" */ @js.native
-  object dotDash extends TopLevel[dotDash with String]
-  
-  /* "DotDashHeavy" */ @js.native
-  object dotDashHeavy extends TopLevel[dotDashHeavy with String]
-  
-  /* "DotDotDash" */ @js.native
-  object dotDotDash extends TopLevel[dotDotDash with String]
-  
-  /* "DotDotDashHeavy" */ @js.native
-  object dotDotDashHeavy extends TopLevel[dotDotDashHeavy with String]
-  
-  /* "Dotted" */ @js.native
-  object dotted extends TopLevel[dotted with String]
-  
-  /* "DottedHeavy" */ @js.native
-  object dottedHeavy extends TopLevel[dottedHeavy with String]
-  
-  /* "Double" */ @js.native
-  object double extends TopLevel[double with String]
-  
-  /* "Heavy" */ @js.native
-  object heavy extends TopLevel[heavy with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "Single" */ @js.native
-  object single extends TopLevel[single with String]
-  
-  /* "Wavy" */ @js.native
-  object wavy extends TopLevel[wavy with String]
-  
-  /* "WavyDouble" */ @js.native
-  object wavyDouble extends TopLevel[wavyDouble with String]
-  
-  /* "WavyHeavy" */ @js.native
-  object wavyHeavy extends TopLevel[wavyHeavy with String]
-  
+  sealed trait wavyHeavy
+    extends StObject
+       with ShapeFontUnderlineStyle
 }
-

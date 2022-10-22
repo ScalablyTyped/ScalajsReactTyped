@@ -1,53 +1,42 @@
 package typingsJapgolly.reactElemental.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.reactElemental.mod.TagProps
 import typingsJapgolly.reactElemental.mod.TagSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tag {
-  def apply(
-    text: String,
-    backgroundColor: String = null,
-    dismissible: js.UndefOr[Boolean] = js.undefined,
-    onDismiss: js.UndefOr[Callback] = js.undefined,
-    outlineColor: String = null,
-    size: TagSize = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[TagProps, MountedWithRawType[TagProps, js.Object, RawMounted[TagProps, js.Object]]] = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
   
-      if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible.asInstanceOf[js.Any])
-    onDismiss.foreach(p => __obj.updateDynamic("onDismiss")(p.toJsFn))
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.reactElemental.mod.TagProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactElemental.mod.TagProps])(children: _*)
+  inline def apply(text: String): Builder = {
+    val __props = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[TagProps]))
   }
+  
   @JSImport("react-elemental", "Tag")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def backgroundColor(value: String): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def dismissible(value: Boolean): this.type = set("dismissible", value.asInstanceOf[js.Any])
+    
+    inline def onDismiss(value: Callback): this.type = set("onDismiss", value.toJsFn)
+    
+    inline def outlineColor(value: String): this.type = set("outlineColor", value.asInstanceOf[js.Any])
+    
+    inline def size(value: TagSize): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: TagProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

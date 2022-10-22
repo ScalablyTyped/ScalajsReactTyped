@@ -1,19 +1,19 @@
 
 # Scala.js typings for ignite-ui
 
-Typings are for version 19.2
+Typings are for version 20.1
 
 ## Library description:
-Ignite UI by Infragistics
+Ignite UI for jQuery by Infragistics
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ignite-ui |
-| Keywords           | igniteui, ignite ui, infragistics, jquery controls, jquery widgets |
-| # releases         | 24 |
-| # dependents       | 0 |
-| # downloads        | 13700 |
-| # stars            | 0 |
+| Keywords           | igniteui, ignite ui, ignite ui for jquery, infragistics, jquery controls, jquery widgets |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 1575.6666666666667 |
+| # stars            | 479.0 |
 
 ## Links
 - [Homepage](http://www.igniteui.com/)

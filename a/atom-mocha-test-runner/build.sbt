@@ -1,17 +1,15 @@
 organization := "org.scalablytyped.japgolly"
 name := "atom-mocha-test-runner"
-version := "1.0-dt-20180214Z-59b63b"
-scalaVersion := "2.13.1"
+version := "1.0-dt-20211202Z-5fc742"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "atom" % "1.40-dt-20200226Z-463966",
-  "org.scalablytyped.japgolly" %%% "mocha" % "7.0-dt-20200225Z-ea96af",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "atom" % "1.40-dt-20211202Z-52c4d9",
+  "org.scalablytyped.japgolly" %%% "mocha" % "10.0-dt-20220928Z-7e61c2",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

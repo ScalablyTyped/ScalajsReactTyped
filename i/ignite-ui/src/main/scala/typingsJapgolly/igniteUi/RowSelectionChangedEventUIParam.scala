@@ -1,32 +1,47 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RowSelectionChangedEventUIParam extends js.Object {
+trait RowSelectionChangedEventUIParam extends StObject {
+  
   /**
-  	 * Gets reference to GridSelection.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to GridSelection.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets reference to the row object.
-  	 */
-  var row: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to the row object.
+    */
+  var row: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets reference to rows object array.
-  	 */
-  var selectedRows: js.UndefOr[js.Array[_]] = js.undefined
+    * Gets reference to rows object array.
+    */
+  var selectedRows: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object RowSelectionChangedEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null, row: js.Any = null, selectedRows: js.Array[_] = null): RowSelectionChangedEventUIParam = {
+  
+  inline def apply(): RowSelectionChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowSelectionChangedEventUIParam]
   }
+  
+  extension [Self <: RowSelectionChangedEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    
+    inline def setSelectedRows(value: js.Array[Any]): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
+    
+    inline def setSelectedRowsVarargs(value: Any*): Self = StObject.set(x, "selectedRows", js.Array(value*))
+  }
 }
-

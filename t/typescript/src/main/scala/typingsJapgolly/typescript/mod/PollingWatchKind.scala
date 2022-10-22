@@ -1,35 +1,39 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PollingWatchKind extends js.Object
-
+sealed trait PollingWatchKind extends StObject
 @JSImport("typescript", "PollingWatchKind")
 @js.native
-object PollingWatchKind extends js.Object {
-  @js.native
-  sealed trait DynamicPriority extends PollingWatchKind
-  
-  @js.native
-  sealed trait FixedInterval extends PollingWatchKind
-  
-  @js.native
-  sealed trait PriorityInterval extends PollingWatchKind
+object PollingWatchKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PollingWatchKind with Double] = js.native
-  /* 2 */ @js.native
-  object DynamicPriority extends TopLevel[DynamicPriority with Double]
+  def apply(value: Double): js.UndefOr[PollingWatchKind & Double] = js.native
   
-  /* 0 */ @js.native
-  object FixedInterval extends TopLevel[FixedInterval with Double]
+  @js.native
+  sealed trait DynamicPriority
+    extends StObject
+       with PollingWatchKind
+  /* 2 */ val DynamicPriority: typingsJapgolly.typescript.mod.PollingWatchKind.DynamicPriority & Double = js.native
   
-  /* 1 */ @js.native
-  object PriorityInterval extends TopLevel[PriorityInterval with Double]
+  @js.native
+  sealed trait FixedChunkSize
+    extends StObject
+       with PollingWatchKind
+  /* 3 */ val FixedChunkSize: typingsJapgolly.typescript.mod.PollingWatchKind.FixedChunkSize & Double = js.native
   
+  @js.native
+  sealed trait FixedInterval
+    extends StObject
+       with PollingWatchKind
+  /* 0 */ val FixedInterval: typingsJapgolly.typescript.mod.PollingWatchKind.FixedInterval & Double = js.native
+  
+  @js.native
+  sealed trait PriorityInterval
+    extends StObject
+       with PollingWatchKind
+  /* 1 */ val PriorityInterval: typingsJapgolly.typescript.mod.PollingWatchKind.PriorityInterval & Double = js.native
 }
-

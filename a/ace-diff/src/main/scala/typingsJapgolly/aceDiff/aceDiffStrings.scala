@@ -1,19 +1,16 @@
 package typingsJapgolly.aceDiff
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aceDiffStrings {
-  @js.native
-  sealed trait broad extends js.Object
   
   @js.native
-  sealed trait specific extends js.Object
+  sealed trait broad extends StObject
+  inline def broad: broad = "broad".asInstanceOf[broad]
   
-  @scala.inline
-  def broad: broad = "broad".asInstanceOf[broad]
-  @scala.inline
-  def specific: specific = "specific".asInstanceOf[specific]
+  @js.native
+  sealed trait specific extends StObject
+  inline def specific: specific = "specific".asInstanceOf[specific]
 }
-

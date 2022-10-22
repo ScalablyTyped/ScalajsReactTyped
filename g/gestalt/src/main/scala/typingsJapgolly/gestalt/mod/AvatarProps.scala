@@ -1,35 +1,58 @@
 package typingsJapgolly.gestalt.mod
 
+import typingsJapgolly.gestalt.gestaltStrings.fit
 import typingsJapgolly.gestalt.gestaltStrings.lg
 import typingsJapgolly.gestalt.gestaltStrings.md
 import typingsJapgolly.gestalt.gestaltStrings.sm
+import typingsJapgolly.gestalt.gestaltStrings.xl
+import typingsJapgolly.gestalt.gestaltStrings.xs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AvatarProps extends js.Object {
+trait AvatarProps extends StObject {
+  
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
+  
   var name: String
+  
   var outline: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[sm | md | lg] = js.undefined
+  
+  var size: js.UndefOr[xs | sm | md | lg | xl | fit] = js.undefined
+  
   var src: js.UndefOr[String] = js.undefined
+  
   var verified: js.UndefOr[Boolean] = js.undefined
 }
-
 object AvatarProps {
-  @scala.inline
-  def apply(
-    name: String,
-    outline: js.UndefOr[Boolean] = js.undefined,
-    size: sm | md | lg = null,
-    src: String = null,
-    verified: js.UndefOr[Boolean] = js.undefined
-  ): AvatarProps = {
+  
+  inline def apply(name: String): AvatarProps = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvatarProps]
   }
+  
+  extension [Self <: AvatarProps](x: Self) {
+    
+    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setOutline(value: Boolean): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    
+    inline def setSize(value: xs | sm | md | lg | xl | fit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    
+    inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+    
+    inline def setVerifiedUndefined: Self = StObject.set(x, "verified", js.undefined)
+  }
 }
-

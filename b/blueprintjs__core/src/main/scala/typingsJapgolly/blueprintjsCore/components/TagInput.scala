@@ -1,93 +1,99 @@
 package typingsJapgolly.blueprintjsCore.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
 import japgolly.scalajs.react.ReactKeyboardEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.React.Node
 import japgolly.scalajs.react.vdom.VdomElement
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import org.scalajs.dom.raw.HTMLInputElement
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.HTMLInputElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.blueprintjsCore.blueprintjsCoreBooleans.`false`
-import typingsJapgolly.blueprintjsCore.intentMod.Intent
-import typingsJapgolly.blueprintjsCore.propsMod.HTMLInputProps
-import typingsJapgolly.blueprintjsCore.propsMod.MaybeElement
-import typingsJapgolly.blueprintjsCore.tagInputMod.ITagInputProps
-import typingsJapgolly.blueprintjsCore.tagInputMod.TagInputAddMethod
-import typingsJapgolly.blueprintjsCore.tagMod.ITagProps
-import typingsJapgolly.blueprintjsIcons.iconNameMod.IconName
+import typingsJapgolly.blueprintjsCore.libEsmCommonIntentMod.Intent
+import typingsJapgolly.blueprintjsCore.libEsmCommonPropsMod.HTMLInputProps
+import typingsJapgolly.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
+import typingsJapgolly.blueprintjsCore.libEsmComponentsTagInputTagInputMod.ITagInputProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsTagInputTagInputMod.TagInputAddMethod
+import typingsJapgolly.blueprintjsCore.libEsmComponentsTagTagMod.TagProps
+import typingsJapgolly.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typingsJapgolly.react.mod.Ref
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TagInput {
-  def apply(
-    values: js.Array[Node],
-    addOnBlur: js.UndefOr[Boolean] = js.undefined,
-    addOnPaste: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    fill: js.UndefOr[Boolean] = js.undefined,
-    inputProps: HTMLInputProps = null,
-    inputRef: /* input */ HTMLInputElement | Null => Callback = null,
-    inputValue: String = null,
-    intent: Intent = null,
-    large: js.UndefOr[Boolean] = js.undefined,
-    leftIcon: IconName | MaybeElement = null,
-    onAdd: (/* values */ js.Array[String], /* method */ TagInputAddMethod) => CallbackTo[Boolean | Unit] = null,
-    onChange: /* values */ js.Array[Node] => CallbackTo[Boolean | Unit] = null,
-    onInputChange: ReactEventFrom[HTMLInputElement] => Callback = null,
-    onKeyDown: (/* event */ ReactKeyboardEventFrom[HTMLElement], /* index */ js.UndefOr[Double]) => Callback = null,
-    onKeyUp: (/* event */ ReactKeyboardEventFrom[HTMLElement], /* index */ js.UndefOr[Double]) => Callback = null,
-    onRemove: (/* value */ String, /* index */ Double) => Callback = null,
-    placeholder: String = null,
-    rightElement: VdomElement = null,
-    separator: String | js.RegExp | `false` = null,
-    tagProps: ITagProps | (js.Function2[/* value */ Node, /* index */ Double, ITagProps]) = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ITagInputProps, typingsJapgolly.blueprintjsCore.mod.TagInput, Unit, ITagInputProps] = {
-    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(addOnBlur)) __obj.updateDynamic("addOnBlur")(addOnBlur.asInstanceOf[js.Any])
-    if (!js.isUndefined(addOnPaste)) __obj.updateDynamic("addOnPaste")(addOnPaste.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1((t0: /* input */ org.scalajs.dom.raw.HTMLInputElement | scala.Null) => inputRef(t0).runNow()))
-    if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
-    if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
-    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction2((t0: /* values */ js.Array[java.lang.String], t1: /* method */ typingsJapgolly.blueprintjsCore.tagInputMod.TagInputAddMethod) => onAdd(t0, t1).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* values */ js.Array[japgolly.scalajs.react.raw.React.Node]) => onChange(t0).runNow()))
-    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onInputChange(t0).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* index */ js.UndefOr[scala.Double]) => onKeyDown(t0, t1).runNow()))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* index */ js.UndefOr[scala.Double]) => onKeyUp(t0, t1).runNow()))
-    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction2((t0: /* value */ java.lang.String, t1: /* index */ scala.Double) => onRemove(t0, t1).runNow()))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement.rawElement.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (tagProps != null) __obj.updateDynamic("tagProps")(tagProps.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsCore.tagInputMod.ITagInputProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsCore.mod.TagInput](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsCore.tagInputMod.ITagInputProps])(children: _*)
+  inline def apply(values: js.Array[Node]): Builder = {
+    val __props = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ITagInputProps]))
   }
+  
   @JSImport("@blueprintjs/core", "TagInput")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsCore.mod.TagInput] {
+    
+    inline def addOnBlur(value: Boolean): this.type = set("addOnBlur", value.asInstanceOf[js.Any])
+    
+    inline def addOnPaste(value: Boolean): this.type = set("addOnPaste", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def fill(value: Boolean): this.type = set("fill", value.asInstanceOf[js.Any])
+    
+    inline def inputProps(value: HTMLInputProps): this.type = set("inputProps", value.asInstanceOf[js.Any])
+    
+    inline def inputRef(value: Ref[HTMLInputElement]): this.type = set("inputRef", value.asInstanceOf[js.Any])
+    
+    inline def inputRefFunction1(value: HTMLInputElement | Null => Callback): this.type = set("inputRef", js.Any.fromFunction1((t0: HTMLInputElement | Null) => value(t0).runNow()))
+    
+    inline def inputRefNull: this.type = set("inputRef", null)
+    
+    inline def inputValue(value: String): this.type = set("inputValue", value.asInstanceOf[js.Any])
+    
+    inline def intent(value: Intent): this.type = set("intent", value.asInstanceOf[js.Any])
+    
+    inline def large(value: Boolean): this.type = set("large", value.asInstanceOf[js.Any])
+    
+    inline def leftIcon(value: BlueprintIcons16Id | MaybeElement): this.type = set("leftIcon", value.asInstanceOf[js.Any])
+    
+    inline def leftIconNull: this.type = set("leftIcon", null)
+    
+    inline def leftIconVdomElement(value: VdomElement): this.type = set("leftIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onAdd(value: (/* values */ js.Array[String], /* method */ TagInputAddMethod) => Boolean | Unit): this.type = set("onAdd", js.Any.fromFunction2(value))
+    
+    inline def onChange(value: /* values */ js.Array[Node] => Boolean | Unit): this.type = set("onChange", js.Any.fromFunction1(value))
+    
+    inline def onInputChange(value: ReactEventFrom[HTMLInputElement & Element] => Callback): this.type = set("onInputChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & Element]) => value(t0).runNow()))
+    
+    inline def onKeyDown(
+      value: (/* event */ ReactKeyboardEventFrom[HTMLElement], /* index */ js.UndefOr[Double]) => Callback
+    ): this.type = set("onKeyDown", js.Any.fromFunction2((t0: /* event */ ReactKeyboardEventFrom[HTMLElement], t1: /* index */ js.UndefOr[Double]) => (value(t0, t1)).runNow()))
+    
+    inline def onKeyUp(
+      value: (/* event */ ReactKeyboardEventFrom[HTMLElement], /* index */ js.UndefOr[Double]) => Callback
+    ): this.type = set("onKeyUp", js.Any.fromFunction2((t0: /* event */ ReactKeyboardEventFrom[HTMLElement], t1: /* index */ js.UndefOr[Double]) => (value(t0, t1)).runNow()))
+    
+    inline def onRemove(value: (/* value */ Node, /* index */ Double) => Callback): this.type = set("onRemove", js.Any.fromFunction2((t0: /* value */ Node, t1: /* index */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def rightElement(value: VdomElement): this.type = set("rightElement", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def separator(value: String | js.RegExp | `false`): this.type = set("separator", value.asInstanceOf[js.Any])
+    
+    inline def tagProps(value: TagProps | (js.Function2[/* value */ Node, /* index */ Double, TagProps])): this.type = set("tagProps", value.asInstanceOf[js.Any])
+    
+    inline def tagPropsFunction2(value: (/* value */ Node, /* index */ Double) => TagProps): this.type = set("tagProps", js.Any.fromFunction2(value))
+  }
+  
+  def withProps(p: ITagInputProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

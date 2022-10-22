@@ -1,63 +1,59 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-4105`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-4115`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-4118`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-4142`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-4147`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-4168`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`9`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-4105`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-4115`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-4118`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-4142`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-4147`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-4168`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`3`
+import typingsJapgolly.activexOffice.activexOfficeInts.`5`
+import typingsJapgolly.activexOffice.activexOfficeInts.`8`
+import typingsJapgolly.activexOffice.activexOfficeInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-4105`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-4115`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-4118`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-4142`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-4147`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`9`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-4168`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-4105`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`8`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-4115`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-4118`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-4142`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-4147`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`9`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`5`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`3`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-4168`
 */
-trait XlMarkerStyle extends js.Object
-
+trait XlMarkerStyle extends StObject
 object XlMarkerStyle {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlMarkerStyleAutomatic: `-4105` = this.cast(-4105)
-  @scala.inline
-  def xlMarkerStyleCircle: `8` = this.cast(8)
-  @scala.inline
-  def xlMarkerStyleDash: `-4115` = this.cast(-4115)
-  @scala.inline
-  def xlMarkerStyleDiamond: `2` = this.cast(2)
-  @scala.inline
-  def xlMarkerStyleDot: `-4118` = this.cast(-4118)
-  @scala.inline
-  def xlMarkerStyleNone: `-4142` = this.cast(-4142)
-  @scala.inline
-  def xlMarkerStylePicture: `-4147` = this.cast(-4147)
-  @scala.inline
-  def xlMarkerStylePlus: `9` = this.cast(9)
-  @scala.inline
-  def xlMarkerStyleSquare: `1` = this.cast(1)
-  @scala.inline
-  def xlMarkerStyleStar: `5` = this.cast(5)
-  @scala.inline
-  def xlMarkerStyleTriangle: `3` = this.cast(3)
-  @scala.inline
-  def xlMarkerStyleX: `-4168` = this.cast(-4168)
+  
+  inline def xlMarkerStyleAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  
+  inline def xlMarkerStyleCircle: `8` = 8.asInstanceOf[`8`]
+  
+  inline def xlMarkerStyleDash: `-4115` = -4115.asInstanceOf[`-4115`]
+  
+  inline def xlMarkerStyleDiamond: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlMarkerStyleDot: `-4118` = -4118.asInstanceOf[`-4118`]
+  
+  inline def xlMarkerStyleNone: `-4142` = -4142.asInstanceOf[`-4142`]
+  
+  inline def xlMarkerStylePicture: `-4147` = -4147.asInstanceOf[`-4147`]
+  
+  inline def xlMarkerStylePlus: `9` = 9.asInstanceOf[`9`]
+  
+  inline def xlMarkerStyleSquare: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlMarkerStyleStar: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlMarkerStyleTriangle: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlMarkerStyleX: `-4168` = -4168.asInstanceOf[`-4168`]
 }
-

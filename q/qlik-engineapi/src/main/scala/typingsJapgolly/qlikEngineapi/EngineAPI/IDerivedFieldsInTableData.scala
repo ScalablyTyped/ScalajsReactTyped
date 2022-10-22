@@ -1,33 +1,44 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DerivedFieldsInTableData...
   */
-trait IDerivedFieldsInTableData extends js.Object {
+trait IDerivedFieldsInTableData extends StObject {
+  
   /**
     * Is set to true is the derived field is in use.
     */
   var qActive: Boolean
+  
   /**
     * Name of the derived definition.
     */
   var qDefinitionName: String
+  
   /**
     * List of tags.
     */
   var qTags: js.Array[String]
 }
-
 object IDerivedFieldsInTableData {
-  @scala.inline
-  def apply(qActive: Boolean, qDefinitionName: String, qTags: js.Array[String]): IDerivedFieldsInTableData = {
-    val __obj = js.Dynamic.literal(qActive = qActive.asInstanceOf[js.Any], qDefinitionName = qDefinitionName.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any])
   
+  inline def apply(qActive: Boolean, qDefinitionName: String, qTags: js.Array[String]): IDerivedFieldsInTableData = {
+    val __obj = js.Dynamic.literal(qActive = qActive.asInstanceOf[js.Any], qDefinitionName = qDefinitionName.asInstanceOf[js.Any], qTags = qTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDerivedFieldsInTableData]
   }
+  
+  extension [Self <: IDerivedFieldsInTableData](x: Self) {
+    
+    inline def setQActive(value: Boolean): Self = StObject.set(x, "qActive", value.asInstanceOf[js.Any])
+    
+    inline def setQDefinitionName(value: String): Self = StObject.set(x, "qDefinitionName", value.asInstanceOf[js.Any])
+    
+    inline def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
+    
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value*))
+  }
 }
-

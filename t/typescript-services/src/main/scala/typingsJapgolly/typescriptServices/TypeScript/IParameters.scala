@@ -1,41 +1,60 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IParameters extends js.Object {
+trait IParameters extends StObject {
+  
   var ast: AST
-  var length: Double
+  
   def astAt(index: Double): AST
+  
   def identifierAt(index: Double): Identifier
+  
   def initializerAt(index: Double): EqualsValueClause
+  
   def isOptionalAt(index: Double): Boolean
+  
   def lastParameterIsRest(): Boolean
+  
+  var length: Double
+  
   def typeAt(index: Double): AST
 }
-
 object IParameters {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     ast: AST,
-    astAt: Double => CallbackTo[AST],
-    identifierAt: Double => CallbackTo[Identifier],
-    initializerAt: Double => CallbackTo[EqualsValueClause],
-    isOptionalAt: Double => CallbackTo[Boolean],
+    astAt: Double => AST,
+    identifierAt: Double => Identifier,
+    initializerAt: Double => EqualsValueClause,
+    isOptionalAt: Double => Boolean,
     lastParameterIsRest: CallbackTo[Boolean],
     length: Double,
-    typeAt: Double => CallbackTo[AST]
+    typeAt: Double => AST
   ): IParameters = {
-    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
-    __obj.updateDynamic("astAt")(js.Any.fromFunction1((t0: scala.Double) => astAt(t0).runNow()))
-    __obj.updateDynamic("identifierAt")(js.Any.fromFunction1((t0: scala.Double) => identifierAt(t0).runNow()))
-    __obj.updateDynamic("initializerAt")(js.Any.fromFunction1((t0: scala.Double) => initializerAt(t0).runNow()))
-    __obj.updateDynamic("isOptionalAt")(js.Any.fromFunction1((t0: scala.Double) => isOptionalAt(t0).runNow()))
-    __obj.updateDynamic("lastParameterIsRest")(lastParameterIsRest.toJsFn)
-    __obj.updateDynamic("typeAt")(js.Any.fromFunction1((t0: scala.Double) => typeAt(t0).runNow()))
+    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], astAt = js.Any.fromFunction1(astAt), identifierAt = js.Any.fromFunction1(identifierAt), initializerAt = js.Any.fromFunction1(initializerAt), isOptionalAt = js.Any.fromFunction1(isOptionalAt), lastParameterIsRest = lastParameterIsRest.toJsFn, length = length.asInstanceOf[js.Any], typeAt = js.Any.fromFunction1(typeAt))
     __obj.asInstanceOf[IParameters]
   }
+  
+  extension [Self <: IParameters](x: Self) {
+    
+    inline def setAst(value: AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
+    
+    inline def setAstAt(value: Double => AST): Self = StObject.set(x, "astAt", js.Any.fromFunction1(value))
+    
+    inline def setIdentifierAt(value: Double => Identifier): Self = StObject.set(x, "identifierAt", js.Any.fromFunction1(value))
+    
+    inline def setInitializerAt(value: Double => EqualsValueClause): Self = StObject.set(x, "initializerAt", js.Any.fromFunction1(value))
+    
+    inline def setIsOptionalAt(value: Double => Boolean): Self = StObject.set(x, "isOptionalAt", js.Any.fromFunction1(value))
+    
+    inline def setLastParameterIsRest(value: CallbackTo[Boolean]): Self = StObject.set(x, "lastParameterIsRest", value.toJsFn)
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAt(value: Double => AST): Self = StObject.set(x, "typeAt", js.Any.fromFunction1(value))
+  }
 }
-

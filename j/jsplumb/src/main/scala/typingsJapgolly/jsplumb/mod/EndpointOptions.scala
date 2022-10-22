@@ -1,103 +1,212 @@
 package typingsJapgolly.jsplumb.mod
 
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EndpointOptions extends js.Object {
+trait EndpointOptions extends StObject {
+  
   var anchor: js.UndefOr[AnchorSpec] = js.undefined
+  
   var connectionType: js.UndefOr[String] = js.undefined
+  
   var connectionsDetachable: js.UndefOr[Boolean] = js.undefined
+  
   var connector: js.UndefOr[ConnectorSpec] = js.undefined
+  
   var `connector-pointer-events`: js.UndefOr[String] = js.undefined
+  
   var connectorClass: js.UndefOr[String] = js.undefined
+  
   var connectorHoverClass: js.UndefOr[String] = js.undefined
+  
   var connectorHoverStyle: js.UndefOr[PaintStyle] = js.undefined
+  
   var connectorOverlays: js.UndefOr[js.Array[OverlaySpec]] = js.undefined
+  
   var connectorStyle: js.UndefOr[PaintStyle] = js.undefined
+  
   var cssClass: js.UndefOr[String] = js.undefined
+  
   //= 1?
   var dragOptions: js.UndefOr[DragOptions] = js.undefined
+  
   var dragProxy: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var dropOptions: js.UndefOr[DropOptions] = js.undefined
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
-  var endpoint: js.UndefOr[Endpoint] = js.undefined
+  
+  var endpoint: js.UndefOr[EndpointSpec] = js.undefined
+  
   var hoverClass: js.UndefOr[String] = js.undefined
+  
   var hoverPaintStyle: js.UndefOr[PaintStyle] = js.undefined
-  var id: String
+  
+  var id: js.UndefOr[String] = js.undefined
+  
   //= true
   var isSource: js.UndefOr[Boolean] = js.undefined
+  
   //= false
   var isTarget: js.UndefOr[Boolean] = js.undefined
+  
   var maxConnections: Double
+  
+  // "Dot", etc.
+  var overlays: js.UndefOr[js.Array[OverlaySpec]] = js.undefined
+  
   //= true
   var paintStyle: js.UndefOr[PaintStyle] = js.undefined
+  
   //= false
-  var parameters: js.Object
+  var parameters: js.UndefOr[Record[String, Any]] = js.undefined
+  
   //= false
   var reattach: js.UndefOr[Boolean] = js.undefined
-  var reattachConnections: Boolean
-  var scope: String
-  var `type`: String
+  
+  var reattachConnections: js.UndefOr[Boolean] = js.undefined
+  
+  var scope: js.UndefOr[String] = js.undefined
+  
+  var `type`: js.UndefOr[String] = js.undefined
+  
+  var uuid: js.UndefOr[String] = js.undefined
 }
-
 object EndpointOptions {
-  @scala.inline
-  def apply(
-    id: String,
-    maxConnections: Double,
-    parameters: js.Object,
-    reattachConnections: Boolean,
-    scope: String,
-    `type`: String,
-    anchor: AnchorSpec = null,
-    connectionType: String = null,
-    connectionsDetachable: js.UndefOr[Boolean] = js.undefined,
-    connector: ConnectorSpec = null,
-    `connector-pointer-events`: String = null,
-    connectorClass: String = null,
-    connectorHoverClass: String = null,
-    connectorHoverStyle: PaintStyle = null,
-    connectorOverlays: js.Array[OverlaySpec] = null,
-    connectorStyle: PaintStyle = null,
-    cssClass: String = null,
-    dragOptions: DragOptions = null,
-    dragProxy: String | js.Array[String] = null,
-    dropOptions: DropOptions = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    endpoint: Endpoint = null,
-    hoverClass: String = null,
-    hoverPaintStyle: PaintStyle = null,
-    isSource: js.UndefOr[Boolean] = js.undefined,
-    isTarget: js.UndefOr[Boolean] = js.undefined,
-    paintStyle: PaintStyle = null,
-    reattach: js.UndefOr[Boolean] = js.undefined
-  ): EndpointOptions = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], maxConnections = maxConnections.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], reattachConnections = reattachConnections.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (connectionType != null) __obj.updateDynamic("connectionType")(connectionType.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectionsDetachable)) __obj.updateDynamic("connectionsDetachable")(connectionsDetachable.asInstanceOf[js.Any])
-    if (connector != null) __obj.updateDynamic("connector")(connector.asInstanceOf[js.Any])
-    if (`connector-pointer-events` != null) __obj.updateDynamic("connector-pointer-events")(`connector-pointer-events`.asInstanceOf[js.Any])
-    if (connectorClass != null) __obj.updateDynamic("connectorClass")(connectorClass.asInstanceOf[js.Any])
-    if (connectorHoverClass != null) __obj.updateDynamic("connectorHoverClass")(connectorHoverClass.asInstanceOf[js.Any])
-    if (connectorHoverStyle != null) __obj.updateDynamic("connectorHoverStyle")(connectorHoverStyle.asInstanceOf[js.Any])
-    if (connectorOverlays != null) __obj.updateDynamic("connectorOverlays")(connectorOverlays.asInstanceOf[js.Any])
-    if (connectorStyle != null) __obj.updateDynamic("connectorStyle")(connectorStyle.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (dragOptions != null) __obj.updateDynamic("dragOptions")(dragOptions.asInstanceOf[js.Any])
-    if (dragProxy != null) __obj.updateDynamic("dragProxy")(dragProxy.asInstanceOf[js.Any])
-    if (dropOptions != null) __obj.updateDynamic("dropOptions")(dropOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (hoverClass != null) __obj.updateDynamic("hoverClass")(hoverClass.asInstanceOf[js.Any])
-    if (hoverPaintStyle != null) __obj.updateDynamic("hoverPaintStyle")(hoverPaintStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSource)) __obj.updateDynamic("isSource")(isSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTarget)) __obj.updateDynamic("isTarget")(isTarget.asInstanceOf[js.Any])
-    if (paintStyle != null) __obj.updateDynamic("paintStyle")(paintStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(reattach)) __obj.updateDynamic("reattach")(reattach.asInstanceOf[js.Any])
+  
+  inline def apply(maxConnections: Double): EndpointOptions = {
+    val __obj = js.Dynamic.literal(maxConnections = maxConnections.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointOptions]
   }
+  
+  extension [Self <: EndpointOptions](x: Self) {
+    
+    inline def setAnchor(value: AnchorSpec): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    
+    inline def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = StObject.set(x, "anchor", js.Array(value*))
+    
+    inline def setConnectionType(value: String): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionTypeUndefined: Self = StObject.set(x, "connectionType", js.undefined)
+    
+    inline def setConnectionsDetachable(value: Boolean): Self = StObject.set(x, "connectionsDetachable", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionsDetachableUndefined: Self = StObject.set(x, "connectionsDetachable", js.undefined)
+    
+    inline def setConnector(value: ConnectorSpec): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+    
+    inline def `setConnector-pointer-events`(value: String): Self = StObject.set(x, "connector-pointer-events", value.asInstanceOf[js.Any])
+    
+    inline def `setConnector-pointer-eventsUndefined`: Self = StObject.set(x, "connector-pointer-events", js.undefined)
+    
+    inline def setConnectorClass(value: String): Self = StObject.set(x, "connectorClass", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorClassUndefined: Self = StObject.set(x, "connectorClass", js.undefined)
+    
+    inline def setConnectorHoverClass(value: String): Self = StObject.set(x, "connectorHoverClass", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorHoverClassUndefined: Self = StObject.set(x, "connectorHoverClass", js.undefined)
+    
+    inline def setConnectorHoverStyle(value: PaintStyle): Self = StObject.set(x, "connectorHoverStyle", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorHoverStyleUndefined: Self = StObject.set(x, "connectorHoverStyle", js.undefined)
+    
+    inline def setConnectorOverlays(value: js.Array[OverlaySpec]): Self = StObject.set(x, "connectorOverlays", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorOverlaysUndefined: Self = StObject.set(x, "connectorOverlays", js.undefined)
+    
+    inline def setConnectorOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "connectorOverlays", js.Array(value*))
+    
+    inline def setConnectorStyle(value: PaintStyle): Self = StObject.set(x, "connectorStyle", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorStyleUndefined: Self = StObject.set(x, "connectorStyle", js.undefined)
+    
+    inline def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
+    
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    
+    inline def setDragOptions(value: DragOptions): Self = StObject.set(x, "dragOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDragOptionsUndefined: Self = StObject.set(x, "dragOptions", js.undefined)
+    
+    inline def setDragProxy(value: String | js.Array[String]): Self = StObject.set(x, "dragProxy", value.asInstanceOf[js.Any])
+    
+    inline def setDragProxyUndefined: Self = StObject.set(x, "dragProxy", js.undefined)
+    
+    inline def setDragProxyVarargs(value: String*): Self = StObject.set(x, "dragProxy", js.Array(value*))
+    
+    inline def setDropOptions(value: DropOptions): Self = StObject.set(x, "dropOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDropOptionsUndefined: Self = StObject.set(x, "dropOptions", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setEndpoint(value: EndpointSpec): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    
+    inline def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
+    
+    inline def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
+    
+    inline def setHoverPaintStyle(value: PaintStyle): Self = StObject.set(x, "hoverPaintStyle", value.asInstanceOf[js.Any])
+    
+    inline def setHoverPaintStyleUndefined: Self = StObject.set(x, "hoverPaintStyle", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIsSource(value: Boolean): Self = StObject.set(x, "isSource", value.asInstanceOf[js.Any])
+    
+    inline def setIsSourceUndefined: Self = StObject.set(x, "isSource", js.undefined)
+    
+    inline def setIsTarget(value: Boolean): Self = StObject.set(x, "isTarget", value.asInstanceOf[js.Any])
+    
+    inline def setIsTargetUndefined: Self = StObject.set(x, "isTarget", js.undefined)
+    
+    inline def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
+    
+    inline def setOverlays(value: js.Array[OverlaySpec]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
+    
+    inline def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
+    
+    inline def setOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "overlays", js.Array(value*))
+    
+    inline def setPaintStyle(value: PaintStyle): Self = StObject.set(x, "paintStyle", value.asInstanceOf[js.Any])
+    
+    inline def setPaintStyleUndefined: Self = StObject.set(x, "paintStyle", js.undefined)
+    
+    inline def setParameters(value: Record[String, Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    
+    inline def setReattach(value: Boolean): Self = StObject.set(x, "reattach", value.asInstanceOf[js.Any])
+    
+    inline def setReattachConnections(value: Boolean): Self = StObject.set(x, "reattachConnections", value.asInstanceOf[js.Any])
+    
+    inline def setReattachConnectionsUndefined: Self = StObject.set(x, "reattachConnections", js.undefined)
+    
+    inline def setReattachUndefined: Self = StObject.set(x, "reattach", js.undefined)
+    
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+  }
 }
-

@@ -1,26 +1,31 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "OperandMaker")
 @js.native
-class OperandMaker () extends js.Object
-
+open class OperandMaker () extends StObject
 /* static members */
-@JSImport("survey-knockout", "OperandMaker")
-@js.native
-object OperandMaker extends js.Object {
-  var binaryFunctions: HashTable[js.Function] = js.native
-  var signs: HashTable[String] = js.native
-  var unaryFunctions: HashTable[js.Function] = js.native
-  def isBooleanValue(value: String): Boolean = js.native
-  def isNumeric(value: String): Boolean = js.native
-  def isSpaceString(str: String): Boolean = js.native
-  def operatorToString(operatorName: String): String = js.native
-  def safeToString(operand: Operand, func: js.Function1[/* op */ Operand, String]): String = js.native
-  def throwInvalidOperatorError(op: String): Unit = js.native
-  def toOperandString(value: String): String = js.native
+object OperandMaker {
+  
+  @JSImport("survey-knockout", "OperandMaker")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("survey-knockout", "OperandMaker.binaryFunctions")
+  @js.native
+  def binaryFunctions: Any = js.native
+  inline def binaryFunctions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("binaryFunctions")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "OperandMaker.signs")
+  @js.native
+  def signs: Any = js.native
+  inline def signs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("signs")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "OperandMaker.unaryFunctions")
+  @js.native
+  def unaryFunctions: Any = js.native
+  inline def unaryFunctions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unaryFunctions")(x.asInstanceOf[js.Any])
 }
-

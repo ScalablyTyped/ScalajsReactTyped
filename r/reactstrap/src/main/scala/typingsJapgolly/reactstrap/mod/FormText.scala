@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.formTextMod.FormTextProps
+import typingsJapgolly.reactstrap.typesLibFormTextMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "FormText")
 @js.native
-class FormText[T] ()
-  extends Component[FormTextProps, js.Object, js.Any]
-
+open class FormText () extends default

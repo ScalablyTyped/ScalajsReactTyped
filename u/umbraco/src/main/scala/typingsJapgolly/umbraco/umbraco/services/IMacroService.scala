@@ -1,9 +1,9 @@
 package typingsJapgolly.umbraco.umbraco.services
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -13,7 +13,8 @@ import scala.scalajs.js.annotation._
   * @description
   * A service to return macro information such as generating syntax to insert a macro into an editor
   */
-trait IMacroService extends js.Object {
+trait IMacroService extends StObject {
+  
   /**
     * @ngdoc function
     * @name umbraco.services.macroService#generateWebFormsSyntax
@@ -25,7 +26,8 @@ trait IMacroService extends js.Object {
     *
     * @param {object} args an object containing the macro alias and it's parameter values
     */
-  def generateMacroSyntax(args: js.Any*): Unit
+  def generateMacroSyntax(args: Any*): Unit
+  
   /**
     * @ngdoc function
     * @name umbraco.services.macroService#generateMvcSyntax
@@ -37,7 +39,8 @@ trait IMacroService extends js.Object {
     *
     * @param {object} args an object containing the macro alias and it's parameter values
     */
-  def generateMvcSyntax(args: js.Any*): Unit
+  def generateMvcSyntax(args: Any*): Unit
+  
   /**
     * @ngdoc function
     * @name umbraco.services.macroService#generateWebFormsSyntax
@@ -49,21 +52,25 @@ trait IMacroService extends js.Object {
     *
     * @param {object} args an object containing the macro alias and it's parameter values
     */
-  def generateWebFormsSyntax(args: js.Any*): Unit
+  def generateWebFormsSyntax(args: Any*): Unit
 }
-
 object IMacroService {
-  @scala.inline
-  def apply(
-    generateMacroSyntax: /* repeated */ js.Any => Callback,
-    generateMvcSyntax: /* repeated */ js.Any => Callback,
-    generateWebFormsSyntax: /* repeated */ js.Any => Callback
+  
+  inline def apply(
+    generateMacroSyntax: /* repeated */ Any => Callback,
+    generateMvcSyntax: /* repeated */ Any => Callback,
+    generateWebFormsSyntax: /* repeated */ Any => Callback
   ): IMacroService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generateMacroSyntax")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => generateMacroSyntax(t0).runNow()))
-    __obj.updateDynamic("generateMvcSyntax")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => generateMvcSyntax(t0).runNow()))
-    __obj.updateDynamic("generateWebFormsSyntax")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => generateWebFormsSyntax(t0).runNow()))
+    val __obj = js.Dynamic.literal(generateMacroSyntax = js.Any.fromFunction1((t0: /* repeated */ Any) => generateMacroSyntax(t0).runNow()), generateMvcSyntax = js.Any.fromFunction1((t0: /* repeated */ Any) => generateMvcSyntax(t0).runNow()), generateWebFormsSyntax = js.Any.fromFunction1((t0: /* repeated */ Any) => generateWebFormsSyntax(t0).runNow()))
     __obj.asInstanceOf[IMacroService]
   }
+  
+  extension [Self <: IMacroService](x: Self) {
+    
+    inline def setGenerateMacroSyntax(value: /* repeated */ Any => Callback): Self = StObject.set(x, "generateMacroSyntax", js.Any.fromFunction1((t0: /* repeated */ Any) => value(t0).runNow()))
+    
+    inline def setGenerateMvcSyntax(value: /* repeated */ Any => Callback): Self = StObject.set(x, "generateMvcSyntax", js.Any.fromFunction1((t0: /* repeated */ Any) => value(t0).runNow()))
+    
+    inline def setGenerateWebFormsSyntax(value: /* repeated */ Any => Callback): Self = StObject.set(x, "generateWebFormsSyntax", js.Any.fromFunction1((t0: /* repeated */ Any) => value(t0).runNow()))
+  }
 }
-

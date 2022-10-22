@@ -1,29 +1,35 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UploadProgressEvent extends UploadEvent {
-  var files: js.UndefOr[js.Array[_]] = js.undefined
+trait UploadProgressEvent
+  extends StObject
+     with UploadEvent {
+  
+  var files: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var percentComplete: js.UndefOr[Double] = js.undefined
 }
-
 object UploadProgressEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Upload,
-    files: js.Array[_] = null,
-    percentComplete: Int | Double = null
-  ): UploadProgressEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Upload): UploadProgressEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadProgressEvent]
   }
+  
+  extension [Self <: UploadProgressEvent](x: Self) {
+    
+    inline def setFiles(value: js.Array[Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    
+    inline def setFilesVarargs(value: Any*): Self = StObject.set(x, "files", js.Array(value*))
+    
+    inline def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
+    
+    inline def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
+  }
 }
-

@@ -1,30 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockChartSeriesItemNotes extends js.Object {
+trait StockChartSeriesItemNotes extends StObject {
+  
   var icon: js.UndefOr[StockChartSeriesItemNotesIcon] = js.undefined
+  
   var label: js.UndefOr[StockChartSeriesItemNotesLabel] = js.undefined
+  
   var line: js.UndefOr[StockChartSeriesItemNotesLine] = js.undefined
+  
   var position: js.UndefOr[String] = js.undefined
 }
-
 object StockChartSeriesItemNotes {
-  @scala.inline
-  def apply(
-    icon: StockChartSeriesItemNotesIcon = null,
-    label: StockChartSeriesItemNotesLabel = null,
-    line: StockChartSeriesItemNotesLine = null,
-    position: String = null
-  ): StockChartSeriesItemNotes = {
+  
+  inline def apply(): StockChartSeriesItemNotes = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartSeriesItemNotes]
   }
+  
+  extension [Self <: StockChartSeriesItemNotes](x: Self) {
+    
+    inline def setIcon(value: StockChartSeriesItemNotesIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setLabel(value: StockChartSeriesItemNotesLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLine(value: StockChartSeriesItemNotesLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+  }
 }
-

@@ -1,19 +1,12 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxSlideOutOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxSlideOut.ItemLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxSlideOut")
+@JSImport("devextreme", "default.ui.dxSlideOut")
 @js.native
-class dxSlideOut protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.dxSlideOut {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxSlideOutOptions) = this()
-  def this(element: Element, options: dxSlideOutOptions) = this()
-}
-
+open class dxSlideOut[TItem /* <: ItemLike */, TKey] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxSlideOut[TItem, TKey]

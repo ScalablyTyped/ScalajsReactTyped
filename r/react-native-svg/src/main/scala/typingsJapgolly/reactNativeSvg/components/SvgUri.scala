@@ -1,13 +1,17 @@
 package typingsJapgolly.reactNativeSvg.components
 
+import typingsJapgolly.reactNativeSvg.libTypescriptXmlMod.UriProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object SvgUri extends SharedApply_UriProps_814986982 {
+object SvgUri {
+  
   @JSImport("react-native-svg", "SvgUri")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: SvgUri.type): SharedBuilder_UriProps1755440291 = new SharedBuilder_UriProps1755440291(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: UriProps): SharedBuilder_UriProps1755440291 = new SharedBuilder_UriProps1755440291(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

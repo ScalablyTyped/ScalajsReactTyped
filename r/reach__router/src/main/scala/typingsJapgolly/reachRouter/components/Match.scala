@@ -1,44 +1,28 @@
 package typingsJapgolly.reachRouter.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reachRouter.mod.MatchProps
 import typingsJapgolly.reachRouter.mod.MatchRenderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Match {
-  def apply[TParams](
-    path: String,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: /* props */ MatchRenderProps[TParams] => CallbackTo[Node]
-  ): UnmountedWithRoot[
-    MatchProps[TParams], 
-    typingsJapgolly.reachRouter.mod.Match[TParams], 
-    Unit, 
-    MatchProps[TParams]
-  ] = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("children")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reachRouter.mod.MatchRenderProps[TParams]) => children(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reachRouter.mod.MatchProps[TParams], 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reachRouter.mod.Match[TParams]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reachRouter.mod.MatchProps[TParams]])
+  inline def apply[TParams](children: /* props */ MatchRenderProps[TParams] => Node, path: String): Builder[TParams] = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction1(children), path = path.asInstanceOf[js.Any])
+    new Builder[TParams](js.Array(this.component, __props.asInstanceOf[MatchProps[TParams]]))
   }
+  
   @JSImport("@reach/router", "Match")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[TParams] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reachRouter.mod.Match[TParams]]
+  
+  def withProps[TParams](p: MatchProps[TParams]): Builder[TParams] = new Builder[TParams](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

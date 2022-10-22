@@ -1,24 +1,33 @@
 package typingsJapgolly.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Outlook.Rules")
 @js.native
-class Rules protected () extends js.Object {
+trait Rules extends StObject {
+  
   val Application: typingsJapgolly.activexOutlook.Outlook.Application = js.native
+  
   val Class: OlObjectClass = js.native
+  
   val Count: Double = js.native
-  var IsRssRulesProcessingEnabled: Boolean = js.native
-  @JSName("Outlook.Rules_typekey")
-  var OutlookDotRules_typekey: Rules = js.native
-  val Parent: js.Any = js.native
-  val Session: NameSpace = js.native
+  
   def Create(Name: String, RuleType: OlRuleType): Rule = js.native
-  def Item(Index: js.Any): Rule = js.native
-  def Remove(Index: js.Any): Unit = js.native
+  
+  var IsRssRulesProcessingEnabled: Boolean = js.native
+  
+  def Item(Index: Any): Rule = js.native
+  
+  /* private */ @JSName("Outlook.Rules_typekey")
+  var OutlookDotRules_typekey: Rules = js.native
+  
+  val Parent: Any = js.native
+  
+  def Remove(Index: Any): Unit = js.native
+  
   def Save(): Unit = js.native
-  def Save(ShowProgress: js.Any): Unit = js.native
+  def Save(ShowProgress: Any): Unit = js.native
+  
+  val Session: NameSpace = js.native
 }
-

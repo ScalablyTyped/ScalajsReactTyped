@@ -1,18 +1,18 @@
 package typingsJapgolly.firebaseComponent
 
-import typingsJapgolly.firebaseComponent.typesMod.ComponentType
-import typingsJapgolly.firebaseComponent.typesMod.InstanceFactory
-import typingsJapgolly.firebaseComponent.typesMod.Name
+import typingsJapgolly.firebaseComponent.distSrcTypesMod.ComponentType
+import typingsJapgolly.firebaseComponent.distSrcTypesMod.InstanceFactory
+import typingsJapgolly.firebaseComponent.distSrcTypesMod.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/component", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@firebase/component", "Component")
   @js.native
-  class Component[T /* <: Name */] protected ()
-    extends typingsJapgolly.firebaseComponent.componentMod.Component[T] {
+  open class Component[T /* <: Name */] protected ()
+    extends typingsJapgolly.firebaseComponent.distSrcComponentMod.Component[T] {
     /**
       *
       * @param name The public service name, e.g. app, auth, firestore, database
@@ -22,17 +22,20 @@ object mod extends js.Object {
     def this(name: T, instanceFactory: InstanceFactory[T], `type`: ComponentType) = this()
   }
   
+  @JSImport("@firebase/component", "ComponentContainer")
   @js.native
-  class ComponentContainer protected ()
-    extends typingsJapgolly.firebaseComponent.componentContainerMod.ComponentContainer {
+  open class ComponentContainer protected ()
+    extends typingsJapgolly.firebaseComponent.distSrcComponentContainerMod.ComponentContainer {
     def this(name: String) = this()
   }
   
+  @JSImport("@firebase/component", "Provider")
   @js.native
-  class Provider[T /* <: Name */] protected ()
-    extends typingsJapgolly.firebaseComponent.providerMod.Provider[T] {
-    def this(name: T, container: typingsJapgolly.firebaseComponent.componentContainerMod.ComponentContainer) = this()
+  open class Provider[T /* <: Name */] protected ()
+    extends typingsJapgolly.firebaseComponent.distSrcProviderMod.Provider[T] {
+    def this(
+      name: T,
+      container: typingsJapgolly.firebaseComponent.distSrcComponentContainerMod.ComponentContainer
+    ) = this()
   }
-  
 }
-

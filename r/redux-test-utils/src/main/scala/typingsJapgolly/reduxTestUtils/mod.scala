@@ -1,37 +1,19 @@
 package typingsJapgolly.reduxTestUtils
 
 import typingsJapgolly.redux.mod.AnyAction
-import typingsJapgolly.redux.mod.Dispatch
-import typingsJapgolly.redux.mod.Store
+import typingsJapgolly.reduxTestUtils.distUtilsDispatchMockMod.MockDispatch
+import typingsJapgolly.reduxTestUtils.distUtilsStoreMockMod.MockStore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-test-utils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("redux-test-utils", JSImport.Namespace)
   @js.native
-  trait mockDispatch[S] extends js.Object {
-    @JSName("dispatch")
-    var dispatch_Original: Dispatch[S] = js.native
-    def dispatch[T /* <: S */](action: T): T = js.native
-    def getAction(`type`: js.Any): js.UndefOr[AnyAction] = js.native
-    def getActions(): js.Array[AnyAction] = js.native
-    def isActionDispatched(action: AnyAction): Boolean = js.native
-    def isActionTypeDispatched(`type`: js.Any): Boolean = js.native
-  }
+  val ^ : js.Any = js.native
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typingsJapgolly.reduxTestUtils.mod.mockDispatch because var conflicts: dispatch_Original. Inlined getActions, getAction, isActionTypeDispatched, isActionDispatched */ @js.native
-  trait mockStore[S] extends Store[S, AnyAction] {
-    def getAction(`type`: js.Any): js.UndefOr[AnyAction] = js.native
-    def getActions(): js.Array[AnyAction] = js.native
-    def isActionDispatched(action: AnyAction): Boolean = js.native
-    def isActionTypeDispatched(`type`: js.Any): Boolean = js.native
-  }
+  inline def createMockDispatch[T /* <: AnyAction */](): MockDispatch[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockDispatch")().asInstanceOf[MockDispatch[T]]
   
-  def createMockDispatch(): mockDispatch[_] = js.native
-  def createMockStore(): mockStore[_] = js.native
-  def createMockStore(state: js.Any): mockStore[_] = js.native
+  inline def createMockStore[S, T /* <: AnyAction */](state: S): MockStore[S, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockStore")(state.asInstanceOf[js.Any]).asInstanceOf[MockStore[S, T]]
 }
-

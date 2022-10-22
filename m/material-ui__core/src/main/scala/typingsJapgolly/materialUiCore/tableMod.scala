@@ -1,26 +1,31 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.tableTableMod.TableProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.table
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import typingsJapgolly.materialUiCore.tableTableMod.TableTypeMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Table", JSImport.Namespace)
-@js.native
-object tableMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[TableProps, ComponentState, js.Any] {
-    def this(props: TableProps) = this()
-    def this(props: TableProps, context: js.Any) = this()
-  }
+object tableMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Tables](https://mui.com/components/tables/)
+    *
+    * API:
+    *
+    * - [Table API](https://mui.com/api/table/)
+    */
+  @JSImport("@material-ui/core/Table", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[TableProps]]
+  val default: OverridableComponent[TableTypeMap[js.Object, table]] = js.native
   
+  type _To = OverridableComponent[TableTypeMap[js.Object, table]]
+  
+  /* This means you don't have to write `default`, but can instead just say `tableMod.foo` */
+  override def _to: OverridableComponent[TableTypeMap[js.Object, table]] = default
 }
-

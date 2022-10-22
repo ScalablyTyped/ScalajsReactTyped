@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.GridGapProperty
+import typingsJapgolly.csstype.mod.Property.GridGap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridGapProps[TLength] extends js.Object {
-  val gridGap: js.UndefOr[ResponsiveValue[GridGapProperty[TLength]]] = js.undefined
+trait GridGapProps[TLength] extends StObject {
+  
+  val gridGap: js.UndefOr[ResponsiveValue[GridGap[TLength]]] = js.undefined
 }
-
 object GridGapProps {
-  @scala.inline
-  def apply[TLength](gridGap: ResponsiveValue[GridGapProperty[TLength]] = null): GridGapProps[TLength] = {
+  
+  inline def apply[TLength](): GridGapProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (gridGap != null) __obj.updateDynamic("gridGap")(gridGap.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridGapProps[TLength]]
   }
+  
+  extension [Self <: GridGapProps[?], TLength](x: Self & GridGapProps[TLength]) {
+    
+    inline def setGridGap(value: ResponsiveValue[GridGap[TLength]]): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
+    
+    inline def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
+    
+    inline def setGridGapVarargs(value: GridGap[TLength]*): Self = StObject.set(x, "gridGap", js.Array(value*))
+  }
 }
-

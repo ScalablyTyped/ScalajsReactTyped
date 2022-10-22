@@ -1,26 +1,50 @@
 package typingsJapgolly.igniteUi.Infragistics
 
-import typingsJapgolly.igniteUi.TriangulationDataSourceSettings
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Infragistics.TriangulationDataSource")
-@js.native
-class TriangulationDataSource protected () extends js.Object {
-  def this(settings: TriangulationDataSourceSettings) = this()
+trait TriangulationDataSource extends StObject {
+  
   /**
-  	 * Returns the current converter instance
-  	 */
-  def converter(): js.Object = js.native
+    * Returns the current converter instance
+    */
+  def converter(): js.Object
+  
   /**
-  	 * Loads to the current data source
-  	 */
-  def dataBind(): Unit = js.native
-  def dataView(): Unit = js.native
+    * Loads to the current data source
+    */
+  def dataBind(): Unit
+  
+  def dataView(): Unit
+  
   /**
-  	 * Returns true if data is loaded
-  	 */
-  def isBound(): Boolean = js.native
+    * Returns true if data is loaded
+    */
+  def isBound(): Boolean
 }
-
+object TriangulationDataSource {
+  
+  inline def apply(
+    converter: CallbackTo[js.Object],
+    dataBind: Callback,
+    dataView: Callback,
+    isBound: CallbackTo[Boolean]
+  ): TriangulationDataSource = {
+    val __obj = js.Dynamic.literal(converter = converter.toJsFn, dataBind = dataBind.toJsFn, dataView = dataView.toJsFn, isBound = isBound.toJsFn)
+    __obj.asInstanceOf[TriangulationDataSource]
+  }
+  
+  extension [Self <: TriangulationDataSource](x: Self) {
+    
+    inline def setConverter(value: CallbackTo[js.Object]): Self = StObject.set(x, "converter", value.toJsFn)
+    
+    inline def setDataBind(value: Callback): Self = StObject.set(x, "dataBind", value.toJsFn)
+    
+    inline def setDataView(value: Callback): Self = StObject.set(x, "dataView", value.toJsFn)
+    
+    inline def setIsBound(value: CallbackTo[Boolean]): Self = StObject.set(x, "isBound", value.toJsFn)
+  }
+}

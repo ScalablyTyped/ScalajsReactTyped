@@ -1,35 +1,31 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`49`
-import typingsJapgolly.activexWord.activexWordNumbers.`50`
+import typingsJapgolly.activexWord.activexWordInts.`49`
+import typingsJapgolly.activexWord.activexWordInts.`50`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`49`
-  - typingsJapgolly.activexWord.activexWordNumbers.`50`
+  - typingsJapgolly.activexWord.activexWordInts.`49`
+  - typingsJapgolly.activexWord.activexWordInts.`50`
 */
-trait WdNumberStyleWordBasicBiDi extends js.Object
-
+trait WdNumberStyleWordBasicBiDi extends StObject
 object WdNumberStyleWordBasicBiDi {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdCaptionNumberStyleBidiLetter1: `49` = this.cast(49)
-  @scala.inline
-  def wdCaptionNumberStyleBidiLetter2: `50` = this.cast(50)
-  @scala.inline
-  def wdListNumberStyleBidi1: `49` = this.cast(49)
-  @scala.inline
-  def wdListNumberStyleBidi2: `50` = this.cast(50)
-  @scala.inline
-  def wdNoteNumberStyleBidiLetter1: `49` = this.cast(49)
-  @scala.inline
-  def wdNoteNumberStyleBidiLetter2: `50` = this.cast(50)
-  @scala.inline
-  def wdPageNumberStyleBidiLetter1: `49` = this.cast(49)
-  @scala.inline
-  def wdPageNumberStyleBidiLetter2: `50` = this.cast(50)
+  
+  inline def wdCaptionNumberStyleBidiLetter1: `49` = 49.asInstanceOf[`49`]
+  
+  inline def wdCaptionNumberStyleBidiLetter2: `50` = 50.asInstanceOf[`50`]
+  
+  inline def wdListNumberStyleBidi1: `49` = 49.asInstanceOf[`49`]
+  
+  inline def wdListNumberStyleBidi2: `50` = 50.asInstanceOf[`50`]
+  
+  inline def wdNoteNumberStyleBidiLetter1: `49` = 49.asInstanceOf[`49`]
+  
+  inline def wdNoteNumberStyleBidiLetter2: `50` = 50.asInstanceOf[`50`]
+  
+  inline def wdPageNumberStyleBidiLetter1: `49` = 49.asInstanceOf[`49`]
+  
+  inline def wdPageNumberStyleBidiLetter2: `50` = 50.asInstanceOf[`50`]
 }
-

@@ -1,56 +1,64 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgVideoPlayerCommercialsEmbeddedCommercial
-  extends /**
-	 * Option for IgVideoPlayerCommercialsEmbeddedCommercial
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Gets/Sets the end second of the embedded commercial.
-  	 *
-  	 */
+    * Gets/Sets the end second of the embedded commercial.
+    *
+    */
   var endTime: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the sponsored link of the embedded commercial.
-  	 *
-  	 */
+    * Gets/Sets the sponsored link of the embedded commercial.
+    *
+    */
   var link: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the start second of the embedded commercial.
-  	 *
-  	 */
+    * Gets/Sets the start second of the embedded commercial.
+    *
+    */
   var startTime: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the tooltip for the bookmark of the embedded commercial.
-  	 *
-  	 */
+    * Gets/Sets the tooltip for the bookmark of the embedded commercial.
+    *
+    */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object IgVideoPlayerCommercialsEmbeddedCommercial {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgVideoPlayerCommercialsEmbeddedCommercial
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    endTime: Int | Double = null,
-    link: String = null,
-    startTime: Int | Double = null,
-    title: String = null
-  ): IgVideoPlayerCommercialsEmbeddedCommercial = {
+  
+  inline def apply(): IgVideoPlayerCommercialsEmbeddedCommercial = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgVideoPlayerCommercialsEmbeddedCommercial]
   }
+  
+  extension [Self <: IgVideoPlayerCommercialsEmbeddedCommercial](x: Self) {
+    
+    inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    
+    inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

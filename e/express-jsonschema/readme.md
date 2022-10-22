@@ -11,9 +11,9 @@ Express middleware for jsonschema validation.
 | Full name          | express-jsonschema |
 | Keywords           | express, jsonschema, validation, validate |
 | # releases         | 1 |
-| # dependents       | 12 |
-| # downloads        | 127018 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 20496.666666666668 |
+| # stars            | 57.0 |
 
 ## Links
 - [Homepage](https://github.com/trainiac/express-jsonschema#readme)

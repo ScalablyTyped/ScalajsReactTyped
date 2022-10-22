@@ -1,23 +1,19 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`0`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`0`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`0`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`0`
 */
-trait XlDataBarFillType extends js.Object
-
+trait XlDataBarFillType extends StObject
 object XlDataBarFillType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlDataBarFillGradient: `1` = this.cast(1)
-  @scala.inline
-  def xlDataBarFillSolid: `0` = this.cast(0)
+  
+  inline def xlDataBarFillGradient: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlDataBarFillSolid: `0` = 0.asInstanceOf[`0`]
 }
-

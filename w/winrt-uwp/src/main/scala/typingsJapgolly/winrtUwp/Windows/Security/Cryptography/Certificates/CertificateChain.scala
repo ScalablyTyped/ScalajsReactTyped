@@ -1,20 +1,21 @@
 package typingsJapgolly.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a certificate chain used for signature verification. */
-@JSGlobal("Windows.Security.Cryptography.Certificates.CertificateChain")
 @js.native
-abstract class CertificateChain () extends js.Object {
+trait CertificateChain extends StObject {
+  
   /**
     * Gets the list of certificates from the certificate chain.
     * @param includeRoot True to include the root certificate in the results; otherwise false.
     * @return The list of certificates from the certificate chain.
     */
   def getCertificates(includeRoot: Boolean): IVectorView[Certificate] = js.native
+  
   /**
     * Verifies whether or not the certificate chain is valid.
     * @return The result of the certificate chain verification operation.
@@ -27,4 +28,3 @@ abstract class CertificateChain () extends js.Object {
     */
   def validate(parameter: ChainValidationParameters): ChainValidationResult = js.native
 }
-

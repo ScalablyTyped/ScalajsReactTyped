@@ -1,83 +1,67 @@
 package typingsJapgolly.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DashboardObjectType extends js.Object
-
+sealed trait DashboardObjectType extends StObject
 @JSGlobal("tableau.DashboardObjectType")
 @js.native
-object DashboardObjectType extends js.Object {
-  @js.native
-  sealed trait ADDIN extends DashboardObjectType
+object DashboardObjectType extends StObject {
   
   @js.native
-  sealed trait BLANK extends DashboardObjectType
+  sealed trait ADDIN
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait IMAGE extends DashboardObjectType
+  sealed trait BLANK
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait LEGEND extends DashboardObjectType
+  sealed trait IMAGE
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait PAGE_FILTER extends DashboardObjectType
+  sealed trait LEGEND
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait PARAMETER_CONTROL extends DashboardObjectType
+  sealed trait PAGE_FILTER
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait QUICK_FILTER extends DashboardObjectType
+  sealed trait PARAMETER_CONTROL
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait TEXT extends DashboardObjectType
+  sealed trait QUICK_FILTER
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait TITLE extends DashboardObjectType
+  sealed trait TEXT
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait WEB_PAGE extends DashboardObjectType
+  sealed trait TITLE
+    extends StObject
+       with DashboardObjectType
   
   @js.native
-  sealed trait WORKSHEET extends DashboardObjectType
+  sealed trait WEB_PAGE
+    extends StObject
+       with DashboardObjectType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[DashboardObjectType with String] = js.native
-  /* "addIn" */ @js.native
-  object ADDIN extends TopLevel[ADDIN with String]
-  
-  /* "blank" */ @js.native
-  object BLANK extends TopLevel[BLANK with String]
-  
-  /* "image" */ @js.native
-  object IMAGE extends TopLevel[IMAGE with String]
-  
-  /* "legend" */ @js.native
-  object LEGEND extends TopLevel[LEGEND with String]
-  
-  /* "pageFilter" */ @js.native
-  object PAGE_FILTER extends TopLevel[PAGE_FILTER with String]
-  
-  /* "parameterControl" */ @js.native
-  object PARAMETER_CONTROL extends TopLevel[PARAMETER_CONTROL with String]
-  
-  /* "quickFilter" */ @js.native
-  object QUICK_FILTER extends TopLevel[QUICK_FILTER with String]
-  
-  /* "text" */ @js.native
-  object TEXT extends TopLevel[TEXT with String]
-  
-  /* "title" */ @js.native
-  object TITLE extends TopLevel[TITLE with String]
-  
-  /* "webPage" */ @js.native
-  object WEB_PAGE extends TopLevel[WEB_PAGE with String]
-  
-  /* "worksheet" */ @js.native
-  object WORKSHEET extends TopLevel[WORKSHEET with String]
-  
+  @js.native
+  sealed trait WORKSHEET
+    extends StObject
+       with DashboardObjectType
 }
-

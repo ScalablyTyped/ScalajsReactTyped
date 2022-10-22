@@ -1,19 +1,19 @@
 
 # Scala.js typings for stylis
 
-Typings are for version 3.5.4
+Typings are for version 4.0
 
 ## Library description:
-light - weight css preprocessor
+A Light–weight CSS Preprocessor
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | stylis |
-| Keywords           | css, preprocessor |
-| # releases         | 9 |
-| # dependents       | 105 |
-| # downloads        | 77251574 |
-| # stars            | 1 |
+| Keywords           | - |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7762441E7 |
+| # stars            | 1502.0 |
 
 ## Links
 - [Homepage](https://github.com/thysultan/stylis.js)
@@ -24,7 +24,7 @@ light - weight css preprocessor
 
 
 ## Note
-This library has been generated from typescript code from first party type definitions.
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,11 +1,8 @@
 package typingsJapgolly.winrtUwp.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates that the type is supported in desktop apps and in Windows Store apps. */
-@JSGlobal("Windows.Foundation.Metadata.DualApiPartitionAttribute")
-@js.native
-abstract class DualApiPartitionAttribute () extends js.Object
-
+trait DualApiPartitionAttribute extends StObject

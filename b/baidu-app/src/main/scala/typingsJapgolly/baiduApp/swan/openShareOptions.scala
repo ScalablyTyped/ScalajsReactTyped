@@ -1,45 +1,56 @@
 package typingsJapgolly.baiduApp.swan
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.baiduApp.AnonAuthSetting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait openShareOptions
-  extends BaseOptions[js.Any, js.Any] {
-   // 分享标题
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
+  // 分享标题
   var content: js.UndefOr[String] = js.undefined
-   // 分享内容
+  
+  // 分享内容
   var imageUrl: js.UndefOr[String] = js.undefined
-   // 分享图标
+  
+  // 分享图标
   var path: js.UndefOr[String] = js.undefined
-   // 页面 path,必须是以 / 开头的完整路径。
+  
+  // 页面 path,必须是以 / 开头的完整路径。
   @JSName("success")
-  var success_openShareOptions: js.UndefOr[js.Function1[/* res */ AnonAuthSetting, Unit]] = js.undefined
+  var success_openShareOptions: js.UndefOr[js.Function1[/* res */ typingsJapgolly.baiduApp.anon.AuthSetting, Unit]] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
 }
-
 object openShareOptions {
-  @scala.inline
-  def apply(
-    complete: /* res */ js.Any => Callback = null,
-    content: String = null,
-    fail: js.Any => Callback = null,
-    imageUrl: String = null,
-    path: String = null,
-    success: /* res */ AnonAuthSetting => Callback = null,
-    title: String = null
-  ): openShareOptions = {
+  
+  inline def apply(): openShareOptions = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.baiduApp.AnonAuthSetting) => success(t0).runNow()))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[openShareOptions]
   }
+  
+  extension [Self <: openShareOptions](x: Self) {
+    
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setSuccess(value: /* res */ typingsJapgolly.baiduApp.anon.AuthSetting => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ typingsJapgolly.baiduApp.anon.AuthSetting) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

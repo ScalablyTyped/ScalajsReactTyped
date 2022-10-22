@@ -1,19 +1,22 @@
 package typingsJapgolly.mongodb.mod
 
+import typingsJapgolly.bson.mod.Document
+import typingsJapgolly.bson.mod.ObjectId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "DBRef")
 @js.native
-class DBRef protected ()
+open class DBRef protected ()
   extends typingsJapgolly.bson.mod.DBRef {
   /**
-    * @param namespace The collection name.
-    * @param oid The reference ObjectId.
-    * @param db Optional db name, if omitted the reference is local to the current db
+    * @param collection - the collection name.
+    * @param oid - the reference ObjectId.
+    * @param db - optional db name, if omitted the reference is local to the current db.
     */
-  def this(namespace: String, oid: typingsJapgolly.bson.mod.ObjectId) = this()
-  def this(namespace: String, oid: typingsJapgolly.bson.mod.ObjectId, db: String) = this()
+  def this(collection: String, oid: ObjectId) = this()
+  def this(collection: String, oid: ObjectId, db: String) = this()
+  def this(collection: String, oid: ObjectId, db: String, fields: Document) = this()
+  def this(collection: String, oid: ObjectId, db: Unit, fields: Document) = this()
 }
-

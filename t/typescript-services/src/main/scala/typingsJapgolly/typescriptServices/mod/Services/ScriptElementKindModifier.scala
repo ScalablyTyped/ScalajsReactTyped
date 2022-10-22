@@ -1,23 +1,53 @@
 package typingsJapgolly.typescriptServices.mod.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "Services.ScriptElementKindModifier")
 @js.native
-class ScriptElementKindModifier ()
-  extends typingsJapgolly.typescriptServices.TypeScript.Services.ScriptElementKindModifier
-
-/* static members */
-@JSImport("typescript-services", "Services.ScriptElementKindModifier")
-@js.native
-object ScriptElementKindModifier extends js.Object {
-  var ambientModifier: String = js.native
-  var exportedModifier: String = js.native
-  var none: String = js.native
-  var privateMemberModifier: String = js.native
-  var publicMemberModifier: String = js.native
-  var staticModifier: String = js.native
+open class ScriptElementKindModifier ()
+  extends StObject
+     with typingsJapgolly.typescriptServices.TypeScript.Services.ScriptElementKindModifier
+object ScriptElementKindModifier {
+  
+  @JSImport("typescript-services", "Services.ScriptElementKindModifier")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("typescript-services", "Services.ScriptElementKindModifier.ambientModifier")
+  @js.native
+  def ambientModifier: String = js.native
+  inline def ambientModifier_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ambientModifier")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("typescript-services", "Services.ScriptElementKindModifier.exportedModifier")
+  @js.native
+  def exportedModifier: String = js.native
+  inline def exportedModifier_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exportedModifier")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("typescript-services", "Services.ScriptElementKindModifier.none")
+  @js.native
+  def none: String = js.native
+  inline def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("typescript-services", "Services.ScriptElementKindModifier.privateMemberModifier")
+  @js.native
+  def privateMemberModifier: String = js.native
+  inline def privateMemberModifier_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("privateMemberModifier")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("typescript-services", "Services.ScriptElementKindModifier.publicMemberModifier")
+  @js.native
+  def publicMemberModifier: String = js.native
+  inline def publicMemberModifier_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("publicMemberModifier")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("typescript-services", "Services.ScriptElementKindModifier.staticModifier")
+  @js.native
+  def staticModifier: String = js.native
+  inline def staticModifier_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("staticModifier")(x.asInstanceOf[js.Any])
 }
-

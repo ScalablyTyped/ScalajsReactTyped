@@ -1,26 +1,31 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.formHelperTextFormHelperTextMod.FormHelperTextProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.formHelperTextFormHelperTextMod.FormHelperTextTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.p
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/FormHelperText", JSImport.Namespace)
-@js.native
-object formHelperTextMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[FormHelperTextProps, ComponentState, js.Any] {
-    def this(props: FormHelperTextProps) = this()
-    def this(props: FormHelperTextProps, context: js.Any) = this()
-  }
+object formHelperTextMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Text Fields](https://mui.com/components/text-fields/)
+    *
+    * API:
+    *
+    * - [FormHelperText API](https://mui.com/api/form-helper-text/)
+    */
+  @JSImport("@material-ui/core/FormHelperText", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[FormHelperTextProps]]
+  val default: OverridableComponent[FormHelperTextTypeMap[js.Object, p]] = js.native
   
+  type _To = OverridableComponent[FormHelperTextTypeMap[js.Object, p]]
+  
+  /* This means you don't have to write `default`, but can instead just say `formHelperTextMod.foo` */
+  override def _to: OverridableComponent[FormHelperTextTypeMap[js.Object, p]] = default
 }
-

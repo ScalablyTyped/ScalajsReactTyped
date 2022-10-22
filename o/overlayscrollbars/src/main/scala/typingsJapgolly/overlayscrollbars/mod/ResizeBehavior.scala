@@ -1,8 +1,8 @@
 package typingsJapgolly.overlayscrollbars.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.none
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.h
   - typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.v
 */
-trait ResizeBehavior extends js.Object
-
+trait ResizeBehavior extends StObject
 object ResizeBehavior {
-  @scala.inline
-  def b: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.b = this.cast("b")
-  @scala.inline
-  def both: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.both = this.cast("both")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def h: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.h = this.cast("h")
-  @scala.inline
-  def horizontal: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def n: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.n = this.cast("n")
-  @scala.inline
-  def none: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.none = this.cast("none")
-  @scala.inline
-  def v: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.v = this.cast("v")
-  @scala.inline
-  def vertical: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.vertical = this.cast("vertical")
+  
+  inline def b: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.b = "b".asInstanceOf[typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.b]
+  
+  inline def both: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.both = "both".asInstanceOf[typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.both]
+  
+  inline def h: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.h = "h".asInstanceOf[typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.h]
+  
+  inline def horizontal: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.horizontal = "horizontal".asInstanceOf[typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.horizontal]
+  
+  inline def n: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.n = "n".asInstanceOf[typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.n]
+  
+  inline def none: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.none = "none".asInstanceOf[typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.none]
+  
+  inline def v: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.v = "v".asInstanceOf[typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.v]
+  
+  inline def vertical: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.vertical = "vertical".asInstanceOf[typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.vertical]
 }
-

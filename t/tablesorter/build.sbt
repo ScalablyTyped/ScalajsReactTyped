@@ -1,21 +1,18 @@
 organization := "org.scalablytyped.japgolly"
 name := "tablesorter"
-version := "2.31-dt-20200225Z-243808"
-scalaVersion := "2.13.1"
+version := "2.31-dt-20211202Z-95f111"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "cldrjs" % "0.4.4-dt-20200226Z-b9673f",
-  "org.scalablytyped.japgolly" %%% "globalize" % "0.0-unknown-dt-20200226Z-b10e6e",
-  "org.scalablytyped.japgolly" %%% "jquery" % "3.3-dt-20200225Z-1ffbf2",
-  "org.scalablytyped.japgolly" %%% "jqueryui" % "1.12-dt-20200225Z-191f72",
-  "org.scalablytyped.japgolly" %%% "requirejs" % "2.1.20-dt-20200227Z-00a27c",
-  "org.scalablytyped.japgolly" %%% "select2" % "4.0-dt-20200225Z-8c068f",
-  "org.scalablytyped.japgolly" %%% "sizzle" % "2.3-dt-20181006Z-7d1fc9",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "cldrjs" % "0.4.4-dt-20220818Z-154b73",
+  "org.scalablytyped.japgolly" %%% "globalize" % "1.5-dt-20211202Z-de6a20",
+  "org.scalablytyped.japgolly" %%% "jquery" % "3.5-dt-20220624Z-e18178",
+  "org.scalablytyped.japgolly" %%% "jqueryui" % "1.12-dt-20211202Z-361b20",
+  "org.scalablytyped.japgolly" %%% "select2" % "4.0-dt-20220127Z-96ddfa",
+  "org.scalablytyped.japgolly" %%% "sizzle" % "2.3-dt-20211202Z-0d86ba",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

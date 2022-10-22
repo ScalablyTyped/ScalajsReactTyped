@@ -2,69 +2,96 @@ package typingsJapgolly.senchaTouch.Ext.field
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait INumber extends IText {
+trait INumber
+  extends StObject
+     with IText {
+  
   /** [Method] Returns the value of maxValue
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMaxValue: js.UndefOr[js.Function0[Double]] = js.undefined
+  
   /** [Method] Returns the value of minValue
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getMinValue: js.UndefOr[js.Function0[Double]] = js.undefined
+  
   /** [Method] Returns the value of stepValue
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getStepValue: js.UndefOr[js.Function0[Double]] = js.undefined
+  
   /** [Config Option] (Number) */
   var maxValue: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Number) */
   var minValue: js.UndefOr[Double] = js.undefined
+  
   /** [Method] Sets the value of maxValue
-  		* @param maxValue Number The new value.
-  		*/
+    * @param maxValue Number The new value.
+    */
   var setMaxValue: js.UndefOr[js.Function1[/* maxValue */ js.UndefOr[Double], Unit]] = js.undefined
+  
   /** [Method] Sets the value of minValue
-  		* @param minValue Number The new value.
-  		*/
+    * @param minValue Number The new value.
+    */
   var setMinValue: js.UndefOr[js.Function1[/* minValue */ js.UndefOr[Double], Unit]] = js.undefined
+  
   /** [Method] Sets the value of stepValue
-  		* @param stepValue Number The new value.
-  		*/
+    * @param stepValue Number The new value.
+    */
   var setStepValue: js.UndefOr[js.Function1[/* stepValue */ js.UndefOr[Double], Unit]] = js.undefined
+  
   /** [Config Option] (Number) */
   var stepValue: js.UndefOr[Double] = js.undefined
 }
-
 object INumber {
-  @scala.inline
-  def apply(
-    IText: IText = null,
-    getMaxValue: js.UndefOr[CallbackTo[Double]] = js.undefined,
-    getMinValue: js.UndefOr[CallbackTo[Double]] = js.undefined,
-    getStepValue: js.UndefOr[CallbackTo[Double]] = js.undefined,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null,
-    setMaxValue: /* maxValue */ js.UndefOr[Double] => Callback = null,
-    setMinValue: /* minValue */ js.UndefOr[Double] => Callback = null,
-    setStepValue: /* stepValue */ js.UndefOr[Double] => Callback = null,
-    stepValue: Int | Double = null
-  ): INumber = {
+  
+  inline def apply(): INumber = {
     val __obj = js.Dynamic.literal()
-    if (IText != null) js.Dynamic.global.Object.assign(__obj, IText)
-    getMaxValue.foreach(p => __obj.updateDynamic("getMaxValue")(p.toJsFn))
-    getMinValue.foreach(p => __obj.updateDynamic("getMinValue")(p.toJsFn))
-    getStepValue.foreach(p => __obj.updateDynamic("getStepValue")(p.toJsFn))
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(js.Any.fromFunction1((t0: /* maxValue */ js.UndefOr[scala.Double]) => setMaxValue(t0).runNow()))
-    if (setMinValue != null) __obj.updateDynamic("setMinValue")(js.Any.fromFunction1((t0: /* minValue */ js.UndefOr[scala.Double]) => setMinValue(t0).runNow()))
-    if (setStepValue != null) __obj.updateDynamic("setStepValue")(js.Any.fromFunction1((t0: /* stepValue */ js.UndefOr[scala.Double]) => setStepValue(t0).runNow()))
-    if (stepValue != null) __obj.updateDynamic("stepValue")(stepValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[INumber]
   }
+  
+  extension [Self <: INumber](x: Self) {
+    
+    inline def setGetMaxValue(value: CallbackTo[Double]): Self = StObject.set(x, "getMaxValue", value.toJsFn)
+    
+    inline def setGetMaxValueUndefined: Self = StObject.set(x, "getMaxValue", js.undefined)
+    
+    inline def setGetMinValue(value: CallbackTo[Double]): Self = StObject.set(x, "getMinValue", value.toJsFn)
+    
+    inline def setGetMinValueUndefined: Self = StObject.set(x, "getMinValue", js.undefined)
+    
+    inline def setGetStepValue(value: CallbackTo[Double]): Self = StObject.set(x, "getStepValue", value.toJsFn)
+    
+    inline def setGetStepValueUndefined: Self = StObject.set(x, "getStepValue", js.undefined)
+    
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    
+    inline def setSetMaxValue(value: /* maxValue */ js.UndefOr[Double] => Callback): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1((t0: /* maxValue */ js.UndefOr[Double]) => value(t0).runNow()))
+    
+    inline def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
+    
+    inline def setSetMinValue(value: /* minValue */ js.UndefOr[Double] => Callback): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1((t0: /* minValue */ js.UndefOr[Double]) => value(t0).runNow()))
+    
+    inline def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
+    
+    inline def setSetStepValue(value: /* stepValue */ js.UndefOr[Double] => Callback): Self = StObject.set(x, "setStepValue", js.Any.fromFunction1((t0: /* stepValue */ js.UndefOr[Double]) => value(t0).runNow()))
+    
+    inline def setSetStepValueUndefined: Self = StObject.set(x, "setStepValue", js.undefined)
+    
+    inline def setStepValue(value: Double): Self = StObject.set(x, "stepValue", value.asInstanceOf[js.Any])
+    
+    inline def setStepValueUndefined: Self = StObject.set(x, "stepValue", js.undefined)
+  }
 }
-

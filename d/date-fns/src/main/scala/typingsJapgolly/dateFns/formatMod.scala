@@ -1,22 +1,21 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import typingsJapgolly.dateFns.anon.FirstWeekContainsDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/format", JSImport.Namespace)
-@js.native
-object formatMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(date: Double, format: String): String = js.native
-    def apply(date: Double, format: String, options: AnonFirstWeekContainsDate): String = js.native
-    def apply(date: Double, format: String, options: AnonUseAdditionalDayOfYearTokens): String = js.native
-    def apply(date: Date, format: String): String = js.native
-    def apply(date: Date, format: String, options: AnonFirstWeekContainsDate): String = js.native
-    def apply(date: Date, format: String, options: AnonUseAdditionalDayOfYearTokens): String = js.native
-  }
+object formatMod {
   
+  object default {
+    
+    inline def apply(date: js.Date, format: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: js.Date, format: String, options: FirstWeekContainsDate): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, format: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, format: String, options: FirstWeekContainsDate): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @JSImport("date-fns/format", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

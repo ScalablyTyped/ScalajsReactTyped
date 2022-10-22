@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartZoomableMousewheel extends js.Object {
+trait ChartZoomableMousewheel extends StObject {
+  
   var lock: js.UndefOr[String] = js.undefined
 }
-
 object ChartZoomableMousewheel {
-  @scala.inline
-  def apply(lock: String = null): ChartZoomableMousewheel = {
+  
+  inline def apply(): ChartZoomableMousewheel = {
     val __obj = js.Dynamic.literal()
-    if (lock != null) __obj.updateDynamic("lock")(lock.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartZoomableMousewheel]
   }
+  
+  extension [Self <: ChartZoomableMousewheel](x: Self) {
+    
+    inline def setLock(value: String): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+    
+    inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
+  }
 }
-

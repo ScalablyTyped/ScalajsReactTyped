@@ -10,10 +10,10 @@ Themes for applying color in the Carbon Design System
 | ------------------ | :-------------: |
 | Full name          | @carbon/themes |
 | Keywords           | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 87 |
-| # dependents       | 8 |
-| # downloads        | 149117 |
-| # stars            | 0 |
+| # releases         | 93 |
+| # dependents       | 0.0 |
+| # downloads        | 259039.33333333334 |
+| # stars            | 5963.0 |
 
 ## Links
 - [Homepage](https://github.com/carbon-design-system/carbon#readme)

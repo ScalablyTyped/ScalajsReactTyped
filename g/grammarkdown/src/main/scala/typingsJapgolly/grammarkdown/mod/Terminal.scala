@@ -1,19 +1,22 @@
 package typingsJapgolly.grammarkdown.mod
 
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.QuestionToken
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.QuestionToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Terminal")
 @js.native
-class Terminal ()
-  extends typingsJapgolly.grammarkdown.nodesMod.Terminal {
-  def this(text: String) = this()
+open class Terminal protected ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.Terminal {
+  def this(literal: typingsJapgolly.grammarkdown.distNodesMod.TerminalLiteral) = this()
+  def this(literal: typingsJapgolly.grammarkdown.distNodesMod.UnicodeCharacterLiteral) = this()
   def this(
-    text: js.UndefOr[scala.Nothing],
-    questionToken: typingsJapgolly.grammarkdown.nodesMod.Token[QuestionToken]
+    literal: typingsJapgolly.grammarkdown.distNodesMod.TerminalLiteral,
+    questionToken: typingsJapgolly.grammarkdown.distNodesMod.Token[QuestionToken]
   ) = this()
-  def this(text: String, questionToken: typingsJapgolly.grammarkdown.nodesMod.Token[QuestionToken]) = this()
+  def this(
+    literal: typingsJapgolly.grammarkdown.distNodesMod.UnicodeCharacterLiteral,
+    questionToken: typingsJapgolly.grammarkdown.distNodesMod.Token[QuestionToken]
+  ) = this()
 }
-

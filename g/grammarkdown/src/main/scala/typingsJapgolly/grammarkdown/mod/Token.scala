@@ -1,12 +1,13 @@
 package typingsJapgolly.grammarkdown.mod
 
-import typingsJapgolly.grammarkdown.tokensMod.TokenKind
+import typingsJapgolly.grammarkdown.distTokensMod.TokenKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Token")
 @js.native
-class Token[TKind /* <: TokenKind */] ()
-  extends typingsJapgolly.grammarkdown.nodesMod.Node[TKind]
-
+open class Token[TKind /* <: TokenKind */] protected ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.Token[TKind] {
+  def this(kind: TKind) = this()
+}

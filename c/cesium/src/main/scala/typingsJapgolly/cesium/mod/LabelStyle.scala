@@ -1,35 +1,42 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LabelStyle extends js.Object
-
+sealed trait LabelStyle extends StObject
 @JSImport("cesium", "LabelStyle")
 @js.native
-object LabelStyle extends js.Object {
-  @js.native
-  sealed trait FILL extends LabelStyle
-  
-  @js.native
-  sealed trait FILL_AND_OUTLINE extends LabelStyle
-  
-  @js.native
-  sealed trait OUTLINE extends LabelStyle
+object LabelStyle extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LabelStyle with Double] = js.native
-  /* 0 */ @js.native
-  object FILL extends TopLevel[FILL with Double]
+  def apply(value: Double): js.UndefOr[LabelStyle & Double] = js.native
   
-  /* 2 */ @js.native
-  object FILL_AND_OUTLINE extends TopLevel[FILL_AND_OUTLINE with Double]
+  /**
+    * Fill the text of the label, but do not outline.
+    */
+  @js.native
+  sealed trait FILL
+    extends StObject
+       with LabelStyle
+  /* 0 */ val FILL: typingsJapgolly.cesium.mod.LabelStyle.FILL & Double = js.native
   
-  /* 1 */ @js.native
-  object OUTLINE extends TopLevel[OUTLINE with Double]
+  /**
+    * Fill and outline the text of the label.
+    */
+  @js.native
+  sealed trait FILL_AND_OUTLINE
+    extends StObject
+       with LabelStyle
+  /* 2 */ val FILL_AND_OUTLINE: typingsJapgolly.cesium.mod.LabelStyle.FILL_AND_OUTLINE & Double = js.native
   
+  /**
+    * Outline the text of the label, but do not fill.
+    */
+  @js.native
+  sealed trait OUTLINE
+    extends StObject
+       with LabelStyle
+  /* 1 */ val OUTLINE: typingsJapgolly.cesium.mod.LabelStyle.OUTLINE & Double = js.native
 }
-

@@ -1,41 +1,32 @@
 package typingsJapgolly.amapJsSdk.AMap
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DrivingPolicy extends js.Object
-
+sealed trait DrivingPolicy extends StObject
 @JSGlobal("AMap.DrivingPolicy")
 @js.native
-object DrivingPolicy extends js.Object {
-  @js.native
-  sealed trait LEAST_DISTANCE extends DrivingPolicy
+object DrivingPolicy extends StObject {
   
   @js.native
-  sealed trait LEAST_FEE extends DrivingPolicy
+  sealed trait LEAST_DISTANCE
+    extends StObject
+       with DrivingPolicy
   
   @js.native
-  sealed trait LEAST_TIME extends DrivingPolicy
+  sealed trait LEAST_FEE
+    extends StObject
+       with DrivingPolicy
   
   @js.native
-  sealed trait REAL_TRAFFIC extends DrivingPolicy
+  sealed trait LEAST_TIME
+    extends StObject
+       with DrivingPolicy
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DrivingPolicy with Double] = js.native
-  /* 2 */ @js.native
-  object LEAST_DISTANCE extends TopLevel[LEAST_DISTANCE with Double]
-  
-  /* 1 */ @js.native
-  object LEAST_FEE extends TopLevel[LEAST_FEE with Double]
-  
-  /* 0 */ @js.native
-  object LEAST_TIME extends TopLevel[LEAST_TIME with Double]
-  
-  /* 3 */ @js.native
-  object REAL_TRAFFIC extends TopLevel[REAL_TRAFFIC with Double]
-  
+  @js.native
+  sealed trait REAL_TRAFFIC
+    extends StObject
+       with DrivingPolicy
 }
-

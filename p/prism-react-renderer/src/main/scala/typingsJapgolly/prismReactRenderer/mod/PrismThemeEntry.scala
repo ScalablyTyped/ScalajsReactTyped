@@ -17,41 +17,59 @@ import typingsJapgolly.prismReactRenderer.prismReactRendererStrings.italic
 import typingsJapgolly.prismReactRenderer.prismReactRendererStrings.none
 import typingsJapgolly.prismReactRenderer.prismReactRendererStrings.normal
 import typingsJapgolly.prismReactRenderer.prismReactRendererStrings.underline
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PrismThemeEntry extends /* styleKey */ StringDictionary[String | Double | Unit] {
+trait PrismThemeEntry
+  extends StObject
+     with /* styleKey */ StringDictionary[String | Double | Unit] {
+  
   var backgroundColor: js.UndefOr[String] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var fontStyle: js.UndefOr[normal | italic] = js.undefined
+  
   var fontWeight: js.UndefOr[
     normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
   ] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   var textDecorationLine: js.UndefOr[none | underline | `line-through` | (`underline line-through`)] = js.undefined
 }
-
 object PrismThemeEntry {
-  @scala.inline
-  def apply(
-    StringDictionary: /* styleKey */ StringDictionary[String | Double | Unit] = null,
-    backgroundColor: String = null,
-    color: String = null,
-    fontStyle: normal | italic = null,
-    fontWeight: normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` = null,
-    opacity: Int | Double = null,
-    textDecorationLine: none | underline | `line-through` | (`underline line-through`) = null
-  ): PrismThemeEntry = {
+  
+  inline def apply(): PrismThemeEntry = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (textDecorationLine != null) __obj.updateDynamic("textDecorationLine")(textDecorationLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrismThemeEntry]
   }
+  
+  extension [Self <: PrismThemeEntry](x: Self) {
+    
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setFontStyle(value: normal | italic): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    
+    inline def setFontWeight(value: normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setTextDecorationLine(value: none | underline | `line-through` | (`underline line-through`)): Self = StObject.set(x, "textDecorationLine", value.asInstanceOf[js.Any])
+    
+    inline def setTextDecorationLineUndefined: Self = StObject.set(x, "textDecorationLine", js.undefined)
+  }
 }
-

@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.Microsoft.SharePoint.Client.Search.Query
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SortDirection extends js.Object
-
+sealed trait SortDirection extends StObject
 @JSGlobal("Microsoft.SharePoint.Client.Search.Query.SortDirection")
 @js.native
-object SortDirection extends js.Object {
-  @js.native
-  sealed trait ascending extends SortDirection
+object SortDirection extends StObject {
   
   @js.native
-  sealed trait descending extends SortDirection
+  sealed trait ascending
+    extends StObject
+       with SortDirection
   
   @js.native
-  sealed trait fqlFormula extends SortDirection
+  sealed trait descending
+    extends StObject
+       with SortDirection
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SortDirection with Double] = js.native
-  /* 0 */ @js.native
-  object ascending extends TopLevel[ascending with Double]
-  
-  /* 1 */ @js.native
-  object descending extends TopLevel[descending with Double]
-  
-  /* 2 */ @js.native
-  object fqlFormula extends TopLevel[fqlFormula with Double]
-  
+  @js.native
+  sealed trait fqlFormula
+    extends StObject
+       with SortDirection
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for magic-string
 
-Typings are for version 0.25.4
+Typings are for version 0.26.7
 
 ## Library description:
 Modify strings, generate sourcemaps
@@ -10,10 +10,10 @@ Modify strings, generate sourcemaps
 | ------------------ | :-------------: |
 | Full name          | magic-string |
 | Keywords           | string, string manipulation, sourcemap, templating, transpilation |
-| # releases         | 12 |
-| # dependents       | 265 |
-| # downloads        | 108443774 |
-| # stars            | 2 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 5.3667880333333336E7 |
+| # stars            | 1657.0 |
 
 ## Links
 - [Homepage](https://github.com/rich-harris/magic-string#readme)

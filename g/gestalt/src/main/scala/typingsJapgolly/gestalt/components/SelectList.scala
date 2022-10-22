@@ -1,58 +1,51 @@
 package typingsJapgolly.gestalt.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.gestalt.AnonLabel
-import typingsJapgolly.gestalt.AnonValue
-import typingsJapgolly.gestalt.gestaltStrings.down
-import typingsJapgolly.gestalt.gestaltStrings.left
-import typingsJapgolly.gestalt.gestaltStrings.right
-import typingsJapgolly.gestalt.gestaltStrings.up
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.gestalt.anon.ValueString
+import typingsJapgolly.gestalt.gestaltStrings.hidden
+import typingsJapgolly.gestalt.gestaltStrings.lg
+import typingsJapgolly.gestalt.gestaltStrings.md
+import typingsJapgolly.gestalt.gestaltStrings.visible
 import typingsJapgolly.gestalt.mod.SelectListProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SelectList {
-  def apply(
-    id: String,
-    options: js.Array[AnonLabel],
-    onChange: AnonValue => Callback,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    errorMessage: String = null,
-    idealErrorDirection: up | right | down | left = null,
-    name: String = null,
-    placeholder: String = null,
-    value: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SelectListProps, typingsJapgolly.gestalt.mod.SelectList, Unit, SelectListProps] = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.gestalt.AnonValue) => onChange(t0).runNow()))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (idealErrorDirection != null) __obj.updateDynamic("idealErrorDirection")(idealErrorDirection.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.gestalt.mod.SelectListProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.gestalt.mod.SelectList](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.gestalt.mod.SelectListProps])(children: _*)
+  inline def apply(id: String, onChange: ValueString => Callback): Builder = {
+    val __props = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1((t0: ValueString) => onChange(t0).runNow()))
+    new Builder(js.Array(this.component, __props.asInstanceOf[SelectListProps]))
   }
+  
   @JSImport("gestalt", "SelectList")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def errorMessage(value: String): this.type = set("errorMessage", value.asInstanceOf[js.Any])
+    
+    inline def helperText(value: String): this.type = set("helperText", value.asInstanceOf[js.Any])
+    
+    inline def label(value: String): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def labelDisplay(value: visible | hidden): this.type = set("labelDisplay", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def size(value: md | lg): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def value(value: String): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: SelectListProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

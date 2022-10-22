@@ -1,50 +1,62 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PrintParametersProperties extends js.Object {
+trait PrintParametersProperties extends StObject {
+  
   /**
-    * Additional parameters for the print service. When an arcpy script is published as a custom print service there may be additional parameters associated with the print service. To determine the extra parameters visit the ArcGIS REST Services Directory page for the print service.
+    * Additional parameters for the print service.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintParameters.html#extraParameters)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#extraParameters)
     */
-  var extraParameters: js.UndefOr[js.Any] = js.undefined
+  var extraParameters: js.UndefOr[Any] = js.undefined
+  
   /**
     * Specify the output spatial reference for the printout.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintParameters.html#outSpatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#outSpatialReference)
     */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  
   /**
     * Defines the layout template used for the printed map.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintParameters.html#template)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#template)
     */
   var template: js.UndefOr[PrintTemplateProperties] = js.undefined
+  
   /**
     * The view to print.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintParameters.html#view)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#view)
     */
   var view: js.UndefOr[MapViewProperties] = js.undefined
 }
-
 object PrintParametersProperties {
-  @scala.inline
-  def apply(
-    extraParameters: js.Any = null,
-    outSpatialReference: SpatialReferenceProperties = null,
-    template: PrintTemplateProperties = null,
-    view: MapViewProperties = null
-  ): PrintParametersProperties = {
+  
+  inline def apply(): PrintParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (extraParameters != null) __obj.updateDynamic("extraParameters")(extraParameters.asInstanceOf[js.Any])
-    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintParametersProperties]
   }
+  
+  extension [Self <: PrintParametersProperties](x: Self) {
+    
+    inline def setExtraParameters(value: Any): Self = StObject.set(x, "extraParameters", value.asInstanceOf[js.Any])
+    
+    inline def setExtraParametersUndefined: Self = StObject.set(x, "extraParameters", js.undefined)
+    
+    inline def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
+    
+    inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
+    
+    inline def setTemplate(value: PrintTemplateProperties): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

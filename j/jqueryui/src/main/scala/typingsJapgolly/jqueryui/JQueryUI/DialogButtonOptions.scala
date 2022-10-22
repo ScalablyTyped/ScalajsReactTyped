@@ -1,36 +1,46 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DialogButtonOptions
-  extends /* attr */ StringDictionary[js.Any] {
-  var click: js.UndefOr[js.Function1[/* eventObject */ JQueryEventObject, _]] = js.undefined
-  var icons: js.UndefOr[js.Any] = js.undefined
+  extends StObject
+     with /* attr */ StringDictionary[Any] {
+  
+  var click: js.UndefOr[js.Function1[/* eventObject */ JQueryEventObject, Any]] = js.undefined
+  
+  var icons: js.UndefOr[Any] = js.undefined
+  
   var showText: js.UndefOr[String | Boolean] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
 }
-
 object DialogButtonOptions {
-  @scala.inline
-  def apply(
-    StringDictionary: /* attr */ StringDictionary[js.Any] = null,
-    click: /* eventObject */ JQueryEventObject => CallbackTo[js.Any] = null,
-    icons: js.Any = null,
-    showText: String | Boolean = null,
-    text: String = null
-  ): DialogButtonOptions = {
+  
+  inline def apply(): DialogButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1((t0: /* eventObject */ typingsJapgolly.jquery.JQueryEventObject) => click(t0).runNow()))
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (showText != null) __obj.updateDynamic("showText")(showText.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogButtonOptions]
   }
+  
+  extension [Self <: DialogButtonOptions](x: Self) {
+    
+    inline def setClick(value: /* eventObject */ JQueryEventObject => Any): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    
+    inline def setIcons(value: Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    
+    inline def setShowText(value: String | Boolean): Self = StObject.set(x, "showText", value.asInstanceOf[js.Any])
+    
+    inline def setShowTextUndefined: Self = StObject.set(x, "showText", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

@@ -10,10 +10,10 @@ A Promise-based API for setTimeout / clearTimeout
 | ------------------ | :-------------: |
 | Full name          | await-timeout |
 | Keywords           | timeout, promise, promise-api, promises, settimeout, cleartimeout |
-| # releases         | 7 |
-| # dependents       | 10 |
-| # downloads        | 196102 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 118117.66666666667 |
+| # stars            | 425.0 |
 
 ## Links
 - [Homepage](https://github.com/vitalets/await-timeout#readme)

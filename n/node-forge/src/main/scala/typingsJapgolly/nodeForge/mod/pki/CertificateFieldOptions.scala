@@ -1,23 +1,36 @@
 package typingsJapgolly.nodeForge.mod.pki
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CertificateFieldOptions extends js.Object {
+trait CertificateFieldOptions extends StObject {
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var shortName: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object CertificateFieldOptions {
-  @scala.inline
-  def apply(name: String = null, shortName: String = null, `type`: String = null): CertificateFieldOptions = {
+  
+  inline def apply(): CertificateFieldOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (shortName != null) __obj.updateDynamic("shortName")(shortName.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateFieldOptions]
   }
+  
+  extension [Self <: CertificateFieldOptions](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+    
+    inline def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

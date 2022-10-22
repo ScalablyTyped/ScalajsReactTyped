@@ -1,29 +1,26 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileManagerDataSourceSchemaModel extends HierarchicalDataSourceSchemaModel {
-  var isDirectory: js.UndefOr[js.Any] = js.undefined
+trait FileManagerDataSourceSchemaModel
+  extends StObject
+     with HierarchicalDataSourceSchemaModel {
+  
+  var isDirectory: js.UndefOr[Any] = js.undefined
 }
-
 object FileManagerDataSourceSchemaModel {
-  @scala.inline
-  def apply(
-    children: js.Any = null,
-    fields: js.Any = null,
-    hasChildren: js.Any = null,
-    id: String = null,
-    isDirectory: js.Any = null
-  ): FileManagerDataSourceSchemaModel = {
+  
+  inline def apply(): FileManagerDataSourceSchemaModel = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (hasChildren != null) __obj.updateDynamic("hasChildren")(hasChildren.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (isDirectory != null) __obj.updateDynamic("isDirectory")(isDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileManagerDataSourceSchemaModel]
   }
+  
+  extension [Self <: FileManagerDataSourceSchemaModel](x: Self) {
+    
+    inline def setIsDirectory(value: Any): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
+    
+    inline def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
+  }
 }
-

@@ -1,10 +1,10 @@
 package typingsJapgolly.ddTrace.mod.plugins
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.ddTrace.mod.Analyzable
+import typingsJapgolly.ddTrace.anon.Execute
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This plugin automatically instruments the
@@ -31,8 +31,9 @@ import scala.scalajs.js.annotation._
   * ```
   */
 trait graphql
-  extends Integration
-     with Analyzable {
+  extends StObject
+     with Instrumentation {
+  
   /**
     * Whether to collapse list items into a single element. (i.e. single
     * `users.*.name` span instead of `users.0.name`, `users.1.name`, etc)
@@ -40,6 +41,7 @@ trait graphql
     * @default true
     */
   var collapse: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The maximum depth of fields/resolvers to instrument. Set to `0` to only
     * instrument the operation or to `-1` to instrument all fields/resolvers.
@@ -47,6 +49,16 @@ trait graphql
     * @default -1
     */
   var depth: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * An object of optional callbacks to be executed during the respective
+    * phase of a GraphQL operation. Undefined callbacks default to a noop
+    * function.
+    *
+    * @default {}
+    */
+  var hooks: js.UndefOr[Execute] = js.undefined
+  
   /**
     * Whether to enable signature calculation for the resource name. This can
     * be disabled if your GraphQL operations always have a name.
@@ -54,36 +66,63 @@ trait graphql
     * @default true
     */
   var signature: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether to include the source of the operation within the query as a tag
+    * on every span. This may contain sensitive information and sould only be
+    * enabled if sensitive data is always sent as variables and not in the
+    * query text.
+    *
+    * @default false
+    */
+  var source: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * An array of variable names to record. Can also be a callback that returns
     * the key/value pairs to record. For example, using
     * `variables => variables` would record all variables.
     */
   var variables: js.UndefOr[
-    js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[_]])
+    js.Array[String] | (js.Function1[/* variables */ StringDictionary[Any], StringDictionary[Any]])
   ] = js.undefined
 }
-
 object graphql {
-  @scala.inline
-  def apply(
-    analytics: Boolean | Double = null,
-    collapse: js.UndefOr[Boolean] = js.undefined,
-    depth: Int | Double = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    service: String = null,
-    signature: js.UndefOr[Boolean] = js.undefined,
-    variables: js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[_]]) = null
-  ): graphql = {
+  
+  inline def apply(): graphql = {
     val __obj = js.Dynamic.literal()
-    if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (!js.isUndefined(signature)) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[graphql]
   }
+  
+  extension [Self <: graphql](x: Self) {
+    
+    inline def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
+    
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    
+    inline def setHooks(value: Execute): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    
+    inline def setSignature(value: Boolean): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    
+    inline def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setVariables(
+      value: js.Array[String] | (js.Function1[/* variables */ StringDictionary[Any], StringDictionary[Any]])
+    ): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    
+    inline def setVariablesFunction1(value: /* variables */ StringDictionary[Any] => StringDictionary[Any]): Self = StObject.set(x, "variables", js.Any.fromFunction1(value))
+    
+    inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+    
+    inline def setVariablesVarargs(value: String*): Self = StObject.set(x, "variables", js.Array(value*))
+  }
 }
-

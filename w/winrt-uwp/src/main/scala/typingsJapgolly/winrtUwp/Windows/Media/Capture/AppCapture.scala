@@ -1,23 +1,49 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Capture.AppCapture")
-@js.native
-abstract class AppCapture () extends js.Object {
-   /* unmapped type */ var addEventListener: js.Any = js.native
-   /* unmapped type */ var isCapturingAudio: js.Any = js.native
-   /* unmapped type */ var isCapturingVideo: js.Any = js.native
-   /* unmapped type */ var oncapturingchanged: js.Any = js.native
-   /* unmapped type */ var removeEventListener: js.Any = js.native
+trait AppCapture extends StObject {
+  
+  /* unmapped type */
+  var addEventListener: Any
+  
+  /* unmapped type */
+  var isCapturingAudio: Any
+  
+  /* unmapped type */
+  var isCapturingVideo: Any
+  
+  /* unmapped type */
+  var oncapturingchanged: Any
+  
+  /* unmapped type */
+  var removeEventListener: Any
 }
-
-/* static members */
-@JSGlobal("Windows.Media.Capture.AppCapture")
-@js.native
-object AppCapture extends js.Object {
-  var getForCurrentView: js.Any = js.native
+object AppCapture {
+  
+  inline def apply(
+    addEventListener: Any,
+    isCapturingAudio: Any,
+    isCapturingVideo: Any,
+    oncapturingchanged: Any,
+    removeEventListener: Any
+  ): AppCapture = {
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener.asInstanceOf[js.Any], isCapturingAudio = isCapturingAudio.asInstanceOf[js.Any], isCapturingVideo = isCapturingVideo.asInstanceOf[js.Any], oncapturingchanged = oncapturingchanged.asInstanceOf[js.Any], removeEventListener = removeEventListener.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AppCapture]
+  }
+  
+  extension [Self <: AppCapture](x: Self) {
+    
+    inline def setAddEventListener(value: Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
+    
+    inline def setIsCapturingAudio(value: Any): Self = StObject.set(x, "isCapturingAudio", value.asInstanceOf[js.Any])
+    
+    inline def setIsCapturingVideo(value: Any): Self = StObject.set(x, "isCapturingVideo", value.asInstanceOf[js.Any])
+    
+    inline def setOncapturingchanged(value: Any): Self = StObject.set(x, "oncapturingchanged", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveEventListener(value: Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
+  }
 }
-

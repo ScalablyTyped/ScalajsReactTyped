@@ -2,14 +2,14 @@ package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Email
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The functionality described in this topic is not available to all Windows and Windows Phone apps. For your code to call these APIs, Microsoft must approve your use of them and provision your developer account. Otherwise the calls will fail at runtime. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailStore")
 @js.native
-abstract class EmailStore () extends js.Object {
+trait EmailStore extends StObject {
+  
   /**
     * Allows an app to create an email account from an account name and an email address.
     * @param accountName The name of the account.
@@ -25,17 +25,20 @@ abstract class EmailStore () extends js.Object {
     * @return An email mailbox.
     */
   def createMailboxAsync(accountName: String, accountAddress: String, userDataAccountId: String): IPromiseWithIAsyncOperation[EmailMailbox] = js.native
+  
   /**
     * Gets all mailboxes within the current scope.
     * @return A collection of mailboxes.
     */
-  def findMailboxesAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findMailboxesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
+  
   /**
     * Gets an email conversation from the provided identifier.
     * @param id The identifier of the conversation.
     * @return An email conversation.
     */
   def getConversationAsync(id: String): IPromiseWithIAsyncOperation[EmailConversation] = js.native
+  
   /**
     * Gets a batch of email conversations.
     * @return A batch of email conversations.
@@ -47,24 +50,28 @@ abstract class EmailStore () extends js.Object {
     * @return A batch of email conversations.
     */
   def getConversationReader(options: EmailQueryOptions): EmailConversationReader = js.native
+  
   /**
     * Gets an email folder from an identifier.
     * @param id The identifier for the email folder.
     * @return The folder described by the identifier.
     */
   def getFolderAsync(id: String): IPromiseWithIAsyncOperation[EmailFolder] = js.native
+  
   /**
     * Gets a mailbox from an identifier.
     * @param id The identifier for the mailbox.
     * @return The mailbox described by the identifier.
     */
   def getMailboxAsync(id: String): IPromiseWithIAsyncOperation[EmailMailbox] = js.native
+  
   /**
     * Gets the specified email message.
     * @param id The identifier for the email message.
     * @return The specified email message.
     */
   def getMessageAsync(id: String): IPromiseWithIAsyncOperation[EmailMessage] = js.native
+  
   /**
     * Gets a message reader.
     * @return The email message reader.
@@ -77,4 +84,3 @@ abstract class EmailStore () extends js.Object {
     */
   def getMessageReader(options: EmailQueryOptions): EmailMessageReader = js.native
 }
-

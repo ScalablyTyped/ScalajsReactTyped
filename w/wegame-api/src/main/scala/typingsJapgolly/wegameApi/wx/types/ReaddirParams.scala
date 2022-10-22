@@ -1,32 +1,43 @@
 package typingsJapgolly.wegameApi.wx.types
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.wegameApi.AnonErrMsg
-import typingsJapgolly.wegameApi.AnonFiles
+import typingsJapgolly.wegameApi.anon.ErrMsg
+import typingsJapgolly.wegameApi.anon.Files
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReaddirParams extends js.Object {
+trait ReaddirParams extends StObject {
+  
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var dirPath: String
-  var fail: js.UndefOr[js.Function1[/* res */ AnonErrMsg, Unit]] = js.undefined
-  var success: js.UndefOr[js.Function1[/* res */ AnonFiles, Unit]] = js.undefined
+  
+  var fail: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.undefined
+  
+  var success: js.UndefOr[js.Function1[/* res */ Files, Unit]] = js.undefined
 }
-
 object ReaddirParams {
-  @scala.inline
-  def apply(
-    dirPath: String,
-    complete: js.UndefOr[Callback] = js.undefined,
-    fail: /* res */ AnonErrMsg => Callback = null,
-    success: /* res */ AnonFiles => Callback = null
-  ): ReaddirParams = {
+  
+  inline def apply(dirPath: String): ReaddirParams = {
     val __obj = js.Dynamic.literal(dirPath = dirPath.asInstanceOf[js.Any])
-    complete.foreach(p => __obj.updateDynamic("complete")(p.toJsFn))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.wegameApi.AnonErrMsg) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.wegameApi.AnonFiles) => success(t0).runNow()))
     __obj.asInstanceOf[ReaddirParams]
   }
+  
+  extension [Self <: ReaddirParams](x: Self) {
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setDirPath(value: String): Self = StObject.set(x, "dirPath", value.asInstanceOf[js.Any])
+    
+    inline def setFail(value: /* res */ ErrMsg => Callback): Self = StObject.set(x, "fail", js.Any.fromFunction1((t0: /* res */ ErrMsg) => value(t0).runNow()))
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setSuccess(value: /* res */ Files => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ Files) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

@@ -1,18 +1,18 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/closestTo", JSImport.Namespace)
-@js.native
-object esmClosestToMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(dateToCompare: Double, datesArray: js.Array[js.Date | Double]): js.Date = js.native
-    def apply(dateToCompare: Date, datesArray: js.Array[js.Date | Double]): js.Date = js.native
-  }
+object esmClosestToMod {
   
+  object default {
+    
+    inline def apply(dateToCompare: js.Date, datesArray: js.Array[js.Date | Double]): js.UndefOr[js.Date] = (^.asInstanceOf[js.Dynamic].apply(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Date]]
+    inline def apply(dateToCompare: Double, datesArray: js.Array[js.Date | Double]): js.UndefOr[js.Date] = (^.asInstanceOf[js.Dynamic].apply(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Date]]
+    
+    @JSImport("date-fns/esm/closestTo", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

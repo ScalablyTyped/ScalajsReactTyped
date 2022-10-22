@@ -10,10 +10,10 @@ The lodash method `_.isDate` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isdate |
 | Keywords           | lodash-modularized, isdate |
-| # releases         | 0 |
-| # dependents       | 41 |
-| # downloads        | 598943 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 216081.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

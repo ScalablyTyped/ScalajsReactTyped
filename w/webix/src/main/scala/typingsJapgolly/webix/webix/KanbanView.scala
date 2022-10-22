@@ -1,38 +1,41 @@
 package typingsJapgolly.webix.webix
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KanbanView extends js.Object {
+trait KanbanView extends StObject {
+  
+  @JSName("$dragCreate")
+  def $dragCreate(source: HTMLElement, event: Event): HTMLElement = js.native
+  
+  @JSName("$dragPos")
+  def $dragPos(args: Any*): Any = js.native
   @JSName("$dragPos")
   var $dragPos_Original: WebixCallback = js.native
+  
+  @JSName("$dropHTML")
+  def $dropHTML(args: Any*): Any = js.native
   @JSName("$dropHTML")
   var $dropHTML_Original: WebixCallback = js.native
+  
+  @JSName("$skin")
+  def $skin(args: Any*): Any = js.native
   @JSName("$skin")
   var $skin_Original: WebixCallback = js.native
-  var on_context: StringDictionary[js.Any] = js.native
-  @JSName("$dragCreate")
-  def $dragCreate(source: HTMLElement, event: Event_): HTMLElement = js.native
-  @JSName("$dragPos")
-  def $dragPos(args: js.Any*): js.Any = js.native
-  @JSName("$dropHTML")
-  def $dropHTML(args: js.Any*): js.Any = js.native
-  @JSName("$skin")
-  def $skin(args: js.Any*): js.Any = js.native
+  
   def eachOtherList(code: WebixCallback): Unit = js.native
-  def getKanban(): js.Any = js.native
+  
+  def getKanban(): Any = js.native
+  
   def move(sid: String, tindex: Double): String = js.native
-  def move(sid: String, tindex: Double, tobj: js.Any): String = js.native
-  def move(sid: String, tindex: Double, tobj: js.Any, details: js.Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Any, details: Any): String = js.native
+  def move(sid: String, tindex: Double, tobj: Unit, details: Any): String = js.native
+  
+  var on_context: StringDictionary[Any] = js.native
 }
-
-@JSGlobal("webix.KanbanView")
-@js.native
-object KanbanView extends TopLevel[KanbanView]
-

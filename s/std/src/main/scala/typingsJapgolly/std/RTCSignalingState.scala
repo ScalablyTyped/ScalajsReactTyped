@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.closed
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.`have-remote-pranswer`
   - typingsJapgolly.std.stdStrings.stable
 */
-trait RTCSignalingState extends js.Object
-
+trait RTCSignalingState extends StObject
 object RTCSignalingState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def closed: typingsJapgolly.std.stdStrings.closed = this.cast("closed")
-  @scala.inline
-  def `have-local-offer`: typingsJapgolly.std.stdStrings.`have-local-offer` = this.cast("have-local-offer")
-  @scala.inline
-  def `have-local-pranswer`: typingsJapgolly.std.stdStrings.`have-local-pranswer` = this.cast("have-local-pranswer")
-  @scala.inline
-  def `have-remote-offer`: typingsJapgolly.std.stdStrings.`have-remote-offer` = this.cast("have-remote-offer")
-  @scala.inline
-  def `have-remote-pranswer`: typingsJapgolly.std.stdStrings.`have-remote-pranswer` = this.cast("have-remote-pranswer")
-  @scala.inline
-  def stable: typingsJapgolly.std.stdStrings.stable = this.cast("stable")
+  
+  inline def closed: typingsJapgolly.std.stdStrings.closed = "closed".asInstanceOf[typingsJapgolly.std.stdStrings.closed]
+  
+  inline def `have-local-offer`: typingsJapgolly.std.stdStrings.`have-local-offer` = "have-local-offer".asInstanceOf[typingsJapgolly.std.stdStrings.`have-local-offer`]
+  
+  inline def `have-local-pranswer`: typingsJapgolly.std.stdStrings.`have-local-pranswer` = "have-local-pranswer".asInstanceOf[typingsJapgolly.std.stdStrings.`have-local-pranswer`]
+  
+  inline def `have-remote-offer`: typingsJapgolly.std.stdStrings.`have-remote-offer` = "have-remote-offer".asInstanceOf[typingsJapgolly.std.stdStrings.`have-remote-offer`]
+  
+  inline def `have-remote-pranswer`: typingsJapgolly.std.stdStrings.`have-remote-pranswer` = "have-remote-pranswer".asInstanceOf[typingsJapgolly.std.stdStrings.`have-remote-pranswer`]
+  
+  inline def stable: typingsJapgolly.std.stdStrings.stable = "stable".asInstanceOf[typingsJapgolly.std.stdStrings.stable]
 }
-

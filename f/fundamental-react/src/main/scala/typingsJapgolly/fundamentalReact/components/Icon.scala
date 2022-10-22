@@ -1,52 +1,35 @@
 package typingsJapgolly.fundamentalReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.fundamentalReact.iconMod.IconProps
-import typingsJapgolly.fundamentalReact.iconMod.IconSize
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fundamentalReact.libIconIconMod.IconGlyph
+import typingsJapgolly.fundamentalReact.libIconIconMod.IconProps
+import typingsJapgolly.fundamentalReact.libIconIconMod.IconSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Icon {
-  def apply(
-    glyph: String,
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
-    className: String = null,
-    customStyles: StringDictionary[js.Any] = null,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    size: IconSize = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    IconProps, 
-    MountedWithRawType[IconProps, js.Object, RawMounted[IconProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(glyph = glyph.asInstanceOf[js.Any])
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.fundamentalReact.iconMod.IconProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.fundamentalReact.iconMod.IconProps])(children: _*)
+  inline def apply(glyph: IconGlyph): Builder = {
+    val __props = js.Dynamic.literal(glyph = glyph.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IconProps]))
   }
-  @JSImport("fundamental-react/lib/Icon/Icon", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("fundamental-react", "Icon")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def disableStyles(value: Boolean): this.type = set("disableStyles", value.asInstanceOf[js.Any])
+    
+    inline def size(value: IconSize): this.type = set("size", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IconProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

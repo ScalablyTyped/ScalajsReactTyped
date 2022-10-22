@@ -1,20 +1,22 @@
 package typingsJapgolly.cassanknex.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FromableQueryBuilder extends js.Object {
+trait FromableQueryBuilder extends StObject {
+  
   def from(table: String): this.type
 }
-
 object FromableQueryBuilder {
-  @scala.inline
-  def apply(from: String => CallbackTo[FromableQueryBuilder]): FromableQueryBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(js.Any.fromFunction1((t0: java.lang.String) => from(t0).runNow()))
+  
+  inline def apply(from: String => FromableQueryBuilder): FromableQueryBuilder = {
+    val __obj = js.Dynamic.literal(from = js.Any.fromFunction1(from))
     __obj.asInstanceOf[FromableQueryBuilder]
   }
+  
+  extension [Self <: FromableQueryBuilder](x: Self) {
+    
+    inline def setFrom(value: String => FromableQueryBuilder): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
+  }
 }
-

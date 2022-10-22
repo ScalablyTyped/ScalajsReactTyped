@@ -1,19 +1,32 @@
 package typingsJapgolly.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait fragLoadEmergencyAbortedData extends js.Object {
-  var frag: Fragment
-}
-
-object fragLoadEmergencyAbortedData {
-  @scala.inline
-  def apply(frag: Fragment): fragLoadEmergencyAbortedData = {
-    val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any])
+trait FragLoadEmergencyAbortedData extends StObject {
   
-    __obj.asInstanceOf[fragLoadEmergencyAbortedData]
+  var frag: Fragment
+  
+  var part: Part | Null
+  
+  var stats: LoaderStats
+}
+object FragLoadEmergencyAbortedData {
+  
+  inline def apply(frag: Fragment, stats: LoaderStats): FragLoadEmergencyAbortedData = {
+    val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], part = null)
+    __obj.asInstanceOf[FragLoadEmergencyAbortedData]
+  }
+  
+  extension [Self <: FragLoadEmergencyAbortedData](x: Self) {
+    
+    inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
+    
+    inline def setPart(value: Part): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    
+    inline def setPartNull: Self = StObject.set(x, "part", null)
+    
+    inline def setStats(value: LoaderStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }
-

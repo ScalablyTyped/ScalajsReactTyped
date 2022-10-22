@@ -1,59 +1,49 @@
 package typingsJapgolly.materialUiCore.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.materialUiCore.createBreakpointsMod.Breakpoint
-import typingsJapgolly.materialUiCore.hiddenCssMod.HiddenCssProps
-import typingsJapgolly.materialUiCore.hiddenCssMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.materialUiCore.hiddenHiddenCssMod.HiddenCssProps
+import typingsJapgolly.materialUiCore.stylesCreateBreakpointsMod.Breakpoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object HiddenCss {
-  def apply(
-    lgDown: js.UndefOr[Boolean] = js.undefined,
-    lgUp: js.UndefOr[Boolean] = js.undefined,
-    mdDown: js.UndefOr[Boolean] = js.undefined,
-    mdUp: js.UndefOr[Boolean] = js.undefined,
-    only: Breakpoint | js.Array[Breakpoint] = null,
-    smDown: js.UndefOr[Boolean] = js.undefined,
-    smUp: js.UndefOr[Boolean] = js.undefined,
-    xlDown: js.UndefOr[Boolean] = js.undefined,
-    xlUp: js.UndefOr[Boolean] = js.undefined,
-    xsDown: js.UndefOr[Boolean] = js.undefined,
-    xsUp: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[HiddenCssProps, default, Unit, HiddenCssProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(lgDown)) __obj.updateDynamic("lgDown")(lgDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(lgUp)) __obj.updateDynamic("lgUp")(lgUp.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdDown)) __obj.updateDynamic("mdDown")(mdDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(mdUp)) __obj.updateDynamic("mdUp")(mdUp.asInstanceOf[js.Any])
-    if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
-    if (!js.isUndefined(smDown)) __obj.updateDynamic("smDown")(smDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(smUp)) __obj.updateDynamic("smUp")(smUp.asInstanceOf[js.Any])
-    if (!js.isUndefined(xlDown)) __obj.updateDynamic("xlDown")(xlDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(xlUp)) __obj.updateDynamic("xlUp")(xlUp.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsDown)) __obj.updateDynamic("xsDown")(xsDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsUp)) __obj.updateDynamic("xsUp")(xsUp.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUiCore.hiddenCssMod.HiddenCssProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUiCore.hiddenCssMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUiCore.hiddenCssMod.HiddenCssProps])(children: _*)
-  }
   @JSImport("@material-ui/core/Hidden/HiddenCss", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def lgDown(value: Boolean): this.type = set("lgDown", value.asInstanceOf[js.Any])
+    
+    inline def lgUp(value: Boolean): this.type = set("lgUp", value.asInstanceOf[js.Any])
+    
+    inline def mdDown(value: Boolean): this.type = set("mdDown", value.asInstanceOf[js.Any])
+    
+    inline def mdUp(value: Boolean): this.type = set("mdUp", value.asInstanceOf[js.Any])
+    
+    inline def only(value: Breakpoint | js.Array[Breakpoint]): this.type = set("only", value.asInstanceOf[js.Any])
+    
+    inline def onlyVarargs(value: Breakpoint*): this.type = set("only", js.Array(value*))
+    
+    inline def smDown(value: Boolean): this.type = set("smDown", value.asInstanceOf[js.Any])
+    
+    inline def smUp(value: Boolean): this.type = set("smUp", value.asInstanceOf[js.Any])
+    
+    inline def xlDown(value: Boolean): this.type = set("xlDown", value.asInstanceOf[js.Any])
+    
+    inline def xlUp(value: Boolean): this.type = set("xlUp", value.asInstanceOf[js.Any])
+    
+    inline def xsDown(value: Boolean): this.type = set("xsDown", value.asInstanceOf[js.Any])
+    
+    inline def xsUp(value: Boolean): this.type = set("xsUp", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: HiddenCss.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: HiddenCssProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

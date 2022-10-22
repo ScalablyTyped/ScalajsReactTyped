@@ -1,41 +1,32 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services.Formatting
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RuleAction extends js.Object
-
+sealed trait RuleAction extends StObject
 @JSGlobal("TypeScript.Services.Formatting.RuleAction")
 @js.native
-object RuleAction extends js.Object {
-  @js.native
-  sealed trait Delete extends RuleAction
+object RuleAction extends StObject {
   
   @js.native
-  sealed trait Ignore extends RuleAction
+  sealed trait Delete
+    extends StObject
+       with RuleAction
   
   @js.native
-  sealed trait NewLine extends RuleAction
+  sealed trait Ignore
+    extends StObject
+       with RuleAction
   
   @js.native
-  sealed trait Space extends RuleAction
+  sealed trait NewLine
+    extends StObject
+       with RuleAction
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RuleAction with Double] = js.native
-  /* 3 */ @js.native
-  object Delete extends TopLevel[Delete with Double]
-  
-  /* 0 */ @js.native
-  object Ignore extends TopLevel[Ignore with Double]
-  
-  /* 2 */ @js.native
-  object NewLine extends TopLevel[NewLine with Double]
-  
-  /* 1 */ @js.native
-  object Space extends TopLevel[Space with Double]
-  
+  @js.native
+  sealed trait Space
+    extends StObject
+       with RuleAction
 }
-

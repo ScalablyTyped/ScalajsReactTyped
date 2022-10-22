@@ -1,22 +1,22 @@
 
 # Scala.js typings for express-request-id
 
-Typings are for version 1.4
+Typings are for version 3.0.0
 
 ## Library description:
-Generate UUID for request and add it to headers
+Generate UUID for request
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | express-request-id |
 | Keywords           | express, middleware, request, id, uuid |
-| # releases         | 2 |
-| # dependents       | 37 |
-| # downloads        | 1215983 |
-| # stars            | 5 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 335813.0 |
+| # stars            | 107.0 |
 
 ## Links
-- [Homepage](https://github.com/floatdrop/express-request-id)
+- [Homepage](https://github.com/floatdrop/express-request-id#readme)
 - [Bugs](https://github.com/floatdrop/express-request-id/issues)
 - [Repository](https://github.com/floatdrop/express-request-id)
 - [Npm](https://www.npmjs.com/package/express-request-id)
@@ -24,7 +24,7 @@ Generate UUID for request and add it to headers
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

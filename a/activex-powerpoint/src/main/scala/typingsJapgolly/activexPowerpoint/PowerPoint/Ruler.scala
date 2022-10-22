@@ -1,17 +1,46 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("PowerPoint.Ruler")
-@js.native
-class Ruler protected () extends js.Object {
-  val Application: typingsJapgolly.activexPowerpoint.PowerPoint.Application = js.native
-  val Levels: RulerLevels = js.native
-  val Parent: js.Any = js.native
-  @JSName("PowerPoint.Ruler_typekey")
-  var PowerPointDotRuler_typekey: Ruler = js.native
-  val TabStops: typingsJapgolly.activexPowerpoint.PowerPoint.TabStops = js.native
+trait Ruler extends StObject {
+  
+  val Application: typingsJapgolly.activexPowerpoint.PowerPoint.Application
+  
+  val Levels: RulerLevels
+  
+  val Parent: Any
+  
+  /* private */ @JSName("PowerPoint.Ruler_typekey")
+  var PowerPointDotRuler_typekey: Ruler
+  
+  val TabStops: typingsJapgolly.activexPowerpoint.PowerPoint.TabStops
 }
-
+object Ruler {
+  
+  inline def apply(
+    Application: Application,
+    Levels: RulerLevels,
+    Parent: Any,
+    PowerPointDotRuler_typekey: Ruler,
+    TabStops: TabStops
+  ): Ruler = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Levels = Levels.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], TabStops = TabStops.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.Ruler_typekey")(PowerPointDotRuler_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Ruler]
+  }
+  
+  extension [Self <: Ruler](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setLevels(value: RulerLevels): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setPowerPointDotRuler_typekey(value: Ruler): Self = StObject.set(x, "PowerPoint.Ruler_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setTabStops(value: TabStops): Self = StObject.set(x, "TabStops", value.asInstanceOf[js.Any])
+  }
+}

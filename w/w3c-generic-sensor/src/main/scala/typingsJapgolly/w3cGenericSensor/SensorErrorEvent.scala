@@ -1,14 +1,14 @@
 package typingsJapgolly.w3cGenericSensor
 
-import typingsJapgolly.std.Event_
+import typingsJapgolly.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SensorErrorEvent")
 @js.native
-class SensorErrorEvent protected () extends Event_ {
-  def this(`type`: String, errorEventInitDict: SensorErrorEventInit) = this()
+trait SensorErrorEvent
+  extends StObject
+     with Event {
+  
   val error: js.Error = js.native
 }
-

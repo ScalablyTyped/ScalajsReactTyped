@@ -1,19 +1,22 @@
 package typingsJapgolly.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait bufferCreatedData extends js.Object {
-  var tracks: Tracks
-}
-
-object bufferCreatedData {
-  @scala.inline
-  def apply(tracks: Tracks): bufferCreatedData = {
-    val __obj = js.Dynamic.literal(tracks = tracks.asInstanceOf[js.Any])
+trait BufferCreatedData extends StObject {
   
-    __obj.asInstanceOf[bufferCreatedData]
+  var tracks: TrackSet
+}
+object BufferCreatedData {
+  
+  inline def apply(tracks: TrackSet): BufferCreatedData = {
+    val __obj = js.Dynamic.literal(tracks = tracks.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BufferCreatedData]
+  }
+  
+  extension [Self <: BufferCreatedData](x: Self) {
+    
+    inline def setTracks(value: TrackSet): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
   }
 }
-

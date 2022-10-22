@@ -2,25 +2,30 @@ package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Base.ColorType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A representation for a theme color.
   */
-trait ThemeColor extends js.Object {
+trait ThemeColor extends StObject {
+  
   def getColorType(): ColorType
+  
   def getThemeColorType(): ThemeColorType
 }
-
 object ThemeColor {
-  @scala.inline
-  def apply(getColorType: CallbackTo[ColorType], getThemeColorType: CallbackTo[ThemeColorType]): ThemeColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getColorType")(getColorType.toJsFn)
-    __obj.updateDynamic("getThemeColorType")(getThemeColorType.toJsFn)
+  
+  inline def apply(getColorType: CallbackTo[ColorType], getThemeColorType: CallbackTo[ThemeColorType]): ThemeColor = {
+    val __obj = js.Dynamic.literal(getColorType = getColorType.toJsFn, getThemeColorType = getThemeColorType.toJsFn)
     __obj.asInstanceOf[ThemeColor]
   }
+  
+  extension [Self <: ThemeColor](x: Self) {
+    
+    inline def setGetColorType(value: CallbackTo[ColorType]): Self = StObject.set(x, "getColorType", value.toJsFn)
+    
+    inline def setGetThemeColorType(value: CallbackTo[ThemeColorType]): Self = StObject.set(x, "getThemeColorType", value.toJsFn)
+  }
 }
-

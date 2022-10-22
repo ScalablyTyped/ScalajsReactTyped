@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "atomically" : "1.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "atomically" : "1.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

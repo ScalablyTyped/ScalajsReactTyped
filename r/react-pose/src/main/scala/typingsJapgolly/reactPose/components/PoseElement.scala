@@ -2,74 +2,66 @@ package typingsJapgolly.reactPose.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.popmotionPose.typesMod.DomPopmotionConfig
-import typingsJapgolly.popmotionPose.typesMod.DomPopmotionPoser
-import typingsJapgolly.reactPose.AnonCurrent
-import typingsJapgolly.reactPose.typesMod.ChildRegistration
-import typingsJapgolly.reactPose.typesMod.ConfigFactory
-import typingsJapgolly.reactPose.typesMod.CurrentPose
-import typingsJapgolly.reactPose.typesMod.PoseElementInternalProps
-import typingsJapgolly.reactPose.typesMod.RefFunc
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.popmotionPose.libTypesMod.DomPopmotionConfig
+import typingsJapgolly.popmotionPose.libTypesMod.DomPopmotionPoser
+import typingsJapgolly.reactPose.anon.Current
+import typingsJapgolly.reactPose.libComponentsPoseElementTypesMod.ChildRegistration
+import typingsJapgolly.reactPose.libComponentsPoseElementTypesMod.ConfigFactory
+import typingsJapgolly.reactPose.libComponentsPoseElementTypesMod.CurrentPose
+import typingsJapgolly.reactPose.libComponentsPoseElementTypesMod.PoseElementInternalProps
+import typingsJapgolly.reactPose.libComponentsPoseElementTypesMod.RefFunc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PoseElement {
-  def apply(
-    elementType: js.Any,
-    poseConfig: DomPopmotionConfig | ConfigFactory,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    _pose: CurrentPose = null,
-    getInitialPoseFromParent: js.UndefOr[CallbackTo[CurrentPose | Unit]] = js.undefined,
-    getParentPoseConfig: js.UndefOr[CallbackTo[DomPopmotionConfig]] = js.undefined,
-    initialPose: CurrentPose = null,
-    innerRef: AnonCurrent | RefFunc = null,
-    onPoseComplete: /* pose */ CurrentPose => CallbackTo[js.Any] = null,
-    onUnmount: /* child */ DomPopmotionPoser => CallbackTo[js.Any] = null,
-    onValueChange: StringDictionary[js.Function1[/* v */ js.Any, _]] = null,
-    pose: CurrentPose = null,
-    registerChild: /* props */ ChildRegistration => Callback = null,
-    withParent: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: js.Any = null
-  ): UnmountedWithRoot[
-    PoseElementInternalProps, 
-    typingsJapgolly.reactPose.poseElementMod.PoseElement, 
-    Unit, 
-    PoseElementInternalProps
-  ] = {
-    val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any], poseConfig = poseConfig.asInstanceOf[js.Any])
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (_pose != null) __obj.updateDynamic("_pose")(_pose.asInstanceOf[js.Any])
-    getInitialPoseFromParent.foreach(p => __obj.updateDynamic("getInitialPoseFromParent")(p.toJsFn))
-    getParentPoseConfig.foreach(p => __obj.updateDynamic("getParentPoseConfig")(p.toJsFn))
-    if (initialPose != null) __obj.updateDynamic("initialPose")(initialPose.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (onPoseComplete != null) __obj.updateDynamic("onPoseComplete")(js.Any.fromFunction1((t0: /* pose */ typingsJapgolly.reactPose.typesMod.CurrentPose) => onPoseComplete(t0).runNow()))
-    if (onUnmount != null) __obj.updateDynamic("onUnmount")(js.Any.fromFunction1((t0: /* child */ typingsJapgolly.popmotionPose.typesMod.DomPopmotionPoser) => onUnmount(t0).runNow()))
-    if (onValueChange != null) __obj.updateDynamic("onValueChange")(onValueChange.asInstanceOf[js.Any])
-    if (pose != null) __obj.updateDynamic("pose")(pose.asInstanceOf[js.Any])
-    if (registerChild != null) __obj.updateDynamic("registerChild")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactPose.typesMod.ChildRegistration) => registerChild(t0).runNow()))
-    if (!js.isUndefined(withParent)) __obj.updateDynamic("withParent")(withParent.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactPose.typesMod.PoseElementInternalProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactPose.poseElementMod.PoseElement](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactPose.typesMod.PoseElementInternalProps])
+  inline def apply(elementType: Any, poseConfig: DomPopmotionConfig | ConfigFactory): Builder = {
+    val __props = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any], poseConfig = poseConfig.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[PoseElementInternalProps]))
   }
+  
   @JSImport("react-pose/lib/components/PoseElement", "PoseElement")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactPose.libComponentsPoseElementMod.PoseElement] {
+    
+    inline def _pose(value: CurrentPose): this.type = set("_pose", value.asInstanceOf[js.Any])
+    
+    inline def _poseVarargs(value: String*): this.type = set("_pose", js.Array(value*))
+    
+    inline def children(value: Any): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def getInitialPoseFromParent(value: CallbackTo[CurrentPose | Unit]): this.type = set("getInitialPoseFromParent", value.toJsFn)
+    
+    inline def getParentPoseConfig(value: CallbackTo[DomPopmotionConfig]): this.type = set("getParentPoseConfig", value.toJsFn)
+    
+    inline def initialPose(value: CurrentPose): this.type = set("initialPose", value.asInstanceOf[js.Any])
+    
+    inline def initialPoseVarargs(value: String*): this.type = set("initialPose", js.Array(value*))
+    
+    inline def innerRef(value: Current | RefFunc): this.type = set("innerRef", value.asInstanceOf[js.Any])
+    
+    inline def innerRefFunction1(value: /* el */ Element => Any): this.type = set("innerRef", js.Any.fromFunction1(value))
+    
+    inline def onPoseComplete(value: /* pose */ CurrentPose => Any): this.type = set("onPoseComplete", js.Any.fromFunction1(value))
+    
+    inline def onUnmount(value: /* child */ DomPopmotionPoser => Any): this.type = set("onUnmount", js.Any.fromFunction1(value))
+    
+    inline def pose(value: CurrentPose): this.type = set("pose", value.asInstanceOf[js.Any])
+    
+    inline def poseVarargs(value: String*): this.type = set("pose", js.Array(value*))
+    
+    inline def registerChild(value: /* props */ ChildRegistration => Callback): this.type = set("registerChild", js.Any.fromFunction1((t0: /* props */ ChildRegistration) => value(t0).runNow()))
+    
+    inline def withParent(value: Boolean): this.type = set("withParent", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: PoseElementInternalProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,109 +1,96 @@
 package typingsJapgolly.reactNativeVideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeVideoStrings {
-  @js.native
-  sealed trait all extends js.Object
   
   @js.native
-  sealed trait applicationSlashttmlPlussignxml extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait `applicationSlashx-subrip` extends js.Object
+  sealed trait applicationSlashttmlPlussignxml extends StObject
+  inline def applicationSlashttmlPlussignxml: applicationSlashttmlPlussignxml = "application/ttml+xml".asInstanceOf[applicationSlashttmlPlussignxml]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait `applicationSlashx-subrip` extends StObject
+  inline def `applicationSlashx-subrip`: `applicationSlashx-subrip` = "application/x-subrip".asInstanceOf[`applicationSlashx-subrip`]
   
   @js.native
-  sealed trait contain extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait cover extends js.Object
+  sealed trait contain extends StObject
+  inline def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait cover extends StObject
+  inline def cover: cover = "cover".asInstanceOf[cover]
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait disabled extends StObject
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait ignore extends js.Object
+  sealed trait duck extends StObject
+  inline def duck: duck = "duck".asInstanceOf[duck]
   
   @js.native
-  sealed trait index extends js.Object
+  sealed trait ignore extends StObject
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
-  sealed trait landscape extends js.Object
+  sealed trait index extends StObject
+  inline def index: index = "index".asInstanceOf[index]
   
   @js.native
-  sealed trait language extends js.Object
+  sealed trait inherit extends StObject
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait landscape extends StObject
+  inline def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
-  sealed trait obey extends js.Object
+  sealed trait language extends StObject
+  inline def language: language = "language".asInstanceOf[language]
   
   @js.native
-  sealed trait portrait extends js.Object
+  sealed trait mix extends StObject
+  inline def mix: mix = "mix".asInstanceOf[mix]
   
   @js.native
-  sealed trait resolution extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait stretch extends js.Object
+  sealed trait obey extends StObject
+  inline def obey: obey = "obey".asInstanceOf[obey]
   
   @js.native
-  sealed trait system extends js.Object
+  sealed trait portrait extends StObject
+  inline def portrait: portrait = "portrait".asInstanceOf[portrait]
   
   @js.native
-  sealed trait textSlashvtt extends js.Object
+  sealed trait resolution extends StObject
+  inline def resolution: resolution = "resolution".asInstanceOf[resolution]
   
   @js.native
-  sealed trait title extends js.Object
+  sealed trait stretch extends StObject
+  inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def applicationSlashttmlPlussignxml: applicationSlashttmlPlussignxml = "application/ttml+xml".asInstanceOf[applicationSlashttmlPlussignxml]
-  @scala.inline
-  def `applicationSlashx-subrip`: `applicationSlashx-subrip` = "application/x-subrip".asInstanceOf[`applicationSlashx-subrip`]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def contain: contain = "contain".asInstanceOf[contain]
-  @scala.inline
-  def cover: cover = "cover".asInstanceOf[cover]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
-  @scala.inline
-  def index: index = "index".asInstanceOf[index]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def language: language = "language".asInstanceOf[language]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def obey: obey = "obey".asInstanceOf[obey]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def resolution: resolution = "resolution".asInstanceOf[resolution]
-  @scala.inline
-  def stretch: stretch = "stretch".asInstanceOf[stretch]
-  @scala.inline
-  def system: system = "system".asInstanceOf[system]
-  @scala.inline
-  def textSlashvtt: textSlashvtt = "text/vtt".asInstanceOf[textSlashvtt]
-  @scala.inline
-  def title: title = "title".asInstanceOf[title]
+  @js.native
+  sealed trait system extends StObject
+  inline def system: system = "system".asInstanceOf[system]
+  
+  @js.native
+  sealed trait textSlashvtt extends StObject
+  inline def textSlashvtt: textSlashvtt = "text/vtt".asInstanceOf[textSlashvtt]
+  
+  @js.native
+  sealed trait title extends StObject
+  inline def title: title = "title".asInstanceOf[title]
 }
-

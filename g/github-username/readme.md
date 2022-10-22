@@ -1,7 +1,7 @@
 
 # Scala.js typings for github-username
 
-Typings are for version 5.0.1
+Typings are for version 7.0.0
 
 ## Library description:
 Get a GitHub username from an email address
@@ -11,9 +11,9 @@ Get a GitHub username from an email address
 | Full name          | github-username |
 | Keywords           | github, user, username, email, address, gh, git |
 | # releases         | 3 |
-| # dependents       | 104 |
-| # downloads        | 14249894 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 3606827.0 |
+| # stars            | 101.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/github-username#readme)

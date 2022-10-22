@@ -1,22 +1,22 @@
 
 # Scala.js typings for intro_dot_js
 
-Typings are for version 2.4
+Typings are for version 5.1
 
 ## Library description:
-Better introductions for websites and features with a step-by-step guide for your projects
+User Onboarding and Product Walkthrough Library
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | intro.js |
-| Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 27 |
-| # downloads        | 1039267 |
-| # stars            | 11 |
+| Keywords           | onboarding, tour, introjs, intro, guide, walkthrough, user-onboarding |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 325519.0 |
+| # stars            | 21360.0 |
 
 ## Links
-- [Homepage](http://introjs.com)
+- [Homepage](https://introjs.com)
 - [Bugs](https://github.com/usablica/intro.js/issues)
 - [Repository](https://github.com/usablica/intro.js)
 - [Npm](https://www.npmjs.com/package/intro.js)

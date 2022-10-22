@@ -1,42 +1,32 @@
 package typingsJapgolly.materialUi.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.materialUi.renderToLayerMod.RenderToLayerProps
-import typingsJapgolly.materialUi.renderToLayerMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.materialUi.internalRenderToLayerMod.RenderToLayerProps
+import typingsJapgolly.materialUi.internalRenderToLayerMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RenderToLayer {
-  def apply(
-    open: Boolean,
-    render: js.Function,
-    componentClickAway: js.Function = null,
-    useLayerForClickAway: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[RenderToLayerProps, default, Unit, RenderToLayerProps] = {
-    val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
   
-      if (componentClickAway != null) __obj.updateDynamic("componentClickAway")(componentClickAway.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLayerForClickAway)) __obj.updateDynamic("useLayerForClickAway")(useLayerForClickAway.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUi.renderToLayerMod.RenderToLayerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUi.renderToLayerMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUi.renderToLayerMod.RenderToLayerProps])(children: _*)
+  inline def apply(open: Boolean, render: js.Function): Builder = {
+    val __props = js.Dynamic.literal(open = open.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[RenderToLayerProps]))
   }
+  
   @JSImport("material-ui/internal/RenderToLayer", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def componentClickAway(value: js.Function): this.type = set("componentClickAway", value.asInstanceOf[js.Any])
+    
+    inline def useLayerForClickAway(value: Boolean): this.type = set("useLayerForClickAway", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: RenderToLayerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

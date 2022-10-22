@@ -1,14 +1,18 @@
 package typingsJapgolly.microtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("microtime", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def now(): Double = js.native
-  def nowDouble(): Double = js.native
-  def nowStruct(): js.Array[Double] = js.native
+object mod {
+  
+  @JSImport("microtime", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
+  
+  inline def nowDouble(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nowDouble")().asInstanceOf[Double]
+  
+  inline def nowStruct(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("nowStruct")().asInstanceOf[js.Array[Double]]
 }
-

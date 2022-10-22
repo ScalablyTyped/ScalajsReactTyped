@@ -1,19 +1,24 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CardViewFocusedCellChangingEventArgs extends CancelEventArgs {
+trait CardViewFocusedCellChangingEventArgs
+  extends StObject
+     with CancelEventArgs {
+  
   val cellInfo: BootstrapCardViewCellInfo
 }
-
 object CardViewFocusedCellChangingEventArgs {
-  @scala.inline
-  def apply(cancel: Boolean, cellInfo: BootstrapCardViewCellInfo, sender: Control): CardViewFocusedCellChangingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cellInfo = cellInfo.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
+  inline def apply(cancel: Boolean, cellInfo: BootstrapCardViewCellInfo, sender: Control): CardViewFocusedCellChangingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cellInfo = cellInfo.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardViewFocusedCellChangingEventArgs]
   }
+  
+  extension [Self <: CardViewFocusedCellChangingEventArgs](x: Self) {
+    
+    inline def setCellInfo(value: BootstrapCardViewCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
+  }
 }
-

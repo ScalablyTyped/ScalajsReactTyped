@@ -1,9 +1,9 @@
 package typingsJapgolly.videoJs.mod.videojs
 
 import typingsJapgolly.videoJs.mod.videojs.AudioTrack.Kind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object of option names and values
@@ -24,30 +24,45 @@ import scala.scalajs.js.annotation._
   *        If this track is the one that is currently playing. If this track is part of
   *        an {@link AudioTrackList}, only one {@link AudioTrack} will be enabled.
   */
-trait AudioTrackOptions extends js.Object {
+trait AudioTrackOptions extends StObject {
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var kind: js.UndefOr[Kind] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var language: js.UndefOr[String] = js.undefined
 }
-
 object AudioTrackOptions {
-  @scala.inline
-  def apply(
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    kind: Kind = null,
-    label: String = null,
-    language: String = null
-  ): AudioTrackOptions = {
+  
+  inline def apply(): AudioTrackOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioTrackOptions]
   }
+  
+  extension [Self <: AudioTrackOptions](x: Self) {
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setKind(value: Kind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+  }
 }
-

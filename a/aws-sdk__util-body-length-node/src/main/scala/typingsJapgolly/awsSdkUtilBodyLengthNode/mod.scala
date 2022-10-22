@@ -1,12 +1,14 @@
 package typingsJapgolly.awsSdkUtilBodyLengthNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/util-body-length-node", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def calculateBodyLength(body: js.Any): js.UndefOr[Double] = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/util-body-length-node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def calculateBodyLength(body: Any): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateBodyLength")(body.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
 }
-

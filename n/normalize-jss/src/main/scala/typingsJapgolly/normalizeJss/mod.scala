@@ -1,12 +1,19 @@
 package typingsJapgolly.normalizeJss
 
+import typingsJapgolly.normalizeJss.anon.A
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("normalize-jss", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  var `@global`: AnonA = js.native
+object mod {
+  
+  @JSImport("normalize-jss", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("normalize-jss", "@global")
+  @js.native
+  def global: A = js.native
+  
+  inline def global_=(x: A): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("@global")(x.asInstanceOf[js.Any])
 }
-

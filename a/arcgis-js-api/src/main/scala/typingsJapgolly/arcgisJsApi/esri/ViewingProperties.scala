@@ -1,10 +1,11 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ViewingProperties extends js.Object {
+trait ViewingProperties extends StObject {
+  
   /**
     * An object specifying the search parameters set within the web scene or web map.
     *
@@ -12,13 +13,17 @@ trait ViewingProperties extends js.Object {
     */
   var search: js.UndefOr[SearchProperties] = js.undefined
 }
-
 object ViewingProperties {
-  @scala.inline
-  def apply(search: SearchProperties = null): ViewingProperties = {
+  
+  inline def apply(): ViewingProperties = {
     val __obj = js.Dynamic.literal()
-    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewingProperties]
   }
+  
+  extension [Self <: ViewingProperties](x: Self) {
+    
+    inline def setSearch(value: SearchProperties): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+  }
 }
-

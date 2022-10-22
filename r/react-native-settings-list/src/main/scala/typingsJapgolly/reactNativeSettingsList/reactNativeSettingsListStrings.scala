@@ -1,24 +1,20 @@
 package typingsJapgolly.reactNativeSettingsList
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeSettingsListStrings {
-  @js.native
-  sealed trait Both extends js.Object
   
   @js.native
-  sealed trait Bottom extends js.Object
+  sealed trait Both extends StObject
+  inline def Both: Both = "Both".asInstanceOf[Both]
   
   @js.native
-  sealed trait Top extends js.Object
+  sealed trait Bottom extends StObject
+  inline def Bottom: Bottom = "Bottom".asInstanceOf[Bottom]
   
-  @scala.inline
-  def Both: Both = "Both".asInstanceOf[Both]
-  @scala.inline
-  def Bottom: Bottom = "Bottom".asInstanceOf[Bottom]
-  @scala.inline
-  def Top: Top = "Top".asInstanceOf[Top]
+  @js.native
+  sealed trait Top extends StObject
+  inline def Top: Top = "Top".asInstanceOf[Top]
 }
-

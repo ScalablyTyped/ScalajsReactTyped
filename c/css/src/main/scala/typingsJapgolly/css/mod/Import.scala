@@ -1,26 +1,28 @@
 package typingsJapgolly.css.mod
 
-import typingsJapgolly.css.AnonContent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Import
-  extends Node
+  extends StObject
+     with Node
      with AtRule {
+  
   /** The part following @import. */
   var `import`: js.UndefOr[String] = js.undefined
 }
-
 object Import {
-  @scala.inline
-  def apply(`import`: String = null, parent: Node = null, position: AnonContent = null, `type`: String = null): Import = {
+  
+  inline def apply(): Import = {
     val __obj = js.Dynamic.literal()
-    if (`import` != null) __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Import]
   }
+  
+  extension [Self <: Import](x: Self) {
+    
+    inline def setImport(value: String): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
+    
+    inline def setImportUndefined: Self = StObject.set(x, "import", js.undefined)
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__tabs
 
-Typings are for version 0.35
+Typings are for version 2.3.0
 
 ## Library description:
 The Material Components for the web tabs component
@@ -10,10 +10,10 @@ The Material Components for the web tabs component
 | ------------------ | :-------------: |
 | Full name          | @material/tabs |
 | Keywords           | material components, material design, tabs |
-| # releases         | 38 |
-| # dependents       | 16 |
-| # downloads        | 403689 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19830.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)
@@ -24,7 +24,7 @@ The Material Components for the web tabs component
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

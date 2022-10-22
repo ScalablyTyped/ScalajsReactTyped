@@ -1,93 +1,108 @@
 package typingsJapgolly.semanticUiReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.semanticUiReact.dimmerDimmerMod.DimmerProps
-import typingsJapgolly.semanticUiReact.genericMod.SemanticFLOATS
-import typingsJapgolly.semanticUiReact.genericMod.SemanticSIZES
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandContent
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandItem
-import typingsJapgolly.semanticUiReact.genericMod.SemanticVERTICALALIGNMENTS
-import typingsJapgolly.semanticUiReact.imageImageMod.ImageProps
-import typingsJapgolly.semanticUiReact.labelLabelMod.LabelProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.ElementType
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.ReactNodeArray
+import typingsJapgolly.semanticUiReact.distCommonjsElementsImageImageMod.ImageProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsLabelLabelMod.LabelProps
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticFLOATS
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticSIZES
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
+import typingsJapgolly.semanticUiReact.distCommonjsModulesDimmerDimmerMod.DimmerProps
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.left
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ItemImage {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    as: js.Any = null,
-    avatar: js.UndefOr[Boolean] = js.undefined,
-    bordered: js.UndefOr[Boolean] = js.undefined,
-    centered: js.UndefOr[Boolean] = js.undefined,
-    circular: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    content: SemanticShorthandContent = null,
-    dimmer: SemanticShorthandItem[DimmerProps] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    floated: SemanticFLOATS = null,
-    fluid: js.UndefOr[Boolean] = js.undefined,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    href: String = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    label: SemanticShorthandItem[LabelProps] = null,
-    rounded: js.UndefOr[Boolean] = js.undefined,
-    size: SemanticSIZES = null,
-    spaced: Boolean | left | right = null,
-    ui: js.UndefOr[Boolean] = js.undefined,
-    verticalAlign: SemanticVERTICALALIGNMENTS = null,
-    wrapped: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    ImageProps, 
-    MountedWithRawType[ImageProps, js.Object, RawMounted[ImageProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(avatar)) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.asInstanceOf[js.Any])
-    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (dimmer != null) __obj.updateDynamic("dimmer")(dimmer.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (floated != null) __obj.updateDynamic("floated")(floated.asInstanceOf[js.Any])
-    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (spaced != null) __obj.updateDynamic("spaced")(spaced.asInstanceOf[js.Any])
-    if (!js.isUndefined(ui)) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapped)) __obj.updateDynamic("wrapped")(wrapped.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.semanticUiReact.imageImageMod.ImageProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.imageImageMod.ImageProps])(children: _*)
-  }
-  @JSImport("semantic-ui-react/dist/commonjs/views/Item/ItemImage", JSImport.Default)
+  @JSImport("semantic-ui-react", "ItemImage")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def avatar(value: Boolean): this.type = set("avatar", value.asInstanceOf[js.Any])
+    
+    inline def bordered(value: Boolean): this.type = set("bordered", value.asInstanceOf[js.Any])
+    
+    inline def centered(value: Boolean): this.type = set("centered", value.asInstanceOf[js.Any])
+    
+    inline def circular(value: Boolean): this.type = set("circular", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def content(value: SemanticShorthandContent): this.type = set("content", value.asInstanceOf[js.Any])
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def dimmer(value: SemanticShorthandItem[DimmerProps]): this.type = set("dimmer", value.asInstanceOf[js.Any])
+    
+    inline def dimmerFunction3(
+      value: (/* component */ ElementType, DimmerProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("dimmer", js.Any.fromFunction3(value))
+    
+    inline def dimmerNull: this.type = set("dimmer", null)
+    
+    inline def dimmerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("dimmer", js.Array(value*))
+    
+    inline def dimmerVdomElement(value: VdomElement): this.type = set("dimmer", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def floated(value: SemanticFLOATS): this.type = set("floated", value.asInstanceOf[js.Any])
+    
+    inline def fluid(value: Boolean): this.type = set("fluid", value.asInstanceOf[js.Any])
+    
+    inline def hidden(value: Boolean): this.type = set("hidden", value.asInstanceOf[js.Any])
+    
+    inline def href(value: String): this.type = set("href", value.asInstanceOf[js.Any])
+    
+    inline def `inline`(value: Boolean): this.type = set("inline", value.asInstanceOf[js.Any])
+    
+    inline def label(value: SemanticShorthandItem[LabelProps]): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def labelFunction3(
+      value: (/* component */ ElementType, LabelProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("label", js.Any.fromFunction3(value))
+    
+    inline def labelNull: this.type = set("label", null)
+    
+    inline def labelVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("label", js.Array(value*))
+    
+    inline def labelVdomElement(value: VdomElement): this.type = set("label", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def rounded(value: Boolean): this.type = set("rounded", value.asInstanceOf[js.Any])
+    
+    inline def size(value: SemanticSIZES): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def spaced(value: Boolean | left | right): this.type = set("spaced", value.asInstanceOf[js.Any])
+    
+    inline def ui(value: Boolean): this.type = set("ui", value.asInstanceOf[js.Any])
+    
+    inline def verticalAlign(value: SemanticVERTICALALIGNMENTS): this.type = set("verticalAlign", value.asInstanceOf[js.Any])
+    
+    inline def wrapped(value: Boolean): this.type = set("wrapped", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ItemImage.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ImageProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,133 +1,174 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridSortingLocale
-  extends /**
-	 * Option for IgGridSortingLocale
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Ascending text used for header title.
-  	 *
-  	 */
+    * Ascending text used for header title.
+    *
+    */
   var ascending: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Descending text used for header title.
-  	 *
-  	 */
+    * Descending text used for header title.
+    *
+    */
   var descending: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies the text shown in the feature chooser item for sorting in ascending order (displayed only on touch environment).
-  	 *
-  	 */
+    * Specifies the text shown in the feature chooser item for sorting in ascending order (displayed only on touch environment).
+    *
+    */
   var featureChooserSortAsc: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies the text shown in the feature chooser item for sorting in descending order (displayed only on touch environment).
-  	 *
-  	 */
+    * Specifies the text shown in the feature chooser item for sorting in descending order (displayed only on touch environment).
+    *
+    */
   var featureChooserSortDesc: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies the text of the feature chooser sorting button.
-  	 *
-  	 */
+    * Specifies the text of the feature chooser sorting button.
+    *
+    */
   var featureChooserText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies text of button which applies changes in modal dialog.
-  	 *
-  	 */
+    * Specifies text of button which applies changes in modal dialog.
+    *
+    */
   var modalDialogButtonApplyText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies text of button which cancels the changes in the advanced sorting modal dialog.
-  	 *
-  	 */
+    * Specifies text of button which cancels the changes in the advanced sorting modal dialog.
+    *
+    */
   var modalDialogButtonCancelText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies caption for each ascending sorted column in multiple sorting dialog.
-  	 *
-  	 */
+    * Specifies caption for each ascending sorted column in multiple sorting dialog.
+    *
+    */
   var modalDialogCaptionButtonAsc: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies caption for each descending sorted column in multiple sorting dialog.
-  	 *
-  	 */
+    * Specifies caption for each descending sorted column in multiple sorting dialog.
+    *
+    */
   var modalDialogCaptionButtonDesc: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies caption for unsort button in multiple sorting dialog.
-  	 *
-  	 */
+    * Specifies caption for unsort button in multiple sorting dialog.
+    *
+    */
   var modalDialogCaptionButtonUnsort: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies caption text for multiple sorting dialog.
-  	 *
-  	 */
+    * Specifies caption text for multiple sorting dialog.
+    *
+    */
   var modalDialogCaptionText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies reset button text in the modal dialog.
-  	 *
-  	 */
+    * Specifies reset button text in the modal dialog.
+    *
+    */
   var modalDialogResetButton: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies sortby button text for each unsorted column in multiple sorting dialog.
-  	 *
-  	 */
+    * Specifies sortby button text for each unsorted column in multiple sorting dialog.
+    *
+    */
   var modalDialogSortByButtonText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Custom sorted column tooltip in [igTemplating](http://www.igniteui.com/help/igtemplating-overview) format.
-  	 *
-  	 */
+    * Custom sorted column tooltip in [igTemplating](http://www.igniteui.com/help/igtemplating-overview) format.
+    *
+    */
   var sortedColumnTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Unsorted column tooltip.
-  	 *
-  	 */
+    * Unsorted column tooltip.
+    *
+    */
   var unsortedColumnTooltip: js.UndefOr[String] = js.undefined
 }
-
 object IgGridSortingLocale {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgGridSortingLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    ascending: String = null,
-    descending: String = null,
-    featureChooserSortAsc: String = null,
-    featureChooserSortDesc: String = null,
-    featureChooserText: String = null,
-    modalDialogButtonApplyText: String = null,
-    modalDialogButtonCancelText: String = null,
-    modalDialogCaptionButtonAsc: String = null,
-    modalDialogCaptionButtonDesc: String = null,
-    modalDialogCaptionButtonUnsort: String = null,
-    modalDialogCaptionText: String = null,
-    modalDialogResetButton: String = null,
-    modalDialogSortByButtonText: String = null,
-    sortedColumnTooltip: String = null,
-    unsortedColumnTooltip: String = null
-  ): IgGridSortingLocale = {
+  
+  inline def apply(): IgGridSortingLocale = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (ascending != null) __obj.updateDynamic("ascending")(ascending.asInstanceOf[js.Any])
-    if (descending != null) __obj.updateDynamic("descending")(descending.asInstanceOf[js.Any])
-    if (featureChooserSortAsc != null) __obj.updateDynamic("featureChooserSortAsc")(featureChooserSortAsc.asInstanceOf[js.Any])
-    if (featureChooserSortDesc != null) __obj.updateDynamic("featureChooserSortDesc")(featureChooserSortDesc.asInstanceOf[js.Any])
-    if (featureChooserText != null) __obj.updateDynamic("featureChooserText")(featureChooserText.asInstanceOf[js.Any])
-    if (modalDialogButtonApplyText != null) __obj.updateDynamic("modalDialogButtonApplyText")(modalDialogButtonApplyText.asInstanceOf[js.Any])
-    if (modalDialogButtonCancelText != null) __obj.updateDynamic("modalDialogButtonCancelText")(modalDialogButtonCancelText.asInstanceOf[js.Any])
-    if (modalDialogCaptionButtonAsc != null) __obj.updateDynamic("modalDialogCaptionButtonAsc")(modalDialogCaptionButtonAsc.asInstanceOf[js.Any])
-    if (modalDialogCaptionButtonDesc != null) __obj.updateDynamic("modalDialogCaptionButtonDesc")(modalDialogCaptionButtonDesc.asInstanceOf[js.Any])
-    if (modalDialogCaptionButtonUnsort != null) __obj.updateDynamic("modalDialogCaptionButtonUnsort")(modalDialogCaptionButtonUnsort.asInstanceOf[js.Any])
-    if (modalDialogCaptionText != null) __obj.updateDynamic("modalDialogCaptionText")(modalDialogCaptionText.asInstanceOf[js.Any])
-    if (modalDialogResetButton != null) __obj.updateDynamic("modalDialogResetButton")(modalDialogResetButton.asInstanceOf[js.Any])
-    if (modalDialogSortByButtonText != null) __obj.updateDynamic("modalDialogSortByButtonText")(modalDialogSortByButtonText.asInstanceOf[js.Any])
-    if (sortedColumnTooltip != null) __obj.updateDynamic("sortedColumnTooltip")(sortedColumnTooltip.asInstanceOf[js.Any])
-    if (unsortedColumnTooltip != null) __obj.updateDynamic("unsortedColumnTooltip")(unsortedColumnTooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridSortingLocale]
   }
+  
+  extension [Self <: IgGridSortingLocale](x: Self) {
+    
+    inline def setAscending(value: String): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
+    
+    inline def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
+    
+    inline def setDescending(value: String): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
+    
+    inline def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
+    
+    inline def setFeatureChooserSortAsc(value: String): Self = StObject.set(x, "featureChooserSortAsc", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureChooserSortAscUndefined: Self = StObject.set(x, "featureChooserSortAsc", js.undefined)
+    
+    inline def setFeatureChooserSortDesc(value: String): Self = StObject.set(x, "featureChooserSortDesc", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureChooserSortDescUndefined: Self = StObject.set(x, "featureChooserSortDesc", js.undefined)
+    
+    inline def setFeatureChooserText(value: String): Self = StObject.set(x, "featureChooserText", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureChooserTextUndefined: Self = StObject.set(x, "featureChooserText", js.undefined)
+    
+    inline def setModalDialogButtonApplyText(value: String): Self = StObject.set(x, "modalDialogButtonApplyText", value.asInstanceOf[js.Any])
+    
+    inline def setModalDialogButtonApplyTextUndefined: Self = StObject.set(x, "modalDialogButtonApplyText", js.undefined)
+    
+    inline def setModalDialogButtonCancelText(value: String): Self = StObject.set(x, "modalDialogButtonCancelText", value.asInstanceOf[js.Any])
+    
+    inline def setModalDialogButtonCancelTextUndefined: Self = StObject.set(x, "modalDialogButtonCancelText", js.undefined)
+    
+    inline def setModalDialogCaptionButtonAsc(value: String): Self = StObject.set(x, "modalDialogCaptionButtonAsc", value.asInstanceOf[js.Any])
+    
+    inline def setModalDialogCaptionButtonAscUndefined: Self = StObject.set(x, "modalDialogCaptionButtonAsc", js.undefined)
+    
+    inline def setModalDialogCaptionButtonDesc(value: String): Self = StObject.set(x, "modalDialogCaptionButtonDesc", value.asInstanceOf[js.Any])
+    
+    inline def setModalDialogCaptionButtonDescUndefined: Self = StObject.set(x, "modalDialogCaptionButtonDesc", js.undefined)
+    
+    inline def setModalDialogCaptionButtonUnsort(value: String): Self = StObject.set(x, "modalDialogCaptionButtonUnsort", value.asInstanceOf[js.Any])
+    
+    inline def setModalDialogCaptionButtonUnsortUndefined: Self = StObject.set(x, "modalDialogCaptionButtonUnsort", js.undefined)
+    
+    inline def setModalDialogCaptionText(value: String): Self = StObject.set(x, "modalDialogCaptionText", value.asInstanceOf[js.Any])
+    
+    inline def setModalDialogCaptionTextUndefined: Self = StObject.set(x, "modalDialogCaptionText", js.undefined)
+    
+    inline def setModalDialogResetButton(value: String): Self = StObject.set(x, "modalDialogResetButton", value.asInstanceOf[js.Any])
+    
+    inline def setModalDialogResetButtonUndefined: Self = StObject.set(x, "modalDialogResetButton", js.undefined)
+    
+    inline def setModalDialogSortByButtonText(value: String): Self = StObject.set(x, "modalDialogSortByButtonText", value.asInstanceOf[js.Any])
+    
+    inline def setModalDialogSortByButtonTextUndefined: Self = StObject.set(x, "modalDialogSortByButtonText", js.undefined)
+    
+    inline def setSortedColumnTooltip(value: String): Self = StObject.set(x, "sortedColumnTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setSortedColumnTooltipUndefined: Self = StObject.set(x, "sortedColumnTooltip", js.undefined)
+    
+    inline def setUnsortedColumnTooltip(value: String): Self = StObject.set(x, "unsortedColumnTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setUnsortedColumnTooltipUndefined: Self = StObject.set(x, "unsortedColumnTooltip", js.undefined)
+  }
 }
-

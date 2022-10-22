@@ -1,49 +1,20 @@
 package typingsJapgolly.draftJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("draft-js", "SelectionState")
 @js.native
-class SelectionState ()
-  extends typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.SelectionState {
-  /* CompleteClass */
-  override def getAnchorKey(): String = js.native
-  /* CompleteClass */
-  override def getAnchorOffset(): Double = js.native
-  /* CompleteClass */
-  override def getEndKey(): String = js.native
-  /* CompleteClass */
-  override def getEndOffset(): Double = js.native
-  /* CompleteClass */
-  override def getFocusKey(): String = js.native
-  /* CompleteClass */
-  override def getFocusOffset(): Double = js.native
-  /* CompleteClass */
-  override def getHasFocus(): Boolean = js.native
-  /* CompleteClass */
-  override def getIsBackward(): Boolean = js.native
-  /* CompleteClass */
-  override def getStartKey(): String = js.native
-  /* CompleteClass */
-  override def getStartOffset(): Double = js.native
-  /**
-    * Return whether the specified range overlaps with an edge of the
-    * SelectionState.
-    */
-  /* CompleteClass */
-  override def hasEdgeWithin(blockKey: String, start: Double, end: Double): Boolean = js.native
-  /* CompleteClass */
-  override def isCollapsed(): Boolean = js.native
-  /* CompleteClass */
-  override def serialize(): String = js.native
+open class SelectionState ()
+  extends StObject
+     with typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.SelectionState
+object SelectionState {
+  
+  @JSImport("draft-js", "SelectionState")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def createEmpty(key: String): typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.SelectionState = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmpty")(key.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.SelectionState]
 }
-
-/* static members */
-@JSImport("draft-js", "SelectionState")
-@js.native
-object SelectionState extends js.Object {
-  def createEmpty(key: String): typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.SelectionState = js.native
-}
-

@@ -1,20 +1,25 @@
 package typingsJapgolly.dropboxChooser
 
 import typingsJapgolly.dropboxChooser.Dropbox.Chooser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Window extends js.Object {
+trait Window extends StObject {
+  
   var Dropbox: js.UndefOr[Chooser] = js.undefined
 }
-
 object Window {
-  @scala.inline
-  def apply(Dropbox: Chooser = null): Window = {
+  
+  inline def apply(): Window = {
     val __obj = js.Dynamic.literal()
-    if (Dropbox != null) __obj.updateDynamic("Dropbox")(Dropbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
+  
+  extension [Self <: Window](x: Self) {
+    
+    inline def setDropbox(value: Chooser): Self = StObject.set(x, "Dropbox", value.asInstanceOf[js.Any])
+    
+    inline def setDropboxUndefined: Self = StObject.set(x, "Dropbox", js.undefined)
+  }
 }
-

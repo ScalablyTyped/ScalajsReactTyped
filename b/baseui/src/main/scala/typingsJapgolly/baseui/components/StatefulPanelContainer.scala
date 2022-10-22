@@ -1,50 +1,40 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.AnonExpandedBoolean
-import typingsJapgolly.baseui.accordionMod.PanelState
-import typingsJapgolly.baseui.accordionMod.StatefulPanelContainerProps
-import typingsJapgolly.baseui.baseuiStrings.expand
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.accordionTypesMod.PanelState
+import typingsJapgolly.baseui.accordionTypesMod.StateChangeType
+import typingsJapgolly.baseui.accordionTypesMod.StatefulPanelContainerProps
+import typingsJapgolly.baseui.anon.ExpandedBoolean
+import typingsJapgolly.baseui.anon.OmitPanelPropschildren
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StatefulPanelContainer {
-  def apply(
-    initialState: PanelState = null,
-    onChange: /* args */ AnonExpandedBoolean => CallbackTo[js.Any] = null,
-    stateReducer: (expand, PanelState, PanelState) => CallbackTo[PanelState] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    StatefulPanelContainerProps, 
-    typingsJapgolly.baseui.accordionMod.StatefulPanelContainer, 
-    Unit, 
-    StatefulPanelContainerProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.baseui.AnonExpandedBoolean) => onChange(t0).runNow()))
-    if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction3((t0: typingsJapgolly.baseui.baseuiStrings.expand, t1: typingsJapgolly.baseui.accordionMod.PanelState, t2: typingsJapgolly.baseui.accordionMod.PanelState) => stateReducer(t0, t1, t2).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.accordionMod.StatefulPanelContainerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.accordionMod.StatefulPanelContainer](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.accordionMod.StatefulPanelContainerProps])(children: _*)
+  inline def apply(children: OmitPanelPropschildren => Node): Builder = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+    new Builder(js.Array(this.component, __props.asInstanceOf[StatefulPanelContainerProps]))
   }
+  
   @JSImport("baseui/accordion", "StatefulPanelContainer")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.accordionMod.StatefulPanelContainer] {
+    
+    inline def initialState(value: PanelState): this.type = set("initialState", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* a */ ExpandedBoolean => Any): this.type = set("onChange", js.Any.fromFunction1(value))
+    
+    inline def stateReducer(
+      value: (/* stateChangeType */ StateChangeType, /* nextState */ PanelState, /* currentState */ PanelState) => PanelState
+    ): this.type = set("stateReducer", js.Any.fromFunction3(value))
+  }
+  
+  def withProps(p: StatefulPanelContainerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,22 +1,22 @@
 
 # Scala.js typings for react-native-share-menu
 
-Typings are for version 2.2
+Typings are for version 5.0
 
 ## Library description:
-Adds the app to share menu, so it can be launched from share menu and receive data from other apps
+Add your app as a target for sharing from other apps and write iOS Share Extensions in React Native.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-native-share-menu |
-| Keywords           | react-component, react-native, android, ios, share |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 4101 |
-| # stars            | 1 |
+| Keywords           | react-component, react-native, android, ios, share, share-extension, custom-view |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 36058.666666666664 |
+| # stars            | 388.0 |
 
 ## Links
-- [Homepage](https://github.com/meedan/react-native-share-menu#readme)
+- [Homepage](https://github.com/meedan/react-native-share-menu)
 - [Bugs](https://github.com/meedan/react-native-share-menu/issues)
 - [Repository](https://github.com/meedan/react-native-share-menu)
 - [Npm](https://www.npmjs.com/package/react-native-share-menu)

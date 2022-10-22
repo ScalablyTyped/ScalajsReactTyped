@@ -2,23 +2,28 @@ package typingsJapgolly.typescript.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CancellationToken extends js.Object {
+trait CancellationToken extends StObject {
+  
   def isCancellationRequested(): Boolean
+  
   /** @throws OperationCanceledException if isCancellationRequested is true */
   def throwIfCancellationRequested(): Unit
 }
-
 object CancellationToken {
-  @scala.inline
-  def apply(isCancellationRequested: CallbackTo[Boolean], throwIfCancellationRequested: Callback): CancellationToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isCancellationRequested")(isCancellationRequested.toJsFn)
-    __obj.updateDynamic("throwIfCancellationRequested")(throwIfCancellationRequested.toJsFn)
+  
+  inline def apply(isCancellationRequested: CallbackTo[Boolean], throwIfCancellationRequested: Callback): CancellationToken = {
+    val __obj = js.Dynamic.literal(isCancellationRequested = isCancellationRequested.toJsFn, throwIfCancellationRequested = throwIfCancellationRequested.toJsFn)
     __obj.asInstanceOf[CancellationToken]
   }
+  
+  extension [Self <: CancellationToken](x: Self) {
+    
+    inline def setIsCancellationRequested(value: CallbackTo[Boolean]): Self = StObject.set(x, "isCancellationRequested", value.toJsFn)
+    
+    inline def setThrowIfCancellationRequested(value: Callback): Self = StObject.set(x, "throwIfCancellationRequested", value.toJsFn)
+  }
 }
-

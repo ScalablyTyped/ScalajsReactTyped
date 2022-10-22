@@ -1,27 +1,23 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4142`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4142`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4142`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4142`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
 */
-trait XlTextQualifier extends js.Object
-
+trait XlTextQualifier extends StObject
 object XlTextQualifier {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlTextQualifierDoubleQuote: `1` = this.cast(1)
-  @scala.inline
-  def xlTextQualifierNone: `-4142` = this.cast(-4142)
-  @scala.inline
-  def xlTextQualifierSingleQuote: `2` = this.cast(2)
+  
+  inline def xlTextQualifierDoubleQuote: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlTextQualifierNone: `-4142` = -4142.asInstanceOf[`-4142`]
+  
+  inline def xlTextQualifierSingleQuote: `2` = 2.asInstanceOf[`2`]
 }
-

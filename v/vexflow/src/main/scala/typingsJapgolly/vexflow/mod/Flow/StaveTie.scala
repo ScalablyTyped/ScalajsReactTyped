@@ -1,14 +1,18 @@
 package typingsJapgolly.vexflow.mod.Flow
 
-import typingsJapgolly.vexflow.AnonLastnote
+import typingsJapgolly.vexflow.Vex.IRenderContext
+import typingsJapgolly.vexflow.anon.Family
+import typingsJapgolly.vexflow.anon.Firstxpx
+import typingsJapgolly.vexflow.anon.Lastindices
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexflow", "Flow.StaveTie")
 @js.native
-class StaveTie protected ()
-  extends typingsJapgolly.vexflow.Vex.Flow.StaveTie {
+open class StaveTie protected ()
+  extends StObject
+     with typingsJapgolly.vexflow.Vex.Flow.StaveTie {
   /**
     * @see https://github.com/0xfe/vexflow/blob/master/src/stavetie.js#L12
     *
@@ -24,7 +28,27 @@ class StaveTie protected ()
     * two ties can be used, each with either "first_note" or "last_note" missing.
     *
     **/
-  def this(notes: AnonLastnote) = this()
-  def this(notes: AnonLastnote, text: String) = this()
+  def this(notes: Lastindices) = this()
+  def this(notes: Lastindices, text: String) = this()
+  
+  /* CompleteClass */
+  override def draw(): Boolean = js.native
+  
+  /* CompleteClass */
+  override def isPartial(): Boolean = js.native
+  
+  /* CompleteClass */
+  override def renderText(first_x_px: Double, last_x_px: Double): Unit = js.native
+  
+  /* CompleteClass */
+  override def renderTie(params: Firstxpx): Unit = js.native
+  
+  /* CompleteClass */
+  override def setContext(context: IRenderContext): typingsJapgolly.vexflow.Vex.Flow.StaveTie = js.native
+  
+  /* CompleteClass */
+  override def setFont(font: Family): typingsJapgolly.vexflow.Vex.Flow.StaveTie = js.native
+  
+  /* CompleteClass */
+  override def setNotes(notes: Lastindices): typingsJapgolly.vexflow.Vex.Flow.StaveTie = js.native
 }
-

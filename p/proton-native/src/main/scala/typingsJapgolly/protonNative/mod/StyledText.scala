@@ -1,12 +1,18 @@
 package typingsJapgolly.protonNative.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("proton-native", "StyledText")
 @js.native
-class StyledText ()
-  extends Component[StyledTextProps, js.Object, js.Any]
-
+open class StyledText protected ()
+  extends Component[StyledTextProps, js.Object, Any] {
+  def this(props: StyledTextProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: StyledTextProps, context: Any) = this()
+}

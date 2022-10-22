@@ -10,10 +10,10 @@ A simple assertion library for server and client side JavaScript
 | ------------------ | :-------------: |
 | Full name          | proclaim |
 | Keywords           | assert, test |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 668210 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4219.333333333333 |
+| # stars            | 66.0 |
 
 ## Links
 - [Homepage](https://github.com/rowanmanning/proclaim)

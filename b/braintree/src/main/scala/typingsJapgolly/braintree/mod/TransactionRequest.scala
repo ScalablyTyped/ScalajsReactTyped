@@ -1,134 +1,243 @@
 package typingsJapgolly.braintree.mod
 
-import typingsJapgolly.braintree.AnonAddBillingAddressToPaymentMethod
-import typingsJapgolly.braintree.AnonCavv
-import typingsJapgolly.braintree.AnonCompany
-import typingsJapgolly.braintree.AnonCountryCodeNumeric
-import typingsJapgolly.braintree.AnonCvv
-import typingsJapgolly.braintree.AnonEmail
-import typingsJapgolly.braintree.AnonPreviousNetworkTransactionId
+import typingsJapgolly.braintree.anon.AddBillingAddressToPaymentMethod
+import typingsJapgolly.braintree.anon.Cavv
+import typingsJapgolly.braintree.anon.Company
+import typingsJapgolly.braintree.anon.CountryCodeNumeric
+import typingsJapgolly.braintree.anon.Cvv
+import typingsJapgolly.braintree.anon.Email
+import typingsJapgolly.braintree.anon.PreviousNetworkTransactionId
 import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransactionRequest extends js.Object {
+trait TransactionRequest extends StObject {
+  
   var amount: String
-  var billing: js.UndefOr[AnonCountryCodeNumeric] = js.undefined
+  
+  var billing: js.UndefOr[CountryCodeNumeric] = js.undefined
+  
   var billingAddressId: js.UndefOr[String] = js.undefined
+  
   var channel: js.UndefOr[String] = js.undefined
-  var creditCard: js.UndefOr[AnonCvv] = js.undefined
-  var customFields: js.UndefOr[Record[String, _]] = js.undefined
-  var customer: js.UndefOr[AnonEmail] = js.undefined
+  
+  var creditCard: js.UndefOr[Cvv] = js.undefined
+  
+  var customFields: js.UndefOr[Record[String, Any]] = js.undefined
+  
+  var customer: js.UndefOr[Email] = js.undefined
+  
   var customerId: js.UndefOr[String] = js.undefined
+  
   var descriptor: js.UndefOr[Descriptor] = js.undefined
+  
   var deviceData: js.UndefOr[String] = js.undefined
+  
   var deviceSessionId: js.UndefOr[String] = js.undefined
+  
   var discountAmount: js.UndefOr[String] = js.undefined
-  var externalVault: js.UndefOr[AnonPreviousNetworkTransactionId] = js.undefined
+  
+  var externalVault: js.UndefOr[PreviousNetworkTransactionId] = js.undefined
+  
   var lineItems: js.UndefOr[js.Array[TransactionLineItem]] = js.undefined
+  
   var merchantAccountId: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[AnonAddBillingAddressToPaymentMethod] = js.undefined
+  
+  var options: js.UndefOr[AddBillingAddressToPaymentMethod] = js.undefined
+  
   var orderId: js.UndefOr[String] = js.undefined
+  
   var paymentMethodNonce: js.UndefOr[String] = js.undefined
+  
   var paymentMethodToken: js.UndefOr[String] = js.undefined
+  
   var purchaseOrderNumber: js.UndefOr[String] = js.undefined
+  
   var recurring: js.UndefOr[Boolean] = js.undefined
-   // Deprecated
+  
+  // Deprecated
   var riskData: js.UndefOr[CustomerRiskData] = js.undefined
+  
   var serviceFeeAmount: js.UndefOr[String] = js.undefined
+  
   var sharedBillingAddressId: js.UndefOr[String] = js.undefined
+  
   var sharedCustomerId: js.UndefOr[String] = js.undefined
+  
   var sharedPaymentMethodNonce: js.UndefOr[String] = js.undefined
+  
   var sharedPaymentMethodToken: js.UndefOr[String] = js.undefined
+  
   var sharedShippingAddressId: js.UndefOr[String] = js.undefined
-  var shipping: js.UndefOr[AnonCompany] = js.undefined
+  
+  var shipping: js.UndefOr[Company] = js.undefined
+  
   var shippingAddressId: js.UndefOr[String] = js.undefined
+  
   var shippingAmount: js.UndefOr[String] = js.undefined
+  
   var shipsFromPostalCode: js.UndefOr[String] = js.undefined
+  
   var taxAmount: js.UndefOr[String] = js.undefined
+  
   var taxExempt: js.UndefOr[Boolean] = js.undefined
-  var threeDSecurePassThru: js.UndefOr[AnonCavv] = js.undefined
+  
+  var threeDSecurePassThru: js.UndefOr[Cavv] = js.undefined
+  
   var transactionSource: js.UndefOr[TransactionRequestSource] = js.undefined
 }
-
 object TransactionRequest {
-  @scala.inline
-  def apply(
-    amount: String,
-    billing: AnonCountryCodeNumeric = null,
-    billingAddressId: String = null,
-    channel: String = null,
-    creditCard: AnonCvv = null,
-    customFields: Record[String, _] = null,
-    customer: AnonEmail = null,
-    customerId: String = null,
-    descriptor: Descriptor = null,
-    deviceData: String = null,
-    deviceSessionId: String = null,
-    discountAmount: String = null,
-    externalVault: AnonPreviousNetworkTransactionId = null,
-    lineItems: js.Array[TransactionLineItem] = null,
-    merchantAccountId: String = null,
-    options: AnonAddBillingAddressToPaymentMethod = null,
-    orderId: String = null,
-    paymentMethodNonce: String = null,
-    paymentMethodToken: String = null,
-    purchaseOrderNumber: String = null,
-    recurring: js.UndefOr[Boolean] = js.undefined,
-    riskData: CustomerRiskData = null,
-    serviceFeeAmount: String = null,
-    sharedBillingAddressId: String = null,
-    sharedCustomerId: String = null,
-    sharedPaymentMethodNonce: String = null,
-    sharedPaymentMethodToken: String = null,
-    sharedShippingAddressId: String = null,
-    shipping: AnonCompany = null,
-    shippingAddressId: String = null,
-    shippingAmount: String = null,
-    shipsFromPostalCode: String = null,
-    taxAmount: String = null,
-    taxExempt: js.UndefOr[Boolean] = js.undefined,
-    threeDSecurePassThru: AnonCavv = null,
-    transactionSource: TransactionRequestSource = null
-  ): TransactionRequest = {
+  
+  inline def apply(amount: String): TransactionRequest = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any])
-    if (billing != null) __obj.updateDynamic("billing")(billing.asInstanceOf[js.Any])
-    if (billingAddressId != null) __obj.updateDynamic("billingAddressId")(billingAddressId.asInstanceOf[js.Any])
-    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (creditCard != null) __obj.updateDynamic("creditCard")(creditCard.asInstanceOf[js.Any])
-    if (customFields != null) __obj.updateDynamic("customFields")(customFields.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
-    if (descriptor != null) __obj.updateDynamic("descriptor")(descriptor.asInstanceOf[js.Any])
-    if (deviceData != null) __obj.updateDynamic("deviceData")(deviceData.asInstanceOf[js.Any])
-    if (deviceSessionId != null) __obj.updateDynamic("deviceSessionId")(deviceSessionId.asInstanceOf[js.Any])
-    if (discountAmount != null) __obj.updateDynamic("discountAmount")(discountAmount.asInstanceOf[js.Any])
-    if (externalVault != null) __obj.updateDynamic("externalVault")(externalVault.asInstanceOf[js.Any])
-    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
-    if (merchantAccountId != null) __obj.updateDynamic("merchantAccountId")(merchantAccountId.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
-    if (paymentMethodNonce != null) __obj.updateDynamic("paymentMethodNonce")(paymentMethodNonce.asInstanceOf[js.Any])
-    if (paymentMethodToken != null) __obj.updateDynamic("paymentMethodToken")(paymentMethodToken.asInstanceOf[js.Any])
-    if (purchaseOrderNumber != null) __obj.updateDynamic("purchaseOrderNumber")(purchaseOrderNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(recurring)) __obj.updateDynamic("recurring")(recurring.asInstanceOf[js.Any])
-    if (riskData != null) __obj.updateDynamic("riskData")(riskData.asInstanceOf[js.Any])
-    if (serviceFeeAmount != null) __obj.updateDynamic("serviceFeeAmount")(serviceFeeAmount.asInstanceOf[js.Any])
-    if (sharedBillingAddressId != null) __obj.updateDynamic("sharedBillingAddressId")(sharedBillingAddressId.asInstanceOf[js.Any])
-    if (sharedCustomerId != null) __obj.updateDynamic("sharedCustomerId")(sharedCustomerId.asInstanceOf[js.Any])
-    if (sharedPaymentMethodNonce != null) __obj.updateDynamic("sharedPaymentMethodNonce")(sharedPaymentMethodNonce.asInstanceOf[js.Any])
-    if (sharedPaymentMethodToken != null) __obj.updateDynamic("sharedPaymentMethodToken")(sharedPaymentMethodToken.asInstanceOf[js.Any])
-    if (sharedShippingAddressId != null) __obj.updateDynamic("sharedShippingAddressId")(sharedShippingAddressId.asInstanceOf[js.Any])
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
-    if (shippingAddressId != null) __obj.updateDynamic("shippingAddressId")(shippingAddressId.asInstanceOf[js.Any])
-    if (shippingAmount != null) __obj.updateDynamic("shippingAmount")(shippingAmount.asInstanceOf[js.Any])
-    if (shipsFromPostalCode != null) __obj.updateDynamic("shipsFromPostalCode")(shipsFromPostalCode.asInstanceOf[js.Any])
-    if (taxAmount != null) __obj.updateDynamic("taxAmount")(taxAmount.asInstanceOf[js.Any])
-    if (!js.isUndefined(taxExempt)) __obj.updateDynamic("taxExempt")(taxExempt.asInstanceOf[js.Any])
-    if (threeDSecurePassThru != null) __obj.updateDynamic("threeDSecurePassThru")(threeDSecurePassThru.asInstanceOf[js.Any])
-    if (transactionSource != null) __obj.updateDynamic("transactionSource")(transactionSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionRequest]
   }
+  
+  extension [Self <: TransactionRequest](x: Self) {
+    
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    
+    inline def setBilling(value: CountryCodeNumeric): Self = StObject.set(x, "billing", value.asInstanceOf[js.Any])
+    
+    inline def setBillingAddressId(value: String): Self = StObject.set(x, "billingAddressId", value.asInstanceOf[js.Any])
+    
+    inline def setBillingAddressIdUndefined: Self = StObject.set(x, "billingAddressId", js.undefined)
+    
+    inline def setBillingUndefined: Self = StObject.set(x, "billing", js.undefined)
+    
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    
+    inline def setCreditCard(value: Cvv): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
+    
+    inline def setCreditCardUndefined: Self = StObject.set(x, "creditCard", js.undefined)
+    
+    inline def setCustomFields(value: Record[String, Any]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    
+    inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
+    
+    inline def setCustomer(value: Email): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    
+    inline def setDescriptor(value: Descriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptorUndefined: Self = StObject.set(x, "descriptor", js.undefined)
+    
+    inline def setDeviceData(value: String): Self = StObject.set(x, "deviceData", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceDataUndefined: Self = StObject.set(x, "deviceData", js.undefined)
+    
+    inline def setDeviceSessionId(value: String): Self = StObject.set(x, "deviceSessionId", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceSessionIdUndefined: Self = StObject.set(x, "deviceSessionId", js.undefined)
+    
+    inline def setDiscountAmount(value: String): Self = StObject.set(x, "discountAmount", value.asInstanceOf[js.Any])
+    
+    inline def setDiscountAmountUndefined: Self = StObject.set(x, "discountAmount", js.undefined)
+    
+    inline def setExternalVault(value: PreviousNetworkTransactionId): Self = StObject.set(x, "externalVault", value.asInstanceOf[js.Any])
+    
+    inline def setExternalVaultUndefined: Self = StObject.set(x, "externalVault", js.undefined)
+    
+    inline def setLineItems(value: js.Array[TransactionLineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
+    
+    inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
+    
+    inline def setLineItemsVarargs(value: TransactionLineItem*): Self = StObject.set(x, "lineItems", js.Array(value*))
+    
+    inline def setMerchantAccountId(value: String): Self = StObject.set(x, "merchantAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setMerchantAccountIdUndefined: Self = StObject.set(x, "merchantAccountId", js.undefined)
+    
+    inline def setOptions(value: AddBillingAddressToPaymentMethod): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    
+    inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
+    
+    inline def setPaymentMethodNonce(value: String): Self = StObject.set(x, "paymentMethodNonce", value.asInstanceOf[js.Any])
+    
+    inline def setPaymentMethodNonceUndefined: Self = StObject.set(x, "paymentMethodNonce", js.undefined)
+    
+    inline def setPaymentMethodToken(value: String): Self = StObject.set(x, "paymentMethodToken", value.asInstanceOf[js.Any])
+    
+    inline def setPaymentMethodTokenUndefined: Self = StObject.set(x, "paymentMethodToken", js.undefined)
+    
+    inline def setPurchaseOrderNumber(value: String): Self = StObject.set(x, "purchaseOrderNumber", value.asInstanceOf[js.Any])
+    
+    inline def setPurchaseOrderNumberUndefined: Self = StObject.set(x, "purchaseOrderNumber", js.undefined)
+    
+    inline def setRecurring(value: Boolean): Self = StObject.set(x, "recurring", value.asInstanceOf[js.Any])
+    
+    inline def setRecurringUndefined: Self = StObject.set(x, "recurring", js.undefined)
+    
+    inline def setRiskData(value: CustomerRiskData): Self = StObject.set(x, "riskData", value.asInstanceOf[js.Any])
+    
+    inline def setRiskDataUndefined: Self = StObject.set(x, "riskData", js.undefined)
+    
+    inline def setServiceFeeAmount(value: String): Self = StObject.set(x, "serviceFeeAmount", value.asInstanceOf[js.Any])
+    
+    inline def setServiceFeeAmountUndefined: Self = StObject.set(x, "serviceFeeAmount", js.undefined)
+    
+    inline def setSharedBillingAddressId(value: String): Self = StObject.set(x, "sharedBillingAddressId", value.asInstanceOf[js.Any])
+    
+    inline def setSharedBillingAddressIdUndefined: Self = StObject.set(x, "sharedBillingAddressId", js.undefined)
+    
+    inline def setSharedCustomerId(value: String): Self = StObject.set(x, "sharedCustomerId", value.asInstanceOf[js.Any])
+    
+    inline def setSharedCustomerIdUndefined: Self = StObject.set(x, "sharedCustomerId", js.undefined)
+    
+    inline def setSharedPaymentMethodNonce(value: String): Self = StObject.set(x, "sharedPaymentMethodNonce", value.asInstanceOf[js.Any])
+    
+    inline def setSharedPaymentMethodNonceUndefined: Self = StObject.set(x, "sharedPaymentMethodNonce", js.undefined)
+    
+    inline def setSharedPaymentMethodToken(value: String): Self = StObject.set(x, "sharedPaymentMethodToken", value.asInstanceOf[js.Any])
+    
+    inline def setSharedPaymentMethodTokenUndefined: Self = StObject.set(x, "sharedPaymentMethodToken", js.undefined)
+    
+    inline def setSharedShippingAddressId(value: String): Self = StObject.set(x, "sharedShippingAddressId", value.asInstanceOf[js.Any])
+    
+    inline def setSharedShippingAddressIdUndefined: Self = StObject.set(x, "sharedShippingAddressId", js.undefined)
+    
+    inline def setShipping(value: Company): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+    
+    inline def setShippingAddressId(value: String): Self = StObject.set(x, "shippingAddressId", value.asInstanceOf[js.Any])
+    
+    inline def setShippingAddressIdUndefined: Self = StObject.set(x, "shippingAddressId", js.undefined)
+    
+    inline def setShippingAmount(value: String): Self = StObject.set(x, "shippingAmount", value.asInstanceOf[js.Any])
+    
+    inline def setShippingAmountUndefined: Self = StObject.set(x, "shippingAmount", js.undefined)
+    
+    inline def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
+    
+    inline def setShipsFromPostalCode(value: String): Self = StObject.set(x, "shipsFromPostalCode", value.asInstanceOf[js.Any])
+    
+    inline def setShipsFromPostalCodeUndefined: Self = StObject.set(x, "shipsFromPostalCode", js.undefined)
+    
+    inline def setTaxAmount(value: String): Self = StObject.set(x, "taxAmount", value.asInstanceOf[js.Any])
+    
+    inline def setTaxAmountUndefined: Self = StObject.set(x, "taxAmount", js.undefined)
+    
+    inline def setTaxExempt(value: Boolean): Self = StObject.set(x, "taxExempt", value.asInstanceOf[js.Any])
+    
+    inline def setTaxExemptUndefined: Self = StObject.set(x, "taxExempt", js.undefined)
+    
+    inline def setThreeDSecurePassThru(value: Cavv): Self = StObject.set(x, "threeDSecurePassThru", value.asInstanceOf[js.Any])
+    
+    inline def setThreeDSecurePassThruUndefined: Self = StObject.set(x, "threeDSecurePassThru", js.undefined)
+    
+    inline def setTransactionSource(value: TransactionRequestSource): Self = StObject.set(x, "transactionSource", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionSourceUndefined: Self = StObject.set(x, "transactionSource", js.undefined)
+  }
 }
-

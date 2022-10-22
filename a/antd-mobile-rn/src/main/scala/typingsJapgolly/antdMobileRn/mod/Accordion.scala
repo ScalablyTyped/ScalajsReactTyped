@@ -1,20 +1,35 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.AnonStyles
-import typingsJapgolly.antdMobileRn.indexNativeMod.default
+import typingsJapgolly.antdMobileRn.libAccordionIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "Accordion")
 @js.native
-class Accordion () extends default
-
-/* static members */
-@JSImport("antd-mobile-rn", "Accordion")
-@js.native
-object Accordion extends js.Object {
-  var Panel: js.Any = js.native
-  var defaultProps: AnonStyles = js.native
+open class Accordion () extends default
+object Accordion {
+  
+  @JSImport("antd-mobile-rn", "Accordion")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("antd-mobile-rn", "Accordion.Panel")
+  @js.native
+  def Panel: Any = js.native
+  inline def Panel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Panel")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  object defaultProps {
+    
+    @JSImport("antd-mobile-rn", "Accordion.defaultProps")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("antd-mobile-rn", "Accordion.defaultProps.styles")
+    @js.native
+    def styles: Any = js.native
+    inline def styles_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styles")(x.asInstanceOf[js.Any])
+  }
 }
-

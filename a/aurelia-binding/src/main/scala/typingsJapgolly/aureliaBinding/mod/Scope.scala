@@ -1,14 +1,16 @@
 package typingsJapgolly.aureliaBinding.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Scope extends js.Object {
+trait Scope extends StObject {
+  
   /**
     * The primary aspect of the binding scope.  Typically a view-model instance.
     */
-  var bindingContext: js.Any
+  var bindingContext: Any
+  
   /**
     * The "parallel" or "artificial" aspect of the binding scope. Provides access to the parent binding
     * context and stores contextual bindable members such as $event, $index, $odd, etc. Members on this
@@ -16,13 +18,17 @@ trait Scope extends js.Object {
     */
   var overrideContext: OverrideContext
 }
-
 object Scope {
-  @scala.inline
-  def apply(bindingContext: js.Any, overrideContext: OverrideContext): Scope = {
-    val __obj = js.Dynamic.literal(bindingContext = bindingContext.asInstanceOf[js.Any], overrideContext = overrideContext.asInstanceOf[js.Any])
   
+  inline def apply(bindingContext: Any, overrideContext: OverrideContext): Scope = {
+    val __obj = js.Dynamic.literal(bindingContext = bindingContext.asInstanceOf[js.Any], overrideContext = overrideContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scope]
   }
+  
+  extension [Self <: Scope](x: Self) {
+    
+    inline def setBindingContext(value: Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideContext(value: OverrideContext): Self = StObject.set(x, "overrideContext", value.asInstanceOf[js.Any])
+  }
 }
-

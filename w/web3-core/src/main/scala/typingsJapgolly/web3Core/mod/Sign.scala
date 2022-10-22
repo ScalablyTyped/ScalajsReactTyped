@@ -1,31 +1,28 @@
 package typingsJapgolly.web3Core.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Sign extends SignedTransaction {
+trait Sign
+  extends StObject
+     with SignedTransaction {
+  
   var message: String
+  
   var signature: String
 }
-
 object Sign {
-  @scala.inline
-  def apply(
-    message: String,
-    r: String,
-    s: String,
-    signature: String,
-    v: String,
-    messageHash: String = null,
-    rawTransaction: String = null,
-    transactionHash: String = null
-  ): Sign = {
+  
+  inline def apply(message: String, r: String, s: String, signature: String, v: String): Sign = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
-    if (messageHash != null) __obj.updateDynamic("messageHash")(messageHash.asInstanceOf[js.Any])
-    if (rawTransaction != null) __obj.updateDynamic("rawTransaction")(rawTransaction.asInstanceOf[js.Any])
-    if (transactionHash != null) __obj.updateDynamic("transactionHash")(transactionHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sign]
   }
+  
+  extension [Self <: Sign](x: Self) {
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+  }
 }
-

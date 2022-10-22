@@ -1,19 +1,11 @@
 package typingsJapgolly.winrt.Windows.Storage.FileProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.FileProperties.BasicProperties")
 @js.native
-class BasicProperties ()
-  extends IBasicProperties
-     with IStorageItemExtraProperties {
-  /* CompleteClass */
-  override var dateModified: js.Date = js.native
-  /* CompleteClass */
-  override var itemDate: js.Date = js.native
-  /* CompleteClass */
-  override var size: Double = js.native
-}
-
+trait BasicProperties
+  extends StObject
+     with IBasicProperties
+     with IStorageItemExtraProperties

@@ -1,38 +1,53 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpeechSynthesisEventInit extends EventInit {
+trait SpeechSynthesisEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
   var charIndex: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var charLength: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var elapsedTime: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var name: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var utterance: SpeechSynthesisUtterance
 }
-
 object SpeechSynthesisEventInit {
-  @scala.inline
-  def apply(
-    utterance: SpeechSynthesisUtterance,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    charIndex: Int | Double = null,
-    charLength: Int | Double = null,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    elapsedTime: Int | Double = null,
-    name: java.lang.String = null
-  ): SpeechSynthesisEventInit = {
+  
+  inline def apply(utterance: SpeechSynthesisUtterance): SpeechSynthesisEventInit = {
     val __obj = js.Dynamic.literal(utterance = utterance.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (charIndex != null) __obj.updateDynamic("charIndex")(charIndex.asInstanceOf[js.Any])
-    if (charLength != null) __obj.updateDynamic("charLength")(charLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (elapsedTime != null) __obj.updateDynamic("elapsedTime")(elapsedTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechSynthesisEventInit]
   }
+  
+  extension [Self <: SpeechSynthesisEventInit](x: Self) {
+    
+    inline def setCharIndex(value: Double): Self = StObject.set(x, "charIndex", value.asInstanceOf[js.Any])
+    
+    inline def setCharIndexUndefined: Self = StObject.set(x, "charIndex", js.undefined)
+    
+    inline def setCharLength(value: Double): Self = StObject.set(x, "charLength", value.asInstanceOf[js.Any])
+    
+    inline def setCharLengthUndefined: Self = StObject.set(x, "charLength", js.undefined)
+    
+    inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
+    
+    inline def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
+    
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setUtterance(value: SpeechSynthesisUtterance): Self = StObject.set(x, "utterance", value.asInstanceOf[js.Any])
+  }
 }
-

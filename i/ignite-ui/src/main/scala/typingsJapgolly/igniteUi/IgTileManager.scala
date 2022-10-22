@@ -2,409 +2,529 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgTileManager
-  extends /**
-	 * Option for igTileManager
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Gets/Sets the duration of the animations in the tile manager.
-  	 *
-  	 */
+    * Gets/Sets the duration of the animations in the tile manager.
+    *
+    */
   var animationDuration: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the columns count in the container.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "null" The column count will be automatically calculated.
-  	 * "number" The column count can be set as a number.
-  	 */
+    * Gets/Sets the columns count in the container.
+    *
+    *
+    * Valid values:
+    * "null" The column count will be automatically calculated.
+    * "number" The column count can be set as a number.
+    */
   var cols: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the height of each column in the container.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "string" The column height can be set in pixels (px), percentage (%) or asterisk (*) which will distribute all the height between all the columns equally.
-  	 * "number" The column height can be set as a number representing value in pixels.
-  	 * "array" The column height can be set as an array, specifying height for each column. If more than one column has an asterisk value, the remaining height will be equally distributed between these columns.
-  	 * "null" The column height will be calculated based on the container height and the other options.
-  	 */
-  var columnHeight: js.UndefOr[String | Double | js.Array[_]] = js.undefined
+    * Gets/Sets the height of each column in the container.
+    *
+    *
+    * Valid values:
+    * "string" The column height can be set in pixels (px), percentage (%) or asterisk (*) which will distribute all the height between all the columns equally.
+    * "number" The column height can be set as a number representing value in pixels.
+    * "array" The column height can be set as an array, specifying height for each column. If more than one column has an asterisk value, the remaining height will be equally distributed between these columns.
+    * "null" The column height will be calculated based on the container height and the other options.
+    */
+  var columnHeight: js.UndefOr[String | Double | js.Array[Any]] = js.undefined
+  
   /**
-  	 * Gets/Sets the width of each column in the container.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "string" The column width can be set in pixels (px), percentage (%) or asterisk (*) which will distribute all the width between all the columns equally.
-  	 * "number" The column width can be set as a number representing value in pixels.
-  	 * "array" The column width can be set as an array, specifying width for each column. If more than one column has an asterisk value, the remaining width will be equally distributed between these columns.
-  	 * "null" The column width will be calculated based on the container width and the other options.
-  	 */
-  var columnWidth: js.UndefOr[String | Double | js.Array[_]] = js.undefined
+    * Gets/Sets the width of each column in the container.
+    *
+    *
+    * Valid values:
+    * "string" The column width can be set in pixels (px), percentage (%) or asterisk (*) which will distribute all the width between all the columns equally.
+    * "number" The column width can be set as a number representing value in pixels.
+    * "array" The column width can be set as an array, specifying width for each column. If more than one column has an asterisk value, the remaining width will be equally distributed between these columns.
+    * "null" The column width will be calculated based on the container width and the other options.
+    */
+  var columnWidth: js.UndefOr[String | Double | js.Array[Any]] = js.undefined
+  
   /**
-  	 * Fired before databinding is performed
-  	 *
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.owner to get a reference to the tile manager performing databinding.
-  	 *             Use ui.dataSource to get a reference to the [$.ig.DataSource](ig.datasource) the tile manager is to be databound to.
-  	 */
+    * Fired before databinding is performed
+    *
+    *             Function takes arguments evt and ui.
+    *             Use ui.owner to get a reference to the tile manager performing databinding.
+    *             Use ui.dataSource to get a reference to the [$.ig.DataSource](ig.datasource) the tile manager is to be databound to.
+    */
   var dataBinding: js.UndefOr[DataBindingEvent] = js.undefined
+  
   /**
-  	 * Fired after databinding is complete
-  	 *
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.owner to get a reference to the tile manager performing databinding.
-  	 *             Use ui.dataView to get a reference to the data the tile manager is databound to.
-  	 *             Use ui.success to get see if the databinding was performed correctly.
-  	 *             Use ui.errorMessage to get the error message if the databinding failed.
-  	 */
+    * Fired after databinding is complete
+    *
+    *             Function takes arguments evt and ui.
+    *             Use ui.owner to get a reference to the tile manager performing databinding.
+    *             Use ui.dataView to get a reference to the data the tile manager is databound to.
+    *             Use ui.success to get see if the databinding was performed correctly.
+    *             Use ui.errorMessage to get the error message if the databinding failed.
+    */
   var dataBound: js.UndefOr[DataBoundEvent] = js.undefined
+  
   /**
-  	 * Specifies any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an [$.ig.DataSource](ig.datasource) itself.
-  	 *
-  	 */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+    * Specifies any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an [$.ig.DataSource](ig.datasource) itself.
+    *
+    */
+  var dataSource: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type) and its type property.
-  	 *
-  	 */
+    * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type) and its type property.
+    *
+    */
   var dataSourceType: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies a remote URL accepted by [$.ig.DataSource](ig.datasource) in order to request data from it.
-  	 *
-  	 */
+    * Specifies a remote URL accepted by [$.ig.DataSource](ig.datasource) in order to request data from it.
+    *
+    */
   var dataSourceUrl: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the height of the container.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "string" The height width can be set in pixels (px) and percentage (%).
-  	 * "number" The height width can be set as a number in pixels.
-  	 * "null" The height width can be set as a number in pixels.
-  	 */
+    * Gets/Sets the height of the container.
+    *
+    *
+    * Valid values:
+    * "string" The height width can be set in pixels (px) and percentage (%).
+    * "number" The height width can be set as a number in pixels.
+    * "null" The height width can be set as a number in pixels.
+    */
   var height: js.UndefOr[String | Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the tiles configurations. Every tile is described by rowSpan, colSpan, rowIndex and colIndex.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "array" An array with colSpan, rowSpan, colIndex, rowIndex configurations for each tile.
-  	 * "null" Default tile configurations of rowSpan: 1 and colSpan: 1 will be used.
-  	 */
+    * Gets/Sets the tiles configurations. Every tile is described by rowSpan, colSpan, rowIndex and colIndex.
+    *
+    *
+    * Valid values:
+    * "array" An array with colSpan, rowSpan, colIndex, rowIndex configurations for each tile.
+    * "null" Default tile configurations of rowSpan: 1 and colSpan: 1 will be used.
+    */
   var items: js.UndefOr[js.Object] = js.undefined
+  
   /**
-  	 * Set/Get the locale language setting for the widget.
-  	 *
-  	 */
+    * Set/Get the locale language setting for the widget.
+    *
+    */
   var language: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Set/Get the locale setting for the widget.
-  	 *
-  	 */
-  var locale: js.UndefOr[js.Any] = js.undefined
+    * Set/Get the locale setting for the widget.
+    *
+    */
+  var locale: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets/Sets the horizontal spacing between tiles.
-  	 *
-  	 *                 number  The horizontal spacing between tiles can be set as a number.
-  	 */
+    * Gets/Sets the horizontal spacing between tiles.
+    *
+    *                 number  The horizontal spacing between tiles can be set as a number.
+    */
   var marginLeft: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the vertical spacing between tiles.
-  	 *
-  	 *                 number  The vertical spacing between tiles can be set as a number.
-  	 */
+    * Gets/Sets the vertical spacing between tiles.
+    *
+    *                 number  The vertical spacing between tiles can be set as a number.
+    */
   var marginTop: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the content of the tiles in maximized state.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "string" When initializing on html markup provide jQuery selector specifying which elements of the tile to be shown in maximized state. When initializing on data source provide igTemplate that will be rendered for the maximized state.
-  	 * "null" The whole content of the tile will be visible in maximized state.
-  	 */
+    * Gets/Sets the content of the tiles in maximized state.
+    *
+    *
+    * Valid values:
+    * "string" When initializing on html markup provide jQuery selector specifying which elements of the tile to be shown in maximized state. When initializing on data source provide igTemplate that will be rendered for the maximized state.
+    * "null" The whole content of the tile will be visible in maximized state.
+    */
   var maximizedState: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the index of which items configuration will be used for positioning and sizing of the maximized tile.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "number" The maximizedTileindex can be set as a number.
-  	 * "null" Option is ignored.
-  	 */
+    * Gets/Sets the index of which items configuration will be used for positioning and sizing of the maximized tile.
+    *
+    *
+    * Valid values:
+    * "number" The maximizedTileindex can be set as a number.
+    * "null" Option is ignored.
+    */
   var maximizedTileIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the content of the tiles in minimized state.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "string" When initializing on html markup provide jQuery selector specifying what content of the tile to be shown in minimized state. When initializing on data source provide igTemplate that will be rendered for the minimized state.
-  	 * "null" The whole content of the tile will be visible in minimized state.
-  	 */
+    * Gets/Sets the content of the tiles in minimized state.
+    *
+    *
+    * Valid values:
+    * "string" When initializing on html markup provide jQuery selector specifying what content of the tile to be shown in minimized state. When initializing on data source provide igTemplate that will be rendered for the minimized state.
+    * "null" The whole content of the tile will be visible in minimized state.
+    */
   var minimizedState: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets JQuery selector that specifies which elements will not trigger maximizing when clicked on.
-  	 *
-  	 */
+    * Gets/Sets JQuery selector that specifies which elements will not trigger maximizing when clicked on.
+    *
+    */
   var preventMaximizingSelector: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets whether the items will rearrange when the container is resized.
-  	 *
-  	 */
+    * Gets/Sets whether the items will rearrange when the container is resized.
+    *
+    */
   var rearrangeItems: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 */
+    * Set/Get the regional setting for the widget.
+    *
+    */
   var regional: js.UndefOr[String | js.Object] = js.undefined
+  
   /**
-  	 * Fired after rendering of the tile manager completes.
-  	 *
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.owner to get a reference to the tile manager performing rendering.
-  	 */
+    * Fired after rendering of the tile manager completes.
+    *
+    *             Function takes arguments evt and ui.
+    *             Use ui.owner to get a reference to the tile manager performing rendering.
+    */
   var rendered: js.UndefOr[RenderedEvent] = js.undefined
+  
   /**
-  	 * Fired before rendering of the tile manager begins.
-  	 *
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.owner to get a reference to the tile manager performing rendering.
-  	 *             Use ui.tiles to get a reference to the tiles the tile manager is going to render. If using data source this referes to the data provided.
-  	 *             Use ui.items to get a reference to the item configurations the tile manager has.
-  	 */
+    * Fired before rendering of the tile manager begins.
+    *
+    *             Function takes arguments evt and ui.
+    *             Use ui.owner to get a reference to the tile manager performing rendering.
+    *             Use ui.tiles to get a reference to the tiles the tile manager is going to render. If using data source this referes to the data provided.
+    *             Use ui.items to get a reference to the item configurations the tile manager has.
+    */
   var rendering: js.UndefOr[RenderingEvent] = js.undefined
+  
   /**
-  	 * Specifies the HTTP request method.
-  	 *
-  	 */
+    * Specifies the HTTP request method.
+    *
+    */
   var requestType: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the HTTP content type for the response object. See [Perform an asynchronous HTTP (Ajax) request](http://api.jquery.com/jQuery.ajax/).
-  	 *
-  	 */
+    * Gets/Sets the HTTP content type for the response object. See [Perform an asynchronous HTTP (Ajax) request](http://api.jquery.com/jQuery.ajax/).
+    *
+    */
   var responseContentType: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Property in the response which specifies where the data records array will be held (if the response is wrapped). See [$.ig.DataSource responseDataKey](ig.datasource#options:settings.responseDataKey).
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "string" Specifies the name of the property in which data records are held if the response is wrapped.
-  	 * "null" Option is ignored.
-  	 */
+    * Property in the response which specifies where the data records array will be held (if the response is wrapped). See [$.ig.DataSource responseDataKey](ig.datasource#options:settings.responseDataKey).
+    *
+    *
+    * Valid values:
+    * "string" Specifies the name of the property in which data records are held if the response is wrapped.
+    * "null" Option is ignored.
+    */
   var responseDataKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type) and its type property.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "string" Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
-  	 * "null" Option is ignored.
-  	 */
+    * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type) and its type property.
+    *
+    *
+    * Valid values:
+    * "string" Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
+    * "null" Option is ignored.
+    */
   var responseDataType: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets how many columns to be displayed in the right panel when the tiles are minimized.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "number" Set the number of right panel columns as a number. The minimum value is 1.
-  	 * "null" Default of 1 column will be used.
-  	 */
+    * Gets/Sets how many columns to be displayed in the right panel when the tiles are minimized.
+    *
+    *
+    * Valid values:
+    * "number" Set the number of right panel columns as a number. The minimum value is 1.
+    * "null" Default of 1 column will be used.
+    */
   var rightPanelCols: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the height of the minimized tiles in the right panel.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "number" Set the height of the minimized tiles as a number.
-  	 * "null" Default value equal to the column height will be used.
-  	 */
+    * Gets/Sets the height of the minimized tiles in the right panel.
+    *
+    *
+    * Valid values:
+    * "number" Set the height of the minimized tiles as a number.
+    * "null" Default value equal to the column height will be used.
+    */
   var rightPanelTilesHeight: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the width of the minimized tiles in the right panel.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "number" Set the width of the minimized tiles as a number.
-  	 * "null" Default value equal to the column width will be used.
-  	 */
+    * Gets/Sets the width of the minimized tiles in the right panel.
+    *
+    *
+    * Valid values:
+    * "number" Set the width of the minimized tiles as a number.
+    * "null" Default value equal to the column width will be used.
+    */
   var rightPanelTilesWidth: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the rows count in the container.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "number" The row count can be set as a number.
-  	 * "null" The row count will be automatically calculated.
-  	 */
+    * Gets/Sets the rows count in the container.
+    *
+    *
+    * Valid values:
+    * "number" The row count can be set as a number.
+    * "null" The row count will be automatically calculated.
+    */
   var rows: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets whether the right panel should show scrollbar when tiles are overflowing.
-  	 *
-  	 */
+    * Gets/Sets whether the right panel should show scrollbar when tiles are overflowing.
+    *
+    */
   var showRightPanelScroll: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Configure the container variable representation, which defines splitter functionality.
-  	 *
-  	 */
+    * Configure the container variable representation, which defines splitter functionality.
+    *
+    */
   var splitterOptions: js.UndefOr[IgTileManagerSplitterOptions] = js.undefined
+  
   /**
-  	 * Fired after a tile in the tile manager is maximized.
-  	 *
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.owner to get a reference to the tile manager the maximized tile belongs to.
-  	 *             Use ui.tile to get the jQuery element of the maximized tile
-  	 */
+    * Fired after a tile in the tile manager is maximized.
+    *
+    *             Function takes arguments evt and ui.
+    *             Use ui.owner to get a reference to the tile manager the maximized tile belongs to.
+    *             Use ui.tile to get the jQuery element of the maximized tile
+    */
   var tileMaximized: js.UndefOr[TileMaximizedEvent] = js.undefined
+  
   /**
-  	 * Fired before a tile in the tile manager is maximized.
-  	 *
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.owner to get a reference to the tile manager performing the maximizing the tile belongs to.
-  	 *             Use ui.tile to get the jQuery element of the tile being maximized
-  	 *             Use ui.minimizingTile to get reference to the tile that is minimizing simultaneously or null if no tile is minimizing.
-  	 */
+    * Fired before a tile in the tile manager is maximized.
+    *
+    *             Function takes arguments evt and ui.
+    *             Use ui.owner to get a reference to the tile manager performing the maximizing the tile belongs to.
+    *             Use ui.tile to get the jQuery element of the tile being maximized
+    *             Use ui.minimizingTile to get reference to the tile that is minimizing simultaneously or null if no tile is minimizing.
+    */
   var tileMaximizing: js.UndefOr[TileMaximizingEvent] = js.undefined
+  
   /**
-  	 * Fired after a tile in the tile manager is minimized.
-  	 *
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.owner to get a reference to the tile manager the minimized tile belongs to.
-  	 *             Use ui.tile to get the jQuery element of the minimized tile
-  	 */
+    * Fired after a tile in the tile manager is minimized.
+    *
+    *             Function takes arguments evt and ui.
+    *             Use ui.owner to get a reference to the tile manager the minimized tile belongs to.
+    *             Use ui.tile to get the jQuery element of the minimized tile
+    */
   var tileMinimized: js.UndefOr[TileMinimizedEvent] = js.undefined
+  
   /**
-  	 * Fired before a tile in the tile manager is minimized.
-  	 *
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.owner to get a reference to the tile manager performing the minimizing the tile belongs to.
-  	 *             Use ui.tile to get the jQuery element of the tile being minimized
-  	 *             Use ui.maximizingTile to get reference to the tile that is maximizing simultaneously or null if no tile is maximizing.
-  	 */
+    * Fired before a tile in the tile manager is minimized.
+    *
+    *             Function takes arguments evt and ui.
+    *             Use ui.owner to get a reference to the tile manager performing the minimizing the tile belongs to.
+    *             Use ui.tile to get the jQuery element of the tile being minimized
+    *             Use ui.maximizingTile to get reference to the tile that is maximizing simultaneously or null if no tile is maximizing.
+    */
   var tileMinimizing: js.UndefOr[TileMinimizingEvent] = js.undefined
+  
   /**
-  	 * Event Fired after a tile has been rendered in the container
-  	 *
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.owner to get a reference to the tile manager performing rendering.
-  	 *             Use ui.tile to get a reference to the rendered tile
-  	 */
+    * Event Fired after a tile has been rendered in the container
+    *
+    *             Function takes arguments evt and ui.
+    *             Use ui.owner to get a reference to the tile manager performing rendering.
+    *             Use ui.tile to get a reference to the rendered tile
+    */
   var tileRendered: js.UndefOr[TileRenderedEvent] = js.undefined
+  
   /**
-  	 * Event fired before a tile is rendered in the container
-  	 *
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.owner to get a reference to the tile manager performing rendering.
-  	 *             Use ui.tile to get a reference to the tile being rendered
-  	 */
+    * Event fired before a tile is rendered in the container
+    *
+    *             Function takes arguments evt and ui.
+    *             Use ui.owner to get a reference to the tile manager performing rendering.
+    *             Use ui.tile to get a reference to the tile being rendered
+    */
   var tileRendering: js.UndefOr[TileRenderingEvent] = js.undefined
+  
   /**
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "string" The container width can be set in pixels (px) and percentage (%).
-  	 * "number" The container width can be set as a number in pixels.
-  	 */
+    *
+    *
+    * Valid values:
+    * "string" The container width can be set in pixels (px) and percentage (%).
+    * "number" The container width can be set as a number in pixels.
+    */
   var width: js.UndefOr[String | Double] = js.undefined
 }
-
 object IgTileManager {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igTileManager
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    animationDuration: Int | Double = null,
-    cols: Int | Double = null,
-    columnHeight: String | Double | js.Array[_] = null,
-    columnWidth: String | Double | js.Array[_] = null,
-    dataBinding: (/* event */ Event_, /* ui */ DataBindingEventUIParam) => Callback = null,
-    dataBound: (/* event */ Event_, /* ui */ DataBoundEventUIParam) => Callback = null,
-    dataSource: js.Any = null,
-    dataSourceType: String = null,
-    dataSourceUrl: String = null,
-    height: String | Double = null,
-    items: js.Object = null,
-    language: String = null,
-    locale: js.Any = null,
-    marginLeft: Int | Double = null,
-    marginTop: Int | Double = null,
-    maximizedState: String = null,
-    maximizedTileIndex: Int | Double = null,
-    minimizedState: String = null,
-    preventMaximizingSelector: String = null,
-    rearrangeItems: js.UndefOr[Boolean] = js.undefined,
-    regional: String | js.Object = null,
-    rendered: (/* event */ Event_, /* ui */ RenderedEventUIParam) => Callback = null,
-    rendering: (/* event */ Event_, /* ui */ RenderingEventUIParam) => Callback = null,
-    requestType: String = null,
-    responseContentType: String = null,
-    responseDataKey: String = null,
-    responseDataType: String = null,
-    rightPanelCols: Int | Double = null,
-    rightPanelTilesHeight: Int | Double = null,
-    rightPanelTilesWidth: Int | Double = null,
-    rows: Int | Double = null,
-    showRightPanelScroll: js.UndefOr[Boolean] = js.undefined,
-    splitterOptions: IgTileManagerSplitterOptions = null,
-    tileMaximized: (/* event */ Event_, /* ui */ TileMaximizedEventUIParam) => Callback = null,
-    tileMaximizing: (/* event */ Event_, /* ui */ TileMaximizingEventUIParam) => Callback = null,
-    tileMinimized: (/* event */ Event_, /* ui */ TileMinimizedEventUIParam) => Callback = null,
-    tileMinimizing: (/* event */ Event_, /* ui */ TileMinimizingEventUIParam) => Callback = null,
-    tileRendered: (/* event */ Event_, /* ui */ TileRenderedEventUIParam) => Callback = null,
-    tileRendering: (/* event */ Event_, /* ui */ TileRenderingEventUIParam) => Callback = null,
-    width: String | Double = null
-  ): IgTileManager = {
+  
+  inline def apply(): IgTileManager = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (columnHeight != null) __obj.updateDynamic("columnHeight")(columnHeight.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.DataBindingEventUIParam) => dataBinding(t0, t1).runNow()))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.DataBoundEventUIParam) => dataBound(t0, t1).runNow()))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType.asInstanceOf[js.Any])
-    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (maximizedState != null) __obj.updateDynamic("maximizedState")(maximizedState.asInstanceOf[js.Any])
-    if (maximizedTileIndex != null) __obj.updateDynamic("maximizedTileIndex")(maximizedTileIndex.asInstanceOf[js.Any])
-    if (minimizedState != null) __obj.updateDynamic("minimizedState")(minimizedState.asInstanceOf[js.Any])
-    if (preventMaximizingSelector != null) __obj.updateDynamic("preventMaximizingSelector")(preventMaximizingSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(rearrangeItems)) __obj.updateDynamic("rearrangeItems")(rearrangeItems.asInstanceOf[js.Any])
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RenderedEventUIParam) => rendered(t0, t1).runNow()))
-    if (rendering != null) __obj.updateDynamic("rendering")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RenderingEventUIParam) => rendering(t0, t1).runNow()))
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
-    if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType.asInstanceOf[js.Any])
-    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey.asInstanceOf[js.Any])
-    if (responseDataType != null) __obj.updateDynamic("responseDataType")(responseDataType.asInstanceOf[js.Any])
-    if (rightPanelCols != null) __obj.updateDynamic("rightPanelCols")(rightPanelCols.asInstanceOf[js.Any])
-    if (rightPanelTilesHeight != null) __obj.updateDynamic("rightPanelTilesHeight")(rightPanelTilesHeight.asInstanceOf[js.Any])
-    if (rightPanelTilesWidth != null) __obj.updateDynamic("rightPanelTilesWidth")(rightPanelTilesWidth.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRightPanelScroll)) __obj.updateDynamic("showRightPanelScroll")(showRightPanelScroll.asInstanceOf[js.Any])
-    if (splitterOptions != null) __obj.updateDynamic("splitterOptions")(splitterOptions.asInstanceOf[js.Any])
-    if (tileMaximized != null) __obj.updateDynamic("tileMaximized")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.TileMaximizedEventUIParam) => tileMaximized(t0, t1).runNow()))
-    if (tileMaximizing != null) __obj.updateDynamic("tileMaximizing")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.TileMaximizingEventUIParam) => tileMaximizing(t0, t1).runNow()))
-    if (tileMinimized != null) __obj.updateDynamic("tileMinimized")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.TileMinimizedEventUIParam) => tileMinimized(t0, t1).runNow()))
-    if (tileMinimizing != null) __obj.updateDynamic("tileMinimizing")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.TileMinimizingEventUIParam) => tileMinimizing(t0, t1).runNow()))
-    if (tileRendered != null) __obj.updateDynamic("tileRendered")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.TileRenderedEventUIParam) => tileRendered(t0, t1).runNow()))
-    if (tileRendering != null) __obj.updateDynamic("tileRendering")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.TileRenderingEventUIParam) => tileRendering(t0, t1).runNow()))
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTileManager]
   }
+  
+  extension [Self <: IgTileManager](x: Self) {
+    
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+    
+    inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    
+    inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+    
+    inline def setColumnHeight(value: String | Double | js.Array[Any]): Self = StObject.set(x, "columnHeight", value.asInstanceOf[js.Any])
+    
+    inline def setColumnHeightUndefined: Self = StObject.set(x, "columnHeight", js.undefined)
+    
+    inline def setColumnHeightVarargs(value: Any*): Self = StObject.set(x, "columnHeight", js.Array(value*))
+    
+    inline def setColumnWidth(value: String | Double | js.Array[Any]): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    
+    inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+    
+    inline def setColumnWidthVarargs(value: Any*): Self = StObject.set(x, "columnWidth", js.Array(value*))
+    
+    inline def setDataBinding(value: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Callback): Self = StObject.set(x, "dataBinding", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ DataBindingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
+    
+    inline def setDataBound(value: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Callback): Self = StObject.set(x, "dataBound", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ DataBoundEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
+    
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDataSourceUrl(value: String): Self = StObject.set(x, "dataSourceUrl", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
+    
+    inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setItems(value: js.Object): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    
+    inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+    
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    
+    inline def setMaximizedState(value: String): Self = StObject.set(x, "maximizedState", value.asInstanceOf[js.Any])
+    
+    inline def setMaximizedStateUndefined: Self = StObject.set(x, "maximizedState", js.undefined)
+    
+    inline def setMaximizedTileIndex(value: Double): Self = StObject.set(x, "maximizedTileIndex", value.asInstanceOf[js.Any])
+    
+    inline def setMaximizedTileIndexUndefined: Self = StObject.set(x, "maximizedTileIndex", js.undefined)
+    
+    inline def setMinimizedState(value: String): Self = StObject.set(x, "minimizedState", value.asInstanceOf[js.Any])
+    
+    inline def setMinimizedStateUndefined: Self = StObject.set(x, "minimizedState", js.undefined)
+    
+    inline def setPreventMaximizingSelector(value: String): Self = StObject.set(x, "preventMaximizingSelector", value.asInstanceOf[js.Any])
+    
+    inline def setPreventMaximizingSelectorUndefined: Self = StObject.set(x, "preventMaximizingSelector", js.undefined)
+    
+    inline def setRearrangeItems(value: Boolean): Self = StObject.set(x, "rearrangeItems", value.asInstanceOf[js.Any])
+    
+    inline def setRearrangeItemsUndefined: Self = StObject.set(x, "rearrangeItems", js.undefined)
+    
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    
+    inline def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Callback): Self = StObject.set(x, "rendered", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RenderedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
+    
+    inline def setRendering(value: (/* event */ Event, /* ui */ RenderingEventUIParam) => Callback): Self = StObject.set(x, "rendering", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RenderingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRenderingUndefined: Self = StObject.set(x, "rendering", js.undefined)
+    
+    inline def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
+    
+    inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
+    
+    inline def setResponseContentType(value: String): Self = StObject.set(x, "responseContentType", value.asInstanceOf[js.Any])
+    
+    inline def setResponseContentTypeUndefined: Self = StObject.set(x, "responseContentType", js.undefined)
+    
+    inline def setResponseDataKey(value: String): Self = StObject.set(x, "responseDataKey", value.asInstanceOf[js.Any])
+    
+    inline def setResponseDataKeyUndefined: Self = StObject.set(x, "responseDataKey", js.undefined)
+    
+    inline def setResponseDataType(value: String): Self = StObject.set(x, "responseDataType", value.asInstanceOf[js.Any])
+    
+    inline def setResponseDataTypeUndefined: Self = StObject.set(x, "responseDataType", js.undefined)
+    
+    inline def setRightPanelCols(value: Double): Self = StObject.set(x, "rightPanelCols", value.asInstanceOf[js.Any])
+    
+    inline def setRightPanelColsUndefined: Self = StObject.set(x, "rightPanelCols", js.undefined)
+    
+    inline def setRightPanelTilesHeight(value: Double): Self = StObject.set(x, "rightPanelTilesHeight", value.asInstanceOf[js.Any])
+    
+    inline def setRightPanelTilesHeightUndefined: Self = StObject.set(x, "rightPanelTilesHeight", js.undefined)
+    
+    inline def setRightPanelTilesWidth(value: Double): Self = StObject.set(x, "rightPanelTilesWidth", value.asInstanceOf[js.Any])
+    
+    inline def setRightPanelTilesWidthUndefined: Self = StObject.set(x, "rightPanelTilesWidth", js.undefined)
+    
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    
+    inline def setShowRightPanelScroll(value: Boolean): Self = StObject.set(x, "showRightPanelScroll", value.asInstanceOf[js.Any])
+    
+    inline def setShowRightPanelScrollUndefined: Self = StObject.set(x, "showRightPanelScroll", js.undefined)
+    
+    inline def setSplitterOptions(value: IgTileManagerSplitterOptions): Self = StObject.set(x, "splitterOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSplitterOptionsUndefined: Self = StObject.set(x, "splitterOptions", js.undefined)
+    
+    inline def setTileMaximized(value: (/* event */ Event, /* ui */ TileMaximizedEventUIParam) => Callback): Self = StObject.set(x, "tileMaximized", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ TileMaximizedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setTileMaximizedUndefined: Self = StObject.set(x, "tileMaximized", js.undefined)
+    
+    inline def setTileMaximizing(value: (/* event */ Event, /* ui */ TileMaximizingEventUIParam) => Callback): Self = StObject.set(x, "tileMaximizing", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ TileMaximizingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setTileMaximizingUndefined: Self = StObject.set(x, "tileMaximizing", js.undefined)
+    
+    inline def setTileMinimized(value: (/* event */ Event, /* ui */ TileMinimizedEventUIParam) => Callback): Self = StObject.set(x, "tileMinimized", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ TileMinimizedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setTileMinimizedUndefined: Self = StObject.set(x, "tileMinimized", js.undefined)
+    
+    inline def setTileMinimizing(value: (/* event */ Event, /* ui */ TileMinimizingEventUIParam) => Callback): Self = StObject.set(x, "tileMinimizing", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ TileMinimizingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setTileMinimizingUndefined: Self = StObject.set(x, "tileMinimizing", js.undefined)
+    
+    inline def setTileRendered(value: (/* event */ Event, /* ui */ TileRenderedEventUIParam) => Callback): Self = StObject.set(x, "tileRendered", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ TileRenderedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setTileRenderedUndefined: Self = StObject.set(x, "tileRendered", js.undefined)
+    
+    inline def setTileRendering(value: (/* event */ Event, /* ui */ TileRenderingEventUIParam) => Callback): Self = StObject.set(x, "tileRendering", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ TileRenderingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setTileRenderingUndefined: Self = StObject.set(x, "tileRendering", js.undefined)
+    
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

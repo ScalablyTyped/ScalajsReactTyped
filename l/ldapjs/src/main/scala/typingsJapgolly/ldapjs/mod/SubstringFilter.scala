@@ -1,17 +1,20 @@
 package typingsJapgolly.ldapjs.mod
 
-import typingsJapgolly.ldapjs.AnonAny
+import typingsJapgolly.ldapjs.anon.Any
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ldapjs", "SubstringFilter")
 @js.native
-class SubstringFilter protected () extends Filter {
-  def this(options: AnonAny) = this()
+open class SubstringFilter protected ()
+  extends StObject
+     with Filter {
+  def this(options: Any) = this()
+  
   /* CompleteClass */
-  override var `type`: String = js.native
+  override def matches(obj: scala.Any): Boolean = js.native
+  
   /* CompleteClass */
-  override def matches(obj: js.Any): Boolean = js.native
+  var `type`: String = js.native
 }
-

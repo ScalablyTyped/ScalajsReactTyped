@@ -1,22 +1,27 @@
 package typingsJapgolly.auth0.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Data
-  extends /* propName */ StringDictionary[js.Any] {
+  extends StObject
+     with /* propName */ StringDictionary[Any] {
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object Data {
-  @scala.inline
-  def apply(StringDictionary: /* propName */ StringDictionary[js.Any] = null, name: String = null): Data = {
+  
+  inline def apply(): Data = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
+  
+  extension [Self <: Data](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

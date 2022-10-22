@@ -1,73 +1,109 @@
 package typingsJapgolly.musicmatch.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Musicmatch extends js.Object {
-  def album(params: AlbumParams): js.Promise[_]
-  def albumTracks(params: AlbumTracksParams): js.Promise[_]
-  def artist(params: ArtistParams): js.Promise[_]
-  def artistAlbums(params: ArtistAlbumsParams): js.Promise[_]
-  def artistRelated(params: ArtistRelatedParams): js.Promise[_]
-  def artistSearch(params: ArtistSearchParams): js.Promise[_]
-  def chartArtists(params: ChartArtistsParams): js.Promise[_]
-  def chartTracks(params: ChartTracksParams): js.Promise[_]
-  def matcherLyrics(params: MatcherLyricsParams): js.Promise[_]
-  def matcherSubtitle(params: MatcherSubtitleParams): js.Promise[_]
-  def matcherTrack(params: MatcherTrackParams): js.Promise[_]
-  def track(params: TrackParams): js.Promise[_]
-  def trackLyrics(params: TrackLyricsParams): js.Promise[_]
-  def trackLyricsAdd(params: TrackLyricsAddParams): js.Promise[_]
-  def trackLyricsFeedback(params: TrackLyricsFeedbackParams): js.Promise[_]
+trait Musicmatch extends StObject {
+  
+  def album(params: AlbumParams): js.Promise[Any]
+  
+  def albumTracks(params: AlbumTracksParams): js.Promise[Any]
+  
+  def artist(params: ArtistParams): js.Promise[Any]
+  
+  def artistAlbums(params: ArtistAlbumsParams): js.Promise[Any]
+  
+  def artistRelated(params: ArtistRelatedParams): js.Promise[Any]
+  
+  def artistSearch(params: ArtistSearchParams): js.Promise[Any]
+  
+  def chartArtists(params: ChartArtistsParams): js.Promise[Any]
+  
+  def chartTracks(params: ChartTracksParams): js.Promise[Any]
+  
+  def matcherLyrics(params: MatcherLyricsParams): js.Promise[Any]
+  
+  def matcherSubtitle(params: MatcherSubtitleParams): js.Promise[Any]
+  
+  def matcherTrack(params: MatcherTrackParams): js.Promise[Any]
+  
+  def track(params: TrackParams): js.Promise[Any]
+  
+  def trackLyrics(params: TrackLyricsParams): js.Promise[Any]
+  
+  def trackLyricsAdd(params: TrackLyricsAddParams): js.Promise[Any]
+  
+  def trackLyricsFeedback(params: TrackLyricsFeedbackParams): js.Promise[Any]
+  
   def trackSearch(params: TrackSearchParams): js.Promise[TrackSearchResult]
-  def trackSnippet(params: TrackSnippetParams): js.Promise[_]
-  def trackSubtitle(params: TrackSubtitleParams): js.Promise[_]
+  
+  def trackSnippet(params: TrackSnippetParams): js.Promise[Any]
+  
+  def trackSubtitle(params: TrackSubtitleParams): js.Promise[Any]
 }
-
 object Musicmatch {
-  @scala.inline
-  def apply(
-    album: AlbumParams => CallbackTo[js.Promise[js.Any]],
-    albumTracks: AlbumTracksParams => CallbackTo[js.Promise[js.Any]],
-    artist: ArtistParams => CallbackTo[js.Promise[js.Any]],
-    artistAlbums: ArtistAlbumsParams => CallbackTo[js.Promise[js.Any]],
-    artistRelated: ArtistRelatedParams => CallbackTo[js.Promise[js.Any]],
-    artistSearch: ArtistSearchParams => CallbackTo[js.Promise[js.Any]],
-    chartArtists: ChartArtistsParams => CallbackTo[js.Promise[js.Any]],
-    chartTracks: ChartTracksParams => CallbackTo[js.Promise[js.Any]],
-    matcherLyrics: MatcherLyricsParams => CallbackTo[js.Promise[js.Any]],
-    matcherSubtitle: MatcherSubtitleParams => CallbackTo[js.Promise[js.Any]],
-    matcherTrack: MatcherTrackParams => CallbackTo[js.Promise[js.Any]],
-    track: TrackParams => CallbackTo[js.Promise[js.Any]],
-    trackLyrics: TrackLyricsParams => CallbackTo[js.Promise[js.Any]],
-    trackLyricsAdd: TrackLyricsAddParams => CallbackTo[js.Promise[js.Any]],
-    trackLyricsFeedback: TrackLyricsFeedbackParams => CallbackTo[js.Promise[js.Any]],
-    trackSearch: TrackSearchParams => CallbackTo[js.Promise[TrackSearchResult]],
-    trackSnippet: TrackSnippetParams => CallbackTo[js.Promise[js.Any]],
-    trackSubtitle: TrackSubtitleParams => CallbackTo[js.Promise[js.Any]]
+  
+  inline def apply(
+    album: AlbumParams => js.Promise[Any],
+    albumTracks: AlbumTracksParams => js.Promise[Any],
+    artist: ArtistParams => js.Promise[Any],
+    artistAlbums: ArtistAlbumsParams => js.Promise[Any],
+    artistRelated: ArtistRelatedParams => js.Promise[Any],
+    artistSearch: ArtistSearchParams => js.Promise[Any],
+    chartArtists: ChartArtistsParams => js.Promise[Any],
+    chartTracks: ChartTracksParams => js.Promise[Any],
+    matcherLyrics: MatcherLyricsParams => js.Promise[Any],
+    matcherSubtitle: MatcherSubtitleParams => js.Promise[Any],
+    matcherTrack: MatcherTrackParams => js.Promise[Any],
+    track: TrackParams => js.Promise[Any],
+    trackLyrics: TrackLyricsParams => js.Promise[Any],
+    trackLyricsAdd: TrackLyricsAddParams => js.Promise[Any],
+    trackLyricsFeedback: TrackLyricsFeedbackParams => js.Promise[Any],
+    trackSearch: TrackSearchParams => js.Promise[TrackSearchResult],
+    trackSnippet: TrackSnippetParams => js.Promise[Any],
+    trackSubtitle: TrackSubtitleParams => js.Promise[Any]
   ): Musicmatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("album")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.AlbumParams) => album(t0).runNow()))
-    __obj.updateDynamic("albumTracks")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.AlbumTracksParams) => albumTracks(t0).runNow()))
-    __obj.updateDynamic("artist")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.ArtistParams) => artist(t0).runNow()))
-    __obj.updateDynamic("artistAlbums")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.ArtistAlbumsParams) => artistAlbums(t0).runNow()))
-    __obj.updateDynamic("artistRelated")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.ArtistRelatedParams) => artistRelated(t0).runNow()))
-    __obj.updateDynamic("artistSearch")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.ArtistSearchParams) => artistSearch(t0).runNow()))
-    __obj.updateDynamic("chartArtists")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.ChartArtistsParams) => chartArtists(t0).runNow()))
-    __obj.updateDynamic("chartTracks")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.ChartTracksParams) => chartTracks(t0).runNow()))
-    __obj.updateDynamic("matcherLyrics")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.MatcherLyricsParams) => matcherLyrics(t0).runNow()))
-    __obj.updateDynamic("matcherSubtitle")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.MatcherSubtitleParams) => matcherSubtitle(t0).runNow()))
-    __obj.updateDynamic("matcherTrack")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.MatcherTrackParams) => matcherTrack(t0).runNow()))
-    __obj.updateDynamic("track")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.TrackParams) => track(t0).runNow()))
-    __obj.updateDynamic("trackLyrics")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.TrackLyricsParams) => trackLyrics(t0).runNow()))
-    __obj.updateDynamic("trackLyricsAdd")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.TrackLyricsAddParams) => trackLyricsAdd(t0).runNow()))
-    __obj.updateDynamic("trackLyricsFeedback")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.TrackLyricsFeedbackParams) => trackLyricsFeedback(t0).runNow()))
-    __obj.updateDynamic("trackSearch")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.TrackSearchParams) => trackSearch(t0).runNow()))
-    __obj.updateDynamic("trackSnippet")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.TrackSnippetParams) => trackSnippet(t0).runNow()))
-    __obj.updateDynamic("trackSubtitle")(js.Any.fromFunction1((t0: typingsJapgolly.musicmatch.mod.TrackSubtitleParams) => trackSubtitle(t0).runNow()))
+    val __obj = js.Dynamic.literal(album = js.Any.fromFunction1(album), albumTracks = js.Any.fromFunction1(albumTracks), artist = js.Any.fromFunction1(artist), artistAlbums = js.Any.fromFunction1(artistAlbums), artistRelated = js.Any.fromFunction1(artistRelated), artistSearch = js.Any.fromFunction1(artistSearch), chartArtists = js.Any.fromFunction1(chartArtists), chartTracks = js.Any.fromFunction1(chartTracks), matcherLyrics = js.Any.fromFunction1(matcherLyrics), matcherSubtitle = js.Any.fromFunction1(matcherSubtitle), matcherTrack = js.Any.fromFunction1(matcherTrack), track = js.Any.fromFunction1(track), trackLyrics = js.Any.fromFunction1(trackLyrics), trackLyricsAdd = js.Any.fromFunction1(trackLyricsAdd), trackLyricsFeedback = js.Any.fromFunction1(trackLyricsFeedback), trackSearch = js.Any.fromFunction1(trackSearch), trackSnippet = js.Any.fromFunction1(trackSnippet), trackSubtitle = js.Any.fromFunction1(trackSubtitle))
     __obj.asInstanceOf[Musicmatch]
   }
+  
+  extension [Self <: Musicmatch](x: Self) {
+    
+    inline def setAlbum(value: AlbumParams => js.Promise[Any]): Self = StObject.set(x, "album", js.Any.fromFunction1(value))
+    
+    inline def setAlbumTracks(value: AlbumTracksParams => js.Promise[Any]): Self = StObject.set(x, "albumTracks", js.Any.fromFunction1(value))
+    
+    inline def setArtist(value: ArtistParams => js.Promise[Any]): Self = StObject.set(x, "artist", js.Any.fromFunction1(value))
+    
+    inline def setArtistAlbums(value: ArtistAlbumsParams => js.Promise[Any]): Self = StObject.set(x, "artistAlbums", js.Any.fromFunction1(value))
+    
+    inline def setArtistRelated(value: ArtistRelatedParams => js.Promise[Any]): Self = StObject.set(x, "artistRelated", js.Any.fromFunction1(value))
+    
+    inline def setArtistSearch(value: ArtistSearchParams => js.Promise[Any]): Self = StObject.set(x, "artistSearch", js.Any.fromFunction1(value))
+    
+    inline def setChartArtists(value: ChartArtistsParams => js.Promise[Any]): Self = StObject.set(x, "chartArtists", js.Any.fromFunction1(value))
+    
+    inline def setChartTracks(value: ChartTracksParams => js.Promise[Any]): Self = StObject.set(x, "chartTracks", js.Any.fromFunction1(value))
+    
+    inline def setMatcherLyrics(value: MatcherLyricsParams => js.Promise[Any]): Self = StObject.set(x, "matcherLyrics", js.Any.fromFunction1(value))
+    
+    inline def setMatcherSubtitle(value: MatcherSubtitleParams => js.Promise[Any]): Self = StObject.set(x, "matcherSubtitle", js.Any.fromFunction1(value))
+    
+    inline def setMatcherTrack(value: MatcherTrackParams => js.Promise[Any]): Self = StObject.set(x, "matcherTrack", js.Any.fromFunction1(value))
+    
+    inline def setTrack(value: TrackParams => js.Promise[Any]): Self = StObject.set(x, "track", js.Any.fromFunction1(value))
+    
+    inline def setTrackLyrics(value: TrackLyricsParams => js.Promise[Any]): Self = StObject.set(x, "trackLyrics", js.Any.fromFunction1(value))
+    
+    inline def setTrackLyricsAdd(value: TrackLyricsAddParams => js.Promise[Any]): Self = StObject.set(x, "trackLyricsAdd", js.Any.fromFunction1(value))
+    
+    inline def setTrackLyricsFeedback(value: TrackLyricsFeedbackParams => js.Promise[Any]): Self = StObject.set(x, "trackLyricsFeedback", js.Any.fromFunction1(value))
+    
+    inline def setTrackSearch(value: TrackSearchParams => js.Promise[TrackSearchResult]): Self = StObject.set(x, "trackSearch", js.Any.fromFunction1(value))
+    
+    inline def setTrackSnippet(value: TrackSnippetParams => js.Promise[Any]): Self = StObject.set(x, "trackSnippet", js.Any.fromFunction1(value))
+    
+    inline def setTrackSubtitle(value: TrackSubtitleParams => js.Promise[Any]): Self = StObject.set(x, "trackSubtitle", js.Any.fromFunction1(value))
+  }
 }
-

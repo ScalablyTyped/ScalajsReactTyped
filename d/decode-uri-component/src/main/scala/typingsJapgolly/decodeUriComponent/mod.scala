@@ -1,12 +1,14 @@
 package typingsJapgolly.decodeUriComponent
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("decode-uri-component", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(encodedURI: String): String = js.native
+object mod {
+  
+  inline def apply(encodedURI: String): String = ^.asInstanceOf[js.Dynamic].apply(encodedURI.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("decode-uri-component", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.jqueryJnotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JNotifyInitOptions extends js.Object {
+trait JNotifyInitOptions extends StObject {
+  
   var appendType: js.UndefOr[String] = js.undefined
+  
   var oneAtTime: js.UndefOr[Boolean] = js.undefined
 }
-
 object JNotifyInitOptions {
-  @scala.inline
-  def apply(appendType: String = null, oneAtTime: js.UndefOr[Boolean] = js.undefined): JNotifyInitOptions = {
+  
+  inline def apply(): JNotifyInitOptions = {
     val __obj = js.Dynamic.literal()
-    if (appendType != null) __obj.updateDynamic("appendType")(appendType.asInstanceOf[js.Any])
-    if (!js.isUndefined(oneAtTime)) __obj.updateDynamic("oneAtTime")(oneAtTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[JNotifyInitOptions]
   }
+  
+  extension [Self <: JNotifyInitOptions](x: Self) {
+    
+    inline def setAppendType(value: String): Self = StObject.set(x, "appendType", value.asInstanceOf[js.Any])
+    
+    inline def setAppendTypeUndefined: Self = StObject.set(x, "appendType", js.undefined)
+    
+    inline def setOneAtTime(value: Boolean): Self = StObject.set(x, "oneAtTime", value.asInstanceOf[js.Any])
+    
+    inline def setOneAtTimeUndefined: Self = StObject.set(x, "oneAtTime", js.undefined)
+  }
 }
-

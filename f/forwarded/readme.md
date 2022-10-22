@@ -10,10 +10,10 @@ Parse HTTP X-Forwarded-For header
 | ------------------ | :-------------: |
 | Full name          | forwarded |
 | Keywords           | x-forwarded-for, http, req |
-| # releases         | 0 |
-| # dependents       | 60 |
-| # downloads        | 388771290 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9.272641766666667E7 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/forwarded#readme)

@@ -1,8 +1,8 @@
 package typingsJapgolly.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.bpmnModdle.bpmnModdleStrings.None
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.bpmnModdle.bpmnModdleStrings.MultiInstanceSequential
   - typingsJapgolly.bpmnModdle.bpmnModdleStrings.MultiInstanceParallel
 */
-trait ChoreographyLoopType extends js.Object
-
+trait ChoreographyLoopType extends StObject
 object ChoreographyLoopType {
-  @scala.inline
-  def MultiInstanceParallel: typingsJapgolly.bpmnModdle.bpmnModdleStrings.MultiInstanceParallel = this.cast("MultiInstanceParallel")
-  @scala.inline
-  def MultiInstanceSequential: typingsJapgolly.bpmnModdle.bpmnModdleStrings.MultiInstanceSequential = this.cast("MultiInstanceSequential")
-  @scala.inline
-  def None: typingsJapgolly.bpmnModdle.bpmnModdleStrings.None = this.cast("None")
-  @scala.inline
-  def Standard: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Standard = this.cast("Standard")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def MultiInstanceParallel: typingsJapgolly.bpmnModdle.bpmnModdleStrings.MultiInstanceParallel = "MultiInstanceParallel".asInstanceOf[typingsJapgolly.bpmnModdle.bpmnModdleStrings.MultiInstanceParallel]
+  
+  inline def MultiInstanceSequential: typingsJapgolly.bpmnModdle.bpmnModdleStrings.MultiInstanceSequential = "MultiInstanceSequential".asInstanceOf[typingsJapgolly.bpmnModdle.bpmnModdleStrings.MultiInstanceSequential]
+  
+  inline def None: typingsJapgolly.bpmnModdle.bpmnModdleStrings.None = "None".asInstanceOf[typingsJapgolly.bpmnModdle.bpmnModdleStrings.None]
+  
+  inline def Standard: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Standard = "Standard".asInstanceOf[typingsJapgolly.bpmnModdle.bpmnModdleStrings.Standard]
 }
-

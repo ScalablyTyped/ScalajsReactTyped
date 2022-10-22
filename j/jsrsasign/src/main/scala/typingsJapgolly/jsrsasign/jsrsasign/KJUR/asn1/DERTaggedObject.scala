@@ -1,8 +1,10 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * class for ASN.1 DER TaggedObject
@@ -25,18 +27,38 @@ import scala.scalajs.js.annotation._
   * d2 = new KJUR.asn1.DERTaggedObject({'obj': d1});
   * hex = d2.getEncodedHex();
   */
-@JSGlobal("jsrsasign.KJUR.asn1.DERTaggedObject")
-@js.native
-class DERTaggedObject () extends ASN1Object {
-  def this(params: ASN1ObjectParam) = this()
-  def this(params: ExplicitParam) = this()
-  def this(params: TagParam) = this()
+trait DERTaggedObject
+  extends StObject
+     with ASN1Object {
+  
   /**
     * set value by an ASN1Object
     * @param isExplicitFlag flag for explicit/implicit tag
     * @param tagNoHex hexadecimal string of ASN.1 tag
     * @param asn1Object ASN.1 to encapsulate
     */
-  def setASN1Object(isExplicitFlag: Boolean, tagNoHex: String, asn1Object: ASN1Object): Unit = js.native
+  def setASN1Object(isExplicitFlag: Boolean, tagNoHex: String, asn1Object: ASN1Object): Unit
 }
-
+object DERTaggedObject {
+  
+  inline def apply(
+    getEncodedHex: CallbackTo[String],
+    getFreshValueHex: CallbackTo[String],
+    getLengthHexFromValue: CallbackTo[String],
+    getValueHex: CallbackTo[String],
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setASN1Object: (Boolean, String, ASN1Object) => Callback
+  ): DERTaggedObject = {
+    val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setASN1Object = js.Any.fromFunction3((t0: Boolean, t1: String, t2: ASN1Object) => (setASN1Object(t0, t1, t2)).runNow()), params = null)
+    __obj.asInstanceOf[DERTaggedObject]
+  }
+  
+  extension [Self <: DERTaggedObject](x: Self) {
+    
+    inline def setSetASN1Object(value: (Boolean, String, ASN1Object) => Callback): Self = StObject.set(x, "setASN1Object", js.Any.fromFunction3((t0: Boolean, t1: String, t2: ASN1Object) => (value(t0, t1, t2)).runNow()))
+  }
+}

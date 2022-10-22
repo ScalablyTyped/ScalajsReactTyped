@@ -1,12 +1,14 @@
 package typingsJapgolly.awsSdkIsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/is-node", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def isNode(): Boolean = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/is-node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def isNode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")().asInstanceOf[Boolean]
 }
-

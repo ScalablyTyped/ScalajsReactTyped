@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.servicequotasMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsServicequotasMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.ServiceQuotas")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ServiceQuotas ()
+open class ServiceQuotas ()
   extends typingsJapgolly.awsSdk.mod.ServiceQuotas {
   def this(options: ClientConfiguration) = this()
 }
-

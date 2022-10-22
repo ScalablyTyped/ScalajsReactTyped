@@ -1,25 +1,31 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.create
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.edit
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureViewModelLastEditInfo extends Object {
+trait FeatureViewModelLastEditInfo
+  extends StObject
+     with Object {
+  
   /**
     * Date that the edit was performed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#lastEditInfo)
     */
   var date: String
+  
   /**
-    * The type of edit that was performed on the feature.  **Possible values:** edit | create
+    * The type of edit that was performed on the feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#lastEditInfo)
     */
-  var `type`: String
+  var `type`: edit | create
+  
   /**
     * User who performed the last edit on a feature.
     *
@@ -27,22 +33,27 @@ trait FeatureViewModelLastEditInfo extends Object {
     */
   var user: String
 }
-
 object FeatureViewModelLastEditInfo {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     date: String,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    `type`: String,
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
+    `type`: edit | create,
     user: String
   ): FeatureViewModelLastEditInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), user = user.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureViewModelLastEditInfo]
   }
+  
+  extension [Self <: FeatureViewModelLastEditInfo](x: Self) {
+    
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: edit | create): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+  }
 }
-

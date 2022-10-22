@@ -1,0 +1,36 @@
+package typingsJapgolly.fibjs.global
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/** module Or Internal Object */
+/**
+  * @brief x509 证书请求对象
+  * @detail X509Req 对象属于 crypto 模块，创建：,```JavaScript,var k = new crypto.X509Req();,```
+  */
+@JSGlobal("Class_X509Req")
+@js.native
+/**
+  * 
+  * @brief X509Req 构造函数
+  * 
+  * 
+  */
+open class ClassX509Req ()
+  extends StObject
+     with typingsJapgolly.fibjs.ClassX509Req {
+  /**
+    * 
+    * @brief X509Req 构造函数，根据给定的信息创建一个证书请求
+    * 
+    * @param subject 证书的主题可分辨名称
+    * @param key 证书的公钥
+    * @param hash 证书摘要算法，缺省为 hash.SHA1
+    * 
+    * 
+    * 
+    */
+  def this(subject: String, key: typingsJapgolly.fibjs.ClassPKey) = this()
+  def this(subject: String, key: typingsJapgolly.fibjs.ClassPKey, hash: Double) = this()
+}

@@ -1,21 +1,23 @@
 package typingsJapgolly.reachRouter.mod
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.React.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LocationProps extends js.Object {
+trait LocationProps extends StObject {
+  
   var children: LocationProviderRenderFn
 }
-
 object LocationProps {
-  @scala.inline
-  def apply(children: /* context */ LocationContext => CallbackTo[Node]): LocationProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(js.Any.fromFunction1((t0: /* context */ typingsJapgolly.reachRouter.mod.LocationContext) => children(t0).runNow()))
+  
+  inline def apply(children: /* context */ LocationContext => Node): LocationProps = {
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     __obj.asInstanceOf[LocationProps]
   }
+  
+  extension [Self <: LocationProps](x: Self) {
+    
+    inline def setChildren(value: /* context */ LocationContext => Node): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+  }
 }
-

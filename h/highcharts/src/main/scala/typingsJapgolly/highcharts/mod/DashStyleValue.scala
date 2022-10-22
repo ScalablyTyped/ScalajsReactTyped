@@ -1,8 +1,8 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.Dash
@@ -17,32 +17,28 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.highcharts.highchartsStrings.ShortDot
   - typingsJapgolly.highcharts.highchartsStrings.Solid
 */
-trait DashStyleValue extends js.Object
-
+trait DashStyleValue extends StObject
 object DashStyleValue {
-  @scala.inline
-  def Dash: typingsJapgolly.highcharts.highchartsStrings.Dash = this.cast("Dash")
-  @scala.inline
-  def DashDot: typingsJapgolly.highcharts.highchartsStrings.DashDot = this.cast("DashDot")
-  @scala.inline
-  def Dot: typingsJapgolly.highcharts.highchartsStrings.Dot = this.cast("Dot")
-  @scala.inline
-  def LongDash: typingsJapgolly.highcharts.highchartsStrings.LongDash = this.cast("LongDash")
-  @scala.inline
-  def LongDashDot: typingsJapgolly.highcharts.highchartsStrings.LongDashDot = this.cast("LongDashDot")
-  @scala.inline
-  def LongDashDotDot: typingsJapgolly.highcharts.highchartsStrings.LongDashDotDot = this.cast("LongDashDotDot")
-  @scala.inline
-  def ShortDash: typingsJapgolly.highcharts.highchartsStrings.ShortDash = this.cast("ShortDash")
-  @scala.inline
-  def ShortDashDot: typingsJapgolly.highcharts.highchartsStrings.ShortDashDot = this.cast("ShortDashDot")
-  @scala.inline
-  def ShortDashDotDot: typingsJapgolly.highcharts.highchartsStrings.ShortDashDotDot = this.cast("ShortDashDotDot")
-  @scala.inline
-  def ShortDot: typingsJapgolly.highcharts.highchartsStrings.ShortDot = this.cast("ShortDot")
-  @scala.inline
-  def Solid: typingsJapgolly.highcharts.highchartsStrings.Solid = this.cast("Solid")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Dash: typingsJapgolly.highcharts.highchartsStrings.Dash = "Dash".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.Dash]
+  
+  inline def DashDot: typingsJapgolly.highcharts.highchartsStrings.DashDot = "DashDot".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.DashDot]
+  
+  inline def Dot: typingsJapgolly.highcharts.highchartsStrings.Dot = "Dot".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.Dot]
+  
+  inline def LongDash: typingsJapgolly.highcharts.highchartsStrings.LongDash = "LongDash".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.LongDash]
+  
+  inline def LongDashDot: typingsJapgolly.highcharts.highchartsStrings.LongDashDot = "LongDashDot".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.LongDashDot]
+  
+  inline def LongDashDotDot: typingsJapgolly.highcharts.highchartsStrings.LongDashDotDot = "LongDashDotDot".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.LongDashDotDot]
+  
+  inline def ShortDash: typingsJapgolly.highcharts.highchartsStrings.ShortDash = "ShortDash".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.ShortDash]
+  
+  inline def ShortDashDot: typingsJapgolly.highcharts.highchartsStrings.ShortDashDot = "ShortDashDot".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.ShortDashDot]
+  
+  inline def ShortDashDotDot: typingsJapgolly.highcharts.highchartsStrings.ShortDashDotDot = "ShortDashDotDot".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.ShortDashDotDot]
+  
+  inline def ShortDot: typingsJapgolly.highcharts.highchartsStrings.ShortDot = "ShortDot".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.ShortDot]
+  
+  inline def Solid: typingsJapgolly.highcharts.highchartsStrings.Solid = "Solid".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.Solid]
 }
-

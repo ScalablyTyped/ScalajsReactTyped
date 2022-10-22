@@ -1,20 +1,49 @@
 package typingsJapgolly.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Access.Entity")
-@js.native
-class Entity protected () extends js.Object {
-  @JSName("Access.Entity_typekey")
-  var AccessDotEntity_typekey: Entity = js.native
-  val Name: String = js.native
+trait Entity extends StObject {
+  
+  /* private */ @JSName("Access.Entity_typekey")
+  var AccessDotEntity_typekey: Entity
+  
+  def IsMemberSafe(dispid: Double): Boolean
+  
+  val Name: String
+  
+  def Operations(Index: String): Operation
+  def Operations(Index: Double): Operation
   @JSName("Operations")
-  val Operations_Original: Operations = js.native
-  val Parent: js.Any = js.native
-  def IsMemberSafe(dispid: Double): Boolean = js.native
-  def Operations(Index: String): Operation = js.native
-  def Operations(Index: Double): Operation = js.native
+  val Operations_Original: Operations
+  
+  val Parent: Any
 }
-
+object Entity {
+  
+  inline def apply(
+    AccessDotEntity_typekey: Entity,
+    IsMemberSafe: Double => Boolean,
+    Name: String,
+    Operations: Operations,
+    Parent: Any
+  ): Entity = {
+    val __obj = js.Dynamic.literal(IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), Name = Name.asInstanceOf[js.Any], Operations = Operations.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Access.Entity_typekey")(AccessDotEntity_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Entity]
+  }
+  
+  extension [Self <: Entity](x: Self) {
+    
+    inline def setAccessDotEntity_typekey(value: Entity): Self = StObject.set(x, "Access.Entity_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setOperations(value: Operations): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+  }
+}

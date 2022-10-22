@@ -10,10 +10,10 @@ Debounce middleware for Redux
 | ------------------ | :-------------: |
 | Full name          | redux-debounced |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 582002 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 56066.666666666664 |
+| # stars            | 164.0 |
 
 ## Links
 - [Homepage](https://github.com/ryanseddon/redux-debounce#readme)

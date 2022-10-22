@@ -7,17 +7,23 @@ import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstr
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.keyUp
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.textChanged
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.userInput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapTimeEdit")
 @js.native
-class BootstrapTimeEdit () extends BootstrapClientEdit {
+trait BootstrapTimeEdit
+  extends StObject
+     with BootstrapClientEdit {
+  
   def getButtonVisible(number: Double): Boolean = js.native
+  
   def getCaretPosition(): Double = js.native
+  
   def getDate(): js.Date = js.native
+  
   def getText(): String = js.native
+  
   @JSName("off")
   def off_buttonClick(eventName: buttonClick): this.type = js.native
   @JSName("off")
@@ -67,6 +73,7 @@ class BootstrapTimeEdit () extends BootstrapClientEdit {
     eventName: userInput,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_buttonClick(
     eventName: buttonClick,
@@ -102,6 +109,7 @@ class BootstrapTimeEdit () extends BootstrapClientEdit {
     eventName: userInput,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_buttonClick(
     eventName: buttonClick,
@@ -137,11 +145,16 @@ class BootstrapTimeEdit () extends BootstrapClientEdit {
     eventName: userInput,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   def selectAll(): Unit = js.native
+  
   def setButtonVisible(number: Double, value: Boolean): Unit = js.native
+  
   def setCaretPosition(position: Double): Unit = js.native
+  
   def setDate(date: js.Date): Unit = js.native
+  
   def setSelection(startPos: Double, endPos: Double, scrollToSelection: Boolean): Unit = js.native
+  
   def setText(text: String): Unit = js.native
 }
-

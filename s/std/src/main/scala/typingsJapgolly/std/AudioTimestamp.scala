@@ -1,21 +1,32 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AudioTimestamp extends js.Object {
+trait AudioTimestamp extends StObject {
+  
+  /* standard dom */
   var contextTime: js.UndefOr[Double] = js.undefined
-  var performanceTime: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var performanceTime: js.UndefOr[DOMHighResTimeStamp] = js.undefined
 }
-
 object AudioTimestamp {
-  @scala.inline
-  def apply(contextTime: Int | Double = null, performanceTime: Int | Double = null): AudioTimestamp = {
+  
+  inline def apply(): AudioTimestamp = {
     val __obj = js.Dynamic.literal()
-    if (contextTime != null) __obj.updateDynamic("contextTime")(contextTime.asInstanceOf[js.Any])
-    if (performanceTime != null) __obj.updateDynamic("performanceTime")(performanceTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioTimestamp]
   }
+  
+  extension [Self <: AudioTimestamp](x: Self) {
+    
+    inline def setContextTime(value: Double): Self = StObject.set(x, "contextTime", value.asInstanceOf[js.Any])
+    
+    inline def setContextTimeUndefined: Self = StObject.set(x, "contextTime", js.undefined)
+    
+    inline def setPerformanceTime(value: DOMHighResTimeStamp): Self = StObject.set(x, "performanceTime", value.asInstanceOf[js.Any])
+    
+    inline def setPerformanceTimeUndefined: Self = StObject.set(x, "performanceTime", js.undefined)
+  }
 }
-

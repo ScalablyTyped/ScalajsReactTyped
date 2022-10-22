@@ -1,15 +1,15 @@
 package typingsJapgolly.officeJsPreview.Visio
 
-import typingsJapgolly.officeJsPreview.AnonExpand
 import typingsJapgolly.officeJsPreview.OfficeExtension.ClientObject
 import typingsJapgolly.officeJsPreview.OfficeExtension.ClientResult
 import typingsJapgolly.officeJsPreview.OfficeExtension.UpdateOptions
 import typingsJapgolly.officeJsPreview.Visio.Interfaces.ShapeData
 import typingsJapgolly.officeJsPreview.Visio.Interfaces.ShapeLoadOptions
 import typingsJapgolly.officeJsPreview.Visio.Interfaces.ShapeUpdateData
+import typingsJapgolly.officeJsPreview.anon.Expand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -17,9 +17,11 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-@JSGlobal("Visio.Shape")
 @js.native
-class Shape () extends ClientObject {
+trait Shape
+  extends StObject
+     with ClientObject {
+  
   /**
     *
     * Returns the Comments Collection. Read-only.
@@ -27,65 +29,11 @@ class Shape () extends ClientObject {
     * [Api set:  1.1]
     */
   val comments: CommentCollection = js.native
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Shape: RequestContext = js.native
-  /**
-    *
-    * Returns the Hyperlinks collection for a Shape object. Read-only.
-    *
-    * [Api set:  1.1]
-    */
-  val hyperlinks: HyperlinkCollection = js.native
-  /**
-    *
-    * Shape's identifier. Read-only.
-    *
-    * [Api set:  1.1]
-    */
-  val id: Double = js.native
-  /**
-    *
-    * Shape's name. Read-only.
-    *
-    * [Api set:  1.1]
-    */
-  val name: String = js.native
-  /**
-    *
-    * Returns true, if shape is selected. User can set true to select the shape explicitly.
-    *
-    * [Api set:  1.1]
-    */
-  var select: Boolean = js.native
-  /**
-    *
-    * Returns the Shape's Data Section. Read-only.
-    *
-    * [Api set:  1.1]
-    */
-  val shapeDataItems: ShapeDataItemCollection = js.native
-  /**
-    *
-    * Gets SubShape Collection. Read-only.
-    *
-    * [Api set:  1.1]
-    */
-  val subShapes: ShapeCollection = js.native
-  /**
-    *
-    * Shape's text. Read-only.
-    *
-    * [Api set:  1.1]
-    */
-  val text: String = js.native
-  /**
-    *
-    * Returns the view of the shape. Read-only.
-    *
-    * [Api set:  1.1]
-    */
-  val view: ShapeView = js.native
+  
   /**
     *
     * Returns the BoundingBox object that specifies bounding box of the shape.
@@ -93,26 +41,50 @@ class Shape () extends ClientObject {
     * [Api set:  1.1]
     */
   def getBounds(): ClientResult[BoundingBox] = js.native
+  
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
-    * @remarks
+    * Returns the Hyperlinks collection for a Shape object. Read-only.
     *
-    * In addition to this signature, this method has the following signatures:
+    * [Api set:  1.1]
+    */
+  val hyperlinks: HyperlinkCollection = js.native
+  
+  /**
     *
-    * `load(option?: string | string[]): Visio.Shape` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+    * Shape's identifier. Read-only.
     *
-    * `load(option?: { select?: string; expand?: string; }): Visio.Shape` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-    *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Shape` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * [Api set:  1.1]
+    */
+  val id: Double = js.native
+  
+  /**
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Shape = js.native
-  def load(option: String): Shape = js.native
-  def load(option: js.Array[String]): Shape = js.native
-  def load(option: AnonExpand): Shape = js.native
-  def load(option: ShapeLoadOptions): Shape = js.native
+  def load(options: ShapeLoadOptions): Shape = js.native
+  def load(propertyNamesAndPaths: Expand): Shape = js.native
+  def load(propertyNames: String): Shape = js.native
+  def load(propertyNames: js.Array[String]): Shape = js.native
+  
+  /**
+    *
+    * Shape's name. Read-only.
+    *
+    * [Api set:  1.1]
+    */
+  val name: String = js.native
+  
+  /**
+    *
+    * Returns true, if shape is selected. User can set true to select the shape explicitly.
+    *
+    * [Api set:  1.1]
+    */
+  var select: Boolean = js.native
+  
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks
@@ -128,10 +100,47 @@ class Shape () extends ClientObject {
   def set(properties: ShapeUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Shape): Unit = js.native
+  
+  /**
+    * Set mock data
+    */
+  def setMockData(data: ShapeData): Unit = js.native
+  
+  /**
+    *
+    * Returns the Shape's Data Section. Read-only.
+    *
+    * [Api set:  1.1]
+    */
+  val shapeDataItems: ShapeDataItemCollection = js.native
+  
+  /**
+    *
+    * Gets SubShape Collection. Read-only.
+    *
+    * [Api set:  1.1]
+    */
+  val subShapes: ShapeCollection = js.native
+  
+  /**
+    *
+    * Shape's text. Read-only.
+    *
+    * [Api set:  1.1]
+    */
+  val text: String = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Visio.Shape object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): ShapeData = js.native
+  
+  /**
+    *
+    * Returns the view of the shape. Read-only.
+    *
+    * [Api set:  1.1]
+    */
+  val view: ShapeView = js.native
 }
-

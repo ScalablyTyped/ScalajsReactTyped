@@ -1,63 +1,59 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`10`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`11`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`7`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`9`
+import typingsJapgolly.activexOffice.activexOfficeInts.`0`
+import typingsJapgolly.activexOffice.activexOfficeInts.`10`
+import typingsJapgolly.activexOffice.activexOfficeInts.`11`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`3`
+import typingsJapgolly.activexOffice.activexOfficeInts.`4`
+import typingsJapgolly.activexOffice.activexOfficeInts.`5`
+import typingsJapgolly.activexOffice.activexOfficeInts.`6`
+import typingsJapgolly.activexOffice.activexOfficeInts.`7`
+import typingsJapgolly.activexOffice.activexOfficeInts.`8`
+import typingsJapgolly.activexOffice.activexOfficeInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`7`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`10`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`9`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`11`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`8`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`4`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`5`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`6`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`7`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`10`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`9`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`0`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`3`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`11`
 */
-trait MsoBalloonErrorType extends js.Object
-
+trait MsoBalloonErrorType extends StObject
 object MsoBalloonErrorType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoBalloonErrorBadCharacter: `8` = this.cast(8)
-  @scala.inline
-  def msoBalloonErrorBadPictureRef: `4` = this.cast(4)
-  @scala.inline
-  def msoBalloonErrorBadReference: `5` = this.cast(5)
-  @scala.inline
-  def msoBalloonErrorButtonModeless: `7` = this.cast(7)
-  @scala.inline
-  def msoBalloonErrorButtonlessModal: `6` = this.cast(6)
-  @scala.inline
-  def msoBalloonErrorCOMFailure: `9` = this.cast(9)
-  @scala.inline
-  def msoBalloonErrorCharNotTopmostForModal: `10` = this.cast(10)
-  @scala.inline
-  def msoBalloonErrorNone: `0` = this.cast(0)
-  @scala.inline
-  def msoBalloonErrorOther: `1` = this.cast(1)
-  @scala.inline
-  def msoBalloonErrorOutOfMemory: `3` = this.cast(3)
-  @scala.inline
-  def msoBalloonErrorTooBig: `2` = this.cast(2)
-  @scala.inline
-  def msoBalloonErrorTooManyControls: `11` = this.cast(11)
+  
+  inline def msoBalloonErrorBadCharacter: `8` = 8.asInstanceOf[`8`]
+  
+  inline def msoBalloonErrorBadPictureRef: `4` = 4.asInstanceOf[`4`]
+  
+  inline def msoBalloonErrorBadReference: `5` = 5.asInstanceOf[`5`]
+  
+  inline def msoBalloonErrorButtonModeless: `7` = 7.asInstanceOf[`7`]
+  
+  inline def msoBalloonErrorButtonlessModal: `6` = 6.asInstanceOf[`6`]
+  
+  inline def msoBalloonErrorCOMFailure: `9` = 9.asInstanceOf[`9`]
+  
+  inline def msoBalloonErrorCharNotTopmostForModal: `10` = 10.asInstanceOf[`10`]
+  
+  inline def msoBalloonErrorNone: `0` = 0.asInstanceOf[`0`]
+  
+  inline def msoBalloonErrorOther: `1` = 1.asInstanceOf[`1`]
+  
+  inline def msoBalloonErrorOutOfMemory: `3` = 3.asInstanceOf[`3`]
+  
+  inline def msoBalloonErrorTooBig: `2` = 2.asInstanceOf[`2`]
+  
+  inline def msoBalloonErrorTooManyControls: `11` = 11.asInstanceOf[`11`]
 }
-

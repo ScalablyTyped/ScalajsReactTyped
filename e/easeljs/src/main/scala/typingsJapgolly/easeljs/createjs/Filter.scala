@@ -1,13 +1,13 @@
 package typingsJapgolly.easeljs.createjs
 
-import org.scalajs.dom.raw.CanvasRenderingContext2D
+import org.scalajs.dom.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("createjs.Filter")
 @js.native
-class Filter () extends js.Object {
+trait Filter extends StObject {
+  
   // methods
   def applyFilter(ctx: CanvasRenderingContext2D, x: Double, y: Double, width: Double, height: Double): Boolean = js.native
   def applyFilter(
@@ -37,6 +37,45 @@ class Filter () extends js.Object {
     targetX: Double,
     targetY: Double
   ): Boolean = js.native
+  def applyFilter(
+    ctx: CanvasRenderingContext2D,
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    targetCtx: CanvasRenderingContext2D,
+    targetX: Unit,
+    targetY: Double
+  ): Boolean = js.native
+  def applyFilter(
+    ctx: CanvasRenderingContext2D,
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    targetCtx: Unit,
+    targetX: Double
+  ): Boolean = js.native
+  def applyFilter(
+    ctx: CanvasRenderingContext2D,
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    targetCtx: Unit,
+    targetX: Double,
+    targetY: Double
+  ): Boolean = js.native
+  def applyFilter(
+    ctx: CanvasRenderingContext2D,
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    targetCtx: Unit,
+    targetX: Unit,
+    targetY: Double
+  ): Boolean = js.native
+  
   def getBounds(): Rectangle = js.native
 }
-

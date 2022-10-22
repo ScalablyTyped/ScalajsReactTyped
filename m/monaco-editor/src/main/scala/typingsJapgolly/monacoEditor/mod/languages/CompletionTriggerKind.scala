@@ -1,35 +1,33 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CompletionTriggerKind extends js.Object
-
+sealed trait CompletionTriggerKind extends StObject
 @JSImport("monaco-editor", "languages.CompletionTriggerKind")
 @js.native
-object CompletionTriggerKind extends js.Object {
-  @js.native
-  sealed trait Invoke extends CompletionTriggerKind
-  
-  @js.native
-  sealed trait TriggerCharacter extends CompletionTriggerKind
-  
-  @js.native
-  sealed trait TriggerForIncompleteCompletions extends CompletionTriggerKind
+object CompletionTriggerKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CompletionTriggerKind with Double] = js.native
-  /* 0 */ @js.native
-  object Invoke extends TopLevel[Invoke with Double]
+  def apply(value: Double): js.UndefOr[CompletionTriggerKind & Double] = js.native
   
-  /* 1 */ @js.native
-  object TriggerCharacter extends TopLevel[TriggerCharacter with Double]
+  @js.native
+  sealed trait Invoke
+    extends StObject
+       with CompletionTriggerKind
+  /* 0 */ val Invoke: typingsJapgolly.monacoEditor.mod.languages.CompletionTriggerKind.Invoke & Double = js.native
   
-  /* 2 */ @js.native
-  object TriggerForIncompleteCompletions extends TopLevel[TriggerForIncompleteCompletions with Double]
+  @js.native
+  sealed trait TriggerCharacter
+    extends StObject
+       with CompletionTriggerKind
+  /* 1 */ val TriggerCharacter: typingsJapgolly.monacoEditor.mod.languages.CompletionTriggerKind.TriggerCharacter & Double = js.native
   
+  @js.native
+  sealed trait TriggerForIncompleteCompletions
+    extends StObject
+       with CompletionTriggerKind
+  /* 2 */ val TriggerForIncompleteCompletions: typingsJapgolly.monacoEditor.mod.languages.CompletionTriggerKind.TriggerForIncompleteCompletions & Double = js.native
 }
-

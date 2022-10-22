@@ -10,10 +10,10 @@ node client for Etsy'd StatsD server
 | ------------------ | :-------------: |
 | Full name          | node-statsd |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 83 |
-| # downloads        | 2735586 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 278419.6666666667 |
+| # stars            | 428.0 |
 
 ## Links
 - [Homepage](https://github.com/sivy/node-statsd)

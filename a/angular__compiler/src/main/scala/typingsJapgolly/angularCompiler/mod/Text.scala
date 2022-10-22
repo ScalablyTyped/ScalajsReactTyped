@@ -1,25 +1,17 @@
 package typingsJapgolly.angularCompiler.mod
 
-import typingsJapgolly.angularCompiler.i18nAstMod.Message
-import typingsJapgolly.angularCompiler.i18nAstMod.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "Text")
 @js.native
-class Text protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.Text {
-  def this(value: String, sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
+open class Text protected () extends Text2 {
+  def this(value: String, sourceSpan: ParseSourceSpan, tokens: js.Array[InterpolatedTextToken]) = this()
   def this(
     value: String,
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: Message
-  ) = this()
-  def this(
-    value: String,
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: Node
+    sourceSpan: ParseSourceSpan,
+    tokens: js.Array[InterpolatedTextToken],
+    i18n: I18nMeta2
   ) = this()
 }
-

@@ -1,19 +1,24 @@
 package typingsJapgolly.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UUIDObject extends js.Object {
+trait UUIDObject extends StObject {
+  
   var uuids: js.Array[String]
 }
-
 object UUIDObject {
-  @scala.inline
-  def apply(uuids: js.Array[String]): UUIDObject = {
-    val __obj = js.Dynamic.literal(uuids = uuids.asInstanceOf[js.Any])
   
+  inline def apply(uuids: js.Array[String]): UUIDObject = {
+    val __obj = js.Dynamic.literal(uuids = uuids.asInstanceOf[js.Any])
     __obj.asInstanceOf[UUIDObject]
   }
+  
+  extension [Self <: UUIDObject](x: Self) {
+    
+    inline def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
+    
+    inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value*))
+  }
 }
-

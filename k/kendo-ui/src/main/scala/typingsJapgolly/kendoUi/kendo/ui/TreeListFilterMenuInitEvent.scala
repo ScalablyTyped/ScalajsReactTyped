@@ -2,29 +2,33 @@ package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeListFilterMenuInitEvent extends TreeListEvent {
+trait TreeListFilterMenuInitEvent
+  extends StObject
+     with TreeListEvent {
+  
   var container: js.UndefOr[JQuery] = js.undefined
+  
   var field: js.UndefOr[String] = js.undefined
 }
-
 object TreeListFilterMenuInitEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: TreeList,
-    container: JQuery = null,
-    field: String = null
-  ): TreeListFilterMenuInitEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: TreeList): TreeListFilterMenuInitEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListFilterMenuInitEvent]
   }
+  
+  extension [Self <: TreeListFilterMenuInitEvent](x: Self) {
+    
+    inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+  }
 }
-

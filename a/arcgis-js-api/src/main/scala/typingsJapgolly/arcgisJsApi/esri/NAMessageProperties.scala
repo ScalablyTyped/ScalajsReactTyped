@@ -8,37 +8,45 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.empty
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.error
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.informative
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NAMessageProperties extends js.Object {
+trait NAMessageProperties extends StObject {
+  
   /**
     * A description of the network analyst message.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-NAMessage.html#description)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NAMessage.html#description)
     */
   var description: js.UndefOr[String] = js.undefined
+  
   /**
     * The network analyst message type.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-NAMessage.html#type)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NAMessage.html#type)
     */
   var `type`: js.UndefOr[
     informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort
   ] = js.undefined
 }
-
 object NAMessageProperties {
-  @scala.inline
-  def apply(
-    description: String = null,
-    `type`: informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort = null
-  ): NAMessageProperties = {
+  
+  inline def apply(): NAMessageProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NAMessageProperties]
   }
+  
+  extension [Self <: NAMessageProperties](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setType(
+      value: informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

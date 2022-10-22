@@ -1,11 +1,11 @@
-package typingsJapgolly.dbJs
+package typingsJapgolly.dbJs.DbJs
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object DbJs {
-  type ErrorListener = js.Function1[/* err */ js.Error, scala.Unit]
-  type IndexAccessibleServer = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.dbJs.DbJs.TypedObjectStoreServer[js.Any]]
-  type Server = typingsJapgolly.dbJs.DbJs.IndexAccessibleServer with typingsJapgolly.dbJs.DbJs.ObjectStoreServer with typingsJapgolly.dbJs.DbJs.BaseServer
-}
+
+type ErrorListener = js.Function1[/* err */ js.Error, Unit]
+
+type IndexAccessibleServer = StringDictionary[TypedObjectStoreServer[Any]]

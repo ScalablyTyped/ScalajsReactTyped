@@ -1,38 +1,37 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
 import typingsJapgolly.kendoUi.JQuery
 import typingsJapgolly.kendoUi.JQueryPromise
 import typingsJapgolly.kendoUi.kendo.data.DataSource
 import typingsJapgolly.kendoUi.kendo.data.PivotDataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.PivotGrid")
 @js.native
-class PivotGrid protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: PivotGridOptions) = this()
+trait PivotGrid
+  extends StObject
+     with Widget {
+  
+  def cellInfo(columnIndex: Double, rowIndex: Double): Any = js.native
+  
+  def cellInfoByElement(cell: String): Any = js.native
+  def cellInfoByElement(cell: Element): Any = js.native
+  def cellInfoByElement(cell: JQuery): Any = js.native
+  
   var dataSource: DataSource = js.native
+  
   @JSName("options")
   var options_PivotGrid: PivotGridOptions = js.native
-  var wrapper: JQuery = js.native
-  def cellInfo(columnIndex: Double, rowIndex: Double): js.Any = js.native
-  def cellInfoByElement(cell: String): js.Any = js.native
-  def cellInfoByElement(cell: JQuery): js.Any = js.native
-  def cellInfoByElement(cell: typingsJapgolly.std.Element): js.Any = js.native
+  
   def refresh(): Unit = js.native
+  
   def saveAsExcel(): Unit = js.native
-  def saveAsPDF(): JQueryPromise[_] = js.native
+  
+  def saveAsPDF(): JQueryPromise[Any] = js.native
+  
   def setDataSource(dataSource: PivotDataSource): Unit = js.native
+  
+  var wrapper: JQuery = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.ui.PivotGrid")
-@js.native
-object PivotGrid extends js.Object {
-  var fn: PivotGrid = js.native
-  def extend(proto: js.Object): PivotGrid = js.native
-}
-

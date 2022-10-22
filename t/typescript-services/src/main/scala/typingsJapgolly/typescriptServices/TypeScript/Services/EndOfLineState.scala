@@ -1,41 +1,32 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EndOfLineState extends js.Object
-
+sealed trait EndOfLineState extends StObject
 @JSGlobal("TypeScript.Services.EndOfLineState")
 @js.native
-object EndOfLineState extends js.Object {
-  @js.native
-  sealed trait InDoubleQuoteStringLiteral extends EndOfLineState
+object EndOfLineState extends StObject {
   
   @js.native
-  sealed trait InMultiLineCommentTrivia extends EndOfLineState
+  sealed trait InDoubleQuoteStringLiteral
+    extends StObject
+       with EndOfLineState
   
   @js.native
-  sealed trait InSingleQuoteStringLiteral extends EndOfLineState
+  sealed trait InMultiLineCommentTrivia
+    extends StObject
+       with EndOfLineState
   
   @js.native
-  sealed trait Start extends EndOfLineState
+  sealed trait InSingleQuoteStringLiteral
+    extends StObject
+       with EndOfLineState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EndOfLineState with Double] = js.native
-  /* 3 */ @js.native
-  object InDoubleQuoteStringLiteral extends TopLevel[InDoubleQuoteStringLiteral with Double]
-  
-  /* 1 */ @js.native
-  object InMultiLineCommentTrivia extends TopLevel[InMultiLineCommentTrivia with Double]
-  
-  /* 2 */ @js.native
-  object InSingleQuoteStringLiteral extends TopLevel[InSingleQuoteStringLiteral with Double]
-  
-  /* 0 */ @js.native
-  object Start extends TopLevel[Start with Double]
-  
+  @js.native
+  sealed trait Start
+    extends StObject
+       with EndOfLineState
 }
-

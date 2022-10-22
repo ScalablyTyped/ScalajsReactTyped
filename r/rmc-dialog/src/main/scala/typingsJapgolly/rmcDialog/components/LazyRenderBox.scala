@@ -1,46 +1,35 @@
 package typingsJapgolly.rmcDialog.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.rmcDialog.lazyRenderBoxMod.ILazyRenderBoxPropTypes
-import typingsJapgolly.rmcDialog.lazyRenderBoxMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.rmcDialog.libLazyRenderBoxMod.ILazyRenderBoxPropTypes
+import typingsJapgolly.rmcDialog.libLazyRenderBoxMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LazyRenderBox {
-  def apply(
-    className: String = null,
-    hiddenClassName: String = null,
-    role: String = null,
-    style: js.Object = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ILazyRenderBoxPropTypes, default, Unit, ILazyRenderBoxPropTypes] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (hiddenClassName != null) __obj.updateDynamic("hiddenClassName")(hiddenClassName.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rmcDialog.lazyRenderBoxMod.ILazyRenderBoxPropTypes, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rmcDialog.lazyRenderBoxMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rmcDialog.lazyRenderBoxMod.ILazyRenderBoxPropTypes])(children: _*)
-  }
   @JSImport("rmc-dialog/lib/LazyRenderBox", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def hiddenClassName(value: String): this.type = set("hiddenClassName", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def style(value: js.Object): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: LazyRenderBox.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ILazyRenderBoxPropTypes): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

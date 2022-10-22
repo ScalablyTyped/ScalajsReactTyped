@@ -10,15 +10,12 @@ Get the default network gateway, cross-platform.
 | ------------------ | :-------------: |
 | Full name          | default-gateway |
 | Keywords           | default gateway, network, default, gateway, routing, route |
-| # releases         | 19 |
-| # dependents       | 49 |
-| # downloads        | 167064418 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4.7990937333333336E7 |
+| # stars            | 75.0 |
 
 ## Links
-- [Homepage](https://github.com/silverwind/default-gateway#readme)
-- [Bugs](https://github.com/silverwind/default-gateway/issues)
-- [Repository](https://github.com/silverwind/default-gateway)
 - [Npm](https://www.npmjs.com/package/default-gateway)
     
 

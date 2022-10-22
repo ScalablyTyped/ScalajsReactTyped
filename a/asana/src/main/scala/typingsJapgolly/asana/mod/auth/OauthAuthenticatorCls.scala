@@ -1,12 +1,15 @@
 package typingsJapgolly.asana.mod.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("asana", "auth.OauthAuthenticator")
 @js.native
-class OauthAuthenticatorCls protected () extends OauthAuthenticator {
+open class OauthAuthenticatorCls protected ()
+  extends StObject
+     with OauthAuthenticator {
   /**
     * Creates an authenticator that uses Oauth for authentication.
     *
@@ -22,6 +25,7 @@ class OauthAuthenticatorCls protected () extends OauthAuthenticator {
     * @constructor
     */
   def this(options: OauthAuthenticatorOptions) = this()
+  
   /**
     * @param {Object} request The request to modify, for the `request` library.
     * @return {Object} The `request` parameter, modified to include authentication
@@ -31,6 +35,7 @@ class OauthAuthenticatorCls protected () extends OauthAuthenticator {
     */
   /* CompleteClass */
   override def authenticateRequest(request: OauthAuthenticatorRequest): OauthAuthenticatorRequest = js.native
+  
   /**
     * Establishes credentials.
     *
@@ -40,6 +45,7 @@ class OauthAuthenticatorCls protected () extends OauthAuthenticator {
     */
   /* CompleteClass */
   override def establishCredentials(): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Attempts to refresh credentials, if possible, given the current credentials.
     *
@@ -51,4 +57,3 @@ class OauthAuthenticatorCls protected () extends OauthAuthenticator {
   /* CompleteClass */
   override def refreshCredentials(): typingsJapgolly.bluebird.mod.^[Boolean] = js.native
 }
-

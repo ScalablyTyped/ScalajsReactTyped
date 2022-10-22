@@ -10,10 +10,10 @@ TaskDescription Android React Native module
 | ------------------ | :-------------: |
 | Full name          | react-native-android-taskdescription |
 | Keywords           | react, native, taskdescription, android |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 3155 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 77.66666666666667 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/jwarby/react-native-android-taskdescription#readme)

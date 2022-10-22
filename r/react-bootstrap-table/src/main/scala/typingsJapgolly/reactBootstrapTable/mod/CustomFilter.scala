@@ -1,23 +1,20 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.React.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElement */] extends js.Object {
+trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElement */] extends StObject {
+  
   /**
-  	 * Custom filter parameters to be passed to the generator function
-  	 */
+    * Custom filter parameters to be passed to the generator function
+    */
   var customFilterParameters: CustomFilterParameters[FParams]
+  
   /**
-  	 * Type must be 'CustomFilter'
-  	 */
-  var `type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter
-  /**
-  	 * Function to generate the filter component
-  	 */
+    * Function to generate the filter component
+    */
   @JSName("getElement")
   def getElement_CustomFilter(
     filterHandler: js.Function2[
@@ -27,26 +24,39 @@ trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElemen
     ],
     customFilterParameters: CustomFilterParameters[FParams]
   ): Element
+  
+  /**
+    * Type must be 'CustomFilter'
+    */
+  var `type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter
 }
-
 object CustomFilter {
-  @scala.inline
-  def apply[FParams /* <: js.Object */, FElement /* <: CustomFilterElement */](
+  
+  inline def apply[FParams /* <: js.Object */, FElement /* <: CustomFilterElement */](
     customFilterParameters: CustomFilterParameters[FParams],
     getElement: (js.Function2[
       /* value */ js.UndefOr[CustomFilterParameters[FParams]], 
       /* type */ js.UndefOr[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter], 
       Unit
-    ], CustomFilterParameters[FParams]) => CallbackTo[Element],
-    `type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter
+    ], CustomFilterParameters[FParams]) => Element
   ): CustomFilter[FParams, FElement] = {
-    val __obj = js.Dynamic.literal(customFilterParameters = customFilterParameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("getElement")(js.Any.fromFunction2((t0: js.Function2[
-  /* value */ js.UndefOr[typingsJapgolly.reactBootstrapTable.mod.CustomFilterParameters[FParams]], 
-  /* type */ js.UndefOr[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter], 
-  scala.Unit], t1: typingsJapgolly.reactBootstrapTable.mod.CustomFilterParameters[FParams]) => getElement(t0, t1).runNow()))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(customFilterParameters = customFilterParameters.asInstanceOf[js.Any], getElement = js.Any.fromFunction2(getElement))
+    __obj.updateDynamic("type")("CustomFilter")
     __obj.asInstanceOf[CustomFilter[FParams, FElement]]
   }
+  
+  extension [Self <: CustomFilter[?, ?], FParams /* <: js.Object */, FElement /* <: CustomFilterElement */](x: Self & (CustomFilter[FParams, FElement])) {
+    
+    inline def setCustomFilterParameters(value: CustomFilterParameters[FParams]): Self = StObject.set(x, "customFilterParameters", value.asInstanceOf[js.Any])
+    
+    inline def setGetElement(
+      value: (js.Function2[
+          /* value */ js.UndefOr[CustomFilterParameters[FParams]], 
+          /* type */ js.UndefOr[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter], 
+          Unit
+        ], CustomFilterParameters[FParams]) => Element
+    ): Self = StObject.set(x, "getElement", js.Any.fromFunction2(value))
+    
+    inline def setType(value: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.CustomFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

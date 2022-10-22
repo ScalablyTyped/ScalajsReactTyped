@@ -1,22 +1,30 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Sms
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A collection of SmsFilterRule instances. */
-@JSGlobal("Windows.Devices.Sms.SmsFilterRules")
-@js.native
-class SmsFilterRules protected () extends js.Object {
-  /**
-    * Creates an instance of SmsFilterRules .
-    * @param actionType An enumeration value that specifies which action type is to be associated with the rules for this instance. Action type determines the order in which rules are evaluated, as well as the action to be taken when a rule is matched.
-    */
-  def this(actionType: SmsFilterActionType) = this()
+trait SmsFilterRules extends StObject {
+  
   /** The SmsFilterActionType for this set of filter rules. */
-  var actionType: SmsFilterActionType = js.native
+  var actionType: SmsFilterActionType
+  
   /** Gets the list of rules in this SmsFilterRules instance. */
-  var rules: IVector[SmsFilterRule] = js.native
+  var rules: IVector[SmsFilterRule]
 }
-
+object SmsFilterRules {
+  
+  inline def apply(actionType: SmsFilterActionType, rules: IVector[SmsFilterRule]): SmsFilterRules = {
+    val __obj = js.Dynamic.literal(actionType = actionType.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SmsFilterRules]
+  }
+  
+  extension [Self <: SmsFilterRules](x: Self) {
+    
+    inline def setActionType(value: SmsFilterActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+    
+    inline def setRules(value: IVector[SmsFilterRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+  }
+}

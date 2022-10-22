@@ -1,31 +1,34 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.solidityParserAntlr.mod.ASTNode because Already inherited */ trait AssemblyBlock
-  extends AssemblyItem
-     with BaseASTNode {
+trait AssemblyBlock
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with AssemblyItem {
+  
   var operations: js.Array[AssemblyItem]
+  
   @JSName("type")
   var type_AssemblyBlock: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock
 }
-
 object AssemblyBlock {
-  @scala.inline
-  def apply(
-    operations: js.Array[AssemblyItem],
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyBlock = {
+  
+  inline def apply(operations: js.Array[AssemblyItem]): AssemblyBlock = {
     val __obj = js.Dynamic.literal(operations = operations.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssemblyBlock")
     __obj.asInstanceOf[AssemblyBlock]
   }
+  
+  extension [Self <: AssemblyBlock](x: Self) {
+    
+    inline def setOperations(value: js.Array[AssemblyItem]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    
+    inline def setOperationsVarargs(value: AssemblyItem*): Self = StObject.set(x, "operations", js.Array(value*))
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

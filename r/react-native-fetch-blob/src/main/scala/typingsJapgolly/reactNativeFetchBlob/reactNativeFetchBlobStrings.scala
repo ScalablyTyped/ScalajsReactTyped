@@ -2,100 +2,103 @@ package typingsJapgolly.reactNativeFetchBlob
 
 import typingsJapgolly.reactNativeFetchBlob.mod.Encoding
 import typingsJapgolly.reactNativeFetchBlob.mod.Methods
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeFetchBlobStrings {
-  @js.native
-  sealed trait DELETE extends Methods
   
   @js.native
-  sealed trait GET extends Methods
+  sealed trait DELETE
+    extends StObject
+       with Methods
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait POST extends Methods
+  sealed trait GET
+    extends StObject
+       with Methods
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait PUT extends Methods
+  sealed trait POST
+    extends StObject
+       with Methods
+  inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait _empty extends js.Object
+  sealed trait PUT
+    extends StObject
+       with Methods
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait ascii extends Encoding
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait base64 extends Encoding
+  sealed trait ascii
+    extends StObject
+       with Encoding
+  inline def ascii: ascii = "ascii".asInstanceOf[ascii]
   
   @js.native
-  sealed trait blob extends js.Object
+  sealed trait base64
+    extends StObject
+       with Encoding
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait delete_ extends Methods
+  sealed trait blob extends StObject
+  inline def blob: blob = "blob".asInstanceOf[blob]
   
   @js.native
-  sealed trait directory extends js.Object
+  sealed trait delete_
+    extends StObject
+       with Methods
+  inline def delete_ : delete_ = "delete".asInstanceOf[delete_]
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait directory extends StObject
+  inline def directory: directory = "directory".asInstanceOf[directory]
   
   @js.native
-  sealed trait get_ extends Methods
+  sealed trait file extends StObject
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait get_
+    extends StObject
+       with Methods
+  inline def get_ : get_ = "get".asInstanceOf[get_]
   
   @js.native
-  sealed trait path extends js.Object
+  sealed trait json extends StObject
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait post_ extends Methods
+  sealed trait path extends StObject
+  inline def path: path = "path".asInstanceOf[path]
   
   @js.native
-  sealed trait put_ extends Methods
+  sealed trait post_
+    extends StObject
+       with Methods
+  inline def post_ : post_ = "post".asInstanceOf[post_]
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait put_
+    extends StObject
+       with Methods
+  inline def put_ : put_ = "put".asInstanceOf[put_]
   
   @js.native
-  sealed trait utf8 extends Encoding
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
   
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def ascii: ascii = "ascii".asInstanceOf[ascii]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
-  @scala.inline
-  def delete_ : delete_ = "delete".asInstanceOf[delete_]
-  @scala.inline
-  def directory: directory = "directory".asInstanceOf[directory]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def get_ : get_ = "get".asInstanceOf[get_]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def path: path = "path".asInstanceOf[path]
-  @scala.inline
-  def post_ : post_ = "post".asInstanceOf[post_]
-  @scala.inline
-  def put_ : put_ = "put".asInstanceOf[put_]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  @js.native
+  sealed trait utf8
+    extends StObject
+       with Encoding
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }
-

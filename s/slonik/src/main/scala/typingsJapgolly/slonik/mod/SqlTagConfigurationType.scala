@@ -1,20 +1,24 @@
 package typingsJapgolly.slonik.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SqlTagConfigurationType extends js.Object {
+trait SqlTagConfigurationType extends StObject {
+  
   var normalizeIdentifier: js.UndefOr[IdentifierNormalizerType] = js.undefined
 }
-
 object SqlTagConfigurationType {
-  @scala.inline
-  def apply(normalizeIdentifier: /* identifierName */ String => CallbackTo[String] = null): SqlTagConfigurationType = {
+  
+  inline def apply(): SqlTagConfigurationType = {
     val __obj = js.Dynamic.literal()
-    if (normalizeIdentifier != null) __obj.updateDynamic("normalizeIdentifier")(js.Any.fromFunction1((t0: /* identifierName */ java.lang.String) => normalizeIdentifier(t0).runNow()))
     __obj.asInstanceOf[SqlTagConfigurationType]
   }
+  
+  extension [Self <: SqlTagConfigurationType](x: Self) {
+    
+    inline def setNormalizeIdentifier(value: /* identifierName */ String => String): Self = StObject.set(x, "normalizeIdentifier", js.Any.fromFunction1(value))
+    
+    inline def setNormalizeIdentifierUndefined: Self = StObject.set(x, "normalizeIdentifier", js.undefined)
+  }
 }
-

@@ -1,10 +1,9 @@
 package typingsJapgolly.k6.htmlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "AnchorElement")
+/* note: abstract class */ @JSImport("k6/html", "AnchorElement")
 @js.native
-abstract class AnchorElement () extends HrefElement
-
+open class AnchorElement () extends HrefElement

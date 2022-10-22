@@ -1,21 +1,15 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Base for a common object renderer that can be used as a
-  * system renderer plugin.
-  *
-  * @class
-  * @extends PIXI.System
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "ObjectRenderer")
 @js.native
-class ObjectRenderer protected ()
-  extends typingsJapgolly.pixiJs.PIXI.ObjectRenderer {
-  def this(renderer: typingsJapgolly.pixiJs.PIXI.Renderer) = this()
+open class ObjectRenderer protected ()
+  extends typingsJapgolly.pixiCore.mod.ObjectRenderer {
+  /**
+    * @param renderer - The renderer this manager works for.
+    */
+  def this(renderer: typingsJapgolly.pixiCore.mod.Renderer) = this()
 }
-

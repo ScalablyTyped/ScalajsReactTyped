@@ -1,8 +1,8 @@
 package typingsJapgolly.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.kruskal
@@ -11,27 +11,36 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#eles.pageRank
   */
-trait SearchPageRankOptions extends js.Object {
+trait SearchPageRankOptions extends StObject {
+  
   /** Numeric parameter for the algorithm. */
   var dampingFactor: js.UndefOr[Double] = js.undefined
+  
   /** Maximum number of iterations to perform. */
   var iterations: js.UndefOr[Double] = js.undefined
+  
   /** Numeric parameter that represents the required precision. */
   var precision: js.UndefOr[Double] = js.undefined
 }
-
 object SearchPageRankOptions {
-  @scala.inline
-  def apply(
-    dampingFactor: Int | Double = null,
-    iterations: Int | Double = null,
-    precision: Int | Double = null
-  ): SearchPageRankOptions = {
+  
+  inline def apply(): SearchPageRankOptions = {
     val __obj = js.Dynamic.literal()
-    if (dampingFactor != null) __obj.updateDynamic("dampingFactor")(dampingFactor.asInstanceOf[js.Any])
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchPageRankOptions]
   }
+  
+  extension [Self <: SearchPageRankOptions](x: Self) {
+    
+    inline def setDampingFactor(value: Double): Self = StObject.set(x, "dampingFactor", value.asInstanceOf[js.Any])
+    
+    inline def setDampingFactorUndefined: Self = StObject.set(x, "dampingFactor", js.undefined)
+    
+    inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    
+    inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+    
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+  }
 }
-

@@ -1,45 +1,38 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SearchDirection extends js.Object
-
+sealed trait SearchDirection extends StObject
 /**
-  *
   * Specifies the search direction.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.SearchDirection")
 @js.native
-object SearchDirection extends js.Object {
+object SearchDirection extends StObject {
+  
   /**
-    *
     * Search in reverse order.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait backwards extends SearchDirection
+  sealed trait backwards
+    extends StObject
+       with SearchDirection
   
   /**
-    *
     * Search in forward order.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait forward extends SearchDirection
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SearchDirection with String] = js.native
-  /* "Backwards" */ @js.native
-  object backwards extends TopLevel[backwards with String]
-  
-  /* "Forward" */ @js.native
-  object forward extends TopLevel[forward with String]
-  
+  sealed trait forward
+    extends StObject
+       with SearchDirection
 }
-

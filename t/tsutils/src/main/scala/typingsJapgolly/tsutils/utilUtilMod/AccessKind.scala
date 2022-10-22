@@ -1,53 +1,51 @@
 package typingsJapgolly.tsutils.utilUtilMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AccessKind extends js.Object
-
+sealed trait AccessKind extends StObject
 @JSImport("tsutils/util/util", "AccessKind")
 @js.native
-object AccessKind extends js.Object {
-  @js.native
-  sealed trait Delete extends AccessKind
-  
-  @js.native
-  sealed trait Modification extends AccessKind
-  
-  @js.native
-  sealed trait None extends AccessKind
-  
-  @js.native
-  sealed trait Read extends AccessKind
-  
-  @js.native
-  sealed trait ReadWrite extends AccessKind
-  
-  @js.native
-  sealed trait Write extends AccessKind
+object AccessKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AccessKind with Double] = js.native
-  /* 4 */ @js.native
-  object Delete extends TopLevel[Delete with Double]
+  def apply(value: Double): js.UndefOr[AccessKind & Double] = js.native
   
-  /* 6 */ @js.native
-  object Modification extends TopLevel[Modification with Double]
+  @js.native
+  sealed trait Delete
+    extends StObject
+       with AccessKind
+  /* 4 */ val Delete: typingsJapgolly.tsutils.utilUtilMod.AccessKind.Delete & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait Modification
+    extends StObject
+       with AccessKind
+  /* 6 */ val Modification: typingsJapgolly.tsutils.utilUtilMod.AccessKind.Modification & Double = js.native
   
-  /* 1 */ @js.native
-  object Read extends TopLevel[Read with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with AccessKind
+  /* 0 */ val None: typingsJapgolly.tsutils.utilUtilMod.AccessKind.None & Double = js.native
   
-  /* 3 */ @js.native
-  object ReadWrite extends TopLevel[ReadWrite with Double]
+  @js.native
+  sealed trait Read
+    extends StObject
+       with AccessKind
+  /* 1 */ val Read: typingsJapgolly.tsutils.utilUtilMod.AccessKind.Read & Double = js.native
   
-  /* 2 */ @js.native
-  object Write extends TopLevel[Write with Double]
+  @js.native
+  sealed trait ReadWrite
+    extends StObject
+       with AccessKind
+  /* 3 */ val ReadWrite: typingsJapgolly.tsutils.utilUtilMod.AccessKind.ReadWrite & Double = js.native
   
+  @js.native
+  sealed trait Write
+    extends StObject
+       with AccessKind
+  /* 2 */ val Write: typingsJapgolly.tsutils.utilUtilMod.AccessKind.Write & Double = js.native
 }
-

@@ -1,11 +1,11 @@
-package typingsJapgolly.activexShdocvw
+package typingsJapgolly.activexShdocvw.SHDocVw
 
+import typingsJapgolly.activexShdocvw.activexShdocvwInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object SHDocVw {
-  /** Constants for WebBrowser NewProcess notification */
-  // tslint:disable-next-line no-const-enum
-  type NewProcessCauseConstants = typingsJapgolly.activexShdocvw.activexShdocvwNumbers.`1`
-}
+
+/** Constants for WebBrowser NewProcess notification */
+// eslint-disable-next-line no-const-enum
+type NewProcessCauseConstants = `1`

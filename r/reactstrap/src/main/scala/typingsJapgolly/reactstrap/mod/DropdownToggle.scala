@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.dropdownToggleMod.DropdownToggleProps
+import typingsJapgolly.reactstrap.typesLibDropdownToggleMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "DropdownToggle")
 @js.native
-class DropdownToggle[T] ()
-  extends Component[DropdownToggleProps, js.Object, js.Any]
-
+open class DropdownToggle () extends default

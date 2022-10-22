@@ -10,10 +10,10 @@ The lodash method `_.chunk` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.chunk |
 | Keywords           | lodash-modularized, chunk |
-| # releases         | 0 |
-| # dependents       | 148 |
-| # downloads        | 9674712 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2066655.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

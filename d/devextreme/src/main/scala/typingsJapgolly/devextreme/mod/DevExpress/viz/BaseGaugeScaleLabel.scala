@@ -1,48 +1,77 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.devextreme.AnonValueText
-import typingsJapgolly.devextreme.devextremeStrings.hide
-import typingsJapgolly.devextreme.devextremeStrings.none
-import typingsJapgolly.devextreme.mod.DevExpress.ui.format
+import typingsJapgolly.devextreme.anon.ValueText
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.LabelOverlap
+import typingsJapgolly.devextreme.mod.DevExpress.ui.Format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Specifies common options for scale labels. */
-trait BaseGaugeScaleLabel extends js.Object {
-  /** Specifies a callback function that returns the text to be displayed in scale labels. */
-  var customizeText: js.UndefOr[js.Function1[/* scaleValue */ AnonValueText, String]] = js.undefined
-  /** Specifies font options for the text displayed in the scale labels of the gauge. */
+trait BaseGaugeScaleLabel extends StObject {
+  
+  /**
+    * Specifies a callback function that returns the text to be displayed in scale labels.
+    */
+  var customizeText: js.UndefOr[js.Function1[/* scaleValue */ ValueText, String]] = js.undefined
+  
+  /**
+    * Specifies font properties for the text displayed in the scale labels of the gauge.
+    */
   var font: js.UndefOr[Font] = js.undefined
-  /** Formats a value before it is displayed in a scale label. Accepts only numeric formats. */
-  var format: js.UndefOr[typingsJapgolly.devextreme.mod.DevExpress.ui.format] = js.undefined
-  /** Decides how to arrange scale labels when there is not enough space to keep all of them. */
-  var overlappingBehavior: js.UndefOr[hide | none] = js.undefined
-  /** Specifies whether or not scale labels should be colored similarly to their corresponding ranges in the range container. */
+  
+  /**
+    * Formats a value before it is displayed in a scale label. Accepts only numeric formats.
+    */
+  var format: js.UndefOr[Format] = js.undefined
+  
+  /**
+    * Decides how to arrange scale labels when there is not enough space to keep all of them.
+    */
+  var overlappingBehavior: js.UndefOr[LabelOverlap] = js.undefined
+  
+  /**
+    * Specifies whether or not scale labels should be colored similarly to their corresponding ranges in the range container.
+    */
   var useRangeColors: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not scale labels are visible on the gauge. */
+  
+  /**
+    * Specifies whether or not scale labels are visible on the gauge.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object BaseGaugeScaleLabel {
-  @scala.inline
-  def apply(
-    customizeText: /* scaleValue */ AnonValueText => CallbackTo[String] = null,
-    font: Font = null,
-    format: format = null,
-    overlappingBehavior: hide | none = null,
-    useRangeColors: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): BaseGaugeScaleLabel = {
+  
+  inline def apply(): BaseGaugeScaleLabel = {
     val __obj = js.Dynamic.literal()
-    if (customizeText != null) __obj.updateDynamic("customizeText")(js.Any.fromFunction1((t0: /* scaleValue */ typingsJapgolly.devextreme.AnonValueText) => customizeText(t0).runNow()))
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (overlappingBehavior != null) __obj.updateDynamic("overlappingBehavior")(overlappingBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(useRangeColors)) __obj.updateDynamic("useRangeColors")(useRangeColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseGaugeScaleLabel]
   }
+  
+  extension [Self <: BaseGaugeScaleLabel](x: Self) {
+    
+    inline def setCustomizeText(value: /* scaleValue */ ValueText => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
+    
+    inline def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
+    
+    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatFunction1(value: js.Date | Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setOverlappingBehavior(value: LabelOverlap): Self = StObject.set(x, "overlappingBehavior", value.asInstanceOf[js.Any])
+    
+    inline def setOverlappingBehaviorUndefined: Self = StObject.set(x, "overlappingBehavior", js.undefined)
+    
+    inline def setUseRangeColors(value: Boolean): Self = StObject.set(x, "useRangeColors", value.asInstanceOf[js.Any])
+    
+    inline def setUseRangeColorsUndefined: Self = StObject.set(x, "useRangeColors", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

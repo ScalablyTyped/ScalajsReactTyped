@@ -1,54 +1,62 @@
 package typingsJapgolly.zoneJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zoneJsStrings {
-  @js.native
-  sealed trait canceling extends TaskState
   
   @js.native
-  sealed trait eventTask extends TaskType
+  sealed trait canceling
+    extends StObject
+       with TaskState
+  inline def canceling: canceling = "canceling".asInstanceOf[canceling]
   
   @js.native
-  sealed trait macroTask extends TaskType
+  sealed trait eventTask
+    extends StObject
+       with TaskType
+  inline def eventTask: eventTask = "eventTask".asInstanceOf[eventTask]
   
   @js.native
-  sealed trait microTask extends TaskType
+  sealed trait macroTask
+    extends StObject
+       with TaskType
+  inline def macroTask: macroTask = "macroTask".asInstanceOf[macroTask]
   
   @js.native
-  sealed trait notScheduled extends TaskState
+  sealed trait microTask
+    extends StObject
+       with TaskType
+  inline def microTask: microTask = "microTask".asInstanceOf[microTask]
   
   @js.native
-  sealed trait running extends TaskState
+  sealed trait notScheduled
+    extends StObject
+       with TaskState
+  inline def notScheduled: notScheduled = "notScheduled".asInstanceOf[notScheduled]
   
   @js.native
-  sealed trait scheduled extends TaskState
+  sealed trait running
+    extends StObject
+       with TaskState
+  inline def running: running = "running".asInstanceOf[running]
   
   @js.native
-  sealed trait scheduling extends TaskState
+  sealed trait scheduled
+    extends StObject
+       with TaskState
+  inline def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
   
   @js.native
-  sealed trait unknown extends TaskState
+  sealed trait scheduling
+    extends StObject
+       with TaskState
+  inline def scheduling: scheduling = "scheduling".asInstanceOf[scheduling]
   
-  @scala.inline
-  def canceling: canceling = "canceling".asInstanceOf[canceling]
-  @scala.inline
-  def eventTask: eventTask = "eventTask".asInstanceOf[eventTask]
-  @scala.inline
-  def macroTask: macroTask = "macroTask".asInstanceOf[macroTask]
-  @scala.inline
-  def microTask: microTask = "microTask".asInstanceOf[microTask]
-  @scala.inline
-  def notScheduled: notScheduled = "notScheduled".asInstanceOf[notScheduled]
-  @scala.inline
-  def running: running = "running".asInstanceOf[running]
-  @scala.inline
-  def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
-  @scala.inline
-  def scheduling: scheduling = "scheduling".asInstanceOf[scheduling]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  @js.native
+  sealed trait unknown
+    extends StObject
+       with TaskState
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
 }
-

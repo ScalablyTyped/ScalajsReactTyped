@@ -1,116 +1,97 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Sensors
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SensorType extends js.Object
-
+sealed trait SensorType extends StObject
 /** Indicates the type of sensor. */
 @JSGlobal("Windows.Devices.Sensors.SensorType")
 @js.native
-object SensorType extends js.Object {
+object SensorType extends StObject {
+  
   /** An Accelerometer . */
   @js.native
-  sealed trait accelerometer extends SensorType
+  sealed trait accelerometer
+    extends StObject
+       with SensorType
   
   /** An ActivitySensor . */
   @js.native
-  sealed trait activitySensor extends SensorType
+  sealed trait activitySensor
+    extends StObject
+       with SensorType
   
   /** A Barometer . */
   @js.native
-  sealed trait barometer extends SensorType
+  sealed trait barometer
+    extends StObject
+       with SensorType
   
   /** A Compass . */
   @js.native
-  sealed trait compass extends SensorType
+  sealed trait compass
+    extends StObject
+       with SensorType
   
   /** A custom sensor. */
   @js.native
-  sealed trait customSensor extends SensorType
+  sealed trait customSensor
+    extends StObject
+       with SensorType
   
   /** A Gyrometer . */
   @js.native
-  sealed trait gyroscope extends SensorType
+  sealed trait gyroscope
+    extends StObject
+       with SensorType
   
   /** An Inclinometer . */
   @js.native
-  sealed trait inclinometer extends SensorType
+  sealed trait inclinometer
+    extends StObject
+       with SensorType
   
   /** A LightSensor . */
   @js.native
-  sealed trait lightSensor extends SensorType
+  sealed trait lightSensor
+    extends StObject
+       with SensorType
   
   /** An OrientationSensor . */
   @js.native
-  sealed trait orientationSensor extends SensorType
+  sealed trait orientationSensor
+    extends StObject
+       with SensorType
   
   /** A Pedometer . */
   @js.native
-  sealed trait pedometer extends SensorType
+  sealed trait pedometer
+    extends StObject
+       with SensorType
   
   /** A ProximitySensor . */
   @js.native
-  sealed trait proximitySensor extends SensorType
+  sealed trait proximitySensor
+    extends StObject
+       with SensorType
   
   /** A relative Inclinometer . */
   @js.native
-  sealed trait relativeInclinometer extends SensorType
+  sealed trait relativeInclinometer
+    extends StObject
+       with SensorType
   
   /** A relative OrientationSensor . */
   @js.native
-  sealed trait relativeOrientationSensor extends SensorType
+  sealed trait relativeOrientationSensor
+    extends StObject
+       with SensorType
   
   /** A SimpleOrientationSensor . */
   @js.native
-  sealed trait simpleOrientationSensor extends SensorType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SensorType with Double] = js.native
-  /* 0 */ @js.native
-  object accelerometer extends TopLevel[accelerometer with Double]
-  
-  /* 1 */ @js.native
-  object activitySensor extends TopLevel[activitySensor with Double]
-  
-  /* 2 */ @js.native
-  object barometer extends TopLevel[barometer with Double]
-  
-  /* 3 */ @js.native
-  object compass extends TopLevel[compass with Double]
-  
-  /* 4 */ @js.native
-  object customSensor extends TopLevel[customSensor with Double]
-  
-  /* 5 */ @js.native
-  object gyroscope extends TopLevel[gyroscope with Double]
-  
-  /* 7 */ @js.native
-  object inclinometer extends TopLevel[inclinometer with Double]
-  
-  /* 8 */ @js.native
-  object lightSensor extends TopLevel[lightSensor with Double]
-  
-  /* 9 */ @js.native
-  object orientationSensor extends TopLevel[orientationSensor with Double]
-  
-  /* 10 */ @js.native
-  object pedometer extends TopLevel[pedometer with Double]
-  
-  /* 6 */ @js.native
-  object proximitySensor extends TopLevel[proximitySensor with Double]
-  
-  /* 11 */ @js.native
-  object relativeInclinometer extends TopLevel[relativeInclinometer with Double]
-  
-  /* 12 */ @js.native
-  object relativeOrientationSensor extends TopLevel[relativeOrientationSensor with Double]
-  
-  /* 13 */ @js.native
-  object simpleOrientationSensor extends TopLevel[simpleOrientationSensor with Double]
-  
+  sealed trait simpleOrientationSensor
+    extends StObject
+       with SensorType
 }
-

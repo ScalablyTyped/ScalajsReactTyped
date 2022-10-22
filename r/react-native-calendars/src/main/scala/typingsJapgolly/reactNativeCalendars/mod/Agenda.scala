@@ -1,12 +1,18 @@
 package typingsJapgolly.reactNativeCalendars.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-calendars", "Agenda")
 @js.native
-class Agenda[TItem] ()
-  extends Component[AgendaProps[TItem] with CalendarMarkingProps, js.Object, js.Any]
-
+open class Agenda[TItem] protected ()
+  extends Component[AgendaProps[TItem] & CalendarMarkingProps, js.Object, Any] {
+  def this(props: AgendaProps[TItem] & CalendarMarkingProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: AgendaProps[TItem] & CalendarMarkingProps, context: Any) = this()
+}

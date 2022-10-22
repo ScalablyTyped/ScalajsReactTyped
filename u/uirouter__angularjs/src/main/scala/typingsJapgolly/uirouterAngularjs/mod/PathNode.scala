@@ -1,27 +1,28 @@
 package typingsJapgolly.uirouterAngularjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "PathNode")
 @js.native
-class PathNode protected ()
+open class PathNode protected ()
   extends typingsJapgolly.uirouterCore.mod.PathNode {
   /** Creates a copy of a PathNode */
-  def this(node: typingsJapgolly.uirouterCore.pathNodeMod.PathNode) = this()
+  def this(node: typingsJapgolly.uirouterCore.libPathPathNodeMod.PathNode) = this()
   /** Creates a new (empty) PathNode for a State */
-  def this(state: typingsJapgolly.uirouterCore.stateObjectMod.StateObject) = this()
+  def this(state: typingsJapgolly.uirouterCore.libStateStateObjectMod.StateObject) = this()
 }
-
 /* static members */
-@JSImport("@uirouter/angularjs", "PathNode")
-@js.native
-object PathNode extends js.Object {
+object PathNode {
+  
+  @JSImport("@uirouter/angularjs", "PathNode")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns a clone of the PathNode
     * @deprecated use instance method `node.clone()`
     */
-  def clone(node: typingsJapgolly.uirouterCore.pathNodeMod.PathNode): typingsJapgolly.uirouterCore.pathNodeMod.PathNode = js.native
+  inline def clone(node: typingsJapgolly.uirouterCore.libPathPathNodeMod.PathNode): typingsJapgolly.uirouterCore.libPathPathNodeMod.PathNode = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(node.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.uirouterCore.libPathPathNodeMod.PathNode]
 }
-

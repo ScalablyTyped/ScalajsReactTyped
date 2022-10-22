@@ -1,70 +1,93 @@
 package typingsJapgolly.ssh2Streams.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SSH2StreamConfig extends js.Object {
+trait SSH2StreamConfig extends StObject {
+  
   /**
     * This option allows you to explicitly override the default transport layer algorithms used for the connection. Each value must be an array of valid algorithms for that category. The order of the algorithms in the arrays are important, with the most favorable being first.
     */
   var algorithms: js.UndefOr[Algorithms] = js.undefined
+  
   /**
     * A message that is sent to clients immediately upon connection, before handshaking begins.
     */
   var banner: js.UndefOr[String] = js.undefined
+  
   /**
     * Set this to a function that receives a single string argument to get detailed (local) debug information.
     */
-  var debug: js.UndefOr[js.Function1[/* information */ String, _]] = js.undefined
+  var debug: js.UndefOr[js.Function1[/* information */ String, Any]] = js.undefined
+  
   /**
     * This is the highWaterMark to use for the parser stream.
     * @default 32 * 1024
     */
   var highWaterMark: js.UndefOr[Double] = js.undefined
+  
   /**
     * If in server mode, an object keyed on host key format.
     */
   var hostKeys: js.UndefOr[HostKeys] = js.undefined
+  
   /**
     * A custom server software name/version identifier.
     * @default 'ssh2js' + moduleVersion + 'srv'
     */
   var ident: js.UndefOr[String] = js.undefined
+  
   /**
     * This is the maximum packet size that will be accepted. It should be 35000 bytes or larger to be compatible with other SSH2 implementations.
     * @default 35000
     */
   var maxPacketSize: js.UndefOr[Double] = js.undefined
+  
   /**
     * Set to true to create an instance in server mode.
     */
   var server: js.UndefOr[Boolean] = js.undefined
 }
-
 object SSH2StreamConfig {
-  @scala.inline
-  def apply(
-    algorithms: Algorithms = null,
-    banner: String = null,
-    debug: /* information */ String => CallbackTo[js.Any] = null,
-    highWaterMark: Int | Double = null,
-    hostKeys: HostKeys = null,
-    ident: String = null,
-    maxPacketSize: Int | Double = null,
-    server: js.UndefOr[Boolean] = js.undefined
-  ): SSH2StreamConfig = {
+  
+  inline def apply(): SSH2StreamConfig = {
     val __obj = js.Dynamic.literal()
-    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
-    if (banner != null) __obj.updateDynamic("banner")(banner.asInstanceOf[js.Any])
-    if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1((t0: /* information */ java.lang.String) => debug(t0).runNow()))
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (hostKeys != null) __obj.updateDynamic("hostKeys")(hostKeys.asInstanceOf[js.Any])
-    if (ident != null) __obj.updateDynamic("ident")(ident.asInstanceOf[js.Any])
-    if (maxPacketSize != null) __obj.updateDynamic("maxPacketSize")(maxPacketSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(server)) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[SSH2StreamConfig]
   }
+  
+  extension [Self <: SSH2StreamConfig](x: Self) {
+    
+    inline def setAlgorithms(value: Algorithms): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+    
+    inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+    
+    inline def setBanner(value: String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+    
+    inline def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
+    
+    inline def setDebug(value: /* information */ String => Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+    
+    inline def setHostKeys(value: HostKeys): Self = StObject.set(x, "hostKeys", value.asInstanceOf[js.Any])
+    
+    inline def setHostKeysUndefined: Self = StObject.set(x, "hostKeys", js.undefined)
+    
+    inline def setIdent(value: String): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
+    
+    inline def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
+    
+    inline def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxPacketSizeUndefined: Self = StObject.set(x, "maxPacketSize", js.undefined)
+    
+    inline def setServer(value: Boolean): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+  }
 }
-

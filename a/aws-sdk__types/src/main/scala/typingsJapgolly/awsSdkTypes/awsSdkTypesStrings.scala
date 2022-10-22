@@ -1,208 +1,164 @@
 package typingsJapgolly.awsSdkTypes
 
-import typingsJapgolly.awsSdkTypes.loggerMod.LogLevel
-import typingsJapgolly.awsSdkTypes.middlewareMod.Step
-import typingsJapgolly.awsSdkTypes.protocolMod.MemberLocation
-import typingsJapgolly.awsSdkTypes.protocolMod.SerializationType
-import typingsJapgolly.awsSdkTypes.protocolMod.SupportedProtocol
-import typingsJapgolly.awsSdkTypes.protocolMod.SupportedSignatureVersion
+import typingsJapgolly.awsSdkTypes.distTypesLoggerMod.LogLevel
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.Priority
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.Relation
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.Step
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsSdkTypesStrings {
-  @js.native
-  sealed trait ConfigurationDefinition extends js.Object
   
   @js.native
-  sealed trait Error extends js.Object
+  sealed trait after
+    extends StObject
+       with Relation
+  inline def after: after = "after".asInstanceOf[after]
   
   @js.native
-  sealed trait all extends LogLevel
+  sealed trait all
+    extends StObject
+       with LogLevel
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait ascii extends js.Object
+  sealed trait ascii extends StObject
+  inline def ascii: ascii = "ascii".asInstanceOf[ascii]
   
   @js.native
-  sealed trait blob extends SerializationType
+  sealed trait before
+    extends StObject
+       with Relation
+  inline def before: before = "before".asInstanceOf[before]
   
   @js.native
-  sealed trait boolean extends SerializationType
+  sealed trait binary extends StObject
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
-  sealed trait build extends Step
+  sealed trait boolean extends StObject
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait ec2 extends SupportedProtocol
+  sealed trait build
+    extends StObject
+       with Step
+  inline def build: build = "build".asInstanceOf[build]
   
   @js.native
-  sealed trait error_ extends LogLevel
+  sealed trait byte extends StObject
+  inline def byte: byte = "byte".asInstanceOf[byte]
   
   @js.native
-  sealed trait finalize extends Step
+  sealed trait client extends StObject
+  inline def client: client = "client".asInstanceOf[client]
   
   @js.native
-  sealed trait float extends SerializationType
+  sealed trait deserialize
+    extends StObject
+       with Step
+  inline def deserialize: deserialize = "deserialize".asInstanceOf[deserialize]
   
   @js.native
-  sealed trait header extends MemberLocation
+  sealed trait error
+    extends StObject
+       with LogLevel
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait headers extends MemberLocation
+  sealed trait finalizeRequest
+    extends StObject
+       with Step
+  inline def finalizeRequest: finalizeRequest = "finalizeRequest".asInstanceOf[finalizeRequest]
   
   @js.native
-  sealed trait info extends LogLevel
+  sealed trait high
+    extends StObject
+       with Priority
+  inline def high: high = "high".asInstanceOf[high]
   
   @js.native
-  sealed trait initialize extends Step
+  sealed trait info
+    extends StObject
+       with LogLevel
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait integer extends SerializationType
+  sealed trait initialize
+    extends StObject
+       with Step
+  inline def initialize: initialize = "initialize".asInstanceOf[initialize]
   
   @js.native
-  sealed trait json extends SupportedProtocol
+  sealed trait integer extends StObject
+  inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
-  sealed trait latin1 extends js.Object
+  sealed trait latin1 extends StObject
+  inline def latin1: latin1 = "latin1".asInstanceOf[latin1]
   
   @js.native
-  sealed trait list extends SerializationType
+  sealed trait log
+    extends StObject
+       with LogLevel
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
-  sealed trait log extends LogLevel
+  sealed trait long extends StObject
+  inline def long: long = "long".asInstanceOf[long]
   
   @js.native
-  sealed trait map extends SerializationType
+  sealed trait low
+    extends StObject
+       with Priority
+  inline def low: low = "low".asInstanceOf[low]
   
   @js.native
-  sealed trait none extends SupportedSignatureVersion
+  sealed trait normal
+    extends StObject
+       with Priority
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait off extends LogLevel
+  sealed trait off
+    extends StObject
+       with LogLevel
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait query extends SupportedProtocol
+  sealed trait serialize
+    extends StObject
+       with Step
+  inline def serialize: serialize = "serialize".asInstanceOf[serialize]
   
   @js.native
-  sealed trait querystring extends MemberLocation
+  sealed trait server extends StObject
+  inline def server: server = "server".asInstanceOf[server]
   
   @js.native
-  sealed trait `rest-json` extends SupportedProtocol
+  sealed trait short extends StObject
+  inline def short: short = "short".asInstanceOf[short]
   
   @js.native
-  sealed trait `rest-xml` extends SupportedProtocol
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait s3 extends SupportedSignatureVersion
+  sealed trait timestamp extends StObject
+  inline def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
   
   @js.native
-  sealed trait s3v4 extends SupportedSignatureVersion
+  sealed trait utf8 extends StObject
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
   
   @js.native
-  sealed trait serialize extends Step
+  sealed trait uuid extends StObject
+  inline def uuid: uuid = "uuid".asInstanceOf[uuid]
   
   @js.native
-  sealed trait statusCode extends MemberLocation
-  
-  @js.native
-  sealed trait string extends SerializationType
-  
-  @js.native
-  sealed trait structure extends SerializationType
-  
-  @js.native
-  sealed trait timestamp extends SerializationType
-  
-  @js.native
-  sealed trait uri extends MemberLocation
-  
-  @js.native
-  sealed trait utf8 extends js.Object
-  
-  @js.native
-  sealed trait v4 extends SupportedSignatureVersion
-  
-  @js.native
-  sealed trait `v4-unsigned-body` extends SupportedSignatureVersion
-  
-  @js.native
-  sealed trait warn extends LogLevel
-  
-  @scala.inline
-  def ConfigurationDefinition: ConfigurationDefinition = "ConfigurationDefinition".asInstanceOf[ConfigurationDefinition]
-  @scala.inline
-  def Error: Error = "Error".asInstanceOf[Error]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def ascii: ascii = "ascii".asInstanceOf[ascii]
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def build: build = "build".asInstanceOf[build]
-  @scala.inline
-  def ec2: ec2 = "ec2".asInstanceOf[ec2]
-  @scala.inline
-  def error_ : error_ = "error".asInstanceOf[error_]
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
-  @scala.inline
-  def header: header = "header".asInstanceOf[header]
-  @scala.inline
-  def headers: headers = "headers".asInstanceOf[headers]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def initialize: initialize = "initialize".asInstanceOf[initialize]
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def latin1: latin1 = "latin1".asInstanceOf[latin1]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
-  @scala.inline
-  def querystring: querystring = "querystring".asInstanceOf[querystring]
-  @scala.inline
-  def `rest-json`: `rest-json` = "rest-json".asInstanceOf[`rest-json`]
-  @scala.inline
-  def `rest-xml`: `rest-xml` = "rest-xml".asInstanceOf[`rest-xml`]
-  @scala.inline
-  def s3: s3 = "s3".asInstanceOf[s3]
-  @scala.inline
-  def s3v4: s3v4 = "s3v4".asInstanceOf[s3v4]
-  @scala.inline
-  def serialize: serialize = "serialize".asInstanceOf[serialize]
-  @scala.inline
-  def statusCode: statusCode = "statusCode".asInstanceOf[statusCode]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def structure: structure = "structure".asInstanceOf[structure]
-  @scala.inline
-  def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
-  @scala.inline
-  def uri: uri = "uri".asInstanceOf[uri]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
-  @scala.inline
-  def v4: v4 = "v4".asInstanceOf[v4]
-  @scala.inline
-  def `v4-unsigned-body`: `v4-unsigned-body` = "v4-unsigned-body".asInstanceOf[`v4-unsigned-body`]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  sealed trait warn
+    extends StObject
+       with LogLevel
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }
-

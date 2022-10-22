@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-mentions
 
-Typings are for version 1.0.1
+Typings are for version 1.10.0
 
 ## Library description:
 React Mentions
@@ -10,10 +10,10 @@ React Mentions
 | ------------------ | :-------------: |
 | Full name          | rc-mentions |
 | Keywords           | react, react-component, react-mentions, mentions |
-| # releases         | 20 |
-| # dependents       | 40 |
-| # downloads        | 4324449 |
-| # stars            | 0 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 3237735.3333333335 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/mentions)

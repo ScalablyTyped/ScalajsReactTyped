@@ -1,52 +1,38 @@
 package typingsJapgolly.primereact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.primereact.AnonValueString
-import typingsJapgolly.primereact.dataViewMod.DataViewLayoutOptionsProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.primereact.dataviewDataviewMod.DataViewLayoutOptionsChangeParams
+import typingsJapgolly.primereact.dataviewDataviewMod.DataViewLayoutOptionsProps
+import typingsJapgolly.primereact.dataviewDataviewMod.DataViewLayoutType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataViewLayoutOptions {
-  def apply(
-    onChange: AnonValueString => Callback,
-    className: String = null,
-    id: String = null,
-    layout: String = null,
-    style: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    DataViewLayoutOptionsProps, 
-    typingsJapgolly.primereact.primereactDataviewMod.DataViewLayoutOptions, 
-    Unit, 
-    DataViewLayoutOptionsProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.primereact.AnonValueString) => onChange(t0).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.primereact.dataViewMod.DataViewLayoutOptionsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.primereact.primereactDataviewMod.DataViewLayoutOptions](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.primereact.dataViewMod.DataViewLayoutOptionsProps])(children: _*)
+  inline def apply(onChange: DataViewLayoutOptionsChangeParams => Callback): Builder = {
+    val __props = js.Dynamic.literal(onChange = js.Any.fromFunction1((t0: DataViewLayoutOptionsChangeParams) => onChange(t0).runNow()))
+    new Builder(js.Array(this.component, __props.asInstanceOf[DataViewLayoutOptionsProps]))
   }
-  @JSImport("primereact/dataview", "DataViewLayoutOptions")
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("primereact", "DataViewLayoutOptions")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.primereact.mod.DataViewLayoutOptions] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def layout(value: DataViewLayoutType): this.type = set("layout", value.asInstanceOf[js.Any])
+    
+    inline def style(value: js.Object): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: DataViewLayoutOptionsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

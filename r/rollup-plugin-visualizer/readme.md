@@ -1,19 +1,19 @@
 
 # Scala.js typings for rollup-plugin-visualizer
 
-Typings are for version 2.6
+Typings are for version 4.2
 
 ## Library description:
-[![NPM Version](https://img.shields.io/npm/v/rollup-plugin-visualizer.svg)](https://npmjs.org/package/rollup-plugin-visualizer) [![Travis CI build status](https://img.shields.io/travis/com/btd/rollup-plugin-visualizer.svg)](https://travis-ci.com/btd/rollu
+[![NPM Version](https://img.shields.io/npm/v/rollup-plugin-visualizer.svg)](https://npmjs.org/package/rollup-plugin-visualizer) [![Node.js CI](https://github.com/btd/rollup-plugin-visualizer/actions/workflows/node.js.yml/badge.svg)](https://github.com/btd
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-visualizer |
-| Keywords           | - |
-| # releases         | 51 |
-| # dependents       | 20 |
-| # downloads        | 950927 |
-| # stars            | 1 |
+| Keywords           | rollup-plugin, visualizer, network, treemap, sunburst, diagram |
+| # releases         | 30 |
+| # dependents       | 0.0 |
+| # downloads        | 1122096.6666666667 |
+| # stars            | 946.0 |
 
 ## Links
 - [Homepage](https://github.com/btd/rollup-plugin-visualizer)

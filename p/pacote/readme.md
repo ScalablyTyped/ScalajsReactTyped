@@ -1,7 +1,7 @@
 
 # Scala.js typings for pacote
 
-Typings are for version 9.5
+Typings are for version 11.1
 
 ## Library description:
 JavaScript package downloader
@@ -10,10 +10,10 @@ JavaScript package downloader
 | ------------------ | :-------------: |
 | Full name          | pacote |
 | Keywords           | packages, npm, git |
-| # releases         | 56 |
-| # dependents       | 118 |
-| # downloads        | 64017019 |
-| # stars            | 6 |
+| # releases         | 44 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0658453666666668E7 |
+| # stars            | 210.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/pacote#readme)

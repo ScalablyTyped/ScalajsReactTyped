@@ -1,27 +1,24 @@
 package typingsJapgolly.oracleOraclejet.ojdataproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FetchByOffsetParameters[D] extends FetchListParameters[D] {
+trait FetchByOffsetParameters[D]
+  extends StObject
+     with FetchListParameters[D] {
+  
   var offset: Double
 }
-
 object FetchByOffsetParameters {
-  @scala.inline
-  def apply[D](
-    offset: Double,
-    size: Double,
-    attributes: js.Array[String | FetchAttribute] = null,
-    filterCriterion: FilterOperator[D] = null,
-    sortCriteria: js.Array[SortCriterion[D]] = null
-  ): FetchByOffsetParameters[D] = {
+  
+  inline def apply[D](offset: Double, size: Double): FetchByOffsetParameters[D] = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (filterCriterion != null) __obj.updateDynamic("filterCriterion")(filterCriterion.asInstanceOf[js.Any])
-    if (sortCriteria != null) __obj.updateDynamic("sortCriteria")(sortCriteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchByOffsetParameters[D]]
   }
+  
+  extension [Self <: FetchByOffsetParameters[?], D](x: Self & FetchByOffsetParameters[D]) {
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+  }
 }
-

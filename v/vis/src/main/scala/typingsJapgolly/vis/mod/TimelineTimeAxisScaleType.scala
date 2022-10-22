@@ -1,8 +1,8 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.vis.visStrings.millisecond
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.vis.visStrings.month
   - typingsJapgolly.vis.visStrings.year
 */
-trait TimelineTimeAxisScaleType extends js.Object
-
+trait TimelineTimeAxisScaleType extends StObject
 object TimelineTimeAxisScaleType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def day: typingsJapgolly.vis.visStrings.day = this.cast("day")
-  @scala.inline
-  def hour: typingsJapgolly.vis.visStrings.hour = this.cast("hour")
-  @scala.inline
-  def millisecond: typingsJapgolly.vis.visStrings.millisecond = this.cast("millisecond")
-  @scala.inline
-  def minute: typingsJapgolly.vis.visStrings.minute = this.cast("minute")
-  @scala.inline
-  def month: typingsJapgolly.vis.visStrings.month = this.cast("month")
-  @scala.inline
-  def second: typingsJapgolly.vis.visStrings.second = this.cast("second")
-  @scala.inline
-  def week: typingsJapgolly.vis.visStrings.week = this.cast("week")
-  @scala.inline
-  def weekday: typingsJapgolly.vis.visStrings.weekday = this.cast("weekday")
-  @scala.inline
-  def year: typingsJapgolly.vis.visStrings.year = this.cast("year")
+  
+  inline def day: typingsJapgolly.vis.visStrings.day = "day".asInstanceOf[typingsJapgolly.vis.visStrings.day]
+  
+  inline def hour: typingsJapgolly.vis.visStrings.hour = "hour".asInstanceOf[typingsJapgolly.vis.visStrings.hour]
+  
+  inline def millisecond: typingsJapgolly.vis.visStrings.millisecond = "millisecond".asInstanceOf[typingsJapgolly.vis.visStrings.millisecond]
+  
+  inline def minute: typingsJapgolly.vis.visStrings.minute = "minute".asInstanceOf[typingsJapgolly.vis.visStrings.minute]
+  
+  inline def month: typingsJapgolly.vis.visStrings.month = "month".asInstanceOf[typingsJapgolly.vis.visStrings.month]
+  
+  inline def second: typingsJapgolly.vis.visStrings.second = "second".asInstanceOf[typingsJapgolly.vis.visStrings.second]
+  
+  inline def week: typingsJapgolly.vis.visStrings.week = "week".asInstanceOf[typingsJapgolly.vis.visStrings.week]
+  
+  inline def weekday: typingsJapgolly.vis.visStrings.weekday = "weekday".asInstanceOf[typingsJapgolly.vis.visStrings.weekday]
+  
+  inline def year: typingsJapgolly.vis.visStrings.year = "year".asInstanceOf[typingsJapgolly.vis.visStrings.year]
 }
-

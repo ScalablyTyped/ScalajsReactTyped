@@ -1,69 +1,69 @@
 package typingsJapgolly.protonNative.mod
 
-import japgolly.scalajs.react.raw.React.Element
 import japgolly.scalajs.react.vdom.VdomElement
-import typingsJapgolly.protonNative.AnonH
-import typingsJapgolly.protonNative.AnonX
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GroupProps
-  extends GridChildrenProps
+  extends StObject
+     with GridChildrenProps
      with Label
      with Stretchy {
+  
   /**
     * Group can only have one child. To have more than one child, use boxes.
     */
   var children: js.UndefOr[Element] = js.undefined
+  
   /**
     * Whether the Group is enabled.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Whether there is a margin inside the group.
     */
   var margined: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The name of the group.
     */
   var title: js.UndefOr[String] = js.undefined
+  
   /**
     * Whether the Grid can be seen.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object GroupProps {
-  @scala.inline
-  def apply(
-    align: AnonH = null,
-    children: VdomElement = null,
-    column: Int | Double = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    expand: AnonH = null,
-    label: String = null,
-    margined: js.UndefOr[Boolean] = js.undefined,
-    row: Int | Double = null,
-    span: AnonX = null,
-    stretchy: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): GroupProps = {
+  
+  inline def apply(): GroupProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.rawElement.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(margined)) __obj.updateDynamic("margined")(margined.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupProps]
   }
+  
+  extension [Self <: GroupProps](x: Self) {
+    
+    inline def setChildren(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setMargined(value: Boolean): Self = StObject.set(x, "margined", value.asInstanceOf[js.Any])
+    
+    inline def setMarginedUndefined: Self = StObject.set(x, "margined", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

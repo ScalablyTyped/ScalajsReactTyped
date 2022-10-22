@@ -1,23 +1,32 @@
 package typingsJapgolly.yandexMaps.mod.control
 
-import typingsJapgolly.yandexMaps.AnonAdjustMapMargin
-import typingsJapgolly.yandexMaps.AnonExpanded
+import typingsJapgolly.yandexMaps.anon.AdjustMapMargin
+import typingsJapgolly.yandexMaps.anon.Expanded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IRouteButtonParameters extends js.Object {
-  var options: js.UndefOr[AnonAdjustMapMargin] = js.undefined
-  var state: js.UndefOr[AnonExpanded] = js.undefined
+trait IRouteButtonParameters extends StObject {
+  
+  var options: js.UndefOr[AdjustMapMargin] = js.undefined
+  
+  var state: js.UndefOr[Expanded] = js.undefined
 }
-
 object IRouteButtonParameters {
-  @scala.inline
-  def apply(options: AnonAdjustMapMargin = null, state: AnonExpanded = null): IRouteButtonParameters = {
+  
+  inline def apply(): IRouteButtonParameters = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRouteButtonParameters]
   }
+  
+  extension [Self <: IRouteButtonParameters](x: Self) {
+    
+    inline def setOptions(value: AdjustMapMargin): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setState(value: Expanded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+  }
 }
-

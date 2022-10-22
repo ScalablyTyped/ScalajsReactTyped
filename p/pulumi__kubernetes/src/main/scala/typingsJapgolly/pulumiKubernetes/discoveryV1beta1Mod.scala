@@ -1,98 +1,143 @@
 package typingsJapgolly.pulumiKubernetes
 
+import typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceListMod.EndpointSliceListArgs
+import typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceMod.EndpointSliceArgs
+import typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSlicePatchMod.EndpointSlicePatchArgs
 import typingsJapgolly.pulumiPulumi.outputMod.Input
 import typingsJapgolly.pulumiPulumi.resourceMod.CustomResourceOptions
 import typingsJapgolly.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/discovery/v1beta1", JSImport.Namespace)
-@js.native
-object discoveryV1beta1Mod extends js.Object {
-  @js.native
-  class EndpointSlice protected ()
-    extends typingsJapgolly.pulumiKubernetes.endpointSliceMod.EndpointSlice {
-    /**
-      * Create a discovery.v1beta1.EndpointSlice resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.discovery.v1beta1.EndpointSlice) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.discovery.v1beta1.EndpointSlice,
-      opts: CustomResourceOptions
-    ) = this()
-  }
+object discoveryV1beta1Mod {
   
-  @js.native
-  class EndpointSliceList protected ()
-    extends typingsJapgolly.pulumiKubernetes.endpointSliceListMod.EndpointSliceList {
+  object EndpointSlice {
+    
+    @JSImport("@pulumi/kubernetes/discovery/v1beta1", "EndpointSlice")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * Create a discovery.v1beta1.EndpointSliceList resource with the given unique name, arguments, and options.
+      * Get an existing EndpointSlice resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
       *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.discovery.v1beta1.EndpointSliceList) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.discovery.v1beta1.EndpointSliceList,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  /* static members */
-  @js.native
-  object EndpointSlice extends js.Object {
-    /**
-      * Get the state of an existing `EndpointSlice` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
-      *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
-      */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.endpointSliceMod.EndpointSlice = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.endpointSliceMod.EndpointSlice = js.native
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceMod.EndpointSlice = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceMod.EndpointSlice]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceMod.EndpointSlice = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceMod.EndpointSlice]
+    
     /**
       * Returns true if the given object is an instance of EndpointSlice.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/EndpointSlice.EndpointSlice */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSlice.EndpointSlice */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSlice.EndpointSlice */ Boolean]
+  }
+  type EndpointSlice = typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceMod.EndpointSlice
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/discovery/v1beta1", "EndpointSlice")
+  @js.native
+  open class EndpointSliceCls protected ()
+    extends typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceMod.EndpointSlice {
+    /**
+      * Create a EndpointSlice resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: EndpointSliceArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: EndpointSliceArgs, opts: CustomResourceOptions) = this()
   }
   
-  /* static members */
-  @js.native
-  object EndpointSliceList extends js.Object {
+  object EndpointSliceList {
+    
+    @JSImport("@pulumi/kubernetes/discovery/v1beta1", "EndpointSliceList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * Get the state of an existing `EndpointSliceList` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Get an existing EndpointSliceList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.endpointSliceListMod.EndpointSliceList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.endpointSliceListMod.EndpointSliceList = js.native
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceListMod.EndpointSliceList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceListMod.EndpointSliceList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceListMod.EndpointSliceList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceListMod.EndpointSliceList]
+    
     /**
       * Returns true if the given object is an instance of EndpointSliceList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/EndpointSliceList.EndpointSliceList */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSliceList.EndpointSliceList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSliceList.EndpointSliceList */ Boolean]
+  }
+  type EndpointSliceList = typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceListMod.EndpointSliceList
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/discovery/v1beta1", "EndpointSliceList")
+  @js.native
+  open class EndpointSliceListCls protected ()
+    extends typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSliceListMod.EndpointSliceList {
+    /**
+      * Create a EndpointSliceList resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: EndpointSliceListArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: EndpointSliceListArgs, opts: CustomResourceOptions) = this()
   }
   
+  object EndpointSlicePatch {
+    
+    @JSImport("@pulumi/kubernetes/discovery/v1beta1", "EndpointSlicePatch")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing EndpointSlicePatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSlicePatchMod.EndpointSlicePatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSlicePatchMod.EndpointSlicePatch]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSlicePatchMod.EndpointSlicePatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSlicePatchMod.EndpointSlicePatch]
+    
+    /**
+      * Returns true if the given object is an instance of EndpointSlicePatch.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSlicePatch.EndpointSlicePatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/discovery/v1beta1/endpointSlicePatch.EndpointSlicePatch */ Boolean]
+  }
+  type EndpointSlicePatch = typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSlicePatchMod.EndpointSlicePatch
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/discovery/v1beta1", "EndpointSlicePatch")
+  @js.native
+  open class EndpointSlicePatchCls protected ()
+    extends typingsJapgolly.pulumiKubernetes.discoveryV1beta1EndpointSlicePatchMod.EndpointSlicePatch {
+    /**
+      * Create a EndpointSlicePatch resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: EndpointSlicePatchArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: EndpointSlicePatchArgs, opts: CustomResourceOptions) = this()
+  }
 }
-

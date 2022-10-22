@@ -1,23 +1,36 @@
 package typingsJapgolly.artyomJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SayCallbacksObject extends js.Object {
+trait SayCallbacksObject extends StObject {
+  
   var lang: js.UndefOr[String] = js.undefined
+  
   var onEnd: js.UndefOr[js.Function] = js.undefined
+  
   var onStart: js.UndefOr[js.Function] = js.undefined
 }
-
 object SayCallbacksObject {
-  @scala.inline
-  def apply(lang: String = null, onEnd: js.Function = null, onStart: js.Function = null): SayCallbacksObject = {
+  
+  inline def apply(): SayCallbacksObject = {
     val __obj = js.Dynamic.literal()
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd.asInstanceOf[js.Any])
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[SayCallbacksObject]
   }
+  
+  extension [Self <: SayCallbacksObject](x: Self) {
+    
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    
+    inline def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
+    
+    inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+    
+    inline def setOnStart(value: js.Function): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+    
+    inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+  }
 }
-

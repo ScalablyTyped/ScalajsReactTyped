@@ -1,35 +1,38 @@
 package typingsJapgolly.postmanCollection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HeaderDefinition extends PropertyDefinition {
+trait HeaderDefinition
+  extends StObject
+     with PropertyDefinition {
+  
   var key: js.UndefOr[String] = js.undefined
+  
   var system: js.UndefOr[Boolean] = js.undefined
+  
   var value: js.UndefOr[String] = js.undefined
 }
-
 object HeaderDefinition {
-  @scala.inline
-  def apply(
-    description: String | DescriptionDefinition = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    key: String = null,
-    name: String = null,
-    system: js.UndefOr[Boolean] = js.undefined,
-    value: String = null
-  ): HeaderDefinition = {
+  
+  inline def apply(): HeaderDefinition = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(system)) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderDefinition]
   }
+  
+  extension [Self <: HeaderDefinition](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setSystem(value: Boolean): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    
+    inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

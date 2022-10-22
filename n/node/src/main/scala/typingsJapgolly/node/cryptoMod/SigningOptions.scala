@@ -1,24 +1,39 @@
 package typingsJapgolly.node.cryptoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SigningOptions extends js.Object {
+trait SigningOptions extends StObject {
+  
+  var dsaEncoding: js.UndefOr[DSAEncoding] = js.undefined
+  
   /**
     * @See crypto.constants.RSA_PKCS1_PADDING
     */
   var padding: js.UndefOr[Double] = js.undefined
+  
   var saltLength: js.UndefOr[Double] = js.undefined
 }
-
 object SigningOptions {
-  @scala.inline
-  def apply(padding: Int | Double = null, saltLength: Int | Double = null): SigningOptions = {
+  
+  inline def apply(): SigningOptions = {
     val __obj = js.Dynamic.literal()
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (saltLength != null) __obj.updateDynamic("saltLength")(saltLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[SigningOptions]
   }
+  
+  extension [Self <: SigningOptions](x: Self) {
+    
+    inline def setDsaEncoding(value: DSAEncoding): Self = StObject.set(x, "dsaEncoding", value.asInstanceOf[js.Any])
+    
+    inline def setDsaEncodingUndefined: Self = StObject.set(x, "dsaEncoding", js.undefined)
+    
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setSaltLength(value: Double): Self = StObject.set(x, "saltLength", value.asInstanceOf[js.Any])
+    
+    inline def setSaltLengthUndefined: Self = StObject.set(x, "saltLength", js.undefined)
+  }
 }
-

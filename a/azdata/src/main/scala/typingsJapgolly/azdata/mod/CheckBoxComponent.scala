@@ -2,20 +2,37 @@ package typingsJapgolly.azdata.mod
 
 import typingsJapgolly.vscode.mod.Disposable
 import typingsJapgolly.vscode.mod.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.azdata.mod.ComponentProperties because Already inherited
-- typingsJapgolly.azdata.mod.CheckBoxProperties because var conflicts: CSSStyles, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined checked, label */ @js.native
-trait CheckBoxComponent extends Component {
+- typingsJapgolly.azdata.mod.CheckBoxProperties because var conflicts: CSSStyles, ariaHidden, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined checked, label, required */ @js.native
+trait CheckBoxComponent
+  extends StObject
+     with Component {
+  
+  /**
+    * Whether the checkbox is checked.
+    */
   var checked: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * The label to display next to the checkbox.
+    */
   var label: js.UndefOr[String] = js.native
+  
+  def onChanged(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
+  def onChanged(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native
+  def onChanged(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onChanged(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   @JSName("onChanged")
-  var onChanged_Original: Event[_] = js.native
-  def onChanged(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
-  def onChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
-  def onChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  var onChanged_Original: Event[Any] = js.native
+  
+  /**
+    * Whether the component is marked with the 'required' property - making
+    * it required to be checked for component validation.
+    */
+  var required: js.UndefOr[Boolean] = js.native
 }
-

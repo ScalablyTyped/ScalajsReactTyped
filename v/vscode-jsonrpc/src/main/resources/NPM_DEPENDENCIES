@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vscode-jsonrpc" : "4.0.0"
+      "vscode-jsonrpc" : "8.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "vscode-jsonrpc" : "4.0.0"
+      "vscode-jsonrpc" : "8.0.2"
     }
   ],
   "compile-devDependencies" : [

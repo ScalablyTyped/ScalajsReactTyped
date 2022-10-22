@@ -1,42 +1,19 @@
 package typingsJapgolly.appframework
 
-import org.scalajs.dom.raw.XMLHttpRequest
-import typingsJapgolly.std.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.XMLHttpRequest
+import typingsJapgolly.appframework.anon.Android
+import typingsJapgolly.appframework.anon.CssPrefix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait appFrameworkStatic extends js.Object {
-  /* AJAX settings */
-  var ajaxSettings: appFrameworkAjaxSettings = js.native
-  var feat: AnonCssPrefix = js.native
-  /**
-    * Prototype for afm object.  Also extens $.fn
-    */
-  var fn: js.Object = js.native
-  /**
-    * Helper function to parse the user agent.  Sets the following
-    * .os.webkit
-    * .os.android
-    * .os.ipad
-    * .os.iphone
-    * .os.webos
-    * .os.touchpad
-    * .os.blackberry
-    * .os.opera
-    * .os.fennec
-    * .os.ie
-    * .os.ieTouch
-    * .os.supportsTouch
-    * .os.playbook
-    * .feat.nativetouchScroll
-    * @api private
-    */
-  var os: AnonAndroid = js.native
+trait appFrameworkStatic extends StObject {
+  
   def apply(collection: appFrameworkCollection): appFrameworkCollection = js.native
   def apply(element: HTMLElement): appFrameworkCollection = js.native
-  def apply(`object`: js.Any): appFrameworkCollection = js.native
+  def apply(`object`: Any): appFrameworkCollection = js.native
   /**
     * This is the internal appframework object that gets extended and added on to it
     * This is also the start of our query selector engine
@@ -44,7 +21,8 @@ trait appFrameworkStatic extends js.Object {
     * @param {String|Element|Object} [context]
     */
   def apply(selector: String): appFrameworkCollection = js.native
-  def apply(selector: String, context: js.Any): appFrameworkCollection = js.native
+  def apply(selector: String, context: Any): appFrameworkCollection = js.native
+  
   /**
     * Creates a custom event to be used internally.
     * @param {String} type
@@ -52,7 +30,8 @@ trait appFrameworkStatic extends js.Object {
     * @return {event} a custom event that can then be dispatched
     * @title $.Event(type,props);
     */
-  def Event(`type`: String, props: js.Any): js.Any = js.native
+  def Event(`type`: String, props: Any): Any = js.native
+  
   /**
     * Execute an Ajax call with the given options
     * options.type - Type of request
@@ -79,6 +58,10 @@ trait appFrameworkStatic extends js.Object {
     * @title $.ajax(options)
     */
   def ajax(options: appFrameworkAjaxSettings): XMLHttpRequest = js.native
+  
+  /* AJAX settings */
+  var ajaxSettings: appFrameworkAjaxSettings = js.native
+  
   /**
     * This adds a command to execute in the JS stack, but is faster then setTimeout
     ```
@@ -89,8 +72,10 @@ trait appFrameworkStatic extends js.Object {
     * @param {Array} arguments
     */
   def asap(callback: js.Function): Unit = js.native
-  def asap(callback: js.Function, context: js.Any): Unit = js.native
-  def asap(callback: js.Function, context: js.Any, args: js.Array[_]): Unit = js.native
+  def asap(callback: js.Function, context: Any): Unit = js.native
+  def asap(callback: js.Function, context: Any, args: js.Array[Any]): Unit = js.native
+  def asap(callback: js.Function, context: Unit, args: js.Array[Any]): Unit = js.native
+  
   /* The following are for events on objects */
   /**
     * Bind an event to an object instead of a DOM Node
@@ -102,7 +87,8 @@ trait appFrameworkStatic extends js.Object {
     * @param {Function} function to execute
     * @title $.bind(object,event,function);
     */
-  def bind(`object`: js.Any, event: String, fn: js.Function): Unit = js.native
+  def bind(`object`: Any, event: String, fn: js.Function): Unit = js.native
+  
   /**
     * Function to clean up node content to prevent memory leaks
     ```
@@ -113,9 +99,11 @@ trait appFrameworkStatic extends js.Object {
     * @param {bool} Kill nodes
     * @title $.cleanUpContent(node,itself,kill)
     */
-  def cleanUpContent(node: org.scalajs.dom.raw.HTMLElement): Unit = js.native
-  def cleanUpContent(node: org.scalajs.dom.raw.HTMLElement, itself: Boolean): Unit = js.native
-  def cleanUpContent(node: org.scalajs.dom.raw.HTMLElement, itself: Boolean, kill: Boolean): Unit = js.native
+  def cleanUpContent(node: HTMLElement): Unit = js.native
+  def cleanUpContent(node: HTMLElement, itself: Boolean): Unit = js.native
+  def cleanUpContent(node: HTMLElement, itself: Boolean, kill: Boolean): Unit = js.native
+  def cleanUpContent(node: HTMLElement, itself: Unit, kill: Boolean): Unit = js.native
+  
   /**
     * $.create - a faster alertnative to $("<div id='main'>this is some text</div>");
     ```
@@ -128,8 +116,8 @@ trait appFrameworkStatic extends js.Object {
     * @title $.create(type,[params])
     */
   def create(`type`: String): appFrameworkCollection = js.native
-  def create(`type`: String, params: js.Any): appFrameworkCollection = js.native
-  def each(collection: js.Any, fn: js.Function2[/* key */ String, /* value */ js.Any, _]): Unit = js.native
+  def create(`type`: String, params: Any): appFrameworkCollection = js.native
+  
   /**
     * Iterates through elements and executes a callback.  Returns if false
     ```
@@ -140,7 +128,9 @@ trait appFrameworkStatic extends js.Object {
     * @return {Array} elements
     * @title $.each(elements,callback)
     */
-  def each(collection: js.Array[_], fn: js.Function2[/* index */ Double, /* item */ js.Any, _]): Unit = js.native
+  def each(collection: js.Array[Any], fn: js.Function2[/* index */ Double, /* item */ Any, Any]): Unit = js.native
+  def each(collection: Any, fn: js.Function2[/* key */ String, /* value */ Any, Any]): Unit = js.native
+  
   /**
     * Extends an object with additional arguments
     ```
@@ -152,7 +142,15 @@ trait appFrameworkStatic extends js.Object {
     * @return {Object} [target]
     * @title $.extend(target,{params})
     */
-  def extend(target: js.Any, sources: js.Any*): js.Any = js.native
+  def extend(target: Any, sources: Any*): Any = js.native
+  
+  var feat: CssPrefix = js.native
+  
+  /**
+    * Prototype for afm object.  Also extens $.fn
+    */
+  var fn: js.Object = js.native
+  
   /**
     * Shorthand call to an Ajax GET request
     ```
@@ -165,12 +163,13 @@ trait appFrameworkStatic extends js.Object {
   def get(
     url: String,
     fn: js.Function3[
-      /* data */ js.Any, 
+      /* data */ Any, 
       /* status */ js.UndefOr[String], 
       /* xhr */ js.UndefOr[XMLHttpRequest], 
       Unit
     ]
   ): XMLHttpRequest = js.native
+  
   def getCssMatrix(elem: appFrameworkCollection): appFrameworkCssMatrix = js.native
   /**
     * Gets the css matrix, or creates a fake one
@@ -180,10 +179,11 @@ trait appFrameworkStatic extends js.Object {
     @returns matrix with postion
     */
   def getCssMatrix(node: HTMLElement): appFrameworkCssMatrix = js.native
+  
   def getJSON(
     url: String,
-    data: js.Any,
-    fn: js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
+    data: Any,
+    fn: js.Function3[/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
   ): XMLHttpRequest = js.native
   /**
     * Shorthand call to an Ajax request that expects a JSON response
@@ -198,12 +198,13 @@ trait appFrameworkStatic extends js.Object {
   def getJSON(
     url: String,
     fn: js.Function3[
-      /* data */ js.Any, 
+      /* data */ Any, 
       /* status */ js.UndefOr[String], 
-      /* xhr */ js.UndefOr[typingsJapgolly.std.XMLHttpRequest], 
+      /* xhr */ js.UndefOr[XMLHttpRequest], 
       Unit
     ]
   ): XMLHttpRequest = js.native
+  
   /**
     * Checks to see if the parameter is a $afm object
     ```
@@ -215,7 +216,8 @@ trait appFrameworkStatic extends js.Object {
     * @title $.is$(param)
     */
   @JSName("is$")
-  def is$(obj: js.Any): Boolean = js.native
+  def is$(obj: Any): Boolean = js.native
+  
   /**
     * Checks to see if the parameter is an array
     ```
@@ -227,7 +229,8 @@ trait appFrameworkStatic extends js.Object {
     * @example $.isArray([1]);
     * @title $.isArray(param)
     */
-  def isArray(`object`: js.Any): Boolean = js.native
+  def isArray(`object`: Any): Boolean = js.native
+  
   /**
     * Checks to see if the parameter is a function
     ```
@@ -238,7 +241,8 @@ trait appFrameworkStatic extends js.Object {
     * @return {Boolean}
     * @title $.isFunction(param)
     */
-  def isFunction(`object`: js.Any): Boolean = js.native
+  def isFunction(`object`: Any): Boolean = js.native
+  
   /**
     * Checks to see if the parameter is a object
     ```
@@ -249,7 +253,8 @@ trait appFrameworkStatic extends js.Object {
     * @return {Boolean}
     * @title $.isObject(param)
     */
-  def isObject(`object`: js.Any): Boolean = js.native
+  def isObject(`object`: Any): Boolean = js.native
+  
   /**
     * Execute a jsonP call, allowing cross domain scripting
     * options.url - URL to call
@@ -262,6 +267,7 @@ trait appFrameworkStatic extends js.Object {
     * @title $.jsonP(options)
     */
   def jsonP(options: appFrameworkAjaxSettings): js.Object = js.native
+  
   /**
     * Map takes in elements and executes a callback function on each and returns a collection
     ```
@@ -272,7 +278,28 @@ trait appFrameworkStatic extends js.Object {
     * @return {Object} appframework object with elements in it
     * @title $.map(elements,callback)
     */
-  def map(collection: js.Array[_], fn: js.Function2[/* item */ js.Any, /* index */ Double, _]): js.Array[_] = js.native
+  def map(collection: js.Array[Any], fn: js.Function2[/* item */ Any, /* index */ Double, Any]): js.Array[Any] = js.native
+  
+  /**
+    * Helper function to parse the user agent.  Sets the following
+    * .os.webkit
+    * .os.android
+    * .os.ipad
+    * .os.iphone
+    * .os.webos
+    * .os.touchpad
+    * .os.blackberry
+    * .os.opera
+    * .os.fennec
+    * .os.ie
+    * .os.ieTouch
+    * .os.supportsTouch
+    * .os.playbook
+    * .feat.nativetouchScroll
+    * @api private
+    */
+  var os: Android = js.native
+  
   /**
     * Converts an object into a key/value par with an optional prefix.  Used for converting objects to a query string
     ```
@@ -287,8 +314,9 @@ trait appFrameworkStatic extends js.Object {
     * @return {String} Key/value pair representation
     * @title $.param(object,[prefix];
     */
-  def param(`object`: js.Any): String = js.native
-  def param(`object`: js.Any, prefix: String): String = js.native
+  def param(`object`: Any): String = js.native
+  def param(`object`: Any, prefix: String): String = js.native
+  
   /**
     * this function executes javascript in HTML.
     ```
@@ -299,6 +327,7 @@ trait appFrameworkStatic extends js.Object {
     */
   def parseJS(content: String): Unit = js.native
   def parseJS(content: HTMLElement): Unit = js.native
+  
   /**
     * Used for backwards compatibility.  Uses native JSON.parse function
     ```
@@ -308,7 +337,8 @@ trait appFrameworkStatic extends js.Object {
     * @return {Object}
     * @title $.parseJSON(string)
     */
-  def parseJSON(str: String): js.Any = js.native
+  def parseJSON(str: String): Any = js.native
+  
   /**
     * Helper function to convert XML into  the DOM node representation
     ```
@@ -318,24 +348,25 @@ trait appFrameworkStatic extends js.Object {
     * @return {Object} DOM nodes
     * @title $.parseXML(string)
     */
-  def parseXML(str: String): js.Any = js.native
+  def parseXML(str: String): Any = js.native
+  
   def post(
     url: String,
-    data: js.Any,
+    data: Any,
     fn: js.Function3[
-      /* data */ js.Any, 
+      /* data */ Any, 
       /* status */ js.UndefOr[String], 
-      /* xhr */ js.UndefOr[typingsJapgolly.std.XMLHttpRequest], 
+      /* xhr */ js.UndefOr[XMLHttpRequest], 
       Unit
     ]
   ): XMLHttpRequest = js.native
   def post(
     url: String,
-    data: js.Any,
+    data: Any,
     fn: js.Function3[
-      /* data */ js.Any, 
+      /* data */ Any, 
       /* status */ js.UndefOr[String], 
-      /* xhr */ js.UndefOr[typingsJapgolly.std.XMLHttpRequest], 
+      /* xhr */ js.UndefOr[XMLHttpRequest], 
       Unit
     ],
     dataType: String
@@ -354,22 +385,23 @@ trait appFrameworkStatic extends js.Object {
   def post(
     url: String,
     fn: js.Function3[
-      /* data */ js.Any, 
+      /* data */ Any, 
       /* status */ js.UndefOr[String], 
-      /* xhr */ js.UndefOr[typingsJapgolly.std.XMLHttpRequest], 
+      /* xhr */ js.UndefOr[XMLHttpRequest], 
       Unit
     ]
   ): XMLHttpRequest = js.native
   def post(
     url: String,
     fn: js.Function3[
-      /* data */ js.Any, 
+      /* data */ Any, 
       /* status */ js.UndefOr[String], 
-      /* xhr */ js.UndefOr[typingsJapgolly.std.XMLHttpRequest], 
+      /* xhr */ js.UndefOr[XMLHttpRequest], 
       Unit
     ],
     dataType: String
   ): XMLHttpRequest = js.native
+  
   /**
     * Creates a proxy function so you can change the 'this' context in the function
     * Update: now also allows multiple argument call or for you to pass your own arguments
@@ -385,7 +417,8 @@ trait appFrameworkStatic extends js.Object {
     * @param {Object} Context
     * @title $.proxy(callback,context);
     */
-  def proxy(callback: js.Function, context: js.Any): Unit = js.native
+  def proxy(callback: js.Function, context: Any): Unit = js.native
+  
   /**
     * $.query  - a faster alertnative to $("div");
     ```
@@ -397,7 +430,8 @@ trait appFrameworkStatic extends js.Object {
     * @title $.query(selector,[context])
     */
   def query(selector: String): appFrameworkCollection = js.native
-  def query(selector: String, context: js.Any): appFrameworkCollection = js.native
+  def query(selector: String, context: Any): appFrameworkCollection = js.native
+  
   /**
     * Trigger an event to an object instead of a DOM Node
     ```
@@ -408,8 +442,9 @@ trait appFrameworkStatic extends js.Object {
     * @param {Array} arguments
     * @title $.trigger(object,event,argments);
     */
-  def trigger(`object`: js.Any, event: String): Unit = js.native
-  def trigger(`object`: js.Any, event: String, args: js.Array[_]): Unit = js.native
+  def trigger(`object`: Any, event: String): Unit = js.native
+  def trigger(`object`: Any, event: String, args: js.Array[Any]): Unit = js.native
+  
   /**
     * Unbind an event to an object instead of a DOM Node
     ```
@@ -420,7 +455,8 @@ trait appFrameworkStatic extends js.Object {
     * @param {Function} function to execute
     * @title $.unbind(object,event,function);
     */
-  def unbind(`object`: js.Any, event: String, fn: js.Function): Unit = js.native
+  def unbind(`object`: Any, event: String, fn: js.Function): Unit = js.native
+  
   /**
     * Utility function to create a psuedo GUID
     ```
@@ -430,4 +466,3 @@ trait appFrameworkStatic extends js.Object {
     */
   def uuid(): String = js.native
 }
-

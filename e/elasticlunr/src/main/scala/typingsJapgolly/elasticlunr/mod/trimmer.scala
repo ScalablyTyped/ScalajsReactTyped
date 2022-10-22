@@ -1,13 +1,18 @@
 package typingsJapgolly.elasticlunr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("elasticlunr", "trimmer")
-@js.native
-object trimmer extends js.Object {
+object trimmer {
+  
+  inline def apply(token: String): String = ^.asInstanceOf[js.Dynamic].apply(token.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("elasticlunr", "trimmer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("elasticlunr", "trimmer.label")
+  @js.native
   val label: String = js.native
-  def apply(token: String): String = js.native
 }
-

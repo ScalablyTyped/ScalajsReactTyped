@@ -1,35 +1,42 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CardType extends js.Object
-
+sealed trait CardType extends StObject
 @JSImport("azdata", "CardType")
 @js.native
-object CardType extends js.Object {
-  @js.native
-  sealed trait Details extends CardType
-  
-  @js.native
-  sealed trait ListItem extends CardType
-  
-  @js.native
-  sealed trait VerticalButton extends CardType
+object CardType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[CardType with String] = js.native
-  /* "Details" */ @js.native
-  object Details extends TopLevel[Details with String]
+  def apply(value: String): js.UndefOr[CardType & String] = js.native
   
-  /* "ListItem" */ @js.native
-  object ListItem extends TopLevel[ListItem with String]
+  @js.native
+  sealed trait Details
+    extends StObject
+       with CardType
+  /* "Details" */ val Details: typingsJapgolly.azdata.mod.CardType.Details & String = js.native
   
-  /* "VerticalButton" */ @js.native
-  object VerticalButton extends TopLevel[VerticalButton with String]
+  /**
+    * Card with the icon as a background image
+    */
+  @js.native
+  sealed trait Image
+    extends StObject
+       with CardType
+  /* "Image" */ val Image: typingsJapgolly.azdata.mod.CardType.Image & String = js.native
   
+  @js.native
+  sealed trait ListItem
+    extends StObject
+       with CardType
+  /* "ListItem" */ val ListItem: typingsJapgolly.azdata.mod.CardType.ListItem & String = js.native
+  
+  @js.native
+  sealed trait VerticalButton
+    extends StObject
+       with CardType
+  /* "VerticalButton" */ val VerticalButton: typingsJapgolly.azdata.mod.CardType.VerticalButton & String = js.native
 }
-

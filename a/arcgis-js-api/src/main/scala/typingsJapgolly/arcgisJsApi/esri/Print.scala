@@ -1,45 +1,29 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * The print module provides an `executePrint` method that generates a printer-ready version of the map using an [Export Web Map Task](https://developers.arcgis.com/rest/services-reference/export-web-map-task.htm) available with ArGIS Server 10.1 and later.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-print.html)
+  */
 @js.native
-trait Print extends Widget_ {
+trait print extends StObject {
+  
   /**
-    * The widget's default CSS icon class.
+    * Sends a request to the print service to create a printable static image of the map using the options specified in the [PrintParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#iconClass)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-print.html#execute)
     */
-  var iconClass: String = js.native
+  def execute(url: String, params: PrintParameters): js.Promise[PrintResponse] = js.native
+  def execute(url: String, params: PrintParameters, requestOptions: Any): js.Promise[PrintResponse] = js.native
+  
   /**
-    * The URL of the REST endpoint of the Export Web Map Task.
+    * Request the mode for the print request service.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#printServiceUrl)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-print.html#getMode)
     */
-  var printServiceUrl: String = js.native
-  /**
-    * Defines the layout template options used by the [Print](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html) widget to generate the print page.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#templateOptions)
-    */
-  var templateOptions: TemplateOptions = js.native
-  /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html). Set this to link the widget to a specific view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#view)
-    */
-  var view: MapView = js.native
-  /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [PrintViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html) class to access all properties and methods on the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#viewModel)
-    */
-  var viewModel: PrintViewModel = js.native
+  def getMode(url: String): String = js.native
 }
-
-@JSGlobal("__esri.Print")
-@js.native
-object Print extends TopLevel[PrintConstructor]
-

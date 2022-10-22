@@ -1,19 +1,24 @@
 package typingsJapgolly.wicgMediasession
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Window extends js.Object {
+trait Window extends StObject {
+  
   var MediaSession: js.UndefOr[typingsJapgolly.wicgMediasession.MediaSession] = js.undefined
 }
-
 object Window {
-  @scala.inline
-  def apply(MediaSession: MediaSession = null): Window = {
+  
+  inline def apply(): Window = {
     val __obj = js.Dynamic.literal()
-    if (MediaSession != null) __obj.updateDynamic("MediaSession")(MediaSession.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
+  
+  extension [Self <: Window](x: Self) {
+    
+    inline def setMediaSession(value: MediaSession): Self = StObject.set(x, "MediaSession", value.asInstanceOf[js.Any])
+    
+    inline def setMediaSessionUndefined: Self = StObject.set(x, "MediaSession", js.undefined)
+  }
 }
-

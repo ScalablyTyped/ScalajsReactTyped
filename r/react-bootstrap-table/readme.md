@@ -11,14 +11,11 @@ It's a react table for bootstrap
 | Full name          | react-bootstrap-table |
 | Keywords           | react, bootstrap, table, grid, react-component |
 | # releases         | 1 |
-| # dependents       | 57 |
-| # downloads        | 1554885 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 117949.33333333333 |
+| # stars            | 2247.0 |
 
 ## Links
-- [Homepage](https://github.com/AllenFang/react-bootstrap-table#readme)
-- [Bugs](https://github.com/AllenFang/react-bootstrap-table/issues)
-- [Repository](https://github.com/AllenFang/react-bootstrap-table)
 - [Npm](https://www.npmjs.com/package/react-bootstrap-table)
     
 

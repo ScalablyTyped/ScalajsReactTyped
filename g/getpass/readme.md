@@ -11,9 +11,9 @@ getpass for node.js
 | Full name          | getpass |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 53 |
-| # downloads        | 525538964 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8.243435333333333E7 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/arekinath/node-getpass#readme)

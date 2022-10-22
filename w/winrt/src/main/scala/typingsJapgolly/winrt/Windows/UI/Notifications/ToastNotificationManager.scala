@@ -1,20 +1,7 @@
 package typingsJapgolly.winrt.Windows.UI.Notifications
 
-import typingsJapgolly.winrt.Windows.Data.Xml.Dom.XmlDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Notifications.ToastNotificationManager")
-@js.native
-class ToastNotificationManager () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.UI.Notifications.ToastNotificationManager")
-@js.native
-object ToastNotificationManager extends js.Object {
-  def createToastNotifier(): ToastNotifier = js.native
-  def createToastNotifier(applicationId: String): ToastNotifier = js.native
-  def getTemplateContent(`type`: ToastTemplateType): XmlDocument = js.native
-}
-
+trait ToastNotificationManager extends StObject

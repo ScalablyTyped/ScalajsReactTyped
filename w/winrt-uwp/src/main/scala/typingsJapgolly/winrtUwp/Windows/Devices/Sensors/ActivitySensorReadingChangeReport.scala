@@ -1,14 +1,24 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents data for the sensor trigger. */
-@JSGlobal("Windows.Devices.Sensors.ActivitySensorReadingChangeReport")
-@js.native
-abstract class ActivitySensorReadingChangeReport () extends js.Object {
+trait ActivitySensorReadingChangeReport extends StObject {
+  
   /** Gets the reading of the sensor when it's triggered. */
-  var reading: ActivitySensorReading = js.native
+  var reading: ActivitySensorReading
 }
-
+object ActivitySensorReadingChangeReport {
+  
+  inline def apply(reading: ActivitySensorReading): ActivitySensorReadingChangeReport = {
+    val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActivitySensorReadingChangeReport]
+  }
+  
+  extension [Self <: ActivitySensorReadingChangeReport](x: Self) {
+    
+    inline def setReading(value: ActivitySensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+  }
+}

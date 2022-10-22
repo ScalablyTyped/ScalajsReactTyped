@@ -1,24 +1,20 @@
 package typingsJapgolly.hapiHapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.hapiHapi.hapiHapiStrings.data
   - typingsJapgolly.hapiHapi.hapiHapiStrings.stream
   - typingsJapgolly.hapiHapi.hapiHapiStrings.file
 */
-trait PayloadOutput extends js.Object
-
+trait PayloadOutput extends StObject
 object PayloadOutput {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def data: typingsJapgolly.hapiHapi.hapiHapiStrings.data = this.cast("data")
-  @scala.inline
-  def file: typingsJapgolly.hapiHapi.hapiHapiStrings.file = this.cast("file")
-  @scala.inline
-  def stream: typingsJapgolly.hapiHapi.hapiHapiStrings.stream = this.cast("stream")
+  
+  inline def data: typingsJapgolly.hapiHapi.hapiHapiStrings.data = "data".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.data]
+  
+  inline def file: typingsJapgolly.hapiHapi.hapiHapiStrings.file = "file".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.file]
+  
+  inline def stream: typingsJapgolly.hapiHapi.hapiHapiStrings.stream = "stream".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.stream]
 }
-

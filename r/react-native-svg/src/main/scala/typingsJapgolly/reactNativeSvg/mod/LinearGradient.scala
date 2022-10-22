@@ -1,22 +1,28 @@
 package typingsJapgolly.reactNativeSvg.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
+import typingsJapgolly.reactNativeSvg.anon.X2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg", "LinearGradient")
 @js.native
-class LinearGradient protected ()
-  extends Component[LinearGradientProps, ComponentState, js.Any] {
-  def this(props: LinearGradientProps) = this()
-  def this(props: LinearGradientProps, context: js.Any) = this()
+open class LinearGradient ()
+  extends typingsJapgolly.reactNativeSvg.libTypescriptReactNativeSVGMod.LinearGradient
+/* static members */
+object LinearGradient {
+  
+  @JSImport("react-native-svg", "LinearGradient")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native-svg", "LinearGradient.defaultProps")
+  @js.native
+  def defaultProps: X2 = js.native
+  inline def defaultProps_=(x: X2): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-native-svg", "LinearGradient.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }
-
-@JSImport("react-native-svg", "LinearGradient")
-@js.native
-object LinearGradient extends TopLevel[ComponentClass[LinearGradientProps, ComponentState]]
-

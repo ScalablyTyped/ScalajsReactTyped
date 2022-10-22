@@ -1,29 +1,21 @@
 package typingsJapgolly.kendoUi.kendo.mobile.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.mobile.ui.ActionSheet")
 @js.native
-class ActionSheet protected ()
-  extends typingsJapgolly.kendoUi.kendo.ui.Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: ActionSheetOptions) = this()
+trait ActionSheet
+  extends StObject
+     with typingsJapgolly.kendoUi.kendo.ui.Widget {
+  
+  def close(): Unit = js.native
+  
+  def open(target: JQuery, context: Any): Unit = js.native
+  
   @JSName("options")
   var options_ActionSheet: ActionSheetOptions = js.native
+  
   var wrapper: JQuery = js.native
-  def close(): Unit = js.native
-  def open(target: JQuery, context: js.Any): Unit = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.mobile.ui.ActionSheet")
-@js.native
-object ActionSheet extends js.Object {
-  var fn: ActionSheet = js.native
-  def extend(proto: js.Object): ActionSheet = js.native
-}
-

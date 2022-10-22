@@ -1,20 +1,23 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Events
 
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Script.AuthMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AddonOnInstall extends js.Object {
+trait AddonOnInstall extends StObject {
+  
   var authMode: AuthMode
 }
-
 object AddonOnInstall {
-  @scala.inline
-  def apply(authMode: AuthMode): AddonOnInstall = {
-    val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any])
   
+  inline def apply(authMode: AuthMode): AddonOnInstall = {
+    val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddonOnInstall]
   }
+  
+  extension [Self <: AddonOnInstall](x: Self) {
+    
+    inline def setAuthMode(value: AuthMode): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
+  }
 }
-

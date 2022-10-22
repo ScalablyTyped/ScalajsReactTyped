@@ -1,30 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridFilterable extends js.Object {
+trait GridFilterable extends StObject {
+  
   var extra: js.UndefOr[Boolean] = js.undefined
+  
   var messages: js.UndefOr[GridFilterableMessages] = js.undefined
+  
   var mode: js.UndefOr[String] = js.undefined
+  
   var operators: js.UndefOr[GridFilterableOperators] = js.undefined
 }
-
 object GridFilterable {
-  @scala.inline
-  def apply(
-    extra: js.UndefOr[Boolean] = js.undefined,
-    messages: GridFilterableMessages = null,
-    mode: String = null,
-    operators: GridFilterableOperators = null
-  ): GridFilterable = {
+  
+  inline def apply(): GridFilterable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (operators != null) __obj.updateDynamic("operators")(operators.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFilterable]
   }
+  
+  extension [Self <: GridFilterable](x: Self) {
+    
+    inline def setExtra(value: Boolean): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+    
+    inline def setMessages(value: GridFilterableMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setOperators(value: GridFilterableOperators): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
+    
+    inline def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
+  }
 }
-

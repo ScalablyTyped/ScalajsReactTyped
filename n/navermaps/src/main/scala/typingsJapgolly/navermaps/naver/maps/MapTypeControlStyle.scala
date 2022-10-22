@@ -1,32 +1,25 @@
 package typingsJapgolly.navermaps.naver.maps
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MapTypeControlStyle extends js.Object
-
+sealed trait MapTypeControlStyle extends StObject
 /**
   * Enums
   */
 @JSGlobal("naver.maps.MapTypeControlStyle")
 @js.native
-object MapTypeControlStyle extends js.Object {
-  @js.native
-  sealed trait BUTTON extends MapTypeControlStyle
+object MapTypeControlStyle extends StObject {
   
   @js.native
-  sealed trait DROPDOWN extends MapTypeControlStyle
+  sealed trait BUTTON
+    extends StObject
+       with MapTypeControlStyle
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MapTypeControlStyle with Double] = js.native
-  /* 0 */ @js.native
-  object BUTTON extends TopLevel[BUTTON with Double]
-  
-  /* 1 */ @js.native
-  object DROPDOWN extends TopLevel[DROPDOWN with Double]
-  
+  @js.native
+  sealed trait DROPDOWN
+    extends StObject
+       with MapTypeControlStyle
 }
-

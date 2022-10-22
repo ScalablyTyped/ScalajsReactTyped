@@ -1,91 +1,90 @@
 package typingsJapgolly.grammarkdown.mod
 
-import typingsJapgolly.grammarkdown.tokensMod.LookaheadOperatorKind
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.CloseBracketToken
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.LookaheadKeyword
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
+import typingsJapgolly.grammarkdown.distTokensMod.LookaheadOperatorKind
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.CloseBracketToken
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.LookaheadKeyword
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.OpenBracketToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "LookaheadAssertion")
 @js.native
-class LookaheadAssertion protected ()
-  extends typingsJapgolly.grammarkdown.nodesMod.LookaheadAssertion {
+open class LookaheadAssertion protected ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.LookaheadAssertion {
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lookaheadKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadKeyword]
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lookaheadKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadKeyword]
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lookaheadKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadKeyword],
-    operatorToken: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadOperatorKind]
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lookaheadKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadKeyword],
+    operatorToken: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadOperatorKind]
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lookaheadKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadKeyword],
-    operatorToken: js.UndefOr[scala.Nothing],
-    lookahead: typingsJapgolly.grammarkdown.nodesMod.SymbolSet
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lookaheadKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadKeyword],
+    operatorToken: Unit,
+    lookahead: typingsJapgolly.grammarkdown.distNodesMod.SymbolSet
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lookaheadKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadKeyword],
-    operatorToken: js.UndefOr[scala.Nothing],
-    lookahead: typingsJapgolly.grammarkdown.nodesMod.SymbolSpan
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lookaheadKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadKeyword],
+    operatorToken: Unit,
+    lookahead: typingsJapgolly.grammarkdown.distNodesMod.SymbolSpan
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lookaheadKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadKeyword],
-    operatorToken: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadOperatorKind],
-    lookahead: typingsJapgolly.grammarkdown.nodesMod.SymbolSet
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lookaheadKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadKeyword],
+    operatorToken: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadOperatorKind],
+    lookahead: typingsJapgolly.grammarkdown.distNodesMod.SymbolSet
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lookaheadKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadKeyword],
-    operatorToken: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadOperatorKind],
-    lookahead: typingsJapgolly.grammarkdown.nodesMod.SymbolSpan
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lookaheadKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadKeyword],
+    operatorToken: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadOperatorKind],
+    lookahead: typingsJapgolly.grammarkdown.distNodesMod.SymbolSpan
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lookaheadKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadKeyword],
-    operatorToken: js.UndefOr[scala.Nothing],
-    lookahead: js.UndefOr[scala.Nothing],
-    closeBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[CloseBracketToken]
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lookaheadKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadKeyword],
+    operatorToken: Unit,
+    lookahead: Unit,
+    closeBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lookaheadKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadKeyword],
-    operatorToken: js.UndefOr[scala.Nothing],
-    lookahead: typingsJapgolly.grammarkdown.nodesMod.SymbolSet,
-    closeBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[CloseBracketToken]
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lookaheadKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadKeyword],
+    operatorToken: Unit,
+    lookahead: typingsJapgolly.grammarkdown.distNodesMod.SymbolSet,
+    closeBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lookaheadKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadKeyword],
-    operatorToken: js.UndefOr[scala.Nothing],
-    lookahead: typingsJapgolly.grammarkdown.nodesMod.SymbolSpan,
-    closeBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[CloseBracketToken]
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lookaheadKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadKeyword],
+    operatorToken: Unit,
+    lookahead: typingsJapgolly.grammarkdown.distNodesMod.SymbolSpan,
+    closeBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lookaheadKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadKeyword],
-    operatorToken: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadOperatorKind],
-    lookahead: js.UndefOr[scala.Nothing],
-    closeBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[CloseBracketToken]
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lookaheadKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadKeyword],
+    operatorToken: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadOperatorKind],
+    lookahead: Unit,
+    closeBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lookaheadKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadKeyword],
-    operatorToken: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadOperatorKind],
-    lookahead: typingsJapgolly.grammarkdown.nodesMod.SymbolSet,
-    closeBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[CloseBracketToken]
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lookaheadKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadKeyword],
+    operatorToken: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadOperatorKind],
+    lookahead: typingsJapgolly.grammarkdown.distNodesMod.SymbolSet,
+    closeBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lookaheadKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadKeyword],
-    operatorToken: typingsJapgolly.grammarkdown.nodesMod.Token[LookaheadOperatorKind],
-    lookahead: typingsJapgolly.grammarkdown.nodesMod.SymbolSpan,
-    closeBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[CloseBracketToken]
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lookaheadKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadKeyword],
+    operatorToken: typingsJapgolly.grammarkdown.distNodesMod.Token[LookaheadOperatorKind],
+    lookahead: typingsJapgolly.grammarkdown.distNodesMod.SymbolSpan,
+    closeBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
 }
-

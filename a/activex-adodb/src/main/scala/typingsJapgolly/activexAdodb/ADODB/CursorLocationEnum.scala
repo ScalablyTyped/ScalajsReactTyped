@@ -1,29 +1,25 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`3`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`3`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`3`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`2`
 */
-trait CursorLocationEnum extends js.Object
-
+trait CursorLocationEnum extends StObject
 object CursorLocationEnum {
-  @scala.inline
-  def adUseClient: `3` = this.cast(3)
-  @scala.inline
-  def adUseClientBatch: `3` = this.cast(3)
-  @scala.inline
-  def adUseNone: `1` = this.cast(1)
-  @scala.inline
-  def adUseServer: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adUseClient: `3` = 3.asInstanceOf[`3`]
+  
+  inline def adUseClientBatch: `3` = 3.asInstanceOf[`3`]
+  
+  inline def adUseNone: `1` = 1.asInstanceOf[`1`]
+  
+  inline def adUseServer: `2` = 2.asInstanceOf[`2`]
 }
-

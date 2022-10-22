@@ -1,88 +1,112 @@
 package typingsJapgolly.iterall
 
+import typingsJapgolly.iterall.anon.Length
 import typingsJapgolly.std.AsyncIterable
 import typingsJapgolly.std.AsyncIterator
-import typingsJapgolly.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("iterall", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @JSName("$$asyncIterator")
-  var asyncIterator: js.Symbol = js.native
-  @JSName("$$iterator")
-  var iterator: js.Symbol = js.native
-  def createAsyncIterator(collection: js.Any): Unit | (AsyncIterator[_, _, js.UndefOr[scala.Nothing]]) = js.native
-  def createAsyncIterator(collection: AnonLength): AsyncIterator[_, _, js.UndefOr[scala.Nothing]] = js.native
-  def createAsyncIterator[TValue](collection: AsyncIterable[TValue]): AsyncIterator[TValue, _, js.UndefOr[scala.Nothing]] = js.native
-  def createAsyncIterator[TValue](collection: Iterable[js.Promise[TValue] | TValue]): AsyncIterator[TValue, _, js.UndefOr[scala.Nothing]] = js.native
-  def createIterator(collection: js.Any): Unit | js.Iterator[_] = js.native
-  def createIterator(collection: AnonLength): js.Iterator[_] = js.native
-  def createIterator[TValue](collection: Iterable[TValue]): js.Iterator[TValue] = js.native
-  def forAwaitEach[TCollection /* <: AnonLength */](
+object mod {
+  
+  @JSImport("iterall", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("iterall", "$$asyncIterator")
+  @js.native
+  val asyncIterator: js.Symbol = js.native
+  
+  inline def createAsyncIterator(collection: Any): Unit | (AsyncIterator[Any, Any, Unit]) = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsyncIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[Unit | (AsyncIterator[Any, Any, Unit])]
+  inline def createAsyncIterator(collection: Length): AsyncIterator[Any, Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsyncIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[Any, Any, Unit]]
+  inline def createAsyncIterator[TValue](collection: js.Iterable[js.Promise[TValue] | TValue]): AsyncIterator[TValue, Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsyncIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[TValue, Any, Unit]]
+  inline def createAsyncIterator[TValue](collection: AsyncIterable[TValue]): AsyncIterator[TValue, Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsyncIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[TValue, Any, Unit]]
+  
+  inline def createIterator(collection: Any): Unit | js.Iterator[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[Unit | js.Iterator[Any]]
+  inline def createIterator(collection: Length): js.Iterator[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[js.Iterator[Any]]
+  inline def createIterator[TValue](collection: js.Iterable[TValue]): js.Iterator[TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createIterator")(collection.asInstanceOf[js.Any]).asInstanceOf[js.Iterator[TValue]]
+  
+  inline def forAwaitEach[TCollection /* <: AsyncIterable[Any] */](
     collection: TCollection,
-    callbackFn: js.Function3[/* value */ js.Any, /* index */ Double, /* collection */ TCollection, _]
-  ): js.Promise[Unit] = js.native
-  def forAwaitEach[TCollection /* <: AnonLength */](
+    callbackFn: js.Function3[
+      (/* value */ Any) | (/* value */ ResolvedOf[TCollection]), 
+      /* index */ Double, 
+      /* collection */ TCollection, 
+      Any
+    ]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAwaitEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def forAwaitEach[TCollection /* <: AsyncIterable[Any] */](
     collection: TCollection,
-    callbackFn: js.Function3[/* value */ js.Any, /* index */ Double, /* collection */ TCollection, _],
-    thisArg: js.Any
-  ): js.Promise[Unit] = js.native
-  @JSName("forAwaitEach")
-  def forAwaitEach_TValueTCollection_AsyncIterableTValue[TValue, TCollection /* <: AsyncIterable[TValue] */](
+    callbackFn: js.Function3[
+      (/* value */ Any) | (/* value */ ResolvedOf[TCollection]), 
+      /* index */ Double, 
+      /* collection */ TCollection, 
+      Any
+    ],
+    thisArg: Any
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAwaitEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def forEach[TCollection /* <: js.Iterable[Any] */](
     collection: TCollection,
-    callbackFn: js.Function3[/* value */ TValue, /* index */ Double, /* collection */ TCollection, _]
-  ): js.Promise[Unit] = js.native
-  @JSName("forAwaitEach")
-  def forAwaitEach_TValueTCollection_AsyncIterableTValue[TValue, TCollection /* <: AsyncIterable[TValue] */](
+    callbackFn: js.Function3[
+      (/* value */ Any) | (/* value */ ValueOf[TCollection]), 
+      /* index */ Double, 
+      /* collection */ TCollection, 
+      Any
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEach[TCollection /* <: js.Iterable[Any] */](
     collection: TCollection,
-    callbackFn: js.Function3[/* value */ TValue, /* index */ Double, /* collection */ TCollection, _],
-    thisArg: js.Any
-  ): js.Promise[Unit] = js.native
-  @JSName("forAwaitEach")
-  def forAwaitEach_TValueTCollection_IterableUnionPromiseTValueTValue[TValue, TCollection /* <: js.Iterable[js.Promise[TValue] | TValue] */](
-    collection: TCollection,
-    callbackFn: js.Function3[/* value */ TValue, /* index */ Double, /* collection */ TCollection, _]
-  ): js.Promise[Unit] = js.native
-  @JSName("forAwaitEach")
-  def forAwaitEach_TValueTCollection_IterableUnionPromiseTValueTValue[TValue, TCollection /* <: js.Iterable[js.Promise[TValue] | TValue] */](
-    collection: TCollection,
-    callbackFn: js.Function3[/* value */ TValue, /* index */ Double, /* collection */ TCollection, _],
-    thisArg: js.Any
-  ): js.Promise[Unit] = js.native
-  def forEach[TCollection /* <: AnonLength */](
-    collection: TCollection,
-    callbackFn: js.Function3[/* value */ js.Any, /* index */ Double, /* collection */ TCollection, _]
-  ): Unit = js.native
-  def forEach[TCollection /* <: AnonLength */](
-    collection: TCollection,
-    callbackFn: js.Function3[/* value */ js.Any, /* index */ Double, /* collection */ TCollection, _],
-    thisArg: js.Any
-  ): Unit = js.native
-  @JSName("forEach")
-  def forEach_TValueTCollection_IterableTValue[TValue, TCollection /* <: js.Iterable[TValue] */](
-    collection: TCollection,
-    callbackFn: js.Function3[/* value */ TValue, /* index */ Double, /* collection */ TCollection, _]
-  ): Unit = js.native
-  @JSName("forEach")
-  def forEach_TValueTCollection_IterableTValue[TValue, TCollection /* <: js.Iterable[TValue] */](
-    collection: TCollection,
-    callbackFn: js.Function3[/* value */ TValue, /* index */ Double, /* collection */ TCollection, _],
-    thisArg: js.Any
-  ): Unit = js.native
-  def getAsyncIterator(asyncIterable: js.Any): Unit | (AsyncIterator[_, _, js.UndefOr[scala.Nothing]]) = js.native
-  def getAsyncIterator[TValue](asyncIterable: AsyncIterable[TValue]): AsyncIterator[TValue, _, js.UndefOr[scala.Nothing]] = js.native
-  def getAsyncIteratorMethod(asyncIterable: js.Any): Unit | (js.Function0[AsyncIterator[_, _, js.UndefOr[scala.Nothing]]]) = js.native
-  def getAsyncIteratorMethod[TValue](asyncIterable: AsyncIterable[TValue]): js.Function0[AsyncIterator[TValue, _, js.UndefOr[scala.Nothing]]] = js.native
-  def getIterator(iterable: js.Any): Unit | js.Iterator[_] = js.native
-  def getIterator[TValue](iterable: Iterable[TValue]): js.Iterator[TValue] = js.native
-  def getIteratorMethod(iterable: js.Any): Unit | js.Function0[js.Iterator[_]] = js.native
-  def getIteratorMethod[TValue](iterable: Iterable[TValue]): js.Function0[js.Iterator[TValue]] = js.native
-  def isArrayLike(obj: js.Any): /* is iterall.AnonLength */ Boolean = js.native
-  def isAsyncIterable(obj: js.Any): /* is std.AsyncIterable<any> */ Boolean = js.native
-  def isCollection(obj: js.Any): Boolean = js.native
-  def isIterable(obj: js.Any): /* is std.Iterable<any> */ Boolean = js.native
+    callbackFn: js.Function3[
+      (/* value */ Any) | (/* value */ ValueOf[TCollection]), 
+      /* index */ Double, 
+      /* collection */ TCollection, 
+      Any
+    ],
+    thisArg: Any
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def getAsyncIterator(asyncIterable: Any): Unit | (AsyncIterator[Any, Any, Unit]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsyncIterator")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[Unit | (AsyncIterator[Any, Any, Unit])]
+  inline def getAsyncIterator[TValue](asyncIterable: AsyncIterable[TValue]): AsyncIterator[TValue, Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsyncIterator")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[TValue, Any, Unit]]
+  
+  inline def getAsyncIteratorMethod(asyncIterable: Any): Unit | (js.Function0[AsyncIterator[Any, Any, Unit]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsyncIteratorMethod")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[Unit | (js.Function0[AsyncIterator[Any, Any, Unit]])]
+  inline def getAsyncIteratorMethod[TValue](asyncIterable: AsyncIterable[TValue]): js.Function0[AsyncIterator[TValue, Any, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsyncIteratorMethod")(asyncIterable.asInstanceOf[js.Any]).asInstanceOf[js.Function0[AsyncIterator[TValue, Any, Unit]]]
+  
+  inline def getIterator(iterable: Any): Unit | js.Iterator[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIterator")(iterable.asInstanceOf[js.Any]).asInstanceOf[Unit | js.Iterator[Any]]
+  inline def getIterator[TValue](iterable: js.Iterable[TValue]): js.Iterator[TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIterator")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Iterator[TValue]]
+  
+  inline def getIteratorMethod(iterable: Any): Unit | js.Function0[js.Iterator[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIteratorMethod")(iterable.asInstanceOf[js.Any]).asInstanceOf[Unit | js.Function0[js.Iterator[Any]]]
+  inline def getIteratorMethod[TValue](iterable: js.Iterable[TValue]): js.Function0[js.Iterator[TValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIteratorMethod")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Iterator[TValue]]]
+  
+  inline def isArrayLike(obj: Any): /* is iterall.anon.Length */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayLike")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is iterall.anon.Length */ Boolean]
+  
+  inline def isAsyncIterable(obj: Any): /* is std.AsyncIterable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsyncIterable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.AsyncIterable<any> */ Boolean]
+  
+  inline def isCollection(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isIterable(obj: Any): /* is std.Iterable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Iterable<any> */ Boolean]
+  
+  @JSImport("iterall", "$$iterator")
+  @js.native
+  val iterator: js.Symbol = js.native
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TCollection extends std.AsyncIterable<infer TValue> ? TValue : TCollection extends std.Iterable<infer U> ? U extends std.Promise<infer TValue> ? TValue : U : never
+    }}}
+    */
+  @js.native
+  trait ResolvedOf[TCollection] extends StObject
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TCollection extends std.Iterable<infer TValue> ? TValue : never
+    }}}
+    */
+  @js.native
+  trait ValueOf[TCollection] extends StObject
 }
-

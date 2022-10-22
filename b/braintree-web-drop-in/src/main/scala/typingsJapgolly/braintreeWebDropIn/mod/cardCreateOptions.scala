@@ -1,32 +1,45 @@
 package typingsJapgolly.braintreeWebDropIn.mod
 
-import typingsJapgolly.braintreeWebDropIn.AnonAllowVaultCardOverride
-import typingsJapgolly.braintreeWebDropIn.AnonFields
-import typingsJapgolly.braintreeWebDropIn.AnonRequired
+import typingsJapgolly.braintreeWebDropIn.anon.AllowVaultCardOverride
+import typingsJapgolly.braintreeWebDropIn.anon.Fields
+import typingsJapgolly.braintreeWebDropIn.anon.Required
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait cardCreateOptions extends js.Object {
-  var cardholderName: js.UndefOr[Boolean | AnonRequired] = js.undefined
+trait cardCreateOptions extends StObject {
+  
+  var cardholderName: js.UndefOr[Boolean | Required] = js.undefined
+  
   var clearFieldsAfterTokenization: js.UndefOr[Boolean] = js.undefined
-  var overrides: AnonFields
-  var vault: js.UndefOr[AnonAllowVaultCardOverride] = js.undefined
+  
+  var overrides: js.UndefOr[Fields] = js.undefined
+  
+  var vault: js.UndefOr[AllowVaultCardOverride] = js.undefined
 }
-
 object cardCreateOptions {
-  @scala.inline
-  def apply(
-    overrides: AnonFields,
-    cardholderName: Boolean | AnonRequired = null,
-    clearFieldsAfterTokenization: js.UndefOr[Boolean] = js.undefined,
-    vault: AnonAllowVaultCardOverride = null
-  ): cardCreateOptions = {
-    val __obj = js.Dynamic.literal(overrides = overrides.asInstanceOf[js.Any])
-    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearFieldsAfterTokenization)) __obj.updateDynamic("clearFieldsAfterTokenization")(clearFieldsAfterTokenization.asInstanceOf[js.Any])
-    if (vault != null) __obj.updateDynamic("vault")(vault.asInstanceOf[js.Any])
+  
+  inline def apply(): cardCreateOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[cardCreateOptions]
   }
+  
+  extension [Self <: cardCreateOptions](x: Self) {
+    
+    inline def setCardholderName(value: Boolean | Required): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
+    
+    inline def setCardholderNameUndefined: Self = StObject.set(x, "cardholderName", js.undefined)
+    
+    inline def setClearFieldsAfterTokenization(value: Boolean): Self = StObject.set(x, "clearFieldsAfterTokenization", value.asInstanceOf[js.Any])
+    
+    inline def setClearFieldsAfterTokenizationUndefined: Self = StObject.set(x, "clearFieldsAfterTokenization", js.undefined)
+    
+    inline def setOverrides(value: Fields): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    
+    inline def setVault(value: AllowVaultCardOverride): Self = StObject.set(x, "vault", value.asInstanceOf[js.Any])
+    
+    inline def setVaultUndefined: Self = StObject.set(x, "vault", js.undefined)
+  }
 }
-

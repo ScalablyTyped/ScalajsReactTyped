@@ -1,20 +1,23 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCTrackEvent extends Event_ {
+trait RTCTrackEvent
+  extends StObject
+     with Event {
+  
+  /* standard dom */
   val receiver: RTCRtpReceiver = js.native
-  val streams: js.Array[org.scalajs.dom.experimental.mediastream.MediaStream] = js.native
-  val track: org.scalajs.dom.experimental.mediastream.MediaStreamTrack = js.native
+  
+  /* standard dom */
+  val streams: js.Array[org.scalajs.dom.MediaStream] = js.native
+  
+  /* standard dom */
+  val track: org.scalajs.dom.MediaStreamTrack = js.native
+  
+  /* standard dom */
   val transceiver: RTCRtpTransceiver = js.native
 }
-
-@JSGlobal("RTCTrackEvent")
-@js.native
-object RTCTrackEvent
-  extends Instantiable2[/* type */ java.lang.String, /* eventInitDict */ RTCTrackEventInit, RTCTrackEvent]
-

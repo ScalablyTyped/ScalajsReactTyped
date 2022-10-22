@@ -1,29 +1,27 @@
 package typingsJapgolly.angularCommon.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FormStyle extends js.Object
-
+sealed trait FormStyle extends StObject
 @JSImport("@angular/common", "FormStyle")
 @js.native
-object FormStyle extends js.Object {
-  @js.native
-  sealed trait Format extends FormStyle
-  
-  @js.native
-  sealed trait Standalone extends FormStyle
+object FormStyle extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FormStyle with Double] = js.native
-  /* 0 */ @js.native
-  object Format extends TopLevel[Format with Double]
+  def apply(value: Double): js.UndefOr[FormStyle & Double] = js.native
   
-  /* 1 */ @js.native
-  object Standalone extends TopLevel[Standalone with Double]
+  @js.native
+  sealed trait Format
+    extends StObject
+       with FormStyle
+  /* 0 */ val Format: typingsJapgolly.angularCommon.mod.FormStyle.Format & Double = js.native
   
+  @js.native
+  sealed trait Standalone
+    extends StObject
+       with FormStyle
+  /* 1 */ val Standalone: typingsJapgolly.angularCommon.mod.FormStyle.Standalone & Double = js.native
 }
-

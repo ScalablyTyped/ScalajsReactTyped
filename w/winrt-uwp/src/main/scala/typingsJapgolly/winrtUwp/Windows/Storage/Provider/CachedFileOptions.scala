@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Storage.Provider
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CachedFileOptions extends js.Object
-
+sealed trait CachedFileOptions extends StObject
 /** Describes when Windows will request an update to a file. */
 @JSGlobal("Windows.Storage.Provider.CachedFileOptions")
 @js.native
-object CachedFileOptions extends js.Object {
+object CachedFileOptions extends StObject {
+  
   /** An update triggers when another app accesses the locally cached copy of the file if a network connection is available. Otherwise, other apps are denied access to the local file. */
   @js.native
-  sealed trait denyAccessWhenOffline extends CachedFileOptions
+  sealed trait denyAccessWhenOffline
+    extends StObject
+       with CachedFileOptions
   
   /** Another app may be able to access the locally cached copy of the file without triggering an update. */
   @js.native
-  sealed trait none extends CachedFileOptions
+  sealed trait none
+    extends StObject
+       with CachedFileOptions
   
   /** An update always triggers when another app accesses the locally cached copy of the file. */
   @js.native
-  sealed trait requireUpdateOnAccess extends CachedFileOptions
+  sealed trait requireUpdateOnAccess
+    extends StObject
+       with CachedFileOptions
   
   /** An update triggers when another app accesses the locally cached copy of the file if a network connection is available. Otherwise, other apps can access the local file without triggering an update. */
   @js.native
-  sealed trait useCachedFileWhenOffline extends CachedFileOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CachedFileOptions with Double] = js.native
-  /* 3 */ @js.native
-  object denyAccessWhenOffline extends TopLevel[denyAccessWhenOffline with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object requireUpdateOnAccess extends TopLevel[requireUpdateOnAccess with Double]
-  
-  /* 2 */ @js.native
-  object useCachedFileWhenOffline extends TopLevel[useCachedFileWhenOffline with Double]
-  
+  sealed trait useCachedFileWhenOffline
+    extends StObject
+       with CachedFileOptions
 }
-

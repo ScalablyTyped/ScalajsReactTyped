@@ -1,22 +1,27 @@
 package typingsJapgolly.extjs.Ext.grid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait INumberColumn
-  extends typingsJapgolly.extjs.Ext.grid.column.IColumn {
+  extends StObject
+     with typingsJapgolly.extjs.Ext.grid.column.IColumn {
+  
   /** [Config Option] (String) */
   var format: js.UndefOr[String] = js.undefined
 }
-
 object INumberColumn {
-  @scala.inline
-  def apply(IColumn: typingsJapgolly.extjs.Ext.grid.column.IColumn = null, format: String = null): INumberColumn = {
+  
+  inline def apply(): INumberColumn = {
     val __obj = js.Dynamic.literal()
-    if (IColumn != null) js.Dynamic.global.Object.assign(__obj, IColumn)
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[INumberColumn]
   }
+  
+  extension [Self <: INumberColumn](x: Self) {
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+  }
 }
-

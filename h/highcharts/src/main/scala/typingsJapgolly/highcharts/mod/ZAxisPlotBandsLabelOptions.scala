@@ -1,19 +1,24 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ZAxisPlotBandsLabelOptions extends AxisPlotBandsLabelOptions {
+trait ZAxisPlotBandsLabelOptions
+  extends StObject
+     with AxisPlotBandsLabelOptions {
+  
   /**
     * (Highcharts, Highstock, Gantt) Horizontal alignment of the label. Can be
     * one of "left", "center" or "right".
     */
   var align: js.UndefOr[AlignValue] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Rotation of the text label in degrees .
     */
   var rotation: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) CSS styles for the text label.
     *
@@ -21,11 +26,13 @@ trait ZAxisPlotBandsLabelOptions extends AxisPlotBandsLabelOptions {
     * `.highcharts-plot-band-label` class.
     */
   var style: js.UndefOr[CSSObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The string text itself. A subset of HTML
     * is supported.
     */
   var text: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The text alignment for the label. While
     * `align` determines where the texts anchor point is placed within the plot
@@ -34,51 +41,73 @@ trait ZAxisPlotBandsLabelOptions extends AxisPlotBandsLabelOptions {
     * same as the `align` option.
     */
   var textAlign: js.UndefOr[AlignValue] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Whether to use HTML to render the labels.
     */
   var useHTML: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Vertical alignment of the label relative
     * to the plot band. Can be one of "top", "middle" or "bottom".
     */
   var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Horizontal position relative the
     * alignment. Default varies by orientation.
     */
   var x: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Vertical position of the text baseline
     * relative to the alignment. Default varies by orientation.
     */
   var y: js.UndefOr[Double] = js.undefined
 }
-
 object ZAxisPlotBandsLabelOptions {
-  @scala.inline
-  def apply(
-    align: AlignValue = null,
-    rotation: Int | Double = null,
-    style: CSSObject = null,
-    text: String = null,
-    textAlign: AlignValue = null,
-    useHTML: js.UndefOr[Boolean] = js.undefined,
-    verticalAlign: VerticalAlignValue = null,
-    x: Int | Double = null,
-    y: Int | Double = null
-  ): ZAxisPlotBandsLabelOptions = {
+  
+  inline def apply(): ZAxisPlotBandsLabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZAxisPlotBandsLabelOptions]
   }
+  
+  extension [Self <: ZAxisPlotBandsLabelOptions](x: Self) {
+    
+    inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlign(value: AlignValue): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
+    
+    inline def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
+    
+    inline def setVerticalAlign(value: VerticalAlignValue): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

@@ -1,21 +1,17 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.function
   - typingsJapgolly.fridaGum.fridaGumStrings.variable
 */
-trait ModuleImportType extends js.Object
-
+trait ModuleImportType extends StObject
 object ModuleImportType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def function: typingsJapgolly.fridaGum.fridaGumStrings.function = this.cast("function")
-  @scala.inline
-  def variable: typingsJapgolly.fridaGum.fridaGumStrings.variable = this.cast("variable")
+  
+  inline def function: typingsJapgolly.fridaGum.fridaGumStrings.function = "function".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.function]
+  
+  inline def variable: typingsJapgolly.fridaGum.fridaGumStrings.variable = "variable".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.variable]
 }
-

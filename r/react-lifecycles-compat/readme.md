@@ -10,10 +10,10 @@ Backwards compatibility polyfill for React class components
 | ------------------ | :-------------: |
 | Full name          | react-lifecycles-compat |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 505 |
-| # downloads        | 145059244 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7234053666666668E7 |
+| # stars            | 461.0 |
 
 ## Links
 - [Homepage](https://github.com/reactjs/react-lifecycles-compat#readme)

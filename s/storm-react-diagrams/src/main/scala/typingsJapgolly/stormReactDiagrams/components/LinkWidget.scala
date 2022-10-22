@@ -1,46 +1,38 @@
 package typingsJapgolly.stormReactDiagrams.components
 
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.stormReactDiagrams.diagramEngineMod.DiagramEngine
-import typingsJapgolly.stormReactDiagrams.linkModelMod.LinkModel
-import typingsJapgolly.stormReactDiagrams.linkModelMod.LinkModelListener
-import typingsJapgolly.stormReactDiagrams.linkWidgetMod.LinkProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.stormReactDiagrams.distSrcDiagramEngineMod.DiagramEngine
+import typingsJapgolly.stormReactDiagrams.distSrcModelsLinkModelMod.LinkModel
+import typingsJapgolly.stormReactDiagrams.distSrcModelsLinkModelMod.LinkModelListener
+import typingsJapgolly.stormReactDiagrams.distSrcWidgetsLinkWidgetMod.LinkProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LinkWidget {
-  def apply(
-    diagramEngine: DiagramEngine,
-    link: LinkModel[LinkModelListener],
-    baseClass: String = null,
-    className: String = null,
-    extraProps: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: js.Any = null
-  ): UnmountedWithRoot[LinkProps, typingsJapgolly.stormReactDiagrams.mod.LinkWidget, Unit, LinkProps] = {
-    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.stormReactDiagrams.linkWidgetMod.LinkProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.stormReactDiagrams.mod.LinkWidget](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.stormReactDiagrams.linkWidgetMod.LinkProps])
+  inline def apply(diagramEngine: DiagramEngine, link: LinkModel[LinkModelListener]): Builder = {
+    val __props = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[LinkProps]))
   }
+  
   @JSImport("storm-react-diagrams", "LinkWidget")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.stormReactDiagrams.mod.LinkWidget] {
+    
+    inline def baseClass(value: String): this.type = set("baseClass", value.asInstanceOf[js.Any])
+    
+    inline def children(value: Any): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def extraProps(value: Any): this.type = set("extraProps", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: LinkProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

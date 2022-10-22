@@ -1,33 +1,46 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDateNavigator.DayCellCustomHighlight event.
   */
-@JSGlobal("ASPxClientDateNavigatorDayCellCustomHighlightEventArgs")
-@js.native
-class ASPxClientDateNavigatorDayCellCustomHighlightEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientDateNavigatorDayCellCustomHighlightEventArgs class.
-    * @param htmlElement An object representing the HTML element.
-    * @param date A DateTime object that represents the highlighted date.
-    * @param appointments An array of ASPxClientAppointment objects that the highlighted day cell contains.
-    */
-  def this(htmlElement: js.Any, date: js.Date, appointments: js.Array[ASPxClientAppointment]) = this()
+trait ASPxClientDateNavigatorDayCellCustomHighlightEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Provides access to the processed appointments.
     */
-  var appointments: js.Array[ASPxClientAppointment] = js.native
+  var appointments: js.Array[ASPxClientAppointment]
+  
   /**
     * Provides access to the date object of the processed cell.
     */
-  var date: js.Date = js.native
+  var date: js.Date
+  
   /**
     * Gets the HTML element that the event was triggered on.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any
 }
-
+object ASPxClientDateNavigatorDayCellCustomHighlightEventArgs {
+  
+  inline def apply(appointments: js.Array[ASPxClientAppointment], date: js.Date, htmlElement: Any): ASPxClientDateNavigatorDayCellCustomHighlightEventArgs = {
+    val __obj = js.Dynamic.literal(appointments = appointments.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], htmlElement = htmlElement.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientDateNavigatorDayCellCustomHighlightEventArgs]
+  }
+  
+  extension [Self <: ASPxClientDateNavigatorDayCellCustomHighlightEventArgs](x: Self) {
+    
+    inline def setAppointments(value: js.Array[ASPxClientAppointment]): Self = StObject.set(x, "appointments", value.asInstanceOf[js.Any])
+    
+    inline def setAppointmentsVarargs(value: ASPxClientAppointment*): Self = StObject.set(x, "appointments", js.Array(value*))
+    
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+  }
+}

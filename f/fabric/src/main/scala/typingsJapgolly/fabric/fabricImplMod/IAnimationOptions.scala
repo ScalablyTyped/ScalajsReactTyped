@@ -1,54 +1,72 @@
 package typingsJapgolly.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IAnimationOptions extends js.Object {
+trait IAnimationOptions extends StObject {
+  
   /**
-  	 *  Value to modify the property by, default: end - start
-  	 */
+    *  Value to modify the property by, default: end - start
+    */
   var by: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Defaults to 500 (ms). Can be used to change duration of an animation.
-  	 */
+    * Defaults to 500 (ms). Can be used to change duration of an animation.
+    */
   var duration: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Easing function. Default: fabric.util.ease.easeInSine
-  	 */
+    * Easing function. Default: fabric.util.ease.easeInSine
+    */
   var easing: js.UndefOr[js.Function] = js.undefined
+  
   /**
-  	 * Allows to specify starting value of animatable property (if we don't want current value to be used).
-  	 */
+    * Allows to specify starting value of animatable property (if we don't want current value to be used).
+    */
   var from: js.UndefOr[String | Double] = js.undefined
+  
   /**
-  	 * Callback; invoked on every value change
-  	 */
+    * Callback; invoked on every value change
+    */
   var onChange: js.UndefOr[js.Function] = js.undefined
+  
   /**
-  	 * Callback; invoked when value change is completed
-  	 */
+    * Callback; invoked when value change is completed
+    */
   var onComplete: js.UndefOr[js.Function] = js.undefined
 }
-
 object IAnimationOptions {
-  @scala.inline
-  def apply(
-    by: Int | Double = null,
-    duration: Int | Double = null,
-    easing: js.Function = null,
-    from: String | Double = null,
-    onChange: js.Function = null,
-    onComplete: js.Function = null
-  ): IAnimationOptions = {
+  
+  inline def apply(): IAnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange.asInstanceOf[js.Any])
-    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAnimationOptions]
   }
+  
+  extension [Self <: IAnimationOptions](x: Self) {
+    
+    inline def setBy(value: Double): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
+    
+    inline def setByUndefined: Self = StObject.set(x, "by", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEasing(value: js.Function): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    
+    inline def setFrom(value: String | Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setOnChange(value: js.Function): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    
+    inline def setOnComplete(value: js.Function): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
+    
+    inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+  }
 }
-

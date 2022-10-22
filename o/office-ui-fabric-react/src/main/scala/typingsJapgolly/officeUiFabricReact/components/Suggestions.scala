@@ -2,127 +2,121 @@ package typingsJapgolly.officeUiFabricReact.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.officeUiFabricReact.personaTypesMod.IPersonaProps
-import typingsJapgolly.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionItemProps
-import typingsJapgolly.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
-import typingsJapgolly.officeUiFabricReact.suggestionsTypesMod.ISuggestions
-import typingsJapgolly.officeUiFabricReact.suggestionsTypesMod.ISuggestionsProps
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
-import typingsJapgolly.uifabricUtilities.keyCodesMod.KeyCodes
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsIconIconDottypesMod.IIconProps
+import typingsJapgolly.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.IPersonaProps
+import typingsJapgolly.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsDottypesMod.ISuggestionModel
+import typingsJapgolly.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsDottypesMod.ISuggestions
+import typingsJapgolly.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsDottypesMod.ISuggestionsProps
+import typingsJapgolly.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsItemDottypesMod.ISuggestionItemProps
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import typingsJapgolly.uifabricUtilities.libKeyCodesMod.KeyCodes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Suggestions {
-  def apply[T](
-    suggestions: js.Array[ISuggestionModel[T]],
-    onRenderSuggestion: (T, ISuggestionItemProps[T]) => CallbackTo[Element],
-    onSuggestionClick: (js.UndefOr[ReactMouseEventFrom[HTMLElement]], js.UndefOr[js.Any], js.UndefOr[Double]) => Callback,
-    className: String = null,
-    componentRef: IRefObject[ISuggestions[T]] = null,
-    createGenericItem: js.UndefOr[Callback] = js.undefined,
-    forceResolveText: String = null,
-    isLoading: js.UndefOr[Boolean] = js.undefined,
-    isMostRecentlyUsedVisible: js.UndefOr[Boolean] = js.undefined,
-    isResultsFooterVisible: js.UndefOr[Boolean] = js.undefined,
-    isSearching: js.UndefOr[Boolean] = js.undefined,
-    loadingText: String = null,
-    moreSuggestionsAvailable: js.UndefOr[Boolean] = js.undefined,
-    mostRecentlyUsedHeaderText: String = null,
-    noResultsFoundText: String = null,
-    onGetMoreResults: js.UndefOr[Callback] = js.undefined,
-    onRenderNoResultFound: (/* props */ js.UndefOr[Unit], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[Unit], Element | Null]]) => CallbackTo[Element | Null] = null,
-    onSuggestionRemove: (/* ev */ js.UndefOr[ReactMouseEventFrom[HTMLElement]], /* item */ js.UndefOr[T | IPersonaProps], /* index */ js.UndefOr[Double]) => Callback = null,
-    refocusSuggestions: /* keyCode */ KeyCodes => Callback = null,
-    removeSuggestionAriaLabel: String = null,
-    resultsFooter: /* props */ ISuggestionsProps[T] => CallbackTo[Element] = null,
-    resultsFooterFull: /* props */ ISuggestionsProps[T] => CallbackTo[Element] = null,
-    resultsMaximumNumber: Int | Double = null,
-    searchErrorText: String = null,
-    searchForMoreText: String = null,
-    searchingText: String = null,
-    showForceResolve: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    showRemoveButtons: js.UndefOr[Boolean] = js.undefined,
-    styles: IStyleFunctionOrObject[_, _] = null,
-    suggestionsAvailableAlertText: String = null,
-    suggestionsClassName: String = null,
-    suggestionsContainerAriaLabel: String = null,
-    suggestionsHeaderText: String = null,
-    suggestionsItemClassName: String = null,
-    suggestionsListId: String = null,
-    theme: ITheme = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ISuggestionsProps[T], 
-    typingsJapgolly.officeUiFabricReact.mod.Suggestions[T], 
-    Unit, 
-    ISuggestionsProps[T]
-  ] = {
-    val __obj = js.Dynamic.literal(suggestions = suggestions.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onRenderSuggestion")(js.Any.fromFunction2((t0: T, t1: typingsJapgolly.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionItemProps[T]) => onRenderSuggestion(t0, t1).runNow()))
-    __obj.updateDynamic("onSuggestionClick")(js.Any.fromFunction3((t0: js.UndefOr[japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]], t1: js.UndefOr[js.Any], t2: js.UndefOr[scala.Double]) => onSuggestionClick(t0, t1, t2).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    createGenericItem.foreach(p => __obj.updateDynamic("createGenericItem")(p.toJsFn))
-    if (forceResolveText != null) __obj.updateDynamic("forceResolveText")(forceResolveText.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLoading)) __obj.updateDynamic("isLoading")(isLoading.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMostRecentlyUsedVisible)) __obj.updateDynamic("isMostRecentlyUsedVisible")(isMostRecentlyUsedVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResultsFooterVisible)) __obj.updateDynamic("isResultsFooterVisible")(isResultsFooterVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSearching)) __obj.updateDynamic("isSearching")(isSearching.asInstanceOf[js.Any])
-    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText.asInstanceOf[js.Any])
-    if (!js.isUndefined(moreSuggestionsAvailable)) __obj.updateDynamic("moreSuggestionsAvailable")(moreSuggestionsAvailable.asInstanceOf[js.Any])
-    if (mostRecentlyUsedHeaderText != null) __obj.updateDynamic("mostRecentlyUsedHeaderText")(mostRecentlyUsedHeaderText.asInstanceOf[js.Any])
-    if (noResultsFoundText != null) __obj.updateDynamic("noResultsFoundText")(noResultsFoundText.asInstanceOf[js.Any])
-    onGetMoreResults.foreach(p => __obj.updateDynamic("onGetMoreResults")(p.toJsFn))
-    if (onRenderNoResultFound != null) __obj.updateDynamic("onRenderNoResultFound")(js.Any.fromFunction2((t0: /* props */ js.UndefOr[scala.Unit], t1: /* defaultRender */ js.UndefOr[
-  js.Function1[
-    /* props */ js.UndefOr[scala.Unit], 
-    japgolly.scalajs.react.raw.React.Element | scala.Null
-  ]]) => onRenderNoResultFound(t0, t1).runNow()))
-    if (onSuggestionRemove != null) __obj.updateDynamic("onSuggestionRemove")(js.Any.fromFunction3((t0: /* ev */ js.UndefOr[japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]], t1: /* item */ js.UndefOr[T | typingsJapgolly.officeUiFabricReact.personaTypesMod.IPersonaProps], t2: /* index */ js.UndefOr[scala.Double]) => onSuggestionRemove(t0, t1, t2).runNow()))
-    if (refocusSuggestions != null) __obj.updateDynamic("refocusSuggestions")(js.Any.fromFunction1((t0: /* keyCode */ typingsJapgolly.uifabricUtilities.keyCodesMod.KeyCodes) => refocusSuggestions(t0).runNow()))
-    if (removeSuggestionAriaLabel != null) __obj.updateDynamic("removeSuggestionAriaLabel")(removeSuggestionAriaLabel.asInstanceOf[js.Any])
-    if (resultsFooter != null) __obj.updateDynamic("resultsFooter")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.officeUiFabricReact.suggestionsTypesMod.ISuggestionsProps[T]) => resultsFooter(t0).runNow()))
-    if (resultsFooterFull != null) __obj.updateDynamic("resultsFooterFull")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.officeUiFabricReact.suggestionsTypesMod.ISuggestionsProps[T]) => resultsFooterFull(t0).runNow()))
-    if (resultsMaximumNumber != null) __obj.updateDynamic("resultsMaximumNumber")(resultsMaximumNumber.asInstanceOf[js.Any])
-    if (searchErrorText != null) __obj.updateDynamic("searchErrorText")(searchErrorText.asInstanceOf[js.Any])
-    if (searchForMoreText != null) __obj.updateDynamic("searchForMoreText")(searchForMoreText.asInstanceOf[js.Any])
-    if (searchingText != null) __obj.updateDynamic("searchingText")(searchingText.asInstanceOf[js.Any])
-    showForceResolve.foreach(p => __obj.updateDynamic("showForceResolve")(p.toJsFn))
-    if (!js.isUndefined(showRemoveButtons)) __obj.updateDynamic("showRemoveButtons")(showRemoveButtons.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (suggestionsAvailableAlertText != null) __obj.updateDynamic("suggestionsAvailableAlertText")(suggestionsAvailableAlertText.asInstanceOf[js.Any])
-    if (suggestionsClassName != null) __obj.updateDynamic("suggestionsClassName")(suggestionsClassName.asInstanceOf[js.Any])
-    if (suggestionsContainerAriaLabel != null) __obj.updateDynamic("suggestionsContainerAriaLabel")(suggestionsContainerAriaLabel.asInstanceOf[js.Any])
-    if (suggestionsHeaderText != null) __obj.updateDynamic("suggestionsHeaderText")(suggestionsHeaderText.asInstanceOf[js.Any])
-    if (suggestionsItemClassName != null) __obj.updateDynamic("suggestionsItemClassName")(suggestionsItemClassName.asInstanceOf[js.Any])
-    if (suggestionsListId != null) __obj.updateDynamic("suggestionsListId")(suggestionsListId.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.officeUiFabricReact.suggestionsTypesMod.ISuggestionsProps[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.officeUiFabricReact.mod.Suggestions[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.suggestionsTypesMod.ISuggestionsProps[T]])(children: _*)
+  inline def apply[T](
+    onRenderSuggestion: (T, ISuggestionItemProps[T]) => Element,
+    onSuggestionClick: (js.UndefOr[ReactMouseEventFrom[HTMLElement] | Unit], js.UndefOr[Any | Unit], js.UndefOr[Double]) => Callback,
+    suggestions: js.Array[ISuggestionModel[T]]
+  ): Builder[T] = {
+    val __props = js.Dynamic.literal(onRenderSuggestion = js.Any.fromFunction2(onRenderSuggestion), onSuggestionClick = js.Any.fromFunction3((t0: js.UndefOr[ReactMouseEventFrom[HTMLElement] | Unit], t1: js.UndefOr[Any | Unit], t2: js.UndefOr[Double]) => (onSuggestionClick(t0, t1, t2)).runNow()), suggestions = suggestions.asInstanceOf[js.Any])
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[ISuggestionsProps[T]]))
   }
+  
   @JSImport("office-ui-fabric-react", "Suggestions")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.officeUiFabricReact.mod.Suggestions[T]] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[ISuggestions[T]]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ ISuggestions[T] | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ ISuggestions[T] | Null) => value(t0).runNow()))
+    
+    inline def createGenericItem(value: Callback): this.type = set("createGenericItem", value.toJsFn)
+    
+    inline def forceResolveText(value: String): this.type = set("forceResolveText", value.asInstanceOf[js.Any])
+    
+    inline def isLoading(value: Boolean): this.type = set("isLoading", value.asInstanceOf[js.Any])
+    
+    inline def isMostRecentlyUsedVisible(value: Boolean): this.type = set("isMostRecentlyUsedVisible", value.asInstanceOf[js.Any])
+    
+    inline def isResultsFooterVisible(value: Boolean): this.type = set("isResultsFooterVisible", value.asInstanceOf[js.Any])
+    
+    inline def isSearching(value: Boolean): this.type = set("isSearching", value.asInstanceOf[js.Any])
+    
+    inline def loadingText(value: String): this.type = set("loadingText", value.asInstanceOf[js.Any])
+    
+    inline def moreSuggestionsAvailable(value: Boolean): this.type = set("moreSuggestionsAvailable", value.asInstanceOf[js.Any])
+    
+    inline def mostRecentlyUsedHeaderText(value: String): this.type = set("mostRecentlyUsedHeaderText", value.asInstanceOf[js.Any])
+    
+    inline def noResultsFoundText(value: String): this.type = set("noResultsFoundText", value.asInstanceOf[js.Any])
+    
+    inline def onGetMoreResults(value: Callback): this.type = set("onGetMoreResults", value.toJsFn)
+    
+    inline def onRenderNoResultFound(
+      value: (/* props */ js.UndefOr[Unit], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[Unit], Element | Null]]) => Element | Null
+    ): this.type = set("onRenderNoResultFound", js.Any.fromFunction2(value))
+    
+    inline def onSuggestionRemove(
+      value: (/* ev */ js.UndefOr[ReactMouseEventFrom[HTMLElement]], /* item */ js.UndefOr[T | IPersonaProps], /* index */ js.UndefOr[Double]) => Callback
+    ): this.type = set("onSuggestionRemove", js.Any.fromFunction3((t0: /* ev */ js.UndefOr[ReactMouseEventFrom[HTMLElement]], t1: /* item */ js.UndefOr[T | IPersonaProps], t2: /* index */ js.UndefOr[Double]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def refocusSuggestions(value: /* keyCode */ KeyCodes => Callback): this.type = set("refocusSuggestions", js.Any.fromFunction1((t0: /* keyCode */ KeyCodes) => value(t0).runNow()))
+    
+    inline def removeSuggestionAriaLabel(value: String): this.type = set("removeSuggestionAriaLabel", value.asInstanceOf[js.Any])
+    
+    inline def resultsFooter(value: /* props */ ISuggestionsProps[T] => Element): this.type = set("resultsFooter", js.Any.fromFunction1(value))
+    
+    inline def resultsFooterFull(value: /* props */ ISuggestionsProps[T] => Element): this.type = set("resultsFooterFull", js.Any.fromFunction1(value))
+    
+    inline def resultsMaximumNumber(value: Double): this.type = set("resultsMaximumNumber", value.asInstanceOf[js.Any])
+    
+    inline def searchErrorText(value: String): this.type = set("searchErrorText", value.asInstanceOf[js.Any])
+    
+    inline def searchForMoreIcon(value: IIconProps): this.type = set("searchForMoreIcon", value.asInstanceOf[js.Any])
+    
+    inline def searchForMoreText(value: String): this.type = set("searchForMoreText", value.asInstanceOf[js.Any])
+    
+    inline def searchingText(value: String): this.type = set("searchingText", value.asInstanceOf[js.Any])
+    
+    inline def showForceResolve(value: CallbackTo[Boolean]): this.type = set("showForceResolve", value.toJsFn)
+    
+    inline def showRemoveButtons(value: Boolean): this.type = set("showRemoveButtons", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IStyleFunctionOrObject[Any, Any]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: Any => DeepPartial[Any]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def suggestionsAvailableAlertText(value: String): this.type = set("suggestionsAvailableAlertText", value.asInstanceOf[js.Any])
+    
+    inline def suggestionsClassName(value: String): this.type = set("suggestionsClassName", value.asInstanceOf[js.Any])
+    
+    inline def suggestionsContainerAriaLabel(value: String): this.type = set("suggestionsContainerAriaLabel", value.asInstanceOf[js.Any])
+    
+    inline def suggestionsHeaderText(value: String): this.type = set("suggestionsHeaderText", value.asInstanceOf[js.Any])
+    
+    inline def suggestionsItemClassName(value: String): this.type = set("suggestionsItemClassName", value.asInstanceOf[js.Any])
+    
+    inline def suggestionsListId(value: String): this.type = set("suggestionsListId", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[T](p: ISuggestionsProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

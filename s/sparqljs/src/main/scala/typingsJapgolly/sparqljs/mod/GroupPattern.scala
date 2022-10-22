@@ -1,23 +1,33 @@
 package typingsJapgolly.sparqljs.mod
 
 import typingsJapgolly.sparqljs.sparqljsStrings.group
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GroupPattern
-  extends BlockPattern
+  extends StObject
+     with BlockPattern
      with _Expression {
-  @JSName("type")
-  var type_GroupPattern: group
+  
+  var patterns: js.Array[Pattern]
+  
+  var `type`: group
 }
-
 object GroupPattern {
-  @scala.inline
-  def apply(patterns: js.Array[Pattern], `type`: group): GroupPattern = {
+  
+  inline def apply(patterns: js.Array[Pattern]): GroupPattern = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("group")
     __obj.asInstanceOf[GroupPattern]
   }
+  
+  extension [Self <: GroupPattern](x: Self) {
+    
+    inline def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+    
+    inline def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value*))
+    
+    inline def setType(value: group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

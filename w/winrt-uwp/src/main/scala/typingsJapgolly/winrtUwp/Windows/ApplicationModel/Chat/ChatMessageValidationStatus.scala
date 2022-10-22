@@ -1,95 +1,79 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Chat
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChatMessageValidationStatus extends js.Object
-
+sealed trait ChatMessageValidationStatus extends StObject
 /** Specifies the validation state of a chat message such as valid, no recipients, or too many attachments. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageValidationStatus")
 @js.native
-object ChatMessageValidationStatus extends js.Object {
+object ChatMessageValidationStatus extends StObject {
+  
   /** Invalid body */
   @js.native
-  sealed trait invalidBody extends ChatMessageValidationStatus
+  sealed trait invalidBody
+    extends StObject
+       with ChatMessageValidationStatus
   
   /** Invalid data */
   @js.native
-  sealed trait invalidData extends ChatMessageValidationStatus
+  sealed trait invalidData
+    extends StObject
+       with ChatMessageValidationStatus
   
   /** Invalid other */
   @js.native
-  sealed trait invalidOther extends ChatMessageValidationStatus
+  sealed trait invalidOther
+    extends StObject
+       with ChatMessageValidationStatus
   
   /** Invalid recipients */
   @js.native
-  sealed trait invalidRecipients extends ChatMessageValidationStatus
+  sealed trait invalidRecipients
+    extends StObject
+       with ChatMessageValidationStatus
   
   /** Message too large */
   @js.native
-  sealed trait messageTooLarge extends ChatMessageValidationStatus
+  sealed trait messageTooLarge
+    extends StObject
+       with ChatMessageValidationStatus
   
   /** No recipients */
   @js.native
-  sealed trait noRecipients extends ChatMessageValidationStatus
+  sealed trait noRecipients
+    extends StObject
+       with ChatMessageValidationStatus
   
   /** Too many attachments */
   @js.native
-  sealed trait tooManyAttachments extends ChatMessageValidationStatus
+  sealed trait tooManyAttachments
+    extends StObject
+       with ChatMessageValidationStatus
   
   /** Too many recipients */
   @js.native
-  sealed trait tooManyRecipients extends ChatMessageValidationStatus
+  sealed trait tooManyRecipients
+    extends StObject
+       with ChatMessageValidationStatus
   
   /** Transport inactive */
   @js.native
-  sealed trait transportInactive extends ChatMessageValidationStatus
+  sealed trait transportInactive
+    extends StObject
+       with ChatMessageValidationStatus
   
   /** Transport not found */
   @js.native
-  sealed trait transportNotFound extends ChatMessageValidationStatus
+  sealed trait transportNotFound
+    extends StObject
+       with ChatMessageValidationStatus
   
   /** Valid */
   @js.native
-  sealed trait valid extends ChatMessageValidationStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChatMessageValidationStatus with Double] = js.native
-  /* 9 */ @js.native
-  object invalidBody extends TopLevel[invalidBody with Double]
-  
-  /* 2 */ @js.native
-  object invalidData extends TopLevel[invalidData with Double]
-  
-  /* 10 */ @js.native
-  object invalidOther extends TopLevel[invalidOther with Double]
-  
-  /* 8 */ @js.native
-  object invalidRecipients extends TopLevel[invalidRecipients with Double]
-  
-  /* 3 */ @js.native
-  object messageTooLarge extends TopLevel[messageTooLarge with Double]
-  
-  /* 1 */ @js.native
-  object noRecipients extends TopLevel[noRecipients with Double]
-  
-  /* 7 */ @js.native
-  object tooManyAttachments extends TopLevel[tooManyAttachments with Double]
-  
-  /* 4 */ @js.native
-  object tooManyRecipients extends TopLevel[tooManyRecipients with Double]
-  
-  /* 5 */ @js.native
-  object transportInactive extends TopLevel[transportInactive with Double]
-  
-  /* 6 */ @js.native
-  object transportNotFound extends TopLevel[transportNotFound with Double]
-  
-  /* 0 */ @js.native
-  object valid extends TopLevel[valid with Double]
-  
+  sealed trait valid
+    extends StObject
+       with ChatMessageValidationStatus
 }
-

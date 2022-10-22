@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenderingEventUIParam extends js.Object {
+trait RenderingEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the editor element.
-  	 */
-  var element: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the editor element.
+    */
+  var element: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the editor performing rendering.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the editor performing rendering.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object RenderingEventUIParam {
-  @scala.inline
-  def apply(element: js.Any = null, owner: js.Any = null): RenderingEventUIParam = {
+  
+  inline def apply(): RenderingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderingEventUIParam]
   }
+  
+  extension [Self <: RenderingEventUIParam](x: Self) {
+    
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

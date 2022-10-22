@@ -1,20 +1,24 @@
 package typingsJapgolly.std
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EventListenerObject extends js.Object {
-  def handleEvent(evt: Event_): Unit
+trait EventListenerObject extends StObject {
+  
+  /* standard dom */
+  def handleEvent(`object`: org.scalajs.dom.Event): Unit
 }
-
 object EventListenerObject {
-  @scala.inline
-  def apply(handleEvent: Event_ => Callback): EventListenerObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handleEvent")(js.Any.fromFunction1((t0: typingsJapgolly.std.Event_) => handleEvent(t0).runNow()))
+  
+  inline def apply(handleEvent: org.scalajs.dom.Event => Callback): EventListenerObject = {
+    val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1((t0: org.scalajs.dom.Event) => handleEvent(t0).runNow()))
     __obj.asInstanceOf[EventListenerObject]
   }
+  
+  extension [Self <: EventListenerObject](x: Self) {
+    
+    inline def setHandleEvent(value: org.scalajs.dom.Event => Callback): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1((t0: org.scalajs.dom.Event) => value(t0).runNow()))
+  }
 }
-

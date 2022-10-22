@@ -1,82 +1,112 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.dark
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.default_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.light
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.mesh
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.multipatch
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.multipoint
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.point
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polygon
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polyline
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait predominanceGetSchemesParams extends Object {
+trait predominanceGetSchemesParams
+  extends StObject
+     with Object {
+  
   /**
-    * The Esri basemap to pair with the visualization. This value indicates the best symbol colors for visualizing features against the given basemap. If you have a non-Esri basemap (e.g. a VectorTileLayer basemap with a custom style) or no basemap at all, then use the `basemapTheme` parameter instead of this parameter.
+    * The Esri basemap to pair with the visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#getSchemes)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemes)
     */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
+  
   /**
-    * If you have a non-Esri basemap (e.g. a VectorTileLayer basemap with a custom style) or no basemap at all, use this parameter to indicate whether the background of the visualization is `light` or `dark`.  **Possible Values:** light | dark
+    * If you have a non-Esri basemap (e.g.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#getSchemes)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemes)
     */
-  var basemapTheme: js.UndefOr[String] = js.undefined
+  var basemapTheme: js.UndefOr[light | dark] = js.undefined
+  
   /**
-    * The geometry type of the features to visualize.  **Possible Values:** point | multipoint | polyline | polygon | mesh
+    * The geometry type of the features to visualize.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#getSchemes)
+    * [Read more...](global.html#geometryType)
     */
-  var geometryType: String
+  var geometryType: point | multipoint | polyline | polygon | mesh | multipatch
+  
   /**
     * The number of unique values to include in the predominance visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#getSchemes)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemes)
     */
   var numColors: Double
+  
   /**
-    * Determines which set of primary and secondary color schemes to return  **Possible Values:** default
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#getSchemes)
+    * Determines which set of primary and secondary color schemes to return.
     *
     * @default default
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemes)
     */
-  var theme: js.UndefOr[String] = js.undefined
+  var theme: js.UndefOr[default_] = js.undefined
+  
   /**
-    * The SceneView instance in which the scheme will be used. This property is only applicable when the scheme will be used in conjunction with 3D symbols.
+    * The SceneView instance in which the scheme will be used.
     *
     * [Read more...](global.html)
     */
   var view: js.UndefOr[SceneView] = js.undefined
+  
   /**
-    * Indicates if the size units of the scheme will be in meters. This should be `true` when the scheme is intended for 3D volumetric symbology. A `view` must be provided if this property is set to `true`.
+    * Indicates if the size units of the scheme will be in meters.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-predominance.html#getSchemes)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemes)
     */
   var worldScale: js.UndefOr[Boolean] = js.undefined
 }
-
 object predominanceGetSchemesParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    geometryType: String,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    geometryType: point | multipoint | polyline | polygon | mesh | multipatch,
+    hasOwnProperty: PropertyKey => Boolean,
     numColors: Double,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    basemap: String | Basemap = null,
-    basemapTheme: String = null,
-    theme: String = null,
-    view: SceneView = null,
-    worldScale: js.UndefOr[Boolean] = js.undefined
+    propertyIsEnumerable: PropertyKey => Boolean
   ): predominanceGetSchemesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], numColors = numColors.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (basemapTheme != null) __obj.updateDynamic("basemapTheme")(basemapTheme.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), numColors = numColors.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[predominanceGetSchemesParams]
   }
+  
+  extension [Self <: predominanceGetSchemesParams](x: Self) {
+    
+    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
+    
+    inline def setBasemapTheme(value: light | dark): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
+    
+    inline def setBasemapThemeUndefined: Self = StObject.set(x, "basemapTheme", js.undefined)
+    
+    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    
+    inline def setGeometryType(value: point | multipoint | polyline | polygon | mesh | multipatch): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    
+    inline def setNumColors(value: Double): Self = StObject.set(x, "numColors", value.asInstanceOf[js.Any])
+    
+    inline def setTheme(value: default_): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setView(value: SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setWorldScale(value: Boolean): Self = StObject.set(x, "worldScale", value.asInstanceOf[js.Any])
+    
+    inline def setWorldScaleUndefined: Self = StObject.set(x, "worldScale", js.undefined)
+  }
 }
-

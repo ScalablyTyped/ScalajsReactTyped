@@ -1,10 +1,7 @@
 package typingsJapgolly.minappEnv.DB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DB.Batch")
-@js.native
-class Batch () extends js.Object
-
+trait Batch extends StObject

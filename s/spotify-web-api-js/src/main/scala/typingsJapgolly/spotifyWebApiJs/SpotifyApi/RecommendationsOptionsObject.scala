@@ -1,8 +1,8 @@
 package typingsJapgolly.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object for use in Recommendations Based on Seeds.
@@ -17,159 +17,306 @@ import scala.scalajs.js.annotation._
   * @seed_tracks q A comma separated list of Spotify IDs for a seed track. Up to 5 seed values may be provided in any combination of seed_artists, seed_tracks and seed_genres.
   * @target_ q Optional. Multiple values. For each of the tunable track attributes (below) a target value may be provided. Tracks with the attribute values nearest to the target values will be preferred. For example, you might request target_energy=0.6 and target_danceability=0.8. All target values will be weighed equally in ranking results.
   */
-trait RecommendationsOptionsObject extends js.Object {
+trait RecommendationsOptionsObject extends StObject {
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var market: js.UndefOr[String] = js.undefined
+  
   var max_acousticness: js.UndefOr[Double] = js.undefined
+  
   var max_danceability: js.UndefOr[Double] = js.undefined
+  
   var max_duration_ms: js.UndefOr[Double] = js.undefined
+  
   var max_energy: js.UndefOr[Double] = js.undefined
+  
   var max_instrumentalness: js.UndefOr[Double] = js.undefined
+  
   var max_key: js.UndefOr[Double] = js.undefined
+  
   var max_liveness: js.UndefOr[Double] = js.undefined
+  
   var max_loudness: js.UndefOr[Double] = js.undefined
+  
   var max_mode: js.UndefOr[Double] = js.undefined
+  
   var max_popularity: js.UndefOr[Double] = js.undefined
+  
   var max_speechiness: js.UndefOr[Double] = js.undefined
+  
   var max_tempo: js.UndefOr[Double] = js.undefined
+  
   var max_time_signature: js.UndefOr[Double] = js.undefined
+  
   var max_valence: js.UndefOr[Double] = js.undefined
+  
   var min_acousticness: js.UndefOr[Double] = js.undefined
+  
   var min_danceability: js.UndefOr[Double] = js.undefined
+  
   var min_duration_ms: js.UndefOr[Double] = js.undefined
+  
   var min_energy: js.UndefOr[Double] = js.undefined
+  
   var min_instrumentalness: js.UndefOr[Double] = js.undefined
+  
   var min_key: js.UndefOr[Double] = js.undefined
+  
   var min_liveness: js.UndefOr[Double] = js.undefined
+  
   var min_loudness: js.UndefOr[Double] = js.undefined
+  
   var min_mode: js.UndefOr[Double] = js.undefined
+  
   var min_popularity: js.UndefOr[Double] = js.undefined
+  
   var min_speechiness: js.UndefOr[Double] = js.undefined
+  
   var min_tempo: js.UndefOr[Double] = js.undefined
+  
   var min_time_signature: js.UndefOr[Double] = js.undefined
+  
   var min_valence: js.UndefOr[Double] = js.undefined
+  
   var seed_artists: js.UndefOr[js.Array[String] | String] = js.undefined
-     // Array of strings or Comma separated string
+  
+  // Array of strings or Comma separated string
   var seed_genres: js.UndefOr[js.Array[String] | String] = js.undefined
-     // Array of strings or Comma separated string
+  
+  // Array of strings or Comma separated string
   var seed_tracks: js.UndefOr[js.Array[String] | String] = js.undefined
-     // Array of strings or Comma separated string
+  
+  // Array of strings or Comma separated string
   var target_acousticness: js.UndefOr[Double] = js.undefined
+  
   var target_danceability: js.UndefOr[Double] = js.undefined
+  
   var target_duration_ms: js.UndefOr[Double] = js.undefined
+  
   var target_energy: js.UndefOr[Double] = js.undefined
+  
   var target_instrumentalness: js.UndefOr[Double] = js.undefined
+  
   var target_key: js.UndefOr[Double] = js.undefined
+  
   var target_liveness: js.UndefOr[Double] = js.undefined
+  
   var target_loudness: js.UndefOr[Double] = js.undefined
+  
   var target_mode: js.UndefOr[Double] = js.undefined
+  
   var target_popularity: js.UndefOr[Double] = js.undefined
+  
   var target_speechiness: js.UndefOr[Double] = js.undefined
+  
   var target_tempo: js.UndefOr[Double] = js.undefined
+  
   var target_time_signature: js.UndefOr[Double] = js.undefined
+  
   var target_valence: js.UndefOr[Double] = js.undefined
 }
-
 object RecommendationsOptionsObject {
-  @scala.inline
-  def apply(
-    limit: Int | Double = null,
-    market: String = null,
-    max_acousticness: Int | Double = null,
-    max_danceability: Int | Double = null,
-    max_duration_ms: Int | Double = null,
-    max_energy: Int | Double = null,
-    max_instrumentalness: Int | Double = null,
-    max_key: Int | Double = null,
-    max_liveness: Int | Double = null,
-    max_loudness: Int | Double = null,
-    max_mode: Int | Double = null,
-    max_popularity: Int | Double = null,
-    max_speechiness: Int | Double = null,
-    max_tempo: Int | Double = null,
-    max_time_signature: Int | Double = null,
-    max_valence: Int | Double = null,
-    min_acousticness: Int | Double = null,
-    min_danceability: Int | Double = null,
-    min_duration_ms: Int | Double = null,
-    min_energy: Int | Double = null,
-    min_instrumentalness: Int | Double = null,
-    min_key: Int | Double = null,
-    min_liveness: Int | Double = null,
-    min_loudness: Int | Double = null,
-    min_mode: Int | Double = null,
-    min_popularity: Int | Double = null,
-    min_speechiness: Int | Double = null,
-    min_tempo: Int | Double = null,
-    min_time_signature: Int | Double = null,
-    min_valence: Int | Double = null,
-    seed_artists: js.Array[String] | String = null,
-    seed_genres: js.Array[String] | String = null,
-    seed_tracks: js.Array[String] | String = null,
-    target_acousticness: Int | Double = null,
-    target_danceability: Int | Double = null,
-    target_duration_ms: Int | Double = null,
-    target_energy: Int | Double = null,
-    target_instrumentalness: Int | Double = null,
-    target_key: Int | Double = null,
-    target_liveness: Int | Double = null,
-    target_loudness: Int | Double = null,
-    target_mode: Int | Double = null,
-    target_popularity: Int | Double = null,
-    target_speechiness: Int | Double = null,
-    target_tempo: Int | Double = null,
-    target_time_signature: Int | Double = null,
-    target_valence: Int | Double = null
-  ): RecommendationsOptionsObject = {
+  
+  inline def apply(): RecommendationsOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (market != null) __obj.updateDynamic("market")(market.asInstanceOf[js.Any])
-    if (max_acousticness != null) __obj.updateDynamic("max_acousticness")(max_acousticness.asInstanceOf[js.Any])
-    if (max_danceability != null) __obj.updateDynamic("max_danceability")(max_danceability.asInstanceOf[js.Any])
-    if (max_duration_ms != null) __obj.updateDynamic("max_duration_ms")(max_duration_ms.asInstanceOf[js.Any])
-    if (max_energy != null) __obj.updateDynamic("max_energy")(max_energy.asInstanceOf[js.Any])
-    if (max_instrumentalness != null) __obj.updateDynamic("max_instrumentalness")(max_instrumentalness.asInstanceOf[js.Any])
-    if (max_key != null) __obj.updateDynamic("max_key")(max_key.asInstanceOf[js.Any])
-    if (max_liveness != null) __obj.updateDynamic("max_liveness")(max_liveness.asInstanceOf[js.Any])
-    if (max_loudness != null) __obj.updateDynamic("max_loudness")(max_loudness.asInstanceOf[js.Any])
-    if (max_mode != null) __obj.updateDynamic("max_mode")(max_mode.asInstanceOf[js.Any])
-    if (max_popularity != null) __obj.updateDynamic("max_popularity")(max_popularity.asInstanceOf[js.Any])
-    if (max_speechiness != null) __obj.updateDynamic("max_speechiness")(max_speechiness.asInstanceOf[js.Any])
-    if (max_tempo != null) __obj.updateDynamic("max_tempo")(max_tempo.asInstanceOf[js.Any])
-    if (max_time_signature != null) __obj.updateDynamic("max_time_signature")(max_time_signature.asInstanceOf[js.Any])
-    if (max_valence != null) __obj.updateDynamic("max_valence")(max_valence.asInstanceOf[js.Any])
-    if (min_acousticness != null) __obj.updateDynamic("min_acousticness")(min_acousticness.asInstanceOf[js.Any])
-    if (min_danceability != null) __obj.updateDynamic("min_danceability")(min_danceability.asInstanceOf[js.Any])
-    if (min_duration_ms != null) __obj.updateDynamic("min_duration_ms")(min_duration_ms.asInstanceOf[js.Any])
-    if (min_energy != null) __obj.updateDynamic("min_energy")(min_energy.asInstanceOf[js.Any])
-    if (min_instrumentalness != null) __obj.updateDynamic("min_instrumentalness")(min_instrumentalness.asInstanceOf[js.Any])
-    if (min_key != null) __obj.updateDynamic("min_key")(min_key.asInstanceOf[js.Any])
-    if (min_liveness != null) __obj.updateDynamic("min_liveness")(min_liveness.asInstanceOf[js.Any])
-    if (min_loudness != null) __obj.updateDynamic("min_loudness")(min_loudness.asInstanceOf[js.Any])
-    if (min_mode != null) __obj.updateDynamic("min_mode")(min_mode.asInstanceOf[js.Any])
-    if (min_popularity != null) __obj.updateDynamic("min_popularity")(min_popularity.asInstanceOf[js.Any])
-    if (min_speechiness != null) __obj.updateDynamic("min_speechiness")(min_speechiness.asInstanceOf[js.Any])
-    if (min_tempo != null) __obj.updateDynamic("min_tempo")(min_tempo.asInstanceOf[js.Any])
-    if (min_time_signature != null) __obj.updateDynamic("min_time_signature")(min_time_signature.asInstanceOf[js.Any])
-    if (min_valence != null) __obj.updateDynamic("min_valence")(min_valence.asInstanceOf[js.Any])
-    if (seed_artists != null) __obj.updateDynamic("seed_artists")(seed_artists.asInstanceOf[js.Any])
-    if (seed_genres != null) __obj.updateDynamic("seed_genres")(seed_genres.asInstanceOf[js.Any])
-    if (seed_tracks != null) __obj.updateDynamic("seed_tracks")(seed_tracks.asInstanceOf[js.Any])
-    if (target_acousticness != null) __obj.updateDynamic("target_acousticness")(target_acousticness.asInstanceOf[js.Any])
-    if (target_danceability != null) __obj.updateDynamic("target_danceability")(target_danceability.asInstanceOf[js.Any])
-    if (target_duration_ms != null) __obj.updateDynamic("target_duration_ms")(target_duration_ms.asInstanceOf[js.Any])
-    if (target_energy != null) __obj.updateDynamic("target_energy")(target_energy.asInstanceOf[js.Any])
-    if (target_instrumentalness != null) __obj.updateDynamic("target_instrumentalness")(target_instrumentalness.asInstanceOf[js.Any])
-    if (target_key != null) __obj.updateDynamic("target_key")(target_key.asInstanceOf[js.Any])
-    if (target_liveness != null) __obj.updateDynamic("target_liveness")(target_liveness.asInstanceOf[js.Any])
-    if (target_loudness != null) __obj.updateDynamic("target_loudness")(target_loudness.asInstanceOf[js.Any])
-    if (target_mode != null) __obj.updateDynamic("target_mode")(target_mode.asInstanceOf[js.Any])
-    if (target_popularity != null) __obj.updateDynamic("target_popularity")(target_popularity.asInstanceOf[js.Any])
-    if (target_speechiness != null) __obj.updateDynamic("target_speechiness")(target_speechiness.asInstanceOf[js.Any])
-    if (target_tempo != null) __obj.updateDynamic("target_tempo")(target_tempo.asInstanceOf[js.Any])
-    if (target_time_signature != null) __obj.updateDynamic("target_time_signature")(target_time_signature.asInstanceOf[js.Any])
-    if (target_valence != null) __obj.updateDynamic("target_valence")(target_valence.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommendationsOptionsObject]
   }
+  
+  extension [Self <: RecommendationsOptionsObject](x: Self) {
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setMarket(value: String): Self = StObject.set(x, "market", value.asInstanceOf[js.Any])
+    
+    inline def setMarketUndefined: Self = StObject.set(x, "market", js.undefined)
+    
+    inline def setMax_acousticness(value: Double): Self = StObject.set(x, "max_acousticness", value.asInstanceOf[js.Any])
+    
+    inline def setMax_acousticnessUndefined: Self = StObject.set(x, "max_acousticness", js.undefined)
+    
+    inline def setMax_danceability(value: Double): Self = StObject.set(x, "max_danceability", value.asInstanceOf[js.Any])
+    
+    inline def setMax_danceabilityUndefined: Self = StObject.set(x, "max_danceability", js.undefined)
+    
+    inline def setMax_duration_ms(value: Double): Self = StObject.set(x, "max_duration_ms", value.asInstanceOf[js.Any])
+    
+    inline def setMax_duration_msUndefined: Self = StObject.set(x, "max_duration_ms", js.undefined)
+    
+    inline def setMax_energy(value: Double): Self = StObject.set(x, "max_energy", value.asInstanceOf[js.Any])
+    
+    inline def setMax_energyUndefined: Self = StObject.set(x, "max_energy", js.undefined)
+    
+    inline def setMax_instrumentalness(value: Double): Self = StObject.set(x, "max_instrumentalness", value.asInstanceOf[js.Any])
+    
+    inline def setMax_instrumentalnessUndefined: Self = StObject.set(x, "max_instrumentalness", js.undefined)
+    
+    inline def setMax_key(value: Double): Self = StObject.set(x, "max_key", value.asInstanceOf[js.Any])
+    
+    inline def setMax_keyUndefined: Self = StObject.set(x, "max_key", js.undefined)
+    
+    inline def setMax_liveness(value: Double): Self = StObject.set(x, "max_liveness", value.asInstanceOf[js.Any])
+    
+    inline def setMax_livenessUndefined: Self = StObject.set(x, "max_liveness", js.undefined)
+    
+    inline def setMax_loudness(value: Double): Self = StObject.set(x, "max_loudness", value.asInstanceOf[js.Any])
+    
+    inline def setMax_loudnessUndefined: Self = StObject.set(x, "max_loudness", js.undefined)
+    
+    inline def setMax_mode(value: Double): Self = StObject.set(x, "max_mode", value.asInstanceOf[js.Any])
+    
+    inline def setMax_modeUndefined: Self = StObject.set(x, "max_mode", js.undefined)
+    
+    inline def setMax_popularity(value: Double): Self = StObject.set(x, "max_popularity", value.asInstanceOf[js.Any])
+    
+    inline def setMax_popularityUndefined: Self = StObject.set(x, "max_popularity", js.undefined)
+    
+    inline def setMax_speechiness(value: Double): Self = StObject.set(x, "max_speechiness", value.asInstanceOf[js.Any])
+    
+    inline def setMax_speechinessUndefined: Self = StObject.set(x, "max_speechiness", js.undefined)
+    
+    inline def setMax_tempo(value: Double): Self = StObject.set(x, "max_tempo", value.asInstanceOf[js.Any])
+    
+    inline def setMax_tempoUndefined: Self = StObject.set(x, "max_tempo", js.undefined)
+    
+    inline def setMax_time_signature(value: Double): Self = StObject.set(x, "max_time_signature", value.asInstanceOf[js.Any])
+    
+    inline def setMax_time_signatureUndefined: Self = StObject.set(x, "max_time_signature", js.undefined)
+    
+    inline def setMax_valence(value: Double): Self = StObject.set(x, "max_valence", value.asInstanceOf[js.Any])
+    
+    inline def setMax_valenceUndefined: Self = StObject.set(x, "max_valence", js.undefined)
+    
+    inline def setMin_acousticness(value: Double): Self = StObject.set(x, "min_acousticness", value.asInstanceOf[js.Any])
+    
+    inline def setMin_acousticnessUndefined: Self = StObject.set(x, "min_acousticness", js.undefined)
+    
+    inline def setMin_danceability(value: Double): Self = StObject.set(x, "min_danceability", value.asInstanceOf[js.Any])
+    
+    inline def setMin_danceabilityUndefined: Self = StObject.set(x, "min_danceability", js.undefined)
+    
+    inline def setMin_duration_ms(value: Double): Self = StObject.set(x, "min_duration_ms", value.asInstanceOf[js.Any])
+    
+    inline def setMin_duration_msUndefined: Self = StObject.set(x, "min_duration_ms", js.undefined)
+    
+    inline def setMin_energy(value: Double): Self = StObject.set(x, "min_energy", value.asInstanceOf[js.Any])
+    
+    inline def setMin_energyUndefined: Self = StObject.set(x, "min_energy", js.undefined)
+    
+    inline def setMin_instrumentalness(value: Double): Self = StObject.set(x, "min_instrumentalness", value.asInstanceOf[js.Any])
+    
+    inline def setMin_instrumentalnessUndefined: Self = StObject.set(x, "min_instrumentalness", js.undefined)
+    
+    inline def setMin_key(value: Double): Self = StObject.set(x, "min_key", value.asInstanceOf[js.Any])
+    
+    inline def setMin_keyUndefined: Self = StObject.set(x, "min_key", js.undefined)
+    
+    inline def setMin_liveness(value: Double): Self = StObject.set(x, "min_liveness", value.asInstanceOf[js.Any])
+    
+    inline def setMin_livenessUndefined: Self = StObject.set(x, "min_liveness", js.undefined)
+    
+    inline def setMin_loudness(value: Double): Self = StObject.set(x, "min_loudness", value.asInstanceOf[js.Any])
+    
+    inline def setMin_loudnessUndefined: Self = StObject.set(x, "min_loudness", js.undefined)
+    
+    inline def setMin_mode(value: Double): Self = StObject.set(x, "min_mode", value.asInstanceOf[js.Any])
+    
+    inline def setMin_modeUndefined: Self = StObject.set(x, "min_mode", js.undefined)
+    
+    inline def setMin_popularity(value: Double): Self = StObject.set(x, "min_popularity", value.asInstanceOf[js.Any])
+    
+    inline def setMin_popularityUndefined: Self = StObject.set(x, "min_popularity", js.undefined)
+    
+    inline def setMin_speechiness(value: Double): Self = StObject.set(x, "min_speechiness", value.asInstanceOf[js.Any])
+    
+    inline def setMin_speechinessUndefined: Self = StObject.set(x, "min_speechiness", js.undefined)
+    
+    inline def setMin_tempo(value: Double): Self = StObject.set(x, "min_tempo", value.asInstanceOf[js.Any])
+    
+    inline def setMin_tempoUndefined: Self = StObject.set(x, "min_tempo", js.undefined)
+    
+    inline def setMin_time_signature(value: Double): Self = StObject.set(x, "min_time_signature", value.asInstanceOf[js.Any])
+    
+    inline def setMin_time_signatureUndefined: Self = StObject.set(x, "min_time_signature", js.undefined)
+    
+    inline def setMin_valence(value: Double): Self = StObject.set(x, "min_valence", value.asInstanceOf[js.Any])
+    
+    inline def setMin_valenceUndefined: Self = StObject.set(x, "min_valence", js.undefined)
+    
+    inline def setSeed_artists(value: js.Array[String] | String): Self = StObject.set(x, "seed_artists", value.asInstanceOf[js.Any])
+    
+    inline def setSeed_artistsUndefined: Self = StObject.set(x, "seed_artists", js.undefined)
+    
+    inline def setSeed_artistsVarargs(value: String*): Self = StObject.set(x, "seed_artists", js.Array(value*))
+    
+    inline def setSeed_genres(value: js.Array[String] | String): Self = StObject.set(x, "seed_genres", value.asInstanceOf[js.Any])
+    
+    inline def setSeed_genresUndefined: Self = StObject.set(x, "seed_genres", js.undefined)
+    
+    inline def setSeed_genresVarargs(value: String*): Self = StObject.set(x, "seed_genres", js.Array(value*))
+    
+    inline def setSeed_tracks(value: js.Array[String] | String): Self = StObject.set(x, "seed_tracks", value.asInstanceOf[js.Any])
+    
+    inline def setSeed_tracksUndefined: Self = StObject.set(x, "seed_tracks", js.undefined)
+    
+    inline def setSeed_tracksVarargs(value: String*): Self = StObject.set(x, "seed_tracks", js.Array(value*))
+    
+    inline def setTarget_acousticness(value: Double): Self = StObject.set(x, "target_acousticness", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_acousticnessUndefined: Self = StObject.set(x, "target_acousticness", js.undefined)
+    
+    inline def setTarget_danceability(value: Double): Self = StObject.set(x, "target_danceability", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_danceabilityUndefined: Self = StObject.set(x, "target_danceability", js.undefined)
+    
+    inline def setTarget_duration_ms(value: Double): Self = StObject.set(x, "target_duration_ms", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_duration_msUndefined: Self = StObject.set(x, "target_duration_ms", js.undefined)
+    
+    inline def setTarget_energy(value: Double): Self = StObject.set(x, "target_energy", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_energyUndefined: Self = StObject.set(x, "target_energy", js.undefined)
+    
+    inline def setTarget_instrumentalness(value: Double): Self = StObject.set(x, "target_instrumentalness", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_instrumentalnessUndefined: Self = StObject.set(x, "target_instrumentalness", js.undefined)
+    
+    inline def setTarget_key(value: Double): Self = StObject.set(x, "target_key", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_keyUndefined: Self = StObject.set(x, "target_key", js.undefined)
+    
+    inline def setTarget_liveness(value: Double): Self = StObject.set(x, "target_liveness", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_livenessUndefined: Self = StObject.set(x, "target_liveness", js.undefined)
+    
+    inline def setTarget_loudness(value: Double): Self = StObject.set(x, "target_loudness", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_loudnessUndefined: Self = StObject.set(x, "target_loudness", js.undefined)
+    
+    inline def setTarget_mode(value: Double): Self = StObject.set(x, "target_mode", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_modeUndefined: Self = StObject.set(x, "target_mode", js.undefined)
+    
+    inline def setTarget_popularity(value: Double): Self = StObject.set(x, "target_popularity", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_popularityUndefined: Self = StObject.set(x, "target_popularity", js.undefined)
+    
+    inline def setTarget_speechiness(value: Double): Self = StObject.set(x, "target_speechiness", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_speechinessUndefined: Self = StObject.set(x, "target_speechiness", js.undefined)
+    
+    inline def setTarget_tempo(value: Double): Self = StObject.set(x, "target_tempo", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_tempoUndefined: Self = StObject.set(x, "target_tempo", js.undefined)
+    
+    inline def setTarget_time_signature(value: Double): Self = StObject.set(x, "target_time_signature", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_time_signatureUndefined: Self = StObject.set(x, "target_time_signature", js.undefined)
+    
+    inline def setTarget_valence(value: Double): Self = StObject.set(x, "target_valence", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_valenceUndefined: Self = StObject.set(x, "target_valence", js.undefined)
+  }
 }
-

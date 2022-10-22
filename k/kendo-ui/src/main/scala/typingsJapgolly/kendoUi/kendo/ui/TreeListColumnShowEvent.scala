@@ -1,26 +1,27 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeListColumnShowEvent extends TreeListEvent {
-  var column: js.UndefOr[js.Any] = js.undefined
+trait TreeListColumnShowEvent
+  extends StObject
+     with TreeListEvent {
+  
+  var column: js.UndefOr[Any] = js.undefined
 }
-
 object TreeListColumnShowEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: TreeList,
-    column: js.Any = null
-  ): TreeListColumnShowEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: TreeList): TreeListColumnShowEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListColumnShowEvent]
   }
+  
+  extension [Self <: TreeListColumnShowEvent](x: Self) {
+    
+    inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+  }
 }
-

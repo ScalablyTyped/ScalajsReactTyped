@@ -1,42 +1,65 @@
 package typingsJapgolly.phaser.Phaser.Loader.FileTypes
 
 import typingsJapgolly.phaser.Phaser.Types.Loader.XHRSettingsObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpineFileConfig extends js.Object {
+trait SpineFileConfig extends StObject {
+  
   var atlasExtension: js.UndefOr[String] = js.undefined
+  
   var atlasURL: js.UndefOr[String] = js.undefined
+  
   var atlasXhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
+  
   var key: String
+  
   var normalMap: js.UndefOr[String] = js.undefined
+  
   var textureExtension: js.UndefOr[String] = js.undefined
+  
   var textureURL: js.UndefOr[String] = js.undefined
+  
   var textureXhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
 }
-
 object SpineFileConfig {
-  @scala.inline
-  def apply(
-    key: String,
-    atlasExtension: String = null,
-    atlasURL: String = null,
-    atlasXhrSettings: XHRSettingsObject = null,
-    normalMap: String = null,
-    textureExtension: String = null,
-    textureURL: String = null,
-    textureXhrSettings: XHRSettingsObject = null
-  ): SpineFileConfig = {
+  
+  inline def apply(key: String): SpineFileConfig = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (atlasExtension != null) __obj.updateDynamic("atlasExtension")(atlasExtension.asInstanceOf[js.Any])
-    if (atlasURL != null) __obj.updateDynamic("atlasURL")(atlasURL.asInstanceOf[js.Any])
-    if (atlasXhrSettings != null) __obj.updateDynamic("atlasXhrSettings")(atlasXhrSettings.asInstanceOf[js.Any])
-    if (normalMap != null) __obj.updateDynamic("normalMap")(normalMap.asInstanceOf[js.Any])
-    if (textureExtension != null) __obj.updateDynamic("textureExtension")(textureExtension.asInstanceOf[js.Any])
-    if (textureURL != null) __obj.updateDynamic("textureURL")(textureURL.asInstanceOf[js.Any])
-    if (textureXhrSettings != null) __obj.updateDynamic("textureXhrSettings")(textureXhrSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpineFileConfig]
   }
+  
+  extension [Self <: SpineFileConfig](x: Self) {
+    
+    inline def setAtlasExtension(value: String): Self = StObject.set(x, "atlasExtension", value.asInstanceOf[js.Any])
+    
+    inline def setAtlasExtensionUndefined: Self = StObject.set(x, "atlasExtension", js.undefined)
+    
+    inline def setAtlasURL(value: String): Self = StObject.set(x, "atlasURL", value.asInstanceOf[js.Any])
+    
+    inline def setAtlasURLUndefined: Self = StObject.set(x, "atlasURL", js.undefined)
+    
+    inline def setAtlasXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "atlasXhrSettings", value.asInstanceOf[js.Any])
+    
+    inline def setAtlasXhrSettingsUndefined: Self = StObject.set(x, "atlasXhrSettings", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setNormalMap(value: String): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
+    
+    inline def setNormalMapUndefined: Self = StObject.set(x, "normalMap", js.undefined)
+    
+    inline def setTextureExtension(value: String): Self = StObject.set(x, "textureExtension", value.asInstanceOf[js.Any])
+    
+    inline def setTextureExtensionUndefined: Self = StObject.set(x, "textureExtension", js.undefined)
+    
+    inline def setTextureURL(value: String): Self = StObject.set(x, "textureURL", value.asInstanceOf[js.Any])
+    
+    inline def setTextureURLUndefined: Self = StObject.set(x, "textureURL", js.undefined)
+    
+    inline def setTextureXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "textureXhrSettings", value.asInstanceOf[js.Any])
+    
+    inline def setTextureXhrSettingsUndefined: Self = StObject.set(x, "textureXhrSettings", js.undefined)
+  }
 }
-

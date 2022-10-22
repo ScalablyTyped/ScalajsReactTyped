@@ -1,31 +1,33 @@
 package typingsJapgolly.vscode.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentFormattingEditProvider extends js.Object {
+trait DocumentFormattingEditProvider extends StObject {
+  
   /**
-  		 * Provide formatting edits for a whole document.
-  		 *
-  		 * @param document The document in which the command was invoked.
-  		 * @param options Options controlling formatting.
-  		 * @param token A cancellation token.
-  		 * @return A set of text edits or a thenable that resolves to such. The lack of a result can be
-  		 * signaled by returning `undefined`, `null`, or an empty array.
-  		 */
+    * Provide formatting edits for a whole document.
+    *
+    * @param document The document in which the command was invoked.
+    * @param options Options controlling formatting.
+    * @param token A cancellation token.
+    * @return A set of text edits or a thenable that resolves to such. The lack of a result can be
+    * signaled by returning `undefined`, `null`, or an empty array.
+    */
   def provideDocumentFormattingEdits(document: TextDocument, options: FormattingOptions, token: CancellationToken): ProviderResult[js.Array[TextEdit]]
 }
-
 object DocumentFormattingEditProvider {
-  @scala.inline
-  def apply(
-    provideDocumentFormattingEdits: (TextDocument, FormattingOptions, CancellationToken) => CallbackTo[ProviderResult[js.Array[TextEdit]]]
+  
+  inline def apply(
+    provideDocumentFormattingEdits: (TextDocument, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
   ): DocumentFormattingEditProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideDocumentFormattingEdits")(js.Any.fromFunction3((t0: typingsJapgolly.vscode.mod.TextDocument, t1: typingsJapgolly.vscode.mod.FormattingOptions, t2: typingsJapgolly.vscode.mod.CancellationToken) => provideDocumentFormattingEdits(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(provideDocumentFormattingEdits = js.Any.fromFunction3(provideDocumentFormattingEdits))
     __obj.asInstanceOf[DocumentFormattingEditProvider]
   }
+  
+  extension [Self <: DocumentFormattingEditProvider](x: Self) {
+    
+    inline def setProvideDocumentFormattingEdits(value: (TextDocument, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]): Self = StObject.set(x, "provideDocumentFormattingEdits", js.Any.fromFunction3(value))
+  }
 }
-

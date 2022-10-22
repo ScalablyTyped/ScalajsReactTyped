@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Services.Store
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StorePurchaseStatus extends js.Object
-
+sealed trait StorePurchaseStatus extends StObject
 /** Defines values that represent the status of a request to purchase an app or add-on. */
 @JSGlobal("Windows.Services.Store.StorePurchaseStatus")
 @js.native
-object StorePurchaseStatus extends js.Object {
+object StorePurchaseStatus extends StObject {
+  
   /** The current user has already purchased the specified app or add-on. */
   @js.native
-  sealed trait alreadyPurchased extends StorePurchaseStatus
+  sealed trait alreadyPurchased
+    extends StObject
+       with StorePurchaseStatus
   
   /** The purchase request did not succeed because of a network connectivity error. */
   @js.native
-  sealed trait networkError extends StorePurchaseStatus
+  sealed trait networkError
+    extends StObject
+       with StorePurchaseStatus
   
   /** The purchase request did not succeed. */
   @js.native
-  sealed trait notPurchased extends StorePurchaseStatus
+  sealed trait notPurchased
+    extends StObject
+       with StorePurchaseStatus
   
   /** The purchase request did not succeed because of a server error returned by the Windows Store. */
   @js.native
-  sealed trait serverError extends StorePurchaseStatus
+  sealed trait serverError
+    extends StObject
+       with StorePurchaseStatus
   
   /** The purchase request succeeded. */
   @js.native
-  sealed trait succeeded extends StorePurchaseStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StorePurchaseStatus with Double] = js.native
-  /* 1 */ @js.native
-  object alreadyPurchased extends TopLevel[alreadyPurchased with Double]
-  
-  /* 3 */ @js.native
-  object networkError extends TopLevel[networkError with Double]
-  
-  /* 2 */ @js.native
-  object notPurchased extends TopLevel[notPurchased with Double]
-  
-  /* 4 */ @js.native
-  object serverError extends TopLevel[serverError with Double]
-  
-  /* 0 */ @js.native
-  object succeeded extends TopLevel[succeeded with Double]
-  
+  sealed trait succeeded
+    extends StObject
+       with StorePurchaseStatus
 }
-

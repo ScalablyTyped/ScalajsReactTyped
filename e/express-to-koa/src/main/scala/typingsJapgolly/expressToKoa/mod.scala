@@ -5,20 +5,22 @@ import typingsJapgolly.koa.mod.DefaultState
 import typingsJapgolly.koa.mod.Middleware
 import typingsJapgolly.node.httpMod.IncomingMessage
 import typingsJapgolly.node.httpMod.ServerResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("express-to-koa", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(
+object mod {
+  
+  inline def apply(
     middleware: js.Function3[
       /* req */ IncomingMessage, 
-      /* res */ ServerResponse, 
-      /* next */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
+      /* res */ ServerResponse[IncomingMessage], 
+      /* next */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
       Unit
     ]
-  ): Middleware[DefaultState, DefaultContext] = js.native
+  ): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(middleware.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
+  
+  @JSImport("express-to-koa", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

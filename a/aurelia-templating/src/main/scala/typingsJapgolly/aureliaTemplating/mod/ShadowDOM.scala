@@ -1,40 +1,196 @@
 package typingsJapgolly.aureliaTemplating.mod
 
+import org.scalajs.dom.Node
+import typingsJapgolly.aureliaTemplating.aureliaTemplatingStrings.`__au-default-slot-key__`
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ShadowDOM")
 @js.native
-class ShadowDOM () extends js.Object
-
+open class ShadowDOM () extends StObject
 /* static members */
-@JSImport("aurelia-templating", "ShadowDOM")
-@js.native
-object ShadowDOM extends js.Object {
-  var defaultSlotKey: js.Any = js.native
-  def distributeNodes(
-    view: js.UndefOr[js.Any],
-    nodes: js.UndefOr[js.Any],
-    slots: js.UndefOr[js.Any],
-    projectionSource: js.UndefOr[js.Any],
-    index: js.UndefOr[js.Any],
-    destinationOverride: js.UndefOr[js.Any]
-  ): js.Any = js.native
-  def distributeView(): js.Any = js.native
-  def distributeView(view: js.Any): js.Any = js.native
-  def distributeView(view: js.Any, slots: js.Any): js.Any = js.native
-  def distributeView(view: js.Any, slots: js.Any, projectionSource: js.Any): js.Any = js.native
-  def distributeView(view: js.Any, slots: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
-  def distributeView(view: js.Any, slots: js.Any, projectionSource: js.Any, index: js.Any, destinationOverride: js.Any): js.Any = js.native
-  def getSlotName(): js.Any = js.native
-  def getSlotName(node: js.Any): js.Any = js.native
-  def undistributeAll(): js.Any = js.native
-  def undistributeAll(slots: js.Any): js.Any = js.native
-  def undistributeAll(slots: js.Any, projectionSource: js.Any): js.Any = js.native
-  def undistributeView(): js.Any = js.native
-  def undistributeView(view: js.Any): js.Any = js.native
-  def undistributeView(view: js.Any, slots: js.Any): js.Any = js.native
-  def undistributeView(view: js.Any, slots: js.Any, projectionSource: js.Any): js.Any = js.native
+object ShadowDOM {
+  
+  @JSImport("aurelia-templating", "ShadowDOM")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("aurelia-templating", "ShadowDOM.defaultSlotKey")
+  @js.native
+  def defaultSlotKey: `__au-default-slot-key__` = js.native
+  inline def defaultSlotKey_=(x: `__au-default-slot-key__`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSlotKey")(x.asInstanceOf[js.Any])
+  
+  /**
+  	 * Distrbiute nodes of a projected view based on the given slots
+  	 * @param view
+  	 * @param nodes
+  	 * @param slots
+  	 * @param projectionSource
+  	 * @param index
+  	 * @param destinationOverride
+  	 */
+  inline def distributeNodes(view: View_, nodes: js.Array[Node], slots: Record[String, PassThroughSlot | ShadowSlot]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeNodes")(view.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], slots.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeNodes(
+    view: View_,
+    nodes: js.Array[Node],
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: Unit,
+    index: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeNodes")(view.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeNodes(
+    view: View_,
+    nodes: js.Array[Node],
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: Unit,
+    index: Double,
+    destinationOverride: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeNodes")(view.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any], destinationOverride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeNodes(
+    view: View_,
+    nodes: js.Array[Node],
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: Unit,
+    index: Unit,
+    destinationOverride: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeNodes")(view.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any], destinationOverride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeNodes(
+    view: View_,
+    nodes: js.Array[Node],
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ShadowSlot
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeNodes")(view.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeNodes(
+    view: View_,
+    nodes: js.Array[Node],
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ShadowSlot,
+    index: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeNodes")(view.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeNodes(
+    view: View_,
+    nodes: js.Array[Node],
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ShadowSlot,
+    index: Double,
+    destinationOverride: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeNodes")(view.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any], destinationOverride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeNodes(
+    view: View_,
+    nodes: js.Array[Node],
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ShadowSlot,
+    index: Unit,
+    destinationOverride: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeNodes")(view.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any], destinationOverride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeNodes(
+    view: View_,
+    nodes: js.Array[Node],
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ViewSlot
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeNodes")(view.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeNodes(
+    view: View_,
+    nodes: js.Array[Node],
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ViewSlot,
+    index: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeNodes")(view.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeNodes(
+    view: View_,
+    nodes: js.Array[Node],
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ViewSlot,
+    index: Double,
+    destinationOverride: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeNodes")(view.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any], destinationOverride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeNodes(
+    view: View_,
+    nodes: js.Array[Node],
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ViewSlot,
+    index: Unit,
+    destinationOverride: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeNodes")(view.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any], destinationOverride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+  	 * Project the nodes of a view to a record of slots
+  	 * @param destinationOverride the override name of the slot to distribute to
+  	 */
+  inline def distributeView(view: View_, slots: Record[String, PassThroughSlot | ShadowSlot]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeView(
+    view: View_,
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: Unit,
+    index: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeView(
+    view: View_,
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: Unit,
+    index: Double,
+    destinationOverride: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any], destinationOverride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeView(
+    view: View_,
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: Unit,
+    index: Unit,
+    destinationOverride: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any], destinationOverride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeView(view: View_, slots: Record[String, PassThroughSlot | ShadowSlot], projectionSource: ShadowSlot): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeView(
+    view: View_,
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ShadowSlot,
+    index: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeView(
+    view: View_,
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ShadowSlot,
+    index: Double,
+    destinationOverride: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any], destinationOverride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeView(
+    view: View_,
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ShadowSlot,
+    index: Unit,
+    destinationOverride: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any], destinationOverride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeView(view: View_, slots: Record[String, PassThroughSlot | ShadowSlot], projectionSource: ViewSlot): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeView(
+    view: View_,
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ViewSlot,
+    index: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeView(
+    view: View_,
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ViewSlot,
+    index: Double,
+    destinationOverride: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any], destinationOverride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def distributeView(
+    view: View_,
+    slots: Record[String, PassThroughSlot | ShadowSlot],
+    projectionSource: ViewSlot,
+    index: Unit,
+    destinationOverride: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("distributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any], index.asInstanceOf[js.Any], destinationOverride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def getSlotName(node: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSlotName")(node.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def undistributeAll(slots: Record[String, ShadowSlot | PassThroughSlot], projectionSource: ShadowSlot): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("undistributeAll")(slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /**
+  	 * @param {Record<string, ShadowSlot | PassThroughSlot>} slots
+  	 * @param {ViewSlot} projectionSource
+  	 */
+  inline def undistributeAll(slots: Record[String, ShadowSlot | PassThroughSlot], projectionSource: ViewSlot): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("undistributeAll")(slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def undistributeView(view: View_, slots: Record[String, PassThroughSlot | ShadowSlot], projectionSource: ShadowSlot): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("undistributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def undistributeView(view: View_, slots: Record[String, PassThroughSlot | ShadowSlot], projectionSource: ViewSlot): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("undistributeView")(view.asInstanceOf[js.Any], slots.asInstanceOf[js.Any], projectionSource.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

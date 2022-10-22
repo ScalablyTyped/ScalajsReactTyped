@@ -1,27 +1,34 @@
 package typingsJapgolly.handlebars.hbs.AST
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StringLiteral extends Node {
+trait StringLiteral
+  extends StObject
+     with Node {
+  
   var original: String
+  
   @JSName("type")
   var type_StringLiteral: typingsJapgolly.handlebars.handlebarsStrings.StringLiteral
+  
   var value: String
 }
-
 object StringLiteral {
-  @scala.inline
-  def apply(
-    loc: SourceLocation,
-    original: String,
-    `type`: typingsJapgolly.handlebars.handlebarsStrings.StringLiteral,
-    value: String
-  ): StringLiteral = {
+  
+  inline def apply(loc: SourceLocation, original: String, value: String): StringLiteral = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StringLiteral")
     __obj.asInstanceOf[StringLiteral]
   }
+  
+  extension [Self <: StringLiteral](x: Self) {
+    
+    inline def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.handlebars.handlebarsStrings.StringLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

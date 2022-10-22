@@ -1,23 +1,30 @@
 package typingsJapgolly.puppeteer.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Tracing extends js.Object {
-  def start(options: TracingStartOptions): js.Promise[Unit]
-  def stop(): js.Promise[Buffer]
+@JSImport("puppeteer", "Tracing")
+@js.native
+open class Tracing () extends StObject {
+  
+  /* private */ var `private`: Any = js.native
+  
+  /* Excluded from this release type: __constructor */
+  /**
+    * Starts a trace for the current page.
+    * @remarks
+    * Only one trace can be active at a time per browser.
+    *
+    * @param options - Optional `TracingOptions`.
+    */
+  def start(): js.Promise[Unit] = js.native
+  def start(options: TracingOptions): js.Promise[Unit] = js.native
+  
+  /**
+    * Stops a trace started with the `start` method.
+    * @returns Promise which resolves to buffer with trace data.
+    */
+  def stop(): js.Promise[js.UndefOr[Buffer]] = js.native
 }
-
-object Tracing {
-  @scala.inline
-  def apply(start: TracingStartOptions => CallbackTo[js.Promise[Unit]], stop: CallbackTo[js.Promise[Buffer]]): Tracing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("start")(js.Any.fromFunction1((t0: typingsJapgolly.puppeteer.mod.TracingStartOptions) => start(t0).runNow()))
-    __obj.updateDynamic("stop")(stop.toJsFn)
-    __obj.asInstanceOf[Tracing]
-  }
-}
-

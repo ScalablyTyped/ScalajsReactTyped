@@ -1,94 +1,226 @@
 package typingsJapgolly.nodeZendesk.mod.Tickets
 
 import typingsJapgolly.nodeZendesk.mod.ZendeskID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://developer.zendesk.com/rest_api/docs/support/tickets#update-ticket|Zendesk Tickets Update}
   */
-trait UpdateModel extends js.Object {
-  var additional_collaborators: js.UndefOr[js.Array[_] | Null] = js.undefined
+trait UpdateModel extends StObject {
+  
+  var additional_collaborators: js.UndefOr[js.Array[Any] | Null] = js.undefined
+  
   var assignee_email: js.UndefOr[String | Null] = js.undefined
+  
   var assignee_id: js.UndefOr[ZendeskID | Null] = js.undefined
+  
   var attribute_value_ids: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  
   var collaborator_ids: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  
   var comment: js.UndefOr[typingsJapgolly.nodeZendesk.mod.Requests.Comments.CreateModel] = js.undefined
+  
   var custom_fields: js.UndefOr[js.Array[Field] | Null] = js.undefined
+  
   var due_at: js.UndefOr[String | Null] = js.undefined
+  
   var email_ccs: js.UndefOr[js.Array[EmailCC] | Null] = js.undefined
+  
   var external_id: js.UndefOr[String | Null] = js.undefined
+  
   var followers: js.UndefOr[js.Array[Follower] | Null] = js.undefined
+  
   var group_id: js.UndefOr[Double | Null] = js.undefined
+  
   var macro_ids: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  
   var organization_id: js.UndefOr[Double | Null] = js.undefined
+  
   var priority: js.UndefOr[Priority | Null] = js.undefined
+  
   var problem_id: js.UndefOr[Double | Null] = js.undefined
+  
   var requester_id: js.UndefOr[ZendeskID] = js.undefined
+  
   var safe_update: js.UndefOr[Boolean] = js.undefined
+  
   var sharing_agreement_ids: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  
   var status: js.UndefOr[Status | Null] = js.undefined
+  
   var subject: js.UndefOr[String | Null] = js.undefined
+  
   var tags: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
   var `type`: js.UndefOr[TicketType | Null] = js.undefined
+  
   var updated_stamp: js.UndefOr[String | Null] = js.undefined
 }
-
 object UpdateModel {
-  @scala.inline
-  def apply(
-    additional_collaborators: js.Array[_] = null,
-    assignee_email: String = null,
-    assignee_id: Int | Double = null,
-    attribute_value_ids: js.Array[Double] = null,
-    collaborator_ids: js.Array[Double] = null,
-    comment: typingsJapgolly.nodeZendesk.mod.Requests.Comments.CreateModel = null,
-    custom_fields: js.Array[Field] = null,
-    due_at: String = null,
-    email_ccs: js.Array[EmailCC] = null,
-    external_id: String = null,
-    followers: js.Array[Follower] = null,
-    group_id: Int | Double = null,
-    macro_ids: js.Array[Double] = null,
-    organization_id: Int | Double = null,
-    priority: Priority = null,
-    problem_id: Int | Double = null,
-    requester_id: Int | Double = null,
-    safe_update: js.UndefOr[Boolean] = js.undefined,
-    sharing_agreement_ids: js.Array[Double] = null,
-    status: Status = null,
-    subject: String = null,
-    tags: js.Array[String] = null,
-    `type`: TicketType = null,
-    updated_stamp: String = null
-  ): UpdateModel = {
+  
+  inline def apply(): UpdateModel = {
     val __obj = js.Dynamic.literal()
-    if (additional_collaborators != null) __obj.updateDynamic("additional_collaborators")(additional_collaborators.asInstanceOf[js.Any])
-    if (assignee_email != null) __obj.updateDynamic("assignee_email")(assignee_email.asInstanceOf[js.Any])
-    if (assignee_id != null) __obj.updateDynamic("assignee_id")(assignee_id.asInstanceOf[js.Any])
-    if (attribute_value_ids != null) __obj.updateDynamic("attribute_value_ids")(attribute_value_ids.asInstanceOf[js.Any])
-    if (collaborator_ids != null) __obj.updateDynamic("collaborator_ids")(collaborator_ids.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields.asInstanceOf[js.Any])
-    if (due_at != null) __obj.updateDynamic("due_at")(due_at.asInstanceOf[js.Any])
-    if (email_ccs != null) __obj.updateDynamic("email_ccs")(email_ccs.asInstanceOf[js.Any])
-    if (external_id != null) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
-    if (followers != null) __obj.updateDynamic("followers")(followers.asInstanceOf[js.Any])
-    if (group_id != null) __obj.updateDynamic("group_id")(group_id.asInstanceOf[js.Any])
-    if (macro_ids != null) __obj.updateDynamic("macro_ids")(macro_ids.asInstanceOf[js.Any])
-    if (organization_id != null) __obj.updateDynamic("organization_id")(organization_id.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (problem_id != null) __obj.updateDynamic("problem_id")(problem_id.asInstanceOf[js.Any])
-    if (requester_id != null) __obj.updateDynamic("requester_id")(requester_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(safe_update)) __obj.updateDynamic("safe_update")(safe_update.asInstanceOf[js.Any])
-    if (sharing_agreement_ids != null) __obj.updateDynamic("sharing_agreement_ids")(sharing_agreement_ids.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (updated_stamp != null) __obj.updateDynamic("updated_stamp")(updated_stamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateModel]
   }
+  
+  extension [Self <: UpdateModel](x: Self) {
+    
+    inline def setAdditional_collaborators(value: js.Array[Any]): Self = StObject.set(x, "additional_collaborators", value.asInstanceOf[js.Any])
+    
+    inline def setAdditional_collaboratorsNull: Self = StObject.set(x, "additional_collaborators", null)
+    
+    inline def setAdditional_collaboratorsUndefined: Self = StObject.set(x, "additional_collaborators", js.undefined)
+    
+    inline def setAdditional_collaboratorsVarargs(value: Any*): Self = StObject.set(x, "additional_collaborators", js.Array(value*))
+    
+    inline def setAssignee_email(value: String): Self = StObject.set(x, "assignee_email", value.asInstanceOf[js.Any])
+    
+    inline def setAssignee_emailNull: Self = StObject.set(x, "assignee_email", null)
+    
+    inline def setAssignee_emailUndefined: Self = StObject.set(x, "assignee_email", js.undefined)
+    
+    inline def setAssignee_id(value: ZendeskID): Self = StObject.set(x, "assignee_id", value.asInstanceOf[js.Any])
+    
+    inline def setAssignee_idNull: Self = StObject.set(x, "assignee_id", null)
+    
+    inline def setAssignee_idUndefined: Self = StObject.set(x, "assignee_id", js.undefined)
+    
+    inline def setAttribute_value_ids(value: js.Array[Double]): Self = StObject.set(x, "attribute_value_ids", value.asInstanceOf[js.Any])
+    
+    inline def setAttribute_value_idsNull: Self = StObject.set(x, "attribute_value_ids", null)
+    
+    inline def setAttribute_value_idsUndefined: Self = StObject.set(x, "attribute_value_ids", js.undefined)
+    
+    inline def setAttribute_value_idsVarargs(value: Double*): Self = StObject.set(x, "attribute_value_ids", js.Array(value*))
+    
+    inline def setCollaborator_ids(value: js.Array[Double]): Self = StObject.set(x, "collaborator_ids", value.asInstanceOf[js.Any])
+    
+    inline def setCollaborator_idsNull: Self = StObject.set(x, "collaborator_ids", null)
+    
+    inline def setCollaborator_idsUndefined: Self = StObject.set(x, "collaborator_ids", js.undefined)
+    
+    inline def setCollaborator_idsVarargs(value: Double*): Self = StObject.set(x, "collaborator_ids", js.Array(value*))
+    
+    inline def setComment(value: typingsJapgolly.nodeZendesk.mod.Requests.Comments.CreateModel): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    
+    inline def setCustom_fields(value: js.Array[Field]): Self = StObject.set(x, "custom_fields", value.asInstanceOf[js.Any])
+    
+    inline def setCustom_fieldsNull: Self = StObject.set(x, "custom_fields", null)
+    
+    inline def setCustom_fieldsUndefined: Self = StObject.set(x, "custom_fields", js.undefined)
+    
+    inline def setCustom_fieldsVarargs(value: Field*): Self = StObject.set(x, "custom_fields", js.Array(value*))
+    
+    inline def setDue_at(value: String): Self = StObject.set(x, "due_at", value.asInstanceOf[js.Any])
+    
+    inline def setDue_atNull: Self = StObject.set(x, "due_at", null)
+    
+    inline def setDue_atUndefined: Self = StObject.set(x, "due_at", js.undefined)
+    
+    inline def setEmail_ccs(value: js.Array[EmailCC]): Self = StObject.set(x, "email_ccs", value.asInstanceOf[js.Any])
+    
+    inline def setEmail_ccsNull: Self = StObject.set(x, "email_ccs", null)
+    
+    inline def setEmail_ccsUndefined: Self = StObject.set(x, "email_ccs", js.undefined)
+    
+    inline def setEmail_ccsVarargs(value: EmailCC*): Self = StObject.set(x, "email_ccs", js.Array(value*))
+    
+    inline def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
+    
+    inline def setExternal_idNull: Self = StObject.set(x, "external_id", null)
+    
+    inline def setExternal_idUndefined: Self = StObject.set(x, "external_id", js.undefined)
+    
+    inline def setFollowers(value: js.Array[Follower]): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
+    
+    inline def setFollowersNull: Self = StObject.set(x, "followers", null)
+    
+    inline def setFollowersUndefined: Self = StObject.set(x, "followers", js.undefined)
+    
+    inline def setFollowersVarargs(value: Follower*): Self = StObject.set(x, "followers", js.Array(value*))
+    
+    inline def setGroup_id(value: Double): Self = StObject.set(x, "group_id", value.asInstanceOf[js.Any])
+    
+    inline def setGroup_idNull: Self = StObject.set(x, "group_id", null)
+    
+    inline def setGroup_idUndefined: Self = StObject.set(x, "group_id", js.undefined)
+    
+    inline def setMacro_ids(value: js.Array[Double]): Self = StObject.set(x, "macro_ids", value.asInstanceOf[js.Any])
+    
+    inline def setMacro_idsNull: Self = StObject.set(x, "macro_ids", null)
+    
+    inline def setMacro_idsUndefined: Self = StObject.set(x, "macro_ids", js.undefined)
+    
+    inline def setMacro_idsVarargs(value: Double*): Self = StObject.set(x, "macro_ids", js.Array(value*))
+    
+    inline def setOrganization_id(value: Double): Self = StObject.set(x, "organization_id", value.asInstanceOf[js.Any])
+    
+    inline def setOrganization_idNull: Self = StObject.set(x, "organization_id", null)
+    
+    inline def setOrganization_idUndefined: Self = StObject.set(x, "organization_id", js.undefined)
+    
+    inline def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityNull: Self = StObject.set(x, "priority", null)
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    
+    inline def setProblem_id(value: Double): Self = StObject.set(x, "problem_id", value.asInstanceOf[js.Any])
+    
+    inline def setProblem_idNull: Self = StObject.set(x, "problem_id", null)
+    
+    inline def setProblem_idUndefined: Self = StObject.set(x, "problem_id", js.undefined)
+    
+    inline def setRequester_id(value: ZendeskID): Self = StObject.set(x, "requester_id", value.asInstanceOf[js.Any])
+    
+    inline def setRequester_idUndefined: Self = StObject.set(x, "requester_id", js.undefined)
+    
+    inline def setSafe_update(value: Boolean): Self = StObject.set(x, "safe_update", value.asInstanceOf[js.Any])
+    
+    inline def setSafe_updateUndefined: Self = StObject.set(x, "safe_update", js.undefined)
+    
+    inline def setSharing_agreement_ids(value: js.Array[Double]): Self = StObject.set(x, "sharing_agreement_ids", value.asInstanceOf[js.Any])
+    
+    inline def setSharing_agreement_idsNull: Self = StObject.set(x, "sharing_agreement_ids", null)
+    
+    inline def setSharing_agreement_idsUndefined: Self = StObject.set(x, "sharing_agreement_ids", js.undefined)
+    
+    inline def setSharing_agreement_idsVarargs(value: Double*): Self = StObject.set(x, "sharing_agreement_ids", js.Array(value*))
+    
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    
+    inline def setSubjectNull: Self = StObject.set(x, "subject", null)
+    
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsNull: Self = StObject.set(x, "tags", null)
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
+    
+    inline def setType(value: TicketType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUpdated_stamp(value: String): Self = StObject.set(x, "updated_stamp", value.asInstanceOf[js.Any])
+    
+    inline def setUpdated_stampNull: Self = StObject.set(x, "updated_stamp", null)
+    
+    inline def setUpdated_stampUndefined: Self = StObject.set(x, "updated_stamp", js.undefined)
+  }
 }
-

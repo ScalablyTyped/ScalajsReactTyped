@@ -1,32 +1,30 @@
 package typingsJapgolly.framesync
 
-import typingsJapgolly.framesync.typesMod.Process
+import typingsJapgolly.framesync.anon.Delta
+import typingsJapgolly.framesync.libTypesMod.CancelSync
+import typingsJapgolly.framesync.libTypesMod.FlushSync
+import typingsJapgolly.framesync.libTypesMod.Sync
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("framesync", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def getFrameData(): AnonDelta = js.native
-  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(cancelSync) */ @js.native
-  object default extends js.Object {
-    def fixedUpdate(process: Process): Process = js.native
-    def fixedUpdate(process: Process, keepAlive: Boolean): Process = js.native
-    def fixedUpdate(process: Process, keepAlive: Boolean, immediate: Boolean): Process = js.native
-    def postRender(process: Process): Process = js.native
-    def postRender(process: Process, keepAlive: Boolean): Process = js.native
-    def postRender(process: Process, keepAlive: Boolean, immediate: Boolean): Process = js.native
-    def read(process: Process): Process = js.native
-    def read(process: Process, keepAlive: Boolean): Process = js.native
-    def read(process: Process, keepAlive: Boolean, immediate: Boolean): Process = js.native
-    def render(process: Process): Process = js.native
-    def render(process: Process, keepAlive: Boolean): Process = js.native
-    def render(process: Process, keepAlive: Boolean, immediate: Boolean): Process = js.native
-    def update(process: Process): Process = js.native
-    def update(process: Process, keepAlive: Boolean): Process = js.native
-    def update(process: Process, keepAlive: Boolean, immediate: Boolean): Process = js.native
-  }
+object mod {
   
+  @JSImport("framesync", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("framesync", JSImport.Default)
+  @js.native
+  val default: Sync = js.native
+  
+  @JSImport("framesync", "cancelSync")
+  @js.native
+  val cancelSync: CancelSync = js.native
+  
+  @JSImport("framesync", "flushSync")
+  @js.native
+  val flushSync: FlushSync = js.native
+  
+  inline def getFrameData(): Delta = ^.asInstanceOf[js.Dynamic].applyDynamic("getFrameData")().asInstanceOf[Delta]
 }
-

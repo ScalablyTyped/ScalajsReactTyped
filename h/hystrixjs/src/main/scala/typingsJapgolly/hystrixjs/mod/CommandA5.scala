@@ -1,20 +1,23 @@
 package typingsJapgolly.hystrixjs.mod
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommandA5[R, T, U, V, W, X] extends js.Object {
-  def execute(t: T, u: U, v: V, w: W, x: X): js.Thenable[R]
+trait CommandA5[R, T, U, V, W, X] extends StObject {
+  
+  def execute(t: T, u: U, v: V, w: W, x: X): PromiseLike[R]
 }
-
 object CommandA5 {
-  @scala.inline
-  def apply[R, T, U, V, W, X](execute: (T, U, V, W, X) => CallbackTo[js.Thenable[R]]): CommandA5[R, T, U, V, W, X] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(js.Any.fromFunction5((t0: T, t1: U, t2: V, t3: W, t4: X) => execute(t0, t1, t2, t3, t4).runNow()))
+  
+  inline def apply[R, T, U, V, W, X](execute: (T, U, V, W, X) => PromiseLike[R]): CommandA5[R, T, U, V, W, X] = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction5(execute))
     __obj.asInstanceOf[CommandA5[R, T, U, V, W, X]]
   }
+  
+  extension [Self <: CommandA5[?, ?, ?, ?, ?, ?], R, T, U, V, W, X](x: Self & (CommandA5[R, T, U, V, W, X])) {
+    
+    inline def setExecute(value: (T, U, V, W, X) => PromiseLike[R]): Self = StObject.set(x, "execute", js.Any.fromFunction5(value))
+  }
 }
-

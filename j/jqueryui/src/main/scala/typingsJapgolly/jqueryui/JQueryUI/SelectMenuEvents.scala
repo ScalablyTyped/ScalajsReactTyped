@@ -2,37 +2,55 @@ package typingsJapgolly.jqueryui.JQueryUI
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectMenuEvents extends js.Object {
+trait SelectMenuEvents extends StObject {
+  
   var change: js.UndefOr[SelectMenuEvent] = js.undefined
+  
   var close: js.UndefOr[SelectMenuEvent] = js.undefined
+  
   var create: js.UndefOr[SelectMenuEvent] = js.undefined
+  
   var focus: js.UndefOr[SelectMenuEvent] = js.undefined
+  
   var open: js.UndefOr[SelectMenuEvent] = js.undefined
+  
   var select: js.UndefOr[SelectMenuEvent] = js.undefined
 }
-
 object SelectMenuEvents {
-  @scala.inline
-  def apply(
-    change: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback = null,
-    close: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback = null,
-    create: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback = null,
-    focus: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback = null,
-    open: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback = null,
-    select: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback = null
-  ): SelectMenuEvents = {
+  
+  inline def apply(): SelectMenuEvents = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SelectMenuUIParams) => change(t0, t1).runNow()))
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SelectMenuUIParams) => close(t0, t1).runNow()))
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SelectMenuUIParams) => create(t0, t1).runNow()))
-    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SelectMenuUIParams) => focus(t0, t1).runNow()))
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SelectMenuUIParams) => open(t0, t1).runNow()))
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SelectMenuUIParams) => select(t0, t1).runNow()))
     __obj.asInstanceOf[SelectMenuEvents]
   }
+  
+  extension [Self <: SelectMenuEvents](x: Self) {
+    
+    inline def setChange(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback): Self = StObject.set(x, "change", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ SelectMenuUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setClose(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback): Self = StObject.set(x, "close", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ SelectMenuUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setCreate(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback): Self = StObject.set(x, "create", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ SelectMenuUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    
+    inline def setFocus(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback): Self = StObject.set(x, "focus", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ SelectMenuUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    
+    inline def setOpen(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback): Self = StObject.set(x, "open", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ SelectMenuUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    
+    inline def setSelect(value: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback): Self = StObject.set(x, "select", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ SelectMenuUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+  }
 }
-

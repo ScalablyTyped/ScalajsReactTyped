@@ -1,33 +1,27 @@
 package typingsJapgolly.riotjsDomBindings.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _ExpressionData extends js.Object
-
+trait _ExpressionData[Scope] extends StObject
 object _ExpressionData {
-  @scala.inline
-  def AttributeExpressionData(evaluate: js.Any => CallbackTo[js.Any], name: String, `type`: ExpressionType): _ExpressionData = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("evaluate")(js.Any.fromFunction1((t0: js.Any) => evaluate(t0).runNow()))
+  
+  inline def AttributeExpressionData[Scope](evaluate: Scope => Any, name: String, `type`: ExpressionType): typingsJapgolly.riotjsDomBindings.mod.AttributeExpressionData[Scope] = {
+    val __obj = js.Dynamic.literal(evaluate = js.Any.fromFunction1(evaluate), name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_ExpressionData]
+    __obj.asInstanceOf[typingsJapgolly.riotjsDomBindings.mod.AttributeExpressionData[Scope]]
   }
-  @scala.inline
-  def EventExpressionData(evaluate: js.Any => CallbackTo[js.Any], name: String, `type`: ExpressionType): _ExpressionData = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("evaluate")(js.Any.fromFunction1((t0: js.Any) => evaluate(t0).runNow()))
+  
+  inline def EventExpressionData[Scope](evaluate: Scope => Any, name: String, `type`: ExpressionType): typingsJapgolly.riotjsDomBindings.mod.EventExpressionData[Scope] = {
+    val __obj = js.Dynamic.literal(evaluate = js.Any.fromFunction1(evaluate), name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_ExpressionData]
+    __obj.asInstanceOf[typingsJapgolly.riotjsDomBindings.mod.EventExpressionData[Scope]]
   }
-  @scala.inline
-  def TextExpressionData(childNodeIndex: Double, evaluate: js.Any => CallbackTo[js.Any], `type`: ExpressionType): _ExpressionData = {
-    val __obj = js.Dynamic.literal(childNodeIndex = childNodeIndex.asInstanceOf[js.Any])
-    __obj.updateDynamic("evaluate")(js.Any.fromFunction1((t0: js.Any) => evaluate(t0).runNow()))
+  
+  inline def TextExpressionData[Scope](childNodeIndex: Double, evaluate: Scope => Any, `type`: ExpressionType): typingsJapgolly.riotjsDomBindings.mod.TextExpressionData[Scope] = {
+    val __obj = js.Dynamic.literal(childNodeIndex = childNodeIndex.asInstanceOf[js.Any], evaluate = js.Any.fromFunction1(evaluate))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_ExpressionData]
+    __obj.asInstanceOf[typingsJapgolly.riotjsDomBindings.mod.TextExpressionData[Scope]]
   }
 }
-

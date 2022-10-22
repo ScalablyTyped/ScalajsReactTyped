@@ -1,11 +1,11 @@
 package typingsJapgolly.breeze.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("breeze", "EntityChangedEvent")
 @js.native
-class EntityChangedEvent ()
-  extends typingsJapgolly.breeze.breeze.EntityChangedEvent
-
+open class EntityChangedEvent ()
+  extends StObject
+     with typingsJapgolly.breeze.breeze.EntityChangedEvent

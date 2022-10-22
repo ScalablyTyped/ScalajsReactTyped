@@ -1,31 +1,19 @@
-package typingsJapgolly.activexExcel
+package typingsJapgolly.activexExcel.Excel
 
+import typingsJapgolly.activexExcel.activexExcelInts.`1480803660`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import typingsJapgolly.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Excel {
-  type AddIns2 = typingsJapgolly.activexExcel.Excel.AddIns
-  type InternationalResult[T] = scala.Boolean | scala.Double | java.lang.String
-  type PivotFieldsResult = typingsJapgolly.activexExcel.Excel.PivotFields with (js.Function1[
-    /* Index */ scala.Double | java.lang.String, 
-    typingsJapgolly.activexExcel.Excel.PivotField
-  ]) with (js.Function1[
-    /* Indexes */ typingsJapgolly.std.SafeArray[scala.Double | java.lang.String], 
-    typingsJapgolly.activexExcel.Excel.PivotFields
-  ])
-  type PivotItemsResult = typingsJapgolly.activexExcel.Excel.PivotItems with (js.Function1[
-    /* Index */ scala.Double | java.lang.String, 
-    typingsJapgolly.activexExcel.Excel.PivotItem
-  ]) with (js.Function1[
-    /* Indexes */ typingsJapgolly.std.SafeArray[scala.Double | java.lang.String], 
-    typingsJapgolly.activexExcel.Excel.PivotItems
-  ])
-  type PivotTableWizardAutoPage[TSourceType] = js.UndefOr[scala.Boolean]
-  type PivotTableWizardSourceData[TSourceType] = js.UndefOr[
-    typingsJapgolly.activexExcel.Excel.Range | (typingsJapgolly.std.SafeArray[typingsJapgolly.activexExcel.Excel.Range | java.lang.String]) | java.lang.String
-  ]
-  type PrintToFileName[T] = js.UndefOr[java.lang.String]
-  type XlCreator = typingsJapgolly.activexExcel.activexExcelNumbers.`1480803660`
-  type XlDataLabelSeparator = typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-}
+
+type AddIns2 = AddIns
+
+type PivotFieldsResult = PivotFields & (js.Function1[/* Index */ Double | String, PivotField]) & (js.Function1[/* Indexes */ SafeArray[Double | String], PivotFields])
+
+type PivotItemsResult = PivotItems & (js.Function1[/* Index */ Double | String, PivotItem]) & (js.Function1[/* Indexes */ SafeArray[Double | String], PivotItems])
+
+type XlCreator = `1480803660`
+
+type XlDataLabelSeparator = `1`

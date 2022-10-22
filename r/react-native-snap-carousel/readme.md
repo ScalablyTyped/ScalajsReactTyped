@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-snap-carousel
 
-Typings are for version 3.7
+Typings are for version 3.8
 
 ## Library description:
 Swiper/carousel component for React Native with previews, multiple layouts, parallax images, performant handling of huge numbers of items, and RTL support. Compatible with Android & iOS.
@@ -10,14 +10,12 @@ Swiper/carousel component for React Native with previews, multiple layouts, para
 | ------------------ | :-------------: |
 | Full name          | react-native-snap-carousel |
 | Keywords           | react, native, carousel, slider, swiper, flatlist, scrollview, parallax, images, infinite, scroll, scrolling, items, edge, snap, card, cards, stack, deck, tinder, android, ios, snapping, component, rtl |
-| # releases         | 13 |
-| # dependents       | 18 |
-| # downloads        | 2580618 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 632017.6666666666 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/archriss/react-native-snap-carousel)
-- [Bugs](https://github.com/archriss/react-native-snap-carousel/issues)
 - [Npm](https://www.npmjs.com/package/react-native-snap-carousel)
     
 

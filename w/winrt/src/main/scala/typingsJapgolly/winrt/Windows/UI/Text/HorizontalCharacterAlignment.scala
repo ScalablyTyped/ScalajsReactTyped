@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HorizontalCharacterAlignment extends js.Object
-
+sealed trait HorizontalCharacterAlignment extends StObject
 @JSGlobal("Windows.UI.Text.HorizontalCharacterAlignment")
 @js.native
-object HorizontalCharacterAlignment extends js.Object {
-  @js.native
-  sealed trait center extends HorizontalCharacterAlignment
+object HorizontalCharacterAlignment extends StObject {
   
   @js.native
-  sealed trait left extends HorizontalCharacterAlignment
+  sealed trait center
+    extends StObject
+       with HorizontalCharacterAlignment
   
   @js.native
-  sealed trait right extends HorizontalCharacterAlignment
+  sealed trait left
+    extends StObject
+       with HorizontalCharacterAlignment
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HorizontalCharacterAlignment with Double] = js.native
-  /* 2 */ @js.native
-  object center extends TopLevel[center with Double]
-  
-  /* 0 */ @js.native
-  object left extends TopLevel[left with Double]
-  
-  /* 1 */ @js.native
-  object right extends TopLevel[right with Double]
-  
+  @js.native
+  sealed trait right
+    extends StObject
+       with HorizontalCharacterAlignment
 }
-

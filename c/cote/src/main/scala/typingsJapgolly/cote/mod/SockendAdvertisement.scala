@@ -1,35 +1,33 @@
 package typingsJapgolly.cote.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.cote.mod.Advertisement because Already inherited
-- typingsJapgolly.cote.mod.PublisherAdvertisement because var conflicts: key, name, namespace. Inlined broadcasts */ trait SockendAdvertisement extends ResponderAdvertisement {
+- typingsJapgolly.cote.mod.PublisherAdvertisement because var conflicts: key, name, namespace. Inlined broadcasts */ trait SockendAdvertisement
+  extends StObject
+     with ResponderAdvertisement {
+  
   /**
     * Event types that a Publisher can publish.
     */
   var broadcasts: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object SockendAdvertisement {
-  @scala.inline
-  def apply(
-    name: String,
-    broadcasts: js.Array[String] = null,
-    key: String = null,
-    namespace: String = null,
-    respondsTo: js.Array[String] = null,
-    subset: String = null
-  ): SockendAdvertisement = {
+  
+  inline def apply(name: String): SockendAdvertisement = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (broadcasts != null) __obj.updateDynamic("broadcasts")(broadcasts.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (respondsTo != null) __obj.updateDynamic("respondsTo")(respondsTo.asInstanceOf[js.Any])
-    if (subset != null) __obj.updateDynamic("subset")(subset.asInstanceOf[js.Any])
     __obj.asInstanceOf[SockendAdvertisement]
   }
+  
+  extension [Self <: SockendAdvertisement](x: Self) {
+    
+    inline def setBroadcasts(value: js.Array[String]): Self = StObject.set(x, "broadcasts", value.asInstanceOf[js.Any])
+    
+    inline def setBroadcastsUndefined: Self = StObject.set(x, "broadcasts", js.undefined)
+    
+    inline def setBroadcastsVarargs(value: String*): Self = StObject.set(x, "broadcasts", js.Array(value*))
+  }
 }
-

@@ -1,30 +1,34 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaymentDetailsUpdate extends PaymentDetailsBase {
-  var error: js.UndefOr[java.lang.String] = js.undefined
+trait PaymentDetailsUpdate
+  extends StObject
+     with PaymentDetailsBase {
+  
+  /* standard dom */
+  var paymentMethodErrors: js.UndefOr[Any] = js.undefined
+  
+  /* standard dom */
   var total: js.UndefOr[PaymentItem] = js.undefined
 }
-
 object PaymentDetailsUpdate {
-  @scala.inline
-  def apply(
-    displayItems: js.Array[PaymentItem] = null,
-    error: java.lang.String = null,
-    modifiers: js.Array[PaymentDetailsModifier] = null,
-    shippingOptions: js.Array[PaymentShippingOption] = null,
-    total: PaymentItem = null
-  ): PaymentDetailsUpdate = {
+  
+  inline def apply(): PaymentDetailsUpdate = {
     val __obj = js.Dynamic.literal()
-    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentDetailsUpdate]
   }
+  
+  extension [Self <: PaymentDetailsUpdate](x: Self) {
+    
+    inline def setPaymentMethodErrors(value: Any): Self = StObject.set(x, "paymentMethodErrors", value.asInstanceOf[js.Any])
+    
+    inline def setPaymentMethodErrorsUndefined: Self = StObject.set(x, "paymentMethodErrors", js.undefined)
+    
+    inline def setTotal(value: PaymentItem): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+  }
 }
-

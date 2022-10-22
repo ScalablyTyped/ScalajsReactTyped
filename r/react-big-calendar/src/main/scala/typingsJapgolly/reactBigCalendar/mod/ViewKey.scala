@@ -1,8 +1,8 @@
 package typingsJapgolly.reactBigCalendar.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.MONTH
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.DAY
   - typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.AGENDA
 */
-trait ViewKey extends js.Object
-
+trait ViewKey extends StObject
 object ViewKey {
-  @scala.inline
-  def AGENDA: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.AGENDA = this.cast("AGENDA")
-  @scala.inline
-  def DAY: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.DAY = this.cast("DAY")
-  @scala.inline
-  def MONTH: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.MONTH = this.cast("MONTH")
-  @scala.inline
-  def WEEK: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.WEEK = this.cast("WEEK")
-  @scala.inline
-  def WORK_WEEK: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.WORK_WEEK = this.cast("WORK_WEEK")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def AGENDA: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.AGENDA = "AGENDA".asInstanceOf[typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.AGENDA]
+  
+  inline def DAY: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.DAY = "DAY".asInstanceOf[typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.DAY]
+  
+  inline def MONTH: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.MONTH = "MONTH".asInstanceOf[typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.MONTH]
+  
+  inline def WEEK: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.WEEK = "WEEK".asInstanceOf[typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.WEEK]
+  
+  inline def WORK_WEEK: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.WORK_WEEK = "WORK_WEEK".asInstanceOf[typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.WORK_WEEK]
 }
-

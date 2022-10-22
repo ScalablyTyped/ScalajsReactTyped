@@ -1,45 +1,108 @@
 package typingsJapgolly.reactNavigationCore
 
-import typingsJapgolly.reactNavigationCore.themeContextMod.ThemeContextType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNavigationCoreStrings {
-  @js.native
-  sealed trait NavigationSlashBACK extends js.Object
   
   @js.native
-  sealed trait NavigationSlashINIT extends js.Object
+  sealed trait NAVIGATE extends StObject
+  inline def NAVIGATE: NAVIGATE = "NAVIGATE".asInstanceOf[NAVIGATE]
   
   @js.native
-  sealed trait NavigationSlashJUMP_TO extends js.Object
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait NavigationSlashNAVIGATE extends js.Object
+  sealed trait action extends StObject
+  inline def action: action = "action".asInstanceOf[action]
   
   @js.native
-  sealed trait NavigationSlashSET_PARAMS extends js.Object
+  sealed trait addListener extends StObject
+  inline def addListener: addListener = "addListener".asInstanceOf[addListener]
   
   @js.native
-  sealed trait dark extends ThemeContextType
+  sealed trait beforeRemove extends StObject
+  inline def beforeRemove: beforeRemove = "beforeRemove".asInstanceOf[beforeRemove]
   
   @js.native
-  sealed trait light extends ThemeContextType
+  sealed trait canGoBack extends StObject
+  inline def canGoBack: canGoBack = "canGoBack".asInstanceOf[canGoBack]
   
-  @scala.inline
-  def NavigationSlashBACK: NavigationSlashBACK = "Navigation/BACK".asInstanceOf[NavigationSlashBACK]
-  @scala.inline
-  def NavigationSlashINIT: NavigationSlashINIT = "Navigation/INIT".asInstanceOf[NavigationSlashINIT]
-  @scala.inline
-  def NavigationSlashJUMP_TO: NavigationSlashJUMP_TO = "Navigation/JUMP_TO".asInstanceOf[NavigationSlashJUMP_TO]
-  @scala.inline
-  def NavigationSlashNAVIGATE: NavigationSlashNAVIGATE = "Navigation/NAVIGATE".asInstanceOf[NavigationSlashNAVIGATE]
-  @scala.inline
-  def NavigationSlashSET_PARAMS: NavigationSlashSET_PARAMS = "Navigation/SET_PARAMS".asInstanceOf[NavigationSlashSET_PARAMS]
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
+  @js.native
+  sealed trait children extends StObject
+  inline def children: children = "children".asInstanceOf[children]
+  
+  @js.native
+  sealed trait defaultScreenOptions extends StObject
+  inline def defaultScreenOptions: defaultScreenOptions = "defaultScreenOptions".asInstanceOf[defaultScreenOptions]
+  
+  @js.native
+  sealed trait dispatch extends StObject
+  inline def dispatch: dispatch = "dispatch".asInstanceOf[dispatch]
+  
+  @js.native
+  sealed trait focus extends StObject
+  inline def focus: focus = "focus".asInstanceOf[focus]
+  
+  @js.native
+  sealed trait getId extends StObject
+  inline def getId: getId = "getId".asInstanceOf[getId]
+  
+  @js.native
+  sealed trait getParent extends StObject
+  inline def getParent: getParent = "getParent".asInstanceOf[getParent]
+  
+  @js.native
+  sealed trait getState extends StObject
+  inline def getState: getState = "getState".asInstanceOf[getState]
+  
+  @js.native
+  sealed trait goBack extends StObject
+  inline def goBack: goBack = "goBack".asInstanceOf[goBack]
+  
+  @js.native
+  sealed trait id extends StObject
+  inline def id: id = "id".asInstanceOf[id]
+  
+  @js.native
+  sealed trait initialRouteName extends StObject
+  inline def initialRouteName: initialRouteName = "initialRouteName".asInstanceOf[initialRouteName]
+  
+  @js.native
+  sealed trait isFocused extends StObject
+  inline def isFocused: isFocused = "isFocused".asInstanceOf[isFocused]
+  
+  @js.native
+  sealed trait key extends StObject
+  inline def key: key = "key".asInstanceOf[key]
+  
+  @js.native
+  sealed trait navigate_ extends StObject
+  inline def navigate_ : navigate_ = "navigate".asInstanceOf[navigate_]
+  
+  @js.native
+  sealed trait removeListener extends StObject
+  inline def removeListener: removeListener = "removeListener".asInstanceOf[removeListener]
+  
+  @js.native
+  sealed trait reset extends StObject
+  inline def reset: reset = "reset".asInstanceOf[reset]
+  
+  @js.native
+  sealed trait screenListeners extends StObject
+  inline def screenListeners: screenListeners = "screenListeners".asInstanceOf[screenListeners]
+  
+  @js.native
+  sealed trait screenOptions extends StObject
+  inline def screenOptions: screenOptions = "screenOptions".asInstanceOf[screenOptions]
+  
+  @js.native
+  sealed trait setOptions extends StObject
+  inline def setOptions: setOptions = "setOptions".asInstanceOf[setOptions]
+  
+  @js.native
+  sealed trait setParams extends StObject
+  inline def setParams: setParams = "setParams".asInstanceOf[setParams]
 }
-

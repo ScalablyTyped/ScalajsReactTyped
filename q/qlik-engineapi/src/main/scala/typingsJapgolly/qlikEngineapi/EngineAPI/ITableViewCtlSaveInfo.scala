@@ -1,29 +1,35 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TableViewCtlSaveInfo...
   */
-trait ITableViewCtlSaveInfo extends js.Object {
+trait ITableViewCtlSaveInfo extends StObject {
+  
   /**
     * Internal view mode.
     */
   var qInternalView: ITableViewSaveInfo
+  
   /**
     * Source view mode.
     */
   var qSourceView: ITableViewSaveInfo
 }
-
 object ITableViewCtlSaveInfo {
-  @scala.inline
-  def apply(qInternalView: ITableViewSaveInfo, qSourceView: ITableViewSaveInfo): ITableViewCtlSaveInfo = {
-    val __obj = js.Dynamic.literal(qInternalView = qInternalView.asInstanceOf[js.Any], qSourceView = qSourceView.asInstanceOf[js.Any])
   
+  inline def apply(qInternalView: ITableViewSaveInfo, qSourceView: ITableViewSaveInfo): ITableViewCtlSaveInfo = {
+    val __obj = js.Dynamic.literal(qInternalView = qInternalView.asInstanceOf[js.Any], qSourceView = qSourceView.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITableViewCtlSaveInfo]
   }
+  
+  extension [Self <: ITableViewCtlSaveInfo](x: Self) {
+    
+    inline def setQInternalView(value: ITableViewSaveInfo): Self = StObject.set(x, "qInternalView", value.asInstanceOf[js.Any])
+    
+    inline def setQSourceView(value: ITableViewSaveInfo): Self = StObject.set(x, "qSourceView", value.asInstanceOf[js.Any])
+  }
 }
-

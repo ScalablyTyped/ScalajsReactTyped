@@ -1,25 +1,10 @@
 package typingsJapgolly.winrtUwp.Windows.Gaming
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Gaming.UI")
-@js.native
-object UI extends js.Object {
-  @js.native
-  abstract class GameBar () extends js.Object
+object UI {
   
-  /* static members */
-  @js.native
-  object GameBar extends js.Object {
-    var addEventListener: js.Any = js.native
-     /* unmapped type */ var isInputRedirected: js.Any = js.native
-     /* unmapped type */ var onisinputredirectedchanged: js.Any = js.native
-     /* unmapped type */ var onvisibilitychanged: js.Any = js.native
-     /* unmapped type */ var removeEventListener: js.Any = js.native
-     /* unmapped type */ var visible: js.Any = js.native
-  }
-  
+  trait GameBar extends StObject
 }
-

@@ -1,25 +1,47 @@
 package typingsJapgolly.cesium.mod
 
-import typingsJapgolly.cesium.AnonCategory
+import typingsJapgolly.cesium.anon.Category
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ProviderViewModel")
 @js.native
-class ProviderViewModel protected () extends js.Object {
-  def this(options: AnonCategory) = this()
-  var creationCommand: Command = js.native
+open class ProviderViewModel protected () extends StObject {
+  def this(options: Category) = this()
+  
+  /**
+    * Gets the category
+    */
+  val category: String = js.native
+  
+  /**
+    * Gets the Command that creates one or more providers which will be added to
+    * the globe when this item is selected.
+    */
+  val creationCommand: Command = js.native
+  
+  /**
+    * Gets the icon.  This property is observable.
+    */
   var iconUrl: String = js.native
+  
+  /**
+    * Gets the display name.  This property is observable.
+    */
   var name: String = js.native
+  
+  /**
+    * Gets the tooltip.  This property is observable.
+    */
   var tooltip: String = js.native
 }
-
-@JSImport("cesium", "ProviderViewModel")
-@js.native
-object ProviderViewModel extends js.Object {
+object ProviderViewModel {
+  
+  /**
+    * A function which creates one or more providers.
+    */
   type CreationFunction = js.Function0[
     ImageryProvider | TerrainProvider | (js.Array[ImageryProvider | TerrainProvider])
   ]
 }
-

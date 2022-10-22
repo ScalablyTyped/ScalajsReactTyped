@@ -1,8 +1,8 @@
 package typingsJapgolly.osrm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * matchings is an array of Route objects that assemble the trace.
@@ -12,24 +12,28 @@ import scala.scalajs.js.annotation._
   *
   * https://github.com/Project-OSRM/node-osrm/blob/master/docs/api.md#match
   */
-trait MatchRoute extends Route {
+trait MatchRoute
+  extends StObject
+     with Route {
+  
   var confidence: Double
 }
-
 object MatchRoute {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     confidence: Double,
     distance: Double,
     duration: Double,
     legs: js.Array[RouteLeg],
     weight: Double,
-    weight_name: String,
-    geometry: js.Any = null
+    weight_name: String
   ): MatchRoute = {
     val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], legs = legs.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], weight_name = weight_name.asInstanceOf[js.Any])
-    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchRoute]
   }
+  
+  extension [Self <: MatchRoute](x: Self) {
+    
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+  }
 }
-

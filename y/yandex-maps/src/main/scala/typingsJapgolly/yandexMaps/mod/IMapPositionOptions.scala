@@ -1,27 +1,26 @@
 package typingsJapgolly.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IMapPositionOptions extends IMapZoomOptions {
+trait IMapPositionOptions
+  extends StObject
+     with IMapZoomOptions {
+  
   var timingFunction: js.UndefOr[String] = js.undefined
 }
-
 object IMapPositionOptions {
-  @scala.inline
-  def apply(
-    checkZoomRange: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
-    timingFunction: String = null,
-    useMapMargin: js.UndefOr[Boolean] = js.undefined
-  ): IMapPositionOptions = {
+  
+  inline def apply(): IMapPositionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkZoomRange)) __obj.updateDynamic("checkZoomRange")(checkZoomRange.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapPositionOptions]
   }
+  
+  extension [Self <: IMapPositionOptions](x: Self) {
+    
+    inline def setTimingFunction(value: String): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
+    
+    inline def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
+  }
 }
-

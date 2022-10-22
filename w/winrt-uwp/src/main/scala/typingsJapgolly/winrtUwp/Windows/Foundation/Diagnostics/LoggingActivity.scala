@@ -1,34 +1,22 @@
 package typingsJapgolly.winrtUwp.Windows.Foundation.Diagnostics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates Event Tracing for Windows (ETW) events that mark the start and end of a group of related events. */
-@JSGlobal("Windows.Foundation.Diagnostics.LoggingActivity")
 @js.native
-class LoggingActivity protected () extends js.Object {
-  /**
-    * Initializes a new instance of the LoggingActivity class for the specified LoggingChannel in Windows 8.1 compatibility mode.
-    * @param activityName The name of the logging activity.
-    * @param loggingChannel The logging channel.
-    */
-  def this(activityName: String, loggingChannel: ILoggingChannel) = this()
-  /**
-    * Initializes a new instance of the LoggingActivity class for the specified LoggingChannel and LoggingLevel in Windows 8.1 compatibility mode.
-    * @param activityName The name of the logging activity.
-    * @param loggingChannel The logging channel.
-    * @param level The logging level.
-    */
-  def this(activityName: String, loggingChannel: ILoggingChannel, level: LoggingLevel) = this()
+trait LoggingActivity extends StObject {
+  
   /** Returns the channel associated with this activity. */
   var channel: LoggingChannel = js.native
-  /** Gets the identifier for the current logging activity. */
-  var id: String = js.native
-  /** Gets the name of the current logging activity. */
-  var name: String = js.native
+  
   /** Ends the current logging activity. */
   def close(): Unit = js.native
+  
+  /** Gets the identifier for the current logging activity. */
+  var id: String = js.native
+  
   /**
     * Indicates whether at least one session is listening for events from the channel associated with this activity.
     * @return Returns true if at least one session is listening for events from the channel associated with this activity, and otherwise false.
@@ -47,6 +35,7 @@ class LoggingActivity protected () extends js.Object {
     * @return Returns true if at least one session is listening for events with the specified level and keywords from the channel associated with this activity, and otherwise false.
     */
   def isEnabled(level: LoggingLevel, keywords: Double): Boolean = js.native
+  
   /**
     * Logs an event with the specified name.
     * @param eventName The name for this event.
@@ -73,6 +62,10 @@ class LoggingActivity protected () extends js.Object {
     * @param options The options for this event. Pass null to use the default options. The options are for advanced scenarios. The default values are designed to work well for most events.
     */
   def logEvent(eventName: String, fields: LoggingFields, level: LoggingLevel, options: LoggingOptions): Unit = js.native
+  
+  /** Gets the name of the current logging activity. */
+  var name: String = js.native
+  
   /**
     * Writes an activity start event and creates a LoggingActivity object.
     * @param startEventName The name for the start event.
@@ -103,6 +96,7 @@ class LoggingActivity protected () extends js.Object {
     * @return An object that represents the new activity.
     */
   def startActivity(startEventName: String, fields: LoggingFields, level: LoggingLevel, options: LoggingOptions): LoggingActivity = js.native
+  
   /**
     * Marks the activity as closed/disposed and generates a stop event with the specified event name.
     * @param stopEventName The name for the stop event.
@@ -122,4 +116,3 @@ class LoggingActivity protected () extends js.Object {
     */
   def stopActivity(stopEventName: String, fields: LoggingFields, options: LoggingOptions): Unit = js.native
 }
-

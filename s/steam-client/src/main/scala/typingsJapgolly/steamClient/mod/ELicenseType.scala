@@ -1,65 +1,63 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ELicenseType extends js.Object
-
+sealed trait ELicenseType extends StObject
 @JSImport("steam-client", "ELicenseType")
 @js.native
-object ELicenseType extends js.Object {
-  @js.native
-  sealed trait LimitedUseDelayedActivation extends ELicenseType
-  
-  @js.native
-  sealed trait NoLicense extends ELicenseType
-  
-  @js.native
-  sealed trait RecurringCharge extends ELicenseType
-  
-  @js.native
-  sealed trait RecurringChargeLimitedUse extends ELicenseType
-  
-  @js.native
-  sealed trait RecurringChargeLimitedUseWithOverages extends ELicenseType
-  
-  @js.native
-  sealed trait RecurringOption extends ELicenseType
-  
-  @js.native
-  sealed trait SinglePurchase extends ELicenseType
-  
-  @js.native
-  sealed trait SinglePurchaseLimitedUse extends ELicenseType
+object ELicenseType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ELicenseType with Double] = js.native
-  /* 7 */ @js.native
-  object LimitedUseDelayedActivation extends TopLevel[LimitedUseDelayedActivation with Double]
+  def apply(value: Double): js.UndefOr[ELicenseType & Double] = js.native
   
-  /* 0 */ @js.native
-  object NoLicense extends TopLevel[NoLicense with Double]
+  @js.native
+  sealed trait LimitedUseDelayedActivation
+    extends StObject
+       with ELicenseType
+  /* 7 */ val LimitedUseDelayedActivation: typingsJapgolly.steamClient.mod.ELicenseType.LimitedUseDelayedActivation & Double = js.native
   
-  /* 3 */ @js.native
-  object RecurringCharge extends TopLevel[RecurringCharge with Double]
+  @js.native
+  sealed trait NoLicense
+    extends StObject
+       with ELicenseType
+  /* 0 */ val NoLicense: typingsJapgolly.steamClient.mod.ELicenseType.NoLicense & Double = js.native
   
-  /* 4 */ @js.native
-  object RecurringChargeLimitedUse extends TopLevel[RecurringChargeLimitedUse with Double]
+  @js.native
+  sealed trait RecurringCharge
+    extends StObject
+       with ELicenseType
+  /* 3 */ val RecurringCharge: typingsJapgolly.steamClient.mod.ELicenseType.RecurringCharge & Double = js.native
   
-  /* 5 */ @js.native
-  object RecurringChargeLimitedUseWithOverages extends TopLevel[RecurringChargeLimitedUseWithOverages with Double]
+  @js.native
+  sealed trait RecurringChargeLimitedUse
+    extends StObject
+       with ELicenseType
+  /* 4 */ val RecurringChargeLimitedUse: typingsJapgolly.steamClient.mod.ELicenseType.RecurringChargeLimitedUse & Double = js.native
   
-  /* 6 */ @js.native
-  object RecurringOption extends TopLevel[RecurringOption with Double]
+  @js.native
+  sealed trait RecurringChargeLimitedUseWithOverages
+    extends StObject
+       with ELicenseType
+  /* 5 */ val RecurringChargeLimitedUseWithOverages: typingsJapgolly.steamClient.mod.ELicenseType.RecurringChargeLimitedUseWithOverages & Double = js.native
   
-  /* 1 */ @js.native
-  object SinglePurchase extends TopLevel[SinglePurchase with Double]
+  @js.native
+  sealed trait RecurringOption
+    extends StObject
+       with ELicenseType
+  /* 6 */ val RecurringOption: typingsJapgolly.steamClient.mod.ELicenseType.RecurringOption & Double = js.native
   
-  /* 2 */ @js.native
-  object SinglePurchaseLimitedUse extends TopLevel[SinglePurchaseLimitedUse with Double]
+  @js.native
+  sealed trait SinglePurchase
+    extends StObject
+       with ELicenseType
+  /* 1 */ val SinglePurchase: typingsJapgolly.steamClient.mod.ELicenseType.SinglePurchase & Double = js.native
   
+  @js.native
+  sealed trait SinglePurchaseLimitedUse
+    extends StObject
+       with ELicenseType
+  /* 2 */ val SinglePurchaseLimitedUse: typingsJapgolly.steamClient.mod.ELicenseType.SinglePurchaseLimitedUse & Double = js.native
 }
-

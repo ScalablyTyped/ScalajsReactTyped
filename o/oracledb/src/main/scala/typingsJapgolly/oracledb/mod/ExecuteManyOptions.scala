@@ -1,14 +1,15 @@
 package typingsJapgolly.oracledb.mod
 
 import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used to control statement execution.
   */
-trait ExecuteManyOptions extends js.Object {
+trait ExecuteManyOptions extends StObject {
+  
   /**
     * If true, the transaction in the current connection is automatically committed at the end of statement execution.
     *
@@ -19,6 +20,7 @@ trait ExecuteManyOptions extends js.Object {
     * @default false
     */
   var autoCommit: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * This optional property allows invalid data records to be rejected while still letting valid data be processed.
     * It can only be set true for INSERT, UPDATE, DELETE or MERGE statements.
@@ -37,12 +39,14 @@ trait ExecuteManyOptions extends js.Object {
     * @default false
     */
   var batchErrors: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Defines the bind variable types, sizes and directions. This object is optional in some cases but it is more efficient to set it.
     *
     * It should be an array or an object, depending on the structure of the binds parameter.
     */
   var bindDefs: js.UndefOr[(Record[String, BindDefinition]) | js.Array[BindDefinition]] = js.undefined
+  
   /**
     * When true, this optional property enables output of the number of rows affected by each input data record.
     * It can only be set true for INSERT, UPDATE, DELETE or MERGE statements.
@@ -53,21 +57,31 @@ trait ExecuteManyOptions extends js.Object {
     */
   var dmlRowCounts: js.UndefOr[Boolean] = js.undefined
 }
-
 object ExecuteManyOptions {
-  @scala.inline
-  def apply(
-    autoCommit: js.UndefOr[Boolean] = js.undefined,
-    batchErrors: js.UndefOr[Boolean] = js.undefined,
-    bindDefs: (Record[String, BindDefinition]) | js.Array[BindDefinition] = null,
-    dmlRowCounts: js.UndefOr[Boolean] = js.undefined
-  ): ExecuteManyOptions = {
+  
+  inline def apply(): ExecuteManyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchErrors)) __obj.updateDynamic("batchErrors")(batchErrors.asInstanceOf[js.Any])
-    if (bindDefs != null) __obj.updateDynamic("bindDefs")(bindDefs.asInstanceOf[js.Any])
-    if (!js.isUndefined(dmlRowCounts)) __obj.updateDynamic("dmlRowCounts")(dmlRowCounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteManyOptions]
   }
+  
+  extension [Self <: ExecuteManyOptions](x: Self) {
+    
+    inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
+    
+    inline def setBatchErrors(value: Boolean): Self = StObject.set(x, "batchErrors", value.asInstanceOf[js.Any])
+    
+    inline def setBatchErrorsUndefined: Self = StObject.set(x, "batchErrors", js.undefined)
+    
+    inline def setBindDefs(value: (Record[String, BindDefinition]) | js.Array[BindDefinition]): Self = StObject.set(x, "bindDefs", value.asInstanceOf[js.Any])
+    
+    inline def setBindDefsUndefined: Self = StObject.set(x, "bindDefs", js.undefined)
+    
+    inline def setBindDefsVarargs(value: BindDefinition*): Self = StObject.set(x, "bindDefs", js.Array(value*))
+    
+    inline def setDmlRowCounts(value: Boolean): Self = StObject.set(x, "dmlRowCounts", value.asInstanceOf[js.Any])
+    
+    inline def setDmlRowCountsUndefined: Self = StObject.set(x, "dmlRowCounts", js.undefined)
+  }
 }
-

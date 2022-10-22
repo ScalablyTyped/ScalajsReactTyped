@@ -1,11 +1,14 @@
 package typingsJapgolly.arcgisJsApi.esri
 
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.sketch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SketchEdges3DProperties extends Edges3DProperties {
+trait SketchEdges3DProperties
+  extends StObject
+     with Edges3DProperties {
+  
   /**
     * The symbol type.
     *
@@ -13,21 +16,17 @@ trait SketchEdges3DProperties extends Edges3DProperties {
     */
   var `type`: js.UndefOr[sketch] = js.undefined
 }
-
 object SketchEdges3DProperties {
-  @scala.inline
-  def apply(
-    color: Color_ | js.Array[Double] | String = null,
-    extensionLength: Double | String = null,
-    size: Double | String = null,
-    `type`: sketch = null
-  ): SketchEdges3DProperties = {
+  
+  inline def apply(): SketchEdges3DProperties = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (extensionLength != null) __obj.updateDynamic("extensionLength")(extensionLength.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchEdges3DProperties]
   }
+  
+  extension [Self <: SketchEdges3DProperties](x: Self) {
+    
+    inline def setType(value: sketch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

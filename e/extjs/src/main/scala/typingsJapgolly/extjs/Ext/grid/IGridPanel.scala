@@ -4,30 +4,33 @@ import japgolly.scalajs.react.Callback
 import typingsJapgolly.extjs.Ext.Array
 import typingsJapgolly.extjs.Ext.data.IStore
 import typingsJapgolly.extjs.Ext.panel.ITable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IGridPanel extends ITable {
+trait IGridPanel
+  extends StObject
+     with ITable {
+  
   /** [Method] Reconfigures the grid with a new store columns
-  		* @param store Ext.data.Store The new store.
-  		* @param columns Object[] An array of column configs
-  		*/
+    * @param store Ext.data.Store The new store.
+    * @param columns Object[] An array of column configs
+    */
   var reconfigure: js.UndefOr[
     js.Function2[/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array], Unit]
   ] = js.undefined
 }
-
 object IGridPanel {
-  @scala.inline
-  def apply(
-    ITable: ITable = null,
-    reconfigure: (/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array]) => Callback = null
-  ): IGridPanel = {
+  
+  inline def apply(): IGridPanel = {
     val __obj = js.Dynamic.literal()
-    if (ITable != null) js.Dynamic.global.Object.assign(__obj, ITable)
-    if (reconfigure != null) __obj.updateDynamic("reconfigure")(js.Any.fromFunction2((t0: /* store */ js.UndefOr[typingsJapgolly.extjs.Ext.data.IStore], t1: /* columns */ js.UndefOr[typingsJapgolly.extjs.Ext.Array]) => reconfigure(t0, t1).runNow()))
     __obj.asInstanceOf[IGridPanel]
   }
+  
+  extension [Self <: IGridPanel](x: Self) {
+    
+    inline def setReconfigure(value: (/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array]) => Callback): Self = StObject.set(x, "reconfigure", js.Any.fromFunction2((t0: /* store */ js.UndefOr[IStore], t1: /* columns */ js.UndefOr[Array]) => (value(t0, t1)).runNow()))
+    
+    inline def setReconfigureUndefined: Self = StObject.set(x, "reconfigure", js.undefined)
+  }
 }
-

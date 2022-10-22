@@ -3,24 +3,23 @@ package typingsJapgolly.materialUi
 import typingsJapgolly.materialUi.MaterialUI.GridList.GridListProps
 import typingsJapgolly.materialUi.MaterialUI.GridList.GridTileProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/GridList", JSImport.Namespace)
-@js.native
-object gridListMod extends js.Object {
-  @js.native
-  class GridList ()
-    extends Component[GridListProps, js.Object, js.Any]
+object gridListMod {
   
+  @JSImport("material-ui/GridList", JSImport.Default)
   @js.native
-  class GridTile ()
-    extends Component[GridTileProps, js.Object, js.Any]
+  open class default () extends GridList
   
+  @JSImport("material-ui/GridList", "GridList")
   @js.native
-  class default ()
-    extends Component[GridListProps, js.Object, js.Any]
+  open class GridList ()
+    extends Component[GridListProps, js.Object, Any]
   
+  @JSImport("material-ui/GridList", "GridTile")
+  @js.native
+  open class GridTile ()
+    extends Component[GridTileProps, js.Object, Any]
 }
-

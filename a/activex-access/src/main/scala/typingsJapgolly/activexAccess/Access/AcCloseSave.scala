@@ -1,27 +1,23 @@
 package typingsJapgolly.activexAccess.Access
 
-import typingsJapgolly.activexAccess.activexAccessNumbers.`0`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`1`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`2`
+import typingsJapgolly.activexAccess.activexAccessInts.`0`
+import typingsJapgolly.activexAccess.activexAccessInts.`1`
+import typingsJapgolly.activexAccess.activexAccessInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`2`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`0`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`1`
+  - typingsJapgolly.activexAccess.activexAccessInts.`2`
+  - typingsJapgolly.activexAccess.activexAccessInts.`0`
+  - typingsJapgolly.activexAccess.activexAccessInts.`1`
 */
-trait AcCloseSave extends js.Object
-
+trait AcCloseSave extends StObject
 object AcCloseSave {
-  @scala.inline
-  def acSaveNo: `2` = this.cast(2)
-  @scala.inline
-  def acSavePrompt: `0` = this.cast(0)
-  @scala.inline
-  def acSaveYes: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def acSaveNo: `2` = 2.asInstanceOf[`2`]
+  
+  inline def acSavePrompt: `0` = 0.asInstanceOf[`0`]
+  
+  inline def acSaveYes: `1` = 1.asInstanceOf[`1`]
 }
-

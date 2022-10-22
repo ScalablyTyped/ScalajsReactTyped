@@ -1,57 +1,46 @@
 package typingsJapgolly.catalog.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.React.Node
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.catalog.catalogNumbers.`1`
-import typingsJapgolly.catalog.catalogNumbers.`2`
-import typingsJapgolly.catalog.catalogNumbers.`3`
-import typingsJapgolly.catalog.catalogNumbers.`4`
-import typingsJapgolly.catalog.catalogNumbers.`5`
-import typingsJapgolly.catalog.catalogNumbers.`6`
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.catalog.catalogInts.`1`
+import typingsJapgolly.catalog.catalogInts.`2`
+import typingsJapgolly.catalog.catalogInts.`3`
+import typingsJapgolly.catalog.catalogInts.`4`
+import typingsJapgolly.catalog.catalogInts.`5`
+import typingsJapgolly.catalog.catalogInts.`6`
 import typingsJapgolly.catalog.mod.SpecimenProps
 import typingsJapgolly.catalog.mod.TableSpecimenProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableSpecimen {
-  def apply(
-    rows: js.Array[StringDictionary[Node]],
-    columns: js.Array[String] = null,
-    rawBody: String = null,
-    rawOptions: String = null,
-    span: `1` | `2` | `3` | `4` | `5` | `6` = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    SpecimenProps with TableSpecimenProps, 
-    typingsJapgolly.catalog.mod.TableSpecimen, 
-    Unit, 
-    SpecimenProps with TableSpecimenProps
-  ] = {
-    val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
   
-      if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (rawBody != null) __obj.updateDynamic("rawBody")(rawBody.asInstanceOf[js.Any])
-    if (rawOptions != null) __obj.updateDynamic("rawOptions")(rawOptions.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.catalog.mod.SpecimenProps with typingsJapgolly.catalog.mod.TableSpecimenProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.catalog.mod.TableSpecimen](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.catalog.mod.SpecimenProps with typingsJapgolly.catalog.mod.TableSpecimenProps])(children: _*)
+  inline def apply(rows: js.Array[StringDictionary[Node]]): Builder = {
+    val __props = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[SpecimenProps & TableSpecimenProps]))
   }
+  
   @JSImport("catalog", "TableSpecimen")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.catalog.mod.TableSpecimen] {
+    
+    inline def columns(value: js.Array[String]): this.type = set("columns", value.asInstanceOf[js.Any])
+    
+    inline def columnsVarargs(value: String*): this.type = set("columns", js.Array(value*))
+    
+    inline def rawBody(value: String): this.type = set("rawBody", value.asInstanceOf[js.Any])
+    
+    inline def rawOptions(value: String): this.type = set("rawOptions", value.asInstanceOf[js.Any])
+    
+    inline def span(value: `1` | `2` | `3` | `4` | `5` | `6`): this.type = set("span", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: SpecimenProps & TableSpecimenProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

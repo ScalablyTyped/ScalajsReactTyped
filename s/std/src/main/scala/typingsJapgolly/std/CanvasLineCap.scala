@@ -1,24 +1,20 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.butt
   - typingsJapgolly.std.stdStrings.round
   - typingsJapgolly.std.stdStrings.square
 */
-trait CanvasLineCap extends js.Object
-
+trait CanvasLineCap extends StObject
 object CanvasLineCap {
-  @scala.inline
-  def butt: typingsJapgolly.std.stdStrings.butt = this.cast("butt")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def round: typingsJapgolly.std.stdStrings.round = this.cast("round")
-  @scala.inline
-  def square: typingsJapgolly.std.stdStrings.square = this.cast("square")
+  
+  inline def butt: typingsJapgolly.std.stdStrings.butt = "butt".asInstanceOf[typingsJapgolly.std.stdStrings.butt]
+  
+  inline def round: typingsJapgolly.std.stdStrings.round = "round".asInstanceOf[typingsJapgolly.std.stdStrings.round]
+  
+  inline def square: typingsJapgolly.std.stdStrings.square = "square".asInstanceOf[typingsJapgolly.std.stdStrings.square]
 }
-

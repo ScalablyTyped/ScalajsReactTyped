@@ -1,9 +1,10 @@
 package typingsJapgolly.fridaGum
 
 import japgolly.scalajs.react.Callback
+import typingsJapgolly.fridaGum.anon.Block
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options to customize Stalker's instrumentation.
@@ -14,16 +15,19 @@ import scala.scalajs.js.annotation._
   * don't need; i.e. avoid putting your logic in `onCallSummary` and leaving
   * `onReceive` in there as an empty callback.
   */
-trait StalkerOptions extends js.Object {
+trait StalkerOptions extends StObject {
+  
   /**
-    * User data to be passed to `StalkerNativeTransformCallback`.
+    * User data to be passed to `StalkerNativeEventCallback` and `StalkerNativeTransformCallback`.
     */
   var data: js.UndefOr[NativePointerValue] = js.undefined
+  
   /**
     * Which events, if any, should be generated and periodically delivered to
     * `onReceive()` and/or `onCallSummary()`.
     */
-  var events: js.UndefOr[AnonBlock] = js.undefined
+  var events: js.UndefOr[Block] = js.undefined
+  
   /**
     * Callback that periodically receives a summary of `call` events that
     * happened in each time window.
@@ -37,6 +41,20 @@ trait StalkerOptions extends js.Object {
     *                the current time window.
     */
   var onCallSummary: js.UndefOr[js.Function1[/* summary */ StalkerCallSummary, Unit]] = js.undefined
+  
+  /**
+    * C callback that processes events as they occur, allowing synchronous
+    * processing of events in native code – typically implemented using
+    * CModule.
+    *
+    * This is useful when wanting to implement custom filtering and/or queuing
+    * logic to improve performance, or sacrifice performance in exchange for
+    * reliable event delivery.
+    *
+    * Note that this precludes usage of `onReceive()` and `onCallSummary()`.
+    */
+  var onEvent: js.UndefOr[StalkerNativeEventCallback] = js.undefined
+  
   /**
     * Callback that periodically receives batches of events.
     *
@@ -45,6 +63,7 @@ trait StalkerOptions extends js.Object {
     *               Use `Stalker.parse()` to examine the data.
     */
   var onReceive: js.UndefOr[js.Function1[/* events */ ArrayBuffer, Unit]] = js.undefined
+  
   /**
     * Callback that transforms each basic block compiled whenever Stalker
     * wants to recompile a basic block of the code that's about to be executed
@@ -52,23 +71,41 @@ trait StalkerOptions extends js.Object {
     */
   var transform: js.UndefOr[StalkerTransformCallback] = js.undefined
 }
-
 object StalkerOptions {
-  @scala.inline
-  def apply(
-    data: NativePointerValue = null,
-    events: AnonBlock = null,
-    onCallSummary: /* summary */ StalkerCallSummary => Callback = null,
-    onReceive: /* events */ ArrayBuffer => Callback = null,
-    transform: StalkerTransformCallback = null
-  ): StalkerOptions = {
+  
+  inline def apply(): StalkerOptions = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (onCallSummary != null) __obj.updateDynamic("onCallSummary")(js.Any.fromFunction1((t0: /* summary */ typingsJapgolly.fridaGum.StalkerCallSummary) => onCallSummary(t0).runNow()))
-    if (onReceive != null) __obj.updateDynamic("onReceive")(js.Any.fromFunction1((t0: /* events */ typingsJapgolly.fridaGum.ArrayBuffer) => onReceive(t0).runNow()))
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[StalkerOptions]
   }
+  
+  extension [Self <: StalkerOptions](x: Self) {
+    
+    inline def setData(value: NativePointerValue): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setEvents(value: Block): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def setOnCallSummary(value: /* summary */ StalkerCallSummary => Callback): Self = StObject.set(x, "onCallSummary", js.Any.fromFunction1((t0: /* summary */ StalkerCallSummary) => value(t0).runNow()))
+    
+    inline def setOnCallSummaryUndefined: Self = StObject.set(x, "onCallSummary", js.undefined)
+    
+    inline def setOnEvent(value: StalkerNativeEventCallback): Self = StObject.set(x, "onEvent", value.asInstanceOf[js.Any])
+    
+    inline def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
+    
+    inline def setOnReceive(value: /* events */ ArrayBuffer => Callback): Self = StObject.set(x, "onReceive", js.Any.fromFunction1((t0: /* events */ ArrayBuffer) => value(t0).runNow()))
+    
+    inline def setOnReceiveUndefined: Self = StObject.set(x, "onReceive", js.undefined)
+    
+    inline def setTransform(value: StalkerTransformCallback): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    
+    inline def setTransformFunction1(
+      value: (/* iterator */ StalkerArm64Iterator) | StalkerArmIterator | StalkerThumbIterator | (/* iterator */ StalkerX86Iterator) => Callback
+    ): Self = StObject.set(x, "transform", js.Any.fromFunction1((t0: (/* iterator */ StalkerArm64Iterator) | StalkerArmIterator | StalkerThumbIterator | (/* iterator */ StalkerX86Iterator)) => value(t0).runNow()))
+    
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+  }
 }
-

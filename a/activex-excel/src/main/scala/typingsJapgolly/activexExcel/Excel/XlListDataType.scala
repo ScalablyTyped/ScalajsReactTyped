@@ -1,67 +1,63 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`0`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`10`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`11`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`12`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`6`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`7`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`8`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`9`
+import typingsJapgolly.activexExcel.activexExcelInts.`0`
+import typingsJapgolly.activexExcel.activexExcelInts.`10`
+import typingsJapgolly.activexExcel.activexExcelInts.`11`
+import typingsJapgolly.activexExcel.activexExcelInts.`12`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`3`
+import typingsJapgolly.activexExcel.activexExcelInts.`4`
+import typingsJapgolly.activexExcel.activexExcelInts.`5`
+import typingsJapgolly.activexExcel.activexExcelInts.`6`
+import typingsJapgolly.activexExcel.activexExcelInts.`7`
+import typingsJapgolly.activexExcel.activexExcelInts.`8`
+import typingsJapgolly.activexExcel.activexExcelInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`9`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`6`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`7`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`11`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`10`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`8`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`12`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`0`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`9`
+  - typingsJapgolly.activexExcel.activexExcelInts.`6`
+  - typingsJapgolly.activexExcel.activexExcelInts.`7`
+  - typingsJapgolly.activexExcel.activexExcelInts.`11`
+  - typingsJapgolly.activexExcel.activexExcelInts.`4`
+  - typingsJapgolly.activexExcel.activexExcelInts.`5`
+  - typingsJapgolly.activexExcel.activexExcelInts.`10`
+  - typingsJapgolly.activexExcel.activexExcelInts.`8`
+  - typingsJapgolly.activexExcel.activexExcelInts.`12`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`0`
+  - typingsJapgolly.activexExcel.activexExcelInts.`3`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
 */
-trait XlListDataType extends js.Object
-
+trait XlListDataType extends StObject
 object XlListDataType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlListDataTypeCheckbox: `9` = this.cast(9)
-  @scala.inline
-  def xlListDataTypeChoice: `6` = this.cast(6)
-  @scala.inline
-  def xlListDataTypeChoiceMulti: `7` = this.cast(7)
-  @scala.inline
-  def xlListDataTypeCounter: `11` = this.cast(11)
-  @scala.inline
-  def xlListDataTypeCurrency: `4` = this.cast(4)
-  @scala.inline
-  def xlListDataTypeDateTime: `5` = this.cast(5)
-  @scala.inline
-  def xlListDataTypeHyperLink: `10` = this.cast(10)
-  @scala.inline
-  def xlListDataTypeListLookup: `8` = this.cast(8)
-  @scala.inline
-  def xlListDataTypeMultiLineRichText: `12` = this.cast(12)
-  @scala.inline
-  def xlListDataTypeMultiLineText: `2` = this.cast(2)
-  @scala.inline
-  def xlListDataTypeNone: `0` = this.cast(0)
-  @scala.inline
-  def xlListDataTypeNumber: `3` = this.cast(3)
-  @scala.inline
-  def xlListDataTypeText: `1` = this.cast(1)
+  
+  inline def xlListDataTypeCheckbox: `9` = 9.asInstanceOf[`9`]
+  
+  inline def xlListDataTypeChoice: `6` = 6.asInstanceOf[`6`]
+  
+  inline def xlListDataTypeChoiceMulti: `7` = 7.asInstanceOf[`7`]
+  
+  inline def xlListDataTypeCounter: `11` = 11.asInstanceOf[`11`]
+  
+  inline def xlListDataTypeCurrency: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlListDataTypeDateTime: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlListDataTypeHyperLink: `10` = 10.asInstanceOf[`10`]
+  
+  inline def xlListDataTypeListLookup: `8` = 8.asInstanceOf[`8`]
+  
+  inline def xlListDataTypeMultiLineRichText: `12` = 12.asInstanceOf[`12`]
+  
+  inline def xlListDataTypeMultiLineText: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlListDataTypeNone: `0` = 0.asInstanceOf[`0`]
+  
+  inline def xlListDataTypeNumber: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlListDataTypeText: `1` = 1.asInstanceOf[`1`]
 }
-

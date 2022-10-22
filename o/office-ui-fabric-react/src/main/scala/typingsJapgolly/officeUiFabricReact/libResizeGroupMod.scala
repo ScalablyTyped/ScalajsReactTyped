@@ -1,38 +1,62 @@
 package typingsJapgolly.officeUiFabricReact
 
 import org.scalablytyped.runtime.Instantiable1
-import typingsJapgolly.officeUiFabricReact.resizeGroupTypesMod.IResizeGroupProps
+import typingsJapgolly.officeUiFabricReact.anon.AddMeasurementToCache
+import typingsJapgolly.officeUiFabricReact.anon.GetInitialResizeGroupState
+import typingsJapgolly.officeUiFabricReact.anon.IsMeasured
+import typingsJapgolly.officeUiFabricReact.libComponentsResizeGroupResizeGroupDottypesMod.IResizeGroupProps
 import typingsJapgolly.react.mod.Context
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/ResizeGroup", JSImport.Namespace)
-@js.native
-object libResizeGroupMod extends js.Object {
+object libResizeGroupMod {
+  
+  @JSImport("office-ui-fabric-react/lib/ResizeGroup", JSImport.Namespace)
   @js.native
-  class ResizeGroupBase protected ()
-    extends typingsJapgolly.officeUiFabricReact.resizeGroupMod.ResizeGroupBase {
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/ResizeGroup", "MeasuredContext")
+  @js.native
+  val MeasuredContext: Context[IsMeasured] = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("office-ui-fabric-react/lib/ResizeGroup", "ResizeGroup")
+  @js.native
+  open class ResizeGroup protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsResizeGroupResizeGroupDotbaseMod.ResizeGroupBase {
+    def this(props: IResizeGroupProps) = this()
+  }
+  @JSImport("office-ui-fabric-react/lib/ResizeGroup", "ResizeGroup")
+  @js.native
+  val ResizeGroup: Instantiable1[
+    /* props */ IResizeGroupProps, 
+    typingsJapgolly.officeUiFabricReact.libComponentsResizeGroupResizeGroupDotbaseMod.ResizeGroupBase
+  ] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/ResizeGroup", "ResizeGroupBase")
+  @js.native
+  open class ResizeGroupBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsResizeGroupMod.ResizeGroupBase {
     def this(props: IResizeGroupProps) = this()
   }
   
-  val MeasuredContext: Context[AnonIsMeasured] = js.native
-  val ResizeGroup: Instantiable1[
-    /* props */ IResizeGroupProps, 
-    typingsJapgolly.officeUiFabricReact.resizeGroupBaseMod.ResizeGroupBase
-  ] = js.native
-  def getMeasurementCache(): AnonAddMeasurementToCache = js.native
-  def getNextResizeGroupStateProvider(): AnonGetInitialResizeGroupState = js.native
-  def getNextResizeGroupStateProvider(measurementCache: AnonAddMeasurementToCache): AnonGetInitialResizeGroupState = js.native
+  @JSImport("office-ui-fabric-react/lib/ResizeGroup", "ResizeGroupDirection")
   @js.native
-  object ResizeGroupDirection extends js.Object {
-    /* 0 */ val horizontal: typingsJapgolly.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection.horizontal with Double = js.native
-    /* 1 */ val vertical: typingsJapgolly.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection.vertical with Double = js.native
+  object ResizeGroupDirection extends StObject {
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typingsJapgolly.officeUiFabricReact.resizeGroupTypesMod.ResizeGroupDirection with Double
+        typingsJapgolly.officeUiFabricReact.libComponentsResizeGroupResizeGroupDottypesMod.ResizeGroupDirection & Double
       ] = js.native
+    
+    /* 0 */ val horizontal: typingsJapgolly.officeUiFabricReact.libComponentsResizeGroupResizeGroupDottypesMod.ResizeGroupDirection.horizontal & Double = js.native
+    
+    /* 1 */ val vertical: typingsJapgolly.officeUiFabricReact.libComponentsResizeGroupResizeGroupDottypesMod.ResizeGroupDirection.vertical & Double = js.native
   }
   
+  inline def getMeasurementCache(): AddMeasurementToCache = ^.asInstanceOf[js.Dynamic].applyDynamic("getMeasurementCache")().asInstanceOf[AddMeasurementToCache]
+  
+  inline def getNextResizeGroupStateProvider(): GetInitialResizeGroupState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")().asInstanceOf[GetInitialResizeGroupState]
+  inline def getNextResizeGroupStateProvider(measurementCache: AddMeasurementToCache): GetInitialResizeGroupState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextResizeGroupStateProvider")(measurementCache.asInstanceOf[js.Any]).asInstanceOf[GetInitialResizeGroupState]
 }
-

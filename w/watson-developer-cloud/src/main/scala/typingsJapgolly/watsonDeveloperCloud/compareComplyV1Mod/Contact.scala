@@ -1,24 +1,33 @@
 package typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A contact. */
-trait Contact extends js.Object {
+trait Contact extends StObject {
+  
   /** A string listing the name of the contact. */
   var name: js.UndefOr[String] = js.undefined
+  
   /** A string listing the role of the contact. */
   var role: js.UndefOr[String] = js.undefined
 }
-
 object Contact {
-  @scala.inline
-  def apply(name: String = null, role: String = null): Contact = {
+  
+  inline def apply(): Contact = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contact]
   }
+  
+  extension [Self <: Contact](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+  }
 }
-

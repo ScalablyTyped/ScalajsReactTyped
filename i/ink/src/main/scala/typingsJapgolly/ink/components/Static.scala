@@ -1,37 +1,31 @@
 package typingsJapgolly.ink.components
 
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.ink.AnonChildren
-import typingsJapgolly.react.mod.ReactNodeArray
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.ink.buildComponentsStaticMod.Props
+import typingsJapgolly.ink.buildStylesMod.Styles
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Static {
-  def apply(
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ReactNodeArray
-  ): UnmountedSimple[
-    AnonChildren, 
-    MountedWithRawType[AnonChildren, js.Object, RawMounted[AnonChildren, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[typingsJapgolly.ink.AnonChildren, japgolly.scalajs.react.Children.None, js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.ink.AnonChildren])
+  inline def apply[T](children: (T, Double) => Node, items: js.Array[T]): Builder[T] = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction2(children), items = items.asInstanceOf[js.Any])
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[Props[T]]))
   }
+  
   @JSImport("ink", "Static")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def style(value: Styles): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[T](p: Props[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

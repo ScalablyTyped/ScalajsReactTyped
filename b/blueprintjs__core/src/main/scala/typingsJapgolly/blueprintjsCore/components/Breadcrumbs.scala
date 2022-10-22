@@ -1,61 +1,46 @@
 package typingsJapgolly.blueprintjsCore.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.blueprintjsCore.PartialIOverflowListProps
-import typingsJapgolly.blueprintjsCore.boundaryMod.Boundary
-import typingsJapgolly.blueprintjsCore.breadcrumbMod.IBreadcrumbProps
-import typingsJapgolly.blueprintjsCore.breadcrumbsMod.IBreadcrumbsProps
-import typingsJapgolly.blueprintjsCore.popoverMod.IPopoverProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsCore.anon.PartialOverflowListPropsB
+import typingsJapgolly.blueprintjsCore.libEsmCommonBoundaryMod.Boundary
+import typingsJapgolly.blueprintjsCore.libEsmComponentsBreadcrumbsBreadcrumbMod.BreadcrumbProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsBreadcrumbsBreadcrumbsMod.IBreadcrumbsProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Breadcrumbs {
-  def apply(
-    items: js.Array[IBreadcrumbProps],
-    breadcrumbRenderer: /* props */ IBreadcrumbProps => CallbackTo[Element] = null,
-    className: String = null,
-    collapseFrom: Boundary = null,
-    currentBreadcrumbRenderer: /* props */ IBreadcrumbProps => CallbackTo[Element] = null,
-    minVisibleItems: Int | Double = null,
-    overflowListProps: PartialIOverflowListProps = null,
-    popoverProps: IPopoverProps = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IBreadcrumbsProps, 
-    typingsJapgolly.blueprintjsCore.mod.Breadcrumbs, 
-    Unit, 
-    IBreadcrumbsProps
-  ] = {
-    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
   
-      if (breadcrumbRenderer != null) __obj.updateDynamic("breadcrumbRenderer")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.blueprintjsCore.breadcrumbMod.IBreadcrumbProps) => breadcrumbRenderer(t0).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom.asInstanceOf[js.Any])
-    if (currentBreadcrumbRenderer != null) __obj.updateDynamic("currentBreadcrumbRenderer")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.blueprintjsCore.breadcrumbMod.IBreadcrumbProps) => currentBreadcrumbRenderer(t0).runNow()))
-    if (minVisibleItems != null) __obj.updateDynamic("minVisibleItems")(minVisibleItems.asInstanceOf[js.Any])
-    if (overflowListProps != null) __obj.updateDynamic("overflowListProps")(overflowListProps.asInstanceOf[js.Any])
-    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsCore.breadcrumbsMod.IBreadcrumbsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsCore.mod.Breadcrumbs](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsCore.breadcrumbsMod.IBreadcrumbsProps])(children: _*)
+  inline def apply(items: js.Array[BreadcrumbProps]): Builder = {
+    val __props = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IBreadcrumbsProps]))
   }
+  
   @JSImport("@blueprintjs/core", "Breadcrumbs")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsCore.mod.Breadcrumbs] {
+    
+    inline def breadcrumbRenderer(value: /* props */ BreadcrumbProps => Element): this.type = set("breadcrumbRenderer", js.Any.fromFunction1(value))
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def collapseFrom(value: Boundary): this.type = set("collapseFrom", value.asInstanceOf[js.Any])
+    
+    inline def currentBreadcrumbRenderer(value: /* props */ BreadcrumbProps => Element): this.type = set("currentBreadcrumbRenderer", js.Any.fromFunction1(value))
+    
+    inline def minVisibleItems(value: Double): this.type = set("minVisibleItems", value.asInstanceOf[js.Any])
+    
+    inline def overflowListProps(value: PartialOverflowListPropsB): this.type = set("overflowListProps", value.asInstanceOf[js.Any])
+    
+    inline def popoverProps(value: IPopoverProps): this.type = set("popoverProps", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IBreadcrumbsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

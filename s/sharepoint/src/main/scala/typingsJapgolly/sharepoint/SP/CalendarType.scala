@@ -1,113 +1,92 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CalendarType extends js.Object
-
+sealed trait CalendarType extends StObject
 @JSGlobal("SP.CalendarType")
 @js.native
-object CalendarType extends js.Object {
-  @js.native
-  sealed trait chineseLunar extends CalendarType
+object CalendarType extends StObject {
   
   @js.native
-  sealed trait gregorian extends CalendarType
+  sealed trait chineseLunar
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait gregorianArabic extends CalendarType
+  sealed trait gregorian
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait gregorianMEFrench extends CalendarType
+  sealed trait gregorianArabic
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait gregorianXLITEnglish extends CalendarType
+  sealed trait gregorianMEFrench
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait gregorianXLITFrench extends CalendarType
+  sealed trait gregorianXLITEnglish
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait hebrew extends CalendarType
+  sealed trait gregorianXLITFrench
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait hijri extends CalendarType
+  sealed trait hebrew
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait japan extends CalendarType
+  sealed trait hijri
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait korea extends CalendarType
+  sealed trait japan
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait koreaJapanLunar extends CalendarType
+  sealed trait korea
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait none extends CalendarType
+  sealed trait koreaJapanLunar
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait sakaEra extends CalendarType
+  sealed trait none
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait taiwan extends CalendarType
+  sealed trait sakaEra
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait thai extends CalendarType
+  sealed trait taiwan
+    extends StObject
+       with CalendarType
   
   @js.native
-  sealed trait umAlQura extends CalendarType
+  sealed trait thai
+    extends StObject
+       with CalendarType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CalendarType with Double] = js.native
-  /* 13 */ @js.native
-  object chineseLunar extends TopLevel[chineseLunar with Double]
-  
-  /* 1 */ @js.native
-  object gregorian extends TopLevel[gregorian with Double]
-  
-  /* 9 */ @js.native
-  object gregorianArabic extends TopLevel[gregorianArabic with Double]
-  
-  /* 8 */ @js.native
-  object gregorianMEFrench extends TopLevel[gregorianMEFrench with Double]
-  
-  /* 10 */ @js.native
-  object gregorianXLITEnglish extends TopLevel[gregorianXLITEnglish with Double]
-  
-  /* 11 */ @js.native
-  object gregorianXLITFrench extends TopLevel[gregorianXLITFrench with Double]
-  
-  /* 7 */ @js.native
-  object hebrew extends TopLevel[hebrew with Double]
-  
-  /* 5 */ @js.native
-  object hijri extends TopLevel[hijri with Double]
-  
-  /* 2 */ @js.native
-  object japan extends TopLevel[japan with Double]
-  
-  /* 4 */ @js.native
-  object korea extends TopLevel[korea with Double]
-  
-  /* 12 */ @js.native
-  object koreaJapanLunar extends TopLevel[koreaJapanLunar with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 14 */ @js.native
-  object sakaEra extends TopLevel[sakaEra with Double]
-  
-  /* 3 */ @js.native
-  object taiwan extends TopLevel[taiwan with Double]
-  
-  /* 6 */ @js.native
-  object thai extends TopLevel[thai with Double]
-  
-  /* 15 */ @js.native
-  object umAlQura extends TopLevel[umAlQura with Double]
-  
+  @js.native
+  sealed trait umAlQura
+    extends StObject
+       with CalendarType
 }
-

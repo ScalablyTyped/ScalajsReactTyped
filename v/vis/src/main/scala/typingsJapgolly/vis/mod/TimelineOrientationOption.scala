@@ -1,21 +1,30 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimelineOrientationOption extends js.Object {
+trait TimelineOrientationOption extends StObject {
+  
   var axis: js.UndefOr[String] = js.undefined
+  
   var item: js.UndefOr[String] = js.undefined
 }
-
 object TimelineOrientationOption {
-  @scala.inline
-  def apply(axis: String = null, item: String = null): TimelineOrientationOption = {
+  
+  inline def apply(): TimelineOrientationOption = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineOrientationOption]
   }
+  
+  extension [Self <: TimelineOrientationOption](x: Self) {
+    
+    inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    
+    inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+  }
 }
-

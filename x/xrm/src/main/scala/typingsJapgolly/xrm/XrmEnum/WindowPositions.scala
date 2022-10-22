@@ -1,26 +1,22 @@
 package typingsJapgolly.xrm.XrmEnum
 
-import typingsJapgolly.xrm.xrmNumbers.`1`
-import typingsJapgolly.xrm.xrmNumbers.`2`
+import typingsJapgolly.xrm.xrmInts.`1`
+import typingsJapgolly.xrm.xrmInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An enumeration for window positions when opening a new window
   */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.xrm.xrmNumbers.`1`
-  - typingsJapgolly.xrm.xrmNumbers.`2`
+  - typingsJapgolly.xrm.xrmInts.`1`
+  - typingsJapgolly.xrm.xrmInts.`2`
 */
-trait WindowPositions extends js.Object
-
+trait WindowPositions extends StObject
 object WindowPositions {
-  @scala.inline
-  def Center: `1` = this.cast(1)
-  @scala.inline
-  def Side: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Center: `1` = 1.asInstanceOf[`1`]
+  
+  inline def Side: `2` = 2.asInstanceOf[`2`]
 }
-

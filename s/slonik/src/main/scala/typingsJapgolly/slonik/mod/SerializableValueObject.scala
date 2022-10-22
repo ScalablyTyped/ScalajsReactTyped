@@ -1,20 +1,17 @@
 package typingsJapgolly.slonik.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SerializableValueObject
-  extends /* x */ StringDictionary[SerializableValueType]
-     with _SerializableValueType
-
+  extends StObject
+     with /* x */ StringDictionary[SerializableValueType]
 object SerializableValueObject {
-  @scala.inline
-  def apply(StringDictionary: /* x */ StringDictionary[SerializableValueType] = null): SerializableValueObject = {
+  
+  inline def apply(): SerializableValueObject = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SerializableValueObject]
   }
 }
-

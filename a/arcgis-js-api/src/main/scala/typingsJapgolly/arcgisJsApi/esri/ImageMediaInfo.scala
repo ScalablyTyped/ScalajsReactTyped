@@ -1,36 +1,36 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ImageMediaInfo
-  extends JSONSupport
+  extends StObject
+     with Accessor
+     with JSONSupport
      with MediaInfo {
+  
   /**
-    * Refresh interval of the layer in minutes. Non-zero value indicates automatic layer refresh at the specified interval. Value of `0` indicates auto refresh is not enabled. If the property does not exist, it is equivalent to having a value of `0`.
+    * Refresh interval of the layer in minutes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html#refreshInterval)
     */
-  var refreshInterval: Double
+  var refreshInterval: Double = js.native
+  
   /**
     * The type of popup element.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html#type)
-    *
     * @default image
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html#type)
     */
-  val `type`: String
+  val `type`: String = js.native
+  
   /**
     * Defines the value format of the image media element and how the images should be retrieved.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html#value)
     */
-  var value: ImageMediaInfoValue
+  var value: ImageMediaInfoValue = js.native
 }
-
-@JSGlobal("__esri.ImageMediaInfo")
-@js.native
-object ImageMediaInfo extends TopLevel[ImageMediaInfoConstructor]
-

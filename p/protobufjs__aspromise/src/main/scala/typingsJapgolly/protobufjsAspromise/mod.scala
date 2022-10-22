@@ -1,12 +1,11 @@
 package typingsJapgolly.protobufjsAspromise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@protobufjs/aspromise", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Returns a promise from a node-style callback function.
     * @memberof util
@@ -15,7 +14,16 @@ object mod extends js.Object {
     * @param {...*} params Function arguments
     * @returns {Promise<*>} Promisified function
     */
-  def apply(fn: asPromiseCallback, ctx: js.Any, params: js.Any*): js.Promise[_] = js.native
-  type asPromiseCallback = js.Function2[/* error */ js.Error | Null, /* repeated */ js.Any, js.Object]
+  inline def apply(fn: asPromiseCallback, ctx: Any, params: Any*): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].apply((scala.List(fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Any]]
+  
+  @JSImport("@protobufjs/aspromise", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @js.native
+  trait asPromiseCallback extends StObject {
+    
+    def apply(error: js.Error, params: Any*): js.Object = js.native
+    def apply(error: Null, params: Any*): js.Object = js.native
+  }
 }
-

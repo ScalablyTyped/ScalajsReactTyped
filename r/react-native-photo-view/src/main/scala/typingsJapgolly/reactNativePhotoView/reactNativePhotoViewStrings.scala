@@ -1,44 +1,36 @@
 package typingsJapgolly.reactNativePhotoView
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativePhotoViewStrings {
-  @js.native
-  sealed trait center extends js.Object
   
   @js.native
-  sealed trait centerCrop extends js.Object
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait centerInside extends js.Object
+  sealed trait centerCrop extends StObject
+  inline def centerCrop: centerCrop = "centerCrop".asInstanceOf[centerCrop]
   
   @js.native
-  sealed trait fitCenter extends js.Object
+  sealed trait centerInside extends StObject
+  inline def centerInside: centerInside = "centerInside".asInstanceOf[centerInside]
   
   @js.native
-  sealed trait fitEnd extends js.Object
+  sealed trait fitCenter extends StObject
+  inline def fitCenter: fitCenter = "fitCenter".asInstanceOf[fitCenter]
   
   @js.native
-  sealed trait fitStart extends js.Object
+  sealed trait fitEnd extends StObject
+  inline def fitEnd: fitEnd = "fitEnd".asInstanceOf[fitEnd]
   
   @js.native
-  sealed trait fitXY extends js.Object
+  sealed trait fitStart extends StObject
+  inline def fitStart: fitStart = "fitStart".asInstanceOf[fitStart]
   
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def centerCrop: centerCrop = "centerCrop".asInstanceOf[centerCrop]
-  @scala.inline
-  def centerInside: centerInside = "centerInside".asInstanceOf[centerInside]
-  @scala.inline
-  def fitCenter: fitCenter = "fitCenter".asInstanceOf[fitCenter]
-  @scala.inline
-  def fitEnd: fitEnd = "fitEnd".asInstanceOf[fitEnd]
-  @scala.inline
-  def fitStart: fitStart = "fitStart".asInstanceOf[fitStart]
-  @scala.inline
-  def fitXY: fitXY = "fitXY".asInstanceOf[fitXY]
+  @js.native
+  sealed trait fitXY extends StObject
+  inline def fitXY: fitXY = "fitXY".asInstanceOf[fitXY]
 }
-

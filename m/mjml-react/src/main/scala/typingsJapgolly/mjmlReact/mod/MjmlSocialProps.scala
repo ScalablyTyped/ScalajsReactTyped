@@ -1,58 +1,112 @@
 package typingsJapgolly.mjmlReact.mod
 
-import typingsJapgolly.csstype.mod.BackgroundColorProperty
-import typingsJapgolly.csstype.mod.ColorProperty
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import typingsJapgolly.csstype.mod.Property.BackgroundColor
+import typingsJapgolly.csstype.mod.Property.Color
 import typingsJapgolly.mjmlReact.mjmlReactStrings.horizontal
 import typingsJapgolly.mjmlReact.mjmlReactStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MjmlSocialProps extends js.Object {
+trait MjmlSocialProps extends StObject {
+  
   var align: js.UndefOr[String] = js.undefined
+  
   var borderRadius: js.UndefOr[String | Double] = js.undefined
-  var color: js.UndefOr[ColorProperty] = js.undefined
-  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
+  
+  var children: js.UndefOr[Node] = js.undefined
+  
+  var color: js.UndefOr[Color] = js.undefined
+  
+  var containerBackgroundColor: js.UndefOr[BackgroundColor] = js.undefined
+  
   var fontFamily: js.UndefOr[String] = js.undefined
+  
   var fontSize: js.UndefOr[String | Double] = js.undefined
+  
   var iconHeight: js.UndefOr[String] = js.undefined
+  
   var iconSize: js.UndefOr[String] = js.undefined
+  
   var innerPadding: js.UndefOr[String] = js.undefined
+  
   var lineHeight: js.UndefOr[String | Double] = js.undefined
+  
   var mode: js.UndefOr[vertical | horizontal] = js.undefined
+  
   var textDecoration: js.UndefOr[String] = js.undefined
 }
-
 object MjmlSocialProps {
-  @scala.inline
-  def apply(
-    align: String = null,
-    borderRadius: String | Double = null,
-    color: ColorProperty = null,
-    containerBackgroundColor: BackgroundColorProperty = null,
-    fontFamily: String = null,
-    fontSize: String | Double = null,
-    iconHeight: String = null,
-    iconSize: String = null,
-    innerPadding: String = null,
-    lineHeight: String | Double = null,
-    mode: vertical | horizontal = null,
-    textDecoration: String = null
-  ): MjmlSocialProps = {
+  
+  inline def apply(): MjmlSocialProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (containerBackgroundColor != null) __obj.updateDynamic("containerBackgroundColor")(containerBackgroundColor.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (iconHeight != null) __obj.updateDynamic("iconHeight")(iconHeight.asInstanceOf[js.Any])
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (innerPadding != null) __obj.updateDynamic("innerPadding")(innerPadding.asInstanceOf[js.Any])
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
     __obj.asInstanceOf[MjmlSocialProps]
   }
+  
+  extension [Self <: MjmlSocialProps](x: Self) {
+    
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setBorderRadius(value: String | Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setContainerBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setContainerBackgroundColorUndefined: Self = StObject.set(x, "containerBackgroundColor", js.undefined)
+    
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    
+    inline def setFontSize(value: String | Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setIconHeight(value: String): Self = StObject.set(x, "iconHeight", value.asInstanceOf[js.Any])
+    
+    inline def setIconHeightUndefined: Self = StObject.set(x, "iconHeight", js.undefined)
+    
+    inline def setIconSize(value: String): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
+    
+    inline def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
+    
+    inline def setInnerPadding(value: String): Self = StObject.set(x, "innerPadding", value.asInstanceOf[js.Any])
+    
+    inline def setInnerPaddingUndefined: Self = StObject.set(x, "innerPadding", js.undefined)
+    
+    inline def setLineHeight(value: String | Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    
+    inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+    
+    inline def setMode(value: vertical | horizontal): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+    
+    inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
+  }
 }
-

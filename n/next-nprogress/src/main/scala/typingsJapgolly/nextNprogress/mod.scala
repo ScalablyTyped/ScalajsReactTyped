@@ -1,15 +1,19 @@
 package typingsJapgolly.nextNprogress
 
+import typingsJapgolly.nextNprogress.anon.PartialNProgressOptions
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("next-nprogress", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
-  def default(delayMs: Double): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
-  def default(delayMs: Double, options: PartialNProgressOptions): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
+object mod {
+  
+  @JSImport("next-nprogress", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
+  inline def default(delayMs: Double): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(delayMs.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
+  inline def default(delayMs: Double, options: PartialNProgressOptions): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(delayMs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
+  inline def default(delayMs: Unit, options: PartialNProgressOptions): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(delayMs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
 }
-

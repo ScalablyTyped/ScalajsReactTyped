@@ -1,8 +1,8 @@
 package typingsJapgolly.cordovaPluginDeviceOrientation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * This plugin provides access to the device's compass. The compass is a sensor that detects
@@ -10,12 +10,14 @@ import scala.scalajs.js.annotation._
   * It measures the heading in degrees from 0 to 359.99, where 0 is north.
   */
 @js.native
-trait Compass extends js.Object {
+trait Compass extends StObject {
+  
   /**
     * Stop watching the compass referenced by the watch ID parameter.
     * @param id The ID returned by navigator.compass.watchHeading.
     */
   def clearWatch(id: Double): Unit = js.native
+  
   /**
     * Get the current compass heading. The compass heading is returned via a CompassHeading
     * object using the onSuccess callback function.
@@ -31,6 +33,7 @@ trait Compass extends js.Object {
     onError: js.Function1[/* error */ CompassError, Unit],
     options: CompassOptions
   ): Unit = js.native
+  
   /**
     * Gets the device's current heading at a regular interval. Each time the heading is retrieved,
     * the headingSuccess callback function is executed. The returned watch ID references the compass
@@ -50,4 +53,3 @@ trait Compass extends js.Object {
     options: CompassOptions
   ): Double = js.native
 }
-

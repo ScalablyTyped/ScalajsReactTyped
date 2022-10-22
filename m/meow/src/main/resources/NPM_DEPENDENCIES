@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "meow" : "11.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "meow" : "11.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,16 +1,18 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BootstrapCheckBoxEventMap extends BootstrapClientEditEventMap {
+trait BootstrapCheckBoxEventMap
+  extends StObject
+     with BootstrapClientEditEventMap {
+  
   var checkedChanged: ProcessingModeEventArgs
 }
-
 object BootstrapCheckBoxEventMap {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     checkedChanged: ProcessingModeEventArgs,
     gotFocus: EventArgs,
     init: EventArgs,
@@ -19,8 +21,11 @@ object BootstrapCheckBoxEventMap {
     valueChanged: ProcessingModeEventArgs
   ): BootstrapCheckBoxEventMap = {
     val __obj = js.Dynamic.literal(checkedChanged = checkedChanged.asInstanceOf[js.Any], gotFocus = gotFocus.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], lostFocus = lostFocus.asInstanceOf[js.Any], validation = validation.asInstanceOf[js.Any], valueChanged = valueChanged.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapCheckBoxEventMap]
   }
+  
+  extension [Self <: BootstrapCheckBoxEventMap](x: Self) {
+    
+    inline def setCheckedChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "checkedChanged", value.asInstanceOf[js.Any])
+  }
 }
-

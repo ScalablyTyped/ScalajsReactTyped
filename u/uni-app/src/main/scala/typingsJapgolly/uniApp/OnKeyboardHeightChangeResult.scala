@@ -1,22 +1,27 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnKeyboardHeightChangeResult extends js.Object {
+trait OnKeyboardHeightChangeResult extends StObject {
+  
   /**
     * 键盘高度
     */
   var height: js.UndefOr[Double] = js.undefined
 }
-
 object OnKeyboardHeightChangeResult {
-  @scala.inline
-  def apply(height: Int | Double = null): OnKeyboardHeightChangeResult = {
+  
+  inline def apply(): OnKeyboardHeightChangeResult = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnKeyboardHeightChangeResult]
   }
+  
+  extension [Self <: OnKeyboardHeightChangeResult](x: Self) {
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+  }
 }
-

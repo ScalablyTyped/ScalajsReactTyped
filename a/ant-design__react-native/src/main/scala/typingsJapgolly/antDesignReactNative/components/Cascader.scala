@@ -1,62 +1,65 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.cascaderMod.default
-import typingsJapgolly.antDesignReactNative.cascaderTypesMod.CascaderDataItem
-import typingsJapgolly.antDesignReactNative.cascaderTypesMod.CascaderProps
-import typingsJapgolly.antDesignReactNative.cascaderTypesMod.CascaderValue
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignReactNative.libPickerCascaderCascaderTypesMod.CascaderDataItem
+import typingsJapgolly.antDesignReactNative.libPickerCascaderCascaderTypesMod.CascaderOneValue
+import typingsJapgolly.antDesignReactNative.libPickerCascaderCascaderTypesMod.CascaderProps
+import typingsJapgolly.antDesignReactNative.libPickerCascaderCascaderTypesMod.CascaderValue
+import typingsJapgolly.antDesignReactNative.libPickerCascaderMod.default
 import typingsJapgolly.reactNative.mod.StyleProp
+import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Cascader {
-  def apply(
-    data: js.Array[CascaderDataItem],
-    cols: Int | Double = null,
-    defaultValue: CascaderValue = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    indicatorStyle: StyleProp[ViewStyle] = null,
-    onChange: /* value */ CascaderValue => Callback = null,
-    onScrollChange: /* value */ CascaderValue => Callback = null,
-    pickerItemStyle: StyleProp[ViewStyle] = null,
-    rootNativeProps: js.Object = null,
-    style: StyleProp[ViewStyle] = null,
-    value: CascaderValue = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CascaderProps, default, Unit, CascaderProps] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
-      if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.antDesignReactNative.cascaderTypesMod.CascaderValue) => onChange(t0).runNow()))
-    if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.antDesignReactNative.cascaderTypesMod.CascaderValue) => onScrollChange(t0).runNow()))
-    if (pickerItemStyle != null) __obj.updateDynamic("pickerItemStyle")(pickerItemStyle.asInstanceOf[js.Any])
-    if (rootNativeProps != null) __obj.updateDynamic("rootNativeProps")(rootNativeProps.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.cascaderTypesMod.CascaderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.cascaderMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.cascaderTypesMod.CascaderProps])(children: _*)
+  inline def apply(data: js.Array[CascaderDataItem]): Builder = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[CascaderProps]))
   }
+  
   @JSImport("@ant-design/react-native/lib/picker/cascader", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def cols(value: Double): this.type = set("cols", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: CascaderValue): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def defaultValueVarargs(value: CascaderOneValue*): this.type = set("defaultValue", js.Array(value*))
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def indicatorStyle(value: StyleProp[ViewStyle]): this.type = set("indicatorStyle", value.asInstanceOf[js.Any])
+    
+    inline def indicatorStyleNull: this.type = set("indicatorStyle", null)
+    
+    inline def onChange(value: /* value */ CascaderValue => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* value */ CascaderValue) => value(t0).runNow()))
+    
+    inline def onScrollChange(value: /* value */ CascaderValue => Callback): this.type = set("onScrollChange", js.Any.fromFunction1((t0: /* value */ CascaderValue) => value(t0).runNow()))
+    
+    inline def pickerItemStyle(value: StyleProp[TextStyle]): this.type = set("pickerItemStyle", value.asInstanceOf[js.Any])
+    
+    inline def pickerItemStyleNull: this.type = set("pickerItemStyle", null)
+    
+    inline def rootNativeProps(value: js.Object): this.type = set("rootNativeProps", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def value(value: CascaderValue): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueVarargs(value: CascaderOneValue*): this.type = set("value", js.Array(value*))
+  }
+  
+  def withProps(p: CascaderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,21 +1,17 @@
 package typingsJapgolly.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.auth0.auth0Strings.duo
   - typingsJapgolly.auth0.auth0Strings.`google-authenticator`
 */
-trait DeleteDeleteMultifactorParamsProvider extends js.Object
-
+trait DeleteDeleteMultifactorParamsProvider extends StObject
 object DeleteDeleteMultifactorParamsProvider {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def duo: typingsJapgolly.auth0.auth0Strings.duo = this.cast("duo")
-  @scala.inline
-  def `google-authenticator`: typingsJapgolly.auth0.auth0Strings.`google-authenticator` = this.cast("google-authenticator")
+  
+  inline def duo: typingsJapgolly.auth0.auth0Strings.duo = "duo".asInstanceOf[typingsJapgolly.auth0.auth0Strings.duo]
+  
+  inline def `google-authenticator`: typingsJapgolly.auth0.auth0Strings.`google-authenticator` = "google-authenticator".asInstanceOf[typingsJapgolly.auth0.auth0Strings.`google-authenticator`]
 }
-

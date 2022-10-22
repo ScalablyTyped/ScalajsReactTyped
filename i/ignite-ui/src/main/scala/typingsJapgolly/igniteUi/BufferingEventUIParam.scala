@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BufferingEventUIParam extends js.Object {
+trait BufferingEventUIParam extends StObject {
+  
   /**
-  	 * Get buffered percentage.
-  	 */
+    * Get buffered percentage.
+    */
   var buffered: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Get the url of the playing video.
-  	 */
+    * Get the url of the playing video.
+    */
   var source: js.UndefOr[String] = js.undefined
 }
-
 object BufferingEventUIParam {
-  @scala.inline
-  def apply(buffered: Int | Double = null, source: String = null): BufferingEventUIParam = {
+  
+  inline def apply(): BufferingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (buffered != null) __obj.updateDynamic("buffered")(buffered.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferingEventUIParam]
   }
+  
+  extension [Self <: BufferingEventUIParam](x: Self) {
+    
+    inline def setBuffered(value: Double): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
+    
+    inline def setBufferedUndefined: Self = StObject.set(x, "buffered", js.undefined)
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+  }
 }
-

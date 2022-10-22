@@ -1,29 +1,32 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.monacoEditor.mod.CancellationToken
 import typingsJapgolly.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LinkProvider extends js.Object {
+trait LinkProvider extends StObject {
+  
+  def provideLinks(model: ITextModel, token: CancellationToken): ProviderResult[ILinksList]
+  
   var resolveLink: js.UndefOr[
     js.Function2[/* link */ ILink, /* token */ CancellationToken, ProviderResult[ILink]]
   ] = js.undefined
-  def provideLinks(model: ITextModel, token: CancellationToken): ProviderResult[ILinksList]
 }
-
 object LinkProvider {
-  @scala.inline
-  def apply(
-    provideLinks: (ITextModel, CancellationToken) => CallbackTo[ProviderResult[ILinksList]],
-    resolveLink: (/* link */ ILink, /* token */ CancellationToken) => CallbackTo[ProviderResult[ILink]] = null
-  ): LinkProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideLinks")(js.Any.fromFunction2((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.CancellationToken) => provideLinks(t0, t1).runNow()))
-    if (resolveLink != null) __obj.updateDynamic("resolveLink")(js.Any.fromFunction2((t0: /* link */ typingsJapgolly.monacoEditor.mod.languages.ILink, t1: /* token */ typingsJapgolly.monacoEditor.mod.CancellationToken) => resolveLink(t0, t1).runNow()))
+  
+  inline def apply(provideLinks: (ITextModel, CancellationToken) => ProviderResult[ILinksList]): LinkProvider = {
+    val __obj = js.Dynamic.literal(provideLinks = js.Any.fromFunction2(provideLinks))
     __obj.asInstanceOf[LinkProvider]
   }
+  
+  extension [Self <: LinkProvider](x: Self) {
+    
+    inline def setProvideLinks(value: (ITextModel, CancellationToken) => ProviderResult[ILinksList]): Self = StObject.set(x, "provideLinks", js.Any.fromFunction2(value))
+    
+    inline def setResolveLink(value: (/* link */ ILink, /* token */ CancellationToken) => ProviderResult[ILink]): Self = StObject.set(x, "resolveLink", js.Any.fromFunction2(value))
+    
+    inline def setResolveLinkUndefined: Self = StObject.set(x, "resolveLink", js.undefined)
+  }
 }
-

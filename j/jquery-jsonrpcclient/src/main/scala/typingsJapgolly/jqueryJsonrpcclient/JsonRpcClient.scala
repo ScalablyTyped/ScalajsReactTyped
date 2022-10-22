@@ -2,12 +2,13 @@ package typingsJapgolly.jqueryJsonrpcclient
 
 import typingsJapgolly.jquery.JQueryDeferred
 import typingsJapgolly.jquery.JQueryXHR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JsonRpcClient extends js.Object {
+trait JsonRpcClient extends StObject {
+  
   /**
     * Make a batch-call by using a callback.
     *
@@ -26,14 +27,15 @@ trait JsonRpcClient extends js.Object {
     */
   def batch(
     callback: js.Function1[/* batch */ this.type, Unit],
-    allDoneCb: js.Function1[/* result */ js.Any, Unit],
-    errorCb: js.Function1[/* error */ js.Any, Unit]
+    allDoneCb: js.Function1[/* result */ Any, Unit],
+    errorCb: js.Function1[/* error */ Any, Unit]
   ): Unit = js.native
+  
   def call(
     method: String,
-    params: js.Array[_],
-    successCb: js.Function1[/* result */ js.Any, Unit],
-    errorCb: js.Function1[/* result */ js.Any, Unit]
+    params: js.Array[Any],
+    successCb: js.Function1[/* result */ Any, Unit],
+    errorCb: js.Function1[/* result */ Any, Unit]
   ): JQueryDeferred[JQueryXHR] = js.native
   /**
     * @fn call
@@ -49,10 +51,11 @@ trait JsonRpcClient extends js.Object {
   def call(
     method: String,
     params: js.Object,
-    successCb: js.Function1[/* result */ js.Any, Unit],
-    errorCb: js.Function1[/* result */ js.Any, Unit]
+    successCb: js.Function1[/* result */ Any, Unit],
+    errorCb: js.Function1[/* result */ Any, Unit]
   ): JQueryDeferred[JQueryXHR] = js.native
-  def notify(method: String, params: js.Array[_]): JQueryDeferred[JQueryXHR] = js.native
+  
+  def notify(method: String, params: js.Array[Any]): JQueryDeferred[JQueryXHR] = js.native
   /**
     * Notify sends a command to the server that won't need a response.  In http, there is probably
     * an empty response - that will be dropped, but in ws there should be no response at all.
@@ -69,4 +72,3 @@ trait JsonRpcClient extends js.Object {
     */
   def notify(method: String, params: js.Object): JQueryDeferred[JQueryXHR] = js.native
 }
-

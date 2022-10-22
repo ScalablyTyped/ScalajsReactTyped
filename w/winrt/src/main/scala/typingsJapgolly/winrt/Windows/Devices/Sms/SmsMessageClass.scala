@@ -1,47 +1,37 @@
 package typingsJapgolly.winrt.Windows.Devices.Sms
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmsMessageClass extends js.Object
-
+sealed trait SmsMessageClass extends StObject
 @JSGlobal("Windows.Devices.Sms.SmsMessageClass")
 @js.native
-object SmsMessageClass extends js.Object {
-  @js.native
-  sealed trait class0 extends SmsMessageClass
+object SmsMessageClass extends StObject {
   
   @js.native
-  sealed trait class1 extends SmsMessageClass
+  sealed trait class0
+    extends StObject
+       with SmsMessageClass
   
   @js.native
-  sealed trait class2 extends SmsMessageClass
+  sealed trait class1
+    extends StObject
+       with SmsMessageClass
   
   @js.native
-  sealed trait class3 extends SmsMessageClass
+  sealed trait class2
+    extends StObject
+       with SmsMessageClass
   
   @js.native
-  sealed trait none extends SmsMessageClass
+  sealed trait class3
+    extends StObject
+       with SmsMessageClass
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SmsMessageClass with Double] = js.native
-  /* 1 */ @js.native
-  object class0 extends TopLevel[class0 with Double]
-  
-  /* 2 */ @js.native
-  object class1 extends TopLevel[class1 with Double]
-  
-  /* 3 */ @js.native
-  object class2 extends TopLevel[class2 with Double]
-  
-  /* 4 */ @js.native
-  object class3 extends TopLevel[class3 with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  @js.native
+  sealed trait none
+    extends StObject
+       with SmsMessageClass
 }
-

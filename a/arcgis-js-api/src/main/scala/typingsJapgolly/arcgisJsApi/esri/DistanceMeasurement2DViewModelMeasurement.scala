@@ -1,19 +1,22 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DistanceMeasurement2DViewModelMeasurement extends Object {
+trait DistanceMeasurement2DViewModelMeasurement
+  extends StObject
+     with Object {
+  
   /**
     * Measurement line.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#measurement)
     */
-  var geometry: js.Any
+  var geometry: Any
+  
   /**
     * Line length (m).
     *
@@ -21,20 +24,23 @@ trait DistanceMeasurement2DViewModelMeasurement extends Object {
     */
   var length: Double
 }
-
 object DistanceMeasurement2DViewModelMeasurement {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    geometry: js.Any,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    geometry: Any,
+    hasOwnProperty: PropertyKey => Boolean,
     length: Double,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean]
+    propertyIsEnumerable: PropertyKey => Boolean
   ): DistanceMeasurement2DViewModelMeasurement = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), length = length.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[DistanceMeasurement2DViewModelMeasurement]
   }
+  
+  extension [Self <: DistanceMeasurement2DViewModelMeasurement](x: Self) {
+    
+    inline def setGeometry(value: Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+  }
 }
-

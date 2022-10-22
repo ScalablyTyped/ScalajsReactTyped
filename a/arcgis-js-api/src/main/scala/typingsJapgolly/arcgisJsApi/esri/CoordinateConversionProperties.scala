@@ -1,114 +1,191 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.Callback
-import org.scalajs.dom.raw.HTMLElement
+import typingsJapgolly.arcgisJsApi.anon.MapViewPropertiestype2d
+import typingsJapgolly.arcgisJsApi.anon.PictureMarkerSymbolProper
+import typingsJapgolly.arcgisJsApi.anon.SceneViewPropertiestype3d
+import typingsJapgolly.arcgisJsApi.anon.SimpleMarkerSymbolPropert
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`expand-down`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`expand-up`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.auto
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.capture
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.live
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.local
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.session
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CoordinateConversionProperties
-  extends WidgetProperties
+  extends StObject
+     with WidgetProperties
      with GoToProperties {
+  
   /**
     * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) containing every [Conversion](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Conversion.html) that the widget is currently displaying.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#conversions)
     */
-  var conversions: js.UndefOr[CollectionProperties[Conversion]] = js.undefined
+  var conversions: js.UndefOr[CollectionProperties[ConversionProperties]] = js.undefined
+  
   /**
-    * Describes the location of the coordinates currently displayed by the widget as a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html). Setting this property will update all [conversions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#conversions).
+    * Describes the location of the coordinates currently displayed by the widget as a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#currentLocation)
     */
   var currentLocation: js.UndefOr[PointProperties] = js.undefined
+  
   /**
-    * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) containing every [Format](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html) that the widget is capable of displaying.  The default formats are `basemap`, `dd`, `ddm`, `dms`, `mgrs`, `usng`, `utm`, and `xy`.
+    * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) containing every [Format](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html) that the widget is capable of displaying.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#formats)
     */
-  var formats: js.UndefOr[CollectionProperties[Format]] = js.undefined
+  var formats: js.UndefOr[CollectionProperties[FormatProperties]] = js.undefined
+  
   /**
-    * Describes the current mode of the widget.  **Possible Values:** live | capture
-    *   * While in `live` mode, the widget will update as the cursor moves.
-    *   * While in `capture` mode, the widget will update on mouse click and display a graphic marking the current location.
+    * Indicates the heading level to use for the coordinate input and coordinate settings headings.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#mode)
+    * @default 4
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#headingLevel)
+    */
+  var headingLevel: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * This symbol is used to visualize the location currently described by the widget when `capture` mode is active.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#locationSymbol)
+    */
+  var locationSymbol: js.UndefOr[SimpleMarkerSymbolPropert | PictureMarkerSymbolProper] = js.undefined
+  
+  /**
+    * Describes the current mode of the widget.
     *
     * @default live
-    */
-  var mode: js.UndefOr[String] = js.undefined
-  /**
-    * If this property is set to `true`, multiple conversions can be displayed.  For a simpler experience with only one conversion at a time, this property can be set to `false`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#multipleConversions)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#mode)
+    */
+  var mode: js.UndefOr[live | capture] = js.undefined
+  
+  /**
+    * If this property is set to `true`, multiple conversions can be displayed.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#multipleConversions)
     */
   var multipleConversions: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Determines whether the widget should expand up or down.  If set to `auto` the widget will be oriented based on its position in the view.  **Possible Values:** auto | expand-up | expand-down
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#orientation)
+    * Determines whether the widget should expand up or down.
     *
     * @default auto
-    */
-  var orientation: js.UndefOr[String] = js.undefined
-  /**
-    * The number of milliseconds of delay before conversion requests will be sent to the [GeometryService](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html).  This only affects conversions that cannot be performed in the browser.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#requestDelay)
-    *
-    * @default 300
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#orientation)
     */
-  var requestDelay: js.UndefOr[Double] = js.undefined
+  var orientation: js.UndefOr[auto | `expand-up` | `expand-down`] = js.undefined
+  
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
+    * If this property is set to `true`, sessionStorage or localStorage (depending on [storageType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#storageType)) will be used to hydrate and persist the CoordinateConversion widget's state.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#storageEnabled)
+    */
+  var storageEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * This property determines whether sessionStorage or localStorage will be used to store widget state.
+    *
+    * @default "session"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#storageType)
+    */
+  var storageType: js.UndefOr[session | local] = js.undefined
+  
+  /**
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
+  
   /**
-    * The view model for this widget. The view model contains the logic that controls the Coordinate Widget's behavior.  See the [CoordinateConversionViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#viewModel)
     */
   var viewModel: js.UndefOr[CoordinateConversionViewModelProperties] = js.undefined
+  
+  /**
+    * The visible elements that are displayed within the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#visibleElements)
+    */
+  var visibleElements: js.UndefOr[CoordinateConversionVisibleElements] = js.undefined
 }
-
 object CoordinateConversionProperties {
-  @scala.inline
-  def apply(
-    container: String | HTMLElement = null,
-    conversions: CollectionProperties[Conversion] = null,
-    currentLocation: PointProperties = null,
-    destroyed: js.UndefOr[Boolean] = js.undefined,
-    formats: CollectionProperties[Format] = null,
-    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Callback = null,
-    id: String = null,
-    label: String = null,
-    mode: String = null,
-    multipleConversions: js.UndefOr[Boolean] = js.undefined,
-    orientation: String = null,
-    requestDelay: Int | Double = null,
-    view: MapViewProperties | SceneViewProperties = null,
-    viewModel: CoordinateConversionViewModelProperties = null
-  ): CoordinateConversionProperties = {
+  
+  inline def apply(): CoordinateConversionProperties = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (conversions != null) __obj.updateDynamic("conversions")(conversions.asInstanceOf[js.Any])
-    if (currentLocation != null) __obj.updateDynamic("currentLocation")(currentLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
-    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2((t0: /* view */ typingsJapgolly.arcgisJsApi.esri.MapView | typingsJapgolly.arcgisJsApi.esri.SceneView, t1: /* goToParameters */ js.Any) => goToOverride(t0, t1).runNow()))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleConversions)) __obj.updateDynamic("multipleConversions")(multipleConversions.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (requestDelay != null) __obj.updateDynamic("requestDelay")(requestDelay.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoordinateConversionProperties]
   }
+  
+  extension [Self <: CoordinateConversionProperties](x: Self) {
+    
+    inline def setConversions(value: CollectionProperties[ConversionProperties]): Self = StObject.set(x, "conversions", value.asInstanceOf[js.Any])
+    
+    inline def setConversionsUndefined: Self = StObject.set(x, "conversions", js.undefined)
+    
+    inline def setConversionsVarargs(value: ConversionProperties*): Self = StObject.set(x, "conversions", js.Array(value*))
+    
+    inline def setCurrentLocation(value: PointProperties): Self = StObject.set(x, "currentLocation", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentLocationUndefined: Self = StObject.set(x, "currentLocation", js.undefined)
+    
+    inline def setFormats(value: CollectionProperties[FormatProperties]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    
+    inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+    
+    inline def setFormatsVarargs(value: FormatProperties*): Self = StObject.set(x, "formats", js.Array(value*))
+    
+    inline def setHeadingLevel(value: Double): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
+    
+    inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
+    
+    inline def setLocationSymbol(value: SimpleMarkerSymbolPropert | PictureMarkerSymbolProper): Self = StObject.set(x, "locationSymbol", value.asInstanceOf[js.Any])
+    
+    inline def setLocationSymbolUndefined: Self = StObject.set(x, "locationSymbol", js.undefined)
+    
+    inline def setMode(value: live | capture): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setMultipleConversions(value: Boolean): Self = StObject.set(x, "multipleConversions", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleConversionsUndefined: Self = StObject.set(x, "multipleConversions", js.undefined)
+    
+    inline def setOrientation(value: auto | `expand-up` | `expand-down`): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setStorageEnabled(value: Boolean): Self = StObject.set(x, "storageEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setStorageEnabledUndefined: Self = StObject.set(x, "storageEnabled", js.undefined)
+    
+    inline def setStorageType(value: session | local): Self = StObject.set(x, "storageType", value.asInstanceOf[js.Any])
+    
+    inline def setStorageTypeUndefined: Self = StObject.set(x, "storageType", js.undefined)
+    
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewModel(value: CoordinateConversionViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setVisibleElements(value: CoordinateConversionVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
+  }
 }
-

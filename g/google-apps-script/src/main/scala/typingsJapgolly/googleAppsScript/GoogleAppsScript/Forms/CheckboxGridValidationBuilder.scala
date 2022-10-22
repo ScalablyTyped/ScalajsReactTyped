@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A DataValidationBuilder for a CheckboxGridValidation.
@@ -19,16 +19,26 @@ import scala.scalajs.js.annotation._
   *       .build();
   *     checkboxGridItem.setValidation(checkboxGridValidation);
   */
-trait CheckboxGridValidationBuilder extends js.Object {
+trait CheckboxGridValidationBuilder extends StObject {
+  
+  def build(): CheckboxGridValidation
+  
   def requireLimitOneResponsePerColumn(): CheckboxGridValidationBuilder
 }
-
 object CheckboxGridValidationBuilder {
-  @scala.inline
-  def apply(requireLimitOneResponsePerColumn: CallbackTo[CheckboxGridValidationBuilder]): CheckboxGridValidationBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requireLimitOneResponsePerColumn")(requireLimitOneResponsePerColumn.toJsFn)
+  
+  inline def apply(
+    build: CallbackTo[CheckboxGridValidation],
+    requireLimitOneResponsePerColumn: CallbackTo[CheckboxGridValidationBuilder]
+  ): CheckboxGridValidationBuilder = {
+    val __obj = js.Dynamic.literal(build = build.toJsFn, requireLimitOneResponsePerColumn = requireLimitOneResponsePerColumn.toJsFn)
     __obj.asInstanceOf[CheckboxGridValidationBuilder]
   }
+  
+  extension [Self <: CheckboxGridValidationBuilder](x: Self) {
+    
+    inline def setBuild(value: CallbackTo[CheckboxGridValidation]): Self = StObject.set(x, "build", value.toJsFn)
+    
+    inline def setRequireLimitOneResponsePerColumn(value: CallbackTo[CheckboxGridValidationBuilder]): Self = StObject.set(x, "requireLimitOneResponsePerColumn", value.toJsFn)
+  }
 }
-

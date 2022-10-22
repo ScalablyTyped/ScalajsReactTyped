@@ -1,43 +1,53 @@
 package typingsJapgolly.thrift.mod
 
 import typingsJapgolly.node.tlsMod.TlsOptions
-import typingsJapgolly.thrift.AnonInstantiable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServerOptions[TProcessor, THandler] extends ServiceOptions[TProcessor, THandler] {
+trait ServerOptions[TProcessor, THandler]
+  extends StObject
+     with ServiceOptions[TProcessor, THandler] {
+  
   var cors: js.UndefOr[js.Array[String]] = js.undefined
+  
   var files: js.UndefOr[String] = js.undefined
+  
   var headers: js.UndefOr[HttpHeaders] = js.undefined
+  
   var services: js.UndefOr[ServiceMap[TProcessor, THandler]] = js.undefined
+  
   var tls: js.UndefOr[TlsOptions] = js.undefined
 }
-
 object ServerOptions {
-  @scala.inline
-  def apply[TProcessor, THandler](
-    cors: js.Array[String] = null,
-    files: String = null,
-    handler: THandler = null,
-    headers: HttpHeaders = null,
-    processor: AnonInstantiable[THandler, TProcessor] = null,
-    protocol: TProtocolConstructor = null,
-    services: ServiceMap[TProcessor, THandler] = null,
-    tls: TlsOptions = null,
-    transport: TTransportConstructor = null
-  ): ServerOptions[TProcessor, THandler] = {
+  
+  inline def apply[TProcessor, THandler](): ServerOptions[TProcessor, THandler] = {
     val __obj = js.Dynamic.literal()
-    if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (processor != null) __obj.updateDynamic("processor")(processor.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
-    if (tls != null) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
-    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions[TProcessor, THandler]]
   }
+  
+  extension [Self <: ServerOptions[?, ?], TProcessor, THandler](x: Self & (ServerOptions[TProcessor, THandler])) {
+    
+    inline def setCors(value: js.Array[String]): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+    
+    inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+    
+    inline def setCorsVarargs(value: String*): Self = StObject.set(x, "cors", js.Array(value*))
+    
+    inline def setFiles(value: String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    
+    inline def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setServices(value: ServiceMap[TProcessor, THandler]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    
+    inline def setTls(value: TlsOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    
+    inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+  }
 }
-

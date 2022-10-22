@@ -1,30 +1,16 @@
 package typingsJapgolly.sharepoint.Microsoft
 
-import typingsJapgolly.sharepoint.SP.ClientContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Microsoft.Office")
-@js.native
-object Office extends js.Object {
-  @js.native
-  object Server extends js.Object {
-    @js.native
-    object ReputationModel extends js.Object {
-      @js.native
-      class Reputation () extends js.Object
-      
-      /* static members */
-      @js.native
-      object Reputation extends js.Object {
-        def setLike(context: ClientContext, listId: String, itemId: Double, like: Boolean): Unit = js.native
-        def setRating(context: ClientContext, listId: String, itemId: Double, rating: Double): Unit = js.native
-      }
-      
-    }
-    
-  }
+object Office {
   
+  object Server {
+    
+    object ReputationModel {
+      
+      trait Reputation extends StObject
+    }
+  }
 }
-

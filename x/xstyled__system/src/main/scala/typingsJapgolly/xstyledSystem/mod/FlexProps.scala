@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.FlexProperty
+import typingsJapgolly.csstype.mod.Property.Flex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FlexProps[TLength] extends js.Object {
-  val flex: js.UndefOr[ResponsiveValue[FlexProperty[TLength]]] = js.undefined
+trait FlexProps[TLength] extends StObject {
+  
+  val flex: js.UndefOr[ResponsiveValue[Flex[TLength]]] = js.undefined
 }
-
 object FlexProps {
-  @scala.inline
-  def apply[TLength](flex: ResponsiveValue[FlexProperty[TLength]] = null): FlexProps[TLength] = {
+  
+  inline def apply[TLength](): FlexProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexProps[TLength]]
   }
+  
+  extension [Self <: FlexProps[?], TLength](x: Self & FlexProps[TLength]) {
+    
+    inline def setFlex(value: ResponsiveValue[Flex[TLength]]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    
+    inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+    
+    inline def setFlexVarargs(value: Flex[TLength]*): Self = StObject.set(x, "flex", js.Array(value*))
+  }
 }
-

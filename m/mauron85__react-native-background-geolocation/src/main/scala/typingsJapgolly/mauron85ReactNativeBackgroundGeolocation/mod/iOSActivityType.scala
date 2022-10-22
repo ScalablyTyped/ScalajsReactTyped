@@ -1,0 +1,23 @@
+package typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.AutomotiveNavigation
+  - typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.OtherNavigation
+  - typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.Fitness
+  - typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.Other
+*/
+trait iOSActivityType extends StObject
+object iOSActivityType {
+  
+  inline def AutomotiveNavigation: typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.AutomotiveNavigation = "AutomotiveNavigation".asInstanceOf[typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.AutomotiveNavigation]
+  
+  inline def Fitness: typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.Fitness = "Fitness".asInstanceOf[typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.Fitness]
+  
+  inline def Other: typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.Other = "Other".asInstanceOf[typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.Other]
+  
+  inline def OtherNavigation: typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.OtherNavigation = "OtherNavigation".asInstanceOf[typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.OtherNavigation]
+}

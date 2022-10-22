@@ -1,21 +1,30 @@
 package typingsJapgolly.zetapushJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TokenHandshakeOptions extends js.Object {
+trait TokenHandshakeOptions extends StObject {
+  
   var authType: String
+  
   var deploymentId: String
+  
   var token: String
 }
-
 object TokenHandshakeOptions {
-  @scala.inline
-  def apply(authType: String, deploymentId: String, token: String): TokenHandshakeOptions = {
-    val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any], deploymentId = deploymentId.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
   
+  inline def apply(authType: String, deploymentId: String, token: String): TokenHandshakeOptions = {
+    val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any], deploymentId = deploymentId.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenHandshakeOptions]
   }
+  
+  extension [Self <: TokenHandshakeOptions](x: Self) {
+    
+    inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+    
+    inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+  }
 }
-

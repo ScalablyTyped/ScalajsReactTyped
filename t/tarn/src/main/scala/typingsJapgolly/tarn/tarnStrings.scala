@@ -1,84 +1,68 @@
 package typingsJapgolly.tarn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tarnStrings {
-  @js.native
-  sealed trait acquireFail extends js.Object
   
   @js.native
-  sealed trait acquireRequest extends js.Object
+  sealed trait acquireFail extends StObject
+  inline def acquireFail: acquireFail = "acquireFail".asInstanceOf[acquireFail]
   
   @js.native
-  sealed trait acquireSuccess extends js.Object
+  sealed trait acquireRequest extends StObject
+  inline def acquireRequest: acquireRequest = "acquireRequest".asInstanceOf[acquireRequest]
   
   @js.native
-  sealed trait createFail extends js.Object
+  sealed trait acquireSuccess extends StObject
+  inline def acquireSuccess: acquireSuccess = "acquireSuccess".asInstanceOf[acquireSuccess]
   
   @js.native
-  sealed trait createRequest extends js.Object
+  sealed trait createFail extends StObject
+  inline def createFail: createFail = "createFail".asInstanceOf[createFail]
   
   @js.native
-  sealed trait createSuccess extends js.Object
+  sealed trait createRequest extends StObject
+  inline def createRequest: createRequest = "createRequest".asInstanceOf[createRequest]
   
   @js.native
-  sealed trait destroyFail extends js.Object
+  sealed trait createSuccess extends StObject
+  inline def createSuccess: createSuccess = "createSuccess".asInstanceOf[createSuccess]
   
   @js.native
-  sealed trait destroyRequest extends js.Object
+  sealed trait destroyFail extends StObject
+  inline def destroyFail: destroyFail = "destroyFail".asInstanceOf[destroyFail]
   
   @js.native
-  sealed trait destroySuccess extends js.Object
+  sealed trait destroyRequest extends StObject
+  inline def destroyRequest: destroyRequest = "destroyRequest".asInstanceOf[destroyRequest]
   
   @js.native
-  sealed trait poolDestroyRequest extends js.Object
+  sealed trait destroySuccess extends StObject
+  inline def destroySuccess: destroySuccess = "destroySuccess".asInstanceOf[destroySuccess]
   
   @js.native
-  sealed trait poolDestroySuccess extends js.Object
+  sealed trait poolDestroyRequest extends StObject
+  inline def poolDestroyRequest: poolDestroyRequest = "poolDestroyRequest".asInstanceOf[poolDestroyRequest]
   
   @js.native
-  sealed trait release extends js.Object
+  sealed trait poolDestroySuccess extends StObject
+  inline def poolDestroySuccess: poolDestroySuccess = "poolDestroySuccess".asInstanceOf[poolDestroySuccess]
   
   @js.native
-  sealed trait startReaping extends js.Object
+  sealed trait release extends StObject
+  inline def release: release = "release".asInstanceOf[release]
   
   @js.native
-  sealed trait stopReaping extends js.Object
+  sealed trait startReaping extends StObject
+  inline def startReaping: startReaping = "startReaping".asInstanceOf[startReaping]
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait stopReaping extends StObject
+  inline def stopReaping: stopReaping = "stopReaping".asInstanceOf[stopReaping]
   
-  @scala.inline
-  def acquireFail: acquireFail = "acquireFail".asInstanceOf[acquireFail]
-  @scala.inline
-  def acquireRequest: acquireRequest = "acquireRequest".asInstanceOf[acquireRequest]
-  @scala.inline
-  def acquireSuccess: acquireSuccess = "acquireSuccess".asInstanceOf[acquireSuccess]
-  @scala.inline
-  def createFail: createFail = "createFail".asInstanceOf[createFail]
-  @scala.inline
-  def createRequest: createRequest = "createRequest".asInstanceOf[createRequest]
-  @scala.inline
-  def createSuccess: createSuccess = "createSuccess".asInstanceOf[createSuccess]
-  @scala.inline
-  def destroyFail: destroyFail = "destroyFail".asInstanceOf[destroyFail]
-  @scala.inline
-  def destroyRequest: destroyRequest = "destroyRequest".asInstanceOf[destroyRequest]
-  @scala.inline
-  def destroySuccess: destroySuccess = "destroySuccess".asInstanceOf[destroySuccess]
-  @scala.inline
-  def poolDestroyRequest: poolDestroyRequest = "poolDestroyRequest".asInstanceOf[poolDestroyRequest]
-  @scala.inline
-  def poolDestroySuccess: poolDestroySuccess = "poolDestroySuccess".asInstanceOf[poolDestroySuccess]
-  @scala.inline
-  def release: release = "release".asInstanceOf[release]
-  @scala.inline
-  def startReaping: startReaping = "startReaping".asInstanceOf[startReaping]
-  @scala.inline
-  def stopReaping: stopReaping = "stopReaping".asInstanceOf[stopReaping]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  @js.native
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }
-

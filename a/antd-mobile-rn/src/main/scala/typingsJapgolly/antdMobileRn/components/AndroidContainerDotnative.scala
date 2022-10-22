@@ -1,48 +1,39 @@
 package typingsJapgolly.antdMobileRn.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.androidContainerNativeMod.ActionSheetNativeProps
-import typingsJapgolly.antdMobileRn.androidContainerNativeMod.default
-import typingsJapgolly.antdMobileRn.styleIndexNativeMod.ActionSheetStyle
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.libActionSheetAndroidContainerDotnativeMod.ActionSheetNativeProps
+import typingsJapgolly.antdMobileRn.libActionSheetAndroidContainerDotnativeMod.default
+import typingsJapgolly.antdMobileRn.libActionSheetStyleIndexDotnativeMod.ActionSheetStyle
 import typingsJapgolly.reactNative.mod.ActionSheetIOSOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AndroidContainerDotnative {
-  def apply(
-    config: ActionSheetIOSOptions,
-    callback: /* index */ Double => Callback = null,
-    onAnimationEnd: /* visible */ Boolean => Callback = null,
-    styles: ActionSheetStyle = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ActionSheetNativeProps, default, Unit, ActionSheetNativeProps] = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
   
-      if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1((t0: /* index */ scala.Double) => callback(t0).runNow()))
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1((t0: /* visible */ scala.Boolean) => onAnimationEnd(t0).runNow()))
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.androidContainerNativeMod.ActionSheetNativeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.androidContainerNativeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.androidContainerNativeMod.ActionSheetNativeProps])(children: _*)
+  inline def apply(config: ActionSheetIOSOptions): Builder = {
+    val __props = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ActionSheetNativeProps]))
   }
+  
   @JSImport("antd-mobile-rn/lib/action-sheet/AndroidContainer.native", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def callback(value: /* index */ Double => Callback): this.type = set("callback", js.Any.fromFunction1((t0: /* index */ Double) => value(t0).runNow()))
+    
+    inline def onAnimationEnd(value: /* visible */ Boolean => Callback): this.type = set("onAnimationEnd", js.Any.fromFunction1((t0: /* visible */ Boolean) => value(t0).runNow()))
+    
+    inline def styles(value: ActionSheetStyle): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ActionSheetNativeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

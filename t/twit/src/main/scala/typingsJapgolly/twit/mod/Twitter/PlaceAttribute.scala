@@ -1,25 +1,33 @@
 package typingsJapgolly.twit.mod.Twitter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlaceAttribute extends js.Object {
+trait PlaceAttribute extends StObject {
+  
   @JSName("app:id")
   var appColonid: String
+  
   var iso3: String
+  
   var locality: String
+  
   var phone: String
+  
   var postal_code: String
+  
   var region: String
+  
   var street_address: String
+  
   var twitter: String
+  
   var url: String
 }
-
 object PlaceAttribute {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     appColonid: String,
     iso3: String,
     locality: String,
@@ -34,5 +42,25 @@ object PlaceAttribute {
     __obj.updateDynamic("app:id")(appColonid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceAttribute]
   }
+  
+  extension [Self <: PlaceAttribute](x: Self) {
+    
+    inline def setAppColonid(value: String): Self = StObject.set(x, "app:id", value.asInstanceOf[js.Any])
+    
+    inline def setIso3(value: String): Self = StObject.set(x, "iso3", value.asInstanceOf[js.Any])
+    
+    inline def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+    
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    
+    inline def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
+    
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setStreet_address(value: String): Self = StObject.set(x, "street_address", value.asInstanceOf[js.Any])
+    
+    inline def setTwitter(value: String): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

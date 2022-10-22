@@ -1,11 +1,12 @@
 package typingsJapgolly.officeJs.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "shape.toJSON()". */
-trait ShapeData extends js.Object {
+/** An interface describing the data returned by calling `shape.toJSON()`. */
+trait ShapeData extends StObject {
+  
   /**
     *
     * Returns the Comments Collection. Read-only.
@@ -13,6 +14,7 @@ trait ShapeData extends js.Object {
     * [Api set:  1.1]
     */
   var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
+  
   /**
     *
     * Returns the Hyperlinks collection for a Shape object. Read-only.
@@ -20,6 +22,7 @@ trait ShapeData extends js.Object {
     * [Api set:  1.1]
     */
   var hyperlinks: js.UndefOr[js.Array[HyperlinkData]] = js.undefined
+  
   /**
     *
     * Shape's identifier. Read-only.
@@ -27,6 +30,7 @@ trait ShapeData extends js.Object {
     * [Api set:  1.1]
     */
   var id: js.UndefOr[Double] = js.undefined
+  
   /**
     *
     * Shape's name. Read-only.
@@ -34,6 +38,7 @@ trait ShapeData extends js.Object {
     * [Api set:  1.1]
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     *
     * Returns true, if shape is selected. User can set true to select the shape explicitly.
@@ -41,6 +46,7 @@ trait ShapeData extends js.Object {
     * [Api set:  1.1]
     */
   var select: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Returns the Shape's Data Section. Read-only.
@@ -48,6 +54,7 @@ trait ShapeData extends js.Object {
     * [Api set:  1.1]
     */
   var shapeDataItems: js.UndefOr[js.Array[ShapeDataItemData]] = js.undefined
+  
   /**
     *
     * Gets SubShape Collection. Read-only.
@@ -55,6 +62,7 @@ trait ShapeData extends js.Object {
     * [Api set:  1.1]
     */
   var subShapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
+  
   /**
     *
     * Shape's text. Read-only.
@@ -62,6 +70,7 @@ trait ShapeData extends js.Object {
     * [Api set:  1.1]
     */
   var text: js.UndefOr[String] = js.undefined
+  
   /**
     *
     * Returns the view of the shape. Read-only.
@@ -70,31 +79,57 @@ trait ShapeData extends js.Object {
     */
   var view: js.UndefOr[ShapeViewData] = js.undefined
 }
-
 object ShapeData {
-  @scala.inline
-  def apply(
-    comments: js.Array[CommentData] = null,
-    hyperlinks: js.Array[HyperlinkData] = null,
-    id: Int | Double = null,
-    name: String = null,
-    select: js.UndefOr[Boolean] = js.undefined,
-    shapeDataItems: js.Array[ShapeDataItemData] = null,
-    subShapes: js.Array[ShapeData] = null,
-    text: String = null,
-    view: ShapeViewData = null
-  ): ShapeData = {
+  
+  inline def apply(): ShapeData = {
     val __obj = js.Dynamic.literal()
-    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (hyperlinks != null) __obj.updateDynamic("hyperlinks")(hyperlinks.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (shapeDataItems != null) __obj.updateDynamic("shapeDataItems")(shapeDataItems.asInstanceOf[js.Any])
-    if (subShapes != null) __obj.updateDynamic("subShapes")(subShapes.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeData]
   }
+  
+  extension [Self <: ShapeData](x: Self) {
+    
+    inline def setComments(value: js.Array[CommentData]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    
+    inline def setCommentsVarargs(value: CommentData*): Self = StObject.set(x, "comments", js.Array(value*))
+    
+    inline def setHyperlinks(value: js.Array[HyperlinkData]): Self = StObject.set(x, "hyperlinks", value.asInstanceOf[js.Any])
+    
+    inline def setHyperlinksUndefined: Self = StObject.set(x, "hyperlinks", js.undefined)
+    
+    inline def setHyperlinksVarargs(value: HyperlinkData*): Self = StObject.set(x, "hyperlinks", js.Array(value*))
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setShapeDataItems(value: js.Array[ShapeDataItemData]): Self = StObject.set(x, "shapeDataItems", value.asInstanceOf[js.Any])
+    
+    inline def setShapeDataItemsUndefined: Self = StObject.set(x, "shapeDataItems", js.undefined)
+    
+    inline def setShapeDataItemsVarargs(value: ShapeDataItemData*): Self = StObject.set(x, "shapeDataItems", js.Array(value*))
+    
+    inline def setSubShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "subShapes", value.asInstanceOf[js.Any])
+    
+    inline def setSubShapesUndefined: Self = StObject.set(x, "subShapes", js.undefined)
+    
+    inline def setSubShapesVarargs(value: ShapeData*): Self = StObject.set(x, "subShapes", js.Array(value*))
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setView(value: ShapeViewData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

@@ -1,24 +1,24 @@
 
 # Scala.js typings for libphonenumber-js
 
-Typings are for version 1.7.40
+Typings are for version 1.10.14
 
 ## Library description:
-A simpler (and smaller) rewrite of Google Android's popular libphonenumber library
+A simpler (and smaller) rewrite of Google Android's libphonenumber library in javascript
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | libphonenumber-js |
-| Keywords           | javascript, telephone, phone, number, input, mobile, android, iphone, international, libphonenumber |
-| # releases         | 123 |
-| # dependents       | 188 |
-| # downloads        | 13989053 |
-| # stars            | 12 |
+| Keywords           | telephone, phone, number, input, mobile, libphonenumber |
+| # releases         | 71 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1787403E7 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/catamphetamine/libphonenumber-js#readme)
-- [Bugs](https://github.com/catamphetamine/libphonenumber-js/issues)
-- [Repository](https://github.com/catamphetamine/libphonenumber-js)
+- [Homepage](https://gitlab.com/catamphetamine/libphonenumber-js#readme)
+- [Bugs](https://gitlab.com/catamphetamine/libphonenumber-js/issues)
+- [Repository](https://gitlab.com/catamphetamine/libphonenumber-js)
 - [Npm](https://www.npmjs.com/package/libphonenumber-js)
     
 

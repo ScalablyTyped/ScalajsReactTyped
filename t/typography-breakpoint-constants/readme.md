@@ -10,10 +10,10 @@ Provide helpful constants for setting responsive breakpoints
 | ------------------ | :-------------: |
 | Full name          | typography-breakpoint-constants |
 | Keywords           | css, inline, styles, typography, vertical-rhythm |
-| # releases         | 4 |
-| # dependents       | 40 |
-| # downloads        | 626216 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 61311.333333333336 |
+| # stars            | 3741.0 |
 
 ## Links
 - [Homepage](https://github.com/KyleAMathews/typography.js)

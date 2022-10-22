@@ -1,21 +1,17 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.viewer
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.sharer
 */
-trait ScreenSharingRole extends js.Object
-
+trait ScreenSharingRole extends StObject
 object ScreenSharingRole {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def sharer: typingsJapgolly.microsoftGraph.microsoftGraphStrings.sharer = this.cast("sharer")
-  @scala.inline
-  def viewer: typingsJapgolly.microsoftGraph.microsoftGraphStrings.viewer = this.cast("viewer")
+  
+  inline def sharer: typingsJapgolly.microsoftGraph.microsoftGraphStrings.sharer = "sharer".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.sharer]
+  
+  inline def viewer: typingsJapgolly.microsoftGraph.microsoftGraphStrings.viewer = "viewer".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.viewer]
 }
-

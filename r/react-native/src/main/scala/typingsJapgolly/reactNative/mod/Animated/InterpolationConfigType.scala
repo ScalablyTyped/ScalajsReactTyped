@@ -1,35 +1,54 @@
 package typingsJapgolly.reactNative.mod.Animated
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InterpolationConfigType extends js.Object {
+trait InterpolationConfigType extends StObject {
+  
   var easing: js.UndefOr[js.Function1[/* input */ Double, Double]] = js.undefined
+  
   var extrapolate: js.UndefOr[ExtrapolateType] = js.undefined
+  
   var extrapolateLeft: js.UndefOr[ExtrapolateType] = js.undefined
+  
   var extrapolateRight: js.UndefOr[ExtrapolateType] = js.undefined
+  
   var inputRange: js.Array[Double]
+  
   var outputRange: js.Array[Double | String]
 }
-
 object InterpolationConfigType {
-  @scala.inline
-  def apply(
-    inputRange: js.Array[Double],
-    outputRange: js.Array[Double | String],
-    easing: /* input */ Double => CallbackTo[Double] = null,
-    extrapolate: ExtrapolateType = null,
-    extrapolateLeft: ExtrapolateType = null,
-    extrapolateRight: ExtrapolateType = null
-  ): InterpolationConfigType = {
+  
+  inline def apply(inputRange: js.Array[Double], outputRange: js.Array[Double | String]): InterpolationConfigType = {
     val __obj = js.Dynamic.literal(inputRange = inputRange.asInstanceOf[js.Any], outputRange = outputRange.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1((t0: /* input */ scala.Double) => easing(t0).runNow()))
-    if (extrapolate != null) __obj.updateDynamic("extrapolate")(extrapolate.asInstanceOf[js.Any])
-    if (extrapolateLeft != null) __obj.updateDynamic("extrapolateLeft")(extrapolateLeft.asInstanceOf[js.Any])
-    if (extrapolateRight != null) __obj.updateDynamic("extrapolateRight")(extrapolateRight.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterpolationConfigType]
   }
+  
+  extension [Self <: InterpolationConfigType](x: Self) {
+    
+    inline def setEasing(value: /* input */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    
+    inline def setExtrapolate(value: ExtrapolateType): Self = StObject.set(x, "extrapolate", value.asInstanceOf[js.Any])
+    
+    inline def setExtrapolateLeft(value: ExtrapolateType): Self = StObject.set(x, "extrapolateLeft", value.asInstanceOf[js.Any])
+    
+    inline def setExtrapolateLeftUndefined: Self = StObject.set(x, "extrapolateLeft", js.undefined)
+    
+    inline def setExtrapolateRight(value: ExtrapolateType): Self = StObject.set(x, "extrapolateRight", value.asInstanceOf[js.Any])
+    
+    inline def setExtrapolateRightUndefined: Self = StObject.set(x, "extrapolateRight", js.undefined)
+    
+    inline def setExtrapolateUndefined: Self = StObject.set(x, "extrapolate", js.undefined)
+    
+    inline def setInputRange(value: js.Array[Double]): Self = StObject.set(x, "inputRange", value.asInstanceOf[js.Any])
+    
+    inline def setInputRangeVarargs(value: Double*): Self = StObject.set(x, "inputRange", js.Array(value*))
+    
+    inline def setOutputRange(value: js.Array[Double | String]): Self = StObject.set(x, "outputRange", value.asInstanceOf[js.Any])
+    
+    inline def setOutputRangeVarargs(value: (Double | String)*): Self = StObject.set(x, "outputRange", js.Array(value*))
+  }
 }
-

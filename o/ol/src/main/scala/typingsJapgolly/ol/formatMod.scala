@@ -1,100 +1,117 @@
 package typingsJapgolly.ol
 
-import typingsJapgolly.ol.esriJSONMod.Options
-import typingsJapgolly.ol.esriJSONMod.default
-import typingsJapgolly.ol.iiifinfoMod.ImageInformationResponse
+import typingsJapgolly.ol.formatEsriJSONMod.Options
+import typingsJapgolly.ol.formatEsriJSONMod.default
+import typingsJapgolly.ol.formatIiifinfoMod.ImageInformationResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/format", JSImport.Namespace)
-@js.native
-object formatMod extends js.Object {
+object formatMod {
+  
+  @JSImport("ol/format", JSImport.Namespace)
   @js.native
-  class EsriJSON () extends default {
+  val ^ : js.Any = js.native
+  
+  @JSImport("ol/format", "EsriJSON")
+  @js.native
+  open class EsriJSON () extends default {
     def this(opt_options: Options) = this()
   }
   
+  inline def GML(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GML")().asInstanceOf[Unit]
+  inline def GML(opt_options: typingsJapgolly.ol.formatGmlbaseMod.Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GML")(opt_options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("ol/format", "GPX")
   @js.native
-  class GPX ()
-    extends typingsJapgolly.ol.gpxMod.default {
-    def this(opt_options: typingsJapgolly.ol.gpxMod.Options) = this()
+  open class GPX ()
+    extends typingsJapgolly.ol.formatGpxMod.default {
+    def this(opt_options: typingsJapgolly.ol.formatGpxMod.Options) = this()
   }
   
+  @JSImport("ol/format", "GeoJSON")
   @js.native
-  class GeoJSON ()
-    extends typingsJapgolly.ol.geoJSONMod.default {
-    def this(opt_options: typingsJapgolly.ol.geoJSONMod.Options) = this()
+  open class GeoJSON ()
+    extends typingsJapgolly.ol.formatGeoJSONMod.default {
+    def this(opt_options: typingsJapgolly.ol.formatGeoJSONMod.Options) = this()
   }
   
+  @JSImport("ol/format", "IGC")
   @js.native
-  class IGC ()
-    extends typingsJapgolly.ol.igcMod.default {
-    def this(opt_options: typingsJapgolly.ol.igcMod.Options) = this()
+  open class IGC ()
+    extends typingsJapgolly.ol.formatIgcMod.default {
+    def this(opt_options: typingsJapgolly.ol.formatIgcMod.Options) = this()
   }
   
+  @JSImport("ol/format", "IIIFInfo")
   @js.native
-  class IIIFInfo protected ()
-    extends typingsJapgolly.ol.iiifinfoMod.default {
+  open class IIIFInfo protected ()
+    extends typingsJapgolly.ol.formatIiifinfoMod.default {
     def this(imageInfo: String) = this()
     def this(imageInfo: ImageInformationResponse) = this()
   }
   
+  @JSImport("ol/format", "KML")
   @js.native
-  class KML ()
-    extends typingsJapgolly.ol.kmlMod.default {
-    def this(opt_options: typingsJapgolly.ol.kmlMod.Options) = this()
+  open class KML ()
+    extends typingsJapgolly.ol.formatKmlMod.default {
+    def this(opt_options: typingsJapgolly.ol.formatKmlMod.Options) = this()
   }
   
+  @JSImport("ol/format", "MVT")
   @js.native
-  class MVT ()
-    extends typingsJapgolly.ol.mvtMod.default {
-    def this(opt_options: typingsJapgolly.ol.mvtMod.Options) = this()
+  open class MVT ()
+    extends typingsJapgolly.ol.formatMvtMod.default {
+    def this(opt_options: typingsJapgolly.ol.formatMvtMod.Options) = this()
   }
   
+  @JSImport("ol/format", "OWS")
   @js.native
-  class OWS ()
-    extends typingsJapgolly.ol.owsMod.default
+  open class OWS ()
+    extends typingsJapgolly.ol.formatOwsMod.default
   
+  @JSImport("ol/format", "Polyline")
   @js.native
-  class Polyline ()
-    extends typingsJapgolly.ol.polylineMod.default {
-    def this(opt_options: typingsJapgolly.ol.polylineMod.Options) = this()
+  open class Polyline ()
+    extends typingsJapgolly.ol.formatPolylineMod.default {
+    def this(opt_options: typingsJapgolly.ol.formatPolylineMod.Options) = this()
   }
   
+  @JSImport("ol/format", "TopoJSON")
   @js.native
-  class TopoJSON ()
-    extends typingsJapgolly.ol.topoJSONMod.default {
-    def this(opt_options: typingsJapgolly.ol.topoJSONMod.Options) = this()
+  open class TopoJSON ()
+    extends typingsJapgolly.ol.formatTopoJSONMod.default {
+    def this(opt_options: typingsJapgolly.ol.formatTopoJSONMod.Options) = this()
   }
   
+  @JSImport("ol/format", "WFS")
   @js.native
-  class WFS ()
-    extends typingsJapgolly.ol.wfsMod.default {
-    def this(opt_options: typingsJapgolly.ol.wfsMod.Options) = this()
+  open class WFS ()
+    extends typingsJapgolly.ol.formatWfsMod.default {
+    def this(opt_options: typingsJapgolly.ol.formatWfsMod.Options) = this()
   }
   
+  @JSImport("ol/format", "WKT")
   @js.native
-  class WKT ()
-    extends typingsJapgolly.ol.wktMod.default {
-    def this(opt_options: typingsJapgolly.ol.wktMod.Options) = this()
+  open class WKT ()
+    extends typingsJapgolly.ol.formatWktMod.default {
+    def this(opt_options: typingsJapgolly.ol.formatWktMod.Options) = this()
   }
   
+  @JSImport("ol/format", "WMSCapabilities")
   @js.native
-  class WMSCapabilities ()
-    extends typingsJapgolly.ol.wmscapabilitiesMod.default
+  open class WMSCapabilities ()
+    extends typingsJapgolly.ol.formatWmscapabilitiesMod.default
   
+  @JSImport("ol/format", "WMSGetFeatureInfo")
   @js.native
-  class WMSGetFeatureInfo ()
-    extends typingsJapgolly.ol.wmsgetfeatureinfoMod.default {
-    def this(opt_options: typingsJapgolly.ol.wmsgetfeatureinfoMod.Options) = this()
+  open class WMSGetFeatureInfo ()
+    extends typingsJapgolly.ol.formatWmsgetfeatureinfoMod.default {
+    def this(opt_options: typingsJapgolly.ol.formatWmsgetfeatureinfoMod.Options) = this()
   }
   
+  @JSImport("ol/format", "WMTSCapabilities")
   @js.native
-  class WMTSCapabilities ()
-    extends typingsJapgolly.ol.wmtscapabilitiesMod.default
-  
-  def GML(): Unit = js.native
-  def GML(opt_options: typingsJapgolly.ol.gmlbaseMod.Options): Unit = js.native
+  open class WMTSCapabilities ()
+    extends typingsJapgolly.ol.formatWmtscapabilitiesMod.default
 }
-

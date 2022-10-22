@@ -1,48 +1,75 @@
 package typingsJapgolly.angularPlatformBrowser.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MetaDefinition extends /* prop */ StringDictionary[String] {
+trait MetaDefinition
+  extends StObject
+     with /* prop */ StringDictionary[String] {
+  
   var charset: js.UndefOr[String] = js.undefined
+  
   var content: js.UndefOr[String] = js.undefined
+  
   var httpEquiv: js.UndefOr[String] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var itemprop: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var property: js.UndefOr[String] = js.undefined
+  
   var scheme: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object MetaDefinition {
-  @scala.inline
-  def apply(
-    StringDictionary: /* prop */ StringDictionary[String] = null,
-    charset: String = null,
-    content: String = null,
-    httpEquiv: String = null,
-    id: String = null,
-    itemprop: String = null,
-    name: String = null,
-    property: String = null,
-    scheme: String = null,
-    url: String = null
-  ): MetaDefinition = {
+  
+  inline def apply(): MetaDefinition = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (httpEquiv != null) __obj.updateDynamic("httpEquiv")(httpEquiv.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (itemprop != null) __obj.updateDynamic("itemprop")(itemprop.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaDefinition]
   }
+  
+  extension [Self <: MetaDefinition](x: Self) {
+    
+    inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+    
+    inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+    
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setHttpEquiv(value: String): Self = StObject.set(x, "httpEquiv", value.asInstanceOf[js.Any])
+    
+    inline def setHttpEquivUndefined: Self = StObject.set(x, "httpEquiv", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setItemprop(value: String): Self = StObject.set(x, "itemprop", value.asInstanceOf[js.Any])
+    
+    inline def setItempropUndefined: Self = StObject.set(x, "itemprop", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    
+    inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

@@ -1,13 +1,12 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "DevExpress.viz.treeMap")
-@js.native
-object treeMap extends js.Object {
+object treeMap {
+  
   type dxTreeMapOptions = typingsJapgolly.devextreme.mod.DevExpress.viz.dxTreeMapOptions
+  
   type dxTreeMapTooltip = typingsJapgolly.devextreme.mod.DevExpress.viz.dxTreeMapTooltip
 }
-

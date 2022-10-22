@@ -1,9 +1,8 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import typingsJapgolly.officeJsPreview.CellPropertiesFormatcolum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -11,7 +10,10 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-trait ColumnProperties extends SettableColumnProperties {
+trait ColumnProperties
+  extends StObject
+     with SettableColumnProperties {
+  
   /**
     *
     * Represents the `address` property.
@@ -19,6 +21,7 @@ trait ColumnProperties extends SettableColumnProperties {
     * [Api set: ExcelApi 1.9]
     */
   var address: js.UndefOr[String] = js.undefined
+  
   /**
     *
     * Represents the `addressLocal` property.
@@ -26,6 +29,7 @@ trait ColumnProperties extends SettableColumnProperties {
     * [Api set: ExcelApi 1.9]
     */
   var addressLocal: js.UndefOr[String] = js.undefined
+  
   /**
     *
     * Represents the `columnIndex` property.
@@ -34,27 +38,25 @@ trait ColumnProperties extends SettableColumnProperties {
     */
   var columnIndex: js.UndefOr[Double] = js.undefined
 }
-
 object ColumnProperties {
-  @scala.inline
-  def apply(
-    address: String = null,
-    addressLocal: String = null,
-    columnHidden: js.UndefOr[Boolean] = js.undefined,
-    columnIndex: Int | Double = null,
-    format: CellPropertiesFormatcolum = null,
-    hyperlink: RangeHyperlink = null,
-    style: String = null
-  ): ColumnProperties = {
+  
+  inline def apply(): ColumnProperties = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (addressLocal != null) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnProperties]
   }
+  
+  extension [Self <: ColumnProperties](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressLocal(value: String): Self = StObject.set(x, "addressLocal", value.asInstanceOf[js.Any])
+    
+    inline def setAddressLocalUndefined: Self = StObject.set(x, "addressLocal", js.undefined)
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+  }
 }
-

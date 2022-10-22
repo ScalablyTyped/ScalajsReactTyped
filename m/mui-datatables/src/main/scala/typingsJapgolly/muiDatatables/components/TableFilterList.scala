@@ -1,46 +1,45 @@
 package typingsJapgolly.muiDatatables.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.muiDatatables.anon.FilterType
 import typingsJapgolly.muiDatatables.mod.MUIDataTableFilterList
+import typingsJapgolly.muiDatatables.mod.MUIDataTableOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableFilterList {
-  def apply(
-    filterList: js.Array[js.Array[String]],
-    classes: js.Object = null,
-    onFilterUpdate: /* args */ js.Any => CallbackTo[js.Any] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    MUIDataTableFilterList, 
-    MountedWithRawType[MUIDataTableFilterList, js.Object, RawMounted[MUIDataTableFilterList, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(filterList = filterList.asInstanceOf[js.Any])
   
-      if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (onFilterUpdate != null) __obj.updateDynamic("onFilterUpdate")(js.Any.fromFunction1((t0: /* args */ js.Any) => onFilterUpdate(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.muiDatatables.mod.MUIDataTableFilterList, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.muiDatatables.mod.MUIDataTableFilterList])(children: _*)
+  inline def apply(filterList: js.Array[js.Array[String]], options: MUIDataTableOptions): Builder = {
+    val __props = js.Dynamic.literal(filterList = filterList.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[MUIDataTableFilterList]))
   }
+  
   @JSImport("mui-datatables", "TableFilterList")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def classes(value: js.Object): this.type = set("classes", value.asInstanceOf[js.Any])
+    
+    inline def columnNames(value: js.Array[FilterType]): this.type = set("columnNames", value.asInstanceOf[js.Any])
+    
+    inline def columnNamesVarargs(value: FilterType*): this.type = set("columnNames", js.Array(value*))
+    
+    inline def customFilterListUpdate(value: js.Array[Any]): this.type = set("customFilterListUpdate", value.asInstanceOf[js.Any])
+    
+    inline def customFilterListUpdateVarargs(value: Any*): this.type = set("customFilterListUpdate", js.Array(value*))
+    
+    inline def filterListRenderers(value: /* e */ Any => js.Array[Any]): this.type = set("filterListRenderers", js.Any.fromFunction1(value))
+    
+    inline def filterUpdate(value: /* args */ Any => Any): this.type = set("filterUpdate", js.Any.fromFunction1(value))
+    
+    inline def serverSideFilterList(value: Any): this.type = set("serverSideFilterList", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: MUIDataTableFilterList): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

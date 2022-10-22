@@ -1,83 +1,154 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MobileApp extends Entity {
+trait MobileApp
+  extends StObject
+     with Entity {
+  
   // The list of group assignments for this mobile app.
-  var assignments: js.UndefOr[js.Array[MobileAppAssignment]] = js.undefined
+  var assignments: js.UndefOr[NullableOption[js.Array[MobileAppAssignment]]] = js.undefined
+  
   // The list of categories for this app.
-  var categories: js.UndefOr[js.Array[MobileAppCategory]] = js.undefined
+  var categories: js.UndefOr[NullableOption[js.Array[MobileAppCategory]]] = js.undefined
+  
   // The date and time the app was created.
   var createdDateTime: js.UndefOr[String] = js.undefined
+  
   // The description of the app.
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The developer of the app.
-  var developer: js.UndefOr[String] = js.undefined
+  var developer: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The admin provided or imported title of the app.
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The more information Url.
-  var informationUrl: js.UndefOr[String] = js.undefined
+  var informationUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The value indicating whether the app is marked as featured by the admin.
   var isFeatured: js.UndefOr[Boolean] = js.undefined
+  
   // The large icon, to be displayed in the app details and used for upload of the icon.
-  var largeIcon: js.UndefOr[MimeContent] = js.undefined
+  var largeIcon: js.UndefOr[NullableOption[MimeContent]] = js.undefined
+  
   // The date and time the app was last modified.
   var lastModifiedDateTime: js.UndefOr[String] = js.undefined
+  
   // Notes for the app.
-  var notes: js.UndefOr[String] = js.undefined
+  var notes: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The owner of the app.
-  var owner: js.UndefOr[String] = js.undefined
+  var owner: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The privacy statement Url.
-  var privacyInformationUrl: js.UndefOr[String] = js.undefined
+  var privacyInformationUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The publisher of the app.
-  var publisher: js.UndefOr[String] = js.undefined
+  var publisher: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are:
     * notPublished, processing, published.
     */
   var publishingState: js.UndefOr[MobileAppPublishingState] = js.undefined
 }
-
 object MobileApp {
-  @scala.inline
-  def apply(
-    assignments: js.Array[MobileAppAssignment] = null,
-    categories: js.Array[MobileAppCategory] = null,
-    createdDateTime: String = null,
-    description: String = null,
-    developer: String = null,
-    displayName: String = null,
-    id: String = null,
-    informationUrl: String = null,
-    isFeatured: js.UndefOr[Boolean] = js.undefined,
-    largeIcon: MimeContent = null,
-    lastModifiedDateTime: String = null,
-    notes: String = null,
-    owner: String = null,
-    privacyInformationUrl: String = null,
-    publisher: String = null,
-    publishingState: MobileAppPublishingState = null
-  ): MobileApp = {
+  
+  inline def apply(): MobileApp = {
     val __obj = js.Dynamic.literal()
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (developer != null) __obj.updateDynamic("developer")(developer.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (informationUrl != null) __obj.updateDynamic("informationUrl")(informationUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFeatured)) __obj.updateDynamic("isFeatured")(isFeatured.asInstanceOf[js.Any])
-    if (largeIcon != null) __obj.updateDynamic("largeIcon")(largeIcon.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (privacyInformationUrl != null) __obj.updateDynamic("privacyInformationUrl")(privacyInformationUrl.asInstanceOf[js.Any])
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
-    if (publishingState != null) __obj.updateDynamic("publishingState")(publishingState.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileApp]
   }
+  
+  extension [Self <: MobileApp](x: Self) {
+    
+    inline def setAssignments(value: NullableOption[js.Array[MobileAppAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
+    
+    inline def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
+    
+    inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
+    
+    inline def setAssignmentsVarargs(value: MobileAppAssignment*): Self = StObject.set(x, "assignments", js.Array(value*))
+    
+    inline def setCategories(value: NullableOption[js.Array[MobileAppCategory]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    
+    inline def setCategoriesNull: Self = StObject.set(x, "categories", null)
+    
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    
+    inline def setCategoriesVarargs(value: MobileAppCategory*): Self = StObject.set(x, "categories", js.Array(value*))
+    
+    inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDeveloper(value: NullableOption[String]): Self = StObject.set(x, "developer", value.asInstanceOf[js.Any])
+    
+    inline def setDeveloperNull: Self = StObject.set(x, "developer", null)
+    
+    inline def setDeveloperUndefined: Self = StObject.set(x, "developer", js.undefined)
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setInformationUrl(value: NullableOption[String]): Self = StObject.set(x, "informationUrl", value.asInstanceOf[js.Any])
+    
+    inline def setInformationUrlNull: Self = StObject.set(x, "informationUrl", null)
+    
+    inline def setInformationUrlUndefined: Self = StObject.set(x, "informationUrl", js.undefined)
+    
+    inline def setIsFeatured(value: Boolean): Self = StObject.set(x, "isFeatured", value.asInstanceOf[js.Any])
+    
+    inline def setIsFeaturedUndefined: Self = StObject.set(x, "isFeatured", js.undefined)
+    
+    inline def setLargeIcon(value: NullableOption[MimeContent]): Self = StObject.set(x, "largeIcon", value.asInstanceOf[js.Any])
+    
+    inline def setLargeIconNull: Self = StObject.set(x, "largeIcon", null)
+    
+    inline def setLargeIconUndefined: Self = StObject.set(x, "largeIcon", js.undefined)
+    
+    inline def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    
+    inline def setNotes(value: NullableOption[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    
+    inline def setNotesNull: Self = StObject.set(x, "notes", null)
+    
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    
+    inline def setOwner(value: NullableOption[String]): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerNull: Self = StObject.set(x, "owner", null)
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setPrivacyInformationUrl(value: NullableOption[String]): Self = StObject.set(x, "privacyInformationUrl", value.asInstanceOf[js.Any])
+    
+    inline def setPrivacyInformationUrlNull: Self = StObject.set(x, "privacyInformationUrl", null)
+    
+    inline def setPrivacyInformationUrlUndefined: Self = StObject.set(x, "privacyInformationUrl", js.undefined)
+    
+    inline def setPublisher(value: NullableOption[String]): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    
+    inline def setPublisherNull: Self = StObject.set(x, "publisher", null)
+    
+    inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
+    
+    inline def setPublishingState(value: MobileAppPublishingState): Self = StObject.set(x, "publishingState", value.asInstanceOf[js.Any])
+    
+    inline def setPublishingStateUndefined: Self = StObject.set(x, "publishingState", js.undefined)
+  }
 }
-

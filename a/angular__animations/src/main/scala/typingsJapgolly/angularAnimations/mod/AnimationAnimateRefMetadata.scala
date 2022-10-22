@@ -1,14 +1,18 @@
 package typingsJapgolly.angularAnimations.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnimationAnimateRefMetadata extends AnimationMetadata {
+trait AnimationAnimateRefMetadata
+  extends StObject
+     with AnimationMetadata {
+  
   /**
     * An animation reference object.
     */
   var animation: AnimationReferenceMetadata
+  
   /**
     * An options object containing a delay and
     * developer-defined parameters that provide styling defaults and
@@ -16,18 +20,20 @@ trait AnimationAnimateRefMetadata extends AnimationMetadata {
     */
   var options: AnimationOptions | Null
 }
-
 object AnimationAnimateRefMetadata {
-  @scala.inline
-  def apply(
-    animation: AnimationReferenceMetadata,
-    `type`: AnimationMetadataType,
-    options: AnimationOptions = null
-  ): AnimationAnimateRefMetadata = {
-    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
+  
+  inline def apply(animation: AnimationReferenceMetadata, `type`: AnimationMetadataType): AnimationAnimateRefMetadata = {
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], options = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationAnimateRefMetadata]
   }
+  
+  extension [Self <: AnimationAnimateRefMetadata](x: Self) {
+    
+    inline def setAnimation(value: AnimationReferenceMetadata): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setOptions(value: AnimationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsNull: Self = StObject.set(x, "options", null)
+  }
 }
-

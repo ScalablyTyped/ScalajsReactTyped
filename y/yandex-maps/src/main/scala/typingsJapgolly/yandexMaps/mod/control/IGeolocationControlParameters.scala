@@ -1,26 +1,35 @@
 package typingsJapgolly.yandexMaps.mod.control
 
-import typingsJapgolly.yandexMaps.AnonEnabled
-import typingsJapgolly.yandexMaps.AnonImage
+import typingsJapgolly.yandexMaps.anon.Image
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IGeolocationControlParameters extends IButtonParameters {
+trait IGeolocationControlParameters
+  extends StObject
+     with IButtonParameters {
+  
   @JSName("data")
-  var data_IGeolocationControlParameters: js.UndefOr[AnonImage] = js.undefined
+  var data_IGeolocationControlParameters: js.UndefOr[Image] = js.undefined
+  
   @JSName("options")
   var options_IGeolocationControlParameters: js.UndefOr[IBaseButtonParametersOptions] = js.undefined
 }
-
 object IGeolocationControlParameters {
-  @scala.inline
-  def apply(data: AnonImage = null, options: IBaseButtonParametersOptions = null, state: AnonEnabled = null): IGeolocationControlParameters = {
+  
+  inline def apply(): IGeolocationControlParameters = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeolocationControlParameters]
   }
+  
+  extension [Self <: IGeolocationControlParameters](x: Self) {
+    
+    inline def setData(value: Image): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setOptions(value: IBaseButtonParametersOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+  }
 }
-

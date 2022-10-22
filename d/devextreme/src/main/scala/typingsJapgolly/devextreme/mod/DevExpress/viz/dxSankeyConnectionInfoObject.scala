@@ -1,26 +1,45 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxSankeyConnectionInfoObject extends js.Object {
-  /** The title of the link's source node. */
+trait dxSankeyConnectionInfoObject extends StObject {
+  
+  /**
+    * The title of the link&apos;s source node.
+    */
   var source: js.UndefOr[String] = js.undefined
-  /** The title of the link's target node. */
+  
+  /**
+    * The title of the link&apos;s target node.
+    */
   var target: js.UndefOr[String] = js.undefined
-  /** The link's weight. */
+  
+  /**
+    * The link&apos;s weight.
+    */
   var weight: js.UndefOr[Double] = js.undefined
 }
-
 object dxSankeyConnectionInfoObject {
-  @scala.inline
-  def apply(source: String = null, target: String = null, weight: Int | Double = null): dxSankeyConnectionInfoObject = {
+  
+  inline def apply(): dxSankeyConnectionInfoObject = {
     val __obj = js.Dynamic.literal()
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxSankeyConnectionInfoObject]
   }
+  
+  extension [Self <: dxSankeyConnectionInfoObject](x: Self) {
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

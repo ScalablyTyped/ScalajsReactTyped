@@ -1,12 +1,19 @@
 package typingsJapgolly.colorbrewer
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.colorbrewer.ColorBrewer_.Base
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.colorbrewer.ColorBrewer.Base
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("colorbrewer", JSImport.Namespace)
-@js.native
-object mod extends TopLevel[Base]
-
+object mod extends Shortcut {
+  
+  @JSImport("colorbrewer", JSImport.Namespace)
+  @js.native
+  val ^ : Base = js.native
+  
+  type _To = Base
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: Base = ^
+}

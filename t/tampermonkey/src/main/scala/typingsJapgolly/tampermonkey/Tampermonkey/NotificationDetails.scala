@@ -1,54 +1,23 @@
 package typingsJapgolly.tampermonkey.Tampermonkey
 
-import typingsJapgolly.tampermonkey.tampermonkeyBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.tampermonkey.Tampermonkey.TextNotification
   - typingsJapgolly.tampermonkey.Tampermonkey.HighlightNotification
 */
-trait NotificationDetails extends js.Object
-
+trait NotificationDetails extends StObject
 object NotificationDetails {
-  @scala.inline
-  def TextNotification(
-    text: String,
-    highlight: js.UndefOr[Boolean] = js.undefined,
-    image: String = null,
-    onclick: NotificationOnClick = null,
-    ondone: NotificationOnDone = null,
-    timeout: Int | Double = null,
-    title: String = null
-  ): NotificationDetails = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick.asInstanceOf[js.Any])
-    if (ondone != null) __obj.updateDynamic("ondone")(ondone.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NotificationDetails]
+  
+  inline def HighlightNotification(text: Unit): typingsJapgolly.tampermonkey.Tampermonkey.HighlightNotification = {
+    val __obj = js.Dynamic.literal(highlight = true, text = text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.tampermonkey.Tampermonkey.HighlightNotification]
   }
-  @scala.inline
-  def HighlightNotification(
-    highlight: `true`,
-    image: String = null,
-    onclick: NotificationOnClick = null,
-    ondone: NotificationOnDone = null,
-    text: js.UndefOr[scala.Nothing] = js.undefined,
-    timeout: Int | Double = null,
-    title: String = null
-  ): NotificationDetails = {
-    val __obj = js.Dynamic.literal(highlight = highlight.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick.asInstanceOf[js.Any])
-    if (ondone != null) __obj.updateDynamic("ondone")(ondone.asInstanceOf[js.Any])
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NotificationDetails]
+  
+  inline def TextNotification(text: String): typingsJapgolly.tampermonkey.Tampermonkey.TextNotification = {
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.tampermonkey.Tampermonkey.TextNotification]
   }
 }
-

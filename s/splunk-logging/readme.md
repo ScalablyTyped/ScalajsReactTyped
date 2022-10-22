@@ -1,7 +1,7 @@
 
 # Scala.js typings for splunk-logging
 
-Typings are for version 0.9
+Typings are for version 0.11
 
 ## Library description:
 Splunk HTTP Event Collector logging interface
@@ -11,14 +11,12 @@ Splunk HTTP Event Collector logging interface
 | Full name          | splunk-logging |
 | Keywords           | splunk, HTTP, event, collector, logging, stream |
 | # releases         | 3 |
-| # dependents       | 18 |
-| # downloads        | 500655 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 156145.33333333334 |
+| # stars            | 82.0 |
 
 ## Links
 - [Homepage](http://dev.splunk.com)
-- [Bugs](https://github.com/splunk/splunk-javascript-logging/issues)
-- [Repository](https://github.com/splunk/splunk-javascript-logging)
 - [Npm](https://www.npmjs.com/package/splunk-logging)
     
 

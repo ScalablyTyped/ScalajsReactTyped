@@ -1,26 +1,45 @@
-package typingsJapgolly.activexWord
+package typingsJapgolly.activexWord.Word
 
+import typingsJapgolly.activexWord.activexWordInts.`-999999`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Word {
-  type WdBorderTypeHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdCaptionNumberStyleHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdCharacterCaseHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdDictionaryTypeHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdHelpTypeHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdListNumberStyleHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdMeasurementUnitsHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdNoteNumberStyleHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdPageNumberStyleHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdParagraphAlignmentHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdShapePositionRelative = typingsJapgolly.activexWord.activexWordNumbers.`-999999`
-  type WdShapeSizeRelative = typingsJapgolly.activexWord.activexWordNumbers.`-999999`
-  type WdSortFieldTypeHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdStatisticHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdTabLeaderHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdTextOrientationHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type WdWordDialogHID = typingsJapgolly.activexWord.activexWordNumbers.`0`
-  type XlDataLabelSeparator = typingsJapgolly.activexWord.activexWordNumbers.`1`
-}
+
+type WdBorderTypeHID = `0`
+
+type WdCaptionNumberStyleHID = `0`
+
+type WdCharacterCaseHID = `0`
+
+type WdDictionaryTypeHID = `0`
+
+type WdHelpTypeHID = `0`
+
+type WdListNumberStyleHID = `0`
+
+type WdMeasurementUnitsHID = `0`
+
+type WdNoteNumberStyleHID = `0`
+
+type WdPageNumberStyleHID = `0`
+
+type WdParagraphAlignmentHID = `0`
+
+type WdShapePositionRelative = `-999999`
+
+type WdShapeSizeRelative = `-999999`
+
+type WdSortFieldTypeHID = `0`
+
+type WdStatisticHID = `0`
+
+type WdTabLeaderHID = `0`
+
+type WdTextOrientationHID = `0`
+
+type WdWordDialogHID = `0`
+
+type XlDataLabelSeparator = `1`

@@ -1,49 +1,65 @@
 package typingsJapgolly.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AppDetailsOptions extends js.Object {
+trait AppDetailsOptions extends StObject {
+  
   /**
-    * Index of the icon in appIconPath. Ignored when appIconPath is not set. Default
-    * is 0.
+    * Index of the icon in `appIconPath`. Ignored when `appIconPath` is not set.
+    * Default is `0`.
     */
   var appIconIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Window's .
+    * Window's Relaunch Icon.
     */
   var appIconPath: js.UndefOr[String] = js.undefined
+  
   /**
-    * Window's . It has to be set, otherwise the other options will have no effect.
+    * Window's App User Model ID. It has to be set, otherwise the other options will
+    * have no effect.
     */
   var appId: js.UndefOr[String] = js.undefined
+  
   /**
-    * Window's .
+    * Window's Relaunch Command.
     */
   var relaunchCommand: js.UndefOr[String] = js.undefined
+  
   /**
-    * Window's .
+    * Window's Relaunch Display Name.
     */
   var relaunchDisplayName: js.UndefOr[String] = js.undefined
 }
-
 object AppDetailsOptions {
-  @scala.inline
-  def apply(
-    appIconIndex: Int | Double = null,
-    appIconPath: String = null,
-    appId: String = null,
-    relaunchCommand: String = null,
-    relaunchDisplayName: String = null
-  ): AppDetailsOptions = {
+  
+  inline def apply(): AppDetailsOptions = {
     val __obj = js.Dynamic.literal()
-    if (appIconIndex != null) __obj.updateDynamic("appIconIndex")(appIconIndex.asInstanceOf[js.Any])
-    if (appIconPath != null) __obj.updateDynamic("appIconPath")(appIconPath.asInstanceOf[js.Any])
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (relaunchCommand != null) __obj.updateDynamic("relaunchCommand")(relaunchCommand.asInstanceOf[js.Any])
-    if (relaunchDisplayName != null) __obj.updateDynamic("relaunchDisplayName")(relaunchDisplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppDetailsOptions]
   }
+  
+  extension [Self <: AppDetailsOptions](x: Self) {
+    
+    inline def setAppIconIndex(value: Double): Self = StObject.set(x, "appIconIndex", value.asInstanceOf[js.Any])
+    
+    inline def setAppIconIndexUndefined: Self = StObject.set(x, "appIconIndex", js.undefined)
+    
+    inline def setAppIconPath(value: String): Self = StObject.set(x, "appIconPath", value.asInstanceOf[js.Any])
+    
+    inline def setAppIconPathUndefined: Self = StObject.set(x, "appIconPath", js.undefined)
+    
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    
+    inline def setRelaunchCommand(value: String): Self = StObject.set(x, "relaunchCommand", value.asInstanceOf[js.Any])
+    
+    inline def setRelaunchCommandUndefined: Self = StObject.set(x, "relaunchCommand", js.undefined)
+    
+    inline def setRelaunchDisplayName(value: String): Self = StObject.set(x, "relaunchDisplayName", value.asInstanceOf[js.Any])
+    
+    inline def setRelaunchDisplayNameUndefined: Self = StObject.set(x, "relaunchDisplayName", js.undefined)
+  }
 }
-

@@ -1,13 +1,12 @@
 package typingsJapgolly.reactNative.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "ProgressBarAndroid")
+- Dropped new (args : ...any): react-native.react-native.NativeMethods */ @JSImport("react-native", "ProgressBarAndroid")
 @js.native
-class ProgressBarAndroid ()
-  extends Component[ProgressBarAndroidProps, js.Object, js.Any]
-
+open class ProgressBarAndroid ()
+  extends Component[ProgressBarAndroidProps, js.Object, Any]

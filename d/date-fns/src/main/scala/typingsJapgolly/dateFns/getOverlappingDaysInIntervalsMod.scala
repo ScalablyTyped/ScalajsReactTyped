@@ -1,15 +1,20 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/fp/getOverlappingDaysInIntervals", JSImport.Namespace)
-@js.native
-object getOverlappingDaysInIntervalsMod extends js.Object {
-  @js.native
-  object default extends TopLevel[CurriedFn2[Interval, Interval, Double]]
+object getOverlappingDaysInIntervalsMod {
   
+  object default {
+    
+    inline def apply(
+      intervalLeft: typingsJapgolly.dateFns.mod.Interval,
+      intervalRight: typingsJapgolly.dateFns.mod.Interval
+    ): Double = (^.asInstanceOf[js.Dynamic].apply(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @JSImport("date-fns/getOverlappingDaysInIntervals", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

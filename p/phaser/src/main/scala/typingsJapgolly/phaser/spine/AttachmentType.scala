@@ -1,59 +1,47 @@
 package typingsJapgolly.phaser.spine
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AttachmentType extends js.Object
-
+sealed trait AttachmentType extends StObject
 @JSGlobal("spine.AttachmentType")
 @js.native
-object AttachmentType extends js.Object {
-  @js.native
-  sealed trait BoundingBox extends AttachmentType
+object AttachmentType extends StObject {
   
   @js.native
-  sealed trait Clipping extends AttachmentType
+  sealed trait BoundingBox
+    extends StObject
+       with AttachmentType
   
   @js.native
-  sealed trait LinkedMesh extends AttachmentType
+  sealed trait Clipping
+    extends StObject
+       with AttachmentType
   
   @js.native
-  sealed trait Mesh extends AttachmentType
+  sealed trait LinkedMesh
+    extends StObject
+       with AttachmentType
   
   @js.native
-  sealed trait Path extends AttachmentType
+  sealed trait Mesh
+    extends StObject
+       with AttachmentType
   
   @js.native
-  sealed trait Point extends AttachmentType
+  sealed trait Path
+    extends StObject
+       with AttachmentType
   
   @js.native
-  sealed trait Region extends AttachmentType
+  sealed trait Point
+    extends StObject
+       with AttachmentType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AttachmentType with Double] = js.native
-  /* 1 */ @js.native
-  object BoundingBox extends TopLevel[BoundingBox with Double]
-  
-  /* 6 */ @js.native
-  object Clipping extends TopLevel[Clipping with Double]
-  
-  /* 3 */ @js.native
-  object LinkedMesh extends TopLevel[LinkedMesh with Double]
-  
-  /* 2 */ @js.native
-  object Mesh extends TopLevel[Mesh with Double]
-  
-  /* 4 */ @js.native
-  object Path extends TopLevel[Path with Double]
-  
-  /* 5 */ @js.native
-  object Point extends TopLevel[Point with Double]
-  
-  /* 0 */ @js.native
-  object Region extends TopLevel[Region with Double]
-  
+  @js.native
+  sealed trait Region
+    extends StObject
+       with AttachmentType
 }
-

@@ -1,49 +1,54 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgHierarchicalGridRestSettingsCreate
-  extends /**
-	 * Option for IgHierarchicalGridRestSettingsCreate
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Specifies whether create requests will be sent in batches
-  	 *
-  	 */
+    * Specifies whether create requests will be sent in batches
+    *
+    */
   var batch: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Specifies a remote URL template. Use ${id} in place of the resource id.
-  	 *
-  	 */
+    * Specifies a remote URL template. Use ${id} in place of the resource id.
+    *
+    */
   var template: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests.
-  	 *
-  	 */
+    * Specifies a remote URL to which create requests will be sent. This will be used for both batch and non-batch, however if template is also set, this URL will only be used for batch requests.
+    *
+    */
   var url: js.UndefOr[String] = js.undefined
 }
-
 object IgHierarchicalGridRestSettingsCreate {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgHierarchicalGridRestSettingsCreate
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    batch: js.UndefOr[Boolean] = js.undefined,
-    template: String = null,
-    url: String = null
-  ): IgHierarchicalGridRestSettingsCreate = {
+  
+  inline def apply(): IgHierarchicalGridRestSettingsCreate = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgHierarchicalGridRestSettingsCreate]
   }
+  
+  extension [Self <: IgHierarchicalGridRestSettingsCreate](x: Self) {
+    
+    inline def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+    
+    inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+    
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

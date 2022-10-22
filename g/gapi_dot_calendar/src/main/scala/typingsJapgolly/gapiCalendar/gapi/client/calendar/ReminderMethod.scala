@@ -1,8 +1,8 @@
 package typingsJapgolly.gapiCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // The method used by this reminder. Possible values are:
 /* Rewritten from type alias, can be one of: 
@@ -10,16 +10,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gapiCalendar.gapiCalendarStrings.sms
   - typingsJapgolly.gapiCalendar.gapiCalendarStrings.popup
 */
-trait ReminderMethod extends js.Object
-
+trait ReminderMethod extends StObject
 object ReminderMethod {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def email: typingsJapgolly.gapiCalendar.gapiCalendarStrings.email = this.cast("email")
-  @scala.inline
-  def popup: typingsJapgolly.gapiCalendar.gapiCalendarStrings.popup = this.cast("popup")
-  @scala.inline
-  def sms: typingsJapgolly.gapiCalendar.gapiCalendarStrings.sms = this.cast("sms")
+  
+  inline def email: typingsJapgolly.gapiCalendar.gapiCalendarStrings.email = "email".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.email]
+  
+  inline def popup: typingsJapgolly.gapiCalendar.gapiCalendarStrings.popup = "popup".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.popup]
+  
+  inline def sms: typingsJapgolly.gapiCalendar.gapiCalendarStrings.sms = "sms".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.sms]
 }
-

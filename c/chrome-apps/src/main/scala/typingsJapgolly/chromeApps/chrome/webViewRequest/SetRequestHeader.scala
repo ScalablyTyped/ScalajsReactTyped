@@ -1,8 +1,8 @@
 package typingsJapgolly.chromeApps.chrome.webViewRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sets the request header of the specified name to the specified value.
@@ -10,11 +10,25 @@ import scala.scalajs.js.annotation._
   * Header name comparison is always case-insensitive.
   * Each request header name occurs only once in each request.
   */
-@JSGlobal("chrome.webViewRequest.SetRequestHeader")
-@js.native
-class SetRequestHeader protected () extends OnRequestActions {
-  def this(parameters: SetRequestHeaderParams) = this()
-  val instanceType: String = js.native
-  val typeGuard: typingsJapgolly.chromeApps.chromeAppsStrings.SetRequestHeader = js.native
+trait SetRequestHeader
+  extends StObject
+     with OnRequestActions {
+  
+  val instanceType: String
+  
+  /* protected */ val typeGuard: typingsJapgolly.chromeApps.chromeAppsStrings.SetRequestHeader
 }
-
+object SetRequestHeader {
+  
+  inline def apply(instanceType: String): SetRequestHeader = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "SetRequestHeader")
+    __obj.asInstanceOf[SetRequestHeader]
+  }
+  
+  extension [Self <: SetRequestHeader](x: Self) {
+    
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    
+    inline def setTypeGuard(value: typingsJapgolly.chromeApps.chromeAppsStrings.SetRequestHeader): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+  }
+}

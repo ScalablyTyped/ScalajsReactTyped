@@ -1,59 +1,47 @@
 package typingsJapgolly.phaser.spine
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextureFilter extends js.Object
-
+sealed trait TextureFilter extends StObject
 @JSGlobal("spine.TextureFilter")
 @js.native
-object TextureFilter extends js.Object {
-  @js.native
-  sealed trait Linear extends TextureFilter
+object TextureFilter extends StObject {
   
   @js.native
-  sealed trait MipMap extends TextureFilter
+  sealed trait Linear
+    extends StObject
+       with TextureFilter
   
   @js.native
-  sealed trait MipMapLinearLinear extends TextureFilter
+  sealed trait MipMap
+    extends StObject
+       with TextureFilter
   
   @js.native
-  sealed trait MipMapLinearNearest extends TextureFilter
+  sealed trait MipMapLinearLinear
+    extends StObject
+       with TextureFilter
   
   @js.native
-  sealed trait MipMapNearestLinear extends TextureFilter
+  sealed trait MipMapLinearNearest
+    extends StObject
+       with TextureFilter
   
   @js.native
-  sealed trait MipMapNearestNearest extends TextureFilter
+  sealed trait MipMapNearestLinear
+    extends StObject
+       with TextureFilter
   
   @js.native
-  sealed trait Nearest extends TextureFilter
+  sealed trait MipMapNearestNearest
+    extends StObject
+       with TextureFilter
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextureFilter with Double] = js.native
-  /* 9729 */ @js.native
-  object Linear extends TopLevel[Linear with Double]
-  
-  /* 9987 */ @js.native
-  object MipMap extends TopLevel[MipMap with Double]
-  
-  /* 9987 */ @js.native
-  object MipMapLinearLinear extends TopLevel[MipMapLinearLinear with Double]
-  
-  /* 9985 */ @js.native
-  object MipMapLinearNearest extends TopLevel[MipMapLinearNearest with Double]
-  
-  /* 9986 */ @js.native
-  object MipMapNearestLinear extends TopLevel[MipMapNearestLinear with Double]
-  
-  /* 9984 */ @js.native
-  object MipMapNearestNearest extends TopLevel[MipMapNearestNearest with Double]
-  
-  /* 9728 */ @js.native
-  object Nearest extends TopLevel[Nearest with Double]
-  
+  @js.native
+  sealed trait Nearest
+    extends StObject
+       with TextureFilter
 }
-

@@ -1,47 +1,36 @@
 package typingsJapgolly.reactElemental.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.reactElemental.mod.CheckboxProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Checkbox {
-  def apply(
-    checked: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    onChange: /* checked */ Boolean => Callback = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CheckboxProps, typingsJapgolly.reactElemental.mod.Checkbox, Unit, CheckboxProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* checked */ scala.Boolean) => onChange(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactElemental.mod.CheckboxProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactElemental.mod.Checkbox](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactElemental.mod.CheckboxProps])(children: _*)
-  }
   @JSImport("react-elemental", "Checkbox")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactElemental.mod.Checkbox] {
+    
+    inline def checked(value: Boolean): this.type = set("checked", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def label(value: String): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* checked */ Boolean => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* checked */ Boolean) => value(t0).runNow()))
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Checkbox.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CheckboxProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

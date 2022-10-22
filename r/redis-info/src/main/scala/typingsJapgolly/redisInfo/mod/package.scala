@@ -1,12 +1,17 @@
-package typingsJapgolly.redisInfo
+package typingsJapgolly.redisInfo.mod
 
+import typingsJapgolly.redisInfo.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type PersistenceInfo = typingsJapgolly.redisInfo.mod.BasePersistenceInfo with (typingsJapgolly.redisInfo.mod.PersistenceAOFOnInfo | typingsJapgolly.redisInfo.mod.PersistenceAOFOffInfo) with (typingsJapgolly.redisInfo.mod.PersistenceLoadingOnInfo | typingsJapgolly.redisInfo.mod.PersistenceLoadingOffInfo)
-  type RedisInfo = typingsJapgolly.redisInfo.mod.GeneralStats with typingsJapgolly.redisInfo.mod.ServerInfo with typingsJapgolly.redisInfo.mod.ClientsInfo with typingsJapgolly.redisInfo.mod.MemoryInfo with typingsJapgolly.redisInfo.mod.PersistenceInfo with typingsJapgolly.redisInfo.mod.Stats with typingsJapgolly.redisInfo.mod.ReplicationInfo with typingsJapgolly.redisInfo.mod.CPUInfo
-  type ReplicationInfo = typingsJapgolly.redisInfo.mod.BaseReplicationInfo with (typingsJapgolly.redisInfo.mod.ReplicationMasterInfo | typingsJapgolly.redisInfo.mod.ReplicationReplicaInfo)
-  type ReplicationReplicaInfo = typingsJapgolly.redisInfo.mod.BaseReplicationReplicaInfo with (typingsJapgolly.redisInfo.mod.ReplicationReplicaSyncOnInfo | typingsJapgolly.redisInfo.mod.ReplicationReplicaSyncOffInfo) with (typingsJapgolly.redisInfo.mod.ReplicationReplicaLinkUpInfo | typingsJapgolly.redisInfo.mod.ReplicationReplicaLinkDownInfo)
-}
+
+inline def parse(info: String): RedisInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(info.asInstanceOf[js.Any]).asInstanceOf[RedisInfo]
+
+type PersistenceInfo = BasePersistenceInfo & (PersistenceAOFOnInfo | PersistenceAOFOffInfo) & (PersistenceLoadingOnInfo | PersistenceLoadingOffInfo)
+
+type RedisInfo = GeneralStats & ServerInfo & ClientsInfo & MemoryInfo & PersistenceInfo & Stats & ReplicationInfo & CPUInfo
+
+type ReplicationInfo = (ReplicationMasterInfo & BaseReplicationInfo) | (ReplicationReplicaInfo & BaseReplicationInfo)
+
+type ReplicationReplicaInfo = BaseReplicationReplicaInfo & (ReplicationReplicaSyncOnInfo | ReplicationReplicaSyncOffInfo) & (ReplicationReplicaLinkUpInfo | ReplicationReplicaLinkDownInfo)

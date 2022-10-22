@@ -1,45 +1,39 @@
 package typingsJapgolly.blueprintjsCore.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.blueprintjsCore.menuDividerMod.IMenuDividerProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsCore.libEsmComponentsMenuMenuDividerMod.IMenuDividerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MenuDivider {
-  def apply(
-    className: String = null,
-    title: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IMenuDividerProps, 
-    typingsJapgolly.blueprintjsCore.mod.MenuDivider, 
-    Unit, 
-    IMenuDividerProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsCore.menuDividerMod.IMenuDividerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsCore.mod.MenuDivider](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsCore.menuDividerMod.IMenuDividerProps])(children: _*)
-  }
   @JSImport("@blueprintjs/core", "MenuDivider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsCore.mod.MenuDivider] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: MenuDivider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IMenuDividerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

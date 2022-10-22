@@ -1,17 +1,17 @@
 package typingsJapgolly.umbraco.umbraco.resources
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
   * @name umbraco.resources.dashboardResource
   * @description Handles loading the dashboard manifest
   **/
-trait IDashboardResource extends js.Object {
+trait IDashboardResource extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.dashboardResource#getDashboard
@@ -26,13 +26,15 @@ trait IDashboardResource extends js.Object {
     */
   def getDashboard(section: String): IPromise[IResourcePromise]
 }
-
 object IDashboardResource {
-  @scala.inline
-  def apply(getDashboard: String => CallbackTo[IPromise[IResourcePromise]]): IDashboardResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDashboard")(js.Any.fromFunction1((t0: java.lang.String) => getDashboard(t0).runNow()))
+  
+  inline def apply(getDashboard: String => IPromise[IResourcePromise]): IDashboardResource = {
+    val __obj = js.Dynamic.literal(getDashboard = js.Any.fromFunction1(getDashboard))
     __obj.asInstanceOf[IDashboardResource]
   }
+  
+  extension [Self <: IDashboardResource](x: Self) {
+    
+    inline def setGetDashboard(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getDashboard", js.Any.fromFunction1(value))
+  }
 }
-

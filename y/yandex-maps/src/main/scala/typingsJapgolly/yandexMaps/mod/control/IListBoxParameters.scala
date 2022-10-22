@@ -1,29 +1,28 @@
 package typingsJapgolly.yandexMaps.mod.control
 
-import typingsJapgolly.yandexMaps.AnonContent
-import typingsJapgolly.yandexMaps.AnonEnabled
-import typingsJapgolly.yandexMaps.IBaseButtonParametersOptiFloat
+import typingsJapgolly.yandexMaps.anon.IBaseButtonParametersOptiFloat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IListBoxParameters extends IButtonParameters {
+trait IListBoxParameters
+  extends StObject
+     with IButtonParameters {
+  
   @JSName("options")
   var options_IListBoxParameters: js.UndefOr[IBaseButtonParametersOptiFloat] = js.undefined
 }
-
 object IListBoxParameters {
-  @scala.inline
-  def apply(
-    data: AnonContent = null,
-    options: IBaseButtonParametersOptiFloat = null,
-    state: AnonEnabled = null
-  ): IListBoxParameters = {
+  
+  inline def apply(): IListBoxParameters = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListBoxParameters]
   }
+  
+  extension [Self <: IListBoxParameters](x: Self) {
+    
+    inline def setOptions(value: IBaseButtonParametersOptiFloat): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+  }
 }
-

@@ -1,24 +1,26 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps.SpatialDataService
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IFilter extends js.Object {
+trait IFilter extends StObject {
+  
   /**
     * Executes the filter logic against a JSON object and returns a boolean indicating if the object meets the requirements of the Filter.
     * @returns A boolean indicating if the specified object meets the requirements of the Filter.
     */
-  def execute(`object`: js.Any): Boolean
+  def execute(`object`: Any): Boolean
 }
-
 object IFilter {
-  @scala.inline
-  def apply(execute: js.Any => CallbackTo[Boolean]): IFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(js.Any.fromFunction1((t0: js.Any) => execute(t0).runNow()))
+  
+  inline def apply(execute: Any => Boolean): IFilter = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
     __obj.asInstanceOf[IFilter]
   }
+  
+  extension [Self <: IFilter](x: Self) {
+    
+    inline def setExecute(value: Any => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+  }
 }
-

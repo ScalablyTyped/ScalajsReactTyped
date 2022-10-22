@@ -1,8 +1,8 @@
 package typingsJapgolly.promClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.promClient.promClientStrings.omit
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.promClient.promClientStrings.max
   - typingsJapgolly.promClient.promClientStrings.average
 */
-trait Aggregator extends js.Object
-
+trait Aggregator extends StObject
 object Aggregator {
-  @scala.inline
-  def average: typingsJapgolly.promClient.promClientStrings.average = this.cast("average")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def first: typingsJapgolly.promClient.promClientStrings.first = this.cast("first")
-  @scala.inline
-  def max: typingsJapgolly.promClient.promClientStrings.max = this.cast("max")
-  @scala.inline
-  def min: typingsJapgolly.promClient.promClientStrings.min = this.cast("min")
-  @scala.inline
-  def omit: typingsJapgolly.promClient.promClientStrings.omit = this.cast("omit")
-  @scala.inline
-  def sum: typingsJapgolly.promClient.promClientStrings.sum = this.cast("sum")
+  
+  inline def average: typingsJapgolly.promClient.promClientStrings.average = "average".asInstanceOf[typingsJapgolly.promClient.promClientStrings.average]
+  
+  inline def first: typingsJapgolly.promClient.promClientStrings.first = "first".asInstanceOf[typingsJapgolly.promClient.promClientStrings.first]
+  
+  inline def max: typingsJapgolly.promClient.promClientStrings.max = "max".asInstanceOf[typingsJapgolly.promClient.promClientStrings.max]
+  
+  inline def min: typingsJapgolly.promClient.promClientStrings.min = "min".asInstanceOf[typingsJapgolly.promClient.promClientStrings.min]
+  
+  inline def omit: typingsJapgolly.promClient.promClientStrings.omit = "omit".asInstanceOf[typingsJapgolly.promClient.promClientStrings.omit]
+  
+  inline def sum: typingsJapgolly.promClient.promClientStrings.sum = "sum".asInstanceOf[typingsJapgolly.promClient.promClientStrings.sum]
 }
-

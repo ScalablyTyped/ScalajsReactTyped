@@ -1,6 +1,7 @@
 
 # Scala.js typings for cson
 
+Typings are for version 7.20
 
 ## Library description:
 CoffeeScript-Object-Notation Parser. Same as JSON but for CoffeeScript objects.
@@ -8,11 +9,11 @@ CoffeeScript-Object-Notation Parser. Same as JSON but for CoffeeScript objects.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | cson |
-| Keywords           | javascript, coffeescript, json, cson, parse, stringify |
-| # releases         | 28 |
-| # dependents       | 134 |
-| # downloads        | 2669602 |
-| # stars            | 15 |
+| Keywords           | coffeescript, cson, esnext, javascript, node, parse, stringify |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 301855.3333333333 |
+| # stars            | 1309.0 |
 
 ## Links
 - [Homepage](https://github.com/bevry/cson)

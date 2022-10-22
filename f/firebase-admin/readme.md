@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase-admin
 
-Typings are for version 8.9.2
+Typings are for version 11.1.0
 
 ## Library description:
 Firebase admin SDK for Node.js
@@ -10,10 +10,10 @@ Firebase admin SDK for Node.js
 | ------------------ | :-------------: |
 | Full name          | firebase-admin |
 | Keywords           | admin, database, Firebase, realtime, authentication |
-| # releases         | 34 |
-| # dependents       | 475 |
-| # downloads        | 21464111 |
-| # stars            | 22 |
+| # releases         | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 4848240.666666667 |
+| # stars            | 1368.0 |
 
 ## Links
 - [Homepage](https://firebase.google.com/)

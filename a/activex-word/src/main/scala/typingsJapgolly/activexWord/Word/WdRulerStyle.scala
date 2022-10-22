@@ -1,31 +1,27 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
 */
-trait WdRulerStyle extends js.Object
-
+trait WdRulerStyle extends StObject
 object WdRulerStyle {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdAdjustFirstColumn: `2` = this.cast(2)
-  @scala.inline
-  def wdAdjustNone: `0` = this.cast(0)
-  @scala.inline
-  def wdAdjustProportional: `1` = this.cast(1)
-  @scala.inline
-  def wdAdjustSameWidth: `3` = this.cast(3)
+  
+  inline def wdAdjustFirstColumn: `2` = 2.asInstanceOf[`2`]
+  
+  inline def wdAdjustNone: `0` = 0.asInstanceOf[`0`]
+  
+  inline def wdAdjustProportional: `1` = 1.asInstanceOf[`1`]
+  
+  inline def wdAdjustSameWidth: `3` = 3.asInstanceOf[`3`]
 }
-

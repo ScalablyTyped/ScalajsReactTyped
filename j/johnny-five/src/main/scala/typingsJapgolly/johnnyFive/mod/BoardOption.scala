@@ -1,36 +1,54 @@
 package typingsJapgolly.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BoardOption extends js.Object {
+trait BoardOption extends StObject {
+  
   var debug: js.UndefOr[Boolean] = js.undefined
+  
   var id: js.UndefOr[Double | String] = js.undefined
-  var io: js.UndefOr[js.Any] = js.undefined
-  var port: js.UndefOr[String | js.Any] = js.undefined
+  
+  var io: js.UndefOr[Any] = js.undefined
+  
+  var port: js.UndefOr[String | Any] = js.undefined
+  
   var repl: js.UndefOr[Boolean] = js.undefined
+  
   var timeout: js.UndefOr[Double] = js.undefined
 }
-
 object BoardOption {
-  @scala.inline
-  def apply(
-    debug: js.UndefOr[Boolean] = js.undefined,
-    id: Double | String = null,
-    io: js.Any = null,
-    port: String | js.Any = null,
-    repl: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null
-  ): BoardOption = {
+  
+  inline def apply(): BoardOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (io != null) __obj.updateDynamic("io")(io.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(repl)) __obj.updateDynamic("repl")(repl.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoardOption]
   }
+  
+  extension [Self <: BoardOption](x: Self) {
+    
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    
+    inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIo(value: Any): Self = StObject.set(x, "io", value.asInstanceOf[js.Any])
+    
+    inline def setIoUndefined: Self = StObject.set(x, "io", js.undefined)
+    
+    inline def setPort(value: String | Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    inline def setRepl(value: Boolean): Self = StObject.set(x, "repl", value.asInstanceOf[js.Any])
+    
+    inline def setReplUndefined: Self = StObject.set(x, "repl", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

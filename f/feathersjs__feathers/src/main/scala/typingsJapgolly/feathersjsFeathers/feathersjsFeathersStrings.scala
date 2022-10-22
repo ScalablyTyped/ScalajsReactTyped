@@ -1,29 +1,24 @@
 package typingsJapgolly.feathersjsFeathers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object feathersjsFeathersStrings {
-  @js.native
-  sealed trait __feathersSkipHooks extends js.Object
   
   @js.native
-  sealed trait after extends js.Object
+  sealed trait __feathersSkipHooks extends StObject
+  inline def __feathersSkipHooks: __feathersSkipHooks = "__feathersSkipHooks".asInstanceOf[__feathersSkipHooks]
   
   @js.native
-  sealed trait before extends js.Object
+  sealed trait after extends StObject
+  inline def after: after = "after".asInstanceOf[after]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait before extends StObject
+  inline def before: before = "before".asInstanceOf[before]
   
-  @scala.inline
-  def __feathersSkipHooks: __feathersSkipHooks = "__feathersSkipHooks".asInstanceOf[__feathersSkipHooks]
-  @scala.inline
-  def after: after = "after".asInstanceOf[after]
-  @scala.inline
-  def before: before = "before".asInstanceOf[before]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
 }
-

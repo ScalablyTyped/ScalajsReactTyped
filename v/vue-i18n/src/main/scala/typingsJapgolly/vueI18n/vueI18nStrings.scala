@@ -1,148 +1,66 @@
 package typingsJapgolly.vueI18n
 
-import typingsJapgolly.vueI18n.mod.VueI18n.CurrencyDisplay
-import typingsJapgolly.vueI18n.mod.VueI18n.DateTimeDigital
-import typingsJapgolly.vueI18n.mod.VueI18n.DateTimeHumanReadable
-import typingsJapgolly.vueI18n.mod.VueI18n.FormatMatcher
-import typingsJapgolly.vueI18n.mod.VueI18n.FormattedNumberPartType
-import typingsJapgolly.vueI18n.mod.VueI18n.LocaleMatcher
-import typingsJapgolly.vueI18n.mod.VueI18n.WarnHtmlInMessageLevel
+import typingsJapgolly.vueI18n.mod.ComponetI18nScope
+import typingsJapgolly.vueI18n.mod.I18nMode
+import typingsJapgolly.vueI18n.mod.I18nScope
+import typingsJapgolly.vueI18n.mod.WarnHtmlInMessageLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vueI18nStrings {
-  @js.native
-  sealed trait `2-digit` extends DateTimeDigital
   
   @js.native
-  sealed trait basic extends FormatMatcher
+  sealed trait composition
+    extends StObject
+       with I18nMode
+  inline def composition: composition = "composition".asInstanceOf[composition]
   
   @js.native
-  sealed trait `best-fit`
-    extends FormatMatcher
-       with LocaleMatcher
+  sealed trait `en-US` extends StObject
+  inline def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
   
   @js.native
-  sealed trait code extends CurrencyDisplay
+  sealed trait error
+    extends StObject
+       with WarnHtmlInMessageLevel
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait currency extends FormattedNumberPartType
+  sealed trait global
+    extends StObject
+       with ComponetI18nScope
+       with I18nScope
+  inline def global: global = "global".asInstanceOf[global]
   
   @js.native
-  sealed trait decimal extends FormattedNumberPartType
+  sealed trait legacy
+    extends StObject
+       with I18nMode
+  inline def legacy: legacy = "legacy".asInstanceOf[legacy]
   
   @js.native
-  sealed trait error extends WarnHtmlInMessageLevel
+  sealed trait local
+    extends StObject
+       with I18nScope
+  inline def local: local = "local".asInstanceOf[local]
   
   @js.native
-  sealed trait fraction extends FormattedNumberPartType
+  sealed trait off
+    extends StObject
+       with WarnHtmlInMessageLevel
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait group extends FormattedNumberPartType
+  sealed trait parent
+    extends StObject
+       with ComponetI18nScope
+       with I18nScope
+  inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
-  sealed trait infinity extends FormattedNumberPartType
-  
-  @js.native
-  sealed trait integer extends FormattedNumberPartType
-  
-  @js.native
-  sealed trait literal extends FormattedNumberPartType
-  
-  @js.native
-  sealed trait long extends DateTimeHumanReadable
-  
-  @js.native
-  sealed trait lookup extends LocaleMatcher
-  
-  @js.native
-  sealed trait minusSign extends FormattedNumberPartType
-  
-  @js.native
-  sealed trait name extends CurrencyDisplay
-  
-  @js.native
-  sealed trait nan extends FormattedNumberPartType
-  
-  @js.native
-  sealed trait narrow extends DateTimeHumanReadable
-  
-  @js.native
-  sealed trait numeric extends DateTimeDigital
-  
-  @js.native
-  sealed trait off extends WarnHtmlInMessageLevel
-  
-  @js.native
-  sealed trait percent extends js.Object
-  
-  @js.native
-  sealed trait percentSign extends FormattedNumberPartType
-  
-  @js.native
-  sealed trait plusSign extends FormattedNumberPartType
-  
-  @js.native
-  sealed trait short extends DateTimeHumanReadable
-  
-  @js.native
-  sealed trait symbol extends CurrencyDisplay
-  
-  @js.native
-  sealed trait warn extends WarnHtmlInMessageLevel
-  
-  @scala.inline
-  def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
-  @scala.inline
-  def `best-fit`: `best-fit` = "best-fit".asInstanceOf[`best-fit`]
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def currency: currency = "currency".asInstanceOf[currency]
-  @scala.inline
-  def decimal: decimal = "decimal".asInstanceOf[decimal]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fraction: fraction = "fraction".asInstanceOf[fraction]
-  @scala.inline
-  def group: group = "group".asInstanceOf[group]
-  @scala.inline
-  def infinity: infinity = "infinity".asInstanceOf[infinity]
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
-  @scala.inline
-  def literal: literal = "literal".asInstanceOf[literal]
-  @scala.inline
-  def long: long = "long".asInstanceOf[long]
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
-  @scala.inline
-  def minusSign: minusSign = "minusSign".asInstanceOf[minusSign]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def nan: nan = "nan".asInstanceOf[nan]
-  @scala.inline
-  def narrow: narrow = "narrow".asInstanceOf[narrow]
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def percent: percent = "percent".asInstanceOf[percent]
-  @scala.inline
-  def percentSign: percentSign = "percentSign".asInstanceOf[percentSign]
-  @scala.inline
-  def plusSign: plusSign = "plusSign".asInstanceOf[plusSign]
-  @scala.inline
-  def short: short = "short".asInstanceOf[short]
-  @scala.inline
-  def symbol: symbol = "symbol".asInstanceOf[symbol]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  sealed trait warn
+    extends StObject
+       with WarnHtmlInMessageLevel
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }
-

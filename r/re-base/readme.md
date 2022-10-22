@@ -10,10 +10,10 @@ A Relay inspired library for building React.js + Firebase applications.
 | ------------------ | :-------------: |
 | Full name          | re-base |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 55945 |
-| # stars            | 22 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1916.0 |
+| # stars            | 2155.0 |
 
 ## Links
 - [Homepage](https://github.com/tylermcginnis/re-base#readme)

@@ -1,24 +1,35 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The sentiment of the content. */
-trait SentimentResult extends js.Object {
+trait SentimentResult extends StObject {
+  
   /** The document level sentiment. */
   var document: js.UndefOr[DocumentSentimentResults] = js.undefined
+  
   /** The targeted sentiment to analyze. */
   var targets: js.UndefOr[js.Array[TargetedSentimentResults]] = js.undefined
 }
-
 object SentimentResult {
-  @scala.inline
-  def apply(document: DocumentSentimentResults = null, targets: js.Array[TargetedSentimentResults] = null): SentimentResult = {
+  
+  inline def apply(): SentimentResult = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
-    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[SentimentResult]
   }
+  
+  extension [Self <: SentimentResult](x: Self) {
+    
+    inline def setDocument(value: DocumentSentimentResults): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    
+    inline def setTargets(value: js.Array[TargetedSentimentResults]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+    
+    inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+    
+    inline def setTargetsVarargs(value: TargetedSentimentResults*): Self = StObject.set(x, "targets", js.Array(value*))
+  }
 }
-

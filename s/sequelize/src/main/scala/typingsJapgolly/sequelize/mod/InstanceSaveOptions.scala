@@ -1,18 +1,21 @@
 package typingsJapgolly.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options used for Instance.save method
   */
 trait InstanceSaveOptions
-  extends FieldsOptions
+  extends StObject
+     with FieldsOptions
      with LoggingOptions
      with ReturningOptions
      with SearchPathOptions {
+  
   var hooks: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If true, the updatedAt timestamp will not be updated.
     *
@@ -20,31 +23,21 @@ trait InstanceSaveOptions
     */
   var silent: js.UndefOr[Boolean] = js.undefined
 }
-
 object InstanceSaveOptions {
-  @scala.inline
-  def apply(
-    benchmark: js.UndefOr[Boolean] = js.undefined,
-    fields: js.Array[String] = null,
-    hooks: js.UndefOr[Boolean] = js.undefined,
-    logging: Boolean | js.Function = null,
-    returning: js.UndefOr[Boolean] = js.undefined,
-    searchPath: String = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    transaction: Transaction = null,
-    validate: js.UndefOr[Boolean] = js.undefined
-  ): InstanceSaveOptions = {
+  
+  inline def apply(): InstanceSaveOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning.asInstanceOf[js.Any])
-    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceSaveOptions]
   }
+  
+  extension [Self <: InstanceSaveOptions](x: Self) {
+    
+    inline def setHooks(value: Boolean): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+  }
 }
-

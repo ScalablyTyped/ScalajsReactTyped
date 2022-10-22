@@ -1,21 +1,26 @@
 package typingsJapgolly.prosemirrorInputrules
 
 import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.prosemirrorInputrules.anon.Rules
 import typingsJapgolly.prosemirrorModel.mod.Node
 import typingsJapgolly.prosemirrorModel.mod.NodeType
 import typingsJapgolly.prosemirrorModel.mod.Schema
 import typingsJapgolly.prosemirrorState.mod.EditorState
 import typingsJapgolly.prosemirrorState.mod.Plugin
 import typingsJapgolly.prosemirrorState.mod.Transaction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("prosemirror-inputrules", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("prosemirror-inputrules", JSImport.Namespace)
   @js.native
-  class InputRule[S /* <: Schema[_, _] */] protected () extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("prosemirror-inputrules", "InputRule")
+  @js.native
+  open class InputRule[S /* <: Schema[Any, Any] */] protected () extends StObject {
     /**
       * Create an input rule. The rule applies when the user typed
       * something and the text directly in front of the cursor matches
@@ -36,50 +41,86 @@ object mod extends js.Object {
     def this(
       `match`: js.RegExp,
       handler: js.Function4[
-            /* state */ EditorState[S], 
+            /* state */ EditorState, 
             /* match */ js.Array[String], 
             /* start */ Double, 
             /* end */ Double, 
-            Transaction[S] | Null
+            Transaction | Null
           ]
     ) = this()
   }
   
-  var closeDoubleQuote: InputRule[js.Any] = js.native
-  var closeSingleQuote: InputRule[js.Any] = js.native
-  var ellipsis: InputRule[js.Any] = js.native
-  var emDash: InputRule[js.Any] = js.native
-  var openDoubleQuote: InputRule[js.Any] = js.native
-  var openSingleQuote: InputRule[js.Any] = js.native
-  var smartQuotes: js.Array[InputRule[js.Any]] = js.native
-  def inputRules[S /* <: Schema[_, _] */](config: AnonRules[S]): Plugin[S, _] = js.native
-  def textblockTypeInputRule[S /* <: Schema[_, _] */](regexp: js.RegExp, nodeType: NodeType[S]): InputRule[S] = js.native
-  def textblockTypeInputRule[S /* <: Schema[_, _] */](
+  @JSImport("prosemirror-inputrules", "closeDoubleQuote")
+  @js.native
+  def closeDoubleQuote: InputRule[Any] = js.native
+  inline def closeDoubleQuote_=(x: InputRule[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeDoubleQuote")(x.asInstanceOf[js.Any])
+  
+  @JSImport("prosemirror-inputrules", "closeSingleQuote")
+  @js.native
+  def closeSingleQuote: InputRule[Any] = js.native
+  inline def closeSingleQuote_=(x: InputRule[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeSingleQuote")(x.asInstanceOf[js.Any])
+  
+  @JSImport("prosemirror-inputrules", "ellipsis")
+  @js.native
+  def ellipsis: InputRule[Any] = js.native
+  inline def ellipsis_=(x: InputRule[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ellipsis")(x.asInstanceOf[js.Any])
+  
+  @JSImport("prosemirror-inputrules", "emDash")
+  @js.native
+  def emDash: InputRule[Any] = js.native
+  inline def emDash_=(x: InputRule[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emDash")(x.asInstanceOf[js.Any])
+  
+  inline def inputRules[S /* <: Schema[Any, Any] */](config: Rules[S]): Plugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("inputRules")(config.asInstanceOf[js.Any]).asInstanceOf[Plugin[Any]]
+  
+  @JSImport("prosemirror-inputrules", "openDoubleQuote")
+  @js.native
+  def openDoubleQuote: InputRule[Any] = js.native
+  inline def openDoubleQuote_=(x: InputRule[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("openDoubleQuote")(x.asInstanceOf[js.Any])
+  
+  @JSImport("prosemirror-inputrules", "openSingleQuote")
+  @js.native
+  def openSingleQuote: InputRule[Any] = js.native
+  inline def openSingleQuote_=(x: InputRule[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("openSingleQuote")(x.asInstanceOf[js.Any])
+  
+  @JSImport("prosemirror-inputrules", "smartQuotes")
+  @js.native
+  def smartQuotes: js.Array[InputRule[Any]] = js.native
+  inline def smartQuotes_=(x: js.Array[InputRule[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartQuotes")(x.asInstanceOf[js.Any])
+  
+  inline def textblockTypeInputRule[S /* <: Schema[Any, Any] */](regexp: js.RegExp, nodeType: NodeType): InputRule[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("textblockTypeInputRule")(regexp.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any])).asInstanceOf[InputRule[S]]
+  inline def textblockTypeInputRule[S /* <: Schema[Any, Any] */](
     regexp: js.RegExp,
-    nodeType: NodeType[S],
-    getAttrs: js.Function1[/* p */ js.Array[String], js.UndefOr[StringDictionary[_] | Null]]
-  ): InputRule[S] = js.native
-  def textblockTypeInputRule[S /* <: Schema[_, _] */](regexp: js.RegExp, nodeType: NodeType[S], getAttrs: StringDictionary[js.Any]): InputRule[S] = js.native
-  def undoInputRule[S /* <: Schema[_, _] */](state: EditorState[S]): Boolean = js.native
-  def undoInputRule[S /* <: Schema[_, _] */](state: EditorState[S], dispatch: js.Function1[/* p */ Transaction[S], Unit]): Boolean = js.native
-  def wrappingInputRule[S /* <: Schema[_, _] */](regexp: js.RegExp, nodeType: NodeType[S]): InputRule[S] = js.native
-  def wrappingInputRule[S /* <: Schema[_, _] */](
+    nodeType: NodeType,
+    getAttrs: js.Function1[/* p */ js.Array[String], js.UndefOr[StringDictionary[Any] | Null]]
+  ): InputRule[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("textblockTypeInputRule")(regexp.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], getAttrs.asInstanceOf[js.Any])).asInstanceOf[InputRule[S]]
+  inline def textblockTypeInputRule[S /* <: Schema[Any, Any] */](regexp: js.RegExp, nodeType: NodeType, getAttrs: StringDictionary[Any]): InputRule[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("textblockTypeInputRule")(regexp.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], getAttrs.asInstanceOf[js.Any])).asInstanceOf[InputRule[S]]
+  
+  inline def undoInputRule[S /* <: Schema[Any, Any] */](state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("undoInputRule")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def undoInputRule[S /* <: Schema[Any, Any] */](state: EditorState, dispatch: js.Function1[/* p */ Transaction, Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("undoInputRule")(state.asInstanceOf[js.Any], dispatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def wrappingInputRule[S /* <: Schema[Any, Any] */](regexp: js.RegExp, nodeType: NodeType): InputRule[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrappingInputRule")(regexp.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any])).asInstanceOf[InputRule[S]]
+  inline def wrappingInputRule[S /* <: Schema[Any, Any] */](
     regexp: js.RegExp,
-    nodeType: NodeType[S],
-    getAttrs: js.Function1[/* p */ js.Array[String], js.UndefOr[StringDictionary[_] | Null]]
-  ): InputRule[S] = js.native
-  def wrappingInputRule[S /* <: Schema[_, _] */](
+    nodeType: NodeType,
+    getAttrs: js.Function1[/* p */ js.Array[String], js.UndefOr[StringDictionary[Any] | Null]]
+  ): InputRule[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrappingInputRule")(regexp.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], getAttrs.asInstanceOf[js.Any])).asInstanceOf[InputRule[S]]
+  inline def wrappingInputRule[S /* <: Schema[Any, Any] */](
     regexp: js.RegExp,
-    nodeType: NodeType[S],
-    getAttrs: js.Function1[/* p */ js.Array[String], js.UndefOr[StringDictionary[_] | Null]],
-    joinPredicate: js.Function2[/* p1 */ js.Array[String], /* p2 */ Node[S], Boolean]
-  ): InputRule[S] = js.native
-  def wrappingInputRule[S /* <: Schema[_, _] */](regexp: js.RegExp, nodeType: NodeType[S], getAttrs: StringDictionary[js.Any]): InputRule[S] = js.native
-  def wrappingInputRule[S /* <: Schema[_, _] */](
+    nodeType: NodeType,
+    getAttrs: js.Function1[/* p */ js.Array[String], js.UndefOr[StringDictionary[Any] | Null]],
+    joinPredicate: js.Function2[/* p1 */ js.Array[String], /* p2 */ Node, Boolean]
+  ): InputRule[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrappingInputRule")(regexp.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], getAttrs.asInstanceOf[js.Any], joinPredicate.asInstanceOf[js.Any])).asInstanceOf[InputRule[S]]
+  inline def wrappingInputRule[S /* <: Schema[Any, Any] */](regexp: js.RegExp, nodeType: NodeType, getAttrs: StringDictionary[Any]): InputRule[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrappingInputRule")(regexp.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], getAttrs.asInstanceOf[js.Any])).asInstanceOf[InputRule[S]]
+  inline def wrappingInputRule[S /* <: Schema[Any, Any] */](
     regexp: js.RegExp,
-    nodeType: NodeType[S],
-    getAttrs: StringDictionary[js.Any],
-    joinPredicate: js.Function2[/* p1 */ js.Array[String], /* p2 */ Node[S], Boolean]
-  ): InputRule[S] = js.native
+    nodeType: NodeType,
+    getAttrs: StringDictionary[Any],
+    joinPredicate: js.Function2[/* p1 */ js.Array[String], /* p2 */ Node, Boolean]
+  ): InputRule[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrappingInputRule")(regexp.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], getAttrs.asInstanceOf[js.Any], joinPredicate.asInstanceOf[js.Any])).asInstanceOf[InputRule[S]]
+  inline def wrappingInputRule[S /* <: Schema[Any, Any] */](
+    regexp: js.RegExp,
+    nodeType: NodeType,
+    getAttrs: Unit,
+    joinPredicate: js.Function2[/* p1 */ js.Array[String], /* p2 */ Node, Boolean]
+  ): InputRule[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrappingInputRule")(regexp.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], getAttrs.asInstanceOf[js.Any], joinPredicate.asInstanceOf[js.Any])).asInstanceOf[InputRule[S]]
 }
-

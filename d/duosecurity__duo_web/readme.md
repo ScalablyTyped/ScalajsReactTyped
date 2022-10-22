@@ -10,10 +10,10 @@ Duo two-factor authentication for Node.js web applications
 | ------------------ | :-------------: |
 | Full name          | @duosecurity/duo_web |
 | Keywords           | Duo Security, Two-Factor Authentication |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 54267 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 51621.666666666664 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://www.duosecurity.com/docs/duoweb)

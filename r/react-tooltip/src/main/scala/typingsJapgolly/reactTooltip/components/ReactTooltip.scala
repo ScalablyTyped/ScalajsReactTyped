@@ -1,111 +1,123 @@
 package typingsJapgolly.reactTooltip.components
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.reactTooltip.AnonLeft
+import japgolly.scalajs.react.facade.React.Node
+import org.scalajs.dom.Event
+import org.scalajs.dom.EventTarget
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLSpanElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactTooltip.anon.Left
 import typingsJapgolly.reactTooltip.mod.Effect
-import typingsJapgolly.reactTooltip.mod.ElementEvents
 import typingsJapgolly.reactTooltip.mod.GetContent
 import typingsJapgolly.reactTooltip.mod.Offset
 import typingsJapgolly.reactTooltip.mod.Place
-import typingsJapgolly.reactTooltip.mod.Props
-import typingsJapgolly.reactTooltip.mod.SanitizeHtmlOptions
+import typingsJapgolly.reactTooltip.mod.TooltipProps
 import typingsJapgolly.reactTooltip.mod.Type
-import typingsJapgolly.reactTooltip.mod.WindowEvents
-import typingsJapgolly.reactTooltip.mod.^
+import typingsJapgolly.reactTooltip.mod.VoidFunc
+import typingsJapgolly.reactTooltip.mod.default
 import typingsJapgolly.reactTooltip.reactTooltipStrings.div
 import typingsJapgolly.reactTooltip.reactTooltipStrings.span
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactTooltip {
-  def apply(
-    afterHide: js.UndefOr[Callback] = js.undefined,
-    afterShow: js.UndefOr[Callback] = js.undefined,
-    border: js.UndefOr[Boolean] = js.undefined,
-    `class`: String = null,
-    className: String = null,
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    delayHide: Int | Double = null,
-    delayShow: Int | Double = null,
-    delayUpdate: Int | Double = null,
-    disable: js.UndefOr[Boolean] = js.undefined,
-    effect: Effect = null,
-    event: ElementEvents = null,
-    eventOff: ElementEvents = null,
-    getContent: GetContent = null,
-    globalEventOff: WindowEvents = null,
-    html: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    insecure: js.UndefOr[Boolean] = js.undefined,
-    isCapture: js.UndefOr[Boolean] = js.undefined,
-    multiline: js.UndefOr[Boolean] = js.undefined,
-    offset: Offset = null,
-    overridePosition: (/* position */ AnonLeft, /* currentEvent */ Event_, /* currentTarget */ Element, /* node */ js.Any, /* place */ Place, /* desiredPlace */ Place, /* effect */ Effect, /* offset */ Offset) => CallbackTo[AnonLeft] = null,
-    place: Place = null,
-    resizeHide: js.UndefOr[Boolean] = js.undefined,
-    role: String = null,
-    sanitizeHtmlOptions: SanitizeHtmlOptions = null,
-    scrollHide: js.UndefOr[Boolean] = js.undefined,
-    `type`: Type = null,
-    watchWindow: js.UndefOr[Boolean] = js.undefined,
-    wrapper: div | span = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, ^, Unit, Props] = {
-    val __obj = js.Dynamic.literal()
   
-      afterHide.foreach(p => __obj.updateDynamic("afterHide")(p.toJsFn))
-    afterShow.foreach(p => __obj.updateDynamic("afterShow")(p.toJsFn))
-    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
-    if (delayHide != null) __obj.updateDynamic("delayHide")(delayHide.asInstanceOf[js.Any])
-    if (delayShow != null) __obj.updateDynamic("delayShow")(delayShow.asInstanceOf[js.Any])
-    if (delayUpdate != null) __obj.updateDynamic("delayUpdate")(delayUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
-    if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (eventOff != null) __obj.updateDynamic("eventOff")(eventOff.asInstanceOf[js.Any])
-    if (getContent != null) __obj.updateDynamic("getContent")(getContent.asInstanceOf[js.Any])
-    if (globalEventOff != null) __obj.updateDynamic("globalEventOff")(globalEventOff.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(insecure)) __obj.updateDynamic("insecure")(insecure.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCapture)) __obj.updateDynamic("isCapture")(isCapture.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (overridePosition != null) __obj.updateDynamic("overridePosition")(js.Any.fromFunction8((t0: /* position */ typingsJapgolly.reactTooltip.AnonLeft, t1: /* currentEvent */ typingsJapgolly.std.Event_, t2: /* currentTarget */ org.scalajs.dom.raw.Element, t3: /* node */ js.Any, t4: /* place */ typingsJapgolly.reactTooltip.mod.Place, t5: /* desiredPlace */ typingsJapgolly.reactTooltip.mod.Place, t6: /* effect */ typingsJapgolly.reactTooltip.mod.Effect, t7: /* offset */ typingsJapgolly.reactTooltip.mod.Offset) => overridePosition(t0, t1, t2, t3, t4, t5, t6, t7).runNow()))
-    if (place != null) __obj.updateDynamic("place")(place.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizeHide)) __obj.updateDynamic("resizeHide")(resizeHide.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (sanitizeHtmlOptions != null) __obj.updateDynamic("sanitizeHtmlOptions")(sanitizeHtmlOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollHide)) __obj.updateDynamic("scrollHide")(scrollHide.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(watchWindow)) __obj.updateDynamic("watchWindow")(watchWindow.asInstanceOf[js.Any])
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactTooltip.mod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactTooltip.mod.^](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactTooltip.mod.Props])(children: _*)
-  }
-  @JSImport("react-tooltip", JSImport.Namespace)
+  @JSImport("react-tooltip", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def afterHide(value: VoidFunc): this.type = set("afterHide", value.asInstanceOf[js.Any])
+    
+    inline def afterShow(value: VoidFunc): this.type = set("afterShow", value.asInstanceOf[js.Any])
+    
+    inline def arrowColor(value: String): this.type = set("arrowColor", value.asInstanceOf[js.Any])
+    
+    inline def backgroundColor(value: String): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def bodyMode(value: Boolean): this.type = set("bodyMode", value.asInstanceOf[js.Any])
+    
+    inline def border(value: Boolean): this.type = set("border", value.asInstanceOf[js.Any])
+    
+    inline def borderClass(value: String): this.type = set("borderClass", value.asInstanceOf[js.Any])
+    
+    inline def borderColor(value: String): this.type = set("borderColor", value.asInstanceOf[js.Any])
+    
+    inline def `class`(value: String): this.type = set("class", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def clickable(value: Boolean): this.type = set("clickable", value.asInstanceOf[js.Any])
+    
+    inline def delayHide(value: Double): this.type = set("delayHide", value.asInstanceOf[js.Any])
+    
+    inline def delayShow(value: Double): this.type = set("delayShow", value.asInstanceOf[js.Any])
+    
+    inline def delayUpdate(value: Double): this.type = set("delayUpdate", value.asInstanceOf[js.Any])
+    
+    inline def disable(value: Boolean): this.type = set("disable", value.asInstanceOf[js.Any])
+    
+    inline def effect(value: Effect): this.type = set("effect", value.asInstanceOf[js.Any])
+    
+    inline def event(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102, starting with typingsJapgolly.reactTooltip.reactTooltipStrings.fullscreenchange, typingsJapgolly.reactTooltip.reactTooltipStrings.fullscreenerror, typingsJapgolly.reactTooltip.reactTooltipStrings.copy */ Any
+    ): this.type = set("event", value.asInstanceOf[js.Any])
+    
+    inline def eventOff(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102, starting with typingsJapgolly.reactTooltip.reactTooltipStrings.fullscreenchange, typingsJapgolly.reactTooltip.reactTooltipStrings.fullscreenerror, typingsJapgolly.reactTooltip.reactTooltipStrings.copy */ Any
+    ): this.type = set("eventOff", value.asInstanceOf[js.Any])
+    
+    inline def getContent(value: GetContent): this.type = set("getContent", value.asInstanceOf[js.Any])
+    
+    inline def getContentFunction1(value: /* toolTipStr */ String => Node): this.type = set("getContent", js.Any.fromFunction1(value))
+    
+    inline def globalEventOff(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102, starting with typingsJapgolly.reactTooltip.reactTooltipStrings.fullscreenchange, typingsJapgolly.reactTooltip.reactTooltipStrings.fullscreenerror, typingsJapgolly.reactTooltip.reactTooltipStrings.copy */ Any
+    ): this.type = set("globalEventOff", value.asInstanceOf[js.Any])
+    
+    inline def html(value: Boolean): this.type = set("html", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def insecure(value: Boolean): this.type = set("insecure", value.asInstanceOf[js.Any])
+    
+    inline def isCapture(value: Boolean): this.type = set("isCapture", value.asInstanceOf[js.Any])
+    
+    inline def multiline(value: Boolean): this.type = set("multiline", value.asInstanceOf[js.Any])
+    
+    inline def offset(value: Offset): this.type = set("offset", value.asInstanceOf[js.Any])
+    
+    inline def overridePosition(
+      value: (/* position */ Left, /* currentEvent */ Event, /* currentTarget */ EventTarget, /* refNode */ Null | HTMLDivElement | HTMLSpanElement, /* place */ Place, /* desiredPlace */ Place, /* effect */ Effect, /* offset */ Offset) => Left
+    ): this.type = set("overridePosition", js.Any.fromFunction8(value))
+    
+    inline def place(value: Place): this.type = set("place", value.asInstanceOf[js.Any])
+    
+    inline def possibleCustomEvents(value: String): this.type = set("possibleCustomEvents", value.asInstanceOf[js.Any])
+    
+    inline def possibleCustomEventsOff(value: String): this.type = set("possibleCustomEventsOff", value.asInstanceOf[js.Any])
+    
+    inline def resizeHide(value: Boolean): this.type = set("resizeHide", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def scrollHide(value: Boolean): this.type = set("scrollHide", value.asInstanceOf[js.Any])
+    
+    inline def textColor(value: String): this.type = set("textColor", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: Type): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def uuid(value: String): this.type = set("uuid", value.asInstanceOf[js.Any])
+    
+    inline def wrapper(value: div | span): this.type = set("wrapper", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactTooltip.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TooltipProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

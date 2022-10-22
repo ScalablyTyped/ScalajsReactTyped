@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikVisualizationextensions.BackendAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.L
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XS
   - typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XL
 */
-trait StateType extends js.Object
-
+trait StateType extends StObject
 object StateType {
-  @scala.inline
-  def A: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A = this.cast("A")
-  @scala.inline
-  def D: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D = this.cast("D")
-  @scala.inline
-  def L: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.L = this.cast("L")
-  @scala.inline
-  def O: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.O = this.cast("O")
-  @scala.inline
-  def S: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.S = this.cast("S")
-  @scala.inline
-  def X: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.X = this.cast("X")
-  @scala.inline
-  def XL: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XL = this.cast("XL")
-  @scala.inline
-  def XS: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XS = this.cast("XS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def A: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A = "A".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A]
+  
+  inline def D: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D = "D".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D]
+  
+  inline def L: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.L = "L".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.L]
+  
+  inline def O: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.O = "O".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.O]
+  
+  inline def S: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.S = "S".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.S]
+  
+  inline def X: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.X = "X".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.X]
+  
+  inline def XL: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XL = "XL".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XL]
+  
+  inline def XS: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XS = "XS".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.XS]
 }
-

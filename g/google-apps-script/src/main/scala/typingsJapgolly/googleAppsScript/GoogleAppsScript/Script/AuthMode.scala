@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Script
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AuthMode extends js.Object
-
+sealed trait AuthMode extends StObject
 /**
   * An enumeration that identifies which categories of authorized services Apps Script is able to
   * execute through a triggered function. These values are exposed in triggered functions as the authMode
@@ -37,32 +35,25 @@ sealed trait AuthMode extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Script.AuthMode")
 @js.native
-object AuthMode extends js.Object {
-  @js.native
-  sealed trait CUSTOM_FUNCTION extends AuthMode
+object AuthMode extends StObject {
   
   @js.native
-  sealed trait FULL extends AuthMode
+  sealed trait CUSTOM_FUNCTION
+    extends StObject
+       with AuthMode
   
   @js.native
-  sealed trait LIMITED extends AuthMode
+  sealed trait FULL
+    extends StObject
+       with AuthMode
   
   @js.native
-  sealed trait NONE extends AuthMode
+  sealed trait LIMITED
+    extends StObject
+       with AuthMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AuthMode with Double] = js.native
-  /* 1 */ @js.native
-  object CUSTOM_FUNCTION extends TopLevel[CUSTOM_FUNCTION with Double]
-  
-  /* 3 */ @js.native
-  object FULL extends TopLevel[FULL with Double]
-  
-  /* 2 */ @js.native
-  object LIMITED extends TopLevel[LIMITED with Double]
-  
-  /* 0 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
+  @js.native
+  sealed trait NONE
+    extends StObject
+       with AuthMode
 }
-

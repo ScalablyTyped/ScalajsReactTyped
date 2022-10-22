@@ -1,83 +1,79 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`0`
-import typingsJapgolly.mfiles.mfilesNumbers.`1024`
-import typingsJapgolly.mfiles.mfilesNumbers.`128`
-import typingsJapgolly.mfiles.mfilesNumbers.`16384`
-import typingsJapgolly.mfiles.mfilesNumbers.`16`
-import typingsJapgolly.mfiles.mfilesNumbers.`1`
-import typingsJapgolly.mfiles.mfilesNumbers.`2048`
-import typingsJapgolly.mfiles.mfilesNumbers.`256`
-import typingsJapgolly.mfiles.mfilesNumbers.`2`
-import typingsJapgolly.mfiles.mfilesNumbers.`3078`
-import typingsJapgolly.mfiles.mfilesNumbers.`32`
-import typingsJapgolly.mfiles.mfilesNumbers.`4096`
-import typingsJapgolly.mfiles.mfilesNumbers.`4`
-import typingsJapgolly.mfiles.mfilesNumbers.`512`
-import typingsJapgolly.mfiles.mfilesNumbers.`64`
-import typingsJapgolly.mfiles.mfilesNumbers.`8192`
-import typingsJapgolly.mfiles.mfilesNumbers.`8`
+import typingsJapgolly.mfiles.mfilesInts.`0`
+import typingsJapgolly.mfiles.mfilesInts.`1024`
+import typingsJapgolly.mfiles.mfilesInts.`128`
+import typingsJapgolly.mfiles.mfilesInts.`16384`
+import typingsJapgolly.mfiles.mfilesInts.`16`
+import typingsJapgolly.mfiles.mfilesInts.`1`
+import typingsJapgolly.mfiles.mfilesInts.`2048`
+import typingsJapgolly.mfiles.mfilesInts.`256`
+import typingsJapgolly.mfiles.mfilesInts.`2`
+import typingsJapgolly.mfiles.mfilesInts.`3078`
+import typingsJapgolly.mfiles.mfilesInts.`32`
+import typingsJapgolly.mfiles.mfilesInts.`4096`
+import typingsJapgolly.mfiles.mfilesInts.`4`
+import typingsJapgolly.mfiles.mfilesInts.`512`
+import typingsJapgolly.mfiles.mfilesInts.`64`
+import typingsJapgolly.mfiles.mfilesInts.`8192`
+import typingsJapgolly.mfiles.mfilesInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.mfiles.mfilesNumbers.`0`
-  - typingsJapgolly.mfiles.mfilesNumbers.`1`
-  - typingsJapgolly.mfiles.mfilesNumbers.`2`
-  - typingsJapgolly.mfiles.mfilesNumbers.`4`
-  - typingsJapgolly.mfiles.mfilesNumbers.`8`
-  - typingsJapgolly.mfiles.mfilesNumbers.`16`
-  - typingsJapgolly.mfiles.mfilesNumbers.`32`
-  - typingsJapgolly.mfiles.mfilesNumbers.`64`
-  - typingsJapgolly.mfiles.mfilesNumbers.`128`
-  - typingsJapgolly.mfiles.mfilesNumbers.`256`
-  - typingsJapgolly.mfiles.mfilesNumbers.`512`
-  - typingsJapgolly.mfiles.mfilesNumbers.`1024`
-  - typingsJapgolly.mfiles.mfilesNumbers.`2048`
-  - typingsJapgolly.mfiles.mfilesNumbers.`4096`
-  - typingsJapgolly.mfiles.mfilesNumbers.`8192`
-  - typingsJapgolly.mfiles.mfilesNumbers.`16384`
-  - typingsJapgolly.mfiles.mfilesNumbers.`3078`
+  - typingsJapgolly.mfiles.mfilesInts.`0`
+  - typingsJapgolly.mfiles.mfilesInts.`1`
+  - typingsJapgolly.mfiles.mfilesInts.`2`
+  - typingsJapgolly.mfiles.mfilesInts.`4`
+  - typingsJapgolly.mfiles.mfilesInts.`8`
+  - typingsJapgolly.mfiles.mfilesInts.`16`
+  - typingsJapgolly.mfiles.mfilesInts.`32`
+  - typingsJapgolly.mfiles.mfilesInts.`64`
+  - typingsJapgolly.mfiles.mfilesInts.`128`
+  - typingsJapgolly.mfiles.mfilesInts.`256`
+  - typingsJapgolly.mfiles.mfilesInts.`512`
+  - typingsJapgolly.mfiles.mfilesInts.`1024`
+  - typingsJapgolly.mfiles.mfilesInts.`2048`
+  - typingsJapgolly.mfiles.mfilesInts.`4096`
+  - typingsJapgolly.mfiles.mfilesInts.`8192`
+  - typingsJapgolly.mfiles.mfilesInts.`16384`
+  - typingsJapgolly.mfiles.mfilesInts.`3078`
 */
-trait MFUserAccountVaultRole extends js.Object
-
+trait MFUserAccountVaultRole extends StObject
 object MFUserAccountVaultRole {
-  @scala.inline
-  def ChangeMetadataStructure: `256` = this.cast(256)
-  @scala.inline
-  def ChangeObjectSecurity: `128` = this.cast(128)
-  @scala.inline
-  def CreateObjects: `4` = this.cast(4)
-  @scala.inline
-  def DefaultRoles: `3078` = this.cast(3078)
-  @scala.inline
-  def DefineTemplates: `4096` = this.cast(4096)
-  @scala.inline
-  def DestroyObjects: `32` = this.cast(32)
-  @scala.inline
-  def ForceUndoCheckout: `64` = this.cast(64)
-  @scala.inline
-  def FullControl: `1` = this.cast(1)
-  @scala.inline
-  def InternalUser: `1024` = this.cast(1024)
-  @scala.inline
-  def LogIn: `2` = this.cast(2)
-  @scala.inline
-  def ManageCommonViews: `8192` = this.cast(8192)
-  @scala.inline
-  def ManageTraditionalFolders: `2048` = this.cast(2048)
-  @scala.inline
-  def ManageUserAccounts: `512` = this.cast(512)
-  @scala.inline
-  def ManageWorkflows: `16384` = this.cast(16384)
-  @scala.inline
-  def None: `0` = this.cast(0)
-  @scala.inline
-  def SeeAllObjects: `8` = this.cast(8)
-  @scala.inline
-  def UndeleteObjects: `16` = this.cast(16)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ChangeMetadataStructure: `256` = 256.asInstanceOf[`256`]
+  
+  inline def ChangeObjectSecurity: `128` = 128.asInstanceOf[`128`]
+  
+  inline def CreateObjects: `4` = 4.asInstanceOf[`4`]
+  
+  inline def DefaultRoles: `3078` = 3078.asInstanceOf[`3078`]
+  
+  inline def DefineTemplates: `4096` = 4096.asInstanceOf[`4096`]
+  
+  inline def DestroyObjects: `32` = 32.asInstanceOf[`32`]
+  
+  inline def ForceUndoCheckout: `64` = 64.asInstanceOf[`64`]
+  
+  inline def FullControl: `1` = 1.asInstanceOf[`1`]
+  
+  inline def InternalUser: `1024` = 1024.asInstanceOf[`1024`]
+  
+  inline def LogIn: `2` = 2.asInstanceOf[`2`]
+  
+  inline def ManageCommonViews: `8192` = 8192.asInstanceOf[`8192`]
+  
+  inline def ManageTraditionalFolders: `2048` = 2048.asInstanceOf[`2048`]
+  
+  inline def ManageUserAccounts: `512` = 512.asInstanceOf[`512`]
+  
+  inline def ManageWorkflows: `16384` = 16384.asInstanceOf[`16384`]
+  
+  inline def None: `0` = 0.asInstanceOf[`0`]
+  
+  inline def SeeAllObjects: `8` = 8.asInstanceOf[`8`]
+  
+  inline def UndeleteObjects: `16` = 16.asInstanceOf[`16`]
 }
-

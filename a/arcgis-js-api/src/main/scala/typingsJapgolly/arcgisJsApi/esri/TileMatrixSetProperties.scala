@@ -1,22 +1,25 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TileMatrixSetProperties extends js.Object {
+trait TileMatrixSetProperties extends StObject {
+  
   /**
     * The full extent of the TileMatrixSet.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileMatrixSet.html#fullExtent)
     */
   var fullExtent: js.UndefOr[ExtentProperties] = js.undefined
+  
   /**
     * The unique ID assigned to the TileMatrixSet.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileMatrixSet.html#id)
     */
   var id: js.UndefOr[String] = js.undefined
+  
   /**
     * The tiling scheme information for the layer.
     *
@@ -24,15 +27,25 @@ trait TileMatrixSetProperties extends js.Object {
     */
   var tileInfo: js.UndefOr[TileInfoProperties] = js.undefined
 }
-
 object TileMatrixSetProperties {
-  @scala.inline
-  def apply(fullExtent: ExtentProperties = null, id: String = null, tileInfo: TileInfoProperties = null): TileMatrixSetProperties = {
+  
+  inline def apply(): TileMatrixSetProperties = {
     val __obj = js.Dynamic.literal()
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileMatrixSetProperties]
   }
+  
+  extension [Self <: TileMatrixSetProperties](x: Self) {
+    
+    inline def setFullExtent(value: ExtentProperties): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
+    
+    inline def setFullExtentUndefined: Self = StObject.set(x, "fullExtent", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
+    
+    inline def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
+  }
 }
-

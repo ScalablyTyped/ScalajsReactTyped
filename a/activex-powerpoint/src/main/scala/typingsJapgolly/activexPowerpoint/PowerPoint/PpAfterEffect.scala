@@ -1,35 +1,31 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
 */
-trait PpAfterEffect extends js.Object
-
+trait PpAfterEffect extends StObject
 object PpAfterEffect {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ppAfterEffectDim: `2` = this.cast(2)
-  @scala.inline
-  def ppAfterEffectHide: `1` = this.cast(1)
-  @scala.inline
-  def ppAfterEffectHideOnClick: `3` = this.cast(3)
-  @scala.inline
-  def ppAfterEffectMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def ppAfterEffectNothing: `0` = this.cast(0)
+  
+  inline def ppAfterEffectDim: `2` = 2.asInstanceOf[`2`]
+  
+  inline def ppAfterEffectHide: `1` = 1.asInstanceOf[`1`]
+  
+  inline def ppAfterEffectHideOnClick: `3` = 3.asInstanceOf[`3`]
+  
+  inline def ppAfterEffectMixed: `-2` = -2.asInstanceOf[`-2`]
+  
+  inline def ppAfterEffectNothing: `0` = 0.asInstanceOf[`0`]
 }
-

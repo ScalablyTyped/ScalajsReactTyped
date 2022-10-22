@@ -1,20 +1,28 @@
 package typingsJapgolly.reactMdl.mod
 
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomRenderedComponent extends js.Object {
+trait CustomRenderedComponent extends StObject {
+  
   var component: js.UndefOr[String | Element | js.Function] = js.undefined
 }
-
 object CustomRenderedComponent {
-  @scala.inline
-  def apply(component: String | Element | js.Function = null): CustomRenderedComponent = {
+  
+  inline def apply(): CustomRenderedComponent = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomRenderedComponent]
   }
+  
+  extension [Self <: CustomRenderedComponent](x: Self) {
+    
+    inline def setComponent(value: String | Element | js.Function): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    
+    inline def setComponentVdomElement(value: VdomElement): Self = StObject.set(x, "component", value.rawElement.asInstanceOf[js.Any])
+  }
 }
-

@@ -5,41 +5,60 @@ import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.finishFinish
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.finishStart
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.startFinish
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.startStart
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependencySettableProperties> */
 trait ojGanttDependencySettablePropertiesLenient
-  extends /* key */ StringDictionary[js.Any] {
-  var predecessorTaskId: js.UndefOr[js.Any] = js.undefined
-  var shortDesc: js.UndefOr[String] = js.undefined
-  var successorTaskId: js.UndefOr[js.Any] = js.undefined
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
+  var predecessorTaskId: js.UndefOr[Any] = js.undefined
+  
+  var shortDesc: js.UndefOr[String | Null] = js.undefined
+  
+  var successorTaskId: js.UndefOr[Any] = js.undefined
+  
   var svgClassName: js.UndefOr[String] = js.undefined
+  
   var svgStyle: js.UndefOr[js.Object] = js.undefined
+  
   var `type`: js.UndefOr[finishStart | finishFinish | startStart | startFinish] = js.undefined
 }
-
 object ojGanttDependencySettablePropertiesLenient {
-  @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    predecessorTaskId: js.Any = null,
-    shortDesc: String = null,
-    successorTaskId: js.Any = null,
-    svgClassName: String = null,
-    svgStyle: js.Object = null,
-    `type`: finishStart | finishFinish | startStart | startFinish = null
-  ): ojGanttDependencySettablePropertiesLenient = {
+  
+  inline def apply(): ojGanttDependencySettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (predecessorTaskId != null) __obj.updateDynamic("predecessorTaskId")(predecessorTaskId.asInstanceOf[js.Any])
-    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
-    if (successorTaskId != null) __obj.updateDynamic("successorTaskId")(successorTaskId.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojGanttDependencySettablePropertiesLenient]
   }
+  
+  extension [Self <: ojGanttDependencySettablePropertiesLenient](x: Self) {
+    
+    inline def setPredecessorTaskId(value: Any): Self = StObject.set(x, "predecessorTaskId", value.asInstanceOf[js.Any])
+    
+    inline def setPredecessorTaskIdUndefined: Self = StObject.set(x, "predecessorTaskId", js.undefined)
+    
+    inline def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
+    
+    inline def setShortDescNull: Self = StObject.set(x, "shortDesc", null)
+    
+    inline def setShortDescUndefined: Self = StObject.set(x, "shortDesc", js.undefined)
+    
+    inline def setSuccessorTaskId(value: Any): Self = StObject.set(x, "successorTaskId", value.asInstanceOf[js.Any])
+    
+    inline def setSuccessorTaskIdUndefined: Self = StObject.set(x, "successorTaskId", js.undefined)
+    
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    
+    inline def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
+    
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+    
+    inline def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
+    
+    inline def setType(value: finishStart | finishFinish | startStart | startFinish): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

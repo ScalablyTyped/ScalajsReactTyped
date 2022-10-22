@@ -1,41 +1,47 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import typingsJapgolly.devextreme.devextremeStrings.async
-import typingsJapgolly.devextreme.devextremeStrings.compare
-import typingsJapgolly.devextreme.devextremeStrings.custom
-import typingsJapgolly.devextreme.devextremeStrings.email
 import typingsJapgolly.devextreme.devextremeStrings.numeric
-import typingsJapgolly.devextreme.devextremeStrings.pattern
-import typingsJapgolly.devextreme.devextremeStrings.range
-import typingsJapgolly.devextreme.devextremeStrings.required
-import typingsJapgolly.devextreme.devextremeStrings.stringLength
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NumericRule extends js.Object {
-  /** If set to true, empty values are valid. */
+trait NumericRule
+  extends StObject
+     with ValidationRule {
+  
+  /**
+    * If set to true, empty values are valid.
+    */
   var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the message that is shown if the rule is broken. */
+  
+  /**
+    * Specifies the message that is shown if the rule is broken.
+    */
   var message: js.UndefOr[String] = js.undefined
-  /** Specifies the rule type. Set it to "numeric" to use the NumericRule. */
-  var `type`: js.UndefOr[
-    required | numeric | range | stringLength | custom | compare | pattern | email | async
-  ] = js.undefined
+  
+  /**
+    * Specifies the rule type. Set it to &apos;numeric&apos; to use the NumericRule.
+    */
+  var `type`: numeric
 }
-
 object NumericRule {
-  @scala.inline
-  def apply(
-    ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined,
-    message: String = null,
-    `type`: required | numeric | range | stringLength | custom | compare | pattern | email | async = null
-  ): NumericRule = {
+  
+  inline def apply(): NumericRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreEmptyValue)) __obj.updateDynamic("ignoreEmptyValue")(ignoreEmptyValue.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("numeric")
     __obj.asInstanceOf[NumericRule]
   }
+  
+  extension [Self <: NumericRule](x: Self) {
+    
+    inline def setIgnoreEmptyValue(value: Boolean): Self = StObject.set(x, "ignoreEmptyValue", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreEmptyValueUndefined: Self = StObject.set(x, "ignoreEmptyValue", js.undefined)
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setType(value: numeric): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,21 +1,17 @@
 package typingsJapgolly.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.standard
   - typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.virtual
 */
-trait DroppableMode extends js.Object
-
+trait DroppableMode extends StObject
 object DroppableMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def standard: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.standard = this.cast("standard")
-  @scala.inline
-  def virtual: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.virtual = this.cast("virtual")
+  
+  inline def standard: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.standard = "standard".asInstanceOf[typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.standard]
+  
+  inline def virtual: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.virtual = "virtual".asInstanceOf[typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.virtual]
 }
-

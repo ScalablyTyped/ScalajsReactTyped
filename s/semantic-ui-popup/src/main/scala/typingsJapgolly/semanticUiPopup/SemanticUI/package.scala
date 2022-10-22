@@ -1,13 +1,12 @@
-package typingsJapgolly.semanticUiPopup
+package typingsJapgolly.semanticUiPopup.SemanticUI
 
+import typingsJapgolly.semanticUiPopup.SemanticUI.PopupSettings.Param
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object SemanticUI {
-  type Popup = typingsJapgolly.semanticUiPopup.SemanticUI.Popup_
-  /**
-    * @see {@link http://semantic-ui.com/modules/popup.html#/settings}
-    */
-  type PopupSettings = typingsJapgolly.semanticUiPopup.SemanticUI.PopupSettings.Param
-}
+
+/**
+  * @see {@link http://semantic-ui.com/modules/popup.html#/settings}
+  */
+type PopupSettings = Param

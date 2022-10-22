@@ -1,12 +1,22 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Input.Spatial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Input.Spatial.SpatialHoldCanceledEventArgs")
-@js.native
-abstract class SpatialHoldCanceledEventArgs () extends js.Object {
-  var interactionSourceKind: js.Any = js.native
+trait SpatialHoldCanceledEventArgs extends StObject {
+  
+  var interactionSourceKind: Any
 }
-
+object SpatialHoldCanceledEventArgs {
+  
+  inline def apply(interactionSourceKind: Any): SpatialHoldCanceledEventArgs = {
+    val __obj = js.Dynamic.literal(interactionSourceKind = interactionSourceKind.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpatialHoldCanceledEventArgs]
+  }
+  
+  extension [Self <: SpatialHoldCanceledEventArgs](x: Self) {
+    
+    inline def setInteractionSourceKind(value: Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
+  }
+}

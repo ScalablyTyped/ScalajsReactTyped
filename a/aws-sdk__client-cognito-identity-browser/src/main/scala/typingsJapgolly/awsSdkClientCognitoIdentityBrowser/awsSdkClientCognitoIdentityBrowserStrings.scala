@@ -1,114 +1,92 @@
 package typingsJapgolly.awsSdkClientCognitoIdentityBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsSdkClientCognitoIdentityBrowserStrings {
-  @js.native
-  sealed trait AccessDenied extends js.Object
   
   @js.native
-  sealed trait AuthenticatedRole extends js.Object
+  sealed trait AccessDenied extends StObject
+  inline def AccessDenied: AccessDenied = "AccessDenied".asInstanceOf[AccessDenied]
   
   @js.native
-  sealed trait ConcurrentModificationException extends js.Object
+  sealed trait AuthenticatedRole extends StObject
+  inline def AuthenticatedRole: AuthenticatedRole = "AuthenticatedRole".asInstanceOf[AuthenticatedRole]
   
   @js.native
-  sealed trait Contains extends js.Object
+  sealed trait ConcurrentModificationException extends StObject
+  inline def ConcurrentModificationException: ConcurrentModificationException = "ConcurrentModificationException".asInstanceOf[ConcurrentModificationException]
   
   @js.native
-  sealed trait Deny extends js.Object
+  sealed trait Contains extends StObject
+  inline def Contains: Contains = "Contains".asInstanceOf[Contains]
   
   @js.native
-  sealed trait DeveloperUserAlreadyRegisteredException extends js.Object
+  sealed trait Deny extends StObject
+  inline def Deny: Deny = "Deny".asInstanceOf[Deny]
   
   @js.native
-  sealed trait Equals extends js.Object
+  sealed trait DeveloperUserAlreadyRegisteredException extends StObject
+  inline def DeveloperUserAlreadyRegisteredException: DeveloperUserAlreadyRegisteredException = "DeveloperUserAlreadyRegisteredException".asInstanceOf[DeveloperUserAlreadyRegisteredException]
   
   @js.native
-  sealed trait ExternalServiceException extends js.Object
+  sealed trait Equals extends StObject
+  inline def Equals: Equals = "Equals".asInstanceOf[Equals]
   
   @js.native
-  sealed trait InternalErrorException extends js.Object
+  sealed trait ExternalServiceException extends StObject
+  inline def ExternalServiceException: ExternalServiceException = "ExternalServiceException".asInstanceOf[ExternalServiceException]
   
   @js.native
-  sealed trait InternalServerError extends js.Object
+  sealed trait InternalErrorException extends StObject
+  inline def InternalErrorException: InternalErrorException = "InternalErrorException".asInstanceOf[InternalErrorException]
   
   @js.native
-  sealed trait InvalidIdentityPoolConfigurationException extends js.Object
+  sealed trait InternalServerError extends StObject
+  inline def InternalServerError: InternalServerError = "InternalServerError".asInstanceOf[InternalServerError]
   
   @js.native
-  sealed trait InvalidParameterException extends js.Object
+  sealed trait InvalidIdentityPoolConfigurationException extends StObject
+  inline def InvalidIdentityPoolConfigurationException: InvalidIdentityPoolConfigurationException = "InvalidIdentityPoolConfigurationException".asInstanceOf[InvalidIdentityPoolConfigurationException]
   
   @js.native
-  sealed trait LimitExceededException extends js.Object
+  sealed trait InvalidParameterException extends StObject
+  inline def InvalidParameterException: InvalidParameterException = "InvalidParameterException".asInstanceOf[InvalidParameterException]
   
   @js.native
-  sealed trait NotAuthorizedException extends js.Object
+  sealed trait LimitExceededException extends StObject
+  inline def LimitExceededException: LimitExceededException = "LimitExceededException".asInstanceOf[LimitExceededException]
   
   @js.native
-  sealed trait NotEqual extends js.Object
+  sealed trait NotAuthorizedException extends StObject
+  inline def NotAuthorizedException: NotAuthorizedException = "NotAuthorizedException".asInstanceOf[NotAuthorizedException]
   
   @js.native
-  sealed trait ResourceConflictException extends js.Object
+  sealed trait NotEqual extends StObject
+  inline def NotEqual: NotEqual = "NotEqual".asInstanceOf[NotEqual]
   
   @js.native
-  sealed trait ResourceNotFoundException extends js.Object
+  sealed trait ResourceConflictException extends StObject
+  inline def ResourceConflictException: ResourceConflictException = "ResourceConflictException".asInstanceOf[ResourceConflictException]
   
   @js.native
-  sealed trait Rules extends js.Object
+  sealed trait ResourceNotFoundException extends StObject
+  inline def ResourceNotFoundException: ResourceNotFoundException = "ResourceNotFoundException".asInstanceOf[ResourceNotFoundException]
   
   @js.native
-  sealed trait StartsWith extends js.Object
+  sealed trait Rules extends StObject
+  inline def Rules: Rules = "Rules".asInstanceOf[Rules]
   
   @js.native
-  sealed trait Token extends js.Object
+  sealed trait StartsWith extends StObject
+  inline def StartsWith: StartsWith = "StartsWith".asInstanceOf[StartsWith]
   
   @js.native
-  sealed trait TooManyRequestsException extends js.Object
+  sealed trait Token extends StObject
+  inline def Token: Token = "Token".asInstanceOf[Token]
   
-  @scala.inline
-  def AccessDenied: AccessDenied = "AccessDenied".asInstanceOf[AccessDenied]
-  @scala.inline
-  def AuthenticatedRole: AuthenticatedRole = "AuthenticatedRole".asInstanceOf[AuthenticatedRole]
-  @scala.inline
-  def ConcurrentModificationException: ConcurrentModificationException = "ConcurrentModificationException".asInstanceOf[ConcurrentModificationException]
-  @scala.inline
-  def Contains: Contains = "Contains".asInstanceOf[Contains]
-  @scala.inline
-  def Deny: Deny = "Deny".asInstanceOf[Deny]
-  @scala.inline
-  def DeveloperUserAlreadyRegisteredException: DeveloperUserAlreadyRegisteredException = "DeveloperUserAlreadyRegisteredException".asInstanceOf[DeveloperUserAlreadyRegisteredException]
-  @scala.inline
-  def Equals: Equals = "Equals".asInstanceOf[Equals]
-  @scala.inline
-  def ExternalServiceException: ExternalServiceException = "ExternalServiceException".asInstanceOf[ExternalServiceException]
-  @scala.inline
-  def InternalErrorException: InternalErrorException = "InternalErrorException".asInstanceOf[InternalErrorException]
-  @scala.inline
-  def InternalServerError: InternalServerError = "InternalServerError".asInstanceOf[InternalServerError]
-  @scala.inline
-  def InvalidIdentityPoolConfigurationException: InvalidIdentityPoolConfigurationException = "InvalidIdentityPoolConfigurationException".asInstanceOf[InvalidIdentityPoolConfigurationException]
-  @scala.inline
-  def InvalidParameterException: InvalidParameterException = "InvalidParameterException".asInstanceOf[InvalidParameterException]
-  @scala.inline
-  def LimitExceededException: LimitExceededException = "LimitExceededException".asInstanceOf[LimitExceededException]
-  @scala.inline
-  def NotAuthorizedException: NotAuthorizedException = "NotAuthorizedException".asInstanceOf[NotAuthorizedException]
-  @scala.inline
-  def NotEqual: NotEqual = "NotEqual".asInstanceOf[NotEqual]
-  @scala.inline
-  def ResourceConflictException: ResourceConflictException = "ResourceConflictException".asInstanceOf[ResourceConflictException]
-  @scala.inline
-  def ResourceNotFoundException: ResourceNotFoundException = "ResourceNotFoundException".asInstanceOf[ResourceNotFoundException]
-  @scala.inline
-  def Rules: Rules = "Rules".asInstanceOf[Rules]
-  @scala.inline
-  def StartsWith: StartsWith = "StartsWith".asInstanceOf[StartsWith]
-  @scala.inline
-  def Token: Token = "Token".asInstanceOf[Token]
-  @scala.inline
-  def TooManyRequestsException: TooManyRequestsException = "TooManyRequestsException".asInstanceOf[TooManyRequestsException]
+  @js.native
+  sealed trait TooManyRequestsException extends StObject
+  inline def TooManyRequestsException: TooManyRequestsException = "TooManyRequestsException".asInstanceOf[TooManyRequestsException]
 }
-

@@ -1,21 +1,17 @@
 package typingsJapgolly.reachRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reachRouter.reachRouterStrings.PUSH
   - typingsJapgolly.reachRouter.reachRouterStrings.POP
 */
-trait HistoryActionType extends js.Object
-
+trait HistoryActionType extends StObject
 object HistoryActionType {
-  @scala.inline
-  def POP: typingsJapgolly.reachRouter.reachRouterStrings.POP = this.cast("POP")
-  @scala.inline
-  def PUSH: typingsJapgolly.reachRouter.reachRouterStrings.PUSH = this.cast("PUSH")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def POP: typingsJapgolly.reachRouter.reachRouterStrings.POP = "POP".asInstanceOf[typingsJapgolly.reachRouter.reachRouterStrings.POP]
+  
+  inline def PUSH: typingsJapgolly.reachRouter.reachRouterStrings.PUSH = "PUSH".asInstanceOf[typingsJapgolly.reachRouter.reachRouterStrings.PUSH]
 }
-

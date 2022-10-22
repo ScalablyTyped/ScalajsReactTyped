@@ -1,21 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WinRTError extends Error {
+trait WinRTError
+  extends StObject
+     with Error {
+  
   var description: String
+  
   var number: Double
 }
-
 object WinRTError {
-  @scala.inline
-  def apply(description: String, message: String, name: String, number: Double, stack: String = null): WinRTError = {
+  
+  inline def apply(description: String, message: String, name: String, number: Double): WinRTError = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[WinRTError]
   }
+  
+  extension [Self <: WinRTError](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+  }
 }
-

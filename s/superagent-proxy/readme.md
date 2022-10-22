@@ -1,7 +1,7 @@
 
 # Scala.js typings for superagent-proxy
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 `Request#proxy(uri)` superagent extension
@@ -10,10 +10,10 @@ Typings are for version 2.0
 | ------------------ | :-------------: |
 | Full name          | superagent-proxy |
 | Keywords           | superagent, http, https, proxy, socks |
-| # releases         | 3 |
-| # dependents       | 99 |
-| # downloads        | 14160458 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3375523.3333333335 |
+| # stars            | 145.0 |
 
 ## Links
 - [Homepage](https://github.com/TooTallNate/superagent-proxy#readme)

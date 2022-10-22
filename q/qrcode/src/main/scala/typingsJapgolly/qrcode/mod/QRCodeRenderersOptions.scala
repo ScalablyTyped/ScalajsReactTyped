@@ -1,51 +1,58 @@
 package typingsJapgolly.qrcode.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.qrcode.AnonDark
+import typingsJapgolly.qrcode.anon.Dark
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QRCodeRenderersOptions extends QRCodeOptions {
-  var color: js.UndefOr[AnonDark] = js.undefined
+trait QRCodeRenderersOptions
+  extends StObject
+     with QRCodeOptions {
+  
+  var color: js.UndefOr[Dark] = js.undefined
+  
   /**
     * Define how much wide the quiet zone should be.
-    * Default: 4
+    * @default 4
     */
   var margin: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Scale factor. A value of 1 means 1px per modules (black dots).
-    * Default: 4
+    * Scale factor. A value of `1` means 1px per modules (black dots).
+    * @default 4
     */
   var scale: js.UndefOr[Double] = js.undefined
+  
   /**
     * Forces a specific width for the output image.
     * If width is too small to contain the qr symbol, this option will be ignored.
-    * Takes precedence over scale.
+    * Takes precedence over `scale`.
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object QRCodeRenderersOptions {
-  @scala.inline
-  def apply(
-    color: AnonDark = null,
-    errorCorrectionLevel: QRCodeErrorCorrectionLevel = null,
-    margin: Int | Double = null,
-    scale: Int | Double = null,
-    toSJISFunc: /* codePoint */ String => CallbackTo[Double] = null,
-    version: Int | Double = null,
-    width: Int | Double = null
-  ): QRCodeRenderersOptions = {
+  
+  inline def apply(): QRCodeRenderersOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (toSJISFunc != null) __obj.updateDynamic("toSJISFunc")(js.Any.fromFunction1((t0: /* codePoint */ java.lang.String) => toSJISFunc(t0).runNow()))
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[QRCodeRenderersOptions]
   }
+  
+  extension [Self <: QRCodeRenderersOptions](x: Self) {
+    
+    inline def setColor(value: Dark): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

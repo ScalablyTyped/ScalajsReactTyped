@@ -1,24 +1,37 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // UI //////////////////////////////////////////////////
-trait MouseOptions extends js.Object {
+trait MouseOptions extends StObject {
+  
   var cancel: js.UndefOr[String] = js.undefined
+  
   var delay: js.UndefOr[Double] = js.undefined
+  
   var distance: js.UndefOr[Double] = js.undefined
 }
-
 object MouseOptions {
-  @scala.inline
-  def apply(cancel: String = null, delay: Int | Double = null, distance: Int | Double = null): MouseOptions = {
+  
+  inline def apply(): MouseOptions = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseOptions]
   }
+  
+  extension [Self <: MouseOptions](x: Self) {
+    
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+  }
 }
-

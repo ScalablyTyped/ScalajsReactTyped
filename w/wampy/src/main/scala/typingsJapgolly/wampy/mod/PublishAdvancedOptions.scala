@@ -1,38 +1,52 @@
 package typingsJapgolly.wampy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PublishAdvancedOptions extends AdvancedOptions {
+trait PublishAdvancedOptions
+  extends StObject
+     with AdvancedOptions {
+  
   var eligible_authid: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var eligible_authrole: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var exclude_authid: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var exclude_authrole: js.UndefOr[String | js.Array[String]] = js.undefined
 }
-
 object PublishAdvancedOptions {
-  @scala.inline
-  def apply(
-    disclose_me: js.UndefOr[Boolean] = js.undefined,
-    eligible: Double | js.Array[Double] = null,
-    eligible_authid: String | js.Array[String] = null,
-    eligible_authrole: String | js.Array[String] = null,
-    exclude: Double | js.Array[Double] = null,
-    exclude_authid: String | js.Array[String] = null,
-    exclude_authrole: String | js.Array[String] = null,
-    exclude_me: js.UndefOr[Boolean] = js.undefined
-  ): PublishAdvancedOptions = {
+  
+  inline def apply(): PublishAdvancedOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disclose_me)) __obj.updateDynamic("disclose_me")(disclose_me.asInstanceOf[js.Any])
-    if (eligible != null) __obj.updateDynamic("eligible")(eligible.asInstanceOf[js.Any])
-    if (eligible_authid != null) __obj.updateDynamic("eligible_authid")(eligible_authid.asInstanceOf[js.Any])
-    if (eligible_authrole != null) __obj.updateDynamic("eligible_authrole")(eligible_authrole.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (exclude_authid != null) __obj.updateDynamic("exclude_authid")(exclude_authid.asInstanceOf[js.Any])
-    if (exclude_authrole != null) __obj.updateDynamic("exclude_authrole")(exclude_authrole.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclude_me)) __obj.updateDynamic("exclude_me")(exclude_me.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishAdvancedOptions]
   }
+  
+  extension [Self <: PublishAdvancedOptions](x: Self) {
+    
+    inline def setEligible_authid(value: String | js.Array[String]): Self = StObject.set(x, "eligible_authid", value.asInstanceOf[js.Any])
+    
+    inline def setEligible_authidUndefined: Self = StObject.set(x, "eligible_authid", js.undefined)
+    
+    inline def setEligible_authidVarargs(value: String*): Self = StObject.set(x, "eligible_authid", js.Array(value*))
+    
+    inline def setEligible_authrole(value: String | js.Array[String]): Self = StObject.set(x, "eligible_authrole", value.asInstanceOf[js.Any])
+    
+    inline def setEligible_authroleUndefined: Self = StObject.set(x, "eligible_authrole", js.undefined)
+    
+    inline def setEligible_authroleVarargs(value: String*): Self = StObject.set(x, "eligible_authrole", js.Array(value*))
+    
+    inline def setExclude_authid(value: String | js.Array[String]): Self = StObject.set(x, "exclude_authid", value.asInstanceOf[js.Any])
+    
+    inline def setExclude_authidUndefined: Self = StObject.set(x, "exclude_authid", js.undefined)
+    
+    inline def setExclude_authidVarargs(value: String*): Self = StObject.set(x, "exclude_authid", js.Array(value*))
+    
+    inline def setExclude_authrole(value: String | js.Array[String]): Self = StObject.set(x, "exclude_authrole", value.asInstanceOf[js.Any])
+    
+    inline def setExclude_authroleUndefined: Self = StObject.set(x, "exclude_authrole", js.undefined)
+    
+    inline def setExclude_authroleVarargs(value: String*): Self = StObject.set(x, "exclude_authrole", js.Array(value*))
+  }
 }
-

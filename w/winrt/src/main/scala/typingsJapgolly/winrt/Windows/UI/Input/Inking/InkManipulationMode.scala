@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.UI.Input.Inking
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InkManipulationMode extends js.Object
-
+sealed trait InkManipulationMode extends StObject
 @JSGlobal("Windows.UI.Input.Inking.InkManipulationMode")
 @js.native
-object InkManipulationMode extends js.Object {
-  @js.native
-  sealed trait erasing extends InkManipulationMode
+object InkManipulationMode extends StObject {
   
   @js.native
-  sealed trait inking extends InkManipulationMode
+  sealed trait erasing
+    extends StObject
+       with InkManipulationMode
   
   @js.native
-  sealed trait selecting extends InkManipulationMode
+  sealed trait inking
+    extends StObject
+       with InkManipulationMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InkManipulationMode with Double] = js.native
-  /* 1 */ @js.native
-  object erasing extends TopLevel[erasing with Double]
-  
-  /* 0 */ @js.native
-  object inking extends TopLevel[inking with Double]
-  
-  /* 2 */ @js.native
-  object selecting extends TopLevel[selecting with Double]
-  
+  @js.native
+  sealed trait selecting
+    extends StObject
+       with InkManipulationMode
 }
-

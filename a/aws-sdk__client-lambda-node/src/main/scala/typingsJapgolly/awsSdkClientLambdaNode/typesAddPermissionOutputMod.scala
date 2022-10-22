@@ -1,26 +1,42 @@
 package typingsJapgolly.awsSdkClientLambdaNode
 
-import typingsJapgolly.awsSdkClientLambdaNode.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientLambdaNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/types/AddPermissionOutput", JSImport.Namespace)
-@js.native
-object typesAddPermissionOutputMod extends js.Object {
-  @js.native
-  trait AddPermissionOutput extends OutputTypesUnion {
+object typesAddPermissionOutputMod {
+  
+  trait AddPermissionOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>The permission statement you specified in the request. The response returns the same as a string using a backslash ("\") as an escape character in the JSON.</p>
       */
-    var Statement: js.UndefOr[String] = js.native
+    var Statement: js.UndefOr[String] = js.undefined
   }
-  
+  object AddPermissionOutput {
+    
+    inline def apply($metadata: ResponseMetadata): AddPermissionOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AddPermissionOutput]
+    }
+    
+    extension [Self <: AddPermissionOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setStatement(value: String): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
+      
+      inline def setStatementUndefined: Self = StObject.set(x, "Statement", js.undefined)
+    }
+  }
 }
-

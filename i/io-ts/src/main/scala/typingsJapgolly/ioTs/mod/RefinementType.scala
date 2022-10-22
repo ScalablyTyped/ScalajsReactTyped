@@ -1,22 +1,28 @@
 package typingsJapgolly.ioTs.mod
 
+import typingsJapgolly.fpTs.libFunctionMod.Predicate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("io-ts", "RefinementType")
 @js.native
-class RefinementType[C /* <: Any_ */, A, O, I] protected () extends Type_[A, O, I] {
+open class RefinementType[C /* <: Any_ */, A, O, I] protected () extends Type_[A, O, I] {
   def this(
     name: String,
     is: Is[A],
     validate: Validate[I, A],
     encode: Encode[A, O],
     `type`: C,
-    predicate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Predicate<A> */ js.Any
+    predicate: Predicate[A]
   ) = this()
+  
+  /**
+    * @since 1.0.0
+    */
   val _tag: typingsJapgolly.ioTs.ioTsStrings.RefinementType = js.native
-  val predicate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Predicate<A> */ js.Any = js.native
+  
+  def predicate(a: A): Boolean = js.native
+  
   val `type`: C = js.native
 }
-

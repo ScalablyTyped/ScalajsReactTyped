@@ -1,8 +1,8 @@
 package typingsJapgolly.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Getting Started
@@ -10,33 +10,51 @@ import scala.scalajs.js.annotation._
   * interfaces
   */
 // chayns.register()
-trait RegisterConfig extends js.Object {
+trait RegisterConfig extends StObject {
+  
   var appName: js.UndefOr[String] = js.undefined
+  
   var autoResize: js.UndefOr[Boolean] = js.undefined
+  
   var callbackPrefix: js.UndefOr[String] = js.undefined
+  
   var cssPrefix: js.UndefOr[String] = js.undefined
+  
   var initialHeight: js.UndefOr[Double] = js.undefined
+  
   var strictMode: js.UndefOr[Boolean] = js.undefined
 }
-
 object RegisterConfig {
-  @scala.inline
-  def apply(
-    appName: String = null,
-    autoResize: js.UndefOr[Boolean] = js.undefined,
-    callbackPrefix: String = null,
-    cssPrefix: String = null,
-    initialHeight: Int | Double = null,
-    strictMode: js.UndefOr[Boolean] = js.undefined
-  ): RegisterConfig = {
+  
+  inline def apply(): RegisterConfig = {
     val __obj = js.Dynamic.literal()
-    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
-    if (callbackPrefix != null) __obj.updateDynamic("callbackPrefix")(callbackPrefix.asInstanceOf[js.Any])
-    if (cssPrefix != null) __obj.updateDynamic("cssPrefix")(cssPrefix.asInstanceOf[js.Any])
-    if (initialHeight != null) __obj.updateDynamic("initialHeight")(initialHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictMode)) __obj.updateDynamic("strictMode")(strictMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterConfig]
   }
+  
+  extension [Self <: RegisterConfig](x: Self) {
+    
+    inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    
+    inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+    
+    inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
+    
+    inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
+    
+    inline def setCallbackPrefix(value: String): Self = StObject.set(x, "callbackPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackPrefixUndefined: Self = StObject.set(x, "callbackPrefix", js.undefined)
+    
+    inline def setCssPrefix(value: String): Self = StObject.set(x, "cssPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setCssPrefixUndefined: Self = StObject.set(x, "cssPrefix", js.undefined)
+    
+    inline def setInitialHeight(value: Double): Self = StObject.set(x, "initialHeight", value.asInstanceOf[js.Any])
+    
+    inline def setInitialHeightUndefined: Self = StObject.set(x, "initialHeight", js.undefined)
+    
+    inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
+    
+    inline def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
+  }
 }
-

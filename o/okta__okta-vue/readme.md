@@ -1,7 +1,7 @@
 
 # Scala.js typings for okta__okta-vue
 
-Typings are for version 1.2
+Typings are for version 5.5.0
 
 ## Library description:
 Vue support for Okta
@@ -10,21 +10,21 @@ Vue support for Okta
 | ------------------ | :-------------: |
 | Full name          | @okta/okta-vue |
 | Keywords           | oauth2 |
-| # releases         | 16 |
-| # dependents       | 0 |
-| # downloads        | 106204 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 33362.0 |
+| # stars            | 33.0 |
 
 ## Links
-- [Homepage](https://github.com/okta/okta-oidc-js#readme)
-- [Bugs](https://github.com/okta/okta-oidc-js/issues)
-- [Repository](https://github.com/okta/okta-oidc-js)
+- [Homepage](https://github.com/okta/okta-vue#readme)
+- [Bugs](https://github.com/okta/okta-vue/issues)
+- [Repository](https://github.com/okta/okta-vue)
 - [Npm](https://www.npmjs.com/package/%40okta%2Fokta-vue)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

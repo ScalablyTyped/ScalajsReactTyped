@@ -1,49 +1,53 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.cameraRollPickerMod.CameraRollPickerProps
-import typingsJapgolly.antDesignReactNative.imageRollMod.ImageRollProps
-import typingsJapgolly.antDesignReactNative.imageRollMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignReactNative.libImagePickerCameraRollPickerMod.CameraRollPickerProps
+import typingsJapgolly.antDesignReactNative.libImagePickerImageRollMod.ImageRollProps
+import typingsJapgolly.antDesignReactNative.libImagePickerImageRollMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ImageRoll {
-  def apply(
-    onCancel: Callback,
-    onSelected: js.Object => Callback,
-    cameraPickerProps: CameraRollPickerProps = null,
-    cancelText: VdomNode = null,
-    title: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ImageRollProps, default, Unit, ImageRollProps] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("onCancel")(onCancel.toJsFn)
-    __obj.updateDynamic("onSelected")(js.Any.fromFunction1((t0: js.Object) => onSelected(t0).runNow()))
-    if (cameraPickerProps != null) __obj.updateDynamic("cameraPickerProps")(cameraPickerProps.asInstanceOf[js.Any])
-    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.rawNode.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.imageRollMod.ImageRollProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.imageRollMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.imageRollMod.ImageRollProps])(children: _*)
+  inline def apply(onCancel: Callback, onSelected: js.Object => Callback): Builder = {
+    val __props = js.Dynamic.literal(onCancel = onCancel.toJsFn, onSelected = js.Any.fromFunction1((t0: js.Object) => onSelected(t0).runNow()))
+    new Builder(js.Array(this.component, __props.asInstanceOf[ImageRollProps]))
   }
+  
   @JSImport("@ant-design/react-native/lib/image-picker/ImageRoll", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def cameraPickerProps(value: CameraRollPickerProps): this.type = set("cameraPickerProps", value.asInstanceOf[js.Any])
+    
+    inline def cancelText(value: VdomNode): this.type = set("cancelText", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def cancelTextNull: this.type = set("cancelText", null)
+    
+    inline def cancelTextVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("cancelText", js.Array(value*))
+    
+    inline def cancelTextVdomElement(value: VdomElement): this.type = set("cancelText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ImageRollProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

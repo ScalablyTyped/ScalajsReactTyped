@@ -1,26 +1,33 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.breadcrumbTypesMod.IBreadcrumbProps
+import typingsJapgolly.officeUiFabricReact.libComponentsBreadcrumbBreadcrumbDottypesMod.IBreadcrumbProps
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Breadcrumb", JSImport.Namespace)
-@js.native
-object libBreadcrumbMod extends js.Object {
+object libBreadcrumbMod {
+  
+  @JSImport("office-ui-fabric-react/lib/Breadcrumb", "Breadcrumb")
   @js.native
-  class BreadcrumbBase protected ()
-    extends typingsJapgolly.officeUiFabricReact.breadcrumbMod.BreadcrumbBase {
+  val Breadcrumb: FunctionComponent[IBreadcrumbProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Breadcrumb", "BreadcrumbBase")
+  @js.native
+  open class BreadcrumbBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsBreadcrumbMod.BreadcrumbBase {
     def this(props: IBreadcrumbProps) = this()
   }
-  
-  val Breadcrumb: FunctionComponent[IBreadcrumbProps] = js.native
   /* static members */
-  @js.native
-  object BreadcrumbBase extends js.Object {
-    var defaultProps: IBreadcrumbProps = js.native
+  object BreadcrumbBase {
+    
+    @JSImport("office-ui-fabric-react/lib/Breadcrumb", "BreadcrumbBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/Breadcrumb", "BreadcrumbBase.defaultProps")
+    @js.native
+    def defaultProps: IBreadcrumbProps = js.native
+    inline def defaultProps_=(x: IBreadcrumbProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
-  
 }
-

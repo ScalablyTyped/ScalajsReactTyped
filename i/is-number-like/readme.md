@@ -10,10 +10,10 @@ Checks whether provided parameter looks like a number
 | ------------------ | :-------------: |
 | Full name          | is-number-like |
 | Keywords           | is-number, typeof, number-like |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 20042482 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3176437.6666666665 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/vigour-io/is-number-like#readme)

@@ -1,13 +1,15 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.mod.SyntaxKind.ImportKeyword
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportExpression extends PrimaryExpression {
+trait ImportExpression
+  extends StObject
+     with PrimaryExpression {
+  
   @JSName("kind")
-  var kind_ImportExpression: ImportKeyword = js.native
+  val kind_ImportExpression: ImportKeyword = js.native
 }
-

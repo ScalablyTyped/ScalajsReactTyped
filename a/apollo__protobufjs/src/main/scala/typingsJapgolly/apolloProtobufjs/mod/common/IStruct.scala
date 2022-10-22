@@ -1,21 +1,26 @@
 package typingsJapgolly.apolloProtobufjs.mod.common
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a google.protobuf.Struct message. */
-trait IStruct extends js.Object {
+trait IStruct extends StObject {
+  
   var fields: js.UndefOr[StringDictionary[IValue]] = js.undefined
 }
-
 object IStruct {
-  @scala.inline
-  def apply(fields: StringDictionary[IValue] = null): IStruct = {
+  
+  inline def apply(): IStruct = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStruct]
   }
+  
+  extension [Self <: IStruct](x: Self) {
+    
+    inline def setFields(value: StringDictionary[IValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+  }
 }
-

@@ -1,44 +1,32 @@
 package typingsJapgolly.idb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idbStrings {
-  @js.native
-  sealed trait next extends js.Object
   
   @js.native
-  sealed trait nextunique extends js.Object
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait prev extends js.Object
+  sealed trait abort extends StObject
+  inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
-  sealed trait prevunique extends js.Object
+  sealed trait readonly extends StObject
+  inline def readonly: readonly = "readonly".asInstanceOf[readonly]
   
   @js.native
-  sealed trait readonly extends js.Object
+  sealed trait relaxed extends StObject
+  inline def relaxed: relaxed = "relaxed".asInstanceOf[relaxed]
   
   @js.native
-  sealed trait readwrite extends js.Object
+  sealed trait strict extends StObject
+  inline def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
-  sealed trait versionchange extends js.Object
-  
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
-  @scala.inline
-  def nextunique: nextunique = "nextunique".asInstanceOf[nextunique]
-  @scala.inline
-  def prev: prev = "prev".asInstanceOf[prev]
-  @scala.inline
-  def prevunique: prevunique = "prevunique".asInstanceOf[prevunique]
-  @scala.inline
-  def readonly: readonly = "readonly".asInstanceOf[readonly]
-  @scala.inline
-  def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
-  @scala.inline
-  def versionchange: versionchange = "versionchange".asInstanceOf[versionchange]
+  sealed trait versionchange extends StObject
+  inline def versionchange: versionchange = "versionchange".asInstanceOf[versionchange]
 }
-

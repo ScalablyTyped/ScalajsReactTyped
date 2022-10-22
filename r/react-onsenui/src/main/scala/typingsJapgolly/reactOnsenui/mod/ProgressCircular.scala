@@ -1,12 +1,18 @@
 package typingsJapgolly.reactOnsenui.mod
 
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameSecondaryValue
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
+import typingsJapgolly.reactOnsenui.anon.SecondaryValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "ProgressCircular")
 @js.native
-class ProgressCircular ()
-  extends typingsJapgolly.react.mod.Component[HTMLAttributesidclassNameSecondaryValue, js.Any, js.Any]
-
+open class ProgressCircular protected () extends Component[SecondaryValue, Any] {
+  def this(props: HTMLAttributesidclassName & SecondaryValue) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HTMLAttributesidclassName & SecondaryValue, context: Any) = this()
+}

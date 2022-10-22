@@ -1,14 +1,13 @@
 package typingsJapgolly.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Sockets.MessageWebSocket")
 @js.native
-class MessageWebSocket () extends IMessageWebSocket {
-  /* CompleteClass */
-  override def close(): Unit = js.native
+trait MessageWebSocket
+  extends StObject
+     with IMessageWebSocket {
+  
   def dispose(): Unit = js.native
 }
-

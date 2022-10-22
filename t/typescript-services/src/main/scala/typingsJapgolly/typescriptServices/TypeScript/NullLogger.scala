@@ -1,23 +1,25 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.NullLogger")
-@js.native
-class NullLogger () extends ILogger {
-  /* CompleteClass */
-  override def debug(): Boolean = js.native
-  /* CompleteClass */
-  override def error(): Boolean = js.native
-  /* CompleteClass */
-  override def fatal(): Boolean = js.native
-  /* CompleteClass */
-  override def information(): Boolean = js.native
-  /* CompleteClass */
-  override def log(s: String): Unit = js.native
-  /* CompleteClass */
-  override def warning(): Boolean = js.native
+trait NullLogger
+  extends StObject
+     with ILogger
+object NullLogger {
+  
+  inline def apply(
+    debug: CallbackTo[Boolean],
+    error: CallbackTo[Boolean],
+    fatal: CallbackTo[Boolean],
+    information: CallbackTo[Boolean],
+    log: String => Callback,
+    warning: CallbackTo[Boolean]
+  ): NullLogger = {
+    val __obj = js.Dynamic.literal(debug = debug.toJsFn, error = error.toJsFn, fatal = fatal.toJsFn, information = information.toJsFn, log = js.Any.fromFunction1((t0: String) => log(t0).runNow()), warning = warning.toJsFn)
+    __obj.asInstanceOf[NullLogger]
+  }
 }
-

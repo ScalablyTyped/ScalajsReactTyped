@@ -1,44 +1,28 @@
 package typingsJapgolly.reactNativeMaterialUi.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNativeMaterialUi.mod.RippleFeedbackProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RippleFeedback {
-  def apply(
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    RippleFeedbackProps, 
-    typingsJapgolly.reactNativeMaterialUi.mod.RippleFeedback, 
-    Unit, 
-    RippleFeedbackProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeMaterialUi.mod.RippleFeedbackProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeMaterialUi.mod.RippleFeedback](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeMaterialUi.mod.RippleFeedbackProps])(children: _*)
-  }
   @JSImport("react-native-material-ui", "RippleFeedback")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeMaterialUi.mod.RippleFeedback] {
+    
+    inline def borderless(value: Boolean): this.type = set("borderless", value.asInstanceOf[js.Any])
+    
+    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: RippleFeedback.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: RippleFeedbackProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

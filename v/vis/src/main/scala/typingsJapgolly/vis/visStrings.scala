@@ -15,551 +15,644 @@ import typingsJapgolly.vis.mod.TimelineEvents
 import typingsJapgolly.vis.mod.TimelineItemType
 import typingsJapgolly.vis.mod.TimelineTimeAxisScaleType
 import typingsJapgolly.vis.mod.TopBottomEnumType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object visStrings {
-  @js.native
-  sealed trait Array extends js.Object
   
   @js.native
-  sealed trait Object extends js.Object
+  sealed trait Array extends StObject
+  inline def Array: Array = "Array".asInstanceOf[Array]
   
   @js.native
-  sealed trait afterDrawing extends NetworkEvents
+  sealed trait Object extends StObject
+  inline def Object: Object = "Object".asInstanceOf[Object]
   
   @js.native
-  sealed trait animationFinished extends NetworkEvents
+  sealed trait afterDrawing
+    extends StObject
+       with NetworkEvents
+  inline def afterDrawing: afterDrawing = "afterDrawing".asInstanceOf[afterDrawing]
   
   @js.native
-  sealed trait auto extends TimelineAlignType
+  sealed trait animationFinished
+    extends StObject
+       with NetworkEvents
+  inline def animationFinished: animationFinished = "animationFinished".asInstanceOf[animationFinished]
   
   @js.native
-  sealed trait axis extends TimelineEventPropertiesResultWhatType
+  sealed trait auto
+    extends StObject
+       with TimelineAlignType
+  inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
+  sealed trait axis
+    extends StObject
+       with TimelineEventPropertiesResultWhatType
+  inline def axis: axis = "axis".asInstanceOf[axis]
   
   @js.native
   sealed trait background
-    extends TimelineEventPropertiesResultWhatType
+    extends StObject
+       with TimelineEventPropertiesResultWhatType
        with TimelineItemType
+  inline def background: background = "background".asInstanceOf[background]
   
   @js.native
-  sealed trait bar extends Graph2dStyleType
+  sealed trait bar
+    extends StObject
+       with Graph2dStyleType
+  inline def bar: bar = "bar".asInstanceOf[bar]
   
   @js.native
-  sealed trait beforeDrawing extends NetworkEvents
+  sealed trait beforeDrawing
+    extends StObject
+       with NetworkEvents
+  inline def beforeDrawing: beforeDrawing = "beforeDrawing".asInstanceOf[beforeDrawing]
   
   @js.native
-  sealed trait blurEdge extends NetworkEvents
+  sealed trait blurEdge
+    extends StObject
+       with NetworkEvents
+  inline def blurEdge: blurEdge = "blurEdge".asInstanceOf[blurEdge]
   
   @js.native
-  sealed trait blurNode extends NetworkEvents
+  sealed trait blurNode
+    extends StObject
+       with NetworkEvents
+  inline def blurNode: blurNode = "blurNode".asInstanceOf[blurNode]
   
   @js.native
-  sealed trait bottom extends TopBottomEnumType
+  sealed trait bottom
+    extends StObject
+       with TopBottomEnumType
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait `bottom-left` extends LegendPositionType
+  sealed trait `bottom-left`
+    extends StObject
+       with LegendPositionType
+  inline def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   
   @js.native
-  sealed trait `bottom-right` extends LegendPositionType
+  sealed trait `bottom-right`
+    extends StObject
+       with LegendPositionType
+  inline def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
   @js.native
-  sealed trait box extends TimelineItemType
+  sealed trait box
+    extends StObject
+       with TimelineItemType
+  inline def box: box = "box".asInstanceOf[box]
   
   @js.native
-  sealed trait cap extends js.Object
+  sealed trait cap extends StObject
+  inline def cap: cap = "cap".asInstanceOf[cap]
   
   @js.native
   sealed trait center
-    extends Graph2dBarChartAlign
+    extends StObject
+       with Graph2dBarChartAlign
        with TimelineAlignType
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait centripetal extends ParametrizationInterpolationType
+  sealed trait centripetal
+    extends StObject
+       with ParametrizationInterpolationType
+  inline def centripetal: centripetal = "centripetal".asInstanceOf[centripetal]
   
   @js.native
-  sealed trait changed extends TimelineEvents
+  sealed trait changed
+    extends StObject
+       with TimelineEvents
+  inline def changed: changed = "changed".asInstanceOf[changed]
   
   @js.native
-  sealed trait chordal extends ParametrizationInterpolationType
+  sealed trait chordal
+    extends StObject
+       with ParametrizationInterpolationType
+  inline def chordal: chordal = "chordal".asInstanceOf[chordal]
   
   @js.native
-  sealed trait circle extends Graph2dDrawPointsStyle
+  sealed trait circle
+    extends StObject
+       with Graph2dDrawPointsStyle
+  inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
   sealed trait click
-    extends NetworkEvents
+    extends StObject
+       with NetworkEvents
        with TimelineEvents
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait configChange extends NetworkEvents
+  sealed trait configChange
+    extends StObject
+       with NetworkEvents
+  inline def configChange: configChange = "configChange".asInstanceOf[configChange]
   
   @js.native
-  sealed trait contextmenu extends TimelineEvents
+  sealed trait contextmenu
+    extends StObject
+       with TimelineEvents
+  inline def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
   @js.native
-  sealed trait `current-time` extends TimelineEventPropertiesResultWhatType
+  sealed trait controlNodeDragEnd
+    extends StObject
+       with NetworkEvents
+  inline def controlNodeDragEnd: controlNodeDragEnd = "controlNodeDragEnd".asInstanceOf[controlNodeDragEnd]
   
   @js.native
-  sealed trait currentTimeTick extends TimelineEvents
+  sealed trait controlNodeDragging
+    extends StObject
+       with NetworkEvents
+  inline def controlNodeDragging: controlNodeDragging = "controlNodeDragging".asInstanceOf[controlNodeDragging]
   
   @js.native
-  sealed trait `custom-time` extends TimelineEventPropertiesResultWhatType
+  sealed trait `current-time`
+    extends StObject
+       with TimelineEventPropertiesResultWhatType
+  inline def `current-time`: `current-time` = "current-time".asInstanceOf[`current-time`]
   
   @js.native
-  sealed trait daily extends js.Object
+  sealed trait currentTimeTick
+    extends StObject
+       with TimelineEvents
+  inline def currentTimeTick: currentTimeTick = "currentTimeTick".asInstanceOf[currentTimeTick]
   
   @js.native
-  sealed trait day extends TimelineTimeAxisScaleType
+  sealed trait `custom-time`
+    extends StObject
+       with TimelineEventPropertiesResultWhatType
+  inline def `custom-time`: `custom-time` = "custom-time".asInstanceOf[`custom-time`]
   
   @js.native
-  sealed trait deselectEdge extends NetworkEvents
+  sealed trait daily extends StObject
+  inline def daily: daily = "daily".asInstanceOf[daily]
   
   @js.native
-  sealed trait deselectNode extends NetworkEvents
+  sealed trait day
+    extends StObject
+       with TimelineTimeAxisScaleType
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait disabled extends ParametrizationInterpolationType
+  sealed trait deselectEdge
+    extends StObject
+       with NetworkEvents
+  inline def deselectEdge: deselectEdge = "deselectEdge".asInstanceOf[deselectEdge]
+  
+  @js.native
+  sealed trait deselectNode
+    extends StObject
+       with NetworkEvents
+  inline def deselectNode: deselectNode = "deselectNode".asInstanceOf[deselectNode]
+  
+  @js.native
+  sealed trait disabled
+    extends StObject
+       with ParametrizationInterpolationType
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
   sealed trait doubleClick
-    extends NetworkEvents
+    extends StObject
+       with NetworkEvents
        with TimelineEvents
+  inline def doubleClick: doubleClick = "doubleClick".asInstanceOf[doubleClick]
   
   @js.native
-  sealed trait dragEnd extends NetworkEvents
+  sealed trait dragEnd
+    extends StObject
+       with NetworkEvents
+  inline def dragEnd: dragEnd = "dragEnd".asInstanceOf[dragEnd]
   
   @js.native
-  sealed trait dragStart extends NetworkEvents
+  sealed trait dragStart
+    extends StObject
+       with NetworkEvents
+  inline def dragStart: dragStart = "dragStart".asInstanceOf[dragStart]
   
   @js.native
-  sealed trait dragging extends NetworkEvents
+  sealed trait dragging
+    extends StObject
+       with NetworkEvents
+  inline def dragging: dragging = "dragging".asInstanceOf[dragging]
   
   @js.native
-  sealed trait drop extends TimelineEvents
+  sealed trait drop
+    extends StObject
+       with TimelineEvents
+  inline def drop: drop = "drop".asInstanceOf[drop]
   
   @js.native
-  sealed trait easeInCubic extends EasingFunction
+  sealed trait easeInCubic
+    extends StObject
+       with EasingFunction
+  inline def easeInCubic: easeInCubic = "easeInCubic".asInstanceOf[easeInCubic]
   
   @js.native
-  sealed trait easeInOutCubic extends EasingFunction
+  sealed trait easeInOutCubic
+    extends StObject
+       with EasingFunction
+  inline def easeInOutCubic: easeInOutCubic = "easeInOutCubic".asInstanceOf[easeInOutCubic]
   
   @js.native
-  sealed trait easeInOutQuad extends EasingFunction
+  sealed trait easeInOutQuad
+    extends StObject
+       with EasingFunction
+  inline def easeInOutQuad: easeInOutQuad = "easeInOutQuad".asInstanceOf[easeInOutQuad]
   
   @js.native
-  sealed trait easeInOutQuart extends EasingFunction
+  sealed trait easeInOutQuart
+    extends StObject
+       with EasingFunction
+  inline def easeInOutQuart: easeInOutQuart = "easeInOutQuart".asInstanceOf[easeInOutQuart]
   
   @js.native
-  sealed trait easeInOutQuint extends EasingFunction
+  sealed trait easeInOutQuint
+    extends StObject
+       with EasingFunction
+  inline def easeInOutQuint: easeInOutQuint = "easeInOutQuint".asInstanceOf[easeInOutQuint]
   
   @js.native
-  sealed trait easeInQuad extends EasingFunction
+  sealed trait easeInQuad
+    extends StObject
+       with EasingFunction
+  inline def easeInQuad: easeInQuad = "easeInQuad".asInstanceOf[easeInQuad]
   
   @js.native
-  sealed trait easeInQuart extends EasingFunction
+  sealed trait easeInQuart
+    extends StObject
+       with EasingFunction
+  inline def easeInQuart: easeInQuart = "easeInQuart".asInstanceOf[easeInQuart]
   
   @js.native
-  sealed trait easeInQuint extends EasingFunction
+  sealed trait easeInQuint
+    extends StObject
+       with EasingFunction
+  inline def easeInQuint: easeInQuint = "easeInQuint".asInstanceOf[easeInQuint]
   
   @js.native
-  sealed trait easeOutCubic extends EasingFunction
+  sealed trait easeOutCubic
+    extends StObject
+       with EasingFunction
+  inline def easeOutCubic: easeOutCubic = "easeOutCubic".asInstanceOf[easeOutCubic]
   
   @js.native
-  sealed trait easeOutQuad extends EasingFunction
+  sealed trait easeOutQuad
+    extends StObject
+       with EasingFunction
+  inline def easeOutQuad: easeOutQuad = "easeOutQuad".asInstanceOf[easeOutQuad]
   
   @js.native
-  sealed trait easeOutQuart extends EasingFunction
+  sealed trait easeOutQuart
+    extends StObject
+       with EasingFunction
+  inline def easeOutQuart: easeOutQuart = "easeOutQuart".asInstanceOf[easeOutQuart]
   
   @js.native
-  sealed trait easeOutQuint extends EasingFunction
+  sealed trait easeOutQuint
+    extends StObject
+       with EasingFunction
+  inline def easeOutQuint: easeOutQuint = "easeOutQuint".asInstanceOf[easeOutQuint]
   
   @js.native
-  sealed trait flip extends js.Object
+  sealed trait flip extends StObject
+  inline def flip: flip = "flip".asInstanceOf[flip]
   
   @js.native
-  sealed trait from extends DirectionType
+  sealed trait from
+    extends StObject
+       with DirectionType
+  inline def from: from = "from".asInstanceOf[from]
   
   @js.native
-  sealed trait `group-label` extends TimelineEventPropertiesResultWhatType
+  sealed trait `group-label`
+    extends StObject
+       with TimelineEventPropertiesResultWhatType
+  inline def `group-label`: `group-label` = "group-label".asInstanceOf[`group-label`]
   
   @js.native
-  sealed trait groupDragged extends TimelineEvents
+  sealed trait groupDragged
+    extends StObject
+       with TimelineEvents
+  inline def groupDragged: groupDragged = "groupDragged".asInstanceOf[groupDragged]
   
   @js.native
-  sealed trait hidePopup extends NetworkEvents
+  sealed trait hidePopup
+    extends StObject
+       with NetworkEvents
+  inline def hidePopup: hidePopup = "hidePopup".asInstanceOf[hidePopup]
   
   @js.native
-  sealed trait hold extends NetworkEvents
+  sealed trait hold
+    extends StObject
+       with NetworkEvents
+  inline def hold: hold = "hold".asInstanceOf[hold]
   
   @js.native
-  sealed trait hour extends TimelineTimeAxisScaleType
+  sealed trait hour
+    extends StObject
+       with TimelineTimeAxisScaleType
+  inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
-  sealed trait hoverEdge extends NetworkEvents
+  sealed trait hoverEdge
+    extends StObject
+       with NetworkEvents
+  inline def hoverEdge: hoverEdge = "hoverEdge".asInstanceOf[hoverEdge]
   
   @js.native
-  sealed trait hoverNode extends NetworkEvents
+  sealed trait hoverNode
+    extends StObject
+       with NetworkEvents
+  inline def hoverNode: hoverNode = "hoverNode".asInstanceOf[hoverNode]
   
   @js.native
-  sealed trait initRedraw extends NetworkEvents
+  sealed trait initRedraw
+    extends StObject
+       with NetworkEvents
+  inline def initRedraw: initRedraw = "initRedraw".asInstanceOf[initRedraw]
   
   @js.native
-  sealed trait item extends TimelineEventPropertiesResultWhatType
+  sealed trait item
+    extends StObject
+       with TimelineEventPropertiesResultWhatType
+  inline def item: item = "item".asInstanceOf[item]
   
   @js.native
-  sealed trait itemout extends TimelineEvents
+  sealed trait itemout
+    extends StObject
+       with TimelineEvents
+  inline def itemout: itemout = "itemout".asInstanceOf[itemout]
   
   @js.native
-  sealed trait itemover extends TimelineEvents
+  sealed trait itemover
+    extends StObject
+       with TimelineEvents
+  inline def itemover: itemover = "itemover".asInstanceOf[itemover]
   
   @js.native
   sealed trait left
-    extends Graph2dBarChartAlign
+    extends StObject
+       with Graph2dBarChartAlign
        with RightLeftEnumType
        with TimelineAlignType
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait line extends Graph2dStyleType
+  sealed trait line
+    extends StObject
+       with Graph2dStyleType
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait linear extends EasingFunction
+  sealed trait linear
+    extends StObject
+       with EasingFunction
+  inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
-  sealed trait millisecond extends TimelineTimeAxisScaleType
+  sealed trait millisecond
+    extends StObject
+       with TimelineTimeAxisScaleType
+  inline def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
   
   @js.native
-  sealed trait minute extends TimelineTimeAxisScaleType
+  sealed trait minute
+    extends StObject
+       with TimelineTimeAxisScaleType
+  inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
-  sealed trait month extends TimelineTimeAxisScaleType
+  sealed trait month
+    extends StObject
+       with TimelineTimeAxisScaleType
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait monthly extends js.Object
+  sealed trait monthly extends StObject
+  inline def monthly: monthly = "monthly".asInstanceOf[monthly]
   
   @js.native
-  sealed trait mouseDown extends TimelineEvents
+  sealed trait mouseDown
+    extends StObject
+       with TimelineEvents
+  inline def mouseDown: mouseDown = "mouseDown".asInstanceOf[mouseDown]
   
   @js.native
-  sealed trait mouseMove extends TimelineEvents
+  sealed trait mouseMove
+    extends StObject
+       with TimelineEvents
+  inline def mouseMove: mouseMove = "mouseMove".asInstanceOf[mouseMove]
   
   @js.native
-  sealed trait mouseOver extends TimelineEvents
+  sealed trait mouseOver
+    extends StObject
+       with TimelineEvents
+  inline def mouseOver: mouseOver = "mouseOver".asInstanceOf[mouseOver]
   
   @js.native
-  sealed trait mouseUp extends TimelineEvents
+  sealed trait mouseUp
+    extends StObject
+       with TimelineEvents
+  inline def mouseUp: mouseUp = "mouseUp".asInstanceOf[mouseUp]
   
   @js.native
-  sealed trait oncontext extends NetworkEvents
+  sealed trait oncontext
+    extends StObject
+       with NetworkEvents
+  inline def oncontext: oncontext = "oncontext".asInstanceOf[oncontext]
   
   @js.native
-  sealed trait point extends TimelineItemType
+  sealed trait point
+    extends StObject
+       with TimelineItemType
+  inline def point: point = "point".asInstanceOf[point]
   
   @js.native
-  sealed trait points extends Graph2dStyleType
+  sealed trait points
+    extends StObject
+       with Graph2dStyleType
+  inline def points: points = "points".asInstanceOf[points]
   
   @js.native
-  sealed trait range extends TimelineItemType
+  sealed trait range
+    extends StObject
+       with TimelineItemType
+  inline def range: range = "range".asInstanceOf[range]
   
   @js.native
-  sealed trait rangechange extends TimelineEvents
+  sealed trait rangechange
+    extends StObject
+       with TimelineEvents
+  inline def rangechange: rangechange = "rangechange".asInstanceOf[rangechange]
   
   @js.native
-  sealed trait rangechanged extends TimelineEvents
+  sealed trait rangechanged
+    extends StObject
+       with TimelineEvents
+  inline def rangechanged: rangechanged = "rangechanged".asInstanceOf[rangechanged]
   
   @js.native
-  sealed trait release extends NetworkEvents
+  sealed trait release
+    extends StObject
+       with NetworkEvents
+  inline def release: release = "release".asInstanceOf[release]
   
   @js.native
-  sealed trait resize extends NetworkEvents
+  sealed trait resize
+    extends StObject
+       with NetworkEvents
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
   sealed trait right
-    extends Graph2dBarChartAlign
+    extends StObject
+       with Graph2dBarChartAlign
        with RightLeftEnumType
        with TimelineAlignType
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait second extends TimelineTimeAxisScaleType
+  sealed trait second
+    extends StObject
+       with TimelineTimeAxisScaleType
+  inline def second: second = "second".asInstanceOf[second]
   
   @js.native
   sealed trait select
-    extends NetworkEvents
+    extends StObject
+       with NetworkEvents
        with TimelineEvents
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait selectEdge extends NetworkEvents
+  sealed trait selectEdge
+    extends StObject
+       with NetworkEvents
+  inline def selectEdge: selectEdge = "selectEdge".asInstanceOf[selectEdge]
   
   @js.native
-  sealed trait selectNode extends NetworkEvents
+  sealed trait selectNode
+    extends StObject
+       with NetworkEvents
+  inline def selectNode: selectNode = "selectNode".asInstanceOf[selectNode]
   
   @js.native
-  sealed trait showPopup extends NetworkEvents
+  sealed trait showPopup
+    extends StObject
+       with NetworkEvents
+  inline def showPopup: showPopup = "showPopup".asInstanceOf[showPopup]
   
   @js.native
-  sealed trait square extends Graph2dDrawPointsStyle
+  sealed trait square
+    extends StObject
+       with Graph2dDrawPointsStyle
+  inline def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait stabilizationIterationsDone extends NetworkEvents
+  sealed trait stabilizationIterationsDone
+    extends StObject
+       with NetworkEvents
+  inline def stabilizationIterationsDone: stabilizationIterationsDone = "stabilizationIterationsDone".asInstanceOf[stabilizationIterationsDone]
   
   @js.native
-  sealed trait stabilizationProgress extends NetworkEvents
+  sealed trait stabilizationProgress
+    extends StObject
+       with NetworkEvents
+  inline def stabilizationProgress: stabilizationProgress = "stabilizationProgress".asInstanceOf[stabilizationProgress]
   
   @js.native
-  sealed trait stabilized extends NetworkEvents
+  sealed trait stabilized
+    extends StObject
+       with NetworkEvents
+  inline def stabilized: stabilized = "stabilized".asInstanceOf[stabilized]
   
   @js.native
-  sealed trait startStabilizing extends NetworkEvents
+  sealed trait startStabilizing
+    extends StObject
+       with NetworkEvents
+  inline def startStabilizing: startStabilizing = "startStabilizing".asInstanceOf[startStabilizing]
   
   @js.native
-  sealed trait timechange extends TimelineEvents
+  sealed trait timechange
+    extends StObject
+       with TimelineEvents
+  inline def timechange: timechange = "timechange".asInstanceOf[timechange]
   
   @js.native
-  sealed trait timechanged extends TimelineEvents
+  sealed trait timechanged
+    extends StObject
+       with TimelineEvents
+  inline def timechanged: timechanged = "timechanged".asInstanceOf[timechanged]
   
   @js.native
-  sealed trait to extends DirectionType
+  sealed trait to
+    extends StObject
+       with DirectionType
+  inline def to: to = "to".asInstanceOf[to]
   
   @js.native
-  sealed trait top extends TopBottomEnumType
+  sealed trait top
+    extends StObject
+       with TopBottomEnumType
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait `top-left` extends LegendPositionType
+  sealed trait `top-left`
+    extends StObject
+       with LegendPositionType
+  inline def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   
   @js.native
-  sealed trait `top-right` extends LegendPositionType
+  sealed trait `top-right`
+    extends StObject
+       with LegendPositionType
+  inline def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
   @js.native
-  sealed trait uniform extends ParametrizationInterpolationType
+  sealed trait uniform
+    extends StObject
+       with ParametrizationInterpolationType
+  inline def uniform: uniform = "uniform".asInstanceOf[uniform]
   
   @js.native
-  sealed trait week extends TimelineTimeAxisScaleType
+  sealed trait week
+    extends StObject
+       with TimelineTimeAxisScaleType
+  inline def week: week = "week".asInstanceOf[week]
   
   @js.native
-  sealed trait weekday extends TimelineTimeAxisScaleType
+  sealed trait weekday
+    extends StObject
+       with TimelineTimeAxisScaleType
+  inline def weekday: weekday = "weekday".asInstanceOf[weekday]
   
   @js.native
-  sealed trait weekly extends js.Object
+  sealed trait weekly extends StObject
+  inline def weekly: weekly = "weekly".asInstanceOf[weekly]
   
   @js.native
-  sealed trait year extends TimelineTimeAxisScaleType
+  sealed trait year
+    extends StObject
+       with TimelineTimeAxisScaleType
+  inline def year: year = "year".asInstanceOf[year]
   
   @js.native
-  sealed trait yearly extends js.Object
+  sealed trait yearly extends StObject
+  inline def yearly: yearly = "yearly".asInstanceOf[yearly]
   
   @js.native
-  sealed trait zoom extends NetworkEvents
-  
-  @scala.inline
-  def Array: Array = "Array".asInstanceOf[Array]
-  @scala.inline
-  def Object: Object = "Object".asInstanceOf[Object]
-  @scala.inline
-  def afterDrawing: afterDrawing = "afterDrawing".asInstanceOf[afterDrawing]
-  @scala.inline
-  def animationFinished: animationFinished = "animationFinished".asInstanceOf[animationFinished]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def axis: axis = "axis".asInstanceOf[axis]
-  @scala.inline
-  def background: background = "background".asInstanceOf[background]
-  @scala.inline
-  def bar: bar = "bar".asInstanceOf[bar]
-  @scala.inline
-  def beforeDrawing: beforeDrawing = "beforeDrawing".asInstanceOf[beforeDrawing]
-  @scala.inline
-  def blurEdge: blurEdge = "blurEdge".asInstanceOf[blurEdge]
-  @scala.inline
-  def blurNode: blurNode = "blurNode".asInstanceOf[blurNode]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
-  @scala.inline
-  def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
-  @scala.inline
-  def box: box = "box".asInstanceOf[box]
-  @scala.inline
-  def cap: cap = "cap".asInstanceOf[cap]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def centripetal: centripetal = "centripetal".asInstanceOf[centripetal]
-  @scala.inline
-  def changed: changed = "changed".asInstanceOf[changed]
-  @scala.inline
-  def chordal: chordal = "chordal".asInstanceOf[chordal]
-  @scala.inline
-  def circle: circle = "circle".asInstanceOf[circle]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def configChange: configChange = "configChange".asInstanceOf[configChange]
-  @scala.inline
-  def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
-  @scala.inline
-  def `current-time`: `current-time` = "current-time".asInstanceOf[`current-time`]
-  @scala.inline
-  def currentTimeTick: currentTimeTick = "currentTimeTick".asInstanceOf[currentTimeTick]
-  @scala.inline
-  def `custom-time`: `custom-time` = "custom-time".asInstanceOf[`custom-time`]
-  @scala.inline
-  def daily: daily = "daily".asInstanceOf[daily]
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
-  @scala.inline
-  def deselectEdge: deselectEdge = "deselectEdge".asInstanceOf[deselectEdge]
-  @scala.inline
-  def deselectNode: deselectNode = "deselectNode".asInstanceOf[deselectNode]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
-  @scala.inline
-  def doubleClick: doubleClick = "doubleClick".asInstanceOf[doubleClick]
-  @scala.inline
-  def dragEnd: dragEnd = "dragEnd".asInstanceOf[dragEnd]
-  @scala.inline
-  def dragStart: dragStart = "dragStart".asInstanceOf[dragStart]
-  @scala.inline
-  def dragging: dragging = "dragging".asInstanceOf[dragging]
-  @scala.inline
-  def drop: drop = "drop".asInstanceOf[drop]
-  @scala.inline
-  def easeInCubic: easeInCubic = "easeInCubic".asInstanceOf[easeInCubic]
-  @scala.inline
-  def easeInOutCubic: easeInOutCubic = "easeInOutCubic".asInstanceOf[easeInOutCubic]
-  @scala.inline
-  def easeInOutQuad: easeInOutQuad = "easeInOutQuad".asInstanceOf[easeInOutQuad]
-  @scala.inline
-  def easeInOutQuart: easeInOutQuart = "easeInOutQuart".asInstanceOf[easeInOutQuart]
-  @scala.inline
-  def easeInOutQuint: easeInOutQuint = "easeInOutQuint".asInstanceOf[easeInOutQuint]
-  @scala.inline
-  def easeInQuad: easeInQuad = "easeInQuad".asInstanceOf[easeInQuad]
-  @scala.inline
-  def easeInQuart: easeInQuart = "easeInQuart".asInstanceOf[easeInQuart]
-  @scala.inline
-  def easeInQuint: easeInQuint = "easeInQuint".asInstanceOf[easeInQuint]
-  @scala.inline
-  def easeOutCubic: easeOutCubic = "easeOutCubic".asInstanceOf[easeOutCubic]
-  @scala.inline
-  def easeOutQuad: easeOutQuad = "easeOutQuad".asInstanceOf[easeOutQuad]
-  @scala.inline
-  def easeOutQuart: easeOutQuart = "easeOutQuart".asInstanceOf[easeOutQuart]
-  @scala.inline
-  def easeOutQuint: easeOutQuint = "easeOutQuint".asInstanceOf[easeOutQuint]
-  @scala.inline
-  def flip: flip = "flip".asInstanceOf[flip]
-  @scala.inline
-  def from: from = "from".asInstanceOf[from]
-  @scala.inline
-  def `group-label`: `group-label` = "group-label".asInstanceOf[`group-label`]
-  @scala.inline
-  def groupDragged: groupDragged = "groupDragged".asInstanceOf[groupDragged]
-  @scala.inline
-  def hidePopup: hidePopup = "hidePopup".asInstanceOf[hidePopup]
-  @scala.inline
-  def hold: hold = "hold".asInstanceOf[hold]
-  @scala.inline
-  def hour: hour = "hour".asInstanceOf[hour]
-  @scala.inline
-  def hoverEdge: hoverEdge = "hoverEdge".asInstanceOf[hoverEdge]
-  @scala.inline
-  def hoverNode: hoverNode = "hoverNode".asInstanceOf[hoverNode]
-  @scala.inline
-  def initRedraw: initRedraw = "initRedraw".asInstanceOf[initRedraw]
-  @scala.inline
-  def item: item = "item".asInstanceOf[item]
-  @scala.inline
-  def itemout: itemout = "itemout".asInstanceOf[itemout]
-  @scala.inline
-  def itemover: itemover = "itemover".asInstanceOf[itemover]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
-  @scala.inline
-  def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
-  @scala.inline
-  def minute: minute = "minute".asInstanceOf[minute]
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
-  @scala.inline
-  def monthly: monthly = "monthly".asInstanceOf[monthly]
-  @scala.inline
-  def mouseDown: mouseDown = "mouseDown".asInstanceOf[mouseDown]
-  @scala.inline
-  def mouseMove: mouseMove = "mouseMove".asInstanceOf[mouseMove]
-  @scala.inline
-  def mouseOver: mouseOver = "mouseOver".asInstanceOf[mouseOver]
-  @scala.inline
-  def mouseUp: mouseUp = "mouseUp".asInstanceOf[mouseUp]
-  @scala.inline
-  def oncontext: oncontext = "oncontext".asInstanceOf[oncontext]
-  @scala.inline
-  def point: point = "point".asInstanceOf[point]
-  @scala.inline
-  def points: points = "points".asInstanceOf[points]
-  @scala.inline
-  def range: range = "range".asInstanceOf[range]
-  @scala.inline
-  def rangechange: rangechange = "rangechange".asInstanceOf[rangechange]
-  @scala.inline
-  def rangechanged: rangechanged = "rangechanged".asInstanceOf[rangechanged]
-  @scala.inline
-  def release: release = "release".asInstanceOf[release]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def second: second = "second".asInstanceOf[second]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def selectEdge: selectEdge = "selectEdge".asInstanceOf[selectEdge]
-  @scala.inline
-  def selectNode: selectNode = "selectNode".asInstanceOf[selectNode]
-  @scala.inline
-  def showPopup: showPopup = "showPopup".asInstanceOf[showPopup]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
-  @scala.inline
-  def stabilizationIterationsDone: stabilizationIterationsDone = "stabilizationIterationsDone".asInstanceOf[stabilizationIterationsDone]
-  @scala.inline
-  def stabilizationProgress: stabilizationProgress = "stabilizationProgress".asInstanceOf[stabilizationProgress]
-  @scala.inline
-  def stabilized: stabilized = "stabilized".asInstanceOf[stabilized]
-  @scala.inline
-  def startStabilizing: startStabilizing = "startStabilizing".asInstanceOf[startStabilizing]
-  @scala.inline
-  def timechange: timechange = "timechange".asInstanceOf[timechange]
-  @scala.inline
-  def timechanged: timechanged = "timechanged".asInstanceOf[timechanged]
-  @scala.inline
-  def to: to = "to".asInstanceOf[to]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
-  @scala.inline
-  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
-  @scala.inline
-  def uniform: uniform = "uniform".asInstanceOf[uniform]
-  @scala.inline
-  def week: week = "week".asInstanceOf[week]
-  @scala.inline
-  def weekday: weekday = "weekday".asInstanceOf[weekday]
-  @scala.inline
-  def weekly: weekly = "weekly".asInstanceOf[weekly]
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
-  @scala.inline
-  def yearly: yearly = "yearly".asInstanceOf[yearly]
-  @scala.inline
-  def zoom: zoom = "zoom".asInstanceOf[zoom]
+  sealed trait zoom
+    extends StObject
+       with NetworkEvents
+  inline def zoom: zoom = "zoom".asInstanceOf[zoom]
 }
-

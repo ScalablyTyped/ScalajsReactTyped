@@ -1,38 +1,59 @@
 package typingsJapgolly.googleCloudTasks.mod
 
+import typingsJapgolly.googleAuthLibrary.buildSrcAuthGoogleauthMod.GoogleAuthOptions
+import typingsJapgolly.googleAuthLibrary.buildSrcAuthGoogleauthMod.JSONClient
 import typingsJapgolly.std.PromiseConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait CloudTasksConfig extends js.Object {
+trait CloudTasksConfig
+  extends StObject
+     with GoogleAuthOptions[JSONClient] {
+  
   var autoRetry: js.UndefOr[Boolean] = js.undefined
+  
   var key: js.UndefOr[String] = js.undefined
+  
   var libName: js.UndefOr[String] = js.undefined
+  
   var libVersion: js.UndefOr[String] = js.undefined
+  
   var maxRetries: js.UndefOr[Double] = js.undefined
+  
   var promise: js.UndefOr[PromiseConstructor] = js.undefined
 }
-
 object CloudTasksConfig {
-  @scala.inline
-  def apply(
-    autoRetry: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    libName: String = null,
-    libVersion: String = null,
-    maxRetries: Int | Double = null,
-    promise: PromiseConstructor = null
-  ): CloudTasksConfig = {
+  
+  inline def apply(): CloudTasksConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRetry)) __obj.updateDynamic("autoRetry")(autoRetry.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (libName != null) __obj.updateDynamic("libName")(libName.asInstanceOf[js.Any])
-    if (libVersion != null) __obj.updateDynamic("libVersion")(libVersion.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudTasksConfig]
   }
+  
+  extension [Self <: CloudTasksConfig](x: Self) {
+    
+    inline def setAutoRetry(value: Boolean): Self = StObject.set(x, "autoRetry", value.asInstanceOf[js.Any])
+    
+    inline def setAutoRetryUndefined: Self = StObject.set(x, "autoRetry", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setLibName(value: String): Self = StObject.set(x, "libName", value.asInstanceOf[js.Any])
+    
+    inline def setLibNameUndefined: Self = StObject.set(x, "libName", js.undefined)
+    
+    inline def setLibVersion(value: String): Self = StObject.set(x, "libVersion", value.asInstanceOf[js.Any])
+    
+    inline def setLibVersionUndefined: Self = StObject.set(x, "libVersion", js.undefined)
+    
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+    
+    inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    
+    inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+  }
 }
-

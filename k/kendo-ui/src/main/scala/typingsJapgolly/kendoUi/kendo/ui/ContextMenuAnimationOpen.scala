@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContextMenuAnimationOpen extends js.Object {
+trait ContextMenuAnimationOpen extends StObject {
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
   var effects: js.UndefOr[String] = js.undefined
 }
-
 object ContextMenuAnimationOpen {
-  @scala.inline
-  def apply(duration: Int | Double = null, effects: String = null): ContextMenuAnimationOpen = {
+  
+  inline def apply(): ContextMenuAnimationOpen = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (effects != null) __obj.updateDynamic("effects")(effects.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuAnimationOpen]
   }
+  
+  extension [Self <: ContextMenuAnimationOpen](x: Self) {
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEffects(value: String): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+    
+    inline def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
+  }
 }
-

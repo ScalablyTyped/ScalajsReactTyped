@@ -2,47 +2,56 @@ package typingsJapgolly.facebookJsSdk.facebook
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.facebookJsSdk.facebookJsSdkBooleans.`false`
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.async
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.iframe
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.page
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.popup
 import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.share_open_graph
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShareOpenGraphDialogParams extends DialogParams {
-  var action_properties: StringDictionary[js.Any]
+trait ShareOpenGraphDialogParams
+  extends StObject
+     with DialogParams {
+  
+  var action_properties: StringDictionary[Any]
+  
   var action_type: String
+  
   var hashtag: js.UndefOr[String] = js.undefined
+  
   var href: String
+  
   var method: share_open_graph
+  
   var mobile_iframe: js.UndefOr[`false`] = js.undefined
+  
   var quote: js.UndefOr[String] = js.undefined
 }
-
 object ShareOpenGraphDialogParams {
-  @scala.inline
-  def apply(
-    action_properties: StringDictionary[js.Any],
-    action_type: String,
-    href: String,
-    method: share_open_graph,
-    app_id: String = null,
-    display: page | iframe | async | popup = null,
-    hashtag: String = null,
-    mobile_iframe: `false` = null,
-    quote: String = null,
-    redirect_uri: String = null
-  ): ShareOpenGraphDialogParams = {
-    val __obj = js.Dynamic.literal(action_properties = action_properties.asInstanceOf[js.Any], action_type = action_type.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag.asInstanceOf[js.Any])
-    if (mobile_iframe != null) __obj.updateDynamic("mobile_iframe")(mobile_iframe.asInstanceOf[js.Any])
-    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+  
+  inline def apply(action_properties: StringDictionary[Any], action_type: String, href: String): ShareOpenGraphDialogParams = {
+    val __obj = js.Dynamic.literal(action_properties = action_properties.asInstanceOf[js.Any], action_type = action_type.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], method = "share_open_graph")
     __obj.asInstanceOf[ShareOpenGraphDialogParams]
   }
+  
+  extension [Self <: ShareOpenGraphDialogParams](x: Self) {
+    
+    inline def setAction_properties(value: StringDictionary[Any]): Self = StObject.set(x, "action_properties", value.asInstanceOf[js.Any])
+    
+    inline def setAction_type(value: String): Self = StObject.set(x, "action_type", value.asInstanceOf[js.Any])
+    
+    inline def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+    
+    inline def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
+    
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setMethod(value: share_open_graph): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMobile_iframe(value: `false`): Self = StObject.set(x, "mobile_iframe", value.asInstanceOf[js.Any])
+    
+    inline def setMobile_iframeUndefined: Self = StObject.set(x, "mobile_iframe", js.undefined)
+    
+    inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+    
+    inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+  }
 }
-

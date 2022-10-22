@@ -1,21 +1,17 @@
 package typingsJapgolly.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.arangodb.arangodbStrings.mmfiles
   - typingsJapgolly.arangodb.arangodbStrings.rocksdb
 */
-trait EngineType extends js.Object
-
+trait EngineType extends StObject
 object EngineType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def mmfiles: typingsJapgolly.arangodb.arangodbStrings.mmfiles = this.cast("mmfiles")
-  @scala.inline
-  def rocksdb: typingsJapgolly.arangodb.arangodbStrings.rocksdb = this.cast("rocksdb")
+  
+  inline def mmfiles: typingsJapgolly.arangodb.arangodbStrings.mmfiles = "mmfiles".asInstanceOf[typingsJapgolly.arangodb.arangodbStrings.mmfiles]
+  
+  inline def rocksdb: typingsJapgolly.arangodb.arangodbStrings.rocksdb = "rocksdb".asInstanceOf[typingsJapgolly.arangodb.arangodbStrings.rocksdb]
 }
-

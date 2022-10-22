@@ -3,115 +3,117 @@ package typingsJapgolly.eonasdanBootstrapDatetimepicker
 import typingsJapgolly.eonasdanBootstrapDatetimepicker.mod.ToolbarPlacement
 import typingsJapgolly.eonasdanBootstrapDatetimepicker.mod.UseCurrent
 import typingsJapgolly.eonasdanBootstrapDatetimepicker.mod.ViewMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eonasdanBootstrapDatetimepickerStrings {
-  @js.native
-  sealed trait DateTimePicker extends js.Object
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait default
+    extends StObject
+       with ToolbarPlacement
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait bottom extends ToolbarPlacement
+  sealed trait DateTimePicker extends StObject
+  inline def DateTimePicker: DateTimePicker = "DateTimePicker".asInstanceOf[DateTimePicker]
   
   @js.native
-  sealed trait day extends UseCurrent
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait days extends ViewMode
+  sealed trait bottom
+    extends StObject
+       with ToolbarPlacement
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait decades extends ViewMode
+  sealed trait day
+    extends StObject
+       with UseCurrent
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait default extends ToolbarPlacement
+  sealed trait days
+    extends StObject
+       with ViewMode
+  inline def days: days = "days".asInstanceOf[days]
   
   @js.native
-  sealed trait dpDotchange extends js.Object
+  sealed trait decades
+    extends StObject
+       with ViewMode
+  inline def decades: decades = "decades".asInstanceOf[decades]
   
   @js.native
-  sealed trait dpDoterror extends js.Object
+  sealed trait dpDotchange extends StObject
+  inline def dpDotchange: dpDotchange = "dp.change".asInstanceOf[dpDotchange]
   
   @js.native
-  sealed trait dpDothide extends js.Object
+  sealed trait dpDoterror extends StObject
+  inline def dpDoterror: dpDoterror = "dp.error".asInstanceOf[dpDoterror]
   
   @js.native
-  sealed trait dpDotshow extends js.Object
+  sealed trait dpDothide extends StObject
+  inline def dpDothide: dpDothide = "dp.hide".asInstanceOf[dpDothide]
   
   @js.native
-  sealed trait dpDotupdate extends js.Object
+  sealed trait dpDotshow extends StObject
+  inline def dpDotshow: dpDotshow = "dp.show".asInstanceOf[dpDotshow]
   
   @js.native
-  sealed trait hour extends UseCurrent
+  sealed trait dpDotupdate extends StObject
+  inline def dpDotupdate: dpDotupdate = "dp.update".asInstanceOf[dpDotupdate]
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait hour
+    extends StObject
+       with UseCurrent
+  inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
-  sealed trait minute extends UseCurrent
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait month extends UseCurrent
+  sealed trait minute
+    extends StObject
+       with UseCurrent
+  inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
-  sealed trait months extends ViewMode
+  sealed trait month
+    extends StObject
+       with UseCurrent
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait months
+    extends StObject
+       with ViewMode
+  inline def months: months = "months".asInstanceOf[months]
   
   @js.native
-  sealed trait top extends ToolbarPlacement
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait year extends UseCurrent
+  sealed trait top
+    extends StObject
+       with ToolbarPlacement
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait years extends ViewMode
+  sealed trait year
+    extends StObject
+       with UseCurrent
+  inline def year: year = "year".asInstanceOf[year]
   
-  @scala.inline
-  def DateTimePicker: DateTimePicker = "DateTimePicker".asInstanceOf[DateTimePicker]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
-  @scala.inline
-  def days: days = "days".asInstanceOf[days]
-  @scala.inline
-  def decades: decades = "decades".asInstanceOf[decades]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def dpDotchange: dpDotchange = "dp.change".asInstanceOf[dpDotchange]
-  @scala.inline
-  def dpDoterror: dpDoterror = "dp.error".asInstanceOf[dpDoterror]
-  @scala.inline
-  def dpDothide: dpDothide = "dp.hide".asInstanceOf[dpDothide]
-  @scala.inline
-  def dpDotshow: dpDotshow = "dp.show".asInstanceOf[dpDotshow]
-  @scala.inline
-  def dpDotupdate: dpDotupdate = "dp.update".asInstanceOf[dpDotupdate]
-  @scala.inline
-  def hour: hour = "hour".asInstanceOf[hour]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def minute: minute = "minute".asInstanceOf[minute]
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
-  @scala.inline
-  def months: months = "months".asInstanceOf[months]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
-  @scala.inline
-  def years: years = "years".asInstanceOf[years]
+  @js.native
+  sealed trait years
+    extends StObject
+       with ViewMode
+  inline def years: years = "years".asInstanceOf[years]
 }
-

@@ -1,19 +1,14 @@
 package typingsJapgolly.winrtUwp.Windows.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Composition")
-@js.native
-object Composition extends js.Object {
+object Composition {
+  
   /** Represents an animation. */
-  @js.native
-  abstract class CompositionAnimation () extends js.Object
+  trait CompositionAnimation extends StObject
   
   /** Represents a function for interpolating between animation key frames. */
-  @js.native
-  abstract class CompositionEasingFunction () extends js.Object
-  
+  trait CompositionEasingFunction extends StObject
 }
-

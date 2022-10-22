@@ -1,13 +1,21 @@
 package typingsJapgolly.reactShare.components
 
+import org.scalajs.dom.HTMLButtonElement
+import typingsJapgolly.reactShare.anon.OmitPropsquotestringundef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object FacebookShareButton extends SharedApply_CommonShareButtonPropsquo_1974579907 {
+object FacebookShareButton {
+  
+  inline def apply(url: String): SharedBuilder_OmitPropsquotestringundef_647970447[HTMLButtonElement] = {
+    val __props = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    new SharedBuilder_OmitPropsquotestringundef_647970447[HTMLButtonElement](js.Array(this.component, __props.asInstanceOf[OmitPropsquotestringundef]))
+  }
+  
   @JSImport("react-share", "FacebookShareButton")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: OmitPropsquotestringundef): SharedBuilder_OmitPropsquotestringundef_647970447[HTMLButtonElement] = new SharedBuilder_OmitPropsquotestringundef_647970447[HTMLButtonElement](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

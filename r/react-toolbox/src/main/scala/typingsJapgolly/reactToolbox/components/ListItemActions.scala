@@ -1,48 +1,32 @@
 package typingsJapgolly.reactToolbox.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactToolbox.listListItemActionMod.ListItemActionTheme
-import typingsJapgolly.reactToolbox.listListItemActionsMod.ListItemActionsProps
-import typingsJapgolly.reactToolbox.listListItemActionsMod.ListItemActionsTheme
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactToolbox.componentsListListItemActionMod.ListItemActionTheme
+import typingsJapgolly.reactToolbox.componentsListListItemActionsMod.ListItemActionsProps
+import typingsJapgolly.reactToolbox.componentsListListItemActionsMod.ListItemActionsTheme
 import typingsJapgolly.reactToolbox.reactToolboxStrings.left
 import typingsJapgolly.reactToolbox.reactToolboxStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ListItemActions {
-  def apply(
-    theme: ListItemActionsTheme with ListItemActionTheme = null,
-    `type`: left | right = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ListItemActionsProps, 
-    typingsJapgolly.reactToolbox.libListMod.ListItemActions, 
-    Unit, 
-    ListItemActionsProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactToolbox.listListItemActionsMod.ListItemActionsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactToolbox.libListMod.ListItemActions](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactToolbox.listListItemActionsMod.ListItemActionsProps])(children: _*)
-  }
-  @JSImport("react-toolbox/lib/list", "ListItemActions")
+  @JSImport("react-toolbox/components/list", "ListItemActions")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactToolbox.componentsListMod.ListItemActions] {
+    
+    inline def theme(value: ListItemActionsTheme & ListItemActionTheme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: left | right): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ListItemActions.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ListItemActionsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-environment-jsdom
 
-Typings are for version 24.9.0
+Typings are for version 29.0.3
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-environment-jsdom |
 | Keywords           | - |
-| # releases         | 61 |
-| # dependents       | 38 |
-| # downloads        | 245453692 |
-| # stars            | 0 |
+| # releases         | 69 |
+| # dependents       | 0.0 |
+| # downloads        | 6.881843833333333E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "focus-lock" : "0.11.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "focus-lock" : "0.11.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,13 +1,22 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.RegistrationParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.RegistrationParams
+import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.clientSlashregisterCapability
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "RegistrationRequest")
-@js.native
-object RegistrationRequest extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.RequestType[RegistrationParams, Unit, Unit, Unit] = js.native
+object RegistrationRequest {
+  
+  @JSImport("vscode-languageserver-protocol", "RegistrationRequest.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "RegistrationRequest.method")
+  @js.native
+  val method: clientSlashregisterCapability = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "RegistrationRequest.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[RegistrationParams, Unit, scala.Nothing, Unit, Unit] = js.native
 }
-

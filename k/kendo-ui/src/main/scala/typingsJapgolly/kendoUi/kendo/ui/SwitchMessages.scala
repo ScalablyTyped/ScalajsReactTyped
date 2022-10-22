@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SwitchMessages extends js.Object {
+trait SwitchMessages extends StObject {
+  
   var checked: js.UndefOr[String] = js.undefined
+  
   var unchecked: js.UndefOr[String] = js.undefined
 }
-
 object SwitchMessages {
-  @scala.inline
-  def apply(checked: String = null, unchecked: String = null): SwitchMessages = {
+  
+  inline def apply(): SwitchMessages = {
     val __obj = js.Dynamic.literal()
-    if (checked != null) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (unchecked != null) __obj.updateDynamic("unchecked")(unchecked.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchMessages]
   }
+  
+  extension [Self <: SwitchMessages](x: Self) {
+    
+    inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    
+    inline def setUnchecked(value: String): Self = StObject.set(x, "unchecked", value.asInstanceOf[js.Any])
+    
+    inline def setUncheckedUndefined: Self = StObject.set(x, "unchecked", js.undefined)
+  }
 }
-

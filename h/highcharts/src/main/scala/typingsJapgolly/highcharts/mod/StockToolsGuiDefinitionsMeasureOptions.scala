@@ -1,34 +1,48 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockToolsGuiDefinitionsMeasureOptions extends js.Object {
+trait StockToolsGuiDefinitionsMeasureOptions extends StObject {
+  
   /**
     * (Highstock) A collection of strings pointing to config options for the
     * items.
     */
-  var items: js.UndefOr[js.Array[_]] = js.undefined
+  var items: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var measureX: js.UndefOr[StockToolsGuiDefinitionsMeasureMeasureXOptions] = js.undefined
+  
   var measureXY: js.UndefOr[StockToolsGuiDefinitionsMeasureMeasureXYOptions] = js.undefined
+  
   var measureY: js.UndefOr[StockToolsGuiDefinitionsMeasureMeasureYOptions] = js.undefined
 }
-
 object StockToolsGuiDefinitionsMeasureOptions {
-  @scala.inline
-  def apply(
-    items: js.Array[_] = null,
-    measureX: StockToolsGuiDefinitionsMeasureMeasureXOptions = null,
-    measureXY: StockToolsGuiDefinitionsMeasureMeasureXYOptions = null,
-    measureY: StockToolsGuiDefinitionsMeasureMeasureYOptions = null
-  ): StockToolsGuiDefinitionsMeasureOptions = {
+  
+  inline def apply(): StockToolsGuiDefinitionsMeasureOptions = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (measureX != null) __obj.updateDynamic("measureX")(measureX.asInstanceOf[js.Any])
-    if (measureXY != null) __obj.updateDynamic("measureXY")(measureXY.asInstanceOf[js.Any])
-    if (measureY != null) __obj.updateDynamic("measureY")(measureY.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsMeasureOptions]
   }
+  
+  extension [Self <: StockToolsGuiDefinitionsMeasureOptions](x: Self) {
+    
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setMeasureX(value: StockToolsGuiDefinitionsMeasureMeasureXOptions): Self = StObject.set(x, "measureX", value.asInstanceOf[js.Any])
+    
+    inline def setMeasureXUndefined: Self = StObject.set(x, "measureX", js.undefined)
+    
+    inline def setMeasureXY(value: StockToolsGuiDefinitionsMeasureMeasureXYOptions): Self = StObject.set(x, "measureXY", value.asInstanceOf[js.Any])
+    
+    inline def setMeasureXYUndefined: Self = StObject.set(x, "measureXY", js.undefined)
+    
+    inline def setMeasureY(value: StockToolsGuiDefinitionsMeasureMeasureYOptions): Self = StObject.set(x, "measureY", value.asInstanceOf[js.Any])
+    
+    inline def setMeasureYUndefined: Self = StObject.set(x, "measureY", js.undefined)
+  }
 }
-

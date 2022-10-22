@@ -1,36 +1,34 @@
 package typingsJapgolly.winrt.Windows.Storage.Pickers
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVector
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrt.Windows.Foundation.Collections.ValueSet
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
 import typingsJapgolly.winrt.Windows.Storage.StorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.Pickers.FileOpenPicker")
-@js.native
-class FileOpenPicker () extends IFileOpenPicker {
-  /* CompleteClass */
-  override var commitButtonText: String = js.native
-  /* CompleteClass */
-  override var continuationData: ValueSet = js.native
-  /* CompleteClass */
-  override var fileTypeFilter: IVector[String] = js.native
-  /* CompleteClass */
-  override var settingsIdentifier: String = js.native
-  /* CompleteClass */
-  override var suggestedStartLocation: PickerLocationId = js.native
-  /* CompleteClass */
-  override var viewMode: PickerViewMode = js.native
-  /* CompleteClass */
-  override def pickMultipleFilesAndContinue(): Unit = js.native
-  /* CompleteClass */
-  override def pickMultipleFilesAsync(): IAsyncOperation[IVectorView[StorageFile]] = js.native
-  /* CompleteClass */
-  override def pickSingleFileAndContinue(): Unit = js.native
-  /* CompleteClass */
-  override def pickSingleFileAsync(): IAsyncOperation[StorageFile] = js.native
+trait FileOpenPicker
+  extends StObject
+     with IFileOpenPicker
+object FileOpenPicker {
+  
+  inline def apply(
+    commitButtonText: String,
+    continuationData: ValueSet,
+    fileTypeFilter: IVector[String],
+    pickMultipleFilesAndContinue: Callback,
+    pickMultipleFilesAsync: CallbackTo[IAsyncOperation[IVectorView[StorageFile]]],
+    pickSingleFileAndContinue: Callback,
+    pickSingleFileAsync: CallbackTo[IAsyncOperation[StorageFile]],
+    settingsIdentifier: String,
+    suggestedStartLocation: PickerLocationId,
+    viewMode: PickerViewMode
+  ): FileOpenPicker = {
+    val __obj = js.Dynamic.literal(commitButtonText = commitButtonText.asInstanceOf[js.Any], continuationData = continuationData.asInstanceOf[js.Any], fileTypeFilter = fileTypeFilter.asInstanceOf[js.Any], pickMultipleFilesAndContinue = pickMultipleFilesAndContinue.toJsFn, pickMultipleFilesAsync = pickMultipleFilesAsync.toJsFn, pickSingleFileAndContinue = pickSingleFileAndContinue.toJsFn, pickSingleFileAsync = pickSingleFileAsync.toJsFn, settingsIdentifier = settingsIdentifier.asInstanceOf[js.Any], suggestedStartLocation = suggestedStartLocation.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileOpenPicker]
+  }
 }
-

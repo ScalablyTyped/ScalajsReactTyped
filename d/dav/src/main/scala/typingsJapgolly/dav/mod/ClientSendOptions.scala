@@ -1,27 +1,36 @@
 package typingsJapgolly.dav.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClientSendOptions extends js.Object {
+trait ClientSendOptions extends StObject {
+  
   /**
     * request sandbox.
     */
   var sandbox: js.UndefOr[Sandbox] = js.undefined
+  
   /**
     * relative url for request.
     */
   var url: js.UndefOr[String] = js.undefined
 }
-
 object ClientSendOptions {
-  @scala.inline
-  def apply(sandbox: Sandbox = null, url: String = null): ClientSendOptions = {
+  
+  inline def apply(): ClientSendOptions = {
     val __obj = js.Dynamic.literal()
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientSendOptions]
   }
+  
+  extension [Self <: ClientSendOptions](x: Self) {
+    
+    inline def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    
+    inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

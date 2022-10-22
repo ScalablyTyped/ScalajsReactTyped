@@ -7,22 +7,31 @@ import typingsJapgolly.wampy.wampyStrings.random
 import typingsJapgolly.wampy.wampyStrings.roundrobin
 import typingsJapgolly.wampy.wampyStrings.single
 import typingsJapgolly.wampy.wampyStrings.wildcard
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RegisterAdvancedOptions extends js.Object {
+trait RegisterAdvancedOptions extends StObject {
+  
   var invoke: js.UndefOr[single | roundrobin | random | first | last] = js.undefined
+  
   var `match`: js.UndefOr[prefix | wildcard] = js.undefined
 }
-
 object RegisterAdvancedOptions {
-  @scala.inline
-  def apply(invoke: single | roundrobin | random | first | last = null, `match`: prefix | wildcard = null): RegisterAdvancedOptions = {
+  
+  inline def apply(): RegisterAdvancedOptions = {
     val __obj = js.Dynamic.literal()
-    if (invoke != null) __obj.updateDynamic("invoke")(invoke.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterAdvancedOptions]
   }
+  
+  extension [Self <: RegisterAdvancedOptions](x: Self) {
+    
+    inline def setInvoke(value: single | roundrobin | random | first | last): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
+    
+    inline def setInvokeUndefined: Self = StObject.set(x, "invoke", js.undefined)
+    
+    inline def setMatch(value: prefix | wildcard): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+  }
 }
-

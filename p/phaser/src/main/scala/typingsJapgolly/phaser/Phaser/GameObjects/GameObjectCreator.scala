@@ -1,5 +1,6 @@
 package typingsJapgolly.phaser.Phaser.GameObjects
 
+import typingsJapgolly.phaser.Phaser.Events.EventEmitter
 import typingsJapgolly.phaser.Phaser.GameObjects.Particles.ParticleEmitterManager
 import typingsJapgolly.phaser.Phaser.Scene
 import typingsJapgolly.phaser.Phaser.Scenes.Systems
@@ -10,14 +11,17 @@ import typingsJapgolly.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typingsJapgolly.phaser.Phaser.Types.GameObjects.Group.GroupCreateConfig
 import typingsJapgolly.phaser.Phaser.Types.GameObjects.RenderTexture.RenderTextureConfig
 import typingsJapgolly.phaser.Phaser.Types.GameObjects.Sprite.SpriteConfig
+import typingsJapgolly.phaser.Phaser.Types.GameObjects.Text.TextConfig
 import typingsJapgolly.phaser.Phaser.Types.GameObjects.TileSprite.TileSpriteConfig
 import typingsJapgolly.phaser.Phaser.Types.Tilemaps.TilemapConfig
 import typingsJapgolly.phaser.Phaser.Types.Tweens.TweenBuilderConfig
+import typingsJapgolly.phaser.SpineContainer
+import typingsJapgolly.phaser.SpineContainerConfig
 import typingsJapgolly.phaser.SpineGameObject
 import typingsJapgolly.phaser.SpineGameObjectConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Game Object Creator is a Scene plugin that allows you to quickly create many common
@@ -27,30 +31,9 @@ import scala.scalajs.js.annotation._
   * Game Objects directly register themselves with the Creator and inject their own creation
   * methods into the class.
   */
-@JSGlobal("Phaser.GameObjects.GameObjectCreator")
 @js.native
-class GameObjectCreator protected () extends js.Object {
-  /**
-    * 
-    * @param scene The Scene to which this Game Object Factory belongs.
-    */
-  def this(scene: Scene) = this()
-  /**
-    * A reference to the Scene Display List.
-    */
-  var displayList: DisplayList = js.native
-  /**
-    * The Scene to which this Game Object Creator belongs.
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the Scene.Systems.
-    */
-  var systems: Systems = js.native
-  /**
-    * A reference to the Scene Update List.
-    */
-  var updateList: UpdateList = js.native
+trait GameObjectCreator extends StObject {
+  
   /**
     * Creates a new Bitmap Text Game Object and returns it.
     * 
@@ -60,6 +43,7 @@ class GameObjectCreator protected () extends js.Object {
     */
   def bitmapText(config: BitmapTextConfig): BitmapText = js.native
   def bitmapText(config: BitmapTextConfig, addToScene: Boolean): BitmapText = js.native
+  
   /**
     * Creates a new Blitter Game Object and returns it.
     * 
@@ -69,6 +53,7 @@ class GameObjectCreator protected () extends js.Object {
     */
   def blitter(config: js.Object): Blitter = js.native
   def blitter(config: js.Object, addToScene: Boolean): Blitter = js.native
+  
   /**
     * Creates a new Container Game Object and returns it.
     * 
@@ -78,6 +63,12 @@ class GameObjectCreator protected () extends js.Object {
     */
   def container(config: js.Object): Container = js.native
   def container(config: js.Object, addToScene: Boolean): Container = js.native
+  
+  /**
+    * A reference to the Scene Display List.
+    */
+  /* protected */ var displayList: DisplayList = js.native
+  
   /**
     * Creates a new Dynamic Bitmap Text Game Object and returns it.
     * 
@@ -87,6 +78,12 @@ class GameObjectCreator protected () extends js.Object {
     */
   def dynamicBitmapText(config: BitmapTextConfig): DynamicBitmapText = js.native
   def dynamicBitmapText(config: BitmapTextConfig, addToScene: Boolean): DynamicBitmapText = js.native
+  
+  /**
+    * A reference to the Scene Event Emitter.
+    */
+  /* protected */ var events: EventEmitter = js.native
+  
   /**
     * Creates a new Graphics Game Object and returns it.
     * 
@@ -96,6 +93,7 @@ class GameObjectCreator protected () extends js.Object {
     */
   def graphics(config: js.Object): Graphics = js.native
   def graphics(config: js.Object, addToScene: Boolean): Graphics = js.native
+  
   /**
     * Creates a new Group Game Object and returns it.
     * 
@@ -104,6 +102,7 @@ class GameObjectCreator protected () extends js.Object {
     */
   def group(config: GroupConfig): Group = js.native
   def group(config: GroupCreateConfig): Group = js.native
+  
   /**
     * Creates a new Image Game Object and returns it.
     * 
@@ -113,6 +112,17 @@ class GameObjectCreator protected () extends js.Object {
     */
   def image(config: js.Object): Image = js.native
   def image(config: js.Object, addToScene: Boolean): Image = js.native
+  
+  /**
+    * Creates a new Layer Game Object and returns it.
+    * 
+    * Note: This method will only be available if the Layer Game Object has been built into Phaser.
+    * @param config The configuration object this Game Object will use to create itself.
+    * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
+    */
+  def layer(config: js.Object): Layer = js.native
+  def layer(config: js.Object, addToScene: Boolean): Layer = js.native
+  
   /**
     * Creates a new Mesh Game Object and returns it.
     * 
@@ -122,6 +132,7 @@ class GameObjectCreator protected () extends js.Object {
     */
   def mesh(config: js.Object): Mesh = js.native
   def mesh(config: js.Object, addToScene: Boolean): Mesh = js.native
+  
   /**
     * Creates a new Particle Emitter Manager Game Object and returns it.
     * 
@@ -131,15 +142,17 @@ class GameObjectCreator protected () extends js.Object {
     */
   def particles(config: js.Object): ParticleEmitterManager = js.native
   def particles(config: js.Object, addToScene: Boolean): ParticleEmitterManager = js.native
+  
   /**
-    * Creates a new Quad Game Object and returns it.
+    * Creates a new Point Light Game Object and returns it.
     * 
-    * Note: This method will only be available if the Quad Game Object and WebGL support have been built into Phaser.
+    * Note: This method will only be available if the Point Light Game Object has been built into Phaser.
     * @param config The configuration object this Game Object will use to create itself.
     * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
     */
-  def quad(config: js.Object): Quad = js.native
-  def quad(config: js.Object, addToScene: Boolean): Quad = js.native
+  def pointlight(config: js.Object): PointLight = js.native
+  def pointlight(config: js.Object, addToScene: Boolean): PointLight = js.native
+  
   /**
     * Creates a new Render Texture Game Object and returns it.
     * 
@@ -149,6 +162,22 @@ class GameObjectCreator protected () extends js.Object {
     */
   def renderTexture(config: RenderTextureConfig): RenderTexture = js.native
   def renderTexture(config: RenderTextureConfig, addToScene: Boolean): RenderTexture = js.native
+  
+  /**
+    * Creates a new Rope Game Object and returns it.
+    * 
+    * Note: This method will only be available if the Rope Game Object and WebGL support have been built into Phaser.
+    * @param config The configuration object this Game Object will use to create itself.
+    * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
+    */
+  def rope(config: js.Object): Rope = js.native
+  def rope(config: js.Object, addToScene: Boolean): Rope = js.native
+  
+  /**
+    * The Scene to which this Game Object Creator belongs.
+    */
+  /* protected */ var scene: Scene = js.native
+  
   /**
     * Creates a new Shader Game Object and returns it.
     * 
@@ -158,8 +187,13 @@ class GameObjectCreator protected () extends js.Object {
     */
   def shader(config: js.Object): Shader = js.native
   def shader(config: js.Object, addToScene: Boolean): Shader = js.native
+  
   def spine(config: SpineGameObjectConfig): SpineGameObject = js.native
   def spine(config: SpineGameObjectConfig, addToScene: Boolean): SpineGameObject = js.native
+  
+  def spineContainer(config: SpineContainerConfig): SpineContainer = js.native
+  def spineContainer(config: SpineContainerConfig, addToScene: Boolean): SpineContainer = js.native
+  
   /**
     * Creates a new Sprite Game Object and returns it.
     * 
@@ -169,6 +203,12 @@ class GameObjectCreator protected () extends js.Object {
     */
   def sprite(config: SpriteConfig): Sprite = js.native
   def sprite(config: SpriteConfig, addToScene: Boolean): Sprite = js.native
+  
+  /**
+    * A reference to the Scene.Systems.
+    */
+  /* protected */ var systems: Systems = js.native
+  
   /**
     * Creates a new Text Game Object and returns it.
     * 
@@ -176,8 +216,9 @@ class GameObjectCreator protected () extends js.Object {
     * @param config The configuration object this Game Object will use to create itself.
     * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
     */
-  def text(config: js.Object): Text = js.native
-  def text(config: js.Object, addToScene: Boolean): Text = js.native
+  def text(config: TextConfig): Text = js.native
+  def text(config: TextConfig, addToScene: Boolean): Text = js.native
+  
   /**
     * Creates a new TileSprite Game Object and returns it.
     * 
@@ -187,6 +228,7 @@ class GameObjectCreator protected () extends js.Object {
     */
   def tileSprite(config: TileSpriteConfig): TileSprite = js.native
   def tileSprite(config: TileSpriteConfig, addToScene: Boolean): TileSprite = js.native
+  
   /**
     * Creates a Tilemap from the given key or data, or creates a blank Tilemap if no key/data provided.
     * When loading from CSV or a 2D array, you should specify the tileWidth & tileHeight. When parsing
@@ -196,6 +238,7 @@ class GameObjectCreator protected () extends js.Object {
     */
   def tilemap(): Tilemap = js.native
   def tilemap(config: TilemapConfig): Tilemap = js.native
+  
   def tween(config: js.Object): Tween = js.native
   /**
     * Creates a new Tween object and returns it.
@@ -204,6 +247,12 @@ class GameObjectCreator protected () extends js.Object {
     * @param config The Tween configuration.
     */
   def tween(config: TweenBuilderConfig): Tween = js.native
+  
+  /**
+    * A reference to the Scene Update List.
+    */
+  /* protected */ var updateList: UpdateList = js.native
+  
   /**
     * Creates a new Video Game Object and returns it.
     * 
@@ -213,6 +262,7 @@ class GameObjectCreator protected () extends js.Object {
     */
   def video(config: js.Object): Video = js.native
   def video(config: js.Object, addToScene: Boolean): Video = js.native
+  
   /**
     * Creates a new Zone Game Object and returns it.
     * 
@@ -221,4 +271,3 @@ class GameObjectCreator protected () extends js.Object {
     */
   def zone(config: js.Object): Zone = js.native
 }
-

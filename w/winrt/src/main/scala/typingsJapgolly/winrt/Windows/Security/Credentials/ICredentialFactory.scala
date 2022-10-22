@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Security.Credentials
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICredentialFactory extends js.Object {
+trait ICredentialFactory extends StObject {
+  
   def createPasswordCredential(resource: String, userName: String, password: String): PasswordCredential
 }
-
 object ICredentialFactory {
-  @scala.inline
-  def apply(createPasswordCredential: (String, String, String) => CallbackTo[PasswordCredential]): ICredentialFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createPasswordCredential")(js.Any.fromFunction3((t0: java.lang.String, t1: java.lang.String, t2: java.lang.String) => createPasswordCredential(t0, t1, t2).runNow()))
+  
+  inline def apply(createPasswordCredential: (String, String, String) => PasswordCredential): ICredentialFactory = {
+    val __obj = js.Dynamic.literal(createPasswordCredential = js.Any.fromFunction3(createPasswordCredential))
     __obj.asInstanceOf[ICredentialFactory]
   }
+  
+  extension [Self <: ICredentialFactory](x: Self) {
+    
+    inline def setCreatePasswordCredential(value: (String, String, String) => PasswordCredential): Self = StObject.set(x, "createPasswordCredential", js.Any.fromFunction3(value))
+  }
 }
-

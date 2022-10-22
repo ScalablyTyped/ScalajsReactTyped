@@ -1,45 +1,72 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ButtonGroupItem extends js.Object {
-  var attributes: js.UndefOr[js.Any] = js.undefined
+trait ButtonGroupItem extends StObject {
+  
+  var attributes: js.UndefOr[Any] = js.undefined
+  
   var badge: js.UndefOr[String] = js.undefined
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   var encoded: js.UndefOr[Boolean] = js.undefined
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var iconClass: js.UndefOr[String] = js.undefined
+  
   var imageUrl: js.UndefOr[String] = js.undefined
+  
   var selected: js.UndefOr[Boolean] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
 }
-
 object ButtonGroupItem {
-  @scala.inline
-  def apply(
-    attributes: js.Any = null,
-    badge: String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    encoded: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
-    iconClass: String = null,
-    imageUrl: String = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    text: String = null
-  ): ButtonGroupItem = {
+  
+  inline def apply(): ButtonGroupItem = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(encoded)) __obj.updateDynamic("encoded")(encoded.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonGroupItem]
   }
+  
+  extension [Self <: ButtonGroupItem](x: Self) {
+    
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setEncoded(value: Boolean): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
+    
+    inline def setEncodedUndefined: Self = StObject.set(x, "encoded", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

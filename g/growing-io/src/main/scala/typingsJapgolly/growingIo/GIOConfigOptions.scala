@@ -1,23 +1,32 @@
 package typingsJapgolly.growingIo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GIOConfigOptions extends js.Object {
+trait GIOConfigOptions extends StObject {
+  
   /** 是否采集数据 */
   var dataCollect: js.UndefOr[Boolean] = js.undefined
+  
   /** 是否检测hash变化 */
   var hashtag: js.UndefOr[Boolean] = js.undefined
 }
-
 object GIOConfigOptions {
-  @scala.inline
-  def apply(dataCollect: js.UndefOr[Boolean] = js.undefined, hashtag: js.UndefOr[Boolean] = js.undefined): GIOConfigOptions = {
+  
+  inline def apply(): GIOConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dataCollect)) __obj.updateDynamic("dataCollect")(dataCollect.asInstanceOf[js.Any])
-    if (!js.isUndefined(hashtag)) __obj.updateDynamic("hashtag")(hashtag.asInstanceOf[js.Any])
     __obj.asInstanceOf[GIOConfigOptions]
   }
+  
+  extension [Self <: GIOConfigOptions](x: Self) {
+    
+    inline def setDataCollect(value: Boolean): Self = StObject.set(x, "dataCollect", value.asInstanceOf[js.Any])
+    
+    inline def setDataCollectUndefined: Self = StObject.set(x, "dataCollect", js.undefined)
+    
+    inline def setHashtag(value: Boolean): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+    
+    inline def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
+  }
 }
-

@@ -1,25 +1,26 @@
 package typingsJapgolly.workboxCacheableResponse
 
-import org.scalajs.dom.experimental.Response
+import org.scalajs.dom.Response
 import typingsJapgolly.workboxCacheableResponse.cacheableResponseMod.CacheableResponseConfig
-import typingsJapgolly.workboxCore.workboxPluginMod.CacheWillUpdateCallback
-import typingsJapgolly.workboxCore.workboxPluginMod.CacheWillUpdateCallbackParamParam
-import typingsJapgolly.workboxCore.workboxPluginMod.WorkboxPlugin
+import typingsJapgolly.workboxCore.typesWorkboxPluginMod.CacheWillUpdateCallback
+import typingsJapgolly.workboxCore.typesWorkboxPluginMod.CacheWillUpdateCallbackParamParam
+import typingsJapgolly.workboxCore.typesWorkboxPluginMod.WorkboxPlugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-cacheable-response/Plugin", JSImport.Namespace)
-@js.native
-object pluginMod extends js.Object {
+object pluginMod {
+  
+  @JSImport("workbox-cacheable-response/Plugin", "Plugin")
   @js.native
-  class Plugin () extends WorkboxPlugin {
+  open class Plugin ()
+    extends StObject
+       with WorkboxPlugin {
     def this(config: CacheableResponseConfig) = this()
-    @JSName("cacheWillUpdate")
-    var cacheWillUpdate_Original: CacheWillUpdateCallback = js.native
+    
     @JSName("cacheWillUpdate")
     def cacheWillUpdate_MPlugin(param: CacheWillUpdateCallbackParamParam): js.Promise[js.UndefOr[Response]] = js.native
+    @JSName("cacheWillUpdate")
+    var cacheWillUpdate_Original: CacheWillUpdateCallback = js.native
   }
-  
 }
-

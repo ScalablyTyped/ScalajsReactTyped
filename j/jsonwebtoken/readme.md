@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsonwebtoken
 
-Typings are for version 8.3
+Typings are for version 8.5
 
 ## Library description:
 JSON Web Token implementation (symmetric and asymmetric)
@@ -10,10 +10,10 @@ JSON Web Token implementation (symmetric and asymmetric)
 | ------------------ | :-------------: |
 | Full name          | jsonwebtoken |
 | Keywords           | jwt |
-| # releases         | 9 |
-| # dependents       | 4116 |
-| # downloads        | 136052992 |
-| # stars            | 316 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.0179743666666664E7 |
+| # stars            | 15452.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/node-jsonwebtoken#readme)

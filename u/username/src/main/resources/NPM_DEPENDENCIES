@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "username" : "6.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "username" : "6.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

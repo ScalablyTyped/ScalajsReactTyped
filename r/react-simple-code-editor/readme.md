@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-simple-code-editor
 
-Typings are for version 0.10.0
+Typings are for version 0.13.0
 
 ## Library description:
 Simple no-frills code editor with syntax highlighting
@@ -10,10 +10,10 @@ Simple no-frills code editor with syntax highlighting
 | ------------------ | :-------------: |
 | Full name          | react-simple-code-editor |
 | Keywords           | code, editor, react |
-| # releases         | 36 |
-| # dependents       | 30 |
-| # downloads        | 3400623 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1104019.3333333333 |
+| # stars            | 1158.0 |
 
 ## Links
 - [Homepage](https://github.com/satya164/react-simple-code-editor#readme)

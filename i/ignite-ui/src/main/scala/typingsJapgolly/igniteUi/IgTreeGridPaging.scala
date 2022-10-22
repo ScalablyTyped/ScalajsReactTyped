@@ -2,400 +2,549 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgTreeGridPaging
-  extends /**
-	 * Option for igTreeGridPaging
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Sets/gets (it is set via  $.html()) delimiter between ancestors in the breadcrumb trail. It is used only when contextRowMode is breadcrumb
-  	 *
-  	 */
+    * Sets/gets (it is set via  $.html()) delimiter between ancestors in the breadcrumb trail. It is used only when contextRowMode is breadcrumb
+    *
+    */
   var breadcrumbDelimiter: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Sets/gets the column key of ancestor to be shown in the breadcrumb trail. It is used only when contextRowMode is breadcrumb
-  	 *
-  	 */
+    * Sets/gets the column key of ancestor to be shown in the breadcrumb trail. It is used only when contextRowMode is breadcrumb
+    *
+    */
   var breadcrumbKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been deprecated as of the 2017.2 Volume release.
-  	 * Sets/gets the text message shown while loading content of the context row(while processing breadcrumb/immediate parent row). It is set via $.html(). If set to null loading message is not shown.
-  	 * Use option [locale.contextRowLoadingText](ui.igtreegridpaging#options:locale.contextRowLoadingText)
-  	 */
+    * This option has been deprecated as of the 2017.2 Volume release.
+    * Sets/gets the text message shown while loading content of the context row(while processing breadcrumb/immediate parent row). It is set via $.html(). If set to null loading message is not shown.
+    * Use option [locale.contextRowLoadingText](ui.igtreegridpaging#options:locale.contextRowLoadingText)
+    */
   var contextRowLoadingText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * When data flows to the next page there are a couple of different modes that can help communicate the context of a leaf level row. When mode option is "rootLevelOnly" then the context row always shows the value of the contextRowRootText option.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "none" Does not render the contextual row
-  	 * "parent" Renders a read-only representation of the immediate parent row
-  	 * "breadcrumb" Renders a read-only breadcrumb trail representing the full path through all ancestors
-  	 */
+    * When data flows to the next page there are a couple of different modes that can help communicate the context of a leaf level row. When mode option is "rootLevelOnly" then the context row always shows the value of the contextRowRootText option.
+    *
+    *
+    * Valid values:
+    * "none" Does not render the contextual row
+    * "parent" Renders a read-only representation of the immediate parent row
+    * "breadcrumb" Renders a read-only breadcrumb trail representing the full path through all ancestors
+    */
   var contextRowMode: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Event fired context row content is rendered.
-  	 */
+    * Event fired context row content is rendered.
+    */
   var contextRowRendered: js.UndefOr[ContextRowRenderedEvent] = js.undefined
+  
   /**
-  	 * Event fired before rendering context row content.
-  	 * Return false in order to cancel this event.
-  	 */
+    * Event fired before rendering context row content.
+    * Return false in order to cancel this event.
+    */
   var contextRowRendering: js.UndefOr[ContextRowRenderingEvent] = js.undefined
+  
   /**
-  	 * This option has been deprecated as of the 2017.2 Volume release.
-  	 * Sets/gets the content of the context row when the first record in the page is root(hasn't ancestors) record. It is set via $.html()
-  	 * Use option [locale.contextRowRootText](ui.igtreegridpaging#options:locale.contextRowRootText)
-  	 */
+    * This option has been deprecated as of the 2017.2 Volume release.
+    * Sets/gets the content of the context row when the first record in the page is root(hasn't ancestors) record. It is set via $.html()
+    * Use option [locale.contextRowRootText](ui.igtreegridpaging#options:locale.contextRowRootText)
+    */
   var contextRowRootText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Leading label text for the drop down from where the page index can be switched. Use option [locale.currentPageDropDownLeadingLabel](ui.iggridpaging#options:locale.currentPageDropDownLeadingLabel).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Leading label text for the drop down from where the page index can be switched. Use option [locale.currentPageDropDownLeadingLabel](ui.iggridpaging#options:locale.currentPageDropDownLeadingLabel).
+    */
   var currentPageDropDownLeadingLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Tooltip text for the page index drop down. Use option [locale.currentPageDropDownTooltip](ui.iggridpaging#options:locale.currentPageDropDownTooltip).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Tooltip text for the page index drop down. Use option [locale.currentPageDropDownTooltip](ui.iggridpaging#options:locale.currentPageDropDownTooltip).
+    */
   var currentPageDropDownTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Trailing label text for the drop down from where the page index can be switched. Use option [locale.currentPageDropDownTrailingLabel](ui.iggridpaging#options:locale.currentPageDropDownTrailingLabel).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Trailing label text for the drop down from where the page index can be switched. Use option [locale.currentPageDropDownTrailingLabel](ui.iggridpaging#options:locale.currentPageDropDownTrailingLabel).
+    */
   var currentPageDropDownTrailingLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Current page index that's bound in the data source and rendered in the UI.
-  	 *
-  	 */
+    * Current page index that's bound in the data source and rendered in the UI.
+    *
+    */
   var currentPageIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Drop down width for the page size and page index drop downs.
-  	 *
-  	 */
+    * Drop down width for the page size and page index drop downs.
+    *
+    */
   var defaultDropDownWidth: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Time in milliseconds for which page drop down will wait for keystrokes before changing the page.
-  	 *
-  	 */
+    * Time in milliseconds for which page drop down will wait for keystrokes before changing the page.
+    *
+    */
   var delayOnPageChanged: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Text for the first page label. Use option [locale.firstPageLabelText](ui.iggridpaging#options:locale.firstPageLabelText).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Text for the first page label. Use option [locale.firstPageLabelText](ui.iggridpaging#options:locale.firstPageLabelText).
+    */
   var firstPageLabelText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Tooltip text for the first page button. Use option [locale.firstPageTooltip](ui.iggridpaging#options:locale.firstPageTooltip).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Tooltip text for the first page button. Use option [locale.firstPageTooltip](ui.iggridpaging#options:locale.firstPageTooltip).
+    */
   var firstPageTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
-  	 */
+    * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
+    */
   var inherit: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Text for the last page label. Use option [locale.lastPageLabelText](ui.iggridpaging#options:locale.lastPageLabelText).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Text for the last page label. Use option [locale.lastPageLabelText](ui.iggridpaging#options:locale.lastPageLabelText).
+    */
   var lastPageLabelText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Tooltip text for the last page button. Use option [locale.lastPageTooltip](ui.iggridpaging#options:locale.lastPageTooltip).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Tooltip text for the last page button. Use option [locale.lastPageTooltip](ui.iggridpaging#options:locale.lastPageTooltip).
+    */
   var lastPageTooltip: js.UndefOr[String] = js.undefined
+  
   var locale: js.UndefOr[IgTreeGridPagingLocale] = js.undefined
+  
   /**
-  	 * Sets gets paging mode.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "rootLevelOnly" Only pages records at the root of the tree grid are displayed.
-  	 * "allLevels" includes all visible records in paging.
-  	 */
+    * Sets gets paging mode.
+    *
+    *
+    * Valid values:
+    * "rootLevelOnly" Only pages records at the root of the tree grid are displayed.
+    * "allLevels" includes all visible records in paging.
+    */
   var mode: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Text for the next page label. Use option [locale.nextPageLabelText](ui.iggridpaging#options:locale.nextPageLabelText).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Text for the next page label. Use option [locale.nextPageLabelText](ui.iggridpaging#options:locale.nextPageLabelText).
+    */
   var nextPageLabelText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Tooltip text for the next page button. Use option [locale.nextPageTooltip](ui.iggridpaging#options:locale.nextPageTooltip).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Tooltip text for the next page button. Use option [locale.nextPageTooltip](ui.iggridpaging#options:locale.nextPageTooltip).
+    */
   var nextPageTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Sets/Gets the number of pages which if exceeded a drop down list of page indices is displayed. If the number of pages is less than or equal to this option then buttons for each page are displayed.
-  	 *
-  	 */
+    * Sets/Gets the number of pages which if exceeded a drop down list of page indices is displayed. If the number of pages is less than or equal to this option then buttons for each page are displayed.
+    *
+    */
   var pageCountLimit: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Event fired after the page index is changed , but before grid data rebinds
-  	 */
+    * Event fired after the page index is changed , but before grid data rebinds
+    */
   var pageIndexChanged: js.UndefOr[PageIndexChangedEvent] = js.undefined
+  
   /**
-  	 * Event fired before the page index is changed.
-  	 * Return false in order to cancel page index changing.
-  	 */
+    * Event fired before the page index is changed.
+    * Return false in order to cancel page index changing.
+    */
   var pageIndexChanging: js.UndefOr[PageIndexChangingEvent] = js.undefined
+  
   /**
-  	 * Denotes the name of the encoded URL parameter that will state what is the currently requested page index.
-  	 *
-  	 */
+    * Denotes the name of the encoded URL parameter that will state what is the currently requested page index.
+    *
+    */
   var pageIndexUrlKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Number of records loaded and displayed per page.
-  	 *
-  	 */
+    * Number of records loaded and displayed per page.
+    *
+    */
   var pageSize: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Event fired after the page size is changed from the page size dropdown.
-  	 */
+    * Event fired after the page size is changed from the page size dropdown.
+    */
   var pageSizeChanged: js.UndefOr[PageSizeChangedEvent] = js.undefined
+  
   /**
-  	 * Event fired when the page size is about to be changed from the page size dropdown.
-  	 * Return false in order to cancel page size changing.
-  	 */
+    * Event fired when the page size is about to be changed from the page size dropdown.
+    * Return false in order to cancel page size changing.
+    */
   var pageSizeChanging: js.UndefOr[PageSizeChangingEvent] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Text rendered in front of the page size dropdown, when [showPageSizeDropDown](ui.iggridpaging#options:showPageSizeDropDown) is set to true.
-  	 * Use option [locale.pageSizeDropDownLabel](ui.iggridpaging#options:locale.pageSizeDropDownLabel).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Text rendered in front of the page size dropdown, when [showPageSizeDropDown](ui.iggridpaging#options:showPageSizeDropDown) is set to true.
+    * Use option [locale.pageSizeDropDownLabel](ui.iggridpaging#options:locale.pageSizeDropDownLabel).
+    */
   var pageSizeDropDownLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Page size dropdown location, when [showPageSizeDropDown](ui.iggridpaging#options:showPageSizeDropDown) is set to true. Can be rendered above the grid header or inside the pager, next to the page links.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "above" The page size drop down will be rendered above the grid header.
-  	 * "inpager" The page size drop down will be rendered next to page links.
-  	 */
+    * Page size dropdown location, when [showPageSizeDropDown](ui.iggridpaging#options:showPageSizeDropDown) is set to true. Can be rendered above the grid header or inside the pager, next to the page links.
+    *
+    *
+    * Valid values:
+    * "above" The page size drop down will be rendered above the grid header.
+    * "inpager" The page size drop down will be rendered next to page links.
+    */
   var pageSizeDropDownLocation: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Tooltip text for the page size drop down. Use option [locale.pageSizeDropDownTooltip](ui.iggridpaging#options:locale.pageSizeDropDownTooltip).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Tooltip text for the page size drop down. Use option [locale.pageSizeDropDownTooltip](ui.iggridpaging#options:locale.pageSizeDropDownTooltip).
+    */
   var pageSizeDropDownTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Trailing text for the page size dropdown, when [showPageSizeDropDown](ui.iggridpaging#options:showPageSizeDropDown) is set to true.
-  	 * Use option [locale.pageSizeDropDownTrailingLabel](ui.iggridpaging#options:locale.pageSizeDropDownTrailingLabel).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Trailing text for the page size dropdown, when [showPageSizeDropDown](ui.iggridpaging#options:showPageSizeDropDown) is set to true.
+    * Use option [locale.pageSizeDropDownTrailingLabel](ui.iggridpaging#options:locale.pageSizeDropDownTrailingLabel).
+    */
   var pageSizeDropDownTrailingLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Predefined page sizes that are available to the end user to switch their grid paging to, through a drop down in the grid header.
-  	 *
-  	 */
-  var pageSizeList: js.UndefOr[js.Any] = js.undefined
+    * Predefined page sizes that are available to the end user to switch their grid paging to, through a drop down in the grid header.
+    *
+    */
+  var pageSizeList: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Denotes the name of the encoded URL parameter that will state what is the currently requested page size.
-  	 *
-  	 */
+    * Denotes the name of the encoded URL parameter that will state what is the currently requested page size.
+    *
+    */
   var pageSizeUrlKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Tooltip text templates of buttons that navigate to a particular page. The format string follows the [igTemplating](http://www.igniteui.com/help/igtemplating-overview) style and syntax. See also the [pageCountLimit](ui.iggridpaging#options:pageCountLimit) option.
-  	 * Use option [locale.pageTooltipFormat](ui.iggridpaging#options:locale.pageTooltipFormat).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Tooltip text templates of buttons that navigate to a particular page. The format string follows the [igTemplating](http://www.igniteui.com/help/igtemplating-overview) style and syntax. See also the [pageCountLimit](ui.iggridpaging#options:pageCountLimit) option.
+    * Use option [locale.pageTooltipFormat](ui.iggridpaging#options:locale.pageTooltipFormat).
+    */
   var pageTooltipFormat: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Custom pager records label template - in [igTemplating](http://www.igniteui.com/help/igtemplating-overview) style and syntax.
-  	 * Use option [locale.pagerRecordsLabelTemplate](ui.iggridpaging#options:locale.pagerRecordsLabelTemplate).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Custom pager records label template - in [igTemplating](http://www.igniteui.com/help/igtemplating-overview) style and syntax.
+    * Use option [locale.pagerRecordsLabelTemplate](ui.iggridpaging#options:locale.pagerRecordsLabelTemplate).
+    */
   var pagerRecordsLabelTemplate: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Tooltip text for the pager records label. Use option [locale.pagerRecordsLabelTooltip](ui.iggridpaging#options:locale.pagerRecordsLabelTooltip).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Tooltip text for the pager records label. Use option [locale.pagerRecordsLabelTooltip](ui.iggridpaging#options:locale.pagerRecordsLabelTooltip).
+    */
   var pagerRecordsLabelTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Event fired after the pager footer is rendered
-  	 */
+    * Event fired after the pager footer is rendered
+    */
   var pagerRendered: js.UndefOr[PagerRenderedEvent] = js.undefined
+  
   /**
-  	 * Event fired before the pager footer is rendered (the whole area below the grid records).
-  	 *  Event fired after the page size is changed from the page size dropdown.
-  	 */
+    * Event fired before the pager footer is rendered (the whole area below the grid records).
+    *  Event fired after the page size is changed from the page size dropdown.
+    */
   var pagerRendering: js.UndefOr[PagerRenderingEvent] = js.undefined
+  
   /**
-  	 * Enables/disables paging persistence between states.
-  	 *
-  	 */
+    * Enables/disables paging persistence between states.
+    *
+    */
   var persist: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Text for the previous page label. Use option [locale.prevPageLabelText](ui.iggridpaging#options:locale.prevPageLabelText).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Text for the previous page label. Use option [locale.prevPageLabelText](ui.iggridpaging#options:locale.prevPageLabelText).
+    */
   var prevPageLabelText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Tooltip text for the previous page button. Use option [locale.prevPageTooltip](ui.iggridpaging#options:locale.prevPageTooltip).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Tooltip text for the previous page button. Use option [locale.prevPageTooltip](ui.iggridpaging#options:locale.prevPageTooltip).
+    */
   var prevPageTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * The property in the response data, when using remote data source, that will hold the total number of records in the data source.
-  	 *
-  	 */
+    * The property in the response data, when using remote data source, that will hold the total number of records in the data source.
+    *
+    */
   var recordCountKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Reference to the (or name of )function, called before rendering context row content(rendering loading message/bread crumb/parent row). The function takes 4 arguments- dataRow, $textArea- jQuery representation of the text area of the context row(when mode is loading/breadcrumb then it is <span /> otherwise <tr />), array of parent rows and context mode - "loading"|"breadcrumb"|"parent". When the function returns string it is used as html set in $textArea. If the function does not return result or returns false/empty string then rendering of the content of the context row should be handled by the developer(similar to canceling rendering of context row content).
-  	 *
-  	 */
+    * Reference to the (or name of )function, called before rendering context row content(rendering loading message/bread crumb/parent row). The function takes 4 arguments- dataRow, $textArea- jQuery representation of the text area of the context row(when mode is loading/breadcrumb then it is <span /> otherwise <tr />), array of parent rows and context mode - "loading"|"breadcrumb"|"parent". When the function returns string it is used as html set in $textArea. If the function does not return result or returns false/empty string then rendering of the content of the context row should be handled by the developer(similar to canceling rendering of context row content).
+    *
+    */
   var renderContextRowFunc: js.UndefOr[js.Function | String] = js.undefined
+  
   /**
-  	 * Option specifying whether to render the first and last page navigation buttons.
-  	 *
-  	 */
+    * Option specifying whether to render the first and last page navigation buttons.
+    *
+    */
   var showFirstLastPages: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * If false, a dropdown allowing to change the page size will not be rendered in the UI.
-  	 *
-  	 */
+    * If false, a dropdown allowing to change the page size will not be rendered in the UI.
+    *
+    */
   var showPageSizeDropDown: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Option specifying whether to show summary label for the currently rendered records or not.
-  	 *
-  	 */
+    * Option specifying whether to show summary label for the currently rendered records or not.
+    *
+    */
   var showPagerRecordsLabel: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Option specifying whether to render the previous and next page navigation buttons.
-  	 *
-  	 */
+    * Option specifying whether to render the previous and next page navigation buttons.
+    *
+    */
   var showPrevNextPages: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Type of paging. Delegates all paging functionality to the [$.ig.DataSource](ig.datasource).
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "remote" Paging is performed by a remote end-point.
-  	 * "local" Paging is performed locally by the [$.ig.DataSource](ig.datasource).
-  	 */
+    * Type of paging. Delegates all paging functionality to the [$.ig.DataSource](ig.datasource).
+    *
+    *
+    * Valid values:
+    * "remote" Paging is performed by a remote end-point.
+    * "local" Paging is performed locally by the [$.ig.DataSource](ig.datasource).
+    */
   var `type`: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Number of page buttons, adjacent to and including the [active page](ui.iggridpaging#options:currentPageIndex), that are constantly visible. For the invisible pages, previous and next buttons are used.
-  	 *
-  	 */
+    * Number of page buttons, adjacent to and including the [active page](ui.iggridpaging#options:currentPageIndex), that are constantly visible. For the invisible pages, previous and next buttons are used.
+    *
+    */
   var visiblePageCount: js.UndefOr[Double] = js.undefined
 }
-
 object IgTreeGridPaging {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igTreeGridPaging
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    breadcrumbDelimiter: String = null,
-    breadcrumbKey: String = null,
-    contextRowLoadingText: String = null,
-    contextRowMode: String = null,
-    contextRowRendered: (/* event */ Event_, /* ui */ ContextRowRenderedEventUIParam) => Callback = null,
-    contextRowRendering: (/* event */ Event_, /* ui */ ContextRowRenderingEventUIParam) => Callback = null,
-    contextRowRootText: String = null,
-    currentPageDropDownLeadingLabel: String = null,
-    currentPageDropDownTooltip: String = null,
-    currentPageDropDownTrailingLabel: String = null,
-    currentPageIndex: Int | Double = null,
-    defaultDropDownWidth: Int | Double = null,
-    delayOnPageChanged: Int | Double = null,
-    firstPageLabelText: String = null,
-    firstPageTooltip: String = null,
-    inherit: js.UndefOr[Boolean] = js.undefined,
-    lastPageLabelText: String = null,
-    lastPageTooltip: String = null,
-    locale: IgTreeGridPagingLocale = null,
-    mode: String = null,
-    nextPageLabelText: String = null,
-    nextPageTooltip: String = null,
-    pageCountLimit: Int | Double = null,
-    pageIndexChanged: (/* event */ Event_, /* ui */ PageIndexChangedEventUIParam) => Callback = null,
-    pageIndexChanging: (/* event */ Event_, /* ui */ PageIndexChangingEventUIParam) => Callback = null,
-    pageIndexUrlKey: String = null,
-    pageSize: Int | Double = null,
-    pageSizeChanged: (/* event */ Event_, /* ui */ PageSizeChangedEventUIParam) => Callback = null,
-    pageSizeChanging: (/* event */ Event_, /* ui */ PageSizeChangingEventUIParam) => Callback = null,
-    pageSizeDropDownLabel: String = null,
-    pageSizeDropDownLocation: String = null,
-    pageSizeDropDownTooltip: String = null,
-    pageSizeDropDownTrailingLabel: String = null,
-    pageSizeList: js.Any = null,
-    pageSizeUrlKey: String = null,
-    pageTooltipFormat: String = null,
-    pagerRecordsLabelTemplate: String = null,
-    pagerRecordsLabelTooltip: String = null,
-    pagerRendered: (/* event */ Event_, /* ui */ PagerRenderedEventUIParam) => Callback = null,
-    pagerRendering: (/* event */ Event_, /* ui */ PagerRenderingEventUIParam) => Callback = null,
-    persist: js.UndefOr[Boolean] = js.undefined,
-    prevPageLabelText: String = null,
-    prevPageTooltip: String = null,
-    recordCountKey: String = null,
-    renderContextRowFunc: js.Function | String = null,
-    showFirstLastPages: js.UndefOr[Boolean] = js.undefined,
-    showPageSizeDropDown: js.UndefOr[Boolean] = js.undefined,
-    showPagerRecordsLabel: js.UndefOr[Boolean] = js.undefined,
-    showPrevNextPages: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null,
-    visiblePageCount: Int | Double = null
-  ): IgTreeGridPaging = {
+  
+  inline def apply(): IgTreeGridPaging = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (breadcrumbDelimiter != null) __obj.updateDynamic("breadcrumbDelimiter")(breadcrumbDelimiter.asInstanceOf[js.Any])
-    if (breadcrumbKey != null) __obj.updateDynamic("breadcrumbKey")(breadcrumbKey.asInstanceOf[js.Any])
-    if (contextRowLoadingText != null) __obj.updateDynamic("contextRowLoadingText")(contextRowLoadingText.asInstanceOf[js.Any])
-    if (contextRowMode != null) __obj.updateDynamic("contextRowMode")(contextRowMode.asInstanceOf[js.Any])
-    if (contextRowRendered != null) __obj.updateDynamic("contextRowRendered")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ContextRowRenderedEventUIParam) => contextRowRendered(t0, t1).runNow()))
-    if (contextRowRendering != null) __obj.updateDynamic("contextRowRendering")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ContextRowRenderingEventUIParam) => contextRowRendering(t0, t1).runNow()))
-    if (contextRowRootText != null) __obj.updateDynamic("contextRowRootText")(contextRowRootText.asInstanceOf[js.Any])
-    if (currentPageDropDownLeadingLabel != null) __obj.updateDynamic("currentPageDropDownLeadingLabel")(currentPageDropDownLeadingLabel.asInstanceOf[js.Any])
-    if (currentPageDropDownTooltip != null) __obj.updateDynamic("currentPageDropDownTooltip")(currentPageDropDownTooltip.asInstanceOf[js.Any])
-    if (currentPageDropDownTrailingLabel != null) __obj.updateDynamic("currentPageDropDownTrailingLabel")(currentPageDropDownTrailingLabel.asInstanceOf[js.Any])
-    if (currentPageIndex != null) __obj.updateDynamic("currentPageIndex")(currentPageIndex.asInstanceOf[js.Any])
-    if (defaultDropDownWidth != null) __obj.updateDynamic("defaultDropDownWidth")(defaultDropDownWidth.asInstanceOf[js.Any])
-    if (delayOnPageChanged != null) __obj.updateDynamic("delayOnPageChanged")(delayOnPageChanged.asInstanceOf[js.Any])
-    if (firstPageLabelText != null) __obj.updateDynamic("firstPageLabelText")(firstPageLabelText.asInstanceOf[js.Any])
-    if (firstPageTooltip != null) __obj.updateDynamic("firstPageTooltip")(firstPageTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
-    if (lastPageLabelText != null) __obj.updateDynamic("lastPageLabelText")(lastPageLabelText.asInstanceOf[js.Any])
-    if (lastPageTooltip != null) __obj.updateDynamic("lastPageTooltip")(lastPageTooltip.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (nextPageLabelText != null) __obj.updateDynamic("nextPageLabelText")(nextPageLabelText.asInstanceOf[js.Any])
-    if (nextPageTooltip != null) __obj.updateDynamic("nextPageTooltip")(nextPageTooltip.asInstanceOf[js.Any])
-    if (pageCountLimit != null) __obj.updateDynamic("pageCountLimit")(pageCountLimit.asInstanceOf[js.Any])
-    if (pageIndexChanged != null) __obj.updateDynamic("pageIndexChanged")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.PageIndexChangedEventUIParam) => pageIndexChanged(t0, t1).runNow()))
-    if (pageIndexChanging != null) __obj.updateDynamic("pageIndexChanging")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.PageIndexChangingEventUIParam) => pageIndexChanging(t0, t1).runNow()))
-    if (pageIndexUrlKey != null) __obj.updateDynamic("pageIndexUrlKey")(pageIndexUrlKey.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageSizeChanged != null) __obj.updateDynamic("pageSizeChanged")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.PageSizeChangedEventUIParam) => pageSizeChanged(t0, t1).runNow()))
-    if (pageSizeChanging != null) __obj.updateDynamic("pageSizeChanging")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.PageSizeChangingEventUIParam) => pageSizeChanging(t0, t1).runNow()))
-    if (pageSizeDropDownLabel != null) __obj.updateDynamic("pageSizeDropDownLabel")(pageSizeDropDownLabel.asInstanceOf[js.Any])
-    if (pageSizeDropDownLocation != null) __obj.updateDynamic("pageSizeDropDownLocation")(pageSizeDropDownLocation.asInstanceOf[js.Any])
-    if (pageSizeDropDownTooltip != null) __obj.updateDynamic("pageSizeDropDownTooltip")(pageSizeDropDownTooltip.asInstanceOf[js.Any])
-    if (pageSizeDropDownTrailingLabel != null) __obj.updateDynamic("pageSizeDropDownTrailingLabel")(pageSizeDropDownTrailingLabel.asInstanceOf[js.Any])
-    if (pageSizeList != null) __obj.updateDynamic("pageSizeList")(pageSizeList.asInstanceOf[js.Any])
-    if (pageSizeUrlKey != null) __obj.updateDynamic("pageSizeUrlKey")(pageSizeUrlKey.asInstanceOf[js.Any])
-    if (pageTooltipFormat != null) __obj.updateDynamic("pageTooltipFormat")(pageTooltipFormat.asInstanceOf[js.Any])
-    if (pagerRecordsLabelTemplate != null) __obj.updateDynamic("pagerRecordsLabelTemplate")(pagerRecordsLabelTemplate.asInstanceOf[js.Any])
-    if (pagerRecordsLabelTooltip != null) __obj.updateDynamic("pagerRecordsLabelTooltip")(pagerRecordsLabelTooltip.asInstanceOf[js.Any])
-    if (pagerRendered != null) __obj.updateDynamic("pagerRendered")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.PagerRenderedEventUIParam) => pagerRendered(t0, t1).runNow()))
-    if (pagerRendering != null) __obj.updateDynamic("pagerRendering")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.PagerRenderingEventUIParam) => pagerRendering(t0, t1).runNow()))
-    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
-    if (prevPageLabelText != null) __obj.updateDynamic("prevPageLabelText")(prevPageLabelText.asInstanceOf[js.Any])
-    if (prevPageTooltip != null) __obj.updateDynamic("prevPageTooltip")(prevPageTooltip.asInstanceOf[js.Any])
-    if (recordCountKey != null) __obj.updateDynamic("recordCountKey")(recordCountKey.asInstanceOf[js.Any])
-    if (renderContextRowFunc != null) __obj.updateDynamic("renderContextRowFunc")(renderContextRowFunc.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFirstLastPages)) __obj.updateDynamic("showFirstLastPages")(showFirstLastPages.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPageSizeDropDown)) __obj.updateDynamic("showPageSizeDropDown")(showPageSizeDropDown.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPagerRecordsLabel)) __obj.updateDynamic("showPagerRecordsLabel")(showPagerRecordsLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPrevNextPages)) __obj.updateDynamic("showPrevNextPages")(showPrevNextPages.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (visiblePageCount != null) __obj.updateDynamic("visiblePageCount")(visiblePageCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeGridPaging]
   }
+  
+  extension [Self <: IgTreeGridPaging](x: Self) {
+    
+    inline def setBreadcrumbDelimiter(value: String): Self = StObject.set(x, "breadcrumbDelimiter", value.asInstanceOf[js.Any])
+    
+    inline def setBreadcrumbDelimiterUndefined: Self = StObject.set(x, "breadcrumbDelimiter", js.undefined)
+    
+    inline def setBreadcrumbKey(value: String): Self = StObject.set(x, "breadcrumbKey", value.asInstanceOf[js.Any])
+    
+    inline def setBreadcrumbKeyUndefined: Self = StObject.set(x, "breadcrumbKey", js.undefined)
+    
+    inline def setContextRowLoadingText(value: String): Self = StObject.set(x, "contextRowLoadingText", value.asInstanceOf[js.Any])
+    
+    inline def setContextRowLoadingTextUndefined: Self = StObject.set(x, "contextRowLoadingText", js.undefined)
+    
+    inline def setContextRowMode(value: String): Self = StObject.set(x, "contextRowMode", value.asInstanceOf[js.Any])
+    
+    inline def setContextRowModeUndefined: Self = StObject.set(x, "contextRowMode", js.undefined)
+    
+    inline def setContextRowRendered(value: (/* event */ Event, /* ui */ ContextRowRenderedEventUIParam) => Callback): Self = StObject.set(x, "contextRowRendered", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ContextRowRenderedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setContextRowRenderedUndefined: Self = StObject.set(x, "contextRowRendered", js.undefined)
+    
+    inline def setContextRowRendering(value: (/* event */ Event, /* ui */ ContextRowRenderingEventUIParam) => Callback): Self = StObject.set(x, "contextRowRendering", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ContextRowRenderingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setContextRowRenderingUndefined: Self = StObject.set(x, "contextRowRendering", js.undefined)
+    
+    inline def setContextRowRootText(value: String): Self = StObject.set(x, "contextRowRootText", value.asInstanceOf[js.Any])
+    
+    inline def setContextRowRootTextUndefined: Self = StObject.set(x, "contextRowRootText", js.undefined)
+    
+    inline def setCurrentPageDropDownLeadingLabel(value: String): Self = StObject.set(x, "currentPageDropDownLeadingLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentPageDropDownLeadingLabelUndefined: Self = StObject.set(x, "currentPageDropDownLeadingLabel", js.undefined)
+    
+    inline def setCurrentPageDropDownTooltip(value: String): Self = StObject.set(x, "currentPageDropDownTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentPageDropDownTooltipUndefined: Self = StObject.set(x, "currentPageDropDownTooltip", js.undefined)
+    
+    inline def setCurrentPageDropDownTrailingLabel(value: String): Self = StObject.set(x, "currentPageDropDownTrailingLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentPageDropDownTrailingLabelUndefined: Self = StObject.set(x, "currentPageDropDownTrailingLabel", js.undefined)
+    
+    inline def setCurrentPageIndex(value: Double): Self = StObject.set(x, "currentPageIndex", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentPageIndexUndefined: Self = StObject.set(x, "currentPageIndex", js.undefined)
+    
+    inline def setDefaultDropDownWidth(value: Double): Self = StObject.set(x, "defaultDropDownWidth", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultDropDownWidthUndefined: Self = StObject.set(x, "defaultDropDownWidth", js.undefined)
+    
+    inline def setDelayOnPageChanged(value: Double): Self = StObject.set(x, "delayOnPageChanged", value.asInstanceOf[js.Any])
+    
+    inline def setDelayOnPageChangedUndefined: Self = StObject.set(x, "delayOnPageChanged", js.undefined)
+    
+    inline def setFirstPageLabelText(value: String): Self = StObject.set(x, "firstPageLabelText", value.asInstanceOf[js.Any])
+    
+    inline def setFirstPageLabelTextUndefined: Self = StObject.set(x, "firstPageLabelText", js.undefined)
+    
+    inline def setFirstPageTooltip(value: String): Self = StObject.set(x, "firstPageTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setFirstPageTooltipUndefined: Self = StObject.set(x, "firstPageTooltip", js.undefined)
+    
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    
+    inline def setLastPageLabelText(value: String): Self = StObject.set(x, "lastPageLabelText", value.asInstanceOf[js.Any])
+    
+    inline def setLastPageLabelTextUndefined: Self = StObject.set(x, "lastPageLabelText", js.undefined)
+    
+    inline def setLastPageTooltip(value: String): Self = StObject.set(x, "lastPageTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setLastPageTooltipUndefined: Self = StObject.set(x, "lastPageTooltip", js.undefined)
+    
+    inline def setLocale(value: IgTreeGridPagingLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setNextPageLabelText(value: String): Self = StObject.set(x, "nextPageLabelText", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageLabelTextUndefined: Self = StObject.set(x, "nextPageLabelText", js.undefined)
+    
+    inline def setNextPageTooltip(value: String): Self = StObject.set(x, "nextPageTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTooltipUndefined: Self = StObject.set(x, "nextPageTooltip", js.undefined)
+    
+    inline def setPageCountLimit(value: Double): Self = StObject.set(x, "pageCountLimit", value.asInstanceOf[js.Any])
+    
+    inline def setPageCountLimitUndefined: Self = StObject.set(x, "pageCountLimit", js.undefined)
+    
+    inline def setPageIndexChanged(value: (/* event */ Event, /* ui */ PageIndexChangedEventUIParam) => Callback): Self = StObject.set(x, "pageIndexChanged", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ PageIndexChangedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setPageIndexChangedUndefined: Self = StObject.set(x, "pageIndexChanged", js.undefined)
+    
+    inline def setPageIndexChanging(value: (/* event */ Event, /* ui */ PageIndexChangingEventUIParam) => Callback): Self = StObject.set(x, "pageIndexChanging", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ PageIndexChangingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setPageIndexChangingUndefined: Self = StObject.set(x, "pageIndexChanging", js.undefined)
+    
+    inline def setPageIndexUrlKey(value: String): Self = StObject.set(x, "pageIndexUrlKey", value.asInstanceOf[js.Any])
+    
+    inline def setPageIndexUrlKeyUndefined: Self = StObject.set(x, "pageIndexUrlKey", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeChanged(value: (/* event */ Event, /* ui */ PageSizeChangedEventUIParam) => Callback): Self = StObject.set(x, "pageSizeChanged", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ PageSizeChangedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setPageSizeChangedUndefined: Self = StObject.set(x, "pageSizeChanged", js.undefined)
+    
+    inline def setPageSizeChanging(value: (/* event */ Event, /* ui */ PageSizeChangingEventUIParam) => Callback): Self = StObject.set(x, "pageSizeChanging", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ PageSizeChangingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setPageSizeChangingUndefined: Self = StObject.set(x, "pageSizeChanging", js.undefined)
+    
+    inline def setPageSizeDropDownLabel(value: String): Self = StObject.set(x, "pageSizeDropDownLabel", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeDropDownLabelUndefined: Self = StObject.set(x, "pageSizeDropDownLabel", js.undefined)
+    
+    inline def setPageSizeDropDownLocation(value: String): Self = StObject.set(x, "pageSizeDropDownLocation", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeDropDownLocationUndefined: Self = StObject.set(x, "pageSizeDropDownLocation", js.undefined)
+    
+    inline def setPageSizeDropDownTooltip(value: String): Self = StObject.set(x, "pageSizeDropDownTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeDropDownTooltipUndefined: Self = StObject.set(x, "pageSizeDropDownTooltip", js.undefined)
+    
+    inline def setPageSizeDropDownTrailingLabel(value: String): Self = StObject.set(x, "pageSizeDropDownTrailingLabel", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeDropDownTrailingLabelUndefined: Self = StObject.set(x, "pageSizeDropDownTrailingLabel", js.undefined)
+    
+    inline def setPageSizeList(value: Any): Self = StObject.set(x, "pageSizeList", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeListUndefined: Self = StObject.set(x, "pageSizeList", js.undefined)
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPageSizeUrlKey(value: String): Self = StObject.set(x, "pageSizeUrlKey", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUrlKeyUndefined: Self = StObject.set(x, "pageSizeUrlKey", js.undefined)
+    
+    inline def setPageTooltipFormat(value: String): Self = StObject.set(x, "pageTooltipFormat", value.asInstanceOf[js.Any])
+    
+    inline def setPageTooltipFormatUndefined: Self = StObject.set(x, "pageTooltipFormat", js.undefined)
+    
+    inline def setPagerRecordsLabelTemplate(value: String): Self = StObject.set(x, "pagerRecordsLabelTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setPagerRecordsLabelTemplateUndefined: Self = StObject.set(x, "pagerRecordsLabelTemplate", js.undefined)
+    
+    inline def setPagerRecordsLabelTooltip(value: String): Self = StObject.set(x, "pagerRecordsLabelTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setPagerRecordsLabelTooltipUndefined: Self = StObject.set(x, "pagerRecordsLabelTooltip", js.undefined)
+    
+    inline def setPagerRendered(value: (/* event */ Event, /* ui */ PagerRenderedEventUIParam) => Callback): Self = StObject.set(x, "pagerRendered", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ PagerRenderedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setPagerRenderedUndefined: Self = StObject.set(x, "pagerRendered", js.undefined)
+    
+    inline def setPagerRendering(value: (/* event */ Event, /* ui */ PagerRenderingEventUIParam) => Callback): Self = StObject.set(x, "pagerRendering", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ PagerRenderingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setPagerRenderingUndefined: Self = StObject.set(x, "pagerRendering", js.undefined)
+    
+    inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+    
+    inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
+    
+    inline def setPrevPageLabelText(value: String): Self = StObject.set(x, "prevPageLabelText", value.asInstanceOf[js.Any])
+    
+    inline def setPrevPageLabelTextUndefined: Self = StObject.set(x, "prevPageLabelText", js.undefined)
+    
+    inline def setPrevPageTooltip(value: String): Self = StObject.set(x, "prevPageTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setPrevPageTooltipUndefined: Self = StObject.set(x, "prevPageTooltip", js.undefined)
+    
+    inline def setRecordCountKey(value: String): Self = StObject.set(x, "recordCountKey", value.asInstanceOf[js.Any])
+    
+    inline def setRecordCountKeyUndefined: Self = StObject.set(x, "recordCountKey", js.undefined)
+    
+    inline def setRenderContextRowFunc(value: js.Function | String): Self = StObject.set(x, "renderContextRowFunc", value.asInstanceOf[js.Any])
+    
+    inline def setRenderContextRowFuncUndefined: Self = StObject.set(x, "renderContextRowFunc", js.undefined)
+    
+    inline def setShowFirstLastPages(value: Boolean): Self = StObject.set(x, "showFirstLastPages", value.asInstanceOf[js.Any])
+    
+    inline def setShowFirstLastPagesUndefined: Self = StObject.set(x, "showFirstLastPages", js.undefined)
+    
+    inline def setShowPageSizeDropDown(value: Boolean): Self = StObject.set(x, "showPageSizeDropDown", value.asInstanceOf[js.Any])
+    
+    inline def setShowPageSizeDropDownUndefined: Self = StObject.set(x, "showPageSizeDropDown", js.undefined)
+    
+    inline def setShowPagerRecordsLabel(value: Boolean): Self = StObject.set(x, "showPagerRecordsLabel", value.asInstanceOf[js.Any])
+    
+    inline def setShowPagerRecordsLabelUndefined: Self = StObject.set(x, "showPagerRecordsLabel", js.undefined)
+    
+    inline def setShowPrevNextPages(value: Boolean): Self = StObject.set(x, "showPrevNextPages", value.asInstanceOf[js.Any])
+    
+    inline def setShowPrevNextPagesUndefined: Self = StObject.set(x, "showPrevNextPages", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setVisiblePageCount(value: Double): Self = StObject.set(x, "visiblePageCount", value.asInstanceOf[js.Any])
+    
+    inline def setVisiblePageCountUndefined: Self = StObject.set(x, "visiblePageCount", js.undefined)
+  }
 }
-

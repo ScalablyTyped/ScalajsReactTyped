@@ -1,37 +1,25 @@
 package typingsJapgolly.winrt.Windows.Data.Json
 
-import typingsJapgolly.winrt.AnonResultSucceeded
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Data.Json.JsonValue")
-@js.native
-class JsonValue () extends IJsonValue {
-  /* CompleteClass */
-  override var valueType: JsonValueType = js.native
-  /* CompleteClass */
-  override def getArray(): JsonArray = js.native
-  /* CompleteClass */
-  override def getBoolean(): Boolean = js.native
-  /* CompleteClass */
-  override def getNumber(): Double = js.native
-  /* CompleteClass */
-  override def getObject(): JsonObject = js.native
-  /* CompleteClass */
-  override def getString(): String = js.native
-  /* CompleteClass */
-  override def stringify(): String = js.native
+trait JsonValue
+  extends StObject
+     with IJsonValue
+object JsonValue {
+  
+  inline def apply(
+    getArray: CallbackTo[JsonArray],
+    getBoolean: CallbackTo[Boolean],
+    getNumber: CallbackTo[Double],
+    getObject: CallbackTo[JsonObject],
+    getString: CallbackTo[String],
+    stringify: CallbackTo[String],
+    valueType: JsonValueType
+  ): JsonValue = {
+    val __obj = js.Dynamic.literal(getArray = getArray.toJsFn, getBoolean = getBoolean.toJsFn, getNumber = getNumber.toJsFn, getObject = getObject.toJsFn, getString = getString.toJsFn, stringify = stringify.toJsFn, valueType = valueType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JsonValue]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Data.Json.JsonValue")
-@js.native
-object JsonValue extends js.Object {
-  def createBooleanValue(input: Boolean): JsonValue = js.native
-  def createNumberValue(input: Double): JsonValue = js.native
-  def createStringValue(input: String): JsonValue = js.native
-  def parse(input: String): JsonValue = js.native
-  def tryParse(input: String): AnonResultSucceeded = js.native
-}
-

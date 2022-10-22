@@ -1,41 +1,44 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.boolean
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.date
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.number
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.string_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ExpressionInfo
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
+  
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression evaluating to either a string, number, dictionary, or array. This expression can reference field values using the `$feature` global variable and perform mathematical calculations and logical evaluations at runtime.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Constraint Profile](https://developers.arcgis.com/javascript/latest/arcade/#forms).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html#expression)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#expression)
     */
   var expression: String = js.native
+  
   /**
-    * The name of the expression. This is used to reference the value of the given `expression` in the popupTemplate's [content](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content) property by wrapping it in curly braces and prefacing it with `expression/` (e.g. `{expression/expressionName}`). See the code snippets below for more examples.
+    * The name of the expression.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html#name)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#name)
     */
   var name: String = js.native
+  
   /**
     * Indicates the return type of the Arcade expression.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html#returnType)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#returnType)
     */
-  var returnType: String | Double = js.native
+  var returnType: boolean | date | number | string_ = js.native
+  
   /**
-    * The title used to describe the value returned by the expression in the popup. This will display if the value is referenced in a [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html) table.
+    * The title used to describe the value returned by the expression.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html#title)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#title)
     */
   var title: String = js.native
 }
-
-@JSGlobal("__esri.ExpressionInfo")
-@js.native
-object ExpressionInfo extends TopLevel[ExpressionInfoConstructor]
-

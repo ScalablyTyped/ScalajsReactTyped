@@ -1,22 +1,28 @@
 package typingsJapgolly.riotGamesApi.RiotGamesAPI.LolStaticData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RecommendedDto extends js.Object {
+trait RecommendedDto extends StObject {
+  
   var block: js.Array[BlockDto]
+  
   var champion: String
+  
   var map: String
+  
   var mode: String
+  
   var priority: Boolean
+  
   var title: String
+  
   var `type`: String
 }
-
 object RecommendedDto {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     block: js.Array[BlockDto],
     champion: String,
     map: String,
@@ -29,5 +35,23 @@ object RecommendedDto {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommendedDto]
   }
+  
+  extension [Self <: RecommendedDto](x: Self) {
+    
+    inline def setBlock(value: js.Array[BlockDto]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    
+    inline def setBlockVarargs(value: BlockDto*): Self = StObject.set(x, "block", js.Array(value*))
+    
+    inline def setChampion(value: String): Self = StObject.set(x, "champion", value.asInstanceOf[js.Any])
+    
+    inline def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,13 +1,15 @@
 package typingsJapgolly.webcl.WEBCL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.5
 @js.native
-trait WebCLCommandQueue extends js.Object {
+trait WebCLCommandQueue extends StObject {
+  
   def enqueueBarrier(): Unit = js.native
+  
   ////////////////////////////////////////////////////////////////////////////
   //
   // Copying: Buffer <-> Buffer, Image <-> Image, Buffer <-> Image
@@ -36,6 +38,16 @@ trait WebCLCommandQueue extends js.Object {
     eventWaitList: js.Array[WebCLEvent],
     event: WebCLEvent
   ): Unit = js.native
+  def enqueueCopyBuffer(
+    srcBuffer: WebCLBuffer,
+    dstBuffer: WebCLBuffer,
+    srcOffset: Double,
+    dstOffset: Double,
+    numBytes: Double,
+    eventWaitList: Unit,
+    event: WebCLEvent
+  ): Unit = js.native
+  
   def enqueueCopyBufferRect(
     srcBuffer: WebCLBuffer,
     dstBuffer: WebCLBuffer,
@@ -72,6 +84,20 @@ trait WebCLCommandQueue extends js.Object {
     eventWaitList: js.Array[WebCLEvent],
     event: WebCLEvent
   ): Unit = js.native
+  def enqueueCopyBufferRect(
+    srcBuffer: WebCLBuffer,
+    dstBuffer: WebCLBuffer,
+    srcOrigin: js.Array[Double],
+    dstOrigin: js.Array[Double],
+    region: js.Array[Double],
+    srcRowPitch: Double,
+    srcSlicePitch: Double,
+    dstRowPitch: Double,
+    dstSlicePitch: Double,
+    eventWaitList: Unit,
+    event: WebCLEvent
+  ): Unit = js.native
+  
   def enqueueCopyBufferToImage(
     srcBuffer: WebCLBuffer,
     dstImage: WebCLImage,
@@ -96,6 +122,16 @@ trait WebCLCommandQueue extends js.Object {
     eventWaitList: js.Array[WebCLEvent],
     event: WebCLEvent
   ): Unit = js.native
+  def enqueueCopyBufferToImage(
+    srcBuffer: WebCLBuffer,
+    dstImage: WebCLImage,
+    srcOffset: Double,
+    dstOrigin: js.Array[Double],
+    dstRegion: js.Array[Double],
+    eventWaitList: Unit,
+    event: WebCLEvent
+  ): Unit = js.native
+  
   def enqueueCopyImage(
     srcImage: WebCLImage,
     dstImage: WebCLImage,
@@ -120,6 +156,16 @@ trait WebCLCommandQueue extends js.Object {
     eventWaitList: js.Array[WebCLEvent],
     event: WebCLEvent
   ): Unit = js.native
+  def enqueueCopyImage(
+    srcImage: WebCLImage,
+    dstImage: WebCLImage,
+    srcOrigin: js.Array[Double],
+    dstOrigin: js.Array[Double],
+    region: js.Array[Double],
+    eventWaitList: Unit,
+    event: WebCLEvent
+  ): Unit = js.native
+  
   def enqueueCopyImageToBuffer(
     srcImage: WebCLImage,
     dstBuffer: WebCLBuffer,
@@ -144,11 +190,22 @@ trait WebCLCommandQueue extends js.Object {
     eventWaitList: js.Array[WebCLEvent],
     event: WebCLEvent
   ): Unit = js.native
+  def enqueueCopyImageToBuffer(
+    srcImage: WebCLImage,
+    dstBuffer: WebCLBuffer,
+    srcOrigin: js.Array[Double],
+    srcRegion: js.Array[Double],
+    dstOffset: Double,
+    eventWaitList: Unit,
+    event: WebCLEvent
+  ): Unit = js.native
+  
   ////////////////////////////////////////////////////////////////////////////
   //
   // Synchronization
   //
   def enqueueMarker(event: WebCLEvent): Unit = js.native
+  
   ////////////////////////////////////////////////////////////////////////////
   //
   // Executing kernels
@@ -183,6 +240,42 @@ trait WebCLCommandQueue extends js.Object {
     eventWaitList: js.Array[WebCLEvent],
     event: WebCLEvent
   ): Unit = js.native
+  def enqueueNDRangeKernel(
+    kernel: WebCLKernel,
+    workDim: Double,
+    globalWorkOffset: js.Array[Double],
+    globalWorkSize: js.Array[Double],
+    localWorkSize: js.Array[Double],
+    eventWaitList: Unit,
+    event: WebCLEvent
+  ): Unit = js.native
+  def enqueueNDRangeKernel(
+    kernel: WebCLKernel,
+    workDim: Double,
+    globalWorkOffset: js.Array[Double],
+    globalWorkSize: js.Array[Double],
+    localWorkSize: Unit,
+    eventWaitList: js.Array[WebCLEvent]
+  ): Unit = js.native
+  def enqueueNDRangeKernel(
+    kernel: WebCLKernel,
+    workDim: Double,
+    globalWorkOffset: js.Array[Double],
+    globalWorkSize: js.Array[Double],
+    localWorkSize: Unit,
+    eventWaitList: js.Array[WebCLEvent],
+    event: WebCLEvent
+  ): Unit = js.native
+  def enqueueNDRangeKernel(
+    kernel: WebCLKernel,
+    workDim: Double,
+    globalWorkOffset: js.Array[Double],
+    globalWorkSize: js.Array[Double],
+    localWorkSize: Unit,
+    eventWaitList: Unit,
+    event: WebCLEvent
+  ): Unit = js.native
+  
   ////////////////////////////////////////////////////////////////////////////
   //
   // Reading: Buffer -> Host, Image -> Host
@@ -192,14 +285,14 @@ trait WebCLCommandQueue extends js.Object {
     blockingRead: Boolean,
     bufferOffset: Double,
     numBytes: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView
+    hostPtr: js.typedarray.ArrayBufferView
   ): Unit = js.native
   def enqueueReadBuffer(
     buffer: WebCLBuffer,
     blockingRead: Boolean,
     bufferOffset: Double,
     numBytes: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView,
+    hostPtr: js.typedarray.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent]
   ): Unit = js.native
   def enqueueReadBuffer(
@@ -207,10 +300,20 @@ trait WebCLCommandQueue extends js.Object {
     blockingRead: Boolean,
     bufferOffset: Double,
     numBytes: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView,
+    hostPtr: js.typedarray.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent],
     event: WebCLEvent
   ): Unit = js.native
+  def enqueueReadBuffer(
+    buffer: WebCLBuffer,
+    blockingRead: Boolean,
+    bufferOffset: Double,
+    numBytes: Double,
+    hostPtr: js.typedarray.ArrayBufferView,
+    eventWaitList: Unit,
+    event: WebCLEvent
+  ): Unit = js.native
+  
   def enqueueReadBufferRect(
     buffer: WebCLBuffer,
     blockingRead: Boolean,
@@ -221,7 +324,7 @@ trait WebCLCommandQueue extends js.Object {
     bufferSlicePitch: Double,
     hostRowPitch: Double,
     hostSlicePitch: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView
+    hostPtr: js.typedarray.ArrayBufferView
   ): Unit = js.native
   def enqueueReadBufferRect(
     buffer: WebCLBuffer,
@@ -233,7 +336,7 @@ trait WebCLCommandQueue extends js.Object {
     bufferSlicePitch: Double,
     hostRowPitch: Double,
     hostSlicePitch: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView,
+    hostPtr: js.typedarray.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent]
   ): Unit = js.native
   def enqueueReadBufferRect(
@@ -246,17 +349,32 @@ trait WebCLCommandQueue extends js.Object {
     bufferSlicePitch: Double,
     hostRowPitch: Double,
     hostSlicePitch: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView,
+    hostPtr: js.typedarray.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent],
     event: WebCLEvent
   ): Unit = js.native
+  def enqueueReadBufferRect(
+    buffer: WebCLBuffer,
+    blockingRead: Boolean,
+    bufferOrigin: js.Array[Double],
+    hostOrigin: js.Array[Double],
+    region: js.Array[Double],
+    bufferRowPitch: Double,
+    bufferSlicePitch: Double,
+    hostRowPitch: Double,
+    hostSlicePitch: Double,
+    hostPtr: js.typedarray.ArrayBufferView,
+    eventWaitList: Unit,
+    event: WebCLEvent
+  ): Unit = js.native
+  
   def enqueueReadImage(
     image: WebCLImage,
     blockingRead: Boolean,
     origin: js.Array[Double],
     region: js.Array[Double],
     hostRowPitch: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView
+    hostPtr: js.typedarray.ArrayBufferView
   ): Unit = js.native
   def enqueueReadImage(
     image: WebCLImage,
@@ -264,7 +382,7 @@ trait WebCLCommandQueue extends js.Object {
     origin: js.Array[Double],
     region: js.Array[Double],
     hostRowPitch: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView,
+    hostPtr: js.typedarray.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent]
   ): Unit = js.native
   def enqueueReadImage(
@@ -273,11 +391,23 @@ trait WebCLCommandQueue extends js.Object {
     origin: js.Array[Double],
     region: js.Array[Double],
     hostRowPitch: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView,
+    hostPtr: js.typedarray.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent],
     event: WebCLEvent
   ): Unit = js.native
+  def enqueueReadImage(
+    image: WebCLImage,
+    blockingRead: Boolean,
+    origin: js.Array[Double],
+    region: js.Array[Double],
+    hostRowPitch: Double,
+    hostPtr: js.typedarray.ArrayBufferView,
+    eventWaitList: Unit,
+    event: WebCLEvent
+  ): Unit = js.native
+  
   def enqueueWaitForEvents(eventWaitList: js.Array[WebCLEvent]): Unit = js.native
+  
   ////////////////////////////////////////////////////////////////////////////
   //
   // Writing: Host -> Buffer, Host -> Image
@@ -287,14 +417,14 @@ trait WebCLCommandQueue extends js.Object {
     blockingWrite: Boolean,
     bufferOffset: Double,
     numBytes: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView
+    hostPtr: js.typedarray.ArrayBufferView
   ): Unit = js.native
   def enqueueWriteBuffer(
     buffer: WebCLBuffer,
     blockingWrite: Boolean,
     bufferOffset: Double,
     numBytes: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView,
+    hostPtr: js.typedarray.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent]
   ): Unit = js.native
   def enqueueWriteBuffer(
@@ -302,10 +432,20 @@ trait WebCLCommandQueue extends js.Object {
     blockingWrite: Boolean,
     bufferOffset: Double,
     numBytes: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView,
+    hostPtr: js.typedarray.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent],
     event: WebCLEvent
   ): Unit = js.native
+  def enqueueWriteBuffer(
+    buffer: WebCLBuffer,
+    blockingWrite: Boolean,
+    bufferOffset: Double,
+    numBytes: Double,
+    hostPtr: js.typedarray.ArrayBufferView,
+    eventWaitList: Unit,
+    event: WebCLEvent
+  ): Unit = js.native
+  
   def enqueueWriteBufferRect(
     buffer: WebCLBuffer,
     blockingWrite: Boolean,
@@ -316,7 +456,7 @@ trait WebCLCommandQueue extends js.Object {
     bufferSlicePitch: Double,
     hostRowPitch: Double,
     hostSlicePitch: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView
+    hostPtr: js.typedarray.ArrayBufferView
   ): Unit = js.native
   def enqueueWriteBufferRect(
     buffer: WebCLBuffer,
@@ -328,7 +468,7 @@ trait WebCLCommandQueue extends js.Object {
     bufferSlicePitch: Double,
     hostRowPitch: Double,
     hostSlicePitch: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView,
+    hostPtr: js.typedarray.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent]
   ): Unit = js.native
   def enqueueWriteBufferRect(
@@ -341,17 +481,32 @@ trait WebCLCommandQueue extends js.Object {
     bufferSlicePitch: Double,
     hostRowPitch: Double,
     hostSlicePitch: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView,
+    hostPtr: js.typedarray.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent],
     event: WebCLEvent
   ): Unit = js.native
+  def enqueueWriteBufferRect(
+    buffer: WebCLBuffer,
+    blockingWrite: Boolean,
+    bufferOrigin: js.Array[Double],
+    hostOrigin: js.Array[Double],
+    region: js.Array[Double],
+    bufferRowPitch: Double,
+    bufferSlicePitch: Double,
+    hostRowPitch: Double,
+    hostSlicePitch: Double,
+    hostPtr: js.typedarray.ArrayBufferView,
+    eventWaitList: Unit,
+    event: WebCLEvent
+  ): Unit = js.native
+  
   def enqueueWriteImage(
     image: WebCLImage,
     blockingWrite: Boolean,
     origin: js.Array[Double],
     region: js.Array[Double],
     hostRowPitch: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView
+    hostPtr: js.typedarray.ArrayBufferView
   ): Unit = js.native
   def enqueueWriteImage(
     image: WebCLImage,
@@ -359,7 +514,7 @@ trait WebCLCommandQueue extends js.Object {
     origin: js.Array[Double],
     region: js.Array[Double],
     hostRowPitch: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView,
+    hostPtr: js.typedarray.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent]
   ): Unit = js.native
   def enqueueWriteImage(
@@ -368,18 +523,31 @@ trait WebCLCommandQueue extends js.Object {
     origin: js.Array[Double],
     region: js.Array[Double],
     hostRowPitch: Double,
-    hostPtr: scala.scalajs.js.typedarray.ArrayBufferView,
+    hostPtr: js.typedarray.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent],
     event: WebCLEvent
   ): Unit = js.native
+  def enqueueWriteImage(
+    image: WebCLImage,
+    blockingWrite: Boolean,
+    origin: js.Array[Double],
+    region: js.Array[Double],
+    hostRowPitch: Double,
+    hostPtr: js.typedarray.ArrayBufferView,
+    eventWaitList: Unit,
+    event: WebCLEvent
+  ): Unit = js.native
+  
   def finish(): Unit = js.native
   def finish(whenFinished: WebCLCallback): Unit = js.native
+  
   def flush(): Unit = js.native
+  
   ////////////////////////////////////////////////////////////////////////////
   //
   // Querying command queue information
   //
-  def getInfo(name: ContextProperties): js.Any = js.native
+  def getInfo(name: ContextProperties): Any = js.native
+  
   def release(): Unit = js.native
 }
-

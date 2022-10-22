@@ -1,49 +1,64 @@
 package typingsJapgolly.uniApp
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorContextSetContentsOptions extends js.Object {
+trait EditorContextSetContentsOptions extends StObject {
+  
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 表示内容的delta对象
     */
-  var delta: js.UndefOr[js.Any] = js.undefined
+  var delta: js.UndefOr[Any] = js.undefined
+  
   /**
     * 接口调用失败的回调函数
     */
   var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 带标签的HTML内容
     */
   var html: js.UndefOr[String] = js.undefined
+  
   /**
     * 接口调用成功的回调函数
     */
   var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
-
 object EditorContextSetContentsOptions {
-  @scala.inline
-  def apply(
-    complete: js.UndefOr[Callback] = js.undefined,
-    delta: js.Any = null,
-    fail: js.UndefOr[Callback] = js.undefined,
-    html: String = null,
-    success: js.UndefOr[Callback] = js.undefined
-  ): EditorContextSetContentsOptions = {
+  
+  inline def apply(): EditorContextSetContentsOptions = {
     val __obj = js.Dynamic.literal()
-    complete.foreach(p => __obj.updateDynamic("complete")(p.toJsFn))
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
-    fail.foreach(p => __obj.updateDynamic("fail")(p.toJsFn))
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    success.foreach(p => __obj.updateDynamic("success")(p.toJsFn))
     __obj.asInstanceOf[EditorContextSetContentsOptions]
   }
+  
+  extension [Self <: EditorContextSetContentsOptions](x: Self) {
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setDelta(value: Any): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    
+    inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+    
+    inline def setFail(value: Callback): Self = StObject.set(x, "fail", value.toJsFn)
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    
+    inline def setSuccess(value: Callback): Self = StObject.set(x, "success", value.toJsFn)
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

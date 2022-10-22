@@ -1,21 +1,25 @@
 package typingsJapgolly.tensorflowTfjsNode.mod
 
-import typingsJapgolly.tensorflowTfjsLayers.regularizersMod.L1Args
-import typingsJapgolly.tensorflowTfjsLayers.regularizersMod.L1L2Args
-import typingsJapgolly.tensorflowTfjsLayers.regularizersMod.L2Args
-import typingsJapgolly.tensorflowTfjsLayers.regularizersMod.Regularizer
+import typingsJapgolly.tensorflowTfjsLayers.distRegularizersMod.L1Args
+import typingsJapgolly.tensorflowTfjsLayers.distRegularizersMod.L1L2Args
+import typingsJapgolly.tensorflowTfjsLayers.distRegularizersMod.L2Args
+import typingsJapgolly.tensorflowTfjsLayers.distRegularizersMod.Regularizer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-node", "regularizers")
-@js.native
-object regularizers extends js.Object {
-  def l1(): Regularizer = js.native
-  def l1(config: L1Args): Regularizer = js.native
-  def l1l2(): Regularizer = js.native
-  def l1l2(config: L1L2Args): Regularizer = js.native
-  def l2(): Regularizer = js.native
-  def l2(config: L2Args): Regularizer = js.native
+object regularizers {
+  
+  @JSImport("@tensorflow/tfjs-node", "regularizers")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def l1(): Regularizer = ^.asInstanceOf[js.Dynamic].applyDynamic("l1")().asInstanceOf[Regularizer]
+  inline def l1(config: L1Args): Regularizer = ^.asInstanceOf[js.Dynamic].applyDynamic("l1")(config.asInstanceOf[js.Any]).asInstanceOf[Regularizer]
+  
+  inline def l1l2(): Regularizer = ^.asInstanceOf[js.Dynamic].applyDynamic("l1l2")().asInstanceOf[Regularizer]
+  inline def l1l2(config: L1L2Args): Regularizer = ^.asInstanceOf[js.Dynamic].applyDynamic("l1l2")(config.asInstanceOf[js.Any]).asInstanceOf[Regularizer]
+  
+  inline def l2(): Regularizer = ^.asInstanceOf[js.Dynamic].applyDynamic("l2")().asInstanceOf[Regularizer]
+  inline def l2(config: L2Args): Regularizer = ^.asInstanceOf[js.Dynamic].applyDynamic("l2")(config.asInstanceOf[js.Any]).asInstanceOf[Regularizer]
 }
-

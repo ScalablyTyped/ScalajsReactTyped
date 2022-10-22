@@ -1,10 +1,10 @@
 package typingsJapgolly.winrt.Windows.Storage.FileProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.FileProperties.MusicProperties")
 @js.native
-class MusicProperties () extends IMusicProperties
-
+trait MusicProperties
+  extends StObject
+     with IMusicProperties

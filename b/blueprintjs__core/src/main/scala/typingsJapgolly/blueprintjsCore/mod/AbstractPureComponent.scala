@@ -1,14 +1,13 @@
 package typingsJapgolly.blueprintjsCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/core", "AbstractPureComponent")
+/* note: abstract class */ @JSImport("@blueprintjs/core", "AbstractPureComponent")
 @js.native
-abstract class AbstractPureComponent[P, S] ()
-  extends typingsJapgolly.blueprintjsCore.commonMod.AbstractPureComponent[P, S] {
+open class AbstractPureComponent[P, S] protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmCommonMod.AbstractPureComponent[P, S] {
   def this(props: P) = this()
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
 }
-

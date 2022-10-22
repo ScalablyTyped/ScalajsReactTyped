@@ -1,17 +1,20 @@
 package typingsJapgolly.markerAnimateUnobtrusive
 
-import typingsJapgolly.googlemaps.google.maps.LatLng
-import typingsJapgolly.googlemaps.google.maps.LatLngLiteral
+import typingsJapgolly.googleMaps.google.maps.LatLng
+import typingsJapgolly.googleMaps.google.maps.LatLngLiteral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MarkerWithGhost")
 @js.native
-class MarkerWithGhost () extends SlidingMarker {
+trait MarkerWithGhost
+  extends StObject
+     with SlidingMarker {
+  
   def getGhostAnimationPosition(): LatLng = js.native
+  
   def getGhostPosition(): LatLng = js.native
+  
   def setGhostPosition(ghostPosition: LatLng): Unit = js.native
   def setGhostPosition(ghostPosition: LatLngLiteral): Unit = js.native
 }
-

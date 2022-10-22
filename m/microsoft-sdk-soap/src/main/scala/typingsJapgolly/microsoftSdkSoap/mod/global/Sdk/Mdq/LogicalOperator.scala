@@ -1,0 +1,27 @@
+package typingsJapgolly.microsoftSdkSoap.mod.global.Sdk.Mdq
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+sealed trait LogicalOperator extends StObject
+@JSGlobal("Sdk.Mdq.LogicalOperator")
+@js.native
+object LogicalOperator extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[LogicalOperator & Double] = js.native
+  
+  @js.native
+  sealed trait And
+    extends StObject
+       with LogicalOperator
+  /* 0 */ val And: typingsJapgolly.microsoftSdkSoap.mod.global.Sdk.Mdq.LogicalOperator.And & Double = js.native
+  
+  @js.native
+  sealed trait Or
+    extends StObject
+       with LogicalOperator
+  /* 1 */ val Or: typingsJapgolly.microsoftSdkSoap.mod.global.Sdk.Mdq.LogicalOperator.Or & Double = js.native
+}

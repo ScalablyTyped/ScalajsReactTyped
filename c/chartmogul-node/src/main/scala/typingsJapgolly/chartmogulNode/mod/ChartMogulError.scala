@@ -1,18 +1,25 @@
 package typingsJapgolly.chartmogulNode.mod
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("chartmogul-node", "ChartMogulError")
 @js.native
-class ChartMogulError () extends Error {
+open class ChartMogulError ()
+  extends StObject
+     with Error {
+  
   var httpStatus: Double = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var message: String = js.native
+  var message: String = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var name: String = js.native
-  var response: js.Any = js.native
+  var name: String = js.native
+  
+  var response: Any = js.native
 }
-

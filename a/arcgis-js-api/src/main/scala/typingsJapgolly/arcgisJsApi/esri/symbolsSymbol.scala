@@ -1,13 +1,11 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.arcgisJsApi.esri.Symbol2D
-  - typingsJapgolly.arcgisJsApi.esri.symbolsSymbol3D
+  - typingsJapgolly.arcgisJsApi.esri.Symbol2D3D
   - typingsJapgolly.arcgisJsApi.esri.WebStyleSymbol
 */
-trait symbolsSymbol extends js.Object
-
+trait symbolsSymbol extends StObject

@@ -1,11 +1,13 @@
 package typingsJapgolly.hapi.mod
 
 import typingsJapgolly.hapi.mod.Lifecycle.Method
+import typingsJapgolly.hapi.mod.Lifecycle.ReturnValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServerExtEventsRequestObject extends js.Object {
+trait ServerExtEventsRequestObject extends StObject {
+  
   /**
     * (required) a function or an array of functions to be executed at a specified point during request processing. The required extension function signature is:
     * * server extension points: async function(server) where:
@@ -14,6 +16,7 @@ trait ServerExtEventsRequestObject extends js.Object {
     * * request extension points: a lifecycle method.
     */
   var method: Method | js.Array[Method]
+  
   /**
     * (optional) an object with the following:
     * * before - a string or array of strings of plugin names this method must execute before (on the same event). Otherwise, extension methods are executed in the order added.
@@ -23,6 +26,7 @@ trait ServerExtEventsRequestObject extends js.Object {
     * or when adding server extensions. Defaults to 'server' which applies to any route added to the server the extension is added to.
     */
   var options: js.UndefOr[ServerExtOptions] = js.undefined
+  
   /**
     * (required) the extension point event name. The available extension points include the request extension points as well as the following server extension points:
     * * 'onPreStart' - called before the connection listeners are started.
@@ -32,14 +36,28 @@ trait ServerExtEventsRequestObject extends js.Object {
     */
   var `type`: ServerRequestExtType
 }
-
 object ServerExtEventsRequestObject {
-  @scala.inline
-  def apply(method: Method | js.Array[Method], `type`: ServerRequestExtType, options: ServerExtOptions = null): ServerExtEventsRequestObject = {
+  
+  inline def apply(method: Method | js.Array[Method], `type`: ServerRequestExtType): ServerExtEventsRequestObject = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerExtEventsRequestObject]
   }
+  
+  extension [Self <: ServerExtEventsRequestObject](x: Self) {
+    
+    inline def setMethod(value: Method | js.Array[Method]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodFunction3(
+      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
+    ): Self = StObject.set(x, "method", js.Any.fromFunction3(value))
+    
+    inline def setMethodVarargs(value: Method*): Self = StObject.set(x, "method", js.Array(value*))
+    
+    inline def setOptions(value: ServerExtOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setType(value: ServerRequestExtType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

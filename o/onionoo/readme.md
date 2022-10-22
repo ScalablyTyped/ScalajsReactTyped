@@ -10,10 +10,10 @@ Node.js client library for the Tor Onionoo API
 | ------------------ | :-------------: |
 | Full name          | onionoo |
 | Keywords           | onionoo, tor, api, client, node |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 1523 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 124.66666666666667 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/lukechilds/onionoo-node-client)

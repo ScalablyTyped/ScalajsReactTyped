@@ -1,20 +1,32 @@
 package typingsJapgolly.reactCountdownCircleTimer
 
-import typingsJapgolly.reactCountdownCircleTimer.mod.StrokeLinecapType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactCountdownCircleTimerStrings {
-  @js.native
-  sealed trait round extends StrokeLinecapType
   
   @js.native
-  sealed trait square extends StrokeLinecapType
+  sealed trait CountdownCircleTimer extends StObject
+  inline def CountdownCircleTimer: CountdownCircleTimer = "CountdownCircleTimer".asInstanceOf[CountdownCircleTimer]
   
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
+  @js.native
+  sealed trait butt extends StObject
+  inline def butt: butt = "butt".asInstanceOf[butt]
+  
+  @js.native
+  sealed trait clockwise extends StObject
+  inline def clockwise: clockwise = "clockwise".asInstanceOf[clockwise]
+  
+  @js.native
+  sealed trait counterclockwise extends StObject
+  inline def counterclockwise: counterclockwise = "counterclockwise".asInstanceOf[counterclockwise]
+  
+  @js.native
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
+  
+  @js.native
+  sealed trait square extends StObject
+  inline def square: square = "square".asInstanceOf[square]
 }
-

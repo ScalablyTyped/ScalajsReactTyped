@@ -1,127 +1,123 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`10`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`11`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`12`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`13`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`14`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`15`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`16`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`17`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`18`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`19`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`20`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`21`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`22`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`23`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`24`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`25`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`26`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`27`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`7`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`9`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`10`
+import typingsJapgolly.activexOffice.activexOfficeInts.`11`
+import typingsJapgolly.activexOffice.activexOfficeInts.`12`
+import typingsJapgolly.activexOffice.activexOfficeInts.`13`
+import typingsJapgolly.activexOffice.activexOfficeInts.`14`
+import typingsJapgolly.activexOffice.activexOfficeInts.`15`
+import typingsJapgolly.activexOffice.activexOfficeInts.`16`
+import typingsJapgolly.activexOffice.activexOfficeInts.`17`
+import typingsJapgolly.activexOffice.activexOfficeInts.`18`
+import typingsJapgolly.activexOffice.activexOfficeInts.`19`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1`
+import typingsJapgolly.activexOffice.activexOfficeInts.`20`
+import typingsJapgolly.activexOffice.activexOfficeInts.`21`
+import typingsJapgolly.activexOffice.activexOfficeInts.`22`
+import typingsJapgolly.activexOffice.activexOfficeInts.`23`
+import typingsJapgolly.activexOffice.activexOfficeInts.`24`
+import typingsJapgolly.activexOffice.activexOfficeInts.`25`
+import typingsJapgolly.activexOffice.activexOfficeInts.`26`
+import typingsJapgolly.activexOffice.activexOfficeInts.`27`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`3`
+import typingsJapgolly.activexOffice.activexOfficeInts.`4`
+import typingsJapgolly.activexOffice.activexOfficeInts.`5`
+import typingsJapgolly.activexOffice.activexOfficeInts.`6`
+import typingsJapgolly.activexOffice.activexOfficeInts.`7`
+import typingsJapgolly.activexOffice.activexOfficeInts.`8`
+import typingsJapgolly.activexOffice.activexOfficeInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`20`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`27`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`21`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`7`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`22`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`23`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`9`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`10`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`11`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`16`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`12`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`13`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`14`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`18`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`25`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`24`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`19`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`17`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`15`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`26`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`20`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`3`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`4`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`27`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`21`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`7`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`8`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`5`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`6`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`22`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`23`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`9`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`10`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`11`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`16`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`12`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`13`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`14`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`18`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`25`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`24`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`19`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`17`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`15`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`26`
 */
-trait MsoShapeType extends js.Object
-
+trait MsoShapeType extends StObject
 object MsoShapeType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoAutoShape: `1` = this.cast(1)
-  @scala.inline
-  def msoCallout: `2` = this.cast(2)
-  @scala.inline
-  def msoCanvas: `20` = this.cast(20)
-  @scala.inline
-  def msoChart: `3` = this.cast(3)
-  @scala.inline
-  def msoComment: `4` = this.cast(4)
-  @scala.inline
-  def msoContentApp: `27` = this.cast(27)
-  @scala.inline
-  def msoDiagram: `21` = this.cast(21)
-  @scala.inline
-  def msoEmbeddedOLEObject: `7` = this.cast(7)
-  @scala.inline
-  def msoFormControl: `8` = this.cast(8)
-  @scala.inline
-  def msoFreeform: `5` = this.cast(5)
-  @scala.inline
-  def msoGroup: `6` = this.cast(6)
-  @scala.inline
-  def msoInk: `22` = this.cast(22)
-  @scala.inline
-  def msoInkComment: `23` = this.cast(23)
-  @scala.inline
-  def msoLine: `9` = this.cast(9)
-  @scala.inline
-  def msoLinkedOLEObject: `10` = this.cast(10)
-  @scala.inline
-  def msoLinkedPicture: `11` = this.cast(11)
-  @scala.inline
-  def msoMedia: `16` = this.cast(16)
-  @scala.inline
-  def msoOLEControlObject: `12` = this.cast(12)
-  @scala.inline
-  def msoPicture: `13` = this.cast(13)
-  @scala.inline
-  def msoPlaceholder: `14` = this.cast(14)
-  @scala.inline
-  def msoScriptAnchor: `18` = this.cast(18)
-  @scala.inline
-  def msoShapeTypeMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoSlicer: `25` = this.cast(25)
-  @scala.inline
-  def msoSmartArt: `24` = this.cast(24)
-  @scala.inline
-  def msoTable: `19` = this.cast(19)
-  @scala.inline
-  def msoTextBox: `17` = this.cast(17)
-  @scala.inline
-  def msoTextEffect: `15` = this.cast(15)
-  @scala.inline
-  def msoWebVideo: `26` = this.cast(26)
+  
+  inline def msoAutoShape: `1` = 1.asInstanceOf[`1`]
+  
+  inline def msoCallout: `2` = 2.asInstanceOf[`2`]
+  
+  inline def msoCanvas: `20` = 20.asInstanceOf[`20`]
+  
+  inline def msoChart: `3` = 3.asInstanceOf[`3`]
+  
+  inline def msoComment: `4` = 4.asInstanceOf[`4`]
+  
+  inline def msoContentApp: `27` = 27.asInstanceOf[`27`]
+  
+  inline def msoDiagram: `21` = 21.asInstanceOf[`21`]
+  
+  inline def msoEmbeddedOLEObject: `7` = 7.asInstanceOf[`7`]
+  
+  inline def msoFormControl: `8` = 8.asInstanceOf[`8`]
+  
+  inline def msoFreeform: `5` = 5.asInstanceOf[`5`]
+  
+  inline def msoGroup: `6` = 6.asInstanceOf[`6`]
+  
+  inline def msoInk: `22` = 22.asInstanceOf[`22`]
+  
+  inline def msoInkComment: `23` = 23.asInstanceOf[`23`]
+  
+  inline def msoLine: `9` = 9.asInstanceOf[`9`]
+  
+  inline def msoLinkedOLEObject: `10` = 10.asInstanceOf[`10`]
+  
+  inline def msoLinkedPicture: `11` = 11.asInstanceOf[`11`]
+  
+  inline def msoMedia: `16` = 16.asInstanceOf[`16`]
+  
+  inline def msoOLEControlObject: `12` = 12.asInstanceOf[`12`]
+  
+  inline def msoPicture: `13` = 13.asInstanceOf[`13`]
+  
+  inline def msoPlaceholder: `14` = 14.asInstanceOf[`14`]
+  
+  inline def msoScriptAnchor: `18` = 18.asInstanceOf[`18`]
+  
+  inline def msoShapeTypeMixed: `-2` = -2.asInstanceOf[`-2`]
+  
+  inline def msoSlicer: `25` = 25.asInstanceOf[`25`]
+  
+  inline def msoSmartArt: `24` = 24.asInstanceOf[`24`]
+  
+  inline def msoTable: `19` = 19.asInstanceOf[`19`]
+  
+  inline def msoTextBox: `17` = 17.asInstanceOf[`17`]
+  
+  inline def msoTextEffect: `15` = 15.asInstanceOf[`15`]
+  
+  inline def msoWebVideo: `26` = 26.asInstanceOf[`26`]
 }
-

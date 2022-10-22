@@ -1,34 +1,48 @@
 package typingsJapgolly.anydbSql.mod
 
-import typingsJapgolly.anydbSql.AnonColumn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColumnDefinition extends js.Object {
+trait ColumnDefinition extends StObject {
+  
   var dataType: js.UndefOr[String] = js.undefined
+  
   var notNull: js.UndefOr[Boolean] = js.undefined
+  
   var primaryKey: js.UndefOr[Boolean] = js.undefined
-  var references: js.UndefOr[AnonColumn] = js.undefined
+  
+  var references: js.UndefOr[typingsJapgolly.anydbSql.anon.Column] = js.undefined
+  
   var unique: js.UndefOr[Boolean] = js.undefined
 }
-
 object ColumnDefinition {
-  @scala.inline
-  def apply(
-    dataType: String = null,
-    notNull: js.UndefOr[Boolean] = js.undefined,
-    primaryKey: js.UndefOr[Boolean] = js.undefined,
-    references: AnonColumn = null,
-    unique: js.UndefOr[Boolean] = js.undefined
-  ): ColumnDefinition = {
+  
+  inline def apply(): ColumnDefinition = {
     val __obj = js.Dynamic.literal()
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull.asInstanceOf[js.Any])
-    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
-    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDefinition]
   }
+  
+  extension [Self <: ColumnDefinition](x: Self) {
+    
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    
+    inline def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
+    
+    inline def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
+    
+    inline def setPrimaryKey(value: Boolean): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
+    
+    inline def setReferences(value: typingsJapgolly.anydbSql.anon.Column): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    
+    inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
+    
+    inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+  }
 }
-

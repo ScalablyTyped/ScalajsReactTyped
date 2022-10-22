@@ -1,8 +1,8 @@
 package typingsJapgolly.hummusRecipe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.hummusRecipe.hummusRecipeStrings.invisible
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.hummusRecipe.hummusRecipeStrings.locked
   - typingsJapgolly.hummusRecipe.hummusRecipeStrings.togglenoview
 */
-trait CommentOptionsFlag extends js.Object
-
+trait CommentOptionsFlag extends StObject
 object CommentOptionsFlag {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def hidden: typingsJapgolly.hummusRecipe.hummusRecipeStrings.hidden = this.cast("hidden")
-  @scala.inline
-  def invisible: typingsJapgolly.hummusRecipe.hummusRecipeStrings.invisible = this.cast("invisible")
-  @scala.inline
-  def locked: typingsJapgolly.hummusRecipe.hummusRecipeStrings.locked = this.cast("locked")
-  @scala.inline
-  def norotate: typingsJapgolly.hummusRecipe.hummusRecipeStrings.norotate = this.cast("norotate")
-  @scala.inline
-  def noview: typingsJapgolly.hummusRecipe.hummusRecipeStrings.noview = this.cast("noview")
-  @scala.inline
-  def nozoom: typingsJapgolly.hummusRecipe.hummusRecipeStrings.nozoom = this.cast("nozoom")
-  @scala.inline
-  def print: typingsJapgolly.hummusRecipe.hummusRecipeStrings.print = this.cast("print")
-  @scala.inline
-  def readonly: typingsJapgolly.hummusRecipe.hummusRecipeStrings.readonly = this.cast("readonly")
-  @scala.inline
-  def togglenoview: typingsJapgolly.hummusRecipe.hummusRecipeStrings.togglenoview = this.cast("togglenoview")
+  
+  inline def hidden: typingsJapgolly.hummusRecipe.hummusRecipeStrings.hidden = "hidden".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.hidden]
+  
+  inline def invisible: typingsJapgolly.hummusRecipe.hummusRecipeStrings.invisible = "invisible".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.invisible]
+  
+  inline def locked: typingsJapgolly.hummusRecipe.hummusRecipeStrings.locked = "locked".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.locked]
+  
+  inline def norotate: typingsJapgolly.hummusRecipe.hummusRecipeStrings.norotate = "norotate".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.norotate]
+  
+  inline def noview: typingsJapgolly.hummusRecipe.hummusRecipeStrings.noview = "noview".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.noview]
+  
+  inline def nozoom: typingsJapgolly.hummusRecipe.hummusRecipeStrings.nozoom = "nozoom".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.nozoom]
+  
+  inline def print: typingsJapgolly.hummusRecipe.hummusRecipeStrings.print = "print".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.print]
+  
+  inline def readonly: typingsJapgolly.hummusRecipe.hummusRecipeStrings.readonly = "readonly".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.readonly]
+  
+  inline def togglenoview: typingsJapgolly.hummusRecipe.hummusRecipeStrings.togglenoview = "togglenoview".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.togglenoview]
 }
-

@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The bean implementation of a Feedback, which contains properties common to all feedback, such as
@@ -20,18 +20,23 @@ import scala.scalajs.js.annotation._
   *       .addLink("http://wikipedia.com/osmosis");
   *     textItem.setFeedbackForIncorrect(feedback);
   */
-trait QuizFeedback extends js.Object {
+trait QuizFeedback extends StObject {
+  
   def getLinkUrls(): js.Array[String]
+  
   def getText(): String
 }
-
 object QuizFeedback {
-  @scala.inline
-  def apply(getLinkUrls: CallbackTo[js.Array[String]], getText: CallbackTo[String]): QuizFeedback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLinkUrls")(getLinkUrls.toJsFn)
-    __obj.updateDynamic("getText")(getText.toJsFn)
+  
+  inline def apply(getLinkUrls: CallbackTo[js.Array[String]], getText: CallbackTo[String]): QuizFeedback = {
+    val __obj = js.Dynamic.literal(getLinkUrls = getLinkUrls.toJsFn, getText = getText.toJsFn)
     __obj.asInstanceOf[QuizFeedback]
   }
+  
+  extension [Self <: QuizFeedback](x: Self) {
+    
+    inline def setGetLinkUrls(value: CallbackTo[js.Array[String]]): Self = StObject.set(x, "getLinkUrls", value.toJsFn)
+    
+    inline def setGetText(value: CallbackTo[String]): Self = StObject.set(x, "getText", value.toJsFn)
+  }
 }
-

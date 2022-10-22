@@ -1,12 +1,16 @@
-package typingsJapgolly.reactTouch
+package typingsJapgolly.reactTouch.mod
 
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactTouch.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type DraggableCallback = js.Function1[
-    /* argument */ typingsJapgolly.reactTouch.mod.DraggableCallbackArgument, 
-    japgolly.scalajs.react.raw.React.Element
-  ]
-}
+
+inline def defineHold(): HoldableConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("defineHold")().asInstanceOf[HoldableConfig]
+inline def defineHold(config: HoldConfig): HoldableConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("defineHold")(config.asInstanceOf[js.Any]).asInstanceOf[HoldableConfig]
+
+inline def defineSwipe(): SwipeableConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("defineSwipe")().asInstanceOf[SwipeableConfig]
+inline def defineSwipe(config: SwipeConfig): SwipeableConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("defineSwipe")(config.asInstanceOf[js.Any]).asInstanceOf[SwipeableConfig]
+
+type DraggableCallback = js.Function1[/* argument */ DraggableCallbackArgument, Element]

@@ -1,33 +1,48 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileManagerMessagesDialogsMoveConfirm extends js.Object {
+trait FileManagerMessagesDialogsMoveConfirm extends StObject {
+  
   var cancel: js.UndefOr[String] = js.undefined
+  
   var close: js.UndefOr[String] = js.undefined
+  
   var content: js.UndefOr[String] = js.undefined
+  
   var okText: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
 }
-
 object FileManagerMessagesDialogsMoveConfirm {
-  @scala.inline
-  def apply(
-    cancel: String = null,
-    close: String = null,
-    content: String = null,
-    okText: String = null,
-    title: String = null
-  ): FileManagerMessagesDialogsMoveConfirm = {
+  
+  inline def apply(): FileManagerMessagesDialogsMoveConfirm = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileManagerMessagesDialogsMoveConfirm]
   }
+  
+  extension [Self <: FileManagerMessagesDialogsMoveConfirm](x: Self) {
+    
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+    
+    inline def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

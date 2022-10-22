@@ -1,8 +1,8 @@
 package typingsJapgolly.overlayscrollbars.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.begin
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.center
   - typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.nearest
 */
-trait BlockBehavior extends js.Object
-
+trait BlockBehavior extends StObject
 object BlockBehavior {
-  @scala.inline
-  def begin: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.begin = this.cast("begin")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def center: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.center = this.cast("center")
-  @scala.inline
-  def end: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.end = this.cast("end")
-  @scala.inline
-  def nearest: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.nearest = this.cast("nearest")
+  
+  inline def begin: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.begin = "begin".asInstanceOf[typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.begin]
+  
+  inline def center: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.center = "center".asInstanceOf[typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.center]
+  
+  inline def end: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.end = "end".asInstanceOf[typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.end]
+  
+  inline def nearest: typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.nearest = "nearest".asInstanceOf[typingsJapgolly.overlayscrollbars.overlayscrollbarsStrings.nearest]
 }
-

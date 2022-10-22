@@ -1,18 +1,26 @@
 package typingsJapgolly.blueprintjsCore.mod
 
+import typingsJapgolly.blueprintjsCore.libEsmComponentsDividerDividerMod.IDividerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Divider")
 @js.native
-class Divider ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.Divider
-
-/* static members */
-@JSImport("@blueprintjs/core", "Divider")
-@js.native
-object Divider extends js.Object {
-  var displayName: String = js.native
+open class Divider protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.Divider {
+  def this(props: IDividerProps) = this()
+  def this(props: IDividerProps, context: Any) = this()
 }
-
+/* static members */
+object Divider {
+  
+  @JSImport("@blueprintjs/core", "Divider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "Divider.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

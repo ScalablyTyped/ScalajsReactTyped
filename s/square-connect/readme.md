@@ -1,7 +1,7 @@
 
 # Scala.js typings for square-connect
 
-Typings are for version 2.20190814
+Typings are for version 4.20201028
 
 ## Library description:
 JavaScript client library for the Square Connect v2 API
@@ -10,15 +10,13 @@ JavaScript client library for the Square Connect v2 API
 | ------------------ | :-------------: |
 | Full name          | square-connect |
 | Keywords           | square, connect, v1, v2, api, payments |
-| # releases         | 34 |
-| # dependents       | 2 |
-| # downloads        | 177381 |
-| # stars            | 1 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 22796.0 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://docs.connect.squareup.com/)
-- [Bugs](https://github.com/square/connect-javascript-sdk/issues)
-- [Repository](https://github.com/square/connect-javascript-sdk)
 - [Npm](https://www.npmjs.com/package/square-connect)
     
 

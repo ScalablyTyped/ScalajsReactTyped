@@ -1,29 +1,24 @@
 package typingsJapgolly.reactImageCrop
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactImageCropStrings {
-  @js.native
-  sealed trait Percentsign extends js.Object
   
   @js.native
-  sealed trait anonymous extends js.Object
+  sealed trait Percentsign extends StObject
+  inline def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
   
   @js.native
-  sealed trait px extends js.Object
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
-  sealed trait `use-credentials` extends js.Object
+  sealed trait px extends StObject
+  inline def px: px = "px".asInstanceOf[px]
   
-  @scala.inline
-  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
-  @scala.inline
-  def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
-  @scala.inline
-  def px: px = "px".asInstanceOf[px]
-  @scala.inline
-  def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
 }
-

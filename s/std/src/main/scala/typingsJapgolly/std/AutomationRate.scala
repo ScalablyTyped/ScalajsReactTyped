@@ -1,21 +1,17 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.`a-rate`
   - typingsJapgolly.std.stdStrings.`k-rate`
 */
-trait AutomationRate extends js.Object
-
+trait AutomationRate extends StObject
 object AutomationRate {
-  @scala.inline
-  def `a-rate`: typingsJapgolly.std.stdStrings.`a-rate` = this.cast("a-rate")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `k-rate`: typingsJapgolly.std.stdStrings.`k-rate` = this.cast("k-rate")
+  
+  inline def `a-rate`: typingsJapgolly.std.stdStrings.`a-rate` = "a-rate".asInstanceOf[typingsJapgolly.std.stdStrings.`a-rate`]
+  
+  inline def `k-rate`: typingsJapgolly.std.stdStrings.`k-rate` = "k-rate".asInstanceOf[typingsJapgolly.std.stdStrings.`k-rate`]
 }
-

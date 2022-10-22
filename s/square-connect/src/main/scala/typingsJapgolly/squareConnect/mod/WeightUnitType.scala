@@ -1,8 +1,8 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.squareConnect.squareConnectStrings.IMPERIAL_WEIGHT_OUNCE
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.squareConnect.squareConnectStrings.METRIC_GRAM
   - typingsJapgolly.squareConnect.squareConnectStrings.METRIC_KILOGRAM
 */
-trait WeightUnitType extends js.Object
-
+trait WeightUnitType extends StObject
 object WeightUnitType {
-  @scala.inline
-  def IMPERIAL_POUND: typingsJapgolly.squareConnect.squareConnectStrings.IMPERIAL_POUND = this.cast("IMPERIAL_POUND")
-  @scala.inline
-  def IMPERIAL_STONE: typingsJapgolly.squareConnect.squareConnectStrings.IMPERIAL_STONE = this.cast("IMPERIAL_STONE")
-  @scala.inline
-  def IMPERIAL_WEIGHT_OUNCE: typingsJapgolly.squareConnect.squareConnectStrings.IMPERIAL_WEIGHT_OUNCE = this.cast("IMPERIAL_WEIGHT_OUNCE")
-  @scala.inline
-  def METRIC_GRAM: typingsJapgolly.squareConnect.squareConnectStrings.METRIC_GRAM = this.cast("METRIC_GRAM")
-  @scala.inline
-  def METRIC_KILOGRAM: typingsJapgolly.squareConnect.squareConnectStrings.METRIC_KILOGRAM = this.cast("METRIC_KILOGRAM")
-  @scala.inline
-  def METRIC_MILLIGRAM: typingsJapgolly.squareConnect.squareConnectStrings.METRIC_MILLIGRAM = this.cast("METRIC_MILLIGRAM")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def IMPERIAL_POUND: typingsJapgolly.squareConnect.squareConnectStrings.IMPERIAL_POUND = "IMPERIAL_POUND".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IMPERIAL_POUND]
+  
+  inline def IMPERIAL_STONE: typingsJapgolly.squareConnect.squareConnectStrings.IMPERIAL_STONE = "IMPERIAL_STONE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IMPERIAL_STONE]
+  
+  inline def IMPERIAL_WEIGHT_OUNCE: typingsJapgolly.squareConnect.squareConnectStrings.IMPERIAL_WEIGHT_OUNCE = "IMPERIAL_WEIGHT_OUNCE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IMPERIAL_WEIGHT_OUNCE]
+  
+  inline def METRIC_GRAM: typingsJapgolly.squareConnect.squareConnectStrings.METRIC_GRAM = "METRIC_GRAM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.METRIC_GRAM]
+  
+  inline def METRIC_KILOGRAM: typingsJapgolly.squareConnect.squareConnectStrings.METRIC_KILOGRAM = "METRIC_KILOGRAM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.METRIC_KILOGRAM]
+  
+  inline def METRIC_MILLIGRAM: typingsJapgolly.squareConnect.squareConnectStrings.METRIC_MILLIGRAM = "METRIC_MILLIGRAM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.METRIC_MILLIGRAM]
 }
-

@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PosPrinterAlignment extends js.Object
-
+sealed trait PosPrinterAlignment extends StObject
 /** Describes the possible horizontal alignments of the text that a point-of-service printer prints on the page. */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterAlignment")
 @js.native
-object PosPrinterAlignment extends js.Object {
+object PosPrinterAlignment extends StObject {
+  
   /** Text is centered. */
   @js.native
-  sealed trait center extends PosPrinterAlignment
+  sealed trait center
+    extends StObject
+       with PosPrinterAlignment
   
   /** Text is left-aligned. */
   @js.native
-  sealed trait left extends PosPrinterAlignment
+  sealed trait left
+    extends StObject
+       with PosPrinterAlignment
   
   /** Text is right-aligned. */
   @js.native
-  sealed trait right extends PosPrinterAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PosPrinterAlignment with Double] = js.native
-  /* 1 */ @js.native
-  object center extends TopLevel[center with Double]
-  
-  /* 0 */ @js.native
-  object left extends TopLevel[left with Double]
-  
-  /* 2 */ @js.native
-  object right extends TopLevel[right with Double]
-  
+  sealed trait right
+    extends StObject
+       with PosPrinterAlignment
 }
-

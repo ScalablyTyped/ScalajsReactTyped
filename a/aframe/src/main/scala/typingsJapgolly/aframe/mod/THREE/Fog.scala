@@ -1,13 +1,14 @@
 package typingsJapgolly.aframe.mod.THREE
 
+import typingsJapgolly.three.srcUtilsMod.ColorRepresentation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.Fog")
 @js.native
-class Fog protected ()
+open class Fog protected ()
   extends typingsJapgolly.three.mod.Fog {
-  def this(hex: Double) = this()
+  def this(color: ColorRepresentation) = this()
 }
-

@@ -1,79 +1,38 @@
 package typingsJapgolly.mimicFn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mimic-fn", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function mimicFn<
-  //	ArgumentsType extends unknown[],
-  //	ReturnType,
-  //	FunctionType extends (...arguments: ArgumentsType) => ReturnType
-  // >(
-  //	to: (...arguments: ArgumentsType) => ReturnType,
-  //	from: FunctionType
-  // ): FunctionType;
-  // export = mimicFn;
-  @JSName("default")
-  var default_Original: AnonCall = js.native
-  /**
-  	Make a function mimic another one. It will copy over the properties `name`, `length`, `displayName`, and any custom properties you may have set.
-  	@param to - Mimicking function.
-  	@param from - Function to mimic.
-  	@returns The modified `to` function.
-  	@example
-  	```
-  	import mimicFn = require('mimic-fn');
-  	function foo() {}
-  	foo.unicorn = '🦄';
-  	function wrapper() {
-  		return foo();
-  	}
-  	console.log(wrapper.name);
-  	//=> 'wrapper'
-  	mimicFn(wrapper, foo);
-  	console.log(wrapper.name);
-  	//=> 'foo'
-  	console.log(wrapper.unicorn);
-  	//=> '🦄'
-  	```
-  	*/
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType, FunctionType /* <: js.Function1[/* arguments */ ArgumentsType, ReturnType] */](to: js.Function1[/* arguments */ ArgumentsType, ReturnType], from: FunctionType): FunctionType = js.native
-  /**
-  	Make a function mimic another one. It will copy over the properties `name`, `length`, `displayName`, and any custom properties you may have set.
-  	@param to - Mimicking function.
-  	@param from - Function to mimic.
-  	@returns The modified `to` function.
-  	@example
-  	```
-  	import mimicFn = require('mimic-fn');
-  	function foo() {}
-  	foo.unicorn = '🦄';
-  	function wrapper() {
-  		return foo();
-  	}
-  	console.log(wrapper.name);
-  	//=> 'wrapper'
-  	mimicFn(wrapper, foo);
-  	console.log(wrapper.name);
-  	//=> 'foo'
-  	console.log(wrapper.unicorn);
-  	//=> '🦄'
-  	```
-  	*/
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function mimicFn<
-  //	ArgumentsType extends unknown[],
-  //	ReturnType,
-  //	FunctionType extends (...arguments: ArgumentsType) => ReturnType
-  // >(
-  //	to: (...arguments: ArgumentsType) => ReturnType,
-  //	from: FunctionType
-  // ): FunctionType;
-  // export = mimicFn;
-  def default[ArgumentsType /* <: js.Array[_] */, ReturnType, FunctionType /* <: js.Function1[/* arguments */ ArgumentsType, ReturnType] */](to: js.Function1[/* arguments */ ArgumentsType, ReturnType], from: FunctionType): FunctionType = js.native
+object mod {
+  
+  @JSImport("mimic-fn", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[ArgumentsType /* <: js.Array[Any] */, ReturnType, FunctionType /* <: js.Function1[/* arguments */ ArgumentsType, ReturnType] */](to: js.Function1[/* arguments */ ArgumentsType, ReturnType], from: FunctionType): FunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[FunctionType]
+  inline def default[ArgumentsType /* <: js.Array[Any] */, ReturnType, FunctionType /* <: js.Function1[/* arguments */ ArgumentsType, ReturnType] */](to: js.Function1[/* arguments */ ArgumentsType, ReturnType], from: FunctionType, options: Options): FunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionType]
+  
+  trait Options extends StObject {
+    
+    /**
+    	Skip modifying [non-configurable properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor#Description) instead of throwing an error.
+    	@default false
+    	*/
+    val ignoreNonConfigurable: js.UndefOr[Boolean] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setIgnoreNonConfigurable(value: Boolean): Self = StObject.set(x, "ignoreNonConfigurable", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreNonConfigurableUndefined: Self = StObject.set(x, "ignoreNonConfigurable", js.undefined)
+    }
+  }
 }
-

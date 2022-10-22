@@ -1,19 +1,24 @@
 package typingsJapgolly.datatablesNetButtons.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LanguageSettings extends js.Object {
+trait LanguageSettings extends StObject {
+  
   var buttons: js.UndefOr[js.Object] = js.undefined
 }
-
 object LanguageSettings {
-  @scala.inline
-  def apply(buttons: js.Object = null): LanguageSettings = {
+  
+  inline def apply(): LanguageSettings = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageSettings]
   }
+  
+  extension [Self <: LanguageSettings](x: Self) {
+    
+    inline def setButtons(value: js.Object): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+  }
 }
-

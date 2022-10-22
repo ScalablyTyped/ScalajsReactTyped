@@ -1,81 +1,93 @@
 package typingsJapgolly.asana.mod
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asana", "errors")
-@js.native
-object errors extends js.Object {
+object errors {
+  
+  @JSImport("asana", "errors.AsanaError")
   @js.native
-  class AsanaError protected () extends Error {
+  open class AsanaError protected ()
+    extends StObject
+       with Error {
     /**
       * @param message
       * @return
       */
-    def this(message: js.Any) = this()
+    def this(message: Any) = this()
+    
     var code: Double = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
-    var value: js.Any = js.native
+    var name: String = js.native
+    
+    var value: Any = js.native
   }
   
+  @JSImport("asana", "errors.Forbidden")
   @js.native
-  class Forbidden protected () extends AsanaError {
+  open class Forbidden protected () extends AsanaError {
     /**
       * @param value
       * @return
       */
-    def this(value: js.Any) = this()
+    def this(value: Any) = this()
   }
   
+  @JSImport("asana", "errors.InvalidRequest")
   @js.native
-  class InvalidRequest protected () extends AsanaError {
+  open class InvalidRequest protected () extends AsanaError {
     /**
       * @param value
       * @return
       */
-    def this(value: js.Any) = this()
+    def this(value: Any) = this()
   }
   
+  @JSImport("asana", "errors.NoAuthorization")
   @js.native
-  class NoAuthorization protected () extends AsanaError {
+  open class NoAuthorization protected () extends AsanaError {
     /**
       * @param value
       * @return
       */
-    def this(value: js.Any) = this()
+    def this(value: Any) = this()
   }
   
+  @JSImport("asana", "errors.NotFound")
   @js.native
-  class NotFound protected () extends AsanaError {
+  open class NotFound protected () extends AsanaError {
     /**
       * @param value
       * @return
       */
-    def this(value: js.Any) = this()
+    def this(value: Any) = this()
   }
   
+  @JSImport("asana", "errors.RateLimitEnforced")
   @js.native
-  class RateLimitEnforced protected () extends AsanaError {
+  open class RateLimitEnforced protected () extends AsanaError {
     /**
       * @param value
       * @return
       */
-    def this(value: js.Any) = this()
+    def this(value: Any) = this()
   }
   
+  @JSImport("asana", "errors.ServerError")
   @js.native
-  class ServerError protected () extends AsanaError {
+  open class ServerError protected () extends AsanaError {
     /**
       * @param value
       * @return
       */
-    def this(value: js.Any) = this()
+    def this(value: Any) = this()
   }
-  
 }
-

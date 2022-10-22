@@ -1,9 +1,8 @@
-package typingsJapgolly.kineticjs
+package typingsJapgolly.kineticjs.Kinetic
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Kinetic {
-  type IGroup = typingsJapgolly.kineticjs.Kinetic.IContainer
-}
+
+type IGroup = IContainer

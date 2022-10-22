@@ -1,26 +1,35 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Search
 
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISearchPaneQueryLinguisticDetails extends js.Object {
+trait ISearchPaneQueryLinguisticDetails extends StObject {
+  
   var queryTextAlternatives: IVectorView[String]
+  
   var queryTextCompositionLength: Double
+  
   var queryTextCompositionStart: Double
 }
-
 object ISearchPaneQueryLinguisticDetails {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     queryTextAlternatives: IVectorView[String],
     queryTextCompositionLength: Double,
     queryTextCompositionStart: Double
   ): ISearchPaneQueryLinguisticDetails = {
     val __obj = js.Dynamic.literal(queryTextAlternatives = queryTextAlternatives.asInstanceOf[js.Any], queryTextCompositionLength = queryTextCompositionLength.asInstanceOf[js.Any], queryTextCompositionStart = queryTextCompositionStart.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ISearchPaneQueryLinguisticDetails]
   }
+  
+  extension [Self <: ISearchPaneQueryLinguisticDetails](x: Self) {
+    
+    inline def setQueryTextAlternatives(value: IVectorView[String]): Self = StObject.set(x, "queryTextAlternatives", value.asInstanceOf[js.Any])
+    
+    inline def setQueryTextCompositionLength(value: Double): Self = StObject.set(x, "queryTextCompositionLength", value.asInstanceOf[js.Any])
+    
+    inline def setQueryTextCompositionStart(value: Double): Self = StObject.set(x, "queryTextCompositionStart", value.asInstanceOf[js.Any])
+  }
 }
-

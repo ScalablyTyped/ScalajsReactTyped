@@ -1,7 +1,7 @@
 
 # Scala.js typings for num-sort
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Sort an array of numbers
@@ -11,9 +11,9 @@ Sort an array of numbers
 | Full name          | num-sort |
 | Keywords           | sort, sorter, compare, comparator, number, numbers, order, asc, ascending, desc, descending |
 | # releases         | 2 |
-| # dependents       | 17 |
-| # downloads        | 104445 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 20007.666666666668 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/num-sort#readme)

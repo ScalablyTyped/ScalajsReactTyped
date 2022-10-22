@@ -10,15 +10,12 @@ Scale of Cartesian Coordinates
 | ------------------ | :-------------: |
 | Full name          | recharts-scale |
 | Keywords           | Scale, Cartesian Coordinates |
-| # releases         | 4 |
-| # dependents       | 33 |
-| # downloads        | 10267286 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3973509.6666666665 |
+| # stars            | 3.0 |
 
 ## Links
-- [Homepage](https://github.com/recharts/recharts-scale)
-- [Bugs](https://github.com/recharts/recharts-scale/issues)
-- [Repository](https://github.com/recharts/recharts-scale)
 - [Npm](https://www.npmjs.com/package/recharts-scale)
     
 

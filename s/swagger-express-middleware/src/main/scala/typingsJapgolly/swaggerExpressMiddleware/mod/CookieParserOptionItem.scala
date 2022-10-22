@@ -1,14 +1,16 @@
 package typingsJapgolly.swaggerExpressMiddleware.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CookieParserOptionItem extends js.Object {
+trait CookieParserOptionItem extends StObject {
+  
   /**
     *  an object that is passed to cookie.parse as the second option
     */
-  var options: js.UndefOr[js.Any] = js.undefined
+  var options: js.UndefOr[Any] = js.undefined
+  
   /**
     * A string or array used for signing cookies.
     * This is optional and if not specified, will not parse signed cookies.
@@ -17,14 +19,23 @@ trait CookieParserOptionItem extends js.Object {
     */
   var secret: js.UndefOr[String | js.Array[String]] = js.undefined
 }
-
 object CookieParserOptionItem {
-  @scala.inline
-  def apply(options: js.Any = null, secret: String | js.Array[String] = null): CookieParserOptionItem = {
+  
+  inline def apply(): CookieParserOptionItem = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieParserOptionItem]
   }
+  
+  extension [Self <: CookieParserOptionItem](x: Self) {
+    
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setSecret(value: String | js.Array[String]): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    
+    inline def setSecretVarargs(value: String*): Self = StObject.set(x, "secret", js.Array(value*))
+  }
 }
-

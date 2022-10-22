@@ -1,7 +1,7 @@
 
 # Scala.js typings for stylelint-webpack-plugin
 
-Typings are for version 0.1
+Typings are for version 3.3.0
 
 ## Library description:
 A Stylelint plugin for webpack
@@ -10,10 +10,10 @@ A Stylelint plugin for webpack
 | ------------------ | :-------------: |
 | Full name          | stylelint-webpack-plugin |
 | Keywords           | stylelint, lint, linter, plugin, webpack |
-| # releases         | 13 |
-| # dependents       | 175 |
-| # downloads        | 4650735 |
-| # stars            | 6 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 1327673.0 |
+| # stars            | 422.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack-contrib/stylelint-webpack-plugin)
@@ -24,7 +24,7 @@ A Stylelint plugin for webpack
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -6,26 +6,25 @@ import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.IFileActivatedE
 import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrt.Windows.Storage.IStorageItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.WebUI.WebUIFileActivatedEventArgs")
-@js.native
-class WebUIFileActivatedEventArgs ()
-  extends IFileActivatedEventArgs
-     with IActivatedEventArgsDeferral {
-  /* CompleteClass */
-  override var activatedOperation: ActivatedOperation = js.native
-  /* CompleteClass */
-  override var files: IVectorView[IStorageItem] = js.native
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
-  /* CompleteClass */
-  override var verb: String = js.native
+trait WebUIFileActivatedEventArgs
+  extends StObject
+     with IFileActivatedEventArgs
+     with IActivatedEventArgsDeferral
+object WebUIFileActivatedEventArgs {
+  
+  inline def apply(
+    activatedOperation: ActivatedOperation,
+    files: IVectorView[IStorageItem],
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen,
+    verb: String
+  ): WebUIFileActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], verb = verb.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebUIFileActivatedEventArgs]
+  }
 }
-

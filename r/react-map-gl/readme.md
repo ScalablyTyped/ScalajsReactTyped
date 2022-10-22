@@ -1,24 +1,24 @@
 
 # Scala.js typings for react-map-gl
 
-Typings are for version 5.2
+Typings are for version 6.1
 
 ## Library description:
-A React wrapper for MapboxGL-js and overlay API.
+React components for Mapbox GL JS-compatible libraries
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-map-gl |
 | Keywords           | mapbox, mapbox-gl, react, react-mapbox-gl, react mapbox |
-| # releases         | 91 |
-| # dependents       | 56 |
-| # downloads        | 2021384 |
-| # stars            | 3 |
+| # releases         | 77 |
+| # dependents       | 0.0 |
+| # downloads        | 835781.0 |
+| # stars            | 6695.0 |
 
 ## Links
-- [Homepage](https://github.com/uber/react-map-gl#readme)
-- [Bugs](https://github.com/uber/react-map-gl/issues)
-- [Repository](https://github.com/uber/react-map-gl)
+- [Homepage](https://github.com/visgl/react-map-gl#readme)
+- [Bugs](https://github.com/visgl/react-map-gl/issues)
+- [Repository](https://github.com/visgl/react-map-gl)
 - [Npm](https://www.npmjs.com/package/react-map-gl)
     
 

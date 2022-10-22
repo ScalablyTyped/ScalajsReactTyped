@@ -1,20 +1,16 @@
 package typingsJapgolly.twoJs.mod
 
-import typingsJapgolly.std.ArrayConstructor
-import typingsJapgolly.std.Float32ArrayConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("two.js", JSImport.Namespace)
 @js.native
-class ^ () extends Two {
+open class ^ ()
+  extends StObject
+     with Two {
   def this(params: ConstructorParams) = this()
 }
-
 @JSImport("two.js", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  var Array: Float32ArrayConstructor | ArrayConstructor = js.native
-}
-
+object ^ extends StObject

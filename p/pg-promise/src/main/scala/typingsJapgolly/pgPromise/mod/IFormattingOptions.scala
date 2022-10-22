@@ -1,27 +1,36 @@
 package typingsJapgolly.pgPromise.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IFormattingOptions extends js.Object {
+trait IFormattingOptions extends StObject {
+  
   var capSQL: js.UndefOr[Boolean] = js.undefined
-  var `def`: js.UndefOr[js.Any] = js.undefined
+  
+  var `def`: js.UndefOr[Any] = js.undefined
+  
   var partial: js.UndefOr[Boolean] = js.undefined
 }
-
 object IFormattingOptions {
-  @scala.inline
-  def apply(
-    capSQL: js.UndefOr[Boolean] = js.undefined,
-    `def`: js.Any = null,
-    partial: js.UndefOr[Boolean] = js.undefined
-  ): IFormattingOptions = {
+  
+  inline def apply(): IFormattingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(capSQL)) __obj.updateDynamic("capSQL")(capSQL.asInstanceOf[js.Any])
-    if (`def` != null) __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFormattingOptions]
   }
+  
+  extension [Self <: IFormattingOptions](x: Self) {
+    
+    inline def setCapSQL(value: Boolean): Self = StObject.set(x, "capSQL", value.asInstanceOf[js.Any])
+    
+    inline def setCapSQLUndefined: Self = StObject.set(x, "capSQL", js.undefined)
+    
+    inline def setDef(value: Any): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
+    
+    inline def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
+    
+    inline def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+    
+    inline def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
+  }
 }
-

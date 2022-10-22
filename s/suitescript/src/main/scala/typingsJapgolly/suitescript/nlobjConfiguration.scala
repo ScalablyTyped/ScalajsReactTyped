@@ -1,9 +1,9 @@
 package typingsJapgolly.suitescript
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjConfiguration..
@@ -16,11 +16,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait nlobjConfiguration
-  extends /**
+  extends StObject
+     with /**
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
+  
   /**
     * return an Array of all field names on the record.
     * @return {string[]}
@@ -31,6 +33,7 @@ Instantiable0[js.Any] {
     * @since 2009.2
     */
   def getAllFields(): js.Array[String] = js.native
+  
   /**
     * return field metadata for field.
     *
@@ -45,6 +48,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getField(fldnam: String): js.Function0[Unit] = js.native
+  
   /**
     * return the text value of a field.
     * @restriction only supported for select fields
@@ -60,6 +64,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getFieldText(name: String): String = js.native
+  
   /**
     * return the selected text values of a multi-select field as an Array.
     * @param {string} name field name
@@ -72,6 +77,7 @@ Instantiable0[js.Any] {
     * @param name
     */
   def getFieldTexts(name: String): Unit = js.native
+  
   /**
     * return the value of a field.
     *
@@ -86,6 +92,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getFieldValue(name: String): String = js.native
+  
   /**
     * return the selected values of a multi-select field as an Array.
     * @restriction only supported for multi-select fields
@@ -100,6 +107,7 @@ Instantiable0[js.Any] {
     * @param name
     */
   def getFieldValues(name: String): js.Array[String] = js.native
+  
   /**
     * return the type corresponding to this setup record.
     *
@@ -112,6 +120,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getType(): String = js.native
+  
   /**
     * set the value (via display value) of a field.
     * @restriction only supported for select fields
@@ -128,7 +137,8 @@ Instantiable0[js.Any] {
     * @param text
     * @return
     */
-  def setFieldText(name: String, text: String): js.Any = js.native
+  def setFieldText(name: String, text: String): Any = js.native
+  
   /**
     * set the values (via display values) of a multi-select field.
     * @restriction only supported for multi-select fields
@@ -145,7 +155,8 @@ Instantiable0[js.Any] {
     * @param texts
     * @return
     */
-  def setFieldTexts(name: String, texts: js.Any): js.Any = js.native
+  def setFieldTexts(name: String, texts: Any): Any = js.native
+  
   /**
     * set the value of a field.
     *
@@ -161,7 +172,8 @@ Instantiable0[js.Any] {
     * @param value
     * @return
     */
-  def setFieldValue(name: String, value: String): js.Any = js.native
+  def setFieldValue(name: String, value: String): Any = js.native
+  
   /**
     * Set the values of a multi-select field.
     * @restriction only supported for multi-select fields
@@ -178,6 +190,5 @@ Instantiable0[js.Any] {
     * @param value
     * @return
     */
-  def setFieldValues(name: String, value: js.Any): js.Any = js.native
+  def setFieldValues(name: String, value: Any): Any = js.native
 }
-

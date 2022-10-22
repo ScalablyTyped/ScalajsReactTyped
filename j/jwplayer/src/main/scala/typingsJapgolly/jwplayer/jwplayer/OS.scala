@@ -1,25 +1,33 @@
 package typingsJapgolly.jwplayer.jwplayer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OS extends js.Object {
+trait OS extends StObject {
+  
   var android: Boolean
+  
   var androidNative: Boolean
-     // Android native browser
+  
+  // Android native browser
   var iOS: Boolean
+  
   var iPad: Boolean
+  
   var iPhone: Boolean
+  
   var mac: Boolean
+  
   var mobile: Boolean
+  
   var version: Version
+  
   var windows: Boolean
 }
-
 object OS {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     android: Boolean,
     androidNative: Boolean,
     iOS: Boolean,
@@ -31,8 +39,27 @@ object OS {
     windows: Boolean
   ): OS = {
     val __obj = js.Dynamic.literal(android = android.asInstanceOf[js.Any], androidNative = androidNative.asInstanceOf[js.Any], iOS = iOS.asInstanceOf[js.Any], iPad = iPad.asInstanceOf[js.Any], iPhone = iPhone.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[OS]
   }
+  
+  extension [Self <: OS](x: Self) {
+    
+    inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    
+    inline def setAndroidNative(value: Boolean): Self = StObject.set(x, "androidNative", value.asInstanceOf[js.Any])
+    
+    inline def setIOS(value: Boolean): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
+    
+    inline def setIPad(value: Boolean): Self = StObject.set(x, "iPad", value.asInstanceOf[js.Any])
+    
+    inline def setIPhone(value: Boolean): Self = StObject.set(x, "iPhone", value.asInstanceOf[js.Any])
+    
+    inline def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+    
+    inline def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+  }
 }
-

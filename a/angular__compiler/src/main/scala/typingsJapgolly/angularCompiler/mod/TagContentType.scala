@@ -1,16 +1,33 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
+sealed trait TagContentType extends StObject
 @JSImport("@angular/compiler", "TagContentType")
 @js.native
-object TagContentType extends js.Object {
-  /* 1 */ val ESCAPABLE_RAW_TEXT: typingsJapgolly.angularCompiler.tagsMod.TagContentType.ESCAPABLE_RAW_TEXT with Double = js.native
-  /* 2 */ val PARSABLE_DATA: typingsJapgolly.angularCompiler.tagsMod.TagContentType.PARSABLE_DATA with Double = js.native
-  /* 0 */ val RAW_TEXT: typingsJapgolly.angularCompiler.tagsMod.TagContentType.RAW_TEXT with Double = js.native
+object TagContentType extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.angularCompiler.tagsMod.TagContentType with Double] = js.native
+  def apply(value: Double): js.UndefOr[TagContentType & Double] = js.native
+  
+  @js.native
+  sealed trait ESCAPABLE_RAW_TEXT
+    extends StObject
+       with TagContentType
+  /* 1 */ val ESCAPABLE_RAW_TEXT: typingsJapgolly.angularCompiler.mod.TagContentType.ESCAPABLE_RAW_TEXT & Double = js.native
+  
+  @js.native
+  sealed trait PARSABLE_DATA
+    extends StObject
+       with TagContentType
+  /* 2 */ val PARSABLE_DATA: typingsJapgolly.angularCompiler.mod.TagContentType.PARSABLE_DATA & Double = js.native
+  
+  @js.native
+  sealed trait RAW_TEXT
+    extends StObject
+       with TagContentType
+  /* 0 */ val RAW_TEXT: typingsJapgolly.angularCompiler.mod.TagContentType.RAW_TEXT & Double = js.native
 }
-

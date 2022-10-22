@@ -1,17 +1,24 @@
 package typingsJapgolly.sshpk.mod
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sshpk", "InvalidAlgorithmError")
 @js.native
-class InvalidAlgorithmError protected () extends Error {
+open class InvalidAlgorithmError protected ()
+  extends StObject
+     with Error {
   def this(algo: String) = this()
+  
+  var algorithm: String = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var message: String = js.native
+  var message: String = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var name: String = js.native
+  var name: String = js.native
 }
-

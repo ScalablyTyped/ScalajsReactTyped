@@ -1,28 +1,46 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceComplianceScheduledActionForRule extends Entity {
-  // Name of the rule which this scheduled action applies to.
-  var ruleName: js.UndefOr[String] = js.undefined
-  // The list of scheduled action configurations for this compliance policy.
-  var scheduledActionConfigurations: js.UndefOr[js.Array[DeviceComplianceActionItem]] = js.undefined
+trait DeviceComplianceScheduledActionForRule
+  extends StObject
+     with Entity {
+  
+  /**
+    * Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of
+    * per rule, thus RuleName is always set to default value PasswordRequired.
+    */
+  var ruleName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  /**
+    * The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one
+    * block scheduled action.
+    */
+  var scheduledActionConfigurations: js.UndefOr[NullableOption[js.Array[DeviceComplianceActionItem]]] = js.undefined
 }
-
 object DeviceComplianceScheduledActionForRule {
-  @scala.inline
-  def apply(
-    id: String = null,
-    ruleName: String = null,
-    scheduledActionConfigurations: js.Array[DeviceComplianceActionItem] = null
-  ): DeviceComplianceScheduledActionForRule = {
+  
+  inline def apply(): DeviceComplianceScheduledActionForRule = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ruleName != null) __obj.updateDynamic("ruleName")(ruleName.asInstanceOf[js.Any])
-    if (scheduledActionConfigurations != null) __obj.updateDynamic("scheduledActionConfigurations")(scheduledActionConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceComplianceScheduledActionForRule]
   }
+  
+  extension [Self <: DeviceComplianceScheduledActionForRule](x: Self) {
+    
+    inline def setRuleName(value: NullableOption[String]): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+    
+    inline def setRuleNameNull: Self = StObject.set(x, "ruleName", null)
+    
+    inline def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
+    
+    inline def setScheduledActionConfigurations(value: NullableOption[js.Array[DeviceComplianceActionItem]]): Self = StObject.set(x, "scheduledActionConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setScheduledActionConfigurationsNull: Self = StObject.set(x, "scheduledActionConfigurations", null)
+    
+    inline def setScheduledActionConfigurationsUndefined: Self = StObject.set(x, "scheduledActionConfigurations", js.undefined)
+    
+    inline def setScheduledActionConfigurationsVarargs(value: DeviceComplianceActionItem*): Self = StObject.set(x, "scheduledActionConfigurations", js.Array(value*))
+  }
 }
-

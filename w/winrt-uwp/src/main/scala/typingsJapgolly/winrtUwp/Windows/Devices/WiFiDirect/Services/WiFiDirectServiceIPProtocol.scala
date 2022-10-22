@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.WiFiDirect.Services
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiDirectServiceIPProtocol extends js.Object
-
+sealed trait WiFiDirectServiceIPProtocol extends StObject
 /** Values that specify the IP protocol of the new port when a WiFiDirectServiceSession.RemotePortAdded event is raised. */
 @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceIPProtocol")
 @js.native
-object WiFiDirectServiceIPProtocol extends js.Object {
+object WiFiDirectServiceIPProtocol extends StObject {
+  
   /** TCP */
   @js.native
-  sealed trait tcp extends WiFiDirectServiceIPProtocol
+  sealed trait tcp
+    extends StObject
+       with WiFiDirectServiceIPProtocol
   
   /** UDP */
   @js.native
-  sealed trait udp extends WiFiDirectServiceIPProtocol
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiDirectServiceIPProtocol with Double] = js.native
-  /* 0 */ @js.native
-  object tcp extends TopLevel[tcp with Double]
-  
-  /* 1 */ @js.native
-  object udp extends TopLevel[udp with Double]
-  
+  sealed trait udp
+    extends StObject
+       with WiFiDirectServiceIPProtocol
 }
-

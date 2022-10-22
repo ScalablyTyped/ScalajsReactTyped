@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DateRangePickerMessages extends js.Object {
+trait DateRangePickerMessages extends StObject {
+  
   var endLabel: js.UndefOr[String] = js.undefined
+  
   var startLabel: js.UndefOr[String] = js.undefined
 }
-
 object DateRangePickerMessages {
-  @scala.inline
-  def apply(endLabel: String = null, startLabel: String = null): DateRangePickerMessages = {
+  
+  inline def apply(): DateRangePickerMessages = {
     val __obj = js.Dynamic.literal()
-    if (endLabel != null) __obj.updateDynamic("endLabel")(endLabel.asInstanceOf[js.Any])
-    if (startLabel != null) __obj.updateDynamic("startLabel")(startLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateRangePickerMessages]
   }
+  
+  extension [Self <: DateRangePickerMessages](x: Self) {
+    
+    inline def setEndLabel(value: String): Self = StObject.set(x, "endLabel", value.asInstanceOf[js.Any])
+    
+    inline def setEndLabelUndefined: Self = StObject.set(x, "endLabel", js.undefined)
+    
+    inline def setStartLabel(value: String): Self = StObject.set(x, "startLabel", value.asInstanceOf[js.Any])
+    
+    inline def setStartLabelUndefined: Self = StObject.set(x, "startLabel", js.undefined)
+  }
 }
-

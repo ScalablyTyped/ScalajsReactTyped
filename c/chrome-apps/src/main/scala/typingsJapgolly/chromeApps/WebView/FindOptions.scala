@@ -1,29 +1,38 @@
 package typingsJapgolly.chromeApps.WebView
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FindOptions extends js.Object {
+trait FindOptions extends StObject {
+  
   /**
     * Flag to find matches in reverse order.
     * @default false
     */
   var backward: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Flag to match with case-sensitivity.
     * @default false
     */
   var matchCase: js.UndefOr[Boolean] = js.undefined
 }
-
 object FindOptions {
-  @scala.inline
-  def apply(backward: js.UndefOr[Boolean] = js.undefined, matchCase: js.UndefOr[Boolean] = js.undefined): FindOptions = {
+  
+  inline def apply(): FindOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backward)) __obj.updateDynamic("backward")(backward.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindOptions]
   }
+  
+  extension [Self <: FindOptions](x: Self) {
+    
+    inline def setBackward(value: Boolean): Self = StObject.set(x, "backward", value.asInstanceOf[js.Any])
+    
+    inline def setBackwardUndefined: Self = StObject.set(x, "backward", js.undefined)
+    
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+    
+    inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+  }
 }
-

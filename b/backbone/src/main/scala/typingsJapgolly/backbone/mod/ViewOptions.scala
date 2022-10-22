@@ -1,45 +1,75 @@
 package typingsJapgolly.backbone.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.jquery.JQuery
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ViewOptions[TModel /* <: Model */] extends js.Object {
-  var attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+trait ViewOptions[TModel /* <: js.UndefOr[Model[Any, ModelSetOptions, Any]] */, TElement /* <: Element */] extends StObject {
+  
+  var attributes: js.UndefOr[Record[String, Any]] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
+  
   // TODO: quickfix, this can't be fixed easy. The collection does not need to have the same model as the parent view.
-  var collection: js.UndefOr[Collection[_]] = js.undefined
-   //was: Collection<TModel>;
-  var el: js.UndefOr[js.Any] = js.undefined
-  var events: js.UndefOr[EventsHash] = js.undefined
+  var collection: js.UndefOr[Collection[Any]] = js.undefined
+  
+  // was: Collection<TModel>;
+  var el: js.UndefOr[TElement | JQuery[HTMLElement] | String] = js.undefined
+  
+  var events: js.UndefOr[Result[EventsHash]] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var model: js.UndefOr[TModel] = js.undefined
+  
   var tagName: js.UndefOr[String] = js.undefined
 }
-
 object ViewOptions {
-  @scala.inline
-  def apply[TModel /* <: Model */](
-    attributes: StringDictionary[js.Any] = null,
-    className: String = null,
-    collection: Collection[_] = null,
-    el: js.Any = null,
-    events: EventsHash = null,
-    id: String = null,
-    model: TModel = null,
-    tagName: String = null
-  ): ViewOptions[TModel] = {
+  
+  inline def apply[TModel /* <: js.UndefOr[Model[Any, ModelSetOptions, Any]] */, TElement /* <: Element */](): ViewOptions[TModel, TElement] = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
-    if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ViewOptions[TModel]]
+    __obj.asInstanceOf[ViewOptions[TModel, TElement]]
+  }
+  
+  extension [Self <: ViewOptions[?, ?], TModel /* <: js.UndefOr[Model[Any, ModelSetOptions, Any]] */, TElement /* <: Element */](x: Self & (ViewOptions[TModel, TElement])) {
+    
+    inline def setAttributes(value: Record[String, Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setCollection(value: Collection[Any]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    
+    inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+    
+    inline def setEl(value: TElement | JQuery[HTMLElement] | String): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    
+    inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
+    
+    inline def setEvents(value: Result[EventsHash]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsCallbackTo(value: CallbackTo[EventsHash]): Self = StObject.set(x, "events", value.toJsFn)
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setModel(value: TModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    
+    inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    
+    inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
   }
 }
-

@@ -1,43 +1,67 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import typingsJapgolly.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpreadsheetInsertSheetOptions extends js.Object {
+trait SpreadsheetInsertSheetOptions extends StObject {
+  
   var columnWidth: js.UndefOr[Double] = js.undefined
+  
   var columns: js.UndefOr[Double] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
   var dataSource: js.UndefOr[DataSource] = js.undefined
+  
   var headerHeight: js.UndefOr[Double] = js.undefined
+  
   var headerWidth: js.UndefOr[Double] = js.undefined
+  
   var rowHeight: js.UndefOr[Double] = js.undefined
+  
   var rows: js.UndefOr[Double] = js.undefined
 }
-
 object SpreadsheetInsertSheetOptions {
-  @scala.inline
-  def apply(
-    columnWidth: Int | Double = null,
-    columns: Int | Double = null,
-    data: js.Any = null,
-    dataSource: DataSource = null,
-    headerHeight: Int | Double = null,
-    headerWidth: Int | Double = null,
-    rowHeight: Int | Double = null,
-    rows: Int | Double = null
-  ): SpreadsheetInsertSheetOptions = {
+  
+  inline def apply(): SpreadsheetInsertSheetOptions = {
     val __obj = js.Dynamic.literal()
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (headerHeight != null) __obj.updateDynamic("headerHeight")(headerHeight.asInstanceOf[js.Any])
-    if (headerWidth != null) __obj.updateDynamic("headerWidth")(headerWidth.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetInsertSheetOptions]
   }
+  
+  extension [Self <: SpreadsheetInsertSheetOptions](x: Self) {
+    
+    inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    
+    inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+    
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
+    
+    inline def setHeaderWidth(value: Double): Self = StObject.set(x, "headerWidth", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderWidthUndefined: Self = StObject.set(x, "headerWidth", js.undefined)
+    
+    inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    
+    inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+    
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+  }
 }
-

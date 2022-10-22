@@ -1,35 +1,49 @@
 package typingsJapgolly.ionic.definitionsMod
 
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.ionic.AnonReq
+import typingsJapgolly.ionic.anon.Req
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaginatorDeps[T /* <: Response[js.Array[js.Object]] */, S] extends js.Object {
+trait PaginatorDeps[T /* <: Response[js.Array[js.Object]] */, S] extends StObject {
+  
   val client: IClient
-  val max: js.UndefOr[Double] = js.undefined
-  val state: js.UndefOr[Partial[S]] = js.undefined
+  
   def guard(res: APIResponseSuccess): /* is T */ Boolean
-  def reqgen(): js.Promise[AnonReq]
+  
+  val max: js.UndefOr[Double] = js.undefined
+  
+  def reqgen(): js.Promise[Req]
+  
+  val state: js.UndefOr[Partial[S]] = js.undefined
 }
-
 object PaginatorDeps {
-  @scala.inline
-  def apply[T /* <: Response[js.Array[js.Object]] */, S](
+  
+  inline def apply[T /* <: Response[js.Array[js.Object]] */, S](
     client: IClient,
-    guard: APIResponseSuccess => CallbackTo[/* is T */ Boolean],
-    reqgen: CallbackTo[js.Promise[AnonReq]],
-    max: Int | Double = null,
-    state: Partial[S] = null
+    guard: APIResponseSuccess => /* is T */ Boolean,
+    reqgen: CallbackTo[js.Promise[Req]]
   ): PaginatorDeps[T, S] = {
-    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
-    __obj.updateDynamic("guard")(js.Any.fromFunction1((t0: typingsJapgolly.ionic.definitionsMod.APIResponseSuccess) => guard(t0).runNow()))
-    __obj.updateDynamic("reqgen")(reqgen.toJsFn)
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], guard = js.Any.fromFunction1(guard), reqgen = reqgen.toJsFn)
     __obj.asInstanceOf[PaginatorDeps[T, S]]
   }
+  
+  extension [Self <: PaginatorDeps[?, ?], T /* <: Response[js.Array[js.Object]] */, S](x: Self & (PaginatorDeps[T, S])) {
+    
+    inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    
+    inline def setGuard(value: APIResponseSuccess => /* is T */ Boolean): Self = StObject.set(x, "guard", js.Any.fromFunction1(value))
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setReqgen(value: CallbackTo[js.Promise[Req]]): Self = StObject.set(x, "reqgen", value.toJsFn)
+    
+    inline def setState(value: Partial[S]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+  }
 }
-

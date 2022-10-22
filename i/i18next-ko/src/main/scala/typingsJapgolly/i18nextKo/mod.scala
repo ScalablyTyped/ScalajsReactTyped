@@ -1,19 +1,30 @@
 package typingsJapgolly.i18nextKo
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.knockout.KnockoutComputed
-import typingsJapgolly.knockout.KnockoutStatic
+import typingsJapgolly.i18nextKo.anon.Translation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("i18next-ko", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("i18next-ko", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("i18next-ko", "i18n")
+  @js.native
   val i18n: typingsJapgolly.i18next.mod.i18n = js.native
-  def init(resourceStore: i18nextkoResourceStore, language: String, ko: KnockoutStatic): Unit = js.native
-  def setLanguage(language: String): Unit = js.native
-  def t(key: String): KnockoutComputed[String] = js.native
-  type i18nextkoResourceStore = StringDictionary[AnonTranslation]
+  
+  inline def init(
+    resourceStore: i18nextkoResourceStore,
+    language: String,
+    ko: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutStatic */ Any
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(resourceStore.asInstanceOf[js.Any], language.asInstanceOf[js.Any], ko.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setLanguage(language: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def t(key: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  type i18nextkoResourceStore = StringDictionary[Translation]
 }
-

@@ -1,28 +1,17 @@
 package typingsJapgolly.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GetPlaylistTracksOptions
-  extends PaginationOptions
-     with MarketOptions
+  extends StObject
+     with PaginationMarketOptions
      with FieldsOptions
-
 object GetPlaylistTracksOptions {
-  @scala.inline
-  def apply(
-    fields: String = null,
-    limit: Int | Double = null,
-    market: String = null,
-    offset: Int | Double = null
-  ): GetPlaylistTracksOptions = {
+  
+  inline def apply(): GetPlaylistTracksOptions = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (market != null) __obj.updateDynamic("market")(market.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPlaylistTracksOptions]
   }
 }
-

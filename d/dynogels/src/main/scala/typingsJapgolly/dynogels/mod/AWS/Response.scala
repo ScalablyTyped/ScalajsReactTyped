@@ -1,11 +1,10 @@
 package typingsJapgolly.dynogels.mod.AWS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.Response")
 @js.native
-class Response[D, E] ()
-  extends typingsJapgolly.awsSdk.responseMod.Response[D, E]
-
+open class Response[D, E] ()
+  extends typingsJapgolly.awsSdk.mod.Response[D, E]

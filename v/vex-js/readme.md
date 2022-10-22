@@ -10,10 +10,10 @@ Beautiful, functional dialogs in vanilla JavaScript
 | ------------------ | :-------------: |
 | Full name          | vex-js |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 142879 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 12847.666666666666 |
+| # stars            | 6939.0 |
 
 ## Links
 - [Homepage](https://github.com/HubSpot/vex#readme)

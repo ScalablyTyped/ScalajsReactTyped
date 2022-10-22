@@ -1,37 +1,50 @@
 package typingsJapgolly.surveyKnockout.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IQuestionPanelDynamicData extends js.Object {
+trait IQuestionPanelDynamicData extends StObject {
+  
   def getItemIndex(item: ISurveyData): Double
-  def getPanelItemData(item: ISurveyData): js.Any
+  
+  def getPanelItemData(item: ISurveyData): Any
+  
   def getRootData(): ISurveyData
+  
   def getSharedQuestionFromArray(name: String, panelIndex: Double): Question
+  
   def getSurvey(): ISurvey
-  def setPanelItemData(item: ISurveyData, name: String, `val`: js.Any): js.Any
+  
+  def setPanelItemData(item: ISurveyData, name: String, `val`: Any): Any
 }
-
 object IQuestionPanelDynamicData {
-  @scala.inline
-  def apply(
-    getItemIndex: ISurveyData => CallbackTo[Double],
-    getPanelItemData: ISurveyData => CallbackTo[js.Any],
+  
+  inline def apply(
+    getItemIndex: ISurveyData => Double,
+    getPanelItemData: ISurveyData => Any,
     getRootData: CallbackTo[ISurveyData],
-    getSharedQuestionFromArray: (String, Double) => CallbackTo[Question],
+    getSharedQuestionFromArray: (String, Double) => Question,
     getSurvey: CallbackTo[ISurvey],
-    setPanelItemData: (ISurveyData, String, js.Any) => CallbackTo[js.Any]
+    setPanelItemData: (ISurveyData, String, Any) => Any
   ): IQuestionPanelDynamicData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getItemIndex")(js.Any.fromFunction1((t0: typingsJapgolly.surveyKnockout.mod.ISurveyData) => getItemIndex(t0).runNow()))
-    __obj.updateDynamic("getPanelItemData")(js.Any.fromFunction1((t0: typingsJapgolly.surveyKnockout.mod.ISurveyData) => getPanelItemData(t0).runNow()))
-    __obj.updateDynamic("getRootData")(getRootData.toJsFn)
-    __obj.updateDynamic("getSharedQuestionFromArray")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Double) => getSharedQuestionFromArray(t0, t1).runNow()))
-    __obj.updateDynamic("getSurvey")(getSurvey.toJsFn)
-    __obj.updateDynamic("setPanelItemData")(js.Any.fromFunction3((t0: typingsJapgolly.surveyKnockout.mod.ISurveyData, t1: java.lang.String, t2: js.Any) => setPanelItemData(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(getItemIndex = js.Any.fromFunction1(getItemIndex), getPanelItemData = js.Any.fromFunction1(getPanelItemData), getRootData = getRootData.toJsFn, getSharedQuestionFromArray = js.Any.fromFunction2(getSharedQuestionFromArray), getSurvey = getSurvey.toJsFn, setPanelItemData = js.Any.fromFunction3(setPanelItemData))
     __obj.asInstanceOf[IQuestionPanelDynamicData]
   }
+  
+  extension [Self <: IQuestionPanelDynamicData](x: Self) {
+    
+    inline def setGetItemIndex(value: ISurveyData => Double): Self = StObject.set(x, "getItemIndex", js.Any.fromFunction1(value))
+    
+    inline def setGetPanelItemData(value: ISurveyData => Any): Self = StObject.set(x, "getPanelItemData", js.Any.fromFunction1(value))
+    
+    inline def setGetRootData(value: CallbackTo[ISurveyData]): Self = StObject.set(x, "getRootData", value.toJsFn)
+    
+    inline def setGetSharedQuestionFromArray(value: (String, Double) => Question): Self = StObject.set(x, "getSharedQuestionFromArray", js.Any.fromFunction2(value))
+    
+    inline def setGetSurvey(value: CallbackTo[ISurvey]): Self = StObject.set(x, "getSurvey", value.toJsFn)
+    
+    inline def setSetPanelItemData(value: (ISurveyData, String, Any) => Any): Self = StObject.set(x, "setPanelItemData", js.Any.fromFunction3(value))
+  }
 }
-

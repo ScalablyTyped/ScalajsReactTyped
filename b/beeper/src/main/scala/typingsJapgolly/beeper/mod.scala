@@ -1,14 +1,14 @@
 package typingsJapgolly.beeper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("beeper", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): js.Promise[Unit] = js.native
-  def apply(count: Double): js.Promise[Unit] = js.native
-  def apply(melody: String): js.Promise[Unit] = js.native
+object mod {
+  
+  @JSImport("beeper", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(melody: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(melody.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }
-

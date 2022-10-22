@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartPannable extends js.Object {
+trait ChartPannable extends StObject {
+  
   var key: js.UndefOr[String] = js.undefined
+  
   var lock: js.UndefOr[String] = js.undefined
 }
-
 object ChartPannable {
-  @scala.inline
-  def apply(key: String = null, lock: String = null): ChartPannable = {
+  
+  inline def apply(): ChartPannable = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (lock != null) __obj.updateDynamic("lock")(lock.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPannable]
   }
+  
+  extension [Self <: ChartPannable](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setLock(value: String): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+    
+    inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
+  }
 }
-

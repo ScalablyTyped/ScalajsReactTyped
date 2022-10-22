@@ -1,40 +1,59 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ManagedAppPolicy extends Entity {
+trait ManagedAppPolicy
+  extends StObject
+     with Entity {
+  
   // The date and time the policy was created.
   var createdDateTime: js.UndefOr[String] = js.undefined
+  
   // The policy's description.
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Policy display name.
   var displayName: js.UndefOr[String] = js.undefined
+  
   // Last time the policy was modified.
   var lastModifiedDateTime: js.UndefOr[String] = js.undefined
+  
   // Version of the entity.
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ManagedAppPolicy {
-  @scala.inline
-  def apply(
-    createdDateTime: String = null,
-    description: String = null,
-    displayName: String = null,
-    id: String = null,
-    lastModifiedDateTime: String = null,
-    version: String = null
-  ): ManagedAppPolicy = {
+  
+  inline def apply(): ManagedAppPolicy = {
     val __obj = js.Dynamic.literal()
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedAppPolicy]
   }
+  
+  extension [Self <: ManagedAppPolicy](x: Self) {
+    
+    inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    
+    inline def setVersion(value: NullableOption[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

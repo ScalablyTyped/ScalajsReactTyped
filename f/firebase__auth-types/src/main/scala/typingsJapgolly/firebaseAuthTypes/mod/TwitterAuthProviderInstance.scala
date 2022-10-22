@@ -1,14 +1,17 @@
 package typingsJapgolly.firebaseAuthTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/auth-types", "TwitterAuthProvider_Instance")
 @js.native
-class TwitterAuthProviderInstance () extends AuthProvider {
+open class TwitterAuthProviderInstance ()
+  extends StObject
+     with AuthProvider {
+  
   /* CompleteClass */
-  override var providerId: String = js.native
+  var providerId: String = js.native
+  
   def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
 }
-

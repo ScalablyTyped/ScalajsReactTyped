@@ -10,10 +10,10 @@ Multiple progress bars based on the "progress" package
 | ------------------ | :-------------: |
 | Full name          | multi-progress |
 | Keywords           | multi, multiple, progress, bar |
-| # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 539985 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 86619.0 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/pitaj/multi-progress)

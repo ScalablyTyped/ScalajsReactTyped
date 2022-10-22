@@ -1,9 +1,9 @@
 package typingsJapgolly.offscreencanvas
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalajs.dom.raw.Blob
-import org.scalajs.dom.raw.WebGLContextAttributes
-import org.scalajs.dom.raw.WebGLRenderingContext
+import org.scalajs.dom.Blob
+import org.scalajs.dom.WebGLContextAttributes
+import org.scalajs.dom.WebGLRenderingContext
+import typingsJapgolly.offscreencanvas.anon.Quality
 import typingsJapgolly.offscreencanvas.offscreencanvasStrings.`2d`
 import typingsJapgolly.offscreencanvas.offscreencanvasStrings.bitmaprenderer
 import typingsJapgolly.offscreencanvas.offscreencanvasStrings.webgl
@@ -13,19 +13,21 @@ import typingsJapgolly.std.EventTarget
 import typingsJapgolly.std.ImageBitmap
 import typingsJapgolly.std.ImageBitmapRenderingContext
 import typingsJapgolly.std.WebGL2RenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface
 // Possible contextId values are defined by the enum OffscreenRenderingContextId { "2d", "bitmaprenderer", "webgl", "webgl2" }
 // See also description: https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas/getContext
 @js.native
-trait OffscreenCanvas extends EventTarget {
-  var height: Double = js.native
-  var width: Double = js.native
+trait OffscreenCanvas
+  extends StObject
+     with EventTarget {
+  
   def convertToBlob(): js.Promise[Blob] = js.native
-  def convertToBlob(options: AnonQuality): js.Promise[Blob] = js.native
+  def convertToBlob(options: Quality): js.Promise[Blob] = js.native
+  
   @JSName("getContext")
   def getContext_2d(contextId: `2d`): OffscreenCanvasRenderingContext2D | Null = js.native
   @JSName("getContext")
@@ -42,10 +44,10 @@ trait OffscreenCanvas extends EventTarget {
   def getContext_webgl2(contextId: webgl2): WebGL2RenderingContext | Null = js.native
   @JSName("getContext")
   def getContext_webgl2(contextId: webgl2, contextAttributes: WebGLContextAttributes): WebGL2RenderingContext | Null = js.native
+  
+  var height: Double = js.native
+  
   def transferToImageBitmap(): ImageBitmap = js.native
+  
+  var width: Double = js.native
 }
-
-@JSGlobal("OffscreenCanvas")
-@js.native
-object OffscreenCanvas extends Instantiable2[/* width */ Double, /* height */ Double, OffscreenCanvas]
-

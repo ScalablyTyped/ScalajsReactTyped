@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.codecommitMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsCodecommitMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "CodeCommit")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class CodeCommit ()
-  extends typingsJapgolly.awsSdk.allMod.CodeCommit {
+open class CodeCommit ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.CodeCommit {
   def this(options: ClientConfiguration) = this()
 }
-

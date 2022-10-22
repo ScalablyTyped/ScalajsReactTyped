@@ -1,102 +1,98 @@
 package typingsJapgolly.xrm.XrmEnum
 
-import typingsJapgolly.xrm.xrmNumbers.`0`
-import typingsJapgolly.xrm.xrmNumbers.`10`
-import typingsJapgolly.xrm.xrmNumbers.`11`
-import typingsJapgolly.xrm.xrmNumbers.`12`
-import typingsJapgolly.xrm.xrmNumbers.`13`
-import typingsJapgolly.xrm.xrmNumbers.`14`
-import typingsJapgolly.xrm.xrmNumbers.`15`
-import typingsJapgolly.xrm.xrmNumbers.`16`
-import typingsJapgolly.xrm.xrmNumbers.`17`
-import typingsJapgolly.xrm.xrmNumbers.`18`
-import typingsJapgolly.xrm.xrmNumbers.`19`
-import typingsJapgolly.xrm.xrmNumbers.`1`
-import typingsJapgolly.xrm.xrmNumbers.`20`
-import typingsJapgolly.xrm.xrmNumbers.`2`
-import typingsJapgolly.xrm.xrmNumbers.`3`
-import typingsJapgolly.xrm.xrmNumbers.`4`
-import typingsJapgolly.xrm.xrmNumbers.`5`
-import typingsJapgolly.xrm.xrmNumbers.`6`
-import typingsJapgolly.xrm.xrmNumbers.`7`
-import typingsJapgolly.xrm.xrmNumbers.`8`
-import typingsJapgolly.xrm.xrmNumbers.`9`
+import typingsJapgolly.xrm.xrmInts.`0`
+import typingsJapgolly.xrm.xrmInts.`10`
+import typingsJapgolly.xrm.xrmInts.`11`
+import typingsJapgolly.xrm.xrmInts.`12`
+import typingsJapgolly.xrm.xrmInts.`13`
+import typingsJapgolly.xrm.xrmInts.`14`
+import typingsJapgolly.xrm.xrmInts.`15`
+import typingsJapgolly.xrm.xrmInts.`16`
+import typingsJapgolly.xrm.xrmInts.`17`
+import typingsJapgolly.xrm.xrmInts.`18`
+import typingsJapgolly.xrm.xrmInts.`19`
+import typingsJapgolly.xrm.xrmInts.`1`
+import typingsJapgolly.xrm.xrmInts.`20`
+import typingsJapgolly.xrm.xrmInts.`2`
+import typingsJapgolly.xrm.xrmInts.`3`
+import typingsJapgolly.xrm.xrmInts.`4`
+import typingsJapgolly.xrm.xrmInts.`5`
+import typingsJapgolly.xrm.xrmInts.`6`
+import typingsJapgolly.xrm.xrmInts.`7`
+import typingsJapgolly.xrm.xrmInts.`8`
+import typingsJapgolly.xrm.xrmInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An enumeration for Attribute Type metadata
   */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.xrm.xrmNumbers.`0`
-  - typingsJapgolly.xrm.xrmNumbers.`1`
-  - typingsJapgolly.xrm.xrmNumbers.`2`
-  - typingsJapgolly.xrm.xrmNumbers.`3`
-  - typingsJapgolly.xrm.xrmNumbers.`4`
-  - typingsJapgolly.xrm.xrmNumbers.`5`
-  - typingsJapgolly.xrm.xrmNumbers.`6`
-  - typingsJapgolly.xrm.xrmNumbers.`7`
-  - typingsJapgolly.xrm.xrmNumbers.`8`
-  - typingsJapgolly.xrm.xrmNumbers.`9`
-  - typingsJapgolly.xrm.xrmNumbers.`10`
-  - typingsJapgolly.xrm.xrmNumbers.`11`
-  - typingsJapgolly.xrm.xrmNumbers.`12`
-  - typingsJapgolly.xrm.xrmNumbers.`13`
-  - typingsJapgolly.xrm.xrmNumbers.`14`
-  - typingsJapgolly.xrm.xrmNumbers.`15`
-  - typingsJapgolly.xrm.xrmNumbers.`16`
-  - typingsJapgolly.xrm.xrmNumbers.`17`
-  - typingsJapgolly.xrm.xrmNumbers.`18`
-  - typingsJapgolly.xrm.xrmNumbers.`19`
-  - typingsJapgolly.xrm.xrmNumbers.`20`
+  - typingsJapgolly.xrm.xrmInts.`0`
+  - typingsJapgolly.xrm.xrmInts.`1`
+  - typingsJapgolly.xrm.xrmInts.`2`
+  - typingsJapgolly.xrm.xrmInts.`3`
+  - typingsJapgolly.xrm.xrmInts.`4`
+  - typingsJapgolly.xrm.xrmInts.`5`
+  - typingsJapgolly.xrm.xrmInts.`6`
+  - typingsJapgolly.xrm.xrmInts.`7`
+  - typingsJapgolly.xrm.xrmInts.`8`
+  - typingsJapgolly.xrm.xrmInts.`9`
+  - typingsJapgolly.xrm.xrmInts.`10`
+  - typingsJapgolly.xrm.xrmInts.`11`
+  - typingsJapgolly.xrm.xrmInts.`12`
+  - typingsJapgolly.xrm.xrmInts.`13`
+  - typingsJapgolly.xrm.xrmInts.`14`
+  - typingsJapgolly.xrm.xrmInts.`15`
+  - typingsJapgolly.xrm.xrmInts.`16`
+  - typingsJapgolly.xrm.xrmInts.`17`
+  - typingsJapgolly.xrm.xrmInts.`18`
+  - typingsJapgolly.xrm.xrmInts.`19`
+  - typingsJapgolly.xrm.xrmInts.`20`
 */
-trait AttributeTypeCode extends js.Object
-
+trait AttributeTypeCode extends StObject
 object AttributeTypeCode {
-  @scala.inline
-  def BigInt: `18` = this.cast(18)
-  @scala.inline
-  def Boolean: `0` = this.cast(0)
-  @scala.inline
-  def CalendarRules: `16` = this.cast(16)
-  @scala.inline
-  def Customer: `1` = this.cast(1)
-  @scala.inline
-  def DateTime: `2` = this.cast(2)
-  @scala.inline
-  def Decimal: `3` = this.cast(3)
-  @scala.inline
-  def Double: `4` = this.cast(4)
-  @scala.inline
-  def EntityName: `20` = this.cast(20)
-  @scala.inline
-  def Integer: `5` = this.cast(5)
-  @scala.inline
-  def Lookup: `6` = this.cast(6)
-  @scala.inline
-  def ManagedProperty: `19` = this.cast(19)
-  @scala.inline
-  def Memo: `7` = this.cast(7)
-  @scala.inline
-  def Money: `8` = this.cast(8)
-  @scala.inline
-  def Owner: `9` = this.cast(9)
-  @scala.inline
-  def PartyList: `10` = this.cast(10)
-  @scala.inline
-  def Picklist: `11` = this.cast(11)
-  @scala.inline
-  def State: `12` = this.cast(12)
-  @scala.inline
-  def Status: `13` = this.cast(13)
-  @scala.inline
-  def String: `14` = this.cast(14)
-  @scala.inline
-  def Uniqueidentifier: `15` = this.cast(15)
-  @scala.inline
-  def Virtual: `17` = this.cast(17)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def BigInt: `18` = 18.asInstanceOf[`18`]
+  
+  inline def Boolean: `0` = 0.asInstanceOf[`0`]
+  
+  inline def CalendarRules: `16` = 16.asInstanceOf[`16`]
+  
+  inline def Customer: `1` = 1.asInstanceOf[`1`]
+  
+  inline def DateTime: `2` = 2.asInstanceOf[`2`]
+  
+  inline def Decimal: `3` = 3.asInstanceOf[`3`]
+  
+  inline def Double: `4` = 4.asInstanceOf[`4`]
+  
+  inline def EntityName: `20` = 20.asInstanceOf[`20`]
+  
+  inline def Integer: `5` = 5.asInstanceOf[`5`]
+  
+  inline def Lookup: `6` = 6.asInstanceOf[`6`]
+  
+  inline def ManagedProperty: `19` = 19.asInstanceOf[`19`]
+  
+  inline def Memo: `7` = 7.asInstanceOf[`7`]
+  
+  inline def Money: `8` = 8.asInstanceOf[`8`]
+  
+  inline def Owner: `9` = 9.asInstanceOf[`9`]
+  
+  inline def PartyList: `10` = 10.asInstanceOf[`10`]
+  
+  inline def Picklist: `11` = 11.asInstanceOf[`11`]
+  
+  inline def State: `12` = 12.asInstanceOf[`12`]
+  
+  inline def Status: `13` = 13.asInstanceOf[`13`]
+  
+  inline def String: `14` = 14.asInstanceOf[`14`]
+  
+  inline def Uniqueidentifier: `15` = 15.asInstanceOf[`15`]
+  
+  inline def Virtual: `17` = 17.asInstanceOf[`17`]
 }
-

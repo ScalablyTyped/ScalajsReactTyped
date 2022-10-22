@@ -1,13 +1,14 @@
 package typingsJapgolly.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information regarding the outcome of a successful connection.executeMany().
   */
-trait Results[T] extends js.Object {
+trait Results[T] extends StObject {
+  
   /**
     * An array of error objects that were reported during execution.
     *
@@ -19,6 +20,7 @@ trait Results[T] extends js.Object {
     * callback error object, not in batchErrors.
     */
   var batchErrors: js.UndefOr[js.Array[DBError]] = js.undefined
+  
   /**
     * An array of integers identifying the number of rows affected by each record of the binds parameter.
     *
@@ -26,6 +28,7 @@ trait Results[T] extends js.Object {
     * was executed.
     */
   var dmlRowCounts: js.UndefOr[js.Array[Double]] = js.undefined
+  
   /**
     * Contains the value of any returned IN OUT or OUT binds. It is an array of arrays, or an array of objects,
     * depending on the binds parameters structure. The length of the array will correspond to the length of
@@ -33,27 +36,42 @@ trait Results[T] extends js.Object {
     * variable identified.
     */
   var outBinds: js.UndefOr[js.Array[T]] = js.undefined
+  
   /**
     * An integer identifying the total number of database rows affected by the processing of all records
     * of the binds parameter. It is only present if a DML statement was executed.
     */
   var rowsAffected: js.UndefOr[Double] = js.undefined
 }
-
 object Results {
-  @scala.inline
-  def apply[T](
-    batchErrors: js.Array[DBError] = null,
-    dmlRowCounts: js.Array[Double] = null,
-    outBinds: js.Array[T] = null,
-    rowsAffected: Int | Double = null
-  ): Results[T] = {
+  
+  inline def apply[T](): Results[T] = {
     val __obj = js.Dynamic.literal()
-    if (batchErrors != null) __obj.updateDynamic("batchErrors")(batchErrors.asInstanceOf[js.Any])
-    if (dmlRowCounts != null) __obj.updateDynamic("dmlRowCounts")(dmlRowCounts.asInstanceOf[js.Any])
-    if (outBinds != null) __obj.updateDynamic("outBinds")(outBinds.asInstanceOf[js.Any])
-    if (rowsAffected != null) __obj.updateDynamic("rowsAffected")(rowsAffected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Results[T]]
   }
+  
+  extension [Self <: Results[?], T](x: Self & Results[T]) {
+    
+    inline def setBatchErrors(value: js.Array[DBError]): Self = StObject.set(x, "batchErrors", value.asInstanceOf[js.Any])
+    
+    inline def setBatchErrorsUndefined: Self = StObject.set(x, "batchErrors", js.undefined)
+    
+    inline def setBatchErrorsVarargs(value: DBError*): Self = StObject.set(x, "batchErrors", js.Array(value*))
+    
+    inline def setDmlRowCounts(value: js.Array[Double]): Self = StObject.set(x, "dmlRowCounts", value.asInstanceOf[js.Any])
+    
+    inline def setDmlRowCountsUndefined: Self = StObject.set(x, "dmlRowCounts", js.undefined)
+    
+    inline def setDmlRowCountsVarargs(value: Double*): Self = StObject.set(x, "dmlRowCounts", js.Array(value*))
+    
+    inline def setOutBinds(value: js.Array[T]): Self = StObject.set(x, "outBinds", value.asInstanceOf[js.Any])
+    
+    inline def setOutBindsUndefined: Self = StObject.set(x, "outBinds", js.undefined)
+    
+    inline def setOutBindsVarargs(value: T*): Self = StObject.set(x, "outBinds", js.Array(value*))
+    
+    inline def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
+    
+    inline def setRowsAffectedUndefined: Self = StObject.set(x, "rowsAffected", js.undefined)
+  }
 }
-

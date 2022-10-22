@@ -1,41 +1,39 @@
 package typingsJapgolly.libsodiumWrappers.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait base64Variants extends js.Object
-
+sealed trait base64Variants extends StObject
 @JSImport("libsodium-wrappers", "base64_variants")
 @js.native
-object base64Variants extends js.Object {
-  @js.native
-  sealed trait ORIGINAL extends base64Variants
-  
-  @js.native
-  sealed trait ORIGINAL_NO_PADDING extends base64Variants
-  
-  @js.native
-  sealed trait URLSAFE extends base64Variants
-  
-  @js.native
-  sealed trait URLSAFE_NO_PADDING extends base64Variants
+object base64Variants extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[base64Variants with Double] = js.native
-  /* 0 */ @js.native
-  object ORIGINAL extends TopLevel[ORIGINAL with Double]
+  def apply(value: Double): js.UndefOr[base64Variants & Double] = js.native
   
-  /* 1 */ @js.native
-  object ORIGINAL_NO_PADDING extends TopLevel[ORIGINAL_NO_PADDING with Double]
+  @js.native
+  sealed trait ORIGINAL
+    extends StObject
+       with base64Variants
+  /* 0 */ val ORIGINAL: typingsJapgolly.libsodiumWrappers.mod.base64Variants.ORIGINAL & Double = js.native
   
-  /* 2 */ @js.native
-  object URLSAFE extends TopLevel[URLSAFE with Double]
+  @js.native
+  sealed trait ORIGINAL_NO_PADDING
+    extends StObject
+       with base64Variants
+  /* 1 */ val ORIGINAL_NO_PADDING: typingsJapgolly.libsodiumWrappers.mod.base64Variants.ORIGINAL_NO_PADDING & Double = js.native
   
-  /* 3 */ @js.native
-  object URLSAFE_NO_PADDING extends TopLevel[URLSAFE_NO_PADDING with Double]
+  @js.native
+  sealed trait URLSAFE
+    extends StObject
+       with base64Variants
+  /* 2 */ val URLSAFE: typingsJapgolly.libsodiumWrappers.mod.base64Variants.URLSAFE & Double = js.native
   
+  @js.native
+  sealed trait URLSAFE_NO_PADDING
+    extends StObject
+       with base64Variants
+  /* 3 */ val URLSAFE_NO_PADDING: typingsJapgolly.libsodiumWrappers.mod.base64Variants.URLSAFE_NO_PADDING & Double = js.native
 }
-

@@ -1,37 +1,29 @@
 package typingsJapgolly.typescript.mod
 
-import typingsJapgolly.typescript.typescriptStrings.characterTyped
-import typingsJapgolly.typescript.typescriptStrings.invoked
-import typingsJapgolly.typescript.typescriptStrings.retrigger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.typescript.mod.SignatureHelpInvokedReason
   - typingsJapgolly.typescript.mod.SignatureHelpCharacterTypedReason
   - typingsJapgolly.typescript.mod.SignatureHelpRetriggeredReason
 */
-trait SignatureHelpTriggerReason extends js.Object
-
+trait SignatureHelpTriggerReason extends StObject
 object SignatureHelpTriggerReason {
-  @scala.inline
-  def SignatureHelpInvokedReason(kind: invoked, triggerCharacter: js.UndefOr[scala.Nothing] = js.undefined): SignatureHelpTriggerReason = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(triggerCharacter)) __obj.updateDynamic("triggerCharacter")(triggerCharacter.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SignatureHelpTriggerReason]
-  }
-  @scala.inline
-  def SignatureHelpCharacterTypedReason(kind: characterTyped, triggerCharacter: SignatureHelpTriggerCharacter): SignatureHelpTriggerReason = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], triggerCharacter = triggerCharacter.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[SignatureHelpTriggerReason]
+  inline def SignatureHelpCharacterTypedReason(triggerCharacter: SignatureHelpTriggerCharacter): typingsJapgolly.typescript.mod.SignatureHelpCharacterTypedReason = {
+    val __obj = js.Dynamic.literal(kind = "characterTyped", triggerCharacter = triggerCharacter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.SignatureHelpCharacterTypedReason]
   }
-  @scala.inline
-  def SignatureHelpRetriggeredReason(kind: retrigger, triggerCharacter: SignatureHelpRetriggerCharacter = null): SignatureHelpTriggerReason = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-    if (triggerCharacter != null) __obj.updateDynamic("triggerCharacter")(triggerCharacter.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SignatureHelpTriggerReason]
+  
+  inline def SignatureHelpInvokedReason(triggerCharacter: Unit): typingsJapgolly.typescript.mod.SignatureHelpInvokedReason = {
+    val __obj = js.Dynamic.literal(kind = "invoked", triggerCharacter = triggerCharacter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.SignatureHelpInvokedReason]
+  }
+  
+  inline def SignatureHelpRetriggeredReason(): typingsJapgolly.typescript.mod.SignatureHelpRetriggeredReason = {
+    val __obj = js.Dynamic.literal(kind = "retrigger")
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.SignatureHelpRetriggeredReason]
   }
 }
-

@@ -2,15 +2,14 @@ package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Background
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.ValueSet
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is used to trigger background tasks. */
-@JSGlobal("Windows.ApplicationModel.Background.ApplicationTrigger")
 @js.native
-/** Creates a new ApplicationTrigger class */
-class ApplicationTrigger () extends js.Object {
+trait ApplicationTrigger extends StObject {
+  
   /**
     * This method attempts to set the trigger and start the registered background task.
     * @return Returns an ApplicationTriggerResult enumeration that indicates whether the user provided the necessary consent for the operation or the system policies didn't reject the request to trigger a background task.
@@ -23,4 +22,3 @@ class ApplicationTrigger () extends js.Object {
     */
   def requestAsync(args: ValueSet): IPromiseWithIAsyncOperation[ApplicationTriggerResult] = js.native
 }
-

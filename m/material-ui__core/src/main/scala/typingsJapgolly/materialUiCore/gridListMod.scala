@@ -1,26 +1,30 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.gridListGridListMod.GridListProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.gridListGridListMod.GridListTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.ul
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/GridList", JSImport.Namespace)
-@js.native
-object gridListMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[GridListProps, ComponentState, js.Any] {
-    def this(props: GridListProps) = this()
-    def this(props: GridListProps, context: js.Any) = this()
-  }
+object gridListMod extends Shortcut {
   
+  /**
+    * ⚠️ The GridList component was renamed to ImageList to align with the current Material Design naming.
+    *
+    * You should use `import { ImageList } from '@material-ui/core'`
+    * or `import ImageList from '@material-ui/core/ImageList'`.
+    * API:
+    *
+    * - [GridList API](https://mui.com/api/grid-list/)
+    */
+  @JSImport("@material-ui/core/GridList", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[GridListProps]]
+  val default: OverridableComponent[GridListTypeMap[js.Object, ul]] = js.native
   
+  type _To = OverridableComponent[GridListTypeMap[js.Object, ul]]
+  
+  /* This means you don't have to write `default`, but can instead just say `gridListMod.foo` */
+  override def _to: OverridableComponent[GridListTypeMap[js.Object, ul]] = default
 }
-

@@ -1,58 +1,42 @@
 package typingsJapgolly.recharts.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.recharts.mod.ResponsiveContainerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ResponsiveContainer {
-  def apply(
-    aspect: Int | Double = null,
-    className: String | Double = null,
-    debounce: Int | Double = null,
-    height: String | Double = null,
-    id: String | Double = null,
-    maxHeight: String | Double = null,
-    minHeight: String | Double = null,
-    minWidth: String | Double = null,
-    width: String | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ResponsiveContainerProps, 
-    typingsJapgolly.recharts.mod.ResponsiveContainer, 
-    Unit, 
-    ResponsiveContainerProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (aspect != null) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.recharts.mod.ResponsiveContainerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.recharts.mod.ResponsiveContainer](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.recharts.mod.ResponsiveContainerProps])(children: _*)
-  }
   @JSImport("recharts", "ResponsiveContainer")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.recharts.mod.ResponsiveContainer] {
+    
+    inline def aspect(value: Double): this.type = set("aspect", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String | Double): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def debounce(value: Double): this.type = set("debounce", value.asInstanceOf[js.Any])
+    
+    inline def height(value: String | Double): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String | Double): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def maxHeight(value: String | Double): this.type = set("maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def minHeight(value: String | Double): this.type = set("minHeight", value.asInstanceOf[js.Any])
+    
+    inline def minWidth(value: String | Double): this.type = set("minWidth", value.asInstanceOf[js.Any])
+    
+    inline def width(value: String | Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ResponsiveContainer.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ResponsiveContainerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

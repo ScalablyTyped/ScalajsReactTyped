@@ -1,15 +1,15 @@
 package typingsJapgolly.sipJs.mod.Core
 
-import typingsJapgolly.sipJs.userAgentCoreConfigurationMod.UserAgentCoreConfiguration
-import typingsJapgolly.sipJs.userAgentCoreDelegateMod.UserAgentCoreDelegate
+import typingsJapgolly.sipJs.libCoreUserAgentCoreUserAgentCoreConfigurationMod.UserAgentCoreConfiguration
+import typingsJapgolly.sipJs.libCoreUserAgentCoreUserAgentCoreDelegateMod.UserAgentCoreDelegate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.UserAgentCore")
 @js.native
-class UserAgentCore protected ()
-  extends typingsJapgolly.sipJs.coreMod.UserAgentCore {
+open class UserAgentCore protected ()
+  extends typingsJapgolly.sipJs.libCoreMod.UserAgentCore {
   /**
     * Constructor.
     * @param configuration - Configuration.
@@ -18,4 +18,3 @@ class UserAgentCore protected ()
   def this(configuration: UserAgentCoreConfiguration) = this()
   def this(configuration: UserAgentCoreConfiguration, delegate: UserAgentCoreDelegate) = this()
 }
-

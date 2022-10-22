@@ -3,9 +3,9 @@ package typingsJapgolly.googleAppsScript.GoogleAppsScript.Document
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Base.BlobSource
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reference to a location in the document, relative to a specific element. The user's cursor is
@@ -27,36 +27,51 @@ import scala.scalajs.js.annotation._
   *       DocumentApp.getUi().alert('Cannot find a cursor.');
   *     }
   */
-trait Position extends js.Object {
+trait Position extends StObject {
+  
   def getElement(): Element
+  
   def getOffset(): Integer
+  
   def getSurroundingText(): Text
+  
   def getSurroundingTextOffset(): Integer
+  
   def insertBookmark(): Bookmark
+  
   def insertInlineImage(image: BlobSource): InlineImage
+  
   def insertText(text: String): Text
 }
-
 object Position {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getElement: CallbackTo[Element],
     getOffset: CallbackTo[Integer],
     getSurroundingText: CallbackTo[Text],
     getSurroundingTextOffset: CallbackTo[Integer],
     insertBookmark: CallbackTo[Bookmark],
-    insertInlineImage: BlobSource => CallbackTo[InlineImage],
-    insertText: String => CallbackTo[Text]
+    insertInlineImage: BlobSource => InlineImage,
+    insertText: String => Text
   ): Position = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getElement")(getElement.toJsFn)
-    __obj.updateDynamic("getOffset")(getOffset.toJsFn)
-    __obj.updateDynamic("getSurroundingText")(getSurroundingText.toJsFn)
-    __obj.updateDynamic("getSurroundingTextOffset")(getSurroundingTextOffset.toJsFn)
-    __obj.updateDynamic("insertBookmark")(insertBookmark.toJsFn)
-    __obj.updateDynamic("insertInlineImage")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Base.BlobSource) => insertInlineImage(t0).runNow()))
-    __obj.updateDynamic("insertText")(js.Any.fromFunction1((t0: java.lang.String) => insertText(t0).runNow()))
+    val __obj = js.Dynamic.literal(getElement = getElement.toJsFn, getOffset = getOffset.toJsFn, getSurroundingText = getSurroundingText.toJsFn, getSurroundingTextOffset = getSurroundingTextOffset.toJsFn, insertBookmark = insertBookmark.toJsFn, insertInlineImage = js.Any.fromFunction1(insertInlineImage), insertText = js.Any.fromFunction1(insertText))
     __obj.asInstanceOf[Position]
   }
+  
+  extension [Self <: Position](x: Self) {
+    
+    inline def setGetElement(value: CallbackTo[Element]): Self = StObject.set(x, "getElement", value.toJsFn)
+    
+    inline def setGetOffset(value: CallbackTo[Integer]): Self = StObject.set(x, "getOffset", value.toJsFn)
+    
+    inline def setGetSurroundingText(value: CallbackTo[Text]): Self = StObject.set(x, "getSurroundingText", value.toJsFn)
+    
+    inline def setGetSurroundingTextOffset(value: CallbackTo[Integer]): Self = StObject.set(x, "getSurroundingTextOffset", value.toJsFn)
+    
+    inline def setInsertBookmark(value: CallbackTo[Bookmark]): Self = StObject.set(x, "insertBookmark", value.toJsFn)
+    
+    inline def setInsertInlineImage(value: BlobSource => InlineImage): Self = StObject.set(x, "insertInlineImage", js.Any.fromFunction1(value))
+    
+    inline def setInsertText(value: String => Text): Self = StObject.set(x, "insertText", js.Any.fromFunction1(value))
+  }
 }
-

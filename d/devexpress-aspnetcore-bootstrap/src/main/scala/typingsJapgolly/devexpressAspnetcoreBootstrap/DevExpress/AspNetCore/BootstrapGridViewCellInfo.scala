@@ -1,14 +1,26 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapGridViewCellInfo")
-@js.native
-class BootstrapGridViewCellInfo protected () extends js.Object {
-  protected def this(instance: js.Any) = this()
-  val instance: js.Any = js.native
-  val rowVisibleIndex: Double = js.native
+trait BootstrapGridViewCellInfo extends StObject {
+  
+  /* protected */ val instance: Any
+  
+  val rowVisibleIndex: Double
 }
-
+object BootstrapGridViewCellInfo {
+  
+  inline def apply(instance: Any, rowVisibleIndex: Double): BootstrapGridViewCellInfo = {
+    val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], rowVisibleIndex = rowVisibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapGridViewCellInfo]
+  }
+  
+  extension [Self <: BootstrapGridViewCellInfo](x: Self) {
+    
+    inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    
+    inline def setRowVisibleIndex(value: Double): Self = StObject.set(x, "rowVisibleIndex", value.asInstanceOf[js.Any])
+  }
+}

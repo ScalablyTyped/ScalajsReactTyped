@@ -1,32 +1,25 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LoadIndicator extends js.Object
-
+sealed trait LoadIndicator extends StObject
 /**
   * An enum type that specifies the type of loading or progress indicator to display while an Action is being processed.
   */
 @JSGlobal("GoogleAppsScript.Card_Service.LoadIndicator")
 @js.native
-object LoadIndicator extends js.Object {
-  @js.native
-  sealed trait NONE extends LoadIndicator
+object LoadIndicator extends StObject {
   
   @js.native
-  sealed trait SPINNER extends LoadIndicator
+  sealed trait NONE
+    extends StObject
+       with LoadIndicator
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LoadIndicator with Double] = js.native
-  /* 1 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 0 */ @js.native
-  object SPINNER extends TopLevel[SPINNER with Double]
-  
+  @js.native
+  sealed trait SPINNER
+    extends StObject
+       with LoadIndicator
 }
-

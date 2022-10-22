@@ -1,56 +1,62 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.antdStrings.ltr
-import typingsJapgolly.antd.antdStrings.rtl
-import typingsJapgolly.antd.editableMod.EditableProps
-import typingsJapgolly.antd.editableMod.default
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.libConfigProviderContextMod.DirectionType
+import typingsJapgolly.antd.libTypographyEditableMod.EditableProps
+import typingsJapgolly.rcTextarea.esResizableTextAreaMod.AutoSizeType
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Editable {
-  def apply(
-    onCancel: Callback,
-    onSave: String => Callback,
-    `aria-label`: String = null,
-    className: String = null,
-    direction: ltr | rtl = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    value: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[EditableProps, default, Unit, EditableProps] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("onCancel")(onCancel.toJsFn)
-    __obj.updateDynamic("onSave")(js.Any.fromFunction1((t0: java.lang.String) => onSave(t0).runNow()))
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.editableMod.EditableProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.editableMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.editableMod.EditableProps])(children: _*)
+  inline def apply(onCancel: Callback, onSave: String => Callback, value: String): Builder = {
+    val __props = js.Dynamic.literal(onCancel = onCancel.toJsFn, onSave = js.Any.fromFunction1((t0: String) => onSave(t0).runNow()), value = value.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[EditableProps]))
   }
+  
   @JSImport("antd/lib/typography/Editable", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+    
+    inline def autoSize(value: Boolean | AutoSizeType): this.type = set("autoSize", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def component(value: String): this.type = set("component", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: DirectionType): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def enterIcon(value: VdomNode): this.type = set("enterIcon", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def enterIconNull: this.type = set("enterIcon", null)
+    
+    inline def enterIconVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("enterIcon", js.Array(value*))
+    
+    inline def enterIconVdomElement(value: VdomElement): this.type = set("enterIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def maxLength(value: Double): this.type = set("maxLength", value.asInstanceOf[js.Any])
+    
+    inline def onEnd(value: Callback): this.type = set("onEnd", value.toJsFn)
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: EditableProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,23 +1,28 @@
 package typingsJapgolly.azdata.mod.nb
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.vscode.Thenable
 import typingsJapgolly.vscode.mod.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationProvider extends js.Object {
-  val providerId: String
+trait NavigationProvider extends StObject {
+  
   def getNavigation(notebookUri: Uri): Thenable[NavigationResult]
+  
+  val providerId: String
 }
-
 object NavigationProvider {
-  @scala.inline
-  def apply(getNavigation: Uri => CallbackTo[Thenable[NavigationResult]], providerId: String): NavigationProvider = {
-    val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any])
-    __obj.updateDynamic("getNavigation")(js.Any.fromFunction1((t0: typingsJapgolly.vscode.mod.Uri) => getNavigation(t0).runNow()))
+  
+  inline def apply(getNavigation: Uri => Thenable[NavigationResult], providerId: String): NavigationProvider = {
+    val __obj = js.Dynamic.literal(getNavigation = js.Any.fromFunction1(getNavigation), providerId = providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationProvider]
   }
+  
+  extension [Self <: NavigationProvider](x: Self) {
+    
+    inline def setGetNavigation(value: Uri => Thenable[NavigationResult]): Self = StObject.set(x, "getNavigation", js.Any.fromFunction1(value))
+    
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+  }
 }
-

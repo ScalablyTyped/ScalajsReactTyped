@@ -1,10 +1,11 @@
 package typingsJapgolly.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IEngineTimingOptions extends js.Object {
+trait IEngineTimingOptions extends StObject {
+  
   /**
     * A `Number` that specifies the global scaling factor of time for all bodies.
     * A value of `0` freezes the simulation.
@@ -16,6 +17,7 @@ trait IEngineTimingOptions extends js.Object {
     * @default 1
     */
   var timeScale: Double
+  
   /**
     * A `Number` that specifies the current simulation-time in milliseconds starting from `0`.
     * It is incremented on every `Engine.update` by the given `delta` argument.
@@ -26,13 +28,17 @@ trait IEngineTimingOptions extends js.Object {
     */
   var timestamp: Double
 }
-
 object IEngineTimingOptions {
-  @scala.inline
-  def apply(timeScale: Double, timestamp: Double): IEngineTimingOptions = {
-    val __obj = js.Dynamic.literal(timeScale = timeScale.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
+  inline def apply(timeScale: Double, timestamp: Double): IEngineTimingOptions = {
+    val __obj = js.Dynamic.literal(timeScale = timeScale.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEngineTimingOptions]
   }
+  
+  extension [Self <: IEngineTimingOptions](x: Self) {
+    
+    inline def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
+    
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+  }
 }
-

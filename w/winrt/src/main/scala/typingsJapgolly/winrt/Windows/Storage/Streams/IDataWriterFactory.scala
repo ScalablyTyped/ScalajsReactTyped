@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Storage.Streams
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDataWriterFactory extends js.Object {
+trait IDataWriterFactory extends StObject {
+  
   def createDataWriter(outputStream: IOutputStream): DataWriter
 }
-
 object IDataWriterFactory {
-  @scala.inline
-  def apply(createDataWriter: IOutputStream => CallbackTo[DataWriter]): IDataWriterFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createDataWriter")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Storage.Streams.IOutputStream) => createDataWriter(t0).runNow()))
+  
+  inline def apply(createDataWriter: IOutputStream => DataWriter): IDataWriterFactory = {
+    val __obj = js.Dynamic.literal(createDataWriter = js.Any.fromFunction1(createDataWriter))
     __obj.asInstanceOf[IDataWriterFactory]
   }
+  
+  extension [Self <: IDataWriterFactory](x: Self) {
+    
+    inline def setCreateDataWriter(value: IOutputStream => DataWriter): Self = StObject.set(x, "createDataWriter", js.Any.fromFunction1(value))
+  }
 }
-

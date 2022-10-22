@@ -1,34 +1,37 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebMapSaveOptions extends Object {
+trait WebMapSaveOptions
+  extends StObject
+     with Object {
+  
   /**
-    * When `true`, the webmap will save even if it contains unsupported content (layers, renderers, symbols). Any content that is not supported will not be saved and the webmap may appear different when reloaded from its portal item.
+    * When `true`, the webmap will save even if it contains unsupported content (layers, renderers, symbols).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#save)
     */
   var ignoreUnsupported: js.UndefOr[Boolean] = js.undefined
 }
-
 object WebMapSaveOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    ignoreUnsupported: js.UndefOr[Boolean] = js.undefined
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): WebMapSaveOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (!js.isUndefined(ignoreUnsupported)) __obj.updateDynamic("ignoreUnsupported")(ignoreUnsupported.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[WebMapSaveOptions]
   }
+  
+  extension [Self <: WebMapSaveOptions](x: Self) {
+    
+    inline def setIgnoreUnsupported(value: Boolean): Self = StObject.set(x, "ignoreUnsupported", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreUnsupportedUndefined: Self = StObject.set(x, "ignoreUnsupported", js.undefined)
+  }
 }
-

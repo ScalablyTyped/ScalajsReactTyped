@@ -1,79 +1,75 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`10`
-import typingsJapgolly.activexWord.activexWordNumbers.`11`
-import typingsJapgolly.activexWord.activexWordNumbers.`12`
-import typingsJapgolly.activexWord.activexWordNumbers.`13`
-import typingsJapgolly.activexWord.activexWordNumbers.`14`
-import typingsJapgolly.activexWord.activexWordNumbers.`15`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
-import typingsJapgolly.activexWord.activexWordNumbers.`5`
-import typingsJapgolly.activexWord.activexWordNumbers.`6`
-import typingsJapgolly.activexWord.activexWordNumbers.`7`
-import typingsJapgolly.activexWord.activexWordNumbers.`8`
-import typingsJapgolly.activexWord.activexWordNumbers.`9`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`10`
+import typingsJapgolly.activexWord.activexWordInts.`11`
+import typingsJapgolly.activexWord.activexWordInts.`12`
+import typingsJapgolly.activexWord.activexWordInts.`13`
+import typingsJapgolly.activexWord.activexWordInts.`14`
+import typingsJapgolly.activexWord.activexWordInts.`15`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import typingsJapgolly.activexWord.activexWordInts.`5`
+import typingsJapgolly.activexWord.activexWordInts.`6`
+import typingsJapgolly.activexWord.activexWordInts.`7`
+import typingsJapgolly.activexWord.activexWordInts.`8`
+import typingsJapgolly.activexWord.activexWordInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`15`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`10`
-  - typingsJapgolly.activexWord.activexWordNumbers.`6`
-  - typingsJapgolly.activexWord.activexWordNumbers.`14`
-  - typingsJapgolly.activexWord.activexWordNumbers.`8`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`12`
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
-  - typingsJapgolly.activexWord.activexWordNumbers.`11`
-  - typingsJapgolly.activexWord.activexWordNumbers.`7`
-  - typingsJapgolly.activexWord.activexWordNumbers.`9`
-  - typingsJapgolly.activexWord.activexWordNumbers.`5`
-  - typingsJapgolly.activexWord.activexWordNumbers.`13`
+  - typingsJapgolly.activexWord.activexWordInts.`15`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`10`
+  - typingsJapgolly.activexWord.activexWordInts.`6`
+  - typingsJapgolly.activexWord.activexWordInts.`14`
+  - typingsJapgolly.activexWord.activexWordInts.`8`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`12`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`11`
+  - typingsJapgolly.activexWord.activexWordInts.`7`
+  - typingsJapgolly.activexWord.activexWordInts.`9`
+  - typingsJapgolly.activexWord.activexWordInts.`5`
+  - typingsJapgolly.activexWord.activexWordInts.`13`
 */
-trait WdLigatures extends js.Object
-
+trait WdLigatures extends StObject
 object WdLigatures {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdLigaturesAll: `15` = this.cast(15)
-  @scala.inline
-  def wdLigaturesContextual: `2` = this.cast(2)
-  @scala.inline
-  def wdLigaturesContextualDiscretional: `10` = this.cast(10)
-  @scala.inline
-  def wdLigaturesContextualHistorical: `6` = this.cast(6)
-  @scala.inline
-  def wdLigaturesContextualHistoricalDiscretional: `14` = this.cast(14)
-  @scala.inline
-  def wdLigaturesDiscretional: `8` = this.cast(8)
-  @scala.inline
-  def wdLigaturesHistorical: `4` = this.cast(4)
-  @scala.inline
-  def wdLigaturesHistoricalDiscretional: `12` = this.cast(12)
-  @scala.inline
-  def wdLigaturesNone: `0` = this.cast(0)
-  @scala.inline
-  def wdLigaturesStandard: `1` = this.cast(1)
-  @scala.inline
-  def wdLigaturesStandardContextual: `3` = this.cast(3)
-  @scala.inline
-  def wdLigaturesStandardContextualDiscretional: `11` = this.cast(11)
-  @scala.inline
-  def wdLigaturesStandardContextualHistorical: `7` = this.cast(7)
-  @scala.inline
-  def wdLigaturesStandardDiscretional: `9` = this.cast(9)
-  @scala.inline
-  def wdLigaturesStandardHistorical: `5` = this.cast(5)
-  @scala.inline
-  def wdLigaturesStandardHistoricalDiscretional: `13` = this.cast(13)
+  
+  inline def wdLigaturesAll: `15` = 15.asInstanceOf[`15`]
+  
+  inline def wdLigaturesContextual: `2` = 2.asInstanceOf[`2`]
+  
+  inline def wdLigaturesContextualDiscretional: `10` = 10.asInstanceOf[`10`]
+  
+  inline def wdLigaturesContextualHistorical: `6` = 6.asInstanceOf[`6`]
+  
+  inline def wdLigaturesContextualHistoricalDiscretional: `14` = 14.asInstanceOf[`14`]
+  
+  inline def wdLigaturesDiscretional: `8` = 8.asInstanceOf[`8`]
+  
+  inline def wdLigaturesHistorical: `4` = 4.asInstanceOf[`4`]
+  
+  inline def wdLigaturesHistoricalDiscretional: `12` = 12.asInstanceOf[`12`]
+  
+  inline def wdLigaturesNone: `0` = 0.asInstanceOf[`0`]
+  
+  inline def wdLigaturesStandard: `1` = 1.asInstanceOf[`1`]
+  
+  inline def wdLigaturesStandardContextual: `3` = 3.asInstanceOf[`3`]
+  
+  inline def wdLigaturesStandardContextualDiscretional: `11` = 11.asInstanceOf[`11`]
+  
+  inline def wdLigaturesStandardContextualHistorical: `7` = 7.asInstanceOf[`7`]
+  
+  inline def wdLigaturesStandardDiscretional: `9` = 9.asInstanceOf[`9`]
+  
+  inline def wdLigaturesStandardHistorical: `5` = 5.asInstanceOf[`5`]
+  
+  inline def wdLigaturesStandardHistoricalDiscretional: `13` = 13.asInstanceOf[`13`]
 }
-

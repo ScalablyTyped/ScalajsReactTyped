@@ -1,15 +1,18 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("StalkerX86Iterator")
 @js.native
-abstract class StalkerX86Iterator () extends X86Writer {
+trait StalkerX86Iterator
+  extends StObject
+     with X86Writer {
+  
   def keep(): Unit = js.native
+  
   def next(): X86Instruction | Null = js.native
+  
   def putCallout(callout: StalkerCallout): Unit = js.native
   def putCallout(callout: StalkerCallout, data: NativePointerValue): Unit = js.native
 }
-

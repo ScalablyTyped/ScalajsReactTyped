@@ -1,22 +1,26 @@
 package typingsJapgolly.navermaps.naver.maps
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Projection extends js.Object {
+trait Projection extends StObject {
+  
   def fromCoordToPoint(coord: Coord): Point
+  
   def fromPointToCoord(point: Point): Coord
 }
-
 object Projection {
-  @scala.inline
-  def apply(fromCoordToPoint: Coord => CallbackTo[Point], fromPointToCoord: Point => CallbackTo[Coord]): Projection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromCoordToPoint")(js.Any.fromFunction1((t0: typingsJapgolly.navermaps.naver.maps.Coord) => fromCoordToPoint(t0).runNow()))
-    __obj.updateDynamic("fromPointToCoord")(js.Any.fromFunction1((t0: typingsJapgolly.navermaps.naver.maps.Point) => fromPointToCoord(t0).runNow()))
+  
+  inline def apply(fromCoordToPoint: Coord => Point, fromPointToCoord: Point => Coord): Projection = {
+    val __obj = js.Dynamic.literal(fromCoordToPoint = js.Any.fromFunction1(fromCoordToPoint), fromPointToCoord = js.Any.fromFunction1(fromPointToCoord))
     __obj.asInstanceOf[Projection]
   }
+  
+  extension [Self <: Projection](x: Self) {
+    
+    inline def setFromCoordToPoint(value: Coord => Point): Self = StObject.set(x, "fromCoordToPoint", js.Any.fromFunction1(value))
+    
+    inline def setFromPointToCoord(value: Point => Coord): Self = StObject.set(x, "fromPointToCoord", js.Any.fromFunction1(value))
+  }
 }
-

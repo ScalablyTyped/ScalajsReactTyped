@@ -1,21 +1,30 @@
 package typingsJapgolly.ibmMobilefirst.WL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Tag extends js.Object {
+trait Tag extends StObject {
+  
   var level: js.UndefOr[Boolean] = js.undefined
+  
   var tag: js.UndefOr[Boolean] = js.undefined
 }
-
 object Tag {
-  @scala.inline
-  def apply(level: js.UndefOr[Boolean] = js.undefined, tag: js.UndefOr[Boolean] = js.undefined): Tag = {
+  
+  inline def apply(): Tag = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(tag)) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tag]
   }
+  
+  extension [Self <: Tag](x: Self) {
+    
+    inline def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setTag(value: Boolean): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+  }
 }
-

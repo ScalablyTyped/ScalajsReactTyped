@@ -1,24 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramShapeDefaultsConnectorHover extends js.Object {
+trait DiagramShapeDefaultsConnectorHover extends StObject {
+  
   var fill: js.UndefOr[String | DiagramShapeDefaultsConnectorHoverFill] = js.undefined
+  
   var stroke: js.UndefOr[String | DiagramShapeDefaultsConnectorHoverStroke] = js.undefined
 }
-
 object DiagramShapeDefaultsConnectorHover {
-  @scala.inline
-  def apply(
-    fill: String | DiagramShapeDefaultsConnectorHoverFill = null,
-    stroke: String | DiagramShapeDefaultsConnectorHoverStroke = null
-  ): DiagramShapeDefaultsConnectorHover = {
+  
+  inline def apply(): DiagramShapeDefaultsConnectorHover = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramShapeDefaultsConnectorHover]
   }
+  
+  extension [Self <: DiagramShapeDefaultsConnectorHover](x: Self) {
+    
+    inline def setFill(value: String | DiagramShapeDefaultsConnectorHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setStroke(value: String | DiagramShapeDefaultsConnectorHoverStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+  }
 }
-

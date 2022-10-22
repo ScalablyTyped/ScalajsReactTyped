@@ -1,41 +1,51 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
 import typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InputMediaVideo
-  extends InputMediaBase
+  extends StObject
+     with InputMediaBase
      with InputMedia {
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var supports_streaming: js.UndefOr[Boolean] = js.undefined
+  
   var `type`: video
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object InputMediaVideo {
-  @scala.inline
-  def apply(
-    media: String,
-    `type`: video,
-    caption: String = null,
-    duration: Int | Double = null,
-    height: Int | Double = null,
-    parse_mode: ParseMode = null,
-    supports_streaming: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
-  ): InputMediaVideo = {
+  
+  inline def apply(media: String): InputMediaVideo = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (parse_mode != null) __obj.updateDynamic("parse_mode")(parse_mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(supports_streaming)) __obj.updateDynamic("supports_streaming")(supports_streaming.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("video")
     __obj.asInstanceOf[InputMediaVideo]
   }
+  
+  extension [Self <: InputMediaVideo](x: Self) {
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setSupports_streaming(value: Boolean): Self = StObject.set(x, "supports_streaming", value.asInstanceOf[js.Any])
+    
+    inline def setSupports_streamingUndefined: Self = StObject.set(x, "supports_streaming", js.undefined)
+    
+    inline def setType(value: video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

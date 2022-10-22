@@ -1,27 +1,19 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.Button")
 @js.native
-class Button protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: ButtonOptions) = this()
+trait Button
+  extends StObject
+     with Widget {
+  
+  def enable(toggle: Boolean): Unit = js.native
+  
   @JSName("options")
   var options_Button: ButtonOptions = js.native
+  
   var wrapper: JQuery = js.native
-  def enable(toggle: Boolean): Unit = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.ui.Button")
-@js.native
-object Button extends js.Object {
-  var fn: Button = js.native
-  def extend(proto: js.Object): Button = js.native
-}
-

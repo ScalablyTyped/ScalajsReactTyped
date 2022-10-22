@@ -2,61 +2,84 @@ package typingsJapgolly.react.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.std.EventTarget
+import org.scalajs.dom.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TouchEvent[T] extends BaseSyntheticEvent[NativeTouchEvent, EventTarget with T, EventTarget] {
+trait TouchEvent[T]
+  extends StObject
+     with UIEvent[T, org.scalajs.dom.TouchEvent] {
+  
   var altKey: Boolean
+  
   var changedTouches: TouchList
+  
   var ctrlKey: Boolean
-  var metaKey: Boolean
-  var shiftKey: Boolean
-  var targetTouches: TouchList
-  var touches: TouchList
+  
   /**
     * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
     */
   def getModifierState(key: String): Boolean
+  
+  var metaKey: Boolean
+  
+  var shiftKey: Boolean
+  
+  var targetTouches: TouchList
+  
+  var touches: TouchList
 }
-
 object TouchEvent {
-  @scala.inline
-  def apply[T](
+  
+  inline def apply[T](
     altKey: Boolean,
     bubbles: Boolean,
     cancelable: Boolean,
     changedTouches: TouchList,
     ctrlKey: Boolean,
-    currentTarget: org.scalajs.dom.raw.EventTarget with T,
+    currentTarget: EventTarget & T,
     defaultPrevented: Boolean,
+    detail: Double,
     eventPhase: Double,
-    getModifierState: String => CallbackTo[Boolean],
+    getModifierState: String => Boolean,
     isDefaultPrevented: CallbackTo[Boolean],
     isPropagationStopped: CallbackTo[Boolean],
     isTrusted: Boolean,
     metaKey: Boolean,
-    nativeEvent: org.scalajs.dom.raw.TouchEvent,
+    nativeEvent: org.scalajs.dom.TouchEvent,
     persist: Callback,
     preventDefault: Callback,
     shiftKey: Boolean,
     stopPropagation: Callback,
-    target: org.scalajs.dom.raw.EventTarget,
+    target: EventTarget,
     targetTouches: TouchList,
     timeStamp: Double,
     touches: TouchList,
-    `type`: String
+    `type`: String,
+    view: AbstractView
   ): TouchEvent[T] = {
-    val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any])
-    __obj.updateDynamic("getModifierState")(js.Any.fromFunction1((t0: java.lang.String) => getModifierState(t0).runNow()))
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped.toJsFn)
-    __obj.updateDynamic("persist")(persist.toJsFn)
-    __obj.updateDynamic("preventDefault")(preventDefault.toJsFn)
-    __obj.updateDynamic("stopPropagation")(stopPropagation.toJsFn)
+    val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), isDefaultPrevented = isDefaultPrevented.toJsFn, isPropagationStopped = isPropagationStopped.toJsFn, isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], persist = persist.toJsFn, preventDefault = preventDefault.toJsFn, shiftKey = shiftKey.asInstanceOf[js.Any], stopPropagation = stopPropagation.toJsFn, target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchEvent[T]]
   }
+  
+  extension [Self <: TouchEvent[?], T](x: Self & TouchEvent[T]) {
+    
+    inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+    
+    inline def setChangedTouches(value: TouchList): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+    
+    inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+    
+    inline def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
+    
+    inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+    
+    inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+    
+    inline def setTargetTouches(value: TouchList): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+    
+    inline def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+  }
 }
-

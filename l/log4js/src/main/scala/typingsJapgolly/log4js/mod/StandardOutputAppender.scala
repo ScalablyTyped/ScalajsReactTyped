@@ -1,23 +1,31 @@
 package typingsJapgolly.log4js.mod
 
 import typingsJapgolly.log4js.log4jsStrings.stdout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StandardOutputAppender extends Appender {
-  // (defaults to colouredLayout)
+trait StandardOutputAppender extends StObject {
+  
+  // (defaults to ColoredLayout)
   var layout: js.UndefOr[Layout] = js.undefined
+  
   var `type`: stdout
 }
-
 object StandardOutputAppender {
-  @scala.inline
-  def apply(`type`: stdout, layout: Layout = null): StandardOutputAppender = {
+  
+  inline def apply(): StandardOutputAppender = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("stdout")
     __obj.asInstanceOf[StandardOutputAppender]
   }
+  
+  extension [Self <: StandardOutputAppender](x: Self) {
+    
+    inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setType(value: stdout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

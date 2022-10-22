@@ -10,10 +10,10 @@ The lodash method `_.size` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.size |
 | Keywords           | lodash-modularized, size |
-| # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 803305 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 293068.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

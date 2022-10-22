@@ -1,33 +1,30 @@
 package typingsJapgolly.simonwepSelectionJs.mod
 
-import org.scalajs.dom.raw.Element
-import org.scalajs.dom.raw.MouseEvent
-import org.scalajs.dom.raw.TouchEvent
-import typingsJapgolly.simonwepSelectionJs.AnonAdded
+import org.scalajs.dom.MouseEvent
+import org.scalajs.dom.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectionEvent extends js.Object {
-  var area: Element
-  var changed: AnonAdded
-  var inst: Selection
-  var oe: MouseEvent | TouchEvent
-  var selected: js.Array[Element]
-}
-
-object SelectionEvent {
-  @scala.inline
-  def apply(
-    area: Element,
-    changed: AnonAdded,
-    inst: Selection,
-    oe: MouseEvent | TouchEvent,
-    selected: js.Array[Element]
-  ): SelectionEvent = {
-    val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], changed = changed.asInstanceOf[js.Any], inst = inst.asInstanceOf[js.Any], oe = oe.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+trait SelectionEvent extends StObject {
   
+  var event: MouseEvent | TouchEvent | Null
+  
+  var store: SelectionStore
+}
+object SelectionEvent {
+  
+  inline def apply(store: SelectionStore): SelectionEvent = {
+    val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any], event = null)
     __obj.asInstanceOf[SelectionEvent]
   }
+  
+  extension [Self <: SelectionEvent](x: Self) {
+    
+    inline def setEvent(value: MouseEvent | TouchEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventNull: Self = StObject.set(x, "event", null)
+    
+    inline def setStore(value: SelectionStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+  }
 }
-

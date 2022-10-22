@@ -2,46 +2,49 @@ package typingsJapgolly.reactNative.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactEventFrom
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.reactNative.reactNativeStrings.`no-hide-descendants`
-import typingsJapgolly.reactNative.reactNativeStrings.assertive
-import typingsJapgolly.reactNative.reactNativeStrings.auto
-import typingsJapgolly.reactNative.reactNativeStrings.button
-import typingsJapgolly.reactNative.reactNativeStrings.no
-import typingsJapgolly.reactNative.reactNativeStrings.none
-import typingsJapgolly.reactNative.reactNativeStrings.polite
-import typingsJapgolly.reactNative.reactNativeStrings.radiobutton_checked
-import typingsJapgolly.reactNative.reactNativeStrings.radiobutton_unchecked
-import typingsJapgolly.reactNative.reactNativeStrings.resize
-import typingsJapgolly.reactNative.reactNativeStrings.scale
-import typingsJapgolly.reactNative.reactNativeStrings.yes
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ImagePropsBase
-  extends AccessibilityProps
+  extends StObject
      with ImagePropsIOS
-     with ImagePropsAndroid {
+     with ImagePropsAndroid
+     with AccessibilityProps {
+  
   var borderBottomLeftRadius: js.UndefOr[Double] = js.undefined
+  
   var borderBottomRightRadius: js.UndefOr[Double] = js.undefined
+  
   var borderRadius: js.UndefOr[Double] = js.undefined
+  
   var borderTopLeftRadius: js.UndefOr[Double] = js.undefined
+  
   var borderTopRightRadius: js.UndefOr[Double] = js.undefined
+  
   /**
     * A static image to display while downloading the final image off the network.
     */
   var defaultSource: js.UndefOr[ImageURISource | Double] = js.undefined
+  
   /**
     * similarly to `source`, this property represents the resource used to render
     * the loading indicator for the image, displayed until image is ready to be
     * displayed, typically after when it got downloaded from network.
     */
   var loadingIndicatorSource: js.UndefOr[ImageURISource] = js.undefined
+  
+  /**
+    * Used to reference react managed images from native code.
+    */
+  var nativeID: js.UndefOr[String] = js.undefined
+  
   /**
     * Invoked on load error with {nativeEvent: {error}}
     */
-  var onError: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle & Element], Unit]] = js.undefined
+  
   /**
     * onLayout function
     *
@@ -49,21 +52,26 @@ trait ImagePropsBase
     *
     * {nativeEvent: { layout: {x, y, width, height} }}.
     */
-  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
+  var onLayout: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle & Element], Unit]] = js.undefined
+  
   /**
     * Invoked when load completes successfully
-    * { source: { url, height, width } }.
+    * { source: { uri, height, width } }.
     */
-  var onLoad: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
+  var onLoad: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle & Element], Unit]] = js.undefined
+  
   /**
     * Invoked when load either succeeds or fails
     */
   var onLoadEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * Invoked on load start
     */
   var onLoadStart: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var progressiveRenderingEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Determines how to resize the image when the frame doesn't match the raw
     * image dimensions.
@@ -87,6 +95,7 @@ trait ImagePropsBase
     * The image will not be scaled up.
     */
   var resizeMode: js.UndefOr[ImageResizeMode] = js.undefined
+  
   /**
     * The image source (either a remote URL or a local file resource).
     *
@@ -96,102 +105,90 @@ trait ImagePropsBase
     *
     * The currently supported formats are png, jpg, jpeg, bmp, gif, webp (Android only), psd (iOS only).
     */
-  var source: ImageSourcePropType
+  var source: js.UndefOr[ImageSourcePropType] = js.undefined
+  
   /**
     * A unique identifier for this element to be used in UI Automation testing scripts.
     */
   var testID: js.UndefOr[String] = js.undefined
 }
-
 object ImagePropsBase {
-  @scala.inline
-  def apply(
-    source: ImageSourcePropType,
-    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
-    accessibilityHint: String = null,
-    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
-    accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    accessibilityRole: AccessibilityRole = null,
-    accessibilityState: AccessibilityState = null,
-    accessibilityStates: js.Array[AccessibilityStates] = null,
-    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
-    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
-    accessible: js.UndefOr[Boolean] = js.undefined,
-    blurRadius: Int | Double = null,
-    borderBottomLeftRadius: Int | Double = null,
-    borderBottomRightRadius: Int | Double = null,
-    borderRadius: Int | Double = null,
-    borderTopLeftRadius: Int | Double = null,
-    borderTopRightRadius: Int | Double = null,
-    capInsets: Insets = null,
-    defaultSource: ImageURISource | Double = null,
-    fadeDuration: Int | Double = null,
-    height: Int | Double = null,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
-    loadingIndicatorSource: ImageURISource = null,
-    onAccessibilityAction: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onAccessibilityEscape: js.UndefOr[Callback] = js.undefined,
-    onAccessibilityTap: js.UndefOr[Callback] = js.undefined,
-    onError: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onLayout: /* event */ LayoutChangeEvent => Callback = null,
-    onLoad: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onLoadEnd: js.UndefOr[Callback] = js.undefined,
-    onLoadStart: js.UndefOr[Callback] = js.undefined,
-    onMagicTap: js.UndefOr[Callback] = js.undefined,
-    onPartialLoad: js.UndefOr[Callback] = js.undefined,
-    onProgress: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    progressiveRenderingEnabled: js.UndefOr[Boolean] = js.undefined,
-    resizeMethod: auto | resize | scale = null,
-    resizeMode: ImageResizeMode = null,
-    testID: String = null,
-    width: Int | Double = null
-  ): ImagePropsBase = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
-    if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
-    if (borderBottomLeftRadius != null) __obj.updateDynamic("borderBottomLeftRadius")(borderBottomLeftRadius.asInstanceOf[js.Any])
-    if (borderBottomRightRadius != null) __obj.updateDynamic("borderBottomRightRadius")(borderBottomRightRadius.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderTopLeftRadius != null) __obj.updateDynamic("borderTopLeftRadius")(borderTopLeftRadius.asInstanceOf[js.Any])
-    if (borderTopRightRadius != null) __obj.updateDynamic("borderTopRightRadius")(borderTopRightRadius.asInstanceOf[js.Any])
-    if (capInsets != null) __obj.updateDynamic("capInsets")(capInsets.asInstanceOf[js.Any])
-    if (defaultSource != null) __obj.updateDynamic("defaultSource")(defaultSource.asInstanceOf[js.Any])
-    if (fadeDuration != null) __obj.updateDynamic("fadeDuration")(fadeDuration.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (loadingIndicatorSource != null) __obj.updateDynamic("loadingIndicatorSource")(loadingIndicatorSource.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onAccessibilityAction(t0).runNow()))
-    onAccessibilityEscape.foreach(p => __obj.updateDynamic("onAccessibilityEscape")(p.toJsFn))
-    onAccessibilityTap.foreach(p => __obj.updateDynamic("onAccessibilityTap")(p.toJsFn))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onError(t0).runNow()))
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactNative.mod.LayoutChangeEvent) => onLayout(t0).runNow()))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onLoad(t0).runNow()))
-    onLoadEnd.foreach(p => __obj.updateDynamic("onLoadEnd")(p.toJsFn))
-    onLoadStart.foreach(p => __obj.updateDynamic("onLoadStart")(p.toJsFn))
-    onMagicTap.foreach(p => __obj.updateDynamic("onMagicTap")(p.toJsFn))
-    onPartialLoad.foreach(p => __obj.updateDynamic("onPartialLoad")(p.toJsFn))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onProgress(t0).runNow()))
-    if (!js.isUndefined(progressiveRenderingEnabled)) __obj.updateDynamic("progressiveRenderingEnabled")(progressiveRenderingEnabled.asInstanceOf[js.Any])
-    if (resizeMethod != null) __obj.updateDynamic("resizeMethod")(resizeMethod.asInstanceOf[js.Any])
-    if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+  
+  inline def apply(): ImagePropsBase = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImagePropsBase]
   }
+  
+  extension [Self <: ImagePropsBase](x: Self) {
+    
+    inline def setBorderBottomLeftRadius(value: Double): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
+    
+    inline def setBorderBottomRightRadius(value: Double): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
+    
+    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setBorderTopLeftRadius(value: Double): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
+    
+    inline def setBorderTopRightRadius(value: Double): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
+    
+    inline def setDefaultSource(value: ImageURISource | Double): Self = StObject.set(x, "defaultSource", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultSourceUndefined: Self = StObject.set(x, "defaultSource", js.undefined)
+    
+    inline def setLoadingIndicatorSource(value: ImageURISource): Self = StObject.set(x, "loadingIndicatorSource", value.asInstanceOf[js.Any])
+    
+    inline def setLoadingIndicatorSourceUndefined: Self = StObject.set(x, "loadingIndicatorSource", js.undefined)
+    
+    inline def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
+    
+    inline def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
+    
+    inline def setOnError(value: ReactEventFrom[NodeHandle & Element] => Callback): Self = StObject.set(x, "onError", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    
+    inline def setOnLayout(value: ReactEventFrom[NodeHandle & Element] => Callback): Self = StObject.set(x, "onLayout", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
+    
+    inline def setOnLoad(value: ReactEventFrom[NodeHandle & Element] => Callback): Self = StObject.set(x, "onLoad", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def setOnLoadEnd(value: Callback): Self = StObject.set(x, "onLoadEnd", value.toJsFn)
+    
+    inline def setOnLoadEndUndefined: Self = StObject.set(x, "onLoadEnd", js.undefined)
+    
+    inline def setOnLoadStart(value: Callback): Self = StObject.set(x, "onLoadStart", value.toJsFn)
+    
+    inline def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
+    
+    inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+    
+    inline def setProgressiveRenderingEnabled(value: Boolean): Self = StObject.set(x, "progressiveRenderingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setProgressiveRenderingEnabledUndefined: Self = StObject.set(x, "progressiveRenderingEnabled", js.undefined)
+    
+    inline def setResizeMode(value: ImageResizeMode): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
+    
+    inline def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
+    
+    inline def setSource(value: ImageSourcePropType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value*))
+    
+    inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
+    
+    inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+  }
 }
-

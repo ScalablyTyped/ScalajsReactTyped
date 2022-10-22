@@ -1,17 +1,7 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.DesignMode")
-@js.native
-class DesignMode () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.ApplicationModel.DesignMode")
-@js.native
-object DesignMode extends js.Object {
-  var designModeEnabled: Boolean = js.native
-}
-
+trait DesignMode extends StObject

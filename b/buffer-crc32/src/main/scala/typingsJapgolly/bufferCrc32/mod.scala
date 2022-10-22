@@ -1,18 +1,22 @@
 package typingsJapgolly.bufferCrc32
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("buffer-crc32", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(input: String): Buffer = js.native
-  def apply(input: String, partialCrc: Buffer): Buffer = js.native
-  def apply(input: Buffer): Buffer = js.native
-  def apply(input: Buffer, partialCrc: Buffer): Buffer = js.native
-  def signed(buffer: Buffer): Double = js.native
-  def unsigned(buffer: Buffer): Double = js.native
+object mod {
+  
+  inline def apply(input: String): Buffer = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def apply(input: String, partialCrc: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], partialCrc.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def apply(input: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def apply(input: Buffer, partialCrc: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], partialCrc.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @JSImport("buffer-crc32", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def signed(buffer: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("signed")(buffer.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def unsigned(buffer: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unsigned")(buffer.asInstanceOf[js.Any]).asInstanceOf[Double]
 }
-

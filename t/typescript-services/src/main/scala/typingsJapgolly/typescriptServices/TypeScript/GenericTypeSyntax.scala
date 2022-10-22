@@ -1,25 +1,23 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.GenericTypeSyntax")
 @js.native
-class GenericTypeSyntax protected () extends SyntaxNode {
-  def this(name: INameSyntax, typeArgumentList: TypeArgumentListSyntax, parsedInStrictMode: Boolean) = this()
-  var name: INameSyntax = js.native
-  var typeArgumentList: TypeArgumentListSyntax = js.native
+trait GenericTypeSyntax
+  extends StObject
+     with SyntaxNode {
+  
   def isType(): Boolean = js.native
+  
+  var name: INameSyntax = js.native
+  
+  var typeArgumentList: TypeArgumentListSyntax = js.native
+  
   def update(name: INameSyntax, typeArgumentList: TypeArgumentListSyntax): GenericTypeSyntax = js.native
+  
   def withName(name: INameSyntax): GenericTypeSyntax = js.native
+  
   def withTypeArgumentList(typeArgumentList: TypeArgumentListSyntax): GenericTypeSyntax = js.native
 }
-
-/* static members */
-@JSGlobal("TypeScript.GenericTypeSyntax")
-@js.native
-object GenericTypeSyntax extends js.Object {
-  def create1(name: INameSyntax): GenericTypeSyntax = js.native
-}
-

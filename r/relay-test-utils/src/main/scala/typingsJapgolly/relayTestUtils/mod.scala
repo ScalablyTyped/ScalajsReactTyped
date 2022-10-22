@@ -1,34 +1,44 @@
 package typingsJapgolly.relayTestUtils
 
-import typingsJapgolly.react.mod.ComponentType
-import typingsJapgolly.reactRelay.mod.RelayPaginationProp
-import typingsJapgolly.reactRelay.mod.RelayProp
-import typingsJapgolly.reactRelay.mod.RelayRefetchProp
-import typingsJapgolly.relayRuntime.relayNetworkTypesMod.GraphQLResponse
-import typingsJapgolly.relayRuntime.relayStoreTypesMod.OperationDescriptor
-import typingsJapgolly.relayTestUtils.relayMockPayloadGeneratorMod.MockResolvers
-import typingsJapgolly.relayTestUtils.relayModernMockEnvironmentMod.RelayMockEnvironment
+import typingsJapgolly.reactRelay.relayHooksHelpersMod.KeyType
+import typingsJapgolly.reactRelay.relayHooksHelpersMod.KeyTypeData
+import typingsJapgolly.relayRuntime.libNetworkRelayNetworkTypesMod.GraphQLSingularResponse
+import typingsJapgolly.relayRuntime.libStoreRelayStoreTypesMod.OperationDescriptor
+import typingsJapgolly.relayTestUtils.anon.MockClientData
+import typingsJapgolly.relayTestUtils.anon.PartialEnvironmentConfig
+import typingsJapgolly.relayTestUtils.libRelayMockPayloadGeneratorMod.MockResolvers
+import typingsJapgolly.relayTestUtils.libRelayModernMockEnvironmentMod.RelayMockEnvironment
+import typingsJapgolly.relayTestUtils.relayTestUtilsStrings.Space$fragmentSpreads
+import typingsJapgolly.relayTestUtils.relayTestUtilsStrings.Space$fragmentType
+import typingsJapgolly.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("relay-test-utils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def createMockEnvironment(): RelayMockEnvironment = js.native
-  def createMockEnvironment(config: AnonHandlerProvider): RelayMockEnvironment = js.native
-  def unwrapContainer[Props](ComponentClass: ComponentType[Props | RelayProp | RelayPaginationProp | RelayRefetchProp]): ComponentType[Props] = js.native
+object mod {
+  
+  @JSImport("relay-test-utils", JSImport.Namespace)
   @js.native
-  object MockEnvironment extends js.Object {
-    def createMockEnvironment(): RelayMockEnvironment = js.native
-    def createMockEnvironment(config: AnonHandlerProvider): RelayMockEnvironment = js.native
+  val ^ : js.Any = js.native
+  
+  object MockPayloadGenerator {
+    
+    @JSImport("relay-test-utils", "MockPayloadGenerator")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def generate(operation: OperationDescriptor): GraphQLSingularResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(operation.asInstanceOf[js.Any]).asInstanceOf[GraphQLSingularResponse]
+    inline def generate(operation: OperationDescriptor, mockResolvers: Null, options: MockClientData): GraphQLSingularResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(operation.asInstanceOf[js.Any], mockResolvers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GraphQLSingularResponse]
+    inline def generate(operation: OperationDescriptor, mockResolvers: Unit, options: MockClientData): GraphQLSingularResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(operation.asInstanceOf[js.Any], mockResolvers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GraphQLSingularResponse]
+    inline def generate(operation: OperationDescriptor, mockResolvers: MockResolvers): GraphQLSingularResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(operation.asInstanceOf[js.Any], mockResolvers.asInstanceOf[js.Any])).asInstanceOf[GraphQLSingularResponse]
+    inline def generate(operation: OperationDescriptor, mockResolvers: MockResolvers, options: MockClientData): GraphQLSingularResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(operation.asInstanceOf[js.Any], mockResolvers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GraphQLSingularResponse]
   }
   
-  @js.native
-  object MockPayloadGenerator extends js.Object {
-    def generate(operation: OperationDescriptor): GraphQLResponse = js.native
-    def generate(operation: OperationDescriptor, mockResolvers: MockResolvers): GraphQLResponse = js.native
-  }
+  inline def createMockEnvironment(): RelayMockEnvironment = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockEnvironment")().asInstanceOf[RelayMockEnvironment]
+  inline def createMockEnvironment(config: PartialEnvironmentConfig): RelayMockEnvironment = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockEnvironment")(config.asInstanceOf[js.Any]).asInstanceOf[RelayMockEnvironment]
   
+  inline def testResolver[TKey /* <: KeyType[Any] */, Ret](
+    resolver: js.Function1[/* arg */ TKey, Ret],
+    fragmentData: Omit[KeyTypeData[TKey, Any], Space$fragmentSpreads | Space$fragmentType]
+  ): Ret = (^.asInstanceOf[js.Dynamic].applyDynamic("testResolver")(resolver.asInstanceOf[js.Any], fragmentData.asInstanceOf[js.Any])).asInstanceOf[Ret]
 }
-

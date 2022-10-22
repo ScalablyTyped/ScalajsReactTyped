@@ -1,13 +1,15 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "AxesHelper")
 @js.native
-class AxesHelper ()
-  extends typingsJapgolly.three.axesHelperMod.AxesHelper {
+/**
+  * @param [size=1]
+  */
+open class AxesHelper ()
+  extends typingsJapgolly.three.srcThreeMod.AxesHelper {
   def this(size: Double) = this()
 }
-

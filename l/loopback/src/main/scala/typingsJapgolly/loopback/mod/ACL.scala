@@ -1,7 +1,7 @@
 package typingsJapgolly.loopback.mod
 
-import typingsJapgolly.loopback.AnonAccessType
-import typingsJapgolly.loopback.AnonAcls
+import typingsJapgolly.loopback.anon.AccessType
+import typingsJapgolly.loopback.anon.Acls
 import typingsJapgolly.loopback.loopbackStrings.ALARM
 import typingsJapgolly.loopback.loopbackStrings.ALLOW
 import typingsJapgolly.loopback.loopbackStrings.AUDIT
@@ -10,9 +10,9 @@ import typingsJapgolly.loopback.loopbackStrings.DENY
 import typingsJapgolly.loopback.loopbackStrings.EXECUTE
 import typingsJapgolly.loopback.loopbackStrings.READ
 import typingsJapgolly.loopback.loopbackStrings.WRITE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Model for access control meta data
@@ -42,11 +42,15 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "ACL")
 @js.native
-class ACL () extends PersistedModel {
+open class ACL protected () extends PersistedModel {
+  def this(data: Any) = this()
+  
   /** accessType Type of access being granted: one of READ, WRITE, or EXECUTE. */
   var accesType: READ | WRITE | EXECUTE = js.native
+  
   /** model Name of the model. */
   var model: String = js.native
+  
   /**permission Type of permission granted  One of:
     *  - ALARM: Generate an alarm, in a system-dependent way, the access specified in the permissions component of the ACL entry.
     *  - ALLOW: Explicitly grants access to the resource.
@@ -54,27 +58,33 @@ class ACL () extends PersistedModel {
     *  - DENY: Explicitly denies access to the resource.
     */
   var permission: ALARM | ALLOW | AUDIT | DENY = js.native
+  
   /** principalId ID of the principal - such as appId, userId or roleId. */
   var principalId: String = js.native
+  
   /** principalType Type of the principal; one of: Application, Use, Role. */
   var principalType: Aplication | typingsJapgolly.loopback.loopbackStrings.User | typingsJapgolly.loopback.loopbackStrings.Role | String = js.native
+  
   /** property Name of the property, method, scope, or relation. */
   var property: String = js.native
-  /** settings Extends the `Model.settings` object. */
-  @JSName("settings")
-  var settings_ACL: AnonAcls = js.native
+  
   /**
     * Get matching score for the given `AccessRequest`.
     * @param {AccessRequest} req The request
     * @returns {number} scor
     */
   def score(req: AccessRequest): Double = js.native
+  
+  /** settings Extends the `Model.settings` object. */
+  @JSName("settings")
+  var settings_ACL: Acls = js.native
 }
-
-/* static members */
-@JSImport("loopback", "ACL")
-@js.native
-object ACL extends js.Object {
+object ACL {
+  
+  @JSImport("loopback", "ACL")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Check if the request has the permission to access.
     * @options {any} context See below.
@@ -86,7 +96,9 @@ object ACL extends js.Object {
     *   READ, REPLICATE, WRITE, or EXECUTE.
     * @param {() => void} callback Callback functio
     */
-  def checkAccessForContext(context: AnonAccessType, callback: js.Function0[Unit]): Unit = js.native
+  /* static member */
+  inline def checkAccessForContext(context: AccessType, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAccessForContext")(context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Check if the given access token can invoke the method
     * @param {AccessToken} token The access token
@@ -97,13 +109,15 @@ object ACL extends js.Object {
     * @param {string|Error} err The error object
     * @param {boolean} allowed is the request allow
     */
-  def checkAccessForToken(
+  /* static member */
+  inline def checkAccessForToken(
     token: AccessToken,
     model: String,
-    modelId: js.Any,
+    modelId: Any,
     method: String,
     callback: js.Function2[/* err */ String | js.Error, /* allowed */ Boolean, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAccessForToken")(token.asInstanceOf[js.Any], model.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any], method.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Check if the given principal is allowed to access the model/property
     * @param {string} principalType The principal type.
@@ -115,21 +129,25 @@ object ACL extends js.Object {
     * @param {string|Error} err The error object
     * @param {AccessRequest} result The access permissio
     */
-  def checkPermission(
+  /* static member */
+  inline def checkPermission(
     principalType: String,
     principalId: String,
     model: String,
     property: String,
     accessType: String,
     callback: js.Function2[/* err */ String | js.Error, /* result */ AccessRequest, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPermission")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], model.asInstanceOf[js.Any], property.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Calculate the matching score for the given rule and request
     * @param {ACL} rule The ACL entry
     * @param {AccessRequest} req The request
     * @returns {number}
     */
-  def getMatchingScore(rule: ACL, req: AccessRequest): Double = js.native
+  /* static member */
+  inline def getMatchingScore(rule: ACL, req: AccessRequest): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatchingScore")(rule.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   /**
     * Check if the given principal is mapped to the role
     * @param {string} principalType Principal type
@@ -137,17 +155,19 @@ object ACL extends js.Object {
     * @param {string|*} role Role id/name
     * @param {() => void} cb Callback functio
     */
-  def isMappedToRole(principalType: String, principalId: String, role: String, cb: js.Function0[Unit]): Unit = js.native
-  def isMappedToRole(principalType: String, principalId: String, role: js.Any, cb: js.Function0[Unit]): Unit = js.native
-  def isMappedToRole(principalType: String, principalId: js.Any, role: String, cb: js.Function0[Unit]): Unit = js.native
-  def isMappedToRole(principalType: String, principalId: js.Any, role: js.Any, cb: js.Function0[Unit]): Unit = js.native
+  /* static member */
+  inline def isMappedToRole(principalType: String, principalId: String, role: String, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def isMappedToRole(principalType: String, principalId: String, role: Any, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def isMappedToRole(principalType: String, principalId: Any, role: String, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def isMappedToRole(principalType: String, principalId: Any, role: Any, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Resolve a principal by type/id
     * @param {string} type Principal type - ROLE/APP/USER
     * @param {string|number} id Principal id or name
     * @param {() => void} cb Callback function
     */
-  def resolvePrincipal(`type`: String, id: String, cb: js.Function0[Unit]): Unit = js.native
-  def resolvePrincipal(`type`: String, id: Double, cb: js.Function0[Unit]): Unit = js.native
+  /* static member */
+  inline def resolvePrincipal(`type`: String, id: String, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePrincipal")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolvePrincipal(`type`: String, id: Double, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePrincipal")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

@@ -1,195 +1,191 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`17`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`18`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`19`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`20`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`21`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`22`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`23`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`24`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`25`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`26`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`27`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`28`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`29`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`30`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`31`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`32`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`33`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`34`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`35`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`36`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`37`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`38`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`39`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`40`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`41`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`42`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`43`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`44`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`17`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`18`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`19`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`20`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`21`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`22`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`23`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`24`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`25`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`26`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`27`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`28`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`29`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`30`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`31`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`32`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`33`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`34`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`35`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`36`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`37`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`38`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`39`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`40`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`41`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`42`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`43`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`44`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`18`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`28`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`21`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`22`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`43`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`44`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`40`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`35`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`36`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`39`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`38`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`37`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`42`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`23`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`24`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`19`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`31`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`30`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`29`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`41`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`20`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`34`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`33`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`32`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`27`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`17`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`25`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`26`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`18`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`28`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`21`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`22`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`43`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`44`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`40`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`35`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`36`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`39`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`38`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`37`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`42`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`23`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`24`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`19`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`31`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`30`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`29`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`41`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`20`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`34`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`33`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`32`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`27`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`17`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`25`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`26`
 */
-trait MsoAnimDirection extends js.Object
-
+trait MsoAnimDirection extends StObject
 object MsoAnimDirection {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoAnimDirectionAcross: `18` = this.cast(18)
-  @scala.inline
-  def msoAnimDirectionBottom: `11` = this.cast(11)
-  @scala.inline
-  def msoAnimDirectionBottomLeft: `15` = this.cast(15)
-  @scala.inline
-  def msoAnimDirectionBottomRight: `14` = this.cast(14)
-  @scala.inline
-  def msoAnimDirectionCenter: `28` = this.cast(28)
-  @scala.inline
-  def msoAnimDirectionClockwise: `21` = this.cast(21)
-  @scala.inline
-  def msoAnimDirectionCounterclockwise: `22` = this.cast(22)
-  @scala.inline
-  def msoAnimDirectionCycleClockwise: `43` = this.cast(43)
-  @scala.inline
-  def msoAnimDirectionCycleCounterclockwise: `44` = this.cast(44)
-  @scala.inline
-  def msoAnimDirectionDown: `3` = this.cast(3)
-  @scala.inline
-  def msoAnimDirectionDownLeft: `9` = this.cast(9)
-  @scala.inline
-  def msoAnimDirectionDownRight: `8` = this.cast(8)
-  @scala.inline
-  def msoAnimDirectionFontAllCaps: `40` = this.cast(40)
-  @scala.inline
-  def msoAnimDirectionFontBold: `35` = this.cast(35)
-  @scala.inline
-  def msoAnimDirectionFontItalic: `36` = this.cast(36)
-  @scala.inline
-  def msoAnimDirectionFontShadow: `39` = this.cast(39)
-  @scala.inline
-  def msoAnimDirectionFontStrikethrough: `38` = this.cast(38)
-  @scala.inline
-  def msoAnimDirectionFontUnderline: `37` = this.cast(37)
-  @scala.inline
-  def msoAnimDirectionGradual: `42` = this.cast(42)
-  @scala.inline
-  def msoAnimDirectionHorizontal: `16` = this.cast(16)
-  @scala.inline
-  def msoAnimDirectionHorizontalIn: `23` = this.cast(23)
-  @scala.inline
-  def msoAnimDirectionHorizontalOut: `24` = this.cast(24)
-  @scala.inline
-  def msoAnimDirectionIn: `19` = this.cast(19)
-  @scala.inline
-  def msoAnimDirectionInBottom: `31` = this.cast(31)
-  @scala.inline
-  def msoAnimDirectionInCenter: `30` = this.cast(30)
-  @scala.inline
-  def msoAnimDirectionInSlightly: `29` = this.cast(29)
-  @scala.inline
-  def msoAnimDirectionInstant: `41` = this.cast(41)
-  @scala.inline
-  def msoAnimDirectionLeft: `4` = this.cast(4)
-  @scala.inline
-  def msoAnimDirectionNone: `0` = this.cast(0)
-  @scala.inline
-  def msoAnimDirectionOrdinalMask: `5` = this.cast(5)
-  @scala.inline
-  def msoAnimDirectionOut: `20` = this.cast(20)
-  @scala.inline
-  def msoAnimDirectionOutBottom: `34` = this.cast(34)
-  @scala.inline
-  def msoAnimDirectionOutCenter: `33` = this.cast(33)
-  @scala.inline
-  def msoAnimDirectionOutSlightly: `32` = this.cast(32)
-  @scala.inline
-  def msoAnimDirectionRight: `2` = this.cast(2)
-  @scala.inline
-  def msoAnimDirectionSlightly: `27` = this.cast(27)
-  @scala.inline
-  def msoAnimDirectionTop: `10` = this.cast(10)
-  @scala.inline
-  def msoAnimDirectionTopLeft: `12` = this.cast(12)
-  @scala.inline
-  def msoAnimDirectionTopRight: `13` = this.cast(13)
-  @scala.inline
-  def msoAnimDirectionUp: `1` = this.cast(1)
-  @scala.inline
-  def msoAnimDirectionUpLeft: `6` = this.cast(6)
-  @scala.inline
-  def msoAnimDirectionUpRight: `7` = this.cast(7)
-  @scala.inline
-  def msoAnimDirectionVertical: `17` = this.cast(17)
-  @scala.inline
-  def msoAnimDirectionVerticalIn: `25` = this.cast(25)
-  @scala.inline
-  def msoAnimDirectionVerticalOut: `26` = this.cast(26)
+  
+  inline def msoAnimDirectionAcross: `18` = 18.asInstanceOf[`18`]
+  
+  inline def msoAnimDirectionBottom: `11` = 11.asInstanceOf[`11`]
+  
+  inline def msoAnimDirectionBottomLeft: `15` = 15.asInstanceOf[`15`]
+  
+  inline def msoAnimDirectionBottomRight: `14` = 14.asInstanceOf[`14`]
+  
+  inline def msoAnimDirectionCenter: `28` = 28.asInstanceOf[`28`]
+  
+  inline def msoAnimDirectionClockwise: `21` = 21.asInstanceOf[`21`]
+  
+  inline def msoAnimDirectionCounterclockwise: `22` = 22.asInstanceOf[`22`]
+  
+  inline def msoAnimDirectionCycleClockwise: `43` = 43.asInstanceOf[`43`]
+  
+  inline def msoAnimDirectionCycleCounterclockwise: `44` = 44.asInstanceOf[`44`]
+  
+  inline def msoAnimDirectionDown: `3` = 3.asInstanceOf[`3`]
+  
+  inline def msoAnimDirectionDownLeft: `9` = 9.asInstanceOf[`9`]
+  
+  inline def msoAnimDirectionDownRight: `8` = 8.asInstanceOf[`8`]
+  
+  inline def msoAnimDirectionFontAllCaps: `40` = 40.asInstanceOf[`40`]
+  
+  inline def msoAnimDirectionFontBold: `35` = 35.asInstanceOf[`35`]
+  
+  inline def msoAnimDirectionFontItalic: `36` = 36.asInstanceOf[`36`]
+  
+  inline def msoAnimDirectionFontShadow: `39` = 39.asInstanceOf[`39`]
+  
+  inline def msoAnimDirectionFontStrikethrough: `38` = 38.asInstanceOf[`38`]
+  
+  inline def msoAnimDirectionFontUnderline: `37` = 37.asInstanceOf[`37`]
+  
+  inline def msoAnimDirectionGradual: `42` = 42.asInstanceOf[`42`]
+  
+  inline def msoAnimDirectionHorizontal: `16` = 16.asInstanceOf[`16`]
+  
+  inline def msoAnimDirectionHorizontalIn: `23` = 23.asInstanceOf[`23`]
+  
+  inline def msoAnimDirectionHorizontalOut: `24` = 24.asInstanceOf[`24`]
+  
+  inline def msoAnimDirectionIn: `19` = 19.asInstanceOf[`19`]
+  
+  inline def msoAnimDirectionInBottom: `31` = 31.asInstanceOf[`31`]
+  
+  inline def msoAnimDirectionInCenter: `30` = 30.asInstanceOf[`30`]
+  
+  inline def msoAnimDirectionInSlightly: `29` = 29.asInstanceOf[`29`]
+  
+  inline def msoAnimDirectionInstant: `41` = 41.asInstanceOf[`41`]
+  
+  inline def msoAnimDirectionLeft: `4` = 4.asInstanceOf[`4`]
+  
+  inline def msoAnimDirectionNone: `0` = 0.asInstanceOf[`0`]
+  
+  inline def msoAnimDirectionOrdinalMask: `5` = 5.asInstanceOf[`5`]
+  
+  inline def msoAnimDirectionOut: `20` = 20.asInstanceOf[`20`]
+  
+  inline def msoAnimDirectionOutBottom: `34` = 34.asInstanceOf[`34`]
+  
+  inline def msoAnimDirectionOutCenter: `33` = 33.asInstanceOf[`33`]
+  
+  inline def msoAnimDirectionOutSlightly: `32` = 32.asInstanceOf[`32`]
+  
+  inline def msoAnimDirectionRight: `2` = 2.asInstanceOf[`2`]
+  
+  inline def msoAnimDirectionSlightly: `27` = 27.asInstanceOf[`27`]
+  
+  inline def msoAnimDirectionTop: `10` = 10.asInstanceOf[`10`]
+  
+  inline def msoAnimDirectionTopLeft: `12` = 12.asInstanceOf[`12`]
+  
+  inline def msoAnimDirectionTopRight: `13` = 13.asInstanceOf[`13`]
+  
+  inline def msoAnimDirectionUp: `1` = 1.asInstanceOf[`1`]
+  
+  inline def msoAnimDirectionUpLeft: `6` = 6.asInstanceOf[`6`]
+  
+  inline def msoAnimDirectionUpRight: `7` = 7.asInstanceOf[`7`]
+  
+  inline def msoAnimDirectionVertical: `17` = 17.asInstanceOf[`17`]
+  
+  inline def msoAnimDirectionVerticalIn: `25` = 25.asInstanceOf[`25`]
+  
+  inline def msoAnimDirectionVerticalOut: `26` = 26.asInstanceOf[`26`]
 }
-

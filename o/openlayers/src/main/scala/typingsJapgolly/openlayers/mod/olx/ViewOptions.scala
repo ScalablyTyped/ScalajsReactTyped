@@ -3,64 +3,108 @@ package typingsJapgolly.openlayers.mod.olx
 import typingsJapgolly.openlayers.mod.Coordinate_
 import typingsJapgolly.openlayers.mod.Extent_
 import typingsJapgolly.openlayers.mod.ProjectionLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object literal with config options for the view.
   */
-trait ViewOptions extends js.Object {
+trait ViewOptions extends StObject {
+  
   var center: js.UndefOr[Coordinate_] = js.undefined
+  
   var constrainRotation: js.UndefOr[Boolean | Double] = js.undefined
+  
   var enableRotation: js.UndefOr[Boolean] = js.undefined
+  
   var extent: js.UndefOr[Extent_] = js.undefined
+  
   var maxResolution: js.UndefOr[Double] = js.undefined
+  
   var maxZoom: js.UndefOr[Double] = js.undefined
+  
   var minResolution: js.UndefOr[Double] = js.undefined
+  
   var minZoom: js.UndefOr[Double] = js.undefined
+  
   var projection: js.UndefOr[ProjectionLike] = js.undefined
+  
   var resolution: js.UndefOr[Double] = js.undefined
+  
   var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var rotation: js.UndefOr[Double] = js.undefined
+  
   var zoom: js.UndefOr[Double] = js.undefined
+  
   var zoomFactor: js.UndefOr[Double] = js.undefined
 }
-
 object ViewOptions {
-  @scala.inline
-  def apply(
-    center: Coordinate_ = null,
-    constrainRotation: Boolean | Double = null,
-    enableRotation: js.UndefOr[Boolean] = js.undefined,
-    extent: Extent_ = null,
-    maxResolution: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minResolution: Int | Double = null,
-    minZoom: Int | Double = null,
-    projection: ProjectionLike = null,
-    resolution: Int | Double = null,
-    resolutions: js.Array[Double] = null,
-    rotation: Int | Double = null,
-    zoom: Int | Double = null,
-    zoomFactor: Int | Double = null
-  ): ViewOptions = {
+  
+  inline def apply(): ViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (constrainRotation != null) __obj.updateDynamic("constrainRotation")(constrainRotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRotation)) __obj.updateDynamic("enableRotation")(enableRotation.asInstanceOf[js.Any])
-    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (maxResolution != null) __obj.updateDynamic("maxResolution")(maxResolution.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minResolution != null) __obj.updateDynamic("minResolution")(minResolution.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
-    if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewOptions]
   }
+  
+  extension [Self <: ViewOptions](x: Self) {
+    
+    inline def setCenter(value: Coordinate_): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    
+    inline def setConstrainRotation(value: Boolean | Double): Self = StObject.set(x, "constrainRotation", value.asInstanceOf[js.Any])
+    
+    inline def setConstrainRotationUndefined: Self = StObject.set(x, "constrainRotation", js.undefined)
+    
+    inline def setEnableRotation(value: Boolean): Self = StObject.set(x, "enableRotation", value.asInstanceOf[js.Any])
+    
+    inline def setEnableRotationUndefined: Self = StObject.set(x, "enableRotation", js.undefined)
+    
+    inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    
+    inline def setMaxResolution(value: Double): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
+    
+    inline def setMaxResolutionUndefined: Self = StObject.set(x, "maxResolution", js.undefined)
+    
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    
+    inline def setMinResolution(value: Double): Self = StObject.set(x, "minResolution", value.asInstanceOf[js.Any])
+    
+    inline def setMinResolutionUndefined: Self = StObject.set(x, "minResolution", js.undefined)
+    
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    
+    inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    
+    inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    
+    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    
+    inline def setResolutions(value: js.Array[Double]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
+    
+    inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
+    
+    inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
+    
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    
+    inline def setZoomFactor(value: Double): Self = StObject.set(x, "zoomFactor", value.asInstanceOf[js.Any])
+    
+    inline def setZoomFactorUndefined: Self = StObject.set(x, "zoomFactor", js.undefined)
+    
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+  }
 }
-

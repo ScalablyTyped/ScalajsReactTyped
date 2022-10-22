@@ -10,10 +10,10 @@ Enables rotation of marker icons in Leaflet.
 | ------------------ | :-------------: |
 | Full name          | leaflet-rotatedmarker |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 298195 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 92687.66666666667 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/bbecquet/Leaflet.RotatedMarker#readme)

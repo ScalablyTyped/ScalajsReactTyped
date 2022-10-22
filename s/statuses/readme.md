@@ -1,7 +1,7 @@
 
 # Scala.js typings for statuses
 
-Typings are for version 1.5
+Typings are for version 2.0
 
 ## Library description:
 HTTP status utility
@@ -10,10 +10,10 @@ HTTP status utility
 | ------------------ | :-------------: |
 | Full name          | statuses |
 | Keywords           | http, status, code |
-| # releases         | 2 |
-| # dependents       | 351 |
-| # downloads        | 736855189 |
-| # stars            | 27 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.47404086E8 |
+| # stars            | 244.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/statuses#readme)

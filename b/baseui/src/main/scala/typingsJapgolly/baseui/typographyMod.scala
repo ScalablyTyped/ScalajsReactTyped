@@ -1,52 +1,161 @@
 package typingsJapgolly.baseui
 
-import typingsJapgolly.baseui.blockMod.BlockProps
-import typingsJapgolly.react.mod.FC
+import typingsJapgolly.baseui.baseuiStrings.div
+import typingsJapgolly.baseui.baseuiStrings.h1
+import typingsJapgolly.baseui.baseuiStrings.h2
+import typingsJapgolly.baseui.baseuiStrings.h3
+import typingsJapgolly.baseui.baseuiStrings.h4
+import typingsJapgolly.baseui.baseuiStrings.h5
+import typingsJapgolly.baseui.baseuiStrings.h6
+import typingsJapgolly.baseui.baseuiStrings.p
+import typingsJapgolly.baseui.blockTypesMod.BlockComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("baseui/typography", JSImport.Namespace)
-@js.native
-object typographyMod extends js.Object {
-  val Caption1: FC[BlockProps] = js.native
-  val Caption2: FC[BlockProps] = js.native
-  val Display: FC[BlockProps] = js.native
-  val Display1: FC[BlockProps] = js.native
-  val Display2: FC[BlockProps] = js.native
-  val Display3: FC[BlockProps] = js.native
-  val Display4: FC[BlockProps] = js.native
-  val DisplayLarge: FC[BlockProps] = js.native
-  val DisplayMedium: FC[BlockProps] = js.native
-  val DisplaySmall: FC[BlockProps] = js.native
-  val DisplayXSmall: FC[BlockProps] = js.native
-  val H1: FC[BlockProps] = js.native
-  val H2: FC[BlockProps] = js.native
-  val H3: FC[BlockProps] = js.native
-  val H4: FC[BlockProps] = js.native
-  val H5: FC[BlockProps] = js.native
-  val H6: FC[BlockProps] = js.native
-  val HeadingLarge: FC[BlockProps] = js.native
-  val HeadingMedium: FC[BlockProps] = js.native
-  val HeadingSmall: FC[BlockProps] = js.native
-  val HeadingXLarge: FC[BlockProps] = js.native
-  val HeadingXSmall: FC[BlockProps] = js.native
-  val HeadingXXLarge: FC[BlockProps] = js.native
-  val Label1: FC[BlockProps] = js.native
-  val Label2: FC[BlockProps] = js.native
-  val Label3: FC[BlockProps] = js.native
-  val Label4: FC[BlockProps] = js.native
-  val LabelLarge: FC[BlockProps] = js.native
-  val LabelMedium: FC[BlockProps] = js.native
-  val LabelSmall: FC[BlockProps] = js.native
-  val LabelXSmall: FC[BlockProps] = js.native
-  val Paragraph1: FC[BlockProps] = js.native
-  val Paragraph2: FC[BlockProps] = js.native
-  val Paragraph3: FC[BlockProps] = js.native
-  val Paragraph4: FC[BlockProps] = js.native
-  val ParagraphLarge: FC[BlockProps] = js.native
-  val ParagraphMedium: FC[BlockProps] = js.native
-  val ParagraphSmall: FC[BlockProps] = js.native
-  val ParagraphXSmall: FC[BlockProps] = js.native
+object typographyMod {
+  
+  @JSImport("baseui/typography", "DisplayLarge")
+  @js.native
+  val DisplayLarge: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "DisplayMedium")
+  @js.native
+  val DisplayMedium: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "DisplaySmall")
+  @js.native
+  val DisplaySmall: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "DisplayXSmall")
+  @js.native
+  val DisplayXSmall: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "HeadingLarge")
+  @js.native
+  val HeadingLarge: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "HeadingMedium")
+  @js.native
+  val HeadingMedium: BlockComponentType[h4] = js.native
+  
+  @JSImport("baseui/typography", "HeadingSmall")
+  @js.native
+  val HeadingSmall: BlockComponentType[h5] = js.native
+  
+  @JSImport("baseui/typography", "HeadingXLarge")
+  @js.native
+  val HeadingXLarge: BlockComponentType[h2] = js.native
+  
+  @JSImport("baseui/typography", "HeadingXSmall")
+  @js.native
+  val HeadingXSmall: BlockComponentType[h6] = js.native
+  
+  @JSImport("baseui/typography", "HeadingXXLarge")
+  @js.native
+  val HeadingXXLarge: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "LabelLarge")
+  @js.native
+  val LabelLarge: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "LabelMedium")
+  @js.native
+  val LabelMedium: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "LabelSmall")
+  @js.native
+  val LabelSmall: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "LabelXSmall")
+  @js.native
+  val LabelXSmall: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "MonoDisplayLarge")
+  @js.native
+  val MonoDisplayLarge: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "MonoDisplayMedium")
+  @js.native
+  val MonoDisplayMedium: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "MonoDisplaySmall")
+  @js.native
+  val MonoDisplaySmall: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "MonoDisplayXSmall")
+  @js.native
+  val MonoDisplayXSmall: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "MonoHeadingLarge")
+  @js.native
+  val MonoHeadingLarge: BlockComponentType[h3] = js.native
+  
+  @JSImport("baseui/typography", "MonoHeadingMedium")
+  @js.native
+  val MonoHeadingMedium: BlockComponentType[h4] = js.native
+  
+  @JSImport("baseui/typography", "MonoHeadingSmall")
+  @js.native
+  val MonoHeadingSmall: BlockComponentType[h5] = js.native
+  
+  @JSImport("baseui/typography", "MonoHeadingXLarge")
+  @js.native
+  val MonoHeadingXLarge: BlockComponentType[h2] = js.native
+  
+  @JSImport("baseui/typography", "MonoHeadingXSmall")
+  @js.native
+  val MonoHeadingXSmall: BlockComponentType[h6] = js.native
+  
+  @JSImport("baseui/typography", "MonoHeadingXXLarge")
+  @js.native
+  val MonoHeadingXXLarge: BlockComponentType[h1] = js.native
+  
+  @JSImport("baseui/typography", "MonoLabelLarge")
+  @js.native
+  val MonoLabelLarge: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "MonoLabelMedium")
+  @js.native
+  val MonoLabelMedium: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "MonoLabelSmall")
+  @js.native
+  val MonoLabelSmall: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "MonoLabelXSmall")
+  @js.native
+  val MonoLabelXSmall: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "MonoParagraphLarge")
+  @js.native
+  val MonoParagraphLarge: BlockComponentType[p] = js.native
+  
+  @JSImport("baseui/typography", "MonoParagraphMedium")
+  @js.native
+  val MonoParagraphMedium: BlockComponentType[p] = js.native
+  
+  @JSImport("baseui/typography", "MonoParagraphSmall")
+  @js.native
+  val MonoParagraphSmall: BlockComponentType[p] = js.native
+  
+  @JSImport("baseui/typography", "MonoParagraphXSmall")
+  @js.native
+  val MonoParagraphXSmall: BlockComponentType[p] = js.native
+  
+  @JSImport("baseui/typography", "ParagraphLarge")
+  @js.native
+  val ParagraphLarge: BlockComponentType[p] = js.native
+  
+  @JSImport("baseui/typography", "ParagraphMedium")
+  @js.native
+  val ParagraphMedium: BlockComponentType[p] = js.native
+  
+  @JSImport("baseui/typography", "ParagraphSmall")
+  @js.native
+  val ParagraphSmall: BlockComponentType[div] = js.native
+  
+  @JSImport("baseui/typography", "ParagraphXSmall")
+  @js.native
+  val ParagraphXSmall: BlockComponentType[p] = js.native
 }
-

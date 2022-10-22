@@ -11,9 +11,9 @@ http client request wrapper
 | Full name          | scoped-http-client |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 48 |
-| # downloads        | 630228 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 54009.0 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/technoweenie/node-scoped-http-client)

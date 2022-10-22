@@ -1,21 +1,30 @@
 package typingsJapgolly.backbone.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigateOptions extends js.Object {
+trait NavigateOptions extends StObject {
+  
   var replace: js.UndefOr[Boolean] = js.undefined
+  
   var trigger: js.UndefOr[Boolean] = js.undefined
 }
-
 object NavigateOptions {
-  @scala.inline
-  def apply(replace: js.UndefOr[Boolean] = js.undefined, trigger: js.UndefOr[Boolean] = js.undefined): NavigateOptions = {
+  
+  inline def apply(): NavigateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
-    if (!js.isUndefined(trigger)) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateOptions]
   }
+  
+  extension [Self <: NavigateOptions](x: Self) {
+    
+    inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    
+    inline def setTrigger(value: Boolean): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+  }
 }
-

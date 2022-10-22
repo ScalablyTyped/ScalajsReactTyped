@@ -1,20 +1,23 @@
 package typingsJapgolly.websocket.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IStringified extends js.Object {
-  def toString(args: js.Any*): String
+trait IStringified extends StObject {
+  
+  def toString(args: Any*): String
 }
-
 object IStringified {
-  @scala.inline
-  def apply(toString: /* repeated */ js.Any => CallbackTo[String]): IStringified = {
+  
+  inline def apply(toString_ : /* repeated */ Any => String): IStringified = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toString")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => toString(t0).runNow()))
+    __obj.updateDynamic("toString")(js.Any.fromFunction1(toString_))
     __obj.asInstanceOf[IStringified]
   }
+  
+  extension [Self <: IStringified](x: Self) {
+    
+    inline def setToString_(value: /* repeated */ Any => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.fridaGum.Java
 
-import typingsJapgolly.fridaGum.fridaGumNumbers.`1`
-import typingsJapgolly.fridaGum.fridaGumNumbers.`2`
+import typingsJapgolly.fridaGum.fridaGumInts.`1`
+import typingsJapgolly.fridaGum.fridaGumInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line:no-const-enum
+// eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.fridaGum.fridaGumNumbers.`1`
-  - typingsJapgolly.fridaGum.fridaGumNumbers.`2`
+  - typingsJapgolly.fridaGum.fridaGumInts.`1`
+  - typingsJapgolly.fridaGum.fridaGumInts.`2`
 */
-trait FieldType extends js.Object
-
+trait FieldType extends StObject
 object FieldType {
-  @scala.inline
-  def Instance: `2` = this.cast(2)
-  @scala.inline
-  def Static: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Instance: `2` = 2.asInstanceOf[`2`]
+  
+  inline def Static: `1` = 1.asInstanceOf[`1`]
 }
-

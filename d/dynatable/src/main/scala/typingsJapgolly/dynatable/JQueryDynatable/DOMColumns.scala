@@ -1,12 +1,13 @@
 package typingsJapgolly.dynatable.JQueryDynatable
 
 import typingsJapgolly.dynatable.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMColumns extends js.Object {
+trait DOMColumns extends StObject {
+  
   /**
     * Add a new column at runtime
     *
@@ -18,6 +19,8 @@ trait DOMColumns extends js.Object {
   def add($column: JQuery, position: Double): Unit = js.native
   def add($column: JQuery, position: Double, skipAppend: Boolean): Unit = js.native
   def add($column: JQuery, position: Double, skipAppend: Boolean, skipUpdate: Boolean): Unit = js.native
+  def add($column: JQuery, position: Double, skipAppend: Unit, skipUpdate: Boolean): Unit = js.native
+  
   /**
     * Add several `data-` attributes on the provided `$cell`
     *
@@ -25,6 +28,7 @@ trait DOMColumns extends js.Object {
     * @return the modified jQuery object `$cell`
     */
   def attachGeneratedAttributes($cell: JQuery): JQuery = js.native
+  
   /**
     * Generate a jQuery object if none is provided and decorate it by calling `attachGeneratedAttributes`
     *
@@ -32,20 +36,24 @@ trait DOMColumns extends js.Object {
     */
   def generate(): JQuery = js.native
   def generate($cell: JQuery): JQuery = js.native
+  
   /**
     * Parse the table header row, analyse its cells and save the columns.
     *
     * @return Could return an `$.error()` if nothing is found.
     */
   def getFromTable(): Unit | JQuery = js.native
+  
   /** Initializes `settings.table.columns` array and calls `getFromTable()` */
   def init(): Unit = js.native
+  
   /**
     * Check if the `$element` is valid (if it is a `table`)
     *
     * @return A boolean
     */
   def initOnLoad(): Boolean = js.native
+  
   def remove(columnIndexOrId: String): Unit = js.native
   /**
     * Generate a jQuery object  if none is provided and decorate it by calling `attachGeneratedAttributes`
@@ -53,12 +61,14 @@ trait DOMColumns extends js.Object {
     * @param columnIndexOrId A number (the column index) or a string (the column id)
     */
   def remove(columnIndexOrId: Double): Unit = js.native
+  
   /**
     * Remove the column from `settings.table.columns`
     *
     * @param index A number (the column index)
     */
   def removeFromArray(index: Double): Unit = js.native
+  
   /**
     * Remove the column from the DOM
     *
@@ -66,4 +76,3 @@ trait DOMColumns extends js.Object {
     */
   def removeFromTable(columnId: String): Unit = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hubot
 
-Typings are for version 2.19
+Typings are for version 3.3
 
 ## Library description:
 A simple helpful robot for your Company
@@ -10,10 +10,10 @@ A simple helpful robot for your Company
 | ------------------ | :-------------: |
 | Full name          | hubot |
 | Keywords           | github, hubot, campfire, bot |
-| # releases         | 7 |
-| # dependents       | 235 |
-| # downloads        | 733132 |
-| # stars            | 35 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 60836.333333333336 |
+| # stars            | 16190.0 |
 
 ## Links
 - [Homepage](https://github.com/hubotio/hubot#readme)

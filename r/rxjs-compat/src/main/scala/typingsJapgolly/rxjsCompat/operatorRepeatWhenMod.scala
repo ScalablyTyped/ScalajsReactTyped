@@ -1,17 +1,15 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/repeatWhen", JSImport.Namespace)
-@js.native
-object operatorRepeatWhenMod extends js.Object {
-  def repeatWhen[T](
-    notifier: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* notifications */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
-    ]
-  ): js.Any = js.native
+object operatorRepeatWhenMod {
+  
+  @JSImport("rxjs-compat/operator/repeatWhen", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def repeatWhen[T](notifier: js.Function1[/* notifications */ Observable_[Any], Observable_[Any]]): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("repeatWhen")(notifier.asInstanceOf[js.Any]).asInstanceOf[Observable_[T]]
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-select
 
-Typings are for version v5.9.0
+Typings are for version 14.1.13
 
 ## Library description:
 React Select
@@ -10,10 +10,10 @@ React Select
 | ------------------ | :-------------: |
 | Full name          | rc-select |
 | Keywords           | react, react-component, react-select, select |
-| # releases         | 119 |
-| # dependents       | 221 |
-| # downloads        | 10819526 |
-| # stars            | 3 |
+| # releases         | 86 |
+| # dependents       | 0.0 |
+| # downloads        | 3723312.3333333335 |
+| # stars            | 794.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/select)
@@ -24,7 +24,7 @@ React Select
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

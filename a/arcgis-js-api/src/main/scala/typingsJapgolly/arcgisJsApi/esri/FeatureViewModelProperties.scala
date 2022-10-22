@@ -1,66 +1,94 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import typingsJapgolly.arcgisJsApi.anon.MapViewPropertiestype2d
+import typingsJapgolly.arcgisJsApi.anon.SceneViewPropertiestype3d
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureViewModelProperties extends js.Object {
+trait FeatureViewModelProperties extends StObject {
+  
   /**
-    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined. Automatic popup templates are supported for layers that support the `createPopupTemplate` method. (Supported for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html) and [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)).
+    * Defines the specific [abilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#Abilities) that the [Feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html) and [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) widgets should use when querying and displaying its content.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#defaultPopupTemplateEnabled)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#abilities)
+    */
+  var abilities: js.UndefOr[FeatureViewModelAbilities] = js.undefined
+  
+  /**
+    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#defaultPopupTemplateEnabled)
     */
   var defaultPopupTemplateEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) used to represent the feature.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#graphic)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#graphic)
     */
   var graphic: js.UndefOr[GraphicProperties] = js.undefined
+  
   /**
-    * A reference to the [view's](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html). Use this property when needing to get access to the underlying layers within the map. This can then be used within [Arcade](https://developers.arcgis.com/arcade) expressions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#map)
+    * A reference to the [view's](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html).
     *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#map)
     */
   var map: js.UndefOr[MapProperties] = js.undefined
+  
   /**
     * The spatial reference used for [Arcade](https://developers.arcgis.com/arcade) operations.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#spatialReference)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#spatialReference)
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
 }
-
 object FeatureViewModelProperties {
-  @scala.inline
-  def apply(
-    defaultPopupTemplateEnabled: js.UndefOr[Boolean] = js.undefined,
-    graphic: GraphicProperties = null,
-    map: MapProperties = null,
-    spatialReference: SpatialReferenceProperties = null,
-    view: MapViewProperties | SceneViewProperties = null
-  ): FeatureViewModelProperties = {
+  
+  inline def apply(): FeatureViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(defaultPopupTemplateEnabled)) __obj.updateDynamic("defaultPopupTemplateEnabled")(defaultPopupTemplateEnabled.asInstanceOf[js.Any])
-    if (graphic != null) __obj.updateDynamic("graphic")(graphic.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureViewModelProperties]
   }
+  
+  extension [Self <: FeatureViewModelProperties](x: Self) {
+    
+    inline def setAbilities(value: FeatureViewModelAbilities): Self = StObject.set(x, "abilities", value.asInstanceOf[js.Any])
+    
+    inline def setAbilitiesUndefined: Self = StObject.set(x, "abilities", js.undefined)
+    
+    inline def setDefaultPopupTemplateEnabled(value: Boolean): Self = StObject.set(x, "defaultPopupTemplateEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultPopupTemplateEnabledUndefined: Self = StObject.set(x, "defaultPopupTemplateEnabled", js.undefined)
+    
+    inline def setGraphic(value: GraphicProperties): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
+    
+    inline def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
+    
+    inline def setMap(value: MapProperties): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

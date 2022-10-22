@@ -1,35 +1,51 @@
 package typingsJapgolly.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateSubaccount extends js.Object {
+trait CreateSubaccount extends StObject {
+  
   /** id of the default IP pool assigned to subaccount"s transmissions */
   var ip_pool: js.UndefOr[String] = js.undefined
+  
   /** list of grants to give the subaccount API key */
   var key_grants: js.Array[String]
+  
   /** user-friendly identifier for subaccount API key */
   var key_label: String
+  
   /** list of IPs the subaccount may be used from */
   var key_valid_ips: js.UndefOr[js.Array[String]] = js.undefined
+  
   /** user-friendly name */
   var name: String
 }
-
 object CreateSubaccount {
-  @scala.inline
-  def apply(
-    key_grants: js.Array[String],
-    key_label: String,
-    name: String,
-    ip_pool: String = null,
-    key_valid_ips: js.Array[String] = null
-  ): CreateSubaccount = {
+  
+  inline def apply(key_grants: js.Array[String], key_label: String, name: String): CreateSubaccount = {
     val __obj = js.Dynamic.literal(key_grants = key_grants.asInstanceOf[js.Any], key_label = key_label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (ip_pool != null) __obj.updateDynamic("ip_pool")(ip_pool.asInstanceOf[js.Any])
-    if (key_valid_ips != null) __obj.updateDynamic("key_valid_ips")(key_valid_ips.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSubaccount]
   }
+  
+  extension [Self <: CreateSubaccount](x: Self) {
+    
+    inline def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
+    
+    inline def setIp_poolUndefined: Self = StObject.set(x, "ip_pool", js.undefined)
+    
+    inline def setKey_grants(value: js.Array[String]): Self = StObject.set(x, "key_grants", value.asInstanceOf[js.Any])
+    
+    inline def setKey_grantsVarargs(value: String*): Self = StObject.set(x, "key_grants", js.Array(value*))
+    
+    inline def setKey_label(value: String): Self = StObject.set(x, "key_label", value.asInstanceOf[js.Any])
+    
+    inline def setKey_valid_ips(value: js.Array[String]): Self = StObject.set(x, "key_valid_ips", value.asInstanceOf[js.Any])
+    
+    inline def setKey_valid_ipsUndefined: Self = StObject.set(x, "key_valid_ips", js.undefined)
+    
+    inline def setKey_valid_ipsVarargs(value: String*): Self = StObject.set(x, "key_valid_ips", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

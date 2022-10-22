@@ -1,23 +1,32 @@
 package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "colunm-settings"
 //#region "other-settings"
-trait RendererSettings extends js.Object {
+trait RendererSettings extends StObject {
+  
   var header: js.UndefOr[String] = js.undefined
+  
   var pageButton: js.UndefOr[String] = js.undefined
 }
-
 object RendererSettings {
-  @scala.inline
-  def apply(header: String = null, pageButton: String = null): RendererSettings = {
+  
+  inline def apply(): RendererSettings = {
     val __obj = js.Dynamic.literal()
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (pageButton != null) __obj.updateDynamic("pageButton")(pageButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[RendererSettings]
   }
+  
+  extension [Self <: RendererSettings](x: Self) {
+    
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setPageButton(value: String): Self = StObject.set(x, "pageButton", value.asInstanceOf[js.Any])
+    
+    inline def setPageButtonUndefined: Self = StObject.set(x, "pageButton", js.undefined)
+  }
 }
-

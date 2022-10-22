@@ -1,25 +1,29 @@
 package typingsJapgolly.esquery.mod
 
 import typingsJapgolly.esquery.esqueryStrings.`nth-child`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NthChild
-  extends NthSelectorAtom
+  extends StObject
+     with NthSelectorAtom
      with NthSelector
      with Selector {
+  
   @JSName("type")
   var type_NthChild: `nth-child`
 }
-
 object NthChild {
-  @scala.inline
-  def apply(index: NumericLiteral, `type`: `nth-child`, subject: js.UndefOr[Boolean] = js.undefined): NthChild = {
+  
+  inline def apply(index: NumericLiteral): NthChild = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("nth-child")
     __obj.asInstanceOf[NthChild]
   }
+  
+  extension [Self <: NthChild](x: Self) {
+    
+    inline def setType(value: `nth-child`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

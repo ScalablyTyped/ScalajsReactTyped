@@ -1,19 +1,21 @@
 package typingsJapgolly.draftJs.mod
 
 import typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.BlockMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("draft-js", "BlockMapBuilder")
 @js.native
-class BlockMapBuilder ()
-  extends typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.BlockMapBuilder
-
-/* static members */
-@JSImport("draft-js", "BlockMapBuilder")
-@js.native
-object BlockMapBuilder extends js.Object {
-  def createFromArray(blocks: js.Array[typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.ContentBlock]): BlockMap = js.native
+open class BlockMapBuilder ()
+  extends StObject
+     with typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.BlockMapBuilder
+object BlockMapBuilder {
+  
+  @JSImport("draft-js", "BlockMapBuilder")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def createFromArray(blocks: js.Array[typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.ContentBlock]): BlockMap = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromArray")(blocks.asInstanceOf[js.Any]).asInstanceOf[BlockMap]
 }
-

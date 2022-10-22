@@ -4,16 +4,16 @@
 Typings are for version 0.14.0
 
 ## Library description:
-a gulp plugin for file include
+A gulp plugin for file include
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | gulp-file-include |
 | Keywords           | gulpplugin, file, include, replace, gulp, plugin |
-| # releases         | 5 |
-| # dependents       | 55 |
-| # downloads        | 343033 |
-| # stars            | 92 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 45401.333333333336 |
+| # stars            | 665.0 |
 
 ## Links
 - [Homepage](https://github.com/haoxins/gulp-file-include#readme)

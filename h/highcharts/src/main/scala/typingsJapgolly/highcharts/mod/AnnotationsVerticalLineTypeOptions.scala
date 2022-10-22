@@ -1,53 +1,73 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnnotationsVerticalLineTypeOptions extends js.Object {
+trait AnnotationsVerticalLineTypeOptions extends StObject {
+  
   /**
     * (Highstock) Connector options.
     */
   var connector: js.UndefOr[AnnotationsVerticalLineTypeConnectorOptions] = js.undefined
+  
   /**
     * (Highstock) Label options.
     */
   var label: js.UndefOr[AnnotationsVerticalLineTypeLabelOptions] = js.undefined
+  
   /**
     * (Highstock) Line options.
     */
   var line: js.UndefOr[AnnotationsVerticalLineTypeLineOptions] = js.undefined
+  
   var points: js.UndefOr[js.Array[AnnotationsVerticalLineTypePointsOptions]] = js.undefined
+  
   /**
     * (Highstock) This number defines which xAxis the point is connected to. It
     * refers to either the axis id or the index of the axis in the xAxis array.
     */
   var xAxis: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock) This number defines which yAxis the point is connected to. It
     * refers to either the axis id or the index of the axis in the xAxis array.
     */
   var yAxis: js.UndefOr[Double] = js.undefined
 }
-
 object AnnotationsVerticalLineTypeOptions {
-  @scala.inline
-  def apply(
-    connector: AnnotationsVerticalLineTypeConnectorOptions = null,
-    label: AnnotationsVerticalLineTypeLabelOptions = null,
-    line: AnnotationsVerticalLineTypeLineOptions = null,
-    points: js.Array[AnnotationsVerticalLineTypePointsOptions] = null,
-    xAxis: Int | Double = null,
-    yAxis: Int | Double = null
-  ): AnnotationsVerticalLineTypeOptions = {
+  
+  inline def apply(): AnnotationsVerticalLineTypeOptions = {
     val __obj = js.Dynamic.literal()
-    if (connector != null) __obj.updateDynamic("connector")(connector.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
-    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsVerticalLineTypeOptions]
   }
+  
+  extension [Self <: AnnotationsVerticalLineTypeOptions](x: Self) {
+    
+    inline def setConnector(value: AnnotationsVerticalLineTypeConnectorOptions): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
+    
+    inline def setLabel(value: AnnotationsVerticalLineTypeLabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLine(value: AnnotationsVerticalLineTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    
+    inline def setPoints(value: js.Array[AnnotationsVerticalLineTypePointsOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    
+    inline def setPointsVarargs(value: AnnotationsVerticalLineTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value*))
+    
+    inline def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    
+    inline def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
+  }
 }
-

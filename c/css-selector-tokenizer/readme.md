@@ -10,10 +10,10 @@ Parses and stringifies CSS selectors
 | ------------------ | :-------------: |
 | Full name          | css-selector-tokenizer |
 | Keywords           | css-modules, selectors |
-| # releases         | 1 |
-| # dependents       | 94 |
-| # downloads        | 203917454 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4266325333333334E7 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://github.com/css-modules/css-selector-tokenizer)

@@ -1,71 +1,121 @@
 package typingsJapgolly.plupload
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.plupload.plupload.Uploader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait pluploadEvents extends js.Object {
+trait pluploadEvents extends StObject {
+  
   var BeforeUpload: js.UndefOr[pluploadEventFile] = js.undefined
+  
   var ChunkUploaded: js.UndefOr[pluploadEventChunkUploaded] = js.undefined
+  
   var Destroy: js.UndefOr[pluploadEvent] = js.undefined
+  
   var Error: js.UndefOr[pluploadEventError] = js.undefined
+  
   var FileFiltered: js.UndefOr[pluploadEventFile] = js.undefined
+  
   var FileUploaded: js.UndefOr[pluploadEventFileUploaded] = js.undefined
+  
   var FilesAdded: js.UndefOr[pluploadEventFiles] = js.undefined
+  
   var FilesRemoved: js.UndefOr[pluploadEventFiles] = js.undefined
+  
   var Init: js.UndefOr[pluploadEvent] = js.undefined
+  
   var OptionChanged: js.UndefOr[pluploadEventOptionChanged] = js.undefined
+  
   var PostInit: js.UndefOr[pluploadEvent] = js.undefined
+  
   var QueueChanged: js.UndefOr[pluploadEvent] = js.undefined
+  
   var Refresh: js.UndefOr[pluploadEvent] = js.undefined
+  
   var StateChanged: js.UndefOr[pluploadEvent] = js.undefined
+  
   var UploadComplete: js.UndefOr[pluploadEventFiles] = js.undefined
+  
   var UploadFile: js.UndefOr[pluploadEventFile] = js.undefined
+  
   var UploadProgress: js.UndefOr[pluploadEventFile] = js.undefined
 }
-
 object pluploadEvents {
-  @scala.inline
-  def apply(
-    BeforeUpload: (/* uploader */ Uploader, /* file */ js.Any) => CallbackTo[js.Any] = null,
-    ChunkUploaded: (/* uploader */ Uploader, /* file */ js.Any, /* response */ pluploadChunkResponse) => CallbackTo[js.Any] = null,
-    Destroy: /* uploader */ Uploader => CallbackTo[js.Any] = null,
-    Error: (/* uploader */ Uploader, /* error */ pluploadError) => CallbackTo[js.Any] = null,
-    FileFiltered: (/* uploader */ Uploader, /* file */ js.Any) => CallbackTo[js.Any] = null,
-    FileUploaded: (/* uploader */ Uploader, /* file */ js.Any, /* response */ pluploadResponse) => CallbackTo[js.Any] = null,
-    FilesAdded: (/* uploader */ Uploader, /* files */ js.Array[js.Any]) => CallbackTo[js.Any] = null,
-    FilesRemoved: (/* uploader */ Uploader, /* files */ js.Array[js.Any]) => CallbackTo[js.Any] = null,
-    Init: /* uploader */ Uploader => CallbackTo[js.Any] = null,
-    OptionChanged: (/* uploader */ Uploader, /* name */ String, /* value */ js.Any, /* oldValue */ js.Any) => CallbackTo[js.Any] = null,
-    PostInit: /* uploader */ Uploader => CallbackTo[js.Any] = null,
-    QueueChanged: /* uploader */ Uploader => CallbackTo[js.Any] = null,
-    Refresh: /* uploader */ Uploader => CallbackTo[js.Any] = null,
-    StateChanged: /* uploader */ Uploader => CallbackTo[js.Any] = null,
-    UploadComplete: (/* uploader */ Uploader, /* files */ js.Array[js.Any]) => CallbackTo[js.Any] = null,
-    UploadFile: (/* uploader */ Uploader, /* file */ js.Any) => CallbackTo[js.Any] = null,
-    UploadProgress: (/* uploader */ Uploader, /* file */ js.Any) => CallbackTo[js.Any] = null
-  ): pluploadEvents = {
+  
+  inline def apply(): pluploadEvents = {
     val __obj = js.Dynamic.literal()
-    if (BeforeUpload != null) __obj.updateDynamic("BeforeUpload")(js.Any.fromFunction2((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader, t1: /* file */ js.Any) => BeforeUpload(t0, t1).runNow()))
-    if (ChunkUploaded != null) __obj.updateDynamic("ChunkUploaded")(js.Any.fromFunction3((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader, t1: /* file */ js.Any, t2: /* response */ typingsJapgolly.plupload.pluploadChunkResponse) => ChunkUploaded(t0, t1, t2).runNow()))
-    if (Destroy != null) __obj.updateDynamic("Destroy")(js.Any.fromFunction1((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader) => Destroy(t0).runNow()))
-    if (Error != null) __obj.updateDynamic("Error")(js.Any.fromFunction2((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader, t1: /* error */ typingsJapgolly.plupload.pluploadError) => Error(t0, t1).runNow()))
-    if (FileFiltered != null) __obj.updateDynamic("FileFiltered")(js.Any.fromFunction2((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader, t1: /* file */ js.Any) => FileFiltered(t0, t1).runNow()))
-    if (FileUploaded != null) __obj.updateDynamic("FileUploaded")(js.Any.fromFunction3((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader, t1: /* file */ js.Any, t2: /* response */ typingsJapgolly.plupload.pluploadResponse) => FileUploaded(t0, t1, t2).runNow()))
-    if (FilesAdded != null) __obj.updateDynamic("FilesAdded")(js.Any.fromFunction2((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader, t1: /* files */ js.Array[js.Any]) => FilesAdded(t0, t1).runNow()))
-    if (FilesRemoved != null) __obj.updateDynamic("FilesRemoved")(js.Any.fromFunction2((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader, t1: /* files */ js.Array[js.Any]) => FilesRemoved(t0, t1).runNow()))
-    if (Init != null) __obj.updateDynamic("Init")(js.Any.fromFunction1((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader) => Init(t0).runNow()))
-    if (OptionChanged != null) __obj.updateDynamic("OptionChanged")(js.Any.fromFunction4((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader, t1: /* name */ java.lang.String, t2: /* value */ js.Any, t3: /* oldValue */ js.Any) => OptionChanged(t0, t1, t2, t3).runNow()))
-    if (PostInit != null) __obj.updateDynamic("PostInit")(js.Any.fromFunction1((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader) => PostInit(t0).runNow()))
-    if (QueueChanged != null) __obj.updateDynamic("QueueChanged")(js.Any.fromFunction1((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader) => QueueChanged(t0).runNow()))
-    if (Refresh != null) __obj.updateDynamic("Refresh")(js.Any.fromFunction1((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader) => Refresh(t0).runNow()))
-    if (StateChanged != null) __obj.updateDynamic("StateChanged")(js.Any.fromFunction1((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader) => StateChanged(t0).runNow()))
-    if (UploadComplete != null) __obj.updateDynamic("UploadComplete")(js.Any.fromFunction2((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader, t1: /* files */ js.Array[js.Any]) => UploadComplete(t0, t1).runNow()))
-    if (UploadFile != null) __obj.updateDynamic("UploadFile")(js.Any.fromFunction2((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader, t1: /* file */ js.Any) => UploadFile(t0, t1).runNow()))
-    if (UploadProgress != null) __obj.updateDynamic("UploadProgress")(js.Any.fromFunction2((t0: /* uploader */ typingsJapgolly.plupload.plupload.Uploader, t1: /* file */ js.Any) => UploadProgress(t0, t1).runNow()))
     __obj.asInstanceOf[pluploadEvents]
   }
+  
+  extension [Self <: pluploadEvents](x: Self) {
+    
+    inline def setBeforeUpload(value: (/* uploader */ Uploader, /* file */ Any) => Any): Self = StObject.set(x, "BeforeUpload", js.Any.fromFunction2(value))
+    
+    inline def setBeforeUploadUndefined: Self = StObject.set(x, "BeforeUpload", js.undefined)
+    
+    inline def setChunkUploaded(value: (/* uploader */ Uploader, /* file */ Any, /* response */ pluploadChunkResponse) => Any): Self = StObject.set(x, "ChunkUploaded", js.Any.fromFunction3(value))
+    
+    inline def setChunkUploadedUndefined: Self = StObject.set(x, "ChunkUploaded", js.undefined)
+    
+    inline def setDestroy(value: /* uploader */ Uploader => Any): Self = StObject.set(x, "Destroy", js.Any.fromFunction1(value))
+    
+    inline def setDestroyUndefined: Self = StObject.set(x, "Destroy", js.undefined)
+    
+    inline def setError(value: (/* uploader */ Uploader, /* error */ pluploadError) => Any): Self = StObject.set(x, "Error", js.Any.fromFunction2(value))
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    
+    inline def setFileFiltered(value: (/* uploader */ Uploader, /* file */ Any) => Any): Self = StObject.set(x, "FileFiltered", js.Any.fromFunction2(value))
+    
+    inline def setFileFilteredUndefined: Self = StObject.set(x, "FileFiltered", js.undefined)
+    
+    inline def setFileUploaded(value: (/* uploader */ Uploader, /* file */ Any, /* response */ pluploadResponse) => Any): Self = StObject.set(x, "FileUploaded", js.Any.fromFunction3(value))
+    
+    inline def setFileUploadedUndefined: Self = StObject.set(x, "FileUploaded", js.undefined)
+    
+    inline def setFilesAdded(value: (/* uploader */ Uploader, /* files */ js.Array[Any]) => Any): Self = StObject.set(x, "FilesAdded", js.Any.fromFunction2(value))
+    
+    inline def setFilesAddedUndefined: Self = StObject.set(x, "FilesAdded", js.undefined)
+    
+    inline def setFilesRemoved(value: (/* uploader */ Uploader, /* files */ js.Array[Any]) => Any): Self = StObject.set(x, "FilesRemoved", js.Any.fromFunction2(value))
+    
+    inline def setFilesRemovedUndefined: Self = StObject.set(x, "FilesRemoved", js.undefined)
+    
+    inline def setInit(value: /* uploader */ Uploader => Any): Self = StObject.set(x, "Init", js.Any.fromFunction1(value))
+    
+    inline def setInitUndefined: Self = StObject.set(x, "Init", js.undefined)
+    
+    inline def setOptionChanged(value: (/* uploader */ Uploader, /* name */ String, /* value */ Any, /* oldValue */ Any) => Any): Self = StObject.set(x, "OptionChanged", js.Any.fromFunction4(value))
+    
+    inline def setOptionChangedUndefined: Self = StObject.set(x, "OptionChanged", js.undefined)
+    
+    inline def setPostInit(value: /* uploader */ Uploader => Any): Self = StObject.set(x, "PostInit", js.Any.fromFunction1(value))
+    
+    inline def setPostInitUndefined: Self = StObject.set(x, "PostInit", js.undefined)
+    
+    inline def setQueueChanged(value: /* uploader */ Uploader => Any): Self = StObject.set(x, "QueueChanged", js.Any.fromFunction1(value))
+    
+    inline def setQueueChangedUndefined: Self = StObject.set(x, "QueueChanged", js.undefined)
+    
+    inline def setRefresh(value: /* uploader */ Uploader => Any): Self = StObject.set(x, "Refresh", js.Any.fromFunction1(value))
+    
+    inline def setRefreshUndefined: Self = StObject.set(x, "Refresh", js.undefined)
+    
+    inline def setStateChanged(value: /* uploader */ Uploader => Any): Self = StObject.set(x, "StateChanged", js.Any.fromFunction1(value))
+    
+    inline def setStateChangedUndefined: Self = StObject.set(x, "StateChanged", js.undefined)
+    
+    inline def setUploadComplete(value: (/* uploader */ Uploader, /* files */ js.Array[Any]) => Any): Self = StObject.set(x, "UploadComplete", js.Any.fromFunction2(value))
+    
+    inline def setUploadCompleteUndefined: Self = StObject.set(x, "UploadComplete", js.undefined)
+    
+    inline def setUploadFile(value: (/* uploader */ Uploader, /* file */ Any) => Any): Self = StObject.set(x, "UploadFile", js.Any.fromFunction2(value))
+    
+    inline def setUploadFileUndefined: Self = StObject.set(x, "UploadFile", js.undefined)
+    
+    inline def setUploadProgress(value: (/* uploader */ Uploader, /* file */ Any) => Any): Self = StObject.set(x, "UploadProgress", js.Any.fromFunction2(value))
+    
+    inline def setUploadProgressUndefined: Self = StObject.set(x, "UploadProgress", js.undefined)
+  }
 }
-

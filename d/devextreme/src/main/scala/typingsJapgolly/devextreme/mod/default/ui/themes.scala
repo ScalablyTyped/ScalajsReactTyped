@@ -1,23 +1,39 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.themes")
+@JSImport("devextreme", "default.ui.themes")
 @js.native
-class themes ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.themes
-
+open class themes ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.themes
 /* static members */
-@JSImport("devextreme", "ui.themes")
-@js.native
-object themes extends js.Object {
-  /** Gets the current theme's name. */
-  def current(): String = js.native
-  /** Sets a theme with a specific name. */
-  def current(themeName: String): Unit = js.native
-  /** Specifies a function to be executed after the theme is loaded. */
-  def ready(callback: js.Function): Unit = js.native
+object themes {
+  
+  @JSImport("devextreme", "default.ui.themes")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Gets the current theme&apos;s name.
+    */
+  inline def current(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[String]
+  /**
+    * Sets a theme with a specific name.
+    */
+  inline def current(themeName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("current")(themeName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /**
+    * Specifies a function to be executed after a theme is loaded.
+    */
+  inline def initialized(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialized")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def isMaterial(theme: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMaterial")(theme.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /**
+    * Specifies a function to be executed each time a theme is switched.
+    */
+  inline def ready(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

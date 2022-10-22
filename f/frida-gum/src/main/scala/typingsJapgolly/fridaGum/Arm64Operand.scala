@@ -1,19 +1,9 @@
 package typingsJapgolly.fridaGum
 
-import typingsJapgolly.fridaGum.fridaGumStrings.`reg-mrs`
-import typingsJapgolly.fridaGum.fridaGumStrings.`reg-msr`
-import typingsJapgolly.fridaGum.fridaGumStrings.barrier
-import typingsJapgolly.fridaGum.fridaGumStrings.cimm
-import typingsJapgolly.fridaGum.fridaGumStrings.fp
-import typingsJapgolly.fridaGum.fridaGumStrings.imm
-import typingsJapgolly.fridaGum.fridaGumStrings.mem
-import typingsJapgolly.fridaGum.fridaGumStrings.prefetch
-import typingsJapgolly.fridaGum.fridaGumStrings.pstate
-import typingsJapgolly.fridaGum.fridaGumStrings.reg
-import typingsJapgolly.fridaGum.fridaGumStrings.sys
+import typingsJapgolly.fridaGum.anon.Index
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.Arm64RegOperand
@@ -28,195 +18,72 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.Arm64PrefetchOperand
   - typingsJapgolly.fridaGum.Arm64BarrierOperand
 */
-trait Arm64Operand extends js.Object
-
+trait Arm64Operand extends StObject
 object Arm64Operand {
-  @scala.inline
-  def Arm64ImmOperand(
-    `type`: imm,
-    value: Int64_,
-    ext: Arm64Extender = null,
-    shift: AnonValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64Operand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Arm64Operand]
+  
+  inline def Arm64BarrierOperand(access: OperandAccess, value: Double): typingsJapgolly.fridaGum.Arm64BarrierOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("barrier")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.Arm64BarrierOperand]
   }
-  @scala.inline
-  def Arm64MemOperand(
-    `type`: mem,
-    value: AnonIndex,
-    ext: Arm64Extender = null,
-    shift: AnonValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64Operand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Arm64Operand]
+  
+  inline def Arm64CimmOperand(access: OperandAccess, value: Int64): typingsJapgolly.fridaGum.Arm64CimmOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("cimm")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.Arm64CimmOperand]
   }
-  @scala.inline
-  def Arm64BarrierOperand(
-    `type`: barrier,
-    value: Double,
-    ext: Arm64Extender = null,
-    shift: AnonValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64Operand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Arm64Operand]
+  
+  inline def Arm64FpOperand(access: OperandAccess, value: Double): typingsJapgolly.fridaGum.Arm64FpOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("fp")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.Arm64FpOperand]
   }
-  @scala.inline
-  def Arm64FpOperand(
-    `type`: fp,
-    value: Double,
-    ext: Arm64Extender = null,
-    shift: AnonValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64Operand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Arm64Operand]
+  
+  inline def Arm64ImmOperand(access: OperandAccess, value: Int64): typingsJapgolly.fridaGum.Arm64ImmOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("imm")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.Arm64ImmOperand]
   }
-  @scala.inline
-  def Arm64RegOperand(
-    `type`: reg,
-    value: Arm64Register,
-    ext: Arm64Extender = null,
-    shift: AnonValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64Operand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Arm64Operand]
+  
+  inline def Arm64MemOperand(access: OperandAccess, value: Index): typingsJapgolly.fridaGum.Arm64MemOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mem")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.Arm64MemOperand]
   }
-  @scala.inline
-  def Arm64PstateOperand(
-    `type`: pstate,
-    value: Double,
-    ext: Arm64Extender = null,
-    shift: AnonValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64Operand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Arm64Operand]
+  
+  inline def Arm64PrefetchOperand(access: OperandAccess, value: Double): typingsJapgolly.fridaGum.Arm64PrefetchOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("prefetch")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.Arm64PrefetchOperand]
   }
-  @scala.inline
-  def Arm64SysOperand(
-    `type`: sys,
-    value: Double,
-    ext: Arm64Extender = null,
-    shift: AnonValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64Operand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Arm64Operand]
+  
+  inline def Arm64PstateOperand(access: OperandAccess, value: Double): typingsJapgolly.fridaGum.Arm64PstateOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pstate")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.Arm64PstateOperand]
   }
-  @scala.inline
-  def Arm64PrefetchOperand(
-    `type`: prefetch,
-    value: Double,
-    ext: Arm64Extender = null,
-    shift: AnonValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64Operand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Arm64Operand]
+  
+  inline def Arm64RegMrsOperand(access: OperandAccess, value: Arm64Register): typingsJapgolly.fridaGum.Arm64RegMrsOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("reg-mrs")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.Arm64RegMrsOperand]
   }
-  @scala.inline
-  def Arm64RegMsrOperand(
-    `type`: `reg-msr`,
-    value: Arm64Register,
-    ext: Arm64Extender = null,
-    shift: AnonValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64Operand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Arm64Operand]
+  
+  inline def Arm64RegMsrOperand(access: OperandAccess, value: Arm64Register): typingsJapgolly.fridaGum.Arm64RegMsrOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("reg-msr")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.Arm64RegMsrOperand]
   }
-  @scala.inline
-  def Arm64CimmOperand(
-    `type`: cimm,
-    value: Int64_,
-    ext: Arm64Extender = null,
-    shift: AnonValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64Operand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Arm64Operand]
+  
+  inline def Arm64RegOperand(access: OperandAccess, value: Arm64Register): typingsJapgolly.fridaGum.Arm64RegOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("reg")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.Arm64RegOperand]
   }
-  @scala.inline
-  def Arm64RegMrsOperand(
-    `type`: `reg-mrs`,
-    value: Arm64Register,
-    ext: Arm64Extender = null,
-    shift: AnonValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64Operand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Arm64Operand]
+  
+  inline def Arm64SysOperand(access: OperandAccess, value: Double): typingsJapgolly.fridaGum.Arm64SysOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sys")
+    __obj.asInstanceOf[typingsJapgolly.fridaGum.Arm64SysOperand]
   }
 }
-

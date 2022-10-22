@@ -1,21 +1,29 @@
 package typingsJapgolly.antDesignReactNative.mod
 
-import typingsJapgolly.antDesignReactNative.AnonAntLocale
-import typingsJapgolly.antDesignReactNative.AnonFormat
-import typingsJapgolly.antDesignReactNative.pickerMod.default
+import typingsJapgolly.antDesignReactNative.anon.Cascade
+import typingsJapgolly.antDesignReactNative.libPickerMod.default
+import typingsJapgolly.react.mod.Context
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "Picker")
 @js.native
-class Picker () extends default
-
+open class Picker () extends default
 /* static members */
-@JSImport("@ant-design/react-native", "Picker")
-@js.native
-object Picker extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonFormat = js.native
+object Picker {
+  
+  @JSImport("@ant-design/react-native", "Picker")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native", "Picker.contextType")
+  @js.native
+  def contextType: Context[js.Object] = js.native
+  inline def contextType_=(x: Context[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@ant-design/react-native", "Picker.defaultProps")
+  @js.native
+  def defaultProps: Cascade = js.native
+  inline def defaultProps_=(x: Cascade): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

@@ -1,32 +1,46 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line: interface-name
-trait ILookupTableInfo extends js.Object {
+trait ILookupTableInfo extends StObject {
+  
   var id: String
+  
   var limitToList: js.UndefOr[Boolean] = js.undefined
+  
   var lookup: js.Array[ILookupInfo]
+  
   var showImage: js.UndefOr[Boolean] = js.undefined
+  
   var showText: js.UndefOr[Boolean] = js.undefined
 }
-
 object ILookupTableInfo {
-  @scala.inline
-  def apply(
-    id: String,
-    lookup: js.Array[ILookupInfo],
-    limitToList: js.UndefOr[Boolean] = js.undefined,
-    showImage: js.UndefOr[Boolean] = js.undefined,
-    showText: js.UndefOr[Boolean] = js.undefined
-  ): ILookupTableInfo = {
+  
+  inline def apply(id: String, lookup: js.Array[ILookupInfo]): ILookupTableInfo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], lookup = lookup.asInstanceOf[js.Any])
-    if (!js.isUndefined(limitToList)) __obj.updateDynamic("limitToList")(limitToList.asInstanceOf[js.Any])
-    if (!js.isUndefined(showImage)) __obj.updateDynamic("showImage")(showImage.asInstanceOf[js.Any])
-    if (!js.isUndefined(showText)) __obj.updateDynamic("showText")(showText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILookupTableInfo]
   }
+  
+  extension [Self <: ILookupTableInfo](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setLimitToList(value: Boolean): Self = StObject.set(x, "limitToList", value.asInstanceOf[js.Any])
+    
+    inline def setLimitToListUndefined: Self = StObject.set(x, "limitToList", js.undefined)
+    
+    inline def setLookup(value: js.Array[ILookupInfo]): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+    
+    inline def setLookupVarargs(value: ILookupInfo*): Self = StObject.set(x, "lookup", js.Array(value*))
+    
+    inline def setShowImage(value: Boolean): Self = StObject.set(x, "showImage", value.asInstanceOf[js.Any])
+    
+    inline def setShowImageUndefined: Self = StObject.set(x, "showImage", js.undefined)
+    
+    inline def setShowText(value: Boolean): Self = StObject.set(x, "showText", value.asInstanceOf[js.Any])
+    
+    inline def setShowTextUndefined: Self = StObject.set(x, "showText", js.undefined)
+  }
 }
-

@@ -1,40 +1,60 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColumnSpec extends js.Object {
-  var calc: js.UndefOr[js.Function2[/* data */ DataTable, /* row */ Double, _]] = js.undefined
+trait ColumnSpec extends StObject {
+  
+  var calc: js.UndefOr[js.Function2[/* data */ DataTable, /* row */ Double, Any]] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var properties: js.UndefOr[Properties] = js.undefined
+  
   var role: js.UndefOr[String] = js.undefined
+  
   var sourceColumn: js.UndefOr[Double] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object ColumnSpec {
-  @scala.inline
-  def apply(
-    calc: (/* data */ DataTable, /* row */ Double) => CallbackTo[js.Any] = null,
-    id: String = null,
-    label: String = null,
-    properties: Properties = null,
-    role: String = null,
-    sourceColumn: Int | Double = null,
-    `type`: String = null
-  ): ColumnSpec = {
+  
+  inline def apply(): ColumnSpec = {
     val __obj = js.Dynamic.literal()
-    if (calc != null) __obj.updateDynamic("calc")(js.Any.fromFunction2((t0: /* data */ typingsJapgolly.googleVisualization.google.visualization.DataTable, t1: /* row */ scala.Double) => calc(t0, t1).runNow()))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (sourceColumn != null) __obj.updateDynamic("sourceColumn")(sourceColumn.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSpec]
   }
+  
+  extension [Self <: ColumnSpec](x: Self) {
+    
+    inline def setCalc(value: (/* data */ DataTable, /* row */ Double) => Any): Self = StObject.set(x, "calc", js.Any.fromFunction2(value))
+    
+    inline def setCalcUndefined: Self = StObject.set(x, "calc", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    
+    inline def setSourceColumn(value: Double): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
+    
+    inline def setSourceColumnUndefined: Self = StObject.set(x, "sourceColumn", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

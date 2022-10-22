@@ -1,23 +1,34 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPv6Range extends IpRange {
-  // Lower address
+trait IPv6Range
+  extends StObject
+     with IpRange {
+  
+  // Lower address.
   var lowerAddress: js.UndefOr[String] = js.undefined
-  // Upper address
+  
+  // Upper address.
   var upperAddress: js.UndefOr[String] = js.undefined
 }
-
 object IPv6Range {
-  @scala.inline
-  def apply(lowerAddress: String = null, upperAddress: String = null): IPv6Range = {
+  
+  inline def apply(): IPv6Range = {
     val __obj = js.Dynamic.literal()
-    if (lowerAddress != null) __obj.updateDynamic("lowerAddress")(lowerAddress.asInstanceOf[js.Any])
-    if (upperAddress != null) __obj.updateDynamic("upperAddress")(upperAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPv6Range]
   }
+  
+  extension [Self <: IPv6Range](x: Self) {
+    
+    inline def setLowerAddress(value: String): Self = StObject.set(x, "lowerAddress", value.asInstanceOf[js.Any])
+    
+    inline def setLowerAddressUndefined: Self = StObject.set(x, "lowerAddress", js.undefined)
+    
+    inline def setUpperAddress(value: String): Self = StObject.set(x, "upperAddress", value.asInstanceOf[js.Any])
+    
+    inline def setUpperAddressUndefined: Self = StObject.set(x, "upperAddress", js.undefined)
+  }
 }
-

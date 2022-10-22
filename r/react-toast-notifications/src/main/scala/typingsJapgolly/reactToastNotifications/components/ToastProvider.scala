@@ -1,52 +1,40 @@
 package typingsJapgolly.reactToastNotifications.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactToastNotifications.AnonToast
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactToastNotifications.anon.Toast
 import typingsJapgolly.reactToastNotifications.mod.Placement
 import typingsJapgolly.reactToastNotifications.mod.ToastProviderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ToastProvider {
-  def apply(
-    autoDismiss: Boolean | Double = null,
-    autoDismissTimeout: Int | Double = null,
-    components: AnonToast = null,
-    placement: Placement = null,
-    transitionDuration: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ToastProviderProps, 
-    typingsJapgolly.reactToastNotifications.mod.ToastProvider, 
-    Unit, 
-    ToastProviderProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (autoDismiss != null) __obj.updateDynamic("autoDismiss")(autoDismiss.asInstanceOf[js.Any])
-    if (autoDismissTimeout != null) __obj.updateDynamic("autoDismissTimeout")(autoDismissTimeout.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactToastNotifications.mod.ToastProviderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactToastNotifications.mod.ToastProvider](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactToastNotifications.mod.ToastProviderProps])(children: _*)
-  }
   @JSImport("react-toast-notifications", "ToastProvider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def autoDismiss(value: Boolean | Double): this.type = set("autoDismiss", value.asInstanceOf[js.Any])
+    
+    inline def autoDismissTimeout(value: Double): this.type = set("autoDismissTimeout", value.asInstanceOf[js.Any])
+    
+    inline def components(value: Toast): this.type = set("components", value.asInstanceOf[js.Any])
+    
+    inline def newestOnTop(value: Boolean): this.type = set("newestOnTop", value.asInstanceOf[js.Any])
+    
+    inline def placement(value: Placement): this.type = set("placement", value.asInstanceOf[js.Any])
+    
+    inline def portalTargetSelector(value: String): this.type = set("portalTargetSelector", value.asInstanceOf[js.Any])
+    
+    inline def transitionDuration(value: Double): this.type = set("transitionDuration", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ToastProvider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ToastProviderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

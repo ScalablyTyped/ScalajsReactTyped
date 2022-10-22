@@ -1,19 +1,24 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BootstrapButtonEventMap extends ControlEventMap {
+trait BootstrapButtonEventMap
+  extends StObject
+     with ControlEventMap {
+  
   var checkedChanged: ProcessingModeEventArgs
+  
   var click: ButtonClickEventArgs
+  
   var gotFocus: EventArgs
+  
   var lostFocus: EventArgs
 }
-
 object BootstrapButtonEventMap {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     checkedChanged: ProcessingModeEventArgs,
     click: ButtonClickEventArgs,
     gotFocus: EventArgs,
@@ -21,8 +26,17 @@ object BootstrapButtonEventMap {
     lostFocus: EventArgs
   ): BootstrapButtonEventMap = {
     val __obj = js.Dynamic.literal(checkedChanged = checkedChanged.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], gotFocus = gotFocus.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], lostFocus = lostFocus.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapButtonEventMap]
   }
+  
+  extension [Self <: BootstrapButtonEventMap](x: Self) {
+    
+    inline def setCheckedChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "checkedChanged", value.asInstanceOf[js.Any])
+    
+    inline def setClick(value: ButtonClickEventArgs): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    
+    inline def setGotFocus(value: EventArgs): Self = StObject.set(x, "gotFocus", value.asInstanceOf[js.Any])
+    
+    inline def setLostFocus(value: EventArgs): Self = StObject.set(x, "lostFocus", value.asInstanceOf[js.Any])
+  }
 }
-

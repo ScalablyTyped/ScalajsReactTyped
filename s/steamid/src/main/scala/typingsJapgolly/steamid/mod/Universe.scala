@@ -1,48 +1,46 @@
 package typingsJapgolly.steamid.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Universe extends js.Object
-
+sealed trait Universe extends StObject
 // Universe constants
 @JSImport("steamid", "Universe")
 @js.native
-object Universe extends js.Object {
-  @js.native
-  sealed trait BETA extends Universe
-  
-  @js.native
-  sealed trait DEV extends Universe
-  
-  @js.native
-  sealed trait INTERNAL extends Universe
-  
-  @js.native
-  sealed trait INVALID extends Universe
-  
-  @js.native
-  sealed trait PUBLIC extends Universe
+object Universe extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Universe with Double] = js.native
-  /* 2 */ @js.native
-  object BETA extends TopLevel[BETA with Double]
+  def apply(value: Double): js.UndefOr[Universe & Double] = js.native
   
-  /* 4 */ @js.native
-  object DEV extends TopLevel[DEV with Double]
+  @js.native
+  sealed trait BETA
+    extends StObject
+       with Universe
+  /* 2 */ val BETA: typingsJapgolly.steamid.mod.Universe.BETA & Double = js.native
   
-  /* 3 */ @js.native
-  object INTERNAL extends TopLevel[INTERNAL with Double]
+  @js.native
+  sealed trait DEV
+    extends StObject
+       with Universe
+  /* 4 */ val DEV: typingsJapgolly.steamid.mod.Universe.DEV & Double = js.native
   
-  /* 0 */ @js.native
-  object INVALID extends TopLevel[INVALID with Double]
+  @js.native
+  sealed trait INTERNAL
+    extends StObject
+       with Universe
+  /* 3 */ val INTERNAL: typingsJapgolly.steamid.mod.Universe.INTERNAL & Double = js.native
   
-  /* 1 */ @js.native
-  object PUBLIC extends TopLevel[PUBLIC with Double]
+  @js.native
+  sealed trait INVALID
+    extends StObject
+       with Universe
+  /* 0 */ val INVALID: typingsJapgolly.steamid.mod.Universe.INVALID & Double = js.native
   
+  @js.native
+  sealed trait PUBLIC
+    extends StObject
+       with Universe
+  /* 1 */ val PUBLIC: typingsJapgolly.steamid.mod.Universe.PUBLIC & Double = js.native
 }
-

@@ -1,39 +1,25 @@
 package typingsJapgolly.reactTransitionGroup.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactTransitionGroup.csstransitionMod.CSSTransitionProps
-import typingsJapgolly.reactTransitionGroup.csstransitionMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This component has complicated props, you'll have to assemble `props` yourself using js.Dynamic.literal(...) or similar. */
+/* The props of this component has an unsupported shape. You can use `set` manually to use it, but with no compiler support :/ . Support for combinations of intersection and union types not implemented */
 object CSSTransition {
-  def apply(
-    props: CSSTransitionProps with js.Object,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CSSTransitionProps with js.Object, default, Unit, CSSTransitionProps with js.Object] = {
-    val __obj = js.Dynamic.literal()
   
-      js.Dynamic.global.Object.assign(__obj, props)
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
+  def apply[Ref /* <: js.UndefOr[HTMLElement] */](p: CSSTransitionProps[Ref]): Builder[Ref] = new Builder[Ref](js.Array(this.component, p.asInstanceOf[js.Any]))
   
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactTransitionGroup.csstransitionMod.CSSTransitionProps with js.Object, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactTransitionGroup.csstransitionMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactTransitionGroup.csstransitionMod.CSSTransitionProps with js.Object])(children: _*)
-  }
-  @JSImport("react-transition-group/CSSTransition", JSImport.Default)
+  @JSImport("react-transition-group", "CSSTransition")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[Ref /* <: js.UndefOr[HTMLElement] */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactTransitionGroup.mod.CSSTransition[Ref]]
+  
+  implicit def make[Ref /* <: js.UndefOr[HTMLElement] */](companion: CSSTransition.type): Builder[Ref] = new Builder[Ref](js.Array(this.component, js.Dictionary.empty))()
 }
-

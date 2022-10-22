@@ -1,33 +1,61 @@
 package typingsJapgolly.spotifyApi.SpotifyApi
 
+import typingsJapgolly.spotifyApi.spotifyApiStrings.album_
+import typingsJapgolly.spotifyApi.spotifyApiStrings.artist
+import typingsJapgolly.spotifyApi.spotifyApiStrings.episode
+import typingsJapgolly.spotifyApi.spotifyApiStrings.playlist
+import typingsJapgolly.spotifyApi.spotifyApiStrings.show
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Context Object
   * [](https://developer.spotify.com/web-api/object-model/#context-object)
   */
-trait ContextObject extends js.Object {
-  var external_urls: ExternalUrlObject | Null
-  var href: String | Null
-  var `type`: ContextObjectType
+trait ContextObject extends StObject {
+  
+  /**
+    * Known external URLs.
+    */
+  var external_urls: ExternalUrlObject
+  
+  /**
+    * A link to the Web API endpoint providing full details.
+    */
+  var href: String
+  
+  /**
+    * The object type.
+    */
+  var `type`: artist | playlist | album_ | show | episode
+  
+  /**
+    * The [Spotify URI](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids).
+    */
   var uri: String
 }
-
 object ContextObject {
-  @scala.inline
-  def apply(
-    `type`: ContextObjectType,
-    uri: String,
-    external_urls: ExternalUrlObject = null,
-    href: String = null
+  
+  inline def apply(
+    external_urls: ExternalUrlObject,
+    href: String,
+    `type`: artist | playlist | album_ | show | episode,
+    uri: String
   ): ContextObject = {
-    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (external_urls != null) __obj.updateDynamic("external_urls")(external_urls.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextObject]
   }
+  
+  extension [Self <: ContextObject](x: Self) {
+    
+    inline def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
+    
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: artist | playlist | album_ | show | episode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+  }
 }
-

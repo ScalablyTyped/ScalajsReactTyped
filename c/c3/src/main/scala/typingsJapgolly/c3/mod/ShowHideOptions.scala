@@ -1,20 +1,25 @@
 package typingsJapgolly.c3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShowHideOptions extends js.Object {
+trait ShowHideOptions extends StObject {
+  
   /** Controls whether the legend will be shown or hidden along with the data. */
   var withLegend: js.UndefOr[Boolean] = js.undefined
 }
-
 object ShowHideOptions {
-  @scala.inline
-  def apply(withLegend: js.UndefOr[Boolean] = js.undefined): ShowHideOptions = {
+  
+  inline def apply(): ShowHideOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(withLegend)) __obj.updateDynamic("withLegend")(withLegend.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowHideOptions]
   }
+  
+  extension [Self <: ShowHideOptions](x: Self) {
+    
+    inline def setWithLegend(value: Boolean): Self = StObject.set(x, "withLegend", value.asInstanceOf[js.Any])
+    
+    inline def setWithLegendUndefined: Self = StObject.set(x, "withLegend", js.undefined)
+  }
 }
-

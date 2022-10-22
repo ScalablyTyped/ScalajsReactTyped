@@ -1,13 +1,12 @@
 package typingsJapgolly.promiseInflight
 
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("promise-inflight", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * @param unique A globally-unique key that is used to identify the call to this
     * function. It determines how to cache the inlfight request. eg. a url or
@@ -17,11 +16,12 @@ object mod extends js.Object {
     * @returns One promise as long as the `doFly()` promise is pending. Note that
     * if `bluebird` is installed, this promise will be a Bluebird promise.
     */
-  def apply[T](unique: Resolvable[js.Array[Resolvable[String]] | String], doFly: js.Function0[Resolvable[T]]): js.Promise[T] = js.native
-  @js.native
-  object active
-    extends /* key */ StringDictionary[js.Promise[_]]
+  inline def apply[T](unique: Resolvable[String], doFly: js.Function0[Resolvable[T]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(unique.asInstanceOf[js.Any], doFly.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def apply[T](unique: Resolvable[js.Array[Resolvable[String]]], doFly: js.Function0[Resolvable[T]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(unique.asInstanceOf[js.Any], doFly.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  type Resolvable[T] = js.Thenable[T] | T
+  @JSImport("promise-inflight", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  type Resolvable[T] = PromiseLike[T] | T
 }
-

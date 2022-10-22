@@ -1,14 +1,26 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.Services.ClassificationInfo")
-@js.native
-class ClassificationInfo protected () extends js.Object {
-  def this(length: Double, classification: TokenClass) = this()
-  var classification: TokenClass = js.native
-  var length: Double = js.native
+trait ClassificationInfo extends StObject {
+  
+  var classification: TokenClass
+  
+  var length: Double
 }
-
+object ClassificationInfo {
+  
+  inline def apply(classification: TokenClass, length: Double): ClassificationInfo = {
+    val __obj = js.Dynamic.literal(classification = classification.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClassificationInfo]
+  }
+  
+  extension [Self <: ClassificationInfo](x: Self) {
+    
+    inline def setClassification(value: TokenClass): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+  }
+}

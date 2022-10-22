@@ -1,22 +1,29 @@
 package typingsJapgolly.angularCommon.mod
 
 import typingsJapgolly.angularCore.mod.NgIterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "NgForOfContext")
 @js.native
-class NgForOfContext[T] protected () extends js.Object {
-  def this($implicit: T, ngForOf: NgIterable[T], index: Double, count: Double) = this()
+open class NgForOfContext[T, U /* <: NgIterable[T] */] protected () extends StObject {
+  def this($implicit: T, ngForOf: U, index: Double, count: Double) = this()
+  
   @JSName("$implicit")
   var $implicit: T = js.native
+  
   var count: Double = js.native
-  val even: Boolean = js.native
-  val first: Boolean = js.native
+  
+  def even: Boolean = js.native
+  
+  def first: Boolean = js.native
+  
   var index: Double = js.native
-  val last: Boolean = js.native
-  var ngForOf: NgIterable[T] = js.native
-  val odd: Boolean = js.native
+  
+  def last: Boolean = js.native
+  
+  var ngForOf: U = js.native
+  
+  def odd: Boolean = js.native
 }
-

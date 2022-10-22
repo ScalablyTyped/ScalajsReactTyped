@@ -1,27 +1,38 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSourceParameterMapDataGroup extends js.Object {
+trait DataSourceParameterMapDataGroup extends StObject {
+  
   var aggregate: js.UndefOr[js.Array[DataSourceParameterMapDataAggregate]] = js.undefined
+  
   var dir: js.UndefOr[String] = js.undefined
+  
   var field: js.UndefOr[String] = js.undefined
 }
-
 object DataSourceParameterMapDataGroup {
-  @scala.inline
-  def apply(
-    aggregate: js.Array[DataSourceParameterMapDataAggregate] = null,
-    dir: String = null,
-    field: String = null
-  ): DataSourceParameterMapDataGroup = {
+  
+  inline def apply(): DataSourceParameterMapDataGroup = {
     val __obj = js.Dynamic.literal()
-    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceParameterMapDataGroup]
   }
+  
+  extension [Self <: DataSourceParameterMapDataGroup](x: Self) {
+    
+    inline def setAggregate(value: js.Array[DataSourceParameterMapDataAggregate]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    
+    inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
+    
+    inline def setAggregateVarargs(value: DataSourceParameterMapDataAggregate*): Self = StObject.set(x, "aggregate", js.Array(value*))
+    
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+  }
 }
-

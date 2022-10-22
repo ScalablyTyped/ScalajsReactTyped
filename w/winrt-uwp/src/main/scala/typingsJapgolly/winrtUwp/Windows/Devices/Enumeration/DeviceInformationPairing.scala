@@ -1,22 +1,23 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Enumeration
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information and enables pairing for a device. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceInformationPairing")
 @js.native
-abstract class DeviceInformationPairing () extends js.Object {
+trait DeviceInformationPairing extends StObject {
+  
   /** Gets a value that indicates whether the device can be paired. */
   var canPair: Boolean = js.native
+  
   /** Gets the DeviceInformationCustomPairing object necessary for custom pairing. */
   var custom: DeviceInformationCustomPairing = js.native
+  
   /** Gets a value that indicates whether the device is currently paired. */
   var isPaired: Boolean = js.native
-  /** Gets the level of protection used to pair the device. */
-  var protectionLevel: DevicePairingProtectionLevel = js.native
+  
   /**
     * Attempts to pair the device.
     * @return The result of the pairing action.
@@ -35,22 +36,13 @@ abstract class DeviceInformationPairing () extends js.Object {
     * @return The result of the pairing action.
     */
   def pairAsync(minProtectionLevel: DevicePairingProtectionLevel, devicePairingSettings: IDevicePairingSettings): IPromiseWithIAsyncOperation[DevicePairingResult] = js.native
+  
+  /** Gets the level of protection used to pair the device. */
+  var protectionLevel: DevicePairingProtectionLevel = js.native
+  
   /**
     * Attempts to unpair the device.
     * @return The result of the unpairing action.
     */
   def unpairAsync(): IPromiseWithIAsyncOperation[DeviceUnpairingResult] = js.native
 }
-
-/* static members */
-@JSGlobal("Windows.Devices.Enumeration.DeviceInformationPairing")
-@js.native
-object DeviceInformationPairing extends js.Object {
-  /**
-    * Attempts to pair for all inbound pairing requests
-    * @param pairingKindsSupported The pairing kinds this device supports.
-    * @return Whether or not the attempt was successful.
-    */
-  def tryRegisterForAllInboundPairingRequests(pairingKindsSupported: DevicePairingKinds): Boolean = js.native
-}
-

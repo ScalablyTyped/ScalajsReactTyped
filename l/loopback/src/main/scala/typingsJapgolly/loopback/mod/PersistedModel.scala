@@ -1,17 +1,17 @@
 package typingsJapgolly.loopback.mod
 
-import typingsJapgolly.loopback.AnonConflicts
-import typingsJapgolly.loopback.AnonCreated
-import typingsJapgolly.loopback.AnonFields
-import typingsJapgolly.loopback.AnonInclude
-import typingsJapgolly.loopback.AnonInfo
-import typingsJapgolly.loopback.AnonOrder
-import typingsJapgolly.loopback.AnonThrows
-import typingsJapgolly.loopback.AnonValidate
-import typingsJapgolly.loopback.AnonWhere
+import typingsJapgolly.loopback.anon.Conflicts
+import typingsJapgolly.loopback.anon.Created
+import typingsJapgolly.loopback.anon.Fields
+import typingsJapgolly.loopback.anon.Include
+import typingsJapgolly.loopback.anon.Info
+import typingsJapgolly.loopback.anon.Order
+import typingsJapgolly.loopback.anon.Throws
+import typingsJapgolly.loopback.anon.Validate
+import typingsJapgolly.loopback.anon.Where
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Extends Model with basic query and CRUD support
@@ -26,7 +26,9 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "PersistedModel")
 @js.native
-class PersistedModel () extends Model {
+open class PersistedModel protected () extends Model {
+  def this(data: Any) = this()
+  
   /**
     * Deletes the model from persistence.
     * Triggers `destroy` hook (async) before and after destroying object.
@@ -38,21 +40,25 @@ class PersistedModel () extends Model {
     * @param {() => void} callback Callback function
     */
   def destroy(callback: CallbackWithoutResult): Unit = js.native
+  
   /**
     * Get the `id` value for the `PersistedModel`
     * @returns {*} The `id` valu
     */
-  def getId(): js.Any = js.native
+  def getId(): Any = js.native
+  
   /**
     * Get the `id` property name of the constructor
     * @returns {string} The `id` property nam
     */
   def getIdName(): String = js.native
+  
   /**
     * Determine if the data model is new.
     * @returns {boolean} Returns true if the data model is new; false otherwise
     */
   def isNewRecord(): Boolean = js.native
+  
   /**
     * Reload object from persistence.  Requires `id` member of `object` to be able to call `find`.
     */
@@ -64,6 +70,7 @@ class PersistedModel () extends Model {
     * @param {any} instance Model instance
     */
   def reload[T](callback: CallbackWithResult[T]): Unit = js.native
+  
   /**
     * Replace attributes for a model instance and persist it into the datasource.
     * Performs validation before replacing
@@ -71,7 +78,7 @@ class PersistedModel () extends Model {
     * @options {any} [options] Options for replace
     * @property {boolean} validate Perform validation before saving.  Default is true.
     */
-  def replaceAttributes[T](data: js.Any): js.Promise[T] = js.native
+  def replaceAttributes[T](data: Any): js.Promise[T] = js.native
   /**
     * Replace attributes for a model instance and persist it into the datasource.
     * Performs validation before replacing
@@ -80,8 +87,8 @@ class PersistedModel () extends Model {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Replaced instance
     */
-  def replaceAttributes[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
-  def replaceAttributes[T](data: js.Any, options: AnonValidate): js.Promise[T] = js.native
+  def replaceAttributes[T](data: Any, callback: CallbackWithResult[T]): Unit = js.native
+  def replaceAttributes[T](data: Any, options: Validate): js.Promise[T] = js.native
   /**
     * Replace attributes for a model instance and persist it into the datasource.
     * Performs validation before replacing
@@ -92,7 +99,8 @@ class PersistedModel () extends Model {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Replaced instance
     */
-  def replaceAttributes[T](data: js.Any, options: AnonValidate, callback: CallbackWithResult[T]): Unit = js.native
+  def replaceAttributes[T](data: Any, options: Validate, callback: CallbackWithResult[T]): Unit = js.native
+  
   /**
     * Save model instance. If the instance doesn't have an ID, then calls [create](#persistedmodelcreatedata-cb) instead.
     * Triggers: validate, save, update, or create.
@@ -110,7 +118,7 @@ class PersistedModel () extends Model {
     * @param {any} instance Model instance saved or created
     */
   def save[T](callback: CallbackWithResult[T]): Unit = js.native
-  def save[T](options: AnonThrows): js.Promise[T] = js.native
+  def save[T](options: Throws): js.Promise[T] = js.native
   /**
     * Save model instance. If the instance doesn't have an ID, then calls [create](#persistedmodelcreatedata-cb) instead.
     * Triggers: validate, save, update, or create.
@@ -122,21 +130,23 @@ class PersistedModel () extends Model {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Model instance saved or created
     */
-  def save[T](options: AnonThrows, callback: CallbackWithResult[T]): Unit = js.native
+  def save[T](options: Throws, callback: CallbackWithResult[T]): Unit = js.native
+  
   /**
     * Set the correct `id` property for the `PersistedModel`. Uses the `setId` method if the model is attached to
     * connector that defines it.  Otherwise, uses the default lookup.
     * Override this method to handle complex IDs
     * @param {*} val The `id` value. Will be converted to the type that the `id` property specifies
     */
-  def setId(`val`: js.Any): Unit = js.native
+  def setId(`val`: Any): Unit = js.native
+  
   /**
     * Update a single attribute.
     * Equivalent to `updateAttributes({name: 'value'}, cb)
     * @param {string} name Name of property.
     * @param {any} value Value of property.
     */
-  def updateAttribute[T](name: String, value: js.Any): js.Promise[T] = js.native
+  def updateAttribute[T](name: String, value: Any): js.Promise[T] = js.native
   /**
     * Update a single attribute.
     * Equivalent to `updateAttributes({name: 'value'}, cb)
@@ -146,13 +156,14 @@ class PersistedModel () extends Model {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Updated instance
     */
-  def updateAttribute[T](name: String, value: js.Any, callback: CallbackWithResult[T]): Unit = js.native
+  def updateAttribute[T](name: String, value: Any, callback: CallbackWithResult[T]): Unit = js.native
+  
   /**
     * Update set of attributes.  Performs validation before updating
     * Triggers: `validation`, `save` and `update` hooks
     * @param {any} data Data to update.
     */
-  def updateAttributes[T](data: js.Any): js.Promise[T] = js.native
+  def updateAttributes[T](data: Any): js.Promise[T] = js.native
   /**
     * Update set of attributes.  Performs validation before updating
     * Triggers: `validation`, `save` and `update` hooks
@@ -161,13 +172,14 @@ class PersistedModel () extends Model {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Updated instance
     */
-  def updateAttributes[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
+  def updateAttributes[T](data: Any, callback: CallbackWithResult[T]): Unit = js.native
 }
-
-/* static members */
-@JSImport("loopback", "PersistedModel")
-@js.native
-object PersistedModel extends js.Object {
+object PersistedModel {
+  
+  @JSImport("loopback", "PersistedModel")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Apply an update list
     * **Note: this is not atomic*
@@ -175,7 +187,8 @@ object PersistedModel extends js.Object {
     * @param {any} options An optional options object to pass to underlying data-access calls.
     * @param  {() => void} callback Callback function
     */
-  def bulkUpdate(updates: js.Array[_], options: js.Any): js.Promise[Unit] = js.native
+  /* static member */
+  inline def bulkUpdate(updates: js.Array[Any], options: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bulkUpdate")(updates.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   /**
     * Apply an update list
     * **Note: this is not atomic*
@@ -183,7 +196,9 @@ object PersistedModel extends js.Object {
     * @param {any} options An optional options object to pass to underlying data-access calls.
     * @param  {() => void} callback Callback function
     */
-  def bulkUpdate(updates: js.Array[_], options: js.Any, callback: CallbackWithoutResult): Unit = js.native
+  /* static member */
+  inline def bulkUpdate(updates: js.Array[Any], options: Any, callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bulkUpdate")(updates.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Get the changes to a model since the specified checkpoint. Provide a filter object
     * to reduce the number of results returned.
@@ -193,7 +208,8 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {Array} changes An Array of [Change](#change) objects
     */
-  def changes(since: Double, filter: js.Any): js.Promise[js.Array[_]] = js.native
+  /* static member */
+  inline def changes(since: Double, filter: Any): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("changes")(since.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
   /**
     * Get the changes to a model since the specified checkpoint. Provide a filter object
     * to reduce the number of results returned.
@@ -203,18 +219,23 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {Array} changes An Array of [Change](#change) objects
     */
-  def changes(since: Double, filter: js.Any, callback: CallbackWithResult[_]): Unit = js.native
+  /* static member */
+  inline def changes(since: Double, filter: Any, callback: CallbackWithResult[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("changes")(since.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Create a checkpoint
     * @param  {() => void} callback
     */
-  def checkpoint(): Unit = js.native
-  def checkpoint(callback: js.Function0[Unit]): Unit = js.native
+  /* static member */
+  inline def checkpoint(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkpoint")().asInstanceOf[Unit]
+  inline def checkpoint(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkpoint")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /**
     * Create a checkpoint
     */
-  @JSName("checkpoint")
-  def checkpoint_Promise(): js.Promise[Unit] = js.native
+  /* static member */
+  inline def checkpoint_Promise(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkpoint")().asInstanceOf[js.Promise[Unit]]
+  
   /**
     * Return the number of records that match the optional "where" filter.
     * @param {any} [where] Optional where filter, like
@@ -227,8 +248,9 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {number} count number of instances updated
     */
-  def count(): js.Promise[Double] = js.native
-  def count(where: js.Any): js.Promise[Double] = js.native
+  /* static member */
+  inline def count(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[js.Promise[Double]]
+  inline def count(where: Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(where.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   /**
     * Return the number of records that match the optional "where" filter.
     * @param {any} [where] Optional where filter, like
@@ -241,14 +263,19 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {number} count number of instances updated
     */
-  def count(where: js.Any, callback: CallbackWithResult[Double]): Unit = js.native
+  /* static member */
+  inline def count(where: Any, callback: CallbackWithResult[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(where.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Create new instance of Model, and save to database
     * @param {any}|[{any}] data Optional data argument.  Can be either a single model instance or an Array of instances
     * @returns {T | T[]} Model instances or null
     */
-  def create[T](): js.Promise[T | js.Array[T] | Null] = js.native
-  def create[T](data: js.Any): js.Promise[T | js.Array[T] | Null] = js.native
+  /* static member */
+  inline def create[T](): js.Promise[T | js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[T | js.Array[T] | Null]]
+  inline def create[T](data: js.Array[Any]): js.Promise[T | js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | js.Array[T] | Null]]
+  inline def create[T](data: js.Array[Any], callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create[T](data: Any): js.Promise[T | js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | js.Array[T] | Null]]
   /**
     * Create new instance of Model, and save to database
     * @param {any}|[{any}] data Optional data argument.  Can be either a single model instance or an Array of instances
@@ -256,46 +283,55 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} models Model instances or null
     */
-  def create[T](data: js.Any, callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = js.native
-  def create[T](data: js.Array[_]): js.Promise[T | js.Array[T] | Null] = js.native
-  def create[T](data: js.Array[_], callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = js.native
+  /* static member */
+  inline def create[T](data: Any, callback: CallbackWithResult[T | js.Array[T] | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Create a change stream. See here for more info http://loopback.io/doc/en/lb2/Realtime-server-sent-events.html
     * @param {any} options Only changes to models matching this where filter will be included in the ChangeStream.
     * @returns {any} changes
     */
-  def createChangeStream(options: AnonWhere): js.Promise[_] = js.native
+  /* static member */
+  inline def createChangeStream(options: Where): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChangeStream")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   /**
     * Create a change stream. See here for more info http://loopback.io/doc/en/lb2/Realtime-server-sent-events.html
     * @param {any} options Only changes to models matching this where filter will be included in the ChangeStream.
     * @param {() => void} callback
     */
-  def createChangeStream(options: AnonWhere, callback: CallbackWithResult[_]): Unit = js.native
+  /* static member */
+  inline def createChangeStream(options: Where, callback: CallbackWithResult[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createChangeStream")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Create an update list (for `Model.bulkUpdate()`) from a delta list
     * (result of `Change.diff()`)
     * @param  {Array}    deltas
     */
-  def createUpdates(deltas: js.Array[_]): js.Promise[Unit] = js.native
+  /* static member */
+  inline def createUpdates(deltas: js.Array[Any]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUpdates")(deltas.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Create an update list (for `Model.bulkUpdate()`) from a delta list
     * (result of `Change.diff()`)
     * @param  {Array}    deltas
     * @param  {() => void} callback
     */
-  def createUpdates(deltas: js.Array[_], callback: CallbackWithoutResult): Unit = js.native
+  /* static member */
+  inline def createUpdates(deltas: js.Array[Any], callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createUpdates")(deltas.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Get the current checkpoint ID
     * @returns {Promise<number>} resolves to currentCheckpointId
     */
-  def currentCheckpoint(): js.Promise[Double] = js.native
+  /* static member */
+  inline def currentCheckpoint(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("currentCheckpoint")().asInstanceOf[js.Promise[Double]]
   /**
     * Get the current checkpoint ID
     * @callback {() => void} callback Callback function called with `(err, currentCheckpointId)` arguments.  Required.
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {number} currentCheckpointId Current checkpoint ID
     */
-  def currentCheckpoint(callback: CallbackWithResult[Double]): Unit = js.native
+  /* static member */
+  inline def currentCheckpoint(callback: CallbackWithResult[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("currentCheckpoint")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /**
     * Destroy all model instances that match the optional `where` specification
     * @param {any} [where] Optional where filter, like:
@@ -307,8 +343,9 @@ object PersistedModel extends js.Object {
     *
     * @returns {Promise<{ count: number }>} number of instances (rows, documents) destroyed
     */
-  def destroyAll(): js.Promise[AnonInfo] = js.native
-  def destroyAll(where: js.Any): js.Promise[AnonInfo] = js.native
+  /* static member */
+  inline def destroyAll(): js.Promise[Info] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")().asInstanceOf[js.Promise[Info]]
+  inline def destroyAll(where: Any): js.Promise[Info] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")(where.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Info]]
   /**
     * Destroy all model instances that match the optional `where` specification
     * @param {any} [where] Optional where filter, like:
@@ -323,26 +360,32 @@ object PersistedModel extends js.Object {
     * @param {any} info Additional information about the command outcome.
     * @param {number} info.count number of instances (rows, documents) destroyed
     */
-  def destroyAll(where: js.Any, callback: CallbackWithMultipleResults[_, Double]): Unit = js.native
+  /* static member */
+  inline def destroyAll(where: Any, callback: CallbackWithMultipleResults[Any, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")(where.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Destroy model instance with the specified ID.
     * @param {*} id The ID value of model instance to delete.
     */
-  def destroyById(id: js.Any): js.Promise[Unit] = js.native
+  /* static member */
+  inline def destroyById(id: Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyById")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Destroy model instance with the specified ID.
     * @param {*} id The ID value of model instance to delete.
     * @callback {() => void} callback Callback function called with `(err)` arguments.  Required.
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object)
     */
-  def destroyById(id: js.Any, callback: CallbackWithoutResult): Unit = js.native
+  /* static member */
+  inline def destroyById(id: Any, callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyById")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Get a set of deltas and conflicts since the given checkpoint
     * See [Change.diff()](#change-diff) for details
     * @param  {number}  since  Find deltas since this checkpoint.
     * @param  {Array}  remoteChanges  An Array of change objects.
     */
-  def diff(since: Double, remoteChanges: js.Array[_]): js.Promise[_] = js.native
+  /* static member */
+  inline def diff(since: Double, remoteChanges: js.Array[Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(since.asInstanceOf[js.Any], remoteChanges.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   /**
     * Get a set of deltas and conflicts since the given checkpoint
     * See [Change.diff()](#change-diff) for details
@@ -352,16 +395,21 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} result any with `deltas` and `conflicts` properties; see [Change.diff()](#change-diff) for details
     */
-  def diff(since: Double, remoteChanges: js.Array[_], callback: CallbackWithResult[_]): Unit = js.native
+  /* static member */
+  inline def diff(since: Double, remoteChanges: js.Array[Any], callback: CallbackWithResult[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(since.asInstanceOf[js.Any], remoteChanges.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Enable the tracking of changes made to the model. Usually for replication.
     */
-  def enableChangeTracking(): Unit = js.native
+  /* static member */
+  inline def enableChangeTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableChangeTracking")().asInstanceOf[Unit]
+  
   /**
     * Check whether a model instance exists in database
     * @param {id} id Identifier of object (primary key value)
     */
-  def exists(id: js.Any): js.Promise[Boolean] = js.native
+  /* static member */
+  inline def exists(id: Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   /**
     * Check whether a model instance exists in database
     * @param {id} id Identifier of object (primary key value)
@@ -369,7 +417,9 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {boolean} exists True if the instance with the specified ID exists; false otherwise
     */
-  def exists(id: js.Any, callback: CallbackWithResult[Boolean]): Unit = js.native
+  /* static member */
+  inline def exists(id: Any, callback: CallbackWithResult[Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Find all model instances that match `filter` specification.
     * See [Querying models](docs.strongloop.com/display/LB/Querying+models)
@@ -391,8 +441,9 @@ object PersistedModel extends js.Object {
     * <br/>See
     * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries)
     */
-  def find[T](): js.Promise[js.Array[T] | Null] = js.native
-  def find[T](filter: AnonFields): js.Promise[js.Array[T] | Null] = js.native
+  /* static member */
+  inline def find[T](): js.Promise[js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")().asInstanceOf[js.Promise[js.Array[T] | Null]]
+  inline def find[T](filter: Fields): js.Promise[js.Array[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[T] | Null]]
   /**
     * Find all model instances that match `filter` specification.
     * See [Querying models](docs.strongloop.com/display/LB/Querying+models)
@@ -417,7 +468,9 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {Array} models Model instances matching the filter, or null if none found
     */
-  def find[T](filter: AnonFields, callback: CallbackWithResult[js.Array[T]]): Unit = js.native
+  /* static member */
+  inline def find[T](filter: Fields, callback: CallbackWithResult[js.Array[T]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Find object by ID with an optional filter for include/fields
     * @param {*} id Primary key value
@@ -427,7 +480,8 @@ object PersistedModel extends js.Object {
     * @property {string|any|Array} include  See PersistedModel.include documentation.
     * <br/>See [Include filter](docs.strongloop.com/display/LB/Include+filter).
     */
-  def findById[T](id: js.Any): js.Promise[T | Null] = js.native
+  /* static member */
+  inline def findById[T](id: Any): js.Promise[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | Null]]
   /**
     * Find object by ID with an optional filter for include/fields
     * @param {*} id Primary key value
@@ -435,8 +489,9 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Model instance matching the specified ID or null if no instance matches
     */
-  def findById[T](id: js.Any, callback: CallbackWithResult[T]): Unit = js.native
-  def findById[T](id: js.Any, filter: AnonInclude): js.Promise[T | Null] = js.native
+  /* static member */
+  inline def findById[T](id: Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def findById[T](id: Any, filter: Include): js.Promise[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | Null]]
   /**
     * Find object by ID with an optional filter for include/fields
     * @param {*} id Primary key value
@@ -449,7 +504,9 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Model instance matching the specified ID or null if no instance matches
     */
-  def findById[T](id: js.Any, filter: AnonInclude, callback: CallbackWithResult[T]): Unit = js.native
+  /* static member */
+  inline def findById[T](id: Any, filter: Include, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findById")(id.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Find one model instance that matches `filter` specification.
     * Same as `find`, but limited to one result;
@@ -470,7 +527,8 @@ object PersistedModel extends js.Object {
     * <br/>See
     * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries)
     */
-  def findOne[T](): js.Promise[T | Null] = js.native
+  /* static member */
+  inline def findOne[T](): js.Promise[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")().asInstanceOf[js.Promise[T | Null]]
   /**
     * Find one model instance that matches `filter` specification.
     * Same as `find`, but limited to one result;
@@ -479,8 +537,9 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {Array} model First model instance that matches the filter or null if none found
     */
-  def findOne[T](callback: CallbackWithResult[T]): Unit = js.native
-  def findOne[T](filter: AnonOrder): js.Promise[T | Null] = js.native
+  /* static member */
+  inline def findOne[T](callback: CallbackWithResult[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def findOne[T](filter: Order): js.Promise[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | Null]]
   /**
     * Find one model instance that matches `filter` specification.
     * Same as `find`, but limited to one result;
@@ -504,7 +563,9 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {Array} model First model instance that matches the filter or null if none found
     */
-  def findOne[T](filter: AnonOrder, callback: CallbackWithResult[T]): Unit = js.native
+  /* static member */
+  inline def findOne[T](filter: Order, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is
@@ -531,7 +592,8 @@ object PersistedModel extends js.Object {
     * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries).
     * @param {any} data Data to insert if object matching the `where` filter is not found.
     */
-  def findOrCreate[T](data: js.Any): js.Promise[AnonCreated[T] | Null] = js.native
+  /* static member */
+  inline def findOrCreate[T](data: Any): js.Promise[Created[T] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Created[T] | Null]]
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is
@@ -545,8 +607,9 @@ object PersistedModel extends js.Object {
     * @param {any} instance Model instance matching the `where` filter, if found.
     * @param {boolean} created True if the instance matching the `where` filter was created
     */
-  def findOrCreate[T](data: js.Any, callback: CallbackWithMultipleResults[T, Boolean]): Unit = js.native
-  def findOrCreate[T](data: js.Any, filter: AnonFields): js.Promise[AnonCreated[T] | Null] = js.native
+  /* static member */
+  inline def findOrCreate[T](data: Any, callback: CallbackWithMultipleResults[T, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def findOrCreate[T](data: Any, filter: Fields): js.Promise[Created[T] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Created[T] | Null]]
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is
@@ -577,46 +640,60 @@ object PersistedModel extends js.Object {
     * @param {any} instance Model instance matching the `where` filter, if found.
     * @param {boolean} created True if the instance matching the `where` filter was created
     */
-  def findOrCreate[T](data: js.Any, filter: AnonFields, callback: CallbackWithMultipleResults[T, Boolean]): Unit = js.native
+  /* static member */
+  inline def findOrCreate[T](data: Any, filter: Fields, callback: CallbackWithMultipleResults[T, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Get the `Change` model.
     * Throws an error if the change model is not correctly setup.
     */
-  def getChangeModel(): Unit = js.native
+  /* static member */
+  inline def getChangeModel(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getChangeModel")().asInstanceOf[Unit]
+  
   /**
     * Get the `id` property name of the constructor
     * @returns {string} The `id` property nam
     */
-  def getIdName(): String = js.native
+  /* static member */
+  inline def getIdName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIdName")().asInstanceOf[String]
+  
   /**
     * Get the source identifier for this model or dataSource
     */
-  def getSourceId(): js.Promise[String] = js.native
+  /* static member */
+  inline def getSourceId(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceId")().asInstanceOf[js.Promise[String]]
   /**
     * Get the source identifier for this model or dataSource
     * @callback {() => void} callback Callback function called with `(err, id)` arguments.
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {string} sourceId Source identifier for the model or dataSource
     */
-  def getSourceId(callback: CallbackWithResult[String]): Unit = js.native
+  /* static member */
+  inline def getSourceId(callback: CallbackWithResult[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /**
     * Handle a change error. Override this method in a subclassing model to customize
     * change error handling
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object)
     */
-  def handleChangeError(err: js.Error): Unit = js.native
+  /* static member */
+  inline def handleChangeError(err: js.Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleChangeError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /**
     * Specify that a change to the model with the given ID has occurred
     * @param {*} id The ID of the model that has changed.
     */
-  def rectifyChange(id: js.Any): js.Promise[Unit] = js.native
+  /* static member */
+  inline def rectifyChange(id: Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rectifyChange")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /**
     * Specify that a change to the model with the given ID has occurred
     * @param {*} id The ID of the model that has changed.
     * @callback {() => void} callback
     * @param {Error} er
     */
-  def rectifyChange(id: js.Any, callback: CallbackWithoutResult): Unit = js.native
+  /* static member */
+  inline def rectifyChange(id: Any, callback: CallbackWithoutResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rectifyChange")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Replace attributes for a model instance whose id is the first input
     * argument and persist it into the datasource.
@@ -626,7 +703,8 @@ object PersistedModel extends js.Object {
     * @options {any} [options] Options for replace
     * @property {boolean} validate Perform validation before saving.  Default is true.
     */
-  def replaceById[T](id: js.Any, data: js.Any): js.Promise[T] = js.native
+  /* static member */
+  inline def replaceById[T](id: Any, data: Any): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   /**
     * Replace attributes for a model instance whose id is the first input
     * argument and persist it into the datasource.
@@ -637,8 +715,9 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Replaced instance
     */
-  def replaceById[T](id: js.Any, data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
-  def replaceById[T](id: js.Any, data: js.Any, options: AnonValidate): js.Promise[T] = js.native
+  /* static member */
+  inline def replaceById[T](id: Any, data: Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceById[T](id: Any, data: Any, options: Validate): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   /**
     * Replace attributes for a model instance whose id is the first input
     * argument and persist it into the datasource.
@@ -651,7 +730,9 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} instance Replaced instance
     */
-  def replaceById[T](id: js.Any, data: js.Any, options: AnonValidate, callback: CallbackWithResult[T]): Unit = js.native
+  /* static member */
+  inline def replaceById[T](id: Any, data: Any, options: Validate, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceById")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Replace or insert a model instance; replace existing record if one is found,
     * such that parameter `data.id` matches `id` of model instance; otherwise,
@@ -660,7 +741,8 @@ object PersistedModel extends js.Object {
     * @options {any} [options] Options for replaceOrCreate
     * @property {boolean} validate Perform validation before saving.  Default is true.
     */
-  def replaceOrCreate[T](data: js.Any): js.Promise[T] = js.native
+  /* static member */
+  inline def replaceOrCreate[T](data: Any): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   /**
     * Replace or insert a model instance; replace existing record if one is found,
     * such that parameter `data.id` matches `id` of model instance; otherwise,
@@ -670,8 +752,9 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} model Replaced model instance.
     */
-  def replaceOrCreate[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
-  def replaceOrCreate[T](data: js.Any, options: AnonValidate): js.Promise[T] = js.native
+  /* static member */
+  inline def replaceOrCreate[T](data: Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceOrCreate[T](data: Any, options: Validate): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   /**
     * Replace or insert a model instance; replace existing record if one is found,
     * such that parameter `data.id` matches `id` of model instance; otherwise,
@@ -683,7 +766,9 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} model Replaced model instance.
     */
-  def replaceOrCreate[T](data: js.Any, options: AnonValidate, callback: CallbackWithResult[T]): Unit = js.native
+  /* static member */
+  inline def replaceOrCreate[T](data: Any, options: Validate, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrCreate")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Replicate changes since the given checkpoint to the given target model
     * @param  {number}   [since]  Since this checkpoint
@@ -696,18 +781,136 @@ object PersistedModel extends js.Object {
     * @param {any} checkpoints The new checkpoints to use as the "since"
     * argument for the next replication
     */
-  def replicate(): js.Promise[AnonConflicts] | Unit = js.native
-  def replicate(since: Double): js.Promise[AnonConflicts] | Unit = js.native
-  def replicate(since: Double, targetModel: Model): js.Promise[AnonConflicts] | Unit = js.native
-  def replicate(since: Double, targetModel: Model, options: js.Any): js.Promise[AnonConflicts] | Unit = js.native
-  def replicate(since: Double, targetModel: Model, options: js.Any, optionsFilter: js.Any): js.Promise[AnonConflicts] | Unit = js.native
-  def replicate(
+  /* static member */
+  inline def replicate(): js.Promise[Conflicts] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replicate")().asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double): js.Promise[Conflicts] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double, targetModel: Unit, options: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double, targetModel: Unit, options: Any, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Double,
+    targetModel: Unit,
+    options: Any,
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Double,
+    targetModel: Unit,
+    options: Any,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double, targetModel: Unit, options: Unit, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Double,
+    targetModel: Unit,
+    options: Unit,
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Double,
+    targetModel: Unit,
+    options: Unit,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double, targetModel: Model): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double, targetModel: Model, options: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double, targetModel: Model, options: Any, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
     since: Double,
     targetModel: Model,
-    options: js.Any,
-    optionsFilter: js.Any,
-    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
-  ): js.Promise[AnonConflicts] | Unit = js.native
+    options: Any,
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Double,
+    targetModel: Model,
+    options: Any,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Double, targetModel: Model, options: Unit, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Double,
+    targetModel: Model,
+    options: Unit,
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Double,
+    targetModel: Model,
+    options: Unit,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Unit, targetModel: Unit, options: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Unit, targetModel: Unit, options: Any, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Unit,
+    targetModel: Unit,
+    options: Any,
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Unit,
+    targetModel: Unit,
+    options: Any,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Unit, targetModel: Unit, options: Unit, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Unit,
+    targetModel: Unit,
+    options: Unit,
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Unit,
+    targetModel: Unit,
+    options: Unit,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Unit, targetModel: Model): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Unit, targetModel: Model, options: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Unit, targetModel: Model, options: Any, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Unit,
+    targetModel: Model,
+    options: Any,
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Unit,
+    targetModel: Model,
+    options: Any,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(since: Unit, targetModel: Model, options: Unit, optionsFilter: Any): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Unit,
+    targetModel: Model,
+    options: Unit,
+    optionsFilter: Any,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  inline def replicate(
+    since: Unit,
+    targetModel: Model,
+    options: Unit,
+    optionsFilter: Unit,
+    callback: js.Function3[/* err */ js.Error, /* conflicts */ js.Array[Conflict], /* param */ Any, Unit]
+  ): js.Promise[Conflicts] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replicate")(since.asInstanceOf[js.Any], targetModel.asInstanceOf[js.Any], options.asInstanceOf[js.Any], optionsFilter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Conflicts] | Unit]
+  
   /**
     * Update multiple instances that match the where clause.
     *
@@ -727,7 +930,8 @@ object PersistedModel extends js.Object {
     * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforothermethods).
     * @param {any} data any containing data to replace matching instances, if any.
     */
-  def updateAll(): js.Promise[Double] = js.native
+  /* static member */
+  inline def updateAll(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")().asInstanceOf[js.Promise[Double]]
   /**
     * Update multiple instances that match the where clause.
     * @callback {() => void} callback Callback function called with `(err, info)` arguments.  Required.
@@ -736,35 +940,8 @@ object PersistedModel extends js.Object {
     * @param {number} info.count number of instances (rows, documents) updated.
     *
     */
-  def updateAll(callback: CallbackWithMultipleResults[_, Double]): Unit = js.native
-  /**
-    * Update multiple instances that match the where clause.
-    *
-    * Example:
-    *
-    * ```js
-    * Employee.updateAll({managerId: 'x001'}, {managerId: 'x002'}, function(err, info) {
-    *     ...
-    * });
-    * ```
-    *
-    * @param {any} [where] Optional `where` filter, like
-    * ```
-    * { key: val, key2: {gt: 'val2'}, ...}
-    * ```
-    * <br/>see
-    * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforothermethods).
-    * @param {any} data any containing data to replace matching instances, if any.
-    *
-    * @callback {() => void} callback Callback function called with `(err, info)` arguments.  Required.
-    * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
-    * @param {any} info Additional information about the command outcome.
-    * @param {number} info.count number of instances (rows, documents) updated.
-    *
-    */
-  def updateAll(whereOrData: js.Any, callback: CallbackWithMultipleResults[_, Double]): Unit = js.native
-  def updateAll(where: js.Any): js.Promise[Double] = js.native
-  def updateAll(where: js.Any, data: js.Any): js.Promise[Double] = js.native
+  /* static member */
+  inline def updateAll(callback: CallbackWithMultipleResults[Any, Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Update multiple instances that match the where clause.
     *
@@ -790,7 +967,39 @@ object PersistedModel extends js.Object {
     * @param {number} info.count number of instances (rows, documents) updated.
     *
     */
-  def updateAll(where: js.Any, data: js.Any, callback: CallbackWithMultipleResults[_, Double]): Unit = js.native
+  /* static member */
+  inline def updateAll(whereOrData: Any, callback: CallbackWithMultipleResults[Any, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(whereOrData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateAll(where: Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  inline def updateAll(where: Any, data: Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  /**
+    * Update multiple instances that match the where clause.
+    *
+    * Example:
+    *
+    * ```js
+    * Employee.updateAll({managerId: 'x001'}, {managerId: 'x002'}, function(err, info) {
+    *     ...
+    * });
+    * ```
+    *
+    * @param {any} [where] Optional `where` filter, like
+    * ```
+    * { key: val, key2: {gt: 'val2'}, ...}
+    * ```
+    * <br/>see
+    * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforothermethods).
+    * @param {any} data any containing data to replace matching instances, if any.
+    *
+    * @callback {() => void} callback Callback function called with `(err, info)` arguments.  Required.
+    * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
+    * @param {any} info Additional information about the command outcome.
+    * @param {number} info.count number of instances (rows, documents) updated.
+    *
+    */
+  /* static member */
+  inline def updateAll(where: Any, data: Any, callback: CallbackWithMultipleResults[Any, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateAll(where: Unit, data: Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAll")(where.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  
   /**
     * Update or insert a model instance
     * @param {any} data The model instance data to insert.
@@ -798,7 +1007,8 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} model Updated model instance
     */
-  def upsert[T](data: js.Any): js.Promise[T] = js.native
+  /* static member */
+  inline def upsert[T](data: Any): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("upsert")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   /**
     * Update or insert a model instance
     * @param {any} data The model instance data to insert.
@@ -806,7 +1016,9 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} model Updated model instance
     */
-  def upsert[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
+  /* static member */
+  inline def upsert[T](data: Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("upsert")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Update or insert a model instance based on the search criteria.
     * If there is a single instance retrieved, update the retrieved model.
@@ -820,7 +1032,8 @@ object PersistedModel extends js.Object {
     * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforothermethods).
     * @param {any} data The model instance data to insert.
     */
-  def upsertWithWhere[T](data: js.Any): js.Promise[T] = js.native
+  /* static member */
+  inline def upsertWithWhere[T](data: Any): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("upsertWithWhere")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   /**
     * Update or insert a model instance based on the search criteria.
     * If there is a single instance retrieved, update the retrieved model.
@@ -837,6 +1050,6 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {any} model Updated model instance
     */
-  def upsertWithWhere[T](data: js.Any, callback: CallbackWithResult[T]): Unit = js.native
+  /* static member */
+  inline def upsertWithWhere[T](data: Any, callback: CallbackWithResult[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("upsertWithWhere")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

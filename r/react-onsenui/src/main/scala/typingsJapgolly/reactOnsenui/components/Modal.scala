@@ -1,68 +1,53 @@
 package typingsJapgolly.reactOnsenui.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameIsOpen
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
+import typingsJapgolly.reactOnsenui.anon.IsOpen
 import typingsJapgolly.reactOnsenui.mod.AnimationOptions
 import typingsJapgolly.reactOnsenui.reactOnsenuiStrings.fade
 import typingsJapgolly.reactOnsenui.reactOnsenuiStrings.lift
 import typingsJapgolly.reactOnsenui.reactOnsenuiStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Modal {
-  def apply(
-    animation: fade | lift | none = null,
-    animationOptions: AnimationOptions = null,
-    className: String = null,
-    id: String = null,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    onDeviceBackButton: js.UndefOr[Callback] = js.undefined,
-    onPostHide: js.UndefOr[Callback] = js.undefined,
-    onPostShow: js.UndefOr[Callback] = js.undefined,
-    onPreHide: js.UndefOr[Callback] = js.undefined,
-    onPreShow: js.UndefOr[Callback] = js.undefined,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    HTMLAttributesidclassNameIsOpen, 
-    typingsJapgolly.reactOnsenui.mod.Modal, 
-    Unit, 
-    HTMLAttributesidclassNameIsOpen
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
-    onDeviceBackButton.foreach(p => __obj.updateDynamic("onDeviceBackButton")(p.toJsFn))
-    onPostHide.foreach(p => __obj.updateDynamic("onPostHide")(p.toJsFn))
-    onPostShow.foreach(p => __obj.updateDynamic("onPostShow")(p.toJsFn))
-    onPreHide.foreach(p => __obj.updateDynamic("onPreHide")(p.toJsFn))
-    onPreShow.foreach(p => __obj.updateDynamic("onPreShow")(p.toJsFn))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameIsOpen, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactOnsenui.mod.Modal](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameIsOpen])(children: _*)
-  }
   @JSImport("react-onsenui", "Modal")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactOnsenui.mod.Modal] {
+    
+    inline def animation(value: fade | lift | none): this.type = set("animation", value.asInstanceOf[js.Any])
+    
+    inline def animationOptions(value: AnimationOptions): this.type = set("animationOptions", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def isOpen(value: Boolean): this.type = set("isOpen", value.asInstanceOf[js.Any])
+    
+    inline def onDeviceBackButton(value: Callback): this.type = set("onDeviceBackButton", value.toJsFn)
+    
+    inline def onPostHide(value: Callback): this.type = set("onPostHide", value.toJsFn)
+    
+    inline def onPostShow(value: Callback): this.type = set("onPostShow", value.toJsFn)
+    
+    inline def onPreHide(value: Callback): this.type = set("onPreHide", value.toJsFn)
+    
+    inline def onPreShow(value: Callback): this.type = set("onPreShow", value.toJsFn)
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Modal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: HTMLAttributesidclassName & IsOpen): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

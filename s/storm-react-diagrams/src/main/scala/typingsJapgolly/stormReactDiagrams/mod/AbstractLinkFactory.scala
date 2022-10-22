@@ -1,12 +1,13 @@
 package typingsJapgolly.stormReactDiagrams.mod
 
-import typingsJapgolly.stormReactDiagrams.linkModelMod.LinkModelListener
+import typingsJapgolly.stormReactDiagrams.distSrcModelsLinkModelMod.LinkModelListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("storm-react-diagrams", "AbstractLinkFactory")
+/* note: abstract class */ @JSImport("storm-react-diagrams", "AbstractLinkFactory")
 @js.native
-abstract class AbstractLinkFactory[T /* <: typingsJapgolly.stormReactDiagrams.linkModelMod.LinkModel[LinkModelListener] */] ()
-  extends typingsJapgolly.stormReactDiagrams.abstractLinkFactoryMod.AbstractLinkFactory[T]
-
+open class AbstractLinkFactory[T /* <: typingsJapgolly.stormReactDiagrams.distSrcModelsLinkModelMod.LinkModel[LinkModelListener] */] protected ()
+  extends typingsJapgolly.stormReactDiagrams.distSrcFactoriesAbstractLinkFactoryMod.AbstractLinkFactory[T] {
+  def this(name: String) = this()
+}

@@ -1,25 +1,31 @@
 package typingsJapgolly.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Content picker dialog options object
   */
-trait IContentPickerOptions extends js.Object {
+trait IContentPickerOptions extends StObject {
+  
   /*callback function*/
   var callback: js.Function
+  
   /*should the picker return one or multiple items*/
   var multipicker: Boolean
 }
-
 object IContentPickerOptions {
-  @scala.inline
-  def apply(callback: js.Function, multipicker: Boolean): IContentPickerOptions = {
-    val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], multipicker = multipicker.asInstanceOf[js.Any])
   
+  inline def apply(callback: js.Function, multipicker: Boolean): IContentPickerOptions = {
+    val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], multipicker = multipicker.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContentPickerOptions]
   }
+  
+  extension [Self <: IContentPickerOptions](x: Self) {
+    
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    
+    inline def setMultipicker(value: Boolean): Self = StObject.set(x, "multipicker", value.asInstanceOf[js.Any])
+  }
 }
-

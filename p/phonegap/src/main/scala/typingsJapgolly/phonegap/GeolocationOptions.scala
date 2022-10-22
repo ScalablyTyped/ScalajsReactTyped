@@ -1,27 +1,36 @@
 package typingsJapgolly.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeolocationOptions extends js.Object {
+trait GeolocationOptions extends StObject {
+  
   var enableHighAccuracy: js.UndefOr[Boolean] = js.undefined
+  
   var maximumAge: js.UndefOr[Double] = js.undefined
+  
   var timeout: js.UndefOr[Double] = js.undefined
 }
-
 object GeolocationOptions {
-  @scala.inline
-  def apply(
-    enableHighAccuracy: js.UndefOr[Boolean] = js.undefined,
-    maximumAge: Int | Double = null,
-    timeout: Int | Double = null
-  ): GeolocationOptions = {
+  
+  inline def apply(): GeolocationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableHighAccuracy)) __obj.updateDynamic("enableHighAccuracy")(enableHighAccuracy.asInstanceOf[js.Any])
-    if (maximumAge != null) __obj.updateDynamic("maximumAge")(maximumAge.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationOptions]
   }
+  
+  extension [Self <: GeolocationOptions](x: Self) {
+    
+    inline def setEnableHighAccuracy(value: Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
+    
+    inline def setEnableHighAccuracyUndefined: Self = StObject.set(x, "enableHighAccuracy", js.undefined)
+    
+    inline def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
+    
+    inline def setMaximumAgeUndefined: Self = StObject.set(x, "maximumAge", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

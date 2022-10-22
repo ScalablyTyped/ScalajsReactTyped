@@ -1,24 +1,20 @@
 package typingsJapgolly.webcl.WEBCL
 
-import typingsJapgolly.webcl.webclNumbers.`0`
-import typingsJapgolly.webcl.webclNumbers.`1`
+import typingsJapgolly.webcl.webclInts.`0`
+import typingsJapgolly.webcl.webclInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_bool */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.webcl.webclNumbers.`0`
-  - typingsJapgolly.webcl.webclNumbers.`1`
+  - typingsJapgolly.webcl.webclInts.`0`
+  - typingsJapgolly.webcl.webclInts.`1`
 */
-trait Bool extends js.Object
-
+trait Bool extends StObject
 object Bool {
-  @scala.inline
-  def FALSE: `0` = this.cast(0)
-  @scala.inline
-  def TRUE: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def FALSE: `0` = 0.asInstanceOf[`0`]
+  
+  inline def TRUE: `1` = 1.asInstanceOf[`1`]
 }
-

@@ -1,7 +1,9 @@
 package typingsJapgolly.phaser.Phaser.GameObjects
 
+import typingsJapgolly.phaser.Phaser.Animations.Animation
+import typingsJapgolly.phaser.Phaser.Animations.AnimationFrame
+import typingsJapgolly.phaser.Phaser.Animations.AnimationState
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.Alpha
-import typingsJapgolly.phaser.Phaser.GameObjects.Components.Animation
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.BlendMode
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.Depth
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.Flip
@@ -15,12 +17,10 @@ import typingsJapgolly.phaser.Phaser.GameObjects.Components.TextureCrop
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.Tint
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.Transform
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.Visible
-import typingsJapgolly.phaser.Phaser.Scene
-import typingsJapgolly.phaser.Phaser.Textures.Frame
-import typingsJapgolly.phaser.integer
+import typingsJapgolly.phaser.Phaser.Types.Animations.PlayAnimationConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Sprite Game Object.
@@ -33,10 +33,10 @@ import scala.scalajs.js.annotation._
   * As such, Sprites take a fraction longer to process and have a larger API footprint due to the Animation
   * Component. If you do not require animation then you can safely use Images to replace Sprites in all cases.
   */
-@JSGlobal("Phaser.GameObjects.Sprite")
 @js.native
-class Sprite protected ()
-  extends GameObject
+trait Sprite
+  extends StObject
+     with GameObject
      with Alpha
      with BlendMode
      with Depth
@@ -51,215 +51,260 @@ class Sprite protected ()
      with Tint
      with Transform
      with Visible {
+  
   /**
+    * The Animation State component of this Sprite.
     * 
-    * @param scene The Scene to which this Game Object belongs. A Game Object can only belong to one Scene at a time.
-    * @param x The horizontal position of this Game Object in the world.
-    * @param y The vertical position of this Game Object in the world.
-    * @param texture The key of the Texture this Game Object will use to render with, as stored in the Texture Manager.
-    * @param frame An optional frame from the Texture this Game Object is rendering with.
+    * This component provides features to apply animations to this Sprite.
+    * It is responsible for playing, loading, queuing animations for later playback,
+    * mixing between animations and setting the current animation frame to this Sprite.
     */
-  def this(scene: Scene, x: Double, y: Double, texture: String) = this()
-  def this(scene: Scene, x: Double, y: Double, texture: String, frame: String) = this()
-  def this(scene: Scene, x: Double, y: Double, texture: String, frame: integer) = this()
+  var anims: AnimationState = js.native
+  
   /**
-    * The Animation Controller of this Sprite.
+    * Sets an animation, or an array of animations, to be played immediately after the current one completes or stops.
+    * 
+    * The current animation must enter a 'completed' state for this to happen, i.e. finish all of its repeats, delays, etc,
+    * or have the `stop` method called directly on it.
+    * 
+    * An animation set to repeat forever will never enter a completed state.
+    * 
+    * You can chain a new animation at any point, including before the current one starts playing, during it,
+    * or when it ends (via its `animationcomplete` event).
+    * 
+    * Chained animations are specific to a Game Object, meaning different Game Objects can have different chained
+    * animations without impacting the animation they're playing.
+    * 
+    * Call this method with no arguments to reset all currently chained animations.
+    * 
+    * When playing an animation on a Sprite it will first check to see if it can find a matching key
+    * locally within the Sprite. If it can, it will play the local animation. If not, it will then
+    * search the global Animation Manager and look for it there.
+    * @param key The string-based key of the animation to play, or an Animation instance, or a `PlayAnimationConfig` object, or an array of them.
     */
-  var anims: Animation = js.native
+  def chain(key: String): this.type = js.native
+  def chain(key: js.Array[Animation | PlayAnimationConfig | String]): this.type = js.native
+  def chain(key: Animation): this.type = js.native
+  def chain(key: PlayAnimationConfig): this.type = js.native
+  
   /**
-    * The depth of this Game Object within the Scene.
+    * Start playing the given animation on this Sprite.
     * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
+    * Animations in Phaser can either belong to the global Animation Manager, or specifically to this Sprite.
     * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
+    * The benefit of a global animation is that multiple Sprites can all play the same animation, without
+    * having to duplicate the data. You can just create it once and then play it on any Sprite.
     * 
-    * Setting the depth will queue a depth sort event within the Scene.
-    */
-  /* CompleteClass */
-  override var depth: Double = js.native
-  /**
-    * The displayed height of this Game Object.
+    * The following code shows how to create a global repeating animation. The animation will be created
+    * from all of the frames within the sprite sheet that was loaded with the key 'muybridge':
     * 
-    * This value takes into account the scale factor.
+    * ```javascript
+    * var config = {
+    *     key: 'run',
+    *     frames: 'muybridge',
+    *     frameRate: 15,
+    *     repeat: -1
+    * };
     * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  override var displayHeight: Double = js.native
-  /**
-    * The displayed width of this Game Object.
+    * //  This code should be run from within a Scene:
+    * this.anims.create(config);
+    * ```
     * 
-    * This value takes into account the scale factor.
+    * However, if you wish to create an animation that is unique to this Sprite, and this Sprite alone,
+    * you can call the `Animation.create` method instead. It accepts the exact same parameters as when
+    * creating a global animation, however the resulting data is kept locally in this Sprite.
     * 
-    * Setting this value will adjust the Game Object's scale property.
-    */
-  /* CompleteClass */
-  override var displayWidth: Double = js.native
-  /**
-    * The horizontally flipped state of the Game Object.
+    * With the animation created, either globally or locally, you can now play it on this Sprite:
     * 
-    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    */
-  /* CompleteClass */
-  override var flipX: Boolean = js.native
-  /**
-    * The vertically flipped state of the Game Object.
+    * ```javascript
+    * this.add.sprite(x, y).play('run');
+    * ```
     * 
-    * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    */
-  /* CompleteClass */
-  override var flipY: Boolean = js.native
-  /**
-    * The native (un-scaled) height of this Game Object.
+    * Alternatively, if you wish to run it at a different frame rate, for example, you can pass a config
+    * object instead:
     * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayHeight` property.
-    */
-  /* CompleteClass */
-  override var height: Double = js.native
-  /**
-    * The visible state of the Game Object.
+    * ```javascript
+    * this.add.sprite(x, y).play({ key: 'run', frameRate: 24 });
+    * ```
     * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    */
-  /* CompleteClass */
-  override var visible: Boolean = js.native
-  /**
-    * The native (un-scaled) width of this Game Object.
+    * When playing an animation on a Sprite it will first check to see if it can find a matching key
+    * locally within the Sprite. If it can, it will play the local animation. If not, it will then
+    * search the global Animation Manager and look for it there.
     * 
-    * Changing this value will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or use
-    * the `displayWidth` property.
-    */
-  /* CompleteClass */
-  override var width: Double = js.native
-  /**
-    * Start playing the given animation.
-    * @param key The string-based key of the animation to play.
+    * If you need a Sprite to be able to play both local and global animations, make sure they don't
+    * have conflicting keys.
+    * 
+    * See the documentation for the `PlayAnimationConfig` config object for more details about this.
+    * 
+    * Also, see the documentation in the Animation Manager for further details on creating animations.
+    * @param key The string-based key of the animation to play, or an Animation instance, or a `PlayAnimationConfig` object.
     * @param ignoreIfPlaying If an animation is already playing then ignore this call. Default false.
-    * @param startFrame Optionally start the animation playing from this frame index. Default 0.
     */
-  def play(key: String): Sprite = js.native
-  def play(key: String, ignoreIfPlaying: Boolean): Sprite = js.native
-  def play(key: String, ignoreIfPlaying: Boolean, startFrame: integer): Sprite = js.native
+  def play(key: String): this.type = js.native
+  def play(key: String, ignoreIfPlaying: Boolean): this.type = js.native
+  def play(key: Animation): this.type = js.native
+  def play(key: Animation, ignoreIfPlaying: Boolean): this.type = js.native
+  def play(key: PlayAnimationConfig): this.type = js.native
+  def play(key: PlayAnimationConfig, ignoreIfPlaying: Boolean): this.type = js.native
+  
+  /**
+    * Waits for the specified delay, in milliseconds, then starts playback of the given animation.
+    * 
+    * If the animation _also_ has a delay value set in its config, it will be **added** to the delay given here.
+    * 
+    * If an animation is already running and a new animation is given to this method, it will wait for
+    * the given delay before starting the new animation.
+    * 
+    * If no animation is currently running, the given one begins after the delay.
+    * 
+    * When playing an animation on a Sprite it will first check to see if it can find a matching key
+    * locally within the Sprite. If it can, it will play the local animation. If not, it will then
+    * search the global Animation Manager and look for it there.
+    * 
+    * Prior to Phaser 3.50 this method was called 'delayedPlay'.
+    * @param key The string-based key of the animation to play, or an Animation instance, or a `PlayAnimationConfig` object.
+    * @param delay The delay, in milliseconds, to wait before starting the animation playing.
+    */
+  def playAfterDelay(key: String, delay: Double): this.type = js.native
+  def playAfterDelay(key: Animation, delay: Double): this.type = js.native
+  def playAfterDelay(key: PlayAnimationConfig, delay: Double): this.type = js.native
+  
+  /**
+    * Waits for the current animation to complete the `repeatCount` number of repeat cycles, then starts playback
+    * of the given animation.
+    * 
+    * You can use this to ensure there are no harsh jumps between two sets of animations, i.e. going from an
+    * idle animation to a walking animation, by making them blend smoothly into each other.
+    * 
+    * If no animation is currently running, the given one will start immediately.
+    * 
+    * When playing an animation on a Sprite it will first check to see if it can find a matching key
+    * locally within the Sprite. If it can, it will play the local animation. If not, it will then
+    * search the global Animation Manager and look for it there.
+    * @param key The string-based key of the animation to play, or an Animation instance, or a `PlayAnimationConfig` object.
+    * @param repeatCount How many times should the animation repeat before the next one starts? Default 1.
+    */
+  def playAfterRepeat(key: String): this.type = js.native
+  def playAfterRepeat(key: String, repeatCount: Double): this.type = js.native
+  def playAfterRepeat(key: Animation): this.type = js.native
+  def playAfterRepeat(key: Animation, repeatCount: Double): this.type = js.native
+  def playAfterRepeat(key: PlayAnimationConfig): this.type = js.native
+  def playAfterRepeat(key: PlayAnimationConfig, repeatCount: Double): this.type = js.native
+  
+  /**
+    * Start playing the given animation on this Sprite, in reverse.
+    * 
+    * Animations in Phaser can either belong to the global Animation Manager, or specifically to this Sprite.
+    * 
+    * The benefit of a global animation is that multiple Sprites can all play the same animation, without
+    * having to duplicate the data. You can just create it once and then play it on any Sprite.
+    * 
+    * The following code shows how to create a global repeating animation. The animation will be created
+    * from all of the frames within the sprite sheet that was loaded with the key 'muybridge':
+    * 
+    * ```javascript
+    * var config = {
+    *     key: 'run',
+    *     frames: 'muybridge',
+    *     frameRate: 15,
+    *     repeat: -1
+    * };
+    * 
+    * //  This code should be run from within a Scene:
+    * this.anims.create(config);
+    * ```
+    * 
+    * However, if you wish to create an animation that is unique to this Sprite, and this Sprite alone,
+    * you can call the `Animation.create` method instead. It accepts the exact same parameters as when
+    * creating a global animation, however the resulting data is kept locally in this Sprite.
+    * 
+    * With the animation created, either globally or locally, you can now play it on this Sprite:
+    * 
+    * ```javascript
+    * this.add.sprite(x, y).playReverse('run');
+    * ```
+    * 
+    * Alternatively, if you wish to run it at a different frame rate, for example, you can pass a config
+    * object instead:
+    * 
+    * ```javascript
+    * this.add.sprite(x, y).playReverse({ key: 'run', frameRate: 24 });
+    * ```
+    * 
+    * When playing an animation on a Sprite it will first check to see if it can find a matching key
+    * locally within the Sprite. If it can, it will play the local animation. If not, it will then
+    * search the global Animation Manager and look for it there.
+    * 
+    * If you need a Sprite to be able to play both local and global animations, make sure they don't
+    * have conflicting keys.
+    * 
+    * See the documentation for the `PlayAnimationConfig` config object for more details about this.
+    * 
+    * Also, see the documentation in the Animation Manager for further details on creating animations.
+    * @param key The string-based key of the animation to play, or an Animation instance, or a `PlayAnimationConfig` object.
+    * @param ignoreIfPlaying If an animation is already playing then ignore this call. Default false.
+    */
+  def playReverse(key: String): this.type = js.native
+  def playReverse(key: String, ignoreIfPlaying: Boolean): this.type = js.native
+  def playReverse(key: Animation): this.type = js.native
+  def playReverse(key: Animation, ignoreIfPlaying: Boolean): this.type = js.native
+  def playReverse(key: PlayAnimationConfig): this.type = js.native
+  def playReverse(key: PlayAnimationConfig, ignoreIfPlaying: Boolean): this.type = js.native
+  
   /**
     * Update this Sprite's animations.
     * @param time The current timestamp.
     * @param delta The delta time, in ms, elapsed since the last frame.
     */
   /* protected */ def preUpdate(time: Double, delta: Double): Unit = js.native
+  
   /**
-    * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
+    * Immediately stops the current animation from playing and dispatches the `ANIMATION_STOP` events.
+    * 
+    * If no animation is playing, no event will be dispatched.
+    * 
+    * If there is another animation queued (via the `chain` method) then it will start playing immediately.
     */
-  /* CompleteClass */
-  override def resetFlip(): this.type = js.native
+  def stop(): this.type = js.native
+  
   /**
-    * The depth of this Game Object within the Scene.
+    * Stops the current animation from playing after the specified time delay, given in milliseconds.
     * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
+    * It then dispatches the `ANIMATION_STOP` event.
     * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
+    * If no animation is running, no events will be dispatched.
     * 
-    * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
+    * If there is another animation in the queue (set via the `chain` method) then it will start playing,
+    * when the current one stops.
+    * @param delay The number of milliseconds to wait before stopping this animation.
     */
-  /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  def stopAfterDelay(delay: Double): this.type = js.native
+  
   /**
-    * Sets the display size of this Game Object.
+    * Stops the current animation from playing after the given number of repeats.
     * 
-    * Calling this will adjust the scale.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
+    * It then dispatches the `ANIMATION_STOP` event.
+    * 
+    * If no animation is running, no events will be dispatched.
+    * 
+    * If there is another animation in the queue (set via the `chain` method) then it will start playing,
+    * when the current one stops.
+    * @param repeatCount How many times should the animation repeat before stopping? Default 1.
     */
-  /* CompleteClass */
-  override def setDisplaySize(width: Double, height: Double): this.type = js.native
+  def stopAfterRepeat(): this.type = js.native
+  def stopAfterRepeat(repeatCount: Double): this.type = js.native
+  
   /**
-    * Sets the horizontal and vertical flipped state of this Game Object.
+    * Stops the current animation from playing when it next sets the given frame.
+    * If this frame doesn't exist within the animation it will not stop it from playing.
     * 
-    * A Game Object that is flipped will render inversed on the flipped axis.
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-    * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-    */
-  /* CompleteClass */
-  override def setFlip(x: Boolean, y: Boolean): this.type = js.native
-  /**
-    * Sets the horizontal flipped state of this Game Object.
+    * It then dispatches the `ANIMATION_STOP` event.
     * 
-    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-    */
-  /* CompleteClass */
-  override def setFlipX(value: Boolean): this.type = js.native
-  /**
-    * Sets the vertical flipped state of this Game Object.
-    * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-    */
-  /* CompleteClass */
-  override def setFlipY(value: Boolean): this.type = js.native
-  /**
-    * Sets the internal size of this Game Object, as used for frame or physics body creation.
+    * If no animation is running, no events will be dispatched.
     * 
-    * This will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or call the
-    * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-    * to do so by giving pixel values.
-    * 
-    * If you have enabled this Game Object for input, changing the size will _not_ change the
-    * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-    * @param width The width of this Game Object.
-    * @param height The height of this Game Object.
+    * If there is another animation in the queue (set via the `chain` method) then it will start playing,
+    * when the current one stops.
+    * @param frame The frame to check before stopping this animation.
     */
-  /* CompleteClass */
-  override def setSize(width: Double, height: Double): this.type = js.native
-  /**
-    * Sets the size of this Game Object to be that of the given Frame.
-    * 
-    * This will not change the size that the Game Object is rendered in-game.
-    * For that you need to either set the scale of the Game Object (`setScale`) or call the
-    * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-    * to do so by giving pixel values.
-    * 
-    * If you have enabled this Game Object for input, changing the size will _not_ change the
-    * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-    * @param frame The frame to base the size of this Game Object on.
-    */
-  /* CompleteClass */
-  override def setSizeToFrame(frame: Frame): this.type = js.native
-  /**
-    * Sets the visibility of this Game Object.
-    * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    * @param value The visible state of the Game Object.
-    */
-  /* CompleteClass */
-  override def setVisible(value: Boolean): this.type = js.native
-  /**
-    * Toggles the horizontal flipped state of this Game Object.
-    * 
-    * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-    * Flipping always takes place from the middle of the texture and does not impact the scale value.
-    * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-    */
-  /* CompleteClass */
-  override def toggleFlipX(): this.type = js.native
-  /**
-    * Toggles the vertical flipped state of this Game Object.
-    */
-  /* CompleteClass */
-  override def toggleFlipY(): this.type = js.native
+  def stopOnFrame(frame: AnimationFrame): this.type = js.native
 }
-

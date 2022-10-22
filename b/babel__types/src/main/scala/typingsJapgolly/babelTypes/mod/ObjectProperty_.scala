@@ -1,51 +1,63 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.ObjectProperty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait ObjectProperty_
-  extends ObjectMember
+  extends StObject
      with BaseNode
+     with ObjectMember
      with Property
+     with Standardized
      with UserWhitespacable {
+  
   var computed: Boolean
+  
   var decorators: js.Array[Decorator_] | Null
-  var key: js.Any
-  var shorthand: js.Any
+  
+  var key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | DecimalLiteral_ | PrivateName_
+  
+  var shorthand: Boolean
+  
   @JSName("type")
   var type_ObjectProperty_ : ObjectProperty
+  
   var value: Expression | PatternLike
 }
-
 object ObjectProperty_ {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     computed: Boolean,
-    key: js.Any,
-    shorthand: js.Any,
-    `type`: ObjectProperty,
-    value: Expression | PatternLike,
-    decorators: js.Array[Decorator_] = null,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | DecimalLiteral_ | PrivateName_,
+    shorthand: Boolean,
+    value: Expression | PatternLike
   ): ObjectProperty_ = {
-    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ObjectProperty")
     __obj.asInstanceOf[ObjectProperty_]
   }
+  
+  extension [Self <: ObjectProperty_](x: Self) {
+    
+    inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+    
+    inline def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    
+    inline def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
+    
+    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
+    
+    inline def setKey(
+      value: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | DecimalLiteral_ | PrivateName_
+    ): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setShorthand(value: Boolean): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: ObjectProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Expression | PatternLike): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

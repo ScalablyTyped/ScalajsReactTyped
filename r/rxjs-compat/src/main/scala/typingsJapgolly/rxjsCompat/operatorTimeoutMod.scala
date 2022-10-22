@@ -1,22 +1,19 @@
 package typingsJapgolly.rxjsCompat
 
-import typingsJapgolly.std.Date
+import typingsJapgolly.rxjs.distTypesInternalTypesMod.SchedulerLike
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/timeout", JSImport.Namespace)
-@js.native
-object operatorTimeoutMod extends js.Object {
-  def timeout[T](due: Double): js.Any = js.native
-  def timeout[T](
-    due: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  def timeout[T](due: Date): js.Any = js.native
-  def timeout[T](
-    due: Date,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+object operatorTimeoutMod {
+  
+  @JSImport("rxjs-compat/operator/timeout", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def timeout[T](due: js.Date): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(due.asInstanceOf[js.Any]).asInstanceOf[Observable_[T]]
+  inline def timeout[T](due: js.Date, scheduler: SchedulerLike): Observable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(due.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable_[T]]
+  inline def timeout[T](due: Double): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(due.asInstanceOf[js.Any]).asInstanceOf[Observable_[T]]
+  inline def timeout[T](due: Double, scheduler: SchedulerLike): Observable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(due.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable_[T]]
 }
-

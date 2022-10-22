@@ -1,42 +1,66 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CssClassNames extends js.Object {
+trait CssClassNames extends StObject {
+  
   var headerCell: js.UndefOr[String] = js.undefined
+  
   var headerRow: js.UndefOr[String] = js.undefined
+  
   var hoverTableRow: js.UndefOr[String] = js.undefined
+  
   var oddTableRow: js.UndefOr[String] = js.undefined
+  
   var rowNumberCell: js.UndefOr[String] = js.undefined
+  
   var selectedTableRow: js.UndefOr[String] = js.undefined
+  
   var tableCell: js.UndefOr[String] = js.undefined
+  
   var tableRow: js.UndefOr[String] = js.undefined
 }
-
 object CssClassNames {
-  @scala.inline
-  def apply(
-    headerCell: String = null,
-    headerRow: String = null,
-    hoverTableRow: String = null,
-    oddTableRow: String = null,
-    rowNumberCell: String = null,
-    selectedTableRow: String = null,
-    tableCell: String = null,
-    tableRow: String = null
-  ): CssClassNames = {
+  
+  inline def apply(): CssClassNames = {
     val __obj = js.Dynamic.literal()
-    if (headerCell != null) __obj.updateDynamic("headerCell")(headerCell.asInstanceOf[js.Any])
-    if (headerRow != null) __obj.updateDynamic("headerRow")(headerRow.asInstanceOf[js.Any])
-    if (hoverTableRow != null) __obj.updateDynamic("hoverTableRow")(hoverTableRow.asInstanceOf[js.Any])
-    if (oddTableRow != null) __obj.updateDynamic("oddTableRow")(oddTableRow.asInstanceOf[js.Any])
-    if (rowNumberCell != null) __obj.updateDynamic("rowNumberCell")(rowNumberCell.asInstanceOf[js.Any])
-    if (selectedTableRow != null) __obj.updateDynamic("selectedTableRow")(selectedTableRow.asInstanceOf[js.Any])
-    if (tableCell != null) __obj.updateDynamic("tableCell")(tableCell.asInstanceOf[js.Any])
-    if (tableRow != null) __obj.updateDynamic("tableRow")(tableRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[CssClassNames]
   }
+  
+  extension [Self <: CssClassNames](x: Self) {
+    
+    inline def setHeaderCell(value: String): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderCellUndefined: Self = StObject.set(x, "headerCell", js.undefined)
+    
+    inline def setHeaderRow(value: String): Self = StObject.set(x, "headerRow", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderRowUndefined: Self = StObject.set(x, "headerRow", js.undefined)
+    
+    inline def setHoverTableRow(value: String): Self = StObject.set(x, "hoverTableRow", value.asInstanceOf[js.Any])
+    
+    inline def setHoverTableRowUndefined: Self = StObject.set(x, "hoverTableRow", js.undefined)
+    
+    inline def setOddTableRow(value: String): Self = StObject.set(x, "oddTableRow", value.asInstanceOf[js.Any])
+    
+    inline def setOddTableRowUndefined: Self = StObject.set(x, "oddTableRow", js.undefined)
+    
+    inline def setRowNumberCell(value: String): Self = StObject.set(x, "rowNumberCell", value.asInstanceOf[js.Any])
+    
+    inline def setRowNumberCellUndefined: Self = StObject.set(x, "rowNumberCell", js.undefined)
+    
+    inline def setSelectedTableRow(value: String): Self = StObject.set(x, "selectedTableRow", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedTableRowUndefined: Self = StObject.set(x, "selectedTableRow", js.undefined)
+    
+    inline def setTableCell(value: String): Self = StObject.set(x, "tableCell", value.asInstanceOf[js.Any])
+    
+    inline def setTableCellUndefined: Self = StObject.set(x, "tableCell", js.undefined)
+    
+    inline def setTableRow(value: String): Self = StObject.set(x, "tableRow", value.asInstanceOf[js.Any])
+    
+    inline def setTableRowUndefined: Self = StObject.set(x, "tableRow", js.undefined)
+  }
 }
-

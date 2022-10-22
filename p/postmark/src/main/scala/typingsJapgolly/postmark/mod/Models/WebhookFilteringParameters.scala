@@ -1,13 +1,12 @@
 package typingsJapgolly.postmark.mod.Models
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Models.WebhookFilteringParameters")
 @js.native
-class WebhookFilteringParameters protected ()
-  extends typingsJapgolly.postmark.modelsMod.WebhookFilteringParameters {
+open class WebhookFilteringParameters protected ()
+  extends typingsJapgolly.postmark.distClientModelsMod.WebhookFilteringParameters {
   def this(messageStream: String) = this()
 }
-

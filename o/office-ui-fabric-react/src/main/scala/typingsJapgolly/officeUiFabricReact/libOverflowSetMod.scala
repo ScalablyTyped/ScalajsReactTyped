@@ -1,20 +1,21 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.overflowSetTypesMod.IOverflowSetProps
+import typingsJapgolly.officeUiFabricReact.libComponentsOverflowSetOverflowSetDottypesMod.IOverflowSetProps
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/OverflowSet", JSImport.Namespace)
-@js.native
-object libOverflowSetMod extends js.Object {
+object libOverflowSetMod {
+  
+  @JSImport("office-ui-fabric-react/lib/OverflowSet", "OverflowSet")
   @js.native
-  class OverflowSetBase protected ()
-    extends typingsJapgolly.officeUiFabricReact.overflowSetMod.OverflowSetBase {
+  val OverflowSet: FunctionComponent[IOverflowSetProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/OverflowSet", "OverflowSetBase")
+  @js.native
+  open class OverflowSetBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsOverflowSetMod.OverflowSetBase {
     def this(props: IOverflowSetProps) = this()
   }
-  
-  val OverflowSet: FunctionComponent[IOverflowSetProps] = js.native
 }
-

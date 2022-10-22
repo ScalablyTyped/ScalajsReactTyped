@@ -1,12 +1,14 @@
 package typingsJapgolly.multiTypeof
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("multi-typeof", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(input: js.Any, types: js.Array[String]): Boolean = js.native
+object mod {
+  
+  inline def apply(input: Any, types: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("multi-typeof", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

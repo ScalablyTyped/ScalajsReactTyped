@@ -1,21 +1,9 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.squareConnect.squareConnectStrings.NONE
-  - typingsJapgolly.squareConnect.squareConnectStrings.LOW_QUANTITY
-*/
-trait InventoryAlertType extends js.Object
-
-object InventoryAlertType {
-  @scala.inline
-  def LOW_QUANTITY: typingsJapgolly.squareConnect.squareConnectStrings.LOW_QUANTITY = this.cast("LOW_QUANTITY")
-  @scala.inline
-  def NONE: typingsJapgolly.squareConnect.squareConnectStrings.NONE = this.cast("NONE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-}
-
+@JSImport("square-connect", "InventoryAlertType")
+@js.native
+open class InventoryAlertType () extends StObject

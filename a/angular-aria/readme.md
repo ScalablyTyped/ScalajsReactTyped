@@ -10,10 +10,10 @@ AngularJS module for making accessibility easy
 | ------------------ | :-------------: |
 | Full name          | angular-aria |
 | Keywords           | angular, framework, browser, accessibility, a11y, client-side |
-| # releases         | 13 |
-| # dependents       | 177 |
-| # downloads        | 3453765 |
-| # stars            | 3 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 444343.0 |
+| # stars            | 59430.0 |
 
 ## Links
 - [Homepage](http://angularjs.org)

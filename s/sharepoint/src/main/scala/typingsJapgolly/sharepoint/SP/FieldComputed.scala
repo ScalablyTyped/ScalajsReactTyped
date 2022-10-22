@@ -1,13 +1,15 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.FieldComputed")
 @js.native
-class FieldComputed () extends Field {
+trait FieldComputed
+  extends StObject
+     with Field {
+  
   def get_enableLookup(): Boolean = js.native
+  
   def set_enableLookup(value: Boolean): Unit = js.native
 }
-

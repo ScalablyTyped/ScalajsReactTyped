@@ -1,36 +1,38 @@
 package typingsJapgolly.materialTextfield
 
+import org.scalajs.dom.KeyboardEvent
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.materialBase.foundationMod.MDCFoundation
+import typingsJapgolly.materialTextfield.anon.PartialMDCTextFieldIconAd
 import typingsJapgolly.materialTextfield.iconAdapterMod.MDCTextFieldIconAdapter
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/textfield/icon/foundation", JSImport.Namespace)
-@js.native
-object iconFoundationMod extends js.Object {
+object iconFoundationMod {
+  
+  @JSImport("@material/textfield/icon/foundation", JSImport.Default)
   @js.native
-  trait MDCTextFieldIconFoundation
-    extends typingsJapgolly.materialBase.foundationMod.default[MDCTextFieldIconAdapter] {
-    /**
-      * Handles an interaction event
-      */
-    def handleInteraction(evt: Event_): Unit = js.native
-    /**
-      * Sets the content of the helper text field.
-      */
+  open class default () extends MDCTextFieldIconFoundation {
+    def this(adapter: PartialMDCTextFieldIconAd) = this()
+  }
+  
+  @JSImport("@material/textfield/icon/foundation", "MDCTextFieldIconFoundation")
+  @js.native
+  open class MDCTextFieldIconFoundation () extends MDCFoundation[MDCTextFieldIconAdapter] {
+    def this(adapter: PartialMDCTextFieldIconAd) = this()
+    
+    def handleInteraction(evt: KeyboardEvent): Unit = js.native
+    def handleInteraction(evt: MouseEvent): Unit = js.native
+    
+    /* private */ val interactionHandler: Any = js.native
+    
+    /* private */ var savedTabIndex: Any = js.native
+    
+    def setAriaLabel(label: String): Unit = js.native
+    
+    def setContent(content: String): Unit = js.native
+    
     def setDisabled(disabled: Boolean): Unit = js.native
   }
-  
-  @js.native
-  class default () extends MDCTextFieldIconFoundation
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    val defaultAdapter: MDCTextFieldIconAdapter = js.native
-    val strings: typingsJapgolly.materialTextfield.iconConstantsMod.strings = js.native
-  }
-  
 }
-

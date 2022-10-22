@@ -1,67 +1,88 @@
 package typingsJapgolly.firebaseComponent
 
-import typingsJapgolly.firebaseComponent.typesMod.ComponentType
-import typingsJapgolly.firebaseComponent.typesMod.InstantiationMode
-import typingsJapgolly.firebaseComponent.typesMod.Name
+import typingsJapgolly.firebaseComponent.distEsmSrcTypesMod.ComponentType
+import typingsJapgolly.firebaseComponent.distEsmSrcTypesMod.InstantiationMode
+import typingsJapgolly.firebaseComponent.distEsmSrcTypesMod.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebaseComponentStrings {
-  @js.native
-  sealed trait EAGER extends InstantiationMode
   
   @js.native
-  sealed trait LAZY extends InstantiationMode
+  sealed trait EAGER
+    extends StObject
+       with InstantiationMode
+       with typingsJapgolly.firebaseComponent.distSrcTypesMod.InstantiationMode
+  inline def EAGER: EAGER = "EAGER".asInstanceOf[EAGER]
   
   @js.native
-  sealed trait PRIVATE extends ComponentType
+  sealed trait EXPLICIT
+    extends StObject
+       with InstantiationMode
+       with typingsJapgolly.firebaseComponent.distSrcTypesMod.InstantiationMode
+  inline def EXPLICIT: EXPLICIT = "EXPLICIT".asInstanceOf[EXPLICIT]
   
   @js.native
-  sealed trait PUBLIC extends ComponentType
+  sealed trait LAZY
+    extends StObject
+       with InstantiationMode
+       with typingsJapgolly.firebaseComponent.distSrcTypesMod.InstantiationMode
+  inline def LAZY: LAZY = "LAZY".asInstanceOf[LAZY]
   
   @js.native
-  sealed trait VERSION extends ComponentType
+  sealed trait PRIVATE
+    extends StObject
+       with ComponentType
+       with typingsJapgolly.firebaseComponent.distSrcTypesMod.ComponentType
+  inline def PRIVATE: PRIVATE = "PRIVATE".asInstanceOf[PRIVATE]
   
   @js.native
-  sealed trait `[DEFAULT]` extends js.Object
+  sealed trait PUBLIC
+    extends StObject
+       with ComponentType
+       with typingsJapgolly.firebaseComponent.distSrcTypesMod.ComponentType
+  inline def PUBLIC: PUBLIC = "PUBLIC".asInstanceOf[PUBLIC]
   
   @js.native
-  sealed trait badtest extends Name
+  sealed trait VERSION
+    extends StObject
+       with ComponentType
+       with typingsJapgolly.firebaseComponent.distSrcTypesMod.ComponentType
+  inline def VERSION: VERSION = "VERSION".asInstanceOf[VERSION]
   
   @js.native
-  sealed trait fireball extends Name
+  sealed trait badtest
+    extends StObject
+       with Name
+       with typingsJapgolly.firebaseComponent.distSrcTypesMod.Name
+  inline def badtest: badtest = "badtest".asInstanceOf[badtest]
   
   @js.native
-  sealed trait rocket extends Name
+  sealed trait fireball
+    extends StObject
+       with Name
+       with typingsJapgolly.firebaseComponent.distSrcTypesMod.Name
+  inline def fireball: fireball = "fireball".asInstanceOf[fireball]
   
   @js.native
-  sealed trait ship extends Name
+  sealed trait rocket
+    extends StObject
+       with Name
+       with typingsJapgolly.firebaseComponent.distSrcTypesMod.Name
+  inline def rocket: rocket = "rocket".asInstanceOf[rocket]
   
   @js.native
-  sealed trait test extends Name
+  sealed trait ship
+    extends StObject
+       with Name
+       with typingsJapgolly.firebaseComponent.distSrcTypesMod.Name
+  inline def ship: ship = "ship".asInstanceOf[ship]
   
-  @scala.inline
-  def EAGER: EAGER = "EAGER".asInstanceOf[EAGER]
-  @scala.inline
-  def LAZY: LAZY = "LAZY".asInstanceOf[LAZY]
-  @scala.inline
-  def PRIVATE: PRIVATE = "PRIVATE".asInstanceOf[PRIVATE]
-  @scala.inline
-  def PUBLIC: PUBLIC = "PUBLIC".asInstanceOf[PUBLIC]
-  @scala.inline
-  def VERSION: VERSION = "VERSION".asInstanceOf[VERSION]
-  @scala.inline
-  def `[DEFAULT]`: `[DEFAULT]` = "[DEFAULT]".asInstanceOf[`[DEFAULT]`]
-  @scala.inline
-  def badtest: badtest = "badtest".asInstanceOf[badtest]
-  @scala.inline
-  def fireball: fireball = "fireball".asInstanceOf[fireball]
-  @scala.inline
-  def rocket: rocket = "rocket".asInstanceOf[rocket]
-  @scala.inline
-  def ship: ship = "ship".asInstanceOf[ship]
-  @scala.inline
-  def test: test = "test".asInstanceOf[test]
+  @js.native
+  sealed trait test
+    extends StObject
+       with Name
+       with typingsJapgolly.firebaseComponent.distSrcTypesMod.Name
+  inline def test: test = "test".asInstanceOf[test]
 }
-

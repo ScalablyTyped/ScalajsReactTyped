@@ -1,20 +1,10 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1
 
-import typingsJapgolly.jsrsasign.AnonAccuracy
-import typingsJapgolly.jsrsasign.AnonAddInfoNotAvailable
-import typingsJapgolly.jsrsasign.AnonCertreq
-import typingsJapgolly.jsrsasign.AnonFailinfo
-import typingsJapgolly.jsrsasign.AnonGranted
-import typingsJapgolly.jsrsasign.AnonHashValue
-import typingsJapgolly.jsrsasign.AnonMi
-import typingsJapgolly.jsrsasign.AnonMicros
-import typingsJapgolly.jsrsasign.AnonSigAlg
-import typingsJapgolly.jsrsasign.AnonSignerCert
-import typingsJapgolly.jsrsasign.AnonStatus
-import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * kjur's ASN.1 class for RFC 3161 Time Stamp Protocol
@@ -28,17 +18,28 @@ import scala.scalajs.js.annotation._
   * - easily generate CMS SignedData
   * - APIs are very similar to BouncyCastle library ASN.1 classes. So easy to learn.
   */
-@JSGlobal("jsrsasign.KJUR.asn1.tsp")
-@js.native
-object tsp extends js.Object {
+object tsp {
+  
   /**
     * abstract class for TimeStampToken generator
     * @param params associative array of parameters
     * @description
     */
-  @js.native
-  class AbstractTSAAdapter () extends js.Object {
-    def getTSTHex(msgHex: String, hashAlg: String): Unit = js.native
+  trait AbstractTSAAdapter extends StObject {
+    
+    def getTSTHex(msgHex: String, hashAlg: String): Unit
+  }
+  object AbstractTSAAdapter {
+    
+    inline def apply(getTSTHex: (String, String) => Callback): AbstractTSAAdapter = {
+      val __obj = js.Dynamic.literal(getTSTHex = js.Any.fromFunction2((t0: String, t1: String) => (getTSTHex(t0, t1)).runNow()))
+      __obj.asInstanceOf[AbstractTSAAdapter]
+    }
+    
+    extension [Self <: AbstractTSAAdapter](x: Self) {
+      
+      inline def setGetTSTHex(value: (String, String) => Callback): Self = StObject.set(x, "getTSTHex", js.Any.fromFunction2((t0: String, t1: String) => (value(t0, t1)).runNow()))
+    }
   }
   
   /**
@@ -56,9 +57,25 @@ object tsp extends js.Object {
     *                                 millis: 500,
     *                                 micros: 500});
     */
-  @js.native
-  class Accuracy () extends ASN1Object {
-    def this(params: AnonMicros) = this()
+  trait Accuracy
+    extends StObject
+       with ASN1Object
+  object Accuracy {
+    
+    inline def apply(
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String
+    ): Accuracy = {
+      val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], params = null)
+      __obj.asInstanceOf[Accuracy]
+    }
   }
   
   /**
@@ -76,10 +93,21 @@ object tsp extends js.Object {
     *
     * Those values are provided by initial parameters.
     */
-  @js.native
-  class FixedTSAAdapter () extends js.Object {
-    def this(initParams: AnonSigAlg) = this()
-    def getTSTHex(msgHex: String, hashAlg: String): String = js.native
+  trait FixedTSAAdapter extends StObject {
+    
+    def getTSTHex(msgHex: String, hashAlg: String): String
+  }
+  object FixedTSAAdapter {
+    
+    inline def apply(getTSTHex: (String, String) => String): FixedTSAAdapter = {
+      val __obj = js.Dynamic.literal(getTSTHex = js.Any.fromFunction2(getTSTHex))
+      __obj.asInstanceOf[FixedTSAAdapter]
+    }
+    
+    extension [Self <: FixedTSAAdapter](x: Self) {
+      
+      inline def setGetTSTHex(value: (String, String) => String): Self = StObject.set(x, "getTSTHex", js.Any.fromFunction2(value))
+    }
   }
   
   /**
@@ -95,9 +123,25 @@ object tsp extends js.Object {
     * o = new KJUR.asn1.tsp.MessageImprint({hashAlg: 'sha1',
     *                                       hashValue: '1f3dea...'});
     */
-  @js.native
-  class MessageImprint () extends ASN1Object {
-    def this(params: AnonHashValue) = this()
+  trait MessageImprint
+    extends StObject
+       with ASN1Object
+  object MessageImprint {
+    
+    inline def apply(
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String
+    ): MessageImprint = {
+      val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], params = null)
+      __obj.asInstanceOf[MessageImprint]
+    }
   }
   
   /**
@@ -116,11 +160,7 @@ object tsp extends js.Object {
     *    systemFailure          (25) }
     * ```
     */
-  @js.native
-  class PKIFailureInfo () extends ASN1Object {
-    def this(params: IntegerParam) = this()
-    def this(params: NameParam) = this()
-  }
+  type PKIFailureInfo = ASN1Object
   
   /**
     * class for TSP PKIFreeText ASN.1 object
@@ -131,10 +171,7 @@ object tsp extends js.Object {
     *    SIZE (1..MAX) OF UTF8String }
     * ```
     */
-  @js.native
-  class PKIFreeText () extends ASN1Object {
-    def this(params: ArrayParam[String]) = this()
-  }
+  type PKIFreeText = ASN1Object
   
   /**
     * class for TSP PKIStatus ASN.1 object
@@ -150,10 +187,7 @@ object tsp extends js.Object {
     *    revocationNotification (5) }
     * ```
     */
-  @js.native
-  class PKIStatus () extends ASN1Object {
-    def this(params: NameParam) = this()
-  }
+  type PKIStatus = ASN1Object
   
   /**
     * class for TSP PKIStatusInfo ASN.1 object
@@ -166,20 +200,28 @@ object tsp extends js.Object {
     *    failInfo                PKIFailureInfo  OPTIONAL  }
     * ```
     */
-  @js.native
-  class PKIStatusInfo () extends ASN1Object {
-    def this(params: AnonFailinfo) = this()
-  }
+  type PKIStatusInfo = ASN1Object
   
   /**
     * class for simple TimeStampToken generator
     * @param params associative array of parameters
     * @description
     */
-  @js.native
-  class SimpleTSAAdapter () extends js.Object {
-    def this(initParams: AnonSigAlg) = this()
-    def getTSTHex(msgHex: String, hashAlg: String): String = js.native
+  trait SimpleTSAAdapter extends StObject {
+    
+    def getTSTHex(msgHex: String, hashAlg: String): String
+  }
+  object SimpleTSAAdapter {
+    
+    inline def apply(getTSTHex: (String, String) => String): SimpleTSAAdapter = {
+      val __obj = js.Dynamic.literal(getTSTHex = js.Any.fromFunction2(getTSTHex))
+      __obj.asInstanceOf[SimpleTSAAdapter]
+    }
+    
+    extension [Self <: SimpleTSAAdapter](x: Self) {
+      
+      inline def setGetTSTHex(value: (String, String) => String): Self = StObject.set(x, "getTSTHex", js.Any.fromFunction2(value))
+    }
   }
   
   /**
@@ -210,9 +252,25 @@ object tsp extends js.Object {
     *     tsa:       {str: '/C=US/O=TSA1'}   // OPTION
     * });
     */
-  @js.native
-  class TSTInfo protected () extends ASN1Object {
-    def this(params: AnonAccuracy) = this()
+  trait TSTInfo
+    extends StObject
+       with ASN1Object
+  object TSTInfo {
+    
+    inline def apply(
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String
+    ): TSTInfo = {
+      val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], params = null)
+      __obj.asInstanceOf[TSTInfo]
+    }
   }
   
   /**
@@ -229,10 +287,34 @@ object tsp extends js.Object {
     *    extensions       [0] IMPLICIT Extensions   OPTIONAL  }
     * ```
     */
-  @js.native
-  class TimeStampReq () extends ASN1Object {
-    def this(params: AnonMi) = this()
-    def setMessageImprint(params: MessageImprint): Unit = js.native
+  trait TimeStampReq
+    extends StObject
+       with ASN1Object {
+    
+    def setMessageImprint(params: MessageImprint): Unit
+  }
+  object TimeStampReq {
+    
+    inline def apply(
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String,
+      setMessageImprint: MessageImprint => Callback
+    ): TimeStampReq = {
+      val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setMessageImprint = js.Any.fromFunction1((t0: MessageImprint) => setMessageImprint(t0).runNow()), params = null)
+      __obj.asInstanceOf[TimeStampReq]
+    }
+    
+    extension [Self <: TimeStampReq](x: Self) {
+      
+      inline def setSetMessageImprint(value: MessageImprint => Callback): Self = StObject.set(x, "setMessageImprint", js.Any.fromFunction1((t0: MessageImprint) => value(t0).runNow()))
+    }
   }
   
   /**
@@ -245,66 +327,5 @@ object tsp extends js.Object {
     *    timeStampToken          TimeStampToken     OPTIONAL  }
     * ```
     */
-  @js.native
-  class TimeStampResp () extends ASN1Object {
-    def this(params: AnonStatus) = this()
-  }
-  
-  /**
-    * parse hexadecimal string of MessageImprint
-    * @param hexadecimal string of MessageImprint
-    * @return JSON object of parsed parameters
-    * @description
-    * This method parses a hexadecimal string of MessageImprint
-    * and returns parsed their fields:
-    * @example
-    * var json = KJUR.asn1.tsp.TSPUtil.parseMessageImprint("302602...");
-    * // resulted DUMP of above 'json':
-    * {hashAlg: 'sha256',          // MessageImprint hashAlg
-    *  hashValue: 'a1a2a3a4...'}   // MessageImprint hashValue
-    */
-  def parseMessageImprint(miHex: String): MessageImprint = js.native
-  /**
-    * parse hexadecimal string of TimeStampReq
-    * @param hexadecimal string of TimeStampReq
-    * @return JSON object of parsed parameters
-    * @description
-    * This method parses a hexadecimal string of TimeStampReq
-    * and returns parsed their fields:
-    * @example
-    * var json = KJUR.asn1.tsp.TSPUtil.parseTimeStampReq("302602...");
-    * // resulted DUMP of above 'json':
-    * {mi: {hashAlg: 'sha256',          // MessageImprint hashAlg
-    *       hashValue: 'a1a2a3a4...'},  // MessageImprint hashValue
-    *  policy: '1.2.3.4.5',             // tsaPolicy (OPTION)
-    *  nonce: '9abcf318...',            // nonce (OPTION)
-    *  certreq: true}                   // certReq (OPTION)
-    */
-  def parseTimeStampReq(reqHex: String): AnonCertreq = js.native
-  /* static members */
-  @js.native
-  object PKIFailureInfo extends js.Object {
-    val valueList: AnonAddInfoNotAvailable = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object PKIStatus extends js.Object {
-    val valueList: AnonGranted = js.native
-  }
-  
-  @js.native
-  object TSPUtil extends js.Object {
-    /**
-      * generate TimeStampToken ASN.1 object specified by JSON parameters
-      * @param param JSON parameter to generate TimeStampToken
-      * @return object just generated
-      * @description
-      * @example
-      */
-    def newTimeStampToken(): SignedData = js.native
-    def newTimeStampToken(param: AnonSignerCert): SignedData = js.native
-  }
-  
+  type TimeStampResp = ASN1Object
 }
-

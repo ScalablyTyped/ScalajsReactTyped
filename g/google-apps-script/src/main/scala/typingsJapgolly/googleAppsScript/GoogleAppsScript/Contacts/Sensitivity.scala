@@ -1,44 +1,35 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Contacts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Sensitivity extends js.Object
-
+sealed trait Sensitivity extends StObject
 /**
   * An enum for contact sensitivity.
   */
 @JSGlobal("GoogleAppsScript.Contacts.Sensitivity")
 @js.native
-object Sensitivity extends js.Object {
-  @js.native
-  sealed trait CONFIDENTIAL extends Sensitivity
+object Sensitivity extends StObject {
   
   @js.native
-  sealed trait NORMAL extends Sensitivity
+  sealed trait CONFIDENTIAL
+    extends StObject
+       with Sensitivity
   
   @js.native
-  sealed trait PERSONAL extends Sensitivity
+  sealed trait NORMAL
+    extends StObject
+       with Sensitivity
   
   @js.native
-  sealed trait PRIVATE extends Sensitivity
+  sealed trait PERSONAL
+    extends StObject
+       with Sensitivity
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Sensitivity with Double] = js.native
-  /* 0 */ @js.native
-  object CONFIDENTIAL extends TopLevel[CONFIDENTIAL with Double]
-  
-  /* 1 */ @js.native
-  object NORMAL extends TopLevel[NORMAL with Double]
-  
-  /* 2 */ @js.native
-  object PERSONAL extends TopLevel[PERSONAL with Double]
-  
-  /* 3 */ @js.native
-  object PRIVATE extends TopLevel[PRIVATE with Double]
-  
+  @js.native
+  sealed trait PRIVATE
+    extends StObject
+       with Sensitivity
 }
-

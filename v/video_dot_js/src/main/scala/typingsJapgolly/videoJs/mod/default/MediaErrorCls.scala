@@ -1,22 +1,24 @@
 package typingsJapgolly.videoJs.mod.default
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.videoJs.videoJsNumbers.`0`
-import typingsJapgolly.videoJs.videoJsNumbers.`1`
-import typingsJapgolly.videoJs.videoJsNumbers.`2`
-import typingsJapgolly.videoJs.videoJsNumbers.`3`
-import typingsJapgolly.videoJs.videoJsNumbers.`4`
-import typingsJapgolly.videoJs.videoJsNumbers.`5`
+import typingsJapgolly.videoJs.videoJsInts.`0`
+import typingsJapgolly.videoJs.videoJsInts.`1`
+import typingsJapgolly.videoJs.videoJsInts.`2`
+import typingsJapgolly.videoJs.videoJsInts.`3`
+import typingsJapgolly.videoJs.videoJsInts.`4`
+import typingsJapgolly.videoJs.videoJsInts.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "MediaError")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js", "default.MediaError")
 @js.native
-class MediaErrorCls protected ()
-  extends typingsJapgolly.videoJs.mod.videojs.MediaError {
+open class MediaErrorCls protected ()
+  extends StObject
+     with typingsJapgolly.videoJs.mod.videojs.MediaError {
   def this(value: String) = this()
-  def this(value: StringDictionary[js.Any]) = this()
+  def this(value: StringDictionary[Any]) = this()
   /**
     * Create an instance of this class.
     *
@@ -31,55 +33,64 @@ class MediaErrorCls protected ()
     */
   def this(value: Double) = this()
   def this(value: typingsJapgolly.videoJs.mod.videojs.MediaError) = this()
+  
   /**
     * W3C error code for media error aborted.
     * @default 1
     */
   /* CompleteClass */
-  override var MEDIA_ERR_ABORTED: `1` = js.native
+  var MEDIA_ERR_ABORTED: `1` = js.native
+  
   /**
     * W3C error code for any custom error.
     * @default 0
     */
   /* CompleteClass */
-  override var MEDIA_ERR_CUSTOM: `0` = js.native
+  var MEDIA_ERR_CUSTOM: `0` = js.native
+  
   /**
     * W3C error code for any decoding error.
     * @default 3
     */
   /* CompleteClass */
-  override var MEDIA_ERR_DECODE: `3` = js.native
+  var MEDIA_ERR_DECODE: `3` = js.native
+  
   /**
     * W3C error code for any time that a source is encrypted.
     * @default 5
     */
   /* CompleteClass */
-  override var MEDIA_ERR_ENCRYPTED: `5` = js.native
+  var MEDIA_ERR_ENCRYPTED: `5` = js.native
+  
   /**
     * W3C error code for any network error.
     * @default 2
     */
   /* CompleteClass */
-  override var MEDIA_ERR_NETWORK: `2` = js.native
+  var MEDIA_ERR_NETWORK: `2` = js.native
+  
   /**
     * W3C error code for any time that a source is not supported.
     * @default 4
     */
   /* CompleteClass */
-  override var MEDIA_ERR_SRC_NOT_SUPPORTED: `4` = js.native
+  var MEDIA_ERR_SRC_NOT_SUPPORTED: `4` = js.native
+  
   /**
     * The error code that refers two one of the defined `MediaError` types
     *
     */
   /* CompleteClass */
-  override var code: Double = js.native
+  var code: Double = js.native
+  
   /**
     * An optional message that to show with the error. Message is not part of the HTML5
     * video spec but allows for more informative custom errors.
     *
     */
   /* CompleteClass */
-  override var message: String = js.native
+  var message: String = js.native
+  
   /**
     * An optional status code that can be set by plugins to allow even more detail about
     * the error. For example a plugin might provide a specific HTTP status code and an
@@ -89,6 +100,5 @@ class MediaErrorCls protected ()
     *
     */
   /* CompleteClass */
-  override var status: js.Array[_] = js.native
+  var status: js.Array[Any] = js.native
 }
-

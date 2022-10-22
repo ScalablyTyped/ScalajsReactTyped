@@ -1,12 +1,11 @@
 package typingsJapgolly.i18next.mod
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// helper to identify class https://stackoverflow.com/a/45983481/2363935
 @js.native
 trait Newable[T]
-  extends Instantiable1[/* args (repeated) */ js.Any, T]
-
+  extends StObject
+     with Instantiable1[/* args (repeated) */ Any, T]

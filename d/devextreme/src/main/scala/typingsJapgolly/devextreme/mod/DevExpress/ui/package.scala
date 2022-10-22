@@ -1,109 +1,185 @@
-package typingsJapgolly.devextreme.mod.DevExpress
+package typingsJapgolly.devextreme.mod.DevExpress.ui
 
+import typingsJapgolly.devextreme.anon.AllDay
+import typingsJapgolly.devextreme.mod.DevExpress.DOMComponent
+import typingsJapgolly.devextreme.mod.DevExpress.DOMComponentOptions
+import typingsJapgolly.devextreme.mod.DevExpress.ExternalFormat
+import typingsJapgolly.devextreme.mod.DevExpress.core.template
+import typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget.ItemLike
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnBase
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnButtonBase
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.Editing
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.EditingBase
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.EditingTextsBase
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.PagingBase
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.Scrolling
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.ScrollingBase
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.Selection
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.SelectionBase
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxTreeList.EditingTexts
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxTreeList.Node
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxTreeList.Paging
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object ui {
-  type CollectionWidgetItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidgetItem
-  type DataExpressionMixinItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidgetItem
-  type DraggableBase = typingsJapgolly.devextreme.mod.DevExpress.DOMComponent
-  type HierarchicalCollectionWidget = typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget
-  type dxAccordionItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxAccordionItem
-  type dxActionSheetItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxActionSheetItem
-  type dxAutocomplete = typingsJapgolly.devextreme.mod.DevExpress.ui.dxDropDownList
-  type dxBox = typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget
-  type dxBoxItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxBoxItem
-  type dxButton = typingsJapgolly.devextreme.mod.DevExpress.ui.Widget
-  type dxButtonGroup = typingsJapgolly.devextreme.mod.DevExpress.ui.Widget
-  type dxCalendar = typingsJapgolly.devextreme.mod.DevExpress.ui.Editor
-  type dxCheckBox = typingsJapgolly.devextreme.mod.DevExpress.ui.Editor
-  type dxColorBox = typingsJapgolly.devextreme.mod.DevExpress.ui.dxDropDownEditor
-  type dxContextMenuItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxContextMenuItem
-  type dxDeferRendering = typingsJapgolly.devextreme.mod.DevExpress.ui.Widget
-  type dxDraggable = typingsJapgolly.devextreme.mod.DevExpress.ui.DraggableBase
-  type dxDropDownButtonItem = typingsJapgolly.devextreme.mod.DevExpress.ui.dxListItem
-  type dxFileUploader = typingsJapgolly.devextreme.mod.DevExpress.ui.Editor
-  type dxGalleryItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxGalleryItem
-  type dxGantt = typingsJapgolly.devextreme.mod.DevExpress.ui.Widget
-  type dxListItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxListItem
-  type dxLoadIndicator = typingsJapgolly.devextreme.mod.DevExpress.ui.Widget
-  type dxLoadPanel = typingsJapgolly.devextreme.mod.DevExpress.ui.dxOverlay
-  type dxLookup = typingsJapgolly.devextreme.mod.DevExpress.ui.dxDropDownList
-  type dxMenu = typingsJapgolly.devextreme.mod.DevExpress.ui.dxMenuBase
-  type dxMenuBaseItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxMenuBaseItem
-  type dxMenuItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxMenuItem
-  type dxMultiView = typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget
-  type dxMultiViewItem = typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidgetItem
-  type dxMultiViewItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxMultiViewItem
-  type dxNavBar = typingsJapgolly.devextreme.mod.DevExpress.ui.dxTabs
-  type dxNavBarItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxNavBarItem
-  type dxNumberBox = typingsJapgolly.devextreme.mod.DevExpress.ui.dxTextEditor
-  type dxPopup = typingsJapgolly.devextreme.mod.DevExpress.ui.dxOverlay
-  type dxProgressBar = typingsJapgolly.devextreme.mod.DevExpress.ui.dxTrackBar
-  type dxRangeSlider = typingsJapgolly.devextreme.mod.DevExpress.ui.dxSliderBase
-  type dxRecurrenceEditor = typingsJapgolly.devextreme.mod.DevExpress.ui.Editor
-  type dxResizable = typingsJapgolly.devextreme.mod.DevExpress.DOMComponent
-  type dxResponsiveBox = typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget
-  type dxResponsiveBoxItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxResponsiveBoxItem
-  type dxSchedulerAppointmentTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxSchedulerAppointment
-  type dxSelectBox = typingsJapgolly.devextreme.mod.DevExpress.ui.dxDropDownList
-  type dxSlideOutItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxSlideOutItem
-  type dxSlider = typingsJapgolly.devextreme.mod.DevExpress.ui.dxSliderBase
-  type dxSliderBase = typingsJapgolly.devextreme.mod.DevExpress.ui.dxTrackBar
-  type dxSortable = typingsJapgolly.devextreme.mod.DevExpress.ui.DraggableBase
-  type dxSpeedDialAction = typingsJapgolly.devextreme.mod.DevExpress.ui.Widget
-  type dxSwitch = typingsJapgolly.devextreme.mod.DevExpress.ui.Editor
-  type dxTabPanel = typingsJapgolly.devextreme.mod.DevExpress.ui.dxMultiView
-  type dxTabPanelItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxTabPanelItem
-  type dxTabs = typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget
-  type dxTabsItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxTabsItem
-  type dxTagBox = typingsJapgolly.devextreme.mod.DevExpress.ui.dxSelectBox
-  type dxTextArea = typingsJapgolly.devextreme.mod.DevExpress.ui.dxTextBox
-  type dxTextBox = typingsJapgolly.devextreme.mod.DevExpress.ui.dxTextEditor
-  type dxTileViewItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxTileViewItem
-  type dxToast = typingsJapgolly.devextreme.mod.DevExpress.ui.dxOverlay
-  type dxToolbar = typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget
-  type dxToolbarItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxToolbarItem
-  type dxTooltip = typingsJapgolly.devextreme.mod.DevExpress.ui.dxPopover
-  type dxTooltipOptions = typingsJapgolly.devextreme.mod.DevExpress.ui.dxPopoverOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxTooltip]
-  type dxTrackBar = typingsJapgolly.devextreme.mod.DevExpress.ui.Editor
-  type dxTreeViewItemTemplate = typingsJapgolly.devextreme.mod.DevExpress.ui.dxTreeViewItem
-  type dxValidationGroupOptions = typingsJapgolly.devextreme.mod.DevExpress.DOMComponentOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxValidationGroup]
-  type dxValidationSummary = typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.devextreme.devextremeStrings.billions
-    - typingsJapgolly.devextreme.devextremeStrings.currency
-    - typingsJapgolly.devextreme.devextremeStrings.day
-    - typingsJapgolly.devextreme.devextremeStrings.decimal_
-    - typingsJapgolly.devextreme.devextremeStrings.exponential
-    - typingsJapgolly.devextreme.devextremeStrings.fixedPoint
-    - typingsJapgolly.devextreme.devextremeStrings.largeNumber
-    - typingsJapgolly.devextreme.devextremeStrings.longDate
-    - typingsJapgolly.devextreme.devextremeStrings.longTime
-    - typingsJapgolly.devextreme.devextremeStrings.millions
-    - typingsJapgolly.devextreme.devextremeStrings.millisecond
-    - typingsJapgolly.devextreme.devextremeStrings.month
-    - typingsJapgolly.devextreme.devextremeStrings.monthAndDay
-    - typingsJapgolly.devextreme.devextremeStrings.monthAndYear
-    - typingsJapgolly.devextreme.devextremeStrings.percent
-    - typingsJapgolly.devextreme.devextremeStrings.quarter
-    - typingsJapgolly.devextreme.devextremeStrings.quarterAndYear
-    - typingsJapgolly.devextreme.devextremeStrings.shortDate
-    - typingsJapgolly.devextreme.devextremeStrings.shortTime
-    - typingsJapgolly.devextreme.devextremeStrings.thousands
-    - typingsJapgolly.devextreme.devextremeStrings.trillions
-    - typingsJapgolly.devextreme.devextremeStrings.year
-    - typingsJapgolly.devextreme.devextremeStrings.dayOfWeek
-    - typingsJapgolly.devextreme.devextremeStrings.hour
-    - typingsJapgolly.devextreme.devextremeStrings.longDateLongTime
-    - typingsJapgolly.devextreme.devextremeStrings.minute
-    - typingsJapgolly.devextreme.devextremeStrings.second
-    - typingsJapgolly.devextreme.devextremeStrings.shortDateShortTime
-    - java.lang.String
-    - js.Function1[/ * value * / scala.Double | typingsJapgolly.std.Date, java.lang.String]
-    - typingsJapgolly.devextreme.AnonCurrency
-  */
-  type format = typingsJapgolly.devextreme.mod.DevExpress.ui._format | (js.Function1[/* value */ scala.Double | js.Date, java.lang.String]) | java.lang.String
-  type template = typingsJapgolly.devextreme.mod.DevExpress.core.template
-}
+
+type CollectionWidgetItemTemplate = CollectionWidgetItem
+
+type DataExpressionMixinItemTemplate = CollectionWidgetItem
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.devextreme.mod.DevExpress.FormatObject
+  - typingsJapgolly.devextreme.mod.DevExpress.common.Format
+  - java.lang.String
+  - js.Function1[js.Date | scala.Double, java.lang.String]
+  - typingsJapgolly.devextreme.mod.DevExpress.ExternalFormat
+*/
+type Format = _Format | (js.Function1[js.Date | Double, String]) | String | ExternalFormat
+
+type GridBaseColumn[TRowData] = ColumnBase[TRowData]
+
+type GridBaseColumnButton = ColumnButtonBase
+
+type GridBaseEditing[TRowData, TKey] = EditingBase[TRowData, TKey]
+
+type GridBaseEditingTexts = EditingTextsBase
+
+type GridBasePaging = PagingBase
+
+type GridBaseScrolling = ScrollingBase
+
+type GridBaseSelection = SelectionBase
+
+type HierarchicalCollectionWidget[TProperties /* <: HierarchicalCollectionWidgetOptions[Any, TItem, TKey] */, TItem /* <: ItemLike */, TKey] = CollectionWidget[TProperties, TItem, TKey]
+
+type Template = template
+
+type dxAccordionItemTemplate = dxAccordionItem
+
+type dxActionSheetItemTemplate = dxActionSheetItem[Any]
+
+type dxAutocomplete = dxDropDownList[dxAutocompleteOptions]
+
+type dxBox[TItem /* <: typingsJapgolly.devextreme.mod.DevExpress.ui.dxBox.ItemLike[TKey] */, TKey] = CollectionWidget[dxBoxOptions[TItem, TKey], TItem, TKey]
+
+type dxBoxItemTemplate = dxBoxItem[Any]
+
+type dxButton = Widget[dxButtonOptions]
+
+type dxButtonGroup = Widget[dxButtonGroupOptions]
+
+type dxCalendar = Editor[dxCalendarOptions]
+
+type dxColorBox = dxDropDownEditor[dxColorBoxOptions]
+
+type dxContextMenuItemTemplate = dxContextMenuItem
+
+type dxDataGridEditing[TRowData, TKey] = Editing[TRowData, TKey]
+
+type dxDataGridScrolling = Scrolling
+
+type dxDataGridSelection = Selection
+
+type dxDeferRendering = Widget[dxDeferRenderingOptions]
+
+type dxGalleryItemTemplate = dxGalleryItem
+
+type dxListItemTemplate = dxListItem
+
+type dxLoadIndicator = Widget[dxLoadIndicatorOptions]
+
+type dxLoadPanel = dxOverlay[dxLoadPanelOptions]
+
+type dxLookup = dxDropDownList[dxLookupOptions]
+
+type dxMenu[TKey] = dxMenuBase[dxMenuOptions[TKey], dxMenuItem, TKey]
+
+type dxMenuBaseItemTemplate = dxMenuBaseItem
+
+type dxMenuItemTemplate = dxMenuItem
+
+type dxMultiView[TProperties /* <: dxMultiViewOptions[TItem, TKey] */, TItem /* <: typingsJapgolly.devextreme.mod.DevExpress.ui.dxMultiView.ItemLike */, TKey] = CollectionWidget[TProperties, TItem, TKey]
+
+type dxMultiViewItem = CollectionWidgetItem
+
+type dxMultiViewItemTemplate = dxMultiViewItem
+
+type dxNavBar[TItem /* <: typingsJapgolly.devextreme.mod.DevExpress.ui.dxNavBar.ItemLike */, TKey] = dxTabs[dxNavBarOptions[TItem, TKey], TItem, TKey]
+
+type dxNavBarItemTemplate = dxNavBarItem
+
+type dxNumberBox = dxTextEditor[dxNumberBoxOptions]
+
+type dxPopup[TProperties] = dxOverlay[TProperties]
+
+type dxProgressBar = dxTrackBar[dxProgressBarOptions]
+
+type dxRangeSlider = dxTrackBar[dxRangeSliderOptions]
+
+type dxRecurrenceEditor = Editor[dxRecurrenceEditorOptions]
+
+type dxResizable = DOMComponent[dxResizableOptions]
+
+type dxResponsiveBox[TItem /* <: typingsJapgolly.devextreme.mod.DevExpress.ui.dxResponsiveBox.ItemLike */, TKey] = CollectionWidget[dxResponsiveBoxOptions[TItem, TKey], TItem, TKey]
+
+type dxResponsiveBoxItemTemplate = dxResponsiveBoxItem
+
+type dxSchedulerAppointment = CollectionWidgetItem & AllDay & (Record[String, Any])
+
+type dxSchedulerAppointmentTemplate = dxSchedulerAppointment
+
+type dxSelectBox[TProperties] = dxDropDownList[TProperties]
+
+type dxSlideOutItemTemplate = dxSlideOutItem
+
+type dxSlider = dxTrackBar[dxSliderOptions]
+
+type dxSpeedDialAction = Widget[dxSpeedDialActionOptions]
+
+type dxSwitch = Editor[dxSwitchOptions]
+
+type dxTabPanel[TItem /* <: typingsJapgolly.devextreme.mod.DevExpress.ui.dxTabPanel.ItemLike */, TKey] = dxMultiView[dxTabPanelOptions[TItem, TKey], TItem, TKey]
+
+type dxTabPanelItemTemplate = dxTabPanelItem
+
+type dxTabs[TProperties /* <: dxTabsOptions[TItem, TKey] */, TItem /* <: typingsJapgolly.devextreme.mod.DevExpress.ui.dxTabs.ItemLike */, TKey] = CollectionWidget[TProperties, TItem, TKey]
+
+type dxTabsItemTemplate = dxTabsItem
+
+type dxTagBox = dxSelectBox[dxTagBoxOptions]
+
+type dxTextArea = dxTextBox[dxTextAreaOptions]
+
+type dxTextBox[TProperties] = dxTextEditor[TProperties]
+
+type dxTileViewItemTemplate = dxTileViewItem
+
+type dxToast = dxOverlay[dxToastOptions]
+
+type dxToolbar[TItem /* <: typingsJapgolly.devextreme.mod.DevExpress.ui.dxToolbar.ItemLike */, TKey] = CollectionWidget[dxToolbarOptions[TItem, TKey], TItem, TKey]
+
+type dxToolbarItemTemplate = dxToolbarItem
+
+type dxTooltip = dxPopover[dxTooltipOptions]
+
+type dxTrackBar[TProperties] = Editor[TProperties]
+
+type dxTreeListEditing[TRowData, TKey] = typingsJapgolly.devextreme.mod.DevExpress.ui.dxTreeList.Editing[TRowData, TKey]
+
+type dxTreeListEditingTexts = EditingTexts
+
+type dxTreeListNode[TRowData, TKey] = Node[TRowData, TKey]
+
+type dxTreeListPaging = Paging
+
+type dxTreeListScrolling = typingsJapgolly.devextreme.mod.DevExpress.ui.dxTreeList.Scrolling
+
+type dxTreeListSelection = typingsJapgolly.devextreme.mod.DevExpress.ui.dxTreeList.Selection
+
+type dxTreeViewItemTemplate = dxTreeViewItem
+
+type dxValidationGroupOptions = DOMComponentOptions[dxValidationGroup]
+
+type dxValidationMessage = dxOverlay[dxValidationMessageOptions]

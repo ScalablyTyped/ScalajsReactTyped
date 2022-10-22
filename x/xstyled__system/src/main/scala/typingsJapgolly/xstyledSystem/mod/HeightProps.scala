@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.HeightProperty
+import typingsJapgolly.csstype.mod.Property.Height
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HeightProps[TLength] extends js.Object {
-  val height: js.UndefOr[ResponsiveValue[HeightProperty[TLength]]] = js.undefined
+trait HeightProps[TLength] extends StObject {
+  
+  val height: js.UndefOr[ResponsiveValue[Height[TLength]]] = js.undefined
 }
-
 object HeightProps {
-  @scala.inline
-  def apply[TLength](height: ResponsiveValue[HeightProperty[TLength]] = null): HeightProps[TLength] = {
+  
+  inline def apply[TLength](): HeightProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeightProps[TLength]]
   }
+  
+  extension [Self <: HeightProps[?], TLength](x: Self & HeightProps[TLength]) {
+    
+    inline def setHeight(value: ResponsiveValue[Height[TLength]]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHeightVarargs(value: Height[TLength]*): Self = StObject.set(x, "height", js.Array(value*))
+  }
 }
-

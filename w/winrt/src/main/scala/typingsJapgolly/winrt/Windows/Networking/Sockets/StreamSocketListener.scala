@@ -1,26 +1,35 @@
 package typingsJapgolly.winrt.Windows.Networking.Sockets
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncAction
 import typingsJapgolly.winrt.Windows.Networking.HostName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Sockets.StreamSocketListener")
-@js.native
-class StreamSocketListener () extends IStreamSocketListener {
-  /* CompleteClass */
-  override var control: StreamSocketListenerControl = js.native
-  /* CompleteClass */
-  override var information: StreamSocketListenerInformation = js.native
-  /* CompleteClass */
-  override var onconnectionreceived: js.Any = js.native
-  /* CompleteClass */
-  override def bindEndpointAsync(localHostName: HostName, localServiceName: String): IAsyncAction = js.native
-  /* CompleteClass */
-  override def bindServiceNameAsync(localServiceName: String): IAsyncAction = js.native
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  def dispose(): Unit = js.native
+trait StreamSocketListener
+  extends StObject
+     with IStreamSocketListener {
+  
+  def dispose(): Unit
 }
-
+object StreamSocketListener {
+  
+  inline def apply(
+    bindEndpointAsync: (HostName, String) => IAsyncAction,
+    bindServiceNameAsync: String => IAsyncAction,
+    close: Callback,
+    control: StreamSocketListenerControl,
+    dispose: Callback,
+    information: StreamSocketListenerInformation,
+    onconnectionreceived: Any
+  ): StreamSocketListener = {
+    val __obj = js.Dynamic.literal(bindEndpointAsync = js.Any.fromFunction2(bindEndpointAsync), bindServiceNameAsync = js.Any.fromFunction1(bindServiceNameAsync), close = close.toJsFn, control = control.asInstanceOf[js.Any], dispose = dispose.toJsFn, information = information.asInstanceOf[js.Any], onconnectionreceived = onconnectionreceived.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StreamSocketListener]
+  }
+  
+  extension [Self <: StreamSocketListener](x: Self) {
+    
+    inline def setDispose(value: Callback): Self = StObject.set(x, "dispose", value.toJsFn)
+  }
+}

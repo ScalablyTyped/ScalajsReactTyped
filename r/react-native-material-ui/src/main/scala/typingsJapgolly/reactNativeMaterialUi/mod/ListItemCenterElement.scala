@@ -1,23 +1,38 @@
 package typingsJapgolly.reactNativeMaterialUi.mod
 
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListItemCenterElement extends js.Object {
+trait ListItemCenterElement extends StObject {
+  
   var primaryText: String | Element
+  
   var secondaryText: js.UndefOr[String] = js.undefined
+  
   var tertiaryText: js.UndefOr[String] = js.undefined
 }
-
 object ListItemCenterElement {
-  @scala.inline
-  def apply(primaryText: String | Element, secondaryText: String = null, tertiaryText: String = null): ListItemCenterElement = {
+  
+  inline def apply(primaryText: String | Element): ListItemCenterElement = {
     val __obj = js.Dynamic.literal(primaryText = primaryText.asInstanceOf[js.Any])
-    if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText.asInstanceOf[js.Any])
-    if (tertiaryText != null) __obj.updateDynamic("tertiaryText")(tertiaryText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemCenterElement]
   }
+  
+  extension [Self <: ListItemCenterElement](x: Self) {
+    
+    inline def setPrimaryText(value: String | Element): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryTextVdomElement(value: VdomElement): Self = StObject.set(x, "primaryText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setSecondaryText(value: String): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
+    
+    inline def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
+    
+    inline def setTertiaryText(value: String): Self = StObject.set(x, "tertiaryText", value.asInstanceOf[js.Any])
+    
+    inline def setTertiaryTextUndefined: Self = StObject.set(x, "tertiaryText", js.undefined)
+  }
 }
-

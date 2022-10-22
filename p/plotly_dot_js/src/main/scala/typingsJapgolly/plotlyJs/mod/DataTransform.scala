@@ -6,53 +6,94 @@ import typingsJapgolly.plotlyJs.plotlyJsStrings.descending
 import typingsJapgolly.plotlyJs.plotlyJsStrings.filter
 import typingsJapgolly.plotlyJs.plotlyJsStrings.groupby
 import typingsJapgolly.plotlyJs.plotlyJsStrings.sort
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Transform> */
-trait DataTransform extends js.Object {
+trait DataTransform extends StObject {
+  
   var aggregations: js.UndefOr[js.Array[TransformAggregation]] = js.undefined
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   var groups: js.UndefOr[String | (js.Array[Double | String])] = js.undefined
+  
   var nameformat: js.UndefOr[String] = js.undefined
+  
   var operation: js.UndefOr[String] = js.undefined
+  
   var order: js.UndefOr[ascending | descending] = js.undefined
+  
   var preservegaps: js.UndefOr[Boolean] = js.undefined
+  
   var styles: js.UndefOr[js.Array[TransformStyle]] = js.undefined
+  
   var target: js.UndefOr[Double | String | (js.Array[Double | String])] = js.undefined
+  
   var `type`: js.UndefOr[aggregate | filter | groupby | sort] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object DataTransform {
-  @scala.inline
-  def apply(
-    aggregations: js.Array[TransformAggregation] = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    groups: String | (js.Array[Double | String]) = null,
-    nameformat: String = null,
-    operation: String = null,
-    order: ascending | descending = null,
-    preservegaps: js.UndefOr[Boolean] = js.undefined,
-    styles: js.Array[TransformStyle] = null,
-    target: Double | String | (js.Array[Double | String]) = null,
-    `type`: aggregate | filter | groupby | sort = null,
-    value: js.Any = null
-  ): DataTransform = {
+  
+  inline def apply(): DataTransform = {
     val __obj = js.Dynamic.literal()
-    if (aggregations != null) __obj.updateDynamic("aggregations")(aggregations.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (nameformat != null) __obj.updateDynamic("nameformat")(nameformat.asInstanceOf[js.Any])
-    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (!js.isUndefined(preservegaps)) __obj.updateDynamic("preservegaps")(preservegaps.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTransform]
   }
+  
+  extension [Self <: DataTransform](x: Self) {
+    
+    inline def setAggregations(value: js.Array[TransformAggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
+    
+    inline def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
+    
+    inline def setAggregationsVarargs(value: TransformAggregation*): Self = StObject.set(x, "aggregations", js.Array(value*))
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setGroups(value: String | (js.Array[Double | String])): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    
+    inline def setGroupsVarargs(value: (Double | String)*): Self = StObject.set(x, "groups", js.Array(value*))
+    
+    inline def setNameformat(value: String): Self = StObject.set(x, "nameformat", value.asInstanceOf[js.Any])
+    
+    inline def setNameformatUndefined: Self = StObject.set(x, "nameformat", js.undefined)
+    
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    
+    inline def setOrder(value: ascending | descending): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    
+    inline def setPreservegaps(value: Boolean): Self = StObject.set(x, "preservegaps", value.asInstanceOf[js.Any])
+    
+    inline def setPreservegapsUndefined: Self = StObject.set(x, "preservegaps", js.undefined)
+    
+    inline def setStyles(value: js.Array[TransformStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    
+    inline def setStylesVarargs(value: TransformStyle*): Self = StObject.set(x, "styles", js.Array(value*))
+    
+    inline def setTarget(value: Double | String | (js.Array[Double | String])): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    
+    inline def setTargetVarargs(value: (Double | String)*): Self = StObject.set(x, "target", js.Array(value*))
+    
+    inline def setType(value: aggregate | filter | groupby | sort): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

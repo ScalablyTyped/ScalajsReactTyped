@@ -1,10 +1,11 @@
 package typingsJapgolly.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IRunnerOptions extends js.Object {
+trait IRunnerOptions extends StObject {
+  
   /**
     * A `Number` that specifies the time step between updates in milliseconds.
     * If `engine.timing.isFixed` is set to `true`, then `delta` is fixed.
@@ -15,6 +16,7 @@ trait IRunnerOptions extends js.Object {
     * @default 1000 / 60
     */
   var delta: js.UndefOr[Double] = js.undefined
+  
   /**
     * A `Boolean` that specifies if the runner should use a fixed timestep (otherwise it is variable).
     * If timing is fixed, then the apparent simulation speed will change depending on the frame rate (but behaviour will be deterministic).
@@ -26,14 +28,21 @@ trait IRunnerOptions extends js.Object {
     */
   var isFixed: js.UndefOr[Boolean] = js.undefined
 }
-
 object IRunnerOptions {
-  @scala.inline
-  def apply(delta: Int | Double = null, isFixed: js.UndefOr[Boolean] = js.undefined): IRunnerOptions = {
+  
+  inline def apply(): IRunnerOptions = {
     val __obj = js.Dynamic.literal()
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRunnerOptions]
   }
+  
+  extension [Self <: IRunnerOptions](x: Self) {
+    
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    
+    inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+    
+    inline def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
+    
+    inline def setIsFixedUndefined: Self = StObject.set(x, "isFixed", js.undefined)
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for gestalt
 
-Typings are for version 0.75
+Typings are for version 71.0
 
 ## Library description:
 A set of React UI components which enforce Pinterest’s design language
@@ -9,14 +9,16 @@ A set of React UI components which enforce Pinterest’s design language
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | gestalt |
-| Keywords           | - |
-| # releases         | 77 |
-| # dependents       | 2 |
-| # downloads        | 50428 |
-| # stars            | 0 |
+| Keywords           | design system, react, react component, pinterest, ui library |
+| # releases         | 999 |
+| # dependents       | 0.0 |
+| # downloads        | 35810.333333333336 |
+| # stars            | 4026.0 |
 
 ## Links
-- [Homepage](https://pinterest.github.io/gestalt)
+- [Homepage](https://gestalt.pinterest.systems/)
+- [Bugs](https://github.com/pinterest/gestalt/issues)
+- [Repository](https://github.com/pinterest/gestalt)
 - [Npm](https://www.npmjs.com/package/gestalt)
     
 

@@ -1,24 +1,41 @@
 package typingsJapgolly.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // setState
-trait SetStateParameters extends js.Object {
+trait SetStateParameters extends StObject {
+  
   var channelGroups: js.UndefOr[js.Array[String]] = js.undefined
+  
   var channels: js.UndefOr[js.Array[String]] = js.undefined
-  var state: js.UndefOr[js.Any] = js.undefined
+  
+  var state: js.UndefOr[Any] = js.undefined
 }
-
 object SetStateParameters {
-  @scala.inline
-  def apply(channelGroups: js.Array[String] = null, channels: js.Array[String] = null, state: js.Any = null): SetStateParameters = {
+  
+  inline def apply(): SetStateParameters = {
     val __obj = js.Dynamic.literal()
-    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups.asInstanceOf[js.Any])
-    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetStateParameters]
   }
+  
+  extension [Self <: SetStateParameters](x: Self) {
+    
+    inline def setChannelGroups(value: js.Array[String]): Self = StObject.set(x, "channelGroups", value.asInstanceOf[js.Any])
+    
+    inline def setChannelGroupsUndefined: Self = StObject.set(x, "channelGroups", js.undefined)
+    
+    inline def setChannelGroupsVarargs(value: String*): Self = StObject.set(x, "channelGroups", js.Array(value*))
+    
+    inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
+    
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+  }
 }
-

@@ -2,23 +2,29 @@ package typingsJapgolly.asyncblockGenerators
 
 import typingsJapgolly.asyncblockGenerators.ab.ab.Flow
 import typingsJapgolly.asyncblockGenerators.ab.ab.Result
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asyncblock-generators", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[T](run: js.Function0[T]): Result[T] = js.native
-  def apply[T](run: js.Function0[T], done: js.Function): Result[T] = js.native
-  def apply[T](run: js.Function1[/* flow */ Flow, T]): Result[T] = js.native
-  def apply[T](run: js.Function1[/* flow */ Flow, T], done: js.Function): Result[T] = js.native
-  def enableTransform(module: js.Any): Boolean = js.native
-  def getCurrentFlow(): Flow = js.native
-  def ifError(callback: js.Function): js.Function = js.native
-  def nostack[T](run: js.Function0[T]): Result[T] = js.native
-  def nostack[T](run: js.Function0[T], done: js.Function): Result[T] = js.native
-  def nostack[T](run: js.Function1[/* flow */ Flow, T]): Result[T] = js.native
-  def nostack[T](run: js.Function1[/* flow */ Flow, T], done: js.Function): Result[T] = js.native
+object mod {
+  
+  inline def apply[T](run: js.Function0[T]): Result[T] = ^.asInstanceOf[js.Dynamic].apply(run.asInstanceOf[js.Any]).asInstanceOf[Result[T]]
+  inline def apply[T](run: js.Function0[T], done: js.Function): Result[T] = (^.asInstanceOf[js.Dynamic].apply(run.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Result[T]]
+  inline def apply[T](run: js.Function1[/* flow */ Flow, T]): Result[T] = ^.asInstanceOf[js.Dynamic].apply(run.asInstanceOf[js.Any]).asInstanceOf[Result[T]]
+  inline def apply[T](run: js.Function1[/* flow */ Flow, T], done: js.Function): Result[T] = (^.asInstanceOf[js.Dynamic].apply(run.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Result[T]]
+  
+  @JSImport("asyncblock-generators", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def enableTransform(module: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("enableTransform")(module.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def getCurrentFlow(): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentFlow")().asInstanceOf[Flow]
+  
+  inline def ifError(callback: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("ifError")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  
+  inline def nostack[T](run: js.Function0[T]): Result[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("nostack")(run.asInstanceOf[js.Any]).asInstanceOf[Result[T]]
+  inline def nostack[T](run: js.Function0[T], done: js.Function): Result[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nostack")(run.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Result[T]]
+  inline def nostack[T](run: js.Function1[/* flow */ Flow, T]): Result[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("nostack")(run.asInstanceOf[js.Any]).asInstanceOf[Result[T]]
+  inline def nostack[T](run: js.Function1[/* flow */ Flow, T], done: js.Function): Result[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nostack")(run.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Result[T]]
 }
-

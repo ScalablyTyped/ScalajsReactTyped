@@ -1,28 +1,32 @@
 package typingsJapgolly.microsoftAjax
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObjectConstructor extends js.Object {
+trait ObjectConstructor extends StObject {
+  
   /**
     * Formats a number by using the invariant culture.
     */
-  def getType(instance: js.Any): Type
+  def getType(instance: Any): Type
+  
   /**
     * Returns a string that identifies the run-time type name of an object.
     */
-  def getTypeName(instance: js.Any): java.lang.String
+  def getTypeName(instance: Any): java.lang.String
 }
-
 object ObjectConstructor {
-  @scala.inline
-  def apply(getType: js.Any => CallbackTo[Type], getTypeName: js.Any => CallbackTo[java.lang.String]): ObjectConstructor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getType")(js.Any.fromFunction1((t0: js.Any) => getType(t0).runNow()))
-    __obj.updateDynamic("getTypeName")(js.Any.fromFunction1((t0: js.Any) => getTypeName(t0).runNow()))
+  
+  inline def apply(getType: Any => Type, getTypeName: Any => java.lang.String): ObjectConstructor = {
+    val __obj = js.Dynamic.literal(getType = js.Any.fromFunction1(getType), getTypeName = js.Any.fromFunction1(getTypeName))
     __obj.asInstanceOf[ObjectConstructor]
   }
+  
+  extension [Self <: ObjectConstructor](x: Self) {
+    
+    inline def setGetType(value: Any => Type): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
+    
+    inline def setGetTypeName(value: Any => java.lang.String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction1(value))
+  }
 }
-

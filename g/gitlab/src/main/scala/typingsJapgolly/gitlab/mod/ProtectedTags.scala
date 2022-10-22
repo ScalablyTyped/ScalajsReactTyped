@@ -1,11 +1,13 @@
 package typingsJapgolly.gitlab.mod
 
+import typingsJapgolly.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitlab", "ProtectedTags")
 @js.native
-class ProtectedTags ()
-  extends typingsJapgolly.gitlab.protectedTagsMod.ProtectedTags
-
+open class ProtectedTags ()
+  extends typingsJapgolly.gitlab.distTypesCoreServicesMod.ProtectedTags {
+  def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+}

@@ -1,13 +1,13 @@
 package typingsJapgolly.watsonDeveloperCloud.sdkMod
 
-import typingsJapgolly.watsonDeveloperCloud.v1Mod.^
+import typingsJapgolly.watsonDeveloperCloud.authorizationV1Mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("watson-developer-cloud/sdk", "AuthorizationV1")
 @js.native
-class AuthorizationV1 protected () extends ^ {
+open class AuthorizationV1 protected () extends ^ {
   /**
     * Authorization Service
     *
@@ -20,13 +20,17 @@ class AuthorizationV1 protected () extends ^ {
     * @param {String} [options.url] url of the service for which auth tokens are being generated
     * @constructor
     */
-  def this(options: js.Any) = this()
+  def this(options: Any) = this()
 }
-
-/* static members */
-@JSImport("watson-developer-cloud/sdk", "AuthorizationV1")
-@js.native
-object AuthorizationV1 extends js.Object {
-  var URL: String = js.native
+object AuthorizationV1 {
+  
+  @JSImport("watson-developer-cloud/sdk", "AuthorizationV1")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("watson-developer-cloud/sdk", "AuthorizationV1.URL")
+  @js.native
+  def URL: String = js.native
+  inline def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
 }
-

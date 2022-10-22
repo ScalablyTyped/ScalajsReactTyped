@@ -1,55 +1,79 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MobileThreatDefenseConnector extends Entity {
+trait MobileThreatDefenseConnector
+  extends StObject
+     with Entity {
+  
   // For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
   var androidDeviceBlockedOnMissingPartnerData: js.UndefOr[Boolean] = js.undefined
+  
   // For Android, set whether data from the data sync partner should be used during compliance evaluations
   var androidEnabled: js.UndefOr[Boolean] = js.undefined
+  
   // For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
   var iosDeviceBlockedOnMissingPartnerData: js.UndefOr[Boolean] = js.undefined
+  
   // For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
   var iosEnabled: js.UndefOr[Boolean] = js.undefined
+  
   // DateTime of last Heartbeat recieved from the Data Sync Partner
   var lastHeartbeatDateTime: js.UndefOr[String] = js.undefined
+  
   // Data Sync Partner state for this account. Possible values are: unavailable, available, enabled, unresponsive.
   var partnerState: js.UndefOr[MobileThreatPartnerTenantState] = js.undefined
+  
   // Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
   var partnerUnresponsivenessThresholdInDays: js.UndefOr[Double] = js.undefined
+  
   /**
     * Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the
     * Data Sync Partner
     */
   var partnerUnsupportedOsVersionBlocked: js.UndefOr[Boolean] = js.undefined
 }
-
 object MobileThreatDefenseConnector {
-  @scala.inline
-  def apply(
-    androidDeviceBlockedOnMissingPartnerData: js.UndefOr[Boolean] = js.undefined,
-    androidEnabled: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    iosDeviceBlockedOnMissingPartnerData: js.UndefOr[Boolean] = js.undefined,
-    iosEnabled: js.UndefOr[Boolean] = js.undefined,
-    lastHeartbeatDateTime: String = null,
-    partnerState: MobileThreatPartnerTenantState = null,
-    partnerUnresponsivenessThresholdInDays: Int | Double = null,
-    partnerUnsupportedOsVersionBlocked: js.UndefOr[Boolean] = js.undefined
-  ): MobileThreatDefenseConnector = {
+  
+  inline def apply(): MobileThreatDefenseConnector = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(androidDeviceBlockedOnMissingPartnerData)) __obj.updateDynamic("androidDeviceBlockedOnMissingPartnerData")(androidDeviceBlockedOnMissingPartnerData.asInstanceOf[js.Any])
-    if (!js.isUndefined(androidEnabled)) __obj.updateDynamic("androidEnabled")(androidEnabled.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(iosDeviceBlockedOnMissingPartnerData)) __obj.updateDynamic("iosDeviceBlockedOnMissingPartnerData")(iosDeviceBlockedOnMissingPartnerData.asInstanceOf[js.Any])
-    if (!js.isUndefined(iosEnabled)) __obj.updateDynamic("iosEnabled")(iosEnabled.asInstanceOf[js.Any])
-    if (lastHeartbeatDateTime != null) __obj.updateDynamic("lastHeartbeatDateTime")(lastHeartbeatDateTime.asInstanceOf[js.Any])
-    if (partnerState != null) __obj.updateDynamic("partnerState")(partnerState.asInstanceOf[js.Any])
-    if (partnerUnresponsivenessThresholdInDays != null) __obj.updateDynamic("partnerUnresponsivenessThresholdInDays")(partnerUnresponsivenessThresholdInDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(partnerUnsupportedOsVersionBlocked)) __obj.updateDynamic("partnerUnsupportedOsVersionBlocked")(partnerUnsupportedOsVersionBlocked.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileThreatDefenseConnector]
   }
+  
+  extension [Self <: MobileThreatDefenseConnector](x: Self) {
+    
+    inline def setAndroidDeviceBlockedOnMissingPartnerData(value: Boolean): Self = StObject.set(x, "androidDeviceBlockedOnMissingPartnerData", value.asInstanceOf[js.Any])
+    
+    inline def setAndroidDeviceBlockedOnMissingPartnerDataUndefined: Self = StObject.set(x, "androidDeviceBlockedOnMissingPartnerData", js.undefined)
+    
+    inline def setAndroidEnabled(value: Boolean): Self = StObject.set(x, "androidEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAndroidEnabledUndefined: Self = StObject.set(x, "androidEnabled", js.undefined)
+    
+    inline def setIosDeviceBlockedOnMissingPartnerData(value: Boolean): Self = StObject.set(x, "iosDeviceBlockedOnMissingPartnerData", value.asInstanceOf[js.Any])
+    
+    inline def setIosDeviceBlockedOnMissingPartnerDataUndefined: Self = StObject.set(x, "iosDeviceBlockedOnMissingPartnerData", js.undefined)
+    
+    inline def setIosEnabled(value: Boolean): Self = StObject.set(x, "iosEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setIosEnabledUndefined: Self = StObject.set(x, "iosEnabled", js.undefined)
+    
+    inline def setLastHeartbeatDateTime(value: String): Self = StObject.set(x, "lastHeartbeatDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastHeartbeatDateTimeUndefined: Self = StObject.set(x, "lastHeartbeatDateTime", js.undefined)
+    
+    inline def setPartnerState(value: MobileThreatPartnerTenantState): Self = StObject.set(x, "partnerState", value.asInstanceOf[js.Any])
+    
+    inline def setPartnerStateUndefined: Self = StObject.set(x, "partnerState", js.undefined)
+    
+    inline def setPartnerUnresponsivenessThresholdInDays(value: Double): Self = StObject.set(x, "partnerUnresponsivenessThresholdInDays", value.asInstanceOf[js.Any])
+    
+    inline def setPartnerUnresponsivenessThresholdInDaysUndefined: Self = StObject.set(x, "partnerUnresponsivenessThresholdInDays", js.undefined)
+    
+    inline def setPartnerUnsupportedOsVersionBlocked(value: Boolean): Self = StObject.set(x, "partnerUnsupportedOsVersionBlocked", value.asInstanceOf[js.Any])
+    
+    inline def setPartnerUnsupportedOsVersionBlockedUndefined: Self = StObject.set(x, "partnerUnsupportedOsVersionBlocked", js.undefined)
+  }
 }
-

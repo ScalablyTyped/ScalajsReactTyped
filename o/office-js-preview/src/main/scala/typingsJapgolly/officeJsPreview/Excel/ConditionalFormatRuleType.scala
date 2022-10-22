@@ -1,71 +1,90 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalFormatRuleType extends js.Object
-
+sealed trait ConditionalFormatRuleType extends StObject
 /**
-  *
   * Represents the types of conditional format values.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalFormatRuleType")
 @js.native
-object ConditionalFormatRuleType extends js.Object {
+object ConditionalFormatRuleType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait automatic extends ConditionalFormatRuleType
+  sealed trait automatic
+    extends StObject
+       with ConditionalFormatRuleType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait formula extends ConditionalFormatRuleType
+  sealed trait formula
+    extends StObject
+       with ConditionalFormatRuleType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait highestValue extends ConditionalFormatRuleType
+  sealed trait highestValue
+    extends StObject
+       with ConditionalFormatRuleType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait invalid extends ConditionalFormatRuleType
+  sealed trait invalid
+    extends StObject
+       with ConditionalFormatRuleType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait lowestValue extends ConditionalFormatRuleType
+  sealed trait lowestValue
+    extends StObject
+       with ConditionalFormatRuleType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait number extends ConditionalFormatRuleType
+  sealed trait number
+    extends StObject
+       with ConditionalFormatRuleType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait percent extends ConditionalFormatRuleType
+  sealed trait percent
+    extends StObject
+       with ConditionalFormatRuleType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait percentile extends ConditionalFormatRuleType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalFormatRuleType with String] = js.native
-  /* "Automatic" */ @js.native
-  object automatic extends TopLevel[automatic with String]
-  
-  /* "Formula" */ @js.native
-  object formula extends TopLevel[formula with String]
-  
-  /* "HighestValue" */ @js.native
-  object highestValue extends TopLevel[highestValue with String]
-  
-  /* "Invalid" */ @js.native
-  object invalid extends TopLevel[invalid with String]
-  
-  /* "LowestValue" */ @js.native
-  object lowestValue extends TopLevel[lowestValue with String]
-  
-  /* "Number" */ @js.native
-  object number extends TopLevel[number with String]
-  
-  /* "Percent" */ @js.native
-  object percent extends TopLevel[percent with String]
-  
-  /* "Percentile" */ @js.native
-  object percentile extends TopLevel[percentile with String]
-  
+  sealed trait percentile
+    extends StObject
+       with ConditionalFormatRuleType
 }
-

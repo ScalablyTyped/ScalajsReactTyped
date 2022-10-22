@@ -1,36 +1,45 @@
 package typingsJapgolly.progressjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProgressJsOptions extends js.Object {
+trait ProgressJsOptions extends StObject {
+  
   /**
     * to consider CSS3 transitions in events
     */
   var considerTransition: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * overlay mode makes an overlay layer in the target element
     */
   var overlayMode: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * progress bar theme
     */
   var theme: js.UndefOr[String] = js.undefined
 }
-
 object ProgressJsOptions {
-  @scala.inline
-  def apply(
-    considerTransition: js.UndefOr[Boolean] = js.undefined,
-    overlayMode: js.UndefOr[Boolean] = js.undefined,
-    theme: String = null
-  ): ProgressJsOptions = {
+  
+  inline def apply(): ProgressJsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(considerTransition)) __obj.updateDynamic("considerTransition")(considerTransition.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlayMode)) __obj.updateDynamic("overlayMode")(overlayMode.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressJsOptions]
   }
+  
+  extension [Self <: ProgressJsOptions](x: Self) {
+    
+    inline def setConsiderTransition(value: Boolean): Self = StObject.set(x, "considerTransition", value.asInstanceOf[js.Any])
+    
+    inline def setConsiderTransitionUndefined: Self = StObject.set(x, "considerTransition", js.undefined)
+    
+    inline def setOverlayMode(value: Boolean): Self = StObject.set(x, "overlayMode", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayModeUndefined: Self = StObject.set(x, "overlayMode", js.undefined)
+    
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+  }
 }
-

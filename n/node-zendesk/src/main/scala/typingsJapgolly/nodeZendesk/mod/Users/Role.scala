@@ -1,24 +1,20 @@
 package typingsJapgolly.nodeZendesk.mod.Users
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nodeZendesk.nodeZendeskStrings.admin
   - typingsJapgolly.nodeZendesk.nodeZendeskStrings.agent
   - typingsJapgolly.nodeZendesk.nodeZendeskStrings.`end-user`
 */
-trait Role extends js.Object
-
+trait Role extends StObject
 object Role {
-  @scala.inline
-  def admin: typingsJapgolly.nodeZendesk.nodeZendeskStrings.admin = this.cast("admin")
-  @scala.inline
-  def agent: typingsJapgolly.nodeZendesk.nodeZendeskStrings.agent = this.cast("agent")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `end-user`: typingsJapgolly.nodeZendesk.nodeZendeskStrings.`end-user` = this.cast("end-user")
+  
+  inline def admin: typingsJapgolly.nodeZendesk.nodeZendeskStrings.admin = "admin".asInstanceOf[typingsJapgolly.nodeZendesk.nodeZendeskStrings.admin]
+  
+  inline def agent: typingsJapgolly.nodeZendesk.nodeZendeskStrings.agent = "agent".asInstanceOf[typingsJapgolly.nodeZendesk.nodeZendeskStrings.agent]
+  
+  inline def `end-user`: typingsJapgolly.nodeZendesk.nodeZendeskStrings.`end-user` = "end-user".asInstanceOf[typingsJapgolly.nodeZendesk.nodeZendeskStrings.`end-user`]
 }
-

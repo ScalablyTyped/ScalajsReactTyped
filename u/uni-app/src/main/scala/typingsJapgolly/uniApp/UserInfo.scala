@@ -1,32 +1,45 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UserInfo extends js.Object {
+trait UserInfo extends StObject {
+  
   /**
     * 用户头像
     */
   var avatarUrl: js.UndefOr[String] = js.undefined
+  
   /**
     * 用户昵称
     */
   var nickname: js.UndefOr[String] = js.undefined
+  
   /**
     * 该服务商唯一用户标识
     */
   var openid: js.UndefOr[String] = js.undefined
 }
-
 object UserInfo {
-  @scala.inline
-  def apply(avatarUrl: String = null, nickname: String = null, openid: String = null): UserInfo = {
+  
+  inline def apply(): UserInfo = {
     val __obj = js.Dynamic.literal()
-    if (avatarUrl != null) __obj.updateDynamic("avatarUrl")(avatarUrl.asInstanceOf[js.Any])
-    if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
-    if (openid != null) __obj.updateDynamic("openid")(openid.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserInfo]
   }
+  
+  extension [Self <: UserInfo](x: Self) {
+    
+    inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
+    
+    inline def setAvatarUrlUndefined: Self = StObject.set(x, "avatarUrl", js.undefined)
+    
+    inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+    
+    inline def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
+    
+    inline def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
+    
+    inline def setOpenidUndefined: Self = StObject.set(x, "openid", js.undefined)
+  }
 }
-

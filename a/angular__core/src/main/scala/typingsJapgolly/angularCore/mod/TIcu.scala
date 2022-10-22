@@ -1,86 +1,95 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TIcu extends js.Object {
+trait TIcu extends StObject {
+  
+  /**
+    * Index in `LView` where the anchor node is stored. `<!-- ICU 0:0 -->`
+    */
+  var anchorIdx: Double
+  
   /**
     * A list of case values which the current ICU will try to match.
     *
     * The last value is `other`
     */
-  var cases: js.Array[_]
-  /**
-    * An optional array of child/sub ICUs.
-    *
-    * In case of nested ICUs such as:
-    * ```
-    * {�0�, plural,
-    *   =0 {zero}
-    *   other {�0� {�1�, select,
-    *                     cat {cats}
-    *                     dog {dogs}
-    *                     other {animals}
-    *                   }!
-    *   }
-    * }
-    * ```
-    * When the parent ICU is changing it must clean up child ICUs as well. For this reason it needs
-    * to know which child ICUs to run clean up for as well.
-    *
-    * In the above example this would be:
-    * ```ts
-    * [
-    *   [],   // `=0` has no sub ICUs
-    *   [1],  // `other` has one subICU at `1`st index.
-    * ]
-    * ```
-    *
-    * The reason why it is Array of Arrays is because first array represents the case, and second
-    * represents the child ICUs to clean up. There may be more than one child ICUs per case.
-    */
-  var childIcus: js.Array[js.Array[Double]]
+  var cases: js.Array[Any]
+  
   /**
     * A set of OpCodes to apply in order to build up the DOM render tree for the ICU
     */
-  var create: js.Array[I18nMutateOpCodes]
+  var create: js.Array[IcuCreateOpCodes]
+  
+  /**
+    * Currently selected ICU case pointer.
+    *
+    * `lView[currentCaseLViewIndex]` stores the currently selected case. This is needed to know how
+    * to clean up the current case when transitioning no the new case.
+    *
+    * If the value stored is:
+    * `null`: No current case selected.
+    *   `<0`: A flag which means that the ICU just switched and that `icuUpdate` must be executed
+    *         regardless of the `mask`. (After the execution the flag is cleared)
+    *   `>=0` A currently selected case index.
+    */
+  var currentCaseLViewIndex: Double
+  
   /**
     * A set of OpCodes to apply in order to destroy the DOM render tree for the ICU.
     */
-  var remove: js.Array[I18nMutateOpCodes]
+  var remove: js.Array[I18nRemoveOpCodes]
+  
   /**
     * Defines the ICU type of `select` or `plural`
     */
   var `type`: IcuType
+  
   /**
     * A set of OpCodes to apply in order to update the DOM render tree for the ICU bindings.
     */
   var update: js.Array[I18nUpdateOpCodes]
-  /**
-    * Number of slots to allocate in expando for each case.
-    *
-    * This is the max number of DOM elements which will be created by this i18n + ICU blocks. When
-    * the DOM elements are being created they are stored in the EXPANDO, so that update OpCodes can
-    * write into them.
-    */
-  var vars: js.Array[Double]
 }
-
 object TIcu {
-  @scala.inline
-  def apply(
-    cases: js.Array[_],
-    childIcus: js.Array[js.Array[Double]],
-    create: js.Array[I18nMutateOpCodes],
-    remove: js.Array[I18nMutateOpCodes],
+  
+  inline def apply(
+    anchorIdx: Double,
+    cases: js.Array[Any],
+    create: js.Array[IcuCreateOpCodes],
+    currentCaseLViewIndex: Double,
+    remove: js.Array[I18nRemoveOpCodes],
     `type`: IcuType,
-    update: js.Array[I18nUpdateOpCodes],
-    vars: js.Array[Double]
+    update: js.Array[I18nUpdateOpCodes]
   ): TIcu = {
-    val __obj = js.Dynamic.literal(cases = cases.asInstanceOf[js.Any], childIcus = childIcus.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(anchorIdx = anchorIdx.asInstanceOf[js.Any], cases = cases.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], currentCaseLViewIndex = currentCaseLViewIndex.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TIcu]
   }
+  
+  extension [Self <: TIcu](x: Self) {
+    
+    inline def setAnchorIdx(value: Double): Self = StObject.set(x, "anchorIdx", value.asInstanceOf[js.Any])
+    
+    inline def setCases(value: js.Array[Any]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
+    
+    inline def setCasesVarargs(value: Any*): Self = StObject.set(x, "cases", js.Array(value*))
+    
+    inline def setCreate(value: js.Array[IcuCreateOpCodes]): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    
+    inline def setCreateVarargs(value: IcuCreateOpCodes*): Self = StObject.set(x, "create", js.Array(value*))
+    
+    inline def setCurrentCaseLViewIndex(value: Double): Self = StObject.set(x, "currentCaseLViewIndex", value.asInstanceOf[js.Any])
+    
+    inline def setRemove(value: js.Array[I18nRemoveOpCodes]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveVarargs(value: I18nRemoveOpCodes*): Self = StObject.set(x, "remove", js.Array(value*))
+    
+    inline def setType(value: IcuType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUpdate(value: js.Array[I18nUpdateOpCodes]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateVarargs(value: I18nUpdateOpCodes*): Self = StObject.set(x, "update", js.Array(value*))
+  }
 }
-

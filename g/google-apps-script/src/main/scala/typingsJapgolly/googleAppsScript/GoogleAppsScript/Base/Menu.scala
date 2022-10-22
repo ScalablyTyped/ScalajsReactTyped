@@ -2,9 +2,9 @@ package typingsJapgolly.googleAppsScript.GoogleAppsScript.Base
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A custom menu in an instance of the user interface for a Google App. A script can only interact
@@ -23,27 +23,36 @@ import scala.scalajs.js.annotation._
   *           .addToUi();
   *     }
   */
-trait Menu extends js.Object {
+trait Menu extends StObject {
+  
   def addItem(caption: String, functionName: String): Menu
+  
   def addSeparator(): Menu
+  
   def addSubMenu(menu: Menu): Menu
+  
   def addToUi(): Unit
 }
-
 object Menu {
-  @scala.inline
-  def apply(
-    addItem: (String, String) => CallbackTo[Menu],
+  
+  inline def apply(
+    addItem: (String, String) => Menu,
     addSeparator: CallbackTo[Menu],
-    addSubMenu: Menu => CallbackTo[Menu],
+    addSubMenu: Menu => Menu,
     addToUi: Callback
   ): Menu = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addItem")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => addItem(t0, t1).runNow()))
-    __obj.updateDynamic("addSeparator")(addSeparator.toJsFn)
-    __obj.updateDynamic("addSubMenu")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Base.Menu) => addSubMenu(t0).runNow()))
-    __obj.updateDynamic("addToUi")(addToUi.toJsFn)
+    val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction2(addItem), addSeparator = addSeparator.toJsFn, addSubMenu = js.Any.fromFunction1(addSubMenu), addToUi = addToUi.toJsFn)
     __obj.asInstanceOf[Menu]
   }
+  
+  extension [Self <: Menu](x: Self) {
+    
+    inline def setAddItem(value: (String, String) => Menu): Self = StObject.set(x, "addItem", js.Any.fromFunction2(value))
+    
+    inline def setAddSeparator(value: CallbackTo[Menu]): Self = StObject.set(x, "addSeparator", value.toJsFn)
+    
+    inline def setAddSubMenu(value: Menu => Menu): Self = StObject.set(x, "addSubMenu", js.Any.fromFunction1(value))
+    
+    inline def setAddToUi(value: Callback): Self = StObject.set(x, "addToUi", value.toJsFn)
+  }
 }
-

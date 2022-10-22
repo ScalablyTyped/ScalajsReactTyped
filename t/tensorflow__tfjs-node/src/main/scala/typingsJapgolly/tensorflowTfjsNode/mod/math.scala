@@ -1,15 +1,16 @@
 package typingsJapgolly.tensorflowTfjsNode.mod
 
+import typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor1D
+import typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor2D
 import typingsJapgolly.tensorflowTfjsCore.distTypesMod.TensorLike
-import typingsJapgolly.tensorflowTfjsCore.tensorMod.Tensor1D
-import typingsJapgolly.tensorflowTfjsCore.tensorMod.Tensor2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-node", "math")
-@js.native
-object math extends js.Object {
+object math {
+  
+  @JSImport("@tensorflow/tfjs-node", "math.confusionMatrix")
+  @js.native
   val confusionMatrix: js.Function3[
     /* labels */ Tensor1D | TensorLike, 
     /* predictions */ Tensor1D | TensorLike, 
@@ -17,4 +18,3 @@ object math extends js.Object {
     Tensor2D
   ] = js.native
 }
-

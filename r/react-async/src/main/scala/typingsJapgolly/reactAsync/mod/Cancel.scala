@@ -1,24 +1,29 @@
 package typingsJapgolly.reactAsync.mod
 
-import typingsJapgolly.reactAsync.AnonDictmeta
+import typingsJapgolly.reactAsync.anon.Dictmeta
 import typingsJapgolly.reactAsync.reactAsyncStrings.cancel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-async.react-async.AbstractAction & {  type  :'cancel'} */
 trait Cancel
-  extends AsyncAction[js.Any] {
-  var meta: AnonDictmeta
-  var `type`: String with cancel
+  extends StObject
+     with AbstractAction
+     with AsyncAction[Any] {
+  
+  @JSName("type")
+  var type_Cancel: cancel
 }
-
 object Cancel {
-  @scala.inline
-  def apply(meta: AnonDictmeta, `type`: String with cancel): Cancel = {
+  
+  inline def apply(meta: Dictmeta): Cancel = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("cancel")
     __obj.asInstanceOf[Cancel]
   }
+  
+  extension [Self <: Cancel](x: Self) {
+    
+    inline def setType(value: cancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

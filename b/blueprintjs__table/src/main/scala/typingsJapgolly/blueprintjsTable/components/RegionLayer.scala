@@ -1,48 +1,36 @@
 package typingsJapgolly.blueprintjsTable.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.blueprintjsTable.esmRegionsMod.IRegion
-import typingsJapgolly.blueprintjsTable.regionsMod.IRegionLayerProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsTable.libEsmLayersRegionsMod.RegionLayerProps
+import typingsJapgolly.blueprintjsTable.libEsmRegionsMod.Region
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RegionLayer {
-  def apply(
-    className: String = null,
-    regionStyles: js.Array[CSSProperties] = null,
-    regions: js.Array[IRegion] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IRegionLayerProps, 
-    typingsJapgolly.blueprintjsTable.regionsMod.RegionLayer, 
-    Unit, 
-    IRegionLayerProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (regionStyles != null) __obj.updateDynamic("regionStyles")(regionStyles.asInstanceOf[js.Any])
-    if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsTable.regionsMod.IRegionLayerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsTable.regionsMod.RegionLayer](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsTable.regionsMod.IRegionLayerProps])(children: _*)
-  }
   @JSImport("@blueprintjs/table/lib/esm/layers/regions", "RegionLayer")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsTable.libEsmLayersRegionsMod.RegionLayer] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def regionStyles(value: js.Array[CSSProperties]): this.type = set("regionStyles", value.asInstanceOf[js.Any])
+    
+    inline def regionStylesVarargs(value: CSSProperties*): this.type = set("regionStyles", js.Array(value*))
+    
+    inline def regions(value: js.Array[Region]): this.type = set("regions", value.asInstanceOf[js.Any])
+    
+    inline def regionsVarargs(value: Region*): this.type = set("regions", js.Array(value*))
+  }
+  
+  implicit def make(companion: RegionLayer.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: RegionLayerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,26 +1,39 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.TextInput")
 @js.native
-class TextInput protected () extends js.Object {
+trait TextInput extends StObject {
+  
   val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Creator: Double = js.native
-  var Default: String = js.native
-  val Format: String = js.native
-  val Parent: js.Any = js.native
-  val Type: WdTextFormFieldType = js.native
-  val Valid: Boolean = js.native
-  var Width: Double = js.native
-  @JSName("Word.TextInput_typekey")
-  var WordDotTextInput_typekey: TextInput = js.native
+  
   def Clear(): Unit = js.native
+  
+  val Creator: Double = js.native
+  
+  var Default: String = js.native
+  
   def EditType(Type: WdTextFormFieldType): Unit = js.native
-  def EditType(Type: WdTextFormFieldType, Default: js.Any): Unit = js.native
-  def EditType(Type: WdTextFormFieldType, Default: js.Any, Format: js.Any): Unit = js.native
-  def EditType(Type: WdTextFormFieldType, Default: js.Any, Format: js.Any, Enabled: js.Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Any, Format: Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Any, Format: Any, Enabled: Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Any, Format: Unit, Enabled: Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Unit, Format: Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Unit, Format: Any, Enabled: Any): Unit = js.native
+  def EditType(Type: WdTextFormFieldType, Default: Unit, Format: Unit, Enabled: Any): Unit = js.native
+  
+  val Format: String = js.native
+  
+  val Parent: Any = js.native
+  
+  val Type: WdTextFormFieldType = js.native
+  
+  val Valid: Boolean = js.native
+  
+  var Width: Double = js.native
+  
+  /* private */ @JSName("Word.TextInput_typekey")
+  var WordDotTextInput_typekey: TextInput = js.native
 }
-

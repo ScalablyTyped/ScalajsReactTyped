@@ -1,35 +1,56 @@
 package typingsJapgolly.rnFetchBlob.mod
 
+import org.scalajs.dom.Event
 import typingsJapgolly.std.EventTarget
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolyfillFileReader extends EventTarget {
-  var isRNFBPolyFill: Boolean = js.native
-  var readyState: Double = js.native
-  var result: Double = js.native
+trait PolyfillFileReader
+  extends StObject
+     with EventTarget {
+  
   def abort(): Unit = js.native
-  def onabort(e: Event_): Unit = js.native
-  def onerror(e: Event_): Unit = js.native
-  def onload(e: Event_): Unit = js.native
-  def onloadend(e: Event_): Unit = js.native
-  def onloadstart(e: Event_): Unit = js.native
-  def onprogress(e: Event_): Unit = js.native
+  
+  var isRNFBPolyFill: Boolean = js.native
+  
+  def onabort(e: Event): Unit = js.native
+  
+  def onerror(e: Event): Unit = js.native
+  
+  def onload(e: Event): Unit = js.native
+  
+  def onloadend(e: Event): Unit = js.native
+  
+  def onloadstart(e: Event): Unit = js.native
+  
+  def onprogress(e: Event): Unit = js.native
+  
   def readAsArrayBuffer(b: PolyfillBlob): Unit = js.native
+  
   def readAsBinaryString(b: PolyfillBlob): Unit = js.native
+  
   def readAsDataURL(b: PolyfillBlob): Unit = js.native
+  
   def readAsText(b: PolyfillBlob): Unit = js.native
   def readAsText(b: PolyfillBlob, label: String): Unit = js.native
+  
+  var readyState: Double = js.native
+  
+  var result: Double = js.native
 }
-
-@JSImport("rn-fetch-blob", "PolyfillFileReader")
-@js.native
-object PolyfillFileReader extends js.Object {
+object PolyfillFileReader {
+  
+  @JSImport("rn-fetch-blob", "PolyfillFileReader.DONE")
+  @js.native
   val DONE: Double = js.native
+  
+  @JSImport("rn-fetch-blob", "PolyfillFileReader.EMPTY")
+  @js.native
   val EMPTY: Double = js.native
+  
+  @JSImport("rn-fetch-blob", "PolyfillFileReader.LOADING")
+  @js.native
   val LOADING: Double = js.native
 }
-

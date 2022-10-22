@@ -1,65 +1,62 @@
 package typingsJapgolly.webix.webix.ui
 
+import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.datafilter")
-@js.native
-object datafilter extends js.Object {
-  @js.native
-  class columnGroup () extends textFilter
+object datafilter {
   
-  @js.native
-  class dateFilter () extends textFilter
+  type columnGroup = textFilter
   
-  @js.native
-  class dateRangeFilter () extends textFilter
+  type dateFilter = textFilter
   
-  @js.native
-  class datepickerFilter () extends textFilter
+  type dateRangeFilter = textFilter
   
-  @js.native
-  class masterCheckbox () extends textFilter
+  type datepickerFilter = textFilter
   
-  @js.native
-  class multiComboFilter () extends textFilter
+  type masterCheckbox = textFilter
   
-  @js.native
-  class multiSelectFilter () extends textFilter
+  type multiComboFilter = textFilter
   
-  @js.native
-  class numberFilter () extends textFilter
+  type multiSelectFilter = textFilter
   
-  @js.native
-  class selectFilter () extends textFilter
+  type numberFilter = textFilter
   
-  @js.native
-  class serverFilter () extends textFilter
+  type selectFilter = textFilter
   
-  @js.native
-  class serverMultiSelectFilter () extends textFilter
+  type serverFilter = textFilter
   
-  @js.native
-  class serverSelectFilter () extends textFilter
+  type serverMultiSelectFilter = textFilter
   
-  @js.native
-  class summColumn () extends textFilter
+  type serverSelectFilter = textFilter
   
-  @js.native
-  class textFilter () extends WebixFilter {
-    def getInputNode(node: HTMLElement): HTMLElement = js.native
-    /* CompleteClass */
-    override def getValue(node: HTMLElement): js.Any = js.native
-    /* CompleteClass */
-    override def refresh(master: baseview, node: HTMLElement, value: js.Any): Unit = js.native
-    /* CompleteClass */
-    override def render(master: baseview, config: StringDictionary[js.Any]): String = js.native
-    /* CompleteClass */
-    override def setValue(node: HTMLElement, value: js.Any): js.Any = js.native
+  type summColumn = textFilter
+  
+  trait textFilter
+    extends StObject
+       with WebixFilter {
+    
+    def getInputNode(node: HTMLElement): HTMLElement
   }
-  
+  object textFilter {
+    
+    inline def apply(
+      getInputNode: HTMLElement => HTMLElement,
+      getValue: HTMLElement => Any,
+      refresh: (baseview, HTMLElement, Any) => Callback,
+      render: (baseview, StringDictionary[Any]) => String,
+      setValue: (HTMLElement, Any) => Any
+    ): textFilter = {
+      val __obj = js.Dynamic.literal(getInputNode = js.Any.fromFunction1(getInputNode), getValue = js.Any.fromFunction1(getValue), refresh = js.Any.fromFunction3((t0: baseview, t1: HTMLElement, t2: Any) => (refresh(t0, t1, t2)).runNow()), render = js.Any.fromFunction2(render), setValue = js.Any.fromFunction2(setValue))
+      __obj.asInstanceOf[textFilter]
+    }
+    
+    extension [Self <: textFilter](x: Self) {
+      
+      inline def setGetInputNode(value: HTMLElement => HTMLElement): Self = StObject.set(x, "getInputNode", js.Any.fromFunction1(value))
+    }
+  }
 }
-

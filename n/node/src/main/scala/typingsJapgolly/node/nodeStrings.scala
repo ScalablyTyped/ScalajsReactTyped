@@ -1,1616 +1,2012 @@
 package typingsJapgolly.node
 
-import typingsJapgolly.node.NodeJS.MultipleResolveType
-import typingsJapgolly.node.NodeJS.Platform
-import typingsJapgolly.node.NodeJS.Signals
 import typingsJapgolly.node.bufferMod.TranscodeEncoding
+import typingsJapgolly.node.bufferMod.global.BufferEncoding
+import typingsJapgolly.node.childProcessMod.IOType
 import typingsJapgolly.node.childProcessMod.SerializationType
 import typingsJapgolly.node.childProcessMod.StdioNull
-import typingsJapgolly.node.childProcessMod._StdioOptions
+import typingsJapgolly.node.childProcessMod.StdioPipeNamed
+import typingsJapgolly.node.cryptoMod.BinaryToTextEncoding
+import typingsJapgolly.node.cryptoMod.CharacterEncoding
 import typingsJapgolly.node.cryptoMod.CipherCCMTypes
 import typingsJapgolly.node.cryptoMod.CipherGCMTypes
+import typingsJapgolly.node.cryptoMod.CipherMode
+import typingsJapgolly.node.cryptoMod.CipherOCBTypes
+import typingsJapgolly.node.cryptoMod.DSAEncoding
 import typingsJapgolly.node.cryptoMod.ECDHKeyFormat
-import typingsJapgolly.node.cryptoMod.HexBase64BinaryEncoding
-import typingsJapgolly.node.cryptoMod.HexBase64Latin1Encoding
+import typingsJapgolly.node.cryptoMod.Encoding
 import typingsJapgolly.node.cryptoMod.KeyFormat
 import typingsJapgolly.node.cryptoMod.KeyObjectType
 import typingsJapgolly.node.cryptoMod.KeyType
-import typingsJapgolly.node.cryptoMod.Utf8AsciiBinaryEncoding
-import typingsJapgolly.node.cryptoMod.Utf8AsciiLatin1Encoding
+import typingsJapgolly.node.cryptoMod.LegacyCharacterEncoding
+import typingsJapgolly.node.cryptoMod.webcrypto.KeyUsage
 import typingsJapgolly.node.dgramMod.SocketType
+import typingsJapgolly.node.fsMod.BufferEncodingOption
+import typingsJapgolly.node.fsMod.WatchEventType
 import typingsJapgolly.node.fsMod.symlink.Type
+import typingsJapgolly.node.netMod.IPVersion
+import typingsJapgolly.node.netMod.SocketReadyState
 import typingsJapgolly.node.perfHooksMod.EntryType
+import typingsJapgolly.node.processMod.global.NodeJS.Architecture
+import typingsJapgolly.node.processMod.global.NodeJS.MultipleResolveType
+import typingsJapgolly.node.processMod.global.NodeJS.Platform
+import typingsJapgolly.node.processMod.global.NodeJS.Signals
+import typingsJapgolly.node.processMod.global.NodeJS.UncaughtExceptionOrigin
 import typingsJapgolly.node.tlsMod.SecureVersion
 import typingsJapgolly.node.utilMod.Style
+import typingsJapgolly.node.vmMod.MeasureMemoryMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeStrings {
+  
+  @js.native
+  sealed trait A extends StObject
+  inline def A: A = "A".asInstanceOf[A]
+  
+  @js.native
+  sealed trait AAAA extends StObject
+  inline def AAAA: AAAA = "AAAA".asInstanceOf[AAAA]
+  
+  @js.native
+  sealed trait ANY extends StObject
+  inline def ANY: ANY = "ANY".asInstanceOf[ANY]
+  
+  @js.native
+  sealed trait BE extends StObject
+  inline def BE: BE = "BE".asInstanceOf[BE]
+  
+  @js.native
+  sealed trait Buffer extends StObject
+  inline def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
+  
+  @js.native
+  sealed trait CAA extends StObject
+  inline def CAA: CAA = "CAA".asInstanceOf[CAA]
+  
+  @js.native
+  sealed trait CNAME extends StObject
+  inline def CNAME: CNAME = "CNAME".asInstanceOf[CNAME]
+  
+  @js.native
+  sealed trait Colon extends StObject
+  inline def Colon: Colon = ":".asInstanceOf[Colon]
+  
+  @js.native
+  sealed trait ConsoleDotclearMessages extends StObject
+  inline def ConsoleDotclearMessages: ConsoleDotclearMessages = "Console.clearMessages".asInstanceOf[ConsoleDotclearMessages]
+  
+  @js.native
+  sealed trait ConsoleDotdisable extends StObject
+  inline def ConsoleDotdisable: ConsoleDotdisable = "Console.disable".asInstanceOf[ConsoleDotdisable]
+  
+  @js.native
+  sealed trait ConsoleDotenable extends StObject
+  inline def ConsoleDotenable: ConsoleDotenable = "Console.enable".asInstanceOf[ConsoleDotenable]
+  
+  @js.native
+  sealed trait ConsoleDotmessageAdded extends StObject
+  inline def ConsoleDotmessageAdded: ConsoleDotmessageAdded = "Console.messageAdded".asInstanceOf[ConsoleDotmessageAdded]
+  
+  @js.native
+  sealed trait CryptoKey extends StObject
+  inline def CryptoKey: CryptoKey = "CryptoKey".asInstanceOf[CryptoKey]
+  
   @js.native
-  sealed trait A extends js.Object
+  sealed trait DebuggerDotbreakpointResolved extends StObject
+  inline def DebuggerDotbreakpointResolved: DebuggerDotbreakpointResolved = "Debugger.breakpointResolved".asInstanceOf[DebuggerDotbreakpointResolved]
   
   @js.native
-  sealed trait AAAA extends js.Object
+  sealed trait DebuggerDotcontinueToLocation extends StObject
+  inline def DebuggerDotcontinueToLocation: DebuggerDotcontinueToLocation = "Debugger.continueToLocation".asInstanceOf[DebuggerDotcontinueToLocation]
   
   @js.native
-  sealed trait ANY extends js.Object
+  sealed trait DebuggerDotdisable extends StObject
+  inline def DebuggerDotdisable: DebuggerDotdisable = "Debugger.disable".asInstanceOf[DebuggerDotdisable]
   
   @js.native
-  sealed trait BE extends js.Object
+  sealed trait DebuggerDotenable extends StObject
+  inline def DebuggerDotenable: DebuggerDotenable = "Debugger.enable".asInstanceOf[DebuggerDotenable]
   
   @js.native
-  sealed trait Buffer extends js.Object
+  sealed trait DebuggerDotevaluateOnCallFrame extends StObject
+  inline def DebuggerDotevaluateOnCallFrame: DebuggerDotevaluateOnCallFrame = "Debugger.evaluateOnCallFrame".asInstanceOf[DebuggerDotevaluateOnCallFrame]
   
   @js.native
-  sealed trait CNAME extends js.Object
+  sealed trait DebuggerDotgetPossibleBreakpoints extends StObject
+  inline def DebuggerDotgetPossibleBreakpoints: DebuggerDotgetPossibleBreakpoints = "Debugger.getPossibleBreakpoints".asInstanceOf[DebuggerDotgetPossibleBreakpoints]
   
   @js.native
-  sealed trait ConsoleDotclearMessages extends js.Object
+  sealed trait DebuggerDotgetScriptSource extends StObject
+  inline def DebuggerDotgetScriptSource: DebuggerDotgetScriptSource = "Debugger.getScriptSource".asInstanceOf[DebuggerDotgetScriptSource]
   
   @js.native
-  sealed trait ConsoleDotdisable extends js.Object
+  sealed trait DebuggerDotgetStackTrace extends StObject
+  inline def DebuggerDotgetStackTrace: DebuggerDotgetStackTrace = "Debugger.getStackTrace".asInstanceOf[DebuggerDotgetStackTrace]
   
   @js.native
-  sealed trait ConsoleDotenable extends js.Object
+  sealed trait DebuggerDotpause extends StObject
+  inline def DebuggerDotpause: DebuggerDotpause = "Debugger.pause".asInstanceOf[DebuggerDotpause]
   
   @js.native
-  sealed trait ConsoleDotmessageAdded extends js.Object
+  sealed trait DebuggerDotpauseOnAsyncCall extends StObject
+  inline def DebuggerDotpauseOnAsyncCall: DebuggerDotpauseOnAsyncCall = "Debugger.pauseOnAsyncCall".asInstanceOf[DebuggerDotpauseOnAsyncCall]
   
   @js.native
-  sealed trait DebuggerDotbreakpointResolved extends js.Object
+  sealed trait DebuggerDotpaused extends StObject
+  inline def DebuggerDotpaused: DebuggerDotpaused = "Debugger.paused".asInstanceOf[DebuggerDotpaused]
   
   @js.native
-  sealed trait DebuggerDotcontinueToLocation extends js.Object
+  sealed trait DebuggerDotremoveBreakpoint extends StObject
+  inline def DebuggerDotremoveBreakpoint: DebuggerDotremoveBreakpoint = "Debugger.removeBreakpoint".asInstanceOf[DebuggerDotremoveBreakpoint]
   
   @js.native
-  sealed trait DebuggerDotdisable extends js.Object
+  sealed trait DebuggerDotrestartFrame extends StObject
+  inline def DebuggerDotrestartFrame: DebuggerDotrestartFrame = "Debugger.restartFrame".asInstanceOf[DebuggerDotrestartFrame]
   
   @js.native
-  sealed trait DebuggerDotenable extends js.Object
+  sealed trait DebuggerDotresume extends StObject
+  inline def DebuggerDotresume: DebuggerDotresume = "Debugger.resume".asInstanceOf[DebuggerDotresume]
   
   @js.native
-  sealed trait DebuggerDotevaluateOnCallFrame extends js.Object
+  sealed trait DebuggerDotresumed extends StObject
+  inline def DebuggerDotresumed: DebuggerDotresumed = "Debugger.resumed".asInstanceOf[DebuggerDotresumed]
   
   @js.native
-  sealed trait DebuggerDotgetPossibleBreakpoints extends js.Object
+  sealed trait DebuggerDotscheduleStepIntoAsync extends StObject
+  inline def DebuggerDotscheduleStepIntoAsync: DebuggerDotscheduleStepIntoAsync = "Debugger.scheduleStepIntoAsync".asInstanceOf[DebuggerDotscheduleStepIntoAsync]
   
   @js.native
-  sealed trait DebuggerDotgetScriptSource extends js.Object
+  sealed trait DebuggerDotscriptFailedToParse extends StObject
+  inline def DebuggerDotscriptFailedToParse: DebuggerDotscriptFailedToParse = "Debugger.scriptFailedToParse".asInstanceOf[DebuggerDotscriptFailedToParse]
   
   @js.native
-  sealed trait DebuggerDotgetStackTrace extends js.Object
+  sealed trait DebuggerDotscriptParsed extends StObject
+  inline def DebuggerDotscriptParsed: DebuggerDotscriptParsed = "Debugger.scriptParsed".asInstanceOf[DebuggerDotscriptParsed]
   
   @js.native
-  sealed trait DebuggerDotpause extends js.Object
+  sealed trait DebuggerDotsearchInContent extends StObject
+  inline def DebuggerDotsearchInContent: DebuggerDotsearchInContent = "Debugger.searchInContent".asInstanceOf[DebuggerDotsearchInContent]
   
   @js.native
-  sealed trait DebuggerDotpauseOnAsyncCall extends js.Object
+  sealed trait DebuggerDotsetAsyncCallStackDepth extends StObject
+  inline def DebuggerDotsetAsyncCallStackDepth: DebuggerDotsetAsyncCallStackDepth = "Debugger.setAsyncCallStackDepth".asInstanceOf[DebuggerDotsetAsyncCallStackDepth]
   
   @js.native
-  sealed trait DebuggerDotpaused extends js.Object
+  sealed trait DebuggerDotsetBlackboxPatterns extends StObject
+  inline def DebuggerDotsetBlackboxPatterns: DebuggerDotsetBlackboxPatterns = "Debugger.setBlackboxPatterns".asInstanceOf[DebuggerDotsetBlackboxPatterns]
   
   @js.native
-  sealed trait DebuggerDotremoveBreakpoint extends js.Object
+  sealed trait DebuggerDotsetBlackboxedRanges extends StObject
+  inline def DebuggerDotsetBlackboxedRanges: DebuggerDotsetBlackboxedRanges = "Debugger.setBlackboxedRanges".asInstanceOf[DebuggerDotsetBlackboxedRanges]
   
   @js.native
-  sealed trait DebuggerDotrestartFrame extends js.Object
+  sealed trait DebuggerDotsetBreakpoint extends StObject
+  inline def DebuggerDotsetBreakpoint: DebuggerDotsetBreakpoint = "Debugger.setBreakpoint".asInstanceOf[DebuggerDotsetBreakpoint]
   
   @js.native
-  sealed trait DebuggerDotresume extends js.Object
+  sealed trait DebuggerDotsetBreakpointByUrl extends StObject
+  inline def DebuggerDotsetBreakpointByUrl: DebuggerDotsetBreakpointByUrl = "Debugger.setBreakpointByUrl".asInstanceOf[DebuggerDotsetBreakpointByUrl]
   
   @js.native
-  sealed trait DebuggerDotresumed extends js.Object
+  sealed trait DebuggerDotsetBreakpointsActive extends StObject
+  inline def DebuggerDotsetBreakpointsActive: DebuggerDotsetBreakpointsActive = "Debugger.setBreakpointsActive".asInstanceOf[DebuggerDotsetBreakpointsActive]
   
   @js.native
-  sealed trait DebuggerDotscheduleStepIntoAsync extends js.Object
+  sealed trait DebuggerDotsetPauseOnExceptions extends StObject
+  inline def DebuggerDotsetPauseOnExceptions: DebuggerDotsetPauseOnExceptions = "Debugger.setPauseOnExceptions".asInstanceOf[DebuggerDotsetPauseOnExceptions]
   
   @js.native
-  sealed trait DebuggerDotscriptFailedToParse extends js.Object
+  sealed trait DebuggerDotsetReturnValue extends StObject
+  inline def DebuggerDotsetReturnValue: DebuggerDotsetReturnValue = "Debugger.setReturnValue".asInstanceOf[DebuggerDotsetReturnValue]
   
   @js.native
-  sealed trait DebuggerDotscriptParsed extends js.Object
+  sealed trait DebuggerDotsetScriptSource extends StObject
+  inline def DebuggerDotsetScriptSource: DebuggerDotsetScriptSource = "Debugger.setScriptSource".asInstanceOf[DebuggerDotsetScriptSource]
   
   @js.native
-  sealed trait DebuggerDotsearchInContent extends js.Object
+  sealed trait DebuggerDotsetSkipAllPauses extends StObject
+  inline def DebuggerDotsetSkipAllPauses: DebuggerDotsetSkipAllPauses = "Debugger.setSkipAllPauses".asInstanceOf[DebuggerDotsetSkipAllPauses]
   
   @js.native
-  sealed trait DebuggerDotsetAsyncCallStackDepth extends js.Object
+  sealed trait DebuggerDotsetVariableValue extends StObject
+  inline def DebuggerDotsetVariableValue: DebuggerDotsetVariableValue = "Debugger.setVariableValue".asInstanceOf[DebuggerDotsetVariableValue]
   
   @js.native
-  sealed trait DebuggerDotsetBlackboxPatterns extends js.Object
+  sealed trait DebuggerDotstepInto extends StObject
+  inline def DebuggerDotstepInto: DebuggerDotstepInto = "Debugger.stepInto".asInstanceOf[DebuggerDotstepInto]
   
   @js.native
-  sealed trait DebuggerDotsetBlackboxedRanges extends js.Object
+  sealed trait DebuggerDotstepOut extends StObject
+  inline def DebuggerDotstepOut: DebuggerDotstepOut = "Debugger.stepOut".asInstanceOf[DebuggerDotstepOut]
   
   @js.native
-  sealed trait DebuggerDotsetBreakpoint extends js.Object
+  sealed trait DebuggerDotstepOver extends StObject
+  inline def DebuggerDotstepOver: DebuggerDotstepOver = "Debugger.stepOver".asInstanceOf[DebuggerDotstepOver]
   
   @js.native
-  sealed trait DebuggerDotsetBreakpointByUrl extends js.Object
+  sealed trait ERR_ASSERTION extends StObject
+  inline def ERR_ASSERTION: ERR_ASSERTION = "ERR_ASSERTION".asInstanceOf[ERR_ASSERTION]
   
   @js.native
-  sealed trait DebuggerDotsetBreakpointsActive extends js.Object
+  sealed trait HeapProfilerDotaddHeapSnapshotChunk extends StObject
+  inline def HeapProfilerDotaddHeapSnapshotChunk: HeapProfilerDotaddHeapSnapshotChunk = "HeapProfiler.addHeapSnapshotChunk".asInstanceOf[HeapProfilerDotaddHeapSnapshotChunk]
   
   @js.native
-  sealed trait DebuggerDotsetPauseOnExceptions extends js.Object
+  sealed trait HeapProfilerDotaddInspectedHeapObject extends StObject
+  inline def HeapProfilerDotaddInspectedHeapObject: HeapProfilerDotaddInspectedHeapObject = "HeapProfiler.addInspectedHeapObject".asInstanceOf[HeapProfilerDotaddInspectedHeapObject]
   
   @js.native
-  sealed trait DebuggerDotsetReturnValue extends js.Object
+  sealed trait HeapProfilerDotcollectGarbage extends StObject
+  inline def HeapProfilerDotcollectGarbage: HeapProfilerDotcollectGarbage = "HeapProfiler.collectGarbage".asInstanceOf[HeapProfilerDotcollectGarbage]
   
   @js.native
-  sealed trait DebuggerDotsetScriptSource extends js.Object
+  sealed trait HeapProfilerDotdisable extends StObject
+  inline def HeapProfilerDotdisable: HeapProfilerDotdisable = "HeapProfiler.disable".asInstanceOf[HeapProfilerDotdisable]
   
   @js.native
-  sealed trait DebuggerDotsetSkipAllPauses extends js.Object
+  sealed trait HeapProfilerDotenable extends StObject
+  inline def HeapProfilerDotenable: HeapProfilerDotenable = "HeapProfiler.enable".asInstanceOf[HeapProfilerDotenable]
   
   @js.native
-  sealed trait DebuggerDotsetVariableValue extends js.Object
+  sealed trait HeapProfilerDotgetHeapObjectId extends StObject
+  inline def HeapProfilerDotgetHeapObjectId: HeapProfilerDotgetHeapObjectId = "HeapProfiler.getHeapObjectId".asInstanceOf[HeapProfilerDotgetHeapObjectId]
   
   @js.native
-  sealed trait DebuggerDotstepInto extends js.Object
+  sealed trait HeapProfilerDotgetObjectByHeapObjectId extends StObject
+  inline def HeapProfilerDotgetObjectByHeapObjectId: HeapProfilerDotgetObjectByHeapObjectId = "HeapProfiler.getObjectByHeapObjectId".asInstanceOf[HeapProfilerDotgetObjectByHeapObjectId]
   
   @js.native
-  sealed trait DebuggerDotstepOut extends js.Object
+  sealed trait HeapProfilerDotgetSamplingProfile extends StObject
+  inline def HeapProfilerDotgetSamplingProfile: HeapProfilerDotgetSamplingProfile = "HeapProfiler.getSamplingProfile".asInstanceOf[HeapProfilerDotgetSamplingProfile]
   
   @js.native
-  sealed trait DebuggerDotstepOver extends js.Object
+  sealed trait HeapProfilerDotheapStatsUpdate extends StObject
+  inline def HeapProfilerDotheapStatsUpdate: HeapProfilerDotheapStatsUpdate = "HeapProfiler.heapStatsUpdate".asInstanceOf[HeapProfilerDotheapStatsUpdate]
   
   @js.native
-  sealed trait ERR_ASSERTION extends js.Object
+  sealed trait HeapProfilerDotlastSeenObjectId extends StObject
+  inline def HeapProfilerDotlastSeenObjectId: HeapProfilerDotlastSeenObjectId = "HeapProfiler.lastSeenObjectId".asInstanceOf[HeapProfilerDotlastSeenObjectId]
   
   @js.native
-  sealed trait HeapProfilerDotaddHeapSnapshotChunk extends js.Object
+  sealed trait HeapProfilerDotreportHeapSnapshotProgress extends StObject
+  inline def HeapProfilerDotreportHeapSnapshotProgress: HeapProfilerDotreportHeapSnapshotProgress = "HeapProfiler.reportHeapSnapshotProgress".asInstanceOf[HeapProfilerDotreportHeapSnapshotProgress]
   
   @js.native
-  sealed trait HeapProfilerDotaddInspectedHeapObject extends js.Object
+  sealed trait HeapProfilerDotresetProfiles extends StObject
+  inline def HeapProfilerDotresetProfiles: HeapProfilerDotresetProfiles = "HeapProfiler.resetProfiles".asInstanceOf[HeapProfilerDotresetProfiles]
   
   @js.native
-  sealed trait HeapProfilerDotcollectGarbage extends js.Object
+  sealed trait HeapProfilerDotstartSampling extends StObject
+  inline def HeapProfilerDotstartSampling: HeapProfilerDotstartSampling = "HeapProfiler.startSampling".asInstanceOf[HeapProfilerDotstartSampling]
   
   @js.native
-  sealed trait HeapProfilerDotdisable extends js.Object
+  sealed trait HeapProfilerDotstartTrackingHeapObjects extends StObject
+  inline def HeapProfilerDotstartTrackingHeapObjects: HeapProfilerDotstartTrackingHeapObjects = "HeapProfiler.startTrackingHeapObjects".asInstanceOf[HeapProfilerDotstartTrackingHeapObjects]
   
   @js.native
-  sealed trait HeapProfilerDotenable extends js.Object
+  sealed trait HeapProfilerDotstopSampling extends StObject
+  inline def HeapProfilerDotstopSampling: HeapProfilerDotstopSampling = "HeapProfiler.stopSampling".asInstanceOf[HeapProfilerDotstopSampling]
   
   @js.native
-  sealed trait HeapProfilerDotgetHeapObjectId extends js.Object
+  sealed trait HeapProfilerDotstopTrackingHeapObjects extends StObject
+  inline def HeapProfilerDotstopTrackingHeapObjects: HeapProfilerDotstopTrackingHeapObjects = "HeapProfiler.stopTrackingHeapObjects".asInstanceOf[HeapProfilerDotstopTrackingHeapObjects]
   
   @js.native
-  sealed trait HeapProfilerDotgetObjectByHeapObjectId extends js.Object
+  sealed trait HeapProfilerDottakeHeapSnapshot extends StObject
+  inline def HeapProfilerDottakeHeapSnapshot: HeapProfilerDottakeHeapSnapshot = "HeapProfiler.takeHeapSnapshot".asInstanceOf[HeapProfilerDottakeHeapSnapshot]
   
   @js.native
-  sealed trait HeapProfilerDotgetSamplingProfile extends js.Object
+  sealed trait IPv4 extends StObject
+  inline def IPv4: IPv4 = "IPv4".asInstanceOf[IPv4]
   
   @js.native
-  sealed trait HeapProfilerDotheapStatsUpdate extends js.Object
+  sealed trait IPv6 extends StObject
+  inline def IPv6: IPv6 = "IPv6".asInstanceOf[IPv6]
   
   @js.native
-  sealed trait HeapProfilerDotlastSeenObjectId extends js.Object
+  sealed trait LE extends StObject
+  inline def LE: LE = "LE".asInstanceOf[LE]
   
   @js.native
-  sealed trait HeapProfilerDotreportHeapSnapshotProgress extends js.Object
+  sealed trait MX extends StObject
+  inline def MX: MX = "MX".asInstanceOf[MX]
   
   @js.native
-  sealed trait HeapProfilerDotresetProfiles extends js.Object
+  sealed trait NAPTR extends StObject
+  inline def NAPTR: NAPTR = "NAPTR".asInstanceOf[NAPTR]
   
   @js.native
-  sealed trait HeapProfilerDotstartSampling extends js.Object
+  sealed trait NS extends StObject
+  inline def NS: NS = "NS".asInstanceOf[NS]
   
   @js.native
-  sealed trait HeapProfilerDotstartTrackingHeapObjects extends js.Object
+  sealed trait NodeRuntimeDotnotifyWhenWaitingForDisconnect extends StObject
+  inline def NodeRuntimeDotnotifyWhenWaitingForDisconnect: NodeRuntimeDotnotifyWhenWaitingForDisconnect = "NodeRuntime.notifyWhenWaitingForDisconnect".asInstanceOf[NodeRuntimeDotnotifyWhenWaitingForDisconnect]
   
   @js.native
-  sealed trait HeapProfilerDotstopSampling extends js.Object
+  sealed trait NodeRuntimeDotwaitingForDisconnect extends StObject
+  inline def NodeRuntimeDotwaitingForDisconnect: NodeRuntimeDotwaitingForDisconnect = "NodeRuntime.waitingForDisconnect".asInstanceOf[NodeRuntimeDotwaitingForDisconnect]
   
   @js.native
-  sealed trait HeapProfilerDotstopTrackingHeapObjects extends js.Object
+  sealed trait NodeTracingDotdataCollected extends StObject
+  inline def NodeTracingDotdataCollected: NodeTracingDotdataCollected = "NodeTracing.dataCollected".asInstanceOf[NodeTracingDotdataCollected]
   
   @js.native
-  sealed trait HeapProfilerDottakeHeapSnapshot extends js.Object
+  sealed trait NodeTracingDotgetCategories extends StObject
+  inline def NodeTracingDotgetCategories: NodeTracingDotgetCategories = "NodeTracing.getCategories".asInstanceOf[NodeTracingDotgetCategories]
   
   @js.native
-  sealed trait IPv4 extends js.Object
+  sealed trait NodeTracingDotstart extends StObject
+  inline def NodeTracingDotstart: NodeTracingDotstart = "NodeTracing.start".asInstanceOf[NodeTracingDotstart]
   
   @js.native
-  sealed trait IPv6 extends js.Object
+  sealed trait NodeTracingDotstop extends StObject
+  inline def NodeTracingDotstop: NodeTracingDotstop = "NodeTracing.stop".asInstanceOf[NodeTracingDotstop]
   
   @js.native
-  sealed trait LE extends js.Object
+  sealed trait NodeTracingDottracingComplete extends StObject
+  inline def NodeTracingDottracingComplete: NodeTracingDottracingComplete = "NodeTracing.tracingComplete".asInstanceOf[NodeTracingDottracingComplete]
   
   @js.native
-  sealed trait MX extends js.Object
+  sealed trait NodeWorkerDotattachedToWorker extends StObject
+  inline def NodeWorkerDotattachedToWorker: NodeWorkerDotattachedToWorker = "NodeWorker.attachedToWorker".asInstanceOf[NodeWorkerDotattachedToWorker]
   
   @js.native
-  sealed trait NAPTR extends js.Object
+  sealed trait NodeWorkerDotdetach extends StObject
+  inline def NodeWorkerDotdetach: NodeWorkerDotdetach = "NodeWorker.detach".asInstanceOf[NodeWorkerDotdetach]
   
   @js.native
-  sealed trait NS extends js.Object
+  sealed trait NodeWorkerDotdetachedFromWorker extends StObject
+  inline def NodeWorkerDotdetachedFromWorker: NodeWorkerDotdetachedFromWorker = "NodeWorker.detachedFromWorker".asInstanceOf[NodeWorkerDotdetachedFromWorker]
   
   @js.native
-  sealed trait NodeRuntimeDotnotifyWhenWaitingForDisconnect extends js.Object
+  sealed trait NodeWorkerDotdisable extends StObject
+  inline def NodeWorkerDotdisable: NodeWorkerDotdisable = "NodeWorker.disable".asInstanceOf[NodeWorkerDotdisable]
   
   @js.native
-  sealed trait NodeRuntimeDotwaitingForDisconnect extends js.Object
+  sealed trait NodeWorkerDotenable extends StObject
+  inline def NodeWorkerDotenable: NodeWorkerDotenable = "NodeWorker.enable".asInstanceOf[NodeWorkerDotenable]
   
   @js.native
-  sealed trait NodeTracingDotdataCollected extends js.Object
+  sealed trait NodeWorkerDotreceivedMessageFromWorker extends StObject
+  inline def NodeWorkerDotreceivedMessageFromWorker: NodeWorkerDotreceivedMessageFromWorker = "NodeWorker.receivedMessageFromWorker".asInstanceOf[NodeWorkerDotreceivedMessageFromWorker]
   
   @js.native
-  sealed trait NodeTracingDotgetCategories extends js.Object
+  sealed trait NodeWorkerDotsendMessageToWorker extends StObject
+  inline def NodeWorkerDotsendMessageToWorker: NodeWorkerDotsendMessageToWorker = "NodeWorker.sendMessageToWorker".asInstanceOf[NodeWorkerDotsendMessageToWorker]
   
   @js.native
-  sealed trait NodeTracingDotstart extends js.Object
+  sealed trait OCSPRequest extends StObject
+  inline def OCSPRequest: OCSPRequest = "OCSPRequest".asInstanceOf[OCSPRequest]
   
   @js.native
-  sealed trait NodeTracingDotstop extends js.Object
+  sealed trait OCSPResponse extends StObject
+  inline def OCSPResponse: OCSPResponse = "OCSPResponse".asInstanceOf[OCSPResponse]
   
   @js.native
-  sealed trait NodeTracingDottracingComplete extends js.Object
+  sealed trait PTR extends StObject
+  inline def PTR: PTR = "PTR".asInstanceOf[PTR]
   
   @js.native
-  sealed trait NodeWorkerDotattachedToWorker extends js.Object
+  sealed trait ProfilerDotconsoleProfileFinished extends StObject
+  inline def ProfilerDotconsoleProfileFinished: ProfilerDotconsoleProfileFinished = "Profiler.consoleProfileFinished".asInstanceOf[ProfilerDotconsoleProfileFinished]
   
   @js.native
-  sealed trait NodeWorkerDotdetach extends js.Object
+  sealed trait ProfilerDotconsoleProfileStarted extends StObject
+  inline def ProfilerDotconsoleProfileStarted: ProfilerDotconsoleProfileStarted = "Profiler.consoleProfileStarted".asInstanceOf[ProfilerDotconsoleProfileStarted]
   
   @js.native
-  sealed trait NodeWorkerDotdetachedFromWorker extends js.Object
+  sealed trait ProfilerDotdisable extends StObject
+  inline def ProfilerDotdisable: ProfilerDotdisable = "Profiler.disable".asInstanceOf[ProfilerDotdisable]
   
   @js.native
-  sealed trait NodeWorkerDotdisable extends js.Object
+  sealed trait ProfilerDotenable extends StObject
+  inline def ProfilerDotenable: ProfilerDotenable = "Profiler.enable".asInstanceOf[ProfilerDotenable]
   
   @js.native
-  sealed trait NodeWorkerDotenable extends js.Object
+  sealed trait ProfilerDotgetBestEffortCoverage extends StObject
+  inline def ProfilerDotgetBestEffortCoverage: ProfilerDotgetBestEffortCoverage = "Profiler.getBestEffortCoverage".asInstanceOf[ProfilerDotgetBestEffortCoverage]
   
   @js.native
-  sealed trait NodeWorkerDotreceivedMessageFromWorker extends js.Object
+  sealed trait ProfilerDotsetSamplingInterval extends StObject
+  inline def ProfilerDotsetSamplingInterval: ProfilerDotsetSamplingInterval = "Profiler.setSamplingInterval".asInstanceOf[ProfilerDotsetSamplingInterval]
   
   @js.native
-  sealed trait NodeWorkerDotsendMessageToWorker extends js.Object
+  sealed trait ProfilerDotstart extends StObject
+  inline def ProfilerDotstart: ProfilerDotstart = "Profiler.start".asInstanceOf[ProfilerDotstart]
   
   @js.native
-  sealed trait OCSPRequest extends js.Object
+  sealed trait ProfilerDotstartPreciseCoverage extends StObject
+  inline def ProfilerDotstartPreciseCoverage: ProfilerDotstartPreciseCoverage = "Profiler.startPreciseCoverage".asInstanceOf[ProfilerDotstartPreciseCoverage]
   
   @js.native
-  sealed trait OCSPResponse extends js.Object
+  sealed trait ProfilerDotstartTypeProfile extends StObject
+  inline def ProfilerDotstartTypeProfile: ProfilerDotstartTypeProfile = "Profiler.startTypeProfile".asInstanceOf[ProfilerDotstartTypeProfile]
   
   @js.native
-  sealed trait PTR extends js.Object
+  sealed trait ProfilerDotstop extends StObject
+  inline def ProfilerDotstop: ProfilerDotstop = "Profiler.stop".asInstanceOf[ProfilerDotstop]
   
   @js.native
-  sealed trait ProfilerDotconsoleProfileFinished extends js.Object
+  sealed trait ProfilerDotstopPreciseCoverage extends StObject
+  inline def ProfilerDotstopPreciseCoverage: ProfilerDotstopPreciseCoverage = "Profiler.stopPreciseCoverage".asInstanceOf[ProfilerDotstopPreciseCoverage]
   
   @js.native
-  sealed trait ProfilerDotconsoleProfileStarted extends js.Object
+  sealed trait ProfilerDotstopTypeProfile extends StObject
+  inline def ProfilerDotstopTypeProfile: ProfilerDotstopTypeProfile = "Profiler.stopTypeProfile".asInstanceOf[ProfilerDotstopTypeProfile]
   
   @js.native
-  sealed trait ProfilerDotdisable extends js.Object
+  sealed trait ProfilerDottakePreciseCoverage extends StObject
+  inline def ProfilerDottakePreciseCoverage: ProfilerDottakePreciseCoverage = "Profiler.takePreciseCoverage".asInstanceOf[ProfilerDottakePreciseCoverage]
   
   @js.native
-  sealed trait ProfilerDotenable extends js.Object
+  sealed trait ProfilerDottakeTypeProfile extends StObject
+  inline def ProfilerDottakeTypeProfile: ProfilerDottakeTypeProfile = "Profiler.takeTypeProfile".asInstanceOf[ProfilerDottakeTypeProfile]
   
   @js.native
-  sealed trait ProfilerDotgetBestEffortCoverage extends js.Object
+  sealed trait RuntimeDotawaitPromise extends StObject
+  inline def RuntimeDotawaitPromise: RuntimeDotawaitPromise = "Runtime.awaitPromise".asInstanceOf[RuntimeDotawaitPromise]
   
   @js.native
-  sealed trait ProfilerDotsetSamplingInterval extends js.Object
+  sealed trait RuntimeDotcallFunctionOn extends StObject
+  inline def RuntimeDotcallFunctionOn: RuntimeDotcallFunctionOn = "Runtime.callFunctionOn".asInstanceOf[RuntimeDotcallFunctionOn]
   
   @js.native
-  sealed trait ProfilerDotstart extends js.Object
+  sealed trait RuntimeDotcompileScript extends StObject
+  inline def RuntimeDotcompileScript: RuntimeDotcompileScript = "Runtime.compileScript".asInstanceOf[RuntimeDotcompileScript]
   
   @js.native
-  sealed trait ProfilerDotstartPreciseCoverage extends js.Object
+  sealed trait RuntimeDotconsoleAPICalled extends StObject
+  inline def RuntimeDotconsoleAPICalled: RuntimeDotconsoleAPICalled = "Runtime.consoleAPICalled".asInstanceOf[RuntimeDotconsoleAPICalled]
   
   @js.native
-  sealed trait ProfilerDotstartTypeProfile extends js.Object
+  sealed trait RuntimeDotdisable extends StObject
+  inline def RuntimeDotdisable: RuntimeDotdisable = "Runtime.disable".asInstanceOf[RuntimeDotdisable]
   
   @js.native
-  sealed trait ProfilerDotstop extends js.Object
+  sealed trait RuntimeDotdiscardConsoleEntries extends StObject
+  inline def RuntimeDotdiscardConsoleEntries: RuntimeDotdiscardConsoleEntries = "Runtime.discardConsoleEntries".asInstanceOf[RuntimeDotdiscardConsoleEntries]
   
   @js.native
-  sealed trait ProfilerDotstopPreciseCoverage extends js.Object
+  sealed trait RuntimeDotenable extends StObject
+  inline def RuntimeDotenable: RuntimeDotenable = "Runtime.enable".asInstanceOf[RuntimeDotenable]
   
   @js.native
-  sealed trait ProfilerDotstopTypeProfile extends js.Object
+  sealed trait RuntimeDotevaluate extends StObject
+  inline def RuntimeDotevaluate: RuntimeDotevaluate = "Runtime.evaluate".asInstanceOf[RuntimeDotevaluate]
   
   @js.native
-  sealed trait ProfilerDottakePreciseCoverage extends js.Object
+  sealed trait RuntimeDotexceptionRevoked extends StObject
+  inline def RuntimeDotexceptionRevoked: RuntimeDotexceptionRevoked = "Runtime.exceptionRevoked".asInstanceOf[RuntimeDotexceptionRevoked]
   
   @js.native
-  sealed trait ProfilerDottakeTypeProfile extends js.Object
+  sealed trait RuntimeDotexceptionThrown extends StObject
+  inline def RuntimeDotexceptionThrown: RuntimeDotexceptionThrown = "Runtime.exceptionThrown".asInstanceOf[RuntimeDotexceptionThrown]
   
   @js.native
-  sealed trait RuntimeDotawaitPromise extends js.Object
+  sealed trait RuntimeDotexecutionContextCreated extends StObject
+  inline def RuntimeDotexecutionContextCreated: RuntimeDotexecutionContextCreated = "Runtime.executionContextCreated".asInstanceOf[RuntimeDotexecutionContextCreated]
   
   @js.native
-  sealed trait RuntimeDotcallFunctionOn extends js.Object
+  sealed trait RuntimeDotexecutionContextDestroyed extends StObject
+  inline def RuntimeDotexecutionContextDestroyed: RuntimeDotexecutionContextDestroyed = "Runtime.executionContextDestroyed".asInstanceOf[RuntimeDotexecutionContextDestroyed]
   
   @js.native
-  sealed trait RuntimeDotcompileScript extends js.Object
+  sealed trait RuntimeDotexecutionContextsCleared extends StObject
+  inline def RuntimeDotexecutionContextsCleared: RuntimeDotexecutionContextsCleared = "Runtime.executionContextsCleared".asInstanceOf[RuntimeDotexecutionContextsCleared]
   
   @js.native
-  sealed trait RuntimeDotconsoleAPICalled extends js.Object
+  sealed trait RuntimeDotgetProperties extends StObject
+  inline def RuntimeDotgetProperties: RuntimeDotgetProperties = "Runtime.getProperties".asInstanceOf[RuntimeDotgetProperties]
   
   @js.native
-  sealed trait RuntimeDotdisable extends js.Object
+  sealed trait RuntimeDotglobalLexicalScopeNames extends StObject
+  inline def RuntimeDotglobalLexicalScopeNames: RuntimeDotglobalLexicalScopeNames = "Runtime.globalLexicalScopeNames".asInstanceOf[RuntimeDotglobalLexicalScopeNames]
   
   @js.native
-  sealed trait RuntimeDotdiscardConsoleEntries extends js.Object
+  sealed trait RuntimeDotinspectRequested extends StObject
+  inline def RuntimeDotinspectRequested: RuntimeDotinspectRequested = "Runtime.inspectRequested".asInstanceOf[RuntimeDotinspectRequested]
   
   @js.native
-  sealed trait RuntimeDotenable extends js.Object
+  sealed trait RuntimeDotqueryObjects extends StObject
+  inline def RuntimeDotqueryObjects: RuntimeDotqueryObjects = "Runtime.queryObjects".asInstanceOf[RuntimeDotqueryObjects]
   
   @js.native
-  sealed trait RuntimeDotevaluate extends js.Object
+  sealed trait RuntimeDotreleaseObject extends StObject
+  inline def RuntimeDotreleaseObject: RuntimeDotreleaseObject = "Runtime.releaseObject".asInstanceOf[RuntimeDotreleaseObject]
   
   @js.native
-  sealed trait RuntimeDotexceptionRevoked extends js.Object
+  sealed trait RuntimeDotreleaseObjectGroup extends StObject
+  inline def RuntimeDotreleaseObjectGroup: RuntimeDotreleaseObjectGroup = "Runtime.releaseObjectGroup".asInstanceOf[RuntimeDotreleaseObjectGroup]
   
   @js.native
-  sealed trait RuntimeDotexceptionThrown extends js.Object
+  sealed trait RuntimeDotrunIfWaitingForDebugger extends StObject
+  inline def RuntimeDotrunIfWaitingForDebugger: RuntimeDotrunIfWaitingForDebugger = "Runtime.runIfWaitingForDebugger".asInstanceOf[RuntimeDotrunIfWaitingForDebugger]
   
   @js.native
-  sealed trait RuntimeDotexecutionContextCreated extends js.Object
+  sealed trait RuntimeDotrunScript extends StObject
+  inline def RuntimeDotrunScript: RuntimeDotrunScript = "Runtime.runScript".asInstanceOf[RuntimeDotrunScript]
   
   @js.native
-  sealed trait RuntimeDotexecutionContextDestroyed extends js.Object
+  sealed trait RuntimeDotsetCustomObjectFormatterEnabled extends StObject
+  inline def RuntimeDotsetCustomObjectFormatterEnabled: RuntimeDotsetCustomObjectFormatterEnabled = "Runtime.setCustomObjectFormatterEnabled".asInstanceOf[RuntimeDotsetCustomObjectFormatterEnabled]
   
   @js.native
-  sealed trait RuntimeDotexecutionContextsCleared extends js.Object
+  sealed trait SIGABRT
+    extends StObject
+       with Signals
+  inline def SIGABRT: SIGABRT = "SIGABRT".asInstanceOf[SIGABRT]
   
   @js.native
-  sealed trait RuntimeDotgetProperties extends js.Object
+  sealed trait SIGALRM
+    extends StObject
+       with Signals
+  inline def SIGALRM: SIGALRM = "SIGALRM".asInstanceOf[SIGALRM]
   
   @js.native
-  sealed trait RuntimeDotglobalLexicalScopeNames extends js.Object
+  sealed trait SIGBREAK
+    extends StObject
+       with Signals
+  inline def SIGBREAK: SIGBREAK = "SIGBREAK".asInstanceOf[SIGBREAK]
   
   @js.native
-  sealed trait RuntimeDotinspectRequested extends js.Object
+  sealed trait SIGBUS
+    extends StObject
+       with Signals
+  inline def SIGBUS: SIGBUS = "SIGBUS".asInstanceOf[SIGBUS]
   
   @js.native
-  sealed trait RuntimeDotqueryObjects extends js.Object
+  sealed trait SIGCHLD
+    extends StObject
+       with Signals
+  inline def SIGCHLD: SIGCHLD = "SIGCHLD".asInstanceOf[SIGCHLD]
   
   @js.native
-  sealed trait RuntimeDotreleaseObject extends js.Object
+  sealed trait SIGCONT
+    extends StObject
+       with Signals
+  inline def SIGCONT: SIGCONT = "SIGCONT".asInstanceOf[SIGCONT]
   
   @js.native
-  sealed trait RuntimeDotreleaseObjectGroup extends js.Object
+  sealed trait SIGFPE
+    extends StObject
+       with Signals
+  inline def SIGFPE: SIGFPE = "SIGFPE".asInstanceOf[SIGFPE]
   
   @js.native
-  sealed trait RuntimeDotrunIfWaitingForDebugger extends js.Object
+  sealed trait SIGHUP
+    extends StObject
+       with Signals
+  inline def SIGHUP: SIGHUP = "SIGHUP".asInstanceOf[SIGHUP]
   
   @js.native
-  sealed trait RuntimeDotrunScript extends js.Object
+  sealed trait SIGILL
+    extends StObject
+       with Signals
+  inline def SIGILL: SIGILL = "SIGILL".asInstanceOf[SIGILL]
   
   @js.native
-  sealed trait RuntimeDotsetCustomObjectFormatterEnabled extends js.Object
+  sealed trait SIGINFO
+    extends StObject
+       with Signals
+  inline def SIGINFO: SIGINFO = "SIGINFO".asInstanceOf[SIGINFO]
   
   @js.native
-  sealed trait SIGABRT extends Signals
+  sealed trait SIGINT
+    extends StObject
+       with Signals
+  inline def SIGINT: SIGINT = "SIGINT".asInstanceOf[SIGINT]
   
   @js.native
-  sealed trait SIGALRM extends Signals
+  sealed trait SIGIO
+    extends StObject
+       with Signals
+  inline def SIGIO: SIGIO = "SIGIO".asInstanceOf[SIGIO]
   
   @js.native
-  sealed trait SIGBREAK extends Signals
+  sealed trait SIGIOT
+    extends StObject
+       with Signals
+  inline def SIGIOT: SIGIOT = "SIGIOT".asInstanceOf[SIGIOT]
   
   @js.native
-  sealed trait SIGBUS extends Signals
+  sealed trait SIGKILL
+    extends StObject
+       with Signals
+  inline def SIGKILL: SIGKILL = "SIGKILL".asInstanceOf[SIGKILL]
   
   @js.native
-  sealed trait SIGCHLD extends Signals
+  sealed trait SIGLOST
+    extends StObject
+       with Signals
+  inline def SIGLOST: SIGLOST = "SIGLOST".asInstanceOf[SIGLOST]
   
   @js.native
-  sealed trait SIGCONT extends Signals
+  sealed trait SIGPIPE
+    extends StObject
+       with Signals
+  inline def SIGPIPE: SIGPIPE = "SIGPIPE".asInstanceOf[SIGPIPE]
   
   @js.native
-  sealed trait SIGFPE extends Signals
+  sealed trait SIGPOLL
+    extends StObject
+       with Signals
+  inline def SIGPOLL: SIGPOLL = "SIGPOLL".asInstanceOf[SIGPOLL]
   
   @js.native
-  sealed trait SIGHUP extends Signals
+  sealed trait SIGPROF
+    extends StObject
+       with Signals
+  inline def SIGPROF: SIGPROF = "SIGPROF".asInstanceOf[SIGPROF]
   
   @js.native
-  sealed trait SIGILL extends Signals
+  sealed trait SIGPWR
+    extends StObject
+       with Signals
+  inline def SIGPWR: SIGPWR = "SIGPWR".asInstanceOf[SIGPWR]
   
   @js.native
-  sealed trait SIGINFO extends Signals
+  sealed trait SIGQUIT
+    extends StObject
+       with Signals
+  inline def SIGQUIT: SIGQUIT = "SIGQUIT".asInstanceOf[SIGQUIT]
   
   @js.native
-  sealed trait SIGINT extends Signals
+  sealed trait SIGSEGV
+    extends StObject
+       with Signals
+  inline def SIGSEGV: SIGSEGV = "SIGSEGV".asInstanceOf[SIGSEGV]
   
   @js.native
-  sealed trait SIGIO extends Signals
+  sealed trait SIGSTKFLT
+    extends StObject
+       with Signals
+  inline def SIGSTKFLT: SIGSTKFLT = "SIGSTKFLT".asInstanceOf[SIGSTKFLT]
   
   @js.native
-  sealed trait SIGIOT extends Signals
+  sealed trait SIGSTOP
+    extends StObject
+       with Signals
+  inline def SIGSTOP: SIGSTOP = "SIGSTOP".asInstanceOf[SIGSTOP]
   
   @js.native
-  sealed trait SIGKILL extends Signals
+  sealed trait SIGSYS
+    extends StObject
+       with Signals
+  inline def SIGSYS: SIGSYS = "SIGSYS".asInstanceOf[SIGSYS]
   
   @js.native
-  sealed trait SIGLOST extends Signals
+  sealed trait SIGTERM
+    extends StObject
+       with Signals
+  inline def SIGTERM: SIGTERM = "SIGTERM".asInstanceOf[SIGTERM]
   
   @js.native
-  sealed trait SIGPIPE extends Signals
+  sealed trait SIGTRAP
+    extends StObject
+       with Signals
+  inline def SIGTRAP: SIGTRAP = "SIGTRAP".asInstanceOf[SIGTRAP]
   
   @js.native
-  sealed trait SIGPOLL extends Signals
+  sealed trait SIGTSTP
+    extends StObject
+       with Signals
+  inline def SIGTSTP: SIGTSTP = "SIGTSTP".asInstanceOf[SIGTSTP]
   
   @js.native
-  sealed trait SIGPROF extends Signals
+  sealed trait SIGTTIN
+    extends StObject
+       with Signals
+  inline def SIGTTIN: SIGTTIN = "SIGTTIN".asInstanceOf[SIGTTIN]
   
   @js.native
-  sealed trait SIGPWR extends Signals
+  sealed trait SIGTTOU
+    extends StObject
+       with Signals
+  inline def SIGTTOU: SIGTTOU = "SIGTTOU".asInstanceOf[SIGTTOU]
   
   @js.native
-  sealed trait SIGQUIT extends Signals
+  sealed trait SIGUNUSED
+    extends StObject
+       with Signals
+  inline def SIGUNUSED: SIGUNUSED = "SIGUNUSED".asInstanceOf[SIGUNUSED]
   
   @js.native
-  sealed trait SIGSEGV extends Signals
+  sealed trait SIGURG
+    extends StObject
+       with Signals
+  inline def SIGURG: SIGURG = "SIGURG".asInstanceOf[SIGURG]
   
   @js.native
-  sealed trait SIGSTKFLT extends Signals
+  sealed trait SIGUSR1
+    extends StObject
+       with Signals
+  inline def SIGUSR1: SIGUSR1 = "SIGUSR1".asInstanceOf[SIGUSR1]
   
   @js.native
-  sealed trait SIGSTOP extends Signals
+  sealed trait SIGUSR2
+    extends StObject
+       with Signals
+  inline def SIGUSR2: SIGUSR2 = "SIGUSR2".asInstanceOf[SIGUSR2]
   
   @js.native
-  sealed trait SIGSYS extends Signals
+  sealed trait SIGVTALRM
+    extends StObject
+       with Signals
+  inline def SIGVTALRM: SIGVTALRM = "SIGVTALRM".asInstanceOf[SIGVTALRM]
   
   @js.native
-  sealed trait SIGTERM extends Signals
+  sealed trait SIGWINCH
+    extends StObject
+       with Signals
+  inline def SIGWINCH: SIGWINCH = "SIGWINCH".asInstanceOf[SIGWINCH]
   
   @js.native
-  sealed trait SIGTRAP extends Signals
+  sealed trait SIGXCPU
+    extends StObject
+       with Signals
+  inline def SIGXCPU: SIGXCPU = "SIGXCPU".asInstanceOf[SIGXCPU]
   
   @js.native
-  sealed trait SIGTSTP extends Signals
+  sealed trait SIGXFSZ
+    extends StObject
+       with Signals
+  inline def SIGXFSZ: SIGXFSZ = "SIGXFSZ".asInstanceOf[SIGXFSZ]
   
   @js.native
-  sealed trait SIGTTIN extends Signals
+  sealed trait SOA extends StObject
+  inline def SOA: SOA = "SOA".asInstanceOf[SOA]
   
   @js.native
-  sealed trait SIGTTOU extends Signals
+  sealed trait SRV extends StObject
+  inline def SRV: SRV = "SRV".asInstanceOf[SRV]
   
   @js.native
-  sealed trait SIGUNUSED extends Signals
+  sealed trait SchemaDotgetDomains extends StObject
+  inline def SchemaDotgetDomains: SchemaDotgetDomains = "Schema.getDomains".asInstanceOf[SchemaDotgetDomains]
   
   @js.native
-  sealed trait SIGURG extends Signals
+  sealed trait Semicolon extends StObject
+  inline def Semicolon: Semicolon = ";".asInstanceOf[Semicolon]
   
   @js.native
-  sealed trait SIGUSR1 extends Signals
+  sealed trait Slash extends StObject
+  inline def Slash: Slash = "/".asInstanceOf[Slash]
   
   @js.native
-  sealed trait SIGUSR2 extends Signals
+  sealed trait TLSv1
+    extends StObject
+       with SecureVersion
+  inline def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
   
   @js.native
-  sealed trait SIGVTALRM extends Signals
+  sealed trait TLSv1Dot1
+    extends StObject
+       with SecureVersion
+  inline def TLSv1Dot1: TLSv1Dot1 = "TLSv1.1".asInstanceOf[TLSv1Dot1]
   
   @js.native
-  sealed trait SIGWINCH extends Signals
+  sealed trait TLSv1Dot2
+    extends StObject
+       with SecureVersion
+  inline def TLSv1Dot2: TLSv1Dot2 = "TLSv1.2".asInstanceOf[TLSv1Dot2]
   
   @js.native
-  sealed trait SIGXCPU extends Signals
+  sealed trait TLSv1Dot3
+    extends StObject
+       with SecureVersion
+  inline def TLSv1Dot3: TLSv1Dot3 = "TLSv1.3".asInstanceOf[TLSv1Dot3]
   
   @js.native
-  sealed trait SIGXFSZ extends Signals
+  sealed trait TXT extends StObject
+  inline def TXT: TXT = "TXT".asInstanceOf[TXT]
   
   @js.native
-  sealed trait SOA extends js.Object
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait SRV extends js.Object
+  sealed trait abort extends StObject
+  inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
-  sealed trait SchemaDotgetDomains extends js.Object
+  sealed trait aborted extends StObject
+  inline def aborted: aborted = "aborted".asInstanceOf[aborted]
   
   @js.native
-  sealed trait TLSv1 extends SecureVersion
+  sealed trait advanced
+    extends StObject
+       with SerializationType
+  inline def advanced: advanced = "advanced".asInstanceOf[advanced]
   
   @js.native
-  sealed trait TLSv1Dot1 extends SecureVersion
+  sealed trait aes extends StObject
+  inline def aes: aes = "aes".asInstanceOf[aes]
   
   @js.native
-  sealed trait TLSv1Dot2 extends SecureVersion
+  sealed trait `aes-128-ccm`
+    extends StObject
+       with CipherCCMTypes
+  inline def `aes-128-ccm`: `aes-128-ccm` = "aes-128-ccm".asInstanceOf[`aes-128-ccm`]
   
   @js.native
-  sealed trait TLSv1Dot3 extends SecureVersion
+  sealed trait `aes-128-gcm`
+    extends StObject
+       with CipherGCMTypes
+  inline def `aes-128-gcm`: `aes-128-gcm` = "aes-128-gcm".asInstanceOf[`aes-128-gcm`]
   
   @js.native
-  sealed trait TXT extends js.Object
+  sealed trait `aes-128-ocb`
+    extends StObject
+       with CipherOCBTypes
+  inline def `aes-128-ocb`: `aes-128-ocb` = "aes-128-ocb".asInstanceOf[`aes-128-ocb`]
   
   @js.native
-  sealed trait _empty extends js.Object
+  sealed trait `aes-192-ccm`
+    extends StObject
+       with CipherCCMTypes
+  inline def `aes-192-ccm`: `aes-192-ccm` = "aes-192-ccm".asInstanceOf[`aes-192-ccm`]
   
   @js.native
-  sealed trait abort extends js.Object
+  sealed trait `aes-192-gcm`
+    extends StObject
+       with CipherGCMTypes
+  inline def `aes-192-gcm`: `aes-192-gcm` = "aes-192-gcm".asInstanceOf[`aes-192-gcm`]
   
   @js.native
-  sealed trait aborted extends js.Object
+  sealed trait `aes-192-ocb`
+    extends StObject
+       with CipherOCBTypes
+  inline def `aes-192-ocb`: `aes-192-ocb` = "aes-192-ocb".asInstanceOf[`aes-192-ocb`]
   
   @js.native
-  sealed trait advanced extends SerializationType
+  sealed trait `aes-256-ccm`
+    extends StObject
+       with CipherCCMTypes
+  inline def `aes-256-ccm`: `aes-256-ccm` = "aes-256-ccm".asInstanceOf[`aes-256-ccm`]
   
   @js.native
-  sealed trait `aes-128-ccm` extends CipherCCMTypes
+  sealed trait `aes-256-gcm`
+    extends StObject
+       with CipherGCMTypes
+  inline def `aes-256-gcm`: `aes-256-gcm` = "aes-256-gcm".asInstanceOf[`aes-256-gcm`]
   
   @js.native
-  sealed trait `aes-128-gcm` extends CipherGCMTypes
+  sealed trait `aes-256-ocb`
+    extends StObject
+       with CipherOCBTypes
+  inline def `aes-256-ocb`: `aes-256-ocb` = "aes-256-ocb".asInstanceOf[`aes-256-ocb`]
   
   @js.native
-  sealed trait `aes-192-ccm` extends CipherCCMTypes
+  sealed trait afterEvaluate extends StObject
+  inline def afterEvaluate: afterEvaluate = "afterEvaluate".asInstanceOf[afterEvaluate]
   
   @js.native
-  sealed trait `aes-192-gcm` extends CipherGCMTypes
+  sealed trait aix
+    extends StObject
+       with Platform
+  inline def aix: aix = "aix".asInstanceOf[aix]
   
   @js.native
-  sealed trait `aes-256-ccm` extends CipherCCMTypes
+  sealed trait altsvc extends StObject
+  inline def altsvc: altsvc = "altsvc".asInstanceOf[altsvc]
   
   @js.native
-  sealed trait `aes-256-gcm` extends CipherGCMTypes
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait aix extends Platform
+  sealed trait android
+    extends StObject
+       with Platform
+  inline def android: android = "android".asInstanceOf[android]
   
   @js.native
-  sealed trait altsvc extends js.Object
+  sealed trait arm
+    extends StObject
+       with Architecture
+  inline def arm: arm = "arm".asInstanceOf[arm]
   
   @js.native
-  sealed trait android extends Platform
+  sealed trait arm64
+    extends StObject
+       with Architecture
+  inline def arm64: arm64 = "arm64".asInstanceOf[arm64]
   
   @js.native
   sealed trait ascii
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
+       with Encoding
+       with LegacyCharacterEncoding
        with TranscodeEncoding
-       with Utf8AsciiBinaryEncoding
-       with Utf8AsciiLatin1Encoding
+  inline def ascii: ascii = "ascii".asInstanceOf[ascii]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait base64
-    extends BufferEncoding
-       with HexBase64BinaryEncoding
-       with HexBase64Latin1Encoding
+    extends StObject
+       with BinaryToTextEncoding
+       with BufferEncoding
+       with Encoding
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait beforeExit extends js.Object
+  sealed trait base64url
+    extends StObject
+       with BinaryToTextEncoding
+       with BufferEncoding
+       with Encoding
+  inline def base64url: base64url = "base64url".asInstanceOf[base64url]
   
   @js.native
-  sealed trait bigint extends Style
+  sealed trait beforeExit extends StObject
+  inline def beforeExit: beforeExit = "beforeExit".asInstanceOf[beforeExit]
+  
+  @js.native
+  sealed trait bigint
+    extends StObject
+       with Style
+  inline def bigint: bigint = "bigint".asInstanceOf[bigint]
   
   @js.native
   sealed trait binary
-    extends BufferEncoding
-       with HexBase64BinaryEncoding
+    extends StObject
+       with BinaryToTextEncoding
+       with BufferEncoding
+       with Encoding
+       with LegacyCharacterEncoding
        with TranscodeEncoding
-       with Utf8AsciiBinaryEncoding
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
-  sealed trait boolean extends Style
+  sealed trait boolean
+    extends StObject
+       with Style
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait buffer_ extends js.Object
+  sealed trait buffer_
+    extends StObject
+       with BufferEncodingOption
+  inline def buffer_ : buffer_ = "buffer".asInstanceOf[buffer_]
   
   @js.native
-  sealed trait `chacha20-poly1305` extends CipherCCMTypes
+  sealed trait bytes extends StObject
+  inline def bytes: bytes = "bytes".asInstanceOf[bytes]
   
   @js.native
-  sealed trait change extends js.Object
+  sealed trait cbc
+    extends StObject
+       with CipherMode
+  inline def cbc: cbc = "cbc".asInstanceOf[cbc]
   
   @js.native
-  sealed trait checkContinue extends js.Object
+  sealed trait ccm
+    extends StObject
+       with CipherMode
+  inline def ccm: ccm = "ccm".asInstanceOf[ccm]
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait cfb
+    extends StObject
+       with CipherMode
+  inline def cfb: cfb = "cfb".asInstanceOf[cfb]
   
   @js.native
-  sealed trait compressed extends ECDHKeyFormat
+  sealed trait `chacha20-poly1305`
+    extends StObject
+       with CipherCCMTypes
+  inline def `chacha20-poly1305`: `chacha20-poly1305` = "chacha20-poly1305".asInstanceOf[`chacha20-poly1305`]
   
   @js.native
-  sealed trait connect extends js.Object
+  sealed trait change
+    extends StObject
+       with WatchEventType
+  inline def change: change = "change".asInstanceOf[change]
   
   @js.native
-  sealed trait connection extends js.Object
+  sealed trait checkContinue extends StObject
+  inline def checkContinue: checkContinue = "checkContinue".asInstanceOf[checkContinue]
   
   @js.native
-  sealed trait continue extends js.Object
+  sealed trait checkExpectation extends StObject
+  inline def checkExpectation: checkExpectation = "checkExpectation".asInstanceOf[checkExpectation]
   
   @js.native
-  sealed trait cygwin extends Platform
+  sealed trait clientError extends StObject
+  inline def clientError: clientError = "clientError".asInstanceOf[clientError]
   
   @js.native
-  sealed trait darwin extends Platform
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait closed
+    extends StObject
+       with SocketReadyState
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait date extends Style
+  sealed trait compressed
+    extends StObject
+       with ECDHKeyFormat
+  inline def compressed: compressed = "compressed".asInstanceOf[compressed]
   
   @js.native
-  sealed trait der extends KeyFormat
+  sealed trait connect extends StObject
+  inline def connect: connect = "connect".asInstanceOf[connect]
   
   @js.native
-  sealed trait dir extends Type
+  sealed trait connection extends StObject
+  inline def connection: connection = "connection".asInstanceOf[connection]
   
   @js.native
-  sealed trait disconnect extends js.Object
+  sealed trait continue extends StObject
+  inline def continue: continue = "continue".asInstanceOf[continue]
   
   @js.native
-  sealed trait drain extends js.Object
+  sealed trait ctr
+    extends StObject
+       with CipherMode
+  inline def ctr: ctr = "ctr".asInstanceOf[ctr]
   
   @js.native
-  sealed trait dsa extends KeyType
+  sealed trait cygwin
+    extends StObject
+       with Platform
+  inline def cygwin: cygwin = "cygwin".asInstanceOf[cygwin]
   
   @js.native
-  sealed trait ec extends KeyType
+  sealed trait darwin
+    extends StObject
+       with Platform
+  inline def darwin: darwin = "darwin".asInstanceOf[darwin]
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait data extends StObject
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait date
+    extends StObject
+       with Style
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait exit extends js.Object
+  sealed trait decrypt
+    extends StObject
+       with KeyUsage
+  inline def decrypt: decrypt = "decrypt".asInstanceOf[decrypt]
   
   @js.native
-  sealed trait file extends Type
+  sealed trait deepEqual extends StObject
+  inline def deepEqual: deepEqual = "deepEqual".asInstanceOf[deepEqual]
   
   @js.native
-  sealed trait finish extends js.Object
+  sealed trait deepStrictEqual extends StObject
+  inline def deepStrictEqual: deepStrictEqual = "deepStrictEqual".asInstanceOf[deepStrictEqual]
   
   @js.native
-  sealed trait fork extends js.Object
+  sealed trait der
+    extends StObject
+       with DSAEncoding
+       with KeyFormat
+  inline def der: der = "der".asInstanceOf[der]
   
   @js.native
-  sealed trait frameError extends js.Object
+  sealed trait deriveBits
+    extends StObject
+       with KeyUsage
+  inline def deriveBits: deriveBits = "deriveBits".asInstanceOf[deriveBits]
   
   @js.native
-  sealed trait freebsd extends Platform
+  sealed trait deriveKey
+    extends StObject
+       with KeyUsage
+  inline def deriveKey: deriveKey = "deriveKey".asInstanceOf[deriveKey]
   
   @js.native
-  sealed trait function extends EntryType
+  sealed trait detailed
+    extends StObject
+       with MeasureMemoryMode
+  inline def detailed: detailed = "detailed".asInstanceOf[detailed]
   
   @js.native
-  sealed trait gc extends EntryType
+  sealed trait dir
+    extends StObject
+       with Type
+  inline def dir: dir = "dir".asInstanceOf[dir]
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait disconnect extends StObject
+  inline def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
   
   @js.native
-  sealed trait goaway extends js.Object
+  sealed trait drain extends StObject
+  inline def drain: drain = "drain".asInstanceOf[drain]
   
   @js.native
-  sealed trait headers extends js.Object
+  sealed trait drop extends StObject
+  inline def drop: drop = "drop".asInstanceOf[drop]
+  
+  @js.native
+  sealed trait dsa
+    extends StObject
+       with KeyType
+  inline def dsa: dsa = "dsa".asInstanceOf[dsa]
+  
+  @js.native
+  sealed trait ec
+    extends StObject
+       with KeyType
+  inline def ec: ec = "ec".asInstanceOf[ec]
+  
+  @js.native
+  sealed trait ecb
+    extends StObject
+       with CipherMode
+  inline def ecb: ecb = "ecb".asInstanceOf[ecb]
+  
+  @js.native
+  sealed trait ed25519
+    extends StObject
+       with KeyType
+  inline def ed25519: ed25519 = "ed25519".asInstanceOf[ed25519]
+  
+  @js.native
+  sealed trait ed448
+    extends StObject
+       with KeyType
+  inline def ed448: ed448 = "ed448".asInstanceOf[ed448]
+  
+  @js.native
+  sealed trait encrypt
+    extends StObject
+       with KeyUsage
+  inline def encrypt: encrypt = "encrypt".asInstanceOf[encrypt]
+  
+  @js.native
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
+  
+  @js.native
+  sealed trait equal extends StObject
+  inline def equal: equal = "equal".asInstanceOf[equal]
+  
+  @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
+  sealed trait exit extends StObject
+  inline def exit: exit = "exit".asInstanceOf[exit]
+  
+  @js.native
+  sealed trait fifo extends StObject
+  inline def fifo: fifo = "fifo".asInstanceOf[fifo]
+  
+  @js.native
+  sealed trait file
+    extends StObject
+       with Type
+  inline def file: file = "file".asInstanceOf[file]
+  
+  @js.native
+  sealed trait finish extends StObject
+  inline def finish: finish = "finish".asInstanceOf[finish]
+  
+  @js.native
+  sealed trait fork extends StObject
+  inline def fork: fork = "fork".asInstanceOf[fork]
+  
+  @js.native
+  sealed trait frameError extends StObject
+  inline def frameError: frameError = "frameError".asInstanceOf[frameError]
+  
+  @js.native
+  sealed trait freebsd
+    extends StObject
+       with Platform
+  inline def freebsd: freebsd = "freebsd".asInstanceOf[freebsd]
+  
+  @js.native
+  sealed trait function
+    extends StObject
+       with EntryType
+  inline def function: function = "function".asInstanceOf[function]
+  
+  @js.native
+  sealed trait gc
+    extends StObject
+       with EntryType
+  inline def gc: gc = "gc".asInstanceOf[gc]
+  
+  @js.native
+  sealed trait gcm
+    extends StObject
+       with CipherMode
+  inline def gcm: gcm = "gcm".asInstanceOf[gcm]
+  
+  @js.native
+  sealed trait get extends StObject
+  inline def get: get = "get".asInstanceOf[get]
+  
+  @js.native
+  sealed trait goaway extends StObject
+  inline def goaway: goaway = "goaway".asInstanceOf[goaway]
+  
+  @js.native
+  sealed trait haiku
+    extends StObject
+       with Platform
+  inline def haiku: haiku = "haiku".asInstanceOf[haiku]
+  
+  @js.native
+  sealed trait headers extends StObject
+  inline def headers: headers = "headers".asInstanceOf[headers]
   
   @js.native
   sealed trait hex
-    extends BufferEncoding
-       with HexBase64BinaryEncoding
-       with HexBase64Latin1Encoding
+    extends StObject
+       with BinaryToTextEncoding
+       with BufferEncoding
+       with Encoding
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
-  sealed trait http extends EntryType
+  sealed trait history extends StObject
+  inline def history: history = "history".asInstanceOf[history]
   
   @js.native
-  sealed trait http2 extends EntryType
+  sealed trait hmac extends StObject
+  inline def hmac: hmac = "hmac".asInstanceOf[hmac]
   
   @js.native
-  sealed trait httpColon extends js.Object
+  sealed trait http
+    extends StObject
+       with EntryType
+  inline def http: http = "http".asInstanceOf[http]
   
   @js.native
-  sealed trait httpsColon extends js.Object
+  sealed trait http2
+    extends StObject
+       with EntryType
+  inline def http2: http2 = "http2".asInstanceOf[http2]
   
   @js.native
-  sealed trait hybrid extends ECDHKeyFormat
+  sealed trait httpColon extends StObject
+  inline def httpColon: httpColon = "http:".asInstanceOf[httpColon]
+  
+  @js.native
+  sealed trait httpsColon extends StObject
+  inline def httpsColon: httpsColon = "https:".asInstanceOf[httpsColon]
+  
+  @js.native
+  sealed trait hybrid
+    extends StObject
+       with ECDHKeyFormat
+  inline def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
+  
+  @js.native
+  sealed trait ia32
+    extends StObject
+       with Architecture
+  inline def ia32: ia32 = "ia32".asInstanceOf[ia32]
+  
+  @js.native
+  sealed trait `ieee-p1363`
+    extends StObject
+       with DSAEncoding
+  inline def `ieee-p1363`: `ieee-p1363` = "ieee-p1363".asInstanceOf[`ieee-p1363`]
+  
+  @js.native
+  sealed trait ifError extends StObject
+  inline def ifError: ifError = "ifError".asInstanceOf[ifError]
   
   @js.native
   sealed trait ignore
-    extends StdioNull
-       with _StdioOptions
+    extends StObject
+       with IOType
+       with StdioNull
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
-  sealed trait information extends js.Object
+  sealed trait information extends StObject
+  inline def information: information = "information".asInstanceOf[information]
   
   @js.native
   sealed trait inherit
-    extends StdioNull
-       with _StdioOptions
+    extends StObject
+       with IOType
+       with StdioNull
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
-  sealed trait inspectorNotification extends js.Object
+  sealed trait inspectorNotification extends StObject
+  inline def inspectorNotification: inspectorNotification = "inspectorNotification".asInstanceOf[inspectorNotification]
   
   @js.native
-  sealed trait ipc extends js.Object
+  sealed trait ipc extends StObject
+  inline def ipc: ipc = "ipc".asInstanceOf[ipc]
   
   @js.native
-  sealed trait json extends SerializationType
+  sealed trait ipv4_
+    extends StObject
+       with IPVersion
+  inline def ipv4_ : ipv4_ = "ipv4".asInstanceOf[ipv4_]
   
   @js.native
-  sealed trait junction extends Type
+  sealed trait ipv4first extends StObject
+  inline def ipv4first: ipv4first = "ipv4first".asInstanceOf[ipv4first]
   
   @js.native
-  sealed trait keylog extends js.Object
+  sealed trait ipv6_
+    extends StObject
+       with IPVersion
+  inline def ipv6_ : ipv6_ = "ipv6".asInstanceOf[ipv6_]
+  
+  @js.native
+  sealed trait json
+    extends StObject
+       with SerializationType
+  inline def json: json = "json".asInstanceOf[json]
+  
+  @js.native
+  sealed trait junction
+    extends StObject
+       with Type
+  inline def junction: junction = "junction".asInstanceOf[junction]
+  
+  @js.native
+  sealed trait jwk
+    extends StObject
+       with typingsJapgolly.node.cryptoMod.webcrypto.KeyFormat
+  inline def jwk: jwk = "jwk".asInstanceOf[jwk]
+  
+  @js.native
+  sealed trait keylog extends StObject
+  inline def keylog: keylog = "keylog".asInstanceOf[keylog]
   
   @js.native
   sealed trait latin1
-    extends BufferEncoding
-       with HexBase64Latin1Encoding
+    extends StObject
+       with BufferEncoding
+       with CharacterEncoding
+       with Encoding
        with TranscodeEncoding
-       with Utf8AsciiLatin1Encoding
+  inline def latin1: latin1 = "latin1".asInstanceOf[latin1]
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait lifo extends StObject
+  inline def lifo: lifo = "lifo".asInstanceOf[lifo]
   
   @js.native
-  sealed trait linux extends Platform
+  sealed trait line extends StObject
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait listening extends js.Object
+  sealed trait linux
+    extends StObject
+       with Platform
+  inline def linux: linux = "linux".asInstanceOf[linux]
   
   @js.native
-  sealed trait localSettings extends js.Object
+  sealed trait listening extends StObject
+  inline def listening: listening = "listening".asInstanceOf[listening]
   
   @js.native
-  sealed trait lookup extends js.Object
+  sealed trait localSettings extends StObject
+  inline def localSettings: localSettings = "localSettings".asInstanceOf[localSettings]
   
   @js.native
-  sealed trait mark extends EntryType
+  sealed trait lookup extends StObject
+  inline def lookup: lookup = "lookup".asInstanceOf[lookup]
   
   @js.native
-  sealed trait measure extends EntryType
+  sealed trait mark
+    extends StObject
+       with EntryType
+  inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
-  sealed trait message extends js.Object
+  sealed trait measure
+    extends StObject
+       with EntryType
+  inline def measure: measure = "measure".asInstanceOf[measure]
   
   @js.native
-  sealed trait module extends Style
+  sealed trait message extends StObject
+  inline def message: message = "message".asInstanceOf[message]
   
   @js.native
-  sealed trait multipleResolves extends js.Object
+  sealed trait messageerror extends StObject
+  inline def messageerror: messageerror = "messageerror".asInstanceOf[messageerror]
   
   @js.native
-  sealed trait netbsd extends Platform
+  sealed trait mips
+    extends StObject
+       with Architecture
+  inline def mips: mips = "mips".asInstanceOf[mips]
   
   @js.native
-  sealed trait newListener extends js.Object
+  sealed trait mipsel
+    extends StObject
+       with Architecture
+  inline def mipsel: mipsel = "mipsel".asInstanceOf[mipsel]
   
   @js.native
-  sealed trait newSession extends js.Object
+  sealed trait module
+    extends StObject
+       with Style
+  inline def module: module = "module".asInstanceOf[module]
   
   @js.native
-  sealed trait node extends EntryType
+  sealed trait multipleResolves extends StObject
+  inline def multipleResolves: multipleResolves = "multipleResolves".asInstanceOf[multipleResolves]
   
   @js.native
-  sealed trait `null` extends Style
+  sealed trait netbsd
+    extends StObject
+       with Platform
+  inline def netbsd: netbsd = "netbsd".asInstanceOf[netbsd]
   
   @js.native
-  sealed trait number extends Style
+  sealed trait never extends StObject
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
-  sealed trait online extends js.Object
+  sealed trait newSession extends StObject
+  inline def newSession: newSession = "newSession".asInstanceOf[newSession]
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait node
+    extends StObject
+       with EntryType
+  inline def node: node = "node".asInstanceOf[node]
   
   @js.native
-  sealed trait openbsd extends Platform
+  sealed trait notDeepEqual extends StObject
+  inline def notDeepEqual: notDeepEqual = "notDeepEqual".asInstanceOf[notDeepEqual]
   
   @js.native
-  sealed trait origin extends js.Object
+  sealed trait notEqual extends StObject
+  inline def notEqual: notEqual = "notEqual".asInstanceOf[notEqual]
   
   @js.native
-  sealed trait pause extends js.Object
+  sealed trait `null`
+    extends StObject
+       with Style
+  inline def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
-  sealed trait pem extends KeyFormat
+  sealed trait number
+    extends StObject
+       with Style
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait ping extends js.Object
+  sealed trait ocb
+    extends StObject
+       with CipherMode
+  inline def ocb: ocb = "ocb".asInstanceOf[ocb]
   
   @js.native
-  sealed trait pipe extends _StdioOptions
+  sealed trait ofb
+    extends StObject
+       with CipherMode
+  inline def ofb: ofb = "ofb".asInstanceOf[ofb]
   
   @js.native
-  sealed trait pkcs1 extends js.Object
+  sealed trait ok extends StObject
+  inline def ok: ok = "ok".asInstanceOf[ok]
   
   @js.native
-  sealed trait pkcs8 extends js.Object
+  sealed trait online extends StObject
+  inline def online: online = "online".asInstanceOf[online]
   
   @js.native
-  sealed trait `private` extends KeyObjectType
+  sealed trait open
+    extends StObject
+       with SocketReadyState
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait public extends KeyObjectType
+  sealed trait openbsd
+    extends StObject
+       with Platform
+  inline def openbsd: openbsd = "openbsd".asInstanceOf[openbsd]
   
   @js.native
-  sealed trait push extends js.Object
+  sealed trait opening
+    extends StObject
+       with SocketReadyState
+  inline def opening: opening = "opening".asInstanceOf[opening]
   
   @js.native
-  sealed trait readable extends js.Object
+  sealed trait option extends StObject
+  inline def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait regexp extends Style
+  sealed trait `option-terminator` extends StObject
+  inline def `option-terminator`: `option-terminator` = "option-terminator".asInstanceOf[`option-terminator`]
   
   @js.native
-  sealed trait reject extends MultipleResolveType
+  sealed trait origin extends StObject
+  inline def origin: origin = "origin".asInstanceOf[origin]
   
   @js.native
-  sealed trait rejectionHandled extends js.Object
+  sealed trait overlapped
+    extends StObject
+       with IOType
+       with StdioPipeNamed
+  inline def overlapped: overlapped = "overlapped".asInstanceOf[overlapped]
   
   @js.native
-  sealed trait remoteSettings extends js.Object
+  sealed trait pause extends StObject
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait removeListener extends js.Object
+  sealed trait pem
+    extends StObject
+       with KeyFormat
+  inline def pem: pem = "pem".asInstanceOf[pem]
   
   @js.native
-  sealed trait request extends js.Object
+  sealed trait ping extends StObject
+  inline def ping: ping = "ping".asInstanceOf[ping]
   
   @js.native
-  sealed trait reset extends js.Object
+  sealed trait pipe
+    extends StObject
+       with IOType
+       with StdioPipeNamed
+  inline def pipe: pipe = "pipe".asInstanceOf[pipe]
   
   @js.native
-  sealed trait resize extends js.Object
+  sealed trait pkcs1 extends StObject
+  inline def pkcs1: pkcs1 = "pkcs1".asInstanceOf[pkcs1]
   
   @js.native
-  sealed trait resolve extends MultipleResolveType
+  sealed trait pkcs8
+    extends StObject
+       with typingsJapgolly.node.cryptoMod.webcrypto.KeyFormat
+  inline def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
   
   @js.native
-  sealed trait response extends js.Object
+  sealed trait positional extends StObject
+  inline def positional: positional = "positional".asInstanceOf[positional]
   
   @js.native
-  sealed trait resume extends js.Object
+  sealed trait ppc
+    extends StObject
+       with Architecture
+  inline def ppc: ppc = "ppc".asInstanceOf[ppc]
   
   @js.native
-  sealed trait resumeSession extends js.Object
+  sealed trait ppc64
+    extends StObject
+       with Architecture
+  inline def ppc64: ppc64 = "ppc64".asInstanceOf[ppc64]
   
   @js.native
-  sealed trait rsa extends KeyType
+  sealed trait `private`
+    extends StObject
+       with KeyObjectType
+       with typingsJapgolly.node.cryptoMod.webcrypto.KeyType
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
-  sealed trait sec1 extends js.Object
+  sealed trait public
+    extends StObject
+       with KeyObjectType
+       with typingsJapgolly.node.cryptoMod.webcrypto.KeyType
+  inline def public: public = "public".asInstanceOf[public]
   
   @js.native
-  sealed trait secret extends KeyObjectType
+  sealed trait push extends StObject
+  inline def push: push = "push".asInstanceOf[push]
   
   @js.native
-  sealed trait secureConnect extends js.Object
+  sealed trait raw
+    extends StObject
+       with typingsJapgolly.node.cryptoMod.webcrypto.KeyFormat
+  inline def raw: raw = "raw".asInstanceOf[raw]
   
   @js.native
-  sealed trait secureConnection extends js.Object
+  sealed trait readOnly
+    extends StObject
+       with SocketReadyState
+  inline def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
   
   @js.native
-  sealed trait session extends js.Object
+  sealed trait readable extends StObject
+  inline def readable: readable = "readable".asInstanceOf[readable]
   
   @js.native
-  sealed trait sessionError extends js.Object
+  sealed trait ready extends StObject
+  inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait set extends js.Object
+  sealed trait regexp
+    extends StObject
+       with Style
+  inline def regexp: regexp = "regexp".asInstanceOf[regexp]
   
   @js.native
-  sealed trait setup extends js.Object
+  sealed trait reject
+    extends StObject
+       with MultipleResolveType
+  inline def reject: reject = "reject".asInstanceOf[reject]
   
   @js.native
-  sealed trait socket extends js.Object
+  sealed trait rejectionHandled extends StObject
+  inline def rejectionHandled: rejectionHandled = "rejectionHandled".asInstanceOf[rejectionHandled]
   
   @js.native
-  sealed trait special extends Style
+  sealed trait remoteSettings extends StObject
+  inline def remoteSettings: remoteSettings = "remoteSettings".asInstanceOf[remoteSettings]
   
   @js.native
-  sealed trait spki extends js.Object
+  sealed trait rename
+    extends StObject
+       with WatchEventType
+  inline def rename: rename = "rename".asInstanceOf[rename]
   
   @js.native
-  sealed trait stream extends js.Object
+  sealed trait request extends StObject
+  inline def request: request = "request".asInstanceOf[request]
   
   @js.native
-  sealed trait streamClosed extends js.Object
+  sealed trait reset extends StObject
+  inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait string extends Style
+  sealed trait resize extends StObject
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait sunos extends Platform
+  sealed trait resolve
+    extends StObject
+       with MultipleResolveType
+  inline def resolve: resolve = "resolve".asInstanceOf[resolve]
   
   @js.native
-  sealed trait symbol extends Style
+  sealed trait response extends StObject
+  inline def response: response = "response".asInstanceOf[response]
   
   @js.native
-  sealed trait timeout extends js.Object
+  sealed trait resume extends StObject
+  inline def resume: resume = "resume".asInstanceOf[resume]
   
   @js.native
-  sealed trait tlsClientError extends js.Object
+  sealed trait resumeSession extends StObject
+  inline def resumeSession: resumeSession = "resumeSession".asInstanceOf[resumeSession]
   
   @js.native
-  sealed trait trailers extends js.Object
+  sealed trait rsa
+    extends StObject
+       with KeyType
+  inline def rsa: rsa = "rsa".asInstanceOf[rsa]
   
   @js.native
-  sealed trait `ucs-2` extends BufferEncoding
+  sealed trait `rsa-pss`
+    extends StObject
+       with KeyType
+  inline def `rsa-pss`: `rsa-pss` = "rsa-pss".asInstanceOf[`rsa-pss`]
+  
+  @js.native
+  sealed trait s390
+    extends StObject
+       with Architecture
+  inline def s390: s390 = "s390".asInstanceOf[s390]
+  
+  @js.native
+  sealed trait s390x
+    extends StObject
+       with Architecture
+  inline def s390x: s390x = "s390x".asInstanceOf[s390x]
+  
+  @js.native
+  sealed trait sec1 extends StObject
+  inline def sec1: sec1 = "sec1".asInstanceOf[sec1]
+  
+  @js.native
+  sealed trait secret
+    extends StObject
+       with KeyObjectType
+       with typingsJapgolly.node.cryptoMod.webcrypto.KeyType
+  inline def secret: secret = "secret".asInstanceOf[secret]
+  
+  @js.native
+  sealed trait secureConnect extends StObject
+  inline def secureConnect: secureConnect = "secureConnect".asInstanceOf[secureConnect]
+  
+  @js.native
+  sealed trait secureConnection extends StObject
+  inline def secureConnection: secureConnection = "secureConnection".asInstanceOf[secureConnection]
+  
+  @js.native
+  sealed trait session extends StObject
+  inline def session: session = "session".asInstanceOf[session]
+  
+  @js.native
+  sealed trait sessionError extends StObject
+  inline def sessionError: sessionError = "sessionError".asInstanceOf[sessionError]
+  
+  @js.native
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
+  
+  @js.native
+  sealed trait setup extends StObject
+  inline def setup: setup = "setup".asInstanceOf[setup]
+  
+  @js.native
+  sealed trait sign
+    extends StObject
+       with KeyUsage
+  inline def sign: sign = "sign".asInstanceOf[sign]
+  
+  @js.native
+  sealed trait socket extends StObject
+  inline def socket: socket = "socket".asInstanceOf[socket]
+  
+  @js.native
+  sealed trait spawn extends StObject
+  inline def spawn: spawn = "spawn".asInstanceOf[spawn]
+  
+  @js.native
+  sealed trait special
+    extends StObject
+       with Style
+  inline def special: special = "special".asInstanceOf[special]
+  
+  @js.native
+  sealed trait spki
+    extends StObject
+       with typingsJapgolly.node.cryptoMod.webcrypto.KeyFormat
+  inline def spki: spki = "spki".asInstanceOf[spki]
+  
+  @js.native
+  sealed trait stream
+    extends StObject
+       with CipherMode
+  inline def stream: stream = "stream".asInstanceOf[stream]
+  
+  @js.native
+  sealed trait streamClosed extends StObject
+  inline def streamClosed: streamClosed = "streamClosed".asInstanceOf[streamClosed]
+  
+  @js.native
+  sealed trait strict extends StObject
+  inline def strict: strict = "strict".asInstanceOf[strict]
+  
+  @js.native
+  sealed trait strictEqual extends StObject
+  inline def strictEqual: strictEqual = "strictEqual".asInstanceOf[strictEqual]
+  
+  @js.native
+  sealed trait string
+    extends StObject
+       with Style
+  inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
+  sealed trait summary
+    extends StObject
+       with MeasureMemoryMode
+  inline def summary: summary = "summary".asInstanceOf[summary]
+  
+  @js.native
+  sealed trait sunos
+    extends StObject
+       with Platform
+  inline def sunos: sunos = "sunos".asInstanceOf[sunos]
+  
+  @js.native
+  sealed trait symbol
+    extends StObject
+       with Style
+  inline def symbol: symbol = "symbol".asInstanceOf[symbol]
+  
+  @js.native
+  sealed trait testColondiagnostic extends StObject
+  inline def testColondiagnostic: testColondiagnostic = "test:diagnostic".asInstanceOf[testColondiagnostic]
+  
+  @js.native
+  sealed trait testColonfail extends StObject
+  inline def testColonfail: testColonfail = "test:fail".asInstanceOf[testColonfail]
+  
+  @js.native
+  sealed trait testColonpass extends StObject
+  inline def testColonpass: testColonpass = "test:pass".asInstanceOf[testColonpass]
+  
+  @js.native
+  sealed trait timeout extends StObject
+  inline def timeout: timeout = "timeout".asInstanceOf[timeout]
+  
+  @js.native
+  sealed trait tlsClientError extends StObject
+  inline def tlsClientError: tlsClientError = "tlsClientError".asInstanceOf[tlsClientError]
+  
+  @js.native
+  sealed trait trailers extends StObject
+  inline def trailers: trailers = "trailers".asInstanceOf[trailers]
+  
+  @js.native
+  sealed trait `ucs-2`
+    extends StObject
+       with BufferEncoding
+       with Encoding
+       with LegacyCharacterEncoding
+  inline def `ucs-2`: `ucs-2` = "ucs-2".asInstanceOf[`ucs-2`]
   
   @js.native
   sealed trait ucs2
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
+       with Encoding
+       with LegacyCharacterEncoding
        with TranscodeEncoding
+  inline def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
   
   @js.native
-  sealed trait udp4 extends SocketType
+  sealed trait udp4
+    extends StObject
+       with SocketType
+  inline def udp4: udp4 = "udp4".asInstanceOf[udp4]
   
   @js.native
-  sealed trait udp6 extends SocketType
+  sealed trait udp6
+    extends StObject
+       with SocketType
+  inline def udp6: udp6 = "udp6".asInstanceOf[udp6]
   
   @js.native
-  sealed trait uncaughtException extends js.Object
+  sealed trait uncaughtException
+    extends StObject
+       with UncaughtExceptionOrigin
+  inline def uncaughtException: uncaughtException = "uncaughtException".asInstanceOf[uncaughtException]
   
   @js.native
-  sealed trait uncompressed extends ECDHKeyFormat
+  sealed trait uncaughtExceptionMonitor extends StObject
+  inline def uncaughtExceptionMonitor: uncaughtExceptionMonitor = "uncaughtExceptionMonitor".asInstanceOf[uncaughtExceptionMonitor]
   
   @js.native
-  sealed trait undefined extends Style
+  sealed trait uncompressed
+    extends StObject
+       with ECDHKeyFormat
+  inline def uncompressed: uncompressed = "uncompressed".asInstanceOf[uncompressed]
   
   @js.native
-  sealed trait unhandledRejection extends js.Object
+  sealed trait undefined
+    extends StObject
+       with Style
+  inline def undefined: undefined = "undefined".asInstanceOf[undefined]
   
   @js.native
-  sealed trait unknownProtocol extends js.Object
+  sealed trait unhandledRejection
+    extends StObject
+       with UncaughtExceptionOrigin
+  inline def unhandledRejection: unhandledRejection = "unhandledRejection".asInstanceOf[unhandledRejection]
   
   @js.native
-  sealed trait unpipe extends js.Object
+  sealed trait unknownProtocol extends StObject
+  inline def unknownProtocol: unknownProtocol = "unknownProtocol".asInstanceOf[unknownProtocol]
   
   @js.native
-  sealed trait upgrade extends js.Object
+  sealed trait unpipe extends StObject
+  inline def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
   
   @js.native
-  sealed trait `utf-8` extends BufferEncoding
+  sealed trait unwrapKey
+    extends StObject
+       with KeyUsage
+  inline def unwrapKey: unwrapKey = "unwrapKey".asInstanceOf[unwrapKey]
+  
+  @js.native
+  sealed trait upgrade extends StObject
+  inline def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
+  
+  @js.native
+  sealed trait `utf-8`
+    extends StObject
+       with BufferEncoding
+       with CharacterEncoding
+       with Encoding
+  inline def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
   
   @js.native
   sealed trait utf16le
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
+       with CharacterEncoding
+       with Encoding
        with TranscodeEncoding
+  inline def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
   
   @js.native
   sealed trait utf8
-    extends BufferEncoding
+    extends StObject
+       with BufferEncoding
+       with CharacterEncoding
+       with Encoding
        with TranscodeEncoding
-       with Utf8AsciiBinaryEncoding
-       with Utf8AsciiLatin1Encoding
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
   
   @js.native
-  sealed trait wantTrailers extends js.Object
+  sealed trait verbatim extends StObject
+  inline def verbatim: verbatim = "verbatim".asInstanceOf[verbatim]
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait verify
+    extends StObject
+       with KeyUsage
+  inline def verify: verify = "verify".asInstanceOf[verify]
   
   @js.native
-  sealed trait win32 extends Platform
+  sealed trait wantTrailers extends StObject
+  inline def wantTrailers: wantTrailers = "wantTrailers".asInstanceOf[wantTrailers]
   
-  @scala.inline
-  def A: A = "A".asInstanceOf[A]
-  @scala.inline
-  def AAAA: AAAA = "AAAA".asInstanceOf[AAAA]
-  @scala.inline
-  def ANY: ANY = "ANY".asInstanceOf[ANY]
-  @scala.inline
-  def BE: BE = "BE".asInstanceOf[BE]
-  @scala.inline
-  def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
-  @scala.inline
-  def CNAME: CNAME = "CNAME".asInstanceOf[CNAME]
-  @scala.inline
-  def ConsoleDotclearMessages: ConsoleDotclearMessages = "Console.clearMessages".asInstanceOf[ConsoleDotclearMessages]
-  @scala.inline
-  def ConsoleDotdisable: ConsoleDotdisable = "Console.disable".asInstanceOf[ConsoleDotdisable]
-  @scala.inline
-  def ConsoleDotenable: ConsoleDotenable = "Console.enable".asInstanceOf[ConsoleDotenable]
-  @scala.inline
-  def ConsoleDotmessageAdded: ConsoleDotmessageAdded = "Console.messageAdded".asInstanceOf[ConsoleDotmessageAdded]
-  @scala.inline
-  def DebuggerDotbreakpointResolved: DebuggerDotbreakpointResolved = "Debugger.breakpointResolved".asInstanceOf[DebuggerDotbreakpointResolved]
-  @scala.inline
-  def DebuggerDotcontinueToLocation: DebuggerDotcontinueToLocation = "Debugger.continueToLocation".asInstanceOf[DebuggerDotcontinueToLocation]
-  @scala.inline
-  def DebuggerDotdisable: DebuggerDotdisable = "Debugger.disable".asInstanceOf[DebuggerDotdisable]
-  @scala.inline
-  def DebuggerDotenable: DebuggerDotenable = "Debugger.enable".asInstanceOf[DebuggerDotenable]
-  @scala.inline
-  def DebuggerDotevaluateOnCallFrame: DebuggerDotevaluateOnCallFrame = "Debugger.evaluateOnCallFrame".asInstanceOf[DebuggerDotevaluateOnCallFrame]
-  @scala.inline
-  def DebuggerDotgetPossibleBreakpoints: DebuggerDotgetPossibleBreakpoints = "Debugger.getPossibleBreakpoints".asInstanceOf[DebuggerDotgetPossibleBreakpoints]
-  @scala.inline
-  def DebuggerDotgetScriptSource: DebuggerDotgetScriptSource = "Debugger.getScriptSource".asInstanceOf[DebuggerDotgetScriptSource]
-  @scala.inline
-  def DebuggerDotgetStackTrace: DebuggerDotgetStackTrace = "Debugger.getStackTrace".asInstanceOf[DebuggerDotgetStackTrace]
-  @scala.inline
-  def DebuggerDotpause: DebuggerDotpause = "Debugger.pause".asInstanceOf[DebuggerDotpause]
-  @scala.inline
-  def DebuggerDotpauseOnAsyncCall: DebuggerDotpauseOnAsyncCall = "Debugger.pauseOnAsyncCall".asInstanceOf[DebuggerDotpauseOnAsyncCall]
-  @scala.inline
-  def DebuggerDotpaused: DebuggerDotpaused = "Debugger.paused".asInstanceOf[DebuggerDotpaused]
-  @scala.inline
-  def DebuggerDotremoveBreakpoint: DebuggerDotremoveBreakpoint = "Debugger.removeBreakpoint".asInstanceOf[DebuggerDotremoveBreakpoint]
-  @scala.inline
-  def DebuggerDotrestartFrame: DebuggerDotrestartFrame = "Debugger.restartFrame".asInstanceOf[DebuggerDotrestartFrame]
-  @scala.inline
-  def DebuggerDotresume: DebuggerDotresume = "Debugger.resume".asInstanceOf[DebuggerDotresume]
-  @scala.inline
-  def DebuggerDotresumed: DebuggerDotresumed = "Debugger.resumed".asInstanceOf[DebuggerDotresumed]
-  @scala.inline
-  def DebuggerDotscheduleStepIntoAsync: DebuggerDotscheduleStepIntoAsync = "Debugger.scheduleStepIntoAsync".asInstanceOf[DebuggerDotscheduleStepIntoAsync]
-  @scala.inline
-  def DebuggerDotscriptFailedToParse: DebuggerDotscriptFailedToParse = "Debugger.scriptFailedToParse".asInstanceOf[DebuggerDotscriptFailedToParse]
-  @scala.inline
-  def DebuggerDotscriptParsed: DebuggerDotscriptParsed = "Debugger.scriptParsed".asInstanceOf[DebuggerDotscriptParsed]
-  @scala.inline
-  def DebuggerDotsearchInContent: DebuggerDotsearchInContent = "Debugger.searchInContent".asInstanceOf[DebuggerDotsearchInContent]
-  @scala.inline
-  def DebuggerDotsetAsyncCallStackDepth: DebuggerDotsetAsyncCallStackDepth = "Debugger.setAsyncCallStackDepth".asInstanceOf[DebuggerDotsetAsyncCallStackDepth]
-  @scala.inline
-  def DebuggerDotsetBlackboxPatterns: DebuggerDotsetBlackboxPatterns = "Debugger.setBlackboxPatterns".asInstanceOf[DebuggerDotsetBlackboxPatterns]
-  @scala.inline
-  def DebuggerDotsetBlackboxedRanges: DebuggerDotsetBlackboxedRanges = "Debugger.setBlackboxedRanges".asInstanceOf[DebuggerDotsetBlackboxedRanges]
-  @scala.inline
-  def DebuggerDotsetBreakpoint: DebuggerDotsetBreakpoint = "Debugger.setBreakpoint".asInstanceOf[DebuggerDotsetBreakpoint]
-  @scala.inline
-  def DebuggerDotsetBreakpointByUrl: DebuggerDotsetBreakpointByUrl = "Debugger.setBreakpointByUrl".asInstanceOf[DebuggerDotsetBreakpointByUrl]
-  @scala.inline
-  def DebuggerDotsetBreakpointsActive: DebuggerDotsetBreakpointsActive = "Debugger.setBreakpointsActive".asInstanceOf[DebuggerDotsetBreakpointsActive]
-  @scala.inline
-  def DebuggerDotsetPauseOnExceptions: DebuggerDotsetPauseOnExceptions = "Debugger.setPauseOnExceptions".asInstanceOf[DebuggerDotsetPauseOnExceptions]
-  @scala.inline
-  def DebuggerDotsetReturnValue: DebuggerDotsetReturnValue = "Debugger.setReturnValue".asInstanceOf[DebuggerDotsetReturnValue]
-  @scala.inline
-  def DebuggerDotsetScriptSource: DebuggerDotsetScriptSource = "Debugger.setScriptSource".asInstanceOf[DebuggerDotsetScriptSource]
-  @scala.inline
-  def DebuggerDotsetSkipAllPauses: DebuggerDotsetSkipAllPauses = "Debugger.setSkipAllPauses".asInstanceOf[DebuggerDotsetSkipAllPauses]
-  @scala.inline
-  def DebuggerDotsetVariableValue: DebuggerDotsetVariableValue = "Debugger.setVariableValue".asInstanceOf[DebuggerDotsetVariableValue]
-  @scala.inline
-  def DebuggerDotstepInto: DebuggerDotstepInto = "Debugger.stepInto".asInstanceOf[DebuggerDotstepInto]
-  @scala.inline
-  def DebuggerDotstepOut: DebuggerDotstepOut = "Debugger.stepOut".asInstanceOf[DebuggerDotstepOut]
-  @scala.inline
-  def DebuggerDotstepOver: DebuggerDotstepOver = "Debugger.stepOver".asInstanceOf[DebuggerDotstepOver]
-  @scala.inline
-  def ERR_ASSERTION: ERR_ASSERTION = "ERR_ASSERTION".asInstanceOf[ERR_ASSERTION]
-  @scala.inline
-  def HeapProfilerDotaddHeapSnapshotChunk: HeapProfilerDotaddHeapSnapshotChunk = "HeapProfiler.addHeapSnapshotChunk".asInstanceOf[HeapProfilerDotaddHeapSnapshotChunk]
-  @scala.inline
-  def HeapProfilerDotaddInspectedHeapObject: HeapProfilerDotaddInspectedHeapObject = "HeapProfiler.addInspectedHeapObject".asInstanceOf[HeapProfilerDotaddInspectedHeapObject]
-  @scala.inline
-  def HeapProfilerDotcollectGarbage: HeapProfilerDotcollectGarbage = "HeapProfiler.collectGarbage".asInstanceOf[HeapProfilerDotcollectGarbage]
-  @scala.inline
-  def HeapProfilerDotdisable: HeapProfilerDotdisable = "HeapProfiler.disable".asInstanceOf[HeapProfilerDotdisable]
-  @scala.inline
-  def HeapProfilerDotenable: HeapProfilerDotenable = "HeapProfiler.enable".asInstanceOf[HeapProfilerDotenable]
-  @scala.inline
-  def HeapProfilerDotgetHeapObjectId: HeapProfilerDotgetHeapObjectId = "HeapProfiler.getHeapObjectId".asInstanceOf[HeapProfilerDotgetHeapObjectId]
-  @scala.inline
-  def HeapProfilerDotgetObjectByHeapObjectId: HeapProfilerDotgetObjectByHeapObjectId = "HeapProfiler.getObjectByHeapObjectId".asInstanceOf[HeapProfilerDotgetObjectByHeapObjectId]
-  @scala.inline
-  def HeapProfilerDotgetSamplingProfile: HeapProfilerDotgetSamplingProfile = "HeapProfiler.getSamplingProfile".asInstanceOf[HeapProfilerDotgetSamplingProfile]
-  @scala.inline
-  def HeapProfilerDotheapStatsUpdate: HeapProfilerDotheapStatsUpdate = "HeapProfiler.heapStatsUpdate".asInstanceOf[HeapProfilerDotheapStatsUpdate]
-  @scala.inline
-  def HeapProfilerDotlastSeenObjectId: HeapProfilerDotlastSeenObjectId = "HeapProfiler.lastSeenObjectId".asInstanceOf[HeapProfilerDotlastSeenObjectId]
-  @scala.inline
-  def HeapProfilerDotreportHeapSnapshotProgress: HeapProfilerDotreportHeapSnapshotProgress = "HeapProfiler.reportHeapSnapshotProgress".asInstanceOf[HeapProfilerDotreportHeapSnapshotProgress]
-  @scala.inline
-  def HeapProfilerDotresetProfiles: HeapProfilerDotresetProfiles = "HeapProfiler.resetProfiles".asInstanceOf[HeapProfilerDotresetProfiles]
-  @scala.inline
-  def HeapProfilerDotstartSampling: HeapProfilerDotstartSampling = "HeapProfiler.startSampling".asInstanceOf[HeapProfilerDotstartSampling]
-  @scala.inline
-  def HeapProfilerDotstartTrackingHeapObjects: HeapProfilerDotstartTrackingHeapObjects = "HeapProfiler.startTrackingHeapObjects".asInstanceOf[HeapProfilerDotstartTrackingHeapObjects]
-  @scala.inline
-  def HeapProfilerDotstopSampling: HeapProfilerDotstopSampling = "HeapProfiler.stopSampling".asInstanceOf[HeapProfilerDotstopSampling]
-  @scala.inline
-  def HeapProfilerDotstopTrackingHeapObjects: HeapProfilerDotstopTrackingHeapObjects = "HeapProfiler.stopTrackingHeapObjects".asInstanceOf[HeapProfilerDotstopTrackingHeapObjects]
-  @scala.inline
-  def HeapProfilerDottakeHeapSnapshot: HeapProfilerDottakeHeapSnapshot = "HeapProfiler.takeHeapSnapshot".asInstanceOf[HeapProfilerDottakeHeapSnapshot]
-  @scala.inline
-  def IPv4: IPv4 = "IPv4".asInstanceOf[IPv4]
-  @scala.inline
-  def IPv6: IPv6 = "IPv6".asInstanceOf[IPv6]
-  @scala.inline
-  def LE: LE = "LE".asInstanceOf[LE]
-  @scala.inline
-  def MX: MX = "MX".asInstanceOf[MX]
-  @scala.inline
-  def NAPTR: NAPTR = "NAPTR".asInstanceOf[NAPTR]
-  @scala.inline
-  def NS: NS = "NS".asInstanceOf[NS]
-  @scala.inline
-  def NodeRuntimeDotnotifyWhenWaitingForDisconnect: NodeRuntimeDotnotifyWhenWaitingForDisconnect = "NodeRuntime.notifyWhenWaitingForDisconnect".asInstanceOf[NodeRuntimeDotnotifyWhenWaitingForDisconnect]
-  @scala.inline
-  def NodeRuntimeDotwaitingForDisconnect: NodeRuntimeDotwaitingForDisconnect = "NodeRuntime.waitingForDisconnect".asInstanceOf[NodeRuntimeDotwaitingForDisconnect]
-  @scala.inline
-  def NodeTracingDotdataCollected: NodeTracingDotdataCollected = "NodeTracing.dataCollected".asInstanceOf[NodeTracingDotdataCollected]
-  @scala.inline
-  def NodeTracingDotgetCategories: NodeTracingDotgetCategories = "NodeTracing.getCategories".asInstanceOf[NodeTracingDotgetCategories]
-  @scala.inline
-  def NodeTracingDotstart: NodeTracingDotstart = "NodeTracing.start".asInstanceOf[NodeTracingDotstart]
-  @scala.inline
-  def NodeTracingDotstop: NodeTracingDotstop = "NodeTracing.stop".asInstanceOf[NodeTracingDotstop]
-  @scala.inline
-  def NodeTracingDottracingComplete: NodeTracingDottracingComplete = "NodeTracing.tracingComplete".asInstanceOf[NodeTracingDottracingComplete]
-  @scala.inline
-  def NodeWorkerDotattachedToWorker: NodeWorkerDotattachedToWorker = "NodeWorker.attachedToWorker".asInstanceOf[NodeWorkerDotattachedToWorker]
-  @scala.inline
-  def NodeWorkerDotdetach: NodeWorkerDotdetach = "NodeWorker.detach".asInstanceOf[NodeWorkerDotdetach]
-  @scala.inline
-  def NodeWorkerDotdetachedFromWorker: NodeWorkerDotdetachedFromWorker = "NodeWorker.detachedFromWorker".asInstanceOf[NodeWorkerDotdetachedFromWorker]
-  @scala.inline
-  def NodeWorkerDotdisable: NodeWorkerDotdisable = "NodeWorker.disable".asInstanceOf[NodeWorkerDotdisable]
-  @scala.inline
-  def NodeWorkerDotenable: NodeWorkerDotenable = "NodeWorker.enable".asInstanceOf[NodeWorkerDotenable]
-  @scala.inline
-  def NodeWorkerDotreceivedMessageFromWorker: NodeWorkerDotreceivedMessageFromWorker = "NodeWorker.receivedMessageFromWorker".asInstanceOf[NodeWorkerDotreceivedMessageFromWorker]
-  @scala.inline
-  def NodeWorkerDotsendMessageToWorker: NodeWorkerDotsendMessageToWorker = "NodeWorker.sendMessageToWorker".asInstanceOf[NodeWorkerDotsendMessageToWorker]
-  @scala.inline
-  def OCSPRequest: OCSPRequest = "OCSPRequest".asInstanceOf[OCSPRequest]
-  @scala.inline
-  def OCSPResponse: OCSPResponse = "OCSPResponse".asInstanceOf[OCSPResponse]
-  @scala.inline
-  def PTR: PTR = "PTR".asInstanceOf[PTR]
-  @scala.inline
-  def ProfilerDotconsoleProfileFinished: ProfilerDotconsoleProfileFinished = "Profiler.consoleProfileFinished".asInstanceOf[ProfilerDotconsoleProfileFinished]
-  @scala.inline
-  def ProfilerDotconsoleProfileStarted: ProfilerDotconsoleProfileStarted = "Profiler.consoleProfileStarted".asInstanceOf[ProfilerDotconsoleProfileStarted]
-  @scala.inline
-  def ProfilerDotdisable: ProfilerDotdisable = "Profiler.disable".asInstanceOf[ProfilerDotdisable]
-  @scala.inline
-  def ProfilerDotenable: ProfilerDotenable = "Profiler.enable".asInstanceOf[ProfilerDotenable]
-  @scala.inline
-  def ProfilerDotgetBestEffortCoverage: ProfilerDotgetBestEffortCoverage = "Profiler.getBestEffortCoverage".asInstanceOf[ProfilerDotgetBestEffortCoverage]
-  @scala.inline
-  def ProfilerDotsetSamplingInterval: ProfilerDotsetSamplingInterval = "Profiler.setSamplingInterval".asInstanceOf[ProfilerDotsetSamplingInterval]
-  @scala.inline
-  def ProfilerDotstart: ProfilerDotstart = "Profiler.start".asInstanceOf[ProfilerDotstart]
-  @scala.inline
-  def ProfilerDotstartPreciseCoverage: ProfilerDotstartPreciseCoverage = "Profiler.startPreciseCoverage".asInstanceOf[ProfilerDotstartPreciseCoverage]
-  @scala.inline
-  def ProfilerDotstartTypeProfile: ProfilerDotstartTypeProfile = "Profiler.startTypeProfile".asInstanceOf[ProfilerDotstartTypeProfile]
-  @scala.inline
-  def ProfilerDotstop: ProfilerDotstop = "Profiler.stop".asInstanceOf[ProfilerDotstop]
-  @scala.inline
-  def ProfilerDotstopPreciseCoverage: ProfilerDotstopPreciseCoverage = "Profiler.stopPreciseCoverage".asInstanceOf[ProfilerDotstopPreciseCoverage]
-  @scala.inline
-  def ProfilerDotstopTypeProfile: ProfilerDotstopTypeProfile = "Profiler.stopTypeProfile".asInstanceOf[ProfilerDotstopTypeProfile]
-  @scala.inline
-  def ProfilerDottakePreciseCoverage: ProfilerDottakePreciseCoverage = "Profiler.takePreciseCoverage".asInstanceOf[ProfilerDottakePreciseCoverage]
-  @scala.inline
-  def ProfilerDottakeTypeProfile: ProfilerDottakeTypeProfile = "Profiler.takeTypeProfile".asInstanceOf[ProfilerDottakeTypeProfile]
-  @scala.inline
-  def RuntimeDotawaitPromise: RuntimeDotawaitPromise = "Runtime.awaitPromise".asInstanceOf[RuntimeDotawaitPromise]
-  @scala.inline
-  def RuntimeDotcallFunctionOn: RuntimeDotcallFunctionOn = "Runtime.callFunctionOn".asInstanceOf[RuntimeDotcallFunctionOn]
-  @scala.inline
-  def RuntimeDotcompileScript: RuntimeDotcompileScript = "Runtime.compileScript".asInstanceOf[RuntimeDotcompileScript]
-  @scala.inline
-  def RuntimeDotconsoleAPICalled: RuntimeDotconsoleAPICalled = "Runtime.consoleAPICalled".asInstanceOf[RuntimeDotconsoleAPICalled]
-  @scala.inline
-  def RuntimeDotdisable: RuntimeDotdisable = "Runtime.disable".asInstanceOf[RuntimeDotdisable]
-  @scala.inline
-  def RuntimeDotdiscardConsoleEntries: RuntimeDotdiscardConsoleEntries = "Runtime.discardConsoleEntries".asInstanceOf[RuntimeDotdiscardConsoleEntries]
-  @scala.inline
-  def RuntimeDotenable: RuntimeDotenable = "Runtime.enable".asInstanceOf[RuntimeDotenable]
-  @scala.inline
-  def RuntimeDotevaluate: RuntimeDotevaluate = "Runtime.evaluate".asInstanceOf[RuntimeDotevaluate]
-  @scala.inline
-  def RuntimeDotexceptionRevoked: RuntimeDotexceptionRevoked = "Runtime.exceptionRevoked".asInstanceOf[RuntimeDotexceptionRevoked]
-  @scala.inline
-  def RuntimeDotexceptionThrown: RuntimeDotexceptionThrown = "Runtime.exceptionThrown".asInstanceOf[RuntimeDotexceptionThrown]
-  @scala.inline
-  def RuntimeDotexecutionContextCreated: RuntimeDotexecutionContextCreated = "Runtime.executionContextCreated".asInstanceOf[RuntimeDotexecutionContextCreated]
-  @scala.inline
-  def RuntimeDotexecutionContextDestroyed: RuntimeDotexecutionContextDestroyed = "Runtime.executionContextDestroyed".asInstanceOf[RuntimeDotexecutionContextDestroyed]
-  @scala.inline
-  def RuntimeDotexecutionContextsCleared: RuntimeDotexecutionContextsCleared = "Runtime.executionContextsCleared".asInstanceOf[RuntimeDotexecutionContextsCleared]
-  @scala.inline
-  def RuntimeDotgetProperties: RuntimeDotgetProperties = "Runtime.getProperties".asInstanceOf[RuntimeDotgetProperties]
-  @scala.inline
-  def RuntimeDotglobalLexicalScopeNames: RuntimeDotglobalLexicalScopeNames = "Runtime.globalLexicalScopeNames".asInstanceOf[RuntimeDotglobalLexicalScopeNames]
-  @scala.inline
-  def RuntimeDotinspectRequested: RuntimeDotinspectRequested = "Runtime.inspectRequested".asInstanceOf[RuntimeDotinspectRequested]
-  @scala.inline
-  def RuntimeDotqueryObjects: RuntimeDotqueryObjects = "Runtime.queryObjects".asInstanceOf[RuntimeDotqueryObjects]
-  @scala.inline
-  def RuntimeDotreleaseObject: RuntimeDotreleaseObject = "Runtime.releaseObject".asInstanceOf[RuntimeDotreleaseObject]
-  @scala.inline
-  def RuntimeDotreleaseObjectGroup: RuntimeDotreleaseObjectGroup = "Runtime.releaseObjectGroup".asInstanceOf[RuntimeDotreleaseObjectGroup]
-  @scala.inline
-  def RuntimeDotrunIfWaitingForDebugger: RuntimeDotrunIfWaitingForDebugger = "Runtime.runIfWaitingForDebugger".asInstanceOf[RuntimeDotrunIfWaitingForDebugger]
-  @scala.inline
-  def RuntimeDotrunScript: RuntimeDotrunScript = "Runtime.runScript".asInstanceOf[RuntimeDotrunScript]
-  @scala.inline
-  def RuntimeDotsetCustomObjectFormatterEnabled: RuntimeDotsetCustomObjectFormatterEnabled = "Runtime.setCustomObjectFormatterEnabled".asInstanceOf[RuntimeDotsetCustomObjectFormatterEnabled]
-  @scala.inline
-  def SIGABRT: SIGABRT = "SIGABRT".asInstanceOf[SIGABRT]
-  @scala.inline
-  def SIGALRM: SIGALRM = "SIGALRM".asInstanceOf[SIGALRM]
-  @scala.inline
-  def SIGBREAK: SIGBREAK = "SIGBREAK".asInstanceOf[SIGBREAK]
-  @scala.inline
-  def SIGBUS: SIGBUS = "SIGBUS".asInstanceOf[SIGBUS]
-  @scala.inline
-  def SIGCHLD: SIGCHLD = "SIGCHLD".asInstanceOf[SIGCHLD]
-  @scala.inline
-  def SIGCONT: SIGCONT = "SIGCONT".asInstanceOf[SIGCONT]
-  @scala.inline
-  def SIGFPE: SIGFPE = "SIGFPE".asInstanceOf[SIGFPE]
-  @scala.inline
-  def SIGHUP: SIGHUP = "SIGHUP".asInstanceOf[SIGHUP]
-  @scala.inline
-  def SIGILL: SIGILL = "SIGILL".asInstanceOf[SIGILL]
-  @scala.inline
-  def SIGINFO: SIGINFO = "SIGINFO".asInstanceOf[SIGINFO]
-  @scala.inline
-  def SIGINT: SIGINT = "SIGINT".asInstanceOf[SIGINT]
-  @scala.inline
-  def SIGIO: SIGIO = "SIGIO".asInstanceOf[SIGIO]
-  @scala.inline
-  def SIGIOT: SIGIOT = "SIGIOT".asInstanceOf[SIGIOT]
-  @scala.inline
-  def SIGKILL: SIGKILL = "SIGKILL".asInstanceOf[SIGKILL]
-  @scala.inline
-  def SIGLOST: SIGLOST = "SIGLOST".asInstanceOf[SIGLOST]
-  @scala.inline
-  def SIGPIPE: SIGPIPE = "SIGPIPE".asInstanceOf[SIGPIPE]
-  @scala.inline
-  def SIGPOLL: SIGPOLL = "SIGPOLL".asInstanceOf[SIGPOLL]
-  @scala.inline
-  def SIGPROF: SIGPROF = "SIGPROF".asInstanceOf[SIGPROF]
-  @scala.inline
-  def SIGPWR: SIGPWR = "SIGPWR".asInstanceOf[SIGPWR]
-  @scala.inline
-  def SIGQUIT: SIGQUIT = "SIGQUIT".asInstanceOf[SIGQUIT]
-  @scala.inline
-  def SIGSEGV: SIGSEGV = "SIGSEGV".asInstanceOf[SIGSEGV]
-  @scala.inline
-  def SIGSTKFLT: SIGSTKFLT = "SIGSTKFLT".asInstanceOf[SIGSTKFLT]
-  @scala.inline
-  def SIGSTOP: SIGSTOP = "SIGSTOP".asInstanceOf[SIGSTOP]
-  @scala.inline
-  def SIGSYS: SIGSYS = "SIGSYS".asInstanceOf[SIGSYS]
-  @scala.inline
-  def SIGTERM: SIGTERM = "SIGTERM".asInstanceOf[SIGTERM]
-  @scala.inline
-  def SIGTRAP: SIGTRAP = "SIGTRAP".asInstanceOf[SIGTRAP]
-  @scala.inline
-  def SIGTSTP: SIGTSTP = "SIGTSTP".asInstanceOf[SIGTSTP]
-  @scala.inline
-  def SIGTTIN: SIGTTIN = "SIGTTIN".asInstanceOf[SIGTTIN]
-  @scala.inline
-  def SIGTTOU: SIGTTOU = "SIGTTOU".asInstanceOf[SIGTTOU]
-  @scala.inline
-  def SIGUNUSED: SIGUNUSED = "SIGUNUSED".asInstanceOf[SIGUNUSED]
-  @scala.inline
-  def SIGURG: SIGURG = "SIGURG".asInstanceOf[SIGURG]
-  @scala.inline
-  def SIGUSR1: SIGUSR1 = "SIGUSR1".asInstanceOf[SIGUSR1]
-  @scala.inline
-  def SIGUSR2: SIGUSR2 = "SIGUSR2".asInstanceOf[SIGUSR2]
-  @scala.inline
-  def SIGVTALRM: SIGVTALRM = "SIGVTALRM".asInstanceOf[SIGVTALRM]
-  @scala.inline
-  def SIGWINCH: SIGWINCH = "SIGWINCH".asInstanceOf[SIGWINCH]
-  @scala.inline
-  def SIGXCPU: SIGXCPU = "SIGXCPU".asInstanceOf[SIGXCPU]
-  @scala.inline
-  def SIGXFSZ: SIGXFSZ = "SIGXFSZ".asInstanceOf[SIGXFSZ]
-  @scala.inline
-  def SOA: SOA = "SOA".asInstanceOf[SOA]
-  @scala.inline
-  def SRV: SRV = "SRV".asInstanceOf[SRV]
-  @scala.inline
-  def SchemaDotgetDomains: SchemaDotgetDomains = "Schema.getDomains".asInstanceOf[SchemaDotgetDomains]
-  @scala.inline
-  def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
-  @scala.inline
-  def TLSv1Dot1: TLSv1Dot1 = "TLSv1.1".asInstanceOf[TLSv1Dot1]
-  @scala.inline
-  def TLSv1Dot2: TLSv1Dot2 = "TLSv1.2".asInstanceOf[TLSv1Dot2]
-  @scala.inline
-  def TLSv1Dot3: TLSv1Dot3 = "TLSv1.3".asInstanceOf[TLSv1Dot3]
-  @scala.inline
-  def TXT: TXT = "TXT".asInstanceOf[TXT]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def abort: abort = "abort".asInstanceOf[abort]
-  @scala.inline
-  def aborted: aborted = "aborted".asInstanceOf[aborted]
-  @scala.inline
-  def advanced: advanced = "advanced".asInstanceOf[advanced]
-  @scala.inline
-  def `aes-128-ccm`: `aes-128-ccm` = "aes-128-ccm".asInstanceOf[`aes-128-ccm`]
-  @scala.inline
-  def `aes-128-gcm`: `aes-128-gcm` = "aes-128-gcm".asInstanceOf[`aes-128-gcm`]
-  @scala.inline
-  def `aes-192-ccm`: `aes-192-ccm` = "aes-192-ccm".asInstanceOf[`aes-192-ccm`]
-  @scala.inline
-  def `aes-192-gcm`: `aes-192-gcm` = "aes-192-gcm".asInstanceOf[`aes-192-gcm`]
-  @scala.inline
-  def `aes-256-ccm`: `aes-256-ccm` = "aes-256-ccm".asInstanceOf[`aes-256-ccm`]
-  @scala.inline
-  def `aes-256-gcm`: `aes-256-gcm` = "aes-256-gcm".asInstanceOf[`aes-256-gcm`]
-  @scala.inline
-  def aix: aix = "aix".asInstanceOf[aix]
-  @scala.inline
-  def altsvc: altsvc = "altsvc".asInstanceOf[altsvc]
-  @scala.inline
-  def android: android = "android".asInstanceOf[android]
-  @scala.inline
-  def ascii: ascii = "ascii".asInstanceOf[ascii]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def beforeExit: beforeExit = "beforeExit".asInstanceOf[beforeExit]
-  @scala.inline
-  def bigint: bigint = "bigint".asInstanceOf[bigint]
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def buffer_ : buffer_ = "buffer".asInstanceOf[buffer_]
-  @scala.inline
-  def `chacha20-poly1305`: `chacha20-poly1305` = "chacha20-poly1305".asInstanceOf[`chacha20-poly1305`]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def checkContinue: checkContinue = "checkContinue".asInstanceOf[checkContinue]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def compressed: compressed = "compressed".asInstanceOf[compressed]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def connection: connection = "connection".asInstanceOf[connection]
-  @scala.inline
-  def continue: continue = "continue".asInstanceOf[continue]
-  @scala.inline
-  def cygwin: cygwin = "cygwin".asInstanceOf[cygwin]
-  @scala.inline
-  def darwin: darwin = "darwin".asInstanceOf[darwin]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def der: der = "der".asInstanceOf[der]
-  @scala.inline
-  def dir: dir = "dir".asInstanceOf[dir]
-  @scala.inline
-  def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
-  @scala.inline
-  def drain: drain = "drain".asInstanceOf[drain]
-  @scala.inline
-  def dsa: dsa = "dsa".asInstanceOf[dsa]
-  @scala.inline
-  def ec: ec = "ec".asInstanceOf[ec]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def exit: exit = "exit".asInstanceOf[exit]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def finish: finish = "finish".asInstanceOf[finish]
-  @scala.inline
-  def fork: fork = "fork".asInstanceOf[fork]
-  @scala.inline
-  def frameError: frameError = "frameError".asInstanceOf[frameError]
-  @scala.inline
-  def freebsd: freebsd = "freebsd".asInstanceOf[freebsd]
-  @scala.inline
-  def function: function = "function".asInstanceOf[function]
-  @scala.inline
-  def gc: gc = "gc".asInstanceOf[gc]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def goaway: goaway = "goaway".asInstanceOf[goaway]
-  @scala.inline
-  def headers: headers = "headers".asInstanceOf[headers]
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
-  @scala.inline
-  def http: http = "http".asInstanceOf[http]
-  @scala.inline
-  def http2: http2 = "http2".asInstanceOf[http2]
-  @scala.inline
-  def httpColon: httpColon = "http:".asInstanceOf[httpColon]
-  @scala.inline
-  def httpsColon: httpsColon = "https:".asInstanceOf[httpsColon]
-  @scala.inline
-  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
-  @scala.inline
-  def information: information = "information".asInstanceOf[information]
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def inspectorNotification: inspectorNotification = "inspectorNotification".asInstanceOf[inspectorNotification]
-  @scala.inline
-  def ipc: ipc = "ipc".asInstanceOf[ipc]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def junction: junction = "junction".asInstanceOf[junction]
-  @scala.inline
-  def keylog: keylog = "keylog".asInstanceOf[keylog]
-  @scala.inline
-  def latin1: latin1 = "latin1".asInstanceOf[latin1]
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
-  @scala.inline
-  def linux: linux = "linux".asInstanceOf[linux]
-  @scala.inline
-  def listening: listening = "listening".asInstanceOf[listening]
-  @scala.inline
-  def localSettings: localSettings = "localSettings".asInstanceOf[localSettings]
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
-  @scala.inline
-  def mark: mark = "mark".asInstanceOf[mark]
-  @scala.inline
-  def measure: measure = "measure".asInstanceOf[measure]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def module: module = "module".asInstanceOf[module]
-  @scala.inline
-  def multipleResolves: multipleResolves = "multipleResolves".asInstanceOf[multipleResolves]
-  @scala.inline
-  def netbsd: netbsd = "netbsd".asInstanceOf[netbsd]
-  @scala.inline
-  def newListener: newListener = "newListener".asInstanceOf[newListener]
-  @scala.inline
-  def newSession: newSession = "newSession".asInstanceOf[newSession]
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def online: online = "online".asInstanceOf[online]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def openbsd: openbsd = "openbsd".asInstanceOf[openbsd]
-  @scala.inline
-  def origin: origin = "origin".asInstanceOf[origin]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def pem: pem = "pem".asInstanceOf[pem]
-  @scala.inline
-  def ping: ping = "ping".asInstanceOf[ping]
-  @scala.inline
-  def pipe: pipe = "pipe".asInstanceOf[pipe]
-  @scala.inline
-  def pkcs1: pkcs1 = "pkcs1".asInstanceOf[pkcs1]
-  @scala.inline
-  def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
-  @scala.inline
-  def `private`: `private` = "private".asInstanceOf[`private`]
-  @scala.inline
-  def public: public = "public".asInstanceOf[public]
-  @scala.inline
-  def push: push = "push".asInstanceOf[push]
-  @scala.inline
-  def readable: readable = "readable".asInstanceOf[readable]
-  @scala.inline
-  def regexp: regexp = "regexp".asInstanceOf[regexp]
-  @scala.inline
-  def reject: reject = "reject".asInstanceOf[reject]
-  @scala.inline
-  def rejectionHandled: rejectionHandled = "rejectionHandled".asInstanceOf[rejectionHandled]
-  @scala.inline
-  def remoteSettings: remoteSettings = "remoteSettings".asInstanceOf[remoteSettings]
-  @scala.inline
-  def removeListener: removeListener = "removeListener".asInstanceOf[removeListener]
-  @scala.inline
-  def request: request = "request".asInstanceOf[request]
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def resolve: resolve = "resolve".asInstanceOf[resolve]
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
-  @scala.inline
-  def resume: resume = "resume".asInstanceOf[resume]
-  @scala.inline
-  def resumeSession: resumeSession = "resumeSession".asInstanceOf[resumeSession]
-  @scala.inline
-  def rsa: rsa = "rsa".asInstanceOf[rsa]
-  @scala.inline
-  def sec1: sec1 = "sec1".asInstanceOf[sec1]
-  @scala.inline
-  def secret: secret = "secret".asInstanceOf[secret]
-  @scala.inline
-  def secureConnect: secureConnect = "secureConnect".asInstanceOf[secureConnect]
-  @scala.inline
-  def secureConnection: secureConnection = "secureConnection".asInstanceOf[secureConnection]
-  @scala.inline
-  def session: session = "session".asInstanceOf[session]
-  @scala.inline
-  def sessionError: sessionError = "sessionError".asInstanceOf[sessionError]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
-  def setup: setup = "setup".asInstanceOf[setup]
-  @scala.inline
-  def socket: socket = "socket".asInstanceOf[socket]
-  @scala.inline
-  def special: special = "special".asInstanceOf[special]
-  @scala.inline
-  def spki: spki = "spki".asInstanceOf[spki]
-  @scala.inline
-  def stream: stream = "stream".asInstanceOf[stream]
-  @scala.inline
-  def streamClosed: streamClosed = "streamClosed".asInstanceOf[streamClosed]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def sunos: sunos = "sunos".asInstanceOf[sunos]
-  @scala.inline
-  def symbol: symbol = "symbol".asInstanceOf[symbol]
-  @scala.inline
-  def timeout: timeout = "timeout".asInstanceOf[timeout]
-  @scala.inline
-  def tlsClientError: tlsClientError = "tlsClientError".asInstanceOf[tlsClientError]
-  @scala.inline
-  def trailers: trailers = "trailers".asInstanceOf[trailers]
-  @scala.inline
-  def `ucs-2`: `ucs-2` = "ucs-2".asInstanceOf[`ucs-2`]
-  @scala.inline
-  def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
-  @scala.inline
-  def udp4: udp4 = "udp4".asInstanceOf[udp4]
-  @scala.inline
-  def udp6: udp6 = "udp6".asInstanceOf[udp6]
-  @scala.inline
-  def uncaughtException: uncaughtException = "uncaughtException".asInstanceOf[uncaughtException]
-  @scala.inline
-  def uncompressed: uncompressed = "uncompressed".asInstanceOf[uncompressed]
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
-  @scala.inline
-  def unhandledRejection: unhandledRejection = "unhandledRejection".asInstanceOf[unhandledRejection]
-  @scala.inline
-  def unknownProtocol: unknownProtocol = "unknownProtocol".asInstanceOf[unknownProtocol]
-  @scala.inline
-  def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
-  @scala.inline
-  def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
-  @scala.inline
-  def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
-  @scala.inline
-  def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
-  @scala.inline
-  def wantTrailers: wantTrailers = "wantTrailers".asInstanceOf[wantTrailers]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
-  @scala.inline
-  def win32: win32 = "win32".asInstanceOf[win32]
+  @js.native
+  sealed trait warning extends StObject
+  inline def warning: warning = "warning".asInstanceOf[warning]
+  
+  @js.native
+  sealed trait win32
+    extends StObject
+       with Platform
+  inline def win32: win32 = "win32".asInstanceOf[win32]
+  
+  @js.native
+  sealed trait worker extends StObject
+  inline def worker: worker = "worker".asInstanceOf[worker]
+  
+  @js.native
+  sealed trait wrap
+    extends StObject
+       with CipherMode
+  inline def wrap: wrap = "wrap".asInstanceOf[wrap]
+  
+  @js.native
+  sealed trait wrapKey
+    extends StObject
+       with KeyUsage
+  inline def wrapKey: wrapKey = "wrapKey".asInstanceOf[wrapKey]
+  
+  @js.native
+  sealed trait writeOnly
+    extends StObject
+       with SocketReadyState
+  inline def writeOnly: writeOnly = "writeOnly".asInstanceOf[writeOnly]
+  
+  @js.native
+  sealed trait x25519
+    extends StObject
+       with KeyType
+  inline def x25519: x25519 = "x25519".asInstanceOf[x25519]
+  
+  @js.native
+  sealed trait x448
+    extends StObject
+       with KeyType
+  inline def x448: x448 = "x448".asInstanceOf[x448]
+  
+  @js.native
+  sealed trait x64
+    extends StObject
+       with Architecture
+  inline def x64: x64 = "x64".asInstanceOf[x64]
+  
+  @js.native
+  sealed trait xts
+    extends StObject
+       with CipherMode
+  inline def xts: xts = "xts".asInstanceOf[xts]
 }
-

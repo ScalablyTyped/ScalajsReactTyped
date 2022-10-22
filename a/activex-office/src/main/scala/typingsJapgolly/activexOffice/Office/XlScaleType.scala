@@ -1,23 +1,19 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-4132`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-4133`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-4132`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-4133`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-4132`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-4133`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-4132`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-4133`
 */
-trait XlScaleType extends js.Object
-
+trait XlScaleType extends StObject
 object XlScaleType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlScaleLinear: `-4132` = this.cast(-4132)
-  @scala.inline
-  def xlScaleLogarithmic: `-4133` = this.cast(-4133)
+  
+  inline def xlScaleLinear: `-4132` = -4132.asInstanceOf[`-4132`]
+  
+  inline def xlScaleLogarithmic: `-4133` = -4133.asInstanceOf[`-4133`]
 }
-

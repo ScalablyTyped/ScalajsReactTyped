@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.FontWeightProperty
+import typingsJapgolly.csstype.mod.Property.FontWeight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FontWeightProps extends js.Object {
-  val fontWeight: js.UndefOr[ResponsiveValue[FontWeightProperty | AliasKey]] = js.undefined
+trait FontWeightProps extends StObject {
+  
+  val fontWeight: js.UndefOr[ResponsiveValue[FontWeight | AliasKey]] = js.undefined
 }
-
 object FontWeightProps {
-  @scala.inline
-  def apply(fontWeight: ResponsiveValue[FontWeightProperty | AliasKey] = null): FontWeightProps = {
+  
+  inline def apply(): FontWeightProps = {
     val __obj = js.Dynamic.literal()
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontWeightProps]
   }
+  
+  extension [Self <: FontWeightProps](x: Self) {
+    
+    inline def setFontWeight(value: ResponsiveValue[FontWeight | AliasKey]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    
+    inline def setFontWeightVarargs(value: (FontWeight | AliasKey)*): Self = StObject.set(x, "fontWeight", js.Array(value*))
+  }
 }
-

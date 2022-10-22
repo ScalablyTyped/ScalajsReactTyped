@@ -1,7 +1,7 @@
 
 # Scala.js typings for babel-jest
 
-Typings are for version 24.9.0
+Typings are for version 29.2.0
 
 ## Library description:
 Jest plugin to use babel for transformation.
@@ -10,10 +10,10 @@ Jest plugin to use babel for transformation.
 | ------------------ | :-------------: |
 | Full name          | babel-jest |
 | Keywords           | - |
-| # releases         | 59 |
-| # dependents       | 3802 |
-| # downloads        | 258209711 |
-| # stars            | 5 |
+| # releases         | 74 |
+| # dependents       | 0.0 |
+| # downloads        | 8.227884666666667E7 |
+| # stars            | 40355.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

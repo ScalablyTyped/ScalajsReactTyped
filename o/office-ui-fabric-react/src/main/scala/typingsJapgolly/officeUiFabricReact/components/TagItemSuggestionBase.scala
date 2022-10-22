@@ -1,13 +1,17 @@
 package typingsJapgolly.officeUiFabricReact.components
 
+import typingsJapgolly.officeUiFabricReact.libComponentsPickersTagPickerTagPickerDottypesMod.ITagItemSuggestionProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object TagItemSuggestionBase extends SharedApply_ITagItemSuggestionProps1999237261 {
+object TagItemSuggestionBase {
+  
   @JSImport("office-ui-fabric-react", "TagItemSuggestionBase")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: TagItemSuggestionBase.type): SharedBuilder_ITagItemSuggestionProps1155745662 = new SharedBuilder_ITagItemSuggestionProps1155745662(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ITagItemSuggestionProps): SharedBuilder_ITagItemSuggestionProps1155745662 = new SharedBuilder_ITagItemSuggestionProps1155745662(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

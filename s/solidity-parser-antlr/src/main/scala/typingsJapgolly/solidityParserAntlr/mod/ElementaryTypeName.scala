@@ -1,31 +1,32 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.solidityParserAntlr.mod.ASTNode because Already inherited */ trait ElementaryTypeName
-  extends TypeName
-     with BaseASTNode {
+trait ElementaryTypeName
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with TypeName {
+  
   var name: String
+  
   @JSName("type")
   var type_ElementaryTypeName: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeName
 }
-
 object ElementaryTypeName {
-  @scala.inline
-  def apply(
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeName,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ElementaryTypeName = {
+  
+  inline def apply(name: String): ElementaryTypeName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ElementaryTypeName")
     __obj.asInstanceOf[ElementaryTypeName]
   }
+  
+  extension [Self <: ElementaryTypeName](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,18 +1,51 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.MappedDataFields")
-@js.native
-class MappedDataFields protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.MappedDataFields_typekey")
-  var WordDotMappedDataFields_typekey: MappedDataFields = js.native
-  def Item(Index: WdMappedDataFields): MappedDataField = js.native
+trait MappedDataFields extends StObject {
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  val Count: Double
+  
+  val Creator: Double
+  
+  def Item(Index: WdMappedDataFields): MappedDataField
+  
+  val Parent: Any
+  
+  /* private */ @JSName("Word.MappedDataFields_typekey")
+  var WordDotMappedDataFields_typekey: MappedDataFields
 }
-
+object MappedDataFields {
+  
+  inline def apply(
+    Application: Application,
+    Count: Double,
+    Creator: Double,
+    Item: WdMappedDataFields => MappedDataField,
+    Parent: Any,
+    WordDotMappedDataFields_typekey: MappedDataFields
+  ): MappedDataFields = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.MappedDataFields_typekey")(WordDotMappedDataFields_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MappedDataFields]
+  }
+  
+  extension [Self <: MappedDataFields](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setItem(value: WdMappedDataFields => MappedDataField): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotMappedDataFields_typekey(value: MappedDataFields): Self = StObject.set(x, "Word.MappedDataFields_typekey", value.asInstanceOf[js.Any])
+  }
+}

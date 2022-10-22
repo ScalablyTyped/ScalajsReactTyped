@@ -1,41 +1,32 @@
 package typingsJapgolly.minappEnv.DB
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LOGIC_COMMANDS_LITERAL extends js.Object
-
+sealed trait LOGIC_COMMANDS_LITERAL extends StObject
 @JSGlobal("DB.LOGIC_COMMANDS_LITERAL")
 @js.native
-object LOGIC_COMMANDS_LITERAL extends js.Object {
-  @js.native
-  sealed trait AND extends LOGIC_COMMANDS_LITERAL
+object LOGIC_COMMANDS_LITERAL extends StObject {
   
   @js.native
-  sealed trait NOR extends LOGIC_COMMANDS_LITERAL
+  sealed trait AND
+    extends StObject
+       with LOGIC_COMMANDS_LITERAL
   
   @js.native
-  sealed trait NOT extends LOGIC_COMMANDS_LITERAL
+  sealed trait NOR
+    extends StObject
+       with LOGIC_COMMANDS_LITERAL
   
   @js.native
-  sealed trait OR extends LOGIC_COMMANDS_LITERAL
+  sealed trait NOT
+    extends StObject
+       with LOGIC_COMMANDS_LITERAL
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[LOGIC_COMMANDS_LITERAL with String] = js.native
-  /* "and" */ @js.native
-  object AND extends TopLevel[AND with String]
-  
-  /* "nor" */ @js.native
-  object NOR extends TopLevel[NOR with String]
-  
-  /* "not" */ @js.native
-  object NOT extends TopLevel[NOT with String]
-  
-  /* "or" */ @js.native
-  object OR extends TopLevel[OR with String]
-  
+  @js.native
+  sealed trait OR
+    extends StObject
+       with LOGIC_COMMANDS_LITERAL
 }
-

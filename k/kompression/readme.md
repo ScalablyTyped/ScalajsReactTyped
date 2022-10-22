@@ -10,10 +10,10 @@ koa compression middleware
 | ------------------ | :-------------: |
 | Full name          | kompression |
 | Keywords           | koa, compression, middleware, brotli, gzip, inflate |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 8928 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 302.6666666666667 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/tuananh/kompression)

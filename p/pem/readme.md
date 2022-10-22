@@ -10,10 +10,10 @@ Create private keys and certificates with node.js and io.js
 | ------------------ | :-------------: |
 | Full name          | pem |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 225 |
-| # downloads        | 5157373 |
-| # stars            | 19 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 801624.3333333334 |
+| # stars            | 538.0 |
 
 ## Links
 - [Homepage](https://github.com/Dexus/pem#readme)

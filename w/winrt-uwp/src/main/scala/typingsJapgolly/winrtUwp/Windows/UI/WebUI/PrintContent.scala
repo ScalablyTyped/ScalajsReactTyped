@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.UI.WebUI
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintContent extends js.Object
-
+sealed trait PrintContent extends StObject
 /** Specifies the content that HtmlPrintDocumentSource.content prints. */
 @JSGlobal("Windows.UI.WebUI.PrintContent")
 @js.native
-object PrintContent extends js.Object {
+object PrintContent extends StObject {
+  
   /** Print all pages. */
   @js.native
-  sealed trait allPages extends PrintContent
+  sealed trait allPages
+    extends StObject
+       with PrintContent
   
   /** Print the current page. */
   @js.native
-  sealed trait currentPage extends PrintContent
+  sealed trait currentPage
+    extends StObject
+       with PrintContent
   
   /** Print the current selection of pages. */
   @js.native
-  sealed trait currentSelection extends PrintContent
+  sealed trait currentSelection
+    extends StObject
+       with PrintContent
   
   /** Print a custom page range. */
   @js.native
-  sealed trait customPageRange extends PrintContent
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PrintContent with Double] = js.native
-  /* 0 */ @js.native
-  object allPages extends TopLevel[allPages with Double]
-  
-  /* 1 */ @js.native
-  object currentPage extends TopLevel[currentPage with Double]
-  
-  /* 3 */ @js.native
-  object currentSelection extends TopLevel[currentSelection with Double]
-  
-  /* 2 */ @js.native
-  object customPageRange extends TopLevel[customPageRange with Double]
-  
+  sealed trait customPageRange
+    extends StObject
+       with PrintContent
 }
-

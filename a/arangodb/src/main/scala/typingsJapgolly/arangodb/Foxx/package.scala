@@ -1,21 +1,19 @@
-package typingsJapgolly.arangodb
+package typingsJapgolly.arangodb.Foxx
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Foxx {
-  type Handler = js.Function2[
-    /* req */ typingsJapgolly.arangodb.Foxx.Request, 
-    /* res */ typingsJapgolly.arangodb.Foxx.Response, 
-    scala.Unit
-  ]
-  type Middleware = typingsJapgolly.arangodb.Foxx.SimpleMiddleware | typingsJapgolly.arangodb.Foxx.DelegateMiddleware
-  type NextFunction = js.Function0[scala.Unit]
-  type SimpleMiddleware = js.Function3[
-    /* req */ typingsJapgolly.arangodb.Foxx.Request, 
-    /* res */ typingsJapgolly.arangodb.Foxx.Response, 
-    /* next */ typingsJapgolly.arangodb.Foxx.NextFunction, 
-    scala.Unit
-  ]
-}
+
+type Configuration = StringDictionary[Any]
+
+type Dependencies = StringDictionary[Any]
+
+type Handler = js.Function2[/* req */ Request, /* res */ Response, Unit]
+
+type Middleware = SimpleMiddleware | DelegateMiddleware
+
+type NextFunction = js.Function0[Unit]
+
+type SimpleMiddleware = js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Unit]

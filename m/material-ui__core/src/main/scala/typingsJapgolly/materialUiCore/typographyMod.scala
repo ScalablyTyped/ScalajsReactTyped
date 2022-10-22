@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.typographyTypographyMod.TypographyProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.span
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import typingsJapgolly.materialUiCore.typographyTypographyMod.TypographyTypeMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Typography", JSImport.Namespace)
-@js.native
-object typographyMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[TypographyProps, ComponentState, js.Any] {
-    def this(props: TypographyProps) = this()
-    def this(props: TypographyProps, context: js.Any) = this()
-  }
+object typographyMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Breadcrumbs](https://mui.com/components/breadcrumbs/)
+    * - [Typography](https://mui.com/components/typography/)
+    *
+    * API:
+    *
+    * - [Typography API](https://mui.com/api/typography/)
+    */
+  @JSImport("@material-ui/core/Typography", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[TypographyProps]]
+  val default: OverridableComponent[TypographyTypeMap[js.Object, span]] = js.native
   
+  type _To = OverridableComponent[TypographyTypeMap[js.Object, span]]
+  
+  /* This means you don't have to write `default`, but can instead just say `typographyMod.foo` */
+  override def _to: OverridableComponent[TypographyTypeMap[js.Object, span]] = default
 }
-

@@ -1,12 +1,18 @@
 package typingsJapgolly.mjmlReact.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mjml-react", "MjmlAccordion")
 @js.native
-class MjmlAccordion ()
-  extends Component[RequiredChildrenProps with MjmlAccordionElementProps, js.Object, js.Any]
-
+open class MjmlAccordion protected ()
+  extends Component[MjmlAccordionProps & PaddingProps & ClassNameProps, js.Object, Any] {
+  def this(props: MjmlAccordionProps & PaddingProps & ClassNameProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: MjmlAccordionProps & PaddingProps & ClassNameProps, context: Any) = this()
+}

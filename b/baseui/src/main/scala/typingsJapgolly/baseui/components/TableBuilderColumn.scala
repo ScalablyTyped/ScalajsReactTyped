@@ -1,54 +1,52 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.tableSemanticMod.ColumnOverrides
-import typingsJapgolly.baseui.tableSemanticMod.TableBuilderColumnProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.tableSemanticTypesMod.ColumnOverrides
+import typingsJapgolly.baseui.tableSemanticTypesMod.TableBuilderColumnProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableBuilderColumn {
-  def apply[RowT](
-    header: VdomNode = null,
-    id: String = null,
-    numeric: js.UndefOr[Boolean] = js.undefined,
-    overrides: ColumnOverrides = null,
-    sortable: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: (js.Any | RowT, js.UndefOr[Double]) => CallbackTo[Node]
-  ): UnmountedWithRoot[
-    TableBuilderColumnProps[RowT], 
-    typingsJapgolly.baseui.tableSemanticMod.TableBuilderColumn[RowT], 
-    Unit, 
-    TableBuilderColumnProps[RowT]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("children")(js.Any.fromFunction2((t0: js.Any | RowT, t1: js.UndefOr[scala.Double]) => children(t0, t1).runNow()))
-    if (header != null) __obj.updateDynamic("header")(header.rawNode.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.tableSemanticMod.TableBuilderColumnProps[RowT], 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.baseui.tableSemanticMod.TableBuilderColumn[RowT]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.tableSemanticMod.TableBuilderColumnProps[RowT]])
+  inline def apply[T](children: (T, js.UndefOr[Double]) => Node): Builder[T] = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction2(children))
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[TableBuilderColumnProps[T]]))
   }
+  
   @JSImport("baseui/table-semantic", "TableBuilderColumn")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.tableSemanticMod.TableBuilderColumn[T]] {
+    
+    inline def header(value: VdomNode): this.type = set("header", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def headerNull: this.type = set("header", null)
+    
+    inline def headerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("header", js.Array(value*))
+    
+    inline def headerVdomElement(value: VdomElement): this.type = set("header", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def numeric(value: Boolean): this.type = set("numeric", value.asInstanceOf[js.Any])
+    
+    inline def overrides(value: ColumnOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def sortable(value: Boolean): this.type = set("sortable", value.asInstanceOf[js.Any])
+    
+    inline def tableHeadAriaLabel(value: String): this.type = set("tableHeadAriaLabel", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[T](p: TableBuilderColumnProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

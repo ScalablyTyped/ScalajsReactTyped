@@ -1,29 +1,38 @@
 package typingsJapgolly.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IEditorParameterHintOptions extends js.Object {
+trait IEditorParameterHintOptions extends StObject {
+  
   /**
     * Enable cycling of parameter hints.
     * Defaults to false.
     */
   var cycle: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Enable parameter hints.
     * Defaults to true.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
 }
-
 object IEditorParameterHintOptions {
-  @scala.inline
-  def apply(cycle: js.UndefOr[Boolean] = js.undefined, enabled: js.UndefOr[Boolean] = js.undefined): IEditorParameterHintOptions = {
+  
+  inline def apply(): IEditorParameterHintOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cycle)) __obj.updateDynamic("cycle")(cycle.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorParameterHintOptions]
   }
+  
+  extension [Self <: IEditorParameterHintOptions](x: Self) {
+    
+    inline def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
+    
+    inline def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+  }
 }
-

@@ -1,13 +1,26 @@
 package typingsJapgolly.jsClipper.ClipperLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ClipperLib.Scanbeam")
-@js.native
-class Scanbeam () extends js.Object {
-  var Y: Double = js.native
-  var next: TEdge = js.native
+trait Scanbeam extends StObject {
+  
+  var Y: Double
+  
+  var next: TEdge
 }
-
+object Scanbeam {
+  
+  inline def apply(Y: Double, next: TEdge): Scanbeam = {
+    val __obj = js.Dynamic.literal(Y = Y.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Scanbeam]
+  }
+  
+  extension [Self <: Scanbeam](x: Self) {
+    
+    inline def setNext(value: TEdge): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+  }
+}

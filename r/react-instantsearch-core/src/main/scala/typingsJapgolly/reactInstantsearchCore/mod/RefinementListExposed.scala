@@ -1,56 +1,92 @@
 package typingsJapgolly.reactInstantsearchCore.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.reactInstantsearchCore.reactInstantsearchCoreStrings.and
 import typingsJapgolly.reactInstantsearchCore.reactInstantsearchCoreStrings.or
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RefinementListExposed extends js.Object {
+trait RefinementListExposed extends StObject {
+  
   /** the name of the attribute in the record */
   var attribute: String
+  
   /**
     * the values of the items selected by default. The searchState of this widget takes the form of a list of strings,
     * which correspond to the values of all selected refinements. However, when there are no refinements selected,
     * the value of the searchState is an empty string.
     */
   var defaultRefinement: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * Used to determine whether the facets should be ordered
+    * automatically or using the facet display definitions / pinned items.
+    *
+    * @see https://www.algolia.com/doc/guides/building-search-ui/ui-and-ux-patterns/facet-display/js/
+    */
+  var facetOrdering: js.UndefOr[Boolean] = js.undefined
+  
   /** the minimum number of displayed items */
   var limit: js.UndefOr[Double] = js.undefined
+  
   /** How to apply the refinements. Possible values: ‘or’ or ‘and’. */
   var operator: js.UndefOr[or | and] = js.undefined
+  
   /** allow search inside values */
   var searchable: js.UndefOr[Boolean] = js.undefined
+  
   /** true if the component should display a button that will expand the number of items */
   var showMore: js.UndefOr[Boolean] = js.undefined
+  
   /** the maximun number of displayed items. Only used when showMore is set to true */
   var showMoreLimit: js.UndefOr[Double] = js.undefined
+  
   /** (...args: any[]) => any to modify the items being displayed, e.g. for filtering or sorting them. Takes an items as parameter and expects it back in return. */
-  var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var transformItems: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
 }
-
 object RefinementListExposed {
-  @scala.inline
-  def apply(
-    attribute: String,
-    defaultRefinement: js.Array[String] = null,
-    limit: Int | Double = null,
-    operator: or | and = null,
-    searchable: js.UndefOr[Boolean] = js.undefined,
-    showMore: js.UndefOr[Boolean] = js.undefined,
-    showMoreLimit: Int | Double = null,
-    transformItems: /* repeated */ js.Any => CallbackTo[js.Any] = null
-  ): RefinementListExposed = {
+  
+  inline def apply(attribute: String): RefinementListExposed = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any])
-    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMore)) __obj.updateDynamic("showMore")(showMore.asInstanceOf[js.Any])
-    if (showMoreLimit != null) __obj.updateDynamic("showMoreLimit")(showMoreLimit.asInstanceOf[js.Any])
-    if (transformItems != null) __obj.updateDynamic("transformItems")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => transformItems(t0).runNow()))
     __obj.asInstanceOf[RefinementListExposed]
   }
+  
+  extension [Self <: RefinementListExposed](x: Self) {
+    
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultRefinement(value: js.Array[String]): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
+    
+    inline def setDefaultRefinementVarargs(value: String*): Self = StObject.set(x, "defaultRefinement", js.Array(value*))
+    
+    inline def setFacetOrdering(value: Boolean): Self = StObject.set(x, "facetOrdering", value.asInstanceOf[js.Any])
+    
+    inline def setFacetOrderingUndefined: Self = StObject.set(x, "facetOrdering", js.undefined)
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setOperator(value: or | and): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    
+    inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+    
+    inline def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
+    
+    inline def setShowMore(value: Boolean): Self = StObject.set(x, "showMore", value.asInstanceOf[js.Any])
+    
+    inline def setShowMoreLimit(value: Double): Self = StObject.set(x, "showMoreLimit", value.asInstanceOf[js.Any])
+    
+    inline def setShowMoreLimitUndefined: Self = StObject.set(x, "showMoreLimit", js.undefined)
+    
+    inline def setShowMoreUndefined: Self = StObject.set(x, "showMore", js.undefined)
+    
+    inline def setTransformItems(value: /* repeated */ Any => Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
+    
+    inline def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)
+  }
 }
-

@@ -1,56 +1,50 @@
 package typingsJapgolly.officeJs.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContentControlAppearance extends js.Object
-
+sealed trait ContentControlAppearance extends StObject
 /**
+  * ContentControl appearance.
   *
-  * ContentControl appearance
+  * @remarks
+  * [Api set: WordApi 1.1]
   *
-  * [Api set: WordApi]
+  * Content control appearance options are BoundingBox, Tags, or Hidden.
   */
 @JSGlobal("Word.ContentControlAppearance")
 @js.native
-object ContentControlAppearance extends js.Object {
+object ContentControlAppearance extends StObject {
+  
   /**
-    *
     * Represents a content control shown as a shaded rectangle or bounding box (with optional title).
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
-  sealed trait boundingBox extends ContentControlAppearance
+  sealed trait boundingBox
+    extends StObject
+       with ContentControlAppearance
   
   /**
-    *
     * Represents a content control that is not shown.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
-  sealed trait hidden extends ContentControlAppearance
+  sealed trait hidden
+    extends StObject
+       with ContentControlAppearance
   
   /**
-    *
     * Represents a content control shown as start and end markers.
-    *
+    * @remarks
+    * [Api set: WordApi 1.1]
     */
   @js.native
-  sealed trait tags extends ContentControlAppearance
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ContentControlAppearance with String] = js.native
-  /* "BoundingBox" */ @js.native
-  object boundingBox extends TopLevel[boundingBox with String]
-  
-  /* "Hidden" */ @js.native
-  object hidden extends TopLevel[hidden with String]
-  
-  /* "Tags" */ @js.native
-  object tags extends TopLevel[tags with String]
-  
+  sealed trait tags
+    extends StObject
+       with ContentControlAppearance
 }
-

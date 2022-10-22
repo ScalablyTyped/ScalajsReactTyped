@@ -1,29 +1,34 @@
 package typingsJapgolly.oracleOraclejet.ojganttMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttRowSettableProperties> */
 trait ojGanttRowSettablePropertiesLenient
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var labelStyle: js.UndefOr[js.Object] = js.undefined
 }
-
 object ojGanttRowSettablePropertiesLenient {
-  @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    label: String = null,
-    labelStyle: js.Object = null
-  ): ojGanttRowSettablePropertiesLenient = {
+  
+  inline def apply(): ojGanttRowSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojGanttRowSettablePropertiesLenient]
   }
+  
+  extension [Self <: ojGanttRowSettablePropertiesLenient](x: Self) {
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+  }
 }
-

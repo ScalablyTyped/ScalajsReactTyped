@@ -1,15 +1,21 @@
 package typingsJapgolly.reactLeaflet.mod
 
 import typingsJapgolly.leaflet.mod.Popup_
-import typingsJapgolly.reactLeaflet.AnonPopup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-leaflet", "Popup")
 @js.native
-class Popup[P /* <: PopupProps */, E /* <: Popup_ */] () extends DivOverlay[P, E] {
-  def onPopupClose(arg: AnonPopup[E]): Unit = js.native
-  def onPopupOpen(arg: AnonPopup[E]): Unit = js.native
+open class Popup[P /* <: PopupProps */, E /* <: Popup_ */] protected () extends DivOverlay[P, E] {
+  def this(props: P) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: P, context: Any) = this()
+  
+  def onPopupClose(arg: typingsJapgolly.reactLeaflet.anon.Popup[E]): Unit = js.native
+  
+  def onPopupOpen(arg: typingsJapgolly.reactLeaflet.anon.Popup[E]): Unit = js.native
 }
-

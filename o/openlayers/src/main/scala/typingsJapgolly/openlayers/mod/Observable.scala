@@ -2,9 +2,9 @@ package typingsJapgolly.openlayers.mod
 
 import typingsJapgolly.openlayers.mod.events.Event
 import typingsJapgolly.openlayers.mod.events.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Observable")
 @js.native
@@ -20,12 +20,14 @@ import scala.scalajs.js.annotation._
   * @struct
   * @api stable
   */
-class Observable () extends EventTarget {
+open class Observable () extends EventTarget {
+  
   /**
     * Increases the revision counter and dispatches a 'change' event.
     * @api
     */
   def changed(): Unit = js.native
+  
   def dispatchEvent(event: String): Unit = js.native
   /**
     * Dispatches an event and calls all listeners listening for events
@@ -37,6 +39,7 @@ class Observable () extends EventTarget {
     */
   def dispatchEvent(event: GlobalObject): Unit = js.native
   def dispatchEvent(event: Event): Unit = js.native
+  
   /**
     * Get the version number for this object.  Each time the object is modified,
     * its version number will be incremented.
@@ -44,6 +47,7 @@ class Observable () extends EventTarget {
     * @api
     */
   def getRevision(): Double = js.native
+  
   /**
     * Listen for a certain type of event.
     * @param type The event type or array of event types.
@@ -58,6 +62,7 @@ class Observable () extends EventTarget {
   def on(`type`: String, listener: EventsListenerFunctionType, opt_this: GlobalObject): EventsKey | js.Array[EventsKey] = js.native
   def on(`type`: js.Array[String], listener: EventsListenerFunctionType): EventsKey | js.Array[EventsKey] = js.native
   def on(`type`: js.Array[String], listener: EventsListenerFunctionType, opt_this: GlobalObject): EventsKey | js.Array[EventsKey] = js.native
+  
   /**
     * Listen once for a certain type of event.
     * @param type The event type or array of event types.
@@ -72,6 +77,7 @@ class Observable () extends EventTarget {
   def once(`type`: String, listener: EventsListenerFunctionType, opt_this: GlobalObject): EventsKey | js.Array[EventsKey] = js.native
   def once(`type`: js.Array[String], listener: EventsListenerFunctionType): EventsKey | js.Array[EventsKey] = js.native
   def once(`type`: js.Array[String], listener: EventsListenerFunctionType, opt_this: GlobalObject): EventsKey | js.Array[EventsKey] = js.native
+  
   /**
     * Unlisten for a certain type of event.
     * @param type The event type or array of event types.
@@ -85,18 +91,19 @@ class Observable () extends EventTarget {
   def un(`type`: js.Array[String], listener: EventsListenerFunctionType): Unit = js.native
   def un(`type`: js.Array[String], listener: EventsListenerFunctionType, opt_this: GlobalObject): Unit = js.native
 }
-
 /* static members */
-@JSImport("openlayers", "Observable")
-@js.native
-object Observable extends js.Object {
-  def unByKey(key: js.Array[EventsKey]): Unit = js.native
+object Observable {
+  
+  @JSImport("openlayers", "Observable")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def unByKey(key: js.Array[EventsKey]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unByKey")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Removes an event listener using the key returned by `on()` or `once()`.
     * @param key The key returned by `on()`
     *     or `once()` (or an array of keys).
     * @api stable
     */
-  def unByKey(key: EventsKey): Unit = js.native
+  inline def unByKey(key: EventsKey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unByKey")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

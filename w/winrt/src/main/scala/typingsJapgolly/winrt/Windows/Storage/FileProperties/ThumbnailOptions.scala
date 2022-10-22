@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Storage.FileProperties
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ThumbnailOptions extends js.Object
-
+sealed trait ThumbnailOptions extends StObject
 @JSGlobal("Windows.Storage.FileProperties.ThumbnailOptions")
 @js.native
-object ThumbnailOptions extends js.Object {
-  @js.native
-  sealed trait none extends ThumbnailOptions
+object ThumbnailOptions extends StObject {
   
   @js.native
-  sealed trait resizeThumbnail extends ThumbnailOptions
+  sealed trait none
+    extends StObject
+       with ThumbnailOptions
   
   @js.native
-  sealed trait returnOnlyIfCached extends ThumbnailOptions
+  sealed trait resizeThumbnail
+    extends StObject
+       with ThumbnailOptions
   
   @js.native
-  sealed trait useCurrentScale extends ThumbnailOptions
+  sealed trait returnOnlyIfCached
+    extends StObject
+       with ThumbnailOptions
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ThumbnailOptions with Double] = js.native
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object resizeThumbnail extends TopLevel[resizeThumbnail with Double]
-  
-  /* 1 */ @js.native
-  object returnOnlyIfCached extends TopLevel[returnOnlyIfCached with Double]
-  
-  /* 3 */ @js.native
-  object useCurrentScale extends TopLevel[useCurrentScale with Double]
-  
+  @js.native
+  sealed trait useCurrentScale
+    extends StObject
+       with ThumbnailOptions
 }
-

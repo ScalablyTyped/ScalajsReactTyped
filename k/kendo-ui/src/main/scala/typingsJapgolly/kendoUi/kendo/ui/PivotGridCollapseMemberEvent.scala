@@ -1,29 +1,35 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PivotGridCollapseMemberEvent extends PivotGridEvent {
+trait PivotGridCollapseMemberEvent
+  extends StObject
+     with PivotGridEvent {
+  
   var axis: js.UndefOr[String] = js.undefined
+  
   var path: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object PivotGridCollapseMemberEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: PivotGrid,
-    axis: String = null,
-    path: js.Array[String] = null
-  ): PivotGridCollapseMemberEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: PivotGrid): PivotGridCollapseMemberEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridCollapseMemberEvent]
   }
+  
+  extension [Self <: PivotGridCollapseMemberEvent](x: Self) {
+    
+    inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    
+    inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
+  }
 }
-

@@ -9,69 +9,101 @@ import typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.left
 import typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.middle
 import typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.right
 import typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextSymbol extends MarkerSymbol {
+trait TextSymbol
+  extends StObject
+     with MarkerSymbol {
+  
   var backgroundColor: js.UndefOr[Color] = js.undefined
-   // <size>;
+  
+  // <size>;
   var borderLineColor: js.UndefOr[Color] = js.undefined
+  
   var borderLineSize: js.UndefOr[Double] = js.undefined
+  
   var color: js.UndefOr[Color] = js.undefined
+  
   var font: js.UndefOr[Font] = js.undefined
-   // <size>;
+  
+  // <size>;
   var haloColor: js.UndefOr[Color] = js.undefined
+  
   var haloSize: js.UndefOr[Double] = js.undefined
+  
   var horizontalAlignment: js.UndefOr[left | right | center | justify] = js.undefined
+  
   var kerning: js.UndefOr[Boolean] = js.undefined
+  
   var rightToLeft: js.UndefOr[Boolean] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
+  
   @JSName("type")
   var type_TextSymbol: esriTS
+  
   var verticalAlignment: js.UndefOr[baseline | top | middle | bottom] = js.undefined
 }
-
 object TextSymbol {
-  @scala.inline
-  def apply(
-    `type`: esriTS,
-    angle: Int | Double = null,
-    backgroundColor: Color = null,
-    borderLineColor: Color = null,
-    borderLineSize: Int | Double = null,
-    color: Color = null,
-    font: Font = null,
-    haloColor: Color = null,
-    haloSize: Int | Double = null,
-    horizontalAlignment: left | right | center | justify = null,
-    kerning: js.UndefOr[Boolean] = js.undefined,
-    rightToLeft: js.UndefOr[Boolean] = js.undefined,
-    style: String = null,
-    text: String = null,
-    verticalAlignment: baseline | top | middle | bottom = null,
-    xoffset: Int | Double = null,
-    yoffset: Int | Double = null
-  ): TextSymbol = {
+  
+  inline def apply(): TextSymbol = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderLineColor != null) __obj.updateDynamic("borderLineColor")(borderLineColor.asInstanceOf[js.Any])
-    if (borderLineSize != null) __obj.updateDynamic("borderLineSize")(borderLineSize.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (haloColor != null) __obj.updateDynamic("haloColor")(haloColor.asInstanceOf[js.Any])
-    if (haloSize != null) __obj.updateDynamic("haloSize")(haloSize.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(kerning)) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])
-    if (yoffset != null) __obj.updateDynamic("yoffset")(yoffset.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("esriTS")
     __obj.asInstanceOf[TextSymbol]
   }
+  
+  extension [Self <: TextSymbol](x: Self) {
+    
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setBorderLineColor(value: Color): Self = StObject.set(x, "borderLineColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderLineColorUndefined: Self = StObject.set(x, "borderLineColor", js.undefined)
+    
+    inline def setBorderLineSize(value: Double): Self = StObject.set(x, "borderLineSize", value.asInstanceOf[js.Any])
+    
+    inline def setBorderLineSizeUndefined: Self = StObject.set(x, "borderLineSize", js.undefined)
+    
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setHaloColor(value: Color): Self = StObject.set(x, "haloColor", value.asInstanceOf[js.Any])
+    
+    inline def setHaloColorUndefined: Self = StObject.set(x, "haloColor", js.undefined)
+    
+    inline def setHaloSize(value: Double): Self = StObject.set(x, "haloSize", value.asInstanceOf[js.Any])
+    
+    inline def setHaloSizeUndefined: Self = StObject.set(x, "haloSize", js.undefined)
+    
+    inline def setHorizontalAlignment(value: left | right | center | justify): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    
+    inline def setKerning(value: Boolean): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
+    
+    inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
+    
+    inline def setRightToLeft(value: Boolean): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
+    
+    inline def setRightToLeftUndefined: Self = StObject.set(x, "rightToLeft", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setType(value: esriTS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignment(value: baseline | top | middle | bottom): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+  }
 }
-

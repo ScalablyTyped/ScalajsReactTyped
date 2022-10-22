@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Globalization.DateTimeFormatting
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait YearFormat extends js.Object
-
+sealed trait YearFormat extends StObject
 @JSGlobal("Windows.Globalization.DateTimeFormatting.YearFormat")
 @js.native
-object YearFormat extends js.Object {
-  @js.native
-  sealed trait abbreviated extends YearFormat
+object YearFormat extends StObject {
   
   @js.native
-  sealed trait default extends YearFormat
+  sealed trait default
+    extends StObject
+       with YearFormat
   
   @js.native
-  sealed trait full extends YearFormat
+  sealed trait abbreviated
+    extends StObject
+       with YearFormat
   
   @js.native
-  sealed trait none extends YearFormat
+  sealed trait full
+    extends StObject
+       with YearFormat
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[YearFormat with Double] = js.native
-  /* 2 */ @js.native
-  object abbreviated extends TopLevel[abbreviated with Double]
-  
-  /* 1 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 3 */ @js.native
-  object full extends TopLevel[full with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  @js.native
+  sealed trait none
+    extends StObject
+       with YearFormat
 }
-

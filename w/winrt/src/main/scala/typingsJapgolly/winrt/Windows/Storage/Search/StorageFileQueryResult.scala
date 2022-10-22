@@ -1,27 +1,10 @@
 package typingsJapgolly.winrt.Windows.Storage.Search
 
-import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
-import typingsJapgolly.winrt.Windows.Storage.StorageFolder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.Search.StorageFileQueryResult")
 @js.native
-class StorageFileQueryResult () extends IStorageFileQueryResult {
-  /* CompleteClass */
-  override var folder: StorageFolder = js.native
-  /* CompleteClass */
-  override var oncontentschanged: js.Any = js.native
-  /* CompleteClass */
-  override var onoptionschanged: js.Any = js.native
-  /* CompleteClass */
-  override def applyNewQueryOptions(newQueryOptions: QueryOptions): Unit = js.native
-  /* CompleteClass */
-  override def findStartIndexAsync(value: js.Any): IAsyncOperation[Double] = js.native
-  /* CompleteClass */
-  override def getCurrentQueryOptions(): QueryOptions = js.native
-  /* CompleteClass */
-  override def getItemCountAsync(): IAsyncOperation[Double] = js.native
-}
-
+trait StorageFileQueryResult
+  extends StObject
+     with IStorageFileQueryResult

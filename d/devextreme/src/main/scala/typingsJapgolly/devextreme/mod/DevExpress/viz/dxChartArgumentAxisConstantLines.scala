@@ -1,49 +1,57 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.devextremeStrings.dash
-import typingsJapgolly.devextreme.devextremeStrings.dot
-import typingsJapgolly.devextreme.devextremeStrings.longDash
-import typingsJapgolly.devextreme.devextremeStrings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxChartArgumentAxisConstantLines extends dxChartCommonAxisSettingsConstantLineStyle {
-  /** Specifies whether to display the constant line behind or in front of the series. */
+trait dxChartArgumentAxisConstantLines
+  extends StObject
+     with dxChartCommonAxisSettingsConstantLineStyle {
+  
+  /**
+    * Specifies whether to display the constant line behind or in front of the series.
+    */
   var displayBehindSeries: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to extend the axis's default visual range to display the constant line. */
+  
+  /**
+    * Specifies whether to extend the axis&apos;s default visual range to display the constant line.
+    */
   var extendAxis: js.UndefOr[Boolean] = js.undefined
-  /** Configures the constant line label. */
+  
+  /**
+    * Configures the constant line label.
+    */
   @JSName("label")
   var label_dxChartArgumentAxisConstantLines: js.UndefOr[dxChartArgumentAxisConstantLinesLabel] = js.undefined
-  /** Specifies the value indicated by a constant line. Setting this option is necessary. */
+  
+  /**
+    * Specifies the value indicated by a constant line. Setting this property is necessary.
+    */
   var value: js.UndefOr[Double | js.Date | String] = js.undefined
 }
-
 object dxChartArgumentAxisConstantLines {
-  @scala.inline
-  def apply(
-    color: String = null,
-    dashStyle: dash | dot | longDash | solid = null,
-    displayBehindSeries: js.UndefOr[Boolean] = js.undefined,
-    extendAxis: js.UndefOr[Boolean] = js.undefined,
-    label: dxChartArgumentAxisConstantLinesLabel = null,
-    paddingLeftRight: Int | Double = null,
-    paddingTopBottom: Int | Double = null,
-    value: Double | js.Date | String = null,
-    width: Int | Double = null
-  ): dxChartArgumentAxisConstantLines = {
+  
+  inline def apply(): dxChartArgumentAxisConstantLines = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayBehindSeries)) __obj.updateDynamic("displayBehindSeries")(displayBehindSeries.asInstanceOf[js.Any])
-    if (!js.isUndefined(extendAxis)) __obj.updateDynamic("extendAxis")(extendAxis.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (paddingLeftRight != null) __obj.updateDynamic("paddingLeftRight")(paddingLeftRight.asInstanceOf[js.Any])
-    if (paddingTopBottom != null) __obj.updateDynamic("paddingTopBottom")(paddingTopBottom.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartArgumentAxisConstantLines]
   }
+  
+  extension [Self <: dxChartArgumentAxisConstantLines](x: Self) {
+    
+    inline def setDisplayBehindSeries(value: Boolean): Self = StObject.set(x, "displayBehindSeries", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayBehindSeriesUndefined: Self = StObject.set(x, "displayBehindSeries", js.undefined)
+    
+    inline def setExtendAxis(value: Boolean): Self = StObject.set(x, "extendAxis", value.asInstanceOf[js.Any])
+    
+    inline def setExtendAxisUndefined: Self = StObject.set(x, "extendAxis", js.undefined)
+    
+    inline def setLabel(value: dxChartArgumentAxisConstantLinesLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setValue(value: Double | js.Date | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

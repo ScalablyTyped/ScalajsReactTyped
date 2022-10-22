@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-compress
 
-Typings are for version v2.x
+Typings are for version v4.x
 
 ## Library description:
 Compress middleware for koa
@@ -10,10 +10,10 @@ Compress middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-compress |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 331 |
-| # downloads        | 3328097 |
-| # stars            | 10 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1121249.3333333333 |
+| # stars            | 415.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/compress#readme)

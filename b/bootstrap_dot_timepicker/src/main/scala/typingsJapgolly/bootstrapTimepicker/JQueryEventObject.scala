@@ -1,19 +1,24 @@
 package typingsJapgolly.bootstrapTimepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQueryEventObject extends js.Object {
+trait JQueryEventObject extends StObject {
+  
   var time: js.UndefOr[TimepickerTime] = js.undefined
 }
-
 object JQueryEventObject {
-  @scala.inline
-  def apply(time: TimepickerTime = null): JQueryEventObject = {
+  
+  inline def apply(): JQueryEventObject = {
     val __obj = js.Dynamic.literal()
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryEventObject]
   }
+  
+  extension [Self <: JQueryEventObject](x: Self) {
+    
+    inline def setTime(value: TimepickerTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+  }
 }
-

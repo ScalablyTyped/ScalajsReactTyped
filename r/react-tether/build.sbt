@@ -1,18 +1,17 @@
 organization := "org.scalablytyped.japgolly"
 name := "react-tether"
-version := "2.0.7-b93707"
-scalaVersion := "2.13.1"
+version := "3.0.1-4068eb"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "csstype" % "2.6.6-ec7cc3",
-  "org.scalablytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-d18e40",
-  "org.scalablytyped.japgolly" %%% "react" % "16.9-dt-20200227Z-a90427",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "tether" % "v1.4-dt-20200227Z-1cc423")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "csstype" % "3.1.1-6f6894",
+  "org.scalablytyped.japgolly" %%% "prop-types" % "15.7-dt-20220407Z-2e1de8",
+  "org.scalablytyped.japgolly" %%% "react" % "18.0-dt-20220922Z-c9da7d",
+  "org.scalablytyped.japgolly" %%% "scheduler" % "0.16-dt-20211202Z-ea969a",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "tether" % "v1.4-dt-20220818Z-a59cce")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

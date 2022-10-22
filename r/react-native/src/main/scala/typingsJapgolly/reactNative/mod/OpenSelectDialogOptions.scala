@@ -1,23 +1,32 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OpenSelectDialogOptions extends js.Object {
+trait OpenSelectDialogOptions extends StObject {
+  
   /** Defaults to true */
   var showImages: js.UndefOr[Boolean] = js.undefined
+  
   /** Defaults to false */
   var showVideos: js.UndefOr[Boolean] = js.undefined
 }
-
 object OpenSelectDialogOptions {
-  @scala.inline
-  def apply(showImages: js.UndefOr[Boolean] = js.undefined, showVideos: js.UndefOr[Boolean] = js.undefined): OpenSelectDialogOptions = {
+  
+  inline def apply(): OpenSelectDialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showImages)) __obj.updateDynamic("showImages")(showImages.asInstanceOf[js.Any])
-    if (!js.isUndefined(showVideos)) __obj.updateDynamic("showVideos")(showVideos.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenSelectDialogOptions]
   }
+  
+  extension [Self <: OpenSelectDialogOptions](x: Self) {
+    
+    inline def setShowImages(value: Boolean): Self = StObject.set(x, "showImages", value.asInstanceOf[js.Any])
+    
+    inline def setShowImagesUndefined: Self = StObject.set(x, "showImages", js.undefined)
+    
+    inline def setShowVideos(value: Boolean): Self = StObject.set(x, "showVideos", value.asInstanceOf[js.Any])
+    
+    inline def setShowVideosUndefined: Self = StObject.set(x, "showVideos", js.undefined)
+  }
 }
-

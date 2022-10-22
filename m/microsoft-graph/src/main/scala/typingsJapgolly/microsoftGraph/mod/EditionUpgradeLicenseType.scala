@@ -1,21 +1,17 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.productKey
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.licenseFile
 */
-trait EditionUpgradeLicenseType extends js.Object
-
+trait EditionUpgradeLicenseType extends StObject
 object EditionUpgradeLicenseType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def licenseFile: typingsJapgolly.microsoftGraph.microsoftGraphStrings.licenseFile = this.cast("licenseFile")
-  @scala.inline
-  def productKey: typingsJapgolly.microsoftGraph.microsoftGraphStrings.productKey = this.cast("productKey")
+  
+  inline def licenseFile: typingsJapgolly.microsoftGraph.microsoftGraphStrings.licenseFile = "licenseFile".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.licenseFile]
+  
+  inline def productKey: typingsJapgolly.microsoftGraph.microsoftGraphStrings.productKey = "productKey".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.productKey]
 }
-

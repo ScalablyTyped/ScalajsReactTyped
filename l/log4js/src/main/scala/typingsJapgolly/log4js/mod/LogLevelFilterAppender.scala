@@ -1,27 +1,41 @@
 package typingsJapgolly.log4js.mod
 
 import typingsJapgolly.log4js.log4jsStrings.logLevelFilter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LogLevelFilterAppender extends Appender {
+trait LogLevelFilterAppender extends StObject {
+  
   // the name of an appender, defined in the same configuration, that you want to filter
   var appender: String
+  
   // the minimum level of event to allow through the filter
   var level: String
-  // (defaults to FATAL) - the maximum level of event to allow through the filter
+  
+  // (defaults to FATAL) the maximum level of event to allow through the filter
   var maxLevel: js.UndefOr[String] = js.undefined
+  
   var `type`: logLevelFilter
 }
-
 object LogLevelFilterAppender {
-  @scala.inline
-  def apply(appender: String, level: String, `type`: logLevelFilter, maxLevel: String = null): LogLevelFilterAppender = {
+  
+  inline def apply(appender: String, level: String): LogLevelFilterAppender = {
     val __obj = js.Dynamic.literal(appender = appender.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (maxLevel != null) __obj.updateDynamic("maxLevel")(maxLevel.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("logLevelFilter")
     __obj.asInstanceOf[LogLevelFilterAppender]
   }
+  
+  extension [Self <: LogLevelFilterAppender](x: Self) {
+    
+    inline def setAppender(value: String): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
+    
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLevel(value: String): Self = StObject.set(x, "maxLevel", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLevelUndefined: Self = StObject.set(x, "maxLevel", js.undefined)
+    
+    inline def setType(value: logLevelFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

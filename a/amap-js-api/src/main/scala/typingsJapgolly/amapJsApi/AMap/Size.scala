@@ -1,28 +1,39 @@
 package typingsJapgolly.amapJsApi.AMap
 
-import typingsJapgolly.amapJsApi.AnonX
+import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.amapJsApi.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("AMap.Size")
-@js.native
-class Size protected () extends js.Object {
-  /**
-    * 地物对象的像素尺寸
-    * @param width 宽度像素
-    * @param height 长度像素
-    */
-  def this(width: Double, height: Double) = this()
+trait Size extends StObject {
+  
   // internal
-  def contains(size: AnonX): Boolean = js.native
+  def contains(size: X): Boolean
+  
   /**
     * 获得高度
     */
-  def getHeight(): Double = js.native
+  def getHeight(): Double
+  
   /**
     * 获得宽度
     */
-  def getWidth(): Double = js.native
+  def getWidth(): Double
 }
-
+object Size {
+  
+  inline def apply(contains: X => Boolean, getHeight: CallbackTo[Double], getWidth: CallbackTo[Double]): Size = {
+    val __obj = js.Dynamic.literal(contains = js.Any.fromFunction1(contains), getHeight = getHeight.toJsFn, getWidth = getWidth.toJsFn)
+    __obj.asInstanceOf[Size]
+  }
+  
+  extension [Self <: Size](x: Self) {
+    
+    inline def setContains(value: X => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    
+    inline def setGetHeight(value: CallbackTo[Double]): Self = StObject.set(x, "getHeight", value.toJsFn)
+    
+    inline def setGetWidth(value: CallbackTo[Double]): Self = StObject.set(x, "getWidth", value.toJsFn)
+  }
+}

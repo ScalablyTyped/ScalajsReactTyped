@@ -1,131 +1,62 @@
 package typingsJapgolly.cssSelectorTokenizer.mod
 
-import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.`nested-item`
-import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.comment
-import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.invalid
-import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.item
-import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.string
-import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.url
-import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.value
-import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.values
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.cssSelectorTokenizer.mod.ValuesNode
   - typingsJapgolly.cssSelectorTokenizer.mod.ValueNode
   - typingsJapgolly.cssSelectorTokenizer.mod.ValueNodeType
 */
-trait AnyValueNode extends js.Object
-
+trait AnyValueNode extends StObject
 object AnyValueNode {
-  @scala.inline
-  def InvalidNode(`type`: invalid, value: String, after: String = null, before: String = null, name: String = null): AnyValueNode = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyValueNode]
-  }
-  @scala.inline
-  def NestedItemNode(
-    name: String,
-    nodes: js.Array[ValueNode],
-    `type`: `nested-item`,
-    after: String = null,
-    before: String = null
-  ): AnyValueNode = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyValueNode]
-  }
-  @scala.inline
-  def ItemNode(name: String, `type`: item, after: String = null, before: String = null): AnyValueNode = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyValueNode]
-  }
-  @scala.inline
-  def ValueNode(
-    nodes: js.Array[ValueNodeType],
-    `type`: value,
-    after: String = null,
-    before: String = null,
-    name: String = null
-  ): AnyValueNode = {
-    val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyValueNode]
-  }
-  @scala.inline
-  def StringNode(
-    stringType: String,
-    `type`: string,
-    value: String,
-    after: String = null,
-    before: String = null,
-    name: String = null
-  ): AnyValueNode = {
-    val __obj = js.Dynamic.literal(stringType = stringType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyValueNode]
-  }
-  @scala.inline
-  def UrlNode(
-    `type`: url,
-    url: String,
-    after: String = null,
-    before: String = null,
-    innerSpacingAfter: String = null,
-    innerSpacingBefore: String = null,
-    name: String = null,
-    stringType: String = null
-  ): AnyValueNode = {
-    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (innerSpacingAfter != null) __obj.updateDynamic("innerSpacingAfter")(innerSpacingAfter.asInstanceOf[js.Any])
-    if (innerSpacingBefore != null) __obj.updateDynamic("innerSpacingBefore")(innerSpacingBefore.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (stringType != null) __obj.updateDynamic("stringType")(stringType.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyValueNode]
-  }
-  @scala.inline
-  def CommentNode(content: String, `type`: comment, after: String = null, before: String = null, name: String = null): AnyValueNode = {
+  
+  inline def CommentNode(content: String): typingsJapgolly.cssSelectorTokenizer.mod.CommentNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyValueNode]
+    __obj.updateDynamic("type")("comment")
+    __obj.asInstanceOf[typingsJapgolly.cssSelectorTokenizer.mod.CommentNode]
   }
-  @scala.inline
-  def ValuesNode(
-    nodes: js.Array[ValueNode],
-    `type`: values,
-    after: String = null,
-    before: String = null,
-    name: String = null
-  ): AnyValueNode = {
+  
+  inline def InvalidNode(value: String): typingsJapgolly.cssSelectorTokenizer.mod.InvalidNode = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("invalid")
+    __obj.asInstanceOf[typingsJapgolly.cssSelectorTokenizer.mod.InvalidNode]
+  }
+  
+  inline def ItemNode(name: String): typingsJapgolly.cssSelectorTokenizer.mod.ItemNode = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("item")
+    __obj.asInstanceOf[typingsJapgolly.cssSelectorTokenizer.mod.ItemNode]
+  }
+  
+  inline def NestedItemNode(name: String, nodes: js.Array[ValueNode]): typingsJapgolly.cssSelectorTokenizer.mod.NestedItemNode = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("nested-item")
+    __obj.asInstanceOf[typingsJapgolly.cssSelectorTokenizer.mod.NestedItemNode]
+  }
+  
+  inline def StringNode(stringType: String, value: String): typingsJapgolly.cssSelectorTokenizer.mod.StringNode = {
+    val __obj = js.Dynamic.literal(stringType = stringType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
+    __obj.asInstanceOf[typingsJapgolly.cssSelectorTokenizer.mod.StringNode]
+  }
+  
+  inline def UrlNode(url: String): typingsJapgolly.cssSelectorTokenizer.mod.UrlNode = {
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("url")
+    __obj.asInstanceOf[typingsJapgolly.cssSelectorTokenizer.mod.UrlNode]
+  }
+  
+  inline def ValueNode(nodes: js.Array[ValueNodeType]): typingsJapgolly.cssSelectorTokenizer.mod.ValueNode = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyValueNode]
+    __obj.updateDynamic("type")("value")
+    __obj.asInstanceOf[typingsJapgolly.cssSelectorTokenizer.mod.ValueNode]
+  }
+  
+  inline def ValuesNode(nodes: js.Array[ValueNode]): typingsJapgolly.cssSelectorTokenizer.mod.ValuesNode = {
+    val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("values")
+    __obj.asInstanceOf[typingsJapgolly.cssSelectorTokenizer.mod.ValuesNode]
   }
 }
-

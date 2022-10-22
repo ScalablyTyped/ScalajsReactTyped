@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.WiFiDirect
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiDirectDeviceSelectorType extends js.Object
-
+sealed trait WiFiDirectDeviceSelectorType extends StObject
 /** Specifies the device selector type for Wi-Fi Direct. */
 @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectDeviceSelectorType")
 @js.native
-object WiFiDirectDeviceSelectorType extends js.Object {
+object WiFiDirectDeviceSelectorType extends StObject {
+  
   /** An associated endpoint. This includes other PC, tablets, and phones. */
   @js.native
-  sealed trait associationEndpoint extends WiFiDirectDeviceSelectorType
+  sealed trait associationEndpoint
+    extends StObject
+       with WiFiDirectDeviceSelectorType
   
   /** A device interface. */
   @js.native
-  sealed trait deviceInterface extends WiFiDirectDeviceSelectorType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiDirectDeviceSelectorType with Double] = js.native
-  /* 1 */ @js.native
-  object associationEndpoint extends TopLevel[associationEndpoint with Double]
-  
-  /* 0 */ @js.native
-  object deviceInterface extends TopLevel[deviceInterface with Double]
-  
+  sealed trait deviceInterface
+    extends StObject
+       with WiFiDirectDeviceSelectorType
 }
-

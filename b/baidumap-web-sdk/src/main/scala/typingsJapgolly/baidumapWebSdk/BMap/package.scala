@@ -1,33 +1,64 @@
-package typingsJapgolly.baidumapWebSdk
+package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object BMap {
-  type APIVersion = scala.Double
-  type Animation = scala.Double
-  type Callback = js.Function1[/* repeated */ js.Any, scala.Unit]
-  type ContextMenuIcon = java.lang.String
-  type ControlAnchor = scala.Double
-  type DrivingPolicy = scala.Double
-  type HighlightModes = scala.Double
-  type LengthUnit = java.lang.String
-  type LineType = scala.Double
-  type MapTypeControlType = scala.Double
-  type MercatorProjection = typingsJapgolly.baidumapWebSdk.BMap.Projection
-  type NavigationControlType = scala.Double
-  type PanoramaPOIType = java.lang.String
-  type PanoramaSceneType = java.lang.String
-  type PerspectiveProjection = typingsJapgolly.baidumapWebSdk.BMap.Projection
-  type PoiType = scala.Double
-  type PointDensityType = scala.Double
-  type RouteType = scala.Double
-  type ServiceStatusCode = scala.Double
-  type ShapeType = scala.Double
-  type SizeType = scala.Double
-  type StatusCode = scala.Double
-  type SymbolShapeType = scala.Double
-  type TransitPolicy = scala.Double
-  type ZoomType = scala.Double
-}
+
+type APIVersion = Double
+
+type Animation = Double
+
+type ContextMenuIcon = String
+
+type ControlAnchor = Double
+
+type DrivingPolicy = Double
+
+type GeolocationControl = Control
+
+type HighlightModes = Double
+
+type LengthUnit = String
+
+type LineType = Double
+
+type MapTypeControl = Control
+
+type MapTypeControlType = Double
+
+type MercatorProjection = Projection
+
+type NavigationControlType = Double
+
+type PanoramaControl = Control
+
+type PanoramaCoverageLayer = TileLayer
+
+type PanoramaPOIType = String
+
+type PanoramaSceneType = String
+
+type PerspectiveProjection = Projection
+
+type PoiType = Double
+
+type PointDensityType = Double
+
+type RouteType = Double
+
+type ServiceStatusCode = Double
+
+type ShapeType = Double
+
+type SizeType = Double
+
+type StatusCode = Double
+
+type SymbolShapeType = Double
+
+type TrafficLayer = TileLayer
+
+type TransitPolicy = Double
+
+type ZoomType = Double

@@ -1,98 +1,164 @@
 package typingsJapgolly.zepto
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.XMLHttpRequest
+import org.scalajs.dom.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ZeptoAjaxSettings extends js.Object {
+trait ZeptoAjaxSettings extends StObject {
+  
   var async: js.UndefOr[Boolean] = js.undefined
-  var beforeSend: js.UndefOr[
-    js.Function2[/* xhr */ XMLHttpRequest, /* settings */ ZeptoAjaxSettings, Boolean]
-  ] = js.undefined
+  
+  var beforeSend: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* settings */ this.type, Boolean]] = js.undefined
+  
   var cache: js.UndefOr[Boolean] = js.undefined
+  
   var complete: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* status */ String, Unit]] = js.undefined
+  
   var contentType: js.UndefOr[String] = js.undefined
-  var context: js.UndefOr[js.Any] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
+  
+  var context: js.UndefOr[Any] = js.undefined
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
   var dataType: js.UndefOr[String] = js.undefined
+  
   var error: js.UndefOr[
     js.Function3[/* xhr */ XMLHttpRequest, /* errorType */ String, /* error */ js.Error, Unit]
   ] = js.undefined
+  
   var global: js.UndefOr[Boolean] = js.undefined
+  
   var headers: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var jsonp: js.UndefOr[String] = js.undefined
-  var jsonpCallback: js.UndefOr[js.Any] = js.undefined
+  
+  var jsonpCallback: js.UndefOr[Any] = js.undefined
+  
   var mimeType: js.UndefOr[String] = js.undefined
+  
   var password: js.UndefOr[String] = js.undefined
+  
   var processData: js.UndefOr[Boolean] = js.undefined
+  
   var success: js.UndefOr[
-    js.Function3[/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
+    js.Function3[/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest, Unit]
   ] = js.undefined
-   // string or Function
+  
+  // string or Function
   var timeout: js.UndefOr[Double] = js.undefined
+  
   var traditional: js.UndefOr[Boolean] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
+  
   var username: js.UndefOr[String] = js.undefined
-  var xhrFields: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  
+  var xhrFields: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
-
 object ZeptoAjaxSettings {
-  @scala.inline
-  def apply(
-    async: js.UndefOr[Boolean] = js.undefined,
-    beforeSend: (/* xhr */ XMLHttpRequest, /* settings */ ZeptoAjaxSettings) => CallbackTo[Boolean] = null,
-    cache: js.UndefOr[Boolean] = js.undefined,
-    complete: (/* xhr */ XMLHttpRequest, /* status */ String) => Callback = null,
-    contentType: String = null,
-    context: js.Any = null,
-    data: js.Any = null,
-    dataType: String = null,
-    error: (/* xhr */ XMLHttpRequest, /* errorType */ String, /* error */ js.Error) => Callback = null,
-    global: js.UndefOr[Boolean] = js.undefined,
-    headers: StringDictionary[String] = null,
-    jsonp: String = null,
-    jsonpCallback: js.Any = null,
-    mimeType: String = null,
-    password: String = null,
-    processData: js.UndefOr[Boolean] = js.undefined,
-    success: (/* data */ js.Any, /* status */ String, /* xhr */ XMLHttpRequest) => Callback = null,
-    timeout: Int | Double = null,
-    traditional: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null,
-    url: String = null,
-    username: String = null,
-    xhrFields: StringDictionary[js.Any] = null
-  ): ZeptoAjaxSettings = {
+  
+  inline def apply(): ZeptoAjaxSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction2((t0: /* xhr */ org.scalajs.dom.raw.XMLHttpRequest, t1: /* settings */ typingsJapgolly.zepto.ZeptoAjaxSettings) => beforeSend(t0, t1).runNow()))
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction2((t0: /* xhr */ org.scalajs.dom.raw.XMLHttpRequest, t1: /* status */ java.lang.String) => complete(t0, t1).runNow()))
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3((t0: /* xhr */ org.scalajs.dom.raw.XMLHttpRequest, t1: /* errorType */ java.lang.String, t2: /* error */ js.Error) => error(t0, t1, t2).runNow()))
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])
-    if (jsonpCallback != null) __obj.updateDynamic("jsonpCallback")(jsonpCallback.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(processData)) __obj.updateDynamic("processData")(processData.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3((t0: /* data */ js.Any, t1: /* status */ java.lang.String, t2: /* xhr */ org.scalajs.dom.raw.XMLHttpRequest) => success(t0, t1, t2).runNow()))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(traditional)) __obj.updateDynamic("traditional")(traditional.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (xhrFields != null) __obj.updateDynamic("xhrFields")(xhrFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZeptoAjaxSettings]
   }
+  
+  extension [Self <: ZeptoAjaxSettings](x: Self) {
+    
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    
+    inline def setBeforeSend(value: (/* xhr */ XMLHttpRequest, ZeptoAjaxSettings) => Boolean): Self = StObject.set(x, "beforeSend", js.Any.fromFunction2(value))
+    
+    inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
+    
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    
+    inline def setComplete(value: (/* xhr */ XMLHttpRequest, /* status */ String) => Callback): Self = StObject.set(x, "complete", js.Any.fromFunction2((t0: /* xhr */ XMLHttpRequest, t1: /* status */ String) => (value(t0, t1)).runNow()))
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setError(value: (/* xhr */ XMLHttpRequest, /* errorType */ String, /* error */ js.Error) => Callback): Self = StObject.set(x, "error", js.Any.fromFunction3((t0: /* xhr */ XMLHttpRequest, t1: /* errorType */ String, t2: /* error */ js.Error) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    
+    inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+    
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setJsonp(value: String): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+    
+    inline def setJsonpCallback(value: Any): Self = StObject.set(x, "jsonpCallback", value.asInstanceOf[js.Any])
+    
+    inline def setJsonpCallbackUndefined: Self = StObject.set(x, "jsonpCallback", js.undefined)
+    
+    inline def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
+    
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    
+    inline def setProcessData(value: Boolean): Self = StObject.set(x, "processData", value.asInstanceOf[js.Any])
+    
+    inline def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
+    
+    inline def setSuccess(value: (/* data */ Any, /* status */ String, /* xhr */ XMLHttpRequest) => Callback): Self = StObject.set(x, "success", js.Any.fromFunction3((t0: /* data */ Any, t1: /* status */ String, t2: /* xhr */ XMLHttpRequest) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setTraditional(value: Boolean): Self = StObject.set(x, "traditional", value.asInstanceOf[js.Any])
+    
+    inline def setTraditionalUndefined: Self = StObject.set(x, "traditional", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    
+    inline def setXhrFields(value: StringDictionary[Any]): Self = StObject.set(x, "xhrFields", value.asInstanceOf[js.Any])
+    
+    inline def setXhrFieldsUndefined: Self = StObject.set(x, "xhrFields", js.undefined)
+  }
 }
-

@@ -1,14 +1,16 @@
 package typingsJapgolly.aframe.mod.THREE
 
-import org.scalajs.dom.raw.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.WebGLLights")
 @js.native
-class WebGLLights protected ()
+open class WebGLLights protected ()
   extends typingsJapgolly.three.mod.WebGLLights {
-  def this(gl: WebGLRenderingContext, properties: js.Any, info: js.Any) = this()
+  def this(
+    extensions: typingsJapgolly.three.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions,
+    capabilities: typingsJapgolly.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities
+  ) = this()
 }
-

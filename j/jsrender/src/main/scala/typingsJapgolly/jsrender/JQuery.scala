@@ -2,15 +2,12 @@ package typingsJapgolly.jsrender
 
 import typingsJapgolly.jsrender.JsViews.Hash
 import typingsJapgolly.jsrender.JsViews.TemplateRender
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JQuery extends js.Object {
-  /* var htmlString = $("#template").render(data, myHelpersObject); // Render template, and pass in helpers or context */
-  @JSName("render")
-  var render_Original: TemplateRender = js.native
+trait JQuery extends StObject {
+  
   /**
   	 * Template render method: render the template as a string, using the specified data and helpers/context
   	 * var htmlString = template(data, myHelpersObject);
@@ -24,10 +21,29 @@ trait JQuery extends js.Object {
   	 * @returns {string}   rendered template
   	 */
   /* var htmlString = $("#template").render(data, myHelpersObject); // Render template, and pass in helpers or context */
-  def render(): String = js.native
-  def render(data: js.Any): String = js.native
-  def render(data: js.Any, helpersOrContext: Hash[_]): String = js.native
-  def render(data: js.Any, helpersOrContext: Hash[_], noIteration: Boolean): String = js.native
-  def render(data: js.Any, noIteration: Boolean): String = js.native
+  def render(): String
+  def render(data: Any): String
+  def render(data: Any, helpersOrContext: Unit, noIteration: Boolean): String
+  def render(data: Any, helpersOrContext: Hash[Any]): String
+  def render(data: Any, helpersOrContext: Hash[Any], noIteration: Boolean): String
+  def render(data: Any, noIteration: Boolean): String
+  def render(data: Unit, helpersOrContext: Unit, noIteration: Boolean): String
+  def render(data: Unit, helpersOrContext: Hash[Any]): String
+  def render(data: Unit, helpersOrContext: Hash[Any], noIteration: Boolean): String
+  def render(data: Unit, noIteration: Boolean): String
+  /* var htmlString = $("#template").render(data, myHelpersObject); // Render template, and pass in helpers or context */
+  @JSName("render")
+  var render_Original: TemplateRender
 }
-
+object JQuery {
+  
+  inline def apply(render: TemplateRender): JQuery = {
+    val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  extension [Self <: JQuery](x: Self) {
+    
+    inline def setRender(value: TemplateRender): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+  }
+}

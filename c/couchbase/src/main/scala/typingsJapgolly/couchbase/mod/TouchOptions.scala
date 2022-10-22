@@ -1,27 +1,36 @@
 package typingsJapgolly.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TouchOptions extends js.Object {
+trait TouchOptions extends StObject {
+  
   /**
-    * 	Ensures this operation is persisted to this many nodes.
+    *     Ensures this operation is persisted to this many nodes.
     */
   var persist_to: js.UndefOr[Double] = js.undefined
+  
   /**
     * Ensures this operation is replicated to this many nodes.
     */
   var replicate_to: js.UndefOr[Double] = js.undefined
 }
-
 object TouchOptions {
-  @scala.inline
-  def apply(persist_to: Int | Double = null, replicate_to: Int | Double = null): TouchOptions = {
+  
+  inline def apply(): TouchOptions = {
     val __obj = js.Dynamic.literal()
-    if (persist_to != null) __obj.updateDynamic("persist_to")(persist_to.asInstanceOf[js.Any])
-    if (replicate_to != null) __obj.updateDynamic("replicate_to")(replicate_to.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchOptions]
   }
+  
+  extension [Self <: TouchOptions](x: Self) {
+    
+    inline def setPersist_to(value: Double): Self = StObject.set(x, "persist_to", value.asInstanceOf[js.Any])
+    
+    inline def setPersist_toUndefined: Self = StObject.set(x, "persist_to", js.undefined)
+    
+    inline def setReplicate_to(value: Double): Self = StObject.set(x, "replicate_to", value.asInstanceOf[js.Any])
+    
+    inline def setReplicate_toUndefined: Self = StObject.set(x, "replicate_to", js.undefined)
+  }
 }
-

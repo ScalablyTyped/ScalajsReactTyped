@@ -1,35 +1,27 @@
 package typingsJapgolly.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ParameterAllowableValuesType extends js.Object
-
+sealed trait ParameterAllowableValuesType extends StObject
 @JSGlobal("tableau.ParameterAllowableValuesType")
 @js.native
-object ParameterAllowableValuesType extends js.Object {
-  @js.native
-  sealed trait ALL extends ParameterAllowableValuesType
+object ParameterAllowableValuesType extends StObject {
   
   @js.native
-  sealed trait LIST extends ParameterAllowableValuesType
+  sealed trait ALL
+    extends StObject
+       with ParameterAllowableValuesType
   
   @js.native
-  sealed trait RANGE extends ParameterAllowableValuesType
+  sealed trait LIST
+    extends StObject
+       with ParameterAllowableValuesType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ParameterAllowableValuesType with String] = js.native
-  /* "all" */ @js.native
-  object ALL extends TopLevel[ALL with String]
-  
-  /* "list" */ @js.native
-  object LIST extends TopLevel[LIST with String]
-  
-  /* "range" */ @js.native
-  object RANGE extends TopLevel[RANGE with String]
-  
+  @js.native
+  sealed trait RANGE
+    extends StObject
+       with ParameterAllowableValuesType
 }
-

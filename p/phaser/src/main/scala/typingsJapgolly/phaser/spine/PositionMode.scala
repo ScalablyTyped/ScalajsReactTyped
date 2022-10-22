@@ -1,29 +1,22 @@
 package typingsJapgolly.phaser.spine
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PositionMode extends js.Object
-
+sealed trait PositionMode extends StObject
 @JSGlobal("spine.PositionMode")
 @js.native
-object PositionMode extends js.Object {
-  @js.native
-  sealed trait Fixed extends PositionMode
+object PositionMode extends StObject {
   
   @js.native
-  sealed trait Percent extends PositionMode
+  sealed trait Fixed
+    extends StObject
+       with PositionMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PositionMode with Double] = js.native
-  /* 0 */ @js.native
-  object Fixed extends TopLevel[Fixed with Double]
-  
-  /* 1 */ @js.native
-  object Percent extends TopLevel[Percent with Double]
-  
+  @js.native
+  sealed trait Percent
+    extends StObject
+       with PositionMode
 }
-

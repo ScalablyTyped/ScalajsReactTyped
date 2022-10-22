@@ -1,24 +1,20 @@
 package typingsJapgolly.electronNotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object electronNotifyStrings {
-  @js.native
-  sealed trait click extends js.Object
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait click extends StObject
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait show extends js.Object
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
+  @js.native
+  sealed trait show extends StObject
+  inline def show: show = "show".asInstanceOf[show]
 }
-

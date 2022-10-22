@@ -3,21 +3,49 @@ package typingsJapgolly.fortawesomeFreeSolidSvgIcons
 import typingsJapgolly.fortawesomeFontawesomeCommonTypes.mod.IconDefinition
 import typingsJapgolly.fortawesomeFontawesomeCommonTypes.mod.IconName
 import typingsJapgolly.fortawesomeFontawesomeCommonTypes.mod.IconPrefix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fortawesome/free-solid-svg-icons/faBan", JSImport.Namespace)
-@js.native
-object faBanMod extends js.Object {
+object faBanMod {
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBan", "aliases")
+  @js.native
+  val aliases: js.Array[String | Double] = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBan", "definition")
+  @js.native
   val definition: IconDefinition = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBan", "faBan")
+  @js.native
   val faBan: IconDefinition = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBan", "height")
+  @js.native
   val height: Double = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBan", "iconName")
+  @js.native
   val iconName: IconName = js.native
-  val ligatures: js.Array[String] = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBan", "ligatures")
+  @js.native
+  val ligatures: js.Array[String | Double] = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBan", "prefix")
+  @js.native
   val prefix: IconPrefix = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBan", "svgPathData")
+  @js.native
   val svgPathData: String = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBan", "unicode")
+  @js.native
   val unicode: String = js.native
+  
+  @JSImport("@fortawesome/free-solid-svg-icons/faBan", "width")
+  @js.native
   val width: Double = js.native
 }
-

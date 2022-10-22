@@ -10,10 +10,10 @@ Highlight select fragments of texts
 | ------------------ | :-------------: |
 | Full name          | react-highlighter |
 | Keywords           | react-component, react, highlight |
-| # releases         | 2 |
-| # dependents       | 24 |
-| # downloads        | 1701789 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 282056.3333333333 |
+| # stars            | 149.0 |
 
 ## Links
 - [Homepage](https://github.com/helior/react-highlighter)

@@ -1,21 +1,30 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnnotationsMeasureTypeLabelStyleOptions extends js.Object {
+trait AnnotationsMeasureTypeLabelStyleOptions extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
-  var fontSize: js.UndefOr[String] = js.undefined
+  
+  var fontSize: js.UndefOr[Double] = js.undefined
 }
-
 object AnnotationsMeasureTypeLabelStyleOptions {
-  @scala.inline
-  def apply(color: String = null, fontSize: String = null): AnnotationsMeasureTypeLabelStyleOptions = {
+  
+  inline def apply(): AnnotationsMeasureTypeLabelStyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsMeasureTypeLabelStyleOptions]
   }
+  
+  extension [Self <: AnnotationsMeasureTypeLabelStyleOptions](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+  }
 }
-

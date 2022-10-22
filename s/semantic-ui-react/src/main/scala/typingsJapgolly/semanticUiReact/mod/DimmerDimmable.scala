@@ -1,23 +1,22 @@
 package typingsJapgolly.semanticUiReact.mod
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.facade.React.ComponentClassP
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.semanticUiReact.dimmerDimmableMod.DimmerDimmableProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesDimmerDimmerDimmableMod.DimmerDimmableProps
+import typingsJapgolly.semanticUiReact.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "DimmerDimmable")
 @js.native
-class DimmerDimmable protected ()
-  extends Component[DimmerDimmableProps, ComponentState, js.Any] {
+open class DimmerDimmable protected ()
+  extends Component[DimmerDimmableProps, js.Object, Any] {
   def this(props: DimmerDimmableProps) = this()
-  def this(props: DimmerDimmableProps, context: js.Any) = this()
+  def this(props: DimmerDimmableProps, context: Any) = this()
 }
-
-@JSImport("semantic-ui-react", "DimmerDimmable")
-@js.native
-object DimmerDimmable extends TopLevel[ComponentClass[DimmerDimmableProps, ComponentState]]
-
+object DimmerDimmable {
+  
+  inline def apply: ComponentClassP[DimmerDimmableProps & js.Object] = ^.asInstanceOf[js.Dynamic].selectDynamic("DimmerDimmable").asInstanceOf[ComponentClassP[DimmerDimmableProps & js.Object]]
+}

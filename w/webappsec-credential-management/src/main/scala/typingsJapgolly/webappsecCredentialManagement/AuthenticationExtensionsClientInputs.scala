@@ -1,48 +1,68 @@
 package typingsJapgolly.webappsecCredentialManagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AuthenticationExtensionsClientInputs extends js.Object {
+trait AuthenticationExtensionsClientInputs extends StObject {
+  
   var appid: js.UndefOr[String] = js.undefined
-  var authnSel: js.UndefOr[
-    js.Array[
-      scala.scalajs.js.typedarray.ArrayBufferView | scala.scalajs.js.typedarray.ArrayBuffer
-    ]
-  ] = js.undefined
+  
+  var authnSel: js.UndefOr[js.Array[js.typedarray.ArrayBufferView | js.typedarray.ArrayBuffer]] = js.undefined
+  
   var exts: js.UndefOr[Boolean] = js.undefined
+  
   var loc: js.UndefOr[Boolean] = js.undefined
+  
   var txAuthGeneric: js.UndefOr[txAuthGenericArg] = js.undefined
+  
   var txAuthSimple: js.UndefOr[String] = js.undefined
+  
   var uvi: js.UndefOr[Boolean] = js.undefined
+  
   var uvm: js.UndefOr[Boolean] = js.undefined
 }
-
 object AuthenticationExtensionsClientInputs {
-  @scala.inline
-  def apply(
-    appid: String = null,
-    authnSel: js.Array[
-      scala.scalajs.js.typedarray.ArrayBufferView | scala.scalajs.js.typedarray.ArrayBuffer
-    ] = null,
-    exts: js.UndefOr[Boolean] = js.undefined,
-    loc: js.UndefOr[Boolean] = js.undefined,
-    txAuthGeneric: txAuthGenericArg = null,
-    txAuthSimple: String = null,
-    uvi: js.UndefOr[Boolean] = js.undefined,
-    uvm: js.UndefOr[Boolean] = js.undefined
-  ): AuthenticationExtensionsClientInputs = {
+  
+  inline def apply(): AuthenticationExtensionsClientInputs = {
     val __obj = js.Dynamic.literal()
-    if (appid != null) __obj.updateDynamic("appid")(appid.asInstanceOf[js.Any])
-    if (authnSel != null) __obj.updateDynamic("authnSel")(authnSel.asInstanceOf[js.Any])
-    if (!js.isUndefined(exts)) __obj.updateDynamic("exts")(exts.asInstanceOf[js.Any])
-    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (txAuthGeneric != null) __obj.updateDynamic("txAuthGeneric")(txAuthGeneric.asInstanceOf[js.Any])
-    if (txAuthSimple != null) __obj.updateDynamic("txAuthSimple")(txAuthSimple.asInstanceOf[js.Any])
-    if (!js.isUndefined(uvi)) __obj.updateDynamic("uvi")(uvi.asInstanceOf[js.Any])
-    if (!js.isUndefined(uvm)) __obj.updateDynamic("uvm")(uvm.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationExtensionsClientInputs]
   }
+  
+  extension [Self <: AuthenticationExtensionsClientInputs](x: Self) {
+    
+    inline def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
+    
+    inline def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
+    
+    inline def setAuthnSel(value: js.Array[js.typedarray.ArrayBufferView | js.typedarray.ArrayBuffer]): Self = StObject.set(x, "authnSel", value.asInstanceOf[js.Any])
+    
+    inline def setAuthnSelUndefined: Self = StObject.set(x, "authnSel", js.undefined)
+    
+    inline def setAuthnSelVarargs(value: (js.typedarray.ArrayBufferView | js.typedarray.ArrayBuffer)*): Self = StObject.set(x, "authnSel", js.Array(value*))
+    
+    inline def setExts(value: Boolean): Self = StObject.set(x, "exts", value.asInstanceOf[js.Any])
+    
+    inline def setExtsUndefined: Self = StObject.set(x, "exts", js.undefined)
+    
+    inline def setLoc(value: Boolean): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    
+    inline def setTxAuthGeneric(value: txAuthGenericArg): Self = StObject.set(x, "txAuthGeneric", value.asInstanceOf[js.Any])
+    
+    inline def setTxAuthGenericUndefined: Self = StObject.set(x, "txAuthGeneric", js.undefined)
+    
+    inline def setTxAuthSimple(value: String): Self = StObject.set(x, "txAuthSimple", value.asInstanceOf[js.Any])
+    
+    inline def setTxAuthSimpleUndefined: Self = StObject.set(x, "txAuthSimple", js.undefined)
+    
+    inline def setUvi(value: Boolean): Self = StObject.set(x, "uvi", value.asInstanceOf[js.Any])
+    
+    inline def setUviUndefined: Self = StObject.set(x, "uvi", js.undefined)
+    
+    inline def setUvm(value: Boolean): Self = StObject.set(x, "uvm", value.asInstanceOf[js.Any])
+    
+    inline def setUvmUndefined: Self = StObject.set(x, "uvm", js.undefined)
+  }
 }
-

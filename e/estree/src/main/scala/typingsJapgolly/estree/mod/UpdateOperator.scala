@@ -1,21 +1,17 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.estree.estreeStrings.PlussignPlussign
   - typingsJapgolly.estree.estreeStrings.`--`
 */
-trait UpdateOperator extends js.Object
-
+trait UpdateOperator extends StObject
 object UpdateOperator {
-  @scala.inline
-  def `--`: typingsJapgolly.estree.estreeStrings.`--` = this.cast("--")
-  @scala.inline
-  def PlussignPlussign: typingsJapgolly.estree.estreeStrings.PlussignPlussign = this.cast("++")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `--`: typingsJapgolly.estree.estreeStrings.`--` = "--".asInstanceOf[typingsJapgolly.estree.estreeStrings.`--`]
+  
+  inline def PlussignPlussign: typingsJapgolly.estree.estreeStrings.PlussignPlussign = "++".asInstanceOf[typingsJapgolly.estree.estreeStrings.PlussignPlussign]
 }
-

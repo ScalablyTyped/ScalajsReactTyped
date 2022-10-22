@@ -1,40 +1,36 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.ObjectExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait ObjectExpression_
-  extends Expression
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with Expression
+     with Standardized {
+  
   var properties: js.Array[ObjectMethod_ | ObjectProperty_ | SpreadElement_]
+  
   @JSName("type")
   var type_ObjectExpression_ : ObjectExpression
 }
-
 object ObjectExpression_ {
-  @scala.inline
-  def apply(
-    properties: js.Array[ObjectMethod_ | ObjectProperty_ | SpreadElement_],
-    `type`: ObjectExpression,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): ObjectExpression_ = {
-    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(properties: js.Array[ObjectMethod_ | ObjectProperty_ | SpreadElement_]): ObjectExpression_ = {
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ObjectExpression")
     __obj.asInstanceOf[ObjectExpression_]
   }
+  
+  extension [Self <: ObjectExpression_](x: Self) {
+    
+    inline def setProperties(value: js.Array[ObjectMethod_ | ObjectProperty_ | SpreadElement_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesVarargs(value: (ObjectMethod_ | ObjectProperty_ | SpreadElement_)*): Self = StObject.set(x, "properties", js.Array(value*))
+    
+    inline def setType(value: ObjectExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-environment-jsdom" : "24.9.0"
+      "jest-environment-jsdom" : "29.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-environment-jsdom" : "24.9.0"
+      "jest-environment-jsdom" : "29.0.3"
     }
   ],
   "compile-devDependencies" : [

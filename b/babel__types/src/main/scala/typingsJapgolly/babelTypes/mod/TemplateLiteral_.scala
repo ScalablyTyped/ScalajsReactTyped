@@ -1,43 +1,43 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.TemplateLiteral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait TemplateLiteral_
-  extends Expression
+  extends StObject
      with BaseNode
-     with Literal {
-  var expressions: js.Array[Expression]
+     with Expression
+     with Literal
+     with Standardized {
+  
+  var expressions: js.Array[Expression | TSType]
+  
   var quasis: js.Array[TemplateElement_]
+  
   @JSName("type")
   var type_TemplateLiteral_ : TemplateLiteral
 }
-
 object TemplateLiteral_ {
-  @scala.inline
-  def apply(
-    expressions: js.Array[Expression],
-    quasis: js.Array[TemplateElement_],
-    `type`: TemplateLiteral,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): TemplateLiteral_ = {
-    val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any], quasis = quasis.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(expressions: js.Array[Expression | TSType], quasis: js.Array[TemplateElement_]): TemplateLiteral_ = {
+    val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any], quasis = quasis.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TemplateLiteral")
     __obj.asInstanceOf[TemplateLiteral_]
   }
+  
+  extension [Self <: TemplateLiteral_](x: Self) {
+    
+    inline def setExpressions(value: js.Array[Expression | TSType]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    
+    inline def setExpressionsVarargs(value: (Expression | TSType)*): Self = StObject.set(x, "expressions", js.Array(value*))
+    
+    inline def setQuasis(value: js.Array[TemplateElement_]): Self = StObject.set(x, "quasis", value.asInstanceOf[js.Any])
+    
+    inline def setQuasisVarargs(value: TemplateElement_ *): Self = StObject.set(x, "quasis", js.Array(value*))
+    
+    inline def setType(value: TemplateLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,32 +1,43 @@
 package typingsJapgolly.mendixmodelsdk.mod.webservices
 
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit
-import typingsJapgolly.mendixmodelsdk.webservicesMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenWebservicesMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "webservices.PublishedResource")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "webservices.PublishedResource")
 @js.native
-abstract class PublishedResource protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.webservices.PublishedResource {
+open class PublishedResource protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.webservices.PublishedResource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "webservices.PublishedResource")
-@js.native
-object PublishedResource extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object PublishedResource {
+  
+  @JSImport("mendixmodelsdk", "webservices.PublishedResource")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "webservices.PublishedResource.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "webservices.PublishedResource.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

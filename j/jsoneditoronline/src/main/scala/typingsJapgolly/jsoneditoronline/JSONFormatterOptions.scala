@@ -1,22 +1,31 @@
 package typingsJapgolly.jsoneditoronline
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSONFormatterOptions extends js.Object {
+trait JSONFormatterOptions extends StObject {
+  
   var change: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var indentation: js.UndefOr[Double] = js.undefined
 }
-
 object JSONFormatterOptions {
-  @scala.inline
-  def apply(change: js.UndefOr[Callback] = js.undefined, indentation: Int | Double = null): JSONFormatterOptions = {
+  
+  inline def apply(): JSONFormatterOptions = {
     val __obj = js.Dynamic.literal()
-    change.foreach(p => __obj.updateDynamic("change")(p.toJsFn))
-    if (indentation != null) __obj.updateDynamic("indentation")(indentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONFormatterOptions]
   }
+  
+  extension [Self <: JSONFormatterOptions](x: Self) {
+    
+    inline def setChange(value: Callback): Self = StObject.set(x, "change", value.toJsFn)
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setIndentation(value: Double): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
+    
+    inline def setIndentationUndefined: Self = StObject.set(x, "indentation", js.undefined)
+  }
 }
-

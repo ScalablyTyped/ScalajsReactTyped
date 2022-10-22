@@ -1,21 +1,7 @@
 package typingsJapgolly.gapiCalendar.gapi.client.calendar
 
-import typingsJapgolly.gapi.gapi.client.HttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("gapi.client.calendar.acl")
-@js.native
-class acl () extends js.Object
-
-/* static members */
-@JSGlobal("gapi.client.calendar.acl")
-@js.native
-object acl extends js.Object {
-  def delete(parameters: AclDeleteParameters): HttpRequest[Unit] = js.native
-  def get(parameters: AclGetParameters): HttpRequest[Acl_] = js.native
-  def insert(parameters: AclInsertParameters): HttpRequest[Acl_] = js.native
-  def update(parameters: AclUpdateParameters): HttpRequest[Acl_] = js.native
-}
-
+trait acl extends StObject

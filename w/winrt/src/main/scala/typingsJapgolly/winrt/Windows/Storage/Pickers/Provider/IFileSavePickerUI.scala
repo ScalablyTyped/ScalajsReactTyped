@@ -1,35 +1,55 @@
 package typingsJapgolly.winrt.Windows.Storage.Pickers.Provider
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IFileSavePickerUI extends js.Object {
+trait IFileSavePickerUI extends StObject {
+  
   var allowedFileTypes: IVectorView[String]
+  
   var fileName: String
-  var onfilenamechanged: js.Any
-  var ontargetfilerequested: js.Any
+  
+  var onfilenamechanged: Any
+  
+  var ontargetfilerequested: Any
+  
   var settingsIdentifier: String
+  
   var title: String
+  
   def trySetFileName(value: String): SetFileNameResult
 }
-
 object IFileSavePickerUI {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     allowedFileTypes: IVectorView[String],
     fileName: String,
-    onfilenamechanged: js.Any,
-    ontargetfilerequested: js.Any,
+    onfilenamechanged: Any,
+    ontargetfilerequested: Any,
     settingsIdentifier: String,
     title: String,
-    trySetFileName: String => CallbackTo[SetFileNameResult]
+    trySetFileName: String => SetFileNameResult
   ): IFileSavePickerUI = {
-    val __obj = js.Dynamic.literal(allowedFileTypes = allowedFileTypes.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], onfilenamechanged = onfilenamechanged.asInstanceOf[js.Any], ontargetfilerequested = ontargetfilerequested.asInstanceOf[js.Any], settingsIdentifier = settingsIdentifier.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("trySetFileName")(js.Any.fromFunction1((t0: java.lang.String) => trySetFileName(t0).runNow()))
+    val __obj = js.Dynamic.literal(allowedFileTypes = allowedFileTypes.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], onfilenamechanged = onfilenamechanged.asInstanceOf[js.Any], ontargetfilerequested = ontargetfilerequested.asInstanceOf[js.Any], settingsIdentifier = settingsIdentifier.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], trySetFileName = js.Any.fromFunction1(trySetFileName))
     __obj.asInstanceOf[IFileSavePickerUI]
   }
+  
+  extension [Self <: IFileSavePickerUI](x: Self) {
+    
+    inline def setAllowedFileTypes(value: IVectorView[String]): Self = StObject.set(x, "allowedFileTypes", value.asInstanceOf[js.Any])
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setOnfilenamechanged(value: Any): Self = StObject.set(x, "onfilenamechanged", value.asInstanceOf[js.Any])
+    
+    inline def setOntargetfilerequested(value: Any): Self = StObject.set(x, "ontargetfilerequested", value.asInstanceOf[js.Any])
+    
+    inline def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTrySetFileName(value: String => SetFileNameResult): Self = StObject.set(x, "trySetFileName", js.Any.fromFunction1(value))
+  }
 }
-

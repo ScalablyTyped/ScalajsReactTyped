@@ -1,27 +1,90 @@
 package typingsJapgolly.sinonChrome.mod
 
 import typingsJapgolly.sinonChrome.mod.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-chrome", "management")
-@js.native
-object management extends js.Object {
-  var createAppShortcut: SinonChromeStub = js.native
-  var generateAppForLink: SinonChromeStub = js.native
-  var get: SinonChromeStub = js.native
-  var getAll: SinonChromeStub = js.native
-  var getPermissionWarningsById: SinonChromeStub = js.native
-  var getPermissionWarningsByManifest: SinonChromeStub = js.native
-  var launchApp: SinonChromeStub = js.native
-  var onDisabled: Event = js.native
-  var onEnabled: Event = js.native
-  var onInstalled: Event = js.native
-  var onUninstalled: Event = js.native
-  var setEnabled: SinonChromeStub = js.native
-  var setLaunchType: SinonChromeStub = js.native
-  var uninstall: SinonChromeStub = js.native
-  var uninstallSelf: SinonChromeStub = js.native
+object management {
+  
+  @JSImport("sinon-chrome", "management")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("sinon-chrome", "management.createAppShortcut")
+  @js.native
+  def createAppShortcut: SinonChromeStub = js.native
+  inline def createAppShortcut_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createAppShortcut")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "management.generateAppForLink")
+  @js.native
+  def generateAppForLink: SinonChromeStub = js.native
+  inline def generateAppForLink_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("generateAppForLink")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "management.get")
+  @js.native
+  def get: SinonChromeStub = js.native
+  
+  @JSImport("sinon-chrome", "management.getAll")
+  @js.native
+  def getAll: SinonChromeStub = js.native
+  inline def getAll_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAll")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "management.getPermissionWarningsById")
+  @js.native
+  def getPermissionWarningsById: SinonChromeStub = js.native
+  inline def getPermissionWarningsById_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getPermissionWarningsById")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "management.getPermissionWarningsByManifest")
+  @js.native
+  def getPermissionWarningsByManifest: SinonChromeStub = js.native
+  inline def getPermissionWarningsByManifest_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getPermissionWarningsByManifest")(x.asInstanceOf[js.Any])
+  
+  inline def get_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "management.launchApp")
+  @js.native
+  def launchApp: SinonChromeStub = js.native
+  inline def launchApp_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("launchApp")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "management.onDisabled")
+  @js.native
+  def onDisabled: Event = js.native
+  inline def onDisabled_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onDisabled")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "management.onEnabled")
+  @js.native
+  def onEnabled: Event = js.native
+  inline def onEnabled_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onEnabled")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "management.onInstalled")
+  @js.native
+  def onInstalled: Event = js.native
+  inline def onInstalled_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onInstalled")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "management.onUninstalled")
+  @js.native
+  def onUninstalled: Event = js.native
+  inline def onUninstalled_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onUninstalled")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "management.setEnabled")
+  @js.native
+  def setEnabled: SinonChromeStub = js.native
+  inline def setEnabled_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setEnabled")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "management.setLaunchType")
+  @js.native
+  def setLaunchType: SinonChromeStub = js.native
+  inline def setLaunchType_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setLaunchType")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "management.uninstall")
+  @js.native
+  def uninstall: SinonChromeStub = js.native
+  
+  @JSImport("sinon-chrome", "management.uninstallSelf")
+  @js.native
+  def uninstallSelf: SinonChromeStub = js.native
+  inline def uninstallSelf_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uninstallSelf")(x.asInstanceOf[js.Any])
+  
+  inline def uninstall_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uninstall")(x.asInstanceOf[js.Any])
 }
-

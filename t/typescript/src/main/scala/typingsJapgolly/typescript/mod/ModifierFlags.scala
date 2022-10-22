@@ -1,131 +1,171 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ModifierFlags extends js.Object
-
+sealed trait ModifierFlags extends StObject
 @JSImport("typescript", "ModifierFlags")
 @js.native
-object ModifierFlags extends js.Object {
-  @js.native
-  sealed trait Abstract extends ModifierFlags
-  
-  @js.native
-  sealed trait AccessibilityModifier extends ModifierFlags
-  
-  @js.native
-  sealed trait All extends ModifierFlags
-  
-  @js.native
-  sealed trait Ambient extends ModifierFlags
-  
-  @js.native
-  sealed trait Async extends ModifierFlags
-  
-  @js.native
-  sealed trait Const extends ModifierFlags
-  
-  @js.native
-  sealed trait Default extends ModifierFlags
-  
-  @js.native
-  sealed trait Export extends ModifierFlags
-  
-  @js.native
-  sealed trait ExportDefault extends ModifierFlags
-  
-  @js.native
-  sealed trait HasComputedFlags extends ModifierFlags
-  
-  @js.native
-  sealed trait NonPublicAccessibilityModifier extends ModifierFlags
-  
-  @js.native
-  sealed trait None extends ModifierFlags
-  
-  @js.native
-  sealed trait ParameterPropertyModifier extends ModifierFlags
-  
-  @js.native
-  sealed trait Private extends ModifierFlags
-  
-  @js.native
-  sealed trait Protected extends ModifierFlags
-  
-  @js.native
-  sealed trait Public extends ModifierFlags
-  
-  @js.native
-  sealed trait Readonly extends ModifierFlags
-  
-  @js.native
-  sealed trait Static extends ModifierFlags
-  
-  @js.native
-  sealed trait TypeScriptModifier extends ModifierFlags
+object ModifierFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ModifierFlags with Double] = js.native
-  /* 128 */ @js.native
-  object Abstract extends TopLevel[Abstract with Double]
+  def apply(value: Double): js.UndefOr[ModifierFlags & Double] = js.native
   
-  /* 28 */ @js.native
-  object AccessibilityModifier extends TopLevel[AccessibilityModifier with Double]
+  @js.native
+  sealed trait Abstract
+    extends StObject
+       with ModifierFlags
+  /* 128 */ val Abstract: typingsJapgolly.typescript.mod.ModifierFlags.Abstract & Double = js.native
   
-  /* 3071 */ @js.native
-  object All extends TopLevel[All with Double]
+  @js.native
+  sealed trait AccessibilityModifier
+    extends StObject
+       with ModifierFlags
+  /* 28 */ val AccessibilityModifier: typingsJapgolly.typescript.mod.ModifierFlags.AccessibilityModifier & Double = js.native
   
-  /* 2 */ @js.native
-  object Ambient extends TopLevel[Ambient with Double]
+  @js.native
+  sealed trait All
+    extends StObject
+       with ModifierFlags
+  /* 257023 */ val All: typingsJapgolly.typescript.mod.ModifierFlags.All & Double = js.native
   
-  /* 256 */ @js.native
-  object Async extends TopLevel[Async with Double]
+  @js.native
+  sealed trait Ambient
+    extends StObject
+       with ModifierFlags
+  /* 2 */ val Ambient: typingsJapgolly.typescript.mod.ModifierFlags.Ambient & Double = js.native
   
-  /* 2048 */ @js.native
-  object Const extends TopLevel[Const with Double]
+  @js.native
+  sealed trait Async
+    extends StObject
+       with ModifierFlags
+  /* 256 */ val Async: typingsJapgolly.typescript.mod.ModifierFlags.Async & Double = js.native
   
-  /* 512 */ @js.native
-  object Default extends TopLevel[Default with Double]
+  @js.native
+  sealed trait Const
+    extends StObject
+       with ModifierFlags
+  /* 2048 */ val Const: typingsJapgolly.typescript.mod.ModifierFlags.Const & Double = js.native
   
-  /* 1 */ @js.native
-  object Export extends TopLevel[Export with Double]
+  @js.native
+  sealed trait Decorator
+    extends StObject
+       with ModifierFlags
+  /* 131072 */ val Decorator: typingsJapgolly.typescript.mod.ModifierFlags.Decorator & Double = js.native
   
-  /* 513 */ @js.native
-  object ExportDefault extends TopLevel[ExportDefault with Double]
+  @js.native
+  sealed trait Default
+    extends StObject
+       with ModifierFlags
+  /* 512 */ val Default: typingsJapgolly.typescript.mod.ModifierFlags.Default & Double = js.native
   
-  /* 536870912 */ @js.native
-  object HasComputedFlags extends TopLevel[HasComputedFlags with Double]
+  @js.native
+  sealed trait Deprecated
+    extends StObject
+       with ModifierFlags
+  /* 8192 */ val Deprecated: typingsJapgolly.typescript.mod.ModifierFlags.Deprecated & Double = js.native
   
-  /* 24 */ @js.native
-  object NonPublicAccessibilityModifier extends TopLevel[NonPublicAccessibilityModifier with Double]
+  @js.native
+  sealed trait Export
+    extends StObject
+       with ModifierFlags
+  /* 1 */ val Export: typingsJapgolly.typescript.mod.ModifierFlags.Export & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait ExportDefault
+    extends StObject
+       with ModifierFlags
+  /* 513 */ val ExportDefault: typingsJapgolly.typescript.mod.ModifierFlags.ExportDefault & Double = js.native
   
-  /* 92 */ @js.native
-  object ParameterPropertyModifier extends TopLevel[ParameterPropertyModifier with Double]
+  @js.native
+  sealed trait HasComputedFlags
+    extends StObject
+       with ModifierFlags
+  /* 536870912 */ val HasComputedFlags: typingsJapgolly.typescript.mod.ModifierFlags.HasComputedFlags & Double = js.native
   
-  /* 8 */ @js.native
-  object Private extends TopLevel[Private with Double]
+  @js.native
+  sealed trait HasComputedJSDocModifiers
+    extends StObject
+       with ModifierFlags
+  /* 4096 */ val HasComputedJSDocModifiers: typingsJapgolly.typescript.mod.ModifierFlags.HasComputedJSDocModifiers & Double = js.native
   
-  /* 16 */ @js.native
-  object Protected extends TopLevel[Protected with Double]
+  @js.native
+  sealed trait In
+    extends StObject
+       with ModifierFlags
+  /* 32768 */ val In: typingsJapgolly.typescript.mod.ModifierFlags.In & Double = js.native
   
-  /* 4 */ @js.native
-  object Public extends TopLevel[Public with Double]
+  @js.native
+  sealed trait Modifier
+    extends StObject
+       with ModifierFlags
+  /* 125951 */ val Modifier: typingsJapgolly.typescript.mod.ModifierFlags.Modifier & Double = js.native
   
-  /* 64 */ @js.native
-  object Readonly extends TopLevel[Readonly with Double]
+  @js.native
+  sealed trait NonPublicAccessibilityModifier
+    extends StObject
+       with ModifierFlags
+  /* 24 */ val NonPublicAccessibilityModifier: typingsJapgolly.typescript.mod.ModifierFlags.NonPublicAccessibilityModifier & Double = js.native
   
-  /* 32 */ @js.native
-  object Static extends TopLevel[Static with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with ModifierFlags
+  /* 0 */ val None: typingsJapgolly.typescript.mod.ModifierFlags.None & Double = js.native
   
-  /* 2270 */ @js.native
-  object TypeScriptModifier extends TopLevel[TypeScriptModifier with Double]
+  @js.native
+  sealed trait Out
+    extends StObject
+       with ModifierFlags
+  /* 65536 */ val Out: typingsJapgolly.typescript.mod.ModifierFlags.Out & Double = js.native
   
+  @js.native
+  sealed trait Override
+    extends StObject
+       with ModifierFlags
+  /* 16384 */ val Override: typingsJapgolly.typescript.mod.ModifierFlags.Override & Double = js.native
+  
+  @js.native
+  sealed trait ParameterPropertyModifier
+    extends StObject
+       with ModifierFlags
+  /* 16476 */ val ParameterPropertyModifier: typingsJapgolly.typescript.mod.ModifierFlags.ParameterPropertyModifier & Double = js.native
+  
+  @js.native
+  sealed trait Private
+    extends StObject
+       with ModifierFlags
+  /* 8 */ val Private: typingsJapgolly.typescript.mod.ModifierFlags.Private & Double = js.native
+  
+  @js.native
+  sealed trait Protected
+    extends StObject
+       with ModifierFlags
+  /* 16 */ val Protected: typingsJapgolly.typescript.mod.ModifierFlags.Protected & Double = js.native
+  
+  @js.native
+  sealed trait Public
+    extends StObject
+       with ModifierFlags
+  /* 4 */ val Public: typingsJapgolly.typescript.mod.ModifierFlags.Public & Double = js.native
+  
+  @js.native
+  sealed trait Readonly
+    extends StObject
+       with ModifierFlags
+  /* 64 */ val Readonly: typingsJapgolly.typescript.mod.ModifierFlags.Readonly & Double = js.native
+  
+  @js.native
+  sealed trait Static
+    extends StObject
+       with ModifierFlags
+  /* 32 */ val Static: typingsJapgolly.typescript.mod.ModifierFlags.Static & Double = js.native
+  
+  @js.native
+  sealed trait TypeScriptModifier
+    extends StObject
+       with ModifierFlags
+  /* 116958 */ val TypeScriptModifier: typingsJapgolly.typescript.mod.ModifierFlags.TypeScriptModifier & Double = js.native
 }
-

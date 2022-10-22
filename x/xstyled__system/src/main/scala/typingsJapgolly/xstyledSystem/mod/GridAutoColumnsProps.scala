@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.GridAutoColumnsProperty
+import typingsJapgolly.csstype.mod.Property.GridAutoColumns
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridAutoColumnsProps[TLength] extends js.Object {
-  val gridAutoColumns: js.UndefOr[ResponsiveValue[GridAutoColumnsProperty[TLength]]] = js.undefined
+trait GridAutoColumnsProps[TLength] extends StObject {
+  
+  val gridAutoColumns: js.UndefOr[ResponsiveValue[GridAutoColumns[TLength]]] = js.undefined
 }
-
 object GridAutoColumnsProps {
-  @scala.inline
-  def apply[TLength](gridAutoColumns: ResponsiveValue[GridAutoColumnsProperty[TLength]] = null): GridAutoColumnsProps[TLength] = {
+  
+  inline def apply[TLength](): GridAutoColumnsProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (gridAutoColumns != null) __obj.updateDynamic("gridAutoColumns")(gridAutoColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridAutoColumnsProps[TLength]]
   }
+  
+  extension [Self <: GridAutoColumnsProps[?], TLength](x: Self & GridAutoColumnsProps[TLength]) {
+    
+    inline def setGridAutoColumns(value: ResponsiveValue[GridAutoColumns[TLength]]): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
+    
+    inline def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
+    
+    inline def setGridAutoColumnsVarargs(value: GridAutoColumns[TLength]*): Self = StObject.set(x, "gridAutoColumns", js.Array(value*))
+  }
 }
-

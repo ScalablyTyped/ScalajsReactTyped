@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.center
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.nearest
   - typingsJapgolly.std.stdStrings.start
 */
-trait ScrollLogicalPosition extends js.Object
-
+trait ScrollLogicalPosition extends StObject
 object ScrollLogicalPosition {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def center: typingsJapgolly.std.stdStrings.center = this.cast("center")
-  @scala.inline
-  def end: typingsJapgolly.std.stdStrings.end = this.cast("end")
-  @scala.inline
-  def nearest: typingsJapgolly.std.stdStrings.nearest = this.cast("nearest")
-  @scala.inline
-  def start: typingsJapgolly.std.stdStrings.start = this.cast("start")
+  
+  inline def center: typingsJapgolly.std.stdStrings.center = "center".asInstanceOf[typingsJapgolly.std.stdStrings.center]
+  
+  inline def end: typingsJapgolly.std.stdStrings.end = "end".asInstanceOf[typingsJapgolly.std.stdStrings.end]
+  
+  inline def nearest: typingsJapgolly.std.stdStrings.nearest = "nearest".asInstanceOf[typingsJapgolly.std.stdStrings.nearest]
+  
+  inline def start: typingsJapgolly.std.stdStrings.start = "start".asInstanceOf[typingsJapgolly.std.stdStrings.start]
 }
-

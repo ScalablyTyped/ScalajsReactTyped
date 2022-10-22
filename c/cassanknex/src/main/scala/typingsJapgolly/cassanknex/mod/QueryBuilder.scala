@@ -1,43 +1,54 @@
 package typingsJapgolly.cassanknex.mod
 
+import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.cassandraDriver.libTypesMod.types.ResultSet
+import typingsJapgolly.cassandraDriver.libTypesMod.types.Row
 import typingsJapgolly.cassandraDriver.mod.ValueCallback
-import typingsJapgolly.cassandraDriver.typesMod.types.ResultSet
-import typingsJapgolly.cassandraDriver.typesMod.types.Row
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QueryBuilder extends js.Object {
-  def bindings(): js.Array[_]
+trait QueryBuilder extends StObject {
+  
+  def bindings(): js.Array[Any]
+  
   def cql(): String
+  
   def eachRow(
-    onEachRow: js.Function2[/* n */ Double, /* row */ Row, _],
-    onError: js.Function1[/* err */ js.Error, _]
-  ): js.UndefOr[scala.Nothing]
-  def exec(cb: ValueCallback[ResultSet]): js.UndefOr[scala.Nothing]
-  def stream(params: StreamParams): js.UndefOr[scala.Nothing]
+    onEachRow: js.Function2[/* n */ Double, /* row */ Row, Any],
+    onError: js.Function1[/* err */ js.Error, Any]
+  ): Unit
+  
+  def exec(cb: ValueCallback[ResultSet]): Unit
+  
+  def stream(params: StreamParams): Unit
 }
-
 object QueryBuilder {
-  @scala.inline
-  def apply(
-    bindings: CallbackTo[js.Array[js.Any]],
+  
+  inline def apply(
+    bindings: CallbackTo[js.Array[Any]],
     cql: CallbackTo[String],
-    eachRow: (js.Function2[/* n */ Double, /* row */ Row, js.Any], js.Function1[/* err */ js.Error, js.Any]) => CallbackTo[js.UndefOr[scala.Nothing]],
-    exec: ValueCallback[ResultSet] => CallbackTo[js.UndefOr[scala.Nothing]],
-    stream: StreamParams => CallbackTo[js.UndefOr[scala.Nothing]]
+    eachRow: (js.Function2[/* n */ Double, /* row */ Row, Any], js.Function1[/* err */ js.Error, Any]) => Callback,
+    exec: ValueCallback[ResultSet] => Callback,
+    stream: StreamParams => Callback
   ): QueryBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindings")(bindings.toJsFn)
-    __obj.updateDynamic("cql")(cql.toJsFn)
-    __obj.updateDynamic("eachRow")(js.Any.fromFunction2((t0: js.Function2[
-  /* n */ scala.Double, 
-  /* row */ typingsJapgolly.cassandraDriver.typesMod.types.Row, 
-  js.Any], t1: js.Function1[/* err */ js.Error, js.Any]) => eachRow(t0, t1).runNow()))
-    __obj.updateDynamic("exec")(js.Any.fromFunction1((t0: typingsJapgolly.cassandraDriver.mod.ValueCallback[typingsJapgolly.cassandraDriver.typesMod.types.ResultSet]) => exec(t0).runNow()))
-    __obj.updateDynamic("stream")(js.Any.fromFunction1((t0: typingsJapgolly.cassanknex.mod.StreamParams) => stream(t0).runNow()))
+    val __obj = js.Dynamic.literal(bindings = bindings.toJsFn, cql = cql.toJsFn, eachRow = js.Any.fromFunction2((t0: js.Function2[/* n */ Double, /* row */ Row, Any], t1: js.Function1[/* err */ js.Error, Any]) => (eachRow(t0, t1)).runNow()), exec = js.Any.fromFunction1((t0: ValueCallback[ResultSet]) => exec(t0).runNow()), stream = js.Any.fromFunction1((t0: StreamParams) => stream(t0).runNow()))
     __obj.asInstanceOf[QueryBuilder]
   }
+  
+  extension [Self <: QueryBuilder](x: Self) {
+    
+    inline def setBindings(value: CallbackTo[js.Array[Any]]): Self = StObject.set(x, "bindings", value.toJsFn)
+    
+    inline def setCql(value: CallbackTo[String]): Self = StObject.set(x, "cql", value.toJsFn)
+    
+    inline def setEachRow(
+      value: (js.Function2[/* n */ Double, /* row */ Row, Any], js.Function1[/* err */ js.Error, Any]) => Callback
+    ): Self = StObject.set(x, "eachRow", js.Any.fromFunction2((t0: js.Function2[/* n */ Double, /* row */ Row, Any], t1: js.Function1[/* err */ js.Error, Any]) => (value(t0, t1)).runNow()))
+    
+    inline def setExec(value: ValueCallback[ResultSet] => Callback): Self = StObject.set(x, "exec", js.Any.fromFunction1((t0: ValueCallback[ResultSet]) => value(t0).runNow()))
+    
+    inline def setStream(value: StreamParams => Callback): Self = StObject.set(x, "stream", js.Any.fromFunction1((t0: StreamParams) => value(t0).runNow()))
+  }
 }
-

@@ -2,35 +2,42 @@ package typingsJapgolly.winrtUwp.Windows.Data.Xml
 
 import typingsJapgolly.winrtUwp.Windows.Data.Xml.Dom.IXmlNode
 import typingsJapgolly.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides support for the XSLT processor. */
-@JSGlobal("Windows.Data.Xml.Xsl")
-@js.native
-object Xsl extends js.Object {
+object Xsl {
+  
   /** Provides the methods needed by the Xslt processor. */
-  @js.native
-  class XsltProcessor protected () extends js.Object {
-    /**
-      * Creates a new XsltProcessor object from the document provided.
-      * @param document The XSLT to process.
-      */
-    def this(document: XmlDocument) = this()
+  trait XsltProcessor extends StObject {
+    
     /**
       * Processes a node and its children and returns the resulting XmlDocument .
       * @param inputNode The node to process.
       * @return The resulting transformation.
       */
-    def transformToDocument(inputNode: IXmlNode): XmlDocument = js.native
+    def transformToDocument(inputNode: IXmlNode): XmlDocument
+    
     /**
       * Processes a node and its children and returns the resulting string transformation.
       * @param inputNode The node to process.
       * @return The resulting transformation.
       */
-    def transformToString(inputNode: IXmlNode): String = js.native
+    def transformToString(inputNode: IXmlNode): String
   }
-  
+  object XsltProcessor {
+    
+    inline def apply(transformToDocument: IXmlNode => XmlDocument, transformToString: IXmlNode => String): XsltProcessor = {
+      val __obj = js.Dynamic.literal(transformToDocument = js.Any.fromFunction1(transformToDocument), transformToString = js.Any.fromFunction1(transformToString))
+      __obj.asInstanceOf[XsltProcessor]
+    }
+    
+    extension [Self <: XsltProcessor](x: Self) {
+      
+      inline def setTransformToDocument(value: IXmlNode => XmlDocument): Self = StObject.set(x, "transformToDocument", js.Any.fromFunction1(value))
+      
+      inline def setTransformToString(value: IXmlNode => String): Self = StObject.set(x, "transformToString", js.Any.fromFunction1(value))
+    }
+  }
 }
-

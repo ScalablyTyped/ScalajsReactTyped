@@ -1,35 +1,69 @@
 package typingsJapgolly.materialTabs
 
+import typingsJapgolly.materialBase.foundationMod.MDCFoundation
+import typingsJapgolly.materialTabs.anon.ACTIVE
+import typingsJapgolly.materialTabs.anon.PartialMDCTabAdapter
+import typingsJapgolly.materialTabs.anon.SELECTEDEVENT
 import typingsJapgolly.materialTabs.tabAdapterMod.MDCTabAdapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tabs/tab/foundation", JSImport.Namespace)
-@js.native
-object tabFoundationMod extends js.Object {
+object tabFoundationMod {
+  
+  @JSImport("@material/tabs/tab/foundation", JSImport.Default)
   @js.native
-  trait MDCTabFoundation
-    extends typingsJapgolly.materialBase.foundationMod.default[MDCTabAdapter] {
+  open class default () extends MDCTabFoundation {
+    def this(adapter: PartialMDCTabAdapter) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("@material/tabs/tab/foundation", "default.cssClasses")
+    @js.native
+    val cssClasses: ACTIVE = js.native
+    
+    @JSImport("@material/tabs/tab/foundation", "default.defaultAdapter")
+    @js.native
+    val defaultAdapter: MDCTabAdapter = js.native
+    
+    @JSImport("@material/tabs/tab/foundation", "default.strings")
+    @js.native
+    val strings: SELECTEDEVENT = js.native
+  }
+  
+  @JSImport("@material/tabs/tab/foundation", "MDCTabFoundation")
+  @js.native
+  open class MDCTabFoundation () extends MDCFoundation[MDCTabAdapter] {
+    def this(adapter: PartialMDCTabAdapter) = this()
+    
     def getComputedLeft(): Double = js.native
+    
     def getComputedWidth(): Double = js.native
+    
     def isActive(): Boolean = js.native
+    
     def measureSelf(): Unit = js.native
+    
     def preventsDefaultOnClick(): Boolean = js.native
+    
     def setActive(isActive: Boolean): Unit = js.native
+    
     def setPreventDefaultOnClick(preventDefaultOnClick: Boolean): Unit = js.native
   }
-  
-  @js.native
-  class default () extends MDCTabFoundation
-  
   /* static members */
-  @js.native
-  object default extends js.Object {
-    val cssClasses: typingsJapgolly.materialTabs.tabConstantsMod.cssClasses = js.native
+  object MDCTabFoundation {
+    
+    @JSImport("@material/tabs/tab/foundation", "MDCTabFoundation.cssClasses")
+    @js.native
+    val cssClasses: ACTIVE = js.native
+    
+    @JSImport("@material/tabs/tab/foundation", "MDCTabFoundation.defaultAdapter")
+    @js.native
     val defaultAdapter: MDCTabAdapter = js.native
-    val strings: typingsJapgolly.materialTabs.tabConstantsMod.strings = js.native
+    
+    @JSImport("@material/tabs/tab/foundation", "MDCTabFoundation.strings")
+    @js.native
+    val strings: SELECTEDEVENT = js.native
   }
-  
 }
-

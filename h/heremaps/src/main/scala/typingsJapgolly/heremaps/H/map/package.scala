@@ -1,25 +1,24 @@
-package typingsJapgolly.heremaps.H
+package typingsJapgolly.heremaps.H.map
 
+import typingsJapgolly.heremaps.H.util.OList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object map {
-  type AbstractMarker = typingsJapgolly.heremaps.H.map.AbstractMarker_
-  type ArrowStyle = typingsJapgolly.heremaps.H.map.ArrowStyle_
-  type Circle = typingsJapgolly.heremaps.H.map.Circle_
-  type DomIcon = typingsJapgolly.heremaps.H.map.DomIcon_
-  type DomMarker = typingsJapgolly.heremaps.H.map.DomMarker_
-  type Group = typingsJapgolly.heremaps.H.map.Group_
-  type Icon = typingsJapgolly.heremaps.H.map.Icon_
-  type Imprint = typingsJapgolly.heremaps.H.map.Imprint_
-  type Marker = typingsJapgolly.heremaps.H.map.Marker_
-  type Object = typingsJapgolly.heremaps.H.map.Object_
-  type Overlay = typingsJapgolly.heremaps.H.map.Overlay_
-  type Polygon = typingsJapgolly.heremaps.H.map.Polygon_
-  type Polyline = typingsJapgolly.heremaps.H.map.Polyline_
-  type Spatial = typingsJapgolly.heremaps.H.map.Spatial_
-  type SpatialStyle = typingsJapgolly.heremaps.H.map.SpatialStyle_
-  type ViewModel = typingsJapgolly.heremaps.H.map.ViewModel_
-  type ViewPort = typingsJapgolly.heremaps.H.map.ViewPort_
-}
+
+/**
+  * The class represents data model of the map. It holds list of layers that are rendered by map's RenderEngine.
+  * The class listens to 'update' events from layers and dispatches them to the RenderEngine.
+  */
+type DataModel = OList
+
+/**
+  * A marker with a visual representation in the form of a full styleable and scripteable DOM element. DomMarker are predestinated if small amounts of markers with dynamic styled and/or
+  * scripted icons should be displayed om the map (e.g. animated interactive SVG).
+  */
+type DomMarker = AbstractMarker
+
+/**
+  * A marker with a visual representation in the form of a bitmap icon. Marker are predestinated if large amounts of markers with static icons should be displayed om the map.
+  */
+type Marker = AbstractMarker

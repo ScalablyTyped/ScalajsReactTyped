@@ -1,33 +1,39 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ModifierInvocation
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
+  
   var arguments: js.Array[Expression] | Null
+  
   var name: String
+  
   @JSName("type")
   var type_ModifierInvocation: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ModifierInvocation
 }
-
 object ModifierInvocation {
-  @scala.inline
-  def apply(
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ModifierInvocation,
-    arguments: js.Array[Expression] = null,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ModifierInvocation = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+  
+  inline def apply(name: String): ModifierInvocation = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], arguments = null)
+    __obj.updateDynamic("type")("ModifierInvocation")
     __obj.asInstanceOf[ModifierInvocation]
   }
+  
+  extension [Self <: ModifierInvocation](x: Self) {
+    
+    inline def setArguments(value: js.Array[Expression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    
+    inline def setArgumentsNull: Self = StObject.set(x, "arguments", null)
+    
+    inline def setArgumentsVarargs(value: Expression*): Self = StObject.set(x, "arguments", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ModifierInvocation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

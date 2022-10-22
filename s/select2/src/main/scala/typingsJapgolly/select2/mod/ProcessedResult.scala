@@ -1,21 +1,31 @@
 package typingsJapgolly.select2.mod
 
-import typingsJapgolly.select2.AnonMore
+import typingsJapgolly.select2.anon.More
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProcessedResult[Result] extends js.Object {
-  var pagination: js.UndefOr[AnonMore] = js.undefined
+trait ProcessedResult[Result] extends StObject {
+  
+  var pagination: js.UndefOr[More] = js.undefined
+  
   var results: js.Array[Result]
 }
-
 object ProcessedResult {
-  @scala.inline
-  def apply[Result](results: js.Array[Result], pagination: AnonMore = null): ProcessedResult[Result] = {
+  
+  inline def apply[Result](results: js.Array[Result]): ProcessedResult[Result] = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
-    if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessedResult[Result]]
   }
+  
+  extension [Self <: ProcessedResult[?], Result](x: Self & ProcessedResult[Result]) {
+    
+    inline def setPagination(value: More): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    
+    inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+    
+    inline def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    
+    inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value*))
+  }
 }
-

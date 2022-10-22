@@ -1,34 +1,32 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenameLocation extends DocumentSpan {
+trait RenameLocation
+  extends StObject
+     with DocumentSpan {
+  
   val prefixText: js.UndefOr[java.lang.String] = js.undefined
+  
   val suffixText: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object RenameLocation {
-  @scala.inline
-  def apply(
-    fileName: java.lang.String,
-    textSpan: TextSpan,
-    contextSpan: TextSpan = null,
-    originalContextSpan: TextSpan = null,
-    originalFileName: java.lang.String = null,
-    originalTextSpan: TextSpan = null,
-    prefixText: java.lang.String = null,
-    suffixText: java.lang.String = null
-  ): RenameLocation = {
+  
+  inline def apply(fileName: java.lang.String, textSpan: TextSpan): RenameLocation = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
-    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan.asInstanceOf[js.Any])
-    if (originalContextSpan != null) __obj.updateDynamic("originalContextSpan")(originalContextSpan.asInstanceOf[js.Any])
-    if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName.asInstanceOf[js.Any])
-    if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan.asInstanceOf[js.Any])
-    if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText.asInstanceOf[js.Any])
-    if (suffixText != null) __obj.updateDynamic("suffixText")(suffixText.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameLocation]
   }
+  
+  extension [Self <: RenameLocation](x: Self) {
+    
+    inline def setPrefixText(value: java.lang.String): Self = StObject.set(x, "prefixText", value.asInstanceOf[js.Any])
+    
+    inline def setPrefixTextUndefined: Self = StObject.set(x, "prefixText", js.undefined)
+    
+    inline def setSuffixText(value: java.lang.String): Self = StObject.set(x, "suffixText", value.asInstanceOf[js.Any])
+    
+    inline def setSuffixTextUndefined: Self = StObject.set(x, "suffixText", js.undefined)
+  }
 }
-

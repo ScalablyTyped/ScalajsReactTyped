@@ -1,8 +1,8 @@
 package typingsJapgolly.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.recharts.rechartsStrings.hidden
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.recharts.rechartsStrings.discard
   - typingsJapgolly.recharts.rechartsStrings.extendDomain
 */
-trait IfOverflowType extends js.Object
-
+trait IfOverflowType extends StObject
 object IfOverflowType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def discard: typingsJapgolly.recharts.rechartsStrings.discard = this.cast("discard")
-  @scala.inline
-  def extendDomain: typingsJapgolly.recharts.rechartsStrings.extendDomain = this.cast("extendDomain")
-  @scala.inline
-  def hidden: typingsJapgolly.recharts.rechartsStrings.hidden = this.cast("hidden")
-  @scala.inline
-  def visible: typingsJapgolly.recharts.rechartsStrings.visible = this.cast("visible")
+  
+  inline def discard: typingsJapgolly.recharts.rechartsStrings.discard = "discard".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.discard]
+  
+  inline def extendDomain: typingsJapgolly.recharts.rechartsStrings.extendDomain = "extendDomain".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.extendDomain]
+  
+  inline def hidden: typingsJapgolly.recharts.rechartsStrings.hidden = "hidden".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.hidden]
+  
+  inline def visible: typingsJapgolly.recharts.rechartsStrings.visible = "visible".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.visible]
 }
-

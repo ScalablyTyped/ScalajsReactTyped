@@ -1,22 +1,24 @@
 package typingsJapgolly.winrt.Windows.Graphics.Imaging
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IIterable
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IBitmapPropertiesView extends js.Object {
+trait IBitmapPropertiesView extends StObject {
+  
   def getPropertiesAsync(propertiesToRetrieve: IIterable[String]): IAsyncOperation[BitmapPropertySet]
 }
-
 object IBitmapPropertiesView {
-  @scala.inline
-  def apply(getPropertiesAsync: IIterable[String] => CallbackTo[IAsyncOperation[BitmapPropertySet]]): IBitmapPropertiesView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPropertiesAsync")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Foundation.Collections.IIterable[java.lang.String]) => getPropertiesAsync(t0).runNow()))
+  
+  inline def apply(getPropertiesAsync: IIterable[String] => IAsyncOperation[BitmapPropertySet]): IBitmapPropertiesView = {
+    val __obj = js.Dynamic.literal(getPropertiesAsync = js.Any.fromFunction1(getPropertiesAsync))
     __obj.asInstanceOf[IBitmapPropertiesView]
   }
+  
+  extension [Self <: IBitmapPropertiesView](x: Self) {
+    
+    inline def setGetPropertiesAsync(value: IIterable[String] => IAsyncOperation[BitmapPropertySet]): Self = StObject.set(x, "getPropertiesAsync", js.Any.fromFunction1(value))
+  }
 }
-

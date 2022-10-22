@@ -1,10 +1,17 @@
-package typingsJapgolly.pg
+package typingsJapgolly.pg.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.pg.anon.TypeofPg
+import typingsJapgolly.pg.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ConnectionConfig = typingsJapgolly.pg.mod.ClientConfig
-  type QueryResultRow = org.scalablytyped.runtime.StringDictionary[js.Any]
-}
+
+inline def defaults: Defaults_ & ClientConfig = ^.asInstanceOf[js.Dynamic].selectDynamic("defaults").asInstanceOf[Defaults_ & ClientConfig]
+
+inline def native: TypeofPg | Null = ^.asInstanceOf[js.Dynamic].selectDynamic("native").asInstanceOf[TypeofPg | Null]
+
+type ConnectionConfig = ClientConfig
+
+type QueryResultRow = StringDictionary[Any]

@@ -1,8 +1,8 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.azdata.azdataStrings.color
@@ -19,36 +19,32 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.azdata.azdataStrings.url
   - typingsJapgolly.azdata.azdataStrings.week
 */
-trait InputBoxInputType extends js.Object
-
+trait InputBoxInputType extends StObject
 object InputBoxInputType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def color: typingsJapgolly.azdata.azdataStrings.color = this.cast("color")
-  @scala.inline
-  def date: typingsJapgolly.azdata.azdataStrings.date = this.cast("date")
-  @scala.inline
-  def `datetime-local`: typingsJapgolly.azdata.azdataStrings.`datetime-local` = this.cast("datetime-local")
-  @scala.inline
-  def email: typingsJapgolly.azdata.azdataStrings.email = this.cast("email")
-  @scala.inline
-  def month: typingsJapgolly.azdata.azdataStrings.month = this.cast("month")
-  @scala.inline
-  def number: typingsJapgolly.azdata.azdataStrings.number = this.cast("number")
-  @scala.inline
-  def password: typingsJapgolly.azdata.azdataStrings.password = this.cast("password")
-  @scala.inline
-  def range: typingsJapgolly.azdata.azdataStrings.range = this.cast("range")
-  @scala.inline
-  def search: typingsJapgolly.azdata.azdataStrings.search = this.cast("search")
-  @scala.inline
-  def text: typingsJapgolly.azdata.azdataStrings.text = this.cast("text")
-  @scala.inline
-  def time: typingsJapgolly.azdata.azdataStrings.time = this.cast("time")
-  @scala.inline
-  def url: typingsJapgolly.azdata.azdataStrings.url = this.cast("url")
-  @scala.inline
-  def week: typingsJapgolly.azdata.azdataStrings.week = this.cast("week")
+  
+  inline def color: typingsJapgolly.azdata.azdataStrings.color = "color".asInstanceOf[typingsJapgolly.azdata.azdataStrings.color]
+  
+  inline def date: typingsJapgolly.azdata.azdataStrings.date = "date".asInstanceOf[typingsJapgolly.azdata.azdataStrings.date]
+  
+  inline def `datetime-local`: typingsJapgolly.azdata.azdataStrings.`datetime-local` = "datetime-local".asInstanceOf[typingsJapgolly.azdata.azdataStrings.`datetime-local`]
+  
+  inline def email: typingsJapgolly.azdata.azdataStrings.email = "email".asInstanceOf[typingsJapgolly.azdata.azdataStrings.email]
+  
+  inline def month: typingsJapgolly.azdata.azdataStrings.month = "month".asInstanceOf[typingsJapgolly.azdata.azdataStrings.month]
+  
+  inline def number: typingsJapgolly.azdata.azdataStrings.number = "number".asInstanceOf[typingsJapgolly.azdata.azdataStrings.number]
+  
+  inline def password: typingsJapgolly.azdata.azdataStrings.password = "password".asInstanceOf[typingsJapgolly.azdata.azdataStrings.password]
+  
+  inline def range: typingsJapgolly.azdata.azdataStrings.range = "range".asInstanceOf[typingsJapgolly.azdata.azdataStrings.range]
+  
+  inline def search: typingsJapgolly.azdata.azdataStrings.search = "search".asInstanceOf[typingsJapgolly.azdata.azdataStrings.search]
+  
+  inline def text: typingsJapgolly.azdata.azdataStrings.text = "text".asInstanceOf[typingsJapgolly.azdata.azdataStrings.text]
+  
+  inline def time: typingsJapgolly.azdata.azdataStrings.time = "time".asInstanceOf[typingsJapgolly.azdata.azdataStrings.time]
+  
+  inline def url: typingsJapgolly.azdata.azdataStrings.url = "url".asInstanceOf[typingsJapgolly.azdata.azdataStrings.url]
+  
+  inline def week: typingsJapgolly.azdata.azdataStrings.week = "week".asInstanceOf[typingsJapgolly.azdata.azdataStrings.week]
 }
-

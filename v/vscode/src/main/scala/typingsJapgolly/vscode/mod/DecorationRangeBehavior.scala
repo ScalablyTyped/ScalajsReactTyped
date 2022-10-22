@@ -1,53 +1,51 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DecorationRangeBehavior extends js.Object
-
+sealed trait DecorationRangeBehavior extends StObject
 @JSImport("vscode", "DecorationRangeBehavior")
 @js.native
-object DecorationRangeBehavior extends js.Object {
-  /**
-  		 * The decoration's range will not widen when edits occur at the start of end.
-  		 */
-  @js.native
-  sealed trait ClosedClosed extends DecorationRangeBehavior
-  
-  /**
-  		 * The decoration's range will widen when edits occur at the end, but not at the start.
-  		 */
-  @js.native
-  sealed trait ClosedOpen extends DecorationRangeBehavior
-  
-  /**
-  		 * The decoration's range will widen when edits occur at the start, but not at the end.
-  		 */
-  @js.native
-  sealed trait OpenClosed extends DecorationRangeBehavior
-  
-  /**
-  		 * The decoration's range will widen when edits occur at the start or end.
-  		 */
-  @js.native
-  sealed trait OpenOpen extends DecorationRangeBehavior
+object DecorationRangeBehavior extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DecorationRangeBehavior with Double] = js.native
-  /* 1 */ @js.native
-  object ClosedClosed extends TopLevel[ClosedClosed with Double]
+  def apply(value: Double): js.UndefOr[DecorationRangeBehavior & Double] = js.native
   
-  /* 3 */ @js.native
-  object ClosedOpen extends TopLevel[ClosedOpen with Double]
+  /**
+    * The decoration's range will not widen when edits occur at the start of end.
+    */
+  @js.native
+  sealed trait ClosedClosed
+    extends StObject
+       with DecorationRangeBehavior
+  /* 1 */ val ClosedClosed: typingsJapgolly.vscode.mod.DecorationRangeBehavior.ClosedClosed & Double = js.native
   
-  /* 2 */ @js.native
-  object OpenClosed extends TopLevel[OpenClosed with Double]
+  /**
+    * The decoration's range will widen when edits occur at the end, but not at the start.
+    */
+  @js.native
+  sealed trait ClosedOpen
+    extends StObject
+       with DecorationRangeBehavior
+  /* 3 */ val ClosedOpen: typingsJapgolly.vscode.mod.DecorationRangeBehavior.ClosedOpen & Double = js.native
   
-  /* 0 */ @js.native
-  object OpenOpen extends TopLevel[OpenOpen with Double]
+  /**
+    * The decoration's range will widen when edits occur at the start, but not at the end.
+    */
+  @js.native
+  sealed trait OpenClosed
+    extends StObject
+       with DecorationRangeBehavior
+  /* 2 */ val OpenClosed: typingsJapgolly.vscode.mod.DecorationRangeBehavior.OpenClosed & Double = js.native
   
+  /**
+    * The decoration's range will widen when edits occur at the start or end.
+    */
+  @js.native
+  sealed trait OpenOpen
+    extends StObject
+       with DecorationRangeBehavior
+  /* 0 */ val OpenOpen: typingsJapgolly.vscode.mod.DecorationRangeBehavior.OpenOpen & Double = js.native
 }
-

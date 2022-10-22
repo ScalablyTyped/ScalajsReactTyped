@@ -1,30 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RemoteLockActionResult extends DeviceActionResult {
+trait RemoteLockActionResult
+  extends StObject
+     with DeviceActionResult {
+  
   // Pin to unlock the client
-  var unlockPin: js.UndefOr[String] = js.undefined
+  var unlockPin: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object RemoteLockActionResult {
-  @scala.inline
-  def apply(
-    actionName: String = null,
-    actionState: ActionState = null,
-    lastUpdatedDateTime: String = null,
-    startDateTime: String = null,
-    unlockPin: String = null
-  ): RemoteLockActionResult = {
+  
+  inline def apply(): RemoteLockActionResult = {
     val __obj = js.Dynamic.literal()
-    if (actionName != null) __obj.updateDynamic("actionName")(actionName.asInstanceOf[js.Any])
-    if (actionState != null) __obj.updateDynamic("actionState")(actionState.asInstanceOf[js.Any])
-    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
-    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime.asInstanceOf[js.Any])
-    if (unlockPin != null) __obj.updateDynamic("unlockPin")(unlockPin.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteLockActionResult]
   }
+  
+  extension [Self <: RemoteLockActionResult](x: Self) {
+    
+    inline def setUnlockPin(value: NullableOption[String]): Self = StObject.set(x, "unlockPin", value.asInstanceOf[js.Any])
+    
+    inline def setUnlockPinNull: Self = StObject.set(x, "unlockPin", null)
+    
+    inline def setUnlockPinUndefined: Self = StObject.set(x, "unlockPin", js.undefined)
+  }
 }
-

@@ -1,11 +1,12 @@
 package typingsJapgolly.cytoscape.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NodeCollectionLayout extends js.Object {
+trait NodeCollectionLayout extends StObject {
+  
   /**
     * Position the nodes for a discrete/synchronous layout.
     * http://js.cytoscape.org/#nodes.layoutPositions
@@ -14,13 +15,15 @@ trait NodeCollectionLayout extends js.Object {
     */
   def layoutPositions(layout: String, options: LayoutPositionOptions, handler: ElementPositionFunction): Unit
 }
-
 object NodeCollectionLayout {
-  @scala.inline
-  def apply(layoutPositions: (String, LayoutPositionOptions, ElementPositionFunction) => Callback): NodeCollectionLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layoutPositions")(js.Any.fromFunction3((t0: java.lang.String, t1: typingsJapgolly.cytoscape.mod.LayoutPositionOptions, t2: typingsJapgolly.cytoscape.mod.ElementPositionFunction) => layoutPositions(t0, t1, t2).runNow()))
+  
+  inline def apply(layoutPositions: (String, LayoutPositionOptions, ElementPositionFunction) => Callback): NodeCollectionLayout = {
+    val __obj = js.Dynamic.literal(layoutPositions = js.Any.fromFunction3((t0: String, t1: LayoutPositionOptions, t2: ElementPositionFunction) => (layoutPositions(t0, t1, t2)).runNow()))
     __obj.asInstanceOf[NodeCollectionLayout]
   }
+  
+  extension [Self <: NodeCollectionLayout](x: Self) {
+    
+    inline def setLayoutPositions(value: (String, LayoutPositionOptions, ElementPositionFunction) => Callback): Self = StObject.set(x, "layoutPositions", js.Any.fromFunction3((t0: String, t1: LayoutPositionOptions, t2: ElementPositionFunction) => (value(t0, t1, t2)).runNow()))
+  }
 }
-

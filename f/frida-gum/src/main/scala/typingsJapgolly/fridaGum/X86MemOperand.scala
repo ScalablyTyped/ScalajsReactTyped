@@ -1,23 +1,32 @@
 package typingsJapgolly.fridaGum
 
+import typingsJapgolly.fridaGum.anon.Base
 import typingsJapgolly.fridaGum.fridaGumStrings.mem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait X86MemOperand
-  extends X86BaseOperand
+  extends StObject
+     with X86BaseOperand
      with X86Operand {
+  
   var `type`: mem
-  var value: AnonBase
+  
+  var value: Base
 }
-
 object X86MemOperand {
-  @scala.inline
-  def apply(size: Double, `type`: mem, value: AnonBase): X86MemOperand = {
-    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  
+  inline def apply(access: OperandAccess, size: Double, value: Base): X86MemOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mem")
     __obj.asInstanceOf[X86MemOperand]
   }
+  
+  extension [Self <: X86MemOperand](x: Self) {
+    
+    inline def setType(value: mem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Base): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

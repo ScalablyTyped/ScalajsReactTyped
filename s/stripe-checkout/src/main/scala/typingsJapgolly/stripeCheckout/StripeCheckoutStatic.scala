@@ -1,20 +1,22 @@
 package typingsJapgolly.stripeCheckout
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StripeCheckoutStatic extends js.Object {
+trait StripeCheckoutStatic extends StObject {
+  
   def configure(options: StripeCheckoutOptions): StripeCheckoutHandler
 }
-
 object StripeCheckoutStatic {
-  @scala.inline
-  def apply(configure: StripeCheckoutOptions => CallbackTo[StripeCheckoutHandler]): StripeCheckoutStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configure")(js.Any.fromFunction1((t0: typingsJapgolly.stripeCheckout.StripeCheckoutOptions) => configure(t0).runNow()))
+  
+  inline def apply(configure: StripeCheckoutOptions => StripeCheckoutHandler): StripeCheckoutStatic = {
+    val __obj = js.Dynamic.literal(configure = js.Any.fromFunction1(configure))
     __obj.asInstanceOf[StripeCheckoutStatic]
   }
+  
+  extension [Self <: StripeCheckoutStatic](x: Self) {
+    
+    inline def setConfigure(value: StripeCheckoutOptions => StripeCheckoutHandler): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
+  }
 }
-

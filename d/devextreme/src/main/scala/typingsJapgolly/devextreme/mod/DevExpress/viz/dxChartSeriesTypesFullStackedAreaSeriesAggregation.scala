@@ -1,35 +1,31 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.devextreme.devextremeStrings.avg
-import typingsJapgolly.devextreme.devextremeStrings.count
-import typingsJapgolly.devextreme.devextremeStrings.custom
-import typingsJapgolly.devextreme.devextremeStrings.max
-import typingsJapgolly.devextreme.devextremeStrings.min
-import typingsJapgolly.devextreme.devextremeStrings.sum
+import typingsJapgolly.devextreme.mod.DevExpress.viz.dxChart.ChartSingleValueSeriesAggregationMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Configures data aggregation for the series. */
-trait dxChartSeriesTypesFullStackedAreaSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
-  /** Specifies how to aggregate series points. */
+trait dxChartSeriesTypesFullStackedAreaSeriesAggregation
+  extends StObject
+     with dxChartSeriesTypesCommonSeriesAggregation {
+  
+  /**
+    * Specifies how to aggregate series points.
+    */
   @JSName("method")
-  var method_dxChartSeriesTypesFullStackedAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
+  var method_dxChartSeriesTypesFullStackedAreaSeriesAggregation: js.UndefOr[ChartSingleValueSeriesAggregationMethod] = js.undefined
 }
-
 object dxChartSeriesTypesFullStackedAreaSeriesAggregation {
-  @scala.inline
-  def apply(
-    calculate: (/* aggregationInfo */ chartPointAggregationInfoObject, /* series */ chartSeriesObject) => CallbackTo[js.Any | js.Array[js.Any]] = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    method: avg | count | max | min | sum | custom = null
-  ): dxChartSeriesTypesFullStackedAreaSeriesAggregation = {
+  
+  inline def apply(): dxChartSeriesTypesFullStackedAreaSeriesAggregation = {
     val __obj = js.Dynamic.literal()
-    if (calculate != null) __obj.updateDynamic("calculate")(js.Any.fromFunction2((t0: /* aggregationInfo */ typingsJapgolly.devextreme.mod.DevExpress.viz.chartPointAggregationInfoObject, t1: /* series */ typingsJapgolly.devextreme.mod.DevExpress.viz.chartSeriesObject) => calculate(t0, t1).runNow()))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartSeriesTypesFullStackedAreaSeriesAggregation]
   }
+  
+  extension [Self <: dxChartSeriesTypesFullStackedAreaSeriesAggregation](x: Self) {
+    
+    inline def setMethod(value: ChartSingleValueSeriesAggregationMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+  }
 }
-

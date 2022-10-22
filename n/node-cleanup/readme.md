@@ -11,9 +11,9 @@ installs custom cleanup handlers that run on exiting node
 | Full name          | node-cleanup |
 | Keywords           | node, exit, cleanup, sigint, ctrl-c |
 | # releases         | 1 |
-| # dependents       | 65 |
-| # downloads        | 7288157 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2784320.3333333335 |
+| # stars            | 155.0 |
 
 ## Links
 - [Homepage](https://github.com/jtlapp/node-cleanup#readme)

@@ -1,22 +1,24 @@
 package typingsJapgolly.typescript.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PrintHandlers extends js.Object {
+trait PrintHandlers extends StObject {
+  
   /**
     * A hook used by the Printer when generating unique names to avoid collisions with
     * globally defined names that exist outside of the current source file.
     */
   var hasGlobalName: js.UndefOr[js.Function1[/* name */ java.lang.String, Boolean]] = js.undefined
+  
   /**
     * A hook used to check if an emit notification is required for a node.
     * @param node The node to emit.
     */
-  var isEmitNotificationEnabled: js.UndefOr[js.Function1[/* node */ js.UndefOr[Node], Boolean]] = js.undefined
+  var isEmitNotificationEnabled: js.UndefOr[js.Function1[/* node */ Node, Boolean]] = js.undefined
+  
   /**
     * A hook used by the Printer to provide notifications prior to emitting a node. A
     * compatible implementation **must** invoke `emitCallback` with the provided `hint` and
@@ -38,11 +40,12 @@ trait PrintHandlers extends js.Object {
   var onEmitNode: js.UndefOr[
     js.Function3[
       /* hint */ EmitHint, 
-      /* node */ js.UndefOr[Node], 
-      /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ js.UndefOr[Node], Unit], 
+      /* node */ Node, 
+      /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ Node, Unit], 
       Unit
     ]
   ] = js.undefined
+  
   /**
     * A hook used by the Printer to perform just-in-time substitution of a node. This is
     * primarily used by node transformations that need to substitute one node for another,
@@ -61,24 +64,31 @@ trait PrintHandlers extends js.Object {
     */
   var substituteNode: js.UndefOr[js.Function2[/* hint */ EmitHint, /* node */ Node, Node]] = js.undefined
 }
-
 object PrintHandlers {
-  @scala.inline
-  def apply(
-    hasGlobalName: /* name */ java.lang.String => CallbackTo[Boolean] = null,
-    isEmitNotificationEnabled: /* node */ js.UndefOr[Node] => CallbackTo[Boolean] = null,
-    onEmitNode: (/* hint */ EmitHint, /* node */ js.UndefOr[Node], /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ js.UndefOr[Node], Unit]) => Callback = null,
-    substituteNode: (/* hint */ EmitHint, /* node */ Node) => CallbackTo[Node] = null
-  ): PrintHandlers = {
+  
+  inline def apply(): PrintHandlers = {
     val __obj = js.Dynamic.literal()
-    if (hasGlobalName != null) __obj.updateDynamic("hasGlobalName")(js.Any.fromFunction1((t0: /* name */ java.lang.String) => hasGlobalName(t0).runNow()))
-    if (isEmitNotificationEnabled != null) __obj.updateDynamic("isEmitNotificationEnabled")(js.Any.fromFunction1((t0: /* node */ js.UndefOr[typingsJapgolly.typescript.mod.Node]) => isEmitNotificationEnabled(t0).runNow()))
-    if (onEmitNode != null) __obj.updateDynamic("onEmitNode")(js.Any.fromFunction3((t0: /* hint */ typingsJapgolly.typescript.mod.EmitHint, t1: /* node */ js.UndefOr[typingsJapgolly.typescript.mod.Node], t2: /* emitCallback */ js.Function2[
-  /* hint */ typingsJapgolly.typescript.mod.EmitHint, 
-  /* node */ js.UndefOr[typingsJapgolly.typescript.mod.Node], 
-  scala.Unit]) => onEmitNode(t0, t1, t2).runNow()))
-    if (substituteNode != null) __obj.updateDynamic("substituteNode")(js.Any.fromFunction2((t0: /* hint */ typingsJapgolly.typescript.mod.EmitHint, t1: /* node */ typingsJapgolly.typescript.mod.Node) => substituteNode(t0, t1).runNow()))
     __obj.asInstanceOf[PrintHandlers]
   }
+  
+  extension [Self <: PrintHandlers](x: Self) {
+    
+    inline def setHasGlobalName(value: /* name */ java.lang.String => Boolean): Self = StObject.set(x, "hasGlobalName", js.Any.fromFunction1(value))
+    
+    inline def setHasGlobalNameUndefined: Self = StObject.set(x, "hasGlobalName", js.undefined)
+    
+    inline def setIsEmitNotificationEnabled(value: /* node */ Node => Boolean): Self = StObject.set(x, "isEmitNotificationEnabled", js.Any.fromFunction1(value))
+    
+    inline def setIsEmitNotificationEnabledUndefined: Self = StObject.set(x, "isEmitNotificationEnabled", js.undefined)
+    
+    inline def setOnEmitNode(
+      value: (/* hint */ EmitHint, /* node */ Node, /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]) => Callback
+    ): Self = StObject.set(x, "onEmitNode", js.Any.fromFunction3((t0: /* hint */ EmitHint, t1: /* node */ Node, t2: /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnEmitNodeUndefined: Self = StObject.set(x, "onEmitNode", js.undefined)
+    
+    inline def setSubstituteNode(value: (/* hint */ EmitHint, /* node */ Node) => Node): Self = StObject.set(x, "substituteNode", js.Any.fromFunction2(value))
+    
+    inline def setSubstituteNodeUndefined: Self = StObject.set(x, "substituteNode", js.undefined)
+  }
 }
-

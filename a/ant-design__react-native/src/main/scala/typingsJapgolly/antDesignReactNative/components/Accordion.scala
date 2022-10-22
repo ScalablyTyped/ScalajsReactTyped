@@ -1,88 +1,108 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.ComponentClassP
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.PartialAccordionStyle
-import typingsJapgolly.antDesignReactNative.accordionMod.AccordionHeader
-import typingsJapgolly.antDesignReactNative.accordionMod.AccordionNativeProps
-import typingsJapgolly.antDesignReactNative.accordionMod.default
+import japgolly.scalajs.react.facade.React.ComponentClassP
+import japgolly.scalajs.react.facade.React.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.antDesignReactNative.anon.PartialAccordionStyle
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.bottom
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.center
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.top
+import typingsJapgolly.antDesignReactNative.libAccordionMod.AccordionHeader
+import typingsJapgolly.antDesignReactNative.libAccordionMod.AccordionNativeProps
+import typingsJapgolly.antDesignReactNative.libAccordionMod.AccordionPanelProps
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.reactNativeCollapsible.mod.EasingMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Accordion {
-  def apply[T /* <: AccordionHeader */](
-    activeSections: js.Array[Double] = null,
-    align: top | center | bottom = null,
-    containerStyle: StyleProp[ViewStyle] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
-    easing: EasingMode | js.Any = null,
-    expandFromBottom: js.UndefOr[Boolean] = js.undefined,
-    expandMultiple: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* indexes */ js.Array[Double] => Callback = null,
-    renderContent: (T, /* index */ Double, /* isActive */ Boolean, /* sections */ js.Array[T]) => CallbackTo[Element] = null,
-    renderFooter: (T, /* index */ Double, /* isActive */ Boolean, /* sections */ js.Array[T]) => CallbackTo[Element] = null,
-    renderHeader: (T, /* index */ Double, /* isActive */ Boolean, /* sections */ js.Array[T]) => CallbackTo[Element] = null,
-    renderSectionTitle: (T, /* index */ Double, /* isActive */ Boolean, /* sections */ js.Array[T]) => CallbackTo[Element] = null,
-    sectionContainerStyle: StyleProp[ViewStyle] = null,
-    sections: js.Array[T] = null,
-    style: StyleProp[ViewStyle] = null,
-    styles: PartialAccordionStyle = null,
-    touchableComponent: ComponentClassP[js.Object] = null,
-    touchableProps: js.Object = null,
-    underlayColor: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[AccordionNativeProps[T], default[T], Unit, AccordionNativeProps[T]] = {
-    val __obj = js.Dynamic.literal()
   
-      if (activeSections != null) __obj.updateDynamic("activeSections")(activeSections.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandFromBottom)) __obj.updateDynamic("expandFromBottom")(expandFromBottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandMultiple)) __obj.updateDynamic("expandMultiple")(expandMultiple.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* indexes */ js.Array[scala.Double]) => onChange(t0).runNow()))
-    if (renderContent != null) __obj.updateDynamic("renderContent")(js.Any.fromFunction4((t0: T, t1: /* index */ scala.Double, t2: /* isActive */ scala.Boolean, t3: /* sections */ js.Array[T]) => renderContent(t0, t1, t2, t3).runNow()))
-    if (renderFooter != null) __obj.updateDynamic("renderFooter")(js.Any.fromFunction4((t0: T, t1: /* index */ scala.Double, t2: /* isActive */ scala.Boolean, t3: /* sections */ js.Array[T]) => renderFooter(t0, t1, t2, t3).runNow()))
-    if (renderHeader != null) __obj.updateDynamic("renderHeader")(js.Any.fromFunction4((t0: T, t1: /* index */ scala.Double, t2: /* isActive */ scala.Boolean, t3: /* sections */ js.Array[T]) => renderHeader(t0, t1, t2, t3).runNow()))
-    if (renderSectionTitle != null) __obj.updateDynamic("renderSectionTitle")(js.Any.fromFunction4((t0: T, t1: /* index */ scala.Double, t2: /* isActive */ scala.Boolean, t3: /* sections */ js.Array[T]) => renderSectionTitle(t0, t1, t2, t3).runNow()))
-    if (sectionContainerStyle != null) __obj.updateDynamic("sectionContainerStyle")(sectionContainerStyle.asInstanceOf[js.Any])
-    if (sections != null) __obj.updateDynamic("sections")(sections.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (touchableComponent != null) __obj.updateDynamic("touchableComponent")(touchableComponent.asInstanceOf[js.Any])
-    if (touchableProps != null) __obj.updateDynamic("touchableProps")(touchableProps.asInstanceOf[js.Any])
-    if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.accordionMod.AccordionNativeProps[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.accordionMod.default[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.accordionMod.AccordionNativeProps[T]])(children: _*)
+  inline def apply[T /* <: AccordionHeader */](children: Element | js.Array[Element]): Builder[T] = {
+    val __props = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[AccordionNativeProps[T]]))
   }
-  @JSImport("@ant-design/react-native/lib/accordion", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object Panel {
+    
+    inline def apply(header: Any): Default[typingsJapgolly.antDesignReactNative.mod.Accordion.Panel] = {
+      val __props = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
+      new Default[typingsJapgolly.antDesignReactNative.mod.Accordion.Panel](js.Array(this.component, __props.asInstanceOf[AccordionPanelProps]))
+    }
+    
+    @JSImport("@ant-design/react-native", "Accordion.Panel")
+    @js.native
+    val component: js.Object = js.native
+    
+    def withProps(p: AccordionPanelProps): Default[typingsJapgolly.antDesignReactNative.mod.Accordion.Panel] = new Default[typingsJapgolly.antDesignReactNative.mod.Accordion.Panel](js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  @JSImport("@ant-design/react-native", "Accordion")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder[T /* <: AccordionHeader */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.Accordion[T]] {
+    
+    inline def activeSections(value: js.Array[Double | String]): this.type = set("activeSections", value.asInstanceOf[js.Any])
+    
+    inline def activeSectionsVarargs(value: (Double | String)*): this.type = set("activeSections", js.Array(value*))
+    
+    inline def align(value: top | center | bottom): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def containerStyle(value: StyleProp[ViewStyle]): this.type = set("containerStyle", value.asInstanceOf[js.Any])
+    
+    inline def containerStyleNull: this.type = set("containerStyle", null)
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def duration(value: Double): this.type = set("duration", value.asInstanceOf[js.Any])
+    
+    inline def easing(value: EasingMode | Any): this.type = set("easing", value.asInstanceOf[js.Any])
+    
+    inline def expandFromBottom(value: Boolean): this.type = set("expandFromBottom", value.asInstanceOf[js.Any])
+    
+    inline def expandMultiple(value: Boolean): this.type = set("expandMultiple", value.asInstanceOf[js.Any])
+    
+    inline def keyExtractor(value: (T, /* index */ Double) => Double | String): this.type = set("keyExtractor", js.Any.fromFunction2(value))
+    
+    inline def onChange(value: /* indexes */ js.Array[Double] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* indexes */ js.Array[Double]) => value(t0).runNow()))
+    
+    inline def renderAsFlatList(value: Boolean): this.type = set("renderAsFlatList", value.asInstanceOf[js.Any])
+    
+    inline def renderContent(value: (T, /* index */ Double, /* isActive */ Boolean, /* sections */ js.Array[T]) => Element): this.type = set("renderContent", js.Any.fromFunction4(value))
+    
+    inline def renderFooter(value: (T, /* index */ Double, /* isActive */ Boolean, /* sections */ js.Array[T]) => Element): this.type = set("renderFooter", js.Any.fromFunction4(value))
+    
+    inline def renderHeader(value: (T, /* index */ Double, /* isActive */ Boolean, /* sections */ js.Array[T]) => Element): this.type = set("renderHeader", js.Any.fromFunction4(value))
+    
+    inline def renderSectionTitle(value: (T, /* index */ Double, /* isActive */ Boolean, /* sections */ js.Array[T]) => Element): this.type = set("renderSectionTitle", js.Any.fromFunction4(value))
+    
+    inline def sectionContainerStyle(value: StyleProp[ViewStyle]): this.type = set("sectionContainerStyle", value.asInstanceOf[js.Any])
+    
+    inline def sectionContainerStyleNull: this.type = set("sectionContainerStyle", null)
+    
+    inline def sections(value: js.Array[T]): this.type = set("sections", value.asInstanceOf[js.Any])
+    
+    inline def sectionsVarargs(value: T*): this.type = set("sections", js.Array(value*))
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: PartialAccordionStyle): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def touchableComponent(value: ComponentClassP[js.Object]): this.type = set("touchableComponent", value.asInstanceOf[js.Any])
+    
+    inline def touchableProps(value: js.Object): this.type = set("touchableProps", value.asInstanceOf[js.Any])
+    
+    inline def underlayColor(value: String): this.type = set("underlayColor", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[T /* <: AccordionHeader */](p: AccordionNativeProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,13 +1,20 @@
 package typingsJapgolly.webpack.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webpack", "ProvidePlugin")
 @js.native
-class ProvidePlugin protected () extends Plugin {
-  def this(definitions: StringDictionary[js.Any]) = this()
+open class ProvidePlugin protected () extends StObject {
+  def this(definitions: Record[String, String | js.Array[String]]) = this()
+  
+  /**
+  	 * Apply the plugin
+  	 */
+  @JSName("apply")
+  def apply(compiler: Compiler): Unit = js.native
+  
+  var definitions: Record[String, String | js.Array[String]] = js.native
 }
-

@@ -1,44 +1,36 @@
 package typingsJapgolly.reactNativeDrawerLayout
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeDrawerLayoutStrings {
-  @js.native
-  sealed trait left extends js.Object
   
   @js.native
-  sealed trait `locked-closed` extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait `locked-open` extends js.Object
+  sealed trait `locked-closed` extends StObject
+  inline def `locked-closed`: `locked-closed` = "locked-closed".asInstanceOf[`locked-closed`]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait `locked-open` extends StObject
+  inline def `locked-open`: `locked-open` = "locked-open".asInstanceOf[`locked-open`]
   
   @js.native
-  sealed trait `on-drag` extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait `on-drag` extends StObject
+  inline def `on-drag`: `on-drag` = "on-drag".asInstanceOf[`on-drag`]
   
   @js.native
-  sealed trait unlocked extends js.Object
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def `locked-closed`: `locked-closed` = "locked-closed".asInstanceOf[`locked-closed`]
-  @scala.inline
-  def `locked-open`: `locked-open` = "locked-open".asInstanceOf[`locked-open`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def `on-drag`: `on-drag` = "on-drag".asInstanceOf[`on-drag`]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def unlocked: unlocked = "unlocked".asInstanceOf[unlocked]
+  @js.native
+  sealed trait unlocked extends StObject
+  inline def unlocked: unlocked = "unlocked".asInstanceOf[unlocked]
 }
-

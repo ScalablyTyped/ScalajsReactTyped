@@ -1,19 +1,24 @@
 package typingsJapgolly.ibmMobilefirst.WL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IResponse extends js.Object {
-  var invocationContext: js.UndefOr[js.Any] = js.undefined
+trait IResponse extends StObject {
+  
+  var invocationContext: js.UndefOr[Any] = js.undefined
 }
-
 object IResponse {
-  @scala.inline
-  def apply(invocationContext: js.Any = null): IResponse = {
+  
+  inline def apply(): IResponse = {
     val __obj = js.Dynamic.literal()
-    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResponse]
   }
+  
+  extension [Self <: IResponse](x: Self) {
+    
+    inline def setInvocationContext(value: Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+    
+    inline def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
+  }
 }
-

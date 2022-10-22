@@ -1,155 +1,153 @@
 package typingsJapgolly.nyaapi.mod.si
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Category extends js.Object
-
+sealed trait Category extends StObject
 @JSImport("nyaapi", "si.Category")
 @js.native
-object Category extends js.Object {
-  @js.native
-  sealed trait ANIME extends Category
-  
-  @js.native
-  sealed trait ANIME_AMV extends Category
-  
-  @js.native
-  sealed trait ANIME_ENGLISH extends Category
-  
-  @js.native
-  sealed trait ANIME_NON_ENGLISH extends Category
-  
-  @js.native
-  sealed trait ANIME_RAW extends Category
-  
-  @js.native
-  sealed trait AUDIO extends Category
-  
-  @js.native
-  sealed trait AUDIO_LOSSLESS extends Category
-  
-  @js.native
-  sealed trait AUDIO_LOSSY extends Category
-  
-  @js.native
-  sealed trait LITERATURE extends Category
-  
-  @js.native
-  sealed trait LITERATURE_ENGLISH extends Category
-  
-  @js.native
-  sealed trait LITERATURE_NON_ENGLISH extends Category
-  
-  @js.native
-  sealed trait LITERATURE_RAW extends Category
-  
-  @js.native
-  sealed trait LIVE_ACTION extends Category
-  
-  @js.native
-  sealed trait LIVE_ACTION_ENGLISH extends Category
-  
-  @js.native
-  sealed trait LIVE_ACTION_IDOL_PV extends Category
-  
-  @js.native
-  sealed trait LIVE_ACTION_NON_ENGLISH extends Category
-  
-  @js.native
-  sealed trait LIVE_ACTION_RAW extends Category
-  
-  @js.native
-  sealed trait PICTURES extends Category
-  
-  @js.native
-  sealed trait PICTURES_GRAPHICS extends Category
-  
-  @js.native
-  sealed trait PICTURES_PHOTOS extends Category
-  
-  @js.native
-  sealed trait SOFTWARE extends Category
-  
-  @js.native
-  sealed trait SOFTWARE_APPS extends Category
-  
-  @js.native
-  sealed trait SOFTWARE_GAMES extends Category
+object Category extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[Category with String] = js.native
-  /* "1_0" */ @js.native
-  object ANIME extends TopLevel[ANIME with String]
+  def apply(value: String): js.UndefOr[Category & String] = js.native
   
-  /* "1_1" */ @js.native
-  object ANIME_AMV extends TopLevel[ANIME_AMV with String]
+  @js.native
+  sealed trait `1_0`
+    extends StObject
+       with Category
+  /* "ANIME" */ val `1_0`: typingsJapgolly.nyaapi.mod.si.Category.`1_0` & String = js.native
   
-  /* "1_2" */ @js.native
-  object ANIME_ENGLISH extends TopLevel[ANIME_ENGLISH with String]
+  @js.native
+  sealed trait `1_1`
+    extends StObject
+       with Category
+  /* "ANIME_AMV" */ val `1_1`: typingsJapgolly.nyaapi.mod.si.Category.`1_1` & String = js.native
   
-  /* "1_3" */ @js.native
-  object ANIME_NON_ENGLISH extends TopLevel[ANIME_NON_ENGLISH with String]
+  @js.native
+  sealed trait `1_2`
+    extends StObject
+       with Category
+  /* "ANIME_ENGLISH" */ val `1_2`: typingsJapgolly.nyaapi.mod.si.Category.`1_2` & String = js.native
   
-  /* "1_4" */ @js.native
-  object ANIME_RAW extends TopLevel[ANIME_RAW with String]
+  @js.native
+  sealed trait `1_3`
+    extends StObject
+       with Category
+  /* "ANIME_NON_ENGLISH" */ val `1_3`: typingsJapgolly.nyaapi.mod.si.Category.`1_3` & String = js.native
   
-  /* "2_0" */ @js.native
-  object AUDIO extends TopLevel[AUDIO with String]
+  @js.native
+  sealed trait `1_4`
+    extends StObject
+       with Category
+  /* "ANIME_RAW" */ val `1_4`: typingsJapgolly.nyaapi.mod.si.Category.`1_4` & String = js.native
   
-  /* "2_1" */ @js.native
-  object AUDIO_LOSSLESS extends TopLevel[AUDIO_LOSSLESS with String]
+  @js.native
+  sealed trait `2_0`
+    extends StObject
+       with Category
+  /* "AUDIO" */ val `2_0`: typingsJapgolly.nyaapi.mod.si.Category.`2_0` & String = js.native
   
-  /* "2_2" */ @js.native
-  object AUDIO_LOSSY extends TopLevel[AUDIO_LOSSY with String]
+  @js.native
+  sealed trait `2_1`
+    extends StObject
+       with Category
+  /* "AUDIO_LOSSLESS" */ val `2_1`: typingsJapgolly.nyaapi.mod.si.Category.`2_1` & String = js.native
   
-  /* "3_0" */ @js.native
-  object LITERATURE extends TopLevel[LITERATURE with String]
+  @js.native
+  sealed trait `2_2`
+    extends StObject
+       with Category
+  /* "AUDIO_LOSSY" */ val `2_2`: typingsJapgolly.nyaapi.mod.si.Category.`2_2` & String = js.native
   
-  /* "3_1" */ @js.native
-  object LITERATURE_ENGLISH extends TopLevel[LITERATURE_ENGLISH with String]
+  @js.native
+  sealed trait `3_0`
+    extends StObject
+       with Category
+  /* "LITERATURE" */ val `3_0`: typingsJapgolly.nyaapi.mod.si.Category.`3_0` & String = js.native
   
-  /* "3_2" */ @js.native
-  object LITERATURE_NON_ENGLISH extends TopLevel[LITERATURE_NON_ENGLISH with String]
+  @js.native
+  sealed trait `3_1`
+    extends StObject
+       with Category
+  /* "LITERATURE_ENGLISH" */ val `3_1`: typingsJapgolly.nyaapi.mod.si.Category.`3_1` & String = js.native
   
-  /* "3_3" */ @js.native
-  object LITERATURE_RAW extends TopLevel[LITERATURE_RAW with String]
+  @js.native
+  sealed trait `3_2`
+    extends StObject
+       with Category
+  /* "LITERATURE_NON_ENGLISH" */ val `3_2`: typingsJapgolly.nyaapi.mod.si.Category.`3_2` & String = js.native
   
-  /* "4_0" */ @js.native
-  object LIVE_ACTION extends TopLevel[LIVE_ACTION with String]
+  @js.native
+  sealed trait `3_3`
+    extends StObject
+       with Category
+  /* "LITERATURE_RAW" */ val `3_3`: typingsJapgolly.nyaapi.mod.si.Category.`3_3` & String = js.native
   
-  /* "4_1" */ @js.native
-  object LIVE_ACTION_ENGLISH extends TopLevel[LIVE_ACTION_ENGLISH with String]
+  @js.native
+  sealed trait `4_0`
+    extends StObject
+       with Category
+  /* "LIVE_ACTION" */ val `4_0`: typingsJapgolly.nyaapi.mod.si.Category.`4_0` & String = js.native
   
-  /* "4_2" */ @js.native
-  object LIVE_ACTION_IDOL_PV extends TopLevel[LIVE_ACTION_IDOL_PV with String]
+  @js.native
+  sealed trait `4_1`
+    extends StObject
+       with Category
+  /* "LIVE_ACTION_ENGLISH" */ val `4_1`: typingsJapgolly.nyaapi.mod.si.Category.`4_1` & String = js.native
   
-  /* "4_3" */ @js.native
-  object LIVE_ACTION_NON_ENGLISH extends TopLevel[LIVE_ACTION_NON_ENGLISH with String]
+  @js.native
+  sealed trait `4_2`
+    extends StObject
+       with Category
+  /* "LIVE_ACTION_IDOL_PV" */ val `4_2`: typingsJapgolly.nyaapi.mod.si.Category.`4_2` & String = js.native
   
-  /* "4_4" */ @js.native
-  object LIVE_ACTION_RAW extends TopLevel[LIVE_ACTION_RAW with String]
+  @js.native
+  sealed trait `4_3`
+    extends StObject
+       with Category
+  /* "LIVE_ACTION_NON_ENGLISH" */ val `4_3`: typingsJapgolly.nyaapi.mod.si.Category.`4_3` & String = js.native
   
-  /* "5_0" */ @js.native
-  object PICTURES extends TopLevel[PICTURES with String]
+  @js.native
+  sealed trait `4_4`
+    extends StObject
+       with Category
+  /* "LIVE_ACTION_RAW" */ val `4_4`: typingsJapgolly.nyaapi.mod.si.Category.`4_4` & String = js.native
   
-  /* "5_1" */ @js.native
-  object PICTURES_GRAPHICS extends TopLevel[PICTURES_GRAPHICS with String]
+  @js.native
+  sealed trait `5_0`
+    extends StObject
+       with Category
+  /* "PICTURES" */ val `5_0`: typingsJapgolly.nyaapi.mod.si.Category.`5_0` & String = js.native
   
-  /* "5_2" */ @js.native
-  object PICTURES_PHOTOS extends TopLevel[PICTURES_PHOTOS with String]
+  @js.native
+  sealed trait `5_1`
+    extends StObject
+       with Category
+  /* "PICTURES_GRAPHICS" */ val `5_1`: typingsJapgolly.nyaapi.mod.si.Category.`5_1` & String = js.native
   
-  /* "6_0" */ @js.native
-  object SOFTWARE extends TopLevel[SOFTWARE with String]
+  @js.native
+  sealed trait `5_2`
+    extends StObject
+       with Category
+  /* "PICTURES_PHOTOS" */ val `5_2`: typingsJapgolly.nyaapi.mod.si.Category.`5_2` & String = js.native
   
-  /* "6_1" */ @js.native
-  object SOFTWARE_APPS extends TopLevel[SOFTWARE_APPS with String]
+  @js.native
+  sealed trait `6_0`
+    extends StObject
+       with Category
+  /* "SOFTWARE" */ val `6_0`: typingsJapgolly.nyaapi.mod.si.Category.`6_0` & String = js.native
   
-  /* "6_2" */ @js.native
-  object SOFTWARE_GAMES extends TopLevel[SOFTWARE_GAMES with String]
+  @js.native
+  sealed trait `6_1`
+    extends StObject
+       with Category
+  /* "SOFTWARE_APPS" */ val `6_1`: typingsJapgolly.nyaapi.mod.si.Category.`6_1` & String = js.native
   
+  @js.native
+  sealed trait `6_2`
+    extends StObject
+       with Category
+  /* "SOFTWARE_GAMES" */ val `6_2`: typingsJapgolly.nyaapi.mod.si.Category.`6_2` & String = js.native
 }
-

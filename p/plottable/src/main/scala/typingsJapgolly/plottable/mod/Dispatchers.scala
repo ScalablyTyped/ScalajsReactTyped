@@ -1,67 +1,107 @@
 package typingsJapgolly.plottable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable", "Dispatchers")
-@js.native
-object Dispatchers extends js.Object {
+object Dispatchers {
+  
+  @JSImport("plottable", "Dispatchers.Key")
   @js.native
   /**
     * This constructor should not be invoked directly.
     *
     * @constructor
     */
-  class Key ()
-    extends typingsJapgolly.plottable.dispatchersMod.Key
-  
-  @js.native
-  /**
-    * This constructor not be invoked directly.
-    *
-    * @constructor
-    */
-  class Mouse protected ()
-    extends typingsJapgolly.plottable.dispatchersMod.Mouse
-  
-  @js.native
-  class Touch protected ()
-    extends typingsJapgolly.plottable.dispatchersMod.Touch {
-    /**
-      * This constructor should not be invoked directly.
-      *
-      * @param {SVGElement} svg The root <svg> to attach to.
-      */
-    def this(component: typingsJapgolly.plottable.componentMod.Component) = this()
-  }
-  
+  open class Key ()
+    extends typingsJapgolly.plottable.buildSrcDispatchersMod.Key
   /* static members */
-  @js.native
-  object Key extends js.Object {
-    var _DISPATCHER_KEY: js.Any = js.native
-    var _KEYDOWN_EVENT_NAME: js.Any = js.native
-    var _KEYUP_EVENT_NAME: js.Any = js.native
+  object Key {
+    
+    @JSImport("plottable", "Dispatchers.Key")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable", "Dispatchers.Key._DISPATCHER_KEY")
+    @js.native
+    def _DISPATCHER_KEY: Any = js.native
+    inline def _DISPATCHER_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Dispatchers.Key._KEYDOWN_EVENT_NAME")
+    @js.native
+    def _KEYDOWN_EVENT_NAME: Any = js.native
+    inline def _KEYDOWN_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYDOWN_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Dispatchers.Key._KEYUP_EVENT_NAME")
+    @js.native
+    def _KEYUP_EVENT_NAME: Any = js.native
+    inline def _KEYUP_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYUP_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
     /**
       * Gets a Key Dispatcher. If one already exists it will be returned;
       * otherwise, a new one will be created.
       *
       * @return {Dispatchers.Key}
       */
-    def getDispatcher(): typingsJapgolly.plottable.dispatchersMod.Key = js.native
+    inline def getDispatcher(): typingsJapgolly.plottable.buildSrcDispatchersMod.Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")().asInstanceOf[typingsJapgolly.plottable.buildSrcDispatchersMod.Key]
   }
   
-  /* static members */
+  @JSImport("plottable", "Dispatchers.Mouse")
   @js.native
-  object Mouse extends js.Object {
-    var _DBLCLICK_EVENT_NAME: js.Any = js.native
-    var _DISPATCHER_KEY: js.Any = js.native
-    var _MOUSEDOWN_EVENT_NAME: js.Any = js.native
-    var _MOUSEMOVE_EVENT_NAME: js.Any = js.native
-    var _MOUSEOUT_EVENT_NAME: js.Any = js.native
-    var _MOUSEOVER_EVENT_NAME: js.Any = js.native
-    var _MOUSEUP_EVENT_NAME: js.Any = js.native
-    var _WHEEL_EVENT_NAME: js.Any = js.native
+  /**
+    * This constructor not be invoked directly.
+    *
+    * @constructor
+    */
+  /* private */ open class Mouse ()
+    extends typingsJapgolly.plottable.buildSrcDispatchersMod.Mouse
+  /* static members */
+  object Mouse {
+    
+    @JSImport("plottable", "Dispatchers.Mouse")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable", "Dispatchers.Mouse._DBLCLICK_EVENT_NAME")
+    @js.native
+    def _DBLCLICK_EVENT_NAME: Any = js.native
+    inline def _DBLCLICK_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DBLCLICK_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Dispatchers.Mouse._DISPATCHER_KEY")
+    @js.native
+    def _DISPATCHER_KEY: Any = js.native
+    inline def _DISPATCHER_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Dispatchers.Mouse._MOUSEDOWN_EVENT_NAME")
+    @js.native
+    def _MOUSEDOWN_EVENT_NAME: Any = js.native
+    inline def _MOUSEDOWN_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEDOWN_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Dispatchers.Mouse._MOUSEMOVE_EVENT_NAME")
+    @js.native
+    def _MOUSEMOVE_EVENT_NAME: Any = js.native
+    inline def _MOUSEMOVE_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEMOVE_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Dispatchers.Mouse._MOUSEOUT_EVENT_NAME")
+    @js.native
+    def _MOUSEOUT_EVENT_NAME: Any = js.native
+    inline def _MOUSEOUT_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEOUT_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Dispatchers.Mouse._MOUSEOVER_EVENT_NAME")
+    @js.native
+    def _MOUSEOVER_EVENT_NAME: Any = js.native
+    inline def _MOUSEOVER_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEOVER_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Dispatchers.Mouse._MOUSEUP_EVENT_NAME")
+    @js.native
+    def _MOUSEUP_EVENT_NAME: Any = js.native
+    inline def _MOUSEUP_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MOUSEUP_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Dispatchers.Mouse._WHEEL_EVENT_NAME")
+    @js.native
+    def _WHEEL_EVENT_NAME: Any = js.native
+    inline def _WHEEL_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WHEEL_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
     /**
       * Get a Mouse Dispatcher for the component tree.
       * If one already exists on that <svg>, it will be returned; otherwise, a new one will be created.
@@ -69,17 +109,52 @@ object Dispatchers extends js.Object {
       * @param {SVGElement} elem
       * @return {Dispatchers.Mouse}
       */
-    def getDispatcher(component: typingsJapgolly.plottable.componentMod.Component): typingsJapgolly.plottable.dispatchersMod.Mouse = js.native
+    inline def getDispatcher(component: typingsJapgolly.plottable.buildSrcComponentsComponentMod.Component): typingsJapgolly.plottable.buildSrcDispatchersMod.Mouse = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.plottable.buildSrcDispatchersMod.Mouse]
   }
   
-  /* static members */
+  @JSImport("plottable", "Dispatchers.Touch")
   @js.native
-  object Touch extends js.Object {
-    var _DISPATCHER_KEY: js.Any = js.native
-    var _TOUCHCANCEL_EVENT_NAME: js.Any = js.native
-    var _TOUCHEND_EVENT_NAME: js.Any = js.native
-    var _TOUCHMOVE_EVENT_NAME: js.Any = js.native
-    var _TOUCHSTART_EVENT_NAME: js.Any = js.native
+  open class Touch protected ()
+    extends typingsJapgolly.plottable.buildSrcDispatchersMod.Touch {
+    /**
+      * This constructor should not be invoked directly.
+      *
+      * @param {SVGElement} svg The root <svg> to attach to.
+      */
+    def this(component: typingsJapgolly.plottable.buildSrcComponentsComponentMod.Component) = this()
+  }
+  /* static members */
+  object Touch {
+    
+    @JSImport("plottable", "Dispatchers.Touch")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable", "Dispatchers.Touch._DISPATCHER_KEY")
+    @js.native
+    def _DISPATCHER_KEY: Any = js.native
+    inline def _DISPATCHER_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Dispatchers.Touch._TOUCHCANCEL_EVENT_NAME")
+    @js.native
+    def _TOUCHCANCEL_EVENT_NAME: Any = js.native
+    inline def _TOUCHCANCEL_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHCANCEL_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Dispatchers.Touch._TOUCHEND_EVENT_NAME")
+    @js.native
+    def _TOUCHEND_EVENT_NAME: Any = js.native
+    inline def _TOUCHEND_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHEND_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Dispatchers.Touch._TOUCHMOVE_EVENT_NAME")
+    @js.native
+    def _TOUCHMOVE_EVENT_NAME: Any = js.native
+    inline def _TOUCHMOVE_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHMOVE_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Dispatchers.Touch._TOUCHSTART_EVENT_NAME")
+    @js.native
+    def _TOUCHSTART_EVENT_NAME: Any = js.native
+    inline def _TOUCHSTART_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOUCHSTART_EVENT_NAME")(x.asInstanceOf[js.Any])
+    
     /**
       * Gets a Touch Dispatcher for the component.
       * If one already exists, it will be returned; otherwise, a new one will be created.
@@ -87,8 +162,6 @@ object Dispatchers extends js.Object {
       * @param component
       * @return {Dispatchers.Touch}
       */
-    def getDispatcher(component: typingsJapgolly.plottable.componentMod.Component): typingsJapgolly.plottable.dispatchersMod.Touch = js.native
+    inline def getDispatcher(component: typingsJapgolly.plottable.buildSrcComponentsComponentMod.Component): typingsJapgolly.plottable.buildSrcDispatchersMod.Touch = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.plottable.buildSrcDispatchersMod.Touch]
   }
-  
 }
-

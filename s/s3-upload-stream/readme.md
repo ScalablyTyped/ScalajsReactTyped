@@ -10,10 +10,10 @@ Writeable stream for uploading content of unknown size to S3 via the multipart A
 | ------------------ | :-------------: |
 | Full name          | s3-upload-stream |
 | Keywords           | aws, s3, upload, pipe, stream |
-| # releases         | 1 |
-| # dependents       | 52 |
-| # downloads        | 1648794 |
-| # stars            | 20 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 147310.66666666666 |
+| # stars            | 337.0 |
 
 ## Links
 - [Homepage](https://github.com/nathanpeck/s3-upload-stream)

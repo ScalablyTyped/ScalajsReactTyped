@@ -1,8 +1,8 @@
 package typingsJapgolly.reactBootstrapTypeahead.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.large
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.small
   - typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.sm
 */
-trait TypeaheadBsSizes extends js.Object
-
+trait TypeaheadBsSizes extends StObject
 object TypeaheadBsSizes {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def large: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.large = this.cast("large")
-  @scala.inline
-  def lg: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.lg = this.cast("lg")
-  @scala.inline
-  def sm: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.sm = this.cast("sm")
-  @scala.inline
-  def small: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.small = this.cast("small")
+  
+  inline def large: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.large = "large".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.large]
+  
+  inline def lg: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.lg = "lg".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.lg]
+  
+  inline def sm: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.sm = "sm".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.sm]
+  
+  inline def small: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.small = "small".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.small]
 }
-

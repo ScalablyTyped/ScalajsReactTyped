@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.qldbsessionMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsQldbsessionMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.QLDBSession")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class QLDBSession ()
+open class QLDBSession ()
   extends typingsJapgolly.awsSdk.mod.QLDBSession {
   def this(options: ClientConfiguration) = this()
 }
-

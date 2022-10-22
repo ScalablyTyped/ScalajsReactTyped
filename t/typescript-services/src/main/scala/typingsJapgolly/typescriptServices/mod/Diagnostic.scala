@@ -1,13 +1,15 @@
 package typingsJapgolly.typescriptServices.mod
 
+import typingsJapgolly.typescriptServices.TypeScript.DiagnosticInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "Diagnostic")
 @js.native
-class Diagnostic protected ()
-  extends typingsJapgolly.typescriptServices.TypeScript.Diagnostic {
+open class Diagnostic protected ()
+  extends StObject
+     with typingsJapgolly.typescriptServices.TypeScript.Diagnostic {
   def this(
     fileName: String,
     lineMap: typingsJapgolly.typescriptServices.TypeScript.LineMap,
@@ -21,7 +23,7 @@ class Diagnostic protected ()
     start: Double,
     length: Double,
     diagnosticKey: String,
-    _arguments: js.Array[_]
+    _arguments: js.Array[Any]
   ) = this()
   def this(
     fileName: String,
@@ -29,18 +31,88 @@ class Diagnostic protected ()
     start: Double,
     length: Double,
     diagnosticKey: String,
-    _arguments: js.Array[_],
+    _arguments: js.Array[Any],
     additionalLocations: js.Array[typingsJapgolly.typescriptServices.TypeScript.Location]
   ) = this()
+  def this(
+    fileName: String,
+    lineMap: typingsJapgolly.typescriptServices.TypeScript.LineMap,
+    start: Double,
+    length: Double,
+    diagnosticKey: String,
+    _arguments: Unit,
+    additionalLocations: js.Array[typingsJapgolly.typescriptServices.TypeScript.Location]
+  ) = this()
+  
+  /* private */ /* CompleteClass */
+  var _additionalLocations: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _arguments: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _diagnosticKey: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _fileName: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _length: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _lineMap: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _start: Any = js.native
+  
+  /* CompleteClass */
+  override def additionalLocations(): js.Array[typingsJapgolly.typescriptServices.TypeScript.Location] = js.native
+  
+  /* CompleteClass */
+  override def arguments(): js.Array[Any] = js.native
+  
+  /* CompleteClass */
+  override def character(): Double = js.native
+  
+  /* CompleteClass */
+  override def diagnosticKey(): String = js.native
+  
+  /* CompleteClass */
+  override def fileName(): String = js.native
+  
+  /* CompleteClass */
+  override def info(): DiagnosticInfo = js.native
+  
+  /* CompleteClass */
+  override def length(): Double = js.native
+  
+  /* CompleteClass */
+  override def line(): Double = js.native
+  
+  /* CompleteClass */
+  override def lineMap(): typingsJapgolly.typescriptServices.TypeScript.LineMap = js.native
+  
+  /* CompleteClass */
+  override def message(): String = js.native
+  
+  /* CompleteClass */
+  override def start(): Double = js.native
+  
+  /* CompleteClass */
+  override def text(): String = js.native
+  
+  /* CompleteClass */
+  override def toJSON(key: Any): Any = js.native
 }
-
-/* static members */
-@JSImport("typescript-services", "Diagnostic")
-@js.native
-object Diagnostic extends js.Object {
-  def equals(
+object Diagnostic {
+  
+  @JSImport("typescript-services", "Diagnostic")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def equals_(
     diagnostic1: typingsJapgolly.typescriptServices.TypeScript.Diagnostic,
     diagnostic2: typingsJapgolly.typescriptServices.TypeScript.Diagnostic
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(diagnostic1.asInstanceOf[js.Any], diagnostic2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }
-

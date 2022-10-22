@@ -1,35 +1,27 @@
 package typingsJapgolly.chrome.chrome.cast.media
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TrackType extends js.Object
-
+sealed trait TrackType extends StObject
 @JSGlobal("chrome.cast.media.TrackType")
 @js.native
-object TrackType extends js.Object {
-  @js.native
-  sealed trait AUDIO extends TrackType
+object TrackType extends StObject {
   
   @js.native
-  sealed trait TEXT extends TrackType
+  sealed trait AUDIO
+    extends StObject
+       with TrackType
   
   @js.native
-  sealed trait VIDEO extends TrackType
+  sealed trait TEXT
+    extends StObject
+       with TrackType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[TrackType with String] = js.native
-  /* "AUDIO" */ @js.native
-  object AUDIO extends TopLevel[AUDIO with String]
-  
-  /* "TEXT" */ @js.native
-  object TEXT extends TopLevel[TEXT with String]
-  
-  /* "VIDEO" */ @js.native
-  object VIDEO extends TopLevel[VIDEO with String]
-  
+  @js.native
+  sealed trait VIDEO
+    extends StObject
+       with TrackType
 }
-

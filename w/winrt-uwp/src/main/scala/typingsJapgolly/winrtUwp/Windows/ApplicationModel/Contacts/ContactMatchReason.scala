@@ -2,19 +2,35 @@ package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Contacts
 
 import typingsJapgolly.winrtUwp.Windows.Data.Text.TextSegment
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details about why search results matched the query parameters. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactMatchReason")
-@js.native
-abstract class ContactMatchReason () extends js.Object {
+trait ContactMatchReason extends StObject {
+  
   /** Gets the contact field type that matched the search, such as name, phone number, email address and so on. */
-  var field: ContactMatchReasonKind = js.native
+  var field: ContactMatchReasonKind
+  
   /** Gets a list of matching TextSegment objects which tells you what to highlight in your view as the result of a contact search. */
-  var segments: IVectorView[TextSegment] = js.native
+  var segments: IVectorView[TextSegment]
+  
   /** Gets the matching text result from a contact search. */
-  var text: String = js.native
+  var text: String
 }
-
+object ContactMatchReason {
+  
+  inline def apply(field: ContactMatchReasonKind, segments: IVectorView[TextSegment], text: String): ContactMatchReason = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContactMatchReason]
+  }
+  
+  extension [Self <: ContactMatchReason](x: Self) {
+    
+    inline def setField(value: ContactMatchReasonKind): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setSegments(value: IVectorView[TextSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+  }
+}

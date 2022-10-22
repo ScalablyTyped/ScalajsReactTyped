@@ -1,15 +1,14 @@
 package typingsJapgolly.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4108`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4117`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4130`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4131`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4152`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4108`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4117`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4130`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4131`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4152`
 */
-trait HorizontalAlignments extends js.Object
-
+trait HorizontalAlignments extends StObject

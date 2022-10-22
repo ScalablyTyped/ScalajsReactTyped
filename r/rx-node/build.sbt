@@ -1,18 +1,16 @@
 organization := "org.scalablytyped.japgolly"
 name := "rx-node"
-version := "0.0-unknown-dt-20200227Z-ad32ba"
-scalaVersion := "2.13.1"
+version := "0.0-unknown-dt-20220818Z-237414"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "rx-core" % "4.0-dt-20200225Z-9f9e3f",
-  "org.scalablytyped.japgolly" %%% "rx-lite" % "4.0-dt-20200225Z-6dc133",
-  "org.scalablytyped.japgolly" %%% "rx-lite-aggregates" % "4.0-dt-20200225Z-7cc447",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "rx-core" % "4.0-dt-20220818Z-218266",
+  "org.scalablytyped.japgolly" %%% "rx-lite" % "4.0-dt-20220818Z-ced06c",
+  "org.scalablytyped.japgolly" %%% "rx-lite-aggregates" % "4.0-dt-20220818Z-0f0b21",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

@@ -1,12 +1,11 @@
 package typingsJapgolly.watsonDeveloperCloud
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This can be used to `require` the library as a side effect.
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("watson-developer-cloud", JSImport.Namespace)
 @js.native
-object watsonDeveloperCloudRequire extends js.Object
-
+object watsonDeveloperCloudRequire extends StObject

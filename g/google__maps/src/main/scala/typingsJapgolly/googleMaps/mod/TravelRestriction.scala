@@ -1,8 +1,8 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleMaps.googleMapsStrings.tolls
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.googleMaps.googleMapsStrings.ferries
   - typingsJapgolly.googleMaps.googleMapsStrings.indoor
 */
-trait TravelRestriction extends js.Object
-
+trait TravelRestriction extends StObject
 object TravelRestriction {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ferries: typingsJapgolly.googleMaps.googleMapsStrings.ferries = this.cast("ferries")
-  @scala.inline
-  def highways: typingsJapgolly.googleMaps.googleMapsStrings.highways = this.cast("highways")
-  @scala.inline
-  def indoor: typingsJapgolly.googleMaps.googleMapsStrings.indoor = this.cast("indoor")
-  @scala.inline
-  def tolls: typingsJapgolly.googleMaps.googleMapsStrings.tolls = this.cast("tolls")
+  
+  inline def ferries: typingsJapgolly.googleMaps.googleMapsStrings.ferries = "ferries".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.ferries]
+  
+  inline def highways: typingsJapgolly.googleMaps.googleMapsStrings.highways = "highways".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.highways]
+  
+  inline def indoor: typingsJapgolly.googleMaps.googleMapsStrings.indoor = "indoor".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.indoor]
+  
+  inline def tolls: typingsJapgolly.googleMaps.googleMapsStrings.tolls = "tolls".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.tolls]
 }
-

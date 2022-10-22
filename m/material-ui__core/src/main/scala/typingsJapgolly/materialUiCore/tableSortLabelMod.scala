@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.tableSortLabelTableSortLabelMod.TableSortLabelProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.span
+import typingsJapgolly.materialUiCore.tableSortLabelTableSortLabelMod.TableSortLabelTypeMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/TableSortLabel", JSImport.Namespace)
-@js.native
-object tableSortLabelMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[TableSortLabelProps, ComponentState, js.Any] {
-    def this(props: TableSortLabelProps) = this()
-    def this(props: TableSortLabelProps, context: js.Any) = this()
-  }
+object tableSortLabelMod extends Shortcut {
   
+  /**
+    * A button based label for placing inside `TableCell` for column sorting.
+    * Demos:
+    *
+    * - [Tables](https://mui.com/components/tables/)
+    *
+    * API:
+    *
+    * - [TableSortLabel API](https://mui.com/api/table-sort-label/)
+    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    */
+  @JSImport("@material-ui/core/TableSortLabel", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[TableSortLabelProps]]
+  val default: ExtendButtonBase[TableSortLabelTypeMap[js.Object, span]] = js.native
   
+  type _To = ExtendButtonBase[TableSortLabelTypeMap[js.Object, span]]
+  
+  /* This means you don't have to write `default`, but can instead just say `tableSortLabelMod.foo` */
+  override def _to: ExtendButtonBase[TableSortLabelTypeMap[js.Object, span]] = default
 }
-

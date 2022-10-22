@@ -1,20 +1,16 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.mod.SyntaxKind.ThisKeyword
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.typescript.mod.TextRange because Already inherited
-- typingsJapgolly.typescript.mod.Node because Already inherited
-- typingsJapgolly.typescript.mod.TypeNode because var conflicts: decorators, end, flags, kind, modifiers, parent, pos. Inlined _typeNodeBrand
-- typingsJapgolly.typescript.mod.KeywordTypeNode because var conflicts: decorators, end, flags, kind, modifiers, parent, pos. Inlined  */ @js.native
+@js.native
 trait ThisExpression
-  extends PrimaryExpression
+  extends StObject
+     with PrimaryExpression
      with JsxTagNameExpression {
-  var _typeNodeBrand: js.Any = js.native
+  
   @JSName("kind")
-  var kind_ThisExpression: ThisKeyword = js.native
+  val kind_ThisExpression: ThisKeyword = js.native
 }
-

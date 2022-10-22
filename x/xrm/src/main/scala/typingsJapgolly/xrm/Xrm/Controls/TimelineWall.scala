@@ -2,24 +2,26 @@ package typingsJapgolly.xrm.Xrm.Controls
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for a Timeline control.
   * @see {@link Control}
   */
-trait TimelineWall extends Control {
+trait TimelineWall
+  extends StObject
+     with Control {
+  
   /**
     * Refreshes the data displayed in a timelinewall and timer control.
     */
   def refresh(): Unit
 }
-
 object TimelineWall {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getControlType: CallbackTo[ControlType | String],
     getLabel: CallbackTo[String],
     getName: CallbackTo[String],
@@ -28,15 +30,12 @@ object TimelineWall {
     refresh: Callback,
     setLabel: String => Callback
   ): TimelineWall = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getControlType")(getControlType.toJsFn)
-    __obj.updateDynamic("getLabel")(getLabel.toJsFn)
-    __obj.updateDynamic("getName")(getName.toJsFn)
-    __obj.updateDynamic("getParent")(getParent.toJsFn)
-    __obj.updateDynamic("getVisible")(getVisible.toJsFn)
-    __obj.updateDynamic("refresh")(refresh.toJsFn)
-    __obj.updateDynamic("setLabel")(js.Any.fromFunction1((t0: java.lang.String) => setLabel(t0).runNow()))
+    val __obj = js.Dynamic.literal(getControlType = getControlType.toJsFn, getLabel = getLabel.toJsFn, getName = getName.toJsFn, getParent = getParent.toJsFn, getVisible = getVisible.toJsFn, refresh = refresh.toJsFn, setLabel = js.Any.fromFunction1((t0: String) => setLabel(t0).runNow()))
     __obj.asInstanceOf[TimelineWall]
   }
+  
+  extension [Self <: TimelineWall](x: Self) {
+    
+    inline def setRefresh(value: Callback): Self = StObject.set(x, "refresh", value.toJsFn)
+  }
 }
-

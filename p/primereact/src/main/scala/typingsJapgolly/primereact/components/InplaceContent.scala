@@ -1,14 +1,16 @@
 package typingsJapgolly.primereact.components
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object InplaceContent
-  extends SharedApply_Object_1928072692[typingsJapgolly.primereact.primereactInplaceMod.InplaceContent] {
-  @JSImport("primereact/inplace", "InplaceContent")
-  @js.native
-  override object componentImport extends js.Object
+object InplaceContent {
   
+  @JSImport("primereact", "InplaceContent")
+  @js.native
+  val component: js.Object = js.native
+  
+  implicit def make(companion: InplaceContent.type): SharedBuilder_Object_159303587[typingsJapgolly.primereact.mod.InplaceContent] = new SharedBuilder_Object_159303587[typingsJapgolly.primereact.mod.InplaceContent](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: js.Object): SharedBuilder_Object_159303587[typingsJapgolly.primereact.mod.InplaceContent] = new SharedBuilder_Object_159303587[typingsJapgolly.primereact.mod.InplaceContent](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

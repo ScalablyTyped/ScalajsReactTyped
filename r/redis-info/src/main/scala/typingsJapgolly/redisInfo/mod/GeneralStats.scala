@@ -2,23 +2,29 @@ package typingsJapgolly.redisInfo.mod
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.redisInfo.AnonCalls
-import typingsJapgolly.redisInfo.AnonExpires
+import typingsJapgolly.redisInfo.anon.Calls
+import typingsJapgolly.redisInfo.anon.Expires
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeneralStats extends js.Object {
-  var commands: StringDictionary[AnonCalls]
-  var databases: NumberDictionary[AnonExpires]
-}
-
-object GeneralStats {
-  @scala.inline
-  def apply(commands: StringDictionary[AnonCalls], databases: NumberDictionary[AnonExpires]): GeneralStats = {
-    val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], databases = databases.asInstanceOf[js.Any])
+trait GeneralStats extends StObject {
   
+  var commands: StringDictionary[Calls]
+  
+  var databases: NumberDictionary[Expires]
+}
+object GeneralStats {
+  
+  inline def apply(commands: StringDictionary[Calls], databases: NumberDictionary[Expires]): GeneralStats = {
+    val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], databases = databases.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralStats]
   }
+  
+  extension [Self <: GeneralStats](x: Self) {
+    
+    inline def setCommands(value: StringDictionary[Calls]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    
+    inline def setDatabases(value: NumberDictionary[Expires]): Self = StObject.set(x, "databases", value.asInstanceOf[js.Any])
+  }
 }
-

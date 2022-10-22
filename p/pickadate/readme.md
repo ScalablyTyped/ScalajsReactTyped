@@ -10,10 +10,10 @@ The composable date & time picker.
 | ------------------ | :-------------: |
 | Full name          | pickadate |
 | Keywords           | date, time, picker, input, responsive |
-| # releases         | 12 |
-| # dependents       | 14 |
-| # downloads        | 476832 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 67415.33333333333 |
+| # stars            | 7743.0 |
 
 ## Links
 - [Homepage](http://amsul.ca/pickadate.js)

@@ -1,25 +1,30 @@
 package typingsJapgolly.reactNative.mod
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.reactNative.AnonChanged
+import typingsJapgolly.reactNative.anon.Changed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ViewabilityConfigCallbackPair extends js.Object {
-  var onViewableItemsChanged: (js.Function1[/* info */ AnonChanged, Unit]) | Null
+trait ViewabilityConfigCallbackPair extends StObject {
+  
+  var onViewableItemsChanged: (js.Function1[/* info */ Changed, Unit]) | Null
+  
   var viewabilityConfig: ViewabilityConfig
 }
-
 object ViewabilityConfigCallbackPair {
-  @scala.inline
-  def apply(
-    viewabilityConfig: ViewabilityConfig,
-    onViewableItemsChanged: /* info */ AnonChanged => Callback = null
-  ): ViewabilityConfigCallbackPair = {
-    val __obj = js.Dynamic.literal(viewabilityConfig = viewabilityConfig.asInstanceOf[js.Any])
-    if (onViewableItemsChanged != null) __obj.updateDynamic("onViewableItemsChanged")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.reactNative.AnonChanged) => onViewableItemsChanged(t0).runNow()))
+  
+  inline def apply(viewabilityConfig: ViewabilityConfig): ViewabilityConfigCallbackPair = {
+    val __obj = js.Dynamic.literal(viewabilityConfig = viewabilityConfig.asInstanceOf[js.Any], onViewableItemsChanged = null)
     __obj.asInstanceOf[ViewabilityConfigCallbackPair]
   }
+  
+  extension [Self <: ViewabilityConfigCallbackPair](x: Self) {
+    
+    inline def setOnViewableItemsChanged(value: /* info */ Changed => Callback): Self = StObject.set(x, "onViewableItemsChanged", js.Any.fromFunction1((t0: /* info */ Changed) => value(t0).runNow()))
+    
+    inline def setOnViewableItemsChangedNull: Self = StObject.set(x, "onViewableItemsChanged", null)
+    
+    inline def setViewabilityConfig(value: ViewabilityConfig): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
+  }
 }
-

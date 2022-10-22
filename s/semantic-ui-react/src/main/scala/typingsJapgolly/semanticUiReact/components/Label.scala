@@ -1,20 +1,24 @@
 package typingsJapgolly.semanticUiReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.semanticUiReact.genericMod.SemanticCOLORS
-import typingsJapgolly.semanticUiReact.genericMod.SemanticSIZES
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandContent
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandItem
-import typingsJapgolly.semanticUiReact.iconIconMod.IconProps
-import typingsJapgolly.semanticUiReact.labelDetailMod.LabelDetailProps
-import typingsJapgolly.semanticUiReact.labelLabelMod.LabelProps
-import typingsJapgolly.semanticUiReact.labelMod.default
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.ElementType
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.ReactNodeArray
+import typingsJapgolly.semanticUiReact.distCommonjsElementsIconIconMod.IconProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsLabelLabelDetailMod.LabelDetailProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsLabelLabelGroupMod.LabelGroupProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsLabelLabelMod.LabelProps
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticSIZES
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.`bottom left`
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.`bottom right`
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.`top left`
@@ -25,79 +29,127 @@ import typingsJapgolly.semanticUiReact.semanticUiReactStrings.bottom
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.left
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.right
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Label {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    as: js.Any = null,
-    attached: top | bottom | (`top right`) | (`top left`) | (`bottom left`) | (`bottom right`) = null,
-    basic: js.UndefOr[Boolean] = js.undefined,
-    circular: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    color: SemanticCOLORS = null,
-    content: SemanticShorthandContent = null,
-    corner: Boolean | left | right = null,
-    detail: SemanticShorthandItem[LabelDetailProps] = null,
-    empty: js.Any = null,
-    floating: js.UndefOr[Boolean] = js.undefined,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    icon: SemanticShorthandItem[IconProps] = null,
-    image: js.Any = null,
-    onClick: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ LabelProps) => Callback = null,
-    onRemove: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ LabelProps) => Callback = null,
-    pointing: Boolean | above | below | left | right = null,
-    prompt: js.UndefOr[Boolean] = js.undefined,
-    removeIcon: SemanticShorthandItem[IconProps] = null,
-    ribbon: Boolean | right = null,
-    size: SemanticSIZES = null,
-    tag: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[LabelProps, default, Unit, LabelProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (attached != null) __obj.updateDynamic("attached")(attached.asInstanceOf[js.Any])
-    if (!js.isUndefined(basic)) __obj.updateDynamic("basic")(basic.asInstanceOf[js.Any])
-    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (corner != null) __obj.updateDynamic("corner")(corner.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.labelLabelMod.LabelProps) => onClick(t0, t1).runNow()))
-    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.labelLabelMod.LabelProps) => onRemove(t0, t1).runNow()))
-    if (pointing != null) __obj.updateDynamic("pointing")(pointing.asInstanceOf[js.Any])
-    if (!js.isUndefined(prompt)) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    if (removeIcon != null) __obj.updateDynamic("removeIcon")(removeIcon.asInstanceOf[js.Any])
-    if (ribbon != null) __obj.updateDynamic("ribbon")(ribbon.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(tag)) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.labelLabelMod.LabelProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.labelMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.labelLabelMod.LabelProps])(children: _*)
+  object Detail {
+    
+    @JSImport("semantic-ui-react", "Label.Detail")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Detail.type): SharedBuilder_LabelDetailProps2014604576 = new SharedBuilder_LabelDetailProps2014604576(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: LabelDetailProps): SharedBuilder_LabelDetailProps2014604576 = new SharedBuilder_LabelDetailProps2014604576(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/elements/Label", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object Group {
+    
+    @JSImport("semantic-ui-react", "Label.Group")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Group.type): SharedBuilder_LabelGroupProps490632779 = new SharedBuilder_LabelGroupProps490632779(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: LabelGroupProps): SharedBuilder_LabelGroupProps490632779 = new SharedBuilder_LabelGroupProps490632779(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  @JSImport("semantic-ui-react", "Label")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def active(value: Boolean): this.type = set("active", value.asInstanceOf[js.Any])
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def attached(value: top | bottom | (`top right`) | (`top left`) | (`bottom left`) | (`bottom right`)): this.type = set("attached", value.asInstanceOf[js.Any])
+    
+    inline def basic(value: Boolean): this.type = set("basic", value.asInstanceOf[js.Any])
+    
+    inline def circular(value: Boolean): this.type = set("circular", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def color(value: SemanticCOLORS): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: SemanticShorthandContent): this.type = set("content", value.asInstanceOf[js.Any])
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def corner(value: Boolean | left | right): this.type = set("corner", value.asInstanceOf[js.Any])
+    
+    inline def detail(value: SemanticShorthandItem[LabelDetailProps]): this.type = set("detail", value.asInstanceOf[js.Any])
+    
+    inline def detailFunction3(
+      value: (/* component */ ElementType, LabelDetailProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("detail", js.Any.fromFunction3(value))
+    
+    inline def detailNull: this.type = set("detail", null)
+    
+    inline def detailVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("detail", js.Array(value*))
+    
+    inline def detailVdomElement(value: VdomElement): this.type = set("detail", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def empty(value: Any): this.type = set("empty", value.asInstanceOf[js.Any])
+    
+    inline def floating(value: Boolean): this.type = set("floating", value.asInstanceOf[js.Any])
+    
+    inline def horizontal(value: Boolean): this.type = set("horizontal", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: SemanticShorthandItem[IconProps]): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def iconFunction3(
+      value: (/* component */ ElementType, IconProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("icon", js.Any.fromFunction3(value))
+    
+    inline def iconNull: this.type = set("icon", null)
+    
+    inline def iconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("icon", js.Array(value*))
+    
+    inline def iconVdomElement(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def image(value: Any): this.type = set("image", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ LabelProps) => Callback): this.type = set("onClick", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ LabelProps) => (value(t0, t1)).runNow()))
+    
+    inline def onRemove(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ LabelProps) => Callback): this.type = set("onRemove", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ LabelProps) => (value(t0, t1)).runNow()))
+    
+    inline def pointing(value: Boolean | above | below | left | right): this.type = set("pointing", value.asInstanceOf[js.Any])
+    
+    inline def prompt(value: Boolean): this.type = set("prompt", value.asInstanceOf[js.Any])
+    
+    inline def removeIcon(value: SemanticShorthandItem[IconProps]): this.type = set("removeIcon", value.asInstanceOf[js.Any])
+    
+    inline def removeIconFunction3(
+      value: (/* component */ ElementType, IconProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("removeIcon", js.Any.fromFunction3(value))
+    
+    inline def removeIconNull: this.type = set("removeIcon", null)
+    
+    inline def removeIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("removeIcon", js.Array(value*))
+    
+    inline def removeIconVdomElement(value: VdomElement): this.type = set("removeIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def ribbon(value: Boolean | right): this.type = set("ribbon", value.asInstanceOf[js.Any])
+    
+    inline def size(value: SemanticSIZES): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def tag(value: Boolean): this.type = set("tag", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Label.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: LabelProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

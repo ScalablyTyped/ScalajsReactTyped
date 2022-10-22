@@ -1,38 +1,30 @@
 package typingsJapgolly.ejWebAll.ej.datavisualization.Sunburst
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FontWeight extends js.Object
-
+sealed trait FontWeight extends StObject
 @JSGlobal("ej.datavisualization.Sunburst.FontWeight")
 @js.native
-object FontWeight extends js.Object {
-  //string
-  @js.native
-  sealed trait Bold extends FontWeight
+object FontWeight extends StObject {
   
   //string
   @js.native
-  sealed trait Lighter extends FontWeight
+  sealed trait Bold
+    extends StObject
+       with FontWeight
   
   //string
   @js.native
-  sealed trait Regular extends FontWeight
+  sealed trait Lighter
+    extends StObject
+       with FontWeight
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FontWeight with Double] = js.native
-  /* 1 */ @js.native
-  object Bold extends TopLevel[Bold with Double]
-  
-  /* 2 */ @js.native
-  object Lighter extends TopLevel[Lighter with Double]
-  
-  /* 0 */ @js.native
-  object Regular extends TopLevel[Regular with Double]
-  
+  //string
+  @js.native
+  sealed trait Regular
+    extends StObject
+       with FontWeight
 }
-

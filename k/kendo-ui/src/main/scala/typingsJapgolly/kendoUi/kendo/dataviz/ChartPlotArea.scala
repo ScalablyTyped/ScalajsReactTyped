@@ -1,17 +1,20 @@
 package typingsJapgolly.kendoUi.kendo.dataviz
 
-import typingsJapgolly.kendoUi.kendo.Observable_
+import typingsJapgolly.kendoUi.kendo.Observable
 import typingsJapgolly.kendoUi.kendo.drawing.Group
 import typingsJapgolly.kendoUi.kendo.drawing.MultiPath
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.dataviz.ChartPlotArea")
 @js.native
-class ChartPlotArea () extends Observable_ {
+trait ChartPlotArea
+  extends StObject
+     with Observable {
+  
   var backgroundVisual: MultiPath = js.native
+  
   var options: ChartPlotAreaOptions = js.native
+  
   var visual: Group = js.native
 }
-

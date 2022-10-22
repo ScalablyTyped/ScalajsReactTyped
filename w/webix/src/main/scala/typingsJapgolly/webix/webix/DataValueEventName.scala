@@ -1,21 +1,17 @@
 package typingsJapgolly.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.webix.webixStrings.onBindRequest
   - typingsJapgolly.webix.webixStrings.onChange
 */
-trait DataValueEventName extends js.Object
-
+trait DataValueEventName extends StObject
 object DataValueEventName {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
-  @scala.inline
-  def onChange: typingsJapgolly.webix.webixStrings.onChange = this.cast("onChange")
+  
+  inline def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typingsJapgolly.webix.webixStrings.onBindRequest]
+  
+  inline def onChange: typingsJapgolly.webix.webixStrings.onChange = "onChange".asInstanceOf[typingsJapgolly.webix.webixStrings.onChange]
 }
-

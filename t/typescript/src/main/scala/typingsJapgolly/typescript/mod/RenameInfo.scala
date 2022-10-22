@@ -1,37 +1,29 @@
 package typingsJapgolly.typescript.mod
 
-import typingsJapgolly.typescript.typescriptBooleans.`false`
-import typingsJapgolly.typescript.typescriptBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.typescript.mod.RenameInfoSuccess
   - typingsJapgolly.typescript.mod.RenameInfoFailure
 */
-trait RenameInfo extends js.Object
-
+trait RenameInfo extends StObject
 object RenameInfo {
-  @scala.inline
-  def RenameInfoSuccess(
-    canRename: `true`,
+  
+  inline def RenameInfoFailure(localizedErrorMessage: java.lang.String): typingsJapgolly.typescript.mod.RenameInfoFailure = {
+    val __obj = js.Dynamic.literal(canRename = false, localizedErrorMessage = localizedErrorMessage.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.RenameInfoFailure]
+  }
+  
+  inline def RenameInfoSuccess(
     displayName: java.lang.String,
     fullDisplayName: java.lang.String,
     kind: ScriptElementKind,
     kindModifiers: java.lang.String,
-    triggerSpan: TextSpan,
-    fileToRename: java.lang.String = null
-  ): RenameInfo = {
-    val __obj = js.Dynamic.literal(canRename = canRename.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], fullDisplayName = fullDisplayName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindModifiers = kindModifiers.asInstanceOf[js.Any], triggerSpan = triggerSpan.asInstanceOf[js.Any])
-    if (fileToRename != null) __obj.updateDynamic("fileToRename")(fileToRename.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RenameInfo]
-  }
-  @scala.inline
-  def RenameInfoFailure(canRename: `false`, localizedErrorMessage: java.lang.String): RenameInfo = {
-    val __obj = js.Dynamic.literal(canRename = canRename.asInstanceOf[js.Any], localizedErrorMessage = localizedErrorMessage.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[RenameInfo]
+    triggerSpan: TextSpan
+  ): typingsJapgolly.typescript.mod.RenameInfoSuccess = {
+    val __obj = js.Dynamic.literal(canRename = true, displayName = displayName.asInstanceOf[js.Any], fullDisplayName = fullDisplayName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindModifiers = kindModifiers.asInstanceOf[js.Any], triggerSpan = triggerSpan.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.RenameInfoSuccess]
   }
 }
-

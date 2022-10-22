@@ -1,28 +1,32 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.monacoEditor.mod.CancellationToken
 import typingsJapgolly.monacoEditor.mod.Position
 import typingsJapgolly.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TypeDefinitionProvider extends js.Object {
+trait TypeDefinitionProvider extends StObject {
+  
   /**
     * Provide the type definition of the symbol at the given position and document.
     */
   def provideTypeDefinition(model: ITextModel, position: Position, token: CancellationToken): ProviderResult[Definition | js.Array[LocationLink]]
 }
-
 object TypeDefinitionProvider {
-  @scala.inline
-  def apply(
-    provideTypeDefinition: (ITextModel, Position, CancellationToken) => CallbackTo[ProviderResult[Definition | js.Array[LocationLink]]]
+  
+  inline def apply(
+    provideTypeDefinition: (ITextModel, Position, CancellationToken) => ProviderResult[Definition | js.Array[LocationLink]]
   ): TypeDefinitionProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideTypeDefinition")(js.Any.fromFunction3((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.Position, t2: typingsJapgolly.monacoEditor.mod.CancellationToken) => provideTypeDefinition(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(provideTypeDefinition = js.Any.fromFunction3(provideTypeDefinition))
     __obj.asInstanceOf[TypeDefinitionProvider]
   }
+  
+  extension [Self <: TypeDefinitionProvider](x: Self) {
+    
+    inline def setProvideTypeDefinition(
+      value: (ITextModel, Position, CancellationToken) => ProviderResult[Definition | js.Array[LocationLink]]
+    ): Self = StObject.set(x, "provideTypeDefinition", js.Any.fromFunction3(value))
+  }
 }
-

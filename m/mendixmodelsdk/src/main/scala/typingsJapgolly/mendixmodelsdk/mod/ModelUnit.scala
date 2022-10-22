@@ -1,26 +1,26 @@
 package typingsJapgolly.mendixmodelsdk.mod
 
-import typingsJapgolly.mendixmodelsdk.unitsMod.IStructuralUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalUnitsMod.IStructuralUnit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "ModelUnit")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "ModelUnit")
 @js.native
-abstract class ModelUnit protected ()
-  extends typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit {
+open class ModelUnit[TModel /* <: IAbstractModel */] protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit[TModel] {
   def this(
-    model: typingsJapgolly.mendixmodelsdk.abstractModelMod.AbstractModel,
+    model: typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean
   ) = this()
   def this(
-    model: typingsJapgolly.mendixmodelsdk.abstractModelMod.AbstractModel,
+    model: typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
     container: IStructuralUnit
   ) = this()
 }
-

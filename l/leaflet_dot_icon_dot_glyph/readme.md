@@ -10,10 +10,10 @@ Allows you to put glyphs from icon fonts into your LeafletJS markers.
 | ------------------ | :-------------: |
 | Full name          | leaflet.icon.glyph |
 | Keywords           | leaflet, icon font |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 35221 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5224.333333333333 |
+| # stars            | 116.0 |
 
 ## Links
 - [Homepage](https://github.com/IvanSanchez/Leaflet.Icon.Glyph#readme)

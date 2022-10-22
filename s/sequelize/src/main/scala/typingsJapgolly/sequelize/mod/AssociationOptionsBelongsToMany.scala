@@ -1,16 +1,18 @@
 package typingsJapgolly.sequelize.mod
 
-import typingsJapgolly.sequelize.AnonPlural
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options provided when associating models with belongsToMany relationship
   *
   * @see Association class belongsToMany method
   */
-trait AssociationOptionsBelongsToMany extends AssociationOptionsManyToMany {
+trait AssociationOptionsBelongsToMany
+  extends StObject
+     with AssociationOptionsManyToMany {
+  
   /**
     * The name of the foreign key in the join table (representing the target model) or an object representing
     * the type definition for the other column (see `Sequelize.define` for syntax). When using an object, you
@@ -18,6 +20,7 @@ trait AssociationOptionsBelongsToMany extends AssociationOptionsManyToMany {
     * target
     */
   var otherKey: js.UndefOr[String | AssociationForeignKeyOptions] = js.undefined
+  
   /**
     * The name of the table that is used to join source and target in n:m associations. Can also be a
     * sequelize
@@ -29,46 +32,39 @@ trait AssociationOptionsBelongsToMany extends AssociationOptionsManyToMany {
     * @see https://github.com/sequelize/sequelize/blob/v3.4.1/lib/associations/has-many.js
     * @see https://github.com/sequelize/sequelize/blob/v3.4.1/lib/associations/belongs-to-many.js
     */
-  var through: (Model[_, _, _]) | String | ThroughOptions
+  var through: (Model[Any, Any, Any]) | String | ThroughOptions
+  
   /**
     * Should the join model have timestamps
     */
   var timestamps: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Belongs-To-Many creates a unique key when primary key is not present on through model. This unique key name can be overridden using uniqueKey option.
     */
   var uniqueKey: js.UndefOr[String] = js.undefined
 }
-
 object AssociationOptionsBelongsToMany {
-  @scala.inline
-  def apply(
-    through: (Model[_, _, _]) | String | ThroughOptions,
-    as: String | AnonPlural = null,
-    constraints: js.UndefOr[Boolean] = js.undefined,
-    foreignKey: String | AssociationForeignKeyOptions = null,
-    foreignKeyConstraint: js.UndefOr[Boolean] = js.undefined,
-    hooks: js.UndefOr[Boolean] = js.undefined,
-    onDelete: String = null,
-    onUpdate: String = null,
-    otherKey: String | AssociationForeignKeyOptions = null,
-    scope: AssociationScope = null,
-    timestamps: js.UndefOr[Boolean] = js.undefined,
-    uniqueKey: String = null
-  ): AssociationOptionsBelongsToMany = {
+  
+  inline def apply(through: (Model[Any, Any, Any]) | String | ThroughOptions): AssociationOptionsBelongsToMany = {
     val __obj = js.Dynamic.literal(through = through.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(constraints)) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
-    if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(foreignKeyConstraint)) __obj.updateDynamic("foreignKeyConstraint")(foreignKeyConstraint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
-    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete.asInstanceOf[js.Any])
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate.asInstanceOf[js.Any])
-    if (otherKey != null) __obj.updateDynamic("otherKey")(otherKey.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
-    if (uniqueKey != null) __obj.updateDynamic("uniqueKey")(uniqueKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationOptionsBelongsToMany]
   }
+  
+  extension [Self <: AssociationOptionsBelongsToMany](x: Self) {
+    
+    inline def setOtherKey(value: String | AssociationForeignKeyOptions): Self = StObject.set(x, "otherKey", value.asInstanceOf[js.Any])
+    
+    inline def setOtherKeyUndefined: Self = StObject.set(x, "otherKey", js.undefined)
+    
+    inline def setThrough(value: (Model[Any, Any, Any]) | String | ThroughOptions): Self = StObject.set(x, "through", value.asInstanceOf[js.Any])
+    
+    inline def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
+    
+    inline def setUniqueKey(value: String): Self = StObject.set(x, "uniqueKey", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueKeyUndefined: Self = StObject.set(x, "uniqueKey", js.undefined)
+  }
 }
-

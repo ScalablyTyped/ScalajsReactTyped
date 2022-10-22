@@ -1,83 +1,71 @@
 package typingsJapgolly.officeJsPreview.Office
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CustomXMLNodeType extends js.Object
-
+sealed trait CustomXMLNodeType extends StObject
 /**
   * Specifies the type of the XML node.
   */
 @JSGlobal("Office.CustomXMLNodeType")
 @js.native
-object CustomXMLNodeType extends js.Object {
+object CustomXMLNodeType extends StObject {
+  
   /**
     * The node is an attribute.
     */
   @js.native
-  sealed trait Attribute extends CustomXMLNodeType
+  sealed trait Attribute
+    extends StObject
+       with CustomXMLNodeType
   
   /**
     * The node is CData.
     */
   @js.native
-  sealed trait CData extends CustomXMLNodeType
+  sealed trait CData
+    extends StObject
+       with CustomXMLNodeType
   
   /**
     * The node is an element.
     */
   @js.native
-  sealed trait Element extends CustomXMLNodeType
+  sealed trait Element
+    extends StObject
+       with CustomXMLNodeType
   
   /**
     * The node is a comment.
     */
   @js.native
-  sealed trait NodeComment extends CustomXMLNodeType
+  sealed trait NodeComment
+    extends StObject
+       with CustomXMLNodeType
   
   /**
     * The node is a Document element.
     */
   @js.native
-  sealed trait NodeDocument extends CustomXMLNodeType
+  sealed trait NodeDocument
+    extends StObject
+       with CustomXMLNodeType
   
   /**
     * The node is a processing instruction.
     */
   @js.native
-  sealed trait ProcessingInstruction extends CustomXMLNodeType
+  sealed trait ProcessingInstruction
+    extends StObject
+       with CustomXMLNodeType
   
   /**
     * The node is text.
     */
   @js.native
-  sealed trait Text extends CustomXMLNodeType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CustomXMLNodeType with Double] = js.native
-  /* 0 */ @js.native
-  object Attribute extends TopLevel[Attribute with Double]
-  
-  /* 1 */ @js.native
-  object CData extends TopLevel[CData with Double]
-  
-  /* 3 */ @js.native
-  object Element extends TopLevel[Element with Double]
-  
-  /* 2 */ @js.native
-  object NodeComment extends TopLevel[NodeComment with Double]
-  
-  /* 4 */ @js.native
-  object NodeDocument extends TopLevel[NodeDocument with Double]
-  
-  /* 5 */ @js.native
-  object ProcessingInstruction extends TopLevel[ProcessingInstruction with Double]
-  
-  /* 6 */ @js.native
-  object Text extends TopLevel[Text with Double]
-  
+  sealed trait Text
+    extends StObject
+       with CustomXMLNodeType
 }
-

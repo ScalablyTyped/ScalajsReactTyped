@@ -1,34 +1,51 @@
 package typingsJapgolly.webidl2.mod
 
 import typingsJapgolly.webidl2.webidl2Strings.`interface mixin`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InterfaceMixinType extends IDLRootType {
-  /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttribute]
-  /** An array of interface members (attributes, operations, etc.). Empty if there are none. */
-  var members: js.Array[IDLInterfaceMemberType]
-  /** The name of the interface mixin */
-  var name: String
-  /** A boolean indicating whether it's a partial interface mixin. */
-  var partial: Boolean
-  var `type`: `interface mixin`
+trait InterfaceMixinType
+  extends StObject
+     with AbstractContainer
+     with IDLRootType {
+  
+  var inheritance: Null
+  
+  @JSName("members")
+  var members_InterfaceMixinType: js.Array[IDLInterfaceMixinMemberType]
+  
+  @JSName("parent")
+  var parent_InterfaceMixinType: Null
+  
+  @JSName("type")
+  var type_InterfaceMixinType: `interface mixin`
 }
-
 object InterfaceMixinType {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
-    members: js.Array[IDLInterfaceMemberType],
+    inheritance: Null,
+    members: js.Array[IDLInterfaceMixinMemberType],
     name: String,
-    partial: Boolean,
-    `type`: `interface mixin`
+    parent: Null,
+    partial: Boolean
   ): InterfaceMixinType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], inheritance = inheritance.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("interface mixin")
     __obj.asInstanceOf[InterfaceMixinType]
   }
+  
+  extension [Self <: InterfaceMixinType](x: Self) {
+    
+    inline def setInheritance(value: Null): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
+    
+    inline def setMembers(value: js.Array[IDLInterfaceMixinMemberType]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    
+    inline def setMembersVarargs(value: IDLInterfaceMixinMemberType*): Self = StObject.set(x, "members", js.Array(value*))
+    
+    inline def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: `interface mixin`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

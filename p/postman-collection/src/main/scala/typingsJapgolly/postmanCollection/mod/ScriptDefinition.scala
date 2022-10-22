@@ -1,35 +1,40 @@
 package typingsJapgolly.postmanCollection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScriptDefinition extends PropertyDefinition {
+trait ScriptDefinition
+  extends StObject
+     with PropertyDefinition {
+  
   var exec: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var src: js.UndefOr[String | Url] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object ScriptDefinition {
-  @scala.inline
-  def apply(
-    description: String | DescriptionDefinition = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    exec: String | js.Array[String] = null,
-    id: String = null,
-    name: String = null,
-    src: String | Url = null,
-    `type`: String = null
-  ): ScriptDefinition = {
+  
+  inline def apply(): ScriptDefinition = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (exec != null) __obj.updateDynamic("exec")(exec.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptDefinition]
   }
+  
+  extension [Self <: ScriptDefinition](x: Self) {
+    
+    inline def setExec(value: String | js.Array[String]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+    
+    inline def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
+    
+    inline def setExecVarargs(value: String*): Self = StObject.set(x, "exec", js.Array(value*))
+    
+    inline def setSrc(value: String | Url): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

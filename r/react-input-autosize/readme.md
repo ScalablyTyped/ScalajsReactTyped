@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-input-autosize
 
-Typings are for version 2.0
+Typings are for version 2.2
 
 ## Library description:
 Auto-resizing Input Component for React
@@ -10,10 +10,10 @@ Auto-resizing Input Component for React
 | ------------------ | :-------------: |
 | Full name          | react-input-autosize |
 | Keywords           | react, react-component, input, autosize |
-| # releases         | 4 |
-| # dependents       | 236 |
-| # downloads        | 55595709 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3437898333333334E7 |
+| # stars            | 707.0 |
 
 ## Links
 - [Homepage](https://github.com/JedWatson/react-input-autosize#readme)

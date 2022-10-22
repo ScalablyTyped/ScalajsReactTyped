@@ -1,35 +1,34 @@
 package typingsJapgolly.phaser.spine.webgl
 
-import org.scalajs.dom.raw.HTMLImageElement
-import org.scalajs.dom.raw.WebGLRenderingContext
 import typingsJapgolly.phaser.spine.Disposable
 import typingsJapgolly.phaser.spine.Restorable
 import typingsJapgolly.phaser.spine.Texture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.webgl.GLTexture")
 @js.native
-class GLTexture protected ()
-  extends Texture
+trait GLTexture
+  extends StObject
+     with Texture
      with Disposable
      with Restorable {
-  def this(context: ManagedWebGLRenderingContext, image: HTMLImageElement) = this()
-  def this(context: WebGLRenderingContext, image: HTMLImageElement) = this()
-  def this(context: ManagedWebGLRenderingContext, image: HTMLImageElement, useMipMaps: Boolean) = this()
-  def this(context: WebGLRenderingContext, image: HTMLImageElement, useMipMaps: Boolean) = this()
-  var boundUnit: js.Any = js.native
-  var context: js.Any = js.native
-  var texture: js.Any = js.native
-  var useMipMaps: js.Any = js.native
+  
   def bind(): Unit = js.native
   def bind(unit: Double): Unit = js.native
+  
+  /* private */ var boundUnit: Any = js.native
+  
+  /* private */ var context: Any = js.native
+  
   /* InferMemberOverrides */
   override def dispose(): Unit = js.native
-  /* CompleteClass */
-  override def restore(): Unit = js.native
+  
+  /* private */ var texture: Any = js.native
+  
   def unbind(): Unit = js.native
+  
   def update(useMipMaps: Boolean): Unit = js.native
+  
+  /* private */ var useMipMaps: Any = js.native
 }
-

@@ -1,19 +1,19 @@
 
 # Scala.js typings for libxslt
 
-Typings are for version 0.7
+Typings are for version 0.9
 
 ## Library description:
-Node.js bindings for libxslt compatible with libxmljs
+[Fork] Node.js bindings for libxslt compatible with libxmljs
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | libxslt |
 | Keywords           | xml, xsl, xslt, libxslt, bindings |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 50938 |
-| # stars            | 3 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4146.333333333333 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/albanm/node-libxslt)

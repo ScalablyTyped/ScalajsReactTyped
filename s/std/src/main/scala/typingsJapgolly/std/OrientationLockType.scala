@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.any
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.`portrait-primary`
   - typingsJapgolly.std.stdStrings.`portrait-secondary`
 */
-trait OrientationLockType extends js.Object
-
+trait OrientationLockType extends StObject
 object OrientationLockType {
-  @scala.inline
-  def any: typingsJapgolly.std.stdStrings.any = this.cast("any")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def landscape: typingsJapgolly.std.stdStrings.landscape = this.cast("landscape")
-  @scala.inline
-  def `landscape-primary`: typingsJapgolly.std.stdStrings.`landscape-primary` = this.cast("landscape-primary")
-  @scala.inline
-  def `landscape-secondary`: typingsJapgolly.std.stdStrings.`landscape-secondary` = this.cast("landscape-secondary")
-  @scala.inline
-  def natural: typingsJapgolly.std.stdStrings.natural = this.cast("natural")
-  @scala.inline
-  def portrait: typingsJapgolly.std.stdStrings.portrait = this.cast("portrait")
-  @scala.inline
-  def `portrait-primary`: typingsJapgolly.std.stdStrings.`portrait-primary` = this.cast("portrait-primary")
-  @scala.inline
-  def `portrait-secondary`: typingsJapgolly.std.stdStrings.`portrait-secondary` = this.cast("portrait-secondary")
+  
+  inline def any: typingsJapgolly.std.stdStrings.any = "any".asInstanceOf[typingsJapgolly.std.stdStrings.any]
+  
+  inline def landscape: typingsJapgolly.std.stdStrings.landscape = "landscape".asInstanceOf[typingsJapgolly.std.stdStrings.landscape]
+  
+  inline def `landscape-primary`: typingsJapgolly.std.stdStrings.`landscape-primary` = "landscape-primary".asInstanceOf[typingsJapgolly.std.stdStrings.`landscape-primary`]
+  
+  inline def `landscape-secondary`: typingsJapgolly.std.stdStrings.`landscape-secondary` = "landscape-secondary".asInstanceOf[typingsJapgolly.std.stdStrings.`landscape-secondary`]
+  
+  inline def natural: typingsJapgolly.std.stdStrings.natural = "natural".asInstanceOf[typingsJapgolly.std.stdStrings.natural]
+  
+  inline def portrait: typingsJapgolly.std.stdStrings.portrait = "portrait".asInstanceOf[typingsJapgolly.std.stdStrings.portrait]
+  
+  inline def `portrait-primary`: typingsJapgolly.std.stdStrings.`portrait-primary` = "portrait-primary".asInstanceOf[typingsJapgolly.std.stdStrings.`portrait-primary`]
+  
+  inline def `portrait-secondary`: typingsJapgolly.std.stdStrings.`portrait-secondary` = "portrait-secondary".asInstanceOf[typingsJapgolly.std.stdStrings.`portrait-secondary`]
 }
-

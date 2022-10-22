@@ -1,53 +1,58 @@
 package typingsJapgolly.rmcCalendar.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.rmcCalendar.dataTypesMod.Models.Locale
-import typingsJapgolly.rmcCalendar.headerMod.PropsType
-import typingsJapgolly.rmcCalendar.headerMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.rmcCalendar.libCalendarHeaderMod.PropsType
+import typingsJapgolly.rmcCalendar.libCalendarHeaderMod.default
+import typingsJapgolly.rmcCalendar.libDateDataTypesMod.Models.Locale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Header {
-  def apply(
-    clearIcon: VdomNode = null,
-    closeIcon: VdomNode = null,
-    locale: Locale = null,
-    onCancel: js.UndefOr[Callback] = js.undefined,
-    onClear: js.UndefOr[Callback] = js.undefined,
-    showClear: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PropsType, default, Unit, PropsType] = {
-    val __obj = js.Dynamic.literal()
   
-      if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.rawNode.asInstanceOf[js.Any])
-    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.rawNode.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    onCancel.foreach(p => __obj.updateDynamic("onCancel")(p.toJsFn))
-    onClear.foreach(p => __obj.updateDynamic("onClear")(p.toJsFn))
-    if (!js.isUndefined(showClear)) __obj.updateDynamic("showClear")(showClear.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rmcCalendar.headerMod.PropsType, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rmcCalendar.headerMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rmcCalendar.headerMod.PropsType])(children: _*)
-  }
   @JSImport("rmc-calendar/lib/calendar/Header", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def clearIcon(value: VdomNode): this.type = set("clearIcon", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def clearIconNull: this.type = set("clearIcon", null)
+    
+    inline def clearIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("clearIcon", js.Array(value*))
+    
+    inline def clearIconVdomElement(value: VdomElement): this.type = set("clearIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def closeIcon(value: VdomNode): this.type = set("closeIcon", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def closeIconNull: this.type = set("closeIcon", null)
+    
+    inline def closeIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("closeIcon", js.Array(value*))
+    
+    inline def closeIconVdomElement(value: VdomElement): this.type = set("closeIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def locale(value: Locale): this.type = set("locale", value.asInstanceOf[js.Any])
+    
+    inline def onCancel(value: Callback): this.type = set("onCancel", value.toJsFn)
+    
+    inline def onClear(value: Callback): this.type = set("onClear", value.toJsFn)
+    
+    inline def showClear(value: Boolean): this.type = set("showClear", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Header.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PropsType): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

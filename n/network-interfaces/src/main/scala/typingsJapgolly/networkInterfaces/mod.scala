@@ -1,16 +1,22 @@
 package typingsJapgolly.networkInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("network-interfaces", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def fromIp(ip: String, options: js.Object): String = js.native
-  def getInterface(options: js.Object): String = js.native
-  def getInterfaces(options: js.Object): js.Array[String] = js.native
-  def toIp(interfaceName: String, options: js.Object): String = js.native
-  def toIps(interfaceName: String, options: js.Object): js.Array[String] = js.native
+object mod {
+  
+  @JSImport("network-interfaces", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromIp(ip: String, options: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIp")(ip.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def getInterface(options: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getInterface")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def getInterfaces(options: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInterfaces")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  inline def toIp(interfaceName: String, options: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toIp")(interfaceName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def toIps(interfaceName: String, options: js.Object): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("toIps")(interfaceName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 }
-

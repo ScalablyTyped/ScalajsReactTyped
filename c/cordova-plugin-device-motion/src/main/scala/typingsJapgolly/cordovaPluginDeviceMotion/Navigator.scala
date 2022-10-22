@@ -1,10 +1,11 @@
 package typingsJapgolly.cordovaPluginDeviceMotion
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Navigator extends js.Object {
+trait Navigator extends StObject {
+  
   /**
     * This plugin provides access to the device's accelerometer. The accelerometer is a motion sensor
     * that detects the change (delta) in movement relative to the current device orientation,
@@ -12,13 +13,15 @@ trait Navigator extends js.Object {
     */
   var accelerometer: Accelerometer
 }
-
 object Navigator {
-  @scala.inline
-  def apply(accelerometer: Accelerometer): Navigator = {
-    val __obj = js.Dynamic.literal(accelerometer = accelerometer.asInstanceOf[js.Any])
   
+  inline def apply(accelerometer: Accelerometer): Navigator = {
+    val __obj = js.Dynamic.literal(accelerometer = accelerometer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigator]
   }
+  
+  extension [Self <: Navigator](x: Self) {
+    
+    inline def setAccelerometer(value: Accelerometer): Self = StObject.set(x, "accelerometer", value.asInstanceOf[js.Any])
+  }
 }
-

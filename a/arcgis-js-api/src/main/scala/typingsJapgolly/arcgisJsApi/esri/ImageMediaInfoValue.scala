@@ -1,20 +1,22 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ImageMediaInfoValue
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
+  
   /**
     * A string containing a URL to be launched in a browser when a user clicks the image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ImageMediaInfoValue.html#linkURL)
     */
   var linkURL: String = js.native
+  
   /**
     * A string containing the URL to the image.
     *
@@ -22,8 +24,3 @@ trait ImageMediaInfoValue
     */
   var sourceURL: String = js.native
 }
-
-@JSGlobal("__esri.ImageMediaInfoValue")
-@js.native
-object ImageMediaInfoValue extends TopLevel[ImageMediaInfoValueConstructor]
-

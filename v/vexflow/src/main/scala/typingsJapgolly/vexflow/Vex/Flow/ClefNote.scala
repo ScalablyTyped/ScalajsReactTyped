@@ -1,22 +1,25 @@
 package typingsJapgolly.vexflow.Vex.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Vex.Flow.ClefNote")
 @js.native
-class ClefNote protected () extends Note {
-  def this(clef: String) = this()
-  def this(clef: String, size: String) = this()
-  def this(clef: String, size: String, annotation: String) = this()
+trait ClefNote
+  extends StObject
+     with Note {
+  
   def addToModifierContext(): ClefNote = js.native
+  
   def draw(): Unit = js.native
+  
   def getClef(): String = js.native
+  
   def setClef(clef: String): ClefNote = js.native
   def setClef(clef: String, size: String): ClefNote = js.native
   def setClef(clef: String, size: String, annotation: String): ClefNote = js.native
+  def setClef(clef: String, size: Unit, annotation: String): ClefNote = js.native
+  
   @JSName("setStave")
   def setStave_Unit(stave: Stave): Unit = js.native
 }
-

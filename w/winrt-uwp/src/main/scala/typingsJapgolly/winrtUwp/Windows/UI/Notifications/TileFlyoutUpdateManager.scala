@@ -1,19 +1,7 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Notifications.TileFlyoutUpdateManager")
-@js.native
-abstract class TileFlyoutUpdateManager () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.UI.Notifications.TileFlyoutUpdateManager")
-@js.native
-object TileFlyoutUpdateManager extends js.Object {
-  var createTileFlyoutUpdaterForApplication: js.Any = js.native
-   /* unmapped type */ var createTileFlyoutUpdaterForSecondaryTile: js.Any = js.native
-   /* unmapped type */ var getTemplateContent: js.Any = js.native
-}
-
+trait TileFlyoutUpdateManager extends StObject

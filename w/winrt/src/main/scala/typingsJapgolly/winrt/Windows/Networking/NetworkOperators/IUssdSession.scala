@@ -1,27 +1,28 @@
 package typingsJapgolly.winrt.Windows.Networking.NetworkOperators
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IUssdSession extends js.Object {
+trait IUssdSession extends StObject {
+  
   def close(): Unit
+  
   def sendMessageAndGetReplyAsync(message: UssdMessage): IAsyncOperation[UssdReply]
 }
-
 object IUssdSession {
-  @scala.inline
-  def apply(
-    close: Callback,
-    sendMessageAndGetReplyAsync: UssdMessage => CallbackTo[IAsyncOperation[UssdReply]]
-  ): IUssdSession = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close.toJsFn)
-    __obj.updateDynamic("sendMessageAndGetReplyAsync")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Networking.NetworkOperators.UssdMessage) => sendMessageAndGetReplyAsync(t0).runNow()))
+  
+  inline def apply(close: Callback, sendMessageAndGetReplyAsync: UssdMessage => IAsyncOperation[UssdReply]): IUssdSession = {
+    val __obj = js.Dynamic.literal(close = close.toJsFn, sendMessageAndGetReplyAsync = js.Any.fromFunction1(sendMessageAndGetReplyAsync))
     __obj.asInstanceOf[IUssdSession]
   }
+  
+  extension [Self <: IUssdSession](x: Self) {
+    
+    inline def setClose(value: Callback): Self = StObject.set(x, "close", value.toJsFn)
+    
+    inline def setSendMessageAndGetReplyAsync(value: UssdMessage => IAsyncOperation[UssdReply]): Self = StObject.set(x, "sendMessageAndGetReplyAsync", js.Any.fromFunction1(value))
+  }
 }
-

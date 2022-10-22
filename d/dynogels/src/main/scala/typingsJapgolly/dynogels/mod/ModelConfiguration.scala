@@ -1,48 +1,82 @@
 package typingsJapgolly.dynogels.mod
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.joi.mod.ValidationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModelConfiguration extends js.Object {
+trait ModelConfiguration extends StObject {
+  
   var createdAt: js.UndefOr[Boolean | String] = js.undefined
+  
   var hashKey: String
-  var indexes: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var indexes: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var log: js.UndefOr[Log_] = js.undefined
+  
   var rangeKey: js.UndefOr[String] = js.undefined
+  
   var schema: js.UndefOr[SchemaType] = js.undefined
+  
   var tableName: js.UndefOr[String | tableResolve] = js.undefined
+  
   var timestamps: js.UndefOr[Boolean] = js.undefined
+  
   var updatedAt: js.UndefOr[Boolean | String] = js.undefined
+  
   var validation: js.UndefOr[ValidationOptions] = js.undefined
 }
-
 object ModelConfiguration {
-  @scala.inline
-  def apply(
-    hashKey: String,
-    createdAt: Boolean | String = null,
-    indexes: js.Array[_] = null,
-    log: Log_ = null,
-    rangeKey: String = null,
-    schema: SchemaType = null,
-    tableName: String | tableResolve = null,
-    timestamps: js.UndefOr[Boolean] = js.undefined,
-    updatedAt: Boolean | String = null,
-    validation: ValidationOptions = null
-  ): ModelConfiguration = {
+  
+  inline def apply(hashKey: String): ModelConfiguration = {
     val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
-    if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])
-    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelConfiguration]
   }
+  
+  extension [Self <: ModelConfiguration](x: Self) {
+    
+    inline def setCreatedAt(value: Boolean | String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    
+    inline def setHashKey(value: String): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
+    
+    inline def setIndexes(value: js.Array[Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    
+    inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
+    
+    inline def setIndexesVarargs(value: Any*): Self = StObject.set(x, "indexes", js.Array(value*))
+    
+    inline def setLog(value: Log_): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    
+    inline def setRangeKey(value: String): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
+    
+    inline def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
+    
+    inline def setSchema(value: SchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    
+    inline def setTableName(value: String | tableResolve): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    
+    inline def setTableNameCallbackTo(value: CallbackTo[String]): Self = StObject.set(x, "tableName", value.toJsFn)
+    
+    inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+    
+    inline def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
+    
+    inline def setUpdatedAt(value: Boolean | String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
+    
+    inline def setValidation(value: ValidationOptions): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+  }
 }
-

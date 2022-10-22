@@ -1,18 +1,26 @@
 package typingsJapgolly.blueprintjsCore.mod
 
+import typingsJapgolly.blueprintjsCore.libEsmComponentsFormsTextAreaMod.TextAreaProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "TextArea")
 @js.native
-class TextArea ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.TextArea
-
-/* static members */
-@JSImport("@blueprintjs/core", "TextArea")
-@js.native
-object TextArea extends js.Object {
-  var displayName: String = js.native
+open class TextArea protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.TextArea {
+  def this(props: TextAreaProps) = this()
+  def this(props: TextAreaProps, context: Any) = this()
 }
-
+/* static members */
+object TextArea {
+  
+  @JSImport("@blueprintjs/core", "TextArea")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "TextArea.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

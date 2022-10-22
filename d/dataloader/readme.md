@@ -1,7 +1,7 @@
 
 # Scala.js typings for dataloader
 
-Typings are for version 1.4.0
+Typings are for version 2.1.0
 
 ## Library description:
 A data loading utility to reduce requests to a backend via batching and caching.
@@ -10,10 +10,10 @@ A data loading utility to reduce requests to a backend via batching and caching.
 | ------------------ | :-------------: |
 | Full name          | dataloader |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 297 |
-| # downloads        | 9399027 |
-| # stars            | 12 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.243424E7 |
+| # stars            | 11543.0 |
 
 ## Links
 - [Homepage](https://github.com/graphql/dataloader)

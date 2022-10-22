@@ -1,39 +1,72 @@
 package typingsJapgolly.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Loader extends js.Object {
+trait Loader extends StObject {
+  
   var allowedSchemas: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var blacklist: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var exceptions: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var functionBlacklist: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var functionWhitelist: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var scripts: js.UndefOr[String] = js.undefined
+  
   var whitelist: js.UndefOr[String | js.Array[String]] = js.undefined
 }
-
 object Loader {
-  @scala.inline
-  def apply(
-    allowedSchemas: String | js.Array[String] = null,
-    blacklist: String | js.Array[String] = null,
-    exceptions: String | js.Array[String] = null,
-    functionBlacklist: String | js.Array[String] = null,
-    functionWhitelist: String | js.Array[String] = null,
-    scripts: String = null,
-    whitelist: String | js.Array[String] = null
-  ): Loader = {
+  
+  inline def apply(): Loader = {
     val __obj = js.Dynamic.literal()
-    if (allowedSchemas != null) __obj.updateDynamic("allowedSchemas")(allowedSchemas.asInstanceOf[js.Any])
-    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
-    if (exceptions != null) __obj.updateDynamic("exceptions")(exceptions.asInstanceOf[js.Any])
-    if (functionBlacklist != null) __obj.updateDynamic("functionBlacklist")(functionBlacklist.asInstanceOf[js.Any])
-    if (functionWhitelist != null) __obj.updateDynamic("functionWhitelist")(functionWhitelist.asInstanceOf[js.Any])
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
-    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[Loader]
   }
+  
+  extension [Self <: Loader](x: Self) {
+    
+    inline def setAllowedSchemas(value: String | js.Array[String]): Self = StObject.set(x, "allowedSchemas", value.asInstanceOf[js.Any])
+    
+    inline def setAllowedSchemasUndefined: Self = StObject.set(x, "allowedSchemas", js.undefined)
+    
+    inline def setAllowedSchemasVarargs(value: String*): Self = StObject.set(x, "allowedSchemas", js.Array(value*))
+    
+    inline def setBlacklist(value: String | js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+    
+    inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+    
+    inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value*))
+    
+    inline def setExceptions(value: String | js.Array[String]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
+    
+    inline def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
+    
+    inline def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value*))
+    
+    inline def setFunctionBlacklist(value: String | js.Array[String]): Self = StObject.set(x, "functionBlacklist", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionBlacklistUndefined: Self = StObject.set(x, "functionBlacklist", js.undefined)
+    
+    inline def setFunctionBlacklistVarargs(value: String*): Self = StObject.set(x, "functionBlacklist", js.Array(value*))
+    
+    inline def setFunctionWhitelist(value: String | js.Array[String]): Self = StObject.set(x, "functionWhitelist", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionWhitelistUndefined: Self = StObject.set(x, "functionWhitelist", js.undefined)
+    
+    inline def setFunctionWhitelistVarargs(value: String*): Self = StObject.set(x, "functionWhitelist", js.Array(value*))
+    
+    inline def setScripts(value: String): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+    
+    inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+    
+    inline def setWhitelist(value: String | js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+    
+    inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+    
+    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value*))
+  }
 }
-

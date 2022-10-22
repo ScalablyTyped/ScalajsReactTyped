@@ -11,9 +11,9 @@ Keep an eye on your memory usage, and discover and isolate leaks.
 | Full name          | memwatch-next |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 51 |
-| # downloads        | 535798 |
-| # stars            | 38 |
+| # dependents       | 0.0 |
+| # downloads        | 15847.0 |
+| # stars            | 769.0 |
 
 ## Links
 - [Homepage](https://github.com/marcominetti/node-memwatch#readme)

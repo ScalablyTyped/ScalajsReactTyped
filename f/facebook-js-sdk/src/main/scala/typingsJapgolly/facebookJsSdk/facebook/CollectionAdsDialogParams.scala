@@ -1,42 +1,45 @@
 package typingsJapgolly.facebookJsSdk.facebook
 
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.canvas_editor
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.popup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CollectionAdsDialogParams extends InstantExperiencesAdsDialogParams {
+trait CollectionAdsDialogParams
+  extends StObject
+     with InstantExperiencesAdsDialogParams {
+  
   var account_id: String
+  
   @JSName("canvas_id")
-  var canvas_id_CollectionAdsDialogParams: js.UndefOr[scala.Nothing] = js.undefined
+  var canvas_id_CollectionAdsDialogParams: Unit
+  
   var product_catalog_id: js.UndefOr[String] = js.undefined
+  
   var product_set_id: js.UndefOr[String] = js.undefined
+  
   var template_id: String
 }
-
 object CollectionAdsDialogParams {
-  @scala.inline
-  def apply(
-    account_id: String,
-    business_id: String,
-    display: popup,
-    method: canvas_editor,
-    page_id: String,
-    template_id: String,
-    app_id: String = null,
-    canvas_id: js.UndefOr[scala.Nothing] = js.undefined,
-    product_catalog_id: String = null,
-    product_set_id: String = null,
-    redirect_uri: String = null
-  ): CollectionAdsDialogParams = {
-    val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], business_id = business_id.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], page_id = page_id.asInstanceOf[js.Any], template_id = template_id.asInstanceOf[js.Any])
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(canvas_id)) __obj.updateDynamic("canvas_id")(canvas_id.asInstanceOf[js.Any])
-    if (product_catalog_id != null) __obj.updateDynamic("product_catalog_id")(product_catalog_id.asInstanceOf[js.Any])
-    if (product_set_id != null) __obj.updateDynamic("product_set_id")(product_set_id.asInstanceOf[js.Any])
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+  
+  inline def apply(account_id: String, business_id: String, canvas_id: Unit, page_id: String, template_id: String): CollectionAdsDialogParams = {
+    val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], business_id = business_id.asInstanceOf[js.Any], canvas_id = canvas_id.asInstanceOf[js.Any], display = "popup", method = "canvas_editor", page_id = page_id.asInstanceOf[js.Any], template_id = template_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionAdsDialogParams]
   }
+  
+  extension [Self <: CollectionAdsDialogParams](x: Self) {
+    
+    inline def setAccount_id(value: String): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
+    
+    inline def setCanvas_id(value: Unit): Self = StObject.set(x, "canvas_id", value.asInstanceOf[js.Any])
+    
+    inline def setProduct_catalog_id(value: String): Self = StObject.set(x, "product_catalog_id", value.asInstanceOf[js.Any])
+    
+    inline def setProduct_catalog_idUndefined: Self = StObject.set(x, "product_catalog_id", js.undefined)
+    
+    inline def setProduct_set_id(value: String): Self = StObject.set(x, "product_set_id", value.asInstanceOf[js.Any])
+    
+    inline def setProduct_set_idUndefined: Self = StObject.set(x, "product_set_id", js.undefined)
+    
+    inline def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
+  }
 }
-

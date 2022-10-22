@@ -1,18 +1,17 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.distTypesInternalTypesMod.SchedulerLike
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/observeOn", JSImport.Namespace)
-@js.native
-object operatorObserveOnMod extends js.Object {
-  def observeOn[T](
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  def observeOn[T](
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any,
-    delay: Double
-  ): js.Any = js.native
+object operatorObserveOnMod {
+  
+  @JSImport("rxjs-compat/operator/observeOn", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def observeOn[T](scheduler: SchedulerLike): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("observeOn")(scheduler.asInstanceOf[js.Any]).asInstanceOf[Observable_[T]]
+  inline def observeOn[T](scheduler: SchedulerLike, delay: Double): Observable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("observeOn")(scheduler.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Observable_[T]]
 }
-

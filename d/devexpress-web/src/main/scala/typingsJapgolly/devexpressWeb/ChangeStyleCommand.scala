@@ -1,15 +1,17 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change the selected range's style.
   */
-@JSGlobal("ChangeStyleCommand")
 @js.native
-class ChangeStyleCommand () extends CommandBase {
+trait ChangeStyleCommand
+  extends StObject
+     with CommandBase {
+  
   /**
     * Executes the ChangeStyleCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param style An object that contains the style settings object, or the style name.
@@ -19,9 +21,9 @@ class ChangeStyleCommand () extends CommandBase {
   def execute(style: String, isParagraphStyle: Boolean): Boolean = js.native
   def execute(style: StyleBase): Boolean = js.native
   def execute(style: StyleBase, isParagraphStyle: Boolean): Boolean = js.native
+  
   /**
     * Gets information about the command's state.
     */
   def getState(): CommandState[StyleBase] = js.native
 }
-

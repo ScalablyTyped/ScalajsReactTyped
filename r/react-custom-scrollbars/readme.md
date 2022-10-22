@@ -10,10 +10,10 @@ React scrollbars component
 | ------------------ | :-------------: |
 | Full name          | react-custom-scrollbars |
 | Keywords           | scroll, scroller, scrollbars, react-component, react, custom |
-| # releases         | 1 |
-| # dependents       | 291 |
-| # downloads        | 4635817 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 762196.6666666666 |
+| # stars            | 3016.0 |
 
 ## Links
 - [Homepage](https://github.com/malte-wessel/react-custom-scrollbars)

@@ -1,8 +1,8 @@
 package typingsJapgolly.ariaQuery.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.ariaQuery.ariaQueryStrings.command
@@ -18,34 +18,32 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.ariaQuery.ariaQueryStrings.widget
   - typingsJapgolly.ariaQuery.ariaQueryStrings.window
 */
-trait ARIAAbstractRole extends js.Object
-
+trait ARIAAbstractRole
+  extends StObject
+     with _ARIARoleDefintionKey
 object ARIAAbstractRole {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def command: typingsJapgolly.ariaQuery.ariaQueryStrings.command = this.cast("command")
-  @scala.inline
-  def composite: typingsJapgolly.ariaQuery.ariaQueryStrings.composite = this.cast("composite")
-  @scala.inline
-  def input: typingsJapgolly.ariaQuery.ariaQueryStrings.input = this.cast("input")
-  @scala.inline
-  def landmark: typingsJapgolly.ariaQuery.ariaQueryStrings.landmark = this.cast("landmark")
-  @scala.inline
-  def range: typingsJapgolly.ariaQuery.ariaQueryStrings.range = this.cast("range")
-  @scala.inline
-  def roletype: typingsJapgolly.ariaQuery.ariaQueryStrings.roletype = this.cast("roletype")
-  @scala.inline
-  def section: typingsJapgolly.ariaQuery.ariaQueryStrings.section = this.cast("section")
-  @scala.inline
-  def sectionhead: typingsJapgolly.ariaQuery.ariaQueryStrings.sectionhead = this.cast("sectionhead")
-  @scala.inline
-  def select: typingsJapgolly.ariaQuery.ariaQueryStrings.select = this.cast("select")
-  @scala.inline
-  def structure: typingsJapgolly.ariaQuery.ariaQueryStrings.structure = this.cast("structure")
-  @scala.inline
-  def widget: typingsJapgolly.ariaQuery.ariaQueryStrings.widget = this.cast("widget")
-  @scala.inline
-  def window: typingsJapgolly.ariaQuery.ariaQueryStrings.window = this.cast("window")
+  
+  inline def command: typingsJapgolly.ariaQuery.ariaQueryStrings.command = "command".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.command]
+  
+  inline def composite: typingsJapgolly.ariaQuery.ariaQueryStrings.composite = "composite".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.composite]
+  
+  inline def input: typingsJapgolly.ariaQuery.ariaQueryStrings.input = "input".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.input]
+  
+  inline def landmark: typingsJapgolly.ariaQuery.ariaQueryStrings.landmark = "landmark".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.landmark]
+  
+  inline def range: typingsJapgolly.ariaQuery.ariaQueryStrings.range = "range".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.range]
+  
+  inline def roletype: typingsJapgolly.ariaQuery.ariaQueryStrings.roletype = "roletype".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.roletype]
+  
+  inline def section: typingsJapgolly.ariaQuery.ariaQueryStrings.section = "section".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.section]
+  
+  inline def sectionhead: typingsJapgolly.ariaQuery.ariaQueryStrings.sectionhead = "sectionhead".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.sectionhead]
+  
+  inline def select: typingsJapgolly.ariaQuery.ariaQueryStrings.select = "select".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.select]
+  
+  inline def structure: typingsJapgolly.ariaQuery.ariaQueryStrings.structure = "structure".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.structure]
+  
+  inline def widget: typingsJapgolly.ariaQuery.ariaQueryStrings.widget = "widget".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.widget]
+  
+  inline def window: typingsJapgolly.ariaQuery.ariaQueryStrings.window = "window".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.window]
 }
-

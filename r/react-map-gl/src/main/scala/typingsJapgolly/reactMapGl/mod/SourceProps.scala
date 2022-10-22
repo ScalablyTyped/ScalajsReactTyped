@@ -1,6 +1,10 @@
 package typingsJapgolly.reactMapGl.mod
 
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
 import typingsJapgolly.geojson.mod.Feature
 import typingsJapgolly.geojson.mod.FeatureCollection
@@ -10,90 +14,174 @@ import typingsJapgolly.reactMapGl.reactMapGlStrings.mapbox
 import typingsJapgolly.reactMapGl.reactMapGlStrings.terrarium
 import typingsJapgolly.reactMapGl.reactMapGlStrings.tms
 import typingsJapgolly.reactMapGl.reactMapGlStrings.xyz
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SourceProps extends js.Object {
+trait SourceProps extends StObject {
+  
   var attribution: js.UndefOr[String] = js.undefined
+  
   var bounds: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var buffer: js.UndefOr[Double] = js.undefined
+  
   var children: js.UndefOr[Node] = js.undefined
+  
   var cluster: js.UndefOr[Boolean] = js.undefined
+  
   var clusterMaxZoom: js.UndefOr[Double] = js.undefined
+  
   var clusterProperties: js.UndefOr[js.Object] = js.undefined
+  
   var clusterRadius: js.UndefOr[Double] = js.undefined
+  
   var coordinates: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
+  
   var data: js.UndefOr[
     (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | String
   ] = js.undefined
+  
   var encoding: js.UndefOr[terrarium | mapbox] = js.undefined
+  
   var generateId: js.UndefOr[Boolean] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var lineMetrics: js.UndefOr[Boolean] = js.undefined
+  
   var maxzoom: js.UndefOr[Double] = js.undefined
+  
   var minzoom: js.UndefOr[Double] = js.undefined
-  var schema: js.UndefOr[xyz | tms] = js.undefined
+  
+  var scheme: js.UndefOr[xyz | tms] = js.undefined
+  
   var tileSize: js.UndefOr[Double] = js.undefined
+  
   var tiles: js.UndefOr[js.Array[String]] = js.undefined
+  
   var tolerance: js.UndefOr[Double] = js.undefined
+  
   var `type`: String
+  
   var url: js.UndefOr[String] = js.undefined
+  
   var urls: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object SourceProps {
-  @scala.inline
-  def apply(
-    `type`: String,
-    attribution: String = null,
-    bounds: js.Array[Double] = null,
-    buffer: Int | Double = null,
-    children: VdomNode = null,
-    cluster: js.UndefOr[Boolean] = js.undefined,
-    clusterMaxZoom: Int | Double = null,
-    clusterProperties: js.Object = null,
-    clusterRadius: Int | Double = null,
-    coordinates: js.Array[js.Array[Double]] = null,
-    data: (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | String = null,
-    encoding: terrarium | mapbox = null,
-    generateId: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    lineMetrics: js.UndefOr[Boolean] = js.undefined,
-    maxzoom: Int | Double = null,
-    minzoom: Int | Double = null,
-    schema: xyz | tms = null,
-    tileSize: Int | Double = null,
-    tiles: js.Array[String] = null,
-    tolerance: Int | Double = null,
-    url: String = null,
-    urls: js.Array[String] = null
-  ): SourceProps = {
+  
+  inline def apply(`type`: String): SourceProps = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(cluster)) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (clusterMaxZoom != null) __obj.updateDynamic("clusterMaxZoom")(clusterMaxZoom.asInstanceOf[js.Any])
-    if (clusterProperties != null) __obj.updateDynamic("clusterProperties")(clusterProperties.asInstanceOf[js.Any])
-    if (clusterRadius != null) __obj.updateDynamic("clusterRadius")(clusterRadius.asInstanceOf[js.Any])
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateId)) __obj.updateDynamic("generateId")(generateId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineMetrics)) __obj.updateDynamic("lineMetrics")(lineMetrics.asInstanceOf[js.Any])
-    if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
-    if (minzoom != null) __obj.updateDynamic("minzoom")(minzoom.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
-    if (tiles != null) __obj.updateDynamic("tiles")(tiles.asInstanceOf[js.Any])
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceProps]
   }
+  
+  extension [Self <: SourceProps](x: Self) {
+    
+    inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+    
+    inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+    
+    inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    
+    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value*))
+    
+    inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    
+    inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setCluster(value: Boolean): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    
+    inline def setClusterMaxZoom(value: Double): Self = StObject.set(x, "clusterMaxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setClusterMaxZoomUndefined: Self = StObject.set(x, "clusterMaxZoom", js.undefined)
+    
+    inline def setClusterProperties(value: js.Object): Self = StObject.set(x, "clusterProperties", value.asInstanceOf[js.Any])
+    
+    inline def setClusterPropertiesUndefined: Self = StObject.set(x, "clusterProperties", js.undefined)
+    
+    inline def setClusterRadius(value: Double): Self = StObject.set(x, "clusterRadius", value.asInstanceOf[js.Any])
+    
+    inline def setClusterRadiusUndefined: Self = StObject.set(x, "clusterRadius", js.undefined)
+    
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    
+    inline def setCoordinates(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    
+    inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
+    
+    inline def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value*))
+    
+    inline def setData(
+      value: (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | String
+    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setEncoding(value: terrarium | mapbox): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setGenerateId(value: Boolean): Self = StObject.set(x, "generateId", value.asInstanceOf[js.Any])
+    
+    inline def setGenerateIdUndefined: Self = StObject.set(x, "generateId", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLineMetrics(value: Boolean): Self = StObject.set(x, "lineMetrics", value.asInstanceOf[js.Any])
+    
+    inline def setLineMetricsUndefined: Self = StObject.set(x, "lineMetrics", js.undefined)
+    
+    inline def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxzoomUndefined: Self = StObject.set(x, "maxzoom", js.undefined)
+    
+    inline def setMinzoom(value: Double): Self = StObject.set(x, "minzoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
+    
+    inline def setScheme(value: xyz | tms): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    
+    inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+    
+    inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+    
+    inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+    
+    inline def setTiles(value: js.Array[String]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
+    
+    inline def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
+    
+    inline def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value*))
+    
+    inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+    
+    inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
+  }
 }
-

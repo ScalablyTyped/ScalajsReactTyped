@@ -1,18 +1,21 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ArrayLiteralExpression
-  extends PrimaryExpression
+  extends StObject
+     with PrimaryExpression
      with ArrayBindingOrAssignmentPattern
      with AssignmentPattern
      with DestructuringPattern
-     with _BindingOrAssignmentElement {
-  var elements: NodeArray[Expression] = js.native
+     with JsonObjectExpression
+     with _ArrayBindingOrAssignmentElement {
+  
+  val elements: NodeArray[Expression] = js.native
+  
   @JSName("kind")
-  var kind_ArrayLiteralExpression: typingsJapgolly.typescript.mod.SyntaxKind.ArrayLiteralExpression = js.native
+  val kind_ArrayLiteralExpression: typingsJapgolly.typescript.mod.SyntaxKind.ArrayLiteralExpression = js.native
 }
-

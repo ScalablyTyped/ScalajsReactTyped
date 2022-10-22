@@ -1,36 +1,34 @@
 package typingsJapgolly.htmlValidator.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ValidationMessageTypes extends js.Object
-
+sealed trait ValidationMessageTypes extends StObject
 // Could be used to avoid string literals
 @JSImport("html-validator", "ValidationMessageTypes")
 @js.native
-object ValidationMessageTypes extends js.Object {
-  @js.native
-  sealed trait error extends ValidationMessageTypes
-  
-  @js.native
-  sealed trait info extends ValidationMessageTypes
-  
-  @js.native
-  sealed trait `non-document-error` extends ValidationMessageTypes
+object ValidationMessageTypes extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[ValidationMessageTypes with String] = js.native
-  /* "error" */ @js.native
-  object error extends TopLevel[error with String]
+  def apply(value: String): js.UndefOr[ValidationMessageTypes & String] = js.native
   
-  /* "info" */ @js.native
-  object info extends TopLevel[info with String]
+  @js.native
+  sealed trait error
+    extends StObject
+       with ValidationMessageTypes
+  /* "error" */ val error: typingsJapgolly.htmlValidator.mod.ValidationMessageTypes.error & String = js.native
   
-  /* "non-document-error" */ @js.native
-  object `non-document-error` extends TopLevel[`non-document-error` with String]
+  @js.native
+  sealed trait info
+    extends StObject
+       with ValidationMessageTypes
+  /* "info" */ val info: typingsJapgolly.htmlValidator.mod.ValidationMessageTypes.info & String = js.native
   
+  @js.native
+  sealed trait `non-document-error`
+    extends StObject
+       with ValidationMessageTypes
+  /* "non-document-error" */ val `non-document-error`: typingsJapgolly.htmlValidator.mod.ValidationMessageTypes.`non-document-error` & String = js.native
 }
-

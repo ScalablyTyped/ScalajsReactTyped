@@ -1,6 +1,6 @@
 package typingsJapgolly.exceljs.mod
 
-import typingsJapgolly.exceljs.PartialColor
+import typingsJapgolly.exceljs.anon.PartialColor
 import typingsJapgolly.exceljs.exceljsStrings.double
 import typingsJapgolly.exceljs.exceljsStrings.doubleAccounting
 import typingsJapgolly.exceljs.exceljsStrings.major
@@ -10,28 +10,39 @@ import typingsJapgolly.exceljs.exceljsStrings.single
 import typingsJapgolly.exceljs.exceljsStrings.singleAccounting
 import typingsJapgolly.exceljs.exceljsStrings.subscript
 import typingsJapgolly.exceljs.exceljsStrings.superscript
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Font extends js.Object {
+trait Font extends StObject {
+  
   var bold: Boolean
+  
   var charset: Double
+  
   var color: PartialColor
+  
   var family: Double
+  
   var italic: Boolean
+  
   var name: String
+  
   var outline: Boolean
+  
   var scheme: minor | major | none_
+  
   var size: Double
+  
   var strike: Boolean
+  
   var underline: Boolean | none_ | single | double | singleAccounting | doubleAccounting
+  
   var vertAlign: superscript | subscript
 }
-
 object Font {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     bold: Boolean,
     charset: Double,
     color: PartialColor,
@@ -46,8 +57,33 @@ object Font {
     vertAlign: superscript | subscript
   ): Font = {
     val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], charset = charset.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], italic = italic.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], strike = strike.asInstanceOf[js.Any], underline = underline.asInstanceOf[js.Any], vertAlign = vertAlign.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[Font]
   }
+  
+  extension [Self <: Font](x: Self) {
+    
+    inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    
+    inline def setCharset(value: Double): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+    
+    inline def setColor(value: PartialColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setOutline(value: Boolean): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    
+    inline def setScheme(value: minor | major | none_): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setStrike(value: Boolean): Self = StObject.set(x, "strike", value.asInstanceOf[js.Any])
+    
+    inline def setUnderline(value: Boolean | none_ | single | double | singleAccounting | doubleAccounting): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    
+    inline def setVertAlign(value: superscript | subscript): Self = StObject.set(x, "vertAlign", value.asInstanceOf[js.Any])
+  }
 }
-

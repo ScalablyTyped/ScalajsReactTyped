@@ -1,41 +1,32 @@
 package typingsJapgolly.clearbladejsServer.CbServer
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TriggerModule extends js.Object
-
+sealed trait TriggerModule extends StObject
 @JSGlobal("CbServer.TriggerModule")
 @js.native
-object TriggerModule extends js.Object {
-  @js.native
-  sealed trait DEVICE extends TriggerModule
+object TriggerModule extends StObject {
   
   @js.native
-  sealed trait Data extends TriggerModule
+  sealed trait DEVICE
+    extends StObject
+       with TriggerModule
   
   @js.native
-  sealed trait MESSAGING extends TriggerModule
+  sealed trait Data
+    extends StObject
+       with TriggerModule
   
   @js.native
-  sealed trait USER extends TriggerModule
+  sealed trait MESSAGING
+    extends StObject
+       with TriggerModule
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[TriggerModule with String] = js.native
-  /* "Device" */ @js.native
-  object DEVICE extends TopLevel[DEVICE with String]
-  
-  /* "Data" */ @js.native
-  object Data extends TopLevel[Data with String]
-  
-  /* "Messaging" */ @js.native
-  object MESSAGING extends TopLevel[MESSAGING with String]
-  
-  /* "User" */ @js.native
-  object USER extends TopLevel[USER with String]
-  
+  @js.native
+  sealed trait USER
+    extends StObject
+       with TriggerModule
 }
-

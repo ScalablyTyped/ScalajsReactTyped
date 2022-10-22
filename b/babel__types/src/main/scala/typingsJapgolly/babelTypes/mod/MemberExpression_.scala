@@ -3,49 +3,54 @@ package typingsJapgolly.babelTypes.mod
 import typingsJapgolly.babelTypes.babelTypesBooleans.`false`
 import typingsJapgolly.babelTypes.babelTypesBooleans.`true`
 import typingsJapgolly.babelTypes.babelTypesStrings.MemberExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait MemberExpression_
-  extends Expression
+  extends StObject
      with BaseNode
-     with LVal {
+     with Expression
+     with LVal
+     with Standardized {
+  
   var computed: Boolean
-  var `object`: Expression
+  
+  var `object`: Expression | Super_
+  
   var optional: `true` | `false` | Null
-  var property: js.Any
+  
+  var property: Expression | Identifier_ | PrivateName_
+  
   @JSName("type")
   var type_MemberExpression_ : MemberExpression
 }
-
 object MemberExpression_ {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     computed: Boolean,
-    `object`: Expression,
-    property: js.Any,
-    `type`: MemberExpression,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    optional: `true` | `false` = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
+    `object`: Expression | Super_,
+    property: Expression | Identifier_ | PrivateName_
   ): MemberExpression_ = {
-    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null)
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MemberExpression")
     __obj.asInstanceOf[MemberExpression_]
   }
+  
+  extension [Self <: MemberExpression_](x: Self) {
+    
+    inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+    
+    inline def setObject(value: Expression | Super_): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    
+    inline def setOptional(value: `true` | `false`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalNull: Self = StObject.set(x, "optional", null)
+    
+    inline def setProperty(value: Expression | Identifier_ | PrivateName_): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: MemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

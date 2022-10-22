@@ -1,60 +1,49 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.AllJoyn
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AllJoynAuthenticationMechanism extends js.Object
-
+sealed trait AllJoynAuthenticationMechanism extends StObject
 /** Defines values used to indicate the mechanism used in authentication operations. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism")
 @js.native
-object AllJoynAuthenticationMechanism extends js.Object {
+object AllJoynAuthenticationMechanism extends StObject {
+  
   /** ECDHE_ECDSA key exchange. */
   @js.native
-  sealed trait ecdheEcdsa extends AllJoynAuthenticationMechanism
+  sealed trait ecdheEcdsa
+    extends StObject
+       with AllJoynAuthenticationMechanism
   
   /** ECDHE_NULL key exchange. */
   @js.native
-  sealed trait ecdheNull extends AllJoynAuthenticationMechanism
+  sealed trait ecdheNull
+    extends StObject
+       with AllJoynAuthenticationMechanism
   
   /** ECDHE_PSK key exchange. */
   @js.native
-  sealed trait ecdhePsk extends AllJoynAuthenticationMechanism
+  sealed trait ecdhePsk
+    extends StObject
+       with AllJoynAuthenticationMechanism
   
   /** No mechanism used. */
   @js.native
-  sealed trait none extends AllJoynAuthenticationMechanism
+  sealed trait none
+    extends StObject
+       with AllJoynAuthenticationMechanism
   
   /** Secure Remote Password (SRP) anonymous key exchange. */
   @js.native
-  sealed trait srpAnonymous extends AllJoynAuthenticationMechanism
+  sealed trait srpAnonymous
+    extends StObject
+       with AllJoynAuthenticationMechanism
   
   /** Secure Remote Password (SRP) logon (e.g. username and password). */
   @js.native
-  sealed trait srpLogon extends AllJoynAuthenticationMechanism
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AllJoynAuthenticationMechanism with Double] = js.native
-  /* 5 */ @js.native
-  object ecdheEcdsa extends TopLevel[ecdheEcdsa with Double]
-  
-  /* 3 */ @js.native
-  object ecdheNull extends TopLevel[ecdheNull with Double]
-  
-  /* 4 */ @js.native
-  object ecdhePsk extends TopLevel[ecdhePsk with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object srpAnonymous extends TopLevel[srpAnonymous with Double]
-  
-  /* 2 */ @js.native
-  object srpLogon extends TopLevel[srpLogon with Double]
-  
+  sealed trait srpLogon
+    extends StObject
+       with AllJoynAuthenticationMechanism
 }
-

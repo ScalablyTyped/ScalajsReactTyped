@@ -1,20 +1,24 @@
 package typingsJapgolly.typescriptServices.mod
 
-import typingsJapgolly.typescriptServices.AnonRest
+import typingsJapgolly.typescriptServices.anon.Rest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "Base64VLQFormat")
 @js.native
-class Base64VLQFormat ()
-  extends typingsJapgolly.typescriptServices.TypeScript.Base64VLQFormat
-
-/* static members */
-@JSImport("typescript-services", "Base64VLQFormat")
-@js.native
-object Base64VLQFormat extends js.Object {
-  def decode(inString: String): AnonRest = js.native
-  def encode(inValue: Double): String = js.native
+open class Base64VLQFormat ()
+  extends StObject
+     with typingsJapgolly.typescriptServices.TypeScript.Base64VLQFormat
+object Base64VLQFormat {
+  
+  @JSImport("typescript-services", "Base64VLQFormat")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def decode(inString: String): Rest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(inString.asInstanceOf[js.Any]).asInstanceOf[Rest]
+  
+  /* static member */
+  inline def encode(inValue: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(inValue.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

@@ -1,28 +1,34 @@
 package typingsJapgolly.mfiles
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IVaultAutomaticMetadataOperations extends js.Object {
+trait IVaultAutomaticMetadataOperations extends StObject {
+  
   def GetAutomaticMetadataForObject(ObjVer: IObjVer): IAutomaticMetadataResult
+  
   def GetAutomaticMetadataForTemporaryFile(UploadSessionID: Double): IAutomaticMetadataResult
+  
   def GetAutomaticMetadataForTemporaryFiles(IIDs: IIDs): IAutomaticMetadataResult
 }
-
 object IVaultAutomaticMetadataOperations {
-  @scala.inline
-  def apply(
-    GetAutomaticMetadataForObject: IObjVer => CallbackTo[IAutomaticMetadataResult],
-    GetAutomaticMetadataForTemporaryFile: Double => CallbackTo[IAutomaticMetadataResult],
-    GetAutomaticMetadataForTemporaryFiles: IIDs => CallbackTo[IAutomaticMetadataResult]
+  
+  inline def apply(
+    GetAutomaticMetadataForObject: IObjVer => IAutomaticMetadataResult,
+    GetAutomaticMetadataForTemporaryFile: Double => IAutomaticMetadataResult,
+    GetAutomaticMetadataForTemporaryFiles: IIDs => IAutomaticMetadataResult
   ): IVaultAutomaticMetadataOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetAutomaticMetadataForObject")(js.Any.fromFunction1((t0: typingsJapgolly.mfiles.IObjVer) => GetAutomaticMetadataForObject(t0).runNow()))
-    __obj.updateDynamic("GetAutomaticMetadataForTemporaryFile")(js.Any.fromFunction1((t0: scala.Double) => GetAutomaticMetadataForTemporaryFile(t0).runNow()))
-    __obj.updateDynamic("GetAutomaticMetadataForTemporaryFiles")(js.Any.fromFunction1((t0: typingsJapgolly.mfiles.IIDs) => GetAutomaticMetadataForTemporaryFiles(t0).runNow()))
+    val __obj = js.Dynamic.literal(GetAutomaticMetadataForObject = js.Any.fromFunction1(GetAutomaticMetadataForObject), GetAutomaticMetadataForTemporaryFile = js.Any.fromFunction1(GetAutomaticMetadataForTemporaryFile), GetAutomaticMetadataForTemporaryFiles = js.Any.fromFunction1(GetAutomaticMetadataForTemporaryFiles))
     __obj.asInstanceOf[IVaultAutomaticMetadataOperations]
   }
+  
+  extension [Self <: IVaultAutomaticMetadataOperations](x: Self) {
+    
+    inline def setGetAutomaticMetadataForObject(value: IObjVer => IAutomaticMetadataResult): Self = StObject.set(x, "GetAutomaticMetadataForObject", js.Any.fromFunction1(value))
+    
+    inline def setGetAutomaticMetadataForTemporaryFile(value: Double => IAutomaticMetadataResult): Self = StObject.set(x, "GetAutomaticMetadataForTemporaryFile", js.Any.fromFunction1(value))
+    
+    inline def setGetAutomaticMetadataForTemporaryFiles(value: IIDs => IAutomaticMetadataResult): Self = StObject.set(x, "GetAutomaticMetadataForTemporaryFiles", js.Any.fromFunction1(value))
+  }
 }
-

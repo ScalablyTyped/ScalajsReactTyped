@@ -1,7 +1,7 @@
 
 # Scala.js typings for grpc__proto-loader
 
-Typings are for version 0.5.3
+Typings are for version 0.7.3
 
 ## Library description:
 gRPC utility library for loading .proto files
@@ -10,10 +10,10 @@ gRPC utility library for loading .proto files
 | ------------------ | :-------------: |
 | Full name          | @grpc/proto-loader |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 228 |
-| # downloads        | 35971797 |
-| # stars            | 0 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 2.443398E7 |
+| # stars            | 3607.0 |
 
 ## Links
 - [Homepage](https://grpc.io/)

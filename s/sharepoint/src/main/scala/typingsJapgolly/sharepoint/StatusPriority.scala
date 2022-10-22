@@ -1,41 +1,32 @@
 package typingsJapgolly.sharepoint
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StatusPriority extends js.Object
-
+sealed trait StatusPriority extends StObject
 @JSGlobal("StatusPriority")
 @js.native
-object StatusPriority extends js.Object {
-  @js.native
-  sealed trait blue extends StatusPriority
+object StatusPriority extends StObject {
   
   @js.native
-  sealed trait green extends StatusPriority
+  sealed trait blue
+    extends StObject
+       with StatusPriority
   
   @js.native
-  sealed trait red extends StatusPriority
+  sealed trait green
+    extends StObject
+       with StatusPriority
   
   @js.native
-  sealed trait yellow extends StatusPriority
+  sealed trait red
+    extends StObject
+       with StatusPriority
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StatusPriority with Double] = js.native
-  /* 3 */ @js.native
-  object blue extends TopLevel[blue with Double]
-  
-  /* 2 */ @js.native
-  object green extends TopLevel[green with Double]
-  
-  /* 0 */ @js.native
-  object red extends TopLevel[red with Double]
-  
-  /* 1 */ @js.native
-  object yellow extends TopLevel[yellow with Double]
-  
+  @js.native
+  sealed trait yellow
+    extends StObject
+       with StatusPriority
 }
-

@@ -1,14 +1,13 @@
 package typingsJapgolly.senchaTouch.Ext.device
 
 import typingsJapgolly.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Ext.device.communicator")
-@js.native
-object communicator extends js.Object {
+object communicator {
+  
   type IAndroid = IDefault
+  
   type IDefault = IBase
 }
-

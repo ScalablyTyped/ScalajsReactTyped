@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response to one question item within a form. Item responses can be accessed from FormResponse and created from any Item that asks the respondent to answer a question.
@@ -23,33 +23,46 @@ import scala.scalajs.js.annotation._
   *       }
   *     }
   */
-trait ItemResponse extends js.Object {
+trait ItemResponse extends StObject {
+  
   def getFeedback(): QuizFeedback
+  
   def getItem(): Item
+  
   def getResponse(): (js.Array[js.Array[String] | String]) | String
+  
   def getScore(): Double
-  def setFeedback(feedback: js.Any): ItemResponse
-  def setScore(score: js.Any): ItemResponse
+  
+  def setFeedback(feedback: Any): ItemResponse
+  
+  def setScore(score: Any): ItemResponse
 }
-
 object ItemResponse {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getFeedback: CallbackTo[QuizFeedback],
     getItem: CallbackTo[Item],
     getResponse: CallbackTo[(js.Array[js.Array[String] | String]) | String],
     getScore: CallbackTo[Double],
-    setFeedback: js.Any => CallbackTo[ItemResponse],
-    setScore: js.Any => CallbackTo[ItemResponse]
+    setFeedback: Any => ItemResponse,
+    setScore: Any => ItemResponse
   ): ItemResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getFeedback")(getFeedback.toJsFn)
-    __obj.updateDynamic("getItem")(getItem.toJsFn)
-    __obj.updateDynamic("getResponse")(getResponse.toJsFn)
-    __obj.updateDynamic("getScore")(getScore.toJsFn)
-    __obj.updateDynamic("setFeedback")(js.Any.fromFunction1((t0: js.Any) => setFeedback(t0).runNow()))
-    __obj.updateDynamic("setScore")(js.Any.fromFunction1((t0: js.Any) => setScore(t0).runNow()))
+    val __obj = js.Dynamic.literal(getFeedback = getFeedback.toJsFn, getItem = getItem.toJsFn, getResponse = getResponse.toJsFn, getScore = getScore.toJsFn, setFeedback = js.Any.fromFunction1(setFeedback), setScore = js.Any.fromFunction1(setScore))
     __obj.asInstanceOf[ItemResponse]
   }
+  
+  extension [Self <: ItemResponse](x: Self) {
+    
+    inline def setGetFeedback(value: CallbackTo[QuizFeedback]): Self = StObject.set(x, "getFeedback", value.toJsFn)
+    
+    inline def setGetItem(value: CallbackTo[Item]): Self = StObject.set(x, "getItem", value.toJsFn)
+    
+    inline def setGetResponse(value: CallbackTo[(js.Array[js.Array[String] | String]) | String]): Self = StObject.set(x, "getResponse", value.toJsFn)
+    
+    inline def setGetScore(value: CallbackTo[Double]): Self = StObject.set(x, "getScore", value.toJsFn)
+    
+    inline def setSetFeedback(value: Any => ItemResponse): Self = StObject.set(x, "setFeedback", js.Any.fromFunction1(value))
+    
+    inline def setSetScore(value: Any => ItemResponse): Self = StObject.set(x, "setScore", js.Any.fromFunction1(value))
+  }
 }
-

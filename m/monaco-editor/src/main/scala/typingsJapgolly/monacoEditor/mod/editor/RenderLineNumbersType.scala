@@ -1,47 +1,45 @@
 package typingsJapgolly.monacoEditor.mod.editor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RenderLineNumbersType extends js.Object
-
+sealed trait RenderLineNumbersType extends StObject
 @JSImport("monaco-editor", "editor.RenderLineNumbersType")
 @js.native
-object RenderLineNumbersType extends js.Object {
-  @js.native
-  sealed trait Custom extends RenderLineNumbersType
-  
-  @js.native
-  sealed trait Interval extends RenderLineNumbersType
-  
-  @js.native
-  sealed trait Off extends RenderLineNumbersType
-  
-  @js.native
-  sealed trait On extends RenderLineNumbersType
-  
-  @js.native
-  sealed trait Relative extends RenderLineNumbersType
+object RenderLineNumbersType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RenderLineNumbersType with Double] = js.native
-  /* 4 */ @js.native
-  object Custom extends TopLevel[Custom with Double]
+  def apply(value: Double): js.UndefOr[RenderLineNumbersType & Double] = js.native
   
-  /* 3 */ @js.native
-  object Interval extends TopLevel[Interval with Double]
+  @js.native
+  sealed trait Custom
+    extends StObject
+       with RenderLineNumbersType
+  /* 4 */ val Custom: typingsJapgolly.monacoEditor.mod.editor.RenderLineNumbersType.Custom & Double = js.native
   
-  /* 0 */ @js.native
-  object Off extends TopLevel[Off with Double]
+  @js.native
+  sealed trait Interval
+    extends StObject
+       with RenderLineNumbersType
+  /* 3 */ val Interval: typingsJapgolly.monacoEditor.mod.editor.RenderLineNumbersType.Interval & Double = js.native
   
-  /* 1 */ @js.native
-  object On extends TopLevel[On with Double]
+  @js.native
+  sealed trait Off
+    extends StObject
+       with RenderLineNumbersType
+  /* 0 */ val Off: typingsJapgolly.monacoEditor.mod.editor.RenderLineNumbersType.Off & Double = js.native
   
-  /* 2 */ @js.native
-  object Relative extends TopLevel[Relative with Double]
+  @js.native
+  sealed trait On
+    extends StObject
+       with RenderLineNumbersType
+  /* 1 */ val On: typingsJapgolly.monacoEditor.mod.editor.RenderLineNumbersType.On & Double = js.native
   
+  @js.native
+  sealed trait Relative
+    extends StObject
+       with RenderLineNumbersType
+  /* 2 */ val Relative: typingsJapgolly.monacoEditor.mod.editor.RenderLineNumbersType.Relative & Double = js.native
 }
-

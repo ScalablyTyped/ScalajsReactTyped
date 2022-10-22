@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.alphabetic
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.middle
   - typingsJapgolly.std.stdStrings.top
 */
-trait CanvasTextBaseline extends js.Object
-
+trait CanvasTextBaseline extends StObject
 object CanvasTextBaseline {
-  @scala.inline
-  def alphabetic: typingsJapgolly.std.stdStrings.alphabetic = this.cast("alphabetic")
-  @scala.inline
-  def bottom: typingsJapgolly.std.stdStrings.bottom = this.cast("bottom")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def hanging: typingsJapgolly.std.stdStrings.hanging = this.cast("hanging")
-  @scala.inline
-  def ideographic: typingsJapgolly.std.stdStrings.ideographic = this.cast("ideographic")
-  @scala.inline
-  def middle: typingsJapgolly.std.stdStrings.middle = this.cast("middle")
-  @scala.inline
-  def top: typingsJapgolly.std.stdStrings.top = this.cast("top")
+  
+  inline def alphabetic: typingsJapgolly.std.stdStrings.alphabetic = "alphabetic".asInstanceOf[typingsJapgolly.std.stdStrings.alphabetic]
+  
+  inline def bottom: typingsJapgolly.std.stdStrings.bottom = "bottom".asInstanceOf[typingsJapgolly.std.stdStrings.bottom]
+  
+  inline def hanging: typingsJapgolly.std.stdStrings.hanging = "hanging".asInstanceOf[typingsJapgolly.std.stdStrings.hanging]
+  
+  inline def ideographic: typingsJapgolly.std.stdStrings.ideographic = "ideographic".asInstanceOf[typingsJapgolly.std.stdStrings.ideographic]
+  
+  inline def middle: typingsJapgolly.std.stdStrings.middle = "middle".asInstanceOf[typingsJapgolly.std.stdStrings.middle]
+  
+  inline def top: typingsJapgolly.std.stdStrings.top = "top".asInstanceOf[typingsJapgolly.std.stdStrings.top]
 }
-

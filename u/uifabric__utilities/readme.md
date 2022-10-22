@@ -1,24 +1,24 @@
 
 # Scala.js typings for uifabric__utilities
 
-Typings are for version 7.12.0
+Typings are for version 7.38.1
 
 ## Library description:
-Office UI Fabric utilities for building React components.
+Fluent UI React utilities for building components.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @uifabric/utilities |
 | Keywords           | - |
-| # releases         | 193 |
-| # dependents       | 24 |
-| # downloads        | 2466546 |
-| # stars            | 0 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 317078.6666666667 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/OfficeDev/office-ui-fabric-react#readme)
-- [Bugs](https://github.com/OfficeDev/office-ui-fabric-react/issues)
-- [Repository](https://github.com/OfficeDev/office-ui-fabric-react)
+- [Homepage](https://github.com/microsoft/fluentui#readme)
+- [Bugs](https://github.com/microsoft/fluentui/issues)
+- [Repository](https://github.com/microsoft/fluentui)
 - [Npm](https://www.npmjs.com/package/%40uifabric%2Futilities)
     
 

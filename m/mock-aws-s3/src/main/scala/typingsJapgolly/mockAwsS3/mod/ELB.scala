@@ -1,17 +1,16 @@
 package typingsJapgolly.mockAwsS3.mod
 
-import typingsJapgolly.awsSdk.elbMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsElbMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "ELB")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ELB ()
+open class ELB ()
   extends typingsJapgolly.awsSdk.mod.ELB {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -1,18 +1,17 @@
 package typingsJapgolly.reactJsonschemaForm.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ErrorSchema extends /* k */ StringDictionary[ErrorSchema]
-
+trait ErrorSchema
+  extends StObject
+     with /* k */ StringDictionary[ErrorSchema]
 object ErrorSchema {
-  @scala.inline
-  def apply(StringDictionary: /* k */ StringDictionary[ErrorSchema] = null): ErrorSchema = {
+  
+  inline def apply(): ErrorSchema = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ErrorSchema]
   }
 }
-

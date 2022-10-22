@@ -1,82 +1,93 @@
 package typingsJapgolly.pulumiPulumi.mod
 
-import typingsJapgolly.pulumiPulumi.archiveMod.AssetMap
+import typingsJapgolly.pulumiPulumi.assetArchiveMod.AssetMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/pulumi", "asset")
-@js.native
-object asset extends js.Object {
+object asset {
+  
+  /* note: abstract class */ @JSImport("@pulumi/pulumi", "asset.Archive")
   @js.native
-  abstract class Archive ()
+  open class Archive ()
     extends typingsJapgolly.pulumiPulumi.assetMod.Archive
+  /* static members */
+  object Archive {
+    
+    @JSImport("@pulumi/pulumi", "asset.Archive")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Returns true if the given object is an instance of an Archive.  This is designed to work even when
+      * multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    inline def isInstance(obj: Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean]
+  }
   
+  /* note: abstract class */ @JSImport("@pulumi/pulumi", "asset.Asset")
   @js.native
-  abstract class Asset ()
+  open class Asset ()
     extends typingsJapgolly.pulumiPulumi.assetMod.Asset
+  /* static members */
+  object Asset {
+    
+    @JSImport("@pulumi/pulumi", "asset.Asset")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Returns true if the given object is an instance of an Asset.  This is designed to work even when
+      * multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    inline def isInstance(obj: Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean]
+  }
   
+  @JSImport("@pulumi/pulumi", "asset.AssetArchive")
   @js.native
-  class AssetArchive protected ()
+  open class AssetArchive protected ()
     extends typingsJapgolly.pulumiPulumi.assetMod.AssetArchive {
     def this(assets: js.Promise[AssetMap]) = this()
     def this(assets: AssetMap) = this()
   }
   
+  @JSImport("@pulumi/pulumi", "asset.FileArchive")
   @js.native
-  class FileArchive protected ()
+  open class FileArchive protected ()
     extends typingsJapgolly.pulumiPulumi.assetMod.FileArchive {
     def this(path: String) = this()
     def this(path: js.Promise[String]) = this()
   }
   
+  @JSImport("@pulumi/pulumi", "asset.FileAsset")
   @js.native
-  class FileAsset protected ()
+  open class FileAsset protected ()
     extends typingsJapgolly.pulumiPulumi.assetMod.FileAsset {
     def this(path: String) = this()
     def this(path: js.Promise[String]) = this()
   }
   
+  @JSImport("@pulumi/pulumi", "asset.RemoteArchive")
   @js.native
-  class RemoteArchive protected ()
+  open class RemoteArchive protected ()
     extends typingsJapgolly.pulumiPulumi.assetMod.RemoteArchive {
     def this(uri: String) = this()
     def this(uri: js.Promise[String]) = this()
   }
   
+  @JSImport("@pulumi/pulumi", "asset.RemoteAsset")
   @js.native
-  class RemoteAsset protected ()
+  open class RemoteAsset protected ()
     extends typingsJapgolly.pulumiPulumi.assetMod.RemoteAsset {
     def this(uri: String) = this()
     def this(uri: js.Promise[String]) = this()
   }
   
+  @JSImport("@pulumi/pulumi", "asset.StringAsset")
   @js.native
-  class StringAsset protected ()
+  open class StringAsset protected ()
     extends typingsJapgolly.pulumiPulumi.assetMod.StringAsset {
     def this(text: String) = this()
     def this(text: js.Promise[String]) = this()
   }
-  
-  /* static members */
-  @js.native
-  object Archive extends js.Object {
-    /**
-      * Returns true if the given object is an instance of an Archive.  This is designed to work even when
-      * multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Asset extends js.Object {
-    /**
-      * Returns true if the given object is an instance of an Asset.  This is designed to work even when
-      * multiple copies of the Pulumi SDK have been loaded into the same process.
-      */
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean = js.native
-  }
-  
 }
-

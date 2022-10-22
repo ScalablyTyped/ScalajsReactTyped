@@ -1,11 +1,10 @@
 package typingsJapgolly.grammarkdown.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "BindingTable")
 @js.native
-class BindingTable ()
-  extends typingsJapgolly.grammarkdown.binderMod.BindingTable
-
+open class BindingTable ()
+  extends typingsJapgolly.grammarkdown.distBinderMod.BindingTable

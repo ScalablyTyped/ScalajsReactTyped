@@ -1,12 +1,12 @@
 package typingsJapgolly.htmlTagNames
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("html-tag-names", JSImport.Namespace)
-@js.native
-object mod
-  extends TopLevel[js.Array[String]]
-
+object mod {
+  
+  @JSImport("html-tag-names", "htmlTagNames")
+  @js.native
+  val htmlTagNames: js.Array[String] = js.native
+}

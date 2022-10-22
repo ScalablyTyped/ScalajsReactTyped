@@ -1,19 +1,16 @@
 package typingsJapgolly.winrt.Windows.Media.PlayTo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.PlayTo.PlayToConnection")
-@js.native
-class PlayToConnection () extends IPlayToConnection {
-  /* CompleteClass */
-  override var onerror: js.Any = js.native
-  /* CompleteClass */
-  override var onstatechanged: js.Any = js.native
-  /* CompleteClass */
-  override var ontransferred: js.Any = js.native
-  /* CompleteClass */
-  override var state: PlayToConnectionState = js.native
+trait PlayToConnection
+  extends StObject
+     with IPlayToConnection
+object PlayToConnection {
+  
+  inline def apply(onerror: Any, onstatechanged: Any, ontransferred: Any, state: PlayToConnectionState): PlayToConnection = {
+    val __obj = js.Dynamic.literal(onerror = onerror.asInstanceOf[js.Any], onstatechanged = onstatechanged.asInstanceOf[js.Any], ontransferred = ontransferred.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayToConnection]
+  }
 }
-

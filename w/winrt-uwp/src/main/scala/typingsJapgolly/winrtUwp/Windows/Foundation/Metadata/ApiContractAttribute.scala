@@ -1,10 +1,7 @@
 package typingsJapgolly.winrtUwp.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Foundation.Metadata.ApiContractAttribute")
-@js.native
-abstract class ApiContractAttribute () extends js.Object
-
+trait ApiContractAttribute extends StObject

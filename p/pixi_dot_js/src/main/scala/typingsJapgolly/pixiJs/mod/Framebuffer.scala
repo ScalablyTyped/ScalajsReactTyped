@@ -1,19 +1,16 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Frame buffer used by the BaseRenderTexture
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "Framebuffer")
 @js.native
-class Framebuffer protected ()
-  extends typingsJapgolly.pixiJs.PIXI.Framebuffer {
+open class Framebuffer protected ()
+  extends typingsJapgolly.pixiCore.mod.Framebuffer {
+  /**
+    * @param width - Width of the frame buffer
+    * @param height - Height of the frame buffer
+    */
   def this(width: Double, height: Double) = this()
 }
-

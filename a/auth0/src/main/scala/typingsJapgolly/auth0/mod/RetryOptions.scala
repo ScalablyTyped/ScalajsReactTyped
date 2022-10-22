@@ -1,27 +1,36 @@
 package typingsJapgolly.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RetryOptions extends js.Object {
+trait RetryOptions extends StObject {
+  
   /**
     * Default value is `true`.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Default value is `10`.
     */
   var maxRetries: js.UndefOr[Double] = js.undefined
 }
-
 object RetryOptions {
-  @scala.inline
-  def apply(enabled: js.UndefOr[Boolean] = js.undefined, maxRetries: Int | Double = null): RetryOptions = {
+  
+  inline def apply(): RetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions]
   }
+  
+  extension [Self <: RetryOptions](x: Self) {
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+  }
 }
-

@@ -1,28 +1,37 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`1000`
-import typingsJapgolly.officeUiFabricReact.sliderTypesMod.ISliderProps
+import typingsJapgolly.officeUiFabricReact.libComponentsSliderSliderDottypesMod.ISliderProps
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Slider", JSImport.Namespace)
-@js.native
-object libSliderMod extends js.Object {
+object libSliderMod {
+  
+  @JSImport("office-ui-fabric-react/lib/Slider", "ONKEYDOWN_TIMEOUT_DURATION")
   @js.native
-  class SliderBase protected ()
-    extends typingsJapgolly.officeUiFabricReact.sliderMod.SliderBase {
+  val ONKEYDOWN_TIMEOUT_DURATION: /* 1000 */ Double = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Slider", "Slider")
+  @js.native
+  val Slider: FunctionComponent[ISliderProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Slider", "SliderBase")
+  @js.native
+  open class SliderBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsSliderMod.SliderBase {
     def this(props: ISliderProps) = this()
   }
-  
-  val ONKEYDOWN_TIMEOUT_DURATION: `1000` = js.native
-  val Slider: FunctionComponent[ISliderProps] = js.native
   /* static members */
-  @js.native
-  object SliderBase extends js.Object {
-    var defaultProps: ISliderProps = js.native
+  object SliderBase {
+    
+    @JSImport("office-ui-fabric-react/lib/Slider", "SliderBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/Slider", "SliderBase.defaultProps")
+    @js.native
+    def defaultProps: ISliderProps = js.native
+    inline def defaultProps_=(x: ISliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
-  
 }
-

@@ -1,19 +1,18 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** CSSPageRule is an interface representing a single CSS @page rule. It implements the CSSRule interface with a type value of 6 (CSSRule.PAGE_RULE). */
-trait CSSPageRule extends CSSRule {
-  val pseudoClass: java.lang.String
-  val selector: java.lang.String
-  var selectorText: java.lang.String
-  val style: org.scalajs.dom.raw.CSSStyleDeclaration
-}
-
-@JSGlobal("CSSPageRule")
 @js.native
-object CSSPageRule extends Instantiable0[CSSPageRule]
-
+trait CSSPageRule
+  extends StObject
+     with CSSGroupingRule {
+  
+  /* standard dom */
+  var selectorText: java.lang.String = js.native
+  
+  /* standard dom */
+  val style: org.scalajs.dom.CSSStyleDeclaration = js.native
+}

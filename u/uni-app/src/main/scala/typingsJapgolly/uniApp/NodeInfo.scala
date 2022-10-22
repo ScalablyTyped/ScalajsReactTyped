@@ -1,84 +1,117 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NodeInfo extends js.Object {
+trait NodeInfo extends StObject {
+  
   /**
     * 节点的下边界坐标
     */
   var bottom: js.UndefOr[Double] = js.undefined
+  
   /**
     * 节点对应的 Context 对象
     */
   var context: js.UndefOr[MapContext | CanvasContext | VideoContext | EditorContext] = js.undefined
+  
   /**
     * 节点的dataset
     */
-  var dataset: js.UndefOr[js.Any] = js.undefined
+  var dataset: js.UndefOr[Any] = js.undefined
+  
   /**
     * 节点的高度
     */
   var height: js.UndefOr[Double] = js.undefined
+  
   /**
     * 节点的ID
     */
   var id: js.UndefOr[String] = js.undefined
+  
   /**
     * 节点的左边界坐标
     */
   var left: js.UndefOr[Double] = js.undefined
+  
   /**
     * 节点的右边界坐标
     */
   var right: js.UndefOr[Double] = js.undefined
+  
   /**
     * 节点的水平滚动位置
     */
   var scrollLeft: js.UndefOr[Double] = js.undefined
+  
   /**
     * 节点的垂直滚动位置
     */
   var scrollTop: js.UndefOr[Double] = js.undefined
+  
   /**
     * 节点的上边界坐标
     */
   var top: js.UndefOr[Double] = js.undefined
+  
   /**
     * 节点的宽度
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object NodeInfo {
-  @scala.inline
-  def apply(
-    bottom: Int | Double = null,
-    context: MapContext | CanvasContext | VideoContext | EditorContext = null,
-    dataset: js.Any = null,
-    height: Int | Double = null,
-    id: String = null,
-    left: Int | Double = null,
-    right: Int | Double = null,
-    scrollLeft: Int | Double = null,
-    scrollTop: Int | Double = null,
-    top: Int | Double = null,
-    width: Int | Double = null
-  ): NodeInfo = {
+  
+  inline def apply(): NodeInfo = {
     val __obj = js.Dynamic.literal()
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeInfo]
   }
+  
+  extension [Self <: NodeInfo](x: Self) {
+    
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    
+    inline def setContext(value: MapContext | CanvasContext | VideoContext | EditorContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    
+    inline def setDataset(value: Any): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    
+    inline def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
+    
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

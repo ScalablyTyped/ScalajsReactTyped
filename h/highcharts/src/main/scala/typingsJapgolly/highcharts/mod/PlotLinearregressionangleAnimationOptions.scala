@@ -1,19 +1,24 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotLinearregressionangleAnimationOptions extends js.Object {
-  var duration: js.UndefOr[Double] = js.undefined
+trait PlotLinearregressionangleAnimationOptions extends StObject {
+  
+  var defer: js.UndefOr[Double] = js.undefined
 }
-
 object PlotLinearregressionangleAnimationOptions {
-  @scala.inline
-  def apply(duration: Int | Double = null): PlotLinearregressionangleAnimationOptions = {
+  
+  inline def apply(): PlotLinearregressionangleAnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotLinearregressionangleAnimationOptions]
   }
+  
+  extension [Self <: PlotLinearregressionangleAnimationOptions](x: Self) {
+    
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+  }
 }
-

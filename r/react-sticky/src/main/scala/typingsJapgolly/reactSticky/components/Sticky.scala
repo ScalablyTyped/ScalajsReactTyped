@@ -1,61 +1,52 @@
 package typingsJapgolly.reactSticky.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactSticky.mod.StickyChildArgs
 import typingsJapgolly.reactSticky.mod.StickyProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Sticky {
-  def apply(
-    bottomOffset: Int | Double = null,
-    className: String = null,
-    disableCompensation: js.UndefOr[Boolean] = js.undefined,
-    disableHardwareAcceleration: js.UndefOr[Boolean] = js.undefined,
-    isActive: js.UndefOr[Boolean] = js.undefined,
-    onStickyStateChange: /* isSticky */ Boolean => Callback = null,
-    relative: js.UndefOr[Boolean] = js.undefined,
-    stickyClassName: String = null,
-    stickyStyle: js.Any = null,
-    style: js.Any = null,
-    topOffset: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: StickyChildArgs => CallbackTo[Element]
-  ): UnmountedWithRoot[StickyProps, typingsJapgolly.reactSticky.mod.Sticky, Unit, StickyProps] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("children")(js.Any.fromFunction1((t0: typingsJapgolly.reactSticky.mod.StickyChildArgs) => children(t0).runNow()))
-    if (bottomOffset != null) __obj.updateDynamic("bottomOffset")(bottomOffset.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCompensation)) __obj.updateDynamic("disableCompensation")(disableCompensation.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHardwareAcceleration)) __obj.updateDynamic("disableHardwareAcceleration")(disableHardwareAcceleration.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
-    if (onStickyStateChange != null) __obj.updateDynamic("onStickyStateChange")(js.Any.fromFunction1((t0: /* isSticky */ scala.Boolean) => onStickyStateChange(t0).runNow()))
-    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
-    if (stickyClassName != null) __obj.updateDynamic("stickyClassName")(stickyClassName.asInstanceOf[js.Any])
-    if (stickyStyle != null) __obj.updateDynamic("stickyStyle")(stickyStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (topOffset != null) __obj.updateDynamic("topOffset")(topOffset.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactSticky.mod.StickyProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactSticky.mod.Sticky](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactSticky.mod.StickyProps])
+  inline def apply(children: StickyChildArgs => Element): Builder = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+    new Builder(js.Array(this.component, __props.asInstanceOf[StickyProps]))
   }
+  
   @JSImport("react-sticky", "Sticky")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactSticky.mod.Sticky] {
+    
+    inline def bottomOffset(value: Double): this.type = set("bottomOffset", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def disableCompensation(value: Boolean): this.type = set("disableCompensation", value.asInstanceOf[js.Any])
+    
+    inline def disableHardwareAcceleration(value: Boolean): this.type = set("disableHardwareAcceleration", value.asInstanceOf[js.Any])
+    
+    inline def isActive(value: Boolean): this.type = set("isActive", value.asInstanceOf[js.Any])
+    
+    inline def onStickyStateChange(value: /* isSticky */ Boolean => Callback): this.type = set("onStickyStateChange", js.Any.fromFunction1((t0: /* isSticky */ Boolean) => value(t0).runNow()))
+    
+    inline def relative(value: Boolean): this.type = set("relative", value.asInstanceOf[js.Any])
+    
+    inline def stickyClassName(value: String): this.type = set("stickyClassName", value.asInstanceOf[js.Any])
+    
+    inline def stickyStyle(value: Any): this.type = set("stickyStyle", value.asInstanceOf[js.Any])
+    
+    inline def style(value: Any): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def topOffset(value: Double): this.type = set("topOffset", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: StickyProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,19 +1,24 @@
 package typingsJapgolly.reactLeaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContextProps extends js.Object {
+trait ContextProps extends StObject {
+  
   var leaflet: js.UndefOr[LeafletContext] = js.undefined
 }
-
 object ContextProps {
-  @scala.inline
-  def apply(leaflet: LeafletContext = null): ContextProps = {
+  
+  inline def apply(): ContextProps = {
     val __obj = js.Dynamic.literal()
-    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextProps]
   }
+  
+  extension [Self <: ContextProps](x: Self) {
+    
+    inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
+    
+    inline def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
+  }
 }
-

@@ -1,27 +1,35 @@
 package typingsJapgolly.autobahn.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IInvocation extends js.Object {
+trait IInvocation extends StObject {
+  
   var caller: js.UndefOr[Double] = js.undefined
+  
   var procedure: String
-  var progress: js.UndefOr[js.Function2[/* args */ js.Array[_], /* kwargs */ js.Any, Unit]] = js.undefined
+  
+  var progress: js.UndefOr[js.Function2[/* args */ js.Array[Any], /* kwargs */ Any, Unit]] = js.undefined
 }
-
 object IInvocation {
-  @scala.inline
-  def apply(
-    procedure: String,
-    caller: Int | Double = null,
-    progress: (/* args */ js.Array[js.Any], /* kwargs */ js.Any) => Callback = null
-  ): IInvocation = {
+  
+  inline def apply(procedure: String): IInvocation = {
     val __obj = js.Dynamic.literal(procedure = procedure.asInstanceOf[js.Any])
-    if (caller != null) __obj.updateDynamic("caller")(caller.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction2((t0: /* args */ js.Array[js.Any], t1: /* kwargs */ js.Any) => progress(t0, t1).runNow()))
     __obj.asInstanceOf[IInvocation]
   }
+  
+  extension [Self <: IInvocation](x: Self) {
+    
+    inline def setCaller(value: Double): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
+    
+    inline def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
+    
+    inline def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
+    
+    inline def setProgress(value: (/* args */ js.Array[Any], /* kwargs */ Any) => Callback): Self = StObject.set(x, "progress", js.Any.fromFunction2((t0: /* args */ js.Array[Any], t1: /* kwargs */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+  }
 }
-

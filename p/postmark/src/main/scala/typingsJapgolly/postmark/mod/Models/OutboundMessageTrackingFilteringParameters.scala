@@ -1,13 +1,13 @@
 package typingsJapgolly.postmark.mod.Models
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Models.OutboundMessageTrackingFilteringParameters")
 @js.native
-class OutboundMessageTrackingFilteringParameters protected ()
-  extends typingsJapgolly.postmark.modelsMod.OutboundMessageTrackingFilteringParameters {
+open class OutboundMessageTrackingFilteringParameters protected ()
+  extends typingsJapgolly.postmark.distClientModelsMod.OutboundMessageTrackingFilteringParameters {
   def this(
     count: js.UndefOr[Double],
     offset: js.UndefOr[Double],
@@ -26,4 +26,3 @@ class OutboundMessageTrackingFilteringParameters protected ()
     messageStream: js.UndefOr[String]
   ) = this()
 }
-

@@ -2,29 +2,69 @@ package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Activation
 
 import typingsJapgolly.winrtUwp.Windows.ApplicationModel.Search.SearchPaneQueryLinguisticDetails
 import typingsJapgolly.winrtUwp.Windows.UI.ViewManagement.ActivationViewSwitcher
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the activated event that fires when the user searches the app from the Search charm and the app isn't the main app on screen. */
-@JSGlobal("Windows.ApplicationModel.Activation.SearchActivatedEventArgs")
-@js.native
-abstract class SearchActivatedEventArgs () extends js.Object {
+trait SearchActivatedEventArgs extends StObject {
+  
   /** Gets the identifier for the currently shown app view. */
-  var currentlyShownApplicationViewId: Double = js.native
+  var currentlyShownApplicationViewId: Double
+  
   /** Gets the activation type. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
+  
   /** Gets the Internet Engineering Task Force (IETF) language tag (BCP 47 standard) that identifies the language currently associated with the user's text input device. */
-  var language: String = js.native
+  var language: String
+  
   /** Gets a SearchPaneQueryLinguisticDetails object that provides info about query text that the user enters through an Input Method Editor (IME). */
-  var linguisticDetails: SearchPaneQueryLinguisticDetails = js.native
+  var linguisticDetails: SearchPaneQueryLinguisticDetails
+  
   /** Gets the execution state of the app before it was activated. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
+  
   /** Gets the text that the user wants the app to search for. The user entered this text into the search box of the search pane. */
-  var queryText: String = js.native
+  var queryText: String
+  
   /** Gets a SplashScreen object that provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
+  
   /** Gets the view switcher object that allows you to set the view for the application. */
-  var viewSwitcher: ActivationViewSwitcher = js.native
+  var viewSwitcher: ActivationViewSwitcher
 }
-
+object SearchActivatedEventArgs {
+  
+  inline def apply(
+    currentlyShownApplicationViewId: Double,
+    kind: ActivationKind,
+    language: String,
+    linguisticDetails: SearchPaneQueryLinguisticDetails,
+    previousExecutionState: ApplicationExecutionState,
+    queryText: String,
+    splashScreen: SplashScreen,
+    viewSwitcher: ActivationViewSwitcher
+  ): SearchActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(currentlyShownApplicationViewId = currentlyShownApplicationViewId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], linguisticDetails = linguisticDetails.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], queryText = queryText.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], viewSwitcher = viewSwitcher.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SearchActivatedEventArgs]
+  }
+  
+  extension [Self <: SearchActivatedEventArgs](x: Self) {
+    
+    inline def setCurrentlyShownApplicationViewId(value: Double): Self = StObject.set(x, "currentlyShownApplicationViewId", value.asInstanceOf[js.Any])
+    
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLinguisticDetails(value: SearchPaneQueryLinguisticDetails): Self = StObject.set(x, "linguisticDetails", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    
+    inline def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
+    
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    
+    inline def setViewSwitcher(value: ActivationViewSwitcher): Self = StObject.set(x, "viewSwitcher", value.asInstanceOf[js.Any])
+  }
+}

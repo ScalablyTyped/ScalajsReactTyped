@@ -1,24 +1,38 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookPivotTable extends Entity {
+trait WorkbookPivotTable
+  extends StObject
+     with Entity {
+  
   // Name of the PivotTable.
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The worksheet containing the current PivotTable. Read-only.
-  var worksheet: js.UndefOr[WorkbookWorksheet] = js.undefined
+  var worksheet: js.UndefOr[NullableOption[WorkbookWorksheet]] = js.undefined
 }
-
 object WorkbookPivotTable {
-  @scala.inline
-  def apply(id: String = null, name: String = null, worksheet: WorkbookWorksheet = null): WorkbookPivotTable = {
+  
+  inline def apply(): WorkbookPivotTable = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookPivotTable]
   }
+  
+  extension [Self <: WorkbookPivotTable](x: Self) {
+    
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setWorksheet(value: NullableOption[WorkbookWorksheet]): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
+    
+    inline def setWorksheetNull: Self = StObject.set(x, "worksheet", null)
+    
+    inline def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
+  }
 }
-

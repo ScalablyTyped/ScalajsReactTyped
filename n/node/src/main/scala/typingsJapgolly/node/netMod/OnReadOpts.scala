@@ -1,29 +1,37 @@
 package typingsJapgolly.node.netMod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnReadOpts extends js.Object {
-  var buffer: scala.scalajs.js.typedarray.Uint8Array | js.Function0[scala.scalajs.js.typedarray.Uint8Array]
+trait OnReadOpts extends StObject {
+  
+  var buffer: js.typedarray.Uint8Array | js.Function0[js.typedarray.Uint8Array]
+  
   /**
     * This function is called for every chunk of incoming data.
     * Two arguments are passed to it: the number of bytes written to buffer and a reference to buffer.
     * Return false from this function to implicitly pause() the socket.
     */
-  def callback(bytesWritten: Double, buf: scala.scalajs.js.typedarray.Uint8Array): Boolean
+  def callback(bytesWritten: Double, buf: js.typedarray.Uint8Array): Boolean
 }
-
 object OnReadOpts {
-  @scala.inline
-  def apply(
-    buffer: scala.scalajs.js.typedarray.Uint8Array | js.Function0[scala.scalajs.js.typedarray.Uint8Array],
-    callback: (Double, scala.scalajs.js.typedarray.Uint8Array) => CallbackTo[Boolean]
+  
+  inline def apply(
+    buffer: js.typedarray.Uint8Array | js.Function0[js.typedarray.Uint8Array],
+    callback: (Double, js.typedarray.Uint8Array) => Boolean
   ): OnReadOpts = {
-    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any])
-    __obj.updateDynamic("callback")(js.Any.fromFunction2((t0: scala.Double, t1: scala.scalajs.js.typedarray.Uint8Array) => callback(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], callback = js.Any.fromFunction2(callback))
     __obj.asInstanceOf[OnReadOpts]
   }
+  
+  extension [Self <: OnReadOpts](x: Self) {
+    
+    inline def setBuffer(value: js.typedarray.Uint8Array | js.Function0[js.typedarray.Uint8Array]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    
+    inline def setBufferCallbackTo(value: CallbackTo[js.typedarray.Uint8Array]): Self = StObject.set(x, "buffer", value.toJsFn)
+    
+    inline def setCallback(value: (Double, js.typedarray.Uint8Array) => Boolean): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+  }
 }
-

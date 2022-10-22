@@ -2,9 +2,9 @@ package typingsJapgolly.xrm.XrmEnum
 
 import typingsJapgolly.xrm.xrmStrings.date
 import typingsJapgolly.xrm.xrmStrings.datetime
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Date attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.DateAttribute DateAttribute}.
@@ -14,14 +14,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.date
   - typingsJapgolly.xrm.xrmStrings.datetime
 */
-trait DateAttributeFormat extends js.Object
-
+trait DateAttributeFormat extends StObject
 object DateAttributeFormat {
-  @scala.inline
-  def Date: date = this.cast("date")
-  @scala.inline
-  def DateTime: datetime = this.cast("datetime")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Date: date = "date".asInstanceOf[date]
+  
+  inline def DateTime: datetime = "datetime".asInstanceOf[datetime]
 }
-

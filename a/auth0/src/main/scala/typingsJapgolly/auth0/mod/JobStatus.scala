@@ -1,8 +1,8 @@
 package typingsJapgolly.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.auth0.auth0Strings.pending
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.auth0.auth0Strings.completed
   - typingsJapgolly.auth0.auth0Strings.failed
 */
-trait JobStatus extends js.Object
-
+trait JobStatus extends StObject
 object JobStatus {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def completed: typingsJapgolly.auth0.auth0Strings.completed = this.cast("completed")
-  @scala.inline
-  def failed: typingsJapgolly.auth0.auth0Strings.failed = this.cast("failed")
-  @scala.inline
-  def pending: typingsJapgolly.auth0.auth0Strings.pending = this.cast("pending")
-  @scala.inline
-  def processing: typingsJapgolly.auth0.auth0Strings.processing = this.cast("processing")
+  
+  inline def completed: typingsJapgolly.auth0.auth0Strings.completed = "completed".asInstanceOf[typingsJapgolly.auth0.auth0Strings.completed]
+  
+  inline def failed: typingsJapgolly.auth0.auth0Strings.failed = "failed".asInstanceOf[typingsJapgolly.auth0.auth0Strings.failed]
+  
+  inline def pending: typingsJapgolly.auth0.auth0Strings.pending = "pending".asInstanceOf[typingsJapgolly.auth0.auth0Strings.pending]
+  
+  inline def processing: typingsJapgolly.auth0.auth0Strings.processing = "processing".asInstanceOf[typingsJapgolly.auth0.auth0Strings.processing]
 }
-

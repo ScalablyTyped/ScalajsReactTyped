@@ -1,13 +1,13 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "ArcCurve")
 @js.native
-class ArcCurve protected ()
-  extends typingsJapgolly.three.curvesMod.ArcCurve {
+open class ArcCurve protected ()
+  extends typingsJapgolly.three.srcThreeMod.ArcCurve {
   def this(
     aX: Double,
     aY: Double,
@@ -17,4 +17,3 @@ class ArcCurve protected ()
     aClockwise: Boolean
   ) = this()
 }
-

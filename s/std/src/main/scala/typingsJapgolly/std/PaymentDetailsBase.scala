@@ -1,27 +1,36 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaymentDetailsBase extends js.Object {
+trait PaymentDetailsBase extends StObject {
+  
+  /* standard dom */
   var displayItems: js.UndefOr[js.Array[PaymentItem]] = js.undefined
+  
+  /* standard dom */
   var modifiers: js.UndefOr[js.Array[PaymentDetailsModifier]] = js.undefined
-  var shippingOptions: js.UndefOr[js.Array[PaymentShippingOption]] = js.undefined
 }
-
 object PaymentDetailsBase {
-  @scala.inline
-  def apply(
-    displayItems: js.Array[PaymentItem] = null,
-    modifiers: js.Array[PaymentDetailsModifier] = null,
-    shippingOptions: js.Array[PaymentShippingOption] = null
-  ): PaymentDetailsBase = {
+  
+  inline def apply(): PaymentDetailsBase = {
     val __obj = js.Dynamic.literal()
-    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems.asInstanceOf[js.Any])
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentDetailsBase]
   }
+  
+  extension [Self <: PaymentDetailsBase](x: Self) {
+    
+    inline def setDisplayItems(value: js.Array[PaymentItem]): Self = StObject.set(x, "displayItems", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayItemsUndefined: Self = StObject.set(x, "displayItems", js.undefined)
+    
+    inline def setDisplayItemsVarargs(value: PaymentItem*): Self = StObject.set(x, "displayItems", js.Array(value*))
+    
+    inline def setModifiers(value: js.Array[PaymentDetailsModifier]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    
+    inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+    
+    inline def setModifiersVarargs(value: PaymentDetailsModifier*): Self = StObject.set(x, "modifiers", js.Array(value*))
+  }
 }
-

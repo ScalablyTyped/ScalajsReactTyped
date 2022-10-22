@@ -1,9 +1,9 @@
 package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.olx.source.TileJSONOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.TileJSON")
 @js.native
-class TileJSON protected () extends TileImage {
+open class TileJSON protected () extends TileImage {
   /**
     * @classdesc
     * Layer source for tile data in TileJSON format.
@@ -23,10 +23,10 @@ class TileJSON protected () extends TileImage {
     * @api stable
     */
   def this(options: TileJSONOptions) = this()
+  
   /**
     * @return The tilejson object.
     * @api
     */
   def getTileJSON(): TileJSON = js.native
 }
-

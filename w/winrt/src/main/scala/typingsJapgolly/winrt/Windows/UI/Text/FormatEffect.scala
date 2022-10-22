@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FormatEffect extends js.Object
-
+sealed trait FormatEffect extends StObject
 @JSGlobal("Windows.UI.Text.FormatEffect")
 @js.native
-object FormatEffect extends js.Object {
-  @js.native
-  sealed trait off extends FormatEffect
+object FormatEffect extends StObject {
   
   @js.native
-  sealed trait on extends FormatEffect
+  sealed trait off
+    extends StObject
+       with FormatEffect
   
   @js.native
-  sealed trait toggle extends FormatEffect
+  sealed trait on
+    extends StObject
+       with FormatEffect
   
   @js.native
-  sealed trait undefined extends FormatEffect
+  sealed trait toggle
+    extends StObject
+       with FormatEffect
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FormatEffect with Double] = js.native
-  /* 0 */ @js.native
-  object off extends TopLevel[off with Double]
-  
-  /* 1 */ @js.native
-  object on extends TopLevel[on with Double]
-  
-  /* 2 */ @js.native
-  object toggle extends TopLevel[toggle with Double]
-  
-  /* 3 */ @js.native
-  object undefined extends TopLevel[undefined with Double]
-  
+  @js.native
+  sealed trait undefined
+    extends StObject
+       with FormatEffect
 }
-

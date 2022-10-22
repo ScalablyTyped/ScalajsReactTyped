@@ -10,15 +10,12 @@ return all the parent directories for a directory
 | ------------------ | :-------------: |
 | Full name          | parents |
 | Keywords           | directory, parent, path, tree |
-| # releases         | 0 |
-| # dependents       | 80 |
-| # downloads        | 27841106 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5537442.666666667 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/node-parents)
-- [Bugs](https://github.com/substack/node-parents/issues)
-- [Repository](https://github.com/substack/node-parents)
 - [Npm](https://www.npmjs.com/package/parents)
     
 

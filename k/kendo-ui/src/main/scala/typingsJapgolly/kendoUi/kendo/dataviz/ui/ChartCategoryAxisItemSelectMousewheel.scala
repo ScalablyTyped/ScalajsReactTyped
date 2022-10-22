@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartCategoryAxisItemSelectMousewheel extends js.Object {
+trait ChartCategoryAxisItemSelectMousewheel extends StObject {
+  
   var reverse: js.UndefOr[Boolean] = js.undefined
+  
   var zoom: js.UndefOr[String] = js.undefined
 }
-
 object ChartCategoryAxisItemSelectMousewheel {
-  @scala.inline
-  def apply(reverse: js.UndefOr[Boolean] = js.undefined, zoom: String = null): ChartCategoryAxisItemSelectMousewheel = {
+  
+  inline def apply(): ChartCategoryAxisItemSelectMousewheel = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartCategoryAxisItemSelectMousewheel]
   }
+  
+  extension [Self <: ChartCategoryAxisItemSelectMousewheel](x: Self) {
+    
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    
+    inline def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+  }
 }
-

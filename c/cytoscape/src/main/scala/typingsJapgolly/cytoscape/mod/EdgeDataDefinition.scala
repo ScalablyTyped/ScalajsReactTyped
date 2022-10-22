@@ -1,37 +1,36 @@
 package typingsJapgolly.cytoscape.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EdgeDataDefinition
-  extends ElementDataDefinition
-     with /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with ElementDataDefinition
+     with /* key */ StringDictionary[Any] {
+  
   /**
     * the source node id (edge comes from this node)
     */
   var source: String
+  
   /**
     * the target node id (edge goes to this node)
     */
   var target: String
 }
-
 object EdgeDataDefinition {
-  @scala.inline
-  def apply(
-    source: String,
-    target: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    id: String = null,
-    position: Position = null
-  ): EdgeDataDefinition = {
+  
+  inline def apply(source: String, target: String): EdgeDataDefinition = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeDataDefinition]
   }
+  
+  extension [Self <: EdgeDataDefinition](x: Self) {
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+  }
 }
-

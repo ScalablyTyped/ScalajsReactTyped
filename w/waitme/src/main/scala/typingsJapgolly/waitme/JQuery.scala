@@ -4,17 +4,12 @@ import typingsJapgolly.waitme.WaitMe.WaitMeOptions
 import typingsJapgolly.waitme.WaitMe.WaitMeStatic
 import typingsJapgolly.waitme.waitmeStrings.close
 import typingsJapgolly.waitme.waitmeStrings.hide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JQuery extends js.Object {
-  /**
-    * $(container).waitMe({param1 : value1, param2 : value2, ...});
-    */
-  @JSName("waitMe")
-  var waitMe_Original: WaitMeStatic = js.native
+trait JQuery extends StObject {
+  
   /**
     * execution after closed.
     * Use: $('.waitMe').on('close', function() {});
@@ -23,13 +18,35 @@ trait JQuery extends js.Object {
     * @returns {this} 
     */
   @JSName("on")
-  def on_close(event: close, handler: js.Function0[Unit]): this.type = js.native
+  def on_close(event: close, handler: js.Function0[Unit]): this.type
+  
   /**
     * $(container).waitMe({param1 : value1, param2 : value2, ...});
     */
-  def waitMe(): JQuery = js.native
-  def waitMe(options: WaitMeOptions): JQuery = js.native
+  def waitMe(): JQuery
+  def waitMe(options: WaitMeOptions): JQuery
+  /**
+    * $(container).waitMe({param1 : value1, param2 : value2, ...});
+    */
   @JSName("waitMe")
-  def waitMe_hide(options: hide): JQuery = js.native
+  var waitMe_Original: WaitMeStatic
+  @JSName("waitMe")
+  def waitMe_hide(options: hide): JQuery
 }
-
+object JQuery {
+  
+  inline def apply(
+    on: (close, js.Function0[Unit]) => JQuery,
+    waitMe: /* options */ js.UndefOr[WaitMeOptions | hide] => JQuery
+  ): JQuery = {
+    val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on), waitMe = js.Any.fromFunction1(waitMe))
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  extension [Self <: JQuery](x: Self) {
+    
+    inline def setOn(value: (close, js.Function0[Unit]) => JQuery): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    
+    inline def setWaitMe(value: /* options */ js.UndefOr[WaitMeOptions | hide] => JQuery): Self = StObject.set(x, "waitMe", js.Any.fromFunction1(value))
+  }
+}

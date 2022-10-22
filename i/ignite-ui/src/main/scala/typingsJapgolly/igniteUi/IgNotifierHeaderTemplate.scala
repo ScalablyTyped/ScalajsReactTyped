@@ -1,42 +1,44 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgNotifierHeaderTemplate
-  extends /**
-	 * Option for IgNotifierHeaderTemplate
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Controls whether the popover renders a functional close button
-  	 *
-  	 */
+    * Controls whether the popover renders a functional close button
+    *
+    */
   var closeButton: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Sets the content for the popover header.
-  	 *
-  	 */
+    * Sets the content for the popover header.
+    *
+    */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object IgNotifierHeaderTemplate {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgNotifierHeaderTemplate
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    closeButton: js.UndefOr[Boolean] = js.undefined,
-    title: String = null
-  ): IgNotifierHeaderTemplate = {
+  
+  inline def apply(): IgNotifierHeaderTemplate = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgNotifierHeaderTemplate]
   }
+  
+  extension [Self <: IgNotifierHeaderTemplate](x: Self) {
+    
+    inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+    
+    inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

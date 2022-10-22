@@ -2,20 +2,18 @@ package typingsJapgolly.materialUi
 
 import typingsJapgolly.materialUi.MaterialUI.SliderProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Slider", JSImport.Namespace)
-@js.native
-object sliderMod extends js.Object {
-  @js.native
-  class Slider ()
-    extends Component[SliderProps, js.Object, js.Any]
+object sliderMod {
   
+  @JSImport("material-ui/Slider", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SliderProps, js.Object, js.Any]
+  open class default () extends Slider
   
+  @JSImport("material-ui/Slider", "Slider")
+  @js.native
+  open class Slider ()
+    extends Component[SliderProps, js.Object, Any]
 }
-

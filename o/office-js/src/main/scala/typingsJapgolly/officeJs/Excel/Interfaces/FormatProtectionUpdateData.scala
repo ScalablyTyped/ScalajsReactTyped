@@ -1,34 +1,43 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the FormatProtection object, for use in `formatProtection.set({ ... })`. */
-trait FormatProtectionUpdateData extends js.Object {
+trait FormatProtectionUpdateData extends StObject {
+  
   /**
+    * Specifies if Excel hides the formula for the cells in the range. A `null` value indicates that the entire range doesn't have a uniform formula hidden setting.
     *
-    * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var formulaHidden: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if Excel locks the cells in the object. A `null` value indicates that the entire range doesn't have a uniform lock setting.
     *
-    * Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var locked: js.UndefOr[Boolean] = js.undefined
 }
-
 object FormatProtectionUpdateData {
-  @scala.inline
-  def apply(formulaHidden: js.UndefOr[Boolean] = js.undefined, locked: js.UndefOr[Boolean] = js.undefined): FormatProtectionUpdateData = {
+  
+  inline def apply(): FormatProtectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatProtectionUpdateData]
   }
+  
+  extension [Self <: FormatProtectionUpdateData](x: Self) {
+    
+    inline def setFormulaHidden(value: Boolean): Self = StObject.set(x, "formulaHidden", value.asInstanceOf[js.Any])
+    
+    inline def setFormulaHiddenUndefined: Self = StObject.set(x, "formulaHidden", js.undefined)
+    
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    
+    inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
+  }
 }
-

@@ -1,37 +1,30 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.devextremeStrings.dash
-import typingsJapgolly.devextreme.devextremeStrings.dot
-import typingsJapgolly.devextreme.devextremeStrings.longDash
-import typingsJapgolly.devextreme.devextremeStrings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxChartValueAxisConstantLineStyle extends dxChartCommonAxisSettingsConstantLineStyle {
-  /** Specifies the appearance of the labels of those constant lines that belong to the value axis. */
+trait dxChartValueAxisConstantLineStyle
+  extends StObject
+     with dxChartCommonAxisSettingsConstantLineStyle {
+  
+  /**
+    * Specifies the appearance of the labels of those constant lines that belong to the value axis.
+    */
   @JSName("label")
   var label_dxChartValueAxisConstantLineStyle: js.UndefOr[dxChartValueAxisConstantLineStyleLabel] = js.undefined
 }
-
 object dxChartValueAxisConstantLineStyle {
-  @scala.inline
-  def apply(
-    color: String = null,
-    dashStyle: dash | dot | longDash | solid = null,
-    label: dxChartValueAxisConstantLineStyleLabel = null,
-    paddingLeftRight: Int | Double = null,
-    paddingTopBottom: Int | Double = null,
-    width: Int | Double = null
-  ): dxChartValueAxisConstantLineStyle = {
+  
+  inline def apply(): dxChartValueAxisConstantLineStyle = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (paddingLeftRight != null) __obj.updateDynamic("paddingLeftRight")(paddingLeftRight.asInstanceOf[js.Any])
-    if (paddingTopBottom != null) __obj.updateDynamic("paddingTopBottom")(paddingTopBottom.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartValueAxisConstantLineStyle]
   }
+  
+  extension [Self <: dxChartValueAxisConstantLineStyle](x: Self) {
+    
+    inline def setLabel(value: dxChartValueAxisConstantLineStyleLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+  }
 }
-

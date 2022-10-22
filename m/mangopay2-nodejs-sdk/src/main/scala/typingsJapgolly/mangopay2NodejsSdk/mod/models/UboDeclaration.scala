@@ -1,50 +1,64 @@
 package typingsJapgolly.mangopay2NodejsSdk.mod.models
 
-import typingsJapgolly.mangopay2NodejsSdk.mod.kycDocument.DocumentStatus
-import typingsJapgolly.mangopay2NodejsSdk.mod.uboDeclaration.CreateUboDeclaration
-import typingsJapgolly.mangopay2NodejsSdk.mod.uboDeclaration.UboDeclarationData
-import typingsJapgolly.mangopay2NodejsSdk.mod.uboDeclaration.UpdateUboDeclaration
+import typingsJapgolly.mangopay2NodejsSdk.typingsEnumsMod.enums.IUboDeclarationRefusedReasonType
+import typingsJapgolly.mangopay2NodejsSdk.typingsEnumsMod.enums.IUboDeclarationStatus
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsUboDeclarationMod.uboDeclaration.UboDeclarationData
+import typingsJapgolly.mangopay2NodejsSdk.typingsTypesMod.Timestamp
+import typingsJapgolly.mangopay2NodejsSdk.typingsTypesMod.ValueOf
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.UboDeclaration")
 @js.native
-class UboDeclaration protected ()
+open class UboDeclaration protected ()
   extends EntityBase[UboDeclarationData]
      with UboDeclarationData {
-  def this(data: CreateUboDeclaration) = this()
-  def this(data: UpdateUboDeclaration) = this()
+  def this(data: UboDeclarationData) = this()
+  
   /* CompleteClass */
-  override var CreationDate: Double = js.native
+  var CreationDate: Double = js.native
+  
+  /* CompleteClass */
+  var Id: String = js.native
+  
   /**
-    * An array of UserIDs declared as Ultimate Beneficial Owners of a BUSINESS Legal User.
+    * Explanation of why the declaration was refused.
     */
   /* CompleteClass */
-  override var DeclaredUBOs: js.Array[String] = js.native
-  /* CompleteClass */
-  override var Id: String = js.native
+  var Message: String = js.native
+  
   /**
-    * Refused Reason Message for a UBO Declaration
+    * cannot be modified by clients
     */
   /* CompleteClass */
-  override var RefusedReasonMessage: String = js.native
+  var ProcessedDate: Timestamp = js.native
+  
   /**
-    * Reason types for a UBO Declaration
+    * Array of reasons why the declaration was refused
+    * Values as declared in UboDeclarationRefusedReasonType.
     */
   /* CompleteClass */
-  override var RefusedReasonTypes: js.Array[String] = js.native
+  var Reason: ValueOf[IUboDeclarationRefusedReasonType] = js.native
+  
   /**
-    * Status of a UBO Declaration
+    * Declaration status (one of UboDeclarationStatus)
     */
   /* CompleteClass */
-  override var Status: DocumentStatus = js.native
+  var Status: ValueOf[IUboDeclarationStatus] = js.native
+  
   /* CompleteClass */
-  override var Tag: String = js.native
+  var Tag: String = js.native
+  
   /**
-    * The object owner's UserId
+    * Table of ubos (declared in Ubo)
     */
   /* CompleteClass */
-  override var UserId: String = js.native
+  var Ubos: js.Array[Any] = js.native
+  
+  /**
+    * ID of the user
+    */
+  /* CompleteClass */
+  var UserId: String = js.native
 }
-

@@ -1,49 +1,63 @@
 package typingsJapgolly.aureliaTemplating.mod
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
 import typingsJapgolly.aureliaDependencyInjection.mod.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EnhanceInstruction extends js.Object {
+trait EnhanceInstruction extends StObject {
+  
   /**
-    * A binding context for the enhancement.
-    */
+  	* A binding context for the enhancement.
+  	*/
   var bindingContext: js.UndefOr[js.Object] = js.undefined
+  
   /**
-    * The DI container to use as the root for UI enhancement.
-    */
+  	* The DI container to use as the root for UI enhancement.
+  	*/
   var container: js.UndefOr[Container] = js.undefined
+  
   /**
-    * The element to enhance.
-    */
+  	* The element to enhance.
+  	*/
   var element: Element
+  
   /**
-    * A secondary binding context that can override the standard context.
-    */
-  var overrideContext: js.UndefOr[js.Any] = js.undefined
+  	* A secondary binding context that can override the standard context.
+  	*/
+  var overrideContext: js.UndefOr[Any] = js.undefined
+  
   /**
-    * The resources available for enhancement.
-    */
+  	* The resources available for enhancement.
+  	*/
   var resources: js.UndefOr[ViewResources_] = js.undefined
 }
-
 object EnhanceInstruction {
-  @scala.inline
-  def apply(
-    element: Element,
-    bindingContext: js.Object = null,
-    container: Container = null,
-    overrideContext: js.Any = null,
-    resources: ViewResources_ = null
-  ): EnhanceInstruction = {
+  
+  inline def apply(element: Element): EnhanceInstruction = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
-    if (bindingContext != null) __obj.updateDynamic("bindingContext")(bindingContext.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (overrideContext != null) __obj.updateDynamic("overrideContext")(overrideContext.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnhanceInstruction]
   }
+  
+  extension [Self <: EnhanceInstruction](x: Self) {
+    
+    inline def setBindingContext(value: js.Object): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
+    
+    inline def setBindingContextUndefined: Self = StObject.set(x, "bindingContext", js.undefined)
+    
+    inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideContext(value: Any): Self = StObject.set(x, "overrideContext", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideContextUndefined: Self = StObject.set(x, "overrideContext", js.undefined)
+    
+    inline def setResources(value: ViewResources_): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+  }
 }
-

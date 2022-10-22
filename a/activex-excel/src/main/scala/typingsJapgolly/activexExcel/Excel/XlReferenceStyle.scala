@@ -1,23 +1,19 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4150`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4150`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4150`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4150`
 */
-trait XlReferenceStyle extends js.Object
-
+trait XlReferenceStyle extends StObject
 object XlReferenceStyle {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlA1: `1` = this.cast(1)
-  @scala.inline
-  def xlR1C1: `-4150` = this.cast(-4150)
+  
+  inline def xlA1: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlR1C1: `-4150` = -4150.asInstanceOf[`-4150`]
 }
-

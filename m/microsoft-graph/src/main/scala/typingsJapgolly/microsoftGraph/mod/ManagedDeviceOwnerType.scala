@@ -1,25 +1,21 @@
 package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.company
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.personal
 */
-trait ManagedDeviceOwnerType extends js.Object
-
+trait ManagedDeviceOwnerType extends StObject
 object ManagedDeviceOwnerType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def company: typingsJapgolly.microsoftGraph.microsoftGraphStrings.company = this.cast("company")
-  @scala.inline
-  def personal: typingsJapgolly.microsoftGraph.microsoftGraphStrings.personal = this.cast("personal")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  
+  inline def company: typingsJapgolly.microsoftGraph.microsoftGraphStrings.company = "company".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.company]
+  
+  inline def personal: typingsJapgolly.microsoftGraph.microsoftGraphStrings.personal = "personal".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.personal]
+  
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
-

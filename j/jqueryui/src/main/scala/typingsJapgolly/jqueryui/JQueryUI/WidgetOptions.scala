@@ -1,24 +1,37 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Widget //////////////////////////////////////////////////
-trait WidgetOptions extends js.Object {
+trait WidgetOptions extends StObject {
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var hide: js.UndefOr[js.Any] = js.undefined
-  var show: js.UndefOr[js.Any] = js.undefined
+  
+  var hide: js.UndefOr[Any] = js.undefined
+  
+  var show: js.UndefOr[Any] = js.undefined
 }
-
 object WidgetOptions {
-  @scala.inline
-  def apply(disabled: js.UndefOr[Boolean] = js.undefined, hide: js.Any = null, show: js.Any = null): WidgetOptions = {
+  
+  inline def apply(): WidgetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidgetOptions]
   }
+  
+  extension [Self <: WidgetOptions](x: Self) {
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setHide(value: Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    
+    inline def setShow(value: Any): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+  }
 }
-

@@ -1,42 +1,48 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.Blob
+import org.scalajs.dom.Blob
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PortalItemUpdateThumbnailParams extends Object {
+trait PortalItemUpdateThumbnailParams
+  extends StObject
+     with Object {
+  
   /**
     * The file name used for the thumbnail in [thumbnailUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#thumbnailUrl).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#updateThumbnail)
     */
   var filename: js.UndefOr[String] = js.undefined
+  
   /**
-    * A URL, Data URI, Blob, or File. The accepted formats are `GIF`, `JPG`, and `PNG`.
+    * A URL, Data URI, Blob, or File.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#updateThumbnail)
     */
   var thumbnail: Blob | String
 }
-
 object PortalItemUpdateThumbnailParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    thumbnail: Blob | String,
-    filename: String = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
+    thumbnail: Blob | String
   ): PortalItemUpdateThumbnailParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), thumbnail = thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalItemUpdateThumbnailParams]
   }
+  
+  extension [Self <: PortalItemUpdateThumbnailParams](x: Self) {
+    
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    
+    inline def setThumbnail(value: Blob | String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.TopProperty
+import typingsJapgolly.csstype.mod.Property.Top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TopProps[TLength] extends js.Object {
-  val top: js.UndefOr[ResponsiveValue[TopProperty[TLength]]] = js.undefined
+trait TopProps[TLength] extends StObject {
+  
+  val top: js.UndefOr[ResponsiveValue[Top[TLength]]] = js.undefined
 }
-
 object TopProps {
-  @scala.inline
-  def apply[TLength](top: ResponsiveValue[TopProperty[TLength]] = null): TopProps[TLength] = {
+  
+  inline def apply[TLength](): TopProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopProps[TLength]]
   }
+  
+  extension [Self <: TopProps[?], TLength](x: Self & TopProps[TLength]) {
+    
+    inline def setTop(value: ResponsiveValue[Top[TLength]]): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    
+    inline def setTopVarargs(value: Top[TLength]*): Self = StObject.set(x, "top", js.Array(value*))
+  }
 }
-

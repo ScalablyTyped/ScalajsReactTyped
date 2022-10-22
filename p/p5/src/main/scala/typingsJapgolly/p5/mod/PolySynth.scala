@@ -1,46 +1,36 @@
 package typingsJapgolly.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolySynth extends js.Object {
+trait PolySynth extends StObject {
+  
   /**
     *   Monosynth that generates the sound for each note
     *   that is triggered. The p5.PolySynth defaults to
     *   using the p5.MonoSynth as its voice.
     */
-  var AudioVoice: js.Any = js.native
-  /**
-    *   An object that holds information about which notes
-    *   have been played and which notes are currently
-    *   being played. New notes are added as keys on the
-    *   fly. While a note has been attacked, but not
-    *   released, the value of the key is the audiovoice
-    *   which is generating that note. When notes are
-    *   released, the value of the key becomes undefined.
-    */
-  var notes: js.Any = js.native
-  /**
-    *   A PolySynth must have at least 1 voice, defaults
-    *   to 8
-    */
-  var polyvalue: js.Any = js.native
+  var AudioVoice: Any = js.native
+  
   /**
     *   Connect to a p5.sound / Web Audio object.
     *   @param unit A p5.sound or Web Audio object
     */
   def connect(unit: js.Object): Unit = js.native
+  
   /**
     *   Disconnect all outputs
     */
   def disconnect(): Unit = js.native
+  
   /**
     *   Get rid of the MonoSynth and free up its resources
     *   / memory.
     */
   def dispose(): Unit = js.native
+  
   /**
     *   noteADSR sets the envelope for a specific note
     *   that has just been triggered. Using this method
@@ -74,6 +64,33 @@ trait PolySynth extends js.Object {
   def noteADSR(note: Double, attackTime: Double, decayTime: Double): Unit = js.native
   def noteADSR(note: Double, attackTime: Double, decayTime: Double, susRatio: Double): Unit = js.native
   def noteADSR(note: Double, attackTime: Double, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Double, attackTime: Double, decayTime: Double, susRatio: Unit, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Double, attackTime: Double, decayTime: Unit, susRatio: Double): Unit = js.native
+  def noteADSR(note: Double, attackTime: Double, decayTime: Unit, susRatio: Double, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Double, attackTime: Double, decayTime: Unit, susRatio: Unit, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Double, attackTime: Unit, decayTime: Double): Unit = js.native
+  def noteADSR(note: Double, attackTime: Unit, decayTime: Double, susRatio: Double): Unit = js.native
+  def noteADSR(note: Double, attackTime: Unit, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Double, attackTime: Unit, decayTime: Double, susRatio: Unit, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Double, attackTime: Unit, decayTime: Unit, susRatio: Double): Unit = js.native
+  def noteADSR(note: Double, attackTime: Unit, decayTime: Unit, susRatio: Double, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Double, attackTime: Unit, decayTime: Unit, susRatio: Unit, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Double, decayTime: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Double, decayTime: Double, susRatio: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Double, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Double, decayTime: Double, susRatio: Unit, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Double, decayTime: Unit, susRatio: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Double, decayTime: Unit, susRatio: Double, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Double, decayTime: Unit, susRatio: Unit, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Unit, decayTime: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Unit, decayTime: Double, susRatio: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Unit, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Unit, decayTime: Double, susRatio: Unit, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Unit, decayTime: Unit, susRatio: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Unit, decayTime: Unit, susRatio: Double, releaseTime: Double): Unit = js.native
+  def noteADSR(note: Unit, attackTime: Unit, decayTime: Unit, susRatio: Unit, releaseTime: Double): Unit = js.native
+  
   /**
     *   Trigger the Attack, and Decay portion of a
     *   MonoSynth. Similar to holding down a key on a
@@ -89,6 +106,11 @@ trait PolySynth extends js.Object {
   def noteAttack(note: Double): Unit = js.native
   def noteAttack(note: Double, velocity: Double): Unit = js.native
   def noteAttack(note: Double, velocity: Double, secondsFromNow: Double): Unit = js.native
+  def noteAttack(note: Double, velocity: Unit, secondsFromNow: Double): Unit = js.native
+  def noteAttack(note: Unit, velocity: Double): Unit = js.native
+  def noteAttack(note: Unit, velocity: Double, secondsFromNow: Double): Unit = js.native
+  def noteAttack(note: Unit, velocity: Unit, secondsFromNow: Double): Unit = js.native
+  
   /**
     *   Trigger the Release of an AudioVoice note. This is
     *   similar to releasing the key on a piano and
@@ -103,6 +125,19 @@ trait PolySynth extends js.Object {
   def noteRelease(): Unit = js.native
   def noteRelease(note: Double): Unit = js.native
   def noteRelease(note: Double, secondsFromNow: Double): Unit = js.native
+  def noteRelease(note: Unit, secondsFromNow: Double): Unit = js.native
+  
+  /**
+    *   An object that holds information about which notes
+    *   have been played and which notes are currently
+    *   being played. New notes are added as keys on the
+    *   fly. While a note has been attacked, but not
+    *   released, the value of the key is the audiovoice
+    *   which is generating that note. When notes are
+    *   released, the value of the key becomes undefined.
+    */
+  var notes: Any = js.native
+  
   /**
     *   Play a note by triggering noteAttack and
     *   noteRelease with sustain time
@@ -120,6 +155,24 @@ trait PolySynth extends js.Object {
   def play(note: Double, velocity: Double): Unit = js.native
   def play(note: Double, velocity: Double, secondsFromNow: Double): Unit = js.native
   def play(note: Double, velocity: Double, secondsFromNow: Double, sustainTime: Double): Unit = js.native
+  def play(note: Double, velocity: Double, secondsFromNow: Unit, sustainTime: Double): Unit = js.native
+  def play(note: Double, velocity: Unit, secondsFromNow: Double): Unit = js.native
+  def play(note: Double, velocity: Unit, secondsFromNow: Double, sustainTime: Double): Unit = js.native
+  def play(note: Double, velocity: Unit, secondsFromNow: Unit, sustainTime: Double): Unit = js.native
+  def play(note: Unit, velocity: Double): Unit = js.native
+  def play(note: Unit, velocity: Double, secondsFromNow: Double): Unit = js.native
+  def play(note: Unit, velocity: Double, secondsFromNow: Double, sustainTime: Double): Unit = js.native
+  def play(note: Unit, velocity: Double, secondsFromNow: Unit, sustainTime: Double): Unit = js.native
+  def play(note: Unit, velocity: Unit, secondsFromNow: Double): Unit = js.native
+  def play(note: Unit, velocity: Unit, secondsFromNow: Double, sustainTime: Double): Unit = js.native
+  def play(note: Unit, velocity: Unit, secondsFromNow: Unit, sustainTime: Double): Unit = js.native
+  
+  /**
+    *   A PolySynth must have at least 1 voice, defaults
+    *   to 8
+    */
+  var polyvalue: Any = js.native
+  
   /**
     *   Set the PolySynths global envelope. This method
     *   modifies the envelopes of each monosynth so that
@@ -146,5 +199,15 @@ trait PolySynth extends js.Object {
   def setADSR(attackTime: Double, decayTime: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Double, susRatio: Unit, releaseTime: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Unit, susRatio: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Unit, susRatio: Double, releaseTime: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Unit, susRatio: Unit, releaseTime: Double): Unit = js.native
+  def setADSR(attackTime: Unit, decayTime: Double): Unit = js.native
+  def setADSR(attackTime: Unit, decayTime: Double, susRatio: Double): Unit = js.native
+  def setADSR(attackTime: Unit, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
+  def setADSR(attackTime: Unit, decayTime: Double, susRatio: Unit, releaseTime: Double): Unit = js.native
+  def setADSR(attackTime: Unit, decayTime: Unit, susRatio: Double): Unit = js.native
+  def setADSR(attackTime: Unit, decayTime: Unit, susRatio: Double, releaseTime: Double): Unit = js.native
+  def setADSR(attackTime: Unit, decayTime: Unit, susRatio: Unit, releaseTime: Double): Unit = js.native
 }
-

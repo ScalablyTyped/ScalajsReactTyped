@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileManagerBreadcrumb extends js.Object {
+trait FileManagerBreadcrumb extends StObject {
+  
   var delimiterIcon: js.UndefOr[String] = js.undefined
+  
   var rootIcon: js.UndefOr[String] = js.undefined
 }
-
 object FileManagerBreadcrumb {
-  @scala.inline
-  def apply(delimiterIcon: String = null, rootIcon: String = null): FileManagerBreadcrumb = {
+  
+  inline def apply(): FileManagerBreadcrumb = {
     val __obj = js.Dynamic.literal()
-    if (delimiterIcon != null) __obj.updateDynamic("delimiterIcon")(delimiterIcon.asInstanceOf[js.Any])
-    if (rootIcon != null) __obj.updateDynamic("rootIcon")(rootIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileManagerBreadcrumb]
   }
+  
+  extension [Self <: FileManagerBreadcrumb](x: Self) {
+    
+    inline def setDelimiterIcon(value: String): Self = StObject.set(x, "delimiterIcon", value.asInstanceOf[js.Any])
+    
+    inline def setDelimiterIconUndefined: Self = StObject.set(x, "delimiterIcon", js.undefined)
+    
+    inline def setRootIcon(value: String): Self = StObject.set(x, "rootIcon", value.asInstanceOf[js.Any])
+    
+    inline def setRootIconUndefined: Self = StObject.set(x, "rootIcon", js.undefined)
+  }
 }
-

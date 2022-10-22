@@ -1,49 +1,64 @@
 package typingsJapgolly.wordpressCompose
 
+import japgolly.scalajs.react.facade.React.ComponentClassP
+import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.FC
+import typingsJapgolly.wordpressCompose.anon.kinkeyofWindowEventMapstr
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/compose", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@wordpress/compose", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   // tslint:disable:no-unnecessary-generics
   // prettier-ignore
-  def createHigherOrderComponent[EP](
-    mapComponentToEnhancedComponent: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ _
-    ],
+  inline def createHigherOrderComponent[EP](
+    mapComponentToEnhancedComponent: js.Function1[/* component */ ComponentType[Any], ComponentType[Any]],
     modifierName: String
   ): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
-    _
-  ] = js.native
-  def ifCondition[P](predicate: js.Function1[/* props */ P, Boolean]): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<P> */ /* component */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FC<P> */ _
-  ] = js.native
+    /* component */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer OP> ? react.react.ComponentType<std.Omit<OP, keyof EP>> : never */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createHigherOrderComponent")(mapComponentToEnhancedComponent.asInstanceOf[js.Any], modifierName.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer OP> ? react.react.ComponentType<std.Omit<OP, keyof EP>> : never */ js.Any
+  ]]
+  
+  inline def ifCondition[P](predicate: js.Function1[/* props */ P, Boolean]): js.Function1[/* component */ ComponentType[P], FC[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifCondition")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], FC[P]]]
+  
   // prettier-ignore
-  def pure[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ js.Any */](component: T): js.Any = js.native
-  def useMediaQuery(query: String): Boolean = js.native
-  def useReducedMotion(): Boolean = js.native
+  inline def pure[T /* <: ComponentType[Any] */](component: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pure")(component.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any]
+  
+  inline def useMediaQuery(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def useReducedMotion(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useReducedMotion")().asInstanceOf[Boolean]
+  
   // prettier-ignore
-  def withGlobalEvents(eventMapper: kinkeyofWindowEventMapstr): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentClass<any> */ /* component */ js.Any, 
-    _
-  ] = js.native
+  inline def withGlobalEvents(eventMapper: kinkeyofWindowEventMapstr): js.Function1[
+    /* component */ ComponentClassP[Any & js.Object], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentClass<any, react.react.ComponentState> extends react.react.ComponentClass<infer U, react.react.ComponentState> ? react.react.ComponentType<U> : never */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withGlobalEvents")(eventMapper.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentClassP[Any & js.Object], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentClass<any, react.react.ComponentState> extends react.react.ComponentClass<infer U, react.react.ComponentState> ? react.react.ComponentType<U> : never */ js.Any
+  ]]
+  
   // prettier-ignore
-  def withInstanceId[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ js.Any */](wrapped: T): js.Any = js.native
+  inline def withInstanceId[T /* <: ComponentType[Any] */](wrapped: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'instanceId'>> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withInstanceId")(wrapped.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'instanceId'>> : never */ js.Any]
+  
   // prettier-ignore
-  def withSafeTimeout[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ js.Any */](component: T): js.Any = js.native
+  inline def withSafeTimeout[T /* <: ComponentType[Any] */](component: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'setTimeout'>> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withSafeTimeout")(component.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'setTimeout'>> : never */ js.Any]
+  
   // prettier-ignore
-  def withState[SP /* <: js.Object */](
-    initialState: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in keyof SP ]: SP[k]}
-    */ typingsJapgolly.wordpressCompose.wordpressComposeStrings.withState with SP
+  inline def withState[SP /* <: js.Object */](
+    initialState: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof SP ]: SP[k]} */ js.Any
   ): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
-    _
-  ] = js.native
+    /* component */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer U> ? react.react.ComponentClass<std.Omit<U, keyof SP | 'setState'>, SP> : never */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer U> ? react.react.ComponentClass<std.Omit<U, keyof SP | 'setState'>, SP> : never */ js.Any
+  ]]
 }
-

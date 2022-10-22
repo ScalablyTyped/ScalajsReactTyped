@@ -1,23 +1,30 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimeZoneBase extends js.Object {
+trait TimeZoneBase extends StObject {
+  
   /**
     * The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized
     * Time Zone' for a custom time zone.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object TimeZoneBase {
-  @scala.inline
-  def apply(name: String = null): TimeZoneBase = {
+  
+  inline def apply(): TimeZoneBase = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeZoneBase]
   }
+  
+  extension [Self <: TimeZoneBase](x: Self) {
+    
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

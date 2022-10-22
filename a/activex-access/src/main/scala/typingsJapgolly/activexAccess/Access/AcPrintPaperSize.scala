@@ -1,183 +1,179 @@
 package typingsJapgolly.activexAccess.Access
 
-import typingsJapgolly.activexAccess.activexAccessNumbers.`10`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`11`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`12`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`13`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`14`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`15`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`16`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`17`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`18`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`19`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`1`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`20`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`21`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`22`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`23`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`24`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`256`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`25`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`26`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`27`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`28`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`29`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`2`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`30`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`31`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`32`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`33`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`34`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`35`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`36`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`37`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`38`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`39`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`3`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`40`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`41`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`4`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`5`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`6`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`7`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`8`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`9`
+import typingsJapgolly.activexAccess.activexAccessInts.`10`
+import typingsJapgolly.activexAccess.activexAccessInts.`11`
+import typingsJapgolly.activexAccess.activexAccessInts.`12`
+import typingsJapgolly.activexAccess.activexAccessInts.`13`
+import typingsJapgolly.activexAccess.activexAccessInts.`14`
+import typingsJapgolly.activexAccess.activexAccessInts.`15`
+import typingsJapgolly.activexAccess.activexAccessInts.`16`
+import typingsJapgolly.activexAccess.activexAccessInts.`17`
+import typingsJapgolly.activexAccess.activexAccessInts.`18`
+import typingsJapgolly.activexAccess.activexAccessInts.`19`
+import typingsJapgolly.activexAccess.activexAccessInts.`1`
+import typingsJapgolly.activexAccess.activexAccessInts.`20`
+import typingsJapgolly.activexAccess.activexAccessInts.`21`
+import typingsJapgolly.activexAccess.activexAccessInts.`22`
+import typingsJapgolly.activexAccess.activexAccessInts.`23`
+import typingsJapgolly.activexAccess.activexAccessInts.`24`
+import typingsJapgolly.activexAccess.activexAccessInts.`256`
+import typingsJapgolly.activexAccess.activexAccessInts.`25`
+import typingsJapgolly.activexAccess.activexAccessInts.`26`
+import typingsJapgolly.activexAccess.activexAccessInts.`27`
+import typingsJapgolly.activexAccess.activexAccessInts.`28`
+import typingsJapgolly.activexAccess.activexAccessInts.`29`
+import typingsJapgolly.activexAccess.activexAccessInts.`2`
+import typingsJapgolly.activexAccess.activexAccessInts.`30`
+import typingsJapgolly.activexAccess.activexAccessInts.`31`
+import typingsJapgolly.activexAccess.activexAccessInts.`32`
+import typingsJapgolly.activexAccess.activexAccessInts.`33`
+import typingsJapgolly.activexAccess.activexAccessInts.`34`
+import typingsJapgolly.activexAccess.activexAccessInts.`35`
+import typingsJapgolly.activexAccess.activexAccessInts.`36`
+import typingsJapgolly.activexAccess.activexAccessInts.`37`
+import typingsJapgolly.activexAccess.activexAccessInts.`38`
+import typingsJapgolly.activexAccess.activexAccessInts.`39`
+import typingsJapgolly.activexAccess.activexAccessInts.`3`
+import typingsJapgolly.activexAccess.activexAccessInts.`40`
+import typingsJapgolly.activexAccess.activexAccessInts.`41`
+import typingsJapgolly.activexAccess.activexAccessInts.`4`
+import typingsJapgolly.activexAccess.activexAccessInts.`5`
+import typingsJapgolly.activexAccess.activexAccessInts.`6`
+import typingsJapgolly.activexAccess.activexAccessInts.`7`
+import typingsJapgolly.activexAccess.activexAccessInts.`8`
+import typingsJapgolly.activexAccess.activexAccessInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`16`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`17`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`8`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`9`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`10`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`11`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`12`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`13`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`24`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`25`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`20`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`21`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`22`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`23`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`19`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`33`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`34`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`35`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`29`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`30`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`28`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`31`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`32`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`27`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`36`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`37`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`38`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`26`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`7`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`41`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`40`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`39`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`14`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`4`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`5`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`1`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`2`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`18`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`15`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`6`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`3`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`256`
+  - typingsJapgolly.activexAccess.activexAccessInts.`16`
+  - typingsJapgolly.activexAccess.activexAccessInts.`17`
+  - typingsJapgolly.activexAccess.activexAccessInts.`8`
+  - typingsJapgolly.activexAccess.activexAccessInts.`9`
+  - typingsJapgolly.activexAccess.activexAccessInts.`10`
+  - typingsJapgolly.activexAccess.activexAccessInts.`11`
+  - typingsJapgolly.activexAccess.activexAccessInts.`12`
+  - typingsJapgolly.activexAccess.activexAccessInts.`13`
+  - typingsJapgolly.activexAccess.activexAccessInts.`24`
+  - typingsJapgolly.activexAccess.activexAccessInts.`25`
+  - typingsJapgolly.activexAccess.activexAccessInts.`20`
+  - typingsJapgolly.activexAccess.activexAccessInts.`21`
+  - typingsJapgolly.activexAccess.activexAccessInts.`22`
+  - typingsJapgolly.activexAccess.activexAccessInts.`23`
+  - typingsJapgolly.activexAccess.activexAccessInts.`19`
+  - typingsJapgolly.activexAccess.activexAccessInts.`33`
+  - typingsJapgolly.activexAccess.activexAccessInts.`34`
+  - typingsJapgolly.activexAccess.activexAccessInts.`35`
+  - typingsJapgolly.activexAccess.activexAccessInts.`29`
+  - typingsJapgolly.activexAccess.activexAccessInts.`30`
+  - typingsJapgolly.activexAccess.activexAccessInts.`28`
+  - typingsJapgolly.activexAccess.activexAccessInts.`31`
+  - typingsJapgolly.activexAccess.activexAccessInts.`32`
+  - typingsJapgolly.activexAccess.activexAccessInts.`27`
+  - typingsJapgolly.activexAccess.activexAccessInts.`36`
+  - typingsJapgolly.activexAccess.activexAccessInts.`37`
+  - typingsJapgolly.activexAccess.activexAccessInts.`38`
+  - typingsJapgolly.activexAccess.activexAccessInts.`26`
+  - typingsJapgolly.activexAccess.activexAccessInts.`7`
+  - typingsJapgolly.activexAccess.activexAccessInts.`41`
+  - typingsJapgolly.activexAccess.activexAccessInts.`40`
+  - typingsJapgolly.activexAccess.activexAccessInts.`39`
+  - typingsJapgolly.activexAccess.activexAccessInts.`14`
+  - typingsJapgolly.activexAccess.activexAccessInts.`4`
+  - typingsJapgolly.activexAccess.activexAccessInts.`5`
+  - typingsJapgolly.activexAccess.activexAccessInts.`1`
+  - typingsJapgolly.activexAccess.activexAccessInts.`2`
+  - typingsJapgolly.activexAccess.activexAccessInts.`18`
+  - typingsJapgolly.activexAccess.activexAccessInts.`15`
+  - typingsJapgolly.activexAccess.activexAccessInts.`6`
+  - typingsJapgolly.activexAccess.activexAccessInts.`3`
+  - typingsJapgolly.activexAccess.activexAccessInts.`256`
 */
-trait AcPrintPaperSize extends js.Object
-
+trait AcPrintPaperSize extends StObject
 object AcPrintPaperSize {
-  @scala.inline
-  def acPRPS10x14: `16` = this.cast(16)
-  @scala.inline
-  def acPRPS11x17: `17` = this.cast(17)
-  @scala.inline
-  def acPRPSA3: `8` = this.cast(8)
-  @scala.inline
-  def acPRPSA4: `9` = this.cast(9)
-  @scala.inline
-  def acPRPSA4Small: `10` = this.cast(10)
-  @scala.inline
-  def acPRPSA5: `11` = this.cast(11)
-  @scala.inline
-  def acPRPSB4: `12` = this.cast(12)
-  @scala.inline
-  def acPRPSB5: `13` = this.cast(13)
-  @scala.inline
-  def acPRPSCSheet: `24` = this.cast(24)
-  @scala.inline
-  def acPRPSDSheet: `25` = this.cast(25)
-  @scala.inline
-  def acPRPSESheet: `26` = this.cast(26)
-  @scala.inline
-  def acPRPSEnv10: `20` = this.cast(20)
-  @scala.inline
-  def acPRPSEnv11: `21` = this.cast(21)
-  @scala.inline
-  def acPRPSEnv12: `22` = this.cast(22)
-  @scala.inline
-  def acPRPSEnv14: `23` = this.cast(23)
-  @scala.inline
-  def acPRPSEnv9: `19` = this.cast(19)
-  @scala.inline
-  def acPRPSEnvB4: `33` = this.cast(33)
-  @scala.inline
-  def acPRPSEnvB5: `34` = this.cast(34)
-  @scala.inline
-  def acPRPSEnvB6: `35` = this.cast(35)
-  @scala.inline
-  def acPRPSEnvC3: `29` = this.cast(29)
-  @scala.inline
-  def acPRPSEnvC4: `30` = this.cast(30)
-  @scala.inline
-  def acPRPSEnvC5: `28` = this.cast(28)
-  @scala.inline
-  def acPRPSEnvC6: `31` = this.cast(31)
-  @scala.inline
-  def acPRPSEnvC65: `32` = this.cast(32)
-  @scala.inline
-  def acPRPSEnvDL: `27` = this.cast(27)
-  @scala.inline
-  def acPRPSEnvItaly: `36` = this.cast(36)
-  @scala.inline
-  def acPRPSEnvMonarch: `37` = this.cast(37)
-  @scala.inline
-  def acPRPSEnvPersonal: `38` = this.cast(38)
-  @scala.inline
-  def acPRPSExecutive: `7` = this.cast(7)
-  @scala.inline
-  def acPRPSFanfoldLglGerman: `41` = this.cast(41)
-  @scala.inline
-  def acPRPSFanfoldStdGerman: `40` = this.cast(40)
-  @scala.inline
-  def acPRPSFanfoldUS: `39` = this.cast(39)
-  @scala.inline
-  def acPRPSFolio: `14` = this.cast(14)
-  @scala.inline
-  def acPRPSLedger: `4` = this.cast(4)
-  @scala.inline
-  def acPRPSLegal: `5` = this.cast(5)
-  @scala.inline
-  def acPRPSLetter: `1` = this.cast(1)
-  @scala.inline
-  def acPRPSLetterSmall: `2` = this.cast(2)
-  @scala.inline
-  def acPRPSNote: `18` = this.cast(18)
-  @scala.inline
-  def acPRPSQuarto: `15` = this.cast(15)
-  @scala.inline
-  def acPRPSStatement: `6` = this.cast(6)
-  @scala.inline
-  def acPRPSTabloid: `3` = this.cast(3)
-  @scala.inline
-  def acPRPSUser: `256` = this.cast(256)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def acPRPS10x14: `16` = 16.asInstanceOf[`16`]
+  
+  inline def acPRPS11x17: `17` = 17.asInstanceOf[`17`]
+  
+  inline def acPRPSA3: `8` = 8.asInstanceOf[`8`]
+  
+  inline def acPRPSA4: `9` = 9.asInstanceOf[`9`]
+  
+  inline def acPRPSA4Small: `10` = 10.asInstanceOf[`10`]
+  
+  inline def acPRPSA5: `11` = 11.asInstanceOf[`11`]
+  
+  inline def acPRPSB4: `12` = 12.asInstanceOf[`12`]
+  
+  inline def acPRPSB5: `13` = 13.asInstanceOf[`13`]
+  
+  inline def acPRPSCSheet: `24` = 24.asInstanceOf[`24`]
+  
+  inline def acPRPSDSheet: `25` = 25.asInstanceOf[`25`]
+  
+  inline def acPRPSESheet: `26` = 26.asInstanceOf[`26`]
+  
+  inline def acPRPSEnv10: `20` = 20.asInstanceOf[`20`]
+  
+  inline def acPRPSEnv11: `21` = 21.asInstanceOf[`21`]
+  
+  inline def acPRPSEnv12: `22` = 22.asInstanceOf[`22`]
+  
+  inline def acPRPSEnv14: `23` = 23.asInstanceOf[`23`]
+  
+  inline def acPRPSEnv9: `19` = 19.asInstanceOf[`19`]
+  
+  inline def acPRPSEnvB4: `33` = 33.asInstanceOf[`33`]
+  
+  inline def acPRPSEnvB5: `34` = 34.asInstanceOf[`34`]
+  
+  inline def acPRPSEnvB6: `35` = 35.asInstanceOf[`35`]
+  
+  inline def acPRPSEnvC3: `29` = 29.asInstanceOf[`29`]
+  
+  inline def acPRPSEnvC4: `30` = 30.asInstanceOf[`30`]
+  
+  inline def acPRPSEnvC5: `28` = 28.asInstanceOf[`28`]
+  
+  inline def acPRPSEnvC6: `31` = 31.asInstanceOf[`31`]
+  
+  inline def acPRPSEnvC65: `32` = 32.asInstanceOf[`32`]
+  
+  inline def acPRPSEnvDL: `27` = 27.asInstanceOf[`27`]
+  
+  inline def acPRPSEnvItaly: `36` = 36.asInstanceOf[`36`]
+  
+  inline def acPRPSEnvMonarch: `37` = 37.asInstanceOf[`37`]
+  
+  inline def acPRPSEnvPersonal: `38` = 38.asInstanceOf[`38`]
+  
+  inline def acPRPSExecutive: `7` = 7.asInstanceOf[`7`]
+  
+  inline def acPRPSFanfoldLglGerman: `41` = 41.asInstanceOf[`41`]
+  
+  inline def acPRPSFanfoldStdGerman: `40` = 40.asInstanceOf[`40`]
+  
+  inline def acPRPSFanfoldUS: `39` = 39.asInstanceOf[`39`]
+  
+  inline def acPRPSFolio: `14` = 14.asInstanceOf[`14`]
+  
+  inline def acPRPSLedger: `4` = 4.asInstanceOf[`4`]
+  
+  inline def acPRPSLegal: `5` = 5.asInstanceOf[`5`]
+  
+  inline def acPRPSLetter: `1` = 1.asInstanceOf[`1`]
+  
+  inline def acPRPSLetterSmall: `2` = 2.asInstanceOf[`2`]
+  
+  inline def acPRPSNote: `18` = 18.asInstanceOf[`18`]
+  
+  inline def acPRPSQuarto: `15` = 15.asInstanceOf[`15`]
+  
+  inline def acPRPSStatement: `6` = 6.asInstanceOf[`6`]
+  
+  inline def acPRPSTabloid: `3` = 3.asInstanceOf[`3`]
+  
+  inline def acPRPSUser: `256` = 256.asInstanceOf[`256`]
 }
-

@@ -1,32 +1,29 @@
 package typingsJapgolly.winrt.Windows.Networking.NetworkOperators
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.winrt.Windows.Networking.Connectivity.NetworkAdapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandNetwork")
-@js.native
-class MobileBroadbandNetwork () extends IMobileBroadbandNetwork {
-  /* CompleteClass */
-  override var accessPointName: String = js.native
-  /* CompleteClass */
-  override var activationNetworkError: Double = js.native
-  /* CompleteClass */
-  override var networkAdapter: NetworkAdapter = js.native
-  /* CompleteClass */
-  override var networkRegistrationState: NetworkRegistrationState = js.native
-  /* CompleteClass */
-  override var packetAttachNetworkError: Double = js.native
-  /* CompleteClass */
-  override var registeredDataClass: DataClasses = js.native
-  /* CompleteClass */
-  override var registeredProviderId: String = js.native
-  /* CompleteClass */
-  override var registeredProviderName: String = js.native
-  /* CompleteClass */
-  override var registrationNetworkError: Double = js.native
-  /* CompleteClass */
-  override def showConnectionUI(): Unit = js.native
+trait MobileBroadbandNetwork
+  extends StObject
+     with IMobileBroadbandNetwork
+object MobileBroadbandNetwork {
+  
+  inline def apply(
+    accessPointName: String,
+    activationNetworkError: Double,
+    networkAdapter: NetworkAdapter,
+    networkRegistrationState: NetworkRegistrationState,
+    packetAttachNetworkError: Double,
+    registeredDataClass: DataClasses,
+    registeredProviderId: String,
+    registeredProviderName: String,
+    registrationNetworkError: Double,
+    showConnectionUI: Callback
+  ): MobileBroadbandNetwork = {
+    val __obj = js.Dynamic.literal(accessPointName = accessPointName.asInstanceOf[js.Any], activationNetworkError = activationNetworkError.asInstanceOf[js.Any], networkAdapter = networkAdapter.asInstanceOf[js.Any], networkRegistrationState = networkRegistrationState.asInstanceOf[js.Any], packetAttachNetworkError = packetAttachNetworkError.asInstanceOf[js.Any], registeredDataClass = registeredDataClass.asInstanceOf[js.Any], registeredProviderId = registeredProviderId.asInstanceOf[js.Any], registeredProviderName = registeredProviderName.asInstanceOf[js.Any], registrationNetworkError = registrationNetworkError.asInstanceOf[js.Any], showConnectionUI = showConnectionUI.toJsFn)
+    __obj.asInstanceOf[MobileBroadbandNetwork]
+  }
 }
-

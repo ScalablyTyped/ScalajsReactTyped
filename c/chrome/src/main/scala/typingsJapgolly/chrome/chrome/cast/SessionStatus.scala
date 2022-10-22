@@ -1,35 +1,27 @@
 package typingsJapgolly.chrome.chrome.cast
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SessionStatus extends js.Object
-
+sealed trait SessionStatus extends StObject
 @JSGlobal("chrome.cast.SessionStatus")
 @js.native
-object SessionStatus extends js.Object {
-  @js.native
-  sealed trait CONNECTED extends SessionStatus
+object SessionStatus extends StObject {
   
   @js.native
-  sealed trait DISCONNECTED extends SessionStatus
+  sealed trait CONNECTED
+    extends StObject
+       with SessionStatus
   
   @js.native
-  sealed trait STOPPED extends SessionStatus
+  sealed trait DISCONNECTED
+    extends StObject
+       with SessionStatus
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SessionStatus with String] = js.native
-  /* "connected" */ @js.native
-  object CONNECTED extends TopLevel[CONNECTED with String]
-  
-  /* "disconnected" */ @js.native
-  object DISCONNECTED extends TopLevel[DISCONNECTED with String]
-  
-  /* "stopped" */ @js.native
-  object STOPPED extends TopLevel[STOPPED with String]
-  
+  @js.native
+  sealed trait STOPPED
+    extends StObject
+       with SessionStatus
 }
-

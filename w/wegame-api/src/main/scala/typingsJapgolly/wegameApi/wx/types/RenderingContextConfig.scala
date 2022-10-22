@@ -1,36 +1,45 @@
 package typingsJapgolly.wegameApi.wx.types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenderingContextConfig extends js.Object {
+trait RenderingContextConfig extends StObject {
+  
   /**
     * 表示是否抗锯齿
     */
   var antialias: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * 抗锯齿样本数。最小值为 2，最大不超过系统限制数量，仅 iOS 支持
     */
   var antialiasSamples: js.UndefOr[Double] = js.undefined
+  
   /**
     * 表示是否绘图完成后是否保留绘图缓冲区
     */
   var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
 }
-
 object RenderingContextConfig {
-  @scala.inline
-  def apply(
-    antialias: js.UndefOr[Boolean] = js.undefined,
-    antialiasSamples: Int | Double = null,
-    preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
-  ): RenderingContextConfig = {
+  
+  inline def apply(): RenderingContextConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.asInstanceOf[js.Any])
-    if (antialiasSamples != null) __obj.updateDynamic("antialiasSamples")(antialiasSamples.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderingContextConfig]
   }
+  
+  extension [Self <: RenderingContextConfig](x: Self) {
+    
+    inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
+    
+    inline def setAntialiasSamples(value: Double): Self = StObject.set(x, "antialiasSamples", value.asInstanceOf[js.Any])
+    
+    inline def setAntialiasSamplesUndefined: Self = StObject.set(x, "antialiasSamples", js.undefined)
+    
+    inline def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
+    
+    inline def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
+  }
 }
-

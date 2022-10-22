@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__compiler
 
-Typings are for version 8.2.14
+Typings are for version 14.2.6
 
 ## Library description:
 Angular - the compiler library
@@ -10,10 +10,10 @@ Angular - the compiler library
 | ------------------ | :-------------: |
 | Full name          | @angular/compiler |
 | Keywords           | - |
-| # releases         | 180 |
-| # dependents       | 6382 |
-| # downloads        | 58980429 |
-| # stars            | 9 |
+| # releases         | 220 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2445961333333334E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/angular/angular#readme)

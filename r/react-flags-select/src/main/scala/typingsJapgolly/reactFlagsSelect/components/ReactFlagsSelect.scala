@@ -1,65 +1,54 @@
 package typingsJapgolly.reactFlagsSelect.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactFlagsSelect.mod.Props
 import typingsJapgolly.reactFlagsSelect.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactFlagsSelect {
-  def apply(
-    alignOptions: String = null,
-    blackList: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    countries: js.Array[String] = null,
-    customLabels: StringDictionary[String] = null,
-    defaultCountry: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    onSelect: /* countryCode */ String => Callback = null,
-    optionsSize: Int | Double = null,
-    placeholder: String = null,
-    searchable: js.UndefOr[Boolean] = js.undefined,
-    selectedSize: Int | Double = null,
-    showOptionLabel: js.UndefOr[Boolean] = js.undefined,
-    showSelectedLabel: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, default, Unit, Props] = {
-    val __obj = js.Dynamic.literal()
   
-      if (alignOptions != null) __obj.updateDynamic("alignOptions")(alignOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(blackList)) __obj.updateDynamic("blackList")(blackList.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
-    if (customLabels != null) __obj.updateDynamic("customLabels")(customLabels.asInstanceOf[js.Any])
-    if (defaultCountry != null) __obj.updateDynamic("defaultCountry")(defaultCountry.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* countryCode */ java.lang.String) => onSelect(t0).runNow()))
-    if (optionsSize != null) __obj.updateDynamic("optionsSize")(optionsSize.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable.asInstanceOf[js.Any])
-    if (selectedSize != null) __obj.updateDynamic("selectedSize")(selectedSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOptionLabel)) __obj.updateDynamic("showOptionLabel")(showOptionLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSelectedLabel)) __obj.updateDynamic("showSelectedLabel")(showSelectedLabel.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactFlagsSelect.mod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactFlagsSelect.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactFlagsSelect.mod.Props])(children: _*)
-  }
   @JSImport("react-flags-select", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def alignOptions(value: String): this.type = set("alignOptions", value.asInstanceOf[js.Any])
+    
+    inline def blackList(value: Boolean): this.type = set("blackList", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def countries(value: js.Array[String]): this.type = set("countries", value.asInstanceOf[js.Any])
+    
+    inline def countriesVarargs(value: String*): this.type = set("countries", js.Array(value*))
+    
+    inline def defaultCountry(value: String): this.type = set("defaultCountry", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def onSelect(value: /* countryCode */ String => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: /* countryCode */ String) => value(t0).runNow()))
+    
+    inline def optionsSize(value: Double): this.type = set("optionsSize", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def searchable(value: Boolean): this.type = set("searchable", value.asInstanceOf[js.Any])
+    
+    inline def selectedSize(value: Double): this.type = set("selectedSize", value.asInstanceOf[js.Any])
+    
+    inline def showOptionLabel(value: Boolean): this.type = set("showOptionLabel", value.asInstanceOf[js.Any])
+    
+    inline def showSelectedLabel(value: Boolean): this.type = set("showSelectedLabel", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactFlagsSelect.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

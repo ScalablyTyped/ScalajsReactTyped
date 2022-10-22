@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.allpass
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.notch
   - typingsJapgolly.std.stdStrings.peaking
 */
-trait BiquadFilterType extends js.Object
-
+trait BiquadFilterType extends StObject
 object BiquadFilterType {
-  @scala.inline
-  def allpass: typingsJapgolly.std.stdStrings.allpass = this.cast("allpass")
-  @scala.inline
-  def bandpass: typingsJapgolly.std.stdStrings.bandpass = this.cast("bandpass")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def highpass: typingsJapgolly.std.stdStrings.highpass = this.cast("highpass")
-  @scala.inline
-  def highshelf: typingsJapgolly.std.stdStrings.highshelf = this.cast("highshelf")
-  @scala.inline
-  def lowpass: typingsJapgolly.std.stdStrings.lowpass = this.cast("lowpass")
-  @scala.inline
-  def lowshelf: typingsJapgolly.std.stdStrings.lowshelf = this.cast("lowshelf")
-  @scala.inline
-  def notch: typingsJapgolly.std.stdStrings.notch = this.cast("notch")
-  @scala.inline
-  def peaking: typingsJapgolly.std.stdStrings.peaking = this.cast("peaking")
+  
+  inline def allpass: typingsJapgolly.std.stdStrings.allpass = "allpass".asInstanceOf[typingsJapgolly.std.stdStrings.allpass]
+  
+  inline def bandpass: typingsJapgolly.std.stdStrings.bandpass = "bandpass".asInstanceOf[typingsJapgolly.std.stdStrings.bandpass]
+  
+  inline def highpass: typingsJapgolly.std.stdStrings.highpass = "highpass".asInstanceOf[typingsJapgolly.std.stdStrings.highpass]
+  
+  inline def highshelf: typingsJapgolly.std.stdStrings.highshelf = "highshelf".asInstanceOf[typingsJapgolly.std.stdStrings.highshelf]
+  
+  inline def lowpass: typingsJapgolly.std.stdStrings.lowpass = "lowpass".asInstanceOf[typingsJapgolly.std.stdStrings.lowpass]
+  
+  inline def lowshelf: typingsJapgolly.std.stdStrings.lowshelf = "lowshelf".asInstanceOf[typingsJapgolly.std.stdStrings.lowshelf]
+  
+  inline def notch: typingsJapgolly.std.stdStrings.notch = "notch".asInstanceOf[typingsJapgolly.std.stdStrings.notch]
+  
+  inline def peaking: typingsJapgolly.std.stdStrings.peaking = "peaking".asInstanceOf[typingsJapgolly.std.stdStrings.peaking]
 }
-

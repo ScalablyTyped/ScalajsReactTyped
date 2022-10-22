@@ -1,25 +1,55 @@
 package typingsJapgolly.ol
 
-import org.scalajs.dom.raw.HTMLCanvasElement
-import org.scalajs.dom.raw.WebGLRenderingContext
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/webgl", JSImport.Namespace)
-@js.native
-object webglMod extends js.Object {
+object webglMod {
+  
+  @JSImport("ol/webgl", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("ol/webgl", "ARRAY_BUFFER")
+  @js.native
   val ARRAY_BUFFER: Double = js.native
+  
+  @JSImport("ol/webgl", "DYNAMIC_DRAW")
+  @js.native
   val DYNAMIC_DRAW: Double = js.native
+  
+  @JSImport("ol/webgl", "ELEMENT_ARRAY_BUFFER")
+  @js.native
   val ELEMENT_ARRAY_BUFFER: Double = js.native
+  
+  @JSImport("ol/webgl", "FLOAT")
+  @js.native
   val FLOAT: Double = js.native
+  
+  @JSImport("ol/webgl", "STATIC_DRAW")
+  @js.native
   val STATIC_DRAW: Double = js.native
+  
+  @JSImport("ol/webgl", "STREAM_DRAW")
+  @js.native
   val STREAM_DRAW: Double = js.native
+  
+  @JSImport("ol/webgl", "UNSIGNED_BYTE")
+  @js.native
   val UNSIGNED_BYTE: Double = js.native
+  
+  @JSImport("ol/webgl", "UNSIGNED_INT")
+  @js.native
   val UNSIGNED_INT: Double = js.native
+  
+  @JSImport("ol/webgl", "UNSIGNED_SHORT")
+  @js.native
   val UNSIGNED_SHORT: Double = js.native
-  def getContext(canvas: HTMLCanvasElement): WebGLRenderingContext = js.native
-  def getContext(canvas: HTMLCanvasElement, opt_attributes: js.Any): WebGLRenderingContext = js.native
-  def getSupportedExtensions(): js.Array[String] = js.native
+  
+  inline def getContext(canvas: HTMLCanvasElement): WebGLRenderingContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(canvas.asInstanceOf[js.Any]).asInstanceOf[WebGLRenderingContext]
+  inline def getContext(canvas: HTMLCanvasElement, opt_attributes: Any): WebGLRenderingContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(canvas.asInstanceOf[js.Any], opt_attributes.asInstanceOf[js.Any])).asInstanceOf[WebGLRenderingContext]
+  
+  inline def getSupportedExtensions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedExtensions")().asInstanceOf[js.Array[String]]
 }
-

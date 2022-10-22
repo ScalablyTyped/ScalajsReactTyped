@@ -1,60 +1,49 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BluetoothLEAdvertisementFlags extends js.Object
-
+sealed trait BluetoothLEAdvertisementFlags extends StObject
 /** Specifies flags used to match flags contained inside a Bluetooth LE advertisement payload. */
 @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags")
 @js.native
-object BluetoothLEAdvertisementFlags extends js.Object {
+object BluetoothLEAdvertisementFlags extends StObject {
+  
   /** Bluetooth BR/EDR not supported. */
   @js.native
-  sealed trait classicNotSupported extends BluetoothLEAdvertisementFlags
+  sealed trait classicNotSupported
+    extends StObject
+       with BluetoothLEAdvertisementFlags
   
   /** Simultaneous Bluetooth LE and BR/EDR to same device capable (controller). */
   @js.native
-  sealed trait dualModeControllerCapable extends BluetoothLEAdvertisementFlags
+  sealed trait dualModeControllerCapable
+    extends StObject
+       with BluetoothLEAdvertisementFlags
   
   /** Simultaneous Bluetooth LE and BR/EDR to same device capable (host) */
   @js.native
-  sealed trait dualModeHostCapable extends BluetoothLEAdvertisementFlags
+  sealed trait dualModeHostCapable
+    extends StObject
+       with BluetoothLEAdvertisementFlags
   
   /** Bluetooth LE General Discoverable Mode. */
   @js.native
-  sealed trait generalDiscoverableMode extends BluetoothLEAdvertisementFlags
+  sealed trait generalDiscoverableMode
+    extends StObject
+       with BluetoothLEAdvertisementFlags
   
   /** Bluetooth LE Limited Discoverable Mode. */
   @js.native
-  sealed trait limitedDiscoverableMode extends BluetoothLEAdvertisementFlags
+  sealed trait limitedDiscoverableMode
+    extends StObject
+       with BluetoothLEAdvertisementFlags
   
   /** None */
   @js.native
-  sealed trait none extends BluetoothLEAdvertisementFlags
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BluetoothLEAdvertisementFlags with Double] = js.native
-  /* 3 */ @js.native
-  object classicNotSupported extends TopLevel[classicNotSupported with Double]
-  
-  /* 4 */ @js.native
-  object dualModeControllerCapable extends TopLevel[dualModeControllerCapable with Double]
-  
-  /* 5 */ @js.native
-  object dualModeHostCapable extends TopLevel[dualModeHostCapable with Double]
-  
-  /* 2 */ @js.native
-  object generalDiscoverableMode extends TopLevel[generalDiscoverableMode with Double]
-  
-  /* 1 */ @js.native
-  object limitedDiscoverableMode extends TopLevel[limitedDiscoverableMode with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  sealed trait none
+    extends StObject
+       with BluetoothLEAdvertisementFlags
 }
-

@@ -1,86 +1,76 @@
 package typingsJapgolly.officeJs.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RangeLocation extends js.Object
-
+sealed trait RangeLocation extends StObject
 /**
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.RangeLocation")
 @js.native
-object RangeLocation extends js.Object {
+object RangeLocation extends StObject {
+  
   /**
-    *
     * The point after the object. If the object is a paragraph content control or table content control, it is the point after the EOP or Table characters.
-    *
+    * @remarks
+    * [Api set: WordApi 1.3]
     */
   @js.native
-  sealed trait after extends RangeLocation
+  sealed trait after
+    extends StObject
+       with RangeLocation
   
   /**
-    *
     * For content control only. It is the point before the opening tag.
-    *
+    * @remarks
+    * [Api set: WordApi 1.3]
     */
   @js.native
-  sealed trait before extends RangeLocation
+  sealed trait before
+    extends StObject
+       with RangeLocation
   
   /**
-    *
     * The range between 'Start' and 'End'.
-    *
+    * @remarks
+    * [Api set: WordApi 1.3]
     */
   @js.native
-  sealed trait content extends RangeLocation
+  sealed trait content
+    extends StObject
+       with RangeLocation
   
   /**
-    *
     * The ending point of the object. For paragraph, it is the point before the EOP. For content control, it is the point before the closing tag.
-    *
+    * @remarks
+    * [Api set: WordApi 1.3]
     */
   @js.native
-  sealed trait end extends RangeLocation
+  sealed trait end
+    extends StObject
+       with RangeLocation
   
   /**
-    *
     * The starting point of the object. For content control, it is the point after the opening tag.
-    *
+    * @remarks
+    * [Api set: WordApi 1.3]
     */
   @js.native
-  sealed trait start extends RangeLocation
+  sealed trait start
+    extends StObject
+       with RangeLocation
   
   /**
-    *
     * The object's whole range. If the object is a paragraph content control or table content control, the EOP or Table characters after the content control are also included.
-    *
+    * @remarks
+    * [Api set: WordApi 1.3]
     */
   @js.native
-  sealed trait whole extends RangeLocation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[RangeLocation with String] = js.native
-  /* "After" */ @js.native
-  object after extends TopLevel[after with String]
-  
-  /* "Before" */ @js.native
-  object before extends TopLevel[before with String]
-  
-  /* "Content" */ @js.native
-  object content extends TopLevel[content with String]
-  
-  /* "End" */ @js.native
-  object end extends TopLevel[end with String]
-  
-  /* "Start" */ @js.native
-  object start extends TopLevel[start with String]
-  
-  /* "Whole" */ @js.native
-  object whole extends TopLevel[whole with String]
-  
+  sealed trait whole
+    extends StObject
+       with RangeLocation
 }
-

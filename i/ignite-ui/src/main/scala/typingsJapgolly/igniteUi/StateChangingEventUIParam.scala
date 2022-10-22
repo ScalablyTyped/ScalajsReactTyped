@@ -1,48 +1,63 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StateChangingEventUIParam extends js.Object {
+trait StateChangingEventUIParam extends StObject {
+  
   /**
-  	 * Gets the name of the action. That can be one of the following: "open" - request to open the dialog. "close" - request to close the dialog. "minimize" - request to minimize the dialog. "maximize" - request to maximize the dialog. "restore" - request to restore the dialog from minimized or maximized state. "pin" - request to pin the dialog. "unpin" - request to unpin the dialog.
-  	 */
+    * Gets the name of the action. That can be one of the following: "open" - request to open the dialog. "close" - request to close the dialog. "minimize" - request to minimize the dialog. "maximize" - request to maximize the dialog. "restore" - request to restore the dialog from minimized or maximized state. "pin" - request to pin the dialog. "unpin" - request to unpin the dialog.
+    */
   var action: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the name of the button, which triggered the event. Note: if the state was modified from the code, then "button" is undefined.
-  	 */
+    * Gets the name of the button, which triggered the event. Note: if the state was modified from the code, then "button" is undefined.
+    */
   var button: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the boolean value of the old pin state of the dialog.
-  	 */
+    * Gets the boolean value of the old pin state of the dialog.
+    */
   var oldPinned: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets the old state of the dialog, which can be one of the following: "opened", "minimized", "maximized", "closed".
-  	 */
+    * Gets the old state of the dialog, which can be one of the following: "opened", "minimized", "maximized", "closed".
+    */
   var oldState: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the igDialog widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the igDialog widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object StateChangingEventUIParam {
-  @scala.inline
-  def apply(
-    action: String = null,
-    button: String = null,
-    oldPinned: js.UndefOr[Boolean] = js.undefined,
-    oldState: String = null,
-    owner: js.Any = null
-  ): StateChangingEventUIParam = {
+  
+  inline def apply(): StateChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (!js.isUndefined(oldPinned)) __obj.updateDynamic("oldPinned")(oldPinned.asInstanceOf[js.Any])
-    if (oldState != null) __obj.updateDynamic("oldState")(oldState.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateChangingEventUIParam]
   }
+  
+  extension [Self <: StateChangingEventUIParam](x: Self) {
+    
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    
+    inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    
+    inline def setOldPinned(value: Boolean): Self = StObject.set(x, "oldPinned", value.asInstanceOf[js.Any])
+    
+    inline def setOldPinnedUndefined: Self = StObject.set(x, "oldPinned", js.undefined)
+    
+    inline def setOldState(value: String): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
+    
+    inline def setOldStateUndefined: Self = StObject.set(x, "oldState", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

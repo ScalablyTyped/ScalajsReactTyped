@@ -1,101 +1,124 @@
 package typingsJapgolly.blueprintjsTable.mod
 
-import typingsJapgolly.blueprintjsTable.AnonCol
-import typingsJapgolly.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
-import typingsJapgolly.blueprintjsTable.esmRegionsMod.ICellCoordinate
-import typingsJapgolly.blueprintjsTable.esmRegionsMod.IRegion
-import typingsJapgolly.blueprintjsTable.esmRegionsMod.IStyledRegionGroup
+import typingsJapgolly.blueprintjsTable.anon.Col
+import typingsJapgolly.blueprintjsTable.libEsmCommonCellTypesMod.FocusedCellCoordinates
+import typingsJapgolly.blueprintjsTable.libEsmRegionsMod.CellCoordinate
+import typingsJapgolly.blueprintjsTable.libEsmRegionsMod.IRegion
+import typingsJapgolly.blueprintjsTable.libEsmRegionsMod.IStyledRegionGroup
+import typingsJapgolly.blueprintjsTable.libEsmRegionsMod.NonNullRegion
+import typingsJapgolly.blueprintjsTable.libEsmRegionsMod.Region
+import typingsJapgolly.blueprintjsTable.libEsmRegionsMod.StyledRegionGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/table", "Regions")
 @js.native
-class Regions ()
-  extends typingsJapgolly.blueprintjsTable.esmRegionsMod.Regions
-
+open class Regions ()
+  extends typingsJapgolly.blueprintjsTable.libEsmRegionsMod.Regions
 /* static members */
-@JSImport("@blueprintjs/table", "Regions")
-@js.native
-object Regions extends js.Object {
-  /**
-    * Iterates over the cells within an `IRegion`, invoking the callback with
-    * each cell's coordinates.
-    */
-  var eachCellInRegion: js.Any = js.native
-  var intervalContains: js.Any = js.native
-  var intervalContainsIndex: js.Any = js.native
-  var intervalOverlaps: js.Any = js.native
-  var intervalsEqual: js.Any = js.native
-  var normalizeInterval: js.Any = js.native
-  var numericalComparator: js.Any = js.native
-  var regionContains: js.Any = js.native
-  var rowFirstComparator: js.Any = js.native
+object Regions {
+  
+  @JSImport("@blueprintjs/table", "Regions")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Adds the region to the end of a cloned copy of the supplied region
     * array.
     */
-  def add(regions: js.Array[IRegion], region: IRegion): js.Array[IRegion] = js.native
+  inline def add(regions: js.Array[Region], region: Region): js.Array[IRegion] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRegion]]
+  
   /**
     * Returns a region containing one or more cells.
     */
-  def cell(row: Double, col: Double): IRegion = js.native
-  def cell(row: Double, col: Double, row2: Double): IRegion = js.native
-  def cell(row: Double, col: Double, row2: Double, col2: Double): IRegion = js.native
+  inline def cell(row: Double, col: Double): NonNullRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[NonNullRegion]
+  inline def cell(row: Double, col: Double, row2: Double): NonNullRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], row2.asInstanceOf[js.Any])).asInstanceOf[NonNullRegion]
+  inline def cell(row: Double, col: Double, row2: Double, col2: Double): NonNullRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], row2.asInstanceOf[js.Any], col2.asInstanceOf[js.Any])).asInstanceOf[NonNullRegion]
+  inline def cell(row: Double, col: Double, row2: Unit, col2: Double): NonNullRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], row2.asInstanceOf[js.Any], col2.asInstanceOf[js.Any])).asInstanceOf[NonNullRegion]
+  
   /**
     * Clamps the region's start and end indices between 0 and the provided
     * maximum values.
     */
-  def clampRegion(region: IRegion, maxRowIndex: Double, maxColumnIndex: Double): IRegion = js.native
+  inline def clampRegion(region: Region, maxRowIndex: Double, maxColumnIndex: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("clampRegion")(region.asInstanceOf[js.Any], maxRowIndex.asInstanceOf[js.Any], maxColumnIndex.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+  
   /**
     * Returns a region containing one or more full columns.
     */
-  def column(col: Double): IRegion = js.native
-  def column(col: Double, col2: Double): IRegion = js.native
+  inline def column(col: Double): Region = ^.asInstanceOf[js.Dynamic].applyDynamic("column")(col.asInstanceOf[js.Any]).asInstanceOf[Region]
+  inline def column(col: Double, col2: Double): Region = (^.asInstanceOf[js.Dynamic].applyDynamic("column")(col.asInstanceOf[js.Any], col2.asInstanceOf[js.Any])).asInstanceOf[Region]
+  
   /**
     * Returns true if the regions fully contain the query region.
     */
-  def containsRegion(regions: js.Array[IRegion], query: IRegion): Boolean = js.native
+  inline def containsRegion(regions: js.Array[Region], query: Region): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsRegion")(regions.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   /**
     * Returns a deep copy of the provided region.
     */
-  def copy(region: IRegion): IRegion = js.native
-  def eachUniqueFullColumn(regions: js.Array[IRegion], iteratee: js.Function1[/* col */ Double, Unit]): Unit = js.native
-  def eachUniqueFullRow(regions: js.Array[IRegion], iteratee: js.Function1[/* row */ Double, Unit]): Unit = js.native
+  inline def copy(region: Region): Region = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(region.asInstanceOf[js.Any]).asInstanceOf[Region]
+  
   /**
-    * Using the supplied array of non-contiguous `IRegion`s, this method
+    * Iterates over the cells within an `Region`, invoking the callback with
+    * each cell's coordinates.
+    */
+  @JSImport("@blueprintjs/table", "Regions.eachCellInRegion")
+  @js.native
+  def eachCellInRegion: Any = js.native
+  inline def eachCellInRegion_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eachCellInRegion")(x.asInstanceOf[js.Any])
+  
+  inline def eachUniqueFullColumn(regions: js.Array[Region], iteratee: js.Function1[/* col */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachUniqueFullColumn")(regions.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def eachUniqueFullRow(regions: js.Array[Region], iteratee: js.Function1[/* row */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachUniqueFullRow")(regions.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Using the supplied array of non-contiguous `Region`s, this method
     * returns an ordered array of every unique cell that exists in those
     * regions.
     */
-  def enumerateUniqueCells(regions: js.Array[IRegion], numRows: Double, numCols: Double): js.Array[ICellCoordinate] = js.native
+  inline def enumerateUniqueCells(regions: js.Array[Region], numRows: Double, numCols: Double): js.Array[CellCoordinate] = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerateUniqueCells")(regions.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[js.Array[CellCoordinate]]
+  inline def enumerateUniqueCells(regions: Null, numRows: Double, numCols: Double): js.Array[CellCoordinate] = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerateUniqueCells")(regions.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[js.Array[CellCoordinate]]
+  inline def enumerateUniqueCells(regions: Unit, numRows: Double, numCols: Double): js.Array[CellCoordinate] = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerateUniqueCells")(regions.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[js.Array[CellCoordinate]]
+  
   /**
     * Expands an old region to the minimal bounding region that also contains
     * the new region. If the regions have different cardinalities, then the new
     * region is returned. Useful for expanding a selected region on
     * shift+click, for instance.
     */
-  def expandRegion(oldRegion: IRegion, newRegion: IRegion): IRegion = js.native
+  inline def expandRegion(oldRegion: Region, newRegion: Region): Region = (^.asInstanceOf[js.Dynamic].applyDynamic("expandRegion")(oldRegion.asInstanceOf[js.Any], newRegion.asInstanceOf[js.Any])).asInstanceOf[Region]
+  
   /**
     * Returns the index of the region that wholly contains the supplied
     * parameter. Returns -1 if no such region is found.
     */
-  def findContainingRegion(regions: js.Array[IRegion], region: IRegion): Double = js.native
+  inline def findContainingRegion(regions: js.Array[Region], region: Region): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findContainingRegion")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def findContainingRegion(regions: Null, region: Region): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findContainingRegion")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def findContainingRegion(regions: Unit, region: Region): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findContainingRegion")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   /**
     * Returns the index of the region that is equal to the supplied
     * parameter. Returns -1 if no such region is found.
     */
-  def findMatchingRegion(regions: js.Array[IRegion], region: IRegion): Double = js.native
+  inline def findMatchingRegion(regions: js.Array[Region], region: Region): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatchingRegion")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def findMatchingRegion(regions: Null, region: Region): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatchingRegion")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def findMatchingRegion(regions: Unit, region: Region): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatchingRegion")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   /**
-    * Returns the smallest single contiguous `IRegion` that contains all cells in the
+    * Returns the smallest single contiguous `Region` that contains all cells in the
     * supplied array.
     */
-  def getBoundingRegion(cells: js.Array[ICellCoordinate]): IRegion = js.native
+  inline def getBoundingRegion(cells: js.Array[CellCoordinate]): js.UndefOr[NonNullRegion] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoundingRegion")(cells.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NonNullRegion]]
+  
   /**
     * Using the supplied region, returns an "equivalent" region of
     * type CELLS that define the bounds of the given region
     */
-  def getCellRegionFromRegion(region: IRegion, numRows: Double, numCols: Double): IRegion = js.native
-  def getFocusCellCoordinatesFromRegion(region: IRegion): AnonCol = js.native
+  inline def getCellRegionFromRegion(region: Region, numRows: Double, numCols: Double): NonNullRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellRegionFromRegion")(region.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[NonNullRegion]
+  
+  inline def getFocusCellCoordinatesFromRegion(region: Region): Col = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusCellCoordinatesFromRegion")(region.asInstanceOf[js.Any]).asInstanceOf[Col]
+  
   /**
     * Determines the cardinality of a region. We use null values to indicate
     * an unbounded interval. Therefore, an example of a region containing the
@@ -124,63 +147,127 @@ object Regions extends js.Object {
     *
     * In this case, this method would return `RegionCardinality.CELLS`.
     */
-  def getRegionCardinality(region: IRegion): typingsJapgolly.blueprintjsTable.esmRegionsMod.RegionCardinality = js.native
+  inline def getRegionCardinality(region: Region): typingsJapgolly.blueprintjsTable.libEsmRegionsMod.RegionCardinality = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegionCardinality")(region.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.blueprintjsTable.libEsmRegionsMod.RegionCardinality]
+  
   /**
     * Returns true if the regions contain a region that has FULL_COLUMNS
     * cardinality and contains the specified column index.
     */
-  def hasFullColumn(regions: js.Array[IRegion], col: Double): Boolean = js.native
+  inline def hasFullColumn(regions: js.Array[Region], col: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasFullColumn")(regions.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasFullColumn(regions: Null, col: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasFullColumn")(regions.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasFullColumn(regions: Unit, col: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasFullColumn")(regions.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   /**
     * Returns true if the regions contain a region that has FULL_ROWS
     * cardinality and contains the specified row index.
     */
-  def hasFullRow(regions: js.Array[IRegion], row: Double): Boolean = js.native
+  inline def hasFullRow(regions: js.Array[Region], row: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasFullRow")(regions.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasFullRow(regions: Null, row: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasFullRow")(regions.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasFullRow(regions: Unit, row: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasFullRow")(regions.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   /**
     * Returns true if the regions contain a region that has FULL_TABLE cardinality
     */
-  def hasFullTable(regions: js.Array[IRegion]): Boolean = js.native
-  def isRegionValidForTable(region: IRegion, numRows: Double, numCols: Double): Boolean = js.native
-  def isValid(region: IRegion): Boolean = js.native
-  def joinStyledRegionGroups(
-    selectedRegions: js.Array[IRegion],
-    otherRegions: js.Array[IStyledRegionGroup],
-    focusedCell: IFocusedCellCoordinates
-  ): js.Array[IStyledRegionGroup] = js.native
+  inline def hasFullTable(regions: js.Array[Region]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasFullTable")(regions.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @JSImport("@blueprintjs/table", "Regions.intervalContains")
+  @js.native
+  def intervalContains: Any = js.native
+  
+  @JSImport("@blueprintjs/table", "Regions.intervalContainsIndex")
+  @js.native
+  def intervalContainsIndex: Any = js.native
+  inline def intervalContainsIndex_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intervalContainsIndex")(x.asInstanceOf[js.Any])
+  
+  inline def intervalContains_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intervalContains")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/table", "Regions.intervalOverlaps")
+  @js.native
+  def intervalOverlaps: Any = js.native
+  inline def intervalOverlaps_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intervalOverlaps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/table", "Regions.intervalsEqual")
+  @js.native
+  def intervalsEqual: Any = js.native
+  inline def intervalsEqual_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intervalsEqual")(x.asInstanceOf[js.Any])
+  
+  inline def isRegionValidForTable(region: Region, numRows: Double, numCols: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRegionValidForTable")(region.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isValid(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")().asInstanceOf[Boolean]
+  inline def isValid(region: Region): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(region.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def joinStyledRegionGroups(selectedRegions: js.Array[Region], otherRegions: js.Array[StyledRegionGroup]): js.Array[IStyledRegionGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinStyledRegionGroups")(selectedRegions.asInstanceOf[js.Any], otherRegions.asInstanceOf[js.Any])).asInstanceOf[js.Array[IStyledRegionGroup]]
+  inline def joinStyledRegionGroups(
+    selectedRegions: js.Array[Region],
+    otherRegions: js.Array[StyledRegionGroup],
+    focusedCell: FocusedCellCoordinates
+  ): js.Array[IStyledRegionGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinStyledRegionGroups")(selectedRegions.asInstanceOf[js.Any], otherRegions.asInstanceOf[js.Any], focusedCell.asInstanceOf[js.Any])).asInstanceOf[js.Array[IStyledRegionGroup]]
+  
   /**
     * Returns true iff the specified region is equal to the last region in
     * the region list. This allows us to avoid immediate additive re-selection.
     */
-  def lastRegionIsEqual(regions: js.Array[IRegion], region: IRegion): Boolean = js.native
+  inline def lastRegionIsEqual(regions: js.Array[Region], region: Region): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lastRegionIsEqual")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def lastRegionIsEqual(regions: Null, region: Region): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lastRegionIsEqual")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def lastRegionIsEqual(regions: Unit, region: Region): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lastRegionIsEqual")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("@blueprintjs/table", "Regions.normalizeInterval")
+  @js.native
+  def normalizeInterval: Any = js.native
+  inline def normalizeInterval_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalizeInterval")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/table", "Regions.numericalComparator")
+  @js.native
+  def numericalComparator: Any = js.native
+  inline def numericalComparator_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("numericalComparator")(x.asInstanceOf[js.Any])
+  
   /**
     * Returns true if the regions at least partially overlap the query region.
     */
-  def overlapsRegion(regions: js.Array[IRegion], query: IRegion): Boolean = js.native
-  def overlapsRegion(regions: js.Array[IRegion], query: IRegion, allowPartialOverlap: Boolean): Boolean = js.native
-  def regionsEqual(regionA: IRegion, regionB: IRegion): Boolean = js.native
+  inline def overlapsRegion(regions: js.Array[Region], query: Region): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("overlapsRegion")(regions.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def overlapsRegion(regions: js.Array[Region], query: Region, allowPartialOverlap: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("overlapsRegion")(regions.asInstanceOf[js.Any], query.asInstanceOf[js.Any], allowPartialOverlap.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("@blueprintjs/table", "Regions.regionContains")
+  @js.native
+  def regionContains: Any = js.native
+  inline def regionContains_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regionContains")(x.asInstanceOf[js.Any])
+  
+  inline def regionsEqual(regionA: Region, regionB: Region): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("regionsEqual")(regionA.asInstanceOf[js.Any], regionB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   /**
     * Returns a region containing one or more full rows.
     */
-  def row(row: Double): IRegion = js.native
-  def row(row: Double, row2: Double): IRegion = js.native
+  inline def row(row: Double): Region = ^.asInstanceOf[js.Dynamic].applyDynamic("row")(row.asInstanceOf[js.Any]).asInstanceOf[Region]
+  inline def row(row: Double, row2: Double): Region = (^.asInstanceOf[js.Dynamic].applyDynamic("row")(row.asInstanceOf[js.Any], row2.asInstanceOf[js.Any])).asInstanceOf[Region]
+  
+  @JSImport("@blueprintjs/table", "Regions.rowFirstComparator")
+  @js.native
+  def rowFirstComparator: Any = js.native
+  inline def rowFirstComparator_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rowFirstComparator")(x.asInstanceOf[js.Any])
+  
   /**
     * Maps a dense array of cell coordinates to a sparse 2-dimensional array
     * of cell values.
     *
     * We create a new 2-dimensional array representing the smallest single
-    * contiguous `IRegion` that contains all cells in the supplied array. We
+    * contiguous `Region` that contains all cells in the supplied array. We
     * invoke the mapper callback only on the cells in the supplied coordinate
     * array and store the result. Returns the resulting 2-dimensional array.
+    *
+    * If there is no contiguous `Region` which contains all the cells, we
+    * return `undefined`.
     */
-  def sparseMapCells[T](cells: js.Array[ICellCoordinate], mapper: js.Function2[/* row */ Double, /* col */ Double, T]): js.Array[js.Array[T]] = js.native
+  inline def sparseMapCells[T](cells: js.Array[CellCoordinate], mapper: js.Function2[/* row */ Double, /* col */ Double, T]): js.UndefOr[js.Array[js.Array[T]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseMapCells")(cells.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[js.Array[T]]]]
+  
   /**
     * Returns a region containing the entire table.
     */
-  def table(): IRegion = js.native
+  inline def table(): Region = ^.asInstanceOf[js.Dynamic].applyDynamic("table")().asInstanceOf[Region]
+  
   /**
     * Replaces the region at the end of a cloned copy of the supplied region
     * array, or at the specific index if one is provided.
     */
-  def update(regions: js.Array[IRegion], region: IRegion): js.Array[IRegion] = js.native
-  def update(regions: js.Array[IRegion], region: IRegion, index: Double): js.Array[IRegion] = js.native
+  inline def update(regions: js.Array[Region], region: Region): js.Array[IRegion] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRegion]]
+  inline def update(regions: js.Array[Region], region: Region, index: Double): js.Array[IRegion] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRegion]]
 }
-

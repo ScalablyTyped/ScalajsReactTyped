@@ -1,27 +1,34 @@
 package typingsJapgolly.handlebars.hbs.AST
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContentStatement extends Node {
+trait ContentStatement
+  extends StObject
+     with Node {
+  
   var original: StripFlags
+  
   @JSName("type")
   var type_ContentStatement: typingsJapgolly.handlebars.handlebarsStrings.ContentStatement
+  
   var value: String
 }
-
 object ContentStatement {
-  @scala.inline
-  def apply(
-    loc: SourceLocation,
-    original: StripFlags,
-    `type`: typingsJapgolly.handlebars.handlebarsStrings.ContentStatement,
-    value: String
-  ): ContentStatement = {
+  
+  inline def apply(loc: SourceLocation, original: StripFlags, value: String): ContentStatement = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ContentStatement")
     __obj.asInstanceOf[ContentStatement]
   }
+  
+  extension [Self <: ContentStatement](x: Self) {
+    
+    inline def setOriginal(value: StripFlags): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.handlebars.handlebarsStrings.ContentStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

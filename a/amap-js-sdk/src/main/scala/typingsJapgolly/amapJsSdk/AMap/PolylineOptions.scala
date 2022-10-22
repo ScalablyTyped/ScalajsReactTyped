@@ -1,54 +1,94 @@
 package typingsJapgolly.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PolylineOptions extends js.Object {
-  var extData: js.UndefOr[js.Any] = js.undefined
+trait PolylineOptions extends StObject {
+  
+  var extData: js.UndefOr[Any] = js.undefined
+  
   var geodesic: js.UndefOr[Boolean] = js.undefined
+  
   var isOutline: js.UndefOr[Boolean] = js.undefined
+  
   var map: js.UndefOr[Map] = js.undefined
+  
   var outlineColor: js.UndefOr[String] = js.undefined
+  
   var path: js.UndefOr[js.Array[LngLat]] = js.undefined
+  
   var strokeColor: js.UndefOr[String] = js.undefined
+  
   var strokeDasharray: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var strokeOpacity: js.UndefOr[Double] = js.undefined
+  
   var strokeStyle: js.UndefOr[String] = js.undefined
+  
   var strokeWeight: js.UndefOr[Double] = js.undefined
+  
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object PolylineOptions {
-  @scala.inline
-  def apply(
-    extData: js.Any = null,
-    geodesic: js.UndefOr[Boolean] = js.undefined,
-    isOutline: js.UndefOr[Boolean] = js.undefined,
-    map: Map = null,
-    outlineColor: String = null,
-    path: js.Array[LngLat] = null,
-    strokeColor: String = null,
-    strokeDasharray: js.Array[Double] = null,
-    strokeOpacity: Int | Double = null,
-    strokeStyle: String = null,
-    strokeWeight: Int | Double = null,
-    zIndex: Int | Double = null
-  ): PolylineOptions = {
+  
+  inline def apply(): PolylineOptions = {
     val __obj = js.Dynamic.literal()
-    if (extData != null) __obj.updateDynamic("extData")(extData.asInstanceOf[js.Any])
-    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOutline)) __obj.updateDynamic("isOutline")(isOutline.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
-    if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolylineOptions]
   }
+  
+  extension [Self <: PolylineOptions](x: Self) {
+    
+    inline def setExtData(value: Any): Self = StObject.set(x, "extData", value.asInstanceOf[js.Any])
+    
+    inline def setExtDataUndefined: Self = StObject.set(x, "extData", js.undefined)
+    
+    inline def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
+    
+    inline def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
+    
+    inline def setIsOutline(value: Boolean): Self = StObject.set(x, "isOutline", value.asInstanceOf[js.Any])
+    
+    inline def setIsOutlineUndefined: Self = StObject.set(x, "isOutline", js.undefined)
+    
+    inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    
+    inline def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+    
+    inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
+    
+    inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value*))
+    
+    inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+    
+    inline def setStrokeDasharray(value: js.Array[Double]): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
+    
+    inline def setStrokeDasharrayVarargs(value: Double*): Self = StObject.set(x, "strokeDasharray", js.Array(value*))
+    
+    inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+    
+    inline def setStrokeStyle(value: String): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
+    
+    inline def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWeightUndefined: Self = StObject.set(x, "strokeWeight", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

@@ -1,31 +1,38 @@
 package typingsJapgolly.three.mod
 
+import typingsJapgolly.three.srcAnimationPropertyBindingMod.ParseTrackNameResults
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "PropertyBinding")
 @js.native
-class PropertyBinding protected ()
-  extends typingsJapgolly.three.propertyBindingMod.PropertyBinding {
-  def this(rootNode: js.Any, path: String) = this()
-  def this(rootNode: js.Any, path: String, parsedPath: js.Any) = this()
+open class PropertyBinding protected ()
+  extends typingsJapgolly.three.srcThreeMod.PropertyBinding {
+  def this(rootNode: Any, path: String) = this()
+  def this(rootNode: Any, path: String, parsedPath: Any) = this()
 }
-
 /* static members */
-@JSImport("three", "PropertyBinding")
-@js.native
-object PropertyBinding extends js.Object {
+object PropertyBinding {
+  
+  @JSImport("three", "PropertyBinding")
   @js.native
-  class Composite protected ()
-    extends typingsJapgolly.three.propertyBindingMod.PropertyBinding.Composite {
-    def this(targetGroup: js.Any, path: js.Any) = this()
-    def this(targetGroup: js.Any, path: js.Any, parsedPath: js.Any) = this()
+  val ^ : js.Any = js.native
+  
+  @JSImport("three", "PropertyBinding.Composite")
+  @js.native
+  open class Composite protected ()
+    extends typingsJapgolly.three.srcThreeMod.PropertyBinding.Composite {
+    def this(targetGroup: Any, path: Any) = this()
+    def this(targetGroup: Any, path: Any, parsedPath: Any) = this()
   }
   
-  def create(root: js.Any, path: js.Any): typingsJapgolly.three.propertyBindingMod.PropertyBinding | typingsJapgolly.three.propertyBindingMod.PropertyBinding.Composite = js.native
-  def create(root: js.Any, path: js.Any, parsedPath: js.Any): typingsJapgolly.three.propertyBindingMod.PropertyBinding | typingsJapgolly.three.propertyBindingMod.PropertyBinding.Composite = js.native
-  def findNode(root: js.Any, nodeName: String): js.Any = js.native
-  def parseTrackName(trackName: String): js.Any = js.native
+  inline def create(root: Any, path: Any): typingsJapgolly.three.srcAnimationPropertyBindingMod.PropertyBinding | typingsJapgolly.three.srcAnimationPropertyBindingMod.PropertyBinding.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.three.srcAnimationPropertyBindingMod.PropertyBinding | typingsJapgolly.three.srcAnimationPropertyBindingMod.PropertyBinding.Composite]
+  inline def create(root: Any, path: Any, parsedPath: Any): typingsJapgolly.three.srcAnimationPropertyBindingMod.PropertyBinding | typingsJapgolly.three.srcAnimationPropertyBindingMod.PropertyBinding.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any], parsedPath.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.three.srcAnimationPropertyBindingMod.PropertyBinding | typingsJapgolly.three.srcAnimationPropertyBindingMod.PropertyBinding.Composite]
+  
+  inline def findNode(root: Any, nodeName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findNode")(root.asInstanceOf[js.Any], nodeName.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def parseTrackName(trackName: String): ParseTrackNameResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTrackName")(trackName.asInstanceOf[js.Any]).asInstanceOf[ParseTrackNameResults]
+  
+  inline def sanitizeNodeName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeNodeName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

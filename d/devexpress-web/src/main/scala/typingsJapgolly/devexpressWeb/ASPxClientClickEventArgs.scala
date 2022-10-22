@@ -1,83 +1,112 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientPivotGrid.CellClick and ASPxClientPivotGrid.CellDblClick client events.
   */
-@JSGlobal("ASPxClientClickEventArgs")
-@js.native
-class ASPxClientClickEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientClickEventArgs class.
-    * @param value An object that represents the processed cell's value. This value is assigned to the ASPxClientClickEventArgs.Value property.
-    * @param columnIndex An integer value that identifies a column. This value is assigned to the ASPxClientClickEventArgs.ColumnIndex property.
-    * @param rowIndex An integer value that identifies a row. This value is assigned to the ASPxClientClickEventArgs.RowIndex property.
-    * @param columnValue An object that represents a column field value. This value is assigned to the ASPxClientClickEventArgs.ColumnValue property.
-    * @param rowValue An object that represents a row field value. This value is assigned to the ASPxClientClickEventArgs.RowValue property.
-    * @param columnFieldName A String value that represents a column field name. This value is assigned to the ASPxClientClickEventArgs.ColumnFieldName property.
-    * @param rowFieldName A String value that represents a row field name. This value is assigned to the ASPxClientClickEventArgs.RowFieldName property.
-    * @param columnValueType A String value that represents a column value type. This value is assigned to the ASPxClientClickEventArgs.ColumnValueType property.
-    * @param rowValueType A String value that represents a row value type. This value is assigned to the ASPxClientClickEventArgs.RowValueType property.
-    * @param dataIndex An integer value that identifies the data field by its index. This value is assigned to the ASPxClientClickEventArgs.DataIndex property.
-    */
-  def this(
-    value: js.Any,
-    columnIndex: Double,
-    rowIndex: Double,
-    columnValue: js.Any,
-    rowValue: js.Any,
-    columnFieldName: String,
-    rowFieldName: String,
-    columnValueType: String,
-    rowValueType: String,
-    dataIndex: Double
-  ) = this()
+trait ASPxClientClickEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets a column field name.
     */
-  var ColumnFieldName: String = js.native
+  var ColumnFieldName: String
+  
   /**
     * Gets the index of a column that owns the processed cell.
     */
-  var ColumnIndex: Double = js.native
+  var ColumnIndex: Double
+  
   /**
     * Gets a column field value.
     */
-  var ColumnValue: js.Any = js.native
+  var ColumnValue: Any
+  
   /**
     * Gets a column value type.
     */
-  var ColumnValueType: String = js.native
+  var ColumnValueType: String
+  
   /**
     * Gets the index of the data field which corresponds to the clicked summary value.
     */
-  var DataIndex: Double = js.native
+  var DataIndex: Double
+  
   /**
     * Provides access to the parameters associated with the ASPxClientPivotGrid.CellClick and ASPxClientPivotGrid.CellDblClick events.
     */
-  var HtmlEvent: js.Any = js.native
+  var HtmlEvent: Any
+  
   /**
     * Gets a row field name.
     */
-  var RowFieldName: String = js.native
+  var RowFieldName: String
+  
   /**
     * Gets the index of a row that owns the processed cell.
     */
-  var RowIndex: Double = js.native
+  var RowIndex: Double
+  
   /**
     * Gets a row field value.
     */
-  var RowValue: js.Any = js.native
+  var RowValue: Any
+  
   /**
     * Gets a row value type.
     */
-  var RowValueType: String = js.native
+  var RowValueType: String
+  
   /**
     * Gets the processed cell's value.
     */
-  var Value: js.Any = js.native
+  var Value: Any
 }
-
+object ASPxClientClickEventArgs {
+  
+  inline def apply(
+    ColumnFieldName: String,
+    ColumnIndex: Double,
+    ColumnValue: Any,
+    ColumnValueType: String,
+    DataIndex: Double,
+    HtmlEvent: Any,
+    RowFieldName: String,
+    RowIndex: Double,
+    RowValue: Any,
+    RowValueType: String,
+    Value: Any
+  ): ASPxClientClickEventArgs = {
+    val __obj = js.Dynamic.literal(ColumnFieldName = ColumnFieldName.asInstanceOf[js.Any], ColumnIndex = ColumnIndex.asInstanceOf[js.Any], ColumnValue = ColumnValue.asInstanceOf[js.Any], ColumnValueType = ColumnValueType.asInstanceOf[js.Any], DataIndex = DataIndex.asInstanceOf[js.Any], HtmlEvent = HtmlEvent.asInstanceOf[js.Any], RowFieldName = RowFieldName.asInstanceOf[js.Any], RowIndex = RowIndex.asInstanceOf[js.Any], RowValue = RowValue.asInstanceOf[js.Any], RowValueType = RowValueType.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientClickEventArgs]
+  }
+  
+  extension [Self <: ASPxClientClickEventArgs](x: Self) {
+    
+    inline def setColumnFieldName(value: String): Self = StObject.set(x, "ColumnFieldName", value.asInstanceOf[js.Any])
+    
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "ColumnIndex", value.asInstanceOf[js.Any])
+    
+    inline def setColumnValue(value: Any): Self = StObject.set(x, "ColumnValue", value.asInstanceOf[js.Any])
+    
+    inline def setColumnValueType(value: String): Self = StObject.set(x, "ColumnValueType", value.asInstanceOf[js.Any])
+    
+    inline def setDataIndex(value: Double): Self = StObject.set(x, "DataIndex", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "HtmlEvent", value.asInstanceOf[js.Any])
+    
+    inline def setRowFieldName(value: String): Self = StObject.set(x, "RowFieldName", value.asInstanceOf[js.Any])
+    
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "RowIndex", value.asInstanceOf[js.Any])
+    
+    inline def setRowValue(value: Any): Self = StObject.set(x, "RowValue", value.asInstanceOf[js.Any])
+    
+    inline def setRowValueType(value: String): Self = StObject.set(x, "RowValueType", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,32 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DaylightTimeZoneOffset extends StandardTimeZoneOffset {
+trait DaylightTimeZoneOffset
+  extends StObject
+     with StandardTimeZoneOffset {
+  
   // The time offset from Coordinated Universal Time (UTC) for daylight saving time. This value is in minutes.
-  var daylightBias: js.UndefOr[Double] = js.undefined
+  var daylightBias: js.UndefOr[NullableOption[Double]] = js.undefined
 }
-
 object DaylightTimeZoneOffset {
-  @scala.inline
-  def apply(
-    dayOccurrence: Int | Double = null,
-    dayOfWeek: DayOfWeek = null,
-    daylightBias: Int | Double = null,
-    month: Int | Double = null,
-    time: String = null,
-    year: Int | Double = null
-  ): DaylightTimeZoneOffset = {
+  
+  inline def apply(): DaylightTimeZoneOffset = {
     val __obj = js.Dynamic.literal()
-    if (dayOccurrence != null) __obj.updateDynamic("dayOccurrence")(dayOccurrence.asInstanceOf[js.Any])
-    if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
-    if (daylightBias != null) __obj.updateDynamic("daylightBias")(daylightBias.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
     __obj.asInstanceOf[DaylightTimeZoneOffset]
   }
+  
+  extension [Self <: DaylightTimeZoneOffset](x: Self) {
+    
+    inline def setDaylightBias(value: NullableOption[Double]): Self = StObject.set(x, "daylightBias", value.asInstanceOf[js.Any])
+    
+    inline def setDaylightBiasNull: Self = StObject.set(x, "daylightBias", null)
+    
+    inline def setDaylightBiasUndefined: Self = StObject.set(x, "daylightBias", js.undefined)
+  }
 }
-

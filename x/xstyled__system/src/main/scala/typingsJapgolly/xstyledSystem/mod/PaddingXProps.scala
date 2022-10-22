@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.PaddingLeftProperty
+import typingsJapgolly.csstype.mod.Property.PaddingLeft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaddingXProps[TLength] extends js.Object {
-  val px: js.UndefOr[ResponsiveValue[PaddingLeftProperty[TLength]]] = js.undefined
+trait PaddingXProps[TLength] extends StObject {
+  
+  val px: js.UndefOr[ResponsiveValue[PaddingLeft[TLength]]] = js.undefined
 }
-
 object PaddingXProps {
-  @scala.inline
-  def apply[TLength](px: ResponsiveValue[PaddingLeftProperty[TLength]] = null): PaddingXProps[TLength] = {
+  
+  inline def apply[TLength](): PaddingXProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (px != null) __obj.updateDynamic("px")(px.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingXProps[TLength]]
   }
+  
+  extension [Self <: PaddingXProps[?], TLength](x: Self & PaddingXProps[TLength]) {
+    
+    inline def setPx(value: ResponsiveValue[PaddingLeft[TLength]]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+    
+    inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
+    
+    inline def setPxVarargs(value: PaddingLeft[TLength]*): Self = StObject.set(x, "px", js.Array(value*))
+  }
 }
-

@@ -1,25 +1,26 @@
 package typingsJapgolly.surveyKnockout.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITextProcessor extends js.Object {
+trait ITextProcessor extends StObject {
+  
   def processText(text: String, returnDisplayValue: Boolean): String
-  def processTextEx(text: String, returnDisplayValue: Boolean, doEncoding: Boolean): js.Any
+  
+  def processTextEx(text: String, returnDisplayValue: Boolean, doEncoding: Boolean): Any
 }
-
 object ITextProcessor {
-  @scala.inline
-  def apply(
-    processText: (String, Boolean) => CallbackTo[String],
-    processTextEx: (String, Boolean, Boolean) => CallbackTo[js.Any]
-  ): ITextProcessor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("processText")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Boolean) => processText(t0, t1).runNow()))
-    __obj.updateDynamic("processTextEx")(js.Any.fromFunction3((t0: java.lang.String, t1: scala.Boolean, t2: scala.Boolean) => processTextEx(t0, t1, t2).runNow()))
+  
+  inline def apply(processText: (String, Boolean) => String, processTextEx: (String, Boolean, Boolean) => Any): ITextProcessor = {
+    val __obj = js.Dynamic.literal(processText = js.Any.fromFunction2(processText), processTextEx = js.Any.fromFunction3(processTextEx))
     __obj.asInstanceOf[ITextProcessor]
   }
+  
+  extension [Self <: ITextProcessor](x: Self) {
+    
+    inline def setProcessText(value: (String, Boolean) => String): Self = StObject.set(x, "processText", js.Any.fromFunction2(value))
+    
+    inline def setProcessTextEx(value: (String, Boolean, Boolean) => Any): Self = StObject.set(x, "processTextEx", js.Any.fromFunction3(value))
+  }
 }
-

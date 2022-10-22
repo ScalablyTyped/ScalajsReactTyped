@@ -1,29 +1,24 @@
 package typingsJapgolly.bootstrap3Typeahead
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bootstrap3TypeaheadStrings {
-  @js.native
-  sealed trait all extends js.Object
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait getActive extends js.Object
+  sealed trait destroy extends StObject
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait lookup extends js.Object
+  sealed trait getActive extends StObject
+  inline def getActive: getActive = "getActive".asInstanceOf[getActive]
   
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def getActive: getActive = "getActive".asInstanceOf[getActive]
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
+  @js.native
+  sealed trait lookup extends StObject
+  inline def lookup: lookup = "lookup".asInstanceOf[lookup]
 }
-

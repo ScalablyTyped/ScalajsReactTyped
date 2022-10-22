@@ -11,9 +11,9 @@ HTTP methods that node supports
 | Full name          | methods |
 | Keywords           | http, methods |
 | # releases         | 1 |
-| # dependents       | 640 |
-| # downloads        | 429154762 |
-| # stars            | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 9.788740333333333E7 |
+| # stars            | 170.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/methods)

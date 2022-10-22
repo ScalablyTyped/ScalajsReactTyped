@@ -2,50 +2,57 @@ package typingsJapgolly.jqueryJcrop
 
 import typingsJapgolly.jqueryJcrop.JQuery.Jcrop.CardinalDirection
 import typingsJapgolly.jqueryJcrop.JQuery.Jcrop.IntermediateDirection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryJcropStrings {
-  @js.native
-  sealed trait e extends CardinalDirection
   
   @js.native
-  sealed trait n extends CardinalDirection
+  sealed trait e
+    extends StObject
+       with CardinalDirection
+  inline def e: e = "e".asInstanceOf[e]
   
   @js.native
-  sealed trait ne extends IntermediateDirection
+  sealed trait n
+    extends StObject
+       with CardinalDirection
+  inline def n: n = "n".asInstanceOf[n]
   
   @js.native
-  sealed trait nw extends IntermediateDirection
+  sealed trait ne
+    extends StObject
+       with IntermediateDirection
+  inline def ne: ne = "ne".asInstanceOf[ne]
   
   @js.native
-  sealed trait s extends CardinalDirection
+  sealed trait nw
+    extends StObject
+       with IntermediateDirection
+  inline def nw: nw = "nw".asInstanceOf[nw]
   
   @js.native
-  sealed trait se extends IntermediateDirection
+  sealed trait s
+    extends StObject
+       with CardinalDirection
+  inline def s: s = "s".asInstanceOf[s]
   
   @js.native
-  sealed trait sw extends IntermediateDirection
+  sealed trait se
+    extends StObject
+       with IntermediateDirection
+  inline def se: se = "se".asInstanceOf[se]
   
   @js.native
-  sealed trait w extends CardinalDirection
+  sealed trait sw
+    extends StObject
+       with IntermediateDirection
+  inline def sw: sw = "sw".asInstanceOf[sw]
   
-  @scala.inline
-  def e: e = "e".asInstanceOf[e]
-  @scala.inline
-  def n: n = "n".asInstanceOf[n]
-  @scala.inline
-  def ne: ne = "ne".asInstanceOf[ne]
-  @scala.inline
-  def nw: nw = "nw".asInstanceOf[nw]
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
-  @scala.inline
-  def se: se = "se".asInstanceOf[se]
-  @scala.inline
-  def sw: sw = "sw".asInstanceOf[sw]
-  @scala.inline
-  def w: w = "w".asInstanceOf[w]
+  @js.native
+  sealed trait w
+    extends StObject
+       with CardinalDirection
+  inline def w: w = "w".asInstanceOf[w]
 }
-

@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.imagebuilderMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsImagebuilderMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "Imagebuilder")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Imagebuilder ()
-  extends typingsJapgolly.awsSdk.allMod.Imagebuilder {
+open class Imagebuilder ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.Imagebuilder {
   def this(options: ClientConfiguration) = this()
 }
-

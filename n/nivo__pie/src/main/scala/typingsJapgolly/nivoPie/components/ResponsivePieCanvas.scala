@@ -1,119 +1,150 @@
 package typingsJapgolly.nivoPie.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.SVGPathElement
-import typingsJapgolly.nivoColors.mod.InheritedColorProp
-import typingsJapgolly.nivoColors.mod.OrdinalColorsInstruction
+import org.scalajs.dom.HTMLCanvasElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.nivoArcs.distTypesArcLabelsArcLabelMod.ArcLabelProps
+import typingsJapgolly.nivoArcs.distTypesArcLinkLabelsArcLinkLabelMod.ArcLinkLabelProps
+import typingsJapgolly.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
+import typingsJapgolly.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typingsJapgolly.nivoCore.mod.Box
+import typingsJapgolly.nivoCore.mod.PropertyAccessor
 import typingsJapgolly.nivoCore.mod.Theme
-import typingsJapgolly.nivoLegends.mod.LegendProps
-import typingsJapgolly.nivoPie.mod.AccessorFunc
-import typingsJapgolly.nivoPie.mod.PieCanvasProps
-import typingsJapgolly.nivoPie.mod.PieDatum
-import typingsJapgolly.nivoPie.mod.PieDatumWithColor
-import typingsJapgolly.nivoPie.mod.ValueFormatter
-import typingsJapgolly.react.mod.StatelessComponent
+import typingsJapgolly.nivoCore.mod.ValueFormat
+import typingsJapgolly.nivoLegends.distTypesTypesMod.LegendProps
+import typingsJapgolly.nivoPie.distTypesTypesMod.ComputedDatum
+import typingsJapgolly.nivoPie.distTypesTypesMod.DatumId
+import typingsJapgolly.nivoPie.distTypesTypesMod.PieCanvasProps
+import typingsJapgolly.nivoPie.distTypesTypesMod.PieTooltipProps
+import typingsJapgolly.nivoPie.nivoPieStrings.arc
+import typingsJapgolly.nivoPie.nivoPieStrings.color
+import typingsJapgolly.nivoPie.nivoPieStrings.fill
+import typingsJapgolly.react.mod.FC
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ResponsivePieCanvas {
-  def apply(
-    data: js.Array[PieDatum],
-    animate: js.UndefOr[Boolean] = js.undefined,
-    borderColor: InheritedColorProp[PieDatum] = null,
-    borderWidth: Int | Double = null,
-    colors: OrdinalColorsInstruction[PieDatum] = null,
-    cornerRadius: Int | Double = null,
-    enableRadialLabels: js.UndefOr[Boolean] = js.undefined,
-    enableSlicesLabels: js.UndefOr[Boolean] = js.undefined,
-    endAngle: Int | Double = null,
-    fit: js.UndefOr[Boolean] = js.undefined,
-    innerRadius: Int | Double = null,
-    isInteractive: js.UndefOr[Boolean] = js.undefined,
-    legends: js.Array[LegendProps] = null,
-    margin: Box = null,
-    motionDamping: Int | Double = null,
-    motionStiffness: Int | Double = null,
-    onClick: (/* datum */ PieDatum, /* event */ ReactMouseEventFrom[SVGPathElement]) => Callback = null,
-    padAngle: Int | Double = null,
-    pixelRatio: Int | Double = null,
-    radialLabel: String | AccessorFunc = null,
-    radialLabelsLinkColor: InheritedColorProp[PieDatumWithColor] = null,
-    radialLabelsLinkDiagonalLength: Int | Double = null,
-    radialLabelsLinkHorizontalLength: Int | Double = null,
-    radialLabelsLinkOffset: Int | Double = null,
-    radialLabelsLinkStrokeWidth: Int | Double = null,
-    radialLabelsSkipAngle: Int | Double = null,
-    radialLabelsTextColor: InheritedColorProp[PieDatumWithColor] = null,
-    radialLabelsTextXOffset: Int | Double = null,
-    sliceLabel: String | AccessorFunc = null,
-    slicesLabelsSkipAngle: Int | Double = null,
-    slicesLabelsTextColor: InheritedColorProp[PieDatumWithColor] = null,
-    sortByValue: js.UndefOr[Boolean] = js.undefined,
-    startAngle: Int | Double = null,
-    theme: Theme = null,
-    tooltip: StatelessComponent[PieDatumWithColor] = null,
-    tooltipFormat: String | ValueFormatter = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PieCanvasProps, typingsJapgolly.nivoPie.mod.ResponsivePieCanvas, Unit, PieCanvasProps] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRadialLabels)) __obj.updateDynamic("enableRadialLabels")(enableRadialLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSlicesLabels)) __obj.updateDynamic("enableSlicesLabels")(enableSlicesLabels.asInstanceOf[js.Any])
-    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
-    if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
-    if (legends != null) __obj.updateDynamic("legends")(legends.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
-    if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2((t0: /* datum */ typingsJapgolly.nivoPie.mod.PieDatum, t1: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onClick(t0, t1).runNow()))
-    if (padAngle != null) __obj.updateDynamic("padAngle")(padAngle.asInstanceOf[js.Any])
-    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (radialLabel != null) __obj.updateDynamic("radialLabel")(radialLabel.asInstanceOf[js.Any])
-    if (radialLabelsLinkColor != null) __obj.updateDynamic("radialLabelsLinkColor")(radialLabelsLinkColor.asInstanceOf[js.Any])
-    if (radialLabelsLinkDiagonalLength != null) __obj.updateDynamic("radialLabelsLinkDiagonalLength")(radialLabelsLinkDiagonalLength.asInstanceOf[js.Any])
-    if (radialLabelsLinkHorizontalLength != null) __obj.updateDynamic("radialLabelsLinkHorizontalLength")(radialLabelsLinkHorizontalLength.asInstanceOf[js.Any])
-    if (radialLabelsLinkOffset != null) __obj.updateDynamic("radialLabelsLinkOffset")(radialLabelsLinkOffset.asInstanceOf[js.Any])
-    if (radialLabelsLinkStrokeWidth != null) __obj.updateDynamic("radialLabelsLinkStrokeWidth")(radialLabelsLinkStrokeWidth.asInstanceOf[js.Any])
-    if (radialLabelsSkipAngle != null) __obj.updateDynamic("radialLabelsSkipAngle")(radialLabelsSkipAngle.asInstanceOf[js.Any])
-    if (radialLabelsTextColor != null) __obj.updateDynamic("radialLabelsTextColor")(radialLabelsTextColor.asInstanceOf[js.Any])
-    if (radialLabelsTextXOffset != null) __obj.updateDynamic("radialLabelsTextXOffset")(radialLabelsTextXOffset.asInstanceOf[js.Any])
-    if (sliceLabel != null) __obj.updateDynamic("sliceLabel")(sliceLabel.asInstanceOf[js.Any])
-    if (slicesLabelsSkipAngle != null) __obj.updateDynamic("slicesLabelsSkipAngle")(slicesLabelsSkipAngle.asInstanceOf[js.Any])
-    if (slicesLabelsTextColor != null) __obj.updateDynamic("slicesLabelsTextColor")(slicesLabelsTextColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortByValue)) __obj.updateDynamic("sortByValue")(sortByValue.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.nivoPie.mod.PieCanvasProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.nivoPie.mod.ResponsivePieCanvas](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.nivoPie.mod.PieCanvasProps])(children: _*)
+  inline def apply[RawDatum](data: js.Array[RawDatum], height: Double, width: Double): Builder[RawDatum] = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    new Builder[RawDatum](js.Array(this.component, __props.asInstanceOf[PieCanvasProps[RawDatum]]))
   }
+  
   @JSImport("@nivo/pie", "ResponsivePieCanvas")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[RawDatum] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def activeInnerRadiusOffset(value: Double): this.type = set("activeInnerRadiusOffset", value.asInstanceOf[js.Any])
+    
+    inline def activeOuterRadiusOffset(value: Double): this.type = set("activeOuterRadiusOffset", value.asInstanceOf[js.Any])
+    
+    inline def arcLabel(value: PropertyAccessor[ComputedDatum[RawDatum], String]): this.type = set("arcLabel", value.asInstanceOf[js.Any])
+    
+    inline def arcLabelFunction1(value: ComputedDatum[RawDatum] => String): this.type = set("arcLabel", js.Any.fromFunction1(value))
+    
+    inline def arcLabelsComponent(value: /* props */ ArcLabelProps[ComputedDatum[RawDatum]] => Element): this.type = set("arcLabelsComponent", js.Any.fromFunction1(value))
+    
+    inline def arcLabelsRadiusOffset(value: Double): this.type = set("arcLabelsRadiusOffset", value.asInstanceOf[js.Any])
+    
+    inline def arcLabelsSkipAngle(value: Double): this.type = set("arcLabelsSkipAngle", value.asInstanceOf[js.Any])
+    
+    inline def arcLabelsTextColor(value: InheritedColorConfig[ComputedDatum[RawDatum]]): this.type = set("arcLabelsTextColor", value.asInstanceOf[js.Any])
+    
+    inline def arcLinkLabel(value: PropertyAccessor[ComputedDatum[RawDatum], String]): this.type = set("arcLinkLabel", value.asInstanceOf[js.Any])
+    
+    inline def arcLinkLabelFunction1(value: ComputedDatum[RawDatum] => String): this.type = set("arcLinkLabel", js.Any.fromFunction1(value))
+    
+    inline def arcLinkLabelsColor(value: InheritedColorConfig[ComputedDatum[RawDatum]]): this.type = set("arcLinkLabelsColor", value.asInstanceOf[js.Any])
+    
+    inline def arcLinkLabelsDiagonalLength(value: Double): this.type = set("arcLinkLabelsDiagonalLength", value.asInstanceOf[js.Any])
+    
+    inline def arcLinkLabelsOffset(value: Double): this.type = set("arcLinkLabelsOffset", value.asInstanceOf[js.Any])
+    
+    inline def arcLinkLabelsSkipAngle(value: Double): this.type = set("arcLinkLabelsSkipAngle", value.asInstanceOf[js.Any])
+    
+    inline def arcLinkLabelsStraightLength(value: Double): this.type = set("arcLinkLabelsStraightLength", value.asInstanceOf[js.Any])
+    
+    inline def arcLinkLabelsTextColor(value: InheritedColorConfig[ComputedDatum[RawDatum]]): this.type = set("arcLinkLabelsTextColor", value.asInstanceOf[js.Any])
+    
+    inline def arcLinkLabelsTextOffset(value: Double): this.type = set("arcLinkLabelsTextOffset", value.asInstanceOf[js.Any])
+    
+    inline def arcLinkLabelsThickness(value: Double): this.type = set("arcLinkLabelsThickness", value.asInstanceOf[js.Any])
+    
+    inline def borderColor(value: InheritedColorConfig[ComputedDatum[RawDatum]]): this.type = set("borderColor", value.asInstanceOf[js.Any])
+    
+    inline def borderWidth(value: Double): this.type = set("borderWidth", value.asInstanceOf[js.Any])
+    
+    inline def colors(value: OrdinalColorScaleConfig[Omit[ComputedDatum[RawDatum], color | fill | arc]]): this.type = set("colors", value.asInstanceOf[js.Any])
+    
+    inline def colorsFunction1(value: Omit[ComputedDatum[RawDatum], color | fill | arc] => String): this.type = set("colors", js.Any.fromFunction1(value))
+    
+    inline def colorsVarargs(value: String*): this.type = set("colors", js.Array(value*))
+    
+    inline def component(value: /* props */ ArcLinkLabelProps[ComputedDatum[RawDatum]] => Element): this.type = set("component", js.Any.fromFunction1(value))
+    
+    inline def cornerRadius(value: Double): this.type = set("cornerRadius", value.asInstanceOf[js.Any])
+    
+    inline def enableArcLabels(value: Boolean): this.type = set("enableArcLabels", value.asInstanceOf[js.Any])
+    
+    inline def enableArcLinkLabels(value: Boolean): this.type = set("enableArcLinkLabels", value.asInstanceOf[js.Any])
+    
+    inline def endAngle(value: Double): this.type = set("endAngle", value.asInstanceOf[js.Any])
+    
+    inline def fit(value: Boolean): this.type = set("fit", value.asInstanceOf[js.Any])
+    
+    inline def id(value: PropertyAccessor[RawDatum, DatumId]): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def idFunction1(value: RawDatum => DatumId): this.type = set("id", js.Any.fromFunction1(value))
+    
+    inline def innerRadius(value: Double): this.type = set("innerRadius", value.asInstanceOf[js.Any])
+    
+    inline def isInteractive(value: Boolean): this.type = set("isInteractive", value.asInstanceOf[js.Any])
+    
+    inline def legends(value: js.Array[LegendProps]): this.type = set("legends", value.asInstanceOf[js.Any])
+    
+    inline def legendsVarargs(value: LegendProps*): this.type = set("legends", js.Array(value*))
+    
+    inline def margin(value: Box): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def onClick(
+      value: (/* datum */ ComputedDatum[RawDatum], /* event */ ReactMouseEventFrom[HTMLCanvasElement & org.scalajs.dom.Element]) => Callback
+    ): this.type = set("onClick", js.Any.fromFunction2((t0: /* datum */ ComputedDatum[RawDatum], t1: /* event */ ReactMouseEventFrom[HTMLCanvasElement & org.scalajs.dom.Element]) => (value(t0, t1)).runNow()))
+    
+    inline def onMouseMove(
+      value: (/* datum */ ComputedDatum[RawDatum], /* event */ ReactMouseEventFrom[HTMLCanvasElement & org.scalajs.dom.Element]) => Callback
+    ): this.type = set("onMouseMove", js.Any.fromFunction2((t0: /* datum */ ComputedDatum[RawDatum], t1: /* event */ ReactMouseEventFrom[HTMLCanvasElement & org.scalajs.dom.Element]) => (value(t0, t1)).runNow()))
+    
+    inline def padAngle(value: Double): this.type = set("padAngle", value.asInstanceOf[js.Any])
+    
+    inline def pixelRatio(value: Double): this.type = set("pixelRatio", value.asInstanceOf[js.Any])
+    
+    inline def renderWrapper(value: Boolean): this.type = set("renderWrapper", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def sortByValue(value: Boolean): this.type = set("sortByValue", value.asInstanceOf[js.Any])
+    
+    inline def startAngle(value: Double): this.type = set("startAngle", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: Theme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def tooltip(value: FC[PieTooltipProps[RawDatum]]): this.type = set("tooltip", value.asInstanceOf[js.Any])
+    
+    inline def value(value: PropertyAccessor[RawDatum, Double]): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueFormat(value: ValueFormat[Double, Unit]): this.type = set("valueFormat", value.asInstanceOf[js.Any])
+    
+    inline def valueFunction1(value: RawDatum => Double): this.type = set("value", js.Any.fromFunction1(value))
+  }
+  
+  def withProps[RawDatum](p: PieCanvasProps[RawDatum]): Builder[RawDatum] = new Builder[RawDatum](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

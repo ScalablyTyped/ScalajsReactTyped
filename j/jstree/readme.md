@@ -10,15 +10,13 @@ jQuery tree plugin
 | ------------------ | :-------------: |
 | Full name          | jstree |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 55 |
-| # downloads        | 1036460 |
-| # stars            | 6 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 185845.33333333334 |
+| # stars            | 4962.0 |
 
 ## Links
 - [Homepage](http://jstree.com)
-- [Bugs](https://github.com/vakata/jstree/issues)
-- [Repository](https://github.com/vakata/jstree)
 - [Npm](https://www.npmjs.com/package/jstree)
     
 

@@ -1,17 +1,13 @@
-package typingsJapgolly
+package typingsJapgolly.jqueryDropotron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object jqueryDropotron {
-  /**
-    * @summary Interface for "dropotron".
-    * @author  Cyril Schumacher
-    * @version 1.0
-    */
-  type Dropotron = js.Function1[
-    /* config */ js.UndefOr[typingsJapgolly.jqueryDropotron.DropotronConfiguration], 
-    scala.Unit
-  ]
-}
+
+/**
+  * @summary Interface for "dropotron".
+  * @author  Cyril Schumacher
+  * @version 1.0
+  */
+type Dropotron = js.Function1[/* config */ js.UndefOr[DropotronConfiguration], Unit]

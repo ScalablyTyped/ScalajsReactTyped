@@ -1,12 +1,19 @@
 package typingsJapgolly.betterCurry
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.betterCurry.BetterCurryModule.BetterCurry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("better-curry", JSImport.Namespace)
-@js.native
-object mod
-  extends TopLevel[typingsJapgolly.betterCurry.BetterCurryModule.BetterCurry]
-
+object mod extends Shortcut {
+  
+  @JSImport("better-curry", JSImport.Namespace)
+  @js.native
+  val ^ : BetterCurry = js.native
+  
+  type _To = BetterCurry
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: BetterCurry = ^
+}

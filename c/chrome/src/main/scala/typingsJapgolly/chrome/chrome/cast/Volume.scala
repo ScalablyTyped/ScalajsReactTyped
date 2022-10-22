@@ -1,21 +1,30 @@
 package typingsJapgolly.chrome.chrome.cast
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("chrome.cast.Volume")
-@js.native
-/**
-  * @param {?number=} opt_level
-  * @param {?boolean=} opt_muted
-  * @constructor
-  * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Volume
-  */
-class Volume () extends js.Object {
-  def this(level: Double) = this()
-  def this(level: Double, muted: Boolean) = this()
-  var level: js.UndefOr[Double] = js.native
-  var muted: js.UndefOr[Boolean] = js.native
+trait Volume extends StObject {
+  
+  var level: Double | Null
+  
+  var muted: Boolean | Null
 }
-
+object Volume {
+  
+  inline def apply(): Volume = {
+    val __obj = js.Dynamic.literal(level = null, muted = null)
+    __obj.asInstanceOf[Volume]
+  }
+  
+  extension [Self <: Volume](x: Self) {
+    
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelNull: Self = StObject.set(x, "level", null)
+    
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    
+    inline def setMutedNull: Self = StObject.set(x, "muted", null)
+  }
+}

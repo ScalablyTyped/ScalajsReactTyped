@@ -1,23 +1,25 @@
 package typingsJapgolly.electron
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.electron.Electron.WebviewTag_
+import typingsJapgolly.electron.Electron.WebviewTag
 import typingsJapgolly.electron.electronStrings.webview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Document extends js.Object {
+trait Document extends StObject {
+  
   @JSName("createElement")
-  def createElement_webview(tagName: webview): WebviewTag_
+  def createElement_webview(tagName: webview): WebviewTag
 }
-
 object Document {
-  @scala.inline
-  def apply(createElement: webview => CallbackTo[WebviewTag_]): Document = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createElement")(js.Any.fromFunction1((t0: typingsJapgolly.electron.electronStrings.webview) => createElement(t0).runNow()))
+  
+  inline def apply(createElement: webview => WebviewTag): Document = {
+    val __obj = js.Dynamic.literal(createElement = js.Any.fromFunction1(createElement))
     __obj.asInstanceOf[Document]
   }
+  
+  extension [Self <: Document](x: Self) {
+    
+    inline def setCreateElement(value: webview => WebviewTag): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
+  }
 }
-

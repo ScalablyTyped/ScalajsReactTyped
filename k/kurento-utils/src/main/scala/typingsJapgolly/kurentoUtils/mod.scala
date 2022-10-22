@@ -1,35 +1,35 @@
 package typingsJapgolly.kurentoUtils
 
-import org.scalajs.dom.experimental.mediastream.MediaStream
-import org.scalajs.dom.experimental.webrtc.RTCIceCandidate
-import org.scalajs.dom.experimental.webrtc.RTCPeerConnection
-import org.scalajs.dom.experimental.webrtc.RTCSessionDescription
+import org.scalajs.dom.MediaStream
+import org.scalajs.dom.RTCIceCandidate
+import org.scalajs.dom.RTCPeerConnection
+import org.scalajs.dom.RTCSessionDescription
 import typingsJapgolly.kurentoUtils.kurentoUtilsStrings.recv
 import typingsJapgolly.kurentoUtils.kurentoUtilsStrings.send
 import typingsJapgolly.kurentoUtils.kurentoUtilsStrings.sendRecv
 import typingsJapgolly.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("kurento-utils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("kurento-utils", "WebRtcPeer")
   @js.native
-  class WebRtcPeer protected () extends EventEmitter {
-    def this(mode: recv) = this()
-    def this(mode: send) = this()
-    def this(mode: sendRecv) = this()
-    def this(mode: recv, options: js.Object) = this()
-    def this(mode: sendRecv, options: js.Object) = this()
-    def this(mode: send, options: js.Object) = this()
-    def this(mode: recv, options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
-    def this(mode: sendRecv, options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
-    def this(mode: send, options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]) = this()
-    /**
-      * Using this property the user can get the peerConnection and use it directly.
-      */
-    var peerConnection: RTCPeerConnection = js.native
+  open class WebRtcPeer protected () extends EventEmitter {
+    def this(mode: recv | send | sendRecv) = this()
+    def this(mode: recv | send | sendRecv, options: js.Object) = this()
+    def this(
+      mode: recv | send | sendRecv,
+      options: js.Object,
+      callback: js.Function1[/* error */ js.UndefOr[String], Unit]
+    ) = this()
+    def this(
+      mode: recv | send | sendRecv,
+      options: Unit,
+      callback: js.Function1[/* error */ js.UndefOr[String], Unit]
+    ) = this()
+    
     /**
       * Callback function invoked when an ICE candidate is received. Developers are expected to invoke this function in order to complete the SDP negotiation. This method has two parameters:
       *
@@ -38,30 +38,42 @@ object mod extends js.Object {
       */
     def addIceCandidate(iceCandidate: RTCIceCandidate): Unit = js.native
     def addIceCandidate(iceCandidate: RTCIceCandidate, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): Unit = js.native
+    
     /**
       * This method frees the resources used by WebRtcPeer.
       */
     def dispose(): Unit = js.native
+    
     /**
       * Creates an offer that is a request to find a remote peer with a specific configuration.
       */
     def generateOffer(callback: js.Function2[/* error */ js.UndefOr[String], /* sdp */ String, Unit]): Unit = js.native
+    
     /**
       * Using this method the user can get peerconnection’s local session descriptor.
       */
     def getLocalSessionDescriptor(): RTCSessionDescription = js.native
+    
     /**
       * Using this method the user can get the local stream. You can use muted property to silence the audio, if this property is true.
       */
     def getLocalStream(): MediaStream = js.native
+    
     /**
       * Using this method the user can get peerconnection’s remote session descriptor.
       */
     def getRemoteSessionDescriptor(): RTCSessionDescription = js.native
+    
     /**
       * Using this method the user can get the remote stream.
       */
     def getRemoteStream(): MediaStream = js.native
+    
+    /**
+      * Using this property the user can get the peerConnection and use it directly.
+      */
+    var peerConnection: RTCPeerConnection = js.native
+    
     /**
       * Callback function invoked when a SDP answer is received. Developers are expected to invoke this function in order to complete the SDP negotiation. This method has two parameters:
       *
@@ -70,6 +82,7 @@ object mod extends js.Object {
       */
     def processAnswer(sdpAnswer: String): Unit = js.native
     def processAnswer(sdpAnswer: String, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): Unit = js.native
+    
     /**
       * Callback function invoked when a SDP offer is received. Developers are expected to invoke this function in order to complete the SDP negotiation. This method has two parameters:
       *
@@ -78,28 +91,32 @@ object mod extends js.Object {
       */
     def processOffer(sdpOffer: String): Unit = js.native
     def processOffer(sdpOffer: String, callback: js.Function2[/* error */ js.UndefOr[String], /* sdp */ String, Unit]): Unit = js.native
+    
     /**
       * Use this method for showing the local video.
       */
     def showLocalVideo(): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object WebRtcPeer extends js.Object {
+  object WebRtcPeer {
+    
+    @JSImport("kurento-utils", "WebRtcPeer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a WebRtcPeer as receive only.
       */
-    def WebRtcPeerRecvonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = js.native
+    inline def WebRtcPeerRecvonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("WebRtcPeerRecvonly")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebRtcPeer]
+    
     /**
       * Create a WebRtcPeer as send only.
       */
-    def WebRtcPeerSendonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = js.native
+    inline def WebRtcPeerSendonly(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("WebRtcPeerSendonly")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebRtcPeer]
+    
     /**
       * Create a WebRtcPeer as send and receive.
       */
-    def WebRtcPeerSendrecv(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = js.native
+    inline def WebRtcPeerSendrecv(options: js.Object, callback: js.Function1[/* error */ js.UndefOr[String], Unit]): WebRtcPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("WebRtcPeerSendrecv")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebRtcPeer]
   }
-  
 }
-

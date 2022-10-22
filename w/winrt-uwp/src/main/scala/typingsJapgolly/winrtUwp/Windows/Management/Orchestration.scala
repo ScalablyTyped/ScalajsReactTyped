@@ -1,27 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Management
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Management.Orchestration")
-@js.native
-object Orchestration extends js.Object {
-  @js.native
-  abstract class CurrentAppOrchestration () extends js.Object {
-     /* unmapped type */ var startSingleAppMode: js.Any = js.native
+object Orchestration {
+  
+  trait CurrentAppOrchestration extends StObject {
+    
+    /* unmapped type */
+    var startSingleAppMode: Any
+  }
+  object CurrentAppOrchestration {
+    
+    inline def apply(startSingleAppMode: Any): CurrentAppOrchestration = {
+      val __obj = js.Dynamic.literal(startSingleAppMode = startSingleAppMode.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CurrentAppOrchestration]
+    }
+    
+    extension [Self <: CurrentAppOrchestration](x: Self) {
+      
+      inline def setStartSingleAppMode(value: Any): Self = StObject.set(x, "startSingleAppMode", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  abstract class SingleAppModeContext () extends js.Object {
-    var close: js.Any = js.native
+  trait SingleAppModeContext extends StObject {
+    
+    var close: Any
   }
-  
-  /* static members */
-  @js.native
-  object CurrentAppOrchestration extends js.Object {
-    var getForCurrentView: js.Any = js.native
+  object SingleAppModeContext {
+    
+    inline def apply(close: Any): SingleAppModeContext = {
+      val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SingleAppModeContext]
+    }
+    
+    extension [Self <: SingleAppModeContext](x: Self) {
+      
+      inline def setClose(value: Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    }
   }
-  
 }
-

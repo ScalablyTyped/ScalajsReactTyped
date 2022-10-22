@@ -1,8 +1,8 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.squareConnect.squareConnectStrings.SQUARE_POS
@@ -16,30 +16,26 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.squareConnect.squareConnectStrings.ITEM_LIBRARY_IMPORT
   - typingsJapgolly.squareConnect.squareConnectStrings.OTHER
 */
-trait ProductSourceType extends js.Object
-
+trait ProductSourceType extends StObject
 object ProductSourceType {
-  @scala.inline
-  def APPOINTMENTS: typingsJapgolly.squareConnect.squareConnectStrings.APPOINTMENTS = this.cast("APPOINTMENTS")
-  @scala.inline
-  def BILLING: typingsJapgolly.squareConnect.squareConnectStrings.BILLING = this.cast("BILLING")
-  @scala.inline
-  def DASHBOARD: typingsJapgolly.squareConnect.squareConnectStrings.DASHBOARD = this.cast("DASHBOARD")
-  @scala.inline
-  def EXTERNAL_API: typingsJapgolly.squareConnect.squareConnectStrings.EXTERNAL_API = this.cast("EXTERNAL_API")
-  @scala.inline
-  def INVOICES: typingsJapgolly.squareConnect.squareConnectStrings.INVOICES = this.cast("INVOICES")
-  @scala.inline
-  def ITEM_LIBRARY_IMPORT: typingsJapgolly.squareConnect.squareConnectStrings.ITEM_LIBRARY_IMPORT = this.cast("ITEM_LIBRARY_IMPORT")
-  @scala.inline
-  def ONLINE_STORE: typingsJapgolly.squareConnect.squareConnectStrings.ONLINE_STORE = this.cast("ONLINE_STORE")
-  @scala.inline
-  def OTHER: typingsJapgolly.squareConnect.squareConnectStrings.OTHER = this.cast("OTHER")
-  @scala.inline
-  def PAYROLL: typingsJapgolly.squareConnect.squareConnectStrings.PAYROLL = this.cast("PAYROLL")
-  @scala.inline
-  def SQUARE_POS: typingsJapgolly.squareConnect.squareConnectStrings.SQUARE_POS = this.cast("SQUARE_POS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def APPOINTMENTS: typingsJapgolly.squareConnect.squareConnectStrings.APPOINTMENTS = "APPOINTMENTS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.APPOINTMENTS]
+  
+  inline def BILLING: typingsJapgolly.squareConnect.squareConnectStrings.BILLING = "BILLING".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BILLING]
+  
+  inline def DASHBOARD: typingsJapgolly.squareConnect.squareConnectStrings.DASHBOARD = "DASHBOARD".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DASHBOARD]
+  
+  inline def EXTERNAL_API: typingsJapgolly.squareConnect.squareConnectStrings.EXTERNAL_API = "EXTERNAL_API".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EXTERNAL_API]
+  
+  inline def INVOICES: typingsJapgolly.squareConnect.squareConnectStrings.INVOICES = "INVOICES".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVOICES]
+  
+  inline def ITEM_LIBRARY_IMPORT: typingsJapgolly.squareConnect.squareConnectStrings.ITEM_LIBRARY_IMPORT = "ITEM_LIBRARY_IMPORT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ITEM_LIBRARY_IMPORT]
+  
+  inline def ONLINE_STORE: typingsJapgolly.squareConnect.squareConnectStrings.ONLINE_STORE = "ONLINE_STORE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ONLINE_STORE]
+  
+  inline def OTHER: typingsJapgolly.squareConnect.squareConnectStrings.OTHER = "OTHER".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.OTHER]
+  
+  inline def PAYROLL: typingsJapgolly.squareConnect.squareConnectStrings.PAYROLL = "PAYROLL".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PAYROLL]
+  
+  inline def SQUARE_POS: typingsJapgolly.squareConnect.squareConnectStrings.SQUARE_POS = "SQUARE_POS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SQUARE_POS]
 }
-

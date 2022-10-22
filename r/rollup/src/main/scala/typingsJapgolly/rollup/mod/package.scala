@@ -1,127 +1,174 @@
-package typingsJapgolly.rollup
+package typingsJapgolly.rollup.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.rollup.anon.AssertionsRecord
+import typingsJapgolly.rollup.anon.Ast
+import typingsJapgolly.rollup.anon.Change
+import typingsJapgolly.rollup.anon.ChunkId
+import typingsJapgolly.rollup.anon.Chunks
+import typingsJapgolly.rollup.anon.Code
+import typingsJapgolly.rollup.anon.Custom
+import typingsJapgolly.rollup.anon.Event
+import typingsJapgolly.rollup.anon.Format
+import typingsJapgolly.rollup.anon.Handler
+import typingsJapgolly.rollup.anon.PartialSourceDescription
+import typingsJapgolly.rollup.mod.^
+import typingsJapgolly.rollup.rollupStrings.`no-external`
+import typingsJapgolly.std.Parameters
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type AddonHook = java.lang.String | (js.ThisFunction0[
-    /* this */ typingsJapgolly.rollup.mod.PluginContext, 
-    java.lang.String | js.Promise[java.lang.String]
-  ])
-  type EmitAsset = js.Function2[
-    /* name */ java.lang.String, 
-    /* source */ js.UndefOr[java.lang.String | typingsJapgolly.node.Buffer], 
-    java.lang.String
-  ]
-  type EmitChunk = js.Function2[
-    /* id */ java.lang.String, 
-    /* options */ js.UndefOr[typingsJapgolly.rollup.AnonName], 
-    java.lang.String
-  ]
-  type EmitFile = js.Function1[/* emittedFile */ typingsJapgolly.rollup.mod.EmittedFile, java.lang.String]
-  type ExternalOption = js.Array[java.lang.String] | typingsJapgolly.rollup.mod.IsExternal
-  type GetManualChunk = js.Function1[/* id */ java.lang.String, js.UndefOr[java.lang.String | scala.Null]]
-  type GlobalsOption = org.scalablytyped.runtime.StringDictionary[java.lang.String] | (js.Function1[/* name */ java.lang.String, java.lang.String])
-  type HasModuleSideEffects = js.Function2[/* id */ java.lang.String, /* external */ scala.Boolean, scala.Boolean]
-  type InputOption = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  type IsExternal = js.Function3[
-    /* source */ java.lang.String, 
-    /* importer */ java.lang.String, 
-    /* isResolved */ scala.Boolean, 
-    js.UndefOr[scala.Boolean | scala.Null]
-  ]
-  type IsPureModule = js.Function1[/* id */ java.lang.String, js.UndefOr[scala.Boolean | scala.Null]]
-  type LoadHook = js.ThisFunction1[
-    /* this */ typingsJapgolly.rollup.mod.PluginContext, 
-    /* id */ java.lang.String, 
-    js.Promise[typingsJapgolly.rollup.mod.LoadResult] | typingsJapgolly.rollup.mod.LoadResult
-  ]
-  type LoadResult = js.UndefOr[typingsJapgolly.rollup.mod.SourceDescription | java.lang.String | scala.Null]
-  type ManualChunksOption = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] | typingsJapgolly.rollup.mod.GetManualChunk
-  type ModuleSideEffectsOption = scala.Boolean | typingsJapgolly.rollup.rollupStrings.`no-external` | js.Array[java.lang.String] | typingsJapgolly.rollup.mod.HasModuleSideEffects
-  type OptionsPaths = (typingsJapgolly.std.Record[java.lang.String, java.lang.String]) | (js.Function1[/* id */ java.lang.String, java.lang.String])
-  type OutputBundle = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.rollup.mod.OutputAsset | typingsJapgolly.rollup.mod.OutputChunk]
-  type OutputBundleWithPlaceholders = org.scalablytyped.runtime.StringDictionary[
-    typingsJapgolly.rollup.mod.OutputAsset | typingsJapgolly.rollup.mod.OutputChunk | typingsJapgolly.rollup.mod.FilePlaceholder
-  ]
-  type PluginImpl[O /* <: js.Object */] = js.Function1[/* options */ js.UndefOr[O], typingsJapgolly.rollup.mod.Plugin]
-  type PureModulesOption = scala.Boolean | js.Array[java.lang.String] | typingsJapgolly.rollup.mod.IsPureModule
-  type RenderChunkHook = js.ThisFunction3[
-    /* this */ typingsJapgolly.rollup.mod.PluginContext, 
-    /* code */ java.lang.String, 
-    /* chunk */ typingsJapgolly.rollup.mod.RenderedChunk, 
-    /* options */ typingsJapgolly.rollup.mod.OutputOptions, 
-    (js.Promise[typingsJapgolly.rollup.AnonCode | scala.Null]) | typingsJapgolly.rollup.AnonCode | java.lang.String | scala.Null
-  ]
-  type ResolveAssetUrlHook = js.ThisFunction1[
-    /* this */ typingsJapgolly.rollup.mod.PluginContext, 
-    /* options */ typingsJapgolly.rollup.AnonAssetFileName, 
-    js.UndefOr[java.lang.String | scala.Null]
-  ]
-  type ResolveDynamicImportHook = js.ThisFunction2[
-    /* this */ typingsJapgolly.rollup.mod.PluginContext, 
-    /* specifier */ java.lang.String | typingsJapgolly.estree.mod.Node, 
-    /* importer */ java.lang.String, 
-    js.Promise[typingsJapgolly.rollup.mod.ResolveIdResult] | typingsJapgolly.rollup.mod.ResolveIdResult
-  ]
-  type ResolveFileUrlHook = js.ThisFunction1[
-    /* this */ typingsJapgolly.rollup.mod.PluginContext, 
-    /* options */ typingsJapgolly.rollup.AnonAssetReferenceId, 
-    js.UndefOr[java.lang.String | scala.Null]
-  ]
-  type ResolveIdHook = js.ThisFunction2[
-    /* this */ typingsJapgolly.rollup.mod.PluginContext, 
-    /* source */ java.lang.String, 
-    /* importer */ js.UndefOr[java.lang.String], 
-    js.Promise[typingsJapgolly.rollup.mod.ResolveIdResult] | typingsJapgolly.rollup.mod.ResolveIdResult
-  ]
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - typingsJapgolly.rollup.rollupBooleans.`false`
-    - scala.Null
-    - `js.undefined`
-    - typingsJapgolly.rollup.mod.PartialResolvedId
-  */
-  type ResolveIdResult = js.UndefOr[typingsJapgolly.rollup.mod._ResolveIdResult | java.lang.String | scala.Null]
-  type ResolveImportMetaHook = js.ThisFunction2[
-    /* this */ typingsJapgolly.rollup.mod.PluginContext, 
-    /* prop */ java.lang.String | scala.Null, 
-    /* options */ typingsJapgolly.rollup.AnonChunkId, 
-    js.UndefOr[java.lang.String | scala.Null]
-  ]
-  type ResolvedIdMap = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.rollup.mod.ResolvedId]
-  type SerializablePluginCache = org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, js.Any]]
-  type SerializedTimings = org.scalablytyped.runtime.StringDictionary[js.Tuple3[scala.Double, scala.Double, scala.Double]]
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.rollup.mod.ExistingRawSourceMap
-    - java.lang.String
-    - scala.Null
-    - typingsJapgolly.rollup.AnonMappings
-  */
-  type SourceMapInput = typingsJapgolly.rollup.mod._SourceMapInput | java.lang.String | scala.Null
-  type SourceMapSegment = js.Array[scala.Double] | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]) | (js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double])
-  type TransformChunkHook = js.ThisFunction2[
-    /* this */ typingsJapgolly.rollup.mod.PluginContext, 
-    /* code */ java.lang.String, 
-    /* options */ typingsJapgolly.rollup.mod.OutputOptions, 
-    js.UndefOr[
-      (js.Promise[js.UndefOr[typingsJapgolly.rollup.AnonCode | scala.Null]]) | typingsJapgolly.rollup.AnonCode | scala.Null
-    ]
-  ]
-  type TransformHook = js.ThisFunction2[
-    /* this */ typingsJapgolly.rollup.mod.PluginContext, 
-    /* code */ java.lang.String, 
-    /* id */ java.lang.String, 
-    js.Promise[typingsJapgolly.rollup.mod.TransformResult] | typingsJapgolly.rollup.mod.TransformResult
-  ]
-  type TransformResult = js.UndefOr[
-    java.lang.String | scala.Null | typingsJapgolly.rollup.mod.TransformSourceDescription
-  ]
-  type WarningHandler = js.Function1[/* warning */ typingsJapgolly.rollup.mod.RollupWarning, scala.Unit]
-  type WarningHandlerWithDefault = js.Function2[
-    /* warning */ typingsJapgolly.rollup.mod.RollupWarning, 
-    /* defaultHandler */ typingsJapgolly.rollup.mod.WarningHandler, 
-    scala.Unit
-  ]
-}
+
+inline def VERSION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[String]
+
+inline def defineConfig(options: js.Array[RollupOptions]): js.Array[RollupOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineConfig")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RollupOptions]]
+inline def defineConfig(options: RollupOptions): RollupOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("defineConfig")(options.asInstanceOf[js.Any]).asInstanceOf[RollupOptions]
+
+inline def rollup(options: RollupOptions): js.Promise[RollupBuild] = ^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RollupBuild]]
+
+inline def watch(config: js.Array[RollupWatchOptions]): RollupWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(config.asInstanceOf[js.Any]).asInstanceOf[RollupWatcher]
+inline def watch(config: RollupWatchOptions): RollupWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(config.asInstanceOf[js.Any]).asInstanceOf[RollupWatcher]
+
+type AddonFunction = js.Function1[/* chunk */ RenderedChunk, String | js.Promise[String]]
+
+type AddonHook = String | AddonHookFunction
+
+type AddonHookFunction = js.ThisFunction1[/* this */ PluginContext, /* chunk */ RenderedChunk, String | js.Promise[String]]
+
+type AwaitedEventListener[T /* <: StringDictionary[js.Function1[/* parameters */ Any, Any]] */, K /* <: /* keyof T */ String */] = js.Function1[
+/* parameters */ Parameters[
+  /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+], 
+Unit | js.Promise[Unit]]
+
+type CustomPluginOptions = StringDictionary[Any]
+
+type EmitFile = js.Function1[/* emittedFile */ EmittedFile, String]
+
+type ExternalOption = (js.Array[String | js.RegExp]) | String | js.RegExp | (js.Function3[
+/* source */ String, 
+/* importer */ js.UndefOr[String], 
+/* isResolved */ Boolean, 
+Boolean | NullValue])
+
+type GetInterop = js.Function1[/* id */ String | Null, InteropType]
+
+type GetManualChunk = js.Function2[/* id */ String, /* meta */ ManualChunkMeta, String | NullValue]
+
+type GetModuleInfo = js.Function1[/* moduleId */ String, ModuleInfo | Null]
+
+type GlobalsOption = StringDictionary[String] | (js.Function1[/* name */ String, String])
+
+type HasModuleSideEffects = js.Function2[/* id */ String, /* external */ Boolean, Boolean]
+
+type InputOption = String | js.Array[String] | StringDictionary[String]
+
+type IsExternal = js.Function3[
+/* source */ String, 
+/* importer */ js.UndefOr[String], 
+/* isResolved */ Boolean, 
+Boolean]
+
+type IsPureModule = js.Function1[/* id */ String, Boolean | NullValue]
+
+type LoadHook = js.ThisFunction1[/* this */ PluginContext, /* id */ String, LoadResult]
+
+type LoadResult = SourceDescription | String | NullValue
+
+type ManualChunksOption = StringDictionary[js.Array[String]] | GetManualChunk
+
+type MaybeArray[T] = T | js.Array[T]
+
+type MaybePromise[T] = T | js.Promise[T]
+
+type ModuleParsedHook = js.ThisFunction1[/* this */ PluginContext, /* info */ ModuleInfo, Unit]
+
+type ModuleSideEffectsOption = Boolean | `no-external` | js.Array[String] | HasModuleSideEffects
+
+// utils
+type NullValue = js.UndefOr[Null | Unit]
+
+// eslint-disable-next-line @typescript-eslint/ban-types
+type ObjectHook[T, O] = T | (Handler[T] & O)
+
+type OptionsPaths = (Record[String, String]) | (js.Function1[/* id */ String, String])
+
+type OutputBundle = StringDictionary[OutputAsset | OutputChunk]
+
+type PluginImpl[O /* <: js.Object */] = js.Function1[/* options */ js.UndefOr[O], Plugin]
+
+type PureModulesOption = Boolean | js.Array[String] | IsPureModule
+
+type RenderChunkHook = js.ThisFunction4[
+/* this */ PluginContext, 
+/* code */ String, 
+/* chunk */ RenderedChunk, 
+/* options */ NormalizedOutputOptions, 
+/* meta */ Chunks, 
+Code | String | NullValue]
+
+type ResolveDynamicImportHook = js.ThisFunction3[
+/* this */ PluginContext, 
+/* specifier */ String | AcornNode, 
+/* importer */ String, 
+/* options */ AssertionsRecord, 
+ResolveIdResult]
+
+type ResolveFileUrlHook = js.ThisFunction1[/* this */ PluginContext, /* options */ ChunkId, String | NullValue]
+
+type ResolveIdHook = js.ThisFunction3[
+/* this */ PluginContext, 
+/* source */ String, 
+/* importer */ js.UndefOr[String], 
+/* options */ Custom, 
+ResolveIdResult]
+
+/* Rewritten from type alias, can be one of: 
+  - java.lang.String
+  - typingsJapgolly.rollup.mod.NullValue
+  - typingsJapgolly.rollup.rollupBooleans.`false`
+  - typingsJapgolly.rollup.mod.PartialResolvedId
+*/
+type ResolveIdResult = _ResolveIdResult | String | NullValue
+
+type ResolveImportMetaHook = js.ThisFunction2[
+/* this */ PluginContext, 
+/* property */ String | Null, 
+/* options */ Format, 
+String | NullValue]
+
+type ResolvedIdMap = StringDictionary[ResolvedId]
+
+type RollupWarning = RollupLog
+
+type RollupWatcher = AwaitingEventEmitter[Change]
+
+type SerializablePluginCache = StringDictionary[js.Tuple2[Double, Any]]
+
+type SerializedTimings = StringDictionary[js.Tuple3[Double, Double, Double]]
+
+type ShouldTransformCachedModuleHook = js.ThisFunction1[/* this */ PluginContext, /* options */ Ast, Boolean]
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.rollup.mod.ExistingRawSourceMap
+  - java.lang.String
+  - scala.Null
+  - typingsJapgolly.rollup.anon.`2`
+*/
+type SourceMapInput = _SourceMapInput | String | Null
+
+type SourceMapSegment = js.Array[Double] | (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple5[Double, Double, Double, Double, Double])
+
+type SourcemapPathTransformOption = js.Function2[/* relativeSourcePath */ String, /* sourcemapPath */ String, String]
+
+type TransformHook = js.ThisFunction2[/* this */ TransformPluginContext, /* code */ String, /* id */ String, TransformResult]
+
+type TransformResult = String | NullValue | PartialSourceDescription
+
+type WarningHandler = js.Function1[/* warning */ RollupWarning, Unit]
+
+type WarningHandlerWithDefault = js.Function2[/* warning */ RollupWarning, /* defaultHandler */ WarningHandler, Unit]
+
+type WatchChangeHook = js.ThisFunction2[/* this */ PluginContext, /* id */ String, /* change */ Event, Unit]

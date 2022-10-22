@@ -1,20 +1,37 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "SurveyError")
 @js.native
-class SurveyError () extends js.Object {
+open class SurveyError () extends StObject {
   def this(text: String) = this()
   def this(text: String, errorOwner: ISurveyErrorOwner) = this()
-  var errorOwner: ISurveyErrorOwner = js.native
-  val locText: LocalizableString = js.native
-  var text: String = js.native
-  var visible: Boolean = js.native
+  def this(text: Unit, errorOwner: ISurveyErrorOwner) = this()
+  
+  def equalsTo(error: SurveyError): Boolean = js.native
+  
   /* protected */ def getDefaultText(): String = js.native
+  
   def getErrorType(): String = js.native
+  
+  /* protected */ def getLocale(): String = js.native
+  
+  /* protected */ def getLocalizationString(locStrName: String): String = js.native
+  
   def getText(): String = js.native
+  
+  def locText: LocalizableString = js.native
+  
+  var locTextValue: LocalizableString = js.native
+  
+  def onUpdateErrorTextCallback(error: SurveyError): Unit = js.native
+  
+  var text: String = js.native
+  
+  def updateText(): Unit = js.native
+  
+  var visible: Boolean = js.native
 }
-

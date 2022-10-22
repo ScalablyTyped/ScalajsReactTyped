@@ -1,15 +1,9 @@
 package typingsJapgolly.pulumiCloud.serviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/cloud/service", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  var HostPathVolume: HostPathVolumeConstructor = js.native
-  var Service: ServiceConstructor = js.native
-  var SharedVolume: SharedVolumeConstructor = js.native
-  var Task: TaskConstructor = js.native
-}
-
+object ^ extends StObject

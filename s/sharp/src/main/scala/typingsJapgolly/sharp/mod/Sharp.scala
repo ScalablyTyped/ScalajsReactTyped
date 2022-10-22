@@ -1,20 +1,74 @@
 package typingsJapgolly.sharp.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.node.streamMod.Duplex
-import typingsJapgolly.sharp.Anon0
-import typingsJapgolly.sharp.AnonBrightness
-import typingsJapgolly.sharp.AnonData
-import typingsJapgolly.sharp.AnonRaw
-import typingsJapgolly.sharp.AnonResolveWithObject
+import typingsJapgolly.sharp.anon.Brightness
+import typingsJapgolly.sharp.anon.Data
+import typingsJapgolly.sharp.anon.ResolveWithObject
+import typingsJapgolly.sharp.anon.`0`
+import typingsJapgolly.sharp.sharpStrings.avif
+import typingsJapgolly.sharp.sharpStrings.dz
+import typingsJapgolly.sharp.sharpStrings.fits
+import typingsJapgolly.sharp.sharpStrings.gif
+import typingsJapgolly.sharp.sharpStrings.heif
+import typingsJapgolly.sharp.sharpStrings.input
+import typingsJapgolly.sharp.sharpStrings.jpeg
+import typingsJapgolly.sharp.sharpStrings.jpg
+import typingsJapgolly.sharp.sharpStrings.magick
+import typingsJapgolly.sharp.sharpStrings.openslide
+import typingsJapgolly.sharp.sharpStrings.pdf
+import typingsJapgolly.sharp.sharpStrings.png
+import typingsJapgolly.sharp.sharpStrings.ppm
+import typingsJapgolly.sharp.sharpStrings.raw
+import typingsJapgolly.sharp.sharpStrings.svg
+import typingsJapgolly.sharp.sharpStrings.tif
+import typingsJapgolly.sharp.sharpStrings.tiff
+import typingsJapgolly.sharp.sharpStrings.v
+import typingsJapgolly.sharp.sharpStrings.webp
 import typingsJapgolly.std.ArrayLike
-import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Sharp extends Duplex {
+  
+  /**
+    * Perform an affine transform on an image. This operation will always occur after resizing, extraction and rotation, if any.
+    * You must provide an array of length 4 or a 2x2 affine transformation matrix.
+    * By default, new pixels are filled with a black background. You can provide a background color with the `background` option.
+    * A particular interpolator may also be specified. Set the `interpolator` option to an attribute of the `sharp.interpolator` Object e.g. `sharp.interpolator.nohalo`.
+    *
+    * In the case of a 2x2 matrix, the transform is:
+    * X = matrix[0, 0] * (x + idx) + matrix[0, 1] * (y + idy) + odx
+    * Y = matrix[1, 0] * (x + idx) + matrix[1, 1] * (y + idy) + ody
+    *
+    * where:
+    *
+    * x and y are the coordinates in input image.
+    * X and Y are the coordinates in output image.
+    * (0,0) is the upper left corner.
+    *
+    * @param matrix Affine transformation matrix, may either by a array of length four or a 2x2 matrix array
+    * @param options if present, is an Object with optional attributes.
+    *
+    * @returns A sharp instance that can be used to chain operations
+    */
+  def affine(matrix: js.Tuple4[Double, Double, Double, Double]): Sharp = js.native
+  def affine(matrix: js.Tuple4[Double, Double, Double, Double], options: AffineOptions): Sharp = js.native
+  def affine(matrix: Matrix2x2): Sharp = js.native
+  def affine(matrix: Matrix2x2, options: AffineOptions): Sharp = js.native
+  
+  /**
+    * Use these AVIF options for output image.
+    * Whilst it is possible to create AVIF images smaller than 16x16 pixels, most web browsers do not display these properly.
+    * @param options Output options.
+    * @throws {Error} Invalid options
+    * @returns A sharp instance that can be used to chain operations
+    */
+  def avif(): Sharp = js.native
+  def avif(options: AvifOptions): Sharp = js.native
+  
   /**
     * Perform a bitwise boolean operation on all input image channels (bands) to produce a single channel output image.
     * @param boolOp one of "and", "or" or "eor" to perform that bitwise operation, like the C logic operators &, | and ^ respectively.
@@ -22,16 +76,20 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def bandbool(boolOp: String): Sharp = js.native
+  
   /**
     * Blur the image.
     * When used without parameters, performs a fast, mild blur of the output image.
     * When a sigma is provided, performs a slower, more accurate Gaussian blur.
+    * When a boolean sigma is provided, ether blur mild or disable blur
     * @param sigma a value between 0.3 and 1000 representing the sigma of the Gaussian mask, where sigma = 1 + radius / 2.
     * @throws {Error} Invalid parameters
     * @returns A sharp instance that can be used to chain operations
     */
   def blur(): Sharp = js.native
+  def blur(sigma: Boolean): Sharp = js.native
   def blur(sigma: Double): Sharp = js.native
+  
   /**
     * Perform a bitwise boolean operation with operand image.
     * This operation creates an output image where each pixel is the result of the selected bitwise boolean operation between the corresponding pixels of the input images.
@@ -42,9 +100,21 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def boolean(operand: String, operator: String): Sharp = js.native
-  def boolean(operand: String, operator: String, options: AnonRaw): Sharp = js.native
+  def boolean(operand: String, operator: String, options: typingsJapgolly.sharp.anon.Raw): Sharp = js.native
   def boolean(operand: Buffer, operator: String): Sharp = js.native
-  def boolean(operand: Buffer, operator: String, options: AnonRaw): Sharp = js.native
+  def boolean(operand: Buffer, operator: String, options: typingsJapgolly.sharp.anon.Raw): Sharp = js.native
+  
+  /**
+    * Perform contrast limiting adaptive histogram equalization (CLAHE)
+    *
+    * This will, in general, enhance the clarity of the image by bringing out
+    * darker details. Please read more about CLAHE here:
+    * https://en.wikipedia.org/wiki/Adaptive_histogram_equalization#Contrast_Limited_AHE
+    *
+    * @param options clahe options
+    */
+  def clahe(options: ClaheOptions): Sharp = js.native
+  
   //#endregion
   //#region Composite functions
   /**
@@ -57,6 +127,7 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def composite(images: js.Array[OverlayOptions]): Sharp = js.native
+  
   /**
     * Convolve the image with the specified kernel.
     * @param kernel the specified kernel
@@ -64,11 +135,15 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def convolve(kernel: Kernel_): Sharp = js.native
+  
   /**
     * Ensure alpha channel, if missing. The added alpha channel will be fully opaque. This is a no-op if the image already has an alpha channel.
+    * @param alpha transparency level (0=fully-transparent, 1=fully-opaque) (optional, default 1).
     * @returns A sharp instance that can be used to chain operations
     */
   def ensureAlpha(): Sharp = js.native
+  def ensureAlpha(alpha: Double): Sharp = js.native
+  
   /**
     * Extends/pads the edges of the image with the provided background colour.
     * This operation will always occur after resizing and extraction, if any.
@@ -78,6 +153,7 @@ trait Sharp extends Duplex {
     */
   def extend(extend: Double): Sharp = js.native
   def extend(extend: ExtendOptions): Sharp = js.native
+  
   /**
     * Extract a region of the image.
     *  - Use extract() before resize() for pre-resize extraction.
@@ -89,6 +165,7 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def extract(region: Region): Sharp = js.native
+  
   def extractChannel(channel: String): Sharp = js.native
   /**
     * Extract a single channel from a multi-channel image.
@@ -97,6 +174,7 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def extractChannel(channel: Double): Sharp = js.native
+  
   /**
     * Merge alpha transparency channel, if any, with background.
     * @param flatten true to enable and false to disable (defaults to true)
@@ -105,6 +183,7 @@ trait Sharp extends Duplex {
   def flatten(): Sharp = js.native
   def flatten(flatten: Boolean): Sharp = js.native
   def flatten(flatten: FlattenOptions): Sharp = js.native
+  
   /**
     * Flip the image about the vertical Y axis. This always occurs after rotation, if any.
     * The use of flip implies the removal of the EXIF Orientation tag, if any.
@@ -113,6 +192,7 @@ trait Sharp extends Duplex {
     */
   def flip(): Sharp = js.native
   def flip(flip: Boolean): Sharp = js.native
+  
   /**
     * Flop the image about the horizontal X axis. This always occurs after rotation, if any.
     * The use of flop implies the removal of the EXIF Orientation tag, if any.
@@ -121,6 +201,7 @@ trait Sharp extends Duplex {
     */
   def flop(): Sharp = js.native
   def flop(flop: Boolean): Sharp = js.native
+  
   /**
     * Apply a gamma correction by reducing the encoding (darken) pre-resize at a factor of 1/gamma then increasing the encoding (brighten) post-resize at a factor of gamma.
     * This can improve the perceived brightness of a resized image in non-linear colour spaces.
@@ -131,6 +212,17 @@ trait Sharp extends Duplex {
     */
   def gamma(): Sharp = js.native
   def gamma(gamma: Double): Sharp = js.native
+  
+  /**
+    * Use these GIF options for output image.
+    * Requires libvips compiled with support for ImageMagick or GraphicsMagick. The prebuilt binaries do not include this - see installing a custom libvips.
+    * @param options Output options.
+    * @throws {Error} Invalid options
+    * @returns A sharp instance that can be used to chain operations
+    */
+  def gif(): Sharp = js.native
+  def gif(options: GifOptions): Sharp = js.native
+  
   /**
     * Alternative spelling of greyscale().
     * @param grayscale true to enable and false to disable (defaults to true)
@@ -138,6 +230,7 @@ trait Sharp extends Duplex {
     */
   def grayscale(): Sharp = js.native
   def grayscale(grayscale: Boolean): Sharp = js.native
+  
   /**
     * Convert to 8-bit greyscale; 256 shades of grey.
     * This is a linear operation.
@@ -150,13 +243,24 @@ trait Sharp extends Duplex {
     */
   def greyscale(): Sharp = js.native
   def greyscale(greyscale: Boolean): Sharp = js.native
+  
+  /**
+    * Use these HEIF options for output image.
+    * Support for patent-encumbered HEIC images requires the use of a globally-installed libvips compiled with support for libheif, libde265 and x265.
+    * @param options Output options.
+    * @throws {Error} Invalid options
+    * @returns A sharp instance that can be used to chain operations
+    */
+  def heif(): Sharp = js.native
+  def heif(options: HeifOptions): Sharp = js.native
+  
   /**
     * Join one or more channels to the image. The meaning of the added channels depends on the output colourspace, set with toColourspace().
     * By default the output image will be web-friendly sRGB, with additional channels interpreted as alpha channels. Channel ordering follows vips convention:
     *  - sRGB: 0: Red, 1: Green, 2: Blue, 3: Alpha.
     *  - CMYK: 0: Magenta, 1: Cyan, 2: Yellow, 3: Black, 4: Alpha.
     *
-    * Buffers may be any of the image formats supported by sharp: JPEG, PNG, WebP, GIF, SVG, TIFF or raw pixel image data.
+    * Buffers may be any of the image formats supported by sharp.
     * For raw pixel input, the options object should contain a raw attribute, which follows the format of the attribute of the same name in the sharp() constructor.
     * @param images one or more images (file paths, Buffers).
     * @param options image options, see sharp() constructor.
@@ -169,6 +273,16 @@ trait Sharp extends Duplex {
   def joinChannel(images: Buffer, options: SharpOptions): Sharp = js.native
   def joinChannel(images: ArrayLike[String | Buffer]): Sharp = js.native
   def joinChannel(images: ArrayLike[String | Buffer], options: SharpOptions): Sharp = js.native
+  
+  /**
+    * Use these JP2 (JPEG 2000) options for output image.
+    * @param options Output options.
+    * @throws {Error} Invalid options
+    * @returns A sharp instance that can be used to chain operations
+    */
+  def jp2(): Sharp = js.native
+  def jp2(options: Jp2Options): Sharp = js.native
+  
   /**
     * Use these JPEG options for output image.
     * @param options Output options.
@@ -177,17 +291,7 @@ trait Sharp extends Duplex {
     */
   def jpeg(): Sharp = js.native
   def jpeg(options: JpegOptions): Sharp = js.native
-  def limitInputPixels(limit: Boolean): Sharp = js.native
-  /**
-    * Do not process input images where the number of pixels (width _ height) exceeds this limit.
-    * Assumes image dimensions contained in the input metadata can be trusted.
-    * The default limit is 268402689 (0x3FFF _ 0x3FFF) pixels.
-    * @param limit An integral Number of pixels, zero or false to remove limit, true to use default limit.
-    * @throws {Error} Invalid limit
-    * @returns A sharp instance that can be used to chain operations
-    * @deprecated since version 0.24.0 - moved to @see sharp.SharpOptions
-    */
-  def limitInputPixels(limit: Double): Sharp = js.native
+  
   /**
     * Apply the linear formula a * input + b to the image (levels adjustment)
     * @param a multiplier (optional, default 1.0)
@@ -196,9 +300,17 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def linear(): Sharp = js.native
+  def linear(a: js.Array[Double]): Sharp = js.native
+  def linear(a: js.Array[Double], b: js.Array[Double]): Sharp = js.native
+  def linear(a: js.Array[Double], b: Double): Sharp = js.native
   def linear(a: Double): Sharp = js.native
+  def linear(a: Double, b: js.Array[Double]): Sharp = js.native
   def linear(a: Double, b: Double): Sharp = js.native
+  def linear(a: Null, b: js.Array[Double]): Sharp = js.native
   def linear(a: Null, b: Double): Sharp = js.native
+  def linear(a: Unit, b: js.Array[Double]): Sharp = js.native
+  def linear(a: Unit, b: Double): Sharp = js.native
+  
   /**
     * Apply median filter. When used without parameters the default window is 3x3.
     * @param size square mask size: size x size (optional, default 3)
@@ -207,6 +319,7 @@ trait Sharp extends Duplex {
     */
   def median(): Sharp = js.native
   def median(size: Double): Sharp = js.native
+  
   /**
     * Fast access to (uncached) image metadata without decoding any compressed image data.
     * @returns A promise that resolves with a metadata object
@@ -217,20 +330,25 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def metadata(callback: js.Function2[/* err */ js.Error, /* metadata */ Metadata, Unit]): Sharp = js.native
+  
   /**
-    * Transforms the image using brightness, saturation and hue rotation.
+    * Transforms the image using brightness, saturation, hue rotation and lightness.
+    * Brightness and lightness both operate on luminance, with the difference being that brightness is multiplicative whereas lightness is additive.
     * @param options describes the modulation
     * @returns A sharp instance that can be used to chain operations
     */
   def modulate(): Sharp = js.native
-  def modulate(options: AnonBrightness): Sharp = js.native
+  def modulate(options: Brightness): Sharp = js.native
+  
   /**
     * Produce the "negative" of the image.
-    * @param negate true to enable and false to disable (defaults to true)
+    * @param negate true to enable and false to disable, or an object of options (defaults to true)
     * @returns A sharp instance that can be used to chain operations
     */
   def negate(): Sharp = js.native
   def negate(negate: Boolean): Sharp = js.native
+  def negate(negate: NegateOptions): Sharp = js.native
+  
   /**
     * Enhance output image contrast by stretching its luminance to cover the full dynamic range.
     * @param normalise true to enable and false to disable (defaults to true)
@@ -238,6 +356,7 @@ trait Sharp extends Duplex {
     */
   def normalise(): Sharp = js.native
   def normalise(normalise: Boolean): Sharp = js.native
+  
   /**
     * Alternative spelling of normalise.
     * @param normalize true to enable and false to disable (defaults to true)
@@ -245,6 +364,29 @@ trait Sharp extends Duplex {
     */
   def normalize(): Sharp = js.native
   def normalize(normalize: Boolean): Sharp = js.native
+  
+  /**
+    * Alternative spelling of pipelineColourspace
+    * @param colorspace pipeline colourspace e.g. rgb16, scrgb, lab, grey16 ...
+    * @throws {Error} Invalid parameters
+    * @returns A sharp instance that can be used to chain operations
+    */
+  def pipelineColorspace(): Sharp = js.native
+  def pipelineColorspace(colorspace: String): Sharp = js.native
+  
+  /**
+    * Set the pipeline colourspace.
+    * The input image will be converted to the provided colourspace at the start of the pipeline.
+    * All operations will use this colourspace before converting to the output colourspace, as defined by toColourspace.
+    * This feature is experimental and has not yet been fully-tested with all operations.
+    *
+    * @param colourspace pipeline colourspace e.g. rgb16, scrgb, lab, grey16 ...
+    * @throws {Error} Invalid parameters
+    * @returns A sharp instance that can be used to chain operations
+    */
+  def pipelineColourspace(): Sharp = js.native
+  def pipelineColourspace(colourspace: String): Sharp = js.native
+  
   /**
     * Use these PNG options for output image.
     * PNG output is always full colour at 8 or 16 bits per pixel.
@@ -255,11 +397,16 @@ trait Sharp extends Duplex {
     */
   def png(): Sharp = js.native
   def png(options: PngOptions): Sharp = js.native
+  
   /**
     * Force output to be raw, uncompressed uint8 pixel data.
+    * @param options Raw output options.
+    * @throws {Error} Invalid options
     * @returns A sharp instance that can be used to chain operations
     */
   def raw(): Sharp = js.native
+  def raw(options: RawOptions): Sharp = js.native
+  
   /**
     * Recomb the image with the specified matrix.
     * @param inputMatrix 3x3 Recombination matrix
@@ -267,12 +414,14 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def recomb(inputMatrix: Matrix3x3): Sharp = js.native
+  
   //#region Channel functions
   /**
     * Remove alpha channel, if any. This is a no-op if the image does not have an alpha channel.
     * @returns A sharp instance that can be used to chain operations
     */
   def removeAlpha(): Sharp = js.native
+  
   //#endregion
   //#region Resize functions
   /**
@@ -321,9 +470,16 @@ trait Sharp extends Duplex {
   def resize(width: Double, height: Double): Sharp = js.native
   def resize(width: Double, height: Double, options: ResizeOptions): Sharp = js.native
   def resize(width: Double, height: Null, options: ResizeOptions): Sharp = js.native
+  def resize(width: Double, height: Unit, options: ResizeOptions): Sharp = js.native
   def resize(width: Null, height: Double): Sharp = js.native
   def resize(width: Null, height: Double, options: ResizeOptions): Sharp = js.native
   def resize(width: Null, height: Null, options: ResizeOptions): Sharp = js.native
+  def resize(width: Null, height: Unit, options: ResizeOptions): Sharp = js.native
+  def resize(width: Unit, height: Double): Sharp = js.native
+  def resize(width: Unit, height: Double, options: ResizeOptions): Sharp = js.native
+  def resize(width: Unit, height: Null, options: ResizeOptions): Sharp = js.native
+  def resize(width: Unit, height: Unit, options: ResizeOptions): Sharp = js.native
+  
   //#endregion
   //#region Operation functions
   /**
@@ -346,31 +502,27 @@ trait Sharp extends Duplex {
   def rotate(): Sharp = js.native
   def rotate(angle: Double): Sharp = js.native
   def rotate(angle: Double, options: RotateOptions): Sharp = js.native
-  /**
-    * An advanced setting that switches the libvips access method to VIPS_ACCESS_SEQUENTIAL.
-    * This will reduce memory usage and can improve performance on some systems.
-    * The default behaviour before function call is false, meaning the libvips access method is not sequential.
-    * @param sequentialRead true to enable and false to disable (defaults to true)
-    * @returns A sharp instance that can be used to chain operations
-    * @deprecated since version 0.24.0 - moved to @see sharp.SharpOptions
-    */
-  def sequentialRead(): Sharp = js.native
-  def sequentialRead(sequentialRead: Boolean): Sharp = js.native
+  def rotate(angle: Unit, options: RotateOptions): Sharp = js.native
+  
   /**
     * Sharpen the image.
     * When used without parameters, performs a fast, mild sharpen of the output image.
     * When a sigma is provided, performs a slower, more accurate sharpen of the L channel in the LAB colour space.
     * Separate control over the level of sharpening in "flat" and "jagged" areas is available.
-    * @param sigma the sigma of the Gaussian mask, where sigma = 1 + radius / 2.
-    * @param flat the level of sharpening to apply to "flat" areas. (optional, default 1.0)
-    * @param jagged the level of sharpening to apply to "jagged" areas. (optional, default 2.0)
+    * @param options if present, is an Object with optional attributes
     * @throws {Error} Invalid parameters
     * @returns A sharp instance that can be used to chain operations
     */
   def sharpen(): Sharp = js.native
+  def sharpen(options: SharpenOptions): Sharp = js.native
   def sharpen(sigma: Double): Sharp = js.native
   def sharpen(sigma: Double, flat: Double): Sharp = js.native
   def sharpen(sigma: Double, flat: Double, jagged: Double): Sharp = js.native
+  def sharpen(sigma: Double, flat: Unit, jagged: Double): Sharp = js.native
+  def sharpen(sigma: Unit, flat: Double): Sharp = js.native
+  def sharpen(sigma: Unit, flat: Double, jagged: Double): Sharp = js.native
+  def sharpen(sigma: Unit, flat: Unit, jagged: Double): Sharp = js.native
+  
   /**
     * Access to pixel-derived image statistics for every channel in the image.
     * @returns A promise that resolves with a stats object
@@ -381,6 +533,7 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def stats(callback: js.Function2[/* err */ js.Error, /* stats */ Stats, Unit]): Sharp = js.native
+  
   /**
     * Any pixel value greather than or equal to the threshold value will be set to 255, otherwise it will be set to 0.
     * @param threshold a value in the range 0-255 representing the level at which the threshold will be applied. (optional, default 128)
@@ -391,6 +544,8 @@ trait Sharp extends Duplex {
   def threshold(): Sharp = js.native
   def threshold(threshold: Double): Sharp = js.native
   def threshold(threshold: Double, options: ThresholdOptions): Sharp = js.native
+  def threshold(threshold: Unit, options: ThresholdOptions): Sharp = js.native
+  
   /**
     * Use these TIFF options for output image.
     * @param options Output options.
@@ -399,6 +554,7 @@ trait Sharp extends Duplex {
     */
   def tiff(): Sharp = js.native
   def tiff(options: TiffOptions): Sharp = js.native
+  
   /**
     * Use tile-based deep zoom (image pyramid) output.
     * Set the format and options for tile images via the toFormat, jpeg, png or webp functions.
@@ -411,6 +567,16 @@ trait Sharp extends Duplex {
     */
   def tile(): Sharp = js.native
   def tile(tile: TileOptions): Sharp = js.native
+  
+  /**
+    * Set a timeout for processing, in seconds. Use a value of zero to continue processing indefinitely, the default behaviour.
+    * The clock starts when libvips opens an input image for processing. Time spent waiting for a libuv thread to become available is not included.
+    * @param options Object with a `seconds` attribute between 0 and 3600 (number)
+    * @throws {Error} Invalid options
+    * @returns A sharp instance that can be used to chain operations
+    */
+  def timeout(options: TimeoutOptions): Sharp = js.native
+  
   //#endregion
   //#region Color functions
   /**
@@ -420,30 +586,32 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def tint(rgb: Color): Sharp = js.native
+  
   /**
-    * Write output to a Buffer. JPEG, PNG, WebP, TIFF and RAW output are supported.
-    * By default, the format will match the input image, except GIF and SVG input which become PNG output.
+    * Write output to a Buffer. JPEG, PNG, WebP, AVIF, TIFF, GIF and RAW output are supported.
+    * By default, the format will match the input image, except SVG input which becomes PNG output.
     * @param options resolve options
     * @param options.resolveWithObject Resolve the Promise with an Object containing data and info properties instead of resolving only with data.
     * @returns A promise that resolves with the Buffer data.
     */
   def toBuffer(): js.Promise[Buffer] = js.native
   /**
-    * Write output to a Buffer. JPEG, PNG, WebP, TIFF and RAW output are supported.
-    * By default, the format will match the input image, except GIF and SVG input which become PNG output.
+    * Write output to a Buffer. JPEG, PNG, WebP, AVIF, TIFF, GIF and RAW output are supported.
+    * By default, the format will match the input image, except SVG input which becomes PNG output.
     * @param callback Callback function called on completion with three arguments (err, buffer, info).
     * @returns A sharp instance that can be used to chain operations
     */
-  def toBuffer(callback: js.Function3[/* err */ Error, /* buffer */ Buffer, /* info */ OutputInfo, Unit]): Sharp = js.native
+  def toBuffer(callback: js.Function3[/* err */ js.Error, /* buffer */ Buffer, /* info */ OutputInfo, Unit]): Sharp = js.native
+  def toBuffer(options: ResolveWithObject): js.Promise[Buffer] = js.native
   /**
-    * Write output to a Buffer. JPEG, PNG, WebP, TIFF and RAW output are supported.
-    * By default, the format will match the input image, except GIF and SVG input which become PNG output.
+    * Write output to a Buffer. JPEG, PNG, WebP, AVIF, TIFF, GIF and RAW output are supported.
+    * By default, the format will match the input image, except SVG input which becomes PNG output.
     * @param options resolve options
     * @param options.resolveWithObject Resolve the Promise with an Object containing data and info properties instead of resolving only with data.
     * @returns A promise that resolves with an object containing the Buffer data and an info object containing the output image format, size (bytes), width, height and channels
     */
-  def toBuffer(options: Anon0): js.Promise[AnonData] = js.native
-  def toBuffer(options: AnonResolveWithObject): js.Promise[Buffer] = js.native
+  def toBuffer(options: `0`): js.Promise[Data] = js.native
+  
   /**
     * Alternative spelling of toColourspace().
     * @param colorspace output colorspace e.g. srgb, rgb, cmyk, lab, b-w ...
@@ -451,6 +619,7 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def toColorspace(colorspace: String): Sharp = js.native
+  
   /**
     * Set the output colourspace.
     * By default output image will be web-friendly sRGB, with additional channels interpreted as alpha channels.
@@ -460,18 +629,19 @@ trait Sharp extends Duplex {
     */
   def toColourspace(): Sharp = js.native
   def toColourspace(colourspace: String): Sharp = js.native
+  
   /**
     * Write output image data to a file.
     * @param fileOut The path to write the image data to.
     * @throws {Error} Invalid parameters
-    * @returns A promise that fulfills with an object containing informations on the resulting file
+    * @returns A promise that fulfills with an object containing information on the resulting file
     */
   def toFile(fileOut: String): js.Promise[OutputInfo] = js.native
   //#endregion
   //#region Output functions
   /**
     * Write output image data to a file.
-    * If an explicit output format is not selected, it will be inferred from the extension, with JPEG, PNG, WebP, TIFF, DZI, and libvips' V format supported.
+    * If an explicit output format is not selected, it will be inferred from the extension, with JPEG, PNG, WebP, AVIF, TIFF, DZI, and libvips' V format supported.
     * Note that raw pixel data is only supported for buffer output.
     * @param fileOut The path to write the image data to.
     * @param callback Callback function called on completion with two arguments (err, info).  info contains the output image format, size (bytes), width, height and channels.
@@ -479,6 +649,7 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def toFile(fileOut: String, callback: js.Function2[/* err */ js.Error, /* info */ OutputInfo, Unit]): Sharp = js.native
+  
   /**
     * Force output to a given format.
     * @param format a String or an Object with an 'id' attribute
@@ -486,27 +657,64 @@ trait Sharp extends Duplex {
     * @throws {Error} Unsupported format or options
     * @returns A sharp instance that can be used to chain operations
     */
-  def toFormat(format: String): Sharp = js.native
-  def toFormat(format: String, options: JpegOptions): Sharp = js.native
-  def toFormat(format: String, options: OutputOptions): Sharp = js.native
-  def toFormat(format: String, options: PngOptions): Sharp = js.native
-  def toFormat(format: String, options: TiffOptions): Sharp = js.native
-  def toFormat(format: String, options: WebpOptions): Sharp = js.native
+  def toFormat(
+    format: avif | dz | fits | gif | heif | input | jpeg | jpg | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp
+  ): Sharp = js.native
+  def toFormat(
+    format: avif | dz | fits | gif | heif | input | jpeg | jpg | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp,
+    options: AvifOptions
+  ): Sharp = js.native
+  def toFormat(
+    format: avif | dz | fits | gif | heif | input | jpeg | jpg | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp,
+    options: GifOptions
+  ): Sharp = js.native
+  def toFormat(
+    format: avif | dz | fits | gif | heif | input | jpeg | jpg | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp,
+    options: HeifOptions
+  ): Sharp = js.native
+  def toFormat(
+    format: avif | dz | fits | gif | heif | input | jpeg | jpg | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp,
+    options: JpegOptions
+  ): Sharp = js.native
+  def toFormat(
+    format: avif | dz | fits | gif | heif | input | jpeg | jpg | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp,
+    options: OutputOptions
+  ): Sharp = js.native
+  def toFormat(
+    format: avif | dz | fits | gif | heif | input | jpeg | jpg | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp,
+    options: PngOptions
+  ): Sharp = js.native
+  def toFormat(
+    format: avif | dz | fits | gif | heif | input | jpeg | jpg | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp,
+    options: TiffOptions
+  ): Sharp = js.native
+  def toFormat(
+    format: avif | dz | fits | gif | heif | input | jpeg | jpg | magick | openslide | pdf | png | ppm | raw | svg | tiff | tif | v | webp,
+    options: WebpOptions
+  ): Sharp = js.native
   def toFormat(format: AvailableFormatInfo): Sharp = js.native
+  def toFormat(format: AvailableFormatInfo, options: AvifOptions): Sharp = js.native
+  def toFormat(format: AvailableFormatInfo, options: GifOptions): Sharp = js.native
+  def toFormat(format: AvailableFormatInfo, options: HeifOptions): Sharp = js.native
   def toFormat(format: AvailableFormatInfo, options: JpegOptions): Sharp = js.native
   def toFormat(format: AvailableFormatInfo, options: OutputOptions): Sharp = js.native
   def toFormat(format: AvailableFormatInfo, options: PngOptions): Sharp = js.native
   def toFormat(format: AvailableFormatInfo, options: TiffOptions): Sharp = js.native
   def toFormat(format: AvailableFormatInfo, options: WebpOptions): Sharp = js.native
+  
   /**
-    * Trim "boring" pixels from all edges that contain values similar to the top-left pixel.
+    * Trim pixels from all edges that contain values similar to the given background colour, which defaults to that of the top-left pixel.
+    * Images with an alpha channel will use the combined bounding box of alpha and non-alpha channels.
     * The info response Object will contain trimOffsetLeft and trimOffsetTop properties.
-    * @param threshold The allowed difference from the top-left pixel, a number greater than zero. (optional, default 10)
+    * @param trim The specific background colour to trim, the threshold for doing so or an Object with both.
     * @throws {Error} Invalid parameters
     * @returns A sharp instance that can be used to chain operations
     */
   def trim(): Sharp = js.native
-  def trim(threshold: Double): Sharp = js.native
+  def trim(trim: String): Sharp = js.native
+  def trim(trim: Double): Sharp = js.native
+  def trim(trim: TrimOptions): Sharp = js.native
+  
   /**
     * Use these WebP options for output image.
     * @param options Output options.
@@ -515,6 +723,7 @@ trait Sharp extends Duplex {
     */
   def webp(): Sharp = js.native
   def webp(options: WebpOptions): Sharp = js.native
+  
   /**
     * Include all metadata (EXIF, XMP, IPTC) from the input image in the output image.
     * The default behaviour, when withMetadata is not used, is to strip all metadata and convert to the device-independent sRGB colour space.
@@ -525,4 +734,3 @@ trait Sharp extends Duplex {
   def withMetadata(): Sharp = js.native
   def withMetadata(withMetadata: WriteableMetadata): Sharp = js.native
 }
-

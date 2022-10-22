@@ -1,27 +1,45 @@
 package typingsJapgolly.lodash.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// truncate
-trait TruncateOptions extends js.Object {
-  /** The maximum string length. */
+trait TruncateOptions extends StObject {
+  
+  /**
+    * @see _.length
+    */
   var length: js.UndefOr[Double] = js.undefined
-  /** The string to indicate text is omitted. */
-  var omission: js.UndefOr[String] = js.undefined
-  /** The separator pattern to truncate to. */
-  var separator: js.UndefOr[String | js.RegExp] = js.undefined
+  
+  /**
+    * @see _.omission
+    */
+  var omission: js.UndefOr[java.lang.String] = js.undefined
+  
+  /**
+    * @see _.separator
+    */
+  var separator: js.UndefOr[java.lang.String | js.RegExp] = js.undefined
 }
-
 object TruncateOptions {
-  @scala.inline
-  def apply(length: Int | Double = null, omission: String = null, separator: String | js.RegExp = null): TruncateOptions = {
+  
+  inline def apply(): TruncateOptions = {
     val __obj = js.Dynamic.literal()
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (omission != null) __obj.updateDynamic("omission")(omission.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[TruncateOptions]
   }
+  
+  extension [Self <: TruncateOptions](x: Self) {
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    
+    inline def setOmission(value: java.lang.String): Self = StObject.set(x, "omission", value.asInstanceOf[js.Any])
+    
+    inline def setOmissionUndefined: Self = StObject.set(x, "omission", js.undefined)
+    
+    inline def setSeparator(value: java.lang.String | js.RegExp): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+  }
 }
-

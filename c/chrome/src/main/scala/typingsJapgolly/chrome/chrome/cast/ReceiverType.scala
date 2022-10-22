@@ -1,41 +1,32 @@
 package typingsJapgolly.chrome.chrome.cast
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReceiverType extends js.Object
-
+sealed trait ReceiverType extends StObject
 @JSGlobal("chrome.cast.ReceiverType")
 @js.native
-object ReceiverType extends js.Object {
-  @js.native
-  sealed trait CAST extends ReceiverType
+object ReceiverType extends StObject {
   
   @js.native
-  sealed trait CUSTOM extends ReceiverType
+  sealed trait CAST
+    extends StObject
+       with ReceiverType
   
   @js.native
-  sealed trait DIAL extends ReceiverType
+  sealed trait CUSTOM
+    extends StObject
+       with ReceiverType
   
   @js.native
-  sealed trait HANGOUT extends ReceiverType
+  sealed trait DIAL
+    extends StObject
+       with ReceiverType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ReceiverType with String] = js.native
-  /* "cast" */ @js.native
-  object CAST extends TopLevel[CAST with String]
-  
-  /* "custom" */ @js.native
-  object CUSTOM extends TopLevel[CUSTOM with String]
-  
-  /* "dial" */ @js.native
-  object DIAL extends TopLevel[DIAL with String]
-  
-  /* "hangout" */ @js.native
-  object HANGOUT extends TopLevel[HANGOUT with String]
-  
+  @js.native
+  sealed trait HANGOUT
+    extends StObject
+       with ReceiverType
 }
-

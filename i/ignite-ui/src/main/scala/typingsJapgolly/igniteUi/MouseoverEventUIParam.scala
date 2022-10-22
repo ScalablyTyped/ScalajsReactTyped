@@ -1,42 +1,54 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MouseoverEventUIParam extends js.Object {
+trait MouseoverEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the editor input field.
-  	 */
-  var editorInput: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the editor input field.
+    */
+  var editorInput: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the event target.
-  	 */
-  var element: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the event target.
+    */
+  var element: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the event object of the browser.
-  	 */
-  var originalEvent: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the event object of the browser.
+    */
+  var originalEvent: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the editor.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the editor.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object MouseoverEventUIParam {
-  @scala.inline
-  def apply(
-    editorInput: js.Any = null,
-    element: js.Any = null,
-    originalEvent: js.Any = null,
-    owner: js.Any = null
-  ): MouseoverEventUIParam = {
+  
+  inline def apply(): MouseoverEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (editorInput != null) __obj.updateDynamic("editorInput")(editorInput.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseoverEventUIParam]
   }
+  
+  extension [Self <: MouseoverEventUIParam](x: Self) {
+    
+    inline def setEditorInput(value: Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
+    
+    inline def setEditorInputUndefined: Self = StObject.set(x, "editorInput", js.undefined)
+    
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

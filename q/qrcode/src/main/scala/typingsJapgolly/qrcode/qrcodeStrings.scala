@@ -1,105 +1,154 @@
 package typingsJapgolly.qrcode
 
+import typingsJapgolly.qrcode.mod.ModeId
+import typingsJapgolly.qrcode.mod.QRCodeDataURLType
 import typingsJapgolly.qrcode.mod.QRCodeErrorCorrectionLevel
+import typingsJapgolly.qrcode.mod.QRCodeFileType
+import typingsJapgolly.qrcode.mod.QRCodeSegmentMode
+import typingsJapgolly.qrcode.mod.QRCodeStringType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object qrcodeStrings {
-  @js.native
-  sealed trait H extends QRCodeErrorCorrectionLevel
   
   @js.native
-  sealed trait L extends QRCodeErrorCorrectionLevel
+  sealed trait Alphanumeric
+    extends StObject
+       with ModeId
+  inline def Alphanumeric: Alphanumeric = "Alphanumeric".asInstanceOf[Alphanumeric]
   
   @js.native
-  sealed trait M extends QRCodeErrorCorrectionLevel
+  sealed trait Byte
+    extends StObject
+       with ModeId
+  inline def Byte: Byte = "Byte".asInstanceOf[Byte]
   
   @js.native
-  sealed trait Q extends QRCodeErrorCorrectionLevel
+  sealed trait H
+    extends StObject
+       with QRCodeErrorCorrectionLevel
+  inline def H: H = "H".asInstanceOf[H]
   
   @js.native
-  sealed trait alphanumeric extends js.Object
+  sealed trait Kanji
+    extends StObject
+       with ModeId
+  inline def Kanji: Kanji = "Kanji".asInstanceOf[Kanji]
   
   @js.native
-  sealed trait byte extends js.Object
+  sealed trait L
+    extends StObject
+       with QRCodeErrorCorrectionLevel
+  inline def L: L = "L".asInstanceOf[L]
   
   @js.native
-  sealed trait high extends QRCodeErrorCorrectionLevel
+  sealed trait M
+    extends StObject
+       with QRCodeErrorCorrectionLevel
+  inline def M: M = "M".asInstanceOf[M]
   
   @js.native
-  sealed trait imageSlashjpeg extends js.Object
+  sealed trait Numeric
+    extends StObject
+       with ModeId
+  inline def Numeric: Numeric = "Numeric".asInstanceOf[Numeric]
   
   @js.native
-  sealed trait imageSlashpng extends js.Object
+  sealed trait Q
+    extends StObject
+       with QRCodeErrorCorrectionLevel
+  inline def Q: Q = "Q".asInstanceOf[Q]
   
   @js.native
-  sealed trait imageSlashwebp extends js.Object
+  sealed trait alphanumeric_
+    extends StObject
+       with QRCodeSegmentMode
+  inline def alphanumeric_ : alphanumeric_ = "alphanumeric".asInstanceOf[alphanumeric_]
   
   @js.native
-  sealed trait kanji extends js.Object
+  sealed trait byte_
+    extends StObject
+       with QRCodeSegmentMode
+  inline def byte_ : byte_ = "byte".asInstanceOf[byte_]
   
   @js.native
-  sealed trait low extends QRCodeErrorCorrectionLevel
+  sealed trait high
+    extends StObject
+       with QRCodeErrorCorrectionLevel
+  inline def high: high = "high".asInstanceOf[high]
   
   @js.native
-  sealed trait medium extends QRCodeErrorCorrectionLevel
+  sealed trait imageSlashjpeg
+    extends StObject
+       with QRCodeDataURLType
+  inline def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
   
   @js.native
-  sealed trait numeric extends js.Object
+  sealed trait imageSlashpng
+    extends StObject
+       with QRCodeDataURLType
+  inline def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
   
   @js.native
-  sealed trait png extends js.Object
+  sealed trait imageSlashwebp
+    extends StObject
+       with QRCodeDataURLType
+  inline def imageSlashwebp: imageSlashwebp = "image/webp".asInstanceOf[imageSlashwebp]
   
   @js.native
-  sealed trait quartile extends QRCodeErrorCorrectionLevel
+  sealed trait kanji_
+    extends StObject
+       with QRCodeSegmentMode
+  inline def kanji_ : kanji_ = "kanji".asInstanceOf[kanji_]
   
   @js.native
-  sealed trait svg extends js.Object
+  sealed trait low
+    extends StObject
+       with QRCodeErrorCorrectionLevel
+  inline def low: low = "low".asInstanceOf[low]
   
   @js.native
-  sealed trait terminal extends js.Object
+  sealed trait medium
+    extends StObject
+       with QRCodeErrorCorrectionLevel
+  inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait numeric_
+    extends StObject
+       with QRCodeSegmentMode
+  inline def numeric_ : numeric_ = "numeric".asInstanceOf[numeric_]
   
-  @scala.inline
-  def H: H = "H".asInstanceOf[H]
-  @scala.inline
-  def L: L = "L".asInstanceOf[L]
-  @scala.inline
-  def M: M = "M".asInstanceOf[M]
-  @scala.inline
-  def Q: Q = "Q".asInstanceOf[Q]
-  @scala.inline
-  def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
-  @scala.inline
-  def byte: byte = "byte".asInstanceOf[byte]
-  @scala.inline
-  def high: high = "high".asInstanceOf[high]
-  @scala.inline
-  def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
-  @scala.inline
-  def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
-  @scala.inline
-  def imageSlashwebp: imageSlashwebp = "image/webp".asInstanceOf[imageSlashwebp]
-  @scala.inline
-  def kanji: kanji = "kanji".asInstanceOf[kanji]
-  @scala.inline
-  def low: low = "low".asInstanceOf[low]
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
-  @scala.inline
-  def quartile: quartile = "quartile".asInstanceOf[quartile]
-  @scala.inline
-  def svg: svg = "svg".asInstanceOf[svg]
-  @scala.inline
-  def terminal: terminal = "terminal".asInstanceOf[terminal]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  @js.native
+  sealed trait png
+    extends StObject
+       with QRCodeFileType
+  inline def png: png = "png".asInstanceOf[png]
+  
+  @js.native
+  sealed trait quartile
+    extends StObject
+       with QRCodeErrorCorrectionLevel
+  inline def quartile: quartile = "quartile".asInstanceOf[quartile]
+  
+  @js.native
+  sealed trait svg
+    extends StObject
+       with QRCodeFileType
+       with QRCodeStringType
+  inline def svg: svg = "svg".asInstanceOf[svg]
+  
+  @js.native
+  sealed trait terminal
+    extends StObject
+       with QRCodeStringType
+  inline def terminal: terminal = "terminal".asInstanceOf[terminal]
+  
+  @js.native
+  sealed trait utf8
+    extends StObject
+       with QRCodeFileType
+       with QRCodeStringType
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }
-

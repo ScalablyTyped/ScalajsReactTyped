@@ -1,25 +1,38 @@
 package typingsJapgolly.jqueryDynatree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DynaTreeAjaxOptions extends js.Object {
+trait DynaTreeAjaxOptions extends StObject {
+  
   var cache: js.UndefOr[Boolean] = js.undefined
-   // >0: Make sure we get an ajax error for invalid URLs
+  
+  // >0: Make sure we get an ajax error for invalid URLs
   var dataType: js.UndefOr[String] = js.undefined
-   // false: Append random '_' argument to the request url to prevent caching.
+  
+  // false: Append random '_' argument to the request url to prevent caching.
   var timeout: js.UndefOr[Double] = js.undefined
 }
-
 object DynaTreeAjaxOptions {
-  @scala.inline
-  def apply(cache: js.UndefOr[Boolean] = js.undefined, dataType: String = null, timeout: Int | Double = null): DynaTreeAjaxOptions = {
+  
+  inline def apply(): DynaTreeAjaxOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynaTreeAjaxOptions]
   }
+  
+  extension [Self <: DynaTreeAjaxOptions](x: Self) {
+    
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

@@ -10,941 +10,1120 @@ import typingsJapgolly.bpmnModdle.mod.ItemKind
 import typingsJapgolly.bpmnModdle.mod.MultiInstanceBehaviour
 import typingsJapgolly.bpmnModdle.mod.ProcessType
 import typingsJapgolly.bpmnModdle.mod.RelationshipDirection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bpmnModdleStrings {
-  @js.native
-  sealed trait All extends MultiInstanceBehaviour
   
   @js.native
-  sealed trait Backward extends RelationshipDirection
+  sealed trait All
+    extends StObject
+       with MultiInstanceBehaviour
+  inline def All: All = "All".asInstanceOf[All]
+  
+  @js.native
+  sealed trait Backward
+    extends StObject
+       with RelationshipDirection
+  inline def Backward: Backward = "Backward".asInstanceOf[Backward]
   
   @js.native
   sealed trait Both
-    extends AssociationDirection
+    extends StObject
+       with AssociationDirection
        with RelationshipDirection
+  inline def Both: Both = "Both".asInstanceOf[Both]
   
   @js.native
-  sealed trait Complex extends MultiInstanceBehaviour
+  sealed trait Complex
+    extends StObject
+       with MultiInstanceBehaviour
+  inline def Complex: Complex = "Complex".asInstanceOf[Complex]
   
   @js.native
-  sealed trait Converging extends GatewayDirection
+  sealed trait Converging
+    extends StObject
+       with GatewayDirection
+  inline def Converging: Converging = "Converging".asInstanceOf[Converging]
   
   @js.native
-  sealed trait Diverging extends GatewayDirection
+  sealed trait Diverging
+    extends StObject
+       with GatewayDirection
+  inline def Diverging: Diverging = "Diverging".asInstanceOf[Diverging]
   
   @js.native
-  sealed trait Exclusive extends EventBasedGatewayType
+  sealed trait Exclusive
+    extends StObject
+       with EventBasedGatewayType
+  inline def Exclusive: Exclusive = "Exclusive".asInstanceOf[Exclusive]
   
   @js.native
-  sealed trait Forward extends RelationshipDirection
+  sealed trait Forward
+    extends StObject
+       with RelationshipDirection
+  inline def Forward: Forward = "Forward".asInstanceOf[Forward]
   
   @js.native
-  sealed trait Information extends ItemKind
+  sealed trait Information
+    extends StObject
+       with ItemKind
+  inline def Information: Information = "Information".asInstanceOf[Information]
   
   @js.native
-  sealed trait Mixed extends GatewayDirection
+  sealed trait Mixed
+    extends StObject
+       with GatewayDirection
+  inline def Mixed: Mixed = "Mixed".asInstanceOf[Mixed]
   
   @js.native
-  sealed trait MultiInstanceParallel extends ChoreographyLoopType
+  sealed trait MultiInstanceParallel
+    extends StObject
+       with ChoreographyLoopType
+  inline def MultiInstanceParallel: MultiInstanceParallel = "MultiInstanceParallel".asInstanceOf[MultiInstanceParallel]
   
   @js.native
-  sealed trait MultiInstanceSequential extends ChoreographyLoopType
+  sealed trait MultiInstanceSequential
+    extends StObject
+       with ChoreographyLoopType
+  inline def MultiInstanceSequential: MultiInstanceSequential = "MultiInstanceSequential".asInstanceOf[MultiInstanceSequential]
   
   @js.native
   sealed trait None
-    extends AssociationDirection
+    extends StObject
+       with AssociationDirection
        with ChoreographyLoopType
        with MultiInstanceBehaviour
        with ProcessType
        with RelationshipDirection
+  inline def None: None = "None".asInstanceOf[None]
   
   @js.native
   sealed trait One
-    extends AssociationDirection
+    extends StObject
+       with AssociationDirection
        with MultiInstanceBehaviour
+  inline def One: One = "One".asInstanceOf[One]
   
   @js.native
   sealed trait Parallel
-    extends AdHocOrdering
+    extends StObject
+       with AdHocOrdering
        with EventBasedGatewayType
+  inline def Parallel: Parallel = "Parallel".asInstanceOf[Parallel]
   
   @js.native
-  sealed trait Physical extends ItemKind
+  sealed trait Physical
+    extends StObject
+       with ItemKind
+  inline def Physical: Physical = "Physical".asInstanceOf[Physical]
   
   @js.native
-  sealed trait Private extends ProcessType
+  sealed trait Private
+    extends StObject
+       with ProcessType
+  inline def Private: Private = "Private".asInstanceOf[Private]
   
   @js.native
-  sealed trait Public extends ProcessType
+  sealed trait Public
+    extends StObject
+       with ProcessType
+  inline def Public: Public = "Public".asInstanceOf[Public]
   
   @js.native
-  sealed trait Sequential extends AdHocOrdering
+  sealed trait Sequential
+    extends StObject
+       with AdHocOrdering
+  inline def Sequential: Sequential = "Sequential".asInstanceOf[Sequential]
   
   @js.native
-  sealed trait Standard extends ChoreographyLoopType
+  sealed trait Standard
+    extends StObject
+       with ChoreographyLoopType
+  inline def Standard: Standard = "Standard".asInstanceOf[Standard]
   
   @js.native
-  sealed trait Unspecified extends GatewayDirection
+  sealed trait Unspecified
+    extends StObject
+       with GatewayDirection
+  inline def Unspecified: Unspecified = "Unspecified".asInstanceOf[Unspecified]
   
   @js.native
-  sealed trait biocColonColoredEdge extends ElementType
+  sealed trait biocColonColoredEdge
+    extends StObject
+       with ElementType
+  inline def biocColonColoredEdge: biocColonColoredEdge = "bioc:ColoredEdge".asInstanceOf[biocColonColoredEdge]
   
   @js.native
-  sealed trait biocColonColoredShape extends ElementType
+  sealed trait biocColonColoredShape
+    extends StObject
+       with ElementType
+  inline def biocColonColoredShape: biocColonColoredShape = "bioc:ColoredShape".asInstanceOf[biocColonColoredShape]
   
   @js.native
-  sealed trait bpmnColonActivity extends ElementType
+  sealed trait bpmnColonActivity
+    extends StObject
+       with ElementType
+  inline def bpmnColonActivity: bpmnColonActivity = "bpmn:Activity".asInstanceOf[bpmnColonActivity]
   
   @js.native
-  sealed trait bpmnColonAdHocSubProcess extends ElementType
+  sealed trait bpmnColonAdHocSubProcess
+    extends StObject
+       with ElementType
+  inline def bpmnColonAdHocSubProcess: bpmnColonAdHocSubProcess = "bpmn:AdHocSubProcess".asInstanceOf[bpmnColonAdHocSubProcess]
   
   @js.native
-  sealed trait bpmnColonArtifact extends ElementType
+  sealed trait bpmnColonArtifact
+    extends StObject
+       with ElementType
+  inline def bpmnColonArtifact: bpmnColonArtifact = "bpmn:Artifact".asInstanceOf[bpmnColonArtifact]
   
   @js.native
-  sealed trait bpmnColonAssignment extends ElementType
+  sealed trait bpmnColonAssignment
+    extends StObject
+       with ElementType
+  inline def bpmnColonAssignment: bpmnColonAssignment = "bpmn:Assignment".asInstanceOf[bpmnColonAssignment]
   
   @js.native
-  sealed trait bpmnColonAssociation extends ElementType
+  sealed trait bpmnColonAssociation
+    extends StObject
+       with ElementType
+  inline def bpmnColonAssociation: bpmnColonAssociation = "bpmn:Association".asInstanceOf[bpmnColonAssociation]
   
   @js.native
-  sealed trait bpmnColonAuditing extends ElementType
+  sealed trait bpmnColonAuditing
+    extends StObject
+       with ElementType
+  inline def bpmnColonAuditing: bpmnColonAuditing = "bpmn:Auditing".asInstanceOf[bpmnColonAuditing]
   
   @js.native
-  sealed trait bpmnColonBaseElement extends ElementType
+  sealed trait bpmnColonBaseElement
+    extends StObject
+       with ElementType
+  inline def bpmnColonBaseElement: bpmnColonBaseElement = "bpmn:BaseElement".asInstanceOf[bpmnColonBaseElement]
   
   @js.native
-  sealed trait bpmnColonBoundaryEvent extends ElementType
+  sealed trait bpmnColonBoundaryEvent
+    extends StObject
+       with ElementType
+  inline def bpmnColonBoundaryEvent: bpmnColonBoundaryEvent = "bpmn:BoundaryEvent".asInstanceOf[bpmnColonBoundaryEvent]
   
   @js.native
-  sealed trait bpmnColonBusinessRuleTask extends ElementType
+  sealed trait bpmnColonBusinessRuleTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonBusinessRuleTask: bpmnColonBusinessRuleTask = "bpmn:BusinessRuleTask".asInstanceOf[bpmnColonBusinessRuleTask]
   
   @js.native
-  sealed trait bpmnColonCallActivity extends ElementType
+  sealed trait bpmnColonCallActivity
+    extends StObject
+       with ElementType
+  inline def bpmnColonCallActivity: bpmnColonCallActivity = "bpmn:CallActivity".asInstanceOf[bpmnColonCallActivity]
   
   @js.native
-  sealed trait bpmnColonCallChoreography extends ElementType
+  sealed trait bpmnColonCallChoreography
+    extends StObject
+       with ElementType
+  inline def bpmnColonCallChoreography: bpmnColonCallChoreography = "bpmn:CallChoreography".asInstanceOf[bpmnColonCallChoreography]
   
   @js.native
-  sealed trait bpmnColonCallConversation extends ElementType
+  sealed trait bpmnColonCallConversation
+    extends StObject
+       with ElementType
+  inline def bpmnColonCallConversation: bpmnColonCallConversation = "bpmn:CallConversation".asInstanceOf[bpmnColonCallConversation]
   
   @js.native
-  sealed trait bpmnColonCallableElement extends ElementType
+  sealed trait bpmnColonCallableElement
+    extends StObject
+       with ElementType
+  inline def bpmnColonCallableElement: bpmnColonCallableElement = "bpmn:CallableElement".asInstanceOf[bpmnColonCallableElement]
   
   @js.native
-  sealed trait bpmnColonCancelEventDefinition extends ElementType
+  sealed trait bpmnColonCancelEventDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonCancelEventDefinition: bpmnColonCancelEventDefinition = "bpmn:CancelEventDefinition".asInstanceOf[bpmnColonCancelEventDefinition]
   
   @js.native
-  sealed trait bpmnColonCatchEvent extends ElementType
+  sealed trait bpmnColonCatchEvent
+    extends StObject
+       with ElementType
+  inline def bpmnColonCatchEvent: bpmnColonCatchEvent = "bpmn:CatchEvent".asInstanceOf[bpmnColonCatchEvent]
   
   @js.native
-  sealed trait bpmnColonCategory extends ElementType
+  sealed trait bpmnColonCategory
+    extends StObject
+       with ElementType
+  inline def bpmnColonCategory: bpmnColonCategory = "bpmn:Category".asInstanceOf[bpmnColonCategory]
   
   @js.native
-  sealed trait bpmnColonCategoryValue extends ElementType
+  sealed trait bpmnColonCategoryValue
+    extends StObject
+       with ElementType
+  inline def bpmnColonCategoryValue: bpmnColonCategoryValue = "bpmn:CategoryValue".asInstanceOf[bpmnColonCategoryValue]
   
   @js.native
-  sealed trait bpmnColonChoreography extends ElementType
+  sealed trait bpmnColonChoreography
+    extends StObject
+       with ElementType
+  inline def bpmnColonChoreography: bpmnColonChoreography = "bpmn:Choreography".asInstanceOf[bpmnColonChoreography]
   
   @js.native
-  sealed trait bpmnColonChoreographyActivity extends ElementType
+  sealed trait bpmnColonChoreographyActivity
+    extends StObject
+       with ElementType
+  inline def bpmnColonChoreographyActivity: bpmnColonChoreographyActivity = "bpmn:ChoreographyActivity".asInstanceOf[bpmnColonChoreographyActivity]
   
   @js.native
-  sealed trait bpmnColonChoreographyTask extends ElementType
+  sealed trait bpmnColonChoreographyTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonChoreographyTask: bpmnColonChoreographyTask = "bpmn:ChoreographyTask".asInstanceOf[bpmnColonChoreographyTask]
   
   @js.native
-  sealed trait bpmnColonCollaboration extends ElementType
+  sealed trait bpmnColonCollaboration
+    extends StObject
+       with ElementType
+  inline def bpmnColonCollaboration: bpmnColonCollaboration = "bpmn:Collaboration".asInstanceOf[bpmnColonCollaboration]
   
   @js.native
-  sealed trait bpmnColonCompensateEventDefinition extends ElementType
+  sealed trait bpmnColonCompensateEventDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonCompensateEventDefinition: bpmnColonCompensateEventDefinition = "bpmn:CompensateEventDefinition".asInstanceOf[bpmnColonCompensateEventDefinition]
   
   @js.native
-  sealed trait bpmnColonComplexBehaviorDefinition extends ElementType
+  sealed trait bpmnColonComplexBehaviorDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonComplexBehaviorDefinition: bpmnColonComplexBehaviorDefinition = "bpmn:ComplexBehaviorDefinition".asInstanceOf[bpmnColonComplexBehaviorDefinition]
   
   @js.native
-  sealed trait bpmnColonComplexGateway extends ElementType
+  sealed trait bpmnColonComplexGateway
+    extends StObject
+       with ElementType
+  inline def bpmnColonComplexGateway: bpmnColonComplexGateway = "bpmn:ComplexGateway".asInstanceOf[bpmnColonComplexGateway]
   
   @js.native
-  sealed trait bpmnColonConditionalEventDefinition extends ElementType
+  sealed trait bpmnColonConditionalEventDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonConditionalEventDefinition: bpmnColonConditionalEventDefinition = "bpmn:ConditionalEventDefinition".asInstanceOf[bpmnColonConditionalEventDefinition]
   
   @js.native
-  sealed trait bpmnColonConversation extends ElementType
+  sealed trait bpmnColonConversation
+    extends StObject
+       with ElementType
+  inline def bpmnColonConversation: bpmnColonConversation = "bpmn:Conversation".asInstanceOf[bpmnColonConversation]
   
   @js.native
-  sealed trait bpmnColonConversationAssociation extends ElementType
+  sealed trait bpmnColonConversationAssociation
+    extends StObject
+       with ElementType
+  inline def bpmnColonConversationAssociation: bpmnColonConversationAssociation = "bpmn:ConversationAssociation".asInstanceOf[bpmnColonConversationAssociation]
   
   @js.native
-  sealed trait bpmnColonConversationLink extends ElementType
+  sealed trait bpmnColonConversationLink
+    extends StObject
+       with ElementType
+  inline def bpmnColonConversationLink: bpmnColonConversationLink = "bpmn:ConversationLink".asInstanceOf[bpmnColonConversationLink]
   
   @js.native
-  sealed trait bpmnColonConversationNode extends ElementType
+  sealed trait bpmnColonConversationNode
+    extends StObject
+       with ElementType
+  inline def bpmnColonConversationNode: bpmnColonConversationNode = "bpmn:ConversationNode".asInstanceOf[bpmnColonConversationNode]
   
   @js.native
-  sealed trait bpmnColonCorrelationKey extends ElementType
+  sealed trait bpmnColonCorrelationKey
+    extends StObject
+       with ElementType
+  inline def bpmnColonCorrelationKey: bpmnColonCorrelationKey = "bpmn:CorrelationKey".asInstanceOf[bpmnColonCorrelationKey]
   
   @js.native
-  sealed trait bpmnColonCorrelationProperty extends ElementType
+  sealed trait bpmnColonCorrelationProperty
+    extends StObject
+       with ElementType
+  inline def bpmnColonCorrelationProperty: bpmnColonCorrelationProperty = "bpmn:CorrelationProperty".asInstanceOf[bpmnColonCorrelationProperty]
   
   @js.native
-  sealed trait bpmnColonCorrelationPropertyBinding extends ElementType
+  sealed trait bpmnColonCorrelationPropertyBinding
+    extends StObject
+       with ElementType
+  inline def bpmnColonCorrelationPropertyBinding: bpmnColonCorrelationPropertyBinding = "bpmn:CorrelationPropertyBinding".asInstanceOf[bpmnColonCorrelationPropertyBinding]
   
   @js.native
-  sealed trait bpmnColonCorrelationPropertyRetrievalExpression extends ElementType
+  sealed trait bpmnColonCorrelationPropertyRetrievalExpression
+    extends StObject
+       with ElementType
+  inline def bpmnColonCorrelationPropertyRetrievalExpression: bpmnColonCorrelationPropertyRetrievalExpression = "bpmn:CorrelationPropertyRetrievalExpression".asInstanceOf[bpmnColonCorrelationPropertyRetrievalExpression]
   
   @js.native
-  sealed trait bpmnColonCorrelationSubscription extends ElementType
+  sealed trait bpmnColonCorrelationSubscription
+    extends StObject
+       with ElementType
+  inline def bpmnColonCorrelationSubscription: bpmnColonCorrelationSubscription = "bpmn:CorrelationSubscription".asInstanceOf[bpmnColonCorrelationSubscription]
   
   @js.native
-  sealed trait bpmnColonDataAssociation extends ElementType
+  sealed trait bpmnColonDataAssociation
+    extends StObject
+       with ElementType
+  inline def bpmnColonDataAssociation: bpmnColonDataAssociation = "bpmn:DataAssociation".asInstanceOf[bpmnColonDataAssociation]
   
   @js.native
-  sealed trait bpmnColonDataInput extends ElementType
+  sealed trait bpmnColonDataInput
+    extends StObject
+       with ElementType
+  inline def bpmnColonDataInput: bpmnColonDataInput = "bpmn:DataInput".asInstanceOf[bpmnColonDataInput]
   
   @js.native
-  sealed trait bpmnColonDataInputAssociation extends ElementType
+  sealed trait bpmnColonDataInputAssociation
+    extends StObject
+       with ElementType
+  inline def bpmnColonDataInputAssociation: bpmnColonDataInputAssociation = "bpmn:DataInputAssociation".asInstanceOf[bpmnColonDataInputAssociation]
   
   @js.native
-  sealed trait bpmnColonDataObject extends ElementType
+  sealed trait bpmnColonDataObject
+    extends StObject
+       with ElementType
+  inline def bpmnColonDataObject: bpmnColonDataObject = "bpmn:DataObject".asInstanceOf[bpmnColonDataObject]
   
   @js.native
-  sealed trait bpmnColonDataObjectReference extends ElementType
+  sealed trait bpmnColonDataObjectReference
+    extends StObject
+       with ElementType
+  inline def bpmnColonDataObjectReference: bpmnColonDataObjectReference = "bpmn:DataObjectReference".asInstanceOf[bpmnColonDataObjectReference]
   
   @js.native
-  sealed trait bpmnColonDataOutput extends ElementType
+  sealed trait bpmnColonDataOutput
+    extends StObject
+       with ElementType
+  inline def bpmnColonDataOutput: bpmnColonDataOutput = "bpmn:DataOutput".asInstanceOf[bpmnColonDataOutput]
   
   @js.native
-  sealed trait bpmnColonDataOutputAssociation extends ElementType
+  sealed trait bpmnColonDataOutputAssociation
+    extends StObject
+       with ElementType
+  inline def bpmnColonDataOutputAssociation: bpmnColonDataOutputAssociation = "bpmn:DataOutputAssociation".asInstanceOf[bpmnColonDataOutputAssociation]
   
   @js.native
-  sealed trait bpmnColonDataState extends ElementType
+  sealed trait bpmnColonDataState
+    extends StObject
+       with ElementType
+  inline def bpmnColonDataState: bpmnColonDataState = "bpmn:DataState".asInstanceOf[bpmnColonDataState]
   
   @js.native
-  sealed trait bpmnColonDataStore extends ElementType
+  sealed trait bpmnColonDataStore
+    extends StObject
+       with ElementType
+  inline def bpmnColonDataStore: bpmnColonDataStore = "bpmn:DataStore".asInstanceOf[bpmnColonDataStore]
   
   @js.native
-  sealed trait bpmnColonDataStoreReference extends ElementType
+  sealed trait bpmnColonDataStoreReference
+    extends StObject
+       with ElementType
+  inline def bpmnColonDataStoreReference: bpmnColonDataStoreReference = "bpmn:DataStoreReference".asInstanceOf[bpmnColonDataStoreReference]
   
   @js.native
-  sealed trait bpmnColonDefinitions extends ElementType
+  sealed trait bpmnColonDefinitions
+    extends StObject
+       with ElementType
+  inline def bpmnColonDefinitions: bpmnColonDefinitions = "bpmn:Definitions".asInstanceOf[bpmnColonDefinitions]
   
   @js.native
-  sealed trait bpmnColonDocumentation extends ElementType
+  sealed trait bpmnColonDocumentation
+    extends StObject
+       with ElementType
+  inline def bpmnColonDocumentation: bpmnColonDocumentation = "bpmn:Documentation".asInstanceOf[bpmnColonDocumentation]
   
   @js.native
-  sealed trait bpmnColonEndEvent extends ElementType
+  sealed trait bpmnColonEndEvent
+    extends StObject
+       with ElementType
+  inline def bpmnColonEndEvent: bpmnColonEndEvent = "bpmn:EndEvent".asInstanceOf[bpmnColonEndEvent]
   
   @js.native
-  sealed trait bpmnColonEndPoint extends ElementType
+  sealed trait bpmnColonEndPoint
+    extends StObject
+       with ElementType
+  inline def bpmnColonEndPoint: bpmnColonEndPoint = "bpmn:EndPoint".asInstanceOf[bpmnColonEndPoint]
   
   @js.native
-  sealed trait bpmnColonError extends ElementType
+  sealed trait bpmnColonError
+    extends StObject
+       with ElementType
+  inline def bpmnColonError: bpmnColonError = "bpmn:Error".asInstanceOf[bpmnColonError]
   
   @js.native
-  sealed trait bpmnColonErrorEventDefinition extends ElementType
+  sealed trait bpmnColonErrorEventDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonErrorEventDefinition: bpmnColonErrorEventDefinition = "bpmn:ErrorEventDefinition".asInstanceOf[bpmnColonErrorEventDefinition]
   
   @js.native
-  sealed trait bpmnColonEscalation extends ElementType
+  sealed trait bpmnColonEscalation
+    extends StObject
+       with ElementType
+  inline def bpmnColonEscalation: bpmnColonEscalation = "bpmn:Escalation".asInstanceOf[bpmnColonEscalation]
   
   @js.native
-  sealed trait bpmnColonEscalationEventDefinition extends ElementType
+  sealed trait bpmnColonEscalationEventDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonEscalationEventDefinition: bpmnColonEscalationEventDefinition = "bpmn:EscalationEventDefinition".asInstanceOf[bpmnColonEscalationEventDefinition]
   
   @js.native
-  sealed trait bpmnColonEvent extends ElementType
+  sealed trait bpmnColonEvent
+    extends StObject
+       with ElementType
+  inline def bpmnColonEvent: bpmnColonEvent = "bpmn:Event".asInstanceOf[bpmnColonEvent]
   
   @js.native
-  sealed trait bpmnColonEventBasedGateway extends ElementType
+  sealed trait bpmnColonEventBasedGateway
+    extends StObject
+       with ElementType
+  inline def bpmnColonEventBasedGateway: bpmnColonEventBasedGateway = "bpmn:EventBasedGateway".asInstanceOf[bpmnColonEventBasedGateway]
   
   @js.native
-  sealed trait bpmnColonEventDefinition extends ElementType
+  sealed trait bpmnColonEventDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonEventDefinition: bpmnColonEventDefinition = "bpmn:EventDefinition".asInstanceOf[bpmnColonEventDefinition]
   
   @js.native
-  sealed trait bpmnColonExclusiveGateway extends ElementType
+  sealed trait bpmnColonExclusiveGateway
+    extends StObject
+       with ElementType
+  inline def bpmnColonExclusiveGateway: bpmnColonExclusiveGateway = "bpmn:ExclusiveGateway".asInstanceOf[bpmnColonExclusiveGateway]
   
   @js.native
-  sealed trait bpmnColonExpression extends ElementType
+  sealed trait bpmnColonExpression
+    extends StObject
+       with ElementType
+  inline def bpmnColonExpression: bpmnColonExpression = "bpmn:Expression".asInstanceOf[bpmnColonExpression]
   
   @js.native
-  sealed trait bpmnColonExtension extends ElementType
+  sealed trait bpmnColonExtension
+    extends StObject
+       with ElementType
+  inline def bpmnColonExtension: bpmnColonExtension = "bpmn:Extension".asInstanceOf[bpmnColonExtension]
   
   @js.native
-  sealed trait bpmnColonExtensionAttributeDefinition extends ElementType
+  sealed trait bpmnColonExtensionAttributeDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonExtensionAttributeDefinition: bpmnColonExtensionAttributeDefinition = "bpmn:ExtensionAttributeDefinition".asInstanceOf[bpmnColonExtensionAttributeDefinition]
   
   @js.native
-  sealed trait bpmnColonExtensionDefinition extends ElementType
+  sealed trait bpmnColonExtensionDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonExtensionDefinition: bpmnColonExtensionDefinition = "bpmn:ExtensionDefinition".asInstanceOf[bpmnColonExtensionDefinition]
   
   @js.native
-  sealed trait bpmnColonExtensionElements extends ElementType
+  sealed trait bpmnColonExtensionElements
+    extends StObject
+       with ElementType
+  inline def bpmnColonExtensionElements: bpmnColonExtensionElements = "bpmn:ExtensionElements".asInstanceOf[bpmnColonExtensionElements]
   
   @js.native
-  sealed trait bpmnColonFlowElement extends ElementType
+  sealed trait bpmnColonFlowElement
+    extends StObject
+       with ElementType
+  inline def bpmnColonFlowElement: bpmnColonFlowElement = "bpmn:FlowElement".asInstanceOf[bpmnColonFlowElement]
   
   @js.native
-  sealed trait bpmnColonFlowElementsContainer extends ElementType
+  sealed trait bpmnColonFlowElementsContainer
+    extends StObject
+       with ElementType
+  inline def bpmnColonFlowElementsContainer: bpmnColonFlowElementsContainer = "bpmn:FlowElementsContainer".asInstanceOf[bpmnColonFlowElementsContainer]
   
   @js.native
-  sealed trait bpmnColonFlowNode extends ElementType
+  sealed trait bpmnColonFlowNode
+    extends StObject
+       with ElementType
+  inline def bpmnColonFlowNode: bpmnColonFlowNode = "bpmn:FlowNode".asInstanceOf[bpmnColonFlowNode]
   
   @js.native
-  sealed trait bpmnColonFormalExpression extends ElementType
+  sealed trait bpmnColonFormalExpression
+    extends StObject
+       with ElementType
+  inline def bpmnColonFormalExpression: bpmnColonFormalExpression = "bpmn:FormalExpression".asInstanceOf[bpmnColonFormalExpression]
   
   @js.native
-  sealed trait bpmnColonGateway extends ElementType
+  sealed trait bpmnColonGateway
+    extends StObject
+       with ElementType
+  inline def bpmnColonGateway: bpmnColonGateway = "bpmn:Gateway".asInstanceOf[bpmnColonGateway]
   
   @js.native
-  sealed trait bpmnColonGlobalBusinessRuleTask extends ElementType
+  sealed trait bpmnColonGlobalBusinessRuleTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonGlobalBusinessRuleTask: bpmnColonGlobalBusinessRuleTask = "bpmn:GlobalBusinessRuleTask".asInstanceOf[bpmnColonGlobalBusinessRuleTask]
   
   @js.native
-  sealed trait bpmnColonGlobalChoreographyTask extends ElementType
+  sealed trait bpmnColonGlobalChoreographyTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonGlobalChoreographyTask: bpmnColonGlobalChoreographyTask = "bpmn:GlobalChoreographyTask".asInstanceOf[bpmnColonGlobalChoreographyTask]
   
   @js.native
-  sealed trait bpmnColonGlobalConversation extends ElementType
+  sealed trait bpmnColonGlobalConversation
+    extends StObject
+       with ElementType
+  inline def bpmnColonGlobalConversation: bpmnColonGlobalConversation = "bpmn:GlobalConversation".asInstanceOf[bpmnColonGlobalConversation]
   
   @js.native
-  sealed trait bpmnColonGlobalManualTask extends ElementType
+  sealed trait bpmnColonGlobalManualTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonGlobalManualTask: bpmnColonGlobalManualTask = "bpmn:GlobalManualTask".asInstanceOf[bpmnColonGlobalManualTask]
   
   @js.native
-  sealed trait bpmnColonGlobalScriptTask extends ElementType
+  sealed trait bpmnColonGlobalScriptTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonGlobalScriptTask: bpmnColonGlobalScriptTask = "bpmn:GlobalScriptTask".asInstanceOf[bpmnColonGlobalScriptTask]
   
   @js.native
-  sealed trait bpmnColonGlobalTask extends ElementType
+  sealed trait bpmnColonGlobalTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonGlobalTask: bpmnColonGlobalTask = "bpmn:GlobalTask".asInstanceOf[bpmnColonGlobalTask]
   
   @js.native
-  sealed trait bpmnColonGlobalUserTask extends ElementType
+  sealed trait bpmnColonGlobalUserTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonGlobalUserTask: bpmnColonGlobalUserTask = "bpmn:GlobalUserTask".asInstanceOf[bpmnColonGlobalUserTask]
   
   @js.native
-  sealed trait bpmnColonGroup extends ElementType
+  sealed trait bpmnColonGroup
+    extends StObject
+       with ElementType
+  inline def bpmnColonGroup: bpmnColonGroup = "bpmn:Group".asInstanceOf[bpmnColonGroup]
   
   @js.native
-  sealed trait bpmnColonHumanPerformer extends ElementType
+  sealed trait bpmnColonHumanPerformer
+    extends StObject
+       with ElementType
+  inline def bpmnColonHumanPerformer: bpmnColonHumanPerformer = "bpmn:HumanPerformer".asInstanceOf[bpmnColonHumanPerformer]
   
   @js.native
-  sealed trait bpmnColonImplicitThrowEvent extends ElementType
+  sealed trait bpmnColonImplicitThrowEvent
+    extends StObject
+       with ElementType
+  inline def bpmnColonImplicitThrowEvent: bpmnColonImplicitThrowEvent = "bpmn:ImplicitThrowEvent".asInstanceOf[bpmnColonImplicitThrowEvent]
   
   @js.native
-  sealed trait bpmnColonImport extends ElementType
+  sealed trait bpmnColonImport
+    extends StObject
+       with ElementType
+  inline def bpmnColonImport: bpmnColonImport = "bpmn:Import".asInstanceOf[bpmnColonImport]
   
   @js.native
-  sealed trait bpmnColonInclusiveGateway extends ElementType
+  sealed trait bpmnColonInclusiveGateway
+    extends StObject
+       with ElementType
+  inline def bpmnColonInclusiveGateway: bpmnColonInclusiveGateway = "bpmn:InclusiveGateway".asInstanceOf[bpmnColonInclusiveGateway]
   
   @js.native
-  sealed trait bpmnColonInputOutputBinding extends ElementType
+  sealed trait bpmnColonInputOutputBinding
+    extends StObject
+       with ElementType
+  inline def bpmnColonInputOutputBinding: bpmnColonInputOutputBinding = "bpmn:InputOutputBinding".asInstanceOf[bpmnColonInputOutputBinding]
   
   @js.native
-  sealed trait bpmnColonInputOutputSpecification extends ElementType
+  sealed trait bpmnColonInputOutputSpecification
+    extends StObject
+       with ElementType
+  inline def bpmnColonInputOutputSpecification: bpmnColonInputOutputSpecification = "bpmn:InputOutputSpecification".asInstanceOf[bpmnColonInputOutputSpecification]
   
   @js.native
-  sealed trait bpmnColonInputSet extends ElementType
+  sealed trait bpmnColonInputSet
+    extends StObject
+       with ElementType
+  inline def bpmnColonInputSet: bpmnColonInputSet = "bpmn:InputSet".asInstanceOf[bpmnColonInputSet]
   
   @js.native
-  sealed trait bpmnColonInteractionNode extends ElementType
+  sealed trait bpmnColonInteractionNode
+    extends StObject
+       with ElementType
+  inline def bpmnColonInteractionNode: bpmnColonInteractionNode = "bpmn:InteractionNode".asInstanceOf[bpmnColonInteractionNode]
   
   @js.native
-  sealed trait bpmnColonInterface extends ElementType
+  sealed trait bpmnColonInterface
+    extends StObject
+       with ElementType
+  inline def bpmnColonInterface: bpmnColonInterface = "bpmn:Interface".asInstanceOf[bpmnColonInterface]
   
   @js.native
-  sealed trait bpmnColonIntermediateCatchEvent extends ElementType
+  sealed trait bpmnColonIntermediateCatchEvent
+    extends StObject
+       with ElementType
+  inline def bpmnColonIntermediateCatchEvent: bpmnColonIntermediateCatchEvent = "bpmn:IntermediateCatchEvent".asInstanceOf[bpmnColonIntermediateCatchEvent]
   
   @js.native
-  sealed trait bpmnColonIntermediateThrowEvent extends ElementType
+  sealed trait bpmnColonIntermediateThrowEvent
+    extends StObject
+       with ElementType
+  inline def bpmnColonIntermediateThrowEvent: bpmnColonIntermediateThrowEvent = "bpmn:IntermediateThrowEvent".asInstanceOf[bpmnColonIntermediateThrowEvent]
   
   @js.native
-  sealed trait bpmnColonItemAwareElement extends ElementType
+  sealed trait bpmnColonItemAwareElement
+    extends StObject
+       with ElementType
+  inline def bpmnColonItemAwareElement: bpmnColonItemAwareElement = "bpmn:ItemAwareElement".asInstanceOf[bpmnColonItemAwareElement]
   
   @js.native
-  sealed trait bpmnColonItemDefinition extends ElementType
+  sealed trait bpmnColonItemDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonItemDefinition: bpmnColonItemDefinition = "bpmn:ItemDefinition".asInstanceOf[bpmnColonItemDefinition]
   
   @js.native
-  sealed trait bpmnColonLane extends ElementType
+  sealed trait bpmnColonLane
+    extends StObject
+       with ElementType
+  inline def bpmnColonLane: bpmnColonLane = "bpmn:Lane".asInstanceOf[bpmnColonLane]
   
   @js.native
-  sealed trait bpmnColonLaneSet extends ElementType
+  sealed trait bpmnColonLaneSet
+    extends StObject
+       with ElementType
+  inline def bpmnColonLaneSet: bpmnColonLaneSet = "bpmn:LaneSet".asInstanceOf[bpmnColonLaneSet]
   
   @js.native
-  sealed trait bpmnColonLinkEventDefinition extends ElementType
+  sealed trait bpmnColonLinkEventDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonLinkEventDefinition: bpmnColonLinkEventDefinition = "bpmn:LinkEventDefinition".asInstanceOf[bpmnColonLinkEventDefinition]
   
   @js.native
-  sealed trait bpmnColonLoopCharacteristics extends ElementType
+  sealed trait bpmnColonLoopCharacteristics
+    extends StObject
+       with ElementType
+  inline def bpmnColonLoopCharacteristics: bpmnColonLoopCharacteristics = "bpmn:LoopCharacteristics".asInstanceOf[bpmnColonLoopCharacteristics]
   
   @js.native
-  sealed trait bpmnColonManualTask extends ElementType
+  sealed trait bpmnColonManualTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonManualTask: bpmnColonManualTask = "bpmn:ManualTask".asInstanceOf[bpmnColonManualTask]
   
   @js.native
-  sealed trait bpmnColonMessage extends ElementType
+  sealed trait bpmnColonMessage
+    extends StObject
+       with ElementType
+  inline def bpmnColonMessage: bpmnColonMessage = "bpmn:Message".asInstanceOf[bpmnColonMessage]
   
   @js.native
-  sealed trait bpmnColonMessageEventDefinition extends ElementType
+  sealed trait bpmnColonMessageEventDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonMessageEventDefinition: bpmnColonMessageEventDefinition = "bpmn:MessageEventDefinition".asInstanceOf[bpmnColonMessageEventDefinition]
   
   @js.native
-  sealed trait bpmnColonMessageFlow extends ElementType
+  sealed trait bpmnColonMessageFlow
+    extends StObject
+       with ElementType
+  inline def bpmnColonMessageFlow: bpmnColonMessageFlow = "bpmn:MessageFlow".asInstanceOf[bpmnColonMessageFlow]
   
   @js.native
-  sealed trait bpmnColonMessageFlowAssociation extends ElementType
+  sealed trait bpmnColonMessageFlowAssociation
+    extends StObject
+       with ElementType
+  inline def bpmnColonMessageFlowAssociation: bpmnColonMessageFlowAssociation = "bpmn:MessageFlowAssociation".asInstanceOf[bpmnColonMessageFlowAssociation]
   
   @js.native
-  sealed trait bpmnColonMonitoring extends ElementType
+  sealed trait bpmnColonMonitoring
+    extends StObject
+       with ElementType
+  inline def bpmnColonMonitoring: bpmnColonMonitoring = "bpmn:Monitoring".asInstanceOf[bpmnColonMonitoring]
   
   @js.native
-  sealed trait bpmnColonMultiInstanceLoopCharacteristics extends ElementType
+  sealed trait bpmnColonMultiInstanceLoopCharacteristics
+    extends StObject
+       with ElementType
+  inline def bpmnColonMultiInstanceLoopCharacteristics: bpmnColonMultiInstanceLoopCharacteristics = "bpmn:MultiInstanceLoopCharacteristics".asInstanceOf[bpmnColonMultiInstanceLoopCharacteristics]
   
   @js.native
-  sealed trait bpmnColonOperation extends ElementType
+  sealed trait bpmnColonOperation
+    extends StObject
+       with ElementType
+  inline def bpmnColonOperation: bpmnColonOperation = "bpmn:Operation".asInstanceOf[bpmnColonOperation]
   
   @js.native
-  sealed trait bpmnColonOutputSet extends ElementType
+  sealed trait bpmnColonOutputSet
+    extends StObject
+       with ElementType
+  inline def bpmnColonOutputSet: bpmnColonOutputSet = "bpmn:OutputSet".asInstanceOf[bpmnColonOutputSet]
   
   @js.native
-  sealed trait bpmnColonParallelGateway extends ElementType
+  sealed trait bpmnColonParallelGateway
+    extends StObject
+       with ElementType
+  inline def bpmnColonParallelGateway: bpmnColonParallelGateway = "bpmn:ParallelGateway".asInstanceOf[bpmnColonParallelGateway]
   
   @js.native
-  sealed trait bpmnColonParticipant extends ElementType
+  sealed trait bpmnColonParticipant
+    extends StObject
+       with ElementType
+  inline def bpmnColonParticipant: bpmnColonParticipant = "bpmn:Participant".asInstanceOf[bpmnColonParticipant]
   
   @js.native
-  sealed trait bpmnColonParticipantAssociation extends ElementType
+  sealed trait bpmnColonParticipantAssociation
+    extends StObject
+       with ElementType
+  inline def bpmnColonParticipantAssociation: bpmnColonParticipantAssociation = "bpmn:ParticipantAssociation".asInstanceOf[bpmnColonParticipantAssociation]
   
   @js.native
-  sealed trait bpmnColonParticipantMultiplicity extends ElementType
+  sealed trait bpmnColonParticipantMultiplicity
+    extends StObject
+       with ElementType
+  inline def bpmnColonParticipantMultiplicity: bpmnColonParticipantMultiplicity = "bpmn:ParticipantMultiplicity".asInstanceOf[bpmnColonParticipantMultiplicity]
   
   @js.native
-  sealed trait bpmnColonPartnerEntity extends ElementType
+  sealed trait bpmnColonPartnerEntity
+    extends StObject
+       with ElementType
+  inline def bpmnColonPartnerEntity: bpmnColonPartnerEntity = "bpmn:PartnerEntity".asInstanceOf[bpmnColonPartnerEntity]
   
   @js.native
-  sealed trait bpmnColonPartnerRole extends ElementType
+  sealed trait bpmnColonPartnerRole
+    extends StObject
+       with ElementType
+  inline def bpmnColonPartnerRole: bpmnColonPartnerRole = "bpmn:PartnerRole".asInstanceOf[bpmnColonPartnerRole]
   
   @js.native
-  sealed trait bpmnColonPerformer extends ElementType
+  sealed trait bpmnColonPerformer
+    extends StObject
+       with ElementType
+  inline def bpmnColonPerformer: bpmnColonPerformer = "bpmn:Performer".asInstanceOf[bpmnColonPerformer]
   
   @js.native
-  sealed trait bpmnColonPotentialOwner extends ElementType
+  sealed trait bpmnColonPotentialOwner
+    extends StObject
+       with ElementType
+  inline def bpmnColonPotentialOwner: bpmnColonPotentialOwner = "bpmn:PotentialOwner".asInstanceOf[bpmnColonPotentialOwner]
   
   @js.native
-  sealed trait bpmnColonProcess extends ElementType
+  sealed trait bpmnColonProcess
+    extends StObject
+       with ElementType
+  inline def bpmnColonProcess: bpmnColonProcess = "bpmn:Process".asInstanceOf[bpmnColonProcess]
   
   @js.native
-  sealed trait bpmnColonProperty extends ElementType
+  sealed trait bpmnColonProperty
+    extends StObject
+       with ElementType
+  inline def bpmnColonProperty: bpmnColonProperty = "bpmn:Property".asInstanceOf[bpmnColonProperty]
   
   @js.native
-  sealed trait bpmnColonReceiveTask extends ElementType
+  sealed trait bpmnColonReceiveTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonReceiveTask: bpmnColonReceiveTask = "bpmn:ReceiveTask".asInstanceOf[bpmnColonReceiveTask]
   
   @js.native
-  sealed trait bpmnColonRelationship extends ElementType
+  sealed trait bpmnColonRelationship
+    extends StObject
+       with ElementType
+  inline def bpmnColonRelationship: bpmnColonRelationship = "bpmn:Relationship".asInstanceOf[bpmnColonRelationship]
   
   @js.native
-  sealed trait bpmnColonRendering extends ElementType
+  sealed trait bpmnColonRendering
+    extends StObject
+       with ElementType
+  inline def bpmnColonRendering: bpmnColonRendering = "bpmn:Rendering".asInstanceOf[bpmnColonRendering]
   
   @js.native
-  sealed trait bpmnColonResource extends ElementType
+  sealed trait bpmnColonResource
+    extends StObject
+       with ElementType
+  inline def bpmnColonResource: bpmnColonResource = "bpmn:Resource".asInstanceOf[bpmnColonResource]
   
   @js.native
-  sealed trait bpmnColonResourceAssignmentExpression extends ElementType
+  sealed trait bpmnColonResourceAssignmentExpression
+    extends StObject
+       with ElementType
+  inline def bpmnColonResourceAssignmentExpression: bpmnColonResourceAssignmentExpression = "bpmn:ResourceAssignmentExpression".asInstanceOf[bpmnColonResourceAssignmentExpression]
   
   @js.native
-  sealed trait bpmnColonResourceParameter extends ElementType
+  sealed trait bpmnColonResourceParameter
+    extends StObject
+       with ElementType
+  inline def bpmnColonResourceParameter: bpmnColonResourceParameter = "bpmn:ResourceParameter".asInstanceOf[bpmnColonResourceParameter]
   
   @js.native
-  sealed trait bpmnColonResourceParameterBinding extends ElementType
+  sealed trait bpmnColonResourceParameterBinding
+    extends StObject
+       with ElementType
+  inline def bpmnColonResourceParameterBinding: bpmnColonResourceParameterBinding = "bpmn:ResourceParameterBinding".asInstanceOf[bpmnColonResourceParameterBinding]
   
   @js.native
-  sealed trait bpmnColonResourceRole extends ElementType
+  sealed trait bpmnColonResourceRole
+    extends StObject
+       with ElementType
+  inline def bpmnColonResourceRole: bpmnColonResourceRole = "bpmn:ResourceRole".asInstanceOf[bpmnColonResourceRole]
   
   @js.native
-  sealed trait bpmnColonRootElement extends ElementType
+  sealed trait bpmnColonRootElement
+    extends StObject
+       with ElementType
+  inline def bpmnColonRootElement: bpmnColonRootElement = "bpmn:RootElement".asInstanceOf[bpmnColonRootElement]
   
   @js.native
-  sealed trait bpmnColonScriptTask extends ElementType
+  sealed trait bpmnColonScriptTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonScriptTask: bpmnColonScriptTask = "bpmn:ScriptTask".asInstanceOf[bpmnColonScriptTask]
   
   @js.native
-  sealed trait bpmnColonSendTask extends ElementType
+  sealed trait bpmnColonSendTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonSendTask: bpmnColonSendTask = "bpmn:SendTask".asInstanceOf[bpmnColonSendTask]
   
   @js.native
-  sealed trait bpmnColonSequenceFlow extends ElementType
+  sealed trait bpmnColonSequenceFlow
+    extends StObject
+       with ElementType
+  inline def bpmnColonSequenceFlow: bpmnColonSequenceFlow = "bpmn:SequenceFlow".asInstanceOf[bpmnColonSequenceFlow]
   
   @js.native
-  sealed trait bpmnColonServiceTask extends ElementType
+  sealed trait bpmnColonServiceTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonServiceTask: bpmnColonServiceTask = "bpmn:ServiceTask".asInstanceOf[bpmnColonServiceTask]
   
   @js.native
-  sealed trait bpmnColonSignal extends ElementType
+  sealed trait bpmnColonSignal
+    extends StObject
+       with ElementType
+  inline def bpmnColonSignal: bpmnColonSignal = "bpmn:Signal".asInstanceOf[bpmnColonSignal]
   
   @js.native
-  sealed trait bpmnColonSignalEventDefinition extends ElementType
+  sealed trait bpmnColonSignalEventDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonSignalEventDefinition: bpmnColonSignalEventDefinition = "bpmn:SignalEventDefinition".asInstanceOf[bpmnColonSignalEventDefinition]
   
   @js.native
-  sealed trait bpmnColonStandardLoopCharacteristics extends ElementType
+  sealed trait bpmnColonStandardLoopCharacteristics
+    extends StObject
+       with ElementType
+  inline def bpmnColonStandardLoopCharacteristics: bpmnColonStandardLoopCharacteristics = "bpmn:StandardLoopCharacteristics".asInstanceOf[bpmnColonStandardLoopCharacteristics]
   
   @js.native
-  sealed trait bpmnColonStartEvent extends ElementType
+  sealed trait bpmnColonStartEvent
+    extends StObject
+       with ElementType
+  inline def bpmnColonStartEvent: bpmnColonStartEvent = "bpmn:StartEvent".asInstanceOf[bpmnColonStartEvent]
   
   @js.native
-  sealed trait bpmnColonSubChoreography extends ElementType
+  sealed trait bpmnColonSubChoreography
+    extends StObject
+       with ElementType
+  inline def bpmnColonSubChoreography: bpmnColonSubChoreography = "bpmn:SubChoreography".asInstanceOf[bpmnColonSubChoreography]
   
   @js.native
-  sealed trait bpmnColonSubConversation extends ElementType
+  sealed trait bpmnColonSubConversation
+    extends StObject
+       with ElementType
+  inline def bpmnColonSubConversation: bpmnColonSubConversation = "bpmn:SubConversation".asInstanceOf[bpmnColonSubConversation]
   
   @js.native
-  sealed trait bpmnColonSubProcess extends ElementType
+  sealed trait bpmnColonSubProcess
+    extends StObject
+       with ElementType
+  inline def bpmnColonSubProcess: bpmnColonSubProcess = "bpmn:SubProcess".asInstanceOf[bpmnColonSubProcess]
   
   @js.native
-  sealed trait bpmnColonTask extends ElementType
+  sealed trait bpmnColonTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonTask: bpmnColonTask = "bpmn:Task".asInstanceOf[bpmnColonTask]
   
   @js.native
-  sealed trait bpmnColonTerminateEventDefinition extends ElementType
+  sealed trait bpmnColonTerminateEventDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonTerminateEventDefinition: bpmnColonTerminateEventDefinition = "bpmn:TerminateEventDefinition".asInstanceOf[bpmnColonTerminateEventDefinition]
   
   @js.native
-  sealed trait bpmnColonTextAnnotation extends ElementType
+  sealed trait bpmnColonTextAnnotation
+    extends StObject
+       with ElementType
+  inline def bpmnColonTextAnnotation: bpmnColonTextAnnotation = "bpmn:TextAnnotation".asInstanceOf[bpmnColonTextAnnotation]
   
   @js.native
-  sealed trait bpmnColonThrowEvent extends ElementType
+  sealed trait bpmnColonThrowEvent
+    extends StObject
+       with ElementType
+  inline def bpmnColonThrowEvent: bpmnColonThrowEvent = "bpmn:ThrowEvent".asInstanceOf[bpmnColonThrowEvent]
   
   @js.native
-  sealed trait bpmnColonTimerEventDefinition extends ElementType
+  sealed trait bpmnColonTimerEventDefinition
+    extends StObject
+       with ElementType
+  inline def bpmnColonTimerEventDefinition: bpmnColonTimerEventDefinition = "bpmn:TimerEventDefinition".asInstanceOf[bpmnColonTimerEventDefinition]
   
   @js.native
-  sealed trait bpmnColonTransaction extends ElementType
+  sealed trait bpmnColonTransaction
+    extends StObject
+       with ElementType
+  inline def bpmnColonTransaction: bpmnColonTransaction = "bpmn:Transaction".asInstanceOf[bpmnColonTransaction]
   
   @js.native
-  sealed trait bpmnColonUserTask extends ElementType
+  sealed trait bpmnColonUserTask
+    extends StObject
+       with ElementType
+  inline def bpmnColonUserTask: bpmnColonUserTask = "bpmn:UserTask".asInstanceOf[bpmnColonUserTask]
   
   @js.native
-  sealed trait bpmndiColonBPMNDiagram extends ElementType
+  sealed trait bpmndiColonBPMNDiagram
+    extends StObject
+       with ElementType
+  inline def bpmndiColonBPMNDiagram: bpmndiColonBPMNDiagram = "bpmndi:BPMNDiagram".asInstanceOf[bpmndiColonBPMNDiagram]
   
   @js.native
-  sealed trait bpmndiColonBPMNEdge extends ElementType
+  sealed trait bpmndiColonBPMNEdge
+    extends StObject
+       with ElementType
+  inline def bpmndiColonBPMNEdge: bpmndiColonBPMNEdge = "bpmndi:BPMNEdge".asInstanceOf[bpmndiColonBPMNEdge]
   
   @js.native
-  sealed trait bpmndiColonBPMNLabel extends ElementType
+  sealed trait bpmndiColonBPMNLabel
+    extends StObject
+       with ElementType
+  inline def bpmndiColonBPMNLabel: bpmndiColonBPMNLabel = "bpmndi:BPMNLabel".asInstanceOf[bpmndiColonBPMNLabel]
   
   @js.native
-  sealed trait bpmndiColonBPMNLabelStyle extends ElementType
+  sealed trait bpmndiColonBPMNLabelStyle
+    extends StObject
+       with ElementType
+  inline def bpmndiColonBPMNLabelStyle: bpmndiColonBPMNLabelStyle = "bpmndi:BPMNLabelStyle".asInstanceOf[bpmndiColonBPMNLabelStyle]
   
   @js.native
-  sealed trait bpmndiColonBPMNPlane extends ElementType
+  sealed trait bpmndiColonBPMNPlane
+    extends StObject
+       with ElementType
+  inline def bpmndiColonBPMNPlane: bpmndiColonBPMNPlane = "bpmndi:BPMNPlane".asInstanceOf[bpmndiColonBPMNPlane]
   
   @js.native
-  sealed trait bpmndiColonBPMNShape extends ElementType
+  sealed trait bpmndiColonBPMNShape
+    extends StObject
+       with ElementType
+  inline def bpmndiColonBPMNShape: bpmndiColonBPMNShape = "bpmndi:BPMNShape".asInstanceOf[bpmndiColonBPMNShape]
   
   @js.native
-  sealed trait dcColonBounds extends ElementType
+  sealed trait dcColonBounds
+    extends StObject
+       with ElementType
+  inline def dcColonBounds: dcColonBounds = "dc:Bounds".asInstanceOf[dcColonBounds]
   
   @js.native
-  sealed trait dcColonFont extends ElementType
+  sealed trait dcColonFont
+    extends StObject
+       with ElementType
+  inline def dcColonFont: dcColonFont = "dc:Font".asInstanceOf[dcColonFont]
   
   @js.native
-  sealed trait dcColonPoint extends ElementType
+  sealed trait dcColonPoint
+    extends StObject
+       with ElementType
+  inline def dcColonPoint: dcColonPoint = "dc:Point".asInstanceOf[dcColonPoint]
   
   @js.native
-  sealed trait dcColonReal extends ElementType
+  sealed trait dcColonReal
+    extends StObject
+       with ElementType
+  inline def dcColonReal: dcColonReal = "dc:Real".asInstanceOf[dcColonReal]
   
   @js.native
-  sealed trait dcColonboolean extends ElementType
+  sealed trait dcColonboolean
+    extends StObject
+       with ElementType
+  inline def dcColonboolean: dcColonboolean = "dc:boolean".asInstanceOf[dcColonboolean]
   
   @js.native
-  sealed trait dcColonnumber extends ElementType
+  sealed trait dcColonnumber
+    extends StObject
+       with ElementType
+  inline def dcColonnumber: dcColonnumber = "dc:number".asInstanceOf[dcColonnumber]
   
   @js.native
-  sealed trait dcColonstring extends ElementType
+  sealed trait dcColonstring
+    extends StObject
+       with ElementType
+  inline def dcColonstring: dcColonstring = "dc:string".asInstanceOf[dcColonstring]
   
   @js.native
-  sealed trait diColonDiagram extends ElementType
+  sealed trait diColonDiagram
+    extends StObject
+       with ElementType
+  inline def diColonDiagram: diColonDiagram = "di:Diagram".asInstanceOf[diColonDiagram]
   
   @js.native
-  sealed trait diColonDiagramElement extends ElementType
+  sealed trait diColonDiagramElement
+    extends StObject
+       with ElementType
+  inline def diColonDiagramElement: diColonDiagramElement = "di:DiagramElement".asInstanceOf[diColonDiagramElement]
   
   @js.native
-  sealed trait diColonEdge extends ElementType
+  sealed trait diColonEdge
+    extends StObject
+       with ElementType
+  inline def diColonEdge: diColonEdge = "di:Edge".asInstanceOf[diColonEdge]
   
   @js.native
-  sealed trait diColonExtension extends ElementType
+  sealed trait diColonExtension
+    extends StObject
+       with ElementType
+  inline def diColonExtension: diColonExtension = "di:Extension".asInstanceOf[diColonExtension]
   
   @js.native
-  sealed trait diColonLabel extends ElementType
+  sealed trait diColonLabel
+    extends StObject
+       with ElementType
+  inline def diColonLabel: diColonLabel = "di:Label".asInstanceOf[diColonLabel]
   
   @js.native
-  sealed trait diColonLabeledEdge extends ElementType
+  sealed trait diColonLabeledEdge
+    extends StObject
+       with ElementType
+  inline def diColonLabeledEdge: diColonLabeledEdge = "di:LabeledEdge".asInstanceOf[diColonLabeledEdge]
   
   @js.native
-  sealed trait diColonLabeledShape extends ElementType
+  sealed trait diColonLabeledShape
+    extends StObject
+       with ElementType
+  inline def diColonLabeledShape: diColonLabeledShape = "di:LabeledShape".asInstanceOf[diColonLabeledShape]
   
   @js.native
-  sealed trait diColonNode extends ElementType
+  sealed trait diColonNode
+    extends StObject
+       with ElementType
+  inline def diColonNode: diColonNode = "di:Node".asInstanceOf[diColonNode]
   
   @js.native
-  sealed trait diColonPlane extends ElementType
+  sealed trait diColonPlane
+    extends StObject
+       with ElementType
+  inline def diColonPlane: diColonPlane = "di:Plane".asInstanceOf[diColonPlane]
   
   @js.native
-  sealed trait diColonShape extends ElementType
+  sealed trait diColonShape
+    extends StObject
+       with ElementType
+  inline def diColonShape: diColonShape = "di:Shape".asInstanceOf[diColonShape]
   
   @js.native
-  sealed trait diColonStyle extends ElementType
-  
-  @scala.inline
-  def All: All = "All".asInstanceOf[All]
-  @scala.inline
-  def Backward: Backward = "Backward".asInstanceOf[Backward]
-  @scala.inline
-  def Both: Both = "Both".asInstanceOf[Both]
-  @scala.inline
-  def Complex: Complex = "Complex".asInstanceOf[Complex]
-  @scala.inline
-  def Converging: Converging = "Converging".asInstanceOf[Converging]
-  @scala.inline
-  def Diverging: Diverging = "Diverging".asInstanceOf[Diverging]
-  @scala.inline
-  def Exclusive: Exclusive = "Exclusive".asInstanceOf[Exclusive]
-  @scala.inline
-  def Forward: Forward = "Forward".asInstanceOf[Forward]
-  @scala.inline
-  def Information: Information = "Information".asInstanceOf[Information]
-  @scala.inline
-  def Mixed: Mixed = "Mixed".asInstanceOf[Mixed]
-  @scala.inline
-  def MultiInstanceParallel: MultiInstanceParallel = "MultiInstanceParallel".asInstanceOf[MultiInstanceParallel]
-  @scala.inline
-  def MultiInstanceSequential: MultiInstanceSequential = "MultiInstanceSequential".asInstanceOf[MultiInstanceSequential]
-  @scala.inline
-  def None: None = "None".asInstanceOf[None]
-  @scala.inline
-  def One: One = "One".asInstanceOf[One]
-  @scala.inline
-  def Parallel: Parallel = "Parallel".asInstanceOf[Parallel]
-  @scala.inline
-  def Physical: Physical = "Physical".asInstanceOf[Physical]
-  @scala.inline
-  def Private: Private = "Private".asInstanceOf[Private]
-  @scala.inline
-  def Public: Public = "Public".asInstanceOf[Public]
-  @scala.inline
-  def Sequential: Sequential = "Sequential".asInstanceOf[Sequential]
-  @scala.inline
-  def Standard: Standard = "Standard".asInstanceOf[Standard]
-  @scala.inline
-  def Unspecified: Unspecified = "Unspecified".asInstanceOf[Unspecified]
-  @scala.inline
-  def biocColonColoredEdge: biocColonColoredEdge = "bioc:ColoredEdge".asInstanceOf[biocColonColoredEdge]
-  @scala.inline
-  def biocColonColoredShape: biocColonColoredShape = "bioc:ColoredShape".asInstanceOf[biocColonColoredShape]
-  @scala.inline
-  def bpmnColonActivity: bpmnColonActivity = "bpmn:Activity".asInstanceOf[bpmnColonActivity]
-  @scala.inline
-  def bpmnColonAdHocSubProcess: bpmnColonAdHocSubProcess = "bpmn:AdHocSubProcess".asInstanceOf[bpmnColonAdHocSubProcess]
-  @scala.inline
-  def bpmnColonArtifact: bpmnColonArtifact = "bpmn:Artifact".asInstanceOf[bpmnColonArtifact]
-  @scala.inline
-  def bpmnColonAssignment: bpmnColonAssignment = "bpmn:Assignment".asInstanceOf[bpmnColonAssignment]
-  @scala.inline
-  def bpmnColonAssociation: bpmnColonAssociation = "bpmn:Association".asInstanceOf[bpmnColonAssociation]
-  @scala.inline
-  def bpmnColonAuditing: bpmnColonAuditing = "bpmn:Auditing".asInstanceOf[bpmnColonAuditing]
-  @scala.inline
-  def bpmnColonBaseElement: bpmnColonBaseElement = "bpmn:BaseElement".asInstanceOf[bpmnColonBaseElement]
-  @scala.inline
-  def bpmnColonBoundaryEvent: bpmnColonBoundaryEvent = "bpmn:BoundaryEvent".asInstanceOf[bpmnColonBoundaryEvent]
-  @scala.inline
-  def bpmnColonBusinessRuleTask: bpmnColonBusinessRuleTask = "bpmn:BusinessRuleTask".asInstanceOf[bpmnColonBusinessRuleTask]
-  @scala.inline
-  def bpmnColonCallActivity: bpmnColonCallActivity = "bpmn:CallActivity".asInstanceOf[bpmnColonCallActivity]
-  @scala.inline
-  def bpmnColonCallChoreography: bpmnColonCallChoreography = "bpmn:CallChoreography".asInstanceOf[bpmnColonCallChoreography]
-  @scala.inline
-  def bpmnColonCallConversation: bpmnColonCallConversation = "bpmn:CallConversation".asInstanceOf[bpmnColonCallConversation]
-  @scala.inline
-  def bpmnColonCallableElement: bpmnColonCallableElement = "bpmn:CallableElement".asInstanceOf[bpmnColonCallableElement]
-  @scala.inline
-  def bpmnColonCancelEventDefinition: bpmnColonCancelEventDefinition = "bpmn:CancelEventDefinition".asInstanceOf[bpmnColonCancelEventDefinition]
-  @scala.inline
-  def bpmnColonCatchEvent: bpmnColonCatchEvent = "bpmn:CatchEvent".asInstanceOf[bpmnColonCatchEvent]
-  @scala.inline
-  def bpmnColonCategory: bpmnColonCategory = "bpmn:Category".asInstanceOf[bpmnColonCategory]
-  @scala.inline
-  def bpmnColonCategoryValue: bpmnColonCategoryValue = "bpmn:CategoryValue".asInstanceOf[bpmnColonCategoryValue]
-  @scala.inline
-  def bpmnColonChoreography: bpmnColonChoreography = "bpmn:Choreography".asInstanceOf[bpmnColonChoreography]
-  @scala.inline
-  def bpmnColonChoreographyActivity: bpmnColonChoreographyActivity = "bpmn:ChoreographyActivity".asInstanceOf[bpmnColonChoreographyActivity]
-  @scala.inline
-  def bpmnColonChoreographyTask: bpmnColonChoreographyTask = "bpmn:ChoreographyTask".asInstanceOf[bpmnColonChoreographyTask]
-  @scala.inline
-  def bpmnColonCollaboration: bpmnColonCollaboration = "bpmn:Collaboration".asInstanceOf[bpmnColonCollaboration]
-  @scala.inline
-  def bpmnColonCompensateEventDefinition: bpmnColonCompensateEventDefinition = "bpmn:CompensateEventDefinition".asInstanceOf[bpmnColonCompensateEventDefinition]
-  @scala.inline
-  def bpmnColonComplexBehaviorDefinition: bpmnColonComplexBehaviorDefinition = "bpmn:ComplexBehaviorDefinition".asInstanceOf[bpmnColonComplexBehaviorDefinition]
-  @scala.inline
-  def bpmnColonComplexGateway: bpmnColonComplexGateway = "bpmn:ComplexGateway".asInstanceOf[bpmnColonComplexGateway]
-  @scala.inline
-  def bpmnColonConditionalEventDefinition: bpmnColonConditionalEventDefinition = "bpmn:ConditionalEventDefinition".asInstanceOf[bpmnColonConditionalEventDefinition]
-  @scala.inline
-  def bpmnColonConversation: bpmnColonConversation = "bpmn:Conversation".asInstanceOf[bpmnColonConversation]
-  @scala.inline
-  def bpmnColonConversationAssociation: bpmnColonConversationAssociation = "bpmn:ConversationAssociation".asInstanceOf[bpmnColonConversationAssociation]
-  @scala.inline
-  def bpmnColonConversationLink: bpmnColonConversationLink = "bpmn:ConversationLink".asInstanceOf[bpmnColonConversationLink]
-  @scala.inline
-  def bpmnColonConversationNode: bpmnColonConversationNode = "bpmn:ConversationNode".asInstanceOf[bpmnColonConversationNode]
-  @scala.inline
-  def bpmnColonCorrelationKey: bpmnColonCorrelationKey = "bpmn:CorrelationKey".asInstanceOf[bpmnColonCorrelationKey]
-  @scala.inline
-  def bpmnColonCorrelationProperty: bpmnColonCorrelationProperty = "bpmn:CorrelationProperty".asInstanceOf[bpmnColonCorrelationProperty]
-  @scala.inline
-  def bpmnColonCorrelationPropertyBinding: bpmnColonCorrelationPropertyBinding = "bpmn:CorrelationPropertyBinding".asInstanceOf[bpmnColonCorrelationPropertyBinding]
-  @scala.inline
-  def bpmnColonCorrelationPropertyRetrievalExpression: bpmnColonCorrelationPropertyRetrievalExpression = "bpmn:CorrelationPropertyRetrievalExpression".asInstanceOf[bpmnColonCorrelationPropertyRetrievalExpression]
-  @scala.inline
-  def bpmnColonCorrelationSubscription: bpmnColonCorrelationSubscription = "bpmn:CorrelationSubscription".asInstanceOf[bpmnColonCorrelationSubscription]
-  @scala.inline
-  def bpmnColonDataAssociation: bpmnColonDataAssociation = "bpmn:DataAssociation".asInstanceOf[bpmnColonDataAssociation]
-  @scala.inline
-  def bpmnColonDataInput: bpmnColonDataInput = "bpmn:DataInput".asInstanceOf[bpmnColonDataInput]
-  @scala.inline
-  def bpmnColonDataInputAssociation: bpmnColonDataInputAssociation = "bpmn:DataInputAssociation".asInstanceOf[bpmnColonDataInputAssociation]
-  @scala.inline
-  def bpmnColonDataObject: bpmnColonDataObject = "bpmn:DataObject".asInstanceOf[bpmnColonDataObject]
-  @scala.inline
-  def bpmnColonDataObjectReference: bpmnColonDataObjectReference = "bpmn:DataObjectReference".asInstanceOf[bpmnColonDataObjectReference]
-  @scala.inline
-  def bpmnColonDataOutput: bpmnColonDataOutput = "bpmn:DataOutput".asInstanceOf[bpmnColonDataOutput]
-  @scala.inline
-  def bpmnColonDataOutputAssociation: bpmnColonDataOutputAssociation = "bpmn:DataOutputAssociation".asInstanceOf[bpmnColonDataOutputAssociation]
-  @scala.inline
-  def bpmnColonDataState: bpmnColonDataState = "bpmn:DataState".asInstanceOf[bpmnColonDataState]
-  @scala.inline
-  def bpmnColonDataStore: bpmnColonDataStore = "bpmn:DataStore".asInstanceOf[bpmnColonDataStore]
-  @scala.inline
-  def bpmnColonDataStoreReference: bpmnColonDataStoreReference = "bpmn:DataStoreReference".asInstanceOf[bpmnColonDataStoreReference]
-  @scala.inline
-  def bpmnColonDefinitions: bpmnColonDefinitions = "bpmn:Definitions".asInstanceOf[bpmnColonDefinitions]
-  @scala.inline
-  def bpmnColonDocumentation: bpmnColonDocumentation = "bpmn:Documentation".asInstanceOf[bpmnColonDocumentation]
-  @scala.inline
-  def bpmnColonEndEvent: bpmnColonEndEvent = "bpmn:EndEvent".asInstanceOf[bpmnColonEndEvent]
-  @scala.inline
-  def bpmnColonEndPoint: bpmnColonEndPoint = "bpmn:EndPoint".asInstanceOf[bpmnColonEndPoint]
-  @scala.inline
-  def bpmnColonError: bpmnColonError = "bpmn:Error".asInstanceOf[bpmnColonError]
-  @scala.inline
-  def bpmnColonErrorEventDefinition: bpmnColonErrorEventDefinition = "bpmn:ErrorEventDefinition".asInstanceOf[bpmnColonErrorEventDefinition]
-  @scala.inline
-  def bpmnColonEscalation: bpmnColonEscalation = "bpmn:Escalation".asInstanceOf[bpmnColonEscalation]
-  @scala.inline
-  def bpmnColonEscalationEventDefinition: bpmnColonEscalationEventDefinition = "bpmn:EscalationEventDefinition".asInstanceOf[bpmnColonEscalationEventDefinition]
-  @scala.inline
-  def bpmnColonEvent: bpmnColonEvent = "bpmn:Event".asInstanceOf[bpmnColonEvent]
-  @scala.inline
-  def bpmnColonEventBasedGateway: bpmnColonEventBasedGateway = "bpmn:EventBasedGateway".asInstanceOf[bpmnColonEventBasedGateway]
-  @scala.inline
-  def bpmnColonEventDefinition: bpmnColonEventDefinition = "bpmn:EventDefinition".asInstanceOf[bpmnColonEventDefinition]
-  @scala.inline
-  def bpmnColonExclusiveGateway: bpmnColonExclusiveGateway = "bpmn:ExclusiveGateway".asInstanceOf[bpmnColonExclusiveGateway]
-  @scala.inline
-  def bpmnColonExpression: bpmnColonExpression = "bpmn:Expression".asInstanceOf[bpmnColonExpression]
-  @scala.inline
-  def bpmnColonExtension: bpmnColonExtension = "bpmn:Extension".asInstanceOf[bpmnColonExtension]
-  @scala.inline
-  def bpmnColonExtensionAttributeDefinition: bpmnColonExtensionAttributeDefinition = "bpmn:ExtensionAttributeDefinition".asInstanceOf[bpmnColonExtensionAttributeDefinition]
-  @scala.inline
-  def bpmnColonExtensionDefinition: bpmnColonExtensionDefinition = "bpmn:ExtensionDefinition".asInstanceOf[bpmnColonExtensionDefinition]
-  @scala.inline
-  def bpmnColonExtensionElements: bpmnColonExtensionElements = "bpmn:ExtensionElements".asInstanceOf[bpmnColonExtensionElements]
-  @scala.inline
-  def bpmnColonFlowElement: bpmnColonFlowElement = "bpmn:FlowElement".asInstanceOf[bpmnColonFlowElement]
-  @scala.inline
-  def bpmnColonFlowElementsContainer: bpmnColonFlowElementsContainer = "bpmn:FlowElementsContainer".asInstanceOf[bpmnColonFlowElementsContainer]
-  @scala.inline
-  def bpmnColonFlowNode: bpmnColonFlowNode = "bpmn:FlowNode".asInstanceOf[bpmnColonFlowNode]
-  @scala.inline
-  def bpmnColonFormalExpression: bpmnColonFormalExpression = "bpmn:FormalExpression".asInstanceOf[bpmnColonFormalExpression]
-  @scala.inline
-  def bpmnColonGateway: bpmnColonGateway = "bpmn:Gateway".asInstanceOf[bpmnColonGateway]
-  @scala.inline
-  def bpmnColonGlobalBusinessRuleTask: bpmnColonGlobalBusinessRuleTask = "bpmn:GlobalBusinessRuleTask".asInstanceOf[bpmnColonGlobalBusinessRuleTask]
-  @scala.inline
-  def bpmnColonGlobalChoreographyTask: bpmnColonGlobalChoreographyTask = "bpmn:GlobalChoreographyTask".asInstanceOf[bpmnColonGlobalChoreographyTask]
-  @scala.inline
-  def bpmnColonGlobalConversation: bpmnColonGlobalConversation = "bpmn:GlobalConversation".asInstanceOf[bpmnColonGlobalConversation]
-  @scala.inline
-  def bpmnColonGlobalManualTask: bpmnColonGlobalManualTask = "bpmn:GlobalManualTask".asInstanceOf[bpmnColonGlobalManualTask]
-  @scala.inline
-  def bpmnColonGlobalScriptTask: bpmnColonGlobalScriptTask = "bpmn:GlobalScriptTask".asInstanceOf[bpmnColonGlobalScriptTask]
-  @scala.inline
-  def bpmnColonGlobalTask: bpmnColonGlobalTask = "bpmn:GlobalTask".asInstanceOf[bpmnColonGlobalTask]
-  @scala.inline
-  def bpmnColonGlobalUserTask: bpmnColonGlobalUserTask = "bpmn:GlobalUserTask".asInstanceOf[bpmnColonGlobalUserTask]
-  @scala.inline
-  def bpmnColonGroup: bpmnColonGroup = "bpmn:Group".asInstanceOf[bpmnColonGroup]
-  @scala.inline
-  def bpmnColonHumanPerformer: bpmnColonHumanPerformer = "bpmn:HumanPerformer".asInstanceOf[bpmnColonHumanPerformer]
-  @scala.inline
-  def bpmnColonImplicitThrowEvent: bpmnColonImplicitThrowEvent = "bpmn:ImplicitThrowEvent".asInstanceOf[bpmnColonImplicitThrowEvent]
-  @scala.inline
-  def bpmnColonImport: bpmnColonImport = "bpmn:Import".asInstanceOf[bpmnColonImport]
-  @scala.inline
-  def bpmnColonInclusiveGateway: bpmnColonInclusiveGateway = "bpmn:InclusiveGateway".asInstanceOf[bpmnColonInclusiveGateway]
-  @scala.inline
-  def bpmnColonInputOutputBinding: bpmnColonInputOutputBinding = "bpmn:InputOutputBinding".asInstanceOf[bpmnColonInputOutputBinding]
-  @scala.inline
-  def bpmnColonInputOutputSpecification: bpmnColonInputOutputSpecification = "bpmn:InputOutputSpecification".asInstanceOf[bpmnColonInputOutputSpecification]
-  @scala.inline
-  def bpmnColonInputSet: bpmnColonInputSet = "bpmn:InputSet".asInstanceOf[bpmnColonInputSet]
-  @scala.inline
-  def bpmnColonInteractionNode: bpmnColonInteractionNode = "bpmn:InteractionNode".asInstanceOf[bpmnColonInteractionNode]
-  @scala.inline
-  def bpmnColonInterface: bpmnColonInterface = "bpmn:Interface".asInstanceOf[bpmnColonInterface]
-  @scala.inline
-  def bpmnColonIntermediateCatchEvent: bpmnColonIntermediateCatchEvent = "bpmn:IntermediateCatchEvent".asInstanceOf[bpmnColonIntermediateCatchEvent]
-  @scala.inline
-  def bpmnColonIntermediateThrowEvent: bpmnColonIntermediateThrowEvent = "bpmn:IntermediateThrowEvent".asInstanceOf[bpmnColonIntermediateThrowEvent]
-  @scala.inline
-  def bpmnColonItemAwareElement: bpmnColonItemAwareElement = "bpmn:ItemAwareElement".asInstanceOf[bpmnColonItemAwareElement]
-  @scala.inline
-  def bpmnColonItemDefinition: bpmnColonItemDefinition = "bpmn:ItemDefinition".asInstanceOf[bpmnColonItemDefinition]
-  @scala.inline
-  def bpmnColonLane: bpmnColonLane = "bpmn:Lane".asInstanceOf[bpmnColonLane]
-  @scala.inline
-  def bpmnColonLaneSet: bpmnColonLaneSet = "bpmn:LaneSet".asInstanceOf[bpmnColonLaneSet]
-  @scala.inline
-  def bpmnColonLinkEventDefinition: bpmnColonLinkEventDefinition = "bpmn:LinkEventDefinition".asInstanceOf[bpmnColonLinkEventDefinition]
-  @scala.inline
-  def bpmnColonLoopCharacteristics: bpmnColonLoopCharacteristics = "bpmn:LoopCharacteristics".asInstanceOf[bpmnColonLoopCharacteristics]
-  @scala.inline
-  def bpmnColonManualTask: bpmnColonManualTask = "bpmn:ManualTask".asInstanceOf[bpmnColonManualTask]
-  @scala.inline
-  def bpmnColonMessage: bpmnColonMessage = "bpmn:Message".asInstanceOf[bpmnColonMessage]
-  @scala.inline
-  def bpmnColonMessageEventDefinition: bpmnColonMessageEventDefinition = "bpmn:MessageEventDefinition".asInstanceOf[bpmnColonMessageEventDefinition]
-  @scala.inline
-  def bpmnColonMessageFlow: bpmnColonMessageFlow = "bpmn:MessageFlow".asInstanceOf[bpmnColonMessageFlow]
-  @scala.inline
-  def bpmnColonMessageFlowAssociation: bpmnColonMessageFlowAssociation = "bpmn:MessageFlowAssociation".asInstanceOf[bpmnColonMessageFlowAssociation]
-  @scala.inline
-  def bpmnColonMonitoring: bpmnColonMonitoring = "bpmn:Monitoring".asInstanceOf[bpmnColonMonitoring]
-  @scala.inline
-  def bpmnColonMultiInstanceLoopCharacteristics: bpmnColonMultiInstanceLoopCharacteristics = "bpmn:MultiInstanceLoopCharacteristics".asInstanceOf[bpmnColonMultiInstanceLoopCharacteristics]
-  @scala.inline
-  def bpmnColonOperation: bpmnColonOperation = "bpmn:Operation".asInstanceOf[bpmnColonOperation]
-  @scala.inline
-  def bpmnColonOutputSet: bpmnColonOutputSet = "bpmn:OutputSet".asInstanceOf[bpmnColonOutputSet]
-  @scala.inline
-  def bpmnColonParallelGateway: bpmnColonParallelGateway = "bpmn:ParallelGateway".asInstanceOf[bpmnColonParallelGateway]
-  @scala.inline
-  def bpmnColonParticipant: bpmnColonParticipant = "bpmn:Participant".asInstanceOf[bpmnColonParticipant]
-  @scala.inline
-  def bpmnColonParticipantAssociation: bpmnColonParticipantAssociation = "bpmn:ParticipantAssociation".asInstanceOf[bpmnColonParticipantAssociation]
-  @scala.inline
-  def bpmnColonParticipantMultiplicity: bpmnColonParticipantMultiplicity = "bpmn:ParticipantMultiplicity".asInstanceOf[bpmnColonParticipantMultiplicity]
-  @scala.inline
-  def bpmnColonPartnerEntity: bpmnColonPartnerEntity = "bpmn:PartnerEntity".asInstanceOf[bpmnColonPartnerEntity]
-  @scala.inline
-  def bpmnColonPartnerRole: bpmnColonPartnerRole = "bpmn:PartnerRole".asInstanceOf[bpmnColonPartnerRole]
-  @scala.inline
-  def bpmnColonPerformer: bpmnColonPerformer = "bpmn:Performer".asInstanceOf[bpmnColonPerformer]
-  @scala.inline
-  def bpmnColonPotentialOwner: bpmnColonPotentialOwner = "bpmn:PotentialOwner".asInstanceOf[bpmnColonPotentialOwner]
-  @scala.inline
-  def bpmnColonProcess: bpmnColonProcess = "bpmn:Process".asInstanceOf[bpmnColonProcess]
-  @scala.inline
-  def bpmnColonProperty: bpmnColonProperty = "bpmn:Property".asInstanceOf[bpmnColonProperty]
-  @scala.inline
-  def bpmnColonReceiveTask: bpmnColonReceiveTask = "bpmn:ReceiveTask".asInstanceOf[bpmnColonReceiveTask]
-  @scala.inline
-  def bpmnColonRelationship: bpmnColonRelationship = "bpmn:Relationship".asInstanceOf[bpmnColonRelationship]
-  @scala.inline
-  def bpmnColonRendering: bpmnColonRendering = "bpmn:Rendering".asInstanceOf[bpmnColonRendering]
-  @scala.inline
-  def bpmnColonResource: bpmnColonResource = "bpmn:Resource".asInstanceOf[bpmnColonResource]
-  @scala.inline
-  def bpmnColonResourceAssignmentExpression: bpmnColonResourceAssignmentExpression = "bpmn:ResourceAssignmentExpression".asInstanceOf[bpmnColonResourceAssignmentExpression]
-  @scala.inline
-  def bpmnColonResourceParameter: bpmnColonResourceParameter = "bpmn:ResourceParameter".asInstanceOf[bpmnColonResourceParameter]
-  @scala.inline
-  def bpmnColonResourceParameterBinding: bpmnColonResourceParameterBinding = "bpmn:ResourceParameterBinding".asInstanceOf[bpmnColonResourceParameterBinding]
-  @scala.inline
-  def bpmnColonResourceRole: bpmnColonResourceRole = "bpmn:ResourceRole".asInstanceOf[bpmnColonResourceRole]
-  @scala.inline
-  def bpmnColonRootElement: bpmnColonRootElement = "bpmn:RootElement".asInstanceOf[bpmnColonRootElement]
-  @scala.inline
-  def bpmnColonScriptTask: bpmnColonScriptTask = "bpmn:ScriptTask".asInstanceOf[bpmnColonScriptTask]
-  @scala.inline
-  def bpmnColonSendTask: bpmnColonSendTask = "bpmn:SendTask".asInstanceOf[bpmnColonSendTask]
-  @scala.inline
-  def bpmnColonSequenceFlow: bpmnColonSequenceFlow = "bpmn:SequenceFlow".asInstanceOf[bpmnColonSequenceFlow]
-  @scala.inline
-  def bpmnColonServiceTask: bpmnColonServiceTask = "bpmn:ServiceTask".asInstanceOf[bpmnColonServiceTask]
-  @scala.inline
-  def bpmnColonSignal: bpmnColonSignal = "bpmn:Signal".asInstanceOf[bpmnColonSignal]
-  @scala.inline
-  def bpmnColonSignalEventDefinition: bpmnColonSignalEventDefinition = "bpmn:SignalEventDefinition".asInstanceOf[bpmnColonSignalEventDefinition]
-  @scala.inline
-  def bpmnColonStandardLoopCharacteristics: bpmnColonStandardLoopCharacteristics = "bpmn:StandardLoopCharacteristics".asInstanceOf[bpmnColonStandardLoopCharacteristics]
-  @scala.inline
-  def bpmnColonStartEvent: bpmnColonStartEvent = "bpmn:StartEvent".asInstanceOf[bpmnColonStartEvent]
-  @scala.inline
-  def bpmnColonSubChoreography: bpmnColonSubChoreography = "bpmn:SubChoreography".asInstanceOf[bpmnColonSubChoreography]
-  @scala.inline
-  def bpmnColonSubConversation: bpmnColonSubConversation = "bpmn:SubConversation".asInstanceOf[bpmnColonSubConversation]
-  @scala.inline
-  def bpmnColonSubProcess: bpmnColonSubProcess = "bpmn:SubProcess".asInstanceOf[bpmnColonSubProcess]
-  @scala.inline
-  def bpmnColonTask: bpmnColonTask = "bpmn:Task".asInstanceOf[bpmnColonTask]
-  @scala.inline
-  def bpmnColonTerminateEventDefinition: bpmnColonTerminateEventDefinition = "bpmn:TerminateEventDefinition".asInstanceOf[bpmnColonTerminateEventDefinition]
-  @scala.inline
-  def bpmnColonTextAnnotation: bpmnColonTextAnnotation = "bpmn:TextAnnotation".asInstanceOf[bpmnColonTextAnnotation]
-  @scala.inline
-  def bpmnColonThrowEvent: bpmnColonThrowEvent = "bpmn:ThrowEvent".asInstanceOf[bpmnColonThrowEvent]
-  @scala.inline
-  def bpmnColonTimerEventDefinition: bpmnColonTimerEventDefinition = "bpmn:TimerEventDefinition".asInstanceOf[bpmnColonTimerEventDefinition]
-  @scala.inline
-  def bpmnColonTransaction: bpmnColonTransaction = "bpmn:Transaction".asInstanceOf[bpmnColonTransaction]
-  @scala.inline
-  def bpmnColonUserTask: bpmnColonUserTask = "bpmn:UserTask".asInstanceOf[bpmnColonUserTask]
-  @scala.inline
-  def bpmndiColonBPMNDiagram: bpmndiColonBPMNDiagram = "bpmndi:BPMNDiagram".asInstanceOf[bpmndiColonBPMNDiagram]
-  @scala.inline
-  def bpmndiColonBPMNEdge: bpmndiColonBPMNEdge = "bpmndi:BPMNEdge".asInstanceOf[bpmndiColonBPMNEdge]
-  @scala.inline
-  def bpmndiColonBPMNLabel: bpmndiColonBPMNLabel = "bpmndi:BPMNLabel".asInstanceOf[bpmndiColonBPMNLabel]
-  @scala.inline
-  def bpmndiColonBPMNLabelStyle: bpmndiColonBPMNLabelStyle = "bpmndi:BPMNLabelStyle".asInstanceOf[bpmndiColonBPMNLabelStyle]
-  @scala.inline
-  def bpmndiColonBPMNPlane: bpmndiColonBPMNPlane = "bpmndi:BPMNPlane".asInstanceOf[bpmndiColonBPMNPlane]
-  @scala.inline
-  def bpmndiColonBPMNShape: bpmndiColonBPMNShape = "bpmndi:BPMNShape".asInstanceOf[bpmndiColonBPMNShape]
-  @scala.inline
-  def dcColonBounds: dcColonBounds = "dc:Bounds".asInstanceOf[dcColonBounds]
-  @scala.inline
-  def dcColonFont: dcColonFont = "dc:Font".asInstanceOf[dcColonFont]
-  @scala.inline
-  def dcColonPoint: dcColonPoint = "dc:Point".asInstanceOf[dcColonPoint]
-  @scala.inline
-  def dcColonReal: dcColonReal = "dc:Real".asInstanceOf[dcColonReal]
-  @scala.inline
-  def dcColonboolean: dcColonboolean = "dc:boolean".asInstanceOf[dcColonboolean]
-  @scala.inline
-  def dcColonnumber: dcColonnumber = "dc:number".asInstanceOf[dcColonnumber]
-  @scala.inline
-  def dcColonstring: dcColonstring = "dc:string".asInstanceOf[dcColonstring]
-  @scala.inline
-  def diColonDiagram: diColonDiagram = "di:Diagram".asInstanceOf[diColonDiagram]
-  @scala.inline
-  def diColonDiagramElement: diColonDiagramElement = "di:DiagramElement".asInstanceOf[diColonDiagramElement]
-  @scala.inline
-  def diColonEdge: diColonEdge = "di:Edge".asInstanceOf[diColonEdge]
-  @scala.inline
-  def diColonExtension: diColonExtension = "di:Extension".asInstanceOf[diColonExtension]
-  @scala.inline
-  def diColonLabel: diColonLabel = "di:Label".asInstanceOf[diColonLabel]
-  @scala.inline
-  def diColonLabeledEdge: diColonLabeledEdge = "di:LabeledEdge".asInstanceOf[diColonLabeledEdge]
-  @scala.inline
-  def diColonLabeledShape: diColonLabeledShape = "di:LabeledShape".asInstanceOf[diColonLabeledShape]
-  @scala.inline
-  def diColonNode: diColonNode = "di:Node".asInstanceOf[diColonNode]
-  @scala.inline
-  def diColonPlane: diColonPlane = "di:Plane".asInstanceOf[diColonPlane]
-  @scala.inline
-  def diColonShape: diColonShape = "di:Shape".asInstanceOf[diColonShape]
-  @scala.inline
-  def diColonStyle: diColonStyle = "di:Style".asInstanceOf[diColonStyle]
+  sealed trait diColonStyle
+    extends StObject
+       with ElementType
+  inline def diColonStyle: diColonStyle = "di:Style".asInstanceOf[diColonStyle]
 }
-

@@ -1,11 +1,8 @@
 package typingsJapgolly.reactRouterNavigation.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
@@ -13,61 +10,59 @@ import typingsJapgolly.reactRouterNavigation.mod.TabBarComponentProps
 import typingsJapgolly.reactRouterNavigation.mod.TabSubViewProps
 import typingsJapgolly.reactRouterNavigation.reactRouterNavigationStrings.bottom
 import typingsJapgolly.reactRouterNavigation.reactRouterNavigationStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tabs {
-  def apply(
-    hideTabBar: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    labelStyle: StyleProp[TextStyle] = null,
-    renderLabel: /* props */ TabSubViewProps => CallbackTo[Node] = null,
-    renderTabBar: /* props */ TabSubViewProps => CallbackTo[Node] = null,
-    renderTabIcon: /* props */ TabSubViewProps => CallbackTo[Node] = null,
-    tabActiveTintColor: String = null,
-    tabBarIndicatorStyle: StyleProp[ViewStyle] = null,
-    tabBarPosition: top | bottom = null,
-    tabBarStyle: StyleProp[ViewStyle] = null,
-    tabStyle: StyleProp[ViewStyle] = null,
-    tabTintColor: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: js.Array[Element] = null
-  ): UnmountedWithRoot[
-    TabBarComponentProps, 
-    typingsJapgolly.reactRouterNavigation.mod.Tabs, 
-    Unit, 
-    TabBarComponentProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTabBar)) __obj.updateDynamic("hideTabBar")(hideTabBar.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (renderLabel != null) __obj.updateDynamic("renderLabel")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactRouterNavigation.mod.TabSubViewProps) => renderLabel(t0).runNow()))
-    if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactRouterNavigation.mod.TabSubViewProps) => renderTabBar(t0).runNow()))
-    if (renderTabIcon != null) __obj.updateDynamic("renderTabIcon")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactRouterNavigation.mod.TabSubViewProps) => renderTabIcon(t0).runNow()))
-    if (tabActiveTintColor != null) __obj.updateDynamic("tabActiveTintColor")(tabActiveTintColor.asInstanceOf[js.Any])
-    if (tabBarIndicatorStyle != null) __obj.updateDynamic("tabBarIndicatorStyle")(tabBarIndicatorStyle.asInstanceOf[js.Any])
-    if (tabBarPosition != null) __obj.updateDynamic("tabBarPosition")(tabBarPosition.asInstanceOf[js.Any])
-    if (tabBarStyle != null) __obj.updateDynamic("tabBarStyle")(tabBarStyle.asInstanceOf[js.Any])
-    if (tabStyle != null) __obj.updateDynamic("tabStyle")(tabStyle.asInstanceOf[js.Any])
-    if (tabTintColor != null) __obj.updateDynamic("tabTintColor")(tabTintColor.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactRouterNavigation.mod.TabBarComponentProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactRouterNavigation.mod.Tabs](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactRouterNavigation.mod.TabBarComponentProps])
-  }
   @JSImport("react-router-navigation", "Tabs")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactRouterNavigation.mod.Tabs] {
+    
+    inline def children(value: js.Array[Element]): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenVarargs(value: Element*): this.type = set("children", js.Array(value*))
+    
+    inline def hideTabBar(value: Boolean): this.type = set("hideTabBar", value.asInstanceOf[js.Any])
+    
+    inline def label(value: String): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def labelStyle(value: StyleProp[TextStyle]): this.type = set("labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def labelStyleNull: this.type = set("labelStyle", null)
+    
+    inline def renderLabel(value: /* props */ TabSubViewProps => Node): this.type = set("renderLabel", js.Any.fromFunction1(value))
+    
+    inline def renderTabBar(value: /* props */ TabSubViewProps => Node): this.type = set("renderTabBar", js.Any.fromFunction1(value))
+    
+    inline def renderTabIcon(value: /* props */ TabSubViewProps => Node): this.type = set("renderTabIcon", js.Any.fromFunction1(value))
+    
+    inline def tabActiveTintColor(value: String): this.type = set("tabActiveTintColor", value.asInstanceOf[js.Any])
+    
+    inline def tabBarIndicatorStyle(value: StyleProp[ViewStyle]): this.type = set("tabBarIndicatorStyle", value.asInstanceOf[js.Any])
+    
+    inline def tabBarIndicatorStyleNull: this.type = set("tabBarIndicatorStyle", null)
+    
+    inline def tabBarPosition(value: top | bottom): this.type = set("tabBarPosition", value.asInstanceOf[js.Any])
+    
+    inline def tabBarStyle(value: StyleProp[ViewStyle]): this.type = set("tabBarStyle", value.asInstanceOf[js.Any])
+    
+    inline def tabBarStyleNull: this.type = set("tabBarStyle", null)
+    
+    inline def tabStyle(value: StyleProp[ViewStyle]): this.type = set("tabStyle", value.asInstanceOf[js.Any])
+    
+    inline def tabStyleNull: this.type = set("tabStyle", null)
+    
+    inline def tabTintColor(value: String): this.type = set("tabTintColor", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Tabs.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TabBarComponentProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

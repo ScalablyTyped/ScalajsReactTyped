@@ -1,24 +1,20 @@
 package typingsJapgolly.promisePoller
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promisePollerStrings {
-  @js.native
-  sealed trait `exponential-backoff` extends js.Object
   
   @js.native
-  sealed trait `fixed-interval` extends js.Object
+  sealed trait `exponential-backoff` extends StObject
+  inline def `exponential-backoff`: `exponential-backoff` = "exponential-backoff".asInstanceOf[`exponential-backoff`]
   
   @js.native
-  sealed trait `linear-backoff` extends js.Object
+  sealed trait `fixed-interval` extends StObject
+  inline def `fixed-interval`: `fixed-interval` = "fixed-interval".asInstanceOf[`fixed-interval`]
   
-  @scala.inline
-  def `exponential-backoff`: `exponential-backoff` = "exponential-backoff".asInstanceOf[`exponential-backoff`]
-  @scala.inline
-  def `fixed-interval`: `fixed-interval` = "fixed-interval".asInstanceOf[`fixed-interval`]
-  @scala.inline
-  def `linear-backoff`: `linear-backoff` = "linear-backoff".asInstanceOf[`linear-backoff`]
+  @js.native
+  sealed trait `linear-backoff` extends StObject
+  inline def `linear-backoff`: `linear-backoff` = "linear-backoff".asInstanceOf[`linear-backoff`]
 }
-

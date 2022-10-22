@@ -1,21 +1,17 @@
 package typingsJapgolly.reactEmailEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactEmailEditor.reactEmailEditorStrings.right
   - typingsJapgolly.reactEmailEditor.reactEmailEditorStrings.left
 */
-trait DockPosition extends js.Object
-
+trait DockPosition extends StObject
 object DockPosition {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def left: typingsJapgolly.reactEmailEditor.reactEmailEditorStrings.left = this.cast("left")
-  @scala.inline
-  def right: typingsJapgolly.reactEmailEditor.reactEmailEditorStrings.right = this.cast("right")
+  
+  inline def left: typingsJapgolly.reactEmailEditor.reactEmailEditorStrings.left = "left".asInstanceOf[typingsJapgolly.reactEmailEditor.reactEmailEditorStrings.left]
+  
+  inline def right: typingsJapgolly.reactEmailEditor.reactEmailEditorStrings.right = "right".asInstanceOf[typingsJapgolly.reactEmailEditor.reactEmailEditorStrings.right]
 }
-

@@ -1,43 +1,35 @@
 package typingsJapgolly.reactRedux.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.Context
-import typingsJapgolly.reactRedux.mod.ProviderProps
-import typingsJapgolly.reactRedux.mod.ReactReduxContextValue
+import typingsJapgolly.reactRedux.esComponentsContextMod.ReactReduxContextValue
+import typingsJapgolly.reactRedux.esComponentsProviderMod.ProviderProps
 import typingsJapgolly.redux.mod.Action
-import typingsJapgolly.redux.mod.AnyAction
 import typingsJapgolly.redux.mod.Store
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Provider {
-  def apply[A /* <: Action[js.Any] */](
-    store: Store[_, A],
-    context: Context[ReactReduxContextValue[_, AnyAction]] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ProviderProps[A], typingsJapgolly.reactRedux.mod.Provider[A], Unit, ProviderProps[A]] = {
-    val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
   
-      if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactRedux.mod.ProviderProps[A], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactRedux.mod.Provider[A]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactRedux.mod.ProviderProps[A]])(children: _*)
+  inline def apply[A /* <: Action[Any] */](store: Store[Any, A]): Builder[A] = {
+    val __props = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
+    new Builder[A](js.Array(this.component, __props.asInstanceOf[ProviderProps[A, Any]]))
   }
+  
   @JSImport("react-redux", "Provider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[A /* <: Action[Any] */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def context(value: Context[ReactReduxContextValue[Any, A]]): this.type = set("context", value.asInstanceOf[js.Any])
+    
+    inline def serverState(value: Any): this.type = set("serverState", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[A /* <: Action[Any] */](p: ProviderProps[A, Any]): Builder[A] = new Builder[A](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

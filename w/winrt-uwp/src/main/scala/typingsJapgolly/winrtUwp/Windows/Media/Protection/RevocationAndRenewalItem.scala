@@ -1,22 +1,50 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Protection
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a component that is being revoked and renewed with a trusted component. */
-@JSGlobal("Windows.Media.Protection.RevocationAndRenewalItem")
-@js.native
-abstract class RevocationAndRenewalItem () extends js.Object {
+trait RevocationAndRenewalItem extends StObject {
+  
   /** Returns the header hash for the component being revoked. */
-  var headerHash: String = js.native
+  var headerHash: String
+  
   /** Returns the name for the component being revoked. */
-  var name: String = js.native
+  var name: String
+  
   /** Returns the public key hash for the component. */
-  var publicKeyHash: String = js.native
+  var publicKeyHash: String
+  
   /** Returns the reason for revocation of component. */
-  var reasons: RevocationAndRenewalReasons = js.native
+  var reasons: RevocationAndRenewalReasons
+  
   /** Returns the GUID for the renewal object. */
-  var renewalId: String = js.native
+  var renewalId: String
 }
-
+object RevocationAndRenewalItem {
+  
+  inline def apply(
+    headerHash: String,
+    name: String,
+    publicKeyHash: String,
+    reasons: RevocationAndRenewalReasons,
+    renewalId: String
+  ): RevocationAndRenewalItem = {
+    val __obj = js.Dynamic.literal(headerHash = headerHash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], publicKeyHash = publicKeyHash.asInstanceOf[js.Any], reasons = reasons.asInstanceOf[js.Any], renewalId = renewalId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RevocationAndRenewalItem]
+  }
+  
+  extension [Self <: RevocationAndRenewalItem](x: Self) {
+    
+    inline def setHeaderHash(value: String): Self = StObject.set(x, "headerHash", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setPublicKeyHash(value: String): Self = StObject.set(x, "publicKeyHash", value.asInstanceOf[js.Any])
+    
+    inline def setReasons(value: RevocationAndRenewalReasons): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
+    
+    inline def setRenewalId(value: String): Self = StObject.set(x, "renewalId", value.asInstanceOf[js.Any])
+  }
+}

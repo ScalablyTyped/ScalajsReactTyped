@@ -1,31 +1,41 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InferenceClassificationOverride extends Entity {
+trait InferenceClassificationOverride
+  extends StObject
+     with Entity {
+  
   /**
     * Specifies how incoming messages from a specific sender should always be classified as. The possible values are:
     * focused, other.
     */
-  var classifyAs: js.UndefOr[InferenceClassificationType] = js.undefined
+  var classifyAs: js.UndefOr[NullableOption[InferenceClassificationType]] = js.undefined
+  
   // The email address information of the sender for whom the override is created.
-  var senderEmailAddress: js.UndefOr[EmailAddress] = js.undefined
+  var senderEmailAddress: js.UndefOr[NullableOption[EmailAddress]] = js.undefined
 }
-
 object InferenceClassificationOverride {
-  @scala.inline
-  def apply(
-    classifyAs: InferenceClassificationType = null,
-    id: String = null,
-    senderEmailAddress: EmailAddress = null
-  ): InferenceClassificationOverride = {
+  
+  inline def apply(): InferenceClassificationOverride = {
     val __obj = js.Dynamic.literal()
-    if (classifyAs != null) __obj.updateDynamic("classifyAs")(classifyAs.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (senderEmailAddress != null) __obj.updateDynamic("senderEmailAddress")(senderEmailAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[InferenceClassificationOverride]
   }
+  
+  extension [Self <: InferenceClassificationOverride](x: Self) {
+    
+    inline def setClassifyAs(value: NullableOption[InferenceClassificationType]): Self = StObject.set(x, "classifyAs", value.asInstanceOf[js.Any])
+    
+    inline def setClassifyAsNull: Self = StObject.set(x, "classifyAs", null)
+    
+    inline def setClassifyAsUndefined: Self = StObject.set(x, "classifyAs", js.undefined)
+    
+    inline def setSenderEmailAddress(value: NullableOption[EmailAddress]): Self = StObject.set(x, "senderEmailAddress", value.asInstanceOf[js.Any])
+    
+    inline def setSenderEmailAddressNull: Self = StObject.set(x, "senderEmailAddress", null)
+    
+    inline def setSenderEmailAddressUndefined: Self = StObject.set(x, "senderEmailAddress", js.undefined)
+  }
 }
-

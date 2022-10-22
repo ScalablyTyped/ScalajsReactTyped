@@ -1,10 +1,11 @@
 package typingsJapgolly.vastClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VastError extends js.Object {
+trait VastError extends StObject {
+  
   /**
     * Whenever an error occurs during the VAST parsing, the parser will call on its own all related tracking error URLs. Reported errors are:
     *      no_ad: The VAST document is empty
@@ -14,24 +15,38 @@ trait VastError extends js.Object {
     *      VAST error 303: No VAST response after one or more Wrappers.
     */
   var ERRORCODE: String | Double
+  
   var ERRORMESSAGE: js.UndefOr[String] = js.undefined
+  
   var extensions: js.UndefOr[js.Array[VastAdExtension]] = js.undefined
+  
   var system: js.UndefOr[VastSystem | String | Null] = js.undefined
 }
-
 object VastError {
-  @scala.inline
-  def apply(
-    ERRORCODE: String | Double,
-    ERRORMESSAGE: String = null,
-    extensions: js.Array[VastAdExtension] = null,
-    system: VastSystem | String = null
-  ): VastError = {
+  
+  inline def apply(ERRORCODE: String | Double): VastError = {
     val __obj = js.Dynamic.literal(ERRORCODE = ERRORCODE.asInstanceOf[js.Any])
-    if (ERRORMESSAGE != null) __obj.updateDynamic("ERRORMESSAGE")(ERRORMESSAGE.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastError]
   }
+  
+  extension [Self <: VastError](x: Self) {
+    
+    inline def setERRORCODE(value: String | Double): Self = StObject.set(x, "ERRORCODE", value.asInstanceOf[js.Any])
+    
+    inline def setERRORMESSAGE(value: String): Self = StObject.set(x, "ERRORMESSAGE", value.asInstanceOf[js.Any])
+    
+    inline def setERRORMESSAGEUndefined: Self = StObject.set(x, "ERRORMESSAGE", js.undefined)
+    
+    inline def setExtensions(value: js.Array[VastAdExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    
+    inline def setExtensionsVarargs(value: VastAdExtension*): Self = StObject.set(x, "extensions", js.Array(value*))
+    
+    inline def setSystem(value: VastSystem | String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    
+    inline def setSystemNull: Self = StObject.set(x, "system", null)
+    
+    inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+  }
 }
-

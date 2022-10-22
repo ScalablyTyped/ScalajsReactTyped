@@ -1,24 +1,30 @@
 package typingsJapgolly.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PersistenceInsertOptions extends js.Object {
+trait PersistenceInsertOptions extends StObject {
+  
   var deepInsert: js.UndefOr[Boolean] = js.undefined
+  
   var onConflictIgnore: js.UndefOr[Boolean] = js.undefined
 }
-
 object PersistenceInsertOptions {
-  @scala.inline
-  def apply(
-    deepInsert: js.UndefOr[Boolean] = js.undefined,
-    onConflictIgnore: js.UndefOr[Boolean] = js.undefined
-  ): PersistenceInsertOptions = {
+  
+  inline def apply(): PersistenceInsertOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deepInsert)) __obj.updateDynamic("deepInsert")(deepInsert.asInstanceOf[js.Any])
-    if (!js.isUndefined(onConflictIgnore)) __obj.updateDynamic("onConflictIgnore")(onConflictIgnore.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistenceInsertOptions]
   }
+  
+  extension [Self <: PersistenceInsertOptions](x: Self) {
+    
+    inline def setDeepInsert(value: Boolean): Self = StObject.set(x, "deepInsert", value.asInstanceOf[js.Any])
+    
+    inline def setDeepInsertUndefined: Self = StObject.set(x, "deepInsert", js.undefined)
+    
+    inline def setOnConflictIgnore(value: Boolean): Self = StObject.set(x, "onConflictIgnore", value.asInstanceOf[js.Any])
+    
+    inline def setOnConflictIgnoreUndefined: Self = StObject.set(x, "onConflictIgnore", js.undefined)
+  }
 }
-

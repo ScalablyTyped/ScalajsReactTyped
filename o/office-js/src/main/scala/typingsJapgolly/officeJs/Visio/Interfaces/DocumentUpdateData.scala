@@ -1,11 +1,12 @@
 package typingsJapgolly.officeJs.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the Document object, for use in "document.set({ ... })". */
-trait DocumentUpdateData extends js.Object {
+/** An interface for updating data on the Document object, for use in `document.set({ ... })`. */
+trait DocumentUpdateData extends StObject {
+  
   /**
     *
     * Represents a Visio application instance that contains this document.
@@ -13,6 +14,7 @@ trait DocumentUpdateData extends js.Object {
     * [Api set:  1.1]
     */
   var application: js.UndefOr[ApplicationUpdateData] = js.undefined
+  
   /**
     *
     * Returns the DocumentView object.
@@ -21,14 +23,21 @@ trait DocumentUpdateData extends js.Object {
     */
   var view: js.UndefOr[DocumentViewUpdateData] = js.undefined
 }
-
 object DocumentUpdateData {
-  @scala.inline
-  def apply(application: ApplicationUpdateData = null, view: DocumentViewUpdateData = null): DocumentUpdateData = {
+  
+  inline def apply(): DocumentUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentUpdateData]
   }
+  
+  extension [Self <: DocumentUpdateData](x: Self) {
+    
+    inline def setApplication(value: ApplicationUpdateData): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+    
+    inline def setView(value: DocumentViewUpdateData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

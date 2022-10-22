@@ -1,42 +1,66 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeListFilterableMessages extends js.Object {
+trait TreeListFilterableMessages extends StObject {
+  
   var and: js.UndefOr[String] = js.undefined
+  
   var clear: js.UndefOr[String] = js.undefined
+  
   var filter: js.UndefOr[String] = js.undefined
+  
   var info: js.UndefOr[String] = js.undefined
+  
   var isFalse: js.UndefOr[String] = js.undefined
+  
   var isTrue: js.UndefOr[String] = js.undefined
+  
   var or: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
 }
-
 object TreeListFilterableMessages {
-  @scala.inline
-  def apply(
-    and: String = null,
-    clear: String = null,
-    filter: String = null,
-    info: String = null,
-    isFalse: String = null,
-    isTrue: String = null,
-    or: String = null,
-    title: String = null
-  ): TreeListFilterableMessages = {
+  
+  inline def apply(): TreeListFilterableMessages = {
     val __obj = js.Dynamic.literal()
-    if (and != null) __obj.updateDynamic("and")(and.asInstanceOf[js.Any])
-    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (isFalse != null) __obj.updateDynamic("isFalse")(isFalse.asInstanceOf[js.Any])
-    if (isTrue != null) __obj.updateDynamic("isTrue")(isTrue.asInstanceOf[js.Any])
-    if (or != null) __obj.updateDynamic("or")(or.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListFilterableMessages]
   }
+  
+  extension [Self <: TreeListFilterableMessages](x: Self) {
+    
+    inline def setAnd(value: String): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+    
+    inline def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
+    
+    inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    
+    inline def setIsFalse(value: String): Self = StObject.set(x, "isFalse", value.asInstanceOf[js.Any])
+    
+    inline def setIsFalseUndefined: Self = StObject.set(x, "isFalse", js.undefined)
+    
+    inline def setIsTrue(value: String): Self = StObject.set(x, "isTrue", value.asInstanceOf[js.Any])
+    
+    inline def setIsTrueUndefined: Self = StObject.set(x, "isTrue", js.undefined)
+    
+    inline def setOr(value: String): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
+    
+    inline def setOrUndefined: Self = StObject.set(x, "or", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

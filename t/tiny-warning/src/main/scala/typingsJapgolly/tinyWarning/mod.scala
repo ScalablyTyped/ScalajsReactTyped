@@ -1,12 +1,14 @@
 package typingsJapgolly.tinyWarning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tiny-warning", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(condition: js.Any, message: String): Unit = js.native
+object mod {
+  
+  @JSImport("tiny-warning", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(condition: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

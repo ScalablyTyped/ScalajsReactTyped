@@ -1,13 +1,17 @@
 package typingsJapgolly.lodash.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateExecutor extends js.Object {
-  var source: String = js.native
-  def apply(): String = js.native
-  def apply(data: js.Object): String = js.native
+trait TemplateExecutor extends StObject {
+  
+  def apply(): java.lang.String = js.native
+  def apply(data: js.Object): java.lang.String = js.native
+  
+  /**
+    * @see _.source
+    */
+  var source: java.lang.String = js.native
 }
-

@@ -1,30 +1,46 @@
 package typingsJapgolly.firebaseAuthTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UserCredential extends js.Object {
+trait UserCredential extends StObject {
+  
   var additionalUserInfo: js.UndefOr[AdditionalUserInfo | Null] = js.undefined
+  
   var credential: AuthCredential | Null
+  
   var operationType: js.UndefOr[String | Null] = js.undefined
+  
   var user: User | Null
 }
-
 object UserCredential {
-  @scala.inline
-  def apply(
-    additionalUserInfo: AdditionalUserInfo = null,
-    credential: AuthCredential = null,
-    operationType: String = null,
-    user: User = null
-  ): UserCredential = {
-    val __obj = js.Dynamic.literal()
-    if (additionalUserInfo != null) __obj.updateDynamic("additionalUserInfo")(additionalUserInfo.asInstanceOf[js.Any])
-    if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+  
+  inline def apply(): UserCredential = {
+    val __obj = js.Dynamic.literal(credential = null, user = null)
     __obj.asInstanceOf[UserCredential]
   }
+  
+  extension [Self <: UserCredential](x: Self) {
+    
+    inline def setAdditionalUserInfo(value: AdditionalUserInfo): Self = StObject.set(x, "additionalUserInfo", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalUserInfoNull: Self = StObject.set(x, "additionalUserInfo", null)
+    
+    inline def setAdditionalUserInfoUndefined: Self = StObject.set(x, "additionalUserInfo", js.undefined)
+    
+    inline def setCredential(value: AuthCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    
+    inline def setCredentialNull: Self = StObject.set(x, "credential", null)
+    
+    inline def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    
+    inline def setOperationTypeNull: Self = StObject.set(x, "operationType", null)
+    
+    inline def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
+    
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    
+    inline def setUserNull: Self = StObject.set(x, "user", null)
+  }
 }
-

@@ -1,44 +1,46 @@
 organization := "org.scalablytyped.japgolly"
 name := "material-components-web"
-version := "4.0.0-a70564"
-scalaVersion := "2.13.1"
+version := "14.0.0-feb4fa"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "material__auto-init" % "0.35-dt-20190213Z-67560e",
-  "org.scalablytyped.japgolly" %%% "material__base" % "0.35-dt-20191126Z-8f84c1",
-  "org.scalablytyped.japgolly" %%% "material__checkbox" % "0.35-dt-20191126Z-78b11a",
-  "org.scalablytyped.japgolly" %%% "material__chips" % "0.35-dt-20191126Z-53aa63",
-  "org.scalablytyped.japgolly" %%% "material__data-table" % "4.0.0-1e0c65",
-  "org.scalablytyped.japgolly" %%% "material__dialog" % "0.35-dt-20191126Z-f83685",
-  "org.scalablytyped.japgolly" %%% "material__drawer" % "0.43-dt-20191126Z-2f7a8a",
-  "org.scalablytyped.japgolly" %%% "material__floating-label" % "0.35-dt-20191126Z-c9fd30",
-  "org.scalablytyped.japgolly" %%% "material__form-field" % "0.35-dt-20191126Z-0f4ca0",
-  "org.scalablytyped.japgolly" %%% "material__grid-list" % "0.35-dt-20191126Z-ea8299",
-  "org.scalablytyped.japgolly" %%% "material__icon-button" % "4.0.0-109097",
-  "org.scalablytyped.japgolly" %%% "material__line-ripple" % "0.35-dt-20191126Z-2129f0",
-  "org.scalablytyped.japgolly" %%% "material__linear-progress" % "0.35-dt-20191126Z-66e3b6",
-  "org.scalablytyped.japgolly" %%% "material__list" % "0.43-dt-20191126Z-8bab59",
-  "org.scalablytyped.japgolly" %%% "material__menu" % "0.35-dt-20191126Z-d88c65",
-  "org.scalablytyped.japgolly" %%% "material__menu-surface" % "4.0.0-be098c",
-  "org.scalablytyped.japgolly" %%% "material__notched-outline" % "0.35-dt-20191126Z-d44ac4",
-  "org.scalablytyped.japgolly" %%% "material__radio" % "0.35-dt-20191126Z-e34528",
-  "org.scalablytyped.japgolly" %%% "material__ripple" % "0.35-dt-20191126Z-69d8fb",
-  "org.scalablytyped.japgolly" %%% "material__select" % "0.35-dt-20191126Z-acb61e",
-  "org.scalablytyped.japgolly" %%% "material__selection-control" % "0.35-dt-20190213Z-fd56e9",
-  "org.scalablytyped.japgolly" %%% "material__slider" % "0.35-dt-20191126Z-d1a8dc",
-  "org.scalablytyped.japgolly" %%% "material__snackbar" % "0.35-dt-20191126Z-987ec5",
-  "org.scalablytyped.japgolly" %%% "material__switch" % "4.0.0-fb6d07",
-  "org.scalablytyped.japgolly" %%% "material__tab" % "0.35-dt-20191126Z-f7d80a",
-  "org.scalablytyped.japgolly" %%% "material__tab-bar" % "4.0.0-878f59",
-  "org.scalablytyped.japgolly" %%% "material__tab-indicator" % "4.0.0-d571cc",
-  "org.scalablytyped.japgolly" %%% "material__tab-scroller" % "4.0.0-0e8349",
-  "org.scalablytyped.japgolly" %%% "material__textfield" % "0.35-dt-20191126Z-4a1378",
-  "org.scalablytyped.japgolly" %%% "material__top-app-bar" % "0.35-dt-20191126Z-fc16b1",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "material__auto-init" % "14.0.0-3b868d",
+  "org.scalablytyped.japgolly" %%% "material__banner" % "14.0.0-d77ba9",
+  "org.scalablytyped.japgolly" %%% "material__base" % "14.0.0-29b455",
+  "org.scalablytyped.japgolly" %%% "material__checkbox" % "14.0.0-49d4d6",
+  "org.scalablytyped.japgolly" %%% "material__chips" % "14.0.0-618e03",
+  "org.scalablytyped.japgolly" %%% "material__circular-progress" % "14.0.0-15ad4f",
+  "org.scalablytyped.japgolly" %%% "material__data-table" % "14.0.0-971530",
+  "org.scalablytyped.japgolly" %%% "material__dialog" % "14.0.0-371c04",
+  "org.scalablytyped.japgolly" %%% "material__dom" % "14.0.0-dc067e",
+  "org.scalablytyped.japgolly" %%% "material__drawer" % "14.0.0-3c3766",
+  "org.scalablytyped.japgolly" %%% "material__floating-label" % "14.0.0-401a87",
+  "org.scalablytyped.japgolly" %%% "material__form-field" % "14.0.0-16e44b",
+  "org.scalablytyped.japgolly" %%% "material__icon-button" % "14.0.0-f6554b",
+  "org.scalablytyped.japgolly" %%% "material__line-ripple" % "14.0.0-25544d",
+  "org.scalablytyped.japgolly" %%% "material__linear-progress" % "14.0.0-b2d26e",
+  "org.scalablytyped.japgolly" %%% "material__list" % "14.0.0-71cc70",
+  "org.scalablytyped.japgolly" %%% "material__menu" % "14.0.0-9d3278",
+  "org.scalablytyped.japgolly" %%% "material__menu-surface" % "14.0.0-0e31af",
+  "org.scalablytyped.japgolly" %%% "material__notched-outline" % "14.0.0-e0e38c",
+  "org.scalablytyped.japgolly" %%% "material__progress-indicator" % "14.0.0-8dcbd0",
+  "org.scalablytyped.japgolly" %%% "material__radio" % "14.0.0-b88a27",
+  "org.scalablytyped.japgolly" %%% "material__ripple" % "14.0.0-caf9c9",
+  "org.scalablytyped.japgolly" %%% "material__segmented-button" % "14.0.0-e366c6",
+  "org.scalablytyped.japgolly" %%% "material__select" % "14.0.0-1e6d5b",
+  "org.scalablytyped.japgolly" %%% "material__slider" % "14.0.0-866a0d",
+  "org.scalablytyped.japgolly" %%% "material__snackbar" % "14.0.0-3d2553",
+  "org.scalablytyped.japgolly" %%% "material__switch" % "14.0.0-e88851",
+  "org.scalablytyped.japgolly" %%% "material__tab" % "14.0.0-e0db9c",
+  "org.scalablytyped.japgolly" %%% "material__tab-bar" % "14.0.0-110d12",
+  "org.scalablytyped.japgolly" %%% "material__tab-indicator" % "14.0.0-fdcaad",
+  "org.scalablytyped.japgolly" %%% "material__tab-scroller" % "14.0.0-c6a123",
+  "org.scalablytyped.japgolly" %%% "material__textfield" % "14.0.0-198d48",
+  "org.scalablytyped.japgolly" %%% "material__tooltip" % "14.0.0-7d3a5c",
+  "org.scalablytyped.japgolly" %%% "material__top-app-bar" % "14.0.0-f4bbcf",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

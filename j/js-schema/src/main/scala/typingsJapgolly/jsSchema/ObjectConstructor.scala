@@ -1,22 +1,26 @@
 package typingsJapgolly.jsSchema
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObjectConstructor extends js.Object {
-  def like(obj: js.Any): ObjectConstructor
-  def reference(obj: js.Any): ObjectConstructor
+trait ObjectConstructor extends StObject {
+  
+  def like(obj: Any): ObjectConstructor
+  
+  def reference(obj: Any): ObjectConstructor
 }
-
 object ObjectConstructor {
-  @scala.inline
-  def apply(like: js.Any => CallbackTo[ObjectConstructor], reference: js.Any => CallbackTo[ObjectConstructor]): ObjectConstructor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("like")(js.Any.fromFunction1((t0: js.Any) => like(t0).runNow()))
-    __obj.updateDynamic("reference")(js.Any.fromFunction1((t0: js.Any) => reference(t0).runNow()))
+  
+  inline def apply(like: Any => ObjectConstructor, reference: Any => ObjectConstructor): ObjectConstructor = {
+    val __obj = js.Dynamic.literal(like = js.Any.fromFunction1(like), reference = js.Any.fromFunction1(reference))
     __obj.asInstanceOf[ObjectConstructor]
   }
+  
+  extension [Self <: ObjectConstructor](x: Self) {
+    
+    inline def setLike(value: Any => ObjectConstructor): Self = StObject.set(x, "like", js.Any.fromFunction1(value))
+    
+    inline def setReference(value: Any => ObjectConstructor): Self = StObject.set(x, "reference", js.Any.fromFunction1(value))
+  }
 }
-

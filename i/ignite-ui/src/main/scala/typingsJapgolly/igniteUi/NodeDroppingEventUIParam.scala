@@ -1,78 +1,108 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NodeDroppingEventUIParam extends js.Object {
+trait NodeDroppingEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the binding object for the level at which the target node is located.
-  	 */
-  var binding: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the binding object for the level at which the target node is located.
+    */
+  var binding: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the target node data.
-  	 */
-  var data: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the target node data.
+    */
+  var data: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the draggable element (the node).
-  	 */
+    * Gets a reference to the draggable element (the node).
+    */
   var draggable: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the jQuery element of the node.
-  	 */
+    * Gets a reference to the jQuery element of the node.
+    */
   var element: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the helper.
-  	 */
+    * Gets a reference to the helper.
+    */
   var helper: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the offset.
-  	 */
-  var offset: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the offset.
+    */
+  var offset: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the tree.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the tree.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the target node data-path attribute.
-  	 */
+    * Gets the target node data-path attribute.
+    */
   var path: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the current position of the draggable element.
-  	 */
-  var position: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the current position of the draggable element.
+    */
+  var position: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the source node object about to be dropped.
-  	 */
-  var sourceNode: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the source node object about to be dropped.
+    */
+  var sourceNode: js.UndefOr[Any] = js.undefined
 }
-
 object NodeDroppingEventUIParam {
-  @scala.inline
-  def apply(
-    binding: js.Any = null,
-    data: js.Any = null,
-    draggable: String = null,
-    element: String = null,
-    helper: String = null,
-    offset: js.Any = null,
-    owner: js.Any = null,
-    path: String = null,
-    position: js.Any = null,
-    sourceNode: js.Any = null
-  ): NodeDroppingEventUIParam = {
+  
+  inline def apply(): NodeDroppingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (binding != null) __obj.updateDynamic("binding")(binding.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDroppingEventUIParam]
   }
+  
+  extension [Self <: NodeDroppingEventUIParam](x: Self) {
+    
+    inline def setBinding(value: Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+    
+    inline def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDraggable(value: String): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    
+    inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setHelper(value: String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    
+    inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
+    
+    inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setSourceNode(value: Any): Self = StObject.set(x, "sourceNode", value.asInstanceOf[js.Any])
+    
+    inline def setSourceNodeUndefined: Self = StObject.set(x, "sourceNode", js.undefined)
+  }
 }
-

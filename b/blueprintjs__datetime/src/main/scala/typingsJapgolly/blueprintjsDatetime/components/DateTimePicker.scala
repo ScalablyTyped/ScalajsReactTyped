@@ -1,57 +1,43 @@
 package typingsJapgolly.blueprintjsDatetime.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.blueprintjsDatetime.datePickerMod.IDatePickerProps
-import typingsJapgolly.blueprintjsDatetime.dateTimePickerMod.IDateTimePickerProps
-import typingsJapgolly.blueprintjsDatetime.timePickerMod.ITimePickerProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsDatetime.libEsmDatePickerMod.DatePickerProps
+import typingsJapgolly.blueprintjsDatetime.libEsmDateTimePickerMod.IDateTimePickerProps
+import typingsJapgolly.blueprintjsDatetime.libEsmTimePickerMod.TimePickerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DateTimePicker {
-  def apply(
-    canClearSelection: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    datePickerProps: IDatePickerProps = null,
-    defaultValue: js.Date = null,
-    onChange: (/* selectedDate */ js.Date, /* isUserChange */ Boolean) => Callback = null,
-    timePickerProps: ITimePickerProps = null,
-    value: js.Date = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IDateTimePickerProps, 
-    typingsJapgolly.blueprintjsDatetime.mod.DateTimePicker, 
-    Unit, 
-    IDateTimePickerProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(canClearSelection)) __obj.updateDynamic("canClearSelection")(canClearSelection.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (datePickerProps != null) __obj.updateDynamic("datePickerProps")(datePickerProps.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* selectedDate */ js.Date, t1: /* isUserChange */ scala.Boolean) => onChange(t0, t1).runNow()))
-    if (timePickerProps != null) __obj.updateDynamic("timePickerProps")(timePickerProps.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsDatetime.dateTimePickerMod.IDateTimePickerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsDatetime.mod.DateTimePicker](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsDatetime.dateTimePickerMod.IDateTimePickerProps])(children: _*)
-  }
   @JSImport("@blueprintjs/datetime", "DateTimePicker")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsDatetime.mod.DateTimePicker] {
+    
+    inline def canClearSelection(value: Boolean): this.type = set("canClearSelection", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def datePickerProps(value: DatePickerProps): this.type = set("datePickerProps", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: js.Date): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: (/* selectedDate */ js.Date, /* isUserChange */ Boolean) => Callback): this.type = set("onChange", js.Any.fromFunction2((t0: /* selectedDate */ js.Date, t1: /* isUserChange */ Boolean) => (value(t0, t1)).runNow()))
+    
+    inline def timePickerProps(value: TimePickerProps): this.type = set("timePickerProps", value.asInstanceOf[js.Any])
+    
+    inline def value(value: js.Date): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueNull: this.type = set("value", null)
+  }
+  
+  implicit def make(companion: DateTimePicker.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IDateTimePickerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

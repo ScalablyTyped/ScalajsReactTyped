@@ -1,20 +1,7 @@
 package typingsJapgolly.winrt.Windows.Globalization
 
-import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Globalization.ApplicationLanguages")
-@js.native
-class ApplicationLanguages () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.Globalization.ApplicationLanguages")
-@js.native
-object ApplicationLanguages extends js.Object {
-  var languages: IVectorView[String] = js.native
-  var manifestLanguages: IVectorView[String] = js.native
-  var primaryLanguageOverride: String = js.native
-}
-
+trait ApplicationLanguages extends StObject

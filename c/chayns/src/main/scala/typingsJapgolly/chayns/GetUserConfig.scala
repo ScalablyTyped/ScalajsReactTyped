@@ -1,8 +1,8 @@
 package typingsJapgolly.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Basic Functions
@@ -10,27 +10,39 @@ import scala.scalajs.js.annotation._
   * interfaces
   */
 // chayns.getUser()
-trait GetUserConfig extends js.Object {
+trait GetUserConfig extends StObject {
+  
   var accessToken: js.UndefOr[String] = js.undefined
+  
   var fbId: js.UndefOr[String] = js.undefined
+  
   var personId: js.UndefOr[String] = js.undefined
+  
   var userId: js.UndefOr[Double] = js.undefined
 }
-
 object GetUserConfig {
-  @scala.inline
-  def apply(
-    accessToken: String = null,
-    fbId: String = null,
-    personId: String = null,
-    userId: Int | Double = null
-  ): GetUserConfig = {
+  
+  inline def apply(): GetUserConfig = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
-    if (fbId != null) __obj.updateDynamic("fbId")(fbId.asInstanceOf[js.Any])
-    if (personId != null) __obj.updateDynamic("personId")(personId.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserConfig]
   }
+  
+  extension [Self <: GetUserConfig](x: Self) {
+    
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    
+    inline def setFbId(value: String): Self = StObject.set(x, "fbId", value.asInstanceOf[js.Any])
+    
+    inline def setFbIdUndefined: Self = StObject.set(x, "fbId", js.undefined)
+    
+    inline def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
+    
+    inline def setPersonIdUndefined: Self = StObject.set(x, "personId", js.undefined)
+    
+    inline def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+  }
 }
-

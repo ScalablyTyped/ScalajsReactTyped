@@ -1,9 +1,10 @@
-package typingsJapgolly.opentok
+package typingsJapgolly.opentok.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Token = java.lang.String
-}
+
+type StreamId = String
+
+type Token = String

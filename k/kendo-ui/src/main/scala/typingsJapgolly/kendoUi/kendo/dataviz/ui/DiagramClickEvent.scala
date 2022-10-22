@@ -2,32 +2,39 @@ package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.kendoUi.kendo.dataviz.diagram.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramClickEvent extends DiagramEvent {
-  var item: js.UndefOr[js.Any] = js.undefined
-  var meta: js.UndefOr[js.Any] = js.undefined
+trait DiagramClickEvent
+  extends StObject
+     with DiagramEvent {
+  
+  var item: js.UndefOr[Any] = js.undefined
+  
+  var meta: js.UndefOr[Any] = js.undefined
+  
   var point: js.UndefOr[Point] = js.undefined
 }
-
 object DiagramClickEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Diagram,
-    item: js.Any = null,
-    meta: js.Any = null,
-    point: Point = null
-  ): DiagramClickEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Diagram): DiagramClickEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramClickEvent]
   }
+  
+  extension [Self <: DiagramClickEvent](x: Self) {
+    
+    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    
+    inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    
+    inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+  }
 }
-

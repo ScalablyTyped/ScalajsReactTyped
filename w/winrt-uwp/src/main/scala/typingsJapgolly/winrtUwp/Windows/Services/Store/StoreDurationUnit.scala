@@ -1,60 +1,49 @@
 package typingsJapgolly.winrtUwp.Windows.Services.Store
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StoreDurationUnit extends js.Object
-
+sealed trait StoreDurationUnit extends StObject
 /** Defines values that represent the units of a trial period or billing period for a subscription. */
 @JSGlobal("Windows.Services.Store.StoreDurationUnit")
 @js.native
-object StoreDurationUnit extends js.Object {
+object StoreDurationUnit extends StObject {
+  
   /** The period is defined in days. */
   @js.native
-  sealed trait day extends StoreDurationUnit
+  sealed trait day
+    extends StObject
+       with StoreDurationUnit
   
   /** The period is defined in hours. */
   @js.native
-  sealed trait hour extends StoreDurationUnit
+  sealed trait hour
+    extends StObject
+       with StoreDurationUnit
   
   /** The period is defined in minutes. */
   @js.native
-  sealed trait minute extends StoreDurationUnit
+  sealed trait minute
+    extends StObject
+       with StoreDurationUnit
   
   /** The period is defined in months. */
   @js.native
-  sealed trait month extends StoreDurationUnit
+  sealed trait month
+    extends StObject
+       with StoreDurationUnit
   
   /** The period is defined in weeks. */
   @js.native
-  sealed trait week extends StoreDurationUnit
+  sealed trait week
+    extends StObject
+       with StoreDurationUnit
   
   /** The period is defined in years. */
   @js.native
-  sealed trait year extends StoreDurationUnit
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StoreDurationUnit with Double] = js.native
-  /* 2 */ @js.native
-  object day extends TopLevel[day with Double]
-  
-  /* 1 */ @js.native
-  object hour extends TopLevel[hour with Double]
-  
-  /* 0 */ @js.native
-  object minute extends TopLevel[minute with Double]
-  
-  /* 4 */ @js.native
-  object month extends TopLevel[month with Double]
-  
-  /* 3 */ @js.native
-  object week extends TopLevel[week with Double]
-  
-  /* 5 */ @js.native
-  object year extends TopLevel[year with Double]
-  
+  sealed trait year
+    extends StObject
+       with StoreDurationUnit
 }
-

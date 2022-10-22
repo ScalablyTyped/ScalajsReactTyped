@@ -10,10 +10,10 @@ Handy data structures for elements keyed by string.
 | ------------------ | :-------------: |
 | Full name          | d3-collection |
 | Keywords           | d3, d3-module, nest, data, map, set, object, collection |
-| # releases         | 4 |
-| # dependents       | 135 |
-| # downloads        | 42191195 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7140837.333333333 |
+| # stars            | 108.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-collection/)

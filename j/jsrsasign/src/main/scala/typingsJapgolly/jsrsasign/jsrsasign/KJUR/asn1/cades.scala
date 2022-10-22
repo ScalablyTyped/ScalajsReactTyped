@@ -1,18 +1,11 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1
 
-import typingsJapgolly.jsrsasign.AnonAlg
-import typingsJapgolly.jsrsasign.AnonAlgCert
-import typingsJapgolly.jsrsasign.AnonAlgs
-import typingsJapgolly.jsrsasign.AnonCert
-import typingsJapgolly.jsrsasign.AnonCertString
-import typingsJapgolly.jsrsasign.AnonDigalg
-import typingsJapgolly.jsrsasign.AnonHash
-import typingsJapgolly.jsrsasign.AnonLength
-import typingsJapgolly.jsrsasign.AnonRes
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * kjur's ASN.1 class for RFC 5126 CAdES long term signature
@@ -153,9 +146,8 @@ import scala.scalajs.js.annotation._
   * esthex = info.obj.getContentInfoEncodedHex(); // CAdES-T
   * ```
   */
-@JSGlobal("jsrsasign.KJUR.asn1.cades")
-@js.native
-object cades extends js.Object {
+object cades {
+  
   /**
     * class for RFC 5126 CAdES CompleteCertificateRefs attribute
     * @param params associative array of parameters
@@ -168,14 +160,38 @@ object cades extends js.Object {
     * @example
     * o = new KJUR.asn1.cades.CompleteCertificateRefs([certPEM1,certPEM2]);
     */
-  @js.native
-  class CompleteCertificateRefs () extends Attribute {
-    def this(params: AnonLength) = this()
+  trait CompleteCertificateRefs
+    extends StObject
+       with Attribute {
+    
     /**
       * set value by array
       * @param a array of `KJUR.asn1.cades.OtherCertID` argument
       */
-    def setByArray(a: js.Array[OtherCertID]): Unit = js.native
+    def setByArray(a: js.Array[OtherCertID]): Unit
+  }
+  object CompleteCertificateRefs {
+    
+    inline def apply(
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String,
+      setByArray: js.Array[OtherCertID] => Callback
+    ): CompleteCertificateRefs = {
+      val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByArray = js.Any.fromFunction1((t0: js.Array[OtherCertID]) => setByArray(t0).runNow()), params = null)
+      __obj.asInstanceOf[CompleteCertificateRefs]
+    }
+    
+    extension [Self <: CompleteCertificateRefs](x: Self) {
+      
+      inline def setSetByArray(value: js.Array[OtherCertID] => Callback): Self = StObject.set(x, "setByArray", js.Any.fromFunction1((t0: js.Array[OtherCertID]) => value(t0).runNow()))
+    }
   }
   
   /**
@@ -191,10 +207,10 @@ object cades extends js.Object {
     * o = new KJUR.asn1.cades.OtherCertID(certPEM);
     * o = new KJUR.asn1.cades.OtherCertID({cert:certPEM, hasis: false});
     */
-  @js.native
-  class OtherCertID () extends ASN1Object {
-    def this(params: String) = this()
-    def this(params: AnonCert) = this()
+  trait OtherCertID
+    extends StObject
+       with ASN1Object {
+    
     /**
       * set value by PEM string of certificate
       * @param certPEM PEM string of certificate
@@ -203,7 +219,30 @@ object cades extends js.Object {
       * This will add IssuerAndSerialNumber by default
       * which depends on hasIssuerSerial flag.
       */
-    def setByCertPEM(certPEM: String): Unit = js.native
+    def setByCertPEM(certPEM: String): Unit
+  }
+  object OtherCertID {
+    
+    inline def apply(
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String,
+      setByCertPEM: String => Callback
+    ): OtherCertID = {
+      val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByCertPEM = js.Any.fromFunction1((t0: String) => setByCertPEM(t0).runNow()), params = null)
+      __obj.asInstanceOf[OtherCertID]
+    }
+    
+    extension [Self <: OtherCertID](x: Self) {
+      
+      inline def setSetByCertPEM(value: String => Callback): Self = StObject.set(x, "setByCertPEM", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    }
   }
   
   /**
@@ -223,12 +262,10 @@ object cades extends js.Object {
     * o = new KJUR.asn1.cades.OtherHash({alg: 'sha256', cert: certPEM});
     * o = new KJUR.asn1.cades.OtherHash({cert: certPEM});
     */
-  @js.native
-  class OtherHash () extends ASN1Object {
-    def this(params: String) = this()
-    def this(params: AnonAlg) = this()
-    def this(params: AnonAlgCert) = this()
-    def this(params: AnonCertString) = this()
+  trait OtherHash
+    extends StObject
+       with ASN1Object {
+    
     /**
       * set value by PEM string of certificate
       * @param certPEM PEM string of certificate
@@ -237,7 +274,30 @@ object cades extends js.Object {
       * An algorithm used to hash certificate data will
       * be defined by 'alg' property and 'sha256' is default.
       */
-    def setByCertPEM(certPEM: String): Unit = js.native
+    def setByCertPEM(certPEM: String): Unit
+  }
+  object OtherHash {
+    
+    inline def apply(
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String,
+      setByCertPEM: String => Callback
+    ): OtherHash = {
+      val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByCertPEM = js.Any.fromFunction1((t0: String) => setByCertPEM(t0).runNow()), params = null)
+      __obj.asInstanceOf[OtherHash]
+    }
+    
+    extension [Self <: OtherHash](x: Self) {
+      
+      inline def setSetByCertPEM(value: String => Callback): Self = StObject.set(x, "setByCertPEM", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    }
   }
   
   /**
@@ -251,10 +311,7 @@ object cades extends js.Object {
     * OtherHashValue ::= OCTET STRING
     * ```
     */
-  @js.native
-  class OtherHashAlgAndValue () extends ASN1Object {
-    def this(params: AnonAlg) = this()
-  }
+  type OtherHashAlgAndValue = ASN1Object
   
   /**
     * class for RFC 5126 CAdES SignaturePolicyIdentifier attribute
@@ -280,10 +337,7 @@ object cades extends js.Object {
     *   hash: {alg: 'sha1', hash: 'a1a2a3a4...'}
     * });
     */
-  @js.native
-  class SignaturePolicyIdentifier () extends Attribute {
-    def this(params: AnonHash) = this()
-  }
+  type SignaturePolicyIdentifier = Attribute
   
   /**
     * class for RFC 5126 CAdES SignatureTimeStamp attribute
@@ -295,63 +349,5 @@ object cades extends js.Object {
     * SignatureTimeStampToken ::= TimeStampToken
     * ```
     */
-  @js.native
-  class SignatureTimeStamp () extends Attribute {
-    def this(params: AnonRes) = this()
-  }
-  
-  @js.native
-  object CAdESUtil extends js.Object {
-    /**
-      * parse CMS SignedData to add unsigned attributes
-      * @param hex hexadecimal string of ContentInfo of CMS SignedData
-      * @return associative array of parsed data
-      * @description
-      * This method will parse a hexadecimal string of
-      * ContentInfo with CMS SignedData to add a attribute
-      * to unsigned attributes field in a signerInfo field.
-      * Parsed result will be an associative array which has
-      * following properties:
-      *
-      * - version - hex of CMSVersion ASN.1 TLV
-      * - algs - hex of DigestAlgorithms ASN.1 TLV
-      * - encapcontent - hex of EncapContentInfo ASN.1 TLV
-      * - certs - hex of Certificates ASN.1 TLV
-      * - revs - hex of RevocationInfoChoices ASN.1 TLV
-      * - si[] - array of SignerInfo properties
-      * - obj - parsed KJUR.asn1.cms.SignedData object
-      *
-      * @example
-      * info = KJUR.asn1.cades.CAdESUtil.parseSignedDataForAddingUnsigned(beshex);
-      * sd = info.obj;
-      */
-    def parseSignedDataForAddingUnsigned(hex: String): AnonAlgs = js.native
-    /**
-      * parse SignerInfo to add unsigned attributes
-      * @param hex hexadecimal string of SignerInfo
-      * @return associative array of parsed data
-      * @description
-      * This method will parse a hexadecimal string of
-      * SignerInfo to add a attribute
-      * to unsigned attributes field in a signerInfo field.
-      * Parsed result will be an associative array which has
-      * following properties:
-      *
-      * - version - hex TLV of version
-      * - si - hex TLV of SignerIdentifier
-      * - digalg - hex TLV of DigestAlgorithm
-      * - sattrs - hex TLV of SignedAttributes
-      * - sigalg - hex TLV of SignatureAlgorithm
-      * - sig - hex TLV of signature
-      * - sigval = hex V of signature
-      * - obj - parsed KJUR.asn1.cms.SignerInfo object
-      *
-      * NOTE: Parsing of unsigned attributes will be provided in the
-      * future version. That's way this version provides support
-      * for CAdES-T and not for CAdES-C.
-      */
-    def parseSignerInfoForAddingUnsigned(hex: String, iSI: Double, nth: Double): AnonDigalg = js.native
-  }
-  
+  type SignatureTimeStamp = Attribute
 }
-

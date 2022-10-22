@@ -1,22 +1,22 @@
 
 # Scala.js typings for emoji-mart
 
-Typings are for version 2.11
+Typings are for version 3.0
 
 ## Library description:
-Customizable Slack-like emoji picker for React
+Emoji picker for the web
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | emoji-mart |
-| Keywords           | react, emoji, picker |
-| # releases         | 17 |
-| # dependents       | 58 |
-| # downloads        | 1806394 |
-| # stars            | 1 |
+| Keywords           | emoji, emoticons, emoji-picker, web-component, twemoji |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1612559.0 |
+| # stars            | 5894.0 |
 
 ## Links
-- [Homepage](https://github.com/missive/emoji-mart)
+- [Homepage](https://missiveapp.com/open/emoji-mart)
 - [Bugs](https://github.com/missive/emoji-mart/issues)
 - [Repository](https://github.com/missive/emoji-mart)
 - [Npm](https://www.npmjs.com/package/emoji-mart)

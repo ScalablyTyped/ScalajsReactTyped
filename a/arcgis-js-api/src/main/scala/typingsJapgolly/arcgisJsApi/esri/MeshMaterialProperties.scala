@@ -1,65 +1,63 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalajs.dom.raw.HTMLCanvasElement
-import org.scalajs.dom.raw.HTMLImageElement
-import org.scalajs.dom.raw.ImageData
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.HTMLImageElement
+import org.scalajs.dom.ImageData
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.auto
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.blend
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.mask
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.opaque
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MeshMaterialProperties extends js.Object {
+trait MeshMaterialProperties extends StObject {
+  
   /**
-    * Specifies how transparency on the object is handled. If `alphaMode` is set to either `mask` or `auto` this property specifies the cutoff value below which masking happens (that is, the coresponding part of the Mesh is rendered fully transparent).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaCutoff)
+    * Specifies how transparency on the object is handled.
     *
     * @default 0.5
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaCutoff)
     */
   var alphaCutoff: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Specifies how transparency on the object is handled. See also `alphaCutoff`.
-    *
-    * | Type | Description |
-    * |------|-------------|
-    * | opaque | Alpha is ignored, and the object is rendered fully opaque. |
-    * | blend | Alpha values are used for gradual transparency, blending between the object and its background. |
-    * | mask | Alpha values are used for binary transparency, either displaying the object, or its background. See also `alphaCutoff`. |
-    * | auto | The implementation mixes the `mask` and `blend` settings, masking below `alphaCutoff` and blending above it. |
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaMode)
+    * Specifies how transparency on the object is handled.
     *
     * @default "auto"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaMode)
     */
   var alphaMode: js.UndefOr[auto | blend | opaque | mask] = js.undefined
+  
   /**
-    * Allows to specify a single, uniform color for the mesh component. This can be autocast with a named string, hex string, array of rgb or rgba values, an object with `r`, `g`, `b`, and `a` properties, or a [Color](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html) object.
+    * Specifies a single, uniform color for the mesh component.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#color)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
+  
   /**
-    * Allows to specify a texture to get color information from. The texture is accessed using the uv coordinate specified for each vertex in the mesh vertex attributes.
+    * Specifies a texture from which to get color information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#colorTexture)
     */
   var colorTexture: js.UndefOr[
     MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String
   ] = js.undefined
+  
   /**
     * Specifies whether both sides of each triangle are displayed, or only the front sides.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#doubleSided)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#doubleSided)
     */
   var doubleSided: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Allows to specify a texture to get normal information from. The texture is accessed using the uv coordinate specified for each vertex in the mesh vertex attributes.
+    * Specifies a texture from which to get normal information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#normalTexture)
     */
@@ -67,25 +65,39 @@ trait MeshMaterialProperties extends js.Object {
     MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String
   ] = js.undefined
 }
-
 object MeshMaterialProperties {
-  @scala.inline
-  def apply(
-    alphaCutoff: Int | Double = null,
-    alphaMode: auto | blend | opaque | mask = null,
-    color: Color_ | js.Array[Double] | String = null,
-    colorTexture: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String = null,
-    doubleSided: js.UndefOr[Boolean] = js.undefined,
-    normalTexture: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String = null
-  ): MeshMaterialProperties = {
+  
+  inline def apply(): MeshMaterialProperties = {
     val __obj = js.Dynamic.literal()
-    if (alphaCutoff != null) __obj.updateDynamic("alphaCutoff")(alphaCutoff.asInstanceOf[js.Any])
-    if (alphaMode != null) __obj.updateDynamic("alphaMode")(alphaMode.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorTexture != null) __obj.updateDynamic("colorTexture")(colorTexture.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleSided)) __obj.updateDynamic("doubleSided")(doubleSided.asInstanceOf[js.Any])
-    if (normalTexture != null) __obj.updateDynamic("normalTexture")(normalTexture.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshMaterialProperties]
   }
+  
+  extension [Self <: MeshMaterialProperties](x: Self) {
+    
+    inline def setAlphaCutoff(value: Double): Self = StObject.set(x, "alphaCutoff", value.asInstanceOf[js.Any])
+    
+    inline def setAlphaCutoffUndefined: Self = StObject.set(x, "alphaCutoff", js.undefined)
+    
+    inline def setAlphaMode(value: auto | blend | opaque | mask): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
+    
+    inline def setAlphaModeUndefined: Self = StObject.set(x, "alphaMode", js.undefined)
+    
+    inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "colorTexture", value.asInstanceOf[js.Any])
+    
+    inline def setColorTextureUndefined: Self = StObject.set(x, "colorTexture", js.undefined)
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
+    
+    inline def setDoubleSided(value: Boolean): Self = StObject.set(x, "doubleSided", value.asInstanceOf[js.Any])
+    
+    inline def setDoubleSidedUndefined: Self = StObject.set(x, "doubleSided", js.undefined)
+    
+    inline def setNormalTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "normalTexture", value.asInstanceOf[js.Any])
+    
+    inline def setNormalTextureUndefined: Self = StObject.set(x, "normalTexture", js.undefined)
+  }
 }
-

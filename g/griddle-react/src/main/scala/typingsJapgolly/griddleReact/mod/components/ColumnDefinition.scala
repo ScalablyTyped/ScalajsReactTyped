@@ -1,12 +1,17 @@
 package typingsJapgolly.griddleReact.mod.components
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("griddle-react", "components.ColumnDefinition")
 @js.native
-class ColumnDefinition ()
-  extends Component[ColumnDefinitionProps, js.Any, js.Any]
-
+open class ColumnDefinition protected () extends Component[ColumnDefinitionProps, Any, Any] {
+  def this(props: ColumnDefinitionProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: ColumnDefinitionProps, context: Any) = this()
+}

@@ -1,25 +1,25 @@
 package typingsJapgolly.aureliaBinding.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PropertyObserver extends js.Object {
+trait PropertyObserver extends StObject {
+  
   /**
     * Subscribe to property change events.
     */
-  def subscribe(callback: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, Unit]): Disposable
+  def subscribe(callback: js.Function2[/* newValue */ Any, /* oldValue */ Any, Unit]): Disposable
 }
-
 object PropertyObserver {
-  @scala.inline
-  def apply(
-    subscribe: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, Unit] => CallbackTo[Disposable]
-  ): PropertyObserver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subscribe")(js.Any.fromFunction1((t0: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, scala.Unit]) => subscribe(t0).runNow()))
+  
+  inline def apply(subscribe: js.Function2[/* newValue */ Any, /* oldValue */ Any, Unit] => Disposable): PropertyObserver = {
+    val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
     __obj.asInstanceOf[PropertyObserver]
   }
+  
+  extension [Self <: PropertyObserver](x: Self) {
+    
+    inline def setSubscribe(value: js.Function2[/* newValue */ Any, /* oldValue */ Any, Unit] => Disposable): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+  }
 }
-

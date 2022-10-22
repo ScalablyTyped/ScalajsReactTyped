@@ -1,29 +1,44 @@
 package typingsJapgolly.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IField extends js.Object {
+trait IField extends StObject {
+  
   /** Field id */
   var id: Double
+  
   /** Field options */
-  var options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var options: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
   /** Field rule */
   var rule: js.UndefOr[String] = js.undefined
+  
   /** Field type */
   var `type`: String
 }
-
 object IField {
-  @scala.inline
-  def apply(id: Double, `type`: String, options: StringDictionary[js.Any] = null, rule: String = null): IField = {
+  
+  inline def apply(id: Double, `type`: String): IField = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[IField]
   }
+  
+  extension [Self <: IField](x: Self) {
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

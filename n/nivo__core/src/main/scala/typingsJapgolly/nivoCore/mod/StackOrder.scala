@@ -1,8 +1,8 @@
 package typingsJapgolly.nivoCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nivoCore.nivoCoreStrings.ascending
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.nivoCore.nivoCoreStrings.none
   - typingsJapgolly.nivoCore.nivoCoreStrings.reverse
 */
-trait StackOrder extends js.Object
-
+trait StackOrder extends StObject
 object StackOrder {
-  @scala.inline
-  def ascending: typingsJapgolly.nivoCore.nivoCoreStrings.ascending = this.cast("ascending")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def descending: typingsJapgolly.nivoCore.nivoCoreStrings.descending = this.cast("descending")
-  @scala.inline
-  def insideOut: typingsJapgolly.nivoCore.nivoCoreStrings.insideOut = this.cast("insideOut")
-  @scala.inline
-  def none: typingsJapgolly.nivoCore.nivoCoreStrings.none = this.cast("none")
-  @scala.inline
-  def reverse: typingsJapgolly.nivoCore.nivoCoreStrings.reverse = this.cast("reverse")
+  
+  inline def ascending: typingsJapgolly.nivoCore.nivoCoreStrings.ascending = "ascending".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.ascending]
+  
+  inline def descending: typingsJapgolly.nivoCore.nivoCoreStrings.descending = "descending".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.descending]
+  
+  inline def insideOut: typingsJapgolly.nivoCore.nivoCoreStrings.insideOut = "insideOut".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.insideOut]
+  
+  inline def none: typingsJapgolly.nivoCore.nivoCoreStrings.none = "none".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.none]
+  
+  inline def reverse: typingsJapgolly.nivoCore.nivoCoreStrings.reverse = "reverse".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.reverse]
 }
-

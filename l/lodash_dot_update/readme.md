@@ -10,10 +10,10 @@ The lodash method `_.update` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.update |
 | Keywords           | lodash-modularized, update |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 227640 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 51146.333333333336 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -1,24 +1,20 @@
 package typingsJapgolly.w3cWebUsb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.ok
   - typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.stall
   - typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.babble
 */
-trait USBTransferStatus extends js.Object
-
+trait USBTransferStatus extends StObject
 object USBTransferStatus {
-  @scala.inline
-  def babble: typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.babble = this.cast("babble")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ok: typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.ok = this.cast("ok")
-  @scala.inline
-  def stall: typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.stall = this.cast("stall")
+  
+  inline def babble: typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.babble = "babble".asInstanceOf[typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.babble]
+  
+  inline def ok: typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.ok = "ok".asInstanceOf[typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.ok]
+  
+  inline def stall: typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.stall = "stall".asInstanceOf[typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.stall]
 }
-

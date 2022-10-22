@@ -1,13 +1,15 @@
 package typingsJapgolly.getEmails
 
 import typingsJapgolly.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("get-emails", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(string: String): Set[String] = js.native
+object mod {
+  
+  @JSImport("get-emails", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(string: String): Set[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[Set[String]]
 }
-

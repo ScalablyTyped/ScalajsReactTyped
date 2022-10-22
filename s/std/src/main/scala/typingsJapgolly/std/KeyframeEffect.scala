@@ -1,38 +1,31 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyframeEffect extends AnimationEffect {
+trait KeyframeEffect
+  extends StObject
+     with AnimationEffect {
+  
+  /* standard dom */
   var composite: CompositeOperation = js.native
-  var iterationComposite: IterationCompositeOperation = js.native
-  var target: org.scalajs.dom.raw.Element | Null = js.native
+  
+  /* standard dom */
   def getKeyframes(): js.Array[ComputedKeyframe] = js.native
+  
+  /* standard dom */
+  var iterationComposite: IterationCompositeOperation = js.native
+  
+  /* standard dom */
+  var pseudoElement: java.lang.String | Null = js.native
+  
+  /* standard dom */
   def setKeyframes(): Unit = js.native
   def setKeyframes(keyframes: js.Array[Keyframe]): Unit = js.native
   def setKeyframes(keyframes: PropertyIndexedKeyframes): Unit = js.native
+  
+  /* standard dom */
+  var target: org.scalajs.dom.Element | Null = js.native
 }
-
-@JSGlobal("KeyframeEffect")
-@js.native
-object KeyframeEffect
-  extends Instantiable0[KeyframeEffect]
-     with Instantiable1[(/* target */ Element) | (/* source */ KeyframeEffect), KeyframeEffect]
-     with Instantiable2[
-      (/* target */ Element) | (/* target */ Null), 
-      (/* keyframes */ js.Array[Keyframe]) | (/* keyframes */ PropertyIndexedKeyframes), 
-      KeyframeEffect
-    ]
-     with Instantiable3[
-      (/* target */ Element) | (/* target */ Null), 
-      (/* keyframes */ js.Array[Keyframe]) | (/* keyframes */ Null) | (/* keyframes */ PropertyIndexedKeyframes), 
-      (/* options */ Double) | (/* options */ KeyframeEffectOptions), 
-      KeyframeEffect
-    ]
-

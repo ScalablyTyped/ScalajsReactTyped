@@ -1,219 +1,176 @@
 package typingsJapgolly.autocannon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autocannonStrings {
-  @js.native
-  sealed trait ACL extends js.Object
   
   @js.native
-  sealed trait BIND extends js.Object
+  sealed trait ACL extends StObject
+  inline def ACL: ACL = "ACL".asInstanceOf[ACL]
   
   @js.native
-  sealed trait CHECKOUT extends js.Object
+  sealed trait BIND extends StObject
+  inline def BIND: BIND = "BIND".asInstanceOf[BIND]
   
   @js.native
-  sealed trait CONNECT extends js.Object
+  sealed trait CHECKOUT extends StObject
+  inline def CHECKOUT: CHECKOUT = "CHECKOUT".asInstanceOf[CHECKOUT]
   
   @js.native
-  sealed trait COPY extends js.Object
+  sealed trait CONNECT extends StObject
+  inline def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
   
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait COPY extends StObject
+  inline def COPY: COPY = "COPY".asInstanceOf[COPY]
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait DELETE extends StObject
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait HEAD extends js.Object
+  sealed trait GET extends StObject
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait LINK extends js.Object
+  sealed trait HEAD extends StObject
+  inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
-  sealed trait LOCK extends js.Object
+  sealed trait LINK extends StObject
+  inline def LINK: LINK = "LINK".asInstanceOf[LINK]
   
   @js.native
-  sealed trait `M-SEARCH` extends js.Object
+  sealed trait LOCK extends StObject
+  inline def LOCK: LOCK = "LOCK".asInstanceOf[LOCK]
   
   @js.native
-  sealed trait MERGE extends js.Object
+  sealed trait `M-SEARCH` extends StObject
+  inline def `M-SEARCH`: `M-SEARCH` = "M-SEARCH".asInstanceOf[`M-SEARCH`]
   
   @js.native
-  sealed trait MKACTIVITY extends js.Object
+  sealed trait MERGE extends StObject
+  inline def MERGE: MERGE = "MERGE".asInstanceOf[MERGE]
   
   @js.native
-  sealed trait MKCALENDAR extends js.Object
+  sealed trait MKACTIVITY extends StObject
+  inline def MKACTIVITY: MKACTIVITY = "MKACTIVITY".asInstanceOf[MKACTIVITY]
   
   @js.native
-  sealed trait MKCOL extends js.Object
+  sealed trait MKCALENDAR extends StObject
+  inline def MKCALENDAR: MKCALENDAR = "MKCALENDAR".asInstanceOf[MKCALENDAR]
   
   @js.native
-  sealed trait MOVE extends js.Object
+  sealed trait MKCOL extends StObject
+  inline def MKCOL: MKCOL = "MKCOL".asInstanceOf[MKCOL]
   
   @js.native
-  sealed trait NOTIFY extends js.Object
+  sealed trait MOVE extends StObject
+  inline def MOVE: MOVE = "MOVE".asInstanceOf[MOVE]
   
   @js.native
-  sealed trait OPTIONS extends js.Object
+  sealed trait NOTIFY extends StObject
+  inline def NOTIFY: NOTIFY = "NOTIFY".asInstanceOf[NOTIFY]
   
   @js.native
-  sealed trait PATCH extends js.Object
+  sealed trait OPTIONS extends StObject
+  inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait PATCH extends StObject
+  inline def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
-  sealed trait PROPFIND extends js.Object
+  sealed trait POST extends StObject
+  inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait PROPPATCH extends js.Object
+  sealed trait PROPFIND extends StObject
+  inline def PROPFIND: PROPFIND = "PROPFIND".asInstanceOf[PROPFIND]
   
   @js.native
-  sealed trait PURGE extends js.Object
+  sealed trait PROPPATCH extends StObject
+  inline def PROPPATCH: PROPPATCH = "PROPPATCH".asInstanceOf[PROPPATCH]
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PURGE extends StObject
+  inline def PURGE: PURGE = "PURGE".asInstanceOf[PURGE]
   
   @js.native
-  sealed trait REBIND extends js.Object
+  sealed trait PUT extends StObject
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait REPORT extends js.Object
+  sealed trait REBIND extends StObject
+  inline def REBIND: REBIND = "REBIND".asInstanceOf[REBIND]
   
   @js.native
-  sealed trait SEARCH extends js.Object
+  sealed trait REPORT extends StObject
+  inline def REPORT: REPORT = "REPORT".asInstanceOf[REPORT]
   
   @js.native
-  sealed trait SOURCE extends js.Object
+  sealed trait SEARCH extends StObject
+  inline def SEARCH: SEARCH = "SEARCH".asInstanceOf[SEARCH]
   
   @js.native
-  sealed trait SUBSCRIBE extends js.Object
+  sealed trait SOURCE extends StObject
+  inline def SOURCE: SOURCE = "SOURCE".asInstanceOf[SOURCE]
   
   @js.native
-  sealed trait TRACE extends js.Object
+  sealed trait SUBSCRIBE extends StObject
+  inline def SUBSCRIBE: SUBSCRIBE = "SUBSCRIBE".asInstanceOf[SUBSCRIBE]
   
   @js.native
-  sealed trait UNBIND extends js.Object
+  sealed trait TRACE extends StObject
+  inline def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
   @js.native
-  sealed trait UNLINK extends js.Object
+  sealed trait UNBIND extends StObject
+  inline def UNBIND: UNBIND = "UNBIND".asInstanceOf[UNBIND]
   
   @js.native
-  sealed trait UNLOCK extends js.Object
+  sealed trait UNLINK extends StObject
+  inline def UNLINK: UNLINK = "UNLINK".asInstanceOf[UNLINK]
   
   @js.native
-  sealed trait UNSUBSCRIBE extends js.Object
+  sealed trait UNLOCK extends StObject
+  inline def UNLOCK: UNLOCK = "UNLOCK".asInstanceOf[UNLOCK]
   
   @js.native
-  sealed trait body extends js.Object
+  sealed trait UNSUBSCRIBE extends StObject
+  inline def UNSUBSCRIBE: UNSUBSCRIBE = "UNSUBSCRIBE".asInstanceOf[UNSUBSCRIBE]
   
   @js.native
-  sealed trait done extends js.Object
+  sealed trait body extends StObject
+  inline def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait done extends StObject
+  inline def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait headers extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait reqError extends js.Object
+  sealed trait headers extends StObject
+  inline def headers: headers = "headers".asInstanceOf[headers]
   
   @js.native
-  sealed trait response extends js.Object
+  sealed trait reqError extends StObject
+  inline def reqError: reqError = "reqError".asInstanceOf[reqError]
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait response extends StObject
+  inline def response: response = "response".asInstanceOf[response]
   
   @js.native
-  sealed trait tick extends js.Object
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
   
-  @scala.inline
-  def ACL: ACL = "ACL".asInstanceOf[ACL]
-  @scala.inline
-  def BIND: BIND = "BIND".asInstanceOf[BIND]
-  @scala.inline
-  def CHECKOUT: CHECKOUT = "CHECKOUT".asInstanceOf[CHECKOUT]
-  @scala.inline
-  def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
-  @scala.inline
-  def COPY: COPY = "COPY".asInstanceOf[COPY]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
-  @scala.inline
-  def LINK: LINK = "LINK".asInstanceOf[LINK]
-  @scala.inline
-  def LOCK: LOCK = "LOCK".asInstanceOf[LOCK]
-  @scala.inline
-  def `M-SEARCH`: `M-SEARCH` = "M-SEARCH".asInstanceOf[`M-SEARCH`]
-  @scala.inline
-  def MERGE: MERGE = "MERGE".asInstanceOf[MERGE]
-  @scala.inline
-  def MKACTIVITY: MKACTIVITY = "MKACTIVITY".asInstanceOf[MKACTIVITY]
-  @scala.inline
-  def MKCALENDAR: MKCALENDAR = "MKCALENDAR".asInstanceOf[MKCALENDAR]
-  @scala.inline
-  def MKCOL: MKCOL = "MKCOL".asInstanceOf[MKCOL]
-  @scala.inline
-  def MOVE: MOVE = "MOVE".asInstanceOf[MOVE]
-  @scala.inline
-  def NOTIFY: NOTIFY = "NOTIFY".asInstanceOf[NOTIFY]
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PROPFIND: PROPFIND = "PROPFIND".asInstanceOf[PROPFIND]
-  @scala.inline
-  def PROPPATCH: PROPPATCH = "PROPPATCH".asInstanceOf[PROPPATCH]
-  @scala.inline
-  def PURGE: PURGE = "PURGE".asInstanceOf[PURGE]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def REBIND: REBIND = "REBIND".asInstanceOf[REBIND]
-  @scala.inline
-  def REPORT: REPORT = "REPORT".asInstanceOf[REPORT]
-  @scala.inline
-  def SEARCH: SEARCH = "SEARCH".asInstanceOf[SEARCH]
-  @scala.inline
-  def SOURCE: SOURCE = "SOURCE".asInstanceOf[SOURCE]
-  @scala.inline
-  def SUBSCRIBE: SUBSCRIBE = "SUBSCRIBE".asInstanceOf[SUBSCRIBE]
-  @scala.inline
-  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
-  @scala.inline
-  def UNBIND: UNBIND = "UNBIND".asInstanceOf[UNBIND]
-  @scala.inline
-  def UNLINK: UNLINK = "UNLINK".asInstanceOf[UNLINK]
-  @scala.inline
-  def UNLOCK: UNLOCK = "UNLOCK".asInstanceOf[UNLOCK]
-  @scala.inline
-  def UNSUBSCRIBE: UNSUBSCRIBE = "UNSUBSCRIBE".asInstanceOf[UNSUBSCRIBE]
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
-  @scala.inline
-  def done: done = "done".asInstanceOf[done]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def headers: headers = "headers".asInstanceOf[headers]
-  @scala.inline
-  def reqError: reqError = "reqError".asInstanceOf[reqError]
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def tick: tick = "tick".asInstanceOf[tick]
+  @js.native
+  sealed trait tick extends StObject
+  inline def tick: tick = "tick".asInstanceOf[tick]
 }
-

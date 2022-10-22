@@ -1,30 +1,30 @@
 
 # Scala.js typings for string-strip-html
 
-Typings are for version 4.3
+Typings are for version 11.6.14
 
 ## Library description:
-Strips HTML tags from strings. Detects legit unencoded brackets.
+Strip HTML tags from strings. No parser, accepts mixed sources.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | string-strip-html |
-| Keywords           | amount, currency, digits, from, numbers, remove, separator, separators, string, thousand, thousands |
-| # releases         | 93 |
-| # dependents       | 13 |
-| # downloads        | 200684 |
-| # stars            | 0 |
+| Keywords           | code, extract, from, html, jsp, mixed, remove, separate, stri, string, strip, tags, templating, text, xhtml |
+| # releases         | 68 |
+| # dependents       | 0.0 |
+| # downloads        | 322193.6666666667 |
+| # stars            | 125.0 |
 
 ## Links
-- [Homepage](https://gitlab.com/codsen/codsen/tree/master/packages/string-strip-html)
-- [Bugs](https://gitlab.com/codsen/codsen/issues)
-- [Repository](https://gitlab.com/codsen/codsen)
+- [Homepage](https://codsen.com/os/string-strip-html)
+- [Bugs](https://github.com/codsen/codsen/issues)
+- [Repository](https://github.com/codsen/codsen)
 - [Npm](https://www.npmjs.com/package/string-strip-html)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

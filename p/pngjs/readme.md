@@ -1,7 +1,7 @@
 
 # Scala.js typings for pngjs
 
-Typings are for version 3.4
+Typings are for version 6.0
 
 ## Library description:
 PNG encoder/decoder in pure JS, supporting any bit size & interlace, async & sync with full test suite.
@@ -10,15 +10,15 @@ PNG encoder/decoder in pure JS, supporting any bit size & interlace, async & syn
 | ------------------ | :-------------: |
 | Full name          | pngjs |
 | Keywords           | PNG, decoder, encoder, js-png, node-png, parser, png, png-js, png-parse, pngjs |
-| # releases         | 4 |
-| # dependents       | 449 |
-| # downloads        | 52634783 |
-| # stars            | 13 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.4787702666666668E7 |
+| # stars            | 539.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeapage/pngjs)
-- [Bugs](https://github.com/lukeapage/pngjs2/issues)
-- [Repository](https://github.com/lukeapage/pngjs2)
+- [Bugs](https://github.com/lukeapage/pngjs/issues)
+- [Repository](https://github.com/lukeapage/pngjs)
 - [Npm](https://www.npmjs.com/package/pngjs)
     
 

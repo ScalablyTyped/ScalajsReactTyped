@@ -1,21 +1,22 @@
 package typingsJapgolly.reactWindow.mod
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Ref
-import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.mod.ComponentType
 import typingsJapgolly.react.mod.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListProps extends CommonProps {
+trait ListProps[T]
+  extends StObject
+     with CommonProps[T] {
+  
   /**
     * React component responsible for rendering the individual item specified by an index prop. This component also receives a style prop (used for positioning).
     *
     * If useIsScrolling is enabled for the list, the component also receives an additional isScrolling boolean prop.
     */
-  var children: ComponentType[ListChildComponentProps]
+  var children: ComponentType[ListChildComponentProps[T]]
+  
   /**
     * Determines the direction of text and horizontal scrolling.
     *
@@ -26,6 +27,7 @@ trait ListProps extends CommonProps {
     * @default "ltr"
     */
   var direction: js.UndefOr[CSSDirection | Direction] = js.undefined
+  
   /**
     * Height of the list.
     *
@@ -34,16 +36,19 @@ trait ListProps extends CommonProps {
     * For horizontal lists, this can be a number or a string (e.g. "50%").
     */
   var height: Double | String
+  
   /**
     * Scroll offset for initial render.
     *
     * For vertical lists, this affects scrollTop. For horizontal lists, this affects scrollLeft.
     */
   var initialScrollOffset: js.UndefOr[Double] = js.undefined
+  
   /**
     * Total number of items in the list. Note that only a few items will be rendered and displayed at a time.
     */
   var itemCount: Double
+  
   /**
     * By default, lists will use an item's index as its key. This is okay if:
     *
@@ -52,7 +57,8 @@ trait ListProps extends CommonProps {
     *
     * If your list does not satisfy the above constraints, use the itemKey property to specify your own keys for items
     */
-  var itemKey: js.UndefOr[ListItemKeySelector] = js.undefined
+  var itemKey: js.UndefOr[ListItemKeySelector[T]] = js.undefined
+  
   /**
     * Layout/orientation of the list.
     *
@@ -63,14 +69,17 @@ trait ListProps extends CommonProps {
     * Note that lists may scroll in both directions (depending on CSS) but content will only be windowed in the layout direction specified.
     */
   var layout: js.UndefOr[Layout] = js.undefined
+  
   /**
     * Called when the items rendered by the list change.
     */
-  var onItemsRendered: js.UndefOr[js.Function1[/* props */ ListOnItemsRenderedProps, _]] = js.undefined
+  var onItemsRendered: js.UndefOr[js.Function1[/* props */ ListOnItemsRenderedProps, Any]] = js.undefined
+  
   /**
     * Called when the list scroll positions changes, as a result of user scrolling or scroll-to method calls.
     */
-  var onScroll: js.UndefOr[js.Function1[/* props */ ListOnScrollProps, _]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* props */ ListOnScrollProps, Any]] = js.undefined
+  
   /**
     * The number of items (rows or columns) to render outside of the visible area. This property can be important for two reasons:
     *
@@ -80,6 +89,7 @@ trait ListProps extends CommonProps {
     * Note that overscanning too much can negatively impact performance. By default, List overscans by one item.
     */
   var overscanCount: js.UndefOr[Double] = js.undefined
+  
   /**
     * Width of the list.
     *
@@ -89,51 +99,54 @@ trait ListProps extends CommonProps {
     */
   var width: Double | String
 }
-
 object ListProps {
-  @scala.inline
-  def apply(
-    children: ComponentType[ListChildComponentProps],
+  
+  inline def apply[T](
+    children: ComponentType[ListChildComponentProps[T]],
     height: Double | String,
     itemCount: Double,
-    width: Double | String,
-    className: String = null,
-    direction: CSSDirection | Direction = null,
-    initialScrollOffset: Int | Double = null,
-    innerElementType: ReactElementType = null,
-    innerRef: Ref = null,
-    innerTagName: String = null,
-    itemData: js.Any = null,
-    itemKey: (/* index */ Double, /* data */ js.Any) => CallbackTo[Key] = null,
-    layout: Layout = null,
-    onItemsRendered: /* props */ ListOnItemsRenderedProps => CallbackTo[js.Any] = null,
-    onScroll: /* props */ ListOnScrollProps => CallbackTo[js.Any] = null,
-    outerElementType: ReactElementType = null,
-    outerRef: Ref = null,
-    outerTagName: String = null,
-    overscanCount: Int | Double = null,
-    style: CSSProperties = null,
-    useIsScrolling: js.UndefOr[Boolean] = js.undefined
-  ): ListProps = {
+    width: Double | String
+  ): ListProps[T] = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], itemCount = itemCount.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (initialScrollOffset != null) __obj.updateDynamic("initialScrollOffset")(initialScrollOffset.asInstanceOf[js.Any])
-    if (innerElementType != null) __obj.updateDynamic("innerElementType")(innerElementType.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (innerTagName != null) __obj.updateDynamic("innerTagName")(innerTagName.asInstanceOf[js.Any])
-    if (itemData != null) __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
-    if (itemKey != null) __obj.updateDynamic("itemKey")(js.Any.fromFunction2((t0: /* index */ scala.Double, t1: /* data */ js.Any) => itemKey(t0, t1).runNow()))
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (onItemsRendered != null) __obj.updateDynamic("onItemsRendered")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactWindow.mod.ListOnItemsRenderedProps) => onItemsRendered(t0).runNow()))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactWindow.mod.ListOnScrollProps) => onScroll(t0).runNow()))
-    if (outerElementType != null) __obj.updateDynamic("outerElementType")(outerElementType.asInstanceOf[js.Any])
-    if (outerRef != null) __obj.updateDynamic("outerRef")(outerRef.asInstanceOf[js.Any])
-    if (outerTagName != null) __obj.updateDynamic("outerTagName")(outerTagName.asInstanceOf[js.Any])
-    if (overscanCount != null) __obj.updateDynamic("overscanCount")(overscanCount.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIsScrolling)) __obj.updateDynamic("useIsScrolling")(useIsScrolling.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ListProps]
+    __obj.asInstanceOf[ListProps[T]]
+  }
+  
+  extension [Self <: ListProps[?], T](x: Self & ListProps[T]) {
+    
+    inline def setChildren(value: ComponentType[ListChildComponentProps[T]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setDirection(value: CSSDirection | Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setInitialScrollOffset(value: Double): Self = StObject.set(x, "initialScrollOffset", value.asInstanceOf[js.Any])
+    
+    inline def setInitialScrollOffsetUndefined: Self = StObject.set(x, "initialScrollOffset", js.undefined)
+    
+    inline def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+    
+    inline def setItemKey(value: (/* index */ Double, T) => Key): Self = StObject.set(x, "itemKey", js.Any.fromFunction2(value))
+    
+    inline def setItemKeyUndefined: Self = StObject.set(x, "itemKey", js.undefined)
+    
+    inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setOnItemsRendered(value: /* props */ ListOnItemsRenderedProps => Any): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
+    
+    inline def setOnItemsRenderedUndefined: Self = StObject.set(x, "onItemsRendered", js.undefined)
+    
+    inline def setOnScroll(value: /* props */ ListOnScrollProps => Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    
+    inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+    
+    inline def setOverscanCount(value: Double): Self = StObject.set(x, "overscanCount", value.asInstanceOf[js.Any])
+    
+    inline def setOverscanCountUndefined: Self = StObject.set(x, "overscanCount", js.undefined)
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }
-

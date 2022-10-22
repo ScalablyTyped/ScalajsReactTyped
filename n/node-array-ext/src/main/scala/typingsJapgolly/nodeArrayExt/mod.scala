@@ -1,13 +1,16 @@
 package typingsJapgolly.nodeArrayExt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-array-ext", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def asyncEach[T](
+object mod {
+  
+  @JSImport("node-array-ext", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def asyncEach[T](
     array: js.Array[T],
     each: js.Function3[
       /* i */ Double, 
@@ -16,8 +19,9 @@ object mod extends js.Object {
       Unit
     ],
     finish: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
-  ): Unit = js.native
-  def awaitEach[T](
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncEach")(array.asInstanceOf[js.Any], each.asInstanceOf[js.Any], finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def awaitEach[T](
     array: js.Array[T],
     each: js.Function3[
       /* i */ Double, 
@@ -26,6 +30,5 @@ object mod extends js.Object {
       Unit
     ],
     finish: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("awaitEach")(array.asInstanceOf[js.Any], each.asInstanceOf[js.Any], finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

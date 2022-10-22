@@ -2,50 +2,69 @@ package typingsJapgolly.toastr
 
 import typingsJapgolly.toastr.toastrStrings.hidden
 import typingsJapgolly.toastr.toastrStrings.visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ToastrResponse extends js.Object {
+trait ToastrResponse extends StObject {
+  
   /**
-  	 * The datetime the toast was closed, if the state is hidden.
-  	 */
+    * The datetime the toast was closed, if the state is hidden.
+    */
   var endTime: js.UndefOr[js.Date] = js.undefined
+  
   /**
-  	 * The event's toast details.
-  	 */
+    * The event's toast details.
+    */
   var map: ToastMap
+  
   /**
-  	 * The toastr options.
-  	 */
+    * The toastr options.
+    */
   var options: ToastrOptions
+  
   /**
-  	 * The datetime the toast was opened.
-  	 */
+    * The datetime the toast was opened.
+    */
   var startTime: js.Date
+  
   /**
-  	 * The current state of the toast.
-  	 */
+    * The current state of the toast.
+    */
   var state: visible | hidden
+  
   /**
-  	 * The internal toast id.
-  	 */
+    * The internal toast id.
+    */
   var toastId: Double
 }
-
 object ToastrResponse {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     map: ToastMap,
     options: ToastrOptions,
     startTime: js.Date,
     state: visible | hidden,
-    toastId: Double,
-    endTime: js.Date = null
+    toastId: Double
   ): ToastrResponse = {
     val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], toastId = toastId.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastrResponse]
   }
+  
+  extension [Self <: ToastrResponse](x: Self) {
+    
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    
+    inline def setMap(value: ToastMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setOptions(value: ToastrOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    
+    inline def setState(value: visible | hidden): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setToastId(value: Double): Self = StObject.set(x, "toastId", value.asInstanceOf[js.Any])
+  }
 }
-

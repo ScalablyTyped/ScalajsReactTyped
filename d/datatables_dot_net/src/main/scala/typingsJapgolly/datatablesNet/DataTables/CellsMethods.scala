@@ -1,17 +1,20 @@
 package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CellsMethods
-  extends CoreMethods
+  extends StObject
+     with CoreMethods
      with CommonCellMethods {
+  
   /**
     * Get data for the selected cells
     */
   def data(): Api = js.native
+  
   /**
     * Iterate over each selected cell, with the function context set to be the cell in question. Since: DataTables 1.10.6
     *
@@ -27,13 +30,14 @@ trait CellsMethods
       Unit
     ]
   ): Api = js.native
+  
   /**
     * Get index information about the selected cells
     */
   def indexes(): Api = js.native
+  
   /**
     * Get the DOM elements for the selected cells
     */
   def nodes(): Api = js.native
 }
-

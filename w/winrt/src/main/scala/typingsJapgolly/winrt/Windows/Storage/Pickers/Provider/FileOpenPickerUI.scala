@@ -1,33 +1,30 @@
 package typingsJapgolly.winrt.Windows.Storage.Pickers.Provider
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrt.Windows.Storage.IStorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.Pickers.Provider.FileOpenPickerUI")
-@js.native
-class FileOpenPickerUI () extends IFileOpenPickerUI {
-  /* CompleteClass */
-  override var allowedFileTypes: IVectorView[String] = js.native
-  /* CompleteClass */
-  override var onclosing: js.Any = js.native
-  /* CompleteClass */
-  override var onfileremoved: js.Any = js.native
-  /* CompleteClass */
-  override var selectionMode: FileSelectionMode = js.native
-  /* CompleteClass */
-  override var settingsIdentifier: String = js.native
-  /* CompleteClass */
-  override var title: String = js.native
-  /* CompleteClass */
-  override def addFile(id: String, file: IStorageFile): AddFileResult = js.native
-  /* CompleteClass */
-  override def canAddFile(file: IStorageFile): Boolean = js.native
-  /* CompleteClass */
-  override def containsFile(id: String): Boolean = js.native
-  /* CompleteClass */
-  override def removeFile(id: String): Unit = js.native
+trait FileOpenPickerUI
+  extends StObject
+     with IFileOpenPickerUI
+object FileOpenPickerUI {
+  
+  inline def apply(
+    addFile: (String, IStorageFile) => AddFileResult,
+    allowedFileTypes: IVectorView[String],
+    canAddFile: IStorageFile => Boolean,
+    containsFile: String => Boolean,
+    onclosing: Any,
+    onfileremoved: Any,
+    removeFile: String => Callback,
+    selectionMode: FileSelectionMode,
+    settingsIdentifier: String,
+    title: String
+  ): FileOpenPickerUI = {
+    val __obj = js.Dynamic.literal(addFile = js.Any.fromFunction2(addFile), allowedFileTypes = allowedFileTypes.asInstanceOf[js.Any], canAddFile = js.Any.fromFunction1(canAddFile), containsFile = js.Any.fromFunction1(containsFile), onclosing = onclosing.asInstanceOf[js.Any], onfileremoved = onfileremoved.asInstanceOf[js.Any], removeFile = js.Any.fromFunction1((t0: String) => removeFile(t0).runNow()), selectionMode = selectionMode.asInstanceOf[js.Any], settingsIdentifier = settingsIdentifier.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileOpenPickerUI]
+  }
 }
-

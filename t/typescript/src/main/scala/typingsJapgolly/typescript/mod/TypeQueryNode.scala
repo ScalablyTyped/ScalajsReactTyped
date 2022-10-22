@@ -1,14 +1,17 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.mod.SyntaxKind.TypeQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeQueryNode extends TypeNode {
-  var exprName: EntityName = js.native
+trait TypeQueryNode
+  extends StObject
+     with NodeWithTypeArguments {
+  
+  val exprName: EntityName = js.native
+  
   @JSName("kind")
-  var kind_TypeQueryNode: TypeQuery = js.native
+  val kind_TypeQueryNode: TypeQuery = js.native
 }
-

@@ -1,58 +1,64 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProjectParametersProperties extends js.Object {
+trait ProjectParametersProperties extends StObject {
+  
   /**
     * The input geometries to project.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#geometries)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#geometries)
     */
   var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
+  
   /**
     * The spatial reference to which you are projecting the geometries.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#outSR)
-    */
-  var outSR: js.UndefOr[SpatialReferenceProperties] = js.undefined
-  /**
-    * The spatial reference to which you are projecting the geometries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#outSpatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#outSpatialReference)
     */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  
   /**
-    * Indicates whether to transform forward or not. The forward or reverse direction of transformation is implied in the name of the transformation.
+    * Indicates whether to transform forward or not.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#transformForward)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformForward)
     */
   var transformForward: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The well-known id {wkid:number} or well-known text {wkt:string} of the datum transformation to be applied to the projected geometries. See [Datum transformations](https://developers.arcgis.com/rest/services-reference/datum-transformations.htm) for a list of valid datum transformations that may be used here.  If a transformation is specified, a value must also be specified in the [transformForward](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#transformForward) property.
+    * The well-known id {wkid:number} or well-known text {wkt:string} of the datum transformation to be applied to the projected geometries.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html#transformation)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformation)
     */
   var transformation: js.UndefOr[ProjectParametersTransformation] = js.undefined
 }
-
 object ProjectParametersProperties {
-  @scala.inline
-  def apply(
-    geometries: js.Array[GeometryProperties] = null,
-    outSR: SpatialReferenceProperties = null,
-    outSpatialReference: SpatialReferenceProperties = null,
-    transformForward: js.UndefOr[Boolean] = js.undefined,
-    transformation: ProjectParametersTransformation = null
-  ): ProjectParametersProperties = {
+  
+  inline def apply(): ProjectParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
-    if (outSR != null) __obj.updateDynamic("outSR")(outSR.asInstanceOf[js.Any])
-    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
-    if (!js.isUndefined(transformForward)) __obj.updateDynamic("transformForward")(transformForward.asInstanceOf[js.Any])
-    if (transformation != null) __obj.updateDynamic("transformation")(transformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectParametersProperties]
   }
+  
+  extension [Self <: ProjectParametersProperties](x: Self) {
+    
+    inline def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    
+    inline def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
+    
+    inline def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value*))
+    
+    inline def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
+    
+    inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
+    
+    inline def setTransformForward(value: Boolean): Self = StObject.set(x, "transformForward", value.asInstanceOf[js.Any])
+    
+    inline def setTransformForwardUndefined: Self = StObject.set(x, "transformForward", js.undefined)
+    
+    inline def setTransformation(value: ProjectParametersTransformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
+    
+    inline def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
+  }
 }
-

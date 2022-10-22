@@ -1,14 +1,16 @@
 package typingsJapgolly.awsSdkResponseMetadataExtractor
 
-import typingsJapgolly.awsSdkTypes.httpMod.HttpResponse
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkTypes.distTypesHttpMod.HttpResponse
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/response-metadata-extractor", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def extractMetadata(httpResponse: HttpResponse[_]): ResponseMetadata = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/response-metadata-extractor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def extractMetadata(httpResponse: HttpResponse): ResponseMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMetadata")(httpResponse.asInstanceOf[js.Any]).asInstanceOf[ResponseMetadata]
 }
-

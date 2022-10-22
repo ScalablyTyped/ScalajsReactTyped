@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.diagram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConnectionHoverStroke extends js.Object {
+trait ConnectionHoverStroke extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
 }
-
 object ConnectionHoverStroke {
-  @scala.inline
-  def apply(color: String = null): ConnectionHoverStroke = {
+  
+  inline def apply(): ConnectionHoverStroke = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionHoverStroke]
   }
+  
+  extension [Self <: ConnectionHoverStroke](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+  }
 }
-

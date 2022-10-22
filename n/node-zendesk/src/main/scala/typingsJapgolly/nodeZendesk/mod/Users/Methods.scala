@@ -1,99 +1,89 @@
 package typingsJapgolly.nodeZendesk.mod.Users
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.nodeZendesk.mod.ZendeskCallback
 import typingsJapgolly.nodeZendesk.mod.ZendeskID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Methods extends js.Object {
+@js.native
+trait Methods extends StObject {
+  
+  def auth(): js.Promise[Any] = js.native
   /** User Auth */
-  def auth(cb: ZendeskCallback[_, _]): js.Any
+  def auth(cb: ZendeskCallback[Any, Any]): Any = js.native
+  
+  def create(user: CreatePayload): js.Promise[ResponsePayload] = js.native
   /** Creating Users */
-  def create(user: CreatePayload, cb: ZendeskCallback[_, _]): ResponsePayload
-  def createMany(users: CreateManyPayload, cb: ZendeskCallback[_, _]): typingsJapgolly.nodeZendesk.mod.JobStatuses.ResponsePayload
-  def createOrUpdate(user: CreatePayload, cb: ZendeskCallback[_, _]): ResponsePayload
-  def createOrUpdateMany(users: CreateManyPayload, cb: ZendeskCallback[_, _]): typingsJapgolly.nodeZendesk.mod.JobStatuses.ResponsePayload
+  def create(user: CreatePayload, cb: ZendeskCallback[Any, Any]): ResponsePayload = js.native
+  
+  def createMany(users: CreateManyPayload): js.Promise[typingsJapgolly.nodeZendesk.mod.JobStatuses.ResponsePayload] = js.native
+  def createMany(users: CreateManyPayload, cb: ZendeskCallback[Any, Any]): typingsJapgolly.nodeZendesk.mod.JobStatuses.ResponsePayload = js.native
+  
+  def createOrUpdate(user: CreatePayload): js.Promise[ResponsePayload] = js.native
+  def createOrUpdate(user: CreatePayload, cb: ZendeskCallback[Any, Any]): ResponsePayload = js.native
+  
+  def createOrUpdateMany(users: CreateManyPayload): js.Promise[typingsJapgolly.nodeZendesk.mod.JobStatuses.ResponsePayload] = js.native
+  def createOrUpdateMany(users: CreateManyPayload, cb: ZendeskCallback[Any, Any]): typingsJapgolly.nodeZendesk.mod.JobStatuses.ResponsePayload = js.native
+  
+  def delete(userId: ZendeskID): js.Promise[Any] = js.native
   /** Deleting Users */
-  def delete(userId: ZendeskID, cb: ZendeskCallback[_, _]): js.Any
-  def incremental(startTime: Double, cb: ZendeskCallback[_, _]): ListPayload
+  def delete(userId: ZendeskID, cb: ZendeskCallback[Any, Any]): Any = js.native
+  
+  def incremental(startTime: Double): js.Promise[ListPayload] = js.native
+  def incremental(startTime: Double, cb: ZendeskCallback[Any, Any]): ListPayload = js.native
+  
+  def incrementalInclude(startTime: Double, include: Any): js.Promise[ListPayload] = js.native
   /** Users Export */
-  def incrementalInclude(startTime: Double, include: js.Any, cb: ZendeskCallback[_, _]): ListPayload
-  def incrementalSample(startTime: Double, cb: ZendeskCallback[_, _]): ListPayload
+  def incrementalInclude(startTime: Double, include: Any, cb: ZendeskCallback[Any, Any]): ListPayload = js.native
+  
+  def incrementalSample(startTime: Double): js.Promise[ListPayload] = js.native
+  def incrementalSample(startTime: Double, cb: ZendeskCallback[Any, Any]): ListPayload = js.native
+  
+  def list(): js.Promise[ListPayload] = js.native
   /** Listing Users */
-  def list(cb: ZendeskCallback[_, _]): ListPayload
-  def listByGroup(groupId: ZendeskID, cb: ZendeskCallback[_, _]): ListPayload
-  def listByOrganization(organizationId: ZendeskID, cb: ZendeskCallback[_, _]): ListPayload
+  def list(cb: ZendeskCallback[Any, Any]): ListPayload = js.native
+  
+  def listByGroup(groupId: ZendeskID): js.Promise[ListPayload] = js.native
+  def listByGroup(groupId: ZendeskID, cb: ZendeskCallback[Any, Any]): ListPayload = js.native
+  
+  def listByOrganization(organizationId: ZendeskID): js.Promise[ListPayload] = js.native
+  def listByOrganization(organizationId: ZendeskID, cb: ZendeskCallback[Any, Any]): ListPayload = js.native
+  
+  def me(): js.Promise[ResponsePayload] = js.native
   /** Getting own User */
-  def me(cb: ZendeskCallback[_, _]): ResponsePayload
+  def me(cb: ZendeskCallback[Any, Any]): ResponsePayload = js.native
+  
+  def merge(userId: ZendeskID, targetUserId: ZendeskID): js.Promise[ResponsePayload] = js.native
   /** Merging Users */
-  def merge(userId: ZendeskID, targetUserId: ZendeskID, cb: ZendeskCallback[_, _]): ResponsePayload
+  def merge(userId: ZendeskID, targetUserId: ZendeskID, cb: ZendeskCallback[Any, Any]): ResponsePayload = js.native
+  
+  def password(userId: ZendeskID, oldPassword: String, newPassword: String): js.Promise[Any] = js.native
   /** Changing User Password */
-  def password(userId: ZendeskID, oldPassword: String, newPassword: String, cb: ZendeskCallback[_, _]): js.Any
+  def password(userId: ZendeskID, oldPassword: String, newPassword: String, cb: ZendeskCallback[Any, Any]): Any = js.native
+  
+  def search(params: Any): js.Promise[ListPayload] = js.native
   /** Searching Users */
-  def search(params: js.Any, cb: ZendeskCallback[_, _]): ListPayload
+  def search(params: Any, cb: ZendeskCallback[Any, Any]): ListPayload = js.native
+  
+  def show(userId: ZendeskID): js.Promise[ResponsePayload] = js.native
   /** Showing Users */
-  def show(userId: ZendeskID, cb: ZendeskCallback[_, _]): ResponsePayload
-  def showMany(userIds: js.Array[ZendeskID], cb: ZendeskCallback[_, _]): ListPayload
+  def show(userId: ZendeskID, cb: ZendeskCallback[Any, Any]): ResponsePayload = js.native
+  
+  def showMany(userIds: js.Array[ZendeskID]): js.Promise[ListPayload] = js.native
+  def showMany(userIds: js.Array[ZendeskID], cb: ZendeskCallback[Any, Any]): ListPayload = js.native
+  
+  def suspend(userId: ZendeskID): js.Promise[ResponsePayload] = js.native
   /** Suspending Users */
-  def suspend(userId: ZendeskID, cb: ZendeskCallback[_, _]): ResponsePayload
-  def unsuspend(userId: ZendeskID, cb: ZendeskCallback[_, _]): ResponsePayload
+  def suspend(userId: ZendeskID, cb: ZendeskCallback[Any, Any]): ResponsePayload = js.native
+  
+  def unsuspend(userId: ZendeskID): js.Promise[ResponsePayload] = js.native
+  def unsuspend(userId: ZendeskID, cb: ZendeskCallback[Any, Any]): ResponsePayload = js.native
+  
+  def update(userId: ZendeskID, user: UpdatePayload): js.Promise[ResponsePayload] = js.native
   /** Updating Users */
-  def update(userId: ZendeskID, user: UpdatePayload, cb: ZendeskCallback[_, _]): ResponsePayload
-  def updateMany(userIds: UpdateIdPayload, users: UpdateManyPayload, cb: ZendeskCallback[_, _]): typingsJapgolly.nodeZendesk.mod.JobStatuses.ResponsePayload
+  def update(userId: ZendeskID, user: UpdatePayload, cb: ZendeskCallback[Any, Any]): ResponsePayload = js.native
+  
+  def updateMany(userIds: UpdateIdPayload, users: UpdateManyPayload): js.Promise[typingsJapgolly.nodeZendesk.mod.JobStatuses.ResponsePayload] = js.native
+  def updateMany(userIds: UpdateIdPayload, users: UpdateManyPayload, cb: ZendeskCallback[Any, Any]): typingsJapgolly.nodeZendesk.mod.JobStatuses.ResponsePayload = js.native
 }
-
-object Methods {
-  @scala.inline
-  def apply(
-    auth: ZendeskCallback[js.Any, js.Any] => CallbackTo[js.Any],
-    create: (CreatePayload, ZendeskCallback[js.Any, js.Any]) => CallbackTo[ResponsePayload],
-    createMany: (CreateManyPayload, ZendeskCallback[js.Any, js.Any]) => CallbackTo[typingsJapgolly.nodeZendesk.mod.JobStatuses.ResponsePayload],
-    createOrUpdate: (CreatePayload, ZendeskCallback[js.Any, js.Any]) => CallbackTo[ResponsePayload],
-    createOrUpdateMany: (CreateManyPayload, ZendeskCallback[js.Any, js.Any]) => CallbackTo[typingsJapgolly.nodeZendesk.mod.JobStatuses.ResponsePayload],
-    delete: (ZendeskID, ZendeskCallback[js.Any, js.Any]) => CallbackTo[js.Any],
-    incremental: (Double, ZendeskCallback[js.Any, js.Any]) => CallbackTo[ListPayload],
-    incrementalInclude: (Double, js.Any, ZendeskCallback[js.Any, js.Any]) => CallbackTo[ListPayload],
-    incrementalSample: (Double, ZendeskCallback[js.Any, js.Any]) => CallbackTo[ListPayload],
-    list: ZendeskCallback[js.Any, js.Any] => CallbackTo[ListPayload],
-    listByGroup: (ZendeskID, ZendeskCallback[js.Any, js.Any]) => CallbackTo[ListPayload],
-    listByOrganization: (ZendeskID, ZendeskCallback[js.Any, js.Any]) => CallbackTo[ListPayload],
-    me: ZendeskCallback[js.Any, js.Any] => CallbackTo[ResponsePayload],
-    merge: (ZendeskID, ZendeskID, ZendeskCallback[js.Any, js.Any]) => CallbackTo[ResponsePayload],
-    password: (ZendeskID, String, String, ZendeskCallback[js.Any, js.Any]) => CallbackTo[js.Any],
-    search: (js.Any, ZendeskCallback[js.Any, js.Any]) => CallbackTo[ListPayload],
-    show: (ZendeskID, ZendeskCallback[js.Any, js.Any]) => CallbackTo[ResponsePayload],
-    showMany: (js.Array[ZendeskID], ZendeskCallback[js.Any, js.Any]) => CallbackTo[ListPayload],
-    suspend: (ZendeskID, ZendeskCallback[js.Any, js.Any]) => CallbackTo[ResponsePayload],
-    unsuspend: (ZendeskID, ZendeskCallback[js.Any, js.Any]) => CallbackTo[ResponsePayload],
-    update: (ZendeskID, UpdatePayload, ZendeskCallback[js.Any, js.Any]) => CallbackTo[ResponsePayload],
-    updateMany: (UpdateIdPayload, UpdateManyPayload, ZendeskCallback[js.Any, js.Any]) => CallbackTo[typingsJapgolly.nodeZendesk.mod.JobStatuses.ResponsePayload]
-  ): Methods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(js.Any.fromFunction1((t0: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => auth(t0).runNow()))
-    __obj.updateDynamic("create")(js.Any.fromFunction2((t0: typingsJapgolly.nodeZendesk.mod.Users.CreatePayload, t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => create(t0, t1).runNow()))
-    __obj.updateDynamic("createMany")(js.Any.fromFunction2((t0: typingsJapgolly.nodeZendesk.mod.Users.CreateManyPayload, t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => createMany(t0, t1).runNow()))
-    __obj.updateDynamic("createOrUpdate")(js.Any.fromFunction2((t0: typingsJapgolly.nodeZendesk.mod.Users.CreatePayload, t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => createOrUpdate(t0, t1).runNow()))
-    __obj.updateDynamic("createOrUpdateMany")(js.Any.fromFunction2((t0: typingsJapgolly.nodeZendesk.mod.Users.CreateManyPayload, t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => createOrUpdateMany(t0, t1).runNow()))
-    __obj.updateDynamic("delete")(js.Any.fromFunction2((t0: typingsJapgolly.nodeZendesk.mod.ZendeskID, t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => delete(t0, t1).runNow()))
-    __obj.updateDynamic("incremental")(js.Any.fromFunction2((t0: scala.Double, t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => incremental(t0, t1).runNow()))
-    __obj.updateDynamic("incrementalInclude")(js.Any.fromFunction3((t0: scala.Double, t1: js.Any, t2: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => incrementalInclude(t0, t1, t2).runNow()))
-    __obj.updateDynamic("incrementalSample")(js.Any.fromFunction2((t0: scala.Double, t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => incrementalSample(t0, t1).runNow()))
-    __obj.updateDynamic("list")(js.Any.fromFunction1((t0: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => list(t0).runNow()))
-    __obj.updateDynamic("listByGroup")(js.Any.fromFunction2((t0: typingsJapgolly.nodeZendesk.mod.ZendeskID, t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => listByGroup(t0, t1).runNow()))
-    __obj.updateDynamic("listByOrganization")(js.Any.fromFunction2((t0: typingsJapgolly.nodeZendesk.mod.ZendeskID, t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => listByOrganization(t0, t1).runNow()))
-    __obj.updateDynamic("me")(js.Any.fromFunction1((t0: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => me(t0).runNow()))
-    __obj.updateDynamic("merge")(js.Any.fromFunction3((t0: typingsJapgolly.nodeZendesk.mod.ZendeskID, t1: typingsJapgolly.nodeZendesk.mod.ZendeskID, t2: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => merge(t0, t1, t2).runNow()))
-    __obj.updateDynamic("password")(js.Any.fromFunction4((t0: typingsJapgolly.nodeZendesk.mod.ZendeskID, t1: java.lang.String, t2: java.lang.String, t3: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => password(t0, t1, t2, t3).runNow()))
-    __obj.updateDynamic("search")(js.Any.fromFunction2((t0: js.Any, t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => search(t0, t1).runNow()))
-    __obj.updateDynamic("show")(js.Any.fromFunction2((t0: typingsJapgolly.nodeZendesk.mod.ZendeskID, t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => show(t0, t1).runNow()))
-    __obj.updateDynamic("showMany")(js.Any.fromFunction2((t0: js.Array[typingsJapgolly.nodeZendesk.mod.ZendeskID], t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => showMany(t0, t1).runNow()))
-    __obj.updateDynamic("suspend")(js.Any.fromFunction2((t0: typingsJapgolly.nodeZendesk.mod.ZendeskID, t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => suspend(t0, t1).runNow()))
-    __obj.updateDynamic("unsuspend")(js.Any.fromFunction2((t0: typingsJapgolly.nodeZendesk.mod.ZendeskID, t1: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => unsuspend(t0, t1).runNow()))
-    __obj.updateDynamic("update")(js.Any.fromFunction3((t0: typingsJapgolly.nodeZendesk.mod.ZendeskID, t1: typingsJapgolly.nodeZendesk.mod.Users.UpdatePayload, t2: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => update(t0, t1, t2).runNow()))
-    __obj.updateDynamic("updateMany")(js.Any.fromFunction3((t0: typingsJapgolly.nodeZendesk.mod.Users.UpdateIdPayload, t1: typingsJapgolly.nodeZendesk.mod.Users.UpdateManyPayload, t2: typingsJapgolly.nodeZendesk.mod.ZendeskCallback[js.Any, js.Any]) => updateMany(t0, t1, t2).runNow()))
-    __obj.asInstanceOf[Methods]
-  }
-}
-

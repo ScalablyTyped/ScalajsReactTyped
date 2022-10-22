@@ -1,34 +1,18 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Points")
 @js.native
 /**
-	 * @param geometry An instance of Geometry or BufferGeometry.
-	 * @param material An instance of Material (optional).
-	 */
-class Points ()
-  extends typingsJapgolly.three.pointsMod.Points {
-  def this(geometry: typingsJapgolly.three.bufferGeometryMod.BufferGeometry) = this()
-  def this(geometry: typingsJapgolly.three.geometryMod.Geometry) = this()
-  def this(
-    geometry: typingsJapgolly.three.bufferGeometryMod.BufferGeometry,
-    material: js.Array[typingsJapgolly.three.materialMod.Material]
-  ) = this()
-  def this(
-    geometry: typingsJapgolly.three.bufferGeometryMod.BufferGeometry,
-    material: typingsJapgolly.three.materialMod.Material
-  ) = this()
-  def this(
-    geometry: typingsJapgolly.three.geometryMod.Geometry,
-    material: js.Array[typingsJapgolly.three.materialMod.Material]
-  ) = this()
-  def this(
-    geometry: typingsJapgolly.three.geometryMod.Geometry,
-    material: typingsJapgolly.three.materialMod.Material
-  ) = this()
+  * @param geometry An instance of BufferGeometry.
+  * @param material An instance of Material (optional).
+  */
+open class Points[TGeometry /* <: typingsJapgolly.three.srcCoreBufferGeometryMod.BufferGeometry */, TMaterial /* <: typingsJapgolly.three.srcMaterialsMaterialMod.Material | js.Array[typingsJapgolly.three.srcMaterialsMaterialMod.Material] */] ()
+  extends typingsJapgolly.three.srcThreeMod.Points[TGeometry, TMaterial] {
+  def this(geometry: TGeometry) = this()
+  def this(geometry: TGeometry, material: TMaterial) = this()
+  def this(geometry: Unit, material: TMaterial) = this()
 }
-

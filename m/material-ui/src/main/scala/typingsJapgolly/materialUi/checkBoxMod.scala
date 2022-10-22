@@ -1,21 +1,17 @@
 package typingsJapgolly.materialUi
 
-import typingsJapgolly.materialUi.MaterialUI.SvgIconProps
-import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/toggle/check-box", JSImport.Namespace)
-@js.native
-object checkBoxMod extends js.Object {
-  @js.native
-  class ToggleCheckBox ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+object checkboxMod {
   
+  @JSImport("material-ui/Checkbox", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class default () extends Checkbox
   
+  @JSImport("material-ui/Checkbox", "Checkbox")
+  @js.native
+  open class Checkbox ()
+    extends typingsJapgolly.materialUi.MaterialUI.Switches.Checkbox
 }
-

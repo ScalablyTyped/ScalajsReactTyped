@@ -1,8 +1,8 @@
 package typingsJapgolly.reactNavigation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNavigation.reactNavigationStrings.willFocus
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNavigation.reactNavigationStrings.didBlur
   - typingsJapgolly.reactNavigation.reactNavigationStrings.action
 */
-trait EventType extends js.Object
-
+trait EventType extends StObject
 object EventType {
-  @scala.inline
-  def action: typingsJapgolly.reactNavigation.reactNavigationStrings.action = this.cast("action")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def didBlur: typingsJapgolly.reactNavigation.reactNavigationStrings.didBlur = this.cast("didBlur")
-  @scala.inline
-  def didFocus: typingsJapgolly.reactNavigation.reactNavigationStrings.didFocus = this.cast("didFocus")
-  @scala.inline
-  def willBlur: typingsJapgolly.reactNavigation.reactNavigationStrings.willBlur = this.cast("willBlur")
-  @scala.inline
-  def willFocus: typingsJapgolly.reactNavigation.reactNavigationStrings.willFocus = this.cast("willFocus")
+  
+  inline def action: typingsJapgolly.reactNavigation.reactNavigationStrings.action = "action".asInstanceOf[typingsJapgolly.reactNavigation.reactNavigationStrings.action]
+  
+  inline def didBlur: typingsJapgolly.reactNavigation.reactNavigationStrings.didBlur = "didBlur".asInstanceOf[typingsJapgolly.reactNavigation.reactNavigationStrings.didBlur]
+  
+  inline def didFocus: typingsJapgolly.reactNavigation.reactNavigationStrings.didFocus = "didFocus".asInstanceOf[typingsJapgolly.reactNavigation.reactNavigationStrings.didFocus]
+  
+  inline def willBlur: typingsJapgolly.reactNavigation.reactNavigationStrings.willBlur = "willBlur".asInstanceOf[typingsJapgolly.reactNavigation.reactNavigationStrings.willBlur]
+  
+  inline def willFocus: typingsJapgolly.reactNavigation.reactNavigationStrings.willFocus = "willFocus".asInstanceOf[typingsJapgolly.reactNavigation.reactNavigationStrings.willFocus]
 }
-

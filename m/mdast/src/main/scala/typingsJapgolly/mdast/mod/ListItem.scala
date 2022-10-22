@@ -1,38 +1,50 @@
 package typingsJapgolly.mdast.mod
 
 import typingsJapgolly.mdast.mdastStrings.listItem
-import typingsJapgolly.unist.mod.Data
-import typingsJapgolly.unist.mod.Position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListItem extends Parent {
-  var checked: js.UndefOr[Boolean] = js.undefined
+trait ListItem
+  extends StObject
+     with Parent {
+  
+  var checked: js.UndefOr[Boolean | Null] = js.undefined
+  
   @JSName("children")
-  var children_ListItem: js.Array[BlockContent]
-  var spread: js.UndefOr[Boolean] = js.undefined
+  var children_ListItem: js.Array[BlockContent | DefinitionContent]
+  
+  var spread: js.UndefOr[Boolean | Null] = js.undefined
+  
   @JSName("type")
   var type_ListItem: listItem
 }
-
 object ListItem {
-  @scala.inline
-  def apply(
-    children: js.Array[BlockContent],
-    `type`: listItem,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    data: Data = null,
-    position: Position = null,
-    spread: js.UndefOr[Boolean] = js.undefined
-  ): ListItem = {
+  
+  inline def apply(children: js.Array[BlockContent | DefinitionContent]): ListItem = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("listItem")
     __obj.asInstanceOf[ListItem]
   }
+  
+  extension [Self <: ListItem](x: Self) {
+    
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    
+    inline def setCheckedNull: Self = StObject.set(x, "checked", null)
+    
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    
+    inline def setChildren(value: js.Array[BlockContent | DefinitionContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenVarargs(value: (BlockContent | DefinitionContent)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
+    
+    inline def setSpreadNull: Self = StObject.set(x, "spread", null)
+    
+    inline def setSpreadUndefined: Self = StObject.set(x, "spread", js.undefined)
+    
+    inline def setType(value: listItem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

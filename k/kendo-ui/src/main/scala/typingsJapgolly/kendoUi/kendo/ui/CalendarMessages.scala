@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CalendarMessages extends js.Object {
+trait CalendarMessages extends StObject {
+  
   var weekColumnHeader: js.UndefOr[String] = js.undefined
 }
-
 object CalendarMessages {
-  @scala.inline
-  def apply(weekColumnHeader: String = null): CalendarMessages = {
+  
+  inline def apply(): CalendarMessages = {
     val __obj = js.Dynamic.literal()
-    if (weekColumnHeader != null) __obj.updateDynamic("weekColumnHeader")(weekColumnHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarMessages]
   }
+  
+  extension [Self <: CalendarMessages](x: Self) {
+    
+    inline def setWeekColumnHeader(value: String): Self = StObject.set(x, "weekColumnHeader", value.asInstanceOf[js.Any])
+    
+    inline def setWeekColumnHeaderUndefined: Self = StObject.set(x, "weekColumnHeader", js.undefined)
+  }
 }
-

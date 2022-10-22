@@ -1,7 +1,7 @@
 
 # Scala.js typings for roslib
 
-Typings are for version 1.0.1
+Typings are for version 1.1.0
 
 ## Library description:
 The standard ROS Javascript Library
@@ -10,10 +10,10 @@ The standard ROS Javascript Library
 | ------------------ | :-------------: |
 | Full name          | roslib |
 | Keywords           | ROS, ros, roslib, roslibjs, robot |
-| # releases         | 3 |
-| # dependents       | 16 |
-| # downloads        | 96827 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 32726.666666666668 |
+| # stars            | ? |
 
 ## Links
 - [Bugs](https://github.com/RobotWebTools/roslibjs/issues)

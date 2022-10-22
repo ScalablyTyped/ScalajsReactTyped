@@ -1,33 +1,54 @@
 package typingsJapgolly.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Filter extends js.Object {
+trait Filter extends StObject {
+  
   var exclude: js.UndefOr[js.Array[String]] = js.undefined
+  
   var include: js.UndefOr[js.Array[String]] = js.undefined
+  
   var measure: js.UndefOr[String | MeasureObject] = js.undefined
+  
   var members: js.UndefOr[js.Array[String]] = js.undefined
+  
   var query: js.UndefOr[NumberQuery | LabelQuery | DateQuery | TimeQuery | ValueQuery] = js.undefined
 }
-
 object Filter {
-  @scala.inline
-  def apply(
-    exclude: js.Array[String] = null,
-    include: js.Array[String] = null,
-    measure: String | MeasureObject = null,
-    members: js.Array[String] = null,
-    query: NumberQuery | LabelQuery | DateQuery | TimeQuery | ValueQuery = null
-  ): Filter = {
+  
+  inline def apply(): Filter = {
     val __obj = js.Dynamic.literal()
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
-    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
+  
+  extension [Self <: Filter](x: Self) {
+    
+    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
+    
+    inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    
+    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
+    
+    inline def setMeasure(value: String | MeasureObject): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
+    
+    inline def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
+    
+    inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    
+    inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+    
+    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value*))
+    
+    inline def setQuery(value: NumberQuery | LabelQuery | DateQuery | TimeQuery | ValueQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+  }
 }
-

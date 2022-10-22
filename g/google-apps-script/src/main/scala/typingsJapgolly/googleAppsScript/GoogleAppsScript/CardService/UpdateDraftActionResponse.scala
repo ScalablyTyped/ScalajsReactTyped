@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an action that updates the email draft that the user is currently editing.
@@ -41,16 +41,19 @@ import scala.scalajs.js.annotation._
   *             .setUpdateType(UpdateDraftBodyType.IN_PLACE_INSERT))
   *         .build();
   */
-trait UpdateDraftActionResponse extends js.Object {
+trait UpdateDraftActionResponse extends StObject {
+  
   def printJson(): String
 }
-
 object UpdateDraftActionResponse {
-  @scala.inline
-  def apply(printJson: CallbackTo[String]): UpdateDraftActionResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("printJson")(printJson.toJsFn)
+  
+  inline def apply(printJson: CallbackTo[String]): UpdateDraftActionResponse = {
+    val __obj = js.Dynamic.literal(printJson = printJson.toJsFn)
     __obj.asInstanceOf[UpdateDraftActionResponse]
   }
+  
+  extension [Self <: UpdateDraftActionResponse](x: Self) {
+    
+    inline def setPrintJson(value: CallbackTo[String]): Self = StObject.set(x, "printJson", value.toJsFn)
+  }
 }
-

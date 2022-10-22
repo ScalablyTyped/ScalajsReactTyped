@@ -1,21 +1,17 @@
 package typingsJapgolly.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MILES
   - typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.KILOMETERS
 */
-trait RadiusUnits extends js.Object
-
+trait RadiusUnits extends StObject
 object RadiusUnits {
-  @scala.inline
-  def KILOMETERS: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.KILOMETERS = this.cast("KILOMETERS")
-  @scala.inline
-  def MILES: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MILES = this.cast("MILES")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def KILOMETERS: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.KILOMETERS = "KILOMETERS".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.KILOMETERS]
+  
+  inline def MILES: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MILES = "MILES".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MILES]
 }
-

@@ -5,9 +5,9 @@ import typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts.ChartHiddenDimen
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts.ChartMergeStrategy
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts.ChartType
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Builder used to edit an EmbeddedChart. Changes made to the chart are not saved until
@@ -24,36 +24,58 @@ import scala.scalajs.js.annotation._
   *         .build();
   *     sheet.updateChart(chart);
   */
-trait EmbeddedChartBuilder extends js.Object {
+trait EmbeddedChartBuilder extends StObject {
+  
   def addRange(range: Range): EmbeddedChartBuilder
+  
   def asAreaChart(): EmbeddedAreaChartBuilder
+  
   def asBarChart(): EmbeddedBarChartBuilder
+  
   def asColumnChart(): EmbeddedColumnChartBuilder
+  
   def asComboChart(): EmbeddedComboChartBuilder
+  
   def asHistogramChart(): EmbeddedHistogramChartBuilder
+  
   def asLineChart(): EmbeddedLineChartBuilder
+  
   def asPieChart(): EmbeddedPieChartBuilder
+  
   def asScatterChart(): EmbeddedScatterChartBuilder
+  
   def asTableChart(): EmbeddedTableChartBuilder
+  
   def build(): EmbeddedChart
+  
   def clearRanges(): EmbeddedChartBuilder
+  
   def getChartType(): ChartType
+  
   def getContainer(): ContainerInfo
+  
   def getRanges(): js.Array[Range]
+  
   def removeRange(range: Range): EmbeddedChartBuilder
+  
   def setChartType(`type`: ChartType): EmbeddedChartBuilder
+  
   def setHiddenDimensionStrategy(strategy: ChartHiddenDimensionStrategy): EmbeddedChartBuilder
+  
   def setMergeStrategy(mergeStrategy: ChartMergeStrategy): EmbeddedChartBuilder
+  
   def setNumHeaders(headers: Integer): EmbeddedChartBuilder
-  def setOption(option: String, value: js.Any): EmbeddedChartBuilder
+  
+  def setOption(option: String, value: Any): EmbeddedChartBuilder
+  
   def setPosition(anchorRowPos: Integer, anchorColPos: Integer, offsetX: Integer, offsetY: Integer): EmbeddedChartBuilder
+  
   def setTransposeRowsAndColumns(transpose: Boolean): EmbeddedChartBuilder
 }
-
 object EmbeddedChartBuilder {
-  @scala.inline
-  def apply(
-    addRange: Range => CallbackTo[EmbeddedChartBuilder],
+  
+  inline def apply(
+    addRange: Range => EmbeddedChartBuilder,
     asAreaChart: CallbackTo[EmbeddedAreaChartBuilder],
     asBarChart: CallbackTo[EmbeddedBarChartBuilder],
     asColumnChart: CallbackTo[EmbeddedColumnChartBuilder],
@@ -68,40 +90,65 @@ object EmbeddedChartBuilder {
     getChartType: CallbackTo[ChartType],
     getContainer: CallbackTo[ContainerInfo],
     getRanges: CallbackTo[js.Array[Range]],
-    removeRange: Range => CallbackTo[EmbeddedChartBuilder],
-    setChartType: ChartType => CallbackTo[EmbeddedChartBuilder],
-    setHiddenDimensionStrategy: ChartHiddenDimensionStrategy => CallbackTo[EmbeddedChartBuilder],
-    setMergeStrategy: ChartMergeStrategy => CallbackTo[EmbeddedChartBuilder],
-    setNumHeaders: Integer => CallbackTo[EmbeddedChartBuilder],
-    setOption: (String, js.Any) => CallbackTo[EmbeddedChartBuilder],
-    setPosition: (Integer, Integer, Integer, Integer) => CallbackTo[EmbeddedChartBuilder],
-    setTransposeRowsAndColumns: Boolean => CallbackTo[EmbeddedChartBuilder]
+    removeRange: Range => EmbeddedChartBuilder,
+    setChartType: ChartType => EmbeddedChartBuilder,
+    setHiddenDimensionStrategy: ChartHiddenDimensionStrategy => EmbeddedChartBuilder,
+    setMergeStrategy: ChartMergeStrategy => EmbeddedChartBuilder,
+    setNumHeaders: Integer => EmbeddedChartBuilder,
+    setOption: (String, Any) => EmbeddedChartBuilder,
+    setPosition: (Integer, Integer, Integer, Integer) => EmbeddedChartBuilder,
+    setTransposeRowsAndColumns: Boolean => EmbeddedChartBuilder
   ): EmbeddedChartBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addRange")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet.Range) => addRange(t0).runNow()))
-    __obj.updateDynamic("asAreaChart")(asAreaChart.toJsFn)
-    __obj.updateDynamic("asBarChart")(asBarChart.toJsFn)
-    __obj.updateDynamic("asColumnChart")(asColumnChart.toJsFn)
-    __obj.updateDynamic("asComboChart")(asComboChart.toJsFn)
-    __obj.updateDynamic("asHistogramChart")(asHistogramChart.toJsFn)
-    __obj.updateDynamic("asLineChart")(asLineChart.toJsFn)
-    __obj.updateDynamic("asPieChart")(asPieChart.toJsFn)
-    __obj.updateDynamic("asScatterChart")(asScatterChart.toJsFn)
-    __obj.updateDynamic("asTableChart")(asTableChart.toJsFn)
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("clearRanges")(clearRanges.toJsFn)
-    __obj.updateDynamic("getChartType")(getChartType.toJsFn)
-    __obj.updateDynamic("getContainer")(getContainer.toJsFn)
-    __obj.updateDynamic("getRanges")(getRanges.toJsFn)
-    __obj.updateDynamic("removeRange")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet.Range) => removeRange(t0).runNow()))
-    __obj.updateDynamic("setChartType")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts.ChartType) => setChartType(t0).runNow()))
-    __obj.updateDynamic("setHiddenDimensionStrategy")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts.ChartHiddenDimensionStrategy) => setHiddenDimensionStrategy(t0).runNow()))
-    __obj.updateDynamic("setMergeStrategy")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts.ChartMergeStrategy) => setMergeStrategy(t0).runNow()))
-    __obj.updateDynamic("setNumHeaders")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => setNumHeaders(t0).runNow()))
-    __obj.updateDynamic("setOption")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Any) => setOption(t0, t1).runNow()))
-    __obj.updateDynamic("setPosition")(js.Any.fromFunction4((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer, t1: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer, t2: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer, t3: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => setPosition(t0, t1, t2, t3).runNow()))
-    __obj.updateDynamic("setTransposeRowsAndColumns")(js.Any.fromFunction1((t0: scala.Boolean) => setTransposeRowsAndColumns(t0).runNow()))
+    val __obj = js.Dynamic.literal(addRange = js.Any.fromFunction1(addRange), asAreaChart = asAreaChart.toJsFn, asBarChart = asBarChart.toJsFn, asColumnChart = asColumnChart.toJsFn, asComboChart = asComboChart.toJsFn, asHistogramChart = asHistogramChart.toJsFn, asLineChart = asLineChart.toJsFn, asPieChart = asPieChart.toJsFn, asScatterChart = asScatterChart.toJsFn, asTableChart = asTableChart.toJsFn, build = build.toJsFn, clearRanges = clearRanges.toJsFn, getChartType = getChartType.toJsFn, getContainer = getContainer.toJsFn, getRanges = getRanges.toJsFn, removeRange = js.Any.fromFunction1(removeRange), setChartType = js.Any.fromFunction1(setChartType), setHiddenDimensionStrategy = js.Any.fromFunction1(setHiddenDimensionStrategy), setMergeStrategy = js.Any.fromFunction1(setMergeStrategy), setNumHeaders = js.Any.fromFunction1(setNumHeaders), setOption = js.Any.fromFunction2(setOption), setPosition = js.Any.fromFunction4(setPosition), setTransposeRowsAndColumns = js.Any.fromFunction1(setTransposeRowsAndColumns))
     __obj.asInstanceOf[EmbeddedChartBuilder]
   }
+  
+  extension [Self <: EmbeddedChartBuilder](x: Self) {
+    
+    inline def setAddRange(value: Range => EmbeddedChartBuilder): Self = StObject.set(x, "addRange", js.Any.fromFunction1(value))
+    
+    inline def setAsAreaChart(value: CallbackTo[EmbeddedAreaChartBuilder]): Self = StObject.set(x, "asAreaChart", value.toJsFn)
+    
+    inline def setAsBarChart(value: CallbackTo[EmbeddedBarChartBuilder]): Self = StObject.set(x, "asBarChart", value.toJsFn)
+    
+    inline def setAsColumnChart(value: CallbackTo[EmbeddedColumnChartBuilder]): Self = StObject.set(x, "asColumnChart", value.toJsFn)
+    
+    inline def setAsComboChart(value: CallbackTo[EmbeddedComboChartBuilder]): Self = StObject.set(x, "asComboChart", value.toJsFn)
+    
+    inline def setAsHistogramChart(value: CallbackTo[EmbeddedHistogramChartBuilder]): Self = StObject.set(x, "asHistogramChart", value.toJsFn)
+    
+    inline def setAsLineChart(value: CallbackTo[EmbeddedLineChartBuilder]): Self = StObject.set(x, "asLineChart", value.toJsFn)
+    
+    inline def setAsPieChart(value: CallbackTo[EmbeddedPieChartBuilder]): Self = StObject.set(x, "asPieChart", value.toJsFn)
+    
+    inline def setAsScatterChart(value: CallbackTo[EmbeddedScatterChartBuilder]): Self = StObject.set(x, "asScatterChart", value.toJsFn)
+    
+    inline def setAsTableChart(value: CallbackTo[EmbeddedTableChartBuilder]): Self = StObject.set(x, "asTableChart", value.toJsFn)
+    
+    inline def setBuild(value: CallbackTo[EmbeddedChart]): Self = StObject.set(x, "build", value.toJsFn)
+    
+    inline def setClearRanges(value: CallbackTo[EmbeddedChartBuilder]): Self = StObject.set(x, "clearRanges", value.toJsFn)
+    
+    inline def setGetChartType(value: CallbackTo[ChartType]): Self = StObject.set(x, "getChartType", value.toJsFn)
+    
+    inline def setGetContainer(value: CallbackTo[ContainerInfo]): Self = StObject.set(x, "getContainer", value.toJsFn)
+    
+    inline def setGetRanges(value: CallbackTo[js.Array[Range]]): Self = StObject.set(x, "getRanges", value.toJsFn)
+    
+    inline def setRemoveRange(value: Range => EmbeddedChartBuilder): Self = StObject.set(x, "removeRange", js.Any.fromFunction1(value))
+    
+    inline def setSetChartType(value: ChartType => EmbeddedChartBuilder): Self = StObject.set(x, "setChartType", js.Any.fromFunction1(value))
+    
+    inline def setSetHiddenDimensionStrategy(value: ChartHiddenDimensionStrategy => EmbeddedChartBuilder): Self = StObject.set(x, "setHiddenDimensionStrategy", js.Any.fromFunction1(value))
+    
+    inline def setSetMergeStrategy(value: ChartMergeStrategy => EmbeddedChartBuilder): Self = StObject.set(x, "setMergeStrategy", js.Any.fromFunction1(value))
+    
+    inline def setSetNumHeaders(value: Integer => EmbeddedChartBuilder): Self = StObject.set(x, "setNumHeaders", js.Any.fromFunction1(value))
+    
+    inline def setSetOption(value: (String, Any) => EmbeddedChartBuilder): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
+    
+    inline def setSetPosition(value: (Integer, Integer, Integer, Integer) => EmbeddedChartBuilder): Self = StObject.set(x, "setPosition", js.Any.fromFunction4(value))
+    
+    inline def setSetTransposeRowsAndColumns(value: Boolean => EmbeddedChartBuilder): Self = StObject.set(x, "setTransposeRowsAndColumns", js.Any.fromFunction1(value))
+  }
 }
-

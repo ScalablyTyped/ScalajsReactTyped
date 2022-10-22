@@ -1,7 +1,7 @@
 
 # Scala.js typings for strip-ansi
 
-Typings are for version 5.2.0
+Typings are for version 7.0.1
 
 ## Library description:
 Strip ANSI escape codes from a string
@@ -10,10 +10,10 @@ Strip ANSI escape codes from a string
 | ------------------ | :-------------: |
 | Full name          | strip-ansi |
 | Keywords           | strip, trim, remove, ansi, styles, color, colour, colors, terminal, console, string, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
-| # releases         | 5 |
-| # dependents       | 1610 |
-| # downloads        | 1456059256 |
-| # stars            | 13 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5.002103316666667E8 |
+| # stars            | 329.0 |
 
 ## Links
 - [Homepage](https://github.com/chalk/strip-ansi#readme)

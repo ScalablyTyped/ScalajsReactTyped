@@ -1,39 +1,60 @@
 package typingsJapgolly.gamequery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlaygroundOptions extends js.Object {
+trait PlaygroundOptions extends StObject {
+  
   var disableCollision: js.UndefOr[Boolean] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var keyTracker: js.UndefOr[Boolean] = js.undefined
+  
   var mouseTracker: js.UndefOr[Boolean] = js.undefined
+  
   var position: js.UndefOr[String] = js.undefined
+  
   var refreshRate: js.UndefOr[Double] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object PlaygroundOptions {
-  @scala.inline
-  def apply(
-    disableCollision: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    keyTracker: js.UndefOr[Boolean] = js.undefined,
-    mouseTracker: js.UndefOr[Boolean] = js.undefined,
-    position: String = null,
-    refreshRate: Int | Double = null,
-    width: Int | Double = null
-  ): PlaygroundOptions = {
+  
+  inline def apply(): PlaygroundOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableCollision)) __obj.updateDynamic("disableCollision")(disableCollision.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyTracker)) __obj.updateDynamic("keyTracker")(keyTracker.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseTracker)) __obj.updateDynamic("mouseTracker")(mouseTracker.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (refreshRate != null) __obj.updateDynamic("refreshRate")(refreshRate.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaygroundOptions]
   }
+  
+  extension [Self <: PlaygroundOptions](x: Self) {
+    
+    inline def setDisableCollision(value: Boolean): Self = StObject.set(x, "disableCollision", value.asInstanceOf[js.Any])
+    
+    inline def setDisableCollisionUndefined: Self = StObject.set(x, "disableCollision", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setKeyTracker(value: Boolean): Self = StObject.set(x, "keyTracker", value.asInstanceOf[js.Any])
+    
+    inline def setKeyTrackerUndefined: Self = StObject.set(x, "keyTracker", js.undefined)
+    
+    inline def setMouseTracker(value: Boolean): Self = StObject.set(x, "mouseTracker", value.asInstanceOf[js.Any])
+    
+    inline def setMouseTrackerUndefined: Self = StObject.set(x, "mouseTracker", js.undefined)
+    
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setRefreshRate(value: Double): Self = StObject.set(x, "refreshRate", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshRateUndefined: Self = StObject.set(x, "refreshRate", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.firmata.mod
 
-import typingsJapgolly.firmata.firmataNumbers.`0`
-import typingsJapgolly.firmata.firmataNumbers.`1`
+import typingsJapgolly.firmata.firmataInts.`0`
+import typingsJapgolly.firmata.firmataInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/firmata/firmata.js/blob/v0.15.0/lib/firmata.js#L485-L488
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.firmata.firmataNumbers.`0`
-  - typingsJapgolly.firmata.firmataNumbers.`1`
+  - typingsJapgolly.firmata.firmataInts.`0`
+  - typingsJapgolly.firmata.firmataInts.`1`
 */
-trait STEPPER_DIRECTION extends js.Object
-
+trait STEPPER_DIRECTION extends StObject
 object STEPPER_DIRECTION {
-  @scala.inline
-  def CCW: `0` = this.cast(0)
-  @scala.inline
-  def CW: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CCW: `0` = 0.asInstanceOf[`0`]
+  
+  inline def CW: `1` = 1.asInstanceOf[`1`]
 }
-

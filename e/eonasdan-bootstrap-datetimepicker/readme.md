@@ -10,10 +10,10 @@ A date/time picker component designed to work with Bootstrap 3 and Momentjs. For
 | ------------------ | :-------------: |
 | Full name          | eonasdan-bootstrap-datetimepicker |
 | Keywords           | twitter-bootstrap, bootstrap, datepicker, datetimepicker, timepicker, moment |
-| # releases         | 1 |
-| # dependents       | 61 |
-| # downloads        | 2911522 |
-| # stars            | 12 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 324329.6666666667 |
+| # stars            | 6982.0 |
 
 ## Links
 - [Homepage](http://eonasdan.github.io/bootstrap-datetimepicker/)

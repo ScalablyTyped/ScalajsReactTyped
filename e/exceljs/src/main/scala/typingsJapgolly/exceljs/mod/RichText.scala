@@ -1,21 +1,29 @@
 package typingsJapgolly.exceljs.mod
 
-import typingsJapgolly.exceljs.PartialFont
+import typingsJapgolly.exceljs.anon.PartialFont
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RichText extends js.Object {
+trait RichText extends StObject {
+  
   var font: js.UndefOr[PartialFont] = js.undefined
+  
   var text: String
 }
-
 object RichText {
-  @scala.inline
-  def apply(text: String, font: PartialFont = null): RichText = {
+  
+  inline def apply(text: String): RichText = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     __obj.asInstanceOf[RichText]
   }
+  
+  extension [Self <: RichText](x: Self) {
+    
+    inline def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,22 +1,27 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColumnsCollectionModifiedEventUIParam extends js.Object {
+trait ColumnsCollectionModifiedEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the grid.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the grid.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ColumnsCollectionModifiedEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null): ColumnsCollectionModifiedEventUIParam = {
+  
+  inline def apply(): ColumnsCollectionModifiedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnsCollectionModifiedEventUIParam]
   }
+  
+  extension [Self <: ColumnsCollectionModifiedEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

@@ -1,27 +1,20 @@
 package typingsJapgolly.microsoftAjax.Sys.UI
 
-import org.scalajs.dom.raw.HTMLElement
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.microsoftAjax.Sys.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the base class for all all ASP.NET AJAX client controls.
   */
-@JSGlobal("Sys.UI.Control")
-@js.native
-class Control protected () extends Component {
-  //#region Constructors
-  /**
-    * When called from a derived class, initializes a new instance of that class.
-    * The Control constructor is a complete constructor function. However, because the Control class is an abstract base class, the constructor should be called only from derived classes.
-    * @param element
-    *           The HTMLElement object that the control will be associated with.
-    *
-    * @throws Error.invalidOperation Function
-    */
-  def this(element: HTMLElement) = this()
+trait Control
+  extends StObject
+     with Component {
+  
   //#endregion
   //#region Methods
   /**
@@ -30,14 +23,16 @@ class Control protected () extends Component {
     * @param className
     *          A string that contains the name of the CSS class to add.
     */
-  def addCssClass(className: String): Unit = js.native
+  def addCssClass(className: String): Unit
+  
   //#endregion
   //#region Properties
   /**
     * Gets the HTML Document Object Model (DOM) element that the current Sys.UI.Control object is associated with.
     * @return The DOM element that the current Control object is associated with.
     */
-  def get_element(): HTMLElement = js.native
+  def get_element(): HTMLElement
+  
   /**
     * Called when an event is raised by the raiseBubbleEvent method.
     *
@@ -52,7 +47,8 @@ class Control protected () extends Component {
     * @return
     *      false in all cases.
     */
-  def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+  def onBubbleEvent(source: Any, args: Any): Boolean
+  
   /**
     * Calls the onBubbleEvent method of the parent control.
     *
@@ -66,7 +62,8 @@ class Control protected () extends Component {
     * @param args
     *          The event arguments.
     */
-  def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+  def raiseBubbleEvent(source: Any, args: Any): Unit
+  
   /**
     * Removes a CSS class from the HTML Document Object Model (DOM) element that the control is attached to.
     * Use the removeCssClass method to remove a CSS class from a control. If the CSS class has already been removed from the control, removeCssClass makes no changes to the control.
@@ -74,12 +71,56 @@ class Control protected () extends Component {
     * @param className
     *          A string that contains the name of the CSS class to remove.
     */
-  def removeCssClass(className: String): Unit = js.native
+  def removeCssClass(className: String): Unit
+  
   /**
     * Toggles a CSS class of the HTML Document Object Model (DOM) element that the control is attached to.
     * @param className
     *          A string that contains the name of the CSS class to toggle.
     */
-  def toggleCssClass(className: String): Unit = js.native
+  def toggleCssClass(className: String): Unit
 }
-
+object Control {
+  
+  inline def apply(
+    addCssClass: String => Callback,
+    add_disposing: js.Function => Callback,
+    add_propertyChanged: js.Function => Callback,
+    beginUpdate: Callback,
+    dispose: Callback,
+    endUpdate: Callback,
+    get_element: CallbackTo[HTMLElement],
+    get_events: CallbackTo[Any],
+    get_id: CallbackTo[String],
+    get_isInitialized: CallbackTo[Boolean],
+    get_isUpdating: CallbackTo[Boolean],
+    initialize: Callback,
+    onBubbleEvent: (Any, Any) => Boolean,
+    raiseBubbleEvent: (Any, Any) => Callback,
+    raisePropertyChanged: String => Callback,
+    removeCssClass: String => Callback,
+    remove_disposing: js.Function => Callback,
+    remove_propertyChanged: js.Function => Callback,
+    set_id: String => Callback,
+    toggleCssClass: String => Callback,
+    updated: Callback
+  ): Control = {
+    val __obj = js.Dynamic.literal(addCssClass = js.Any.fromFunction1((t0: String) => addCssClass(t0).runNow()), add_disposing = js.Any.fromFunction1((t0: js.Function) => add_disposing(t0).runNow()), add_propertyChanged = js.Any.fromFunction1((t0: js.Function) => add_propertyChanged(t0).runNow()), beginUpdate = beginUpdate.toJsFn, dispose = dispose.toJsFn, endUpdate = endUpdate.toJsFn, get_element = get_element.toJsFn, get_events = get_events.toJsFn, get_id = get_id.toJsFn, get_isInitialized = get_isInitialized.toJsFn, get_isUpdating = get_isUpdating.toJsFn, initialize = initialize.toJsFn, onBubbleEvent = js.Any.fromFunction2(onBubbleEvent), raiseBubbleEvent = js.Any.fromFunction2((t0: Any, t1: Any) => (raiseBubbleEvent(t0, t1)).runNow()), raisePropertyChanged = js.Any.fromFunction1((t0: String) => raisePropertyChanged(t0).runNow()), removeCssClass = js.Any.fromFunction1((t0: String) => removeCssClass(t0).runNow()), remove_disposing = js.Any.fromFunction1((t0: js.Function) => remove_disposing(t0).runNow()), remove_propertyChanged = js.Any.fromFunction1((t0: js.Function) => remove_propertyChanged(t0).runNow()), set_id = js.Any.fromFunction1((t0: String) => set_id(t0).runNow()), toggleCssClass = js.Any.fromFunction1((t0: String) => toggleCssClass(t0).runNow()), updated = updated.toJsFn)
+    __obj.asInstanceOf[Control]
+  }
+  
+  extension [Self <: Control](x: Self) {
+    
+    inline def setAddCssClass(value: String => Callback): Self = StObject.set(x, "addCssClass", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setGet_element(value: CallbackTo[HTMLElement]): Self = StObject.set(x, "get_element", value.toJsFn)
+    
+    inline def setOnBubbleEvent(value: (Any, Any) => Boolean): Self = StObject.set(x, "onBubbleEvent", js.Any.fromFunction2(value))
+    
+    inline def setRaiseBubbleEvent(value: (Any, Any) => Callback): Self = StObject.set(x, "raiseBubbleEvent", js.Any.fromFunction2((t0: Any, t1: Any) => (value(t0, t1)).runNow()))
+    
+    inline def setRemoveCssClass(value: String => Callback): Self = StObject.set(x, "removeCssClass", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setToggleCssClass(value: String => Callback): Self = StObject.set(x, "toggleCssClass", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+  }
+}

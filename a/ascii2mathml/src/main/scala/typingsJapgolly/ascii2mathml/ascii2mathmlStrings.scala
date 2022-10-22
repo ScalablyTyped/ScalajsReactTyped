@@ -1,29 +1,24 @@
 package typingsJapgolly.ascii2mathml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ascii2mathmlStrings {
-  @js.native
-  sealed trait block extends js.Object
   
   @js.native
-  sealed trait `inline` extends js.Object
+  sealed trait block extends StObject
+  inline def block: block = "block".asInstanceOf[block]
   
   @js.native
-  sealed trait ltr extends js.Object
+  sealed trait `inline` extends StObject
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait rtl extends js.Object
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
-  @scala.inline
-  def block: block = "block".asInstanceOf[block]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  @js.native
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
 }
-

@@ -1,69 +1,122 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChatMember extends js.Object {
+trait ChatMember extends StObject {
+  
   var can_add_web_page_previews: js.UndefOr[Boolean] = js.undefined
+  
   var can_be_edited: js.UndefOr[Boolean] = js.undefined
+  
   var can_change_info: js.UndefOr[Boolean] = js.undefined
+  
   var can_delete_messages: js.UndefOr[Boolean] = js.undefined
+  
   var can_edit_messages: js.UndefOr[Boolean] = js.undefined
+  
   var can_invite_users: js.UndefOr[Boolean] = js.undefined
+  
   var can_pin_messages: js.UndefOr[Boolean] = js.undefined
+  
   var can_post_messages: js.UndefOr[Boolean] = js.undefined
+  
   var can_promote_members: js.UndefOr[Boolean] = js.undefined
+  
   var can_restrict_members: js.UndefOr[Boolean] = js.undefined
+  
   var can_send_media_messages: js.UndefOr[Boolean] = js.undefined
+  
   var can_send_messages: js.UndefOr[Boolean] = js.undefined
+  
   var can_send_other_messages: js.UndefOr[Boolean] = js.undefined
-  var can_send_polls: Boolean
+  
+  var can_send_polls: js.UndefOr[Boolean] = js.undefined
+  
   var is_member: js.UndefOr[Boolean] = js.undefined
+  
   var status: ChatMemberStatus
+  
   var until_date: js.UndefOr[Double] = js.undefined
+  
   var user: User
 }
-
 object ChatMember {
-  @scala.inline
-  def apply(
-    can_send_polls: Boolean,
-    status: ChatMemberStatus,
-    user: User,
-    can_add_web_page_previews: js.UndefOr[Boolean] = js.undefined,
-    can_be_edited: js.UndefOr[Boolean] = js.undefined,
-    can_change_info: js.UndefOr[Boolean] = js.undefined,
-    can_delete_messages: js.UndefOr[Boolean] = js.undefined,
-    can_edit_messages: js.UndefOr[Boolean] = js.undefined,
-    can_invite_users: js.UndefOr[Boolean] = js.undefined,
-    can_pin_messages: js.UndefOr[Boolean] = js.undefined,
-    can_post_messages: js.UndefOr[Boolean] = js.undefined,
-    can_promote_members: js.UndefOr[Boolean] = js.undefined,
-    can_restrict_members: js.UndefOr[Boolean] = js.undefined,
-    can_send_media_messages: js.UndefOr[Boolean] = js.undefined,
-    can_send_messages: js.UndefOr[Boolean] = js.undefined,
-    can_send_other_messages: js.UndefOr[Boolean] = js.undefined,
-    is_member: js.UndefOr[Boolean] = js.undefined,
-    until_date: Int | Double = null
-  ): ChatMember = {
-    val __obj = js.Dynamic.literal(can_send_polls = can_send_polls.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_add_web_page_previews)) __obj.updateDynamic("can_add_web_page_previews")(can_add_web_page_previews.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_be_edited)) __obj.updateDynamic("can_be_edited")(can_be_edited.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_change_info)) __obj.updateDynamic("can_change_info")(can_change_info.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_delete_messages)) __obj.updateDynamic("can_delete_messages")(can_delete_messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_edit_messages)) __obj.updateDynamic("can_edit_messages")(can_edit_messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_invite_users)) __obj.updateDynamic("can_invite_users")(can_invite_users.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_pin_messages)) __obj.updateDynamic("can_pin_messages")(can_pin_messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_post_messages)) __obj.updateDynamic("can_post_messages")(can_post_messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_promote_members)) __obj.updateDynamic("can_promote_members")(can_promote_members.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_restrict_members)) __obj.updateDynamic("can_restrict_members")(can_restrict_members.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_send_media_messages)) __obj.updateDynamic("can_send_media_messages")(can_send_media_messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_send_messages)) __obj.updateDynamic("can_send_messages")(can_send_messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(can_send_other_messages)) __obj.updateDynamic("can_send_other_messages")(can_send_other_messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_member)) __obj.updateDynamic("is_member")(is_member.asInstanceOf[js.Any])
-    if (until_date != null) __obj.updateDynamic("until_date")(until_date.asInstanceOf[js.Any])
+  
+  inline def apply(status: ChatMemberStatus, user: User): ChatMember = {
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatMember]
   }
+  
+  extension [Self <: ChatMember](x: Self) {
+    
+    inline def setCan_add_web_page_previews(value: Boolean): Self = StObject.set(x, "can_add_web_page_previews", value.asInstanceOf[js.Any])
+    
+    inline def setCan_add_web_page_previewsUndefined: Self = StObject.set(x, "can_add_web_page_previews", js.undefined)
+    
+    inline def setCan_be_edited(value: Boolean): Self = StObject.set(x, "can_be_edited", value.asInstanceOf[js.Any])
+    
+    inline def setCan_be_editedUndefined: Self = StObject.set(x, "can_be_edited", js.undefined)
+    
+    inline def setCan_change_info(value: Boolean): Self = StObject.set(x, "can_change_info", value.asInstanceOf[js.Any])
+    
+    inline def setCan_change_infoUndefined: Self = StObject.set(x, "can_change_info", js.undefined)
+    
+    inline def setCan_delete_messages(value: Boolean): Self = StObject.set(x, "can_delete_messages", value.asInstanceOf[js.Any])
+    
+    inline def setCan_delete_messagesUndefined: Self = StObject.set(x, "can_delete_messages", js.undefined)
+    
+    inline def setCan_edit_messages(value: Boolean): Self = StObject.set(x, "can_edit_messages", value.asInstanceOf[js.Any])
+    
+    inline def setCan_edit_messagesUndefined: Self = StObject.set(x, "can_edit_messages", js.undefined)
+    
+    inline def setCan_invite_users(value: Boolean): Self = StObject.set(x, "can_invite_users", value.asInstanceOf[js.Any])
+    
+    inline def setCan_invite_usersUndefined: Self = StObject.set(x, "can_invite_users", js.undefined)
+    
+    inline def setCan_pin_messages(value: Boolean): Self = StObject.set(x, "can_pin_messages", value.asInstanceOf[js.Any])
+    
+    inline def setCan_pin_messagesUndefined: Self = StObject.set(x, "can_pin_messages", js.undefined)
+    
+    inline def setCan_post_messages(value: Boolean): Self = StObject.set(x, "can_post_messages", value.asInstanceOf[js.Any])
+    
+    inline def setCan_post_messagesUndefined: Self = StObject.set(x, "can_post_messages", js.undefined)
+    
+    inline def setCan_promote_members(value: Boolean): Self = StObject.set(x, "can_promote_members", value.asInstanceOf[js.Any])
+    
+    inline def setCan_promote_membersUndefined: Self = StObject.set(x, "can_promote_members", js.undefined)
+    
+    inline def setCan_restrict_members(value: Boolean): Self = StObject.set(x, "can_restrict_members", value.asInstanceOf[js.Any])
+    
+    inline def setCan_restrict_membersUndefined: Self = StObject.set(x, "can_restrict_members", js.undefined)
+    
+    inline def setCan_send_media_messages(value: Boolean): Self = StObject.set(x, "can_send_media_messages", value.asInstanceOf[js.Any])
+    
+    inline def setCan_send_media_messagesUndefined: Self = StObject.set(x, "can_send_media_messages", js.undefined)
+    
+    inline def setCan_send_messages(value: Boolean): Self = StObject.set(x, "can_send_messages", value.asInstanceOf[js.Any])
+    
+    inline def setCan_send_messagesUndefined: Self = StObject.set(x, "can_send_messages", js.undefined)
+    
+    inline def setCan_send_other_messages(value: Boolean): Self = StObject.set(x, "can_send_other_messages", value.asInstanceOf[js.Any])
+    
+    inline def setCan_send_other_messagesUndefined: Self = StObject.set(x, "can_send_other_messages", js.undefined)
+    
+    inline def setCan_send_polls(value: Boolean): Self = StObject.set(x, "can_send_polls", value.asInstanceOf[js.Any])
+    
+    inline def setCan_send_pollsUndefined: Self = StObject.set(x, "can_send_polls", js.undefined)
+    
+    inline def setIs_member(value: Boolean): Self = StObject.set(x, "is_member", value.asInstanceOf[js.Any])
+    
+    inline def setIs_memberUndefined: Self = StObject.set(x, "is_member", js.undefined)
+    
+    inline def setStatus(value: ChatMemberStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setUntil_date(value: Double): Self = StObject.set(x, "until_date", value.asInstanceOf[js.Any])
+    
+    inline def setUntil_dateUndefined: Self = StObject.set(x, "until_date", js.undefined)
+    
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+  }
 }
-

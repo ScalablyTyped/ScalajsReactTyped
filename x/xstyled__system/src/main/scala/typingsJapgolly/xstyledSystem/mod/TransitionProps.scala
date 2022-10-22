@@ -1,19 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
+import typingsJapgolly.csstype.mod.Property.Transition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransitionProps extends js.Object {
-  val transition: js.UndefOr[ResponsiveValue[String]] = js.undefined
+trait TransitionProps[TLength] extends StObject {
+  
+  val transition: js.UndefOr[ResponsiveValue[Transition[TLength]]] = js.undefined
 }
-
 object TransitionProps {
-  @scala.inline
-  def apply(transition: ResponsiveValue[String] = null): TransitionProps = {
+  
+  inline def apply[TLength](): TransitionProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TransitionProps]
+    __obj.asInstanceOf[TransitionProps[TLength]]
+  }
+  
+  extension [Self <: TransitionProps[?], TLength](x: Self & TransitionProps[TLength]) {
+    
+    inline def setTransition(value: ResponsiveValue[Transition[TLength]]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    
+    inline def setTransitionVarargs(value: Transition[TLength]*): Self = StObject.set(x, "transition", js.Array(value*))
   }
 }
-

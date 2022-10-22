@@ -1,32 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IgComboSelectionChangedEventUIParam extends js.Object {
+trait IgComboSelectionChangedEventUIParam extends StObject {
+  
   /**
-  	 * Used to obtain reference to array of new selected items. That can be null.
-  	 */
-  var items: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain reference to array of new selected items. That can be null.
+    */
+  var items: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to obtain reference to array of old selected items. That can be null.
-  	 */
-  var oldItems: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain reference to array of old selected items. That can be null.
+    */
+  var oldItems: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to obtain reference to igCombo.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain reference to igCombo.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object IgComboSelectionChangedEventUIParam {
-  @scala.inline
-  def apply(items: js.Any = null, oldItems: js.Any = null, owner: js.Any = null): IgComboSelectionChangedEventUIParam = {
+  
+  inline def apply(): IgComboSelectionChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (oldItems != null) __obj.updateDynamic("oldItems")(oldItems.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgComboSelectionChangedEventUIParam]
   }
+  
+  extension [Self <: IgComboSelectionChangedEventUIParam](x: Self) {
+    
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setOldItems(value: Any): Self = StObject.set(x, "oldItems", value.asInstanceOf[js.Any])
+    
+    inline def setOldItemsUndefined: Self = StObject.set(x, "oldItems", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

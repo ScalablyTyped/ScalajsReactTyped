@@ -1,75 +1,67 @@
 package typingsJapgolly.recharts.components
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.recharts.PartialMargin
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.recharts.anon.PartialMargin
 import typingsJapgolly.recharts.mod.BrushProps
 import typingsJapgolly.recharts.mod.DataKey
+import typingsJapgolly.recharts.mod.RechartsFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Brush {
-  def apply(
-    className: String = null,
-    data: js.Array[_] = null,
-    dataKey: DataKey = null,
-    endIndex: Int | Double = null,
-    fill: String = null,
-    gap: Int | Double = null,
-    height: Int | Double = null,
-    leaveTimeOut: Int | Double = null,
-    onChange: /* repeated */ js.Any => Callback = null,
-    padding: PartialMargin = null,
-    startIndex: Int | Double = null,
-    stroke: String = null,
-    tickFormatter: /* value */ js.Any => CallbackTo[js.Any] = null,
-    travellerWidth: Int | Double = null,
-    updateId: String | Double = null,
-    width: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[BrushProps, typingsJapgolly.recharts.mod.Brush, Unit, BrushProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (leaveTimeOut != null) __obj.updateDynamic("leaveTimeOut")(leaveTimeOut.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onChange(t0).runNow()))
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (tickFormatter != null) __obj.updateDynamic("tickFormatter")(js.Any.fromFunction1((t0: /* value */ js.Any) => tickFormatter(t0).runNow()))
-    if (travellerWidth != null) __obj.updateDynamic("travellerWidth")(travellerWidth.asInstanceOf[js.Any])
-    if (updateId != null) __obj.updateDynamic("updateId")(updateId.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.recharts.mod.BrushProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.recharts.mod.Brush](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.recharts.mod.BrushProps])(children: _*)
-  }
   @JSImport("recharts", "Brush")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.recharts.mod.Brush] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def data(value: js.Array[Any]): this.type = set("data", value.asInstanceOf[js.Any])
+    
+    inline def dataKey(value: DataKey): this.type = set("dataKey", value.asInstanceOf[js.Any])
+    
+    inline def dataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): this.type = set("dataKey", js.Any.fromFunction1(value))
+    
+    inline def dataVarargs(value: Any*): this.type = set("data", js.Array(value*))
+    
+    inline def endIndex(value: Double): this.type = set("endIndex", value.asInstanceOf[js.Any])
+    
+    inline def fill(value: String): this.type = set("fill", value.asInstanceOf[js.Any])
+    
+    inline def gap(value: Double): this.type = set("gap", value.asInstanceOf[js.Any])
+    
+    inline def height(value: Double): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def leaveTimeOut(value: Double): this.type = set("leaveTimeOut", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: RechartsFunction): this.type = set("onChange", value.asInstanceOf[js.Any])
+    
+    inline def padding(value: PartialMargin): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def startIndex(value: Double): this.type = set("startIndex", value.asInstanceOf[js.Any])
+    
+    inline def stroke(value: String): this.type = set("stroke", value.asInstanceOf[js.Any])
+    
+    inline def tickFormatter(value: /* value */ Any => Any): this.type = set("tickFormatter", js.Any.fromFunction1(value))
+    
+    inline def travellerWidth(value: Double): this.type = set("travellerWidth", value.asInstanceOf[js.Any])
+    
+    inline def updateId(value: String | Double): this.type = set("updateId", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+    
+    inline def x(value: Double): this.type = set("x", value.asInstanceOf[js.Any])
+    
+    inline def y(value: Double): this.type = set("y", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Brush.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: BrushProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

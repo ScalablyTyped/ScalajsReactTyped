@@ -1,16 +1,102 @@
 package typingsJapgolly.jestChangedFiles
 
-import typingsJapgolly.jestChangedFiles.typesMod.ChangedFiles
-import typingsJapgolly.jestChangedFiles.typesMod.Options
-import typingsJapgolly.jestChangedFiles.typesMod.Repos
+import typingsJapgolly.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-changed-files", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def findRepos(roots: js.Array[String]): js.Promise[Repos] = js.native
-  def getChangedFilesForRoots(roots: js.Array[String], options: Options): js.Promise[ChangedFiles] = js.native
+object mod {
+  
+  @JSImport("jest-changed-files", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def findRepos(roots: js.Array[String]): js.Promise[Repos] = ^.asInstanceOf[js.Dynamic].applyDynamic("findRepos")(roots.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repos]]
+  
+  inline def getChangedFilesForRoots(roots: js.Array[String], options: Options): js.Promise[ChangedFiles] = (^.asInstanceOf[js.Dynamic].applyDynamic("getChangedFilesForRoots")(roots.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChangedFiles]]
+  
+  trait ChangedFiles extends StObject {
+    
+    var changedFiles: Paths
+    
+    var repos: Repos
+  }
+  object ChangedFiles {
+    
+    inline def apply(changedFiles: Paths, repos: Repos): ChangedFiles = {
+      val __obj = js.Dynamic.literal(changedFiles = changedFiles.asInstanceOf[js.Any], repos = repos.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ChangedFiles]
+    }
+    
+    extension [Self <: ChangedFiles](x: Self) {
+      
+      inline def setChangedFiles(value: Paths): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
+      
+      inline def setRepos(value: Repos): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type ChangedFilesPromise = js.Promise[ChangedFiles]
+  
+  trait Options extends StObject {
+    
+    var changedSince: js.UndefOr[String] = js.undefined
+    
+    var includePaths: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var lastCommit: js.UndefOr[Boolean] = js.undefined
+    
+    var withAncestor: js.UndefOr[Boolean] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setChangedSince(value: String): Self = StObject.set(x, "changedSince", value.asInstanceOf[js.Any])
+      
+      inline def setChangedSinceUndefined: Self = StObject.set(x, "changedSince", js.undefined)
+      
+      inline def setIncludePaths(value: js.Array[String]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
+      
+      inline def setIncludePathsUndefined: Self = StObject.set(x, "includePaths", js.undefined)
+      
+      inline def setIncludePathsVarargs(value: String*): Self = StObject.set(x, "includePaths", js.Array(value*))
+      
+      inline def setLastCommit(value: Boolean): Self = StObject.set(x, "lastCommit", value.asInstanceOf[js.Any])
+      
+      inline def setLastCommitUndefined: Self = StObject.set(x, "lastCommit", js.undefined)
+      
+      inline def setWithAncestor(value: Boolean): Self = StObject.set(x, "withAncestor", value.asInstanceOf[js.Any])
+      
+      inline def setWithAncestorUndefined: Self = StObject.set(x, "withAncestor", js.undefined)
+    }
+  }
+  
+  type Paths = Set[String]
+  
+  trait Repos extends StObject {
+    
+    var git: Paths
+    
+    var hg: Paths
+  }
+  object Repos {
+    
+    inline def apply(git: Paths, hg: Paths): Repos = {
+      val __obj = js.Dynamic.literal(git = git.asInstanceOf[js.Any], hg = hg.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Repos]
+    }
+    
+    extension [Self <: Repos](x: Self) {
+      
+      inline def setGit(value: Paths): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
+      
+      inline def setHg(value: Paths): Self = StObject.set(x, "hg", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

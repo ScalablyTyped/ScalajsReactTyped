@@ -1,24 +1,20 @@
 package typingsJapgolly.reactNativeWebrtc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.`new`
   - typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.gathering
   - typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.complete
 */
-trait RTCIceGatheringState extends js.Object
-
+trait RTCIceGatheringState extends StObject
 object RTCIceGatheringState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def complete: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.complete = this.cast("complete")
-  @scala.inline
-  def gathering: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.gathering = this.cast("gathering")
-  @scala.inline
-  def `new`: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.`new` = this.cast("new")
+  
+  inline def complete: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.complete = "complete".asInstanceOf[typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.complete]
+  
+  inline def gathering: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.gathering = "gathering".asInstanceOf[typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.gathering]
+  
+  inline def `new`: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.`new` = "new".asInstanceOf[typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.`new`]
 }
-

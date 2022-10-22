@@ -1,28 +1,35 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the ability to control and obtain details about how a particular MediaStreamTrack is encoded and sent to a remote peer. */
 @js.native
-trait RTCRtpSender extends js.Object {
-  val dtmf: RTCDTMFSender_ | Null = js.native
-  val rtcpTransport: RTCDtlsTransport | Null = js.native
-  val track: org.scalajs.dom.experimental.mediastream.MediaStreamTrack | Null = js.native
-  val transport: RTCDtlsTransport | Null = js.native
+trait RTCRtpSender extends StObject {
+  
+  /* standard dom */
+  val dtmf: org.scalajs.dom.RTCDTMFSender | Null = js.native
+  
+  /* standard dom */
   def getParameters(): RTCRtpSendParameters = js.native
-  def getStats(): js.Promise[org.scalajs.dom.experimental.webrtc.RTCStatsReport] = js.native
+  
+  /* standard dom */
+  def getStats(): js.Promise[org.scalajs.dom.RTCStatsReport] = js.native
+  
+  /* standard dom */
   def replaceTrack(): js.Promise[Unit] = js.native
-  def replaceTrack(withTrack: org.scalajs.dom.experimental.mediastream.MediaStreamTrack): js.Promise[Unit] = js.native
+  def replaceTrack(withTrack: org.scalajs.dom.MediaStreamTrack): js.Promise[Unit] = js.native
+  
+  /* standard dom */
   def setParameters(parameters: RTCRtpSendParameters): js.Promise[Unit] = js.native
-  def setStreams(streams: org.scalajs.dom.experimental.mediastream.MediaStream*): Unit = js.native
+  
+  /* standard dom */
+  def setStreams(streams: org.scalajs.dom.MediaStream*): Unit = js.native
+  
+  /* standard dom */
+  val track: org.scalajs.dom.MediaStreamTrack | Null = js.native
+  
+  /* standard dom */
+  val transport: RTCDtlsTransport | Null = js.native
 }
-
-@JSGlobal("RTCRtpSender")
-@js.native
-object RTCRtpSender extends Instantiable0[RTCRtpSender] {
-  def getCapabilities(kind: java.lang.String): RTCRtpCapabilities | Null = js.native
-}
-

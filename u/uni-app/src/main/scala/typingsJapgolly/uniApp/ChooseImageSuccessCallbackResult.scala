@@ -1,14 +1,16 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChooseImageSuccessCallbackResult extends js.Object {
+trait ChooseImageSuccessCallbackResult extends StObject {
+  
   /**
     * 图片的本地文件路径列表
     */
-  var tempFilePaths: js.UndefOr[String | js.Array[_]] = js.undefined
+  var tempFilePaths: js.UndefOr[String | js.Array[Any]] = js.undefined
+  
   /**
     * 图片的本地文件列表，每一项是一个 File 对象
     */
@@ -16,17 +18,25 @@ trait ChooseImageSuccessCallbackResult extends js.Object {
     ChooseImageSuccessCallbackResultFile | js.Array[ChooseImageSuccessCallbackResultFile]
   ] = js.undefined
 }
-
 object ChooseImageSuccessCallbackResult {
-  @scala.inline
-  def apply(
-    tempFilePaths: String | js.Array[_] = null,
-    tempFiles: ChooseImageSuccessCallbackResultFile | js.Array[ChooseImageSuccessCallbackResultFile] = null
-  ): ChooseImageSuccessCallbackResult = {
+  
+  inline def apply(): ChooseImageSuccessCallbackResult = {
     val __obj = js.Dynamic.literal()
-    if (tempFilePaths != null) __obj.updateDynamic("tempFilePaths")(tempFilePaths.asInstanceOf[js.Any])
-    if (tempFiles != null) __obj.updateDynamic("tempFiles")(tempFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseImageSuccessCallbackResult]
   }
+  
+  extension [Self <: ChooseImageSuccessCallbackResult](x: Self) {
+    
+    inline def setTempFilePaths(value: String | js.Array[Any]): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
+    
+    inline def setTempFilePathsUndefined: Self = StObject.set(x, "tempFilePaths", js.undefined)
+    
+    inline def setTempFilePathsVarargs(value: Any*): Self = StObject.set(x, "tempFilePaths", js.Array(value*))
+    
+    inline def setTempFiles(value: ChooseImageSuccessCallbackResultFile | js.Array[ChooseImageSuccessCallbackResultFile]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
+    
+    inline def setTempFilesUndefined: Self = StObject.set(x, "tempFiles", js.undefined)
+    
+    inline def setTempFilesVarargs(value: ChooseImageSuccessCallbackResultFile*): Self = StObject.set(x, "tempFiles", js.Array(value*))
+  }
 }
-

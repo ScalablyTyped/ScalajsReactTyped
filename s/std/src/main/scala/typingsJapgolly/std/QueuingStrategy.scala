@@ -1,22 +1,32 @@
 package typingsJapgolly.std
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QueuingStrategy[T] extends js.Object {
+trait QueuingStrategy[T] extends StObject {
+  
+  /* standard dom */
   var highWaterMark: js.UndefOr[Double] = js.undefined
-  var size: js.UndefOr[QueuingStrategySizeCallback[T]] = js.undefined
+  
+  /* standard dom */
+  var size: js.UndefOr[QueuingStrategySize[T]] = js.undefined
 }
-
 object QueuingStrategy {
-  @scala.inline
-  def apply[T](highWaterMark: Int | Double = null, size: T => CallbackTo[Double] = null): QueuingStrategy[T] = {
+  
+  inline def apply[T](): QueuingStrategy[T] = {
     val __obj = js.Dynamic.literal()
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(js.Any.fromFunction1((t0: T) => size(t0).runNow()))
     __obj.asInstanceOf[QueuingStrategy[T]]
   }
+  
+  extension [Self <: QueuingStrategy[?], T](x: Self & QueuingStrategy[T]) {
+    
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+    
+    inline def setSize(value: T => Double): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+  }
 }
-

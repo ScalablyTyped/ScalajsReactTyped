@@ -1,23 +1,34 @@
 package typingsJapgolly.ioTs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContextEntry extends js.Object {
+trait ContextEntry extends StObject {
+  
   /** the input data */
-  val actual: js.UndefOr[js.Any] = js.undefined
+  val actual: js.UndefOr[Any] = js.undefined
+  
   val key: String
-  val `type`: Decoder[_, _]
+  
+  val `type`: Decoder[Any, Any]
 }
-
 object ContextEntry {
-  @scala.inline
-  def apply(key: String, `type`: Decoder[_, _], actual: js.Any = null): ContextEntry = {
+  
+  inline def apply(key: String, `type`: Decoder[Any, Any]): ContextEntry = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (actual != null) __obj.updateDynamic("actual")(actual.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextEntry]
   }
+  
+  extension [Self <: ContextEntry](x: Self) {
+    
+    inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+    
+    inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: Decoder[Any, Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

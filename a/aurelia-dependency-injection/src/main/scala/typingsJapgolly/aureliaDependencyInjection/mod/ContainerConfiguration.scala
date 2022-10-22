@@ -1,28 +1,33 @@
 package typingsJapgolly.aureliaDependencyInjection.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContainerConfiguration extends js.Object {
-  var handlers: js.UndefOr[Map[_, _]] = js.undefined
+trait ContainerConfiguration extends StObject {
+  
+  var handlers: js.UndefOr[Map[Any, Any]] = js.undefined
+  
   var onHandlerCreated: js.UndefOr[
-    js.Function1[/* handler */ InvocationHandler[_, _, _], InvocationHandler[_, _, _]]
+    js.Function1[/* handler */ InvocationHandler[Any, Any, Any], InvocationHandler[Any, Any, Any]]
   ] = js.undefined
 }
-
 object ContainerConfiguration {
-  @scala.inline
-  def apply(
-    handlers: Map[_, _] = null,
-    onHandlerCreated: /* handler */ InvocationHandler[js.Any, js.Any, js.Any] => CallbackTo[InvocationHandler[js.Any, js.Any, js.Any]] = null
-  ): ContainerConfiguration = {
+  
+  inline def apply(): ContainerConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (handlers != null) __obj.updateDynamic("handlers")(handlers.asInstanceOf[js.Any])
-    if (onHandlerCreated != null) __obj.updateDynamic("onHandlerCreated")(js.Any.fromFunction1((t0: /* handler */ typingsJapgolly.aureliaDependencyInjection.mod.InvocationHandler[js.Any, js.Any, js.Any]) => onHandlerCreated(t0).runNow()))
     __obj.asInstanceOf[ContainerConfiguration]
   }
+  
+  extension [Self <: ContainerConfiguration](x: Self) {
+    
+    inline def setHandlers(value: Map[Any, Any]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+    
+    inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
+    
+    inline def setOnHandlerCreated(value: /* handler */ InvocationHandler[Any, Any, Any] => InvocationHandler[Any, Any, Any]): Self = StObject.set(x, "onHandlerCreated", js.Any.fromFunction1(value))
+    
+    inline def setOnHandlerCreatedUndefined: Self = StObject.set(x, "onHandlerCreated", js.undefined)
+  }
 }
-

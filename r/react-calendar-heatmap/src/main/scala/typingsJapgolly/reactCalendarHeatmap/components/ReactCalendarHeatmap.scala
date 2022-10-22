@@ -1,73 +1,67 @@
 package typingsJapgolly.reactCalendarHeatmap.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactCalendarHeatmap.mod.Props
 import typingsJapgolly.reactCalendarHeatmap.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactCalendarHeatmap {
-  def apply(
-    values: js.Array[_],
-    classForValue: /* value */ js.Any => CallbackTo[js.Any] = null,
-    endDate: String | Double | js.Date = null,
-    gutterSize: Int | Double = null,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    monthLabels: js.Array[String] = null,
-    numDays: Int | Double = null,
-    onClick: /* value */ js.Any => Callback = null,
-    onMouseLeave: (/* e */ js.Any, /* value */ js.Any) => Callback = null,
-    onMouseOver: (/* e */ js.Any, /* value */ js.Any) => Callback = null,
-    showMonthLabels: js.UndefOr[Boolean] = js.undefined,
-    showOutOfRangeDays: js.UndefOr[Boolean] = js.undefined,
-    showWeekdayLabels: js.UndefOr[Boolean] = js.undefined,
-    startDate: String | Double | js.Date = null,
-    titleForValue: /* value */ js.Any => CallbackTo[js.Any] = null,
-    tooltipDataAttrs: js.Object = null,
-    transformDayElement: (/* rect */ js.Any, /* value */ js.Any, /* index */ Double) => CallbackTo[js.Any] = null,
-    weekdayLabels: js.Array[String] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, default, Unit, Props] = {
-    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
   
-      if (classForValue != null) __obj.updateDynamic("classForValue")(js.Any.fromFunction1((t0: /* value */ js.Any) => classForValue(t0).runNow()))
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (gutterSize != null) __obj.updateDynamic("gutterSize")(gutterSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (monthLabels != null) __obj.updateDynamic("monthLabels")(monthLabels.asInstanceOf[js.Any])
-    if (numDays != null) __obj.updateDynamic("numDays")(numDays.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* value */ js.Any) => onClick(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction2((t0: /* e */ js.Any, t1: /* value */ js.Any) => onMouseLeave(t0, t1).runNow()))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction2((t0: /* e */ js.Any, t1: /* value */ js.Any) => onMouseOver(t0, t1).runNow()))
-    if (!js.isUndefined(showMonthLabels)) __obj.updateDynamic("showMonthLabels")(showMonthLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOutOfRangeDays)) __obj.updateDynamic("showOutOfRangeDays")(showOutOfRangeDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeekdayLabels)) __obj.updateDynamic("showWeekdayLabels")(showWeekdayLabels.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (titleForValue != null) __obj.updateDynamic("titleForValue")(js.Any.fromFunction1((t0: /* value */ js.Any) => titleForValue(t0).runNow()))
-    if (tooltipDataAttrs != null) __obj.updateDynamic("tooltipDataAttrs")(tooltipDataAttrs.asInstanceOf[js.Any])
-    if (transformDayElement != null) __obj.updateDynamic("transformDayElement")(js.Any.fromFunction3((t0: /* rect */ js.Any, t1: /* value */ js.Any, t2: /* index */ scala.Double) => transformDayElement(t0, t1, t2).runNow()))
-    if (weekdayLabels != null) __obj.updateDynamic("weekdayLabels")(weekdayLabels.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactCalendarHeatmap.mod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactCalendarHeatmap.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactCalendarHeatmap.mod.Props])(children: _*)
+  inline def apply(values: js.Array[Any]): Builder = {
+    val __props = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[Props]))
   }
+  
   @JSImport("react-calendar-heatmap", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def classForValue(value: /* value */ Any => Any): this.type = set("classForValue", js.Any.fromFunction1(value))
+    
+    inline def endDate(value: String | Double | js.Date): this.type = set("endDate", value.asInstanceOf[js.Any])
+    
+    inline def gutterSize(value: Double): this.type = set("gutterSize", value.asInstanceOf[js.Any])
+    
+    inline def horizontal(value: Boolean): this.type = set("horizontal", value.asInstanceOf[js.Any])
+    
+    inline def monthLabels(value: js.Array[String]): this.type = set("monthLabels", value.asInstanceOf[js.Any])
+    
+    inline def monthLabelsVarargs(value: String*): this.type = set("monthLabels", js.Array(value*))
+    
+    inline def numDays(value: Double): this.type = set("numDays", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: /* value */ Any => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: /* value */ Any) => value(t0).runNow()))
+    
+    inline def onMouseLeave(value: (/* e */ Any, /* value */ Any) => Callback): this.type = set("onMouseLeave", js.Any.fromFunction2((t0: /* e */ Any, t1: /* value */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def onMouseOver(value: (/* e */ Any, /* value */ Any) => Callback): this.type = set("onMouseOver", js.Any.fromFunction2((t0: /* e */ Any, t1: /* value */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def showMonthLabels(value: Boolean): this.type = set("showMonthLabels", value.asInstanceOf[js.Any])
+    
+    inline def showOutOfRangeDays(value: Boolean): this.type = set("showOutOfRangeDays", value.asInstanceOf[js.Any])
+    
+    inline def showWeekdayLabels(value: Boolean): this.type = set("showWeekdayLabels", value.asInstanceOf[js.Any])
+    
+    inline def startDate(value: String | Double | js.Date): this.type = set("startDate", value.asInstanceOf[js.Any])
+    
+    inline def titleForValue(value: /* value */ Any => Any): this.type = set("titleForValue", js.Any.fromFunction1(value))
+    
+    inline def tooltipDataAttrs(value: js.Object): this.type = set("tooltipDataAttrs", value.asInstanceOf[js.Any])
+    
+    inline def transformDayElement(value: (/* rect */ Any, /* value */ Any, /* index */ Double) => Any): this.type = set("transformDayElement", js.Any.fromFunction3(value))
+    
+    inline def weekdayLabels(value: js.Array[String]): this.type = set("weekdayLabels", value.asInstanceOf[js.Any])
+    
+    inline def weekdayLabelsVarargs(value: String*): this.type = set("weekdayLabels", js.Array(value*))
+  }
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

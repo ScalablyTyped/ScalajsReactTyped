@@ -1,71 +1,36 @@
 package typingsJapgolly.xdgBasedir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xdg-basedir", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  /**
-  	Directory for user-specific non-essential data files.
-  	@example
-  	```js
-  	import xdgBasedir = require('xdg-basedir');
-  	xdgBasedir.cache;
-  	//=> '/home/sindresorhus/.cache'
-  	```
-  	*/
-  val cache: js.UndefOr[String] = js.native
-  /**
-  	Directory for user-specific configuration files.
-  	@example
-  	```js
-  	import xdgBasedir = require('xdg-basedir');
-  	xdgBasedir.config;
-  	//=> '/home/sindresorhus/.config'
-  	```
-  	*/
-  val config: js.UndefOr[String] = js.native
-  /**
-  	Preference-ordered array of base directories to search for configuration files in addition to `.config`.
-  	@example
-  	```js
-  	import xdgBasedir = require('xdg-basedir');
-  	xdgBasedir.configDirs;
-  	//=> ['/home/sindresorhus/.config', '/etc/xdg']
-  	```
-  	*/
-  val configDirs: js.Array[String] = js.native
-  /**
-  	Directory for user-specific data files.
-  	@example
-  	```js
-  	import xdgBasedir = require('xdg-basedir');
-  	xdgBasedir.data;
-  	//=> '/home/sindresorhus/.local/share'
-  	```
-  	*/
-  val data: js.UndefOr[String] = js.native
-  /**
-  	Preference-ordered array of base directories to search for data files in addition to `.data`.
-  	@example
-  	```js
-  	import xdgBasedir = require('xdg-basedir');
-  	xdgBasedir.dataDirs
-  	//=> ['/home/sindresorhus/.local/share', '/usr/local/share/', '/usr/share/']
-  	```
-  	*/
-  val dataDirs: js.Array[String] = js.native
-  /**
-  	Directory for user-specific non-essential runtime files and other file objects (such as sockets, named pipes, etc).
-  	@example
-  	```js
-  	import xdgBasedir = require('xdg-basedir');
-  	xdgBasedir.runtime;
-  	//=> '/run/user/sindresorhus'
-  	```
-  	*/
-  val runtime: js.UndefOr[String] = js.native
+object mod {
+  
+  @JSImport("xdg-basedir", "xdgCache")
+  @js.native
+  val xdgCache: js.UndefOr[String] = js.native
+  
+  @JSImport("xdg-basedir", "xdgConfig")
+  @js.native
+  val xdgConfig: js.UndefOr[String] = js.native
+  
+  @JSImport("xdg-basedir", "xdgConfigDirectories")
+  @js.native
+  val xdgConfigDirectories: js.Array[String] = js.native
+  
+  @JSImport("xdg-basedir", "xdgData")
+  @js.native
+  val xdgData: js.UndefOr[String] = js.native
+  
+  @JSImport("xdg-basedir", "xdgDataDirectories")
+  @js.native
+  val xdgDataDirectories: js.Array[String] = js.native
+  
+  @JSImport("xdg-basedir", "xdgRuntime")
+  @js.native
+  val xdgRuntime: js.UndefOr[String] = js.native
+  
+  @JSImport("xdg-basedir", "xdgState")
+  @js.native
+  val xdgState: js.UndefOr[String] = js.native
 }
-

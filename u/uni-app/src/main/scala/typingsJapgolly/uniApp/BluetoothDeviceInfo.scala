@@ -1,60 +1,87 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BluetoothDeviceInfo extends js.Object {
+trait BluetoothDeviceInfo extends StObject {
+  
   /**
     * 当前蓝牙设备的信号强度
     */
   var RSSI: js.UndefOr[Double] = js.undefined
+  
   /**
     * 当前蓝牙设备的广播数据段中的ManufacturerData数据段 （注意：vConsole 无法打印出 ArrayBuffer 类型数据）
     */
-  var advertisData: js.UndefOr[js.Array[_]] = js.undefined
+  var advertisData: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
     * 当前蓝牙设备的广播数据段中的ServiceUUIDs数据段
     */
-  var advertisServiceUUIDs: js.UndefOr[js.Array[_]] = js.undefined
+  var advertisServiceUUIDs: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
     * 用于区分设备的 id
     */
   var deviceId: js.UndefOr[String] = js.undefined
+  
   /**
     * 当前蓝牙设备的广播数据段中的LocalName数据段
     */
   var localName: js.UndefOr[String] = js.undefined
+  
   /**
     * 蓝牙设备名称，某些设备可能没有
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * 当前蓝牙设备的广播数据段中的ServiceData数据段
     */
-  var serviceData: js.UndefOr[js.Array[_]] = js.undefined
+  var serviceData: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object BluetoothDeviceInfo {
-  @scala.inline
-  def apply(
-    RSSI: Int | Double = null,
-    advertisData: js.Array[_] = null,
-    advertisServiceUUIDs: js.Array[_] = null,
-    deviceId: String = null,
-    localName: String = null,
-    name: String = null,
-    serviceData: js.Array[_] = null
-  ): BluetoothDeviceInfo = {
+  
+  inline def apply(): BluetoothDeviceInfo = {
     val __obj = js.Dynamic.literal()
-    if (RSSI != null) __obj.updateDynamic("RSSI")(RSSI.asInstanceOf[js.Any])
-    if (advertisData != null) __obj.updateDynamic("advertisData")(advertisData.asInstanceOf[js.Any])
-    if (advertisServiceUUIDs != null) __obj.updateDynamic("advertisServiceUUIDs")(advertisServiceUUIDs.asInstanceOf[js.Any])
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    if (localName != null) __obj.updateDynamic("localName")(localName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (serviceData != null) __obj.updateDynamic("serviceData")(serviceData.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothDeviceInfo]
   }
+  
+  extension [Self <: BluetoothDeviceInfo](x: Self) {
+    
+    inline def setAdvertisData(value: js.Array[Any]): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
+    
+    inline def setAdvertisDataUndefined: Self = StObject.set(x, "advertisData", js.undefined)
+    
+    inline def setAdvertisDataVarargs(value: Any*): Self = StObject.set(x, "advertisData", js.Array(value*))
+    
+    inline def setAdvertisServiceUUIDs(value: js.Array[Any]): Self = StObject.set(x, "advertisServiceUUIDs", value.asInstanceOf[js.Any])
+    
+    inline def setAdvertisServiceUUIDsUndefined: Self = StObject.set(x, "advertisServiceUUIDs", js.undefined)
+    
+    inline def setAdvertisServiceUUIDsVarargs(value: Any*): Self = StObject.set(x, "advertisServiceUUIDs", js.Array(value*))
+    
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    
+    inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+    
+    inline def setLocalNameUndefined: Self = StObject.set(x, "localName", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRSSI(value: Double): Self = StObject.set(x, "RSSI", value.asInstanceOf[js.Any])
+    
+    inline def setRSSIUndefined: Self = StObject.set(x, "RSSI", js.undefined)
+    
+    inline def setServiceData(value: js.Array[Any]): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
+    
+    inline def setServiceDataUndefined: Self = StObject.set(x, "serviceData", js.undefined)
+    
+    inline def setServiceDataVarargs(value: Any*): Self = StObject.set(x, "serviceData", js.Array(value*))
+  }
 }
-

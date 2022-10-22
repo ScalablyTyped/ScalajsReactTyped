@@ -1,46 +1,46 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartSeriesBy extends js.Object
-
+sealed trait ChartSeriesBy extends StObject
 /**
+  * Specifies whether the series are by rows or by columns. In Excel on desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns. In Excel on the web, "auto" will simply default to "columns".
   *
-  * Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
-  *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartSeriesBy")
 @js.native
-object ChartSeriesBy extends js.Object {
+object ChartSeriesBy extends StObject {
+  
   /**
-    *
-    * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
-    *
+    * In Excel on desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns. In Excel on the web, "auto" will simply default to "columns".
+    * @remarks
+    * [Api set: ExcelApi 1.1]
     */
   @js.native
-  sealed trait auto extends ChartSeriesBy
+  sealed trait auto
+    extends StObject
+       with ChartSeriesBy
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait columns extends ChartSeriesBy
+  sealed trait columns
+    extends StObject
+       with ChartSeriesBy
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait rows extends ChartSeriesBy
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartSeriesBy with String] = js.native
-  /* "Auto" */ @js.native
-  object auto extends TopLevel[auto with String]
-  
-  /* "Columns" */ @js.native
-  object columns extends TopLevel[columns with String]
-  
-  /* "Rows" */ @js.native
-  object rows extends TopLevel[rows with String]
-  
+  sealed trait rows
+    extends StObject
+       with ChartSeriesBy
 }
-

@@ -1,15 +1,16 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lists the media files. Is the layout for MediaListDef.
   *
   * Note: This struct is deprecated.
   */
-trait IMediaList extends js.Object {
+trait IMediaList extends StObject {
+  
   /**
     * Information about the list of media files.
     * In Qlik Sense Desktop, the media files are retrieved from:
@@ -22,13 +23,17 @@ trait IMediaList extends js.Object {
     */
   var qItems: js.Array[IMediaListItem]
 }
-
 object IMediaList {
-  @scala.inline
-  def apply(qItems: js.Array[IMediaListItem]): IMediaList = {
-    val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
   
+  inline def apply(qItems: js.Array[IMediaListItem]): IMediaList = {
+    val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMediaList]
   }
+  
+  extension [Self <: IMediaList](x: Self) {
+    
+    inline def setQItems(value: js.Array[IMediaListItem]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
+    
+    inline def setQItemsVarargs(value: IMediaListItem*): Self = StObject.set(x, "qItems", js.Array(value*))
+  }
 }
-

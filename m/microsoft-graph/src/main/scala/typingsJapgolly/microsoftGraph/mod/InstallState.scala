@@ -2,9 +2,9 @@ package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.failed_
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.notApplicable
@@ -14,22 +14,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.uninstallFailed
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
 */
-trait InstallState extends js.Object
-
+trait InstallState extends StObject
 object InstallState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def failed: failed_ = this.cast("failed")
-  @scala.inline
-  def installed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.installed = this.cast("installed")
-  @scala.inline
-  def notApplicable: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notApplicable = this.cast("notApplicable")
-  @scala.inline
-  def notInstalled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notInstalled = this.cast("notInstalled")
-  @scala.inline
-  def uninstallFailed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.uninstallFailed = this.cast("uninstallFailed")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  
+  inline def failed: failed_ = "failed".asInstanceOf[failed_]
+  
+  inline def installed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.installed = "installed".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.installed]
+  
+  inline def notApplicable: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notApplicable = "notApplicable".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notApplicable]
+  
+  inline def notInstalled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notInstalled = "notInstalled".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notInstalled]
+  
+  inline def uninstallFailed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.uninstallFailed = "uninstallFailed".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.uninstallFailed]
+  
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
-

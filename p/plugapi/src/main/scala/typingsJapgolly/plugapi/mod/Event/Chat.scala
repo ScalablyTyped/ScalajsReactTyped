@@ -2,26 +2,32 @@ package typingsJapgolly.plugapi.mod.Event
 
 import typingsJapgolly.plugapi.mod.RawChatMessage
 import typingsJapgolly.plugapi.mod.User.User
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Chat extends js.Object {
+trait Chat extends StObject {
+  
   var from: User
+  
   var id: String
-  var mentions: js.Array[_]
+  
+  var mentions: js.Array[Any]
+  
   var message: String
+  
   var muted: Boolean
+  
   var raw: RawChatMessage
+  
   var `type`: String
 }
-
 object Chat {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     from: User,
     id: String,
-    mentions: js.Array[_],
+    mentions: js.Array[Any],
     message: String,
     muted: Boolean,
     raw: RawChatMessage,
@@ -31,5 +37,23 @@ object Chat {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chat]
   }
+  
+  extension [Self <: Chat](x: Self) {
+    
+    inline def setFrom(value: User): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setMentions(value: js.Array[Any]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
+    
+    inline def setMentionsVarargs(value: Any*): Self = StObject.set(x, "mentions", js.Array(value*))
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    
+    inline def setRaw(value: RawChatMessage): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

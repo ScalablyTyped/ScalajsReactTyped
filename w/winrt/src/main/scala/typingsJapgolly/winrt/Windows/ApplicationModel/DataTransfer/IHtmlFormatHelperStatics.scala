@@ -1,22 +1,26 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.DataTransfer
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IHtmlFormatHelperStatics extends js.Object {
+trait IHtmlFormatHelperStatics extends StObject {
+  
   def createHtmlFormat(htmlFragment: String): String
+  
   def getStaticFragment(htmlFormat: String): String
 }
-
 object IHtmlFormatHelperStatics {
-  @scala.inline
-  def apply(createHtmlFormat: String => CallbackTo[String], getStaticFragment: String => CallbackTo[String]): IHtmlFormatHelperStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createHtmlFormat")(js.Any.fromFunction1((t0: java.lang.String) => createHtmlFormat(t0).runNow()))
-    __obj.updateDynamic("getStaticFragment")(js.Any.fromFunction1((t0: java.lang.String) => getStaticFragment(t0).runNow()))
+  
+  inline def apply(createHtmlFormat: String => String, getStaticFragment: String => String): IHtmlFormatHelperStatics = {
+    val __obj = js.Dynamic.literal(createHtmlFormat = js.Any.fromFunction1(createHtmlFormat), getStaticFragment = js.Any.fromFunction1(getStaticFragment))
     __obj.asInstanceOf[IHtmlFormatHelperStatics]
   }
+  
+  extension [Self <: IHtmlFormatHelperStatics](x: Self) {
+    
+    inline def setCreateHtmlFormat(value: String => String): Self = StObject.set(x, "createHtmlFormat", js.Any.fromFunction1(value))
+    
+    inline def setGetStaticFragment(value: String => String): Self = StObject.set(x, "getStaticFragment", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,11 +1,10 @@
 package typingsJapgolly.xmldsigjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs", "Sha1")
 @js.native
-class Sha1 ()
-  extends typingsJapgolly.xmldsigjs.rsaHashMod.Sha1
-
+open class Sha1 ()
+  extends typingsJapgolly.xmldsigjs.buildTypesAlgorithmsMod.Sha1

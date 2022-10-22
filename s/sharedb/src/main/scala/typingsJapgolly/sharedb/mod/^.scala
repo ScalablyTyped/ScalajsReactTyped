@@ -1,20 +1,15 @@
 package typingsJapgolly.sharedb.mod
 
-import typingsJapgolly.sharedb.AnonDb
-import typingsJapgolly.sharedb.AnonRegister
+import typingsJapgolly.sharedb.anon.Db
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sharedb", JSImport.Namespace)
 @js.native
-class ^ () extends sharedb {
-  def this(options: AnonDb) = this()
+open class ^ () extends sharedb {
+  def this(options: Db) = this()
 }
-
 @JSImport("sharedb", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  var types: AnonRegister = js.native
-}
-
+object ^ extends StObject

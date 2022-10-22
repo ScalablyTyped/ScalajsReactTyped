@@ -1,22 +1,29 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The SVGGradient interface is a base interface used by SVGLinearGradientElement and SVGRadialGradientElement. */
 @js.native
 trait SVGGradientElement
-  extends SVGElement
+  extends StObject
+     with SVGElement
      with SVGURIReference {
+  
+  /* standard dom */
   val SVG_SPREADMETHOD_PAD: Double = js.native
+  
+  /* standard dom */
   val SVG_SPREADMETHOD_REFLECT: Double = js.native
+  
+  /* standard dom */
   val SVG_SPREADMETHOD_REPEAT: Double = js.native
+  
+  /* standard dom */
   val SVG_SPREADMETHOD_UNKNOWN: Double = js.native
-  val gradientTransform: org.scalajs.dom.raw.SVGAnimatedTransformList = js.native
-  val gradientUnits: org.scalajs.dom.raw.SVGAnimatedEnumeration = js.native
-  val spreadMethod: org.scalajs.dom.raw.SVGAnimatedEnumeration = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -27,24 +34,25 @@ trait SVGGradientElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  /* standard dom */
+  val gradientTransform: org.scalajs.dom.SVGAnimatedTransformList = js.native
+  
+  /* standard dom */
+  val gradientUnits: org.scalajs.dom.SVGAnimatedEnumeration = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,
     listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
+    options: org.scalajs.dom.EventListenerOptions
   ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  
+  /* standard dom */
+  val spreadMethod: org.scalajs.dom.SVGAnimatedEnumeration = js.native
 }
-
-@JSGlobal("SVGGradientElement")
-@js.native
-object SVGGradientElement extends Instantiable0[SVGGradientElement] {
-  val SVG_SPREADMETHOD_PAD: Double = js.native
-  val SVG_SPREADMETHOD_REFLECT: Double = js.native
-  val SVG_SPREADMETHOD_REPEAT: Double = js.native
-  val SVG_SPREADMETHOD_UNKNOWN: Double = js.native
-}
-

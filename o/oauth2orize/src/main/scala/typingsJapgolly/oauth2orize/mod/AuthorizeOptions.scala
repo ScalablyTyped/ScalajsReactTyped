@@ -1,21 +1,30 @@
 package typingsJapgolly.oauth2orize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AuthorizeOptions extends js.Object {
+trait AuthorizeOptions extends StObject {
+  
   var idLength: js.UndefOr[Double] = js.undefined
+  
   var sessionKey: js.UndefOr[String] = js.undefined
 }
-
 object AuthorizeOptions {
-  @scala.inline
-  def apply(idLength: Int | Double = null, sessionKey: String = null): AuthorizeOptions = {
+  
+  inline def apply(): AuthorizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (idLength != null) __obj.updateDynamic("idLength")(idLength.asInstanceOf[js.Any])
-    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeOptions]
   }
+  
+  extension [Self <: AuthorizeOptions](x: Self) {
+    
+    inline def setIdLength(value: Double): Self = StObject.set(x, "idLength", value.asInstanceOf[js.Any])
+    
+    inline def setIdLengthUndefined: Self = StObject.set(x, "idLength", js.undefined)
+    
+    inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
+    
+    inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
+  }
 }
-

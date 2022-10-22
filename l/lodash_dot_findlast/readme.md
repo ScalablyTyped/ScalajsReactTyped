@@ -10,10 +10,10 @@ The lodash method `_.findLast` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.findlast |
 | Keywords           | lodash-modularized, findlast |
-| # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 232199 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 192370.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

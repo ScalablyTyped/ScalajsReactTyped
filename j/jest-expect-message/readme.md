@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-expect-message
 
-Typings are for version 1.0
+Typings are for version 1.1.3
 
 ## Library description:
 Add custom message to Jest expects
@@ -11,9 +11,9 @@ Add custom message to Jest expects
 | Full name          | jest-expect-message |
 | Keywords           | jest, expect, message, matchers, assertions, test |
 | # releases         | 5 |
-| # dependents       | 9 |
-| # downloads        | 706375 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 597845.0 |
+| # stars            | 303.0 |
 
 ## Links
 - [Homepage](https://github.com/mattphillips/jest-expect-message#readme)
@@ -24,7 +24,7 @@ Add custom message to Jest expects
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

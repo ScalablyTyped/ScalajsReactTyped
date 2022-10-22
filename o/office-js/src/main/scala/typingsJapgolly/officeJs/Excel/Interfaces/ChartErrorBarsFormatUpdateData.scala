@@ -1,26 +1,31 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartErrorBarsFormat object, for use in `chartErrorBarsFormat.set({ ... })`. */
-trait ChartErrorBarsFormatUpdateData extends js.Object {
+trait ChartErrorBarsFormatUpdateData extends StObject {
+  
   /**
-    *
     * Represents the chart line formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var line: js.UndefOr[ChartLineFormatUpdateData] = js.undefined
 }
-
 object ChartErrorBarsFormatUpdateData {
-  @scala.inline
-  def apply(line: ChartLineFormatUpdateData = null): ChartErrorBarsFormatUpdateData = {
+  
+  inline def apply(): ChartErrorBarsFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartErrorBarsFormatUpdateData]
   }
+  
+  extension [Self <: ChartErrorBarsFormatUpdateData](x: Self) {
+    
+    inline def setLine(value: ChartLineFormatUpdateData): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+  }
 }
-

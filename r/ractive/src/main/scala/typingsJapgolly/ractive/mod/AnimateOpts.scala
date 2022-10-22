@@ -1,44 +1,63 @@
 package typingsJapgolly.ractive.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnimateOpts extends js.Object {
+trait AnimateOpts extends StObject {
+  
   /** This is called when the animation is complete.
   	 * @param value the final value of the animation
   	 */
-  var complete: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+  var complete: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
+  
   /** The duration for the transition in milliseconds. */
   var duration: js.UndefOr[Double] = js.undefined
+  
   /** An easing name e.g. 'ease' or an easing function. */
   var easing: js.UndefOr[String | Easing] = js.undefined
+  
   /** An interpolator name or function. */
   var interpolator: js.UndefOr[String | Interpolator] = js.undefined
+  
   /** This is called when an animation frame is applied.
   	 * @param time the current time code as a number between 0 and 1
   	 * @param value the value computed for the current time code
   	 */
-  var step: js.UndefOr[js.Function2[/* time */ Double, /* value */ js.Any, Unit]] = js.undefined
+  var step: js.UndefOr[js.Function2[/* time */ Double, /* value */ Any, Unit]] = js.undefined
 }
-
 object AnimateOpts {
-  @scala.inline
-  def apply(
-    complete: /* value */ js.Any => Callback = null,
-    duration: Int | Double = null,
-    easing: String | Easing = null,
-    interpolator: String | Interpolator = null,
-    step: (/* time */ Double, /* value */ js.Any) => Callback = null
-  ): AnimateOpts = {
+  
+  inline def apply(): AnimateOpts = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* value */ js.Any) => complete(t0).runNow()))
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (interpolator != null) __obj.updateDynamic("interpolator")(interpolator.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(js.Any.fromFunction2((t0: /* time */ scala.Double, t1: /* value */ js.Any) => step(t0, t1).runNow()))
     __obj.asInstanceOf[AnimateOpts]
   }
+  
+  extension [Self <: AnimateOpts](x: Self) {
+    
+    inline def setComplete(value: /* value */ Any => Callback): Self = StObject.set(x, "complete", js.Any.fromFunction1((t0: /* value */ Any) => value(t0).runNow()))
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEasing(value: String | Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    
+    inline def setEasingFunction1(value: /* time */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    
+    inline def setInterpolator(value: String | Interpolator): Self = StObject.set(x, "interpolator", value.asInstanceOf[js.Any])
+    
+    inline def setInterpolatorFunction2(value: (/* from */ Any, /* to */ Any) => js.Function1[/* t */ Double, Any]): Self = StObject.set(x, "interpolator", js.Any.fromFunction2(value))
+    
+    inline def setInterpolatorUndefined: Self = StObject.set(x, "interpolator", js.undefined)
+    
+    inline def setStep(value: (/* time */ Double, /* value */ Any) => Callback): Self = StObject.set(x, "step", js.Any.fromFunction2((t0: /* time */ Double, t1: /* value */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+  }
 }
-

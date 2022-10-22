@@ -1,23 +1,42 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "QuestionImplementor")
 @js.native
-class QuestionImplementor protected () extends ImplementorBase {
-  def this(question: Question) = this()
-  var koElementType: js.Any = js.native
-  var koTemplateName: js.Any = js.native
-  var question: Question = js.native
-  /* protected */ def getKoValue(): js.Any = js.native
+open class QuestionImplementor protected () extends ImplementorBase {
+  def this(question: Any) = this()
+  
+  var _koValue: Any = js.native
+  
+  var callBackFunctions: Any = js.native
+  
+  var disposedObjects: Any = js.native
+  
+  /* protected */ def getKoValue(): Any = js.native
+  
   /* protected */ def getNo(): String = js.native
+  
   /* protected */ def getQuestionTemplate(): String = js.native
-  /* protected */ def koQuestionAfterRender(elements: js.Any, con: js.Any): Unit = js.native
+  
+  var koDummy: Any = js.native
+  
+  var koElementType: Any = js.native
+  
+  /* protected */ def koQuestionAfterRender(elements: Any, con: Any): Unit = js.native
+  
   /* protected */ def onSurveyLoad(): Unit = js.native
-  /* protected */ def onVisibleIndexChanged(): Unit = js.native
+  
+  var question: Any = js.native
+  
+  /* protected */ def setCallbackFunc(name: String, func: Any): Unit = js.native
+  
+  /* protected */ def setKoValue(`val`: Any): Unit = js.native
+  
+  /* protected */ def setObservaleObj(name: String, obj: Any): Any = js.native
+  /* protected */ def setObservaleObj(name: String, obj: Any, addToQuestion: Boolean): Any = js.native
+  
   /* protected */ def updateKoDummy(): Unit = js.native
-  /* protected */ def updateQuestion(): Unit = js.native
 }
-

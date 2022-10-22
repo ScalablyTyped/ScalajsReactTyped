@@ -10,10 +10,10 @@ An implementation of WHATWG AbortController interface.
 | ------------------ | :-------------: |
 | Full name          | abort-controller |
 | Keywords           | w3c, whatwg, event, events, abort, cancel, abortcontroller, abortsignal, controller, signal, shim |
-| # releases         | 10 |
-| # dependents       | 110 |
-| # downloads        | 61390549 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0467910666666668E7 |
+| # stars            | 277.0 |
 
 ## Links
 - [Homepage](https://github.com/mysticatea/abort-controller#readme)

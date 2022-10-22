@@ -1,21 +1,31 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCSessionDescriptionInit extends js.Object {
+trait RTCSessionDescriptionInit extends StObject {
+  
+  /* standard dom */
   var sdp: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: js.UndefOr[org.scalajs.dom.experimental.webrtc.RTCSdpType] = js.undefined
+  
+  /* standard dom */
+  var `type`: org.scalajs.dom.RTCSdpType
 }
-
 object RTCSessionDescriptionInit {
-  @scala.inline
-  def apply(sdp: java.lang.String = null, `type`: org.scalajs.dom.experimental.webrtc.RTCSdpType = null): RTCSessionDescriptionInit = {
+  
+  inline def apply(`type`: org.scalajs.dom.RTCSdpType): RTCSessionDescriptionInit = {
     val __obj = js.Dynamic.literal()
-    if (sdp != null) __obj.updateDynamic("sdp")(sdp.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCSessionDescriptionInit]
   }
+  
+  extension [Self <: RTCSessionDescriptionInit](x: Self) {
+    
+    inline def setSdp(value: java.lang.String): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
+    
+    inline def setSdpUndefined: Self = StObject.set(x, "sdp", js.undefined)
+    
+    inline def setType(value: org.scalajs.dom.RTCSdpType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

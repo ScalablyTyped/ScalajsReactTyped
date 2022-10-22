@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Import
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhotoImportImportMode extends js.Object
-
+sealed trait PhotoImportImportMode extends StObject
 /** Specifies the types of files that are included in an import operation. */
 @JSGlobal("Windows.Media.Import.PhotoImportImportMode")
 @js.native
-object PhotoImportImportMode extends js.Object {
+object PhotoImportImportMode extends StObject {
+  
   /** Sibling files are ignored. */
   @js.native
-  sealed trait ignoreSiblings extends PhotoImportImportMode
+  sealed trait ignoreSiblings
+    extends StObject
+       with PhotoImportImportMode
   
   /** Sidecar files are ignored. */
   @js.native
-  sealed trait ignoreSidecars extends PhotoImportImportMode
+  sealed trait ignoreSidecars
+    extends StObject
+       with PhotoImportImportMode
   
   /** Sidecar files and sibling files are ignored. */
   @js.native
-  sealed trait ignoreSidecarsAndSiblings extends PhotoImportImportMode
+  sealed trait ignoreSidecarsAndSiblings
+    extends StObject
+       with PhotoImportImportMode
   
   /** All files are imported. */
   @js.native
-  sealed trait importEverything extends PhotoImportImportMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhotoImportImportMode with Double] = js.native
-  /* 2 */ @js.native
-  object ignoreSiblings extends TopLevel[ignoreSiblings with Double]
-  
-  /* 1 */ @js.native
-  object ignoreSidecars extends TopLevel[ignoreSidecars with Double]
-  
-  /* 3 */ @js.native
-  object ignoreSidecarsAndSiblings extends TopLevel[ignoreSidecarsAndSiblings with Double]
-  
-  /* 0 */ @js.native
-  object importEverything extends TopLevel[importEverything with Double]
-  
+  sealed trait importEverything
+    extends StObject
+       with PhotoImportImportMode
 }
-

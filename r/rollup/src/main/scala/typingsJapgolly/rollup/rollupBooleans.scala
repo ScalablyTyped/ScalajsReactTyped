@@ -1,20 +1,21 @@
 package typingsJapgolly.rollup
 
+import typingsJapgolly.rollup.mod.PreserveEntrySignaturesOption
 import typingsJapgolly.rollup.mod._ResolveIdResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rollupBooleans {
-  @js.native
-  sealed trait `false` extends _ResolveIdResult
   
   @js.native
-  sealed trait `true` extends js.Object
+  sealed trait `false`
+    extends StObject
+       with PreserveEntrySignaturesOption
+       with _ResolveIdResult
+  inline def `false`: `false` = false.asInstanceOf[`false`]
   
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+  @js.native
+  sealed trait `true` extends StObject
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }
-

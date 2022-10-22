@@ -1,25 +1,19 @@
 package typingsJapgolly.winrtUwp.Windows.Media
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SystemMediaTransportControlsProperty extends js.Object
-
+sealed trait SystemMediaTransportControlsProperty extends StObject
 /** Defines values for the properties on the SystemMediaTransportControls . */
 @JSGlobal("Windows.Media.SystemMediaTransportControlsProperty")
 @js.native
-object SystemMediaTransportControlsProperty extends js.Object {
+object SystemMediaTransportControlsProperty extends StObject {
+  
   /** The sound level property. */
   @js.native
-  sealed trait soundLevel extends SystemMediaTransportControlsProperty
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SystemMediaTransportControlsProperty with Double] = js.native
-  /* 0 */ @js.native
-  object soundLevel extends TopLevel[soundLevel with Double]
-  
+  sealed trait soundLevel
+    extends StObject
+       with SystemMediaTransportControlsProperty
 }
-

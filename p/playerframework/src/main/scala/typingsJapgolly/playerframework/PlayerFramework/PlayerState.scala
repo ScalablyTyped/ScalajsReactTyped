@@ -1,107 +1,92 @@
 package typingsJapgolly.playerframework.PlayerFramework
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PlayerState extends js.Object
-
+sealed trait PlayerState extends StObject
 @JSGlobal("PlayerFramework.PlayerState")
 @js.native
-object PlayerState extends js.Object {
-  /**
-  		* The media has ended.
-  		**/
-  @js.native
-  sealed trait ended extends PlayerState
+object PlayerState extends StObject {
   
   /**
-  		* The media has finished, but the player is still executing ending operations.
-  		**/
+    * The media has ended.
+    **/
   @js.native
-  sealed trait ending extends PlayerState
+  sealed trait ended
+    extends StObject
+       with PlayerState
   
   /**
-  		* The media has failed and the player must be reloaded.
-  		**/
+    * The media has finished, but the player is still executing ending operations.
+    **/
   @js.native
-  sealed trait failed extends PlayerState
+  sealed trait ending
+    extends StObject
+       with PlayerState
   
   /**
-  		* The media has finished loading, but has not been opened yet.
-  		**/
+    * The media has failed and the player must be reloaded.
+    **/
   @js.native
-  sealed trait loaded extends PlayerState
+  sealed trait failed
+    extends StObject
+       with PlayerState
   
   /**
-  		* The media source is set, but the player is still executing loading operations.
-  		**/
+    * The media has finished loading, but has not been opened yet.
+    **/
   @js.native
-  sealed trait loading extends PlayerState
+  sealed trait loaded
+    extends StObject
+       with PlayerState
   
   /**
-  		* The media can be played.
-  		**/
+    * The media source is set, but the player is still executing loading operations.
+    **/
   @js.native
-  sealed trait opened extends PlayerState
+  sealed trait loading
+    extends StObject
+       with PlayerState
   
   /**
-  		* The media source is set and the player is waiting to load the media (e.g. autoload is false).
-  		**/
+    * The media can be played.
+    **/
   @js.native
-  sealed trait pending extends PlayerState
+  sealed trait opened
+    extends StObject
+       with PlayerState
   
   /**
-  		* The media has been started and the player is either playing or paused.
-  		**/
+    * The media source is set and the player is waiting to load the media (e.g. autoload is false).
+    **/
   @js.native
-  sealed trait started extends PlayerState
+  sealed trait pending
+    extends StObject
+       with PlayerState
   
   /**
-  		* The media has been told to start playing, but the player is still executing starting operations.
-  		**/
+    * The media has been started and the player is either playing or paused.
+    **/
   @js.native
-  sealed trait starting extends PlayerState
+  sealed trait started
+    extends StObject
+       with PlayerState
   
   /**
-  		* The player is unloaded and no media source is set.
-  		**/
+    * The media has been told to start playing, but the player is still executing starting operations.
+    **/
   @js.native
-  sealed trait unloaded extends PlayerState
+  sealed trait starting
+    extends StObject
+       with PlayerState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PlayerState with Double] = js.native
-  /* 8 */ @js.native
-  object ended extends TopLevel[ended with Double]
-  
-  /* 7 */ @js.native
-  object ending extends TopLevel[ending with Double]
-  
-  /* 9 */ @js.native
-  object failed extends TopLevel[failed with Double]
-  
-  /* 3 */ @js.native
-  object loaded extends TopLevel[loaded with Double]
-  
-  /* 2 */ @js.native
-  object loading extends TopLevel[loading with Double]
-  
-  /* 4 */ @js.native
-  object opened extends TopLevel[opened with Double]
-  
-  /* 1 */ @js.native
-  object pending extends TopLevel[pending with Double]
-  
-  /* 6 */ @js.native
-  object started extends TopLevel[started with Double]
-  
-  /* 5 */ @js.native
-  object starting extends TopLevel[starting with Double]
-  
-  /* 0 */ @js.native
-  object unloaded extends TopLevel[unloaded with Double]
-  
+  /**
+    * The player is unloaded and no media source is set.
+    **/
+  @js.native
+  sealed trait unloaded
+    extends StObject
+       with PlayerState
 }
-

@@ -1,41 +1,39 @@
 package typingsJapgolly.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RelatedContentAccess extends js.Object
-
+sealed trait RelatedContentAccess extends StObject
 @JSImport("evernote", "Types.RelatedContentAccess")
 @js.native
-object RelatedContentAccess extends js.Object {
-  @js.native
-  sealed trait DIRECT_LINK_ACCESS_OK extends RelatedContentAccess
-  
-  @js.native
-  sealed trait DIRECT_LINK_EMBEDDED_VIEW extends RelatedContentAccess
-  
-  @js.native
-  sealed trait DIRECT_LINK_LOGIN_REQUIRED extends RelatedContentAccess
-  
-  @js.native
-  sealed trait NOT_ACCESSIBLE extends RelatedContentAccess
+object RelatedContentAccess extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RelatedContentAccess with Double] = js.native
-  /* 1 */ @js.native
-  object DIRECT_LINK_ACCESS_OK extends TopLevel[DIRECT_LINK_ACCESS_OK with Double]
+  def apply(value: Double): js.UndefOr[RelatedContentAccess & Double] = js.native
   
-  /* 3 */ @js.native
-  object DIRECT_LINK_EMBEDDED_VIEW extends TopLevel[DIRECT_LINK_EMBEDDED_VIEW with Double]
+  @js.native
+  sealed trait DIRECT_LINK_ACCESS_OK
+    extends StObject
+       with RelatedContentAccess
+  /* 1 */ val DIRECT_LINK_ACCESS_OK: typingsJapgolly.evernote.mod.Types.RelatedContentAccess.DIRECT_LINK_ACCESS_OK & Double = js.native
   
-  /* 2 */ @js.native
-  object DIRECT_LINK_LOGIN_REQUIRED extends TopLevel[DIRECT_LINK_LOGIN_REQUIRED with Double]
+  @js.native
+  sealed trait DIRECT_LINK_EMBEDDED_VIEW
+    extends StObject
+       with RelatedContentAccess
+  /* 3 */ val DIRECT_LINK_EMBEDDED_VIEW: typingsJapgolly.evernote.mod.Types.RelatedContentAccess.DIRECT_LINK_EMBEDDED_VIEW & Double = js.native
   
-  /* 0 */ @js.native
-  object NOT_ACCESSIBLE extends TopLevel[NOT_ACCESSIBLE with Double]
+  @js.native
+  sealed trait DIRECT_LINK_LOGIN_REQUIRED
+    extends StObject
+       with RelatedContentAccess
+  /* 2 */ val DIRECT_LINK_LOGIN_REQUIRED: typingsJapgolly.evernote.mod.Types.RelatedContentAccess.DIRECT_LINK_LOGIN_REQUIRED & Double = js.native
   
+  @js.native
+  sealed trait NOT_ACCESSIBLE
+    extends StObject
+       with RelatedContentAccess
+  /* 0 */ val NOT_ACCESSIBLE: typingsJapgolly.evernote.mod.Types.RelatedContentAccess.NOT_ACCESSIBLE & Double = js.native
 }
-

@@ -1,23 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EmailAddress extends js.Object {
+trait EmailAddress extends StObject {
+  
   // The email address of the person or entity.
-  var address: js.UndefOr[String] = js.undefined
+  var address: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The display name of the person or entity.
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object EmailAddress {
-  @scala.inline
-  def apply(address: String = null, name: String = null): EmailAddress = {
+  
+  inline def apply(): EmailAddress = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailAddress]
   }
+  
+  extension [Self <: EmailAddress](x: Self) {
+    
+    inline def setAddress(value: NullableOption[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressNull: Self = StObject.set(x, "address", null)
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

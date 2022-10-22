@@ -1,53 +1,60 @@
 package typingsJapgolly.mendixmodelsdk.mod.pages
 
-import typingsJapgolly.mendixmodelsdk.baseModelMod.IModel
-import typingsJapgolly.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit
-import typingsJapgolly.mendixmodelsdk.pagesMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typingsJapgolly.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.CustomWidget
+import typingsJapgolly.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "pages.ConditionalVisibilitySettings")
 @js.native
-class ConditionalVisibilitySettings protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.pages.ConditionalVisibilitySettings {
+open class ConditionalVisibilitySettings protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.pages.ConditionalVisibilitySettings {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "pages.ConditionalVisibilitySettings")
-@js.native
-object ConditionalVisibilitySettings extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object ConditionalVisibilitySettings {
+  
+  @JSImport("mendixmodelsdk", "pages.ConditionalVisibilitySettings")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
-  def create(model: IModel): typingsJapgolly.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = js.native
+  /* static member */
+  inline def create(model: IModel): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
+  
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
     * The new ConditionalVisibilitySettings will be automatically stored in the 'conditionalVisibilitySettings' property
     * of the parent ConditionallyVisibleWidget element passed as argument.
     */
-  def createInConditionallyVisibleWidgetUnderConditionalVisibilitySettings(container: typingsJapgolly.mendixmodelsdk.pagesMod.pages.ConditionallyVisibleWidget): typingsJapgolly.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = js.native
+  /* static member */
+  inline def createInConditionallyVisibleWidgetUnderConditionalVisibilitySettings(container: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionallyVisibleWidget): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionallyVisibleWidgetUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
+  
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
     * The new ConditionalVisibilitySettings will be automatically stored in the 'conditionalVisibilitySettings' property
     * of the parent ControlBarButton element passed as argument.
     */
-  def createInControlBarButtonUnderConditionalVisibilitySettings(container: typingsJapgolly.mendixmodelsdk.pagesMod.pages.ControlBarButton): typingsJapgolly.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = js.native
+  /* static member */
+  inline def createInControlBarButtonUnderConditionalVisibilitySettings(container: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ControlBarButton): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
+  
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
     * The new ConditionalVisibilitySettings will be automatically stored in the 'conditionalVisibilitySettings' property
@@ -56,30 +63,50 @@ object ConditionalVisibilitySettings extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.1.0 and higher
     */
-  def createInCustomWidgetUnderConditionalVisibilitySettings(container: CustomWidget): typingsJapgolly.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = js.native
+  /* static member */
+  inline def createInCustomWidgetUnderConditionalVisibilitySettings(container: CustomWidget): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
+  
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
     * The new ConditionalVisibilitySettings will be automatically stored in the 'conditionalVisibilitySettings' property
     * of the parent LayoutGridRow element passed as argument.
     */
-  def createInLayoutGridRowUnderConditionalVisibilitySettings(container: typingsJapgolly.mendixmodelsdk.pagesMod.pages.LayoutGridRow): typingsJapgolly.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = js.native
+  /* static member */
+  inline def createInLayoutGridRowUnderConditionalVisibilitySettings(container: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridRow): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridRowUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
+  
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
     * The new ConditionalVisibilitySettings will be automatically stored in the 'conditionalVisibilitySettings' property
     * of the parent NavigationListItem element passed as argument.
     */
-  def createInNavigationListItemUnderConditionalVisibilitySettings(container: typingsJapgolly.mendixmodelsdk.pagesMod.pages.NavigationListItem): typingsJapgolly.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = js.native
+  /* static member */
+  inline def createInNavigationListItemUnderConditionalVisibilitySettings(container: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.NavigationListItem): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
+  
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
     * The new ConditionalVisibilitySettings will be automatically stored in the 'conditionalVisibilitySettings' property
     * of the parent TabPage element passed as argument.
     */
-  def createInTabPageUnderConditionalVisibilitySettings(container: typingsJapgolly.mendixmodelsdk.pagesMod.pages.TabPage): typingsJapgolly.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = js.native
+  /* static member */
+  inline def createInTabPageUnderConditionalVisibilitySettings(container: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.TabPage): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
+  
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
     * The new ConditionalVisibilitySettings will be automatically stored in the 'conditionalVisibilitySettings' property
     * of the parent TableRow element passed as argument.
     */
-  def createInTableRowUnderConditionalVisibilitySettings(container: typingsJapgolly.mendixmodelsdk.pagesMod.pages.TableRow): typingsJapgolly.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = js.native
+  /* static member */
+  inline def createInTableRowUnderConditionalVisibilitySettings(container: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.TableRow): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableRowUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ConditionalVisibilitySettings]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.ConditionalVisibilitySettings.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.ConditionalVisibilitySettings.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

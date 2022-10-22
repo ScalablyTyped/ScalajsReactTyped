@@ -1,17 +1,16 @@
 package typingsJapgolly.stormReactDiagrams.mod
 
-import typingsJapgolly.stormReactDiagrams.baseEntityMod.BaseListener
-import typingsJapgolly.stormReactDiagrams.baseModelMod.BaseModelListener
+import typingsJapgolly.stormReactDiagrams.distSrcBaseEntityMod.BaseListener
+import typingsJapgolly.stormReactDiagrams.distSrcModelsBaseModelMod.BaseModelListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("storm-react-diagrams", "AbstractFactory")
+/* note: abstract class */ @JSImport("storm-react-diagrams", "AbstractFactory")
 @js.native
-abstract class AbstractFactory[T /* <: typingsJapgolly.stormReactDiagrams.baseModelMod.BaseModel[
-typingsJapgolly.stormReactDiagrams.baseEntityMod.BaseEntity[BaseListener[_]], 
+open class AbstractFactory[T /* <: typingsJapgolly.stormReactDiagrams.distSrcModelsBaseModelMod.BaseModel[
+typingsJapgolly.stormReactDiagrams.distSrcBaseEntityMod.BaseEntity[BaseListener[Any]], 
 BaseModelListener] */] protected ()
-  extends typingsJapgolly.stormReactDiagrams.abstractFactoryMod.AbstractFactory[T] {
+  extends typingsJapgolly.stormReactDiagrams.distSrcFactoriesAbstractFactoryMod.AbstractFactory[T] {
   def this(name: String) = this()
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RadialGaugePointerItemCap extends js.Object {
+trait RadialGaugePointerItemCap extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var size: js.UndefOr[Double] = js.undefined
 }
-
 object RadialGaugePointerItemCap {
-  @scala.inline
-  def apply(color: String = null, size: Int | Double = null): RadialGaugePointerItemCap = {
+  
+  inline def apply(): RadialGaugePointerItemCap = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadialGaugePointerItemCap]
   }
+  
+  extension [Self <: RadialGaugePointerItemCap](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+  }
 }
-

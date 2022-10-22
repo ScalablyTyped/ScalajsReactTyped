@@ -1,33 +1,45 @@
 package typingsJapgolly.jqueryClientsidelogging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClientSideLoggingClientInfoObject extends js.Object {
+trait ClientSideLoggingClientInfoObject extends StObject {
+  
   var location: js.UndefOr[Boolean] = js.undefined
-  	//  The url to the page on which the error occurred.
+  
+  //  The url to the page on which the error occurred.
   var screen_size: js.UndefOr[Boolean] = js.undefined
-  	//  The size of the user's screen (different to the window size because the window might not be maximized)
+  
+  //  The size of the user's screen (different to the window size because the window might not be maximized)
   var user_agent: js.UndefOr[Boolean] = js.undefined
-  	//  The user agent string.
+  
+  //  The user agent string.
   var window_size: js.UndefOr[Boolean] = js.undefined
 }
-
 object ClientSideLoggingClientInfoObject {
-  @scala.inline
-  def apply(
-    location: js.UndefOr[Boolean] = js.undefined,
-    screen_size: js.UndefOr[Boolean] = js.undefined,
-    user_agent: js.UndefOr[Boolean] = js.undefined,
-    window_size: js.UndefOr[Boolean] = js.undefined
-  ): ClientSideLoggingClientInfoObject = {
+  
+  inline def apply(): ClientSideLoggingClientInfoObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(screen_size)) __obj.updateDynamic("screen_size")(screen_size.asInstanceOf[js.Any])
-    if (!js.isUndefined(user_agent)) __obj.updateDynamic("user_agent")(user_agent.asInstanceOf[js.Any])
-    if (!js.isUndefined(window_size)) __obj.updateDynamic("window_size")(window_size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientSideLoggingClientInfoObject]
   }
+  
+  extension [Self <: ClientSideLoggingClientInfoObject](x: Self) {
+    
+    inline def setLocation(value: Boolean): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setScreen_size(value: Boolean): Self = StObject.set(x, "screen_size", value.asInstanceOf[js.Any])
+    
+    inline def setScreen_sizeUndefined: Self = StObject.set(x, "screen_size", js.undefined)
+    
+    inline def setUser_agent(value: Boolean): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
+    
+    inline def setUser_agentUndefined: Self = StObject.set(x, "user_agent", js.undefined)
+    
+    inline def setWindow_size(value: Boolean): Self = StObject.set(x, "window_size", value.asInstanceOf[js.Any])
+    
+    inline def setWindow_sizeUndefined: Self = StObject.set(x, "window_size", js.undefined)
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-resolve
 
-Typings are for version 24.9.0
+Typings are for version 29.2.0
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-resolve |
 | Keywords           | - |
-| # releases         | 67 |
-| # dependents       | 1295 |
-| # downloads        | 286379388 |
-| # stars            | 0 |
+| # releases         | 71 |
+| # dependents       | 0.0 |
+| # downloads        | 9.652075933333333E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

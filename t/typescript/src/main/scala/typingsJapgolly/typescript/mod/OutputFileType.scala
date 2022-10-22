@@ -1,36 +1,33 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OutputFileType extends js.Object
-
+sealed trait OutputFileType extends StObject
 @JSImport("typescript", "OutputFileType")
 @js.native
-object OutputFileType extends js.Object {
-  @js.native
-  sealed trait Declaration extends OutputFileType
-  
-  @js.native
-  sealed trait JavaScript extends OutputFileType
-  
-  @js.native
-  sealed trait SourceMap extends OutputFileType
+object OutputFileType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[OutputFileType with Double] = js.native
-  /* 2 */ @js.native
-  object Declaration
-    extends TopLevel[typingsJapgolly.typescript.mod.OutputFileType.Declaration with Double]
+  def apply(value: Double): js.UndefOr[OutputFileType & Double] = js.native
   
-  /* 0 */ @js.native
-  object JavaScript extends TopLevel[JavaScript with Double]
+  @js.native
+  sealed trait Declaration
+    extends StObject
+       with OutputFileType
+  /* 2 */ val Declaration: typingsJapgolly.typescript.mod.OutputFileType.Declaration & Double = js.native
   
-  /* 1 */ @js.native
-  object SourceMap extends TopLevel[SourceMap with Double]
+  @js.native
+  sealed trait JavaScript
+    extends StObject
+       with OutputFileType
+  /* 0 */ val JavaScript: typingsJapgolly.typescript.mod.OutputFileType.JavaScript & Double = js.native
   
+  @js.native
+  sealed trait SourceMap
+    extends StObject
+       with OutputFileType
+  /* 1 */ val SourceMap: typingsJapgolly.typescript.mod.OutputFileType.SourceMap & Double = js.native
 }
-

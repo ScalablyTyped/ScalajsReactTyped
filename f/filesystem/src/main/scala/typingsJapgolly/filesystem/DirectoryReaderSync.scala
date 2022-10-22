@@ -1,9 +1,9 @@
 package typingsJapgolly.filesystem
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface lets a user list files and directories in a directory. If there are no additions to or deletions from a directory between the first and last call to readEntries, and no errors occur, then:
@@ -14,19 +14,22 @@ import scala.scalajs.js.annotation._
   * <li> The entries produced by readEntries must not include the directory itself ["."] or its parent [".."].</li>
   * </ul>
   */
-trait DirectoryReaderSync extends js.Object {
+trait DirectoryReaderSync extends StObject {
+  
   /**
     * Read the next block of entries from this directory.
     */
   def readEntries(): js.Array[EntrySync]
 }
-
 object DirectoryReaderSync {
-  @scala.inline
-  def apply(readEntries: CallbackTo[js.Array[EntrySync]]): DirectoryReaderSync = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("readEntries")(readEntries.toJsFn)
+  
+  inline def apply(readEntries: CallbackTo[js.Array[EntrySync]]): DirectoryReaderSync = {
+    val __obj = js.Dynamic.literal(readEntries = readEntries.toJsFn)
     __obj.asInstanceOf[DirectoryReaderSync]
   }
+  
+  extension [Self <: DirectoryReaderSync](x: Self) {
+    
+    inline def setReadEntries(value: CallbackTo[js.Array[EntrySync]]): Self = StObject.set(x, "readEntries", value.toJsFn)
+  }
 }
-

@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.stepContentStepContentMod.StepContentProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/StepContent", JSImport.Namespace)
-@js.native
-object stepContentMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[StepContentProps, ComponentState, js.Any] {
-    def this(props: StepContentProps) = this()
-    def this(props: StepContentProps, context: js.Any) = this()
-  }
+object stepContentMod {
   
+  @JSImport("@material-ui/core/StepContent", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[StepContentProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: StepContentProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

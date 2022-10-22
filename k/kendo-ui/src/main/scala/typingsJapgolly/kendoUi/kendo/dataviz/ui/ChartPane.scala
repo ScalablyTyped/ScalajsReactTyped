@@ -1,42 +1,66 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartPane extends js.Object {
+trait ChartPane extends StObject {
+  
   var background: js.UndefOr[String] = js.undefined
+  
   var border: js.UndefOr[ChartPaneBorder] = js.undefined
+  
   var clip: js.UndefOr[Boolean] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var margin: js.UndefOr[Double | ChartPaneMargin] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var padding: js.UndefOr[ChartPanePadding] = js.undefined
+  
   var title: js.UndefOr[String | ChartPaneTitle] = js.undefined
 }
-
 object ChartPane {
-  @scala.inline
-  def apply(
-    background: String = null,
-    border: ChartPaneBorder = null,
-    clip: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    margin: Double | ChartPaneMargin = null,
-    name: String = null,
-    padding: ChartPanePadding = null,
-    title: String | ChartPaneTitle = null
-  ): ChartPane = {
+  
+  inline def apply(): ChartPane = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPane]
   }
+  
+  extension [Self <: ChartPane](x: Self) {
+    
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setBorder(value: ChartPaneBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setMargin(value: Double | ChartPaneMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPadding(value: ChartPanePadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setTitle(value: String | ChartPaneTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

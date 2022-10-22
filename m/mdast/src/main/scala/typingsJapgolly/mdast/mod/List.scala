@@ -1,43 +1,58 @@
 package typingsJapgolly.mdast.mod
 
 import typingsJapgolly.mdast.mdastStrings.list
-import typingsJapgolly.unist.mod.Data
-import typingsJapgolly.unist.mod.Position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait List
-  extends Parent
-     with BlockContent {
+  extends StObject
+     with Parent {
+  
   @JSName("children")
   var children_List: js.Array[ListContent]
-  var ordered: js.UndefOr[Boolean] = js.undefined
-  var spread: js.UndefOr[Boolean] = js.undefined
-  var start: js.UndefOr[Double] = js.undefined
+  
+  var ordered: js.UndefOr[Boolean | Null] = js.undefined
+  
+  var spread: js.UndefOr[Boolean | Null] = js.undefined
+  
+  var start: js.UndefOr[Double | Null] = js.undefined
+  
   @JSName("type")
   var type_List: list
 }
-
 object List {
-  @scala.inline
-  def apply(
-    children: js.Array[ListContent],
-    `type`: list,
-    data: Data = null,
-    ordered: js.UndefOr[Boolean] = js.undefined,
-    position: Position = null,
-    spread: js.UndefOr[Boolean] = js.undefined,
-    start: Int | Double = null
-  ): List = {
+  
+  inline def apply(children: js.Array[ListContent]): typingsJapgolly.mdast.mod.List = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    __obj.asInstanceOf[List]
+    __obj.updateDynamic("type")("list")
+    __obj.asInstanceOf[typingsJapgolly.mdast.mod.List]
+  }
+  
+  extension [Self <: typingsJapgolly.mdast.mod.List](x: Self) {
+    
+    inline def setChildren(value: js.Array[ListContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenVarargs(value: ListContent*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
+    
+    inline def setOrderedNull: Self = StObject.set(x, "ordered", null)
+    
+    inline def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
+    
+    inline def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
+    
+    inline def setSpreadNull: Self = StObject.set(x, "spread", null)
+    
+    inline def setSpreadUndefined: Self = StObject.set(x, "spread", js.undefined)
+    
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartNull: Self = StObject.set(x, "start", null)
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setType(value: list): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }
-

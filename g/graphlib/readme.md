@@ -10,10 +10,10 @@ A directed and undirected multi-graph library
 | ------------------ | :-------------: |
 | Full name          | graphlib |
 | Keywords           | graph, algorithms |
-| # releases         | 4 |
-| # dependents       | 174 |
-| # downloads        | 45699927 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7072622.666666667 |
+| # stars            | 1267.0 |
 
 ## Links
 - [Homepage](https://github.com/dagrejs/graphlib#readme)

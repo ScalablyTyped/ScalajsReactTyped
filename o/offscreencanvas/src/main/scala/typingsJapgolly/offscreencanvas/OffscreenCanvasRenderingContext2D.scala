@@ -1,6 +1,5 @@
 package typingsJapgolly.offscreencanvas
 
-import org.scalablytyped.runtime.Instantiable0
 import typingsJapgolly.std.CanvasCompositing
 import typingsJapgolly.std.CanvasDrawPath
 import typingsJapgolly.std.CanvasFillStrokeStyles
@@ -15,14 +14,15 @@ import typingsJapgolly.std.CanvasState
 import typingsJapgolly.std.CanvasText
 import typingsJapgolly.std.CanvasTextDrawingStyles
 import typingsJapgolly.std.CanvasTransform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvasrenderingcontext2d
 @js.native
 trait OffscreenCanvasRenderingContext2D
-  extends CanvasState
+  extends StObject
+     with CanvasState
      with CanvasTransform
      with CanvasCompositing
      with CanvasImageSmoothing
@@ -37,10 +37,6 @@ trait OffscreenCanvasRenderingContext2D
      with CanvasPathDrawingStyles
      with CanvasTextDrawingStyles
      with CanvasPath {
+  
   val canvas: OffscreenCanvas = js.native
 }
-
-@JSGlobal("OffscreenCanvasRenderingContext2D")
-@js.native
-object OffscreenCanvasRenderingContext2D extends Instantiable0[OffscreenCanvasRenderingContext2D]
-

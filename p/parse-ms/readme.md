@@ -1,7 +1,7 @@
 
 # Scala.js typings for parse-ms
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Parse milliseconds into an object
@@ -10,10 +10,10 @@ Parse milliseconds into an object
 | ------------------ | :-------------: |
 | Full name          | parse-ms |
 | Keywords           | browser, parse, time, ms, milliseconds, microseconds, nanoseconds, duration, period, range, interval |
-| # releases         | 3 |
-| # dependents       | 23 |
-| # downloads        | 33770834 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0183509E7 |
+| # stars            | 97.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/parse-ms#readme)

@@ -1,67 +1,65 @@
 package typingsJapgolly.mirrorx.mod
 
-import org.scalajs.dom.raw.Element
+import japgolly.scalajs.react.facade.React.Component
+import japgolly.scalajs.react.facade.React.DomElement
+import org.scalajs.dom.Element
 import typingsJapgolly.react.mod.CElement
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.DOMAttributes
-import typingsJapgolly.react.mod.DOMElement
-import typingsJapgolly.react.mod.ReactElement
-import typingsJapgolly.react.mod.SFCElement
+import typingsJapgolly.react.mod.FunctionComponentElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Renderer extends js.Object {
-  def apply(element: js.Array[DOMElement[DOMAttributes[_], _]]): Element = js.native
-  def apply(element: js.Array[DOMElement[DOMAttributes[_], _]], container: Null, callback: js.Function0[Unit]): Element = js.native
-  def apply(element: js.Array[DOMElement[DOMAttributes[_], _]], container: typingsJapgolly.std.Element): Element = js.native
+trait Renderer extends StObject {
+  
+  def apply(element: js.Array[DomElement]): Element = js.native
+  def apply(element: js.Array[DomElement], container: Element): Element = js.native
+  def apply(element: js.Array[DomElement], container: Element, callback: js.Function0[Unit]): Element = js.native
+  def apply(element: js.Array[DomElement], container: Null, callback: js.Function0[Unit]): Element = js.native
+  def apply(element: FunctionComponentElement[Any]): Unit = js.native
+  def apply(element: FunctionComponentElement[Any], container: Element): Unit = js.native
+  def apply(element: FunctionComponentElement[Any], container: Element, callback: js.Function0[Unit]): Unit = js.native
+  def apply(element: FunctionComponentElement[Any], container: Null, callback: js.Function0[Unit]): Unit = js.native
   def apply(
-    element: js.Array[DOMElement[DOMAttributes[_], _]],
-    container: typingsJapgolly.std.Element,
-    callback: js.Function0[Unit]
-  ): Element = js.native
-  def apply(element: SFCElement[_]): Unit = js.native
-  def apply(element: SFCElement[_], container: Null, callback: js.Function0[Unit]): Unit = js.native
-  def apply(element: SFCElement[_], container: typingsJapgolly.std.Element): Unit = js.native
-  def apply(element: SFCElement[_], container: typingsJapgolly.std.Element, callback: js.Function0[Unit]): Unit = js.native
-  def apply(
-    parentComponent: js.Array[Component[_, js.Object, _]],
-    element: SFCElement[_],
-    container: typingsJapgolly.std.Element
+    parentComponent: Component[Any & js.Object, js.Object],
+    element: FunctionComponentElement[Any],
+    container: Element
   ): Unit = js.native
   def apply(
-    parentComponent: js.Array[Component[_, js.Object, _]],
-    element: SFCElement[_],
-    container: typingsJapgolly.std.Element,
+    parentComponent: Component[Any & js.Object, js.Object],
+    element: FunctionComponentElement[Any],
+    container: Element,
     callback: js.Function0[Unit]
   ): Unit = js.native
   def apply(
-    parentComponent: Component[_, js.Object, _],
-    element: SFCElement[_],
-    container: typingsJapgolly.std.Element
+    parentComponent: js.Array[Component[Any & js.Object, js.Object]],
+    element: FunctionComponentElement[Any],
+    container: Element
   ): Unit = js.native
   def apply(
-    parentComponent: Component[_, js.Object, _],
-    element: SFCElement[_],
-    container: typingsJapgolly.std.Element,
+    parentComponent: js.Array[Component[Any & js.Object, js.Object]],
+    element: FunctionComponentElement[Any],
+    container: Element,
     callback: js.Function0[Unit]
   ): Unit = js.native
-  def apply[T /* <: Element */](element: DOMElement[DOMAttributes[T], T]): T = js.native
-  def apply[T /* <: Element */](element: DOMElement[DOMAttributes[T], T], container: Null, callback: js.Function0[Unit]): T = js.native
-  def apply[T /* <: Element */](element: DOMElement[DOMAttributes[T], T], container: typingsJapgolly.std.Element): T = js.native
-  def apply[T /* <: Element */](
-    element: DOMElement[DOMAttributes[T], T],
-    container: typingsJapgolly.std.Element,
+  def apply[T /* <: Element */](element: DomElement): T = js.native
+  def apply[T /* <: Element */](element: DomElement, container: Element): T = js.native
+  def apply[T /* <: Element */](element: DomElement, container: Element, callback: js.Function0[Unit]): T = js.native
+  def apply[T /* <: Element */](element: DomElement, container: Null, callback: js.Function0[Unit]): T = js.native
+  def apply[P](element: japgolly.scalajs.react.facade.React.Element): (Component[P & js.Object, js.Object]) | Element | Unit = js.native
+  def apply[P](element: japgolly.scalajs.react.facade.React.Element, container: Element): (Component[P & js.Object, js.Object]) | Element | Unit = js.native
+  def apply[P](
+    element: japgolly.scalajs.react.facade.React.Element,
+    container: Element,
     callback: js.Function0[Unit]
-  ): T = js.native
-  def apply[P](element: ReactElement): (japgolly.scalajs.react.raw.React.Component[P with js.Object, js.Object]) | Element | Unit = js.native
-  def apply[P](element: ReactElement, container: Null, callback: js.Function0[Unit]): (japgolly.scalajs.react.raw.React.Component[P with js.Object, js.Object]) | Element | Unit = js.native
-  def apply[P](element: ReactElement, container: typingsJapgolly.std.Element): (japgolly.scalajs.react.raw.React.Component[P with js.Object, js.Object]) | Element | Unit = js.native
-  def apply[P](element: ReactElement, container: typingsJapgolly.std.Element, callback: js.Function0[Unit]): (japgolly.scalajs.react.raw.React.Component[P with js.Object, js.Object]) | Element | Unit = js.native
-  def apply[P, T /* <: japgolly.scalajs.react.raw.React.Component[P with js.Object, js.Object] */](element: CElement[P, T]): T = js.native
-  def apply[P, T /* <: japgolly.scalajs.react.raw.React.Component[P with js.Object, js.Object] */](element: CElement[P, T], container: Null, callback: js.Function0[Unit]): T = js.native
-  def apply[P, T /* <: japgolly.scalajs.react.raw.React.Component[P with js.Object, js.Object] */](element: CElement[P, T], container: typingsJapgolly.std.Element): T = js.native
-  def apply[P, T /* <: japgolly.scalajs.react.raw.React.Component[P with js.Object, js.Object] */](element: CElement[P, T], container: typingsJapgolly.std.Element, callback: js.Function0[Unit]): T = js.native
+  ): (Component[P & js.Object, js.Object]) | Element | Unit = js.native
+  def apply[P](
+    element: japgolly.scalajs.react.facade.React.Element,
+    container: Null,
+    callback: js.Function0[Unit]
+  ): (Component[P & js.Object, js.Object]) | Element | Unit = js.native
+  def apply[P, T /* <: Component[P & js.Object, js.Object] */](element: CElement[P, T]): T = js.native
+  def apply[P, T /* <: Component[P & js.Object, js.Object] */](element: CElement[P, T], container: Element): T = js.native
+  def apply[P, T /* <: Component[P & js.Object, js.Object] */](element: CElement[P, T], container: Element, callback: js.Function0[Unit]): T = js.native
+  def apply[P, T /* <: Component[P & js.Object, js.Object] */](element: CElement[P, T], container: Null, callback: js.Function0[Unit]): T = js.native
 }
-

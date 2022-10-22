@@ -1,35 +1,33 @@
 package typingsJapgolly.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RendererStyleFlags2 extends js.Object
-
+sealed trait RendererStyleFlags2 extends StObject
 @JSImport("@angular/core", "RendererStyleFlags2")
 @js.native
-object RendererStyleFlags2 extends js.Object {
+object RendererStyleFlags2 extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[RendererStyleFlags2 & Double] = js.native
+  
   /**
     * Marks a style as using dash case naming (this-is-dash-case).
     */
   @js.native
-  sealed trait DashCase extends RendererStyleFlags2
+  sealed trait DashCase
+    extends StObject
+       with RendererStyleFlags2
+  /* 2 */ val DashCase: typingsJapgolly.angularCore.mod.RendererStyleFlags2.DashCase & Double = js.native
   
   /**
     * Marks a style as important.
     */
   @js.native
-  sealed trait Important extends RendererStyleFlags2
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RendererStyleFlags2 with Double] = js.native
-  /* 2 */ @js.native
-  object DashCase extends TopLevel[DashCase with Double]
-  
-  /* 1 */ @js.native
-  object Important extends TopLevel[Important with Double]
-  
+  sealed trait Important
+    extends StObject
+       with RendererStyleFlags2
+  /* 1 */ val Important: typingsJapgolly.angularCore.mod.RendererStyleFlags2.Important & Double = js.native
 }
-

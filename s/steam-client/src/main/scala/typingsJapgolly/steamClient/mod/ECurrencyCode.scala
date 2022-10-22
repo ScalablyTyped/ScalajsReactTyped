@@ -1,269 +1,267 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ECurrencyCode extends js.Object
-
+sealed trait ECurrencyCode extends StObject
 @JSImport("steam-client", "ECurrencyCode")
 @js.native
-object ECurrencyCode extends js.Object {
-  @js.native
-  sealed trait AED extends ECurrencyCode
-  
-  @js.native
-  sealed trait ARS extends ECurrencyCode
-  
-  @js.native
-  sealed trait AUD extends ECurrencyCode
-  
-  @js.native
-  sealed trait BRL extends ECurrencyCode
-  
-  @js.native
-  sealed trait BYN extends ECurrencyCode
-  
-  @js.native
-  sealed trait CAD extends ECurrencyCode
-  
-  @js.native
-  sealed trait CHF extends ECurrencyCode
-  
-  @js.native
-  sealed trait CLP extends ECurrencyCode
-  
-  @js.native
-  sealed trait CNY extends ECurrencyCode
-  
-  @js.native
-  sealed trait COP extends ECurrencyCode
-  
-  @js.native
-  sealed trait CRC extends ECurrencyCode
-  
-  @js.native
-  sealed trait EUR extends ECurrencyCode
-  
-  @js.native
-  sealed trait GBP extends ECurrencyCode
-  
-  @js.native
-  sealed trait HKD extends ECurrencyCode
-  
-  @js.native
-  sealed trait IDR extends ECurrencyCode
-  
-  @js.native
-  sealed trait ILS extends ECurrencyCode
-  
-  @js.native
-  sealed trait INR extends ECurrencyCode
-  
-  @js.native
-  sealed trait Invalid extends ECurrencyCode
-  
-  @js.native
-  sealed trait JPY extends ECurrencyCode
-  
-  @js.native
-  sealed trait KRW extends ECurrencyCode
-  
-  @js.native
-  sealed trait KWD extends ECurrencyCode
-  
-  @js.native
-  sealed trait KZT extends ECurrencyCode
-  
-  @js.native
-  sealed trait MXN extends ECurrencyCode
-  
-  @js.native
-  sealed trait MYR extends ECurrencyCode
-  
-  @js.native
-  sealed trait Max extends ECurrencyCode
-  
-  @js.native
-  sealed trait NOK extends ECurrencyCode
-  
-  @js.native
-  sealed trait NZD extends ECurrencyCode
-  
-  @js.native
-  sealed trait PEN extends ECurrencyCode
-  
-  @js.native
-  sealed trait PHP extends ECurrencyCode
-  
-  @js.native
-  sealed trait PLN extends ECurrencyCode
-  
-  @js.native
-  sealed trait QAR extends ECurrencyCode
-  
-  @js.native
-  sealed trait RUB extends ECurrencyCode
-  
-  @js.native
-  sealed trait SAR extends ECurrencyCode
-  
-  @js.native
-  sealed trait SGD extends ECurrencyCode
-  
-  @js.native
-  sealed trait THB extends ECurrencyCode
-  
-  @js.native
-  sealed trait TRY extends ECurrencyCode
-  
-  @js.native
-  sealed trait TWD extends ECurrencyCode
-  
-  @js.native
-  sealed trait UAH extends ECurrencyCode
-  
-  @js.native
-  sealed trait USD extends ECurrencyCode
-  
-  @js.native
-  sealed trait UYU extends ECurrencyCode
-  
-  @js.native
-  sealed trait VND extends ECurrencyCode
-  
-  @js.native
-  sealed trait ZAR extends ECurrencyCode
+object ECurrencyCode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ECurrencyCode with Double] = js.native
-  /* 32 */ @js.native
-  object AED extends TopLevel[AED with Double]
+  def apply(value: Double): js.UndefOr[ECurrencyCode & Double] = js.native
   
-  /* 34 */ @js.native
-  object ARS extends TopLevel[ARS with Double]
+  @js.native
+  sealed trait AED
+    extends StObject
+       with ECurrencyCode
+  /* 32 */ val AED: typingsJapgolly.steamClient.mod.ECurrencyCode.AED & Double = js.native
   
-  /* 21 */ @js.native
-  object AUD extends TopLevel[AUD with Double]
+  @js.native
+  sealed trait ARS
+    extends StObject
+       with ECurrencyCode
+  /* 34 */ val ARS: typingsJapgolly.steamClient.mod.ECurrencyCode.ARS & Double = js.native
   
-  /* 7 */ @js.native
-  object BRL extends TopLevel[BRL with Double]
+  @js.native
+  sealed trait AUD
+    extends StObject
+       with ECurrencyCode
+  /* 21 */ val AUD: typingsJapgolly.steamClient.mod.ECurrencyCode.AUD & Double = js.native
   
-  /* 36 */ @js.native
-  object BYN extends TopLevel[BYN with Double]
+  @js.native
+  sealed trait BRL
+    extends StObject
+       with ECurrencyCode
+  /* 7 */ val BRL: typingsJapgolly.steamClient.mod.ECurrencyCode.BRL & Double = js.native
   
-  /* 20 */ @js.native
-  object CAD extends TopLevel[CAD with Double]
+  @js.native
+  sealed trait BYN
+    extends StObject
+       with ECurrencyCode
+  /* 36 */ val BYN: typingsJapgolly.steamClient.mod.ECurrencyCode.BYN & Double = js.native
   
-  /* 4 */ @js.native
-  object CHF extends TopLevel[CHF with Double]
+  @js.native
+  sealed trait CAD
+    extends StObject
+       with ECurrencyCode
+  /* 20 */ val CAD: typingsJapgolly.steamClient.mod.ECurrencyCode.CAD & Double = js.native
   
-  /* 25 */ @js.native
-  object CLP extends TopLevel[CLP with Double]
+  @js.native
+  sealed trait CHF
+    extends StObject
+       with ECurrencyCode
+  /* 4 */ val CHF: typingsJapgolly.steamClient.mod.ECurrencyCode.CHF & Double = js.native
   
-  /* 23 */ @js.native
-  object CNY extends TopLevel[CNY with Double]
+  @js.native
+  sealed trait CLP
+    extends StObject
+       with ECurrencyCode
+  /* 25 */ val CLP: typingsJapgolly.steamClient.mod.ECurrencyCode.CLP & Double = js.native
   
-  /* 27 */ @js.native
-  object COP extends TopLevel[COP with Double]
+  @js.native
+  sealed trait CNY
+    extends StObject
+       with ECurrencyCode
+  /* 23 */ val CNY: typingsJapgolly.steamClient.mod.ECurrencyCode.CNY & Double = js.native
   
-  /* 40 */ @js.native
-  object CRC extends TopLevel[CRC with Double]
+  @js.native
+  sealed trait COP
+    extends StObject
+       with ECurrencyCode
+  /* 27 */ val COP: typingsJapgolly.steamClient.mod.ECurrencyCode.COP & Double = js.native
   
-  /* 3 */ @js.native
-  object EUR extends TopLevel[EUR with Double]
+  @js.native
+  sealed trait CRC
+    extends StObject
+       with ECurrencyCode
+  /* 40 */ val CRC: typingsJapgolly.steamClient.mod.ECurrencyCode.CRC & Double = js.native
   
-  /* 2 */ @js.native
-  object GBP extends TopLevel[GBP with Double]
+  @js.native
+  sealed trait EUR
+    extends StObject
+       with ECurrencyCode
+  /* 3 */ val EUR: typingsJapgolly.steamClient.mod.ECurrencyCode.EUR & Double = js.native
   
-  /* 29 */ @js.native
-  object HKD extends TopLevel[HKD with Double]
+  @js.native
+  sealed trait GBP
+    extends StObject
+       with ECurrencyCode
+  /* 2 */ val GBP: typingsJapgolly.steamClient.mod.ECurrencyCode.GBP & Double = js.native
   
-  /* 10 */ @js.native
-  object IDR extends TopLevel[IDR with Double]
+  @js.native
+  sealed trait HKD
+    extends StObject
+       with ECurrencyCode
+  /* 29 */ val HKD: typingsJapgolly.steamClient.mod.ECurrencyCode.HKD & Double = js.native
   
-  /* 35 */ @js.native
-  object ILS extends TopLevel[ILS with Double]
+  @js.native
+  sealed trait IDR
+    extends StObject
+       with ECurrencyCode
+  /* 10 */ val IDR: typingsJapgolly.steamClient.mod.ECurrencyCode.IDR & Double = js.native
   
-  /* 24 */ @js.native
-  object INR extends TopLevel[INR with Double]
+  @js.native
+  sealed trait ILS
+    extends StObject
+       with ECurrencyCode
+  /* 35 */ val ILS: typingsJapgolly.steamClient.mod.ECurrencyCode.ILS & Double = js.native
   
-  /* 0 */ @js.native
-  object Invalid extends TopLevel[Invalid with Double]
+  @js.native
+  sealed trait INR
+    extends StObject
+       with ECurrencyCode
+  /* 24 */ val INR: typingsJapgolly.steamClient.mod.ECurrencyCode.INR & Double = js.native
   
-  /* 8 */ @js.native
-  object JPY extends TopLevel[JPY with Double]
+  @js.native
+  sealed trait Invalid
+    extends StObject
+       with ECurrencyCode
+  /* 0 */ val Invalid: typingsJapgolly.steamClient.mod.ECurrencyCode.Invalid & Double = js.native
   
-  /* 16 */ @js.native
-  object KRW extends TopLevel[KRW with Double]
+  @js.native
+  sealed trait JPY
+    extends StObject
+       with ECurrencyCode
+  /* 8 */ val JPY: typingsJapgolly.steamClient.mod.ECurrencyCode.JPY & Double = js.native
   
-  /* 38 */ @js.native
-  object KWD extends TopLevel[KWD with Double]
+  @js.native
+  sealed trait KRW
+    extends StObject
+       with ECurrencyCode
+  /* 16 */ val KRW: typingsJapgolly.steamClient.mod.ECurrencyCode.KRW & Double = js.native
   
-  /* 37 */ @js.native
-  object KZT extends TopLevel[KZT with Double]
+  @js.native
+  sealed trait KWD
+    extends StObject
+       with ECurrencyCode
+  /* 38 */ val KWD: typingsJapgolly.steamClient.mod.ECurrencyCode.KWD & Double = js.native
   
-  /* 19 */ @js.native
-  object MXN extends TopLevel[MXN with Double]
+  @js.native
+  sealed trait KZT
+    extends StObject
+       with ECurrencyCode
+  /* 37 */ val KZT: typingsJapgolly.steamClient.mod.ECurrencyCode.KZT & Double = js.native
   
-  /* 11 */ @js.native
-  object MYR extends TopLevel[MYR with Double]
+  @js.native
+  sealed trait MXN
+    extends StObject
+       with ECurrencyCode
+  /* 19 */ val MXN: typingsJapgolly.steamClient.mod.ECurrencyCode.MXN & Double = js.native
   
-  /* 42 */ @js.native
-  object Max extends TopLevel[Max with Double]
+  @js.native
+  sealed trait MYR
+    extends StObject
+       with ECurrencyCode
+  /* 11 */ val MYR: typingsJapgolly.steamClient.mod.ECurrencyCode.MYR & Double = js.native
   
-  /* 9 */ @js.native
-  object NOK extends TopLevel[NOK with Double]
+  @js.native
+  sealed trait Max
+    extends StObject
+       with ECurrencyCode
+  /* 42 */ val Max: typingsJapgolly.steamClient.mod.ECurrencyCode.Max & Double = js.native
   
-  /* 22 */ @js.native
-  object NZD extends TopLevel[NZD with Double]
+  @js.native
+  sealed trait NOK
+    extends StObject
+       with ECurrencyCode
+  /* 9 */ val NOK: typingsJapgolly.steamClient.mod.ECurrencyCode.NOK & Double = js.native
   
-  /* 26 */ @js.native
-  object PEN extends TopLevel[PEN with Double]
+  @js.native
+  sealed trait NZD
+    extends StObject
+       with ECurrencyCode
+  /* 22 */ val NZD: typingsJapgolly.steamClient.mod.ECurrencyCode.NZD & Double = js.native
   
-  /* 12 */ @js.native
-  object PHP extends TopLevel[PHP with Double]
+  @js.native
+  sealed trait PEN
+    extends StObject
+       with ECurrencyCode
+  /* 26 */ val PEN: typingsJapgolly.steamClient.mod.ECurrencyCode.PEN & Double = js.native
   
-  /* 6 */ @js.native
-  object PLN extends TopLevel[PLN with Double]
+  @js.native
+  sealed trait PHP
+    extends StObject
+       with ECurrencyCode
+  /* 12 */ val PHP: typingsJapgolly.steamClient.mod.ECurrencyCode.PHP & Double = js.native
   
-  /* 39 */ @js.native
-  object QAR extends TopLevel[QAR with Double]
+  @js.native
+  sealed trait PLN
+    extends StObject
+       with ECurrencyCode
+  /* 6 */ val PLN: typingsJapgolly.steamClient.mod.ECurrencyCode.PLN & Double = js.native
   
-  /* 5 */ @js.native
-  object RUB extends TopLevel[RUB with Double]
+  @js.native
+  sealed trait QAR
+    extends StObject
+       with ECurrencyCode
+  /* 39 */ val QAR: typingsJapgolly.steamClient.mod.ECurrencyCode.QAR & Double = js.native
   
-  /* 31 */ @js.native
-  object SAR extends TopLevel[SAR with Double]
+  @js.native
+  sealed trait RUB
+    extends StObject
+       with ECurrencyCode
+  /* 5 */ val RUB: typingsJapgolly.steamClient.mod.ECurrencyCode.RUB & Double = js.native
   
-  /* 13 */ @js.native
-  object SGD extends TopLevel[SGD with Double]
+  @js.native
+  sealed trait SAR
+    extends StObject
+       with ECurrencyCode
+  /* 31 */ val SAR: typingsJapgolly.steamClient.mod.ECurrencyCode.SAR & Double = js.native
   
-  /* 14 */ @js.native
-  object THB extends TopLevel[THB with Double]
+  @js.native
+  sealed trait SGD
+    extends StObject
+       with ECurrencyCode
+  /* 13 */ val SGD: typingsJapgolly.steamClient.mod.ECurrencyCode.SGD & Double = js.native
   
-  /* 17 */ @js.native
-  object TRY extends TopLevel[TRY with Double]
+  @js.native
+  sealed trait THB
+    extends StObject
+       with ECurrencyCode
+  /* 14 */ val THB: typingsJapgolly.steamClient.mod.ECurrencyCode.THB & Double = js.native
   
-  /* 30 */ @js.native
-  object TWD extends TopLevel[TWD with Double]
+  @js.native
+  sealed trait TRY
+    extends StObject
+       with ECurrencyCode
+  /* 17 */ val TRY: typingsJapgolly.steamClient.mod.ECurrencyCode.TRY & Double = js.native
   
-  /* 18 */ @js.native
-  object UAH extends TopLevel[UAH with Double]
+  @js.native
+  sealed trait TWD
+    extends StObject
+       with ECurrencyCode
+  /* 30 */ val TWD: typingsJapgolly.steamClient.mod.ECurrencyCode.TWD & Double = js.native
   
-  /* 1 */ @js.native
-  object USD extends TopLevel[USD with Double]
+  @js.native
+  sealed trait UAH
+    extends StObject
+       with ECurrencyCode
+  /* 18 */ val UAH: typingsJapgolly.steamClient.mod.ECurrencyCode.UAH & Double = js.native
   
-  /* 41 */ @js.native
-  object UYU extends TopLevel[UYU with Double]
+  @js.native
+  sealed trait USD
+    extends StObject
+       with ECurrencyCode
+  /* 1 */ val USD: typingsJapgolly.steamClient.mod.ECurrencyCode.USD & Double = js.native
   
-  /* 15 */ @js.native
-  object VND extends TopLevel[VND with Double]
+  @js.native
+  sealed trait UYU
+    extends StObject
+       with ECurrencyCode
+  /* 41 */ val UYU: typingsJapgolly.steamClient.mod.ECurrencyCode.UYU & Double = js.native
   
-  /* 28 */ @js.native
-  object ZAR extends TopLevel[ZAR with Double]
+  @js.native
+  sealed trait VND
+    extends StObject
+       with ECurrencyCode
+  /* 15 */ val VND: typingsJapgolly.steamClient.mod.ECurrencyCode.VND & Double = js.native
   
+  @js.native
+  sealed trait ZAR
+    extends StObject
+       with ECurrencyCode
+  /* 28 */ val ZAR: typingsJapgolly.steamClient.mod.ECurrencyCode.ZAR & Double = js.native
 }
-

@@ -1,55 +1,87 @@
 package typingsJapgolly.reactLeaflet.mod
 
-import org.scalajs.dom.raw.HTMLImageElement
+import org.scalajs.dom.HTMLImageElement
 import typingsJapgolly.leaflet.mod.CrossOrigin
-import typingsJapgolly.leaflet.mod.ImageOverlayOptions
 import typingsJapgolly.leaflet.mod.LatLngBoundsExpression
+import typingsJapgolly.leaflet.mod.LatLngTuple
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet
-- typingsJapgolly.reactLeaflet.mod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait ImageOverlayProps extends ImageOverlayOptions {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.leaflet.mod.LayerOptions because var conflicts: attribution, pane. Inlined 
+- typingsJapgolly.leaflet.mod.InteractiveLayerOptions because var conflicts: attribution, pane. Inlined bubblingMouseEvents, interactive
+- typingsJapgolly.leaflet.mod.ImageOverlayOptions because var conflicts: attribution, pane. Inlined alt, errorOverlayUrl, className, crossOrigin, zIndex, opacity */ trait ImageOverlayProps
+  extends StObject
+     with MapLayerProps {
+  
+  var alt: js.UndefOr[String] = js.undefined
+  
   var bounds: js.UndefOr[LatLngBoundsExpression] = js.undefined
-  var children: js.UndefOr[Children] = js.undefined
-  var leaflet: js.UndefOr[LeafletContext] = js.undefined
+  
+  var bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined
+  
+  var className: js.UndefOr[String] = js.undefined
+  
+  var crossOrigin: js.UndefOr[CrossOrigin | Boolean] = js.undefined
+  
+  var errorOverlayUrl: js.UndefOr[String] = js.undefined
+  
+  var interactive: js.UndefOr[Boolean] = js.undefined
+  
+  var opacity: js.UndefOr[Double] = js.undefined
+  
   var url: String | HTMLImageElement
+  
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object ImageOverlayProps {
-  @scala.inline
-  def apply(
-    url: String | HTMLImageElement,
-    alt: String = null,
-    attribution: String = null,
-    bounds: LatLngBoundsExpression = null,
-    bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined,
-    children: Children = null,
-    className: String = null,
-    crossOrigin: CrossOrigin = null,
-    errorOverlayUrl: String = null,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    leaflet: LeafletContext = null,
-    opacity: Int | Double = null,
-    pane: String = null,
-    zIndex: Int | Double = null
-  ): ImageOverlayProps = {
+  
+  inline def apply(url: String | HTMLImageElement): ImageOverlayProps = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (errorOverlayUrl != null) __obj.updateDynamic("errorOverlayUrl")(errorOverlayUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageOverlayProps]
   }
+  
+  extension [Self <: ImageOverlayProps](x: Self) {
+    
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    
+    inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value*))
+    
+    inline def setBubblingMouseEvents(value: Boolean): Self = StObject.set(x, "bubblingMouseEvents", value.asInstanceOf[js.Any])
+    
+    inline def setBubblingMouseEventsUndefined: Self = StObject.set(x, "bubblingMouseEvents", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setCrossOrigin(value: CrossOrigin | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    
+    inline def setErrorOverlayUrl(value: String): Self = StObject.set(x, "errorOverlayUrl", value.asInstanceOf[js.Any])
+    
+    inline def setErrorOverlayUrlUndefined: Self = StObject.set(x, "errorOverlayUrl", js.undefined)
+    
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    
+    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setUrl(value: String | HTMLImageElement): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

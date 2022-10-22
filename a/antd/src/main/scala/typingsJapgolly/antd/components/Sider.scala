@@ -1,35 +1,19 @@
 package typingsJapgolly.antd.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.siderMod.default
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.antd.libLayoutSiderMod.SiderProps
+import typingsJapgolly.react.mod.RefAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Sider {
-  def apply(
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[js.Object, default, Unit, js.Object] = {
-    val __obj = js.Dynamic.literal()
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  js.Object, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.siderMod.default](this.componentImport)
-    f(__obj.asInstanceOf[js.Object])(children: _*)
-  }
   @JSImport("antd/lib/layout/Sider", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: Sider.type): SharedBuilder_SiderPropsRefAttributes_447020899[HTMLDivElement] = new SharedBuilder_SiderPropsRefAttributes_447020899[HTMLDivElement](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SiderProps & RefAttributes[HTMLDivElement]): SharedBuilder_SiderPropsRefAttributes_447020899[HTMLDivElement] = new SharedBuilder_SiderPropsRefAttributes_447020899[HTMLDivElement](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

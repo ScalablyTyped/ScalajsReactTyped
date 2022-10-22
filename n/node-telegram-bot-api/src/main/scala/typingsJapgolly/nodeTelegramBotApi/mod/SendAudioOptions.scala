@@ -1,36 +1,50 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SendAudioOptions extends SendBasicOptions {
+trait SendAudioOptions
+  extends StObject
+     with SendBasicOptions {
+  
   var caption: js.UndefOr[String] = js.undefined
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
+  var parse_mode: js.UndefOr[ParseMode] = js.undefined
+  
   var performer: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
 }
-
 object SendAudioOptions {
-  @scala.inline
-  def apply(
-    caption: String = null,
-    disable_notification: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
-    performer: String = null,
-    reply_markup: InlineKeyboardMarkup | ReplyKeyboardMarkup | ReplyKeyboardRemove | ForceReply = null,
-    reply_to_message_id: Int | Double = null,
-    title: String = null
-  ): SendAudioOptions = {
+  
+  inline def apply(): SendAudioOptions = {
     val __obj = js.Dynamic.literal()
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_notification)) __obj.updateDynamic("disable_notification")(disable_notification.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (performer != null) __obj.updateDynamic("performer")(performer.asInstanceOf[js.Any])
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (reply_to_message_id != null) __obj.updateDynamic("reply_to_message_id")(reply_to_message_id.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendAudioOptions]
   }
+  
+  extension [Self <: SendAudioOptions](x: Self) {
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setParse_mode(value: ParseMode): Self = StObject.set(x, "parse_mode", value.asInstanceOf[js.Any])
+    
+    inline def setParse_modeUndefined: Self = StObject.set(x, "parse_mode", js.undefined)
+    
+    inline def setPerformer(value: String): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
+    
+    inline def setPerformerUndefined: Self = StObject.set(x, "performer", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

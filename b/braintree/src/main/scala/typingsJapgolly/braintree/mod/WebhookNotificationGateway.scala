@@ -1,20 +1,22 @@
 package typingsJapgolly.braintree.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebhookNotificationGateway extends js.Object {
+trait WebhookNotificationGateway extends StObject {
+  
   def parse(signature: String, payload: String): js.Promise[WebhookNotification]
 }
-
 object WebhookNotificationGateway {
-  @scala.inline
-  def apply(parse: (String, String) => CallbackTo[js.Promise[WebhookNotification]]): WebhookNotificationGateway = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => parse(t0, t1).runNow()))
+  
+  inline def apply(parse: (String, String) => js.Promise[WebhookNotification]): WebhookNotificationGateway = {
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction2(parse))
     __obj.asInstanceOf[WebhookNotificationGateway]
   }
+  
+  extension [Self <: WebhookNotificationGateway](x: Self) {
+    
+    inline def setParse(value: (String, String) => js.Promise[WebhookNotification]): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+  }
 }
-

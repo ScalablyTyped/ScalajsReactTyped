@@ -1,14 +1,14 @@
 package typingsJapgolly.documentdb.mod
 
-import typingsJapgolly.node.Buffer
 import typingsJapgolly.node.NodeJS.ReadableStream
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("documentdb", "DocumentClient")
 @js.native
-class DocumentClient protected () extends js.Object {
+open class DocumentClient protected () extends StObject {
   /**
     * Constructs a DocumentClient.
     * @param urlConnection           - The service endpoint to use to create the client.
@@ -21,9 +21,16 @@ class DocumentClient protected () extends js.Object {
   def this(
     urlConnection: String,
     auth: AuthOptions,
+    connectionPolicy: Unit,
+    consistencyLevel: ConsistencyLevel
+  ) = this()
+  def this(
+    urlConnection: String,
+    auth: AuthOptions,
     connectionPolicy: ConnectionPolicy,
     consistencyLevel: ConsistencyLevel
   ) = this()
+  
   def createAttachment(documentLink: String, body: Attachment, callback: RequestCallback[AttachmentMeta]): Unit = js.native
   /**
     * Create an attachment for the document object.
@@ -42,6 +49,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[AttachmentMeta]
   ): Unit = js.native
+  
   def createAttachmentAndUploadMedia(documentLink: String, readableStream: ReadableStream, callback: RequestCallback[AttachmentMeta]): Unit = js.native
   /**
     * Create an attachment with media file for the document object.
@@ -56,6 +64,7 @@ class DocumentClient protected () extends js.Object {
     options: MediaOptions,
     callback: RequestCallback[AttachmentMeta]
   ): Unit = js.native
+  
   def createCollection(databaseLink: String, body: Collection, callback: RequestCallback[CollectionMeta]): Unit = js.native
   /**
     * Creates a collection.
@@ -76,6 +85,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[CollectionMeta]
   ): Unit = js.native
+  
   def createDatabase(body: UniqueId, callback: RequestCallback[DatabaseMeta]): Unit = js.native
   /**
     * Send a request for creating a database.
@@ -88,6 +98,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback  - The callback for the request.
     */
   def createDatabase(body: UniqueId, options: RequestOptions, callback: RequestCallback[DatabaseMeta]): Unit = js.native
+  
   def createDocument[TDocument](
     documentsFeedOrDatabaseLink: String,
     document: NewDocument,
@@ -102,7 +113,7 @@ class DocumentClient protected () extends js.Object {
     * @param documentsFeedOrDatabaseLink    - The self-link of the collection.
     * @param document          - Represents the body of the document. Can contain any number of user defined properties.
     * @param [options]         - The request options.
-    * @param callback 			- The callback for the request.
+    * @param callback             - The callback for the request.
     */
   def createDocument[TDocument](
     documentsFeedOrDatabaseLink: String,
@@ -110,6 +121,7 @@ class DocumentClient protected () extends js.Object {
     options: DocumentOptions,
     callback: RequestCallback[RetrievedDocument]
   ): Unit = js.native
+  
   def createPermission(userLink: String, body: Permission, callback: RequestCallback[PermissionMeta]): Unit = js.native
   /**
     * Create a permission. A permission represents a per-User Permission to access a specific resource e.g. Document or Collection.
@@ -124,6 +136,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[PermissionMeta]
   ): Unit = js.native
+  
   def createStoredProcedure(collectionLink: String, procedure: Procedure, callback: RequestCallback[ProcedureMeta]): Unit = js.native
   /**
     * Create a StoredProcedure.
@@ -143,6 +156,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[ProcedureMeta]
   ): Unit = js.native
+  
   def createTrigger(collectionLink: String, trigger: Trigger, callback: RequestCallback[TriggerMeta]): Unit = js.native
   /**
     * Create a trigger.
@@ -161,6 +175,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[TriggerMeta]
   ): Unit = js.native
+  
   def createUser(databaseLink: String, body: UniqueId, callback: RequestCallback[AbstractMeta]): Unit = js.native
   /**
     * Create a user
@@ -175,6 +190,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[AbstractMeta]
   ): Unit = js.native
+  
   def createUserDefinedFunction(
     collectionLink: String,
     udf: UserDefinedFunction,
@@ -197,6 +213,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[UserDefinedFunctionMeta]
   ): Unit = js.native
+  
   def deleteAttachment(attachmentLink: String, callback: RequestCallback[Unit]): Unit = js.native
   /**
     * Delete an attachment
@@ -205,6 +222,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def deleteAttachment(attachmentLink: String, options: RequestOptions, callback: RequestCallback[Unit]): Unit = js.native
+  
   def deleteCollection(collectionLink: String, callback: RequestCallback[Unit]): Unit = js.native
   /**
     * Delete the collection object.
@@ -213,6 +231,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def deleteCollection(collectionLink: String, options: RequestOptions, callback: RequestCallback[Unit]): Unit = js.native
+  
   def deleteConflict(conflictLink: String, callback: RequestCallback[Unit]): Unit = js.native
   /**
     * Delete a conflict
@@ -221,6 +240,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def deleteConflict(conflictLink: String, options: RequestOptions, callback: RequestCallback[Unit]): Unit = js.native
+  
   def deleteDatabase(databaseLink: String, callback: RequestCallback[Unit]): Unit = js.native
   /**
     * Delete the database object.
@@ -229,6 +249,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback      - The callback for the request.
     */
   def deleteDatabase(databaseLink: String, options: RequestOptions, callback: RequestCallback[Unit]): Unit = js.native
+  
   def deleteDocument(documentLink: String, callback: RequestCallback[Unit]): Unit = js.native
   /**
     * Delete the document object.
@@ -237,6 +258,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback      - The callback for the request.
     */
   def deleteDocument(documentLink: String, options: RequestOptions, callback: RequestCallback[Unit]): Unit = js.native
+  
   def deletePermission(permissionLink: String, callback: RequestCallback[Unit]): Unit = js.native
   /**
     * Delete a permission
@@ -245,6 +267,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def deletePermission(permissionLink: String, options: RequestOptions, callback: RequestCallback[Unit]): Unit = js.native
+  
   def deleteStoredProcedure(procedureLink: String, callback: RequestCallback[Unit]): Unit = js.native
   /**
     * Delete the StoredProcedure object.
@@ -253,6 +276,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback      - The callback for the request.
     */
   def deleteStoredProcedure(procedureLink: String, options: RequestOptions, callback: RequestCallback[Unit]): Unit = js.native
+  
   def deleteTrigger(triggerLink: String, callback: RequestCallback[Unit]): Unit = js.native
   /**
     * Delete a trigger
@@ -261,6 +285,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def deleteTrigger(triggerLink: String, options: RequestOptions, callback: RequestCallback[Unit]): Unit = js.native
+  
   def deleteUser(userLink: String, callback: RequestCallback[Unit]): Unit = js.native
   /**
     * Delete a user
@@ -269,6 +294,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def deleteUser(userLink: String, options: RequestOptions, callback: RequestCallback[Unit]): Unit = js.native
+  
   def deleteUserDefinedFunction(udfLink: String, callback: RequestCallback[Unit]): Unit = js.native
   /**
     * Delete a user-defined function
@@ -277,7 +303,8 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def deleteUserDefinedFunction(udfLink: String, options: RequestOptions, callback: RequestCallback[Unit]): Unit = js.native
-  def executeStoredProcedure[TResult](procedureLink: String, paramsOrOptions: js.Array[_], callback: RequestCallback[TResult]): Unit = js.native
+  
+  def executeStoredProcedure[TResult](procedureLink: String, paramsOrOptions: js.Array[Any], callback: RequestCallback[TResult]): Unit = js.native
   def executeStoredProcedure[TResult](procedureLink: String, paramsOrOptions: RequestOptions, callback: RequestCallback[TResult]): Unit = js.native
   /**
     * Execute the StoredProcedure represented by the object.
@@ -288,10 +315,11 @@ class DocumentClient protected () extends js.Object {
     */
   def executeStoredProcedure[TResult](
     procedureLink: String,
-    params: js.Array[_],
+    params: js.Array[Any],
     options: RequestOptions,
     callback: RequestCallback[TResult]
   ): Unit = js.native
+  
   def getDatabaseAccount(callback: RequestCallback[DatabaseAccount]): Unit = js.native
   /**
     * Gets the Database account information.
@@ -299,16 +327,19 @@ class DocumentClient protected () extends js.Object {
     * @param callback      - The callback for the request
     */
   def getDatabaseAccount(options: DatabaseAccountRequestOptions, callback: RequestCallback[DatabaseAccount]): Unit = js.native
+  
   /**
     * Gets the curent read endpoint for a geo-replicated database account.
     * @param callback      - The callback for the request
     */
   def getReadEndpoint(callback: RequestCallback[String]): Unit = js.native
+  
   /**
     * Gets the curent write endpoint for a geo-replicated database account.
     * @param callback      - The callback for the request
     */
   def getWriteEndpoint(callback: RequestCallback[String]): Unit = js.native
+  
   /**
     * Query the attachments for the document.
     * @param documentLink      - The self-link of the document.
@@ -317,6 +348,7 @@ class DocumentClient protected () extends js.Object {
     */
   def queryAttachments[T](documentLink: String, query: DocumentQuery): QueryIterator[T] = js.native
   def queryAttachments[T](documentLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[T] = js.native
+  
   /**
     * Query the collections for the database.
     * @param databaseLink  - The self-link of the database.
@@ -326,14 +358,16 @@ class DocumentClient protected () extends js.Object {
     */
   def queryCollections(databaseLink: String, query: DocumentQuery): QueryIterator[CollectionMeta] = js.native
   def queryCollections(databaseLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[CollectionMeta] = js.native
+  
   /**
     * Query the conflicts for the collection.
     * @param collectionLink    - The self-link of the collection.
     * @param query             - A SQL query.
     * @param [options]         - Represents the feed options.
     */
-  def queryConflicts(collectionLink: String, query: DocumentQuery): QueryIterator[_] = js.native
-  def queryConflicts(collectionLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[_] = js.native
+  def queryConflicts(collectionLink: String, query: DocumentQuery): QueryIterator[Any] = js.native
+  def queryConflicts(collectionLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[Any] = js.native
+  
   /**
     * Lists all databases that satisfy a query.
     * @param query     - A SQL query string.
@@ -342,6 +376,7 @@ class DocumentClient protected () extends js.Object {
     */
   def queryDatabases(query: DocumentQuery): QueryIterator[DatabaseMeta] = js.native
   def queryDatabases(query: DocumentQuery, options: FeedOptions): QueryIterator[DatabaseMeta] = js.native
+  
   /**
     * Query the documents for the collection.
     * @param collectionLink - The self-link of the collection.
@@ -349,15 +384,17 @@ class DocumentClient protected () extends js.Object {
     * @param [options]      - Represents the feed options.
     * @returns              - An instance of queryIterator to handle reading feed.
     */
-  def queryDocuments[TDocument](collectionLink: String, query: DocumentQuery): QueryIterator[RetrievedDocument with TDocument] = js.native
-  def queryDocuments[TDocument](collectionLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[RetrievedDocument with TDocument] = js.native
+  def queryDocuments[TDocument](collectionLink: String, query: DocumentQuery): QueryIterator[RetrievedDocument & TDocument] = js.native
+  def queryDocuments[TDocument](collectionLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[RetrievedDocument & TDocument] = js.native
+  
   /**
     * Lists all offers that satisfy a query.
     * @param query     - A SQL query.
     * @param options   - The feed options.
     */
-  def queryOffers(query: DocumentQuery): QueryIterator[_] = js.native
-  def queryOffers(query: DocumentQuery, options: FeedOptions): QueryIterator[_] = js.native
+  def queryOffers(query: DocumentQuery): QueryIterator[Any] = js.native
+  def queryOffers(query: DocumentQuery, options: FeedOptions): QueryIterator[Any] = js.native
+  
   /**
     * Query the permission for the user.
     * @param userLink  - The self-link of the user.
@@ -366,6 +403,7 @@ class DocumentClient protected () extends js.Object {
     */
   def queryPermissions(userLink: String, query: DocumentQuery): QueryIterator[PermissionMeta] = js.native
   def queryPermissions(userLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[PermissionMeta] = js.native
+  
   /**
     * Query the storedProcedures for the collection.
     * @param collectionLink    - The self-link of the collection.
@@ -375,6 +413,7 @@ class DocumentClient protected () extends js.Object {
     */
   def queryStoredProcedures(collectionLink: String, query: DocumentQuery): QueryIterator[ProcedureMeta] = js.native
   def queryStoredProcedures(collectionLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[ProcedureMeta] = js.native
+  
   /**
     * Query the triggers for the collection.
     * @param collectionLink         - The self-link of the collection.
@@ -384,6 +423,7 @@ class DocumentClient protected () extends js.Object {
     */
   def queryTriggers(collectionLink: String, query: DocumentQuery): QueryIterator[TriggerMeta] = js.native
   def queryTriggers(collectionLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[TriggerMeta] = js.native
+  
   /**
     * Query the user-defined functions for the collection.
     * @param collectionLink    - The self-link of the collection.
@@ -393,6 +433,7 @@ class DocumentClient protected () extends js.Object {
     */
   def queryUserDefinedFunctions(collectionLink: String, query: DocumentQuery): QueryIterator[UserDefinedFunctionMeta] = js.native
   def queryUserDefinedFunctions(collectionLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[UserDefinedFunctionMeta] = js.native
+  
   /**
     * Query the users for the database.
     * @param databaseLink  - The self-link of the database.
@@ -401,6 +442,7 @@ class DocumentClient protected () extends js.Object {
     */
   def queryUsers(databaseLink: String, query: DocumentQuery): QueryIterator[AbstractMeta] = js.native
   def queryUsers(databaseLink: String, query: DocumentQuery, options: FeedOptions): QueryIterator[AbstractMeta] = js.native
+  
   def readAttachment(attachmentLink: String, callback: RequestCallback[AttachmentMeta]): Unit = js.native
   /**
     * Read an Attachment object.
@@ -409,6 +451,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def readAttachment(attachmentLink: String, options: RequestOptions, callback: RequestCallback[AttachmentMeta]): Unit = js.native
+  
   /**
     * Get all attachments for this document.
     * @param documentLink      - The self-link of the document.
@@ -416,6 +459,7 @@ class DocumentClient protected () extends js.Object {
     */
   def readAttachments(documentLink: String): QueryIterator[AttachmentMeta] = js.native
   def readAttachments(documentLink: String, options: FeedOptions): QueryIterator[AttachmentMeta] = js.native
+  
   def readCollection(collectionLink: String, callback: RequestCallback[CollectionMeta]): Unit = js.native
   /**
     * Read a collection.
@@ -424,6 +468,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def readCollection(collectionLink: String, options: RequestOptions, callback: RequestCallback[CollectionMeta]): Unit = js.native
+  
   /**
     * Get all collections in this database.
     * @param databaseLink      - The self-link of the database.
@@ -431,21 +476,24 @@ class DocumentClient protected () extends js.Object {
     */
   def readCollections(databaseLink: String): QueryIterator[CollectionMeta] = js.native
   def readCollections(databaseLink: String, options: FeedOptions): QueryIterator[CollectionMeta] = js.native
-  def readConflict(conflictLink: String, callback: RequestCallback[_]): Unit = js.native
+  
+  def readConflict(conflictLink: String, callback: RequestCallback[Any]): Unit = js.native
   /**
     * Read a conflict.
     * @param conflictLink      - The self-link of the conflict.
     * @param options           - The request options.
     * @param callback          - The callback for the request.
     */
-  def readConflict(conflictLink: String, options: RequestOptions, callback: RequestCallback[_]): Unit = js.native
+  def readConflict(conflictLink: String, options: RequestOptions, callback: RequestCallback[Any]): Unit = js.native
+  
   /**
     * Get all conflicts in this collection.
     * @param collectionLink    - The self-link of the collection.
     * @param options           - The feed options.
     */
-  def readConflicts(collectionLink: String): QueryIterator[_] = js.native
-  def readConflicts(collectionLink: String, options: FeedOptions): QueryIterator[_] = js.native
+  def readConflicts(collectionLink: String): QueryIterator[Any] = js.native
+  def readConflicts(collectionLink: String, options: FeedOptions): QueryIterator[Any] = js.native
+  
   def readDatabase(databaseLink: String, callback: RequestCallback[DatabaseMeta]): Unit = js.native
   /**
     * Read a database.
@@ -454,12 +502,14 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def readDatabase(databaseLink: String, options: RequestOptions, callback: RequestCallback[DatabaseMeta]): Unit = js.native
+  
   /**
     * List all databases.
     * @param options       - The request options.
     */
   def readDatabases(): QueryIterator[DatabaseMeta] = js.native
   def readDatabases(options: FeedOptions): QueryIterator[DatabaseMeta] = js.native
+  
   def readDocument(documentLink: String, callback: RequestCallback[RetrievedDocument]): Unit = js.native
   /**
     * Read a document.
@@ -468,6 +518,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def readDocument(documentLink: String, options: RequestOptions, callback: RequestCallback[RetrievedDocument]): Unit = js.native
+  
   /**
     * Get all documents in this collection.
     * @param collectionLink    - The self-link of the collection.
@@ -475,24 +526,28 @@ class DocumentClient protected () extends js.Object {
     */
   def readDocuments(collectionLink: String): QueryIterator[RetrievedDocument] = js.native
   def readDocuments(collectionLink: String, options: FeedOptions): QueryIterator[RetrievedDocument] = js.native
+  
   /**
     * Read the media for the attachment object.
     * @param mediaLink     - The media link of the media in the attachment.
     * @param callback      - The callback for the request, the result parameter can be a buffer or a stream depending on the value of MediaReadMode
     */
   def readMedia(mediaLink: String, callback: RequestCallback[Buffer | ReadableStream]): Unit = js.native
+  
   /**
     * Read an offer.
     * @param offerLink     - The self-link of the offer.
     * @param callback      - The callback for the request.
     */
-  def readOffer(offerLink: String, callback: RequestCallback[_]): Unit = js.native
+  def readOffer(offerLink: String, callback: RequestCallback[Any]): Unit = js.native
+  
   /**
     * List all offers
     * @param options       - The feed options.
     */
-  def readOffers(): QueryIterator[js.Array[_]] = js.native
-  def readOffers(options: FeedOptions): QueryIterator[js.Array[_]] = js.native
+  def readOffers(): QueryIterator[js.Array[Any]] = js.native
+  def readOffers(options: FeedOptions): QueryIterator[js.Array[Any]] = js.native
+  
   def readPermission(permissionLink: String, callback: RequestCallback[PermissionMeta]): Unit = js.native
   /**
     * Read a permission.
@@ -501,6 +556,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def readPermission(permissionLink: String, options: RequestOptions, callback: RequestCallback[PermissionMeta]): Unit = js.native
+  
   /**
     * Get all permissions for this user.
     * @param userLink          - The self-link of the user.
@@ -508,6 +564,7 @@ class DocumentClient protected () extends js.Object {
     */
   def readPermissions(userLink: String): QueryIterator[PermissionMeta] = js.native
   def readPermissions(userLink: String, feedOptions: FeedOptions): QueryIterator[PermissionMeta] = js.native
+  
   def readStoredProcedure(sprocLink: String, callback: RequestCallback[ProcedureMeta]): Unit = js.native
   /**
     * Read a stored procedure
@@ -516,6 +573,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def readStoredProcedure(sprocLink: String, options: RequestOptions, callback: RequestCallback[ProcedureMeta]): Unit = js.native
+  
   /**
     * Get all StoredProcedures in this collection.
     * @param collectionLink    - The self-link of the collection.
@@ -523,6 +581,7 @@ class DocumentClient protected () extends js.Object {
     */
   def readStoredProcedures(collectionLink: String): QueryIterator[ProcedureMeta] = js.native
   def readStoredProcedures(collectionLink: String, options: RequestOptions): QueryIterator[ProcedureMeta] = js.native
+  
   def readTrigger(triggerLink: String, callback: RequestCallback[TriggerMeta]): Unit = js.native
   /**
     * Reads a trigger object.
@@ -531,6 +590,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback          - The callback for the request.
     */
   def readTrigger(triggerLink: String, options: RequestOptions, callback: RequestCallback[TriggerMeta]): Unit = js.native
+  
   /**
     * Get all triggers in this collection.
     * @param collectionLink    - The self-link of the collection.
@@ -538,6 +598,7 @@ class DocumentClient protected () extends js.Object {
     */
   def readTriggers(collectionLink: String): QueryIterator[TriggerMeta] = js.native
   def readTriggers(collectionLink: String, options: FeedOptions): QueryIterator[TriggerMeta] = js.native
+  
   def readUser(userLink: String, callback: RequestCallback[AbstractMeta]): Unit = js.native
   /**
     * Reads a user.
@@ -546,6 +607,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback  - The callback for the request.
     */
   def readUser(userLink: String, options: RequestOptions, callback: RequestCallback[AbstractMeta]): Unit = js.native
+  
   def readUserDefinedFunction(udfLink: String, callback: RequestCallback[UserDefinedFunctionMeta]): Unit = js.native
   /**
     * Reads a udf object.
@@ -554,6 +616,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback  - The callback for the request.
     */
   def readUserDefinedFunction(udfLink: String, options: RequestOptions, callback: RequestCallback[UserDefinedFunctionMeta]): Unit = js.native
+  
   /**
     * Get all UserDefinedFunctions in this collection.
     * @param collectionLink    - The self-link of the collection.
@@ -561,6 +624,7 @@ class DocumentClient protected () extends js.Object {
     */
   def readUserDefinedFunctions(collectionLink: String): QueryIterator[UserDefinedFunctionMeta] = js.native
   def readUserDefinedFunctions(collectionLink: String, options: FeedOptions): QueryIterator[UserDefinedFunctionMeta] = js.native
+  
   /**
     * Get all users in this database.
     * @param databaseLink      - The self-link of the database.
@@ -568,6 +632,7 @@ class DocumentClient protected () extends js.Object {
     */
   def readUsers(databaseLink: String): QueryIterator[js.Array[AbstractMeta]] = js.native
   def readUsers(databaseLink: String, feedOptions: FeedOptions): QueryIterator[js.Array[AbstractMeta]] = js.native
+  
   def replaceAttachment(attachmentLink: String, attachment: Attachment, callback: RequestCallback[AttachmentMeta]): Unit = js.native
   /**
     * Replace the attachment object.
@@ -582,6 +647,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[AttachmentMeta]
   ): Unit = js.native
+  
   def replaceCollection(collectionLink: String, collection: Collection, callback: RequestCallback[CollectionMeta]): Unit = js.native
   /**
     * Replace the document collection.
@@ -596,6 +662,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[CollectionMeta]
   ): Unit = js.native
+  
   def replaceDocument[TDocument](documentLink: String, document: NewDocument, callback: RequestCallback[RetrievedDocument]): Unit = js.native
   /**
     * Replace the document object.
@@ -610,13 +677,15 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[RetrievedDocument]
   ): Unit = js.native
+  
   /**
     * Replace the offer object.
     * @param offerLink     - The self-link of the offer.
     * @param offer         - Represent the new offer body.
     * @param callback      - The callback for the request.
     */
-  def replaceOffer(offerLink: String, offer: js.Any, callback: RequestCallback[_]): Unit = js.native
+  def replaceOffer(offerLink: String, offer: Any, callback: RequestCallback[Any]): Unit = js.native
+  
   def replacePermission(permissionLink: String, permission: Permission, callback: RequestCallback[PermissionMeta]): Unit = js.native
   /**
     * Replace the permission object.
@@ -631,6 +700,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[PermissionMeta]
   ): Unit = js.native
+  
   def replaceStoredProcedure(procedureLink: String, procedure: Procedure, callback: RequestCallback[ProcedureMeta]): Unit = js.native
   /**
     * Replace the StoredProcedure object.
@@ -645,6 +715,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[ProcedureMeta]
   ): Unit = js.native
+  
   def replaceTrigger(triggerLink: String, trigger: Trigger, callback: RequestCallback[TriggerMeta]): Unit = js.native
   /**
     * Replace the trigger object.
@@ -659,6 +730,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[TriggerMeta]
   ): Unit = js.native
+  
   def replaceUser(userLink: String, user: UniqueId, callback: RequestCallback[AbstractMeta]): Unit = js.native
   /**
     * Replace the user object.
@@ -668,6 +740,7 @@ class DocumentClient protected () extends js.Object {
     * @param callback      - The callback for the request.
     */
   def replaceUser(userLink: String, user: UniqueId, options: RequestOptions, callback: RequestCallback[AbstractMeta]): Unit = js.native
+  
   def replaceUserDefinedFunction(udfLink: String, udf: UserDefinedFunction, callback: RequestCallback[UserDefinedFunctionMeta]): Unit = js.native
   /**
     * Replace the UserDefinedFunction object.
@@ -682,7 +755,8 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[UserDefinedFunctionMeta]
   ): Unit = js.native
-  def updateMedia(mediaLink: String, readableStream: ReadableStream, callback: RequestCallback[_]): Unit = js.native
+  
+  def updateMedia(mediaLink: String, readableStream: ReadableStream, callback: RequestCallback[Any]): Unit = js.native
   /**
     * Update media for the attachment
     * @param mediaLink         - The media link of the media in the attachment.
@@ -694,8 +768,9 @@ class DocumentClient protected () extends js.Object {
     mediaLink: String,
     readableStream: ReadableStream,
     options: MediaOptions,
-    callback: RequestCallback[_]
+    callback: RequestCallback[Any]
   ): Unit = js.native
+  
   def upsertAttachment(documentLink: String, body: Attachment, callback: RequestCallback[AttachmentMeta]): Unit = js.native
   /**
     * Upsert an attachment for the document object.
@@ -714,7 +789,8 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[AttachmentMeta]
   ): Unit = js.native
-  def upsertAttachmentAndUploadMedia(documentLink: String, readableStream: ReadableStream, callback: RequestCallback[_]): Unit = js.native
+  
+  def upsertAttachmentAndUploadMedia(documentLink: String, readableStream: ReadableStream, callback: RequestCallback[Any]): Unit = js.native
   /**
     * Upsert an attachment for the document object.
     * @param documentLink      - The self-link of the document.
@@ -726,8 +802,9 @@ class DocumentClient protected () extends js.Object {
     documentLink: String,
     readableStream: ReadableStream,
     options: MediaOptions,
-    callback: RequestCallback[_]
+    callback: RequestCallback[Any]
   ): Unit = js.native
+  
   def upsertDocument[T](
     documentsFeedOrDatabaseLink: String,
     body: NewDocument,
@@ -750,6 +827,7 @@ class DocumentClient protected () extends js.Object {
     options: DocumentOptions,
     callback: RequestCallback[RetrievedDocument]
   ): Unit = js.native
+  
   def upsertPermission(userLink: String, body: Permission, callback: RequestCallback[PermissionMeta]): Unit = js.native
   /**
     * Upsert a permission.
@@ -767,6 +845,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[PermissionMeta]
   ): Unit = js.native
+  
   def upsertStoredProcedure(collectionLink: String, sproc: Procedure, callback: RequestCallback[ProcedureMeta]): Unit = js.native
   /**
     * Upsert a StoredProcedure.
@@ -786,6 +865,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[ProcedureMeta]
   ): Unit = js.native
+  
   def upsertTrigger(collectionLink: String, trigger: Trigger, callback: RequestCallback[TriggerMeta]): Unit = js.native
   /**
     * Upsert a trigger.
@@ -804,6 +884,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[TriggerMeta]
   ): Unit = js.native
+  
   def upsertUser(databaseLink: String, body: UniqueId, callback: RequestCallback[AbstractMeta]): Unit = js.native
   /**
     * Upsert a database user.
@@ -818,6 +899,7 @@ class DocumentClient protected () extends js.Object {
     options: RequestOptions,
     callback: RequestCallback[AbstractMeta]
   ): Unit = js.native
+  
   def upsertUserDefinedFunction(
     collectionLink: String,
     udf: UserDefinedFunction,
@@ -841,4 +923,3 @@ class DocumentClient protected () extends js.Object {
     callback: RequestCallback[UserDefinedFunctionMeta]
   ): Unit = js.native
 }
-

@@ -10,10 +10,10 @@ A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS
 | ------------------ | :-------------: |
 | Full name          | pikaday |
 | Keywords           | datepicker, calendar, date |
-| # releases         | 2 |
-| # dependents       | 127 |
-| # downloads        | 6750989 |
-| # stars            | 15 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1184507.3333333333 |
+| # stars            | 7846.0 |
 
 ## Links
 - [Homepage](https://pikaday.com)

@@ -1,37 +1,61 @@
 package typingsJapgolly.auth0Lock
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.auth0Lock.anon.Hint
 import typingsJapgolly.auth0Lock.auth0LockStrings.`false`
 import typingsJapgolly.auth0Lock.auth0LockStrings.`true`
 import typingsJapgolly.auth0Lock.auth0LockStrings.checkbox
+import typingsJapgolly.auth0Lock.auth0LockStrings.root
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Auth0LockAdditionalCheckboxSignUpField extends Auth0LockAdditionalSignUpField {
+trait Auth0LockAdditionalCheckboxSignUpField
+  extends StObject
+     with Auth0LockAdditionalSignUpField {
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var name: String
+  
   var placeholder: String
+  
   var prefill: `true` | `false`
+  
+  var storage: js.UndefOr[root] = js.undefined
+  
   var `type`: js.UndefOr[checkbox] = js.undefined
-  var validator: js.UndefOr[js.Function1[/* input */ String, AnonHint]] = js.undefined
+  
+  var validator: js.UndefOr[js.Function1[/* input */ String, Hint]] = js.undefined
 }
-
 object Auth0LockAdditionalCheckboxSignUpField {
-  @scala.inline
-  def apply(
-    name: String,
-    placeholder: String,
-    prefill: `true` | `false`,
-    icon: String = null,
-    `type`: checkbox = null,
-    validator: /* input */ String => CallbackTo[AnonHint] = null
-  ): Auth0LockAdditionalCheckboxSignUpField = {
+  
+  inline def apply(name: String, placeholder: String, prefill: `true` | `false`): Auth0LockAdditionalCheckboxSignUpField = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], prefill = prefill.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction1((t0: /* input */ java.lang.String) => validator(t0).runNow()))
     __obj.asInstanceOf[Auth0LockAdditionalCheckboxSignUpField]
   }
+  
+  extension [Self <: Auth0LockAdditionalCheckboxSignUpField](x: Self) {
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPrefill(value: `true` | `false`): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
+    
+    inline def setStorage(value: root): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    
+    inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+    
+    inline def setType(value: checkbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setValidator(value: /* input */ String => Hint): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
+    
+    inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+  }
 }
-

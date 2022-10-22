@@ -1,20 +1,17 @@
 package typingsJapgolly.clearbladejsNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait QueryOptionsWithID
-  extends CollectionOptionsWithID
+  extends StObject
+     with CollectionOptionsWithID
      with QueryOptions
-
 object QueryOptionsWithID {
-  @scala.inline
-  def apply(collectionID: String, limit: Int | Double = null, offset: Int | Double = null): QueryOptionsWithID = {
+  
+  inline def apply(collectionID: String): QueryOptionsWithID = {
     val __obj = js.Dynamic.literal(collectionID = collectionID.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptionsWithID]
   }
 }
-

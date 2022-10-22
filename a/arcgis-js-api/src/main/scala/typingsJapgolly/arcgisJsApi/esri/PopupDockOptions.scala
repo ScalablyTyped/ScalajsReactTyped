@@ -1,65 +1,63 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PopupDockOptions extends Object {
+trait PopupDockOptions
+  extends StObject
+     with Object {
+  
   /**
-    * Defines the dimensions of the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) at which to dock the popup. Set to `false` to disable docking at a breakpoint.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions)
+    * Defines the dimensions of the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) at which to dock the popup.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions)
     */
   var breakpoint: js.UndefOr[Boolean | PopupDockOptionsBreakpoint] = js.undefined
+  
   /**
-    * If `true`, displays the dock button. If `false`, hides the dock button from the popup.
+    * If `true`, displays the dock button.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions)
     */
   var buttonEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The position in the view at which to dock the popup. Can be set as either a string or function. See the table below for known string values and their position in the view based on the view's size.
-    *
-    * Known Value | View size > breakpoint | View size < breakpoint
-    * --------------- | ------------------------------- | -------------
-    * auto | top-right | bottom 100%
-    * top-left | top-left | top 100%
-    * top-center | top-center | top 100%
-    * top-right | top-right | top 100%
-    * bottom-left | bottom-left | bottom 100%
-    * bottom-center | bottom-center | bottom 100%
-    * bottom-right | bottom-right | bottom 100%
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions)
+    * The position in the view at which to dock the popup.
     *
     * @default auto
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions)
     */
   var position: js.UndefOr[String | js.Function] = js.undefined
 }
-
 object PopupDockOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    breakpoint: Boolean | PopupDockOptionsBreakpoint = null,
-    buttonEnabled: js.UndefOr[Boolean] = js.undefined,
-    position: String | js.Function = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): PopupDockOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonEnabled)) __obj.updateDynamic("buttonEnabled")(buttonEnabled.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[PopupDockOptions]
   }
+  
+  extension [Self <: PopupDockOptions](x: Self) {
+    
+    inline def setBreakpoint(value: Boolean | PopupDockOptionsBreakpoint): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+    
+    inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
+    
+    inline def setButtonEnabled(value: Boolean): Self = StObject.set(x, "buttonEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setButtonEnabledUndefined: Self = StObject.set(x, "buttonEnabled", js.undefined)
+    
+    inline def setPosition(value: String | js.Function): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+  }
 }
-

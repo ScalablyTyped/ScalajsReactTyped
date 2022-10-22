@@ -1,45 +1,35 @@
 package typingsJapgolly.antDesignReactNative.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.lg
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.md
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.sm
-import typingsJapgolly.antDesignReactNative.wingBlankMod.WingBlankProps
-import typingsJapgolly.antDesignReactNative.wingBlankMod.default
+import typingsJapgolly.antDesignReactNative.libWingBlankMod.WingBlankProps
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WingBlank {
-  def apply(
-    size: sm | md | lg = null,
-    style: StyleProp[ViewStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[WingBlankProps, default, Unit, WingBlankProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.wingBlankMod.WingBlankProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.wingBlankMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.wingBlankMod.WingBlankProps])(children: _*)
-  }
-  @JSImport("@ant-design/react-native/lib/wing-blank", JSImport.Default)
+  @JSImport("@ant-design/react-native", "WingBlank")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.WingBlank] {
+    
+    inline def size(value: sm | md | lg): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+  }
+  
+  implicit def make(companion: WingBlank.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: WingBlankProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

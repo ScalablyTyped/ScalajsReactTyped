@@ -1,23 +1,27 @@
 package typingsJapgolly.monacoEditor.mod.editor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MinimapPosition extends js.Object
-
+sealed trait MinimapPosition extends StObject
 @JSImport("monaco-editor", "editor.MinimapPosition")
 @js.native
-object MinimapPosition extends js.Object {
-  @js.native
-  sealed trait Inline extends MinimapPosition
+object MinimapPosition extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MinimapPosition with Double] = js.native
-  /* 1 */ @js.native
-  object Inline extends TopLevel[Inline with Double]
+  def apply(value: Double): js.UndefOr[MinimapPosition & Double] = js.native
   
+  @js.native
+  sealed trait Gutter
+    extends StObject
+       with MinimapPosition
+  /* 2 */ val Gutter: typingsJapgolly.monacoEditor.mod.editor.MinimapPosition.Gutter & Double = js.native
+  
+  @js.native
+  sealed trait Inline
+    extends StObject
+       with MinimapPosition
+  /* 1 */ val Inline: typingsJapgolly.monacoEditor.mod.editor.MinimapPosition.Inline & Double = js.native
 }
-

@@ -1,21 +1,17 @@
 package typingsJapgolly.amapJsApi.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.amapJsApi.amapJsApiStrings.dashed
   - typingsJapgolly.amapJsApi.amapJsApiStrings.solid
 */
-trait StrokeStyle extends js.Object
-
+trait StrokeStyle extends StObject
 object StrokeStyle {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dashed: typingsJapgolly.amapJsApi.amapJsApiStrings.dashed = this.cast("dashed")
-  @scala.inline
-  def solid: typingsJapgolly.amapJsApi.amapJsApiStrings.solid = this.cast("solid")
+  
+  inline def dashed: typingsJapgolly.amapJsApi.amapJsApiStrings.dashed = "dashed".asInstanceOf[typingsJapgolly.amapJsApi.amapJsApiStrings.dashed]
+  
+  inline def solid: typingsJapgolly.amapJsApi.amapJsApiStrings.solid = "solid".asInstanceOf[typingsJapgolly.amapJsApi.amapJsApiStrings.solid]
 }
-

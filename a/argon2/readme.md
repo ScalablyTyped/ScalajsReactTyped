@@ -1,7 +1,7 @@
 
 # Scala.js typings for argon2
 
-Typings are for version 0.25.1
+Typings are for version 0.30.1
 
 ## Library description:
 An Argon2 library for Node
@@ -10,10 +10,10 @@ An Argon2 library for Node
 | ------------------ | :-------------: |
 | Full name          | argon2 |
 | Keywords           | argon2, crypto, encryption, hashing, password |
-| # releases         | 22 |
-| # dependents       | 57 |
-| # downloads        | 562431 |
-| # stars            | 9 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 378071.0 |
+| # stars            | 1391.0 |
 
 ## Links
 - [Homepage](https://github.com/ranisalt/node-argon2#readme)

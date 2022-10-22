@@ -1,20 +1,62 @@
 package typingsJapgolly.activexWord.Word
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.Tasks")
-@js.native
-class Tasks protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.Tasks_typekey")
-  var WordDotTasks_typekey: Tasks = js.native
-  def Exists(Name: String): Boolean = js.native
-  def ExitWindows(): Unit = js.native
-  def Item(Index: js.Any): Task = js.native
+trait Tasks extends StObject {
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  val Count: Double
+  
+  val Creator: Double
+  
+  def Exists(Name: String): Boolean
+  
+  def ExitWindows(): Unit
+  
+  def Item(Index: Any): Task
+  
+  val Parent: Any
+  
+  /* private */ @JSName("Word.Tasks_typekey")
+  var WordDotTasks_typekey: Tasks
 }
-
+object Tasks {
+  
+  inline def apply(
+    Application: Application,
+    Count: Double,
+    Creator: Double,
+    Exists: String => Boolean,
+    ExitWindows: Callback,
+    Item: Any => Task,
+    Parent: Any,
+    WordDotTasks_typekey: Tasks
+  ): Tasks = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Exists = js.Any.fromFunction1(Exists), ExitWindows = ExitWindows.toJsFn, Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.Tasks_typekey")(WordDotTasks_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Tasks]
+  }
+  
+  extension [Self <: Tasks](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setExists(value: String => Boolean): Self = StObject.set(x, "Exists", js.Any.fromFunction1(value))
+    
+    inline def setExitWindows(value: Callback): Self = StObject.set(x, "ExitWindows", value.toJsFn)
+    
+    inline def setItem(value: Any => Task): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotTasks_typekey(value: Tasks): Self = StObject.set(x, "Word.Tasks_typekey", value.asInstanceOf[js.Any])
+  }
+}

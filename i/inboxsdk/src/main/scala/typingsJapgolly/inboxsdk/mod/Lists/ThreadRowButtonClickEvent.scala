@@ -1,21 +1,29 @@
 package typingsJapgolly.inboxsdk.mod.Lists
 
 import typingsJapgolly.inboxsdk.mod.Common.DropdownView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThreadRowButtonClickEvent extends js.Object {
+trait ThreadRowButtonClickEvent extends StObject {
+  
   var dropdown: js.UndefOr[DropdownView] = js.undefined
+  
   var threadRowView: ThreadRowView
 }
-
 object ThreadRowButtonClickEvent {
-  @scala.inline
-  def apply(threadRowView: ThreadRowView, dropdown: DropdownView = null): ThreadRowButtonClickEvent = {
+  
+  inline def apply(threadRowView: ThreadRowView): ThreadRowButtonClickEvent = {
     val __obj = js.Dynamic.literal(threadRowView = threadRowView.asInstanceOf[js.Any])
-    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadRowButtonClickEvent]
   }
+  
+  extension [Self <: ThreadRowButtonClickEvent](x: Self) {
+    
+    inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+    
+    inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
+    
+    inline def setThreadRowView(value: ThreadRowView): Self = StObject.set(x, "threadRowView", value.asInstanceOf[js.Any])
+  }
 }
-

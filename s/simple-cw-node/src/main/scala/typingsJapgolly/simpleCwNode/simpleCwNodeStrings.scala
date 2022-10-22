@@ -1,34 +1,28 @@
 package typingsJapgolly.simpleCwNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simpleCwNodeStrings {
-  @js.native
-  sealed trait contacts extends js.Object
   
   @js.native
-  sealed trait me extends js.Object
+  sealed trait contacts extends StObject
+  inline def contacts: contacts = "contacts".asInstanceOf[contacts]
   
   @js.native
-  sealed trait mySlashstatus extends js.Object
+  sealed trait me extends StObject
+  inline def me: me = "me".asInstanceOf[me]
   
   @js.native
-  sealed trait mySlashtasks extends js.Object
+  sealed trait mySlashstatus extends StObject
+  inline def mySlashstatus: mySlashstatus = "my/status".asInstanceOf[mySlashstatus]
   
   @js.native
-  sealed trait rooms extends js.Object
+  sealed trait mySlashtasks extends StObject
+  inline def mySlashtasks: mySlashtasks = "my/tasks".asInstanceOf[mySlashtasks]
   
-  @scala.inline
-  def contacts: contacts = "contacts".asInstanceOf[contacts]
-  @scala.inline
-  def me: me = "me".asInstanceOf[me]
-  @scala.inline
-  def mySlashstatus: mySlashstatus = "my/status".asInstanceOf[mySlashstatus]
-  @scala.inline
-  def mySlashtasks: mySlashtasks = "my/tasks".asInstanceOf[mySlashtasks]
-  @scala.inline
-  def rooms: rooms = "rooms".asInstanceOf[rooms]
+  @js.native
+  sealed trait rooms extends StObject
+  inline def rooms: rooms = "rooms".asInstanceOf[rooms]
 }
-

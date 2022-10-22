@@ -1,22 +1,33 @@
 package typingsJapgolly.awsSdkClientCognitoIdentityBrowser
 
-import typingsJapgolly.awsSdkClientCognitoIdentityBrowser.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientCognitoIdentityBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity-browser/types/DeleteIdentityPoolOutput", JSImport.Namespace)
-@js.native
-object typesDeleteIdentityPoolOutputMod extends js.Object {
-  @js.native
-  trait DeleteIdentityPoolOutput extends OutputTypesUnion {
+object typesDeleteIdentityPoolOutputMod {
+  
+  trait DeleteIdentityPoolOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
   }
-  
+  object DeleteIdentityPoolOutput {
+    
+    inline def apply($metadata: ResponseMetadata): DeleteIdentityPoolOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DeleteIdentityPoolOutput]
+    }
+    
+    extension [Self <: DeleteIdentityPoolOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

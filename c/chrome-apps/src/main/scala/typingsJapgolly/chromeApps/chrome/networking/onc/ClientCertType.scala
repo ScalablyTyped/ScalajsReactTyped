@@ -1,21 +1,17 @@
 package typingsJapgolly.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chromeApps.chromeAppsStrings.Ref
   - typingsJapgolly.chromeApps.chromeAppsStrings.Pattern
 */
-trait ClientCertType extends js.Object
-
+trait ClientCertType extends StObject
 object ClientCertType {
-  @scala.inline
-  def Pattern: typingsJapgolly.chromeApps.chromeAppsStrings.Pattern = this.cast("Pattern")
-  @scala.inline
-  def Ref: typingsJapgolly.chromeApps.chromeAppsStrings.Ref = this.cast("Ref")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Pattern: typingsJapgolly.chromeApps.chromeAppsStrings.Pattern = "Pattern".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.Pattern]
+  
+  inline def Ref: typingsJapgolly.chromeApps.chromeAppsStrings.Ref = "Ref".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.Ref]
 }
-

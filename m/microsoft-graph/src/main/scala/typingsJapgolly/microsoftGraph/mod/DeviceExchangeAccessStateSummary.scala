@@ -1,38 +1,53 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceExchangeAccessStateSummary extends js.Object {
+trait DeviceExchangeAccessStateSummary extends StObject {
+  
   // Total count of devices with Exchange Access State: Allowed.
   var allowedDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Total count of devices with Exchange Access State: Blocked.
   var blockedDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Total count of devices with Exchange Access State: Quarantined.
   var quarantinedDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Total count of devices for which no Exchange Access State could be found.
   var unavailableDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Total count of devices with Exchange Access State: Unknown.
   var unknownDeviceCount: js.UndefOr[Double] = js.undefined
 }
-
 object DeviceExchangeAccessStateSummary {
-  @scala.inline
-  def apply(
-    allowedDeviceCount: Int | Double = null,
-    blockedDeviceCount: Int | Double = null,
-    quarantinedDeviceCount: Int | Double = null,
-    unavailableDeviceCount: Int | Double = null,
-    unknownDeviceCount: Int | Double = null
-  ): DeviceExchangeAccessStateSummary = {
+  
+  inline def apply(): DeviceExchangeAccessStateSummary = {
     val __obj = js.Dynamic.literal()
-    if (allowedDeviceCount != null) __obj.updateDynamic("allowedDeviceCount")(allowedDeviceCount.asInstanceOf[js.Any])
-    if (blockedDeviceCount != null) __obj.updateDynamic("blockedDeviceCount")(blockedDeviceCount.asInstanceOf[js.Any])
-    if (quarantinedDeviceCount != null) __obj.updateDynamic("quarantinedDeviceCount")(quarantinedDeviceCount.asInstanceOf[js.Any])
-    if (unavailableDeviceCount != null) __obj.updateDynamic("unavailableDeviceCount")(unavailableDeviceCount.asInstanceOf[js.Any])
-    if (unknownDeviceCount != null) __obj.updateDynamic("unknownDeviceCount")(unknownDeviceCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceExchangeAccessStateSummary]
   }
+  
+  extension [Self <: DeviceExchangeAccessStateSummary](x: Self) {
+    
+    inline def setAllowedDeviceCount(value: Double): Self = StObject.set(x, "allowedDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setAllowedDeviceCountUndefined: Self = StObject.set(x, "allowedDeviceCount", js.undefined)
+    
+    inline def setBlockedDeviceCount(value: Double): Self = StObject.set(x, "blockedDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setBlockedDeviceCountUndefined: Self = StObject.set(x, "blockedDeviceCount", js.undefined)
+    
+    inline def setQuarantinedDeviceCount(value: Double): Self = StObject.set(x, "quarantinedDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setQuarantinedDeviceCountUndefined: Self = StObject.set(x, "quarantinedDeviceCount", js.undefined)
+    
+    inline def setUnavailableDeviceCount(value: Double): Self = StObject.set(x, "unavailableDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setUnavailableDeviceCountUndefined: Self = StObject.set(x, "unavailableDeviceCount", js.undefined)
+    
+    inline def setUnknownDeviceCount(value: Double): Self = StObject.set(x, "unknownDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setUnknownDeviceCountUndefined: Self = StObject.set(x, "unknownDeviceCount", js.undefined)
+  }
 }
-

@@ -1,20 +1,30 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModuleWithProviders[T] extends js.Object {
+trait ModuleWithProviders[T] extends StObject {
+  
   var ngModule: Type[T]
+  
   var providers: js.UndefOr[js.Array[Provider]] = js.undefined
 }
-
 object ModuleWithProviders {
-  @scala.inline
-  def apply[T](ngModule: Type[T], providers: js.Array[Provider] = null): ModuleWithProviders[T] = {
+  
+  inline def apply[T](ngModule: Type[T]): ModuleWithProviders[T] = {
     val __obj = js.Dynamic.literal(ngModule = ngModule.asInstanceOf[js.Any])
-    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleWithProviders[T]]
   }
+  
+  extension [Self <: ModuleWithProviders[?], T](x: Self & ModuleWithProviders[T]) {
+    
+    inline def setNgModule(value: Type[T]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
+    
+    inline def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    
+    inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+    
+    inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value*))
+  }
 }
-

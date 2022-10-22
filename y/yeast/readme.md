@@ -11,9 +11,9 @@ Tiny but linear growing unique id generator
 | Full name          | yeast |
 | Keywords           | yeast, id, generator, unique |
 | # releases         | 0 |
-| # dependents       | 42 |
-| # downloads        | 125601625 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4729149666666666E7 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/unshiftio/yeast)

@@ -1,26 +1,20 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UpdateDraftBodyType extends js.Object
-
+sealed trait UpdateDraftBodyType extends StObject
 /**
   * An enum value that specifies the type of an UpdateDraftBodyAction.
   */
 @JSGlobal("GoogleAppsScript.Card_Service.UpdateDraftBodyType")
 @js.native
-object UpdateDraftBodyType extends js.Object {
+object UpdateDraftBodyType extends StObject {
+  
   @js.native
-  sealed trait IN_PLACE_INSERT extends UpdateDraftBodyType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UpdateDraftBodyType with Double] = js.native
-  /* 0 */ @js.native
-  object IN_PLACE_INSERT extends TopLevel[IN_PLACE_INSERT with Double]
-  
+  sealed trait IN_PLACE_INSERT
+    extends StObject
+       with UpdateDraftBodyType
 }
-

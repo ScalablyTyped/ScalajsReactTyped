@@ -1,23 +1,17 @@
 package typingsJapgolly.csstype.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StandardProperties[TLength]
-  extends StandardLonghandProperties[TLength]
-     with StandardShorthandProperties[TLength]
-
+trait StandardProperties[TLength, TTime]
+  extends StObject
+     with StandardLonghandProperties[TLength, TTime]
+     with StandardShorthandProperties[TLength, TTime]
 object StandardProperties {
-  @scala.inline
-  def apply[TLength](
-    StandardLonghandProperties: StandardLonghandProperties[TLength] = null,
-    StandardShorthandProperties: StandardShorthandProperties[TLength] = null
-  ): StandardProperties[TLength] = {
+  
+  inline def apply[TLength, TTime](): StandardProperties[TLength, TTime] = {
     val __obj = js.Dynamic.literal()
-    if (StandardLonghandProperties != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandProperties)
-    if (StandardShorthandProperties != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandProperties)
-    __obj.asInstanceOf[StandardProperties[TLength]]
+    __obj.asInstanceOf[StandardProperties[TLength, TTime]]
   }
 }
-

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "wix-ui-core" : "3.0.248"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "wix-ui-core" : "3.0.248"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

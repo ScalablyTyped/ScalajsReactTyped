@@ -1,100 +1,115 @@
 package typingsJapgolly.smartFoxServer.SFS2X.Requests
 
 import typingsJapgolly.smartFoxServer.SFS2X.Entities.Match.MatchExpression
-import typingsJapgolly.smartFoxServer.SFS2X.Entities.SFSRoom
 import typingsJapgolly.smartFoxServer.SFS2X.Entities.SFSUser
-import typingsJapgolly.smartFoxServer.SFS2X.IINVITATION
+import typingsJapgolly.smartFoxServer.SFS2X.Entities.Variables.ReservedRoomVariables
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region Game
 // http://docs2x.smartfoxserver.com/api-docs/jsdoc/symbols/SFS2X.Requests.Game.html
-@JSGlobal("SFS2X.Requests.Game")
-@js.native
-object Game extends js.Object {
-  @js.native
-  class CreateSFSGameRequest protected () extends js.Object {
-    /**
-      * Creates a new CreateSFSGameRequest instance.
-      * @param {SFSGameSettings} settings An object containing the Game Room configuration settings.
-      */
-    def this(settings: SFSGameSettings) = this()
-  }
+object Game {
   
-  @js.native
-  class InvitationReplyRequest protected () extends js.Object {
-    /**
-      * Creates a new InvitationReplyRequest instance.
-      * @param {IINVITATION} invitation      An instance of the Invitation class containing the invitation details (inviter, custom parameters, etc).
-      * @param {number}      invitationReply The answer to be sent to the inviter, among those available as constants in the InvitationReply class.
-      * @param {Object}      [params=null]          An object containing custom parameters to be returned to the inviter together with the reply (for example a message describing the reason of refusal).
-      */
-    def this(invitation: IINVITATION, invitationReply: Double) = this()
-    def this(invitation: IINVITATION, invitationReply: Double, params: js.Object) = this()
-  }
+  trait CreateSFSGameRequest extends StObject
   
-  @js.native
-  class InviteUsersRequest protected () extends js.Object {
-    /**
-      * Creates a new InviteUsersRequest instance.
-      * @param {Entities.SFSUser[]} invitedUsers     A list of SFSUser objects, each representing a user to send the invitation to.
-      * @param {number}             secondsForAnswer The number of seconds available to each invited user to reply to the invitation (recommended range: 15 to 40 seconds).
-      * @param {Object}             [params=null]           An object containing custom parameters containing additional invitation details.
-      */
-    def this(invitedUsers: js.Array[SFSUser], secondsForAnswer: Double) = this()
-    def this(invitedUsers: js.Array[SFSUser], secondsForAnswer: Double, params: js.Object) = this()
-  }
+  trait InvitationReplyRequest extends StObject
   
-  @js.native
-  class QuickJoinGameRequest protected () extends js.Object {
-    /**
-      * Creates a new QuickJoinGameRequest instance.
-      * @param {Entities.SFSRoom[]} whereToSearch An array of SFSRoom objects or an array of Group names to which the matching expression should be applied. The maximum number of elements that this array can contain is 32.
-      * @param {Entities.SFSRoom}   [roomToLeave=null]   A SFSRoom object representing the Room that the user should leave when joining the game.
-      */
-    def this(whereToSearch: js.Array[SFSRoom]) = this()
-    /**
-      * Creates a new QuickJoinGameRequest instance.
-      * @param {Entities.Match.MatchExpression} matchExpression A matching expression that the system will use to search a Game Room where to join the current user.
-      * @param {Entities.SFSRoom[]} whereToSearch An array of SFSRoom objects or an array of Group names to which the matching expression should be applied. The maximum number of elements that this array can contain is 32.
-      * @param {Entities.SFSRoom}               [roomToLeave=null]     A SFSRoom object representing the Room that the user should leave when joining the game.
-      */
-    def this(matchExpression: MatchExpression, whereToSearch: js.Array[SFSRoom]) = this()
-    def this(whereToSearch: js.Array[SFSRoom], roomToLeave: SFSRoom) = this()
-    def this(matchExpression: MatchExpression, whereToSearch: js.Array[SFSRoom], roomToLeave: SFSRoom) = this()
-  }
+  trait InviteUsersRequest extends StObject
   
-  @js.native
-  class SFSGameSettings protected () extends RoomSettings {
-    /**
-      * Creates a new SFSGameSettings instance.
-      * @param {string} name The name of the Game Room to be created.
-      */
-    def this(name: String) = this()
+  trait QuickJoinGameRequest extends StObject
+  
+  trait SFSGameSettings
+    extends StObject
+       with RoomSettings {
+    
     /** @type {number} In private games, defines the number of seconds that users have to reply to the invitation to join a game. The suggested range is 10 to 40 seconds. */
-    var invitationExpiryTime: Double = js.native
+    var invitationExpiryTime: Double
+    
     /** @type {Object} In private games, defines a list of SFSUser objects representing players to be invited to join the game. */
-    var invitiationParams: js.Object = js.native
+    var invitiationParams: js.Object
+    
     /** @type {Entities.SFSUser[]} In private games, defines a list of SFSUser objects representing players to be invited to join the game.. */
-    var invitiedPlayers: js.Array[SFSUser] = js.native
+    var invitiedPlayers: js.Array[SFSUser]
+    
     /** @type {boolean} Indicates whether the game is public or private. */
-    var isPublic: Boolean = js.native
+    var isPublic: Boolean
+    
     /** @type {boolean} In private games, indicates whether the players must leave the previous Room when joining the game or not. */
-    var leaveLastJoinedRoom: Boolean = js.native
+    var leaveLastJoinedRoom: Boolean
+    
     /** @type {number} Defines the minimum number of players required to start the game. If the notifyGameStarted property is set to true, when this number is reached, the game start is notified. */
-    var minPlayersToStartGame: Double = js.native
+    var minPlayersToStartGame: Double
+    
     /** @type {boolean} Indicates if a game state change must be notified when the minimum number of players is reached. */
-    var notifyGameStarted: Boolean = js.native
+    var notifyGameStarted: Boolean
+    
     /** @type {Entities.Match.MatchExpression} Defines the game matching expression to be used to filters players. */
-    var playerMatchExpression: MatchExpression = js.native
+    var playerMatchExpression: MatchExpression
+    
     /** @type {string[]} In private games, defines a list of Groups names where to search players to invite. */
-    var serachableRooms: js.Array[String] = js.native
-     // Might need any
+    var serachableRooms: js.Array[String]
+    
+    // Might need any
     /** @type {Entities.Match.MatchExpression} Defines the game matching expression to be used to filters spectators. */
-    var spectatorMatchExpression: MatchExpression = js.native
+    var spectatorMatchExpression: MatchExpression
   }
-  
+  object SFSGameSettings {
+    
+    inline def apply(
+      events: RoomEvents,
+      `extension`: RoomExtension,
+      groupId: String,
+      invitationExpiryTime: Double,
+      invitiationParams: js.Object,
+      invitiedPlayers: js.Array[SFSUser],
+      isGame: Boolean,
+      isPublic: Boolean,
+      leaveLastJoinedRoom: Boolean,
+      maxSpectators: Double,
+      maxUsers: Double,
+      maxVariables: Double,
+      minPlayersToStartGame: Double,
+      name: String,
+      notifyGameStarted: Boolean,
+      password: String,
+      permissions: RoomPermissions,
+      playerMatchExpression: MatchExpression,
+      serachableRooms: js.Array[String],
+      spectatorMatchExpression: MatchExpression,
+      variables: js.Array[ReservedRoomVariables]
+    ): SFSGameSettings = {
+      val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], groupId = groupId.asInstanceOf[js.Any], invitationExpiryTime = invitationExpiryTime.asInstanceOf[js.Any], invitiationParams = invitiationParams.asInstanceOf[js.Any], invitiedPlayers = invitiedPlayers.asInstanceOf[js.Any], isGame = isGame.asInstanceOf[js.Any], isPublic = isPublic.asInstanceOf[js.Any], leaveLastJoinedRoom = leaveLastJoinedRoom.asInstanceOf[js.Any], maxSpectators = maxSpectators.asInstanceOf[js.Any], maxUsers = maxUsers.asInstanceOf[js.Any], maxVariables = maxVariables.asInstanceOf[js.Any], minPlayersToStartGame = minPlayersToStartGame.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], notifyGameStarted = notifyGameStarted.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], playerMatchExpression = playerMatchExpression.asInstanceOf[js.Any], serachableRooms = serachableRooms.asInstanceOf[js.Any], spectatorMatchExpression = spectatorMatchExpression.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SFSGameSettings]
+    }
+    
+    extension [Self <: SFSGameSettings](x: Self) {
+      
+      inline def setInvitationExpiryTime(value: Double): Self = StObject.set(x, "invitationExpiryTime", value.asInstanceOf[js.Any])
+      
+      inline def setInvitiationParams(value: js.Object): Self = StObject.set(x, "invitiationParams", value.asInstanceOf[js.Any])
+      
+      inline def setInvitiedPlayers(value: js.Array[SFSUser]): Self = StObject.set(x, "invitiedPlayers", value.asInstanceOf[js.Any])
+      
+      inline def setInvitiedPlayersVarargs(value: SFSUser*): Self = StObject.set(x, "invitiedPlayers", js.Array(value*))
+      
+      inline def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
+      
+      inline def setLeaveLastJoinedRoom(value: Boolean): Self = StObject.set(x, "leaveLastJoinedRoom", value.asInstanceOf[js.Any])
+      
+      inline def setMinPlayersToStartGame(value: Double): Self = StObject.set(x, "minPlayersToStartGame", value.asInstanceOf[js.Any])
+      
+      inline def setNotifyGameStarted(value: Boolean): Self = StObject.set(x, "notifyGameStarted", value.asInstanceOf[js.Any])
+      
+      inline def setPlayerMatchExpression(value: MatchExpression): Self = StObject.set(x, "playerMatchExpression", value.asInstanceOf[js.Any])
+      
+      inline def setSerachableRooms(value: js.Array[String]): Self = StObject.set(x, "serachableRooms", value.asInstanceOf[js.Any])
+      
+      inline def setSerachableRoomsVarargs(value: String*): Self = StObject.set(x, "serachableRooms", js.Array(value*))
+      
+      inline def setSpectatorMatchExpression(value: MatchExpression): Self = StObject.set(x, "spectatorMatchExpression", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

@@ -1,19 +1,24 @@
 package typingsJapgolly.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BulkModifyDocsWrapper extends js.Object {
-  var docs: js.Array[_]
-}
-
-object BulkModifyDocsWrapper {
-  @scala.inline
-  def apply(docs: js.Array[_]): BulkModifyDocsWrapper = {
-    val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any])
+trait BulkModifyDocsWrapper extends StObject {
   
+  var docs: js.Array[Any]
+}
+object BulkModifyDocsWrapper {
+  
+  inline def apply(docs: js.Array[Any]): BulkModifyDocsWrapper = {
+    val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkModifyDocsWrapper]
   }
+  
+  extension [Self <: BulkModifyDocsWrapper](x: Self) {
+    
+    inline def setDocs(value: js.Array[Any]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
+    
+    inline def setDocsVarargs(value: Any*): Self = StObject.set(x, "docs", js.Array(value*))
+  }
 }
-

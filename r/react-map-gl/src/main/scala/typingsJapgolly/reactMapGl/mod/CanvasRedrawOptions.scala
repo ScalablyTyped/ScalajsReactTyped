@@ -1,28 +1,31 @@
 package typingsJapgolly.reactMapGl.mod
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.CanvasRenderingContext2D
+import org.scalajs.dom.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CanvasRedrawOptions extends HTMLRedrawOptions {
+trait CanvasRedrawOptions
+  extends StObject
+     with HTMLRedrawOptions {
+  
   var ctx: CanvasRenderingContext2D
 }
-
 object CanvasRedrawOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     ctx: CanvasRenderingContext2D,
     height: Double,
-    project: js.Array[Double] => CallbackTo[js.Array[Double]],
-    unproject: js.Array[Double] => CallbackTo[js.Array[Double]],
+    project: js.Array[Double] => js.Array[Double],
+    unproject: js.Array[Double] => js.Array[Double],
     width: Double
   ): CanvasRedrawOptions = {
-    val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    __obj.updateDynamic("project")(js.Any.fromFunction1((t0: js.Array[scala.Double]) => project(t0).runNow()))
-    __obj.updateDynamic("unproject")(js.Any.fromFunction1((t0: js.Array[scala.Double]) => unproject(t0).runNow()))
+    val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], project = js.Any.fromFunction1(project), unproject = js.Any.fromFunction1(unproject), width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasRedrawOptions]
   }
+  
+  extension [Self <: CanvasRedrawOptions](x: Self) {
+    
+    inline def setCtx(value: CanvasRenderingContext2D): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,32 +1,34 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FilterOperator extends js.Object
-
+sealed trait FilterOperator extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.FilterOperator")
 @js.native
-object FilterOperator extends js.Object {
+object FilterOperator extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait and extends FilterOperator
+  sealed trait and
+    extends StObject
+       with FilterOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait or extends FilterOperator
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[FilterOperator with String] = js.native
-  /* "And" */ @js.native
-  object and extends TopLevel[and with String]
-  
-  /* "Or" */ @js.native
-  object or extends TopLevel[or with String]
-  
+  sealed trait or
+    extends StObject
+       with FilterOperator
 }
-

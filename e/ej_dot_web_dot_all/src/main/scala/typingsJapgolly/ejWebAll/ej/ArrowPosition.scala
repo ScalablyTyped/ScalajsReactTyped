@@ -1,45 +1,36 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ArrowPosition extends js.Object
-
+sealed trait ArrowPosition extends StObject
 @JSGlobal("ej.ArrowPosition")
 @js.native
-object ArrowPosition extends js.Object {
+object ArrowPosition extends StObject {
+  
   //To set Bottom arrowPosition of the split button
   @js.native
-  sealed trait Bottom extends ArrowPosition
+  sealed trait Bottom
+    extends StObject
+       with ArrowPosition
   
   //To set Left arrowPosition of the split button
   @js.native
-  sealed trait Left extends ArrowPosition
+  sealed trait Left
+    extends StObject
+       with ArrowPosition
   
   //To set Right arrowPosition of the split button
   @js.native
-  sealed trait Right extends ArrowPosition
+  sealed trait Right
+    extends StObject
+       with ArrowPosition
   
   //To set Top arrowPosition of the split button
   @js.native
-  sealed trait Top extends ArrowPosition
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ArrowPosition with Double] = js.native
-  /* 3 */ @js.native
-  object Bottom extends TopLevel[Bottom with Double]
-  
-  /* 0 */ @js.native
-  object Left extends TopLevel[Left with Double]
-  
-  /* 1 */ @js.native
-  object Right extends TopLevel[Right with Double]
-  
-  /* 2 */ @js.native
-  object Top extends TopLevel[Top with Double]
-  
+  sealed trait Top
+    extends StObject
+       with ArrowPosition
 }
-

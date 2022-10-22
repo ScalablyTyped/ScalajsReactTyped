@@ -1,34 +1,46 @@
 package typingsJapgolly.gestalt.mod
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.gestalt.AnonEventValue
+import typingsJapgolly.gestalt.anon.ValueBoolean
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SwitchProps extends js.Object {
+trait SwitchProps extends StObject {
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var id: String
+  
   var name: js.UndefOr[String] = js.undefined
+  
+  def onChange(args: ValueBoolean): Unit
+  
   var switched: js.UndefOr[Boolean] = js.undefined
-  def onChange(args: AnonEventValue): Unit
 }
-
 object SwitchProps {
-  @scala.inline
-  def apply(
-    id: String,
-    onChange: AnonEventValue => Callback,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    switched: js.UndefOr[Boolean] = js.undefined
-  ): SwitchProps = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.gestalt.AnonEventValue) => onChange(t0).runNow()))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(switched)) __obj.updateDynamic("switched")(switched.asInstanceOf[js.Any])
+  
+  inline def apply(id: String, onChange: ValueBoolean => Callback): SwitchProps = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1((t0: ValueBoolean) => onChange(t0).runNow()))
     __obj.asInstanceOf[SwitchProps]
   }
+  
+  extension [Self <: SwitchProps](x: Self) {
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOnChange(value: ValueBoolean => Callback): Self = StObject.set(x, "onChange", js.Any.fromFunction1((t0: ValueBoolean) => value(t0).runNow()))
+    
+    inline def setSwitched(value: Boolean): Self = StObject.set(x, "switched", value.asInstanceOf[js.Any])
+    
+    inline def setSwitchedUndefined: Self = StObject.set(x, "switched", js.undefined)
+  }
 }
-

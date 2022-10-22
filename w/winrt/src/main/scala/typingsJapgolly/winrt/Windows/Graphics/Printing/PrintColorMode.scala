@@ -1,53 +1,42 @@
 package typingsJapgolly.winrt.Windows.Graphics.Printing
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintColorMode extends js.Object
-
+sealed trait PrintColorMode extends StObject
 @JSGlobal("Windows.Graphics.Printing.PrintColorMode")
 @js.native
-object PrintColorMode extends js.Object {
-  @js.native
-  sealed trait color extends PrintColorMode
+object PrintColorMode extends StObject {
   
   @js.native
-  sealed trait default extends PrintColorMode
+  sealed trait default
+    extends StObject
+       with PrintColorMode
   
   @js.native
-  sealed trait grayscale extends PrintColorMode
+  sealed trait color
+    extends StObject
+       with PrintColorMode
   
   @js.native
-  sealed trait monochrome extends PrintColorMode
+  sealed trait grayscale
+    extends StObject
+       with PrintColorMode
   
   @js.native
-  sealed trait notAvailable extends PrintColorMode
+  sealed trait monochrome
+    extends StObject
+       with PrintColorMode
   
   @js.native
-  sealed trait printerCustom extends PrintColorMode
+  sealed trait notAvailable
+    extends StObject
+       with PrintColorMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PrintColorMode with Double] = js.native
-  /* 3 */ @js.native
-  object color extends TopLevel[color with Double]
-  
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 4 */ @js.native
-  object grayscale extends TopLevel[grayscale with Double]
-  
-  /* 5 */ @js.native
-  object monochrome extends TopLevel[monochrome with Double]
-  
-  /* 1 */ @js.native
-  object notAvailable extends TopLevel[notAvailable with Double]
-  
-  /* 2 */ @js.native
-  object printerCustom extends TopLevel[printerCustom with Double]
-  
+  @js.native
+  sealed trait printerCustom
+    extends StObject
+       with PrintColorMode
 }
-

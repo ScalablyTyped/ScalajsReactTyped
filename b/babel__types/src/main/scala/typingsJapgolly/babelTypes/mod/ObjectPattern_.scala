@@ -1,48 +1,52 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.ObjectPattern
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait ObjectPattern_
-  extends LVal
+  extends StObject
      with BaseNode
+     with LVal
      with Pattern
-     with PatternLike {
+     with PatternLike
+     with Standardized {
+  
   var decorators: js.Array[Decorator_] | Null
+  
   var properties: js.Array[RestElement_ | ObjectProperty_]
+  
   var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
+  
   @JSName("type")
   var type_ObjectPattern_ : ObjectPattern
 }
-
 object ObjectPattern_ {
-  @scala.inline
-  def apply(
-    properties: js.Array[RestElement_ | ObjectProperty_],
-    `type`: ObjectPattern,
-    decorators: js.Array[Decorator_] = null,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ = null
-  ): ObjectPattern_ = {
-    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+  
+  inline def apply(properties: js.Array[RestElement_ | ObjectProperty_]): ObjectPattern_ = {
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("ObjectPattern")
     __obj.asInstanceOf[ObjectPattern_]
   }
+  
+  extension [Self <: ObjectPattern_](x: Self) {
+    
+    inline def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    
+    inline def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
+    
+    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
+    
+    inline def setProperties(value: js.Array[RestElement_ | ObjectProperty_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesVarargs(value: (RestElement_ | ObjectProperty_)*): Self = StObject.set(x, "properties", js.Array(value*))
+    
+    inline def setType(value: ObjectPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
+  }
 }
-

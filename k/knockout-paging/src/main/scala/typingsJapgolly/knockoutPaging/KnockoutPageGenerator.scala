@@ -1,20 +1,22 @@
 package typingsJapgolly.knockoutPaging
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KnockoutPageGenerator extends js.Object {
+trait KnockoutPageGenerator extends StObject {
+  
   def generate[T](pagedObservable: KnockoutPagedObservableArray[T]): js.Array[Double]
 }
-
 object KnockoutPageGenerator {
-  @scala.inline
-  def apply(generate: KnockoutPagedObservableArray[js.Any] => CallbackTo[js.Array[Double]]): KnockoutPageGenerator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generate")(js.Any.fromFunction1((t0: typingsJapgolly.knockoutPaging.KnockoutPagedObservableArray[js.Any]) => generate(t0).runNow()))
+  
+  inline def apply(generate: KnockoutPagedObservableArray[Any] => js.Array[Double]): KnockoutPageGenerator = {
+    val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate))
     __obj.asInstanceOf[KnockoutPageGenerator]
   }
+  
+  extension [Self <: KnockoutPageGenerator](x: Self) {
+    
+    inline def setGenerate(value: KnockoutPagedObservableArray[Any] => js.Array[Double]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
+  }
 }
-

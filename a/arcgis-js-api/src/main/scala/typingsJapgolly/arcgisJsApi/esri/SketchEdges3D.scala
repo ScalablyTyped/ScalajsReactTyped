@@ -1,13 +1,15 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.sketch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchEdges3D extends Edges3D {
+trait SketchEdges3D
+  extends StObject
+     with Edges3D {
+  
   /**
     * The symbol type.
     *
@@ -15,8 +17,3 @@ trait SketchEdges3D extends Edges3D {
     */
   var `type`: sketch = js.native
 }
-
-@JSGlobal("__esri.SketchEdges3D")
-@js.native
-object SketchEdges3D extends TopLevel[SketchEdges3DConstructor]
-

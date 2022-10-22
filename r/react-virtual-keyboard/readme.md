@@ -10,10 +10,10 @@ Use jQuery Virtual Keyboard in react.js
 | ------------------ | :-------------: |
 | Full name          | react-virtual-keyboard |
 | Keywords           | react, reactjs, keyboard, onscreen, virtual, component |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 16100 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2687.0 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/Utzel-Butzel/react-virtual-keyboard)

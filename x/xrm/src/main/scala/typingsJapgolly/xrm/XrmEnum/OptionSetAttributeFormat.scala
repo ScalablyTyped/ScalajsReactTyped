@@ -2,9 +2,9 @@ package typingsJapgolly.xrm.XrmEnum
 
 import typingsJapgolly.xrm.xrmStrings.language
 import typingsJapgolly.xrm.xrmStrings.timezone
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: OptionSet attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.OptionSetAttribute OptionSetAttribute}.
@@ -14,14 +14,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.language
   - typingsJapgolly.xrm.xrmStrings.timezone
 */
-trait OptionSetAttributeFormat extends js.Object
-
+trait OptionSetAttributeFormat extends StObject
 object OptionSetAttributeFormat {
-  @scala.inline
-  def Language: language = this.cast("language")
-  @scala.inline
-  def TimeZone: timezone = this.cast("timezone")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Language: language = "language".asInstanceOf[language]
+  
+  inline def TimeZone: timezone = "timezone".asInstanceOf[timezone]
 }
-

@@ -1,11 +1,13 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalajs.dom.raw.HTMLElement
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-centimeters`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-decimeters`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-feet`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-inches`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-kilometers`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-meters`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-miles`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-millimeters`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-us-feet`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-yards`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.acres
@@ -13,25 +15,37 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ares
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.hectares
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.imperial
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.metric
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AreaMeasurement3DProperties extends WidgetProperties {
+trait AreaMeasurement3DProperties
+  extends StObject
+     with WidgetProperties {
+  
+  /**
+    * The area measurement analysis object being created or modified by the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html#analysis)
+    */
+  var analysis: js.UndefOr[AreaMeasurementAnalysisProperties] = js.undefined
+  
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html#iconClass)
     */
   var iconClass: js.UndefOr[String] = js.undefined
+  
   /**
     * Unit system (imperial, metric) or specific unit used for displaying the area values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html#unit)
     */
   var unit: js.UndefOr[
-    metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
+    imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares
   ] = js.undefined
+  
   /**
     * List of available units and unit systems (imperial, metric) for displaying the area values.
     *
@@ -39,49 +53,65 @@ trait AreaMeasurement3DProperties extends WidgetProperties {
     */
   var unitOptions: js.UndefOr[
     js.Array[
-      metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
+      imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares
     ]
   ] = js.undefined
+  
   /**
-    * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
+    * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html#view)
     */
   var view: js.UndefOr[SceneViewProperties] = js.undefined
+  
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [AreaMeasurement3DViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html#viewModel)
     */
   var viewModel: js.UndefOr[AreaMeasurement3DViewModelProperties] = js.undefined
 }
-
 object AreaMeasurement3DProperties {
-  @scala.inline
-  def apply(
-    container: String | HTMLElement = null,
-    destroyed: js.UndefOr[Boolean] = js.undefined,
-    iconClass: String = null,
-    id: String = null,
-    label: String = null,
-    unit: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares = null,
-    unitOptions: js.Array[
-      metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
-    ] = null,
-    view: SceneViewProperties = null,
-    viewModel: AreaMeasurement3DViewModelProperties = null
-  ): AreaMeasurement3DProperties = {
+  
+  inline def apply(): AreaMeasurement3DProperties = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (unitOptions != null) __obj.updateDynamic("unitOptions")(unitOptions.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaMeasurement3DProperties]
   }
+  
+  extension [Self <: AreaMeasurement3DProperties](x: Self) {
+    
+    inline def setAnalysis(value: AreaMeasurementAnalysisProperties): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
+    
+    inline def setAnalysisUndefined: Self = StObject.set(x, "analysis", js.undefined)
+    
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    
+    inline def setUnit(
+      value: imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares
+    ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    
+    inline def setUnitOptions(
+      value: js.Array[
+          imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares
+        ]
+    ): Self = StObject.set(x, "unitOptions", value.asInstanceOf[js.Any])
+    
+    inline def setUnitOptionsUndefined: Self = StObject.set(x, "unitOptions", js.undefined)
+    
+    inline def setUnitOptionsVarargs(
+      value: (imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares)*
+    ): Self = StObject.set(x, "unitOptions", js.Array(value*))
+    
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    
+    inline def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewModel(value: AreaMeasurement3DViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

@@ -1,35 +1,31 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`0`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`3`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`4`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`0`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`3`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`3`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`4`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`0`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`3`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`4`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`0`
 */
-trait ParameterDirectionEnum extends js.Object
-
+trait ParameterDirectionEnum extends StObject
 object ParameterDirectionEnum {
-  @scala.inline
-  def adParamInput: `1` = this.cast(1)
-  @scala.inline
-  def adParamInputOutput: `3` = this.cast(3)
-  @scala.inline
-  def adParamOutput: `2` = this.cast(2)
-  @scala.inline
-  def adParamReturnValue: `4` = this.cast(4)
-  @scala.inline
-  def adParamUnknown: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adParamInput: `1` = 1.asInstanceOf[`1`]
+  
+  inline def adParamInputOutput: `3` = 3.asInstanceOf[`3`]
+  
+  inline def adParamOutput: `2` = 2.asInstanceOf[`2`]
+  
+  inline def adParamReturnValue: `4` = 4.asInstanceOf[`4`]
+  
+  inline def adParamUnknown: `0` = 0.asInstanceOf[`0`]
 }
-

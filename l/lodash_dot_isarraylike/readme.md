@@ -10,14 +10,15 @@ The lodash method `_.isArrayLike` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isarraylike |
 | Keywords           | lodash-modularized, isarraylike |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 31418 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11002.333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
+- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.isarraylike)
     
 

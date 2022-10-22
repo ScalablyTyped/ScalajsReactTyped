@@ -1,25 +1,29 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoadingOptions extends js.Object {
+trait LoadingOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The duration in milliseconds of
     * the fade out effect.
     */
   var hideDuration: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the loading label
     * `span`.
     */
   var labelStyle: js.UndefOr[CSSObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The duration in milliseconds of
     * the fade in effect.
     */
   var showDuration: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the loading
     * screen that covers the plot area.
@@ -29,21 +33,29 @@ trait LoadingOptions extends js.Object {
     */
   var style: js.UndefOr[CSSObject] = js.undefined
 }
-
 object LoadingOptions {
-  @scala.inline
-  def apply(
-    hideDuration: Int | Double = null,
-    labelStyle: CSSObject = null,
-    showDuration: Int | Double = null,
-    style: CSSObject = null
-  ): LoadingOptions = {
+  
+  inline def apply(): LoadingOptions = {
     val __obj = js.Dynamic.literal()
-    if (hideDuration != null) __obj.updateDynamic("hideDuration")(hideDuration.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (showDuration != null) __obj.updateDynamic("showDuration")(showDuration.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingOptions]
   }
+  
+  extension [Self <: LoadingOptions](x: Self) {
+    
+    inline def setHideDuration(value: Double): Self = StObject.set(x, "hideDuration", value.asInstanceOf[js.Any])
+    
+    inline def setHideDurationUndefined: Self = StObject.set(x, "hideDuration", js.undefined)
+    
+    inline def setLabelStyle(value: CSSObject): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    
+    inline def setShowDuration(value: Double): Self = StObject.set(x, "showDuration", value.asInstanceOf[js.Any])
+    
+    inline def setShowDurationUndefined: Self = StObject.set(x, "showDuration", js.undefined)
+    
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

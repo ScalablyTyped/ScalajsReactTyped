@@ -1,37 +1,52 @@
 package typingsJapgolly.prettier.mod
 
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Parser extends js.Object {
+trait Parser[T] extends StObject {
+  
   var astFormat: String
+  
   var hasPragma: js.UndefOr[js.Function1[/* text */ String, Boolean]] = js.undefined
-  var preprocess: js.UndefOr[js.Function2[/* text */ String, /* options */ ParserOptions, String]] = js.undefined
-  def locEnd(node: js.Any): Double
-  def locStart(node: js.Any): Double
-  def parse(text: String, parsers: StringDictionary[Parser], options: ParserOptions): AST
+  
+  def locEnd(node: T): Double
+  
+  def locStart(node: T): Double
+  
+  def parse(text: String, parsers: StringDictionary[Parser[Any]], options: ParserOptions[T]): T
+  
+  var preprocess: js.UndefOr[js.Function2[/* text */ String, /* options */ ParserOptions[T], String]] = js.undefined
 }
-
 object Parser {
-  @scala.inline
-  def apply(
+  
+  inline def apply[T](
     astFormat: String,
-    locEnd: js.Any => CallbackTo[Double],
-    locStart: js.Any => CallbackTo[Double],
-    parse: (String, StringDictionary[Parser], ParserOptions) => CallbackTo[AST],
-    hasPragma: /* text */ String => CallbackTo[Boolean] = null,
-    preprocess: (/* text */ String, /* options */ ParserOptions) => CallbackTo[String] = null
-  ): Parser = {
-    val __obj = js.Dynamic.literal(astFormat = astFormat.asInstanceOf[js.Any])
-    __obj.updateDynamic("locEnd")(js.Any.fromFunction1((t0: js.Any) => locEnd(t0).runNow()))
-    __obj.updateDynamic("locStart")(js.Any.fromFunction1((t0: js.Any) => locStart(t0).runNow()))
-    __obj.updateDynamic("parse")(js.Any.fromFunction3((t0: java.lang.String, t1: org.scalablytyped.runtime.StringDictionary[typingsJapgolly.prettier.mod.Parser], t2: typingsJapgolly.prettier.mod.ParserOptions) => parse(t0, t1, t2).runNow()))
-    if (hasPragma != null) __obj.updateDynamic("hasPragma")(js.Any.fromFunction1((t0: /* text */ java.lang.String) => hasPragma(t0).runNow()))
-    if (preprocess != null) __obj.updateDynamic("preprocess")(js.Any.fromFunction2((t0: /* text */ java.lang.String, t1: /* options */ typingsJapgolly.prettier.mod.ParserOptions) => preprocess(t0, t1).runNow()))
-    __obj.asInstanceOf[Parser]
+    locEnd: T => Double,
+    locStart: T => Double,
+    parse: (String, StringDictionary[Parser[Any]], ParserOptions[T]) => T
+  ): Parser[T] = {
+    val __obj = js.Dynamic.literal(astFormat = astFormat.asInstanceOf[js.Any], locEnd = js.Any.fromFunction1(locEnd), locStart = js.Any.fromFunction1(locStart), parse = js.Any.fromFunction3(parse))
+    __obj.asInstanceOf[Parser[T]]
+  }
+  
+  extension [Self <: Parser[?], T](x: Self & Parser[T]) {
+    
+    inline def setAstFormat(value: String): Self = StObject.set(x, "astFormat", value.asInstanceOf[js.Any])
+    
+    inline def setHasPragma(value: /* text */ String => Boolean): Self = StObject.set(x, "hasPragma", js.Any.fromFunction1(value))
+    
+    inline def setHasPragmaUndefined: Self = StObject.set(x, "hasPragma", js.undefined)
+    
+    inline def setLocEnd(value: T => Double): Self = StObject.set(x, "locEnd", js.Any.fromFunction1(value))
+    
+    inline def setLocStart(value: T => Double): Self = StObject.set(x, "locStart", js.Any.fromFunction1(value))
+    
+    inline def setParse(value: (String, StringDictionary[Parser[Any]], ParserOptions[T]) => T): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
+    
+    inline def setPreprocess(value: (/* text */ String, /* options */ ParserOptions[T]) => String): Self = StObject.set(x, "preprocess", js.Any.fromFunction2(value))
+    
+    inline def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
   }
 }
-

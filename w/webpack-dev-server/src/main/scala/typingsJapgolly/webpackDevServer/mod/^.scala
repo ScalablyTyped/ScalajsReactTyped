@@ -1,34 +1,31 @@
 package typingsJapgolly.webpackDevServer.mod
 
-import typingsJapgolly.webpack.mod.Compiler_
-import typingsJapgolly.webpack.mod.MultiCompiler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webpack-dev-server", JSImport.Namespace)
 @js.native
-class ^ protected () extends WebpackDevServer {
-  def this(webpack: Compiler_) = this()
-  def this(webpack: MultiCompiler) = this()
-  def this(webpack: Compiler_, config: Configuration) = this()
-  def this(webpack: MultiCompiler, config: Configuration) = this()
+open class ^ protected ()
+  extends StObject
+     with Server {
+  def this(options: Unit, compiler: Compiler) = this()
+  def this(options: Unit, compiler: Configuration) = this()
+  def this(options: Unit, compiler: MultiCompiler) = this()
+  /**
+    * @param {Configuration | Compiler | MultiCompiler} options
+    * @param {Compiler | MultiCompiler | Configuration} compiler
+    */
+  def this(options: typingsJapgolly.webpack.mod.Compiler, compiler: Compiler) = this()
+  def this(options: typingsJapgolly.webpack.mod.Compiler, compiler: Configuration) = this()
+  def this(options: typingsJapgolly.webpack.mod.Compiler, compiler: MultiCompiler) = this()
+  def this(options: typingsJapgolly.webpack.mod.MultiCompiler, compiler: Compiler) = this()
+  def this(options: typingsJapgolly.webpack.mod.MultiCompiler, compiler: Configuration) = this()
+  def this(options: typingsJapgolly.webpack.mod.MultiCompiler, compiler: MultiCompiler) = this()
+  def this(options: Configuration, compiler: Compiler) = this()
+  def this(options: Configuration, compiler: Configuration) = this()
+  def this(options: Configuration, compiler: MultiCompiler) = this()
 }
-
 @JSImport("webpack-dev-server", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  def addDevServerEntrypoints(webpackOptions: js.Array[typingsJapgolly.webpack.mod.Configuration], config: Configuration): Unit = js.native
-  def addDevServerEntrypoints(
-    webpackOptions: js.Array[typingsJapgolly.webpack.mod.Configuration],
-    config: Configuration,
-    listeningApp: ListeningApp
-  ): Unit = js.native
-  def addDevServerEntrypoints(webpackOptions: typingsJapgolly.webpack.mod.Configuration, config: Configuration): Unit = js.native
-  def addDevServerEntrypoints(
-    webpackOptions: typingsJapgolly.webpack.mod.Configuration,
-    config: Configuration,
-    listeningApp: ListeningApp
-  ): Unit = js.native
-}
-
+object ^ extends StObject

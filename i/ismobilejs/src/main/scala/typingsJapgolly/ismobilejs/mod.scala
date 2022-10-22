@@ -1,14 +1,17 @@
 package typingsJapgolly.ismobilejs
 
-import typingsJapgolly.ismobilejs.isMobileMod.isMobileResult
+import typingsJapgolly.ismobilejs.typesIsMobileMod.IsMobileParameter
+import typingsJapgolly.ismobilejs.typesIsMobileMod.isMobileResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ismobilejs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(): isMobileResult = js.native
-  def default(userAgent: String): isMobileResult = js.native
+object mod {
+  
+  @JSImport("ismobilejs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(): isMobileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[isMobileResult]
+  inline def default(param: IsMobileParameter): isMobileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param.asInstanceOf[js.Any]).asInstanceOf[isMobileResult]
 }
-

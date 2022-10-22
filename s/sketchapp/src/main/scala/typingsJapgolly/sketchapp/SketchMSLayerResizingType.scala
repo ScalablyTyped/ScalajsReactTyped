@@ -1,27 +1,23 @@
 package typingsJapgolly.sketchapp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.sketchapp.sketchappNumbers.`0`
-  - typingsJapgolly.sketchapp.sketchappNumbers.`1`
-  - typingsJapgolly.sketchapp.sketchappNumbers.`2`
-  - typingsJapgolly.sketchapp.sketchappNumbers.`3`
+  - typingsJapgolly.sketchapp.sketchappInts.`0`
+  - typingsJapgolly.sketchapp.sketchappInts.`1`
+  - typingsJapgolly.sketchapp.sketchappInts.`2`
+  - typingsJapgolly.sketchapp.sketchappInts.`3`
 */
-trait SketchMSLayerResizingType extends js.Object
-
+trait SketchMSLayerResizingType extends StObject
 object SketchMSLayerResizingType {
-  @scala.inline
-  def `0`: typingsJapgolly.sketchapp.sketchappNumbers.`0` = this.cast(0)
-  @scala.inline
-  def `1`: typingsJapgolly.sketchapp.sketchappNumbers.`1` = this.cast(1)
-  @scala.inline
-  def `2`: typingsJapgolly.sketchapp.sketchappNumbers.`2` = this.cast(2)
-  @scala.inline
-  def `3`: typingsJapgolly.sketchapp.sketchappNumbers.`3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `0`: typingsJapgolly.sketchapp.sketchappInts.`0` = 0.asInstanceOf[typingsJapgolly.sketchapp.sketchappInts.`0`]
+  
+  inline def `1`: typingsJapgolly.sketchapp.sketchappInts.`1` = 1.asInstanceOf[typingsJapgolly.sketchapp.sketchappInts.`1`]
+  
+  inline def `2`: typingsJapgolly.sketchapp.sketchappInts.`2` = 2.asInstanceOf[typingsJapgolly.sketchapp.sketchappInts.`2`]
+  
+  inline def `3`: typingsJapgolly.sketchapp.sketchappInts.`3` = 3.asInstanceOf[typingsJapgolly.sketchapp.sketchappInts.`3`]
 }
-

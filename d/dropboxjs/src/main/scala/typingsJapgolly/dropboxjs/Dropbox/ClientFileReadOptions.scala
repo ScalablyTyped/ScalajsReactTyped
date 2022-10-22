@@ -1,45 +1,72 @@
 package typingsJapgolly.dropboxjs.Dropbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClientFileReadOptions extends js.Object {
+trait ClientFileReadOptions extends StObject {
+  
   var arrayBuffer: js.UndefOr[Boolean] = js.undefined
+  
   var binary: js.UndefOr[Boolean] = js.undefined
+  
   var blob: js.UndefOr[Boolean] = js.undefined
+  
   var buffer: js.UndefOr[Boolean] = js.undefined
+  
   var httpCache: js.UndefOr[Boolean] = js.undefined
+  
   var length: js.UndefOr[Double] = js.undefined
+  
   var rev: js.UndefOr[String] = js.undefined
+  
   var start: js.UndefOr[Double] = js.undefined
+  
   var versionTag: js.UndefOr[String] = js.undefined
 }
-
 object ClientFileReadOptions {
-  @scala.inline
-  def apply(
-    arrayBuffer: js.UndefOr[Boolean] = js.undefined,
-    binary: js.UndefOr[Boolean] = js.undefined,
-    blob: js.UndefOr[Boolean] = js.undefined,
-    buffer: js.UndefOr[Boolean] = js.undefined,
-    httpCache: js.UndefOr[Boolean] = js.undefined,
-    length: Int | Double = null,
-    rev: String = null,
-    start: Int | Double = null,
-    versionTag: String = null
-  ): ClientFileReadOptions = {
+  
+  inline def apply(): ClientFileReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrayBuffer)) __obj.updateDynamic("arrayBuffer")(arrayBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
-    if (!js.isUndefined(blob)) __obj.updateDynamic("blob")(blob.asInstanceOf[js.Any])
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (rev != null) __obj.updateDynamic("rev")(rev.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (versionTag != null) __obj.updateDynamic("versionTag")(versionTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientFileReadOptions]
   }
+  
+  extension [Self <: ClientFileReadOptions](x: Self) {
+    
+    inline def setArrayBuffer(value: Boolean): Self = StObject.set(x, "arrayBuffer", value.asInstanceOf[js.Any])
+    
+    inline def setArrayBufferUndefined: Self = StObject.set(x, "arrayBuffer", js.undefined)
+    
+    inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    
+    inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    
+    inline def setBlob(value: Boolean): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+    
+    inline def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
+    
+    inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    
+    inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+    
+    inline def setHttpCache(value: Boolean): Self = StObject.set(x, "httpCache", value.asInstanceOf[js.Any])
+    
+    inline def setHttpCacheUndefined: Self = StObject.set(x, "httpCache", js.undefined)
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+    
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setVersionTag(value: String): Self = StObject.set(x, "versionTag", value.asInstanceOf[js.Any])
+    
+    inline def setVersionTagUndefined: Self = StObject.set(x, "versionTag", js.undefined)
+  }
 }
-

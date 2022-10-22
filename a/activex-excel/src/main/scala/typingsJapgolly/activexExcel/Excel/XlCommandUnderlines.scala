@@ -1,27 +1,23 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4105`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4146`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4105`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4146`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4105`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4146`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4105`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4146`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
 */
-trait XlCommandUnderlines extends js.Object
-
+trait XlCommandUnderlines extends StObject
 object XlCommandUnderlines {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlCommandUnderlinesAutomatic: `-4105` = this.cast(-4105)
-  @scala.inline
-  def xlCommandUnderlinesOff: `-4146` = this.cast(-4146)
-  @scala.inline
-  def xlCommandUnderlinesOn: `1` = this.cast(1)
+  
+  inline def xlCommandUnderlinesAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  
+  inline def xlCommandUnderlinesOff: `-4146` = -4146.asInstanceOf[`-4146`]
+  
+  inline def xlCommandUnderlinesOn: `1` = 1.asInstanceOf[`1`]
 }
-

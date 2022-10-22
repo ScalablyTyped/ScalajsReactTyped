@@ -1,34 +1,33 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OlapFlatDataSourceOptionsMetadata
-  extends /**
-	 * Option for OlapFlatDataSourceOptionsMetadata
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Optional="false" Metadata used for the creation of the cube.
-  	 */
+    * Optional="false" Metadata used for the creation of the cube.
+    */
   var cube: js.UndefOr[OlapFlatDataSourceOptionsMetadataCube] = js.undefined
 }
-
 object OlapFlatDataSourceOptionsMetadata {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for OlapFlatDataSourceOptionsMetadata
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    cube: OlapFlatDataSourceOptionsMetadataCube = null
-  ): OlapFlatDataSourceOptionsMetadata = {
+  
+  inline def apply(): OlapFlatDataSourceOptionsMetadata = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cube != null) __obj.updateDynamic("cube")(cube.asInstanceOf[js.Any])
     __obj.asInstanceOf[OlapFlatDataSourceOptionsMetadata]
   }
+  
+  extension [Self <: OlapFlatDataSourceOptionsMetadata](x: Self) {
+    
+    inline def setCube(value: OlapFlatDataSourceOptionsMetadataCube): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
+    
+    inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
+  }
 }
-

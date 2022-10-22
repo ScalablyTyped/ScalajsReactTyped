@@ -10,15 +10,12 @@ ES2015 Number.isFinite() ponyfill
 | ------------------ | :-------------: |
 | Full name          | is-finite |
 | Keywords           | es2015, ponyfill, polyfill, shim, number, finite, is |
-| # releases         | 0 |
-| # dependents       | 60 |
-| # downloads        | 335101984 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3.1697723E7 |
+| # stars            | 18.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/is-finite#readme)
-- [Bugs](https://github.com/sindresorhus/is-finite/issues)
-- [Repository](https://github.com/sindresorhus/is-finite)
 - [Npm](https://www.npmjs.com/package/is-finite)
     
 

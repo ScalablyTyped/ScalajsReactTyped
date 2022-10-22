@@ -1,20 +1,15 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * CountLimiter limits the number of items handled by a {@link PIXI.BasePrepare} to a specified
-  * number of items per frame.
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "CountLimiter")
 @js.native
-class CountLimiter protected ()
-  extends typingsJapgolly.pixiJs.PIXI.CountLimiter {
+open class CountLimiter protected ()
+  extends typingsJapgolly.pixiPrepare.mod.CountLimiter {
+  /**
+    * @param maxItemsPerFrame - The maximum number of items that can be prepared each frame.
+    */
   def this(maxItemsPerFrame: Double) = this()
 }
-

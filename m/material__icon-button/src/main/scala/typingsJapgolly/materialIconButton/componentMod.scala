@@ -1,28 +1,40 @@
 package typingsJapgolly.materialIconButton
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.materialBase.Element
 import typingsJapgolly.materialBase.componentMod.MDCComponent
-import typingsJapgolly.materialBase.foundationMod.default
 import typingsJapgolly.materialIconButton.foundationMod.MDCIconButtonToggleFoundation
+import typingsJapgolly.materialRipple.componentMod.MDCRipple
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/icon-button/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
-  @js.native
-  class MDCIconButtonToggle () extends MDCComponent[MDCIconButtonToggleFoundation, default[MDCIconButtonToggleFoundation]] {
-    var on: Boolean = js.native
-    val ripple: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCRipple */ js.Any = js.native
-    var root_ : HTMLElement = js.native
-  }
+object componentMod {
   
+  @JSImport("@material/icon-button/component", "MDCIconButtonToggle")
+  @js.native
+  open class MDCIconButtonToggle protected () extends MDCComponent[MDCIconButtonToggleFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCIconButtonToggleFoundation, args: Any*) = this()
+    
+    /* private */ var createRipple: Any = js.native
+    
+    /* private */ var handleClick: Any = js.native
+    
+    def on: Boolean = js.native
+    def on_=(isOn: Boolean): Unit = js.native
+    
+    def ripple: MDCRipple = js.native
+    
+    /* private */ val rippleComponent: Any = js.native
+  }
   /* static members */
-  @js.native
-  object MDCIconButtonToggle extends js.Object {
-    def attachTo(root: HTMLElement): MDCIconButtonToggle = js.native
+  object MDCIconButtonToggle {
+    
+    @JSImport("@material/icon-button/component", "MDCIconButtonToggle")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: HTMLElement): MDCIconButtonToggle = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCIconButtonToggle]
   }
-  
 }
-

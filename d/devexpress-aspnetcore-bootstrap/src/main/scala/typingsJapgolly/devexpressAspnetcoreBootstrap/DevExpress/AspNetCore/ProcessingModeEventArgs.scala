@@ -1,19 +1,24 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProcessingModeEventArgs extends EventArgs {
+trait ProcessingModeEventArgs
+  extends StObject
+     with EventArgs {
+  
   var processOnServer: Boolean
 }
-
 object ProcessingModeEventArgs {
-  @scala.inline
-  def apply(processOnServer: Boolean, sender: Control): ProcessingModeEventArgs = {
-    val __obj = js.Dynamic.literal(processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
+  inline def apply(processOnServer: Boolean, sender: Control): ProcessingModeEventArgs = {
+    val __obj = js.Dynamic.literal(processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessingModeEventArgs]
   }
+  
+  extension [Self <: ProcessingModeEventArgs](x: Self) {
+    
+    inline def setProcessOnServer(value: Boolean): Self = StObject.set(x, "processOnServer", value.asInstanceOf[js.Any])
+  }
 }
-

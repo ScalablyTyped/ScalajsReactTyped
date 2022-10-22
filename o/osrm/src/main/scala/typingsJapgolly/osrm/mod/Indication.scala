@@ -1,8 +1,8 @@
 package typingsJapgolly.osrm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.osrm.osrmStrings.uturn
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.osrm.osrmStrings.left
   - typingsJapgolly.osrm.osrmStrings.`sharp left`
 */
-trait Indication extends js.Object
-
+trait Indication extends StObject
 object Indication {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def left: typingsJapgolly.osrm.osrmStrings.left = this.cast("left")
-  @scala.inline
-  def right: typingsJapgolly.osrm.osrmStrings.right = this.cast("right")
-  @scala.inline
-  def `sharp left`: typingsJapgolly.osrm.osrmStrings.`sharp left` = this.cast("sharp left")
-  @scala.inline
-  def `sharp right`: typingsJapgolly.osrm.osrmStrings.`sharp right` = this.cast("sharp right")
-  @scala.inline
-  def `slight left`: typingsJapgolly.osrm.osrmStrings.`slight left` = this.cast("slight left")
-  @scala.inline
-  def `slight rigth`: typingsJapgolly.osrm.osrmStrings.`slight rigth` = this.cast("slight rigth")
-  @scala.inline
-  def straight: typingsJapgolly.osrm.osrmStrings.straight = this.cast("straight")
-  @scala.inline
-  def uturn: typingsJapgolly.osrm.osrmStrings.uturn = this.cast("uturn")
+  
+  inline def left: typingsJapgolly.osrm.osrmStrings.left = "left".asInstanceOf[typingsJapgolly.osrm.osrmStrings.left]
+  
+  inline def right: typingsJapgolly.osrm.osrmStrings.right = "right".asInstanceOf[typingsJapgolly.osrm.osrmStrings.right]
+  
+  inline def `sharp left`: typingsJapgolly.osrm.osrmStrings.`sharp left` = ("sharp left").asInstanceOf[typingsJapgolly.osrm.osrmStrings.`sharp left`]
+  
+  inline def `sharp right`: typingsJapgolly.osrm.osrmStrings.`sharp right` = ("sharp right").asInstanceOf[typingsJapgolly.osrm.osrmStrings.`sharp right`]
+  
+  inline def `slight left`: typingsJapgolly.osrm.osrmStrings.`slight left` = ("slight left").asInstanceOf[typingsJapgolly.osrm.osrmStrings.`slight left`]
+  
+  inline def `slight rigth`: typingsJapgolly.osrm.osrmStrings.`slight rigth` = ("slight rigth").asInstanceOf[typingsJapgolly.osrm.osrmStrings.`slight rigth`]
+  
+  inline def straight: typingsJapgolly.osrm.osrmStrings.straight = "straight".asInstanceOf[typingsJapgolly.osrm.osrmStrings.straight]
+  
+  inline def uturn: typingsJapgolly.osrm.osrmStrings.uturn = "uturn".asInstanceOf[typingsJapgolly.osrm.osrmStrings.uturn]
 }
-

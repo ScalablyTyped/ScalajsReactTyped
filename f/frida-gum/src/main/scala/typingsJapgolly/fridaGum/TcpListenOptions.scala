@@ -2,41 +2,49 @@ package typingsJapgolly.fridaGum
 
 import typingsJapgolly.fridaGum.fridaGumStrings.ipv4
 import typingsJapgolly.fridaGum.fridaGumStrings.ipv6
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TcpListenOptions
-  extends BaseListenOptions
+  extends StObject
+     with BaseListenOptions
      with SocketListenOptions {
+  
   /**
     * Address family. Omit to listen on both ipv4 and ipv6 – if supported by the OS.
     */
   var family: js.UndefOr[ipv4 | ipv6] = js.undefined
+  
   /**
     * Host or IP address to listen on. Omit to listen on all interfaces.
     */
   var host: js.UndefOr[String] = js.undefined
+  
   /**
     * Port to listen on. Omit to listen on a randomly selected port.
     */
   var port: js.UndefOr[Double] = js.undefined
 }
-
 object TcpListenOptions {
-  @scala.inline
-  def apply(
-    backlog: Int | Double = null,
-    family: ipv4 | ipv6 = null,
-    host: String = null,
-    port: Int | Double = null
-  ): TcpListenOptions = {
+  
+  inline def apply(): TcpListenOptions = {
     val __obj = js.Dynamic.literal()
-    if (backlog != null) __obj.updateDynamic("backlog")(backlog.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[TcpListenOptions]
   }
+  
+  extension [Self <: TcpListenOptions](x: Self) {
+    
+    inline def setFamily(value: ipv4 | ipv6): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+  }
 }
-

@@ -2,34 +2,34 @@ package typingsJapgolly.arcgisJsApi.esri
 
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.click
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.freehand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SegmentDrawActionProperties extends DrawActionProperties {
+trait SegmentDrawActionProperties
+  extends StObject
+     with DrawActionProperties {
+  
   /**
-    * The drawing mode. It is only relevant when the action is first created. Its value cannot be changed during the action lifecycle.  **Possible Values:**
-    *
-    * Value | Description |
-    * ----- | ----------- |
-    * freehand | Vertices are added while the pointer is dragged.
-    * click | Vertices are added when the pointer is clicked. SegmentDrawActions are created from 2 vertices.
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-SegmentDrawAction.html#mode)
+    * The drawing mode.
     *
     * @default freehand
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-SegmentDrawAction.html#mode)
     */
   var mode: js.UndefOr[freehand | click] = js.undefined
 }
-
 object SegmentDrawActionProperties {
-  @scala.inline
-  def apply(mode: freehand | click = null, view: MapViewProperties = null): SegmentDrawActionProperties = {
+  
+  inline def apply(): SegmentDrawActionProperties = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentDrawActionProperties]
   }
+  
+  extension [Self <: SegmentDrawActionProperties](x: Self) {
+    
+    inline def setMode(value: freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+  }
 }
-

@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Media.ClosedCaptioning
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClosedCaptionOpacity extends js.Object
-
+sealed trait ClosedCaptionOpacity extends StObject
 /** Specifies the opacity of closed caption text. */
 @JSGlobal("Windows.Media.ClosedCaptioning.ClosedCaptionOpacity")
 @js.native
-object ClosedCaptionOpacity extends js.Object {
+object ClosedCaptionOpacity extends StObject {
+  
   /** Default opacity. */
   @js.native
-  sealed trait default extends ClosedCaptionOpacity
+  sealed trait default
+    extends StObject
+       with ClosedCaptionOpacity
   
   /** 100% opaque. */
   @js.native
-  sealed trait oneHundredPercent extends ClosedCaptionOpacity
+  sealed trait oneHundredPercent
+    extends StObject
+       with ClosedCaptionOpacity
   
   /** 75% opaque. */
   @js.native
-  sealed trait seventyFivePercent extends ClosedCaptionOpacity
+  sealed trait seventyFivePercent
+    extends StObject
+       with ClosedCaptionOpacity
   
   /** 25% opaque. */
   @js.native
-  sealed trait twentyFivePercent extends ClosedCaptionOpacity
+  sealed trait twentyFivePercent
+    extends StObject
+       with ClosedCaptionOpacity
   
   /** Completely transparent. */
   @js.native
-  sealed trait zeroPercent extends ClosedCaptionOpacity
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ClosedCaptionOpacity with Double] = js.native
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object oneHundredPercent extends TopLevel[oneHundredPercent with Double]
-  
-  /* 2 */ @js.native
-  object seventyFivePercent extends TopLevel[seventyFivePercent with Double]
-  
-  /* 3 */ @js.native
-  object twentyFivePercent extends TopLevel[twentyFivePercent with Double]
-  
-  /* 4 */ @js.native
-  object zeroPercent extends TopLevel[zeroPercent with Double]
-  
+  sealed trait zeroPercent
+    extends StObject
+       with ClosedCaptionOpacity
 }
-

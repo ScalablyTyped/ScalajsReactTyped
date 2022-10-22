@@ -1,24 +1,28 @@
 package typingsJapgolly.swaggerSchemaOfficial.mod
 
 import typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.basic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BasicAuthenticationSecurity
-  extends BaseSecurity
+  extends StObject
+     with BaseSecurity
      with Security {
+  
   @JSName("type")
   var type_BasicAuthenticationSecurity: basic
 }
-
 object BasicAuthenticationSecurity {
-  @scala.inline
-  def apply(`type`: basic, description: String = null): BasicAuthenticationSecurity = {
+  
+  inline def apply(): BasicAuthenticationSecurity = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("basic")
     __obj.asInstanceOf[BasicAuthenticationSecurity]
   }
+  
+  extension [Self <: BasicAuthenticationSecurity](x: Self) {
+    
+    inline def setType(value: basic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

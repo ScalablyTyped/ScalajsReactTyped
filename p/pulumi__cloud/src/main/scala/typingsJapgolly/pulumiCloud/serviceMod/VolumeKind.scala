@@ -1,21 +1,17 @@
 package typingsJapgolly.pulumiCloud.serviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.pulumiCloud.pulumiCloudStrings.SharedVolume
   - typingsJapgolly.pulumiCloud.pulumiCloudStrings.HostPathVolume
 */
-trait VolumeKind extends js.Object
-
+trait VolumeKind extends StObject
 object VolumeKind {
-  @scala.inline
-  def HostPathVolume: typingsJapgolly.pulumiCloud.pulumiCloudStrings.HostPathVolume = this.cast("HostPathVolume")
-  @scala.inline
-  def SharedVolume: typingsJapgolly.pulumiCloud.pulumiCloudStrings.SharedVolume = this.cast("SharedVolume")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def HostPathVolume: typingsJapgolly.pulumiCloud.pulumiCloudStrings.HostPathVolume = "HostPathVolume".asInstanceOf[typingsJapgolly.pulumiCloud.pulumiCloudStrings.HostPathVolume]
+  
+  inline def SharedVolume: typingsJapgolly.pulumiCloud.pulumiCloudStrings.SharedVolume = "SharedVolume".asInstanceOf[typingsJapgolly.pulumiCloud.pulumiCloudStrings.SharedVolume]
 }
-

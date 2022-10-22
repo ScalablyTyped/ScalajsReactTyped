@@ -1,30 +1,42 @@
 package typingsJapgolly.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CompareOptions extends js.Object {
+trait CompareOptions extends StObject {
+  
   var file: js.UndefOr[String] = js.undefined
+  
   var highlightColor: js.UndefOr[String] = js.undefined
+  
   var highlightStyle: js.UndefOr[HighlightStyle] = js.undefined
+  
   var tolerance: js.UndefOr[Double] = js.undefined
 }
-
 object CompareOptions {
-  @scala.inline
-  def apply(
-    file: String = null,
-    highlightColor: String = null,
-    highlightStyle: HighlightStyle = null,
-    tolerance: Int | Double = null
-  ): CompareOptions = {
+  
+  inline def apply(): CompareOptions = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor.asInstanceOf[js.Any])
-    if (highlightStyle != null) __obj.updateDynamic("highlightStyle")(highlightStyle.asInstanceOf[js.Any])
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompareOptions]
   }
+  
+  extension [Self <: CompareOptions](x: Self) {
+    
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    
+    inline def setHighlightColor(value: String): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
+    
+    inline def setHighlightStyle(value: HighlightStyle): Self = StObject.set(x, "highlightStyle", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightStyleUndefined: Self = StObject.set(x, "highlightStyle", js.undefined)
+    
+    inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+    
+    inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+  }
 }
-

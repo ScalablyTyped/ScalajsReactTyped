@@ -1,42 +1,48 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MeshRotateParams extends Object {
+trait MeshRotateParams
+  extends StObject
+     with Object {
+  
   /**
-    * Whether to georeference relative to the globe or the projected coordinate system (PCS). This parameter is only relevant for spatial references that can be used in both local and global viewing modes (currently only WebMercator). This parameter defaults to `true` for WebMercator and WGS84, and `false` for any other PCS. When true, the rotation is applied in a Cartesian system with respect to the local coordinate system on the globe and is specified in meters.
+    * Whether to georeference relative to the globe or the projected coordinate system (PCS).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#rotate)
     */
   var geographic: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The origin around which to rotate. If not specified, the mesh will be rotated around the mesh extent center.
+    * The origin around which to rotate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#rotate)
     */
   var origin: js.UndefOr[Point] = js.undefined
 }
-
 object MeshRotateParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    geographic: js.UndefOr[Boolean] = js.undefined,
-    origin: Point = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): MeshRotateParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[MeshRotateParams]
   }
+  
+  extension [Self <: MeshRotateParams](x: Self) {
+    
+    inline def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
+    
+    inline def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
+    
+    inline def setOrigin(value: Point): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+  }
 }
-

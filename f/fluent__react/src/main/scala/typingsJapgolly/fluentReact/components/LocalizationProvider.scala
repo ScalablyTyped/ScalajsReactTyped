@@ -1,46 +1,22 @@
 package typingsJapgolly.fluentReact.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Node
-import typingsJapgolly.fluentBundle.mod.FluentBundle
-import typingsJapgolly.fluentReact.mod.LocalizationProviderProps
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.fluentReact.esmLocalizationMod.ReactLocalization
+import typingsJapgolly.fluentReact.esmProviderMod.LocalizationProviderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LocalizationProvider {
-  def apply(
-    bundles: js.Iterable[FluentBundle],
-    parseMarkup: /* str */ String => CallbackTo[js.Array[Node]] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    LocalizationProviderProps, 
-    typingsJapgolly.fluentReact.mod.LocalizationProvider, 
-    Unit, 
-    LocalizationProviderProps
-  ] = {
-    val __obj = js.Dynamic.literal(bundles = bundles.asInstanceOf[js.Any])
   
-      if (parseMarkup != null) __obj.updateDynamic("parseMarkup")(js.Any.fromFunction1((t0: /* str */ java.lang.String) => parseMarkup(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.fluentReact.mod.LocalizationProviderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.fluentReact.mod.LocalizationProvider](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.fluentReact.mod.LocalizationProviderProps])(children: _*)
+  inline def apply(l10n: ReactLocalization): Default[js.Object] = {
+    val __props = js.Dynamic.literal(l10n = l10n.asInstanceOf[js.Any])
+    new Default[js.Object](js.Array(this.component, __props.asInstanceOf[LocalizationProviderProps]))
   }
+  
   @JSImport("@fluent/react", "LocalizationProvider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: LocalizationProviderProps): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

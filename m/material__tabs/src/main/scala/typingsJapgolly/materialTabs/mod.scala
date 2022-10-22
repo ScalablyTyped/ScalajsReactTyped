@@ -1,81 +1,289 @@
 package typingsJapgolly.materialTabs
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materialTabs.adapterMod.MDCTabBarScrollerAdapter
+import typingsJapgolly.materialBase.Element
+import typingsJapgolly.materialTabs.anon.ACTIVE
+import typingsJapgolly.materialTabs.anon.CHANGEEVENT
+import typingsJapgolly.materialTabs.anon.FRAMESELECTOR
+import typingsJapgolly.materialTabs.anon.INDICATORBACK
+import typingsJapgolly.materialTabs.anon.PartialMDCTabAdapter
+import typingsJapgolly.materialTabs.anon.PartialMDCTabBarAdapter
+import typingsJapgolly.materialTabs.anon.PartialMDCTabBarScrollerA
+import typingsJapgolly.materialTabs.anon.SELECTEDEVENT
+import typingsJapgolly.materialTabs.anon.UPGRADED
 import typingsJapgolly.materialTabs.tabAdapterMod.MDCTabAdapter
 import typingsJapgolly.materialTabs.tabBarAdapterMod.MDCTabBarAdapter
-import typingsJapgolly.materialTabs.tabBarFoundationMod.default
+import typingsJapgolly.materialTabs.tabBarScrollerAdapterMod.MDCTabBarScrollerAdapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tabs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class MDCTab ()
-    extends typingsJapgolly.materialTabs.tabMod.MDCTab
+object mod {
   
+  @JSImport("@material/tabs", JSImport.Default)
   @js.native
-  class MDCTabBar ()
-    extends typingsJapgolly.materialTabs.tabBarMod.MDCTabBar
-  
-  @js.native
-  class MDCTabBarFoundation () extends default
-  
-  @js.native
-  class MDCTabBarScroller ()
-    extends typingsJapgolly.materialTabs.tabBarScrollerMod.MDCTabBarScroller
-  
-  @js.native
-  class MDCTabBarScrollerFoundation ()
-    extends typingsJapgolly.materialTabs.foundationMod.default
-  
-  @js.native
-  class MDCTabFoundation ()
-    extends typingsJapgolly.materialTabs.tabFoundationMod.default
-  
-  /* static members */
-  @js.native
-  object MDCTab extends js.Object {
-    def attachTo(root: Element): typingsJapgolly.materialTabs.tabMod.MDCTab = js.native
+  open class default ()
+    extends typingsJapgolly.materialTabs.tabBarScrollerIndexMod.default {
+    def this(adapter: PartialMDCTabBarScrollerA) = this()
   }
-  
   /* static members */
-  @js.native
-  object MDCTabBar extends js.Object {
-    def attachTo(root: Element): typingsJapgolly.materialTabs.tabBarMod.MDCTabBar = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object MDCTabBarFoundation extends js.Object {
-    val cssClasses: typingsJapgolly.materialTabs.tabBarConstantsMod.cssClasses = js.native
-    val defaultAdapter: MDCTabBarAdapter = js.native
-    val strings: typingsJapgolly.materialTabs.tabBarConstantsMod.strings = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object MDCTabBarScroller extends js.Object {
-    def attachTo(root: Element): typingsJapgolly.materialTabs.tabBarScrollerMod.MDCTabBarScroller = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object MDCTabBarScrollerFoundation extends js.Object {
-    val cssClasses: typingsJapgolly.materialTabs.constantsMod.cssClasses = js.native
+  object default {
+    
+    @JSImport("@material/tabs", "default.cssClasses")
+    @js.native
+    val cssClasses: INDICATORBACK = js.native
+    
+    @JSImport("@material/tabs", "default.defaultAdapter")
+    @js.native
     val defaultAdapter: MDCTabBarScrollerAdapter = js.native
-    val strings: typingsJapgolly.materialTabs.constantsMod.strings = js.native
+    
+    @JSImport("@material/tabs", "default.strings")
+    @js.native
+    val strings: FRAMESELECTOR = js.native
   }
   
-  /* static members */
+  @JSImport("@material/tabs", "MDCTab")
   @js.native
-  object MDCTabFoundation extends js.Object {
-    val cssClasses: typingsJapgolly.materialTabs.tabConstantsMod.cssClasses = js.native
-    val defaultAdapter: MDCTabAdapter = js.native
-    val strings: typingsJapgolly.materialTabs.tabConstantsMod.strings = js.native
+  open class MDCTab protected ()
+    extends typingsJapgolly.materialTabs.tabIndexMod.MDCTab {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(
+      root: Element,
+      foundation: typingsJapgolly.materialTabs.tabFoundationMod.MDCTabFoundation,
+      args: Any*
+    ) = this()
+  }
+  /* static members */
+  object MDCTab {
+    
+    @JSImport("@material/tabs", "MDCTab")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: org.scalajs.dom.Element): typingsJapgolly.materialTabs.tabComponentMod.MDCTab = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materialTabs.tabComponentMod.MDCTab]
   }
   
+  @JSImport("@material/tabs", "MDCTabBar")
+  @js.native
+  open class MDCTabBar protected ()
+    extends typingsJapgolly.materialTabs.tabBarIndexMod.MDCTabBar {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(
+      root: Element,
+      foundation: typingsJapgolly.materialTabs.tabBarFoundationMod.MDCTabBarFoundation,
+      args: Any*
+    ) = this()
+  }
+  /* static members */
+  object MDCTabBar {
+    
+    @JSImport("@material/tabs", "MDCTabBar")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: org.scalajs.dom.Element): typingsJapgolly.materialTabs.tabBarComponentMod.MDCTabBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materialTabs.tabBarComponentMod.MDCTabBar]
+  }
+  
+  @JSImport("@material/tabs", "MDCTabBarFoundation")
+  @js.native
+  open class MDCTabBarFoundation ()
+    extends typingsJapgolly.materialTabs.tabBarIndexMod.MDCTabBarFoundation {
+    def this(adapter: PartialMDCTabBarAdapter) = this()
+  }
+  /* static members */
+  object MDCTabBarFoundation {
+    
+    @JSImport("@material/tabs", "MDCTabBarFoundation.cssClasses")
+    @js.native
+    val cssClasses: UPGRADED = js.native
+    
+    @JSImport("@material/tabs", "MDCTabBarFoundation.defaultAdapter")
+    @js.native
+    val defaultAdapter: MDCTabBarAdapter = js.native
+    
+    @JSImport("@material/tabs", "MDCTabBarFoundation.strings")
+    @js.native
+    val strings: CHANGEEVENT = js.native
+  }
+  
+  @JSImport("@material/tabs", "MDCTabBarScroller")
+  @js.native
+  open class MDCTabBarScroller protected ()
+    extends typingsJapgolly.materialTabs.tabBarScrollerIndexMod.MDCTabBarScroller {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(
+      root: Element,
+      foundation: typingsJapgolly.materialTabs.tabBarScrollerFoundationMod.MDCTabBarScrollerFoundation,
+      args: Any*
+    ) = this()
+  }
+  /* static members */
+  object MDCTabBarScroller {
+    
+    @JSImport("@material/tabs", "MDCTabBarScroller")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: org.scalajs.dom.Element): typingsJapgolly.materialTabs.tabBarScrollerComponentMod.MDCTabBarScroller = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materialTabs.tabBarScrollerComponentMod.MDCTabBarScroller]
+  }
+  
+  @JSImport("@material/tabs", "MDCTabBarScrollerFoundation")
+  @js.native
+  open class MDCTabBarScrollerFoundation ()
+    extends typingsJapgolly.materialTabs.tabBarScrollerIndexMod.MDCTabBarScrollerFoundation {
+    def this(adapter: PartialMDCTabBarScrollerA) = this()
+  }
+  /* static members */
+  object MDCTabBarScrollerFoundation {
+    
+    @JSImport("@material/tabs", "MDCTabBarScrollerFoundation.cssClasses")
+    @js.native
+    val cssClasses: INDICATORBACK = js.native
+    
+    @JSImport("@material/tabs", "MDCTabBarScrollerFoundation.defaultAdapter")
+    @js.native
+    val defaultAdapter: MDCTabBarScrollerAdapter = js.native
+    
+    @JSImport("@material/tabs", "MDCTabBarScrollerFoundation.strings")
+    @js.native
+    val strings: FRAMESELECTOR = js.native
+  }
+  
+  @JSImport("@material/tabs", "MDCTabFoundation")
+  @js.native
+  open class MDCTabFoundation ()
+    extends typingsJapgolly.materialTabs.tabIndexMod.MDCTabFoundation {
+    def this(adapter: PartialMDCTabAdapter) = this()
+  }
+  /* static members */
+  object MDCTabFoundation {
+    
+    @JSImport("@material/tabs", "MDCTabFoundation.cssClasses")
+    @js.native
+    val cssClasses: ACTIVE = js.native
+    
+    @JSImport("@material/tabs", "MDCTabFoundation.defaultAdapter")
+    @js.native
+    val defaultAdapter: MDCTabAdapter = js.native
+    
+    @JSImport("@material/tabs", "MDCTabFoundation.strings")
+    @js.native
+    val strings: SELECTEDEVENT = js.native
+  }
+  
+  object tabBarCssClasses {
+    
+    @JSImport("@material/tabs", "tabBarCssClasses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/tabs", "tabBarCssClasses.UPGRADED")
+    @js.native
+    def UPGRADED: String = js.native
+    inline def UPGRADED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPGRADED")(x.asInstanceOf[js.Any])
+  }
+  
+  object tabBarScrollerCssClasses {
+    
+    @JSImport("@material/tabs", "tabBarScrollerCssClasses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/tabs", "tabBarScrollerCssClasses.INDICATOR_BACK")
+    @js.native
+    def INDICATOR_BACK: String = js.native
+    inline def INDICATOR_BACK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_BACK")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/tabs", "tabBarScrollerCssClasses.INDICATOR_ENABLED")
+    @js.native
+    def INDICATOR_ENABLED: String = js.native
+    inline def INDICATOR_ENABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_ENABLED")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/tabs", "tabBarScrollerCssClasses.INDICATOR_FORWARD")
+    @js.native
+    def INDICATOR_FORWARD: String = js.native
+    inline def INDICATOR_FORWARD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_FORWARD")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/tabs", "tabBarScrollerCssClasses.TAB")
+    @js.native
+    def TAB: String = js.native
+    inline def TAB_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB")(x.asInstanceOf[js.Any])
+  }
+  
+  object tabBarScrollerStrings {
+    
+    @JSImport("@material/tabs", "tabBarScrollerStrings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/tabs", "tabBarScrollerStrings.FRAME_SELECTOR")
+    @js.native
+    def FRAME_SELECTOR: String = js.native
+    inline def FRAME_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAME_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/tabs", "tabBarScrollerStrings.INDICATOR_BACK_SELECTOR")
+    @js.native
+    def INDICATOR_BACK_SELECTOR: String = js.native
+    inline def INDICATOR_BACK_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_BACK_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/tabs", "tabBarScrollerStrings.INDICATOR_FORWARD_SELECTOR")
+    @js.native
+    def INDICATOR_FORWARD_SELECTOR: String = js.native
+    inline def INDICATOR_FORWARD_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_FORWARD_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/tabs", "tabBarScrollerStrings.TABS_SELECTOR")
+    @js.native
+    def TABS_SELECTOR: String = js.native
+    inline def TABS_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TABS_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/tabs", "tabBarScrollerStrings.TAB_SELECTOR")
+    @js.native
+    def TAB_SELECTOR: String = js.native
+    inline def TAB_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_SELECTOR")(x.asInstanceOf[js.Any])
+  }
+  
+  object tabBarStrings {
+    
+    @JSImport("@material/tabs", "tabBarStrings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/tabs", "tabBarStrings.CHANGE_EVENT")
+    @js.native
+    def CHANGE_EVENT: String = js.native
+    inline def CHANGE_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHANGE_EVENT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/tabs", "tabBarStrings.INDICATOR_SELECTOR")
+    @js.native
+    def INDICATOR_SELECTOR: String = js.native
+    inline def INDICATOR_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/tabs", "tabBarStrings.TAB_SELECTOR")
+    @js.native
+    def TAB_SELECTOR: String = js.native
+    inline def TAB_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_SELECTOR")(x.asInstanceOf[js.Any])
+  }
+  
+  object tabCssClasses {
+    
+    @JSImport("@material/tabs", "tabCssClasses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/tabs", "tabCssClasses.ACTIVE")
+    @js.native
+    def ACTIVE: String = js.native
+    inline def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
+  }
+  
+  object tabStrings {
+    
+    @JSImport("@material/tabs", "tabStrings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/tabs", "tabStrings.SELECTED_EVENT")
+    @js.native
+    def SELECTED_EVENT: String = js.native
+    inline def SELECTED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED_EVENT")(x.asInstanceOf[js.Any])
+  }
 }
-

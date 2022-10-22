@@ -1,7 +1,7 @@
 
 # Scala.js typings for cron
 
-Typings are for version 1.7
+Typings are for version 2.0
 
 ## Library description:
 Cron jobs for your node
@@ -10,10 +10,10 @@ Cron jobs for your node
 | ------------------ | :-------------: |
 | Full name          | cron |
 | Keywords           | cron, node cron, node-cron, schedule, scheduler, cronjob, cron job |
-| # releases         | 10 |
-| # dependents       | 779 |
-| # downloads        | 24971264 |
-| # stars            | 200 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 6831420.666666667 |
+| # stars            | 7469.0 |
 
 ## Links
 - [Homepage](https://github.com/kelektiv/node-cron#readme)

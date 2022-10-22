@@ -1,42 +1,81 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EffectTiming extends js.Object {
+trait EffectTiming extends StObject {
+  
+  /* standard dom */
   var delay: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var direction: js.UndefOr[PlaybackDirection] = js.undefined
+  
+  /* standard dom */
   var duration: js.UndefOr[Double | java.lang.String] = js.undefined
+  
+  /* standard dom */
   var easing: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var endDelay: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var fill: js.UndefOr[FillMode] = js.undefined
+  
+  /* standard dom */
   var iterationStart: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var iterations: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var playbackRate: js.UndefOr[Double] = js.undefined
 }
-
 object EffectTiming {
-  @scala.inline
-  def apply(
-    delay: Int | Double = null,
-    direction: PlaybackDirection = null,
-    duration: Double | java.lang.String = null,
-    easing: java.lang.String = null,
-    endDelay: Int | Double = null,
-    fill: FillMode = null,
-    iterationStart: Int | Double = null,
-    iterations: Int | Double = null
-  ): EffectTiming = {
+  
+  inline def apply(): EffectTiming = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (endDelay != null) __obj.updateDynamic("endDelay")(endDelay.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (iterationStart != null) __obj.updateDynamic("iterationStart")(iterationStart.asInstanceOf[js.Any])
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
     __obj.asInstanceOf[EffectTiming]
   }
+  
+  extension [Self <: EffectTiming](x: Self) {
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setDirection(value: PlaybackDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setDuration(value: Double | java.lang.String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEasing(value: java.lang.String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    
+    inline def setEndDelay(value: Double): Self = StObject.set(x, "endDelay", value.asInstanceOf[js.Any])
+    
+    inline def setEndDelayUndefined: Self = StObject.set(x, "endDelay", js.undefined)
+    
+    inline def setFill(value: FillMode): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setIterationStart(value: Double): Self = StObject.set(x, "iterationStart", value.asInstanceOf[js.Any])
+    
+    inline def setIterationStartUndefined: Self = StObject.set(x, "iterationStart", js.undefined)
+    
+    inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    
+    inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+    
+    inline def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
+    
+    inline def setPlaybackRateUndefined: Self = StObject.set(x, "playbackRate", js.undefined)
+  }
 }
-

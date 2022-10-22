@@ -1,13 +1,14 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxSelectionCell...
   */
-trait INxSelectionCell extends js.Object {
+trait INxSelectionCell extends StObject {
+  
   /**
     * Column index to select
     * Indexing starts from 0.
@@ -17,6 +18,7 @@ trait INxSelectionCell extends js.Object {
     *   L, the index is based on the left dimensions indexes
     */
   var qCol: Double
+  
   /**
     * Row index to select
     * Indexing starts from 0.
@@ -26,6 +28,7 @@ trait INxSelectionCell extends js.Object {
     * - L, the index is based on the data matrix
     */
   var qRow: Double
+  
   /**
     * Type of cells to select
     * One of:
@@ -35,13 +38,19 @@ trait INxSelectionCell extends js.Object {
     */
   var qType: NxSelectionCellType
 }
-
 object INxSelectionCell {
-  @scala.inline
-  def apply(qCol: Double, qRow: Double, qType: NxSelectionCellType): INxSelectionCell = {
-    val __obj = js.Dynamic.literal(qCol = qCol.asInstanceOf[js.Any], qRow = qRow.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
   
+  inline def apply(qCol: Double, qRow: Double, qType: NxSelectionCellType): INxSelectionCell = {
+    val __obj = js.Dynamic.literal(qCol = qCol.asInstanceOf[js.Any], qRow = qRow.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxSelectionCell]
   }
+  
+  extension [Self <: INxSelectionCell](x: Self) {
+    
+    inline def setQCol(value: Double): Self = StObject.set(x, "qCol", value.asInstanceOf[js.Any])
+    
+    inline def setQRow(value: Double): Self = StObject.set(x, "qRow", value.asInstanceOf[js.Any])
+    
+    inline def setQType(value: NxSelectionCellType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+  }
 }
-

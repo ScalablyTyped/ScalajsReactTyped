@@ -1,41 +1,30 @@
 package typingsJapgolly.linkifyjs.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.linkifyjs.mod.Options
 import typingsJapgolly.linkifyjs.reactMod.LinkifyProps
 import typingsJapgolly.linkifyjs.reactMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object React {
-  def apply(
-    options: Options = null,
-    tagName: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[LinkifyProps, default, Unit, LinkifyProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.linkifyjs.reactMod.LinkifyProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.linkifyjs.reactMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.linkifyjs.reactMod.LinkifyProps])(children: _*)
-  }
   @JSImport("linkifyjs/react", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def options(value: Options): this.type = set("options", value.asInstanceOf[js.Any])
+    
+    inline def tagName(value: String): this.type = set("tagName", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: React.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: LinkifyProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

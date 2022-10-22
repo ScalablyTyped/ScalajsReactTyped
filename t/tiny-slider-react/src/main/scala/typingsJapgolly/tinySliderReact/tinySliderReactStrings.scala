@@ -1,54 +1,44 @@
 package typingsJapgolly.tinySliderReact
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tinySliderReactStrings {
-  @js.native
-  sealed trait backward extends js.Object
   
   @js.native
-  sealed trait carousel extends js.Object
+  sealed trait backward extends StObject
+  inline def backward: backward = "backward".asInstanceOf[backward]
   
   @js.native
-  sealed trait forward extends js.Object
+  sealed trait carousel extends StObject
+  inline def carousel: carousel = "carousel".asInstanceOf[carousel]
   
   @js.native
-  sealed trait gallery extends js.Object
+  sealed trait forward extends StObject
+  inline def forward: forward = "forward".asInstanceOf[forward]
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait gallery extends StObject
+  inline def gallery: gallery = "gallery".asInstanceOf[gallery]
   
   @js.native
-  sealed trait inner extends js.Object
+  sealed trait horizontal extends StObject
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait outer extends js.Object
+  sealed trait inner extends StObject
+  inline def inner: inner = "inner".asInstanceOf[inner]
   
   @js.native
-  sealed trait page extends js.Object
+  sealed trait outer extends StObject
+  inline def outer: outer = "outer".asInstanceOf[outer]
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait page extends StObject
+  inline def page: page = "page".asInstanceOf[page]
   
-  @scala.inline
-  def backward: backward = "backward".asInstanceOf[backward]
-  @scala.inline
-  def carousel: carousel = "carousel".asInstanceOf[carousel]
-  @scala.inline
-  def forward: forward = "forward".asInstanceOf[forward]
-  @scala.inline
-  def gallery: gallery = "gallery".asInstanceOf[gallery]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def inner: inner = "inner".asInstanceOf[inner]
-  @scala.inline
-  def outer: outer = "outer".asInstanceOf[outer]
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @js.native
+  sealed trait vertical extends StObject
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
-

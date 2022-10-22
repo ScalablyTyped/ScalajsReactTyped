@@ -1,32 +1,34 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PageOrientation extends js.Object
-
+sealed trait PageOrientation extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.PageOrientation")
 @js.native
-object PageOrientation extends js.Object {
+object PageOrientation extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait landscape extends PageOrientation
+  sealed trait landscape
+    extends StObject
+       with PageOrientation
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait portrait extends PageOrientation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PageOrientation with String] = js.native
-  /* "Landscape" */ @js.native
-  object landscape extends TopLevel[landscape with String]
-  
-  /* "Portrait" */ @js.native
-  object portrait extends TopLevel[portrait with String]
-  
+  sealed trait portrait
+    extends StObject
+       with PageOrientation
 }
-

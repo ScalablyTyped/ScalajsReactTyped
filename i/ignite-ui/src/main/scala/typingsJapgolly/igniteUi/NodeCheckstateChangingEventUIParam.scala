@@ -1,48 +1,65 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NodeCheckstateChangingEventUIParam extends js.Object {
+trait NodeCheckstateChangingEventUIParam extends StObject {
+  
   /**
-  	 * Gets the collection of all checked nodes before the new state is applied.
-  	 */
-  var currentCheckedNodes: js.UndefOr[js.Array[_]] = js.undefined
+    * Gets the collection of all checked nodes before the new state is applied.
+    */
+  var currentCheckedNodes: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Gets the current state of the checkbox.
-  	 */
+    * Gets the current state of the checkbox.
+    */
   var currentState: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the new state that is going to be applied to the checkbox.
-  	 */
+    * Gets the new state that is going to be applied to the checkbox.
+    */
   var newState: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the node object the checkbox of which is being interacted with.
-  	 */
-  var node: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the node object the checkbox of which is being interacted with.
+    */
+  var node: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the tree.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the tree.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object NodeCheckstateChangingEventUIParam {
-  @scala.inline
-  def apply(
-    currentCheckedNodes: js.Array[_] = null,
-    currentState: String = null,
-    newState: String = null,
-    node: js.Any = null,
-    owner: js.Any = null
-  ): NodeCheckstateChangingEventUIParam = {
+  
+  inline def apply(): NodeCheckstateChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (currentCheckedNodes != null) __obj.updateDynamic("currentCheckedNodes")(currentCheckedNodes.asInstanceOf[js.Any])
-    if (currentState != null) __obj.updateDynamic("currentState")(currentState.asInstanceOf[js.Any])
-    if (newState != null) __obj.updateDynamic("newState")(newState.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeCheckstateChangingEventUIParam]
   }
+  
+  extension [Self <: NodeCheckstateChangingEventUIParam](x: Self) {
+    
+    inline def setCurrentCheckedNodes(value: js.Array[Any]): Self = StObject.set(x, "currentCheckedNodes", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentCheckedNodesUndefined: Self = StObject.set(x, "currentCheckedNodes", js.undefined)
+    
+    inline def setCurrentCheckedNodesVarargs(value: Any*): Self = StObject.set(x, "currentCheckedNodes", js.Array(value*))
+    
+    inline def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentStateUndefined: Self = StObject.set(x, "currentState", js.undefined)
+    
+    inline def setNewState(value: String): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
+    
+    inline def setNewStateUndefined: Self = StObject.set(x, "newState", js.undefined)
+    
+    inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

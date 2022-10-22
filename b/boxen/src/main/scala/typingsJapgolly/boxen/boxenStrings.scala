@@ -1,150 +1,124 @@
 package typingsJapgolly.boxen
 
-import typingsJapgolly.boxen.mod.BorderStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boxenStrings {
-  @js.native
-  sealed trait black extends js.Object
   
   @js.native
-  sealed trait blackBright extends js.Object
+  sealed trait arrow extends StObject
+  inline def arrow: arrow = "arrow".asInstanceOf[arrow]
   
   @js.native
-  sealed trait blue extends js.Object
+  sealed trait black extends StObject
+  inline def black: black = "black".asInstanceOf[black]
   
   @js.native
-  sealed trait blueBright extends js.Object
+  sealed trait blackBright extends StObject
+  inline def blackBright: blackBright = "blackBright".asInstanceOf[blackBright]
   
   @js.native
-  sealed trait bold extends BorderStyle
+  sealed trait blue extends StObject
+  inline def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait blueBright extends StObject
+  inline def blueBright: blueBright = "blueBright".asInstanceOf[blueBright]
   
   @js.native
-  sealed trait classic extends BorderStyle
+  sealed trait bold extends StObject
+  inline def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait cyan extends js.Object
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait cyanBright extends js.Object
+  sealed trait classic extends StObject
+  inline def classic: classic = "classic".asInstanceOf[classic]
   
   @js.native
-  sealed trait double extends BorderStyle
+  sealed trait cyan extends StObject
+  inline def cyan: cyan = "cyan".asInstanceOf[cyan]
   
   @js.native
-  sealed trait doubleSingle extends BorderStyle
+  sealed trait cyanBright extends StObject
+  inline def cyanBright: cyanBright = "cyanBright".asInstanceOf[cyanBright]
   
   @js.native
-  sealed trait gray extends js.Object
+  sealed trait double extends StObject
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
-  sealed trait green extends js.Object
+  sealed trait doubleSingle extends StObject
+  inline def doubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
   
   @js.native
-  sealed trait greenBright extends js.Object
+  sealed trait gray extends StObject
+  inline def gray: gray = "gray".asInstanceOf[gray]
   
   @js.native
-  sealed trait grey extends js.Object
+  sealed trait green extends StObject
+  inline def green: green = "green".asInstanceOf[green]
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait greenBright extends StObject
+  inline def greenBright: greenBright = "greenBright".asInstanceOf[greenBright]
   
   @js.native
-  sealed trait magenta extends js.Object
+  sealed trait grey extends StObject
+  inline def grey: grey = "grey".asInstanceOf[grey]
   
   @js.native
-  sealed trait magentaBright extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait red extends js.Object
+  sealed trait magenta extends StObject
+  inline def magenta: magenta = "magenta".asInstanceOf[magenta]
   
   @js.native
-  sealed trait redBright extends js.Object
+  sealed trait magentaBright extends StObject
+  inline def magentaBright: magentaBright = "magentaBright".asInstanceOf[magentaBright]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait red extends StObject
+  inline def red: red = "red".asInstanceOf[red]
   
   @js.native
-  sealed trait round extends BorderStyle
+  sealed trait redBright extends StObject
+  inline def redBright: redBright = "redBright".asInstanceOf[redBright]
   
   @js.native
-  sealed trait single extends BorderStyle
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait singleDouble extends BorderStyle
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait white extends js.Object
+  sealed trait single extends StObject
+  inline def single: single = "single".asInstanceOf[single]
   
   @js.native
-  sealed trait whiteBright extends js.Object
+  sealed trait singleDouble extends StObject
+  inline def singleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
   
   @js.native
-  sealed trait yellow extends js.Object
+  sealed trait white extends StObject
+  inline def white: white = "white".asInstanceOf[white]
   
   @js.native
-  sealed trait yellowBright extends js.Object
+  sealed trait whiteBright extends StObject
+  inline def whiteBright: whiteBright = "whiteBright".asInstanceOf[whiteBright]
   
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
-  @scala.inline
-  def blackBright: blackBright = "blackBright".asInstanceOf[blackBright]
-  @scala.inline
-  def blue: blue = "blue".asInstanceOf[blue]
-  @scala.inline
-  def blueBright: blueBright = "blueBright".asInstanceOf[blueBright]
-  @scala.inline
-  def bold: bold = "bold".asInstanceOf[bold]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def classic: classic = "classic".asInstanceOf[classic]
-  @scala.inline
-  def cyan: cyan = "cyan".asInstanceOf[cyan]
-  @scala.inline
-  def cyanBright: cyanBright = "cyanBright".asInstanceOf[cyanBright]
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
-  @scala.inline
-  def doubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
-  @scala.inline
-  def gray: gray = "gray".asInstanceOf[gray]
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
-  @scala.inline
-  def greenBright: greenBright = "greenBright".asInstanceOf[greenBright]
-  @scala.inline
-  def grey: grey = "grey".asInstanceOf[grey]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def magenta: magenta = "magenta".asInstanceOf[magenta]
-  @scala.inline
-  def magentaBright: magentaBright = "magentaBright".asInstanceOf[magentaBright]
-  @scala.inline
-  def red: red = "red".asInstanceOf[red]
-  @scala.inline
-  def redBright: redBright = "redBright".asInstanceOf[redBright]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
-  @scala.inline
-  def singleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
-  @scala.inline
-  def whiteBright: whiteBright = "whiteBright".asInstanceOf[whiteBright]
-  @scala.inline
-  def yellow: yellow = "yellow".asInstanceOf[yellow]
-  @scala.inline
-  def yellowBright: yellowBright = "yellowBright".asInstanceOf[yellowBright]
+  @js.native
+  sealed trait yellow extends StObject
+  inline def yellow: yellow = "yellow".asInstanceOf[yellow]
+  
+  @js.native
+  sealed trait yellowBright extends StObject
+  inline def yellowBright: yellowBright = "yellowBright".asInstanceOf[yellowBright]
 }
-

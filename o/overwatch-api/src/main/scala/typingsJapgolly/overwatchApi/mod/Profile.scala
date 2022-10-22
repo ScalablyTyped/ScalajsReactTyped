@@ -1,35 +1,44 @@
 package typingsJapgolly.overwatchApi.mod
 
-import typingsJapgolly.overwatchApi.AnonCompetitive
-import typingsJapgolly.overwatchApi.AnonDamage
-import typingsJapgolly.overwatchApi.AnonFrame
-import typingsJapgolly.overwatchApi.AnonQuickplay
+import typingsJapgolly.overwatchApi.anon.Competitive
+import typingsJapgolly.overwatchApi.anon.Damage
+import typingsJapgolly.overwatchApi.anon.Frame
+import typingsJapgolly.overwatchApi.anon.Quickplay
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Profile extends js.Object {
-  var competitive: AnonDamage
-  var endorsement: AnonFrame
-  var games: AnonCompetitive
+trait Profile extends StObject {
+  
+  var competitive: Damage
+  
+  var endorsement: Frame
+  
+  var games: Competitive
+  
   var level: Double
+  
   var levelFrame: String
-  var playtime: AnonQuickplay
+  
+  var playtime: Quickplay
+  
   var portrait: String
+  
   var `private`: Boolean
+  
   var star: String
+  
   var username: String
 }
-
 object Profile {
-  @scala.inline
-  def apply(
-    competitive: AnonDamage,
-    endorsement: AnonFrame,
-    games: AnonCompetitive,
+  
+  inline def apply(
+    competitive: Damage,
+    endorsement: Frame,
+    games: Competitive,
     level: Double,
     levelFrame: String,
-    playtime: AnonQuickplay,
+    playtime: Quickplay,
     portrait: String,
     `private`: Boolean,
     star: String,
@@ -39,5 +48,27 @@ object Profile {
     __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
+  
+  extension [Self <: Profile](x: Self) {
+    
+    inline def setCompetitive(value: Damage): Self = StObject.set(x, "competitive", value.asInstanceOf[js.Any])
+    
+    inline def setEndorsement(value: Frame): Self = StObject.set(x, "endorsement", value.asInstanceOf[js.Any])
+    
+    inline def setGames(value: Competitive): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
+    
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelFrame(value: String): Self = StObject.set(x, "levelFrame", value.asInstanceOf[js.Any])
+    
+    inline def setPlaytime(value: Quickplay): Self = StObject.set(x, "playtime", value.asInstanceOf[js.Any])
+    
+    inline def setPortrait(value: String): Self = StObject.set(x, "portrait", value.asInstanceOf[js.Any])
+    
+    inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    
+    inline def setStar(value: String): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
+    
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+  }
 }
-

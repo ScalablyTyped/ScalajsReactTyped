@@ -1,77 +1,122 @@
 package typingsJapgolly.rfc4648
 
-import typingsJapgolly.rfc4648.codecMod.Encoding
-import typingsJapgolly.rfc4648.codecMod.ParseOptions
-import typingsJapgolly.rfc4648.codecMod.StringifyOptions
+import typingsJapgolly.rfc4648.libSrcCodecMod.Encoding
+import typingsJapgolly.rfc4648.libSrcCodecMod.ParseOptions
+import typingsJapgolly.rfc4648.libSrcCodecMod.StringifyOptions
 import typingsJapgolly.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rfc4648", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  object base16 extends js.Object {
-    def parse(string: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-    def parse(string: String, opts: ParseOptions): scala.scalajs.js.typedarray.Uint8Array = js.native
-    def stringify(data: ArrayLike[Double]): String = js.native
-    def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = js.native
+object mod {
+  
+  object base16 {
+    
+    @JSImport("rfc4648", "base16")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def parse(string: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def parse(string: String, opts: ParseOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    
+    inline def stringify(data: ArrayLike[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @js.native
-  object base32 extends js.Object {
-    def parse(string: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-    def parse(string: String, opts: ParseOptions): scala.scalajs.js.typedarray.Uint8Array = js.native
-    def stringify(data: ArrayLike[Double]): String = js.native
-    def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = js.native
+  object base32 {
+    
+    @JSImport("rfc4648", "base32")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def parse(string: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def parse(string: String, opts: ParseOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    
+    inline def stringify(data: ArrayLike[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @js.native
-  object base32hex extends js.Object {
-    def parse(string: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-    def parse(string: String, opts: ParseOptions): scala.scalajs.js.typedarray.Uint8Array = js.native
-    def stringify(data: ArrayLike[Double]): String = js.native
-    def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = js.native
+  object base32hex {
+    
+    @JSImport("rfc4648", "base32hex")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def parse(string: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def parse(string: String, opts: ParseOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    
+    inline def stringify(data: ArrayLike[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @js.native
-  object base64 extends js.Object {
-    def parse(string: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-    def parse(string: String, opts: ParseOptions): scala.scalajs.js.typedarray.Uint8Array = js.native
-    def stringify(data: ArrayLike[Double]): String = js.native
-    def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = js.native
+  object base64 {
+    
+    @JSImport("rfc4648", "base64")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def parse(string: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def parse(string: String, opts: ParseOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    
+    inline def stringify(data: ArrayLike[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @js.native
-  object base64url extends js.Object {
-    def parse(string: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-    def parse(string: String, opts: ParseOptions): scala.scalajs.js.typedarray.Uint8Array = js.native
-    def stringify(data: ArrayLike[Double]): String = js.native
-    def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = js.native
+  object base64url {
+    
+    @JSImport("rfc4648", "base64url")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def parse(string: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def parse(string: String, opts: ParseOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    
+    inline def stringify(data: ArrayLike[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def stringify(data: ArrayLike[Double], opts: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @js.native
-  object codec extends js.Object {
-    @JSName("parse")
-    var parse_Original: js.Function3[
+  object codec {
+    
+    @JSImport("rfc4648", "codec")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rfc4648", "codec.parse")
+    @js.native
+    def parse: js.Function3[
         /* string */ String, 
         /* encoding */ Encoding, 
         /* opts */ js.UndefOr[ParseOptions], 
-        scala.scalajs.js.typedarray.Uint8Array
+        js.typedarray.Uint8Array
       ] = js.native
-    @JSName("stringify")
-    var stringify_Original: js.Function3[
+    inline def parse(string: String, encoding: Encoding): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    inline def parse(string: String, encoding: Encoding, opts: ParseOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    inline def parse_=(
+      x: js.Function3[
+          /* string */ String, 
+          /* encoding */ Encoding, 
+          /* opts */ js.UndefOr[ParseOptions], 
+          js.typedarray.Uint8Array
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rfc4648", "codec.stringify")
+    @js.native
+    def stringify: js.Function3[
         /* data */ ArrayLike[Double], 
         /* encoding */ Encoding, 
         /* opts */ js.UndefOr[StringifyOptions], 
         String
       ] = js.native
-    def parse(string: String, encoding: Encoding): scala.scalajs.js.typedarray.Uint8Array = js.native
-    def parse(string: String, encoding: Encoding, opts: ParseOptions): scala.scalajs.js.typedarray.Uint8Array = js.native
-    def stringify(data: ArrayLike[Double], encoding: Encoding): String = js.native
-    def stringify(data: ArrayLike[Double], encoding: Encoding, opts: StringifyOptions): String = js.native
+    inline def stringify(data: ArrayLike[Double], encoding: Encoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(data: ArrayLike[Double], encoding: Encoding, opts: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify_=(
+      x: js.Function3[
+          /* data */ ArrayLike[Double], 
+          /* encoding */ Encoding, 
+          /* opts */ js.UndefOr[StringifyOptions], 
+          String
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stringify")(x.asInstanceOf[js.Any])
   }
-  
 }
-

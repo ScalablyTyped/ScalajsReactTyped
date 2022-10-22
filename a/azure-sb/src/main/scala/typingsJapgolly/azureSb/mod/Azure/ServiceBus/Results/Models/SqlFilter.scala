@@ -1,32 +1,42 @@
 package typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models
 
 import typingsJapgolly.azureSb.mod.Azure.ServiceBus.Dictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-sql-filter
   */
-trait SqlFilter extends js.Object {
+trait SqlFilter extends StObject {
+  
   val CompatibilityLevel: String
-  var Parameters: js.UndefOr[Dictionary[_]] = js.undefined
+  
+  var Parameters: js.UndefOr[Dictionary[Any]] = js.undefined
+  
   var RequiresPreprocessing: js.UndefOr[String] = js.undefined
+  
   var SqlExpression: String
 }
-
 object SqlFilter {
-  @scala.inline
-  def apply(
-    CompatibilityLevel: String,
-    SqlExpression: String,
-    Parameters: Dictionary[_] = null,
-    RequiresPreprocessing: String = null
-  ): SqlFilter = {
+  
+  inline def apply(CompatibilityLevel: String, SqlExpression: String): SqlFilter = {
     val __obj = js.Dynamic.literal(CompatibilityLevel = CompatibilityLevel.asInstanceOf[js.Any], SqlExpression = SqlExpression.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (RequiresPreprocessing != null) __obj.updateDynamic("RequiresPreprocessing")(RequiresPreprocessing.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlFilter]
   }
+  
+  extension [Self <: SqlFilter](x: Self) {
+    
+    inline def setCompatibilityLevel(value: String): Self = StObject.set(x, "CompatibilityLevel", value.asInstanceOf[js.Any])
+    
+    inline def setParameters(value: Dictionary[Any]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    
+    inline def setRequiresPreprocessing(value: String): Self = StObject.set(x, "RequiresPreprocessing", value.asInstanceOf[js.Any])
+    
+    inline def setRequiresPreprocessingUndefined: Self = StObject.set(x, "RequiresPreprocessing", js.undefined)
+    
+    inline def setSqlExpression(value: String): Self = StObject.set(x, "SqlExpression", value.asInstanceOf[js.Any])
+  }
 }
-

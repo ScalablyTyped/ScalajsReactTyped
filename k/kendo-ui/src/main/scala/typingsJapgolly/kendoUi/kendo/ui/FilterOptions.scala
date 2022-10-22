@@ -2,49 +2,81 @@ package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilterOptions extends js.Object {
+trait FilterOptions extends StObject {
+  
   var applyButton: js.UndefOr[Boolean] = js.undefined
+  
   var change: js.UndefOr[js.Function1[/* e */ FilterChangeEvent, Unit]] = js.undefined
+  
   var dataSource: js.UndefOr[DataSource] = js.undefined
-  var expression: js.UndefOr[js.Any] = js.undefined
+  
+  var expression: js.UndefOr[Any] = js.undefined
+  
   var expressionPreview: js.UndefOr[Boolean] = js.undefined
+  
   var fields: js.UndefOr[js.Array[FilterField]] = js.undefined
+  
   var mainLogic: js.UndefOr[String] = js.undefined
+  
   var messages: js.UndefOr[FilterMessages] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var operators: js.UndefOr[FilterOperators] = js.undefined
 }
-
 object FilterOptions {
-  @scala.inline
-  def apply(
-    applyButton: js.UndefOr[Boolean] = js.undefined,
-    change: /* e */ FilterChangeEvent => Callback = null,
-    dataSource: DataSource = null,
-    expression: js.Any = null,
-    expressionPreview: js.UndefOr[Boolean] = js.undefined,
-    fields: js.Array[FilterField] = null,
-    mainLogic: String = null,
-    messages: FilterMessages = null,
-    name: String = null,
-    operators: FilterOperators = null
-  ): FilterOptions = {
+  
+  inline def apply(): FilterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applyButton)) __obj.updateDynamic("applyButton")(applyButton.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.FilterChangeEvent) => change(t0).runNow()))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (!js.isUndefined(expressionPreview)) __obj.updateDynamic("expressionPreview")(expressionPreview.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (mainLogic != null) __obj.updateDynamic("mainLogic")(mainLogic.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (operators != null) __obj.updateDynamic("operators")(operators.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOptions]
   }
+  
+  extension [Self <: FilterOptions](x: Self) {
+    
+    inline def setApplyButton(value: Boolean): Self = StObject.set(x, "applyButton", value.asInstanceOf[js.Any])
+    
+    inline def setApplyButtonUndefined: Self = StObject.set(x, "applyButton", js.undefined)
+    
+    inline def setChange(value: /* e */ FilterChangeEvent => Callback): Self = StObject.set(x, "change", js.Any.fromFunction1((t0: /* e */ FilterChangeEvent) => value(t0).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setExpression(value: Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    
+    inline def setExpressionPreview(value: Boolean): Self = StObject.set(x, "expressionPreview", value.asInstanceOf[js.Any])
+    
+    inline def setExpressionPreviewUndefined: Self = StObject.set(x, "expressionPreview", js.undefined)
+    
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    
+    inline def setFields(value: js.Array[FilterField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: FilterField*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setMainLogic(value: String): Self = StObject.set(x, "mainLogic", value.asInstanceOf[js.Any])
+    
+    inline def setMainLogicUndefined: Self = StObject.set(x, "mainLogic", js.undefined)
+    
+    inline def setMessages(value: FilterMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOperators(value: FilterOperators): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
+    
+    inline def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
+  }
 }
-

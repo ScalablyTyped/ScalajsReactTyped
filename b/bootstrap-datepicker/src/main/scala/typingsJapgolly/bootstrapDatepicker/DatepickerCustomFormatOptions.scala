@@ -1,29 +1,30 @@
 package typingsJapgolly.bootstrapDatepicker
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DatepickerCustomFormatOptions extends js.Object {
-  var toDisplay: js.UndefOr[
-    js.Function3[/* date */ String, /* format */ js.Any, /* language */ js.Any, String]
-  ] = js.undefined
-  var toValue: js.UndefOr[
-    js.Function3[/* date */ String, /* format */ js.Any, /* language */ js.Any, js.Date]
-  ] = js.undefined
+trait DatepickerCustomFormatOptions extends StObject {
+  
+  var toDisplay: js.UndefOr[js.Function3[/* date */ String, /* format */ Any, /* language */ Any, String]] = js.undefined
+  
+  var toValue: js.UndefOr[js.Function3[/* date */ String, /* format */ Any, /* language */ Any, js.Date]] = js.undefined
 }
-
 object DatepickerCustomFormatOptions {
-  @scala.inline
-  def apply(
-    toDisplay: (/* date */ String, /* format */ js.Any, /* language */ js.Any) => CallbackTo[String] = null,
-    toValue: (/* date */ String, /* format */ js.Any, /* language */ js.Any) => CallbackTo[js.Date] = null
-  ): DatepickerCustomFormatOptions = {
+  
+  inline def apply(): DatepickerCustomFormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (toDisplay != null) __obj.updateDynamic("toDisplay")(js.Any.fromFunction3((t0: /* date */ java.lang.String, t1: /* format */ js.Any, t2: /* language */ js.Any) => toDisplay(t0, t1, t2).runNow()))
-    if (toValue != null) __obj.updateDynamic("toValue")(js.Any.fromFunction3((t0: /* date */ java.lang.String, t1: /* format */ js.Any, t2: /* language */ js.Any) => toValue(t0, t1, t2).runNow()))
     __obj.asInstanceOf[DatepickerCustomFormatOptions]
   }
+  
+  extension [Self <: DatepickerCustomFormatOptions](x: Self) {
+    
+    inline def setToDisplay(value: (/* date */ String, /* format */ Any, /* language */ Any) => String): Self = StObject.set(x, "toDisplay", js.Any.fromFunction3(value))
+    
+    inline def setToDisplayUndefined: Self = StObject.set(x, "toDisplay", js.undefined)
+    
+    inline def setToValue(value: (/* date */ String, /* format */ Any, /* language */ Any) => js.Date): Self = StObject.set(x, "toValue", js.Any.fromFunction3(value))
+    
+    inline def setToValueUndefined: Self = StObject.set(x, "toValue", js.undefined)
+  }
 }
-

@@ -1,14 +1,18 @@
 package typingsJapgolly.materialUi.components
 
-import typingsJapgolly.materialUi.webAssetMod.default
+import typingsJapgolly.materialUi.MaterialUI.SvgIconProps
+import typingsJapgolly.materialUi.svgIconsAvWebAssetMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object WebAsset extends SharedApply_SvgIconProps_1100155871[default] {
+object WebAsset {
+  
   @JSImport("material-ui/svg-icons/av/web-asset", JSImport.Default)
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: WebAsset.type): SharedBuilder_SvgIconProps_115160895[default] = new SharedBuilder_SvgIconProps_115160895[default](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SvgIconProps): SharedBuilder_SvgIconProps_115160895[default] = new SharedBuilder_SvgIconProps_115160895[default](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

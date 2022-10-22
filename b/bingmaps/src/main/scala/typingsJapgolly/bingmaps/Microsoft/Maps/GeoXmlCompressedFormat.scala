@@ -1,38 +1,30 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GeoXmlCompressedFormat extends js.Object
-
+sealed trait GeoXmlCompressedFormat extends StObject
 @JSGlobal("Microsoft.Maps.GeoXmlCompressedFormat")
 @js.native
-object GeoXmlCompressedFormat extends js.Object {
+object GeoXmlCompressedFormat extends StObject {
+  
   /** XML data compressed into an ArrayBuffer. */
   @js.native
-  sealed trait arrayBuffer extends GeoXmlCompressedFormat
+  sealed trait arrayBuffer
+    extends StObject
+       with GeoXmlCompressedFormat
   
   /** XML data compressed into a Base64 Data URI. */
   @js.native
-  sealed trait base64 extends GeoXmlCompressedFormat
+  sealed trait base64
+    extends StObject
+       with GeoXmlCompressedFormat
   
   /** XML data compressed into a Blob. */
   @js.native
-  sealed trait blob extends GeoXmlCompressedFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GeoXmlCompressedFormat with Double] = js.native
-  /* 2 */ @js.native
-  object arrayBuffer extends TopLevel[arrayBuffer with Double]
-  
-  /* 0 */ @js.native
-  object base64 extends TopLevel[base64 with Double]
-  
-  /* 1 */ @js.native
-  object blob extends TopLevel[blob with Double]
-  
+  sealed trait blob
+    extends StObject
+       with GeoXmlCompressedFormat
 }
-

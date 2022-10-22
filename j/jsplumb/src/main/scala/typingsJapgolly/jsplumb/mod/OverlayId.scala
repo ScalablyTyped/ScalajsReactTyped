@@ -1,8 +1,8 @@
 package typingsJapgolly.jsplumb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.jsplumb.jsplumbStrings.Label
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.jsplumb.jsplumbStrings.PlainArrow
   - typingsJapgolly.jsplumb.jsplumbStrings.Custom
 */
-trait OverlayId extends js.Object
-
+trait OverlayId extends StObject
 object OverlayId {
-  @scala.inline
-  def Arrow: typingsJapgolly.jsplumb.jsplumbStrings.Arrow = this.cast("Arrow")
-  @scala.inline
-  def Custom: typingsJapgolly.jsplumb.jsplumbStrings.Custom = this.cast("Custom")
-  @scala.inline
-  def Label: typingsJapgolly.jsplumb.jsplumbStrings.Label = this.cast("Label")
-  @scala.inline
-  def PlainArrow: typingsJapgolly.jsplumb.jsplumbStrings.PlainArrow = this.cast("PlainArrow")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Arrow: typingsJapgolly.jsplumb.jsplumbStrings.Arrow = "Arrow".asInstanceOf[typingsJapgolly.jsplumb.jsplumbStrings.Arrow]
+  
+  inline def Custom: typingsJapgolly.jsplumb.jsplumbStrings.Custom = "Custom".asInstanceOf[typingsJapgolly.jsplumb.jsplumbStrings.Custom]
+  
+  inline def Label: typingsJapgolly.jsplumb.jsplumbStrings.Label = "Label".asInstanceOf[typingsJapgolly.jsplumb.jsplumbStrings.Label]
+  
+  inline def PlainArrow: typingsJapgolly.jsplumb.jsplumbStrings.PlainArrow = "PlainArrow".asInstanceOf[typingsJapgolly.jsplumb.jsplumbStrings.PlainArrow]
 }
-

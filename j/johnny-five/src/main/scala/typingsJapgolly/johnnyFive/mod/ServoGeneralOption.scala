@@ -1,38 +1,60 @@
 package typingsJapgolly.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServoGeneralOption extends js.Object {
+trait ServoGeneralOption extends StObject {
+  
   var center: js.UndefOr[Boolean] = js.undefined
+  
   var controller: js.UndefOr[String] = js.undefined
+  
   var isInverted: js.UndefOr[Boolean] = js.undefined
+  
   var pin: Double | String
+  
   var range: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var startAt: js.UndefOr[Double] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object ServoGeneralOption {
-  @scala.inline
-  def apply(
-    pin: Double | String,
-    center: js.UndefOr[Boolean] = js.undefined,
-    controller: String = null,
-    isInverted: js.UndefOr[Boolean] = js.undefined,
-    range: js.Array[Double] = null,
-    startAt: Int | Double = null,
-    `type`: String = null
-  ): ServoGeneralOption = {
+  
+  inline def apply(pin: Double | String): ServoGeneralOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInverted)) __obj.updateDynamic("isInverted")(isInverted.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServoGeneralOption]
   }
+  
+  extension [Self <: ServoGeneralOption](x: Self) {
+    
+    inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    
+    inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    
+    inline def setIsInverted(value: Boolean): Self = StObject.set(x, "isInverted", value.asInstanceOf[js.Any])
+    
+    inline def setIsInvertedUndefined: Self = StObject.set(x, "isInverted", js.undefined)
+    
+    inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    
+    inline def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    
+    inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value*))
+    
+    inline def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+    
+    inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

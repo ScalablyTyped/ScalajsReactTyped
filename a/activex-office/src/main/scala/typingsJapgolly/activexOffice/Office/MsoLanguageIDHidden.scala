@@ -1,27 +1,23 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`11273`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`3076`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`5124`
+import typingsJapgolly.activexOffice.activexOfficeInts.`11273`
+import typingsJapgolly.activexOffice.activexOfficeInts.`3076`
+import typingsJapgolly.activexOffice.activexOfficeInts.`5124`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`3076`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`5124`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`11273`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`3076`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`5124`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`11273`
 */
-trait MsoLanguageIDHidden extends js.Object
-
+trait MsoLanguageIDHidden extends StObject
 object MsoLanguageIDHidden {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoLanguageIDChineseHongKong: `3076` = this.cast(3076)
-  @scala.inline
-  def msoLanguageIDChineseMacao: `5124` = this.cast(5124)
-  @scala.inline
-  def msoLanguageIDEnglishTrinidad: `11273` = this.cast(11273)
+  
+  inline def msoLanguageIDChineseHongKong: `3076` = 3076.asInstanceOf[`3076`]
+  
+  inline def msoLanguageIDChineseMacao: `5124` = 5124.asInstanceOf[`5124`]
+  
+  inline def msoLanguageIDEnglishTrinidad: `11273` = 11273.asInstanceOf[`11273`]
 }
-

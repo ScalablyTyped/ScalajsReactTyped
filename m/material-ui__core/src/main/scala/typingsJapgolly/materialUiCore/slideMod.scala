@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.slideSlideMod.SlideProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Slide", JSImport.Namespace)
-@js.native
-object slideMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[SlideProps, ComponentState, js.Any] {
-    def this(props: SlideProps) = this()
-    def this(props: SlideProps, context: js.Any) = this()
-  }
+object slideMod {
   
+  @JSImport("@material-ui/core/Slide", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[SlideProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: SlideProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

@@ -1,12 +1,14 @@
 package typingsJapgolly.memoizerific
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("memoizerific", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(cacheSize: Double): memoize = js.native
+object mod {
+  
+  inline def apply(cacheSize: Double): memoize = ^.asInstanceOf[js.Dynamic].apply(cacheSize.asInstanceOf[js.Any]).asInstanceOf[memoize]
+  
+  @JSImport("memoizerific", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

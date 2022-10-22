@@ -1,30 +1,26 @@
 package typingsJapgolly.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
-import typingsJapgolly.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`0`
-import typingsJapgolly.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`1`
-import typingsJapgolly.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`2`
+import typingsJapgolly.onesignalCordovaPlugin.onesignalCordovaPluginInts.`0`
+import typingsJapgolly.onesignalCordovaPlugin.onesignalCordovaPluginInts.`1`
+import typingsJapgolly.onesignalCordovaPlugin.onesignalCordovaPluginInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * iOS only
   */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`0`
-  - typingsJapgolly.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`1`
-  - typingsJapgolly.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`2`
+  - typingsJapgolly.onesignalCordovaPlugin.onesignalCordovaPluginInts.`0`
+  - typingsJapgolly.onesignalCordovaPlugin.onesignalCordovaPluginInts.`1`
+  - typingsJapgolly.onesignalCordovaPlugin.onesignalCordovaPluginInts.`2`
 */
-trait OSNotificationPermission extends js.Object
-
+trait OSNotificationPermission extends StObject
 object OSNotificationPermission {
-  @scala.inline
-  def Authorized: `1` = this.cast(1)
-  @scala.inline
-  def Denied: `2` = this.cast(2)
-  @scala.inline
-  def NotDetermined: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Authorized: `2` = 2.asInstanceOf[`2`]
+  
+  inline def Denied: `1` = 1.asInstanceOf[`1`]
+  
+  inline def NotDetermined: `0` = 0.asInstanceOf[`0`]
 }
-

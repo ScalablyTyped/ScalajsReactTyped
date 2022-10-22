@@ -1,30 +1,42 @@
 package typingsJapgolly.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FocalPointCropParams extends js.Object {
+trait FocalPointCropParams extends StObject {
+  
   var `fp-debug`: js.UndefOr[ImgixParamType] = js.undefined
+  
   var `fp-x`: js.UndefOr[ImgixParamType] = js.undefined
+  
   var `fp-y`: js.UndefOr[ImgixParamType] = js.undefined
+  
   var `fp-z`: js.UndefOr[ImgixParamType] = js.undefined
 }
-
 object FocalPointCropParams {
-  @scala.inline
-  def apply(
-    `fp-debug`: ImgixParamType = null,
-    `fp-x`: ImgixParamType = null,
-    `fp-y`: ImgixParamType = null,
-    `fp-z`: ImgixParamType = null
-  ): FocalPointCropParams = {
+  
+  inline def apply(): FocalPointCropParams = {
     val __obj = js.Dynamic.literal()
-    if (`fp-debug` != null) __obj.updateDynamic("fp-debug")(`fp-debug`.asInstanceOf[js.Any])
-    if (`fp-x` != null) __obj.updateDynamic("fp-x")(`fp-x`.asInstanceOf[js.Any])
-    if (`fp-y` != null) __obj.updateDynamic("fp-y")(`fp-y`.asInstanceOf[js.Any])
-    if (`fp-z` != null) __obj.updateDynamic("fp-z")(`fp-z`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FocalPointCropParams]
   }
+  
+  extension [Self <: FocalPointCropParams](x: Self) {
+    
+    inline def `setFp-debug`(value: ImgixParamType): Self = StObject.set(x, "fp-debug", value.asInstanceOf[js.Any])
+    
+    inline def `setFp-debugUndefined`: Self = StObject.set(x, "fp-debug", js.undefined)
+    
+    inline def `setFp-x`(value: ImgixParamType): Self = StObject.set(x, "fp-x", value.asInstanceOf[js.Any])
+    
+    inline def `setFp-xUndefined`: Self = StObject.set(x, "fp-x", js.undefined)
+    
+    inline def `setFp-y`(value: ImgixParamType): Self = StObject.set(x, "fp-y", value.asInstanceOf[js.Any])
+    
+    inline def `setFp-yUndefined`: Self = StObject.set(x, "fp-y", js.undefined)
+    
+    inline def `setFp-z`(value: ImgixParamType): Self = StObject.set(x, "fp-z", value.asInstanceOf[js.Any])
+    
+    inline def `setFp-zUndefined`: Self = StObject.set(x, "fp-z", js.undefined)
+  }
 }
-

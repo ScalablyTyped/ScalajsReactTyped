@@ -1,24 +1,20 @@
 package typingsJapgolly.phonegapPluginPush
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object phonegapPluginPushStrings {
-  @js.native
-  sealed trait error extends js.Object
   
   @js.native
-  sealed trait notification extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait registration extends js.Object
+  sealed trait notification extends StObject
+  inline def notification: notification = "notification".asInstanceOf[notification]
   
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def notification: notification = "notification".asInstanceOf[notification]
-  @scala.inline
-  def registration: registration = "registration".asInstanceOf[registration]
+  @js.native
+  sealed trait registration extends StObject
+  inline def registration: registration = "registration".asInstanceOf[registration]
 }
-

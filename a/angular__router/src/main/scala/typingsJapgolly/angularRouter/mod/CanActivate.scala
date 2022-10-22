@@ -1,25 +1,27 @@
 package typingsJapgolly.angularRouter.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CanActivate extends js.Object {
+trait CanActivate extends StObject {
+  
   def canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree
 }
-
 object CanActivate {
-  @scala.inline
-  def apply(
-    canActivate: (ActivatedRouteSnapshot, RouterStateSnapshot) => CallbackTo[
-      (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree
-    ]
+  
+  inline def apply(
+    canActivate: (ActivatedRouteSnapshot, RouterStateSnapshot) => (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree
   ): CanActivate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canActivate")(js.Any.fromFunction2((t0: typingsJapgolly.angularRouter.mod.ActivatedRouteSnapshot, t1: typingsJapgolly.angularRouter.mod.RouterStateSnapshot) => canActivate(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(canActivate = js.Any.fromFunction2(canActivate))
     __obj.asInstanceOf[CanActivate]
   }
+  
+  extension [Self <: CanActivate](x: Self) {
+    
+    inline def setCanActivate(
+      value: (ActivatedRouteSnapshot, RouterStateSnapshot) => (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree
+    ): Self = StObject.set(x, "canActivate", js.Any.fromFunction2(value))
+  }
 }
-

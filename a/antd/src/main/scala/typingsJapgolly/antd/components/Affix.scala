@@ -2,54 +2,43 @@ package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.affixMod.AffixProps
-import typingsJapgolly.antd.affixMod.default
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.Window
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.libAffixMod.AffixProps
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.std.Window_
+import typingsJapgolly.react.mod.RefAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Affix {
-  def apply(
-    className: String = null,
-    offsetBottom: Int | Double = null,
-    offsetTop: Int | Double = null,
-    onChange: /* affixed */ js.UndefOr[Boolean] => Callback = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    target: js.UndefOr[CallbackTo[Window_ | HTMLElement | Null]] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[AffixProps, default, Unit, AffixProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (offsetBottom != null) __obj.updateDynamic("offsetBottom")(offsetBottom.asInstanceOf[js.Any])
-    if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* affixed */ js.UndefOr[scala.Boolean]) => onChange(t0).runNow()))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    target.foreach(p => __obj.updateDynamic("target")(p.toJsFn))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.affixMod.AffixProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.affixMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.affixMod.AffixProps])(children: _*)
-  }
-  @JSImport("antd/lib/affix", JSImport.Default)
+  @JSImport("antd", "Affix")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antd.libAffixMod.Affix] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def offsetBottom(value: Double): this.type = set("offsetBottom", value.asInstanceOf[js.Any])
+    
+    inline def offsetTop(value: Double): this.type = set("offsetTop", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* affixed */ js.UndefOr[Boolean] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* affixed */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def target(value: CallbackTo[Window | HTMLElement | Null]): this.type = set("target", value.toJsFn)
+  }
+  
+  implicit def make(companion: Affix.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: AffixProps & RefAttributes[typingsJapgolly.antd.libAffixMod.Affix]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

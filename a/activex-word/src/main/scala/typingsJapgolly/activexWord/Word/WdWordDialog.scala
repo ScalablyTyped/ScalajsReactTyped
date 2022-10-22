@@ -1,963 +1,959 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`1007`
-import typingsJapgolly.activexWord.activexWordNumbers.`1029`
-import typingsJapgolly.activexWord.activexWordNumbers.`103`
-import typingsJapgolly.activexWord.activexWordNumbers.`1074`
-import typingsJapgolly.activexWord.activexWordNumbers.`1080`
-import typingsJapgolly.activexWord.activexWordNumbers.`1081`
-import typingsJapgolly.activexWord.activexWordNumbers.`1094`
-import typingsJapgolly.activexWord.activexWordNumbers.`10`
-import typingsJapgolly.activexWord.activexWordNumbers.`1116`
-import typingsJapgolly.activexWord.activexWordNumbers.`111`
-import typingsJapgolly.activexWord.activexWordNumbers.`1121`
-import typingsJapgolly.activexWord.activexWordNumbers.`112`
-import typingsJapgolly.activexWord.activexWordNumbers.`1156`
-import typingsJapgolly.activexWord.activexWordNumbers.`1160`
-import typingsJapgolly.activexWord.activexWordNumbers.`1161`
-import typingsJapgolly.activexWord.activexWordNumbers.`1162`
-import typingsJapgolly.activexWord.activexWordNumbers.`117`
-import typingsJapgolly.activexWord.activexWordNumbers.`120`
-import typingsJapgolly.activexWord.activexWordNumbers.`1248`
-import typingsJapgolly.activexWord.activexWordNumbers.`124`
-import typingsJapgolly.activexWord.activexWordNumbers.`125`
-import typingsJapgolly.activexWord.activexWordNumbers.`1261`
-import typingsJapgolly.activexWord.activexWordNumbers.`127`
-import typingsJapgolly.activexWord.activexWordNumbers.`128`
-import typingsJapgolly.activexWord.activexWordNumbers.`129`
-import typingsJapgolly.activexWord.activexWordNumbers.`1304`
-import typingsJapgolly.activexWord.activexWordNumbers.`1305`
-import typingsJapgolly.activexWord.activexWordNumbers.`1306`
-import typingsJapgolly.activexWord.activexWordNumbers.`1307`
-import typingsJapgolly.activexWord.activexWordNumbers.`1308`
-import typingsJapgolly.activexWord.activexWordNumbers.`130`
-import typingsJapgolly.activexWord.activexWordNumbers.`131`
-import typingsJapgolly.activexWord.activexWordNumbers.`1324`
-import typingsJapgolly.activexWord.activexWordNumbers.`1326`
-import typingsJapgolly.activexWord.activexWordNumbers.`1339`
-import typingsJapgolly.activexWord.activexWordNumbers.`133`
-import typingsJapgolly.activexWord.activexWordNumbers.`1356`
-import typingsJapgolly.activexWord.activexWordNumbers.`1361`
-import typingsJapgolly.activexWord.activexWordNumbers.`1363`
-import typingsJapgolly.activexWord.activexWordNumbers.`1367`
-import typingsJapgolly.activexWord.activexWordNumbers.`137`
-import typingsJapgolly.activexWord.activexWordNumbers.`1381`
-import typingsJapgolly.activexWord.activexWordNumbers.`1395`
-import typingsJapgolly.activexWord.activexWordNumbers.`1417`
-import typingsJapgolly.activexWord.activexWordNumbers.`1425`
-import typingsJapgolly.activexWord.activexWordNumbers.`1427`
-import typingsJapgolly.activexWord.activexWordNumbers.`142`
-import typingsJapgolly.activexWord.activexWordNumbers.`1437`
-import typingsJapgolly.activexWord.activexWordNumbers.`143`
-import typingsJapgolly.activexWord.activexWordNumbers.`1460`
-import typingsJapgolly.activexWord.activexWordNumbers.`1469`
-import typingsJapgolly.activexWord.activexWordNumbers.`1482`
-import typingsJapgolly.activexWord.activexWordNumbers.`152`
-import typingsJapgolly.activexWord.activexWordNumbers.`159`
-import typingsJapgolly.activexWord.activexWordNumbers.`162`
-import typingsJapgolly.activexWord.activexWordNumbers.`163`
-import typingsJapgolly.activexWord.activexWordNumbers.`164`
-import typingsJapgolly.activexWord.activexWordNumbers.`165`
-import typingsJapgolly.activexWord.activexWordNumbers.`166`
-import typingsJapgolly.activexWord.activexWordNumbers.`167`
-import typingsJapgolly.activexWord.activexWordNumbers.`168`
-import typingsJapgolly.activexWord.activexWordNumbers.`169`
-import typingsJapgolly.activexWord.activexWordNumbers.`170`
-import typingsJapgolly.activexWord.activexWordNumbers.`171`
-import typingsJapgolly.activexWord.activexWordNumbers.`172`
-import typingsJapgolly.activexWord.activexWordNumbers.`173`
-import typingsJapgolly.activexWord.activexWordNumbers.`174`
-import typingsJapgolly.activexWord.activexWordNumbers.`175`
-import typingsJapgolly.activexWord.activexWordNumbers.`176`
-import typingsJapgolly.activexWord.activexWordNumbers.`177`
-import typingsJapgolly.activexWord.activexWordNumbers.`178`
-import typingsJapgolly.activexWord.activexWordNumbers.`179`
-import typingsJapgolly.activexWord.activexWordNumbers.`180`
-import typingsJapgolly.activexWord.activexWordNumbers.`181`
-import typingsJapgolly.activexWord.activexWordNumbers.`182`
-import typingsJapgolly.activexWord.activexWordNumbers.`183`
-import typingsJapgolly.activexWord.activexWordNumbers.`184`
-import typingsJapgolly.activexWord.activexWordNumbers.`185`
-import typingsJapgolly.activexWord.activexWordNumbers.`186`
-import typingsJapgolly.activexWord.activexWordNumbers.`187`
-import typingsJapgolly.activexWord.activexWordNumbers.`188`
-import typingsJapgolly.activexWord.activexWordNumbers.`189`
-import typingsJapgolly.activexWord.activexWordNumbers.`190`
-import typingsJapgolly.activexWord.activexWordNumbers.`1920`
-import typingsJapgolly.activexWord.activexWordNumbers.`1922`
-import typingsJapgolly.activexWord.activexWordNumbers.`1948`
-import typingsJapgolly.activexWord.activexWordNumbers.`194`
-import typingsJapgolly.activexWord.activexWordNumbers.`195`
-import typingsJapgolly.activexWord.activexWordNumbers.`196`
-import typingsJapgolly.activexWord.activexWordNumbers.`197`
-import typingsJapgolly.activexWord.activexWordNumbers.`198`
-import typingsJapgolly.activexWord.activexWordNumbers.`199`
-import typingsJapgolly.activexWord.activexWordNumbers.`203`
-import typingsJapgolly.activexWord.activexWordNumbers.`204`
-import typingsJapgolly.activexWord.activexWordNumbers.`2067`
-import typingsJapgolly.activexWord.activexWordNumbers.`206`
-import typingsJapgolly.activexWord.activexWordNumbers.`208`
-import typingsJapgolly.activexWord.activexWordNumbers.`209`
-import typingsJapgolly.activexWord.activexWordNumbers.`211`
-import typingsJapgolly.activexWord.activexWordNumbers.`2120`
-import typingsJapgolly.activexWord.activexWordNumbers.`213`
-import typingsJapgolly.activexWord.activexWordNumbers.`214`
-import typingsJapgolly.activexWord.activexWordNumbers.`215`
-import typingsJapgolly.activexWord.activexWordNumbers.`2165`
-import typingsJapgolly.activexWord.activexWordNumbers.`220`
-import typingsJapgolly.activexWord.activexWordNumbers.`221`
-import typingsJapgolly.activexWord.activexWordNumbers.`222`
-import typingsJapgolly.activexWord.activexWordNumbers.`224`
-import typingsJapgolly.activexWord.activexWordNumbers.`225`
-import typingsJapgolly.activexWord.activexWordNumbers.`228`
-import typingsJapgolly.activexWord.activexWordNumbers.`2348`
-import typingsJapgolly.activexWord.activexWordNumbers.`2349`
-import typingsJapgolly.activexWord.activexWordNumbers.`235`
-import typingsJapgolly.activexWord.activexWordNumbers.`2394`
-import typingsJapgolly.activexWord.activexWordNumbers.`2439`
-import typingsJapgolly.activexWord.activexWordNumbers.`294`
-import typingsJapgolly.activexWord.activexWordNumbers.`298`
-import typingsJapgolly.activexWord.activexWordNumbers.`300`
-import typingsJapgolly.activexWord.activexWordNumbers.`322`
-import typingsJapgolly.activexWord.activexWordNumbers.`331`
-import typingsJapgolly.activexWord.activexWordNumbers.`341`
-import typingsJapgolly.activexWord.activexWordNumbers.`348`
-import typingsJapgolly.activexWord.activexWordNumbers.`353`
-import typingsJapgolly.activexWord.activexWordNumbers.`357`
-import typingsJapgolly.activexWord.activexWordNumbers.`358`
-import typingsJapgolly.activexWord.activexWordNumbers.`359`
-import typingsJapgolly.activexWord.activexWordNumbers.`361`
-import typingsJapgolly.activexWord.activexWordNumbers.`367`
-import typingsJapgolly.activexWord.activexWordNumbers.`370`
-import typingsJapgolly.activexWord.activexWordNumbers.`373`
-import typingsJapgolly.activexWord.activexWordNumbers.`378`
-import typingsJapgolly.activexWord.activexWordNumbers.`386`
-import typingsJapgolly.activexWord.activexWordNumbers.`392`
-import typingsJapgolly.activexWord.activexWordNumbers.`402`
-import typingsJapgolly.activexWord.activexWordNumbers.`4047`
-import typingsJapgolly.activexWord.activexWordNumbers.`4048`
-import typingsJapgolly.activexWord.activexWordNumbers.`4049`
-import typingsJapgolly.activexWord.activexWordNumbers.`4053`
-import typingsJapgolly.activexWord.activexWordNumbers.`4054`
-import typingsJapgolly.activexWord.activexWordNumbers.`4055`
-import typingsJapgolly.activexWord.activexWordNumbers.`420`
-import typingsJapgolly.activexWord.activexWordNumbers.`432`
-import typingsJapgolly.activexWord.activexWordNumbers.`433`
-import typingsJapgolly.activexWord.activexWordNumbers.`435`
-import typingsJapgolly.activexWord.activexWordNumbers.`442`
-import typingsJapgolly.activexWord.activexWordNumbers.`444`
-import typingsJapgolly.activexWord.activexWordNumbers.`445`
-import typingsJapgolly.activexWord.activexWordNumbers.`458`
-import typingsJapgolly.activexWord.activexWordNumbers.`463`
-import typingsJapgolly.activexWord.activexWordNumbers.`470`
-import typingsJapgolly.activexWord.activexWordNumbers.`471`
-import typingsJapgolly.activexWord.activexWordNumbers.`472`
-import typingsJapgolly.activexWord.activexWordNumbers.`473`
-import typingsJapgolly.activexWord.activexWordNumbers.`483`
-import typingsJapgolly.activexWord.activexWordNumbers.`488`
-import typingsJapgolly.activexWord.activexWordNumbers.`489`
-import typingsJapgolly.activexWord.activexWordNumbers.`503`
-import typingsJapgolly.activexWord.activexWordNumbers.`505`
-import typingsJapgolly.activexWord.activexWordNumbers.`506`
-import typingsJapgolly.activexWord.activexWordNumbers.`511`
-import typingsJapgolly.activexWord.activexWordNumbers.`521`
-import typingsJapgolly.activexWord.activexWordNumbers.`525`
-import typingsJapgolly.activexWord.activexWordNumbers.`551`
-import typingsJapgolly.activexWord.activexWordNumbers.`563`
-import typingsJapgolly.activexWord.activexWordNumbers.`569`
-import typingsJapgolly.activexWord.activexWordNumbers.`570`
-import typingsJapgolly.activexWord.activexWordNumbers.`577`
-import typingsJapgolly.activexWord.activexWordNumbers.`578`
-import typingsJapgolly.activexWord.activexWordNumbers.`581`
-import typingsJapgolly.activexWord.activexWordNumbers.`583`
-import typingsJapgolly.activexWord.activexWordNumbers.`586`
-import typingsJapgolly.activexWord.activexWordNumbers.`607`
-import typingsJapgolly.activexWord.activexWordNumbers.`610`
-import typingsJapgolly.activexWord.activexWordNumbers.`612`
-import typingsJapgolly.activexWord.activexWordNumbers.`615`
-import typingsJapgolly.activexWord.activexWordNumbers.`624`
-import typingsJapgolly.activexWord.activexWordNumbers.`625`
-import typingsJapgolly.activexWord.activexWordNumbers.`631`
-import typingsJapgolly.activexWord.activexWordNumbers.`633`
-import typingsJapgolly.activexWord.activexWordNumbers.`634`
-import typingsJapgolly.activexWord.activexWordNumbers.`642`
-import typingsJapgolly.activexWord.activexWordNumbers.`643`
-import typingsJapgolly.activexWord.activexWordNumbers.`676`
-import typingsJapgolly.activexWord.activexWordNumbers.`677`
-import typingsJapgolly.activexWord.activexWordNumbers.`680`
-import typingsJapgolly.activexWord.activexWordNumbers.`681`
-import typingsJapgolly.activexWord.activexWordNumbers.`685`
-import typingsJapgolly.activexWord.activexWordNumbers.`723`
-import typingsJapgolly.activexWord.activexWordNumbers.`732`
-import typingsJapgolly.activexWord.activexWordNumbers.`733`
-import typingsJapgolly.activexWord.activexWordNumbers.`735`
-import typingsJapgolly.activexWord.activexWordNumbers.`736`
-import typingsJapgolly.activexWord.activexWordNumbers.`737`
-import typingsJapgolly.activexWord.activexWordNumbers.`739`
-import typingsJapgolly.activexWord.activexWordNumbers.`762`
-import typingsJapgolly.activexWord.activexWordNumbers.`778`
-import typingsJapgolly.activexWord.activexWordNumbers.`779`
-import typingsJapgolly.activexWord.activexWordNumbers.`784`
-import typingsJapgolly.activexWord.activexWordNumbers.`78`
-import typingsJapgolly.activexWord.activexWordNumbers.`790`
-import typingsJapgolly.activexWord.activexWordNumbers.`79`
-import typingsJapgolly.activexWord.activexWordNumbers.`80`
-import typingsJapgolly.activexWord.activexWordNumbers.`811`
-import typingsJapgolly.activexWord.activexWordNumbers.`812`
-import typingsJapgolly.activexWord.activexWordNumbers.`81`
-import typingsJapgolly.activexWord.activexWordNumbers.`821`
-import typingsJapgolly.activexWord.activexWordNumbers.`824`
-import typingsJapgolly.activexWord.activexWordNumbers.`828`
-import typingsJapgolly.activexWord.activexWordNumbers.`82`
-import typingsJapgolly.activexWord.activexWordNumbers.`833`
-import typingsJapgolly.activexWord.activexWordNumbers.`84`
-import typingsJapgolly.activexWord.activexWordNumbers.`854`
-import typingsJapgolly.activexWord.activexWordNumbers.`855`
-import typingsJapgolly.activexWord.activexWordNumbers.`861`
-import typingsJapgolly.activexWord.activexWordNumbers.`863`
-import typingsJapgolly.activexWord.activexWordNumbers.`86`
-import typingsJapgolly.activexWord.activexWordNumbers.`872`
-import typingsJapgolly.activexWord.activexWordNumbers.`874`
-import typingsJapgolly.activexWord.activexWordNumbers.`87`
-import typingsJapgolly.activexWord.activexWordNumbers.`885`
-import typingsJapgolly.activexWord.activexWordNumbers.`88`
-import typingsJapgolly.activexWord.activexWordNumbers.`896`
-import typingsJapgolly.activexWord.activexWordNumbers.`898`
-import typingsJapgolly.activexWord.activexWordNumbers.`915`
-import typingsJapgolly.activexWord.activexWordNumbers.`925`
-import typingsJapgolly.activexWord.activexWordNumbers.`945`
-import typingsJapgolly.activexWord.activexWordNumbers.`959`
-import typingsJapgolly.activexWord.activexWordNumbers.`960`
-import typingsJapgolly.activexWord.activexWordNumbers.`974`
-import typingsJapgolly.activexWord.activexWordNumbers.`97`
-import typingsJapgolly.activexWord.activexWordNumbers.`983`
-import typingsJapgolly.activexWord.activexWordNumbers.`985`
-import typingsJapgolly.activexWord.activexWordNumbers.`986`
-import typingsJapgolly.activexWord.activexWordNumbers.`989`
-import typingsJapgolly.activexWord.activexWordNumbers.`99`
-import typingsJapgolly.activexWord.activexWordNumbers.`9`
+import typingsJapgolly.activexWord.activexWordInts.`1007`
+import typingsJapgolly.activexWord.activexWordInts.`1029`
+import typingsJapgolly.activexWord.activexWordInts.`103`
+import typingsJapgolly.activexWord.activexWordInts.`1074`
+import typingsJapgolly.activexWord.activexWordInts.`1080`
+import typingsJapgolly.activexWord.activexWordInts.`1081`
+import typingsJapgolly.activexWord.activexWordInts.`1094`
+import typingsJapgolly.activexWord.activexWordInts.`10`
+import typingsJapgolly.activexWord.activexWordInts.`1116`
+import typingsJapgolly.activexWord.activexWordInts.`111`
+import typingsJapgolly.activexWord.activexWordInts.`1121`
+import typingsJapgolly.activexWord.activexWordInts.`112`
+import typingsJapgolly.activexWord.activexWordInts.`1156`
+import typingsJapgolly.activexWord.activexWordInts.`1160`
+import typingsJapgolly.activexWord.activexWordInts.`1161`
+import typingsJapgolly.activexWord.activexWordInts.`1162`
+import typingsJapgolly.activexWord.activexWordInts.`117`
+import typingsJapgolly.activexWord.activexWordInts.`120`
+import typingsJapgolly.activexWord.activexWordInts.`1248`
+import typingsJapgolly.activexWord.activexWordInts.`124`
+import typingsJapgolly.activexWord.activexWordInts.`125`
+import typingsJapgolly.activexWord.activexWordInts.`1261`
+import typingsJapgolly.activexWord.activexWordInts.`127`
+import typingsJapgolly.activexWord.activexWordInts.`128`
+import typingsJapgolly.activexWord.activexWordInts.`129`
+import typingsJapgolly.activexWord.activexWordInts.`1304`
+import typingsJapgolly.activexWord.activexWordInts.`1305`
+import typingsJapgolly.activexWord.activexWordInts.`1306`
+import typingsJapgolly.activexWord.activexWordInts.`1307`
+import typingsJapgolly.activexWord.activexWordInts.`1308`
+import typingsJapgolly.activexWord.activexWordInts.`130`
+import typingsJapgolly.activexWord.activexWordInts.`131`
+import typingsJapgolly.activexWord.activexWordInts.`1324`
+import typingsJapgolly.activexWord.activexWordInts.`1326`
+import typingsJapgolly.activexWord.activexWordInts.`1339`
+import typingsJapgolly.activexWord.activexWordInts.`133`
+import typingsJapgolly.activexWord.activexWordInts.`1356`
+import typingsJapgolly.activexWord.activexWordInts.`1361`
+import typingsJapgolly.activexWord.activexWordInts.`1363`
+import typingsJapgolly.activexWord.activexWordInts.`1367`
+import typingsJapgolly.activexWord.activexWordInts.`137`
+import typingsJapgolly.activexWord.activexWordInts.`1381`
+import typingsJapgolly.activexWord.activexWordInts.`1395`
+import typingsJapgolly.activexWord.activexWordInts.`1417`
+import typingsJapgolly.activexWord.activexWordInts.`1425`
+import typingsJapgolly.activexWord.activexWordInts.`1427`
+import typingsJapgolly.activexWord.activexWordInts.`142`
+import typingsJapgolly.activexWord.activexWordInts.`1437`
+import typingsJapgolly.activexWord.activexWordInts.`143`
+import typingsJapgolly.activexWord.activexWordInts.`1460`
+import typingsJapgolly.activexWord.activexWordInts.`1469`
+import typingsJapgolly.activexWord.activexWordInts.`1482`
+import typingsJapgolly.activexWord.activexWordInts.`152`
+import typingsJapgolly.activexWord.activexWordInts.`159`
+import typingsJapgolly.activexWord.activexWordInts.`162`
+import typingsJapgolly.activexWord.activexWordInts.`163`
+import typingsJapgolly.activexWord.activexWordInts.`164`
+import typingsJapgolly.activexWord.activexWordInts.`165`
+import typingsJapgolly.activexWord.activexWordInts.`166`
+import typingsJapgolly.activexWord.activexWordInts.`167`
+import typingsJapgolly.activexWord.activexWordInts.`168`
+import typingsJapgolly.activexWord.activexWordInts.`169`
+import typingsJapgolly.activexWord.activexWordInts.`170`
+import typingsJapgolly.activexWord.activexWordInts.`171`
+import typingsJapgolly.activexWord.activexWordInts.`172`
+import typingsJapgolly.activexWord.activexWordInts.`173`
+import typingsJapgolly.activexWord.activexWordInts.`174`
+import typingsJapgolly.activexWord.activexWordInts.`175`
+import typingsJapgolly.activexWord.activexWordInts.`176`
+import typingsJapgolly.activexWord.activexWordInts.`177`
+import typingsJapgolly.activexWord.activexWordInts.`178`
+import typingsJapgolly.activexWord.activexWordInts.`179`
+import typingsJapgolly.activexWord.activexWordInts.`180`
+import typingsJapgolly.activexWord.activexWordInts.`181`
+import typingsJapgolly.activexWord.activexWordInts.`182`
+import typingsJapgolly.activexWord.activexWordInts.`183`
+import typingsJapgolly.activexWord.activexWordInts.`184`
+import typingsJapgolly.activexWord.activexWordInts.`185`
+import typingsJapgolly.activexWord.activexWordInts.`186`
+import typingsJapgolly.activexWord.activexWordInts.`187`
+import typingsJapgolly.activexWord.activexWordInts.`188`
+import typingsJapgolly.activexWord.activexWordInts.`189`
+import typingsJapgolly.activexWord.activexWordInts.`190`
+import typingsJapgolly.activexWord.activexWordInts.`1920`
+import typingsJapgolly.activexWord.activexWordInts.`1922`
+import typingsJapgolly.activexWord.activexWordInts.`1948`
+import typingsJapgolly.activexWord.activexWordInts.`194`
+import typingsJapgolly.activexWord.activexWordInts.`195`
+import typingsJapgolly.activexWord.activexWordInts.`196`
+import typingsJapgolly.activexWord.activexWordInts.`197`
+import typingsJapgolly.activexWord.activexWordInts.`198`
+import typingsJapgolly.activexWord.activexWordInts.`199`
+import typingsJapgolly.activexWord.activexWordInts.`203`
+import typingsJapgolly.activexWord.activexWordInts.`204`
+import typingsJapgolly.activexWord.activexWordInts.`2067`
+import typingsJapgolly.activexWord.activexWordInts.`206`
+import typingsJapgolly.activexWord.activexWordInts.`208`
+import typingsJapgolly.activexWord.activexWordInts.`209`
+import typingsJapgolly.activexWord.activexWordInts.`211`
+import typingsJapgolly.activexWord.activexWordInts.`2120`
+import typingsJapgolly.activexWord.activexWordInts.`213`
+import typingsJapgolly.activexWord.activexWordInts.`214`
+import typingsJapgolly.activexWord.activexWordInts.`215`
+import typingsJapgolly.activexWord.activexWordInts.`2165`
+import typingsJapgolly.activexWord.activexWordInts.`220`
+import typingsJapgolly.activexWord.activexWordInts.`221`
+import typingsJapgolly.activexWord.activexWordInts.`222`
+import typingsJapgolly.activexWord.activexWordInts.`224`
+import typingsJapgolly.activexWord.activexWordInts.`225`
+import typingsJapgolly.activexWord.activexWordInts.`228`
+import typingsJapgolly.activexWord.activexWordInts.`2348`
+import typingsJapgolly.activexWord.activexWordInts.`2349`
+import typingsJapgolly.activexWord.activexWordInts.`235`
+import typingsJapgolly.activexWord.activexWordInts.`2394`
+import typingsJapgolly.activexWord.activexWordInts.`2439`
+import typingsJapgolly.activexWord.activexWordInts.`294`
+import typingsJapgolly.activexWord.activexWordInts.`298`
+import typingsJapgolly.activexWord.activexWordInts.`300`
+import typingsJapgolly.activexWord.activexWordInts.`322`
+import typingsJapgolly.activexWord.activexWordInts.`331`
+import typingsJapgolly.activexWord.activexWordInts.`341`
+import typingsJapgolly.activexWord.activexWordInts.`348`
+import typingsJapgolly.activexWord.activexWordInts.`353`
+import typingsJapgolly.activexWord.activexWordInts.`357`
+import typingsJapgolly.activexWord.activexWordInts.`358`
+import typingsJapgolly.activexWord.activexWordInts.`359`
+import typingsJapgolly.activexWord.activexWordInts.`361`
+import typingsJapgolly.activexWord.activexWordInts.`367`
+import typingsJapgolly.activexWord.activexWordInts.`370`
+import typingsJapgolly.activexWord.activexWordInts.`373`
+import typingsJapgolly.activexWord.activexWordInts.`378`
+import typingsJapgolly.activexWord.activexWordInts.`386`
+import typingsJapgolly.activexWord.activexWordInts.`392`
+import typingsJapgolly.activexWord.activexWordInts.`402`
+import typingsJapgolly.activexWord.activexWordInts.`4047`
+import typingsJapgolly.activexWord.activexWordInts.`4048`
+import typingsJapgolly.activexWord.activexWordInts.`4049`
+import typingsJapgolly.activexWord.activexWordInts.`4053`
+import typingsJapgolly.activexWord.activexWordInts.`4054`
+import typingsJapgolly.activexWord.activexWordInts.`4055`
+import typingsJapgolly.activexWord.activexWordInts.`420`
+import typingsJapgolly.activexWord.activexWordInts.`432`
+import typingsJapgolly.activexWord.activexWordInts.`433`
+import typingsJapgolly.activexWord.activexWordInts.`435`
+import typingsJapgolly.activexWord.activexWordInts.`442`
+import typingsJapgolly.activexWord.activexWordInts.`444`
+import typingsJapgolly.activexWord.activexWordInts.`445`
+import typingsJapgolly.activexWord.activexWordInts.`458`
+import typingsJapgolly.activexWord.activexWordInts.`463`
+import typingsJapgolly.activexWord.activexWordInts.`470`
+import typingsJapgolly.activexWord.activexWordInts.`471`
+import typingsJapgolly.activexWord.activexWordInts.`472`
+import typingsJapgolly.activexWord.activexWordInts.`473`
+import typingsJapgolly.activexWord.activexWordInts.`483`
+import typingsJapgolly.activexWord.activexWordInts.`488`
+import typingsJapgolly.activexWord.activexWordInts.`489`
+import typingsJapgolly.activexWord.activexWordInts.`503`
+import typingsJapgolly.activexWord.activexWordInts.`505`
+import typingsJapgolly.activexWord.activexWordInts.`506`
+import typingsJapgolly.activexWord.activexWordInts.`511`
+import typingsJapgolly.activexWord.activexWordInts.`521`
+import typingsJapgolly.activexWord.activexWordInts.`525`
+import typingsJapgolly.activexWord.activexWordInts.`551`
+import typingsJapgolly.activexWord.activexWordInts.`563`
+import typingsJapgolly.activexWord.activexWordInts.`569`
+import typingsJapgolly.activexWord.activexWordInts.`570`
+import typingsJapgolly.activexWord.activexWordInts.`577`
+import typingsJapgolly.activexWord.activexWordInts.`578`
+import typingsJapgolly.activexWord.activexWordInts.`581`
+import typingsJapgolly.activexWord.activexWordInts.`583`
+import typingsJapgolly.activexWord.activexWordInts.`586`
+import typingsJapgolly.activexWord.activexWordInts.`607`
+import typingsJapgolly.activexWord.activexWordInts.`610`
+import typingsJapgolly.activexWord.activexWordInts.`612`
+import typingsJapgolly.activexWord.activexWordInts.`615`
+import typingsJapgolly.activexWord.activexWordInts.`624`
+import typingsJapgolly.activexWord.activexWordInts.`625`
+import typingsJapgolly.activexWord.activexWordInts.`631`
+import typingsJapgolly.activexWord.activexWordInts.`633`
+import typingsJapgolly.activexWord.activexWordInts.`634`
+import typingsJapgolly.activexWord.activexWordInts.`642`
+import typingsJapgolly.activexWord.activexWordInts.`643`
+import typingsJapgolly.activexWord.activexWordInts.`676`
+import typingsJapgolly.activexWord.activexWordInts.`677`
+import typingsJapgolly.activexWord.activexWordInts.`680`
+import typingsJapgolly.activexWord.activexWordInts.`681`
+import typingsJapgolly.activexWord.activexWordInts.`685`
+import typingsJapgolly.activexWord.activexWordInts.`723`
+import typingsJapgolly.activexWord.activexWordInts.`732`
+import typingsJapgolly.activexWord.activexWordInts.`733`
+import typingsJapgolly.activexWord.activexWordInts.`735`
+import typingsJapgolly.activexWord.activexWordInts.`736`
+import typingsJapgolly.activexWord.activexWordInts.`737`
+import typingsJapgolly.activexWord.activexWordInts.`739`
+import typingsJapgolly.activexWord.activexWordInts.`762`
+import typingsJapgolly.activexWord.activexWordInts.`778`
+import typingsJapgolly.activexWord.activexWordInts.`779`
+import typingsJapgolly.activexWord.activexWordInts.`784`
+import typingsJapgolly.activexWord.activexWordInts.`78`
+import typingsJapgolly.activexWord.activexWordInts.`790`
+import typingsJapgolly.activexWord.activexWordInts.`79`
+import typingsJapgolly.activexWord.activexWordInts.`80`
+import typingsJapgolly.activexWord.activexWordInts.`811`
+import typingsJapgolly.activexWord.activexWordInts.`812`
+import typingsJapgolly.activexWord.activexWordInts.`81`
+import typingsJapgolly.activexWord.activexWordInts.`821`
+import typingsJapgolly.activexWord.activexWordInts.`824`
+import typingsJapgolly.activexWord.activexWordInts.`828`
+import typingsJapgolly.activexWord.activexWordInts.`82`
+import typingsJapgolly.activexWord.activexWordInts.`833`
+import typingsJapgolly.activexWord.activexWordInts.`84`
+import typingsJapgolly.activexWord.activexWordInts.`854`
+import typingsJapgolly.activexWord.activexWordInts.`855`
+import typingsJapgolly.activexWord.activexWordInts.`861`
+import typingsJapgolly.activexWord.activexWordInts.`863`
+import typingsJapgolly.activexWord.activexWordInts.`86`
+import typingsJapgolly.activexWord.activexWordInts.`872`
+import typingsJapgolly.activexWord.activexWordInts.`874`
+import typingsJapgolly.activexWord.activexWordInts.`87`
+import typingsJapgolly.activexWord.activexWordInts.`885`
+import typingsJapgolly.activexWord.activexWordInts.`88`
+import typingsJapgolly.activexWord.activexWordInts.`896`
+import typingsJapgolly.activexWord.activexWordInts.`898`
+import typingsJapgolly.activexWord.activexWordInts.`915`
+import typingsJapgolly.activexWord.activexWordInts.`925`
+import typingsJapgolly.activexWord.activexWordInts.`945`
+import typingsJapgolly.activexWord.activexWordInts.`959`
+import typingsJapgolly.activexWord.activexWordInts.`960`
+import typingsJapgolly.activexWord.activexWordInts.`974`
+import typingsJapgolly.activexWord.activexWordInts.`97`
+import typingsJapgolly.activexWord.activexWordInts.`983`
+import typingsJapgolly.activexWord.activexWordInts.`985`
+import typingsJapgolly.activexWord.activexWordInts.`986`
+import typingsJapgolly.activexWord.activexWordInts.`989`
+import typingsJapgolly.activexWord.activexWordInts.`99`
+import typingsJapgolly.activexWord.activexWordInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`2067`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2439`
-  - typingsJapgolly.activexWord.activexWordNumbers.`420`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1121`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2394`
-  - typingsJapgolly.activexWord.activexWordNumbers.`235`
-  - typingsJapgolly.activexWord.activexWordNumbers.`392`
-  - typingsJapgolly.activexWord.activexWordNumbers.`300`
-  - typingsJapgolly.activexWord.activexWordNumbers.`872`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1922`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1261`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1482`
-  - typingsJapgolly.activexWord.activexWordNumbers.`78`
-  - typingsJapgolly.activexWord.activexWordNumbers.`634`
-  - typingsJapgolly.activexWord.activexWordNumbers.`633`
-  - typingsJapgolly.activexWord.activexWordNumbers.`985`
-  - typingsJapgolly.activexWord.activexWordNumbers.`732`
-  - typingsJapgolly.activexWord.activexWordNumbers.`112`
-  - typingsJapgolly.activexWord.activexWordNumbers.`458`
-  - typingsJapgolly.activexWord.activexWordNumbers.`896`
-  - typingsJapgolly.activexWord.activexWordNumbers.`811`
-  - typingsJapgolly.activexWord.activexWordNumbers.`124`
-  - typingsJapgolly.activexWord.activexWordNumbers.`125`
-  - typingsJapgolly.activexWord.activexWordNumbers.`111`
-  - typingsJapgolly.activexWord.activexWordNumbers.`735`
-  - typingsJapgolly.activexWord.activexWordNumbers.`117`
-  - typingsJapgolly.activexWord.activexWordNumbers.`120`
-  - typingsJapgolly.activexWord.activexWordNumbers.`736`
-  - typingsJapgolly.activexWord.activexWordNumbers.`733`
-  - typingsJapgolly.activexWord.activexWordNumbers.`625`
-  - typingsJapgolly.activexWord.activexWordNumbers.`863`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2349`
-  - typingsJapgolly.activexWord.activexWordNumbers.`178`
-  - typingsJapgolly.activexWord.activexWordNumbers.`99`
-  - typingsJapgolly.activexWord.activexWordNumbers.`737`
-  - typingsJapgolly.activexWord.activexWordNumbers.`685`
-  - typingsJapgolly.activexWord.activexWordNumbers.`444`
-  - typingsJapgolly.activexWord.activexWordNumbers.`79`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1116`
-  - typingsJapgolly.activexWord.activexWordNumbers.`80`
-  - typingsJapgolly.activexWord.activexWordNumbers.`88`
-  - typingsJapgolly.activexWord.activexWordNumbers.`445`
-  - typingsJapgolly.activexWord.activexWordNumbers.`97`
-  - typingsJapgolly.activexWord.activexWordNumbers.`624`
-  - typingsJapgolly.activexWord.activexWordNumbers.`84`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1007`
-  - typingsJapgolly.activexWord.activexWordNumbers.`86`
-  - typingsJapgolly.activexWord.activexWordNumbers.`945`
-  - typingsJapgolly.activexWord.activexWordNumbers.`983`
-  - typingsJapgolly.activexWord.activexWordNumbers.`581`
-  - typingsJapgolly.activexWord.activexWordNumbers.`103`
-  - typingsJapgolly.activexWord.activexWordNumbers.`189`
-  - typingsJapgolly.activexWord.activexWordNumbers.`824`
-  - typingsJapgolly.activexWord.activexWordNumbers.`610`
-  - typingsJapgolly.activexWord.activexWordNumbers.`322`
-  - typingsJapgolly.activexWord.activexWordNumbers.`177`
-  - typingsJapgolly.activexWord.activexWordNumbers.`185`
-  - typingsJapgolly.activexWord.activexWordNumbers.`181`
-  - typingsJapgolly.activexWord.activexWordNumbers.`184`
-  - typingsJapgolly.activexWord.activexWordNumbers.`186`
-  - typingsJapgolly.activexWord.activexWordNumbers.`182`
-  - typingsJapgolly.activexWord.activexWordNumbers.`183`
-  - typingsJapgolly.activexWord.activexWordNumbers.`960`
-  - typingsJapgolly.activexWord.activexWordNumbers.`488`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1162`
-  - typingsJapgolly.activexWord.activexWordNumbers.`174`
-  - typingsJapgolly.activexWord.activexWordNumbers.`190`
-  - typingsJapgolly.activexWord.activexWordNumbers.`298`
-  - typingsJapgolly.activexWord.activexWordNumbers.`175`
-  - typingsJapgolly.activexWord.activexWordNumbers.`187`
-  - typingsJapgolly.activexWord.activexWordNumbers.`221`
-  - typingsJapgolly.activexWord.activexWordNumbers.`176`
-  - typingsJapgolly.activexWord.activexWordNumbers.`180`
-  - typingsJapgolly.activexWord.activexWordNumbers.`505`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1248`
-  - typingsJapgolly.activexWord.activexWordNumbers.`179`
-  - typingsJapgolly.activexWord.activexWordNumbers.`855`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1427`
-  - typingsJapgolly.activexWord.activexWordNumbers.`361`
-  - typingsJapgolly.activexWord.activexWordNumbers.`353`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1074`
-  - typingsJapgolly.activexWord.activexWordNumbers.`9`
-  - typingsJapgolly.activexWord.activexWordNumbers.`10`
-  - typingsJapgolly.activexWord.activexWordNumbers.`511`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1160`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1094`
-  - typingsJapgolly.activexWord.activexWordNumbers.`402`
-  - typingsJapgolly.activexWord.activexWordNumbers.`359`
-  - typingsJapgolly.activexWord.activexWordNumbers.`168`
-  - typingsJapgolly.activexWord.activexWordNumbers.`159`
-  - typingsJapgolly.activexWord.activexWordNumbers.`357`
-  - typingsJapgolly.activexWord.activexWordNumbers.`358`
-  - typingsJapgolly.activexWord.activexWordNumbers.`367`
-  - typingsJapgolly.activexWord.activexWordNumbers.`341`
-  - typingsJapgolly.activexWord.activexWordNumbers.`165`
-  - typingsJapgolly.activexWord.activexWordNumbers.`166`
-  - typingsJapgolly.activexWord.activexWordNumbers.`164`
-  - typingsJapgolly.activexWord.activexWordNumbers.`370`
-  - typingsJapgolly.activexWord.activexWordNumbers.`483`
-  - typingsJapgolly.activexWord.activexWordNumbers.`925`
-  - typingsJapgolly.activexWord.activexWordNumbers.`170`
-  - typingsJapgolly.activexWord.activexWordNumbers.`473`
-  - typingsJapgolly.activexWord.activexWordNumbers.`167`
-  - typingsJapgolly.activexWord.activexWordNumbers.`812`
-  - typingsJapgolly.activexWord.activexWordNumbers.`172`
-  - typingsJapgolly.activexWord.activexWordNumbers.`294`
-  - typingsJapgolly.activexWord.activexWordNumbers.`163`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2348`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2120`
-  - typingsJapgolly.activexWord.activexWordNumbers.`583`
-  - typingsJapgolly.activexWord.activexWordNumbers.`162`
-  - typingsJapgolly.activexWord.activexWordNumbers.`471`
-  - typingsJapgolly.activexWord.activexWordNumbers.`171`
-  - typingsJapgolly.activexWord.activexWordNumbers.`472`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1324`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1367`
-  - typingsJapgolly.activexWord.activexWordNumbers.`821`
-  - typingsJapgolly.activexWord.activexWordNumbers.`723`
-  - typingsJapgolly.activexWord.activexWordNumbers.`676`
-  - typingsJapgolly.activexWord.activexWordNumbers.`677`
-  - typingsJapgolly.activexWord.activexWordNumbers.`642`
-  - typingsJapgolly.activexWord.activexWordNumbers.`643`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1304`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1326`
-  - typingsJapgolly.activexWord.activexWordNumbers.`569`
-  - typingsJapgolly.activexWord.activexWordNumbers.`680`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1305`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4047`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1307`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4048`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1306`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4049`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4053`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4054`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4055`
-  - typingsJapgolly.activexWord.activexWordNumbers.`81`
-  - typingsJapgolly.activexWord.activexWordNumbers.`82`
-  - typingsJapgolly.activexWord.activexWordNumbers.`681`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1308`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1339`
-  - typingsJapgolly.activexWord.activexWordNumbers.`779`
-  - typingsJapgolly.activexWord.activexWordNumbers.`463`
-  - typingsJapgolly.activexWord.activexWordNumbers.`169`
-  - typingsJapgolly.activexWord.activexWordNumbers.`442`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1437`
-  - typingsJapgolly.activexWord.activexWordNumbers.`586`
-  - typingsJapgolly.activexWord.activexWordNumbers.`373`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2165`
-  - typingsJapgolly.activexWord.activexWordNumbers.`222`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1469`
-  - typingsJapgolly.activexWord.activexWordNumbers.`986`
-  - typingsJapgolly.activexWord.activexWordNumbers.`570`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1417`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1363`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1381`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1920`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1948`
-  - typingsJapgolly.activexWord.activexWordNumbers.`563`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1081`
-  - typingsJapgolly.activexWord.activexWordNumbers.`143`
-  - typingsJapgolly.activexWord.activexWordNumbers.`133`
-  - typingsJapgolly.activexWord.activexWordNumbers.`612`
-  - typingsJapgolly.activexWord.activexWordNumbers.`348`
-  - typingsJapgolly.activexWord.activexWordNumbers.`130`
-  - typingsJapgolly.activexWord.activexWordNumbers.`131`
-  - typingsJapgolly.activexWord.activexWordNumbers.`129`
-  - typingsJapgolly.activexWord.activexWordNumbers.`551`
-  - typingsJapgolly.activexWord.activexWordNumbers.`470`
-  - typingsJapgolly.activexWord.activexWordNumbers.`861`
-  - typingsJapgolly.activexWord.activexWordNumbers.`142`
-  - typingsJapgolly.activexWord.activexWordNumbers.`199`
-  - typingsJapgolly.activexWord.activexWordNumbers.`137`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1080`
-  - typingsJapgolly.activexWord.activexWordNumbers.`128`
-  - typingsJapgolly.activexWord.activexWordNumbers.`854`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1156`
-  - typingsJapgolly.activexWord.activexWordNumbers.`127`
-  - typingsJapgolly.activexWord.activexWordNumbers.`506`
-  - typingsJapgolly.activexWord.activexWordNumbers.`206`
-  - typingsJapgolly.activexWord.activexWordNumbers.`378`
-  - typingsJapgolly.activexWord.activexWordNumbers.`762`
-  - typingsJapgolly.activexWord.activexWordNumbers.`915`
-  - typingsJapgolly.activexWord.activexWordNumbers.`874`
-  - typingsJapgolly.activexWord.activexWordNumbers.`196`
-  - typingsJapgolly.activexWord.activexWordNumbers.`198`
-  - typingsJapgolly.activexWord.activexWordNumbers.`833`
-  - typingsJapgolly.activexWord.activexWordNumbers.`173`
-  - typingsJapgolly.activexWord.activexWordNumbers.`489`
-  - typingsJapgolly.activexWord.activexWordNumbers.`152`
-  - typingsJapgolly.activexWord.activexWordNumbers.`432`
-  - typingsJapgolly.activexWord.activexWordNumbers.`615`
-  - typingsJapgolly.activexWord.activexWordNumbers.`433`
-  - typingsJapgolly.activexWord.activexWordNumbers.`989`
-  - typingsJapgolly.activexWord.activexWordNumbers.`607`
-  - typingsJapgolly.activexWord.activexWordNumbers.`885`
-  - typingsJapgolly.activexWord.activexWordNumbers.`784`
-  - typingsJapgolly.activexWord.activexWordNumbers.`197`
-  - typingsJapgolly.activexWord.activexWordNumbers.`195`
-  - typingsJapgolly.activexWord.activexWordNumbers.`188`
-  - typingsJapgolly.activexWord.activexWordNumbers.`215`
-  - typingsJapgolly.activexWord.activexWordNumbers.`214`
-  - typingsJapgolly.activexWord.activexWordNumbers.`631`
-  - typingsJapgolly.activexWord.activexWordNumbers.`435`
-  - typingsJapgolly.activexWord.activexWordNumbers.`974`
-  - typingsJapgolly.activexWord.activexWordNumbers.`959`
-  - typingsJapgolly.activexWord.activexWordNumbers.`778`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1029`
-  - typingsJapgolly.activexWord.activexWordNumbers.`525`
-  - typingsJapgolly.activexWord.activexWordNumbers.`224`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1356`
-  - typingsJapgolly.activexWord.activexWordNumbers.`225`
-  - typingsJapgolly.activexWord.activexWordNumbers.`790`
-  - typingsJapgolly.activexWord.activexWordNumbers.`203`
-  - typingsJapgolly.activexWord.activexWordNumbers.`208`
-  - typingsJapgolly.activexWord.activexWordNumbers.`209`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1361`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1395`
-  - typingsJapgolly.activexWord.activexWordNumbers.`211`
-  - typingsJapgolly.activexWord.activexWordNumbers.`386`
-  - typingsJapgolly.activexWord.activexWordNumbers.`739`
-  - typingsJapgolly.activexWord.activexWordNumbers.`213`
-  - typingsJapgolly.activexWord.activexWordNumbers.`204`
-  - typingsJapgolly.activexWord.activexWordNumbers.`503`
-  - typingsJapgolly.activexWord.activexWordNumbers.`578`
-  - typingsJapgolly.activexWord.activexWordNumbers.`828`
-  - typingsJapgolly.activexWord.activexWordNumbers.`87`
-  - typingsJapgolly.activexWord.activexWordNumbers.`194`
-  - typingsJapgolly.activexWord.activexWordNumbers.`521`
-  - typingsJapgolly.activexWord.activexWordNumbers.`228`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1161`
-  - typingsJapgolly.activexWord.activexWordNumbers.`331`
-  - typingsJapgolly.activexWord.activexWordNumbers.`577`
-  - typingsJapgolly.activexWord.activexWordNumbers.`898`
-  - typingsJapgolly.activexWord.activexWordNumbers.`220`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1460`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1425`
+  - typingsJapgolly.activexWord.activexWordInts.`2067`
+  - typingsJapgolly.activexWord.activexWordInts.`2439`
+  - typingsJapgolly.activexWord.activexWordInts.`420`
+  - typingsJapgolly.activexWord.activexWordInts.`1121`
+  - typingsJapgolly.activexWord.activexWordInts.`2394`
+  - typingsJapgolly.activexWord.activexWordInts.`235`
+  - typingsJapgolly.activexWord.activexWordInts.`392`
+  - typingsJapgolly.activexWord.activexWordInts.`300`
+  - typingsJapgolly.activexWord.activexWordInts.`872`
+  - typingsJapgolly.activexWord.activexWordInts.`1922`
+  - typingsJapgolly.activexWord.activexWordInts.`1261`
+  - typingsJapgolly.activexWord.activexWordInts.`1482`
+  - typingsJapgolly.activexWord.activexWordInts.`78`
+  - typingsJapgolly.activexWord.activexWordInts.`634`
+  - typingsJapgolly.activexWord.activexWordInts.`633`
+  - typingsJapgolly.activexWord.activexWordInts.`985`
+  - typingsJapgolly.activexWord.activexWordInts.`732`
+  - typingsJapgolly.activexWord.activexWordInts.`112`
+  - typingsJapgolly.activexWord.activexWordInts.`458`
+  - typingsJapgolly.activexWord.activexWordInts.`896`
+  - typingsJapgolly.activexWord.activexWordInts.`811`
+  - typingsJapgolly.activexWord.activexWordInts.`124`
+  - typingsJapgolly.activexWord.activexWordInts.`125`
+  - typingsJapgolly.activexWord.activexWordInts.`111`
+  - typingsJapgolly.activexWord.activexWordInts.`735`
+  - typingsJapgolly.activexWord.activexWordInts.`117`
+  - typingsJapgolly.activexWord.activexWordInts.`120`
+  - typingsJapgolly.activexWord.activexWordInts.`736`
+  - typingsJapgolly.activexWord.activexWordInts.`733`
+  - typingsJapgolly.activexWord.activexWordInts.`625`
+  - typingsJapgolly.activexWord.activexWordInts.`863`
+  - typingsJapgolly.activexWord.activexWordInts.`2349`
+  - typingsJapgolly.activexWord.activexWordInts.`178`
+  - typingsJapgolly.activexWord.activexWordInts.`99`
+  - typingsJapgolly.activexWord.activexWordInts.`737`
+  - typingsJapgolly.activexWord.activexWordInts.`685`
+  - typingsJapgolly.activexWord.activexWordInts.`444`
+  - typingsJapgolly.activexWord.activexWordInts.`79`
+  - typingsJapgolly.activexWord.activexWordInts.`1116`
+  - typingsJapgolly.activexWord.activexWordInts.`80`
+  - typingsJapgolly.activexWord.activexWordInts.`88`
+  - typingsJapgolly.activexWord.activexWordInts.`445`
+  - typingsJapgolly.activexWord.activexWordInts.`97`
+  - typingsJapgolly.activexWord.activexWordInts.`624`
+  - typingsJapgolly.activexWord.activexWordInts.`84`
+  - typingsJapgolly.activexWord.activexWordInts.`1007`
+  - typingsJapgolly.activexWord.activexWordInts.`86`
+  - typingsJapgolly.activexWord.activexWordInts.`945`
+  - typingsJapgolly.activexWord.activexWordInts.`983`
+  - typingsJapgolly.activexWord.activexWordInts.`581`
+  - typingsJapgolly.activexWord.activexWordInts.`103`
+  - typingsJapgolly.activexWord.activexWordInts.`189`
+  - typingsJapgolly.activexWord.activexWordInts.`824`
+  - typingsJapgolly.activexWord.activexWordInts.`610`
+  - typingsJapgolly.activexWord.activexWordInts.`322`
+  - typingsJapgolly.activexWord.activexWordInts.`177`
+  - typingsJapgolly.activexWord.activexWordInts.`185`
+  - typingsJapgolly.activexWord.activexWordInts.`181`
+  - typingsJapgolly.activexWord.activexWordInts.`184`
+  - typingsJapgolly.activexWord.activexWordInts.`186`
+  - typingsJapgolly.activexWord.activexWordInts.`182`
+  - typingsJapgolly.activexWord.activexWordInts.`183`
+  - typingsJapgolly.activexWord.activexWordInts.`960`
+  - typingsJapgolly.activexWord.activexWordInts.`488`
+  - typingsJapgolly.activexWord.activexWordInts.`1162`
+  - typingsJapgolly.activexWord.activexWordInts.`174`
+  - typingsJapgolly.activexWord.activexWordInts.`190`
+  - typingsJapgolly.activexWord.activexWordInts.`298`
+  - typingsJapgolly.activexWord.activexWordInts.`175`
+  - typingsJapgolly.activexWord.activexWordInts.`187`
+  - typingsJapgolly.activexWord.activexWordInts.`221`
+  - typingsJapgolly.activexWord.activexWordInts.`176`
+  - typingsJapgolly.activexWord.activexWordInts.`180`
+  - typingsJapgolly.activexWord.activexWordInts.`505`
+  - typingsJapgolly.activexWord.activexWordInts.`1248`
+  - typingsJapgolly.activexWord.activexWordInts.`179`
+  - typingsJapgolly.activexWord.activexWordInts.`855`
+  - typingsJapgolly.activexWord.activexWordInts.`1427`
+  - typingsJapgolly.activexWord.activexWordInts.`361`
+  - typingsJapgolly.activexWord.activexWordInts.`353`
+  - typingsJapgolly.activexWord.activexWordInts.`1074`
+  - typingsJapgolly.activexWord.activexWordInts.`9`
+  - typingsJapgolly.activexWord.activexWordInts.`10`
+  - typingsJapgolly.activexWord.activexWordInts.`511`
+  - typingsJapgolly.activexWord.activexWordInts.`1160`
+  - typingsJapgolly.activexWord.activexWordInts.`1094`
+  - typingsJapgolly.activexWord.activexWordInts.`402`
+  - typingsJapgolly.activexWord.activexWordInts.`359`
+  - typingsJapgolly.activexWord.activexWordInts.`168`
+  - typingsJapgolly.activexWord.activexWordInts.`159`
+  - typingsJapgolly.activexWord.activexWordInts.`357`
+  - typingsJapgolly.activexWord.activexWordInts.`358`
+  - typingsJapgolly.activexWord.activexWordInts.`367`
+  - typingsJapgolly.activexWord.activexWordInts.`341`
+  - typingsJapgolly.activexWord.activexWordInts.`165`
+  - typingsJapgolly.activexWord.activexWordInts.`166`
+  - typingsJapgolly.activexWord.activexWordInts.`164`
+  - typingsJapgolly.activexWord.activexWordInts.`370`
+  - typingsJapgolly.activexWord.activexWordInts.`483`
+  - typingsJapgolly.activexWord.activexWordInts.`925`
+  - typingsJapgolly.activexWord.activexWordInts.`170`
+  - typingsJapgolly.activexWord.activexWordInts.`473`
+  - typingsJapgolly.activexWord.activexWordInts.`167`
+  - typingsJapgolly.activexWord.activexWordInts.`812`
+  - typingsJapgolly.activexWord.activexWordInts.`172`
+  - typingsJapgolly.activexWord.activexWordInts.`294`
+  - typingsJapgolly.activexWord.activexWordInts.`163`
+  - typingsJapgolly.activexWord.activexWordInts.`2348`
+  - typingsJapgolly.activexWord.activexWordInts.`2120`
+  - typingsJapgolly.activexWord.activexWordInts.`583`
+  - typingsJapgolly.activexWord.activexWordInts.`162`
+  - typingsJapgolly.activexWord.activexWordInts.`471`
+  - typingsJapgolly.activexWord.activexWordInts.`171`
+  - typingsJapgolly.activexWord.activexWordInts.`472`
+  - typingsJapgolly.activexWord.activexWordInts.`1324`
+  - typingsJapgolly.activexWord.activexWordInts.`1367`
+  - typingsJapgolly.activexWord.activexWordInts.`821`
+  - typingsJapgolly.activexWord.activexWordInts.`723`
+  - typingsJapgolly.activexWord.activexWordInts.`676`
+  - typingsJapgolly.activexWord.activexWordInts.`677`
+  - typingsJapgolly.activexWord.activexWordInts.`642`
+  - typingsJapgolly.activexWord.activexWordInts.`643`
+  - typingsJapgolly.activexWord.activexWordInts.`1304`
+  - typingsJapgolly.activexWord.activexWordInts.`1326`
+  - typingsJapgolly.activexWord.activexWordInts.`569`
+  - typingsJapgolly.activexWord.activexWordInts.`680`
+  - typingsJapgolly.activexWord.activexWordInts.`1305`
+  - typingsJapgolly.activexWord.activexWordInts.`4047`
+  - typingsJapgolly.activexWord.activexWordInts.`1307`
+  - typingsJapgolly.activexWord.activexWordInts.`4048`
+  - typingsJapgolly.activexWord.activexWordInts.`1306`
+  - typingsJapgolly.activexWord.activexWordInts.`4049`
+  - typingsJapgolly.activexWord.activexWordInts.`4053`
+  - typingsJapgolly.activexWord.activexWordInts.`4054`
+  - typingsJapgolly.activexWord.activexWordInts.`4055`
+  - typingsJapgolly.activexWord.activexWordInts.`81`
+  - typingsJapgolly.activexWord.activexWordInts.`82`
+  - typingsJapgolly.activexWord.activexWordInts.`681`
+  - typingsJapgolly.activexWord.activexWordInts.`1308`
+  - typingsJapgolly.activexWord.activexWordInts.`1339`
+  - typingsJapgolly.activexWord.activexWordInts.`779`
+  - typingsJapgolly.activexWord.activexWordInts.`463`
+  - typingsJapgolly.activexWord.activexWordInts.`169`
+  - typingsJapgolly.activexWord.activexWordInts.`442`
+  - typingsJapgolly.activexWord.activexWordInts.`1437`
+  - typingsJapgolly.activexWord.activexWordInts.`586`
+  - typingsJapgolly.activexWord.activexWordInts.`373`
+  - typingsJapgolly.activexWord.activexWordInts.`2165`
+  - typingsJapgolly.activexWord.activexWordInts.`222`
+  - typingsJapgolly.activexWord.activexWordInts.`1469`
+  - typingsJapgolly.activexWord.activexWordInts.`986`
+  - typingsJapgolly.activexWord.activexWordInts.`570`
+  - typingsJapgolly.activexWord.activexWordInts.`1417`
+  - typingsJapgolly.activexWord.activexWordInts.`1363`
+  - typingsJapgolly.activexWord.activexWordInts.`1381`
+  - typingsJapgolly.activexWord.activexWordInts.`1920`
+  - typingsJapgolly.activexWord.activexWordInts.`1948`
+  - typingsJapgolly.activexWord.activexWordInts.`563`
+  - typingsJapgolly.activexWord.activexWordInts.`1081`
+  - typingsJapgolly.activexWord.activexWordInts.`143`
+  - typingsJapgolly.activexWord.activexWordInts.`133`
+  - typingsJapgolly.activexWord.activexWordInts.`612`
+  - typingsJapgolly.activexWord.activexWordInts.`348`
+  - typingsJapgolly.activexWord.activexWordInts.`130`
+  - typingsJapgolly.activexWord.activexWordInts.`131`
+  - typingsJapgolly.activexWord.activexWordInts.`129`
+  - typingsJapgolly.activexWord.activexWordInts.`551`
+  - typingsJapgolly.activexWord.activexWordInts.`470`
+  - typingsJapgolly.activexWord.activexWordInts.`861`
+  - typingsJapgolly.activexWord.activexWordInts.`142`
+  - typingsJapgolly.activexWord.activexWordInts.`199`
+  - typingsJapgolly.activexWord.activexWordInts.`137`
+  - typingsJapgolly.activexWord.activexWordInts.`1080`
+  - typingsJapgolly.activexWord.activexWordInts.`128`
+  - typingsJapgolly.activexWord.activexWordInts.`854`
+  - typingsJapgolly.activexWord.activexWordInts.`1156`
+  - typingsJapgolly.activexWord.activexWordInts.`127`
+  - typingsJapgolly.activexWord.activexWordInts.`506`
+  - typingsJapgolly.activexWord.activexWordInts.`206`
+  - typingsJapgolly.activexWord.activexWordInts.`378`
+  - typingsJapgolly.activexWord.activexWordInts.`762`
+  - typingsJapgolly.activexWord.activexWordInts.`915`
+  - typingsJapgolly.activexWord.activexWordInts.`874`
+  - typingsJapgolly.activexWord.activexWordInts.`196`
+  - typingsJapgolly.activexWord.activexWordInts.`198`
+  - typingsJapgolly.activexWord.activexWordInts.`833`
+  - typingsJapgolly.activexWord.activexWordInts.`173`
+  - typingsJapgolly.activexWord.activexWordInts.`489`
+  - typingsJapgolly.activexWord.activexWordInts.`152`
+  - typingsJapgolly.activexWord.activexWordInts.`432`
+  - typingsJapgolly.activexWord.activexWordInts.`615`
+  - typingsJapgolly.activexWord.activexWordInts.`433`
+  - typingsJapgolly.activexWord.activexWordInts.`989`
+  - typingsJapgolly.activexWord.activexWordInts.`607`
+  - typingsJapgolly.activexWord.activexWordInts.`885`
+  - typingsJapgolly.activexWord.activexWordInts.`784`
+  - typingsJapgolly.activexWord.activexWordInts.`197`
+  - typingsJapgolly.activexWord.activexWordInts.`195`
+  - typingsJapgolly.activexWord.activexWordInts.`188`
+  - typingsJapgolly.activexWord.activexWordInts.`215`
+  - typingsJapgolly.activexWord.activexWordInts.`214`
+  - typingsJapgolly.activexWord.activexWordInts.`631`
+  - typingsJapgolly.activexWord.activexWordInts.`435`
+  - typingsJapgolly.activexWord.activexWordInts.`974`
+  - typingsJapgolly.activexWord.activexWordInts.`959`
+  - typingsJapgolly.activexWord.activexWordInts.`778`
+  - typingsJapgolly.activexWord.activexWordInts.`1029`
+  - typingsJapgolly.activexWord.activexWordInts.`525`
+  - typingsJapgolly.activexWord.activexWordInts.`224`
+  - typingsJapgolly.activexWord.activexWordInts.`1356`
+  - typingsJapgolly.activexWord.activexWordInts.`225`
+  - typingsJapgolly.activexWord.activexWordInts.`790`
+  - typingsJapgolly.activexWord.activexWordInts.`203`
+  - typingsJapgolly.activexWord.activexWordInts.`208`
+  - typingsJapgolly.activexWord.activexWordInts.`209`
+  - typingsJapgolly.activexWord.activexWordInts.`1361`
+  - typingsJapgolly.activexWord.activexWordInts.`1395`
+  - typingsJapgolly.activexWord.activexWordInts.`211`
+  - typingsJapgolly.activexWord.activexWordInts.`386`
+  - typingsJapgolly.activexWord.activexWordInts.`739`
+  - typingsJapgolly.activexWord.activexWordInts.`213`
+  - typingsJapgolly.activexWord.activexWordInts.`204`
+  - typingsJapgolly.activexWord.activexWordInts.`503`
+  - typingsJapgolly.activexWord.activexWordInts.`578`
+  - typingsJapgolly.activexWord.activexWordInts.`828`
+  - typingsJapgolly.activexWord.activexWordInts.`87`
+  - typingsJapgolly.activexWord.activexWordInts.`194`
+  - typingsJapgolly.activexWord.activexWordInts.`521`
+  - typingsJapgolly.activexWord.activexWordInts.`228`
+  - typingsJapgolly.activexWord.activexWordInts.`1161`
+  - typingsJapgolly.activexWord.activexWordInts.`331`
+  - typingsJapgolly.activexWord.activexWordInts.`577`
+  - typingsJapgolly.activexWord.activexWordInts.`898`
+  - typingsJapgolly.activexWord.activexWordInts.`220`
+  - typingsJapgolly.activexWord.activexWordInts.`1460`
+  - typingsJapgolly.activexWord.activexWordInts.`1425`
 */
-trait WdWordDialog extends js.Object
-
+trait WdWordDialog extends StObject
 object WdWordDialog {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdDialogBuildingBlockOrganizer: `2067` = this.cast(2067)
-  @scala.inline
-  def wdDialogCSSLinks: `1261` = this.cast(1261)
-  @scala.inline
-  def wdDialogCompatibilityChecker: `2439` = this.cast(2439)
-  @scala.inline
-  def wdDialogConnect: `420` = this.cast(420)
-  @scala.inline
-  def wdDialogConsistencyChecker: `1121` = this.cast(1121)
-  @scala.inline
-  def wdDialogContentControlProperties: `2394` = this.cast(2394)
-  @scala.inline
-  def wdDialogControlRun: `235` = this.cast(235)
-  @scala.inline
-  def wdDialogConvertObject: `392` = this.cast(392)
-  @scala.inline
-  def wdDialogCopyFile: `300` = this.cast(300)
-  @scala.inline
-  def wdDialogCreateAutoText: `872` = this.cast(872)
-  @scala.inline
-  def wdDialogCreateSource: `1922` = this.cast(1922)
-  @scala.inline
-  def wdDialogDocumentInspector: `1482` = this.cast(1482)
-  @scala.inline
-  def wdDialogDocumentStatistics: `78` = this.cast(78)
-  @scala.inline
-  def wdDialogDrawAlign: `634` = this.cast(634)
-  @scala.inline
-  def wdDialogDrawSnapToGrid: `633` = this.cast(633)
-  @scala.inline
-  def wdDialogEditAutoText: `985` = this.cast(985)
-  @scala.inline
-  def wdDialogEditCreatePublisher: `732` = this.cast(732)
-  @scala.inline
-  def wdDialogEditFind: `112` = this.cast(112)
-  @scala.inline
-  def wdDialogEditFrame: `458` = this.cast(458)
-  @scala.inline
-  def wdDialogEditGoTo: `896` = this.cast(896)
-  @scala.inline
-  def wdDialogEditGoToOld: `811` = this.cast(811)
-  @scala.inline
-  def wdDialogEditLinks: `124` = this.cast(124)
-  @scala.inline
-  def wdDialogEditObject: `125` = this.cast(125)
-  @scala.inline
-  def wdDialogEditPasteSpecial: `111` = this.cast(111)
-  @scala.inline
-  def wdDialogEditPublishOptions: `735` = this.cast(735)
-  @scala.inline
-  def wdDialogEditReplace: `117` = this.cast(117)
-  @scala.inline
-  def wdDialogEditStyle: `120` = this.cast(120)
-  @scala.inline
-  def wdDialogEditSubscribeOptions: `736` = this.cast(736)
-  @scala.inline
-  def wdDialogEditSubscribeTo: `733` = this.cast(733)
-  @scala.inline
-  def wdDialogEditTOACategory: `625` = this.cast(625)
-  @scala.inline
-  def wdDialogEmailOptions: `863` = this.cast(863)
-  @scala.inline
-  def wdDialogExportAsFixedFormat: `2349` = this.cast(2349)
-  @scala.inline
-  def wdDialogFileDocumentLayout: `178` = this.cast(178)
-  @scala.inline
-  def wdDialogFileFind: `99` = this.cast(99)
-  @scala.inline
-  def wdDialogFileMacCustomPageSetupGX: `737` = this.cast(737)
-  @scala.inline
-  def wdDialogFileMacPageSetup: `685` = this.cast(685)
-  @scala.inline
-  def wdDialogFileMacPageSetupGX: `444` = this.cast(444)
-  @scala.inline
-  def wdDialogFileNew: `79` = this.cast(79)
-  @scala.inline
-  def wdDialogFileNew2007: `1116` = this.cast(1116)
-  @scala.inline
-  def wdDialogFileOpen: `80` = this.cast(80)
-  @scala.inline
-  def wdDialogFilePageSetup: `178` = this.cast(178)
-  @scala.inline
-  def wdDialogFilePrint: `88` = this.cast(88)
-  @scala.inline
-  def wdDialogFilePrintOneCopy: `445` = this.cast(445)
-  @scala.inline
-  def wdDialogFilePrintSetup: `97` = this.cast(97)
-  @scala.inline
-  def wdDialogFileRoutingSlip: `624` = this.cast(624)
-  @scala.inline
-  def wdDialogFileSaveAs: `84` = this.cast(84)
-  @scala.inline
-  def wdDialogFileSaveVersion: `1007` = this.cast(1007)
-  @scala.inline
-  def wdDialogFileSummaryInfo: `86` = this.cast(86)
-  @scala.inline
-  def wdDialogFileVersions: `945` = this.cast(945)
-  @scala.inline
-  def wdDialogFitText: `983` = this.cast(983)
-  @scala.inline
-  def wdDialogFontSubstitution: `581` = this.cast(581)
-  @scala.inline
-  def wdDialogFormFieldHelp: `361` = this.cast(361)
-  @scala.inline
-  def wdDialogFormFieldOptions: `353` = this.cast(353)
-  @scala.inline
-  def wdDialogFormatAddrFonts: `103` = this.cast(103)
-  @scala.inline
-  def wdDialogFormatBordersAndShading: `189` = this.cast(189)
-  @scala.inline
-  def wdDialogFormatBulletsAndNumbering: `824` = this.cast(824)
-  @scala.inline
-  def wdDialogFormatCallout: `610` = this.cast(610)
-  @scala.inline
-  def wdDialogFormatChangeCase: `322` = this.cast(322)
-  @scala.inline
-  def wdDialogFormatColumns: `177` = this.cast(177)
-  @scala.inline
-  def wdDialogFormatDefineStyleBorders: `185` = this.cast(185)
-  @scala.inline
-  def wdDialogFormatDefineStyleFont: `181` = this.cast(181)
-  @scala.inline
-  def wdDialogFormatDefineStyleFrame: `184` = this.cast(184)
-  @scala.inline
-  def wdDialogFormatDefineStyleLang: `186` = this.cast(186)
-  @scala.inline
-  def wdDialogFormatDefineStylePara: `182` = this.cast(182)
-  @scala.inline
-  def wdDialogFormatDefineStyleTabs: `183` = this.cast(183)
-  @scala.inline
-  def wdDialogFormatDrawingObject: `960` = this.cast(960)
-  @scala.inline
-  def wdDialogFormatDropCap: `488` = this.cast(488)
-  @scala.inline
-  def wdDialogFormatEncloseCharacters: `1162` = this.cast(1162)
-  @scala.inline
-  def wdDialogFormatFont: `174` = this.cast(174)
-  @scala.inline
-  def wdDialogFormatFrame: `190` = this.cast(190)
-  @scala.inline
-  def wdDialogFormatPageNumber: `298` = this.cast(298)
-  @scala.inline
-  def wdDialogFormatParagraph: `175` = this.cast(175)
-  @scala.inline
-  def wdDialogFormatPicture: `187` = this.cast(187)
-  @scala.inline
-  def wdDialogFormatRetAddrFonts: `221` = this.cast(221)
-  @scala.inline
-  def wdDialogFormatSectionLayout: `176` = this.cast(176)
-  @scala.inline
-  def wdDialogFormatStyle: `180` = this.cast(180)
-  @scala.inline
-  def wdDialogFormatStyleGallery: `505` = this.cast(505)
-  @scala.inline
-  def wdDialogFormatStylesCustom: `1248` = this.cast(1248)
-  @scala.inline
-  def wdDialogFormatTabs: `179` = this.cast(179)
-  @scala.inline
-  def wdDialogFormatTheme: `855` = this.cast(855)
-  @scala.inline
-  def wdDialogFormattingRestrictions: `1427` = this.cast(1427)
-  @scala.inline
-  def wdDialogFrameSetProperties: `1074` = this.cast(1074)
-  @scala.inline
-  def wdDialogHelpAbout: `9` = this.cast(9)
-  @scala.inline
-  def wdDialogHelpWordPerfectHelp: `10` = this.cast(10)
-  @scala.inline
-  def wdDialogHelpWordPerfectHelpOptions: `511` = this.cast(511)
-  @scala.inline
-  def wdDialogHorizontalInVertical: `1160` = this.cast(1160)
-  @scala.inline
-  def wdDialogIMESetDefault: `1094` = this.cast(1094)
-  @scala.inline
-  def wdDialogInsertAddCaption: `402` = this.cast(402)
-  @scala.inline
-  def wdDialogInsertAutoCaption: `359` = this.cast(359)
-  @scala.inline
-  def wdDialogInsertBookmark: `168` = this.cast(168)
-  @scala.inline
-  def wdDialogInsertBreak: `159` = this.cast(159)
-  @scala.inline
-  def wdDialogInsertCaption: `357` = this.cast(357)
-  @scala.inline
-  def wdDialogInsertCaptionNumbering: `358` = this.cast(358)
-  @scala.inline
-  def wdDialogInsertCrossReference: `367` = this.cast(367)
-  @scala.inline
-  def wdDialogInsertDatabase: `341` = this.cast(341)
-  @scala.inline
-  def wdDialogInsertDateTime: `165` = this.cast(165)
-  @scala.inline
-  def wdDialogInsertField: `166` = this.cast(166)
-  @scala.inline
-  def wdDialogInsertFile: `164` = this.cast(164)
-  @scala.inline
-  def wdDialogInsertFootnote: `370` = this.cast(370)
-  @scala.inline
-  def wdDialogInsertFormField: `483` = this.cast(483)
-  @scala.inline
-  def wdDialogInsertHyperlink: `925` = this.cast(925)
-  @scala.inline
-  def wdDialogInsertIndex: `170` = this.cast(170)
-  @scala.inline
-  def wdDialogInsertIndexAndTables: `473` = this.cast(473)
-  @scala.inline
-  def wdDialogInsertMergeField: `167` = this.cast(167)
-  @scala.inline
-  def wdDialogInsertNumber: `812` = this.cast(812)
-  @scala.inline
-  def wdDialogInsertObject: `172` = this.cast(172)
-  @scala.inline
-  def wdDialogInsertPageNumbers: `294` = this.cast(294)
-  @scala.inline
-  def wdDialogInsertPicture: `163` = this.cast(163)
-  @scala.inline
-  def wdDialogInsertPlaceholder: `2348` = this.cast(2348)
-  @scala.inline
-  def wdDialogInsertSource: `2120` = this.cast(2120)
-  @scala.inline
-  def wdDialogInsertSubdocument: `583` = this.cast(583)
-  @scala.inline
-  def wdDialogInsertSymbol: `162` = this.cast(162)
-  @scala.inline
-  def wdDialogInsertTableOfAuthorities: `471` = this.cast(471)
-  @scala.inline
-  def wdDialogInsertTableOfContents: `171` = this.cast(171)
-  @scala.inline
-  def wdDialogInsertTableOfFigures: `472` = this.cast(472)
-  @scala.inline
-  def wdDialogInsertWebComponent: `1324` = this.cast(1324)
-  @scala.inline
-  def wdDialogLabelOptions: `1367` = this.cast(1367)
-  @scala.inline
-  def wdDialogLetterWizard: `821` = this.cast(821)
-  @scala.inline
-  def wdDialogListCommands: `723` = this.cast(723)
-  @scala.inline
-  def wdDialogMailMerge: `676` = this.cast(676)
-  @scala.inline
-  def wdDialogMailMergeCheck: `677` = this.cast(677)
-  @scala.inline
-  def wdDialogMailMergeCreateDataSource: `642` = this.cast(642)
-  @scala.inline
-  def wdDialogMailMergeCreateHeaderSource: `643` = this.cast(643)
-  @scala.inline
-  def wdDialogMailMergeFieldMapping: `1304` = this.cast(1304)
-  @scala.inline
-  def wdDialogMailMergeFindRecipient: `1326` = this.cast(1326)
-  @scala.inline
-  def wdDialogMailMergeFindRecord: `569` = this.cast(569)
-  @scala.inline
-  def wdDialogMailMergeHelper: `680` = this.cast(680)
-  @scala.inline
-  def wdDialogMailMergeInsertAddressBlock: `1305` = this.cast(1305)
-  @scala.inline
-  def wdDialogMailMergeInsertAsk: `4047` = this.cast(4047)
-  @scala.inline
-  def wdDialogMailMergeInsertFields: `1307` = this.cast(1307)
-  @scala.inline
-  def wdDialogMailMergeInsertFillIn: `4048` = this.cast(4048)
-  @scala.inline
-  def wdDialogMailMergeInsertGreetingLine: `1306` = this.cast(1306)
-  @scala.inline
-  def wdDialogMailMergeInsertIf: `4049` = this.cast(4049)
-  @scala.inline
-  def wdDialogMailMergeInsertNextIf: `4053` = this.cast(4053)
-  @scala.inline
-  def wdDialogMailMergeInsertSet: `4054` = this.cast(4054)
-  @scala.inline
-  def wdDialogMailMergeInsertSkipIf: `4055` = this.cast(4055)
-  @scala.inline
-  def wdDialogMailMergeOpenDataSource: `81` = this.cast(81)
-  @scala.inline
-  def wdDialogMailMergeOpenHeaderSource: `82` = this.cast(82)
-  @scala.inline
-  def wdDialogMailMergeQueryOptions: `681` = this.cast(681)
-  @scala.inline
-  def wdDialogMailMergeRecipients: `1308` = this.cast(1308)
-  @scala.inline
-  def wdDialogMailMergeSetDocumentType: `1339` = this.cast(1339)
-  @scala.inline
-  def wdDialogMailMergeUseAddressBook: `779` = this.cast(779)
-  @scala.inline
-  def wdDialogMarkCitation: `463` = this.cast(463)
-  @scala.inline
-  def wdDialogMarkIndexEntry: `169` = this.cast(169)
-  @scala.inline
-  def wdDialogMarkTableOfContentsEntry: `442` = this.cast(442)
-  @scala.inline
-  def wdDialogMyPermission: `1437` = this.cast(1437)
-  @scala.inline
-  def wdDialogNewToolbar: `586` = this.cast(586)
-  @scala.inline
-  def wdDialogNoteOptions: `373` = this.cast(373)
-  @scala.inline
-  def wdDialogOMathRecognizedFunctions: `2165` = this.cast(2165)
-  @scala.inline
-  def wdDialogOrganizer: `222` = this.cast(222)
-  @scala.inline
-  def wdDialogPermission: `1469` = this.cast(1469)
-  @scala.inline
-  def wdDialogPhoneticGuide: `986` = this.cast(986)
-  @scala.inline
-  def wdDialogReviewAfmtRevisions: `570` = this.cast(570)
-  @scala.inline
-  def wdDialogSchemaLibrary: `1417` = this.cast(1417)
-  @scala.inline
-  def wdDialogSearch: `1363` = this.cast(1363)
-  @scala.inline
-  def wdDialogShowRepairs: `1381` = this.cast(1381)
-  @scala.inline
-  def wdDialogSourceManager: `1920` = this.cast(1920)
-  @scala.inline
-  def wdDialogStyleManagement: `1948` = this.cast(1948)
-  @scala.inline
-  def wdDialogTCSCTranslator: `1156` = this.cast(1156)
-  @scala.inline
-  def wdDialogTableAutoFormat: `563` = this.cast(563)
-  @scala.inline
-  def wdDialogTableCellOptions: `1081` = this.cast(1081)
-  @scala.inline
-  def wdDialogTableColumnWidth: `143` = this.cast(143)
-  @scala.inline
-  def wdDialogTableDeleteCells: `133` = this.cast(133)
-  @scala.inline
-  def wdDialogTableFormatCell: `612` = this.cast(612)
-  @scala.inline
-  def wdDialogTableFormula: `348` = this.cast(348)
-  @scala.inline
-  def wdDialogTableInsertCells: `130` = this.cast(130)
-  @scala.inline
-  def wdDialogTableInsertRow: `131` = this.cast(131)
-  @scala.inline
-  def wdDialogTableInsertTable: `129` = this.cast(129)
-  @scala.inline
-  def wdDialogTableOfCaptionsOptions: `551` = this.cast(551)
-  @scala.inline
-  def wdDialogTableOfContentsOptions: `470` = this.cast(470)
-  @scala.inline
-  def wdDialogTableProperties: `861` = this.cast(861)
-  @scala.inline
-  def wdDialogTableRowHeight: `142` = this.cast(142)
-  @scala.inline
-  def wdDialogTableSort: `199` = this.cast(199)
-  @scala.inline
-  def wdDialogTableSplitCells: `137` = this.cast(137)
-  @scala.inline
-  def wdDialogTableTableOptions: `1080` = this.cast(1080)
-  @scala.inline
-  def wdDialogTableToText: `128` = this.cast(128)
-  @scala.inline
-  def wdDialogTableWrapping: `854` = this.cast(854)
-  @scala.inline
-  def wdDialogTextToTable: `127` = this.cast(127)
-  @scala.inline
-  def wdDialogToolsAcceptRejectChanges: `506` = this.cast(506)
-  @scala.inline
-  def wdDialogToolsAdvancedSettings: `206` = this.cast(206)
-  @scala.inline
-  def wdDialogToolsAutoCorrect: `378` = this.cast(378)
-  @scala.inline
-  def wdDialogToolsAutoCorrectExceptions: `762` = this.cast(762)
-  @scala.inline
-  def wdDialogToolsAutoManager: `915` = this.cast(915)
-  @scala.inline
-  def wdDialogToolsAutoSummarize: `874` = this.cast(874)
-  @scala.inline
-  def wdDialogToolsBulletsNumbers: `196` = this.cast(196)
-  @scala.inline
-  def wdDialogToolsCompareDocuments: `198` = this.cast(198)
-  @scala.inline
-  def wdDialogToolsCreateDirectory: `833` = this.cast(833)
-  @scala.inline
-  def wdDialogToolsCreateEnvelope: `173` = this.cast(173)
-  @scala.inline
-  def wdDialogToolsCreateLabels: `489` = this.cast(489)
-  @scala.inline
-  def wdDialogToolsCustomize: `152` = this.cast(152)
-  @scala.inline
-  def wdDialogToolsCustomizeKeyboard: `432` = this.cast(432)
-  @scala.inline
-  def wdDialogToolsCustomizeMenuBar: `615` = this.cast(615)
-  @scala.inline
-  def wdDialogToolsCustomizeMenus: `433` = this.cast(433)
-  @scala.inline
-  def wdDialogToolsDictionary: `989` = this.cast(989)
-  @scala.inline
-  def wdDialogToolsEnvelopesAndLabels: `607` = this.cast(607)
-  @scala.inline
-  def wdDialogToolsGrammarSettings: `885` = this.cast(885)
-  @scala.inline
-  def wdDialogToolsHangulHanjaConversion: `784` = this.cast(784)
-  @scala.inline
-  def wdDialogToolsHighlightChanges: `197` = this.cast(197)
-  @scala.inline
-  def wdDialogToolsHyphenation: `195` = this.cast(195)
-  @scala.inline
-  def wdDialogToolsLanguage: `188` = this.cast(188)
-  @scala.inline
-  def wdDialogToolsMacro: `215` = this.cast(215)
-  @scala.inline
-  def wdDialogToolsMacroRecord: `214` = this.cast(214)
-  @scala.inline
-  def wdDialogToolsManageFields: `631` = this.cast(631)
-  @scala.inline
-  def wdDialogToolsMergeDocuments: `435` = this.cast(435)
-  @scala.inline
-  def wdDialogToolsOptions: `974` = this.cast(974)
-  @scala.inline
-  def wdDialogToolsOptionsAutoFormat: `959` = this.cast(959)
-  @scala.inline
-  def wdDialogToolsOptionsAutoFormatAsYouType: `778` = this.cast(778)
-  @scala.inline
-  def wdDialogToolsOptionsBidi: `1029` = this.cast(1029)
-  @scala.inline
-  def wdDialogToolsOptionsCompatibility: `525` = this.cast(525)
-  @scala.inline
-  def wdDialogToolsOptionsEdit: `224` = this.cast(224)
-  @scala.inline
-  def wdDialogToolsOptionsEditCopyPaste: `1356` = this.cast(1356)
-  @scala.inline
-  def wdDialogToolsOptionsFileLocations: `225` = this.cast(225)
-  @scala.inline
-  def wdDialogToolsOptionsFuzzy: `790` = this.cast(790)
-  @scala.inline
-  def wdDialogToolsOptionsGeneral: `203` = this.cast(203)
-  @scala.inline
-  def wdDialogToolsOptionsPrint: `208` = this.cast(208)
-  @scala.inline
-  def wdDialogToolsOptionsSave: `209` = this.cast(209)
-  @scala.inline
-  def wdDialogToolsOptionsSecurity: `1361` = this.cast(1361)
-  @scala.inline
-  def wdDialogToolsOptionsSmartTag: `1395` = this.cast(1395)
-  @scala.inline
-  def wdDialogToolsOptionsSpellingAndGrammar: `211` = this.cast(211)
-  @scala.inline
-  def wdDialogToolsOptionsTrackChanges: `386` = this.cast(386)
-  @scala.inline
-  def wdDialogToolsOptionsTypography: `739` = this.cast(739)
-  @scala.inline
-  def wdDialogToolsOptionsUserInfo: `213` = this.cast(213)
-  @scala.inline
-  def wdDialogToolsOptionsView: `204` = this.cast(204)
-  @scala.inline
-  def wdDialogToolsProtectDocument: `503` = this.cast(503)
-  @scala.inline
-  def wdDialogToolsProtectSection: `578` = this.cast(578)
-  @scala.inline
-  def wdDialogToolsRevisions: `197` = this.cast(197)
-  @scala.inline
-  def wdDialogToolsSpellingAndGrammar: `828` = this.cast(828)
-  @scala.inline
-  def wdDialogToolsTemplates: `87` = this.cast(87)
-  @scala.inline
-  def wdDialogToolsThesaurus: `194` = this.cast(194)
-  @scala.inline
-  def wdDialogToolsUnprotectDocument: `521` = this.cast(521)
-  @scala.inline
-  def wdDialogToolsWordCount: `228` = this.cast(228)
-  @scala.inline
-  def wdDialogTwoLinesInOne: `1161` = this.cast(1161)
-  @scala.inline
-  def wdDialogUpdateTOC: `331` = this.cast(331)
-  @scala.inline
-  def wdDialogViewZoom: `577` = this.cast(577)
-  @scala.inline
-  def wdDialogWebOptions: `898` = this.cast(898)
-  @scala.inline
-  def wdDialogWindowActivate: `220` = this.cast(220)
-  @scala.inline
-  def wdDialogXMLElementAttributes: `1460` = this.cast(1460)
-  @scala.inline
-  def wdDialogXMLOptions: `1425` = this.cast(1425)
+  
+  inline def wdDialogBuildingBlockOrganizer: `2067` = 2067.asInstanceOf[`2067`]
+  
+  inline def wdDialogCSSLinks: `1261` = 1261.asInstanceOf[`1261`]
+  
+  inline def wdDialogCompatibilityChecker: `2439` = 2439.asInstanceOf[`2439`]
+  
+  inline def wdDialogConnect: `420` = 420.asInstanceOf[`420`]
+  
+  inline def wdDialogConsistencyChecker: `1121` = 1121.asInstanceOf[`1121`]
+  
+  inline def wdDialogContentControlProperties: `2394` = 2394.asInstanceOf[`2394`]
+  
+  inline def wdDialogControlRun: `235` = 235.asInstanceOf[`235`]
+  
+  inline def wdDialogConvertObject: `392` = 392.asInstanceOf[`392`]
+  
+  inline def wdDialogCopyFile: `300` = 300.asInstanceOf[`300`]
+  
+  inline def wdDialogCreateAutoText: `872` = 872.asInstanceOf[`872`]
+  
+  inline def wdDialogCreateSource: `1922` = 1922.asInstanceOf[`1922`]
+  
+  inline def wdDialogDocumentInspector: `1482` = 1482.asInstanceOf[`1482`]
+  
+  inline def wdDialogDocumentStatistics: `78` = 78.asInstanceOf[`78`]
+  
+  inline def wdDialogDrawAlign: `634` = 634.asInstanceOf[`634`]
+  
+  inline def wdDialogDrawSnapToGrid: `633` = 633.asInstanceOf[`633`]
+  
+  inline def wdDialogEditAutoText: `985` = 985.asInstanceOf[`985`]
+  
+  inline def wdDialogEditCreatePublisher: `732` = 732.asInstanceOf[`732`]
+  
+  inline def wdDialogEditFind: `112` = 112.asInstanceOf[`112`]
+  
+  inline def wdDialogEditFrame: `458` = 458.asInstanceOf[`458`]
+  
+  inline def wdDialogEditGoTo: `896` = 896.asInstanceOf[`896`]
+  
+  inline def wdDialogEditGoToOld: `811` = 811.asInstanceOf[`811`]
+  
+  inline def wdDialogEditLinks: `124` = 124.asInstanceOf[`124`]
+  
+  inline def wdDialogEditObject: `125` = 125.asInstanceOf[`125`]
+  
+  inline def wdDialogEditPasteSpecial: `111` = 111.asInstanceOf[`111`]
+  
+  inline def wdDialogEditPublishOptions: `735` = 735.asInstanceOf[`735`]
+  
+  inline def wdDialogEditReplace: `117` = 117.asInstanceOf[`117`]
+  
+  inline def wdDialogEditStyle: `120` = 120.asInstanceOf[`120`]
+  
+  inline def wdDialogEditSubscribeOptions: `736` = 736.asInstanceOf[`736`]
+  
+  inline def wdDialogEditSubscribeTo: `733` = 733.asInstanceOf[`733`]
+  
+  inline def wdDialogEditTOACategory: `625` = 625.asInstanceOf[`625`]
+  
+  inline def wdDialogEmailOptions: `863` = 863.asInstanceOf[`863`]
+  
+  inline def wdDialogExportAsFixedFormat: `2349` = 2349.asInstanceOf[`2349`]
+  
+  inline def wdDialogFileDocumentLayout: `178` = 178.asInstanceOf[`178`]
+  
+  inline def wdDialogFileFind: `99` = 99.asInstanceOf[`99`]
+  
+  inline def wdDialogFileMacCustomPageSetupGX: `737` = 737.asInstanceOf[`737`]
+  
+  inline def wdDialogFileMacPageSetup: `685` = 685.asInstanceOf[`685`]
+  
+  inline def wdDialogFileMacPageSetupGX: `444` = 444.asInstanceOf[`444`]
+  
+  inline def wdDialogFileNew: `79` = 79.asInstanceOf[`79`]
+  
+  inline def wdDialogFileNew2007: `1116` = 1116.asInstanceOf[`1116`]
+  
+  inline def wdDialogFileOpen: `80` = 80.asInstanceOf[`80`]
+  
+  inline def wdDialogFilePageSetup: `178` = 178.asInstanceOf[`178`]
+  
+  inline def wdDialogFilePrint: `88` = 88.asInstanceOf[`88`]
+  
+  inline def wdDialogFilePrintOneCopy: `445` = 445.asInstanceOf[`445`]
+  
+  inline def wdDialogFilePrintSetup: `97` = 97.asInstanceOf[`97`]
+  
+  inline def wdDialogFileRoutingSlip: `624` = 624.asInstanceOf[`624`]
+  
+  inline def wdDialogFileSaveAs: `84` = 84.asInstanceOf[`84`]
+  
+  inline def wdDialogFileSaveVersion: `1007` = 1007.asInstanceOf[`1007`]
+  
+  inline def wdDialogFileSummaryInfo: `86` = 86.asInstanceOf[`86`]
+  
+  inline def wdDialogFileVersions: `945` = 945.asInstanceOf[`945`]
+  
+  inline def wdDialogFitText: `983` = 983.asInstanceOf[`983`]
+  
+  inline def wdDialogFontSubstitution: `581` = 581.asInstanceOf[`581`]
+  
+  inline def wdDialogFormFieldHelp: `361` = 361.asInstanceOf[`361`]
+  
+  inline def wdDialogFormFieldOptions: `353` = 353.asInstanceOf[`353`]
+  
+  inline def wdDialogFormatAddrFonts: `103` = 103.asInstanceOf[`103`]
+  
+  inline def wdDialogFormatBordersAndShading: `189` = 189.asInstanceOf[`189`]
+  
+  inline def wdDialogFormatBulletsAndNumbering: `824` = 824.asInstanceOf[`824`]
+  
+  inline def wdDialogFormatCallout: `610` = 610.asInstanceOf[`610`]
+  
+  inline def wdDialogFormatChangeCase: `322` = 322.asInstanceOf[`322`]
+  
+  inline def wdDialogFormatColumns: `177` = 177.asInstanceOf[`177`]
+  
+  inline def wdDialogFormatDefineStyleBorders: `185` = 185.asInstanceOf[`185`]
+  
+  inline def wdDialogFormatDefineStyleFont: `181` = 181.asInstanceOf[`181`]
+  
+  inline def wdDialogFormatDefineStyleFrame: `184` = 184.asInstanceOf[`184`]
+  
+  inline def wdDialogFormatDefineStyleLang: `186` = 186.asInstanceOf[`186`]
+  
+  inline def wdDialogFormatDefineStylePara: `182` = 182.asInstanceOf[`182`]
+  
+  inline def wdDialogFormatDefineStyleTabs: `183` = 183.asInstanceOf[`183`]
+  
+  inline def wdDialogFormatDrawingObject: `960` = 960.asInstanceOf[`960`]
+  
+  inline def wdDialogFormatDropCap: `488` = 488.asInstanceOf[`488`]
+  
+  inline def wdDialogFormatEncloseCharacters: `1162` = 1162.asInstanceOf[`1162`]
+  
+  inline def wdDialogFormatFont: `174` = 174.asInstanceOf[`174`]
+  
+  inline def wdDialogFormatFrame: `190` = 190.asInstanceOf[`190`]
+  
+  inline def wdDialogFormatPageNumber: `298` = 298.asInstanceOf[`298`]
+  
+  inline def wdDialogFormatParagraph: `175` = 175.asInstanceOf[`175`]
+  
+  inline def wdDialogFormatPicture: `187` = 187.asInstanceOf[`187`]
+  
+  inline def wdDialogFormatRetAddrFonts: `221` = 221.asInstanceOf[`221`]
+  
+  inline def wdDialogFormatSectionLayout: `176` = 176.asInstanceOf[`176`]
+  
+  inline def wdDialogFormatStyle: `180` = 180.asInstanceOf[`180`]
+  
+  inline def wdDialogFormatStyleGallery: `505` = 505.asInstanceOf[`505`]
+  
+  inline def wdDialogFormatStylesCustom: `1248` = 1248.asInstanceOf[`1248`]
+  
+  inline def wdDialogFormatTabs: `179` = 179.asInstanceOf[`179`]
+  
+  inline def wdDialogFormatTheme: `855` = 855.asInstanceOf[`855`]
+  
+  inline def wdDialogFormattingRestrictions: `1427` = 1427.asInstanceOf[`1427`]
+  
+  inline def wdDialogFrameSetProperties: `1074` = 1074.asInstanceOf[`1074`]
+  
+  inline def wdDialogHelpAbout: `9` = 9.asInstanceOf[`9`]
+  
+  inline def wdDialogHelpWordPerfectHelp: `10` = 10.asInstanceOf[`10`]
+  
+  inline def wdDialogHelpWordPerfectHelpOptions: `511` = 511.asInstanceOf[`511`]
+  
+  inline def wdDialogHorizontalInVertical: `1160` = 1160.asInstanceOf[`1160`]
+  
+  inline def wdDialogIMESetDefault: `1094` = 1094.asInstanceOf[`1094`]
+  
+  inline def wdDialogInsertAddCaption: `402` = 402.asInstanceOf[`402`]
+  
+  inline def wdDialogInsertAutoCaption: `359` = 359.asInstanceOf[`359`]
+  
+  inline def wdDialogInsertBookmark: `168` = 168.asInstanceOf[`168`]
+  
+  inline def wdDialogInsertBreak: `159` = 159.asInstanceOf[`159`]
+  
+  inline def wdDialogInsertCaption: `357` = 357.asInstanceOf[`357`]
+  
+  inline def wdDialogInsertCaptionNumbering: `358` = 358.asInstanceOf[`358`]
+  
+  inline def wdDialogInsertCrossReference: `367` = 367.asInstanceOf[`367`]
+  
+  inline def wdDialogInsertDatabase: `341` = 341.asInstanceOf[`341`]
+  
+  inline def wdDialogInsertDateTime: `165` = 165.asInstanceOf[`165`]
+  
+  inline def wdDialogInsertField: `166` = 166.asInstanceOf[`166`]
+  
+  inline def wdDialogInsertFile: `164` = 164.asInstanceOf[`164`]
+  
+  inline def wdDialogInsertFootnote: `370` = 370.asInstanceOf[`370`]
+  
+  inline def wdDialogInsertFormField: `483` = 483.asInstanceOf[`483`]
+  
+  inline def wdDialogInsertHyperlink: `925` = 925.asInstanceOf[`925`]
+  
+  inline def wdDialogInsertIndex: `170` = 170.asInstanceOf[`170`]
+  
+  inline def wdDialogInsertIndexAndTables: `473` = 473.asInstanceOf[`473`]
+  
+  inline def wdDialogInsertMergeField: `167` = 167.asInstanceOf[`167`]
+  
+  inline def wdDialogInsertNumber: `812` = 812.asInstanceOf[`812`]
+  
+  inline def wdDialogInsertObject: `172` = 172.asInstanceOf[`172`]
+  
+  inline def wdDialogInsertPageNumbers: `294` = 294.asInstanceOf[`294`]
+  
+  inline def wdDialogInsertPicture: `163` = 163.asInstanceOf[`163`]
+  
+  inline def wdDialogInsertPlaceholder: `2348` = 2348.asInstanceOf[`2348`]
+  
+  inline def wdDialogInsertSource: `2120` = 2120.asInstanceOf[`2120`]
+  
+  inline def wdDialogInsertSubdocument: `583` = 583.asInstanceOf[`583`]
+  
+  inline def wdDialogInsertSymbol: `162` = 162.asInstanceOf[`162`]
+  
+  inline def wdDialogInsertTableOfAuthorities: `471` = 471.asInstanceOf[`471`]
+  
+  inline def wdDialogInsertTableOfContents: `171` = 171.asInstanceOf[`171`]
+  
+  inline def wdDialogInsertTableOfFigures: `472` = 472.asInstanceOf[`472`]
+  
+  inline def wdDialogInsertWebComponent: `1324` = 1324.asInstanceOf[`1324`]
+  
+  inline def wdDialogLabelOptions: `1367` = 1367.asInstanceOf[`1367`]
+  
+  inline def wdDialogLetterWizard: `821` = 821.asInstanceOf[`821`]
+  
+  inline def wdDialogListCommands: `723` = 723.asInstanceOf[`723`]
+  
+  inline def wdDialogMailMerge: `676` = 676.asInstanceOf[`676`]
+  
+  inline def wdDialogMailMergeCheck: `677` = 677.asInstanceOf[`677`]
+  
+  inline def wdDialogMailMergeCreateDataSource: `642` = 642.asInstanceOf[`642`]
+  
+  inline def wdDialogMailMergeCreateHeaderSource: `643` = 643.asInstanceOf[`643`]
+  
+  inline def wdDialogMailMergeFieldMapping: `1304` = 1304.asInstanceOf[`1304`]
+  
+  inline def wdDialogMailMergeFindRecipient: `1326` = 1326.asInstanceOf[`1326`]
+  
+  inline def wdDialogMailMergeFindRecord: `569` = 569.asInstanceOf[`569`]
+  
+  inline def wdDialogMailMergeHelper: `680` = 680.asInstanceOf[`680`]
+  
+  inline def wdDialogMailMergeInsertAddressBlock: `1305` = 1305.asInstanceOf[`1305`]
+  
+  inline def wdDialogMailMergeInsertAsk: `4047` = 4047.asInstanceOf[`4047`]
+  
+  inline def wdDialogMailMergeInsertFields: `1307` = 1307.asInstanceOf[`1307`]
+  
+  inline def wdDialogMailMergeInsertFillIn: `4048` = 4048.asInstanceOf[`4048`]
+  
+  inline def wdDialogMailMergeInsertGreetingLine: `1306` = 1306.asInstanceOf[`1306`]
+  
+  inline def wdDialogMailMergeInsertIf: `4049` = 4049.asInstanceOf[`4049`]
+  
+  inline def wdDialogMailMergeInsertNextIf: `4053` = 4053.asInstanceOf[`4053`]
+  
+  inline def wdDialogMailMergeInsertSet: `4054` = 4054.asInstanceOf[`4054`]
+  
+  inline def wdDialogMailMergeInsertSkipIf: `4055` = 4055.asInstanceOf[`4055`]
+  
+  inline def wdDialogMailMergeOpenDataSource: `81` = 81.asInstanceOf[`81`]
+  
+  inline def wdDialogMailMergeOpenHeaderSource: `82` = 82.asInstanceOf[`82`]
+  
+  inline def wdDialogMailMergeQueryOptions: `681` = 681.asInstanceOf[`681`]
+  
+  inline def wdDialogMailMergeRecipients: `1308` = 1308.asInstanceOf[`1308`]
+  
+  inline def wdDialogMailMergeSetDocumentType: `1339` = 1339.asInstanceOf[`1339`]
+  
+  inline def wdDialogMailMergeUseAddressBook: `779` = 779.asInstanceOf[`779`]
+  
+  inline def wdDialogMarkCitation: `463` = 463.asInstanceOf[`463`]
+  
+  inline def wdDialogMarkIndexEntry: `169` = 169.asInstanceOf[`169`]
+  
+  inline def wdDialogMarkTableOfContentsEntry: `442` = 442.asInstanceOf[`442`]
+  
+  inline def wdDialogMyPermission: `1437` = 1437.asInstanceOf[`1437`]
+  
+  inline def wdDialogNewToolbar: `586` = 586.asInstanceOf[`586`]
+  
+  inline def wdDialogNoteOptions: `373` = 373.asInstanceOf[`373`]
+  
+  inline def wdDialogOMathRecognizedFunctions: `2165` = 2165.asInstanceOf[`2165`]
+  
+  inline def wdDialogOrganizer: `222` = 222.asInstanceOf[`222`]
+  
+  inline def wdDialogPermission: `1469` = 1469.asInstanceOf[`1469`]
+  
+  inline def wdDialogPhoneticGuide: `986` = 986.asInstanceOf[`986`]
+  
+  inline def wdDialogReviewAfmtRevisions: `570` = 570.asInstanceOf[`570`]
+  
+  inline def wdDialogSchemaLibrary: `1417` = 1417.asInstanceOf[`1417`]
+  
+  inline def wdDialogSearch: `1363` = 1363.asInstanceOf[`1363`]
+  
+  inline def wdDialogShowRepairs: `1381` = 1381.asInstanceOf[`1381`]
+  
+  inline def wdDialogSourceManager: `1920` = 1920.asInstanceOf[`1920`]
+  
+  inline def wdDialogStyleManagement: `1948` = 1948.asInstanceOf[`1948`]
+  
+  inline def wdDialogTCSCTranslator: `1156` = 1156.asInstanceOf[`1156`]
+  
+  inline def wdDialogTableAutoFormat: `563` = 563.asInstanceOf[`563`]
+  
+  inline def wdDialogTableCellOptions: `1081` = 1081.asInstanceOf[`1081`]
+  
+  inline def wdDialogTableColumnWidth: `143` = 143.asInstanceOf[`143`]
+  
+  inline def wdDialogTableDeleteCells: `133` = 133.asInstanceOf[`133`]
+  
+  inline def wdDialogTableFormatCell: `612` = 612.asInstanceOf[`612`]
+  
+  inline def wdDialogTableFormula: `348` = 348.asInstanceOf[`348`]
+  
+  inline def wdDialogTableInsertCells: `130` = 130.asInstanceOf[`130`]
+  
+  inline def wdDialogTableInsertRow: `131` = 131.asInstanceOf[`131`]
+  
+  inline def wdDialogTableInsertTable: `129` = 129.asInstanceOf[`129`]
+  
+  inline def wdDialogTableOfCaptionsOptions: `551` = 551.asInstanceOf[`551`]
+  
+  inline def wdDialogTableOfContentsOptions: `470` = 470.asInstanceOf[`470`]
+  
+  inline def wdDialogTableProperties: `861` = 861.asInstanceOf[`861`]
+  
+  inline def wdDialogTableRowHeight: `142` = 142.asInstanceOf[`142`]
+  
+  inline def wdDialogTableSort: `199` = 199.asInstanceOf[`199`]
+  
+  inline def wdDialogTableSplitCells: `137` = 137.asInstanceOf[`137`]
+  
+  inline def wdDialogTableTableOptions: `1080` = 1080.asInstanceOf[`1080`]
+  
+  inline def wdDialogTableToText: `128` = 128.asInstanceOf[`128`]
+  
+  inline def wdDialogTableWrapping: `854` = 854.asInstanceOf[`854`]
+  
+  inline def wdDialogTextToTable: `127` = 127.asInstanceOf[`127`]
+  
+  inline def wdDialogToolsAcceptRejectChanges: `506` = 506.asInstanceOf[`506`]
+  
+  inline def wdDialogToolsAdvancedSettings: `206` = 206.asInstanceOf[`206`]
+  
+  inline def wdDialogToolsAutoCorrect: `378` = 378.asInstanceOf[`378`]
+  
+  inline def wdDialogToolsAutoCorrectExceptions: `762` = 762.asInstanceOf[`762`]
+  
+  inline def wdDialogToolsAutoManager: `915` = 915.asInstanceOf[`915`]
+  
+  inline def wdDialogToolsAutoSummarize: `874` = 874.asInstanceOf[`874`]
+  
+  inline def wdDialogToolsBulletsNumbers: `196` = 196.asInstanceOf[`196`]
+  
+  inline def wdDialogToolsCompareDocuments: `198` = 198.asInstanceOf[`198`]
+  
+  inline def wdDialogToolsCreateDirectory: `833` = 833.asInstanceOf[`833`]
+  
+  inline def wdDialogToolsCreateEnvelope: `173` = 173.asInstanceOf[`173`]
+  
+  inline def wdDialogToolsCreateLabels: `489` = 489.asInstanceOf[`489`]
+  
+  inline def wdDialogToolsCustomize: `152` = 152.asInstanceOf[`152`]
+  
+  inline def wdDialogToolsCustomizeKeyboard: `432` = 432.asInstanceOf[`432`]
+  
+  inline def wdDialogToolsCustomizeMenuBar: `615` = 615.asInstanceOf[`615`]
+  
+  inline def wdDialogToolsCustomizeMenus: `433` = 433.asInstanceOf[`433`]
+  
+  inline def wdDialogToolsDictionary: `989` = 989.asInstanceOf[`989`]
+  
+  inline def wdDialogToolsEnvelopesAndLabels: `607` = 607.asInstanceOf[`607`]
+  
+  inline def wdDialogToolsGrammarSettings: `885` = 885.asInstanceOf[`885`]
+  
+  inline def wdDialogToolsHangulHanjaConversion: `784` = 784.asInstanceOf[`784`]
+  
+  inline def wdDialogToolsHighlightChanges: `197` = 197.asInstanceOf[`197`]
+  
+  inline def wdDialogToolsHyphenation: `195` = 195.asInstanceOf[`195`]
+  
+  inline def wdDialogToolsLanguage: `188` = 188.asInstanceOf[`188`]
+  
+  inline def wdDialogToolsMacro: `215` = 215.asInstanceOf[`215`]
+  
+  inline def wdDialogToolsMacroRecord: `214` = 214.asInstanceOf[`214`]
+  
+  inline def wdDialogToolsManageFields: `631` = 631.asInstanceOf[`631`]
+  
+  inline def wdDialogToolsMergeDocuments: `435` = 435.asInstanceOf[`435`]
+  
+  inline def wdDialogToolsOptions: `974` = 974.asInstanceOf[`974`]
+  
+  inline def wdDialogToolsOptionsAutoFormat: `959` = 959.asInstanceOf[`959`]
+  
+  inline def wdDialogToolsOptionsAutoFormatAsYouType: `778` = 778.asInstanceOf[`778`]
+  
+  inline def wdDialogToolsOptionsBidi: `1029` = 1029.asInstanceOf[`1029`]
+  
+  inline def wdDialogToolsOptionsCompatibility: `525` = 525.asInstanceOf[`525`]
+  
+  inline def wdDialogToolsOptionsEdit: `224` = 224.asInstanceOf[`224`]
+  
+  inline def wdDialogToolsOptionsEditCopyPaste: `1356` = 1356.asInstanceOf[`1356`]
+  
+  inline def wdDialogToolsOptionsFileLocations: `225` = 225.asInstanceOf[`225`]
+  
+  inline def wdDialogToolsOptionsFuzzy: `790` = 790.asInstanceOf[`790`]
+  
+  inline def wdDialogToolsOptionsGeneral: `203` = 203.asInstanceOf[`203`]
+  
+  inline def wdDialogToolsOptionsPrint: `208` = 208.asInstanceOf[`208`]
+  
+  inline def wdDialogToolsOptionsSave: `209` = 209.asInstanceOf[`209`]
+  
+  inline def wdDialogToolsOptionsSecurity: `1361` = 1361.asInstanceOf[`1361`]
+  
+  inline def wdDialogToolsOptionsSmartTag: `1395` = 1395.asInstanceOf[`1395`]
+  
+  inline def wdDialogToolsOptionsSpellingAndGrammar: `211` = 211.asInstanceOf[`211`]
+  
+  inline def wdDialogToolsOptionsTrackChanges: `386` = 386.asInstanceOf[`386`]
+  
+  inline def wdDialogToolsOptionsTypography: `739` = 739.asInstanceOf[`739`]
+  
+  inline def wdDialogToolsOptionsUserInfo: `213` = 213.asInstanceOf[`213`]
+  
+  inline def wdDialogToolsOptionsView: `204` = 204.asInstanceOf[`204`]
+  
+  inline def wdDialogToolsProtectDocument: `503` = 503.asInstanceOf[`503`]
+  
+  inline def wdDialogToolsProtectSection: `578` = 578.asInstanceOf[`578`]
+  
+  inline def wdDialogToolsRevisions: `197` = 197.asInstanceOf[`197`]
+  
+  inline def wdDialogToolsSpellingAndGrammar: `828` = 828.asInstanceOf[`828`]
+  
+  inline def wdDialogToolsTemplates: `87` = 87.asInstanceOf[`87`]
+  
+  inline def wdDialogToolsThesaurus: `194` = 194.asInstanceOf[`194`]
+  
+  inline def wdDialogToolsUnprotectDocument: `521` = 521.asInstanceOf[`521`]
+  
+  inline def wdDialogToolsWordCount: `228` = 228.asInstanceOf[`228`]
+  
+  inline def wdDialogTwoLinesInOne: `1161` = 1161.asInstanceOf[`1161`]
+  
+  inline def wdDialogUpdateTOC: `331` = 331.asInstanceOf[`331`]
+  
+  inline def wdDialogViewZoom: `577` = 577.asInstanceOf[`577`]
+  
+  inline def wdDialogWebOptions: `898` = 898.asInstanceOf[`898`]
+  
+  inline def wdDialogWindowActivate: `220` = 220.asInstanceOf[`220`]
+  
+  inline def wdDialogXMLElementAttributes: `1460` = 1460.asInstanceOf[`1460`]
+  
+  inline def wdDialogXMLOptions: `1425` = 1425.asInstanceOf[`1425`]
 }
-

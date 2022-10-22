@@ -10,10 +10,10 @@ Use the awesome AmplifyJs v1.1.2 library as a Node.js module.
 | ------------------ | :-------------: |
 | Full name          | amplifier |
 | Keywords           | Amplify, AmplifyJS, request, store, pub/sub |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 37626 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 376.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/robertohuertasm/amplifier)

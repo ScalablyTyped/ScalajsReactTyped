@@ -1,23 +1,38 @@
 package typingsJapgolly.openjscad
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CAGExtrudeOptions extends js.Object {
+trait CAGExtrudeOptions extends StObject {
+  
   var offset: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var twistangle: js.UndefOr[Double] = js.undefined
+  
   var twiststeps: js.UndefOr[Double] = js.undefined
 }
-
 object CAGExtrudeOptions {
-  @scala.inline
-  def apply(offset: js.Array[Double] = null, twistangle: Int | Double = null, twiststeps: Int | Double = null): CAGExtrudeOptions = {
+  
+  inline def apply(): CAGExtrudeOptions = {
     val __obj = js.Dynamic.literal()
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (twistangle != null) __obj.updateDynamic("twistangle")(twistangle.asInstanceOf[js.Any])
-    if (twiststeps != null) __obj.updateDynamic("twiststeps")(twiststeps.asInstanceOf[js.Any])
     __obj.asInstanceOf[CAGExtrudeOptions]
   }
+  
+  extension [Self <: CAGExtrudeOptions](x: Self) {
+    
+    inline def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
+    
+    inline def setTwistangle(value: Double): Self = StObject.set(x, "twistangle", value.asInstanceOf[js.Any])
+    
+    inline def setTwistangleUndefined: Self = StObject.set(x, "twistangle", js.undefined)
+    
+    inline def setTwiststeps(value: Double): Self = StObject.set(x, "twiststeps", value.asInstanceOf[js.Any])
+    
+    inline def setTwiststepsUndefined: Self = StObject.set(x, "twiststeps", js.undefined)
+  }
 }
-

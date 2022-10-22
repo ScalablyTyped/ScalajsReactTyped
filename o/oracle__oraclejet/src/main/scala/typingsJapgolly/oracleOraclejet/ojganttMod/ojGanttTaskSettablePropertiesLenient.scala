@@ -1,8 +1,8 @@
 package typingsJapgolly.oracleOraclejet.ojganttMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.oracleOraclejet.AnonEnd
-import typingsJapgolly.oracleOraclejet.AnonValue
+import typingsJapgolly.oracleOraclejet.anon.End
+import typingsJapgolly.oracleOraclejet.anon.Value
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.auto
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.end
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.innerCenter
@@ -13,65 +13,110 @@ import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.none
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.normal
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.start
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.summary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTaskSettableProperties> */
 trait ojGanttTaskSettablePropertiesLenient
-  extends /* key */ StringDictionary[js.Any] {
-  var baseline: js.UndefOr[AnonEnd] = js.undefined
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
+  var baseline: js.UndefOr[End] = js.undefined
+  
   var borderRadius: js.UndefOr[String] = js.undefined
+  
   var end: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
+  
+  var height: js.UndefOr[Double | Null] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var labelPosition: js.UndefOr[start | innerCenter | innerStart | innerEnd | end | none] = js.undefined
+  
   var labelStyle: js.UndefOr[js.Object] = js.undefined
-  var progress: js.UndefOr[AnonValue] = js.undefined
-  var rowId: js.UndefOr[js.Any] = js.undefined
-  var shortDesc: js.UndefOr[String] = js.undefined
+  
+  var progress: js.UndefOr[Value] = js.undefined
+  
+  var rowId: js.UndefOr[Any] = js.undefined
+  
+  var shortDesc: js.UndefOr[String | Null] = js.undefined
+  
   var start: js.UndefOr[String] = js.undefined
+  
   var svgClassName: js.UndefOr[String] = js.undefined
+  
   var svgStyle: js.UndefOr[js.Object] = js.undefined
+  
   var `type`: js.UndefOr[normal | milestone | summary | auto] = js.undefined
 }
-
 object ojGanttTaskSettablePropertiesLenient {
-  @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    baseline: AnonEnd = null,
-    borderRadius: String = null,
-    end: String = null,
-    height: Int | Double = null,
-    label: String = null,
-    labelPosition: start | innerCenter | innerStart | innerEnd | end | none = null,
-    labelStyle: js.Object = null,
-    progress: AnonValue = null,
-    rowId: js.Any = null,
-    shortDesc: String = null,
-    start: String = null,
-    svgClassName: String = null,
-    svgStyle: js.Object = null,
-    `type`: normal | milestone | summary | auto = null
-  ): ojGanttTaskSettablePropertiesLenient = {
+  
+  inline def apply(): ojGanttTaskSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (rowId != null) __obj.updateDynamic("rowId")(rowId.asInstanceOf[js.Any])
-    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojGanttTaskSettablePropertiesLenient]
   }
+  
+  extension [Self <: ojGanttTaskSettablePropertiesLenient](x: Self) {
+    
+    inline def setBaseline(value: End): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+    
+    inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
+    
+    inline def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelPosition(value: start | innerCenter | innerStart | innerEnd | end | none): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+    
+    inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
+    
+    inline def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setProgress(value: Value): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    
+    inline def setRowId(value: Any): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+    
+    inline def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
+    
+    inline def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
+    
+    inline def setShortDescNull: Self = StObject.set(x, "shortDesc", null)
+    
+    inline def setShortDescUndefined: Self = StObject.set(x, "shortDesc", js.undefined)
+    
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    
+    inline def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
+    
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+    
+    inline def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
+    
+    inline def setType(value: normal | milestone | summary | auto): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.dialogContentTextDialogContentTextMod.DialogContentTextProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.dialogContentTextDialogContentTextMod.DialogContentTextTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.span
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/DialogContentText", JSImport.Namespace)
-@js.native
-object dialogContentTextMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[DialogContentTextProps, ComponentState, js.Any] {
-    def this(props: DialogContentTextProps) = this()
-    def this(props: DialogContentTextProps, context: js.Any) = this()
-  }
+object dialogContentTextMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Dialogs](https://mui.com/components/dialogs/)
+    *
+    * API:
+    *
+    * - [DialogContentText API](https://mui.com/api/dialog-content-text/)
+    * - inherits [Typography API](https://mui.com/api/typography/)
+    */
+  @JSImport("@material-ui/core/DialogContentText", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[DialogContentTextProps]]
+  val default: OverridableComponent[DialogContentTextTypeMap[js.Object, span]] = js.native
   
+  type _To = OverridableComponent[DialogContentTextTypeMap[js.Object, span]]
+  
+  /* This means you don't have to write `default`, but can instead just say `dialogContentTextMod.foo` */
+  override def _to: OverridableComponent[DialogContentTextTypeMap[js.Object, span]] = default
 }
-

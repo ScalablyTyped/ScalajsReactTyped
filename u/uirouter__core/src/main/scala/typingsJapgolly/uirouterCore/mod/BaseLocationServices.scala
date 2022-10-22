@@ -1,13 +1,12 @@
 package typingsJapgolly.uirouterCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core", "BaseLocationServices")
+/* note: abstract class */ @JSImport("@uirouter/core", "BaseLocationServices")
 @js.native
-abstract class BaseLocationServices protected ()
-  extends typingsJapgolly.uirouterCore.vanillaMod.BaseLocationServices {
-  def this(router: typingsJapgolly.uirouterCore.routerMod.UIRouter, fireAfterUpdate: Boolean) = this()
+open class BaseLocationServices protected ()
+  extends typingsJapgolly.uirouterCore.libVanillaMod.BaseLocationServices {
+  def this(router: typingsJapgolly.uirouterCore.libRouterMod.UIRouter, fireAfterUpdate: Boolean) = this()
 }
-

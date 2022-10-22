@@ -1,47 +1,45 @@
 package typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Priority extends js.Object
-
+sealed trait Priority extends StObject
 @JSImport("react-native-firebase", "RNFirebase.notifications.Android.Priority")
 @js.native
-object Priority extends js.Object {
-  @js.native
-  sealed trait Default extends Priority
-  
-  @js.native
-  sealed trait High extends Priority
-  
-  @js.native
-  sealed trait Low extends Priority
-  
-  @js.native
-  sealed trait Max extends Priority
-  
-  @js.native
-  sealed trait Min extends Priority
+object Priority extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Priority with Double] = js.native
-  /* 0 */ @js.native
-  object Default extends TopLevel[Default with Double]
+  def apply(value: Double): js.UndefOr[Priority & Double] = js.native
   
-  /* 1 */ @js.native
-  object High extends TopLevel[High with Double]
+  @js.native
+  sealed trait Default
+    extends StObject
+       with Priority
+  /* 0 */ val Default: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Priority.Default & Double = js.native
   
-  /* -1 */ @js.native
-  object Low extends TopLevel[Low with Double]
+  @js.native
+  sealed trait High
+    extends StObject
+       with Priority
+  /* 1 */ val High: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Priority.High & Double = js.native
   
-  /* 2 */ @js.native
-  object Max extends TopLevel[Max with Double]
+  @js.native
+  sealed trait Low
+    extends StObject
+       with Priority
+  /* -1 */ val Low: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Priority.Low & Double = js.native
   
-  /* -2 */ @js.native
-  object Min extends TopLevel[Min with Double]
+  @js.native
+  sealed trait Max
+    extends StObject
+       with Priority
+  /* 2 */ val Max: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Priority.Max & Double = js.native
   
+  @js.native
+  sealed trait Min
+    extends StObject
+       with Priority
+  /* -2 */ val Min: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Priority.Min & Double = js.native
 }
-

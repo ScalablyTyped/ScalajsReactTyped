@@ -1,26 +1,45 @@
 package typingsJapgolly.blueprintjsCore.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typingsJapgolly.blueprintjsCore.PartialIOverflowListPropsClassName
-import typingsJapgolly.blueprintjsCore.overflowListMod.IOverflowListProps
+import typingsJapgolly.blueprintjsCore.anon.PartialOverflowListPropsa
+import typingsJapgolly.blueprintjsCore.libEsmComponentsOverflowListOverflowListMod.OverflowListProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "OverflowList")
 @js.native
-class OverflowList[T] ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.OverflowList[T]
-
-/* static members */
-@JSImport("@blueprintjs/core", "OverflowList")
-@js.native
-object OverflowList extends js.Object {
-  var defaultProps: PartialIOverflowListPropsClassName = js.native
-  var displayName: String = js.native
-  def ofType[T](): Instantiable1[
-    /* props */ IOverflowListProps[T], 
-    typingsJapgolly.blueprintjsCore.overflowListMod.OverflowList[T]
-  ] = js.native
+open class OverflowList[T] protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.OverflowList[T] {
+  def this(props: OverflowListProps[T]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: OverflowListProps[T], context: Any) = this()
 }
-
+/* static members */
+object OverflowList {
+  
+  @JSImport("@blueprintjs/core", "OverflowList")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "OverflowList.defaultProps")
+  @js.native
+  def defaultProps: PartialOverflowListPropsa = js.native
+  inline def defaultProps_=(x: PartialOverflowListPropsa): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/core", "OverflowList.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  
+  inline def ofType[U](): Instantiable1[
+    /* props */ OverflowListProps[U], 
+    typingsJapgolly.blueprintjsCore.libEsmComponentsOverflowListOverflowListMod.OverflowList[U]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
+    /* props */ OverflowListProps[U], 
+    typingsJapgolly.blueprintjsCore.libEsmComponentsOverflowListOverflowListMod.OverflowList[U]
+  ]]
+}

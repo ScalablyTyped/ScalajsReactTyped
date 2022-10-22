@@ -1,51 +1,41 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EditMode extends js.Object
-
+sealed trait EditMode extends StObject
 @JSGlobal("SP.JsGrid.EditMode")
 @js.native
-object EditMode extends js.Object {
+object EditMode extends StObject {
+  
+  // 3,
   @js.native
-  sealed trait Defer extends EditMode
+  sealed trait Defer
+    extends StObject
+       with EditMode
   
-   // 0,
   @js.native
-  sealed trait ReadOnly extends EditMode
+  sealed trait ReadOnly
+    extends StObject
+       with EditMode
   
-   // 2,
+  // 1,
   @js.native
-  sealed trait ReadOnlyDefer extends EditMode
+  sealed trait ReadOnlyDefer
+    extends StObject
+       with EditMode
   
-   // 1,
+  // 0,
   @js.native
-  sealed trait ReadWrite extends EditMode
+  sealed trait ReadWrite
+    extends StObject
+       with EditMode
   
-   // 3,
+  // 2,
   @js.native
-  sealed trait ReadWriteDefer extends EditMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EditMode with Double] = js.native
-  /* 4 */ @js.native
-  object Defer extends TopLevel[Defer with Double]
-  
-  /* 0 */ @js.native
-  object ReadOnly extends TopLevel[ReadOnly with Double]
-  
-  /* 2 */ @js.native
-  object ReadOnlyDefer extends TopLevel[ReadOnlyDefer with Double]
-  
-  /* 1 */ @js.native
-  object ReadWrite extends TopLevel[ReadWrite with Double]
-  
-  /* 3 */ @js.native
-  object ReadWriteDefer extends TopLevel[ReadWriteDefer with Double]
-  
+  sealed trait ReadWriteDefer
+    extends StObject
+       with EditMode
 }
-

@@ -1,47 +1,118 @@
 package typingsJapgolly.playcanvas.mod
 
-import typingsJapgolly.playcanvas.AnonAtlas
+import typingsJapgolly.playcanvas.anon.Atlas
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @class
-  * @name pc.Sprite
-  * @augments pc.EventHandler
-  * @classdesc A pc.Sprite is contains references to one or more frames of a {@link pc.TextureAtlas}.
-  * It can be used by the {@link pc.SpriteComponent} or the {@link pc.ElementComponent} to render a
-  * single frame or a sprite animation.
-  * @param {pc.GraphicsDevice} device - The graphics device of the application.
-  * @param {object} [options] - Options for creating the pc.Sprite.
-  * @param {number} [options.pixelsPerUnit] - The number of pixels that map to one PlayCanvas unit.
-  * Defaults to 1.
-  * @param {number} [options.renderMode] - The rendering mode of the sprite. Can be:
+  * A Sprite contains references to one or more frames of a {@link TextureAtlas}. It can be used by
+  * the {@link SpriteComponent} or the {@link ElementComponent} to render a single frame or a sprite
+  * animation.
   *
-  * * {@link pc.SPRITE_RENDERMODE_SIMPLE}
-  * * {@link pc.SPRITE_RENDERMODE_SLICED}
-  * * {@link pc.SPRITE_RENDERMODE_TILED}
-  *
-  * Defaults to pc.SPRITE_RENDERMODE_SIMPLE.
-  * @param {pc.TextureAtlas} [options.atlas] - The texture atlas. Defaults to null.
-  * @param {string[]} [options.frameKeys] - The keys of the frames in the sprite atlas that this sprite is
-  * using. Defaults to null.
-  * @property {number} pixelsPerUnit The number of pixels that map to one PlayCanvas unit.
-  * @property {pc.TextureAtlas} atlas The texture atlas.
-  * @property {number} renderMode The rendering mode of the sprite. Can be:
-  *
-  * * {@link pc.SPRITE_RENDERMODE_SIMPLE}
-  * * {@link pc.SPRITE_RENDERMODE_SLICED}
-  * * {@link pc.SPRITE_RENDERMODE_TILED}
-  *
-  * @property {string[]} frameKeys The keys of the frames in the sprite atlas that this sprite is using.
-  * @property {pc.Mesh[]} meshes An array that contains a mesh for each frame.
+  * @augments EventHandler
   */
 @JSImport("playcanvas", "Sprite")
 @js.native
-class Sprite protected ()
-  extends typingsJapgolly.playcanvas.pc.Sprite {
-  def this(device: typingsJapgolly.playcanvas.pc.GraphicsDevice) = this()
-  def this(device: typingsJapgolly.playcanvas.pc.GraphicsDevice, options: AnonAtlas) = this()
+open class Sprite protected () extends EventHandler {
+  /**
+    * Create a new Sprite instance.
+    *
+    * @param {GraphicsDevice} device - The graphics device of the application.
+    * @param {object} [options] - Options for creating the Sprite.
+    * @param {number} [options.pixelsPerUnit] - The number of pixels that map to one PlayCanvas
+    * unit. Defaults to 1.
+    * @param {number} [options.renderMode] - The rendering mode of the sprite. Can be:
+    *
+    * - {@link SPRITE_RENDERMODE_SIMPLE}
+    * - {@link SPRITE_RENDERMODE_SLICED}
+    * - {@link SPRITE_RENDERMODE_TILED}
+    *
+    * Defaults to {@link SPRITE_RENDERMODE_SIMPLE}.
+    * @param {TextureAtlas} [options.atlas] - The texture atlas. Defaults to null.
+    * @param {string[]} [options.frameKeys] - The keys of the frames in the sprite atlas that this
+    * sprite is using. Defaults to null.
+    */
+  def this(device: GraphicsDevice) = this()
+  def this(device: GraphicsDevice, options: Atlas) = this()
+  
+  var _atlas: TextureAtlas = js.native
+  
+  def _create9SliceMesh(): Mesh = js.native
+  
+  def _createMeshes(): Unit = js.native
+  
+  def _createSimpleMesh(frame: Any): Mesh = js.native
+  
+  var _device: GraphicsDevice = js.native
+  
+  var _frameKeys: js.Array[String] = js.native
+  
+  var _meshes: js.Array[Any] = js.native
+  
+  var _meshesDirty: Boolean = js.native
+  
+  def _onFrameChanged(frameKey: Any, frame: Any): Unit = js.native
+  
+  def _onFrameRemoved(frameKey: Any): Unit = js.native
+  
+  def _onSetFrames(frames: Any): Unit = js.native
+  
+  var _pixelsPerUnit: Double = js.native
+  
+  var _renderMode: Double = js.native
+  
+  var _updatingProperties: Boolean = js.native
+  
+  def atlas: TextureAtlas = js.native
+  /**
+    * The texture atlas.
+    *
+    * @type {TextureAtlas}
+    */
+  def atlas_=(arg: TextureAtlas): Unit = js.native
+  
+  /**
+    * Free up the meshes created by the sprite.
+    */
+  def destroy(): Unit = js.native
+  
+  def endUpdate(): Unit = js.native
+  
+  def frameKeys: js.Array[String] = js.native
+  /**
+    * The keys of the frames in the sprite atlas that this sprite is using.
+    *
+    * @type {string[]}
+    */
+  def frameKeys_=(arg: js.Array[String]): Unit = js.native
+  
+  /**
+    * An array that contains a mesh for each frame.
+    *
+    * @type {Mesh[]}
+    */
+  def meshes: js.Array[Mesh] = js.native
+  
+  def pixelsPerUnit: Double = js.native
+  /**
+    * The number of pixels that map to one PlayCanvas unit.
+    *
+    * @type {number}
+    */
+  def pixelsPerUnit_=(arg: Double): Unit = js.native
+  
+  def renderMode: Double = js.native
+  /**
+    * The rendering mode of the sprite. Can be:
+    *
+    * - {@link SPRITE_RENDERMODE_SIMPLE}
+    * - {@link SPRITE_RENDERMODE_SLICED}
+    * - {@link SPRITE_RENDERMODE_TILED}
+    *
+    * @type {number}
+    */
+  def renderMode_=(arg: Double): Unit = js.native
+  
+  def startUpdate(): Unit = js.native
 }
-

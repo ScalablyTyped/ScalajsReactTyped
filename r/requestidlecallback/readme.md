@@ -10,10 +10,10 @@ A polyfill for the requestIdleCallback.
 | ------------------ | :-------------: |
 | Full name          | requestidlecallback |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 10 |
-| # downloads        | 1589486 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 901650.6666666666 |
+| # stars            | 162.0 |
 
 ## Links
 - [Homepage](https://github.com/aFarkas/requestIdleCallback#readme)

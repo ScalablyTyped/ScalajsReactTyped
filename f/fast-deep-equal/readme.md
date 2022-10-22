@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-deep-equal
 
-Typings are for version 2.0.1
+Typings are for version 3.1.3
 
 ## Library description:
 Fast deep equal
@@ -10,10 +10,10 @@ Fast deep equal
 | ------------------ | :-------------: |
 | Full name          | fast-deep-equal |
 | Keywords           | fast, equal, deep-equal |
-| # releases         | 11 |
-| # dependents       | 441 |
-| # downloads        | 751652866 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5671699566666666E8 |
+| # stars            | 1536.0 |
 
 ## Links
 - [Homepage](https://github.com/epoberezkin/fast-deep-equal#readme)

@@ -1,10 +1,7 @@
 package typingsJapgolly.sharepoint.CUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("CUI.RibbonCommand")
-@js.native
-class RibbonCommand () extends js.Object
-
+trait RibbonCommand extends StObject

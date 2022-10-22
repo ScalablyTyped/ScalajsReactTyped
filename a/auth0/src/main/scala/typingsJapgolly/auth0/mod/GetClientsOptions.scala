@@ -1,42 +1,70 @@
 package typingsJapgolly.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetClientsOptions extends js.Object {
+trait GetClientsOptions extends StObject {
+  
   var app_type: js.UndefOr[js.Array[ClientAppType]] = js.undefined
+  
   var fields: js.UndefOr[js.Array[String]] = js.undefined
+  
   var include_fields: js.UndefOr[Boolean] = js.undefined
+  
   var include_totals: js.UndefOr[Boolean] = js.undefined
+  
   var is_first_party: js.UndefOr[Boolean] = js.undefined
+  
   var is_global: js.UndefOr[Boolean] = js.undefined
+  
   var page: js.UndefOr[Double] = js.undefined
+  
   var per_page: js.UndefOr[Double] = js.undefined
 }
-
 object GetClientsOptions {
-  @scala.inline
-  def apply(
-    app_type: js.Array[ClientAppType] = null,
-    fields: js.Array[String] = null,
-    include_fields: js.UndefOr[Boolean] = js.undefined,
-    include_totals: js.UndefOr[Boolean] = js.undefined,
-    is_first_party: js.UndefOr[Boolean] = js.undefined,
-    is_global: js.UndefOr[Boolean] = js.undefined,
-    page: Int | Double = null,
-    per_page: Int | Double = null
-  ): GetClientsOptions = {
+  
+  inline def apply(): GetClientsOptions = {
     val __obj = js.Dynamic.literal()
-    if (app_type != null) __obj.updateDynamic("app_type")(app_type.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_fields)) __obj.updateDynamic("include_fields")(include_fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_totals)) __obj.updateDynamic("include_totals")(include_totals.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_first_party)) __obj.updateDynamic("is_first_party")(is_first_party.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_global)) __obj.updateDynamic("is_global")(is_global.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClientsOptions]
   }
+  
+  extension [Self <: GetClientsOptions](x: Self) {
+    
+    inline def setApp_type(value: js.Array[ClientAppType]): Self = StObject.set(x, "app_type", value.asInstanceOf[js.Any])
+    
+    inline def setApp_typeUndefined: Self = StObject.set(x, "app_type", js.undefined)
+    
+    inline def setApp_typeVarargs(value: ClientAppType*): Self = StObject.set(x, "app_type", js.Array(value*))
+    
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setInclude_fields(value: Boolean): Self = StObject.set(x, "include_fields", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_fieldsUndefined: Self = StObject.set(x, "include_fields", js.undefined)
+    
+    inline def setInclude_totals(value: Boolean): Self = StObject.set(x, "include_totals", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_totalsUndefined: Self = StObject.set(x, "include_totals", js.undefined)
+    
+    inline def setIs_first_party(value: Boolean): Self = StObject.set(x, "is_first_party", value.asInstanceOf[js.Any])
+    
+    inline def setIs_first_partyUndefined: Self = StObject.set(x, "is_first_party", js.undefined)
+    
+    inline def setIs_global(value: Boolean): Self = StObject.set(x, "is_global", value.asInstanceOf[js.Any])
+    
+    inline def setIs_globalUndefined: Self = StObject.set(x, "is_global", js.undefined)
+    
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+  }
 }
-

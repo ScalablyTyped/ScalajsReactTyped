@@ -1,35 +1,42 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CullFace extends js.Object
-
+sealed trait CullFace extends StObject
 @JSImport("cesium", "CullFace")
 @js.native
-object CullFace extends js.Object {
-  @js.native
-  sealed trait BACK extends CullFace
-  
-  @js.native
-  sealed trait FRONT extends CullFace
-  
-  @js.native
-  sealed trait FRONT_AND_BACK extends CullFace
+object CullFace extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CullFace with Double] = js.native
-  /* 1 */ @js.native
-  object BACK extends TopLevel[BACK with Double]
+  def apply(value: scala.Nothing): js.UndefOr[CullFace & scala.Nothing] = js.native
   
-  /* 0 */ @js.native
-  object FRONT extends TopLevel[FRONT with Double]
+  /**
+    * Back-facing triangles are culled.
+    */
+  @js.native
+  sealed trait BACK
+    extends StObject
+       with CullFace
+  /* WebGLConstants.BACK */ val BACK: typingsJapgolly.cesium.mod.CullFace.BACK & scala.Nothing = js.native
   
-  /* 2 */ @js.native
-  object FRONT_AND_BACK extends TopLevel[FRONT_AND_BACK with Double]
+  /**
+    * Front-facing triangles are culled.
+    */
+  @js.native
+  sealed trait FRONT
+    extends StObject
+       with CullFace
+  /* WebGLConstants.FRONT */ val FRONT: typingsJapgolly.cesium.mod.CullFace.FRONT & scala.Nothing = js.native
   
+  /**
+    * Both front-facing and back-facing triangles are culled.
+    */
+  @js.native
+  sealed trait FRONT_AND_BACK
+    extends StObject
+       with CullFace
+  /* WebGLConstants.FRONT_AND_BACK */ val FRONT_AND_BACK: typingsJapgolly.cesium.mod.CullFace.FRONT_AND_BACK & scala.Nothing = js.native
 }
-

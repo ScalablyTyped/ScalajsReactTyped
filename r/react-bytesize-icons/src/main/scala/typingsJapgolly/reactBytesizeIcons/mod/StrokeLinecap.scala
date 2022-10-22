@@ -1,8 +1,8 @@
 package typingsJapgolly.reactBytesizeIcons.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.round
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.square
   - typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.inherit
 */
-trait StrokeLinecap extends js.Object
-
+trait StrokeLinecap extends StObject
 object StrokeLinecap {
-  @scala.inline
-  def butt: typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.butt = this.cast("butt")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def inherit: typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.inherit = this.cast("inherit")
-  @scala.inline
-  def round: typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.round = this.cast("round")
-  @scala.inline
-  def square: typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.square = this.cast("square")
+  
+  inline def butt: typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.butt = "butt".asInstanceOf[typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.butt]
+  
+  inline def inherit: typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.inherit = "inherit".asInstanceOf[typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.inherit]
+  
+  inline def round: typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.round = "round".asInstanceOf[typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.round]
+  
+  inline def square: typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.square = "square".asInstanceOf[typingsJapgolly.reactBytesizeIcons.reactBytesizeIconsStrings.square]
 }
-

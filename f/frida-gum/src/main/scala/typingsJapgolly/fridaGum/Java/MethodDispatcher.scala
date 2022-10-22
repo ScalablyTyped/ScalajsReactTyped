@@ -1,21 +1,24 @@
 package typingsJapgolly.fridaGum.Java
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MethodDispatcher extends Method {
-  /**
-    * Available overloads.
-    */
-  var overloads: js.Array[Method] = js.native
+trait MethodDispatcher[Holder /* <: Members[Holder] */]
+  extends StObject
+     with Method[Holder] {
+  
   /**
     * Obtains a specific overload.
     *
     * @param args Signature of the overload to obtain.
     *             For example: `"java.lang.String", "int"`.
     */
-  def overload(args: String*): Method = js.native
+  def overload(args: String*): Method[Holder] = js.native
+  
+  /**
+    * Available overloads.
+    */
+  var overloads: js.Array[Method[Holder]] = js.native
 }
-

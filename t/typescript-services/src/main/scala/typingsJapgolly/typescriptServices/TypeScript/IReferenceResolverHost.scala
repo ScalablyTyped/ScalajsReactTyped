@@ -1,34 +1,44 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IReferenceResolverHost extends js.Object {
+trait IReferenceResolverHost extends StObject {
+  
   def directoryExists(path: String): Boolean
+  
   def fileExists(path: String): Boolean
+  
   def getParentDirectory(path: String): String
+  
   def getScriptSnapshot(fileName: String): IScriptSnapshot
+  
   def resolveRelativePath(path: String, directory: String): String
 }
-
 object IReferenceResolverHost {
-  @scala.inline
-  def apply(
-    directoryExists: String => CallbackTo[Boolean],
-    fileExists: String => CallbackTo[Boolean],
-    getParentDirectory: String => CallbackTo[String],
-    getScriptSnapshot: String => CallbackTo[IScriptSnapshot],
-    resolveRelativePath: (String, String) => CallbackTo[String]
+  
+  inline def apply(
+    directoryExists: String => Boolean,
+    fileExists: String => Boolean,
+    getParentDirectory: String => String,
+    getScriptSnapshot: String => IScriptSnapshot,
+    resolveRelativePath: (String, String) => String
   ): IReferenceResolverHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directoryExists")(js.Any.fromFunction1((t0: java.lang.String) => directoryExists(t0).runNow()))
-    __obj.updateDynamic("fileExists")(js.Any.fromFunction1((t0: java.lang.String) => fileExists(t0).runNow()))
-    __obj.updateDynamic("getParentDirectory")(js.Any.fromFunction1((t0: java.lang.String) => getParentDirectory(t0).runNow()))
-    __obj.updateDynamic("getScriptSnapshot")(js.Any.fromFunction1((t0: java.lang.String) => getScriptSnapshot(t0).runNow()))
-    __obj.updateDynamic("resolveRelativePath")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => resolveRelativePath(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(directoryExists = js.Any.fromFunction1(directoryExists), fileExists = js.Any.fromFunction1(fileExists), getParentDirectory = js.Any.fromFunction1(getParentDirectory), getScriptSnapshot = js.Any.fromFunction1(getScriptSnapshot), resolveRelativePath = js.Any.fromFunction2(resolveRelativePath))
     __obj.asInstanceOf[IReferenceResolverHost]
   }
+  
+  extension [Self <: IReferenceResolverHost](x: Self) {
+    
+    inline def setDirectoryExists(value: String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
+    
+    inline def setFileExists(value: String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
+    
+    inline def setGetParentDirectory(value: String => String): Self = StObject.set(x, "getParentDirectory", js.Any.fromFunction1(value))
+    
+    inline def setGetScriptSnapshot(value: String => IScriptSnapshot): Self = StObject.set(x, "getScriptSnapshot", js.Any.fromFunction1(value))
+    
+    inline def setResolveRelativePath(value: (String, String) => String): Self = StObject.set(x, "resolveRelativePath", js.Any.fromFunction2(value))
+  }
 }
-

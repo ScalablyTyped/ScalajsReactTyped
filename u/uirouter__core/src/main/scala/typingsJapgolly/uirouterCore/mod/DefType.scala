@@ -1,17 +1,19 @@
 package typingsJapgolly.uirouterCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @internalapi */
 @JSImport("@uirouter/core", "DefType")
 @js.native
-object DefType extends js.Object {
-  /* 2 */ val CONFIG: typingsJapgolly.uirouterCore.paramMod.DefType.CONFIG with Double = js.native
-  /* 0 */ val PATH: typingsJapgolly.uirouterCore.paramMod.DefType.PATH with Double = js.native
-  /* 1 */ val SEARCH: typingsJapgolly.uirouterCore.paramMod.DefType.SEARCH with Double = js.native
+object DefType extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.uirouterCore.paramMod.DefType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typingsJapgolly.uirouterCore.libParamsParamMod.DefType & Double] = js.native
+  
+  /* 2 */ val CONFIG: typingsJapgolly.uirouterCore.libParamsParamMod.DefType.CONFIG & Double = js.native
+  
+  /* 0 */ val PATH: typingsJapgolly.uirouterCore.libParamsParamMod.DefType.PATH & Double = js.native
+  
+  /* 1 */ val SEARCH: typingsJapgolly.uirouterCore.libParamsParamMod.DefType.SEARCH & Double = js.native
 }
-

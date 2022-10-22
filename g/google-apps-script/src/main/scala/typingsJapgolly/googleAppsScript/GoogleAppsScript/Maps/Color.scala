@@ -1,80 +1,65 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Maps
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Color extends js.Object
-
+sealed trait Color extends StObject
 /**
   * An enum representing the named colors available to use in map images.
   */
 @JSGlobal("GoogleAppsScript.Maps.Color")
 @js.native
-object Color extends js.Object {
-  @js.native
-  sealed trait BLACK extends Color
+object Color extends StObject {
   
   @js.native
-  sealed trait BLUE extends Color
+  sealed trait BLACK
+    extends StObject
+       with Color
   
   @js.native
-  sealed trait BROWN extends Color
+  sealed trait BLUE
+    extends StObject
+       with Color
   
   @js.native
-  sealed trait GRAY extends Color
+  sealed trait BROWN
+    extends StObject
+       with Color
   
   @js.native
-  sealed trait GREEN extends Color
+  sealed trait GRAY
+    extends StObject
+       with Color
   
   @js.native
-  sealed trait ORANGE extends Color
+  sealed trait GREEN
+    extends StObject
+       with Color
   
   @js.native
-  sealed trait PURPLE extends Color
+  sealed trait ORANGE
+    extends StObject
+       with Color
   
   @js.native
-  sealed trait RED extends Color
+  sealed trait PURPLE
+    extends StObject
+       with Color
   
   @js.native
-  sealed trait WHITE extends Color
+  sealed trait RED
+    extends StObject
+       with Color
   
   @js.native
-  sealed trait YELLOW extends Color
+  sealed trait WHITE
+    extends StObject
+       with Color
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Color with Double] = js.native
-  /* 0 */ @js.native
-  object BLACK extends TopLevel[BLACK with Double]
-  
-  /* 5 */ @js.native
-  object BLUE extends TopLevel[BLUE with Double]
-  
-  /* 1 */ @js.native
-  object BROWN extends TopLevel[BROWN with Double]
-  
-  /* 6 */ @js.native
-  object GRAY extends TopLevel[GRAY with Double]
-  
-  /* 2 */ @js.native
-  object GREEN extends TopLevel[GREEN with Double]
-  
-  /* 7 */ @js.native
-  object ORANGE extends TopLevel[ORANGE with Double]
-  
-  /* 3 */ @js.native
-  object PURPLE extends TopLevel[PURPLE with Double]
-  
-  /* 8 */ @js.native
-  object RED extends TopLevel[RED with Double]
-  
-  /* 9 */ @js.native
-  object WHITE extends TopLevel[WHITE with Double]
-  
-  /* 4 */ @js.native
-  object YELLOW extends TopLevel[YELLOW with Double]
-  
+  @js.native
+  sealed trait YELLOW
+    extends StObject
+       with Color
 }
-

@@ -1,53 +1,64 @@
 package typingsJapgolly.pino.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides functions for generating the timestamp property in the log output. You can set the `timestamp` option during
-  * initialization to one of these functions to adjust the output format. Alternatively, you can specify your own time function.
-  * A time function must synchronously return a string that would be a valid component of a JSON string. For example,
-  * the default function returns a string like `,"time":1493426328206`.
-  */
-@JSImport("pino", "stdTimeFunctions")
-@js.native
-object stdTimeFunctions extends js.Object {
+object stdTimeFunctions {
+  
+  @JSImport("pino", "stdTimeFunctions")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * The default time function for Pino. Returns a string like `,"time":1493426328206`.
     */
-  @JSName("epochTime")
-  var epochTime_Original: TimeFn = js.native
-  /*
-    * Returns ISO 8601-formatted time in UTC
-    */
-  @JSName("isoTime")
-  var isoTime_Original: TimeFn = js.native
-  /**
-    * Returns an empty string. This function is used when the `timestamp` option is set to `false`.
-    */
-  @JSName("nullTime")
-  var nullTime_Original: TimeFn = js.native
-  /*
-    * Returns the seconds since Unix epoch
-    */
-  @JSName("unixTime")
-  var unixTime_Original: TimeFn = js.native
+  inline def epochTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("epochTime")().asInstanceOf[String]
   /**
     * The default time function for Pino. Returns a string like `,"time":1493426328206`.
     */
-  def epochTime(): String = js.native
+  @JSImport("pino", "stdTimeFunctions.epochTime")
+  @js.native
+  def epochTime_FstdTimeFunctions: TimeFn = js.native
+  
+  inline def epochTime_FstdTimeFunctions_=(x: TimeFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("epochTime")(x.asInstanceOf[js.Any])
+  
   /*
     * Returns ISO 8601-formatted time in UTC
     */
-  def isoTime(): String = js.native
+  inline def isoTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isoTime")().asInstanceOf[String]
+  /*
+    * Returns ISO 8601-formatted time in UTC
+    */
+  @JSImport("pino", "stdTimeFunctions.isoTime")
+  @js.native
+  def isoTime_FstdTimeFunctions: TimeFn = js.native
+  
+  inline def isoTime_FstdTimeFunctions_=(x: TimeFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isoTime")(x.asInstanceOf[js.Any])
+  
   /**
     * Returns an empty string. This function is used when the `timestamp` option is set to `false`.
     */
-  def nullTime(): String = js.native
+  inline def nullTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nullTime")().asInstanceOf[String]
+  /**
+    * Returns an empty string. This function is used when the `timestamp` option is set to `false`.
+    */
+  @JSImport("pino", "stdTimeFunctions.nullTime")
+  @js.native
+  def nullTime_FstdTimeFunctions: TimeFn = js.native
+  
+  inline def nullTime_FstdTimeFunctions_=(x: TimeFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nullTime")(x.asInstanceOf[js.Any])
+  
   /*
     * Returns the seconds since Unix epoch
     */
-  def unixTime(): String = js.native
+  inline def unixTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unixTime")().asInstanceOf[String]
+  /*
+    * Returns the seconds since Unix epoch
+    */
+  @JSImport("pino", "stdTimeFunctions.unixTime")
+  @js.native
+  def unixTime_FstdTimeFunctions: TimeFn = js.native
+  
+  inline def unixTime_FstdTimeFunctions_=(x: TimeFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unixTime")(x.asInstanceOf[js.Any])
 }
-

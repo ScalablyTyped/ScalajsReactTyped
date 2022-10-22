@@ -1,42 +1,68 @@
 package typingsJapgolly.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HeatmapPaint extends js.Object {
+trait HeatmapPaint
+  extends StObject
+     with AnyPaint {
+  
   var `heatmap-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
+  
   var `heatmap-intensity`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `heatmap-intensity-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `heatmap-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `heatmap-opacity-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `heatmap-radius`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `heatmap-radius-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `heatmap-weight`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
 }
-
 object HeatmapPaint {
-  @scala.inline
-  def apply(
-    `heatmap-color`: String | StyleFunction | Expression = null,
-    `heatmap-intensity`: Double | StyleFunction | Expression = null,
-    `heatmap-intensity-transition`: Transition = null,
-    `heatmap-opacity`: Double | StyleFunction | Expression = null,
-    `heatmap-opacity-transition`: Transition = null,
-    `heatmap-radius`: Double | StyleFunction | Expression = null,
-    `heatmap-radius-transition`: Transition = null,
-    `heatmap-weight`: Double | StyleFunction | Expression = null
-  ): HeatmapPaint = {
+  
+  inline def apply(): HeatmapPaint = {
     val __obj = js.Dynamic.literal()
-    if (`heatmap-color` != null) __obj.updateDynamic("heatmap-color")(`heatmap-color`.asInstanceOf[js.Any])
-    if (`heatmap-intensity` != null) __obj.updateDynamic("heatmap-intensity")(`heatmap-intensity`.asInstanceOf[js.Any])
-    if (`heatmap-intensity-transition` != null) __obj.updateDynamic("heatmap-intensity-transition")(`heatmap-intensity-transition`.asInstanceOf[js.Any])
-    if (`heatmap-opacity` != null) __obj.updateDynamic("heatmap-opacity")(`heatmap-opacity`.asInstanceOf[js.Any])
-    if (`heatmap-opacity-transition` != null) __obj.updateDynamic("heatmap-opacity-transition")(`heatmap-opacity-transition`.asInstanceOf[js.Any])
-    if (`heatmap-radius` != null) __obj.updateDynamic("heatmap-radius")(`heatmap-radius`.asInstanceOf[js.Any])
-    if (`heatmap-radius-transition` != null) __obj.updateDynamic("heatmap-radius-transition")(`heatmap-radius-transition`.asInstanceOf[js.Any])
-    if (`heatmap-weight` != null) __obj.updateDynamic("heatmap-weight")(`heatmap-weight`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatmapPaint]
   }
+  
+  extension [Self <: HeatmapPaint](x: Self) {
+    
+    inline def `setHeatmap-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "heatmap-color", value.asInstanceOf[js.Any])
+    
+    inline def `setHeatmap-colorUndefined`: Self = StObject.set(x, "heatmap-color", js.undefined)
+    
+    inline def `setHeatmap-intensity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "heatmap-intensity", value.asInstanceOf[js.Any])
+    
+    inline def `setHeatmap-intensity-transition`(value: Transition): Self = StObject.set(x, "heatmap-intensity-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setHeatmap-intensity-transitionUndefined`: Self = StObject.set(x, "heatmap-intensity-transition", js.undefined)
+    
+    inline def `setHeatmap-intensityUndefined`: Self = StObject.set(x, "heatmap-intensity", js.undefined)
+    
+    inline def `setHeatmap-opacity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "heatmap-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setHeatmap-opacity-transition`(value: Transition): Self = StObject.set(x, "heatmap-opacity-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setHeatmap-opacity-transitionUndefined`: Self = StObject.set(x, "heatmap-opacity-transition", js.undefined)
+    
+    inline def `setHeatmap-opacityUndefined`: Self = StObject.set(x, "heatmap-opacity", js.undefined)
+    
+    inline def `setHeatmap-radius`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "heatmap-radius", value.asInstanceOf[js.Any])
+    
+    inline def `setHeatmap-radius-transition`(value: Transition): Self = StObject.set(x, "heatmap-radius-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setHeatmap-radius-transitionUndefined`: Self = StObject.set(x, "heatmap-radius-transition", js.undefined)
+    
+    inline def `setHeatmap-radiusUndefined`: Self = StObject.set(x, "heatmap-radius", js.undefined)
+    
+    inline def `setHeatmap-weight`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "heatmap-weight", value.asInstanceOf[js.Any])
+    
+    inline def `setHeatmap-weightUndefined`: Self = StObject.set(x, "heatmap-weight", js.undefined)
+  }
 }
-

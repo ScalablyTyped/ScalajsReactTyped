@@ -1,28 +1,30 @@
 package typingsJapgolly.sourceMap.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RawIndexMap extends StartOfSourceMap {
+trait RawIndexMap
+  extends StObject
+     with StartOfSourceMap {
+  
   var sections: js.Array[RawSection]
+  
   var version: Double
 }
-
 object RawIndexMap {
-  @scala.inline
-  def apply(
-    sections: js.Array[RawSection],
-    version: Double,
-    file: String = null,
-    skipValidation: js.UndefOr[Boolean] = js.undefined,
-    sourceRoot: String = null
-  ): RawIndexMap = {
+  
+  inline def apply(sections: js.Array[RawSection], version: Double): RawIndexMap = {
     val __obj = js.Dynamic.literal(sections = sections.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation.asInstanceOf[js.Any])
-    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawIndexMap]
   }
+  
+  extension [Self <: RawIndexMap](x: Self) {
+    
+    inline def setSections(value: js.Array[RawSection]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    
+    inline def setSectionsVarargs(value: RawSection*): Self = StObject.set(x, "sections", js.Array(value*))
+    
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+  }
 }
-

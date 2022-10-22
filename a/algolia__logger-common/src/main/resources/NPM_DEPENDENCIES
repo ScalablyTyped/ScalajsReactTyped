@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@algolia/logger-common" : "4.14.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@algolia/logger-common" : "4.14.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

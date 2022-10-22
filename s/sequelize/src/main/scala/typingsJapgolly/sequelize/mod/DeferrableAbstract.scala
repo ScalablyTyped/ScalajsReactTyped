@@ -1,9 +1,9 @@
 package typingsJapgolly.sequelize.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 //  Deferrable
@@ -15,16 +15,19 @@ import scala.scalajs.js.annotation._
   * Abstract Deferrable interface. Use this if you want to create an interface that has a value any of the
   * Deferrables that Sequelize supports.
   */
-trait DeferrableAbstract extends js.Object {
+trait DeferrableAbstract extends StObject {
+  
   def toSql(): String
 }
-
 object DeferrableAbstract {
-  @scala.inline
-  def apply(toSql: CallbackTo[String]): DeferrableAbstract = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toSql")(toSql.toJsFn)
+  
+  inline def apply(toSql: CallbackTo[String]): DeferrableAbstract = {
+    val __obj = js.Dynamic.literal(toSql = toSql.toJsFn)
     __obj.asInstanceOf[DeferrableAbstract]
   }
+  
+  extension [Self <: DeferrableAbstract](x: Self) {
+    
+    inline def setToSql(value: CallbackTo[String]): Self = StObject.set(x, "toSql", value.toJsFn)
+  }
 }
-

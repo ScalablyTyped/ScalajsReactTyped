@@ -1,15 +1,30 @@
 package typingsJapgolly.kolite
 
-import typingsJapgolly.knockout.KnockoutObservable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KoliteAsyncCommand extends KoliteCommand {
-  @JSName("isExecuting")
-  var isExecuting_Original: KnockoutObservable[Boolean] = js.native
-  def isExecuting(): Boolean = js.native
-  def isExecuting(value: Boolean): Unit = js.native
+trait KoliteAsyncCommand
+  extends StObject
+     with KoliteCommand {
+  
+  var isExecuting: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any
 }
-
+object KoliteAsyncCommand {
+  
+  inline def apply(
+    canExecute: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ Any,
+    execute: /* repeated */ Any => Any,
+    isExecuting: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any
+  ): KoliteAsyncCommand = {
+    val __obj = js.Dynamic.literal(canExecute = canExecute.asInstanceOf[js.Any], execute = js.Any.fromFunction1(execute), isExecuting = isExecuting.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KoliteAsyncCommand]
+  }
+  
+  extension [Self <: KoliteAsyncCommand](x: Self) {
+    
+    inline def setIsExecuting(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any
+    ): Self = StObject.set(x, "isExecuting", value.asInstanceOf[js.Any])
+  }
+}

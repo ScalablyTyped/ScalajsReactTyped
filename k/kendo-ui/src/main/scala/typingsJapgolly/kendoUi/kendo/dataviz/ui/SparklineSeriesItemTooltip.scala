@@ -1,42 +1,66 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SparklineSeriesItemTooltip extends js.Object {
+trait SparklineSeriesItemTooltip extends StObject {
+  
   var background: js.UndefOr[String] = js.undefined
+  
   var border: js.UndefOr[SparklineSeriesItemTooltipBorder] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var font: js.UndefOr[String] = js.undefined
+  
   var format: js.UndefOr[String] = js.undefined
-  var padding: js.UndefOr[Double | js.Any] = js.undefined
+  
+  var padding: js.UndefOr[Double | Any] = js.undefined
+  
   var template: js.UndefOr[String | js.Function] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object SparklineSeriesItemTooltip {
-  @scala.inline
-  def apply(
-    background: String = null,
-    border: SparklineSeriesItemTooltipBorder = null,
-    color: String = null,
-    font: String = null,
-    format: String = null,
-    padding: Double | js.Any = null,
-    template: String | js.Function = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): SparklineSeriesItemTooltip = {
+  
+  inline def apply(): SparklineSeriesItemTooltip = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineSeriesItemTooltip]
   }
+  
+  extension [Self <: SparklineSeriesItemTooltip](x: Self) {
+    
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setBorder(value: SparklineSeriesItemTooltipBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setPadding(value: Double | Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

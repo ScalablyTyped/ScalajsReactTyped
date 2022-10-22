@@ -1,92 +1,75 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Contacts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ExtendedField extends js.Object
-
+sealed trait ExtendedField extends StObject
 /**
   * An enum for extended contacts fields.
   */
 @JSGlobal("GoogleAppsScript.Contacts.ExtendedField")
 @js.native
-object ExtendedField extends js.Object {
-  @js.native
-  sealed trait BILLING_INFORMATION extends ExtendedField
+object ExtendedField extends StObject {
   
   @js.native
-  sealed trait DIRECTORY_SERVER extends ExtendedField
+  sealed trait BILLING_INFORMATION
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait GENDER extends ExtendedField
+  sealed trait DIRECTORY_SERVER
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait HOBBY extends ExtendedField
+  sealed trait GENDER
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait HOME extends ExtendedField
+  sealed trait HOBBY
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait LANGUAGE extends ExtendedField
+  sealed trait HOME
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait MILEAGE extends ExtendedField
+  sealed trait LANGUAGE
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait OTHER extends ExtendedField
+  sealed trait MILEAGE
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait PRIORITY extends ExtendedField
+  sealed trait OTHER
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait SENSITIVITY extends ExtendedField
+  sealed trait PRIORITY
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait USER extends ExtendedField
+  sealed trait SENSITIVITY
+    extends StObject
+       with ExtendedField
   
   @js.native
-  sealed trait WORK extends ExtendedField
+  sealed trait USER
+    extends StObject
+       with ExtendedField
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ExtendedField with Double] = js.native
-  /* 4 */ @js.native
-  object BILLING_INFORMATION extends TopLevel[BILLING_INFORMATION with Double]
-  
-  /* 5 */ @js.native
-  object DIRECTORY_SERVER extends TopLevel[DIRECTORY_SERVER with Double]
-  
-  /* 3 */ @js.native
-  object GENDER extends TopLevel[GENDER with Double]
-  
-  /* 0 */ @js.native
-  object HOBBY extends TopLevel[HOBBY with Double]
-  
-  /* 8 */ @js.native
-  object HOME extends TopLevel[HOME with Double]
-  
-  /* 2 */ @js.native
-  object LANGUAGE extends TopLevel[LANGUAGE with Double]
-  
-  /* 1 */ @js.native
-  object MILEAGE extends TopLevel[MILEAGE with Double]
-  
-  /* 11 */ @js.native
-  object OTHER extends TopLevel[OTHER with Double]
-  
-  /* 7 */ @js.native
-  object PRIORITY extends TopLevel[PRIORITY with Double]
-  
-  /* 6 */ @js.native
-  object SENSITIVITY extends TopLevel[SENSITIVITY with Double]
-  
-  /* 10 */ @js.native
-  object USER extends TopLevel[USER with Double]
-  
-  /* 9 */ @js.native
-  object WORK extends TopLevel[WORK with Double]
-  
+  @js.native
+  sealed trait WORK
+    extends StObject
+       with ExtendedField
 }
-

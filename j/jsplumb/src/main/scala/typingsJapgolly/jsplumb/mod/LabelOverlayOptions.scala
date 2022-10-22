@@ -1,31 +1,44 @@
 package typingsJapgolly.jsplumb.mod
 
-import typingsJapgolly.jsplumb.AnonBorderStyle
+import typingsJapgolly.jsplumb.anon.BorderStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LabelOverlayOptions extends OverlayOptions {
+trait LabelOverlayOptions
+  extends StObject
+     with OverlayOptions {
+  
   var cssClass: js.UndefOr[String] = js.undefined
+  
   var label: String
-   // 0.5
-  var labelStyle: js.UndefOr[AnonBorderStyle] = js.undefined
+  
+  // 0.5
+  var labelStyle: js.UndefOr[BorderStyle] = js.undefined
+  
   var location: js.UndefOr[Double] = js.undefined
 }
-
 object LabelOverlayOptions {
-  @scala.inline
-  def apply(
-    label: String,
-    cssClass: String = null,
-    labelStyle: AnonBorderStyle = null,
-    location: Int | Double = null
-  ): LabelOverlayOptions = {
+  
+  inline def apply(label: String): LabelOverlayOptions = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelOverlayOptions]
   }
+  
+  extension [Self <: LabelOverlayOptions](x: Self) {
+    
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelStyle(value: BorderStyle): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    
+    inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+  }
 }
-

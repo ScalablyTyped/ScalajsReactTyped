@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Devices
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AdvancedPhotoMode extends js.Object
-
+sealed trait AdvancedPhotoMode extends StObject
 /** Defines the advanced photo capture modes. */
 @JSGlobal("Windows.Media.Devices.AdvancedPhotoMode")
 @js.native
-object AdvancedPhotoMode extends js.Object {
+object AdvancedPhotoMode extends StObject {
+  
   /** The system dynamically determines the advanced photo capture mode. */
   @js.native
-  sealed trait auto extends AdvancedPhotoMode
+  sealed trait auto
+    extends StObject
+       with AdvancedPhotoMode
   
   /** High Dynamic Range (HDR) capture mode. */
   @js.native
-  sealed trait hdr extends AdvancedPhotoMode
+  sealed trait hdr
+    extends StObject
+       with AdvancedPhotoMode
   
   /** Standard capture mode. */
   @js.native
-  sealed trait standard extends AdvancedPhotoMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AdvancedPhotoMode with Double] = js.native
-  /* 0 */ @js.native
-  object auto extends TopLevel[auto with Double]
-  
-  /* 2 */ @js.native
-  object hdr extends TopLevel[hdr with Double]
-  
-  /* 1 */ @js.native
-  object standard extends TopLevel[standard with Double]
-  
+  sealed trait standard
+    extends StObject
+       with AdvancedPhotoMode
 }
-

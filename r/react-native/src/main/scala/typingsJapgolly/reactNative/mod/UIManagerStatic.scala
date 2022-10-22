@@ -1,15 +1,18 @@
 package typingsJapgolly.reactNative.mod
 
-import typingsJapgolly.react.mod.ReactElement
-import typingsJapgolly.reactNative.AnonCommands
-import typingsJapgolly.reactNative.AnonFormat
+import japgolly.scalajs.react.facade.React.Element
+import typingsJapgolly.reactNative.anon.Commands
+import typingsJapgolly.reactNative.anon.Format
 import typingsJapgolly.reactNative.reactNativeStrings.window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIManagerStatic extends js.Object {
+trait UIManagerStatic extends StObject {
+  
+  def dispatchViewManagerCommand(reactTag: Double, commandID: String): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Double, commandID: String, commandArgs: js.Array[Any]): Unit = js.native
   /**
     * Used to call a native view method from JavaScript
     *
@@ -18,10 +21,16 @@ trait UIManagerStatic extends js.Object {
     * commandArgs - Args of the native method that we can pass from JS to native.
     */
   def dispatchViewManagerCommand(reactTag: Double, commandID: Double): Unit = js.native
-  def dispatchViewManagerCommand(reactTag: Double, commandID: Double, commandArgs: js.Array[_]): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Double, commandID: Double, commandArgs: js.Array[Any]): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Null, commandID: String): Unit = js.native
+  def dispatchViewManagerCommand(reactTag: Null, commandID: String, commandArgs: js.Array[Any]): Unit = js.native
   def dispatchViewManagerCommand(reactTag: Null, commandID: Double): Unit = js.native
-  def dispatchViewManagerCommand(reactTag: Null, commandID: Double, commandArgs: js.Array[_]): Unit = js.native
-  def getViewManagerConfig(name: String): AnonCommands = js.native
+  def dispatchViewManagerCommand(reactTag: Null, commandID: Double, commandArgs: js.Array[Any]): Unit = js.native
+  
+  def getViewManagerConfig(name: String): Commands = js.native
+  
+  def hasViewManagerConfig(name: String): Boolean = js.native
+  
   /**
     * Determines the location on screen, width, and height of the given view and
     * returns the values via an async callback. If successful, the callback will
@@ -38,8 +47,11 @@ trait UIManagerStatic extends js.Object {
     * has been completed in native. If you need the measurements as soon as
     * possible, consider using the [`onLayout`
     * prop](docs/view.html#onlayout) instead.
+    *
+    * @deprecated Use `ref.measure` instead.
     */
   def measure(node: Double, callback: MeasureOnSuccessCallback): Unit = js.native
+  
   /**
     * Determines the location of the given view in the window and returns the
     * values via an async callback. If the React root view is embedded in
@@ -54,8 +66,11 @@ trait UIManagerStatic extends js.Object {
     *
     * Note that these measurements are not available until after the rendering
     * has been completed in native.
+    *
+    * @deprecated Use `ref.measureInWindow` instead.
     */
   def measureInWindow(node: Double, callback: MeasureInWindowOnSuccessCallback): Unit = js.native
+  
   /**
     * Like [`measure()`](#measure), but measures the view relative an ancestor,
     * specified as `relativeToNativeNode`. This means that the returned x, y
@@ -63,6 +78,8 @@ trait UIManagerStatic extends js.Object {
     *
     * As always, to obtain a native node handle for a component, you can use
     * `React.findNodeHandle(component)`.
+    *
+    * @deprecated Use `ref.measureLayout` instead.
     */
   def measureLayout(
     node: Double,
@@ -70,6 +87,7 @@ trait UIManagerStatic extends js.Object {
     onFail: js.Function0[Unit],
     onSuccess: MeasureLayoutOnSuccessCallback
   ): Unit = js.native
+  
   /**
     * Automatically animates views to their new positions when the
     * next layout happens.
@@ -81,6 +99,7 @@ trait UIManagerStatic extends js.Object {
     *     UIManager.setLayoutAnimationEnabledExperimental && UIManager.setLayoutAnimationEnabledExperimental(true);
     */
   def setLayoutAnimationEnabledExperimental(value: Boolean): Unit = js.native
+  
   /**
     * Used to display an Android PopupMenu. If a menu item is pressed, the success callback will
     * be called with the following arguments:
@@ -99,6 +118,7 @@ trait UIManagerStatic extends js.Object {
     error: js.Function0[Unit],
     success: js.Function2[/* item */ String, /* index */ js.UndefOr[Double], Unit]
   ): Unit = js.native
+  
   /**
     * Capture an image of the screen, window or an individual view. The image
     * will be stored in a temporary file that will only exist for as long as the
@@ -117,13 +137,13 @@ trait UIManagerStatic extends js.Object {
     * @platform ios
     */
   def takeSnapshot(): js.Promise[String] = js.native
+  def takeSnapshot(view: Element): js.Promise[String] = js.native
+  def takeSnapshot(view: Element, options: Format): js.Promise[String] = js.native
   def takeSnapshot(view: Double): js.Promise[String] = js.native
-  def takeSnapshot(view: Double, options: AnonFormat): js.Promise[String] = js.native
-  def takeSnapshot(view: ReactElement): js.Promise[String] = js.native
-  def takeSnapshot(view: ReactElement, options: AnonFormat): js.Promise[String] = js.native
+  def takeSnapshot(view: Double, options: Format): js.Promise[String] = js.native
+  def takeSnapshot(view: Unit, options: Format): js.Promise[String] = js.native
   @JSName("takeSnapshot")
   def takeSnapshot_window(view: window): js.Promise[String] = js.native
   @JSName("takeSnapshot")
-  def takeSnapshot_window(view: window, options: AnonFormat): js.Promise[String] = js.native
+  def takeSnapshot_window(view: window, options: Format): js.Promise[String] = js.native
 }
-

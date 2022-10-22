@@ -10,10 +10,10 @@ Bash-like tilde expansion for node.js. Expands a leading tilde in a file path to
 | ------------------ | :-------------: |
 | Full name          | expand-tilde |
 | Keywords           | cwd, expand, expansion, filepath, home, path, pwd, tilde, user, userhome |
-| # releases         | 0 |
-| # dependents       | 112 |
-| # downloads        | 219559144 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.9905926666666668E7 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/expand-tilde)

@@ -1,14 +1,13 @@
 package typingsJapgolly.kendoUi.kendo.data
 
-import typingsJapgolly.kendoUi.kendo.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.data.TemplateBinding")
 @js.native
-class TemplateBinding protected () extends Binding {
-  def this(source: Observable_, path: String, template: js.Function) = this()
+trait TemplateBinding
+  extends StObject
+     with Binding {
+  
   def render(value: js.Object): String = js.native
 }
-

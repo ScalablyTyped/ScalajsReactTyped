@@ -1,15 +1,16 @@
 package typingsJapgolly.winrt.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs")
-@js.native
-class DefaultAudioCaptureDeviceChangedEventArgs () extends IDefaultAudioDeviceChangedEventArgs {
-  /* CompleteClass */
-  override var id: String = js.native
-  /* CompleteClass */
-  override var role: AudioDeviceRole = js.native
+trait DefaultAudioCaptureDeviceChangedEventArgs
+  extends StObject
+     with IDefaultAudioDeviceChangedEventArgs
+object DefaultAudioCaptureDeviceChangedEventArgs {
+  
+  inline def apply(id: String, role: AudioDeviceRole): DefaultAudioCaptureDeviceChangedEventArgs = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefaultAudioCaptureDeviceChangedEventArgs]
+  }
 }
-

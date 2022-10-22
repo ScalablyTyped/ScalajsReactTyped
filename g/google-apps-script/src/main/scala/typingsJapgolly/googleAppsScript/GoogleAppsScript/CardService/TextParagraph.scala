@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A widget that displays text and supports basic HTML formatting.
@@ -11,16 +10,19 @@ import scala.scalajs.js.annotation._
   *     var textParagraph = CardService.newTextParagraph()
   *         .setText("This is a text paragraph widget. Multiple lines are allowed if needed.");
   */
-trait TextParagraph extends js.Object {
+trait TextParagraph extends StObject {
+  
   def setText(text: String): TextParagraph
 }
-
 object TextParagraph {
-  @scala.inline
-  def apply(setText: String => CallbackTo[TextParagraph]): TextParagraph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setText")(js.Any.fromFunction1((t0: java.lang.String) => setText(t0).runNow()))
+  
+  inline def apply(setText: String => TextParagraph): TextParagraph = {
+    val __obj = js.Dynamic.literal(setText = js.Any.fromFunction1(setText))
     __obj.asInstanceOf[TextParagraph]
   }
+  
+  extension [Self <: TextParagraph](x: Self) {
+    
+    inline def setSetText(value: String => TextParagraph): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+  }
 }
-

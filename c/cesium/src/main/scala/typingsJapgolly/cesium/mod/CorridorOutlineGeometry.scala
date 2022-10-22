@@ -1,23 +1,53 @@
 package typingsJapgolly.cesium.mod
 
-import typingsJapgolly.cesium.AnonGranularity
+import typingsJapgolly.cesium.anon.Granularity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CorridorOutlineGeometry")
 @js.native
-class CorridorOutlineGeometry protected () extends Packable {
-  def this(options: AnonGranularity) = this()
+open class CorridorOutlineGeometry protected () extends StObject {
+  def this(options: Granularity) = this()
+  
+  /**
+    * The number of elements used to pack the object into an array.
+    */
+  var packedLength: Double = js.native
 }
-
 /* static members */
-@JSImport("cesium", "CorridorOutlineGeometry")
-@js.native
-object CorridorOutlineGeometry extends js.Object {
-  def createGeometry(corridorOutlineGeometry: CorridorOutlineGeometry): Geometry = js.native
-  def unpack(array: js.Array[Double]): CorridorOutlineGeometry = js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): CorridorOutlineGeometry = js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: CorridorOutlineGeometry): CorridorOutlineGeometry = js.native
+object CorridorOutlineGeometry {
+  
+  @JSImport("cesium", "CorridorOutlineGeometry")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Computes the geometric representation of a corridor, including its vertices, indices, and a bounding sphere.
+    * @param corridorOutlineGeometry - A description of the corridor.
+    * @returns The computed vertices and indices.
+    */
+  inline def createGeometry(corridorOutlineGeometry: CorridorOutlineGeometry): js.UndefOr[Geometry] = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(corridorOutlineGeometry.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Geometry]]
+  
+  /**
+    * Stores the provided instance into the provided array.
+    * @param value - The value to pack.
+    * @param array - The array to pack into.
+    * @param [startingIndex = 0] - The index into the array at which to start packing the elements.
+    * @returns The array that was packed into
+    */
+  inline def pack(value: CorridorOutlineGeometry, array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def pack(value: CorridorOutlineGeometry, array: js.Array[Double], startingIndex: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  /**
+    * Retrieves an instance from a packed array.
+    * @param array - The packed array.
+    * @param [startingIndex = 0] - The starting index of the element to be unpacked.
+    * @param [result] - The object into which to store the result.
+    * @returns The modified result parameter or a new CorridorOutlineGeometry instance if one was not provided.
+    */
+  inline def unpack(array: js.Array[Double]): CorridorOutlineGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[CorridorOutlineGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double): CorridorOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[CorridorOutlineGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double, result: CorridorOutlineGeometry): CorridorOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CorridorOutlineGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Unit, result: CorridorOutlineGeometry): CorridorOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CorridorOutlineGeometry]
 }
-

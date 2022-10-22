@@ -1,32 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AppointmentDialogClosingEventUIParam extends js.Object {
+trait AppointmentDialogClosingEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the appointment dialog.
-  	 */
-  var element: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the appointment dialog.
+    */
+  var element: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets whether we are creating or updating an appointment.
-  	 */
+    * Gets whether we are creating or updating an appointment.
+    */
   var isAppointmentNew: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets a reference to the scheduler.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the scheduler.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object AppointmentDialogClosingEventUIParam {
-  @scala.inline
-  def apply(element: js.Any = null, isAppointmentNew: js.UndefOr[Boolean] = js.undefined, owner: js.Any = null): AppointmentDialogClosingEventUIParam = {
+  
+  inline def apply(): AppointmentDialogClosingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAppointmentNew)) __obj.updateDynamic("isAppointmentNew")(isAppointmentNew.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentDialogClosingEventUIParam]
   }
+  
+  extension [Self <: AppointmentDialogClosingEventUIParam](x: Self) {
+    
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setIsAppointmentNew(value: Boolean): Self = StObject.set(x, "isAppointmentNew", value.asInstanceOf[js.Any])
+    
+    inline def setIsAppointmentNewUndefined: Self = StObject.set(x, "isAppointmentNew", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

@@ -1,75 +1,91 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.fall
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.spring
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.summer
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.winter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DaylightViewModel extends Accessor {
+trait DaylightViewModel
+  extends StObject
+     with Accessor {
+  
   /**
-    * A season can be set instead of a date. Each season uses a fixed date corresponding to the seasonsal equinoxes and solstices.
+    * A season can be set instead of a date.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#currentSeason)
-    *
-    * @default "spring"
     */
   var currentSeason: spring | summer | fall | winter = js.native
+  
   /**
-    * Starts or pauses the daytime animation cycling through the minutes of the day. Set to `true` to start the animation and to `false` to pause it.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#dayPlaying)
+    * Starts or pauses the daytime animation cycling through the minutes of the day.
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#dayPlaying)
     */
   var dayPlaying: Boolean = js.native
+  
+  /**
+    * Indicates whether to show shadows cast by the sun.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#directShadowsEnabled)
+    */
+  var directShadowsEnabled: Boolean = js.native
+  
   /**
     * The calendar date in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#localDate)
     */
   var localDate: js.Date = js.native
+  
   /**
     * Controls the daytime and date animation speed.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#playSpeedMultiplier)
-    *
     * @default 1.0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#playSpeedMultiplier)
     */
   var playSpeedMultiplier: Double = js.native
+  
   /**
-    * Slider position for the time of day in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset). The position represents the time of the day in minutes. Possible values range between 0 and 1440.
+    * Indicates whether date and time are used to determine position of the light source.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#sunLightingEnabled)
+    */
+  var sunLightingEnabled: Boolean = js.native
+  
+  /**
+    * Slider position for the time of day in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#timeSliderPosition)
     */
   var timeSliderPosition: Double = js.native
+  
   /**
     * The difference in hours between UTC time and the time displayed in the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset)
     */
   var utcOffset: Double = js.native
+  
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#view)
     */
   var view: SceneView = js.native
+  
   /**
-    * Starts or pauses the date animation cycling through the months of the year. Set to `true` to start the animation and to `false` to pause it.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#yearPlaying)
+    * Starts or pauses the date animation cycling through the months of the year.
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#yearPlaying)
     */
   var yearPlaying: Boolean = js.native
 }
-
-@JSGlobal("__esri.DaylightViewModel")
-@js.native
-object DaylightViewModel extends TopLevel[DaylightViewModelConstructor]
-

@@ -1,45 +1,57 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.devextremeStrings.dash
-import typingsJapgolly.devextreme.devextremeStrings.dot
-import typingsJapgolly.devextreme.devextremeStrings.longDash
-import typingsJapgolly.devextreme.devextremeStrings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPolarChartValueAxisConstantLines extends dxPolarChartCommonAxisSettingsConstantLineStyle {
-  /** Specifies whether to display the constant line behind or in front of the series. */
+trait dxPolarChartValueAxisConstantLines
+  extends StObject
+     with dxPolarChartCommonAxisSettingsConstantLineStyle {
+  
+  /**
+    * Specifies whether to display the constant line behind or in front of the series.
+    */
   var displayBehindSeries: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to extend the axis to display the constant line. */
+  
+  /**
+    * Specifies whether to extend the axis to display the constant line.
+    */
   var extendAxis: js.UndefOr[Boolean] = js.undefined
-  /** An object defining constant line label options. */
+  
+  /**
+    * An object defining constant line label properties.
+    */
   @JSName("label")
   var label_dxPolarChartValueAxisConstantLines: js.UndefOr[dxPolarChartValueAxisConstantLinesLabel] = js.undefined
-  /** Specifies a value to be displayed by a constant line. */
+  
+  /**
+    * Specifies a value to be displayed by a constant line.
+    */
   var value: js.UndefOr[Double | js.Date | String] = js.undefined
 }
-
 object dxPolarChartValueAxisConstantLines {
-  @scala.inline
-  def apply(
-    color: String = null,
-    dashStyle: dash | dot | longDash | solid = null,
-    displayBehindSeries: js.UndefOr[Boolean] = js.undefined,
-    extendAxis: js.UndefOr[Boolean] = js.undefined,
-    label: dxPolarChartValueAxisConstantLinesLabel = null,
-    value: Double | js.Date | String = null,
-    width: Int | Double = null
-  ): dxPolarChartValueAxisConstantLines = {
+  
+  inline def apply(): dxPolarChartValueAxisConstantLines = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayBehindSeries)) __obj.updateDynamic("displayBehindSeries")(displayBehindSeries.asInstanceOf[js.Any])
-    if (!js.isUndefined(extendAxis)) __obj.updateDynamic("extendAxis")(extendAxis.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartValueAxisConstantLines]
   }
+  
+  extension [Self <: dxPolarChartValueAxisConstantLines](x: Self) {
+    
+    inline def setDisplayBehindSeries(value: Boolean): Self = StObject.set(x, "displayBehindSeries", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayBehindSeriesUndefined: Self = StObject.set(x, "displayBehindSeries", js.undefined)
+    
+    inline def setExtendAxis(value: Boolean): Self = StObject.set(x, "extendAxis", value.asInstanceOf[js.Any])
+    
+    inline def setExtendAxisUndefined: Self = StObject.set(x, "extendAxis", js.undefined)
+    
+    inline def setLabel(value: dxPolarChartValueAxisConstantLinesLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setValue(value: Double | js.Date | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

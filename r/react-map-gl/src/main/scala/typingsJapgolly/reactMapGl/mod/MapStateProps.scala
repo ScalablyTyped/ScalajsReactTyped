@@ -1,84 +1,146 @@
 package typingsJapgolly.reactMapGl.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.reactMapGl.reactMapGlStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-map-gl.react-map-gl.ViewportProps & react-map-gl.react-map-gl.InteractiveState> */
-trait MapStateProps extends js.Object {
+trait MapStateProps extends StObject {
+  
   var altitude: js.UndefOr[Double] = js.undefined
+  
   var bearing: js.UndefOr[Double] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
+  
+  var height: js.UndefOr[Double | String] = js.undefined
+  
   var latitude: js.UndefOr[Double] = js.undefined
+  
   var longitude: js.UndefOr[Double] = js.undefined
+  
   var maxPitch: js.UndefOr[Double] = js.undefined
+  
   var maxZoom: js.UndefOr[Double] = js.undefined
+  
   var minPitch: js.UndefOr[Double] = js.undefined
+  
   var minZoom: js.UndefOr[Double] = js.undefined
+  
   var pitch: js.UndefOr[Double] = js.undefined
+  
   var startBearing: js.UndefOr[Double] = js.undefined
+  
   var startPanLngLat: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+  
   var startPitch: js.UndefOr[Double] = js.undefined
+  
   var startZoom: js.UndefOr[Double] = js.undefined
+  
   var startZoomLngLat: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+  
   var transitionDuration: js.UndefOr[Double | auto] = js.undefined
+  
   var transitionEasing: js.UndefOr[EasingFunction] = js.undefined
+  
   var transitionInterpolator: js.UndefOr[TransitionInterpolator] = js.undefined
+  
   var transitionInterruption: js.UndefOr[TRANSITION_EVENTS] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  
+  var width: js.UndefOr[Double | String] = js.undefined
+  
   var zoom: js.UndefOr[Double] = js.undefined
 }
-
 object MapStateProps {
-  @scala.inline
-  def apply(
-    altitude: Int | Double = null,
-    bearing: Int | Double = null,
-    height: Int | Double = null,
-    latitude: Int | Double = null,
-    longitude: Int | Double = null,
-    maxPitch: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minPitch: Int | Double = null,
-    minZoom: Int | Double = null,
-    pitch: Int | Double = null,
-    startBearing: Int | Double = null,
-    startPanLngLat: js.Tuple2[Double, Double] = null,
-    startPitch: Int | Double = null,
-    startZoom: Int | Double = null,
-    startZoomLngLat: js.Tuple2[Double, Double] = null,
-    transitionDuration: Double | auto = null,
-    transitionEasing: /* t */ Double => CallbackTo[Double] = null,
-    transitionInterpolator: TransitionInterpolator = null,
-    transitionInterruption: TRANSITION_EVENTS = null,
-    width: Int | Double = null,
-    zoom: Int | Double = null
-  ): MapStateProps = {
+  
+  inline def apply(): MapStateProps = {
     val __obj = js.Dynamic.literal()
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
-    if (maxPitch != null) __obj.updateDynamic("maxPitch")(maxPitch.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minPitch != null) __obj.updateDynamic("minPitch")(minPitch.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (startBearing != null) __obj.updateDynamic("startBearing")(startBearing.asInstanceOf[js.Any])
-    if (startPanLngLat != null) __obj.updateDynamic("startPanLngLat")(startPanLngLat.asInstanceOf[js.Any])
-    if (startPitch != null) __obj.updateDynamic("startPitch")(startPitch.asInstanceOf[js.Any])
-    if (startZoom != null) __obj.updateDynamic("startZoom")(startZoom.asInstanceOf[js.Any])
-    if (startZoomLngLat != null) __obj.updateDynamic("startZoomLngLat")(startZoomLngLat.asInstanceOf[js.Any])
-    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
-    if (transitionEasing != null) __obj.updateDynamic("transitionEasing")(js.Any.fromFunction1((t0: /* t */ scala.Double) => transitionEasing(t0).runNow()))
-    if (transitionInterpolator != null) __obj.updateDynamic("transitionInterpolator")(transitionInterpolator.asInstanceOf[js.Any])
-    if (transitionInterruption != null) __obj.updateDynamic("transitionInterruption")(transitionInterruption.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapStateProps]
   }
+  
+  extension [Self <: MapStateProps](x: Self) {
+    
+    inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    
+    inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+    
+    inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
+    
+    inline def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    
+    inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+    
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    
+    inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+    
+    inline def setMaxPitch(value: Double): Self = StObject.set(x, "maxPitch", value.asInstanceOf[js.Any])
+    
+    inline def setMaxPitchUndefined: Self = StObject.set(x, "maxPitch", js.undefined)
+    
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    
+    inline def setMinPitch(value: Double): Self = StObject.set(x, "minPitch", value.asInstanceOf[js.Any])
+    
+    inline def setMinPitchUndefined: Self = StObject.set(x, "minPitch", js.undefined)
+    
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    
+    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    
+    inline def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
+    
+    inline def setStartBearing(value: Double): Self = StObject.set(x, "startBearing", value.asInstanceOf[js.Any])
+    
+    inline def setStartBearingUndefined: Self = StObject.set(x, "startBearing", js.undefined)
+    
+    inline def setStartPanLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "startPanLngLat", value.asInstanceOf[js.Any])
+    
+    inline def setStartPanLngLatUndefined: Self = StObject.set(x, "startPanLngLat", js.undefined)
+    
+    inline def setStartPitch(value: Double): Self = StObject.set(x, "startPitch", value.asInstanceOf[js.Any])
+    
+    inline def setStartPitchUndefined: Self = StObject.set(x, "startPitch", js.undefined)
+    
+    inline def setStartZoom(value: Double): Self = StObject.set(x, "startZoom", value.asInstanceOf[js.Any])
+    
+    inline def setStartZoomLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "startZoomLngLat", value.asInstanceOf[js.Any])
+    
+    inline def setStartZoomLngLatUndefined: Self = StObject.set(x, "startZoomLngLat", js.undefined)
+    
+    inline def setStartZoomUndefined: Self = StObject.set(x, "startZoom", js.undefined)
+    
+    inline def setTransitionDuration(value: Double | auto): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+    
+    inline def setTransitionEasing(value: /* t */ Double => Double): Self = StObject.set(x, "transitionEasing", js.Any.fromFunction1(value))
+    
+    inline def setTransitionEasingUndefined: Self = StObject.set(x, "transitionEasing", js.undefined)
+    
+    inline def setTransitionInterpolator(value: TransitionInterpolator): Self = StObject.set(x, "transitionInterpolator", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionInterpolatorUndefined: Self = StObject.set(x, "transitionInterpolator", js.undefined)
+    
+    inline def setTransitionInterruption(value: TRANSITION_EVENTS): Self = StObject.set(x, "transitionInterruption", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionInterruptionUndefined: Self = StObject.set(x, "transitionInterruption", js.undefined)
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+  }
 }
-

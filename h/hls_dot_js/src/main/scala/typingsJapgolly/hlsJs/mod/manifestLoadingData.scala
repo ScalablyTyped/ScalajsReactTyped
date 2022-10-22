@@ -1,19 +1,22 @@
 package typingsJapgolly.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait manifestLoadingData extends js.Object {
+trait ManifestLoadingData extends StObject {
+  
   var url: String
 }
-
-object manifestLoadingData {
-  @scala.inline
-  def apply(url: String): manifestLoadingData = {
-    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+object ManifestLoadingData {
   
-    __obj.asInstanceOf[manifestLoadingData]
+  inline def apply(url: String): ManifestLoadingData = {
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ManifestLoadingData]
+  }
+  
+  extension [Self <: ManifestLoadingData](x: Self) {
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }
-

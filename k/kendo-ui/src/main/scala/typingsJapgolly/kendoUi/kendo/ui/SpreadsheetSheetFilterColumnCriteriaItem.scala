@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpreadsheetSheetFilterColumnCriteriaItem extends js.Object {
+trait SpreadsheetSheetFilterColumnCriteriaItem extends StObject {
+  
   var operator: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[String] = js.undefined
 }
-
 object SpreadsheetSheetFilterColumnCriteriaItem {
-  @scala.inline
-  def apply(operator: String = null, value: String = null): SpreadsheetSheetFilterColumnCriteriaItem = {
+  
+  inline def apply(): SpreadsheetSheetFilterColumnCriteriaItem = {
     val __obj = js.Dynamic.literal()
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetSheetFilterColumnCriteriaItem]
   }
+  
+  extension [Self <: SpreadsheetSheetFilterColumnCriteriaItem](x: Self) {
+    
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

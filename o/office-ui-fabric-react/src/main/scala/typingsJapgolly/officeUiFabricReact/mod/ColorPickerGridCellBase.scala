@@ -1,19 +1,31 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.officeUiFabricReact.PartialIColorPickerGridCe
+import typingsJapgolly.officeUiFabricReact.anon.PartialIColorPickerGridCe
+import typingsJapgolly.officeUiFabricReact.libComponentsSwatchColorPickerColorPickerGridCellDottypesMod.IColorPickerGridCellProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "ColorPickerGridCellBase")
 @js.native
-class ColorPickerGridCellBase ()
-  extends typingsJapgolly.officeUiFabricReact.libSwatchColorPickerMod.ColorPickerGridCellBase
-
-/* static members */
-@JSImport("office-ui-fabric-react", "ColorPickerGridCellBase")
-@js.native
-object ColorPickerGridCellBase extends js.Object {
-  var defaultProps: PartialIColorPickerGridCe = js.native
+open class ColorPickerGridCellBase protected ()
+  extends typingsJapgolly.officeUiFabricReact.libSwatchColorPickerMod.ColorPickerGridCellBase {
+  def this(props: IColorPickerGridCellProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: IColorPickerGridCellProps, context: Any) = this()
 }
-
+/* static members */
+object ColorPickerGridCellBase {
+  
+  @JSImport("office-ui-fabric-react", "ColorPickerGridCellBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "ColorPickerGridCellBase.defaultProps")
+  @js.native
+  def defaultProps: PartialIColorPickerGridCe = js.native
+  inline def defaultProps_=(x: PartialIColorPickerGridCe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+}

@@ -1,26 +1,31 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.gridGridMod.GridProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.gridGridMod.GridTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.div
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Grid", JSImport.Namespace)
-@js.native
-object gridMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[GridProps, ComponentState, js.Any] {
-    def this(props: GridProps) = this()
-    def this(props: GridProps, context: js.Any) = this()
-  }
+object gridMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Grid](https://mui.com/components/grid/)
+    *
+    * API:
+    *
+    * - [Grid API](https://mui.com/api/grid/)
+    */
+  @JSImport("@material-ui/core/Grid", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[GridProps]]
+  val default: OverridableComponent[GridTypeMap[js.Object, div]] = js.native
   
+  type _To = OverridableComponent[GridTypeMap[js.Object, div]]
+  
+  /* This means you don't have to write `default`, but can instead just say `gridMod.foo` */
+  override def _to: OverridableComponent[GridTypeMap[js.Object, div]] = default
 }
-

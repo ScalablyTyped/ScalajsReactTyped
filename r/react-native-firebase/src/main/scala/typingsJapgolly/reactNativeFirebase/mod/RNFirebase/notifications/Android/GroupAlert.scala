@@ -1,35 +1,33 @@
 package typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GroupAlert extends js.Object
-
+sealed trait GroupAlert extends StObject
 @JSImport("react-native-firebase", "RNFirebase.notifications.Android.GroupAlert")
 @js.native
-object GroupAlert extends js.Object {
-  @js.native
-  sealed trait All extends GroupAlert
-  
-  @js.native
-  sealed trait Children extends GroupAlert
-  
-  @js.native
-  sealed trait Summary extends GroupAlert
+object GroupAlert extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GroupAlert with Double] = js.native
-  /* 0 */ @js.native
-  object All extends TopLevel[All with Double]
+  def apply(value: Double): js.UndefOr[GroupAlert & Double] = js.native
   
-  /* 2 */ @js.native
-  object Children extends TopLevel[Children with Double]
+  @js.native
+  sealed trait All
+    extends StObject
+       with GroupAlert
+  /* 0 */ val All: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.GroupAlert.All & Double = js.native
   
-  /* 1 */ @js.native
-  object Summary extends TopLevel[Summary with Double]
+  @js.native
+  sealed trait Children
+    extends StObject
+       with GroupAlert
+  /* 2 */ val Children: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.GroupAlert.Children & Double = js.native
   
+  @js.native
+  sealed trait Summary
+    extends StObject
+       with GroupAlert
+  /* 1 */ val Summary: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.GroupAlert.Summary & Double = js.native
 }
-

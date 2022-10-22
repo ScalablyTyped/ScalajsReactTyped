@@ -1,40 +1,61 @@
 package typingsJapgolly.foundation.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/clearing.html#optional-javascript-configuration
-trait ClearingOptions extends js.Object {
+trait ClearingOptions extends StObject {
+  
   var close_selectors: js.UndefOr[String] = js.undefined
+  
   var init: js.UndefOr[Boolean] = js.undefined
+  
   var locked: js.UndefOr[Boolean] = js.undefined
+  
   var open_selectors: js.UndefOr[String] = js.undefined
+  
   var skip_selector: js.UndefOr[String] = js.undefined
+  
   var templates: js.UndefOr[js.Object] = js.undefined
+  
   var touch_label: js.UndefOr[String] = js.undefined
 }
-
 object ClearingOptions {
-  @scala.inline
-  def apply(
-    close_selectors: String = null,
-    init: js.UndefOr[Boolean] = js.undefined,
-    locked: js.UndefOr[Boolean] = js.undefined,
-    open_selectors: String = null,
-    skip_selector: String = null,
-    templates: js.Object = null,
-    touch_label: String = null
-  ): ClearingOptions = {
+  
+  inline def apply(): ClearingOptions = {
     val __obj = js.Dynamic.literal()
-    if (close_selectors != null) __obj.updateDynamic("close_selectors")(close_selectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
-    if (open_selectors != null) __obj.updateDynamic("open_selectors")(open_selectors.asInstanceOf[js.Any])
-    if (skip_selector != null) __obj.updateDynamic("skip_selector")(skip_selector.asInstanceOf[js.Any])
-    if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
-    if (touch_label != null) __obj.updateDynamic("touch_label")(touch_label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearingOptions]
   }
+  
+  extension [Self <: ClearingOptions](x: Self) {
+    
+    inline def setClose_selectors(value: String): Self = StObject.set(x, "close_selectors", value.asInstanceOf[js.Any])
+    
+    inline def setClose_selectorsUndefined: Self = StObject.set(x, "close_selectors", js.undefined)
+    
+    inline def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    
+    inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
+    
+    inline def setOpen_selectors(value: String): Self = StObject.set(x, "open_selectors", value.asInstanceOf[js.Any])
+    
+    inline def setOpen_selectorsUndefined: Self = StObject.set(x, "open_selectors", js.undefined)
+    
+    inline def setSkip_selector(value: String): Self = StObject.set(x, "skip_selector", value.asInstanceOf[js.Any])
+    
+    inline def setSkip_selectorUndefined: Self = StObject.set(x, "skip_selector", js.undefined)
+    
+    inline def setTemplates(value: js.Object): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+    
+    inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
+    
+    inline def setTouch_label(value: String): Self = StObject.set(x, "touch_label", value.asInstanceOf[js.Any])
+    
+    inline def setTouch_labelUndefined: Self = StObject.set(x, "touch_label", js.undefined)
+  }
 }
-

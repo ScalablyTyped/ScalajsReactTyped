@@ -1,17 +1,34 @@
 package typingsJapgolly.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "HomeButtonViewModel")
 @js.native
-class HomeButtonViewModel protected () extends js.Object {
+open class HomeButtonViewModel protected () extends StObject {
   def this(scene: Scene) = this()
   def this(scene: Scene, duration: Double) = this()
+  
+  /**
+    * Gets the Command that is executed when the button is clicked.
+    */
   var command: Command = js.native
-  var duration: Double = js.native
+  
+  /**
+    * Gets or sets the the duration of the camera flight in seconds.
+    * A value of zero causes the camera to instantly switch to home view.
+    * The duration will be computed based on the distance when undefined.
+    */
+  var duration: js.UndefOr[Double] = js.native
+  
+  /**
+    * Gets the scene to control.
+    */
   var scene: Scene = js.native
+  
+  /**
+    * Gets or sets the tooltip.  This property is observable.
+    */
   var tooltip: String = js.native
 }
-

@@ -1,30 +1,42 @@
 package typingsJapgolly.webix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataValueConfig extends js.Object {
+trait DataValueConfig extends StObject {
+  
   var id: js.UndefOr[String | Double] = js.undefined
+  
   var on: js.UndefOr[EventHash] = js.undefined
+  
   var value: js.UndefOr[String | Double] = js.undefined
+  
   var view: js.UndefOr[String] = js.undefined
 }
-
 object DataValueConfig {
-  @scala.inline
-  def apply(
-    id: String | Double = null,
-    on: EventHash = null,
-    value: String | Double = null,
-    view: String = null
-  ): DataValueConfig = {
+  
+  inline def apply(): DataValueConfig = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValueConfig]
   }
+  
+  extension [Self <: DataValueConfig](x: Self) {
+    
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    
+    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

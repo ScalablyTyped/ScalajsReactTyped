@@ -1,22 +1,31 @@
 package typingsJapgolly.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeleteMultiOptions extends js.Object {
-  var quite: js.UndefOr[Boolean] = js.undefined
-   // quite mode or verbose mode, default is false
+trait DeleteMultiOptions extends StObject {
+  
+  /** quite mode or verbose mode, default is false */
+  var quiet: js.UndefOr[Boolean] = js.undefined
+  
   var timeout: js.UndefOr[Double] = js.undefined
 }
-
 object DeleteMultiOptions {
-  @scala.inline
-  def apply(quite: js.UndefOr[Boolean] = js.undefined, timeout: Int | Double = null): DeleteMultiOptions = {
+  
+  inline def apply(): DeleteMultiOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(quite)) __obj.updateDynamic("quite")(quite.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMultiOptions]
   }
+  
+  extension [Self <: DeleteMultiOptions](x: Self) {
+    
+    inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+    
+    inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

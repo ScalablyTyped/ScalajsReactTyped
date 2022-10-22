@@ -1,48 +1,80 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceEnrollmentConfiguration extends Entity {
-  // The list of group assignments for the device configuration profile.
-  var assignments: js.UndefOr[js.Array[EnrollmentConfigurationAssignment]] = js.undefined
-  // Not yet documented
+trait DeviceEnrollmentConfiguration
+  extends StObject
+     with Entity {
+  
+  // The list of group assignments for the device configuration profile
+  var assignments: js.UndefOr[NullableOption[js.Array[EnrollmentConfigurationAssignment]]] = js.undefined
+  
+  // Created date time in UTC of the device enrollment configuration
   var createdDateTime: js.UndefOr[String] = js.undefined
-  // Not yet documented
-  var description: js.UndefOr[String] = js.undefined
-  // Not yet documented
-  var displayName: js.UndefOr[String] = js.undefined
-  // Not yet documented
+  
+  // The description of the device enrollment configuration
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // The display name of the device enrollment configuration
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // Last modified date time in UTC of the device enrollment configuration
   var lastModifiedDateTime: js.UndefOr[String] = js.undefined
-  // Not yet documented
+  
+  /**
+    * Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject
+    * only to the configuration with the lowest priority value.
+    */
   var priority: js.UndefOr[Double] = js.undefined
-  // Not yet documented
+  
+  // The version of the device enrollment configuration
   var version: js.UndefOr[Double] = js.undefined
 }
-
 object DeviceEnrollmentConfiguration {
-  @scala.inline
-  def apply(
-    assignments: js.Array[EnrollmentConfigurationAssignment] = null,
-    createdDateTime: String = null,
-    description: String = null,
-    displayName: String = null,
-    id: String = null,
-    lastModifiedDateTime: String = null,
-    priority: Int | Double = null,
-    version: Int | Double = null
-  ): DeviceEnrollmentConfiguration = {
+  
+  inline def apply(): DeviceEnrollmentConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceEnrollmentConfiguration]
   }
+  
+  extension [Self <: DeviceEnrollmentConfiguration](x: Self) {
+    
+    inline def setAssignments(value: NullableOption[js.Array[EnrollmentConfigurationAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
+    
+    inline def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
+    
+    inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
+    
+    inline def setAssignmentsVarargs(value: EnrollmentConfigurationAssignment*): Self = StObject.set(x, "assignments", js.Array(value*))
+    
+    inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

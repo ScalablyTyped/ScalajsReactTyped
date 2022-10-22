@@ -1,34 +1,38 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UserIdentity extends js.Object {
-  // The identity's display name. Note that this may not always be available or up-to-date.
-  var displayName: js.UndefOr[String] = js.undefined
-  // Unique identifier for the identity.
-  var id: js.UndefOr[String] = js.undefined
+trait UserIdentity
+  extends StObject
+     with Identity {
+  
   // Indicates the client IP address used by user performing the activity (audit log only).
-  var ipAddress: js.UndefOr[String] = js.undefined
+  var ipAddress: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The userPrincipalName attribute of the user.
-  var userPrincipalName: js.UndefOr[String] = js.undefined
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object UserIdentity {
-  @scala.inline
-  def apply(
-    displayName: String = null,
-    id: String = null,
-    ipAddress: String = null,
-    userPrincipalName: String = null
-  ): UserIdentity = {
+  
+  inline def apply(): UserIdentity = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserIdentity]
   }
+  
+  extension [Self <: UserIdentity](x: Self) {
+    
+    inline def setIpAddress(value: NullableOption[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressNull: Self = StObject.set(x, "ipAddress", null)
+    
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    
+    inline def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
+    
+    inline def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
+    
+    inline def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
+  }
 }
-

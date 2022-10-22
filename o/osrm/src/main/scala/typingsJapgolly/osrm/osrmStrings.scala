@@ -1,178 +1,319 @@
 package typingsJapgolly.osrm
 
+import typingsJapgolly.osrm.mod.AlgorithmTypes
+import typingsJapgolly.osrm.mod.ApproachTypes
+import typingsJapgolly.osrm.mod.FallbackCoordinateTypes
+import typingsJapgolly.osrm.mod.GapTypes
 import typingsJapgolly.osrm.mod.GeometriesTypes
 import typingsJapgolly.osrm.mod.Indication
 import typingsJapgolly.osrm.mod.OverviewTypes
+import typingsJapgolly.osrm.mod.SnappingTypes
 import typingsJapgolly.osrm.mod.StepManeuverTypes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object osrmStrings {
-  @js.native
-  sealed trait LineString extends js.Object
   
   @js.native
-  sealed trait arrive extends StepManeuverTypes
+  sealed trait default
+    extends StObject
+       with SnappingTypes
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait continue extends StepManeuverTypes
+  sealed trait CH
+    extends StObject
+       with AlgorithmTypes
+  inline def CH: CH = "CH".asInstanceOf[CH]
   
   @js.native
-  sealed trait depart extends StepManeuverTypes
+  sealed trait CoreCH
+    extends StObject
+       with AlgorithmTypes
+  inline def CoreCH: CoreCH = "CoreCH".asInstanceOf[CoreCH]
   
   @js.native
-  sealed trait `end of road` extends StepManeuverTypes
+  sealed trait LineString extends StObject
+  inline def LineString: LineString = "LineString".asInstanceOf[LineString]
   
   @js.native
-  sealed trait `exit rotary` extends StepManeuverTypes
+  sealed trait MLD
+    extends StObject
+       with AlgorithmTypes
+  inline def MLD: MLD = "MLD".asInstanceOf[MLD]
   
   @js.native
-  sealed trait `exit roundabout` extends StepManeuverTypes
+  sealed trait any
+    extends StObject
+       with SnappingTypes
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait `false` extends OverviewTypes
+  sealed trait arrive
+    extends StObject
+       with StepManeuverTypes
+  inline def arrive: arrive = "arrive".asInstanceOf[arrive]
   
   @js.native
-  sealed trait fork extends StepManeuverTypes
+  sealed trait continue
+    extends StObject
+       with StepManeuverTypes
+  inline def continue: continue = "continue".asInstanceOf[continue]
   
   @js.native
-  sealed trait full extends OverviewTypes
+  sealed trait curb
+    extends StObject
+       with ApproachTypes
+  inline def curb: curb = "curb".asInstanceOf[curb]
   
   @js.native
-  sealed trait geojson extends GeometriesTypes
+  sealed trait datasources extends StObject
+  inline def datasources: datasources = "datasources".asInstanceOf[datasources]
   
   @js.native
-  sealed trait left extends Indication
+  sealed trait depart
+    extends StObject
+       with StepManeuverTypes
+  inline def depart: depart = "depart".asInstanceOf[depart]
   
   @js.native
-  sealed trait merge extends StepManeuverTypes
+  sealed trait distance extends StObject
+  inline def distance: distance = "distance".asInstanceOf[distance]
   
   @js.native
-  sealed trait `new name` extends StepManeuverTypes
+  sealed trait duration extends StObject
+  inline def duration: duration = "duration".asInstanceOf[duration]
   
   @js.native
-  sealed trait notification extends StepManeuverTypes
+  sealed trait `end of road`
+    extends StObject
+       with StepManeuverTypes
+  inline def `end of road`: `end of road` = ("end of road").asInstanceOf[`end of road`]
   
   @js.native
-  sealed trait `off ramp` extends StepManeuverTypes
+  sealed trait `exit rotary`
+    extends StObject
+       with StepManeuverTypes
+  inline def `exit rotary`: `exit rotary` = ("exit rotary").asInstanceOf[`exit rotary`]
   
   @js.native
-  sealed trait `on ramp` extends StepManeuverTypes
+  sealed trait `exit roundabout`
+    extends StObject
+       with StepManeuverTypes
+  inline def `exit roundabout`: `exit roundabout` = ("exit roundabout").asInstanceOf[`exit roundabout`]
   
   @js.native
-  sealed trait polyline extends GeometriesTypes
+  sealed trait `false`
+    extends StObject
+       with OverviewTypes
+  inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
-  sealed trait polyline6 extends GeometriesTypes
+  sealed trait first extends StObject
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
-  sealed trait ramp extends StepManeuverTypes
+  sealed trait fork
+    extends StObject
+       with StepManeuverTypes
+  inline def fork: fork = "fork".asInstanceOf[fork]
   
   @js.native
-  sealed trait right extends Indication
+  sealed trait full
+    extends StObject
+       with OverviewTypes
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait rotary extends StepManeuverTypes
+  sealed trait geojson
+    extends StObject
+       with GeometriesTypes
+  inline def geojson: geojson = "geojson".asInstanceOf[geojson]
   
   @js.native
-  sealed trait roundabout extends StepManeuverTypes
+  sealed trait ignore
+    extends StObject
+       with GapTypes
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
-  sealed trait `roundabout turn` extends StepManeuverTypes
+  sealed trait input
+    extends StObject
+       with FallbackCoordinateTypes
+  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
-  sealed trait `sharp left` extends Indication
+  sealed trait json_buffer extends StObject
+  inline def json_buffer: json_buffer = "json_buffer".asInstanceOf[json_buffer]
   
   @js.native
-  sealed trait `sharp right` extends Indication
+  sealed trait last extends StObject
+  inline def last: last = "last".asInstanceOf[last]
   
   @js.native
-  sealed trait simplified extends OverviewTypes
+  sealed trait left
+    extends StObject
+       with Indication
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait `slight left` extends Indication
+  sealed trait merge
+    extends StObject
+       with StepManeuverTypes
+  inline def merge: merge = "merge".asInstanceOf[merge]
   
   @js.native
-  sealed trait `slight rigth` extends Indication
+  sealed trait `new name`
+    extends StObject
+       with StepManeuverTypes
+  inline def `new name`: `new name` = ("new name").asInstanceOf[`new name`]
   
   @js.native
-  sealed trait straight extends Indication
+  sealed trait nodes extends StObject
+  inline def nodes: nodes = "nodes".asInstanceOf[nodes]
   
   @js.native
-  sealed trait turn extends StepManeuverTypes
+  sealed trait notification
+    extends StObject
+       with StepManeuverTypes
+  inline def notification: notification = "notification".asInstanceOf[notification]
   
   @js.native
-  sealed trait `use lane` extends StepManeuverTypes
+  sealed trait `object` extends StObject
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait uturn extends Indication
+  sealed trait `off ramp`
+    extends StObject
+       with StepManeuverTypes
+  inline def `off ramp`: `off ramp` = ("off ramp").asInstanceOf[`off ramp`]
   
-  @scala.inline
-  def LineString: LineString = "LineString".asInstanceOf[LineString]
-  @scala.inline
-  def arrive: arrive = "arrive".asInstanceOf[arrive]
-  @scala.inline
-  def continue: continue = "continue".asInstanceOf[continue]
-  @scala.inline
-  def depart: depart = "depart".asInstanceOf[depart]
-  @scala.inline
-  def `end of road`: `end of road` = "end of road".asInstanceOf[`end of road`]
-  @scala.inline
-  def `exit rotary`: `exit rotary` = "exit rotary".asInstanceOf[`exit rotary`]
-  @scala.inline
-  def `exit roundabout`: `exit roundabout` = "exit roundabout".asInstanceOf[`exit roundabout`]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
-  @scala.inline
-  def fork: fork = "fork".asInstanceOf[fork]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
-  @scala.inline
-  def geojson: geojson = "geojson".asInstanceOf[geojson]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def merge: merge = "merge".asInstanceOf[merge]
-  @scala.inline
-  def `new name`: `new name` = "new name".asInstanceOf[`new name`]
-  @scala.inline
-  def notification: notification = "notification".asInstanceOf[notification]
-  @scala.inline
-  def `off ramp`: `off ramp` = "off ramp".asInstanceOf[`off ramp`]
-  @scala.inline
-  def `on ramp`: `on ramp` = "on ramp".asInstanceOf[`on ramp`]
-  @scala.inline
-  def polyline: polyline = "polyline".asInstanceOf[polyline]
-  @scala.inline
-  def polyline6: polyline6 = "polyline6".asInstanceOf[polyline6]
-  @scala.inline
-  def ramp: ramp = "ramp".asInstanceOf[ramp]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rotary: rotary = "rotary".asInstanceOf[rotary]
-  @scala.inline
-  def roundabout: roundabout = "roundabout".asInstanceOf[roundabout]
-  @scala.inline
-  def `roundabout turn`: `roundabout turn` = "roundabout turn".asInstanceOf[`roundabout turn`]
-  @scala.inline
-  def `sharp left`: `sharp left` = "sharp left".asInstanceOf[`sharp left`]
-  @scala.inline
-  def `sharp right`: `sharp right` = "sharp right".asInstanceOf[`sharp right`]
-  @scala.inline
-  def simplified: simplified = "simplified".asInstanceOf[simplified]
-  @scala.inline
-  def `slight left`: `slight left` = "slight left".asInstanceOf[`slight left`]
-  @scala.inline
-  def `slight rigth`: `slight rigth` = "slight rigth".asInstanceOf[`slight rigth`]
-  @scala.inline
-  def straight: straight = "straight".asInstanceOf[straight]
-  @scala.inline
-  def turn: turn = "turn".asInstanceOf[turn]
-  @scala.inline
-  def `use lane`: `use lane` = "use lane".asInstanceOf[`use lane`]
-  @scala.inline
-  def uturn: uturn = "uturn".asInstanceOf[uturn]
+  @js.native
+  sealed trait `on ramp`
+    extends StObject
+       with StepManeuverTypes
+  inline def `on ramp`: `on ramp` = ("on ramp").asInstanceOf[`on ramp`]
+  
+  @js.native
+  sealed trait polyline
+    extends StObject
+       with GeometriesTypes
+  inline def polyline: polyline = "polyline".asInstanceOf[polyline]
+  
+  @js.native
+  sealed trait polyline6
+    extends StObject
+       with GeometriesTypes
+  inline def polyline6: polyline6 = "polyline6".asInstanceOf[polyline6]
+  
+  @js.native
+  sealed trait ramp
+    extends StObject
+       with StepManeuverTypes
+  inline def ramp: ramp = "ramp".asInstanceOf[ramp]
+  
+  @js.native
+  sealed trait right
+    extends StObject
+       with Indication
+  inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
+  sealed trait rotary
+    extends StObject
+       with StepManeuverTypes
+  inline def rotary: rotary = "rotary".asInstanceOf[rotary]
+  
+  @js.native
+  sealed trait roundabout
+    extends StObject
+       with StepManeuverTypes
+  inline def roundabout: roundabout = "roundabout".asInstanceOf[roundabout]
+  
+  @js.native
+  sealed trait `roundabout turn`
+    extends StObject
+       with StepManeuverTypes
+  inline def `roundabout turn`: `roundabout turn` = ("roundabout turn").asInstanceOf[`roundabout turn`]
+  
+  @js.native
+  sealed trait `sharp left`
+    extends StObject
+       with Indication
+  inline def `sharp left`: `sharp left` = ("sharp left").asInstanceOf[`sharp left`]
+  
+  @js.native
+  sealed trait `sharp right`
+    extends StObject
+       with Indication
+  inline def `sharp right`: `sharp right` = ("sharp right").asInstanceOf[`sharp right`]
+  
+  @js.native
+  sealed trait simplified
+    extends StObject
+       with OverviewTypes
+  inline def simplified: simplified = "simplified".asInstanceOf[simplified]
+  
+  @js.native
+  sealed trait `slight left`
+    extends StObject
+       with Indication
+  inline def `slight left`: `slight left` = ("slight left").asInstanceOf[`slight left`]
+  
+  @js.native
+  sealed trait `slight rigth`
+    extends StObject
+       with Indication
+  inline def `slight rigth`: `slight rigth` = ("slight rigth").asInstanceOf[`slight rigth`]
+  
+  @js.native
+  sealed trait snapped
+    extends StObject
+       with FallbackCoordinateTypes
+  inline def snapped: snapped = "snapped".asInstanceOf[snapped]
+  
+  @js.native
+  sealed trait speed extends StObject
+  inline def speed: speed = "speed".asInstanceOf[speed]
+  
+  @js.native
+  sealed trait split
+    extends StObject
+       with GapTypes
+  inline def split: split = "split".asInstanceOf[split]
+  
+  @js.native
+  sealed trait straight
+    extends StObject
+       with Indication
+  inline def straight: straight = "straight".asInstanceOf[straight]
+  
+  @js.native
+  sealed trait turn
+    extends StObject
+       with StepManeuverTypes
+  inline def turn: turn = "turn".asInstanceOf[turn]
+  
+  @js.native
+  sealed trait unrestricted
+    extends StObject
+       with ApproachTypes
+  inline def unrestricted: unrestricted = "unrestricted".asInstanceOf[unrestricted]
+  
+  @js.native
+  sealed trait `use lane`
+    extends StObject
+       with StepManeuverTypes
+  inline def `use lane`: `use lane` = ("use lane").asInstanceOf[`use lane`]
+  
+  @js.native
+  sealed trait uturn
+    extends StObject
+       with Indication
+  inline def uturn: uturn = "uturn".asInstanceOf[uturn]
+  
+  @js.native
+  sealed trait weight extends StObject
+  inline def weight: weight = "weight".asInstanceOf[weight]
 }
-

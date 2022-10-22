@@ -2,70 +2,121 @@ package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListViewOptions extends js.Object {
+trait ListViewOptions extends StObject {
+  
   var altTemplate: js.UndefOr[js.Function] = js.undefined
+  
   var autoBind: js.UndefOr[Boolean] = js.undefined
+  
   var cancel: js.UndefOr[js.Function1[/* e */ ListViewCancelEvent, Unit]] = js.undefined
+  
   var change: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
+  
   var dataBinding: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
+  
   var dataBound: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
+  
   var edit: js.UndefOr[js.Function1[/* e */ ListViewEditEvent, Unit]] = js.undefined
+  
   var editTemplate: js.UndefOr[js.Function] = js.undefined
+  
   var height: js.UndefOr[Double | String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var navigatable: js.UndefOr[Boolean] = js.undefined
+  
   var remove: js.UndefOr[js.Function1[/* e */ ListViewRemoveEvent, Unit]] = js.undefined
+  
   var save: js.UndefOr[js.Function1[/* e */ ListViewSaveEvent, Unit]] = js.undefined
+  
   var scrollable: js.UndefOr[Boolean | String] = js.undefined
+  
   var selectable: js.UndefOr[Boolean | String] = js.undefined
+  
   var template: js.UndefOr[js.Function] = js.undefined
 }
-
 object ListViewOptions {
-  @scala.inline
-  def apply(
-    altTemplate: js.Function = null,
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    cancel: /* e */ ListViewCancelEvent => Callback = null,
-    change: /* e */ ListViewEvent => Callback = null,
-    dataBinding: /* e */ ListViewEvent => Callback = null,
-    dataBound: /* e */ ListViewEvent => Callback = null,
-    dataSource: js.Any | DataSource = null,
-    edit: /* e */ ListViewEditEvent => Callback = null,
-    editTemplate: js.Function = null,
-    height: Double | String = null,
-    name: String = null,
-    navigatable: js.UndefOr[Boolean] = js.undefined,
-    remove: /* e */ ListViewRemoveEvent => Callback = null,
-    save: /* e */ ListViewSaveEvent => Callback = null,
-    scrollable: Boolean | String = null,
-    selectable: Boolean | String = null,
-    template: js.Function = null
-  ): ListViewOptions = {
+  
+  inline def apply(): ListViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (altTemplate != null) __obj.updateDynamic("altTemplate")(altTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ListViewCancelEvent) => cancel(t0).runNow()))
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ListViewEvent) => change(t0).runNow()))
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ListViewEvent) => dataBinding(t0).runNow()))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ListViewEvent) => dataBound(t0).runNow()))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ListViewEditEvent) => edit(t0).runNow()))
-    if (editTemplate != null) __obj.updateDynamic("editTemplate")(editTemplate.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.asInstanceOf[js.Any])
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ListViewRemoveEvent) => remove(t0).runNow()))
-    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ListViewSaveEvent) => save(t0).runNow()))
-    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViewOptions]
   }
+  
+  extension [Self <: ListViewOptions](x: Self) {
+    
+    inline def setAltTemplate(value: js.Function): Self = StObject.set(x, "altTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setAltTemplateUndefined: Self = StObject.set(x, "altTemplate", js.undefined)
+    
+    inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
+    
+    inline def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
+    
+    inline def setCancel(value: /* e */ ListViewCancelEvent => Callback): Self = StObject.set(x, "cancel", js.Any.fromFunction1((t0: /* e */ ListViewCancelEvent) => value(t0).runNow()))
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setChange(value: /* e */ ListViewEvent => Callback): Self = StObject.set(x, "change", js.Any.fromFunction1((t0: /* e */ ListViewEvent) => value(t0).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setDataBinding(value: /* e */ ListViewEvent => Callback): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1((t0: /* e */ ListViewEvent) => value(t0).runNow()))
+    
+    inline def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
+    
+    inline def setDataBound(value: /* e */ ListViewEvent => Callback): Self = StObject.set(x, "dataBound", js.Any.fromFunction1((t0: /* e */ ListViewEvent) => value(t0).runNow()))
+    
+    inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
+    
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setEdit(value: /* e */ ListViewEditEvent => Callback): Self = StObject.set(x, "edit", js.Any.fromFunction1((t0: /* e */ ListViewEditEvent) => value(t0).runNow()))
+    
+    inline def setEditTemplate(value: js.Function): Self = StObject.set(x, "editTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setEditTemplateUndefined: Self = StObject.set(x, "editTemplate", js.undefined)
+    
+    inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
+    
+    inline def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
+    
+    inline def setRemove(value: /* e */ ListViewRemoveEvent => Callback): Self = StObject.set(x, "remove", js.Any.fromFunction1((t0: /* e */ ListViewRemoveEvent) => value(t0).runNow()))
+    
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    
+    inline def setSave(value: /* e */ ListViewSaveEvent => Callback): Self = StObject.set(x, "save", js.Any.fromFunction1((t0: /* e */ ListViewSaveEvent) => value(t0).runNow()))
+    
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    
+    inline def setScrollable(value: Boolean | String): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
+    
+    inline def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
+    
+    inline def setSelectable(value: Boolean | String): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    
+    inline def setTemplate(value: js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+  }
 }
-

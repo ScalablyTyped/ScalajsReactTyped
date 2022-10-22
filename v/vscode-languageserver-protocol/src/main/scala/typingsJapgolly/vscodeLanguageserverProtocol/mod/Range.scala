@@ -1,32 +1,40 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "Range")
-@js.native
-object Range extends js.Object {
+object Range {
+  
+  @JSImport("vscode-languageserver-protocol", "Range")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
-    * Create a new Range liternal.
+    * Create a new Range literal.
     * @param startLine The start line number.
     * @param startCharacter The start character.
     * @param endLine The end line number.
     * @param endCharacter The end character.
     */
-  def create(startLine: Double, startCharacter: Double, endLine: Double, endCharacter: Double): typingsJapgolly.vscodeLanguageserverTypes.mod.Range = js.native
+  inline def create(
+    startLine: typingsJapgolly.vscodeLanguageserverTypes.mod.uinteger,
+    startCharacter: typingsJapgolly.vscodeLanguageserverTypes.mod.uinteger,
+    endLine: typingsJapgolly.vscodeLanguageserverTypes.mod.uinteger,
+    endCharacter: typingsJapgolly.vscodeLanguageserverTypes.mod.uinteger
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.Range = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.Range]
   /**
-    * Create a new Range liternal.
+    * Create a new Range literal.
     * @param start The range's start position.
     * @param end The range's end position.
     */
-  def create(
+  inline def create(
     start: typingsJapgolly.vscodeLanguageserverTypes.mod.Position,
     end: typingsJapgolly.vscodeLanguageserverTypes.mod.Position
-  ): typingsJapgolly.vscodeLanguageserverTypes.mod.Range = js.native
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.Range = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.Range]
+  
   /**
     * Checks whether the given literal conforms to the [Range](#Range) interface.
     */
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean = js.native
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean]
 }
-

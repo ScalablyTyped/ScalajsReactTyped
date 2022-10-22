@@ -1,24 +1,20 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.immediate
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.diskSpaceThreshold
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.diskSpaceThresholdOrInactiveThreshold
 */
-trait SharedPCAccountDeletionPolicyType extends js.Object
-
+trait SharedPCAccountDeletionPolicyType extends StObject
 object SharedPCAccountDeletionPolicyType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def diskSpaceThreshold: typingsJapgolly.microsoftGraph.microsoftGraphStrings.diskSpaceThreshold = this.cast("diskSpaceThreshold")
-  @scala.inline
-  def diskSpaceThresholdOrInactiveThreshold: typingsJapgolly.microsoftGraph.microsoftGraphStrings.diskSpaceThresholdOrInactiveThreshold = this.cast("diskSpaceThresholdOrInactiveThreshold")
-  @scala.inline
-  def immediate: typingsJapgolly.microsoftGraph.microsoftGraphStrings.immediate = this.cast("immediate")
+  
+  inline def diskSpaceThreshold: typingsJapgolly.microsoftGraph.microsoftGraphStrings.diskSpaceThreshold = "diskSpaceThreshold".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.diskSpaceThreshold]
+  
+  inline def diskSpaceThresholdOrInactiveThreshold: typingsJapgolly.microsoftGraph.microsoftGraphStrings.diskSpaceThresholdOrInactiveThreshold = "diskSpaceThresholdOrInactiveThreshold".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.diskSpaceThresholdOrInactiveThreshold]
+  
+  inline def immediate: typingsJapgolly.microsoftGraph.microsoftGraphStrings.immediate = "immediate".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.immediate]
 }
-

@@ -1,42 +1,66 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSourceSchema extends js.Object {
-  var aggregates: js.UndefOr[js.Any] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
-  var errors: js.UndefOr[js.Any] = js.undefined
-  var groups: js.UndefOr[js.Any] = js.undefined
-  var model: js.UndefOr[js.Any] = js.undefined
+trait DataSourceSchema extends StObject {
+  
+  var aggregates: js.UndefOr[Any] = js.undefined
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
+  var errors: js.UndefOr[Any] = js.undefined
+  
+  var groups: js.UndefOr[Any] = js.undefined
+  
+  var model: js.UndefOr[Any] = js.undefined
+  
   var parse: js.UndefOr[js.Function] = js.undefined
-  var total: js.UndefOr[js.Any] = js.undefined
+  
+  var total: js.UndefOr[Any] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object DataSourceSchema {
-  @scala.inline
-  def apply(
-    aggregates: js.Any = null,
-    data: js.Any = null,
-    errors: js.Any = null,
-    groups: js.Any = null,
-    model: js.Any = null,
-    parse: js.Function = null,
-    total: js.Any = null,
-    `type`: String = null
-  ): DataSourceSchema = {
+  
+  inline def apply(): DataSourceSchema = {
     val __obj = js.Dynamic.literal()
-    if (aggregates != null) __obj.updateDynamic("aggregates")(aggregates.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSchema]
   }
+  
+  extension [Self <: DataSourceSchema](x: Self) {
+    
+    inline def setAggregates(value: Any): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
+    
+    inline def setAggregatesUndefined: Self = StObject.set(x, "aggregates", js.undefined)
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setErrors(value: Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    
+    inline def setGroups(value: Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    
+    inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    
+    inline def setParse(value: js.Function): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    
+    inline def setTotal(value: Any): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

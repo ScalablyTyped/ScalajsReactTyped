@@ -1,61 +1,66 @@
 package typingsJapgolly.googleapisCommon
 
-import typingsJapgolly.googleapisCommon.schemaMod.HttpMethod
-import typingsJapgolly.googleapisCommon.schemaMod.SchemaType
+import typingsJapgolly.googleapisCommon.buildSrcSchemaMod.HttpMethod
+import typingsJapgolly.googleapisCommon.buildSrcSchemaMod.SchemaType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleapisCommonStrings {
-  @js.native
-  sealed trait GET extends HttpMethod
   
   @js.native
-  sealed trait PATCH extends HttpMethod
+  sealed trait GET
+    extends StObject
+       with HttpMethod
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait PUT extends HttpMethod
+  sealed trait PATCH
+    extends StObject
+       with HttpMethod
+  inline def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
-  sealed trait array extends SchemaType
+  sealed trait PUT
+    extends StObject
+       with HttpMethod
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait boolean extends SchemaType
+  sealed trait array
+    extends StObject
+       with SchemaType
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo extends js.Object
+  sealed trait boolean
+    extends StObject
+       with SchemaType
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait int32 extends js.Object
+  sealed trait int32 extends StObject
+  inline def int32: int32 = "int32".asInstanceOf[int32]
   
   @js.native
-  sealed trait integer extends SchemaType
+  sealed trait integer
+    extends StObject
+       with SchemaType
+  inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
-  sealed trait `object` extends SchemaType
+  sealed trait `object`
+    extends StObject
+       with SchemaType
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait string extends SchemaType
+  sealed trait stream extends StObject
+  inline def stream: stream = "stream".asInstanceOf[stream]
   
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo: httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo = "https://oauth2.googleapis.com/tokeninfo".asInstanceOf[httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo]
-  @scala.inline
-  def int32: int32 = "int32".asInstanceOf[int32]
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  @js.native
+  sealed trait string
+    extends StObject
+       with SchemaType
+  inline def string: string = "string".asInstanceOf[string]
 }
-

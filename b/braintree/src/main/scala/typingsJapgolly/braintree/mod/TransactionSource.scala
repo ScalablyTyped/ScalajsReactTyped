@@ -1,24 +1,20 @@
 package typingsJapgolly.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.braintree.braintreeStrings.Api
   - typingsJapgolly.braintree.braintreeStrings.ControlPanel
   - typingsJapgolly.braintree.braintreeStrings.Recurring
 */
-trait TransactionSource extends js.Object
-
+trait TransactionSource extends StObject
 object TransactionSource {
-  @scala.inline
-  def Api: typingsJapgolly.braintree.braintreeStrings.Api = this.cast("Api")
-  @scala.inline
-  def ControlPanel: typingsJapgolly.braintree.braintreeStrings.ControlPanel = this.cast("ControlPanel")
-  @scala.inline
-  def Recurring: typingsJapgolly.braintree.braintreeStrings.Recurring = this.cast("Recurring")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Api: typingsJapgolly.braintree.braintreeStrings.Api = "Api".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.Api]
+  
+  inline def ControlPanel: typingsJapgolly.braintree.braintreeStrings.ControlPanel = "ControlPanel".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.ControlPanel]
+  
+  inline def Recurring: typingsJapgolly.braintree.braintreeStrings.Recurring = "Recurring".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.Recurring]
 }
-

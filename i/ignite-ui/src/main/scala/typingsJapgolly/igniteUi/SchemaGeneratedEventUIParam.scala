@@ -1,32 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchemaGeneratedEventUIParam extends js.Object {
+trait SchemaGeneratedEventUIParam extends StObject {
+  
   /**
-  	 * Gets reference to data source.
-  	 */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to data source.
+    */
+  var dataSource: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the grid.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the grid.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to data source schema.
-  	 */
-  var schema: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to data source schema.
+    */
+  var schema: js.UndefOr[Any] = js.undefined
 }
-
 object SchemaGeneratedEventUIParam {
-  @scala.inline
-  def apply(dataSource: js.Any = null, owner: js.Any = null, schema: js.Any = null): SchemaGeneratedEventUIParam = {
+  
+  inline def apply(): SchemaGeneratedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGeneratedEventUIParam]
   }
+  
+  extension [Self <: SchemaGeneratedEventUIParam](x: Self) {
+    
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setSchema(value: Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+  }
 }
-

@@ -2,34 +2,47 @@ package typingsJapgolly.voximplantWebsdk.mod.IMEventTypes
 
 import typingsJapgolly.voximplantWebsdk.mod.ChatStateType
 import typingsJapgolly.voximplantWebsdk.mod.VoxImplantIMEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-		*	Event dispatched when chat session state updated
-		*/
-trait ChatStateUpdate extends VoxImplantIMEvent {
+  *    Event dispatched when chat session state updated
+  */
+trait ChatStateUpdate
+  extends StObject
+     with VoxImplantIMEvent {
+  
   /**
-  			*	User id
-  			*/
+    *    User id
+    */
   var id: String
+  
   /**
-  			*	Resource name
-  			*/
+    *    Resource name
+    */
   var resource: js.UndefOr[String] = js.undefined
+  
   /**
-  			*	Current chat session state. See VoxImplant.ChatStateType enum
-  			*/
+    *    Current chat session state. See VoxImplant.ChatStateType enum
+    */
   var state: ChatStateType
 }
-
 object ChatStateUpdate {
-  @scala.inline
-  def apply(id: String, state: ChatStateType, resource: String = null): ChatStateUpdate = {
+  
+  inline def apply(id: String, state: ChatStateType): ChatStateUpdate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatStateUpdate]
   }
+  
+  extension [Self <: ChatStateUpdate](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    
+    inline def setState(value: ChatStateType): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+  }
 }
-

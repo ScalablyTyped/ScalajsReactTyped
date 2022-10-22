@@ -10,15 +10,12 @@ a command line option parser that will make you smile
 | ------------------ | :-------------: |
 | Full name          | docopt |
 | Keywords           | command, options, argument, args, cli, commandline |
-| # releases         | 0 |
-| # dependents       | 265 |
-| # downloads        | 8884430 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1183182.0 |
+| # stars            | 22.0 |
 
 ## Links
-- [Homepage](https://github.com/scarnie/docopt.coffee)
-- [Bugs](https://github.com/scarnie/docopt.coffee/issues)
-- [Repository](https://github.com/scarnie/docopt.coffee)
 - [Npm](https://www.npmjs.com/package/docopt)
     
 

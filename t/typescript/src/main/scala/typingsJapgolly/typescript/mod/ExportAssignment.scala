@@ -1,16 +1,26 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportAssignment extends DeclarationStatement {
-  var expression: Expression = js.native
-  var isExportEquals: js.UndefOr[Boolean] = js.native
+trait ExportAssignment
+  extends StObject
+     with DeclarationStatement
+     with HasJSDoc
+     with HasModifiers {
+  
+  val expression: Expression = js.native
+  
+  val isExportEquals: js.UndefOr[Boolean] = js.native
+  
   @JSName("kind")
-  var kind_ExportAssignment: typingsJapgolly.typescript.mod.SyntaxKind.ExportAssignment = js.native
+  val kind_ExportAssignment: typingsJapgolly.typescript.mod.SyntaxKind.ExportAssignment = js.native
+  
+  @JSName("modifiers")
+  val modifiers_ExportAssignment: js.UndefOr[NodeArray[Modifier]] = js.native
+  
   @JSName("parent")
-  var parent_ExportAssignment: SourceFile = js.native
+  val parent_ExportAssignment: SourceFile = js.native
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.phaser.Phaser.Types.Physics.Matter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An `Object` that specifies the collision filtering properties of this body.
@@ -26,29 +26,42 @@ import scala.scalajs.js.annotation._
   * category in its mask, i.e. `(categoryA & maskB) !== 0` and `(categoryB & maskA) !== 0`
   * are both true.
   */
-trait MatterCollisionFilter extends js.Object {
+trait MatterCollisionFilter extends StObject {
+  
   /**
     * A bit field that specifies the collision category this body belongs to. The category value should have only one bit set, for example `0x0001`. This means there are up to 32 unique collision categories available.
     */
   var category: js.UndefOr[Double] = js.undefined
+  
   /**
     * An Integer `Number`, that specifies the collision group this body belongs to.
     */
   var group: js.UndefOr[Double] = js.undefined
+  
   /**
     * A bit mask that specifies the collision categories this body may collide with.
     */
   var mask: js.UndefOr[Double] = js.undefined
 }
-
 object MatterCollisionFilter {
-  @scala.inline
-  def apply(category: Int | Double = null, group: Int | Double = null, mask: Int | Double = null): MatterCollisionFilter = {
+  
+  inline def apply(): MatterCollisionFilter = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatterCollisionFilter]
   }
+  
+  extension [Self <: MatterCollisionFilter](x: Self) {
+    
+    inline def setCategory(value: Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    
+    inline def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setMask(value: Double): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+  }
 }
-

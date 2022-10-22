@@ -1,79 +1,64 @@
 package typingsJapgolly.jqueryNicescroll
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryNicescrollStrings {
-  @js.native
-  sealed trait auto extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait cursor extends js.Object
+  sealed trait bottom extends StObject
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait cursor extends StObject
+  inline def cursor: cursor = "cursor".asInstanceOf[cursor]
   
   @js.native
-  sealed trait inherit extends js.Object
+  sealed trait hidden extends StObject
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
-  sealed trait initial extends js.Object
+  sealed trait inherit extends StObject
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
-  sealed trait leave extends js.Object
+  sealed trait initial extends StObject
+  inline def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait leave extends StObject
+  inline def leave: leave = "leave".asInstanceOf[leave]
   
   @js.native
-  sealed trait overlay extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait overlay extends StObject
+  inline def overlay: overlay = "overlay".asInstanceOf[overlay]
   
   @js.native
-  sealed trait scroll extends js.Object
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait scroll extends StObject
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait unset extends js.Object
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait visible extends js.Object
+  sealed trait unset extends StObject
+  inline def unset: unset = "unset".asInstanceOf[unset]
   
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def cursor: cursor = "cursor".asInstanceOf[cursor]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
-  @scala.inline
-  def leave: leave = "leave".asInstanceOf[leave]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def overlay: overlay = "overlay".asInstanceOf[overlay]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def unset: unset = "unset".asInstanceOf[unset]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
+  @js.native
+  sealed trait visible extends StObject
+  inline def visible: visible = "visible".asInstanceOf[visible]
 }
-

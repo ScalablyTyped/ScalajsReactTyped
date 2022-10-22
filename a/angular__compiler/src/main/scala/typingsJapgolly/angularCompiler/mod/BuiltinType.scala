@@ -1,18 +1,14 @@
 package typingsJapgolly.angularCompiler.mod
 
-import typingsJapgolly.angularCompiler.outputAstMod.TypeModifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "BuiltinType")
 @js.native
-class BuiltinType protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.BuiltinType {
-  def this(name: typingsJapgolly.angularCompiler.outputAstMod.BuiltinTypeName) = this()
-  def this(
-    name: typingsJapgolly.angularCompiler.outputAstMod.BuiltinTypeName,
-    modifiers: js.Array[TypeModifier]
-  ) = this()
+open class BuiltinType protected () extends Type {
+  def this(name: BuiltinTypeName) = this()
+  def this(name: BuiltinTypeName, modifiers: TypeModifier) = this()
+  
+  var name: BuiltinTypeName = js.native
 }
-

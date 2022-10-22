@@ -1,99 +1,88 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import typingsJapgolly.officeJsPreview.AnonExpand
 import typingsJapgolly.officeJsPreview.Excel.Interfaces.ChartPlotAreaData
 import typingsJapgolly.officeJsPreview.Excel.Interfaces.ChartPlotAreaLoadOptions
 import typingsJapgolly.officeJsPreview.Excel.Interfaces.ChartPlotAreaUpdateData
 import typingsJapgolly.officeJsPreview.OfficeExtension.ClientObject
 import typingsJapgolly.officeJsPreview.OfficeExtension.UpdateOptions
+import typingsJapgolly.officeJsPreview.anon.Expand
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Automatic
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Custom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * This object represents the attributes for a chart plot area.
   *
-  * This object represents the attributes for a chart plotArea object.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
-@JSGlobal("Excel.ChartPlotArea")
 @js.native
-class ChartPlotArea () extends ClientObject {
+trait ChartPlotArea
+  extends StObject
+     with ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartPlotArea: RequestContext = js.native
+  
   /**
+    * Specifies the formatting of a chart plot area.
     *
-    * Represents the formatting of a chart plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val format: ChartPlotAreaFormat = js.native
+  
   /**
+    * Specifies the height value of a plot area.
     *
-    * Represents the height value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var height: Double = js.native
+  
   /**
+    * Specifies the inside height value of a plot area.
     *
-    * Represents the insideHeight value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var insideHeight: Double = js.native
+  
   /**
+    * Specifies the inside left value of a plot area.
     *
-    * Represents the insideLeft value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var insideLeft: Double = js.native
+  
   /**
+    * Specifies the inside top value of a plot area.
     *
-    * Represents the insideTop value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var insideTop: Double = js.native
+  
   /**
+    * Specifies the inside width value of a plot area.
     *
-    * Represents the insideWidth value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var insideWidth: Double = js.native
+  
   /**
+    * Specifies the left value of a plot area.
     *
-    * Represents the left value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var left: Double = js.native
-  /**
-    *
-    * Represents the position of plotArea.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  var position: ChartPlotAreaPosition | Automatic | Custom = js.native
-  /**
-    *
-    * Represents the top value of plotArea.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  var top: Double = js.native
-  /**
-    *
-    * Represents the width value of plotArea.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  var width: Double = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -101,28 +90,47 @@ class ChartPlotArea () extends ClientObject {
     */
   def load(): ChartPlotArea = js.native
   def load(options: ChartPlotAreaLoadOptions): ChartPlotArea = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartPlotArea = js.native
+  def load(propertyNamesAndPaths: Expand): ChartPlotArea = js.native
   def load(propertyNames: String): ChartPlotArea = js.native
   def load(propertyNames: js.Array[String]): ChartPlotArea = js.native
-  /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-  def set(properties: ChartPlotArea): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+  
+  /**
+    * Specifies the position of a plot area.
     *
     * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartPlotArea): void`
-    *
+    * [Api set: ExcelApi 1.8]
+    */
+  var position: ChartPlotAreaPosition | Automatic | Custom = js.native
+  
+  /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+  def set(properties: ChartPlotArea): Unit = js.native
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
   def set(properties: ChartPlotAreaUpdateData): Unit = js.native
   def set(properties: ChartPlotAreaUpdateData, options: UpdateOptions): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.ChartPlotArea object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPlotAreaData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): ChartPlotAreaData = js.native
+  
+  /**
+    * Specifies the top value of a plot area.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
+  var top: Double = js.native
+  
+  /**
+    * Specifies the width value of a plot area.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
+  var width: Double = js.native
 }
-

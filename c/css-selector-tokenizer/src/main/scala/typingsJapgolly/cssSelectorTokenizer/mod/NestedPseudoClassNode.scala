@@ -1,33 +1,38 @@
 package typingsJapgolly.cssSelectorTokenizer.mod
 
 import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.`nested-pseudo-class`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NestedPseudoClassNode
-  extends SelectorNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with SelectorNodeType {
+  
   @JSName("name")
   var name_NestedPseudoClassNode: String
+  
   var nodes: js.Array[SelectorNode]
+  
   var `type`: `nested-pseudo-class`
 }
-
 object NestedPseudoClassNode {
-  @scala.inline
-  def apply(
-    name: String,
-    nodes: js.Array[SelectorNode],
-    `type`: `nested-pseudo-class`,
-    after: String = null,
-    before: String = null
-  ): NestedPseudoClassNode = {
+  
+  inline def apply(name: String, nodes: js.Array[SelectorNode]): NestedPseudoClassNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("nested-pseudo-class")
     __obj.asInstanceOf[NestedPseudoClassNode]
   }
+  
+  extension [Self <: NestedPseudoClassNode](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNodes(value: js.Array[SelectorNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    
+    inline def setNodesVarargs(value: SelectorNode*): Self = StObject.set(x, "nodes", js.Array(value*))
+    
+    inline def setType(value: `nested-pseudo-class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

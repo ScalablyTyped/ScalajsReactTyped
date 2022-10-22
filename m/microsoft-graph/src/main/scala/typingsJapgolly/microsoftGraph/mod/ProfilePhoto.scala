@@ -1,24 +1,38 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProfilePhoto extends Entity {
+trait ProfilePhoto
+  extends StObject
+     with Entity {
+  
   // The height of the photo. Read-only.
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[NullableOption[Double]] = js.undefined
+  
   // The width of the photo. Read-only.
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[NullableOption[Double]] = js.undefined
 }
-
 object ProfilePhoto {
-  @scala.inline
-  def apply(height: Int | Double = null, id: String = null, width: Int | Double = null): ProfilePhoto = {
+  
+  inline def apply(): ProfilePhoto = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfilePhoto]
   }
+  
+  extension [Self <: ProfilePhoto](x: Self) {
+    
+    inline def setHeight(value: NullableOption[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setWidth(value: NullableOption[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

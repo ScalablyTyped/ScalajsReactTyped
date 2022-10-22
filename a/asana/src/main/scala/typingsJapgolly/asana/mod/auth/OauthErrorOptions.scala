@@ -1,23 +1,36 @@
 package typingsJapgolly.asana.mod.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OauthErrorOptions extends js.Object {
+trait OauthErrorOptions extends StObject {
+  
   var error: js.UndefOr[String] = js.undefined
+  
   var error_description: js.UndefOr[String] = js.undefined
+  
   var error_uri: js.UndefOr[String] = js.undefined
 }
-
 object OauthErrorOptions {
-  @scala.inline
-  def apply(error: String = null, error_description: String = null, error_uri: String = null): OauthErrorOptions = {
+  
+  inline def apply(): OauthErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (error_description != null) __obj.updateDynamic("error_description")(error_description.asInstanceOf[js.Any])
-    if (error_uri != null) __obj.updateDynamic("error_uri")(error_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthErrorOptions]
   }
+  
+  extension [Self <: OauthErrorOptions](x: Self) {
+    
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setError_description(value: String): Self = StObject.set(x, "error_description", value.asInstanceOf[js.Any])
+    
+    inline def setError_descriptionUndefined: Self = StObject.set(x, "error_description", js.undefined)
+    
+    inline def setError_uri(value: String): Self = StObject.set(x, "error_uri", value.asInstanceOf[js.Any])
+    
+    inline def setError_uriUndefined: Self = StObject.set(x, "error_uri", js.undefined)
+  }
 }
-

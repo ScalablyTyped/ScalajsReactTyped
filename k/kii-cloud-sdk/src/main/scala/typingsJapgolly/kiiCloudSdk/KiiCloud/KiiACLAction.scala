@@ -1,65 +1,52 @@
 package typingsJapgolly.kiiCloudSdk.KiiCloud
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KiiACLAction extends js.Object
-
+sealed trait KiiACLAction extends StObject
 @JSGlobal("KiiCloud.KiiACLAction")
 @js.native
-object KiiACLAction extends js.Object {
-  @js.native
-  sealed trait KiiACLBucketActionCreateObjects extends KiiACLAction
+object KiiACLAction extends StObject {
   
   @js.native
-  sealed trait KiiACLBucketActionDropBucket extends KiiACLAction
+  sealed trait KiiACLBucketActionCreateObjects
+    extends StObject
+       with KiiACLAction
   
   @js.native
-  sealed trait KiiACLBucketActionQueryObjects extends KiiACLAction
+  sealed trait KiiACLBucketActionDropBucket
+    extends StObject
+       with KiiACLAction
   
   @js.native
-  sealed trait KiiACLBucketActionReadObjects extends KiiACLAction
+  sealed trait KiiACLBucketActionQueryObjects
+    extends StObject
+       with KiiACLAction
   
   @js.native
-  sealed trait KiiACLObjectActionRead extends KiiACLAction
+  sealed trait KiiACLBucketActionReadObjects
+    extends StObject
+       with KiiACLAction
   
   @js.native
-  sealed trait KiiACLObjectActionWrite extends KiiACLAction
+  sealed trait KiiACLObjectActionRead
+    extends StObject
+       with KiiACLAction
   
   @js.native
-  sealed trait KiiACLSendMessageToTopic extends KiiACLAction
+  sealed trait KiiACLObjectActionWrite
+    extends StObject
+       with KiiACLAction
   
   @js.native
-  sealed trait KiiACLSubscribeToTopic extends KiiACLAction
+  sealed trait KiiACLSendMessageToTopic
+    extends StObject
+       with KiiACLAction
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KiiACLAction with Double] = js.native
-  /* 0 */ @js.native
-  object KiiACLBucketActionCreateObjects extends TopLevel[KiiACLBucketActionCreateObjects with Double]
-  
-  /* 2 */ @js.native
-  object KiiACLBucketActionDropBucket extends TopLevel[KiiACLBucketActionDropBucket with Double]
-  
-  /* 1 */ @js.native
-  object KiiACLBucketActionQueryObjects extends TopLevel[KiiACLBucketActionQueryObjects with Double]
-  
-  /* 5 */ @js.native
-  object KiiACLBucketActionReadObjects extends TopLevel[KiiACLBucketActionReadObjects with Double]
-  
-  /* 3 */ @js.native
-  object KiiACLObjectActionRead extends TopLevel[KiiACLObjectActionRead with Double]
-  
-  /* 4 */ @js.native
-  object KiiACLObjectActionWrite extends TopLevel[KiiACLObjectActionWrite with Double]
-  
-  /* 7 */ @js.native
-  object KiiACLSendMessageToTopic extends TopLevel[KiiACLSendMessageToTopic with Double]
-  
-  /* 6 */ @js.native
-  object KiiACLSubscribeToTopic extends TopLevel[KiiACLSubscribeToTopic with Double]
-  
+  @js.native
+  sealed trait KiiACLSubscribeToTopic
+    extends StObject
+       with KiiACLAction
 }
-

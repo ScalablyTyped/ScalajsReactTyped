@@ -1,20 +1,23 @@
 package typingsJapgolly.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetClipboardDataSuccessCallbackOption extends js.Object {
+trait GetClipboardDataSuccessCallbackOption extends StObject {
+  
   /** 剪贴板的内容 */
   var data: String
 }
-
 object GetClipboardDataSuccessCallbackOption {
-  @scala.inline
-  def apply(data: String): GetClipboardDataSuccessCallbackOption = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
+  inline def apply(data: String): GetClipboardDataSuccessCallbackOption = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClipboardDataSuccessCallbackOption]
   }
+  
+  extension [Self <: GetClipboardDataSuccessCallbackOption](x: Self) {
+    
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+  }
 }
-

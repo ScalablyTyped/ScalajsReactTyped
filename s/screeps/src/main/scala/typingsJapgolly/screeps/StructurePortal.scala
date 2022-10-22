@@ -1,9 +1,9 @@
 package typingsJapgolly.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A non-player structure.
@@ -11,21 +11,47 @@ import scala.scalajs.js.annotation._
   * Portals appear randomly in the central room of each sector.
   */
 trait StructurePortal
-  extends Structure[STRUCTURE_PORTAL]
+  extends StObject
+     with Structure[STRUCTURE_PORTAL]
      with AnyStructure {
+  
   /**
     * If this is an inter-room portal, then this property contains a RoomPosition object leading to the point in the destination room.
     * If this is an inter-shard portal, then this property contains an object with shard and room string properties.
     * Exact coordinates are undetermined, the creep will appear at any free spot in the destination room.
     */
-  var destination: RoomPosition | AnonShard
+  var destination: RoomPosition | typingsJapgolly.screeps.anon.Shard
+  
   /**
     * The amount of game ticks when the portal disappears, or undefined when the portal is stable.
     */
   var ticksToDecay: js.UndefOr[Double] = js.undefined
 }
-
-@JSGlobal("StructurePortal")
-@js.native
-object StructurePortal extends TopLevel[StructurePortalConstructor]
-
+object StructurePortal {
+  
+  inline def apply(
+    destination: RoomPosition | typingsJapgolly.screeps.anon.Shard,
+    destroy: CallbackTo[ScreepsReturnCode],
+    effects: js.Array[RoomObjectEffect],
+    hits: Double,
+    hitsMax: Double,
+    id: Id[StructurePortal],
+    isActive: CallbackTo[Boolean],
+    notifyWhenAttacked: Boolean => ScreepsReturnCode,
+    pos: RoomPosition,
+    room: Room,
+    structureType: STRUCTURE_PORTAL
+  ): StructurePortal = {
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], destroy = destroy.toJsFn, effects = effects.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], hitsMax = hitsMax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = isActive.toJsFn, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), pos = pos.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], structureType = structureType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StructurePortal]
+  }
+  
+  extension [Self <: StructurePortal](x: Self) {
+    
+    inline def setDestination(value: RoomPosition | typingsJapgolly.screeps.anon.Shard): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    
+    inline def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
+    
+    inline def setTicksToDecayUndefined: Self = StObject.set(x, "ticksToDecay", js.undefined)
+  }
+}

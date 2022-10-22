@@ -1,30 +1,34 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaQueryListEventInit extends EventInit {
+trait MediaQueryListEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
   var matches: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var media: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object MediaQueryListEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    matches: js.UndefOr[scala.Boolean] = js.undefined,
-    media: java.lang.String = null
-  ): MediaQueryListEventInit = {
+  
+  inline def apply(): MediaQueryListEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (!js.isUndefined(matches)) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaQueryListEventInit]
   }
+  
+  extension [Self <: MediaQueryListEventInit](x: Self) {
+    
+    inline def setMatches(value: scala.Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    
+    inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+    
+    inline def setMedia(value: java.lang.String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+  }
 }
-

@@ -1,63 +1,71 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgDataChartSeriesLegend
-  extends /**
-	 * Option for IgDataChartSeriesLegend
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * The name of the element to turn into a legend.
-  	 */
+    * The name of the element to turn into a legend.
+    */
   var element: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * The height of the legend.null will stretch vertically to fit data, no other height are defined
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "null"
-  	 */
+    * The height of the legend.null will stretch vertically to fit data, no other height are defined
+    *
+    *
+    * Valid values:
+    * "null"
+    */
   var height: js.UndefOr[String | Double] = js.undefined
+  
   /**
-  	 * Type of the legend.
-  	 *
-  	 * Valid values:
-  	 * "item" Specify the legend as item legend. It displays a legend item for each pie in the igPieChart control.
-  	 * "legend" Specify the legend as legend. It is supported by all types of series in the igDataChart control.
-  	 */
+    * Type of the legend.
+    *
+    * Valid values:
+    * "item" Specify the legend as item legend. It displays a legend item for each pie in the igPieChart control.
+    * "legend" Specify the legend as legend. It is supported by all types of series in the igDataChart control.
+    */
   var `type`: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * The width of the legend.
-  	 *
-  	 * Valid values:
-  	 * "null" will stretch to fit data, if no other widths are defined
-  	 */
+    * The width of the legend.
+    *
+    * Valid values:
+    * "null" will stretch to fit data, if no other widths are defined
+    */
   var width: js.UndefOr[String | Double] = js.undefined
 }
-
 object IgDataChartSeriesLegend {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgDataChartSeriesLegend
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    element: String = null,
-    height: String | Double = null,
-    `type`: String = null,
-    width: String | Double = null
-  ): IgDataChartSeriesLegend = {
+  
+  inline def apply(): IgDataChartSeriesLegend = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgDataChartSeriesLegend]
   }
+  
+  extension [Self <: IgDataChartSeriesLegend](x: Self) {
+    
+    inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-expression
 
-Typings are for version 2.6.3
+Typings are for version 5.0.0
 
 ## Library description:
 Vega expression parser and code generator.
@@ -11,9 +11,9 @@ Vega expression parser and code generator.
 | Full name          | vega-expression |
 | Keywords           | vega, expression, parser, codegen |
 | # releases         | 7 |
-| # dependents       | 11 |
-| # downloads        | 1939559 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1865400.6666666667 |
+| # stars            | 9848.0 |
 
 ## Links
 - [Homepage](https://github.com/vega/vega#readme)

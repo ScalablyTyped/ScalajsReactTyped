@@ -2,476 +2,652 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgPieChart
-  extends /**
-	 * Option for igPieChart
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Gets or sets whether the slices can be exploded.
-  	 */
+    * Gets or sets whether the slices can be exploded.
+    */
   var allowSliceExplosion: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets or sets whether the slices can be selected.
-  	 */
+    * Gets or sets whether the slices can be selected.
+    */
   var allowSliceSelection: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Event fired when the control is displayed on a non HTML5 compliant browser
-  	 */
+    * Event fired when the control is displayed on a non HTML5 compliant browser
+    */
   var browserNotSupported: js.UndefOr[BrowserNotSupportedEvent] = js.undefined
+  
   /**
-  	 * Gets or sets the Brushes property.
-  	 * The brushes property defines the palette from which automatically assigned slice brushes are selected.
-  	 * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
-  	 */
-  var brushes: js.UndefOr[js.Any] = js.undefined
+    * Gets or sets the Brushes property.
+    * The brushes property defines the palette from which automatically assigned slice brushes are selected.
+    * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
+    */
+  var brushes: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets or sets the property name that contains the labels.
-  	 */
+    * Gets or sets the property name that contains the labels.
+    */
   var dataLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself
-  	 */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+    * Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself
+    */
+  var dataSource: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
-  	 */
+    * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
+    */
   var dataSourceType: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies a remote URL accepted by $.ig.DataSource in order to request data from it
-  	 */
+    * Specifies a remote URL accepted by $.ig.DataSource in order to request data from it
+    */
   var dataSourceUrl: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets or Sets the property name that contains the values.
-  	 */
+    * Gets or Sets the property name that contains the values.
+    */
   var dataValue: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Determines how much the exploded slice is offset from the center. Value between 0 and 1.
-  	 */
+    * Determines how much the exploded slice is offset from the center. Value between 0 and 1.
+    */
   var explodedRadius: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets or sets the collection of exploded slice indices.
-  	 * Should be an array of integers that indicate the indexes of the slices to explode.
-  	 */
-  var explodedSlices: js.UndefOr[js.Array[_]] = js.undefined
+    * Gets or sets the collection of exploded slice indices.
+    * Should be an array of integers that indicate the indexes of the slices to explode.
+    */
+  var explodedSlices: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.
-  	 * Use context.item to get the item associated with the slice, if any.
-  	 * Use context.outline to get the outline brush used to paint the slice.
-  	 * Use context.itemLabel to get the label object that would be used for the slice.
-  	 * Use context.percentValue to see the percentage value that is associated with the slice.
-  	 * Use context.isOthersSlice to tell if the associated slice is the others slice.
-  	 * Should return a string value that should be used for the label.
-  	 */
+    * Gets or sets the function to use to transform a pie slice data context into a label for the slice. Function takes one argument of type object.
+    * Use context.item to get the item associated with the slice, if any.
+    * Use context.outline to get the outline brush used to paint the slice.
+    * Use context.itemLabel to get the label object that would be used for the slice.
+    * Use context.percentValue to see the percentage value that is associated with the slice.
+    * Use context.isOthersSlice to tell if the associated slice is the others slice.
+    * Should return a string value that should be used for the label.
+    */
   var formatLabel: js.UndefOr[js.Function] = js.undefined
+  
   /**
-  	 * The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).
-  	 */
+    * The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).
+    */
   var height: js.UndefOr[String | Double] = js.undefined
+  
   /**
-  	 * Raised when a slice's label is clicked.
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.item to get reference to the slice object.
-  	 *             Use ui.allowSliceClick to determine whether or not the label click should fire slice click event.
-  	 */
+    * Raised when a slice's label is clicked.
+    *             Function takes arguments evt and ui.
+    *             Use ui.item to get reference to the slice object.
+    *             Use ui.allowSliceClick to determine whether or not the label click should fire slice click event.
+    */
   var labelClick: js.UndefOr[LabelClickEvent] = js.undefined
+  
   /**
-  	 * Gets or sets the pixel amount, by which the labels are offset from the edge of the slices.
-  	 */
+    * Gets or sets the pixel amount, by which the labels are offset from the edge of the slices.
+    */
   var labelExtent: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets or sets the color for labels rendered inside of the pie chart.  If no color is provided then
-  	 *             the chart will attempt to find the colors in CSS.  If that is not available it will use a default color.
-  	 */
+    * Gets or sets the color for labels rendered inside of the pie chart.  If no color is provided then
+    *             the chart will attempt to find the colors in CSS.  If that is not available it will use a default color.
+    */
   var labelInnerColor: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets or sets the property name that contains the labels.  This option is deprecated - please use `dataLabel` instead.
-  	 */
+    * Gets or sets the property name that contains the labels.  This option is deprecated - please use `dataLabel` instead.
+    */
   var labelMemberPath: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets or sets the color for labels rendered outside of the pie chart.  If no color is provided then
-  	 *             the chart will attempt to find the colors in CSS.  If that is not available it will use a default color.
-  	 */
+    * Gets or sets the color for labels rendered outside of the pie chart.  If no color is provided then
+    *             the chart will attempt to find the colors in CSS.  If that is not available it will use a default color.
+    */
   var labelOuterColor: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets or sets the position of chart labels.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "none" No labels will be displayed.
-  	 * "center" Labels will be displayed in the center.
-  	 * "insideEnd" Labels will be displayed inside and by the edge of the container.
-  	 * "outsideEnd" Labels will be displayed outside the container.
-  	 * "bestFit" Labels will automatically decide their location.
-  	 */
+    * Gets or sets the position of chart labels.
+    *
+    *
+    * Valid values:
+    * "none" No labels will be displayed.
+    * "center" Labels will be displayed in the center.
+    * "insideEnd" Labels will be displayed inside and by the edge of the container.
+    * "outsideEnd" Labels will be displayed outside the container.
+    * "bestFit" Labels will automatically decide their location.
+    */
   var labelsPosition: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Set/Get the locale language setting for the widget.
-  	 *
-  	 */
+    * Set/Get the locale language setting for the widget.
+    *
+    */
   var language: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets or sets the margin between a label and the end of its leader line.
-  	 */
+    * Gets or sets the margin between a label and the end of its leader line.
+    */
   var leaderLineMargin: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets or sets what type of leader lines will be used for the outside end labels.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "straight"
-  	 * "arc"
-  	 * "spline"
-  	 */
+    * Gets or sets what type of leader lines will be used for the outside end labels.
+    *
+    *
+    * Valid values:
+    * "straight"
+    * "arc"
+    * "spline"
+    */
   var leaderLineType: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets or sets whether the leader lines are visible.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "visible"
-  	 * "collapsed"
-  	 */
+    * Gets or sets whether the leader lines are visible.
+    *
+    *
+    * Valid values:
+    * "visible"
+    * "collapsed"
+    */
   var leaderLineVisibility: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself.
-  	 */
+    * Can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself.
+    */
   var legend: js.UndefOr[IgPieChartLegend] = js.undefined
+  
   /**
-  	 * Gets or sets the LegendItemBadgeTemplate property.
-  	 * The legend item badge is created according to the LegendItemBadgeTemplate on-demand by
-  	 * the chart object itself.
-  	 * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
-  	 */
-  var legendItemBadgeTemplate: js.UndefOr[js.Any] = js.undefined
+    * Gets or sets the LegendItemBadgeTemplate property.
+    * The legend item badge is created according to the LegendItemBadgeTemplate on-demand by
+    * the chart object itself.
+    * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
+    */
+  var legendItemBadgeTemplate: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets or sets the LegendItemTemplate property.
-  	 * The legend item control content is created according to the LegendItemTemplate on-demand by
-  	 * the chart object itself.
-  	 * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
-  	 */
-  var legendItemTemplate: js.UndefOr[js.Any] = js.undefined
+    * Gets or sets the LegendItemTemplate property.
+    * The legend item control content is created according to the LegendItemTemplate on-demand by
+    * the chart object itself.
+    * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
+    */
+  var legendItemTemplate: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets or sets the property name that contains the legend labels.
-  	 */
+    * Gets or sets the property name that contains the legend labels.
+    */
   var legendLabelMemberPath: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Set/Get the locale setting for the widget.
-  	 *
-  	 */
-  var locale: js.UndefOr[js.Any] = js.undefined
+    * Set/Get the locale setting for the widget.
+    *
+    */
+  var locale: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets or sets a style object that can be used to override the style settings on the others category slice.
-  	 */
-  var othersCategoryStyle: js.UndefOr[js.Any] = js.undefined
+    * Gets or sets a style object that can be used to override the style settings on the others category slice.
+    */
+  var othersCategoryStyle: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets or sets the label of the Others slice.
-  	 */
+    * Gets or sets the label of the Others slice.
+    */
   var othersCategoryText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets or sets the threshold value that determines if slices are grouped into the Others slice.
-  	 */
+    * Gets or sets the threshold value that determines if slices are grouped into the Others slice.
+    */
   var othersCategoryThreshold: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets or sets whether to use numeric or percent-based threshold value.
-  	 *
-  	 * Valid values:
-  	 * "number" Data value is compared directly to the value of OthersCategoryThreshold.
-  	 * "percent" Data value is compared to OthersCategoryThreshold as a percentage of the total.
-  	 */
+    * Gets or sets whether to use numeric or percent-based threshold value.
+    *
+    * Valid values:
+    * "number" Data value is compared directly to the value of OthersCategoryThreshold.
+    * "percent" Data value is compared to OthersCategoryThreshold as a percentage of the total.
+    */
   var othersCategoryType: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets or sets the Outlines property.
-  	 * The Outlines property defines the palette from which automatically assigned slice outlines are selected.
-  	 * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
-  	 */
-  var outlines: js.UndefOr[js.Any] = js.undefined
+    * Gets or sets the Outlines property.
+    * The Outlines property defines the palette from which automatically assigned slice outlines are selected.
+    * The value provided should be an array of css color strings. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
+    */
+  var outlines: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets or sets the scaling factor of the chart's radius. Value between 0 and 1.
-  	 */
+    * Gets or sets the scaling factor of the chart's radius. Value between 0 and 1.
+    */
   var radiusFactor: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 */
+    * Set/Get the regional setting for the widget.
+    *
+    */
   var regional: js.UndefOr[String | js.Object] = js.undefined
+  
   /**
-  	 * See $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped.
-  	 */
+    * See $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped.
+    */
   var responseDataKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets or sets the currently selected data item.  If a different data item is provided the pie chart
-  	 *             will select the slice associated with the new item.
-  	 */
-  var selectedItem: js.UndefOr[js.Any] = js.undefined
+    * Gets or sets the currently selected data item.  If a different data item is provided the pie chart
+    *             will select the slice associated with the new item.
+    */
+  var selectedItem: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Event fired when the selectedItem option has changed.
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.oldItem to get a reference to the previous selected data item.
-  	 *             Use ui.newItem to get a reference to the current selected data item.
-  	 */
+    * Event fired when the selectedItem option has changed.
+    *             Function takes arguments evt and ui.
+    *             Use ui.oldItem to get a reference to the previous selected data item.
+    *             Use ui.newItem to get a reference to the current selected data item.
+    */
   var selectedItemChanged: js.UndefOr[SelectedItemChangedEvent] = js.undefined
+  
   /**
-  	 * Event fired when the selectedItem option is about to change.
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.oldItem to get a reference to the current selected data item.
-  	 *             Use ui.newItem to get a reference to the newly selected data item.
-  	 *             Use ui.cancel to stop the selected item from changing.
-  	 */
+    * Event fired when the selectedItem option is about to change.
+    *             Function takes arguments evt and ui.
+    *             Use ui.oldItem to get a reference to the current selected data item.
+    *             Use ui.newItem to get a reference to the newly selected data item.
+    *             Use ui.cancel to stop the selected item from changing.
+    */
   var selectedItemChanging: js.UndefOr[SelectedItemChangingEvent] = js.undefined
+  
   /**
-  	 * Gets or sets the currently selected data items.  Adding or removing data items from this array will
-  	 *             select or deselect the slices associated with those items.
-  	 */
-  var selectedItems: js.UndefOr[js.Array[_]] = js.undefined
+    * Gets or sets the currently selected data items.  Adding or removing data items from this array will
+    *             select or deselect the slices associated with those items.
+    */
+  var selectedItems: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Event fired when the selectedItems array has changed.
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.oldItems to get a reference to the previous selected data items.
-  	 *             Use ui.newItems to get a reference to the current selected data items.
-  	 */
+    * Event fired when the selectedItems array has changed.
+    *             Function takes arguments evt and ui.
+    *             Use ui.oldItems to get a reference to the previous selected data items.
+    *             Use ui.newItems to get a reference to the current selected data items.
+    */
   var selectedItemsChanged: js.UndefOr[SelectedItemsChangedEvent] = js.undefined
+  
   /**
-  	 * Event fired when the selectedItems array is about to change.
-  	 *             Function takes arguments evt and ui.
-  	 *             Use ui.oldItems to get a reference to the current selected data items.
-  	 *             Use ui.newItems to get a reference to the newly selected data items.
-  	 *             Use ui.cancel to stop the selected items from changing.
-  	 */
+    * Event fired when the selectedItems array is about to change.
+    *             Function takes arguments evt and ui.
+    *             Use ui.oldItems to get a reference to the current selected data items.
+    *             Use ui.newItems to get a reference to the newly selected data items.
+    *             Use ui.cancel to stop the selected items from changing.
+    */
   var selectedItemsChanging: js.UndefOr[SelectedItemsChangingEvent] = js.undefined
+  
   /**
-  	 * Sets the collection of selected slice indices.
-  	 *             Should be an array of integers that indicate the indexes of the slices to select.
-  	 */
-  var selectedSlices: js.UndefOr[js.Array[_]] = js.undefined
+    * Sets the collection of selected slice indices.
+    *             Should be an array of integers that indicate the indexes of the slices to select.
+    */
+  var selectedSlices: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Gets or sets the style used when a slice is selected.
-  	 */
-  var selectedStyle: js.UndefOr[js.Any] = js.undefined
+    * Gets or sets the style used when a slice is selected.
+    */
+  var selectedStyle: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets or sets the type of selection the pie chart allows.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "single" A single slice is allowed to be selected.
-  	 * "multiple" Multiple slices are allowed to be selected.
-  	 * "manual" Slices can only be selected programmatically.
-  	 */
+    * Gets or sets the type of selection the pie chart allows.
+    *
+    *
+    * Valid values:
+    * "single" A single slice is allowed to be selected.
+    * "multiple" Multiple slices are allowed to be selected.
+    * "manual" Slices can only be selected programmatically.
+    */
   var selectionMode: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Whether the chart should render a tooltip.
-  	 */
+    * Whether the chart should render a tooltip.
+    */
   var showTooltip: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Raised when the slice is clicked.
-  	 * Function takes arguments evt and ui.
-  	 * Use ui.chart to get reference to chart object.
-  	 * Use ui.slice to get reference to slice object.
-  	 * Use ui.slice.item to get reference to current pie chart item.
-  	 * Use ui.slice.isExploded to get is the slice exploded.
-  	 * Use ui.slice.isSelected to get is the slice selected.
-  	 */
+    * Raised when the slice is clicked.
+    * Function takes arguments evt and ui.
+    * Use ui.chart to get reference to chart object.
+    * Use ui.slice to get reference to slice object.
+    * Use ui.slice.item to get reference to current pie chart item.
+    * Use ui.slice.isExploded to get is the slice exploded.
+    * Use ui.slice.isSelected to get is the slice selected.
+    */
   var sliceClick: js.UndefOr[SliceClickEvent] = js.undefined
+  
   /**
-  	 * Gets or sets the starting angle of the chart.
-  	 * The default zero value is equivalent to 3 o'clock.
-  	 */
+    * Gets or sets the starting angle of the chart.
+    * The default zero value is equivalent to 3 o'clock.
+    */
   var startAngle: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets or sets the rotational direction of the chart.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "counterclockwise"
-  	 * "clockwise"
-  	 */
+    * Gets or sets the rotational direction of the chart.
+    *
+    *
+    * Valid values:
+    * "counterclockwise"
+    * "clockwise"
+    */
   var sweepDirection: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Overrides the style used for text in the pie chart.
-  	 */
+    * Overrides the style used for text in the pie chart.
+    */
   var textStyle: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * The swatch used to style this widget
-  	 */
+    * The swatch used to style this widget
+    */
   var theme: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Event fired after a tooltip is hidden
-  	 * Function takes arguments evt and ui.
-  	 * Use ui.element to get reference to tooltip DOM element.
-  	 * Use ui.item to get reference to current pie chart item.
-  	 * Use ui.chart to get reference to chart object.
-  	 */
+    * Event fired after a tooltip is hidden
+    * Function takes arguments evt and ui.
+    * Use ui.element to get reference to tooltip DOM element.
+    * Use ui.item to get reference to current pie chart item.
+    * Use ui.chart to get reference to chart object.
+    */
   var tooltipHidden: js.UndefOr[TooltipHiddenEvent] = js.undefined
+  
   /**
-  	 * Event fired when the mouse has left an element and the tooltip is about to hide
-  	 * Function takes arguments evt and ui.
-  	 * Use ui.element to get reference to tooltip DOM element.
-  	 * Use ui.item to get reference to current pie chart item.
-  	 * Use ui.chart to get reference to chart object.
-  	 */
+    * Event fired when the mouse has left an element and the tooltip is about to hide
+    * Function takes arguments evt and ui.
+    * Use ui.element to get reference to tooltip DOM element.
+    * Use ui.item to get reference to current pie chart item.
+    * Use ui.chart to get reference to chart object.
+    */
   var tooltipHiding: js.UndefOr[TooltipHidingEvent] = js.undefined
+  
   /**
-  	 * Event fired when the mouse has hovered on an element long enough to display a tooltip
-  	 * Function takes arguments evt and ui.
-  	 * Use ui.element to get reference to tooltip DOM element.
-  	 * Use ui.item to get reference to current pie chart item.
-  	 * Use ui.chart to get reference to chart object.
-  	 */
+    * Event fired when the mouse has hovered on an element long enough to display a tooltip
+    * Function takes arguments evt and ui.
+    * Use ui.element to get reference to tooltip DOM element.
+    * Use ui.item to get reference to current pie chart item.
+    * Use ui.chart to get reference to chart object.
+    */
   var tooltipShowing: js.UndefOr[TooltipShowingEvent] = js.undefined
+  
   /**
-  	 * Event fired after a tooltip is shown
-  	 * Function takes arguments evt and ui.
-  	 * Use ui.element to get reference to tooltip DOM element.
-  	 * Use ui.item to get reference to current pie chart item.
-  	 * Use ui.chart to get reference to chart object.
-  	 */
+    * Event fired after a tooltip is shown
+    * Function takes arguments evt and ui.
+    * Use ui.element to get reference to tooltip DOM element.
+    * Use ui.item to get reference to current pie chart item.
+    * Use ui.chart to get reference to chart object.
+    */
   var tooltipShown: js.UndefOr[TooltipShownEvent] = js.undefined
+  
   /**
-  	 * The name of template or the template itself that chart tooltip will use to render.
-  	 */
+    * The name of template or the template itself that chart tooltip will use to render.
+    */
   var tooltipTemplate: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets or Sets the property name that contains the values.  This option is deprecated - please use `dataValue` instead.
-  	 */
+    * Gets or Sets the property name that contains the values.  This option is deprecated - please use `dataValue` instead.
+    */
   var valueMemberPath: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).
-  	 */
+    * The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).
+    */
   var width: js.UndefOr[String | Double] = js.undefined
 }
-
 object IgPieChart {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igPieChart
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    allowSliceExplosion: js.UndefOr[Boolean] = js.undefined,
-    allowSliceSelection: js.UndefOr[Boolean] = js.undefined,
-    browserNotSupported: (/* event */ Event_, /* ui */ BrowserNotSupportedEventUIParam) => Callback = null,
-    brushes: js.Any = null,
-    dataLabel: String = null,
-    dataSource: js.Any = null,
-    dataSourceType: String = null,
-    dataSourceUrl: String = null,
-    dataValue: String = null,
-    explodedRadius: Int | Double = null,
-    explodedSlices: js.Array[_] = null,
-    formatLabel: js.Function = null,
-    height: String | Double = null,
-    labelClick: (/* event */ Event_, /* ui */ LabelClickEventUIParam) => Callback = null,
-    labelExtent: Int | Double = null,
-    labelInnerColor: String = null,
-    labelMemberPath: String = null,
-    labelOuterColor: String = null,
-    labelsPosition: String = null,
-    language: String = null,
-    leaderLineMargin: Int | Double = null,
-    leaderLineType: String = null,
-    leaderLineVisibility: String = null,
-    legend: IgPieChartLegend = null,
-    legendItemBadgeTemplate: js.Any = null,
-    legendItemTemplate: js.Any = null,
-    legendLabelMemberPath: String = null,
-    locale: js.Any = null,
-    othersCategoryStyle: js.Any = null,
-    othersCategoryText: String = null,
-    othersCategoryThreshold: Int | Double = null,
-    othersCategoryType: String = null,
-    outlines: js.Any = null,
-    radiusFactor: Int | Double = null,
-    regional: String | js.Object = null,
-    responseDataKey: String = null,
-    selectedItem: js.Any = null,
-    selectedItemChanged: (/* event */ Event_, /* ui */ SelectedItemChangedEventUIParam) => Callback = null,
-    selectedItemChanging: (/* event */ Event_, /* ui */ SelectedItemChangingEventUIParam) => Callback = null,
-    selectedItems: js.Array[_] = null,
-    selectedItemsChanged: (/* event */ Event_, /* ui */ SelectedItemsChangedEventUIParam) => Callback = null,
-    selectedItemsChanging: (/* event */ Event_, /* ui */ SelectedItemsChangingEventUIParam) => Callback = null,
-    selectedSlices: js.Array[_] = null,
-    selectedStyle: js.Any = null,
-    selectionMode: String = null,
-    showTooltip: js.UndefOr[Boolean] = js.undefined,
-    sliceClick: (/* event */ Event_, /* ui */ SliceClickEventUIParam) => Callback = null,
-    startAngle: Int | Double = null,
-    sweepDirection: String = null,
-    textStyle: String = null,
-    theme: String = null,
-    tooltipHidden: (/* event */ Event_, /* ui */ TooltipHiddenEventUIParam) => Callback = null,
-    tooltipHiding: (/* event */ Event_, /* ui */ TooltipHidingEventUIParam) => Callback = null,
-    tooltipShowing: (/* event */ Event_, /* ui */ TooltipShowingEventUIParam) => Callback = null,
-    tooltipShown: (/* event */ Event_, /* ui */ TooltipShownEventUIParam) => Callback = null,
-    tooltipTemplate: String = null,
-    valueMemberPath: String = null,
-    width: String | Double = null
-  ): IgPieChart = {
+  
+  inline def apply(): IgPieChart = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowSliceExplosion)) __obj.updateDynamic("allowSliceExplosion")(allowSliceExplosion.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSliceSelection)) __obj.updateDynamic("allowSliceSelection")(allowSliceSelection.asInstanceOf[js.Any])
-    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.BrowserNotSupportedEventUIParam) => browserNotSupported(t0, t1).runNow()))
-    if (brushes != null) __obj.updateDynamic("brushes")(brushes.asInstanceOf[js.Any])
-    if (dataLabel != null) __obj.updateDynamic("dataLabel")(dataLabel.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType.asInstanceOf[js.Any])
-    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl.asInstanceOf[js.Any])
-    if (dataValue != null) __obj.updateDynamic("dataValue")(dataValue.asInstanceOf[js.Any])
-    if (explodedRadius != null) __obj.updateDynamic("explodedRadius")(explodedRadius.asInstanceOf[js.Any])
-    if (explodedSlices != null) __obj.updateDynamic("explodedSlices")(explodedSlices.asInstanceOf[js.Any])
-    if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (labelClick != null) __obj.updateDynamic("labelClick")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.LabelClickEventUIParam) => labelClick(t0, t1).runNow()))
-    if (labelExtent != null) __obj.updateDynamic("labelExtent")(labelExtent.asInstanceOf[js.Any])
-    if (labelInnerColor != null) __obj.updateDynamic("labelInnerColor")(labelInnerColor.asInstanceOf[js.Any])
-    if (labelMemberPath != null) __obj.updateDynamic("labelMemberPath")(labelMemberPath.asInstanceOf[js.Any])
-    if (labelOuterColor != null) __obj.updateDynamic("labelOuterColor")(labelOuterColor.asInstanceOf[js.Any])
-    if (labelsPosition != null) __obj.updateDynamic("labelsPosition")(labelsPosition.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (leaderLineMargin != null) __obj.updateDynamic("leaderLineMargin")(leaderLineMargin.asInstanceOf[js.Any])
-    if (leaderLineType != null) __obj.updateDynamic("leaderLineType")(leaderLineType.asInstanceOf[js.Any])
-    if (leaderLineVisibility != null) __obj.updateDynamic("leaderLineVisibility")(leaderLineVisibility.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (legendItemBadgeTemplate != null) __obj.updateDynamic("legendItemBadgeTemplate")(legendItemBadgeTemplate.asInstanceOf[js.Any])
-    if (legendItemTemplate != null) __obj.updateDynamic("legendItemTemplate")(legendItemTemplate.asInstanceOf[js.Any])
-    if (legendLabelMemberPath != null) __obj.updateDynamic("legendLabelMemberPath")(legendLabelMemberPath.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (othersCategoryStyle != null) __obj.updateDynamic("othersCategoryStyle")(othersCategoryStyle.asInstanceOf[js.Any])
-    if (othersCategoryText != null) __obj.updateDynamic("othersCategoryText")(othersCategoryText.asInstanceOf[js.Any])
-    if (othersCategoryThreshold != null) __obj.updateDynamic("othersCategoryThreshold")(othersCategoryThreshold.asInstanceOf[js.Any])
-    if (othersCategoryType != null) __obj.updateDynamic("othersCategoryType")(othersCategoryType.asInstanceOf[js.Any])
-    if (outlines != null) __obj.updateDynamic("outlines")(outlines.asInstanceOf[js.Any])
-    if (radiusFactor != null) __obj.updateDynamic("radiusFactor")(radiusFactor.asInstanceOf[js.Any])
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey.asInstanceOf[js.Any])
-    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
-    if (selectedItemChanged != null) __obj.updateDynamic("selectedItemChanged")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.SelectedItemChangedEventUIParam) => selectedItemChanged(t0, t1).runNow()))
-    if (selectedItemChanging != null) __obj.updateDynamic("selectedItemChanging")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.SelectedItemChangingEventUIParam) => selectedItemChanging(t0, t1).runNow()))
-    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
-    if (selectedItemsChanged != null) __obj.updateDynamic("selectedItemsChanged")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.SelectedItemsChangedEventUIParam) => selectedItemsChanged(t0, t1).runNow()))
-    if (selectedItemsChanging != null) __obj.updateDynamic("selectedItemsChanging")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.SelectedItemsChangingEventUIParam) => selectedItemsChanging(t0, t1).runNow()))
-    if (selectedSlices != null) __obj.updateDynamic("selectedSlices")(selectedSlices.asInstanceOf[js.Any])
-    if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.asInstanceOf[js.Any])
-    if (sliceClick != null) __obj.updateDynamic("sliceClick")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.SliceClickEventUIParam) => sliceClick(t0, t1).runNow()))
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
-    if (sweepDirection != null) __obj.updateDynamic("sweepDirection")(sweepDirection.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.TooltipHiddenEventUIParam) => tooltipHidden(t0, t1).runNow()))
-    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.TooltipHidingEventUIParam) => tooltipHiding(t0, t1).runNow()))
-    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.TooltipShowingEventUIParam) => tooltipShowing(t0, t1).runNow()))
-    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.TooltipShownEventUIParam) => tooltipShown(t0, t1).runNow()))
-    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate.asInstanceOf[js.Any])
-    if (valueMemberPath != null) __obj.updateDynamic("valueMemberPath")(valueMemberPath.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPieChart]
   }
+  
+  extension [Self <: IgPieChart](x: Self) {
+    
+    inline def setAllowSliceExplosion(value: Boolean): Self = StObject.set(x, "allowSliceExplosion", value.asInstanceOf[js.Any])
+    
+    inline def setAllowSliceExplosionUndefined: Self = StObject.set(x, "allowSliceExplosion", js.undefined)
+    
+    inline def setAllowSliceSelection(value: Boolean): Self = StObject.set(x, "allowSliceSelection", value.asInstanceOf[js.Any])
+    
+    inline def setAllowSliceSelectionUndefined: Self = StObject.set(x, "allowSliceSelection", js.undefined)
+    
+    inline def setBrowserNotSupported(value: (/* event */ Event, /* ui */ BrowserNotSupportedEventUIParam) => Callback): Self = StObject.set(x, "browserNotSupported", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ BrowserNotSupportedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setBrowserNotSupportedUndefined: Self = StObject.set(x, "browserNotSupported", js.undefined)
+    
+    inline def setBrushes(value: Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
+    
+    inline def setBrushesUndefined: Self = StObject.set(x, "brushes", js.undefined)
+    
+    inline def setDataLabel(value: String): Self = StObject.set(x, "dataLabel", value.asInstanceOf[js.Any])
+    
+    inline def setDataLabelUndefined: Self = StObject.set(x, "dataLabel", js.undefined)
+    
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDataSourceUrl(value: String): Self = StObject.set(x, "dataSourceUrl", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
+    
+    inline def setDataValue(value: String): Self = StObject.set(x, "dataValue", value.asInstanceOf[js.Any])
+    
+    inline def setDataValueUndefined: Self = StObject.set(x, "dataValue", js.undefined)
+    
+    inline def setExplodedRadius(value: Double): Self = StObject.set(x, "explodedRadius", value.asInstanceOf[js.Any])
+    
+    inline def setExplodedRadiusUndefined: Self = StObject.set(x, "explodedRadius", js.undefined)
+    
+    inline def setExplodedSlices(value: js.Array[Any]): Self = StObject.set(x, "explodedSlices", value.asInstanceOf[js.Any])
+    
+    inline def setExplodedSlicesUndefined: Self = StObject.set(x, "explodedSlices", js.undefined)
+    
+    inline def setExplodedSlicesVarargs(value: Any*): Self = StObject.set(x, "explodedSlices", js.Array(value*))
+    
+    inline def setFormatLabel(value: js.Function): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
+    
+    inline def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
+    
+    inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLabelClick(value: (/* event */ Event, /* ui */ LabelClickEventUIParam) => Callback): Self = StObject.set(x, "labelClick", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ LabelClickEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setLabelClickUndefined: Self = StObject.set(x, "labelClick", js.undefined)
+    
+    inline def setLabelExtent(value: Double): Self = StObject.set(x, "labelExtent", value.asInstanceOf[js.Any])
+    
+    inline def setLabelExtentUndefined: Self = StObject.set(x, "labelExtent", js.undefined)
+    
+    inline def setLabelInnerColor(value: String): Self = StObject.set(x, "labelInnerColor", value.asInstanceOf[js.Any])
+    
+    inline def setLabelInnerColorUndefined: Self = StObject.set(x, "labelInnerColor", js.undefined)
+    
+    inline def setLabelMemberPath(value: String): Self = StObject.set(x, "labelMemberPath", value.asInstanceOf[js.Any])
+    
+    inline def setLabelMemberPathUndefined: Self = StObject.set(x, "labelMemberPath", js.undefined)
+    
+    inline def setLabelOuterColor(value: String): Self = StObject.set(x, "labelOuterColor", value.asInstanceOf[js.Any])
+    
+    inline def setLabelOuterColorUndefined: Self = StObject.set(x, "labelOuterColor", js.undefined)
+    
+    inline def setLabelsPosition(value: String): Self = StObject.set(x, "labelsPosition", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsPositionUndefined: Self = StObject.set(x, "labelsPosition", js.undefined)
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setLeaderLineMargin(value: Double): Self = StObject.set(x, "leaderLineMargin", value.asInstanceOf[js.Any])
+    
+    inline def setLeaderLineMarginUndefined: Self = StObject.set(x, "leaderLineMargin", js.undefined)
+    
+    inline def setLeaderLineType(value: String): Self = StObject.set(x, "leaderLineType", value.asInstanceOf[js.Any])
+    
+    inline def setLeaderLineTypeUndefined: Self = StObject.set(x, "leaderLineType", js.undefined)
+    
+    inline def setLeaderLineVisibility(value: String): Self = StObject.set(x, "leaderLineVisibility", value.asInstanceOf[js.Any])
+    
+    inline def setLeaderLineVisibilityUndefined: Self = StObject.set(x, "leaderLineVisibility", js.undefined)
+    
+    inline def setLegend(value: IgPieChartLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    
+    inline def setLegendItemBadgeTemplate(value: Any): Self = StObject.set(x, "legendItemBadgeTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setLegendItemBadgeTemplateUndefined: Self = StObject.set(x, "legendItemBadgeTemplate", js.undefined)
+    
+    inline def setLegendItemTemplate(value: Any): Self = StObject.set(x, "legendItemTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setLegendItemTemplateUndefined: Self = StObject.set(x, "legendItemTemplate", js.undefined)
+    
+    inline def setLegendLabelMemberPath(value: String): Self = StObject.set(x, "legendLabelMemberPath", value.asInstanceOf[js.Any])
+    
+    inline def setLegendLabelMemberPathUndefined: Self = StObject.set(x, "legendLabelMemberPath", js.undefined)
+    
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setOthersCategoryStyle(value: Any): Self = StObject.set(x, "othersCategoryStyle", value.asInstanceOf[js.Any])
+    
+    inline def setOthersCategoryStyleUndefined: Self = StObject.set(x, "othersCategoryStyle", js.undefined)
+    
+    inline def setOthersCategoryText(value: String): Self = StObject.set(x, "othersCategoryText", value.asInstanceOf[js.Any])
+    
+    inline def setOthersCategoryTextUndefined: Self = StObject.set(x, "othersCategoryText", js.undefined)
+    
+    inline def setOthersCategoryThreshold(value: Double): Self = StObject.set(x, "othersCategoryThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setOthersCategoryThresholdUndefined: Self = StObject.set(x, "othersCategoryThreshold", js.undefined)
+    
+    inline def setOthersCategoryType(value: String): Self = StObject.set(x, "othersCategoryType", value.asInstanceOf[js.Any])
+    
+    inline def setOthersCategoryTypeUndefined: Self = StObject.set(x, "othersCategoryType", js.undefined)
+    
+    inline def setOutlines(value: Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
+    
+    inline def setOutlinesUndefined: Self = StObject.set(x, "outlines", js.undefined)
+    
+    inline def setRadiusFactor(value: Double): Self = StObject.set(x, "radiusFactor", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusFactorUndefined: Self = StObject.set(x, "radiusFactor", js.undefined)
+    
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    
+    inline def setResponseDataKey(value: String): Self = StObject.set(x, "responseDataKey", value.asInstanceOf[js.Any])
+    
+    inline def setResponseDataKeyUndefined: Self = StObject.set(x, "responseDataKey", js.undefined)
+    
+    inline def setSelectedItem(value: Any): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedItemChanged(value: (/* event */ Event, /* ui */ SelectedItemChangedEventUIParam) => Callback): Self = StObject.set(x, "selectedItemChanged", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ SelectedItemChangedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setSelectedItemChangedUndefined: Self = StObject.set(x, "selectedItemChanged", js.undefined)
+    
+    inline def setSelectedItemChanging(value: (/* event */ Event, /* ui */ SelectedItemChangingEventUIParam) => Callback): Self = StObject.set(x, "selectedItemChanging", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ SelectedItemChangingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setSelectedItemChangingUndefined: Self = StObject.set(x, "selectedItemChanging", js.undefined)
+    
+    inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    
+    inline def setSelectedItems(value: js.Array[Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedItemsChanged(value: (/* event */ Event, /* ui */ SelectedItemsChangedEventUIParam) => Callback): Self = StObject.set(x, "selectedItemsChanged", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ SelectedItemsChangedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setSelectedItemsChangedUndefined: Self = StObject.set(x, "selectedItemsChanged", js.undefined)
+    
+    inline def setSelectedItemsChanging(value: (/* event */ Event, /* ui */ SelectedItemsChangingEventUIParam) => Callback): Self = StObject.set(x, "selectedItemsChanging", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ SelectedItemsChangingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setSelectedItemsChangingUndefined: Self = StObject.set(x, "selectedItemsChanging", js.undefined)
+    
+    inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+    
+    inline def setSelectedItemsVarargs(value: Any*): Self = StObject.set(x, "selectedItems", js.Array(value*))
+    
+    inline def setSelectedSlices(value: js.Array[Any]): Self = StObject.set(x, "selectedSlices", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedSlicesUndefined: Self = StObject.set(x, "selectedSlices", js.undefined)
+    
+    inline def setSelectedSlicesVarargs(value: Any*): Self = StObject.set(x, "selectedSlices", js.Array(value*))
+    
+    inline def setSelectedStyle(value: Any): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
+    
+    inline def setSelectionMode(value: String): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+    
+    inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
+    
+    inline def setSliceClick(value: (/* event */ Event, /* ui */ SliceClickEventUIParam) => Callback): Self = StObject.set(x, "sliceClick", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ SliceClickEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setSliceClickUndefined: Self = StObject.set(x, "sliceClick", js.undefined)
+    
+    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    
+    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+    
+    inline def setSweepDirection(value: String): Self = StObject.set(x, "sweepDirection", value.asInstanceOf[js.Any])
+    
+    inline def setSweepDirectionUndefined: Self = StObject.set(x, "sweepDirection", js.undefined)
+    
+    inline def setTextStyle(value: String): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setTooltipHidden(value: (/* event */ Event, /* ui */ TooltipHiddenEventUIParam) => Callback): Self = StObject.set(x, "tooltipHidden", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ TooltipHiddenEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setTooltipHiddenUndefined: Self = StObject.set(x, "tooltipHidden", js.undefined)
+    
+    inline def setTooltipHiding(value: (/* event */ Event, /* ui */ TooltipHidingEventUIParam) => Callback): Self = StObject.set(x, "tooltipHiding", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ TooltipHidingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setTooltipHidingUndefined: Self = StObject.set(x, "tooltipHiding", js.undefined)
+    
+    inline def setTooltipShowing(value: (/* event */ Event, /* ui */ TooltipShowingEventUIParam) => Callback): Self = StObject.set(x, "tooltipShowing", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ TooltipShowingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setTooltipShowingUndefined: Self = StObject.set(x, "tooltipShowing", js.undefined)
+    
+    inline def setTooltipShown(value: (/* event */ Event, /* ui */ TooltipShownEventUIParam) => Callback): Self = StObject.set(x, "tooltipShown", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ TooltipShownEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setTooltipShownUndefined: Self = StObject.set(x, "tooltipShown", js.undefined)
+    
+    inline def setTooltipTemplate(value: String): Self = StObject.set(x, "tooltipTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipTemplateUndefined: Self = StObject.set(x, "tooltipTemplate", js.undefined)
+    
+    inline def setValueMemberPath(value: String): Self = StObject.set(x, "valueMemberPath", value.asInstanceOf[js.Any])
+    
+    inline def setValueMemberPathUndefined: Self = StObject.set(x, "valueMemberPath", js.undefined)
+    
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

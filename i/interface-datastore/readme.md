@@ -1,7 +1,7 @@
 
 # Scala.js typings for interface-datastore
 
-Typings are for version 0.8
+Typings are for version 7.0.1
 
 ## Library description:
 datastore interface
@@ -9,22 +9,22 @@ datastore interface
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | interface-datastore |
-| Keywords           | interface, key-value, ipfs, datastore |
-| # releases         | 5 |
-| # dependents       | 33 |
-| # downloads        | 241110 |
-| # stars            | 0 |
+| Keywords           | datastore, interface, ipfs, key-value |
+| # releases         | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 312511.0 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/ipfs/interface-datastore#readme)
-- [Bugs](https://github.com/ipfs/interface-datastore/issues)
-- [Repository](https://github.com/ipfs/interface-datastore)
+- [Homepage](https://github.com/ipfs/js-ipfs-interfaces/tree/master/packages/interface-datastore#readme)
+- [Bugs](https://github.com/ipfs/js-ipfs-interfaces/issues)
+- [Repository](https://github.com/ipfs/js-ipfs-interfaces)
 - [Npm](https://www.npmjs.com/package/interface-datastore)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

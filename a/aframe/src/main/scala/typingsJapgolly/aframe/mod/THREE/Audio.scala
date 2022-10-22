@@ -1,13 +1,14 @@
 package typingsJapgolly.aframe.mod.THREE
 
+import org.scalajs.dom.AudioNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.Audio")
 @js.native
-class Audio protected ()
-  extends typingsJapgolly.three.mod.Audio {
-  def this(listener: typingsJapgolly.three.audioListenerMod.AudioListener) = this()
+open class Audio[NodeType /* <: AudioNode */] protected ()
+  extends typingsJapgolly.three.mod.Audio[NodeType] {
+  def this(listener: typingsJapgolly.three.srcAudioAudioListenerMod.AudioListener) = this()
 }
-

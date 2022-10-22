@@ -10,10 +10,10 @@ Single component release of progress
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-progress |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 28577 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1287.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

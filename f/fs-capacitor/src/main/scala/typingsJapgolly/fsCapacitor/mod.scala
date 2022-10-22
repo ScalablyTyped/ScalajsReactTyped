@@ -1,31 +1,41 @@
 package typingsJapgolly.fsCapacitor
 
+import typingsJapgolly.node.streamMod.ReadableOptions
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fs-capacitor", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("fs-capacitor", "ReadAfterDestroyedError")
   @js.native
-  class ReadAfterDestroyedError () extends Error {
+  open class ReadAfterDestroyedError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
   }
   
+  @JSImport("fs-capacitor", "ReadStream")
   @js.native
-  class ReadStream ()
-    extends typingsJapgolly.node.fsMod.ReadStream
+  open class ReadStream ()
+    extends typingsJapgolly.node.fsMod.ReadStream {
+    def this(opts: ReadableOptions) = this()
+  }
   
+  @JSImport("fs-capacitor", "WriteStream")
   @js.native
-  class WriteStream ()
+  open class WriteStream ()
     extends typingsJapgolly.node.fsMod.WriteStream {
+    
     def createReadStream(): ReadStream = js.native
     def createReadStream(name: String): ReadStream = js.native
   }
-  
 }
-

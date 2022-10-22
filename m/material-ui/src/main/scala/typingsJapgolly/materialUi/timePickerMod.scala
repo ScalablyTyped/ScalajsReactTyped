@@ -1,19 +1,17 @@
 package typingsJapgolly.materialUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/TimePicker", JSImport.Namespace)
-@js.native
-object timePickerMod extends js.Object {
-  @js.native
-  class TimePicker ()
-    extends typingsJapgolly.materialUi.MaterialUI.TimePicker
+object timePickerMod {
   
+  @JSImport("material-ui/TimePicker", JSImport.Default)
   @js.native
-  class default ()
-    extends typingsJapgolly.materialUi.MaterialUI.TimePicker
+  open class default () extends TimePicker
   
+  @JSImport("material-ui/TimePicker", "TimePicker")
+  @js.native
+  open class TimePicker ()
+    extends typingsJapgolly.materialUi.MaterialUI.TimePicker
 }
-

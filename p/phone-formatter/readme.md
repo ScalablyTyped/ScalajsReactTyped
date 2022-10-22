@@ -11,9 +11,9 @@ Parse and format telephone numbers.
 | Full name          | phone-formatter |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 270580 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 34379.666666666664 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/stevekinney/node-phone-formatter)

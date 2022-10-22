@@ -1,33 +1,42 @@
 package typingsJapgolly.reactDataGrid.AdazzleReactDataGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the row toggler
   */
-trait OnRowExpandToggle extends js.Object {
+trait OnRowExpandToggle extends StObject {
+  
   /**
     * The name of the column group the row is in
     */
   var columnGroupName: String
+  
   /**
     * The name of the expanded row
     */
   var name: String
+  
   /**
     * If it should expand or not
     */
   var shouldExpand: Boolean
 }
-
 object OnRowExpandToggle {
-  @scala.inline
-  def apply(columnGroupName: String, name: String, shouldExpand: Boolean): OnRowExpandToggle = {
-    val __obj = js.Dynamic.literal(columnGroupName = columnGroupName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shouldExpand = shouldExpand.asInstanceOf[js.Any])
   
+  inline def apply(columnGroupName: String, name: String, shouldExpand: Boolean): OnRowExpandToggle = {
+    val __obj = js.Dynamic.literal(columnGroupName = columnGroupName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shouldExpand = shouldExpand.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnRowExpandToggle]
   }
+  
+  extension [Self <: OnRowExpandToggle](x: Self) {
+    
+    inline def setColumnGroupName(value: String): Self = StObject.set(x, "columnGroupName", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setShouldExpand(value: Boolean): Self = StObject.set(x, "shouldExpand", value.asInstanceOf[js.Any])
+  }
 }
-

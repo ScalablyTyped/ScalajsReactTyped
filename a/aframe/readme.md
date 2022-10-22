@@ -1,7 +1,7 @@
 
 # Scala.js typings for aframe
 
-Typings are for version 0.8
+Typings are for version 1.2
 
 ## Library description:
 A web framework for building virtual reality experiences.
@@ -10,15 +10,13 @@ A web framework for building virtual reality experiences.
 | ------------------ | :-------------: |
 | Full name          | aframe |
 | Keywords           | 3d, aframe, cardboard, components, oculus, three, three.js, rift, vive, vr, web-components, webvr |
-| # releases         | 11 |
-| # dependents       | 50 |
-| # downloads        | 127621 |
-| # stars            | 11 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 39518.666666666664 |
+| # stars            | 14341.0 |
 
 ## Links
 - [Homepage](https://aframe.io/)
-- [Bugs](https://github.com/aframevr/aframe/issues)
-- [Repository](https://github.com/aframevr/aframe)
 - [Npm](https://www.npmjs.com/package/aframe)
     
 

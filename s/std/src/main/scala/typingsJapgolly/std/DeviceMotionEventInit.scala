@@ -1,36 +1,48 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceMotionEventInit extends EventInit {
+trait DeviceMotionEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
   var acceleration: js.UndefOr[DeviceMotionEventAccelerationInit] = js.undefined
+  
+  /* standard dom */
   var accelerationIncludingGravity: js.UndefOr[DeviceMotionEventAccelerationInit] = js.undefined
+  
+  /* standard dom */
   var interval: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var rotationRate: js.UndefOr[DeviceMotionEventRotationRateInit] = js.undefined
 }
-
 object DeviceMotionEventInit {
-  @scala.inline
-  def apply(
-    acceleration: DeviceMotionEventAccelerationInit = null,
-    accelerationIncludingGravity: DeviceMotionEventAccelerationInit = null,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    interval: Int | Double = null,
-    rotationRate: DeviceMotionEventRotationRateInit = null
-  ): DeviceMotionEventInit = {
+  
+  inline def apply(): DeviceMotionEventInit = {
     val __obj = js.Dynamic.literal()
-    if (acceleration != null) __obj.updateDynamic("acceleration")(acceleration.asInstanceOf[js.Any])
-    if (accelerationIncludingGravity != null) __obj.updateDynamic("accelerationIncludingGravity")(accelerationIncludingGravity.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (rotationRate != null) __obj.updateDynamic("rotationRate")(rotationRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceMotionEventInit]
   }
+  
+  extension [Self <: DeviceMotionEventInit](x: Self) {
+    
+    inline def setAcceleration(value: DeviceMotionEventAccelerationInit): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
+    
+    inline def setAccelerationIncludingGravity(value: DeviceMotionEventAccelerationInit): Self = StObject.set(x, "accelerationIncludingGravity", value.asInstanceOf[js.Any])
+    
+    inline def setAccelerationIncludingGravityUndefined: Self = StObject.set(x, "accelerationIncludingGravity", js.undefined)
+    
+    inline def setAccelerationUndefined: Self = StObject.set(x, "acceleration", js.undefined)
+    
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    
+    inline def setRotationRate(value: DeviceMotionEventRotationRateInit): Self = StObject.set(x, "rotationRate", value.asInstanceOf[js.Any])
+    
+    inline def setRotationRateUndefined: Self = StObject.set(x, "rotationRate", js.undefined)
+  }
 }
-

@@ -1,79 +1,139 @@
 package typingsJapgolly.paypalRestSdk.mod.invoice
 
 import typingsJapgolly.paypalRestSdk.mod.Currency
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchRequest extends js.Object {
+trait SearchRequest extends StObject {
+  
   var archived: js.UndefOr[Boolean] = js.undefined
+  
   var email: js.UndefOr[String] = js.undefined
+  
   var end_creation_date: js.UndefOr[String] = js.undefined
+  
   var end_due_date: js.UndefOr[String] = js.undefined
+  
   var end_invoice_date: js.UndefOr[String] = js.undefined
+  
   var end_payment_date: js.UndefOr[String] = js.undefined
+  
   var lower_total_amount: js.UndefOr[Currency] = js.undefined
+  
   var number: js.UndefOr[String] = js.undefined
+  
   var page: js.UndefOr[Double] = js.undefined
+  
   var page_size: js.UndefOr[Double] = js.undefined
+  
   var recipient_business_name: js.UndefOr[String] = js.undefined
+  
   var recipient_first_name: js.UndefOr[String] = js.undefined
+  
   var recipient_last_name: js.UndefOr[String] = js.undefined
+  
   var start_creation_date: js.UndefOr[String] = js.undefined
+  
   var start_due_date: js.UndefOr[String] = js.undefined
+  
   var start_invoice_date: js.UndefOr[String] = js.undefined
+  
   var start_payment_date: js.UndefOr[String] = js.undefined
+  
   var status: js.UndefOr[String] = js.undefined
+  
   var total_count_required: js.UndefOr[Boolean] = js.undefined
+  
   var upper_total_amount: js.UndefOr[Currency] = js.undefined
 }
-
 object SearchRequest {
-  @scala.inline
-  def apply(
-    archived: js.UndefOr[Boolean] = js.undefined,
-    email: String = null,
-    end_creation_date: String = null,
-    end_due_date: String = null,
-    end_invoice_date: String = null,
-    end_payment_date: String = null,
-    lower_total_amount: Currency = null,
-    number: String = null,
-    page: Int | Double = null,
-    page_size: Int | Double = null,
-    recipient_business_name: String = null,
-    recipient_first_name: String = null,
-    recipient_last_name: String = null,
-    start_creation_date: String = null,
-    start_due_date: String = null,
-    start_invoice_date: String = null,
-    start_payment_date: String = null,
-    status: String = null,
-    total_count_required: js.UndefOr[Boolean] = js.undefined,
-    upper_total_amount: Currency = null
-  ): SearchRequest = {
+  
+  inline def apply(): SearchRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (end_creation_date != null) __obj.updateDynamic("end_creation_date")(end_creation_date.asInstanceOf[js.Any])
-    if (end_due_date != null) __obj.updateDynamic("end_due_date")(end_due_date.asInstanceOf[js.Any])
-    if (end_invoice_date != null) __obj.updateDynamic("end_invoice_date")(end_invoice_date.asInstanceOf[js.Any])
-    if (end_payment_date != null) __obj.updateDynamic("end_payment_date")(end_payment_date.asInstanceOf[js.Any])
-    if (lower_total_amount != null) __obj.updateDynamic("lower_total_amount")(lower_total_amount.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
-    if (recipient_business_name != null) __obj.updateDynamic("recipient_business_name")(recipient_business_name.asInstanceOf[js.Any])
-    if (recipient_first_name != null) __obj.updateDynamic("recipient_first_name")(recipient_first_name.asInstanceOf[js.Any])
-    if (recipient_last_name != null) __obj.updateDynamic("recipient_last_name")(recipient_last_name.asInstanceOf[js.Any])
-    if (start_creation_date != null) __obj.updateDynamic("start_creation_date")(start_creation_date.asInstanceOf[js.Any])
-    if (start_due_date != null) __obj.updateDynamic("start_due_date")(start_due_date.asInstanceOf[js.Any])
-    if (start_invoice_date != null) __obj.updateDynamic("start_invoice_date")(start_invoice_date.asInstanceOf[js.Any])
-    if (start_payment_date != null) __obj.updateDynamic("start_payment_date")(start_payment_date.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(total_count_required)) __obj.updateDynamic("total_count_required")(total_count_required.asInstanceOf[js.Any])
-    if (upper_total_amount != null) __obj.updateDynamic("upper_total_amount")(upper_total_amount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchRequest]
   }
+  
+  extension [Self <: SearchRequest](x: Self) {
+    
+    inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
+    
+    inline def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setEnd_creation_date(value: String): Self = StObject.set(x, "end_creation_date", value.asInstanceOf[js.Any])
+    
+    inline def setEnd_creation_dateUndefined: Self = StObject.set(x, "end_creation_date", js.undefined)
+    
+    inline def setEnd_due_date(value: String): Self = StObject.set(x, "end_due_date", value.asInstanceOf[js.Any])
+    
+    inline def setEnd_due_dateUndefined: Self = StObject.set(x, "end_due_date", js.undefined)
+    
+    inline def setEnd_invoice_date(value: String): Self = StObject.set(x, "end_invoice_date", value.asInstanceOf[js.Any])
+    
+    inline def setEnd_invoice_dateUndefined: Self = StObject.set(x, "end_invoice_date", js.undefined)
+    
+    inline def setEnd_payment_date(value: String): Self = StObject.set(x, "end_payment_date", value.asInstanceOf[js.Any])
+    
+    inline def setEnd_payment_dateUndefined: Self = StObject.set(x, "end_payment_date", js.undefined)
+    
+    inline def setLower_total_amount(value: Currency): Self = StObject.set(x, "lower_total_amount", value.asInstanceOf[js.Any])
+    
+    inline def setLower_total_amountUndefined: Self = StObject.set(x, "lower_total_amount", js.undefined)
+    
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
+    
+    inline def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
+    
+    inline def setRecipient_business_name(value: String): Self = StObject.set(x, "recipient_business_name", value.asInstanceOf[js.Any])
+    
+    inline def setRecipient_business_nameUndefined: Self = StObject.set(x, "recipient_business_name", js.undefined)
+    
+    inline def setRecipient_first_name(value: String): Self = StObject.set(x, "recipient_first_name", value.asInstanceOf[js.Any])
+    
+    inline def setRecipient_first_nameUndefined: Self = StObject.set(x, "recipient_first_name", js.undefined)
+    
+    inline def setRecipient_last_name(value: String): Self = StObject.set(x, "recipient_last_name", value.asInstanceOf[js.Any])
+    
+    inline def setRecipient_last_nameUndefined: Self = StObject.set(x, "recipient_last_name", js.undefined)
+    
+    inline def setStart_creation_date(value: String): Self = StObject.set(x, "start_creation_date", value.asInstanceOf[js.Any])
+    
+    inline def setStart_creation_dateUndefined: Self = StObject.set(x, "start_creation_date", js.undefined)
+    
+    inline def setStart_due_date(value: String): Self = StObject.set(x, "start_due_date", value.asInstanceOf[js.Any])
+    
+    inline def setStart_due_dateUndefined: Self = StObject.set(x, "start_due_date", js.undefined)
+    
+    inline def setStart_invoice_date(value: String): Self = StObject.set(x, "start_invoice_date", value.asInstanceOf[js.Any])
+    
+    inline def setStart_invoice_dateUndefined: Self = StObject.set(x, "start_invoice_date", js.undefined)
+    
+    inline def setStart_payment_date(value: String): Self = StObject.set(x, "start_payment_date", value.asInstanceOf[js.Any])
+    
+    inline def setStart_payment_dateUndefined: Self = StObject.set(x, "start_payment_date", js.undefined)
+    
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setTotal_count_required(value: Boolean): Self = StObject.set(x, "total_count_required", value.asInstanceOf[js.Any])
+    
+    inline def setTotal_count_requiredUndefined: Self = StObject.set(x, "total_count_required", js.undefined)
+    
+    inline def setUpper_total_amount(value: Currency): Self = StObject.set(x, "upper_total_amount", value.asInstanceOf[js.Any])
+    
+    inline def setUpper_total_amountUndefined: Self = StObject.set(x, "upper_total_amount", js.undefined)
+  }
 }
-

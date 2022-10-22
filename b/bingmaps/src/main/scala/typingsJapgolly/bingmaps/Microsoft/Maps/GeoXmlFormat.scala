@@ -1,38 +1,30 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GeoXmlFormat extends js.Object
-
+sealed trait GeoXmlFormat extends StObject
 @JSGlobal("Microsoft.Maps.GeoXmlFormat")
 @js.native
-object GeoXmlFormat extends js.Object {
+object GeoXmlFormat extends StObject {
+  
   /** A GeoRSS XML file using ATOM format. */
   @js.native
-  sealed trait geoRss extends GeoXmlFormat
+  sealed trait geoRss
+    extends StObject
+       with GeoXmlFormat
   
   /** A GPX XML file format. */
   @js.native
-  sealed trait gpx extends GeoXmlFormat
+  sealed trait gpx
+    extends StObject
+       with GeoXmlFormat
   
   /** A KML XML file format. */
   @js.native
-  sealed trait kml extends GeoXmlFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GeoXmlFormat with Double] = js.native
-  /* 2 */ @js.native
-  object geoRss extends TopLevel[geoRss with Double]
-  
-  /* 1 */ @js.native
-  object gpx extends TopLevel[gpx with Double]
-  
-  /* 0 */ @js.native
-  object kml extends TopLevel[kml with Double]
-  
+  sealed trait kml
+    extends StObject
+       with GeoXmlFormat
 }
-

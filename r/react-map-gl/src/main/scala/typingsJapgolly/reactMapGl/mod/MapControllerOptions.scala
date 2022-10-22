@@ -1,51 +1,85 @@
 package typingsJapgolly.reactMapGl.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapControllerOptions extends js.Object {
+trait MapControllerOptions extends StObject {
+  
   var doubleClickZoom: js.UndefOr[Boolean] = js.undefined
+  
   var dragPan: js.UndefOr[Boolean] = js.undefined
+  
   var dragRotate: js.UndefOr[Boolean] = js.undefined
-  var eventManager: js.UndefOr[js.Any] = js.undefined
+  
+  var eventManager: js.UndefOr[Any] = js.undefined
+  
   var isInteractive: Boolean
+  
   var keyboard: js.UndefOr[Boolean] = js.undefined
+  
   var onStateChange: js.UndefOr[js.Function1[/* state */ MapState, Unit]] = js.undefined
+  
   var onViewportChange: js.UndefOr[ContextViewportChangeHandler] = js.undefined
+  
   var scrollZoom: js.UndefOr[Boolean] = js.undefined
+  
   var touchRotate: js.UndefOr[Boolean] = js.undefined
+  
   var touchZoom: js.UndefOr[Boolean] = js.undefined
 }
-
 object MapControllerOptions {
-  @scala.inline
-  def apply(
-    isInteractive: Boolean,
-    doubleClickZoom: js.UndefOr[Boolean] = js.undefined,
-    dragPan: js.UndefOr[Boolean] = js.undefined,
-    dragRotate: js.UndefOr[Boolean] = js.undefined,
-    eventManager: js.Any = null,
-    keyboard: js.UndefOr[Boolean] = js.undefined,
-    onStateChange: /* state */ MapState => Callback = null,
-    onViewportChange: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Callback = null,
-    scrollZoom: js.UndefOr[Boolean] = js.undefined,
-    touchRotate: js.UndefOr[Boolean] = js.undefined,
-    touchZoom: js.UndefOr[Boolean] = js.undefined
-  ): MapControllerOptions = {
+  
+  inline def apply(isInteractive: Boolean): MapControllerOptions = {
     val __obj = js.Dynamic.literal(isInteractive = isInteractive.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate.asInstanceOf[js.Any])
-    if (eventManager != null) __obj.updateDynamic("eventManager")(eventManager.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1((t0: /* state */ typingsJapgolly.reactMapGl.mod.MapState) => onStateChange(t0).runNow()))
-    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction3((t0: /* viewState */ typingsJapgolly.reactMapGl.mod.ViewportProps, t1: /* interactionState */ typingsJapgolly.reactMapGl.mod.ExtraState, t2: /* oldViewState */ typingsJapgolly.reactMapGl.mod.ViewportProps) => onViewportChange(t0, t1, t2).runNow()))
-    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchRotate)) __obj.updateDynamic("touchRotate")(touchRotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapControllerOptions]
   }
+  
+  extension [Self <: MapControllerOptions](x: Self) {
+    
+    inline def setDoubleClickZoom(value: Boolean): Self = StObject.set(x, "doubleClickZoom", value.asInstanceOf[js.Any])
+    
+    inline def setDoubleClickZoomUndefined: Self = StObject.set(x, "doubleClickZoom", js.undefined)
+    
+    inline def setDragPan(value: Boolean): Self = StObject.set(x, "dragPan", value.asInstanceOf[js.Any])
+    
+    inline def setDragPanUndefined: Self = StObject.set(x, "dragPan", js.undefined)
+    
+    inline def setDragRotate(value: Boolean): Self = StObject.set(x, "dragRotate", value.asInstanceOf[js.Any])
+    
+    inline def setDragRotateUndefined: Self = StObject.set(x, "dragRotate", js.undefined)
+    
+    inline def setEventManager(value: Any): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
+    
+    inline def setEventManagerUndefined: Self = StObject.set(x, "eventManager", js.undefined)
+    
+    inline def setIsInteractive(value: Boolean): Self = StObject.set(x, "isInteractive", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    
+    inline def setOnStateChange(value: /* state */ MapState => Callback): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1((t0: /* state */ MapState) => value(t0).runNow()))
+    
+    inline def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
+    
+    inline def setOnViewportChange(
+      value: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Callback
+    ): Self = StObject.set(x, "onViewportChange", js.Any.fromFunction3((t0: /* viewState */ ViewportProps, t1: /* interactionState */ ExtraState, t2: /* oldViewState */ ViewportProps) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
+    
+    inline def setScrollZoom(value: Boolean): Self = StObject.set(x, "scrollZoom", value.asInstanceOf[js.Any])
+    
+    inline def setScrollZoomUndefined: Self = StObject.set(x, "scrollZoom", js.undefined)
+    
+    inline def setTouchRotate(value: Boolean): Self = StObject.set(x, "touchRotate", value.asInstanceOf[js.Any])
+    
+    inline def setTouchRotateUndefined: Self = StObject.set(x, "touchRotate", js.undefined)
+    
+    inline def setTouchZoom(value: Boolean): Self = StObject.set(x, "touchZoom", value.asInstanceOf[js.Any])
+    
+    inline def setTouchZoomUndefined: Self = StObject.set(x, "touchZoom", js.undefined)
+  }
 }
-

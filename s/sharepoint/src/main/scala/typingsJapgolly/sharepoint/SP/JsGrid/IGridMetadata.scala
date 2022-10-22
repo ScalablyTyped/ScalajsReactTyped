@@ -1,46 +1,71 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line: interface-name
-trait IGridMetadata extends js.Object {
+trait IGridMetadata extends StObject {
+  
   var GridOperationalConstantsFieldKeyMap: js.UndefOr[NumberDictionary[String]] = js.undefined
+  
   var GroupingLevel: js.UndefOr[Double] = js.undefined
+  
   var GroupingPrefix: js.UndefOr[String] = js.undefined
+  
   var IsGanttEnabled: js.UndefOr[Boolean] = js.undefined
+  
   var IsHierarchyEnabled: js.UndefOr[Boolean] = js.undefined
+  
   var IsSorted: js.UndefOr[Boolean] = js.undefined
+  
   var KeyColumnName: String
+  
   var RecordKeyHash: js.UndefOr[String] = js.undefined
-  var RecordKeyOrderChanged: js.UndefOr[js.Any] = js.undefined
+  
+  var RecordKeyOrderChanged: js.UndefOr[Any] = js.undefined
 }
-
 object IGridMetadata {
-  @scala.inline
-  def apply(
-    KeyColumnName: String,
-    GridOperationalConstantsFieldKeyMap: NumberDictionary[String] = null,
-    GroupingLevel: Int | Double = null,
-    GroupingPrefix: String = null,
-    IsGanttEnabled: js.UndefOr[Boolean] = js.undefined,
-    IsHierarchyEnabled: js.UndefOr[Boolean] = js.undefined,
-    IsSorted: js.UndefOr[Boolean] = js.undefined,
-    RecordKeyHash: String = null,
-    RecordKeyOrderChanged: js.Any = null
-  ): IGridMetadata = {
+  
+  inline def apply(KeyColumnName: String): IGridMetadata = {
     val __obj = js.Dynamic.literal(KeyColumnName = KeyColumnName.asInstanceOf[js.Any])
-    if (GridOperationalConstantsFieldKeyMap != null) __obj.updateDynamic("GridOperationalConstantsFieldKeyMap")(GridOperationalConstantsFieldKeyMap.asInstanceOf[js.Any])
-    if (GroupingLevel != null) __obj.updateDynamic("GroupingLevel")(GroupingLevel.asInstanceOf[js.Any])
-    if (GroupingPrefix != null) __obj.updateDynamic("GroupingPrefix")(GroupingPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsGanttEnabled)) __obj.updateDynamic("IsGanttEnabled")(IsGanttEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsHierarchyEnabled)) __obj.updateDynamic("IsHierarchyEnabled")(IsHierarchyEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsSorted)) __obj.updateDynamic("IsSorted")(IsSorted.asInstanceOf[js.Any])
-    if (RecordKeyHash != null) __obj.updateDynamic("RecordKeyHash")(RecordKeyHash.asInstanceOf[js.Any])
-    if (RecordKeyOrderChanged != null) __obj.updateDynamic("RecordKeyOrderChanged")(RecordKeyOrderChanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridMetadata]
   }
+  
+  extension [Self <: IGridMetadata](x: Self) {
+    
+    inline def setGridOperationalConstantsFieldKeyMap(value: NumberDictionary[String]): Self = StObject.set(x, "GridOperationalConstantsFieldKeyMap", value.asInstanceOf[js.Any])
+    
+    inline def setGridOperationalConstantsFieldKeyMapUndefined: Self = StObject.set(x, "GridOperationalConstantsFieldKeyMap", js.undefined)
+    
+    inline def setGroupingLevel(value: Double): Self = StObject.set(x, "GroupingLevel", value.asInstanceOf[js.Any])
+    
+    inline def setGroupingLevelUndefined: Self = StObject.set(x, "GroupingLevel", js.undefined)
+    
+    inline def setGroupingPrefix(value: String): Self = StObject.set(x, "GroupingPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setGroupingPrefixUndefined: Self = StObject.set(x, "GroupingPrefix", js.undefined)
+    
+    inline def setIsGanttEnabled(value: Boolean): Self = StObject.set(x, "IsGanttEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setIsGanttEnabledUndefined: Self = StObject.set(x, "IsGanttEnabled", js.undefined)
+    
+    inline def setIsHierarchyEnabled(value: Boolean): Self = StObject.set(x, "IsHierarchyEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setIsHierarchyEnabledUndefined: Self = StObject.set(x, "IsHierarchyEnabled", js.undefined)
+    
+    inline def setIsSorted(value: Boolean): Self = StObject.set(x, "IsSorted", value.asInstanceOf[js.Any])
+    
+    inline def setIsSortedUndefined: Self = StObject.set(x, "IsSorted", js.undefined)
+    
+    inline def setKeyColumnName(value: String): Self = StObject.set(x, "KeyColumnName", value.asInstanceOf[js.Any])
+    
+    inline def setRecordKeyHash(value: String): Self = StObject.set(x, "RecordKeyHash", value.asInstanceOf[js.Any])
+    
+    inline def setRecordKeyHashUndefined: Self = StObject.set(x, "RecordKeyHash", js.undefined)
+    
+    inline def setRecordKeyOrderChanged(value: Any): Self = StObject.set(x, "RecordKeyOrderChanged", value.asInstanceOf[js.Any])
+    
+    inline def setRecordKeyOrderChangedUndefined: Self = StObject.set(x, "RecordKeyOrderChanged", js.undefined)
+  }
 }
-

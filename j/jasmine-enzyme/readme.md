@@ -10,10 +10,10 @@ Jasmine assertions for enzyme
 | ------------------ | :-------------: |
 | Full name          | jasmine-enzyme |
 | Keywords           | javascript, shallow rendering, shallowRender, test, reactjs, react, flux, testing, test utils, assertion helpers, tdd, jasmine, enzyme |
-| # releases         | 23 |
-| # dependents       | 1 |
-| # downloads        | 654519 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 348021.6666666667 |
+| # stars            | 897.0 |
 
 ## Links
 - [Homepage](https://github.com/FormidableLabs/enzyme-matchers#readme)

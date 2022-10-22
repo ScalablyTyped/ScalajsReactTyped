@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Security.Authentication.Web
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WebAuthenticationStatus extends js.Object
-
+sealed trait WebAuthenticationStatus extends StObject
 /** Contains the status of the authentication operation. */
 @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationStatus")
 @js.native
-object WebAuthenticationStatus extends js.Object {
+object WebAuthenticationStatus extends StObject {
+  
   /** The operation failed because a specific HTTP error was returned, for example 404. */
   @js.native
-  sealed trait errorHttp extends WebAuthenticationStatus
+  sealed trait errorHttp
+    extends StObject
+       with WebAuthenticationStatus
   
   /** The operation succeeded, and the response data is available. */
   @js.native
-  sealed trait success extends WebAuthenticationStatus
+  sealed trait success
+    extends StObject
+       with WebAuthenticationStatus
   
   /** The operation was canceled by the user. */
   @js.native
-  sealed trait userCancel extends WebAuthenticationStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WebAuthenticationStatus with Double] = js.native
-  /* 2 */ @js.native
-  object errorHttp extends TopLevel[errorHttp with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 1 */ @js.native
-  object userCancel extends TopLevel[userCancel with Double]
-  
+  sealed trait userCancel
+    extends StObject
+       with WebAuthenticationStatus
 }
-

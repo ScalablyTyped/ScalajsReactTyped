@@ -1,10 +1,13 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NativeInvocationListenerCallbacks extends InvocationListenerCallbacks {
+trait NativeInvocationListenerCallbacks
+  extends StObject
+     with InvocationListenerCallbacks {
+  
   /**
     * Called synchronously when a thread is about to enter the target function.
     *
@@ -13,6 +16,7 @@ trait NativeInvocationListenerCallbacks extends InvocationListenerCallbacks {
     * Signature: `void onEnter (GumInvocationContext * ic)`
     */
   var onEnter: js.UndefOr[NativePointer] = js.undefined
+  
   /**
     * Called synchronously when a thread is about to leave the target function.
     *
@@ -22,14 +26,21 @@ trait NativeInvocationListenerCallbacks extends InvocationListenerCallbacks {
     */
   var onLeave: js.UndefOr[NativePointer] = js.undefined
 }
-
 object NativeInvocationListenerCallbacks {
-  @scala.inline
-  def apply(onEnter: NativePointer = null, onLeave: NativePointer = null): NativeInvocationListenerCallbacks = {
+  
+  inline def apply(): NativeInvocationListenerCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
-    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeInvocationListenerCallbacks]
   }
+  
+  extension [Self <: NativeInvocationListenerCallbacks](x: Self) {
+    
+    inline def setOnEnter(value: NativePointer): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+    
+    inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+    
+    inline def setOnLeave(value: NativePointer): Self = StObject.set(x, "onLeave", value.asInstanceOf[js.Any])
+    
+    inline def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
+  }
 }
-

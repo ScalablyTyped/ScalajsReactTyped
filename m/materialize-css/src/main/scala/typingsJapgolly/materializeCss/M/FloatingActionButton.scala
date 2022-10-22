@@ -1,42 +1,26 @@
 package typingsJapgolly.materializeCss.M
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materializeCss.MElements
-import typingsJapgolly.materializeCss.PartialFloatingActionButt
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("M.FloatingActionButton")
-@js.native
-class FloatingActionButton ()
-  extends Component[FloatingActionButtonOptions]
-     with Openable {
-  /* CompleteClass */
-  override var isOpen: Boolean = js.native
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /* CompleteClass */
-  override def open(): Unit = js.native
+trait FloatingActionButton
+  extends StObject
+     with Component[FloatingActionButtonOptions]
+     with Openable
+object FloatingActionButton {
+  
+  inline def apply(
+    close: Callback,
+    destroy: Callback,
+    el: Element,
+    isOpen: Boolean,
+    open: Callback,
+    options: FloatingActionButtonOptions
+  ): FloatingActionButton = {
+    val __obj = js.Dynamic.literal(close = close.toJsFn, destroy = destroy.toJsFn, el = el.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = open.toJsFn, options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FloatingActionButton]
+  }
 }
-
-/* static members */
-@JSGlobal("M.FloatingActionButton")
-@js.native
-object FloatingActionButton extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): FloatingActionButton = js.native
-  /**
-    * Init FloatingActionButtons
-    */
-  def init(els: MElements): js.Array[FloatingActionButton] = js.native
-  def init(els: MElements, options: PartialFloatingActionButt): js.Array[FloatingActionButton] = js.native
-  /**
-    * Init FloatingActionButton
-    */
-  def init(els: typingsJapgolly.std.Element): FloatingActionButton = js.native
-  def init(els: typingsJapgolly.std.Element, options: PartialFloatingActionButt): FloatingActionButton = js.native
-}
-

@@ -1,29 +1,38 @@
 package typingsJapgolly.openlayers.mod.olx
 
-import org.scalajs.dom.raw.PositionOptions
+import org.scalajs.dom.PositionOptions
 import typingsJapgolly.openlayers.mod.ProjectionLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeolocationOptions extends js.Object {
+trait GeolocationOptions extends StObject {
+  
   var projection: ProjectionLike
+  
   var tracking: js.UndefOr[Boolean] = js.undefined
+  
   var trackingOptions: js.UndefOr[PositionOptions] = js.undefined
 }
-
 object GeolocationOptions {
-  @scala.inline
-  def apply(
-    projection: ProjectionLike = null,
-    tracking: js.UndefOr[Boolean] = js.undefined,
-    trackingOptions: PositionOptions = null
-  ): GeolocationOptions = {
+  
+  inline def apply(): GeolocationOptions = {
     val __obj = js.Dynamic.literal()
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(tracking)) __obj.updateDynamic("tracking")(tracking.asInstanceOf[js.Any])
-    if (trackingOptions != null) __obj.updateDynamic("trackingOptions")(trackingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationOptions]
   }
+  
+  extension [Self <: GeolocationOptions](x: Self) {
+    
+    inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    
+    inline def setTracking(value: Boolean): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
+    
+    inline def setTrackingOptions(value: PositionOptions): Self = StObject.set(x, "trackingOptions", value.asInstanceOf[js.Any])
+    
+    inline def setTrackingOptionsUndefined: Self = StObject.set(x, "trackingOptions", js.undefined)
+    
+    inline def setTrackingUndefined: Self = StObject.set(x, "tracking", js.undefined)
+  }
 }
-

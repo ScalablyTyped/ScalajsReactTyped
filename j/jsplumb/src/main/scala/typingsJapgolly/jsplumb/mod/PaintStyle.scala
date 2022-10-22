@@ -1,23 +1,36 @@
 package typingsJapgolly.jsplumb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaintStyle extends js.Object {
+trait PaintStyle extends StObject {
+  
   var fill: js.UndefOr[String] = js.undefined
+  
   var stroke: js.UndefOr[String] = js.undefined
+  
   var strokeWidth: js.UndefOr[Double] = js.undefined
 }
-
 object PaintStyle {
-  @scala.inline
-  def apply(fill: String = null, stroke: String = null, strokeWidth: Int | Double = null): PaintStyle = {
+  
+  inline def apply(): PaintStyle = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaintStyle]
   }
+  
+  extension [Self <: PaintStyle](x: Self) {
+    
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+  }
 }
-

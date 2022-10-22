@@ -10,10 +10,10 @@ Stream transformer that prefixes lines with timestamps and other things.
 | ------------------ | :-------------: |
 | Full name          | strong-log-transformer |
 | Keywords           | logging, streams |
-| # releases         | 3 |
-| # dependents       | 25 |
-| # downloads        | 23038440 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5389162.0 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/strongloop/strong-log-transformer)

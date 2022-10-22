@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RowEditDialogBeforeCloseEventUIParam extends js.Object {
+trait RowEditDialogBeforeCloseEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to row edit dialog DOM element.
-  	 */
-  var dialogElement: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to row edit dialog DOM element.
+    */
+  var dialogElement: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to GridUpdating.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to GridUpdating.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object RowEditDialogBeforeCloseEventUIParam {
-  @scala.inline
-  def apply(dialogElement: js.Any = null, owner: js.Any = null): RowEditDialogBeforeCloseEventUIParam = {
+  
+  inline def apply(): RowEditDialogBeforeCloseEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (dialogElement != null) __obj.updateDynamic("dialogElement")(dialogElement.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowEditDialogBeforeCloseEventUIParam]
   }
+  
+  extension [Self <: RowEditDialogBeforeCloseEventUIParam](x: Self) {
+    
+    inline def setDialogElement(value: Any): Self = StObject.set(x, "dialogElement", value.asInstanceOf[js.Any])
+    
+    inline def setDialogElementUndefined: Self = StObject.set(x, "dialogElement", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

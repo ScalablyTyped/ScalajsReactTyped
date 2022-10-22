@@ -1,58 +1,84 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "Renderer")
+/**
+  * Procedural style of API needed to create elements and text nodes.
+  *
+  * In non-native browser environments (e.g. platforms such as web-workers), this is the
+  * facade that enables element manipulation. In practice, this is implemented by `Renderer2`.
+  */
 @js.native
-abstract class Renderer () extends js.Object {
-  def animate(
-    element: js.Any,
-    startingStyles: js.Any,
-    keyframes: js.Array[_],
-    duration: Double,
-    delay: Double,
-    easing: String
-  ): js.Any = js.native
-  def animate(
-    element: js.Any,
-    startingStyles: js.Any,
-    keyframes: js.Array[_],
-    duration: Double,
-    delay: Double,
-    easing: String,
-    previousPlayers: js.Array[_]
-  ): js.Any = js.native
-  def attachViewAfter(node: js.Any, viewRootNodes: js.Array[_]): Unit = js.native
-  def createElement(parentElement: js.Any, name: String): js.Any = js.native
-  def createElement(parentElement: js.Any, name: String, debugInfo: ɵRenderDebugInfo): js.Any = js.native
-  def createTemplateAnchor(parentElement: js.Any): js.Any = js.native
-  def createTemplateAnchor(parentElement: js.Any, debugInfo: ɵRenderDebugInfo): js.Any = js.native
-  def createText(parentElement: js.Any, value: String): js.Any = js.native
-  def createText(parentElement: js.Any, value: String, debugInfo: ɵRenderDebugInfo): js.Any = js.native
-  def createViewRoot(hostElement: js.Any): js.Any = js.native
-  def destroyView(hostElement: js.Any, viewAllNodes: js.Array[_]): Unit = js.native
-  def detachView(viewRootNodes: js.Array[_]): Unit = js.native
-  def invokeElementMethod(renderElement: js.Any, methodName: String): Unit = js.native
-  def invokeElementMethod(renderElement: js.Any, methodName: String, args: js.Array[_]): Unit = js.native
-  def listen(renderElement: js.Any, name: String, callback: js.Function): js.Function = js.native
-  def listenGlobal(target: String, name: String, callback: js.Function): js.Function = js.native
-  def projectNodes(parentElement: js.Any, nodes: js.Array[_]): Unit = js.native
-  def selectRootElement(selectorOrNode: String): js.Any = js.native
-  def selectRootElement(selectorOrNode: String, debugInfo: ɵRenderDebugInfo): js.Any = js.native
-  def selectRootElement(selectorOrNode: js.Any): js.Any = js.native
-  def selectRootElement(selectorOrNode: js.Any, debugInfo: ɵRenderDebugInfo): js.Any = js.native
+trait Renderer extends StObject {
+  
+  def addClass(el: RElement, name: String): Unit = js.native
+  
+  def appendChild(parent: RElement, newChild: RNode): Unit = js.native
+  
+  def createComment(value: String): RComment = js.native
+  
+  def createElement(name: String): RElement = js.native
+  def createElement(name: String, namespace: String): RElement = js.native
+  
+  def createText(value: String): RText = js.native
+  
+  def destroy(): Unit = js.native
+  
   /**
-    * Used only in debug mode to serialize property changes to dom nodes as attributes.
+    * This property is allowed to be null / undefined,
+    * in which case the view engine won't call it.
+    * This is used as a performance optimization for production mode.
     */
-  def setBindingDebugInfo(renderElement: js.Any, propertyName: String, propertyValue: String): Unit = js.native
-  def setElementAttribute(renderElement: js.Any, attributeName: String): Unit = js.native
-  def setElementAttribute(renderElement: js.Any, attributeName: String, attributeValue: String): Unit = js.native
-  def setElementClass(renderElement: js.Any, className: String, isAdd: Boolean): Unit = js.native
-  def setElementProperty(renderElement: js.Any, propertyName: String, propertyValue: js.Any): Unit = js.native
-  def setElementStyle(renderElement: js.Any, styleName: String): Unit = js.native
-  def setElementStyle(renderElement: js.Any, styleName: String, styleValue: String): Unit = js.native
-  def setText(renderNode: js.Any, text: String): Unit = js.native
+  var destroyNode: js.UndefOr[(js.Function1[/* node */ RNode, Unit]) | Null] = js.native
+  
+  def insertBefore(parent: RNode, newChild: RNode): Unit = js.native
+  def insertBefore(parent: RNode, newChild: RNode, refChild: Null, isMove: Boolean): Unit = js.native
+  def insertBefore(parent: RNode, newChild: RNode, refChild: RNode): Unit = js.native
+  def insertBefore(parent: RNode, newChild: RNode, refChild: RNode, isMove: Boolean): Unit = js.native
+  
+  def listen(
+    target: GlobalTargetName,
+    eventName: String,
+    callback: js.Function1[/* event */ Any, Boolean | Unit]
+  ): js.Function0[Unit] = js.native
+  def listen(target: RNode, eventName: String, callback: js.Function1[/* event */ Any, Boolean | Unit]): js.Function0[Unit] = js.native
+  
+  def nextSibling(node: RNode): RNode | Null = js.native
+  
+  def parentNode(node: RNode): RElement | Null = js.native
+  
+  def removeAttribute(el: RElement, name: String): Unit = js.native
+  def removeAttribute(el: RElement, name: String, namespace: String): Unit = js.native
+  
+  def removeChild(parent: RElement, oldChild: RNode): Unit = js.native
+  def removeChild(parent: RElement, oldChild: RNode, isHostElement: Boolean): Unit = js.native
+  
+  def removeClass(el: RElement, name: String): Unit = js.native
+  
+  def removeStyle(el: RElement, style: String): Unit = js.native
+  def removeStyle(el: RElement, style: String, flags: RendererStyleFlags2): Unit = js.native
+  
+  def selectRootElement(selectorOrNode: String): RElement = js.native
+  def selectRootElement(selectorOrNode: String, preserveContent: Boolean): RElement = js.native
+  def selectRootElement(selectorOrNode: Any): RElement = js.native
+  def selectRootElement(selectorOrNode: Any, preserveContent: Boolean): RElement = js.native
+  
+  def setAttribute(el: RElement, name: String, value: String): Unit = js.native
+  def setAttribute(el: RElement, name: String, value: String, namespace: String): Unit = js.native
+  def setAttribute(el: RElement, name: String, value: TrustedHTML): Unit = js.native
+  def setAttribute(el: RElement, name: String, value: TrustedHTML, namespace: String): Unit = js.native
+  def setAttribute(el: RElement, name: String, value: TrustedScript): Unit = js.native
+  def setAttribute(el: RElement, name: String, value: TrustedScriptURL): Unit = js.native
+  def setAttribute(el: RElement, name: String, value: TrustedScriptURL, namespace: String): Unit = js.native
+  def setAttribute(el: RElement, name: String, value: TrustedScript, namespace: String): Unit = js.native
+  
+  def setProperty(el: RElement, name: String, value: Any): Unit = js.native
+  
+  def setStyle(el: RElement, style: String, value: Any): Unit = js.native
+  def setStyle(el: RElement, style: String, value: Any, flags: RendererStyleFlags2): Unit = js.native
+  
+  def setValue(node: RComment, value: String): Unit = js.native
+  def setValue(node: RText, value: String): Unit = js.native
 }
-

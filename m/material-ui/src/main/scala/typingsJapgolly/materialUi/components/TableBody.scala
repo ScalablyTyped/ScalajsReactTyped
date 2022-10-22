@@ -1,70 +1,58 @@
 package typingsJapgolly.materialUi.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.materialUi.MaterialUI.Table.TableBodyProps
-import typingsJapgolly.materialUi.tableBodyMod.default
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableBody {
-  def apply(
-    allRowsSelected: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    deselectOnClickaway: js.UndefOr[Boolean] = js.undefined,
-    displayRowCheckbox: js.UndefOr[Boolean] = js.undefined,
-    multiSelectable: js.UndefOr[Boolean] = js.undefined,
-    onCellClick: (/* row */ Double, /* column */ Double) => Callback = null,
-    onCellHover: (/* row */ Double, /* column */ Double) => Callback = null,
-    onCellHoverExit: (/* row */ Double, /* column */ Double) => Callback = null,
-    onRowHover: /* row */ Double => Callback = null,
-    onRowHoverExit: /* row */ Double => Callback = null,
-    onRowSelection: /* selectedRows */ js.Array[Double] | String => Callback = null,
-    preScanRows: js.UndefOr[Boolean] = js.undefined,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    showRowHover: js.UndefOr[Boolean] = js.undefined,
-    stripedRows: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TableBodyProps, default, Unit, TableBodyProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(allRowsSelected)) __obj.updateDynamic("allRowsSelected")(allRowsSelected.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(deselectOnClickaway)) __obj.updateDynamic("deselectOnClickaway")(deselectOnClickaway.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayRowCheckbox)) __obj.updateDynamic("displayRowCheckbox")(displayRowCheckbox.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelectable)) __obj.updateDynamic("multiSelectable")(multiSelectable.asInstanceOf[js.Any])
-    if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction2((t0: /* row */ scala.Double, t1: /* column */ scala.Double) => onCellClick(t0, t1).runNow()))
-    if (onCellHover != null) __obj.updateDynamic("onCellHover")(js.Any.fromFunction2((t0: /* row */ scala.Double, t1: /* column */ scala.Double) => onCellHover(t0, t1).runNow()))
-    if (onCellHoverExit != null) __obj.updateDynamic("onCellHoverExit")(js.Any.fromFunction2((t0: /* row */ scala.Double, t1: /* column */ scala.Double) => onCellHoverExit(t0, t1).runNow()))
-    if (onRowHover != null) __obj.updateDynamic("onRowHover")(js.Any.fromFunction1((t0: /* row */ scala.Double) => onRowHover(t0).runNow()))
-    if (onRowHoverExit != null) __obj.updateDynamic("onRowHoverExit")(js.Any.fromFunction1((t0: /* row */ scala.Double) => onRowHoverExit(t0).runNow()))
-    if (onRowSelection != null) __obj.updateDynamic("onRowSelection")(js.Any.fromFunction1((t0: /* selectedRows */ js.Array[scala.Double] | java.lang.String) => onRowSelection(t0).runNow()))
-    if (!js.isUndefined(preScanRows)) __obj.updateDynamic("preScanRows")(preScanRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRowHover)) __obj.updateDynamic("showRowHover")(showRowHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripedRows)) __obj.updateDynamic("stripedRows")(stripedRows.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUi.MaterialUI.Table.TableBodyProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUi.tableBodyMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUi.MaterialUI.Table.TableBodyProps])(children: _*)
-  }
-  @JSImport("material-ui/Table/TableBody", JSImport.Default)
+  @JSImport("material-ui", "TableBody")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.materialUi.mod.TableBody] {
+    
+    inline def allRowsSelected(value: Boolean): this.type = set("allRowsSelected", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def deselectOnClickaway(value: Boolean): this.type = set("deselectOnClickaway", value.asInstanceOf[js.Any])
+    
+    inline def displayRowCheckbox(value: Boolean): this.type = set("displayRowCheckbox", value.asInstanceOf[js.Any])
+    
+    inline def multiSelectable(value: Boolean): this.type = set("multiSelectable", value.asInstanceOf[js.Any])
+    
+    inline def onCellClick(value: (/* row */ Double, /* column */ Double) => Callback): this.type = set("onCellClick", js.Any.fromFunction2((t0: /* row */ Double, t1: /* column */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def onCellHover(value: (/* row */ Double, /* column */ Double) => Callback): this.type = set("onCellHover", js.Any.fromFunction2((t0: /* row */ Double, t1: /* column */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def onCellHoverExit(value: (/* row */ Double, /* column */ Double) => Callback): this.type = set("onCellHoverExit", js.Any.fromFunction2((t0: /* row */ Double, t1: /* column */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def onRowHover(value: /* row */ Double => Callback): this.type = set("onRowHover", js.Any.fromFunction1((t0: /* row */ Double) => value(t0).runNow()))
+    
+    inline def onRowHoverExit(value: /* row */ Double => Callback): this.type = set("onRowHoverExit", js.Any.fromFunction1((t0: /* row */ Double) => value(t0).runNow()))
+    
+    inline def onRowSelection(value: /* selectedRows */ js.Array[Double] | String => Callback): this.type = set("onRowSelection", js.Any.fromFunction1((t0: /* selectedRows */ js.Array[Double] | String) => value(t0).runNow()))
+    
+    inline def preScanRows(value: Boolean): this.type = set("preScanRows", value.asInstanceOf[js.Any])
+    
+    inline def selectable(value: Boolean): this.type = set("selectable", value.asInstanceOf[js.Any])
+    
+    inline def showRowHover(value: Boolean): this.type = set("showRowHover", value.asInstanceOf[js.Any])
+    
+    inline def stripedRows(value: Boolean): this.type = set("stripedRows", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: TableBody.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TableBodyProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

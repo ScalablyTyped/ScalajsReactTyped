@@ -4,57 +4,78 @@ import typingsJapgolly.elasticsearch.elasticsearchStrings.dfs_query_and_fetch
 import typingsJapgolly.elasticsearch.elasticsearchStrings.dfs_query_then_fetch
 import typingsJapgolly.elasticsearch.elasticsearchStrings.query_and_fetch
 import typingsJapgolly.elasticsearch.elasticsearchStrings.query_then_fetch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchTemplateParams extends GenericParams {
+trait SearchTemplateParams
+  extends StObject
+     with GenericParams {
+  
   var allowNoIndices: js.UndefOr[Boolean] = js.undefined
+  
   var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
+  
   var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
+  
   var index: NameList
+  
   var preference: js.UndefOr[String] = js.undefined
+  
   var routing: js.UndefOr[NameList] = js.undefined
+  
   var scroll: js.UndefOr[TimeSpan] = js.undefined
+  
   var searchType: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.undefined
+  
   var `type`: NameList
 }
-
 object SearchTemplateParams {
-  @scala.inline
-  def apply(
-    index: NameList,
-    `type`: NameList,
-    allowNoIndices: js.UndefOr[Boolean] = js.undefined,
-    body: js.Any = null,
-    expandWildcards: ExpandWildcards = null,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    ignoreUnavailable: js.UndefOr[Boolean] = js.undefined,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    preference: String = null,
-    requestTimeout: Int | Double = null,
-    routing: NameList = null,
-    scroll: TimeSpan = null,
-    searchType: query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch = null
-  ): SearchTemplateParams = {
+  
+  inline def apply(index: NameList, `type`: NameList): SearchTemplateParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (routing != null) __obj.updateDynamic("routing")(routing.asInstanceOf[js.Any])
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (searchType != null) __obj.updateDynamic("searchType")(searchType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchTemplateParams]
   }
+  
+  extension [Self <: SearchTemplateParams](x: Self) {
+    
+    inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
+    
+    inline def setAllowNoIndicesUndefined: Self = StObject.set(x, "allowNoIndices", js.undefined)
+    
+    inline def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
+    
+    inline def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
+    
+    inline def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
+    
+    inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
+    
+    inline def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    
+    inline def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
+    
+    inline def setRouting(value: NameList): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
+    
+    inline def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
+    
+    inline def setRoutingVarargs(value: String*): Self = StObject.set(x, "routing", js.Array(value*))
+    
+    inline def setScroll(value: TimeSpan): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    
+    inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+    
+    inline def setSearchType(value: query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
+    
+    inline def setSearchTypeUndefined: Self = StObject.set(x, "searchType", js.undefined)
+    
+    inline def setType(value: NameList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
+  }
 }
-

@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Data.Json
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IJsonErrorStatics extends js.Object {
+trait IJsonErrorStatics extends StObject {
+  
   def getStatus(hresult: Double): JsonErrorStatus
 }
-
 object IJsonErrorStatics {
-  @scala.inline
-  def apply(getStatus: Double => CallbackTo[JsonErrorStatus]): IJsonErrorStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getStatus")(js.Any.fromFunction1((t0: scala.Double) => getStatus(t0).runNow()))
+  
+  inline def apply(getStatus: Double => JsonErrorStatus): IJsonErrorStatics = {
+    val __obj = js.Dynamic.literal(getStatus = js.Any.fromFunction1(getStatus))
     __obj.asInstanceOf[IJsonErrorStatics]
   }
+  
+  extension [Self <: IJsonErrorStatics](x: Self) {
+    
+    inline def setGetStatus(value: Double => JsonErrorStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
+  }
 }
-

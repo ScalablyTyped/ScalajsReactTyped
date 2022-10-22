@@ -1,49 +1,80 @@
 package typingsJapgolly.inboxsdk.mod.Router
 
 import japgolly.scalajs.react.Callback
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SectionDescriptor extends js.Object {
+trait SectionDescriptor extends StObject {
+  
   var contentElement: js.UndefOr[HTMLElement] = js.undefined
+  
   var footerLinkText: js.UndefOr[String] = js.undefined
+  
   var hasDropdown: js.UndefOr[Boolean] = js.undefined
+  
   var onDropdownClick: js.UndefOr[js.Function1[/* event */ SectionDropdownClickEvent, Unit]] = js.undefined
-  var onFooterLinkClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+  
+  var onFooterLinkClick: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
+  
   var onTitleLinkClick: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var subtitle: js.UndefOr[String] = js.undefined
+  
   var tableRows: js.UndefOr[js.Array[RowDescriptor]] = js.undefined
+  
   var title: String
+  
   var titleLinkText: js.UndefOr[String] = js.undefined
 }
-
 object SectionDescriptor {
-  @scala.inline
-  def apply(
-    title: String,
-    contentElement: HTMLElement = null,
-    footerLinkText: String = null,
-    hasDropdown: js.UndefOr[Boolean] = js.undefined,
-    onDropdownClick: /* event */ SectionDropdownClickEvent => Callback = null,
-    onFooterLinkClick: /* event */ js.Any => Callback = null,
-    onTitleLinkClick: js.UndefOr[Callback] = js.undefined,
-    subtitle: String = null,
-    tableRows: js.Array[RowDescriptor] = null,
-    titleLinkText: String = null
-  ): SectionDescriptor = {
+  
+  inline def apply(title: String): SectionDescriptor = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
-    if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement.asInstanceOf[js.Any])
-    if (footerLinkText != null) __obj.updateDynamic("footerLinkText")(footerLinkText.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown.asInstanceOf[js.Any])
-    if (onDropdownClick != null) __obj.updateDynamic("onDropdownClick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.inboxsdk.mod.Router.SectionDropdownClickEvent) => onDropdownClick(t0).runNow()))
-    if (onFooterLinkClick != null) __obj.updateDynamic("onFooterLinkClick")(js.Any.fromFunction1((t0: /* event */ js.Any) => onFooterLinkClick(t0).runNow()))
-    onTitleLinkClick.foreach(p => __obj.updateDynamic("onTitleLinkClick")(p.toJsFn))
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (tableRows != null) __obj.updateDynamic("tableRows")(tableRows.asInstanceOf[js.Any])
-    if (titleLinkText != null) __obj.updateDynamic("titleLinkText")(titleLinkText.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionDescriptor]
   }
+  
+  extension [Self <: SectionDescriptor](x: Self) {
+    
+    inline def setContentElement(value: HTMLElement): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
+    
+    inline def setContentElementUndefined: Self = StObject.set(x, "contentElement", js.undefined)
+    
+    inline def setFooterLinkText(value: String): Self = StObject.set(x, "footerLinkText", value.asInstanceOf[js.Any])
+    
+    inline def setFooterLinkTextUndefined: Self = StObject.set(x, "footerLinkText", js.undefined)
+    
+    inline def setHasDropdown(value: Boolean): Self = StObject.set(x, "hasDropdown", value.asInstanceOf[js.Any])
+    
+    inline def setHasDropdownUndefined: Self = StObject.set(x, "hasDropdown", js.undefined)
+    
+    inline def setOnDropdownClick(value: /* event */ SectionDropdownClickEvent => Callback): Self = StObject.set(x, "onDropdownClick", js.Any.fromFunction1((t0: /* event */ SectionDropdownClickEvent) => value(t0).runNow()))
+    
+    inline def setOnDropdownClickUndefined: Self = StObject.set(x, "onDropdownClick", js.undefined)
+    
+    inline def setOnFooterLinkClick(value: /* event */ Any => Callback): Self = StObject.set(x, "onFooterLinkClick", js.Any.fromFunction1((t0: /* event */ Any) => value(t0).runNow()))
+    
+    inline def setOnFooterLinkClickUndefined: Self = StObject.set(x, "onFooterLinkClick", js.undefined)
+    
+    inline def setOnTitleLinkClick(value: Callback): Self = StObject.set(x, "onTitleLinkClick", value.toJsFn)
+    
+    inline def setOnTitleLinkClickUndefined: Self = StObject.set(x, "onTitleLinkClick", js.undefined)
+    
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    
+    inline def setTableRows(value: js.Array[RowDescriptor]): Self = StObject.set(x, "tableRows", value.asInstanceOf[js.Any])
+    
+    inline def setTableRowsUndefined: Self = StObject.set(x, "tableRows", js.undefined)
+    
+    inline def setTableRowsVarargs(value: RowDescriptor*): Self = StObject.set(x, "tableRows", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleLinkText(value: String): Self = StObject.set(x, "titleLinkText", value.asInstanceOf[js.Any])
+    
+    inline def setTitleLinkTextUndefined: Self = StObject.set(x, "titleLinkText", js.undefined)
+  }
 }
-

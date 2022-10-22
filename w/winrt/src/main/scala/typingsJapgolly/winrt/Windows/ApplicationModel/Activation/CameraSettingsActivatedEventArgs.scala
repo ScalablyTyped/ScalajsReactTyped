@@ -1,21 +1,22 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Activation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs")
-@js.native
-class CameraSettingsActivatedEventArgs () extends ICameraSettingsActivatedEventArgs {
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
-  /* CompleteClass */
-  override var videoDeviceController: js.Any = js.native
-  /* CompleteClass */
-  override var videoDeviceExtension: js.Any = js.native
+trait CameraSettingsActivatedEventArgs
+  extends StObject
+     with ICameraSettingsActivatedEventArgs
+object CameraSettingsActivatedEventArgs {
+  
+  inline def apply(
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen,
+    videoDeviceController: Any,
+    videoDeviceExtension: Any
+  ): CameraSettingsActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], videoDeviceController = videoDeviceController.asInstanceOf[js.Any], videoDeviceExtension = videoDeviceExtension.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CameraSettingsActivatedEventArgs]
+  }
 }
-

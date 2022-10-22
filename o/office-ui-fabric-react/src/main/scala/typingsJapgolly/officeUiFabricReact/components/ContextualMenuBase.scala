@@ -1,171 +1,169 @@
 package typingsJapgolly.officeUiFabricReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactKeyboardEventFrom
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.ComponentClassP
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.officeUiFabricReact.calloutTypesMod.ICalloutProps
-import typingsJapgolly.officeUiFabricReact.calloutTypesMod.Target
-import typingsJapgolly.officeUiFabricReact.contextualMenuClassNamesMod.IContextualMenuClassNames
-import typingsJapgolly.officeUiFabricReact.contextualMenuItemTypesMod.IContextualMenuItemProps
-import typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenu
-import typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem
-import typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuListProps
-import typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps
-import typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuStyleProps
-import typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuStyles
-import typingsJapgolly.officeUiFabricReact.directionalHintMod.DirectionalHint
-import typingsJapgolly.officeUiFabricReact.focusZoneTypesMod.IFocusZoneProps
-import typingsJapgolly.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode
+import japgolly.scalajs.react.facade.React.ComponentClassP
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.Window
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiReactFocus.libComponentsFocusZoneFocusZoneDottypesMod.IFocusZoneProps
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.anon.ContainsFocus
+import typingsJapgolly.officeUiFabricReact.libCommonDirectionalHintMod.DirectionalHint
+import typingsJapgolly.officeUiFabricReact.libComponentsCalloutCalloutDottypesMod.ICalloutProps
+import typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDotclassNamesMod.IContextualMenuClassNames
+import typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.IContextualMenu
+import typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.IContextualMenuItem
+import typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.IContextualMenuListProps
+import typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.IContextualMenuProps
+import typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.IContextualMenuStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.IContextualMenuStyles
+import typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuItemDottypesMod.IContextualMenuItemProps
+import typingsJapgolly.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
 import typingsJapgolly.react.mod.FunctionComponent
-import typingsJapgolly.std.Window_
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
-import typingsJapgolly.uifabricUtilities.irectangleMod.IRectangle
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricReactHooks.libUseTargetMod.Target
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import typingsJapgolly.uifabricUtilities.libIrectangleMod.IRectangle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ContextualMenuBase {
-  def apply(
-    items: js.Array[IContextualMenuItem],
-    alignTargetEdge: js.UndefOr[Boolean] = js.undefined,
-    ariaLabel: String = null,
-    beakWidth: Int | Double = null,
-    bounds: IRectangle | (js.Function2[
-      /* target */ js.UndefOr[Target], 
-      /* targetWindow */ js.UndefOr[Window_], 
-      js.UndefOr[IRectangle]
-    ]) = null,
-    calloutProps: ICalloutProps = null,
-    className: String = null,
-    componentRef: IRefObject[IContextualMenu] = null,
-    contextualMenuItemAs: (ComponentClassP[IContextualMenuItemProps with js.Object]) | FunctionComponent[IContextualMenuItemProps] = null,
-    coverTarget: js.UndefOr[Boolean] = js.undefined,
-    delayUpdateFocusOnHover: js.UndefOr[Boolean] = js.undefined,
-    directionalHint: DirectionalHint = null,
-    directionalHintFixed: js.UndefOr[Boolean] = js.undefined,
-    directionalHintForRTL: DirectionalHint = null,
-    doNotLayer: js.UndefOr[Boolean] = js.undefined,
-    focusZoneProps: IFocusZoneProps = null,
-    gapSpace: Int | Double = null,
-    getMenuClassNames: (/* theme */ ITheme, /* className */ js.UndefOr[String]) => CallbackTo[IContextualMenuClassNames] = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    isBeakVisible: js.UndefOr[Boolean] = js.undefined,
-    isSubMenu: js.UndefOr[Boolean] = js.undefined,
-    labelElementId: String = null,
-    onDismiss: (/* ev */ js.UndefOr[ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element]], /* dismissAll */ js.UndefOr[Boolean]) => Callback = null,
-    onItemClick: (/* ev */ js.UndefOr[ReactMouseEventFrom[HTMLElement] | ReactKeyboardEventFrom[HTMLElement]], /* item */ js.UndefOr[IContextualMenuItem]) => CallbackTo[Boolean | Unit] = null,
-    onMenuDismissed: /* contextualMenu */ js.UndefOr[IContextualMenuProps] => Callback = null,
-    onMenuOpened: /* contextualMenu */ js.UndefOr[IContextualMenuProps] => Callback = null,
-    onRenderMenuList: (/* props */ js.UndefOr[IContextualMenuListProps], /* defaultRender */ js.UndefOr[
-      js.Function1[
-        /* props */ js.UndefOr[IContextualMenuListProps], 
-        japgolly.scalajs.react.raw.React.Element | Null
-      ]
-    ]) => CallbackTo[japgolly.scalajs.react.raw.React.Element | Null] = null,
-    onRenderSubMenu: (/* props */ js.UndefOr[IContextualMenuProps], /* defaultRender */ js.UndefOr[
-      js.Function1[
-        /* props */ js.UndefOr[IContextualMenuProps], 
-        japgolly.scalajs.react.raw.React.Element | Null
-      ]
-    ]) => CallbackTo[japgolly.scalajs.react.raw.React.Element | Null] = null,
-    responsiveMode: ResponsiveMode = null,
-    shouldFocusOnContainer: js.UndefOr[Boolean] = js.undefined,
-    shouldFocusOnMount: js.UndefOr[Boolean] = js.undefined,
-    shouldUpdateWhenHidden: js.UndefOr[Boolean] = js.undefined,
-    styles: IStyleFunctionOrObject[IContextualMenuStyleProps, IContextualMenuStyles] = null,
-    subMenuHoverDelay: Int | Double = null,
-    target: Target = null,
-    theme: ITheme = null,
-    title: String = null,
-    useTargetAsMinWidth: js.UndefOr[Boolean] = js.undefined,
-    useTargetWidth: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IContextualMenuProps, 
-    typingsJapgolly.officeUiFabricReact.mod.ContextualMenuBase, 
-    Unit, 
-    IContextualMenuProps
-  ] = {
-    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(alignTargetEdge)) __obj.updateDynamic("alignTargetEdge")(alignTargetEdge.asInstanceOf[js.Any])
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (beakWidth != null) __obj.updateDynamic("beakWidth")(beakWidth.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (calloutProps != null) __obj.updateDynamic("calloutProps")(calloutProps.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (contextualMenuItemAs != null) __obj.updateDynamic("contextualMenuItemAs")(contextualMenuItemAs.asInstanceOf[js.Any])
-    if (!js.isUndefined(coverTarget)) __obj.updateDynamic("coverTarget")(coverTarget.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayUpdateFocusOnHover)) __obj.updateDynamic("delayUpdateFocusOnHover")(delayUpdateFocusOnHover.asInstanceOf[js.Any])
-    if (directionalHint != null) __obj.updateDynamic("directionalHint")(directionalHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(directionalHintFixed)) __obj.updateDynamic("directionalHintFixed")(directionalHintFixed.asInstanceOf[js.Any])
-    if (directionalHintForRTL != null) __obj.updateDynamic("directionalHintForRTL")(directionalHintForRTL.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotLayer)) __obj.updateDynamic("doNotLayer")(doNotLayer.asInstanceOf[js.Any])
-    if (focusZoneProps != null) __obj.updateDynamic("focusZoneProps")(focusZoneProps.asInstanceOf[js.Any])
-    if (gapSpace != null) __obj.updateDynamic("gapSpace")(gapSpace.asInstanceOf[js.Any])
-    if (getMenuClassNames != null) __obj.updateDynamic("getMenuClassNames")(js.Any.fromFunction2((t0: /* theme */ typingsJapgolly.uifabricStyling.ithemeMod.ITheme, t1: /* className */ js.UndefOr[java.lang.String]) => getMenuClassNames(t0, t1).runNow()))
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBeakVisible)) __obj.updateDynamic("isBeakVisible")(isBeakVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSubMenu)) __obj.updateDynamic("isSubMenu")(isSubMenu.asInstanceOf[js.Any])
-    if (labelElementId != null) __obj.updateDynamic("labelElementId")(labelElementId.asInstanceOf[js.Any])
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction2((t0: /* ev */ js.UndefOr[
-  japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.Element] | japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.Element]], t1: /* dismissAll */ js.UndefOr[scala.Boolean]) => onDismiss(t0, t1).runNow()))
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2((t0: /* ev */ js.UndefOr[
-  japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement] | japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]], t1: /* item */ js.UndefOr[typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem]) => onItemClick(t0, t1).runNow()))
-    if (onMenuDismissed != null) __obj.updateDynamic("onMenuDismissed")(js.Any.fromFunction1((t0: /* contextualMenu */ js.UndefOr[typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps]) => onMenuDismissed(t0).runNow()))
-    if (onMenuOpened != null) __obj.updateDynamic("onMenuOpened")(js.Any.fromFunction1((t0: /* contextualMenu */ js.UndefOr[typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps]) => onMenuOpened(t0).runNow()))
-    if (onRenderMenuList != null) __obj.updateDynamic("onRenderMenuList")(js.Any.fromFunction2((t0: /* props */ js.UndefOr[
-  typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuListProps], t1: /* defaultRender */ js.UndefOr[
-  js.Function1[
-    /* props */ js.UndefOr[
-      typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuListProps
-    ], 
-    japgolly.scalajs.react.raw.React.Element | scala.Null
-  ]]) => onRenderMenuList(t0, t1).runNow()))
-    if (onRenderSubMenu != null) __obj.updateDynamic("onRenderSubMenu")(js.Any.fromFunction2((t0: /* props */ js.UndefOr[typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps], t1: /* defaultRender */ js.UndefOr[
-  js.Function1[
-    /* props */ js.UndefOr[typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps], 
-    japgolly.scalajs.react.raw.React.Element | scala.Null
-  ]]) => onRenderSubMenu(t0, t1).runNow()))
-    if (responsiveMode != null) __obj.updateDynamic("responsiveMode")(responsiveMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldFocusOnContainer)) __obj.updateDynamic("shouldFocusOnContainer")(shouldFocusOnContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldFocusOnMount)) __obj.updateDynamic("shouldFocusOnMount")(shouldFocusOnMount.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldUpdateWhenHidden)) __obj.updateDynamic("shouldUpdateWhenHidden")(shouldUpdateWhenHidden.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (subMenuHoverDelay != null) __obj.updateDynamic("subMenuHoverDelay")(subMenuHoverDelay.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTargetAsMinWidth)) __obj.updateDynamic("useTargetAsMinWidth")(useTargetAsMinWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTargetWidth)) __obj.updateDynamic("useTargetWidth")(useTargetWidth.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.officeUiFabricReact.mod.ContextualMenuBase](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps])(children: _*)
+  inline def apply(items: js.Array[IContextualMenuItem]): Builder = {
+    val __props = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IContextualMenuProps]))
   }
+  
   @JSImport("office-ui-fabric-react", "ContextualMenuBase")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.officeUiFabricReact.mod.ContextualMenuBase] {
+    
+    inline def alignTargetEdge(value: Boolean): this.type = set("alignTargetEdge", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabel(value: String): this.type = set("ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def beakWidth(value: Double): this.type = set("beakWidth", value.asInstanceOf[js.Any])
+    
+    inline def bounds(
+      value: IRectangle | (js.Function2[
+          /* target */ js.UndefOr[Target], 
+          /* targetWindow */ js.UndefOr[Window], 
+          js.UndefOr[IRectangle]
+        ])
+    ): this.type = set("bounds", value.asInstanceOf[js.Any])
+    
+    inline def boundsFunction2(
+      value: (/* target */ js.UndefOr[Target], /* targetWindow */ js.UndefOr[Window]) => js.UndefOr[IRectangle]
+    ): this.type = set("bounds", js.Any.fromFunction2(value))
+    
+    inline def calloutProps(value: ICalloutProps): this.type = set("calloutProps", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[IContextualMenu]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ IContextualMenu | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ IContextualMenu | Null) => value(t0).runNow()))
+    
+    inline def contextualMenuItemAs(
+      value: (ComponentClassP[IContextualMenuItemProps & js.Object]) | FunctionComponent[IContextualMenuItemProps]
+    ): this.type = set("contextualMenuItemAs", value.asInstanceOf[js.Any])
+    
+    inline def coverTarget(value: Boolean): this.type = set("coverTarget", value.asInstanceOf[js.Any])
+    
+    inline def delayUpdateFocusOnHover(value: Boolean): this.type = set("delayUpdateFocusOnHover", value.asInstanceOf[js.Any])
+    
+    inline def directionalHint(value: DirectionalHint): this.type = set("directionalHint", value.asInstanceOf[js.Any])
+    
+    inline def directionalHintFixed(value: Boolean): this.type = set("directionalHintFixed", value.asInstanceOf[js.Any])
+    
+    inline def directionalHintForRTL(value: DirectionalHint): this.type = set("directionalHintForRTL", value.asInstanceOf[js.Any])
+    
+    inline def doNotLayer(value: Boolean): this.type = set("doNotLayer", value.asInstanceOf[js.Any])
+    
+    inline def focusZoneProps(value: IFocusZoneProps): this.type = set("focusZoneProps", value.asInstanceOf[js.Any])
+    
+    inline def gapSpace(value: Double): this.type = set("gapSpace", value.asInstanceOf[js.Any])
+    
+    inline def getMenuClassNames(value: (/* theme */ ITheme, /* className */ js.UndefOr[String]) => IContextualMenuClassNames): this.type = set("getMenuClassNames", js.Any.fromFunction2(value))
+    
+    inline def hidden(value: Boolean): this.type = set("hidden", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def isBeakVisible(value: Boolean): this.type = set("isBeakVisible", value.asInstanceOf[js.Any])
+    
+    inline def isSubMenu(value: Boolean): this.type = set("isSubMenu", value.asInstanceOf[js.Any])
+    
+    inline def labelElementId(value: String): this.type = set("labelElementId", value.asInstanceOf[js.Any])
+    
+    inline def onDismiss(
+      value: (/* ev */ js.UndefOr[ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element]], /* dismissAll */ js.UndefOr[Boolean]) => Callback
+    ): this.type = set("onDismiss", js.Any.fromFunction2((t0: /* ev */ js.UndefOr[ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element]], t1: /* dismissAll */ js.UndefOr[Boolean]) => (value(t0, t1)).runNow()))
+    
+    inline def onItemClick(
+      value: (/* ev */ js.UndefOr[ReactMouseEventFrom[HTMLElement] | ReactKeyboardEventFrom[HTMLElement]], /* item */ js.UndefOr[IContextualMenuItem]) => Boolean | Unit
+    ): this.type = set("onItemClick", js.Any.fromFunction2(value))
+    
+    inline def onMenuDismissed(value: /* contextualMenu */ js.UndefOr[IContextualMenuProps] => Callback): this.type = set("onMenuDismissed", js.Any.fromFunction1((t0: /* contextualMenu */ js.UndefOr[IContextualMenuProps]) => value(t0).runNow()))
+    
+    inline def onMenuOpened(value: /* contextualMenu */ js.UndefOr[IContextualMenuProps] => Callback): this.type = set("onMenuOpened", js.Any.fromFunction1((t0: /* contextualMenu */ js.UndefOr[IContextualMenuProps]) => value(t0).runNow()))
+    
+    inline def onRenderMenuList(
+      value: (/* props */ js.UndefOr[IContextualMenuListProps], /* defaultRender */ js.UndefOr[
+          js.Function1[
+            /* props */ js.UndefOr[IContextualMenuListProps], 
+            typingsJapgolly.react.mod.global.JSX.Element | Null
+          ]
+        ]) => typingsJapgolly.react.mod.global.JSX.Element | Null
+    ): this.type = set("onRenderMenuList", js.Any.fromFunction2(value))
+    
+    inline def onRenderSubMenu(
+      value: (/* props */ js.UndefOr[IContextualMenuProps], /* defaultRender */ js.UndefOr[
+          js.Function1[
+            /* props */ js.UndefOr[IContextualMenuProps], 
+            typingsJapgolly.react.mod.global.JSX.Element | Null
+          ]
+        ]) => typingsJapgolly.react.mod.global.JSX.Element | Null
+    ): this.type = set("onRenderSubMenu", js.Any.fromFunction2(value))
+    
+    inline def onRestoreFocus(value: /* options */ ContainsFocus => Callback): this.type = set("onRestoreFocus", js.Any.fromFunction1((t0: /* options */ ContainsFocus) => value(t0).runNow()))
+    
+    inline def responsiveMode(value: ResponsiveMode): this.type = set("responsiveMode", value.asInstanceOf[js.Any])
+    
+    inline def shouldFocusOnContainer(value: Boolean): this.type = set("shouldFocusOnContainer", value.asInstanceOf[js.Any])
+    
+    inline def shouldFocusOnMount(value: Boolean): this.type = set("shouldFocusOnMount", value.asInstanceOf[js.Any])
+    
+    inline def shouldUpdateWhenHidden(value: Boolean): this.type = set("shouldUpdateWhenHidden", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IStyleFunctionOrObject[IContextualMenuStyleProps, IContextualMenuStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IContextualMenuStyleProps => DeepPartial[IContextualMenuStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def subMenuHoverDelay(value: Double): this.type = set("subMenuHoverDelay", value.asInstanceOf[js.Any])
+    
+    inline def target(value: Target): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def targetNull: this.type = set("target", null)
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def useTargetAsMinWidth(value: Boolean): this.type = set("useTargetAsMinWidth", value.asInstanceOf[js.Any])
+    
+    inline def useTargetWidth(value: Boolean): this.type = set("useTargetWidth", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IContextualMenuProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

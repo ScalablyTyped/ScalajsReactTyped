@@ -1,15 +1,19 @@
 package typingsJapgolly.knockoutEs5
 
-import typingsJapgolly.knockout.KnockoutObservable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutEs5 extends js.Object {
+trait KnockoutEs5 extends StObject {
+  
   def getAllObservablesForObject[T](obj: T): T = js.native
   def getAllObservablesForObject[T](obj: T, createIfNotDefined: Boolean): T = js.native
+  
   def isTracked[T](obj: T, propertyName: String): Boolean = js.native
-  def notifyWhenPresentOrFutureArrayValuesMutate[T](ko: KnockoutStatic, observable: KnockoutObservable[T]): Unit = js.native
+  
+  def notifyWhenPresentOrFutureArrayValuesMutate[T](
+    ko: KnockoutStatic,
+    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T> */ Any
+  ): Unit = js.native
 }
-

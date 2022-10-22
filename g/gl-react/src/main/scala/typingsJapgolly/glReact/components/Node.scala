@@ -1,61 +1,54 @@
 package typingsJapgolly.glReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.glReact.AnonColor
-import typingsJapgolly.glReact.AnonDst
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.glReact.anon.Color
+import typingsJapgolly.glReact.anon.Dst
 import typingsJapgolly.glReact.mod.NodeProps
 import typingsJapgolly.glReact.mod.ShaderDefinition
 import typingsJapgolly.glReact.mod.ShaderIdentifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Node {
-  def apply(
-    shader: ShaderIdentifier | ShaderDefinition,
-    backbuffering: js.UndefOr[Boolean] = js.undefined,
-    blendFunc: AnonDst = null,
-    clear: AnonColor = null,
-    height: Int | Double = null,
-    ignoreUnusedUniforms: js.Array[String] | Boolean = null,
-    onDraw: js.UndefOr[Callback] = js.undefined,
-    sync: js.UndefOr[Boolean] = js.undefined,
-    uniforms: StringDictionary[js.Any] = null,
-    uniformsOptions: js.Any = null,
-    width: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: js.Any = null
-  ): UnmountedWithRoot[NodeProps, typingsJapgolly.glReact.mod.Node, Unit, NodeProps] = {
-    val __obj = js.Dynamic.literal(shader = shader.asInstanceOf[js.Any])
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(backbuffering)) __obj.updateDynamic("backbuffering")(backbuffering.asInstanceOf[js.Any])
-    if (blendFunc != null) __obj.updateDynamic("blendFunc")(blendFunc.asInstanceOf[js.Any])
-    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (ignoreUnusedUniforms != null) __obj.updateDynamic("ignoreUnusedUniforms")(ignoreUnusedUniforms.asInstanceOf[js.Any])
-    onDraw.foreach(p => __obj.updateDynamic("onDraw")(p.toJsFn))
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
-    if (uniforms != null) __obj.updateDynamic("uniforms")(uniforms.asInstanceOf[js.Any])
-    if (uniformsOptions != null) __obj.updateDynamic("uniformsOptions")(uniformsOptions.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.glReact.mod.NodeProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.glReact.mod.Node](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.glReact.mod.NodeProps])
+  inline def apply(shader: ShaderIdentifier | ShaderDefinition): Builder = {
+    val __props = js.Dynamic.literal(shader = shader.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[NodeProps]))
   }
+  
   @JSImport("gl-react", "Node")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.glReact.mod.Node] {
+    
+    inline def backbuffering(value: Boolean): this.type = set("backbuffering", value.asInstanceOf[js.Any])
+    
+    inline def blendFunc(value: Dst): this.type = set("blendFunc", value.asInstanceOf[js.Any])
+    
+    inline def children(value: Any): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def clear(value: Color): this.type = set("clear", value.asInstanceOf[js.Any])
+    
+    inline def height(value: Double): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def ignoreUnusedUniforms(value: js.Array[String] | Boolean): this.type = set("ignoreUnusedUniforms", value.asInstanceOf[js.Any])
+    
+    inline def ignoreUnusedUniformsVarargs(value: String*): this.type = set("ignoreUnusedUniforms", js.Array(value*))
+    
+    inline def onDraw(value: Callback): this.type = set("onDraw", value.toJsFn)
+    
+    inline def sync(value: Boolean): this.type = set("sync", value.asInstanceOf[js.Any])
+    
+    inline def uniformsOptions(value: Any): this.type = set("uniformsOptions", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: NodeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,24 +1,22 @@
 package typingsJapgolly.kdbxweb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "KdbxUuid")
 @js.native
-class KdbxUuid protected () extends js.Object {
+open class KdbxUuid ()
+  extends typingsJapgolly.kdbxweb.distTypesFormatKdbxUuidMod.KdbxUuid {
   def this(ab: String) = this()
-  def this(ab: scala.scalajs.js.typedarray.ArrayBuffer) = this()
-  var empty: Boolean = js.native
-  var id: js.UndefOr[String] = js.native
-  def equals(other: KdbxUuid): Boolean = js.native
-  def toBytes(): js.UndefOr[scala.scalajs.js.typedarray.Uint8Array] = js.native
+  def this(ab: js.typedarray.ArrayBuffer) = this()
 }
-
 /* static members */
-@JSImport("kdbxweb", "KdbxUuid")
-@js.native
-object KdbxUuid extends js.Object {
-  def random(): KdbxUuid = js.native
+object KdbxUuid {
+  
+  @JSImport("kdbxweb", "KdbxUuid")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def random(): typingsJapgolly.kdbxweb.distTypesFormatKdbxUuidMod.KdbxUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typingsJapgolly.kdbxweb.distTypesFormatKdbxUuidMod.KdbxUuid]
 }
-

@@ -1,24 +1,38 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookChartSeriesFormat extends Entity {
+trait WorkbookChartSeriesFormat
+  extends StObject
+     with Entity {
+  
   // Represents the fill format of a chart series, which includes background formating information. Read-only.
-  var fill: js.UndefOr[WorkbookChartFill] = js.undefined
+  var fill: js.UndefOr[NullableOption[WorkbookChartFill]] = js.undefined
+  
   // Represents line formatting. Read-only.
-  var line: js.UndefOr[WorkbookChartLineFormat] = js.undefined
+  var line: js.UndefOr[NullableOption[WorkbookChartLineFormat]] = js.undefined
 }
-
 object WorkbookChartSeriesFormat {
-  @scala.inline
-  def apply(fill: WorkbookChartFill = null, id: String = null, line: WorkbookChartLineFormat = null): WorkbookChartSeriesFormat = {
+  
+  inline def apply(): WorkbookChartSeriesFormat = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartSeriesFormat]
   }
+  
+  extension [Self <: WorkbookChartSeriesFormat](x: Self) {
+    
+    inline def setFill(value: NullableOption[WorkbookChartFill]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillNull: Self = StObject.set(x, "fill", null)
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setLine(value: NullableOption[WorkbookChartLineFormat]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineNull: Self = StObject.set(x, "line", null)
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+  }
 }
-

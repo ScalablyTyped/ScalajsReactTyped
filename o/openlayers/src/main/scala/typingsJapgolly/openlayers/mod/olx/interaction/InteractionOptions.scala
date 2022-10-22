@@ -1,24 +1,26 @@
 package typingsJapgolly.openlayers.mod.olx.interaction
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.openlayers.mod.MapBrowserEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object literal with config options for interactions.
   */
-trait InteractionOptions extends js.Object {
+trait InteractionOptions extends StObject {
+  
   def handleEvent(event: MapBrowserEvent): Boolean
 }
-
 object InteractionOptions {
-  @scala.inline
-  def apply(handleEvent: MapBrowserEvent => CallbackTo[Boolean]): InteractionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handleEvent")(js.Any.fromFunction1((t0: typingsJapgolly.openlayers.mod.MapBrowserEvent) => handleEvent(t0).runNow()))
+  
+  inline def apply(handleEvent: MapBrowserEvent => Boolean): InteractionOptions = {
+    val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
     __obj.asInstanceOf[InteractionOptions]
   }
+  
+  extension [Self <: InteractionOptions](x: Self) {
+    
+    inline def setHandleEvent(value: MapBrowserEvent => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+  }
 }
-

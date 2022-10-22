@@ -1,20 +1,30 @@
 package typingsJapgolly.oracleOraclejet.ojdataproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FetchAttribute extends js.Object {
+trait FetchAttribute extends StObject {
+  
   var attributes: js.UndefOr[js.Array[String | FetchAttribute]] = js.undefined
+  
   var name: String
 }
-
 object FetchAttribute {
-  @scala.inline
-  def apply(name: String, attributes: js.Array[String | FetchAttribute] = null): FetchAttribute = {
+  
+  inline def apply(name: String): FetchAttribute = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchAttribute]
   }
+  
+  extension [Self <: FetchAttribute](x: Self) {
+    
+    inline def setAttributes(value: js.Array[String | FetchAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setAttributesVarargs(value: (String | FetchAttribute)*): Self = StObject.set(x, "attributes", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

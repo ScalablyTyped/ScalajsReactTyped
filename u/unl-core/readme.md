@@ -1,19 +1,19 @@
 
 # Scala.js typings for unl-core
 
-Typings are for version 1.0
+Typings are for version 3.0
 
 ## Library description:
-Gustavo Niemeyer’s geocoding system with elevation
+The core SDK for UNL Location Services
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | unl-core |
-| Keywords           | geohash, geocode, geolocation, latitude, longitude, elevation, unl core, unl |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 829 |
-| # stars            | 0 |
+| Keywords           | polyhash, cluster, locationId, geocode, geolocation, latitude, longitude, elevation, unl core, unl |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1273.6666666666667 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://unl.global)

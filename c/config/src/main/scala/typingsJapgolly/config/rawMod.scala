@@ -1,18 +1,22 @@
 package typingsJapgolly.config
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("config/raw", JSImport.Namespace)
-@js.native
-object rawMod extends js.Object {
+object rawMod {
+  
+  @JSImport("config/raw", JSImport.Namespace)
   @js.native
-  class RawConfig[T] protected () extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("config/raw", "RawConfig")
+  @js.native
+  open class RawConfig[T] protected () extends StObject {
     def this(rawObj: T) = this()
+    
     def resolve(): T = js.native
   }
   
-  def raw[T](obj: T): RawConfig[T] = js.native
+  inline def raw[T](obj: T): RawConfig[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(obj.asInstanceOf[js.Any]).asInstanceOf[RawConfig[T]]
 }
-

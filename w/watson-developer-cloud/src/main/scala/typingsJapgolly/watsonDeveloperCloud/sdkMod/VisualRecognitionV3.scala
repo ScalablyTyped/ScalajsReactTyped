@@ -2,16 +2,16 @@ package typingsJapgolly.watsonDeveloperCloud.sdkMod
 
 import typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.Options
 import typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The IBM Watson&trade; Visual Recognition service uses deep learning algorithms to identify scenes, objects, and faces  in images you upload to the service. You can create and train a custom classifier to identify subjects that suit your needs.
   */
 @JSImport("watson-developer-cloud/sdk", "VisualRecognitionV3")
 @js.native
-class VisualRecognitionV3 protected () extends ^ {
+open class VisualRecognitionV3 protected () extends ^ {
   /**
     * Construct a VisualRecognitionV3 object.
     *
@@ -30,61 +30,89 @@ class VisualRecognitionV3 protected () extends ^ {
     */
   def this(options: Options) = this()
 }
-
-/* static members */
-@JSImport("watson-developer-cloud/sdk", "VisualRecognitionV3")
-@js.native
-object VisualRecognitionV3 extends js.Object {
-  var URL: String = js.native
-  /** Constants for the `classify` operation. */
+object VisualRecognitionV3 {
+  
+  @JSImport("watson-developer-cloud/sdk", "VisualRecognitionV3")
   @js.native
-  object ClassifyConstants extends js.Object {
+  val ^ : js.Any = js.native
+  
+  /** Constants for the `classify` operation. */
+  object ClassifyConstants {
+    
     /** The desired language of parts of the response. See the response for details. */
+    @JSImport("watson-developer-cloud/sdk", "VisualRecognitionV3.ClassifyConstants.AcceptLanguage")
     @js.native
-    object AcceptLanguage extends js.Object {
-      /* "ar" */ val AR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.AR with String = js.native
-      /* "de" */ val DE: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.DE with String = js.native
-      /* "en" */ val EN: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.EN with String = js.native
-      /* "es" */ val ES: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.ES with String = js.native
-      /* "fr" */ val FR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.FR with String = js.native
-      /* "it" */ val IT: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.IT with String = js.native
-      /* "ja" */ val JA: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.JA with String = js.native
-      /* "ko" */ val KO: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.KO with String = js.native
-      /* "pt-br" */ val PT_BR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.PT_BR with String = js.native
-      /* "zh-cn" */ val ZH_CN: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.ZH_CN with String = js.native
-      /* "zh-tw" */ val ZH_TW: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.ZH_TW with String = js.native
+    object AcceptLanguage extends StObject {
+      
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage with String
+            typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage & String
           ] = js.native
+      
+      /* "ar" */ val AR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.AR & String = js.native
+      
+      /* "de" */ val DE: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.DE & String = js.native
+      
+      /* "en" */ val EN: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.EN & String = js.native
+      
+      /* "es" */ val ES: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.ES & String = js.native
+      
+      /* "fr" */ val FR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.FR & String = js.native
+      
+      /* "it" */ val IT: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.IT & String = js.native
+      
+      /* "ja" */ val JA: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.JA & String = js.native
+      
+      /* "ko" */ val KO: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.KO & String = js.native
+      
+      /* "pt-br" */ val PT_BR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.PT_BR & String = js.native
+      
+      /* "zh-cn" */ val ZH_CN: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.ZH_CN & String = js.native
+      
+      /* "zh-tw" */ val ZH_TW: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.ZH_TW & String = js.native
     }
-    
   }
   
   /** Constants for the `detectFaces` operation. */
-  @js.native
-  object DetectFacesConstants extends js.Object {
+  object DetectFacesConstants {
+    
     /** The desired language of parts of the response. See the response for details. */
+    @JSImport("watson-developer-cloud/sdk", "VisualRecognitionV3.DetectFacesConstants.AcceptLanguage")
     @js.native
-    object AcceptLanguage extends js.Object {
-      /* "ar" */ val AR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.AR with String = js.native
-      /* "de" */ val DE: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.DE with String = js.native
-      /* "en" */ val EN: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.EN with String = js.native
-      /* "es" */ val ES: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.ES with String = js.native
-      /* "fr" */ val FR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.FR with String = js.native
-      /* "it" */ val IT: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.IT with String = js.native
-      /* "ja" */ val JA: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.JA with String = js.native
-      /* "ko" */ val KO: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.KO with String = js.native
-      /* "pt-br" */ val PT_BR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.PT_BR with String = js.native
-      /* "zh-cn" */ val ZH_CN: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.ZH_CN with String = js.native
-      /* "zh-tw" */ val ZH_TW: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.ZH_TW with String = js.native
+    object AcceptLanguage extends StObject {
+      
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage with String
+            typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage & String
           ] = js.native
+      
+      /* "ar" */ val AR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.AR & String = js.native
+      
+      /* "de" */ val DE: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.DE & String = js.native
+      
+      /* "en" */ val EN: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.EN & String = js.native
+      
+      /* "es" */ val ES: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.ES & String = js.native
+      
+      /* "fr" */ val FR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.FR & String = js.native
+      
+      /* "it" */ val IT: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.IT & String = js.native
+      
+      /* "ja" */ val JA: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.JA & String = js.native
+      
+      /* "ko" */ val KO: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.KO & String = js.native
+      
+      /* "pt-br" */ val PT_BR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.PT_BR & String = js.native
+      
+      /* "zh-cn" */ val ZH_CN: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.ZH_CN & String = js.native
+      
+      /* "zh-tw" */ val ZH_TW: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.DetectFacesConstants.AcceptLanguage.ZH_TW & String = js.native
     }
-    
   }
   
+  /* static member */
+  @JSImport("watson-developer-cloud/sdk", "VisualRecognitionV3.URL")
+  @js.native
+  def URL: String = js.native
+  inline def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
 }
-

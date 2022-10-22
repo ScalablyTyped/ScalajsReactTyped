@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PosPrinterMapMode extends js.Object
-
+sealed trait PosPrinterMapMode extends StObject
 /** Describes the valid units of measure for point-of-service printers. */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterMapMode")
 @js.native
-object PosPrinterMapMode extends js.Object {
+object PosPrinterMapMode extends StObject {
+  
   /** The dot width for the point-of-service printer. */
   @js.native
-  sealed trait dots extends PosPrinterMapMode
+  sealed trait dots
+    extends StObject
+       with PosPrinterMapMode
   
   /** 0.001 inch. */
   @js.native
-  sealed trait english extends PosPrinterMapMode
+  sealed trait english
+    extends StObject
+       with PosPrinterMapMode
   
   /** 0.01 millimeter. */
   @js.native
-  sealed trait metric extends PosPrinterMapMode
+  sealed trait metric
+    extends StObject
+       with PosPrinterMapMode
   
   /** 1/1440 of an inch. */
   @js.native
-  sealed trait twips extends PosPrinterMapMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PosPrinterMapMode with Double] = js.native
-  /* 0 */ @js.native
-  object dots extends TopLevel[dots with Double]
-  
-  /* 2 */ @js.native
-  object english extends TopLevel[english with Double]
-  
-  /* 3 */ @js.native
-  object metric extends TopLevel[metric with Double]
-  
-  /* 1 */ @js.native
-  object twips extends TopLevel[twips with Double]
-  
+  sealed trait twips
+    extends StObject
+       with PosPrinterMapMode
 }
-

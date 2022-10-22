@@ -1,14 +1,18 @@
 package typingsJapgolly.halogen.components
 
 import typingsJapgolly.halogen.mod.BeatLoaderCls
+import typingsJapgolly.halogen.mod.MarginLoaderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object BeatLoader extends SharedApply_MarginLoaderProps_1430426107[BeatLoaderCls] {
+object BeatLoader {
+  
   @JSImport("halogen", "BeatLoader")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: BeatLoader.type): SharedBuilder_MarginLoaderProps134229891[BeatLoaderCls] = new SharedBuilder_MarginLoaderProps134229891[BeatLoaderCls](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MarginLoaderProps[String]): SharedBuilder_MarginLoaderProps134229891[BeatLoaderCls] = new SharedBuilder_MarginLoaderProps134229891[BeatLoaderCls](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

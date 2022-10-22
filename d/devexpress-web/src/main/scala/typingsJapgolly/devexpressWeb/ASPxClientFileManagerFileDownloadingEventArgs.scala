@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.FileDownloading event.
   */
-@JSGlobal("ASPxClientFileManagerFileDownloadingEventArgs")
-@js.native
-class ASPxClientFileManagerFileDownloadingEventArgs protected () extends ASPxClientFileManagerFileEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientFileManagerFileDownloadingEventArgs object.
-    * @param file An ASPxClientFileManagerFile object that is the file currently being processed.
-    */
-  def this(file: ASPxClientFileManagerFile) = this()
+trait ASPxClientFileManagerFileDownloadingEventArgs
+  extends StObject
+     with ASPxClientFileManagerFileEventArgs {
+  
   /**
     * Gets or sets a value indicating whether the action which raised the event, should be canceled.
     */
-  var cancel: Boolean = js.native
+  var cancel: Boolean
 }
-
+object ASPxClientFileManagerFileDownloadingEventArgs {
+  
+  inline def apply(cancel: Boolean, file: ASPxClientFileManagerFile): ASPxClientFileManagerFileDownloadingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientFileManagerFileDownloadingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientFileManagerFileDownloadingEventArgs](x: Self) {
+    
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+  }
+}

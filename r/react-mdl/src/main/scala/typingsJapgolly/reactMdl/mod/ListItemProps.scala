@@ -1,32 +1,33 @@
 package typingsJapgolly.reactMdl.mod
 
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
+import typingsJapgolly.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ListItemProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any] {
+  extends StObject
+     with HTMLProps[Any] {
+  
   var threeLine: js.UndefOr[Boolean] = js.undefined
+  
   var twoLine: js.UndefOr[Boolean] = js.undefined
 }
-
 object ListItemProps {
-  @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    threeLine: js.UndefOr[Boolean] = js.undefined,
-    twoLine: js.UndefOr[Boolean] = js.undefined
-  ): ListItemProps = {
+  
+  inline def apply(): ListItemProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(threeLine)) __obj.updateDynamic("threeLine")(threeLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(twoLine)) __obj.updateDynamic("twoLine")(twoLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemProps]
   }
+  
+  extension [Self <: ListItemProps](x: Self) {
+    
+    inline def setThreeLine(value: Boolean): Self = StObject.set(x, "threeLine", value.asInstanceOf[js.Any])
+    
+    inline def setThreeLineUndefined: Self = StObject.set(x, "threeLine", js.undefined)
+    
+    inline def setTwoLine(value: Boolean): Self = StObject.set(x, "twoLine", value.asInstanceOf[js.Any])
+    
+    inline def setTwoLineUndefined: Self = StObject.set(x, "twoLine", js.undefined)
+  }
 }
-

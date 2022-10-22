@@ -1,22 +1,28 @@
 package typingsJapgolly.select2.mod
 
 import typingsJapgolly.jquery.BaseJQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataParams extends js.Object {
+trait DataParams extends StObject {
+  
   var data: OptionData
-   // TODO: must be data source
+  
+  // TODO: must be data source
   var originalEvent: BaseJQueryEventObject
 }
-
 object DataParams {
-  @scala.inline
-  def apply(data: OptionData, originalEvent: BaseJQueryEventObject): DataParams = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
   
+  inline def apply(data: OptionData, originalEvent: BaseJQueryEventObject): DataParams = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataParams]
   }
+  
+  extension [Self <: DataParams](x: Self) {
+    
+    inline def setData(value: OptionData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalEvent(value: BaseJQueryEventObject): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+  }
 }
-

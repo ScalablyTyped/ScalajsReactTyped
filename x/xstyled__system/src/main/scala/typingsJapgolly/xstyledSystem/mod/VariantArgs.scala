@@ -1,30 +1,42 @@
 package typingsJapgolly.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VariantArgs extends js.Object {
+trait VariantArgs extends StObject {
+  
   var default: js.UndefOr[String | Double] = js.undefined
+  
   var key: js.UndefOr[String] = js.undefined
+  
   var prop: js.UndefOr[String] = js.undefined
+  
   var variants: js.UndefOr[js.Object] = js.undefined
 }
-
 object VariantArgs {
-  @scala.inline
-  def apply(
-    default: String | Double = null,
-    key: String = null,
-    prop: String = null,
-    variants: js.Object = null
-  ): VariantArgs = {
+  
+  inline def apply(): VariantArgs = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (prop != null) __obj.updateDynamic("prop")(prop.asInstanceOf[js.Any])
-    if (variants != null) __obj.updateDynamic("variants")(variants.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariantArgs]
   }
+  
+  extension [Self <: VariantArgs](x: Self) {
+    
+    inline def setDefault(value: String | Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+    
+    inline def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
+    
+    inline def setVariants(value: js.Object): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    
+    inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
+  }
 }
-

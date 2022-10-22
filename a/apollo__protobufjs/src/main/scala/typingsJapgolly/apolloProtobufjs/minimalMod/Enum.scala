@@ -2,13 +2,13 @@ package typingsJapgolly.apolloProtobufjs.minimalMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.apolloProtobufjs.mod.IEnum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs/minimal", "Enum")
 @js.native
-class Enum protected ()
+open class Enum protected ()
   extends typingsJapgolly.apolloProtobufjs.mod.Enum {
   /**
     * Constructs a new enum instance.
@@ -20,21 +20,64 @@ class Enum protected ()
     */
   def this(name: String) = this()
   def this(name: String, values: StringDictionary[Double]) = this()
-  def this(name: String, values: StringDictionary[Double], options: StringDictionary[js.Any]) = this()
-  def this(name: String, values: StringDictionary[Double], options: StringDictionary[js.Any], comment: String) = this()
+  def this(name: String, values: StringDictionary[Double], options: StringDictionary[Any]) = this()
+  def this(name: String, values: Unit, options: StringDictionary[Any]) = this()
+  def this(name: String, values: StringDictionary[Double], options: StringDictionary[Any], comment: String) = this()
+  def this(name: String, values: StringDictionary[Double], options: Unit, comment: String) = this()
+  def this(name: String, values: Unit, options: StringDictionary[Any], comment: String) = this()
+  def this(name: String, values: Unit, options: Unit, comment: String) = this()
   def this(
     name: String,
     values: StringDictionary[Double],
-    options: StringDictionary[js.Any],
+    options: StringDictionary[Any],
     comment: String,
     comments: StringDictionary[String]
   ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: StringDictionary[Any],
+    comment: Unit,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: Unit,
+    comment: String,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: Unit,
+    comment: Unit,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: Unit,
+    options: StringDictionary[Any],
+    comment: String,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: Unit,
+    options: StringDictionary[Any],
+    comment: Unit,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(name: String, values: Unit, options: Unit, comment: String, comments: StringDictionary[String]) = this()
+  def this(name: String, values: Unit, options: Unit, comment: Unit, comments: StringDictionary[String]) = this()
 }
-
 /* static members */
-@JSImport("@apollo/protobufjs/minimal", "Enum")
-@js.native
-object Enum extends js.Object {
+object Enum {
+  
+  @JSImport("@apollo/protobufjs/minimal", "Enum")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Constructs an enum from an enum descriptor.
     * @param name Enum name
@@ -42,6 +85,5 @@ object Enum extends js.Object {
     * @returns Created enum
     * @throws {TypeError} If arguments are invalid
     */
-  def fromJSON(name: String, json: IEnum): typingsJapgolly.apolloProtobufjs.mod.Enum = js.native
+  inline def fromJSON(name: String, json: IEnum): typingsJapgolly.apolloProtobufjs.mod.Enum = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.apolloProtobufjs.mod.Enum]
 }
-

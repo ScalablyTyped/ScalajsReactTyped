@@ -1,37 +1,28 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GenericTransformStream extends js.Object {
-  /**
-    * Returns a readable stream whose chunks are strings resulting from running encoding's decoder on the chunks written to writable.
-    */
-  val readable: org.scalajs.dom.experimental.ReadableStream[_]
-  /**
-    * Returns a writable stream which accepts [AllowShared] BufferSource chunks and runs them through encoding's decoder before making them available to readable.
-    * 
-    * Typically this will be used via the pipeThrough() method on a ReadableStream source.
-    * 
-    * ```
-    * var decoder = new TextDecoderStream(encoding);
-    * byteReadable
-    *   .pipeThrough(decoder)
-    *   .pipeTo(textWritable);
-    * ```
-    * 
-    * If the error mode is "fatal" and encoding's decoder returns error, both readable and writable will be errored with a TypeError.
-    */
-  val writable: WritableStream[_]
-}
-
-object GenericTransformStream {
-  @scala.inline
-  def apply(readable: org.scalajs.dom.experimental.ReadableStream[_], writable: WritableStream[_]): GenericTransformStream = {
-    val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
+trait GenericTransformStream extends StObject {
   
+  /* standard dom */
+  val readable: org.scalajs.dom.ReadableStream[Any]
+  
+  /* standard dom */
+  val writable: WritableStream[Any]
+}
+object GenericTransformStream {
+  
+  inline def apply(readable: org.scalajs.dom.ReadableStream[Any], writable: WritableStream[Any]): GenericTransformStream = {
+    val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenericTransformStream]
   }
+  
+  extension [Self <: GenericTransformStream](x: Self) {
+    
+    inline def setReadable(value: org.scalajs.dom.ReadableStream[Any]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+    
+    inline def setWritable(value: WritableStream[Any]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+  }
 }
-

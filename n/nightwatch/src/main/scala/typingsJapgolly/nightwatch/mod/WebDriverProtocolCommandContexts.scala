@@ -1,18 +1,15 @@
 package typingsJapgolly.nightwatch.mod
 
-import typingsJapgolly.nightwatch.AnonHeight
-import typingsJapgolly.nightwatch.AnonX
+import typingsJapgolly.nightwatch.anon.HeightWidth
+import typingsJapgolly.nightwatch.anon.Width
+import typingsJapgolly.seleniumWebdriver.mod.WebElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebDriverProtocolCommandContexts extends js.Object {
-  def frame(): this.type = js.native
-  def frame(
-    frameId: js.UndefOr[scala.Nothing],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+trait WebDriverProtocolCommandContexts extends StObject {
+  
   /**
     * Change focus to another frame on the page. If the frame id is missing or null, the server should switch to the page's default content.
     *
@@ -23,15 +20,31 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     *    });
     * }
     */
+  def frame(): this.type = js.native
   def frame(frameId: String): this.type = js.native
   def frame(
     frameId: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def frame(frameId: Double): this.type = js.native
+  def frame(
+    frameId: Double,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
   def frame(
     frameId: Null,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  def frame(
+    frameId: Unit,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def frame(frameId: WebElement): this.type = js.native
+  def frame(
+    frameId: WebElement,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  
   /**
     * Change focus to the parent context. If the current context is the top level browsing context, the context remains unchanged.
     *
@@ -48,6 +61,7 @@ trait WebDriverProtocolCommandContexts extends js.Object {
   def frameParent(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  
   /**
     * Change focus to another window or close the current window. Shouldn't normally be used directly, instead `.switchWindow()` and `.closeWindow()` should be used.
     */
@@ -58,6 +72,12 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     handleOrName: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
+  def window(
+    method: String,
+    handleOrName: Unit,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  
   /**
     * Retrieve the current window handle.
     *
@@ -68,10 +88,11 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     *    });
     * }
     */
-  def windowHandle(): this.type = js.native
+  def windowHandle(): Awaitable[this.type, String] = js.native
   def windowHandle(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, String] = js.native
+  
   /**
     * Retrieve the list of all window handles available to the session.
     *
@@ -83,14 +104,15 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     *    });
     * }
     */
-  def windowHandles(): this.type = js.native
+  def windowHandles(): Awaitable[this.type, js.Array[String]] = js.native
   def windowHandles(
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
       /* result */ NightwatchCallbackResult[js.Array[String]], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, js.Array[String]] = js.native
+  
   /**
     * Increases the window to the maximum available size without going full-screen.
     *
@@ -101,35 +123,25 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     *    });
     * }
     */
+  def windowMaximize(): this.type = js.native
   def windowMaximize(handleOrName: String): this.type = js.native
   def windowMaximize(
     handleOrName: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
-  /**
-    * Change or get the position of the specified window. If the second argument is a function it will be used as a callback and
-    * the call will perform a get request to retrieve the existing window position.
-    *
-    * @example
-    *  this.demoTest = function (browser) {
-    *
-    *    // Change the position of the specified window.
-    *    // If the :windowHandle URL parameter is "current", the currently active window will be moved.
-    *    browser.windowPosition('current', 0, 0, function(result) {
-    *      console.log(result);
-    *    });
-    *
-    *    // Get the position of the specified window.
-    *    // If the :windowHandle URL parameter is "current", the position of the currently active window will be returned.
-    *    browser.windowPosition('current', function(result) {
-    *      console.log(result.value);
-    *    });
-    * }
-    */
+  def windowMaximize(
+    handleOrName: Unit,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  
   def windowPosition(windowHandle: String): this.type = js.native
   def windowPosition(
     windowHandle: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonX], Unit]
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[NightwatchPosition], 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Change or get the position of the specified window. If the second argument is a function it will be used as a callback and
@@ -156,30 +168,58 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     windowHandle: String,
     offsetX: Double,
     offsetY: Double,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[NightwatchPosition], 
+      Unit
+    ]
   ): this.type = js.native
+  
   /**
-    * Change or get the size of the specified window. If the second argument is a function it will be used as a callback and the call will perform a get request to retrieve the existing window size.
+    *
+    * Change or get the [window rect](https://w3c.github.io/webdriver/#dfn-window-rect).
+    * This is defined as a dictionary of the `screenX`, `screenY`, `outerWidth` and `outerHeight` attributes of the window.
+    *
+    * Its JSON representation is the following:
+    * - `x` - window's screenX attribute;
+    * - `y` - window's screenY attribute;
+    * - `width` - outerWidth attribute;
+    * - `height` - outerHeight attribute.
+    *
+    * All attributes are in in CSS pixels. To change the window react, you can either specify `width` and `height`, `x` and `y` or all properties together.
     *
     * @example
-    *  this.demoTest = function (browser) {
+    * module.exports = {
+    *   'demo test .windowRect()': function(browser) {
     *
-    *    // Return the size of the specified window. If the :windowHandle URL parameter is "current", the size of the currently active window will be returned.
-    *    browser.windowSize('current', function(result) {
-    *      console.log(result.value);
-    *    });
+    *      // Change the screenX and screenY attributes of the window rect.
+    *      browser.windowRect({x: 500, y: 500});
     *
-    *    // Change the size of the specified window.
-    *    // If the :windowHandle URL parameter is "current", the currently active window will be resized.
-    *    browser.windowSize('current', 300, 300, function(result) {
-    *      console.log(result.value);
-    *    });
+    *      // Change the width and height attributes of the window rect.
+    *      browser.windowRect({width: 600, height: 300});
+    *
+    *      // Retrieve the attributes
+    *      browser.windowRect(function(result) {
+    *        console.log(result.value);
+    *      });
+    *   },
+    *
+    *   'windowRect ES6 demo test': async function(browser) {
+    *      const resultValue = await browser.windowRect();
+    *      console.log('result value', resultValue);
+    *   }
     * }
     */
+  def windowRect(options: Width): this.type = js.native
+  def windowRect(
+    options: Width,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  
   def windowSize(windowHandle: String): this.type = js.native
   def windowSize(
     windowHandle: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonHeight], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[HeightWidth], Unit]
   ): this.type = js.native
   /**
     * Change or get the size of the specified window. If the second argument is a function it will be used as a callback and the call will perform a get request to retrieve the existing window size.
@@ -207,4 +247,3 @@ trait WebDriverProtocolCommandContexts extends js.Object {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
 }
-

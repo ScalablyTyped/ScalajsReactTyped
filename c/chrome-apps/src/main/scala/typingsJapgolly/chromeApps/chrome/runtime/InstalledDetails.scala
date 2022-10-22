@@ -1,54 +1,69 @@
 package typingsJapgolly.chromeApps.chrome.runtime
 
-import typingsJapgolly.chromeApps.AnonCHROMEUPDATE
+import typingsJapgolly.chromeApps.anon.CHROMEUPDATE
 import typingsJapgolly.chromeApps.chrome.ToStringLiteral
-import typingsJapgolly.chromeApps.chromeAppsStrings.chrome_update
-import typingsJapgolly.chromeApps.chromeAppsStrings.install
-import typingsJapgolly.chromeApps.chromeAppsStrings.shared_module_update
-import typingsJapgolly.chromeApps.chromeAppsStrings.update
-import typingsJapgolly.std.Exclude
+import typingsJapgolly.chromeApps.chromeAppsStrings.CHROME_UPDATE
+import typingsJapgolly.chromeApps.chromeAppsStrings.INSTALL
+import typingsJapgolly.chromeApps.chromeAppsStrings.SHARED_MODULE_UPDATE
+import typingsJapgolly.chromeApps.chromeAppsStrings.UPDATE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InstalledDetails extends js.Object {
+trait InstalledDetails extends StObject {
+  
   /**
     * Optional.
     * Indicates the ID of the imported shared module extension which updated. This is present only if 'reason' is 'shared_module_update'.
     * @since Chrome 29.
     */
   var id: js.UndefOr[String] = js.undefined
+  
   /**
     * Optional.
     * Indicates the previous version of the extension, which has just been updated. This is present only if 'reason' is 'update'.
     */
   var previousVersion: js.UndefOr[String] = js.undefined
+  
   /**
     * The reason that this event is being dispatched.
     * @see enum OnInstalledReason
     */
   var reason: ToStringLiteral[
-    AnonCHROMEUPDATE, 
-    String, 
-    Exclude[String, install | update | chrome_update | shared_module_update]
+    CHROMEUPDATE, 
+    /* keyof chrome-apps.anon.CHROMEUPDATE */ INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
+    /* import warning: importer.ImportType#apply Failed type conversion: keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'} extends keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'} ? std.Exclude<keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'}, 'install' | 'update' | 'chrome_update' | 'shared_module_update'> : never */ js.Any
   ]
 }
-
 object InstalledDetails {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     reason: ToStringLiteral[
-      AnonCHROMEUPDATE, 
-      String, 
-      Exclude[String, install | update | chrome_update | shared_module_update]
-    ],
-    id: String = null,
-    previousVersion: String = null
+      CHROMEUPDATE, 
+      /* keyof chrome-apps.anon.CHROMEUPDATE */ INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'} extends keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'} ? std.Exclude<keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'}, 'install' | 'update' | 'chrome_update' | 'shared_module_update'> : never */ js.Any
+    ]
   ): InstalledDetails = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (previousVersion != null) __obj.updateDynamic("previousVersion")(previousVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstalledDetails]
   }
+  
+  extension [Self <: InstalledDetails](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setPreviousVersion(value: String): Self = StObject.set(x, "previousVersion", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousVersionUndefined: Self = StObject.set(x, "previousVersion", js.undefined)
+    
+    inline def setReason(
+      value: ToStringLiteral[
+          CHROMEUPDATE, 
+          /* keyof chrome-apps.anon.CHROMEUPDATE */ INSTALL | UPDATE | CHROME_UPDATE | SHARED_MODULE_UPDATE, 
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'} extends keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'} ? std.Exclude<keyof {  INSTALL :'install',   UPDATE :'update',   CHROME_UPDATE :'chrome_update',   SHARED_MODULE_UPDATE :'shared_module_update'}, 'install' | 'update' | 'chrome_update' | 'shared_module_update'> : never */ js.Any
+        ]
+    ): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+  }
 }
-

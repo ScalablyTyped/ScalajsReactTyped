@@ -1,7 +1,7 @@
 
 # Scala.js typings for pollyjs__node-server
 
-Typings are for version 2.6
+Typings are for version 4.3
 
 ## Library description:
 Standalone node server and express integration for @pollyjs
@@ -10,15 +10,12 @@ Standalone node server and express integration for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/node-server |
 | Keywords           | polly, pollyjs, server, record, replay, express |
-| # releases         | 21 |
-| # dependents       | 4 |
-| # downloads        | 311161 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 304729.6666666667 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
-- [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Fnode-server)
     
 

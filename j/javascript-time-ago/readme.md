@@ -4,21 +4,21 @@
 Typings are for version 2.0
 
 ## Library description:
-International highly customizable relative date/time formatting
+Localized relative date/time formatting
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | javascript-time-ago |
 | Keywords           | time, ago, relative, format |
-| # releases         | 40 |
-| # dependents       | 23 |
-| # downloads        | 544378 |
-| # stars            | 3 |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 310952.3333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/catamphetamine/javascript-time-ago#readme)
-- [Bugs](https://github.com/catamphetamine/javascript-time-ago/issues)
-- [Repository](https://github.com/catamphetamine/javascript-time-ago)
+- [Homepage](https://gitlab.com/catamphetamine/javascript-time-ago#readme)
+- [Bugs](https://gitlab.com/catamphetamine/javascript-time-ago/issues)
+- [Repository](https://gitlab.com/catamphetamine/javascript-time-ago)
 - [Npm](https://www.npmjs.com/package/javascript-time-ago)
     
 

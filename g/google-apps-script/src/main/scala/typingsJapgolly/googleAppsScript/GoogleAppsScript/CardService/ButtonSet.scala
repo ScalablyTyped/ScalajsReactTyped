@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Holds a set of Button objects that are displayed in a row.
@@ -18,16 +17,19 @@ import scala.scalajs.js.annotation._
   *         .addButton(textButton)
   *         .addButton(imageButton);
   */
-trait ButtonSet extends js.Object {
+trait ButtonSet extends StObject {
+  
   def addButton(button: Button): ButtonSet
 }
-
 object ButtonSet {
-  @scala.inline
-  def apply(addButton: Button => CallbackTo[ButtonSet]): ButtonSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addButton")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Button) => addButton(t0).runNow()))
+  
+  inline def apply(addButton: Button => ButtonSet): ButtonSet = {
+    val __obj = js.Dynamic.literal(addButton = js.Any.fromFunction1(addButton))
     __obj.asInstanceOf[ButtonSet]
   }
+  
+  extension [Self <: ButtonSet](x: Self) {
+    
+    inline def setAddButton(value: Button => ButtonSet): Self = StObject.set(x, "addButton", js.Any.fromFunction1(value))
+  }
 }
-

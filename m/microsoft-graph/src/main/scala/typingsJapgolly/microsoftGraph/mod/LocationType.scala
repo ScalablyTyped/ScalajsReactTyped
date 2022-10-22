@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.default
@@ -16,30 +16,26 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.localBusiness
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.postalAddress
 */
-trait LocationType extends js.Object
-
+trait LocationType extends StObject
 object LocationType {
-  @scala.inline
-  def businessAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.businessAddress = this.cast("businessAddress")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def conferenceRoom: typingsJapgolly.microsoftGraph.microsoftGraphStrings.conferenceRoom = this.cast("conferenceRoom")
-  @scala.inline
-  def default: typingsJapgolly.microsoftGraph.microsoftGraphStrings.default = this.cast("default")
-  @scala.inline
-  def geoCoordinates: typingsJapgolly.microsoftGraph.microsoftGraphStrings.geoCoordinates = this.cast("geoCoordinates")
-  @scala.inline
-  def homeAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.homeAddress = this.cast("homeAddress")
-  @scala.inline
-  def hotel: typingsJapgolly.microsoftGraph.microsoftGraphStrings.hotel = this.cast("hotel")
-  @scala.inline
-  def localBusiness: typingsJapgolly.microsoftGraph.microsoftGraphStrings.localBusiness = this.cast("localBusiness")
-  @scala.inline
-  def postalAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.postalAddress = this.cast("postalAddress")
-  @scala.inline
-  def restaurant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.restaurant = this.cast("restaurant")
-  @scala.inline
-  def streetAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.streetAddress = this.cast("streetAddress")
+  
+  inline def default: typingsJapgolly.microsoftGraph.microsoftGraphStrings.default = "default".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.default]
+  
+  inline def businessAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.businessAddress = "businessAddress".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.businessAddress]
+  
+  inline def conferenceRoom: typingsJapgolly.microsoftGraph.microsoftGraphStrings.conferenceRoom = "conferenceRoom".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.conferenceRoom]
+  
+  inline def geoCoordinates: typingsJapgolly.microsoftGraph.microsoftGraphStrings.geoCoordinates = "geoCoordinates".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.geoCoordinates]
+  
+  inline def homeAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.homeAddress = "homeAddress".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.homeAddress]
+  
+  inline def hotel: typingsJapgolly.microsoftGraph.microsoftGraphStrings.hotel = "hotel".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.hotel]
+  
+  inline def localBusiness: typingsJapgolly.microsoftGraph.microsoftGraphStrings.localBusiness = "localBusiness".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.localBusiness]
+  
+  inline def postalAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.postalAddress = "postalAddress".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.postalAddress]
+  
+  inline def restaurant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.restaurant = "restaurant".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.restaurant]
+  
+  inline def streetAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.streetAddress = "streetAddress".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.streetAddress]
 }
-

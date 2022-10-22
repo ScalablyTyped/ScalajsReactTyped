@@ -1,14 +1,28 @@
 package typingsJapgolly.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Outlook.OlkPageControl")
-@js.native
-class OlkPageControl protected () extends js.Object {
-  @JSName("Outlook.OlkPageControl_typekey")
-  var OutlookDotOlkPageControl_typekey: OlkPageControl = js.native
-  var Page: OlPageType = js.native
+trait OlkPageControl extends StObject {
+  
+  /* private */ @JSName("Outlook.OlkPageControl_typekey")
+  var OutlookDotOlkPageControl_typekey: OlkPageControl
+  
+  var Page: OlPageType
 }
-
+object OlkPageControl {
+  
+  inline def apply(OutlookDotOlkPageControl_typekey: OlkPageControl, Page: OlPageType): OlkPageControl = {
+    val __obj = js.Dynamic.literal(Page = Page.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.OlkPageControl_typekey")(OutlookDotOlkPageControl_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OlkPageControl]
+  }
+  
+  extension [Self <: OlkPageControl](x: Self) {
+    
+    inline def setOutlookDotOlkPageControl_typekey(value: OlkPageControl): Self = StObject.set(x, "Outlook.OlkPageControl_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setPage(value: OlPageType): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
+  }
+}

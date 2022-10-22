@@ -1,14 +1,14 @@
-package typingsJapgolly.httpErrors
+package typingsJapgolly.httpErrors.mod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type CreateHttpError = js.Function1[
-    /* repeated */ typingsJapgolly.httpErrors.mod.UnknownError, 
-    typingsJapgolly.httpErrors.mod.HttpError
-  ]
-  type HttpErrorConstructor = org.scalablytyped.runtime.Instantiable1[js.UndefOr[/* msg */ java.lang.String], typingsJapgolly.httpErrors.mod.HttpError]
-  type UnknownError = js.Error | java.lang.String | scala.Double | org.scalablytyped.runtime.StringDictionary[js.Any]
-}
+
+type HttpErrorConstructor[N /* <: Double */] = Instantiable1[/* msg */ js.UndefOr[String], HttpError[N]]
+
+type IsHttpError = js.Function1[/* error */ Any, /* is http-errors.http-errors.HttpError<number> */ Boolean]
+
+type UnknownError = js.Error | String | Double | StringDictionary[Any]

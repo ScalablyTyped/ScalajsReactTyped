@@ -1,7 +1,7 @@
 
 # Scala.js typings for rdfjs__fetch
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Wrapper for fetch to simplify sending and receiving RDF data
@@ -11,9 +11,9 @@ Wrapper for fetch to simplify sending and receiving RDF data
 | Full name          | @rdfjs/fetch |
 | Keywords           | rdf, rdfjs, fetch |
 | # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 66 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1448.6666666666667 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/fetch)

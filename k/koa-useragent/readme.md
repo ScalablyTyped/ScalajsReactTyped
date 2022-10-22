@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-useragent
 
-Typings are for version 3.0.0
+Typings are for version 4.1.0
 
 ## Library description:
 Koa.js middleware for useragent detection
@@ -10,10 +10,10 @@ Koa.js middleware for useragent detection
 | ------------------ | :-------------: |
 | Full name          | koa-useragent |
 | Keywords           | koa, middleware, useragent |
-| # releases         | 11 |
-| # dependents       | 11 |
-| # downloads        | 163401 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 170808.0 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/rvboris/koa-useragent#readme)

@@ -1,30 +1,37 @@
 package typingsJapgolly.qlik.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QMeasureCell extends js.Object {
-  var qNum: js.UndefOr[Double] = js.undefined
-  var qText: String
+trait QMeasureCell extends StObject {
+  
   def getPercent(): Double
+  
   def getPercentOfMax(): Double
+  
+  var qNum: js.UndefOr[Double] = js.undefined
+  
+  var qText: String
 }
-
 object QMeasureCell {
-  @scala.inline
-  def apply(
-    getPercent: CallbackTo[Double],
-    getPercentOfMax: CallbackTo[Double],
-    qText: String,
-    qNum: Int | Double = null
-  ): QMeasureCell = {
-    val __obj = js.Dynamic.literal(qText = qText.asInstanceOf[js.Any])
-    __obj.updateDynamic("getPercent")(getPercent.toJsFn)
-    __obj.updateDynamic("getPercentOfMax")(getPercentOfMax.toJsFn)
-    if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
+  
+  inline def apply(getPercent: CallbackTo[Double], getPercentOfMax: CallbackTo[Double], qText: String): QMeasureCell = {
+    val __obj = js.Dynamic.literal(getPercent = getPercent.toJsFn, getPercentOfMax = getPercentOfMax.toJsFn, qText = qText.asInstanceOf[js.Any])
     __obj.asInstanceOf[QMeasureCell]
   }
+  
+  extension [Self <: QMeasureCell](x: Self) {
+    
+    inline def setGetPercent(value: CallbackTo[Double]): Self = StObject.set(x, "getPercent", value.toJsFn)
+    
+    inline def setGetPercentOfMax(value: CallbackTo[Double]): Self = StObject.set(x, "getPercentOfMax", value.toJsFn)
+    
+    inline def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
+    
+    inline def setQNumUndefined: Self = StObject.set(x, "qNum", js.undefined)
+    
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+  }
 }
-

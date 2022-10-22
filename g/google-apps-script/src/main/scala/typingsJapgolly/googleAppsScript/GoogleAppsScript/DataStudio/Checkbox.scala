@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.DataStudio
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains checkbox information for the config. Its properties determine how the checkbox is
@@ -15,30 +14,41 @@ import scala.scalajs.js.annotation._
   *       .setHelpText("Whether or not https should be used.")
   *       .setAllowOverride(true);
   */
-trait Checkbox extends js.Object {
+trait Checkbox extends StObject {
+  
   def setAllowOverride(allowOverride: Boolean): Checkbox
+  
   def setHelpText(helpText: String): Checkbox
+  
   def setId(id: String): Checkbox
+  
   def setIsDynamic(isDynamic: Boolean): Checkbox
+  
   def setName(name: String): Checkbox
 }
-
 object Checkbox {
-  @scala.inline
-  def apply(
-    setAllowOverride: Boolean => CallbackTo[Checkbox],
-    setHelpText: String => CallbackTo[Checkbox],
-    setId: String => CallbackTo[Checkbox],
-    setIsDynamic: Boolean => CallbackTo[Checkbox],
-    setName: String => CallbackTo[Checkbox]
+  
+  inline def apply(
+    setAllowOverride: Boolean => Checkbox,
+    setHelpText: String => Checkbox,
+    setId: String => Checkbox,
+    setIsDynamic: Boolean => Checkbox,
+    setName: String => Checkbox
   ): Checkbox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setAllowOverride")(js.Any.fromFunction1((t0: scala.Boolean) => setAllowOverride(t0).runNow()))
-    __obj.updateDynamic("setHelpText")(js.Any.fromFunction1((t0: java.lang.String) => setHelpText(t0).runNow()))
-    __obj.updateDynamic("setId")(js.Any.fromFunction1((t0: java.lang.String) => setId(t0).runNow()))
-    __obj.updateDynamic("setIsDynamic")(js.Any.fromFunction1((t0: scala.Boolean) => setIsDynamic(t0).runNow()))
-    __obj.updateDynamic("setName")(js.Any.fromFunction1((t0: java.lang.String) => setName(t0).runNow()))
+    val __obj = js.Dynamic.literal(setAllowOverride = js.Any.fromFunction1(setAllowOverride), setHelpText = js.Any.fromFunction1(setHelpText), setId = js.Any.fromFunction1(setId), setIsDynamic = js.Any.fromFunction1(setIsDynamic), setName = js.Any.fromFunction1(setName))
     __obj.asInstanceOf[Checkbox]
   }
+  
+  extension [Self <: Checkbox](x: Self) {
+    
+    inline def setSetAllowOverride(value: Boolean => Checkbox): Self = StObject.set(x, "setAllowOverride", js.Any.fromFunction1(value))
+    
+    inline def setSetHelpText(value: String => Checkbox): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
+    
+    inline def setSetId(value: String => Checkbox): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+    
+    inline def setSetIsDynamic(value: Boolean => Checkbox): Self = StObject.set(x, "setIsDynamic", js.Any.fromFunction1(value))
+    
+    inline def setSetName(value: String => Checkbox): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+  }
 }
-

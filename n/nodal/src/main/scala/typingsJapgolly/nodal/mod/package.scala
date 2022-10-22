@@ -1,14 +1,31 @@
-package typingsJapgolly.nodal
+package typingsJapgolly.nodal.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.nodal.mod.^
+import typingsJapgolly.node.NodeRequire
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type IAnyObject = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type IArrInterface = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
-  type ICalculations = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.nodal.mod.ICalculation]
-  type IModelData = org.scalablytyped.runtime.StringDictionary[js.Array[js.Any]]
-  type InterfaceType = typingsJapgolly.nodal.mod.IArrInterface | java.lang.String
-  type Query = js.Any
-}
+
+inline def API: APIConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("API").asInstanceOf[APIConstructor]
+
+inline def APIResource: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("APIResource").asInstanceOf[Any]
+
+inline def CLI: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("CLI").asInstanceOf[Any]
+
+inline def mime: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("mime").asInstanceOf[Any]
+
+inline def require: NodeRequire = ^.asInstanceOf[js.Dynamic].selectDynamic("require").asInstanceOf[NodeRequire]
+
+type IAnyObject = StringDictionary[Any]
+
+type IArrInterface = StringDictionary[js.Array[String]]
+
+type ICalculations = StringDictionary[ICalculation]
+
+type IModelData = StringDictionary[js.Array[Any]]
+
+type InterfaceType = IArrInterface | String
+
+type Query = Any

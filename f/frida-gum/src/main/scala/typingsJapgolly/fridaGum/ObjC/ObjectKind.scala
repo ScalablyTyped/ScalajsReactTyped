@@ -1,8 +1,8 @@
 package typingsJapgolly.fridaGum.ObjC
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * What kind of object an ObjC.Object represents.
@@ -12,16 +12,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.fridaGumStrings.`class`
   - typingsJapgolly.fridaGum.fridaGumStrings.`meta-class`
 */
-trait ObjectKind extends js.Object
-
+trait ObjectKind extends StObject
 object ObjectKind {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `class`: typingsJapgolly.fridaGum.fridaGumStrings.`class` = this.cast("class")
-  @scala.inline
-  def instance: typingsJapgolly.fridaGum.fridaGumStrings.instance = this.cast("instance")
-  @scala.inline
-  def `meta-class`: typingsJapgolly.fridaGum.fridaGumStrings.`meta-class` = this.cast("meta-class")
+  
+  inline def `class`: typingsJapgolly.fridaGum.fridaGumStrings.`class` = "class".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.`class`]
+  
+  inline def instance: typingsJapgolly.fridaGum.fridaGumStrings.instance = "instance".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.instance]
+  
+  inline def `meta-class`: typingsJapgolly.fridaGum.fridaGumStrings.`meta-class` = "meta-class".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.`meta-class`]
 }
-

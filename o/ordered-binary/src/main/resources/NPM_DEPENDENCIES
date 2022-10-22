@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ordered-binary" : "1.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ordered-binary" : "1.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

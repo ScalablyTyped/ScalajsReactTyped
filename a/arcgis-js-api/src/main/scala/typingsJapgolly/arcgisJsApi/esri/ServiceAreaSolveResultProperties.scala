@@ -1,74 +1,109 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServiceAreaSolveResultProperties extends js.Object {
+trait ServiceAreaSolveResultProperties extends StObject {
+  
   /**
     * Array of points only returned if `ServiceAreaParameters.returnFacilities = true`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#facilities)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaSolveResult.html#facilities)
     */
   var facilities: js.UndefOr[js.Array[PointProperties]] = js.undefined
+  
   /**
-    * Message received when solve is completed. If a service area cannot be solved, the message returned by the server identifies the incident that could not be solved.
+    * Message received when solve is completed.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#messages)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaSolveResult.html#messages)
     */
   var messages: js.UndefOr[js.Array[NAMessageProperties]] = js.undefined
+  
   /**
-    * The point barriers are returned only if `ServiceAreaParameters.returnPointBarriers = true` (which is not the default). If you send in the point barriers as a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) (instead of using [DataLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html)), you already have the barriers and might not need to request them back from the server.
+    * The point barriers are returned only if `ServiceAreaParameters.returnPointBarriers = true` (which is not the default).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#pointBarriers)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaSolveResult.html#pointBarriers)
     */
   var pointBarriers: js.UndefOr[js.Array[PointProperties]] = js.undefined
+  
   /**
-    * The polygon barriers are returned only if `ServiceAreaParameters.returnPolygonBarriers = true` (which is not the default). If you send in the polygon barriers as a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) (instead of using [DataLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html)), you already have the barriers and might not need to request them back from the server.
+    * The polygon barriers are returned only if `ServiceAreaParameters.returnPolygonBarriers = true` (which is not the default).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#polygonBarriers)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaSolveResult.html#polygonBarriers)
     */
   var polygonBarriers: js.UndefOr[js.Array[PolygonProperties]] = js.undefined
+  
   /**
-    * The polyline barriers are returned only if `ServiceAreaParameters.returnPolylineBarriers = true` (which is not the default). If you send in the polyline barriers as a [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) (instead of using [DataLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html)), you already have the barriers and might not need to request them back from the server.
+    * The polyline barriers are returned only if `ServiceAreaParameters.returnPolylineBarriers = true` (which is not the default).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#polylineBarriers)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaSolveResult.html#polylineBarriers)
     */
   var polylineBarriers: js.UndefOr[js.Array[PolylineProperties]] = js.undefined
+  
   /**
     * An array of service area polygon graphics.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#serviceAreaPolygons)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaSolveResult.html#serviceAreaPolygons)
     */
   var serviceAreaPolygons: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
+  
   /**
     * An array of service area polyline graphics.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#serviceAreaPolylines)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaSolveResult.html#serviceAreaPolylines)
     */
   var serviceAreaPolylines: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
 }
-
 object ServiceAreaSolveResultProperties {
-  @scala.inline
-  def apply(
-    facilities: js.Array[PointProperties] = null,
-    messages: js.Array[NAMessageProperties] = null,
-    pointBarriers: js.Array[PointProperties] = null,
-    polygonBarriers: js.Array[PolygonProperties] = null,
-    polylineBarriers: js.Array[PolylineProperties] = null,
-    serviceAreaPolygons: js.Array[GraphicProperties] = null,
-    serviceAreaPolylines: js.Array[GraphicProperties] = null
-  ): ServiceAreaSolveResultProperties = {
+  
+  inline def apply(): ServiceAreaSolveResultProperties = {
     val __obj = js.Dynamic.literal()
-    if (facilities != null) __obj.updateDynamic("facilities")(facilities.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers.asInstanceOf[js.Any])
-    if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers.asInstanceOf[js.Any])
-    if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
-    if (serviceAreaPolygons != null) __obj.updateDynamic("serviceAreaPolygons")(serviceAreaPolygons.asInstanceOf[js.Any])
-    if (serviceAreaPolylines != null) __obj.updateDynamic("serviceAreaPolylines")(serviceAreaPolylines.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAreaSolveResultProperties]
   }
+  
+  extension [Self <: ServiceAreaSolveResultProperties](x: Self) {
+    
+    inline def setFacilities(value: js.Array[PointProperties]): Self = StObject.set(x, "facilities", value.asInstanceOf[js.Any])
+    
+    inline def setFacilitiesUndefined: Self = StObject.set(x, "facilities", js.undefined)
+    
+    inline def setFacilitiesVarargs(value: PointProperties*): Self = StObject.set(x, "facilities", js.Array(value*))
+    
+    inline def setMessages(value: js.Array[NAMessageProperties]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setMessagesVarargs(value: NAMessageProperties*): Self = StObject.set(x, "messages", js.Array(value*))
+    
+    inline def setPointBarriers(value: js.Array[PointProperties]): Self = StObject.set(x, "pointBarriers", value.asInstanceOf[js.Any])
+    
+    inline def setPointBarriersUndefined: Self = StObject.set(x, "pointBarriers", js.undefined)
+    
+    inline def setPointBarriersVarargs(value: PointProperties*): Self = StObject.set(x, "pointBarriers", js.Array(value*))
+    
+    inline def setPolygonBarriers(value: js.Array[PolygonProperties]): Self = StObject.set(x, "polygonBarriers", value.asInstanceOf[js.Any])
+    
+    inline def setPolygonBarriersUndefined: Self = StObject.set(x, "polygonBarriers", js.undefined)
+    
+    inline def setPolygonBarriersVarargs(value: PolygonProperties*): Self = StObject.set(x, "polygonBarriers", js.Array(value*))
+    
+    inline def setPolylineBarriers(value: js.Array[PolylineProperties]): Self = StObject.set(x, "polylineBarriers", value.asInstanceOf[js.Any])
+    
+    inline def setPolylineBarriersUndefined: Self = StObject.set(x, "polylineBarriers", js.undefined)
+    
+    inline def setPolylineBarriersVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylineBarriers", js.Array(value*))
+    
+    inline def setServiceAreaPolygons(value: js.Array[GraphicProperties]): Self = StObject.set(x, "serviceAreaPolygons", value.asInstanceOf[js.Any])
+    
+    inline def setServiceAreaPolygonsUndefined: Self = StObject.set(x, "serviceAreaPolygons", js.undefined)
+    
+    inline def setServiceAreaPolygonsVarargs(value: GraphicProperties*): Self = StObject.set(x, "serviceAreaPolygons", js.Array(value*))
+    
+    inline def setServiceAreaPolylines(value: js.Array[GraphicProperties]): Self = StObject.set(x, "serviceAreaPolylines", value.asInstanceOf[js.Any])
+    
+    inline def setServiceAreaPolylinesUndefined: Self = StObject.set(x, "serviceAreaPolylines", js.undefined)
+    
+    inline def setServiceAreaPolylinesVarargs(value: GraphicProperties*): Self = StObject.set(x, "serviceAreaPolylines", js.Array(value*))
+  }
 }
-

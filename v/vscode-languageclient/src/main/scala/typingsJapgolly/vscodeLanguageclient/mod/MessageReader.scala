@@ -1,12 +1,14 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "MessageReader")
-@js.native
-object MessageReader extends js.Object {
-  def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/messageReader.MessageReader */ Boolean = js.native
+object MessageReader {
+  
+  @JSImport("vscode-languageclient", "MessageReader")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def is(value: Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/common/messageReader.MessageReader */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/common/messageReader.MessageReader */ Boolean]
 }
-

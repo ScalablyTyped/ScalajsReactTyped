@@ -1,7 +1,7 @@
 
 # Scala.js typings for swagger-jsdoc
 
-Typings are for version 3.0
+Typings are for version 6.0
 
 ## Library description:
 Generates swagger doc based on JSDoc
@@ -9,11 +9,11 @@ Generates swagger doc based on JSDoc
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | swagger-jsdoc |
-| Keywords           | jsdoc, restful, api, express, swagger |
-| # releases         | 24 |
-| # dependents       | 79 |
-| # downloads        | 3521165 |
-| # stars            | 21 |
+| Keywords           | swagger, openapi, jsdoc |
+| # releases         | 37 |
+| # dependents       | 0.0 |
+| # downloads        | 1129514.6666666667 |
+| # stars            | 1400.0 |
 
 ## Links
 - [Homepage](https://github.com/Surnet/swagger-jsdoc)

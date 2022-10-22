@@ -1,10 +1,11 @@
 package typingsJapgolly.naverWhale.whale.contentSettings
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClearDetails extends js.Object {
+trait ClearDetails extends StObject {
+  
   /**
     * Optional.
     * Where to clear the setting (default: regular).
@@ -14,13 +15,17 @@ trait ClearDetails extends js.Object {
     */
   var scope: js.UndefOr[typingsJapgolly.chrome.chrome.contentSettings.ScopeEnum] = js.undefined
 }
-
 object ClearDetails {
-  @scala.inline
-  def apply(scope: typingsJapgolly.chrome.chrome.contentSettings.ScopeEnum = null): ClearDetails = {
+  
+  inline def apply(): ClearDetails = {
     val __obj = js.Dynamic.literal()
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearDetails]
   }
+  
+  extension [Self <: ClearDetails](x: Self) {
+    
+    inline def setScope(value: typingsJapgolly.chrome.chrome.contentSettings.ScopeEnum): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+  }
 }
-

@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenderedEventUIParam extends js.Object {
+trait RenderedEventUIParam extends StObject {
+  
   /**
-  	 * Used to get a reference to the main/top combo element.
-  	 */
-  var element: js.UndefOr[js.Any] = js.undefined
+    * Used to get a reference to the main/top combo element.
+    */
+  var element: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to get a reference to the combo performing rendering.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Used to get a reference to the combo performing rendering.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object RenderedEventUIParam {
-  @scala.inline
-  def apply(element: js.Any = null, owner: js.Any = null): RenderedEventUIParam = {
+  
+  inline def apply(): RenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderedEventUIParam]
   }
+  
+  extension [Self <: RenderedEventUIParam](x: Self) {
+    
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

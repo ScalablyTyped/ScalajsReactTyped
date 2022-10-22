@@ -1,13 +1,21 @@
 package typingsJapgolly.reactIntl.components
 
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.reactIntl.anon.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object FormattedDateParts extends SharedApply_DateTimeFormatOptionsCustChildren_2104065655 {
+/* The props of this component has an unsupported shape. You can use `set` manually to use it, but with no compiler support :/ . Couldn't find props for (/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FormatDateOptions * / scala.Any) & typingsJapgolly.reactIntl.anon.Value because: IArray(Could't extract props from / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FormatDateOptions * / scala.Any because couldn't resolve ClassTree.) */
+object FormattedDateParts {
+  
+  def apply(
+    p: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FormatDateOptions */ Any) & Value
+  ): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
+  
   @JSImport("react-intl", "FormattedDateParts")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: FormattedDateParts.type): Default[js.Object] = new Default[js.Object](js.Array(this.component, js.Dictionary.empty))()
 }
-

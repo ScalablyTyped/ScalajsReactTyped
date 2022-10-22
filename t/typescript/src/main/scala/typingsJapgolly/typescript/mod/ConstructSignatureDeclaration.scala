@@ -1,23 +1,26 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.mod.SyntaxKind.ConstructSignature
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.typescript.mod.TextRange because Already inherited
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.typescript.mod.ReadonlyTextRange because Already inherited
 - typingsJapgolly.typescript.mod.Node because Already inherited
 - typingsJapgolly.typescript.mod.Declaration because Already inherited
 - typingsJapgolly.typescript.mod.NamedDeclaration because Already inherited
-- typingsJapgolly.typescript.mod.TypeElement because var conflicts: _declarationBrand, decorators, end, flags, kind, modifiers, name, parent, pos. Inlined _typeElementBrand, questionToken */ @js.native
+- typingsJapgolly.typescript.mod.TypeElement because var conflicts: _declarationBrand. Inlined _typeElementBrand, questionToken */ @js.native
 trait ConstructSignatureDeclaration
-  extends SignatureDeclarationBase
-     with SignatureDeclaration
-     with _HasJSDoc {
-  var _typeElementBrand: js.Any = js.native
+  extends StObject
+     with SignatureDeclarationBase
+     with HasJSDoc
+     with SignatureDeclaration {
+  
+  var _typeElementBrand: Any = js.native
+  
   @JSName("kind")
-  var kind_ConstructSignatureDeclaration: ConstructSignature = js.native
-  var questionToken: js.UndefOr[QuestionToken] = js.native
+  val kind_ConstructSignatureDeclaration: ConstructSignature = js.native
+  
+  val questionToken: js.UndefOr[QuestionToken] = js.native
 }
-

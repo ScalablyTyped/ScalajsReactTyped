@@ -1,19 +1,21 @@
 package typingsJapgolly.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used with connection.executeMany() to define a bind variable's types, sizes and directions.
   */
-trait BindDefinition extends js.Object {
+trait BindDefinition extends StObject {
+  
   /**
     * The direction of the bind. One of the Execute Bind Direction Constants.
     *
     * @default BIND_IN
     */
   var dir: js.UndefOr[Double] = js.undefined
+  
   /**
     * Required for Strings and Buffers. Ignored for other types. Specifies the maximum number of bytes
     * allocated when processing each value of this bind variable. When data is being passed into the database,
@@ -22,20 +24,31 @@ trait BindDefinition extends js.Object {
     * error that is not handled by batchErrors.
     */
   var maxSize: js.UndefOr[Double] = js.undefined
+  
   /**
     * The node-oracledb or JavaScript data type to be bound. One of the Node-oracledb Type Constants.
     */
   var `type`: js.UndefOr[Double] = js.undefined
 }
-
 object BindDefinition {
-  @scala.inline
-  def apply(dir: Int | Double = null, maxSize: Int | Double = null, `type`: Int | Double = null): BindDefinition = {
+  
+  inline def apply(): BindDefinition = {
     val __obj = js.Dynamic.literal()
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindDefinition]
   }
+  
+  extension [Self <: BindDefinition](x: Self) {
+    
+    inline def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

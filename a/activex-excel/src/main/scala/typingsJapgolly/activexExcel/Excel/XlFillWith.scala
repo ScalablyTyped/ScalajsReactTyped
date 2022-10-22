@@ -1,27 +1,23 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4104`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4122`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4104`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4122`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4104`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4122`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4104`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4122`
 */
-trait XlFillWith extends js.Object
-
+trait XlFillWith extends StObject
 object XlFillWith {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlFillWithAll: `-4104` = this.cast(-4104)
-  @scala.inline
-  def xlFillWithContents: `2` = this.cast(2)
-  @scala.inline
-  def xlFillWithFormats: `-4122` = this.cast(-4122)
+  
+  inline def xlFillWithAll: `-4104` = -4104.asInstanceOf[`-4104`]
+  
+  inline def xlFillWithContents: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlFillWithFormats: `-4122` = -4122.asInstanceOf[`-4122`]
 }
-

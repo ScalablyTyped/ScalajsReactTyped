@@ -1,39 +1,35 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
-import typingsJapgolly.activexWord.activexWordNumbers.`5`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import typingsJapgolly.activexWord.activexWordInts.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`5`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`5`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
 */
-trait WdMailMergeState extends js.Object
-
+trait WdMailMergeState extends StObject
 object WdMailMergeState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdDataSource: `5` = this.cast(5)
-  @scala.inline
-  def wdMainAndDataSource: `2` = this.cast(2)
-  @scala.inline
-  def wdMainAndHeader: `3` = this.cast(3)
-  @scala.inline
-  def wdMainAndSourceAndHeader: `4` = this.cast(4)
-  @scala.inline
-  def wdMainDocumentOnly: `1` = this.cast(1)
-  @scala.inline
-  def wdNormalDocument: `0` = this.cast(0)
+  
+  inline def wdDataSource: `5` = 5.asInstanceOf[`5`]
+  
+  inline def wdMainAndDataSource: `2` = 2.asInstanceOf[`2`]
+  
+  inline def wdMainAndHeader: `3` = 3.asInstanceOf[`3`]
+  
+  inline def wdMainAndSourceAndHeader: `4` = 4.asInstanceOf[`4`]
+  
+  inline def wdMainDocumentOnly: `1` = 1.asInstanceOf[`1`]
+  
+  inline def wdNormalDocument: `0` = 0.asInstanceOf[`0`]
 }
-

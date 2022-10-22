@@ -1,209 +1,207 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EEconTradeResponse extends js.Object
-
+sealed trait EEconTradeResponse extends StObject
 @JSImport("steam-client", "EEconTradeResponse")
 @js.native
-object EEconTradeResponse extends js.Object {
-  @js.native
-  sealed trait Accepted extends EEconTradeResponse
-  
-  @js.native
-  sealed trait AlreadyHasTradeRequest extends EEconTradeResponse
-  
-  @js.native
-  sealed trait AlreadyTrading extends EEconTradeResponse
-  
-  @js.native
-  sealed trait Cancel extends EEconTradeResponse
-  
-  @js.native
-  sealed trait ConnectionFailed extends EEconTradeResponse
-  
-  @js.native
-  sealed trait CyberCafeInitiator extends EEconTradeResponse
-  
-  @js.native
-  sealed trait CyberCafeTarget extends EEconTradeResponse
-  
-  @js.native
-  sealed trait Declined extends EEconTradeResponse
-  
-  @js.native
-  sealed trait Disabled extends EEconTradeResponse
-  
-  @js.native
-  sealed trait InitiatorBlockedTarget extends EEconTradeResponse
-  
-  @js.native
-  sealed trait InitiatorNeedsSteamGuard extends EEconTradeResponse
-  
-  @js.native
-  sealed trait InitiatorNeedsVerifiedEmail extends EEconTradeResponse
-  
-  @js.native
-  sealed trait InitiatorNewDeviceCooldown extends EEconTradeResponse
-  
-  @js.native
-  sealed trait InitiatorPasswordResetProbation extends EEconTradeResponse
-  
-  @js.native
-  sealed trait InitiatorRecentEmailChange extends EEconTradeResponse
-  
-  @js.native
-  sealed trait InitiatorSentInvalidCookie extends EEconTradeResponse
-  
-  @js.native
-  sealed trait InitiatorSteamGuardDuration extends EEconTradeResponse
-  
-  @js.native
-  sealed trait NeedsEmailConfirmation extends EEconTradeResponse
-  
-  @js.native
-  sealed trait NeedsMobileConfirmation extends EEconTradeResponse
-  
-  @js.native
-  sealed trait NoResponse extends EEconTradeResponse
-  
-  @js.native
-  sealed trait NotLoggedIn extends EEconTradeResponse
-  
-  @js.native
-  sealed trait OKToDeliver extends EEconTradeResponse
-  
-  @js.native
-  sealed trait SchoolLabInitiator extends EEconTradeResponse
-  
-  @js.native
-  sealed trait SchoolLabTarget extends EEconTradeResponse
-  
-  @js.native
-  sealed trait TargetAccountCannotTrade extends EEconTradeResponse
-  
-  @js.native
-  sealed trait TargetAlreadyTrading extends EEconTradeResponse
-  
-  @js.native
-  sealed trait TooSoon extends EEconTradeResponse
-  
-  @js.native
-  sealed trait TooSoonPenalty extends EEconTradeResponse
-  
-  @js.native
-  sealed trait TradeBannedInitiator extends EEconTradeResponse
-  
-  @js.native
-  sealed trait TradeBannedTarget extends EEconTradeResponse
-  
-  @js.native
-  sealed trait TradingHoldForClearedTradeOffersInitiator extends EEconTradeResponse
-  
-  @js.native
-  sealed trait WouldExceedMaxAssetCount extends EEconTradeResponse
+object EEconTradeResponse extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EEconTradeResponse with Double] = js.native
-  /* 0 */ @js.native
-  object Accepted extends TopLevel[Accepted with Double]
+  def apply(value: Double): js.UndefOr[EEconTradeResponse & Double] = js.native
   
-  /* 12 */ @js.native
-  object AlreadyHasTradeRequest extends TopLevel[AlreadyHasTradeRequest with Double]
+  @js.native
+  sealed trait Accepted
+    extends StObject
+       with EEconTradeResponse
+  /* 0 */ val Accepted: typingsJapgolly.steamClient.mod.EEconTradeResponse.Accepted & Double = js.native
   
-  /* 11 */ @js.native
-  object AlreadyTrading extends TopLevel[AlreadyTrading with Double]
+  @js.native
+  sealed trait AlreadyHasTradeRequest
+    extends StObject
+       with EEconTradeResponse
+  /* 12 */ val AlreadyHasTradeRequest: typingsJapgolly.steamClient.mod.EEconTradeResponse.AlreadyHasTradeRequest & Double = js.native
   
-  /* 7 */ @js.native
-  object Cancel extends TopLevel[Cancel with Double]
+  @js.native
+  sealed trait AlreadyTrading
+    extends StObject
+       with EEconTradeResponse
+  /* 11 */ val AlreadyTrading: typingsJapgolly.steamClient.mod.EEconTradeResponse.AlreadyTrading & Double = js.native
   
-  /* 10 */ @js.native
-  object ConnectionFailed extends TopLevel[ConnectionFailed with Double]
+  @js.native
+  sealed trait Cancel
+    extends StObject
+       with EEconTradeResponse
+  /* 7 */ val Cancel: typingsJapgolly.steamClient.mod.EEconTradeResponse.Cancel & Double = js.native
   
-  /* 14 */ @js.native
-  object CyberCafeInitiator extends TopLevel[CyberCafeInitiator with Double]
+  @js.native
+  sealed trait ConnectionFailed
+    extends StObject
+       with EEconTradeResponse
+  /* 10 */ val ConnectionFailed: typingsJapgolly.steamClient.mod.EEconTradeResponse.ConnectionFailed & Double = js.native
   
-  /* 15 */ @js.native
-  object CyberCafeTarget extends TopLevel[CyberCafeTarget with Double]
+  @js.native
+  sealed trait CyberCafeInitiator
+    extends StObject
+       with EEconTradeResponse
+  /* 14 */ val CyberCafeInitiator: typingsJapgolly.steamClient.mod.EEconTradeResponse.CyberCafeInitiator & Double = js.native
   
-  /* 1 */ @js.native
-  object Declined extends TopLevel[Declined with Double]
+  @js.native
+  sealed trait CyberCafeTarget
+    extends StObject
+       with EEconTradeResponse
+  /* 15 */ val CyberCafeTarget: typingsJapgolly.steamClient.mod.EEconTradeResponse.CyberCafeTarget & Double = js.native
   
-  /* 5 */ @js.native
-  object Disabled extends TopLevel[Disabled with Double]
+  @js.native
+  sealed trait Declined
+    extends StObject
+       with EEconTradeResponse
+  /* 1 */ val Declined: typingsJapgolly.steamClient.mod.EEconTradeResponse.Declined & Double = js.native
   
-  /* 18 */ @js.native
-  object InitiatorBlockedTarget extends TopLevel[InitiatorBlockedTarget with Double]
+  @js.native
+  sealed trait Disabled
+    extends StObject
+       with EEconTradeResponse
+  /* 5 */ val Disabled: typingsJapgolly.steamClient.mod.EEconTradeResponse.Disabled & Double = js.native
   
-  /* 21 */ @js.native
-  object InitiatorNeedsSteamGuard extends TopLevel[InitiatorNeedsSteamGuard with Double]
+  @js.native
+  sealed trait InitiatorBlockedTarget
+    extends StObject
+       with EEconTradeResponse
+  /* 18 */ val InitiatorBlockedTarget: typingsJapgolly.steamClient.mod.EEconTradeResponse.InitiatorBlockedTarget & Double = js.native
   
-  /* 20 */ @js.native
-  object InitiatorNeedsVerifiedEmail extends TopLevel[InitiatorNeedsVerifiedEmail with Double]
+  @js.native
+  sealed trait InitiatorNeedsSteamGuard
+    extends StObject
+       with EEconTradeResponse
+  /* 21 */ val InitiatorNeedsSteamGuard: typingsJapgolly.steamClient.mod.EEconTradeResponse.InitiatorNeedsSteamGuard & Double = js.native
   
-  /* 25 */ @js.native
-  object InitiatorNewDeviceCooldown extends TopLevel[InitiatorNewDeviceCooldown with Double]
+  @js.native
+  sealed trait InitiatorNeedsVerifiedEmail
+    extends StObject
+       with EEconTradeResponse
+  /* 20 */ val InitiatorNeedsVerifiedEmail: typingsJapgolly.steamClient.mod.EEconTradeResponse.InitiatorNeedsVerifiedEmail & Double = js.native
   
-  /* 24 */ @js.native
-  object InitiatorPasswordResetProbation extends TopLevel[InitiatorPasswordResetProbation with Double]
+  @js.native
+  sealed trait InitiatorNewDeviceCooldown
+    extends StObject
+       with EEconTradeResponse
+  /* 25 */ val InitiatorNewDeviceCooldown: typingsJapgolly.steamClient.mod.EEconTradeResponse.InitiatorNewDeviceCooldown & Double = js.native
   
-  /* 28 */ @js.native
-  object InitiatorRecentEmailChange extends TopLevel[InitiatorRecentEmailChange with Double]
+  @js.native
+  sealed trait InitiatorPasswordResetProbation
+    extends StObject
+       with EEconTradeResponse
+  /* 24 */ val InitiatorPasswordResetProbation: typingsJapgolly.steamClient.mod.EEconTradeResponse.InitiatorPasswordResetProbation & Double = js.native
   
-  /* 26 */ @js.native
-  object InitiatorSentInvalidCookie extends TopLevel[InitiatorSentInvalidCookie with Double]
+  @js.native
+  sealed trait InitiatorRecentEmailChange
+    extends StObject
+       with EEconTradeResponse
+  /* 28 */ val InitiatorRecentEmailChange: typingsJapgolly.steamClient.mod.EEconTradeResponse.InitiatorRecentEmailChange & Double = js.native
   
-  /* 23 */ @js.native
-  object InitiatorSteamGuardDuration extends TopLevel[InitiatorSteamGuardDuration with Double]
+  @js.native
+  sealed trait InitiatorSentInvalidCookie
+    extends StObject
+       with EEconTradeResponse
+  /* 26 */ val InitiatorSentInvalidCookie: typingsJapgolly.steamClient.mod.EEconTradeResponse.InitiatorSentInvalidCookie & Double = js.native
   
-  /* 27 */ @js.native
-  object NeedsEmailConfirmation extends TopLevel[NeedsEmailConfirmation with Double]
+  @js.native
+  sealed trait InitiatorSteamGuardDuration
+    extends StObject
+       with EEconTradeResponse
+  /* 23 */ val InitiatorSteamGuardDuration: typingsJapgolly.steamClient.mod.EEconTradeResponse.InitiatorSteamGuardDuration & Double = js.native
   
-  /* 29 */ @js.native
-  object NeedsMobileConfirmation extends TopLevel[NeedsMobileConfirmation with Double]
+  @js.native
+  sealed trait NeedsEmailConfirmation
+    extends StObject
+       with EEconTradeResponse
+  /* 27 */ val NeedsEmailConfirmation: typingsJapgolly.steamClient.mod.EEconTradeResponse.NeedsEmailConfirmation & Double = js.native
   
-  /* 13 */ @js.native
-  object NoResponse extends TopLevel[NoResponse with Double]
+  @js.native
+  sealed trait NeedsMobileConfirmation
+    extends StObject
+       with EEconTradeResponse
+  /* 29 */ val NeedsMobileConfirmation: typingsJapgolly.steamClient.mod.EEconTradeResponse.NeedsMobileConfirmation & Double = js.native
   
-  /* 6 */ @js.native
-  object NotLoggedIn extends TopLevel[NotLoggedIn with Double]
+  @js.native
+  sealed trait NoResponse
+    extends StObject
+       with EEconTradeResponse
+  /* 13 */ val NoResponse: typingsJapgolly.steamClient.mod.EEconTradeResponse.NoResponse & Double = js.native
   
-  /* 50 */ @js.native
-  object OKToDeliver extends TopLevel[OKToDeliver with Double]
+  @js.native
+  sealed trait NotLoggedIn
+    extends StObject
+       with EEconTradeResponse
+  /* 6 */ val NotLoggedIn: typingsJapgolly.steamClient.mod.EEconTradeResponse.NotLoggedIn & Double = js.native
   
-  /* 16 */ @js.native
-  object SchoolLabInitiator extends TopLevel[SchoolLabInitiator with Double]
+  @js.native
+  sealed trait OKToDeliver
+    extends StObject
+       with EEconTradeResponse
+  /* 50 */ val OKToDeliver: typingsJapgolly.steamClient.mod.EEconTradeResponse.OKToDeliver & Double = js.native
   
-  /* 16 */ @js.native
-  object SchoolLabTarget extends TopLevel[SchoolLabTarget with Double]
+  @js.native
+  sealed trait SchoolLabInitiator
+    extends StObject
+       with EEconTradeResponse
+  /* 16 */ val SchoolLabInitiator: typingsJapgolly.steamClient.mod.EEconTradeResponse.SchoolLabInitiator & Double = js.native
   
-  /* 22 */ @js.native
-  object TargetAccountCannotTrade extends TopLevel[TargetAccountCannotTrade with Double]
+  @js.native
+  sealed trait SchoolLabTarget
+    extends StObject
+       with EEconTradeResponse
+  /* 16 */ val SchoolLabTarget: typingsJapgolly.steamClient.mod.EEconTradeResponse.SchoolLabTarget & Double = js.native
   
-  /* 4 */ @js.native
-  object TargetAlreadyTrading extends TopLevel[TargetAlreadyTrading with Double]
+  @js.native
+  sealed trait TargetAccountCannotTrade
+    extends StObject
+       with EEconTradeResponse
+  /* 22 */ val TargetAccountCannotTrade: typingsJapgolly.steamClient.mod.EEconTradeResponse.TargetAccountCannotTrade & Double = js.native
   
-  /* 8 */ @js.native
-  object TooSoon extends TopLevel[TooSoon with Double]
+  @js.native
+  sealed trait TargetAlreadyTrading
+    extends StObject
+       with EEconTradeResponse
+  /* 4 */ val TargetAlreadyTrading: typingsJapgolly.steamClient.mod.EEconTradeResponse.TargetAlreadyTrading & Double = js.native
   
-  /* 9 */ @js.native
-  object TooSoonPenalty extends TopLevel[TooSoonPenalty with Double]
+  @js.native
+  sealed trait TooSoon
+    extends StObject
+       with EEconTradeResponse
+  /* 8 */ val TooSoon: typingsJapgolly.steamClient.mod.EEconTradeResponse.TooSoon & Double = js.native
   
-  /* 2 */ @js.native
-  object TradeBannedInitiator extends TopLevel[TradeBannedInitiator with Double]
+  @js.native
+  sealed trait TooSoonPenalty
+    extends StObject
+       with EEconTradeResponse
+  /* 9 */ val TooSoonPenalty: typingsJapgolly.steamClient.mod.EEconTradeResponse.TooSoonPenalty & Double = js.native
   
-  /* 3 */ @js.native
-  object TradeBannedTarget extends TopLevel[TradeBannedTarget with Double]
+  @js.native
+  sealed trait TradeBannedInitiator
+    extends StObject
+       with EEconTradeResponse
+  /* 2 */ val TradeBannedInitiator: typingsJapgolly.steamClient.mod.EEconTradeResponse.TradeBannedInitiator & Double = js.native
   
-  /* 30 */ @js.native
-  object TradingHoldForClearedTradeOffersInitiator extends TopLevel[TradingHoldForClearedTradeOffersInitiator with Double]
+  @js.native
+  sealed trait TradeBannedTarget
+    extends StObject
+       with EEconTradeResponse
+  /* 3 */ val TradeBannedTarget: typingsJapgolly.steamClient.mod.EEconTradeResponse.TradeBannedTarget & Double = js.native
   
-  /* 31 */ @js.native
-  object WouldExceedMaxAssetCount extends TopLevel[WouldExceedMaxAssetCount with Double]
+  @js.native
+  sealed trait TradingHoldForClearedTradeOffersInitiator
+    extends StObject
+       with EEconTradeResponse
+  /* 30 */ val TradingHoldForClearedTradeOffersInitiator: typingsJapgolly.steamClient.mod.EEconTradeResponse.TradingHoldForClearedTradeOffersInitiator & Double = js.native
   
+  @js.native
+  sealed trait WouldExceedMaxAssetCount
+    extends StObject
+       with EEconTradeResponse
+  /* 31 */ val WouldExceedMaxAssetCount: typingsJapgolly.steamClient.mod.EEconTradeResponse.WouldExceedMaxAssetCount & Double = js.native
 }
-

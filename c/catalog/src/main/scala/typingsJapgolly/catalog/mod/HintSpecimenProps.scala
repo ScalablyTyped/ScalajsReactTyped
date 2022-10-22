@@ -1,30 +1,42 @@
 package typingsJapgolly.catalog.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HintSpecimenProps extends js.Object {
+trait HintSpecimenProps extends StObject {
+  
   var directive: js.UndefOr[Boolean] = js.undefined
+  
   var important: js.UndefOr[Boolean] = js.undefined
+  
   var neutral: js.UndefOr[Boolean] = js.undefined
+  
   var warning: js.UndefOr[Boolean] = js.undefined
 }
-
 object HintSpecimenProps {
-  @scala.inline
-  def apply(
-    directive: js.UndefOr[Boolean] = js.undefined,
-    important: js.UndefOr[Boolean] = js.undefined,
-    neutral: js.UndefOr[Boolean] = js.undefined,
-    warning: js.UndefOr[Boolean] = js.undefined
-  ): HintSpecimenProps = {
+  
+  inline def apply(): HintSpecimenProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(directive)) __obj.updateDynamic("directive")(directive.asInstanceOf[js.Any])
-    if (!js.isUndefined(important)) __obj.updateDynamic("important")(important.asInstanceOf[js.Any])
-    if (!js.isUndefined(neutral)) __obj.updateDynamic("neutral")(neutral.asInstanceOf[js.Any])
-    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[HintSpecimenProps]
   }
+  
+  extension [Self <: HintSpecimenProps](x: Self) {
+    
+    inline def setDirective(value: Boolean): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
+    
+    inline def setDirectiveUndefined: Self = StObject.set(x, "directive", js.undefined)
+    
+    inline def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
+    
+    inline def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
+    
+    inline def setNeutral(value: Boolean): Self = StObject.set(x, "neutral", value.asInstanceOf[js.Any])
+    
+    inline def setNeutralUndefined: Self = StObject.set(x, "neutral", js.undefined)
+    
+    inline def setWarning(value: Boolean): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+  }
 }
-

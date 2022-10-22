@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup-plugin-postcss
 
-Typings are for version 2.0
+Typings are for version 4.0.2
 
 ## Library description:
 Seamless integration between Rollup and PostCSS
@@ -10,10 +10,10 @@ Seamless integration between Rollup and PostCSS
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-postcss |
 | Keywords           | postcss, rollup |
-| # releases         | 26 |
-| # dependents       | 170 |
-| # downloads        | 1890693 |
-| # stars            | 5 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 2392613.0 |
+| # stars            | 600.0 |
 
 ## Links
 - [Homepage](https://github.com/egoist/rollup-plugin-postcss#readme)
@@ -24,7 +24,7 @@ Seamless integration between Rollup and PostCSS
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

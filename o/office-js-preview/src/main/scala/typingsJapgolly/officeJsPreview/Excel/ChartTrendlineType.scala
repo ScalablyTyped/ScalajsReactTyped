@@ -1,56 +1,70 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartTrendlineType extends js.Object
-
+sealed trait ChartTrendlineType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartTrendlineType")
 @js.native
-object ChartTrendlineType extends js.Object {
+object ChartTrendlineType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait exponential extends ChartTrendlineType
+  sealed trait exponential
+    extends StObject
+       with ChartTrendlineType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait linear extends ChartTrendlineType
+  sealed trait linear
+    extends StObject
+       with ChartTrendlineType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait logarithmic extends ChartTrendlineType
+  sealed trait logarithmic
+    extends StObject
+       with ChartTrendlineType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait movingAverage extends ChartTrendlineType
+  sealed trait movingAverage
+    extends StObject
+       with ChartTrendlineType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait polynomial extends ChartTrendlineType
+  sealed trait polynomial
+    extends StObject
+       with ChartTrendlineType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait power extends ChartTrendlineType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartTrendlineType with String] = js.native
-  /* "Exponential" */ @js.native
-  object exponential extends TopLevel[exponential with String]
-  
-  /* "Linear" */ @js.native
-  object linear extends TopLevel[linear with String]
-  
-  /* "Logarithmic" */ @js.native
-  object logarithmic extends TopLevel[logarithmic with String]
-  
-  /* "MovingAverage" */ @js.native
-  object movingAverage extends TopLevel[movingAverage with String]
-  
-  /* "Polynomial" */ @js.native
-  object polynomial extends TopLevel[polynomial with String]
-  
-  /* "Power" */ @js.native
-  object power extends TopLevel[power with String]
-  
+  sealed trait power
+    extends StObject
+       with ChartTrendlineType
 }
-

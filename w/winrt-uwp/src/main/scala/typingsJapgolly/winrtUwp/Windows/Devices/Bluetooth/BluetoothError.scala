@@ -1,74 +1,61 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Bluetooth
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BluetoothError extends js.Object
-
+sealed trait BluetoothError extends StObject
 /** Specifies common Bluetooth error cases. */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothError")
 @js.native
-object BluetoothError extends js.Object {
+object BluetoothError extends StObject {
+  
   /** The operation cannot be completed because the remote device is not connected. */
   @js.native
-  sealed trait deviceNotConnected extends BluetoothError
+  sealed trait deviceNotConnected
+    extends StObject
+       with BluetoothError
   
   /** The operation is disabled by policy. */
   @js.native
-  sealed trait disabledByPolicy extends BluetoothError
+  sealed trait disabledByPolicy
+    extends StObject
+       with BluetoothError
   
   /** The operation is disabled by the user. */
   @js.native
-  sealed trait disabledByUser extends BluetoothError
+  sealed trait disabledByUser
+    extends StObject
+       with BluetoothError
   
   /** The operation is not supported on the current Bluetooth radio hardware. */
   @js.native
-  sealed trait notSupported extends BluetoothError
+  sealed trait notSupported
+    extends StObject
+       with BluetoothError
   
   /** An unexpected error has occurred. */
   @js.native
-  sealed trait otherError extends BluetoothError
+  sealed trait otherError
+    extends StObject
+       with BluetoothError
   
   /** The Bluetooth radio was not available. This error occurs when the Bluetooth radio has been turned off. */
   @js.native
-  sealed trait radioNotAvailable extends BluetoothError
+  sealed trait radioNotAvailable
+    extends StObject
+       with BluetoothError
   
   /** The operation cannot be serviced because the necessary resources are currently in use. */
   @js.native
-  sealed trait resourceInUse extends BluetoothError
+  sealed trait resourceInUse
+    extends StObject
+       with BluetoothError
   
   /** The operation was successfully completed or serviced. */
   @js.native
-  sealed trait success extends BluetoothError
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BluetoothError with Double] = js.native
-  /* 3 */ @js.native
-  object deviceNotConnected extends TopLevel[deviceNotConnected with Double]
-  
-  /* 5 */ @js.native
-  object disabledByPolicy extends TopLevel[disabledByPolicy with Double]
-  
-  /* 7 */ @js.native
-  object disabledByUser extends TopLevel[disabledByUser with Double]
-  
-  /* 6 */ @js.native
-  object notSupported extends TopLevel[notSupported with Double]
-  
-  /* 4 */ @js.native
-  object otherError extends TopLevel[otherError with Double]
-  
-  /* 1 */ @js.native
-  object radioNotAvailable extends TopLevel[radioNotAvailable with Double]
-  
-  /* 2 */ @js.native
-  object resourceInUse extends TopLevel[resourceInUse with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
+  sealed trait success
+    extends StObject
+       with BluetoothError
 }
-

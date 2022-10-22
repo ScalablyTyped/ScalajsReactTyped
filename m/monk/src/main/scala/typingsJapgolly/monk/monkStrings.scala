@@ -1,29 +1,27 @@
 package typingsJapgolly.monk
 
+import typingsJapgolly.monk.mod.DropResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object monkStrings {
-  @js.native
-  sealed trait closed extends js.Object
   
   @js.native
-  sealed trait `ns not found` extends js.Object
+  sealed trait closed extends StObject
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait `ns not found`
+    extends StObject
+       with DropResult
+  inline def `ns not found`: `ns not found` = ("ns not found").asInstanceOf[`ns not found`]
   
   @js.native
-  sealed trait opening extends js.Object
+  sealed trait open extends StObject
+  inline def open: open = "open".asInstanceOf[open]
   
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
-  @scala.inline
-  def `ns not found`: `ns not found` = "ns not found".asInstanceOf[`ns not found`]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def opening: opening = "opening".asInstanceOf[opening]
+  @js.native
+  sealed trait opening extends StObject
+  inline def opening: opening = "opening".asInstanceOf[opening]
 }
-

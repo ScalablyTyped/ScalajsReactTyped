@@ -1,44 +1,41 @@
 organization := "org.scalablytyped.japgolly"
 name := "d3"
-version := "5.7-dt-20200225Z-0566ef"
-scalaVersion := "2.13.1"
+version := "7.4-dt-20220913Z-ae8e06"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "d3-array" % "2.0-dt-20200225Z-8bb7a9",
-  "org.scalablytyped.japgolly" %%% "d3-axis" % "1.0-dt-20200225Z-189227",
-  "org.scalablytyped.japgolly" %%% "d3-brush" % "1.1-dt-20200302Z-b834ba",
-  "org.scalablytyped.japgolly" %%% "d3-chord" % "1.0-dt-20200225Z-a705b1",
-  "org.scalablytyped.japgolly" %%% "d3-collection" % "1.0-dt-20200225Z-5d2d4a",
-  "org.scalablytyped.japgolly" %%% "d3-color" % "1.2-dt-20200225Z-b691c4",
-  "org.scalablytyped.japgolly" %%% "d3-contour" % "1.3-dt-20200225Z-c0fd74",
-  "org.scalablytyped.japgolly" %%% "d3-dispatch" % "1.0-dt-20200225Z-a70e24",
-  "org.scalablytyped.japgolly" %%% "d3-drag" % "1.2-dt-20200225Z-925345",
-  "org.scalablytyped.japgolly" %%% "d3-dsv" % "1.0-dt-20200225Z-3a5285",
-  "org.scalablytyped.japgolly" %%% "d3-ease" % "1.0-dt-20191014Z-f3f2e0",
-  "org.scalablytyped.japgolly" %%% "d3-fetch" % "1.1-dt-20200225Z-5305ae",
-  "org.scalablytyped.japgolly" %%% "d3-force" % "1.2-dt-20200225Z-dc11ef",
-  "org.scalablytyped.japgolly" %%% "d3-format" % "1.3-dt-20190212Z-20c33c",
-  "org.scalablytyped.japgolly" %%% "d3-geo" % "1.11-dt-20200225Z-3368da",
-  "org.scalablytyped.japgolly" %%% "d3-hierarchy" % "1.1-dt-20200225Z-fdc5f1",
-  "org.scalablytyped.japgolly" %%% "d3-interpolate" % "1.3-dt-20200225Z-791b48",
-  "org.scalablytyped.japgolly" %%% "d3-path" % "1.0-dt-20190212Z-092880",
-  "org.scalablytyped.japgolly" %%% "d3-quadtree" % "1.0-dt-20200225Z-54bf4e",
-  "org.scalablytyped.japgolly" %%% "d3-random" % "1.1-dt-20190212Z-b2b05f",
-  "org.scalablytyped.japgolly" %%% "d3-scale" % "2.1-dt-20200225Z-6e0234",
-  "org.scalablytyped.japgolly" %%% "d3-selection" % "1.4-dt-20200225Z-910fbf",
-  "org.scalablytyped.japgolly" %%% "d3-shape" % "1.3-dt-20200225Z-c38cef",
-  "org.scalablytyped.japgolly" %%% "d3-time" % "1.0-dt-20190212Z-624fa0",
-  "org.scalablytyped.japgolly" %%% "d3-time-format" % "2.1-dt-20190212Z-13306f",
-  "org.scalablytyped.japgolly" %%% "d3-timer" % "1.0-dt-20190212Z-4e8f52",
-  "org.scalablytyped.japgolly" %%% "d3-transition" % "1.1-dt-20200225Z-866f7e",
-  "org.scalablytyped.japgolly" %%% "d3-voronoi" % "1.1-dt-20200225Z-74ae3e",
-  "org.scalablytyped.japgolly" %%% "d3-zoom" % "1.7-dt-20200225Z-c0eb9a",
-  "org.scalablytyped.japgolly" %%% "geojson" % "7946.0-dt-20190925Z-98b022",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "d3-array" % "3.0-dt-20220624Z-12a885",
+  "org.scalablytyped.japgolly" %%% "d3-axis" % "3.0-dt-20220624Z-2014b9",
+  "org.scalablytyped.japgolly" %%% "d3-brush" % "3.0-dt-20211202Z-ccc11c",
+  "org.scalablytyped.japgolly" %%% "d3-chord" % "3.0-dt-20211202Z-36d433",
+  "org.scalablytyped.japgolly" %%% "d3-color" % "3.1-dt-20220522Z-ee6702",
+  "org.scalablytyped.japgolly" %%% "d3-contour" % "3.0-dt-20211202Z-e670a9",
+  "org.scalablytyped.japgolly" %%% "d3-delaunay" % "6.0-dt-20220524Z-6379c0",
+  "org.scalablytyped.japgolly" %%% "d3-dispatch" % "3.0-dt-20220624Z-7c5fac",
+  "org.scalablytyped.japgolly" %%% "d3-drag" % "3.0-dt-20211202Z-3429d0",
+  "org.scalablytyped.japgolly" %%% "d3-dsv" % "3.0-dt-20220819Z-3cd57a",
+  "org.scalablytyped.japgolly" %%% "d3-ease" % "3.0-dt-20211223Z-e9a5b1",
+  "org.scalablytyped.japgolly" %%% "d3-fetch" % "3.0-dt-20220624Z-68f99d",
+  "org.scalablytyped.japgolly" %%% "d3-force" % "3.0-dt-20211202Z-ce9fe4",
+  "org.scalablytyped.japgolly" %%% "d3-format" % "3.0-dt-20211202Z-71de0c",
+  "org.scalablytyped.japgolly" %%% "d3-geo" % "3.0-dt-20211202Z-1d6d17",
+  "org.scalablytyped.japgolly" %%% "d3-hierarchy" % "3.1-dt-20220624Z-e08ae1",
+  "org.scalablytyped.japgolly" %%% "d3-interpolate" % "3.0-dt-20220624Z-f5cf27",
+  "org.scalablytyped.japgolly" %%% "d3-path" % "3.0-dt-20220310Z-c74868",
+  "org.scalablytyped.japgolly" %%% "d3-quadtree" % "3.0-dt-20220624Z-92c6ac",
+  "org.scalablytyped.japgolly" %%% "d3-random" % "3.0-dt-20211202Z-bca539",
+  "org.scalablytyped.japgolly" %%% "d3-scale" % "4.0-dt-20220624Z-718053",
+  "org.scalablytyped.japgolly" %%% "d3-selection" % "3.0-dt-20220720Z-ea39dc",
+  "org.scalablytyped.japgolly" %%% "d3-shape" % "3.1-dt-20220624Z-7b0e71",
+  "org.scalablytyped.japgolly" %%% "d3-time" % "3.0-dt-20211202Z-0604bb",
+  "org.scalablytyped.japgolly" %%% "d3-time-format" % "4.0-dt-20211202Z-e8fca2",
+  "org.scalablytyped.japgolly" %%% "d3-timer" % "3.0-dt-20211202Z-2ee647",
+  "org.scalablytyped.japgolly" %%% "d3-transition" % "3.0-dt-20220817Z-4b8cb3",
+  "org.scalablytyped.japgolly" %%% "d3-zoom" % "3.0-dt-20220624Z-463097",
+  "org.scalablytyped.japgolly" %%% "geojson" % "7946.0-dt-20220713Z-3b0707",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

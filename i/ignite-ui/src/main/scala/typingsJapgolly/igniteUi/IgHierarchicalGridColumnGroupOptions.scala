@@ -1,55 +1,60 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgHierarchicalGridColumnGroupOptions
-  extends /**
-	 * Option for IgHierarchicalGridColumnGroupOptions
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Sets whether expansion indicators are visible in the group header.
-  	 *
-  	 */
+    * Sets whether expansion indicators are visible in the group header.
+    *
+    */
   var allowGroupCollapsing: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Sets whether the group is expanded or collapsed. Applied only if the allowGroupCollapsing is set to true.
-  	 *
-  	 */
+    * Sets whether the group is expanded or collapsed. Applied only if the allowGroupCollapsing is set to true.
+    *
+    */
   var expanded: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Sets when should the group be hidden. Applied only if the allowGroupCollapsing is set to true.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "never" never hide the group
-  	 * "always" always hide the group
-  	 * "parentcollapsed" hide the group when its parent group is collapsed
-  	 * "parentexpanded" hide the group when its parent group is expanded
-  	 */
+    * Sets when should the group be hidden. Applied only if the allowGroupCollapsing is set to true.
+    *
+    *
+    * Valid values:
+    * "never" never hide the group
+    * "always" always hide the group
+    * "parentcollapsed" hide the group when its parent group is collapsed
+    * "parentexpanded" hide the group when its parent group is expanded
+    */
   var hidden: js.UndefOr[String] = js.undefined
 }
-
 object IgHierarchicalGridColumnGroupOptions {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgHierarchicalGridColumnGroupOptions
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    allowGroupCollapsing: js.UndefOr[Boolean] = js.undefined,
-    expanded: js.UndefOr[Boolean] = js.undefined,
-    hidden: String = null
-  ): IgHierarchicalGridColumnGroupOptions = {
+  
+  inline def apply(): IgHierarchicalGridColumnGroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowGroupCollapsing)) __obj.updateDynamic("allowGroupCollapsing")(allowGroupCollapsing.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgHierarchicalGridColumnGroupOptions]
   }
+  
+  extension [Self <: IgHierarchicalGridColumnGroupOptions](x: Self) {
+    
+    inline def setAllowGroupCollapsing(value: Boolean): Self = StObject.set(x, "allowGroupCollapsing", value.asInstanceOf[js.Any])
+    
+    inline def setAllowGroupCollapsingUndefined: Self = StObject.set(x, "allowGroupCollapsing", js.undefined)
+    
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    
+    inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+  }
 }
-

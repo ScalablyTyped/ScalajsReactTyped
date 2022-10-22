@@ -10,10 +10,10 @@ A modern and powerful server for Node.js
 | ------------------ | :-------------: |
 | Full name          | server |
 | Keywords           | server, node.js, http, websocket, socket, async |
-| # releases         | 12 |
-| # dependents       | 24 |
-| # downloads        | 144826 |
-| # stars            | 14 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 35812.666666666664 |
+| # stars            | 3540.0 |
 
 ## Links
 - [Homepage](https://serverjs.io/)

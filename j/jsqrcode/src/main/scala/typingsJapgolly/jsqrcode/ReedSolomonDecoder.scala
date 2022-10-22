@@ -1,17 +1,45 @@
 package typingsJapgolly.jsqrcode
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ReedSolomonDecoder")
-@js.native
-class ReedSolomonDecoder protected () extends js.Object {
-  def this(field: GF256) = this()
-  var field: GF256 = js.native
-  def decode(received: GF256, twoS: js.Array[Double]): Unit = js.native
-  def findErrorLocations(errorLocator: GF256Poly): js.Array[Double] = js.native
-  def findErrorMagnitudes(errorEvaluator: GF256Poly, errorLocations: js.Array[Double], dataMatrix: Boolean): js.Array[Double] = js.native
-  def runEuclideanAlgorithm(a: GF256Poly, b: GF256Poly, R: Double): js.Tuple2[GF256Poly, GF256Poly] = js.native
+trait ReedSolomonDecoder extends StObject {
+  
+  def decode(received: GF256, twoS: js.Array[Double]): Unit
+  
+  var field: GF256
+  
+  def findErrorLocations(errorLocator: GF256Poly): js.Array[Double]
+  
+  def findErrorMagnitudes(errorEvaluator: GF256Poly, errorLocations: js.Array[Double], dataMatrix: Boolean): js.Array[Double]
+  
+  def runEuclideanAlgorithm(a: GF256Poly, b: GF256Poly, R: Double): js.Tuple2[GF256Poly, GF256Poly]
 }
-
+object ReedSolomonDecoder {
+  
+  inline def apply(
+    decode: (GF256, js.Array[Double]) => Callback,
+    field: GF256,
+    findErrorLocations: GF256Poly => js.Array[Double],
+    findErrorMagnitudes: (GF256Poly, js.Array[Double], Boolean) => js.Array[Double],
+    runEuclideanAlgorithm: (GF256Poly, GF256Poly, Double) => js.Tuple2[GF256Poly, GF256Poly]
+  ): ReedSolomonDecoder = {
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction2((t0: GF256, t1: js.Array[Double]) => (decode(t0, t1)).runNow()), field = field.asInstanceOf[js.Any], findErrorLocations = js.Any.fromFunction1(findErrorLocations), findErrorMagnitudes = js.Any.fromFunction3(findErrorMagnitudes), runEuclideanAlgorithm = js.Any.fromFunction3(runEuclideanAlgorithm))
+    __obj.asInstanceOf[ReedSolomonDecoder]
+  }
+  
+  extension [Self <: ReedSolomonDecoder](x: Self) {
+    
+    inline def setDecode(value: (GF256, js.Array[Double]) => Callback): Self = StObject.set(x, "decode", js.Any.fromFunction2((t0: GF256, t1: js.Array[Double]) => (value(t0, t1)).runNow()))
+    
+    inline def setField(value: GF256): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFindErrorLocations(value: GF256Poly => js.Array[Double]): Self = StObject.set(x, "findErrorLocations", js.Any.fromFunction1(value))
+    
+    inline def setFindErrorMagnitudes(value: (GF256Poly, js.Array[Double], Boolean) => js.Array[Double]): Self = StObject.set(x, "findErrorMagnitudes", js.Any.fromFunction3(value))
+    
+    inline def setRunEuclideanAlgorithm(value: (GF256Poly, GF256Poly, Double) => js.Tuple2[GF256Poly, GF256Poly]): Self = StObject.set(x, "runEuclideanAlgorithm", js.Any.fromFunction3(value))
+  }
+}

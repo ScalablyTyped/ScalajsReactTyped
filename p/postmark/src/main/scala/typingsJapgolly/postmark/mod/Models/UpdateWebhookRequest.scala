@@ -1,23 +1,68 @@
 package typingsJapgolly.postmark.mod.Models
 
-import typingsJapgolly.postmark.webhookMod.HttpAuth
-import typingsJapgolly.postmark.webhookMod.WebhookRequestTriggers
+import typingsJapgolly.postmark.distClientModelsWebhooksWebhookMod.HttpAuth
+import typingsJapgolly.postmark.distClientModelsWebhooksWebhookMod.WebhookRequestTriggers
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Models.UpdateWebhookRequest")
 @js.native
-class UpdateWebhookRequest ()
-  extends typingsJapgolly.postmark.modelsMod.UpdateWebhookRequest {
+open class UpdateWebhookRequest ()
+  extends typingsJapgolly.postmark.distClientModelsMod.UpdateWebhookRequest {
   def this(url: String) = this()
   def this(url: String, triggers: WebhookRequestTriggers) = this()
+  def this(url: Unit, triggers: WebhookRequestTriggers) = this()
+  def this(url: String, triggers: Unit, httpAuth: HttpAuth) = this()
   def this(url: String, triggers: WebhookRequestTriggers, httpAuth: HttpAuth) = this()
+  def this(url: Unit, triggers: Unit, httpAuth: HttpAuth) = this()
+  def this(url: Unit, triggers: WebhookRequestTriggers, httpAuth: HttpAuth) = this()
+  def this(
+    url: String,
+    triggers: Unit,
+    httpAuth: Unit,
+    httpHeaders: js.Array[typingsJapgolly.postmark.distClientModelsMessageSupportingTypesMod.Header]
+  ) = this()
+  def this(
+    url: String,
+    triggers: Unit,
+    httpAuth: HttpAuth,
+    httpHeaders: js.Array[typingsJapgolly.postmark.distClientModelsMessageSupportingTypesMod.Header]
+  ) = this()
+  def this(
+    url: String,
+    triggers: WebhookRequestTriggers,
+    httpAuth: Unit,
+    httpHeaders: js.Array[typingsJapgolly.postmark.distClientModelsMessageSupportingTypesMod.Header]
+  ) = this()
   def this(
     url: String,
     triggers: WebhookRequestTriggers,
     httpAuth: HttpAuth,
-    httpHeaders: js.Array[typingsJapgolly.postmark.messageSupportingTypesMod.Header]
+    httpHeaders: js.Array[typingsJapgolly.postmark.distClientModelsMessageSupportingTypesMod.Header]
+  ) = this()
+  def this(
+    url: Unit,
+    triggers: Unit,
+    httpAuth: Unit,
+    httpHeaders: js.Array[typingsJapgolly.postmark.distClientModelsMessageSupportingTypesMod.Header]
+  ) = this()
+  def this(
+    url: Unit,
+    triggers: Unit,
+    httpAuth: HttpAuth,
+    httpHeaders: js.Array[typingsJapgolly.postmark.distClientModelsMessageSupportingTypesMod.Header]
+  ) = this()
+  def this(
+    url: Unit,
+    triggers: WebhookRequestTriggers,
+    httpAuth: Unit,
+    httpHeaders: js.Array[typingsJapgolly.postmark.distClientModelsMessageSupportingTypesMod.Header]
+  ) = this()
+  def this(
+    url: Unit,
+    triggers: WebhookRequestTriggers,
+    httpAuth: HttpAuth,
+    httpHeaders: js.Array[typingsJapgolly.postmark.distClientModelsMessageSupportingTypesMod.Header]
   ) = this()
 }
-

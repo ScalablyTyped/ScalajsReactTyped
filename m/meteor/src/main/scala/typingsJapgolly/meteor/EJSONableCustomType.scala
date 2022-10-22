@@ -1,33 +1,41 @@
 package typingsJapgolly.meteor
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EJSONableCustomType extends js.Object {
+trait EJSONableCustomType extends StObject {
+  
   @JSName("clone")
   var clone_FEJSONableCustomType: js.UndefOr[js.Function0[this.type]] = js.undefined
+  
   @JSName("equals")
   var equals_FEJSONableCustomType: js.UndefOr[js.Function1[/* other */ js.Object, Boolean]] = js.undefined
+  
   def toJSONValue(): JSONable
+  
   def typeName(): String
 }
-
 object EJSONableCustomType {
-  @scala.inline
-  def apply(
-    toJSONValue: CallbackTo[JSONable],
-    typeName: CallbackTo[String],
-    clone: js.UndefOr[CallbackTo[EJSONableCustomType]] = js.undefined,
-    equals: /* other */ js.Object => CallbackTo[Boolean] = null
-  ): EJSONableCustomType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toJSONValue")(toJSONValue.toJsFn)
-    __obj.updateDynamic("typeName")(typeName.toJsFn)
-    clone.foreach(p => __obj.updateDynamic("clone")(p.toJsFn))
-    if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction1((t0: /* other */ js.Object) => equals(t0).runNow()))
+  
+  inline def apply(toJSONValue: CallbackTo[JSONable], typeName: CallbackTo[String]): EJSONableCustomType = {
+    val __obj = js.Dynamic.literal(toJSONValue = toJSONValue.toJsFn, typeName = typeName.toJsFn)
     __obj.asInstanceOf[EJSONableCustomType]
   }
+  
+  extension [Self <: EJSONableCustomType](x: Self) {
+    
+    inline def setClone_(value: CallbackTo[EJSONableCustomType]): Self = StObject.set(x, "clone", value.toJsFn)
+    
+    inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+    
+    inline def setEquals_(value: /* other */ js.Object => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    
+    inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+    
+    inline def setToJSONValue(value: CallbackTo[JSONable]): Self = StObject.set(x, "toJSONValue", value.toJsFn)
+    
+    inline def setTypeName(value: CallbackTo[String]): Self = StObject.set(x, "typeName", value.toJsFn)
+  }
 }
-

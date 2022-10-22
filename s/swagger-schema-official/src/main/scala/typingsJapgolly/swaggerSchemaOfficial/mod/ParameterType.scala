@@ -1,8 +1,8 @@
 package typingsJapgolly.swaggerSchemaOfficial.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.string
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.`object`
   - typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.file
 */
-trait ParameterType extends js.Object
-
+trait ParameterType extends StObject
 object ParameterType {
-  @scala.inline
-  def array: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.array = this.cast("array")
-  @scala.inline
-  def boolean: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.boolean = this.cast("boolean")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def file: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.file = this.cast("file")
-  @scala.inline
-  def integer: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.integer = this.cast("integer")
-  @scala.inline
-  def number: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.number = this.cast("number")
-  @scala.inline
-  def `object`: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.string = this.cast("string")
+  
+  inline def array: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.array = "array".asInstanceOf[typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.array]
+  
+  inline def boolean: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.boolean = "boolean".asInstanceOf[typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.boolean]
+  
+  inline def file: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.file = "file".asInstanceOf[typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.file]
+  
+  inline def integer: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.integer = "integer".asInstanceOf[typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.integer]
+  
+  inline def number: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.number = "number".asInstanceOf[typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.number]
+  
+  inline def `object`: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.`object` = "object".asInstanceOf[typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.`object`]
+  
+  inline def string: typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.string = "string".asInstanceOf[typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.string]
 }
-

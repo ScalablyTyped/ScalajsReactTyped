@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PagerRenderingEventUIParam extends js.Object {
+trait PagerRenderingEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to grid's data source.
-  	 */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to grid's data source.
+    */
+  var dataSource: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets reference to GridPaging.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to GridPaging.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object PagerRenderingEventUIParam {
-  @scala.inline
-  def apply(dataSource: js.Any = null, owner: js.Any = null): PagerRenderingEventUIParam = {
+  
+  inline def apply(): PagerRenderingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagerRenderingEventUIParam]
   }
+  
+  extension [Self <: PagerRenderingEventUIParam](x: Self) {
+    
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

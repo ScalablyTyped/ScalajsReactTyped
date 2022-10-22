@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-transition-group
 
-Typings are for version 4.2
+Typings are for version 4.4
 
 ## Library description:
 A react component toolset for managing animations
@@ -10,10 +10,10 @@ A react component toolset for managing animations
 | ------------------ | :-------------: |
 | Full name          | react-transition-group |
 | Keywords           | react, transition, addons, transition-group, animation, css, transitions |
-| # releases         | 23 |
-| # dependents       | 1727 |
-| # downloads        | 163692111 |
-| # stars            | 22 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4.1914105666666664E7 |
+| # stars            | 9334.0 |
 
 ## Links
 - [Homepage](https://github.com/reactjs/react-transition-group#readme)

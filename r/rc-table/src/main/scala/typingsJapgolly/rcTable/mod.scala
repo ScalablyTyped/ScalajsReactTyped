@@ -1,50 +1,123 @@
 package typingsJapgolly.rcTable
 
-import japgolly.scalajs.react.raw.React.Element
-import typingsJapgolly.rcTable.columnGroupMod.ColumnGroupProps
-import typingsJapgolly.rcTable.columnMod.ColumnProps
-import typingsJapgolly.rcTable.interfaceMod.DefaultRecordType
-import typingsJapgolly.rcTable.rcTableStrings.RC_TABLE_INTERNAL_COL_DEFINE
-import typingsJapgolly.rcTable.tableMod.TableProps
+import typingsJapgolly.rcTable.libFooterCellMod.SummaryCellProps
+import typingsJapgolly.rcTable.libFooterRowMod.FooterRowProps
+import typingsJapgolly.rcTable.libFooterSummaryMod.SummaryProps
+import typingsJapgolly.rcTable.libInterfaceMod.DefaultRecordType
+import typingsJapgolly.rcTable.libSugarColumnGroupMod.ColumnGroupProps
+import typingsJapgolly.rcTable.libSugarColumnMod.ColumnProps
+import typingsJapgolly.rcTable.libTableMod.TableProps
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-table/lib", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val INTERNAL_COL_DEFINE: RC_TABLE_INTERNAL_COL_DEFINE = js.native
-  /**
-    * This is a syntactic sugar for `columns` prop.
-    * So HOC will not work on this.
-    */
-  def Column[RecordType](_underscore: ColumnProps[RecordType]): js.Any = js.native
-  /**
-    * This is a syntactic sugar for `columns` prop.
-    * So HOC will not work on this.
-    */
-  def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = js.native
+object mod {
+  
+  @JSImport("rc-table", JSImport.Namespace)
   @js.native
-  object default extends js.Object {
-    def apply[RecordType /* <: DefaultRecordType */](props: TableProps[RecordType]): Element = js.native
+  val ^ : js.Any = js.native
+  
+  object default {
+    
+    inline def apply[RecordType /* <: DefaultRecordType */](props: TableProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @JSImport("rc-table", JSImport.Default)
     @js.native
-    object Column extends js.Object {
-      def apply[RecordType](_underscore: ColumnProps[RecordType]): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * This is a syntactic sugar for `columns` prop.
+      * So HOC will not work on this.
+      */
+    /* was `typeof imported_Column.default` */
+    inline def Column[RecordType](_underscore: ColumnProps[RecordType]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
+    
+    /**
+      * This is a syntactic sugar for `columns` prop.
+      * So HOC will not work on this.
+      */
+    /* was `typeof imported_ColumnGroup.default` */
+    inline def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ColumnGroup")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
+    
+    /* was `typeof imported_Summary.default` */
+    object Summary {
+      
+      /**
+        * Syntactic sugar. Do not support HOC.
+        */
+      inline def apply(hasChildren: SummaryProps): japgolly.scalajs.react.facade.React.Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[japgolly.scalajs.react.facade.React.Element]
+      
+      @JSImport("rc-table", "default.Summary")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /* was `typeof imported_Cell.default` */
+      inline def Cell(hasClassNameIndexChildrenColSpanRowSpanAlign: SummaryCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Cell")(hasClassNameIndexChildrenColSpanRowSpanAlign.asInstanceOf[js.Any]).asInstanceOf[Element]
+      
+      /* was `typeof imported_Row.default` */
+      inline def Row(hasChildrenProps: FooterRowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
     }
     
-    @js.native
-    object ColumnGroup extends js.Object {
-      def apply[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = js.native
+    object defaultProps {
+      
+      @JSImport("rc-table", "default.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      inline def emptyText(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyText")().asInstanceOf[String]
+      
+      @JSImport("rc-table", "default.defaultProps.prefixCls")
+      @js.native
+      def prefixCls: String = js.native
+      inline def prefixCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixCls")(x.asInstanceOf[js.Any])
+      
+      @JSImport("rc-table", "default.defaultProps.rowKey")
+      @js.native
+      def rowKey: String = js.native
+      inline def rowKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rowKey")(x.asInstanceOf[js.Any])
     }
-    
-    @js.native
-    object defaultProps extends js.Object {
-      var prefixCls: String = js.native
-      var rowKey: String = js.native
-      def emptyText(): String = js.native
-    }
-    
   }
   
+  /**
+    * This is a syntactic sugar for `columns` prop.
+    * So HOC will not work on this.
+    */
+  inline def Column[RecordType](_underscore: ColumnProps[RecordType]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  /**
+    * This is a syntactic sugar for `columns` prop.
+    * So HOC will not work on this.
+    */
+  inline def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ColumnGroup")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  @JSImport("rc-table", "INTERNAL_COL_DEFINE")
+  @js.native
+  val INTERNAL_COL_DEFINE: /* "RC_TABLE_INTERNAL_COL_DEFINE" */ String = js.native
+  
+  object Summary {
+    
+    /**
+      * Syntactic sugar. Do not support HOC.
+      */
+    inline def apply(hasChildren: SummaryProps): japgolly.scalajs.react.facade.React.Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[japgolly.scalajs.react.facade.React.Element]
+    
+    @JSImport("rc-table", "Summary")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rc-table", "Summary.Cell")
+    @js.native
+    def Cell: /* import warning: importer.ImportType#apply Failed type conversion: typeof imported_Cell.default */ js.Any = js.native
+    inline def Cell_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: typeof imported_Cell.default */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rc-table", "Summary.Row")
+    @js.native
+    def Row: /* import warning: importer.ImportType#apply Failed type conversion: typeof imported_Row.default */ js.Any = js.native
+    inline def Row_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: typeof imported_Row.default */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
+  }
 }
-

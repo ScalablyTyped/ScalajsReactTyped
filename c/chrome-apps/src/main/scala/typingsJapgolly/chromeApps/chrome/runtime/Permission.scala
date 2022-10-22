@@ -1,20 +1,20 @@
 package typingsJapgolly.chromeApps.chrome.runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chromeApps.chromeAppsStrings.alarms
   - typingsJapgolly.chromeApps.chromeAppsStrings.appview
-  - typingsJapgolly.chromeApps.chromeAppsStrings.audio
+  - typingsJapgolly.chromeApps.chromeAppsStrings.audio_
   - typingsJapgolly.chromeApps.chromeAppsStrings.alwaysOnTopWindows
   - typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotalwaysOnTop
   - typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotfullscreen
   - typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotfullscreenDotoverrideEsc
   - typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotshape
   - typingsJapgolly.chromeApps.chromeAppsStrings.audioCapture
-  - typingsJapgolly.chromeApps.chromeAppsStrings.background
+  - typingsJapgolly.chromeApps.chromeAppsStrings.background_
   - typingsJapgolly.chromeApps.chromeAppsStrings.browser
   - typingsJapgolly.chromeApps.chromeAppsStrings.clipboardRead
   - typingsJapgolly.chromeApps.chromeAppsStrings.clipboardWrite
@@ -65,5 +65,4 @@ import scala.scalajs.js.annotation._
 typingsJapgolly.chromeApps.chrome.runtime.UrlMatches
   - typingsJapgolly.chromeApps.chrome.runtime.USBDevicesPermission
 */
-trait Permission extends js.Object
-
+trait Permission extends StObject

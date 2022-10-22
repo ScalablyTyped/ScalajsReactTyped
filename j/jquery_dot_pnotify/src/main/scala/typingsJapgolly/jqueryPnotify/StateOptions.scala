@@ -1,8 +1,8 @@
 package typingsJapgolly.jqueryPnotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.initializing
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.closing
   - typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.closed
 */
-trait StateOptions extends js.Object
-
+trait StateOptions extends StObject
 object StateOptions {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def closed: typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.closed = this.cast("closed")
-  @scala.inline
-  def closing: typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.closing = this.cast("closing")
-  @scala.inline
-  def initializing: typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.initializing = this.cast("initializing")
-  @scala.inline
-  def open: typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.open = this.cast("open")
-  @scala.inline
-  def opening: typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.opening = this.cast("opening")
+  
+  inline def closed: typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.closed = "closed".asInstanceOf[typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.closed]
+  
+  inline def closing: typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.closing = "closing".asInstanceOf[typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.closing]
+  
+  inline def initializing: typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.initializing = "initializing".asInstanceOf[typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.initializing]
+  
+  inline def open: typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.open = "open".asInstanceOf[typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.open]
+  
+  inline def opening: typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.opening = "opening".asInstanceOf[typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.opening]
 }
-

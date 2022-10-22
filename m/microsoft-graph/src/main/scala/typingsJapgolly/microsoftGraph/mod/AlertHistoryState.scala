@@ -1,39 +1,76 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AlertHistoryState extends js.Object {
-  var appId: js.UndefOr[String] = js.undefined
-  var assignedTo: js.UndefOr[String] = js.undefined
-  var comments: js.UndefOr[js.Array[String]] = js.undefined
-  var feedback: js.UndefOr[AlertFeedback] = js.undefined
-  var status: js.UndefOr[AlertStatus] = js.undefined
-  var updatedDateTime: js.UndefOr[String] = js.undefined
-  var user: js.UndefOr[String] = js.undefined
+trait AlertHistoryState extends StObject {
+  
+  var appId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var assignedTo: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var comments: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
+  
+  var feedback: js.UndefOr[NullableOption[AlertFeedback]] = js.undefined
+  
+  var status: js.UndefOr[NullableOption[AlertStatus]] = js.undefined
+  
+  var updatedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var user: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object AlertHistoryState {
-  @scala.inline
-  def apply(
-    appId: String = null,
-    assignedTo: String = null,
-    comments: js.Array[String] = null,
-    feedback: AlertFeedback = null,
-    status: AlertStatus = null,
-    updatedDateTime: String = null,
-    user: String = null
-  ): AlertHistoryState = {
+  
+  inline def apply(): AlertHistoryState = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (assignedTo != null) __obj.updateDynamic("assignedTo")(assignedTo.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (feedback != null) __obj.updateDynamic("feedback")(feedback.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (updatedDateTime != null) __obj.updateDynamic("updatedDateTime")(updatedDateTime.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertHistoryState]
   }
+  
+  extension [Self <: AlertHistoryState](x: Self) {
+    
+    inline def setAppId(value: NullableOption[String]): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    
+    inline def setAppIdNull: Self = StObject.set(x, "appId", null)
+    
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    
+    inline def setAssignedTo(value: NullableOption[String]): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
+    
+    inline def setAssignedToNull: Self = StObject.set(x, "assignedTo", null)
+    
+    inline def setAssignedToUndefined: Self = StObject.set(x, "assignedTo", js.undefined)
+    
+    inline def setComments(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    
+    inline def setCommentsNull: Self = StObject.set(x, "comments", null)
+    
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    
+    inline def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value*))
+    
+    inline def setFeedback(value: NullableOption[AlertFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
+    
+    inline def setFeedbackNull: Self = StObject.set(x, "feedback", null)
+    
+    inline def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
+    
+    inline def setStatus(value: NullableOption[AlertStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setUpdatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "updatedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatedDateTimeNull: Self = StObject.set(x, "updatedDateTime", null)
+    
+    inline def setUpdatedDateTimeUndefined: Self = StObject.set(x, "updatedDateTime", js.undefined)
+    
+    inline def setUser(value: NullableOption[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    
+    inline def setUserNull: Self = StObject.set(x, "user", null)
+    
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+  }
 }
-

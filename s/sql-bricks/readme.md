@@ -10,10 +10,10 @@ Transparent, Schemaless SQL Generation
 | ------------------ | :-------------: |
 | Full name          | sql-bricks |
 | Keywords           | sql, generation, generate, query, pg, postgres, sqlite, builder, select, insert, update, delete |
-| # releases         | 4 |
-| # dependents       | 12 |
-| # downloads        | 837443 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 104197.33333333333 |
+| # stars            | 162.0 |
 
 ## Links
 - [Homepage](http://csnw.github.io/sql-bricks)

@@ -1,28 +1,38 @@
 package typingsJapgolly.ethereumProtocol.mod
 
-import typingsJapgolly.ethereumProtocol.ethereumProtocolNumbers.`0`
-import typingsJapgolly.ethereumProtocol.ethereumProtocolNumbers.`1`
+import typingsJapgolly.ethereumProtocol.ethereumProtocolInts.`0`
+import typingsJapgolly.ethereumProtocol.ethereumProtocolInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransactionReceipt extends js.Object {
+trait TransactionReceipt extends StObject {
+  
   var blockHash: String
+  
   var blockNumber: Double
+  
   var contractAddress: String | Null
+  
   var cumulativeGasUsed: Double
+  
   var from: String
+  
   var gasUsed: Double
+  
   var logs: js.Array[LogEntry]
+  
   var status: Null | String | `0` | `1`
+  
   var to: String
+  
   var transactionHash: String
+  
   var transactionIndex: Double
 }
-
 object TransactionReceipt {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     blockHash: String,
     blockNumber: Double,
     cumulativeGasUsed: Double,
@@ -31,14 +41,40 @@ object TransactionReceipt {
     logs: js.Array[LogEntry],
     to: String,
     transactionHash: String,
-    transactionIndex: Double,
-    contractAddress: String = null,
-    status: String | `0` | `1` = null
+    transactionIndex: Double
   ): TransactionReceipt = {
-    val __obj = js.Dynamic.literal(blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], cumulativeGasUsed = cumulativeGasUsed.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
-    if (contractAddress != null) __obj.updateDynamic("contractAddress")(contractAddress.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], cumulativeGasUsed = cumulativeGasUsed.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any], contractAddress = null, status = null)
     __obj.asInstanceOf[TransactionReceipt]
   }
+  
+  extension [Self <: TransactionReceipt](x: Self) {
+    
+    inline def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
+    
+    inline def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
+    
+    inline def setContractAddress(value: String): Self = StObject.set(x, "contractAddress", value.asInstanceOf[js.Any])
+    
+    inline def setContractAddressNull: Self = StObject.set(x, "contractAddress", null)
+    
+    inline def setCumulativeGasUsed(value: Double): Self = StObject.set(x, "cumulativeGasUsed", value.asInstanceOf[js.Any])
+    
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setGasUsed(value: Double): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
+    
+    inline def setLogs(value: js.Array[LogEntry]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+    
+    inline def setLogsVarargs(value: LogEntry*): Self = StObject.set(x, "logs", js.Array(value*))
+    
+    inline def setStatus(value: String | `0` | `1`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
+  }
 }
-

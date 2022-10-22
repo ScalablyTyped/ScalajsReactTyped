@@ -10,10 +10,10 @@ NODE_ENV accessor
 | ------------------ | :-------------: |
 | Full name          | asenv |
 | Keywords           | NODE_ENV |
-| # releases         | 5 |
-| # dependents       | 18 |
-| # downloads        | 71412 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1628.6666666666667 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/a-labo/asenv#readme)

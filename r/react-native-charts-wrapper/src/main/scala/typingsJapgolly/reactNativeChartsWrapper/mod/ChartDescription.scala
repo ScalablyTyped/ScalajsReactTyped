@@ -1,33 +1,48 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartDescription extends js.Object {
+trait ChartDescription extends StObject {
+  
   var positionX: js.UndefOr[Double] = js.undefined
+  
   var positionY: js.UndefOr[Double] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
+  
   var textColor: js.UndefOr[Color] = js.undefined
+  
   var textSize: js.UndefOr[Double] = js.undefined
 }
-
 object ChartDescription {
-  @scala.inline
-  def apply(
-    positionX: Int | Double = null,
-    positionY: Int | Double = null,
-    text: String = null,
-    textColor: Int | Double = null,
-    textSize: Int | Double = null
-  ): ChartDescription = {
+  
+  inline def apply(): ChartDescription = {
     val __obj = js.Dynamic.literal()
-    if (positionX != null) __obj.updateDynamic("positionX")(positionX.asInstanceOf[js.Any])
-    if (positionY != null) __obj.updateDynamic("positionY")(positionY.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
-    if (textSize != null) __obj.updateDynamic("textSize")(textSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartDescription]
   }
+  
+  extension [Self <: ChartDescription](x: Self) {
+    
+    inline def setPositionX(value: Double): Self = StObject.set(x, "positionX", value.asInstanceOf[js.Any])
+    
+    inline def setPositionXUndefined: Self = StObject.set(x, "positionX", js.undefined)
+    
+    inline def setPositionY(value: Double): Self = StObject.set(x, "positionY", value.asInstanceOf[js.Any])
+    
+    inline def setPositionYUndefined: Self = StObject.set(x, "positionY", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextColor(value: Color): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    
+    inline def setTextSize(value: Double): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
+    
+    inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

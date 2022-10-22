@@ -1,46 +1,84 @@
 package typingsJapgolly.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A site of a structure which is currently under construction.
   */
-trait ConstructionSite[T /* <: BuildableStructureConstant */] extends RoomObject {
+trait ConstructionSite[T /* <: BuildableStructureConstant */]
+  extends StObject
+     with RoomObject {
+  
   /**
     * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
     */
   var id: Id[this.type]
+  
   /**
     * Whether this is your own construction site.
     */
   var my: Boolean
+  
   /**
     * An object with the structure’s owner info.
     */
   var owner: Owner
+  
   /**
     * The current construction progress.
     */
   var progress: Double
+  
   /**
     * The total construction progress needed for the structure to be built.
     */
   var progressTotal: Double
-  /**
-    * One of the `STRUCTURE_*` constants.
-    */
-  var structureType: T
+  
   /**
     * Remove the construction site.
     * @returns Result Code: OK, ERR_NOT_OWNER
     */
   def remove(): Double
+  
+  /**
+    * One of the `STRUCTURE_*` constants.
+    */
+  var structureType: T
 }
-
-@JSGlobal("ConstructionSite")
-@js.native
-object ConstructionSite extends TopLevel[ConstructionSiteConstructor]
-
+object ConstructionSite {
+  
+  inline def apply[T /* <: BuildableStructureConstant */](
+    effects: js.Array[RoomObjectEffect],
+    id: Id[ConstructionSite[T]],
+    my: Boolean,
+    owner: Owner,
+    pos: RoomPosition,
+    progress: Double,
+    progressTotal: Double,
+    remove: CallbackTo[Double],
+    structureType: T
+  ): ConstructionSite[T] = {
+    val __obj = js.Dynamic.literal(effects = effects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], my = my.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], progressTotal = progressTotal.asInstanceOf[js.Any], remove = remove.toJsFn, structureType = structureType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConstructionSite[T]]
+  }
+  
+  extension [Self <: ConstructionSite[?], T /* <: BuildableStructureConstant */](x: Self & ConstructionSite[T]) {
+    
+    inline def setId(value: Id[ConstructionSite[T]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setMy(value: Boolean): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+    
+    inline def setOwner(value: Owner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    
+    inline def setProgressTotal(value: Double): Self = StObject.set(x, "progressTotal", value.asInstanceOf[js.Any])
+    
+    inline def setRemove(value: CallbackTo[Double]): Self = StObject.set(x, "remove", value.toJsFn)
+    
+    inline def setStructureType(value: T): Self = StObject.set(x, "structureType", value.asInstanceOf[js.Any])
+  }
+}

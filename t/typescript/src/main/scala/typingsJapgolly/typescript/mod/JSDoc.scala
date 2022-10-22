@@ -1,17 +1,21 @@
 package typingsJapgolly.typescript.mod
 
-import typingsJapgolly.typescript.mod.SyntaxKind.JSDocComment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSDoc extends Node {
-  var comment: js.UndefOr[java.lang.String] = js.native
+trait JSDoc
+  extends StObject
+     with Node {
+  
+  val comment: js.UndefOr[java.lang.String | NodeArray[JSDocComment]] = js.native
+  
   @JSName("kind")
-  var kind_JSDoc: JSDocComment = js.native
+  val kind_JSDoc: typingsJapgolly.typescript.mod.SyntaxKind.JSDoc = js.native
+  
   @JSName("parent")
-  var parent_JSDoc: HasJSDoc = js.native
-  var tags: js.UndefOr[NodeArray[JSDocTag]] = js.native
+  val parent_JSDoc: HasJSDoc = js.native
+  
+  val tags: js.UndefOr[NodeArray[JSDocTag]] = js.native
 }
-

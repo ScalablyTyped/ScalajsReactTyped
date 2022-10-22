@@ -1,36 +1,90 @@
 package typingsJapgolly.reactPose
 
-import typingsJapgolly.reactPose.posedMod.Posed
-import typingsJapgolly.reactPose.transitionTypesMod.Props
-import typingsJapgolly.reactPose.transitionTypesMod.State
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.reactPose.anon.FlipMove
+import typingsJapgolly.reactPose.anon.PartialState
+import typingsJapgolly.reactPose.libComponentsTransitionTypesMod.Props
+import typingsJapgolly.reactPose.libComponentsTransitionTypesMod.State
+import typingsJapgolly.reactPose.libPosedMod.Posed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-pose", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class PoseGroup ()
-    extends typingsJapgolly.reactPose.poseGroupMod.default
+object mod extends Shortcut {
   
+  @JSImport("react-pose", JSImport.Default)
   @js.native
-  class Transition ()
-    extends typingsJapgolly.reactPose.transitionMod.default
-  
   val default: Posed = js.native
-  /* static members */
+  
+  @JSImport("react-pose", "PoseGroup")
   @js.native
-  object PoseGroup extends js.Object {
-    var defaultProps: AnonFlipMove = js.native
+  open class PoseGroup ()
+    extends typingsJapgolly.reactPose.libComponentsTransitionPoseGroupMod.default
+  /* static members */
+  object PoseGroup {
+    
+    @JSImport("react-pose", "PoseGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-pose", "PoseGroup.defaultProps")
+    @js.native
+    def defaultProps: FlipMove = js.native
+    inline def defaultProps_=(x: FlipMove): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  /* static members */
+  @JSImport("react-pose", "Transition")
   @js.native
-  object Transition extends js.Object {
-    var defaultProps: AnonEnterAfterExit = js.native
-    def getDerivedStateFromProps(props: Props, state: State): PartialState = js.native
+  open class Transition ()
+    extends typingsJapgolly.reactPose.libComponentsTransitionMod.default
+  object Transition {
+    
+    @JSImport("react-pose", "Transition")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    object defaultProps {
+      
+      @JSImport("react-pose", "Transition.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("react-pose", "Transition.defaultProps.enterAfterExit")
+      @js.native
+      def enterAfterExit: Boolean = js.native
+      inline def enterAfterExit_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enterAfterExit")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-pose", "Transition.defaultProps.enterPose")
+      @js.native
+      def enterPose: String = js.native
+      inline def enterPose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enterPose")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-pose", "Transition.defaultProps.exitPose")
+      @js.native
+      def exitPose: String = js.native
+      inline def exitPose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exitPose")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-pose", "Transition.defaultProps.flipMove")
+      @js.native
+      def flipMove: Boolean = js.native
+      inline def flipMove_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flipMove")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-pose", "Transition.defaultProps.preEnterPose")
+      @js.native
+      def preEnterPose: String = js.native
+      inline def preEnterPose_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preEnterPose")(x.asInstanceOf[js.Any])
+    }
+    
+    /* static member */
+    @JSImport("react-pose", "Transition.getDerivedStateFromProps")
+    @js.native
+    def getDerivedStateFromProps: js.Function2[/* props */ Props, /* state */ State, PartialState] = js.native
+    inline def getDerivedStateFromProps_=(x: js.Function2[/* props */ Props, /* state */ State, PartialState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
   }
   
+  type _To = Posed
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: Posed = default
 }
-

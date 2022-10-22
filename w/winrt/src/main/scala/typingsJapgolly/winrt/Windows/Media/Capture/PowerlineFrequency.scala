@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Media.Capture
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PowerlineFrequency extends js.Object
-
+sealed trait PowerlineFrequency extends StObject
 @JSGlobal("Windows.Media.Capture.PowerlineFrequency")
 @js.native
-object PowerlineFrequency extends js.Object {
-  @js.native
-  sealed trait disabled extends PowerlineFrequency
+object PowerlineFrequency extends StObject {
   
   @js.native
-  sealed trait fiftyHertz extends PowerlineFrequency
+  sealed trait disabled
+    extends StObject
+       with PowerlineFrequency
   
   @js.native
-  sealed trait sixtyHertz extends PowerlineFrequency
+  sealed trait fiftyHertz
+    extends StObject
+       with PowerlineFrequency
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PowerlineFrequency with Double] = js.native
-  /* 0 */ @js.native
-  object disabled extends TopLevel[disabled with Double]
-  
-  /* 1 */ @js.native
-  object fiftyHertz extends TopLevel[fiftyHertz with Double]
-  
-  /* 2 */ @js.native
-  object sixtyHertz extends TopLevel[sixtyHertz with Double]
-  
+  @js.native
+  sealed trait sixtyHertz
+    extends StObject
+       with PowerlineFrequency
 }
-

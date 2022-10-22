@@ -1,29 +1,39 @@
 package typingsJapgolly.reactMapGl.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HTMLRedrawOptions extends js.Object {
+trait HTMLRedrawOptions extends StObject {
+  
   var height: Double
-  var width: Double
+  
   def project(lnglat: js.Array[Double]): js.Array[Double]
+  
   def unproject(xy: js.Array[Double]): js.Array[Double]
+  
+  var width: Double
 }
-
 object HTMLRedrawOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     height: Double,
-    project: js.Array[Double] => CallbackTo[js.Array[Double]],
-    unproject: js.Array[Double] => CallbackTo[js.Array[Double]],
+    project: js.Array[Double] => js.Array[Double],
+    unproject: js.Array[Double] => js.Array[Double],
     width: Double
   ): HTMLRedrawOptions = {
-    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    __obj.updateDynamic("project")(js.Any.fromFunction1((t0: js.Array[scala.Double]) => project(t0).runNow()))
-    __obj.updateDynamic("unproject")(js.Any.fromFunction1((t0: js.Array[scala.Double]) => unproject(t0).runNow()))
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], project = js.Any.fromFunction1(project), unproject = js.Any.fromFunction1(unproject), width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLRedrawOptions]
   }
+  
+  extension [Self <: HTMLRedrawOptions](x: Self) {
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setProject(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "project", js.Any.fromFunction1(value))
+    
+    inline def setUnproject(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "unproject", js.Any.fromFunction1(value))
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
 }
-

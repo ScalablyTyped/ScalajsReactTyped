@@ -1,21 +1,27 @@
 package typingsJapgolly.johnnyFive.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CollectionPinOptions
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var pins: js.Array[String | Double]
 }
-
 object CollectionPinOptions {
-  @scala.inline
-  def apply(pins: js.Array[String | Double], StringDictionary: /* key */ StringDictionary[js.Any] = null): CollectionPinOptions = {
+  
+  inline def apply(pins: js.Array[String | Double]): CollectionPinOptions = {
     val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[CollectionPinOptions]
   }
+  
+  extension [Self <: CollectionPinOptions](x: Self) {
+    
+    inline def setPins(value: js.Array[String | Double]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+    
+    inline def setPinsVarargs(value: (String | Double)*): Self = StObject.set(x, "pins", js.Array(value*))
+  }
 }
-

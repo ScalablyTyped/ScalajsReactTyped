@@ -1,39 +1,60 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockChartNavigatorCategoryAxisAutoBaseUnitSteps extends js.Object {
-  var days: js.UndefOr[js.Any] = js.undefined
-  var hours: js.UndefOr[js.Any] = js.undefined
-  var minutes: js.UndefOr[js.Any] = js.undefined
-  var months: js.UndefOr[js.Any] = js.undefined
-  var seconds: js.UndefOr[js.Any] = js.undefined
-  var weeks: js.UndefOr[js.Any] = js.undefined
-  var years: js.UndefOr[js.Any] = js.undefined
+trait StockChartNavigatorCategoryAxisAutoBaseUnitSteps extends StObject {
+  
+  var days: js.UndefOr[Any] = js.undefined
+  
+  var hours: js.UndefOr[Any] = js.undefined
+  
+  var minutes: js.UndefOr[Any] = js.undefined
+  
+  var months: js.UndefOr[Any] = js.undefined
+  
+  var seconds: js.UndefOr[Any] = js.undefined
+  
+  var weeks: js.UndefOr[Any] = js.undefined
+  
+  var years: js.UndefOr[Any] = js.undefined
 }
-
 object StockChartNavigatorCategoryAxisAutoBaseUnitSteps {
-  @scala.inline
-  def apply(
-    days: js.Any = null,
-    hours: js.Any = null,
-    minutes: js.Any = null,
-    months: js.Any = null,
-    seconds: js.Any = null,
-    weeks: js.Any = null,
-    years: js.Any = null
-  ): StockChartNavigatorCategoryAxisAutoBaseUnitSteps = {
+  
+  inline def apply(): StockChartNavigatorCategoryAxisAutoBaseUnitSteps = {
     val __obj = js.Dynamic.literal()
-    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
-    if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
-    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
-    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
-    if (weeks != null) __obj.updateDynamic("weeks")(weeks.asInstanceOf[js.Any])
-    if (years != null) __obj.updateDynamic("years")(years.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartNavigatorCategoryAxisAutoBaseUnitSteps]
   }
+  
+  extension [Self <: StockChartNavigatorCategoryAxisAutoBaseUnitSteps](x: Self) {
+    
+    inline def setDays(value: Any): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+    
+    inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
+    
+    inline def setHours(value: Any): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+    
+    inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
+    
+    inline def setMinutes(value: Any): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    
+    inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
+    
+    inline def setMonths(value: Any): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+    
+    inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
+    
+    inline def setSeconds(value: Any): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    
+    inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+    
+    inline def setWeeks(value: Any): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
+    
+    inline def setWeeksUndefined: Self = StObject.set(x, "weeks", js.undefined)
+    
+    inline def setYears(value: Any): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
+    
+    inline def setYearsUndefined: Self = StObject.set(x, "years", js.undefined)
+  }
 }
-

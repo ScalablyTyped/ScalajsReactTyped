@@ -1,9 +1,8 @@
 package typingsJapgolly.deezerSdk.DeezerSdk
 
-import typingsJapgolly.deezerSdk.AnonArtist
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See:
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation._
   * {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
   */
 @js.native
-trait Player extends js.Object {
+trait Player extends StObject {
+  
   /**
     * Append a track to the queue of the current player.
     *
@@ -22,6 +22,7 @@ trait Player extends js.Object {
     */
   def addToQueue(trackIds: js.Array[String]): Unit = js.native
   def addToQueue(trackIds: js.Array[String], onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Set the order of the current list of tracks.
     *
@@ -32,44 +33,53 @@ trait Player extends js.Object {
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def changeTrackOrder(trackIds: js.Array[String]): Unit = js.native
+  
   /**
     * Get the position in the queue of the currently playing track.
     *
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getCurrentIndex(): Double = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getCurrentTrack(): Track = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getMute(): Boolean = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getRepeat(): RepeatMode = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getShuffle(): Boolean = js.native
+  
   /**
     * Get the tracks in the queue of the player.
     *
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getTrackList(): js.Array[Track] = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def getVolume(): Double = js.native
+  
   //#endregion
   //#region The player properties
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
     */
   def isPlaying(): Boolean = js.native
+  
   /**
     * Tell the player to read the next track.
     *
@@ -78,16 +88,19 @@ trait Player extends js.Object {
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def next(): Unit = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def pause(): Unit = js.native
+  
   //#endregion
   //#region Control a player
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def play(): Unit = js.native
+  
   /**
     * Load and play an album into the current player.
     *
@@ -113,10 +126,83 @@ trait Player extends js.Object {
     albumId: Double,
     autoplay: Boolean,
     index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Boolean,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(albumId: Double, autoplay: Boolean, index: Unit, offset: Double): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Boolean,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Boolean,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Boolean,
+    index: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playAlbum(albumId: Double, autoplay: Boolean, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  def playAlbum(albumId: Double, autoplay: Unit, index: Double): Unit = js.native
+  def playAlbum(albumId: Double, autoplay: Unit, index: Double, offset: Double): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Unit,
+    index: Double,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Unit,
+    index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Unit,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(albumId: Double, autoplay: Unit, index: Unit, offset: Double): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Unit,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Unit,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(
+    albumId: Double,
+    autoplay: Unit,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playAlbum(albumId: Double, autoplay: Unit, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   def playAlbum(albumId: Double, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Load and play an episode or a list of episodes into the current player.
     *
@@ -142,6 +228,34 @@ trait Player extends js.Object {
     episodeIds: js.Array[String],
     autoplay: Boolean,
     index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Boolean,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(episodeIds: js.Array[String], autoplay: Boolean, index: Unit, offset: Double): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Boolean,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Boolean,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Boolean,
+    index: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playEpisodes(
@@ -149,7 +263,56 @@ trait Player extends js.Object {
     autoplay: Boolean,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
+  def playEpisodes(episodeIds: js.Array[String], autoplay: Unit, index: Double): Unit = js.native
+  def playEpisodes(episodeIds: js.Array[String], autoplay: Unit, index: Double, offset: Double): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
+    index: Double,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
+    index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(episodeIds: js.Array[String], autoplay: Unit, index: Unit, offset: Double): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playEpisodes(
+    episodeIds: js.Array[String],
+    autoplay: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
   def playEpisodes(episodeIds: js.Array[String], onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Load and play external MP3 sources into the current player.
     *
@@ -175,6 +338,34 @@ trait Player extends js.Object {
     mp3Sources: js.Array[Mp3Source],
     autoplay: Boolean,
     index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Boolean,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(mp3Sources: js.Array[Mp3Source], autoplay: Boolean, index: Unit, offset: Double): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Boolean,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Boolean,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Boolean,
+    index: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playExternalTracks(
@@ -182,7 +373,56 @@ trait Player extends js.Object {
     autoplay: Boolean,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
+  def playExternalTracks(mp3Sources: js.Array[Mp3Source], autoplay: Unit, index: Double): Unit = js.native
+  def playExternalTracks(mp3Sources: js.Array[Mp3Source], autoplay: Unit, index: Double, offset: Double): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
+    index: Double,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
+    index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(mp3Sources: js.Array[Mp3Source], autoplay: Unit, index: Unit, offset: Double): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playExternalTracks(
+    mp3Sources: js.Array[Mp3Source],
+    autoplay: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
   def playExternalTracks(mp3Sources: js.Array[Mp3Source], onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Load and play a playlist into the current player.
     *
@@ -208,6 +448,34 @@ trait Player extends js.Object {
     playlistId: Double,
     autoplay: Boolean,
     index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Boolean,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(playlistId: Double, autoplay: Boolean, index: Unit, offset: Double): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Boolean,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Boolean,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Boolean,
+    index: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playPlaylist(
@@ -215,7 +483,52 @@ trait Player extends js.Object {
     autoplay: Boolean,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
+  def playPlaylist(playlistId: Double, autoplay: Unit, index: Double): Unit = js.native
+  def playPlaylist(playlistId: Double, autoplay: Unit, index: Double, offset: Double): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Unit,
+    index: Double,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Unit,
+    index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Unit,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(playlistId: Double, autoplay: Unit, index: Unit, offset: Double): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Unit,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Unit,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(
+    playlistId: Double,
+    autoplay: Unit,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPlaylist(playlistId: Double, autoplay: Unit, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   def playPlaylist(playlistId: Double, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Load and play a podcast into the current player.
     *
@@ -241,6 +554,34 @@ trait Player extends js.Object {
     podcastId: Double,
     autoplay: Boolean,
     index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Boolean,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(podcastId: Double, autoplay: Boolean, index: Unit, offset: Double): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Boolean,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Boolean,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Boolean,
+    index: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playPodcast(
@@ -248,7 +589,52 @@ trait Player extends js.Object {
     autoplay: Boolean,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
+  def playPodcast(podcastId: Double, autoplay: Unit, index: Double): Unit = js.native
+  def playPodcast(podcastId: Double, autoplay: Unit, index: Double, offset: Double): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Unit,
+    index: Double,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Unit,
+    index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Unit,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(podcastId: Double, autoplay: Unit, index: Unit, offset: Double): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Unit,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Unit,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(
+    podcastId: Double,
+    autoplay: Unit,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playPodcast(podcastId: Double, autoplay: Unit, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   def playPodcast(podcastId: Double, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Load and play a radio into the current player.
     *
@@ -259,6 +645,50 @@ trait Player extends js.Object {
     * See: {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
     */
   def playRadio(id: Double): Unit = js.native
+  def playRadio(id: Double, radioType: Unit, autoplay: Boolean): Unit = js.native
+  def playRadio(id: Double, radioType: Unit, autoplay: Boolean, offset: Double): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Boolean,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Boolean,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Boolean,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(id: Double, radioType: Unit, autoplay: Unit, offset: Double): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(id: Double, radioType: Unit, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   def playRadio(id: Double, radioType: RadioType): Unit = js.native
   def playRadio(id: Double, radioType: RadioType, autoplay: Boolean): Unit = js.native
   def playRadio(id: Double, radioType: RadioType, autoplay: Boolean, offset: Double): Unit = js.native
@@ -273,9 +703,38 @@ trait Player extends js.Object {
     id: Double,
     radioType: RadioType,
     autoplay: Boolean,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Boolean,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(id: Double, radioType: RadioType, autoplay: Unit, offset: Double): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playRadio(id: Double, radioType: RadioType, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * The official docs for this method are incomplete, but the existing docs and a
     * {@link https://github.com/deezer/javascript-samples/blob/master/player_basic.html | usage example}
@@ -289,6 +748,50 @@ trait Player extends js.Object {
     * See: {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
     */
   def playSmartRadio(id: Double): Unit = js.native
+  def playSmartRadio(id: Double, radioType: Unit, autoplay: Boolean): Unit = js.native
+  def playSmartRadio(id: Double, radioType: Unit, autoplay: Boolean, offset: Double): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Boolean,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Boolean,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Boolean,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(id: Double, radioType: Unit, autoplay: Unit, offset: Double): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: Unit,
+    autoplay: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(id: Double, radioType: Unit, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
   def playSmartRadio(id: Double, radioType: RadioType): Unit = js.native
   def playSmartRadio(id: Double, radioType: RadioType, autoplay: Boolean): Unit = js.native
   def playSmartRadio(id: Double, radioType: RadioType, autoplay: Boolean, offset: Double): Unit = js.native
@@ -303,9 +806,38 @@ trait Player extends js.Object {
     id: Double,
     radioType: RadioType,
     autoplay: Boolean,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Boolean,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(id: Double, radioType: RadioType, autoplay: Unit, offset: Double): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playSmartRadio(
+    id: Double,
+    radioType: RadioType,
+    autoplay: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playSmartRadio(id: Double, radioType: RadioType, onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   //#region Load tracks to a player
   // There may be more overloads possible, but the defined ones should suffice for all
   // practical purposes.
@@ -334,6 +866,34 @@ trait Player extends js.Object {
     trackIds: js.Array[String],
     autoplay: Boolean,
     index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Boolean,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(trackIds: js.Array[String], autoplay: Boolean, index: Unit, offset: Double): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Boolean,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Boolean,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Boolean,
+    index: Unit,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
   def playTracks(
@@ -341,7 +901,56 @@ trait Player extends js.Object {
     autoplay: Boolean,
     onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
   ): Unit = js.native
+  def playTracks(trackIds: js.Array[String], autoplay: Unit, index: Double): Unit = js.native
+  def playTracks(trackIds: js.Array[String], autoplay: Unit, index: Double, offset: Double): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
+    index: Double,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
+    index: Double,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
+    index: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(trackIds: js.Array[String], autoplay: Unit, index: Unit, offset: Double): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
+    index: Unit,
+    offset: Double,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
+    index: Unit,
+    offset: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
+    index: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
+  def playTracks(
+    trackIds: js.Array[String],
+    autoplay: Unit,
+    onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]
+  ): Unit = js.native
   def playTracks(trackIds: js.Array[String], onTracksLoaded: js.Function1[/* playQueue */ PlayQueue, Unit]): Unit = js.native
+  
   /**
     * Tell the player to read the previous track.
     *
@@ -350,12 +959,14 @@ trait Player extends js.Object {
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def prev(): Unit = js.native
+  
   /**
     * Set the position of the reader head in the currently playing track.
     *
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def seek(positionPercentFloat: Double): Unit = js.native
+  
   /**
     * Hide the queue and current track information.
     *
@@ -365,22 +976,25 @@ trait Player extends js.Object {
     *
     */
   def setBlindTestMode(blindTestMode: Boolean): Unit = js.native
-  def setBlindTestMode(blindTestMode: Boolean, trackInfo: AnonArtist): Unit = js.native
+  def setBlindTestMode(blindTestMode: Boolean, trackInfo: typingsJapgolly.deezerSdk.anon.Artist): Unit = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def setMute(mute: Boolean): Unit = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def setRepeat(repeatMode: RepeatMode): Unit = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def setShuffle(shuffle: Boolean): Unit = js.native
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/controls | Control a player}
     */
   def setVolume(volumePercentInt: Double): Unit = js.native
 }
-

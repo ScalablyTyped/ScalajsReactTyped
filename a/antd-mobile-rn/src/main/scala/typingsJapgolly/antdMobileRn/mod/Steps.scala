@@ -1,23 +1,31 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.AnonDirection
-import typingsJapgolly.antdMobileRn.stepsIndexNativeMod.StepsNativeProps
-import typingsJapgolly.antdMobileRn.stepsIndexNativeMod.default
+import typingsJapgolly.antdMobileRn.anon.Direction
+import typingsJapgolly.antdMobileRn.libStepsIndexDotnativeMod.StepsNativeProps
+import typingsJapgolly.antdMobileRn.libStepsIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "Steps")
 @js.native
-class Steps protected () extends default {
+open class Steps protected () extends default {
   def this(props: StepsNativeProps) = this()
 }
-
 /* static members */
-@JSImport("antd-mobile-rn", "Steps")
-@js.native
-object Steps extends js.Object {
-  var Step: js.Any = js.native
-  var defaultProps: AnonDirection = js.native
+object Steps {
+  
+  @JSImport("antd-mobile-rn", "Steps")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "Steps.Step")
+  @js.native
+  def Step: Any = js.native
+  inline def Step_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile-rn", "Steps.defaultProps")
+  @js.native
+  def defaultProps: Direction = js.native
+  inline def defaultProps_=(x: Direction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

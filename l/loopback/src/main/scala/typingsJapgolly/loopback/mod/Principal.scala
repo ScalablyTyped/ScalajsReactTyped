@@ -1,8 +1,8 @@
 package typingsJapgolly.loopback.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents the abstract notion of a principal, which can be used
@@ -15,13 +15,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Principal")
 @js.native
-class Principal protected () extends js.Object {
-  def this(`type`: String, id: js.Any, name: String) = this()
-  /**
-    * Compare if two principals are equal
-    * Returns true if argument principal is equal to this principal.
-    * @param {any} p The other principa
-    */
-  def equals(p: js.Any): Unit = js.native
+open class Principal protected () extends StObject {
+  def this(`type`: String, id: Any, name: String) = this()
 }
-

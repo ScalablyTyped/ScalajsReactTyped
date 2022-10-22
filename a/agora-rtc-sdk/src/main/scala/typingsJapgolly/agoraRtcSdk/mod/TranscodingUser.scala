@@ -1,80 +1,99 @@
 package typingsJapgolly.agoraRtcSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages the user layout configuration in {@link setLiveTranscoding}. */
-trait TranscodingUser extends js.Object {
+trait TranscodingUser extends StObject {
+  
   /**
-    * Transparency of the video frame.
+    * The transparency level of the video frame.
     *
     * The value ranges between 0.0 and 1.0:
     *
     * - 0.0: Completely transparent.
-    * - 1.0: (Default) Opaque.
+    * - 1.0: Opaque.
     */
-  var alpha: js.UndefOr[Double] = js.undefined
+  var alpha: Double
+  
   /**
-    * Height of the video.
-    *
-    * Integer only. The value range is [0,10000], and the default value is 640.
-    */
-  var height: js.UndefOr[Double] = js.undefined
-  /** User ID of the CDN live host. */
-  var uid: js.UndefOr[Double | String] = js.undefined
-  /**
-    * Width of the video.
+    * The height of the video.
     *
     * Integer only. The value range is [0,10000], and the default value is 360.
     */
+  var height: js.UndefOr[Double] = js.undefined
+  
+  /** The user ID of the CDN live host. */
+  var uid: js.UndefOr[Double | String] = js.undefined
+  
+  /**
+    * The width of the video.
+    *
+    * Integer only. The value range is [0,10000], and the default value is 640.
+    */
   var width: js.UndefOr[Double] = js.undefined
+  
   /**
     * The position of the upper left end of the video on the horizontal axis.
     *
     * Integer only. The value range is [0,10000], and the default value is 0.
     */
   var x: js.UndefOr[Double] = js.undefined
+  
   /**
     * The position of the upper left end of the video on the vertical axis.
     *
     * Integer only. The value range is [0,10000], and the default value is 0.
     */
   var y: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Layer position of the video frame.
+    * The layer index of the video frame.
     *
     * Integer only. The value range is [0,100].
     *
     * From v2.3.0, Agora SDK supports setting zOrder as 0.
     *
-    * - 0: (Default) Lowest.
-    * - 100: Highest.
+    * - 0: (Default) Bottom layer.
+    * - 100: Top layer.
     *
     */
   var zOrder: js.UndefOr[Double] = js.undefined
 }
-
 object TranscodingUser {
-  @scala.inline
-  def apply(
-    alpha: Int | Double = null,
-    height: Int | Double = null,
-    uid: Double | String = null,
-    width: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null,
-    zOrder: Int | Double = null
-  ): TranscodingUser = {
-    val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (zOrder != null) __obj.updateDynamic("zOrder")(zOrder.asInstanceOf[js.Any])
+  
+  inline def apply(alpha: Double): TranscodingUser = {
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranscodingUser]
   }
+  
+  extension [Self <: TranscodingUser](x: Self) {
+    
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setUid(value: Double | String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    
+    inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    
+    inline def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
+    
+    inline def setZOrderUndefined: Self = StObject.set(x, "zOrder", js.undefined)
+  }
 }
-

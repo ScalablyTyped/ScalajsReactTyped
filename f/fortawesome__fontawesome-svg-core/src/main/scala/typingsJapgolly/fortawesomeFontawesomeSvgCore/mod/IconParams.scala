@@ -1,36 +1,45 @@
 package typingsJapgolly.fortawesomeFontawesomeSvgCore.mod
 
 import typingsJapgolly.fortawesomeFontawesomeCommonTypes.mod.IconLookup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IconParams extends Params {
+trait IconParams
+  extends StObject
+     with Params {
+  
   var mask: js.UndefOr[IconLookup] = js.undefined
+  
+  var maskId: js.UndefOr[String] = js.undefined
+  
   var symbol: js.UndefOr[FaSymbol] = js.undefined
+  
   var transform: js.UndefOr[Transform] = js.undefined
 }
-
 object IconParams {
-  @scala.inline
-  def apply(
-    attributes: Attributes = null,
-    classes: String | js.Array[String] = null,
-    mask: IconLookup = null,
-    styles: Styles = null,
-    symbol: FaSymbol = null,
-    title: String = null,
-    transform: Transform = null
-  ): IconParams = {
+  
+  inline def apply(): IconParams = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconParams]
   }
+  
+  extension [Self <: IconParams](x: Self) {
+    
+    inline def setMask(value: IconLookup): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    
+    inline def setMaskId(value: String): Self = StObject.set(x, "maskId", value.asInstanceOf[js.Any])
+    
+    inline def setMaskIdUndefined: Self = StObject.set(x, "maskId", js.undefined)
+    
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    
+    inline def setSymbol(value: FaSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    
+    inline def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+  }
 }
-

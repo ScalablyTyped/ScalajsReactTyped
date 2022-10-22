@@ -1,18 +1,17 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <feGaussianBlur> element. */
 @js.native
 trait SVGFEGaussianBlurElement
-  extends SVGElement
+  extends StObject
+     with SVGElement
      with SVGFilterPrimitiveStandardAttributes {
-  val in1: org.scalajs.dom.raw.SVGAnimatedString = js.native
-  val stdDeviationX: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val stdDeviationY: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -23,20 +22,28 @@ trait SVGFEGaussianBlurElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  /* standard dom */
+  val in1: org.scalajs.dom.SVGAnimatedString = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,
     listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
+    options: org.scalajs.dom.EventListenerOptions
   ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  
+  /* standard dom */
   def setStdDeviation(stdDeviationX: Double, stdDeviationY: Double): Unit = js.native
+  
+  /* standard dom */
+  val stdDeviationX: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  val stdDeviationY: org.scalajs.dom.SVGAnimatedNumber = js.native
 }
-
-@JSGlobal("SVGFEGaussianBlurElement")
-@js.native
-object SVGFEGaussianBlurElement extends Instantiable0[SVGFEGaussianBlurElement]
-

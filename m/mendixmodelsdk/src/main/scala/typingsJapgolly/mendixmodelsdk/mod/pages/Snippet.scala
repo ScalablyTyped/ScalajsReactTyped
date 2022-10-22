@@ -1,19 +1,19 @@
 package typingsJapgolly.mendixmodelsdk.mod.pages
 
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typingsJapgolly.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typingsJapgolly.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/snippet relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/snippet relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk", "pages.Snippet")
 @js.native
-class Snippet protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.pages.Snippet {
+open class Snippet protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.pages.Snippet {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -22,17 +22,28 @@ class Snippet protected ()
     container: IFolderBase
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "pages.Snippet")
-@js.native
-object Snippet extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object Snippet {
+  
+  @JSImport("mendixmodelsdk", "pages.Snippet")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Snippet unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
-  def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.pagesMod.pages.Snippet = js.native
+  /* static member */
+  inline def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.Snippet = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.Snippet]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.Snippet.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.Snippet.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

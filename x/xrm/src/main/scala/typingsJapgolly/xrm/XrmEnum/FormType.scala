@@ -1,56 +1,52 @@
 package typingsJapgolly.xrm.XrmEnum
 
-import typingsJapgolly.xrm.xrmNumbers.`0`
-import typingsJapgolly.xrm.xrmNumbers.`11`
-import typingsJapgolly.xrm.xrmNumbers.`1`
-import typingsJapgolly.xrm.xrmNumbers.`2`
-import typingsJapgolly.xrm.xrmNumbers.`3`
-import typingsJapgolly.xrm.xrmNumbers.`4`
-import typingsJapgolly.xrm.xrmNumbers.`5`
-import typingsJapgolly.xrm.xrmNumbers.`6`
+import typingsJapgolly.xrm.xrmInts.`0`
+import typingsJapgolly.xrm.xrmInts.`11`
+import typingsJapgolly.xrm.xrmInts.`1`
+import typingsJapgolly.xrm.xrmInts.`2`
+import typingsJapgolly.xrm.xrmInts.`3`
+import typingsJapgolly.xrm.xrmInts.`4`
+import typingsJapgolly.xrm.xrmInts.`5`
+import typingsJapgolly.xrm.xrmInts.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enumeration of entity form states/types.
   */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.xrm.xrmNumbers.`0`
-  - typingsJapgolly.xrm.xrmNumbers.`1`
-  - typingsJapgolly.xrm.xrmNumbers.`2`
-  - typingsJapgolly.xrm.xrmNumbers.`3`
-  - typingsJapgolly.xrm.xrmNumbers.`4`
-  - typingsJapgolly.xrm.xrmNumbers.`6`
-  - typingsJapgolly.xrm.xrmNumbers.`5`
-  - typingsJapgolly.xrm.xrmNumbers.`11`
+  - typingsJapgolly.xrm.xrmInts.`0`
+  - typingsJapgolly.xrm.xrmInts.`1`
+  - typingsJapgolly.xrm.xrmInts.`2`
+  - typingsJapgolly.xrm.xrmInts.`3`
+  - typingsJapgolly.xrm.xrmInts.`4`
+  - typingsJapgolly.xrm.xrmInts.`6`
+  - typingsJapgolly.xrm.xrmInts.`5`
+  - typingsJapgolly.xrm.xrmInts.`11`
 */
-trait FormType extends js.Object
-
+trait FormType extends StObject
 object FormType {
-  @scala.inline
-  def BulkEdit: `6` = this.cast(6)
-  @scala.inline
-  def Create: `1` = this.cast(1)
-  @scala.inline
-  def Disabled: `4` = this.cast(4)
+  
+  inline def BulkEdit: `6` = 6.asInstanceOf[`6`]
+  
+  inline def Create: `1` = 1.asInstanceOf[`1`]
+  
+  inline def Disabled: `4` = 4.asInstanceOf[`4`]
+  
   /**
     * @deprecated QuickCreate has been deprecated
     */
-  @scala.inline
-  def QuickCreate: `5` = this.cast(5)
-  @scala.inline
-  def ReadOnly: `3` = this.cast(3)
+  inline def QuickCreate: `5` = 5.asInstanceOf[`5`]
+  
+  inline def ReadOnly: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * @deprecated ReadOptimized has been deprecated.
     */
-  @scala.inline
-  def ReadOptimized: `11` = this.cast(11)
-  @scala.inline
-  def Undefined: `0` = this.cast(0)
-  @scala.inline
-  def Update: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  inline def ReadOptimized: `11` = 11.asInstanceOf[`11`]
+  
+  inline def Undefined: `0` = 0.asInstanceOf[`0`]
+  
+  inline def Update: `2` = 2.asInstanceOf[`2`]
 }
-

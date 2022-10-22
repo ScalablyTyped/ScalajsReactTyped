@@ -1,29 +1,27 @@
 package typingsJapgolly.instabugReactnative.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait colorTheme extends js.Object
-
+sealed trait colorTheme extends StObject
 @JSImport("instabug-reactnative", "colorTheme")
 @js.native
-object colorTheme extends js.Object {
-  @js.native
-  sealed trait dark extends colorTheme
-  
-  @js.native
-  sealed trait light extends colorTheme
+object colorTheme extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[colorTheme with Double] = js.native
-  /* 1 */ @js.native
-  object dark extends TopLevel[dark with Double]
+  def apply(value: Double): js.UndefOr[colorTheme & Double] = js.native
   
-  /* 0 */ @js.native
-  object light extends TopLevel[light with Double]
+  @js.native
+  sealed trait dark
+    extends StObject
+       with colorTheme
+  /* 1 */ val dark: typingsJapgolly.instabugReactnative.mod.colorTheme.dark & Double = js.native
   
+  @js.native
+  sealed trait light
+    extends StObject
+       with colorTheme
+  /* 0 */ val light: typingsJapgolly.instabugReactnative.mod.colorTheme.light & Double = js.native
 }
-

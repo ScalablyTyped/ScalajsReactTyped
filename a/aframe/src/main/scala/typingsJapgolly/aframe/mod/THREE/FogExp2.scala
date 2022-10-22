@@ -1,13 +1,13 @@
 package typingsJapgolly.aframe.mod.THREE
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.FogExp2")
 @js.native
-class FogExp2 protected ()
+open class FogExp2 protected ()
   extends typingsJapgolly.three.mod.FogExp2 {
   def this(hex: Double) = this()
 }
-

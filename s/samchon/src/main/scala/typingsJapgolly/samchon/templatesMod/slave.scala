@@ -1,19 +1,19 @@
 package typingsJapgolly.samchon.templatesMod
 
-import typingsJapgolly.samchon.invokeMod.Invoke
+import typingsJapgolly.samchon.protocolInvokeInvokeMod.Invoke
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates", "slave")
-@js.native
-object slave extends js.Object {
+object slave {
+  
+  @JSImport("samchon/templates", "slave.InvokeHistory")
   @js.native
   /**
     * Default Constructor.
     */
-  class InvokeHistory ()
-    extends typingsJapgolly.samchon.slaveMod.InvokeHistory {
+  open class InvokeHistory ()
+    extends typingsJapgolly.samchon.templatesSlaveMod.InvokeHistory {
     /**
       * Construct from an {@link Invoke} message.
       *
@@ -22,9 +22,10 @@ object slave extends js.Object {
     def this(invoke: Invoke) = this()
   }
   
+  @JSImport("samchon/templates", "slave.PInvoke")
   @js.native
-  class PInvoke protected ()
-    extends typingsJapgolly.samchon.slaveMod.PInvoke {
+  open class PInvoke protected ()
+    extends typingsJapgolly.samchon.templatesSlaveMod.PInvoke {
     /**
       * Initializer Constructor.
       *
@@ -34,31 +35,32 @@ object slave extends js.Object {
       */
     def this(
       invoke: Invoke,
-      history: typingsJapgolly.samchon.invokeHistoryMod.InvokeHistory,
-      slaveSystem: typingsJapgolly.samchon.slaveSystemMod.SlaveSystem
+      history: typingsJapgolly.samchon.templatesSlaveInvokeHistoryMod.InvokeHistory,
+      slaveSystem: typingsJapgolly.samchon.templatesSlaveSlaveSystemMod.SlaveSystem
     ) = this()
   }
   
+  /* note: abstract class */ @JSImport("samchon/templates", "slave.SlaveClient")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class SlaveClient ()
-    extends typingsJapgolly.samchon.slaveMod.SlaveClient
+  open class SlaveClient ()
+    extends typingsJapgolly.samchon.templatesSlaveMod.SlaveClient
   
+  /* note: abstract class */ @JSImport("samchon/templates", "slave.SlaveServer")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class SlaveServer ()
-    extends typingsJapgolly.samchon.slaveMod.SlaveServer
+  open class SlaveServer ()
+    extends typingsJapgolly.samchon.templatesSlaveMod.SlaveServer
   
+  /* note: abstract class */ @JSImport("samchon/templates", "slave.SlaveSystem")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class SlaveSystem ()
-    extends typingsJapgolly.samchon.slaveMod.SlaveSystem
-  
+  open class SlaveSystem ()
+    extends typingsJapgolly.samchon.templatesSlaveMod.SlaveSystem
 }
-

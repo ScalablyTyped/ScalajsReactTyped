@@ -1,23 +1,32 @@
 package typingsJapgolly.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThresholdOptions extends js.Object {
+trait ThresholdOptions extends StObject {
+  
   /** alternative spelling for greyscale. (optional, default true) */
   var grayscale: js.UndefOr[Boolean] = js.undefined
+  
   /** convert to single channel greyscale. (optional, default true) */
   var greyscale: js.UndefOr[Boolean] = js.undefined
 }
-
 object ThresholdOptions {
-  @scala.inline
-  def apply(grayscale: js.UndefOr[Boolean] = js.undefined, greyscale: js.UndefOr[Boolean] = js.undefined): ThresholdOptions = {
+  
+  inline def apply(): ThresholdOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(grayscale)) __obj.updateDynamic("grayscale")(grayscale.asInstanceOf[js.Any])
-    if (!js.isUndefined(greyscale)) __obj.updateDynamic("greyscale")(greyscale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThresholdOptions]
   }
+  
+  extension [Self <: ThresholdOptions](x: Self) {
+    
+    inline def setGrayscale(value: Boolean): Self = StObject.set(x, "grayscale", value.asInstanceOf[js.Any])
+    
+    inline def setGrayscaleUndefined: Self = StObject.set(x, "grayscale", js.undefined)
+    
+    inline def setGreyscale(value: Boolean): Self = StObject.set(x, "greyscale", value.asInstanceOf[js.Any])
+    
+    inline def setGreyscaleUndefined: Self = StObject.set(x, "greyscale", js.undefined)
+  }
 }
-

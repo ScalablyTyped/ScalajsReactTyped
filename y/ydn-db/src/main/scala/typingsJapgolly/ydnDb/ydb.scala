@@ -1,40 +1,22 @@
 package typingsJapgolly.ydnDb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ydb")
-@js.native
-object ydb extends js.Object {
-  @js.native
-  object db extends js.Object {
-    @js.native
-    object algo extends js.Object {
-      @js.native
-      class NestedLoop protected () extends Solver {
-        def this(out: AnonPush) = this()
-        def this(out: AnonPush, limit: Double) = this()
-      }
-      
-      @js.native
-      class Solver () extends js.Object
-      
-      @js.native
-      class SortedMerge protected () extends Solver {
-        def this(out: AnonPush) = this()
-        def this(out: AnonPush, limit: Double) = this()
-      }
-      
-      @js.native
-      class ZigzagMerge protected () extends Solver {
-        def this(out: AnonPush) = this()
-        def this(out: AnonPush, limit: Double) = this()
-      }
-      
-    }
-    
-  }
+object ydb {
   
+  object db {
+    
+    object algo {
+      
+      type NestedLoop = Solver
+      
+      trait Solver extends StObject
+      
+      type SortedMerge = Solver
+      
+      type ZigzagMerge = Solver
+    }
+  }
 }
-

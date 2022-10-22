@@ -1,26 +1,31 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Runtime object, for use in `runtime.set({ ... })`. */
-trait RuntimeUpdateData extends js.Object {
+trait RuntimeUpdateData extends StObject {
+  
   /**
-    *
     * Toggle JavaScript events in the current task pane or content add-in.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var enableEvents: js.UndefOr[Boolean] = js.undefined
 }
-
 object RuntimeUpdateData {
-  @scala.inline
-  def apply(enableEvents: js.UndefOr[Boolean] = js.undefined): RuntimeUpdateData = {
+  
+  inline def apply(): RuntimeUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableEvents)) __obj.updateDynamic("enableEvents")(enableEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeUpdateData]
   }
+  
+  extension [Self <: RuntimeUpdateData](x: Self) {
+    
+    inline def setEnableEvents(value: Boolean): Self = StObject.set(x, "enableEvents", value.asInstanceOf[js.Any])
+    
+    inline def setEnableEventsUndefined: Self = StObject.set(x, "enableEvents", js.undefined)
+  }
 }
-

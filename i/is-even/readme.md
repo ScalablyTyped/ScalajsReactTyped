@@ -11,9 +11,9 @@ Return true if the given number is even.
 | Full name          | is-even |
 | Keywords           | array, count, even, filter, integer, is, math, numeric, odd, string |
 | # releases         | 1 |
-| # dependents       | 13 |
-| # downloads        | 2481782 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 827070.0 |
+| # stars            | 162.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/is-even)

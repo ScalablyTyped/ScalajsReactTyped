@@ -1,18 +1,39 @@
 package typingsJapgolly.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxLoggingOptions Class */
-@JSGlobal("FAXCOMEXLib.FaxLoggingOptions")
-@js.native
-class FaxLoggingOptions protected () extends js.Object {
+trait FaxLoggingOptions extends StObject {
+  
   /** Activity logging configuration object */
-  val ActivityLogging: FaxActivityLogging = js.native
+  val ActivityLogging: FaxActivityLogging
+  
   /** Event logging configuration object */
-  val EventLogging: FaxEventLogging = js.native
-  @JSName("FAXCOMEXLib.FaxLoggingOptions_typekey")
-  var FAXCOMEXLibDotFaxLoggingOptions_typekey: FaxLoggingOptions = js.native
+  val EventLogging: FaxEventLogging
+  
+  /* private */ @JSName("FAXCOMEXLib.FaxLoggingOptions_typekey")
+  var FAXCOMEXLibDotFaxLoggingOptions_typekey: FaxLoggingOptions
 }
-
+object FaxLoggingOptions {
+  
+  inline def apply(
+    ActivityLogging: FaxActivityLogging,
+    EventLogging: FaxEventLogging,
+    FAXCOMEXLibDotFaxLoggingOptions_typekey: FaxLoggingOptions
+  ): FaxLoggingOptions = {
+    val __obj = js.Dynamic.literal(ActivityLogging = ActivityLogging.asInstanceOf[js.Any], EventLogging = EventLogging.asInstanceOf[js.Any])
+    __obj.updateDynamic("FAXCOMEXLib.FaxLoggingOptions_typekey")(FAXCOMEXLibDotFaxLoggingOptions_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FaxLoggingOptions]
+  }
+  
+  extension [Self <: FaxLoggingOptions](x: Self) {
+    
+    inline def setActivityLogging(value: FaxActivityLogging): Self = StObject.set(x, "ActivityLogging", value.asInstanceOf[js.Any])
+    
+    inline def setEventLogging(value: FaxEventLogging): Self = StObject.set(x, "EventLogging", value.asInstanceOf[js.Any])
+    
+    inline def setFAXCOMEXLibDotFaxLoggingOptions_typekey(value: FaxLoggingOptions): Self = StObject.set(x, "FAXCOMEXLib.FaxLoggingOptions_typekey", value.asInstanceOf[js.Any])
+  }
+}

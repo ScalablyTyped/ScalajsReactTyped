@@ -2,27 +2,18 @@ package typingsJapgolly.reactJsonschemaForm.mod
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-jsonschema-form.react-jsonschema-form.FieldValidation & {[fieldName: string] : react-jsonschema-form.react-jsonschema-form.FieldValidation} */
-trait FormValidation extends /* fieldName */ StringDictionary[FieldValidation] {
-  var __errors: js.Array[FieldError]
-  def addError(message: String): Unit
-}
-
+trait FormValidation
+  extends StObject
+     with FieldValidation
+     with /* fieldName */ StringDictionary[FieldValidation]
 object FormValidation {
-  @scala.inline
-  def apply(
-    __errors: js.Array[FieldError],
-    addError: String => Callback,
-    StringDictionary: /* fieldName */ StringDictionary[FieldValidation] = null
-  ): FormValidation = {
-    val __obj = js.Dynamic.literal(__errors = __errors.asInstanceOf[js.Any])
-    __obj.updateDynamic("addError")(js.Any.fromFunction1((t0: java.lang.String) => addError(t0).runNow()))
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+  
+  inline def apply(__errors: js.Array[FieldError], addError: String => Callback): FormValidation = {
+    val __obj = js.Dynamic.literal(__errors = __errors.asInstanceOf[js.Any], addError = js.Any.fromFunction1((t0: String) => addError(t0).runNow()))
     __obj.asInstanceOf[FormValidation]
   }
 }
-

@@ -1,27 +1,41 @@
 package typingsJapgolly.awsSdkClientPinpointBrowser
 
-import typingsJapgolly.awsSdkClientPinpointBrowser.outputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientPinpointBrowser.typesApplicationResponseMod.UnmarshalledApplicationResponse
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientPinpointBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/types/DeleteAppOutput", JSImport.Namespace)
-@js.native
-object typesDeleteAppOutputMod extends js.Object {
-  @js.native
-  trait DeleteAppOutput extends OutputTypesUnion {
+object typesDeleteAppOutputMod {
+  
+  trait DeleteAppOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * Application Response.
       */
-    var ApplicationResponse: UnmarshalledApplicationResponse = js.native
+    var ApplicationResponse: UnmarshalledApplicationResponse
   }
-  
+  object DeleteAppOutput {
+    
+    inline def apply($metadata: ResponseMetadata, ApplicationResponse: UnmarshalledApplicationResponse): DeleteAppOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ApplicationResponse = ApplicationResponse.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DeleteAppOutput]
+    }
+    
+    extension [Self <: DeleteAppOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setApplicationResponse(value: UnmarshalledApplicationResponse): Self = StObject.set(x, "ApplicationResponse", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

@@ -1,39 +1,57 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxChartValueAxisStrips extends dxChartCommonAxisSettingsStripStyle {
-  /** Specifies the color of the strip. */
+trait dxChartValueAxisStrips
+  extends StObject
+     with dxChartCommonAxisSettingsStripStyle {
+  
+  /**
+    * Specifies the color of the strip.
+    */
   var color: js.UndefOr[String] = js.undefined
-  /** Along with the startValue option, limits the strip. */
+  
+  /**
+    * Along with the startValue property, limits the strip.
+    */
   var endValue: js.UndefOr[Double | js.Date | String] = js.undefined
-  /** Configures the strip label. */
+  
+  /**
+    * Configures the strip label.
+    */
   @JSName("label")
   var label_dxChartValueAxisStrips: js.UndefOr[dxChartValueAxisStripsLabel] = js.undefined
-  /** Along with the endValue option, limits the strip. */
+  
+  /**
+    * Along with the endValue property, limits the strip.
+    */
   var startValue: js.UndefOr[Double | js.Date | String] = js.undefined
 }
-
 object dxChartValueAxisStrips {
-  @scala.inline
-  def apply(
-    color: String = null,
-    endValue: Double | js.Date | String = null,
-    label: dxChartValueAxisStripsLabel = null,
-    paddingLeftRight: Int | Double = null,
-    paddingTopBottom: Int | Double = null,
-    startValue: Double | js.Date | String = null
-  ): dxChartValueAxisStrips = {
+  
+  inline def apply(): dxChartValueAxisStrips = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (paddingLeftRight != null) __obj.updateDynamic("paddingLeftRight")(paddingLeftRight.asInstanceOf[js.Any])
-    if (paddingTopBottom != null) __obj.updateDynamic("paddingTopBottom")(paddingTopBottom.asInstanceOf[js.Any])
-    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartValueAxisStrips]
   }
+  
+  extension [Self <: dxChartValueAxisStrips](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setEndValue(value: Double | js.Date | String): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+    
+    inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
+    
+    inline def setLabel(value: dxChartValueAxisStripsLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setStartValue(value: Double | js.Date | String): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+    
+    inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
+  }
 }
-

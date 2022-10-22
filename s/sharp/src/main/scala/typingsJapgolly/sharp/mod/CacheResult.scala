@@ -1,23 +1,32 @@
 package typingsJapgolly.sharp.mod
 
-import typingsJapgolly.sharp.AnonCurrent
-import typingsJapgolly.sharp.AnonMax
+import typingsJapgolly.sharp.anon.Current
+import typingsJapgolly.sharp.anon.Max
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CacheResult extends js.Object {
-  var files: AnonMax
-  var items: AnonMax
-  var memory: AnonCurrent
-}
-
-object CacheResult {
-  @scala.inline
-  def apply(files: AnonMax, items: AnonMax, memory: AnonCurrent): CacheResult = {
-    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any])
+trait CacheResult extends StObject {
   
+  var files: Max
+  
+  var items: Max
+  
+  var memory: Current
+}
+object CacheResult {
+  
+  inline def apply(files: Max, items: Max, memory: Current): CacheResult = {
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheResult]
   }
+  
+  extension [Self <: CacheResult](x: Self) {
+    
+    inline def setFiles(value: Max): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    
+    inline def setItems(value: Max): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setMemory(value: Current): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+  }
 }
-

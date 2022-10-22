@@ -10,10 +10,10 @@ A simple react-native component to wrap your form fields!
 | ------------------ | :-------------: |
 | Full name          | react-native-form |
 | Keywords           | react-component, react-native, react native form, android, ios |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 22021 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4257.0 |
+| # stars            | 146.0 |
 
 ## Links
 - [Homepage](https://github.com/julianocomg/react-native-form#readme)

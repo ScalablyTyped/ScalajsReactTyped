@@ -1,21 +1,17 @@
 package typingsJapgolly.loginWithAmazonSdkBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.token
   - typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.code
 */
-trait AuthorizeResponseType extends js.Object
-
+trait AuthorizeResponseType extends StObject
 object AuthorizeResponseType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def code: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.code = this.cast("code")
-  @scala.inline
-  def token: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.token = this.cast("token")
+  
+  inline def code: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.code = "code".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.code]
+  
+  inline def token: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.token = "token".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.token]
 }
-

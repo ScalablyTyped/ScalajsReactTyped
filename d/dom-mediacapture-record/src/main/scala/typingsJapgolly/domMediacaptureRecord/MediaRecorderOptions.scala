@@ -1,30 +1,48 @@
 package typingsJapgolly.domMediacaptureRecord
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaRecorderOptions extends js.Object {
+trait MediaRecorderOptions extends StObject {
+  
+  var audioBitrateMode: js.UndefOr[BitrateMode] = js.undefined
+  
   var audioBitsPerSecond: js.UndefOr[Double] = js.undefined
+  
   var bitsPerSecond: js.UndefOr[Double] = js.undefined
+  
   var mimeType: js.UndefOr[String] = js.undefined
+  
   var videoBitsPerSecond: js.UndefOr[Double] = js.undefined
 }
-
 object MediaRecorderOptions {
-  @scala.inline
-  def apply(
-    audioBitsPerSecond: Int | Double = null,
-    bitsPerSecond: Int | Double = null,
-    mimeType: String = null,
-    videoBitsPerSecond: Int | Double = null
-  ): MediaRecorderOptions = {
+  
+  inline def apply(): MediaRecorderOptions = {
     val __obj = js.Dynamic.literal()
-    if (audioBitsPerSecond != null) __obj.updateDynamic("audioBitsPerSecond")(audioBitsPerSecond.asInstanceOf[js.Any])
-    if (bitsPerSecond != null) __obj.updateDynamic("bitsPerSecond")(bitsPerSecond.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (videoBitsPerSecond != null) __obj.updateDynamic("videoBitsPerSecond")(videoBitsPerSecond.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaRecorderOptions]
   }
+  
+  extension [Self <: MediaRecorderOptions](x: Self) {
+    
+    inline def setAudioBitrateMode(value: BitrateMode): Self = StObject.set(x, "audioBitrateMode", value.asInstanceOf[js.Any])
+    
+    inline def setAudioBitrateModeUndefined: Self = StObject.set(x, "audioBitrateMode", js.undefined)
+    
+    inline def setAudioBitsPerSecond(value: Double): Self = StObject.set(x, "audioBitsPerSecond", value.asInstanceOf[js.Any])
+    
+    inline def setAudioBitsPerSecondUndefined: Self = StObject.set(x, "audioBitsPerSecond", js.undefined)
+    
+    inline def setBitsPerSecond(value: Double): Self = StObject.set(x, "bitsPerSecond", value.asInstanceOf[js.Any])
+    
+    inline def setBitsPerSecondUndefined: Self = StObject.set(x, "bitsPerSecond", js.undefined)
+    
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    
+    inline def setVideoBitsPerSecond(value: Double): Self = StObject.set(x, "videoBitsPerSecond", value.asInstanceOf[js.Any])
+    
+    inline def setVideoBitsPerSecondUndefined: Self = StObject.set(x, "videoBitsPerSecond", js.undefined)
+  }
 }
-

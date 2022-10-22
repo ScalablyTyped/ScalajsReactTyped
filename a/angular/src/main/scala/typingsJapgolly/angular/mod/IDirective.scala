@@ -1,86 +1,150 @@
 package typingsJapgolly.angular.mod
 
-import japgolly.scalajs.react.CallbackTo
+import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.angular.JQLite
 import typingsJapgolly.angular.angularStrings.element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDirective[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] extends js.Object {
+trait IDirective[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] extends StObject {
+  
   /**
     * Deprecation warning: although bindings for non-ES6 class controllers are currently bound to this before
     * the controller constructor is called, this use is now deprecated. Please place initialization code that
     * relies upon bindings inside a $onInit method on the controller, instead.
     */
   var bindToController: js.UndefOr[Boolean | StringDictionary[String]] = js.undefined
+  
   var compile: js.UndefOr[IDirectiveCompileFn[TScope, TElement, TAttributes, TController]] = js.undefined
+  
   var controller: js.UndefOr[String | Injectable[IControllerConstructor]] = js.undefined
+  
   var controllerAs: js.UndefOr[String] = js.undefined
+  
   var link: js.UndefOr[
     (IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (IDirectivePrePost[TScope, TElement, TAttributes, TController])
   ] = js.undefined
+  
   var multiElement: js.UndefOr[Boolean] = js.undefined
+  
   var priority: js.UndefOr[Double] = js.undefined
+  
   /**
     * @deprecated
     */
   var replace: js.UndefOr[Boolean] = js.undefined
+  
   var require: js.UndefOr[String | js.Array[String] | StringDictionary[String]] = js.undefined
+  
   var restrict: js.UndefOr[String] = js.undefined
+  
   var scope: js.UndefOr[Boolean | StringDictionary[String]] = js.undefined
+  
   var template: js.UndefOr[
     String | (js.Function2[/* tElement */ TElement, /* tAttrs */ TAttributes, String])
   ] = js.undefined
+  
   var templateNamespace: js.UndefOr[String] = js.undefined
+  
   var templateUrl: js.UndefOr[
     String | (js.Function2[/* tElement */ TElement, /* tAttrs */ TAttributes, String])
   ] = js.undefined
+  
   var terminal: js.UndefOr[Boolean] = js.undefined
+  
   var transclude: js.UndefOr[Boolean | element | StringDictionary[String]] = js.undefined
 }
-
 object IDirective {
-  @scala.inline
-  def apply[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](
-    bindToController: Boolean | StringDictionary[String] = null,
-    compile: (TElement, TAttributes, /* transclude */ ITranscludeFunction) => CallbackTo[
-      Unit | (IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (IDirectivePrePost[TScope, TElement, TAttributes, TController])
-    ] = null,
-    controller: String | Injectable[IControllerConstructor] = null,
-    controllerAs: String = null,
-    link: (IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (IDirectivePrePost[TScope, TElement, TAttributes, TController]) = null,
-    multiElement: js.UndefOr[Boolean] = js.undefined,
-    priority: Int | Double = null,
-    replace: js.UndefOr[Boolean] = js.undefined,
-    require: String | js.Array[String] | StringDictionary[String] = null,
-    restrict: String = null,
-    scope: Boolean | StringDictionary[String] = null,
-    template: String | (js.Function2[/* tElement */ TElement, /* tAttrs */ TAttributes, String]) = null,
-    templateNamespace: String = null,
-    templateUrl: String | (js.Function2[/* tElement */ TElement, /* tAttrs */ TAttributes, String]) = null,
-    terminal: js.UndefOr[Boolean] = js.undefined,
-    transclude: Boolean | element | StringDictionary[String] = null
-  ): IDirective[TScope, TElement, TAttributes, TController] = {
+  
+  inline def apply[TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](): IDirective[TScope, TElement, TAttributes, TController] = {
     val __obj = js.Dynamic.literal()
-    if (bindToController != null) __obj.updateDynamic("bindToController")(bindToController.asInstanceOf[js.Any])
-    if (compile != null) __obj.updateDynamic("compile")(js.Any.fromFunction3((t0: TElement, t1: TAttributes, t2: /* transclude */ typingsJapgolly.angular.mod.ITranscludeFunction) => compile(t0, t1, t2).runNow()))
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiElement)) __obj.updateDynamic("multiElement")(multiElement.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
-    if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
-    if (restrict != null) __obj.updateDynamic("restrict")(restrict.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (templateNamespace != null) __obj.updateDynamic("templateNamespace")(templateNamespace.asInstanceOf[js.Any])
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
-    if (transclude != null) __obj.updateDynamic("transclude")(transclude.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDirective[TScope, TElement, TAttributes, TController]]
   }
+  
+  extension [Self <: IDirective[?, ?, ?, ?], TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](x: Self & (IDirective[TScope, TElement, TAttributes, TController])) {
+    
+    inline def setBindToController(value: Boolean | StringDictionary[String]): Self = StObject.set(x, "bindToController", value.asInstanceOf[js.Any])
+    
+    inline def setBindToControllerUndefined: Self = StObject.set(x, "bindToController", js.undefined)
+    
+    inline def setCompile(
+      value: (TElement, TAttributes, /* transclude */ ITranscludeFunction) => Unit | (IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (IDirectivePrePost[TScope, TElement, TAttributes, TController])
+    ): Self = StObject.set(x, "compile", js.Any.fromFunction3(value))
+    
+    inline def setCompileUndefined: Self = StObject.set(x, "compile", js.undefined)
+    
+    inline def setController(value: String | Injectable[IControllerConstructor]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    
+    inline def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
+    
+    inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
+    
+    inline def setControllerFunction1(value: /* repeated */ Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
+    
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    
+    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value*))
+    
+    inline def setLink(
+      value: (IDirectiveLinkFn[TScope, TElement, TAttributes, TController]) | (IDirectivePrePost[TScope, TElement, TAttributes, TController])
+    ): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    
+    inline def setLinkFunction5(
+      value: (TScope, TElement, TAttributes, /* controller */ js.UndefOr[TController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Callback
+    ): Self = StObject.set(x, "link", js.Any.fromFunction5((t0: TScope, t1: TElement, t2: TAttributes, t3: /* controller */ js.UndefOr[TController], t4: /* transclude */ js.UndefOr[ITranscludeFunction]) => (value(t0, t1, t2, t3, t4)).runNow()))
+    
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    
+    inline def setMultiElement(value: Boolean): Self = StObject.set(x, "multiElement", value.asInstanceOf[js.Any])
+    
+    inline def setMultiElementUndefined: Self = StObject.set(x, "multiElement", js.undefined)
+    
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    
+    inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    
+    inline def setRequire(value: String | js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+    
+    inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
+    
+    inline def setRequireVarargs(value: String*): Self = StObject.set(x, "require", js.Array(value*))
+    
+    inline def setRestrict(value: String): Self = StObject.set(x, "restrict", value.asInstanceOf[js.Any])
+    
+    inline def setRestrictUndefined: Self = StObject.set(x, "restrict", js.undefined)
+    
+    inline def setScope(value: Boolean | StringDictionary[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setTemplate(value: String | (js.Function2[/* tElement */ TElement, /* tAttrs */ TAttributes, String])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateFunction2(value: (/* tElement */ TElement, /* tAttrs */ TAttributes) => String): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    
+    inline def setTemplateNamespace(value: String): Self = StObject.set(x, "templateNamespace", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateNamespaceUndefined: Self = StObject.set(x, "templateNamespace", js.undefined)
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setTemplateUrl(value: String | (js.Function2[/* tElement */ TElement, /* tAttrs */ TAttributes, String])): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUrlFunction2(value: (/* tElement */ TElement, /* tAttrs */ TAttributes) => String): Self = StObject.set(x, "templateUrl", js.Any.fromFunction2(value))
+    
+    inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+    
+    inline def setTerminal(value: Boolean): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
+    
+    inline def setTerminalUndefined: Self = StObject.set(x, "terminal", js.undefined)
+    
+    inline def setTransclude(value: Boolean | element | StringDictionary[String]): Self = StObject.set(x, "transclude", value.asInstanceOf[js.Any])
+    
+    inline def setTranscludeUndefined: Self = StObject.set(x, "transclude", js.undefined)
+  }
 }
-

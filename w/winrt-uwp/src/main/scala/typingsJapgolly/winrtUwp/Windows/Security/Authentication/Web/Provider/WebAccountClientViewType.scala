@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Security.Authentication.Web.Provider
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WebAccountClientViewType extends js.Object
-
+sealed trait WebAccountClientViewType extends StObject
 /** Represents the levels of information about a web account shown to the client. */
 @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountClientViewType")
 @js.native
-object WebAccountClientViewType extends js.Object {
+object WebAccountClientViewType extends StObject {
+  
   /** Shows the Id and properties. */
   @js.native
-  sealed trait idAndProperties extends WebAccountClientViewType
+  sealed trait idAndProperties
+    extends StObject
+       with WebAccountClientViewType
   
   /** Shows only the Id. */
   @js.native
-  sealed trait idOnly extends WebAccountClientViewType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WebAccountClientViewType with Double] = js.native
-  /* 1 */ @js.native
-  object idAndProperties extends TopLevel[idAndProperties with Double]
-  
-  /* 0 */ @js.native
-  object idOnly extends TopLevel[idOnly with Double]
-  
+  sealed trait idOnly
+    extends StObject
+       with WebAccountClientViewType
 }
-

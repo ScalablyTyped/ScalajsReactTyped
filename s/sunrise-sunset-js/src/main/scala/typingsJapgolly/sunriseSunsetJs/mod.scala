@@ -1,15 +1,18 @@
 package typingsJapgolly.sunriseSunsetJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sunrise-sunset-js", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def getSunrise(latitude: Double, longitude: Double): js.Date = js.native
-  def getSunrise(latitude: Double, longitude: Double, date: js.Date): js.Date = js.native
-  def getSunset(latitude: Double, longitude: Double): js.Date = js.native
-  def getSunset(latitude: Double, longitude: Double, date: js.Date): js.Date = js.native
+object mod {
+  
+  @JSImport("sunrise-sunset-js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getSunrise(latitude: Double, longitude: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getSunrise")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  inline def getSunrise(latitude: Double, longitude: Double, date: js.Date): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getSunrise")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  
+  inline def getSunset(latitude: Double, longitude: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getSunset")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  inline def getSunset(latitude: Double, longitude: Double, date: js.Date): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getSunset")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Date]
 }
-

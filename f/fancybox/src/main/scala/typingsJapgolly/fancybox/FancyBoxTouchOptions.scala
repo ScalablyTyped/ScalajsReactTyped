@@ -1,27 +1,36 @@
 package typingsJapgolly.fancybox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FancyBoxTouchOptions extends js.Object {
+trait FancyBoxTouchOptions extends StObject {
+  
   /**
     * Continue movement after releasing mouse/touch when panning
     */
   var momentum: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *  Allow to drag content vertically
     */
   var vertical: js.UndefOr[Boolean] = js.undefined
 }
-
 object FancyBoxTouchOptions {
-  @scala.inline
-  def apply(momentum: js.UndefOr[Boolean] = js.undefined, vertical: js.UndefOr[Boolean] = js.undefined): FancyBoxTouchOptions = {
+  
+  inline def apply(): FancyBoxTouchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(momentum)) __obj.updateDynamic("momentum")(momentum.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxTouchOptions]
   }
+  
+  extension [Self <: FancyBoxTouchOptions](x: Self) {
+    
+    inline def setMomentum(value: Boolean): Self = StObject.set(x, "momentum", value.asInstanceOf[js.Any])
+    
+    inline def setMomentumUndefined: Self = StObject.set(x, "momentum", js.undefined)
+    
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+  }
 }
-

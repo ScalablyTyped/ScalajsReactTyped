@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-pnp-resolver
 
-Typings are for version 1.2.1
+Typings are for version 1.2.2
 
 ## Library description:
 plug'n'play resolver for Webpack
@@ -10,10 +10,10 @@ plug'n'play resolver for Webpack
 | ------------------ | :-------------: |
 | Full name          | jest-pnp-resolver |
 | Keywords           | jest, yarn, plugnplay, pnp |
-| # releases         | 9 |
-| # dependents       | 583 |
-| # downloads        | 118717895 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.9908975666666664E7 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/arcanis/jest-pnp-resolver)

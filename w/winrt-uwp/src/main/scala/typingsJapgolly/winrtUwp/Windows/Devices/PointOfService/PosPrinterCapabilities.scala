@@ -1,32 +1,80 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the capabilities of the point-of-service printer. */
-@JSGlobal("Windows.Devices.PointOfService.PosPrinterCapabilities")
-@js.native
-abstract class PosPrinterCapabilities () extends js.Object {
+trait PosPrinterCapabilities extends StObject {
+  
   /** Gets whether the point-of-service printer can map the characters that the application sends (in the character set that the ClaimedPosPrinter.CharacterSet property defines) to the character sets that the PosPrinter.SupportedCharacterSets property defines. */
-  var canMapCharacterSet: Boolean = js.native
+  var canMapCharacterSet: Boolean
+  
   /** Gets the character set that the point-of-service printer uses by default. */
-  var defaultCharacterSet: Double = js.native
+  var defaultCharacterSet: Double
+  
   /** Gets whether the point-of-service printer has a sensor that detects if the printer cover is open. */
-  var hasCoverSensor: Boolean = js.native
+  var hasCoverSensor: Boolean
+  
   /** Gets whether the point-of-service printer supports reporting statistics. */
-  var isStatisticsReportingSupported: Boolean = js.native
+  var isStatisticsReportingSupported: Boolean
+  
   /** Gets whether the point-of-service printer supports updating statistics. */
-  var isStatisticsUpdatingSupported: Boolean = js.native
+  var isStatisticsUpdatingSupported: Boolean
+  
   /** Gets whether the point-of-service printer supports printer transactions. */
-  var isTransactionSupported: Boolean = js.native
+  var isTransactionSupported: Boolean
+  
   /** Gets the capabilities of the journal station for the point-of-service printer. */
-  var journal: JournalPrinterCapabilities = js.native
+  var journal: JournalPrinterCapabilities
+  
   /** Gets the power reporting capabilities of the point-of-service printer. */
-  var powerReportingType: UnifiedPosPowerReportingType = js.native
+  var powerReportingType: UnifiedPosPowerReportingType
+  
   /** Gets the capabilities of the receipt station for the point-of-service printer. */
-  var receipt: ReceiptPrinterCapabilities = js.native
+  var receipt: ReceiptPrinterCapabilities
+  
   /** Gets the capabilities of the slip station for the point-of-service printer. */
-  var slip: SlipPrinterCapabilities = js.native
+  var slip: SlipPrinterCapabilities
 }
-
+object PosPrinterCapabilities {
+  
+  inline def apply(
+    canMapCharacterSet: Boolean,
+    defaultCharacterSet: Double,
+    hasCoverSensor: Boolean,
+    isStatisticsReportingSupported: Boolean,
+    isStatisticsUpdatingSupported: Boolean,
+    isTransactionSupported: Boolean,
+    journal: JournalPrinterCapabilities,
+    powerReportingType: UnifiedPosPowerReportingType,
+    receipt: ReceiptPrinterCapabilities,
+    slip: SlipPrinterCapabilities
+  ): PosPrinterCapabilities = {
+    val __obj = js.Dynamic.literal(canMapCharacterSet = canMapCharacterSet.asInstanceOf[js.Any], defaultCharacterSet = defaultCharacterSet.asInstanceOf[js.Any], hasCoverSensor = hasCoverSensor.asInstanceOf[js.Any], isStatisticsReportingSupported = isStatisticsReportingSupported.asInstanceOf[js.Any], isStatisticsUpdatingSupported = isStatisticsUpdatingSupported.asInstanceOf[js.Any], isTransactionSupported = isTransactionSupported.asInstanceOf[js.Any], journal = journal.asInstanceOf[js.Any], powerReportingType = powerReportingType.asInstanceOf[js.Any], receipt = receipt.asInstanceOf[js.Any], slip = slip.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PosPrinterCapabilities]
+  }
+  
+  extension [Self <: PosPrinterCapabilities](x: Self) {
+    
+    inline def setCanMapCharacterSet(value: Boolean): Self = StObject.set(x, "canMapCharacterSet", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultCharacterSet(value: Double): Self = StObject.set(x, "defaultCharacterSet", value.asInstanceOf[js.Any])
+    
+    inline def setHasCoverSensor(value: Boolean): Self = StObject.set(x, "hasCoverSensor", value.asInstanceOf[js.Any])
+    
+    inline def setIsStatisticsReportingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsReportingSupported", value.asInstanceOf[js.Any])
+    
+    inline def setIsStatisticsUpdatingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsUpdatingSupported", value.asInstanceOf[js.Any])
+    
+    inline def setIsTransactionSupported(value: Boolean): Self = StObject.set(x, "isTransactionSupported", value.asInstanceOf[js.Any])
+    
+    inline def setJournal(value: JournalPrinterCapabilities): Self = StObject.set(x, "journal", value.asInstanceOf[js.Any])
+    
+    inline def setPowerReportingType(value: UnifiedPosPowerReportingType): Self = StObject.set(x, "powerReportingType", value.asInstanceOf[js.Any])
+    
+    inline def setReceipt(value: ReceiptPrinterCapabilities): Self = StObject.set(x, "receipt", value.asInstanceOf[js.Any])
+    
+    inline def setSlip(value: SlipPrinterCapabilities): Self = StObject.set(x, "slip", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,30 +1,42 @@
 package typingsJapgolly.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PanOptions extends js.Object {
+trait PanOptions extends StObject {
+  
   var animate: js.UndefOr[Boolean] = js.undefined
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
   var easeLinearity: js.UndefOr[Double] = js.undefined
+  
   var noMoveStart: js.UndefOr[Boolean] = js.undefined
 }
-
 object PanOptions {
-  @scala.inline
-  def apply(
-    animate: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
-    easeLinearity: Int | Double = null,
-    noMoveStart: js.UndefOr[Boolean] = js.undefined
-  ): PanOptions = {
+  
+  inline def apply(): PanOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easeLinearity != null) __obj.updateDynamic("easeLinearity")(easeLinearity.asInstanceOf[js.Any])
-    if (!js.isUndefined(noMoveStart)) __obj.updateDynamic("noMoveStart")(noMoveStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanOptions]
   }
+  
+  extension [Self <: PanOptions](x: Self) {
+    
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEaseLinearity(value: Double): Self = StObject.set(x, "easeLinearity", value.asInstanceOf[js.Any])
+    
+    inline def setEaseLinearityUndefined: Self = StObject.set(x, "easeLinearity", js.undefined)
+    
+    inline def setNoMoveStart(value: Boolean): Self = StObject.set(x, "noMoveStart", value.asInstanceOf[js.Any])
+    
+    inline def setNoMoveStartUndefined: Self = StObject.set(x, "noMoveStart", js.undefined)
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A DiagramEvent represents a more abstract event than an InputEvent.
@@ -22,16 +22,20 @@ import scala.scalajs.js.annotation._
 /**
   * The DiagramEvent class constructor produces an empty DiagramEvent.
   */
-class DiagramEvent () extends js.Object {
+open class DiagramEvent () extends StObject {
+  
   /**Gets or sets whether any default actions associated with this diagram event should be avoided or cancelled.*/
   var cancel: Boolean = js.native
+  
   /**This read-only property returns the diagram associated with the event.*/
   var diagram: Diagram = js.native
+  
   /**Gets or sets the name of the kind of diagram event that this represents.*/
   var name: String = js.native
+  
   /**Gets or sets an optional object that describes the change to the subject of the diagram event.*/
-  var parameter: js.Any = js.native
+  var parameter: Any = js.native
+  
   /**Gets or sets an optional object that is the subject of the diagram event.*/
-  var subject: js.Any = js.native
+  var subject: Any = js.native
 }
-

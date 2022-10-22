@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HoverChangeEventUIParam extends js.Object {
+trait HoverChangeEventUIParam extends StObject {
+  
   /**
-  	 * Gets the old value.
-  	 */
+    * Gets the old value.
+    */
   var oldValue: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets the new hovered value.
-  	 */
+    * Gets the new hovered value.
+    */
   var value: js.UndefOr[Double] = js.undefined
 }
-
 object HoverChangeEventUIParam {
-  @scala.inline
-  def apply(oldValue: Int | Double = null, value: Int | Double = null): HoverChangeEventUIParam = {
+  
+  inline def apply(): HoverChangeEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HoverChangeEventUIParam]
   }
+  
+  extension [Self <: HoverChangeEventUIParam](x: Self) {
+    
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

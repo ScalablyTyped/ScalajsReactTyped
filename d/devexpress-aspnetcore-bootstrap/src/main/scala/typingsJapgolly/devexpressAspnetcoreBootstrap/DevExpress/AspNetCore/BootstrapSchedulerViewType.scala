@@ -1,59 +1,47 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BootstrapSchedulerViewType extends js.Object
-
+sealed trait BootstrapSchedulerViewType extends StObject
 @JSGlobal("DevExpress.AspNetCore.BootstrapSchedulerViewType")
 @js.native
-object BootstrapSchedulerViewType extends js.Object {
-  @js.native
-  sealed trait Agenda extends BootstrapSchedulerViewType
+object BootstrapSchedulerViewType extends StObject {
   
   @js.native
-  sealed trait Day extends BootstrapSchedulerViewType
+  sealed trait Agenda
+    extends StObject
+       with BootstrapSchedulerViewType
   
   @js.native
-  sealed trait FullWeek extends BootstrapSchedulerViewType
+  sealed trait Day
+    extends StObject
+       with BootstrapSchedulerViewType
   
   @js.native
-  sealed trait Month extends BootstrapSchedulerViewType
+  sealed trait FullWeek
+    extends StObject
+       with BootstrapSchedulerViewType
   
   @js.native
-  sealed trait Timeline extends BootstrapSchedulerViewType
+  sealed trait Month
+    extends StObject
+       with BootstrapSchedulerViewType
   
   @js.native
-  sealed trait Week extends BootstrapSchedulerViewType
+  sealed trait Timeline
+    extends StObject
+       with BootstrapSchedulerViewType
   
   @js.native
-  sealed trait WorkWeek extends BootstrapSchedulerViewType
+  sealed trait Week
+    extends StObject
+       with BootstrapSchedulerViewType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[BootstrapSchedulerViewType with String] = js.native
-  /* "Agenda" */ @js.native
-  object Agenda extends TopLevel[Agenda with String]
-  
-  /* "Day" */ @js.native
-  object Day extends TopLevel[Day with String]
-  
-  /* "FullWeek" */ @js.native
-  object FullWeek extends TopLevel[FullWeek with String]
-  
-  /* "Month" */ @js.native
-  object Month extends TopLevel[Month with String]
-  
-  /* "Timeline" */ @js.native
-  object Timeline extends TopLevel[Timeline with String]
-  
-  /* "Week" */ @js.native
-  object Week extends TopLevel[Week with String]
-  
-  /* "WorkWeek" */ @js.native
-  object WorkWeek extends TopLevel[WorkWeek with String]
-  
+  @js.native
+  sealed trait WorkWeek
+    extends StObject
+       with BootstrapSchedulerViewType
 }
-

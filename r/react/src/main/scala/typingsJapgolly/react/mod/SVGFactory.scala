@@ -1,15 +1,11 @@
 package typingsJapgolly.react.mod
 
-import japgolly.scalajs.react.raw.React.Node
-import typingsJapgolly.std.SVGElement
+import org.scalajs.dom.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGFactory extends DOMFactory[SVGAttributes[SVGElement], SVGElement] {
-  def apply(): ReactSVGElement = js.native
-  def apply(children: ReactNode*): ReactSVGElement = js.native
-  def apply(props: ClassAttributes[SVGElement] with SVGAttributes[SVGElement], children: Node*): ReactSVGElement = js.native
-}
-
+trait SVGFactory
+  extends StObject
+     with DOMFactory[SVGAttributes[SVGElement], SVGElement]

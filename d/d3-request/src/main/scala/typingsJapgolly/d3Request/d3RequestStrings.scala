@@ -1,29 +1,24 @@
 package typingsJapgolly.d3Request
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object d3RequestStrings {
-  @js.native
-  sealed trait beforesend extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait beforesend extends StObject
+  inline def beforesend: beforesend = "beforesend".asInstanceOf[beforesend]
   
   @js.native
-  sealed trait load extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait load extends StObject
+  inline def load: load = "load".asInstanceOf[load]
   
-  @scala.inline
-  def beforesend: beforesend = "beforesend".asInstanceOf[beforesend]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
+  @js.native
+  sealed trait progress extends StObject
+  inline def progress: progress = "progress".asInstanceOf[progress]
 }
-

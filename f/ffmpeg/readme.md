@@ -11,9 +11,9 @@ Utility for managing video streams using ffmpeg
 | Full name          | ffmpeg |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 43 |
-| # downloads        | 924075 |
-| # stars            | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 116157.0 |
+| # stars            | 501.0 |
 
 ## Links
 - [Homepage](https://github.com/damianociarla/node-ffmpeg#readme)

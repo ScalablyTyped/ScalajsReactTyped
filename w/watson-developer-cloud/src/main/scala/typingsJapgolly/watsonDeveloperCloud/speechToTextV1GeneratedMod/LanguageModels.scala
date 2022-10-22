@@ -1,21 +1,26 @@
 package typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** LanguageModels. */
-trait LanguageModels extends js.Object {
+trait LanguageModels extends StObject {
+  
   /** An array of `LanguageModel` objects that provides information about each available custom language model. The array is empty if the requesting credentials own no custom language models (if no language is specified) or own no custom language models for the specified language. */
   var customizations: js.Array[LanguageModel]
 }
-
 object LanguageModels {
-  @scala.inline
-  def apply(customizations: js.Array[LanguageModel]): LanguageModels = {
-    val __obj = js.Dynamic.literal(customizations = customizations.asInstanceOf[js.Any])
   
+  inline def apply(customizations: js.Array[LanguageModel]): LanguageModels = {
+    val __obj = js.Dynamic.literal(customizations = customizations.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageModels]
   }
+  
+  extension [Self <: LanguageModels](x: Self) {
+    
+    inline def setCustomizations(value: js.Array[LanguageModel]): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
+    
+    inline def setCustomizationsVarargs(value: LanguageModel*): Self = StObject.set(x, "customizations", js.Array(value*))
+  }
 }
-

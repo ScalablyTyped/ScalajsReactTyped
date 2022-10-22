@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.WiFiDirect.Services
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiDirectServiceAdvertisementStatus extends js.Object
-
+sealed trait WiFiDirectServiceAdvertisementStatus extends StObject
 /** Values used for WiFiDirectServiceAdvertiser.AdvertisementStatus . */
 @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceAdvertisementStatus")
 @js.native
-object WiFiDirectServiceAdvertisementStatus extends js.Object {
+object WiFiDirectServiceAdvertisementStatus extends StObject {
+  
   /** Advertiser has been aborted. The advertiser object's ServiceError property has a specific error code describing the reason. */
   @js.native
-  sealed trait aborted extends WiFiDirectServiceAdvertisementStatus
+  sealed trait aborted
+    extends StObject
+       with WiFiDirectServiceAdvertisementStatus
   
   /** Advertiser has been created. */
   @js.native
-  sealed trait created extends WiFiDirectServiceAdvertisementStatus
+  sealed trait created
+    extends StObject
+       with WiFiDirectServiceAdvertisementStatus
   
   /** Advertiser has been started. */
   @js.native
-  sealed trait started extends WiFiDirectServiceAdvertisementStatus
+  sealed trait started
+    extends StObject
+       with WiFiDirectServiceAdvertisementStatus
   
   /** Advertiser has been stopped. */
   @js.native
-  sealed trait stopped extends WiFiDirectServiceAdvertisementStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiDirectServiceAdvertisementStatus with Double] = js.native
-  /* 3 */ @js.native
-  object aborted extends TopLevel[aborted with Double]
-  
-  /* 0 */ @js.native
-  object created extends TopLevel[created with Double]
-  
-  /* 1 */ @js.native
-  object started extends TopLevel[started with Double]
-  
-  /* 2 */ @js.native
-  object stopped extends TopLevel[stopped with Double]
-  
+  sealed trait stopped
+    extends StObject
+       with WiFiDirectServiceAdvertisementStatus
 }
-

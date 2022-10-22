@@ -1,31 +1,53 @@
 package typingsJapgolly.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BarData extends js.Object {
+trait BarData extends StObject {
+  
   var height: Double
-  var radius: Double | js.Array[_]
-  var value: Double | String | js.Array[_]
+  
+  var radius: Double | js.Array[Any]
+  
+  var value: Double | String | js.Array[Any]
+  
   var width: Double
+  
   var x: Double
+  
   var y: Double
 }
-
 object BarData {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     height: Double,
-    radius: Double | js.Array[_],
-    value: Double | String | js.Array[_],
+    radius: Double | js.Array[Any],
+    value: Double | String | js.Array[Any],
     width: Double,
     x: Double,
     y: Double
   ): BarData = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BarData]
   }
+  
+  extension [Self <: BarData](x: Self) {
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setRadius(value: Double | js.Array[Any]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusVarargs(value: Any*): Self = StObject.set(x, "radius", js.Array(value*))
+    
+    inline def setValue(value: Double | String | js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+  }
 }
-

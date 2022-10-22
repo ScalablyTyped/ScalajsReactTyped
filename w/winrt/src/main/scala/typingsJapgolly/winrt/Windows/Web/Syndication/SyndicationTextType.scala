@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Web.Syndication
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SyndicationTextType extends js.Object
-
+sealed trait SyndicationTextType extends StObject
 @JSGlobal("Windows.Web.Syndication.SyndicationTextType")
 @js.native
-object SyndicationTextType extends js.Object {
-  @js.native
-  sealed trait html extends SyndicationTextType
+object SyndicationTextType extends StObject {
   
   @js.native
-  sealed trait text extends SyndicationTextType
+  sealed trait html
+    extends StObject
+       with SyndicationTextType
   
   @js.native
-  sealed trait xhtml extends SyndicationTextType
+  sealed trait text
+    extends StObject
+       with SyndicationTextType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SyndicationTextType with Double] = js.native
-  /* 1 */ @js.native
-  object html extends TopLevel[html with Double]
-  
-  /* 0 */ @js.native
-  object text extends TopLevel[text with Double]
-  
-  /* 2 */ @js.native
-  object xhtml extends TopLevel[xhtml with Double]
-  
+  @js.native
+  sealed trait xhtml
+    extends StObject
+       with SyndicationTextType
 }
-

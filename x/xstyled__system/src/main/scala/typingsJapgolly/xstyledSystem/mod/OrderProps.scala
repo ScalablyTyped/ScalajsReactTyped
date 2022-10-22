@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.GlobalsNumber
+import typingsJapgolly.csstype.mod.Property.Order
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OrderProps extends js.Object {
-  val order: js.UndefOr[ResponsiveValue[GlobalsNumber]] = js.undefined
+trait OrderProps extends StObject {
+  
+  val order: js.UndefOr[ResponsiveValue[Order]] = js.undefined
 }
-
 object OrderProps {
-  @scala.inline
-  def apply(order: ResponsiveValue[GlobalsNumber] = null): OrderProps = {
+  
+  inline def apply(): OrderProps = {
     val __obj = js.Dynamic.literal()
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderProps]
   }
+  
+  extension [Self <: OrderProps](x: Self) {
+    
+    inline def setOrder(value: ResponsiveValue[Order]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    
+    inline def setOrderVarargs(value: Order*): Self = StObject.set(x, "order", js.Array(value*))
+  }
 }
-

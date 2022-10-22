@@ -1,20 +1,25 @@
 package typingsJapgolly.kendoUi.kendo.data
 
-import typingsJapgolly.kendoUi.kendo.Observable_
+import typingsJapgolly.kendoUi.kendo.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.data.ObservableObject")
 @js.native
-class ObservableObject () extends Observable_ {
-  def this(value: js.Any) = this()
-  var uid: String = js.native
-  def get(name: String): js.Any = js.native
+trait ObservableObject
+  extends StObject
+     with Observable {
+  
+  def get(name: String): Any = js.native
+  
   def init(): Unit = js.native
-  def init(value: js.Any): Unit = js.native
+  def init(value: Any): Unit = js.native
+  
   def parent(): ObservableObject = js.native
-  def set(name: String, value: js.Any): Unit = js.native
+  
+  def set(name: String, value: Any): Unit = js.native
+  
   def toJSON(): js.Object = js.native
+  
+  var uid: String = js.native
 }
-

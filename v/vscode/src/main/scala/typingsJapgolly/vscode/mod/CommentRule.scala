@@ -1,27 +1,36 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommentRule extends js.Object {
+trait CommentRule extends StObject {
+  
   /**
-  		 * The block comment character pair, like `/ * block comment *&#47;`
-  		 */
+    * The block comment character pair, like `/ * block comment *&#47;`
+    */
   var blockComment: js.UndefOr[CharacterPair] = js.undefined
+  
   /**
-  		 * The line comment token, like `// this is a comment`
-  		 */
+    * The line comment token, like `// this is a comment`
+    */
   var lineComment: js.UndefOr[String] = js.undefined
 }
-
 object CommentRule {
-  @scala.inline
-  def apply(blockComment: CharacterPair = null, lineComment: String = null): CommentRule = {
+  
+  inline def apply(): CommentRule = {
     val __obj = js.Dynamic.literal()
-    if (blockComment != null) __obj.updateDynamic("blockComment")(blockComment.asInstanceOf[js.Any])
-    if (lineComment != null) __obj.updateDynamic("lineComment")(lineComment.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentRule]
   }
+  
+  extension [Self <: CommentRule](x: Self) {
+    
+    inline def setBlockComment(value: CharacterPair): Self = StObject.set(x, "blockComment", value.asInstanceOf[js.Any])
+    
+    inline def setBlockCommentUndefined: Self = StObject.set(x, "blockComment", js.undefined)
+    
+    inline def setLineComment(value: String): Self = StObject.set(x, "lineComment", value.asInstanceOf[js.Any])
+    
+    inline def setLineCommentUndefined: Self = StObject.set(x, "lineComment", js.undefined)
+  }
 }
-

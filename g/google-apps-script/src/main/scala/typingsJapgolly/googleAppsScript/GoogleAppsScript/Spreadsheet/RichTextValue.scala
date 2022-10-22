@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A stylized text string used to represent cell text. Substrings of the text can have different
@@ -14,13 +14,21 @@ import scala.scalajs.js.annotation._
   * "apples."].
   */
 @js.native
-trait RichTextValue extends js.Object {
+trait RichTextValue extends StObject {
+  
   def copy(): RichTextValueBuilder = js.native
+  
   def getEndIndex(): Integer = js.native
+  
+  def getLinkUrl(): String | Null = js.native
+  def getLinkUrl(startOffset: Integer, endOffset: Integer): String | Null = js.native
+  
   def getRuns(): js.Array[RichTextValue] = js.native
+  
   def getStartIndex(): Integer = js.native
+  
   def getText(): String = js.native
+  
   def getTextStyle(): TextStyle = js.native
   def getTextStyle(startOffset: Integer, endOffset: Integer): TextStyle = js.native
 }
-

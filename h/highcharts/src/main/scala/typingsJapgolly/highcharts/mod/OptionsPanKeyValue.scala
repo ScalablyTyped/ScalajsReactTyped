@@ -1,8 +1,8 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.alt
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.highcharts.highchartsStrings.meta
   - typingsJapgolly.highcharts.highchartsStrings.shift
 */
-trait OptionsPanKeyValue extends js.Object
-
+trait OptionsPanKeyValue extends StObject
 object OptionsPanKeyValue {
-  @scala.inline
-  def alt: typingsJapgolly.highcharts.highchartsStrings.alt = this.cast("alt")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ctrl: typingsJapgolly.highcharts.highchartsStrings.ctrl = this.cast("ctrl")
-  @scala.inline
-  def meta: typingsJapgolly.highcharts.highchartsStrings.meta = this.cast("meta")
-  @scala.inline
-  def shift: typingsJapgolly.highcharts.highchartsStrings.shift = this.cast("shift")
+  
+  inline def alt: typingsJapgolly.highcharts.highchartsStrings.alt = "alt".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.alt]
+  
+  inline def ctrl: typingsJapgolly.highcharts.highchartsStrings.ctrl = "ctrl".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.ctrl]
+  
+  inline def meta: typingsJapgolly.highcharts.highchartsStrings.meta = "meta".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.meta]
+  
+  inline def shift: typingsJapgolly.highcharts.highchartsStrings.shift = "shift".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.shift]
 }
-

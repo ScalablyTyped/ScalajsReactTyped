@@ -1,11 +1,18 @@
 package typingsJapgolly.dhtmlxgantt
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("Gantt", JSImport.Namespace)
-@js.native
-object ganttMod extends TopLevel[GanttEnterprise]
-
+object ganttMod extends Shortcut {
+  
+  @JSImport("gantt", JSImport.Namespace)
+  @js.native
+  val ^ : GanttStatic = js.native
+  
+  type _To = GanttStatic
+  
+  /* This means you don't have to write `^`, but can instead just say `ganttMod.foo` */
+  override def _to: GanttStatic = ^
+}

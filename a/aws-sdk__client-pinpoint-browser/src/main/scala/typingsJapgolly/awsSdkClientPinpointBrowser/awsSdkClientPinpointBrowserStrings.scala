@@ -1,319 +1,256 @@
 package typingsJapgolly.awsSdkClientPinpointBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsSdkClientPinpointBrowserStrings {
-  @js.native
-  sealed trait ACTIVE extends js.Object
   
   @js.native
-  sealed trait ADM extends js.Object
+  sealed trait ACTIVE extends StObject
+  inline def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
   
   @js.native
-  sealed trait ALL extends js.Object
+  sealed trait ADM extends StObject
+  inline def ADM: ADM = "ADM".asInstanceOf[ADM]
   
   @js.native
-  sealed trait ANY extends js.Object
+  sealed trait ALL extends StObject
+  inline def ALL: ALL = "ALL".asInstanceOf[ALL]
   
   @js.native
-  sealed trait APNS extends js.Object
+  sealed trait ANY extends StObject
+  inline def ANY: ANY = "ANY".asInstanceOf[ANY]
   
   @js.native
-  sealed trait APNS_SANDBOX extends js.Object
+  sealed trait APNS extends StObject
+  inline def APNS: APNS = "APNS".asInstanceOf[APNS]
   
   @js.native
-  sealed trait APNS_VOIP extends js.Object
+  sealed trait APNS_SANDBOX extends StObject
+  inline def APNS_SANDBOX: APNS_SANDBOX = "APNS_SANDBOX".asInstanceOf[APNS_SANDBOX]
   
   @js.native
-  sealed trait APNS_VOIP_SANDBOX extends js.Object
+  sealed trait APNS_VOIP extends StObject
+  inline def APNS_VOIP: APNS_VOIP = "APNS_VOIP".asInstanceOf[APNS_VOIP]
   
   @js.native
-  sealed trait BAIDU extends js.Object
+  sealed trait APNS_VOIP_SANDBOX extends StObject
+  inline def APNS_VOIP_SANDBOX: APNS_VOIP_SANDBOX = "APNS_VOIP_SANDBOX".asInstanceOf[APNS_VOIP_SANDBOX]
   
   @js.native
-  sealed trait BadRequestException extends js.Object
+  sealed trait BAIDU extends StObject
+  inline def BAIDU: BAIDU = "BAIDU".asInstanceOf[BAIDU]
   
   @js.native
-  sealed trait COMPLETED extends js.Object
+  sealed trait BadRequestException extends StObject
+  inline def BadRequestException: BadRequestException = "BadRequestException".asInstanceOf[BadRequestException]
   
   @js.native
-  sealed trait COMPLETING extends js.Object
+  sealed trait COMPLETED extends StObject
+  inline def COMPLETED: COMPLETED = "COMPLETED".asInstanceOf[COMPLETED]
   
   @js.native
-  sealed trait CREATED extends js.Object
+  sealed trait COMPLETING extends StObject
+  inline def COMPLETING: COMPLETING = "COMPLETING".asInstanceOf[COMPLETING]
   
   @js.native
-  sealed trait CSV extends js.Object
+  sealed trait CREATED extends StObject
+  inline def CREATED: CREATED = "CREATED".asInstanceOf[CREATED]
   
   @js.native
-  sealed trait CUSTOM extends js.Object
+  sealed trait CSV extends StObject
+  inline def CSV: CSV = "CSV".asInstanceOf[CSV]
   
   @js.native
-  sealed trait DAILY extends js.Object
+  sealed trait CUSTOM extends StObject
+  inline def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
   
   @js.native
-  sealed trait DAY_14 extends js.Object
+  sealed trait DAILY extends StObject
+  inline def DAILY: DAILY = "DAILY".asInstanceOf[DAILY]
   
   @js.native
-  sealed trait DAY_30 extends js.Object
+  sealed trait DAY_14 extends StObject
+  inline def DAY_14: DAY_14 = "DAY_14".asInstanceOf[DAY_14]
   
   @js.native
-  sealed trait DAY_7 extends js.Object
+  sealed trait DAY_30 extends StObject
+  inline def DAY_30: DAY_30 = "DAY_30".asInstanceOf[DAY_30]
   
   @js.native
-  sealed trait DEEP_LINK extends js.Object
+  sealed trait DAY_7 extends StObject
+  inline def DAY_7: DAY_7 = "DAY_7".asInstanceOf[DAY_7]
   
   @js.native
-  sealed trait DELETED extends js.Object
+  sealed trait DEEP_LINK extends StObject
+  inline def DEEP_LINK: DEEP_LINK = "DEEP_LINK".asInstanceOf[DEEP_LINK]
   
   @js.native
-  sealed trait DELIVERY extends js.Object
+  sealed trait DELETED extends StObject
+  inline def DELETED: DELETED = "DELETED".asInstanceOf[DELETED]
   
   @js.native
-  sealed trait DIMENSIONAL extends js.Object
+  sealed trait DELIVERY extends StObject
+  inline def DELIVERY: DELIVERY = "DELIVERY".asInstanceOf[DELIVERY]
   
   @js.native
-  sealed trait DUPLICATE extends js.Object
+  sealed trait DIMENSIONAL extends StObject
+  inline def DIMENSIONAL: DIMENSIONAL = "DIMENSIONAL".asInstanceOf[DIMENSIONAL]
   
   @js.native
-  sealed trait EMAIL extends js.Object
+  sealed trait DUPLICATE extends StObject
+  inline def DUPLICATE: DUPLICATE = "DUPLICATE".asInstanceOf[DUPLICATE]
   
   @js.native
-  sealed trait EXCLUSIVE extends js.Object
+  sealed trait EMAIL extends StObject
+  inline def EMAIL: EMAIL = "EMAIL".asInstanceOf[EMAIL]
   
   @js.native
-  sealed trait EXECUTING extends js.Object
+  sealed trait EXCLUSIVE extends StObject
+  inline def EXCLUSIVE: EXCLUSIVE = "EXCLUSIVE".asInstanceOf[EXCLUSIVE]
   
   @js.native
-  sealed trait FAILED extends js.Object
+  sealed trait EXECUTING extends StObject
+  inline def EXECUTING: EXECUTING = "EXECUTING".asInstanceOf[EXECUTING]
   
   @js.native
-  sealed trait FAILING extends js.Object
+  sealed trait FAILED extends StObject
+  inline def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
   
   @js.native
-  sealed trait FILTER extends js.Object
+  sealed trait FAILING extends StObject
+  inline def FAILING: FAILING = "FAILING".asInstanceOf[FAILING]
   
   @js.native
-  sealed trait ForbiddenException extends js.Object
+  sealed trait FILTER extends StObject
+  inline def FILTER: FILTER = "FILTER".asInstanceOf[FILTER]
   
   @js.native
-  sealed trait GCM extends js.Object
+  sealed trait ForbiddenException extends StObject
+  inline def ForbiddenException: ForbiddenException = "ForbiddenException".asInstanceOf[ForbiddenException]
   
   @js.native
-  sealed trait HOURLY extends js.Object
+  sealed trait GCM extends StObject
+  inline def GCM: GCM = "GCM".asInstanceOf[GCM]
   
   @js.native
-  sealed trait HR_24 extends js.Object
+  sealed trait HOURLY extends StObject
+  inline def HOURLY: HOURLY = "HOURLY".asInstanceOf[HOURLY]
   
   @js.native
-  sealed trait IMPORT extends js.Object
+  sealed trait HR_24 extends StObject
+  inline def HR_24: HR_24 = "HR_24".asInstanceOf[HR_24]
   
   @js.native
-  sealed trait INACTIVE extends js.Object
+  sealed trait IMPORT extends StObject
+  inline def IMPORT: IMPORT = "IMPORT".asInstanceOf[IMPORT]
   
   @js.native
-  sealed trait INCLUSIVE extends js.Object
+  sealed trait INACTIVE extends StObject
+  inline def INACTIVE: INACTIVE = "INACTIVE".asInstanceOf[INACTIVE]
   
   @js.native
-  sealed trait INITIALIZING extends js.Object
+  sealed trait INCLUSIVE extends StObject
+  inline def INCLUSIVE: INCLUSIVE = "INCLUSIVE".asInstanceOf[INCLUSIVE]
   
   @js.native
-  sealed trait InternalServerErrorException extends js.Object
+  sealed trait INITIALIZING extends StObject
+  inline def INITIALIZING: INITIALIZING = "INITIALIZING".asInstanceOf[INITIALIZING]
   
   @js.native
-  sealed trait JSON extends js.Object
+  sealed trait InternalServerErrorException extends StObject
+  inline def InternalServerErrorException: InternalServerErrorException = "InternalServerErrorException".asInstanceOf[InternalServerErrorException]
   
   @js.native
-  sealed trait MONTHLY extends js.Object
+  sealed trait JSON extends StObject
+  inline def JSON: JSON = "JSON".asInstanceOf[JSON]
   
   @js.native
-  sealed trait MethodNotAllowedException extends js.Object
+  sealed trait MONTHLY extends StObject
+  inline def MONTHLY: MONTHLY = "MONTHLY".asInstanceOf[MONTHLY]
   
   @js.native
-  sealed trait NONE extends js.Object
+  sealed trait MethodNotAllowedException extends StObject
+  inline def MethodNotAllowedException: MethodNotAllowedException = "MethodNotAllowedException".asInstanceOf[MethodNotAllowedException]
   
   @js.native
-  sealed trait NotFoundException extends js.Object
+  sealed trait NONE extends StObject
+  inline def NONE: NONE = "NONE".asInstanceOf[NONE]
   
   @js.native
-  sealed trait ONCE extends js.Object
+  sealed trait NotFoundException extends StObject
+  inline def NotFoundException: NotFoundException = "NotFoundException".asInstanceOf[NotFoundException]
   
   @js.native
-  sealed trait OPEN_APP extends js.Object
+  sealed trait ONCE extends StObject
+  inline def ONCE: ONCE = "ONCE".asInstanceOf[ONCE]
   
   @js.native
-  sealed trait OPT_OUT extends js.Object
+  sealed trait OPEN_APP extends StObject
+  inline def OPEN_APP: OPEN_APP = "OPEN_APP".asInstanceOf[OPEN_APP]
   
   @js.native
-  sealed trait PAUSED extends js.Object
+  sealed trait OPT_OUT extends StObject
+  inline def OPT_OUT: OPT_OUT = "OPT_OUT".asInstanceOf[OPT_OUT]
   
   @js.native
-  sealed trait PENDING_NEXT_RUN extends js.Object
+  sealed trait PAUSED extends StObject
+  inline def PAUSED: PAUSED = "PAUSED".asInstanceOf[PAUSED]
   
   @js.native
-  sealed trait PERMANENT_FAILURE extends js.Object
+  sealed trait PENDING_NEXT_RUN extends StObject
+  inline def PENDING_NEXT_RUN: PENDING_NEXT_RUN = "PENDING_NEXT_RUN".asInstanceOf[PENDING_NEXT_RUN]
   
   @js.native
-  sealed trait PROCESSING extends js.Object
+  sealed trait PERMANENT_FAILURE extends StObject
+  inline def PERMANENT_FAILURE: PERMANENT_FAILURE = "PERMANENT_FAILURE".asInstanceOf[PERMANENT_FAILURE]
   
   @js.native
-  sealed trait PROMOTIONAL extends js.Object
+  sealed trait PROCESSING extends StObject
+  inline def PROCESSING: PROCESSING = "PROCESSING".asInstanceOf[PROCESSING]
   
   @js.native
-  sealed trait SCHEDULED extends js.Object
+  sealed trait PROMOTIONAL extends StObject
+  inline def PROMOTIONAL: PROMOTIONAL = "PROMOTIONAL".asInstanceOf[PROMOTIONAL]
   
   @js.native
-  sealed trait SMS extends js.Object
+  sealed trait SCHEDULED extends StObject
+  inline def SCHEDULED: SCHEDULED = "SCHEDULED".asInstanceOf[SCHEDULED]
   
   @js.native
-  sealed trait SUCCESSFUL extends js.Object
+  sealed trait SMS extends StObject
+  inline def SMS: SMS = "SMS".asInstanceOf[SMS]
   
   @js.native
-  sealed trait TEMPORARY_FAILURE extends js.Object
+  sealed trait SUCCESSFUL extends StObject
+  inline def SUCCESSFUL: SUCCESSFUL = "SUCCESSFUL".asInstanceOf[SUCCESSFUL]
   
   @js.native
-  sealed trait THROTTLED extends js.Object
+  sealed trait TEMPORARY_FAILURE extends StObject
+  inline def TEMPORARY_FAILURE: TEMPORARY_FAILURE = "TEMPORARY_FAILURE".asInstanceOf[TEMPORARY_FAILURE]
   
   @js.native
-  sealed trait TRANSACTIONAL extends js.Object
+  sealed trait THROTTLED extends StObject
+  inline def THROTTLED: THROTTLED = "THROTTLED".asInstanceOf[THROTTLED]
   
   @js.native
-  sealed trait TooManyRequestsException extends js.Object
+  sealed trait TRANSACTIONAL extends StObject
+  inline def TRANSACTIONAL: TRANSACTIONAL = "TRANSACTIONAL".asInstanceOf[TRANSACTIONAL]
   
   @js.native
-  sealed trait UNKNOWN_FAILURE extends js.Object
+  sealed trait TooManyRequestsException extends StObject
+  inline def TooManyRequestsException: TooManyRequestsException = "TooManyRequestsException".asInstanceOf[TooManyRequestsException]
   
   @js.native
-  sealed trait URL extends js.Object
+  sealed trait UNKNOWN_FAILURE extends StObject
+  inline def UNKNOWN_FAILURE: UNKNOWN_FAILURE = "UNKNOWN_FAILURE".asInstanceOf[UNKNOWN_FAILURE]
   
   @js.native
-  sealed trait WEEKLY extends js.Object
+  sealed trait URL extends StObject
+  inline def URL: URL = "URL".asInstanceOf[URL]
   
-  @scala.inline
-  def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
-  @scala.inline
-  def ADM: ADM = "ADM".asInstanceOf[ADM]
-  @scala.inline
-  def ALL: ALL = "ALL".asInstanceOf[ALL]
-  @scala.inline
-  def ANY: ANY = "ANY".asInstanceOf[ANY]
-  @scala.inline
-  def APNS: APNS = "APNS".asInstanceOf[APNS]
-  @scala.inline
-  def APNS_SANDBOX: APNS_SANDBOX = "APNS_SANDBOX".asInstanceOf[APNS_SANDBOX]
-  @scala.inline
-  def APNS_VOIP: APNS_VOIP = "APNS_VOIP".asInstanceOf[APNS_VOIP]
-  @scala.inline
-  def APNS_VOIP_SANDBOX: APNS_VOIP_SANDBOX = "APNS_VOIP_SANDBOX".asInstanceOf[APNS_VOIP_SANDBOX]
-  @scala.inline
-  def BAIDU: BAIDU = "BAIDU".asInstanceOf[BAIDU]
-  @scala.inline
-  def BadRequestException: BadRequestException = "BadRequestException".asInstanceOf[BadRequestException]
-  @scala.inline
-  def COMPLETED: COMPLETED = "COMPLETED".asInstanceOf[COMPLETED]
-  @scala.inline
-  def COMPLETING: COMPLETING = "COMPLETING".asInstanceOf[COMPLETING]
-  @scala.inline
-  def CREATED: CREATED = "CREATED".asInstanceOf[CREATED]
-  @scala.inline
-  def CSV: CSV = "CSV".asInstanceOf[CSV]
-  @scala.inline
-  def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
-  @scala.inline
-  def DAILY: DAILY = "DAILY".asInstanceOf[DAILY]
-  @scala.inline
-  def DAY_14: DAY_14 = "DAY_14".asInstanceOf[DAY_14]
-  @scala.inline
-  def DAY_30: DAY_30 = "DAY_30".asInstanceOf[DAY_30]
-  @scala.inline
-  def DAY_7: DAY_7 = "DAY_7".asInstanceOf[DAY_7]
-  @scala.inline
-  def DEEP_LINK: DEEP_LINK = "DEEP_LINK".asInstanceOf[DEEP_LINK]
-  @scala.inline
-  def DELETED: DELETED = "DELETED".asInstanceOf[DELETED]
-  @scala.inline
-  def DELIVERY: DELIVERY = "DELIVERY".asInstanceOf[DELIVERY]
-  @scala.inline
-  def DIMENSIONAL: DIMENSIONAL = "DIMENSIONAL".asInstanceOf[DIMENSIONAL]
-  @scala.inline
-  def DUPLICATE: DUPLICATE = "DUPLICATE".asInstanceOf[DUPLICATE]
-  @scala.inline
-  def EMAIL: EMAIL = "EMAIL".asInstanceOf[EMAIL]
-  @scala.inline
-  def EXCLUSIVE: EXCLUSIVE = "EXCLUSIVE".asInstanceOf[EXCLUSIVE]
-  @scala.inline
-  def EXECUTING: EXECUTING = "EXECUTING".asInstanceOf[EXECUTING]
-  @scala.inline
-  def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
-  @scala.inline
-  def FAILING: FAILING = "FAILING".asInstanceOf[FAILING]
-  @scala.inline
-  def FILTER: FILTER = "FILTER".asInstanceOf[FILTER]
-  @scala.inline
-  def ForbiddenException: ForbiddenException = "ForbiddenException".asInstanceOf[ForbiddenException]
-  @scala.inline
-  def GCM: GCM = "GCM".asInstanceOf[GCM]
-  @scala.inline
-  def HOURLY: HOURLY = "HOURLY".asInstanceOf[HOURLY]
-  @scala.inline
-  def HR_24: HR_24 = "HR_24".asInstanceOf[HR_24]
-  @scala.inline
-  def IMPORT: IMPORT = "IMPORT".asInstanceOf[IMPORT]
-  @scala.inline
-  def INACTIVE: INACTIVE = "INACTIVE".asInstanceOf[INACTIVE]
-  @scala.inline
-  def INCLUSIVE: INCLUSIVE = "INCLUSIVE".asInstanceOf[INCLUSIVE]
-  @scala.inline
-  def INITIALIZING: INITIALIZING = "INITIALIZING".asInstanceOf[INITIALIZING]
-  @scala.inline
-  def InternalServerErrorException: InternalServerErrorException = "InternalServerErrorException".asInstanceOf[InternalServerErrorException]
-  @scala.inline
-  def JSON: JSON = "JSON".asInstanceOf[JSON]
-  @scala.inline
-  def MONTHLY: MONTHLY = "MONTHLY".asInstanceOf[MONTHLY]
-  @scala.inline
-  def MethodNotAllowedException: MethodNotAllowedException = "MethodNotAllowedException".asInstanceOf[MethodNotAllowedException]
-  @scala.inline
-  def NONE: NONE = "NONE".asInstanceOf[NONE]
-  @scala.inline
-  def NotFoundException: NotFoundException = "NotFoundException".asInstanceOf[NotFoundException]
-  @scala.inline
-  def ONCE: ONCE = "ONCE".asInstanceOf[ONCE]
-  @scala.inline
-  def OPEN_APP: OPEN_APP = "OPEN_APP".asInstanceOf[OPEN_APP]
-  @scala.inline
-  def OPT_OUT: OPT_OUT = "OPT_OUT".asInstanceOf[OPT_OUT]
-  @scala.inline
-  def PAUSED: PAUSED = "PAUSED".asInstanceOf[PAUSED]
-  @scala.inline
-  def PENDING_NEXT_RUN: PENDING_NEXT_RUN = "PENDING_NEXT_RUN".asInstanceOf[PENDING_NEXT_RUN]
-  @scala.inline
-  def PERMANENT_FAILURE: PERMANENT_FAILURE = "PERMANENT_FAILURE".asInstanceOf[PERMANENT_FAILURE]
-  @scala.inline
-  def PROCESSING: PROCESSING = "PROCESSING".asInstanceOf[PROCESSING]
-  @scala.inline
-  def PROMOTIONAL: PROMOTIONAL = "PROMOTIONAL".asInstanceOf[PROMOTIONAL]
-  @scala.inline
-  def SCHEDULED: SCHEDULED = "SCHEDULED".asInstanceOf[SCHEDULED]
-  @scala.inline
-  def SMS: SMS = "SMS".asInstanceOf[SMS]
-  @scala.inline
-  def SUCCESSFUL: SUCCESSFUL = "SUCCESSFUL".asInstanceOf[SUCCESSFUL]
-  @scala.inline
-  def TEMPORARY_FAILURE: TEMPORARY_FAILURE = "TEMPORARY_FAILURE".asInstanceOf[TEMPORARY_FAILURE]
-  @scala.inline
-  def THROTTLED: THROTTLED = "THROTTLED".asInstanceOf[THROTTLED]
-  @scala.inline
-  def TRANSACTIONAL: TRANSACTIONAL = "TRANSACTIONAL".asInstanceOf[TRANSACTIONAL]
-  @scala.inline
-  def TooManyRequestsException: TooManyRequestsException = "TooManyRequestsException".asInstanceOf[TooManyRequestsException]
-  @scala.inline
-  def UNKNOWN_FAILURE: UNKNOWN_FAILURE = "UNKNOWN_FAILURE".asInstanceOf[UNKNOWN_FAILURE]
-  @scala.inline
-  def URL: URL = "URL".asInstanceOf[URL]
-  @scala.inline
-  def WEEKLY: WEEKLY = "WEEKLY".asInstanceOf[WEEKLY]
+  @js.native
+  sealed trait WEEKLY extends StObject
+  inline def WEEKLY: WEEKLY = "WEEKLY".asInstanceOf[WEEKLY]
 }
-

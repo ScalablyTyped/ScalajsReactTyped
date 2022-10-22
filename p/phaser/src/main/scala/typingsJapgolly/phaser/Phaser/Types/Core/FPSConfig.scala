@@ -1,55 +1,72 @@
 package typingsJapgolly.phaser.Phaser.Types.Core
 
-import typingsJapgolly.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FPSConfig extends js.Object {
+trait FPSConfig extends StObject {
+  
   /**
     * Calculate the average frame delta from this many consecutive frame intervals.
     */
-  var deltaHistory: js.UndefOr[integer] = js.undefined
+  var deltaHistory: js.UndefOr[Double] = js.undefined
+  
   /**
     * Use setTimeout instead of requestAnimationFrame to run the game loop.
     */
   var forceSetTimeOut: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The minimum acceptable rendering rate, in frames per second.
     */
-  var min: js.UndefOr[integer] = js.undefined
+  var min: js.UndefOr[Double] = js.undefined
+  
   /**
     * The amount of frames the time step counts before we trust the delta values again.
     */
-  var panicMax: js.UndefOr[integer] = js.undefined
+  var panicMax: js.UndefOr[Double] = js.undefined
+  
   /**
     * Apply delta smoothing during the game update to help avoid spikes?
     */
   var smoothStep: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The optimum rendering rate, in frames per second.
+    * The optimum rendering rate, in frames per second. This does not enforce the fps rate, it merely tells Phaser what rate is considered optimal for this game.
     */
-  var target: js.UndefOr[integer] = js.undefined
+  var target: js.UndefOr[Double] = js.undefined
 }
-
 object FPSConfig {
-  @scala.inline
-  def apply(
-    deltaHistory: Int | Double = null,
-    forceSetTimeOut: js.UndefOr[Boolean] = js.undefined,
-    min: Int | Double = null,
-    panicMax: Int | Double = null,
-    smoothStep: js.UndefOr[Boolean] = js.undefined,
-    target: Int | Double = null
-  ): FPSConfig = {
+  
+  inline def apply(): FPSConfig = {
     val __obj = js.Dynamic.literal()
-    if (deltaHistory != null) __obj.updateDynamic("deltaHistory")(deltaHistory.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSetTimeOut)) __obj.updateDynamic("forceSetTimeOut")(forceSetTimeOut.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (panicMax != null) __obj.updateDynamic("panicMax")(panicMax.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothStep)) __obj.updateDynamic("smoothStep")(smoothStep.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[FPSConfig]
   }
+  
+  extension [Self <: FPSConfig](x: Self) {
+    
+    inline def setDeltaHistory(value: Double): Self = StObject.set(x, "deltaHistory", value.asInstanceOf[js.Any])
+    
+    inline def setDeltaHistoryUndefined: Self = StObject.set(x, "deltaHistory", js.undefined)
+    
+    inline def setForceSetTimeOut(value: Boolean): Self = StObject.set(x, "forceSetTimeOut", value.asInstanceOf[js.Any])
+    
+    inline def setForceSetTimeOutUndefined: Self = StObject.set(x, "forceSetTimeOut", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setPanicMax(value: Double): Self = StObject.set(x, "panicMax", value.asInstanceOf[js.Any])
+    
+    inline def setPanicMaxUndefined: Self = StObject.set(x, "panicMax", js.undefined)
+    
+    inline def setSmoothStep(value: Boolean): Self = StObject.set(x, "smoothStep", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothStepUndefined: Self = StObject.set(x, "smoothStep", js.undefined)
+    
+    inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

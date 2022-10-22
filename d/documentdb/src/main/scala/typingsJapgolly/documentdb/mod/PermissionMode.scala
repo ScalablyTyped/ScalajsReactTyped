@@ -1,24 +1,20 @@
 package typingsJapgolly.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.documentdb.documentdbStrings.None
   - typingsJapgolly.documentdb.documentdbStrings.Read
   - typingsJapgolly.documentdb.documentdbStrings.All
 */
-trait PermissionMode extends js.Object
-
+trait PermissionMode extends StObject
 object PermissionMode {
-  @scala.inline
-  def All: typingsJapgolly.documentdb.documentdbStrings.All = this.cast("All")
-  @scala.inline
-  def None: typingsJapgolly.documentdb.documentdbStrings.None = this.cast("None")
-  @scala.inline
-  def Read: typingsJapgolly.documentdb.documentdbStrings.Read = this.cast("Read")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def All: typingsJapgolly.documentdb.documentdbStrings.All = "All".asInstanceOf[typingsJapgolly.documentdb.documentdbStrings.All]
+  
+  inline def None: typingsJapgolly.documentdb.documentdbStrings.None = "None".asInstanceOf[typingsJapgolly.documentdb.documentdbStrings.None]
+  
+  inline def Read: typingsJapgolly.documentdb.documentdbStrings.Read = "Read".asInstanceOf[typingsJapgolly.documentdb.documentdbStrings.Read]
 }
-

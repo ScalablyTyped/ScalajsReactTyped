@@ -1,34 +1,48 @@
 package typingsJapgolly.restify.mod
 
-import typingsJapgolly.bunyan.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RouterOptions extends js.Object {
+trait RouterOptions extends StObject {
+  
   var ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined
-  var log: js.UndefOr[^] = js.undefined
+  
+  var log: js.UndefOr[typingsJapgolly.bunyan.mod.^] = js.undefined
+  
   var onceNext: js.UndefOr[Boolean] = js.undefined
+  
   var registry: js.UndefOr[RouterRegistryRadix] = js.undefined
+  
   var strictNext: js.UndefOr[Boolean] = js.undefined
 }
-
 object RouterOptions {
-  @scala.inline
-  def apply(
-    ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined,
-    log: ^ = null,
-    onceNext: js.UndefOr[Boolean] = js.undefined,
-    registry: RouterRegistryRadix = null,
-    strictNext: js.UndefOr[Boolean] = js.undefined
-  ): RouterOptions = {
+  
+  inline def apply(): RouterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreTrailingSlash)) __obj.updateDynamic("ignoreTrailingSlash")(ignoreTrailingSlash.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (!js.isUndefined(onceNext)) __obj.updateDynamic("onceNext")(onceNext.asInstanceOf[js.Any])
-    if (registry != null) __obj.updateDynamic("registry")(registry.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictNext)) __obj.updateDynamic("strictNext")(strictNext.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterOptions]
   }
+  
+  extension [Self <: RouterOptions](x: Self) {
+    
+    inline def setIgnoreTrailingSlash(value: Boolean): Self = StObject.set(x, "ignoreTrailingSlash", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreTrailingSlashUndefined: Self = StObject.set(x, "ignoreTrailingSlash", js.undefined)
+    
+    inline def setLog(value: typingsJapgolly.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    
+    inline def setOnceNext(value: Boolean): Self = StObject.set(x, "onceNext", value.asInstanceOf[js.Any])
+    
+    inline def setOnceNextUndefined: Self = StObject.set(x, "onceNext", js.undefined)
+    
+    inline def setRegistry(value: RouterRegistryRadix): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+    
+    inline def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
+    
+    inline def setStrictNext(value: Boolean): Self = StObject.set(x, "strictNext", value.asInstanceOf[js.Any])
+    
+    inline def setStrictNextUndefined: Self = StObject.set(x, "strictNext", js.undefined)
+  }
 }
-

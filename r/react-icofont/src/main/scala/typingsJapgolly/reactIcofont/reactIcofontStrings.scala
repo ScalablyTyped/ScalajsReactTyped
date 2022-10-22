@@ -1,84 +1,68 @@
 package typingsJapgolly.reactIcofont
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactIcofontStrings {
-  @js.native
-  sealed trait `1` extends js.Object
   
   @js.native
-  sealed trait `10` extends js.Object
+  sealed trait `1` extends StObject
+  inline def `1`: `1` = "1".asInstanceOf[`1`]
   
   @js.native
-  sealed trait `180` extends js.Object
+  sealed trait `10` extends StObject
+  inline def `10`: `10` = "10".asInstanceOf[`10`]
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `180` extends StObject
+  inline def `180`: `180` = "180".asInstanceOf[`180`]
   
   @js.native
-  sealed trait `270` extends js.Object
+  sealed trait `2` extends StObject
+  inline def `2`: `2` = "2".asInstanceOf[`2`]
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `270` extends StObject
+  inline def `270`: `270` = "270".asInstanceOf[`270`]
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `3` extends StObject
+  inline def `3`: `3` = "3".asInstanceOf[`3`]
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `4` extends StObject
+  inline def `4`: `4` = "4".asInstanceOf[`4`]
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `5` extends StObject
+  inline def `5`: `5` = "5".asInstanceOf[`5`]
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `6` extends StObject
+  inline def `6`: `6` = "6".asInstanceOf[`6`]
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `7` extends StObject
+  inline def `7`: `7` = "7".asInstanceOf[`7`]
   
   @js.native
-  sealed trait `9` extends js.Object
+  sealed trait `8` extends StObject
+  inline def `8`: `8` = "8".asInstanceOf[`8`]
   
   @js.native
-  sealed trait `90` extends js.Object
+  sealed trait `9` extends StObject
+  inline def `9`: `9` = "9".asInstanceOf[`9`]
   
   @js.native
-  sealed trait h extends js.Object
+  sealed trait `90` extends StObject
+  inline def `90`: `90` = "90".asInstanceOf[`90`]
   
   @js.native
-  sealed trait v extends js.Object
+  sealed trait h extends StObject
+  inline def h: h = "h".asInstanceOf[h]
   
-  @scala.inline
-  def `1`: `1` = "1".asInstanceOf[`1`]
-  @scala.inline
-  def `10`: `10` = "10".asInstanceOf[`10`]
-  @scala.inline
-  def `180`: `180` = "180".asInstanceOf[`180`]
-  @scala.inline
-  def `2`: `2` = "2".asInstanceOf[`2`]
-  @scala.inline
-  def `270`: `270` = "270".asInstanceOf[`270`]
-  @scala.inline
-  def `3`: `3` = "3".asInstanceOf[`3`]
-  @scala.inline
-  def `4`: `4` = "4".asInstanceOf[`4`]
-  @scala.inline
-  def `5`: `5` = "5".asInstanceOf[`5`]
-  @scala.inline
-  def `6`: `6` = "6".asInstanceOf[`6`]
-  @scala.inline
-  def `7`: `7` = "7".asInstanceOf[`7`]
-  @scala.inline
-  def `8`: `8` = "8".asInstanceOf[`8`]
-  @scala.inline
-  def `9`: `9` = "9".asInstanceOf[`9`]
-  @scala.inline
-  def `90`: `90` = "90".asInstanceOf[`90`]
-  @scala.inline
-  def h: h = "h".asInstanceOf[h]
-  @scala.inline
-  def v: v = "v".asInstanceOf[v]
+  @js.native
+  sealed trait v extends StObject
+  inline def v: v = "v".asInstanceOf[v]
 }
-

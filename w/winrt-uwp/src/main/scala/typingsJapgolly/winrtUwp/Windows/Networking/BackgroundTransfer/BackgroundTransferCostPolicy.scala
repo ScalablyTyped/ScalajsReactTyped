@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.BackgroundTransfer
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BackgroundTransferCostPolicy extends js.Object
-
+sealed trait BackgroundTransferCostPolicy extends StObject
 /** Defines values used to specify whether transfers can occur on metered networks. */
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy")
 @js.native
-object BackgroundTransferCostPolicy extends js.Object {
-  /** Always download regardless of network cost. (e.g. even while a user is roaming) */
-  @js.native
-  sealed trait always extends BackgroundTransferCostPolicy
+object BackgroundTransferCostPolicy extends StObject {
   
   /** Allow transfers on metered networks. */
   @js.native
-  sealed trait default extends BackgroundTransferCostPolicy
+  sealed trait default
+    extends StObject
+       with BackgroundTransferCostPolicy
+  
+  /** Always download regardless of network cost. (e.g. even while a user is roaming) */
+  @js.native
+  sealed trait always
+    extends StObject
+       with BackgroundTransferCostPolicy
   
   /** Do not allow transfers on metered networks. */
   @js.native
-  sealed trait unrestrictedOnly extends BackgroundTransferCostPolicy
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BackgroundTransferCostPolicy with Double] = js.native
-  /* 2 */ @js.native
-  object always extends TopLevel[always with Double]
-  
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object unrestrictedOnly extends TopLevel[unrestrictedOnly with Double]
-  
+  sealed trait unrestrictedOnly
+    extends StObject
+       with BackgroundTransferCostPolicy
 }
-

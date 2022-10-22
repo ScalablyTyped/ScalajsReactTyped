@@ -1,70 +1,64 @@
 package typingsJapgolly.materialUi.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.materialUi.MaterialUI.Table.TableRowProps
-import typingsJapgolly.materialUi.tableRowMod.default
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableRow {
-  def apply(
-    className: String = null,
-    displayBorder: js.UndefOr[Boolean] = js.undefined,
-    hoverable: js.UndefOr[Boolean] = js.undefined,
-    hovered: js.UndefOr[Boolean] = js.undefined,
-    onCellClick: (/* e */ ReactMouseEventFrom[js.Object with Element], /* row */ Double, /* column */ Double) => Callback = null,
-    onCellHover: (/* e */ ReactMouseEventFrom[js.Object with Element], /* row */ Double, /* column */ Double) => Callback = null,
-    onCellHoverExit: (/* e */ ReactMouseEventFrom[js.Object with Element], /* row */ Double, /* column */ Double) => Callback = null,
-    onRowClick: (/* e */ ReactMouseEventFrom[js.Object with Element], /* row */ Double) => Callback = null,
-    onRowHover: (/* e */ ReactMouseEventFrom[js.Object with Element], /* row */ Double) => Callback = null,
-    onRowHoverExit: (/* e */ ReactMouseEventFrom[js.Object with Element], /* row */ Double) => Callback = null,
-    rowNumber: Int | Double = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    striped: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TableRowProps, default, Unit, TableRowProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayBorder)) __obj.updateDynamic("displayBorder")(displayBorder.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.asInstanceOf[js.Any])
-    if (!js.isUndefined(hovered)) __obj.updateDynamic("hovered")(hovered.asInstanceOf[js.Any])
-    if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction3((t0: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[js.Object with org.scalajs.dom.raw.Element], t1: /* row */ scala.Double, t2: /* column */ scala.Double) => onCellClick(t0, t1, t2).runNow()))
-    if (onCellHover != null) __obj.updateDynamic("onCellHover")(js.Any.fromFunction3((t0: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[js.Object with org.scalajs.dom.raw.Element], t1: /* row */ scala.Double, t2: /* column */ scala.Double) => onCellHover(t0, t1, t2).runNow()))
-    if (onCellHoverExit != null) __obj.updateDynamic("onCellHoverExit")(js.Any.fromFunction3((t0: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[js.Object with org.scalajs.dom.raw.Element], t1: /* row */ scala.Double, t2: /* column */ scala.Double) => onCellHoverExit(t0, t1, t2).runNow()))
-    if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction2((t0: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[js.Object with org.scalajs.dom.raw.Element], t1: /* row */ scala.Double) => onRowClick(t0, t1).runNow()))
-    if (onRowHover != null) __obj.updateDynamic("onRowHover")(js.Any.fromFunction2((t0: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[js.Object with org.scalajs.dom.raw.Element], t1: /* row */ scala.Double) => onRowHover(t0, t1).runNow()))
-    if (onRowHoverExit != null) __obj.updateDynamic("onRowHoverExit")(js.Any.fromFunction2((t0: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[js.Object with org.scalajs.dom.raw.Element], t1: /* row */ scala.Double) => onRowHoverExit(t0, t1).runNow()))
-    if (rowNumber != null) __obj.updateDynamic("rowNumber")(rowNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUi.MaterialUI.Table.TableRowProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUi.tableRowMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUi.MaterialUI.Table.TableRowProps])(children: _*)
-  }
-  @JSImport("material-ui/Table/TableRow", JSImport.Default)
+  @JSImport("material-ui", "TableRow")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.materialUi.mod.TableRow] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def displayBorder(value: Boolean): this.type = set("displayBorder", value.asInstanceOf[js.Any])
+    
+    inline def hoverable(value: Boolean): this.type = set("hoverable", value.asInstanceOf[js.Any])
+    
+    inline def hovered(value: Boolean): this.type = set("hovered", value.asInstanceOf[js.Any])
+    
+    inline def onCellClick(
+      value: (/* e */ ReactMouseEventFrom[js.Object & Element], /* row */ Double, /* column */ Double) => Callback
+    ): this.type = set("onCellClick", js.Any.fromFunction3((t0: /* e */ ReactMouseEventFrom[js.Object & Element], t1: /* row */ Double, t2: /* column */ Double) => (value(t0, t1, t2)).runNow()))
+    
+    inline def onCellHover(
+      value: (/* e */ ReactMouseEventFrom[js.Object & Element], /* row */ Double, /* column */ Double) => Callback
+    ): this.type = set("onCellHover", js.Any.fromFunction3((t0: /* e */ ReactMouseEventFrom[js.Object & Element], t1: /* row */ Double, t2: /* column */ Double) => (value(t0, t1, t2)).runNow()))
+    
+    inline def onCellHoverExit(
+      value: (/* e */ ReactMouseEventFrom[js.Object & Element], /* row */ Double, /* column */ Double) => Callback
+    ): this.type = set("onCellHoverExit", js.Any.fromFunction3((t0: /* e */ ReactMouseEventFrom[js.Object & Element], t1: /* row */ Double, t2: /* column */ Double) => (value(t0, t1, t2)).runNow()))
+    
+    inline def onRowClick(value: (/* e */ ReactMouseEventFrom[js.Object & Element], /* row */ Double) => Callback): this.type = set("onRowClick", js.Any.fromFunction2((t0: /* e */ ReactMouseEventFrom[js.Object & Element], t1: /* row */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def onRowHover(value: (/* e */ ReactMouseEventFrom[js.Object & Element], /* row */ Double) => Callback): this.type = set("onRowHover", js.Any.fromFunction2((t0: /* e */ ReactMouseEventFrom[js.Object & Element], t1: /* row */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def onRowHoverExit(value: (/* e */ ReactMouseEventFrom[js.Object & Element], /* row */ Double) => Callback): this.type = set("onRowHoverExit", js.Any.fromFunction2((t0: /* e */ ReactMouseEventFrom[js.Object & Element], t1: /* row */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def rowNumber(value: Double): this.type = set("rowNumber", value.asInstanceOf[js.Any])
+    
+    inline def selectable(value: Boolean): this.type = set("selectable", value.asInstanceOf[js.Any])
+    
+    inline def selected(value: Boolean): this.type = set("selected", value.asInstanceOf[js.Any])
+    
+    inline def striped(value: Boolean): this.type = set("striped", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: TableRow.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TableRowProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,34 +1,33 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ObjectPattern
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Pattern {
-  var properties: js.Array[AssignmentProperty]
+  
+  var properties: js.Array[AssignmentProperty | RestElement]
+  
   @JSName("type")
   var type_ObjectPattern: typingsJapgolly.estree.estreeStrings.ObjectPattern
 }
-
 object ObjectPattern {
-  @scala.inline
-  def apply(
-    properties: js.Array[AssignmentProperty],
-    `type`: typingsJapgolly.estree.estreeStrings.ObjectPattern,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ObjectPattern = {
+  
+  inline def apply(properties: js.Array[AssignmentProperty | RestElement]): ObjectPattern = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ObjectPattern")
     __obj.asInstanceOf[ObjectPattern]
   }
+  
+  extension [Self <: ObjectPattern](x: Self) {
+    
+    inline def setProperties(value: js.Array[AssignmentProperty | RestElement]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesVarargs(value: (AssignmentProperty | RestElement)*): Self = StObject.set(x, "properties", js.Array(value*))
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.ObjectPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

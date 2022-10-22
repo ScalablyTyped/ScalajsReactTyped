@@ -1,15 +1,18 @@
 package typingsJapgolly.winjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides helper functions for defining namespaces. For more information, see Organizing your code with WinJS.Namespace.
 **/
-@JSImport("winjs", "Namespace")
-@js.native
-object Namespace extends js.Object {
+object Namespace {
+  
+  @JSImport("winjs", "Namespace")
+  @js.native
+  val ^ : js.Any = js.native
+  
   //#region Functions
   /**
     * Defines a new namespace with the specified name. For more information, see Organizing your code with WinJS.Namespace.
@@ -17,9 +20,11 @@ object Namespace extends js.Object {
     * @param members The members of the new namespace.
     * @returns The newly-defined namespace.
     **/
-  def define(): js.Any = js.native
-  def define(name: String): js.Any = js.native
-  def define(name: String, members: js.Any): js.Any = js.native
+  inline def define(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("define")().asInstanceOf[Any]
+  inline def define(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def define(name: String, members: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def define(name: Unit, members: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
   /**
     * Defines a new namespace with the specified name under the specified parent namespace. For more information, see Organizing your code with WinJS.Namespace.
     * @param parentNamespace The parent namespace.
@@ -27,9 +32,12 @@ object Namespace extends js.Object {
     * @param members The members of the new namespace.
     * @returns The newly-defined namespace.
     **/
-  def defineWithParent(): js.Any = js.native
-  def defineWithParent(parentNamespace: js.Any): js.Any = js.native
-  def defineWithParent(parentNamespace: js.Any, name: String): js.Any = js.native
-  def defineWithParent(parentNamespace: js.Any, name: String, members: js.Any): js.Any = js.native
+  inline def defineWithParent(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")().asInstanceOf[Any]
+  inline def defineWithParent(parentNamespace: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def defineWithParent(parentNamespace: Any, name: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def defineWithParent(parentNamespace: Any, name: String, members: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def defineWithParent(parentNamespace: Any, name: Unit, members: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def defineWithParent(parentNamespace: Unit, name: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def defineWithParent(parentNamespace: Unit, name: String, members: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def defineWithParent(parentNamespace: Unit, name: Unit, members: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineWithParent")(parentNamespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[Any]
 }
-

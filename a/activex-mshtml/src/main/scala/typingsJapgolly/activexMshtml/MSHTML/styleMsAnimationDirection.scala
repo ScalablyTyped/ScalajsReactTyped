@@ -1,39 +1,35 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`3`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`4`
+import typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`2`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`3`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`3`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`4`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2`
+  - typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`3`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`4`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`2`
 */
-trait styleMsAnimationDirection extends js.Object
-
+trait styleMsAnimationDirection extends StObject
 object styleMsAnimationDirection {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def styleMsAnimationDirectionAlternate: `1` = this.cast(1)
-  @scala.inline
-  def styleMsAnimationDirectionAlternateReverse: `3` = this.cast(3)
-  @scala.inline
-  def styleMsAnimationDirectionNormal: `0` = this.cast(0)
-  @scala.inline
-  def styleMsAnimationDirectionNotSet: `4` = this.cast(4)
-  @scala.inline
-  def styleMsAnimationDirectionReverse: `2` = this.cast(2)
-  @scala.inline
-  def styleMsAnimationDirection_Max: `2147483647` = this.cast(2147483647)
+  
+  inline def styleMsAnimationDirectionAlternate: `1` = 1.asInstanceOf[`1`]
+  
+  inline def styleMsAnimationDirectionAlternateReverse: `3` = 3.asInstanceOf[`3`]
+  
+  inline def styleMsAnimationDirectionNormal: `0` = 0.asInstanceOf[`0`]
+  
+  inline def styleMsAnimationDirectionNotSet: `4` = 4.asInstanceOf[`4`]
+  
+  inline def styleMsAnimationDirectionReverse: `2` = 2.asInstanceOf[`2`]
+  
+  inline def styleMsAnimationDirection_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }
-

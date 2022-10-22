@@ -1,29 +1,27 @@
 package typingsJapgolly.redisInfo.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LinkStatus extends js.Object
-
+sealed trait LinkStatus extends StObject
 @JSImport("redis-info", "LinkStatus")
 @js.native
-object LinkStatus extends js.Object {
-  @js.native
-  sealed trait DOWN extends LinkStatus
-  
-  @js.native
-  sealed trait UP extends LinkStatus
+object LinkStatus extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[LinkStatus with String] = js.native
-  /* "down" */ @js.native
-  object DOWN extends TopLevel[DOWN with String]
+  def apply(value: String): js.UndefOr[LinkStatus & String] = js.native
   
-  /* "up" */ @js.native
-  object UP extends TopLevel[UP with String]
+  @js.native
+  sealed trait DOWN
+    extends StObject
+       with LinkStatus
+  /* "down" */ val DOWN: typingsJapgolly.redisInfo.mod.LinkStatus.DOWN & String = js.native
   
+  @js.native
+  sealed trait UP
+    extends StObject
+       with LinkStatus
+  /* "up" */ val UP: typingsJapgolly.redisInfo.mod.LinkStatus.UP & String = js.native
 }
-

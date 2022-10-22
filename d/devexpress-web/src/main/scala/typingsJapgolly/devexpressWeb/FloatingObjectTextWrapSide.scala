@@ -1,56 +1,47 @@
 package typingsJapgolly.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FloatingObjectTextWrapSide extends js.Object
-
+sealed trait FloatingObjectTextWrapSide extends StObject
 /**
   * Lists values specifying how text can wrap around a floating object's left and right sides.
   */
 @JSGlobal("FloatingObjectTextWrapSide")
 @js.native
-object FloatingObjectTextWrapSide extends js.Object {
+object FloatingObjectTextWrapSide extends StObject {
+  
   /**
     * Wraps text to both the left and right of the shape.
     */
   @js.native
-  sealed trait Both extends FloatingObjectTextWrapSide
+  sealed trait Both
+    extends StObject
+       with FloatingObjectTextWrapSide
   
   /**
     * Wraps text on the side that is the greater distance from the shape to the margin.
     */
   @js.native
-  sealed trait Largest extends FloatingObjectTextWrapSide
+  sealed trait Largest
+    extends StObject
+       with FloatingObjectTextWrapSide
   
   /**
     * Wraps text to the left of the shape.
     */
   @js.native
-  sealed trait Left extends FloatingObjectTextWrapSide
+  sealed trait Left
+    extends StObject
+       with FloatingObjectTextWrapSide
   
   /**
     * Wraps text to the right of the shape.
     */
   @js.native
-  sealed trait Right extends FloatingObjectTextWrapSide
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FloatingObjectTextWrapSide with Double] = js.native
-  /* 0 */ @js.native
-  object Both extends TopLevel[Both with Double]
-  
-  /* 3 */ @js.native
-  object Largest extends TopLevel[Largest with Double]
-  
-  /* 1 */ @js.native
-  object Left extends TopLevel[Left with Double]
-  
-  /* 2 */ @js.native
-  object Right extends TopLevel[Right with Double]
-  
+  sealed trait Right
+    extends StObject
+       with FloatingObjectTextWrapSide
 }
-

@@ -1,14 +1,17 @@
 package typingsJapgolly.electronWinstaller
 
-import typingsJapgolly.electronWinstaller.optionsMod.Options
+import typingsJapgolly.electronWinstaller.libOptionsMod.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("electron-winstaller", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def convertVersion(version: String): String = js.native
-  def createWindowsInstaller(options: Options): js.Promise[Unit] = js.native
+object mod {
+  
+  @JSImport("electron-winstaller", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def convertVersion(version: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertVersion")(version.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def createWindowsInstaller(options: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWindowsInstaller")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }
-

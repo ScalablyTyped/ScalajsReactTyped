@@ -1,8 +1,8 @@
 package typingsJapgolly.oauth2orize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oauth2orize", "AuthorizationError")
 @js.native
@@ -17,13 +17,28 @@ import scala.scalajs.js.annotation._
   * Defaults to *server_error*.
   * @param status Defaults to 500 if code is not specified.
   */
-class AuthorizationError () extends OAuth2Error {
+open class AuthorizationError () extends OAuth2Error {
   def this(message: String) = this()
   def this(message: String, code: String) = this()
   def this(message: String, code: AuthorizationErrorCode) = this()
+  def this(message: Unit, code: String) = this()
+  def this(message: Unit, code: AuthorizationErrorCode) = this()
   def this(message: String, code: String, uri: String) = this()
+  def this(message: String, code: Unit, uri: String) = this()
   def this(message: String, code: AuthorizationErrorCode, uri: String) = this()
+  def this(message: Unit, code: String, uri: String) = this()
+  def this(message: Unit, code: Unit, uri: String) = this()
+  def this(message: Unit, code: AuthorizationErrorCode, uri: String) = this()
   def this(message: String, code: String, uri: String, status: Double) = this()
+  def this(message: String, code: String, uri: Unit, status: Double) = this()
+  def this(message: String, code: Unit, uri: String, status: Double) = this()
+  def this(message: String, code: Unit, uri: Unit, status: Double) = this()
   def this(message: String, code: AuthorizationErrorCode, uri: String, status: Double) = this()
+  def this(message: String, code: AuthorizationErrorCode, uri: Unit, status: Double) = this()
+  def this(message: Unit, code: String, uri: String, status: Double) = this()
+  def this(message: Unit, code: String, uri: Unit, status: Double) = this()
+  def this(message: Unit, code: Unit, uri: String, status: Double) = this()
+  def this(message: Unit, code: Unit, uri: Unit, status: Double) = this()
+  def this(message: Unit, code: AuthorizationErrorCode, uri: String, status: Double) = this()
+  def this(message: Unit, code: AuthorizationErrorCode, uri: Unit, status: Double) = this()
 }
-

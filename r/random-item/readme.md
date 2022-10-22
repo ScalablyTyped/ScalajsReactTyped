@@ -1,7 +1,7 @@
 
 # Scala.js typings for random-item
 
-Typings are for version 3.0.0
+Typings are for version 4.0.1
 
 ## Library description:
 Get a random item from an array
@@ -11,9 +11,9 @@ Get a random item from an array
 | Full name          | random-item |
 | Keywords           | random, randomize, math, array, item, element, pick, select |
 | # releases         | 3 |
-| # dependents       | 47 |
-| # downloads        | 1087824 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 90958.0 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/random-item#readme)

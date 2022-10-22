@@ -1,34 +1,33 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadata
-  extends /**
-	 * Option for IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadata
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Optional="false" Metadata used for the creation of the cube.
-  	 */
+    * Optional="false" Metadata used for the creation of the cube.
+    */
   var cube: js.UndefOr[IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube] = js.undefined
 }
-
 object IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadata {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadata
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    cube: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube = null
-  ): IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadata = {
+  
+  inline def apply(): IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadata = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cube != null) __obj.updateDynamic("cube")(cube.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadata]
   }
+  
+  extension [Self <: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadata](x: Self) {
+    
+    inline def setCube(value: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
+    
+    inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
+  }
 }
-

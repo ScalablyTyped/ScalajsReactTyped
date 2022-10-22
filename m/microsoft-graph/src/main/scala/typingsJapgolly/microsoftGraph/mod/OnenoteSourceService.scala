@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.Unknown
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.OneDriveForBusiness
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.OnPremOneDriveForBusiness
 */
-trait OnenoteSourceService extends js.Object
-
+trait OnenoteSourceService extends StObject
 object OnenoteSourceService {
-  @scala.inline
-  def OnPremOneDriveForBusiness: typingsJapgolly.microsoftGraph.microsoftGraphStrings.OnPremOneDriveForBusiness = this.cast("OnPremOneDriveForBusiness")
-  @scala.inline
-  def OneDrive: typingsJapgolly.microsoftGraph.microsoftGraphStrings.OneDrive = this.cast("OneDrive")
-  @scala.inline
-  def OneDriveForBusiness: typingsJapgolly.microsoftGraph.microsoftGraphStrings.OneDriveForBusiness = this.cast("OneDriveForBusiness")
-  @scala.inline
-  def Unknown: typingsJapgolly.microsoftGraph.microsoftGraphStrings.Unknown = this.cast("Unknown")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def OnPremOneDriveForBusiness: typingsJapgolly.microsoftGraph.microsoftGraphStrings.OnPremOneDriveForBusiness = "OnPremOneDriveForBusiness".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.OnPremOneDriveForBusiness]
+  
+  inline def OneDrive: typingsJapgolly.microsoftGraph.microsoftGraphStrings.OneDrive = "OneDrive".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.OneDrive]
+  
+  inline def OneDriveForBusiness: typingsJapgolly.microsoftGraph.microsoftGraphStrings.OneDriveForBusiness = "OneDriveForBusiness".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.OneDriveForBusiness]
+  
+  inline def Unknown: typingsJapgolly.microsoftGraph.microsoftGraphStrings.Unknown = "Unknown".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.Unknown]
 }
-

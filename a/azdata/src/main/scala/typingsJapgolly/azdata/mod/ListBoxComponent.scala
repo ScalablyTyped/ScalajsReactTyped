@@ -2,18 +2,25 @@ package typingsJapgolly.azdata.mod
 
 import typingsJapgolly.vscode.mod.Disposable
 import typingsJapgolly.vscode.mod.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.azdata.mod.ComponentProperties because Already inherited
+- typingsJapgolly.azdata.mod.ListBoxProperties because var conflicts: CSSStyles, ariaHidden, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined selectedRow, values */ @js.native
 trait ListBoxComponent
-  extends Component
-     with ListBoxProperties {
+  extends StObject
+     with Component {
+  
+  def onRowSelected(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
+  def onRowSelected(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native
+  def onRowSelected(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onRowSelected(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   @JSName("onRowSelected")
-  var onRowSelected_Original: Event[_] = js.native
-  def onRowSelected(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
-  def onRowSelected(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
-  def onRowSelected(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  var onRowSelected_Original: Event[Any] = js.native
+  
+  var selectedRow: js.UndefOr[Double] = js.native
+  
+  var values: js.UndefOr[js.Array[String]] = js.native
 }
-

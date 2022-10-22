@@ -1,24 +1,35 @@
 package typingsJapgolly.nextServer
 
-import japgolly.scalajs.react.raw.React.Element
+import typingsJapgolly.nextServer.anon.Children
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("next-server/dist/lib/head", JSImport.Namespace)
-@js.native
-object headMod extends js.Object {
-  def defaultHead(): js.Array[Element] = js.native
-  def defaultHead(inAmpMode: Boolean): js.Array[Element] = js.native
+object headMod {
+  
+  @JSImport("next-server/head", JSImport.Namespace)
   @js.native
-  object default extends js.Object {
-    var rewind: js.Function0[js.UndefOr[js.Array[Element]]] = js.native
+  val ^ : js.Any = js.native
+  
+  object default {
+    
     /**
       * This component injects elements to `<head>` of your page.
       * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
       */
-    def apply(hasChildren: AnonChildren): Element = js.native
+    inline def apply(hasChildren: Children): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @JSImport("next-server/head", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("next-server/head", "default.rewind")
+    @js.native
+    def rewind: js.Function0[js.UndefOr[js.Array[japgolly.scalajs.react.facade.React.Element]]] = js.native
+    inline def rewind_=(x: js.Function0[js.UndefOr[js.Array[japgolly.scalajs.react.facade.React.Element]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rewind")(x.asInstanceOf[js.Any])
   }
   
+  inline def defaultHead(): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultHead")().asInstanceOf[js.Array[Element]]
+  inline def defaultHead(inAmpMode: Boolean): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultHead")(inAmpMode.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]
 }
-

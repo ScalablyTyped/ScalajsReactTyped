@@ -1,20 +1,23 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Background
 
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IMapView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IBackgroundTaskRegistrationStatics extends js.Object {
+trait IBackgroundTaskRegistrationStatics extends StObject {
+  
   var allTasks: IMapView[String, IBackgroundTaskRegistration]
 }
-
 object IBackgroundTaskRegistrationStatics {
-  @scala.inline
-  def apply(allTasks: IMapView[String, IBackgroundTaskRegistration]): IBackgroundTaskRegistrationStatics = {
-    val __obj = js.Dynamic.literal(allTasks = allTasks.asInstanceOf[js.Any])
   
+  inline def apply(allTasks: IMapView[String, IBackgroundTaskRegistration]): IBackgroundTaskRegistrationStatics = {
+    val __obj = js.Dynamic.literal(allTasks = allTasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBackgroundTaskRegistrationStatics]
   }
+  
+  extension [Self <: IBackgroundTaskRegistrationStatics](x: Self) {
+    
+    inline def setAllTasks(value: IMapView[String, IBackgroundTaskRegistration]): Self = StObject.set(x, "allTasks", value.asInstanceOf[js.Any])
+  }
 }
-

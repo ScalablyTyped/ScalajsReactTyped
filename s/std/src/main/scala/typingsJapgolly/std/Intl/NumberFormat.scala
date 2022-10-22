@@ -1,38 +1,33 @@
 package typingsJapgolly.std.Intl
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberFormat extends js.Object {
+trait NumberFormat extends StObject {
+  
+  def format(value: js.BigInt): String = js.native
+  /* standard es5 */
   def format(value: Double): String = js.native
+  
+  def formatRange(start: js.BigInt, end: js.BigInt): String = js.native
+  def formatRange(start: js.BigInt, end: Double): String = js.native
+  def formatRange(start: Double, end: js.BigInt): String = js.native
+  /* standard esnext.intl */
+  def formatRange(start: Double, end: Double): String = js.native
+  
+  def formatRangeToParts(start: js.BigInt, end: js.BigInt): js.Array[NumberRangeFormatPart] = js.native
+  def formatRangeToParts(start: js.BigInt, end: Double): js.Array[NumberRangeFormatPart] = js.native
+  def formatRangeToParts(start: Double, end: js.BigInt): js.Array[NumberRangeFormatPart] = js.native
+  /* standard esnext.intl */
+  def formatRangeToParts(start: Double, end: Double): js.Array[NumberRangeFormatPart] = js.native
+  
+  /* standard es2018.intl */
   def formatToParts(): js.Array[NumberFormatPart] = js.native
+  def formatToParts(number: js.BigInt): js.Array[NumberFormatPart] = js.native
   def formatToParts(number: Double): js.Array[NumberFormatPart] = js.native
+  
+  /* standard es5 */
   def resolvedOptions(): ResolvedNumberFormatOptions = js.native
 }
-
-@JSGlobal("Intl.NumberFormat")
-@js.native
-object NumberFormat
-  extends Instantiable0[NumberFormat]
-     with Instantiable1[(/* locales */ js.Array[String]) | (/* locales */ String), NumberFormat]
-     with Instantiable2[
-      (/* locales */ js.Array[String]) | (/* locales */ String), 
-      /* options */ NumberFormatOptions, 
-      NumberFormat
-    ] {
-  def apply(): NumberFormat = js.native
-  def apply(locales: String): NumberFormat = js.native
-  def apply(locales: String, options: NumberFormatOptions): NumberFormat = js.native
-  def apply(locales: js.Array[String]): NumberFormat = js.native
-  def apply(locales: js.Array[String], options: NumberFormatOptions): NumberFormat = js.native
-  def supportedLocalesOf(locales: String): js.Array[String] = js.native
-  def supportedLocalesOf(locales: String, options: NumberFormatOptions): js.Array[String] = js.native
-  def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
-  def supportedLocalesOf(locales: js.Array[String], options: NumberFormatOptions): js.Array[String] = js.native
-}
-

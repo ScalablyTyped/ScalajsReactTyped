@@ -1,20 +1,21 @@
 package typingsJapgolly.aframe.mod.THREE
 
+import typingsJapgolly.three.srcUtilsMod.ColorRepresentation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.SpotLight")
 @js.native
-class SpotLight protected ()
+open class SpotLight protected ()
   extends typingsJapgolly.three.mod.SpotLight {
   def this(
-    color: js.UndefOr[typingsJapgolly.three.colorMod.Color],
+    color: js.UndefOr[ColorRepresentation],
     intensity: js.UndefOr[Double],
     distance: js.UndefOr[Double],
     angle: js.UndefOr[Double],
-    exponent: js.UndefOr[Double],
+    penumbra: js.UndefOr[Double],
     decay: js.UndefOr[Double]
   ) = this()
 }
-

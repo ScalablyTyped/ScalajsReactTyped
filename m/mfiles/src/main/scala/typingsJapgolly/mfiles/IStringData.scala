@@ -2,22 +2,31 @@ package typingsJapgolly.mfiles
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.mfiles.MFiles.MFStringDataType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IStringData extends js.Object {
+trait IStringData extends StObject {
+  
   var AsString: String
-  val StringDataType: MFStringDataType
+  
   def Clone(): IStringData
+  
+  val StringDataType: MFStringDataType
 }
-
 object IStringData {
-  @scala.inline
-  def apply(AsString: String, Clone: CallbackTo[IStringData], StringDataType: MFStringDataType): IStringData = {
-    val __obj = js.Dynamic.literal(AsString = AsString.asInstanceOf[js.Any], StringDataType = StringDataType.asInstanceOf[js.Any])
-    __obj.updateDynamic("Clone")(Clone.toJsFn)
+  
+  inline def apply(AsString: String, Clone: CallbackTo[IStringData], StringDataType: MFStringDataType): IStringData = {
+    val __obj = js.Dynamic.literal(AsString = AsString.asInstanceOf[js.Any], Clone = Clone.toJsFn, StringDataType = StringDataType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStringData]
   }
+  
+  extension [Self <: IStringData](x: Self) {
+    
+    inline def setAsString(value: String): Self = StObject.set(x, "AsString", value.asInstanceOf[js.Any])
+    
+    inline def setClone(value: CallbackTo[IStringData]): Self = StObject.set(x, "Clone", value.toJsFn)
+    
+    inline def setStringDataType(value: MFStringDataType): Self = StObject.set(x, "StringDataType", value.asInstanceOf[js.Any])
+  }
 }
-

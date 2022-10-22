@@ -10,10 +10,10 @@ an operating-system utility library
 | ------------------ | :-------------: |
 | Full name          | os-utils |
 | Keywords           | os, operating system, server, memory, cpu, monitor, stats, harddrive |
-| # releases         | 0 |
-| # dependents       | 67 |
-| # downloads        | 429749 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 109572.33333333333 |
+| # stars            | 208.0 |
 
 ## Links
 - [Homepage](https://github.com/oscmejia/os-utils#readme)

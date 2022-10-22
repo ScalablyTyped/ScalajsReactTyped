@@ -1,19 +1,34 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Usb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a way for the app to get an Advanced Query Syntax (AQS) string by specifying the class code, subclass code, and the protocol code defined by the device. The properties in this class are passed in the call to GetDeviceClassSelector . */
-@JSGlobal("Windows.Devices.Usb.UsbDeviceClass")
-@js.native
-/** Creates a UsbDeviceClass object. */
-class UsbDeviceClass () extends js.Object {
+trait UsbDeviceClass extends StObject {
+  
   /** Gets or sets the class code of the device. */
-  var classCode: Double = js.native
+  var classCode: Double
+  
   /** Gets or sets the protocol code of the device. */
-  var protocolCode: Double = js.native
+  var protocolCode: Double
+  
   /** Gets or sets the subclass code of the device. */
-  var subclassCode: Double = js.native
+  var subclassCode: Double
 }
-
+object UsbDeviceClass {
+  
+  inline def apply(classCode: Double, protocolCode: Double, subclassCode: Double): UsbDeviceClass = {
+    val __obj = js.Dynamic.literal(classCode = classCode.asInstanceOf[js.Any], protocolCode = protocolCode.asInstanceOf[js.Any], subclassCode = subclassCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UsbDeviceClass]
+  }
+  
+  extension [Self <: UsbDeviceClass](x: Self) {
+    
+    inline def setClassCode(value: Double): Self = StObject.set(x, "classCode", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolCode(value: Double): Self = StObject.set(x, "protocolCode", value.asInstanceOf[js.Any])
+    
+    inline def setSubclassCode(value: Double): Self = StObject.set(x, "subclassCode", value.asInstanceOf[js.Any])
+  }
+}

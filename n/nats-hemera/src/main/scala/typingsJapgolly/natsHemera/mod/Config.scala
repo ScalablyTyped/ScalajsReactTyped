@@ -1,59 +1,98 @@
 package typingsJapgolly.natsHemera.mod
 
-import typingsJapgolly.natsHemera.natsHemeraNumbers.`2000`
+import typingsJapgolly.natsHemera.natsHemeraInts.`2000`
 import typingsJapgolly.node.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Config extends js.Object {
+trait Config extends StObject {
+  
   var bloomrun: js.UndefOr[BloomrunConfig] = js.undefined
+  
   var childLogger: js.UndefOr[Boolean] = js.undefined
+  
   var errio: js.UndefOr[ErrioConfig] = js.undefined
+  
   var load: js.UndefOr[LoadConfig] = js.undefined
+  
   var logLevel: js.UndefOr[LogLevel] = js.undefined
+  
   var logger: js.UndefOr[Logger | Stream] = js.undefined
+  
   var maxRecursion: js.UndefOr[Double] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var pluginTimeout: js.UndefOr[Double] = js.undefined
+  
   var prettyLog: js.UndefOr[Boolean] = js.undefined
+  
   var tag: js.UndefOr[String] = js.undefined
+  
   var timeout: js.UndefOr[Double | `2000`] = js.undefined
+  
   var traceLog: js.UndefOr[Boolean] = js.undefined
 }
-
 object Config {
-  @scala.inline
-  def apply(
-    bloomrun: BloomrunConfig = null,
-    childLogger: js.UndefOr[Boolean] = js.undefined,
-    errio: ErrioConfig = null,
-    load: LoadConfig = null,
-    logLevel: LogLevel = null,
-    logger: Logger | Stream = null,
-    maxRecursion: Int | Double = null,
-    name: String = null,
-    pluginTimeout: Int | Double = null,
-    prettyLog: js.UndefOr[Boolean] = js.undefined,
-    tag: String = null,
-    timeout: Double | `2000` = null,
-    traceLog: js.UndefOr[Boolean] = js.undefined
-  ): Config = {
+  
+  inline def apply(): Config = {
     val __obj = js.Dynamic.literal()
-    if (bloomrun != null) __obj.updateDynamic("bloomrun")(bloomrun.asInstanceOf[js.Any])
-    if (!js.isUndefined(childLogger)) __obj.updateDynamic("childLogger")(childLogger.asInstanceOf[js.Any])
-    if (errio != null) __obj.updateDynamic("errio")(errio.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (maxRecursion != null) __obj.updateDynamic("maxRecursion")(maxRecursion.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pluginTimeout != null) __obj.updateDynamic("pluginTimeout")(pluginTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyLog)) __obj.updateDynamic("prettyLog")(prettyLog.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceLog)) __obj.updateDynamic("traceLog")(traceLog.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
+  
+  extension [Self <: Config](x: Self) {
+    
+    inline def setBloomrun(value: BloomrunConfig): Self = StObject.set(x, "bloomrun", value.asInstanceOf[js.Any])
+    
+    inline def setBloomrunUndefined: Self = StObject.set(x, "bloomrun", js.undefined)
+    
+    inline def setChildLogger(value: Boolean): Self = StObject.set(x, "childLogger", value.asInstanceOf[js.Any])
+    
+    inline def setChildLoggerUndefined: Self = StObject.set(x, "childLogger", js.undefined)
+    
+    inline def setErrio(value: ErrioConfig): Self = StObject.set(x, "errio", value.asInstanceOf[js.Any])
+    
+    inline def setErrioUndefined: Self = StObject.set(x, "errio", js.undefined)
+    
+    inline def setLoad(value: LoadConfig): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    
+    inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    
+    inline def setLogger(value: Logger | Stream): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    
+    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+    
+    inline def setMaxRecursion(value: Double): Self = StObject.set(x, "maxRecursion", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRecursionUndefined: Self = StObject.set(x, "maxRecursion", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPluginTimeout(value: Double): Self = StObject.set(x, "pluginTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setPluginTimeoutUndefined: Self = StObject.set(x, "pluginTimeout", js.undefined)
+    
+    inline def setPrettyLog(value: Boolean): Self = StObject.set(x, "prettyLog", value.asInstanceOf[js.Any])
+    
+    inline def setPrettyLogUndefined: Self = StObject.set(x, "prettyLog", js.undefined)
+    
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    
+    inline def setTimeout(value: Double | `2000`): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setTraceLog(value: Boolean): Self = StObject.set(x, "traceLog", value.asInstanceOf[js.Any])
+    
+    inline def setTraceLogUndefined: Self = StObject.set(x, "traceLog", js.undefined)
+  }
 }
-

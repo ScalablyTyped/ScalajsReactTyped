@@ -2,21 +2,25 @@ package typingsJapgolly.highcharts.mod
 
 import typingsJapgolly.highcharts.highchartsStrings.pointBreak
 import typingsJapgolly.highcharts.highchartsStrings.pointInBreak
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AxisPointBreakEventObject extends js.Object {
+trait AxisPointBreakEventObject extends StObject {
+  
   var brk: Dictionary[Double]
+  
   var point: Point
+  
   var preventDefault: js.Function
+  
   var target: SVGElement
+  
   var `type`: pointBreak | pointInBreak
 }
-
 object AxisPointBreakEventObject {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     brk: Dictionary[Double],
     point: Point,
     preventDefault: js.Function,
@@ -27,5 +31,17 @@ object AxisPointBreakEventObject {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisPointBreakEventObject]
   }
+  
+  extension [Self <: AxisPointBreakEventObject](x: Self) {
+    
+    inline def setBrk(value: Dictionary[Double]): Self = StObject.set(x, "brk", value.asInstanceOf[js.Any])
+    
+    inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    
+    inline def setTarget(value: SVGElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: pointBreak | pointInBreak): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

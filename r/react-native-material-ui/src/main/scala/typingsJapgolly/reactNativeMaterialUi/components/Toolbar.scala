@@ -1,63 +1,61 @@
 package typingsJapgolly.reactNativeMaterialUi.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.global.JSX.Element
 import typingsJapgolly.reactNativeMaterialUi.mod.RightElementPressEvent
 import typingsJapgolly.reactNativeMaterialUi.mod.Searchable
 import typingsJapgolly.reactNativeMaterialUi.mod.ToolBarRightElement
 import typingsJapgolly.reactNativeMaterialUi.mod.ToolbarProps
 import typingsJapgolly.reactNativeMaterialUi.mod.ToolbarStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Toolbar {
-  def apply(
-    centerElement: Element | String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    isSearchActive: js.UndefOr[Boolean] = js.undefined,
-    leftElement: Element | String = null,
-    onLeftElementPress: js.UndefOr[Callback] = js.undefined,
-    onPress: js.UndefOr[Callback] = js.undefined,
-    onRightElementPress: /* e */ RightElementPressEvent => Callback = null,
-    rightElement: Element | String | js.Array[String] | ToolBarRightElement = null,
-    searchable: Searchable = null,
-    size: Int | Double = null,
-    style: ToolbarStyle = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ToolbarProps, typingsJapgolly.reactNativeMaterialUi.mod.Toolbar, Unit, ToolbarProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (centerElement != null) __obj.updateDynamic("centerElement")(centerElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSearchActive)) __obj.updateDynamic("isSearchActive")(isSearchActive.asInstanceOf[js.Any])
-    if (leftElement != null) __obj.updateDynamic("leftElement")(leftElement.asInstanceOf[js.Any])
-    onLeftElementPress.foreach(p => __obj.updateDynamic("onLeftElementPress")(p.toJsFn))
-    onPress.foreach(p => __obj.updateDynamic("onPress")(p.toJsFn))
-    if (onRightElementPress != null) __obj.updateDynamic("onRightElementPress")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.reactNativeMaterialUi.mod.RightElementPressEvent) => onRightElementPress(t0).runNow()))
-    if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement.asInstanceOf[js.Any])
-    if (searchable != null) __obj.updateDynamic("searchable")(searchable.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeMaterialUi.mod.ToolbarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeMaterialUi.mod.Toolbar](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeMaterialUi.mod.ToolbarProps])(children: _*)
-  }
   @JSImport("react-native-material-ui", "Toolbar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeMaterialUi.mod.Toolbar] {
+    
+    inline def centerElement(value: Element | String): this.type = set("centerElement", value.asInstanceOf[js.Any])
+    
+    inline def centerElementVdomElement(value: VdomElement): this.type = set("centerElement", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def hidden(value: Boolean): this.type = set("hidden", value.asInstanceOf[js.Any])
+    
+    inline def isSearchActive(value: Boolean): this.type = set("isSearchActive", value.asInstanceOf[js.Any])
+    
+    inline def leftElement(value: Element | String): this.type = set("leftElement", value.asInstanceOf[js.Any])
+    
+    inline def leftElementVdomElement(value: VdomElement): this.type = set("leftElement", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onLeftElementPress(value: Callback): this.type = set("onLeftElementPress", value.toJsFn)
+    
+    inline def onPress(value: Callback): this.type = set("onPress", value.toJsFn)
+    
+    inline def onRightElementPress(value: /* e */ RightElementPressEvent => Callback): this.type = set("onRightElementPress", js.Any.fromFunction1((t0: /* e */ RightElementPressEvent) => value(t0).runNow()))
+    
+    inline def rightElement(value: Element | String | js.Array[String] | ToolBarRightElement): this.type = set("rightElement", value.asInstanceOf[js.Any])
+    
+    inline def rightElementVarargs(value: String*): this.type = set("rightElement", js.Array(value*))
+    
+    inline def rightElementVdomElement(value: VdomElement): this.type = set("rightElement", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def searchable(value: Searchable): this.type = set("searchable", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Double): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: ToolbarStyle): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Toolbar.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ToolbarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

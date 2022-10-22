@@ -1,21 +1,24 @@
 package typingsJapgolly.reactNativeKeychain.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SharedWebCredentials extends js.Object {
-  var password: String
-  var server: String
-  var username: String
-}
-
-object SharedWebCredentials {
-  @scala.inline
-  def apply(password: String, server: String, username: String): SharedWebCredentials = {
-    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+trait SharedWebCredentials
+  extends StObject
+     with UserCredentials {
   
+  var server: String
+}
+object SharedWebCredentials {
+  
+  inline def apply(password: String, server: String, service: String, storage: String, username: String): SharedWebCredentials = {
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedWebCredentials]
   }
+  
+  extension [Self <: SharedWebCredentials](x: Self) {
+    
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+  }
 }
-

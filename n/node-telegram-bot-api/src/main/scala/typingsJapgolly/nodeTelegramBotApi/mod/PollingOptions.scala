@@ -1,28 +1,37 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// METHODS OPTIONS ///
-trait PollingOptions extends js.Object {
+trait PollingOptions extends StObject {
+  
   var autoStart: js.UndefOr[Boolean] = js.undefined
+  
   var interval: js.UndefOr[String | Double] = js.undefined
+  
   var params: js.UndefOr[GetUpdatesOptions] = js.undefined
 }
-
 object PollingOptions {
-  @scala.inline
-  def apply(
-    autoStart: js.UndefOr[Boolean] = js.undefined,
-    interval: String | Double = null,
-    params: GetUpdatesOptions = null
-  ): PollingOptions = {
+  
+  inline def apply(): PollingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[PollingOptions]
   }
+  
+  extension [Self <: PollingOptions](x: Self) {
+    
+    inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+    
+    inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+    
+    inline def setInterval(value: String | Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    
+    inline def setParams(value: GetUpdatesOptions): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+  }
 }
-

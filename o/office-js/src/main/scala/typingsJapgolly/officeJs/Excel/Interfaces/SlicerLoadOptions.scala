@@ -1,102 +1,170 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a `Slicer` object in the workbook.
   *
-  * Represents a slicer object in the workbook.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
-@js.native
-trait SlicerLoadOptions extends js.Object {
+trait SlicerLoadOptions extends StObject {
+  
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the caption of the slicer.
     *
-    * Represents the caption of slicer.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
-  var caption: js.UndefOr[Boolean] = js.native
+  var caption: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the height, in points, of the slicer.
-    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
+    Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
-  var height: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the unique ID of the slicer.
     *
-    * Represents the unique id of slicer. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Value is `true` if all filters currently applied on the slicer are cleared.
     *
-    * True if all filters currently applied on the slicer are cleared.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
-  var isFilterCleared: js.UndefOr[Boolean] = js.native
+  var isFilterCleared: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the distance, in points, from the left side of the slicer to the left of the worksheet.
-    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
+    Throws an `InvalidArgument` error when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
-  var left: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the name of the slicer.
     *
-    * Represents the name of slicer.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
-  var sortBy: js.UndefOr[Boolean] = js.native
+  var sortBy: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Constant value that represents the slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
     *
-    * Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
-  var style: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the distance, in points, from the top edge of the slicer to the top of the worksheet.
-    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
+    Throws an `InvalidArgument` error when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the width, in points, of the slicer.
-    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
+    Throws an `InvalidArgument` error when set with a negative value or zero as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
-  var width: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the worksheet containing the slicer.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
-  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.native
+  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
 }
-
+object SlicerLoadOptions {
+  
+  inline def apply(): SlicerLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SlicerLoadOptions]
+  }
+  
+  extension [Self <: SlicerLoadOptions](x: Self) {
+    
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    
+    inline def setCaption(value: Boolean): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIsFilterCleared(value: Boolean): Self = StObject.set(x, "isFilterCleared", value.asInstanceOf[js.Any])
+    
+    inline def setIsFilterClearedUndefined: Self = StObject.set(x, "isFilterCleared", js.undefined)
+    
+    inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSortBy(value: Boolean): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    
+    inline def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    
+    inline def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setWorksheet(value: WorksheetLoadOptions): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
+    
+    inline def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
+  }
+}

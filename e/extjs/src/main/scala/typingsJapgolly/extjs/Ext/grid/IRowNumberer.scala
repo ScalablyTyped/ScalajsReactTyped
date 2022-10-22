@@ -1,18 +1,16 @@
 package typingsJapgolly.extjs.Ext.grid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IRowNumberer
-  extends typingsJapgolly.extjs.Ext.grid.column.IColumn
-
+  extends StObject
+     with typingsJapgolly.extjs.Ext.grid.column.IColumn
 object IRowNumberer {
-  @scala.inline
-  def apply(IColumn: typingsJapgolly.extjs.Ext.grid.column.IColumn = null): IRowNumberer = {
+  
+  inline def apply(): IRowNumberer = {
     val __obj = js.Dynamic.literal()
-    if (IColumn != null) js.Dynamic.global.Object.assign(__obj, IColumn)
     __obj.asInstanceOf[IRowNumberer]
   }
 }
-

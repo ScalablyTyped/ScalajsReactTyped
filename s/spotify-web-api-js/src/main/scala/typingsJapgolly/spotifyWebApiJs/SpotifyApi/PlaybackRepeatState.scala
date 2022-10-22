@@ -1,24 +1,20 @@
 package typingsJapgolly.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.off
   - typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.track
   - typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.context
 */
-trait PlaybackRepeatState extends js.Object
-
+trait PlaybackRepeatState extends StObject
 object PlaybackRepeatState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def context: typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.context = this.cast("context")
-  @scala.inline
-  def off: typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.off = this.cast("off")
-  @scala.inline
-  def track: typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.track = this.cast("track")
+  
+  inline def context: typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.context = "context".asInstanceOf[typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.context]
+  
+  inline def off: typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.off = "off".asInstanceOf[typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.off]
+  
+  inline def track: typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.track = "track".asInstanceOf[typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.track]
 }
-

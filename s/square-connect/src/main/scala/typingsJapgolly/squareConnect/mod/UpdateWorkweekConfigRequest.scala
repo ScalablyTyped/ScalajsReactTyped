@@ -1,15 +1,15 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "UpdateWorkweekConfigRequest")
 @js.native
-class UpdateWorkweekConfigRequest () extends js.Object {
+open class UpdateWorkweekConfigRequest () extends StObject {
+  
   /**
     * The updated `WorkweekConfig` object.
     */
-  var workweek_config: js.UndefOr[WorkweekConfig] = js.native
+  var workweek_config: WorkweekConfig = js.native
 }
-

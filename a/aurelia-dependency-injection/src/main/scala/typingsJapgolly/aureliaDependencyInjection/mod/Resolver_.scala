@@ -1,20 +1,22 @@
 package typingsJapgolly.aureliaDependencyInjection.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Resolver_ extends js.Object {
-  def get(container: Container, key: js.Any): js.Any
+trait Resolver_ extends StObject {
+  
+  def get(container: Container, key: Any): Any
 }
-
 object Resolver_ {
-  @scala.inline
-  def apply(get: (Container, js.Any) => CallbackTo[js.Any]): Resolver_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(js.Any.fromFunction2((t0: typingsJapgolly.aureliaDependencyInjection.mod.Container, t1: js.Any) => get(t0, t1).runNow()))
+  
+  inline def apply(get: (Container, Any) => Any): Resolver_ = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
     __obj.asInstanceOf[Resolver_]
   }
+  
+  extension [Self <: Resolver_](x: Self) {
+    
+    inline def setGet(value: (Container, Any) => Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+  }
 }
-

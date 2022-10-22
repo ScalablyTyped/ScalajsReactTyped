@@ -1,30 +1,48 @@
 package typingsJapgolly.vscodeLanguageserverTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectionRange extends js.Object {
+trait SelectionRange extends StObject {
+  
   /**
     * The parent selection range containing this range. Therefore `parent.range` must contain `this.range`.
     */
   var parent: js.UndefOr[SelectionRange] = js.undefined
+  
   /**
     * The [range](#Range) of this selection range.
     */
   var range: Range
 }
-
-@JSImport("vscode-languageserver-types", "SelectionRange")
-@js.native
-object SelectionRange extends js.Object {
+object SelectionRange {
+  
+  inline def apply(range: Range): SelectionRange = {
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SelectionRange]
+  }
+  
+  @JSImport("vscode-languageserver-types", "SelectionRange")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new SelectionRange
     * @param range the range.
     * @param parent an optional parent.
     */
-  def create(range: Range): SelectionRange = js.native
-  def create(range: Range, parent: SelectionRange): SelectionRange = js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.SelectionRange */ Boolean = js.native
+  inline def create(range: Range): SelectionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any]).asInstanceOf[SelectionRange]
+  inline def create(range: Range, parent: SelectionRange): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
+  
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.SelectionRange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.SelectionRange */ Boolean]
+  
+  extension [Self <: SelectionRange](x: Self) {
+    
+    inline def setParent(value: SelectionRange): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+  }
 }
-

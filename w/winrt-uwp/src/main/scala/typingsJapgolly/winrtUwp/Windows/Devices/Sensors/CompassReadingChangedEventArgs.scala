@@ -1,14 +1,24 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the compass reading–changed event. */
-@JSGlobal("Windows.Devices.Sensors.CompassReadingChangedEventArgs")
-@js.native
-abstract class CompassReadingChangedEventArgs () extends js.Object {
+trait CompassReadingChangedEventArgs extends StObject {
+  
   /** Gets the current compass reading. */
-  var reading: CompassReading = js.native
+  var reading: CompassReading
 }
-
+object CompassReadingChangedEventArgs {
+  
+  inline def apply(reading: CompassReading): CompassReadingChangedEventArgs = {
+    val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompassReadingChangedEventArgs]
+  }
+  
+  extension [Self <: CompassReadingChangedEventArgs](x: Self) {
+    
+    inline def setReading(value: CompassReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+  }
+}

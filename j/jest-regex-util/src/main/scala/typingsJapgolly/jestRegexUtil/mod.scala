@@ -1,14 +1,18 @@
 package typingsJapgolly.jestRegexUtil
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-regex-util", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def escapePathForRegex(dir: String): String = js.native
-  def escapeStrForRegex(string: String): String = js.native
-  def replacePathSepForRegex(string: String): String = js.native
+object mod {
+  
+  @JSImport("jest-regex-util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def escapePathForRegex(dir: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapePathForRegex")(dir.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def escapeStrForRegex(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeStrForRegex")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def replacePathSepForRegex(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replacePathSepForRegex")(string.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

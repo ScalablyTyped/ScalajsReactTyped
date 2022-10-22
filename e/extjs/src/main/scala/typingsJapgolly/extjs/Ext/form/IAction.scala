@@ -1,143 +1,176 @@
 package typingsJapgolly.extjs.Ext.form
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.extjs.Ext.Array
 import typingsJapgolly.extjs.Ext.IBase
-import typingsJapgolly.extjs.Ext.IClass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IAction extends IBase {
+trait IAction
+  extends StObject
+     with IBase {
+  
   /** [Property] (String) */
   var CLIENT_INVALID: js.UndefOr[String] = js.undefined
+  
   /** [Property] (String) */
   var CONNECT_FAILURE: js.UndefOr[String] = js.undefined
+  
   /** [Property] (String) */
   var LOAD_FAILURE: js.UndefOr[String] = js.undefined
+  
   /** [Property] (String) */
   var SERVER_INVALID: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Function) */
-  var failure: js.UndefOr[js.Any] = js.undefined
+  var failure: js.UndefOr[Any] = js.undefined
+  
   /** [Property] (String) */
   var failureType: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Ext.form.Basic) */
   var form: js.UndefOr[IBasic] = js.undefined
+  
   /** [Config Option] (Object) */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String) */
   var method: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Object/String) */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var reset: js.UndefOr[Boolean] = js.undefined
+  
   /** [Property] (Object) */
-  var response: js.UndefOr[js.Any] = js.undefined
+  var response: js.UndefOr[Any] = js.undefined
+  
   /** [Property] (Object) */
-  var result: js.UndefOr[js.Any] = js.undefined
+  var result: js.UndefOr[Any] = js.undefined
+  
   /** [Method] Invokes this action using the current configuration  */
   var run: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var submitEmptyText: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Function) */
-  var success: js.UndefOr[js.Any] = js.undefined
+  var success: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
+  
   /** [Property] (String) */
   var `type`: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var url: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var waitMsg: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var waitTitle: js.UndefOr[String] = js.undefined
 }
-
 object IAction {
-  @scala.inline
-  def apply(
-    CLIENT_INVALID: String = null,
-    CONNECT_FAILURE: String = null,
-    LOAD_FAILURE: String = null,
-    SERVER_INVALID: String = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callParent: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    config: js.Any = null,
-    extend: String = null,
-    failure: js.Any = null,
-    failureType: String = null,
-    form: IBasic = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => CallbackTo[js.Any] = null,
-    headers: js.Any = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => CallbackTo[IAction] = null,
-    method: String = null,
-    mixins: js.Any = null,
-    params: js.Any = null,
-    requires: Array = null,
-    reset: js.UndefOr[Boolean] = js.undefined,
-    response: js.Any = null,
-    result: js.Any = null,
-    run: js.UndefOr[Callback] = js.undefined,
-    scope: js.Any = null,
-    self: IClass = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    submitEmptyText: js.UndefOr[Boolean] = js.undefined,
-    success: js.Any = null,
-    timeout: Int | Double = null,
-    `type`: String = null,
-    url: String = null,
-    uses: Array = null,
-    waitMsg: String = null,
-    waitTitle: String = null
-  ): IAction = {
+  
+  inline def apply(): IAction = {
     val __obj = js.Dynamic.literal()
-    if (CLIENT_INVALID != null) __obj.updateDynamic("CLIENT_INVALID")(CLIENT_INVALID.asInstanceOf[js.Any])
-    if (CONNECT_FAILURE != null) __obj.updateDynamic("CONNECT_FAILURE")(CONNECT_FAILURE.asInstanceOf[js.Any])
-    if (LOAD_FAILURE != null) __obj.updateDynamic("LOAD_FAILURE")(LOAD_FAILURE.asInstanceOf[js.Any])
-    if (SERVER_INVALID != null) __obj.updateDynamic("SERVER_INVALID")(SERVER_INVALID.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callOverridden(t0).runNow()))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callParent(t0).runNow()))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callSuper(t0).runNow()))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (failure != null) __obj.updateDynamic("failure")(failure.asInstanceOf[js.Any])
-    if (failureType != null) __obj.updateDynamic("failureType")(failureType.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1((t0: /* name */ js.UndefOr[java.lang.String]) => getInitialConfig(t0).runNow()))
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1((t0: /* config */ js.UndefOr[js.Any]) => initConfig(t0).runNow()))
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    run.foreach(p => __obj.updateDynamic("run")(p.toJsFn))
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (!js.isUndefined(submitEmptyText)) __obj.updateDynamic("submitEmptyText")(submitEmptyText.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (waitMsg != null) __obj.updateDynamic("waitMsg")(waitMsg.asInstanceOf[js.Any])
-    if (waitTitle != null) __obj.updateDynamic("waitTitle")(waitTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAction]
   }
+  
+  extension [Self <: IAction](x: Self) {
+    
+    inline def setCLIENT_INVALID(value: String): Self = StObject.set(x, "CLIENT_INVALID", value.asInstanceOf[js.Any])
+    
+    inline def setCLIENT_INVALIDUndefined: Self = StObject.set(x, "CLIENT_INVALID", js.undefined)
+    
+    inline def setCONNECT_FAILURE(value: String): Self = StObject.set(x, "CONNECT_FAILURE", value.asInstanceOf[js.Any])
+    
+    inline def setCONNECT_FAILUREUndefined: Self = StObject.set(x, "CONNECT_FAILURE", js.undefined)
+    
+    inline def setFailure(value: Any): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+    
+    inline def setFailureType(value: String): Self = StObject.set(x, "failureType", value.asInstanceOf[js.Any])
+    
+    inline def setFailureTypeUndefined: Self = StObject.set(x, "failureType", js.undefined)
+    
+    inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
+    
+    inline def setForm(value: IBasic): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setLOAD_FAILURE(value: String): Self = StObject.set(x, "LOAD_FAILURE", value.asInstanceOf[js.Any])
+    
+    inline def setLOAD_FAILUREUndefined: Self = StObject.set(x, "LOAD_FAILURE", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
+    inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    
+    inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    
+    inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    
+    inline def setRun(value: Callback): Self = StObject.set(x, "run", value.toJsFn)
+    
+    inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+    
+    inline def setSERVER_INVALID(value: String): Self = StObject.set(x, "SERVER_INVALID", value.asInstanceOf[js.Any])
+    
+    inline def setSERVER_INVALIDUndefined: Self = StObject.set(x, "SERVER_INVALID", js.undefined)
+    
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setSubmitEmptyText(value: Boolean): Self = StObject.set(x, "submitEmptyText", value.asInstanceOf[js.Any])
+    
+    inline def setSubmitEmptyTextUndefined: Self = StObject.set(x, "submitEmptyText", js.undefined)
+    
+    inline def setSuccess(value: Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setWaitMsg(value: String): Self = StObject.set(x, "waitMsg", value.asInstanceOf[js.Any])
+    
+    inline def setWaitMsgUndefined: Self = StObject.set(x, "waitMsg", js.undefined)
+    
+    inline def setWaitTitle(value: String): Self = StObject.set(x, "waitTitle", value.asInstanceOf[js.Any])
+    
+    inline def setWaitTitleUndefined: Self = StObject.set(x, "waitTitle", js.undefined)
+  }
 }
-

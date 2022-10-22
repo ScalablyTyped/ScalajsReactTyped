@@ -1,9 +1,10 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
@@ -12,26 +13,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.network
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.batch
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.service
-  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
-trait LogonType extends js.Object
-
+trait LogonType extends StObject
 object LogonType {
-  @scala.inline
-  def batch: typingsJapgolly.microsoftGraph.microsoftGraphStrings.batch = this.cast("batch")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def interactive: typingsJapgolly.microsoftGraph.microsoftGraphStrings.interactive = this.cast("interactive")
-  @scala.inline
-  def network: typingsJapgolly.microsoftGraph.microsoftGraphStrings.network = this.cast("network")
-  @scala.inline
-  def remoteInteractive: typingsJapgolly.microsoftGraph.microsoftGraphStrings.remoteInteractive = this.cast("remoteInteractive")
-  @scala.inline
-  def service: typingsJapgolly.microsoftGraph.microsoftGraphStrings.service = this.cast("service")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownFutureValue: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  
+  inline def batch: typingsJapgolly.microsoftGraph.microsoftGraphStrings.batch = "batch".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.batch]
+  
+  inline def interactive: typingsJapgolly.microsoftGraph.microsoftGraphStrings.interactive = "interactive".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.interactive]
+  
+  inline def network: typingsJapgolly.microsoftGraph.microsoftGraphStrings.network = "network".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.network]
+  
+  inline def remoteInteractive: typingsJapgolly.microsoftGraph.microsoftGraphStrings.remoteInteractive = "remoteInteractive".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.remoteInteractive]
+  
+  inline def service: typingsJapgolly.microsoftGraph.microsoftGraphStrings.service = "service".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.service]
+  
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }
-

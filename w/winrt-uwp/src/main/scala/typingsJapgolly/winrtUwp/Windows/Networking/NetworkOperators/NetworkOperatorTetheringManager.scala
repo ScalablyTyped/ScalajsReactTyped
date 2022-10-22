@@ -1,78 +1,88 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.NetworkOperators
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typingsJapgolly.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface exposes the methods and properties used to control and configure tethering capabilities for a specific network account. */
-@JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager")
-@js.native
-abstract class NetworkOperatorTetheringManager () extends js.Object {
+trait NetworkOperatorTetheringManager extends StObject {
+  
   /** Gets the current number of connected clients on the tethering network. */
-  var clientCount: Double = js.native
-  /** Gets the maximum number of client connections over a tethered network. */
-  var maxClientCount: Double = js.native
-  /** Gets the current operational state of the tethering feature. Possible values are defined by TetheringOperationalState */
-  var tetheringOperationalState: TetheringOperationalState = js.native
+  var clientCount: Double
+  
   /**
     * Use this method to provide tethering network configuration details for the tethering network.
     * @param configuration Provides a network account ID (SSID) and specifies the passphrase used for authentication when establishing a tethered network connection.
     * @return The asynchronous action.
     */
-  def configureAccessPointAsync(configuration: NetworkOperatorTetheringAccessPointConfiguration): IPromiseWithIAsyncAction = js.native
+  def configureAccessPointAsync(configuration: NetworkOperatorTetheringAccessPointConfiguration): IPromiseWithIAsyncAction
+  
   /**
     * Gets the current access point configuration for a network account as defined by a NetworkOperatorTetheringAccessPointConfiguration object.
     * @return Indicates the network account id and specifies the pass-phrase used for authentication when establishing a connection over the tethering network.
     */
-  def getCurrentAccessPointConfiguration(): NetworkOperatorTetheringAccessPointConfiguration = js.native
+  def getCurrentAccessPointConfiguration(): NetworkOperatorTetheringAccessPointConfiguration
+  
   /**
     * Retrieves a list of tethering clients for this NetworkOperatorTetheringManager .
     * @return A list of clients.
     */
-  def getTetheringClients(): IVectorView[NetworkOperatorTetheringClient] = js.native
+  def getTetheringClients(): IVectorView[NetworkOperatorTetheringClient]
+  
+  /** Gets the maximum number of client connections over a tethered network. */
+  var maxClientCount: Double
+  
   /**
     * Establishes the tethering network.
     * @return The result of the tethering network operation.
     */
-  def startTetheringAsync(): IPromiseWithIAsyncOperation[NetworkOperatorTetheringOperationResult] = js.native
+  def startTetheringAsync(): IPromiseWithIAsyncOperation[NetworkOperatorTetheringOperationResult]
+  
   /**
     * Shuts down the tethering network.
     * @return The result of the tethering network operation.
     */
-  def stopTetheringAsync(): IPromiseWithIAsyncOperation[NetworkOperatorTetheringOperationResult] = js.native
+  def stopTetheringAsync(): IPromiseWithIAsyncOperation[NetworkOperatorTetheringOperationResult]
+  
+  /** Gets the current operational state of the tethering feature. Possible values are defined by TetheringOperationalState */
+  var tetheringOperationalState: TetheringOperationalState
 }
-
-/* static members */
-@JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager")
-@js.native
-object NetworkOperatorTetheringManager extends js.Object {
-  /**
-    * Creates a NetworkOperatorTetheringManager using the given profile.
-    * @param profile Connection profile to be used.
-    * @return The resulting manager object.
-    */
-  def createFromConnectionProfile(profile: ConnectionProfile): NetworkOperatorTetheringManager = js.native
-  /**
-    * Creates an instance of NetworkOperatorTetheringManager for a specific network account using the provided network account ID for the mobile broadband device.
-    * @param networkAccountId The network account ID.
-    * @return A NetworkOperatorTetheringManager object.
-    */
-  def createFromNetworkAccountId(networkAccountId: String): NetworkOperatorTetheringManager = js.native
-  /**
-    * Indicates if a device is capable of creating a tethering network. Possible values are defined by TetheringCapability .
-    * @param networkAccountId The network account ID.
-    * @return The tethering capabilities of a network account.
-    */
-  def getTetheringCapability(networkAccountId: String): TetheringCapability = js.native
-  /**
-    * Gets tethering capabilities, based on the given connection profile.
-    * @param profile Connection profile to be checked.
-    * @return Tethering capabilities of the connection profile.
-    */
-  def getTetheringCapabilityFromConnectionProfile(profile: ConnectionProfile): TetheringCapability = js.native
+object NetworkOperatorTetheringManager {
+  
+  inline def apply(
+    clientCount: Double,
+    configureAccessPointAsync: NetworkOperatorTetheringAccessPointConfiguration => IPromiseWithIAsyncAction,
+    getCurrentAccessPointConfiguration: CallbackTo[NetworkOperatorTetheringAccessPointConfiguration],
+    getTetheringClients: CallbackTo[IVectorView[NetworkOperatorTetheringClient]],
+    maxClientCount: Double,
+    startTetheringAsync: CallbackTo[IPromiseWithIAsyncOperation[NetworkOperatorTetheringOperationResult]],
+    stopTetheringAsync: CallbackTo[IPromiseWithIAsyncOperation[NetworkOperatorTetheringOperationResult]],
+    tetheringOperationalState: TetheringOperationalState
+  ): NetworkOperatorTetheringManager = {
+    val __obj = js.Dynamic.literal(clientCount = clientCount.asInstanceOf[js.Any], configureAccessPointAsync = js.Any.fromFunction1(configureAccessPointAsync), getCurrentAccessPointConfiguration = getCurrentAccessPointConfiguration.toJsFn, getTetheringClients = getTetheringClients.toJsFn, maxClientCount = maxClientCount.asInstanceOf[js.Any], startTetheringAsync = startTetheringAsync.toJsFn, stopTetheringAsync = stopTetheringAsync.toJsFn, tetheringOperationalState = tetheringOperationalState.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkOperatorTetheringManager]
+  }
+  
+  extension [Self <: NetworkOperatorTetheringManager](x: Self) {
+    
+    inline def setClientCount(value: Double): Self = StObject.set(x, "clientCount", value.asInstanceOf[js.Any])
+    
+    inline def setConfigureAccessPointAsync(value: NetworkOperatorTetheringAccessPointConfiguration => IPromiseWithIAsyncAction): Self = StObject.set(x, "configureAccessPointAsync", js.Any.fromFunction1(value))
+    
+    inline def setGetCurrentAccessPointConfiguration(value: CallbackTo[NetworkOperatorTetheringAccessPointConfiguration]): Self = StObject.set(x, "getCurrentAccessPointConfiguration", value.toJsFn)
+    
+    inline def setGetTetheringClients(value: CallbackTo[IVectorView[NetworkOperatorTetheringClient]]): Self = StObject.set(x, "getTetheringClients", value.toJsFn)
+    
+    inline def setMaxClientCount(value: Double): Self = StObject.set(x, "maxClientCount", value.asInstanceOf[js.Any])
+    
+    inline def setStartTetheringAsync(value: CallbackTo[IPromiseWithIAsyncOperation[NetworkOperatorTetheringOperationResult]]): Self = StObject.set(x, "startTetheringAsync", value.toJsFn)
+    
+    inline def setStopTetheringAsync(value: CallbackTo[IPromiseWithIAsyncOperation[NetworkOperatorTetheringOperationResult]]): Self = StObject.set(x, "stopTetheringAsync", value.toJsFn)
+    
+    inline def setTetheringOperationalState(value: TetheringOperationalState): Self = StObject.set(x, "tetheringOperationalState", value.asInstanceOf[js.Any])
+  }
 }
-

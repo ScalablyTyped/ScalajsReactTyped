@@ -3,170 +3,129 @@ package typingsJapgolly.reactTable
 import typingsJapgolly.reactTable.mod.DefaultAggregators
 import typingsJapgolly.reactTable.mod.DefaultFilterTypes
 import typingsJapgolly.reactTable.mod.DefaultSortTypes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactTableStrings {
-  @js.native
-  sealed trait Cell extends js.Object
   
   @js.native
-  sealed trait Footer extends js.Object
+  sealed trait Cell extends StObject
+  inline def Cell: Cell = "Cell".asInstanceOf[Cell]
   
   @js.native
-  sealed trait Header extends js.Object
+  sealed trait Footer extends StObject
+  inline def Footer: Footer = "Footer".asInstanceOf[Footer]
   
   @js.native
-  sealed trait alphanumeric extends DefaultSortTypes
+  sealed trait Header extends StObject
+  inline def Header: Header = "Header".asInstanceOf[Header]
   
   @js.native
-  sealed trait average extends DefaultAggregators
+  sealed trait alphanumeric
+    extends StObject
+       with DefaultSortTypes
+  inline def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
   
   @js.native
-  sealed trait basic extends DefaultSortTypes
+  sealed trait average
+    extends StObject
+       with DefaultAggregators
+  inline def average: average = "average".asInstanceOf[average]
   
   @js.native
-  sealed trait between extends DefaultFilterTypes
+  sealed trait basic
+    extends StObject
+       with DefaultSortTypes
+  inline def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
-  sealed trait count extends DefaultAggregators
+  sealed trait between
+    extends StObject
+       with DefaultFilterTypes
+  inline def between: between = "between".asInstanceOf[between]
   
   @js.native
-  sealed trait datetime extends DefaultSortTypes
+  sealed trait count
+    extends StObject
+       with DefaultAggregators
+  inline def count: count = "count".asInstanceOf[count]
   
   @js.native
-  sealed trait equals extends DefaultFilterTypes
+  sealed trait datetime
+    extends StObject
+       with DefaultSortTypes
+  inline def datetime: datetime = "datetime".asInstanceOf[datetime]
   
   @js.native
-  sealed trait exact extends DefaultFilterTypes
+  sealed trait equals
+    extends StObject
+       with DefaultFilterTypes
+  inline def equals: equals = "equals".asInstanceOf[equals]
   
   @js.native
-  sealed trait exactText extends DefaultFilterTypes
+  sealed trait exact
+    extends StObject
+       with DefaultFilterTypes
+  inline def exact: exact = "exact".asInstanceOf[exact]
   
   @js.native
-  sealed trait exactTextCase extends DefaultFilterTypes
+  sealed trait exactText
+    extends StObject
+       with DefaultFilterTypes
+  inline def exactText: exactText = "exactText".asInstanceOf[exactText]
   
   @js.native
-  sealed trait includes extends DefaultFilterTypes
+  sealed trait exactTextCase
+    extends StObject
+       with DefaultFilterTypes
+  inline def exactTextCase: exactTextCase = "exactTextCase".asInstanceOf[exactTextCase]
   
   @js.native
-  sealed trait includesAll extends DefaultFilterTypes
+  sealed trait includes
+    extends StObject
+       with DefaultFilterTypes
+  inline def includes: includes = "includes".asInstanceOf[includes]
   
   @js.native
-  sealed trait median extends DefaultAggregators
+  sealed trait includesAll
+    extends StObject
+       with DefaultFilterTypes
+  inline def includesAll: includesAll = "includesAll".asInstanceOf[includesAll]
   
   @js.native
-  sealed trait sum extends DefaultAggregators
+  sealed trait median
+    extends StObject
+       with DefaultAggregators
+  inline def median: median = "median".asInstanceOf[median]
   
   @js.native
-  sealed trait text extends DefaultFilterTypes
+  sealed trait number
+    extends StObject
+       with DefaultSortTypes
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait uniqueCount extends DefaultAggregators
+  sealed trait string
+    extends StObject
+       with DefaultSortTypes
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait useAbsoluteLayout extends js.Object
+  sealed trait sum
+    extends StObject
+       with DefaultAggregators
+  inline def sum: sum = "sum".asInstanceOf[sum]
   
   @js.native
-  sealed trait useBlockLayout extends js.Object
+  sealed trait text
+    extends StObject
+       with DefaultFilterTypes
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait useColumnOrder extends js.Object
-  
-  @js.native
-  sealed trait useExpanded extends js.Object
-  
-  @js.native
-  sealed trait useFilters extends js.Object
-  
-  @js.native
-  sealed trait useFlexLayout extends js.Object
-  
-  @js.native
-  sealed trait useGlobalFilter extends js.Object
-  
-  @js.native
-  sealed trait useGroupBy extends js.Object
-  
-  @js.native
-  sealed trait usePagination extends js.Object
-  
-  @js.native
-  sealed trait useResizeColumns extends js.Object
-  
-  @js.native
-  sealed trait useRowSelect extends js.Object
-  
-  @js.native
-  sealed trait useRowState extends js.Object
-  
-  @js.native
-  sealed trait useSortBy extends js.Object
-  
-  @scala.inline
-  def Cell: Cell = "Cell".asInstanceOf[Cell]
-  @scala.inline
-  def Footer: Footer = "Footer".asInstanceOf[Footer]
-  @scala.inline
-  def Header: Header = "Header".asInstanceOf[Header]
-  @scala.inline
-  def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
-  @scala.inline
-  def average: average = "average".asInstanceOf[average]
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
-  @scala.inline
-  def between: between = "between".asInstanceOf[between]
-  @scala.inline
-  def count: count = "count".asInstanceOf[count]
-  @scala.inline
-  def datetime: datetime = "datetime".asInstanceOf[datetime]
-  @scala.inline
-  def equals: equals = "equals".asInstanceOf[equals]
-  @scala.inline
-  def exact: exact = "exact".asInstanceOf[exact]
-  @scala.inline
-  def exactText: exactText = "exactText".asInstanceOf[exactText]
-  @scala.inline
-  def exactTextCase: exactTextCase = "exactTextCase".asInstanceOf[exactTextCase]
-  @scala.inline
-  def includes: includes = "includes".asInstanceOf[includes]
-  @scala.inline
-  def includesAll: includesAll = "includesAll".asInstanceOf[includesAll]
-  @scala.inline
-  def median: median = "median".asInstanceOf[median]
-  @scala.inline
-  def sum: sum = "sum".asInstanceOf[sum]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def uniqueCount: uniqueCount = "uniqueCount".asInstanceOf[uniqueCount]
-  @scala.inline
-  def useAbsoluteLayout: useAbsoluteLayout = "useAbsoluteLayout".asInstanceOf[useAbsoluteLayout]
-  @scala.inline
-  def useBlockLayout: useBlockLayout = "useBlockLayout".asInstanceOf[useBlockLayout]
-  @scala.inline
-  def useColumnOrder: useColumnOrder = "useColumnOrder".asInstanceOf[useColumnOrder]
-  @scala.inline
-  def useExpanded: useExpanded = "useExpanded".asInstanceOf[useExpanded]
-  @scala.inline
-  def useFilters: useFilters = "useFilters".asInstanceOf[useFilters]
-  @scala.inline
-  def useFlexLayout: useFlexLayout = "useFlexLayout".asInstanceOf[useFlexLayout]
-  @scala.inline
-  def useGlobalFilter: useGlobalFilter = "useGlobalFilter".asInstanceOf[useGlobalFilter]
-  @scala.inline
-  def useGroupBy: useGroupBy = "useGroupBy".asInstanceOf[useGroupBy]
-  @scala.inline
-  def usePagination: usePagination = "usePagination".asInstanceOf[usePagination]
-  @scala.inline
-  def useResizeColumns: useResizeColumns = "useResizeColumns".asInstanceOf[useResizeColumns]
-  @scala.inline
-  def useRowSelect: useRowSelect = "useRowSelect".asInstanceOf[useRowSelect]
-  @scala.inline
-  def useRowState: useRowState = "useRowState".asInstanceOf[useRowState]
-  @scala.inline
-  def useSortBy: useSortBy = "useSortBy".asInstanceOf[useSortBy]
+  sealed trait uniqueCount
+    extends StObject
+       with DefaultAggregators
+  inline def uniqueCount: uniqueCount = "uniqueCount".asInstanceOf[uniqueCount]
 }
-

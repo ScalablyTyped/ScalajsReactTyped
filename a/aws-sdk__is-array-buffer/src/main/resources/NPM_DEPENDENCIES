@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/is-array-buffer" : "0.1.0-preview.1"
+      "@aws-sdk/is-array-buffer" : "3.188.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/is-array-buffer" : "0.1.0-preview.1"
+      "@aws-sdk/is-array-buffer" : "3.188.0"
     }
   ],
   "compile-devDependencies" : [

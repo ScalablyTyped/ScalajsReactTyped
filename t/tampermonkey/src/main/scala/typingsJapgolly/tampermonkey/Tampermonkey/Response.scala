@@ -1,31 +1,37 @@
 package typingsJapgolly.tampermonkey.Tampermonkey
 
-import typingsJapgolly.std.Document_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Response[TContext] extends ResponseBase {
+trait Response[TContext]
+  extends StObject
+     with ResponseBase {
+  
   val context: TContext
+  
   val finalUrl: String
 }
-
 object Response {
-  @scala.inline
-  def apply[TContext](
+  
+  inline def apply[TContext](
     context: TContext,
     finalUrl: String,
     readyState: ReadyState,
-    response: js.Any,
+    response: Any,
     responseHeaders: String,
     responseText: String,
     status: Double,
-    statusText: String,
-    responseXML: Document_ = null
+    statusText: String
   ): Response[TContext] = {
-    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], finalUrl = finalUrl.asInstanceOf[js.Any], readyState = readyState.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
-    if (responseXML != null) __obj.updateDynamic("responseXML")(responseXML.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], finalUrl = finalUrl.asInstanceOf[js.Any], readyState = readyState.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], responseXML = null)
     __obj.asInstanceOf[Response[TContext]]
   }
+  
+  extension [Self <: Response[?], TContext](x: Self & Response[TContext]) {
+    
+    inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
+  }
 }
-

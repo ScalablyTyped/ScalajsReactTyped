@@ -1,1395 +1,2238 @@
 package typingsJapgolly.csstype.mod
 
+import typingsJapgolly.csstype.mod.Property.AlignContent
+import typingsJapgolly.csstype.mod.Property.AlignItems
+import typingsJapgolly.csstype.mod.Property.AlignSelf
+import typingsJapgolly.csstype.mod.Property.AnimationDelay
+import typingsJapgolly.csstype.mod.Property.AnimationDirection
+import typingsJapgolly.csstype.mod.Property.AnimationDuration
+import typingsJapgolly.csstype.mod.Property.AnimationFillMode
+import typingsJapgolly.csstype.mod.Property.AnimationIterationCount
+import typingsJapgolly.csstype.mod.Property.AnimationName
+import typingsJapgolly.csstype.mod.Property.AnimationPlayState
+import typingsJapgolly.csstype.mod.Property.AnimationTimingFunction
+import typingsJapgolly.csstype.mod.Property.BackdropFilter
+import typingsJapgolly.csstype.mod.Property.BackfaceVisibility
+import typingsJapgolly.csstype.mod.Property.BackgroundClip
+import typingsJapgolly.csstype.mod.Property.BackgroundOrigin
+import typingsJapgolly.csstype.mod.Property.BackgroundSize
+import typingsJapgolly.csstype.mod.Property.BorderBottomLeftRadius
+import typingsJapgolly.csstype.mod.Property.BorderBottomRightRadius
+import typingsJapgolly.csstype.mod.Property.BorderImageSlice
+import typingsJapgolly.csstype.mod.Property.BorderInlineEndColor
+import typingsJapgolly.csstype.mod.Property.BorderInlineEndStyle
+import typingsJapgolly.csstype.mod.Property.BorderInlineEndWidth
+import typingsJapgolly.csstype.mod.Property.BorderInlineStartColor
+import typingsJapgolly.csstype.mod.Property.BorderInlineStartStyle
+import typingsJapgolly.csstype.mod.Property.BorderTopLeftRadius
+import typingsJapgolly.csstype.mod.Property.BorderTopRightRadius
+import typingsJapgolly.csstype.mod.Property.BoxDecorationBreak
+import typingsJapgolly.csstype.mod.Property.BoxShadow
+import typingsJapgolly.csstype.mod.Property.BoxSizing
+import typingsJapgolly.csstype.mod.Property.ClipPath
+import typingsJapgolly.csstype.mod.Property.ColumnCount
+import typingsJapgolly.csstype.mod.Property.ColumnFill
+import typingsJapgolly.csstype.mod.Property.ColumnRuleColor
+import typingsJapgolly.csstype.mod.Property.ColumnRuleStyle
+import typingsJapgolly.csstype.mod.Property.ColumnRuleWidth
+import typingsJapgolly.csstype.mod.Property.ColumnSpan
+import typingsJapgolly.csstype.mod.Property.ColumnWidth
+import typingsJapgolly.csstype.mod.Property.Filter
+import typingsJapgolly.csstype.mod.Property.FlexBasis
+import typingsJapgolly.csstype.mod.Property.FlexDirection
+import typingsJapgolly.csstype.mod.Property.FlexGrow
+import typingsJapgolly.csstype.mod.Property.FlexShrink
+import typingsJapgolly.csstype.mod.Property.FlexWrap
+import typingsJapgolly.csstype.mod.Property.FontFeatureSettings
+import typingsJapgolly.csstype.mod.Property.FontKerning
+import typingsJapgolly.csstype.mod.Property.FontLanguageOverride
+import typingsJapgolly.csstype.mod.Property.FontSmooth
+import typingsJapgolly.csstype.mod.Property.FontVariantLigatures
+import typingsJapgolly.csstype.mod.Property.HyphenateCharacter
+import typingsJapgolly.csstype.mod.Property.Hyphens
+import typingsJapgolly.csstype.mod.Property.InitialLetter
+import typingsJapgolly.csstype.mod.Property.JustifyContent
+import typingsJapgolly.csstype.mod.Property.LineBreak
+import typingsJapgolly.csstype.mod.Property.MarginInlineEnd
+import typingsJapgolly.csstype.mod.Property.MarginInlineStart
+import typingsJapgolly.csstype.mod.Property.MaskBorderOutset
+import typingsJapgolly.csstype.mod.Property.MaskBorderRepeat
+import typingsJapgolly.csstype.mod.Property.MaskBorderSlice
+import typingsJapgolly.csstype.mod.Property.MaskBorderSource
+import typingsJapgolly.csstype.mod.Property.MaskBorderWidth
+import typingsJapgolly.csstype.mod.Property.MaxInlineSize
+import typingsJapgolly.csstype.mod.Property.MozAppearance
+import typingsJapgolly.csstype.mod.Property.MozBorderBottomColors
+import typingsJapgolly.csstype.mod.Property.MozBorderLeftColors
+import typingsJapgolly.csstype.mod.Property.MozBorderRightColors
+import typingsJapgolly.csstype.mod.Property.MozBorderTopColors
+import typingsJapgolly.csstype.mod.Property.MozContextProperties
+import typingsJapgolly.csstype.mod.Property.MozImageRegion
+import typingsJapgolly.csstype.mod.Property.MozOrient
+import typingsJapgolly.csstype.mod.Property.MozStackSizing
+import typingsJapgolly.csstype.mod.Property.MozTextBlink
+import typingsJapgolly.csstype.mod.Property.MozUserFocus
+import typingsJapgolly.csstype.mod.Property.MozUserModify
+import typingsJapgolly.csstype.mod.Property.MozWindowDragging
+import typingsJapgolly.csstype.mod.Property.MozWindowShadow
+import typingsJapgolly.csstype.mod.Property.MsAccelerator
+import typingsJapgolly.csstype.mod.Property.MsBlockProgression
+import typingsJapgolly.csstype.mod.Property.MsContentZoomChaining
+import typingsJapgolly.csstype.mod.Property.MsContentZoomLimitMax
+import typingsJapgolly.csstype.mod.Property.MsContentZoomLimitMin
+import typingsJapgolly.csstype.mod.Property.MsContentZoomSnapPoints
+import typingsJapgolly.csstype.mod.Property.MsContentZoomSnapType
+import typingsJapgolly.csstype.mod.Property.MsContentZooming
+import typingsJapgolly.csstype.mod.Property.MsFilter
+import typingsJapgolly.csstype.mod.Property.MsFlowFrom
+import typingsJapgolly.csstype.mod.Property.MsFlowInto
+import typingsJapgolly.csstype.mod.Property.MsGridColumns
+import typingsJapgolly.csstype.mod.Property.MsGridRows
+import typingsJapgolly.csstype.mod.Property.MsHighContrastAdjust
+import typingsJapgolly.csstype.mod.Property.MsHyphenateLimitChars
+import typingsJapgolly.csstype.mod.Property.MsHyphenateLimitLines
+import typingsJapgolly.csstype.mod.Property.MsHyphenateLimitZone
+import typingsJapgolly.csstype.mod.Property.MsImeAlign
+import typingsJapgolly.csstype.mod.Property.MsOverflowStyle
+import typingsJapgolly.csstype.mod.Property.MsScrollChaining
+import typingsJapgolly.csstype.mod.Property.MsScrollLimitXMax
+import typingsJapgolly.csstype.mod.Property.MsScrollLimitXMin
+import typingsJapgolly.csstype.mod.Property.MsScrollLimitYMax
+import typingsJapgolly.csstype.mod.Property.MsScrollLimitYMin
+import typingsJapgolly.csstype.mod.Property.MsScrollRails
+import typingsJapgolly.csstype.mod.Property.MsScrollSnapPointsX
+import typingsJapgolly.csstype.mod.Property.MsScrollSnapPointsY
+import typingsJapgolly.csstype.mod.Property.MsScrollSnapType
+import typingsJapgolly.csstype.mod.Property.MsScrollTranslation
+import typingsJapgolly.csstype.mod.Property.MsScrollbar3dlightColor
+import typingsJapgolly.csstype.mod.Property.MsScrollbarArrowColor
+import typingsJapgolly.csstype.mod.Property.MsScrollbarBaseColor
+import typingsJapgolly.csstype.mod.Property.MsScrollbarDarkshadowColor
+import typingsJapgolly.csstype.mod.Property.MsScrollbarFaceColor
+import typingsJapgolly.csstype.mod.Property.MsScrollbarHighlightColor
+import typingsJapgolly.csstype.mod.Property.MsScrollbarShadowColor
+import typingsJapgolly.csstype.mod.Property.MsScrollbarTrackColor
+import typingsJapgolly.csstype.mod.Property.MsTextAutospace
+import typingsJapgolly.csstype.mod.Property.MsTouchSelect
+import typingsJapgolly.csstype.mod.Property.MsUserSelect
+import typingsJapgolly.csstype.mod.Property.MsWrapFlow
+import typingsJapgolly.csstype.mod.Property.MsWrapMargin
+import typingsJapgolly.csstype.mod.Property.MsWrapThrough
+import typingsJapgolly.csstype.mod.Property.Order
+import typingsJapgolly.csstype.mod.Property.OverflowX
+import typingsJapgolly.csstype.mod.Property.OverflowY
+import typingsJapgolly.csstype.mod.Property.PaddingInlineEnd
+import typingsJapgolly.csstype.mod.Property.PaddingInlineStart
+import typingsJapgolly.csstype.mod.Property.Perspective
+import typingsJapgolly.csstype.mod.Property.PerspectiveOrigin
+import typingsJapgolly.csstype.mod.Property.PrintColorAdjust
+import typingsJapgolly.csstype.mod.Property.RubyPosition
+import typingsJapgolly.csstype.mod.Property.ScrollSnapType
+import typingsJapgolly.csstype.mod.Property.ShapeMargin
+import typingsJapgolly.csstype.mod.Property.TabSize
+import typingsJapgolly.csstype.mod.Property.TextCombineUpright
+import typingsJapgolly.csstype.mod.Property.TextDecorationColor
+import typingsJapgolly.csstype.mod.Property.TextDecorationLine
+import typingsJapgolly.csstype.mod.Property.TextDecorationSkip
+import typingsJapgolly.csstype.mod.Property.TextDecorationStyle
+import typingsJapgolly.csstype.mod.Property.TextEmphasisColor
+import typingsJapgolly.csstype.mod.Property.TextEmphasisPosition
+import typingsJapgolly.csstype.mod.Property.TextEmphasisStyle
+import typingsJapgolly.csstype.mod.Property.TextOrientation
+import typingsJapgolly.csstype.mod.Property.TextOverflow
+import typingsJapgolly.csstype.mod.Property.TextSizeAdjust
+import typingsJapgolly.csstype.mod.Property.TextUnderlinePosition
+import typingsJapgolly.csstype.mod.Property.TouchAction
+import typingsJapgolly.csstype.mod.Property.Transform
+import typingsJapgolly.csstype.mod.Property.TransformOrigin
+import typingsJapgolly.csstype.mod.Property.TransformStyle
+import typingsJapgolly.csstype.mod.Property.TransitionDelay
+import typingsJapgolly.csstype.mod.Property.TransitionDuration
+import typingsJapgolly.csstype.mod.Property.TransitionProperty
+import typingsJapgolly.csstype.mod.Property.TransitionTimingFunction
+import typingsJapgolly.csstype.mod.Property.UserSelect
+import typingsJapgolly.csstype.mod.Property.WebkitAppearance
+import typingsJapgolly.csstype.mod.Property.WebkitBorderBeforeColor
+import typingsJapgolly.csstype.mod.Property.WebkitBorderBeforeStyle
+import typingsJapgolly.csstype.mod.Property.WebkitBorderBeforeWidth
+import typingsJapgolly.csstype.mod.Property.WebkitBoxReflect
+import typingsJapgolly.csstype.mod.Property.WebkitLineClamp
+import typingsJapgolly.csstype.mod.Property.WebkitMaskAttachment
+import typingsJapgolly.csstype.mod.Property.WebkitMaskClip
+import typingsJapgolly.csstype.mod.Property.WebkitMaskComposite
+import typingsJapgolly.csstype.mod.Property.WebkitMaskImage
+import typingsJapgolly.csstype.mod.Property.WebkitMaskOrigin
+import typingsJapgolly.csstype.mod.Property.WebkitMaskPosition
+import typingsJapgolly.csstype.mod.Property.WebkitMaskPositionX
+import typingsJapgolly.csstype.mod.Property.WebkitMaskPositionY
+import typingsJapgolly.csstype.mod.Property.WebkitMaskRepeat
+import typingsJapgolly.csstype.mod.Property.WebkitMaskRepeatX
+import typingsJapgolly.csstype.mod.Property.WebkitMaskRepeatY
+import typingsJapgolly.csstype.mod.Property.WebkitMaskSize
+import typingsJapgolly.csstype.mod.Property.WebkitOverflowScrolling
+import typingsJapgolly.csstype.mod.Property.WebkitTapHighlightColor
+import typingsJapgolly.csstype.mod.Property.WebkitTextFillColor
+import typingsJapgolly.csstype.mod.Property.WebkitTextStrokeColor
+import typingsJapgolly.csstype.mod.Property.WebkitTextStrokeWidth
+import typingsJapgolly.csstype.mod.Property.WebkitTouchCallout
+import typingsJapgolly.csstype.mod.Property.WebkitUserModify
+import typingsJapgolly.csstype.mod.Property.WordBreak
+import typingsJapgolly.csstype.mod.Property.WritingMode
+import typingsJapgolly.std.NonNullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VendorLonghandPropertiesFallback[TLength] extends js.Object {
-  /**
-    * The **`animation-delay`** CSS property sets when an animation starts. The animation can start later, immediately from its beginning, or immediately and partway through the animation.
-    *
-    * **Initial value**: `0s`
-    */
-  var MozAnimationDelay: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
-    *
-    * **Initial value**: `normal`
-    */
-  var MozAnimationDirection: js.UndefOr[AnimationDirectionProperty | js.Array[AnimationDirectionProperty]] = js.undefined
-  /**
-    * The **`animation-duration`** CSS property sets the length of time that an animation takes to complete one cycle.
-    *
-    * **Initial value**: `0s`
-    */
-  var MozAnimationDuration: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
-    *
-    * **Initial value**: `none`
-    */
-  var MozAnimationFillMode: js.UndefOr[AnimationFillModeProperty | js.Array[AnimationFillModeProperty]] = js.undefined
-  /**
-    * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
-    *
-    * **Initial value**: `1`
-    */
-  var MozAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]] = js.undefined
-  /**
-    * The **`animation-name`** CSS property sets one or more animations to apply to an element. Each name is an `@keyframes` at-rule that sets the property values for the animation sequence.
-    *
-    * **Initial value**: `none`
-    */
-  var MozAnimationName: js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]] = js.undefined
-  /**
-    * The **`animation-play-state`** CSS property sets whether an animation is running or paused.
-    *
-    * **Initial value**: `running`
-    */
-  var MozAnimationPlayState: js.UndefOr[AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]] = js.undefined
-  /**
-    * The `**animation-timing-function**` CSS property sets how an animation progresses through the duration of each cycle.
-    *
-    * **Initial value**: `ease`
-    */
-  var MozAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]] = js.undefined
-  /**
-    * The **`-moz-appearance`** CSS property is used in Gecko (Firefox) to display an element using platform-native styling based on the operating system's theme.
-    *
-    * **Initial value**: `none` (but this value is overridden in the user agent CSS)
-    */
-  var MozAppearance: js.UndefOr[MozAppearanceProperty | js.Array[MozAppearanceProperty]] = js.undefined
-  /**
-    * The **`backface-visibility`** CSS property sets whether the back face of an element is visible when turned towards the user.
-    *
-    * **Initial value**: `visible`
-    */
-  var MozBackfaceVisibility: js.UndefOr[BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty]] = js.undefined
-  /**
-    * In Mozilla applications like Firefox, the **`-moz-border-bottom-colors`** CSS property sets a list of colors for the bottom border.
-    *
-    * **Initial value**: `none`
-    */
-  var MozBorderBottomColors: js.UndefOr[MozBorderBottomColorsProperty | js.Array[MozBorderBottomColorsProperty]] = js.undefined
-  /**
-    * The **`border-inline-end-color`** CSS property defines the color of the logical inline-end border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `currentcolor`
-    */
-  var MozBorderEndColor: js.UndefOr[BorderInlineEndColorProperty | js.Array[BorderInlineEndColorProperty]] = js.undefined
-  /**
-    * The **`border-inline-end-style`** CSS property defines the style of the logical inline end border of an element, which maps to a physical border style depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-style`, `border-right-style`, `border-bottom-style`, or `border-left-style` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `none`
-    */
-  var MozBorderEndStyle: js.UndefOr[BorderInlineEndStyleProperty | js.Array[BorderInlineEndStyleProperty]] = js.undefined
-  /**
-    * The **`border-inline-end-width`** CSS property defines the width of the logical inline-end border of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-width`, `border-right-width`, `border-bottom-width`, or `border-left-width` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `medium`
-    */
+/* Inlined csstype.csstype.Fallback<csstype.csstype.VendorLonghandProperties<TLength, TTime>> */
+trait VendorLonghandPropertiesFallback[TLength, TTime] extends StObject {
+  
+  var MozAnimationDelay: js.UndefOr[AnimationDelay[TTime] | js.Array[NonNullable[js.UndefOr[AnimationDelay[TTime]]]]] = js.undefined
+  
+  var MozAnimationDirection: js.UndefOr[AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]] = js.undefined
+  
+  var MozAnimationDuration: js.UndefOr[
+    AnimationDuration[TTime] | js.Array[NonNullable[js.UndefOr[AnimationDuration[TTime]]]]
+  ] = js.undefined
+  
+  var MozAnimationFillMode: js.UndefOr[AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]] = js.undefined
+  
+  var MozAnimationIterationCount: js.UndefOr[
+    AnimationIterationCount | js.Array[NonNullable[js.UndefOr[AnimationIterationCount]]]
+  ] = js.undefined
+  
+  var MozAnimationName: js.UndefOr[AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]]] = js.undefined
+  
+  var MozAnimationPlayState: js.UndefOr[AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]] = js.undefined
+  
+  var MozAnimationTimingFunction: js.UndefOr[
+    AnimationTimingFunction | js.Array[NonNullable[js.UndefOr[AnimationTimingFunction]]]
+  ] = js.undefined
+  
+  var MozAppearance: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozAppearance | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozAppearance]]]
+  ] = js.undefined
+  
+  var MozBackfaceVisibility: js.UndefOr[BackfaceVisibility | js.Array[NonNullable[js.UndefOr[BackfaceVisibility]]]] = js.undefined
+  
+  var MozBorderBottomColors: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozBorderBottomColors | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozBorderBottomColors]]
+    ])
+  ] = js.undefined
+  
+  var MozBorderEndColor: js.UndefOr[BorderInlineEndColor | js.Array[NonNullable[js.UndefOr[BorderInlineEndColor]]]] = js.undefined
+  
+  var MozBorderEndStyle: js.UndefOr[BorderInlineEndStyle | js.Array[NonNullable[js.UndefOr[BorderInlineEndStyle]]]] = js.undefined
+  
   var MozBorderEndWidth: js.UndefOr[
-    BorderInlineEndWidthProperty[TLength] | js.Array[BorderInlineEndWidthProperty[TLength]]
+    BorderInlineEndWidth[TLength] | js.Array[NonNullable[js.UndefOr[BorderInlineEndWidth[TLength]]]]
   ] = js.undefined
-  /**
-    * In Mozilla applications like Firefox, the **`-moz-border-left-colors`** CSS property sets a list of colors for the left border.
-    *
-    * **Initial value**: `none`
-    */
-  var MozBorderLeftColors: js.UndefOr[MozBorderLeftColorsProperty | js.Array[MozBorderLeftColorsProperty]] = js.undefined
-  /**
-    * In Mozilla applications like Firefox, the **`-moz-border-right-colors`** CSS property sets a list of colors for the right border.
-    *
-    * **Initial value**: `none`
-    */
-  var MozBorderRightColors: js.UndefOr[MozBorderRightColorsProperty | js.Array[MozBorderRightColorsProperty]] = js.undefined
-  /**
-    * The **`border-inline-start-color`** CSS property defines the color of the logical inline start border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `currentcolor`
-    */
-  var MozBorderStartColor: js.UndefOr[BorderInlineStartColorProperty | js.Array[BorderInlineStartColorProperty]] = js.undefined
-  /**
-    * The **`border-inline-start-style`** CSS property defines the style of the logical inline start border of an element, which maps to a physical border style depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-style`, `border-right-style`, `border-bottom-style`, or `border-left-style` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `none`
-    */
-  var MozBorderStartStyle: js.UndefOr[BorderInlineStartStyleProperty | js.Array[BorderInlineStartStyleProperty]] = js.undefined
-  /**
-    * In Mozilla applications like Firefox, the **`-moz-border-top-colors`** CSS property sets a list of colors for the top border.
-    *
-    * **Initial value**: `none`
-    */
-  var MozBorderTopColors: js.UndefOr[MozBorderTopColorsProperty | js.Array[MozBorderTopColorsProperty]] = js.undefined
-  /**
-    * The **`box-sizing`** CSS property defines how the user agent should calculate the total width and height of an element.
-    *
-    * **Initial value**: `content-box`
-    */
-  var MozBoxSizing: js.UndefOr[BoxSizingProperty | js.Array[BoxSizingProperty]] = js.undefined
-  /**
-    * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
-    *
-    * **Initial value**: `auto`
-    */
-  var MozColumnCount: js.UndefOr[ColumnCountProperty | js.Array[ColumnCountProperty]] = js.undefined
-  /**
-    * The **`column-fill`** CSS property controls how an element's contents are balanced when broken into columns.
-    *
-    * **Initial value**: `balance`
-    */
-  var MozColumnFill: js.UndefOr[ColumnFillProperty | js.Array[ColumnFillProperty]] = js.undefined
-  /**
-    * The **`column-gap`** CSS property sets the size of the gap (gutter) between an element's columns.
-    *
-    * **Initial value**: `normal`
-    */
-  var MozColumnGap: js.UndefOr[ColumnGapProperty[TLength] | js.Array[ColumnGapProperty[TLength]]] = js.undefined
-  /**
-    * The **`column-rule-color`** CSS property sets the color of the rule (line) drawn between columns in a multi-column layout.
-    *
-    * **Initial value**: `currentcolor`
-    */
-  var MozColumnRuleColor: js.UndefOr[ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty]] = js.undefined
-  /**
-    * The **`column-rule-style`** CSS property sets the style of the line drawn between columns in a multi-column layout.
-    *
-    * **Initial value**: `none`
-    */
-  var MozColumnRuleStyle: js.UndefOr[ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty]] = js.undefined
-  /**
-    * The **`column-rule-width`** CSS property sets the width of the rule (line) drawn between columns in a multi-column layout.
-    *
-    * **Initial value**: `medium`
-    */
-  var MozColumnRuleWidth: js.UndefOr[ColumnRuleWidthProperty[TLength] | js.Array[ColumnRuleWidthProperty[TLength]]] = js.undefined
-  /**
-    * The **`column-width`** CSS property specifies the ideal column width in a multi-column layout. The container will have as many columns as can fit without any of them having a width less than the `column-width` value. If the width of the container is narrower than the specified value, the single column's width will be smaller than the declared column width.
-    *
-    * **Initial value**: `auto`
-    */
-  var MozColumnWidth: js.UndefOr[ColumnWidthProperty[TLength] | js.Array[ColumnWidthProperty[TLength]]] = js.undefined
-  /**
-    * If you reference an SVG image in a webpage (such as with the `<img>` element or as a background image), the SVG image can coordinate with the embedding element (its context) to have the image adopt property values set on the embedding element. To do this the embedding element needs to list the properties that are to be made available to the image by listing them as values of the **`-moz-context-properties`** property, and the image needs to opt in to using those properties by using values such as the `context-fill` value.
-    *
-    * **Initial value**: `none`
-    */
-  var MozContextProperties: js.UndefOr[MozContextPropertiesProperty | js.Array[MozContextPropertiesProperty]] = js.undefined
-  /**
-    * The non-standard **`-moz-float-edge`** CSS property specifies whether the height and width properties of the element include the margin, border, or padding thickness.
-    *
-    * **Initial value**: `content-box`
-    */
-  var MozFloatEdge: js.UndefOr[MozFloatEdgeProperty | js.Array[MozFloatEdgeProperty]] = js.undefined
-  /**
-    * The **`font-feature-settings`** CSS property controls advanced typographic features in OpenType fonts.
-    *
-    * **Initial value**: `normal`
-    */
-  var MozFontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty | js.Array[FontFeatureSettingsProperty]] = js.undefined
-  /**
-    * The **`font-language-override`** CSS property controls the use of language-specific glyphs in a typeface.
-    *
-    * **Initial value**: `normal`
-    */
-  var MozFontLanguageOverride: js.UndefOr[FontLanguageOverrideProperty | js.Array[FontLanguageOverrideProperty]] = js.undefined
-  /**
-    * The **`-moz-force-broken-image-icon`** extended CSS property can be used to force the broken image icon to be shown even when a broken image has an `alt` attribute.
-    *
-    * **Initial value**: `0`
-    */
-  var MozForceBrokenImageIcon: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`hyphens`** CSS property specifies how words should be hyphenated when text wraps across multiple lines. You can prevent hyphenation entirely, use hyphenation in manually-specified points within the text, or let the browser automatically insert hyphens where appropriate.
-    *
-    * **Initial value**: `manual`
-    */
-  var MozHyphens: js.UndefOr[HyphensProperty | js.Array[HyphensProperty]] = js.undefined
-  /**
-    * For certain XUL elements and pseudo-elements that use an image from the `list-style-image` property, this property specifies a region of the image that is used in place of the whole image. This allows elements to use different pieces of the same image to improve performance.
-    *
-    * **Initial value**: `auto`
-    */
-  var MozImageRegion: js.UndefOr[MozImageRegionProperty | js.Array[MozImageRegionProperty]] = js.undefined
-  /**
-    * The **`margin-inline-end`** CSS property defines the logical inline end margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. In other words, it corresponds to the `margin-top`, `margin-right`, `margin-bottom` or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `0`
-    */
-  var MozMarginEnd: js.UndefOr[MarginInlineEndProperty[TLength] | js.Array[MarginInlineEndProperty[TLength]]] = js.undefined
-  /**
-    * The **`margin-inline-start`** CSS property defines the logical inline start margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. It corresponds to the `margin-top`, `margin-right`, `margin-bottom`, or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `0`
-    */
+  
+  var MozBorderLeftColors: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozBorderLeftColors | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozBorderLeftColors]]
+    ])
+  ] = js.undefined
+  
+  var MozBorderRightColors: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozBorderRightColors | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozBorderRightColors]]
+    ])
+  ] = js.undefined
+  
+  var MozBorderStartColor: js.UndefOr[
+    BorderInlineStartColor | js.Array[NonNullable[js.UndefOr[BorderInlineStartColor]]]
+  ] = js.undefined
+  
+  var MozBorderStartStyle: js.UndefOr[
+    BorderInlineStartStyle | js.Array[NonNullable[js.UndefOr[BorderInlineStartStyle]]]
+  ] = js.undefined
+  
+  var MozBorderTopColors: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozBorderTopColors | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozBorderTopColors]]]
+  ] = js.undefined
+  
+  var MozBoxSizing: js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]] = js.undefined
+  
+  var MozColumnCount: js.UndefOr[ColumnCount | js.Array[NonNullable[js.UndefOr[ColumnCount]]]] = js.undefined
+  
+  var MozColumnFill: js.UndefOr[ColumnFill | js.Array[NonNullable[js.UndefOr[ColumnFill]]]] = js.undefined
+  
+  var MozColumnRuleColor: js.UndefOr[ColumnRuleColor | js.Array[NonNullable[js.UndefOr[ColumnRuleColor]]]] = js.undefined
+  
+  var MozColumnRuleStyle: js.UndefOr[ColumnRuleStyle | js.Array[NonNullable[js.UndefOr[ColumnRuleStyle]]]] = js.undefined
+  
+  var MozColumnRuleWidth: js.UndefOr[
+    ColumnRuleWidth[TLength] | js.Array[NonNullable[js.UndefOr[ColumnRuleWidth[TLength]]]]
+  ] = js.undefined
+  
+  var MozColumnWidth: js.UndefOr[ColumnWidth[TLength] | js.Array[NonNullable[js.UndefOr[ColumnWidth[TLength]]]]] = js.undefined
+  
+  var MozContextProperties: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozContextProperties | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozContextProperties]]
+    ])
+  ] = js.undefined
+  
+  var MozFontFeatureSettings: js.UndefOr[FontFeatureSettings | js.Array[NonNullable[js.UndefOr[FontFeatureSettings]]]] = js.undefined
+  
+  var MozFontLanguageOverride: js.UndefOr[FontLanguageOverride | js.Array[NonNullable[js.UndefOr[FontLanguageOverride]]]] = js.undefined
+  
+  var MozHyphens: js.UndefOr[Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]] = js.undefined
+  
+  var MozImageRegion: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozImageRegion | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozImageRegion]]]
+  ] = js.undefined
+  
+  var MozMarginEnd: js.UndefOr[
+    MarginInlineEnd[TLength] | js.Array[NonNullable[js.UndefOr[MarginInlineEnd[TLength]]]]
+  ] = js.undefined
+  
   var MozMarginStart: js.UndefOr[
-    MarginInlineStartProperty[TLength] | js.Array[MarginInlineStartProperty[TLength]]
+    MarginInlineStart[TLength] | js.Array[NonNullable[js.UndefOr[MarginInlineStart[TLength]]]]
   ] = js.undefined
-  /**
-    * The **`-moz-orient`** CSS property specifies the orientation of the element to which it's applied.
-    *
-    * **Initial value**: `inline`
-    */
-  var MozOrient: js.UndefOr[MozOrientProperty | js.Array[MozOrientProperty]] = js.undefined
-  /**
-    * In Mozilla applications, the **`-moz-outline-radius-bottomleft`** CSS property can be used to round the bottom-left corner of an element's `outline`.
-    *
-    * **Initial value**: `0`
-    */
-  var MozOutlineRadiusBottomleft: js.UndefOr[
-    MozOutlineRadiusBottomleftProperty[TLength] | js.Array[MozOutlineRadiusBottomleftProperty[TLength]]
+  
+  var MozOrient: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozOrient | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozOrient]]]
   ] = js.undefined
-  /**
-    * In Mozilla applications, the **`-moz-outline-radius-bottomright`** CSS property can be used to round the bottom-right corner of an element's `outline`.
-    *
-    * **Initial value**: `0`
-    */
-  var MozOutlineRadiusBottomright: js.UndefOr[
-    MozOutlineRadiusBottomrightProperty[TLength] | js.Array[MozOutlineRadiusBottomrightProperty[TLength]]
+  
+  var MozOsxFontSmoothing: js.UndefOr[FontSmooth[TLength] | js.Array[NonNullable[js.UndefOr[FontSmooth[TLength]]]]] = js.undefined
+  
+  var MozPaddingEnd: js.UndefOr[
+    PaddingInlineEnd[TLength] | js.Array[NonNullable[js.UndefOr[PaddingInlineEnd[TLength]]]]
   ] = js.undefined
-  /**
-    * In Mozilla applications, the **`-moz-outline-radius-topleft`** CSS property can be used to round the top-left corner of an element's `outline`.
-    *
-    * **Initial value**: `0`
-    */
-  var MozOutlineRadiusTopleft: js.UndefOr[
-    MozOutlineRadiusTopleftProperty[TLength] | js.Array[MozOutlineRadiusTopleftProperty[TLength]]
-  ] = js.undefined
-  /**
-    * In Mozilla applications, the **`-moz-outline-radius-topright`** CSS property can be used to round the top-right corner of an element's `outline`.
-    *
-    * **Initial value**: `0`
-    */
-  var MozOutlineRadiusTopright: js.UndefOr[
-    MozOutlineRadiusToprightProperty[TLength] | js.Array[MozOutlineRadiusToprightProperty[TLength]]
-  ] = js.undefined
-  /**
-    * The **`padding-inline-end`** CSS property defines the logical inline end padding of an element, which maps to a physical padding depending on the element's writing mode, directionality, and text orientation. It corresponds to the `padding-top`, `padding-right`, `padding-bottom`, or `padding-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `0`
-    */
-  var MozPaddingEnd: js.UndefOr[PaddingInlineEndProperty[TLength] | js.Array[PaddingInlineEndProperty[TLength]]] = js.undefined
-  /**
-    * The **`padding-inline-start`** CSS property defines the logical inline start padding of an element, which maps to a physical padding depending on the element's writing mode, directionality, and text orientation. It corresponds to the `padding-top`, `padding-right`, `padding-bottom`, or `padding-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `0`
-    */
+  
   var MozPaddingStart: js.UndefOr[
-    PaddingInlineStartProperty[TLength] | js.Array[PaddingInlineStartProperty[TLength]]
+    PaddingInlineStart[TLength] | js.Array[NonNullable[js.UndefOr[PaddingInlineStart[TLength]]]]
   ] = js.undefined
-  /**
-    * The **`perspective`** CSS property determines the distance between the z=0 plane and the user in order to give a 3D-positioned element some perspective. Each 3D element with z>0 becomes larger; each 3D-element with z<0 becomes smaller. The strength of the effect is determined by the value of this property.
-    *
-    * **Initial value**: `none`
-    */
-  var MozPerspective: js.UndefOr[PerspectiveProperty[TLength] | js.Array[PerspectiveProperty[TLength]]] = js.undefined
-  /**
-    * The **`perspective-origin`** CSS property determines the position at which the viewer is looking. It is used as the _vanishing point_ by the `perspective` property.
-    *
-    * **Initial value**: `50% 50%`
-    */
+  
+  var MozPerspective: js.UndefOr[Perspective[TLength] | js.Array[NonNullable[js.UndefOr[Perspective[TLength]]]]] = js.undefined
+  
   var MozPerspectiveOrigin: js.UndefOr[
-    PerspectiveOriginProperty[TLength] | js.Array[PerspectiveOriginProperty[TLength]]
+    PerspectiveOrigin[TLength] | js.Array[NonNullable[js.UndefOr[PerspectiveOrigin[TLength]]]]
   ] = js.undefined
-  /**
-    * **`-moz-stack-sizing`** is an extended CSS property. Normally, a `stack` will change its size so that all of its child elements are completely visible. For example, moving a child of the stack far to the right will widen the stack so the child remains visible.
-    *
-    * **Initial value**: `stretch-to-fit`
-    */
-  var MozStackSizing: js.UndefOr[MozStackSizingProperty | js.Array[MozStackSizingProperty]] = js.undefined
-  /**
-    * The **`tab-size`** CSS property is used to customize the width of a tab (`U+0009`) character.
-    *
-    * **Initial value**: `8`
-    */
-  var MozTabSize: js.UndefOr[TabSizeProperty[TLength] | js.Array[TabSizeProperty[TLength]]] = js.undefined
-  /**
-    * The **`text-size-adjust`** CSS property controls the text inflation algorithm used on some smartphones and tablets. Other browsers will ignore this property.
-    *
-    * **Initial value**: `auto` for smartphone browsers supporting inflation, `none` in other cases (and then not modifiable).
-    */
-  var MozTextSizeAdjust: js.UndefOr[TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]] = js.undefined
-  /**
-    * The **`transform-origin`** CSS property sets the origin for an element's transformations.
-    *
-    * **Initial value**: `50% 50% 0`
-    */
-  var MozTransformOrigin: js.UndefOr[TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]] = js.undefined
-  /**
-    * The **`transform-style`** CSS property sets whether children of an element are positioned in the 3D space or are flattened in the plane of the element.
-    *
-    * **Initial value**: `flat`
-    */
-  var MozTransformStyle: js.UndefOr[TransformStyleProperty | js.Array[TransformStyleProperty]] = js.undefined
-  /**
-    * The **`transition-delay`** CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
-    *
-    * **Initial value**: `0s`
-    */
-  var MozTransitionDelay: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
-    *
-    * **Initial value**: `0s`
-    */
-  var MozTransitionDuration: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
-    *
-    * **Initial value**: all
-    */
-  var MozTransitionProperty: js.UndefOr[TransitionPropertyProperty | js.Array[TransitionPropertyProperty]] = js.undefined
-  /**
-    * The **`transition-timing-function`** CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.
-    *
-    * **Initial value**: `ease`
-    */
-  var MozTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]] = js.undefined
-  /**
-    * The **`-moz-user-focus`** CSS property is used to indicate whether an element can have the focus.
-    *
-    * **Initial value**: `none`
-    */
-  var MozUserFocus: js.UndefOr[MozUserFocusProperty | js.Array[MozUserFocusProperty]] = js.undefined
-  /**
-    * The **`user-modify`** property has no effect in Firefox. It was originally planned to determine whether or not the content of an element can be edited by a user.
-    *
-    * **Initial value**: `read-only`
-    */
-  var MozUserModify: js.UndefOr[MozUserModifyProperty | js.Array[MozUserModifyProperty]] = js.undefined
-  /**
-    * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
-    *
-    * **Initial value**: `auto`
-    */
-  var MozUserSelect: js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]] = js.undefined
-  /**
-    * The **`-moz-window-dragging`** CSS property specifies whether a window is draggable or not. It only works in Chrome code, and only on Mac OS X.
-    *
-    * **Initial value**: `drag`
-    */
-  var MozWindowDragging: js.UndefOr[MozWindowDraggingProperty | js.Array[MozWindowDraggingProperty]] = js.undefined
-  /**
-    * The **`object-fit`** CSS property sets how the content of a replaced element, such as an `<img>` or `<video>`, should be resized to fit its container.
-    *
-    * **Initial value**: `fill`
-    */
-  var OObjectFit: js.UndefOr[ObjectFitProperty | js.Array[ObjectFitProperty]] = js.undefined
-  /**
-    * The **`object-position`** CSS property specifies the alignment of the selected replaced element's contents within the element's box. Areas of the box which aren't covered by the replaced element's object will show the element's background.
-    *
-    * **Initial value**: `50% 50%`
-    */
-  var OObjectPosition: js.UndefOr[ObjectPositionProperty[TLength] | js.Array[ObjectPositionProperty[TLength]]] = js.undefined
-  /**
-    * The **`tab-size`** CSS property is used to customize the width of a tab (`U+0009`) character.
-    *
-    * **Initial value**: `8`
-    */
-  var OTabSize: js.UndefOr[TabSizeProperty[TLength] | js.Array[TabSizeProperty[TLength]]] = js.undefined
-  /**
-    * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
-    *
-    * **Initial value**: `clip`
-    */
-  var OTextOverflow: js.UndefOr[TextOverflowProperty | js.Array[TextOverflowProperty]] = js.undefined
-  /**
-    * The **`transform-origin`** CSS property sets the origin for an element's transformations.
-    *
-    * **Initial value**: `50% 50% 0`
-    */
-  var OTransformOrigin: js.UndefOr[TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]] = js.undefined
-  /**
-    * The CSS **`align-content`** property sets how the browser distributes space between and around content items along the cross-axis of a flexbox container, and the main-axis of a grid container.
-    *
-    * **Initial value**: `normal`
-    */
-  var WebkitAlignContent: js.UndefOr[AlignContentProperty | js.Array[AlignContentProperty]] = js.undefined
-  /**
-    * The CSS **`align-items`** property sets the `align-self` value on all direct children as a group. The align-self property sets the alignment of an item within its containing block. In Flexbox it controls the alignment of items on the Cross Axis, in Grid Layout it controls the alignment of items on the Block Axis within their grid area.
-    *
-    * **Initial value**: `normal`
-    */
-  var WebkitAlignItems: js.UndefOr[AlignItemsProperty | js.Array[AlignItemsProperty]] = js.undefined
-  /**
-    * The **`align-self`** CSS property aligns flex items of the current flex line overriding the `align-items` value. If any of the item's cross-axis margin is set to `auto`, then `align-self` is ignored. In Grid layout `align-self` aligns the item inside the grid area.
-    *
-    * **Initial value**: `auto`
-    */
-  var WebkitAlignSelf: js.UndefOr[AlignSelfProperty | js.Array[AlignSelfProperty]] = js.undefined
-  /**
-    * The **`animation-delay`** CSS property sets when an animation starts. The animation can start later, immediately from its beginning, or immediately and partway through the animation.
-    *
-    * **Initial value**: `0s`
-    */
-  var WebkitAnimationDelay: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
-    *
-    * **Initial value**: `normal`
-    */
-  var WebkitAnimationDirection: js.UndefOr[AnimationDirectionProperty | js.Array[AnimationDirectionProperty]] = js.undefined
-  /**
-    * The **`animation-duration`** CSS property sets the length of time that an animation takes to complete one cycle.
-    *
-    * **Initial value**: `0s`
-    */
-  var WebkitAnimationDuration: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitAnimationFillMode: js.UndefOr[AnimationFillModeProperty | js.Array[AnimationFillModeProperty]] = js.undefined
-  /**
-    * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
-    *
-    * **Initial value**: `1`
-    */
-  var WebkitAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]] = js.undefined
-  /**
-    * The **`animation-name`** CSS property sets one or more animations to apply to an element. Each name is an `@keyframes` at-rule that sets the property values for the animation sequence.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitAnimationName: js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]] = js.undefined
-  /**
-    * The **`animation-play-state`** CSS property sets whether an animation is running or paused.
-    *
-    * **Initial value**: `running`
-    */
-  var WebkitAnimationPlayState: js.UndefOr[AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]] = js.undefined
-  /**
-    * The `**animation-timing-function**` CSS property sets how an animation progresses through the duration of each cycle.
-    *
-    * **Initial value**: `ease`
-    */
-  var WebkitAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]] = js.undefined
-  /**
-    * The **`-moz-appearance`** CSS property is used in Gecko (Firefox) to display an element using platform-native styling based on the operating system's theme.
-    *
-    * **Initial value**: `none` (but this value is overridden in the user agent CSS)
-    */
-  var WebkitAppearance: js.UndefOr[WebkitAppearanceProperty | js.Array[WebkitAppearanceProperty]] = js.undefined
-  /**
-    * The **`backdrop-filter`** CSS property lets you apply graphical effects such as blurring or color shifting to the area behind an element. Because it applies to everything _behind_ the element, to see the effect you must make the element or its background at least partially transparent.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitBackdropFilter: js.UndefOr[BackdropFilterProperty | js.Array[BackdropFilterProperty]] = js.undefined
-  /**
-    * The **`backface-visibility`** CSS property sets whether the back face of an element is visible when turned towards the user.
-    *
-    * **Initial value**: `visible`
-    */
-  var WebkitBackfaceVisibility: js.UndefOr[BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty]] = js.undefined
-  /**
-    * The **`background-clip`** CSS property sets whether an element's background `<color>` or `<image>` extends underneath its border.
-    *
-    * **Initial value**: `border-box`
-    */
-  var WebkitBackgroundClip: js.UndefOr[BackgroundClipProperty | js.Array[BackgroundClipProperty]] = js.undefined
-  /**
-    * The **`background-origin`** CSS property sets the _background positioning area_. In other words, it sets the origin position of an image set with the `background-image` property.
-    *
-    * **Initial value**: `padding-box`
-    */
-  var WebkitBackgroundOrigin: js.UndefOr[BackgroundOriginProperty | js.Array[BackgroundOriginProperty]] = js.undefined
-  /**
-    * The **`background-size`** CSS property sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space.
-    *
-    * **Initial value**: `auto auto`
-    */
-  var WebkitBackgroundSize: js.UndefOr[BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]]] = js.undefined
-  /** **Initial value**: `currentcolor` */
-  var WebkitBorderBeforeColor: js.UndefOr[WebkitBorderBeforeColorProperty | js.Array[WebkitBorderBeforeColorProperty]] = js.undefined
-  /** **Initial value**: `none` */
-  var WebkitBorderBeforeStyle: js.UndefOr[WebkitBorderBeforeStyleProperty | js.Array[WebkitBorderBeforeStyleProperty]] = js.undefined
-  /** **Initial value**: `medium` */
+  
+  var MozStackSizing: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozStackSizing | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozStackSizing]]]
+  ] = js.undefined
+  
+  var MozTabSize: js.UndefOr[TabSize[TLength] | js.Array[NonNullable[js.UndefOr[TabSize[TLength]]]]] = js.undefined
+  
+  var MozTextBlink: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozTextBlink | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozTextBlink]]]
+  ] = js.undefined
+  
+  var MozTextSizeAdjust: js.UndefOr[TextSizeAdjust | js.Array[NonNullable[js.UndefOr[TextSizeAdjust]]]] = js.undefined
+  
+  var MozTransformOrigin: js.UndefOr[
+    TransformOrigin[TLength] | js.Array[NonNullable[js.UndefOr[TransformOrigin[TLength]]]]
+  ] = js.undefined
+  
+  var MozTransformStyle: js.UndefOr[TransformStyle | js.Array[NonNullable[js.UndefOr[TransformStyle]]]] = js.undefined
+  
+  var MozTransitionDelay: js.UndefOr[
+    TransitionDelay[TTime] | js.Array[NonNullable[js.UndefOr[TransitionDelay[TTime]]]]
+  ] = js.undefined
+  
+  var MozTransitionDuration: js.UndefOr[
+    TransitionDuration[TTime] | js.Array[NonNullable[js.UndefOr[TransitionDuration[TTime]]]]
+  ] = js.undefined
+  
+  var MozTransitionProperty: js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]] = js.undefined
+  
+  var MozTransitionTimingFunction: js.UndefOr[
+    TransitionTimingFunction | js.Array[NonNullable[js.UndefOr[TransitionTimingFunction]]]
+  ] = js.undefined
+  
+  var MozUserFocus: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozUserFocus | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozUserFocus]]]
+  ] = js.undefined
+  
+  var MozUserModify: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozUserModify | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozUserModify]]]
+  ] = js.undefined
+  
+  var MozUserSelect: js.UndefOr[UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]] = js.undefined
+  
+  var MozWindowDragging: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozWindowDragging | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozWindowDragging]]]
+  ] = js.undefined
+  
+  var MozWindowShadow: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.MozWindowShadow | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.MozWindowShadow]]]
+  ] = js.undefined
+  
+  var WebkitAlignContent: js.UndefOr[AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]] = js.undefined
+  
+  var WebkitAlignItems: js.UndefOr[AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]] = js.undefined
+  
+  var WebkitAlignSelf: js.UndefOr[AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]] = js.undefined
+  
+  var WebkitAnimationDelay: js.UndefOr[AnimationDelay[TTime] | js.Array[NonNullable[js.UndefOr[AnimationDelay[TTime]]]]] = js.undefined
+  
+  var WebkitAnimationDirection: js.UndefOr[AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]] = js.undefined
+  
+  var WebkitAnimationDuration: js.UndefOr[
+    AnimationDuration[TTime] | js.Array[NonNullable[js.UndefOr[AnimationDuration[TTime]]]]
+  ] = js.undefined
+  
+  var WebkitAnimationFillMode: js.UndefOr[AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]] = js.undefined
+  
+  var WebkitAnimationIterationCount: js.UndefOr[
+    AnimationIterationCount | js.Array[NonNullable[js.UndefOr[AnimationIterationCount]]]
+  ] = js.undefined
+  
+  var WebkitAnimationName: js.UndefOr[AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]]] = js.undefined
+  
+  var WebkitAnimationPlayState: js.UndefOr[AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]] = js.undefined
+  
+  var WebkitAnimationTimingFunction: js.UndefOr[
+    AnimationTimingFunction | js.Array[NonNullable[js.UndefOr[AnimationTimingFunction]]]
+  ] = js.undefined
+  
+  var WebkitAppearance: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitAppearance | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitAppearance]]]
+  ] = js.undefined
+  
+  var WebkitBackdropFilter: js.UndefOr[BackdropFilter | js.Array[NonNullable[js.UndefOr[BackdropFilter]]]] = js.undefined
+  
+  var WebkitBackfaceVisibility: js.UndefOr[BackfaceVisibility | js.Array[NonNullable[js.UndefOr[BackfaceVisibility]]]] = js.undefined
+  
+  var WebkitBackgroundClip: js.UndefOr[BackgroundClip | js.Array[NonNullable[js.UndefOr[BackgroundClip]]]] = js.undefined
+  
+  var WebkitBackgroundOrigin: js.UndefOr[BackgroundOrigin | js.Array[NonNullable[js.UndefOr[BackgroundOrigin]]]] = js.undefined
+  
+  var WebkitBackgroundSize: js.UndefOr[
+    BackgroundSize[TLength] | js.Array[NonNullable[js.UndefOr[BackgroundSize[TLength]]]]
+  ] = js.undefined
+  
+  var WebkitBorderBeforeColor: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitBorderBeforeColor | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitBorderBeforeColor]]
+    ])
+  ] = js.undefined
+  
+  var WebkitBorderBeforeStyle: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitBorderBeforeStyle | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitBorderBeforeStyle]]
+    ])
+  ] = js.undefined
+  
   var WebkitBorderBeforeWidth: js.UndefOr[
-    WebkitBorderBeforeWidthProperty[TLength] | js.Array[WebkitBorderBeforeWidthProperty[TLength]]
+    typingsJapgolly.csstype.mod.Property.WebkitBorderBeforeWidth[TLength] | (js.Array[
+      NonNullable[
+        js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitBorderBeforeWidth[TLength]]
+      ]
+    ])
   ] = js.undefined
-  /**
-    * The **`border-bottom-left-radius`** CSS property rounds the bottom-left corner of an element.
-    *
-    * **Initial value**: `0`
-    */
+  
   var WebkitBorderBottomLeftRadius: js.UndefOr[
-    BorderBottomLeftRadiusProperty[TLength] | js.Array[BorderBottomLeftRadiusProperty[TLength]]
+    BorderBottomLeftRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderBottomLeftRadius[TLength]]]]
   ] = js.undefined
-  /**
-    * The **`border-bottom-right-radius`** CSS property rounds the bottom-right corner of an element.
-    *
-    * **Initial value**: `0`
-    */
+  
   var WebkitBorderBottomRightRadius: js.UndefOr[
-    BorderBottomRightRadiusProperty[TLength] | js.Array[BorderBottomRightRadiusProperty[TLength]]
+    BorderBottomRightRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderBottomRightRadius[TLength]]]]
   ] = js.undefined
-  /**
-    * The **`border-image-slice`** CSS property divides the image specified by `border-image-source` into regions. These regions form the components of an element's border image.
-    *
-    * **Initial value**: `100%`
-    */
-  var WebkitBorderImageSlice: js.UndefOr[BorderImageSliceProperty | js.Array[BorderImageSliceProperty]] = js.undefined
-  /**
-    * The **`border-top-left-radius`** CSS property rounds the top-left corner of an element.
-    *
-    * **Initial value**: `0`
-    */
+  
+  var WebkitBorderImageSlice: js.UndefOr[BorderImageSlice | js.Array[NonNullable[js.UndefOr[BorderImageSlice]]]] = js.undefined
+  
   var WebkitBorderTopLeftRadius: js.UndefOr[
-    BorderTopLeftRadiusProperty[TLength] | js.Array[BorderTopLeftRadiusProperty[TLength]]
+    BorderTopLeftRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderTopLeftRadius[TLength]]]]
   ] = js.undefined
-  /**
-    * The **`border-top-right-radius`** CSS property rounds the top-right corner of an element.
-    *
-    * **Initial value**: `0`
-    */
+  
   var WebkitBorderTopRightRadius: js.UndefOr[
-    BorderTopRightRadiusProperty[TLength] | js.Array[BorderTopRightRadiusProperty[TLength]]
+    BorderTopRightRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderTopRightRadius[TLength]]]]
   ] = js.undefined
-  /**
-    * The **`box-decoration-break`** CSS property specifies how an element's fragments should be rendered when broken across multiple lines, columns, or pages.
-    *
-    * **Initial value**: `slice`
-    */
-  var WebkitBoxDecorationBreak: js.UndefOr[BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty]] = js.undefined
-  /**
-    * The **`-webkit-box-reflect`** CSS property lets you reflect the content of an element in one specific direction.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitBoxReflect: js.UndefOr[WebkitBoxReflectProperty[TLength] | js.Array[WebkitBoxReflectProperty[TLength]]] = js.undefined
-  /**
-    * The **`box-shadow`** CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radii, and color.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitBoxShadow: js.UndefOr[BoxShadowProperty | js.Array[BoxShadowProperty]] = js.undefined
-  /**
-    * The **`box-sizing`** CSS property defines how the user agent should calculate the total width and height of an element.
-    *
-    * **Initial value**: `content-box`
-    */
-  var WebkitBoxSizing: js.UndefOr[BoxSizingProperty | js.Array[BoxSizingProperty]] = js.undefined
-  /**
-    * The `**clip-path**` CSS property creates a clipping region that sets what part of an element should be shown. Parts that are inside the region are shown, while those outside are hidden.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitClipPath: js.UndefOr[ClipPathProperty | js.Array[ClipPathProperty]] = js.undefined
-  /**
-    * The **`color-adjust`** CSS property sets what, if anything, the user agent may do to optimize the appearance of the element on the output device. By default, the browser is allowed to make any adjustments to the element's appearance it determines to be necessary and prudent given the type and capabilities of the output device.
-    *
-    * **Initial value**: `economy`
-    */
-  var WebkitColorAdjust: js.UndefOr[ColorAdjustProperty | js.Array[ColorAdjustProperty]] = js.undefined
-  /**
-    * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
-    *
-    * **Initial value**: `auto`
-    */
-  var WebkitColumnCount: js.UndefOr[ColumnCountProperty | js.Array[ColumnCountProperty]] = js.undefined
-  /**
-    * The **`column-fill`** CSS property controls how an element's contents are balanced when broken into columns.
-    *
-    * **Initial value**: `balance`
-    */
-  var WebkitColumnFill: js.UndefOr[ColumnFillProperty | js.Array[ColumnFillProperty]] = js.undefined
-  /**
-    * The **`column-gap`** CSS property sets the size of the gap (gutter) between an element's columns.
-    *
-    * **Initial value**: `normal`
-    */
-  var WebkitColumnGap: js.UndefOr[ColumnGapProperty[TLength] | js.Array[ColumnGapProperty[TLength]]] = js.undefined
-  /**
-    * The **`column-rule-color`** CSS property sets the color of the rule (line) drawn between columns in a multi-column layout.
-    *
-    * **Initial value**: `currentcolor`
-    */
-  var WebkitColumnRuleColor: js.UndefOr[ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty]] = js.undefined
-  /**
-    * The **`column-rule-style`** CSS property sets the style of the line drawn between columns in a multi-column layout.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitColumnRuleStyle: js.UndefOr[ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty]] = js.undefined
-  /**
-    * The **`column-rule-width`** CSS property sets the width of the rule (line) drawn between columns in a multi-column layout.
-    *
-    * **Initial value**: `medium`
-    */
-  var WebkitColumnRuleWidth: js.UndefOr[ColumnRuleWidthProperty[TLength] | js.Array[ColumnRuleWidthProperty[TLength]]] = js.undefined
-  /**
-    * The **`column-span`** CSS property makes it possible for an element to span across all columns when its value is set to `all`.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitColumnSpan: js.UndefOr[ColumnSpanProperty | js.Array[ColumnSpanProperty]] = js.undefined
-  /**
-    * The **`column-width`** CSS property specifies the ideal column width in a multi-column layout. The container will have as many columns as can fit without any of them having a width less than the `column-width` value. If the width of the container is narrower than the specified value, the single column's width will be smaller than the declared column width.
-    *
-    * **Initial value**: `auto`
-    */
-  var WebkitColumnWidth: js.UndefOr[ColumnWidthProperty[TLength] | js.Array[ColumnWidthProperty[TLength]]] = js.undefined
-  /**
-    * The **`filter`** CSS property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitFilter: js.UndefOr[FilterProperty | js.Array[FilterProperty]] = js.undefined
-  /**
-    * The **`flex-basis`** CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with `box-sizing`.
-    *
-    * **Initial value**: `auto`
-    */
-  var WebkitFlexBasis: js.UndefOr[FlexBasisProperty[TLength] | js.Array[FlexBasisProperty[TLength]]] = js.undefined
-  /**
-    * The **`flex-direction`** CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
-    *
-    * **Initial value**: `row`
-    */
-  var WebkitFlexDirection: js.UndefOr[FlexDirectionProperty | js.Array[FlexDirectionProperty]] = js.undefined
-  /**
-    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
-    *
-    * **Initial value**: `0`
-    */
-  var WebkitFlexGrow: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
-    *
-    * **Initial value**: `1`
-    */
-  var WebkitFlexShrink: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`flex-wrap`** CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
-    *
-    * **Initial value**: `nowrap`
-    */
-  var WebkitFlexWrap: js.UndefOr[FlexWrapProperty | js.Array[FlexWrapProperty]] = js.undefined
-  /**
-    * The **`font-feature-settings`** CSS property controls advanced typographic features in OpenType fonts.
-    *
-    * **Initial value**: `normal`
-    */
-  var WebkitFontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty | js.Array[FontFeatureSettingsProperty]] = js.undefined
-  /**
-    * The **`font-kerning`** CSS property sets the use of the kerning information stored in a font.
-    *
-    * **Initial value**: `auto`
-    */
-  var WebkitFontKerning: js.UndefOr[FontKerningProperty | js.Array[FontKerningProperty]] = js.undefined
-  /**
-    * The **`font-variant-ligatures`** CSS property controls which ligatures and contextual forms are used in textual content of the elements it applies to. This leads to more harmonized forms in the resulting text.
-    *
-    * **Initial value**: `normal`
-    */
-  var WebkitFontVariantLigatures: js.UndefOr[FontVariantLigaturesProperty | js.Array[FontVariantLigaturesProperty]] = js.undefined
-  /**
-    * The **`hyphens`** CSS property specifies how words should be hyphenated when text wraps across multiple lines. You can prevent hyphenation entirely, use hyphenation in manually-specified points within the text, or let the browser automatically insert hyphens where appropriate.
-    *
-    * **Initial value**: `manual`
-    */
-  var WebkitHyphens: js.UndefOr[HyphensProperty | js.Array[HyphensProperty]] = js.undefined
-  /**
-    * The CSS **`justify-content`** property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.
-    *
-    * **Initial value**: `normal`
-    */
-  var WebkitJustifyContent: js.UndefOr[JustifyContentProperty | js.Array[JustifyContentProperty]] = js.undefined
-  /**
-    * The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
-    *
-    * **Initial value**: `auto`
-    */
-  var WebkitLineBreak: js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]] = js.undefined
-  /**
-    * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified number of lines.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitLineClamp: js.UndefOr[WebkitLineClampProperty | js.Array[WebkitLineClampProperty]] = js.undefined
-  /**
-    * The **`margin-inline-end`** CSS property defines the logical inline end margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. In other words, it corresponds to the `margin-top`, `margin-right`, `margin-bottom` or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `0`
-    */
-  var WebkitMarginEnd: js.UndefOr[MarginInlineEndProperty[TLength] | js.Array[MarginInlineEndProperty[TLength]]] = js.undefined
-  /**
-    * The **`margin-inline-start`** CSS property defines the logical inline start margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. It corresponds to the `margin-top`, `margin-right`, `margin-bottom`, or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `0`
-    */
+  
+  var WebkitBoxDecorationBreak: js.UndefOr[BoxDecorationBreak | js.Array[NonNullable[js.UndefOr[BoxDecorationBreak]]]] = js.undefined
+  
+  var WebkitBoxReflect: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitBoxReflect[TLength] | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitBoxReflect[TLength]]]
+    ])
+  ] = js.undefined
+  
+  var WebkitBoxShadow: js.UndefOr[BoxShadow | js.Array[NonNullable[js.UndefOr[BoxShadow]]]] = js.undefined
+  
+  var WebkitBoxSizing: js.UndefOr[BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]] = js.undefined
+  
+  var WebkitClipPath: js.UndefOr[ClipPath | js.Array[NonNullable[js.UndefOr[ClipPath]]]] = js.undefined
+  
+  var WebkitColumnCount: js.UndefOr[ColumnCount | js.Array[NonNullable[js.UndefOr[ColumnCount]]]] = js.undefined
+  
+  var WebkitColumnFill: js.UndefOr[ColumnFill | js.Array[NonNullable[js.UndefOr[ColumnFill]]]] = js.undefined
+  
+  var WebkitColumnRuleColor: js.UndefOr[ColumnRuleColor | js.Array[NonNullable[js.UndefOr[ColumnRuleColor]]]] = js.undefined
+  
+  var WebkitColumnRuleStyle: js.UndefOr[ColumnRuleStyle | js.Array[NonNullable[js.UndefOr[ColumnRuleStyle]]]] = js.undefined
+  
+  var WebkitColumnRuleWidth: js.UndefOr[
+    ColumnRuleWidth[TLength] | js.Array[NonNullable[js.UndefOr[ColumnRuleWidth[TLength]]]]
+  ] = js.undefined
+  
+  var WebkitColumnSpan: js.UndefOr[ColumnSpan | js.Array[NonNullable[js.UndefOr[ColumnSpan]]]] = js.undefined
+  
+  var WebkitColumnWidth: js.UndefOr[ColumnWidth[TLength] | js.Array[NonNullable[js.UndefOr[ColumnWidth[TLength]]]]] = js.undefined
+  
+  var WebkitFilter: js.UndefOr[Filter | js.Array[NonNullable[js.UndefOr[Filter]]]] = js.undefined
+  
+  var WebkitFlexBasis: js.UndefOr[FlexBasis[TLength] | js.Array[NonNullable[js.UndefOr[FlexBasis[TLength]]]]] = js.undefined
+  
+  var WebkitFlexDirection: js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]] = js.undefined
+  
+  var WebkitFlexGrow: js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]] = js.undefined
+  
+  var WebkitFlexShrink: js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]] = js.undefined
+  
+  var WebkitFlexWrap: js.UndefOr[FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]] = js.undefined
+  
+  var WebkitFontFeatureSettings: js.UndefOr[FontFeatureSettings | js.Array[NonNullable[js.UndefOr[FontFeatureSettings]]]] = js.undefined
+  
+  var WebkitFontKerning: js.UndefOr[FontKerning | js.Array[NonNullable[js.UndefOr[FontKerning]]]] = js.undefined
+  
+  var WebkitFontSmoothing: js.UndefOr[FontSmooth[TLength] | js.Array[NonNullable[js.UndefOr[FontSmooth[TLength]]]]] = js.undefined
+  
+  var WebkitFontVariantLigatures: js.UndefOr[FontVariantLigatures | js.Array[NonNullable[js.UndefOr[FontVariantLigatures]]]] = js.undefined
+  
+  var WebkitHyphenateCharacter: js.UndefOr[HyphenateCharacter | js.Array[NonNullable[js.UndefOr[HyphenateCharacter]]]] = js.undefined
+  
+  var WebkitHyphens: js.UndefOr[Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]] = js.undefined
+  
+  var WebkitInitialLetter: js.UndefOr[InitialLetter | js.Array[NonNullable[js.UndefOr[InitialLetter]]]] = js.undefined
+  
+  var WebkitJustifyContent: js.UndefOr[JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]] = js.undefined
+  
+  var WebkitLineBreak: js.UndefOr[LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]] = js.undefined
+  
+  var WebkitLineClamp: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitLineClamp | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitLineClamp]]]
+  ] = js.undefined
+  
+  var WebkitMarginEnd: js.UndefOr[
+    MarginInlineEnd[TLength] | js.Array[NonNullable[js.UndefOr[MarginInlineEnd[TLength]]]]
+  ] = js.undefined
+  
   var WebkitMarginStart: js.UndefOr[
-    MarginInlineStartProperty[TLength] | js.Array[MarginInlineStartProperty[TLength]]
+    MarginInlineStart[TLength] | js.Array[NonNullable[js.UndefOr[MarginInlineStart[TLength]]]]
   ] = js.undefined
-  /**
-    * If a `-webkit-mask-image` is specified, `-webkit-mask-attachment` determines whether the mask image's position is fixed within the viewport, or scrolls along with its containing block.
-    *
-    * **Initial value**: `scroll`
-    */
-  var WebkitMaskAttachment: js.UndefOr[WebkitMaskAttachmentProperty | js.Array[WebkitMaskAttachmentProperty]] = js.undefined
-  /**
-    * The **`mask-clip`** CSS property determines the area, which is affected by a mask. The painted content of an element must be restricted to this area.
-    *
-    * **Initial value**: `border`
-    */
-  var WebkitMaskClip: js.UndefOr[WebkitMaskClipProperty | js.Array[WebkitMaskClipProperty]] = js.undefined
-  /**
-    * The **`-webkit-mask-composite`** property specifies the manner in which multiple mask images applied to the same element are composited with one another. Mask images are composited in the opposite order that they are declared with the `-webkit-mask-image` property.
-    *
-    * **Initial value**: `source-over`
-    */
-  var WebkitMaskComposite: js.UndefOr[WebkitMaskCompositeProperty | js.Array[WebkitMaskCompositeProperty]] = js.undefined
-  /**
-    * The **`mask-image`** CSS property sets the image that is used as mask layer for an element.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitMaskImage: js.UndefOr[WebkitMaskImageProperty | js.Array[WebkitMaskImageProperty]] = js.undefined
-  /**
-    * The **`mask-origin`** CSS property sets the origin of a mask.
-    *
-    * **Initial value**: `padding`
-    */
-  var WebkitMaskOrigin: js.UndefOr[WebkitMaskOriginProperty | js.Array[WebkitMaskOriginProperty]] = js.undefined
-  /**
-    * The **`mask-position`** CSS property sets the initial position, relative to the mask position layer set by `mask-origin`, for each defined mask image.
-    *
-    * **Initial value**: `0% 0%`
-    */
+  
+  var WebkitMaskAttachment: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitMaskAttachment | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitMaskAttachment]]
+    ])
+  ] = js.undefined
+  
+  var WebkitMaskBoxImageOutset: js.UndefOr[
+    MaskBorderOutset[TLength] | js.Array[NonNullable[js.UndefOr[MaskBorderOutset[TLength]]]]
+  ] = js.undefined
+  
+  var WebkitMaskBoxImageRepeat: js.UndefOr[MaskBorderRepeat | js.Array[NonNullable[js.UndefOr[MaskBorderRepeat]]]] = js.undefined
+  
+  var WebkitMaskBoxImageSlice: js.UndefOr[MaskBorderSlice | js.Array[NonNullable[js.UndefOr[MaskBorderSlice]]]] = js.undefined
+  
+  var WebkitMaskBoxImageSource: js.UndefOr[MaskBorderSource | js.Array[NonNullable[js.UndefOr[MaskBorderSource]]]] = js.undefined
+  
+  var WebkitMaskBoxImageWidth: js.UndefOr[
+    MaskBorderWidth[TLength] | js.Array[NonNullable[js.UndefOr[MaskBorderWidth[TLength]]]]
+  ] = js.undefined
+  
+  var WebkitMaskClip: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitMaskClip | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitMaskClip]]]
+  ] = js.undefined
+  
+  var WebkitMaskComposite: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitMaskComposite | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitMaskComposite]]
+    ])
+  ] = js.undefined
+  
+  var WebkitMaskImage: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitMaskImage | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitMaskImage]]]
+  ] = js.undefined
+  
+  var WebkitMaskOrigin: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitMaskOrigin | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitMaskOrigin]]]
+  ] = js.undefined
+  
   var WebkitMaskPosition: js.UndefOr[
-    WebkitMaskPositionProperty[TLength] | js.Array[WebkitMaskPositionProperty[TLength]]
+    typingsJapgolly.csstype.mod.Property.WebkitMaskPosition[TLength] | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitMaskPosition[TLength]]]
+    ])
   ] = js.undefined
-  /**
-    * The `-webkit-mask-position-x` CSS property sets the initial horizontal position of a mask image.
-    *
-    * **Initial value**: `0%`
-    */
+  
   var WebkitMaskPositionX: js.UndefOr[
-    WebkitMaskPositionXProperty[TLength] | js.Array[WebkitMaskPositionXProperty[TLength]]
+    typingsJapgolly.csstype.mod.Property.WebkitMaskPositionX[TLength] | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitMaskPositionX[TLength]]]
+    ])
   ] = js.undefined
-  /**
-    * The `-webkit-mask-position-y` CSS property sets the initial vertical position of a mask image.
-    *
-    * **Initial value**: `0%`
-    */
+  
   var WebkitMaskPositionY: js.UndefOr[
-    WebkitMaskPositionYProperty[TLength] | js.Array[WebkitMaskPositionYProperty[TLength]]
+    typingsJapgolly.csstype.mod.Property.WebkitMaskPositionY[TLength] | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitMaskPositionY[TLength]]]
+    ])
   ] = js.undefined
-  /**
-    * The **`mask-repeat`** CSS property sets how mask images are repeated. A mask image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all.
-    *
-    * **Initial value**: `repeat`
-    */
-  var WebkitMaskRepeat: js.UndefOr[WebkitMaskRepeatProperty | js.Array[WebkitMaskRepeatProperty]] = js.undefined
-  /**
-    * The `-webkit-mask-repeat-x` property specifies whether and how a mask image is repeated (tiled) horizontally.
-    *
-    * **Initial value**: `repeat`
-    */
-  var WebkitMaskRepeatX: js.UndefOr[WebkitMaskRepeatXProperty | js.Array[WebkitMaskRepeatXProperty]] = js.undefined
-  /**
-    * The `-webkit-mask-repeat-y` property sets whether and how a mask image is repeated (tiled) vertically.
-    *
-    * **Initial value**: `repeat`
-    */
-  var WebkitMaskRepeatY: js.UndefOr[WebkitMaskRepeatYProperty | js.Array[WebkitMaskRepeatYProperty]] = js.undefined
-  /**
-    * The **`mask-size`** CSS property specifies the sizes of the mask images. The size of the image can be fully or partially constrained in order to preserve its intrinsic ratio.
-    *
-    * **Initial value**: `auto auto`
-    */
-  var WebkitMaskSize: js.UndefOr[WebkitMaskSizeProperty[TLength] | js.Array[WebkitMaskSizeProperty[TLength]]] = js.undefined
-  /**
-    * The **`max-inline-size`** CSS property defines the horizontal or vertical maximum size of an element's block depending on its writing mode. It corresponds to the `max-width` or the `max-height` property depending on the value defined for `writing-mode`. If the writing mode is vertically oriented, the value of `max-inline-size` relates to the maximal height of the element, otherwise it relates to the maximal width of the element. It relates to `max-block-size`, which defines the other dimension of the element.
-    *
-    * **Initial value**: `0`
-    */
-  var WebkitMaxInlineSize: js.UndefOr[MaxInlineSizeProperty[TLength] | js.Array[MaxInlineSizeProperty[TLength]]] = js.undefined
-  /**
-    * The **`order`** CSS property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending `order` value and then by their source code order.
-    *
-    * **Initial value**: `0`
-    */
-  var WebkitOrder: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The `-webkit-overflow-scrolling` CSS property controls whether or not touch devices use momentum-based scrolling for a given element.
-    *
-    * **Initial value**: `auto`
-    */
-  var WebkitOverflowScrolling: js.UndefOr[WebkitOverflowScrollingProperty | js.Array[WebkitOverflowScrollingProperty]] = js.undefined
-  /**
-    * The **`padding-inline-end`** CSS property defines the logical inline end padding of an element, which maps to a physical padding depending on the element's writing mode, directionality, and text orientation. It corresponds to the `padding-top`, `padding-right`, `padding-bottom`, or `padding-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `0`
-    */
-  var WebkitPaddingEnd: js.UndefOr[PaddingInlineEndProperty[TLength] | js.Array[PaddingInlineEndProperty[TLength]]] = js.undefined
-  /**
-    * The **`padding-inline-start`** CSS property defines the logical inline start padding of an element, which maps to a physical padding depending on the element's writing mode, directionality, and text orientation. It corresponds to the `padding-top`, `padding-right`, `padding-bottom`, or `padding-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `0`
-    */
+  
+  var WebkitMaskRepeat: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitMaskRepeat | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitMaskRepeat]]]
+  ] = js.undefined
+  
+  var WebkitMaskRepeatX: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitMaskRepeatX | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitMaskRepeatX]]]
+  ] = js.undefined
+  
+  var WebkitMaskRepeatY: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitMaskRepeatY | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitMaskRepeatY]]]
+  ] = js.undefined
+  
+  var WebkitMaskSize: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitMaskSize[TLength] | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitMaskSize[TLength]]]
+    ])
+  ] = js.undefined
+  
+  var WebkitMaxInlineSize: js.UndefOr[
+    MaxInlineSize[TLength] | js.Array[NonNullable[js.UndefOr[MaxInlineSize[TLength]]]]
+  ] = js.undefined
+  
+  var WebkitOrder: js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]] = js.undefined
+  
+  var WebkitOverflowScrolling: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitOverflowScrolling | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitOverflowScrolling]]
+    ])
+  ] = js.undefined
+  
+  var WebkitPaddingEnd: js.UndefOr[
+    PaddingInlineEnd[TLength] | js.Array[NonNullable[js.UndefOr[PaddingInlineEnd[TLength]]]]
+  ] = js.undefined
+  
   var WebkitPaddingStart: js.UndefOr[
-    PaddingInlineStartProperty[TLength] | js.Array[PaddingInlineStartProperty[TLength]]
+    PaddingInlineStart[TLength] | js.Array[NonNullable[js.UndefOr[PaddingInlineStart[TLength]]]]
   ] = js.undefined
-  /**
-    * The **`perspective`** CSS property determines the distance between the z=0 plane and the user in order to give a 3D-positioned element some perspective. Each 3D element with z>0 becomes larger; each 3D-element with z<0 becomes smaller. The strength of the effect is determined by the value of this property.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitPerspective: js.UndefOr[PerspectiveProperty[TLength] | js.Array[PerspectiveProperty[TLength]]] = js.undefined
-  /**
-    * The **`perspective-origin`** CSS property determines the position at which the viewer is looking. It is used as the _vanishing point_ by the `perspective` property.
-    *
-    * **Initial value**: `50% 50%`
-    */
+  
+  var WebkitPerspective: js.UndefOr[Perspective[TLength] | js.Array[NonNullable[js.UndefOr[Perspective[TLength]]]]] = js.undefined
+  
   var WebkitPerspectiveOrigin: js.UndefOr[
-    PerspectiveOriginProperty[TLength] | js.Array[PerspectiveOriginProperty[TLength]]
+    PerspectiveOrigin[TLength] | js.Array[NonNullable[js.UndefOr[PerspectiveOrigin[TLength]]]]
   ] = js.undefined
-  /**
-    * The **`scroll-snap-type`** CSS property sets how strictly snap points are enforced on the scroll container in case there is one.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitScrollSnapType: js.UndefOr[ScrollSnapTypeProperty | js.Array[ScrollSnapTypeProperty]] = js.undefined
-  /**
-    * The **`shape-margin`** CSS property sets a margin for a CSS shape created using `shape-outside`.
-    *
-    * **Initial value**: `0`
-    */
-  var WebkitShapeMargin: js.UndefOr[ShapeMarginProperty[TLength] | js.Array[ShapeMarginProperty[TLength]]] = js.undefined
-  /**
-    * **`-webkit-tap-highlight-color`** is a non-standard CSS property that sets the color of the highlight that appears over a link while it's being tapped. The highlighting indicates to the user that their tap is being successfully recognized, and indicates which element they're tapping on.
-    *
-    * **Initial value**: `black`
-    */
-  var WebkitTapHighlightColor: js.UndefOr[WebkitTapHighlightColorProperty | js.Array[WebkitTapHighlightColorProperty]] = js.undefined
-  /**
-    * The **`text-combine-upright`** CSS property sets the combination of characters into the space of a single character. If the combined text is wider than 1em, the user agent must fit the contents within 1em. The resulting composition is treated as a single upright glyph for layout and decoration. This property only has an effect in vertical writing modes.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitTextCombine: js.UndefOr[TextCombineUprightProperty | js.Array[TextCombineUprightProperty]] = js.undefined
-  /**
-    * The **`text-decoration-color`** CSS property sets the color of decorations added to text by `text-decoration-line`.
-    *
-    * **Initial value**: `currentcolor`
-    */
-  var WebkitTextDecorationColor: js.UndefOr[TextDecorationColorProperty | js.Array[TextDecorationColorProperty]] = js.undefined
-  /**
-    * The **`text-decoration-line`** CSS property sets the kind of decoration that is used on text in an element, such as an underline or overline.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitTextDecorationLine: js.UndefOr[TextDecorationLineProperty | js.Array[TextDecorationLineProperty]] = js.undefined
-  /**
-    * The **`text-decoration-skip`** CSS property sets what parts of an element’s content any text decoration affecting the element must skip over. It controls all text decoration lines drawn by the element and also any text decoration lines drawn by its ancestors.
-    *
-    * **Initial value**: `objects`
-    */
-  var WebkitTextDecorationSkip: js.UndefOr[TextDecorationSkipProperty | js.Array[TextDecorationSkipProperty]] = js.undefined
-  /**
-    * The **`text-decoration-style`** CSS property sets the style of the lines specified by `text-decoration-line`. The style applies to all lines that are set with `text-decoration-line`.
-    *
-    * **Initial value**: `solid`
-    */
-  var WebkitTextDecorationStyle: js.UndefOr[TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty]] = js.undefined
-  /**
-    * The **`text-emphasis-color`** CSS property sets the color of emphasis marks. This value can also be set using the `text-emphasis` shorthand.
-    *
-    * **Initial value**: `currentcolor`
-    */
-  var WebkitTextEmphasisColor: js.UndefOr[TextEmphasisColorProperty | js.Array[TextEmphasisColorProperty]] = js.undefined
-  /**
-    * The **`text-emphasis-position`** CSS property sets where emphasis marks are drawn. Like ruby text, if there isn't enough room for emphasis marks, the line height is increased.
-    *
-    * **Initial value**: `over right`
-    */
-  var WebkitTextEmphasisPosition: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitTextEmphasisStyle: js.UndefOr[TextEmphasisStyleProperty | js.Array[TextEmphasisStyleProperty]] = js.undefined
-  /**
-    * The **`-webkit-text-fill-color`** CSS property specifies the fill color of characters of text. If this property is not set, the value of the `color` property is used.
-    *
-    * **Initial value**: `currentcolor`
-    */
-  var WebkitTextFillColor: js.UndefOr[WebkitTextFillColorProperty | js.Array[WebkitTextFillColorProperty]] = js.undefined
-  /**
-    * The **`text-orientation`** CSS property sets the orientation of the text characters in a line. It only affects text in vertical mode (when `writing-mode` is not `horizontal-tb`). It is useful for controlling the display of languages that use vertical script, and also for making vertical table headers.
-    *
-    * **Initial value**: `mixed`
-    */
-  var WebkitTextOrientation: js.UndefOr[TextOrientationProperty | js.Array[TextOrientationProperty]] = js.undefined
-  /**
-    * The **`text-size-adjust`** CSS property controls the text inflation algorithm used on some smartphones and tablets. Other browsers will ignore this property.
-    *
-    * **Initial value**: `auto` for smartphone browsers supporting inflation, `none` in other cases (and then not modifiable).
-    */
-  var WebkitTextSizeAdjust: js.UndefOr[TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]] = js.undefined
-  /**
-    * The **`-webkit-text-stroke-color`** CSS property specifies the stroke color of characters of text. If this property is not set, the value of the `color` property is used.
-    *
-    * **Initial value**: `currentcolor`
-    */
-  var WebkitTextStrokeColor: js.UndefOr[WebkitTextStrokeColorProperty | js.Array[WebkitTextStrokeColorProperty]] = js.undefined
-  /**
-    * The **`-webkit-text-stroke-width`** CSS property specifies the width of the stroke for text.
-    *
-    * **Initial value**: `0`
-    */
+  
+  var WebkitPrintColorAdjust: js.UndefOr[PrintColorAdjust | js.Array[NonNullable[js.UndefOr[PrintColorAdjust]]]] = js.undefined
+  
+  var WebkitRubyPosition: js.UndefOr[RubyPosition | js.Array[NonNullable[js.UndefOr[RubyPosition]]]] = js.undefined
+  
+  var WebkitScrollSnapType: js.UndefOr[ScrollSnapType | js.Array[NonNullable[js.UndefOr[ScrollSnapType]]]] = js.undefined
+  
+  var WebkitShapeMargin: js.UndefOr[ShapeMargin[TLength] | js.Array[NonNullable[js.UndefOr[ShapeMargin[TLength]]]]] = js.undefined
+  
+  var WebkitTapHighlightColor: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitTapHighlightColor | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitTapHighlightColor]]
+    ])
+  ] = js.undefined
+  
+  var WebkitTextCombine: js.UndefOr[TextCombineUpright | js.Array[NonNullable[js.UndefOr[TextCombineUpright]]]] = js.undefined
+  
+  var WebkitTextDecorationColor: js.UndefOr[TextDecorationColor | js.Array[NonNullable[js.UndefOr[TextDecorationColor]]]] = js.undefined
+  
+  var WebkitTextDecorationLine: js.UndefOr[TextDecorationLine | js.Array[NonNullable[js.UndefOr[TextDecorationLine]]]] = js.undefined
+  
+  var WebkitTextDecorationSkip: js.UndefOr[TextDecorationSkip | js.Array[NonNullable[js.UndefOr[TextDecorationSkip]]]] = js.undefined
+  
+  var WebkitTextDecorationStyle: js.UndefOr[TextDecorationStyle | js.Array[NonNullable[js.UndefOr[TextDecorationStyle]]]] = js.undefined
+  
+  var WebkitTextEmphasisColor: js.UndefOr[TextEmphasisColor | js.Array[NonNullable[js.UndefOr[TextEmphasisColor]]]] = js.undefined
+  
+  var WebkitTextEmphasisPosition: js.UndefOr[TextEmphasisPosition | js.Array[NonNullable[js.UndefOr[TextEmphasisPosition]]]] = js.undefined
+  
+  var WebkitTextEmphasisStyle: js.UndefOr[TextEmphasisStyle | js.Array[NonNullable[js.UndefOr[TextEmphasisStyle]]]] = js.undefined
+  
+  var WebkitTextFillColor: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitTextFillColor | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitTextFillColor]]
+    ])
+  ] = js.undefined
+  
+  var WebkitTextOrientation: js.UndefOr[TextOrientation | js.Array[NonNullable[js.UndefOr[TextOrientation]]]] = js.undefined
+  
+  var WebkitTextSizeAdjust: js.UndefOr[TextSizeAdjust | js.Array[NonNullable[js.UndefOr[TextSizeAdjust]]]] = js.undefined
+  
+  var WebkitTextStrokeColor: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitTextStrokeColor | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitTextStrokeColor]]
+    ])
+  ] = js.undefined
+  
   var WebkitTextStrokeWidth: js.UndefOr[
-    WebkitTextStrokeWidthProperty[TLength] | js.Array[WebkitTextStrokeWidthProperty[TLength]]
+    typingsJapgolly.csstype.mod.Property.WebkitTextStrokeWidth[TLength] | (js.Array[
+      NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitTextStrokeWidth[TLength]]]
+    ])
   ] = js.undefined
-  /**
-    * The `-webkit-touch-callout` CSS property controls the display of the default callout shown when you touch and hold a touch target.
-    *
-    * **Initial value**: `default`
-    */
-  var WebkitTouchCallout: js.UndefOr[WebkitTouchCalloutProperty | js.Array[WebkitTouchCalloutProperty]] = js.undefined
-  /**
-    * The **`transform`** CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
-    *
-    * **Initial value**: `none`
-    */
-  var WebkitTransform: js.UndefOr[TransformProperty | js.Array[TransformProperty]] = js.undefined
-  /**
-    * The **`transform-origin`** CSS property sets the origin for an element's transformations.
-    *
-    * **Initial value**: `50% 50% 0`
-    */
-  var WebkitTransformOrigin: js.UndefOr[TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]] = js.undefined
-  /**
-    * The **`transform-style`** CSS property sets whether children of an element are positioned in the 3D space or are flattened in the plane of the element.
-    *
-    * **Initial value**: `flat`
-    */
-  var WebkitTransformStyle: js.UndefOr[TransformStyleProperty | js.Array[TransformStyleProperty]] = js.undefined
-  /**
-    * The **`transition-delay`** CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
-    *
-    * **Initial value**: `0s`
-    */
-  var WebkitTransitionDelay: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
-    *
-    * **Initial value**: `0s`
-    */
-  var WebkitTransitionDuration: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
-    *
-    * **Initial value**: all
-    */
-  var WebkitTransitionProperty: js.UndefOr[TransitionPropertyProperty | js.Array[TransitionPropertyProperty]] = js.undefined
-  /**
-    * The **`transition-timing-function`** CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.
-    *
-    * **Initial value**: `ease`
-    */
-  var WebkitTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]] = js.undefined
-  /** **Initial value**: `read-only` */
-  var WebkitUserModify: js.UndefOr[WebkitUserModifyProperty | js.Array[WebkitUserModifyProperty]] = js.undefined
-  /**
-    * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
-    *
-    * **Initial value**: `auto`
-    */
-  var WebkitUserSelect: js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]] = js.undefined
-  /**
-    * The **`writing-mode`** CSS property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress.
-    *
-    * **Initial value**: `horizontal-tb`
-    */
-  var WebkitWritingMode: js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]] = js.undefined
-  /**
-    * The **`-ms-accelerator`** CSS property is a Microsoft extension that sets or retrieves a string indicating whether the object represents a keyboard shortcut.
-    *
-    * **Initial value**: `false`
-    */
-  var msAccelerator: js.UndefOr[MsAcceleratorProperty | js.Array[MsAcceleratorProperty]] = js.undefined
-  /**
-    * The **`align-self`** CSS property aligns flex items of the current flex line overriding the `align-items` value. If any of the item's cross-axis margin is set to `auto`, then `align-self` is ignored. In Grid layout `align-self` aligns the item inside the grid area.
-    *
-    * **Initial value**: `auto`
-    */
-  var msAlignSelf: js.UndefOr[AlignSelfProperty | js.Array[AlignSelfProperty]] = js.undefined
-  /**
-    * The **`-ms-block-progression`** CSS property is a Microsoft extension that specifies the block progression and layout orientation.
-    *
-    * **Initial value**: `tb`
-    */
-  var msBlockProgression: js.UndefOr[MsBlockProgressionProperty | js.Array[MsBlockProgressionProperty]] = js.undefined
-  /**
-    * The **`-ms-content-zoom-chaining`** CSS property is a Microsoft extension specifying the zoom behavior that occurs when a user hits the zoom limit during page manipulation.
-    *
-    * **Initial value**: `none`
-    */
-  var msContentZoomChaining: js.UndefOr[MsContentZoomChainingProperty | js.Array[MsContentZoomChainingProperty]] = js.undefined
-  /**
-    * The **`-ms-content-zoom-limit-max`** CSS property is a Microsoft extension that specifies the selected elements' maximum zoom factor.
-    *
-    * **Initial value**: `400%`
-    */
-  var msContentZoomLimitMax: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`-ms-content-zoom-limit-min`** CSS property is a Microsoft extension that specifies the minimum zoom factor.
-    *
-    * **Initial value**: `100%`
-    */
-  var msContentZoomLimitMin: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`-ms-content-zoom-snap-points`** CSS property is a Microsoft extension that specifies where zoom snap-points are located.
-    *
-    * **Initial value**: `snapInterval(0%, 100%)`
-    */
-  var msContentZoomSnapPoints: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`-ms-content-zoom-snap-type`** CSS property is a Microsoft extension that specifies how zooming is affected by defined snap-points.
-    *
-    * **Initial value**: `none`
-    */
-  var msContentZoomSnapType: js.UndefOr[MsContentZoomSnapTypeProperty | js.Array[MsContentZoomSnapTypeProperty]] = js.undefined
-  /**
-    * The **`-ms-content-zooming`** CSS property is a Microsoft extension that specifies whether zooming is enabled.
-    *
-    * **Initial value**: zoom for the top level element, none for all other elements
-    */
-  var msContentZooming: js.UndefOr[MsContentZoomingProperty | js.Array[MsContentZoomingProperty]] = js.undefined
-  /**
-    * The `-ms-filter` CSS property is a Microsoft extension that sets or retrieves the filter or collection of filters applied to an object.
-    *
-    * **Initial value**: "" (the empty string)
-    */
-  var msFilter: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`flex-direction`** CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
-    *
-    * **Initial value**: `row`
-    */
-  var msFlexDirection: js.UndefOr[FlexDirectionProperty | js.Array[FlexDirectionProperty]] = js.undefined
-  /**
-    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
-    *
-    * **Initial value**: `0`
-    */
-  var msFlexPositive: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`-ms-flow-from`** CSS property is a Microsoft extension that gets or sets a value identifying a region container in the document that accepts the content flow from the data source.
-    *
-    * **Initial value**: `none`
-    */
-  var msFlowFrom: js.UndefOr[MsFlowFromProperty | js.Array[MsFlowFromProperty]] = js.undefined
-  /**
-    * The **`-ms-flow-into`** CSS property is a Microsoft extension that gets or sets a value identifying an iframe container in the document that serves as the region's data source.
-    *
-    * **Initial value**: `none`
-    */
-  var msFlowInto: js.UndefOr[MsFlowIntoProperty | js.Array[MsFlowIntoProperty]] = js.undefined
-  /**
-    * The **`grid-auto-columns`** CSS property specifies the size of an implicitly-created grid column track.
-    *
-    * **Initial value**: `auto`
-    */
-  var msGridColumns: js.UndefOr[GridAutoColumnsProperty[TLength] | js.Array[GridAutoColumnsProperty[TLength]]] = js.undefined
-  /**
-    * The **`grid-auto-rows`** CSS property specifies the size of an implicitly-created grid row track.
-    *
-    * **Initial value**: `auto`
-    */
-  var msGridRows: js.UndefOr[GridAutoRowsProperty[TLength] | js.Array[GridAutoRowsProperty[TLength]]] = js.undefined
-  /**
-    * The **`-ms-high-contrast-adjust`** CSS property is a Microsoft extension that gets or sets a value indicating whether to override any CSS properties that would have been set in high contrast mode.
-    *
-    * **Initial value**: `auto`
-    */
-  var msHighContrastAdjust: js.UndefOr[MsHighContrastAdjustProperty | js.Array[MsHighContrastAdjustProperty]] = js.undefined
-  /**
-    * The **`-ms-hyphenate-limit-chars`** CSS property is a Microsoft extension that specifies one to three values indicating the minimum number of characters in a hyphenated word. If the word does not meet the required minimum number of characters in the word, before the hyphen, or after the hyphen, then the word is not hyphenated.
-    *
-    * **Initial value**: `auto`
-    */
-  var msHyphenateLimitChars: js.UndefOr[MsHyphenateLimitCharsProperty | js.Array[MsHyphenateLimitCharsProperty]] = js.undefined
-  /**
-    * The **`-ms-hyphenate-limit-lines`** CSS property is a Microsoft extension specifying the maximum number of consecutive lines in an element that may be ended with a hyphenated word.
-    *
-    * **Initial value**: `no-limit`
-    */
-  var msHyphenateLimitLines: js.UndefOr[MsHyphenateLimitLinesProperty | js.Array[MsHyphenateLimitLinesProperty]] = js.undefined
-  /**
-    * The `**-ms-hyphenate-limit-zone**` CSS property is a Microsoft extension specifying the width of the hyphenation zone.
-    *
-    * **Initial value**: `0`
-    */
+  
+  var WebkitTextUnderlinePosition: js.UndefOr[TextUnderlinePosition | js.Array[NonNullable[js.UndefOr[TextUnderlinePosition]]]] = js.undefined
+  
+  var WebkitTouchCallout: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitTouchCallout | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitTouchCallout]]]
+  ] = js.undefined
+  
+  var WebkitTransform: js.UndefOr[Transform | js.Array[NonNullable[js.UndefOr[Transform]]]] = js.undefined
+  
+  var WebkitTransformOrigin: js.UndefOr[
+    TransformOrigin[TLength] | js.Array[NonNullable[js.UndefOr[TransformOrigin[TLength]]]]
+  ] = js.undefined
+  
+  var WebkitTransformStyle: js.UndefOr[TransformStyle | js.Array[NonNullable[js.UndefOr[TransformStyle]]]] = js.undefined
+  
+  var WebkitTransitionDelay: js.UndefOr[
+    TransitionDelay[TTime] | js.Array[NonNullable[js.UndefOr[TransitionDelay[TTime]]]]
+  ] = js.undefined
+  
+  var WebkitTransitionDuration: js.UndefOr[
+    TransitionDuration[TTime] | js.Array[NonNullable[js.UndefOr[TransitionDuration[TTime]]]]
+  ] = js.undefined
+  
+  var WebkitTransitionProperty: js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]] = js.undefined
+  
+  var WebkitTransitionTimingFunction: js.UndefOr[
+    TransitionTimingFunction | js.Array[NonNullable[js.UndefOr[TransitionTimingFunction]]]
+  ] = js.undefined
+  
+  var WebkitUserModify: js.UndefOr[
+    typingsJapgolly.csstype.mod.Property.WebkitUserModify | js.Array[NonNullable[js.UndefOr[typingsJapgolly.csstype.mod.Property.WebkitUserModify]]]
+  ] = js.undefined
+  
+  var WebkitUserSelect: js.UndefOr[UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]] = js.undefined
+  
+  var WebkitWritingMode: js.UndefOr[WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]] = js.undefined
+  
+  var msAccelerator: js.UndefOr[MsAccelerator | js.Array[NonNullable[js.UndefOr[MsAccelerator]]]] = js.undefined
+  
+  var msBlockProgression: js.UndefOr[MsBlockProgression | js.Array[NonNullable[js.UndefOr[MsBlockProgression]]]] = js.undefined
+  
+  var msContentZoomChaining: js.UndefOr[MsContentZoomChaining | js.Array[NonNullable[js.UndefOr[MsContentZoomChaining]]]] = js.undefined
+  
+  var msContentZoomLimitMax: js.UndefOr[MsContentZoomLimitMax | js.Array[NonNullable[js.UndefOr[MsContentZoomLimitMax]]]] = js.undefined
+  
+  var msContentZoomLimitMin: js.UndefOr[MsContentZoomLimitMin | js.Array[NonNullable[js.UndefOr[MsContentZoomLimitMin]]]] = js.undefined
+  
+  var msContentZoomSnapPoints: js.UndefOr[
+    MsContentZoomSnapPoints | js.Array[NonNullable[js.UndefOr[MsContentZoomSnapPoints]]]
+  ] = js.undefined
+  
+  var msContentZoomSnapType: js.UndefOr[MsContentZoomSnapType | js.Array[NonNullable[js.UndefOr[MsContentZoomSnapType]]]] = js.undefined
+  
+  var msContentZooming: js.UndefOr[MsContentZooming | js.Array[NonNullable[js.UndefOr[MsContentZooming]]]] = js.undefined
+  
+  var msFilter: js.UndefOr[MsFilter | js.Array[NonNullable[js.UndefOr[MsFilter]]]] = js.undefined
+  
+  var msFlexDirection: js.UndefOr[FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]] = js.undefined
+  
+  var msFlexPositive: js.UndefOr[FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]] = js.undefined
+  
+  var msFlowFrom: js.UndefOr[MsFlowFrom | js.Array[NonNullable[js.UndefOr[MsFlowFrom]]]] = js.undefined
+  
+  var msFlowInto: js.UndefOr[MsFlowInto | js.Array[NonNullable[js.UndefOr[MsFlowInto]]]] = js.undefined
+  
+  var msGridColumns: js.UndefOr[
+    MsGridColumns[TLength] | js.Array[NonNullable[js.UndefOr[MsGridColumns[TLength]]]]
+  ] = js.undefined
+  
+  var msGridRows: js.UndefOr[MsGridRows[TLength] | js.Array[NonNullable[js.UndefOr[MsGridRows[TLength]]]]] = js.undefined
+  
+  var msHighContrastAdjust: js.UndefOr[MsHighContrastAdjust | js.Array[NonNullable[js.UndefOr[MsHighContrastAdjust]]]] = js.undefined
+  
+  var msHyphenateLimitChars: js.UndefOr[MsHyphenateLimitChars | js.Array[NonNullable[js.UndefOr[MsHyphenateLimitChars]]]] = js.undefined
+  
+  var msHyphenateLimitLines: js.UndefOr[MsHyphenateLimitLines | js.Array[NonNullable[js.UndefOr[MsHyphenateLimitLines]]]] = js.undefined
+  
   var msHyphenateLimitZone: js.UndefOr[
-    MsHyphenateLimitZoneProperty[TLength] | js.Array[MsHyphenateLimitZoneProperty[TLength]]
+    MsHyphenateLimitZone[TLength] | js.Array[NonNullable[js.UndefOr[MsHyphenateLimitZone[TLength]]]]
   ] = js.undefined
-  /**
-    * The **`hyphens`** CSS property specifies how words should be hyphenated when text wraps across multiple lines. You can prevent hyphenation entirely, use hyphenation in manually-specified points within the text, or let the browser automatically insert hyphens where appropriate.
-    *
-    * **Initial value**: `manual`
-    */
-  var msHyphens: js.UndefOr[HyphensProperty | js.Array[HyphensProperty]] = js.undefined
-  /**
-    * The **`-ms-ime-align`** CSS property is a Microsoft extension aligning the Input Method Editor (IME) candidate window box relative to the element on which the IME composition is active. The extension is implemented in Microsoft Edge and Internet Explorer 11.
-    *
-    * **Initial value**: `auto`
-    */
-  var msImeAlign: js.UndefOr[MsImeAlignProperty | js.Array[MsImeAlignProperty]] = js.undefined
-  /**
-    * The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
-    *
-    * **Initial value**: `auto`
-    */
-  var msLineBreak: js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]] = js.undefined
-  /**
-    * The **`order`** CSS property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending `order` value and then by their source code order.
-    *
-    * **Initial value**: `0`
-    */
-  var msOrder: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`-ms-overflow-style`** CSS property is a Microsoft extension controlling the behavior of scrollbars when the content of an element overflows.
-    *
-    * **Initial value**: `auto`
-    */
-  var msOverflowStyle: js.UndefOr[MsOverflowStyleProperty | js.Array[MsOverflowStyleProperty]] = js.undefined
-  /**
-    * The **`overflow-x`** CSS property sets what shows when content overflows a block-level element's left and right edges. This may be nothing, a scroll bar, or the overflow content.
-    *
-    * **Initial value**: `visible`
-    */
-  var msOverflowX: js.UndefOr[OverflowXProperty | js.Array[OverflowXProperty]] = js.undefined
-  /**
-    * The **`overflow-y`** CSS property sets what shows when content overflows a block-level element's top and bottom edges. This may be nothing, a scroll bar, or the overflow content.
-    *
-    * **Initial value**: `visible`
-    */
-  var msOverflowY: js.UndefOr[OverflowYProperty | js.Array[OverflowYProperty]] = js.undefined
-  /**
-    * The `**-ms-scroll-chaining**` CSS property is a Microsoft extension that specifies the scrolling behavior that occurs when a user hits the scroll limit during a manipulation.
-    *
-    * **Initial value**: `chained`
-    */
-  var msScrollChaining: js.UndefOr[MsScrollChainingProperty | js.Array[MsScrollChainingProperty]] = js.undefined
-  /**
-    * The `**-ms-scroll-limit-x-max**` CSS property is a Microsoft extension that specifies the maximum value for the `Element.scrollLeft` property.
-    *
-    * **Initial value**: `auto`
-    */
+  
+  var msHyphens: js.UndefOr[Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]] = js.undefined
+  
+  var msImeAlign: js.UndefOr[MsImeAlign | js.Array[NonNullable[js.UndefOr[MsImeAlign]]]] = js.undefined
+  
+  var msLineBreak: js.UndefOr[LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]] = js.undefined
+  
+  var msOrder: js.UndefOr[Order | js.Array[NonNullable[js.UndefOr[Order]]]] = js.undefined
+  
+  var msOverflowStyle: js.UndefOr[MsOverflowStyle | js.Array[NonNullable[js.UndefOr[MsOverflowStyle]]]] = js.undefined
+  
+  var msOverflowX: js.UndefOr[OverflowX | js.Array[NonNullable[js.UndefOr[OverflowX]]]] = js.undefined
+  
+  var msOverflowY: js.UndefOr[OverflowY | js.Array[NonNullable[js.UndefOr[OverflowY]]]] = js.undefined
+  
+  var msScrollChaining: js.UndefOr[MsScrollChaining | js.Array[NonNullable[js.UndefOr[MsScrollChaining]]]] = js.undefined
+  
   var msScrollLimitXMax: js.UndefOr[
-    MsScrollLimitXMaxProperty[TLength] | js.Array[MsScrollLimitXMaxProperty[TLength]]
+    MsScrollLimitXMax[TLength] | js.Array[NonNullable[js.UndefOr[MsScrollLimitXMax[TLength]]]]
   ] = js.undefined
-  /**
-    * The **`-ms-scroll-limit-x-min`** CSS property is a Microsoft extension that specifies the minimum value for the `Element.scrollLeft` property.
-    *
-    * **Initial value**: `0`
-    */
+  
   var msScrollLimitXMin: js.UndefOr[
-    MsScrollLimitXMinProperty[TLength] | js.Array[MsScrollLimitXMinProperty[TLength]]
+    MsScrollLimitXMin[TLength] | js.Array[NonNullable[js.UndefOr[MsScrollLimitXMin[TLength]]]]
   ] = js.undefined
-  /**
-    * The **`-ms-scroll-limit-y-max`** CSS property is a Microsoft extension that specifies the maximum value for the `Element.scrollTop` property.
-    *
-    * **Initial value**: `auto`
-    */
+  
   var msScrollLimitYMax: js.UndefOr[
-    MsScrollLimitYMaxProperty[TLength] | js.Array[MsScrollLimitYMaxProperty[TLength]]
+    MsScrollLimitYMax[TLength] | js.Array[NonNullable[js.UndefOr[MsScrollLimitYMax[TLength]]]]
   ] = js.undefined
-  /**
-    * The **`-ms-scroll-limit-y-min`** CSS property is a Microsoft extension that specifies the minimum value for the `Element.scrollTop` property.
-    *
-    * **Initial value**: `0`
-    */
+  
   var msScrollLimitYMin: js.UndefOr[
-    MsScrollLimitYMinProperty[TLength] | js.Array[MsScrollLimitYMinProperty[TLength]]
+    MsScrollLimitYMin[TLength] | js.Array[NonNullable[js.UndefOr[MsScrollLimitYMin[TLength]]]]
   ] = js.undefined
-  /**
-    * The **`-ms-scroll-rails`** CSS property is a Microsoft extension that specifies whether scrolling locks to the primary axis of motion.
-    *
-    * **Initial value**: `railed`
-    */
-  var msScrollRails: js.UndefOr[MsScrollRailsProperty | js.Array[MsScrollRailsProperty]] = js.undefined
-  /**
-    * The **`-ms-scroll-snap-points-x`** CSS property is a Microsoft extension that specifies where snap-points will be located along the x-axis.
-    *
-    * **Initial value**: `snapInterval(0px, 100%)`
-    */
-  var msScrollSnapPointsX: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`-ms-scroll-snap-points-y`** CSS property is a Microsoft extension that specifies where snap-points will be located along the y-axis.
-    *
-    * **Initial value**: `snapInterval(0px, 100%)`
-    */
-  var msScrollSnapPointsY: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`scroll-snap-type`** CSS property sets how strictly snap points are enforced on the scroll container in case there is one.
-    *
-    * **Initial value**: `none`
-    */
-  var msScrollSnapType: js.UndefOr[MsScrollSnapTypeProperty | js.Array[MsScrollSnapTypeProperty]] = js.undefined
-  /**
-    * The **`-ms-scroll-translation`** CSS property is a Microsoft extension that specifies whether vertical-to-horizontal scroll wheel translation occurs on the specified element.
-    *
-    * **Initial value**: `none`
-    */
-  var msScrollTranslation: js.UndefOr[MsScrollTranslationProperty | js.Array[MsScrollTranslationProperty]] = js.undefined
-  /**
-    * The **`-ms-scrollbar-3dlight-color`** CSS property is a Microsoft extension specifying the color of the top and left edges of the scroll box and scroll arrows of a scroll bar.
-    *
-    * **Initial value**: depends on user agent
-    */
-  var msScrollbar3dlightColor: js.UndefOr[MsScrollbar3dlightColorProperty | js.Array[MsScrollbar3dlightColorProperty]] = js.undefined
-  /**
-    * The **`-ms-scrollbar-arrow-color`** CSS property is a Microsoft extension that specifies the color of the arrow elements of a scroll arrow.
-    *
-    * **Initial value**: `ButtonText`
-    */
-  var msScrollbarArrowColor: js.UndefOr[MsScrollbarArrowColorProperty | js.Array[MsScrollbarArrowColorProperty]] = js.undefined
-  /**
-    * The `**-ms-scrollbar-base-color**` CSS property is a Microsoft extension that specifies the base color of the main elements of a scroll bar.
-    *
-    * **Initial value**: depends on user agent
-    */
-  var msScrollbarBaseColor: js.UndefOr[MsScrollbarBaseColorProperty | js.Array[MsScrollbarBaseColorProperty]] = js.undefined
-  /**
-    * The **`-ms-scrollbar-darkshadow-color`** CSS property is a Microsoft extension that specifies the color of a scroll bar's gutter.
-    *
-    * **Initial value**: `ThreeDDarkShadow`
-    */
+  
+  var msScrollRails: js.UndefOr[MsScrollRails | js.Array[NonNullable[js.UndefOr[MsScrollRails]]]] = js.undefined
+  
+  var msScrollSnapPointsX: js.UndefOr[MsScrollSnapPointsX | js.Array[NonNullable[js.UndefOr[MsScrollSnapPointsX]]]] = js.undefined
+  
+  var msScrollSnapPointsY: js.UndefOr[MsScrollSnapPointsY | js.Array[NonNullable[js.UndefOr[MsScrollSnapPointsY]]]] = js.undefined
+  
+  var msScrollSnapType: js.UndefOr[MsScrollSnapType | js.Array[NonNullable[js.UndefOr[MsScrollSnapType]]]] = js.undefined
+  
+  var msScrollTranslation: js.UndefOr[MsScrollTranslation | js.Array[NonNullable[js.UndefOr[MsScrollTranslation]]]] = js.undefined
+  
+  var msScrollbar3dlightColor: js.UndefOr[
+    MsScrollbar3dlightColor | js.Array[NonNullable[js.UndefOr[MsScrollbar3dlightColor]]]
+  ] = js.undefined
+  
+  var msScrollbarArrowColor: js.UndefOr[MsScrollbarArrowColor | js.Array[NonNullable[js.UndefOr[MsScrollbarArrowColor]]]] = js.undefined
+  
+  var msScrollbarBaseColor: js.UndefOr[MsScrollbarBaseColor | js.Array[NonNullable[js.UndefOr[MsScrollbarBaseColor]]]] = js.undefined
+  
   var msScrollbarDarkshadowColor: js.UndefOr[
-    MsScrollbarDarkshadowColorProperty | js.Array[MsScrollbarDarkshadowColorProperty]
+    MsScrollbarDarkshadowColor | js.Array[NonNullable[js.UndefOr[MsScrollbarDarkshadowColor]]]
   ] = js.undefined
-  /**
-    * The `**-ms-scrollbar-face-color**` CSS property is a Microsoft extension that specifies the color of the scroll box and scroll arrows of a scroll bar.
-    *
-    * **Initial value**: `ThreeDFace`
-    */
-  var msScrollbarFaceColor: js.UndefOr[MsScrollbarFaceColorProperty | js.Array[MsScrollbarFaceColorProperty]] = js.undefined
-  /**
-    * The `**-ms-scrollbar-highlight-color**` CSS property is a Microsoft extension that specifies the color of the slider tray, the top and left edges of the scroll box, and the scroll arrows of a scroll bar.
-    *
-    * **Initial value**: `ThreeDHighlight`
-    */
-  var msScrollbarHighlightColor: js.UndefOr[MsScrollbarHighlightColorProperty | js.Array[MsScrollbarHighlightColorProperty]] = js.undefined
-  /**
-    * The **`-ms-scrollbar-shadow-color`** CSS property is a Microsoft extension that specifies the color of the bottom and right edges of the scroll box and scroll arrows of a scroll bar.
-    *
-    * **Initial value**: `ThreeDDarkShadow`
-    */
-  var msScrollbarShadowColor: js.UndefOr[MsScrollbarShadowColorProperty | js.Array[MsScrollbarShadowColorProperty]] = js.undefined
-  /**
-    * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
-    *
-    * **Initial value**: `Scrollbar`
-    */
-  var msScrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty]] = js.undefined
-  /**
-    * The **`-ms-text-autospace`** CSS property is a Microsoft extension that specifies the autospacing and narrow space width adjustment of text.
-    *
-    * **Initial value**: `none`
-    */
-  var msTextAutospace: js.UndefOr[MsTextAutospaceProperty | js.Array[MsTextAutospaceProperty]] = js.undefined
-  /**
-    * The **`text-combine-upright`** CSS property sets the combination of characters into the space of a single character. If the combined text is wider than 1em, the user agent must fit the contents within 1em. The resulting composition is treated as a single upright glyph for layout and decoration. This property only has an effect in vertical writing modes.
-    *
-    * **Initial value**: `none`
-    */
-  var msTextCombineHorizontal: js.UndefOr[TextCombineUprightProperty | js.Array[TextCombineUprightProperty]] = js.undefined
-  /**
-    * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
-    *
-    * **Initial value**: `clip`
-    */
-  var msTextOverflow: js.UndefOr[TextOverflowProperty | js.Array[TextOverflowProperty]] = js.undefined
-  /**
-    * The **`touch-action`** CSS property sets how a region can be manipulated by a touchscreen user (for example, by zooming features built into the browser).
-    *
-    * **Initial value**: `auto`
-    */
-  var msTouchAction: js.UndefOr[TouchActionProperty | js.Array[TouchActionProperty]] = js.undefined
-  /**
-    * The **`-ms-touch-select`** CSS property is a Microsoft extension that toggles the gripper visual elements that enable touch text selection.
-    *
-    * **Initial value**: `grippers`
-    */
-  var msTouchSelect: js.UndefOr[MsTouchSelectProperty | js.Array[MsTouchSelectProperty]] = js.undefined
-  /**
-    * The **`transform`** CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
-    *
-    * **Initial value**: `none`
-    */
-  var msTransform: js.UndefOr[TransformProperty | js.Array[TransformProperty]] = js.undefined
-  /**
-    * The **`transform-origin`** CSS property sets the origin for an element's transformations.
-    *
-    * **Initial value**: `50% 50% 0`
-    */
-  var msTransformOrigin: js.UndefOr[TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]] = js.undefined
-  /**
-    * The **`transition-delay`** CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
-    *
-    * **Initial value**: `0s`
-    */
-  var msTransitionDelay: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
-    *
-    * **Initial value**: `0s`
-    */
-  var msTransitionDuration: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
-    *
-    * **Initial value**: all
-    */
-  var msTransitionProperty: js.UndefOr[TransitionPropertyProperty | js.Array[TransitionPropertyProperty]] = js.undefined
-  /**
-    * The **`transition-timing-function`** CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.
-    *
-    * **Initial value**: `ease`
-    */
-  var msTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]] = js.undefined
-  /**
-    * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
-    *
-    * **Initial value**: `text`
-    */
-  var msUserSelect: js.UndefOr[MsUserSelectProperty | js.Array[MsUserSelectProperty]] = js.undefined
-  /**
-    * The **`word-break`** CSS property sets whether line breaks appear wherever the text would otherwise overflow its content box.
-    *
-    * **Initial value**: `normal`
-    */
-  var msWordBreak: js.UndefOr[WordBreakProperty | js.Array[WordBreakProperty]] = js.undefined
-  /**
-    * The **`-ms-wrap-flow`** CSS property is a Microsoft extension that specifies how exclusions impact inline content within block-level elements.
-    *
-    * **Initial value**: `auto`
-    */
-  var msWrapFlow: js.UndefOr[MsWrapFlowProperty | js.Array[MsWrapFlowProperty]] = js.undefined
-  /**
-    * The **`-ms-wrap-margin`** CSS property is a Microsoft extension that specifies a margin that offsets the inner wrap shape from other shapes.
-    *
-    * **Initial value**: `0`
-    */
-  var msWrapMargin: js.UndefOr[MsWrapMarginProperty[TLength] | js.Array[MsWrapMarginProperty[TLength]]] = js.undefined
-  /**
-    * The **`-ms-wrap-through`** CSS property is a Microsoft extension that specifies how content should wrap around an exclusion element.
-    *
-    * **Initial value**: `wrap`
-    */
-  var msWrapThrough: js.UndefOr[MsWrapThroughProperty | js.Array[MsWrapThroughProperty]] = js.undefined
-  /**
-    * The **`writing-mode`** CSS property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress.
-    *
-    * **Initial value**: `horizontal-tb`
-    */
-  var msWritingMode: js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]] = js.undefined
+  
+  var msScrollbarFaceColor: js.UndefOr[MsScrollbarFaceColor | js.Array[NonNullable[js.UndefOr[MsScrollbarFaceColor]]]] = js.undefined
+  
+  var msScrollbarHighlightColor: js.UndefOr[
+    MsScrollbarHighlightColor | js.Array[NonNullable[js.UndefOr[MsScrollbarHighlightColor]]]
+  ] = js.undefined
+  
+  var msScrollbarShadowColor: js.UndefOr[
+    MsScrollbarShadowColor | js.Array[NonNullable[js.UndefOr[MsScrollbarShadowColor]]]
+  ] = js.undefined
+  
+  var msScrollbarTrackColor: js.UndefOr[MsScrollbarTrackColor | js.Array[NonNullable[js.UndefOr[MsScrollbarTrackColor]]]] = js.undefined
+  
+  var msTextAutospace: js.UndefOr[MsTextAutospace | js.Array[NonNullable[js.UndefOr[MsTextAutospace]]]] = js.undefined
+  
+  var msTextCombineHorizontal: js.UndefOr[TextCombineUpright | js.Array[NonNullable[js.UndefOr[TextCombineUpright]]]] = js.undefined
+  
+  var msTextOverflow: js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]] = js.undefined
+  
+  var msTouchAction: js.UndefOr[TouchAction | js.Array[NonNullable[js.UndefOr[TouchAction]]]] = js.undefined
+  
+  var msTouchSelect: js.UndefOr[MsTouchSelect | js.Array[NonNullable[js.UndefOr[MsTouchSelect]]]] = js.undefined
+  
+  var msTransform: js.UndefOr[Transform | js.Array[NonNullable[js.UndefOr[Transform]]]] = js.undefined
+  
+  var msTransformOrigin: js.UndefOr[
+    TransformOrigin[TLength] | js.Array[NonNullable[js.UndefOr[TransformOrigin[TLength]]]]
+  ] = js.undefined
+  
+  var msTransitionDelay: js.UndefOr[
+    TransitionDelay[TTime] | js.Array[NonNullable[js.UndefOr[TransitionDelay[TTime]]]]
+  ] = js.undefined
+  
+  var msTransitionDuration: js.UndefOr[
+    TransitionDuration[TTime] | js.Array[NonNullable[js.UndefOr[TransitionDuration[TTime]]]]
+  ] = js.undefined
+  
+  var msTransitionProperty: js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]] = js.undefined
+  
+  var msTransitionTimingFunction: js.UndefOr[
+    TransitionTimingFunction | js.Array[NonNullable[js.UndefOr[TransitionTimingFunction]]]
+  ] = js.undefined
+  
+  var msUserSelect: js.UndefOr[MsUserSelect | js.Array[NonNullable[js.UndefOr[MsUserSelect]]]] = js.undefined
+  
+  var msWordBreak: js.UndefOr[WordBreak | js.Array[NonNullable[js.UndefOr[WordBreak]]]] = js.undefined
+  
+  var msWrapFlow: js.UndefOr[MsWrapFlow | js.Array[NonNullable[js.UndefOr[MsWrapFlow]]]] = js.undefined
+  
+  var msWrapMargin: js.UndefOr[MsWrapMargin[TLength] | js.Array[NonNullable[js.UndefOr[MsWrapMargin[TLength]]]]] = js.undefined
+  
+  var msWrapThrough: js.UndefOr[MsWrapThrough | js.Array[NonNullable[js.UndefOr[MsWrapThrough]]]] = js.undefined
+  
+  var msWritingMode: js.UndefOr[WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]] = js.undefined
 }
-
+object VendorLonghandPropertiesFallback {
+  
+  inline def apply[TLength, TTime](): VendorLonghandPropertiesFallback[TLength, TTime] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[VendorLonghandPropertiesFallback[TLength, TTime]]
+  }
+  
+  extension [Self <: VendorLonghandPropertiesFallback[?, ?], TLength, TTime](x: Self & (VendorLonghandPropertiesFallback[TLength, TTime])) {
+    
+    inline def setMozAnimationDelay(value: AnimationDelay[TTime] | js.Array[NonNullable[js.UndefOr[AnimationDelay[TTime]]]]): Self = StObject.set(x, "MozAnimationDelay", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationDelayUndefined: Self = StObject.set(x, "MozAnimationDelay", js.undefined)
+    
+    inline def setMozAnimationDelayVarargs(value: NonNullable[js.UndefOr[AnimationDelay[TTime]]]*): Self = StObject.set(x, "MozAnimationDelay", js.Array(value*))
+    
+    inline def setMozAnimationDirection(value: AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]): Self = StObject.set(x, "MozAnimationDirection", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationDirectionUndefined: Self = StObject.set(x, "MozAnimationDirection", js.undefined)
+    
+    inline def setMozAnimationDirectionVarargs(value: NonNullable[js.UndefOr[AnimationDirection]]*): Self = StObject.set(x, "MozAnimationDirection", js.Array(value*))
+    
+    inline def setMozAnimationDuration(value: AnimationDuration[TTime] | js.Array[NonNullable[js.UndefOr[AnimationDuration[TTime]]]]): Self = StObject.set(x, "MozAnimationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationDurationUndefined: Self = StObject.set(x, "MozAnimationDuration", js.undefined)
+    
+    inline def setMozAnimationDurationVarargs(value: NonNullable[js.UndefOr[AnimationDuration[TTime]]]*): Self = StObject.set(x, "MozAnimationDuration", js.Array(value*))
+    
+    inline def setMozAnimationFillMode(value: AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]): Self = StObject.set(x, "MozAnimationFillMode", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationFillModeUndefined: Self = StObject.set(x, "MozAnimationFillMode", js.undefined)
+    
+    inline def setMozAnimationFillModeVarargs(value: NonNullable[js.UndefOr[AnimationFillMode]]*): Self = StObject.set(x, "MozAnimationFillMode", js.Array(value*))
+    
+    inline def setMozAnimationIterationCount(value: AnimationIterationCount | js.Array[NonNullable[js.UndefOr[AnimationIterationCount]]]): Self = StObject.set(x, "MozAnimationIterationCount", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationIterationCountUndefined: Self = StObject.set(x, "MozAnimationIterationCount", js.undefined)
+    
+    inline def setMozAnimationIterationCountVarargs(value: NonNullable[js.UndefOr[AnimationIterationCount]]*): Self = StObject.set(x, "MozAnimationIterationCount", js.Array(value*))
+    
+    inline def setMozAnimationName(value: AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]]): Self = StObject.set(x, "MozAnimationName", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationNameUndefined: Self = StObject.set(x, "MozAnimationName", js.undefined)
+    
+    inline def setMozAnimationNameVarargs(value: NonNullable[js.UndefOr[AnimationName]]*): Self = StObject.set(x, "MozAnimationName", js.Array(value*))
+    
+    inline def setMozAnimationPlayState(value: AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]): Self = StObject.set(x, "MozAnimationPlayState", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationPlayStateUndefined: Self = StObject.set(x, "MozAnimationPlayState", js.undefined)
+    
+    inline def setMozAnimationPlayStateVarargs(value: NonNullable[js.UndefOr[AnimationPlayState]]*): Self = StObject.set(x, "MozAnimationPlayState", js.Array(value*))
+    
+    inline def setMozAnimationTimingFunction(value: AnimationTimingFunction | js.Array[NonNullable[js.UndefOr[AnimationTimingFunction]]]): Self = StObject.set(x, "MozAnimationTimingFunction", value.asInstanceOf[js.Any])
+    
+    inline def setMozAnimationTimingFunctionUndefined: Self = StObject.set(x, "MozAnimationTimingFunction", js.undefined)
+    
+    inline def setMozAnimationTimingFunctionVarargs(value: NonNullable[js.UndefOr[AnimationTimingFunction]]*): Self = StObject.set(x, "MozAnimationTimingFunction", js.Array(value*))
+    
+    inline def setMozAppearance(value: MozAppearance | js.Array[NonNullable[js.UndefOr[MozAppearance]]]): Self = StObject.set(x, "MozAppearance", value.asInstanceOf[js.Any])
+    
+    inline def setMozAppearanceUndefined: Self = StObject.set(x, "MozAppearance", js.undefined)
+    
+    inline def setMozAppearanceVarargs(value: NonNullable[js.UndefOr[MozAppearance]]*): Self = StObject.set(x, "MozAppearance", js.Array(value*))
+    
+    inline def setMozBackfaceVisibility(value: BackfaceVisibility | js.Array[NonNullable[js.UndefOr[BackfaceVisibility]]]): Self = StObject.set(x, "MozBackfaceVisibility", value.asInstanceOf[js.Any])
+    
+    inline def setMozBackfaceVisibilityUndefined: Self = StObject.set(x, "MozBackfaceVisibility", js.undefined)
+    
+    inline def setMozBackfaceVisibilityVarargs(value: NonNullable[js.UndefOr[BackfaceVisibility]]*): Self = StObject.set(x, "MozBackfaceVisibility", js.Array(value*))
+    
+    inline def setMozBorderBottomColors(value: MozBorderBottomColors | js.Array[NonNullable[js.UndefOr[MozBorderBottomColors]]]): Self = StObject.set(x, "MozBorderBottomColors", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderBottomColorsUndefined: Self = StObject.set(x, "MozBorderBottomColors", js.undefined)
+    
+    inline def setMozBorderBottomColorsVarargs(value: NonNullable[js.UndefOr[MozBorderBottomColors]]*): Self = StObject.set(x, "MozBorderBottomColors", js.Array(value*))
+    
+    inline def setMozBorderEndColor(value: BorderInlineEndColor | js.Array[NonNullable[js.UndefOr[BorderInlineEndColor]]]): Self = StObject.set(x, "MozBorderEndColor", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderEndColorUndefined: Self = StObject.set(x, "MozBorderEndColor", js.undefined)
+    
+    inline def setMozBorderEndColorVarargs(value: NonNullable[js.UndefOr[BorderInlineEndColor]]*): Self = StObject.set(x, "MozBorderEndColor", js.Array(value*))
+    
+    inline def setMozBorderEndStyle(value: BorderInlineEndStyle | js.Array[NonNullable[js.UndefOr[BorderInlineEndStyle]]]): Self = StObject.set(x, "MozBorderEndStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderEndStyleUndefined: Self = StObject.set(x, "MozBorderEndStyle", js.undefined)
+    
+    inline def setMozBorderEndStyleVarargs(value: NonNullable[js.UndefOr[BorderInlineEndStyle]]*): Self = StObject.set(x, "MozBorderEndStyle", js.Array(value*))
+    
+    inline def setMozBorderEndWidth(
+      value: BorderInlineEndWidth[TLength] | js.Array[NonNullable[js.UndefOr[BorderInlineEndWidth[TLength]]]]
+    ): Self = StObject.set(x, "MozBorderEndWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderEndWidthUndefined: Self = StObject.set(x, "MozBorderEndWidth", js.undefined)
+    
+    inline def setMozBorderEndWidthVarargs(value: NonNullable[js.UndefOr[BorderInlineEndWidth[TLength]]]*): Self = StObject.set(x, "MozBorderEndWidth", js.Array(value*))
+    
+    inline def setMozBorderLeftColors(value: MozBorderLeftColors | js.Array[NonNullable[js.UndefOr[MozBorderLeftColors]]]): Self = StObject.set(x, "MozBorderLeftColors", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderLeftColorsUndefined: Self = StObject.set(x, "MozBorderLeftColors", js.undefined)
+    
+    inline def setMozBorderLeftColorsVarargs(value: NonNullable[js.UndefOr[MozBorderLeftColors]]*): Self = StObject.set(x, "MozBorderLeftColors", js.Array(value*))
+    
+    inline def setMozBorderRightColors(value: MozBorderRightColors | js.Array[NonNullable[js.UndefOr[MozBorderRightColors]]]): Self = StObject.set(x, "MozBorderRightColors", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderRightColorsUndefined: Self = StObject.set(x, "MozBorderRightColors", js.undefined)
+    
+    inline def setMozBorderRightColorsVarargs(value: NonNullable[js.UndefOr[MozBorderRightColors]]*): Self = StObject.set(x, "MozBorderRightColors", js.Array(value*))
+    
+    inline def setMozBorderStartColor(value: BorderInlineStartColor | js.Array[NonNullable[js.UndefOr[BorderInlineStartColor]]]): Self = StObject.set(x, "MozBorderStartColor", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderStartColorUndefined: Self = StObject.set(x, "MozBorderStartColor", js.undefined)
+    
+    inline def setMozBorderStartColorVarargs(value: NonNullable[js.UndefOr[BorderInlineStartColor]]*): Self = StObject.set(x, "MozBorderStartColor", js.Array(value*))
+    
+    inline def setMozBorderStartStyle(value: BorderInlineStartStyle | js.Array[NonNullable[js.UndefOr[BorderInlineStartStyle]]]): Self = StObject.set(x, "MozBorderStartStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderStartStyleUndefined: Self = StObject.set(x, "MozBorderStartStyle", js.undefined)
+    
+    inline def setMozBorderStartStyleVarargs(value: NonNullable[js.UndefOr[BorderInlineStartStyle]]*): Self = StObject.set(x, "MozBorderStartStyle", js.Array(value*))
+    
+    inline def setMozBorderTopColors(value: MozBorderTopColors | js.Array[NonNullable[js.UndefOr[MozBorderTopColors]]]): Self = StObject.set(x, "MozBorderTopColors", value.asInstanceOf[js.Any])
+    
+    inline def setMozBorderTopColorsUndefined: Self = StObject.set(x, "MozBorderTopColors", js.undefined)
+    
+    inline def setMozBorderTopColorsVarargs(value: NonNullable[js.UndefOr[MozBorderTopColors]]*): Self = StObject.set(x, "MozBorderTopColors", js.Array(value*))
+    
+    inline def setMozBoxSizing(value: BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]): Self = StObject.set(x, "MozBoxSizing", value.asInstanceOf[js.Any])
+    
+    inline def setMozBoxSizingUndefined: Self = StObject.set(x, "MozBoxSizing", js.undefined)
+    
+    inline def setMozBoxSizingVarargs(value: NonNullable[js.UndefOr[BoxSizing]]*): Self = StObject.set(x, "MozBoxSizing", js.Array(value*))
+    
+    inline def setMozColumnCount(value: ColumnCount | js.Array[NonNullable[js.UndefOr[ColumnCount]]]): Self = StObject.set(x, "MozColumnCount", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnCountUndefined: Self = StObject.set(x, "MozColumnCount", js.undefined)
+    
+    inline def setMozColumnCountVarargs(value: NonNullable[js.UndefOr[ColumnCount]]*): Self = StObject.set(x, "MozColumnCount", js.Array(value*))
+    
+    inline def setMozColumnFill(value: ColumnFill | js.Array[NonNullable[js.UndefOr[ColumnFill]]]): Self = StObject.set(x, "MozColumnFill", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnFillUndefined: Self = StObject.set(x, "MozColumnFill", js.undefined)
+    
+    inline def setMozColumnFillVarargs(value: NonNullable[js.UndefOr[ColumnFill]]*): Self = StObject.set(x, "MozColumnFill", js.Array(value*))
+    
+    inline def setMozColumnRuleColor(value: ColumnRuleColor | js.Array[NonNullable[js.UndefOr[ColumnRuleColor]]]): Self = StObject.set(x, "MozColumnRuleColor", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnRuleColorUndefined: Self = StObject.set(x, "MozColumnRuleColor", js.undefined)
+    
+    inline def setMozColumnRuleColorVarargs(value: NonNullable[js.UndefOr[ColumnRuleColor]]*): Self = StObject.set(x, "MozColumnRuleColor", js.Array(value*))
+    
+    inline def setMozColumnRuleStyle(value: ColumnRuleStyle | js.Array[NonNullable[js.UndefOr[ColumnRuleStyle]]]): Self = StObject.set(x, "MozColumnRuleStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnRuleStyleUndefined: Self = StObject.set(x, "MozColumnRuleStyle", js.undefined)
+    
+    inline def setMozColumnRuleStyleVarargs(value: NonNullable[js.UndefOr[ColumnRuleStyle]]*): Self = StObject.set(x, "MozColumnRuleStyle", js.Array(value*))
+    
+    inline def setMozColumnRuleWidth(value: ColumnRuleWidth[TLength] | js.Array[NonNullable[js.UndefOr[ColumnRuleWidth[TLength]]]]): Self = StObject.set(x, "MozColumnRuleWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnRuleWidthUndefined: Self = StObject.set(x, "MozColumnRuleWidth", js.undefined)
+    
+    inline def setMozColumnRuleWidthVarargs(value: NonNullable[js.UndefOr[ColumnRuleWidth[TLength]]]*): Self = StObject.set(x, "MozColumnRuleWidth", js.Array(value*))
+    
+    inline def setMozColumnWidth(value: ColumnWidth[TLength] | js.Array[NonNullable[js.UndefOr[ColumnWidth[TLength]]]]): Self = StObject.set(x, "MozColumnWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMozColumnWidthUndefined: Self = StObject.set(x, "MozColumnWidth", js.undefined)
+    
+    inline def setMozColumnWidthVarargs(value: NonNullable[js.UndefOr[ColumnWidth[TLength]]]*): Self = StObject.set(x, "MozColumnWidth", js.Array(value*))
+    
+    inline def setMozContextProperties(value: MozContextProperties | js.Array[NonNullable[js.UndefOr[MozContextProperties]]]): Self = StObject.set(x, "MozContextProperties", value.asInstanceOf[js.Any])
+    
+    inline def setMozContextPropertiesUndefined: Self = StObject.set(x, "MozContextProperties", js.undefined)
+    
+    inline def setMozContextPropertiesVarargs(value: NonNullable[js.UndefOr[MozContextProperties]]*): Self = StObject.set(x, "MozContextProperties", js.Array(value*))
+    
+    inline def setMozFontFeatureSettings(value: FontFeatureSettings | js.Array[NonNullable[js.UndefOr[FontFeatureSettings]]]): Self = StObject.set(x, "MozFontFeatureSettings", value.asInstanceOf[js.Any])
+    
+    inline def setMozFontFeatureSettingsUndefined: Self = StObject.set(x, "MozFontFeatureSettings", js.undefined)
+    
+    inline def setMozFontFeatureSettingsVarargs(value: NonNullable[js.UndefOr[FontFeatureSettings]]*): Self = StObject.set(x, "MozFontFeatureSettings", js.Array(value*))
+    
+    inline def setMozFontLanguageOverride(value: FontLanguageOverride | js.Array[NonNullable[js.UndefOr[FontLanguageOverride]]]): Self = StObject.set(x, "MozFontLanguageOverride", value.asInstanceOf[js.Any])
+    
+    inline def setMozFontLanguageOverrideUndefined: Self = StObject.set(x, "MozFontLanguageOverride", js.undefined)
+    
+    inline def setMozFontLanguageOverrideVarargs(value: NonNullable[js.UndefOr[FontLanguageOverride]]*): Self = StObject.set(x, "MozFontLanguageOverride", js.Array(value*))
+    
+    inline def setMozHyphens(value: Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]): Self = StObject.set(x, "MozHyphens", value.asInstanceOf[js.Any])
+    
+    inline def setMozHyphensUndefined: Self = StObject.set(x, "MozHyphens", js.undefined)
+    
+    inline def setMozHyphensVarargs(value: NonNullable[js.UndefOr[Hyphens]]*): Self = StObject.set(x, "MozHyphens", js.Array(value*))
+    
+    inline def setMozImageRegion(value: MozImageRegion | js.Array[NonNullable[js.UndefOr[MozImageRegion]]]): Self = StObject.set(x, "MozImageRegion", value.asInstanceOf[js.Any])
+    
+    inline def setMozImageRegionUndefined: Self = StObject.set(x, "MozImageRegion", js.undefined)
+    
+    inline def setMozImageRegionVarargs(value: NonNullable[js.UndefOr[MozImageRegion]]*): Self = StObject.set(x, "MozImageRegion", js.Array(value*))
+    
+    inline def setMozMarginEnd(value: MarginInlineEnd[TLength] | js.Array[NonNullable[js.UndefOr[MarginInlineEnd[TLength]]]]): Self = StObject.set(x, "MozMarginEnd", value.asInstanceOf[js.Any])
+    
+    inline def setMozMarginEndUndefined: Self = StObject.set(x, "MozMarginEnd", js.undefined)
+    
+    inline def setMozMarginEndVarargs(value: NonNullable[js.UndefOr[MarginInlineEnd[TLength]]]*): Self = StObject.set(x, "MozMarginEnd", js.Array(value*))
+    
+    inline def setMozMarginStart(value: MarginInlineStart[TLength] | js.Array[NonNullable[js.UndefOr[MarginInlineStart[TLength]]]]): Self = StObject.set(x, "MozMarginStart", value.asInstanceOf[js.Any])
+    
+    inline def setMozMarginStartUndefined: Self = StObject.set(x, "MozMarginStart", js.undefined)
+    
+    inline def setMozMarginStartVarargs(value: NonNullable[js.UndefOr[MarginInlineStart[TLength]]]*): Self = StObject.set(x, "MozMarginStart", js.Array(value*))
+    
+    inline def setMozOrient(value: MozOrient | js.Array[NonNullable[js.UndefOr[MozOrient]]]): Self = StObject.set(x, "MozOrient", value.asInstanceOf[js.Any])
+    
+    inline def setMozOrientUndefined: Self = StObject.set(x, "MozOrient", js.undefined)
+    
+    inline def setMozOrientVarargs(value: NonNullable[js.UndefOr[MozOrient]]*): Self = StObject.set(x, "MozOrient", js.Array(value*))
+    
+    inline def setMozOsxFontSmoothing(value: FontSmooth[TLength] | js.Array[NonNullable[js.UndefOr[FontSmooth[TLength]]]]): Self = StObject.set(x, "MozOsxFontSmoothing", value.asInstanceOf[js.Any])
+    
+    inline def setMozOsxFontSmoothingUndefined: Self = StObject.set(x, "MozOsxFontSmoothing", js.undefined)
+    
+    inline def setMozOsxFontSmoothingVarargs(value: NonNullable[js.UndefOr[FontSmooth[TLength]]]*): Self = StObject.set(x, "MozOsxFontSmoothing", js.Array(value*))
+    
+    inline def setMozPaddingEnd(value: PaddingInlineEnd[TLength] | js.Array[NonNullable[js.UndefOr[PaddingInlineEnd[TLength]]]]): Self = StObject.set(x, "MozPaddingEnd", value.asInstanceOf[js.Any])
+    
+    inline def setMozPaddingEndUndefined: Self = StObject.set(x, "MozPaddingEnd", js.undefined)
+    
+    inline def setMozPaddingEndVarargs(value: NonNullable[js.UndefOr[PaddingInlineEnd[TLength]]]*): Self = StObject.set(x, "MozPaddingEnd", js.Array(value*))
+    
+    inline def setMozPaddingStart(
+      value: PaddingInlineStart[TLength] | js.Array[NonNullable[js.UndefOr[PaddingInlineStart[TLength]]]]
+    ): Self = StObject.set(x, "MozPaddingStart", value.asInstanceOf[js.Any])
+    
+    inline def setMozPaddingStartUndefined: Self = StObject.set(x, "MozPaddingStart", js.undefined)
+    
+    inline def setMozPaddingStartVarargs(value: NonNullable[js.UndefOr[PaddingInlineStart[TLength]]]*): Self = StObject.set(x, "MozPaddingStart", js.Array(value*))
+    
+    inline def setMozPerspective(value: Perspective[TLength] | js.Array[NonNullable[js.UndefOr[Perspective[TLength]]]]): Self = StObject.set(x, "MozPerspective", value.asInstanceOf[js.Any])
+    
+    inline def setMozPerspectiveOrigin(value: PerspectiveOrigin[TLength] | js.Array[NonNullable[js.UndefOr[PerspectiveOrigin[TLength]]]]): Self = StObject.set(x, "MozPerspectiveOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setMozPerspectiveOriginUndefined: Self = StObject.set(x, "MozPerspectiveOrigin", js.undefined)
+    
+    inline def setMozPerspectiveOriginVarargs(value: NonNullable[js.UndefOr[PerspectiveOrigin[TLength]]]*): Self = StObject.set(x, "MozPerspectiveOrigin", js.Array(value*))
+    
+    inline def setMozPerspectiveUndefined: Self = StObject.set(x, "MozPerspective", js.undefined)
+    
+    inline def setMozPerspectiveVarargs(value: NonNullable[js.UndefOr[Perspective[TLength]]]*): Self = StObject.set(x, "MozPerspective", js.Array(value*))
+    
+    inline def setMozStackSizing(value: MozStackSizing | js.Array[NonNullable[js.UndefOr[MozStackSizing]]]): Self = StObject.set(x, "MozStackSizing", value.asInstanceOf[js.Any])
+    
+    inline def setMozStackSizingUndefined: Self = StObject.set(x, "MozStackSizing", js.undefined)
+    
+    inline def setMozStackSizingVarargs(value: NonNullable[js.UndefOr[MozStackSizing]]*): Self = StObject.set(x, "MozStackSizing", js.Array(value*))
+    
+    inline def setMozTabSize(value: TabSize[TLength] | js.Array[NonNullable[js.UndefOr[TabSize[TLength]]]]): Self = StObject.set(x, "MozTabSize", value.asInstanceOf[js.Any])
+    
+    inline def setMozTabSizeUndefined: Self = StObject.set(x, "MozTabSize", js.undefined)
+    
+    inline def setMozTabSizeVarargs(value: NonNullable[js.UndefOr[TabSize[TLength]]]*): Self = StObject.set(x, "MozTabSize", js.Array(value*))
+    
+    inline def setMozTextBlink(value: MozTextBlink | js.Array[NonNullable[js.UndefOr[MozTextBlink]]]): Self = StObject.set(x, "MozTextBlink", value.asInstanceOf[js.Any])
+    
+    inline def setMozTextBlinkUndefined: Self = StObject.set(x, "MozTextBlink", js.undefined)
+    
+    inline def setMozTextBlinkVarargs(value: NonNullable[js.UndefOr[MozTextBlink]]*): Self = StObject.set(x, "MozTextBlink", js.Array(value*))
+    
+    inline def setMozTextSizeAdjust(value: TextSizeAdjust | js.Array[NonNullable[js.UndefOr[TextSizeAdjust]]]): Self = StObject.set(x, "MozTextSizeAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setMozTextSizeAdjustUndefined: Self = StObject.set(x, "MozTextSizeAdjust", js.undefined)
+    
+    inline def setMozTextSizeAdjustVarargs(value: NonNullable[js.UndefOr[TextSizeAdjust]]*): Self = StObject.set(x, "MozTextSizeAdjust", js.Array(value*))
+    
+    inline def setMozTransformOrigin(value: TransformOrigin[TLength] | js.Array[NonNullable[js.UndefOr[TransformOrigin[TLength]]]]): Self = StObject.set(x, "MozTransformOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setMozTransformOriginUndefined: Self = StObject.set(x, "MozTransformOrigin", js.undefined)
+    
+    inline def setMozTransformOriginVarargs(value: NonNullable[js.UndefOr[TransformOrigin[TLength]]]*): Self = StObject.set(x, "MozTransformOrigin", js.Array(value*))
+    
+    inline def setMozTransformStyle(value: TransformStyle | js.Array[NonNullable[js.UndefOr[TransformStyle]]]): Self = StObject.set(x, "MozTransformStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMozTransformStyleUndefined: Self = StObject.set(x, "MozTransformStyle", js.undefined)
+    
+    inline def setMozTransformStyleVarargs(value: NonNullable[js.UndefOr[TransformStyle]]*): Self = StObject.set(x, "MozTransformStyle", js.Array(value*))
+    
+    inline def setMozTransitionDelay(value: TransitionDelay[TTime] | js.Array[NonNullable[js.UndefOr[TransitionDelay[TTime]]]]): Self = StObject.set(x, "MozTransitionDelay", value.asInstanceOf[js.Any])
+    
+    inline def setMozTransitionDelayUndefined: Self = StObject.set(x, "MozTransitionDelay", js.undefined)
+    
+    inline def setMozTransitionDelayVarargs(value: NonNullable[js.UndefOr[TransitionDelay[TTime]]]*): Self = StObject.set(x, "MozTransitionDelay", js.Array(value*))
+    
+    inline def setMozTransitionDuration(value: TransitionDuration[TTime] | js.Array[NonNullable[js.UndefOr[TransitionDuration[TTime]]]]): Self = StObject.set(x, "MozTransitionDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMozTransitionDurationUndefined: Self = StObject.set(x, "MozTransitionDuration", js.undefined)
+    
+    inline def setMozTransitionDurationVarargs(value: NonNullable[js.UndefOr[TransitionDuration[TTime]]]*): Self = StObject.set(x, "MozTransitionDuration", js.Array(value*))
+    
+    inline def setMozTransitionProperty(value: TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]): Self = StObject.set(x, "MozTransitionProperty", value.asInstanceOf[js.Any])
+    
+    inline def setMozTransitionPropertyUndefined: Self = StObject.set(x, "MozTransitionProperty", js.undefined)
+    
+    inline def setMozTransitionPropertyVarargs(value: NonNullable[js.UndefOr[TransitionProperty]]*): Self = StObject.set(x, "MozTransitionProperty", js.Array(value*))
+    
+    inline def setMozTransitionTimingFunction(value: TransitionTimingFunction | js.Array[NonNullable[js.UndefOr[TransitionTimingFunction]]]): Self = StObject.set(x, "MozTransitionTimingFunction", value.asInstanceOf[js.Any])
+    
+    inline def setMozTransitionTimingFunctionUndefined: Self = StObject.set(x, "MozTransitionTimingFunction", js.undefined)
+    
+    inline def setMozTransitionTimingFunctionVarargs(value: NonNullable[js.UndefOr[TransitionTimingFunction]]*): Self = StObject.set(x, "MozTransitionTimingFunction", js.Array(value*))
+    
+    inline def setMozUserFocus(value: MozUserFocus | js.Array[NonNullable[js.UndefOr[MozUserFocus]]]): Self = StObject.set(x, "MozUserFocus", value.asInstanceOf[js.Any])
+    
+    inline def setMozUserFocusUndefined: Self = StObject.set(x, "MozUserFocus", js.undefined)
+    
+    inline def setMozUserFocusVarargs(value: NonNullable[js.UndefOr[MozUserFocus]]*): Self = StObject.set(x, "MozUserFocus", js.Array(value*))
+    
+    inline def setMozUserModify(value: MozUserModify | js.Array[NonNullable[js.UndefOr[MozUserModify]]]): Self = StObject.set(x, "MozUserModify", value.asInstanceOf[js.Any])
+    
+    inline def setMozUserModifyUndefined: Self = StObject.set(x, "MozUserModify", js.undefined)
+    
+    inline def setMozUserModifyVarargs(value: NonNullable[js.UndefOr[MozUserModify]]*): Self = StObject.set(x, "MozUserModify", js.Array(value*))
+    
+    inline def setMozUserSelect(value: UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]): Self = StObject.set(x, "MozUserSelect", value.asInstanceOf[js.Any])
+    
+    inline def setMozUserSelectUndefined: Self = StObject.set(x, "MozUserSelect", js.undefined)
+    
+    inline def setMozUserSelectVarargs(value: NonNullable[js.UndefOr[UserSelect]]*): Self = StObject.set(x, "MozUserSelect", js.Array(value*))
+    
+    inline def setMozWindowDragging(value: MozWindowDragging | js.Array[NonNullable[js.UndefOr[MozWindowDragging]]]): Self = StObject.set(x, "MozWindowDragging", value.asInstanceOf[js.Any])
+    
+    inline def setMozWindowDraggingUndefined: Self = StObject.set(x, "MozWindowDragging", js.undefined)
+    
+    inline def setMozWindowDraggingVarargs(value: NonNullable[js.UndefOr[MozWindowDragging]]*): Self = StObject.set(x, "MozWindowDragging", js.Array(value*))
+    
+    inline def setMozWindowShadow(value: MozWindowShadow | js.Array[NonNullable[js.UndefOr[MozWindowShadow]]]): Self = StObject.set(x, "MozWindowShadow", value.asInstanceOf[js.Any])
+    
+    inline def setMozWindowShadowUndefined: Self = StObject.set(x, "MozWindowShadow", js.undefined)
+    
+    inline def setMozWindowShadowVarargs(value: NonNullable[js.UndefOr[MozWindowShadow]]*): Self = StObject.set(x, "MozWindowShadow", js.Array(value*))
+    
+    inline def setMsAccelerator(value: MsAccelerator | js.Array[NonNullable[js.UndefOr[MsAccelerator]]]): Self = StObject.set(x, "msAccelerator", value.asInstanceOf[js.Any])
+    
+    inline def setMsAcceleratorUndefined: Self = StObject.set(x, "msAccelerator", js.undefined)
+    
+    inline def setMsAcceleratorVarargs(value: NonNullable[js.UndefOr[MsAccelerator]]*): Self = StObject.set(x, "msAccelerator", js.Array(value*))
+    
+    inline def setMsBlockProgression(value: MsBlockProgression | js.Array[NonNullable[js.UndefOr[MsBlockProgression]]]): Self = StObject.set(x, "msBlockProgression", value.asInstanceOf[js.Any])
+    
+    inline def setMsBlockProgressionUndefined: Self = StObject.set(x, "msBlockProgression", js.undefined)
+    
+    inline def setMsBlockProgressionVarargs(value: NonNullable[js.UndefOr[MsBlockProgression]]*): Self = StObject.set(x, "msBlockProgression", js.Array(value*))
+    
+    inline def setMsContentZoomChaining(value: MsContentZoomChaining | js.Array[NonNullable[js.UndefOr[MsContentZoomChaining]]]): Self = StObject.set(x, "msContentZoomChaining", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomChainingUndefined: Self = StObject.set(x, "msContentZoomChaining", js.undefined)
+    
+    inline def setMsContentZoomChainingVarargs(value: NonNullable[js.UndefOr[MsContentZoomChaining]]*): Self = StObject.set(x, "msContentZoomChaining", js.Array(value*))
+    
+    inline def setMsContentZoomLimitMax(value: MsContentZoomLimitMax | js.Array[NonNullable[js.UndefOr[MsContentZoomLimitMax]]]): Self = StObject.set(x, "msContentZoomLimitMax", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomLimitMaxUndefined: Self = StObject.set(x, "msContentZoomLimitMax", js.undefined)
+    
+    inline def setMsContentZoomLimitMaxVarargs(value: NonNullable[js.UndefOr[MsContentZoomLimitMax]]*): Self = StObject.set(x, "msContentZoomLimitMax", js.Array(value*))
+    
+    inline def setMsContentZoomLimitMin(value: MsContentZoomLimitMin | js.Array[NonNullable[js.UndefOr[MsContentZoomLimitMin]]]): Self = StObject.set(x, "msContentZoomLimitMin", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomLimitMinUndefined: Self = StObject.set(x, "msContentZoomLimitMin", js.undefined)
+    
+    inline def setMsContentZoomLimitMinVarargs(value: NonNullable[js.UndefOr[MsContentZoomLimitMin]]*): Self = StObject.set(x, "msContentZoomLimitMin", js.Array(value*))
+    
+    inline def setMsContentZoomSnapPoints(value: MsContentZoomSnapPoints | js.Array[NonNullable[js.UndefOr[MsContentZoomSnapPoints]]]): Self = StObject.set(x, "msContentZoomSnapPoints", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomSnapPointsUndefined: Self = StObject.set(x, "msContentZoomSnapPoints", js.undefined)
+    
+    inline def setMsContentZoomSnapPointsVarargs(value: NonNullable[js.UndefOr[MsContentZoomSnapPoints]]*): Self = StObject.set(x, "msContentZoomSnapPoints", js.Array(value*))
+    
+    inline def setMsContentZoomSnapType(value: MsContentZoomSnapType | js.Array[NonNullable[js.UndefOr[MsContentZoomSnapType]]]): Self = StObject.set(x, "msContentZoomSnapType", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomSnapTypeUndefined: Self = StObject.set(x, "msContentZoomSnapType", js.undefined)
+    
+    inline def setMsContentZoomSnapTypeVarargs(value: NonNullable[js.UndefOr[MsContentZoomSnapType]]*): Self = StObject.set(x, "msContentZoomSnapType", js.Array(value*))
+    
+    inline def setMsContentZooming(value: MsContentZooming | js.Array[NonNullable[js.UndefOr[MsContentZooming]]]): Self = StObject.set(x, "msContentZooming", value.asInstanceOf[js.Any])
+    
+    inline def setMsContentZoomingUndefined: Self = StObject.set(x, "msContentZooming", js.undefined)
+    
+    inline def setMsContentZoomingVarargs(value: NonNullable[js.UndefOr[MsContentZooming]]*): Self = StObject.set(x, "msContentZooming", js.Array(value*))
+    
+    inline def setMsFilter(value: MsFilter | js.Array[NonNullable[js.UndefOr[MsFilter]]]): Self = StObject.set(x, "msFilter", value.asInstanceOf[js.Any])
+    
+    inline def setMsFilterUndefined: Self = StObject.set(x, "msFilter", js.undefined)
+    
+    inline def setMsFilterVarargs(value: NonNullable[js.UndefOr[MsFilter]]*): Self = StObject.set(x, "msFilter", js.Array(value*))
+    
+    inline def setMsFlexDirection(value: FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]): Self = StObject.set(x, "msFlexDirection", value.asInstanceOf[js.Any])
+    
+    inline def setMsFlexDirectionUndefined: Self = StObject.set(x, "msFlexDirection", js.undefined)
+    
+    inline def setMsFlexDirectionVarargs(value: NonNullable[js.UndefOr[FlexDirection]]*): Self = StObject.set(x, "msFlexDirection", js.Array(value*))
+    
+    inline def setMsFlexPositive(value: FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]): Self = StObject.set(x, "msFlexPositive", value.asInstanceOf[js.Any])
+    
+    inline def setMsFlexPositiveUndefined: Self = StObject.set(x, "msFlexPositive", js.undefined)
+    
+    inline def setMsFlexPositiveVarargs(value: NonNullable[js.UndefOr[FlexGrow]]*): Self = StObject.set(x, "msFlexPositive", js.Array(value*))
+    
+    inline def setMsFlowFrom(value: MsFlowFrom | js.Array[NonNullable[js.UndefOr[MsFlowFrom]]]): Self = StObject.set(x, "msFlowFrom", value.asInstanceOf[js.Any])
+    
+    inline def setMsFlowFromUndefined: Self = StObject.set(x, "msFlowFrom", js.undefined)
+    
+    inline def setMsFlowFromVarargs(value: NonNullable[js.UndefOr[MsFlowFrom]]*): Self = StObject.set(x, "msFlowFrom", js.Array(value*))
+    
+    inline def setMsFlowInto(value: MsFlowInto | js.Array[NonNullable[js.UndefOr[MsFlowInto]]]): Self = StObject.set(x, "msFlowInto", value.asInstanceOf[js.Any])
+    
+    inline def setMsFlowIntoUndefined: Self = StObject.set(x, "msFlowInto", js.undefined)
+    
+    inline def setMsFlowIntoVarargs(value: NonNullable[js.UndefOr[MsFlowInto]]*): Self = StObject.set(x, "msFlowInto", js.Array(value*))
+    
+    inline def setMsGridColumns(value: MsGridColumns[TLength] | js.Array[NonNullable[js.UndefOr[MsGridColumns[TLength]]]]): Self = StObject.set(x, "msGridColumns", value.asInstanceOf[js.Any])
+    
+    inline def setMsGridColumnsUndefined: Self = StObject.set(x, "msGridColumns", js.undefined)
+    
+    inline def setMsGridColumnsVarargs(value: NonNullable[js.UndefOr[MsGridColumns[TLength]]]*): Self = StObject.set(x, "msGridColumns", js.Array(value*))
+    
+    inline def setMsGridRows(value: MsGridRows[TLength] | js.Array[NonNullable[js.UndefOr[MsGridRows[TLength]]]]): Self = StObject.set(x, "msGridRows", value.asInstanceOf[js.Any])
+    
+    inline def setMsGridRowsUndefined: Self = StObject.set(x, "msGridRows", js.undefined)
+    
+    inline def setMsGridRowsVarargs(value: NonNullable[js.UndefOr[MsGridRows[TLength]]]*): Self = StObject.set(x, "msGridRows", js.Array(value*))
+    
+    inline def setMsHighContrastAdjust(value: MsHighContrastAdjust | js.Array[NonNullable[js.UndefOr[MsHighContrastAdjust]]]): Self = StObject.set(x, "msHighContrastAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setMsHighContrastAdjustUndefined: Self = StObject.set(x, "msHighContrastAdjust", js.undefined)
+    
+    inline def setMsHighContrastAdjustVarargs(value: NonNullable[js.UndefOr[MsHighContrastAdjust]]*): Self = StObject.set(x, "msHighContrastAdjust", js.Array(value*))
+    
+    inline def setMsHyphenateLimitChars(value: MsHyphenateLimitChars | js.Array[NonNullable[js.UndefOr[MsHyphenateLimitChars]]]): Self = StObject.set(x, "msHyphenateLimitChars", value.asInstanceOf[js.Any])
+    
+    inline def setMsHyphenateLimitCharsUndefined: Self = StObject.set(x, "msHyphenateLimitChars", js.undefined)
+    
+    inline def setMsHyphenateLimitCharsVarargs(value: NonNullable[js.UndefOr[MsHyphenateLimitChars]]*): Self = StObject.set(x, "msHyphenateLimitChars", js.Array(value*))
+    
+    inline def setMsHyphenateLimitLines(value: MsHyphenateLimitLines | js.Array[NonNullable[js.UndefOr[MsHyphenateLimitLines]]]): Self = StObject.set(x, "msHyphenateLimitLines", value.asInstanceOf[js.Any])
+    
+    inline def setMsHyphenateLimitLinesUndefined: Self = StObject.set(x, "msHyphenateLimitLines", js.undefined)
+    
+    inline def setMsHyphenateLimitLinesVarargs(value: NonNullable[js.UndefOr[MsHyphenateLimitLines]]*): Self = StObject.set(x, "msHyphenateLimitLines", js.Array(value*))
+    
+    inline def setMsHyphenateLimitZone(
+      value: MsHyphenateLimitZone[TLength] | js.Array[NonNullable[js.UndefOr[MsHyphenateLimitZone[TLength]]]]
+    ): Self = StObject.set(x, "msHyphenateLimitZone", value.asInstanceOf[js.Any])
+    
+    inline def setMsHyphenateLimitZoneUndefined: Self = StObject.set(x, "msHyphenateLimitZone", js.undefined)
+    
+    inline def setMsHyphenateLimitZoneVarargs(value: NonNullable[js.UndefOr[MsHyphenateLimitZone[TLength]]]*): Self = StObject.set(x, "msHyphenateLimitZone", js.Array(value*))
+    
+    inline def setMsHyphens(value: Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]): Self = StObject.set(x, "msHyphens", value.asInstanceOf[js.Any])
+    
+    inline def setMsHyphensUndefined: Self = StObject.set(x, "msHyphens", js.undefined)
+    
+    inline def setMsHyphensVarargs(value: NonNullable[js.UndefOr[Hyphens]]*): Self = StObject.set(x, "msHyphens", js.Array(value*))
+    
+    inline def setMsImeAlign(value: MsImeAlign | js.Array[NonNullable[js.UndefOr[MsImeAlign]]]): Self = StObject.set(x, "msImeAlign", value.asInstanceOf[js.Any])
+    
+    inline def setMsImeAlignUndefined: Self = StObject.set(x, "msImeAlign", js.undefined)
+    
+    inline def setMsImeAlignVarargs(value: NonNullable[js.UndefOr[MsImeAlign]]*): Self = StObject.set(x, "msImeAlign", js.Array(value*))
+    
+    inline def setMsLineBreak(value: LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]): Self = StObject.set(x, "msLineBreak", value.asInstanceOf[js.Any])
+    
+    inline def setMsLineBreakUndefined: Self = StObject.set(x, "msLineBreak", js.undefined)
+    
+    inline def setMsLineBreakVarargs(value: NonNullable[js.UndefOr[LineBreak]]*): Self = StObject.set(x, "msLineBreak", js.Array(value*))
+    
+    inline def setMsOrder(value: Order | js.Array[NonNullable[js.UndefOr[Order]]]): Self = StObject.set(x, "msOrder", value.asInstanceOf[js.Any])
+    
+    inline def setMsOrderUndefined: Self = StObject.set(x, "msOrder", js.undefined)
+    
+    inline def setMsOrderVarargs(value: NonNullable[js.UndefOr[Order]]*): Self = StObject.set(x, "msOrder", js.Array(value*))
+    
+    inline def setMsOverflowStyle(value: MsOverflowStyle | js.Array[NonNullable[js.UndefOr[MsOverflowStyle]]]): Self = StObject.set(x, "msOverflowStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMsOverflowStyleUndefined: Self = StObject.set(x, "msOverflowStyle", js.undefined)
+    
+    inline def setMsOverflowStyleVarargs(value: NonNullable[js.UndefOr[MsOverflowStyle]]*): Self = StObject.set(x, "msOverflowStyle", js.Array(value*))
+    
+    inline def setMsOverflowX(value: OverflowX | js.Array[NonNullable[js.UndefOr[OverflowX]]]): Self = StObject.set(x, "msOverflowX", value.asInstanceOf[js.Any])
+    
+    inline def setMsOverflowXUndefined: Self = StObject.set(x, "msOverflowX", js.undefined)
+    
+    inline def setMsOverflowXVarargs(value: NonNullable[js.UndefOr[OverflowX]]*): Self = StObject.set(x, "msOverflowX", js.Array(value*))
+    
+    inline def setMsOverflowY(value: OverflowY | js.Array[NonNullable[js.UndefOr[OverflowY]]]): Self = StObject.set(x, "msOverflowY", value.asInstanceOf[js.Any])
+    
+    inline def setMsOverflowYUndefined: Self = StObject.set(x, "msOverflowY", js.undefined)
+    
+    inline def setMsOverflowYVarargs(value: NonNullable[js.UndefOr[OverflowY]]*): Self = StObject.set(x, "msOverflowY", js.Array(value*))
+    
+    inline def setMsScrollChaining(value: MsScrollChaining | js.Array[NonNullable[js.UndefOr[MsScrollChaining]]]): Self = StObject.set(x, "msScrollChaining", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollChainingUndefined: Self = StObject.set(x, "msScrollChaining", js.undefined)
+    
+    inline def setMsScrollChainingVarargs(value: NonNullable[js.UndefOr[MsScrollChaining]]*): Self = StObject.set(x, "msScrollChaining", js.Array(value*))
+    
+    inline def setMsScrollLimitXMax(value: MsScrollLimitXMax[TLength] | js.Array[NonNullable[js.UndefOr[MsScrollLimitXMax[TLength]]]]): Self = StObject.set(x, "msScrollLimitXMax", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollLimitXMaxUndefined: Self = StObject.set(x, "msScrollLimitXMax", js.undefined)
+    
+    inline def setMsScrollLimitXMaxVarargs(value: NonNullable[js.UndefOr[MsScrollLimitXMax[TLength]]]*): Self = StObject.set(x, "msScrollLimitXMax", js.Array(value*))
+    
+    inline def setMsScrollLimitXMin(value: MsScrollLimitXMin[TLength] | js.Array[NonNullable[js.UndefOr[MsScrollLimitXMin[TLength]]]]): Self = StObject.set(x, "msScrollLimitXMin", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollLimitXMinUndefined: Self = StObject.set(x, "msScrollLimitXMin", js.undefined)
+    
+    inline def setMsScrollLimitXMinVarargs(value: NonNullable[js.UndefOr[MsScrollLimitXMin[TLength]]]*): Self = StObject.set(x, "msScrollLimitXMin", js.Array(value*))
+    
+    inline def setMsScrollLimitYMax(value: MsScrollLimitYMax[TLength] | js.Array[NonNullable[js.UndefOr[MsScrollLimitYMax[TLength]]]]): Self = StObject.set(x, "msScrollLimitYMax", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollLimitYMaxUndefined: Self = StObject.set(x, "msScrollLimitYMax", js.undefined)
+    
+    inline def setMsScrollLimitYMaxVarargs(value: NonNullable[js.UndefOr[MsScrollLimitYMax[TLength]]]*): Self = StObject.set(x, "msScrollLimitYMax", js.Array(value*))
+    
+    inline def setMsScrollLimitYMin(value: MsScrollLimitYMin[TLength] | js.Array[NonNullable[js.UndefOr[MsScrollLimitYMin[TLength]]]]): Self = StObject.set(x, "msScrollLimitYMin", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollLimitYMinUndefined: Self = StObject.set(x, "msScrollLimitYMin", js.undefined)
+    
+    inline def setMsScrollLimitYMinVarargs(value: NonNullable[js.UndefOr[MsScrollLimitYMin[TLength]]]*): Self = StObject.set(x, "msScrollLimitYMin", js.Array(value*))
+    
+    inline def setMsScrollRails(value: MsScrollRails | js.Array[NonNullable[js.UndefOr[MsScrollRails]]]): Self = StObject.set(x, "msScrollRails", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollRailsUndefined: Self = StObject.set(x, "msScrollRails", js.undefined)
+    
+    inline def setMsScrollRailsVarargs(value: NonNullable[js.UndefOr[MsScrollRails]]*): Self = StObject.set(x, "msScrollRails", js.Array(value*))
+    
+    inline def setMsScrollSnapPointsX(value: MsScrollSnapPointsX | js.Array[NonNullable[js.UndefOr[MsScrollSnapPointsX]]]): Self = StObject.set(x, "msScrollSnapPointsX", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollSnapPointsXUndefined: Self = StObject.set(x, "msScrollSnapPointsX", js.undefined)
+    
+    inline def setMsScrollSnapPointsXVarargs(value: NonNullable[js.UndefOr[MsScrollSnapPointsX]]*): Self = StObject.set(x, "msScrollSnapPointsX", js.Array(value*))
+    
+    inline def setMsScrollSnapPointsY(value: MsScrollSnapPointsY | js.Array[NonNullable[js.UndefOr[MsScrollSnapPointsY]]]): Self = StObject.set(x, "msScrollSnapPointsY", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollSnapPointsYUndefined: Self = StObject.set(x, "msScrollSnapPointsY", js.undefined)
+    
+    inline def setMsScrollSnapPointsYVarargs(value: NonNullable[js.UndefOr[MsScrollSnapPointsY]]*): Self = StObject.set(x, "msScrollSnapPointsY", js.Array(value*))
+    
+    inline def setMsScrollSnapType(value: MsScrollSnapType | js.Array[NonNullable[js.UndefOr[MsScrollSnapType]]]): Self = StObject.set(x, "msScrollSnapType", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollSnapTypeUndefined: Self = StObject.set(x, "msScrollSnapType", js.undefined)
+    
+    inline def setMsScrollSnapTypeVarargs(value: NonNullable[js.UndefOr[MsScrollSnapType]]*): Self = StObject.set(x, "msScrollSnapType", js.Array(value*))
+    
+    inline def setMsScrollTranslation(value: MsScrollTranslation | js.Array[NonNullable[js.UndefOr[MsScrollTranslation]]]): Self = StObject.set(x, "msScrollTranslation", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollTranslationUndefined: Self = StObject.set(x, "msScrollTranslation", js.undefined)
+    
+    inline def setMsScrollTranslationVarargs(value: NonNullable[js.UndefOr[MsScrollTranslation]]*): Self = StObject.set(x, "msScrollTranslation", js.Array(value*))
+    
+    inline def setMsScrollbar3dlightColor(value: MsScrollbar3dlightColor | js.Array[NonNullable[js.UndefOr[MsScrollbar3dlightColor]]]): Self = StObject.set(x, "msScrollbar3dlightColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbar3dlightColorUndefined: Self = StObject.set(x, "msScrollbar3dlightColor", js.undefined)
+    
+    inline def setMsScrollbar3dlightColorVarargs(value: NonNullable[js.UndefOr[MsScrollbar3dlightColor]]*): Self = StObject.set(x, "msScrollbar3dlightColor", js.Array(value*))
+    
+    inline def setMsScrollbarArrowColor(value: MsScrollbarArrowColor | js.Array[NonNullable[js.UndefOr[MsScrollbarArrowColor]]]): Self = StObject.set(x, "msScrollbarArrowColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarArrowColorUndefined: Self = StObject.set(x, "msScrollbarArrowColor", js.undefined)
+    
+    inline def setMsScrollbarArrowColorVarargs(value: NonNullable[js.UndefOr[MsScrollbarArrowColor]]*): Self = StObject.set(x, "msScrollbarArrowColor", js.Array(value*))
+    
+    inline def setMsScrollbarBaseColor(value: MsScrollbarBaseColor | js.Array[NonNullable[js.UndefOr[MsScrollbarBaseColor]]]): Self = StObject.set(x, "msScrollbarBaseColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarBaseColorUndefined: Self = StObject.set(x, "msScrollbarBaseColor", js.undefined)
+    
+    inline def setMsScrollbarBaseColorVarargs(value: NonNullable[js.UndefOr[MsScrollbarBaseColor]]*): Self = StObject.set(x, "msScrollbarBaseColor", js.Array(value*))
+    
+    inline def setMsScrollbarDarkshadowColor(value: MsScrollbarDarkshadowColor | js.Array[NonNullable[js.UndefOr[MsScrollbarDarkshadowColor]]]): Self = StObject.set(x, "msScrollbarDarkshadowColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarDarkshadowColorUndefined: Self = StObject.set(x, "msScrollbarDarkshadowColor", js.undefined)
+    
+    inline def setMsScrollbarDarkshadowColorVarargs(value: NonNullable[js.UndefOr[MsScrollbarDarkshadowColor]]*): Self = StObject.set(x, "msScrollbarDarkshadowColor", js.Array(value*))
+    
+    inline def setMsScrollbarFaceColor(value: MsScrollbarFaceColor | js.Array[NonNullable[js.UndefOr[MsScrollbarFaceColor]]]): Self = StObject.set(x, "msScrollbarFaceColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarFaceColorUndefined: Self = StObject.set(x, "msScrollbarFaceColor", js.undefined)
+    
+    inline def setMsScrollbarFaceColorVarargs(value: NonNullable[js.UndefOr[MsScrollbarFaceColor]]*): Self = StObject.set(x, "msScrollbarFaceColor", js.Array(value*))
+    
+    inline def setMsScrollbarHighlightColor(value: MsScrollbarHighlightColor | js.Array[NonNullable[js.UndefOr[MsScrollbarHighlightColor]]]): Self = StObject.set(x, "msScrollbarHighlightColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarHighlightColorUndefined: Self = StObject.set(x, "msScrollbarHighlightColor", js.undefined)
+    
+    inline def setMsScrollbarHighlightColorVarargs(value: NonNullable[js.UndefOr[MsScrollbarHighlightColor]]*): Self = StObject.set(x, "msScrollbarHighlightColor", js.Array(value*))
+    
+    inline def setMsScrollbarShadowColor(value: MsScrollbarShadowColor | js.Array[NonNullable[js.UndefOr[MsScrollbarShadowColor]]]): Self = StObject.set(x, "msScrollbarShadowColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarShadowColorUndefined: Self = StObject.set(x, "msScrollbarShadowColor", js.undefined)
+    
+    inline def setMsScrollbarShadowColorVarargs(value: NonNullable[js.UndefOr[MsScrollbarShadowColor]]*): Self = StObject.set(x, "msScrollbarShadowColor", js.Array(value*))
+    
+    inline def setMsScrollbarTrackColor(value: MsScrollbarTrackColor | js.Array[NonNullable[js.UndefOr[MsScrollbarTrackColor]]]): Self = StObject.set(x, "msScrollbarTrackColor", value.asInstanceOf[js.Any])
+    
+    inline def setMsScrollbarTrackColorUndefined: Self = StObject.set(x, "msScrollbarTrackColor", js.undefined)
+    
+    inline def setMsScrollbarTrackColorVarargs(value: NonNullable[js.UndefOr[MsScrollbarTrackColor]]*): Self = StObject.set(x, "msScrollbarTrackColor", js.Array(value*))
+    
+    inline def setMsTextAutospace(value: MsTextAutospace | js.Array[NonNullable[js.UndefOr[MsTextAutospace]]]): Self = StObject.set(x, "msTextAutospace", value.asInstanceOf[js.Any])
+    
+    inline def setMsTextAutospaceUndefined: Self = StObject.set(x, "msTextAutospace", js.undefined)
+    
+    inline def setMsTextAutospaceVarargs(value: NonNullable[js.UndefOr[MsTextAutospace]]*): Self = StObject.set(x, "msTextAutospace", js.Array(value*))
+    
+    inline def setMsTextCombineHorizontal(value: TextCombineUpright | js.Array[NonNullable[js.UndefOr[TextCombineUpright]]]): Self = StObject.set(x, "msTextCombineHorizontal", value.asInstanceOf[js.Any])
+    
+    inline def setMsTextCombineHorizontalUndefined: Self = StObject.set(x, "msTextCombineHorizontal", js.undefined)
+    
+    inline def setMsTextCombineHorizontalVarargs(value: NonNullable[js.UndefOr[TextCombineUpright]]*): Self = StObject.set(x, "msTextCombineHorizontal", js.Array(value*))
+    
+    inline def setMsTextOverflow(value: TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]): Self = StObject.set(x, "msTextOverflow", value.asInstanceOf[js.Any])
+    
+    inline def setMsTextOverflowUndefined: Self = StObject.set(x, "msTextOverflow", js.undefined)
+    
+    inline def setMsTextOverflowVarargs(value: NonNullable[js.UndefOr[TextOverflow]]*): Self = StObject.set(x, "msTextOverflow", js.Array(value*))
+    
+    inline def setMsTouchAction(value: TouchAction | js.Array[NonNullable[js.UndefOr[TouchAction]]]): Self = StObject.set(x, "msTouchAction", value.asInstanceOf[js.Any])
+    
+    inline def setMsTouchActionUndefined: Self = StObject.set(x, "msTouchAction", js.undefined)
+    
+    inline def setMsTouchActionVarargs(value: NonNullable[js.UndefOr[TouchAction]]*): Self = StObject.set(x, "msTouchAction", js.Array(value*))
+    
+    inline def setMsTouchSelect(value: MsTouchSelect | js.Array[NonNullable[js.UndefOr[MsTouchSelect]]]): Self = StObject.set(x, "msTouchSelect", value.asInstanceOf[js.Any])
+    
+    inline def setMsTouchSelectUndefined: Self = StObject.set(x, "msTouchSelect", js.undefined)
+    
+    inline def setMsTouchSelectVarargs(value: NonNullable[js.UndefOr[MsTouchSelect]]*): Self = StObject.set(x, "msTouchSelect", js.Array(value*))
+    
+    inline def setMsTransform(value: Transform | js.Array[NonNullable[js.UndefOr[Transform]]]): Self = StObject.set(x, "msTransform", value.asInstanceOf[js.Any])
+    
+    inline def setMsTransformOrigin(value: TransformOrigin[TLength] | js.Array[NonNullable[js.UndefOr[TransformOrigin[TLength]]]]): Self = StObject.set(x, "msTransformOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setMsTransformOriginUndefined: Self = StObject.set(x, "msTransformOrigin", js.undefined)
+    
+    inline def setMsTransformOriginVarargs(value: NonNullable[js.UndefOr[TransformOrigin[TLength]]]*): Self = StObject.set(x, "msTransformOrigin", js.Array(value*))
+    
+    inline def setMsTransformUndefined: Self = StObject.set(x, "msTransform", js.undefined)
+    
+    inline def setMsTransformVarargs(value: NonNullable[js.UndefOr[Transform]]*): Self = StObject.set(x, "msTransform", js.Array(value*))
+    
+    inline def setMsTransitionDelay(value: TransitionDelay[TTime] | js.Array[NonNullable[js.UndefOr[TransitionDelay[TTime]]]]): Self = StObject.set(x, "msTransitionDelay", value.asInstanceOf[js.Any])
+    
+    inline def setMsTransitionDelayUndefined: Self = StObject.set(x, "msTransitionDelay", js.undefined)
+    
+    inline def setMsTransitionDelayVarargs(value: NonNullable[js.UndefOr[TransitionDelay[TTime]]]*): Self = StObject.set(x, "msTransitionDelay", js.Array(value*))
+    
+    inline def setMsTransitionDuration(value: TransitionDuration[TTime] | js.Array[NonNullable[js.UndefOr[TransitionDuration[TTime]]]]): Self = StObject.set(x, "msTransitionDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMsTransitionDurationUndefined: Self = StObject.set(x, "msTransitionDuration", js.undefined)
+    
+    inline def setMsTransitionDurationVarargs(value: NonNullable[js.UndefOr[TransitionDuration[TTime]]]*): Self = StObject.set(x, "msTransitionDuration", js.Array(value*))
+    
+    inline def setMsTransitionProperty(value: TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]): Self = StObject.set(x, "msTransitionProperty", value.asInstanceOf[js.Any])
+    
+    inline def setMsTransitionPropertyUndefined: Self = StObject.set(x, "msTransitionProperty", js.undefined)
+    
+    inline def setMsTransitionPropertyVarargs(value: NonNullable[js.UndefOr[TransitionProperty]]*): Self = StObject.set(x, "msTransitionProperty", js.Array(value*))
+    
+    inline def setMsTransitionTimingFunction(value: TransitionTimingFunction | js.Array[NonNullable[js.UndefOr[TransitionTimingFunction]]]): Self = StObject.set(x, "msTransitionTimingFunction", value.asInstanceOf[js.Any])
+    
+    inline def setMsTransitionTimingFunctionUndefined: Self = StObject.set(x, "msTransitionTimingFunction", js.undefined)
+    
+    inline def setMsTransitionTimingFunctionVarargs(value: NonNullable[js.UndefOr[TransitionTimingFunction]]*): Self = StObject.set(x, "msTransitionTimingFunction", js.Array(value*))
+    
+    inline def setMsUserSelect(value: MsUserSelect | js.Array[NonNullable[js.UndefOr[MsUserSelect]]]): Self = StObject.set(x, "msUserSelect", value.asInstanceOf[js.Any])
+    
+    inline def setMsUserSelectUndefined: Self = StObject.set(x, "msUserSelect", js.undefined)
+    
+    inline def setMsUserSelectVarargs(value: NonNullable[js.UndefOr[MsUserSelect]]*): Self = StObject.set(x, "msUserSelect", js.Array(value*))
+    
+    inline def setMsWordBreak(value: WordBreak | js.Array[NonNullable[js.UndefOr[WordBreak]]]): Self = StObject.set(x, "msWordBreak", value.asInstanceOf[js.Any])
+    
+    inline def setMsWordBreakUndefined: Self = StObject.set(x, "msWordBreak", js.undefined)
+    
+    inline def setMsWordBreakVarargs(value: NonNullable[js.UndefOr[WordBreak]]*): Self = StObject.set(x, "msWordBreak", js.Array(value*))
+    
+    inline def setMsWrapFlow(value: MsWrapFlow | js.Array[NonNullable[js.UndefOr[MsWrapFlow]]]): Self = StObject.set(x, "msWrapFlow", value.asInstanceOf[js.Any])
+    
+    inline def setMsWrapFlowUndefined: Self = StObject.set(x, "msWrapFlow", js.undefined)
+    
+    inline def setMsWrapFlowVarargs(value: NonNullable[js.UndefOr[MsWrapFlow]]*): Self = StObject.set(x, "msWrapFlow", js.Array(value*))
+    
+    inline def setMsWrapMargin(value: MsWrapMargin[TLength] | js.Array[NonNullable[js.UndefOr[MsWrapMargin[TLength]]]]): Self = StObject.set(x, "msWrapMargin", value.asInstanceOf[js.Any])
+    
+    inline def setMsWrapMarginUndefined: Self = StObject.set(x, "msWrapMargin", js.undefined)
+    
+    inline def setMsWrapMarginVarargs(value: NonNullable[js.UndefOr[MsWrapMargin[TLength]]]*): Self = StObject.set(x, "msWrapMargin", js.Array(value*))
+    
+    inline def setMsWrapThrough(value: MsWrapThrough | js.Array[NonNullable[js.UndefOr[MsWrapThrough]]]): Self = StObject.set(x, "msWrapThrough", value.asInstanceOf[js.Any])
+    
+    inline def setMsWrapThroughUndefined: Self = StObject.set(x, "msWrapThrough", js.undefined)
+    
+    inline def setMsWrapThroughVarargs(value: NonNullable[js.UndefOr[MsWrapThrough]]*): Self = StObject.set(x, "msWrapThrough", js.Array(value*))
+    
+    inline def setMsWritingMode(value: WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]): Self = StObject.set(x, "msWritingMode", value.asInstanceOf[js.Any])
+    
+    inline def setMsWritingModeUndefined: Self = StObject.set(x, "msWritingMode", js.undefined)
+    
+    inline def setMsWritingModeVarargs(value: NonNullable[js.UndefOr[WritingMode]]*): Self = StObject.set(x, "msWritingMode", js.Array(value*))
+    
+    inline def setWebkitAlignContent(value: AlignContent | js.Array[NonNullable[js.UndefOr[AlignContent]]]): Self = StObject.set(x, "WebkitAlignContent", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAlignContentUndefined: Self = StObject.set(x, "WebkitAlignContent", js.undefined)
+    
+    inline def setWebkitAlignContentVarargs(value: NonNullable[js.UndefOr[AlignContent]]*): Self = StObject.set(x, "WebkitAlignContent", js.Array(value*))
+    
+    inline def setWebkitAlignItems(value: AlignItems | js.Array[NonNullable[js.UndefOr[AlignItems]]]): Self = StObject.set(x, "WebkitAlignItems", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAlignItemsUndefined: Self = StObject.set(x, "WebkitAlignItems", js.undefined)
+    
+    inline def setWebkitAlignItemsVarargs(value: NonNullable[js.UndefOr[AlignItems]]*): Self = StObject.set(x, "WebkitAlignItems", js.Array(value*))
+    
+    inline def setWebkitAlignSelf(value: AlignSelf | js.Array[NonNullable[js.UndefOr[AlignSelf]]]): Self = StObject.set(x, "WebkitAlignSelf", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAlignSelfUndefined: Self = StObject.set(x, "WebkitAlignSelf", js.undefined)
+    
+    inline def setWebkitAlignSelfVarargs(value: NonNullable[js.UndefOr[AlignSelf]]*): Self = StObject.set(x, "WebkitAlignSelf", js.Array(value*))
+    
+    inline def setWebkitAnimationDelay(value: AnimationDelay[TTime] | js.Array[NonNullable[js.UndefOr[AnimationDelay[TTime]]]]): Self = StObject.set(x, "WebkitAnimationDelay", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationDelayUndefined: Self = StObject.set(x, "WebkitAnimationDelay", js.undefined)
+    
+    inline def setWebkitAnimationDelayVarargs(value: NonNullable[js.UndefOr[AnimationDelay[TTime]]]*): Self = StObject.set(x, "WebkitAnimationDelay", js.Array(value*))
+    
+    inline def setWebkitAnimationDirection(value: AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]): Self = StObject.set(x, "WebkitAnimationDirection", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationDirectionUndefined: Self = StObject.set(x, "WebkitAnimationDirection", js.undefined)
+    
+    inline def setWebkitAnimationDirectionVarargs(value: NonNullable[js.UndefOr[AnimationDirection]]*): Self = StObject.set(x, "WebkitAnimationDirection", js.Array(value*))
+    
+    inline def setWebkitAnimationDuration(value: AnimationDuration[TTime] | js.Array[NonNullable[js.UndefOr[AnimationDuration[TTime]]]]): Self = StObject.set(x, "WebkitAnimationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationDurationUndefined: Self = StObject.set(x, "WebkitAnimationDuration", js.undefined)
+    
+    inline def setWebkitAnimationDurationVarargs(value: NonNullable[js.UndefOr[AnimationDuration[TTime]]]*): Self = StObject.set(x, "WebkitAnimationDuration", js.Array(value*))
+    
+    inline def setWebkitAnimationFillMode(value: AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]): Self = StObject.set(x, "WebkitAnimationFillMode", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationFillModeUndefined: Self = StObject.set(x, "WebkitAnimationFillMode", js.undefined)
+    
+    inline def setWebkitAnimationFillModeVarargs(value: NonNullable[js.UndefOr[AnimationFillMode]]*): Self = StObject.set(x, "WebkitAnimationFillMode", js.Array(value*))
+    
+    inline def setWebkitAnimationIterationCount(value: AnimationIterationCount | js.Array[NonNullable[js.UndefOr[AnimationIterationCount]]]): Self = StObject.set(x, "WebkitAnimationIterationCount", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationIterationCountUndefined: Self = StObject.set(x, "WebkitAnimationIterationCount", js.undefined)
+    
+    inline def setWebkitAnimationIterationCountVarargs(value: NonNullable[js.UndefOr[AnimationIterationCount]]*): Self = StObject.set(x, "WebkitAnimationIterationCount", js.Array(value*))
+    
+    inline def setWebkitAnimationName(value: AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]]): Self = StObject.set(x, "WebkitAnimationName", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationNameUndefined: Self = StObject.set(x, "WebkitAnimationName", js.undefined)
+    
+    inline def setWebkitAnimationNameVarargs(value: NonNullable[js.UndefOr[AnimationName]]*): Self = StObject.set(x, "WebkitAnimationName", js.Array(value*))
+    
+    inline def setWebkitAnimationPlayState(value: AnimationPlayState | js.Array[NonNullable[js.UndefOr[AnimationPlayState]]]): Self = StObject.set(x, "WebkitAnimationPlayState", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationPlayStateUndefined: Self = StObject.set(x, "WebkitAnimationPlayState", js.undefined)
+    
+    inline def setWebkitAnimationPlayStateVarargs(value: NonNullable[js.UndefOr[AnimationPlayState]]*): Self = StObject.set(x, "WebkitAnimationPlayState", js.Array(value*))
+    
+    inline def setWebkitAnimationTimingFunction(value: AnimationTimingFunction | js.Array[NonNullable[js.UndefOr[AnimationTimingFunction]]]): Self = StObject.set(x, "WebkitAnimationTimingFunction", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAnimationTimingFunctionUndefined: Self = StObject.set(x, "WebkitAnimationTimingFunction", js.undefined)
+    
+    inline def setWebkitAnimationTimingFunctionVarargs(value: NonNullable[js.UndefOr[AnimationTimingFunction]]*): Self = StObject.set(x, "WebkitAnimationTimingFunction", js.Array(value*))
+    
+    inline def setWebkitAppearance(value: WebkitAppearance | js.Array[NonNullable[js.UndefOr[WebkitAppearance]]]): Self = StObject.set(x, "WebkitAppearance", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitAppearanceUndefined: Self = StObject.set(x, "WebkitAppearance", js.undefined)
+    
+    inline def setWebkitAppearanceVarargs(value: NonNullable[js.UndefOr[WebkitAppearance]]*): Self = StObject.set(x, "WebkitAppearance", js.Array(value*))
+    
+    inline def setWebkitBackdropFilter(value: BackdropFilter | js.Array[NonNullable[js.UndefOr[BackdropFilter]]]): Self = StObject.set(x, "WebkitBackdropFilter", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBackdropFilterUndefined: Self = StObject.set(x, "WebkitBackdropFilter", js.undefined)
+    
+    inline def setWebkitBackdropFilterVarargs(value: NonNullable[js.UndefOr[BackdropFilter]]*): Self = StObject.set(x, "WebkitBackdropFilter", js.Array(value*))
+    
+    inline def setWebkitBackfaceVisibility(value: BackfaceVisibility | js.Array[NonNullable[js.UndefOr[BackfaceVisibility]]]): Self = StObject.set(x, "WebkitBackfaceVisibility", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBackfaceVisibilityUndefined: Self = StObject.set(x, "WebkitBackfaceVisibility", js.undefined)
+    
+    inline def setWebkitBackfaceVisibilityVarargs(value: NonNullable[js.UndefOr[BackfaceVisibility]]*): Self = StObject.set(x, "WebkitBackfaceVisibility", js.Array(value*))
+    
+    inline def setWebkitBackgroundClip(value: BackgroundClip | js.Array[NonNullable[js.UndefOr[BackgroundClip]]]): Self = StObject.set(x, "WebkitBackgroundClip", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBackgroundClipUndefined: Self = StObject.set(x, "WebkitBackgroundClip", js.undefined)
+    
+    inline def setWebkitBackgroundClipVarargs(value: NonNullable[js.UndefOr[BackgroundClip]]*): Self = StObject.set(x, "WebkitBackgroundClip", js.Array(value*))
+    
+    inline def setWebkitBackgroundOrigin(value: BackgroundOrigin | js.Array[NonNullable[js.UndefOr[BackgroundOrigin]]]): Self = StObject.set(x, "WebkitBackgroundOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBackgroundOriginUndefined: Self = StObject.set(x, "WebkitBackgroundOrigin", js.undefined)
+    
+    inline def setWebkitBackgroundOriginVarargs(value: NonNullable[js.UndefOr[BackgroundOrigin]]*): Self = StObject.set(x, "WebkitBackgroundOrigin", js.Array(value*))
+    
+    inline def setWebkitBackgroundSize(value: BackgroundSize[TLength] | js.Array[NonNullable[js.UndefOr[BackgroundSize[TLength]]]]): Self = StObject.set(x, "WebkitBackgroundSize", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBackgroundSizeUndefined: Self = StObject.set(x, "WebkitBackgroundSize", js.undefined)
+    
+    inline def setWebkitBackgroundSizeVarargs(value: NonNullable[js.UndefOr[BackgroundSize[TLength]]]*): Self = StObject.set(x, "WebkitBackgroundSize", js.Array(value*))
+    
+    inline def setWebkitBorderBeforeColor(value: WebkitBorderBeforeColor | js.Array[NonNullable[js.UndefOr[WebkitBorderBeforeColor]]]): Self = StObject.set(x, "WebkitBorderBeforeColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderBeforeColorUndefined: Self = StObject.set(x, "WebkitBorderBeforeColor", js.undefined)
+    
+    inline def setWebkitBorderBeforeColorVarargs(value: NonNullable[js.UndefOr[WebkitBorderBeforeColor]]*): Self = StObject.set(x, "WebkitBorderBeforeColor", js.Array(value*))
+    
+    inline def setWebkitBorderBeforeStyle(value: WebkitBorderBeforeStyle | js.Array[NonNullable[js.UndefOr[WebkitBorderBeforeStyle]]]): Self = StObject.set(x, "WebkitBorderBeforeStyle", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderBeforeStyleUndefined: Self = StObject.set(x, "WebkitBorderBeforeStyle", js.undefined)
+    
+    inline def setWebkitBorderBeforeStyleVarargs(value: NonNullable[js.UndefOr[WebkitBorderBeforeStyle]]*): Self = StObject.set(x, "WebkitBorderBeforeStyle", js.Array(value*))
+    
+    inline def setWebkitBorderBeforeWidth(
+      value: WebkitBorderBeforeWidth[TLength] | js.Array[NonNullable[js.UndefOr[WebkitBorderBeforeWidth[TLength]]]]
+    ): Self = StObject.set(x, "WebkitBorderBeforeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderBeforeWidthUndefined: Self = StObject.set(x, "WebkitBorderBeforeWidth", js.undefined)
+    
+    inline def setWebkitBorderBeforeWidthVarargs(value: NonNullable[js.UndefOr[WebkitBorderBeforeWidth[TLength]]]*): Self = StObject.set(x, "WebkitBorderBeforeWidth", js.Array(value*))
+    
+    inline def setWebkitBorderBottomLeftRadius(
+      value: BorderBottomLeftRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderBottomLeftRadius[TLength]]]]
+    ): Self = StObject.set(x, "WebkitBorderBottomLeftRadius", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "WebkitBorderBottomLeftRadius", js.undefined)
+    
+    inline def setWebkitBorderBottomLeftRadiusVarargs(value: NonNullable[js.UndefOr[BorderBottomLeftRadius[TLength]]]*): Self = StObject.set(x, "WebkitBorderBottomLeftRadius", js.Array(value*))
+    
+    inline def setWebkitBorderBottomRightRadius(
+      value: BorderBottomRightRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderBottomRightRadius[TLength]]]]
+    ): Self = StObject.set(x, "WebkitBorderBottomRightRadius", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderBottomRightRadiusUndefined: Self = StObject.set(x, "WebkitBorderBottomRightRadius", js.undefined)
+    
+    inline def setWebkitBorderBottomRightRadiusVarargs(value: NonNullable[js.UndefOr[BorderBottomRightRadius[TLength]]]*): Self = StObject.set(x, "WebkitBorderBottomRightRadius", js.Array(value*))
+    
+    inline def setWebkitBorderImageSlice(value: BorderImageSlice | js.Array[NonNullable[js.UndefOr[BorderImageSlice]]]): Self = StObject.set(x, "WebkitBorderImageSlice", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderImageSliceUndefined: Self = StObject.set(x, "WebkitBorderImageSlice", js.undefined)
+    
+    inline def setWebkitBorderImageSliceVarargs(value: NonNullable[js.UndefOr[BorderImageSlice]]*): Self = StObject.set(x, "WebkitBorderImageSlice", js.Array(value*))
+    
+    inline def setWebkitBorderTopLeftRadius(
+      value: BorderTopLeftRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderTopLeftRadius[TLength]]]]
+    ): Self = StObject.set(x, "WebkitBorderTopLeftRadius", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderTopLeftRadiusUndefined: Self = StObject.set(x, "WebkitBorderTopLeftRadius", js.undefined)
+    
+    inline def setWebkitBorderTopLeftRadiusVarargs(value: NonNullable[js.UndefOr[BorderTopLeftRadius[TLength]]]*): Self = StObject.set(x, "WebkitBorderTopLeftRadius", js.Array(value*))
+    
+    inline def setWebkitBorderTopRightRadius(
+      value: BorderTopRightRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderTopRightRadius[TLength]]]]
+    ): Self = StObject.set(x, "WebkitBorderTopRightRadius", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBorderTopRightRadiusUndefined: Self = StObject.set(x, "WebkitBorderTopRightRadius", js.undefined)
+    
+    inline def setWebkitBorderTopRightRadiusVarargs(value: NonNullable[js.UndefOr[BorderTopRightRadius[TLength]]]*): Self = StObject.set(x, "WebkitBorderTopRightRadius", js.Array(value*))
+    
+    inline def setWebkitBoxDecorationBreak(value: BoxDecorationBreak | js.Array[NonNullable[js.UndefOr[BoxDecorationBreak]]]): Self = StObject.set(x, "WebkitBoxDecorationBreak", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBoxDecorationBreakUndefined: Self = StObject.set(x, "WebkitBoxDecorationBreak", js.undefined)
+    
+    inline def setWebkitBoxDecorationBreakVarargs(value: NonNullable[js.UndefOr[BoxDecorationBreak]]*): Self = StObject.set(x, "WebkitBoxDecorationBreak", js.Array(value*))
+    
+    inline def setWebkitBoxReflect(value: WebkitBoxReflect[TLength] | js.Array[NonNullable[js.UndefOr[WebkitBoxReflect[TLength]]]]): Self = StObject.set(x, "WebkitBoxReflect", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBoxReflectUndefined: Self = StObject.set(x, "WebkitBoxReflect", js.undefined)
+    
+    inline def setWebkitBoxReflectVarargs(value: NonNullable[js.UndefOr[WebkitBoxReflect[TLength]]]*): Self = StObject.set(x, "WebkitBoxReflect", js.Array(value*))
+    
+    inline def setWebkitBoxShadow(value: BoxShadow | js.Array[NonNullable[js.UndefOr[BoxShadow]]]): Self = StObject.set(x, "WebkitBoxShadow", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBoxShadowUndefined: Self = StObject.set(x, "WebkitBoxShadow", js.undefined)
+    
+    inline def setWebkitBoxShadowVarargs(value: NonNullable[js.UndefOr[BoxShadow]]*): Self = StObject.set(x, "WebkitBoxShadow", js.Array(value*))
+    
+    inline def setWebkitBoxSizing(value: BoxSizing | js.Array[NonNullable[js.UndefOr[BoxSizing]]]): Self = StObject.set(x, "WebkitBoxSizing", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitBoxSizingUndefined: Self = StObject.set(x, "WebkitBoxSizing", js.undefined)
+    
+    inline def setWebkitBoxSizingVarargs(value: NonNullable[js.UndefOr[BoxSizing]]*): Self = StObject.set(x, "WebkitBoxSizing", js.Array(value*))
+    
+    inline def setWebkitClipPath(value: ClipPath | js.Array[NonNullable[js.UndefOr[ClipPath]]]): Self = StObject.set(x, "WebkitClipPath", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitClipPathUndefined: Self = StObject.set(x, "WebkitClipPath", js.undefined)
+    
+    inline def setWebkitClipPathVarargs(value: NonNullable[js.UndefOr[ClipPath]]*): Self = StObject.set(x, "WebkitClipPath", js.Array(value*))
+    
+    inline def setWebkitColumnCount(value: ColumnCount | js.Array[NonNullable[js.UndefOr[ColumnCount]]]): Self = StObject.set(x, "WebkitColumnCount", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnCountUndefined: Self = StObject.set(x, "WebkitColumnCount", js.undefined)
+    
+    inline def setWebkitColumnCountVarargs(value: NonNullable[js.UndefOr[ColumnCount]]*): Self = StObject.set(x, "WebkitColumnCount", js.Array(value*))
+    
+    inline def setWebkitColumnFill(value: ColumnFill | js.Array[NonNullable[js.UndefOr[ColumnFill]]]): Self = StObject.set(x, "WebkitColumnFill", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnFillUndefined: Self = StObject.set(x, "WebkitColumnFill", js.undefined)
+    
+    inline def setWebkitColumnFillVarargs(value: NonNullable[js.UndefOr[ColumnFill]]*): Self = StObject.set(x, "WebkitColumnFill", js.Array(value*))
+    
+    inline def setWebkitColumnRuleColor(value: ColumnRuleColor | js.Array[NonNullable[js.UndefOr[ColumnRuleColor]]]): Self = StObject.set(x, "WebkitColumnRuleColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnRuleColorUndefined: Self = StObject.set(x, "WebkitColumnRuleColor", js.undefined)
+    
+    inline def setWebkitColumnRuleColorVarargs(value: NonNullable[js.UndefOr[ColumnRuleColor]]*): Self = StObject.set(x, "WebkitColumnRuleColor", js.Array(value*))
+    
+    inline def setWebkitColumnRuleStyle(value: ColumnRuleStyle | js.Array[NonNullable[js.UndefOr[ColumnRuleStyle]]]): Self = StObject.set(x, "WebkitColumnRuleStyle", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnRuleStyleUndefined: Self = StObject.set(x, "WebkitColumnRuleStyle", js.undefined)
+    
+    inline def setWebkitColumnRuleStyleVarargs(value: NonNullable[js.UndefOr[ColumnRuleStyle]]*): Self = StObject.set(x, "WebkitColumnRuleStyle", js.Array(value*))
+    
+    inline def setWebkitColumnRuleWidth(value: ColumnRuleWidth[TLength] | js.Array[NonNullable[js.UndefOr[ColumnRuleWidth[TLength]]]]): Self = StObject.set(x, "WebkitColumnRuleWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnRuleWidthUndefined: Self = StObject.set(x, "WebkitColumnRuleWidth", js.undefined)
+    
+    inline def setWebkitColumnRuleWidthVarargs(value: NonNullable[js.UndefOr[ColumnRuleWidth[TLength]]]*): Self = StObject.set(x, "WebkitColumnRuleWidth", js.Array(value*))
+    
+    inline def setWebkitColumnSpan(value: ColumnSpan | js.Array[NonNullable[js.UndefOr[ColumnSpan]]]): Self = StObject.set(x, "WebkitColumnSpan", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnSpanUndefined: Self = StObject.set(x, "WebkitColumnSpan", js.undefined)
+    
+    inline def setWebkitColumnSpanVarargs(value: NonNullable[js.UndefOr[ColumnSpan]]*): Self = StObject.set(x, "WebkitColumnSpan", js.Array(value*))
+    
+    inline def setWebkitColumnWidth(value: ColumnWidth[TLength] | js.Array[NonNullable[js.UndefOr[ColumnWidth[TLength]]]]): Self = StObject.set(x, "WebkitColumnWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitColumnWidthUndefined: Self = StObject.set(x, "WebkitColumnWidth", js.undefined)
+    
+    inline def setWebkitColumnWidthVarargs(value: NonNullable[js.UndefOr[ColumnWidth[TLength]]]*): Self = StObject.set(x, "WebkitColumnWidth", js.Array(value*))
+    
+    inline def setWebkitFilter(value: Filter | js.Array[NonNullable[js.UndefOr[Filter]]]): Self = StObject.set(x, "WebkitFilter", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFilterUndefined: Self = StObject.set(x, "WebkitFilter", js.undefined)
+    
+    inline def setWebkitFilterVarargs(value: NonNullable[js.UndefOr[Filter]]*): Self = StObject.set(x, "WebkitFilter", js.Array(value*))
+    
+    inline def setWebkitFlexBasis(value: FlexBasis[TLength] | js.Array[NonNullable[js.UndefOr[FlexBasis[TLength]]]]): Self = StObject.set(x, "WebkitFlexBasis", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFlexBasisUndefined: Self = StObject.set(x, "WebkitFlexBasis", js.undefined)
+    
+    inline def setWebkitFlexBasisVarargs(value: NonNullable[js.UndefOr[FlexBasis[TLength]]]*): Self = StObject.set(x, "WebkitFlexBasis", js.Array(value*))
+    
+    inline def setWebkitFlexDirection(value: FlexDirection | js.Array[NonNullable[js.UndefOr[FlexDirection]]]): Self = StObject.set(x, "WebkitFlexDirection", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFlexDirectionUndefined: Self = StObject.set(x, "WebkitFlexDirection", js.undefined)
+    
+    inline def setWebkitFlexDirectionVarargs(value: NonNullable[js.UndefOr[FlexDirection]]*): Self = StObject.set(x, "WebkitFlexDirection", js.Array(value*))
+    
+    inline def setWebkitFlexGrow(value: FlexGrow | js.Array[NonNullable[js.UndefOr[FlexGrow]]]): Self = StObject.set(x, "WebkitFlexGrow", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFlexGrowUndefined: Self = StObject.set(x, "WebkitFlexGrow", js.undefined)
+    
+    inline def setWebkitFlexGrowVarargs(value: NonNullable[js.UndefOr[FlexGrow]]*): Self = StObject.set(x, "WebkitFlexGrow", js.Array(value*))
+    
+    inline def setWebkitFlexShrink(value: FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]): Self = StObject.set(x, "WebkitFlexShrink", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFlexShrinkUndefined: Self = StObject.set(x, "WebkitFlexShrink", js.undefined)
+    
+    inline def setWebkitFlexShrinkVarargs(value: NonNullable[js.UndefOr[FlexShrink]]*): Self = StObject.set(x, "WebkitFlexShrink", js.Array(value*))
+    
+    inline def setWebkitFlexWrap(value: FlexWrap | js.Array[NonNullable[js.UndefOr[FlexWrap]]]): Self = StObject.set(x, "WebkitFlexWrap", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFlexWrapUndefined: Self = StObject.set(x, "WebkitFlexWrap", js.undefined)
+    
+    inline def setWebkitFlexWrapVarargs(value: NonNullable[js.UndefOr[FlexWrap]]*): Self = StObject.set(x, "WebkitFlexWrap", js.Array(value*))
+    
+    inline def setWebkitFontFeatureSettings(value: FontFeatureSettings | js.Array[NonNullable[js.UndefOr[FontFeatureSettings]]]): Self = StObject.set(x, "WebkitFontFeatureSettings", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFontFeatureSettingsUndefined: Self = StObject.set(x, "WebkitFontFeatureSettings", js.undefined)
+    
+    inline def setWebkitFontFeatureSettingsVarargs(value: NonNullable[js.UndefOr[FontFeatureSettings]]*): Self = StObject.set(x, "WebkitFontFeatureSettings", js.Array(value*))
+    
+    inline def setWebkitFontKerning(value: FontKerning | js.Array[NonNullable[js.UndefOr[FontKerning]]]): Self = StObject.set(x, "WebkitFontKerning", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFontKerningUndefined: Self = StObject.set(x, "WebkitFontKerning", js.undefined)
+    
+    inline def setWebkitFontKerningVarargs(value: NonNullable[js.UndefOr[FontKerning]]*): Self = StObject.set(x, "WebkitFontKerning", js.Array(value*))
+    
+    inline def setWebkitFontSmoothing(value: FontSmooth[TLength] | js.Array[NonNullable[js.UndefOr[FontSmooth[TLength]]]]): Self = StObject.set(x, "WebkitFontSmoothing", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFontSmoothingUndefined: Self = StObject.set(x, "WebkitFontSmoothing", js.undefined)
+    
+    inline def setWebkitFontSmoothingVarargs(value: NonNullable[js.UndefOr[FontSmooth[TLength]]]*): Self = StObject.set(x, "WebkitFontSmoothing", js.Array(value*))
+    
+    inline def setWebkitFontVariantLigatures(value: FontVariantLigatures | js.Array[NonNullable[js.UndefOr[FontVariantLigatures]]]): Self = StObject.set(x, "WebkitFontVariantLigatures", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitFontVariantLigaturesUndefined: Self = StObject.set(x, "WebkitFontVariantLigatures", js.undefined)
+    
+    inline def setWebkitFontVariantLigaturesVarargs(value: NonNullable[js.UndefOr[FontVariantLigatures]]*): Self = StObject.set(x, "WebkitFontVariantLigatures", js.Array(value*))
+    
+    inline def setWebkitHyphenateCharacter(value: HyphenateCharacter | js.Array[NonNullable[js.UndefOr[HyphenateCharacter]]]): Self = StObject.set(x, "WebkitHyphenateCharacter", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitHyphenateCharacterUndefined: Self = StObject.set(x, "WebkitHyphenateCharacter", js.undefined)
+    
+    inline def setWebkitHyphenateCharacterVarargs(value: NonNullable[js.UndefOr[HyphenateCharacter]]*): Self = StObject.set(x, "WebkitHyphenateCharacter", js.Array(value*))
+    
+    inline def setWebkitHyphens(value: Hyphens | js.Array[NonNullable[js.UndefOr[Hyphens]]]): Self = StObject.set(x, "WebkitHyphens", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitHyphensUndefined: Self = StObject.set(x, "WebkitHyphens", js.undefined)
+    
+    inline def setWebkitHyphensVarargs(value: NonNullable[js.UndefOr[Hyphens]]*): Self = StObject.set(x, "WebkitHyphens", js.Array(value*))
+    
+    inline def setWebkitInitialLetter(value: InitialLetter | js.Array[NonNullable[js.UndefOr[InitialLetter]]]): Self = StObject.set(x, "WebkitInitialLetter", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitInitialLetterUndefined: Self = StObject.set(x, "WebkitInitialLetter", js.undefined)
+    
+    inline def setWebkitInitialLetterVarargs(value: NonNullable[js.UndefOr[InitialLetter]]*): Self = StObject.set(x, "WebkitInitialLetter", js.Array(value*))
+    
+    inline def setWebkitJustifyContent(value: JustifyContent | js.Array[NonNullable[js.UndefOr[JustifyContent]]]): Self = StObject.set(x, "WebkitJustifyContent", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitJustifyContentUndefined: Self = StObject.set(x, "WebkitJustifyContent", js.undefined)
+    
+    inline def setWebkitJustifyContentVarargs(value: NonNullable[js.UndefOr[JustifyContent]]*): Self = StObject.set(x, "WebkitJustifyContent", js.Array(value*))
+    
+    inline def setWebkitLineBreak(value: LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]): Self = StObject.set(x, "WebkitLineBreak", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitLineBreakUndefined: Self = StObject.set(x, "WebkitLineBreak", js.undefined)
+    
+    inline def setWebkitLineBreakVarargs(value: NonNullable[js.UndefOr[LineBreak]]*): Self = StObject.set(x, "WebkitLineBreak", js.Array(value*))
+    
+    inline def setWebkitLineClamp(value: WebkitLineClamp | js.Array[NonNullable[js.UndefOr[WebkitLineClamp]]]): Self = StObject.set(x, "WebkitLineClamp", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitLineClampUndefined: Self = StObject.set(x, "WebkitLineClamp", js.undefined)
+    
+    inline def setWebkitLineClampVarargs(value: NonNullable[js.UndefOr[WebkitLineClamp]]*): Self = StObject.set(x, "WebkitLineClamp", js.Array(value*))
+    
+    inline def setWebkitMarginEnd(value: MarginInlineEnd[TLength] | js.Array[NonNullable[js.UndefOr[MarginInlineEnd[TLength]]]]): Self = StObject.set(x, "WebkitMarginEnd", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMarginEndUndefined: Self = StObject.set(x, "WebkitMarginEnd", js.undefined)
+    
+    inline def setWebkitMarginEndVarargs(value: NonNullable[js.UndefOr[MarginInlineEnd[TLength]]]*): Self = StObject.set(x, "WebkitMarginEnd", js.Array(value*))
+    
+    inline def setWebkitMarginStart(value: MarginInlineStart[TLength] | js.Array[NonNullable[js.UndefOr[MarginInlineStart[TLength]]]]): Self = StObject.set(x, "WebkitMarginStart", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMarginStartUndefined: Self = StObject.set(x, "WebkitMarginStart", js.undefined)
+    
+    inline def setWebkitMarginStartVarargs(value: NonNullable[js.UndefOr[MarginInlineStart[TLength]]]*): Self = StObject.set(x, "WebkitMarginStart", js.Array(value*))
+    
+    inline def setWebkitMaskAttachment(value: WebkitMaskAttachment | js.Array[NonNullable[js.UndefOr[WebkitMaskAttachment]]]): Self = StObject.set(x, "WebkitMaskAttachment", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskAttachmentUndefined: Self = StObject.set(x, "WebkitMaskAttachment", js.undefined)
+    
+    inline def setWebkitMaskAttachmentVarargs(value: NonNullable[js.UndefOr[WebkitMaskAttachment]]*): Self = StObject.set(x, "WebkitMaskAttachment", js.Array(value*))
+    
+    inline def setWebkitMaskBoxImageOutset(value: MaskBorderOutset[TLength] | js.Array[NonNullable[js.UndefOr[MaskBorderOutset[TLength]]]]): Self = StObject.set(x, "WebkitMaskBoxImageOutset", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageOutsetUndefined: Self = StObject.set(x, "WebkitMaskBoxImageOutset", js.undefined)
+    
+    inline def setWebkitMaskBoxImageOutsetVarargs(value: NonNullable[js.UndefOr[MaskBorderOutset[TLength]]]*): Self = StObject.set(x, "WebkitMaskBoxImageOutset", js.Array(value*))
+    
+    inline def setWebkitMaskBoxImageRepeat(value: MaskBorderRepeat | js.Array[NonNullable[js.UndefOr[MaskBorderRepeat]]]): Self = StObject.set(x, "WebkitMaskBoxImageRepeat", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageRepeatUndefined: Self = StObject.set(x, "WebkitMaskBoxImageRepeat", js.undefined)
+    
+    inline def setWebkitMaskBoxImageRepeatVarargs(value: NonNullable[js.UndefOr[MaskBorderRepeat]]*): Self = StObject.set(x, "WebkitMaskBoxImageRepeat", js.Array(value*))
+    
+    inline def setWebkitMaskBoxImageSlice(value: MaskBorderSlice | js.Array[NonNullable[js.UndefOr[MaskBorderSlice]]]): Self = StObject.set(x, "WebkitMaskBoxImageSlice", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageSliceUndefined: Self = StObject.set(x, "WebkitMaskBoxImageSlice", js.undefined)
+    
+    inline def setWebkitMaskBoxImageSliceVarargs(value: NonNullable[js.UndefOr[MaskBorderSlice]]*): Self = StObject.set(x, "WebkitMaskBoxImageSlice", js.Array(value*))
+    
+    inline def setWebkitMaskBoxImageSource(value: MaskBorderSource | js.Array[NonNullable[js.UndefOr[MaskBorderSource]]]): Self = StObject.set(x, "WebkitMaskBoxImageSource", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageSourceUndefined: Self = StObject.set(x, "WebkitMaskBoxImageSource", js.undefined)
+    
+    inline def setWebkitMaskBoxImageSourceVarargs(value: NonNullable[js.UndefOr[MaskBorderSource]]*): Self = StObject.set(x, "WebkitMaskBoxImageSource", js.Array(value*))
+    
+    inline def setWebkitMaskBoxImageWidth(value: MaskBorderWidth[TLength] | js.Array[NonNullable[js.UndefOr[MaskBorderWidth[TLength]]]]): Self = StObject.set(x, "WebkitMaskBoxImageWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageWidthUndefined: Self = StObject.set(x, "WebkitMaskBoxImageWidth", js.undefined)
+    
+    inline def setWebkitMaskBoxImageWidthVarargs(value: NonNullable[js.UndefOr[MaskBorderWidth[TLength]]]*): Self = StObject.set(x, "WebkitMaskBoxImageWidth", js.Array(value*))
+    
+    inline def setWebkitMaskClip(value: WebkitMaskClip | js.Array[NonNullable[js.UndefOr[WebkitMaskClip]]]): Self = StObject.set(x, "WebkitMaskClip", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskClipUndefined: Self = StObject.set(x, "WebkitMaskClip", js.undefined)
+    
+    inline def setWebkitMaskClipVarargs(value: NonNullable[js.UndefOr[WebkitMaskClip]]*): Self = StObject.set(x, "WebkitMaskClip", js.Array(value*))
+    
+    inline def setWebkitMaskComposite(value: WebkitMaskComposite | js.Array[NonNullable[js.UndefOr[WebkitMaskComposite]]]): Self = StObject.set(x, "WebkitMaskComposite", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskCompositeUndefined: Self = StObject.set(x, "WebkitMaskComposite", js.undefined)
+    
+    inline def setWebkitMaskCompositeVarargs(value: NonNullable[js.UndefOr[WebkitMaskComposite]]*): Self = StObject.set(x, "WebkitMaskComposite", js.Array(value*))
+    
+    inline def setWebkitMaskImage(value: WebkitMaskImage | js.Array[NonNullable[js.UndefOr[WebkitMaskImage]]]): Self = StObject.set(x, "WebkitMaskImage", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskImageUndefined: Self = StObject.set(x, "WebkitMaskImage", js.undefined)
+    
+    inline def setWebkitMaskImageVarargs(value: NonNullable[js.UndefOr[WebkitMaskImage]]*): Self = StObject.set(x, "WebkitMaskImage", js.Array(value*))
+    
+    inline def setWebkitMaskOrigin(value: WebkitMaskOrigin | js.Array[NonNullable[js.UndefOr[WebkitMaskOrigin]]]): Self = StObject.set(x, "WebkitMaskOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskOriginUndefined: Self = StObject.set(x, "WebkitMaskOrigin", js.undefined)
+    
+    inline def setWebkitMaskOriginVarargs(value: NonNullable[js.UndefOr[WebkitMaskOrigin]]*): Self = StObject.set(x, "WebkitMaskOrigin", js.Array(value*))
+    
+    inline def setWebkitMaskPosition(
+      value: WebkitMaskPosition[TLength] | js.Array[NonNullable[js.UndefOr[WebkitMaskPosition[TLength]]]]
+    ): Self = StObject.set(x, "WebkitMaskPosition", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskPositionUndefined: Self = StObject.set(x, "WebkitMaskPosition", js.undefined)
+    
+    inline def setWebkitMaskPositionVarargs(value: NonNullable[js.UndefOr[WebkitMaskPosition[TLength]]]*): Self = StObject.set(x, "WebkitMaskPosition", js.Array(value*))
+    
+    inline def setWebkitMaskPositionX(
+      value: WebkitMaskPositionX[TLength] | js.Array[NonNullable[js.UndefOr[WebkitMaskPositionX[TLength]]]]
+    ): Self = StObject.set(x, "WebkitMaskPositionX", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskPositionXUndefined: Self = StObject.set(x, "WebkitMaskPositionX", js.undefined)
+    
+    inline def setWebkitMaskPositionXVarargs(value: NonNullable[js.UndefOr[WebkitMaskPositionX[TLength]]]*): Self = StObject.set(x, "WebkitMaskPositionX", js.Array(value*))
+    
+    inline def setWebkitMaskPositionY(
+      value: WebkitMaskPositionY[TLength] | js.Array[NonNullable[js.UndefOr[WebkitMaskPositionY[TLength]]]]
+    ): Self = StObject.set(x, "WebkitMaskPositionY", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskPositionYUndefined: Self = StObject.set(x, "WebkitMaskPositionY", js.undefined)
+    
+    inline def setWebkitMaskPositionYVarargs(value: NonNullable[js.UndefOr[WebkitMaskPositionY[TLength]]]*): Self = StObject.set(x, "WebkitMaskPositionY", js.Array(value*))
+    
+    inline def setWebkitMaskRepeat(value: WebkitMaskRepeat | js.Array[NonNullable[js.UndefOr[WebkitMaskRepeat]]]): Self = StObject.set(x, "WebkitMaskRepeat", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskRepeatUndefined: Self = StObject.set(x, "WebkitMaskRepeat", js.undefined)
+    
+    inline def setWebkitMaskRepeatVarargs(value: NonNullable[js.UndefOr[WebkitMaskRepeat]]*): Self = StObject.set(x, "WebkitMaskRepeat", js.Array(value*))
+    
+    inline def setWebkitMaskRepeatX(value: WebkitMaskRepeatX | js.Array[NonNullable[js.UndefOr[WebkitMaskRepeatX]]]): Self = StObject.set(x, "WebkitMaskRepeatX", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskRepeatXUndefined: Self = StObject.set(x, "WebkitMaskRepeatX", js.undefined)
+    
+    inline def setWebkitMaskRepeatXVarargs(value: NonNullable[js.UndefOr[WebkitMaskRepeatX]]*): Self = StObject.set(x, "WebkitMaskRepeatX", js.Array(value*))
+    
+    inline def setWebkitMaskRepeatY(value: WebkitMaskRepeatY | js.Array[NonNullable[js.UndefOr[WebkitMaskRepeatY]]]): Self = StObject.set(x, "WebkitMaskRepeatY", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskRepeatYUndefined: Self = StObject.set(x, "WebkitMaskRepeatY", js.undefined)
+    
+    inline def setWebkitMaskRepeatYVarargs(value: NonNullable[js.UndefOr[WebkitMaskRepeatY]]*): Self = StObject.set(x, "WebkitMaskRepeatY", js.Array(value*))
+    
+    inline def setWebkitMaskSize(value: WebkitMaskSize[TLength] | js.Array[NonNullable[js.UndefOr[WebkitMaskSize[TLength]]]]): Self = StObject.set(x, "WebkitMaskSize", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskSizeUndefined: Self = StObject.set(x, "WebkitMaskSize", js.undefined)
+    
+    inline def setWebkitMaskSizeVarargs(value: NonNullable[js.UndefOr[WebkitMaskSize[TLength]]]*): Self = StObject.set(x, "WebkitMaskSize", js.Array(value*))
+    
+    inline def setWebkitMaxInlineSize(value: MaxInlineSize[TLength] | js.Array[NonNullable[js.UndefOr[MaxInlineSize[TLength]]]]): Self = StObject.set(x, "WebkitMaxInlineSize", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaxInlineSizeUndefined: Self = StObject.set(x, "WebkitMaxInlineSize", js.undefined)
+    
+    inline def setWebkitMaxInlineSizeVarargs(value: NonNullable[js.UndefOr[MaxInlineSize[TLength]]]*): Self = StObject.set(x, "WebkitMaxInlineSize", js.Array(value*))
+    
+    inline def setWebkitOrder(value: Order | js.Array[NonNullable[js.UndefOr[Order]]]): Self = StObject.set(x, "WebkitOrder", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitOrderUndefined: Self = StObject.set(x, "WebkitOrder", js.undefined)
+    
+    inline def setWebkitOrderVarargs(value: NonNullable[js.UndefOr[Order]]*): Self = StObject.set(x, "WebkitOrder", js.Array(value*))
+    
+    inline def setWebkitOverflowScrolling(value: WebkitOverflowScrolling | js.Array[NonNullable[js.UndefOr[WebkitOverflowScrolling]]]): Self = StObject.set(x, "WebkitOverflowScrolling", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitOverflowScrollingUndefined: Self = StObject.set(x, "WebkitOverflowScrolling", js.undefined)
+    
+    inline def setWebkitOverflowScrollingVarargs(value: NonNullable[js.UndefOr[WebkitOverflowScrolling]]*): Self = StObject.set(x, "WebkitOverflowScrolling", js.Array(value*))
+    
+    inline def setWebkitPaddingEnd(value: PaddingInlineEnd[TLength] | js.Array[NonNullable[js.UndefOr[PaddingInlineEnd[TLength]]]]): Self = StObject.set(x, "WebkitPaddingEnd", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitPaddingEndUndefined: Self = StObject.set(x, "WebkitPaddingEnd", js.undefined)
+    
+    inline def setWebkitPaddingEndVarargs(value: NonNullable[js.UndefOr[PaddingInlineEnd[TLength]]]*): Self = StObject.set(x, "WebkitPaddingEnd", js.Array(value*))
+    
+    inline def setWebkitPaddingStart(
+      value: PaddingInlineStart[TLength] | js.Array[NonNullable[js.UndefOr[PaddingInlineStart[TLength]]]]
+    ): Self = StObject.set(x, "WebkitPaddingStart", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitPaddingStartUndefined: Self = StObject.set(x, "WebkitPaddingStart", js.undefined)
+    
+    inline def setWebkitPaddingStartVarargs(value: NonNullable[js.UndefOr[PaddingInlineStart[TLength]]]*): Self = StObject.set(x, "WebkitPaddingStart", js.Array(value*))
+    
+    inline def setWebkitPerspective(value: Perspective[TLength] | js.Array[NonNullable[js.UndefOr[Perspective[TLength]]]]): Self = StObject.set(x, "WebkitPerspective", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitPerspectiveOrigin(value: PerspectiveOrigin[TLength] | js.Array[NonNullable[js.UndefOr[PerspectiveOrigin[TLength]]]]): Self = StObject.set(x, "WebkitPerspectiveOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitPerspectiveOriginUndefined: Self = StObject.set(x, "WebkitPerspectiveOrigin", js.undefined)
+    
+    inline def setWebkitPerspectiveOriginVarargs(value: NonNullable[js.UndefOr[PerspectiveOrigin[TLength]]]*): Self = StObject.set(x, "WebkitPerspectiveOrigin", js.Array(value*))
+    
+    inline def setWebkitPerspectiveUndefined: Self = StObject.set(x, "WebkitPerspective", js.undefined)
+    
+    inline def setWebkitPerspectiveVarargs(value: NonNullable[js.UndefOr[Perspective[TLength]]]*): Self = StObject.set(x, "WebkitPerspective", js.Array(value*))
+    
+    inline def setWebkitPrintColorAdjust(value: PrintColorAdjust | js.Array[NonNullable[js.UndefOr[PrintColorAdjust]]]): Self = StObject.set(x, "WebkitPrintColorAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitPrintColorAdjustUndefined: Self = StObject.set(x, "WebkitPrintColorAdjust", js.undefined)
+    
+    inline def setWebkitPrintColorAdjustVarargs(value: NonNullable[js.UndefOr[PrintColorAdjust]]*): Self = StObject.set(x, "WebkitPrintColorAdjust", js.Array(value*))
+    
+    inline def setWebkitRubyPosition(value: RubyPosition | js.Array[NonNullable[js.UndefOr[RubyPosition]]]): Self = StObject.set(x, "WebkitRubyPosition", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitRubyPositionUndefined: Self = StObject.set(x, "WebkitRubyPosition", js.undefined)
+    
+    inline def setWebkitRubyPositionVarargs(value: NonNullable[js.UndefOr[RubyPosition]]*): Self = StObject.set(x, "WebkitRubyPosition", js.Array(value*))
+    
+    inline def setWebkitScrollSnapType(value: ScrollSnapType | js.Array[NonNullable[js.UndefOr[ScrollSnapType]]]): Self = StObject.set(x, "WebkitScrollSnapType", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitScrollSnapTypeUndefined: Self = StObject.set(x, "WebkitScrollSnapType", js.undefined)
+    
+    inline def setWebkitScrollSnapTypeVarargs(value: NonNullable[js.UndefOr[ScrollSnapType]]*): Self = StObject.set(x, "WebkitScrollSnapType", js.Array(value*))
+    
+    inline def setWebkitShapeMargin(value: ShapeMargin[TLength] | js.Array[NonNullable[js.UndefOr[ShapeMargin[TLength]]]]): Self = StObject.set(x, "WebkitShapeMargin", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitShapeMarginUndefined: Self = StObject.set(x, "WebkitShapeMargin", js.undefined)
+    
+    inline def setWebkitShapeMarginVarargs(value: NonNullable[js.UndefOr[ShapeMargin[TLength]]]*): Self = StObject.set(x, "WebkitShapeMargin", js.Array(value*))
+    
+    inline def setWebkitTapHighlightColor(value: WebkitTapHighlightColor | js.Array[NonNullable[js.UndefOr[WebkitTapHighlightColor]]]): Self = StObject.set(x, "WebkitTapHighlightColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTapHighlightColorUndefined: Self = StObject.set(x, "WebkitTapHighlightColor", js.undefined)
+    
+    inline def setWebkitTapHighlightColorVarargs(value: NonNullable[js.UndefOr[WebkitTapHighlightColor]]*): Self = StObject.set(x, "WebkitTapHighlightColor", js.Array(value*))
+    
+    inline def setWebkitTextCombine(value: TextCombineUpright | js.Array[NonNullable[js.UndefOr[TextCombineUpright]]]): Self = StObject.set(x, "WebkitTextCombine", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextCombineUndefined: Self = StObject.set(x, "WebkitTextCombine", js.undefined)
+    
+    inline def setWebkitTextCombineVarargs(value: NonNullable[js.UndefOr[TextCombineUpright]]*): Self = StObject.set(x, "WebkitTextCombine", js.Array(value*))
+    
+    inline def setWebkitTextDecorationColor(value: TextDecorationColor | js.Array[NonNullable[js.UndefOr[TextDecorationColor]]]): Self = StObject.set(x, "WebkitTextDecorationColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextDecorationColorUndefined: Self = StObject.set(x, "WebkitTextDecorationColor", js.undefined)
+    
+    inline def setWebkitTextDecorationColorVarargs(value: NonNullable[js.UndefOr[TextDecorationColor]]*): Self = StObject.set(x, "WebkitTextDecorationColor", js.Array(value*))
+    
+    inline def setWebkitTextDecorationLine(value: TextDecorationLine | js.Array[NonNullable[js.UndefOr[TextDecorationLine]]]): Self = StObject.set(x, "WebkitTextDecorationLine", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextDecorationLineUndefined: Self = StObject.set(x, "WebkitTextDecorationLine", js.undefined)
+    
+    inline def setWebkitTextDecorationLineVarargs(value: NonNullable[js.UndefOr[TextDecorationLine]]*): Self = StObject.set(x, "WebkitTextDecorationLine", js.Array(value*))
+    
+    inline def setWebkitTextDecorationSkip(value: TextDecorationSkip | js.Array[NonNullable[js.UndefOr[TextDecorationSkip]]]): Self = StObject.set(x, "WebkitTextDecorationSkip", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextDecorationSkipUndefined: Self = StObject.set(x, "WebkitTextDecorationSkip", js.undefined)
+    
+    inline def setWebkitTextDecorationSkipVarargs(value: NonNullable[js.UndefOr[TextDecorationSkip]]*): Self = StObject.set(x, "WebkitTextDecorationSkip", js.Array(value*))
+    
+    inline def setWebkitTextDecorationStyle(value: TextDecorationStyle | js.Array[NonNullable[js.UndefOr[TextDecorationStyle]]]): Self = StObject.set(x, "WebkitTextDecorationStyle", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextDecorationStyleUndefined: Self = StObject.set(x, "WebkitTextDecorationStyle", js.undefined)
+    
+    inline def setWebkitTextDecorationStyleVarargs(value: NonNullable[js.UndefOr[TextDecorationStyle]]*): Self = StObject.set(x, "WebkitTextDecorationStyle", js.Array(value*))
+    
+    inline def setWebkitTextEmphasisColor(value: TextEmphasisColor | js.Array[NonNullable[js.UndefOr[TextEmphasisColor]]]): Self = StObject.set(x, "WebkitTextEmphasisColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextEmphasisColorUndefined: Self = StObject.set(x, "WebkitTextEmphasisColor", js.undefined)
+    
+    inline def setWebkitTextEmphasisColorVarargs(value: NonNullable[js.UndefOr[TextEmphasisColor]]*): Self = StObject.set(x, "WebkitTextEmphasisColor", js.Array(value*))
+    
+    inline def setWebkitTextEmphasisPosition(value: TextEmphasisPosition | js.Array[NonNullable[js.UndefOr[TextEmphasisPosition]]]): Self = StObject.set(x, "WebkitTextEmphasisPosition", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextEmphasisPositionUndefined: Self = StObject.set(x, "WebkitTextEmphasisPosition", js.undefined)
+    
+    inline def setWebkitTextEmphasisPositionVarargs(value: NonNullable[js.UndefOr[TextEmphasisPosition]]*): Self = StObject.set(x, "WebkitTextEmphasisPosition", js.Array(value*))
+    
+    inline def setWebkitTextEmphasisStyle(value: TextEmphasisStyle | js.Array[NonNullable[js.UndefOr[TextEmphasisStyle]]]): Self = StObject.set(x, "WebkitTextEmphasisStyle", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextEmphasisStyleUndefined: Self = StObject.set(x, "WebkitTextEmphasisStyle", js.undefined)
+    
+    inline def setWebkitTextEmphasisStyleVarargs(value: NonNullable[js.UndefOr[TextEmphasisStyle]]*): Self = StObject.set(x, "WebkitTextEmphasisStyle", js.Array(value*))
+    
+    inline def setWebkitTextFillColor(value: WebkitTextFillColor | js.Array[NonNullable[js.UndefOr[WebkitTextFillColor]]]): Self = StObject.set(x, "WebkitTextFillColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextFillColorUndefined: Self = StObject.set(x, "WebkitTextFillColor", js.undefined)
+    
+    inline def setWebkitTextFillColorVarargs(value: NonNullable[js.UndefOr[WebkitTextFillColor]]*): Self = StObject.set(x, "WebkitTextFillColor", js.Array(value*))
+    
+    inline def setWebkitTextOrientation(value: TextOrientation | js.Array[NonNullable[js.UndefOr[TextOrientation]]]): Self = StObject.set(x, "WebkitTextOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextOrientationUndefined: Self = StObject.set(x, "WebkitTextOrientation", js.undefined)
+    
+    inline def setWebkitTextOrientationVarargs(value: NonNullable[js.UndefOr[TextOrientation]]*): Self = StObject.set(x, "WebkitTextOrientation", js.Array(value*))
+    
+    inline def setWebkitTextSizeAdjust(value: TextSizeAdjust | js.Array[NonNullable[js.UndefOr[TextSizeAdjust]]]): Self = StObject.set(x, "WebkitTextSizeAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextSizeAdjustUndefined: Self = StObject.set(x, "WebkitTextSizeAdjust", js.undefined)
+    
+    inline def setWebkitTextSizeAdjustVarargs(value: NonNullable[js.UndefOr[TextSizeAdjust]]*): Self = StObject.set(x, "WebkitTextSizeAdjust", js.Array(value*))
+    
+    inline def setWebkitTextStrokeColor(value: WebkitTextStrokeColor | js.Array[NonNullable[js.UndefOr[WebkitTextStrokeColor]]]): Self = StObject.set(x, "WebkitTextStrokeColor", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextStrokeColorUndefined: Self = StObject.set(x, "WebkitTextStrokeColor", js.undefined)
+    
+    inline def setWebkitTextStrokeColorVarargs(value: NonNullable[js.UndefOr[WebkitTextStrokeColor]]*): Self = StObject.set(x, "WebkitTextStrokeColor", js.Array(value*))
+    
+    inline def setWebkitTextStrokeWidth(
+      value: WebkitTextStrokeWidth[TLength] | js.Array[NonNullable[js.UndefOr[WebkitTextStrokeWidth[TLength]]]]
+    ): Self = StObject.set(x, "WebkitTextStrokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextStrokeWidthUndefined: Self = StObject.set(x, "WebkitTextStrokeWidth", js.undefined)
+    
+    inline def setWebkitTextStrokeWidthVarargs(value: NonNullable[js.UndefOr[WebkitTextStrokeWidth[TLength]]]*): Self = StObject.set(x, "WebkitTextStrokeWidth", js.Array(value*))
+    
+    inline def setWebkitTextUnderlinePosition(value: TextUnderlinePosition | js.Array[NonNullable[js.UndefOr[TextUnderlinePosition]]]): Self = StObject.set(x, "WebkitTextUnderlinePosition", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTextUnderlinePositionUndefined: Self = StObject.set(x, "WebkitTextUnderlinePosition", js.undefined)
+    
+    inline def setWebkitTextUnderlinePositionVarargs(value: NonNullable[js.UndefOr[TextUnderlinePosition]]*): Self = StObject.set(x, "WebkitTextUnderlinePosition", js.Array(value*))
+    
+    inline def setWebkitTouchCallout(value: WebkitTouchCallout | js.Array[NonNullable[js.UndefOr[WebkitTouchCallout]]]): Self = StObject.set(x, "WebkitTouchCallout", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTouchCalloutUndefined: Self = StObject.set(x, "WebkitTouchCallout", js.undefined)
+    
+    inline def setWebkitTouchCalloutVarargs(value: NonNullable[js.UndefOr[WebkitTouchCallout]]*): Self = StObject.set(x, "WebkitTouchCallout", js.Array(value*))
+    
+    inline def setWebkitTransform(value: Transform | js.Array[NonNullable[js.UndefOr[Transform]]]): Self = StObject.set(x, "WebkitTransform", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransformOrigin(value: TransformOrigin[TLength] | js.Array[NonNullable[js.UndefOr[TransformOrigin[TLength]]]]): Self = StObject.set(x, "WebkitTransformOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransformOriginUndefined: Self = StObject.set(x, "WebkitTransformOrigin", js.undefined)
+    
+    inline def setWebkitTransformOriginVarargs(value: NonNullable[js.UndefOr[TransformOrigin[TLength]]]*): Self = StObject.set(x, "WebkitTransformOrigin", js.Array(value*))
+    
+    inline def setWebkitTransformStyle(value: TransformStyle | js.Array[NonNullable[js.UndefOr[TransformStyle]]]): Self = StObject.set(x, "WebkitTransformStyle", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransformStyleUndefined: Self = StObject.set(x, "WebkitTransformStyle", js.undefined)
+    
+    inline def setWebkitTransformStyleVarargs(value: NonNullable[js.UndefOr[TransformStyle]]*): Self = StObject.set(x, "WebkitTransformStyle", js.Array(value*))
+    
+    inline def setWebkitTransformUndefined: Self = StObject.set(x, "WebkitTransform", js.undefined)
+    
+    inline def setWebkitTransformVarargs(value: NonNullable[js.UndefOr[Transform]]*): Self = StObject.set(x, "WebkitTransform", js.Array(value*))
+    
+    inline def setWebkitTransitionDelay(value: TransitionDelay[TTime] | js.Array[NonNullable[js.UndefOr[TransitionDelay[TTime]]]]): Self = StObject.set(x, "WebkitTransitionDelay", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransitionDelayUndefined: Self = StObject.set(x, "WebkitTransitionDelay", js.undefined)
+    
+    inline def setWebkitTransitionDelayVarargs(value: NonNullable[js.UndefOr[TransitionDelay[TTime]]]*): Self = StObject.set(x, "WebkitTransitionDelay", js.Array(value*))
+    
+    inline def setWebkitTransitionDuration(value: TransitionDuration[TTime] | js.Array[NonNullable[js.UndefOr[TransitionDuration[TTime]]]]): Self = StObject.set(x, "WebkitTransitionDuration", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransitionDurationUndefined: Self = StObject.set(x, "WebkitTransitionDuration", js.undefined)
+    
+    inline def setWebkitTransitionDurationVarargs(value: NonNullable[js.UndefOr[TransitionDuration[TTime]]]*): Self = StObject.set(x, "WebkitTransitionDuration", js.Array(value*))
+    
+    inline def setWebkitTransitionProperty(value: TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]): Self = StObject.set(x, "WebkitTransitionProperty", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransitionPropertyUndefined: Self = StObject.set(x, "WebkitTransitionProperty", js.undefined)
+    
+    inline def setWebkitTransitionPropertyVarargs(value: NonNullable[js.UndefOr[TransitionProperty]]*): Self = StObject.set(x, "WebkitTransitionProperty", js.Array(value*))
+    
+    inline def setWebkitTransitionTimingFunction(value: TransitionTimingFunction | js.Array[NonNullable[js.UndefOr[TransitionTimingFunction]]]): Self = StObject.set(x, "WebkitTransitionTimingFunction", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitTransitionTimingFunctionUndefined: Self = StObject.set(x, "WebkitTransitionTimingFunction", js.undefined)
+    
+    inline def setWebkitTransitionTimingFunctionVarargs(value: NonNullable[js.UndefOr[TransitionTimingFunction]]*): Self = StObject.set(x, "WebkitTransitionTimingFunction", js.Array(value*))
+    
+    inline def setWebkitUserModify(value: WebkitUserModify | js.Array[NonNullable[js.UndefOr[WebkitUserModify]]]): Self = StObject.set(x, "WebkitUserModify", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitUserModifyUndefined: Self = StObject.set(x, "WebkitUserModify", js.undefined)
+    
+    inline def setWebkitUserModifyVarargs(value: NonNullable[js.UndefOr[WebkitUserModify]]*): Self = StObject.set(x, "WebkitUserModify", js.Array(value*))
+    
+    inline def setWebkitUserSelect(value: UserSelect | js.Array[NonNullable[js.UndefOr[UserSelect]]]): Self = StObject.set(x, "WebkitUserSelect", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitUserSelectUndefined: Self = StObject.set(x, "WebkitUserSelect", js.undefined)
+    
+    inline def setWebkitUserSelectVarargs(value: NonNullable[js.UndefOr[UserSelect]]*): Self = StObject.set(x, "WebkitUserSelect", js.Array(value*))
+    
+    inline def setWebkitWritingMode(value: WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]): Self = StObject.set(x, "WebkitWritingMode", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitWritingModeUndefined: Self = StObject.set(x, "WebkitWritingMode", js.undefined)
+    
+    inline def setWebkitWritingModeVarargs(value: NonNullable[js.UndefOr[WritingMode]]*): Self = StObject.set(x, "WebkitWritingMode", js.Array(value*))
+  }
+}

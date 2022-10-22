@@ -2,28 +2,37 @@ package typingsJapgolly.reactLeaflet.mod
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.leaflet.mod.LayersControlEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LayersControlEvents extends js.Object {
+trait LayersControlEvents extends StObject {
+  
   var onbaselayerchange: js.UndefOr[js.Function1[/* event */ LayersControlEvent, Unit]] = js.undefined
+  
   var onoverlayadd: js.UndefOr[js.Function1[/* event */ LayersControlEvent, Unit]] = js.undefined
+  
   var onoverlayremove: js.UndefOr[js.Function1[/* event */ LayersControlEvent, Unit]] = js.undefined
 }
-
 object LayersControlEvents {
-  @scala.inline
-  def apply(
-    onbaselayerchange: /* event */ LayersControlEvent => Callback = null,
-    onoverlayadd: /* event */ LayersControlEvent => Callback = null,
-    onoverlayremove: /* event */ LayersControlEvent => Callback = null
-  ): LayersControlEvents = {
+  
+  inline def apply(): LayersControlEvents = {
     val __obj = js.Dynamic.literal()
-    if (onbaselayerchange != null) __obj.updateDynamic("onbaselayerchange")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LayersControlEvent) => onbaselayerchange(t0).runNow()))
-    if (onoverlayadd != null) __obj.updateDynamic("onoverlayadd")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LayersControlEvent) => onoverlayadd(t0).runNow()))
-    if (onoverlayremove != null) __obj.updateDynamic("onoverlayremove")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LayersControlEvent) => onoverlayremove(t0).runNow()))
     __obj.asInstanceOf[LayersControlEvents]
   }
+  
+  extension [Self <: LayersControlEvents](x: Self) {
+    
+    inline def setOnbaselayerchange(value: /* event */ LayersControlEvent => Callback): Self = StObject.set(x, "onbaselayerchange", js.Any.fromFunction1((t0: /* event */ LayersControlEvent) => value(t0).runNow()))
+    
+    inline def setOnbaselayerchangeUndefined: Self = StObject.set(x, "onbaselayerchange", js.undefined)
+    
+    inline def setOnoverlayadd(value: /* event */ LayersControlEvent => Callback): Self = StObject.set(x, "onoverlayadd", js.Any.fromFunction1((t0: /* event */ LayersControlEvent) => value(t0).runNow()))
+    
+    inline def setOnoverlayaddUndefined: Self = StObject.set(x, "onoverlayadd", js.undefined)
+    
+    inline def setOnoverlayremove(value: /* event */ LayersControlEvent => Callback): Self = StObject.set(x, "onoverlayremove", js.Any.fromFunction1((t0: /* event */ LayersControlEvent) => value(t0).runNow()))
+    
+    inline def setOnoverlayremoveUndefined: Self = StObject.set(x, "onoverlayremove", js.undefined)
+  }
 }
-

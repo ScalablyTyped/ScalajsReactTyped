@@ -1,21 +1,30 @@
 package typingsJapgolly.reactEmailEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorConfig extends js.Object {
+trait EditorConfig extends StObject {
+  
   val maxRows: js.UndefOr[Double] = js.undefined
+  
   val minRows: js.UndefOr[Double] = js.undefined
 }
-
 object EditorConfig {
-  @scala.inline
-  def apply(maxRows: Int | Double = null, minRows: Int | Double = null): EditorConfig = {
+  
+  inline def apply(): EditorConfig = {
     val __obj = js.Dynamic.literal()
-    if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
-    if (minRows != null) __obj.updateDynamic("minRows")(minRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorConfig]
   }
+  
+  extension [Self <: EditorConfig](x: Self) {
+    
+    inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
+    
+    inline def setMinRows(value: Double): Self = StObject.set(x, "minRows", value.asInstanceOf[js.Any])
+    
+    inline def setMinRowsUndefined: Self = StObject.set(x, "minRows", js.undefined)
+  }
 }
-

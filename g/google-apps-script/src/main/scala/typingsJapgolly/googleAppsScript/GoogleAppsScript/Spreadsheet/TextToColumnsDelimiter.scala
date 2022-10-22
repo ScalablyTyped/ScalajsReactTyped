@@ -1,45 +1,36 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextToColumnsDelimiter extends js.Object
-
+sealed trait TextToColumnsDelimiter extends StObject
 /**
   * An enumeration of the types of preset delimiters that can split a column of text into multiple
   * columns.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter")
 @js.native
-object TextToColumnsDelimiter extends js.Object {
-  @js.native
-  sealed trait COMMA extends TextToColumnsDelimiter
+object TextToColumnsDelimiter extends StObject {
   
   @js.native
-  sealed trait PERIOD extends TextToColumnsDelimiter
+  sealed trait COMMA
+    extends StObject
+       with TextToColumnsDelimiter
   
   @js.native
-  sealed trait SEMICOLON extends TextToColumnsDelimiter
+  sealed trait PERIOD
+    extends StObject
+       with TextToColumnsDelimiter
   
   @js.native
-  sealed trait SPACE extends TextToColumnsDelimiter
+  sealed trait SEMICOLON
+    extends StObject
+       with TextToColumnsDelimiter
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextToColumnsDelimiter with Double] = js.native
-  /* 0 */ @js.native
-  object COMMA extends TopLevel[COMMA with Double]
-  
-  /* 2 */ @js.native
-  object PERIOD extends TopLevel[PERIOD with Double]
-  
-  /* 1 */ @js.native
-  object SEMICOLON extends TopLevel[SEMICOLON with Double]
-  
-  /* 3 */ @js.native
-  object SPACE extends TopLevel[SPACE with Double]
-  
+  @js.native
+  sealed trait SPACE
+    extends StObject
+       with TextToColumnsDelimiter
 }
-

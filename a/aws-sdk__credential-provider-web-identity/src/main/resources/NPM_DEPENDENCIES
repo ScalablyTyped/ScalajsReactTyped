@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@aws-sdk/credential-provider-web-identity" : "3.188.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@aws-sdk/credential-provider-web-identity" : "3.188.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

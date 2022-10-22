@@ -1,26 +1,18 @@
 package typingsJapgolly.downshift.mod
 
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
-import typingsJapgolly.std.HTMLInputElement
+import org.scalajs.dom.HTMLInputElement
+import typingsJapgolly.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GetInputPropsOptions
-  extends AllHTMLAttributes[HTMLInputElement]
-     with ClassAttributes[HTMLInputElement]
-
+  extends StObject
+     with HTMLProps[HTMLInputElement]
 object GetInputPropsOptions {
-  @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[org.scalajs.dom.raw.HTMLInputElement] = null,
-    ClassAttributes: ClassAttributes[org.scalajs.dom.raw.HTMLInputElement] = null
-  ): GetInputPropsOptions = {
+  
+  inline def apply(): GetInputPropsOptions = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     __obj.asInstanceOf[GetInputPropsOptions]
   }
 }
-

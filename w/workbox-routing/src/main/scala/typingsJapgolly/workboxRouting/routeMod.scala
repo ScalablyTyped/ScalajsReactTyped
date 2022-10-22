@@ -1,24 +1,25 @@
 package typingsJapgolly.workboxRouting
 
-import typingsJapgolly.workboxRouting.httpmethodMod.HTTPMethod
-import typingsJapgolly.workboxRouting.routeHandlerMod.RouteHandler
-import typingsJapgolly.workboxRouting.routeMatchCallbackMod.RouteMatchCallback
-import typingsJapgolly.workboxRouting.routeMatchCallbackMod.RouteMatchCallbackOptions
+import typingsJapgolly.workboxRouting.typesHttpmethodMod.HTTPMethod
+import typingsJapgolly.workboxRouting.typesRouteHandlerMod.RouteHandler
+import typingsJapgolly.workboxRouting.typesRouteMatchCallbackMod.RouteMatchCallback
+import typingsJapgolly.workboxRouting.typesRouteMatchCallbackMod.RouteMatchCallbackOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-routing/Route", JSImport.Namespace)
-@js.native
-object routeMod extends js.Object {
+object routeMod {
+  
+  @JSImport("workbox-routing/Route", "Route")
   @js.native
-  class Route[MatchReturn] protected () extends js.Object {
+  open class Route[MatchReturn] protected () extends StObject {
     def this(`match`: RouteMatchCallback[MatchReturn], handler: RouteHandler) = this()
     def this(`match`: RouteMatchCallback[MatchReturn], handler: RouteHandler, method: HTTPMethod) = this()
+    
     val handler: RouteHandler = js.native
-    val method: HTTPMethod = js.native
+    
     def `match`(options: RouteMatchCallbackOptions): MatchReturn = js.native
+    
+    val method: HTTPMethod = js.native
   }
-  
 }
-

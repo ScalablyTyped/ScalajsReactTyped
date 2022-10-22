@@ -1,29 +1,22 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OpenWebOptions extends js.Object
-
+sealed trait OpenWebOptions extends StObject
 @JSGlobal("SP.OpenWebOptions")
 @js.native
-object OpenWebOptions extends js.Object {
-  @js.native
-  sealed trait initNavigationCache extends OpenWebOptions
+object OpenWebOptions extends StObject {
   
   @js.native
-  sealed trait none extends OpenWebOptions
+  sealed trait initNavigationCache
+    extends StObject
+       with OpenWebOptions
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[OpenWebOptions with Double] = js.native
-  /* 1 */ @js.native
-  object initNavigationCache extends TopLevel[initNavigationCache with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  @js.native
+  sealed trait none
+    extends StObject
+       with OpenWebOptions
 }
-

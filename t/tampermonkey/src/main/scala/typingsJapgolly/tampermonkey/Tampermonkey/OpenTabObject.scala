@@ -1,25 +1,35 @@
 package typingsJapgolly.tampermonkey.Tampermonkey
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OpenTabObject extends js.Object {
-  var closed: Boolean
-  /** Set closed listener */
-  var onclosed: js.UndefOr[js.Function0[Unit]] = js.undefined
+trait OpenTabObject extends StObject {
+  
   /** Closes tab */
   def close(): Unit
+  
+  var closed: Boolean
+  
+  /** Set closed listener */
+  var onclose: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
-
 object OpenTabObject {
-  @scala.inline
-  def apply(close: Callback, closed: Boolean, onclosed: js.UndefOr[Callback] = js.undefined): OpenTabObject = {
-    val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any])
-    __obj.updateDynamic("close")(close.toJsFn)
-    onclosed.foreach(p => __obj.updateDynamic("onclosed")(p.toJsFn))
+  
+  inline def apply(close: Callback, closed: Boolean): OpenTabObject = {
+    val __obj = js.Dynamic.literal(close = close.toJsFn, closed = closed.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenTabObject]
   }
+  
+  extension [Self <: OpenTabObject](x: Self) {
+    
+    inline def setClose(value: Callback): Self = StObject.set(x, "close", value.toJsFn)
+    
+    inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+    
+    inline def setOnclose(value: Callback): Self = StObject.set(x, "onclose", value.toJsFn)
+    
+    inline def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
+  }
 }
-

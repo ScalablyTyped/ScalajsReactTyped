@@ -1,36 +1,50 @@
 package typingsJapgolly.xpath
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Attr
-import org.scalajs.dom.raw.Node
-import org.scalajs.dom.raw.XPathResult
+import org.scalajs.dom.Attr
+import org.scalajs.dom.Node
+import org.scalajs.dom.XPathResult
 import typingsJapgolly.std.XPathNSResolver
 import typingsJapgolly.xpath.xpathBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xpath", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  trait XPathSelect extends js.Object {
-    def apply(expression: String): js.Array[SelectedValue] = js.native
-    def apply(expression: String, node: Node): js.Array[SelectedValue] = js.native
-    def apply(expression: String, node: Node, single: `true`): SelectedValue = js.native
-  }
+object mod {
   
-  var select: XPathSelect = js.native
-  def evaluate(
+  @JSImport("xpath", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def evaluate(expression: String, contextNode: Node, resolver: Null, `type`: Double): XPathResult = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any], contextNode.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[XPathResult]
+  inline def evaluate(expression: String, contextNode: Node, resolver: Null, `type`: Double, result: XPathResult): XPathResult = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any], contextNode.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[XPathResult]
+  inline def evaluate(expression: String, contextNode: Node, resolver: XPathNSResolver, `type`: Double): XPathResult = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any], contextNode.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[XPathResult]
+  inline def evaluate(
     expression: String,
     contextNode: Node,
     resolver: XPathNSResolver,
     `type`: Double,
     result: XPathResult
-  ): XPathResult = js.native
-  def select1(expression: String): SelectedValue = js.native
-  def select1(expression: String, node: Node): SelectedValue = js.native
-  def useNamespaces(namespaceMap: StringDictionary[String]): XPathSelect = js.native
+  ): XPathResult = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any], contextNode.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[XPathResult]
+  
+  @JSImport("xpath", "select")
+  @js.native
+  def select: XPathSelect = js.native
+  
+  inline def select1(expression: String): js.UndefOr[SelectedValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("select1")(expression.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SelectedValue]]
+  inline def select1(expression: String, node: Node): js.UndefOr[SelectedValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("select1")(expression.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SelectedValue]]
+  
+  inline def select_=(x: XPathSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select")(x.asInstanceOf[js.Any])
+  
+  inline def useNamespaces(namespaceMap: StringDictionary[String]): XPathSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("useNamespaces")(namespaceMap.asInstanceOf[js.Any]).asInstanceOf[XPathSelect]
+  
   type SelectedValue = Node | Attr | String | Double | Boolean
+  
+  @js.native
+  trait XPathSelect extends StObject {
+    
+    def apply(expression: String): js.Array[SelectedValue] = js.native
+    def apply(expression: String, node: Node): js.Array[SelectedValue] = js.native
+    def apply(expression: String, node: Node, single: `true`): js.UndefOr[SelectedValue] = js.native
+  }
 }
-

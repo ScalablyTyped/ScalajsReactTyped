@@ -1,23 +1,32 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.ItemsDeleted event.
   */
-@JSGlobal("ASPxClientFileManagerItemsDeletedEventArgs")
-@js.native
-class ASPxClientFileManagerItemsDeletedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientFileManagerItemsDeletedEventArgs object.
-    * @param items An array of ASPxClientFileManagerItem objects that are items currently being processed.
-    */
-  def this(items: js.Array[ASPxClientFileManagerItem]) = this()
+trait ASPxClientFileManagerItemsDeletedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets an array of the currently processed items.
     */
-  var items: js.Array[ASPxClientFileManagerItem] = js.native
+  var items: js.Array[ASPxClientFileManagerItem]
 }
-
+object ASPxClientFileManagerItemsDeletedEventArgs {
+  
+  inline def apply(items: js.Array[ASPxClientFileManagerItem]): ASPxClientFileManagerItemsDeletedEventArgs = {
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientFileManagerItemsDeletedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientFileManagerItemsDeletedEventArgs](x: Self) {
+    
+    inline def setItems(value: js.Array[ASPxClientFileManagerItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsVarargs(value: ASPxClientFileManagerItem*): Self = StObject.set(x, "items", js.Array(value*))
+  }
+}

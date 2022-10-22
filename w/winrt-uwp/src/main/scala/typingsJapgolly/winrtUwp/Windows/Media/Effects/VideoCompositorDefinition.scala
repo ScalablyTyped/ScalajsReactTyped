@@ -1,28 +1,30 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Effects
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IPropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the definition of a custom video compositor. */
-@JSGlobal("Windows.Media.Effects.VideoCompositorDefinition")
-@js.native
-class VideoCompositorDefinition protected () extends js.Object {
-  /**
-    * Initializes a new instance of the VideoCompositorDefinition class.
-    * @param activatableClassId The activatable class ID of the video compositor.
-    */
-  def this(activatableClassId: String) = this()
-  /**
-    * Initializes a new instance of the VideoCompositorDefinition class.
-    * @param activatableClassId The activatable class ID of the video compositor.
-    * @param props The set of properties for configuring the video compositor object.
-    */
-  def this(activatableClassId: String, props: IPropertySet) = this()
+trait VideoCompositorDefinition extends StObject {
+  
   /** Gets the activatable class ID of the video compositor. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
+  
   /** Gets the set of properties for configuring the video compositor object. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
 }
-
+object VideoCompositorDefinition {
+  
+  inline def apply(activatableClassId: String, properties: IPropertySet): VideoCompositorDefinition = {
+    val __obj = js.Dynamic.literal(activatableClassId = activatableClassId.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VideoCompositorDefinition]
+  }
+  
+  extension [Self <: VideoCompositorDefinition](x: Self) {
+    
+    inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+  }
+}

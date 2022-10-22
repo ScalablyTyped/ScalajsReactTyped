@@ -1,45 +1,51 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.ClassProperty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClassProperty_
-  extends Node
+  extends StObject
+     with Node
      with Flow
      with Property {
+  
   var decorators: js.UndefOr[js.Array[Decorator_]] = js.undefined
+  
   var key: Identifier_
+  
   var typeAnnotation: js.UndefOr[TypeAnnotation_] = js.undefined
+  
   @JSName("type")
   var type_ClassProperty_ : ClassProperty
+  
   var value: Expression
 }
-
 object ClassProperty_ {
-  @scala.inline
-  def apply(
-    end: Double,
-    key: Identifier_,
-    loc: SourceLocation,
-    start: Double,
-    `type`: ClassProperty,
-    value: Expression,
-    decorators: js.Array[Decorator_] = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TypeAnnotation_ = null
-  ): ClassProperty_ = {
+  
+  inline def apply(end: Double, key: Identifier_, loc: SourceLocation, start: Double, value: Expression): ClassProperty_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassProperty")
     __obj.asInstanceOf[ClassProperty_]
   }
+  
+  extension [Self <: ClassProperty_](x: Self) {
+    
+    inline def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    
+    inline def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
+    
+    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
+    
+    inline def setKey(value: Identifier_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: ClassProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
+    
+    inline def setValue(value: Expression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

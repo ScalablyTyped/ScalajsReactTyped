@@ -1,24 +1,20 @@
 package typingsJapgolly.postcssModulesLocalByDefault
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postcssModulesLocalByDefaultStrings {
-  @js.native
-  sealed trait global extends js.Object
   
   @js.native
-  sealed trait local extends js.Object
+  sealed trait global extends StObject
+  inline def global: global = "global".asInstanceOf[global]
   
   @js.native
-  sealed trait pure extends js.Object
+  sealed trait local extends StObject
+  inline def local: local = "local".asInstanceOf[local]
   
-  @scala.inline
-  def global: global = "global".asInstanceOf[global]
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
-  @scala.inline
-  def pure: pure = "pure".asInstanceOf[pure]
+  @js.native
+  sealed trait pure extends StObject
+  inline def pure: pure = "pure".asInstanceOf[pure]
 }
-

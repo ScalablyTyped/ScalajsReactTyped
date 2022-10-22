@@ -1,25 +1,13 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxMenuBaseItem
 import typingsJapgolly.devextreme.mod.DevExpress.ui.dxMenuBaseOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxMenuBase")
+@JSImport("devextreme", "default.ui.dxMenuBase")
 @js.native
-class dxMenuBase protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.dxMenuBase {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(
-    element: JQuery,
-    options: dxMenuBaseOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxMenuBase]
-  ) = this()
-  def this(
-    element: Element,
-    options: dxMenuBaseOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxMenuBase]
-  ) = this()
-}
-
+open class dxMenuBase[TProperties /* <: dxMenuBaseOptions[Any, TItem, TKey] */, TItem /* <: dxMenuBaseItem */, TKey] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxMenuBase[TProperties, TItem, TKey]

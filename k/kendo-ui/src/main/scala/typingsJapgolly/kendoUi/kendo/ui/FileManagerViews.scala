@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileManagerViews extends js.Object {
-  var grid: js.UndefOr[js.Any] = js.undefined
-  var list: js.UndefOr[js.Any] = js.undefined
-  var tree: js.UndefOr[js.Any] = js.undefined
+trait FileManagerViews extends StObject {
+  
+  var grid: js.UndefOr[Any] = js.undefined
+  
+  var list: js.UndefOr[Any] = js.undefined
+  
+  var tree: js.UndefOr[Any] = js.undefined
 }
-
 object FileManagerViews {
-  @scala.inline
-  def apply(grid: js.Any = null, list: js.Any = null, tree: js.Any = null): FileManagerViews = {
+  
+  inline def apply(): FileManagerViews = {
     val __obj = js.Dynamic.literal()
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (tree != null) __obj.updateDynamic("tree")(tree.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileManagerViews]
   }
+  
+  extension [Self <: FileManagerViews](x: Self) {
+    
+    inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    
+    inline def setList(value: Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    
+    inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+    
+    inline def setTree(value: Any): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    
+    inline def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
+  }
 }
-

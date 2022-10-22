@@ -1,20 +1,26 @@
 package typingsJapgolly.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StatsParams extends js.Object {
+trait StatsParams extends StObject {
+  
   var from: String
+  
   var to: String
 }
-
 object StatsParams {
-  @scala.inline
-  def apply(from: String, to: String): StatsParams = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
+  inline def apply(from: String, to: String): StatsParams = {
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatsParams]
   }
+  
+  extension [Self <: StatsParams](x: Self) {
+    
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+  }
 }
-

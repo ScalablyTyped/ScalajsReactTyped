@@ -1,14 +1,14 @@
 package typingsJapgolly.postmark.mod
 
-import typingsJapgolly.postmark.modelsMod.ClientOptions.Configuration
-import typingsJapgolly.postmark.serverClientMod.default
+import typingsJapgolly.postmark.distClientModelsMod.ClientOptions.Configuration
+import typingsJapgolly.postmark.distClientServerClientMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Client")
 @js.native
-class Client protected () extends default {
+open class Client protected () extends default {
   /**
     * Create a client.
     *
@@ -18,4 +18,3 @@ class Client protected () extends default {
   def this(serverToken: String) = this()
   def this(serverToken: String, configOptions: Configuration) = this()
 }
-

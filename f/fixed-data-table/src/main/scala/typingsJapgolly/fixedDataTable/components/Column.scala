@@ -1,60 +1,64 @@
 package typingsJapgolly.fixedDataTable.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.fixedDataTable.mod.CellProps
 import typingsJapgolly.fixedDataTable.mod.ColumnProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Column {
-  def apply(
-    width: Double,
-    align: String = null,
-    allowCellsRecycling: js.UndefOr[Boolean] = js.undefined,
-    cell: String | Element | (js.Function1[/* props */ CellProps, String | Element]) = null,
-    columnKey: String | Double = null,
-    fixed: js.UndefOr[Boolean] = js.undefined,
-    flexGrow: Int | Double = null,
-    footer: String | Element | (js.Function1[/* props */ CellProps, String | Element]) = null,
-    header: String | Element | (js.Function1[/* props */ CellProps, String | Element]) = null,
-    isResizable: js.UndefOr[Boolean] = js.undefined,
-    maxWidth: Int | Double = null,
-    minWidth: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ColumnProps, typingsJapgolly.fixedDataTable.mod.Column, Unit, ColumnProps] = {
-    val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
   
-      if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCellsRecycling)) __obj.updateDynamic("allowCellsRecycling")(allowCellsRecycling.asInstanceOf[js.Any])
-    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
-    if (flexGrow != null) __obj.updateDynamic("flexGrow")(flexGrow.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.fixedDataTable.mod.ColumnProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.fixedDataTable.mod.Column](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.fixedDataTable.mod.ColumnProps])(children: _*)
+  inline def apply(width: Double): Builder = {
+    val __props = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ColumnProps]))
   }
+  
   @JSImport("fixed-data-table", "Column")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.fixedDataTable.mod.Column] {
+    
+    inline def align(value: String): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def allowCellsRecycling(value: Boolean): this.type = set("allowCellsRecycling", value.asInstanceOf[js.Any])
+    
+    inline def cell(value: String | Element | (js.Function1[/* props */ CellProps, String | Element])): this.type = set("cell", value.asInstanceOf[js.Any])
+    
+    inline def cellFunction1(value: /* props */ CellProps => String | Element): this.type = set("cell", js.Any.fromFunction1(value))
+    
+    inline def cellVdomElement(value: VdomElement): this.type = set("cell", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def columnKey(value: String | Double): this.type = set("columnKey", value.asInstanceOf[js.Any])
+    
+    inline def fixed(value: Boolean): this.type = set("fixed", value.asInstanceOf[js.Any])
+    
+    inline def flexGrow(value: Double): this.type = set("flexGrow", value.asInstanceOf[js.Any])
+    
+    inline def footer(value: String | Element | (js.Function1[/* props */ CellProps, String | Element])): this.type = set("footer", value.asInstanceOf[js.Any])
+    
+    inline def footerFunction1(value: /* props */ CellProps => String | Element): this.type = set("footer", js.Any.fromFunction1(value))
+    
+    inline def footerVdomElement(value: VdomElement): this.type = set("footer", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def header(value: String | Element | (js.Function1[/* props */ CellProps, String | Element])): this.type = set("header", value.asInstanceOf[js.Any])
+    
+    inline def headerFunction1(value: /* props */ CellProps => String | Element): this.type = set("header", js.Any.fromFunction1(value))
+    
+    inline def headerVdomElement(value: VdomElement): this.type = set("header", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def isResizable(value: Boolean): this.type = set("isResizable", value.asInstanceOf[js.Any])
+    
+    inline def maxWidth(value: Double): this.type = set("maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def minWidth(value: Double): this.type = set("minWidth", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ColumnProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

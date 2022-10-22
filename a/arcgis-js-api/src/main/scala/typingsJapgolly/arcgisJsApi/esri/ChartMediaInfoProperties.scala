@@ -1,10 +1,11 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartMediaInfoProperties extends js.Object {
+trait ChartMediaInfoProperties extends StObject {
+  
   /**
     * Defines the chart value.
     *
@@ -12,13 +13,17 @@ trait ChartMediaInfoProperties extends js.Object {
     */
   var value: js.UndefOr[ChartMediaInfoValueProperties] = js.undefined
 }
-
 object ChartMediaInfoProperties {
-  @scala.inline
-  def apply(value: ChartMediaInfoValueProperties = null): ChartMediaInfoProperties = {
+  
+  inline def apply(): ChartMediaInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartMediaInfoProperties]
   }
+  
+  extension [Self <: ChartMediaInfoProperties](x: Self) {
+    
+    inline def setValue(value: ChartMediaInfoValueProperties): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

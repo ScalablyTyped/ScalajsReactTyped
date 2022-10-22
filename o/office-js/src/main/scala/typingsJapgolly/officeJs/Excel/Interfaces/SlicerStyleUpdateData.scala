@@ -1,26 +1,31 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the SlicerStyle object, for use in `slicerStyle.set({ ... })`. */
-trait SlicerStyleUpdateData extends js.Object {
+trait SlicerStyleUpdateData extends StObject {
+  
   /**
+    * Specifies the name of the slicer style.
     *
-    * Gets the name of the SlicerStyle.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[String] = js.undefined
 }
-
 object SlicerStyleUpdateData {
-  @scala.inline
-  def apply(name: String = null): SlicerStyleUpdateData = {
+  
+  inline def apply(): SlicerStyleUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlicerStyleUpdateData]
   }
+  
+  extension [Self <: SlicerStyleUpdateData](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

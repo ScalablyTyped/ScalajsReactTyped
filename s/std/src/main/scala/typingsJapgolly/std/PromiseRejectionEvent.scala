@@ -1,22 +1,17 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PromiseRejectionEvent extends Event_ {
-  val promise: js.Promise[_] = js.native
-  val reason: js.Any = js.native
+trait PromiseRejectionEvent
+  extends StObject
+     with Event {
+  
+  /* standard dom */
+  val promise: js.Promise[Any] = js.native
+  
+  /* standard dom */
+  val reason: Any = js.native
 }
-
-@JSGlobal("PromiseRejectionEvent")
-@js.native
-object PromiseRejectionEvent
-  extends Instantiable2[
-      /* type */ java.lang.String, 
-      /* eventInitDict */ PromiseRejectionEventInit, 
-      PromiseRejectionEvent
-    ]
-

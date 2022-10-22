@@ -1,12 +1,18 @@
 package typingsJapgolly.protonNative.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("proton-native", "AreaLine")
 @js.native
-class AreaLine ()
-  extends Component[AreaLineProps, js.Object, js.Any]
-
+open class AreaLine protected ()
+  extends Component[AreaLineProps, js.Object, Any] {
+  def this(props: AreaLineProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: AreaLineProps, context: Any) = this()
+}

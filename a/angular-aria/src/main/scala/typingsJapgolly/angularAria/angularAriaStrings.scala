@@ -1,60 +1,69 @@
 package typingsJapgolly.angularAria
 
-import typingsJapgolly.angularAria.mod.aria.IAriaAttribute
+import typingsJapgolly.angularAria.angularMod.aria.IAriaAttribute
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularAriaStrings {
-  @js.native
-  sealed trait ariaChecked extends IAriaAttribute
   
   @js.native
-  sealed trait ariaDisabled extends IAriaAttribute
+  sealed trait ariaChecked
+    extends StObject
+       with IAriaAttribute
+  inline def ariaChecked: ariaChecked = "ariaChecked".asInstanceOf[ariaChecked]
   
   @js.native
-  sealed trait ariaHidden extends IAriaAttribute
+  sealed trait ariaDisabled
+    extends StObject
+       with IAriaAttribute
+  inline def ariaDisabled: ariaDisabled = "ariaDisabled".asInstanceOf[ariaDisabled]
   
   @js.native
-  sealed trait ariaInvalid extends IAriaAttribute
+  sealed trait ariaHidden
+    extends StObject
+       with IAriaAttribute
+  inline def ariaHidden: ariaHidden = "ariaHidden".asInstanceOf[ariaHidden]
   
   @js.native
-  sealed trait ariaReadonly extends IAriaAttribute
+  sealed trait ariaInvalid
+    extends StObject
+       with IAriaAttribute
+  inline def ariaInvalid: ariaInvalid = "ariaInvalid".asInstanceOf[ariaInvalid]
   
   @js.native
-  sealed trait ariaRequired extends IAriaAttribute
+  sealed trait ariaReadonly
+    extends StObject
+       with IAriaAttribute
+  inline def ariaReadonly: ariaReadonly = "ariaReadonly".asInstanceOf[ariaReadonly]
   
   @js.native
-  sealed trait ariaValue extends IAriaAttribute
+  sealed trait ariaRequired
+    extends StObject
+       with IAriaAttribute
+  inline def ariaRequired: ariaRequired = "ariaRequired".asInstanceOf[ariaRequired]
   
   @js.native
-  sealed trait bindKeydown extends IAriaAttribute
+  sealed trait ariaValue
+    extends StObject
+       with IAriaAttribute
+  inline def ariaValue: ariaValue = "ariaValue".asInstanceOf[ariaValue]
   
   @js.native
-  sealed trait bindRoleForClick extends IAriaAttribute
+  sealed trait bindKeydown
+    extends StObject
+       with IAriaAttribute
+  inline def bindKeydown: bindKeydown = "bindKeydown".asInstanceOf[bindKeydown]
   
   @js.native
-  sealed trait tabindex extends IAriaAttribute
+  sealed trait bindRoleForClick
+    extends StObject
+       with IAriaAttribute
+  inline def bindRoleForClick: bindRoleForClick = "bindRoleForClick".asInstanceOf[bindRoleForClick]
   
-  @scala.inline
-  def ariaChecked: ariaChecked = "ariaChecked".asInstanceOf[ariaChecked]
-  @scala.inline
-  def ariaDisabled: ariaDisabled = "ariaDisabled".asInstanceOf[ariaDisabled]
-  @scala.inline
-  def ariaHidden: ariaHidden = "ariaHidden".asInstanceOf[ariaHidden]
-  @scala.inline
-  def ariaInvalid: ariaInvalid = "ariaInvalid".asInstanceOf[ariaInvalid]
-  @scala.inline
-  def ariaReadonly: ariaReadonly = "ariaReadonly".asInstanceOf[ariaReadonly]
-  @scala.inline
-  def ariaRequired: ariaRequired = "ariaRequired".asInstanceOf[ariaRequired]
-  @scala.inline
-  def ariaValue: ariaValue = "ariaValue".asInstanceOf[ariaValue]
-  @scala.inline
-  def bindKeydown: bindKeydown = "bindKeydown".asInstanceOf[bindKeydown]
-  @scala.inline
-  def bindRoleForClick: bindRoleForClick = "bindRoleForClick".asInstanceOf[bindRoleForClick]
-  @scala.inline
-  def tabindex: tabindex = "tabindex".asInstanceOf[tabindex]
+  @js.native
+  sealed trait tabindex
+    extends StObject
+       with IAriaAttribute
+  inline def tabindex: tabindex = "tabindex".asInstanceOf[tabindex]
 }
-

@@ -1,18 +1,23 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "QuestionHtmlModel")
 @js.native
-class QuestionHtmlModel protected () extends QuestionNonValue {
+open class QuestionHtmlModel protected () extends QuestionNonValue {
   def this(name: String) = this()
-  /**
+  
+  /*
     * Set html to display it
     */
-  var html: String = js.native
-  val locHtml: LocalizableString = js.native
-  val processedHtml: String = js.native
+  def html: String = js.native
+  def html_=(`val`: String): Unit = js.native
+  
+  var ignoreHtmlProgressing: Boolean = js.native
+  
+  def locHtml: LocalizableString = js.native
+  
+  def processedHtml: String = js.native
 }
-

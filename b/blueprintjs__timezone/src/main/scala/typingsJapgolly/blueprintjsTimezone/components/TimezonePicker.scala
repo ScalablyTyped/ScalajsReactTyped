@@ -1,68 +1,52 @@
 package typingsJapgolly.blueprintjsTimezone.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.blueprintjsCore.inputGroupMod.IInputGroupProps
-import typingsJapgolly.blueprintjsCore.propsMod.HTMLInputProps
-import typingsJapgolly.blueprintjsTimezone.PartialIButtonProps
-import typingsJapgolly.blueprintjsTimezone.PartialIPopoverProps
-import typingsJapgolly.blueprintjsTimezone.timezoneDisplayFormatMod.TimezoneDisplayFormat
-import typingsJapgolly.blueprintjsTimezone.timezonePickerMod.ITimezonePickerProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsCore.libEsmComponentsFormsInputGroupMod.InputGroupProps2
+import typingsJapgolly.blueprintjsTimezone.anon.PartialButtonPropsHTMLBut
+import typingsJapgolly.blueprintjsTimezone.anon.PartialIPopoverProps
+import typingsJapgolly.blueprintjsTimezone.libEsmComponentsTimezonePickerTimezoneDisplayFormatMod.TimezoneDisplayFormat
+import typingsJapgolly.blueprintjsTimezone.libEsmComponentsTimezonePickerTimezonePickerMod.ITimezonePickerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TimezonePicker {
-  def apply(
-    onChange: String => Callback,
-    buttonProps: PartialIButtonProps = null,
-    className: String = null,
-    date: js.Date = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    inputProps: IInputGroupProps with HTMLInputProps = null,
-    placeholder: String = null,
-    popoverProps: PartialIPopoverProps = null,
-    showLocalTimezone: js.UndefOr[Boolean] = js.undefined,
-    value: String = null,
-    valueDisplayFormat: TimezoneDisplayFormat = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ITimezonePickerProps, 
-    typingsJapgolly.blueprintjsTimezone.mod.TimezonePicker, 
-    Unit, 
-    ITimezonePickerProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: java.lang.String) => onChange(t0).runNow()))
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLocalTimezone)) __obj.updateDynamic("showLocalTimezone")(showLocalTimezone.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueDisplayFormat != null) __obj.updateDynamic("valueDisplayFormat")(valueDisplayFormat.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsTimezone.timezonePickerMod.ITimezonePickerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsTimezone.mod.TimezonePicker](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsTimezone.timezonePickerMod.ITimezonePickerProps])(children: _*)
+  inline def apply(onChange: String => Callback): Builder = {
+    val __props = js.Dynamic.literal(onChange = js.Any.fromFunction1((t0: String) => onChange(t0).runNow()))
+    new Builder(js.Array(this.component, __props.asInstanceOf[ITimezonePickerProps]))
   }
+  
   @JSImport("@blueprintjs/timezone", "TimezonePicker")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsTimezone.mod.TimezonePicker] {
+    
+    inline def buttonProps(value: PartialButtonPropsHTMLBut): this.type = set("buttonProps", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def date(value: js.Date): this.type = set("date", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def inputProps(value: InputGroupProps2): this.type = set("inputProps", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def popoverProps(value: PartialIPopoverProps): this.type = set("popoverProps", value.asInstanceOf[js.Any])
+    
+    inline def showLocalTimezone(value: Boolean): this.type = set("showLocalTimezone", value.asInstanceOf[js.Any])
+    
+    inline def value(value: String): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueDisplayFormat(value: TimezoneDisplayFormat): this.type = set("valueDisplayFormat", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ITimezonePickerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,11 +1,10 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Marker for contextual 'this' type
   */
-trait ThisType[T] extends js.Object
-
+trait ThisType[T] extends StObject

@@ -1,27 +1,36 @@
 package typingsJapgolly.tcomb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StructOptions extends js.Object {
+trait StructOptions extends StObject {
+  
   var defaultProps: js.UndefOr[js.Object] = js.undefined
+  
   var name: js.UndefOr[java.lang.String] = js.undefined
+  
   var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object StructOptions {
-  @scala.inline
-  def apply(
-    defaultProps: js.Object = null,
-    name: java.lang.String = null,
-    strict: js.UndefOr[scala.Boolean] = js.undefined
-  ): StructOptions = {
+  
+  inline def apply(): StructOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultProps != null) __obj.updateDynamic("defaultProps")(defaultProps.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructOptions]
   }
+  
+  extension [Self <: StructOptions](x: Self) {
+    
+    inline def setDefaultProps(value: js.Object): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
+    
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setStrict(value: scala.Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+  }
 }
-

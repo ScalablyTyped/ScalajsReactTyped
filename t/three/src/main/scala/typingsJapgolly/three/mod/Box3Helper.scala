@@ -1,14 +1,17 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Box3Helper")
 @js.native
-class Box3Helper protected ()
-  extends typingsJapgolly.three.box3HelperMod.Box3Helper {
-  def this(box: typingsJapgolly.three.box3Mod.Box3) = this()
-  def this(box: typingsJapgolly.three.box3Mod.Box3, color: typingsJapgolly.three.colorMod.Color) = this()
+open class Box3Helper protected ()
+  extends typingsJapgolly.three.srcThreeMod.Box3Helper {
+  /**
+    * @param box
+    * @param [color=0xffff00]
+    */
+  def this(box: typingsJapgolly.three.srcMathBox3Mod.Box3) = this()
+  def this(box: typingsJapgolly.three.srcMathBox3Mod.Box3, color: typingsJapgolly.three.srcMathColorMod.Color) = this()
 }
-

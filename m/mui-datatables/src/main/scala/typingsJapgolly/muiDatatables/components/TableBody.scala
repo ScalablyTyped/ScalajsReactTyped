@@ -1,61 +1,68 @@
 package typingsJapgolly.muiDatatables.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.muiDatatables.AnonRowIndex
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.muiDatatables.anon.DataIndex
 import typingsJapgolly.muiDatatables.mod.MUIDataTableBody
 import typingsJapgolly.muiDatatables.mod.MUIDataTableColumnDef
+import typingsJapgolly.muiDatatables.mod.MUIDataTableOptions
+import typingsJapgolly.muiDatatables.mod.MUIDataTableStateRows
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableBody {
-  def apply(
+  
+  inline def apply(
     classes: js.Object,
     columns: js.Array[MUIDataTableColumnDef],
     count: Double,
     data: js.Array[js.Object | (js.Array[Double | String])],
-    options: js.Object,
-    filterList: js.Array[js.Array[String]] = null,
-    onRowClick: (/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex) => Callback = null,
-    searchText: String = null,
-    selectRowUpdate: /* args */ js.Any => CallbackTo[js.Any] = null,
-    selectedRows: js.Object = null,
-    toggleExpandRow: /* args */ js.Any => CallbackTo[js.Any] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    MUIDataTableBody, 
-    MountedWithRawType[MUIDataTableBody, js.Object, RawMounted[MUIDataTableBody, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-  
-      if (filterList != null) __obj.updateDynamic("filterList")(filterList.asInstanceOf[js.Any])
-    if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction2((t0: /* rowData */ js.Array[java.lang.String], t1: /* rowMeta */ typingsJapgolly.muiDatatables.AnonRowIndex) => onRowClick(t0, t1).runNow()))
-    if (searchText != null) __obj.updateDynamic("searchText")(searchText.asInstanceOf[js.Any])
-    if (selectRowUpdate != null) __obj.updateDynamic("selectRowUpdate")(js.Any.fromFunction1((t0: /* args */ js.Any) => selectRowUpdate(t0).runNow()))
-    if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows.asInstanceOf[js.Any])
-    if (toggleExpandRow != null) __obj.updateDynamic("toggleExpandRow")(js.Any.fromFunction1((t0: /* args */ js.Any) => toggleExpandRow(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.muiDatatables.mod.MUIDataTableBody, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.muiDatatables.mod.MUIDataTableBody])(children: _*)
+    options: MUIDataTableOptions
+  ): Builder = {
+    val __props = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[MUIDataTableBody]))
   }
+  
   @JSImport("mui-datatables", "TableBody")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def columnOrder(value: js.Array[Double]): this.type = set("columnOrder", value.asInstanceOf[js.Any])
+    
+    inline def columnOrderVarargs(value: Double*): this.type = set("columnOrder", js.Array(value*))
+    
+    inline def expandedRows(value: MUIDataTableStateRows): this.type = set("expandedRows", value.asInstanceOf[js.Any])
+    
+    inline def filterList(value: js.Array[js.Array[String]]): this.type = set("filterList", value.asInstanceOf[js.Any])
+    
+    inline def filterListVarargs(value: js.Array[String]*): this.type = set("filterList", js.Array(value*))
+    
+    inline def onRowClick(value: (/* rowData */ js.Array[String], /* rowMeta */ DataIndex) => Callback): this.type = set("onRowClick", js.Any.fromFunction2((t0: /* rowData */ js.Array[String], t1: /* rowMeta */ DataIndex) => (value(t0, t1)).runNow()))
+    
+    inline def page(value: Double): this.type = set("page", value.asInstanceOf[js.Any])
+    
+    inline def previousSelectedRow(value: Double): this.type = set("previousSelectedRow", value.asInstanceOf[js.Any])
+    
+    inline def previousSelectedRowNull: this.type = set("previousSelectedRow", null)
+    
+    inline def rowsPerPage(value: Double): this.type = set("rowsPerPage", value.asInstanceOf[js.Any])
+    
+    inline def searchText(value: String): this.type = set("searchText", value.asInstanceOf[js.Any])
+    
+    inline def selectRowUpdate(value: /* args */ Any => Any): this.type = set("selectRowUpdate", js.Any.fromFunction1(value))
+    
+    inline def selectedRows(value: MUIDataTableStateRows): this.type = set("selectedRows", value.asInstanceOf[js.Any])
+    
+    inline def tableId(value: String): this.type = set("tableId", value.asInstanceOf[js.Any])
+    
+    inline def toggleExpandRow(value: /* args */ Any => Any): this.type = set("toggleExpandRow", js.Any.fromFunction1(value))
+  }
+  
+  def withProps(p: MUIDataTableBody): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

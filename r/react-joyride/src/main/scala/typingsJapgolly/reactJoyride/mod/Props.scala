@@ -1,77 +1,81 @@
 package typingsJapgolly.reactJoyride.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.ElementType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Props extends CommonProps {
+trait Props
+  extends StObject
+     with CommonProps {
+  
   var callback: js.UndefOr[js.Function1[/* data */ CallBackProps, Unit]] = js.undefined
+  
   var continuous: js.UndefOr[Boolean] = js.undefined
+  
   var debug: js.UndefOr[Boolean] = js.undefined
-  var getHelpers: js.UndefOr[js.Function1[/* helpers */ StoreHelpers, _]] = js.undefined
+  
+  var getHelpers: js.UndefOr[js.Function1[/* helpers */ StoreHelpers, Any]] = js.undefined
+  
   var run: js.UndefOr[Boolean] = js.undefined
+  
+  var scrollDuration: js.UndefOr[Double] = js.undefined
+  
   var scrollOffset: js.UndefOr[Double] = js.undefined
+  
   var scrollToFirstStep: js.UndefOr[Boolean] = js.undefined
+  
   var stepIndex: js.UndefOr[Double] = js.undefined
+  
   var steps: js.Array[Step]
 }
-
 object Props {
-  @scala.inline
-  def apply(
-    steps: js.Array[Step],
-    beaconComponent: ElementType = null,
-    callback: /* data */ CallBackProps => Callback = null,
-    continuous: js.UndefOr[Boolean] = js.undefined,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined,
-    disableOverlay: js.UndefOr[Boolean] = js.undefined,
-    disableOverlayClose: js.UndefOr[Boolean] = js.undefined,
-    disableScrollParentFix: js.UndefOr[Boolean] = js.undefined,
-    disableScrolling: js.UndefOr[Boolean] = js.undefined,
-    floaterProps: FloaterProps = null,
-    getHelpers: /* helpers */ StoreHelpers => CallbackTo[js.Any] = null,
-    hideBackButton: js.UndefOr[Boolean] = js.undefined,
-    locale: Locale = null,
-    run: js.UndefOr[Boolean] = js.undefined,
-    scrollOffset: Int | Double = null,
-    scrollToFirstStep: js.UndefOr[Boolean] = js.undefined,
-    showProgress: js.UndefOr[Boolean] = js.undefined,
-    showSkipButton: js.UndefOr[Boolean] = js.undefined,
-    spotlightClicks: js.UndefOr[Boolean] = js.undefined,
-    spotlightPadding: Int | Double = null,
-    stepIndex: Int | Double = null,
-    styles: Styles = null,
-    tooltipComponent: ElementType = null
-  ): Props = {
+  
+  inline def apply(steps: js.Array[Step]): Props = {
     val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any])
-    if (beaconComponent != null) __obj.updateDynamic("beaconComponent")(beaconComponent.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1((t0: /* data */ typingsJapgolly.reactJoyride.mod.CallBackProps) => callback(t0).runNow()))
-    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCloseOnEsc)) __obj.updateDynamic("disableCloseOnEsc")(disableCloseOnEsc.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableOverlay)) __obj.updateDynamic("disableOverlay")(disableOverlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableOverlayClose)) __obj.updateDynamic("disableOverlayClose")(disableOverlayClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScrollParentFix)) __obj.updateDynamic("disableScrollParentFix")(disableScrollParentFix.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScrolling)) __obj.updateDynamic("disableScrolling")(disableScrolling.asInstanceOf[js.Any])
-    if (floaterProps != null) __obj.updateDynamic("floaterProps")(floaterProps.asInstanceOf[js.Any])
-    if (getHelpers != null) __obj.updateDynamic("getHelpers")(js.Any.fromFunction1((t0: /* helpers */ typingsJapgolly.reactJoyride.mod.StoreHelpers) => getHelpers(t0).runNow()))
-    if (!js.isUndefined(hideBackButton)) __obj.updateDynamic("hideBackButton")(hideBackButton.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(run)) __obj.updateDynamic("run")(run.asInstanceOf[js.Any])
-    if (scrollOffset != null) __obj.updateDynamic("scrollOffset")(scrollOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollToFirstStep)) __obj.updateDynamic("scrollToFirstStep")(scrollToFirstStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(showProgress)) __obj.updateDynamic("showProgress")(showProgress.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSkipButton)) __obj.updateDynamic("showSkipButton")(showSkipButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(spotlightClicks)) __obj.updateDynamic("spotlightClicks")(spotlightClicks.asInstanceOf[js.Any])
-    if (spotlightPadding != null) __obj.updateDynamic("spotlightPadding")(spotlightPadding.asInstanceOf[js.Any])
-    if (stepIndex != null) __obj.updateDynamic("stepIndex")(stepIndex.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tooltipComponent != null) __obj.updateDynamic("tooltipComponent")(tooltipComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
+  
+  extension [Self <: Props](x: Self) {
+    
+    inline def setCallback(value: /* data */ CallBackProps => Callback): Self = StObject.set(x, "callback", js.Any.fromFunction1((t0: /* data */ CallBackProps) => value(t0).runNow()))
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+    
+    inline def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
+    
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    
+    inline def setGetHelpers(value: /* helpers */ StoreHelpers => Any): Self = StObject.set(x, "getHelpers", js.Any.fromFunction1(value))
+    
+    inline def setGetHelpersUndefined: Self = StObject.set(x, "getHelpers", js.undefined)
+    
+    inline def setRun(value: Boolean): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
+    
+    inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+    
+    inline def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
+    
+    inline def setScrollDurationUndefined: Self = StObject.set(x, "scrollDuration", js.undefined)
+    
+    inline def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
+    
+    inline def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
+    
+    inline def setScrollToFirstStep(value: Boolean): Self = StObject.set(x, "scrollToFirstStep", value.asInstanceOf[js.Any])
+    
+    inline def setScrollToFirstStepUndefined: Self = StObject.set(x, "scrollToFirstStep", js.undefined)
+    
+    inline def setStepIndex(value: Double): Self = StObject.set(x, "stepIndex", value.asInstanceOf[js.Any])
+    
+    inline def setStepIndexUndefined: Self = StObject.set(x, "stepIndex", js.undefined)
+    
+    inline def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    
+    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
+  }
 }
-

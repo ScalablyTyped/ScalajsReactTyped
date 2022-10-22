@@ -1,17 +1,17 @@
 package typingsJapgolly.reactNoSsr
 
 import typingsJapgolly.react.mod.Component
+import typingsJapgolly.reactNoSsr.anon.Children
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-no-ssr", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class default ()
-    extends Component[AnonOnSSR, js.Object, js.Any]
+object mod {
   
-  type NoSSR = japgolly.scalajs.react.raw.React.Component[AnonOnSSR with js.Object, js.Object]
+  @JSImport("react-no-ssr", JSImport.Default)
+  @js.native
+  open class default ()
+    extends Component[Children, js.Object, Any]
+  
+  type NoSSR = japgolly.scalajs.react.facade.React.Component[Children & js.Object, js.Object]
 }
-

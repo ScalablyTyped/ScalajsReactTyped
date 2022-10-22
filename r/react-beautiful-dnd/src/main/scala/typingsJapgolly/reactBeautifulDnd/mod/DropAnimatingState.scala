@@ -1,31 +1,47 @@
 package typingsJapgolly.reactBeautifulDnd.mod
 
 import typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.DROP_ANIMATING
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DropAnimatingState extends State {
+trait DropAnimatingState
+  extends StObject
+     with State {
+  
   var completed: CompletedDrag
+  
   // We still need to render placeholders and fix the dimensions of the dragging item
   var dimensions: DimensionMap
+  
   var dropDuration: Double
+  
   var newHomeClientOffset: Position
+  
   var phase: DROP_ANIMATING
 }
-
 object DropAnimatingState {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     completed: CompletedDrag,
     dimensions: DimensionMap,
     dropDuration: Double,
-    newHomeClientOffset: Position,
-    phase: DROP_ANIMATING
+    newHomeClientOffset: Position
   ): DropAnimatingState = {
-    val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], dropDuration = dropDuration.asInstanceOf[js.Any], newHomeClientOffset = newHomeClientOffset.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], dropDuration = dropDuration.asInstanceOf[js.Any], newHomeClientOffset = newHomeClientOffset.asInstanceOf[js.Any], phase = "DROP_ANIMATING")
     __obj.asInstanceOf[DropAnimatingState]
   }
+  
+  extension [Self <: DropAnimatingState](x: Self) {
+    
+    inline def setCompleted(value: CompletedDrag): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    
+    inline def setDimensions(value: DimensionMap): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    
+    inline def setDropDuration(value: Double): Self = StObject.set(x, "dropDuration", value.asInstanceOf[js.Any])
+    
+    inline def setNewHomeClientOffset(value: Position): Self = StObject.set(x, "newHomeClientOffset", value.asInstanceOf[js.Any])
+    
+    inline def setPhase(value: DROP_ANIMATING): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+  }
 }
-

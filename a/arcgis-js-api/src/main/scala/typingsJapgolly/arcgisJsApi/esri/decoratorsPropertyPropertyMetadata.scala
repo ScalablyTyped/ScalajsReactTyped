@@ -1,86 +1,105 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait decoratorsPropertyPropertyMetadata extends Object {
+trait decoratorsPropertyPropertyMetadata
+  extends StObject
+     with Object {
+  
   /**
     * The property decorator that creates a two-way binding between the property it decorates and an inner property of one of its members.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
   var aliasOf: js.UndefOr[String] = js.undefined
+  
   /**
-    * The function to use to [autocast](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#autocasting) the property. Alternative to define the `type`. The function is called with the value set by the user and should return the cast value.
+    * The function to use to [autocast](https://developers.arcgis.com/javascript/latest/programming-patterns/#autocasting) the property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
   var cast: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * Indicates whether the property can be set during construction but is otherwise read-only.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
-    *
-    * @default false
     */
   var constructOnly: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Property names of dependencies.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
   var dependsOn: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * Indicates whether the property is read-only.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
-    *
-    * @default false
     */
   var readOnly: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The constructor used to [autocast](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#autocasting) the property.
+    * The constructor used to [autocast](https://developers.arcgis.com/javascript/latest/programming-patterns/#autocasting) the property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
   var `type`: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * The default value for the property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object decoratorsPropertyPropertyMetadata {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    aliasOf: String = null,
-    cast: js.Function = null,
-    constructOnly: js.UndefOr[Boolean] = js.undefined,
-    dependsOn: js.Array[String] = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    `type`: js.Function = null,
-    value: js.Any = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): decoratorsPropertyPropertyMetadata = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (aliasOf != null) __obj.updateDynamic("aliasOf")(aliasOf.asInstanceOf[js.Any])
-    if (cast != null) __obj.updateDynamic("cast")(cast.asInstanceOf[js.Any])
-    if (!js.isUndefined(constructOnly)) __obj.updateDynamic("constructOnly")(constructOnly.asInstanceOf[js.Any])
-    if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[decoratorsPropertyPropertyMetadata]
   }
+  
+  extension [Self <: decoratorsPropertyPropertyMetadata](x: Self) {
+    
+    inline def setAliasOf(value: String): Self = StObject.set(x, "aliasOf", value.asInstanceOf[js.Any])
+    
+    inline def setAliasOfUndefined: Self = StObject.set(x, "aliasOf", js.undefined)
+    
+    inline def setCast(value: js.Function): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
+    
+    inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
+    
+    inline def setConstructOnly(value: Boolean): Self = StObject.set(x, "constructOnly", value.asInstanceOf[js.Any])
+    
+    inline def setConstructOnlyUndefined: Self = StObject.set(x, "constructOnly", js.undefined)
+    
+    inline def setDependsOn(value: js.Array[String]): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
+    
+    inline def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
+    
+    inline def setDependsOnVarargs(value: String*): Self = StObject.set(x, "dependsOn", js.Array(value*))
+    
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    
+    inline def setType(value: js.Function): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

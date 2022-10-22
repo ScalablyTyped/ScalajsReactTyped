@@ -1,29 +1,24 @@
 package typingsJapgolly.reactGithubButton
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactGithubButtonStrings {
-  @js.native
-  sealed trait forks extends js.Object
   
   @js.native
-  sealed trait large extends js.Object
+  sealed trait forks extends StObject
+  inline def forks: forks = "forks".asInstanceOf[forks]
   
   @js.native
-  sealed trait stargazers extends js.Object
+  sealed trait large extends StObject
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait watchers extends js.Object
+  sealed trait stargazers extends StObject
+  inline def stargazers: stargazers = "stargazers".asInstanceOf[stargazers]
   
-  @scala.inline
-  def forks: forks = "forks".asInstanceOf[forks]
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
-  @scala.inline
-  def stargazers: stargazers = "stargazers".asInstanceOf[stargazers]
-  @scala.inline
-  def watchers: watchers = "watchers".asInstanceOf[watchers]
+  @js.native
+  sealed trait watchers extends StObject
+  inline def watchers: watchers = "watchers".asInstanceOf[watchers]
 }
-

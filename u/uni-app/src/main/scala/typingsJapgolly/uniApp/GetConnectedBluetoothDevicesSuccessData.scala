@@ -1,27 +1,36 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetConnectedBluetoothDevicesSuccessData extends js.Object {
+trait GetConnectedBluetoothDevicesSuccessData extends StObject {
+  
   /**
     * 用于区分设备的 id
     */
   var deviceId: js.UndefOr[String] = js.undefined
+  
   /**
     * 蓝牙设备名称，某些设备可能没有
     */
   var name: js.UndefOr[String] = js.undefined
 }
-
 object GetConnectedBluetoothDevicesSuccessData {
-  @scala.inline
-  def apply(deviceId: String = null, name: String = null): GetConnectedBluetoothDevicesSuccessData = {
+  
+  inline def apply(): GetConnectedBluetoothDevicesSuccessData = {
     val __obj = js.Dynamic.literal()
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectedBluetoothDevicesSuccessData]
   }
+  
+  extension [Self <: GetConnectedBluetoothDevicesSuccessData](x: Self) {
+    
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

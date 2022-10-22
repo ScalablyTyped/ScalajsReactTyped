@@ -1,29 +1,22 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ListDataValidationFailureReason extends js.Object
-
+sealed trait ListDataValidationFailureReason extends StObject
 @JSGlobal("SP.ListDataValidationFailureReason")
 @js.native
-object ListDataValidationFailureReason extends js.Object {
-  @js.native
-  sealed trait dataFailure extends ListDataValidationFailureReason
+object ListDataValidationFailureReason extends StObject {
   
   @js.native
-  sealed trait formulaError extends ListDataValidationFailureReason
+  sealed trait dataFailure
+    extends StObject
+       with ListDataValidationFailureReason
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ListDataValidationFailureReason with Double] = js.native
-  /* 0 */ @js.native
-  object dataFailure extends TopLevel[dataFailure with Double]
-  
-  /* 1 */ @js.native
-  object formulaError extends TopLevel[formulaError with Double]
-  
+  @js.native
+  sealed trait formulaError
+    extends StObject
+       with ListDataValidationFailureReason
 }
-

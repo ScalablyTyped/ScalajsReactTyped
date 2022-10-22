@@ -1,8 +1,8 @@
 package typingsJapgolly.stripeV3.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.stripeV3.stripeV3Strings.pass
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.stripeV3.stripeV3Strings.unavailable
   - typingsJapgolly.stripeV3.stripeV3Strings.unchecked
 */
-trait checkType extends js.Object
-
+trait checkType extends StObject
 object checkType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fail: typingsJapgolly.stripeV3.stripeV3Strings.fail = this.cast("fail")
-  @scala.inline
-  def pass: typingsJapgolly.stripeV3.stripeV3Strings.pass = this.cast("pass")
-  @scala.inline
-  def unavailable: typingsJapgolly.stripeV3.stripeV3Strings.unavailable = this.cast("unavailable")
-  @scala.inline
-  def unchecked: typingsJapgolly.stripeV3.stripeV3Strings.unchecked = this.cast("unchecked")
+  
+  inline def fail: typingsJapgolly.stripeV3.stripeV3Strings.fail = "fail".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.fail]
+  
+  inline def pass: typingsJapgolly.stripeV3.stripeV3Strings.pass = "pass".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.pass]
+  
+  inline def unavailable: typingsJapgolly.stripeV3.stripeV3Strings.unavailable = "unavailable".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.unavailable]
+  
+  inline def unchecked: typingsJapgolly.stripeV3.stripeV3Strings.unchecked = "unchecked".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.unchecked]
 }
-

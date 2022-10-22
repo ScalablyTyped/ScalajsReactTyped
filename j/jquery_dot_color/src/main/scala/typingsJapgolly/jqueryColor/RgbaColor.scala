@@ -1,30 +1,42 @@
 package typingsJapgolly.jqueryColor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RgbaColor extends js.Object {
+trait RgbaColor extends StObject {
+  
   var alpha: js.UndefOr[Double] = js.undefined
+  
   var blue: js.UndefOr[Double] = js.undefined
+  
   var green: js.UndefOr[Double] = js.undefined
+  
   var red: js.UndefOr[Double] = js.undefined
 }
-
 object RgbaColor {
-  @scala.inline
-  def apply(
-    alpha: Int | Double = null,
-    blue: Int | Double = null,
-    green: Int | Double = null,
-    red: Int | Double = null
-  ): RgbaColor = {
+  
+  inline def apply(): RgbaColor = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (blue != null) __obj.updateDynamic("blue")(blue.asInstanceOf[js.Any])
-    if (green != null) __obj.updateDynamic("green")(green.asInstanceOf[js.Any])
-    if (red != null) __obj.updateDynamic("red")(red.asInstanceOf[js.Any])
     __obj.asInstanceOf[RgbaColor]
   }
+  
+  extension [Self <: RgbaColor](x: Self) {
+    
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    
+    inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+    
+    inline def setBlueUndefined: Self = StObject.set(x, "blue", js.undefined)
+    
+    inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+    
+    inline def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
+    
+    inline def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+    
+    inline def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
+  }
 }
-

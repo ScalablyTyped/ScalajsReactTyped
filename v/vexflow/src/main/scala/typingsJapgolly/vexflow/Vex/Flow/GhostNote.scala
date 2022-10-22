@@ -1,19 +1,19 @@
 package typingsJapgolly.vexflow.Vex.Flow
 
-import typingsJapgolly.vexflow.AnonType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Vex.Flow.GhostNote")
 @js.native
-class GhostNote protected () extends StemmableNote {
-  def this(duration: String) = this()
-  def this(note_struct: AnonType) = this()
-   //inconsistent type: void -> GhostNote
+trait GhostNote
+  extends StObject
+     with StemmableNote {
+  
+  //inconsistent type: void -> GhostNote
   def addToModifierContext(): GhostNote = js.native
+  
   def draw(): Unit = js.native
+  
   @JSName("setStave")
   def setStave_Unit(stave: Stave): Unit = js.native
 }
-

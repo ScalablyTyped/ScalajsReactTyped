@@ -10,10 +10,10 @@ A ping utility using TCP connection
 | ------------------ | :-------------: |
 | Full name          | tcp-ping |
 | Keywords           | ping, util, tcp, availability |
-| # releases         | 1 |
-| # dependents       | 42 |
-| # downloads        | 904267 |
-| # stars            | 13 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 44003.0 |
+| # stars            | 111.0 |
 
 ## Links
 - [Homepage](https://github.com/wesolyromek/tcp-ping)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__request-error
 
-Typings are for version 1.2.1
+Typings are for version 3.0.2
 
 ## Library description:
 Error class for Octokit request errors
@@ -10,10 +10,10 @@ Error class for Octokit request errors
 | ------------------ | :-------------: |
 | Full name          | @octokit/request-error |
 | Keywords           | octokit, github, api, error |
-| # releases         | 9 |
-| # dependents       | 9 |
-| # downloads        | 20195895 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6027282666666668E7 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/octokit/request-error.js#readme)

@@ -1,1629 +1,1304 @@
 package typingsJapgolly.winrtUwp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object winrtUwpStrings {
-  @js.native
-  sealed trait aamvacarddatareceived extends js.Object
   
   @js.native
-  sealed trait accesschanged extends js.Object
+  sealed trait aamvacarddatareceived extends StObject
+  inline def aamvacarddatareceived: aamvacarddatareceived = "aamvacarddatareceived".asInstanceOf[aamvacarddatareceived]
   
   @js.native
-  sealed trait accountadded extends js.Object
+  sealed trait accesschanged extends StObject
+  inline def accesschanged: accesschanged = "accesschanged".asInstanceOf[accesschanged]
   
   @js.native
-  sealed trait accountcommandsrequested extends js.Object
+  sealed trait accountadded extends StObject
+  inline def accountadded: accountadded = "accountadded".asInstanceOf[accountadded]
   
   @js.native
-  sealed trait accountpicturechanged extends js.Object
+  sealed trait accountcommandsrequested extends StObject
+  inline def accountcommandsrequested: accountcommandsrequested = "accountcommandsrequested".asInstanceOf[accountcommandsrequested]
   
   @js.native
-  sealed trait accountremoved extends js.Object
+  sealed trait accountpicturechanged extends StObject
+  inline def accountpicturechanged: accountpicturechanged = "accountpicturechanged".asInstanceOf[accountpicturechanged]
   
   @js.native
-  sealed trait accountupdated extends js.Object
+  sealed trait accountremoved extends StObject
+  inline def accountremoved: accountremoved = "accountremoved".asInstanceOf[accountremoved]
   
   @js.native
-  sealed trait activated extends js.Object
+  sealed trait accountupdated extends StObject
+  inline def accountupdated: accountupdated = "accountupdated".asInstanceOf[accountupdated]
   
   @js.native
-  sealed trait activechanged extends js.Object
+  sealed trait activated extends StObject
+  inline def activated: activated = "activated".asInstanceOf[activated]
   
   @js.native
-  sealed trait added extends js.Object
+  sealed trait activechanged extends StObject
+  inline def activechanged: activechanged = "activechanged".asInstanceOf[activechanged]
   
   @js.native
-  sealed trait advertisementstatuschanged extends js.Object
+  sealed trait added extends StObject
+  inline def added: added = "added".asInstanceOf[added]
   
   @js.native
-  sealed trait alarmiconchanged extends js.Object
+  sealed trait advertisementstatuschanged extends StObject
+  inline def advertisementstatuschanged: advertisementstatuschanged = "advertisementstatuschanged".asInstanceOf[advertisementstatuschanged]
   
   @js.native
-  sealed trait alarmtimeoutexpired extends js.Object
+  sealed trait alarmiconchanged extends StObject
+  inline def alarmiconchanged: alarmiconchanged = "alarmiconchanged".asInstanceOf[alarmiconchanged]
   
   @js.native
-  sealed trait allphotoscaptured extends js.Object
+  sealed trait alarmtimeoutexpired extends StObject
+  inline def alarmtimeoutexpired: alarmtimeoutexpired = "alarmtimeoutexpired".asInstanceOf[alarmtimeoutexpired]
   
   @js.native
-  sealed trait answerrequested extends js.Object
+  sealed trait allphotoscaptured extends StObject
+  inline def allphotoscaptured: allphotoscaptured = "allphotoscaptured".asInstanceOf[allphotoscaptured]
   
   @js.native
-  sealed trait appmemoryusagedecreased extends js.Object
+  sealed trait answerrequested extends StObject
+  inline def answerrequested: answerrequested = "answerrequested".asInstanceOf[answerrequested]
   
   @js.native
-  sealed trait appmemoryusageincreased extends js.Object
+  sealed trait appmemoryusagedecreased extends StObject
+  inline def appmemoryusagedecreased: appmemoryusagedecreased = "appmemoryusagedecreased".asInstanceOf[appmemoryusagedecreased]
   
   @js.native
-  sealed trait appmemoryusagelimitchanging extends js.Object
+  sealed trait appmemoryusageincreased extends StObject
+  inline def appmemoryusageincreased: appmemoryusageincreased = "appmemoryusageincreased".asInstanceOf[appmemoryusageincreased]
   
   @js.native
-  sealed trait audiocaptureeffectschanged extends js.Object
+  sealed trait appmemoryusagelimitchanging extends StObject
+  inline def appmemoryusagelimitchanging: appmemoryusagelimitchanging = "appmemoryusagelimitchanging".asInstanceOf[appmemoryusagelimitchanging]
   
   @js.native
-  sealed trait audioframecompleted extends js.Object
+  sealed trait audiocaptureeffectschanged extends StObject
+  inline def audiocaptureeffectschanged: audiocaptureeffectschanged = "audiocaptureeffectschanged".asInstanceOf[audiocaptureeffectschanged]
   
   @js.native
-  sealed trait audiorendereffectschanged extends js.Object
+  sealed trait audioframecompleted extends StObject
+  inline def audioframecompleted: audioframecompleted = "audioframecompleted".asInstanceOf[audioframecompleted]
   
   @js.native
-  sealed trait audiotrackschanged extends js.Object
+  sealed trait audiorendereffectschanged extends StObject
+  inline def audiorendereffectschanged: audiorendereffectschanged = "audiorendereffectschanged".asInstanceOf[audiorendereffectschanged]
   
   @js.native
-  sealed trait audiotransferrequested extends js.Object
+  sealed trait audiotrackschanged extends StObject
+  inline def audiotrackschanged: audiotrackschanged = "audiotrackschanged".asInstanceOf[audiotrackschanged]
   
   @js.native
-  sealed trait authenticationcomplete extends js.Object
+  sealed trait audiotransferrequested extends StObject
+  inline def audiotransferrequested: audiotransferrequested = "audiotransferrequested".asInstanceOf[audiotransferrequested]
   
   @js.native
-  sealed trait authenticationstatuschanged extends js.Object
+  sealed trait authenticationcomplete extends StObject
+  inline def authenticationcomplete: authenticationcomplete = "authenticationcomplete".asInstanceOf[authenticationcomplete]
   
   @js.native
-  sealed trait authenticationstatuschanging extends js.Object
+  sealed trait authenticationstatuschanged extends StObject
+  inline def authenticationstatuschanged: authenticationstatuschanged = "authenticationstatuschanged".asInstanceOf[authenticationstatuschanged]
   
   @js.native
-  sealed trait autoacceptsessionconnected extends js.Object
+  sealed trait authenticationstatuschanging extends StObject
+  inline def authenticationstatuschanging: authenticationstatuschanging = "authenticationstatuschanging".asInstanceOf[authenticationstatuschanging]
   
   @js.native
-  sealed trait autorepeatmodechangerequested extends js.Object
+  sealed trait autoacceptsessionconnected extends StObject
+  inline def autoacceptsessionconnected: autoacceptsessionconnected = "autoacceptsessionconnected".asInstanceOf[autoacceptsessionconnected]
   
   @js.native
-  sealed trait availabilitychanged extends js.Object
+  sealed trait autorepeatmodechangerequested extends StObject
+  inline def autorepeatmodechangerequested: autorepeatmodechangerequested = "autorepeatmodechangerequested".asInstanceOf[autorepeatmodechangerequested]
   
   @js.native
-  sealed trait availablechanged extends js.Object
+  sealed trait availabilitychanged extends StObject
+  inline def availabilitychanged: availabilitychanged = "availabilitychanged".asInstanceOf[availabilitychanged]
   
   @js.native
-  sealed trait availablenetworkschanged extends js.Object
+  sealed trait availablechanged extends StObject
+  inline def availablechanged: availablechanged = "availablechanged".asInstanceOf[availablechanged]
   
   @js.native
-  sealed trait backrequested extends js.Object
+  sealed trait availablenetworkschanged extends StObject
+  inline def availablenetworkschanged: availablenetworkschanged = "availablenetworkschanged".asInstanceOf[availablenetworkschanged]
   
   @js.native
-  sealed trait badgeschanged extends js.Object
+  sealed trait backrequested extends StObject
+  inline def backrequested: backrequested = "backrequested".asInstanceOf[backrequested]
   
   @js.native
-  sealed trait bankcarddatareceived extends js.Object
+  sealed trait badgeschanged extends StObject
+  inline def badgeschanged: badgeschanged = "badgeschanged".asInstanceOf[badgeschanged]
   
   @js.native
-  sealed trait batterystatuschanged extends js.Object
+  sealed trait bankcarddatareceived extends StObject
+  inline def bankcarddatareceived: bankcarddatareceived = "bankcarddatareceived".asInstanceOf[bankcarddatareceived]
   
   @js.native
-  sealed trait beginvalidation extends js.Object
+  sealed trait batterystatuschanged extends StObject
+  inline def batterystatuschanged: batterystatuschanged = "batterystatuschanged".asInstanceOf[batterystatuschanged]
   
   @js.native
-  sealed trait binding extends js.Object
+  sealed trait beginvalidation extends StObject
+  inline def beginvalidation: beginvalidation = "beginvalidation".asInstanceOf[beginvalidation]
   
   @js.native
-  sealed trait bufferingended extends js.Object
+  sealed trait binding extends StObject
+  inline def binding: binding = "binding".asInstanceOf[binding]
   
   @js.native
-  sealed trait bufferingstarted extends js.Object
+  sealed trait bufferingended extends StObject
+  inline def bufferingended: bufferingended = "bufferingended".asInstanceOf[bufferingended]
   
   @js.native
-  sealed trait buttonpressed extends js.Object
+  sealed trait bufferingstarted extends StObject
+  inline def bufferingstarted: bufferingstarted = "bufferingstarted".asInstanceOf[bufferingstarted]
   
   @js.native
-  sealed trait cameraintrinsicschanged extends js.Object
+  sealed trait buttonpressed extends StObject
+  inline def buttonpressed: buttonpressed = "buttonpressed".asInstanceOf[buttonpressed]
   
   @js.native
-  sealed trait camerastreamstatechanged extends js.Object
+  sealed trait cameraintrinsicschanged extends StObject
+  inline def cameraintrinsicschanged: cameraintrinsicschanged = "cameraintrinsicschanged".asInstanceOf[cameraintrinsicschanged]
   
   @js.native
-  sealed trait canceled extends js.Object
+  sealed trait camerastreamstatechanged extends StObject
+  inline def camerastreamstatechanged: camerastreamstatechanged = "camerastreamstatechanged".asInstanceOf[camerastreamstatechanged]
   
   @js.native
-  sealed trait cardadded extends js.Object
+  sealed trait canceled extends StObject
+  inline def canceled: canceled = "canceled".asInstanceOf[canceled]
   
   @js.native
-  sealed trait cardremoved extends js.Object
+  sealed trait cardadded extends StObject
+  inline def cardadded: cardadded = "cardadded".asInstanceOf[cardadded]
   
   @js.native
-  sealed trait castingdevicepickerdismissed extends js.Object
+  sealed trait cardremoved extends StObject
+  inline def cardremoved: cardremoved = "cardremoved".asInstanceOf[cardremoved]
   
   @js.native
-  sealed trait castingdeviceselected extends js.Object
+  sealed trait castingdevicepickerdismissed extends StObject
+  inline def castingdevicepickerdismissed: castingdevicepickerdismissed = "castingdevicepickerdismissed".asInstanceOf[castingdevicepickerdismissed]
   
   @js.native
-  sealed trait channeldownpressed extends js.Object
+  sealed trait castingdeviceselected extends StObject
+  inline def castingdeviceselected: castingdeviceselected = "castingdeviceselected".asInstanceOf[castingdeviceselected]
   
   @js.native
-  sealed trait channeluppressed extends js.Object
+  sealed trait channeldownpressed extends StObject
+  inline def channeldownpressed: channeldownpressed = "channeldownpressed".asInstanceOf[channeldownpressed]
   
   @js.native
-  sealed trait closed extends js.Object
+  sealed trait channeluppressed extends StObject
+  inline def channeluppressed: channeluppressed = "channeluppressed".asInstanceOf[channeluppressed]
   
   @js.native
-  sealed trait closedcaptiondatareceived extends js.Object
+  sealed trait closed extends StObject
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait closing extends js.Object
+  sealed trait closedcaptiondatareceived extends StObject
+  inline def closedcaptiondatareceived: closedcaptiondatareceived = "closedcaptiondatareceived".asInstanceOf[closedcaptiondatareceived]
   
   @js.native
-  sealed trait colorprofilechanged extends js.Object
+  sealed trait closing extends StObject
+  inline def closing: closing = "closing".asInstanceOf[closing]
   
   @js.native
-  sealed trait colorvalueschanged extends js.Object
+  sealed trait colorprofilechanged extends StObject
+  inline def colorprofilechanged: colorprofilechanged = "colorprofilechanged".asInstanceOf[colorprofilechanged]
   
   @js.native
-  sealed trait commandsrequested extends js.Object
+  sealed trait colorvalueschanged extends StObject
+  inline def colorvalueschanged: colorvalueschanged = "colorvalueschanged".asInstanceOf[colorvalueschanged]
   
   @js.native
-  sealed trait completed extends js.Object
+  sealed trait commandsrequested extends StObject
+  inline def commandsrequested: commandsrequested = "commandsrequested".asInstanceOf[commandsrequested]
   
   @js.native
-  sealed trait componentloadfailed extends js.Object
+  sealed trait completed extends StObject
+  inline def completed: completed = "completed".asInstanceOf[completed]
   
   @js.native
-  sealed trait compositioncompleted extends js.Object
+  sealed trait componentloadfailed extends StObject
+  inline def componentloadfailed: componentloadfailed = "componentloadfailed".asInstanceOf[componentloadfailed]
   
   @js.native
-  sealed trait compositionstarted extends js.Object
+  sealed trait compositioncompleted extends StObject
+  inline def compositioncompleted: compositioncompleted = "compositioncompleted".asInstanceOf[compositioncompleted]
   
   @js.native
-  sealed trait connectionreceived extends js.Object
+  sealed trait compositionstarted extends StObject
+  inline def compositionstarted: compositionstarted = "compositionstarted".asInstanceOf[compositionstarted]
   
   @js.native
-  sealed trait connectionrequested extends js.Object
+  sealed trait connectionreceived extends StObject
+  inline def connectionreceived: connectionreceived = "connectionreceived".asInstanceOf[connectionreceived]
   
   @js.native
-  sealed trait connectionstatuschanged extends js.Object
+  sealed trait connectionrequested extends StObject
+  inline def connectionrequested: connectionrequested = "connectionrequested".asInstanceOf[connectionrequested]
   
   @js.native
-  sealed trait consolidated extends js.Object
+  sealed trait connectionstatuschanged extends StObject
+  inline def connectionstatuschanged: connectionstatuschanged = "connectionstatuschanged".asInstanceOf[connectionstatuschanged]
   
   @js.native
-  sealed trait contactchanged extends js.Object
+  sealed trait consolidated extends StObject
+  inline def consolidated: consolidated = "consolidated".asInstanceOf[consolidated]
   
   @js.native
-  sealed trait contactremoved extends js.Object
+  sealed trait contactchanged extends StObject
+  inline def contactchanged: contactchanged = "contactchanged".asInstanceOf[contactchanged]
   
   @js.native
-  sealed trait contentchanged extends js.Object
+  sealed trait contactremoved extends StObject
+  inline def contactremoved: contactremoved = "contactremoved".asInstanceOf[contactremoved]
   
   @js.native
-  sealed trait contentschanged extends js.Object
+  sealed trait contentchanged extends StObject
+  inline def contentchanged: contentchanged = "contentchanged".asInstanceOf[contentchanged]
   
   @js.native
-  sealed trait controllost extends js.Object
+  sealed trait contentschanged extends StObject
+  inline def contentschanged: contentschanged = "contentschanged".asInstanceOf[contentschanged]
   
   @js.native
-  sealed trait credentialsrequested extends js.Object
+  sealed trait controllost extends StObject
+  inline def controllost: controllost = "controllost".asInstanceOf[controllost]
   
   @js.native
-  sealed trait credentialsverificationrequested extends js.Object
+  sealed trait credentialsrequested extends StObject
+  inline def credentialsrequested: credentialsrequested = "credentialsrequested".asInstanceOf[credentialsrequested]
   
   @js.native
-  sealed trait crosssliding extends js.Object
+  sealed trait credentialsverificationrequested extends StObject
+  inline def credentialsverificationrequested: credentialsverificationrequested = "credentialsverificationrequested".asInstanceOf[credentialsverificationrequested]
   
   @js.native
-  sealed trait cueentered extends js.Object
+  sealed trait crosssliding extends StObject
+  inline def crosssliding: crosssliding = "crosssliding".asInstanceOf[crosssliding]
   
   @js.native
-  sealed trait cueexited extends js.Object
+  sealed trait cueentered extends StObject
+  inline def cueentered: cueentered = "cueentered".asInstanceOf[cueentered]
   
   @js.native
-  sealed trait currentitemchanged extends js.Object
+  sealed trait cueexited extends StObject
+  inline def cueexited: cueexited = "cueexited".asInstanceOf[cueexited]
   
   @js.native
-  sealed trait currentstatechanged extends js.Object
+  sealed trait currentitemchanged extends StObject
+  inline def currentitemchanged: currentitemchanged = "currentitemchanged".asInstanceOf[currentitemchanged]
   
   @js.native
-  sealed trait currenttimechangerequested extends js.Object
+  sealed trait currentstatechanged extends StObject
+  inline def currentstatechanged: currentstatechanged = "currentstatechanged".asInstanceOf[currentstatechanged]
   
   @js.native
-  sealed trait datachanged extends js.Object
+  sealed trait currenttimechangerequested extends StObject
+  inline def currenttimechangerequested: currenttimechangerequested = "currenttimechangerequested".asInstanceOf[currenttimechangerequested]
   
   @js.native
-  sealed trait datareceived extends js.Object
+  sealed trait datachanged extends StObject
+  inline def datachanged: datachanged = "datachanged".asInstanceOf[datachanged]
   
   @js.native
-  sealed trait datarequested extends js.Object
+  sealed trait datareceived extends StObject
+  inline def datareceived: datareceived = "datareceived".asInstanceOf[datareceived]
   
   @js.native
-  sealed trait defaultaudiocapturedevicechanged extends js.Object
+  sealed trait datarequested extends StObject
+  inline def datarequested: datarequested = "datarequested".asInstanceOf[datarequested]
   
   @js.native
-  sealed trait defaultaudiorenderdevicechanged extends js.Object
+  sealed trait defaultaudiocapturedevicechanged extends StObject
+  inline def defaultaudiocapturedevicechanged: defaultaudiocapturedevicechanged = "defaultaudiocapturedevicechanged".asInstanceOf[defaultaudiocapturedevicechanged]
   
   @js.native
-  sealed trait definitionchanged extends js.Object
+  sealed trait defaultaudiorenderdevicechanged extends StObject
+  inline def defaultaudiorenderdevicechanged: defaultaudiorenderdevicechanged = "defaultaudiorenderdevicechanged".asInstanceOf[defaultaudiorenderdevicechanged]
   
   @js.native
-  sealed trait destroyed extends js.Object
+  sealed trait definitionchanged extends StObject
+  inline def definitionchanged: definitionchanged = "definitionchanged".asInstanceOf[definitionchanged]
   
   @js.native
-  sealed trait detailtextchanged extends js.Object
+  sealed trait destroyed extends StObject
+  inline def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
   
   @js.native
-  sealed trait devicearrived extends js.Object
+  sealed trait detailtextchanged extends StObject
+  inline def detailtextchanged: detailtextchanged = "detailtextchanged".asInstanceOf[detailtextchanged]
   
   @js.native
-  sealed trait devicedeparted extends js.Object
+  sealed trait devicearrived extends StObject
+  inline def devicearrived: devicearrived = "devicearrived".asInstanceOf[devicearrived]
   
   @js.native
-  sealed trait devicepickerdismissed extends js.Object
+  sealed trait devicedeparted extends StObject
+  inline def devicedeparted: devicedeparted = "devicedeparted".asInstanceOf[devicedeparted]
   
   @js.native
-  sealed trait deviceselected extends js.Object
+  sealed trait devicepickerdismissed extends StObject
+  inline def devicepickerdismissed: devicepickerdismissed = "devicepickerdismissed".asInstanceOf[devicepickerdismissed]
   
   @js.native
-  sealed trait devicestatuschanged extends js.Object
+  sealed trait deviceselected extends StObject
+  inline def deviceselected: deviceselected = "deviceselected".asInstanceOf[deviceselected]
   
   @js.native
-  sealed trait dialdevicepickerdismissed extends js.Object
+  sealed trait devicestatuschanged extends StObject
+  inline def devicestatuschanged: devicestatuschanged = "devicestatuschanged".asInstanceOf[devicestatuschanged]
   
   @js.native
-  sealed trait dialdeviceselected extends js.Object
+  sealed trait dialdevicepickerdismissed extends StObject
+  inline def dialdevicepickerdismissed: dialdevicepickerdismissed = "dialdevicepickerdismissed".asInstanceOf[dialdevicepickerdismissed]
   
   @js.native
-  sealed trait dialrequested extends js.Object
+  sealed trait dialdeviceselected extends StObject
+  inline def dialdeviceselected: dialdeviceselected = "dialdeviceselected".asInstanceOf[dialdeviceselected]
   
   @js.native
-  sealed trait disconnectbuttonclicked extends js.Object
+  sealed trait dialrequested extends StObject
+  inline def dialrequested: dialrequested = "dialrequested".asInstanceOf[dialrequested]
   
   @js.native
-  sealed trait dismissed extends js.Object
+  sealed trait disconnectbuttonclicked extends StObject
+  inline def disconnectbuttonclicked: disconnectbuttonclicked = "disconnectbuttonclicked".asInstanceOf[disconnectbuttonclicked]
   
   @js.native
-  sealed trait displaycontentsinvalidated extends js.Object
+  sealed trait dismissed extends StObject
+  inline def dismissed: dismissed = "dismissed".asInstanceOf[dismissed]
   
   @js.native
-  sealed trait downloadbitratechanged extends js.Object
+  sealed trait displaycontentsinvalidated extends StObject
+  inline def displaycontentsinvalidated: displaycontentsinvalidated = "displaycontentsinvalidated".asInstanceOf[displaycontentsinvalidated]
   
   @js.native
-  sealed trait downloadcompleted extends js.Object
+  sealed trait downloadbitratechanged extends StObject
+  inline def downloadbitratechanged: downloadbitratechanged = "downloadbitratechanged".asInstanceOf[downloadbitratechanged]
   
   @js.native
-  sealed trait downloadfailed extends js.Object
+  sealed trait downloadcompleted extends StObject
+  inline def downloadcompleted: downloadcompleted = "downloadcompleted".asInstanceOf[downloadcompleted]
   
   @js.native
-  sealed trait downloadrequested extends js.Object
+  sealed trait downloadfailed extends StObject
+  inline def downloadfailed: downloadfailed = "downloadfailed".asInstanceOf[downloadfailed]
   
   @js.native
-  sealed trait dpichanged extends js.Object
+  sealed trait downloadrequested extends StObject
+  inline def downloadrequested: downloadrequested = "downloadrequested".asInstanceOf[downloadrequested]
   
   @js.native
-  sealed trait dragging extends js.Object
+  sealed trait dpichanged extends StObject
+  inline def dpichanged: dpichanged = "dpichanged".asInstanceOf[dpichanged]
   
   @js.native
-  sealed trait drawerclosed extends js.Object
+  sealed trait dragging extends StObject
+  inline def dragging: dragging = "dragging".asInstanceOf[dragging]
   
   @js.native
-  sealed trait draweropened extends js.Object
+  sealed trait drawerclosed extends StObject
+  inline def drawerclosed: drawerclosed = "drawerclosed".asInstanceOf[drawerclosed]
   
   @js.native
-  sealed trait enabledchanged extends js.Object
+  sealed trait draweropened extends StObject
+  inline def draweropened: draweropened = "draweropened".asInstanceOf[draweropened]
   
   @js.native
-  sealed trait endrequested extends js.Object
+  sealed trait enabledchanged extends StObject
+  inline def enabledchanged: enabledchanged = "enabledchanged".asInstanceOf[enabledchanged]
   
   @js.native
-  sealed trait energysaverstatuschanged extends js.Object
+  sealed trait endrequested extends StObject
+  inline def endrequested: endrequested = "endrequested".asInstanceOf[endrequested]
   
   @js.native
-  sealed trait enumerationcompleted extends js.Object
+  sealed trait energysaverstatuschanged extends StObject
+  inline def energysaverstatuschanged: energysaverstatuschanged = "energysaverstatuschanged".asInstanceOf[energysaverstatuschanged]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait enumerationcompleted extends StObject
+  inline def enumerationcompleted: enumerationcompleted = "enumerationcompleted".asInstanceOf[enumerationcompleted]
   
   @js.native
-  sealed trait erroroccurred extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait errorreceived extends js.Object
+  sealed trait erroroccurred extends StObject
+  inline def erroroccurred: erroroccurred = "erroroccurred".asInstanceOf[erroroccurred]
   
   @js.native
-  sealed trait facedetected extends js.Object
+  sealed trait errorreceived extends StObject
+  inline def errorreceived: errorreceived = "errorreceived".asInstanceOf[errorreceived]
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait facedetected extends StObject
+  inline def facedetected: facedetected = "facedetected".asInstanceOf[facedetected]
   
   @js.native
-  sealed trait fastforwardpressed extends js.Object
+  sealed trait failed extends StObject
+  inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
-  sealed trait filecompleted extends js.Object
+  sealed trait fastforwardpressed extends StObject
+  inline def fastforwardpressed: fastforwardpressed = "fastforwardpressed".asInstanceOf[fastforwardpressed]
   
   @js.native
-  sealed trait filenamechanged extends js.Object
+  sealed trait filecompleted extends StObject
+  inline def filecompleted: filecompleted = "filecompleted".asInstanceOf[filecompleted]
   
   @js.native
-  sealed trait fileremoved extends js.Object
+  sealed trait filenamechanged extends StObject
+  inline def filenamechanged: filenamechanged = "filenamechanged".asInstanceOf[filenamechanged]
   
   @js.native
-  sealed trait fileupdaterequested extends js.Object
+  sealed trait fileremoved extends StObject
+  inline def fileremoved: fileremoved = "fileremoved".asInstanceOf[fileremoved]
   
   @js.native
-  sealed trait focuschanged extends js.Object
+  sealed trait fileupdaterequested extends StObject
+  inline def fileupdaterequested: fileupdaterequested = "fileupdaterequested".asInstanceOf[fileupdaterequested]
   
   @js.native
-  sealed trait focusremoved extends js.Object
+  sealed trait focuschanged extends StObject
+  inline def focuschanged: focuschanged = "focuschanged".asInstanceOf[focuschanged]
   
   @js.native
-  sealed trait formatupdating extends js.Object
+  sealed trait focusremoved extends StObject
+  inline def focusremoved: focusremoved = "focusremoved".asInstanceOf[focusremoved]
   
   @js.native
-  sealed trait framearrived extends js.Object
+  sealed trait formatupdating extends StObject
+  inline def formatupdating: formatupdating = "formatupdating".asInstanceOf[formatupdating]
   
   @js.native
-  sealed trait gamepadadded extends js.Object
+  sealed trait framearrived extends StObject
+  inline def framearrived: framearrived = "framearrived".asInstanceOf[framearrived]
   
   @js.native
-  sealed trait gamepadremoved extends js.Object
+  sealed trait gamepadadded extends StObject
+  inline def gamepadadded: gamepadadded = "gamepadadded".asInstanceOf[gamepadadded]
   
   @js.native
-  sealed trait gattserviceschanged extends js.Object
+  sealed trait gamepadremoved extends StObject
+  inline def gamepadremoved: gamepadremoved = "gamepadremoved".asInstanceOf[gamepadremoved]
   
   @js.native
-  sealed trait geofencestatechanged extends js.Object
+  sealed trait gattserviceschanged extends StObject
+  inline def gattserviceschanged: gattserviceschanged = "gattserviceschanged".asInstanceOf[gattserviceschanged]
   
   @js.native
-  sealed trait hanguprequested extends js.Object
+  sealed trait geofencestatechanged extends StObject
+  inline def geofencestatechanged: geofencestatechanged = "geofencestatechanged".asInstanceOf[geofencestatechanged]
   
   @js.native
-  sealed trait headsetconnected extends js.Object
+  sealed trait hanguprequested extends StObject
+  inline def hanguprequested: hanguprequested = "hanguprequested".asInstanceOf[hanguprequested]
   
   @js.native
-  sealed trait headsetdisconnected extends js.Object
+  sealed trait headsetconnected extends StObject
+  inline def headsetconnected: headsetconnected = "headsetconnected".asInstanceOf[headsetconnected]
   
   @js.native
-  sealed trait hiding extends js.Object
+  sealed trait headsetdisconnected extends StObject
+  inline def headsetdisconnected: headsetdisconnected = "headsetdisconnected".asInstanceOf[headsetdisconnected]
   
   @js.native
-  sealed trait highcontrastchanged extends js.Object
+  sealed trait hiding extends StObject
+  inline def hiding: hiding = "hiding".asInstanceOf[hiding]
   
   @js.native
-  sealed trait holding extends js.Object
+  sealed trait highcontrastchanged extends StObject
+  inline def highcontrastchanged: highcontrastchanged = "highcontrastchanged".asInstanceOf[highcontrastchanged]
   
   @js.native
-  sealed trait hypothesisgenerated extends js.Object
+  sealed trait holding extends StObject
+  inline def holding: holding = "holding".asInstanceOf[holding]
   
   @js.native
-  sealed trait imagepreviewreceived extends js.Object
+  sealed trait hypothesisgenerated extends StObject
+  inline def hypothesisgenerated: hypothesisgenerated = "hypothesisgenerated".asInstanceOf[hypothesisgenerated]
   
   @js.native
-  sealed trait inboundendpointpaircreated extends js.Object
+  sealed trait imagepreviewreceived extends StObject
+  inline def imagepreviewreceived: imagepreviewreceived = "imagepreviewreceived".asInstanceOf[imagepreviewreceived]
   
   @js.native
-  sealed trait inputlanguagechanged extends js.Object
+  sealed trait inboundendpointpaircreated extends StObject
+  inline def inboundendpointpaircreated: inboundendpointpaircreated = "inboundendpointpaircreated".asInstanceOf[inboundendpointpaircreated]
   
   @js.native
-  sealed trait inputreportreceived extends js.Object
+  sealed trait inputlanguagechanged extends StObject
+  inline def inputlanguagechanged: inputlanguagechanged = "inputlanguagechanged".asInstanceOf[inputlanguagechanged]
   
   @js.native
-  sealed trait itemcompleted extends js.Object
+  sealed trait inputreportreceived extends StObject
+  inline def inputreportreceived: inputreportreceived = "inputreportreceived".asInstanceOf[inputreportreceived]
   
   @js.native
-  sealed trait itemfailed extends js.Object
+  sealed trait itemcompleted extends StObject
+  inline def itemcompleted: itemcompleted = "itemcompleted".asInstanceOf[itemcompleted]
   
   @js.native
-  sealed trait itemimported extends js.Object
+  sealed trait itemfailed extends StObject
+  inline def itemfailed: itemfailed = "itemfailed".asInstanceOf[itemfailed]
   
   @js.native
-  sealed trait itemopened extends js.Object
+  sealed trait itemimported extends StObject
+  inline def itemimported: itemimported = "itemimported".asInstanceOf[itemimported]
   
   @js.native
-  sealed trait itemremoved extends js.Object
+  sealed trait itemopened extends StObject
+  inline def itemopened: itemopened = "itemopened".asInstanceOf[itemopened]
   
   @js.native
-  sealed trait itemschanged extends js.Object
+  sealed trait itemremoved extends StObject
+  inline def itemremoved: itemremoved = "itemremoved".asInstanceOf[itemremoved]
   
   @js.native
-  sealed trait itemstatuschanged extends js.Object
+  sealed trait itemschanged extends StObject
+  inline def itemschanged: itemschanged = "itemschanged".asInstanceOf[itemschanged]
   
   @js.native
-  sealed trait keydown extends js.Object
+  sealed trait itemstatuschanged extends StObject
+  inline def itemstatuschanged: itemstatuschanged = "itemstatuschanged".asInstanceOf[itemstatuschanged]
   
   @js.native
-  sealed trait keypadpressed extends js.Object
+  sealed trait keydown extends StObject
+  inline def keydown: keydown = "keydown".asInstanceOf[keydown]
   
   @js.native
-  sealed trait keyup extends js.Object
+  sealed trait keypadpressed extends StObject
+  inline def keypadpressed: keypadpressed = "keypadpressed".asInstanceOf[keypadpressed]
   
   @js.native
-  sealed trait layoutrequested extends js.Object
+  sealed trait keyup extends StObject
+  inline def keyup: keyup = "keyup".asInstanceOf[keyup]
   
   @js.native
-  sealed trait licensechanged extends js.Object
+  sealed trait layoutrequested extends StObject
+  inline def layoutrequested: layoutrequested = "layoutrequested".asInstanceOf[layoutrequested]
   
   @js.native
-  sealed trait licensefetchcompleted extends js.Object
+  sealed trait licensechanged extends StObject
+  inline def licensechanged: licensechanged = "licensechanged".asInstanceOf[licensechanged]
   
   @js.native
-  sealed trait lockscreenimagechanged extends js.Object
+  sealed trait licensefetchcompleted extends StObject
+  inline def licensefetchcompleted: licensefetchcompleted = "licensefetchcompleted".asInstanceOf[licensefetchcompleted]
   
   @js.native
-  sealed trait logfilegenerated extends js.Object
+  sealed trait lockscreenimagechanged extends StObject
+  inline def lockscreenimagechanged: lockscreenimagechanged = "lockscreenimagechanged".asInstanceOf[lockscreenimagechanged]
   
   @js.native
-  sealed trait loggingenabled extends js.Object
+  sealed trait logfilegenerated extends StObject
+  inline def logfilegenerated: logfilegenerated = "logfilegenerated".asInstanceOf[logfilegenerated]
   
   @js.native
-  sealed trait logicaldpichanged extends js.Object
+  sealed trait loggingenabled extends StObject
+  inline def loggingenabled: loggingenabled = "loggingenabled".asInstanceOf[loggingenabled]
   
   @js.native
-  sealed trait mailboxchanged extends js.Object
+  sealed trait logicaldpichanged extends StObject
+  inline def logicaldpichanged: logicaldpichanged = "logicaldpichanged".asInstanceOf[logicaldpichanged]
   
   @js.native
-  sealed trait manipulationcompleted extends js.Object
+  sealed trait mailboxchanged extends StObject
+  inline def mailboxchanged: mailboxchanged = "mailboxchanged".asInstanceOf[mailboxchanged]
   
   @js.native
-  sealed trait manipulationinertiastarting extends js.Object
+  sealed trait manipulationcompleted extends StObject
+  inline def manipulationcompleted: manipulationcompleted = "manipulationcompleted".asInstanceOf[manipulationcompleted]
   
   @js.native
-  sealed trait manipulationstarted extends js.Object
+  sealed trait manipulationinertiastarting extends StObject
+  inline def manipulationinertiastarting: manipulationinertiastarting = "manipulationinertiastarting".asInstanceOf[manipulationinertiastarting]
   
   @js.native
-  sealed trait manipulationupdated extends js.Object
+  sealed trait manipulationstarted extends StObject
+  inline def manipulationstarted: manipulationstarted = "manipulationstarted".asInstanceOf[manipulationstarted]
   
   @js.native
-  sealed trait mapchanged extends js.Object
+  sealed trait manipulationupdated extends StObject
+  inline def manipulationupdated: manipulationupdated = "manipulationupdated".asInstanceOf[manipulationupdated]
   
   @js.native
-  sealed trait mediaended extends js.Object
+  sealed trait mapchanged extends StObject
+  inline def mapchanged: mapchanged = "mapchanged".asInstanceOf[mapchanged]
   
   @js.native
-  sealed trait mediafailed extends js.Object
+  sealed trait mediaended extends StObject
+  inline def mediaended: mediaended = "mediaended".asInstanceOf[mediaended]
   
   @js.native
-  sealed trait mediaopened extends js.Object
+  sealed trait mediafailed extends StObject
+  inline def mediafailed: mediafailed = "mediafailed".asInstanceOf[mediafailed]
   
   @js.native
-  sealed trait mediaplayerratechanged extends js.Object
+  sealed trait mediaopened extends StObject
+  inline def mediaopened: mediaopened = "mediaopened".asInstanceOf[mediaopened]
   
   @js.native
-  sealed trait messageavailablechanged extends js.Object
+  sealed trait mediaplayerratechanged extends StObject
+  inline def mediaplayerratechanged: mediaplayerratechanged = "mediaplayerratechanged".asInstanceOf[mediaplayerratechanged]
   
   @js.native
-  sealed trait messagechanged extends js.Object
+  sealed trait messageavailablechanged extends StObject
+  inline def messageavailablechanged: messageavailablechanged = "messageavailablechanged".asInstanceOf[messageavailablechanged]
   
   @js.native
-  sealed trait messagereceived extends js.Object
+  sealed trait messagechanged extends StObject
+  inline def messagechanged: messagechanged = "messagechanged".asInstanceOf[messagechanged]
   
   @js.native
-  sealed trait messagereceivedfrombackground extends js.Object
+  sealed trait messagereceived extends StObject
+  inline def messagereceived: messagereceived = "messagereceived".asInstanceOf[messagereceived]
   
   @js.native
-  sealed trait messagereceivedfromforeground extends js.Object
+  sealed trait messagereceivedfrombackground extends StObject
+  inline def messagereceivedfrombackground: messagereceivedfrombackground = "messagereceivedfrombackground".asInstanceOf[messagereceivedfrombackground]
   
   @js.native
-  sealed trait mousemoved extends js.Object
+  sealed trait messagereceivedfromforeground extends StObject
+  inline def messagereceivedfromforeground: messagereceivedfromforeground = "messagereceivedfromforeground".asInstanceOf[messagereceivedfromforeground]
   
   @js.native
-  sealed trait mutechangerequested extends js.Object
+  sealed trait mousemoved extends StObject
+  inline def mousemoved: mousemoved = "mousemoved".asInstanceOf[mousemoved]
   
   @js.native
-  sealed trait namechanged extends js.Object
+  sealed trait mutechangerequested extends StObject
+  inline def mutechangerequested: mutechangerequested = "mutechangerequested".asInstanceOf[mutechangerequested]
   
   @js.native
-  sealed trait navigated extends js.Object
+  sealed trait namechanged extends StObject
+  inline def namechanged: namechanged = "namechanged".asInstanceOf[namechanged]
   
   @js.native
-  sealed trait networkstatuschanged extends js.Object
+  sealed trait navigated extends StObject
+  inline def navigated: navigated = "navigated".asInstanceOf[navigated]
   
   @js.native
-  sealed trait nexttrackpressed extends js.Object
+  sealed trait networkstatuschanged extends StObject
+  inline def networkstatuschanged: networkstatuschanged = "networkstatuschanged".asInstanceOf[networkstatuschanged]
   
   @js.native
-  sealed trait notifyfocusleavecompleted extends js.Object
+  sealed trait nexttrackpressed extends StObject
+  inline def nexttrackpressed: nexttrackpressed = "nexttrackpressed".asInstanceOf[nexttrackpressed]
   
   @js.native
-  sealed trait openoperationcompleted extends js.Object
+  sealed trait notifyfocusleavecompleted extends StObject
+  inline def notifyfocusleavecompleted: notifyfocusleavecompleted = "notifyfocusleavecompleted".asInstanceOf[notifyfocusleavecompleted]
   
   @js.native
-  sealed trait operationcompleted extends js.Object
+  sealed trait openoperationcompleted extends StObject
+  inline def openoperationcompleted: openoperationcompleted = "openoperationcompleted".asInstanceOf[openoperationcompleted]
   
   @js.native
-  sealed trait optionalreferencephotocaptured extends js.Object
+  sealed trait operationcompleted extends StObject
+  inline def operationcompleted: operationcompleted = "operationcompleted".asInstanceOf[operationcompleted]
   
   @js.native
-  sealed trait optionchanged extends js.Object
+  sealed trait optionalreferencephotocaptured extends StObject
+  inline def optionalreferencephotocaptured: optionalreferencephotocaptured = "optionalreferencephotocaptured".asInstanceOf[optionalreferencephotocaptured]
   
   @js.native
-  sealed trait optionschanged extends js.Object
+  sealed trait optionchanged extends StObject
+  inline def optionchanged: optionchanged = "optionchanged".asInstanceOf[optionchanged]
   
   @js.native
-  sealed trait orientationchanged extends js.Object
+  sealed trait optionschanged extends StObject
+  inline def optionschanged: optionschanged = "optionschanged".asInstanceOf[optionschanged]
   
   @js.native
-  sealed trait pairingrequested extends js.Object
+  sealed trait orientationchanged extends StObject
+  inline def orientationchanged: orientationchanged = "orientationchanged".asInstanceOf[orientationchanged]
   
   @js.native
-  sealed trait paused extends js.Object
+  sealed trait pairingrequested extends StObject
+  inline def pairingrequested: pairingrequested = "pairingrequested".asInstanceOf[pairingrequested]
   
   @js.native
-  sealed trait pausepressed extends js.Object
+  sealed trait paused extends StObject
+  inline def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
-  sealed trait pauserequested extends js.Object
+  sealed trait pausepressed extends StObject
+  inline def pausepressed: pausepressed = "pausepressed".asInstanceOf[pausepressed]
   
   @js.native
-  sealed trait photocaptured extends js.Object
+  sealed trait pauserequested extends StObject
+  inline def pauserequested: pauserequested = "pauserequested".asInstanceOf[pauserequested]
   
   @js.native
-  sealed trait photoconfirmationcaptured extends js.Object
+  sealed trait photocaptured extends StObject
+  inline def photocaptured: photocaptured = "photocaptured".asInstanceOf[photocaptured]
   
   @js.native
-  sealed trait pinchanged extends js.Object
+  sealed trait photoconfirmationcaptured extends StObject
+  inline def photoconfirmationcaptured: photoconfirmationcaptured = "photoconfirmationcaptured".asInstanceOf[photoconfirmationcaptured]
   
   @js.native
-  sealed trait playbackbitratechanged extends js.Object
+  sealed trait pinchanged extends StObject
+  inline def pinchanged: pinchanged = "pinchanged".asInstanceOf[pinchanged]
   
   @js.native
-  sealed trait playbackmediamarkerreached extends js.Object
+  sealed trait playbackbitratechanged extends StObject
+  inline def playbackbitratechanged: playbackbitratechanged = "playbackbitratechanged".asInstanceOf[playbackbitratechanged]
   
   @js.native
-  sealed trait playbackpositionchangerequested extends js.Object
+  sealed trait playbackmediamarkerreached extends StObject
+  inline def playbackmediamarkerreached: playbackmediamarkerreached = "playbackmediamarkerreached".asInstanceOf[playbackmediamarkerreached]
   
   @js.native
-  sealed trait playbackratechangerequested extends js.Object
+  sealed trait playbackpositionchangerequested extends StObject
+  inline def playbackpositionchangerequested: playbackpositionchangerequested = "playbackpositionchangerequested".asInstanceOf[playbackpositionchangerequested]
   
   @js.native
-  sealed trait playpausetogglepressed extends js.Object
+  sealed trait playbackratechangerequested extends StObject
+  inline def playbackratechangerequested: playbackratechangerequested = "playbackratechangerequested".asInstanceOf[playbackratechangerequested]
   
   @js.native
-  sealed trait playpressed extends js.Object
+  sealed trait playpausetogglepressed extends StObject
+  inline def playpausetogglepressed: playpausetogglepressed = "playpausetogglepressed".asInstanceOf[playpausetogglepressed]
   
   @js.native
-  sealed trait playrequested extends js.Object
+  sealed trait playpressed extends StObject
+  inline def playpressed: playpressed = "playpressed".asInstanceOf[playpressed]
   
   @js.native
-  sealed trait policychanged extends js.Object
+  sealed trait playrequested extends StObject
+  inline def playrequested: playrequested = "playrequested".asInstanceOf[playrequested]
   
   @js.native
-  sealed trait positionchanged extends js.Object
+  sealed trait policychanged extends StObject
+  inline def policychanged: policychanged = "policychanged".asInstanceOf[policychanged]
   
   @js.native
-  sealed trait powersupplystatuschanged extends js.Object
+  sealed trait positionchanged extends StObject
+  inline def positionchanged: positionchanged = "positionchanged".asInstanceOf[positionchanged]
   
   @js.native
-  sealed trait presentationmodechanged extends js.Object
+  sealed trait powersupplystatuschanged extends StObject
+  inline def powersupplystatuschanged: powersupplystatuschanged = "powersupplystatuschanged".asInstanceOf[powersupplystatuschanged]
   
   @js.native
-  sealed trait previewing extends js.Object
+  sealed trait presentationmodechanged extends StObject
+  inline def presentationmodechanged: presentationmodechanged = "presentationmodechanged".asInstanceOf[presentationmodechanged]
   
   @js.native
-  sealed trait previoustrackpressed extends js.Object
+  sealed trait previewing extends StObject
+  inline def previewing: previewing = "previewing".asInstanceOf[previewing]
   
   @js.native
-  sealed trait printrequested extends js.Object
+  sealed trait previoustrackpressed extends StObject
+  inline def previoustrackpressed: previoustrackpressed = "previoustrackpressed".asInstanceOf[previoustrackpressed]
   
   @js.native
-  sealed trait printtaskrequested extends js.Object
+  sealed trait printrequested extends StObject
+  inline def printrequested: printrequested = "printrequested".asInstanceOf[printrequested]
   
   @js.native
-  sealed trait processed extends js.Object
+  sealed trait printtaskrequested extends StObject
+  inline def printtaskrequested: printtaskrequested = "printtaskrequested".asInstanceOf[printtaskrequested]
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait processed extends StObject
+  inline def processed: processed = "processed".asInstanceOf[processed]
   
   @js.native
-  sealed trait progressing extends js.Object
+  sealed trait progress extends StObject
+  inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait projectiondisplayavailablechanged extends js.Object
+  sealed trait progressing extends StObject
+  inline def progressing: progressing = "progressing".asInstanceOf[progressing]
   
   @js.native
-  sealed trait propertieschanged extends js.Object
+  sealed trait projectiondisplayavailablechanged extends StObject
+  inline def projectiondisplayavailablechanged: projectiondisplayavailablechanged = "projectiondisplayavailablechanged".asInstanceOf[projectiondisplayavailablechanged]
   
   @js.native
-  sealed trait propertiesupdated extends js.Object
+  sealed trait propertieschanged extends StObject
+  inline def propertieschanged: propertieschanged = "propertieschanged".asInstanceOf[propertieschanged]
   
   @js.native
-  sealed trait propertychanged extends js.Object
+  sealed trait propertiesupdated extends StObject
+  inline def propertiesupdated: propertiesupdated = "propertiesupdated".asInstanceOf[propertiesupdated]
   
   @js.native
-  sealed trait protectedaccessresumed extends js.Object
+  sealed trait propertychanged extends StObject
+  inline def propertychanged: propertychanged = "propertychanged".asInstanceOf[propertychanged]
   
   @js.native
-  sealed trait protectedaccesssuspending extends js.Object
+  sealed trait protectedaccessresumed extends StObject
+  inline def protectedaccessresumed: protectedaccessresumed = "protectedaccessresumed".asInstanceOf[protectedaccessresumed]
   
   @js.native
-  sealed trait protectedcontentrevoked extends js.Object
+  sealed trait protectedaccesssuspending extends StObject
+  inline def protectedaccesssuspending: protectedaccesssuspending = "protectedaccesssuspending".asInstanceOf[protectedaccesssuspending]
   
   @js.native
-  sealed trait proximitydetectioncompleted extends js.Object
+  sealed trait protectedcontentrevoked extends StObject
+  inline def protectedcontentrevoked: protectedcontentrevoked = "protectedcontentrevoked".asInstanceOf[protectedcontentrevoked]
   
   @js.native
-  sealed trait pushnotificationreceived extends js.Object
+  sealed trait proximitydetectioncompleted extends StObject
+  inline def proximitydetectioncompleted: proximitydetectioncompleted = "proximitydetectioncompleted".asInstanceOf[proximitydetectioncompleted]
   
   @js.native
-  sealed trait quantumprocessed extends js.Object
+  sealed trait pushnotificationreceived extends StObject
+  inline def pushnotificationreceived: pushnotificationreceived = "pushnotificationreceived".asInstanceOf[pushnotificationreceived]
   
   @js.native
-  sealed trait quantumstarted extends js.Object
+  sealed trait quantumprocessed extends StObject
+  inline def quantumprocessed: quantumprocessed = "quantumprocessed".asInstanceOf[quantumprocessed]
   
   @js.native
-  sealed trait querychanged extends js.Object
+  sealed trait quantumstarted extends StObject
+  inline def quantumstarted: quantumstarted = "quantumstarted".asInstanceOf[quantumstarted]
   
   @js.native
-  sealed trait querysubmitted extends js.Object
+  sealed trait querychanged extends StObject
+  inline def querychanged: querychanged = "querychanged".asInstanceOf[querychanged]
   
   @js.native
-  sealed trait readingchanged extends js.Object
+  sealed trait querysubmitted extends StObject
+  inline def querysubmitted: querysubmitted = "querysubmitted".asInstanceOf[querysubmitted]
   
   @js.native
-  sealed trait rebootneeded extends js.Object
+  sealed trait readingchanged extends StObject
+  inline def readingchanged: readingchanged = "readingchanged".asInstanceOf[readingchanged]
   
   @js.native
-  sealed trait received extends js.Object
+  sealed trait rebootneeded extends StObject
+  inline def rebootneeded: rebootneeded = "rebootneeded".asInstanceOf[rebootneeded]
   
   @js.native
-  sealed trait recentenergyusageincreased extends js.Object
+  sealed trait received extends StObject
+  inline def received: received = "received".asInstanceOf[received]
   
   @js.native
-  sealed trait recentenergyusagereturnedtolow extends js.Object
+  sealed trait recentenergyusageincreased extends StObject
+  inline def recentenergyusageincreased: recentenergyusageincreased = "recentenergyusageincreased".asInstanceOf[recentenergyusageincreased]
   
   @js.native
-  sealed trait recognitionqualitydegrading extends js.Object
+  sealed trait recentenergyusagereturnedtolow extends StObject
+  inline def recentenergyusagereturnedtolow: recentenergyusagereturnedtolow = "recentenergyusagereturnedtolow".asInstanceOf[recentenergyusagereturnedtolow]
   
   @js.native
-  sealed trait recordlimitationexceeded extends js.Object
+  sealed trait recognitionqualitydegrading extends StObject
+  inline def recognitionqualitydegrading: recognitionqualitydegrading = "recognitionqualitydegrading".asInstanceOf[recognitionqualitydegrading]
   
   @js.native
-  sealed trait recordpressed extends js.Object
+  sealed trait recordlimitationexceeded extends StObject
+  inline def recordlimitationexceeded: recordlimitationexceeded = "recordlimitationexceeded".asInstanceOf[recordlimitationexceeded]
   
   @js.native
-  sealed trait redialrequested extends js.Object
+  sealed trait recordpressed extends StObject
+  inline def recordpressed: recordpressed = "recordpressed".asInstanceOf[recordpressed]
   
   @js.native
-  sealed trait registrationcompleted extends js.Object
+  sealed trait redialrequested extends StObject
+  inline def redialrequested: redialrequested = "redialrequested".asInstanceOf[redialrequested]
   
   @js.native
-  sealed trait releasedevicerequested extends js.Object
+  sealed trait registrationcompleted extends StObject
+  inline def registrationcompleted: registrationcompleted = "registrationcompleted".asInstanceOf[registrationcompleted]
   
   @js.native
-  sealed trait remainingchargepercentchanged extends js.Object
+  sealed trait releasedevicerequested extends StObject
+  inline def releasedevicerequested: releasedevicerequested = "releasedevicerequested".asInstanceOf[releasedevicerequested]
   
   @js.native
-  sealed trait remainingdischargetimechanged extends js.Object
+  sealed trait remainingchargepercentchanged extends StObject
+  inline def remainingchargepercentchanged: remainingchargepercentchanged = "remainingchargepercentchanged".asInstanceOf[remainingchargepercentchanged]
   
   @js.native
-  sealed trait remoteparticipantcomposingchanged extends js.Object
+  sealed trait remainingdischargetimechanged extends StObject
+  inline def remainingdischargetimechanged: remainingdischargetimechanged = "remainingdischargetimechanged".asInstanceOf[remainingdischargetimechanged]
   
   @js.native
-  sealed trait remoteportadded extends js.Object
+  sealed trait remoteparticipantcomposingchanged extends StObject
+  inline def remoteparticipantcomposingchanged: remoteparticipantcomposingchanged = "remoteparticipantcomposingchanged".asInstanceOf[remoteparticipantcomposingchanged]
   
   @js.native
-  sealed trait removed extends js.Object
+  sealed trait remoteportadded extends StObject
+  inline def remoteportadded: remoteportadded = "remoteportadded".asInstanceOf[remoteportadded]
   
   @js.native
-  sealed trait reportupdated extends js.Object
+  sealed trait removed extends StObject
+  inline def removed: removed = "removed".asInstanceOf[removed]
   
   @js.native
-  sealed trait requestingfocusonkeyboardinput extends js.Object
+  sealed trait reportupdated extends StObject
+  inline def reportupdated: reportupdated = "reportupdated".asInstanceOf[reportupdated]
   
   @js.native
-  sealed trait requestreceived extends js.Object
+  sealed trait requestingfocusonkeyboardinput extends StObject
+  inline def requestingfocusonkeyboardinput: requestingfocusonkeyboardinput = "requestingfocusonkeyboardinput".asInstanceOf[requestingfocusonkeyboardinput]
   
   @js.native
-  sealed trait requestresponsecompleted extends js.Object
+  sealed trait requestreceived extends StObject
+  inline def requestreceived: requestreceived = "requestreceived".asInstanceOf[requestreceived]
   
   @js.native
-  sealed trait requestsent extends js.Object
+  sealed trait requestresponsecompleted extends StObject
+  inline def requestresponsecompleted: requestresponsecompleted = "requestresponsecompleted".asInstanceOf[requestresponsecompleted]
   
   @js.native
-  sealed trait reregistrationneeded extends js.Object
+  sealed trait requestsent extends StObject
+  inline def requestsent: requestsent = "requestsent".asInstanceOf[requestsent]
   
   @js.native
-  sealed trait resolved extends js.Object
+  sealed trait reregistrationneeded extends StObject
+  inline def reregistrationneeded: reregistrationneeded = "reregistrationneeded".asInstanceOf[reregistrationneeded]
   
   @js.native
-  sealed trait responsereceived extends js.Object
+  sealed trait resolved extends StObject
+  inline def resolved: resolved = "resolved".asInstanceOf[resolved]
   
   @js.native
-  sealed trait restrictionschanged extends js.Object
+  sealed trait responsereceived extends StObject
+  inline def responsereceived: responsereceived = "responsereceived".asInstanceOf[responsereceived]
   
   @js.native
-  sealed trait resultgenerated extends js.Object
+  sealed trait restrictionschanged extends StObject
+  inline def restrictionschanged: restrictionschanged = "restrictionschanged".asInstanceOf[restrictionschanged]
   
   @js.native
-  sealed trait resultsuggestionchosen extends js.Object
+  sealed trait resultgenerated extends StObject
+  inline def resultgenerated: resultgenerated = "resultgenerated".asInstanceOf[resultgenerated]
   
   @js.native
-  sealed trait resuming extends js.Object
+  sealed trait resultsuggestionchosen extends StObject
+  inline def resultsuggestionchosen: resultsuggestionchosen = "resultsuggestionchosen".asInstanceOf[resultsuggestionchosen]
   
   @js.native
-  sealed trait revoked extends js.Object
+  sealed trait resuming extends StObject
+  inline def resuming: resuming = "resuming".asInstanceOf[resuming]
   
   @js.native
-  sealed trait rewindpressed extends js.Object
+  sealed trait revoked extends StObject
+  inline def revoked: revoked = "revoked".asInstanceOf[revoked]
   
   @js.native
-  sealed trait righttapped extends js.Object
+  sealed trait rewindpressed extends StObject
+  inline def rewindpressed: rewindpressed = "rewindpressed".asInstanceOf[rewindpressed]
   
   @js.native
-  sealed trait samplerequested extends js.Object
+  sealed trait righttapped extends StObject
+  inline def righttapped: righttapped = "righttapped".asInstanceOf[righttapped]
   
   @js.native
-  sealed trait saverequested extends js.Object
+  sealed trait samplerequested extends StObject
+  inline def samplerequested: samplerequested = "samplerequested".asInstanceOf[samplerequested]
   
   @js.native
-  sealed trait sceneanalyzed extends js.Object
+  sealed trait saverequested extends StObject
+  inline def saverequested: saverequested = "saverequested".asInstanceOf[saverequested]
   
   @js.native
-  sealed trait sdprecordschanged extends js.Object
+  sealed trait sceneanalyzed extends StObject
+  inline def sceneanalyzed: sceneanalyzed = "sceneanalyzed".asInstanceOf[sceneanalyzed]
   
   @js.native
-  sealed trait seekcompleted extends js.Object
+  sealed trait sdprecordschanged extends StObject
+  inline def sdprecordschanged: sdprecordschanged = "sdprecordschanged".asInstanceOf[sdprecordschanged]
   
   @js.native
-  sealed trait selectedindexchanged extends js.Object
+  sealed trait seekcompleted extends StObject
+  inline def seekcompleted: seekcompleted = "seekcompleted".asInstanceOf[seekcompleted]
   
   @js.native
-  sealed trait selectionchanged extends js.Object
+  sealed trait selectedindexchanged extends StObject
+  inline def selectedindexchanged: selectedindexchanged = "selectedindexchanged".asInstanceOf[selectedindexchanged]
   
   @js.native
-  sealed trait selectionrequested extends js.Object
+  sealed trait selectionchanged extends StObject
+  inline def selectionchanged: selectionchanged = "selectionchanged".asInstanceOf[selectionchanged]
   
   @js.native
-  sealed trait selectionupdating extends js.Object
+  sealed trait selectionrequested extends StObject
+  inline def selectionrequested: selectionrequested = "selectionrequested".asInstanceOf[selectionrequested]
   
   @js.native
-  sealed trait serviceclosed extends js.Object
+  sealed trait selectionupdating extends StObject
+  inline def selectionupdating: selectionupdating = "selectionupdating".asInstanceOf[selectionupdating]
   
   @js.native
-  sealed trait servicekindsupportedchanged extends js.Object
+  sealed trait serviceclosed extends StObject
+  inline def serviceclosed: serviceclosed = "serviceclosed".asInstanceOf[serviceclosed]
   
   @js.native
-  sealed trait servicerequested extends js.Object
+  sealed trait servicekindsupportedchanged extends StObject
+  inline def servicekindsupportedchanged: servicekindsupportedchanged = "servicekindsupportedchanged".asInstanceOf[servicekindsupportedchanged]
   
   @js.native
-  sealed trait sessiondeferred extends js.Object
+  sealed trait servicerequested extends StObject
+  inline def servicerequested: servicerequested = "servicerequested".asInstanceOf[servicerequested]
   
   @js.native
-  sealed trait sessionrequested extends js.Object
+  sealed trait sessiondeferred extends StObject
+  inline def sessiondeferred: sessiondeferred = "sessiondeferred".asInstanceOf[sessiondeferred]
   
   @js.native
-  sealed trait sessionstatuschanged extends js.Object
+  sealed trait sessionrequested extends StObject
+  inline def sessionrequested: sessionrequested = "sessionrequested".asInstanceOf[sessionrequested]
   
   @js.native
-  sealed trait shaken extends js.Object
+  sealed trait sessionstatuschanged extends StObject
+  inline def sessionstatuschanged: sessionstatuschanged = "sessionstatuschanged".asInstanceOf[sessionstatuschanged]
   
   @js.native
-  sealed trait showing extends js.Object
+  sealed trait shaken extends StObject
+  inline def shaken: shaken = "shaken".asInstanceOf[shaken]
   
   @js.native
-  sealed trait shuffleenabledchangerequested extends js.Object
+  sealed trait showing extends StObject
+  inline def showing: showing = "showing".asInstanceOf[showing]
   
   @js.native
-  sealed trait smsdevicestatuschanged extends js.Object
+  sealed trait shuffleenabledchangerequested extends StObject
+  inline def shuffleenabledchangerequested: shuffleenabledchangerequested = "shuffleenabledchangerequested".asInstanceOf[shuffleenabledchangerequested]
   
   @js.native
-  sealed trait smsmessagereceived extends js.Object
+  sealed trait smsdevicestatuschanged extends StObject
+  inline def smsdevicestatuschanged: smsdevicestatuschanged = "smsdevicestatuschanged".asInstanceOf[smsdevicestatuschanged]
   
   @js.native
-  sealed trait snapshotchanged extends js.Object
+  sealed trait smsmessagereceived extends StObject
+  inline def smsmessagereceived: smsmessagereceived = "smsmessagereceived".asInstanceOf[smsmessagereceived]
   
   @js.native
-  sealed trait soundlevelchanged extends js.Object
+  sealed trait snapshotchanged extends StObject
+  inline def snapshotchanged: snapshotchanged = "snapshotchanged".asInstanceOf[snapshotchanged]
   
   @js.native
-  sealed trait sourceadded extends js.Object
+  sealed trait soundlevelchanged extends StObject
+  inline def soundlevelchanged: soundlevelchanged = "soundlevelchanged".asInstanceOf[soundlevelchanged]
   
   @js.native
-  sealed trait sourcechanged extends js.Object
+  sealed trait sourceadded extends StObject
+  inline def sourceadded: sourceadded = "sourceadded".asInstanceOf[sourceadded]
   
   @js.native
-  sealed trait sourcechangerequested extends js.Object
+  sealed trait sourcechanged extends StObject
+  inline def sourcechanged: sourcechanged = "sourcechanged".asInstanceOf[sourcechanged]
   
   @js.native
-  sealed trait sourceremoved extends js.Object
+  sealed trait sourcechangerequested extends StObject
+  inline def sourcechangerequested: sourcechangerequested = "sourcechangerequested".asInstanceOf[sourcechangerequested]
   
   @js.native
-  sealed trait sourcerequested extends js.Object
+  sealed trait sourceremoved extends StObject
+  inline def sourceremoved: sourceremoved = "sourceremoved".asInstanceOf[sourceremoved]
   
   @js.native
-  sealed trait sourceselected extends js.Object
+  sealed trait sourcerequested extends StObject
+  inline def sourcerequested: sourcerequested = "sourcerequested".asInstanceOf[sourcerequested]
   
   @js.native
-  sealed trait starting extends js.Object
+  sealed trait sourceselected extends StObject
+  inline def sourceselected: sourceselected = "sourceselected".asInstanceOf[sourceselected]
   
   @js.native
-  sealed trait statechanged extends js.Object
+  sealed trait starting extends StObject
+  inline def starting: starting = "starting".asInstanceOf[starting]
   
   @js.native
-  sealed trait statuschanged extends js.Object
+  sealed trait statechanged extends StObject
+  inline def statechanged: statechanged = "statechanged".asInstanceOf[statechanged]
   
   @js.native
-  sealed trait statusupdated extends js.Object
+  sealed trait statuschanged extends StObject
+  inline def statuschanged: statuschanged = "statuschanged".asInstanceOf[statuschanged]
   
   @js.native
-  sealed trait stereoenabledchanged extends js.Object
+  sealed trait statusupdated extends StObject
+  inline def statusupdated: statusupdated = "statusupdated".asInstanceOf[statusupdated]
   
   @js.native
-  sealed trait stopped extends js.Object
+  sealed trait stereoenabledchanged extends StObject
+  inline def stereoenabledchanged: stereoenabledchanged = "stereoenabledchanged".asInstanceOf[stereoenabledchanged]
   
   @js.native
-  sealed trait stoppressed extends js.Object
+  sealed trait stopped extends StObject
+  inline def stopped: stopped = "stopped".asInstanceOf[stopped]
   
   @js.native
-  sealed trait stoprequested extends js.Object
+  sealed trait stoppressed extends StObject
+  inline def stoppressed: stoppressed = "stoppressed".asInstanceOf[stoppressed]
   
   @js.native
-  sealed trait storechanged extends js.Object
+  sealed trait stoprequested extends StObject
+  inline def stoprequested: stoprequested = "stoprequested".asInstanceOf[stoprequested]
   
   @js.native
-  sealed trait submitting extends js.Object
+  sealed trait storechanged extends StObject
+  inline def storechanged: storechanged = "storechanged".asInstanceOf[storechanged]
   
   @js.native
-  sealed trait suggestionsrequested extends js.Object
+  sealed trait submitting extends StObject
+  inline def submitting: submitting = "submitting".asInstanceOf[submitting]
   
   @js.native
-  sealed trait suspending extends js.Object
+  sealed trait suggestionsrequested extends StObject
+  inline def suggestionsrequested: suggestionsrequested = "suggestionsrequested".asInstanceOf[suggestionsrequested]
   
   @js.native
-  sealed trait switchstreamsrequested extends js.Object
+  sealed trait suspending extends StObject
+  inline def suspending: suspending = "suspending".asInstanceOf[suspending]
   
   @js.native
-  sealed trait syncstatuschanged extends js.Object
+  sealed trait switchstreamsrequested extends StObject
+  inline def switchstreamsrequested: switchstreamsrequested = "switchstreamsrequested".asInstanceOf[switchstreamsrequested]
   
   @js.native
-  sealed trait tapped extends js.Object
+  sealed trait syncstatuschanged extends StObject
+  inline def syncstatuschanged: syncstatuschanged = "syncstatuschanged".asInstanceOf[syncstatuschanged]
   
   @js.native
-  sealed trait targetapplicationchosen extends js.Object
+  sealed trait tapped extends StObject
+  inline def tapped: tapped = "tapped".asInstanceOf[tapped]
   
   @js.native
-  sealed trait targetfilerequested extends js.Object
+  sealed trait targetapplicationchosen extends StObject
+  inline def targetapplicationchosen: targetapplicationchosen = "targetapplicationchosen".asInstanceOf[targetapplicationchosen]
   
   @js.native
-  sealed trait taskrequested extends js.Object
+  sealed trait targetfilerequested extends StObject
+  inline def targetfilerequested: targetfilerequested = "targetfilerequested".asInstanceOf[targetfilerequested]
   
   @js.native
-  sealed trait textrequested extends js.Object
+  sealed trait taskrequested extends StObject
+  inline def taskrequested: taskrequested = "taskrequested".asInstanceOf[taskrequested]
   
   @js.native
-  sealed trait textscalefactorchanged extends js.Object
+  sealed trait textrequested extends StObject
+  inline def textrequested: textrequested = "textrequested".asInstanceOf[textrequested]
   
   @js.native
-  sealed trait textupdating extends js.Object
+  sealed trait textscalefactorchanged extends StObject
+  inline def textscalefactorchanged: textscalefactorchanged = "textscalefactorchanged".asInstanceOf[textscalefactorchanged]
   
   @js.native
-  sealed trait thermalstatuschanged extends js.Object
+  sealed trait textupdating extends StObject
+  inline def textupdating: textupdating = "textupdating".asInstanceOf[textupdating]
   
   @js.native
-  sealed trait thumbnailupdated extends js.Object
+  sealed trait thermalstatuschanged extends StObject
+  inline def thermalstatuschanged: thermalstatuschanged = "thermalstatuschanged".asInstanceOf[thermalstatuschanged]
   
   @js.native
-  sealed trait timedmetadatatrackschanged extends js.Object
+  sealed trait thumbnailupdated extends StObject
+  inline def thumbnailupdated: thumbnailupdated = "thumbnailupdated".asInstanceOf[thumbnailupdated]
   
   @js.native
-  sealed trait timeupdaterequested extends js.Object
+  sealed trait timedmetadatatrackschanged extends StObject
+  inline def timedmetadatatrackschanged: timedmetadatatrackschanged = "timedmetadatatrackschanged".asInstanceOf[timedmetadatatrackschanged]
   
   @js.native
-  sealed trait tracingstatuschanged extends js.Object
+  sealed trait timeupdaterequested extends StObject
+  inline def timeupdaterequested: timeupdaterequested = "timeupdaterequested".asInstanceOf[timeupdaterequested]
   
   @js.native
-  sealed trait trackfailed extends js.Object
+  sealed trait tracingstatuschanged extends StObject
+  inline def tracingstatuschanged: tracingstatuschanged = "tracingstatuschanged".asInstanceOf[tracingstatuschanged]
   
   @js.native
-  sealed trait transferred extends js.Object
+  sealed trait trackfailed extends StObject
+  inline def trackfailed: trackfailed = "trackfailed".asInstanceOf[trackfailed]
   
   @js.native
-  sealed trait triggeredconnectionstatechanged extends js.Object
+  sealed trait transferred extends StObject
+  inline def transferred: transferred = "transferred".asInstanceOf[transferred]
   
   @js.native
-  sealed trait triggerpressed extends js.Object
+  sealed trait triggeredconnectionstatechanged extends StObject
+  inline def triggeredconnectionstatechanged: triggeredconnectionstatechanged = "triggeredconnectionstatechanged".asInstanceOf[triggeredconnectionstatechanged]
   
   @js.native
-  sealed trait triggerreleased extends js.Object
+  sealed trait triggerpressed extends StObject
+  inline def triggerpressed: triggerpressed = "triggerpressed".asInstanceOf[triggerpressed]
   
   @js.native
-  sealed trait uirequested extends js.Object
+  sealed trait triggerreleased extends StObject
+  inline def triggerreleased: triggerreleased = "triggerreleased".asInstanceOf[triggerreleased]
   
   @js.native
-  sealed trait unlocking extends js.Object
+  sealed trait uirequested extends StObject
+  inline def uirequested: uirequested = "uirequested".asInstanceOf[uirequested]
   
   @js.native
-  sealed trait unrecoverableerroroccurred extends js.Object
+  sealed trait unlocking extends StObject
+  inline def unlocking: unlocking = "unlocking".asInstanceOf[unlocking]
   
   @js.native
-  sealed trait updated extends js.Object
+  sealed trait unrecoverableerroroccurred extends StObject
+  inline def unrecoverableerroroccurred: unrecoverableerroroccurred = "unrecoverableerroroccurred".asInstanceOf[unrecoverableerroroccurred]
   
   @js.native
-  sealed trait userchanged extends js.Object
+  sealed trait updated extends StObject
+  inline def updated: updated = "updated".asInstanceOf[updated]
   
   @js.native
-  sealed trait valuechanged extends js.Object
+  sealed trait userchanged extends StObject
+  inline def userchanged: userchanged = "userchanged".asInstanceOf[userchanged]
   
   @js.native
-  sealed trait vendorspecificdatareceived extends js.Object
+  sealed trait valuechanged extends StObject
+  inline def valuechanged: valuechanged = "valuechanged".asInstanceOf[valuechanged]
   
   @js.native
-  sealed trait videoprofilechanged extends js.Object
+  sealed trait vendorspecificdatareceived extends StObject
+  inline def vendorspecificdatareceived: vendorspecificdatareceived = "vendorspecificdatareceived".asInstanceOf[vendorspecificdatareceived]
   
   @js.native
-  sealed trait videotrackschanged extends js.Object
+  sealed trait videoprofilechanged extends StObject
+  inline def videoprofilechanged: videoprofilechanged = "videoprofilechanged".asInstanceOf[videoprofilechanged]
   
   @js.native
-  sealed trait visibilitychanged extends js.Object
+  sealed trait videotrackschanged extends StObject
+  inline def videotrackschanged: videotrackschanged = "videotrackschanged".asInstanceOf[videotrackschanged]
   
   @js.native
-  sealed trait visibleboundschanged extends js.Object
+  sealed trait visibilitychanged extends StObject
+  inline def visibilitychanged: visibilitychanged = "visibilitychanged".asInstanceOf[visibilitychanged]
   
   @js.native
-  sealed trait visualelementsrequested extends js.Object
+  sealed trait visibleboundschanged extends StObject
+  inline def visibleboundschanged: visibleboundschanged = "visibleboundschanged".asInstanceOf[visibleboundschanged]
   
   @js.native
-  sealed trait voicecommandcompleted extends js.Object
+  sealed trait visualelementsrequested extends StObject
+  inline def visualelementsrequested: visualelementsrequested = "visualelementsrequested".asInstanceOf[visualelementsrequested]
   
   @js.native
-  sealed trait volumechanged extends js.Object
+  sealed trait voicecommandcompleted extends StObject
+  inline def voicecommandcompleted: voicecommandcompleted = "voicecommandcompleted".asInstanceOf[voicecommandcompleted]
   
   @js.native
-  sealed trait volumechangerequested extends js.Object
+  sealed trait volumechanged extends StObject
+  inline def volumechanged: volumechanged = "volumechanged".asInstanceOf[volumechanged]
   
-  @scala.inline
-  def aamvacarddatareceived: aamvacarddatareceived = "aamvacarddatareceived".asInstanceOf[aamvacarddatareceived]
-  @scala.inline
-  def accesschanged: accesschanged = "accesschanged".asInstanceOf[accesschanged]
-  @scala.inline
-  def accountadded: accountadded = "accountadded".asInstanceOf[accountadded]
-  @scala.inline
-  def accountcommandsrequested: accountcommandsrequested = "accountcommandsrequested".asInstanceOf[accountcommandsrequested]
-  @scala.inline
-  def accountpicturechanged: accountpicturechanged = "accountpicturechanged".asInstanceOf[accountpicturechanged]
-  @scala.inline
-  def accountremoved: accountremoved = "accountremoved".asInstanceOf[accountremoved]
-  @scala.inline
-  def accountupdated: accountupdated = "accountupdated".asInstanceOf[accountupdated]
-  @scala.inline
-  def activated: activated = "activated".asInstanceOf[activated]
-  @scala.inline
-  def activechanged: activechanged = "activechanged".asInstanceOf[activechanged]
-  @scala.inline
-  def added: added = "added".asInstanceOf[added]
-  @scala.inline
-  def advertisementstatuschanged: advertisementstatuschanged = "advertisementstatuschanged".asInstanceOf[advertisementstatuschanged]
-  @scala.inline
-  def alarmiconchanged: alarmiconchanged = "alarmiconchanged".asInstanceOf[alarmiconchanged]
-  @scala.inline
-  def alarmtimeoutexpired: alarmtimeoutexpired = "alarmtimeoutexpired".asInstanceOf[alarmtimeoutexpired]
-  @scala.inline
-  def allphotoscaptured: allphotoscaptured = "allphotoscaptured".asInstanceOf[allphotoscaptured]
-  @scala.inline
-  def answerrequested: answerrequested = "answerrequested".asInstanceOf[answerrequested]
-  @scala.inline
-  def appmemoryusagedecreased: appmemoryusagedecreased = "appmemoryusagedecreased".asInstanceOf[appmemoryusagedecreased]
-  @scala.inline
-  def appmemoryusageincreased: appmemoryusageincreased = "appmemoryusageincreased".asInstanceOf[appmemoryusageincreased]
-  @scala.inline
-  def appmemoryusagelimitchanging: appmemoryusagelimitchanging = "appmemoryusagelimitchanging".asInstanceOf[appmemoryusagelimitchanging]
-  @scala.inline
-  def audiocaptureeffectschanged: audiocaptureeffectschanged = "audiocaptureeffectschanged".asInstanceOf[audiocaptureeffectschanged]
-  @scala.inline
-  def audioframecompleted: audioframecompleted = "audioframecompleted".asInstanceOf[audioframecompleted]
-  @scala.inline
-  def audiorendereffectschanged: audiorendereffectschanged = "audiorendereffectschanged".asInstanceOf[audiorendereffectschanged]
-  @scala.inline
-  def audiotrackschanged: audiotrackschanged = "audiotrackschanged".asInstanceOf[audiotrackschanged]
-  @scala.inline
-  def audiotransferrequested: audiotransferrequested = "audiotransferrequested".asInstanceOf[audiotransferrequested]
-  @scala.inline
-  def authenticationcomplete: authenticationcomplete = "authenticationcomplete".asInstanceOf[authenticationcomplete]
-  @scala.inline
-  def authenticationstatuschanged: authenticationstatuschanged = "authenticationstatuschanged".asInstanceOf[authenticationstatuschanged]
-  @scala.inline
-  def authenticationstatuschanging: authenticationstatuschanging = "authenticationstatuschanging".asInstanceOf[authenticationstatuschanging]
-  @scala.inline
-  def autoacceptsessionconnected: autoacceptsessionconnected = "autoacceptsessionconnected".asInstanceOf[autoacceptsessionconnected]
-  @scala.inline
-  def autorepeatmodechangerequested: autorepeatmodechangerequested = "autorepeatmodechangerequested".asInstanceOf[autorepeatmodechangerequested]
-  @scala.inline
-  def availabilitychanged: availabilitychanged = "availabilitychanged".asInstanceOf[availabilitychanged]
-  @scala.inline
-  def availablechanged: availablechanged = "availablechanged".asInstanceOf[availablechanged]
-  @scala.inline
-  def availablenetworkschanged: availablenetworkschanged = "availablenetworkschanged".asInstanceOf[availablenetworkschanged]
-  @scala.inline
-  def backrequested: backrequested = "backrequested".asInstanceOf[backrequested]
-  @scala.inline
-  def badgeschanged: badgeschanged = "badgeschanged".asInstanceOf[badgeschanged]
-  @scala.inline
-  def bankcarddatareceived: bankcarddatareceived = "bankcarddatareceived".asInstanceOf[bankcarddatareceived]
-  @scala.inline
-  def batterystatuschanged: batterystatuschanged = "batterystatuschanged".asInstanceOf[batterystatuschanged]
-  @scala.inline
-  def beginvalidation: beginvalidation = "beginvalidation".asInstanceOf[beginvalidation]
-  @scala.inline
-  def binding: binding = "binding".asInstanceOf[binding]
-  @scala.inline
-  def bufferingended: bufferingended = "bufferingended".asInstanceOf[bufferingended]
-  @scala.inline
-  def bufferingstarted: bufferingstarted = "bufferingstarted".asInstanceOf[bufferingstarted]
-  @scala.inline
-  def buttonpressed: buttonpressed = "buttonpressed".asInstanceOf[buttonpressed]
-  @scala.inline
-  def cameraintrinsicschanged: cameraintrinsicschanged = "cameraintrinsicschanged".asInstanceOf[cameraintrinsicschanged]
-  @scala.inline
-  def camerastreamstatechanged: camerastreamstatechanged = "camerastreamstatechanged".asInstanceOf[camerastreamstatechanged]
-  @scala.inline
-  def canceled: canceled = "canceled".asInstanceOf[canceled]
-  @scala.inline
-  def cardadded: cardadded = "cardadded".asInstanceOf[cardadded]
-  @scala.inline
-  def cardremoved: cardremoved = "cardremoved".asInstanceOf[cardremoved]
-  @scala.inline
-  def castingdevicepickerdismissed: castingdevicepickerdismissed = "castingdevicepickerdismissed".asInstanceOf[castingdevicepickerdismissed]
-  @scala.inline
-  def castingdeviceselected: castingdeviceselected = "castingdeviceselected".asInstanceOf[castingdeviceselected]
-  @scala.inline
-  def channeldownpressed: channeldownpressed = "channeldownpressed".asInstanceOf[channeldownpressed]
-  @scala.inline
-  def channeluppressed: channeluppressed = "channeluppressed".asInstanceOf[channeluppressed]
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
-  @scala.inline
-  def closedcaptiondatareceived: closedcaptiondatareceived = "closedcaptiondatareceived".asInstanceOf[closedcaptiondatareceived]
-  @scala.inline
-  def closing: closing = "closing".asInstanceOf[closing]
-  @scala.inline
-  def colorprofilechanged: colorprofilechanged = "colorprofilechanged".asInstanceOf[colorprofilechanged]
-  @scala.inline
-  def colorvalueschanged: colorvalueschanged = "colorvalueschanged".asInstanceOf[colorvalueschanged]
-  @scala.inline
-  def commandsrequested: commandsrequested = "commandsrequested".asInstanceOf[commandsrequested]
-  @scala.inline
-  def completed: completed = "completed".asInstanceOf[completed]
-  @scala.inline
-  def componentloadfailed: componentloadfailed = "componentloadfailed".asInstanceOf[componentloadfailed]
-  @scala.inline
-  def compositioncompleted: compositioncompleted = "compositioncompleted".asInstanceOf[compositioncompleted]
-  @scala.inline
-  def compositionstarted: compositionstarted = "compositionstarted".asInstanceOf[compositionstarted]
-  @scala.inline
-  def connectionreceived: connectionreceived = "connectionreceived".asInstanceOf[connectionreceived]
-  @scala.inline
-  def connectionrequested: connectionrequested = "connectionrequested".asInstanceOf[connectionrequested]
-  @scala.inline
-  def connectionstatuschanged: connectionstatuschanged = "connectionstatuschanged".asInstanceOf[connectionstatuschanged]
-  @scala.inline
-  def consolidated: consolidated = "consolidated".asInstanceOf[consolidated]
-  @scala.inline
-  def contactchanged: contactchanged = "contactchanged".asInstanceOf[contactchanged]
-  @scala.inline
-  def contactremoved: contactremoved = "contactremoved".asInstanceOf[contactremoved]
-  @scala.inline
-  def contentchanged: contentchanged = "contentchanged".asInstanceOf[contentchanged]
-  @scala.inline
-  def contentschanged: contentschanged = "contentschanged".asInstanceOf[contentschanged]
-  @scala.inline
-  def controllost: controllost = "controllost".asInstanceOf[controllost]
-  @scala.inline
-  def credentialsrequested: credentialsrequested = "credentialsrequested".asInstanceOf[credentialsrequested]
-  @scala.inline
-  def credentialsverificationrequested: credentialsverificationrequested = "credentialsverificationrequested".asInstanceOf[credentialsverificationrequested]
-  @scala.inline
-  def crosssliding: crosssliding = "crosssliding".asInstanceOf[crosssliding]
-  @scala.inline
-  def cueentered: cueentered = "cueentered".asInstanceOf[cueentered]
-  @scala.inline
-  def cueexited: cueexited = "cueexited".asInstanceOf[cueexited]
-  @scala.inline
-  def currentitemchanged: currentitemchanged = "currentitemchanged".asInstanceOf[currentitemchanged]
-  @scala.inline
-  def currentstatechanged: currentstatechanged = "currentstatechanged".asInstanceOf[currentstatechanged]
-  @scala.inline
-  def currenttimechangerequested: currenttimechangerequested = "currenttimechangerequested".asInstanceOf[currenttimechangerequested]
-  @scala.inline
-  def datachanged: datachanged = "datachanged".asInstanceOf[datachanged]
-  @scala.inline
-  def datareceived: datareceived = "datareceived".asInstanceOf[datareceived]
-  @scala.inline
-  def datarequested: datarequested = "datarequested".asInstanceOf[datarequested]
-  @scala.inline
-  def defaultaudiocapturedevicechanged: defaultaudiocapturedevicechanged = "defaultaudiocapturedevicechanged".asInstanceOf[defaultaudiocapturedevicechanged]
-  @scala.inline
-  def defaultaudiorenderdevicechanged: defaultaudiorenderdevicechanged = "defaultaudiorenderdevicechanged".asInstanceOf[defaultaudiorenderdevicechanged]
-  @scala.inline
-  def definitionchanged: definitionchanged = "definitionchanged".asInstanceOf[definitionchanged]
-  @scala.inline
-  def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
-  @scala.inline
-  def detailtextchanged: detailtextchanged = "detailtextchanged".asInstanceOf[detailtextchanged]
-  @scala.inline
-  def devicearrived: devicearrived = "devicearrived".asInstanceOf[devicearrived]
-  @scala.inline
-  def devicedeparted: devicedeparted = "devicedeparted".asInstanceOf[devicedeparted]
-  @scala.inline
-  def devicepickerdismissed: devicepickerdismissed = "devicepickerdismissed".asInstanceOf[devicepickerdismissed]
-  @scala.inline
-  def deviceselected: deviceselected = "deviceselected".asInstanceOf[deviceselected]
-  @scala.inline
-  def devicestatuschanged: devicestatuschanged = "devicestatuschanged".asInstanceOf[devicestatuschanged]
-  @scala.inline
-  def dialdevicepickerdismissed: dialdevicepickerdismissed = "dialdevicepickerdismissed".asInstanceOf[dialdevicepickerdismissed]
-  @scala.inline
-  def dialdeviceselected: dialdeviceselected = "dialdeviceselected".asInstanceOf[dialdeviceselected]
-  @scala.inline
-  def dialrequested: dialrequested = "dialrequested".asInstanceOf[dialrequested]
-  @scala.inline
-  def disconnectbuttonclicked: disconnectbuttonclicked = "disconnectbuttonclicked".asInstanceOf[disconnectbuttonclicked]
-  @scala.inline
-  def dismissed: dismissed = "dismissed".asInstanceOf[dismissed]
-  @scala.inline
-  def displaycontentsinvalidated: displaycontentsinvalidated = "displaycontentsinvalidated".asInstanceOf[displaycontentsinvalidated]
-  @scala.inline
-  def downloadbitratechanged: downloadbitratechanged = "downloadbitratechanged".asInstanceOf[downloadbitratechanged]
-  @scala.inline
-  def downloadcompleted: downloadcompleted = "downloadcompleted".asInstanceOf[downloadcompleted]
-  @scala.inline
-  def downloadfailed: downloadfailed = "downloadfailed".asInstanceOf[downloadfailed]
-  @scala.inline
-  def downloadrequested: downloadrequested = "downloadrequested".asInstanceOf[downloadrequested]
-  @scala.inline
-  def dpichanged: dpichanged = "dpichanged".asInstanceOf[dpichanged]
-  @scala.inline
-  def dragging: dragging = "dragging".asInstanceOf[dragging]
-  @scala.inline
-  def drawerclosed: drawerclosed = "drawerclosed".asInstanceOf[drawerclosed]
-  @scala.inline
-  def draweropened: draweropened = "draweropened".asInstanceOf[draweropened]
-  @scala.inline
-  def enabledchanged: enabledchanged = "enabledchanged".asInstanceOf[enabledchanged]
-  @scala.inline
-  def endrequested: endrequested = "endrequested".asInstanceOf[endrequested]
-  @scala.inline
-  def energysaverstatuschanged: energysaverstatuschanged = "energysaverstatuschanged".asInstanceOf[energysaverstatuschanged]
-  @scala.inline
-  def enumerationcompleted: enumerationcompleted = "enumerationcompleted".asInstanceOf[enumerationcompleted]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def erroroccurred: erroroccurred = "erroroccurred".asInstanceOf[erroroccurred]
-  @scala.inline
-  def errorreceived: errorreceived = "errorreceived".asInstanceOf[errorreceived]
-  @scala.inline
-  def facedetected: facedetected = "facedetected".asInstanceOf[facedetected]
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
-  @scala.inline
-  def fastforwardpressed: fastforwardpressed = "fastforwardpressed".asInstanceOf[fastforwardpressed]
-  @scala.inline
-  def filecompleted: filecompleted = "filecompleted".asInstanceOf[filecompleted]
-  @scala.inline
-  def filenamechanged: filenamechanged = "filenamechanged".asInstanceOf[filenamechanged]
-  @scala.inline
-  def fileremoved: fileremoved = "fileremoved".asInstanceOf[fileremoved]
-  @scala.inline
-  def fileupdaterequested: fileupdaterequested = "fileupdaterequested".asInstanceOf[fileupdaterequested]
-  @scala.inline
-  def focuschanged: focuschanged = "focuschanged".asInstanceOf[focuschanged]
-  @scala.inline
-  def focusremoved: focusremoved = "focusremoved".asInstanceOf[focusremoved]
-  @scala.inline
-  def formatupdating: formatupdating = "formatupdating".asInstanceOf[formatupdating]
-  @scala.inline
-  def framearrived: framearrived = "framearrived".asInstanceOf[framearrived]
-  @scala.inline
-  def gamepadadded: gamepadadded = "gamepadadded".asInstanceOf[gamepadadded]
-  @scala.inline
-  def gamepadremoved: gamepadremoved = "gamepadremoved".asInstanceOf[gamepadremoved]
-  @scala.inline
-  def gattserviceschanged: gattserviceschanged = "gattserviceschanged".asInstanceOf[gattserviceschanged]
-  @scala.inline
-  def geofencestatechanged: geofencestatechanged = "geofencestatechanged".asInstanceOf[geofencestatechanged]
-  @scala.inline
-  def hanguprequested: hanguprequested = "hanguprequested".asInstanceOf[hanguprequested]
-  @scala.inline
-  def headsetconnected: headsetconnected = "headsetconnected".asInstanceOf[headsetconnected]
-  @scala.inline
-  def headsetdisconnected: headsetdisconnected = "headsetdisconnected".asInstanceOf[headsetdisconnected]
-  @scala.inline
-  def hiding: hiding = "hiding".asInstanceOf[hiding]
-  @scala.inline
-  def highcontrastchanged: highcontrastchanged = "highcontrastchanged".asInstanceOf[highcontrastchanged]
-  @scala.inline
-  def holding: holding = "holding".asInstanceOf[holding]
-  @scala.inline
-  def hypothesisgenerated: hypothesisgenerated = "hypothesisgenerated".asInstanceOf[hypothesisgenerated]
-  @scala.inline
-  def imagepreviewreceived: imagepreviewreceived = "imagepreviewreceived".asInstanceOf[imagepreviewreceived]
-  @scala.inline
-  def inboundendpointpaircreated: inboundendpointpaircreated = "inboundendpointpaircreated".asInstanceOf[inboundendpointpaircreated]
-  @scala.inline
-  def inputlanguagechanged: inputlanguagechanged = "inputlanguagechanged".asInstanceOf[inputlanguagechanged]
-  @scala.inline
-  def inputreportreceived: inputreportreceived = "inputreportreceived".asInstanceOf[inputreportreceived]
-  @scala.inline
-  def itemcompleted: itemcompleted = "itemcompleted".asInstanceOf[itemcompleted]
-  @scala.inline
-  def itemfailed: itemfailed = "itemfailed".asInstanceOf[itemfailed]
-  @scala.inline
-  def itemimported: itemimported = "itemimported".asInstanceOf[itemimported]
-  @scala.inline
-  def itemopened: itemopened = "itemopened".asInstanceOf[itemopened]
-  @scala.inline
-  def itemremoved: itemremoved = "itemremoved".asInstanceOf[itemremoved]
-  @scala.inline
-  def itemschanged: itemschanged = "itemschanged".asInstanceOf[itemschanged]
-  @scala.inline
-  def itemstatuschanged: itemstatuschanged = "itemstatuschanged".asInstanceOf[itemstatuschanged]
-  @scala.inline
-  def keydown: keydown = "keydown".asInstanceOf[keydown]
-  @scala.inline
-  def keypadpressed: keypadpressed = "keypadpressed".asInstanceOf[keypadpressed]
-  @scala.inline
-  def keyup: keyup = "keyup".asInstanceOf[keyup]
-  @scala.inline
-  def layoutrequested: layoutrequested = "layoutrequested".asInstanceOf[layoutrequested]
-  @scala.inline
-  def licensechanged: licensechanged = "licensechanged".asInstanceOf[licensechanged]
-  @scala.inline
-  def licensefetchcompleted: licensefetchcompleted = "licensefetchcompleted".asInstanceOf[licensefetchcompleted]
-  @scala.inline
-  def lockscreenimagechanged: lockscreenimagechanged = "lockscreenimagechanged".asInstanceOf[lockscreenimagechanged]
-  @scala.inline
-  def logfilegenerated: logfilegenerated = "logfilegenerated".asInstanceOf[logfilegenerated]
-  @scala.inline
-  def loggingenabled: loggingenabled = "loggingenabled".asInstanceOf[loggingenabled]
-  @scala.inline
-  def logicaldpichanged: logicaldpichanged = "logicaldpichanged".asInstanceOf[logicaldpichanged]
-  @scala.inline
-  def mailboxchanged: mailboxchanged = "mailboxchanged".asInstanceOf[mailboxchanged]
-  @scala.inline
-  def manipulationcompleted: manipulationcompleted = "manipulationcompleted".asInstanceOf[manipulationcompleted]
-  @scala.inline
-  def manipulationinertiastarting: manipulationinertiastarting = "manipulationinertiastarting".asInstanceOf[manipulationinertiastarting]
-  @scala.inline
-  def manipulationstarted: manipulationstarted = "manipulationstarted".asInstanceOf[manipulationstarted]
-  @scala.inline
-  def manipulationupdated: manipulationupdated = "manipulationupdated".asInstanceOf[manipulationupdated]
-  @scala.inline
-  def mapchanged: mapchanged = "mapchanged".asInstanceOf[mapchanged]
-  @scala.inline
-  def mediaended: mediaended = "mediaended".asInstanceOf[mediaended]
-  @scala.inline
-  def mediafailed: mediafailed = "mediafailed".asInstanceOf[mediafailed]
-  @scala.inline
-  def mediaopened: mediaopened = "mediaopened".asInstanceOf[mediaopened]
-  @scala.inline
-  def mediaplayerratechanged: mediaplayerratechanged = "mediaplayerratechanged".asInstanceOf[mediaplayerratechanged]
-  @scala.inline
-  def messageavailablechanged: messageavailablechanged = "messageavailablechanged".asInstanceOf[messageavailablechanged]
-  @scala.inline
-  def messagechanged: messagechanged = "messagechanged".asInstanceOf[messagechanged]
-  @scala.inline
-  def messagereceived: messagereceived = "messagereceived".asInstanceOf[messagereceived]
-  @scala.inline
-  def messagereceivedfrombackground: messagereceivedfrombackground = "messagereceivedfrombackground".asInstanceOf[messagereceivedfrombackground]
-  @scala.inline
-  def messagereceivedfromforeground: messagereceivedfromforeground = "messagereceivedfromforeground".asInstanceOf[messagereceivedfromforeground]
-  @scala.inline
-  def mousemoved: mousemoved = "mousemoved".asInstanceOf[mousemoved]
-  @scala.inline
-  def mutechangerequested: mutechangerequested = "mutechangerequested".asInstanceOf[mutechangerequested]
-  @scala.inline
-  def namechanged: namechanged = "namechanged".asInstanceOf[namechanged]
-  @scala.inline
-  def navigated: navigated = "navigated".asInstanceOf[navigated]
-  @scala.inline
-  def networkstatuschanged: networkstatuschanged = "networkstatuschanged".asInstanceOf[networkstatuschanged]
-  @scala.inline
-  def nexttrackpressed: nexttrackpressed = "nexttrackpressed".asInstanceOf[nexttrackpressed]
-  @scala.inline
-  def notifyfocusleavecompleted: notifyfocusleavecompleted = "notifyfocusleavecompleted".asInstanceOf[notifyfocusleavecompleted]
-  @scala.inline
-  def openoperationcompleted: openoperationcompleted = "openoperationcompleted".asInstanceOf[openoperationcompleted]
-  @scala.inline
-  def operationcompleted: operationcompleted = "operationcompleted".asInstanceOf[operationcompleted]
-  @scala.inline
-  def optionalreferencephotocaptured: optionalreferencephotocaptured = "optionalreferencephotocaptured".asInstanceOf[optionalreferencephotocaptured]
-  @scala.inline
-  def optionchanged: optionchanged = "optionchanged".asInstanceOf[optionchanged]
-  @scala.inline
-  def optionschanged: optionschanged = "optionschanged".asInstanceOf[optionschanged]
-  @scala.inline
-  def orientationchanged: orientationchanged = "orientationchanged".asInstanceOf[orientationchanged]
-  @scala.inline
-  def pairingrequested: pairingrequested = "pairingrequested".asInstanceOf[pairingrequested]
-  @scala.inline
-  def paused: paused = "paused".asInstanceOf[paused]
-  @scala.inline
-  def pausepressed: pausepressed = "pausepressed".asInstanceOf[pausepressed]
-  @scala.inline
-  def pauserequested: pauserequested = "pauserequested".asInstanceOf[pauserequested]
-  @scala.inline
-  def photocaptured: photocaptured = "photocaptured".asInstanceOf[photocaptured]
-  @scala.inline
-  def photoconfirmationcaptured: photoconfirmationcaptured = "photoconfirmationcaptured".asInstanceOf[photoconfirmationcaptured]
-  @scala.inline
-  def pinchanged: pinchanged = "pinchanged".asInstanceOf[pinchanged]
-  @scala.inline
-  def playbackbitratechanged: playbackbitratechanged = "playbackbitratechanged".asInstanceOf[playbackbitratechanged]
-  @scala.inline
-  def playbackmediamarkerreached: playbackmediamarkerreached = "playbackmediamarkerreached".asInstanceOf[playbackmediamarkerreached]
-  @scala.inline
-  def playbackpositionchangerequested: playbackpositionchangerequested = "playbackpositionchangerequested".asInstanceOf[playbackpositionchangerequested]
-  @scala.inline
-  def playbackratechangerequested: playbackratechangerequested = "playbackratechangerequested".asInstanceOf[playbackratechangerequested]
-  @scala.inline
-  def playpausetogglepressed: playpausetogglepressed = "playpausetogglepressed".asInstanceOf[playpausetogglepressed]
-  @scala.inline
-  def playpressed: playpressed = "playpressed".asInstanceOf[playpressed]
-  @scala.inline
-  def playrequested: playrequested = "playrequested".asInstanceOf[playrequested]
-  @scala.inline
-  def policychanged: policychanged = "policychanged".asInstanceOf[policychanged]
-  @scala.inline
-  def positionchanged: positionchanged = "positionchanged".asInstanceOf[positionchanged]
-  @scala.inline
-  def powersupplystatuschanged: powersupplystatuschanged = "powersupplystatuschanged".asInstanceOf[powersupplystatuschanged]
-  @scala.inline
-  def presentationmodechanged: presentationmodechanged = "presentationmodechanged".asInstanceOf[presentationmodechanged]
-  @scala.inline
-  def previewing: previewing = "previewing".asInstanceOf[previewing]
-  @scala.inline
-  def previoustrackpressed: previoustrackpressed = "previoustrackpressed".asInstanceOf[previoustrackpressed]
-  @scala.inline
-  def printrequested: printrequested = "printrequested".asInstanceOf[printrequested]
-  @scala.inline
-  def printtaskrequested: printtaskrequested = "printtaskrequested".asInstanceOf[printtaskrequested]
-  @scala.inline
-  def processed: processed = "processed".asInstanceOf[processed]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def progressing: progressing = "progressing".asInstanceOf[progressing]
-  @scala.inline
-  def projectiondisplayavailablechanged: projectiondisplayavailablechanged = "projectiondisplayavailablechanged".asInstanceOf[projectiondisplayavailablechanged]
-  @scala.inline
-  def propertieschanged: propertieschanged = "propertieschanged".asInstanceOf[propertieschanged]
-  @scala.inline
-  def propertiesupdated: propertiesupdated = "propertiesupdated".asInstanceOf[propertiesupdated]
-  @scala.inline
-  def propertychanged: propertychanged = "propertychanged".asInstanceOf[propertychanged]
-  @scala.inline
-  def protectedaccessresumed: protectedaccessresumed = "protectedaccessresumed".asInstanceOf[protectedaccessresumed]
-  @scala.inline
-  def protectedaccesssuspending: protectedaccesssuspending = "protectedaccesssuspending".asInstanceOf[protectedaccesssuspending]
-  @scala.inline
-  def protectedcontentrevoked: protectedcontentrevoked = "protectedcontentrevoked".asInstanceOf[protectedcontentrevoked]
-  @scala.inline
-  def proximitydetectioncompleted: proximitydetectioncompleted = "proximitydetectioncompleted".asInstanceOf[proximitydetectioncompleted]
-  @scala.inline
-  def pushnotificationreceived: pushnotificationreceived = "pushnotificationreceived".asInstanceOf[pushnotificationreceived]
-  @scala.inline
-  def quantumprocessed: quantumprocessed = "quantumprocessed".asInstanceOf[quantumprocessed]
-  @scala.inline
-  def quantumstarted: quantumstarted = "quantumstarted".asInstanceOf[quantumstarted]
-  @scala.inline
-  def querychanged: querychanged = "querychanged".asInstanceOf[querychanged]
-  @scala.inline
-  def querysubmitted: querysubmitted = "querysubmitted".asInstanceOf[querysubmitted]
-  @scala.inline
-  def readingchanged: readingchanged = "readingchanged".asInstanceOf[readingchanged]
-  @scala.inline
-  def rebootneeded: rebootneeded = "rebootneeded".asInstanceOf[rebootneeded]
-  @scala.inline
-  def received: received = "received".asInstanceOf[received]
-  @scala.inline
-  def recentenergyusageincreased: recentenergyusageincreased = "recentenergyusageincreased".asInstanceOf[recentenergyusageincreased]
-  @scala.inline
-  def recentenergyusagereturnedtolow: recentenergyusagereturnedtolow = "recentenergyusagereturnedtolow".asInstanceOf[recentenergyusagereturnedtolow]
-  @scala.inline
-  def recognitionqualitydegrading: recognitionqualitydegrading = "recognitionqualitydegrading".asInstanceOf[recognitionqualitydegrading]
-  @scala.inline
-  def recordlimitationexceeded: recordlimitationexceeded = "recordlimitationexceeded".asInstanceOf[recordlimitationexceeded]
-  @scala.inline
-  def recordpressed: recordpressed = "recordpressed".asInstanceOf[recordpressed]
-  @scala.inline
-  def redialrequested: redialrequested = "redialrequested".asInstanceOf[redialrequested]
-  @scala.inline
-  def registrationcompleted: registrationcompleted = "registrationcompleted".asInstanceOf[registrationcompleted]
-  @scala.inline
-  def releasedevicerequested: releasedevicerequested = "releasedevicerequested".asInstanceOf[releasedevicerequested]
-  @scala.inline
-  def remainingchargepercentchanged: remainingchargepercentchanged = "remainingchargepercentchanged".asInstanceOf[remainingchargepercentchanged]
-  @scala.inline
-  def remainingdischargetimechanged: remainingdischargetimechanged = "remainingdischargetimechanged".asInstanceOf[remainingdischargetimechanged]
-  @scala.inline
-  def remoteparticipantcomposingchanged: remoteparticipantcomposingchanged = "remoteparticipantcomposingchanged".asInstanceOf[remoteparticipantcomposingchanged]
-  @scala.inline
-  def remoteportadded: remoteportadded = "remoteportadded".asInstanceOf[remoteportadded]
-  @scala.inline
-  def removed: removed = "removed".asInstanceOf[removed]
-  @scala.inline
-  def reportupdated: reportupdated = "reportupdated".asInstanceOf[reportupdated]
-  @scala.inline
-  def requestingfocusonkeyboardinput: requestingfocusonkeyboardinput = "requestingfocusonkeyboardinput".asInstanceOf[requestingfocusonkeyboardinput]
-  @scala.inline
-  def requestreceived: requestreceived = "requestreceived".asInstanceOf[requestreceived]
-  @scala.inline
-  def requestresponsecompleted: requestresponsecompleted = "requestresponsecompleted".asInstanceOf[requestresponsecompleted]
-  @scala.inline
-  def requestsent: requestsent = "requestsent".asInstanceOf[requestsent]
-  @scala.inline
-  def reregistrationneeded: reregistrationneeded = "reregistrationneeded".asInstanceOf[reregistrationneeded]
-  @scala.inline
-  def resolved: resolved = "resolved".asInstanceOf[resolved]
-  @scala.inline
-  def responsereceived: responsereceived = "responsereceived".asInstanceOf[responsereceived]
-  @scala.inline
-  def restrictionschanged: restrictionschanged = "restrictionschanged".asInstanceOf[restrictionschanged]
-  @scala.inline
-  def resultgenerated: resultgenerated = "resultgenerated".asInstanceOf[resultgenerated]
-  @scala.inline
-  def resultsuggestionchosen: resultsuggestionchosen = "resultsuggestionchosen".asInstanceOf[resultsuggestionchosen]
-  @scala.inline
-  def resuming: resuming = "resuming".asInstanceOf[resuming]
-  @scala.inline
-  def revoked: revoked = "revoked".asInstanceOf[revoked]
-  @scala.inline
-  def rewindpressed: rewindpressed = "rewindpressed".asInstanceOf[rewindpressed]
-  @scala.inline
-  def righttapped: righttapped = "righttapped".asInstanceOf[righttapped]
-  @scala.inline
-  def samplerequested: samplerequested = "samplerequested".asInstanceOf[samplerequested]
-  @scala.inline
-  def saverequested: saverequested = "saverequested".asInstanceOf[saverequested]
-  @scala.inline
-  def sceneanalyzed: sceneanalyzed = "sceneanalyzed".asInstanceOf[sceneanalyzed]
-  @scala.inline
-  def sdprecordschanged: sdprecordschanged = "sdprecordschanged".asInstanceOf[sdprecordschanged]
-  @scala.inline
-  def seekcompleted: seekcompleted = "seekcompleted".asInstanceOf[seekcompleted]
-  @scala.inline
-  def selectedindexchanged: selectedindexchanged = "selectedindexchanged".asInstanceOf[selectedindexchanged]
-  @scala.inline
-  def selectionchanged: selectionchanged = "selectionchanged".asInstanceOf[selectionchanged]
-  @scala.inline
-  def selectionrequested: selectionrequested = "selectionrequested".asInstanceOf[selectionrequested]
-  @scala.inline
-  def selectionupdating: selectionupdating = "selectionupdating".asInstanceOf[selectionupdating]
-  @scala.inline
-  def serviceclosed: serviceclosed = "serviceclosed".asInstanceOf[serviceclosed]
-  @scala.inline
-  def servicekindsupportedchanged: servicekindsupportedchanged = "servicekindsupportedchanged".asInstanceOf[servicekindsupportedchanged]
-  @scala.inline
-  def servicerequested: servicerequested = "servicerequested".asInstanceOf[servicerequested]
-  @scala.inline
-  def sessiondeferred: sessiondeferred = "sessiondeferred".asInstanceOf[sessiondeferred]
-  @scala.inline
-  def sessionrequested: sessionrequested = "sessionrequested".asInstanceOf[sessionrequested]
-  @scala.inline
-  def sessionstatuschanged: sessionstatuschanged = "sessionstatuschanged".asInstanceOf[sessionstatuschanged]
-  @scala.inline
-  def shaken: shaken = "shaken".asInstanceOf[shaken]
-  @scala.inline
-  def showing: showing = "showing".asInstanceOf[showing]
-  @scala.inline
-  def shuffleenabledchangerequested: shuffleenabledchangerequested = "shuffleenabledchangerequested".asInstanceOf[shuffleenabledchangerequested]
-  @scala.inline
-  def smsdevicestatuschanged: smsdevicestatuschanged = "smsdevicestatuschanged".asInstanceOf[smsdevicestatuschanged]
-  @scala.inline
-  def smsmessagereceived: smsmessagereceived = "smsmessagereceived".asInstanceOf[smsmessagereceived]
-  @scala.inline
-  def snapshotchanged: snapshotchanged = "snapshotchanged".asInstanceOf[snapshotchanged]
-  @scala.inline
-  def soundlevelchanged: soundlevelchanged = "soundlevelchanged".asInstanceOf[soundlevelchanged]
-  @scala.inline
-  def sourceadded: sourceadded = "sourceadded".asInstanceOf[sourceadded]
-  @scala.inline
-  def sourcechanged: sourcechanged = "sourcechanged".asInstanceOf[sourcechanged]
-  @scala.inline
-  def sourcechangerequested: sourcechangerequested = "sourcechangerequested".asInstanceOf[sourcechangerequested]
-  @scala.inline
-  def sourceremoved: sourceremoved = "sourceremoved".asInstanceOf[sourceremoved]
-  @scala.inline
-  def sourcerequested: sourcerequested = "sourcerequested".asInstanceOf[sourcerequested]
-  @scala.inline
-  def sourceselected: sourceselected = "sourceselected".asInstanceOf[sourceselected]
-  @scala.inline
-  def starting: starting = "starting".asInstanceOf[starting]
-  @scala.inline
-  def statechanged: statechanged = "statechanged".asInstanceOf[statechanged]
-  @scala.inline
-  def statuschanged: statuschanged = "statuschanged".asInstanceOf[statuschanged]
-  @scala.inline
-  def statusupdated: statusupdated = "statusupdated".asInstanceOf[statusupdated]
-  @scala.inline
-  def stereoenabledchanged: stereoenabledchanged = "stereoenabledchanged".asInstanceOf[stereoenabledchanged]
-  @scala.inline
-  def stopped: stopped = "stopped".asInstanceOf[stopped]
-  @scala.inline
-  def stoppressed: stoppressed = "stoppressed".asInstanceOf[stoppressed]
-  @scala.inline
-  def stoprequested: stoprequested = "stoprequested".asInstanceOf[stoprequested]
-  @scala.inline
-  def storechanged: storechanged = "storechanged".asInstanceOf[storechanged]
-  @scala.inline
-  def submitting: submitting = "submitting".asInstanceOf[submitting]
-  @scala.inline
-  def suggestionsrequested: suggestionsrequested = "suggestionsrequested".asInstanceOf[suggestionsrequested]
-  @scala.inline
-  def suspending: suspending = "suspending".asInstanceOf[suspending]
-  @scala.inline
-  def switchstreamsrequested: switchstreamsrequested = "switchstreamsrequested".asInstanceOf[switchstreamsrequested]
-  @scala.inline
-  def syncstatuschanged: syncstatuschanged = "syncstatuschanged".asInstanceOf[syncstatuschanged]
-  @scala.inline
-  def tapped: tapped = "tapped".asInstanceOf[tapped]
-  @scala.inline
-  def targetapplicationchosen: targetapplicationchosen = "targetapplicationchosen".asInstanceOf[targetapplicationchosen]
-  @scala.inline
-  def targetfilerequested: targetfilerequested = "targetfilerequested".asInstanceOf[targetfilerequested]
-  @scala.inline
-  def taskrequested: taskrequested = "taskrequested".asInstanceOf[taskrequested]
-  @scala.inline
-  def textrequested: textrequested = "textrequested".asInstanceOf[textrequested]
-  @scala.inline
-  def textscalefactorchanged: textscalefactorchanged = "textscalefactorchanged".asInstanceOf[textscalefactorchanged]
-  @scala.inline
-  def textupdating: textupdating = "textupdating".asInstanceOf[textupdating]
-  @scala.inline
-  def thermalstatuschanged: thermalstatuschanged = "thermalstatuschanged".asInstanceOf[thermalstatuschanged]
-  @scala.inline
-  def thumbnailupdated: thumbnailupdated = "thumbnailupdated".asInstanceOf[thumbnailupdated]
-  @scala.inline
-  def timedmetadatatrackschanged: timedmetadatatrackschanged = "timedmetadatatrackschanged".asInstanceOf[timedmetadatatrackschanged]
-  @scala.inline
-  def timeupdaterequested: timeupdaterequested = "timeupdaterequested".asInstanceOf[timeupdaterequested]
-  @scala.inline
-  def tracingstatuschanged: tracingstatuschanged = "tracingstatuschanged".asInstanceOf[tracingstatuschanged]
-  @scala.inline
-  def trackfailed: trackfailed = "trackfailed".asInstanceOf[trackfailed]
-  @scala.inline
-  def transferred: transferred = "transferred".asInstanceOf[transferred]
-  @scala.inline
-  def triggeredconnectionstatechanged: triggeredconnectionstatechanged = "triggeredconnectionstatechanged".asInstanceOf[triggeredconnectionstatechanged]
-  @scala.inline
-  def triggerpressed: triggerpressed = "triggerpressed".asInstanceOf[triggerpressed]
-  @scala.inline
-  def triggerreleased: triggerreleased = "triggerreleased".asInstanceOf[triggerreleased]
-  @scala.inline
-  def uirequested: uirequested = "uirequested".asInstanceOf[uirequested]
-  @scala.inline
-  def unlocking: unlocking = "unlocking".asInstanceOf[unlocking]
-  @scala.inline
-  def unrecoverableerroroccurred: unrecoverableerroroccurred = "unrecoverableerroroccurred".asInstanceOf[unrecoverableerroroccurred]
-  @scala.inline
-  def updated: updated = "updated".asInstanceOf[updated]
-  @scala.inline
-  def userchanged: userchanged = "userchanged".asInstanceOf[userchanged]
-  @scala.inline
-  def valuechanged: valuechanged = "valuechanged".asInstanceOf[valuechanged]
-  @scala.inline
-  def vendorspecificdatareceived: vendorspecificdatareceived = "vendorspecificdatareceived".asInstanceOf[vendorspecificdatareceived]
-  @scala.inline
-  def videoprofilechanged: videoprofilechanged = "videoprofilechanged".asInstanceOf[videoprofilechanged]
-  @scala.inline
-  def videotrackschanged: videotrackschanged = "videotrackschanged".asInstanceOf[videotrackschanged]
-  @scala.inline
-  def visibilitychanged: visibilitychanged = "visibilitychanged".asInstanceOf[visibilitychanged]
-  @scala.inline
-  def visibleboundschanged: visibleboundschanged = "visibleboundschanged".asInstanceOf[visibleboundschanged]
-  @scala.inline
-  def visualelementsrequested: visualelementsrequested = "visualelementsrequested".asInstanceOf[visualelementsrequested]
-  @scala.inline
-  def voicecommandcompleted: voicecommandcompleted = "voicecommandcompleted".asInstanceOf[voicecommandcompleted]
-  @scala.inline
-  def volumechanged: volumechanged = "volumechanged".asInstanceOf[volumechanged]
-  @scala.inline
-  def volumechangerequested: volumechangerequested = "volumechangerequested".asInstanceOf[volumechangerequested]
+  @js.native
+  sealed trait volumechangerequested extends StObject
+  inline def volumechangerequested: volumechangerequested = "volumechangerequested".asInstanceOf[volumechangerequested]
 }
-

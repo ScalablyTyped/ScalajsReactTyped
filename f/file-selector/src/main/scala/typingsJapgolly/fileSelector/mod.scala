@@ -1,15 +1,18 @@
 package typingsJapgolly.fileSelector
 
-import typingsJapgolly.fileSelector.fileMod.FileWithPath
+import org.scalajs.dom.Event
+import typingsJapgolly.fileSelector.distFileMod.FileWithPath
 import typingsJapgolly.std.DataTransferItem
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("file-selector", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def fromEvent(evt: Event_): js.Promise[js.Array[FileWithPath | DataTransferItem]] = js.native
+object mod {
+  
+  @JSImport("file-selector", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromEvent(evt: Event): js.Promise[js.Array[FileWithPath | DataTransferItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FileWithPath | DataTransferItem]]]
+  inline def fromEvent(evt: Any): js.Promise[js.Array[FileWithPath | DataTransferItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FileWithPath | DataTransferItem]]]
 }
-

@@ -1,25 +1,32 @@
 package typingsJapgolly.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait WhiteSpace
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
+  
   @JSName("type")
   var type_WhiteSpace: typingsJapgolly.cssTree.cssTreeStrings.WhiteSpace
+  
   var value: String
 }
-
 object WhiteSpace {
-  @scala.inline
-  def apply(`type`: typingsJapgolly.cssTree.cssTreeStrings.WhiteSpace, value: String, loc: CssLocation = null): WhiteSpace = {
+  
+  inline def apply(value: String): WhiteSpace = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WhiteSpace")
     __obj.asInstanceOf[WhiteSpace]
   }
+  
+  extension [Self <: WhiteSpace](x: Self) {
+    
+    inline def setType(value: typingsJapgolly.cssTree.cssTreeStrings.WhiteSpace): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

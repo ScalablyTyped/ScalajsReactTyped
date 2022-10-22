@@ -1,10 +1,11 @@
 package typingsJapgolly.es6Shim
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RegExp extends js.Object {
+trait RegExp extends StObject {
+  
   /**
     * Returns a string indicating the flags of the regular expression in question. This field is read-only.
     * The characters in this string are sequenced and concatenated in the following order:
@@ -19,13 +20,15 @@ trait RegExp extends js.Object {
     */
   var flags: java.lang.String
 }
-
 object RegExp {
-  @scala.inline
-  def apply(flags: java.lang.String): RegExp = {
-    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
   
+  inline def apply(flags: java.lang.String): RegExp = {
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegExp]
   }
+  
+  extension [Self <: RegExp](x: Self) {
+    
+    inline def setFlags(value: java.lang.String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+  }
 }
-

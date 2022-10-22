@@ -1,345 +1,456 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EventType extends js.Object
-
+sealed trait EventType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.EventType")
 @js.native
-object EventType extends js.Object {
-  /**
-    *
-    * AgaveVisualUpdate represents the type of an event that is associated with an agave visual, and carries a new data view following a data change
-    *
-    */
-  @js.native
-  sealed trait agaveVisualUpdate extends EventType
+object EventType extends StObject {
   
   /**
-    *
-    * ChartActivated represents the type of event registered on Chart or ChartCollection, and occurs when chart activates.
-    *
+    * `AgaveVisualUpdate` represents the type of an event that is associated with an agave visual and carries a new data view following a data change.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait chartActivated extends EventType
+  sealed trait agaveVisualUpdate
+    extends StObject
+       with EventType
   
   /**
-    *
-    * ChartAdded represents the type of event registered on ChartCollection, and occurs when a new chart is added to the worksheet.
-    *
+    * `ChartActivated` represents the type of event registered on a `Chart` or `ChartCollection` and occurs when a chart activates.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait chartAdded extends EventType
+  sealed trait chartActivated
+    extends StObject
+       with EventType
   
   /**
-    *
-    * ChartDeactivated represents the type of event registered on Chart or ChartCollection, and occurs when chart deactivates.
-    *
+    * `ChartAdded` represents the type of event registered on a `ChartCollection` and occurs when a new chart is added to the worksheet.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait chartDeactivated extends EventType
+  sealed trait chartAdded
+    extends StObject
+       with EventType
   
   /**
-    *
-    * ChartDeleted represents the type of event registered on ChartCollection, and occurs when a chart is deleted from the worksheet.
-    *
+    * `ChartDeactivated` represents the type of event registered on a `Chart` or `ChartCollection` and occurs when a chart deactivates.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait chartDeleted extends EventType
+  sealed trait chartDeactivated
+    extends StObject
+       with EventType
   
   /**
-    *
-    * RibbonCommandExecuted represents the type of event registered on ribbon, and occurs when user click on ribbon
-    *
+    * `ChartDeleted` represents the type of event registered on a `ChartCollection` and occurs when a chart is deleted from the worksheet.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait ribbonCommandExecuted extends EventType
+  sealed trait chartDeleted
+    extends StObject
+       with EventType
   
   /**
-    *
-    * ShapeActivated represents the type of event that is registered on Shape, and occurs when shape activates.
-    *
+    * `CommentAdded` represents the type of event that is registered on a comment collection and occurs when comments are added.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait shapeActivated extends EventType
+  sealed trait commentAdded
+    extends StObject
+       with EventType
   
   /**
-    *
-    * ShapeDeactivated represents the type of event that is registered on Shape, and occurs when shape deactivates.
-    *
+    * `CommentChanged` represents the type of event that is registered on a comment collection and occurs when comments are changed.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait shapeDeactivated extends EventType
+  sealed trait commentChanged
+    extends StObject
+       with EventType
   
   /**
-    *
-    * TableAdded represents the type of event registered on TableCollection, and occurs when a table is added.
-    *
+    * `CommentDeleted` represents the type of event that is registered on a comment collection and occurs when comments are deleted.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait tableAdded extends EventType
+  sealed trait commentDeleted
+    extends StObject
+       with EventType
   
   /**
-    *
-    * TableChanged represents the type of event registered on Table, and occurs when data changes.
-    *
+    * LineageActivityUpdateAvailable represents the type of event registered when new revision updates lineage model.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait tableChanged extends EventType
+  sealed trait lineageActivityUpdateAvailable
+    extends StObject
+       with EventType
   
   /**
-    *
-    * TableDeleted represents the type of event that is registered on TableCollection, and occurs when a table is deleted.
-    *
+    * `LinkedDataTypeAdded` represents the type of event registered on a `LinkedDataType` and occurs when a new linked data type is added to the workbook.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait tableDeleted extends EventType
+  sealed trait linkedDataTypeLinkedDataTypeAdded
+    extends StObject
+       with EventType
   
   /**
-    *
-    * TableFiltered represents the type of event registered on table or TableCollection, and occurs when data of table is filtered.
-    *
+    * `RefreshModeChanged` represents the type of event registered on a `LinkedDataType` and occurs when the linked data type refresh mode is changed.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait tableFiltered extends EventType
+  sealed trait linkedDataTypeRefreshModeChanged
+    extends StObject
+       with EventType
   
   /**
-    *
-    * TableSelectionChanged represents the type of event registered on Table, and occurs when selection changes.
-    *
+    * `RefreshRequestCompleted` represents the type of event registered on a `LinkedDataType` and occurs when a request to refresh a data source is completed.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait tableSelectionChanged extends EventType
+  sealed trait linkedDataTypeRefreshRequestCompleted
+    extends StObject
+       with EventType
   
   /**
-    *
-    * VisualChange represents the type of event registered on Visual, and occurs when there is a visual change.
-    *
+    * `WorkbookLinksRefreshCompleted` represents the type of event registered on a linked Workbook and occurs when a linked workbook completes a refresh.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait visualChange extends EventType
+  sealed trait linkedWorkbookRefreshCompleted
+    extends StObject
+       with EventType
   
   /**
-    *
-    * VisualSelectionChanged represents the type of event registered on VisualCollection, and occurs when visual selection changes.
-    *
+    * `WorkbookLinksChanged` represents the type of event which is fired when a workbook link is changed.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait visualSelectionChanged extends EventType
-  
-  @js.native
-  sealed trait wacoperationEvent extends EventType
+  sealed trait linkedWorkbookWorkbookLinksChanged
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorkbookAutoSaveSettingChanged represents the type of event registered on workbook, and occurs when there is an auto save setting change.
-    *
+    * `RibbonCommandExecuted` represents the type of event registered on the ribbon and occurs when a user clicks on the ribbon
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait workbookAutoSaveSettingChanged extends EventType
+  sealed trait ribbonCommandExecuted
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorksheetActivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when worksheet activates.
-    *
+    * `ShapeActivated` represents the type of event that is registered on a `Shape` and occurs when the shape activates.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait worksheetActivated extends EventType
+  sealed trait shapeActivated
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorksheetAdded represents the type of event registered on WorksheetCollection, and occurs when a new worksheet is added to the workbook.
-    *
+    * `ShapeDeactivated` represents the type of event that is registered on a `Shape` and occurs when the shape deactivates.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait worksheetAdded extends EventType
+  sealed trait shapeDeactivated
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorksheetCalculated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when a worksheet is calculated.
-    *
+    * `TableAdded` represents the type of event registered on a `TableCollection` and occurs when a table is added.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait worksheetCalculated extends EventType
+  sealed trait tableAdded
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorksheetChanged represents the type of event registered on Worksheet or WorksheetCollection, and occurs when data changes.
-    *
+    * `TableChanged` represents the type of event registered on a `Table` and occurs when data changes.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait worksheetChanged extends EventType
+  sealed trait tableChanged
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorksheetColumnSorted represents the type of event registered on worksheet, and occurs when there is a sorting on columns happened.
-    *
+    * `TableDeleted` represents the type of event that is registered on a `TableCollection` and occurs when a table is deleted.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait worksheetColumnSorted extends EventType
+  sealed trait tableDeleted
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorksheetDeactivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when worksheet deactivates.
-    *
+    * `TableFiltered` represents the type of event registered on a table or `TableCollection` and occurs when the data of a table is filtered.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait worksheetDeactivated extends EventType
+  sealed trait tableFiltered
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorksheetDeleted represents the type of event registered on WorksheetCollection, and occurs when a worksheet is deleted from the workbook.
-    *
+    * `TableSelectionChanged` represents the type of event registered on a `Table` and occurs when the selection changes.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait worksheetDeleted extends EventType
+  sealed trait tableSelectionChanged
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorksheetFiltered represents the type of event registered on worksheet or WorksheetCollection, and occurs when data of autofilter in the worksheet is filtered.
-    *
+    * `VisualChange` represents the type of event registered on a `Visual` and occurs when there is a visual change.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait worksheetFiltered extends EventType
+  sealed trait visualChange
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorksheetFormatChanged represents the type of event registered on worksheet, and occurs when there is a format changed.
-    *
+    * `VisualSelectionChanged` represents the type of event registered on a `VisualCollection` and occurs when the visual selection changes.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait worksheetFormatChanged extends EventType
+  sealed trait visualSelectionChanged
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorksheetRowHiddenChanged represents the type of event registered on worksheet, and occurs when a row's hidden state is changed.
-    *
+    * `WorkbookActivated` represents the type of event which is fired when a workbook is activated.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait worksheetRowHiddenChanged extends EventType
+  sealed trait workbookActivated
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorksheetRowSorted represents the type of event registered on worksheet, and occurs when there is a sorting on rows happened.
-    *
+    * `WorkbookAutoSaveSettingChanged` represents the type of event registered on a workbook and occurs when there is an auto save setting change.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait worksheetRowSorted extends EventType
+  sealed trait workbookAutoSaveSettingChanged
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorksheetSelectionChanged represents the type of event registered on Worksheet, and occurs when selection changes.
-    *
+    * `WorksheetActivated` represents the type of event registered on a `Worksheet` or `WorksheetCollection` and occurs when a worksheet activates.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait worksheetSelectionChanged extends EventType
+  sealed trait worksheetActivated
+    extends StObject
+       with EventType
   
   /**
-    *
-    * WorksheetSingleClicked represents the type of event registered on worksheet, and occurs when cell is left-clicked/tapped.
-    *
+    * `WorksheetAdded` represents the type of event registered on a `WorksheetCollection` and occurs when a new worksheet is added to the workbook.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait worksheetSingleClicked extends EventType
+  sealed trait worksheetAdded
+    extends StObject
+       with EventType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[EventType with String] = js.native
-  /* "AgaveVisualUpdate" */ @js.native
-  object agaveVisualUpdate extends TopLevel[agaveVisualUpdate with String]
+  /**
+    * `WorksheetCalculated` represents the type of event registered on a `Worksheet` or `WorksheetCollection` and occurs when a worksheet is calculated.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetCalculated
+    extends StObject
+       with EventType
   
-  /* "ChartActivated" */ @js.native
-  object chartActivated extends TopLevel[chartActivated with String]
+  /**
+    * `WorksheetChanged` represents the type of event registered on a `Worksheet` or `WorksheetCollection` and occurs when data changes.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetChanged
+    extends StObject
+       with EventType
   
-  /* "ChartAdded" */ @js.native
-  object chartAdded extends TopLevel[chartAdded with String]
+  /**
+    * `WorksheetColumnSorted` represents the type of event registered on a worksheet and occurs columns are sorted.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetColumnSorted
+    extends StObject
+       with EventType
   
-  /* "ChartDeactivated" */ @js.native
-  object chartDeactivated extends TopLevel[chartDeactivated with String]
+  /**
+    * `WorksheetDeactivated` represents the type of event registered on a `Worksheet` or `WorksheetCollection` and occurs when a worksheet deactivates.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetDeactivated
+    extends StObject
+       with EventType
   
-  /* "ChartDeleted" */ @js.native
-  object chartDeleted extends TopLevel[chartDeleted with String]
+  /**
+    * `WorksheetDeleted` represents the type of event registered on a `WorksheetCollection` and occurs when a worksheet is deleted from the workbook.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetDeleted
+    extends StObject
+       with EventType
   
-  /* "RibbonCommandExecuted" */ @js.native
-  object ribbonCommandExecuted extends TopLevel[ribbonCommandExecuted with String]
+  /**
+    * `WorksheetFiltered` represents the type of event registered on a worksheet or `WorksheetCollection` and occurs when the data of an AutoFilter in the worksheet is filtered.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetFiltered
+    extends StObject
+       with EventType
   
-  /* "ShapeActivated" */ @js.native
-  object shapeActivated extends TopLevel[shapeActivated with String]
+  /**
+    * `WorksheetFormatChanged` represents the type of event registered on a worksheet and occurs when a format is changed.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetFormatChanged
+    extends StObject
+       with EventType
   
-  /* "ShapeDeactivated" */ @js.native
-  object shapeDeactivated extends TopLevel[shapeDeactivated with String]
+  /**
+    * `WorksheetFormulaChanged` represents the type of event registered on a worksheet and occurs when a formula is changed.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetFormulaChanged
+    extends StObject
+       with EventType
   
-  /* "TableAdded" */ @js.native
-  object tableAdded extends TopLevel[tableAdded with String]
+  /**
+    * WorksheetMoved represents the type of event registered on a worksheet that occurs when it is moved within a workbook.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetMoved
+    extends StObject
+       with EventType
   
-  /* "TableChanged" */ @js.native
-  object tableChanged extends TopLevel[tableChanged with String]
+  /**
+    * WorksheetNameChanged represents the type of event registered on a worksheet that occurs when its name changes.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetNameChanged
+    extends StObject
+       with EventType
   
-  /* "TableDeleted" */ @js.native
-  object tableDeleted extends TopLevel[tableDeleted with String]
+  /**
+    * WorksheetProtectionChanged represents the type of event registered on worksheet, and occurs when protection status is changed.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetProtectionChanged
+    extends StObject
+       with EventType
   
-  /* "TableFiltered" */ @js.native
-  object tableFiltered extends TopLevel[tableFiltered with String]
+  /**
+    * `WorksheetRowHiddenChanged` represents the type of event registered on a worksheet and occurs when a row's hidden state is changed.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetRowHiddenChanged
+    extends StObject
+       with EventType
   
-  /* "TableSelectionChanged" */ @js.native
-  object tableSelectionChanged extends TopLevel[tableSelectionChanged with String]
+  /**
+    * `WorksheetRowSorted` represents the type of event registered on a worksheet and occurs when rows are sorted.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetRowSorted
+    extends StObject
+       with EventType
   
-  /* "VisualChange" */ @js.native
-  object visualChange extends TopLevel[visualChange with String]
+  /**
+    * `WorksheetSelectionChanged` represents the type of event registered on a `Worksheet` and occurs when the selection changes.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetSelectionChanged
+    extends StObject
+       with EventType
   
-  /* "VisualSelectionChanged" */ @js.native
-  object visualSelectionChanged extends TopLevel[visualSelectionChanged with String]
+  /**
+    * `WorksheetSingleClicked` represents the type of event registered on a worksheet and occurs when a cell is left-clicked or tapped.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetSingleClicked
+    extends StObject
+       with EventType
   
-  /* "WACOperationEvent" */ @js.native
-  object wacoperationEvent extends TopLevel[wacoperationEvent with String]
-  
-  /* "WorkbookAutoSaveSettingChanged" */ @js.native
-  object workbookAutoSaveSettingChanged extends TopLevel[workbookAutoSaveSettingChanged with String]
-  
-  /* "WorksheetActivated" */ @js.native
-  object worksheetActivated extends TopLevel[worksheetActivated with String]
-  
-  /* "WorksheetAdded" */ @js.native
-  object worksheetAdded extends TopLevel[worksheetAdded with String]
-  
-  /* "WorksheetCalculated" */ @js.native
-  object worksheetCalculated extends TopLevel[worksheetCalculated with String]
-  
-  /* "WorksheetChanged" */ @js.native
-  object worksheetChanged extends TopLevel[worksheetChanged with String]
-  
-  /* "WorksheetColumnSorted" */ @js.native
-  object worksheetColumnSorted extends TopLevel[worksheetColumnSorted with String]
-  
-  /* "WorksheetDeactivated" */ @js.native
-  object worksheetDeactivated extends TopLevel[worksheetDeactivated with String]
-  
-  /* "WorksheetDeleted" */ @js.native
-  object worksheetDeleted extends TopLevel[worksheetDeleted with String]
-  
-  /* "WorksheetFiltered" */ @js.native
-  object worksheetFiltered extends TopLevel[worksheetFiltered with String]
-  
-  /* "WorksheetFormatChanged" */ @js.native
-  object worksheetFormatChanged extends TopLevel[worksheetFormatChanged with String]
-  
-  /* "WorksheetRowHiddenChanged" */ @js.native
-  object worksheetRowHiddenChanged extends TopLevel[worksheetRowHiddenChanged with String]
-  
-  /* "WorksheetRowSorted" */ @js.native
-  object worksheetRowSorted extends TopLevel[worksheetRowSorted with String]
-  
-  /* "WorksheetSelectionChanged" */ @js.native
-  object worksheetSelectionChanged extends TopLevel[worksheetSelectionChanged with String]
-  
-  /* "WorksheetSingleClicked" */ @js.native
-  object worksheetSingleClicked extends TopLevel[worksheetSingleClicked with String]
-  
+  /**
+    * WorksheetVisibilityChanged represents the type of event registered on a worksheet that occurs when its visibility changes.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait worksheetVisibilityChanged
+    extends StObject
+       with EventType
 }
-

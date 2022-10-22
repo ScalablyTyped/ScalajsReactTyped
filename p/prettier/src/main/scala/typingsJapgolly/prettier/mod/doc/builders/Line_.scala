@@ -1,30 +1,43 @@
 package typingsJapgolly.prettier.mod.doc.builders
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Line_ extends _Doc {
+trait Line_
+  extends StObject
+     with DocCommand {
+  
   var hard: js.UndefOr[Boolean] = js.undefined
+  
   var literal: js.UndefOr[Boolean] = js.undefined
+  
   var soft: js.UndefOr[Boolean] = js.undefined
+  
   var `type`: typingsJapgolly.prettier.prettierStrings.line
 }
-
 object Line_ {
-  @scala.inline
-  def apply(
-    `type`: typingsJapgolly.prettier.prettierStrings.line,
-    hard: js.UndefOr[Boolean] = js.undefined,
-    literal: js.UndefOr[Boolean] = js.undefined,
-    soft: js.UndefOr[Boolean] = js.undefined
-  ): Line_ = {
+  
+  inline def apply(): Line_ = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(hard)) __obj.updateDynamic("hard")(hard.asInstanceOf[js.Any])
-    if (!js.isUndefined(literal)) __obj.updateDynamic("literal")(literal.asInstanceOf[js.Any])
-    if (!js.isUndefined(soft)) __obj.updateDynamic("soft")(soft.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("line")
     __obj.asInstanceOf[Line_]
   }
+  
+  extension [Self <: Line_](x: Self) {
+    
+    inline def setHard(value: Boolean): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
+    
+    inline def setHardUndefined: Self = StObject.set(x, "hard", js.undefined)
+    
+    inline def setLiteral(value: Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
+    
+    inline def setLiteralUndefined: Self = StObject.set(x, "literal", js.undefined)
+    
+    inline def setSoft(value: Boolean): Self = StObject.set(x, "soft", value.asInstanceOf[js.Any])
+    
+    inline def setSoftUndefined: Self = StObject.set(x, "soft", js.undefined)
+    
+    inline def setType(value: typingsJapgolly.prettier.prettierStrings.line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

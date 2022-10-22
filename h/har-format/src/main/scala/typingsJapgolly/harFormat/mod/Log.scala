@@ -1,18 +1,23 @@
 package typingsJapgolly.harFormat.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Log extends js.Object {
+trait Log extends StObject {
+  
   /** Name and version info of used browser. */
   var browser: js.UndefOr[Browser] = js.undefined
+  
   /** A comment provided by the user or the application. */
   var comment: js.UndefOr[String] = js.undefined
+  
   /** Name and version info of the log creator application. */
   var creator: Creator
+  
   /** List of all exported (tracked) requests. */
   var entries: js.Array[Entry]
+  
   /**
     * List of all exported (tracked) pages.
     *
@@ -26,6 +31,7 @@ trait Log extends js.Object {
     * parent page.
     */
   var pages: js.UndefOr[js.Array[Page]] = js.undefined
+  
   /**
     * Version number of the format.
     *
@@ -33,22 +39,35 @@ trait Log extends js.Object {
     */
   var version: String
 }
-
 object Log {
-  @scala.inline
-  def apply(
-    creator: Creator,
-    entries: js.Array[Entry],
-    version: String,
-    browser: Browser = null,
-    comment: String = null,
-    pages: js.Array[Page] = null
-  ): Log = {
+  
+  inline def apply(creator: Creator, entries: js.Array[Entry], version: String): Log = {
     val __obj = js.Dynamic.literal(creator = creator.asInstanceOf[js.Any], entries = entries.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[Log]
   }
+  
+  extension [Self <: Log](x: Self) {
+    
+    inline def setBrowser(value: Browser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+    
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    
+    inline def setCreator(value: Creator): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    
+    inline def setEntries(value: js.Array[Entry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    
+    inline def setEntriesVarargs(value: Entry*): Self = StObject.set(x, "entries", js.Array(value*))
+    
+    inline def setPages(value: js.Array[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    
+    inline def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value*))
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+  }
 }
-

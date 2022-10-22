@@ -1,69 +1,59 @@
 package typingsJapgolly.officeJsPreview.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ResponseType extends js.Object
-
-/**  
+sealed trait ResponseType extends StObject
+/**
   * Specifies the type of response to a meeting invitation.
   *
   * @remarks
-  * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  *
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.ResponseType")
 @js.native
-object ResponseType extends js.Object {
+object ResponseType extends StObject {
+  
   /**
     * The meeting request was accepted by the attendee.
     */
   @js.native
-  sealed trait Accepted extends ResponseType
+  sealed trait Accepted
+    extends StObject
+       with ResponseType
   
   /**
     * The meeting request was declined by the attendee.
     */
   @js.native
-  sealed trait Declined extends ResponseType
+  sealed trait Declined
+    extends StObject
+       with ResponseType
   
   /**
     * There has been no response from the attendee.
     */
   @js.native
-  sealed trait None extends ResponseType
+  sealed trait None
+    extends StObject
+       with ResponseType
   
   /**
     * The attendee is the meeting organizer.
     */
   @js.native
-  sealed trait Organizer extends ResponseType
+  sealed trait Organizer
+    extends StObject
+       with ResponseType
   
   /**
     * The meeting request was tentatively accepted by the attendee.
     */
   @js.native
-  sealed trait Tentative extends ResponseType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ResponseType with String] = js.native
-  /* "accepted" */ @js.native
-  object Accepted extends TopLevel[Accepted with String]
-  
-  /* "declined" */ @js.native
-  object Declined extends TopLevel[Declined with String]
-  
-  /* "none" */ @js.native
-  object None extends TopLevel[None with String]
-  
-  /* "organizer" */ @js.native
-  object Organizer extends TopLevel[Organizer with String]
-  
-  /* "tentative" */ @js.native
-  object Tentative extends TopLevel[Tentative with String]
-  
+  sealed trait Tentative
+    extends StObject
+       with ResponseType
 }
-

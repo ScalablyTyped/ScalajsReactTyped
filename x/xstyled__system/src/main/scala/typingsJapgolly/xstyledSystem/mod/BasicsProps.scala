@@ -1,28 +1,18 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.GlobalsNumber
-import typingsJapgolly.csstype.mod.OverflowProperty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BasicsProps
-  extends OpacityProps
+  extends StObject
+     with OpacityProps
      with OverflowProps
-     with TransitionProps
-
+     with TransitionProps[StyledSystemLength]
 object BasicsProps {
-  @scala.inline
-  def apply(
-    opacity: ResponsiveValue[GlobalsNumber] = null,
-    overflow: ResponsiveValue[OverflowProperty] = null,
-    transition: ResponsiveValue[String] = null
-  ): BasicsProps = {
+  
+  inline def apply(): BasicsProps = {
     val __obj = js.Dynamic.literal()
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicsProps]
   }
 }
-

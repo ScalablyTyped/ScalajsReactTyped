@@ -1,16 +1,18 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "CompletionItem")
-@js.native
-object CompletionItem extends js.Object {
+object CompletionItem {
+  
+  @JSImport("vscode-languageserver-protocol", "CompletionItem")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Create a completion item and seed it with a label.
     * @param label The completion item's label
     */
-  def create(label: String): typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionItem = js.native
+  inline def create(label: String): typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionItem]
 }
-

@@ -1,17 +1,19 @@
 package typingsJapgolly.winrt.Windows.Foundation
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IReferenceArray[T] extends IPropertyValue {
+trait IReferenceArray[T]
+  extends StObject
+     with IPropertyValue {
+  
   var value: js.Array[T]
 }
-
 object IReferenceArray {
-  @scala.inline
-  def apply[T](
+  
+  inline def apply[T](
     getBoolean: CallbackTo[Boolean],
     getBooleanArray: CallbackTo[js.Array[Boolean]],
     getChar16: CallbackTo[String],
@@ -19,14 +21,14 @@ object IReferenceArray {
     getDateTime: CallbackTo[js.Date],
     getDateTimeArray: CallbackTo[js.Array[js.Date]],
     getDouble: CallbackTo[Double],
-    getDoubleArray: CallbackTo[scala.scalajs.js.typedarray.Float64Array],
+    getDoubleArray: CallbackTo[js.typedarray.Float64Array],
     getGuid: CallbackTo[String],
     getGuidArray: CallbackTo[js.Array[String]],
-    getInspectableArray: CallbackTo[js.Array[js.Any]],
+    getInspectableArray: CallbackTo[js.Array[Any]],
     getInt16: CallbackTo[Double],
-    getInt16Array: CallbackTo[scala.scalajs.js.typedarray.Int16Array],
+    getInt16Array: CallbackTo[js.typedarray.Int16Array],
     getInt32: CallbackTo[Double],
-    getInt32Array: CallbackTo[scala.scalajs.js.typedarray.Int32Array],
+    getInt32Array: CallbackTo[js.typedarray.Int32Array],
     getInt64: CallbackTo[Double],
     getInt64Array: CallbackTo[js.Array[Double]],
     getPoint: CallbackTo[Point],
@@ -34,7 +36,7 @@ object IReferenceArray {
     getRect: CallbackTo[Rect],
     getRectArray: CallbackTo[js.Array[Rect]],
     getSingle: CallbackTo[Double],
-    getSingleArray: CallbackTo[scala.scalajs.js.typedarray.Float32Array],
+    getSingleArray: CallbackTo[js.typedarray.Float32Array],
     getSize: CallbackTo[Size],
     getSizeArray: CallbackTo[js.Array[Size]],
     getString: CallbackTo[String],
@@ -42,57 +44,26 @@ object IReferenceArray {
     getTimeSpan: CallbackTo[Double],
     getTimeSpanArray: CallbackTo[js.Array[Double]],
     getUInt16: CallbackTo[Double],
-    getUInt16Array: CallbackTo[scala.scalajs.js.typedarray.Uint16Array],
+    getUInt16Array: CallbackTo[js.typedarray.Uint16Array],
     getUInt32: CallbackTo[Double],
-    getUInt32Array: CallbackTo[scala.scalajs.js.typedarray.Uint32Array],
+    getUInt32Array: CallbackTo[js.typedarray.Uint32Array],
     getUInt64: CallbackTo[Double],
     getUInt64Array: CallbackTo[js.Array[Double]],
     getUInt8: CallbackTo[Double],
-    getUInt8Array: CallbackTo[scala.scalajs.js.typedarray.Uint8Array],
+    getUInt8Array: CallbackTo[js.typedarray.Uint8Array],
     isNumericScalar: Boolean,
     `type`: PropertyType,
     value: js.Array[T]
   ): IReferenceArray[T] = {
-    val __obj = js.Dynamic.literal(isNumericScalar = isNumericScalar.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("getBoolean")(getBoolean.toJsFn)
-    __obj.updateDynamic("getBooleanArray")(getBooleanArray.toJsFn)
-    __obj.updateDynamic("getChar16")(getChar16.toJsFn)
-    __obj.updateDynamic("getChar16Array")(getChar16Array.toJsFn)
-    __obj.updateDynamic("getDateTime")(getDateTime.toJsFn)
-    __obj.updateDynamic("getDateTimeArray")(getDateTimeArray.toJsFn)
-    __obj.updateDynamic("getDouble")(getDouble.toJsFn)
-    __obj.updateDynamic("getDoubleArray")(getDoubleArray.toJsFn)
-    __obj.updateDynamic("getGuid")(getGuid.toJsFn)
-    __obj.updateDynamic("getGuidArray")(getGuidArray.toJsFn)
-    __obj.updateDynamic("getInspectableArray")(getInspectableArray.toJsFn)
-    __obj.updateDynamic("getInt16")(getInt16.toJsFn)
-    __obj.updateDynamic("getInt16Array")(getInt16Array.toJsFn)
-    __obj.updateDynamic("getInt32")(getInt32.toJsFn)
-    __obj.updateDynamic("getInt32Array")(getInt32Array.toJsFn)
-    __obj.updateDynamic("getInt64")(getInt64.toJsFn)
-    __obj.updateDynamic("getInt64Array")(getInt64Array.toJsFn)
-    __obj.updateDynamic("getPoint")(getPoint.toJsFn)
-    __obj.updateDynamic("getPointArray")(getPointArray.toJsFn)
-    __obj.updateDynamic("getRect")(getRect.toJsFn)
-    __obj.updateDynamic("getRectArray")(getRectArray.toJsFn)
-    __obj.updateDynamic("getSingle")(getSingle.toJsFn)
-    __obj.updateDynamic("getSingleArray")(getSingleArray.toJsFn)
-    __obj.updateDynamic("getSize")(getSize.toJsFn)
-    __obj.updateDynamic("getSizeArray")(getSizeArray.toJsFn)
-    __obj.updateDynamic("getString")(getString.toJsFn)
-    __obj.updateDynamic("getStringArray")(getStringArray.toJsFn)
-    __obj.updateDynamic("getTimeSpan")(getTimeSpan.toJsFn)
-    __obj.updateDynamic("getTimeSpanArray")(getTimeSpanArray.toJsFn)
-    __obj.updateDynamic("getUInt16")(getUInt16.toJsFn)
-    __obj.updateDynamic("getUInt16Array")(getUInt16Array.toJsFn)
-    __obj.updateDynamic("getUInt32")(getUInt32.toJsFn)
-    __obj.updateDynamic("getUInt32Array")(getUInt32Array.toJsFn)
-    __obj.updateDynamic("getUInt64")(getUInt64.toJsFn)
-    __obj.updateDynamic("getUInt64Array")(getUInt64Array.toJsFn)
-    __obj.updateDynamic("getUInt8")(getUInt8.toJsFn)
-    __obj.updateDynamic("getUInt8Array")(getUInt8Array.toJsFn)
+    val __obj = js.Dynamic.literal(getBoolean = getBoolean.toJsFn, getBooleanArray = getBooleanArray.toJsFn, getChar16 = getChar16.toJsFn, getChar16Array = getChar16Array.toJsFn, getDateTime = getDateTime.toJsFn, getDateTimeArray = getDateTimeArray.toJsFn, getDouble = getDouble.toJsFn, getDoubleArray = getDoubleArray.toJsFn, getGuid = getGuid.toJsFn, getGuidArray = getGuidArray.toJsFn, getInspectableArray = getInspectableArray.toJsFn, getInt16 = getInt16.toJsFn, getInt16Array = getInt16Array.toJsFn, getInt32 = getInt32.toJsFn, getInt32Array = getInt32Array.toJsFn, getInt64 = getInt64.toJsFn, getInt64Array = getInt64Array.toJsFn, getPoint = getPoint.toJsFn, getPointArray = getPointArray.toJsFn, getRect = getRect.toJsFn, getRectArray = getRectArray.toJsFn, getSingle = getSingle.toJsFn, getSingleArray = getSingleArray.toJsFn, getSize = getSize.toJsFn, getSizeArray = getSizeArray.toJsFn, getString = getString.toJsFn, getStringArray = getStringArray.toJsFn, getTimeSpan = getTimeSpan.toJsFn, getTimeSpanArray = getTimeSpanArray.toJsFn, getUInt16 = getUInt16.toJsFn, getUInt16Array = getUInt16Array.toJsFn, getUInt32 = getUInt32.toJsFn, getUInt32Array = getUInt32Array.toJsFn, getUInt64 = getUInt64.toJsFn, getUInt64Array = getUInt64Array.toJsFn, getUInt8 = getUInt8.toJsFn, getUInt8Array = getUInt8Array.toJsFn, isNumericScalar = isNumericScalar.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReferenceArray[T]]
   }
+  
+  extension [Self <: IReferenceArray[?], T](x: Self & IReferenceArray[T]) {
+    
+    inline def setValue(value: js.Array[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueVarargs(value: T*): Self = StObject.set(x, "value", js.Array(value*))
+  }
 }
-

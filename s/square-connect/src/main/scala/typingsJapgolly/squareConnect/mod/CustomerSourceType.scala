@@ -1,8 +1,8 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.squareConnect.squareConnectStrings.OTHER
@@ -25,48 +25,44 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.squareConnect.squareConnectStrings.THIRD_PARTY_IMPORT
   - typingsJapgolly.squareConnect.squareConnectStrings.UNMERGE_RECOVERY
 */
-trait CustomerSourceType extends js.Object
-
+trait CustomerSourceType extends StObject
 object CustomerSourceType {
-  @scala.inline
-  def APPOINTMENTS: typingsJapgolly.squareConnect.squareConnectStrings.APPOINTMENTS = this.cast("APPOINTMENTS")
-  @scala.inline
-  def COUPON: typingsJapgolly.squareConnect.squareConnectStrings.COUPON = this.cast("COUPON")
-  @scala.inline
-  def DELETION_RECOVERY: typingsJapgolly.squareConnect.squareConnectStrings.DELETION_RECOVERY = this.cast("DELETION_RECOVERY")
-  @scala.inline
-  def DIRECTORY: typingsJapgolly.squareConnect.squareConnectStrings.DIRECTORY = this.cast("DIRECTORY")
-  @scala.inline
-  def EGIFTING: typingsJapgolly.squareConnect.squareConnectStrings.EGIFTING = this.cast("EGIFTING")
-  @scala.inline
-  def EMAIL_COLLECTION: typingsJapgolly.squareConnect.squareConnectStrings.EMAIL_COLLECTION = this.cast("EMAIL_COLLECTION")
-  @scala.inline
-  def FEEDBACK: typingsJapgolly.squareConnect.squareConnectStrings.FEEDBACK = this.cast("FEEDBACK")
-  @scala.inline
-  def IMPORT: typingsJapgolly.squareConnect.squareConnectStrings.IMPORT = this.cast("IMPORT")
-  @scala.inline
-  def INSTANT_PROFILE: typingsJapgolly.squareConnect.squareConnectStrings.INSTANT_PROFILE = this.cast("INSTANT_PROFILE")
-  @scala.inline
-  def INVOICES: typingsJapgolly.squareConnect.squareConnectStrings.INVOICES = this.cast("INVOICES")
-  @scala.inline
-  def LOYALTY: typingsJapgolly.squareConnect.squareConnectStrings.LOYALTY = this.cast("LOYALTY")
-  @scala.inline
-  def MARKETING: typingsJapgolly.squareConnect.squareConnectStrings.MARKETING = this.cast("MARKETING")
-  @scala.inline
-  def MERGE: typingsJapgolly.squareConnect.squareConnectStrings.MERGE = this.cast("MERGE")
-  @scala.inline
-  def ONLINE_STORE: typingsJapgolly.squareConnect.squareConnectStrings.ONLINE_STORE = this.cast("ONLINE_STORE")
-  @scala.inline
-  def OTHER: typingsJapgolly.squareConnect.squareConnectStrings.OTHER = this.cast("OTHER")
-  @scala.inline
-  def TERMINAL: typingsJapgolly.squareConnect.squareConnectStrings.TERMINAL = this.cast("TERMINAL")
-  @scala.inline
-  def THIRD_PARTY: typingsJapgolly.squareConnect.squareConnectStrings.THIRD_PARTY = this.cast("THIRD_PARTY")
-  @scala.inline
-  def THIRD_PARTY_IMPORT: typingsJapgolly.squareConnect.squareConnectStrings.THIRD_PARTY_IMPORT = this.cast("THIRD_PARTY_IMPORT")
-  @scala.inline
-  def UNMERGE_RECOVERY: typingsJapgolly.squareConnect.squareConnectStrings.UNMERGE_RECOVERY = this.cast("UNMERGE_RECOVERY")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def APPOINTMENTS: typingsJapgolly.squareConnect.squareConnectStrings.APPOINTMENTS = "APPOINTMENTS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.APPOINTMENTS]
+  
+  inline def COUPON: typingsJapgolly.squareConnect.squareConnectStrings.COUPON = "COUPON".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.COUPON]
+  
+  inline def DELETION_RECOVERY: typingsJapgolly.squareConnect.squareConnectStrings.DELETION_RECOVERY = "DELETION_RECOVERY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DELETION_RECOVERY]
+  
+  inline def DIRECTORY: typingsJapgolly.squareConnect.squareConnectStrings.DIRECTORY = "DIRECTORY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DIRECTORY]
+  
+  inline def EGIFTING: typingsJapgolly.squareConnect.squareConnectStrings.EGIFTING = "EGIFTING".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EGIFTING]
+  
+  inline def EMAIL_COLLECTION: typingsJapgolly.squareConnect.squareConnectStrings.EMAIL_COLLECTION = "EMAIL_COLLECTION".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EMAIL_COLLECTION]
+  
+  inline def FEEDBACK: typingsJapgolly.squareConnect.squareConnectStrings.FEEDBACK = "FEEDBACK".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.FEEDBACK]
+  
+  inline def IMPORT: typingsJapgolly.squareConnect.squareConnectStrings.IMPORT = "IMPORT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IMPORT]
+  
+  inline def INSTANT_PROFILE: typingsJapgolly.squareConnect.squareConnectStrings.INSTANT_PROFILE = "INSTANT_PROFILE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INSTANT_PROFILE]
+  
+  inline def INVOICES: typingsJapgolly.squareConnect.squareConnectStrings.INVOICES = "INVOICES".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVOICES]
+  
+  inline def LOYALTY: typingsJapgolly.squareConnect.squareConnectStrings.LOYALTY = "LOYALTY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LOYALTY]
+  
+  inline def MARKETING: typingsJapgolly.squareConnect.squareConnectStrings.MARKETING = "MARKETING".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MARKETING]
+  
+  inline def MERGE: typingsJapgolly.squareConnect.squareConnectStrings.MERGE = "MERGE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MERGE]
+  
+  inline def ONLINE_STORE: typingsJapgolly.squareConnect.squareConnectStrings.ONLINE_STORE = "ONLINE_STORE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ONLINE_STORE]
+  
+  inline def OTHER: typingsJapgolly.squareConnect.squareConnectStrings.OTHER = "OTHER".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.OTHER]
+  
+  inline def TERMINAL: typingsJapgolly.squareConnect.squareConnectStrings.TERMINAL = "TERMINAL".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TERMINAL]
+  
+  inline def THIRD_PARTY: typingsJapgolly.squareConnect.squareConnectStrings.THIRD_PARTY = "THIRD_PARTY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.THIRD_PARTY]
+  
+  inline def THIRD_PARTY_IMPORT: typingsJapgolly.squareConnect.squareConnectStrings.THIRD_PARTY_IMPORT = "THIRD_PARTY_IMPORT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.THIRD_PARTY_IMPORT]
+  
+  inline def UNMERGE_RECOVERY: typingsJapgolly.squareConnect.squareConnectStrings.UNMERGE_RECOVERY = "UNMERGE_RECOVERY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UNMERGE_RECOVERY]
 }
-

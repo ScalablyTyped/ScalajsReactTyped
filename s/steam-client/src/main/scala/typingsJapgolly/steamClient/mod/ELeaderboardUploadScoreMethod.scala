@@ -1,35 +1,33 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ELeaderboardUploadScoreMethod extends js.Object
-
+sealed trait ELeaderboardUploadScoreMethod extends StObject
 @JSImport("steam-client", "ELeaderboardUploadScoreMethod")
 @js.native
-object ELeaderboardUploadScoreMethod extends js.Object {
-  @js.native
-  sealed trait ForceUpdate extends ELeaderboardUploadScoreMethod
-  
-  @js.native
-  sealed trait KeepBest extends ELeaderboardUploadScoreMethod
-  
-  @js.native
-  sealed trait None extends ELeaderboardUploadScoreMethod
+object ELeaderboardUploadScoreMethod extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ELeaderboardUploadScoreMethod with Double] = js.native
-  /* 2 */ @js.native
-  object ForceUpdate extends TopLevel[ForceUpdate with Double]
+  def apply(value: Double): js.UndefOr[ELeaderboardUploadScoreMethod & Double] = js.native
   
-  /* 1 */ @js.native
-  object KeepBest extends TopLevel[KeepBest with Double]
+  @js.native
+  sealed trait ForceUpdate
+    extends StObject
+       with ELeaderboardUploadScoreMethod
+  /* 2 */ val ForceUpdate: typingsJapgolly.steamClient.mod.ELeaderboardUploadScoreMethod.ForceUpdate & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait KeepBest
+    extends StObject
+       with ELeaderboardUploadScoreMethod
+  /* 1 */ val KeepBest: typingsJapgolly.steamClient.mod.ELeaderboardUploadScoreMethod.KeepBest & Double = js.native
   
+  @js.native
+  sealed trait None
+    extends StObject
+       with ELeaderboardUploadScoreMethod
+  /* 0 */ val None: typingsJapgolly.steamClient.mod.ELeaderboardUploadScoreMethod.None & Double = js.native
 }
-

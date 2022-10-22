@@ -1,29 +1,55 @@
-package typingsJapgolly.styledSystemCss
+package typingsJapgolly.styledSystemCss.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.csstype.mod.PropertiesFallback
+import typingsJapgolly.std.Exclude
+import typingsJapgolly.std.Pick
+import typingsJapgolly.styledSystemCss.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type CSSInterpolation = js.UndefOr[scala.Double | java.lang.String | typingsJapgolly.styledSystemCss.mod.CSSObject]
-  /**
-    * Omit exists in TypeScript >= v3.5, we're putting this here so typings can be
-    * used with earlier versions of TypeScript.
-    */
-  type Omit[T, K] = typingsJapgolly.std.Pick[T, typingsJapgolly.std.Exclude[java.lang.String, K]]
-  type ResponsiveStyleValue[T] = T | (js.Array[T | scala.Null])
-  type StandardCSSProperties = typingsJapgolly.csstype.mod.PropertiesFallback[scala.Double | java.lang.String]
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.styledSystemCss.KinkeyofStandardCSSProper
-    - typingsJapgolly.styledSystemCss.PartialScaleThemeProperti
-    - typingsJapgolly.styledSystemCss.mod.ThemeBreakPoints
-    - org.scalablytyped.runtime.StringDictionary[
-  / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @styled-system/css.@styled-system/css.Theme * / js.Object]
-  */
-  type Theme = typingsJapgolly.styledSystemCss.mod._Theme | (org.scalablytyped.runtime.StringDictionary[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @styled-system/css.@styled-system/css.Theme */ js.Object
-  ])
-  type ThemeValue[T] = js.Array[T] | (org.scalablytyped.runtime.StringDictionary[
-    T | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @styled-system/css.@styled-system/css.ThemeValue<T> */ js.Object)
-  ])
-}
+
+inline def default(): CssFunctionReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[CssFunctionReturnType]
+inline def default(input: SystemStyleObject): CssFunctionReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[CssFunctionReturnType]
+
+inline def css(): CssFunctionReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("css")().asInstanceOf[CssFunctionReturnType]
+inline def css(input: SystemStyleObject): CssFunctionReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(input.asInstanceOf[js.Any]).asInstanceOf[CssFunctionReturnType]
+
+inline def get(`object`: js.Object, key: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def get(`object`: js.Object, key: String, defaultValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def get(`object`: js.Object, key: js.Array[String]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def get(`object`: js.Object, key: js.Array[String], defaultValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+
+inline def responsive(styles: js.Object): js.Function1[/* theme */ js.Object, js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("responsive")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* theme */ js.Object, js.Array[Any]]]
+
+type CSSInterpolation = js.UndefOr[Double | String | CSSObject]
+
+type CSSOthersObjectForCSSObject = StringDictionary[CSSInterpolation]
+
+type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
+
+type ResponsiveStyleValue[T] = T | (js.Array[T | Null])
+
+type StandardCSSProperties = PropertiesFallback[Double | String, String]
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.styledSystemCss.mod.SystemCssProperties
+  - typingsJapgolly.styledSystemCss.mod.CSSPseudoSelectorProps
+  - typingsJapgolly.styledSystemCss.mod.CSSSelectorObject
+  - typingsJapgolly.styledSystemCss.mod.VariantProperty
+  - typingsJapgolly.styledSystemCss.mod.UseThemeFunction
+  - typingsJapgolly.styledSystemCss.mod.EmotionLabel
+  - scala.Null
+*/
+type SystemStyleObject = _SystemStyleObject | Null
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.styledSystemCss.anon.KinkeyofStandardCSSProper
+  - typingsJapgolly.styledSystemCss.anon.PartialScaleThemeProperti
+  - typingsJapgolly.styledSystemCss.mod.ThemeBreakPoints
+  - org.scalablytyped.runtime.StringDictionary[scala.Any]
+*/
+type Theme = _Theme | StringDictionary[Any]
+
+type ThemeValue[T] = js.Array[T] | (StringDictionary[T | Any])

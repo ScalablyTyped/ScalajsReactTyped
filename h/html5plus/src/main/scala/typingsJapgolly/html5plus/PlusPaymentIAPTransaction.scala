@@ -1,8 +1,8 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 购买IAP商品交易信息对象
@@ -10,25 +10,29 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
   */
-trait PlusPaymentIAPTransaction extends js.Object {
+trait PlusPaymentIAPTransaction extends StObject {
+  
   /**
     * 购买商品的信息
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   var payment: js.UndefOr[String] = js.undefined
+  
   /**
     * 购买商品的交易日期
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   var transactionDate: js.UndefOr[String] = js.undefined
+  
   /**
     * 购买商品的交易订单标识
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   var transactionIdentifier: js.UndefOr[String] = js.undefined
+  
   /**
     * 购买商品的交易收据
     * base64编码格式字符串数据。
@@ -36,6 +40,7 @@ trait PlusPaymentIAPTransaction extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   var transactionReceipt: js.UndefOr[String] = js.undefined
+  
   /**
     * 购买商品的交易状态
     * 可取值："1"为支付成功；"2"为支付失败；"3"为支付已恢复。
@@ -44,23 +49,33 @@ trait PlusPaymentIAPTransaction extends js.Object {
     */
   var transactionState: js.UndefOr[String] = js.undefined
 }
-
 object PlusPaymentIAPTransaction {
-  @scala.inline
-  def apply(
-    payment: String = null,
-    transactionDate: String = null,
-    transactionIdentifier: String = null,
-    transactionReceipt: String = null,
-    transactionState: String = null
-  ): PlusPaymentIAPTransaction = {
+  
+  inline def apply(): PlusPaymentIAPTransaction = {
     val __obj = js.Dynamic.literal()
-    if (payment != null) __obj.updateDynamic("payment")(payment.asInstanceOf[js.Any])
-    if (transactionDate != null) __obj.updateDynamic("transactionDate")(transactionDate.asInstanceOf[js.Any])
-    if (transactionIdentifier != null) __obj.updateDynamic("transactionIdentifier")(transactionIdentifier.asInstanceOf[js.Any])
-    if (transactionReceipt != null) __obj.updateDynamic("transactionReceipt")(transactionReceipt.asInstanceOf[js.Any])
-    if (transactionState != null) __obj.updateDynamic("transactionState")(transactionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusPaymentIAPTransaction]
   }
+  
+  extension [Self <: PlusPaymentIAPTransaction](x: Self) {
+    
+    inline def setPayment(value: String): Self = StObject.set(x, "payment", value.asInstanceOf[js.Any])
+    
+    inline def setPaymentUndefined: Self = StObject.set(x, "payment", js.undefined)
+    
+    inline def setTransactionDate(value: String): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionDateUndefined: Self = StObject.set(x, "transactionDate", js.undefined)
+    
+    inline def setTransactionIdentifier(value: String): Self = StObject.set(x, "transactionIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionIdentifierUndefined: Self = StObject.set(x, "transactionIdentifier", js.undefined)
+    
+    inline def setTransactionReceipt(value: String): Self = StObject.set(x, "transactionReceipt", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionReceiptUndefined: Self = StObject.set(x, "transactionReceipt", js.undefined)
+    
+    inline def setTransactionState(value: String): Self = StObject.set(x, "transactionState", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionStateUndefined: Self = StObject.set(x, "transactionState", js.undefined)
+  }
 }
-

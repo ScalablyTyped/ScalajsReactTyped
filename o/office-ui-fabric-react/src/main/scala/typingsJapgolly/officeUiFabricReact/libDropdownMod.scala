@@ -1,51 +1,73 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.dropdownTypesMod.IDropdownProps
-import typingsJapgolly.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType
+import typingsJapgolly.officeUiFabricReact.anon.Options
+import typingsJapgolly.officeUiFabricReact.libComponentsDropdownDropdownDottypesMod.IDropdownProps
+import typingsJapgolly.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Dropdown", JSImport.Namespace)
-@js.native
-object libDropdownMod extends js.Object {
+object libDropdownMod {
+  
+  @JSImport("office-ui-fabric-react/lib/Dropdown", "Dropdown")
   @js.native
-  class DropdownBase protected ()
-    extends typingsJapgolly.officeUiFabricReact.dropdownMod.DropdownBase {
+  val Dropdown: FunctionComponent[IDropdownProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Dropdown", "DropdownBase")
+  @js.native
+  open class DropdownBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsDropdownMod.DropdownBase {
     def this(props: IDropdownProps) = this()
   }
-  
-  val Dropdown: FunctionComponent[IDropdownProps] = js.native
   /* static members */
-  @js.native
-  object DropdownBase extends js.Object {
-    var defaultProps: AnonOptions = js.native
+  object DropdownBase {
+    
+    @JSImport("office-ui-fabric-react/lib/Dropdown", "DropdownBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/Dropdown", "DropdownBase.defaultProps")
+    @js.native
+    def defaultProps: Options = js.native
+    inline def defaultProps_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/Dropdown", "DropdownMenuItemType")
   @js.native
-  object DropdownMenuItemType extends js.Object {
-    /* 1 */ val Divider: typingsJapgolly.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Divider with Double = js.native
-    /* 2 */ val Header: typingsJapgolly.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Header with Double = js.native
-    /* 0 */ val Normal: typingsJapgolly.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Normal with Double = js.native
+  object DropdownMenuItemType extends StObject {
+    
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SelectableOptionMenuItemType with Double] = js.native
+    def apply(value: Double): js.UndefOr[SelectableOptionMenuItemType & Double] = js.native
+    
+    /* 1 */ val Divider: typingsJapgolly.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType.Divider & Double = js.native
+    
+    /* 2 */ val Header: typingsJapgolly.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType.Header & Double = js.native
+    
+    /* 0 */ val Normal: typingsJapgolly.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType.Normal & Double = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/Dropdown", "ResponsiveMode")
   @js.native
-  object ResponsiveMode extends js.Object {
-    /* 2 */ val large: typingsJapgolly.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.large with Double = js.native
-    /* 1 */ val medium: typingsJapgolly.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.medium with Double = js.native
-    /* 0 */ val small: typingsJapgolly.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.small with Double = js.native
-    /* 999 */ val unknown: typingsJapgolly.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.unknown with Double = js.native
-    /* 3 */ val xLarge: typingsJapgolly.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xLarge with Double = js.native
-    /* 4 */ val xxLarge: typingsJapgolly.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxLarge with Double = js.native
-    /* 5 */ val xxxLarge: typingsJapgolly.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxxLarge with Double = js.native
+  object ResponsiveMode extends StObject {
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typingsJapgolly.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode with Double
+        typingsJapgolly.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode & Double
       ] = js.native
+    
+    /* 2 */ val large: typingsJapgolly.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.large & Double = js.native
+    
+    /* 1 */ val medium: typingsJapgolly.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.medium & Double = js.native
+    
+    /* 0 */ val small: typingsJapgolly.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.small & Double = js.native
+    
+    /* 999 */ val unknown: typingsJapgolly.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.unknown & Double = js.native
+    
+    /* 3 */ val xLarge: typingsJapgolly.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.xLarge & Double = js.native
+    
+    /* 4 */ val xxLarge: typingsJapgolly.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.xxLarge & Double = js.native
+    
+    /* 5 */ val xxxLarge: typingsJapgolly.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.xxxLarge & Double = js.native
   }
-  
 }
-

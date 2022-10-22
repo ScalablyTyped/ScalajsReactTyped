@@ -1,22 +1,64 @@
 package typingsJapgolly.sinonChrome.mod
 
 import typingsJapgolly.sinonChrome.mod.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-chrome", "windows")
-@js.native
-object windows extends js.Object {
-  var create: SinonChromeStub = js.native
-  var get: SinonChromeStub = js.native
-  var getAll: SinonChromeStub = js.native
-  var getCurrent: SinonChromeStub = js.native
-  var getLastFocused: SinonChromeStub = js.native
-  var onCreated: Event = js.native
-  var onFocusChanged: Event = js.native
-  var onRemoved: Event = js.native
-  var remove: SinonChromeStub = js.native
-  var update: SinonChromeStub = js.native
+object windows {
+  
+  @JSImport("sinon-chrome", "windows")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("sinon-chrome", "windows.create")
+  @js.native
+  def create: SinonChromeStub = js.native
+  inline def create_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "windows.get")
+  @js.native
+  def get: SinonChromeStub = js.native
+  
+  @JSImport("sinon-chrome", "windows.getAll")
+  @js.native
+  def getAll: SinonChromeStub = js.native
+  inline def getAll_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAll")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "windows.getCurrent")
+  @js.native
+  def getCurrent: SinonChromeStub = js.native
+  inline def getCurrent_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCurrent")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "windows.getLastFocused")
+  @js.native
+  def getLastFocused: SinonChromeStub = js.native
+  inline def getLastFocused_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getLastFocused")(x.asInstanceOf[js.Any])
+  
+  inline def get_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "windows.onCreated")
+  @js.native
+  def onCreated: Event = js.native
+  inline def onCreated_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onCreated")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "windows.onFocusChanged")
+  @js.native
+  def onFocusChanged: Event = js.native
+  inline def onFocusChanged_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onFocusChanged")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "windows.onRemoved")
+  @js.native
+  def onRemoved: Event = js.native
+  inline def onRemoved_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRemoved")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "windows.remove")
+  @js.native
+  def remove: SinonChromeStub = js.native
+  inline def remove_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "windows.update")
+  @js.native
+  def update: SinonChromeStub = js.native
+  inline def update_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("update")(x.asInstanceOf[js.Any])
 }
-

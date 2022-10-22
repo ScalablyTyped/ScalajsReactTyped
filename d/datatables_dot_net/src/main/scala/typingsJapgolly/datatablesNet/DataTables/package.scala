@@ -1,124 +1,101 @@
-package typingsJapgolly.datatablesNet
+package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object DataTables {
-  //#endregion "language-settings"
-  //#endregion "Settings"
-  //#region "SettingsLegacy"
-  type ArrayStringNode = org.scalablytyped.runtime.StringDictionary[org.scalajs.dom.raw.Node]
-  type CookieCallbackLegacy = js.Function5[
-    /* name */ java.lang.String, 
-    /* data */ js.Any, 
-    /* expires */ java.lang.String, 
-    /* path */ java.lang.String, 
-    /* cookie */ java.lang.String, 
-    scala.Unit
-  ]
-  type FunctionAjax = js.Function3[
-    /* data */ js.Object, 
-    /* callback */ js.Function1[/* data */ js.Any, scala.Unit], 
-    /* settings */ typingsJapgolly.datatablesNet.DataTables.SettingsLegacy, 
-    scala.Unit
-  ]
-  type FunctionAjaxData = js.Function2[
-    /* data */ js.Object, 
-    /* settings */ typingsJapgolly.datatablesNet.DataTables.Settings, 
-    java.lang.String | js.Object
-  ]
-  type FunctionColumnCreatedCell = js.Function5[
-    /* cell */ org.scalajs.dom.raw.Node, 
-    /* cellData */ js.Any, 
-    /* rowData */ js.Any, 
-    /* row */ scala.Double, 
-    /* col */ scala.Double, 
-    scala.Unit
-  ]
-  type FunctionColumnRender = js.Function4[
-    /* data */ js.Any, 
-    /* type */ js.Any, 
-    /* row */ js.Any, 
-    /* meta */ typingsJapgolly.datatablesNet.DataTables.CellMetaSettings, 
-    js.Any
-  ]
-  //#endregion "other-settings"
-  //#region "callback-functions"
-  type FunctionCreateRow = js.Function3[
-    /* row */ org.scalajs.dom.raw.Node, 
-    /* data */ js.Array[js.Any] | js.Object, 
-    /* dataIndex */ scala.Double, 
-    scala.Unit
-  ]
-  type FunctionDrawCallback = js.Function1[/* settings */ typingsJapgolly.datatablesNet.DataTables.SettingsLegacy, scala.Unit]
-  /**
-    * @param data Data from the column cell to be analysed.
-    * @param DataTables settings object.
-    */
-  type FunctionExtTypeSettingsDetect = js.Function2[
-    /* data */ js.Any, 
-    /* settings */ typingsJapgolly.datatablesNet.DataTables.Settings, 
-    java.lang.String | scala.Null
-  ]
-  type FunctionFooterCallback = js.Function5[
-    /* tfoot */ org.scalajs.dom.raw.Node, 
-    /* data */ js.Array[js.Any], 
-    /* start */ scala.Double, 
-    /* end */ scala.Double, 
-    /* display */ js.Array[js.Any], 
-    scala.Unit
-  ]
-  type FunctionFormatNumber = js.Function1[/* formatNumber */ scala.Double, scala.Unit]
-  type FunctionHeaderCallback = js.Function5[
-    /* thead */ org.scalajs.dom.raw.Node, 
-    /* data */ js.Array[js.Any], 
-    /* start */ scala.Double, 
-    /* end */ scala.Double, 
-    /* display */ js.Array[js.Any], 
-    scala.Unit
-  ]
-  type FunctionInfoCallback = js.Function6[
-    /* settings */ typingsJapgolly.datatablesNet.DataTables.SettingsLegacy, 
-    /* start */ scala.Double, 
-    /* end */ scala.Double, 
-    /* mnax */ scala.Double, 
-    /* total */ scala.Double, 
-    /* pre */ java.lang.String, 
-    scala.Unit
-  ]
-  type FunctionInitComplete = js.Function2[
-    /* settings */ typingsJapgolly.datatablesNet.DataTables.SettingsLegacy, 
-    /* json */ js.Object, 
-    scala.Unit
-  ]
-  type FunctionPreDrawCallback = js.Function1[/* settings */ typingsJapgolly.datatablesNet.DataTables.SettingsLegacy, scala.Unit]
-  type FunctionRowCallback = js.Function3[
-    /* row */ org.scalajs.dom.raw.Node, 
-    /* data */ js.Array[js.Any] | js.Object, 
-    /* index */ scala.Double, 
-    scala.Unit
-  ]
-  type FunctionStateLoadCallback = js.Function1[/* settings */ typingsJapgolly.datatablesNet.DataTables.SettingsLegacy, scala.Unit]
-  type FunctionStateLoadParams = js.Function2[
-    /* settings */ typingsJapgolly.datatablesNet.DataTables.SettingsLegacy, 
-    /* data */ js.Object, 
-    scala.Unit
-  ]
-  type FunctionStateLoaded = js.Function2[
-    /* settings */ typingsJapgolly.datatablesNet.DataTables.SettingsLegacy, 
-    /* data */ js.Object, 
-    scala.Unit
-  ]
-  type FunctionStateSaveCallback = js.Function2[
-    /* settings */ typingsJapgolly.datatablesNet.DataTables.SettingsLegacy, 
-    /* data */ js.Object, 
-    scala.Unit
-  ]
-  type FunctionStateSaveParams = js.Function2[
-    /* settings */ typingsJapgolly.datatablesNet.DataTables.SettingsLegacy, 
-    /* data */ js.Object, 
-    scala.Unit
-  ]
-  type FunctionThrottle = js.Function1[/* data */ js.Any, scala.Unit]
-}
+
+//#endregion "language-settings"
+//#endregion "Settings"
+//#region "SettingsLegacy"
+type ArrayStringNode = StringDictionary[Node]
+
+type CookieCallbackLegacy = js.Function5[
+/* name */ String, 
+/* data */ Any, 
+/* expires */ String, 
+/* path */ String, 
+/* cookie */ String, 
+Unit]
+
+type FunctionAjax = js.Function3[
+/* data */ js.Object, 
+/* callback */ js.Function1[/* data */ Any, Unit], 
+/* settings */ SettingsLegacy, 
+Unit]
+
+type FunctionAjaxData = js.Function2[/* data */ js.Object, /* settings */ Settings, String | js.Object]
+
+type FunctionColumnCreatedCell = js.Function5[
+/* cell */ Node, 
+/* cellData */ Any, 
+/* rowData */ Any, 
+/* row */ Double, 
+/* col */ Double, 
+Unit]
+
+type FunctionColumnRender = js.Function4[/* data */ Any, /* type */ Any, /* row */ Any, /* meta */ CellMetaSettings, Any]
+
+//#endregion "other-settings"
+//#region "callback-functions"
+type FunctionCreateRow = js.Function4[
+/* row */ Node, 
+/* data */ js.Array[Any] | js.Object, 
+/* dataIndex */ Double, 
+/* cells */ js.Array[Node], 
+Unit]
+
+type FunctionDrawCallback = js.Function1[/* settings */ SettingsLegacy, Unit]
+
+/**
+  * @param data Data from the column cell to be analysed.
+  * @param DataTables settings object.
+  */
+type FunctionExtTypeSettingsDetect = js.Function2[/* data */ Any, /* settings */ Settings, String | Null]
+
+type FunctionFooterCallback = js.Function5[
+/* tfoot */ Node, 
+/* data */ js.Array[Any], 
+/* start */ Double, 
+/* end */ Double, 
+/* display */ js.Array[Any], 
+Unit]
+
+type FunctionFormatNumber = js.Function1[/* formatNumber */ Double, Unit]
+
+type FunctionHeaderCallback = js.Function5[
+/* thead */ Node, 
+/* data */ js.Array[Any], 
+/* start */ Double, 
+/* end */ Double, 
+/* display */ js.Array[Any], 
+Unit]
+
+type FunctionInfoCallback = js.Function6[
+/* settings */ SettingsLegacy, 
+/* start */ Double, 
+/* end */ Double, 
+/* mnax */ Double, 
+/* total */ Double, 
+/* pre */ String, 
+Unit]
+
+type FunctionInitComplete = js.Function2[/* settings */ SettingsLegacy, /* json */ js.Object, Unit]
+
+type FunctionPreDrawCallback = js.Function1[/* settings */ SettingsLegacy, Unit]
+
+type FunctionRowCallback = js.Function3[/* row */ Node, /* data */ js.Array[Any] | js.Object, /* index */ Double, Unit]
+
+type FunctionStateLoadCallback = js.Function1[/* settings */ SettingsLegacy, Unit]
+
+type FunctionStateLoadParams = js.Function2[/* settings */ SettingsLegacy, /* data */ js.Object, Unit]
+
+type FunctionStateLoaded = js.Function2[/* settings */ SettingsLegacy, /* data */ js.Object, Unit]
+
+type FunctionStateSaveCallback = js.Function2[/* settings */ SettingsLegacy, /* data */ js.Object, Unit]
+
+type FunctionStateSaveParams = js.Function2[/* settings */ SettingsLegacy, /* data */ js.Object, Unit]
+
+type FunctionThrottle = js.Function1[/* data */ Any, Unit]

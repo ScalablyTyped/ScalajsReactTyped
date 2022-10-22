@@ -1,79 +1,64 @@
 package typingsJapgolly.webpackBlocksDevServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackBlocksDevServerStrings {
-  @js.native
-  sealed trait debug extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait debug extends StObject
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait `errors-only` extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait `errors-only` extends StObject
+  inline def `errors-only`: `errors-only` = "errors-only".asInstanceOf[`errors-only`]
   
   @js.native
-  sealed trait minimal extends js.Object
+  sealed trait info extends StObject
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait minimal extends StObject
+  inline def minimal: minimal = "minimal".asInstanceOf[minimal]
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait silent extends js.Object
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait sockjs extends js.Object
+  sealed trait silent extends StObject
+  inline def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
-  sealed trait trace extends js.Object
+  sealed trait sockjs extends StObject
+  inline def sockjs: sockjs = "sockjs".asInstanceOf[sockjs]
   
   @js.native
-  sealed trait verbose extends js.Object
+  sealed trait trace extends StObject
+  inline def trace: trace = "trace".asInstanceOf[trace]
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait verbose extends StObject
+  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
-  sealed trait ws extends js.Object
+  sealed trait warning extends StObject
+  inline def warning: warning = "warning".asInstanceOf[warning]
   
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def `errors-only`: `errors-only` = "errors-only".asInstanceOf[`errors-only`]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def minimal: minimal = "minimal".asInstanceOf[minimal]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def sockjs: sockjs = "sockjs".asInstanceOf[sockjs]
-  @scala.inline
-  def trace: trace = "trace".asInstanceOf[trace]
-  @scala.inline
-  def verbose: verbose = "verbose".asInstanceOf[verbose]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
-  @scala.inline
-  def ws: ws = "ws".asInstanceOf[ws]
+  @js.native
+  sealed trait ws extends StObject
+  inline def ws: ws = "ws".asInstanceOf[ws]
 }
-

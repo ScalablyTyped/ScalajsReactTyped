@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Sensors.InclinometerReadingChangedEventArgs")
-@js.native
-class InclinometerReadingChangedEventArgs () extends IInclinometerReadingChangedEventArgs {
-  /* CompleteClass */
-  override var reading: InclinometerReading = js.native
+trait InclinometerReadingChangedEventArgs
+  extends StObject
+     with IInclinometerReadingChangedEventArgs
+object InclinometerReadingChangedEventArgs {
+  
+  inline def apply(reading: InclinometerReading): InclinometerReadingChangedEventArgs = {
+    val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InclinometerReadingChangedEventArgs]
+  }
 }
-

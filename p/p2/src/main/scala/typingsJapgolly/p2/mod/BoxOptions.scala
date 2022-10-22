@@ -1,36 +1,32 @@
 package typingsJapgolly.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BoxOptions extends SharedShapeOptions {
+trait BoxOptions
+  extends StObject
+     with SharedShapeOptions {
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object BoxOptions {
-  @scala.inline
-  def apply(
-    angle: Int | Double = null,
-    collisionGroup: Int | Double = null,
-    collisionMask: Int | Double = null,
-    collisionResponse: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    position: js.Tuple2[Double, Double] = null,
-    sensor: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
-  ): BoxOptions = {
+  
+  inline def apply(): BoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (collisionGroup != null) __obj.updateDynamic("collisionGroup")(collisionGroup.asInstanceOf[js.Any])
-    if (collisionMask != null) __obj.updateDynamic("collisionMask")(collisionMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(collisionResponse)) __obj.updateDynamic("collisionResponse")(collisionResponse.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensor)) __obj.updateDynamic("sensor")(sensor.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxOptions]
   }
+  
+  extension [Self <: BoxOptions](x: Self) {
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

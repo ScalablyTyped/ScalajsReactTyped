@@ -1,20 +1,25 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RetryOptions extends js.Object {
+trait RetryOptions extends StObject {
+  
   /** If a transient server error occurs, how long to wait before retrying the request, in milliseconds. (Default: 500 ms). */
   var interval: js.UndefOr[Double] = js.undefined
 }
-
 object RetryOptions {
-  @scala.inline
-  def apply(interval: Int | Double = null): RetryOptions = {
+  
+  inline def apply(): RetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions]
   }
+  
+  extension [Self <: RetryOptions](x: Self) {
+    
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+  }
 }
-

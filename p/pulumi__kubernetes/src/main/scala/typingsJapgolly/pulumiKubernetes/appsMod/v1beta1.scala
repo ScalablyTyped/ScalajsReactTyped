@@ -1,266 +1,536 @@
 package typingsJapgolly.pulumiKubernetes.appsMod
 
+import typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionListMod.ControllerRevisionList
+import typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionListMod.ControllerRevisionListArgs
+import typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionMod.ControllerRevision
+import typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionMod.ControllerRevisionArgs
+import typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionPatchMod.ControllerRevisionPatch
+import typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionPatchMod.ControllerRevisionPatchArgs
+import typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentListMod.DeploymentList
+import typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentListMod.DeploymentListArgs
+import typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentMod.Deployment
+import typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentMod.DeploymentArgs
+import typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentPatchMod.DeploymentPatch
+import typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentPatchMod.DeploymentPatchArgs
+import typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetListMod.StatefulSetList
+import typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetListMod.StatefulSetListArgs
+import typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetMod.StatefulSet
+import typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetMod.StatefulSetArgs
+import typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetPatchMod.StatefulSetPatch
+import typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetPatchMod.StatefulSetPatchArgs
 import typingsJapgolly.pulumiPulumi.outputMod.Input
 import typingsJapgolly.pulumiPulumi.resourceMod.CustomResourceOptions
 import typingsJapgolly.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/apps", "v1beta1")
-@js.native
-object v1beta1 extends js.Object {
-  @js.native
-  class ControllerRevision protected ()
-    extends typingsJapgolly.pulumiKubernetes.appsV1beta1Mod.ControllerRevision {
-    /**
-      * Create a apps.v1beta1.ControllerRevision resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.apps.v1beta1.ControllerRevision) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.apps.v1beta1.ControllerRevision,
-      opts: CustomResourceOptions
-    ) = this()
-  }
+object v1beta1 {
   
-  @js.native
-  class ControllerRevisionList protected ()
-    extends typingsJapgolly.pulumiKubernetes.appsV1beta1Mod.ControllerRevisionList {
+  object ControllerRevision {
+    
+    @JSImport("@pulumi/kubernetes/apps", "v1beta1.ControllerRevision")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * Create a apps.v1beta1.ControllerRevisionList resource with the given unique name, arguments, and options.
+      * Get an existing ControllerRevision resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
       *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.apps.v1beta1.ControllerRevisionList) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.apps.v1beta1.ControllerRevisionList,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  @js.native
-  class Deployment protected ()
-    extends typingsJapgolly.pulumiKubernetes.appsV1beta1Mod.Deployment {
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta2ControllerRevisionMod.ControllerRevision = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2ControllerRevisionMod.ControllerRevision]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta2ControllerRevisionMod.ControllerRevision = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2ControllerRevisionMod.ControllerRevision]
+    
     /**
-      * Create a apps.v1beta1.Deployment resource with the given unique name, arguments, and options.
+      * Get an existing ControllerRevision resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
       *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.apps.v1beta1.Deployment) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.apps.v1beta1.Deployment,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  @js.native
-  class DeploymentList protected ()
-    extends typingsJapgolly.pulumiKubernetes.appsV1beta1Mod.DeploymentList {
-    /**
-      * Create a apps.v1beta1.DeploymentList resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.apps.v1beta1.DeploymentList) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.apps.v1beta1.DeploymentList,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  @js.native
-  class StatefulSet protected ()
-    extends typingsJapgolly.pulumiKubernetes.appsV1beta1Mod.StatefulSet {
-    /**
-      * Create a apps.v1beta1.StatefulSet resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.apps.v1beta1.StatefulSet) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.apps.v1beta1.StatefulSet,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  @js.native
-  class StatefulSetList protected ()
-    extends typingsJapgolly.pulumiKubernetes.appsV1beta1Mod.StatefulSetList {
-    /**
-      * Create a apps.v1beta1.StatefulSetList resource with the given unique name, arguments, and options.
-      *
-      * @param name The _unique_ name of the resource.
-      * @param args The arguments to use to populate this resource's properties.
-      * @param opts A bag of options that control this resource's behavior.
-      */
-    def this(name: String) = this()
-    def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.apps.v1beta1.StatefulSetList) = this()
-    def this(
-      name: String,
-      args: typingsJapgolly.pulumiKubernetes.inputMod.apps.v1beta1.StatefulSetList,
-      opts: CustomResourceOptions
-    ) = this()
-  }
-  
-  /* static members */
-  @js.native
-  object ControllerRevision extends js.Object {
-    /**
-      * Get the state of an existing `ControllerRevision` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
-      *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
-      */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.controllerRevisionMod.ControllerRevision = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.controllerRevisionMod.ControllerRevision = js.native
+    inline def get_ControllerRevision(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionMod.ControllerRevision = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionMod.ControllerRevision]
+    inline def get_ControllerRevision(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionMod.ControllerRevision = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionMod.ControllerRevision]
+    
     /**
       * Returns true if the given object is an instance of ControllerRevision.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/ControllerRevision.ControllerRevision */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevision.ControllerRevision */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevision.ControllerRevision */ Boolean]
   }
   
-  /* static members */
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/apps", "v1beta1.ControllerRevision")
   @js.native
-  object ControllerRevisionList extends js.Object {
+  open class ControllerRevisionCls protected () extends ControllerRevision {
     /**
-      * Get the state of an existing `ControllerRevisionList` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Create a ControllerRevision resource with the given unique name, arguments, and options.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.controllerRevisionListMod.ControllerRevisionList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.controllerRevisionListMod.ControllerRevisionList = js.native
+    /** @deprecated apps/v1beta1/ControllerRevision is deprecated by apps/v1/ControllerRevision and not supported by Kubernetes v1.16+ clusters. */
+    def this(name: String) = this()
+    def this(name: String, args: ControllerRevisionArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: ControllerRevisionArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object ControllerRevisionList {
+    
+    @JSImport("@pulumi/kubernetes/apps", "v1beta1.ControllerRevisionList")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing ControllerRevisionList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta2ControllerRevisionListMod.ControllerRevisionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2ControllerRevisionListMod.ControllerRevisionList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta2ControllerRevisionListMod.ControllerRevisionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2ControllerRevisionListMod.ControllerRevisionList]
+    
+    /**
+      * Get an existing ControllerRevisionList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_ControllerRevisionList(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionListMod.ControllerRevisionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionListMod.ControllerRevisionList]
+    inline def get_ControllerRevisionList(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionListMod.ControllerRevisionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionListMod.ControllerRevisionList]
+    
     /**
       * Returns true if the given object is an instance of ControllerRevisionList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/ControllerRevisionList.ControllerRevisionList */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevisionList.ControllerRevisionList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevisionList.ControllerRevisionList */ Boolean]
   }
   
-  /* static members */
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/apps", "v1beta1.ControllerRevisionList")
   @js.native
-  object Deployment extends js.Object {
+  open class ControllerRevisionListCls protected () extends ControllerRevisionList {
     /**
-      * Get the state of an existing `Deployment` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Create a ControllerRevisionList resource with the given unique name, arguments, and options.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.deploymentMod.Deployment = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.deploymentMod.Deployment = js.native
+    def this(name: String) = this()
+    def this(name: String, args: ControllerRevisionListArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: ControllerRevisionListArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object ControllerRevisionPatch {
+    
+    @JSImport("@pulumi/kubernetes/apps", "v1beta1.ControllerRevisionPatch")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing ControllerRevisionPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionPatchMod.ControllerRevisionPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionPatchMod.ControllerRevisionPatch]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionPatchMod.ControllerRevisionPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1ControllerRevisionPatchMod.ControllerRevisionPatch]
+    
+    /**
+      * Get an existing ControllerRevisionPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_ControllerRevisionPatch(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta2ControllerRevisionPatchMod.ControllerRevisionPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2ControllerRevisionPatchMod.ControllerRevisionPatch]
+    inline def get_ControllerRevisionPatch(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta2ControllerRevisionPatchMod.ControllerRevisionPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2ControllerRevisionPatchMod.ControllerRevisionPatch]
+    
+    /**
+      * Returns true if the given object is an instance of ControllerRevisionPatch.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevisionPatch.ControllerRevisionPatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevisionPatch.ControllerRevisionPatch */ Boolean]
+  }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/apps", "v1beta1.ControllerRevisionPatch")
+  @js.native
+  open class ControllerRevisionPatchCls protected () extends ControllerRevisionPatch {
+    /**
+      * Create a ControllerRevisionPatch resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    /** @deprecated apps/v1beta1/ControllerRevision is deprecated by apps/v1/ControllerRevision and not supported by Kubernetes v1.16+ clusters. */
+    def this(name: String) = this()
+    def this(name: String, args: ControllerRevisionPatchArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: ControllerRevisionPatchArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object Deployment {
+    
+    @JSImport("@pulumi/kubernetes/apps", "v1beta1.Deployment")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing Deployment resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta2DeploymentMod.Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2DeploymentMod.Deployment]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta2DeploymentMod.Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2DeploymentMod.Deployment]
+    
+    /**
+      * Get an existing Deployment resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_Deployment(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.extensionsV1beta1DeploymentMod.Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.extensionsV1beta1DeploymentMod.Deployment]
+    inline def get_Deployment(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.extensionsV1beta1DeploymentMod.Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.extensionsV1beta1DeploymentMod.Deployment]
+    
+    /**
+      * Get an existing Deployment resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_Deployment_Deployment(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentMod.Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentMod.Deployment]
+    inline def get_Deployment_Deployment(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentMod.Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentMod.Deployment]
+    
     /**
       * Returns true if the given object is an instance of Deployment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/Deployment.Deployment */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/deployment.Deployment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/deployment.Deployment */ Boolean]
   }
   
-  /* static members */
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/apps", "v1beta1.Deployment")
   @js.native
-  object DeploymentList extends js.Object {
+  open class DeploymentCls protected () extends Deployment {
     /**
-      * Get the state of an existing `DeploymentList` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Create a Deployment resource with the given unique name, arguments, and options.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.deploymentListMod.DeploymentList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.deploymentListMod.DeploymentList = js.native
+    /** @deprecated apps/v1beta1/Deployment is deprecated by apps/v1/Deployment and not supported by Kubernetes v1.16+ clusters. */
+    def this(name: String) = this()
+    def this(name: String, args: DeploymentArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: DeploymentArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object DeploymentList {
+    
+    @JSImport("@pulumi/kubernetes/apps", "v1beta1.DeploymentList")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing DeploymentList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta2DeploymentListMod.DeploymentList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2DeploymentListMod.DeploymentList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta2DeploymentListMod.DeploymentList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2DeploymentListMod.DeploymentList]
+    
+    /**
+      * Get an existing DeploymentList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_DeploymentList(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentListMod.DeploymentList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentListMod.DeploymentList]
+    inline def get_DeploymentList(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentListMod.DeploymentList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentListMod.DeploymentList]
+    
+    /**
+      * Get an existing DeploymentList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_DeploymentList_DeploymentList(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.extensionsV1beta1DeploymentListMod.DeploymentList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.extensionsV1beta1DeploymentListMod.DeploymentList]
+    inline def get_DeploymentList_DeploymentList(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.extensionsV1beta1DeploymentListMod.DeploymentList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.extensionsV1beta1DeploymentListMod.DeploymentList]
+    
     /**
       * Returns true if the given object is an instance of DeploymentList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/DeploymentList.DeploymentList */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/deploymentList.DeploymentList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/deploymentList.DeploymentList */ Boolean]
   }
   
-  /* static members */
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/apps", "v1beta1.DeploymentList")
   @js.native
-  object StatefulSet extends js.Object {
+  open class DeploymentListCls protected () extends DeploymentList {
     /**
-      * Get the state of an existing `StatefulSet` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Create a DeploymentList resource with the given unique name, arguments, and options.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.statefulSetMod.StatefulSet = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.statefulSetMod.StatefulSet = js.native
+    def this(name: String) = this()
+    def this(name: String, args: DeploymentListArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: DeploymentListArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object DeploymentPatch {
+    
+    @JSImport("@pulumi/kubernetes/apps", "v1beta1.DeploymentPatch")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing DeploymentPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentPatchMod.DeploymentPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentPatchMod.DeploymentPatch]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentPatchMod.DeploymentPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1DeploymentPatchMod.DeploymentPatch]
+    
+    /**
+      * Get an existing DeploymentPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_DeploymentPatch(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta2DeploymentPatchMod.DeploymentPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2DeploymentPatchMod.DeploymentPatch]
+    inline def get_DeploymentPatch(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta2DeploymentPatchMod.DeploymentPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2DeploymentPatchMod.DeploymentPatch]
+    
+    /**
+      * Get an existing DeploymentPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_DeploymentPatch_DeploymentPatch(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.extensionsV1beta1DeploymentPatchMod.DeploymentPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.extensionsV1beta1DeploymentPatchMod.DeploymentPatch]
+    inline def get_DeploymentPatch_DeploymentPatch(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.extensionsV1beta1DeploymentPatchMod.DeploymentPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.extensionsV1beta1DeploymentPatchMod.DeploymentPatch]
+    
+    /**
+      * Returns true if the given object is an instance of DeploymentPatch.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/deploymentPatch.DeploymentPatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/deploymentPatch.DeploymentPatch */ Boolean]
+  }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/apps", "v1beta1.DeploymentPatch")
+  @js.native
+  open class DeploymentPatchCls protected () extends DeploymentPatch {
+    /**
+      * Create a DeploymentPatch resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    /** @deprecated apps/v1beta1/Deployment is deprecated by apps/v1/Deployment and not supported by Kubernetes v1.16+ clusters. */
+    def this(name: String) = this()
+    def this(name: String, args: DeploymentPatchArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: DeploymentPatchArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object StatefulSet {
+    
+    @JSImport("@pulumi/kubernetes/apps", "v1beta1.StatefulSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing StatefulSet resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetMod.StatefulSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetMod.StatefulSet]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetMod.StatefulSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetMod.StatefulSet]
+    
+    /**
+      * Get an existing StatefulSet resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_StatefulSet(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta2StatefulSetMod.StatefulSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2StatefulSetMod.StatefulSet]
+    inline def get_StatefulSet(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta2StatefulSetMod.StatefulSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2StatefulSetMod.StatefulSet]
+    
     /**
       * Returns true if the given object is an instance of StatefulSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/StatefulSet.StatefulSet */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/statefulSet.StatefulSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/statefulSet.StatefulSet */ Boolean]
   }
   
-  /* static members */
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/apps", "v1beta1.StatefulSet")
   @js.native
-  object StatefulSetList extends js.Object {
+  open class StatefulSetCls protected () extends StatefulSet {
     /**
-      * Get the state of an existing `StatefulSetList` resource, as identified by `id`.
-      * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-      * Kubernetes convention) the ID becomes `default/<name>`.
+      * Create a StatefulSet resource with the given unique name, arguments, and options.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
-      * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-      * @param opts Uniquely specifies a CustomResource to select.
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
       */
-    def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.statefulSetListMod.StatefulSetList = js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.statefulSetListMod.StatefulSetList = js.native
+    /** @deprecated apps/v1beta1/StatefulSet is deprecated by apps/v1/StatefulSet and not supported by Kubernetes v1.16+ clusters. */
+    def this(name: String) = this()
+    def this(name: String, args: StatefulSetArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: StatefulSetArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object StatefulSetList {
+    
+    @JSImport("@pulumi/kubernetes/apps", "v1beta1.StatefulSetList")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing StatefulSetList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta2StatefulSetListMod.StatefulSetList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2StatefulSetListMod.StatefulSetList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta2StatefulSetListMod.StatefulSetList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2StatefulSetListMod.StatefulSetList]
+    
+    /**
+      * Get an existing StatefulSetList resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_StatefulSetList(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetListMod.StatefulSetList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetListMod.StatefulSetList]
+    inline def get_StatefulSetList(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetListMod.StatefulSetList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetListMod.StatefulSetList]
+    
     /**
       * Returns true if the given object is an instance of StatefulSetList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/StatefulSetList.StatefulSetList */ Boolean = js.native
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/statefulSetList.StatefulSetList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/statefulSetList.StatefulSetList */ Boolean]
   }
   
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/apps", "v1beta1.StatefulSetList")
+  @js.native
+  open class StatefulSetListCls protected () extends StatefulSetList {
+    /**
+      * Create a StatefulSetList resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: StatefulSetListArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: StatefulSetListArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object StatefulSetPatch {
+    
+    @JSImport("@pulumi/kubernetes/apps", "v1beta1.StatefulSetPatch")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Get an existing StatefulSetPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta2StatefulSetPatchMod.StatefulSetPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2StatefulSetPatchMod.StatefulSetPatch]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta2StatefulSetPatchMod.StatefulSetPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta2StatefulSetPatchMod.StatefulSetPatch]
+    
+    /**
+      * Get an existing StatefulSetPatch resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
+      */
+    inline def get_StatefulSetPatch(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetPatchMod.StatefulSetPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetPatchMod.StatefulSetPatch]
+    inline def get_StatefulSetPatch(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetPatchMod.StatefulSetPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.appsV1beta1StatefulSetPatchMod.StatefulSetPatch]
+    
+    /**
+      * Returns true if the given object is an instance of StatefulSetPatch.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/statefulSetPatch.StatefulSetPatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/statefulSetPatch.StatefulSetPatch */ Boolean]
+  }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@pulumi/kubernetes/apps", "v1beta1.StatefulSetPatch")
+  @js.native
+  open class StatefulSetPatchCls protected () extends StatefulSetPatch {
+    /**
+      * Create a StatefulSetPatch resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    /** @deprecated apps/v1beta1/StatefulSet is deprecated by apps/v1/StatefulSet and not supported by Kubernetes v1.16+ clusters. */
+    def this(name: String) = this()
+    def this(name: String, args: StatefulSetPatchArgs) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+    def this(name: String, args: StatefulSetPatchArgs, opts: CustomResourceOptions) = this()
+  }
 }
-

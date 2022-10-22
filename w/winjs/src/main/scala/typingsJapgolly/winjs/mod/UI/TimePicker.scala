@@ -1,9 +1,9 @@
 package typingsJapgolly.winjs.mod.UI
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows users to select time values.
@@ -17,24 +17,32 @@ import scala.scalajs.js.annotation._
   * @param element The DOM element associated with the TimePicker control.
   * @param options The set of options to be applied initially to the TimePicker control. The options are the following: clock.
   **/
-class TimePicker ()
-  extends typingsJapgolly.winjs.WinJS.UI.TimePicker {
+open class TimePicker ()
+  extends StObject
+     with typingsJapgolly.winjs.WinJS.UI.TimePicker {
   def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
+  def this(element: Unit, options: Any) = this()
 }
-
-/* static members */
-@JSImport("winjs", "UI.TimePicker")
-@js.native
-object TimePicker extends js.Object {
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
+object TimePicker {
+  
+  @JSImport("winjs", "UI.TimePicker")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
     **/
-  def getInformation(clock: js.Any, minuteIncrement: js.Any): js.Any = js.native
-  def getInformation(clock: js.Any, minuteIncrement: js.Any, timerPatterns: js.Any): js.Any = js.native
+  /* static member */
+  inline def getInformation(clock: Any, minuteIncrement: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(clock.asInstanceOf[js.Any], minuteIncrement.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getInformation(clock: Any, minuteIncrement: Any, timerPatterns: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(clock.asInstanceOf[js.Any], minuteIncrement.asInstanceOf[js.Any], timerPatterns.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  /**
+    * Indicates that the object is compatibile with declarative processing.
+    **/
+  /* static member */
+  @JSImport("winjs", "UI.TimePicker.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }
-

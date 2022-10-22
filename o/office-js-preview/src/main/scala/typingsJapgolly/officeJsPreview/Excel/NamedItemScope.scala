@@ -1,32 +1,34 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NamedItemScope extends js.Object
-
+sealed trait NamedItemScope extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.4]
   */
 @JSGlobal("Excel.NamedItemScope")
 @js.native
-object NamedItemScope extends js.Object {
+object NamedItemScope extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.4]
+    */
   @js.native
-  sealed trait workbook extends NamedItemScope
+  sealed trait workbook
+    extends StObject
+       with NamedItemScope
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.4]
+    */
   @js.native
-  sealed trait worksheet extends NamedItemScope
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[NamedItemScope with String] = js.native
-  /* "Workbook" */ @js.native
-  object workbook extends TopLevel[workbook with String]
-  
-  /* "Worksheet" */ @js.native
-  object worksheet extends TopLevel[worksheet with String]
-  
+  sealed trait worksheet
+    extends StObject
+       with NamedItemScope
 }
-

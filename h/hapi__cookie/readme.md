@@ -10,10 +10,10 @@ Cookie authentication plugin
 | ------------------ | :-------------: |
 | Full name          | @hapi/cookie |
 | Keywords           | hapi, plugin, auth, cookie, session |
-| # releases         | 4 |
-| # dependents       | 10 |
-| # downloads        | 57310 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 60982.0 |
+| # stars            | 231.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/hapi-auth-cookie#readme)

@@ -1,21 +1,26 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputEvent extends UIEvent {
+trait InputEvent
+  extends StObject
+     with UIEvent {
+  
+  /* standard dom */
   val data: java.lang.String | Null = js.native
+  
+  /* standard dom */
+  val dataTransfer: org.scalajs.dom.DataTransfer | Null = js.native
+  
+  /* standard dom */
+  def getTargetRanges(): js.Array[StaticRange] = js.native
+  
+  /* standard dom */
   val inputType: java.lang.String = js.native
+  
+  /* standard dom */
   val isComposing: scala.Boolean = js.native
 }
-
-@JSGlobal("InputEvent")
-@js.native
-object InputEvent
-  extends Instantiable1[/* type */ java.lang.String, InputEvent]
-     with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ InputEventInit, InputEvent]
-

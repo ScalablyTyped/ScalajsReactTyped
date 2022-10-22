@@ -1,18 +1,25 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.User")
 @js.native
-class User () extends Principal {
+trait User
+  extends StObject
+     with Principal {
+  
   def get_email(): String = js.native
+  
   def get_groups(): GroupCollection = js.native
+  
   def get_isSiteAdmin(): Boolean = js.native
+  
   def get_userId(): UserIdInfo = js.native
+  
   def set_email(value: String): Unit = js.native
+  
   def set_isSiteAdmin(value: Boolean): Unit = js.native
+  
   def update(): Unit = js.native
 }
-

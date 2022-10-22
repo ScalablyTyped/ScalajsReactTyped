@@ -1,13 +1,17 @@
 package typingsJapgolly.winrt.Windows.Graphics.Imaging
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Graphics.Imaging.PixelDataProvider")
-@js.native
-class PixelDataProvider () extends IPixelDataProvider {
-  /* CompleteClass */
-  override def detachPixelData(): scala.scalajs.js.typedarray.Uint8Array = js.native
+trait PixelDataProvider
+  extends StObject
+     with IPixelDataProvider
+object PixelDataProvider {
+  
+  inline def apply(detachPixelData: CallbackTo[js.typedarray.Uint8Array]): PixelDataProvider = {
+    val __obj = js.Dynamic.literal(detachPixelData = detachPixelData.toJsFn)
+    __obj.asInstanceOf[PixelDataProvider]
+  }
 }
-

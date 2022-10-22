@@ -10,10 +10,10 @@ Blazing-fast binary parser builder
 | ------------------ | :-------------: |
 | Full name          | binary-parser |
 | Keywords           | binary, parser, decode, unpack, struct, buffer, bit |
-| # releases         | 6 |
-| # dependents       | 70 |
-| # downloads        | 115259 |
-| # stars            | 5 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 16609.666666666668 |
+| # stars            | 565.0 |
 
 ## Links
 - [Homepage](https://github.com/keichi/binary-parser#readme)

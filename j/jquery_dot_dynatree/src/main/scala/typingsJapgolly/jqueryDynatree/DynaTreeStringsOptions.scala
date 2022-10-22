@@ -1,21 +1,30 @@
 package typingsJapgolly.jqueryDynatree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DynaTreeStringsOptions extends js.Object {
+trait DynaTreeStringsOptions extends StObject {
+  
   var loadError: js.UndefOr[String] = js.undefined
+  
   var loading: js.UndefOr[String] = js.undefined
 }
-
 object DynaTreeStringsOptions {
-  @scala.inline
-  def apply(loadError: String = null, loading: String = null): DynaTreeStringsOptions = {
+  
+  inline def apply(): DynaTreeStringsOptions = {
     val __obj = js.Dynamic.literal()
-    if (loadError != null) __obj.updateDynamic("loadError")(loadError.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynaTreeStringsOptions]
   }
+  
+  extension [Self <: DynaTreeStringsOptions](x: Self) {
+    
+    inline def setLoadError(value: String): Self = StObject.set(x, "loadError", value.asInstanceOf[js.Any])
+    
+    inline def setLoadErrorUndefined: Self = StObject.set(x, "loadError", js.undefined)
+    
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+  }
 }
-

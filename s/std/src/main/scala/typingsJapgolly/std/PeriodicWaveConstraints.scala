@@ -1,19 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PeriodicWaveConstraints extends js.Object {
+trait PeriodicWaveConstraints extends StObject {
+  
+  /* standard dom */
   var disableNormalization: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object PeriodicWaveConstraints {
-  @scala.inline
-  def apply(disableNormalization: js.UndefOr[scala.Boolean] = js.undefined): PeriodicWaveConstraints = {
+  
+  inline def apply(): PeriodicWaveConstraints = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableNormalization)) __obj.updateDynamic("disableNormalization")(disableNormalization.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeriodicWaveConstraints]
   }
+  
+  extension [Self <: PeriodicWaveConstraints](x: Self) {
+    
+    inline def setDisableNormalization(value: scala.Boolean): Self = StObject.set(x, "disableNormalization", value.asInstanceOf[js.Any])
+    
+    inline def setDisableNormalizationUndefined: Self = StObject.set(x, "disableNormalization", js.undefined)
+  }
 }
-

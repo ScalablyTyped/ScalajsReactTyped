@@ -1,21 +1,30 @@
 package typingsJapgolly.googleCloudProjectify
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@google-cloud/projectify", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@google-cloud/projectify", JSImport.Namespace)
   @js.native
-  class MissingProjectIdError () extends Error {
+  val ^ : js.Any = js.native
+  
+  @JSImport("@google-cloud/projectify", "MissingProjectIdError")
+  @js.native
+  open class MissingProjectIdError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
   }
   
-  def replaceProjectIdToken(value: js.Any, projectId: String): js.Any = js.native
+  inline def replaceProjectIdToken(value: Any, projectId: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceProjectIdToken")(value.asInstanceOf[js.Any], projectId.asInstanceOf[js.Any])).asInstanceOf[Any]
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gm.gmStrings.Undefined
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gm.gmStrings.Background
   - typingsJapgolly.gm.gmStrings.Previous
 */
-trait DisposeMethod extends js.Object
-
+trait DisposeMethod extends StObject
 object DisposeMethod {
-  @scala.inline
-  def Background: typingsJapgolly.gm.gmStrings.Background = this.cast("Background")
-  @scala.inline
-  def None: typingsJapgolly.gm.gmStrings.None = this.cast("None")
-  @scala.inline
-  def Previous: typingsJapgolly.gm.gmStrings.Previous = this.cast("Previous")
-  @scala.inline
-  def Undefined: typingsJapgolly.gm.gmStrings.Undefined = this.cast("Undefined")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Background: typingsJapgolly.gm.gmStrings.Background = "Background".asInstanceOf[typingsJapgolly.gm.gmStrings.Background]
+  
+  inline def None: typingsJapgolly.gm.gmStrings.None = "None".asInstanceOf[typingsJapgolly.gm.gmStrings.None]
+  
+  inline def Previous: typingsJapgolly.gm.gmStrings.Previous = "Previous".asInstanceOf[typingsJapgolly.gm.gmStrings.Previous]
+  
+  inline def Undefined: typingsJapgolly.gm.gmStrings.Undefined = "Undefined".asInstanceOf[typingsJapgolly.gm.gmStrings.Undefined]
 }
-

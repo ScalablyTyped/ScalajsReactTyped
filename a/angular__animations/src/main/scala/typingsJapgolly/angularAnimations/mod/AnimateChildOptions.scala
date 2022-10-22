@@ -1,26 +1,26 @@
 package typingsJapgolly.angularAnimations.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnimateChildOptions extends AnimationOptions {
+trait AnimateChildOptions
+  extends StObject
+     with AnimationOptions {
+  
   var duration: js.UndefOr[Double | String] = js.undefined
 }
-
 object AnimateChildOptions {
-  @scala.inline
-  def apply(
-    delay: Double | String = null,
-    duration: Double | String = null,
-    params: StringDictionary[js.Any] = null
-  ): AnimateChildOptions = {
+  
+  inline def apply(): AnimateChildOptions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimateChildOptions]
   }
+  
+  extension [Self <: AnimateChildOptions](x: Self) {
+    
+    inline def setDuration(value: Double | String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+  }
 }
-

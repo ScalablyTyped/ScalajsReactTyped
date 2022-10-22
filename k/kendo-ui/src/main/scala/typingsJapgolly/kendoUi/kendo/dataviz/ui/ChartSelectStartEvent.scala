@@ -1,32 +1,39 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartSelectStartEvent extends ChartEvent {
-  var axis: js.UndefOr[js.Any] = js.undefined
-  var from: js.UndefOr[js.Any] = js.undefined
-  var to: js.UndefOr[js.Any] = js.undefined
+trait ChartSelectStartEvent
+  extends StObject
+     with ChartEvent {
+  
+  var axis: js.UndefOr[Any] = js.undefined
+  
+  var from: js.UndefOr[Any] = js.undefined
+  
+  var to: js.UndefOr[Any] = js.undefined
 }
-
 object ChartSelectStartEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Chart,
-    axis: js.Any = null,
-    from: js.Any = null,
-    to: js.Any = null
-  ): ChartSelectStartEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Chart): ChartSelectStartEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSelectStartEvent]
   }
+  
+  extension [Self <: ChartSelectStartEvent](x: Self) {
+    
+    inline def setAxis(value: Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    
+    inline def setFrom(value: Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setTo(value: Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+  }
 }
-

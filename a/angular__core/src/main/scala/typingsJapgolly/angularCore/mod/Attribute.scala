@@ -1,18 +1,24 @@
 package typingsJapgolly.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Attribute extends js.Object {
+trait Attribute extends StObject {
+  
   /**
     * The name of the attribute whose value can be injected.
     */
-  var attributeName: js.UndefOr[String] = js.undefined
+  var attributeName: String
 }
-
-@JSImport("@angular/core", "Attribute")
-@js.native
-object Attribute extends TopLevel[AttributeDecorator]
-
+object Attribute {
+  
+  @JSImport("@angular/core", "Attribute")
+  @js.native
+  val ^ : AttributeDecorator = js.native
+  
+  extension [Self <: Attribute](x: Self) {
+    
+    inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+  }
+}

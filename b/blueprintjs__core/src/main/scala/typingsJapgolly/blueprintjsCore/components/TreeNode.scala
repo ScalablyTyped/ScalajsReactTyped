@@ -1,86 +1,96 @@
 package typingsJapgolly.blueprintjsCore.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLDivElement
-import org.scalajs.dom.raw.HTMLSpanElement
-import typingsJapgolly.blueprintjsCore.propsMod.MaybeElement
-import typingsJapgolly.blueprintjsCore.treeNodeMod.ITreeNode
-import typingsJapgolly.blueprintjsCore.treeNodeMod.ITreeNodeProps
-import typingsJapgolly.blueprintjsIcons.iconNameMod.IconName
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLSpanElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
+import typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.ITreeNodeProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNodeInfo
+import typingsJapgolly.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TreeNode {
-  def apply[T](
-    depth: Double,
-    id: String | Double,
-    label: String | Element,
-    path: js.Array[Double],
-    childNodes: js.Array[ITreeNode[T]] = null,
-    className: String = null,
-    contentRef: (/* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], /* element */ HTMLDivElement | Null) => Callback = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    hasCaret: js.UndefOr[Boolean] = js.undefined,
-    icon: IconName | MaybeElement = null,
-    isExpanded: js.UndefOr[Boolean] = js.undefined,
-    isSelected: js.UndefOr[Boolean] = js.undefined,
-    nodeData: T = null,
-    onClick: (/* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLDivElement]) => Callback = null,
-    onCollapse: (/* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLSpanElement]) => Callback = null,
-    onContextMenu: (/* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLDivElement]) => Callback = null,
-    onDoubleClick: (/* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLDivElement]) => Callback = null,
-    onExpand: (/* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLSpanElement]) => Callback = null,
-    onMouseEnter: (/* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLDivElement]) => Callback = null,
-    onMouseLeave: (/* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLDivElement]) => Callback = null,
-    secondaryLabel: String | MaybeElement = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ITreeNodeProps[T], 
-    typingsJapgolly.blueprintjsCore.mod.TreeNode[T], 
-    Unit, 
-    ITreeNodeProps[T]
-  ] = {
-    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
-      if (childNodes != null) __obj.updateDynamic("childNodes")(childNodes.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (contentRef != null) __obj.updateDynamic("contentRef")(js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], t1: /* element */ org.scalajs.dom.raw.HTMLDivElement | scala.Null) => contentRef(t0, t1).runNow()))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCaret)) __obj.updateDynamic("hasCaret")(hasCaret.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
-    if (nodeData != null) __obj.updateDynamic("nodeData")(nodeData.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], t1: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onClick(t0, t1).runNow()))
-    if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], t1: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLSpanElement]) => onCollapse(t0, t1).runNow()))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], t1: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onContextMenu(t0, t1).runNow()))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], t1: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onDoubleClick(t0, t1).runNow()))
-    if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], t1: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLSpanElement]) => onExpand(t0, t1).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], t1: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseEnter(t0, t1).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T], t1: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseLeave(t0, t1).runNow()))
-    if (secondaryLabel != null) __obj.updateDynamic("secondaryLabel")(secondaryLabel.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsCore.treeNodeMod.ITreeNodeProps[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsCore.mod.TreeNode[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsCore.treeNodeMod.ITreeNodeProps[T]])(children: _*)
+  inline def apply[T](depth: Double, id: String | Double, label: String | Element, path: js.Array[Double]): Builder[T] = {
+    val __props = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[ITreeNodeProps[T]]))
   }
+  
   @JSImport("@blueprintjs/core", "TreeNode")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsCore.mod.TreeNode[T]] {
+    
+    inline def childNodes(value: js.Array[TreeNodeInfo[T]]): this.type = set("childNodes", value.asInstanceOf[js.Any])
+    
+    inline def childNodesVarargs(value: TreeNodeInfo[T]*): this.type = set("childNodes", js.Array(value*))
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def contentRef(
+      value: (/* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], /* element */ HTMLDivElement | Null) => Callback
+    ): this.type = set("contentRef", js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], t1: /* element */ HTMLDivElement | Null) => (value(t0, t1)).runNow()))
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def hasCaret(value: Boolean): this.type = set("hasCaret", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: BlueprintIcons16Id | MaybeElement): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def iconNull: this.type = set("icon", null)
+    
+    inline def iconVdomElement(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def isExpanded(value: Boolean): this.type = set("isExpanded", value.asInstanceOf[js.Any])
+    
+    inline def isSelected(value: Boolean): this.type = set("isSelected", value.asInstanceOf[js.Any])
+    
+    inline def nodeData(value: T): this.type = set("nodeData", value.asInstanceOf[js.Any])
+    
+    inline def onClick(
+      value: (/* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLDivElement]) => Callback
+    ): this.type = set("onClick", js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], t1: /* e */ ReactMouseEventFrom[HTMLDivElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onCollapse(
+      value: (/* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLSpanElement]) => Callback
+    ): this.type = set("onCollapse", js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], t1: /* e */ ReactMouseEventFrom[HTMLSpanElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onContextMenu(
+      value: (/* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLDivElement]) => Callback
+    ): this.type = set("onContextMenu", js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], t1: /* e */ ReactMouseEventFrom[HTMLDivElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onDoubleClick(
+      value: (/* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLDivElement]) => Callback
+    ): this.type = set("onDoubleClick", js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], t1: /* e */ ReactMouseEventFrom[HTMLDivElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onExpand(
+      value: (/* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLSpanElement]) => Callback
+    ): this.type = set("onExpand", js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], t1: /* e */ ReactMouseEventFrom[HTMLSpanElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onMouseEnter(
+      value: (/* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLDivElement]) => Callback
+    ): this.type = set("onMouseEnter", js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], t1: /* e */ ReactMouseEventFrom[HTMLDivElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onMouseLeave(
+      value: (/* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], /* e */ ReactMouseEventFrom[HTMLDivElement]) => Callback
+    ): this.type = set("onMouseLeave", js.Any.fromFunction2((t0: /* node */ typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[T], t1: /* e */ ReactMouseEventFrom[HTMLDivElement]) => (value(t0, t1)).runNow()))
+    
+    inline def secondaryLabel(value: String | MaybeElement): this.type = set("secondaryLabel", value.asInstanceOf[js.Any])
+    
+    inline def secondaryLabelNull: this.type = set("secondaryLabel", null)
+    
+    inline def secondaryLabelVdomElement(value: VdomElement): this.type = set("secondaryLabel", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  def withProps[T](p: ITreeNodeProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

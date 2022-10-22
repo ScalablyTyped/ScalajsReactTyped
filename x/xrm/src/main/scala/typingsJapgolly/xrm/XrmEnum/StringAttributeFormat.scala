@@ -6,9 +6,9 @@ import typingsJapgolly.xrm.xrmStrings.text
 import typingsJapgolly.xrm.xrmStrings.textarea
 import typingsJapgolly.xrm.xrmStrings.tickersymbol
 import typingsJapgolly.xrm.xrmStrings.url
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: String attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.StringAttribute StringAttribute}.
@@ -22,22 +22,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.tickersymbol
   - typingsJapgolly.xrm.xrmStrings.url
 */
-trait StringAttributeFormat extends js.Object
-
+trait StringAttributeFormat extends StObject
 object StringAttributeFormat {
-  @scala.inline
-  def Email: email = this.cast("email")
-  @scala.inline
-  def Phone: phone = this.cast("phone")
-  @scala.inline
-  def Text: text = this.cast("text")
-  @scala.inline
-  def TextArea: textarea = this.cast("textarea")
-  @scala.inline
-  def TickerSymbol: tickersymbol = this.cast("tickersymbol")
-  @scala.inline
-  def URL: url = this.cast("url")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Email: email = "email".asInstanceOf[email]
+  
+  inline def Phone: phone = "phone".asInstanceOf[phone]
+  
+  inline def Text: text = "text".asInstanceOf[text]
+  
+  inline def TextArea: textarea = "textarea".asInstanceOf[textarea]
+  
+  inline def TickerSymbol: tickersymbol = "tickersymbol".asInstanceOf[tickersymbol]
+  
+  inline def URL: url = "url".asInstanceOf[url]
 }
-

@@ -1,61 +1,251 @@
 package typingsJapgolly.webpack.mod
 
+import typingsJapgolly.std.Map
+import typingsJapgolly.std.Record
+import typingsJapgolly.std.Set
+import typingsJapgolly.webpack.anon.Read
+import typingsJapgolly.webpack.anon.Write
+import typingsJapgolly.webpack.webpackStrings.`default-only`
+import typingsJapgolly.webpack.webpackStrings.`default-with-named`
+import typingsJapgolly.webpack.webpackStrings.dynamic
+import typingsJapgolly.webpack.webpackStrings.namespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Module extends js.Object {
-  var exprContextCritical: js.UndefOr[Boolean] = js.undefined
-  var exprContextRecursive: js.UndefOr[Boolean] = js.undefined
-  var exprContextRegExp: js.UndefOr[js.RegExp] = js.undefined
-  var exprContextRequest: js.UndefOr[String] = js.undefined
-  /** A RegExp or an array of RegExps. Don’t parse files matching. */
-  var noParse: js.UndefOr[js.RegExp | js.Array[js.RegExp] | (js.Function1[/* content */ String, Boolean])] = js.undefined
-  /** An array of rules applied for modules. */
-  var rules: js.Array[RuleSetRule]
-  var strictExportPresence: js.UndefOr[Boolean] = js.undefined
-  var unknownContextCritical: js.UndefOr[Boolean] = js.undefined
-  var unknownContextRecursive: js.UndefOr[Boolean] = js.undefined
-  var unknownContextRegExp: js.UndefOr[js.RegExp] = js.undefined
-  var unknownContextRequest: js.UndefOr[String] = js.undefined
-  var wrappedContextCritical: js.UndefOr[Boolean] = js.undefined
-  var wrappedContextRecursive: js.UndefOr[Boolean] = js.undefined
-  var wrappedContextRegExp: js.UndefOr[js.RegExp] = js.undefined
+@JSImport("webpack", "Module")
+@js.native
+open class Module protected ()
+  extends StObject
+     with DependenciesBlock {
+  def this(`type`: String) = this()
+  def this(`type`: String, context: String) = this()
+  def this(`type`: String, context: String, layer: String) = this()
+  def this(`type`: String, context: Unit, layer: String) = this()
+  
+  /**
+  	 * Adds a DependencyBlock to DependencyBlock relationship.
+  	 * This is used for when a Module has a AsyncDependencyBlock tie (for code-splitting)
+  	 */
+  /* CompleteClass */
+  override def addBlock(block: AsyncDependenciesBlock): Unit = js.native
+  
+  def addCacheDependencies(
+    fileDependencies: LazySet[String],
+    contextDependencies: LazySet[String],
+    missingDependencies: LazySet[String],
+    buildDependencies: LazySet[String]
+  ): Unit = js.native
+  
+  def addChunk(): Boolean = js.native
+  def addChunk(chunk: Any): Boolean = js.native
+  
+  def addCodeGenerationDependency(codeGenerationDependency: Dependency): Unit = js.native
+  
+  /* CompleteClass */
+  override def addDependency(dependency: Dependency): Unit = js.native
+  
+  def addError(error: WebpackError): Unit = js.native
+  
+  def addPresentationalDependency(presentationalDependency: Dependency): Unit = js.native
+  
+  def addWarning(warning: WebpackError): Unit = js.native
+  
+  /* CompleteClass */
+  var blocks: js.Array[AsyncDependenciesBlock] = js.native
+  
+  def build(
+    options: WebpackOptionsNormalized,
+    compilation: Compilation,
+    resolver: ResolverWithOptions,
+    fs: InputFileSystem,
+    callback: js.Function1[/* arg0 */ js.UndefOr[WebpackError], Unit]
+  ): Unit = js.native
+  
+  var buildInfo: Record[String, Any] = js.native
+  
+  var buildMeta: BuildMeta = js.native
+  
+  def chunkCondition(chunk: Chunk, compilation: Compilation): Boolean = js.native
+  
+  val chunksIterable: js.Iterable[Chunk] = js.native
+  
+  /**
+  	 * Assuming this module is in the cache. Remove internal references to allow freeing some memory.
+  	 */
+  def cleanupForCache(): Unit = js.native
+  
+  /**
+  	 * Removes all dependencies and blocks
+  	 */
+  /* CompleteClass */
+  override def clearDependenciesAndBlocks(): Unit = js.native
+  
+  /**
+  	 * removes all warnings and errors
+  	 */
+  def clearWarningsAndErrors(): Unit = js.native
+  
+  def codeGeneration(context: CodeGenerationContext): CodeGenerationResult = js.native
+  
+  var codeGenerationDependencies: js.UndefOr[js.Array[Dependency]] = js.native
+  
+  var context: Null | String = js.native
+  
+  var debugId: Double = js.native
+  
+  /* CompleteClass */
+  var dependencies: js.Array[Dependency] = js.native
+  
+  var depth: Double = js.native
+  
+  /* CompleteClass */
+  override def deserialize(__0: Read): Unit = js.native
+  
+  val errors: Any = js.native
+  
+  val exportsArgument: String = js.native
+  
+  var factoryMeta: js.UndefOr[js.Object] = js.native
+  
+  def getChunks(): js.Array[Chunk] = js.native
+  
+  def getConcatenationBailoutReason(context: ConcatenationBailoutReasonContext): js.UndefOr[String] = js.native
+  
+  def getErrors(): js.UndefOr[js.Iterable[WebpackError]] = js.native
+  
+  def getExportsType(moduleGraph: ModuleGraph, strict: Boolean): namespace | `default-only` | `default-with-named` | dynamic = js.native
+  
+  def getNumberOfChunks(): Double = js.native
+  
+  def getNumberOfErrors(): Double = js.native
+  
+  def getNumberOfWarnings(): Double = js.native
+  
+  /* CompleteClass */
+  override def getRootBlock(): DependenciesBlock = js.native
+  
+  def getSideEffectsConnectionState(moduleGraph: ModuleGraph): ConnectionState = js.native
+  
+  def getSourceTypes(): Set[String] = js.native
+  
+  /**
+  	 * Module should be unsafe cached. Get data that's needed for that.
+  	 * This data will be passed to restoreFromUnsafeCache later.
+  	 */
+  def getUnsafeCacheData(): js.Object = js.native
+  
+  def getWarnings(): js.UndefOr[js.Iterable[WebpackError]] = js.native
+  
+  def hasChunkCondition(): Boolean = js.native
+  
+  val hasEqualsChunks: Any = js.native
+  
+  def hasReasonForChunk(chunk: Chunk, moduleGraph: ModuleGraph, chunkGraph: ChunkGraph): Boolean = js.native
+  
+  def hasReasons(moduleGraph: ModuleGraph, runtime: RuntimeSpec): Boolean = js.native
+  
+  val hash: String = js.native
+  
+  var id: String | Double = js.native
+  
+  def identifier(): String = js.native
+  
+  var index: Double = js.native
+  
+  var index2: Double = js.native
+  
+  def invalidateBuild(): Unit = js.native
+  
+  def isAccessibleInChunk(chunkGraph: ChunkGraph, chunk: Chunk): Boolean = js.native
+  def isAccessibleInChunk(chunkGraph: ChunkGraph, chunk: Chunk, ignoreChunk: Chunk): Boolean = js.native
+  
+  def isAccessibleInChunkGroup(chunkGraph: ChunkGraph, chunkGroup: ChunkGroup): Boolean = js.native
+  def isAccessibleInChunkGroup(chunkGraph: ChunkGraph, chunkGroup: ChunkGroup, ignoreChunk: Chunk): Boolean = js.native
+  
+  def isEntryModule(): Boolean = js.native
+  
+  def isInChunk(): Boolean = js.native
+  def isInChunk(chunk: Any): Boolean = js.native
+  
+  def isOptional(moduleGraph: ModuleGraph): Boolean = js.native
+  
+  def isProvided(exportName: String): Null | Boolean = js.native
+  
+  val isUsed: Any = js.native
+  
+  var issuer: Null | Module = js.native
+  
+  var layer: Null | String = js.native
+  
+  def libIdent(options: LibIdentOptions): Null | String = js.native
+  
+  val moduleArgument: String = js.native
+  
+  def nameForCondition(): Null | String = js.native
+  
+  def needBuild(
+    context: NeedBuildContext,
+    callback: js.Function2[/* arg0 */ js.UndefOr[Null | WebpackError], /* arg1 */ js.UndefOr[Boolean], Unit]
+  ): Unit = js.native
+  
+  var needId: Boolean = js.native
+  
+  def needRebuild(fileTimestamps: Map[String, Null | Double], contextTimestamps: Map[String, Null | Double]): Boolean = js.native
+  
+  val optimizationBailout: js.Array[String | (js.Function1[/* requestShortener */ RequestShortener, String])] = js.native
+  
+  val optional: Boolean = js.native
+  
+  def originalSource(): Null | Source = js.native
+  
+  /* CompleteClass */
+  var parent: DependenciesBlock = js.native
+  
+  var presentationalDependencies: js.UndefOr[js.Array[Dependency]] = js.native
+  
+  var profile: Null | ModuleProfile = js.native
+  
+  def readableIdentifier(requestShortener: RequestShortener): String = js.native
+  
+  def removeChunk(): Unit = js.native
+  def removeChunk(chunk: Any): Unit = js.native
+  
+  /* CompleteClass */
+  override def removeDependency(dependency: Dependency): Unit = js.native
+  
+  val renderedHash: String = js.native
+  
+  var resolveOptions: ResolveOptionsWebpackOptions = js.native
+  
+  /* CompleteClass */
+  override def serialize(__0: Write): Unit = js.native
+  
+  def size(): Double = js.native
+  def size(`type`: String): Double = js.native
+  
+  def source(dependencyTemplates: DependencyTemplates, runtimeTemplate: RuntimeTemplate): Source = js.native
+  def source(dependencyTemplates: DependencyTemplates, runtimeTemplate: RuntimeTemplate, `type`: String): Source = js.native
+  
+  var `type`: String = js.native
+  
+  /**
+  	 * Assuming this module is in the cache. Update the (cached) module with
+  	 * the fresh module from the factory. Usually updates internal references
+  	 * and properties.
+  	 */
+  def updateCacheModule(module: Module): Unit = js.native
+  
+  /* CompleteClass */
+  override def updateHash(hash: Hash, context: UpdateHashContextDependency): Unit = js.native
+  
+  var useSimpleSourceMap: Boolean = js.native
+  
+  var useSourceMap: Boolean = js.native
+  
+  var used: Any = js.native
+  
+  val usedExports: Null | Boolean | SortableSet[String] = js.native
+  
+  val warnings: Any = js.native
 }
-
-object Module {
-  @scala.inline
-  def apply(
-    rules: js.Array[RuleSetRule],
-    exprContextCritical: js.UndefOr[Boolean] = js.undefined,
-    exprContextRecursive: js.UndefOr[Boolean] = js.undefined,
-    exprContextRegExp: js.RegExp = null,
-    exprContextRequest: String = null,
-    noParse: js.RegExp | js.Array[js.RegExp] | (js.Function1[/* content */ String, Boolean]) = null,
-    strictExportPresence: js.UndefOr[Boolean] = js.undefined,
-    unknownContextCritical: js.UndefOr[Boolean] = js.undefined,
-    unknownContextRecursive: js.UndefOr[Boolean] = js.undefined,
-    unknownContextRegExp: js.RegExp = null,
-    unknownContextRequest: String = null,
-    wrappedContextCritical: js.UndefOr[Boolean] = js.undefined,
-    wrappedContextRecursive: js.UndefOr[Boolean] = js.undefined,
-    wrappedContextRegExp: js.RegExp = null
-  ): Module = {
-    val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
-    if (!js.isUndefined(exprContextCritical)) __obj.updateDynamic("exprContextCritical")(exprContextCritical.asInstanceOf[js.Any])
-    if (!js.isUndefined(exprContextRecursive)) __obj.updateDynamic("exprContextRecursive")(exprContextRecursive.asInstanceOf[js.Any])
-    if (exprContextRegExp != null) __obj.updateDynamic("exprContextRegExp")(exprContextRegExp.asInstanceOf[js.Any])
-    if (exprContextRequest != null) __obj.updateDynamic("exprContextRequest")(exprContextRequest.asInstanceOf[js.Any])
-    if (noParse != null) __obj.updateDynamic("noParse")(noParse.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictExportPresence)) __obj.updateDynamic("strictExportPresence")(strictExportPresence.asInstanceOf[js.Any])
-    if (!js.isUndefined(unknownContextCritical)) __obj.updateDynamic("unknownContextCritical")(unknownContextCritical.asInstanceOf[js.Any])
-    if (!js.isUndefined(unknownContextRecursive)) __obj.updateDynamic("unknownContextRecursive")(unknownContextRecursive.asInstanceOf[js.Any])
-    if (unknownContextRegExp != null) __obj.updateDynamic("unknownContextRegExp")(unknownContextRegExp.asInstanceOf[js.Any])
-    if (unknownContextRequest != null) __obj.updateDynamic("unknownContextRequest")(unknownContextRequest.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrappedContextCritical)) __obj.updateDynamic("wrappedContextCritical")(wrappedContextCritical.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrappedContextRecursive)) __obj.updateDynamic("wrappedContextRecursive")(wrappedContextRecursive.asInstanceOf[js.Any])
-    if (wrappedContextRegExp != null) __obj.updateDynamic("wrappedContextRegExp")(wrappedContextRegExp.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Module]
-  }
-}
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-trait SettableCellProperties extends js.Object {
+trait SettableCellProperties extends StObject {
+  
   /**
     *
     * Represents the `format` property.
@@ -18,6 +19,7 @@ trait SettableCellProperties extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[CellPropertiesFormat] = js.undefined
+  
   /**
     *
     * Represents the `hyperlink` property.
@@ -25,6 +27,7 @@ trait SettableCellProperties extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var hyperlink: js.UndefOr[RangeHyperlink] = js.undefined
+  
   /**
     *
     * Represents the `style` property.
@@ -33,15 +36,25 @@ trait SettableCellProperties extends js.Object {
     */
   var style: js.UndefOr[String] = js.undefined
 }
-
 object SettableCellProperties {
-  @scala.inline
-  def apply(format: CellPropertiesFormat = null, hyperlink: RangeHyperlink = null, style: String = null): SettableCellProperties = {
+  
+  inline def apply(): SettableCellProperties = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettableCellProperties]
   }
+  
+  extension [Self <: SettableCellProperties](x: Self) {
+    
+    inline def setFormat(value: CellPropertiesFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setHyperlink(value: RangeHyperlink): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
+    
+    inline def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

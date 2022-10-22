@@ -11,9 +11,9 @@ Escape and stringify an array of arguments to be executed on the shell
 | Full name          | shell-escape |
 | Keywords           | shell, escape, bash, escapeshellarg |
 | # releases         | 0 |
-| # dependents       | 154 |
-| # downloads        | 3356866 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 766405.0 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/xxorax/node-shell-escape)

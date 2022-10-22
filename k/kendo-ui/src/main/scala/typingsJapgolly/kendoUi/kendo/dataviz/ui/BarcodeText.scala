@@ -1,30 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BarcodeText extends js.Object {
+trait BarcodeText extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var font: js.UndefOr[String] = js.undefined
+  
   var margin: js.UndefOr[BarcodeTextMargin] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object BarcodeText {
-  @scala.inline
-  def apply(
-    color: String = null,
-    font: String = null,
-    margin: BarcodeTextMargin = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): BarcodeText = {
+  
+  inline def apply(): BarcodeText = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarcodeText]
   }
+  
+  extension [Self <: BarcodeText](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setMargin(value: BarcodeTextMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

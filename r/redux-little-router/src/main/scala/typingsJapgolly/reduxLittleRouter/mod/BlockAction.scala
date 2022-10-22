@@ -1,26 +1,32 @@
 package typingsJapgolly.reduxLittleRouter.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.ROUTER_BLOCK
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BlockAction extends RouterActions {
+trait BlockAction
+  extends StObject
+     with RouterActions {
+  
   var payload: BlockCallback
-  var `type`: ROUTER_BLOCK
+  
+  var `type`: /* "ROUTER_BLOCK" */ String
 }
-
 object BlockAction {
-  @scala.inline
-  def apply(
-    payload: (/* location */ Location, /* action */ js.UndefOr[HistoryAction]) => CallbackTo[String],
-    `type`: ROUTER_BLOCK
+  
+  inline def apply(
+    payload: (/* location */ Location, /* action */ js.UndefOr[HistoryAction]) => String,
+    `type`: /* "ROUTER_BLOCK" */ String
   ): BlockAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("payload")(js.Any.fromFunction2((t0: /* location */ typingsJapgolly.reduxLittleRouter.mod.Location, t1: /* action */ js.UndefOr[typingsJapgolly.reduxLittleRouter.mod.HistoryAction]) => payload(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(payload = js.Any.fromFunction2(payload))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockAction]
   }
+  
+  extension [Self <: BlockAction](x: Self) {
+    
+    inline def setPayload(value: (/* location */ Location, /* action */ js.UndefOr[HistoryAction]) => String): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
+    
+    inline def setType(value: /* "ROUTER_BLOCK" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

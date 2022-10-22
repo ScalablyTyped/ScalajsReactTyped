@@ -1,33 +1,47 @@
 package typingsJapgolly.trayballoon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TrayballoonOptions extends js.Object {
+trait TrayballoonOptions extends StObject {
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var text: String
+  
   var timeout: js.UndefOr[Double] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   @JSName("wait")
   var wait_FTrayballoonOptions: js.UndefOr[Boolean] = js.undefined
 }
-
 object TrayballoonOptions {
-  @scala.inline
-  def apply(
-    text: String,
-    icon: String = null,
-    timeout: Int | Double = null,
-    title: String = null,
-    wait: js.UndefOr[Boolean] = js.undefined
-  ): TrayballoonOptions = {
+  
+  inline def apply(text: String): TrayballoonOptions = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrayballoonOptions]
   }
+  
+  extension [Self <: TrayballoonOptions](x: Self) {
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+    
+    inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+  }
 }
-

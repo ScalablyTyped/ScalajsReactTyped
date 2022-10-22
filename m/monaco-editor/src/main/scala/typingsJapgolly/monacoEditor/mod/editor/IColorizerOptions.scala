@@ -1,19 +1,24 @@
 package typingsJapgolly.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IColorizerOptions extends js.Object {
+trait IColorizerOptions extends StObject {
+  
   var tabSize: js.UndefOr[Double] = js.undefined
 }
-
 object IColorizerOptions {
-  @scala.inline
-  def apply(tabSize: Int | Double = null): IColorizerOptions = {
+  
+  inline def apply(): IColorizerOptions = {
     val __obj = js.Dynamic.literal()
-    if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorizerOptions]
   }
+  
+  extension [Self <: IColorizerOptions](x: Self) {
+    
+    inline def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+    
+    inline def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
+  }
 }
-

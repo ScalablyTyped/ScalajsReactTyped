@@ -1,14 +1,15 @@
 package typingsJapgolly.sourceMap.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.sourceMap.MappedPositionbiasnumber
-import typingsJapgolly.sourceMap.Positionbiasnumber
+import typingsJapgolly.sourceMap.anon.MappedPositionbiasnumberu
+import typingsJapgolly.sourceMap.anon.Positionbiasnumberundefin
+import typingsJapgolly.sourceMap.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceMapConsumer extends js.Object {
+trait SourceMapConsumer extends StObject {
+  
   /**
     * Returns all generated line and column information for the original source,
     * line, and column provided. If no column is provided, returns all mappings
@@ -29,16 +30,19 @@ trait SourceMapConsumer extends js.Object {
     *   - column: The column number in the generated source, or null.
     */
   def allGeneratedPositionsFor(originalPosition: MappedPosition): js.Array[NullablePosition] = js.native
+  
   /**
     * Compute the last column for each generated mapping. The last column is
     * inclusive.
     */
   def computeColumnSpans(): Unit = js.native
+  
   /**
     * Free this source map consumer's associated wasm data that is manually-managed.
     * Alternatively, you can use SourceMapConsumer.with to avoid needing to remember to call destroy.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Iterate over each mapping between an original source/line/column and a
     * generated line/column in this source map.
@@ -56,8 +60,10 @@ trait SourceMapConsumer extends js.Object {
     *        `SourceMapConsumer.GENERATED_ORDER`.
     */
   def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit]): Unit = js.native
-  def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: js.Any): Unit = js.native
-  def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: js.Any, order: Double): Unit = js.native
+  def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: Any): Unit = js.native
+  def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: Any, order: Double): Unit = js.native
+  def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: Unit, order: Double): Unit = js.native
+  
   /**
     * Returns the generated line and column information for the original source,
     * line, and column positions provided. The only argument is an object with
@@ -77,12 +83,14 @@ trait SourceMapConsumer extends js.Object {
     *   - line: The line number in the generated source, or null.
     *   - column: The column number in the generated source, or null.
     */
-  def generatedPositionFor(originalPosition: MappedPositionbiasnumber): NullablePosition = js.native
+  def generatedPositionFor(originalPosition: MappedPositionbiasnumberu): NullablePosition = js.native
+  
   /**
     * Return true if we have the source content for every source in the source
     * map, false otherwise.
     */
   def hasContentsOfAllSources(): Boolean = js.native
+  
   /**
     * Returns the original source, line, and column information for the generated
     * source's line and column positions provided. The only argument is an object
@@ -103,7 +111,8 @@ trait SourceMapConsumer extends js.Object {
     *   - column: The column number in the original source, or null.
     *   - name: The original identifier, or null.
     */
-  def originalPositionFor(generatedPosition: Positionbiasnumber): NullableMappedPosition = js.native
+  def originalPositionFor(generatedPosition: Positionbiasnumberundefin): NullableMappedPosition = js.native
+  
   /**
     * Returns the original source content. The only argument is the url of the
     * original source file. Returns null if no original source content is
@@ -112,8 +121,7 @@ trait SourceMapConsumer extends js.Object {
   def sourceContentFor(source: String): String | Null = js.native
   def sourceContentFor(source: String, returnNullOnMissing: Boolean): String | Null = js.native
 }
-
-@JSImport("source-map", "SourceMapConsumer")
-@js.native
-object SourceMapConsumer extends TopLevel[SourceMapConsumerConstructor]
-
+object SourceMapConsumer {
+  
+  inline def apply: SourceMapConsumerConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("SourceMapConsumer").asInstanceOf[SourceMapConsumerConstructor]
+}

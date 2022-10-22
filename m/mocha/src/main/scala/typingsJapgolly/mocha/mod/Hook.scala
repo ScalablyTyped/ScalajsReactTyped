@@ -1,8 +1,8 @@
 package typingsJapgolly.mocha.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Runner untyped events
 /**
@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("mocha", "Hook")
 @js.native
-class Hook ()
-  extends typingsJapgolly.mocha.Mocha_.Hook
-
+open class Hook ()
+  extends StObject
+     with typingsJapgolly.mocha.Mocha.Hook

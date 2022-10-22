@@ -1,13 +1,13 @@
 package typingsJapgolly.openlayers.mod.format
 
+import org.scalajs.dom.Document
+import org.scalajs.dom.Node
 import typingsJapgolly.openlayers.mod.GlobalObject
 import typingsJapgolly.openlayers.mod.olx.format.ReadOptions
 import typingsJapgolly.openlayers.mod.olx.format.WMSGetFeatureInfoOptions
-import typingsJapgolly.std.Document_
-import typingsJapgolly.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -27,12 +27,11 @@ import scala.scalajs.js.annotation._
   * @param opt_options Options.
   * @api
   */
-class WMSGetFeatureInfo () extends XMLFeature {
+open class WMSGetFeatureInfo () extends XMLFeature {
   def this(opt_options: WMSGetFeatureInfoOptions) = this()
+  
   def readFeatures(source: String): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   def readFeatures(source: String, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
-  def readFeatures(source: GlobalObject): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
-  def readFeatures(source: GlobalObject, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   /**
     * Read all features from a WMSGetFeatureInfo response.
     *
@@ -41,9 +40,10 @@ class WMSGetFeatureInfo () extends XMLFeature {
     * @return Features.
     * @api stable
     */
-  def readFeatures(source: Document_): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
-  def readFeatures(source: Document_, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: Document): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: Document, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: GlobalObject): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: GlobalObject, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
 }
-

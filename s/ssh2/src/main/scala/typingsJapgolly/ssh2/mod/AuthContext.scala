@@ -1,8 +1,8 @@
 package typingsJapgolly.ssh2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.ssh2.mod.KeyboardAuthContext
@@ -11,5 +11,4 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.ssh2.mod.PasswordAuthContext
   - typingsJapgolly.ssh2.mod.NoneAuthContext
 */
-trait AuthContext extends js.Object
-
+trait AuthContext extends StObject

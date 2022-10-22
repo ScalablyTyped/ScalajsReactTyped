@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.UI.Core.AnimationMetrics
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IAnimationDescriptionFactory extends js.Object {
+trait IAnimationDescriptionFactory extends StObject {
+  
   def createInstance(effect: AnimationEffect, target: AnimationEffectTarget): AnimationDescription
 }
-
 object IAnimationDescriptionFactory {
-  @scala.inline
-  def apply(createInstance: (AnimationEffect, AnimationEffectTarget) => CallbackTo[AnimationDescription]): IAnimationDescriptionFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createInstance")(js.Any.fromFunction2((t0: typingsJapgolly.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect, t1: typingsJapgolly.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget) => createInstance(t0, t1).runNow()))
+  
+  inline def apply(createInstance: (AnimationEffect, AnimationEffectTarget) => AnimationDescription): IAnimationDescriptionFactory = {
+    val __obj = js.Dynamic.literal(createInstance = js.Any.fromFunction2(createInstance))
     __obj.asInstanceOf[IAnimationDescriptionFactory]
   }
+  
+  extension [Self <: IAnimationDescriptionFactory](x: Self) {
+    
+    inline def setCreateInstance(value: (AnimationEffect, AnimationEffectTarget) => AnimationDescription): Self = StObject.set(x, "createInstance", js.Any.fromFunction2(value))
+  }
 }
-

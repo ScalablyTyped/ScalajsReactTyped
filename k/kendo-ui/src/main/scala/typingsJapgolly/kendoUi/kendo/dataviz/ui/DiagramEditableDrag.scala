@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramEditableDrag extends js.Object {
+trait DiagramEditableDrag extends StObject {
+  
   var snap: js.UndefOr[Boolean | DiagramEditableDragSnap] = js.undefined
 }
-
 object DiagramEditableDrag {
-  @scala.inline
-  def apply(snap: Boolean | DiagramEditableDragSnap = null): DiagramEditableDrag = {
+  
+  inline def apply(): DiagramEditableDrag = {
     val __obj = js.Dynamic.literal()
-    if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramEditableDrag]
   }
+  
+  extension [Self <: DiagramEditableDrag](x: Self) {
+    
+    inline def setSnap(value: Boolean | DiagramEditableDragSnap): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
+    
+    inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
+  }
 }
-

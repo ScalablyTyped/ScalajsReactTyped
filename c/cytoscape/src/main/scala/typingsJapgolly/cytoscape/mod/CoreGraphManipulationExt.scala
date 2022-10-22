@@ -1,8 +1,8 @@
 package typingsJapgolly.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#core/graph-manipulation
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   * These functions are intended for use in extensions.
   */
 @js.native
-trait CoreGraphManipulationExt extends js.Object {
+trait CoreGraphManipulationExt extends StObject {
+  
   /**
     * Remove scratchpad data. You should remove scratchpad data only at your own namespaces.
     * http://js.cytoscape.org/#cy.removeScratch
@@ -18,6 +19,7 @@ trait CoreGraphManipulationExt extends js.Object {
     * @param namespace A namespace string.
     */
   def removeScratch(namespace: String): this.type = js.native
+  
   /**
     * Set the scratchpad at a particular namespace,
     * where temporary or non-JSON data can be stored.
@@ -31,6 +33,5 @@ trait CoreGraphManipulationExt extends js.Object {
     */
   def scratch(): Scratchpad = js.native
   def scratch(namespace: String): Scratchpad = js.native
-  def scratch(namespace: String, value: js.Any): this.type = js.native
+  def scratch(namespace: String, value: Any): this.type = js.native
 }
-

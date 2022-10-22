@@ -1,12 +1,7 @@
 package typingsJapgolly.winrt.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Foundation.Metadata.OverloadAttribute")
-@js.native
-class OverloadAttribute protected () extends js.Object {
-  def this(method: String) = this()
-}
-
+trait OverloadAttribute extends StObject

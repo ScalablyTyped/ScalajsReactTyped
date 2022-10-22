@@ -5,119 +5,151 @@ import typingsJapgolly.officeJs.officeJsStrings.DoubleAccountant
 import typingsJapgolly.officeJs.officeJsStrings.None
 import typingsJapgolly.officeJs.officeJsStrings.Single
 import typingsJapgolly.officeJs.officeJsStrings.SingleAccountant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `rangeFont.toJSON()`. */
-trait RangeFontData extends js.Object {
+trait RangeFontData extends StObject {
+  
   /**
+    * Represents the bold status of the font.
     *
-    * Represents the bold status of font.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
-    * HTML color code representation of the text color. E.g. #FF0000 represents Red.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies the italic status of the font.
     *
-    * Represents the italic status of the font.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
     *
-    * Font name (e.g. "Calibri")
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Font size.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var size: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the strikethrough status of font. A `null` value indicates that the entire range doesn't have a uniform strikethrough setting.
     *
-    * Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var strikethrough: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the subscript status of font.
+    Returns `true` if all the fonts of the range are subscript.
+    Returns `false` if all the fonts of the range are superscript or normal (neither superscript, nor subscript).
+    Returns `null` otherwise.
     *
-    * Represents the Subscript status of font.
-    Returns True if all the fonts of the range are Subscript.
-    Returns False if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript).
-    Returns Null otherwise.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var subscript: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the superscript status of font.
+    Returns `true` if all the fonts of the range are superscript.
+    Returns `false` if all the fonts of the range are subscript or normal (neither superscript, nor subscript).
+    Returns `null` otherwise.
     *
-    * Represents the Superscript status of font.
-    Returns True if all the fonts of the range are Superscript.
-    Returns False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript).
-    Returns Null otherwise.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var superscript: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies a double that lightens or darkens a color for the range font. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A `null` value indicates that the entire range doesn't have a uniform font `tintAndShade` setting.
     *
-    * Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-    A null value indicates that the entire range doesn't have uniform font tintAndShade setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for details.
     *
-    * Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var underline: js.UndefOr[
     RangeUnderlineStyle | None | Single | typingsJapgolly.officeJs.officeJsStrings.Double | SingleAccountant | DoubleAccountant
   ] = js.undefined
 }
-
 object RangeFontData {
-  @scala.inline
-  def apply(
-    bold: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    size: Int | Double = null,
-    strikethrough: js.UndefOr[Boolean] = js.undefined,
-    subscript: js.UndefOr[Boolean] = js.undefined,
-    superscript: js.UndefOr[Boolean] = js.undefined,
-    tintAndShade: Int | Double = null,
-    underline: RangeUnderlineStyle | None | Single | typingsJapgolly.officeJs.officeJsStrings.Double | SingleAccountant | DoubleAccountant = null
-  ): RangeFontData = {
+  
+  inline def apply(): RangeFontData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.asInstanceOf[js.Any])
-    if (!js.isUndefined(subscript)) __obj.updateDynamic("subscript")(subscript.asInstanceOf[js.Any])
-    if (!js.isUndefined(superscript)) __obj.updateDynamic("superscript")(superscript.asInstanceOf[js.Any])
-    if (tintAndShade != null) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
-    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeFontData]
   }
+  
+  extension [Self <: RangeFontData](x: Self) {
+    
+    inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    
+    inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    
+    inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+    
+    inline def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
+    
+    inline def setSubscript(value: Boolean): Self = StObject.set(x, "subscript", value.asInstanceOf[js.Any])
+    
+    inline def setSubscriptUndefined: Self = StObject.set(x, "subscript", js.undefined)
+    
+    inline def setSuperscript(value: Boolean): Self = StObject.set(x, "superscript", value.asInstanceOf[js.Any])
+    
+    inline def setSuperscriptUndefined: Self = StObject.set(x, "superscript", js.undefined)
+    
+    inline def setTintAndShade(value: Double): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
+    
+    inline def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
+    
+    inline def setUnderline(
+      value: RangeUnderlineStyle | None | Single | typingsJapgolly.officeJs.officeJsStrings.Double | SingleAccountant | DoubleAccountant
+    ): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+  }
 }
-

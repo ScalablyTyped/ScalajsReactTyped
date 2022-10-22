@@ -1,36 +1,55 @@
 package typingsJapgolly.reactBeautifulDnd.mod
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.React.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DraggableProps extends js.Object {
+trait DraggableProps extends StObject {
+  
   var children: DraggableChildrenFn
+  
   var disableInteractiveElementBlocking: js.UndefOr[Boolean] = js.undefined
+  
   var draggableId: DraggableId
+  
   var index: Double
+  
   var isDragDisabled: js.UndefOr[Boolean] = js.undefined
+  
   var shouldRespectForcePress: js.UndefOr[Boolean] = js.undefined
 }
-
 object DraggableProps {
-  @scala.inline
-  def apply(
-    children: (/* provided */ DraggableProvided, /* snapshot */ DraggableStateSnapshot, /* rubric */ DraggableRubric) => CallbackTo[Element],
+  
+  inline def apply(
+    children: (/* provided */ DraggableProvided, /* snapshot */ DraggableStateSnapshot, /* rubric */ DraggableRubric) => Element,
     draggableId: DraggableId,
-    index: Double,
-    disableInteractiveElementBlocking: js.UndefOr[Boolean] = js.undefined,
-    isDragDisabled: js.UndefOr[Boolean] = js.undefined,
-    shouldRespectForcePress: js.UndefOr[Boolean] = js.undefined
+    index: Double
   ): DraggableProps = {
-    val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-    __obj.updateDynamic("children")(js.Any.fromFunction3((t0: /* provided */ typingsJapgolly.reactBeautifulDnd.mod.DraggableProvided, t1: /* snapshot */ typingsJapgolly.reactBeautifulDnd.mod.DraggableStateSnapshot, t2: /* rubric */ typingsJapgolly.reactBeautifulDnd.mod.DraggableRubric) => children(t0, t1, t2).runNow()))
-    if (!js.isUndefined(disableInteractiveElementBlocking)) __obj.updateDynamic("disableInteractiveElementBlocking")(disableInteractiveElementBlocking.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDragDisabled)) __obj.updateDynamic("isDragDisabled")(isDragDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldRespectForcePress)) __obj.updateDynamic("shouldRespectForcePress")(shouldRespectForcePress.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction3(children), draggableId = draggableId.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableProps]
   }
+  
+  extension [Self <: DraggableProps](x: Self) {
+    
+    inline def setChildren(
+      value: (/* provided */ DraggableProvided, /* snapshot */ DraggableStateSnapshot, /* rubric */ DraggableRubric) => Element
+    ): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
+    
+    inline def setDisableInteractiveElementBlocking(value: Boolean): Self = StObject.set(x, "disableInteractiveElementBlocking", value.asInstanceOf[js.Any])
+    
+    inline def setDisableInteractiveElementBlockingUndefined: Self = StObject.set(x, "disableInteractiveElementBlocking", js.undefined)
+    
+    inline def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIsDragDisabled(value: Boolean): Self = StObject.set(x, "isDragDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setIsDragDisabledUndefined: Self = StObject.set(x, "isDragDisabled", js.undefined)
+    
+    inline def setShouldRespectForcePress(value: Boolean): Self = StObject.set(x, "shouldRespectForcePress", value.asInstanceOf[js.Any])
+    
+    inline def setShouldRespectForcePressUndefined: Self = StObject.set(x, "shouldRespectForcePress", js.undefined)
+  }
 }
-

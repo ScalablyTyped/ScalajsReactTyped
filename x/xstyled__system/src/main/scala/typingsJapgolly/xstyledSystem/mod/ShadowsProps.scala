@@ -1,25 +1,17 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.BoxShadowProperty
-import typingsJapgolly.csstype.mod.TextShadowProperty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ShadowsProps
-  extends BoxShadowProps
+  extends StObject
+     with BoxShadowProps
      with TextShadowProps
-
 object ShadowsProps {
-  @scala.inline
-  def apply(
-    boxShadow: ResponsiveValue[BoxShadowProperty | Double] = null,
-    textShadow: ResponsiveValue[TextShadowProperty | Double] = null
-  ): ShadowsProps = {
+  
+  inline def apply(): ShadowsProps = {
     val __obj = js.Dynamic.literal()
-    if (boxShadow != null) __obj.updateDynamic("boxShadow")(boxShadow.asInstanceOf[js.Any])
-    if (textShadow != null) __obj.updateDynamic("textShadow")(textShadow.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowsProps]
   }
 }
-

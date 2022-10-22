@@ -1,89 +1,170 @@
 package typingsJapgolly.primereact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.primereact.AnonSource
-import typingsJapgolly.primereact.AnonValue
-import typingsJapgolly.primereact.pickListMod.PickListProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.primereact.picklistPicklistMod.PickListChangeParams
+import typingsJapgolly.primereact.picklistPicklistMod.PickListEventParams
+import typingsJapgolly.primereact.picklistPicklistMod.PickListFilterTemplateOptions
+import typingsJapgolly.primereact.picklistPicklistMod.PickListFilterTemplateType
+import typingsJapgolly.primereact.picklistPicklistMod.PickListItemTemplateType
+import typingsJapgolly.primereact.picklistPicklistMod.PickListProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PickList {
-  def apply(
-    className: String = null,
-    id: String = null,
-    itemTemplate: /* item */ js.Any => CallbackTo[js.UndefOr[Element]] = null,
-    metaKeySelection: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* e */ AnonSource => Callback = null,
-    onMoveAllToSource: /* e */ AnonValue => Callback = null,
-    onMoveAllToTarget: /* e */ AnonValue => Callback = null,
-    onMoveToSource: /* e */ AnonValue => Callback = null,
-    onMoveToTarget: /* e */ AnonValue => Callback = null,
-    onSourceSelect: /* e */ AnonValue => Callback = null,
-    onTargetSelect: /* e */ AnonValue => Callback = null,
-    responsive: js.UndefOr[Boolean] = js.undefined,
-    showSourceControls: js.UndefOr[Boolean] = js.undefined,
-    showTargetControls: js.UndefOr[Boolean] = js.undefined,
-    source: js.Array[_] = null,
-    sourceHeader: js.Any = null,
-    sourceStyle: js.Object = null,
-    style: js.Object = null,
-    tabIndex: String = null,
-    target: js.Array[_] = null,
-    targetHeader: js.Any = null,
-    targetStyle: js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    PickListProps, 
-    typingsJapgolly.primereact.primereactPicklistMod.PickList, 
-    Unit, 
-    PickListProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(js.Any.fromFunction1((t0: /* item */ js.Any) => itemTemplate(t0).runNow()))
-    if (!js.isUndefined(metaKeySelection)) __obj.updateDynamic("metaKeySelection")(metaKeySelection.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.primereact.AnonSource) => onChange(t0).runNow()))
-    if (onMoveAllToSource != null) __obj.updateDynamic("onMoveAllToSource")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.primereact.AnonValue) => onMoveAllToSource(t0).runNow()))
-    if (onMoveAllToTarget != null) __obj.updateDynamic("onMoveAllToTarget")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.primereact.AnonValue) => onMoveAllToTarget(t0).runNow()))
-    if (onMoveToSource != null) __obj.updateDynamic("onMoveToSource")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.primereact.AnonValue) => onMoveToSource(t0).runNow()))
-    if (onMoveToTarget != null) __obj.updateDynamic("onMoveToTarget")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.primereact.AnonValue) => onMoveToTarget(t0).runNow()))
-    if (onSourceSelect != null) __obj.updateDynamic("onSourceSelect")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.primereact.AnonValue) => onSourceSelect(t0).runNow()))
-    if (onTargetSelect != null) __obj.updateDynamic("onTargetSelect")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.primereact.AnonValue) => onTargetSelect(t0).runNow()))
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSourceControls)) __obj.updateDynamic("showSourceControls")(showSourceControls.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTargetControls)) __obj.updateDynamic("showTargetControls")(showTargetControls.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (sourceHeader != null) __obj.updateDynamic("sourceHeader")(sourceHeader.asInstanceOf[js.Any])
-    if (sourceStyle != null) __obj.updateDynamic("sourceStyle")(sourceStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (targetHeader != null) __obj.updateDynamic("targetHeader")(targetHeader.asInstanceOf[js.Any])
-    if (targetStyle != null) __obj.updateDynamic("targetStyle")(targetStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.primereact.pickListMod.PickListProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.primereact.primereactPicklistMod.PickList](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.primereact.pickListMod.PickListProps])(children: _*)
-  }
-  @JSImport("primereact/picklist", "PickList")
+  @JSImport("primereact", "PickList")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.primereact.mod.PickList] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def dataKey(value: String): this.type = set("dataKey", value.asInstanceOf[js.Any])
+    
+    inline def filterBy(value: String): this.type = set("filterBy", value.asInstanceOf[js.Any])
+    
+    inline def filterLocale(value: String): this.type = set("filterLocale", value.asInstanceOf[js.Any])
+    
+    inline def filterMatchMode(value: String): this.type = set("filterMatchMode", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def itemTemplate(value: PickListItemTemplateType): this.type = set("itemTemplate", value.asInstanceOf[js.Any])
+    
+    inline def itemTemplateFunction1(value: /* item */ Any => Node): this.type = set("itemTemplate", js.Any.fromFunction1(value))
+    
+    inline def itemTemplateNull: this.type = set("itemTemplate", null)
+    
+    inline def itemTemplateVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("itemTemplate", js.Array(value*))
+    
+    inline def itemTemplateVdomElement(value: VdomElement): this.type = set("itemTemplate", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def metaKeySelection(value: Boolean): this.type = set("metaKeySelection", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* e */ PickListChangeParams => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* e */ PickListChangeParams) => value(t0).runNow()))
+    
+    inline def onMoveAllToSource(value: /* e */ PickListEventParams => Callback): this.type = set("onMoveAllToSource", js.Any.fromFunction1((t0: /* e */ PickListEventParams) => value(t0).runNow()))
+    
+    inline def onMoveAllToTarget(value: /* e */ PickListEventParams => Callback): this.type = set("onMoveAllToTarget", js.Any.fromFunction1((t0: /* e */ PickListEventParams) => value(t0).runNow()))
+    
+    inline def onMoveToSource(value: /* e */ PickListEventParams => Callback): this.type = set("onMoveToSource", js.Any.fromFunction1((t0: /* e */ PickListEventParams) => value(t0).runNow()))
+    
+    inline def onMoveToTarget(value: /* e */ PickListEventParams => Callback): this.type = set("onMoveToTarget", js.Any.fromFunction1((t0: /* e */ PickListEventParams) => value(t0).runNow()))
+    
+    inline def onSourceFilterChange(value: /* e */ PickListEventParams => Callback): this.type = set("onSourceFilterChange", js.Any.fromFunction1((t0: /* e */ PickListEventParams) => value(t0).runNow()))
+    
+    inline def onSourceSelectionChange(value: /* e */ PickListEventParams => Callback): this.type = set("onSourceSelectionChange", js.Any.fromFunction1((t0: /* e */ PickListEventParams) => value(t0).runNow()))
+    
+    inline def onTargetFilterChange(value: /* e */ PickListEventParams => Callback): this.type = set("onTargetFilterChange", js.Any.fromFunction1((t0: /* e */ PickListEventParams) => value(t0).runNow()))
+    
+    inline def onTargetSelectionChange(value: /* e */ PickListEventParams => Callback): this.type = set("onTargetSelectionChange", js.Any.fromFunction1((t0: /* e */ PickListEventParams) => value(t0).runNow()))
+    
+    inline def showSourceControls(value: Boolean): this.type = set("showSourceControls", value.asInstanceOf[js.Any])
+    
+    inline def showSourceFilter(value: Boolean): this.type = set("showSourceFilter", value.asInstanceOf[js.Any])
+    
+    inline def showTargetControls(value: Boolean): this.type = set("showTargetControls", value.asInstanceOf[js.Any])
+    
+    inline def showTargetFilter(value: Boolean): this.type = set("showTargetFilter", value.asInstanceOf[js.Any])
+    
+    inline def source(value: js.Array[Any]): this.type = set("source", value.asInstanceOf[js.Any])
+    
+    inline def sourceFilterPlaceholder(value: String): this.type = set("sourceFilterPlaceholder", value.asInstanceOf[js.Any])
+    
+    inline def sourceFilterTemplate(value: PickListFilterTemplateType): this.type = set("sourceFilterTemplate", value.asInstanceOf[js.Any])
+    
+    inline def sourceFilterTemplateFunction1(value: /* options */ PickListFilterTemplateOptions => Node): this.type = set("sourceFilterTemplate", js.Any.fromFunction1(value))
+    
+    inline def sourceFilterTemplateNull: this.type = set("sourceFilterTemplate", null)
+    
+    inline def sourceFilterTemplateVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("sourceFilterTemplate", js.Array(value*))
+    
+    inline def sourceFilterTemplateVdomElement(value: VdomElement): this.type = set("sourceFilterTemplate", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def sourceFilterValue(value: String): this.type = set("sourceFilterValue", value.asInstanceOf[js.Any])
+    
+    inline def sourceHeader(value: VdomNode): this.type = set("sourceHeader", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def sourceHeaderNull: this.type = set("sourceHeader", null)
+    
+    inline def sourceHeaderVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("sourceHeader", js.Array(value*))
+    
+    inline def sourceHeaderVdomElement(value: VdomElement): this.type = set("sourceHeader", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def sourceItemTemplate(value: PickListItemTemplateType): this.type = set("sourceItemTemplate", value.asInstanceOf[js.Any])
+    
+    inline def sourceItemTemplateFunction1(value: /* item */ Any => Node): this.type = set("sourceItemTemplate", js.Any.fromFunction1(value))
+    
+    inline def sourceItemTemplateNull: this.type = set("sourceItemTemplate", null)
+    
+    inline def sourceItemTemplateVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("sourceItemTemplate", js.Array(value*))
+    
+    inline def sourceItemTemplateVdomElement(value: VdomElement): this.type = set("sourceItemTemplate", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def sourceSelection(value: Any): this.type = set("sourceSelection", value.asInstanceOf[js.Any])
+    
+    inline def sourceStyle(value: js.Object): this.type = set("sourceStyle", value.asInstanceOf[js.Any])
+    
+    inline def sourceVarargs(value: Any*): this.type = set("source", js.Array(value*))
+    
+    inline def style(value: js.Object): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def target(value: js.Array[Any]): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def targetFilterPlaceholder(value: String): this.type = set("targetFilterPlaceholder", value.asInstanceOf[js.Any])
+    
+    inline def targetFilterTemplate(value: PickListFilterTemplateType): this.type = set("targetFilterTemplate", value.asInstanceOf[js.Any])
+    
+    inline def targetFilterTemplateFunction1(value: /* options */ PickListFilterTemplateOptions => Node): this.type = set("targetFilterTemplate", js.Any.fromFunction1(value))
+    
+    inline def targetFilterTemplateNull: this.type = set("targetFilterTemplate", null)
+    
+    inline def targetFilterTemplateVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("targetFilterTemplate", js.Array(value*))
+    
+    inline def targetFilterTemplateVdomElement(value: VdomElement): this.type = set("targetFilterTemplate", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def targetFilterValue(value: String): this.type = set("targetFilterValue", value.asInstanceOf[js.Any])
+    
+    inline def targetHeader(value: VdomNode): this.type = set("targetHeader", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def targetHeaderNull: this.type = set("targetHeader", null)
+    
+    inline def targetHeaderVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("targetHeader", js.Array(value*))
+    
+    inline def targetHeaderVdomElement(value: VdomElement): this.type = set("targetHeader", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def targetItemTemplate(value: PickListItemTemplateType): this.type = set("targetItemTemplate", value.asInstanceOf[js.Any])
+    
+    inline def targetItemTemplateFunction1(value: /* item */ Any => Node): this.type = set("targetItemTemplate", js.Any.fromFunction1(value))
+    
+    inline def targetItemTemplateNull: this.type = set("targetItemTemplate", null)
+    
+    inline def targetItemTemplateVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("targetItemTemplate", js.Array(value*))
+    
+    inline def targetItemTemplateVdomElement(value: VdomElement): this.type = set("targetItemTemplate", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def targetSelection(value: Any): this.type = set("targetSelection", value.asInstanceOf[js.Any])
+    
+    inline def targetStyle(value: js.Object): this.type = set("targetStyle", value.asInstanceOf[js.Any])
+    
+    inline def targetVarargs(value: Any*): this.type = set("target", js.Array(value*))
+  }
+  
+  implicit def make(companion: PickList.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PickListProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

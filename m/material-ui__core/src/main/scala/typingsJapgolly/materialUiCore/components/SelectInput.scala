@@ -1,89 +1,79 @@
 package typingsJapgolly.materialUiCore.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
 import japgolly.scalajs.react.ReactFocusEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
-import org.scalajs.dom.raw.HTMLDivElement
-import org.scalajs.dom.raw.HTMLSelectElement
-import typingsJapgolly.materialUiCore.AnonValue
-import typingsJapgolly.materialUiCore.PartialMenuProps
+import japgolly.scalajs.react.facade.React.ElementType
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLSelectElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.materialUiCore.anon.Name
+import typingsJapgolly.materialUiCore.anon.Node
+import typingsJapgolly.materialUiCore.anon.PartialMenuProps
 import typingsJapgolly.materialUiCore.materialUiCoreStrings.filled
 import typingsJapgolly.materialUiCore.materialUiCoreStrings.outlined
 import typingsJapgolly.materialUiCore.materialUiCoreStrings.standard
-import typingsJapgolly.materialUiCore.selectInputMod.SelectInputProps
-import typingsJapgolly.materialUiCore.selectInputMod.default
+import typingsJapgolly.materialUiCore.selectSelectInputMod.SelectInputProps
 import typingsJapgolly.react.mod.HTMLAttributes
-import typingsJapgolly.react.mod.ReactType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SelectInput {
-  def apply(
-    autoWidth: Boolean,
-    multiple: Boolean,
-    native: Boolean,
-    value: String | Double | Boolean | (js.Array[String | Double | Boolean]),
-    IconComponent: ReactType[_] = null,
-    MenuProps: PartialMenuProps = null,
-    SelectDisplayProps: HTMLAttributes[HTMLDivElement] = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    inputRef: /* ref */ HTMLSelectElement | AnonValue => Callback = null,
-    name: String = null,
-    onBlur: ReactFocusEventFrom[Element] => Callback = null,
-    onChange: (/* event */ ReactEventFrom[HTMLSelectElement], /* child */ Node) => Callback = null,
-    onClose: /* event */ ReactEventFrom[js.Object with Element] => Callback = null,
-    onFocus: ReactFocusEventFrom[Element] => Callback = null,
-    onOpen: /* event */ ReactEventFrom[js.Object with Element] => Callback = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    renderValue: /* value */ String | Double | Boolean | (js.Array[String | Double | Boolean]) => CallbackTo[Node] = null,
-    tabIndex: Int | Double = null,
-    variant: standard | outlined | filled = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SelectInputProps, default, Unit, SelectInputProps] = {
-    val __obj = js.Dynamic.literal(autoWidth = autoWidth.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
-      if (IconComponent != null) __obj.updateDynamic("IconComponent")(IconComponent.asInstanceOf[js.Any])
-    if (MenuProps != null) __obj.updateDynamic("MenuProps")(MenuProps.asInstanceOf[js.Any])
-    if (SelectDisplayProps != null) __obj.updateDynamic("SelectDisplayProps")(SelectDisplayProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1((t0: /* ref */ org.scalajs.dom.raw.HTMLSelectElement | typingsJapgolly.materialUiCore.AnonValue) => inputRef(t0).runNow()))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.Element]) => onBlur(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLSelectElement], t1: /* child */ japgolly.scalajs.react.raw.React.Node) => onChange(t0, t1).runNow()))
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onClose(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onOpen(t0).runNow()))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (renderValue != null) __obj.updateDynamic("renderValue")(js.Any.fromFunction1((t0: /* value */ java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double | scala.Boolean])) => renderValue(t0).runNow()))
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUiCore.selectInputMod.SelectInputProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUiCore.selectInputMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUiCore.selectInputMod.SelectInputProps])(children: _*)
+  inline def apply(autoWidth: Boolean, multiple: Boolean, native: Boolean): Builder = {
+    val __props = js.Dynamic.literal(autoWidth = autoWidth.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[SelectInputProps]))
   }
+  
   @JSImport("@material-ui/core/Select/SelectInput", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def IconComponent(value: ElementType): this.type = set("IconComponent", value.asInstanceOf[js.Any])
+    
+    inline def MenuProps(value: PartialMenuProps): this.type = set("MenuProps", value.asInstanceOf[js.Any])
+    
+    inline def SelectDisplayProps(value: HTMLAttributes[HTMLDivElement]): this.type = set("SelectDisplayProps", value.asInstanceOf[js.Any])
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def inputRef(value: /* ref */ HTMLSelectElement | Node => Callback): this.type = set("inputRef", js.Any.fromFunction1((t0: /* ref */ HTMLSelectElement | Node) => value(t0).runNow()))
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: ReactFocusEventFrom[Any & Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[Any & Element]) => value(t0).runNow()))
+    
+    inline def onChange(
+      value: (/* event */ ReactEventFrom[Name & Element], /* child */ japgolly.scalajs.react.facade.React.Node) => Callback
+    ): this.type = set("onChange", js.Any.fromFunction2((t0: /* event */ ReactEventFrom[Name & Element], t1: /* child */ japgolly.scalajs.react.facade.React.Node) => (value(t0, t1)).runNow()))
+    
+    inline def onClose(value: /* event */ ReactEventFrom[js.Object & Element] => Callback): this.type = set("onClose", js.Any.fromFunction1((t0: /* event */ ReactEventFrom[js.Object & Element]) => value(t0).runNow()))
+    
+    inline def onFocus(value: ReactFocusEventFrom[Any & Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[Any & Element]) => value(t0).runNow()))
+    
+    inline def onOpen(value: /* event */ ReactEventFrom[js.Object & Element] => Callback): this.type = set("onOpen", js.Any.fromFunction1((t0: /* event */ ReactEventFrom[js.Object & Element]) => value(t0).runNow()))
+    
+    inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+    
+    inline def readOnly(value: Boolean): this.type = set("readOnly", value.asInstanceOf[js.Any])
+    
+    inline def renderValue(value: /* value */ js.UndefOr[Any] => japgolly.scalajs.react.facade.React.Node): this.type = set("renderValue", js.Any.fromFunction1(value))
+    
+    inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Any): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def variant(value: standard | outlined | filled): this.type = set("variant", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: SelectInputProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

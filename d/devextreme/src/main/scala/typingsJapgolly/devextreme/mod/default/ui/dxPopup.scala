@@ -1,19 +1,11 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxPopupOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxPopup")
+@JSImport("devextreme", "default.ui.dxPopup")
 @js.native
-class dxPopup protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.dxOverlay {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxPopupOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxPopup]) = this()
-  def this(element: Element, options: dxPopupOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxPopup]) = this()
-}
-
+open class dxPopup[TProperties] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxOverlay[TProperties]

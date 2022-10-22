@@ -1,18 +1,21 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ModuleBlock
-  extends Statement
+  extends StObject
+     with Statement
      with BlockLike
      with NamespaceBody {
+  
   @JSName("kind")
-  var kind_ModuleBlock: typingsJapgolly.typescript.mod.SyntaxKind.ModuleBlock = js.native
+  val kind_ModuleBlock: typingsJapgolly.typescript.mod.SyntaxKind.ModuleBlock = js.native
+  
   @JSName("parent")
-  var parent_ModuleBlock: ModuleDeclaration = js.native
-  var statements: NodeArray[Statement] = js.native
+  val parent_ModuleBlock: ModuleDeclaration = js.native
+  
+  val statements: NodeArray[Statement] = js.native
 }
-

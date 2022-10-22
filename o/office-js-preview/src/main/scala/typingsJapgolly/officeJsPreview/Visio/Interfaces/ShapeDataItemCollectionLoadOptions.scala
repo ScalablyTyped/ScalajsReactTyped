@@ -1,8 +1,8 @@
 package typingsJapgolly.officeJsPreview.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -10,37 +10,73 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-@js.native
-trait ShapeDataItemCollectionLoadOptions extends js.Object {
+trait ShapeDataItemCollectionLoadOptions extends StObject {
+  
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * For EACH ITEM in the collection: A string that specifies the format of the shape data item. Read-only.
     *
     * [Api set:  1.1]
     */
-  var format: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * For EACH ITEM in the collection: A string that specifies the formatted value of the shape data item. Read-only.
     *
     * [Api set:  1.1]
     */
-  var formattedValue: js.UndefOr[Boolean] = js.native
+  var formattedValue: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * For EACH ITEM in the collection: A string that specifies the label of the shape data item. Read-only.
     *
     * [Api set:  1.1]
     */
-  var label: js.UndefOr[Boolean] = js.native
+  var label: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * For EACH ITEM in the collection: A string that specifies the value of the shape data item. Read-only.
     *
     * [Api set:  1.1]
     */
-  var value: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Boolean] = js.undefined
 }
-
+object ShapeDataItemCollectionLoadOptions {
+  
+  inline def apply(): ShapeDataItemCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ShapeDataItemCollectionLoadOptions]
+  }
+  
+  extension [Self <: ShapeDataItemCollectionLoadOptions](x: Self) {
+    
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    
+    inline def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setFormattedValue(value: Boolean): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
+    
+    inline def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
+    
+    inline def setLabel(value: Boolean): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
+}

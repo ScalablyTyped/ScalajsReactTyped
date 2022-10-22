@@ -2,9 +2,9 @@ package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.Attribution
 import typingsJapgolly.openlayers.mod.olx.source.OSMOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -22,20 +22,24 @@ import scala.scalajs.js.annotation._
   * @param opt_options Open Street Map options.
   * @api stable
   */
-class OSM () extends XYZ {
+open class OSM () extends XYZ {
   def this(opt_options: OSMOptions) = this()
 }
-
-/* static members */
-@JSImport("openlayers", "source.OSM")
-@js.native
-object OSM extends js.Object {
+object OSM {
+  
+  @JSImport("openlayers", "source.OSM")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * The attribution containing a link to the OpenStreetMap Copyright and License
     * page.
     * @const
     * @api
     */
-  var ATTRIBUTION: Attribution = js.native
+  /* static member */
+  @JSImport("openlayers", "source.OSM.ATTRIBUTION")
+  @js.native
+  def ATTRIBUTION: Attribution = js.native
+  inline def ATTRIBUTION_=(x: Attribution): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTION")(x.asInstanceOf[js.Any])
 }
-

@@ -1,25 +1,13 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxMultiView.ItemLike
 import typingsJapgolly.devextreme.mod.DevExpress.ui.dxMultiViewOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxMultiView")
+@JSImport("devextreme", "default.ui.dxMultiView")
 @js.native
-class dxMultiView protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(
-    element: JQuery,
-    options: dxMultiViewOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxMultiView]
-  ) = this()
-  def this(
-    element: Element,
-    options: dxMultiViewOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxMultiView]
-  ) = this()
-}
-
+open class dxMultiView[TProperties /* <: dxMultiViewOptions[TItem, TKey] */, TItem /* <: ItemLike */, TKey] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget[TProperties, TItem, TKey]

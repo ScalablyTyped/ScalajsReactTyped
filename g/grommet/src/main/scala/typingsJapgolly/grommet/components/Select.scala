@@ -1,122 +1,167 @@
 package typingsJapgolly.grommet.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import japgolly.scalajs.react.raw.React.Node
-import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.grommet.AnonLeft
-import typingsJapgolly.grommet.AnonMultiple
-import typingsJapgolly.grommet.dropMod.DropProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.grommet.anon.Bottom
+import typingsJapgolly.grommet.anon.Key
+import typingsJapgolly.grommet.anon.Multiple
+import typingsJapgolly.grommet.anon.Position
+import typingsJapgolly.grommet.es6ComponentsDropMod.DropProps
+import typingsJapgolly.grommet.es6ComponentsSelectMod.SelectExtendedProps
+import typingsJapgolly.grommet.es6UtilsMod.A11yTitleType
+import typingsJapgolly.grommet.es6UtilsMod.AlignSelfType
+import typingsJapgolly.grommet.es6UtilsMod.GridAreaType
+import typingsJapgolly.grommet.es6UtilsMod.MarginType
+import typingsJapgolly.grommet.es6UtilsMod.PlaceHolderType
 import typingsJapgolly.grommet.grommetStrings.large
 import typingsJapgolly.grommet.grommetStrings.medium
 import typingsJapgolly.grommet.grommetStrings.small
 import typingsJapgolly.grommet.grommetStrings.xlarge
 import typingsJapgolly.grommet.grommetStrings.xsmall
-import typingsJapgolly.grommet.selectMod.SelectProps
-import typingsJapgolly.grommet.utilsMod.A11yTitleType
-import typingsJapgolly.grommet.utilsMod.AlignSelfType
-import typingsJapgolly.grommet.utilsMod.GridAreaType
-import typingsJapgolly.grommet.utilsMod.MarginType
-import typingsJapgolly.grommet.utilsMod.PlaceHolderType
+import typingsJapgolly.react.mod.FC
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Select {
-  def apply(
-    options: js.Array[String | Boolean | Double | Element | js.Object],
-    a11yTitle: A11yTitleType = null,
-    alignSelf: AlignSelfType = null,
-    closeOnChange: js.UndefOr[Boolean] = js.undefined,
-    disabled: Boolean | (js.Array[Double | String | js.Object]) = null,
-    disabledKey: String | (js.Function1[/* repeated */ js.Any, _]) = null,
-    dropAlign: AnonLeft = null,
-    dropHeight: xsmall | small | medium | large | xlarge | String = null,
-    dropProps: DropProps = null,
-    dropTarget: js.Object = null,
-    emptySearchMessage: String = null,
-    focusIndicator: js.UndefOr[Boolean] = js.undefined,
-    gridArea: GridAreaType = null,
-    icon: Boolean | (js.Function1[/* repeated */ js.Any, _]) | Node = null,
-    id: String = null,
-    labelKey: String | (js.Function1[/* repeated */ js.Any, _]) = null,
-    margin: MarginType = null,
-    messages: AnonMultiple = null,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    onChange: /* repeated */ js.Any => Callback = null,
-    onClose: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    onMore: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    onOpen: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    onSearch: /* search */ String => Callback = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    placeholder: PlaceHolderType = null,
-    plain: js.UndefOr[Boolean] = js.undefined,
-    replace: js.UndefOr[Boolean] = js.undefined,
-    searchPlaceholder: String = null,
-    selected: Double | js.Array[Double] = null,
-    size: small | medium | large | xlarge | String = null,
-    value: String | Element | js.Object | (js.Array[String | js.Object]) = null,
-    valueKey: String | (js.Function1[/* repeated */ js.Any, _]) = null,
-    valueLabel: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: /* repeated */ js.Any => CallbackTo[js.Any] = null
-  ): UnmountedWithRoot[SelectProps, typingsJapgolly.grommet.mod.Select, Unit, SelectProps] = {
-    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
   
-      if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => children(t0).runNow()))
-    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnChange)) __obj.updateDynamic("closeOnChange")(closeOnChange.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (disabledKey != null) __obj.updateDynamic("disabledKey")(disabledKey.asInstanceOf[js.Any])
-    if (dropAlign != null) __obj.updateDynamic("dropAlign")(dropAlign.asInstanceOf[js.Any])
-    if (dropHeight != null) __obj.updateDynamic("dropHeight")(dropHeight.asInstanceOf[js.Any])
-    if (dropProps != null) __obj.updateDynamic("dropProps")(dropProps.asInstanceOf[js.Any])
-    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
-    if (emptySearchMessage != null) __obj.updateDynamic("emptySearchMessage")(emptySearchMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusIndicator)) __obj.updateDynamic("focusIndicator")(focusIndicator.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (labelKey != null) __obj.updateDynamic("labelKey")(labelKey.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onChange(t0).runNow()))
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onClose(t0).runNow()))
-    if (onMore != null) __obj.updateDynamic("onMore")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMore(t0).runNow()))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onOpen(t0).runNow()))
-    if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1((t0: /* search */ java.lang.String) => onSearch(t0).runNow()))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
-    if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueKey != null) __obj.updateDynamic("valueKey")(valueKey.asInstanceOf[js.Any])
-    if (valueLabel != null) __obj.updateDynamic("valueLabel")(valueLabel.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.grommet.selectMod.SelectProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.grommet.mod.Select](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.grommet.selectMod.SelectProps])
+  inline def apply(options: js.Array[String | Boolean | Double | Element | js.Object]): Builder = {
+    val __props = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[SelectExtendedProps]))
   }
-  @JSImport("grommet", "Select")
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("grommet/es6", "Select")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def a11yTitle(value: A11yTitleType): this.type = set("a11yTitle", value.asInstanceOf[js.Any])
+    
+    inline def alignSelf(value: AlignSelfType): this.type = set("alignSelf", value.asInstanceOf[js.Any])
+    
+    inline def children(value: /* repeated */ Any => Any): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def clear(value: Boolean | Position): this.type = set("clear", value.asInstanceOf[js.Any])
+    
+    inline def closeOnChange(value: Boolean): this.type = set("closeOnChange", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: String | Double | js.Object | (js.Array[String | Double | js.Object])): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def defaultValueVarargs(value: (String | Double | js.Object)*): this.type = set("defaultValue", js.Array(value*))
+    
+    inline def disabled(value: Boolean | (js.Array[Double | String | js.Object])): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def disabledKey(value: String | (js.Function1[/* repeated */ Any, Any])): this.type = set("disabledKey", value.asInstanceOf[js.Any])
+    
+    inline def disabledKeyFunction1(value: /* repeated */ Any => Any): this.type = set("disabledKey", js.Any.fromFunction1(value))
+    
+    inline def disabledVarargs(value: (Double | String | js.Object)*): this.type = set("disabled", js.Array(value*))
+    
+    inline def dropAlign(value: Bottom): this.type = set("dropAlign", value.asInstanceOf[js.Any])
+    
+    inline def dropHeight(value: xsmall | small | medium | large | xlarge | String): this.type = set("dropHeight", value.asInstanceOf[js.Any])
+    
+    inline def dropProps(value: DropProps): this.type = set("dropProps", value.asInstanceOf[js.Any])
+    
+    inline def dropTarget(value: js.Object): this.type = set("dropTarget", value.asInstanceOf[js.Any])
+    
+    inline def emptySearchMessage(value: String | Node): this.type = set("emptySearchMessage", value.asInstanceOf[js.Any])
+    
+    inline def emptySearchMessageNull: this.type = set("emptySearchMessage", null)
+    
+    inline def emptySearchMessageVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): this.type = set("emptySearchMessage", js.Array(value*))
+    
+    inline def emptySearchMessageVdomElement(value: VdomElement): this.type = set("emptySearchMessage", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def focusIndicator(value: Boolean): this.type = set("focusIndicator", value.asInstanceOf[js.Any])
+    
+    inline def gridArea(value: GridAreaType): this.type = set("gridArea", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: Boolean | (js.Function1[/* repeated */ Any, Any]) | Node | FC[js.Object]): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def iconFunction1(value: /* repeated */ Any => Any): this.type = set("icon", js.Any.fromFunction1(value))
+    
+    inline def iconNull: this.type = set("icon", null)
+    
+    inline def iconVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): this.type = set("icon", js.Array(value*))
+    
+    inline def iconVdomElement(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def labelKey(value: String | (js.Function1[/* repeated */ Any, String | Node])): this.type = set("labelKey", value.asInstanceOf[js.Any])
+    
+    inline def labelKeyFunction1(value: /* repeated */ Any => String | Node): this.type = set("labelKey", js.Any.fromFunction1(value))
+    
+    inline def margin(value: MarginType): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def messages(value: Multiple): this.type = set("messages", value.asInstanceOf[js.Any])
+    
+    inline def multiple(value: Boolean): this.type = set("multiple", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* repeated */ Any => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* repeated */ Any) => value(t0).runNow()))
+    
+    inline def onClose(value: /* repeated */ Any => Any): this.type = set("onClose", js.Any.fromFunction1(value))
+    
+    inline def onMore(value: /* repeated */ Any => Any): this.type = set("onMore", js.Any.fromFunction1(value))
+    
+    inline def onOpen(value: /* repeated */ Any => Any): this.type = set("onOpen", js.Any.fromFunction1(value))
+    
+    inline def onSearch(value: /* search */ String => Callback): this.type = set("onSearch", js.Any.fromFunction1((t0: /* search */ String) => value(t0).runNow()))
+    
+    inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: PlaceHolderType): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def placeholderNull: this.type = set("placeholder", null)
+    
+    inline def placeholderVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): this.type = set("placeholder", js.Array(value*))
+    
+    inline def placeholderVdomElement(value: VdomElement): this.type = set("placeholder", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def plain(value: Boolean): this.type = set("plain", value.asInstanceOf[js.Any])
+    
+    inline def replace(value: Boolean): this.type = set("replace", value.asInstanceOf[js.Any])
+    
+    inline def searchPlaceholder(value: String): this.type = set("searchPlaceholder", value.asInstanceOf[js.Any])
+    
+    inline def selected(value: Double | js.Array[Double]): this.type = set("selected", value.asInstanceOf[js.Any])
+    
+    inline def selectedVarargs(value: Double*): this.type = set("selected", js.Array(value*))
+    
+    inline def size(value: small | medium | large | xlarge | String): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def value(value: String | Element | js.Object | (js.Array[String | Double | js.Object])): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueKey(value: String | Key | (js.Function1[/* repeated */ Any, String])): this.type = set("valueKey", value.asInstanceOf[js.Any])
+    
+    inline def valueKeyFunction1(value: /* repeated */ Any => String): this.type = set("valueKey", js.Any.fromFunction1(value))
+    
+    inline def valueLabel(value: Node | (js.Function1[/* repeated */ Any, String | Node])): this.type = set("valueLabel", value.asInstanceOf[js.Any])
+    
+    inline def valueLabelFunction1(value: /* repeated */ Any => String | Node): this.type = set("valueLabel", js.Any.fromFunction1(value))
+    
+    inline def valueLabelNull: this.type = set("valueLabel", null)
+    
+    inline def valueLabelVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): this.type = set("valueLabel", js.Array(value*))
+    
+    inline def valueLabelVdomElement(value: VdomElement): this.type = set("valueLabel", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def valueVarargs(value: (String | Double | js.Object)*): this.type = set("value", js.Array(value*))
+    
+    inline def valueVdomElement(value: VdomElement): this.type = set("value", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: SelectExtendedProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

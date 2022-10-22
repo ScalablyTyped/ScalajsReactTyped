@@ -1,8 +1,8 @@
 package typingsJapgolly.hapiHapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.hapiHapi.hapiHapiStrings._empty
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.hapiHapi.hapiHapiStrings.`origin-when-cross-origin`
   - typingsJapgolly.hapiHapi.hapiHapiStrings.`strict-origin-when-cross-origin`
 */
-trait ReferrerPolicy extends js.Object
-
+trait ReferrerPolicy extends StObject
 object ReferrerPolicy {
-  @scala.inline
-  def _empty: typingsJapgolly.hapiHapi.hapiHapiStrings._empty = this.cast("")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `no-referrer`: typingsJapgolly.hapiHapi.hapiHapiStrings.`no-referrer` = this.cast("no-referrer")
-  @scala.inline
-  def `no-referrer-when-downgrade`: typingsJapgolly.hapiHapi.hapiHapiStrings.`no-referrer-when-downgrade` = this.cast("no-referrer-when-downgrade")
-  @scala.inline
-  def origin: typingsJapgolly.hapiHapi.hapiHapiStrings.origin = this.cast("origin")
-  @scala.inline
-  def `origin-when-cross-origin`: typingsJapgolly.hapiHapi.hapiHapiStrings.`origin-when-cross-origin` = this.cast("origin-when-cross-origin")
-  @scala.inline
-  def `same-origin`: typingsJapgolly.hapiHapi.hapiHapiStrings.`same-origin` = this.cast("same-origin")
-  @scala.inline
-  def `strict-origin`: typingsJapgolly.hapiHapi.hapiHapiStrings.`strict-origin` = this.cast("strict-origin")
-  @scala.inline
-  def `strict-origin-when-cross-origin`: typingsJapgolly.hapiHapi.hapiHapiStrings.`strict-origin-when-cross-origin` = this.cast("strict-origin-when-cross-origin")
-  @scala.inline
-  def `unsafe-url`: typingsJapgolly.hapiHapi.hapiHapiStrings.`unsafe-url` = this.cast("unsafe-url")
+  
+  inline def _empty: typingsJapgolly.hapiHapi.hapiHapiStrings._empty = "".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings._empty]
+  
+  inline def `no-referrer`: typingsJapgolly.hapiHapi.hapiHapiStrings.`no-referrer` = "no-referrer".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.`no-referrer`]
+  
+  inline def `no-referrer-when-downgrade`: typingsJapgolly.hapiHapi.hapiHapiStrings.`no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.`no-referrer-when-downgrade`]
+  
+  inline def origin: typingsJapgolly.hapiHapi.hapiHapiStrings.origin = "origin".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.origin]
+  
+  inline def `origin-when-cross-origin`: typingsJapgolly.hapiHapi.hapiHapiStrings.`origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.`origin-when-cross-origin`]
+  
+  inline def `same-origin`: typingsJapgolly.hapiHapi.hapiHapiStrings.`same-origin` = "same-origin".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.`same-origin`]
+  
+  inline def `strict-origin`: typingsJapgolly.hapiHapi.hapiHapiStrings.`strict-origin` = "strict-origin".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.`strict-origin`]
+  
+  inline def `strict-origin-when-cross-origin`: typingsJapgolly.hapiHapi.hapiHapiStrings.`strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.`strict-origin-when-cross-origin`]
+  
+  inline def `unsafe-url`: typingsJapgolly.hapiHapi.hapiHapiStrings.`unsafe-url` = "unsafe-url".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.`unsafe-url`]
 }
-

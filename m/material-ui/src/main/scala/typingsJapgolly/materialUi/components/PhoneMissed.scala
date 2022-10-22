@@ -1,14 +1,18 @@
 package typingsJapgolly.materialUi.components
 
-import typingsJapgolly.materialUi.phoneMissedMod.default
+import typingsJapgolly.materialUi.MaterialUI.SvgIconProps
+import typingsJapgolly.materialUi.svgIconsNotificationPhoneMissedMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object PhoneMissed extends SharedApply_SvgIconProps_1100155871[default] {
+object PhoneMissed {
+  
   @JSImport("material-ui/svg-icons/notification/phone-missed", JSImport.Default)
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: PhoneMissed.type): SharedBuilder_SvgIconProps_115160895[default] = new SharedBuilder_SvgIconProps_115160895[default](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SvgIconProps): SharedBuilder_SvgIconProps_115160895[default] = new SharedBuilder_SvgIconProps_115160895[default](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

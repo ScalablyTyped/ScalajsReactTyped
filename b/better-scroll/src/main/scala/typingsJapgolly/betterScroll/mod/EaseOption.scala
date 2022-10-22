@@ -1,24 +1,37 @@
 package typingsJapgolly.betterScroll.mod
 
-import typingsJapgolly.betterScroll.AnonFn
+import typingsJapgolly.betterScroll.anon.Fn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EaseOption extends js.Object {
-  var bounce: js.UndefOr[AnonFn] = js.undefined
-  var swipe: js.UndefOr[AnonFn] = js.undefined
-  var swipeBounce: js.UndefOr[AnonFn] = js.undefined
+trait EaseOption extends StObject {
+  
+  var bounce: js.UndefOr[Fn] = js.undefined
+  
+  var swipe: js.UndefOr[Fn] = js.undefined
+  
+  var swipeBounce: js.UndefOr[Fn] = js.undefined
 }
-
 object EaseOption {
-  @scala.inline
-  def apply(bounce: AnonFn = null, swipe: AnonFn = null, swipeBounce: AnonFn = null): EaseOption = {
+  
+  inline def apply(): EaseOption = {
     val __obj = js.Dynamic.literal()
-    if (bounce != null) __obj.updateDynamic("bounce")(bounce.asInstanceOf[js.Any])
-    if (swipe != null) __obj.updateDynamic("swipe")(swipe.asInstanceOf[js.Any])
-    if (swipeBounce != null) __obj.updateDynamic("swipeBounce")(swipeBounce.asInstanceOf[js.Any])
     __obj.asInstanceOf[EaseOption]
   }
+  
+  extension [Self <: EaseOption](x: Self) {
+    
+    inline def setBounce(value: Fn): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
+    
+    inline def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
+    
+    inline def setSwipe(value: Fn): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
+    
+    inline def setSwipeBounce(value: Fn): Self = StObject.set(x, "swipeBounce", value.asInstanceOf[js.Any])
+    
+    inline def setSwipeBounceUndefined: Self = StObject.set(x, "swipeBounce", js.undefined)
+    
+    inline def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
+  }
 }
-

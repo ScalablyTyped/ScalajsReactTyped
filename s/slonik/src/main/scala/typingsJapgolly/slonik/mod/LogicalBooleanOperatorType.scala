@@ -1,21 +1,17 @@
 package typingsJapgolly.slonik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.slonik.slonikStrings.AND
   - typingsJapgolly.slonik.slonikStrings.OR
 */
-trait LogicalBooleanOperatorType extends js.Object
-
+trait LogicalBooleanOperatorType extends StObject
 object LogicalBooleanOperatorType {
-  @scala.inline
-  def AND: typingsJapgolly.slonik.slonikStrings.AND = this.cast("AND")
-  @scala.inline
-  def OR: typingsJapgolly.slonik.slonikStrings.OR = this.cast("OR")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def AND: typingsJapgolly.slonik.slonikStrings.AND = "AND".asInstanceOf[typingsJapgolly.slonik.slonikStrings.AND]
+  
+  inline def OR: typingsJapgolly.slonik.slonikStrings.OR = "OR".asInstanceOf[typingsJapgolly.slonik.slonikStrings.OR]
 }
-

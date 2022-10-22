@@ -1,33 +1,48 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LangAccessibilityAnnounceNewDataOptions extends js.Object {
+trait LangAccessibilityAnnounceNewDataOptions extends StObject {
+  
   var newDataAnnounce: js.UndefOr[String] = js.undefined
+  
   var newPointAnnounceMultiple: js.UndefOr[String] = js.undefined
+  
   var newPointAnnounceSingle: js.UndefOr[String] = js.undefined
+  
   var newSeriesAnnounceMultiple: js.UndefOr[String] = js.undefined
+  
   var newSeriesAnnounceSingle: js.UndefOr[String] = js.undefined
 }
-
 object LangAccessibilityAnnounceNewDataOptions {
-  @scala.inline
-  def apply(
-    newDataAnnounce: String = null,
-    newPointAnnounceMultiple: String = null,
-    newPointAnnounceSingle: String = null,
-    newSeriesAnnounceMultiple: String = null,
-    newSeriesAnnounceSingle: String = null
-  ): LangAccessibilityAnnounceNewDataOptions = {
+  
+  inline def apply(): LangAccessibilityAnnounceNewDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (newDataAnnounce != null) __obj.updateDynamic("newDataAnnounce")(newDataAnnounce.asInstanceOf[js.Any])
-    if (newPointAnnounceMultiple != null) __obj.updateDynamic("newPointAnnounceMultiple")(newPointAnnounceMultiple.asInstanceOf[js.Any])
-    if (newPointAnnounceSingle != null) __obj.updateDynamic("newPointAnnounceSingle")(newPointAnnounceSingle.asInstanceOf[js.Any])
-    if (newSeriesAnnounceMultiple != null) __obj.updateDynamic("newSeriesAnnounceMultiple")(newSeriesAnnounceMultiple.asInstanceOf[js.Any])
-    if (newSeriesAnnounceSingle != null) __obj.updateDynamic("newSeriesAnnounceSingle")(newSeriesAnnounceSingle.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangAccessibilityAnnounceNewDataOptions]
   }
+  
+  extension [Self <: LangAccessibilityAnnounceNewDataOptions](x: Self) {
+    
+    inline def setNewDataAnnounce(value: String): Self = StObject.set(x, "newDataAnnounce", value.asInstanceOf[js.Any])
+    
+    inline def setNewDataAnnounceUndefined: Self = StObject.set(x, "newDataAnnounce", js.undefined)
+    
+    inline def setNewPointAnnounceMultiple(value: String): Self = StObject.set(x, "newPointAnnounceMultiple", value.asInstanceOf[js.Any])
+    
+    inline def setNewPointAnnounceMultipleUndefined: Self = StObject.set(x, "newPointAnnounceMultiple", js.undefined)
+    
+    inline def setNewPointAnnounceSingle(value: String): Self = StObject.set(x, "newPointAnnounceSingle", value.asInstanceOf[js.Any])
+    
+    inline def setNewPointAnnounceSingleUndefined: Self = StObject.set(x, "newPointAnnounceSingle", js.undefined)
+    
+    inline def setNewSeriesAnnounceMultiple(value: String): Self = StObject.set(x, "newSeriesAnnounceMultiple", value.asInstanceOf[js.Any])
+    
+    inline def setNewSeriesAnnounceMultipleUndefined: Self = StObject.set(x, "newSeriesAnnounceMultiple", js.undefined)
+    
+    inline def setNewSeriesAnnounceSingle(value: String): Self = StObject.set(x, "newSeriesAnnounceSingle", value.asInstanceOf[js.Any])
+    
+    inline def setNewSeriesAnnounceSingleUndefined: Self = StObject.set(x, "newSeriesAnnounceSingle", js.undefined)
+  }
 }
-

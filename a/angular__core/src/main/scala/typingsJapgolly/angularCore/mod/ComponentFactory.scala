@@ -1,9 +1,9 @@
 package typingsJapgolly.angularCore.mod
 
-import typingsJapgolly.angularCore.AnonPropName
+import typingsJapgolly.angularCore.anon.PropName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base class for a factory that can create a component dynamically.
@@ -13,48 +13,118 @@ import scala.scalajs.js.annotation._
   * @see [Dynamic Components](guide/dynamic-component-loader)
   *
   * @publicApi
+  *
+  * @deprecated Angular no longer requires Component factories. Please use other APIs where
+  *     Component class can be used directly.
   */
-@JSImport("@angular/core", "ComponentFactory")
+/* note: abstract class */ @JSImport("@angular/core", "ComponentFactory")
 @js.native
-abstract class ComponentFactory[C] () extends js.Object {
+open class ComponentFactory[C] () extends StObject {
+  
   /**
     * The type of component the factory will create.
     */
-  val componentType: Type[_] = js.native
-  /**
-    * The inputs of the component.
-    */
-  val inputs: js.Array[AnonPropName] = js.native
-  /**
-    * Selector for all <ng-content> elements in the component.
-    */
-  val ngContentSelectors: js.Array[String] = js.native
-  /**
-    * The outputs of the component.
-    */
-  val outputs: js.Array[AnonPropName] = js.native
-  /**
-    * The component's HTML selector.
-    */
-  val selector: String = js.native
+  def componentType: Type[Any] = js.native
+  
   /**
     * Creates a new component.
     */
   def create(injector: Injector): ComponentRef[C] = js.native
-  def create(injector: Injector, projectableNodes: js.Array[js.Array[_]]): ComponentRef[C] = js.native
-  def create(injector: Injector, projectableNodes: js.Array[js.Array[_]], rootSelectorOrNode: String): ComponentRef[C] = js.native
+  def create(injector: Injector, projectableNodes: js.Array[js.Array[Any]]): ComponentRef[C] = js.native
+  def create(injector: Injector, projectableNodes: js.Array[js.Array[Any]], rootSelectorOrNode: String): ComponentRef[C] = js.native
   def create(
     injector: Injector,
-    projectableNodes: js.Array[js.Array[_]],
+    projectableNodes: js.Array[js.Array[Any]],
     rootSelectorOrNode: String,
-    ngModule: NgModuleRef[_]
+    environmentInjector: EnvironmentInjector
   ): ComponentRef[C] = js.native
-  def create(injector: Injector, projectableNodes: js.Array[js.Array[_]], rootSelectorOrNode: js.Any): ComponentRef[C] = js.native
   def create(
     injector: Injector,
-    projectableNodes: js.Array[js.Array[_]],
-    rootSelectorOrNode: js.Any,
-    ngModule: NgModuleRef[_]
+    projectableNodes: js.Array[js.Array[Any]],
+    rootSelectorOrNode: String,
+    environmentInjector: NgModuleRef[Any]
   ): ComponentRef[C] = js.native
+  def create(injector: Injector, projectableNodes: js.Array[js.Array[Any]], rootSelectorOrNode: Any): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: js.Array[js.Array[Any]],
+    rootSelectorOrNode: Any,
+    environmentInjector: EnvironmentInjector
+  ): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: js.Array[js.Array[Any]],
+    rootSelectorOrNode: Any,
+    environmentInjector: NgModuleRef[Any]
+  ): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: js.Array[js.Array[Any]],
+    rootSelectorOrNode: Unit,
+    environmentInjector: EnvironmentInjector
+  ): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: js.Array[js.Array[Any]],
+    rootSelectorOrNode: Unit,
+    environmentInjector: NgModuleRef[Any]
+  ): ComponentRef[C] = js.native
+  def create(injector: Injector, projectableNodes: Unit, rootSelectorOrNode: String): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: Unit,
+    rootSelectorOrNode: String,
+    environmentInjector: EnvironmentInjector
+  ): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: Unit,
+    rootSelectorOrNode: String,
+    environmentInjector: NgModuleRef[Any]
+  ): ComponentRef[C] = js.native
+  def create(injector: Injector, projectableNodes: Unit, rootSelectorOrNode: Any): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: Unit,
+    rootSelectorOrNode: Any,
+    environmentInjector: EnvironmentInjector
+  ): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: Unit,
+    rootSelectorOrNode: Any,
+    environmentInjector: NgModuleRef[Any]
+  ): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: Unit,
+    rootSelectorOrNode: Unit,
+    environmentInjector: EnvironmentInjector
+  ): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: Unit,
+    rootSelectorOrNode: Unit,
+    environmentInjector: NgModuleRef[Any]
+  ): ComponentRef[C] = js.native
+  
+  /**
+    * The inputs of the component.
+    */
+  def inputs: js.Array[PropName] = js.native
+  
+  /**
+    * Selector for all <ng-content> elements in the component.
+    */
+  def ngContentSelectors: js.Array[String] = js.native
+  
+  /**
+    * The outputs of the component.
+    */
+  def outputs: js.Array[PropName] = js.native
+  
+  /**
+    * The component's HTML selector.
+    */
+  def selector: String = js.native
 }
-

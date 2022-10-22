@@ -1,8 +1,8 @@
 package typingsJapgolly.gapiCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // The type of the scope. Possible values are:
 /* Rewritten from type alias, can be one of: 
@@ -11,18 +11,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gapiCalendar.gapiCalendarStrings.group
   - typingsJapgolly.gapiCalendar.gapiCalendarStrings.domain
 */
-trait ScopeType extends js.Object
-
+trait ScopeType extends StObject
 object ScopeType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def default: typingsJapgolly.gapiCalendar.gapiCalendarStrings.default = this.cast("default")
-  @scala.inline
-  def domain: typingsJapgolly.gapiCalendar.gapiCalendarStrings.domain = this.cast("domain")
-  @scala.inline
-  def group: typingsJapgolly.gapiCalendar.gapiCalendarStrings.group = this.cast("group")
-  @scala.inline
-  def user: typingsJapgolly.gapiCalendar.gapiCalendarStrings.user = this.cast("user")
+  
+  inline def default: typingsJapgolly.gapiCalendar.gapiCalendarStrings.default = "default".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.default]
+  
+  inline def domain: typingsJapgolly.gapiCalendar.gapiCalendarStrings.domain = "domain".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.domain]
+  
+  inline def group: typingsJapgolly.gapiCalendar.gapiCalendarStrings.group = "group".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.group]
+  
+  inline def user: typingsJapgolly.gapiCalendar.gapiCalendarStrings.user = "user".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.user]
 }
-

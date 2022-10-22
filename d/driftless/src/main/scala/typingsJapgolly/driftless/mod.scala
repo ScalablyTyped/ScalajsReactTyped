@@ -1,17 +1,22 @@
 package typingsJapgolly.driftless
 
+import typingsJapgolly.driftless.anon.CustomClearTimeout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("driftless", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def clearDriftless(id: Double): Unit = js.native
-  def clearDriftless(id: Double, options: AnonCustomClearTimeout): Unit = js.native
-  def setDriftlessInterval(callback: String, delayMs: Double, params: js.Any*): Double = js.native
-  def setDriftlessInterval(callback: js.Function1[/* repeated */ js.Any, Unit], delayMs: Double, params: js.Any*): Double = js.native
-  def setDriftlessTimeout(callback: String, delayMs: Double, params: js.Any*): Double = js.native
-  def setDriftlessTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], delayMs: Double, params: js.Any*): Double = js.native
+object mod {
+  
+  @JSImport("driftless", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def clearDriftless(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearDriftless")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearDriftless(id: Double, options: CustomClearTimeout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearDriftless")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setDriftlessInterval(callback: String, delayMs: Double, params: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setDriftlessInterval")((scala.List(callback.asInstanceOf[js.Any], delayMs.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setDriftlessInterval(callback: js.Function1[/* repeated */ Any, Unit], delayMs: Double, params: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setDriftlessInterval")((scala.List(callback.asInstanceOf[js.Any], delayMs.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  
+  inline def setDriftlessTimeout(callback: String, delayMs: Double, params: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setDriftlessTimeout")((scala.List(callback.asInstanceOf[js.Any], delayMs.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setDriftlessTimeout(callback: js.Function1[/* repeated */ Any, Unit], delayMs: Double, params: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setDriftlessTimeout")((scala.List(callback.asInstanceOf[js.Any], delayMs.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
 }
-

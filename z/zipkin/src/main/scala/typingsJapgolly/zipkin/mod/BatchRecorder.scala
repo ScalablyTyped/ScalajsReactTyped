@@ -1,13 +1,14 @@
 package typingsJapgolly.zipkin.mod
 
-import typingsJapgolly.zipkin.AnonLogger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("zipkin", "BatchRecorder")
 @js.native
-class BatchRecorder protected () extends Recorder {
+open class BatchRecorder protected ()
+  extends StObject
+     with Recorder {
   /**
     * @constructor
     * @param {Object} args
@@ -17,9 +18,10 @@ class BatchRecorder protected () extends Recorder {
     * implications in the reported data of the span so we discourage users
     * to pass a value for it unless there is a good reason for.
     */
-  def this(args: AnonLogger) = this()
+  def this(args: typingsJapgolly.zipkin.anon.Logger) = this()
+  
   def flush(): Unit = js.native
+  
   /* CompleteClass */
   override def record(rec: Record): Unit = js.native
 }
-

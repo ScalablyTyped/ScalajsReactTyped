@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.redshiftMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsRedshiftMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.Redshift")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Redshift ()
+open class Redshift ()
   extends typingsJapgolly.awsSdk.mod.Redshift {
   def this(options: ClientConfiguration) = this()
 }
-

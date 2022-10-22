@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An input field that allows choosing between a set of predefined options.
@@ -26,30 +25,41 @@ import scala.scalajs.js.annotation._
   *         .addItem("radio button two title", "radio_two_value", true)
   *         .addItem("radio button three title", "radio_three_value", false);
   */
-trait SelectionInput extends js.Object {
-  def addItem(text: js.Any, value: js.Any, selected: Boolean): SelectionInput
+trait SelectionInput extends StObject {
+  
+  def addItem(text: Any, value: Any, selected: Boolean): SelectionInput
+  
   def setFieldName(fieldName: String): SelectionInput
+  
   def setOnChangeAction(action: Action): SelectionInput
+  
   def setTitle(title: String): SelectionInput
+  
   def setType(`type`: SelectionInputType): SelectionInput
 }
-
 object SelectionInput {
-  @scala.inline
-  def apply(
-    addItem: (js.Any, js.Any, Boolean) => CallbackTo[SelectionInput],
-    setFieldName: String => CallbackTo[SelectionInput],
-    setOnChangeAction: Action => CallbackTo[SelectionInput],
-    setTitle: String => CallbackTo[SelectionInput],
-    setType: SelectionInputType => CallbackTo[SelectionInput]
+  
+  inline def apply(
+    addItem: (Any, Any, Boolean) => SelectionInput,
+    setFieldName: String => SelectionInput,
+    setOnChangeAction: Action => SelectionInput,
+    setTitle: String => SelectionInput,
+    setType: SelectionInputType => SelectionInput
   ): SelectionInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addItem")(js.Any.fromFunction3((t0: js.Any, t1: js.Any, t2: scala.Boolean) => addItem(t0, t1, t2).runNow()))
-    __obj.updateDynamic("setFieldName")(js.Any.fromFunction1((t0: java.lang.String) => setFieldName(t0).runNow()))
-    __obj.updateDynamic("setOnChangeAction")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Action) => setOnChangeAction(t0).runNow()))
-    __obj.updateDynamic("setTitle")(js.Any.fromFunction1((t0: java.lang.String) => setTitle(t0).runNow()))
-    __obj.updateDynamic("setType")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.SelectionInputType) => setType(t0).runNow()))
+    val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction3(addItem), setFieldName = js.Any.fromFunction1(setFieldName), setOnChangeAction = js.Any.fromFunction1(setOnChangeAction), setTitle = js.Any.fromFunction1(setTitle), setType = js.Any.fromFunction1(setType))
     __obj.asInstanceOf[SelectionInput]
   }
+  
+  extension [Self <: SelectionInput](x: Self) {
+    
+    inline def setAddItem(value: (Any, Any, Boolean) => SelectionInput): Self = StObject.set(x, "addItem", js.Any.fromFunction3(value))
+    
+    inline def setSetFieldName(value: String => SelectionInput): Self = StObject.set(x, "setFieldName", js.Any.fromFunction1(value))
+    
+    inline def setSetOnChangeAction(value: Action => SelectionInput): Self = StObject.set(x, "setOnChangeAction", js.Any.fromFunction1(value))
+    
+    inline def setSetTitle(value: String => SelectionInput): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    
+    inline def setSetType(value: SelectionInputType => SelectionInput): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
+  }
 }
-

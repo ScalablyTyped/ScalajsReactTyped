@@ -1,44 +1,40 @@
 package typingsJapgolly.activexFaxcomexlib.FAXCOMEXLib
 
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`16`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`32`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`64`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`8`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`16`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`32`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`4`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`64`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line:no-const-enum
+// eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`16`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`32`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`8`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`64`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`16`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`32`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`8`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`4`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`64`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`1`
 */
-trait FAX_JOB_OPERATIONS_ENUM extends js.Object
-
+trait FAX_JOB_OPERATIONS_ENUM extends StObject
 object FAX_JOB_OPERATIONS_ENUM {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fjoDELETE: `16` = this.cast(16)
-  @scala.inline
-  def fjoPAUSE: `2` = this.cast(2)
-  @scala.inline
-  def fjoRECIPIENT_INFO: `32` = this.cast(32)
-  @scala.inline
-  def fjoRESTART: `8` = this.cast(8)
-  @scala.inline
-  def fjoRESUME: `4` = this.cast(4)
-  @scala.inline
-  def fjoSENDER_INFO: `64` = this.cast(64)
-  @scala.inline
-  def fjoVIEW: `1` = this.cast(1)
+  
+  inline def fjoDELETE: `16` = 16.asInstanceOf[`16`]
+  
+  inline def fjoPAUSE: `2` = 2.asInstanceOf[`2`]
+  
+  inline def fjoRECIPIENT_INFO: `32` = 32.asInstanceOf[`32`]
+  
+  inline def fjoRESTART: `8` = 8.asInstanceOf[`8`]
+  
+  inline def fjoRESUME: `4` = 4.asInstanceOf[`4`]
+  
+  inline def fjoSENDER_INFO: `64` = 64.asInstanceOf[`64`]
+  
+  inline def fjoVIEW: `1` = 1.asInstanceOf[`1`]
 }
-

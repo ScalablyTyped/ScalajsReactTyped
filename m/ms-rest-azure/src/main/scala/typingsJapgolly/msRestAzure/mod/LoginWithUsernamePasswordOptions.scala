@@ -1,42 +1,40 @@
 package typingsJapgolly.msRestAzure.mod
 
-import typingsJapgolly.msRestAzure.msRestAzureStrings.batch
-import typingsJapgolly.msRestAzure.msRestAzureStrings.graph
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoginWithUsernamePasswordOptions extends AzureTokenCredentialsOptions {
+trait LoginWithUsernamePasswordOptions
+  extends StObject
+     with AzureTokenCredentialsOptions {
+  
   /** 
     * The active directory application client id. 
     * See {@link https://azure.microsoft.com/en-us/documentation/articles/active-directory-devquickstarts-dotnet/ Active Directory Quickstart for .Net} 
     * for an example.
     */
   var clientId: js.UndefOr[String] = js.undefined
+  
   /**
     * The domain or tenant id containing this application. Default value is 'common'.
     */
   var domain: js.UndefOr[String] = js.undefined
 }
-
 object LoginWithUsernamePasswordOptions {
-  @scala.inline
-  def apply(
-    authorizationScheme: String = null,
-    clientId: String = null,
-    domain: String = null,
-    environment: AzureEnvironment = null,
-    tokenAudience: graph | batch | String = null,
-    tokenCache: js.Any = null
-  ): LoginWithUsernamePasswordOptions = {
+  
+  inline def apply(): LoginWithUsernamePasswordOptions = {
     val __obj = js.Dynamic.literal()
-    if (authorizationScheme != null) __obj.updateDynamic("authorizationScheme")(authorizationScheme.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (tokenAudience != null) __obj.updateDynamic("tokenAudience")(tokenAudience.asInstanceOf[js.Any])
-    if (tokenCache != null) __obj.updateDynamic("tokenCache")(tokenCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginWithUsernamePasswordOptions]
   }
+  
+  extension [Self <: LoginWithUsernamePasswordOptions](x: Self) {
+    
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+  }
 }
-

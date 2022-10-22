@@ -1,21 +1,35 @@
 package typingsJapgolly.sparqljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Triple extends js.Object {
+trait Triple extends StObject {
+  
   var `object`: Term
-  var predicate: PropertyPath | Term
-  var subject: Term
+  
+  var predicate: IriTerm | VariableTerm | PropertyPath
+  
+  var subject: IriTerm | BlankTerm | VariableTerm | QuadTerm
 }
-
 object Triple {
-  @scala.inline
-  def apply(`object`: Term, predicate: PropertyPath | Term, subject: Term): Triple = {
+  
+  inline def apply(
+    `object`: Term,
+    predicate: IriTerm | VariableTerm | PropertyPath,
+    subject: IriTerm | BlankTerm | VariableTerm | QuadTerm
+  ): Triple = {
     val __obj = js.Dynamic.literal(predicate = predicate.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Triple]
   }
+  
+  extension [Self <: Triple](x: Self) {
+    
+    inline def setObject(value: Term): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    
+    inline def setPredicate(value: IriTerm | VariableTerm | PropertyPath): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+    
+    inline def setSubject(value: IriTerm | BlankTerm | VariableTerm | QuadTerm): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+  }
 }
-

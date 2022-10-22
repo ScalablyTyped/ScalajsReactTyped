@@ -1,25 +1,34 @@
 package typingsJapgolly.reactNative.mod.Animated
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoopAnimationConfig extends js.Object {
+trait LoopAnimationConfig extends StObject {
+  
   var iterations: js.UndefOr[Double] = js.undefined
-   // default -1 for infinite
+  
+  // default -1 for infinite
   /**
     * Defaults to `true`
     */
   var resetBeforeIteration: js.UndefOr[Boolean] = js.undefined
 }
-
 object LoopAnimationConfig {
-  @scala.inline
-  def apply(iterations: Int | Double = null, resetBeforeIteration: js.UndefOr[Boolean] = js.undefined): LoopAnimationConfig = {
+  
+  inline def apply(): LoopAnimationConfig = {
     val __obj = js.Dynamic.literal()
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetBeforeIteration)) __obj.updateDynamic("resetBeforeIteration")(resetBeforeIteration.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoopAnimationConfig]
   }
+  
+  extension [Self <: LoopAnimationConfig](x: Self) {
+    
+    inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    
+    inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+    
+    inline def setResetBeforeIteration(value: Boolean): Self = StObject.set(x, "resetBeforeIteration", value.asInstanceOf[js.Any])
+    
+    inline def setResetBeforeIterationUndefined: Self = StObject.set(x, "resetBeforeIteration", js.undefined)
+  }
 }
-

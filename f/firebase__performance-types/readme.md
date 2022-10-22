@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__performance-types
 
-Typings are for version 0.0.9
+Typings are for version 0.1.0
 
 ## Library description:
 @firebase/performance Types
@@ -10,10 +10,10 @@ Typings are for version 0.0.9
 | ------------------ | :-------------: |
 | Full name          | @firebase/performance-types |
 | Keywords           | - |
-| # releases         | 366 |
-| # dependents       | 1 |
-| # downloads        | 8211811 |
-| # stars            | 0 |
+| # releases         | 1104 |
+| # dependents       | 0.0 |
+| # downloads        | 4939734.0 |
+| # stars            | 4223.0 |
 
 ## Links
 - [Homepage](https://github.com/firebase/firebase-js-sdk#readme)

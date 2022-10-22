@@ -1,17 +1,10 @@
 package typingsJapgolly.winrt.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.ApplicationData")
 @js.native
-class ApplicationData () extends IApplicationData
-
-/* static members */
-@JSGlobal("Windows.Storage.ApplicationData")
-@js.native
-object ApplicationData extends js.Object {
-  var current: ApplicationData = js.native
-}
-
+trait ApplicationData
+  extends StObject
+     with IApplicationData

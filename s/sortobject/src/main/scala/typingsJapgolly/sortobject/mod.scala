@@ -1,13 +1,15 @@
 package typingsJapgolly.sortobject
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sortobject", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[T /* <: js.Object */](obj: T): T = js.native
-  def apply[T /* <: js.Object */](obj: T, comparator: js.Function2[/* a */ String, /* b */ String, Double]): T = js.native
+object mod {
+  
+  inline def apply[T /* <: js.Object */](obj: T): T = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def apply[T /* <: js.Object */](obj: T, comparator: js.Function2[/* a */ String, /* b */ String, Double]): T = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @JSImport("sortobject", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

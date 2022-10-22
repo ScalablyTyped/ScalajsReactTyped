@@ -18,58 +18,72 @@ import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.MonochromaticPalet
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.MonochromaticPalette7
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.MonochromaticPalette8
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.MonochromaticPalette9
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartAreaFormat object, for use in `chartAreaFormat.set({ ... })`. */
-trait ChartAreaFormatUpdateData extends js.Object {
+trait ChartAreaFormatUpdateData extends StObject {
+  
   /**
-    *
     * Represents the border format of chart area, which includes color, linestyle, and weight.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var border: js.UndefOr[ChartBorderUpdateData] = js.undefined
+  
   /**
+    * Specifies the color scheme of the chart.
     *
-    * Returns or sets color scheme of the chart. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var colorScheme: js.UndefOr[
     ChartColorScheme | ColorfulPalette1 | ColorfulPalette2 | ColorfulPalette3 | ColorfulPalette4 | MonochromaticPalette1 | MonochromaticPalette2 | MonochromaticPalette3 | MonochromaticPalette4 | MonochromaticPalette5 | MonochromaticPalette6 | MonochromaticPalette7 | MonochromaticPalette8 | MonochromaticPalette9 | MonochromaticPalette10 | MonochromaticPalette11 | MonochromaticPalette12 | MonochromaticPalette13
   ] = js.undefined
+  
   /**
-    *
     * Represents the font attributes (font name, font size, color, etc.) for the current object.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var font: js.UndefOr[ChartFontUpdateData] = js.undefined
+  
   /**
+    * Specifies if the chart area of the chart has rounded corners.
     *
-    * Specifies whether or not chart area of the chart has rounded corners. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var roundedCorners: js.UndefOr[Boolean] = js.undefined
 }
-
 object ChartAreaFormatUpdateData {
-  @scala.inline
-  def apply(
-    border: ChartBorderUpdateData = null,
-    colorScheme: ChartColorScheme | ColorfulPalette1 | ColorfulPalette2 | ColorfulPalette3 | ColorfulPalette4 | MonochromaticPalette1 | MonochromaticPalette2 | MonochromaticPalette3 | MonochromaticPalette4 | MonochromaticPalette5 | MonochromaticPalette6 | MonochromaticPalette7 | MonochromaticPalette8 | MonochromaticPalette9 | MonochromaticPalette10 | MonochromaticPalette11 | MonochromaticPalette12 | MonochromaticPalette13 = null,
-    font: ChartFontUpdateData = null,
-    roundedCorners: js.UndefOr[Boolean] = js.undefined
-  ): ChartAreaFormatUpdateData = {
+  
+  inline def apply(): ChartAreaFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundedCorners)) __obj.updateDynamic("roundedCorners")(roundedCorners.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAreaFormatUpdateData]
   }
+  
+  extension [Self <: ChartAreaFormatUpdateData](x: Self) {
+    
+    inline def setBorder(value: ChartBorderUpdateData): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setColorScheme(
+      value: ChartColorScheme | ColorfulPalette1 | ColorfulPalette2 | ColorfulPalette3 | ColorfulPalette4 | MonochromaticPalette1 | MonochromaticPalette2 | MonochromaticPalette3 | MonochromaticPalette4 | MonochromaticPalette5 | MonochromaticPalette6 | MonochromaticPalette7 | MonochromaticPalette8 | MonochromaticPalette9 | MonochromaticPalette10 | MonochromaticPalette11 | MonochromaticPalette12 | MonochromaticPalette13
+    ): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+    
+    inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
+    
+    inline def setFont(value: ChartFontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setRoundedCorners(value: Boolean): Self = StObject.set(x, "roundedCorners", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedCornersUndefined: Self = StObject.set(x, "roundedCorners", js.undefined)
+  }
 }
-

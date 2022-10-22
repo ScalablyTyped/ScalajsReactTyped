@@ -1,22 +1,28 @@
 package typingsJapgolly.reactNativeSvg.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
+import typingsJapgolly.reactNativeSvg.anon.Points
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg", "Polygon")
 @js.native
-class Polygon protected ()
-  extends Component[PolygonProps, ComponentState, js.Any] {
-  def this(props: PolygonProps) = this()
-  def this(props: PolygonProps, context: js.Any) = this()
+open class Polygon ()
+  extends typingsJapgolly.reactNativeSvg.libTypescriptReactNativeSVGMod.Polygon
+/* static members */
+object Polygon {
+  
+  @JSImport("react-native-svg", "Polygon")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native-svg", "Polygon.defaultProps")
+  @js.native
+  def defaultProps: Points = js.native
+  inline def defaultProps_=(x: Points): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-native-svg", "Polygon.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }
-
-@JSImport("react-native-svg", "Polygon")
-@js.native
-object Polygon extends TopLevel[ComponentClass[PolygonProps, ComponentState]]
-

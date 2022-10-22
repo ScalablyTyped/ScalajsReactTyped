@@ -1,29 +1,24 @@
 package typingsJapgolly.simplebar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simplebarStrings {
-  @js.native
-  sealed trait ltr extends js.Object
   
   @js.native
-  sealed trait rtl extends js.Object
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait x extends StObject
+  inline def x: x = "x".asInstanceOf[x]
   
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
+  @js.native
+  sealed trait y extends StObject
+  inline def y: y = "y".asInstanceOf[y]
 }
-

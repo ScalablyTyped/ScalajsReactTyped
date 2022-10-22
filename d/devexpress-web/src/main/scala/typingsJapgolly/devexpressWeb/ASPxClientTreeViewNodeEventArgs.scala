@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeView.ExpandedChanged events.
   */
-@JSGlobal("ASPxClientTreeViewNodeEventArgs")
-@js.native
-class ASPxClientTreeViewNodeEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new object of the ASPxClientTreeViewNodeEventArgs type with the specified value.
-    * @param node An ASPxClientTreeViewNode object representing the node related to the event.
-    */
-  def this(node: ASPxClientTreeViewNode) = this()
+trait ASPxClientTreeViewNodeEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets a node object related to the event.
     */
-  var node: ASPxClientTreeViewNode = js.native
+  var node: ASPxClientTreeViewNode
 }
-
+object ASPxClientTreeViewNodeEventArgs {
+  
+  inline def apply(node: ASPxClientTreeViewNode): ASPxClientTreeViewNodeEventArgs = {
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientTreeViewNodeEventArgs]
+  }
+  
+  extension [Self <: ASPxClientTreeViewNodeEventArgs](x: Self) {
+    
+    inline def setNode(value: ASPxClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+  }
+}

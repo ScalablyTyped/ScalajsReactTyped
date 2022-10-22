@@ -1,8 +1,8 @@
 package typingsJapgolly.angularOdataResources.OData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // ResourceService
@@ -12,23 +12,54 @@ import scala.scalajs.js.annotation._
 // that deeply.
 ///////////////////////////////////////////////////////////////////////////
 @js.native
-trait IResourceService extends js.Object {
-  def apply(url: String): IResourceClass[IResource[_]] = js.native
-  def apply(url: String, paramDefaults: js.Any): IResourceClass[IResource[_]] = js.native
+trait IResourceService extends StObject {
+  
+  def apply(url: String): IResourceClass[IResource[Any]] = js.native
+  def apply(url: String, paramDefaults: Any): IResourceClass[IResource[Any]] = js.native
   def apply(
     url: String,
-    paramDefaults: js.Any,
+    paramDefaults: Any,
     /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
     where deleteDescriptor : IActionDescriptor */
-  actions: js.Any
-  ): IResourceClass[IResource[_]] = js.native
+  actions: Any
+  ): IResourceClass[IResource[Any]] = js.native
   def apply(
     url: String,
-    paramDefaults: js.Any,
+    paramDefaults: Any,
     /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
     where deleteDescriptor : IActionDescriptor */
-  actions: js.Any,
+  actions: Any,
     options: IResourceOptions
-  ): IResourceClass[IResource[_]] = js.native
+  ): IResourceClass[IResource[Any]] = js.native
+  def apply(
+    url: String,
+    paramDefaults: Any,
+    /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
+    where deleteDescriptor : IActionDescriptor */
+  actions: Unit,
+    options: IResourceOptions
+  ): IResourceClass[IResource[Any]] = js.native
+  def apply(
+    url: String,
+    paramDefaults: Unit,
+    /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
+    where deleteDescriptor : IActionDescriptor */
+  actions: Any
+  ): IResourceClass[IResource[Any]] = js.native
+  def apply(
+    url: String,
+    paramDefaults: Unit,
+    /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
+    where deleteDescriptor : IActionDescriptor */
+  actions: Any,
+    options: IResourceOptions
+  ): IResourceClass[IResource[Any]] = js.native
+  def apply(
+    url: String,
+    paramDefaults: Unit,
+    /** example:  {update: { method: 'PUT' }, delete: deleteDescriptor }
+    where deleteDescriptor : IActionDescriptor */
+  actions: Unit,
+    options: IResourceOptions
+  ): IResourceClass[IResource[Any]] = js.native
 }
-

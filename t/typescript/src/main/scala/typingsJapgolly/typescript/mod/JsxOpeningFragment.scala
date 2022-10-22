@@ -1,14 +1,17 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JsxOpeningFragment extends Expression {
+trait JsxOpeningFragment
+  extends StObject
+     with Expression {
+  
   @JSName("kind")
-  var kind_JsxOpeningFragment: typingsJapgolly.typescript.mod.SyntaxKind.JsxOpeningFragment = js.native
+  val kind_JsxOpeningFragment: typingsJapgolly.typescript.mod.SyntaxKind.JsxOpeningFragment = js.native
+  
   @JSName("parent")
-  var parent_JsxOpeningFragment: JsxFragment = js.native
+  val parent_JsxOpeningFragment: JsxFragment = js.native
 }
-

@@ -1,30 +1,57 @@
 package typingsJapgolly.teddy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("teddy", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  var params: js.Object = js.native
-  var renderedTemplates: js.Object = js.native
-  var templates: js.Object = js.native
-  def cacheRenders(b: Boolean): Unit = js.native
-  def compile(template: String): String = js.native
-  def compileAtEveryRender(b: Boolean): Unit = js.native
-  def flushCache(template: String): Unit = js.native
-  def flushCache(template: String, model: js.Object): Unit = js.native
-  def minify(b: Boolean): Unit = js.native
-  def render(template: String, model: js.Object): String = js.native
-  def setCacheBlacklist(templateArray: js.Array[String]): Unit = js.native
-  def setCacheWhitelist(o: js.Object): Unit = js.native
-  def setDefaultCaches(n: Double): Unit = js.native
-  def setDefaultParams(): Unit = js.native
-  def setMaxCaches(template: String, n: Double): Unit = js.native
-  def setMaxPasses(n: Double): Unit = js.native
-  def setTemplateRoot(path: String): Unit = js.native
-  def setVerbosity(n: String): Unit = js.native
-  def setVerbosity(n: Double): Unit = js.native
+object mod {
+  
+  @JSImport("teddy", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def cacheRenders(b: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cacheRenders")(b.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def compile(template: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def compileAtEveryRender(b: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("compileAtEveryRender")(b.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def flushCache(template: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flushCache")(template.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def flushCache(template: String, model: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flushCache")(template.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def minify(b: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("minify")(b.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("teddy", "params")
+  @js.native
+  def params: js.Object = js.native
+  inline def params_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("params")(x.asInstanceOf[js.Any])
+  
+  inline def render(template: String, model: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @JSImport("teddy", "renderedTemplates")
+  @js.native
+  def renderedTemplates: js.Object = js.native
+  inline def renderedTemplates_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderedTemplates")(x.asInstanceOf[js.Any])
+  
+  inline def setCacheBlacklist(templateArray: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCacheBlacklist")(templateArray.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def setCacheWhitelist(o: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCacheWhitelist")(o.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def setDefaultCaches(n: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultCaches")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def setDefaultParams(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultParams")().asInstanceOf[Unit]
+  
+  inline def setMaxCaches(template: String, n: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMaxCaches")(template.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setMaxPasses(n: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxPasses")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def setTemplateRoot(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTemplateRoot")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def setVerbosity(n: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVerbosity")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setVerbosity(n: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVerbosity")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("teddy", "templates")
+  @js.native
+  def templates: js.Object = js.native
+  inline def templates_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("templates")(x.asInstanceOf[js.Any])
 }
-

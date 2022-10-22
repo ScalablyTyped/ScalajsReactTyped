@@ -1,48 +1,35 @@
 package typingsJapgolly.reactNative.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNative.mod.ColorValue
 import typingsJapgolly.reactNative.mod.InputAccessoryViewProps
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object InputAccessoryView {
-  def apply(
-    backgroundColor: String = null,
-    nativeID: String = null,
-    style: StyleProp[ViewStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    InputAccessoryViewProps, 
-    typingsJapgolly.reactNative.mod.InputAccessoryView, 
-    Unit, 
-    InputAccessoryViewProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNative.mod.InputAccessoryViewProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNative.mod.InputAccessoryView](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNative.mod.InputAccessoryViewProps])(children: _*)
-  }
   @JSImport("react-native", "InputAccessoryView")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNative.mod.InputAccessoryView] {
+    
+    inline def backgroundColor(value: ColorValue): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def nativeID(value: String): this.type = set("nativeID", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+  }
+  
+  implicit def make(companion: InputAccessoryView.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: InputAccessoryViewProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

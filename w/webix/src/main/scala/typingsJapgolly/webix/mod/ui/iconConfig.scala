@@ -1,106 +1,189 @@
 package typingsJapgolly.webix.mod.ui
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.webix.mod.EventHash
 import typingsJapgolly.webix.mod.WebixCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait iconConfig extends js.Object {
+trait iconConfig extends StObject {
+  
   var align: js.UndefOr[String] = js.undefined
-  var animate: js.UndefOr[js.Any] = js.undefined
+  
+  var animate: js.UndefOr[Any] = js.undefined
+  
   var autowidth: js.UndefOr[Boolean] = js.undefined
+  
   var borderless: js.UndefOr[Boolean] = js.undefined
+  
   var click: js.UndefOr[WebixCallback] = js.undefined
+  
   var container: js.UndefOr[String | HTMLElement] = js.undefined
-  var css: js.UndefOr[js.Any] = js.undefined
+  
+  var css: js.UndefOr[Any] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var gravity: js.UndefOr[Double] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
   var hotkey: js.UndefOr[String] = js.undefined
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var id: js.UndefOr[String | Double] = js.undefined
+  
   var inputHeight: js.UndefOr[Double] = js.undefined
+  
   var inputWidth: js.UndefOr[Double] = js.undefined
+  
   var keyPressTimeout: js.UndefOr[Double] = js.undefined
+  
   var maxHeight: js.UndefOr[Double] = js.undefined
+  
   var maxWidth: js.UndefOr[Double] = js.undefined
+  
   var minHeight: js.UndefOr[Double] = js.undefined
+  
   var minWidth: js.UndefOr[Double] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var on: js.UndefOr[EventHash] = js.undefined
+  
   var popup: js.UndefOr[String] = js.undefined
-  var tooltip: js.UndefOr[js.Any] = js.undefined
+  
+  var tooltip: js.UndefOr[Any] = js.undefined
+  
   var value: js.UndefOr[String | Double] = js.undefined
+  
   var view: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object iconConfig {
-  @scala.inline
-  def apply(
-    align: String = null,
-    animate: js.Any = null,
-    autowidth: js.UndefOr[Boolean] = js.undefined,
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    click: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    container: String | HTMLElement = null,
-    css: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    gravity: Int | Double = null,
-    height: Int | Double = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    hotkey: String = null,
-    icon: String = null,
-    id: String | Double = null,
-    inputHeight: Int | Double = null,
-    inputWidth: Int | Double = null,
-    keyPressTimeout: Int | Double = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    name: String = null,
-    on: EventHash = null,
-    popup: String = null,
-    tooltip: js.Any = null,
-    value: String | Double = null,
-    view: String = null,
-    width: Int | Double = null
-  ): iconConfig = {
+  
+  inline def apply(): iconConfig = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(autowidth)) __obj.updateDynamic("autowidth")(autowidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => click(t0).runNow()))
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (hotkey != null) __obj.updateDynamic("hotkey")(hotkey.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inputHeight != null) __obj.updateDynamic("inputHeight")(inputHeight.asInstanceOf[js.Any])
-    if (inputWidth != null) __obj.updateDynamic("inputWidth")(inputWidth.asInstanceOf[js.Any])
-    if (keyPressTimeout != null) __obj.updateDynamic("keyPressTimeout")(keyPressTimeout.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[iconConfig]
   }
+  
+  extension [Self <: iconConfig](x: Self) {
+    
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setAutowidth(value: Boolean): Self = StObject.set(x, "autowidth", value.asInstanceOf[js.Any])
+    
+    inline def setAutowidthUndefined: Self = StObject.set(x, "autowidth", js.undefined)
+    
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    
+    inline def setClick(value: WebixCallback): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    
+    inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setHotkey(value: String): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
+    
+    inline def setHotkeyUndefined: Self = StObject.set(x, "hotkey", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setInputHeight(value: Double): Self = StObject.set(x, "inputHeight", value.asInstanceOf[js.Any])
+    
+    inline def setInputHeightUndefined: Self = StObject.set(x, "inputHeight", js.undefined)
+    
+    inline def setInputWidth(value: Double): Self = StObject.set(x, "inputWidth", value.asInstanceOf[js.Any])
+    
+    inline def setInputWidthUndefined: Self = StObject.set(x, "inputWidth", js.undefined)
+    
+    inline def setKeyPressTimeout(value: Double): Self = StObject.set(x, "keyPressTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setKeyPressTimeoutUndefined: Self = StObject.set(x, "keyPressTimeout", js.undefined)
+    
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    
+    inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    
+    inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+    
+    inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

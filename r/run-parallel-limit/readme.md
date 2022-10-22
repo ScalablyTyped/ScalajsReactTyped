@@ -10,10 +10,10 @@ Run an array of functions in parallel, but limit the number of tasks executing a
 | ------------------ | :-------------: |
 | Full name          | run-parallel-limit |
 | Keywords           | parallel, async, function, callback, asynchronous, run, array, run parallel, limit, max, queue, run parallel limit, max tasks, tasks |
-| # releases         | 3 |
-| # dependents       | 31 |
-| # downloads        | 2476084 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3417335.3333333335 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/run-parallel-limit)

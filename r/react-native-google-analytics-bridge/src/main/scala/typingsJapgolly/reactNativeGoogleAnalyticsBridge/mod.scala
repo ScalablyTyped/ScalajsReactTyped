@@ -1,17 +1,48 @@
 package typingsJapgolly.reactNativeGoogleAnalyticsBridge
 
-import typingsJapgolly.reactNativeGoogleAnalyticsBridge.customMod.CustomDimensionsFieldIndexMap
-import typingsJapgolly.reactNativeGoogleAnalyticsBridge.dataLayerEventMod.DataLayerEvent
-import typingsJapgolly.reactNativeGoogleAnalyticsBridge.googleAnalyticsSettingsMod.default
+import typingsJapgolly.reactNativeGoogleAnalyticsBridge.distGoogleAnalyticsSettingsMod.default
+import typingsJapgolly.reactNativeGoogleAnalyticsBridge.distModelsCustomMod.CustomDimensionsFieldIndexMap
+import typingsJapgolly.reactNativeGoogleAnalyticsBridge.distModelsDataLayerEventMod.DataLayerEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-google-analytics-bridge", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("react-native-google-analytics-bridge", "GoogleAnalyticsSettings")
   @js.native
-  class GoogleAnalyticsSettings () extends default
+  open class GoogleAnalyticsSettings () extends default
+  object GoogleAnalyticsSettings {
+    
+    @JSImport("react-native-google-analytics-bridge", "GoogleAnalyticsSettings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Sets the trackers dispatch interval.
+      * Events, screen views, etc, are sent in batches to your tracker. This function allows you to configure how often (in seconds) the batches are sent to your tracker. Recommended to keep this around 20-120 seconds to preserve battery and network traffic. This is set to 20 seconds by default.
+      * @example GoogleAnalyticsSettings.setDispatchInterval(30);
+      * @param {number} intervalInSeconds
+      */
+    /* static member */
+    inline def setDispatchInterval(intervalInSeconds: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDispatchInterval")(intervalInSeconds.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /**
+      * When enabled the native library prevents any data from being sent to Google Analytics. This allows you to test or debug the implementation, without your test data appearing in your Google Analytics reports.
+      * @example GoogleAnalyticsSettings.setDryRun(true);
+      * @param {boolean} enabled
+      */
+    /* static member */
+    inline def setDryRun(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDryRun")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /**
+      * Sets if OptOut is active and disables Google Analytics. This is disabled by default. Note: This has to be set each time the App starts.
+      * @example GoogleAnalyticsSettings.setOptOut(true);
+      * @param {boolean} enabled
+      */
+    /* static member */
+    inline def setOptOut(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptOut")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  }
   
   /**
     * @name GoogleAnalyticsTracker
@@ -35,9 +66,10 @@ object mod extends js.Object {
     * // If you do not use a CustomDimensionsFieldIndexMap, you will have to use index as keys instead for custom dimensions:
     * tracker.trackScreenView("Home", { customDimensions: { 1: "Premium" } });
     */
+  @JSImport("react-native-google-analytics-bridge", "GoogleAnalyticsTracker")
   @js.native
-  class GoogleAnalyticsTracker protected ()
-    extends typingsJapgolly.reactNativeGoogleAnalyticsBridge.googleAnalyticsTrackerMod.default {
+  open class GoogleAnalyticsTracker protected ()
+    extends typingsJapgolly.reactNativeGoogleAnalyticsBridge.distGoogleAnalyticsTrackerMod.default {
     /**
       * Save all tracker related data that is needed to call native methods with proper data.
       * @param {string} trackerId Your tracker id, something like: UA-12345-1
@@ -57,51 +89,34 @@ object mod extends js.Object {
     *   .then(() => GoogleTagManager.stringForKey("pack"))
     *   .then(str => console.log("Pack: ", str));
     */
+  @JSImport("react-native-google-analytics-bridge", "GoogleTagManager")
   @js.native
-  class GoogleTagManager ()
-    extends typingsJapgolly.reactNativeGoogleAnalyticsBridge.googleTagManagerMod.default
-  
-  /* static members */
-  @js.native
-  object GoogleAnalyticsSettings extends js.Object {
-    /**
-      * Sets the trackers dispatch interval.
-      * Events, screen views, etc, are sent in batches to your tracker. This function allows you to configure how often (in seconds) the batches are sent to your tracker. Recommended to keep this around 20-120 seconds to preserve battery and network traffic. This is set to 20 seconds by default.
-      * @example GoogleAnalyticsSettings.setDispatchInterval(30);
-      * @param {number} intervalInSeconds
-      */
-    def setDispatchInterval(intervalInSeconds: Double): Unit = js.native
-    /**
-      * When enabled the native library prevents any data from being sent to Google Analytics. This allows you to test or debug the implementation, without your test data appearing in your Google Analytics reports.
-      * @example GoogleAnalyticsSettings.setDryRun(true);
-      * @param {boolean} enabled
-      */
-    def setDryRun(enabled: Boolean): Unit = js.native
-    /**
-      * Sets if OptOut is active and disables Google Analytics. This is disabled by default. Note: This has to be set each time the App starts.
-      * @example GoogleAnalyticsSettings.setOptOut(true);
-      * @param {boolean} enabled
-      */
-    def setOptOut(enabled: Boolean): Unit = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object GoogleTagManager extends js.Object {
+  open class GoogleTagManager ()
+    extends typingsJapgolly.reactNativeGoogleAnalyticsBridge.distGoogleTagManagerMod.default
+  object GoogleTagManager {
+    
+    @JSImport("react-native-google-analytics-bridge", "GoogleTagManager")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Retrieves a boolean value with the given key from the opened container.
       * @example GoogleTagManager.boolForKey("key").then(val => console.log(val));
       * @param {string} key
       * @returns {Promise<boolean>}
       */
-    def boolForKey(key: String): js.Promise[Boolean] = js.native
+    /* static member */
+    inline def boolForKey(key: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("boolForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    
     /**
       * Retrieves a number with the given key from the opened container.
       * @example GoogleTagManager.doubleForKey("key").then(val => console.log(val));
       * @param {string} key
       * @returns {Promise<number>}
       */
-    def doubleForKey(key: js.Any): js.Promise[Double] = js.native
+    /* static member */
+    inline def doubleForKey(key: Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    
     /**
       * Call once to open the container for all subsequent static calls.
       * @example
@@ -109,7 +124,9 @@ object mod extends js.Object {
       * @param {string} containerId
       * @returns {Promise<boolean>}
       */
-    def openContainerWithId(containerId: String): js.Promise[Boolean] = js.native
+    /* static member */
+    inline def openContainerWithId(containerId: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("openContainerWithId")(containerId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    
     /**
       * Push a datalayer event for Google Analytics through Google Tag Manager. The event must have at least one key "event" with event name.
       * @example
@@ -120,7 +137,9 @@ object mod extends js.Object {
       * @param {DataLayerEvent} event An Map<String, Object> containing key and value pairs. It must have at least one key "event" with event name
       * @returns {Promise<boolean>}
       */
-    def pushDataLayerEvent(event: DataLayerEvent): js.Promise[Boolean] = js.native
+    /* static member */
+    inline def pushDataLayerEvent(event: DataLayerEvent): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("pushDataLayerEvent")(event.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    
     /**
       * Refreshes the GTM container.
       * According to Tag Manager documentations for Android can be called once every 15 minutes.
@@ -129,42 +148,57 @@ object mod extends js.Object {
       * GoogleTagManager.refreshContainer().then((..) => ..)
       * @returns {Promise<boolean>}
       */
-    def refreshContainer(): js.Promise[Boolean] = js.native
+    /* static member */
+    inline def refreshContainer(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshContainer")().asInstanceOf[js.Promise[Boolean]]
+    
     /**
       * Register Function Call tag handler
       * @param {String} functionName
       * @param {Function} handler
       */
-    def registerFunctionCallTagHandler(functionName: js.Any, handler: js.Any): js.Promise[Boolean] = js.native
+    /* static member */
+    inline def registerFunctionCallTagHandler(functionName: Any, handler: Any): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunctionCallTagHandler")(functionName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
     /**
       * Sets logger to verbose, default is warning
       * @param {boolean} enabled
       */
-    def setVerboseLoggingEnabled(enabled: Boolean): js.Promise[Boolean] = js.native
+    /* static member */
+    inline def setVerboseLoggingEnabled(enabled: Boolean): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("setVerboseLoggingEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    
     /**
       * Retrieves a string with the given key from the opened container.
       * @example GoogleTagManager.stringForKey("key").then(val => console.log(val));
       * @param {string} key
       * @returns {Promise<string>}
       */
-    def stringForKey(key: String): js.Promise[String] = js.native
+    /* static member */
+    inline def stringForKey(key: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   }
   
+  @JSImport("react-native-google-analytics-bridge", "ProductActionEnum")
   @js.native
-  object ProductActionEnum extends js.Object {
-    /* 3 */ val Add: typingsJapgolly.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Add with Double = js.native
-    /* 5 */ val Checkout: typingsJapgolly.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Checkout with Double = js.native
-    /* 6 */ val CheckoutOption: typingsJapgolly.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.CheckoutOption with Double = js.native
-    /* 2 */ val Click: typingsJapgolly.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Click with Double = js.native
-    /* 1 */ val Detail: typingsJapgolly.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Detail with Double = js.native
-    /* 7 */ val Purchase: typingsJapgolly.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Purchase with Double = js.native
-    /* 8 */ val Refund: typingsJapgolly.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Refund with Double = js.native
-    /* 4 */ val Remove: typingsJapgolly.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Remove with Double = js.native
+  object ProductActionEnum extends StObject {
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typingsJapgolly.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum with Double
+        typingsJapgolly.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum & Double
       ] = js.native
+    
+    /* 3 */ val Add: typingsJapgolly.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Add & Double = js.native
+    
+    /* 5 */ val Checkout: typingsJapgolly.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Checkout & Double = js.native
+    
+    /* 6 */ val CheckoutOption: typingsJapgolly.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.CheckoutOption & Double = js.native
+    
+    /* 2 */ val Click: typingsJapgolly.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Click & Double = js.native
+    
+    /* 1 */ val Detail: typingsJapgolly.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Detail & Double = js.native
+    
+    /* 7 */ val Purchase: typingsJapgolly.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Purchase & Double = js.native
+    
+    /* 8 */ val Refund: typingsJapgolly.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Refund & Double = js.native
+    
+    /* 4 */ val Remove: typingsJapgolly.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Remove & Double = js.native
   }
-  
 }
-

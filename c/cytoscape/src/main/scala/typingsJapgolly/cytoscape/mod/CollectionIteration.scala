@@ -1,25 +1,23 @@
 package typingsJapgolly.cytoscape.mod
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/iteration
   */
 @js.native
 trait CollectionIteration[TOut, TIn]
-  extends /**
+  extends StObject
+     with /**
   * Get an element at a particular index in the collection.
   *
   * @param index The index of the element to get.
   */
 /* index */ NumberDictionary[TOut] {
-  /**
-    * Get the number of elements in the collection.
-    */
-  var length: Double = js.native
+  
   /**
     * Iterate over the elements in the collection using an implementation like the native array function namesake.
     *
@@ -36,12 +34,14 @@ trait CollectionIteration[TOut, TIn]
   def each(each: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ this.type, Unit | Boolean]): this.type = js.native
   def each(
     each: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ this.type, Unit | Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): this.type = js.native
+  
   /**
     * Get whether the collection is empty, meaning it has no elements.
     */
   def empty(): Boolean = js.native
+  
   /**
     * Get an element at a particular index in the collection.
     *
@@ -50,27 +50,38 @@ trait CollectionIteration[TOut, TIn]
     * @param index The index of the element to get.
     */
   def eq(index: Double): TOut = js.native
+  
   /**
     * Get the first element in the collection.
     */
   def first(): TOut = js.native
+  
   def forEach(each: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ this.type, Unit | Boolean]): this.type = js.native
   def forEach(
     each: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ this.type, Unit | Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): this.type = js.native
+  
   /**
     * Get the last element in the collection.
     */
   def last(): TOut = js.native
+  
+  /**
+    * Get the number of elements in the collection.
+    */
+  var length: Double = js.native
+  
   /**
     * Get whether the collection is nonempty, meaning it has elements.
     */
   def nonempty(): Boolean = js.native
+  
   /**
     * Get the number of elements in the collection.
     */
   def size(): Double = js.native
+  
   /**
     * Get a subset of the elements in the collection based on specified indices.
     *
@@ -84,9 +95,10 @@ trait CollectionIteration[TOut, TIn]
   def slice(): this.type = js.native
   def slice(start: Double): this.type = js.native
   def slice(start: Double, end: Double): this.type = js.native
+  def slice(start: Unit, end: Double): this.type = js.native
+  
   /**
     * Get the collection as an array, maintaining the order of the elements.
     */
   def toArray(): js.Array[TOut] = js.native
 }
-

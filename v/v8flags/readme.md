@@ -4,21 +4,18 @@
 Typings are for version 3.1
 
 ## Library description:
-Get available v8 flags.
+Get available v8 and Node.js flags.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | v8flags |
 | Keywords           | v8 flags, harmony flags |
-| # releases         | 6 |
-| # dependents       | 172 |
-| # downloads        | 150319569 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.789182E7 |
+| # stars            | 50.0 |
 
 ## Links
-- [Homepage](https://github.com/gulpjs/v8flags#readme)
-- [Bugs](https://github.com/gulpjs/v8flags/issues)
-- [Repository](https://github.com/gulpjs/v8flags)
 - [Npm](https://www.npmjs.com/package/v8flags)
     
 

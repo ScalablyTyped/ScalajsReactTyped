@@ -1,60 +1,81 @@
 package typingsJapgolly.phaser.Phaser.Types.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PluginObjectItem extends js.Object {
+trait PluginObjectItem extends StObject {
+  
   /**
     * Arbitrary data passed to the plugin's init() method.
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
+  
   /**
     * A key to identify the plugin in the Plugin Manager.
     */
   var key: js.UndefOr[String] = js.undefined
+  
   /**
     * If this plugin is to be injected into the Scene Systems, this is the property key map used.
     */
   var mapping: js.UndefOr[String] = js.undefined
+  
   /**
     * The plugin itself. Usually a class/constructor.
     */
-  var plugin: js.UndefOr[js.Any] = js.undefined
+  var plugin: js.UndefOr[Any] = js.undefined
+  
   /**
     * For a scene plugin, add the plugin to the scene object under this key (`this.KEY`, from the scene).
     */
   var sceneKey: js.UndefOr[String] = js.undefined
+  
   /**
     * Whether the plugin should be started automatically.
     */
   var start: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * For a scene plugin, add the plugin to the scene's systems object under this key (`this.sys.KEY`, from the scene).
     */
   var systemKey: js.UndefOr[String] = js.undefined
 }
-
 object PluginObjectItem {
-  @scala.inline
-  def apply(
-    data: js.Any = null,
-    key: String = null,
-    mapping: String = null,
-    plugin: js.Any = null,
-    sceneKey: String = null,
-    start: js.UndefOr[Boolean] = js.undefined,
-    systemKey: String = null
-  ): PluginObjectItem = {
+  
+  inline def apply(): PluginObjectItem = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
-    if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
-    if (sceneKey != null) __obj.updateDynamic("sceneKey")(sceneKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (systemKey != null) __obj.updateDynamic("systemKey")(systemKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginObjectItem]
   }
+  
+  extension [Self <: PluginObjectItem](x: Self) {
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setMapping(value: String): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+    
+    inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
+    
+    inline def setPlugin(value: Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    
+    inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+    
+    inline def setSceneKey(value: String): Self = StObject.set(x, "sceneKey", value.asInstanceOf[js.Any])
+    
+    inline def setSceneKeyUndefined: Self = StObject.set(x, "sceneKey", js.undefined)
+    
+    inline def setStart(value: Boolean): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    
+    inline def setSystemKeyUndefined: Self = StObject.set(x, "systemKey", js.undefined)
+  }
 }
-

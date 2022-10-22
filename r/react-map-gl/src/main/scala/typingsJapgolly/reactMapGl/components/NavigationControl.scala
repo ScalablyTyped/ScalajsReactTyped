@@ -1,67 +1,51 @@
 package typingsJapgolly.reactMapGl.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactMapGl.mod.NavigationControlProps
 import typingsJapgolly.reactMapGl.mod.ViewStateChangeInfo
 import typingsJapgolly.reactMapGl.mod.ViewportProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NavigationControl {
-  def apply(
-    captureClick: js.UndefOr[Boolean] = js.undefined,
-    captureDoubleClick: js.UndefOr[Boolean] = js.undefined,
-    captureDrag: js.UndefOr[Boolean] = js.undefined,
-    captureScroll: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    compassLabel: String = null,
-    onViewStateChange: /* info */ ViewStateChangeInfo => Callback = null,
-    onViewportChange: /* viewState */ ViewportProps => Callback = null,
-    showCompass: js.UndefOr[Boolean] = js.undefined,
-    showZoom: js.UndefOr[Boolean] = js.undefined,
-    zoomInLabel: String = null,
-    zoomOutLabel: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    NavigationControlProps, 
-    typingsJapgolly.reactMapGl.mod.NavigationControl, 
-    Unit, 
-    NavigationControlProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDoubleClick)) __obj.updateDynamic("captureDoubleClick")(captureDoubleClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDrag)) __obj.updateDynamic("captureDrag")(captureDrag.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureScroll)) __obj.updateDynamic("captureScroll")(captureScroll.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (compassLabel != null) __obj.updateDynamic("compassLabel")(compassLabel.asInstanceOf[js.Any])
-    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.reactMapGl.mod.ViewStateChangeInfo) => onViewStateChange(t0).runNow()))
-    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction1((t0: /* viewState */ typingsJapgolly.reactMapGl.mod.ViewportProps) => onViewportChange(t0).runNow()))
-    if (!js.isUndefined(showCompass)) __obj.updateDynamic("showCompass")(showCompass.asInstanceOf[js.Any])
-    if (!js.isUndefined(showZoom)) __obj.updateDynamic("showZoom")(showZoom.asInstanceOf[js.Any])
-    if (zoomInLabel != null) __obj.updateDynamic("zoomInLabel")(zoomInLabel.asInstanceOf[js.Any])
-    if (zoomOutLabel != null) __obj.updateDynamic("zoomOutLabel")(zoomOutLabel.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactMapGl.mod.NavigationControlProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactMapGl.mod.NavigationControl](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactMapGl.mod.NavigationControlProps])(children: _*)
-  }
   @JSImport("react-map-gl", "NavigationControl")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactMapGl.mod.NavigationControl] {
+    
+    inline def captureClick(value: Boolean): this.type = set("captureClick", value.asInstanceOf[js.Any])
+    
+    inline def captureDoubleClick(value: Boolean): this.type = set("captureDoubleClick", value.asInstanceOf[js.Any])
+    
+    inline def captureDrag(value: Boolean): this.type = set("captureDrag", value.asInstanceOf[js.Any])
+    
+    inline def captureScroll(value: Boolean): this.type = set("captureScroll", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def compassLabel(value: String): this.type = set("compassLabel", value.asInstanceOf[js.Any])
+    
+    inline def onViewStateChange(value: /* info */ ViewStateChangeInfo => Callback): this.type = set("onViewStateChange", js.Any.fromFunction1((t0: /* info */ ViewStateChangeInfo) => value(t0).runNow()))
+    
+    inline def onViewportChange(value: /* viewState */ ViewportProps => Callback): this.type = set("onViewportChange", js.Any.fromFunction1((t0: /* viewState */ ViewportProps) => value(t0).runNow()))
+    
+    inline def showCompass(value: Boolean): this.type = set("showCompass", value.asInstanceOf[js.Any])
+    
+    inline def showZoom(value: Boolean): this.type = set("showZoom", value.asInstanceOf[js.Any])
+    
+    inline def zoomInLabel(value: String): this.type = set("zoomInLabel", value.asInstanceOf[js.Any])
+    
+    inline def zoomOutLabel(value: String): this.type = set("zoomOutLabel", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: NavigationControl.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: NavigationControlProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,33 +1,48 @@
 package typingsJapgolly.inboxsdk.mod.ButterBar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoadingMessageDescriptorBase extends js.Object {
+trait LoadingMessageDescriptorBase extends StObject {
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var hideOnViewChanged: js.UndefOr[Boolean] = js.undefined
+  
   var messageKey: js.UndefOr[js.Object | String] = js.undefined
+  
   var persistent: js.UndefOr[Boolean] = js.undefined
+  
   var priority: js.UndefOr[Double] = js.undefined
 }
-
 object LoadingMessageDescriptorBase {
-  @scala.inline
-  def apply(
-    className: String = null,
-    hideOnViewChanged: js.UndefOr[Boolean] = js.undefined,
-    messageKey: js.Object | String = null,
-    persistent: js.UndefOr[Boolean] = js.undefined,
-    priority: Int | Double = null
-  ): LoadingMessageDescriptorBase = {
+  
+  inline def apply(): LoadingMessageDescriptorBase = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnViewChanged)) __obj.updateDynamic("hideOnViewChanged")(hideOnViewChanged.asInstanceOf[js.Any])
-    if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingMessageDescriptorBase]
   }
+  
+  extension [Self <: LoadingMessageDescriptorBase](x: Self) {
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setHideOnViewChanged(value: Boolean): Self = StObject.set(x, "hideOnViewChanged", value.asInstanceOf[js.Any])
+    
+    inline def setHideOnViewChangedUndefined: Self = StObject.set(x, "hideOnViewChanged", js.undefined)
+    
+    inline def setMessageKey(value: js.Object | String): Self = StObject.set(x, "messageKey", value.asInstanceOf[js.Any])
+    
+    inline def setMessageKeyUndefined: Self = StObject.set(x, "messageKey", js.undefined)
+    
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    
+    inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+    
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+  }
 }
-

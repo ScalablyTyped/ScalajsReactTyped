@@ -1,33 +1,48 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GanttMessagesActions extends js.Object {
+trait GanttMessagesActions extends StObject {
+  
   var addChild: js.UndefOr[String] = js.undefined
+  
   var append: js.UndefOr[String] = js.undefined
+  
   var insertAfter: js.UndefOr[String] = js.undefined
+  
   var insertBefore: js.UndefOr[String] = js.undefined
+  
   var pdf: js.UndefOr[String] = js.undefined
 }
-
 object GanttMessagesActions {
-  @scala.inline
-  def apply(
-    addChild: String = null,
-    append: String = null,
-    insertAfter: String = null,
-    insertBefore: String = null,
-    pdf: String = null
-  ): GanttMessagesActions = {
+  
+  inline def apply(): GanttMessagesActions = {
     val __obj = js.Dynamic.literal()
-    if (addChild != null) __obj.updateDynamic("addChild")(addChild.asInstanceOf[js.Any])
-    if (append != null) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
-    if (insertAfter != null) __obj.updateDynamic("insertAfter")(insertAfter.asInstanceOf[js.Any])
-    if (insertBefore != null) __obj.updateDynamic("insertBefore")(insertBefore.asInstanceOf[js.Any])
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttMessagesActions]
   }
+  
+  extension [Self <: GanttMessagesActions](x: Self) {
+    
+    inline def setAddChild(value: String): Self = StObject.set(x, "addChild", value.asInstanceOf[js.Any])
+    
+    inline def setAddChildUndefined: Self = StObject.set(x, "addChild", js.undefined)
+    
+    inline def setAppend(value: String): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+    
+    inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+    
+    inline def setInsertAfter(value: String): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
+    
+    inline def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
+    
+    inline def setInsertBefore(value: String): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
+    
+    inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
+    
+    inline def setPdf(value: String): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+    
+    inline def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
+  }
 }
-

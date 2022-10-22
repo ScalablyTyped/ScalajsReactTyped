@@ -1,22 +1,31 @@
 package typingsJapgolly.kendoUi.kendo.geometry
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SizeEvent extends js.Object {
-  var preventDefault: js.Function
-  var sender: Size
+trait SizeEvent extends StObject {
+  
   def isDefaultPrevented(): Boolean
+  
+  var preventDefault: js.Function
+  
+  var sender: Size
 }
-
 object SizeEvent {
-  @scala.inline
-  def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Size): SizeEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Size): SizeEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeEvent]
   }
+  
+  extension [Self <: SizeEvent](x: Self) {
+    
+    inline def setIsDefaultPrevented(value: CallbackTo[Boolean]): Self = StObject.set(x, "isDefaultPrevented", value.toJsFn)
+    
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    
+    inline def setSender(value: Size): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+  }
 }
-

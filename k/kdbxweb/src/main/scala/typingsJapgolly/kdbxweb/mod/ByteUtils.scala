@@ -1,27 +1,31 @@
 package typingsJapgolly.kdbxweb.mod
 
-import typingsJapgolly.std.ArrayBuffer
-import typingsJapgolly.std.Uint8Array
+import typingsJapgolly.kdbxweb.distTypesUtilsByteUtilsMod.ArrayBufferOrArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("kdbxweb", "ByteUtils")
-@js.native
-object ByteUtils extends js.Object {
-  def arrayBufferEquals(ab1: scala.scalajs.js.typedarray.ArrayBuffer, ab2: scala.scalajs.js.typedarray.ArrayBuffer): Boolean = js.native
-  def arrayToBuffer(arr: ArrayBuffer): scala.scalajs.js.typedarray.ArrayBuffer = js.native
-  def arrayToBuffer(arr: Uint8Array): scala.scalajs.js.typedarray.ArrayBuffer = js.native
-  def base64ToBytes(str: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-  def bytesToBase64(arr: ArrayBuffer): String = js.native
-  def bytesToBase64(arr: Uint8Array): String = js.native
-  def bytesToHex(arr: ArrayBuffer): String = js.native
-  def bytesToHex(arr: Uint8Array): String = js.native
-  def bytesToString(arr: ArrayBuffer): String = js.native
-  def bytesToString(arr: Uint8Array): String = js.native
-  def hexToBytes(hex: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-  def stringToBytes(str: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-  def zeroBuffer(buffer: ArrayBuffer): Unit = js.native
-  def zeroBuffer(buffer: Uint8Array): Unit = js.native
+object ByteUtils {
+  
+  @JSImport("kdbxweb", "ByteUtils")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def arrayBufferEquals(ab1: js.typedarray.ArrayBuffer, ab2: js.typedarray.ArrayBuffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferEquals")(ab1.asInstanceOf[js.Any], ab2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def arrayToBuffer(arr: ArrayBufferOrArray): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToBuffer")(arr.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
+  
+  inline def base64ToBytes(str: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("base64ToBytes")(str.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def bytesToBase64(arr: ArrayBufferOrArray): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToBase64")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def bytesToHex(arr: ArrayBufferOrArray): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToHex")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def bytesToString(arr: ArrayBufferOrArray): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToString")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def hexToBytes(hex: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToBytes")(hex.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def stringToBytes(str: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBytes")(str.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def zeroBuffer(arr: ArrayBufferOrArray): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroBuffer")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

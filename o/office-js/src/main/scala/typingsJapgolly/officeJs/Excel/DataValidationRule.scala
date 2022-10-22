@@ -1,87 +1,108 @@
 package typingsJapgolly.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * A data validation rule contains different types of data validation. You can only use one of them at a time according the `Excel.DataValidationType`.
   *
-  * Data validation rule contains different types of data validation. You can only use one of them at a time according the Excel.DataValidationType.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
-trait DataValidationRule extends js.Object {
+trait DataValidationRule extends StObject {
+  
   /**
-    *
     * Custom data validation criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var custom: js.UndefOr[CustomDataValidation] = js.undefined
+  
   /**
-    *
     * Date data validation criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var date: js.UndefOr[DateTimeDataValidation] = js.undefined
+  
   /**
-    *
     * Decimal data validation criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var decimal: js.UndefOr[BasicDataValidation] = js.undefined
+  
   /**
-    *
     * List data validation criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var list: js.UndefOr[ListDataValidation] = js.undefined
+  
   /**
+    * Text length data validation criteria.
     *
-    * TextLength data validation criteria.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var textLength: js.UndefOr[BasicDataValidation] = js.undefined
+  
   /**
-    *
     * Time data validation criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var time: js.UndefOr[DateTimeDataValidation] = js.undefined
+  
   /**
+    * Whole number data validation criteria.
     *
-    * WholeNumber data validation criteria.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var wholeNumber: js.UndefOr[BasicDataValidation] = js.undefined
 }
-
 object DataValidationRule {
-  @scala.inline
-  def apply(
-    custom: CustomDataValidation = null,
-    date: DateTimeDataValidation = null,
-    decimal: BasicDataValidation = null,
-    list: ListDataValidation = null,
-    textLength: BasicDataValidation = null,
-    time: DateTimeDataValidation = null,
-    wholeNumber: BasicDataValidation = null
-  ): DataValidationRule = {
+  
+  inline def apply(): DataValidationRule = {
     val __obj = js.Dynamic.literal()
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (textLength != null) __obj.updateDynamic("textLength")(textLength.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (wholeNumber != null) __obj.updateDynamic("wholeNumber")(wholeNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValidationRule]
   }
+  
+  extension [Self <: DataValidationRule](x: Self) {
+    
+    inline def setCustom(value: CustomDataValidation): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDate(value: DateTimeDataValidation): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setDecimal(value: BasicDataValidation): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+    
+    inline def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
+    
+    inline def setList(value: ListDataValidation): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    
+    inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+    
+    inline def setTextLength(value: BasicDataValidation): Self = StObject.set(x, "textLength", value.asInstanceOf[js.Any])
+    
+    inline def setTextLengthUndefined: Self = StObject.set(x, "textLength", js.undefined)
+    
+    inline def setTime(value: DateTimeDataValidation): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    
+    inline def setWholeNumber(value: BasicDataValidation): Self = StObject.set(x, "wholeNumber", value.asInstanceOf[js.Any])
+    
+    inline def setWholeNumberUndefined: Self = StObject.set(x, "wholeNumber", js.undefined)
+  }
 }
-

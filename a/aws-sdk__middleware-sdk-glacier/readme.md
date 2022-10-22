@@ -1,20 +1,24 @@
 
 # Scala.js typings for aws-sdk__middleware-sdk-glacier
 
-Typings are for version 0.1.0-preview.2
+Typings are for version 3.188.0
 
-
+## Library description:
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/middleware-sdk-glacier/latest.svg)](https://www.npmjs.com/package/@aws-sdk/middleware-sdk-glacier) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/middleware-sdk-glacier.svg)](https://www.npmj
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-sdk-glacier |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 3 |
-| # downloads        | 737 |
-| # stars            | 0 |
+| # releases         | 60 |
+| # dependents       | 0.0 |
+| # downloads        | 2664.6666666666665 |
+| # stars            | 1888.0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-sdk-glacier)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fmiddleware-sdk-glacier)
     
 

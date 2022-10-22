@@ -9,16 +9,16 @@ merge single level defaults over a config object
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | defaults |
-| Keywords           | config, defaults |
-| # releases         | 1 |
-| # dependents       | 320 |
-| # downloads        | 121977040 |
-| # stars            | 10 |
+| Keywords           | config, defaults, options, object, merge, assign, properties, deep |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5.3847697333333336E7 |
+| # stars            | 42.0 |
 
 ## Links
-- [Homepage](https://github.com/tmpvar/defaults#readme)
-- [Bugs](https://github.com/tmpvar/defaults/issues)
-- [Repository](https://github.com/tmpvar/defaults)
+- [Homepage](https://github.com/sindresorhus/node-defaults#readme)
+- [Bugs](https://github.com/sindresorhus/node-defaults/issues)
+- [Repository](https://github.com/sindresorhus/node-defaults)
 - [Npm](https://www.npmjs.com/package/defaults)
     
 

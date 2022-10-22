@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Exposes options currently configured for a Chart, such as height, color, etc.
@@ -14,16 +13,19 @@ import scala.scalajs.js.annotation._
   *
   * These options are immutable.
   */
-trait ChartOptions extends js.Object {
-  def get(option: String): js.Any
+trait ChartOptions extends StObject {
+  
+  def get(option: String): Any
 }
-
 object ChartOptions {
-  @scala.inline
-  def apply(get: String => CallbackTo[js.Any]): ChartOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(js.Any.fromFunction1((t0: java.lang.String) => get(t0).runNow()))
+  
+  inline def apply(get: String => Any): ChartOptions = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[ChartOptions]
   }
+  
+  extension [Self <: ChartOptions](x: Self) {
+    
+    inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+  }
 }
-

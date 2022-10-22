@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access data validation rules. To create a new rule, use SpreadsheetApp.newDataValidation() and DataValidationBuilder. You can use
@@ -20,30 +20,41 @@ import scala.scalajs.js.annotation._
   *       Logger.log('The cell does not have a data validation rule.')
   *     }
   */
-trait DataValidation extends js.Object {
+trait DataValidation extends StObject {
+  
   def copy(): DataValidationBuilder
+  
   def getAllowInvalid(): Boolean
+  
   def getCriteriaType(): DataValidationCriteria
-  def getCriteriaValues(): js.Array[_]
+  
+  def getCriteriaValues(): js.Array[Any]
+  
   def getHelpText(): String
 }
-
 object DataValidation {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     copy: CallbackTo[DataValidationBuilder],
     getAllowInvalid: CallbackTo[Boolean],
     getCriteriaType: CallbackTo[DataValidationCriteria],
-    getCriteriaValues: CallbackTo[js.Array[js.Any]],
+    getCriteriaValues: CallbackTo[js.Array[Any]],
     getHelpText: CallbackTo[String]
   ): DataValidation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy.toJsFn)
-    __obj.updateDynamic("getAllowInvalid")(getAllowInvalid.toJsFn)
-    __obj.updateDynamic("getCriteriaType")(getCriteriaType.toJsFn)
-    __obj.updateDynamic("getCriteriaValues")(getCriteriaValues.toJsFn)
-    __obj.updateDynamic("getHelpText")(getHelpText.toJsFn)
+    val __obj = js.Dynamic.literal(copy = copy.toJsFn, getAllowInvalid = getAllowInvalid.toJsFn, getCriteriaType = getCriteriaType.toJsFn, getCriteriaValues = getCriteriaValues.toJsFn, getHelpText = getHelpText.toJsFn)
     __obj.asInstanceOf[DataValidation]
   }
+  
+  extension [Self <: DataValidation](x: Self) {
+    
+    inline def setCopy(value: CallbackTo[DataValidationBuilder]): Self = StObject.set(x, "copy", value.toJsFn)
+    
+    inline def setGetAllowInvalid(value: CallbackTo[Boolean]): Self = StObject.set(x, "getAllowInvalid", value.toJsFn)
+    
+    inline def setGetCriteriaType(value: CallbackTo[DataValidationCriteria]): Self = StObject.set(x, "getCriteriaType", value.toJsFn)
+    
+    inline def setGetCriteriaValues(value: CallbackTo[js.Array[Any]]): Self = StObject.set(x, "getCriteriaValues", value.toJsFn)
+    
+    inline def setGetHelpText(value: CallbackTo[String]): Self = StObject.set(x, "getHelpText", value.toJsFn)
+  }
 }
-

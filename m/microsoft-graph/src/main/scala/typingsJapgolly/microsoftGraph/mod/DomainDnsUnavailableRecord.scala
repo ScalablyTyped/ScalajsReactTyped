@@ -1,34 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DomainDnsUnavailableRecord extends DomainDnsRecord {
+trait DomainDnsUnavailableRecord
+  extends StObject
+     with DomainDnsRecord {
+  
   // Provides the reason why the DomainDnsUnavailableRecord entity is returned.
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object DomainDnsUnavailableRecord {
-  @scala.inline
-  def apply(
-    description: String = null,
-    id: String = null,
-    isOptional: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    recordType: String = null,
-    supportedService: String = null,
-    ttl: Int | Double = null
-  ): DomainDnsUnavailableRecord = {
+  
+  inline def apply(): DomainDnsUnavailableRecord = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (recordType != null) __obj.updateDynamic("recordType")(recordType.asInstanceOf[js.Any])
-    if (supportedService != null) __obj.updateDynamic("supportedService")(supportedService.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainDnsUnavailableRecord]
   }
+  
+  extension [Self <: DomainDnsUnavailableRecord](x: Self) {
+    
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+  }
 }
-

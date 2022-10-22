@@ -1,44 +1,60 @@
 package typingsJapgolly.std
 
-import typingsJapgolly.std.stdStrings.default
-import typingsJapgolly.std.stdStrings.flipY
-import typingsJapgolly.std.stdStrings.high
-import typingsJapgolly.std.stdStrings.low
-import typingsJapgolly.std.stdStrings.medium
-import typingsJapgolly.std.stdStrings.none
-import typingsJapgolly.std.stdStrings.pixelated
-import typingsJapgolly.std.stdStrings.premultiply
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageBitmapOptions extends js.Object {
-  var colorSpaceConversion: js.UndefOr[none | default] = js.undefined
-  var imageOrientation: js.UndefOr[none | flipY] = js.undefined
-  var premultiplyAlpha: js.UndefOr[none | premultiply | default] = js.undefined
+trait ImageBitmapOptions extends StObject {
+  
+  /* standard dom */
+  var colorSpaceConversion: js.UndefOr[ColorSpaceConversion] = js.undefined
+  
+  /* standard dom */
+  var imageOrientation: js.UndefOr[ImageOrientation] = js.undefined
+  
+  /* standard dom */
+  var premultiplyAlpha: js.UndefOr[PremultiplyAlpha] = js.undefined
+  
+  /* standard dom */
   var resizeHeight: js.UndefOr[Double] = js.undefined
-  var resizeQuality: js.UndefOr[pixelated | low | medium | high] = js.undefined
+  
+  /* standard dom */
+  var resizeQuality: js.UndefOr[ResizeQuality] = js.undefined
+  
+  /* standard dom */
   var resizeWidth: js.UndefOr[Double] = js.undefined
 }
-
 object ImageBitmapOptions {
-  @scala.inline
-  def apply(
-    colorSpaceConversion: none | default = null,
-    imageOrientation: none | flipY = null,
-    premultiplyAlpha: none | premultiply | default = null,
-    resizeHeight: Int | Double = null,
-    resizeQuality: pixelated | low | medium | high = null,
-    resizeWidth: Int | Double = null
-  ): ImageBitmapOptions = {
+  
+  inline def apply(): ImageBitmapOptions = {
     val __obj = js.Dynamic.literal()
-    if (colorSpaceConversion != null) __obj.updateDynamic("colorSpaceConversion")(colorSpaceConversion.asInstanceOf[js.Any])
-    if (imageOrientation != null) __obj.updateDynamic("imageOrientation")(imageOrientation.asInstanceOf[js.Any])
-    if (premultiplyAlpha != null) __obj.updateDynamic("premultiplyAlpha")(premultiplyAlpha.asInstanceOf[js.Any])
-    if (resizeHeight != null) __obj.updateDynamic("resizeHeight")(resizeHeight.asInstanceOf[js.Any])
-    if (resizeQuality != null) __obj.updateDynamic("resizeQuality")(resizeQuality.asInstanceOf[js.Any])
-    if (resizeWidth != null) __obj.updateDynamic("resizeWidth")(resizeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageBitmapOptions]
   }
+  
+  extension [Self <: ImageBitmapOptions](x: Self) {
+    
+    inline def setColorSpaceConversion(value: ColorSpaceConversion): Self = StObject.set(x, "colorSpaceConversion", value.asInstanceOf[js.Any])
+    
+    inline def setColorSpaceConversionUndefined: Self = StObject.set(x, "colorSpaceConversion", js.undefined)
+    
+    inline def setImageOrientation(value: ImageOrientation): Self = StObject.set(x, "imageOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setImageOrientationUndefined: Self = StObject.set(x, "imageOrientation", js.undefined)
+    
+    inline def setPremultiplyAlpha(value: PremultiplyAlpha): Self = StObject.set(x, "premultiplyAlpha", value.asInstanceOf[js.Any])
+    
+    inline def setPremultiplyAlphaUndefined: Self = StObject.set(x, "premultiplyAlpha", js.undefined)
+    
+    inline def setResizeHeight(value: Double): Self = StObject.set(x, "resizeHeight", value.asInstanceOf[js.Any])
+    
+    inline def setResizeHeightUndefined: Self = StObject.set(x, "resizeHeight", js.undefined)
+    
+    inline def setResizeQuality(value: ResizeQuality): Self = StObject.set(x, "resizeQuality", value.asInstanceOf[js.Any])
+    
+    inline def setResizeQualityUndefined: Self = StObject.set(x, "resizeQuality", js.undefined)
+    
+    inline def setResizeWidth(value: Double): Self = StObject.set(x, "resizeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setResizeWidthUndefined: Self = StObject.set(x, "resizeWidth", js.undefined)
+  }
 }
-

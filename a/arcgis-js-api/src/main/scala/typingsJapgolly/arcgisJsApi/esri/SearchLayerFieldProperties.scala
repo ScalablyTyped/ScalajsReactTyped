@@ -11,47 +11,58 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.long
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.oid
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.raster
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.single
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.string
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.string_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.xml
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchLayerFieldProperties extends js.Object {
+trait SearchLayerFieldProperties extends StObject {
+  
   /**
     * Whether or not the field is an exact match.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayerField.html#exactMatch)
     */
   var exactMatch: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The name of the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayerField.html#name)
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * The data type of the field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayerField.html#type)
     */
   var `type`: js.UndefOr[
-    `small-integer` | integer | single | double | long | string | date | oid | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
+    `small-integer` | integer | single | double | long | string_ | date | oid | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
   ] = js.undefined
 }
-
 object SearchLayerFieldProperties {
-  @scala.inline
-  def apply(
-    exactMatch: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    `type`: `small-integer` | integer | single | double | long | string | date | oid | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml = null
-  ): SearchLayerFieldProperties = {
+  
+  inline def apply(): SearchLayerFieldProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchLayerFieldProperties]
   }
+  
+  extension [Self <: SearchLayerFieldProperties](x: Self) {
+    
+    inline def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
+    
+    inline def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setType(
+      value: `small-integer` | integer | single | double | long | string_ | date | oid | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

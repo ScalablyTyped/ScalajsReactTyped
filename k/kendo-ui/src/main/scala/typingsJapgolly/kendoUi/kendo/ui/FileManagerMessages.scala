@@ -1,30 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileManagerMessages extends js.Object {
+trait FileManagerMessages extends StObject {
+  
   var dialogs: js.UndefOr[FileManagerMessagesDialogs] = js.undefined
+  
   var previewPane: js.UndefOr[FileManagerMessagesPreviewPane] = js.undefined
+  
   var toolbar: js.UndefOr[FileManagerMessagesToolbar] = js.undefined
+  
   var views: js.UndefOr[FileManagerMessagesViews] = js.undefined
 }
-
 object FileManagerMessages {
-  @scala.inline
-  def apply(
-    dialogs: FileManagerMessagesDialogs = null,
-    previewPane: FileManagerMessagesPreviewPane = null,
-    toolbar: FileManagerMessagesToolbar = null,
-    views: FileManagerMessagesViews = null
-  ): FileManagerMessages = {
+  
+  inline def apply(): FileManagerMessages = {
     val __obj = js.Dynamic.literal()
-    if (dialogs != null) __obj.updateDynamic("dialogs")(dialogs.asInstanceOf[js.Any])
-    if (previewPane != null) __obj.updateDynamic("previewPane")(previewPane.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileManagerMessages]
   }
+  
+  extension [Self <: FileManagerMessages](x: Self) {
+    
+    inline def setDialogs(value: FileManagerMessagesDialogs): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
+    
+    inline def setDialogsUndefined: Self = StObject.set(x, "dialogs", js.undefined)
+    
+    inline def setPreviewPane(value: FileManagerMessagesPreviewPane): Self = StObject.set(x, "previewPane", value.asInstanceOf[js.Any])
+    
+    inline def setPreviewPaneUndefined: Self = StObject.set(x, "previewPane", js.undefined)
+    
+    inline def setToolbar(value: FileManagerMessagesToolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    
+    inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+    
+    inline def setViews(value: FileManagerMessagesViews): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    
+    inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+  }
 }
-

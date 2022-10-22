@@ -1,67 +1,55 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MarkerStyle extends js.Object
-
+sealed trait MarkerStyle extends StObject
 /** Specifies the style used to mark the item paragraphs in a list. */
 @JSGlobal("Windows.UI.Text.MarkerStyle")
 @js.native
-object MarkerStyle extends js.Object {
+object MarkerStyle extends StObject {
+  
   /** The item marker is followed by a hyphen (-). */
   @js.native
-  sealed trait minus extends MarkerStyle
+  sealed trait minus
+    extends StObject
+       with MarkerStyle
   
   /** The items have no markers. */
   @js.native
-  sealed trait noNumber extends MarkerStyle
+  sealed trait noNumber
+    extends StObject
+       with MarkerStyle
   
   /** The item marker is enclosed in parentheses, as in (1). */
   @js.native
-  sealed trait parentheses extends MarkerStyle
+  sealed trait parentheses
+    extends StObject
+       with MarkerStyle
   
   /** The item marker is followed by a parenthesis, as in 1). */
   @js.native
-  sealed trait parenthesis extends MarkerStyle
+  sealed trait parenthesis
+    extends StObject
+       with MarkerStyle
   
   /** The item marker is followed by a period. */
   @js.native
-  sealed trait period extends MarkerStyle
+  sealed trait period
+    extends StObject
+       with MarkerStyle
   
   /** The item marker appears by itself. */
   @js.native
-  sealed trait plain extends MarkerStyle
+  sealed trait plain
+    extends StObject
+       with MarkerStyle
   
   /** The marker style is not defined. */
   @js.native
-  sealed trait undefined extends MarkerStyle
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MarkerStyle with Double] = js.native
-  /* 5 */ @js.native
-  object minus extends TopLevel[minus with Double]
-  
-  /* 6 */ @js.native
-  object noNumber extends TopLevel[noNumber with Double]
-  
-  /* 2 */ @js.native
-  object parentheses extends TopLevel[parentheses with Double]
-  
-  /* 1 */ @js.native
-  object parenthesis extends TopLevel[parenthesis with Double]
-  
-  /* 3 */ @js.native
-  object period extends TopLevel[period with Double]
-  
-  /* 4 */ @js.native
-  object plain extends TopLevel[plain with Double]
-  
-  /* 0 */ @js.native
-  object undefined extends TopLevel[undefined with Double]
-  
+  sealed trait undefined
+    extends StObject
+       with MarkerStyle
 }
-

@@ -1,46 +1,49 @@
 package typingsJapgolly.winrtUwp.Windows.Security.Cryptography.Certificates
 
-import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IIterable
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVectorView
-import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typingsJapgolly.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a signature attached to a signed CMS message. */
-@JSGlobal("Windows.Security.Cryptography.Certificates.CmsAttachedSignature")
-@js.native
-class CmsAttachedSignature protected () extends js.Object {
-  /**
-    * Creates a new instance of the CmsAttachedSignature class for the specified signed CMS message.
-    * @param inputBlob A signed CMS message blob.
-    */
-  def this(inputBlob: IBuffer) = this()
+trait CmsAttachedSignature extends StObject {
+  
   /** Gets the list of certificates that are used for chain building for the signer certificate. */
-  var certificates: IVectorView[Certificate] = js.native
+  var certificates: IVectorView[Certificate]
+  
   /** Gets the content of the signed CMS message. */
-  var content: Double = js.native
+  var content: Double
+  
   /** Gets the list of signers that are used for creating or verifying the signature. */
-  var signers: IVectorView[CmsSignerInfo] = js.native
+  var signers: IVectorView[CmsSignerInfo]
+  
   /**
     * Verifies the signature contained in the signed CMS message.
     * @return The result of the signature verification operation.
     */
-  def verifySignature(): SignatureValidationResult = js.native
+  def verifySignature(): SignatureValidationResult
 }
-
-/* static members */
-@JSGlobal("Windows.Security.Cryptography.Certificates.CmsAttachedSignature")
-@js.native
-object CmsAttachedSignature extends js.Object {
-  /**
-    * Signs the specified input data using the specified signer information and creates an attached signed CMS message.
-    * @param data The input data to be signed.
-    * @param signers The signer information used to compute the signature.
-    * @param certificates The list of certificates to build the chain for the signer certificates.
-    * @return An asynchronous operation to retrieve the attached signed CMS message.
-    */
-  def generateSignatureAsync(data: IBuffer, signers: IIterable[CmsSignerInfo], certificates: IIterable[Certificate]): IPromiseWithIAsyncOperation[IBuffer] = js.native
+object CmsAttachedSignature {
+  
+  inline def apply(
+    certificates: IVectorView[Certificate],
+    content: Double,
+    signers: IVectorView[CmsSignerInfo],
+    verifySignature: CallbackTo[SignatureValidationResult]
+  ): CmsAttachedSignature = {
+    val __obj = js.Dynamic.literal(certificates = certificates.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], signers = signers.asInstanceOf[js.Any], verifySignature = verifySignature.toJsFn)
+    __obj.asInstanceOf[CmsAttachedSignature]
+  }
+  
+  extension [Self <: CmsAttachedSignature](x: Self) {
+    
+    inline def setCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
+    
+    inline def setContent(value: Double): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setSigners(value: IVectorView[CmsSignerInfo]): Self = StObject.set(x, "signers", value.asInstanceOf[js.Any])
+    
+    inline def setVerifySignature(value: CallbackTo[SignatureValidationResult]): Self = StObject.set(x, "verifySignature", value.toJsFn)
+  }
 }
-

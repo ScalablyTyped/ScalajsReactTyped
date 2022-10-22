@@ -4,12 +4,13 @@ import typingsJapgolly.jqueryCountdown.jQueryCountdown.Controls
 import typingsJapgolly.jqueryCountdown.jQueryCountdown.Event
 import typingsJapgolly.jqueryCountdown.jQueryCountdown.Methods
 import typingsJapgolly.jqueryCountdown.jQueryCountdown.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   /**
     * Methods to control the execution flow of countdown
     */
@@ -24,9 +25,9 @@ trait JQuery extends js.Object {
     */
   def countdown(finalDate: String, options: Options): JQuery = js.native
   def countdown(finalDate: String, options: Options, callback: js.Function1[/* event */ Event, Unit]): JQuery = js.native
+  
   /**
     * Trigger an event whenever some state change
     */
   def on(method: Methods, callback: js.Function1[/* event */ Event, Unit]): JQuery = js.native
 }
-

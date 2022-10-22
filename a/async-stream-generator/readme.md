@@ -10,15 +10,12 @@ Pipe ES6 Async Generators through Node.js Streams
 | ------------------ | :-------------: |
 | Full name          | async-stream-generator |
 | Keywords           | streams, async, generators, async, iterators, pipe |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 8048 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1044.0 |
+| # stars            | 46.0 |
 
 ## Links
-- [Homepage](https://github.com/MattMorgis/async-stream-generator#readme)
-- [Bugs](https://github.com/MattMorgis/async-stream-generator/issues)
-- [Repository](https://github.com/MattMorgis/async-stream-generator)
 - [Npm](https://www.npmjs.com/package/async-stream-generator)
     
 

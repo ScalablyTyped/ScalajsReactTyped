@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-polyglot
 
-Typings are for version v0.4.4
+Typings are for version v2.4.0
 
 ## Library description:
 Give your JavaScript the ability to speak many languages.
@@ -10,10 +10,10 @@ Give your JavaScript the ability to speak many languages.
 | ------------------ | :-------------: |
 | Full name          | node-polyglot |
 | Keywords           | i18n, internationalization, internationalisation, translation, interpolation, translate, polyglot |
-| # releases         | 4 |
-| # dependents       | 149 |
-| # downloads        | 3872094 |
-| # stars            | 14 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 695767.6666666666 |
+| # stars            | 3538.0 |
 
 ## Links
 - [Homepage](https://github.com/airbnb/polyglot.js#readme)

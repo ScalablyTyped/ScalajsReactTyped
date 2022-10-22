@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Chat
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChatMessageOperatorKind extends js.Object
-
+sealed trait ChatMessageOperatorKind extends StObject
 /** Specifies the message operator type. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageOperatorKind")
 @js.native
-object ChatMessageOperatorKind extends js.Object {
+object ChatMessageOperatorKind extends StObject {
+  
   /** MMS message */
   @js.native
-  sealed trait mms extends ChatMessageOperatorKind
+  sealed trait mms
+    extends StObject
+       with ChatMessageOperatorKind
   
   /** RCS message */
   @js.native
-  sealed trait rcs extends ChatMessageOperatorKind
+  sealed trait rcs
+    extends StObject
+       with ChatMessageOperatorKind
   
   /** SMS message */
   @js.native
-  sealed trait sms extends ChatMessageOperatorKind
+  sealed trait sms
+    extends StObject
+       with ChatMessageOperatorKind
   
   /** The value hasn't been set. */
   @js.native
-  sealed trait unspecified extends ChatMessageOperatorKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChatMessageOperatorKind with Double] = js.native
-  /* 2 */ @js.native
-  object mms extends TopLevel[mms with Double]
-  
-  /* 3 */ @js.native
-  object rcs extends TopLevel[rcs with Double]
-  
-  /* 1 */ @js.native
-  object sms extends TopLevel[sms with Double]
-  
-  /* 0 */ @js.native
-  object unspecified extends TopLevel[unspecified with Double]
-  
+  sealed trait unspecified
+    extends StObject
+       with ChatMessageOperatorKind
 }
-

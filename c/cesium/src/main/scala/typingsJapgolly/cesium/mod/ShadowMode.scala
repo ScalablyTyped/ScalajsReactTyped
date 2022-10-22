@@ -1,41 +1,51 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShadowMode extends js.Object
-
+sealed trait ShadowMode extends StObject
 @JSImport("cesium", "ShadowMode")
 @js.native
-object ShadowMode extends js.Object {
-  @js.native
-  sealed trait CAST_ONLY extends ShadowMode
-  
-  @js.native
-  sealed trait DISABLED extends ShadowMode
-  
-  @js.native
-  sealed trait ENABLED extends ShadowMode
-  
-  @js.native
-  sealed trait RECEIVE_ONLY extends ShadowMode
+object ShadowMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ShadowMode with Double] = js.native
-  /* 0 */ @js.native
-  object CAST_ONLY extends TopLevel[CAST_ONLY with Double]
+  def apply(value: Double): js.UndefOr[ShadowMode & Double] = js.native
   
-  /* 1 */ @js.native
-  object DISABLED extends TopLevel[DISABLED with Double]
+  /**
+    * The object casts shadows only.
+    */
+  @js.native
+  sealed trait CAST_ONLY
+    extends StObject
+       with ShadowMode
+  /* 2 */ val CAST_ONLY: typingsJapgolly.cesium.mod.ShadowMode.CAST_ONLY & Double = js.native
   
-  /* 2 */ @js.native
-  object ENABLED extends TopLevel[ENABLED with Double]
+  /**
+    * The object does not cast or receive shadows.
+    */
+  @js.native
+  sealed trait DISABLED
+    extends StObject
+       with ShadowMode
+  /* 0 */ val DISABLED: typingsJapgolly.cesium.mod.ShadowMode.DISABLED & Double = js.native
   
-  /* 3 */ @js.native
-  object RECEIVE_ONLY extends TopLevel[RECEIVE_ONLY with Double]
+  /**
+    * The object casts and receives shadows.
+    */
+  @js.native
+  sealed trait ENABLED
+    extends StObject
+       with ShadowMode
+  /* 1 */ val ENABLED: typingsJapgolly.cesium.mod.ShadowMode.ENABLED & Double = js.native
   
+  /**
+    * The object receives shadows only.
+    */
+  @js.native
+  sealed trait RECEIVE_ONLY
+    extends StObject
+       with ShadowMode
+  /* 3 */ val RECEIVE_ONLY: typingsJapgolly.cesium.mod.ShadowMode.RECEIVE_ONLY & Double = js.native
 }
-

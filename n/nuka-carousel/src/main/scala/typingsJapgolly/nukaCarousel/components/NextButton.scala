@@ -1,58 +1,47 @@
 package typingsJapgolly.nukaCarousel.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.nukaCarousel.mod.CarouselCellAlignProp
-import typingsJapgolly.nukaCarousel.mod.CarouselSlideRenderControlProps
-import typingsJapgolly.nukaCarousel.mod.CarouselSlidesToScrollProp
+import japgolly.scalajs.react.ReactKeyboardEventFrom
+import japgolly.scalajs.react.ReactMouseEventFrom
+import japgolly.scalajs.react.ReactTouchEventFrom
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.nukaCarousel.libTypesMod.Alignment
+import typingsJapgolly.nukaCarousel.libTypesMod.ControlProps
+import typingsJapgolly.nukaCarousel.libTypesMod.DefaultControlsConfig
+import typingsJapgolly.nukaCarousel.libTypesMod.ScrollMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NextButton {
-  def apply(
-    cellAlign: CarouselCellAlignProp,
+  
+  inline def apply(
+    cellAlign: Alignment,
     cellSpacing: Double,
     currentSlide: Double,
-    frameWidth: Double,
-    slideCount: Double,
-    slideWidth: Double,
-    slidesToScroll: CarouselSlidesToScrollProp,
-    slidesToShow: Double,
-    wrapAround: Boolean,
+    defaultControlsConfig: DefaultControlsConfig,
     goToSlide: Double => Callback,
+    nextDisabled: Boolean,
     nextSlide: Callback,
+    onUserNavigation: /* e */ ReactTouchEventFrom[Element] | ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element] => Callback,
+    pagingDotsIndices: js.Array[Double],
+    previousDisabled: Boolean,
     previousSlide: Callback,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    CarouselSlideRenderControlProps, 
-    typingsJapgolly.nukaCarousel.mod.NextButton, 
-    Unit, 
-    CarouselSlideRenderControlProps
-  ] = {
-    val __obj = js.Dynamic.literal(cellAlign = cellAlign.asInstanceOf[js.Any], cellSpacing = cellSpacing.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], frameWidth = frameWidth.asInstanceOf[js.Any], slideCount = slideCount.asInstanceOf[js.Any], slideWidth = slideWidth.asInstanceOf[js.Any], slidesToScroll = slidesToScroll.asInstanceOf[js.Any], slidesToShow = slidesToShow.asInstanceOf[js.Any], wrapAround = wrapAround.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("goToSlide")(js.Any.fromFunction1((t0: scala.Double) => goToSlide(t0).runNow()))
-    __obj.updateDynamic("nextSlide")(nextSlide.toJsFn)
-    __obj.updateDynamic("previousSlide")(previousSlide.toJsFn)
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.nukaCarousel.mod.CarouselSlideRenderControlProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.nukaCarousel.mod.NextButton](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.nukaCarousel.mod.CarouselSlideRenderControlProps])(children: _*)
+    scrollMode: ScrollMode,
+    slideCount: Double,
+    slidesToScroll: Double,
+    slidesToShow: Double,
+    vertical: Boolean,
+    wrapAround: Boolean
+  ): Default[js.Object] = {
+    val __props = js.Dynamic.literal(cellAlign = cellAlign.asInstanceOf[js.Any], cellSpacing = cellSpacing.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], defaultControlsConfig = defaultControlsConfig.asInstanceOf[js.Any], goToSlide = js.Any.fromFunction1((t0: Double) => goToSlide(t0).runNow()), nextDisabled = nextDisabled.asInstanceOf[js.Any], nextSlide = nextSlide.toJsFn, onUserNavigation = js.Any.fromFunction1((t0: /* e */ ReactTouchEventFrom[Element] | ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element]) => onUserNavigation(t0).runNow()), pagingDotsIndices = pagingDotsIndices.asInstanceOf[js.Any], previousDisabled = previousDisabled.asInstanceOf[js.Any], previousSlide = previousSlide.toJsFn, scrollMode = scrollMode.asInstanceOf[js.Any], slideCount = slideCount.asInstanceOf[js.Any], slidesToScroll = slidesToScroll.asInstanceOf[js.Any], slidesToShow = slidesToShow.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any], wrapAround = wrapAround.asInstanceOf[js.Any])
+    new Default[js.Object](js.Array(this.component, __props.asInstanceOf[ControlProps]))
   }
+  
   @JSImport("nuka-carousel", "NextButton")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: ControlProps): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

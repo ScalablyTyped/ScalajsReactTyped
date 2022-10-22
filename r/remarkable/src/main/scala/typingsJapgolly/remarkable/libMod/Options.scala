@@ -1,75 +1,101 @@
 package typingsJapgolly.remarkable.libMod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Options extends js.Object {
+trait Options extends StObject {
+  
   /**
     * Convert "\n" in paragraphs into <br>.
     */
   var breaks: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Highlighter function. Should return escaped HTML, or "" if the source
     * string is not changed.
     */
   var highlight: js.UndefOr[js.Function2[/* str */ String, /* lang */ String, String]] = js.undefined
+  
   /**
     * Enable HTML tags in source.
     */
   var html: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * CSS language prefix for fenced blocks.
     */
   var langPrefix: js.UndefOr[String] = js.undefined
+  
   /**
     * Set target to open link in
     */
   var linkTarget: js.UndefOr[String] = js.undefined
+  
   /**
     * Autoconvert URL-like text to links.
     */
   var linkify: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Double + single quotes replacement pairs, when typographer enabled,
     * and smartquotes on. Set doubles to "«»" for Russian, "„“" for German.
     */
   var quotes: js.UndefOr[String] = js.undefined
+  
   /**
     * Enable some language-neutral replacement + quotes beautification.
     */
   var typographer: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Use "/" to close single tags (<br />).
     */
   var xhtmlOut: js.UndefOr[Boolean] = js.undefined
 }
-
 object Options {
-  @scala.inline
-  def apply(
-    breaks: js.UndefOr[Boolean] = js.undefined,
-    highlight: (/* str */ String, /* lang */ String) => CallbackTo[String] = null,
-    html: js.UndefOr[Boolean] = js.undefined,
-    langPrefix: String = null,
-    linkTarget: String = null,
-    linkify: js.UndefOr[Boolean] = js.undefined,
-    quotes: String = null,
-    typographer: js.UndefOr[Boolean] = js.undefined,
-    xhtmlOut: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breaks)) __obj.updateDynamic("breaks")(breaks.asInstanceOf[js.Any])
-    if (highlight != null) __obj.updateDynamic("highlight")(js.Any.fromFunction2((t0: /* str */ java.lang.String, t1: /* lang */ java.lang.String) => highlight(t0, t1).runNow()))
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (langPrefix != null) __obj.updateDynamic("langPrefix")(langPrefix.asInstanceOf[js.Any])
-    if (linkTarget != null) __obj.updateDynamic("linkTarget")(linkTarget.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkify)) __obj.updateDynamic("linkify")(linkify.asInstanceOf[js.Any])
-    if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
-    if (!js.isUndefined(typographer)) __obj.updateDynamic("typographer")(typographer.asInstanceOf[js.Any])
-    if (!js.isUndefined(xhtmlOut)) __obj.updateDynamic("xhtmlOut")(xhtmlOut.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  
+  extension [Self <: Options](x: Self) {
+    
+    inline def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
+    
+    inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
+    
+    inline def setHighlight(value: (/* str */ String, /* lang */ String) => String): Self = StObject.set(x, "highlight", js.Any.fromFunction2(value))
+    
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    
+    inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    
+    inline def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setLangPrefixUndefined: Self = StObject.set(x, "langPrefix", js.undefined)
+    
+    inline def setLinkTarget(value: String): Self = StObject.set(x, "linkTarget", value.asInstanceOf[js.Any])
+    
+    inline def setLinkTargetUndefined: Self = StObject.set(x, "linkTarget", js.undefined)
+    
+    inline def setLinkify(value: Boolean): Self = StObject.set(x, "linkify", value.asInstanceOf[js.Any])
+    
+    inline def setLinkifyUndefined: Self = StObject.set(x, "linkify", js.undefined)
+    
+    inline def setQuotes(value: String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
+    
+    inline def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
+    
+    inline def setTypographer(value: Boolean): Self = StObject.set(x, "typographer", value.asInstanceOf[js.Any])
+    
+    inline def setTypographerUndefined: Self = StObject.set(x, "typographer", js.undefined)
+    
+    inline def setXhtmlOut(value: Boolean): Self = StObject.set(x, "xhtmlOut", value.asInstanceOf[js.Any])
+    
+    inline def setXhtmlOutUndefined: Self = StObject.set(x, "xhtmlOut", js.undefined)
+  }
 }
-

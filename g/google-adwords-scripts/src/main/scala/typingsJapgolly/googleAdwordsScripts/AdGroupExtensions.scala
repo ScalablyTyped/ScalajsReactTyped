@@ -1,17 +1,19 @@
 package typingsJapgolly.googleAdwordsScripts
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AdGroupExtensions extends AccountExtensions {
+trait AdGroupExtensions
+  extends StObject
+     with AccountExtensions {
+  
   def phoneNumbers(): AdWordsSelector[PhoneNumber]
 }
-
 object AdGroupExtensions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     callouts: CallbackTo[AdWordsSelector[Callout]],
     message: CallbackTo[AdWordsSelector[Message]],
     mobileApps: CallbackTo[AdWordsSelector[MobileApp]],
@@ -20,15 +22,12 @@ object AdGroupExtensions {
     sitelinks: CallbackTo[AdWordsSelector[Sitelink]],
     snippets: CallbackTo[AdWordsSelector[Snippet]]
   ): AdGroupExtensions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callouts")(callouts.toJsFn)
-    __obj.updateDynamic("message")(message.toJsFn)
-    __obj.updateDynamic("mobileApps")(mobileApps.toJsFn)
-    __obj.updateDynamic("phoneNumbers")(phoneNumbers.toJsFn)
-    __obj.updateDynamic("reviews")(reviews.toJsFn)
-    __obj.updateDynamic("sitelinks")(sitelinks.toJsFn)
-    __obj.updateDynamic("snippets")(snippets.toJsFn)
+    val __obj = js.Dynamic.literal(callouts = callouts.toJsFn, message = message.toJsFn, mobileApps = mobileApps.toJsFn, phoneNumbers = phoneNumbers.toJsFn, reviews = reviews.toJsFn, sitelinks = sitelinks.toJsFn, snippets = snippets.toJsFn)
     __obj.asInstanceOf[AdGroupExtensions]
   }
+  
+  extension [Self <: AdGroupExtensions](x: Self) {
+    
+    inline def setPhoneNumbers(value: CallbackTo[AdWordsSelector[PhoneNumber]]): Self = StObject.set(x, "phoneNumbers", value.toJsFn)
+  }
 }
-

@@ -1,10 +1,11 @@
 package typingsJapgolly.electron.Electron
 
-import typingsJapgolly.std.Event_
+import typingsJapgolly.electron.GlobalEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Event extends Event_
-
+trait Event
+  extends StObject
+     with GlobalEvent

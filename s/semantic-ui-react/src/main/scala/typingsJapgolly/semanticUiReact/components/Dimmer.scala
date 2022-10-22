@@ -1,42 +1,52 @@
 package typingsJapgolly.semanticUiReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.semanticUiReact.dimmerDimmerMod.DimmerProps
-import typingsJapgolly.semanticUiReact.dimmerMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.semanticUiReact.distCommonjsModulesDimmerDimmerDimmableMod.DimmerDimmableProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesDimmerDimmerInnerMod.DimmerInnerProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesDimmerDimmerMod.DimmerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Dimmer {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    page: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[DimmerProps, default, Unit, DimmerProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.dimmerDimmerMod.DimmerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.dimmerMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.dimmerDimmerMod.DimmerProps])(children: _*)
+  object Dimmable {
+    
+    @JSImport("semantic-ui-react", "Dimmer.Dimmable")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Dimmable.type): SharedBuilder_DimmerDimmableProps947604590[typingsJapgolly.semanticUiReact.mod.Dimmer.Dimmable] = new SharedBuilder_DimmerDimmableProps947604590[typingsJapgolly.semanticUiReact.mod.Dimmer.Dimmable](js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: DimmerDimmableProps): SharedBuilder_DimmerDimmableProps947604590[typingsJapgolly.semanticUiReact.mod.Dimmer.Dimmable] = new SharedBuilder_DimmerDimmableProps947604590[typingsJapgolly.semanticUiReact.mod.Dimmer.Dimmable](js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/modules/Dimmer", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object Inner {
+    
+    @JSImport("semantic-ui-react", "Dimmer.Inner")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Inner.type): SharedBuilder_DimmerInnerProps_513963287[typingsJapgolly.semanticUiReact.mod.Dimmer.Inner] = new SharedBuilder_DimmerInnerProps_513963287[typingsJapgolly.semanticUiReact.mod.Dimmer.Inner](js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: DimmerInnerProps): SharedBuilder_DimmerInnerProps_513963287[typingsJapgolly.semanticUiReact.mod.Dimmer.Inner] = new SharedBuilder_DimmerInnerProps_513963287[typingsJapgolly.semanticUiReact.mod.Dimmer.Inner](js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  @JSImport("semantic-ui-react", "Dimmer")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.semanticUiReact.mod.Dimmer] {
+    
+    inline def active(value: Boolean): this.type = set("active", value.asInstanceOf[js.Any])
+    
+    inline def page(value: Boolean): this.type = set("page", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Dimmer.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: DimmerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

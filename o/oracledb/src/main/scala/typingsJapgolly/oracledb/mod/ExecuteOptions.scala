@@ -1,21 +1,40 @@
 package typingsJapgolly.oracledb.mod
 
-import typingsJapgolly.oracledb.AnonType
+import typingsJapgolly.oracledb.anon.TypeNumber
 import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used to control statement execution.
   */
-trait ExecuteOptions extends js.Object {
+trait ExecuteOptions extends StObject {
+  
   /**
     * If true, the transaction in the current connection is automatically committed at the end of statement execution.
     *
     * @default false
     */
   var autoCommit: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Overrides oracledb.dbObjectAsPojo.
+    *
+    * Specify whether Oracle Database named objects or collections that are queried should be returned to the application
+    * as “plain old JavaScript objects” or kept as database-backed objects. This option also applies to output BIND_OUT bind variables.
+    *
+    * Note that LOBs in objects will be represented as Lob instances and will not be String or Buffer, regardless of any fetchAsString,
+    * fetchAsBuffer, or fetchInfo setting.
+    *
+    * Setting dbObjectAsPojo to true can avoid overhead if object attributes are repeatedly accessed. It also allows applications to
+    * close connections before any attributes are accessed unless LOBs are involved. Regardless of the value, the interface to access objects is the same.
+    *
+    * @default false
+    * @since 5.1
+    */
+  var dbObjectAsPojo: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Determines whether additional metadata is available for queries and for REF CURSORs returned from PL/SQL blocks.
     *
@@ -26,6 +45,7 @@ trait ExecuteOptions extends js.Object {
     * @default false
     */
   var extendedMetaData: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * This property sets the size of an internal buffer used for fetching query rows from Oracle Database.
     * Changing it may affect query performance but does not affect how many rows are returned to the application.
@@ -42,6 +62,7 @@ trait ExecuteOptions extends js.Object {
     * @default 100
     */
   var fetchArraySize: js.UndefOr[Double] = js.undefined
+  
   /**
     * Defines how query column data should be represented in JavaScript. It can be used in conjunction with,
     * or instead of, the global settings fetchAsString and fetchAsBuffer.
@@ -53,7 +74,8 @@ trait ExecuteOptions extends js.Object {
     *          "HIRE_DETAILS": { type: oracledb.DEFAULT }  // override fetchAsString or fetchAsBuffer
     *      }
     */
-  var fetchInfo: js.UndefOr[Record[String, AnonType]] = js.undefined
+  var fetchInfo: js.UndefOr[Record[String, TypeNumber]] = js.undefined
+  
   /**
     * The maximum number of rows that are fetched by a query with connection.execute() when not using a ResultSet.
     * Rows beyond this limit are not fetched from the database. A value of 0 means there is no limit.
@@ -69,6 +91,7 @@ trait ExecuteOptions extends js.Object {
     * @default 0 (unlimited)
     */
   var maxRows: js.UndefOr[Double] = js.undefined
+  
   /**
     * The format of query rows fetched when using connection.execute() or connection.queryStream().
     * It affects both ResultSet and non-ResultSet queries. It can be used for top level queries and REF CURSOR output.
@@ -85,6 +108,25 @@ trait ExecuteOptions extends js.Object {
     * @default ARRAY
     */
   var outFormat: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * This is a query tuning option to set the number of additional rows the underlying Oracle Client library fetches during
+    * the internal initial statement execution phase of a query. The prefetch size does not affect when, or how many,
+    * rows are returned by node-oracledb to the application.
+    *
+    * The prefetchRows attribute can be used in conjunction with oracledb.fetchArraySize to tune query performance, memory use,
+    * and to reduce the number of round-trip calls needed to return query results.
+    *
+    * The prefetchRows value is ignored in some cases, such as when the query involves a LOB.
+    *
+    * This attribute is not used in node-oracledb version 2, 3 or 4. In those versions use only oracledb.fetchArraySize instead.
+    *
+    * @default 2
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#rowfetching
+    * @since 5.0
+    */
+  var prefetchRows: js.UndefOr[Double] = js.undefined
+  
   /**
     * Determines whether query results should be returned as a ResultSet object or directly.
     *
@@ -92,27 +134,49 @@ trait ExecuteOptions extends js.Object {
     */
   var resultSet: js.UndefOr[Boolean] = js.undefined
 }
-
 object ExecuteOptions {
-  @scala.inline
-  def apply(
-    autoCommit: js.UndefOr[Boolean] = js.undefined,
-    extendedMetaData: js.UndefOr[Boolean] = js.undefined,
-    fetchArraySize: Int | Double = null,
-    fetchInfo: Record[String, AnonType] = null,
-    maxRows: Int | Double = null,
-    outFormat: Int | Double = null,
-    resultSet: js.UndefOr[Boolean] = js.undefined
-  ): ExecuteOptions = {
+  
+  inline def apply(): ExecuteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit.asInstanceOf[js.Any])
-    if (!js.isUndefined(extendedMetaData)) __obj.updateDynamic("extendedMetaData")(extendedMetaData.asInstanceOf[js.Any])
-    if (fetchArraySize != null) __obj.updateDynamic("fetchArraySize")(fetchArraySize.asInstanceOf[js.Any])
-    if (fetchInfo != null) __obj.updateDynamic("fetchInfo")(fetchInfo.asInstanceOf[js.Any])
-    if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
-    if (outFormat != null) __obj.updateDynamic("outFormat")(outFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(resultSet)) __obj.updateDynamic("resultSet")(resultSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteOptions]
   }
+  
+  extension [Self <: ExecuteOptions](x: Self) {
+    
+    inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
+    
+    inline def setDbObjectAsPojo(value: Boolean): Self = StObject.set(x, "dbObjectAsPojo", value.asInstanceOf[js.Any])
+    
+    inline def setDbObjectAsPojoUndefined: Self = StObject.set(x, "dbObjectAsPojo", js.undefined)
+    
+    inline def setExtendedMetaData(value: Boolean): Self = StObject.set(x, "extendedMetaData", value.asInstanceOf[js.Any])
+    
+    inline def setExtendedMetaDataUndefined: Self = StObject.set(x, "extendedMetaData", js.undefined)
+    
+    inline def setFetchArraySize(value: Double): Self = StObject.set(x, "fetchArraySize", value.asInstanceOf[js.Any])
+    
+    inline def setFetchArraySizeUndefined: Self = StObject.set(x, "fetchArraySize", js.undefined)
+    
+    inline def setFetchInfo(value: Record[String, TypeNumber]): Self = StObject.set(x, "fetchInfo", value.asInstanceOf[js.Any])
+    
+    inline def setFetchInfoUndefined: Self = StObject.set(x, "fetchInfo", js.undefined)
+    
+    inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
+    
+    inline def setOutFormat(value: Double): Self = StObject.set(x, "outFormat", value.asInstanceOf[js.Any])
+    
+    inline def setOutFormatUndefined: Self = StObject.set(x, "outFormat", js.undefined)
+    
+    inline def setPrefetchRows(value: Double): Self = StObject.set(x, "prefetchRows", value.asInstanceOf[js.Any])
+    
+    inline def setPrefetchRowsUndefined: Self = StObject.set(x, "prefetchRows", js.undefined)
+    
+    inline def setResultSet(value: Boolean): Self = StObject.set(x, "resultSet", value.asInstanceOf[js.Any])
+    
+    inline def setResultSetUndefined: Self = StObject.set(x, "resultSet", js.undefined)
+  }
 }
-

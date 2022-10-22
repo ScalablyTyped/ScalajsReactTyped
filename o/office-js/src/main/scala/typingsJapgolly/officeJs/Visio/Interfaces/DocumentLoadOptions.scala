@@ -1,8 +1,8 @@
 package typingsJapgolly.officeJs.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -10,23 +10,49 @@ import scala.scalajs.js.annotation._
   *
   * [Api set:  1.1]
   */
-@js.native
-trait DocumentLoadOptions extends js.Object {
+trait DocumentLoadOptions extends StObject {
+  
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Represents a Visio application instance that contains this document.
     *
     * [Api set:  1.1]
     */
-  var application: js.UndefOr[ApplicationLoadOptions] = js.native
+  var application: js.UndefOr[ApplicationLoadOptions] = js.undefined
+  
   /**
     *
     * Returns the DocumentView object.
     *
     * [Api set:  1.1]
     */
-  var view: js.UndefOr[DocumentViewLoadOptions] = js.native
+  var view: js.UndefOr[DocumentViewLoadOptions] = js.undefined
 }
-
+object DocumentLoadOptions {
+  
+  inline def apply(): DocumentLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[DocumentLoadOptions]
+  }
+  
+  extension [Self <: DocumentLoadOptions](x: Self) {
+    
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    
+    inline def setApplication(value: ApplicationLoadOptions): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+    
+    inline def setView(value: DocumentViewLoadOptions): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
+}

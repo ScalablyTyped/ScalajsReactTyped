@@ -1,22 +1,22 @@
 package typingsJapgolly.reactNativeSvg.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg", "Stop")
 @js.native
-class Stop protected ()
-  extends Component[StopProps, ComponentState, js.Any] {
-  def this(props: StopProps) = this()
-  def this(props: StopProps, context: js.Any) = this()
+open class Stop ()
+  extends typingsJapgolly.reactNativeSvg.libTypescriptReactNativeSVGMod.Stop
+/* static members */
+object Stop {
+  
+  @JSImport("react-native-svg", "Stop")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native-svg", "Stop.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }
-
-@JSImport("react-native-svg", "Stop")
-@js.native
-object Stop extends TopLevel[ComponentClass[StopProps, ComponentState]]
-

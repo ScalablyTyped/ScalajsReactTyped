@@ -1,54 +1,99 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SecurityPolicyViolationEventInit extends EventInit {
+trait SecurityPolicyViolationEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
   var blockedURI: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var columnNumber: js.UndefOr[Double] = js.undefined
-  var documentURI: js.UndefOr[java.lang.String] = js.undefined
-  var effectiveDirective: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var disposition: SecurityPolicyViolationEventDisposition
+  
+  /* standard dom */
+  var documentURI: java.lang.String
+  
+  /* standard dom */
+  var effectiveDirective: java.lang.String
+  
+  /* standard dom */
   var lineNumber: js.UndefOr[Double] = js.undefined
-  var originalPolicy: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var originalPolicy: java.lang.String
+  
+  /* standard dom */
   var referrer: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var sample: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var sourceFile: js.UndefOr[java.lang.String] = js.undefined
-  var statusCode: js.UndefOr[Double] = js.undefined
-  var violatedDirective: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var statusCode: Double
+  
+  /* standard dom */
+  var violatedDirective: java.lang.String
 }
-
 object SecurityPolicyViolationEventInit {
-  @scala.inline
-  def apply(
-    blockedURI: java.lang.String = null,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    columnNumber: Int | Double = null,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    documentURI: java.lang.String = null,
-    effectiveDirective: java.lang.String = null,
-    lineNumber: Int | Double = null,
-    originalPolicy: java.lang.String = null,
-    referrer: java.lang.String = null,
-    sourceFile: java.lang.String = null,
-    statusCode: Int | Double = null,
-    violatedDirective: java.lang.String = null
+  
+  inline def apply(
+    disposition: SecurityPolicyViolationEventDisposition,
+    documentURI: java.lang.String,
+    effectiveDirective: java.lang.String,
+    originalPolicy: java.lang.String,
+    statusCode: Double,
+    violatedDirective: java.lang.String
   ): SecurityPolicyViolationEventInit = {
-    val __obj = js.Dynamic.literal()
-    if (blockedURI != null) __obj.updateDynamic("blockedURI")(blockedURI.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (documentURI != null) __obj.updateDynamic("documentURI")(documentURI.asInstanceOf[js.Any])
-    if (effectiveDirective != null) __obj.updateDynamic("effectiveDirective")(effectiveDirective.asInstanceOf[js.Any])
-    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
-    if (originalPolicy != null) __obj.updateDynamic("originalPolicy")(originalPolicy.asInstanceOf[js.Any])
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
-    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (violatedDirective != null) __obj.updateDynamic("violatedDirective")(violatedDirective.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(disposition = disposition.asInstanceOf[js.Any], documentURI = documentURI.asInstanceOf[js.Any], effectiveDirective = effectiveDirective.asInstanceOf[js.Any], originalPolicy = originalPolicy.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], violatedDirective = violatedDirective.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityPolicyViolationEventInit]
   }
+  
+  extension [Self <: SecurityPolicyViolationEventInit](x: Self) {
+    
+    inline def setBlockedURI(value: java.lang.String): Self = StObject.set(x, "blockedURI", value.asInstanceOf[js.Any])
+    
+    inline def setBlockedURIUndefined: Self = StObject.set(x, "blockedURI", js.undefined)
+    
+    inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+    
+    inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
+    
+    inline def setDisposition(value: SecurityPolicyViolationEventDisposition): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentURI(value: java.lang.String): Self = StObject.set(x, "documentURI", value.asInstanceOf[js.Any])
+    
+    inline def setEffectiveDirective(value: java.lang.String): Self = StObject.set(x, "effectiveDirective", value.asInstanceOf[js.Any])
+    
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    
+    inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+    
+    inline def setOriginalPolicy(value: java.lang.String): Self = StObject.set(x, "originalPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setReferrer(value: java.lang.String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+    
+    inline def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
+    
+    inline def setSample(value: java.lang.String): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+    
+    inline def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
+    
+    inline def setSourceFile(value: java.lang.String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
+    
+    inline def setSourceFileUndefined: Self = StObject.set(x, "sourceFile", js.undefined)
+    
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    
+    inline def setViolatedDirective(value: java.lang.String): Self = StObject.set(x, "violatedDirective", value.asInstanceOf[js.Any])
+  }
 }
-

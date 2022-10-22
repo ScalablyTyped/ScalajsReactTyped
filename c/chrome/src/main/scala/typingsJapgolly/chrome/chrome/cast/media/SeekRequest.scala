@@ -1,18 +1,30 @@
 package typingsJapgolly.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("chrome.cast.media.SeekRequest")
-@js.native
-/**
-  * @constructor
-  * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.SeekRequest
-  */
-class SeekRequest () extends js.Object {
-  var currentTime: Double = js.native
-  var customData: js.Object = js.native
-  var resumeState: ResumeState = js.native
+trait SeekRequest extends StObject {
+  
+  var currentTime: Double
+  
+  var customData: js.Object
+  
+  var resumeState: ResumeState
 }
-
+object SeekRequest {
+  
+  inline def apply(currentTime: Double, customData: js.Object, resumeState: ResumeState): SeekRequest = {
+    val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], customData = customData.asInstanceOf[js.Any], resumeState = resumeState.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeekRequest]
+  }
+  
+  extension [Self <: SeekRequest](x: Self) {
+    
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    
+    inline def setResumeState(value: ResumeState): Self = StObject.set(x, "resumeState", value.asInstanceOf[js.Any])
+  }
+}

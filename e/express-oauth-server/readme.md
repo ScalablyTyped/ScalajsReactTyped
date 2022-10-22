@@ -11,14 +11,11 @@ OAuth provider for express
 | Full name          | express-oauth-server |
 | Keywords           | express, oauth, oauth2 |
 | # releases         | 1 |
-| # dependents       | 5 |
-| # downloads        | 124822 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 37765.333333333336 |
+| # stars            | 434.0 |
 
 ## Links
-- [Homepage](https://github.com/seegno/express-oauth-server#readme)
-- [Bugs](https://github.com/seegno/express-oauth-server/issues)
-- [Repository](https://github.com/seegno/express-oauth-server)
 - [Npm](https://www.npmjs.com/package/express-oauth-server)
     
 

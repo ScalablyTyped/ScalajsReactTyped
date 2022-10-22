@@ -1,8 +1,8 @@
 package typingsJapgolly.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Utility Functions
@@ -11,20 +11,27 @@ import scala.scalajs.js.annotation._
   * interfaces
   */
 // chayns.utils.getJwtPayload()
-trait JwtPaylod extends js.Object {
+trait JwtPaylod extends StObject {
+  
   var FacebookUserID: String
+  
   var FirstName: String
+  
   var LastName: String
+  
   var LocationID: Double
+  
   var LoginType: Double
+  
   var PersonID: String
+  
   var TobitUserID: Double
+  
   var isAdmin: Boolean
 }
-
 object JwtPaylod {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     FacebookUserID: String,
     FirstName: String,
     LastName: String,
@@ -35,8 +42,25 @@ object JwtPaylod {
     isAdmin: Boolean
   ): JwtPaylod = {
     val __obj = js.Dynamic.literal(FacebookUserID = FacebookUserID.asInstanceOf[js.Any], FirstName = FirstName.asInstanceOf[js.Any], LastName = LastName.asInstanceOf[js.Any], LocationID = LocationID.asInstanceOf[js.Any], LoginType = LoginType.asInstanceOf[js.Any], PersonID = PersonID.asInstanceOf[js.Any], TobitUserID = TobitUserID.asInstanceOf[js.Any], isAdmin = isAdmin.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[JwtPaylod]
   }
+  
+  extension [Self <: JwtPaylod](x: Self) {
+    
+    inline def setFacebookUserID(value: String): Self = StObject.set(x, "FacebookUserID", value.asInstanceOf[js.Any])
+    
+    inline def setFirstName(value: String): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
+    
+    inline def setIsAdmin(value: Boolean): Self = StObject.set(x, "isAdmin", value.asInstanceOf[js.Any])
+    
+    inline def setLastName(value: String): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
+    
+    inline def setLocationID(value: Double): Self = StObject.set(x, "LocationID", value.asInstanceOf[js.Any])
+    
+    inline def setLoginType(value: Double): Self = StObject.set(x, "LoginType", value.asInstanceOf[js.Any])
+    
+    inline def setPersonID(value: String): Self = StObject.set(x, "PersonID", value.asInstanceOf[js.Any])
+    
+    inline def setTobitUserID(value: Double): Self = StObject.set(x, "TobitUserID", value.asInstanceOf[js.Any])
+  }
 }
-

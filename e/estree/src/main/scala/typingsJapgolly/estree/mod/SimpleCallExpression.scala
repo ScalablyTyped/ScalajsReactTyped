@@ -1,34 +1,32 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SimpleCallExpression
-  extends BaseCallExpression
-     with CallExpression {
+  extends StObject
+     with BaseCallExpression
+     with CallExpression
+     with ChainElement {
+  
+  var optional: Boolean
+  
   @JSName("type")
   var type_SimpleCallExpression: typingsJapgolly.estree.estreeStrings.CallExpression
 }
-
 object SimpleCallExpression {
-  @scala.inline
-  def apply(
-    arguments: js.Array[Expression | SpreadElement],
-    callee: Expression | Super,
-    `type`: typingsJapgolly.estree.estreeStrings.CallExpression,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): SimpleCallExpression = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(arguments: js.Array[Expression | SpreadElement], callee: Expression | Super, optional: Boolean): SimpleCallExpression = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CallExpression")
     __obj.asInstanceOf[SimpleCallExpression]
   }
+  
+  extension [Self <: SimpleCallExpression](x: Self) {
+    
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.CallExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

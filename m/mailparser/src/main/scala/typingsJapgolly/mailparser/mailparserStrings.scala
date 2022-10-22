@@ -1,49 +1,40 @@
 package typingsJapgolly.mailparser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mailparserStrings {
-  @js.native
-  sealed trait attachment extends js.Object
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait attachment extends StObject
+  inline def attachment: attachment = "attachment".asInstanceOf[attachment]
   
   @js.native
-  sealed trait headers extends js.Object
+  sealed trait data extends StObject
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait high extends js.Object
+  sealed trait headers extends StObject
+  inline def headers: headers = "headers".asInstanceOf[headers]
   
   @js.native
-  sealed trait low extends js.Object
+  sealed trait high extends StObject
+  inline def high: high = "high".asInstanceOf[high]
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait low extends StObject
+  inline def low: low = "low".asInstanceOf[low]
   
   @js.native
-  sealed trait readable extends js.Object
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait readable extends StObject
+  inline def readable: readable = "readable".asInstanceOf[readable]
   
-  @scala.inline
-  def attachment: attachment = "attachment".asInstanceOf[attachment]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def headers: headers = "headers".asInstanceOf[headers]
-  @scala.inline
-  def high: high = "high".asInstanceOf[high]
-  @scala.inline
-  def low: low = "low".asInstanceOf[low]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def readable: readable = "readable".asInstanceOf[readable]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  @js.native
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
 }
-

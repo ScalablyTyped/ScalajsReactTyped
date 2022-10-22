@@ -10,10 +10,10 @@ if your image doesn't exist, fallback onto another provided image.
 | ------------------ | :-------------: |
 | Full name          | react-image-fallback |
 | Keywords           | react, image, fallback, preload, preloader, reactjs |
-| # releases         | 3 |
-| # dependents       | 12 |
-| # downloads        | 325911 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 81651.0 |
+| # stars            | 111.0 |
 
 ## Links
 - [Homepage](https://github.com/socialtables/react-image-fallback)

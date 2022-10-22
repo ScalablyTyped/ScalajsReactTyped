@@ -1,8 +1,8 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.elasticsearch.elasticsearchStrings.b
@@ -17,32 +17,28 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.elasticsearch.elasticsearchStrings.p
   - typingsJapgolly.elasticsearch.elasticsearchStrings.pb
 */
-trait CatBytes extends js.Object
-
+trait CatBytes extends StObject
 object CatBytes {
-  @scala.inline
-  def b: typingsJapgolly.elasticsearch.elasticsearchStrings.b = this.cast("b")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def g: typingsJapgolly.elasticsearch.elasticsearchStrings.g = this.cast("g")
-  @scala.inline
-  def gb: typingsJapgolly.elasticsearch.elasticsearchStrings.gb = this.cast("gb")
-  @scala.inline
-  def k: typingsJapgolly.elasticsearch.elasticsearchStrings.k = this.cast("k")
-  @scala.inline
-  def kb: typingsJapgolly.elasticsearch.elasticsearchStrings.kb = this.cast("kb")
-  @scala.inline
-  def m: typingsJapgolly.elasticsearch.elasticsearchStrings.m = this.cast("m")
-  @scala.inline
-  def mb: typingsJapgolly.elasticsearch.elasticsearchStrings.mb = this.cast("mb")
-  @scala.inline
-  def p: typingsJapgolly.elasticsearch.elasticsearchStrings.p = this.cast("p")
-  @scala.inline
-  def pb: typingsJapgolly.elasticsearch.elasticsearchStrings.pb = this.cast("pb")
-  @scala.inline
-  def t: typingsJapgolly.elasticsearch.elasticsearchStrings.t = this.cast("t")
-  @scala.inline
-  def tb: typingsJapgolly.elasticsearch.elasticsearchStrings.tb = this.cast("tb")
+  
+  inline def b: typingsJapgolly.elasticsearch.elasticsearchStrings.b = "b".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.b]
+  
+  inline def g: typingsJapgolly.elasticsearch.elasticsearchStrings.g = "g".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.g]
+  
+  inline def gb: typingsJapgolly.elasticsearch.elasticsearchStrings.gb = "gb".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.gb]
+  
+  inline def k: typingsJapgolly.elasticsearch.elasticsearchStrings.k = "k".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.k]
+  
+  inline def kb: typingsJapgolly.elasticsearch.elasticsearchStrings.kb = "kb".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.kb]
+  
+  inline def m: typingsJapgolly.elasticsearch.elasticsearchStrings.m = "m".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.m]
+  
+  inline def mb: typingsJapgolly.elasticsearch.elasticsearchStrings.mb = "mb".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.mb]
+  
+  inline def p: typingsJapgolly.elasticsearch.elasticsearchStrings.p = "p".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.p]
+  
+  inline def pb: typingsJapgolly.elasticsearch.elasticsearchStrings.pb = "pb".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.pb]
+  
+  inline def t: typingsJapgolly.elasticsearch.elasticsearchStrings.t = "t".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.t]
+  
+  inline def tb: typingsJapgolly.elasticsearch.elasticsearchStrings.tb = "tb".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.tb]
 }
-

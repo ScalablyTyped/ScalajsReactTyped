@@ -1,21 +1,24 @@
 package typingsJapgolly.braintreeWebDropIn.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dataCollectorOptions extends js.Object {
+trait dataCollectorOptions extends StObject {
+  
   var kount: js.UndefOr[Boolean] = js.undefined
-  var paypal: js.UndefOr[Boolean] = js.undefined
 }
-
 object dataCollectorOptions {
-  @scala.inline
-  def apply(kount: js.UndefOr[Boolean] = js.undefined, paypal: js.UndefOr[Boolean] = js.undefined): dataCollectorOptions = {
+  
+  inline def apply(): dataCollectorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(kount)) __obj.updateDynamic("kount")(kount.asInstanceOf[js.Any])
-    if (!js.isUndefined(paypal)) __obj.updateDynamic("paypal")(paypal.asInstanceOf[js.Any])
     __obj.asInstanceOf[dataCollectorOptions]
   }
+  
+  extension [Self <: dataCollectorOptions](x: Self) {
+    
+    inline def setKount(value: Boolean): Self = StObject.set(x, "kount", value.asInstanceOf[js.Any])
+    
+    inline def setKountUndefined: Self = StObject.set(x, "kount", js.undefined)
+  }
 }
-

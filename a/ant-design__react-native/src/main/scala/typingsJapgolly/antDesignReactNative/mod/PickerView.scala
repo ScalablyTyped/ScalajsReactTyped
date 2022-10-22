@@ -1,19 +1,23 @@
 package typingsJapgolly.antDesignReactNative.mod
 
-import typingsJapgolly.antDesignReactNative.AnonCascade
-import typingsJapgolly.antDesignReactNative.pickerViewMod.default
+import typingsJapgolly.antDesignReactNative.anon.OnChange
+import typingsJapgolly.antDesignReactNative.libPickerViewMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "PickerView")
 @js.native
-class PickerView () extends default
-
+open class PickerView () extends default
 /* static members */
-@JSImport("@ant-design/react-native", "PickerView")
-@js.native
-object PickerView extends js.Object {
-  var defaultProps: AnonCascade = js.native
+object PickerView {
+  
+  @JSImport("@ant-design/react-native", "PickerView")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native", "PickerView.defaultProps")
+  @js.native
+  def defaultProps: OnChange = js.native
+  inline def defaultProps_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

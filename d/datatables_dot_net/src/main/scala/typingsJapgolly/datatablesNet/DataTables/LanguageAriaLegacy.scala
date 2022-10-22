@@ -1,21 +1,30 @@
 package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LanguageAriaLegacy extends js.Object {
+trait LanguageAriaLegacy extends StObject {
+  
   var sSortAscending: js.UndefOr[String] = js.undefined
+  
   var sSortDescending: js.UndefOr[String] = js.undefined
 }
-
 object LanguageAriaLegacy {
-  @scala.inline
-  def apply(sSortAscending: String = null, sSortDescending: String = null): LanguageAriaLegacy = {
+  
+  inline def apply(): LanguageAriaLegacy = {
     val __obj = js.Dynamic.literal()
-    if (sSortAscending != null) __obj.updateDynamic("sSortAscending")(sSortAscending.asInstanceOf[js.Any])
-    if (sSortDescending != null) __obj.updateDynamic("sSortDescending")(sSortDescending.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageAriaLegacy]
   }
+  
+  extension [Self <: LanguageAriaLegacy](x: Self) {
+    
+    inline def setSSortAscending(value: String): Self = StObject.set(x, "sSortAscending", value.asInstanceOf[js.Any])
+    
+    inline def setSSortAscendingUndefined: Self = StObject.set(x, "sSortAscending", js.undefined)
+    
+    inline def setSSortDescending(value: String): Self = StObject.set(x, "sSortDescending", value.asInstanceOf[js.Any])
+    
+    inline def setSSortDescendingUndefined: Self = StObject.set(x, "sSortDescending", js.undefined)
+  }
 }
-

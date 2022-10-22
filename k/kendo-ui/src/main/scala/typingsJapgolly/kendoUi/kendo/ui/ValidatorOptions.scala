@@ -1,40 +1,67 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ValidatorOptions extends js.Object {
+trait ValidatorOptions extends StObject {
+  
   var errorTemplate: js.UndefOr[String] = js.undefined
-  var messages: js.UndefOr[js.Any] = js.undefined
+  
+  var messages: js.UndefOr[Any] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
-  var rules: js.UndefOr[js.Any] = js.undefined
+  
+  var rules: js.UndefOr[Any] = js.undefined
+  
   var validate: js.UndefOr[js.Function1[/* e */ ValidatorValidateEvent, Unit]] = js.undefined
+  
   var validateInput: js.UndefOr[js.Function1[/* e */ ValidatorValidateInputEvent, Unit]] = js.undefined
+  
   var validateOnBlur: js.UndefOr[Boolean] = js.undefined
+  
+  var validationSummary: js.UndefOr[Boolean | ValidationSummary] = js.undefined
 }
-
 object ValidatorOptions {
-  @scala.inline
-  def apply(
-    errorTemplate: String = null,
-    messages: js.Any = null,
-    name: String = null,
-    rules: js.Any = null,
-    validate: /* e */ ValidatorValidateEvent => Callback = null,
-    validateInput: /* e */ ValidatorValidateInputEvent => Callback = null,
-    validateOnBlur: js.UndefOr[Boolean] = js.undefined
-  ): ValidatorOptions = {
+  
+  inline def apply(): ValidatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (errorTemplate != null) __obj.updateDynamic("errorTemplate")(errorTemplate.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ValidatorValidateEvent) => validate(t0).runNow()))
-    if (validateInput != null) __obj.updateDynamic("validateInput")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ValidatorValidateInputEvent) => validateInput(t0).runNow()))
-    if (!js.isUndefined(validateOnBlur)) __obj.updateDynamic("validateOnBlur")(validateOnBlur.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorOptions]
   }
+  
+  extension [Self <: ValidatorOptions](x: Self) {
+    
+    inline def setErrorTemplate(value: String): Self = StObject.set(x, "errorTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setErrorTemplateUndefined: Self = StObject.set(x, "errorTemplate", js.undefined)
+    
+    inline def setMessages(value: Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRules(value: Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    
+    inline def setValidate(value: /* e */ ValidatorValidateEvent => Callback): Self = StObject.set(x, "validate", js.Any.fromFunction1((t0: /* e */ ValidatorValidateEvent) => value(t0).runNow()))
+    
+    inline def setValidateInput(value: /* e */ ValidatorValidateInputEvent => Callback): Self = StObject.set(x, "validateInput", js.Any.fromFunction1((t0: /* e */ ValidatorValidateInputEvent) => value(t0).runNow()))
+    
+    inline def setValidateInputUndefined: Self = StObject.set(x, "validateInput", js.undefined)
+    
+    inline def setValidateOnBlur(value: Boolean): Self = StObject.set(x, "validateOnBlur", value.asInstanceOf[js.Any])
+    
+    inline def setValidateOnBlurUndefined: Self = StObject.set(x, "validateOnBlur", js.undefined)
+    
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    
+    inline def setValidationSummary(value: Boolean | ValidationSummary): Self = StObject.set(x, "validationSummary", value.asInstanceOf[js.Any])
+    
+    inline def setValidationSummaryUndefined: Self = StObject.set(x, "validationSummary", js.undefined)
+  }
 }
-

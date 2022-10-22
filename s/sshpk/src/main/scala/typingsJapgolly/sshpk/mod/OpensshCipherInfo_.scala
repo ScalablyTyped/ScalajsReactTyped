@@ -1,14 +1,16 @@
 package typingsJapgolly.sshpk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sshpk", "OpensshCipherInfo")
+@JSImport("sshpk", "OpenSshCipherInfo")
 @js.native
-class OpensshCipherInfo_ () extends js.Object {
+open class OpenSshCipherInfo_ () extends StObject {
+  
   var blockSize: Double = js.native
+  
   var keySize: Double = js.native
-  var opensslName: String = js.native
+  
+  var opensslName: OpenSshCipherName = js.native
 }
-

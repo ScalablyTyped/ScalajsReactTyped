@@ -1,16 +1,15 @@
 package typingsJapgolly.tensorflowTfjsNode.mod
 
-import typingsJapgolly.tensorflowTfjsCore.tensorMod.Tensor
+import typingsJapgolly.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-node", "gather_util")
-@js.native
-object gatherUtil extends js.Object {
-  def prepareAndValidate(
-    tensor: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
-    indices: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank]
-  ): js.Tuple4[js.Array[Double], Double, Double, js.Array[Double]] = js.native
+object gatherUtil {
+  
+  @JSImport("@tensorflow/tfjs-node", "gather_util")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def prepareAndValidate(tensor: TensorInfo, indices: TensorInfo): js.Tuple4[js.Array[Double], Double, Double, js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareAndValidate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Tuple4[js.Array[Double], Double, Double, js.Array[Double]]]
 }
-

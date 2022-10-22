@@ -1,37 +1,24 @@
 package typingsJapgolly.three.mod
 
+import typingsJapgolly.three.srcUtilsMod.ColorRepresentation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "HemisphereLight")
 @js.native
-class HemisphereLight ()
-  extends typingsJapgolly.three.hemisphereLightMod.HemisphereLight {
-  def this(skyColor: String) = this()
-  def this(skyColor: Double) = this()
-  def this(skyColor: typingsJapgolly.three.colorMod.Color) = this()
-  def this(skyColor: String, groundColor: String) = this()
-  def this(skyColor: String, groundColor: Double) = this()
-  def this(skyColor: String, groundColor: typingsJapgolly.three.colorMod.Color) = this()
-  def this(skyColor: Double, groundColor: String) = this()
-  def this(skyColor: Double, groundColor: Double) = this()
-  def this(skyColor: Double, groundColor: typingsJapgolly.three.colorMod.Color) = this()
-  def this(skyColor: typingsJapgolly.three.colorMod.Color, groundColor: String) = this()
-  def this(skyColor: typingsJapgolly.three.colorMod.Color, groundColor: Double) = this()
-  def this(skyColor: typingsJapgolly.three.colorMod.Color, groundColor: typingsJapgolly.three.colorMod.Color) = this()
-  def this(skyColor: String, groundColor: String, intensity: Double) = this()
-  def this(skyColor: String, groundColor: Double, intensity: Double) = this()
-  def this(skyColor: String, groundColor: typingsJapgolly.three.colorMod.Color, intensity: Double) = this()
-  def this(skyColor: Double, groundColor: String, intensity: Double) = this()
-  def this(skyColor: Double, groundColor: Double, intensity: Double) = this()
-  def this(skyColor: Double, groundColor: typingsJapgolly.three.colorMod.Color, intensity: Double) = this()
-  def this(skyColor: typingsJapgolly.three.colorMod.Color, groundColor: String, intensity: Double) = this()
-  def this(skyColor: typingsJapgolly.three.colorMod.Color, groundColor: Double, intensity: Double) = this()
-  def this(
-    skyColor: typingsJapgolly.three.colorMod.Color,
-    groundColor: typingsJapgolly.three.colorMod.Color,
-    intensity: Double
-  ) = this()
+/**
+  * @param skyColor
+  * @param groundColor
+  * @param [intensity=1]
+  */
+open class HemisphereLight ()
+  extends typingsJapgolly.three.srcThreeMod.HemisphereLight {
+  def this(skyColor: ColorRepresentation) = this()
+  def this(skyColor: Unit, groundColor: ColorRepresentation) = this()
+  def this(skyColor: ColorRepresentation, groundColor: ColorRepresentation) = this()
+  def this(skyColor: Unit, groundColor: Unit, intensity: Double) = this()
+  def this(skyColor: Unit, groundColor: ColorRepresentation, intensity: Double) = this()
+  def this(skyColor: ColorRepresentation, groundColor: Unit, intensity: Double) = this()
+  def this(skyColor: ColorRepresentation, groundColor: ColorRepresentation, intensity: Double) = this()
 }
-

@@ -3,31 +3,38 @@ package typingsJapgolly.jqueryDeferred
 import typingsJapgolly.jqueryDeferred.libMod.JQueryCallback
 import typingsJapgolly.jqueryDeferred.libMod.JQueryDeferred
 import typingsJapgolly.jqueryDeferred.libMod.JQueryPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jquery-deferred", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def Callbacks(flags: js.Any): JQueryCallback = js.native
-    def Deferred(): JQueryDeferred = js.native
-    def Deferred(beforeStart: js.Function1[/* deferred */ JQueryDeferred, _]): JQueryDeferred = js.native
-    def each(
-      collection: js.Any,
-      callback: js.Function2[/* indexInArray */ js.Any, /* valueOfElement */ js.Any, _]
-    ): js.Any = js.native
-    def extend(deep: Boolean, target: js.Any, objs: js.Any*): js.Object = js.native
-    def extend(target: js.Any, objs: js.Any*): js.Object = js.native
-    def isArray(obj: js.Any): Boolean = js.native
-    def isFunction(obj: js.Any): Boolean = js.native
-    def isPlainObject(obj: js.Any): Boolean = js.native
-    def noop(): js.Any = js.native
-    def `type`(obj: js.Any): String = js.native
-    def when(deferreds: js.Any*): JQueryPromise = js.native
-  }
+object mod {
   
+  object default {
+    
+    @JSImport("jquery-deferred", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def Callbacks(flags: Any): JQueryCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("Callbacks")(flags.asInstanceOf[js.Any]).asInstanceOf[JQueryCallback]
+    
+    inline def Deferred(): JQueryDeferred = ^.asInstanceOf[js.Dynamic].applyDynamic("Deferred")().asInstanceOf[JQueryDeferred]
+    inline def Deferred(beforeStart: js.Function1[/* deferred */ JQueryDeferred, Any]): JQueryDeferred = ^.asInstanceOf[js.Dynamic].applyDynamic("Deferred")(beforeStart.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred]
+    
+    inline def each(collection: Any, callback: js.Function2[/* indexInArray */ Any, /* valueOfElement */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(collection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+    
+    inline def extend(deep: Boolean, target: Any, objs: Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")((scala.List(deep.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).`++`(objs.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
+    inline def extend(target: Any, objs: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(target.asInstanceOf[js.Any]).`++`(objs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+    
+    inline def isArray(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def isFunction(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def isPlainObject(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def noop(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Any]
+    
+    inline def `type`(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def when(deferreds: Any*): JQueryPromise = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(deferreds.asInstanceOf[Seq[js.Any]]*).asInstanceOf[JQueryPromise]
+  }
 }
-

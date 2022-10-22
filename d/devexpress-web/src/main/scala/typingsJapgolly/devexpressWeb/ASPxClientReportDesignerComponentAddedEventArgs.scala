@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientReportDesigner.ComponentAdded event.
   */
-@JSGlobal("ASPxClientReportDesignerComponentAddedEventArgs")
-@js.native
-class ASPxClientReportDesignerComponentAddedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientReportDesignerComponentAddedEventArgs class with the specified settings.
-    * @param model An object that specifies the model of a component that has been added to a report. This value is assigned to the ASPxClientReportDesignerComponentAddedEventArgs.Model property.
-    * @param parent An object that specifies the parent of a component that has been added to a report. This value is assigned to the ASPxClientReportDesignerComponentAddedEventArgs.Parent property.
-    */
-  def this(model: js.Any, parent: js.Any) = this()
+trait ASPxClientReportDesignerComponentAddedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the model of a component that has been added to a report.
     */
-  var Model: js.Any = js.native
+  var Model: Any
+  
   /**
     * Gets the parent of a component that has been added to a report.
     */
-  var Parent: js.Any = js.native
+  var Parent: Any
 }
-
+object ASPxClientReportDesignerComponentAddedEventArgs {
+  
+  inline def apply(Model: Any, Parent: Any): ASPxClientReportDesignerComponentAddedEventArgs = {
+    val __obj = js.Dynamic.literal(Model = Model.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientReportDesignerComponentAddedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientReportDesignerComponentAddedEventArgs](x: Self) {
+    
+    inline def setModel(value: Any): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+  }
+}

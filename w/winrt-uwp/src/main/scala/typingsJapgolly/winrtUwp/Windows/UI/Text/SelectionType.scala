@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SelectionType extends js.Object
-
+sealed trait SelectionType extends StObject
 /** Specifies the type of a selection. */
 @JSGlobal("Windows.UI.Text.SelectionType")
 @js.native
-object SelectionType extends js.Object {
+object SelectionType extends StObject {
+  
   /** An image (see ITextRange.InsertImage ). */
   @js.native
-  sealed trait inlineShape extends SelectionType
+  sealed trait inlineShape
+    extends StObject
+       with SelectionType
   
   /** An insertion point. */
   @js.native
-  sealed trait insertionPoint extends SelectionType
+  sealed trait insertionPoint
+    extends StObject
+       with SelectionType
   
   /** No selection and no insertion point. */
   @js.native
-  sealed trait none extends SelectionType
+  sealed trait none
+    extends StObject
+       with SelectionType
   
   /** A single nondegenerate range. */
   @js.native
-  sealed trait normal extends SelectionType
+  sealed trait normal
+    extends StObject
+       with SelectionType
   
   /** A shape. */
   @js.native
-  sealed trait shape extends SelectionType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SelectionType with Double] = js.native
-  /* 3 */ @js.native
-  object inlineShape extends TopLevel[inlineShape with Double]
-  
-  /* 1 */ @js.native
-  object insertionPoint extends TopLevel[insertionPoint with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object normal extends TopLevel[normal with Double]
-  
-  /* 4 */ @js.native
-  object shape extends TopLevel[shape with Double]
-  
+  sealed trait shape
+    extends StObject
+       with SelectionType
 }
-

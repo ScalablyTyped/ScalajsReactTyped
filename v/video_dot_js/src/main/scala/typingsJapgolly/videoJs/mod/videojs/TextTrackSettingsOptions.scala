@@ -1,35 +1,26 @@
 package typingsJapgolly.videoJs.mod.videojs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextTrackSettingsOptions extends ModalDialogOptions {
+trait TextTrackSettingsOptions
+  extends StObject
+     with ModalDialogOptions {
+  
   var persistTextTrackSettings: js.UndefOr[Boolean] = js.undefined
 }
-
 object TextTrackSettingsOptions {
-  @scala.inline
-  def apply(
-    children: js.Array[Child] = null,
-    content: js.Any = null,
-    description: String = null,
-    fillAlways: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    persistTextTrackSettings: js.UndefOr[Boolean] = js.undefined,
-    temporary: js.UndefOr[Boolean] = js.undefined,
-    uncloseable: js.UndefOr[Boolean] = js.undefined
-  ): TextTrackSettingsOptions = {
+  
+  inline def apply(): TextTrackSettingsOptions = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillAlways)) __obj.updateDynamic("fillAlways")(fillAlways.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistTextTrackSettings)) __obj.updateDynamic("persistTextTrackSettings")(persistTextTrackSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary.asInstanceOf[js.Any])
-    if (!js.isUndefined(uncloseable)) __obj.updateDynamic("uncloseable")(uncloseable.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextTrackSettingsOptions]
   }
+  
+  extension [Self <: TextTrackSettingsOptions](x: Self) {
+    
+    inline def setPersistTextTrackSettings(value: Boolean): Self = StObject.set(x, "persistTextTrackSettings", value.asInstanceOf[js.Any])
+    
+    inline def setPersistTextTrackSettingsUndefined: Self = StObject.set(x, "persistTextTrackSettings", js.undefined)
+  }
 }
-

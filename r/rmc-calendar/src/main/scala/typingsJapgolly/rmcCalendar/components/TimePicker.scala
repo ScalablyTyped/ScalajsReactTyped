@@ -1,57 +1,48 @@
 package typingsJapgolly.rmcCalendar.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.rmcCalendar.dataTypesMod.Models.Locale
-import typingsJapgolly.rmcCalendar.timePickerMod.PropsType
-import typingsJapgolly.rmcCalendar.timePickerMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.rmcCalendar.libDateDataTypesMod.Models.Locale
+import typingsJapgolly.rmcCalendar.libTimePickerMod.PropsType
+import typingsJapgolly.rmcCalendar.libTimePickerMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TimePicker {
-  def apply(
-    locale: Locale,
-    clientHeight: Int | Double = null,
-    defaultValue: js.Date = null,
-    maxDate: js.Date = null,
-    minDate: js.Date = null,
-    onValueChange: /* time */ js.Date => Callback = null,
-    pickerPrefixCls: String = null,
-    prefixCls: String = null,
-    title: String = null,
-    value: js.Date = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PropsType, default, Unit, PropsType] = {
-    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
   
-      if (clientHeight != null) __obj.updateDynamic("clientHeight")(clientHeight.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction1((t0: /* time */ js.Date) => onValueChange(t0).runNow()))
-    if (pickerPrefixCls != null) __obj.updateDynamic("pickerPrefixCls")(pickerPrefixCls.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rmcCalendar.timePickerMod.PropsType, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rmcCalendar.timePickerMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rmcCalendar.timePickerMod.PropsType])(children: _*)
+  inline def apply(locale: Locale): Builder = {
+    val __props = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[PropsType]))
   }
+  
   @JSImport("rmc-calendar/lib/TimePicker", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def clientHeight(value: Double): this.type = set("clientHeight", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: js.Date): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def maxDate(value: js.Date): this.type = set("maxDate", value.asInstanceOf[js.Any])
+    
+    inline def minDate(value: js.Date): this.type = set("minDate", value.asInstanceOf[js.Any])
+    
+    inline def onValueChange(value: /* time */ js.Date => Callback): this.type = set("onValueChange", js.Any.fromFunction1((t0: /* time */ js.Date) => value(t0).runNow()))
+    
+    inline def pickerPrefixCls(value: String): this.type = set("pickerPrefixCls", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def value(value: js.Date): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: PropsType): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

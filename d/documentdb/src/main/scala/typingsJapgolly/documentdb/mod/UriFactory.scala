@@ -1,12 +1,15 @@
 package typingsJapgolly.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("documentdb", "UriFactory")
-@js.native
-object UriFactory extends js.Object {
+object UriFactory {
+  
+  @JSImport("documentdb", "UriFactory")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @summary Given a database, collection and conflict id, this creates a conflict link.
     * @param databaseId        -The database Id
@@ -17,7 +20,8 @@ object UriFactory extends js.Object {
     *                                    {1} being collectionId and {2} being the conflictId
     * @description Would be used when creating a Conflict in Azure DocumentDB database service.
     */
-  def createAttachmentUri(databaseId: String, collectionId: String, documentId: String, attachmentId: String): String = js.native
+  inline def createAttachmentUri(databaseId: String, collectionId: String, documentId: String, attachmentId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createAttachmentUri")(databaseId.asInstanceOf[js.Any], collectionId.asInstanceOf[js.Any], documentId.asInstanceOf[js.Any], attachmentId.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * @summary
     * @param databaseId        -The database Id
@@ -27,14 +31,16 @@ object UriFactory extends js.Object {
     *                                    with {0} being a Uri escaped version of the databaseId, {1} being collectionId and {2} being the conflictId
     * @description Would be used when creating a Conflict in Azure DocumentDB database service.
     */
-  def createConflictUri(databaseId: String, collectionId: String, conflictId: String): String = js.native
+  inline def createConflictUri(databaseId: String, collectionId: String, conflictId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createConflictUri")(databaseId.asInstanceOf[js.Any], collectionId.asInstanceOf[js.Any], conflictId.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * Given a database id, this creates a database link.
     * @param databaseId -The database id
     * @returns          -A database link in the format of dbs/{0} with {0} being a Uri escaped version of the databaseId
     * @description Would be used when creating or deleting a DocumentCollection or a User in Azure DocumentDB database service
     */
-  def createDatabaseUri(databaseId: String): String = js.native
+  inline def createDatabaseUri(databaseId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createDatabaseUri")(databaseId.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   /**
     * Given a database and collection id, this creates a collection link.
     * @param databaseId        -The database id
@@ -43,7 +49,8 @@ object UriFactory extends js.Object {
     * @description Would be used when updating or deleting a DocumentCollection, creating a Document, a StoredProcedure, a
     *              Trigger, a UserDefinedFunction, or when executing a query with CreateDocumentQuery in Azure DocumentDB database service.
     */
-  def createDocumentCollectionUri(databaseId: String, collectionId: String): String = js.native
+  inline def createDocumentCollectionUri(databaseId: String, collectionId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createDocumentCollectionUri")(databaseId.asInstanceOf[js.Any], collectionId.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * Given a database and collection id, this creates a collection link.
     * @param databaseId        -The database id
@@ -53,14 +60,16 @@ object UriFactory extends js.Object {
     *                                    being a Uri escaped version of the databaseId, {1} being collectionId and {2} being the documentId
     * @description Would be used when creating an Attachment, or when replacing or deleting a Document in Azure DocumentDB database service
     */
-  def createDocumentUri(databaseId: String, collectionId: String, documentId: String): String = js.native
+  inline def createDocumentUri(databaseId: String, collectionId: String, documentId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createDocumentUri")(databaseId.asInstanceOf[js.Any], collectionId.asInstanceOf[js.Any], documentId.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * @summary Given a database and collection, this creates a partition key ranges link in the Azure DocumentDB database service.
     * @param databaseId        -The database Id
     * @param collectionId      -The collection Id
     * @returns                 -A partition key ranges link in the format of dbs/{0}/colls/{1}/pkranges with {0} being a Uri escaped version of the databaseId and {1} being collectionId
     */
-  def createPartitionKeyRangesUri(databaseId: String, collectionId: String): String = js.native
+  inline def createPartitionKeyRangesUri(databaseId: String, collectionId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createPartitionKeyRangesUri")(databaseId.asInstanceOf[js.Any], collectionId.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * Given a database, collection and document id, this creates a document link.
     * @param databaseId    -The database Id
@@ -69,7 +78,8 @@ object UriFactory extends js.Object {
     * @returns A permission link in the format of dbs/{0}/users/{1}/permissions/{2} with {0} being a Uri escaped version of the databaseId, {1} being userId and {2} being permissionId
     * @description Would be used when replacing or deleting a Permission in Azure DocumentDB database service.
     */
-  def createPermissionUri(databaseId: String, userId: String, permissionId: String): String = js.native
+  inline def createPermissionUri(databaseId: String, userId: String, permissionId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createPermissionUri")(databaseId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], permissionId.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * Given a database, collection and stored proc id, this creates a stored proc link.
     * @param databaseId        -The database Id
@@ -80,7 +90,8 @@ object UriFactory extends js.Object {
     *                                    {1} being collectionId and {2} being the storedProcedureId
     * @description Would be used when replacing, executing, or deleting a StoredProcedure in Azure DocumentDB database service.
     */
-  def createStoredProcedureUri(databaseId: String, collectionId: String, storedProcedureId: String): String = js.native
+  inline def createStoredProcedureUri(databaseId: String, collectionId: String, storedProcedureId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createStoredProcedureUri")(databaseId.asInstanceOf[js.Any], collectionId.asInstanceOf[js.Any], storedProcedureId.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * @summary Given a database, collection and trigger id, this creates a trigger link.
     * @param databaseId        -The database Id
@@ -91,7 +102,8 @@ object UriFactory extends js.Object {
     *                                    {1} being collectionId and {2} being the triggerId
     * @description Would be used when replacing, executing, or deleting a Trigger in Azure DocumentDB database service
     */
-  def createTriggerUri(databaseId: String, collectionId: String, triggerId: String): String = js.native
+  inline def createTriggerUri(databaseId: String, collectionId: String, triggerId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createTriggerUri")(databaseId.asInstanceOf[js.Any], collectionId.asInstanceOf[js.Any], triggerId.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * @summary Given a database, collection and udf id, this creates a udf link.
     * @param databaseId        -The database Id
@@ -100,6 +112,5 @@ object UriFactory extends js.Object {
     * @returns                 -A udf link in the format of dbs/{0}/colls/{1}/udfs/{2} with {0} being a Uri escaped version of the databaseId, {1} being collectionId and {2} being the udfId
     * @description Would be used when replacing, executing, or deleting a UserDefinedFunction in Azure DocumentDB database service
     */
-  def createUserDefinedFunctionUri(databaseId: String, collectionId: String, udfId: String): String = js.native
+  inline def createUserDefinedFunctionUri(databaseId: String, collectionId: String, udfId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createUserDefinedFunctionUri")(databaseId.asInstanceOf[js.Any], collectionId.asInstanceOf[js.Any], udfId.asInstanceOf[js.Any])).asInstanceOf[String]
 }
-

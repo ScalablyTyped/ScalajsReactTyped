@@ -1,20 +1,27 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AndroidMobileAppIdentifier extends MobileAppIdentifier {
+trait AndroidMobileAppIdentifier
+  extends StObject
+     with MobileAppIdentifier {
+  
   // The identifier for an app, as specified in the play store.
   var packageId: js.UndefOr[String] = js.undefined
 }
-
 object AndroidMobileAppIdentifier {
-  @scala.inline
-  def apply(packageId: String = null): AndroidMobileAppIdentifier = {
+  
+  inline def apply(): AndroidMobileAppIdentifier = {
     val __obj = js.Dynamic.literal()
-    if (packageId != null) __obj.updateDynamic("packageId")(packageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidMobileAppIdentifier]
   }
+  
+  extension [Self <: AndroidMobileAppIdentifier](x: Self) {
+    
+    inline def setPackageId(value: String): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
+    
+    inline def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
+  }
 }
-

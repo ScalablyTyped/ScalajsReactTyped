@@ -1,21 +1,25 @@
 package typingsJapgolly.reactTable.mod
 
-import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.mod.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TableKeyedProps extends TableCommonProps {
+trait TableKeyedProps
+  extends StObject
+     with TableCommonProps {
+  
   var key: Key
 }
-
 object TableKeyedProps {
-  @scala.inline
-  def apply(key: Key, style: CSSProperties = null): TableKeyedProps = {
+  
+  inline def apply(key: Key): TableKeyedProps = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableKeyedProps]
   }
+  
+  extension [Self <: TableKeyedProps](x: Self) {
+    
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+  }
 }
-

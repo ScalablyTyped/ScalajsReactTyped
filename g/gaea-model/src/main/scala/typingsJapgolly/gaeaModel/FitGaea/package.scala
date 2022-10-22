@@ -1,10 +1,11 @@
-package typingsJapgolly.gaeaModel
+package typingsJapgolly.gaeaModel.FitGaea
 
+import japgolly.scalajs.react.facade.React.ComponentClassP
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object FitGaea {
-  type Component = japgolly.scalajs.react.raw.React.ComponentClassP[typingsJapgolly.gaeaModel.FitGaea.ComponentProps with js.Object]
-  type ComponentPropsOptionValue = scala.Double | java.lang.String | scala.Boolean | js.Array[typingsJapgolly.gaeaModel.FitGaea.ComponentPropsOptionsArrayValue] | js.Any
-}
+
+type Component = ComponentClassP[ComponentProps & js.Object]
+
+type ComponentPropsOptionValue = Double | String | Boolean | js.Array[ComponentPropsOptionsArrayValue] | Any

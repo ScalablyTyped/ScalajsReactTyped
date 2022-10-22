@@ -1,58 +1,110 @@
 package typingsJapgolly.sisteransi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sisteransi", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("sisteransi", "beep")
+  @js.native
   val beep: String = js.native
+  
+  @JSImport("sisteransi", "clear")
+  @js.native
   val clear: String = js.native
-  @js.native
-  object cursor extends js.Object {
+  
+  object cursor {
+    
+    @JSImport("sisteransi", "cursor")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def backward(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("backward")().asInstanceOf[String]
+    inline def backward(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("backward")(count.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def down(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")().asInstanceOf[String]
+    inline def down(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")(count.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def forward(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forward")().asInstanceOf[String]
+    inline def forward(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forward")(count.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @JSImport("sisteransi", "cursor.hide")
+    @js.native
     val hide: String = js.native
+    
+    @JSImport("sisteransi", "cursor.left")
+    @js.native
     val left: String = js.native
+    
+    inline def move(x: Double, y: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def nextLine(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nextLine")().asInstanceOf[String]
+    inline def nextLine(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nextLine")(count.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def prevLine(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prevLine")().asInstanceOf[String]
+    inline def prevLine(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prevLine")(count.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @JSImport("sisteransi", "cursor.restore")
+    @js.native
     val restore: String = js.native
+    
+    @JSImport("sisteransi", "cursor.save")
+    @js.native
     val save: String = js.native
+    
+    @JSImport("sisteransi", "cursor.show")
+    @js.native
     val show: String = js.native
-    def backward(): String = js.native
-    def backward(count: Double): String = js.native
-    def down(): String = js.native
-    def down(count: Double): String = js.native
-    def forward(): String = js.native
-    def forward(count: Double): String = js.native
-    def move(x: Double, y: Double): String = js.native
-    def nextLine(): String = js.native
-    def nextLine(count: Double): String = js.native
-    def prevLine(): String = js.native
-    def prevLine(count: Double): String = js.native
-    def to(x: Double): String = js.native
-    def to(x: Double, y: Double): String = js.native
-    def up(): String = js.native
-    def up(count: Double): String = js.native
+    
+    inline def to(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def to(x: Double, y: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("to")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def up(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")().asInstanceOf[String]
+    inline def up(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")(count.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @js.native
-  object erase extends js.Object {
+  object erase {
+    
+    @JSImport("sisteransi", "erase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def down(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")().asInstanceOf[String]
+    inline def down(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")(count.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @JSImport("sisteransi", "erase.line")
+    @js.native
     val line: String = js.native
+    
+    @JSImport("sisteransi", "erase.lineEnd")
+    @js.native
     val lineEnd: String = js.native
+    
+    @JSImport("sisteransi", "erase.lineStart")
+    @js.native
     val lineStart: String = js.native
+    
+    inline def lines(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lines")(count.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @JSImport("sisteransi", "erase.screen")
+    @js.native
     val screen: String = js.native
-    def down(): String = js.native
-    def down(count: Double): String = js.native
-    def lines(count: Double): String = js.native
-    def up(): String = js.native
-    def up(count: Double): String = js.native
+    
+    inline def up(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")().asInstanceOf[String]
+    inline def up(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")(count.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @js.native
-  object scroll extends js.Object {
-    def down(): String = js.native
-    def down(count: Double): String = js.native
-    def up(): String = js.native
-    def up(count: Double): String = js.native
+  object scroll {
+    
+    @JSImport("sisteransi", "scroll")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def down(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")().asInstanceOf[String]
+    inline def down(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("down")(count.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def up(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")().asInstanceOf[String]
+    inline def up(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("up")(count.asInstanceOf[js.Any]).asInstanceOf[String]
   }
-  
 }
-

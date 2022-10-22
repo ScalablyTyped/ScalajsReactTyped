@@ -1,33 +1,45 @@
 package typingsJapgolly.reactBootstrapTypeahead.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TokenContext extends js.Object {
+trait TokenContext extends StObject {
+  
   var active: Boolean
-  def onBlur(e: js.Any): Unit
-  def onClick(e: js.Any): Unit
-  def onFocus(e: js.Any): Unit
-  def onKeyDown(e: js.Any): Unit
+  
+  def onBlur(e: Any): Unit
+  
+  def onClick(e: Any): Unit
+  
+  def onFocus(e: Any): Unit
+  
+  def onKeyDown(e: Any): Unit
 }
-
 object TokenContext {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     active: Boolean,
-    onBlur: js.Any => Callback,
-    onClick: js.Any => Callback,
-    onFocus: js.Any => Callback,
-    onKeyDown: js.Any => Callback
+    onBlur: Any => Callback,
+    onClick: Any => Callback,
+    onFocus: Any => Callback,
+    onKeyDown: Any => Callback
   ): TokenContext = {
-    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
-    __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: js.Any) => onBlur(t0).runNow()))
-    __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: js.Any) => onClick(t0).runNow()))
-    __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: js.Any) => onFocus(t0).runNow()))
-    __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: js.Any) => onKeyDown(t0).runNow()))
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1((t0: Any) => onBlur(t0).runNow()), onClick = js.Any.fromFunction1((t0: Any) => onClick(t0).runNow()), onFocus = js.Any.fromFunction1((t0: Any) => onFocus(t0).runNow()), onKeyDown = js.Any.fromFunction1((t0: Any) => onKeyDown(t0).runNow()))
     __obj.asInstanceOf[TokenContext]
   }
+  
+  extension [Self <: TokenContext](x: Self) {
+    
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setOnBlur(value: Any => Callback): Self = StObject.set(x, "onBlur", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+    
+    inline def setOnClick(value: Any => Callback): Self = StObject.set(x, "onClick", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+    
+    inline def setOnFocus(value: Any => Callback): Self = StObject.set(x, "onFocus", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+    
+    inline def setOnKeyDown(value: Any => Callback): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+  }
 }
-

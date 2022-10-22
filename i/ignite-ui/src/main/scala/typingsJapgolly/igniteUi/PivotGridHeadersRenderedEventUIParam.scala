@@ -1,33 +1,46 @@
 package typingsJapgolly.igniteUi
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PivotGridHeadersRenderedEventUIParam extends js.Object {
+trait PivotGridHeadersRenderedEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the igGrid widget, which holds the headers.
-  	 */
-  var grid: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the igGrid widget, which holds the headers.
+    */
+  var grid: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the pivot grid.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the pivot grid.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the headers table DOM element.
-  	 */
+    * Gets a reference to the headers table DOM element.
+    */
   var table: js.UndefOr[Element] = js.undefined
 }
-
 object PivotGridHeadersRenderedEventUIParam {
-  @scala.inline
-  def apply(grid: js.Any = null, owner: js.Any = null, table: Element = null): PivotGridHeadersRenderedEventUIParam = {
+  
+  inline def apply(): PivotGridHeadersRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridHeadersRenderedEventUIParam]
   }
+  
+  extension [Self <: PivotGridHeadersRenderedEventUIParam](x: Self) {
+    
+    inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setTable(value: Element): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+  }
 }
-

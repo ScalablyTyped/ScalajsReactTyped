@@ -1,21 +1,30 @@
 package typingsJapgolly.ssh2Streams.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadFileOptions extends js.Object {
+trait ReadFileOptions extends StObject {
+  
   var encoding: js.UndefOr[String] = js.undefined
+  
   var flag: js.UndefOr[String] = js.undefined
 }
-
 object ReadFileOptions {
-  @scala.inline
-  def apply(encoding: String = null, flag: String = null): ReadFileOptions = {
+  
+  inline def apply(): ReadFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadFileOptions]
   }
+  
+  extension [Self <: ReadFileOptions](x: Self) {
+    
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    
+    inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+  }
 }
-

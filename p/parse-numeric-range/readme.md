@@ -10,10 +10,10 @@ Takes a string, such as "1,2,3-10,5-8" and turns it into an array of numbers
 | ------------------ | :-------------: |
 | Full name          | parse-numeric-range |
 | Keywords           | parse, numbers, ranges, utility, arrays |
-| # releases         | 0 |
-| # dependents       | 36 |
-| # downloads        | 2087722 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 769237.0 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/euank/node-parse-numeric-range)

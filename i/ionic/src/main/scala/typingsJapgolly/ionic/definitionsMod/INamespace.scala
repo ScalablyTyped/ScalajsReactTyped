@@ -1,14 +1,16 @@
 package typingsJapgolly.ionic.definitionsMod
 
 import typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataInput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait INamespace
-  extends typingsJapgolly.ionicCliFramework.definitionsMod.INamespace[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
+  extends StObject
+     with typingsJapgolly.ionicCliFramework.definitionsMod.INamespace[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
+  
   var env: IonicEnvironment = js.native
+  
   var project: js.UndefOr[IProject] = js.native
 }
-

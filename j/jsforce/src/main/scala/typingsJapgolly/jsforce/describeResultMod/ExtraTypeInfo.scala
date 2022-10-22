@@ -1,8 +1,8 @@
 package typingsJapgolly.jsforce.describeResultMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.jsforce.jsforceStrings.imageurl
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.jsforce.jsforceStrings.externallookup
   - typingsJapgolly.jsforce.jsforceStrings.indirectlookup
 */
-trait ExtraTypeInfo extends js.Object
-
+trait ExtraTypeInfo extends StObject
 object ExtraTypeInfo {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def externallookup: typingsJapgolly.jsforce.jsforceStrings.externallookup = this.cast("externallookup")
-  @scala.inline
-  def imageurl: typingsJapgolly.jsforce.jsforceStrings.imageurl = this.cast("imageurl")
-  @scala.inline
-  def indirectlookup: typingsJapgolly.jsforce.jsforceStrings.indirectlookup = this.cast("indirectlookup")
-  @scala.inline
-  def personname: typingsJapgolly.jsforce.jsforceStrings.personname = this.cast("personname")
-  @scala.inline
-  def plaintextarea: typingsJapgolly.jsforce.jsforceStrings.plaintextarea = this.cast("plaintextarea")
-  @scala.inline
-  def richtextarea: typingsJapgolly.jsforce.jsforceStrings.richtextarea = this.cast("richtextarea")
-  @scala.inline
-  def switchablepersonname: typingsJapgolly.jsforce.jsforceStrings.switchablepersonname = this.cast("switchablepersonname")
+  
+  inline def externallookup: typingsJapgolly.jsforce.jsforceStrings.externallookup = "externallookup".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.externallookup]
+  
+  inline def imageurl: typingsJapgolly.jsforce.jsforceStrings.imageurl = "imageurl".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.imageurl]
+  
+  inline def indirectlookup: typingsJapgolly.jsforce.jsforceStrings.indirectlookup = "indirectlookup".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.indirectlookup]
+  
+  inline def personname: typingsJapgolly.jsforce.jsforceStrings.personname = "personname".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.personname]
+  
+  inline def plaintextarea: typingsJapgolly.jsforce.jsforceStrings.plaintextarea = "plaintextarea".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.plaintextarea]
+  
+  inline def richtextarea: typingsJapgolly.jsforce.jsforceStrings.richtextarea = "richtextarea".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.richtextarea]
+  
+  inline def switchablepersonname: typingsJapgolly.jsforce.jsforceStrings.switchablepersonname = "switchablepersonname".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.switchablepersonname]
 }
-

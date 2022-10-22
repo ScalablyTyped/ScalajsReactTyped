@@ -1,31 +1,32 @@
 package typingsJapgolly.chartJs.mod
 
-import typingsJapgolly.moment.mod.Moment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartData extends js.Object {
-  var datasets: js.UndefOr[js.Array[ChartDataSets]] = js.undefined
-  var labels: js.UndefOr[
-    js.Array[
-      String | (js.Array[js.Date | Double | Moment | String]) | Double | js.Date | Moment
-    ]
-  ] = js.undefined
+trait ChartData[TType /* <: ChartType */, TData, TLabel] extends StObject {
+  
+  var datasets: js.Array[ChartDataset[TType, TData]]
+  
+  var labels: js.UndefOr[js.Array[TLabel]] = js.undefined
 }
-
 object ChartData {
-  @scala.inline
-  def apply(
-    datasets: js.Array[ChartDataSets] = null,
-    labels: js.Array[
-      String | (js.Array[js.Date | Double | Moment | String]) | Double | js.Date | Moment
-    ] = null
-  ): ChartData = {
-    val __obj = js.Dynamic.literal()
-    if (datasets != null) __obj.updateDynamic("datasets")(datasets.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ChartData]
+  
+  inline def apply[TType /* <: ChartType */, TData, TLabel](datasets: js.Array[ChartDataset[TType, TData]]): ChartData[TType, TData, TLabel] = {
+    val __obj = js.Dynamic.literal(datasets = datasets.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartData[TType, TData, TLabel]]
+  }
+  
+  extension [Self <: ChartData[?, ?, ?], TType /* <: ChartType */, TData, TLabel](x: Self & (ChartData[TType, TData, TLabel])) {
+    
+    inline def setDatasets(value: js.Array[ChartDataset[TType, TData]]): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
+    
+    inline def setDatasetsVarargs(value: (ChartDataset[TType, TData])*): Self = StObject.set(x, "datasets", js.Array(value*))
+    
+    inline def setLabels(value: js.Array[TLabel]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setLabelsVarargs(value: TLabel*): Self = StObject.set(x, "labels", js.Array(value*))
   }
 }
-

@@ -2,55 +2,95 @@ package typingsJapgolly.mapboxGl.mod
 
 import typingsJapgolly.mapboxGl.mapboxGlStrings.map
 import typingsJapgolly.mapboxGl.mapboxGlStrings.viewport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FillPaint extends js.Object {
+trait FillPaint
+  extends StObject
+     with AnyPaint {
+  
   var `fill-antialias`: js.UndefOr[Boolean | Expression] = js.undefined
+  
   var `fill-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
+  
   var `fill-color-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `fill-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `fill-opacity-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `fill-outline-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
+  
   var `fill-outline-color-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `fill-pattern`: js.UndefOr[String | Expression] = js.undefined
+  
   var `fill-pattern-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `fill-translate`: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var `fill-translate-anchor`: js.UndefOr[map | viewport] = js.undefined
+  
   var `fill-translate-transition`: js.UndefOr[Transition] = js.undefined
 }
-
 object FillPaint {
-  @scala.inline
-  def apply(
-    `fill-antialias`: Boolean | Expression = null,
-    `fill-color`: String | StyleFunction | Expression = null,
-    `fill-color-transition`: Transition = null,
-    `fill-opacity`: Double | StyleFunction | Expression = null,
-    `fill-opacity-transition`: Transition = null,
-    `fill-outline-color`: String | StyleFunction | Expression = null,
-    `fill-outline-color-transition`: Transition = null,
-    `fill-pattern`: String | Expression = null,
-    `fill-pattern-transition`: Transition = null,
-    `fill-translate`: js.Array[Double] = null,
-    `fill-translate-anchor`: map | viewport = null,
-    `fill-translate-transition`: Transition = null
-  ): FillPaint = {
+  
+  inline def apply(): FillPaint = {
     val __obj = js.Dynamic.literal()
-    if (`fill-antialias` != null) __obj.updateDynamic("fill-antialias")(`fill-antialias`.asInstanceOf[js.Any])
-    if (`fill-color` != null) __obj.updateDynamic("fill-color")(`fill-color`.asInstanceOf[js.Any])
-    if (`fill-color-transition` != null) __obj.updateDynamic("fill-color-transition")(`fill-color-transition`.asInstanceOf[js.Any])
-    if (`fill-opacity` != null) __obj.updateDynamic("fill-opacity")(`fill-opacity`.asInstanceOf[js.Any])
-    if (`fill-opacity-transition` != null) __obj.updateDynamic("fill-opacity-transition")(`fill-opacity-transition`.asInstanceOf[js.Any])
-    if (`fill-outline-color` != null) __obj.updateDynamic("fill-outline-color")(`fill-outline-color`.asInstanceOf[js.Any])
-    if (`fill-outline-color-transition` != null) __obj.updateDynamic("fill-outline-color-transition")(`fill-outline-color-transition`.asInstanceOf[js.Any])
-    if (`fill-pattern` != null) __obj.updateDynamic("fill-pattern")(`fill-pattern`.asInstanceOf[js.Any])
-    if (`fill-pattern-transition` != null) __obj.updateDynamic("fill-pattern-transition")(`fill-pattern-transition`.asInstanceOf[js.Any])
-    if (`fill-translate` != null) __obj.updateDynamic("fill-translate")(`fill-translate`.asInstanceOf[js.Any])
-    if (`fill-translate-anchor` != null) __obj.updateDynamic("fill-translate-anchor")(`fill-translate-anchor`.asInstanceOf[js.Any])
-    if (`fill-translate-transition` != null) __obj.updateDynamic("fill-translate-transition")(`fill-translate-transition`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillPaint]
   }
+  
+  extension [Self <: FillPaint](x: Self) {
+    
+    inline def `setFill-antialias`(value: Boolean | Expression): Self = StObject.set(x, "fill-antialias", value.asInstanceOf[js.Any])
+    
+    inline def `setFill-antialiasUndefined`: Self = StObject.set(x, "fill-antialias", js.undefined)
+    
+    inline def `setFill-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "fill-color", value.asInstanceOf[js.Any])
+    
+    inline def `setFill-color-transition`(value: Transition): Self = StObject.set(x, "fill-color-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setFill-color-transitionUndefined`: Self = StObject.set(x, "fill-color-transition", js.undefined)
+    
+    inline def `setFill-colorUndefined`: Self = StObject.set(x, "fill-color", js.undefined)
+    
+    inline def `setFill-opacity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "fill-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setFill-opacity-transition`(value: Transition): Self = StObject.set(x, "fill-opacity-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setFill-opacity-transitionUndefined`: Self = StObject.set(x, "fill-opacity-transition", js.undefined)
+    
+    inline def `setFill-opacityUndefined`: Self = StObject.set(x, "fill-opacity", js.undefined)
+    
+    inline def `setFill-outline-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "fill-outline-color", value.asInstanceOf[js.Any])
+    
+    inline def `setFill-outline-color-transition`(value: Transition): Self = StObject.set(x, "fill-outline-color-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setFill-outline-color-transitionUndefined`: Self = StObject.set(x, "fill-outline-color-transition", js.undefined)
+    
+    inline def `setFill-outline-colorUndefined`: Self = StObject.set(x, "fill-outline-color", js.undefined)
+    
+    inline def `setFill-pattern`(value: String | Expression): Self = StObject.set(x, "fill-pattern", value.asInstanceOf[js.Any])
+    
+    inline def `setFill-pattern-transition`(value: Transition): Self = StObject.set(x, "fill-pattern-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setFill-pattern-transitionUndefined`: Self = StObject.set(x, "fill-pattern-transition", js.undefined)
+    
+    inline def `setFill-patternUndefined`: Self = StObject.set(x, "fill-pattern", js.undefined)
+    
+    inline def `setFill-translate`(value: js.Array[Double]): Self = StObject.set(x, "fill-translate", value.asInstanceOf[js.Any])
+    
+    inline def `setFill-translate-anchor`(value: map | viewport): Self = StObject.set(x, "fill-translate-anchor", value.asInstanceOf[js.Any])
+    
+    inline def `setFill-translate-anchorUndefined`: Self = StObject.set(x, "fill-translate-anchor", js.undefined)
+    
+    inline def `setFill-translate-transition`(value: Transition): Self = StObject.set(x, "fill-translate-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setFill-translate-transitionUndefined`: Self = StObject.set(x, "fill-translate-transition", js.undefined)
+    
+    inline def `setFill-translateUndefined`: Self = StObject.set(x, "fill-translate", js.undefined)
+    
+    inline def `setFill-translateVarargs`(value: Double*): Self = StObject.set(x, "fill-translate", js.Array(value*))
+  }
 }
-

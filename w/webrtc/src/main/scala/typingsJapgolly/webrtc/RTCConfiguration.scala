@@ -1,47 +1,72 @@
 package typingsJapgolly.webrtc
 
-import org.scalajs.dom.experimental.webrtc.RTCBundlePolicy
-import org.scalajs.dom.experimental.webrtc.RTCIceTransportPolicy
+import org.scalajs.dom.RTCBundlePolicy
+import org.scalajs.dom.RTCIceTransportPolicy
 import typingsJapgolly.std.RTCRtcpMuxPolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcconfiguration
-trait RTCConfiguration extends js.Object {
-   // default = 'all'
+trait RTCConfiguration extends StObject {
+  
+  // default = 'all'
   var bundlePolicy: js.UndefOr[RTCBundlePolicy] = js.undefined
-   // default = null
+  
+  // default = null
   var certificates: js.UndefOr[js.Array[RTCCertificate]] = js.undefined
+  
   var iceCandidatePoolSize: js.UndefOr[Double] = js.undefined
+  
   var iceServers: js.UndefOr[js.Array[RTCIceServer]] = js.undefined
+  
   var iceTransportPolicy: js.UndefOr[RTCIceTransportPolicy] = js.undefined
-   // default = 'require'
+  
+  // default = 'require'
   var peerIdentity: js.UndefOr[String] = js.undefined
-   // default = 'balanced'
+  
+  // default = 'balanced'
   var rtcpMuxPolicy: js.UndefOr[RTCRtcpMuxPolicy] = js.undefined
 }
-
 object RTCConfiguration {
-  @scala.inline
-  def apply(
-    bundlePolicy: RTCBundlePolicy = null,
-    certificates: js.Array[RTCCertificate] = null,
-    iceCandidatePoolSize: Int | Double = null,
-    iceServers: js.Array[RTCIceServer] = null,
-    iceTransportPolicy: RTCIceTransportPolicy = null,
-    peerIdentity: String = null,
-    rtcpMuxPolicy: RTCRtcpMuxPolicy = null
-  ): RTCConfiguration = {
+  
+  inline def apply(): RTCConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (bundlePolicy != null) __obj.updateDynamic("bundlePolicy")(bundlePolicy.asInstanceOf[js.Any])
-    if (certificates != null) __obj.updateDynamic("certificates")(certificates.asInstanceOf[js.Any])
-    if (iceCandidatePoolSize != null) __obj.updateDynamic("iceCandidatePoolSize")(iceCandidatePoolSize.asInstanceOf[js.Any])
-    if (iceServers != null) __obj.updateDynamic("iceServers")(iceServers.asInstanceOf[js.Any])
-    if (iceTransportPolicy != null) __obj.updateDynamic("iceTransportPolicy")(iceTransportPolicy.asInstanceOf[js.Any])
-    if (peerIdentity != null) __obj.updateDynamic("peerIdentity")(peerIdentity.asInstanceOf[js.Any])
-    if (rtcpMuxPolicy != null) __obj.updateDynamic("rtcpMuxPolicy")(rtcpMuxPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCConfiguration]
   }
+  
+  extension [Self <: RTCConfiguration](x: Self) {
+    
+    inline def setBundlePolicy(value: RTCBundlePolicy): Self = StObject.set(x, "bundlePolicy", value.asInstanceOf[js.Any])
+    
+    inline def setBundlePolicyUndefined: Self = StObject.set(x, "bundlePolicy", js.undefined)
+    
+    inline def setCertificates(value: js.Array[RTCCertificate]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
+    
+    inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
+    
+    inline def setCertificatesVarargs(value: RTCCertificate*): Self = StObject.set(x, "certificates", js.Array(value*))
+    
+    inline def setIceCandidatePoolSize(value: Double): Self = StObject.set(x, "iceCandidatePoolSize", value.asInstanceOf[js.Any])
+    
+    inline def setIceCandidatePoolSizeUndefined: Self = StObject.set(x, "iceCandidatePoolSize", js.undefined)
+    
+    inline def setIceServers(value: js.Array[RTCIceServer]): Self = StObject.set(x, "iceServers", value.asInstanceOf[js.Any])
+    
+    inline def setIceServersUndefined: Self = StObject.set(x, "iceServers", js.undefined)
+    
+    inline def setIceServersVarargs(value: RTCIceServer*): Self = StObject.set(x, "iceServers", js.Array(value*))
+    
+    inline def setIceTransportPolicy(value: RTCIceTransportPolicy): Self = StObject.set(x, "iceTransportPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setIceTransportPolicyUndefined: Self = StObject.set(x, "iceTransportPolicy", js.undefined)
+    
+    inline def setPeerIdentity(value: String): Self = StObject.set(x, "peerIdentity", value.asInstanceOf[js.Any])
+    
+    inline def setPeerIdentityUndefined: Self = StObject.set(x, "peerIdentity", js.undefined)
+    
+    inline def setRtcpMuxPolicy(value: RTCRtcpMuxPolicy): Self = StObject.set(x, "rtcpMuxPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setRtcpMuxPolicyUndefined: Self = StObject.set(x, "rtcpMuxPolicy", js.undefined)
+  }
 }
-

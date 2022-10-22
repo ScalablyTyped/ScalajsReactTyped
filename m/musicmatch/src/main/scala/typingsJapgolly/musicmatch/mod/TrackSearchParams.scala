@@ -1,52 +1,80 @@
 package typingsJapgolly.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TrackSearchParams extends Pageable {
+trait TrackSearchParams
+  extends StObject
+     with Pageable {
+  
   var f_artist_id: js.UndefOr[Double] = js.undefined
+  
   var f_artist_mbid: js.UndefOr[Double] = js.undefined
+  
   var f_has_lyrics: js.UndefOr[TBoolean] = js.undefined
+  
   var f_lyrics_language: js.UndefOr[String] = js.undefined
+  
   var f_music_genre_id: js.UndefOr[Double] = js.undefined
+  
   var q: js.UndefOr[String] = js.undefined
+  
   var q_lyrics: js.UndefOr[String] = js.undefined
+  
   var quorum_factor: js.UndefOr[Double] = js.undefined
+  
   var s_artist_rating: js.UndefOr[TSort] = js.undefined
+  
   var s_track_rating: js.UndefOr[TSort] = js.undefined
 }
-
 object TrackSearchParams {
-  @scala.inline
-  def apply(
-    f_artist_id: Int | Double = null,
-    f_artist_mbid: Int | Double = null,
-    f_has_lyrics: TBoolean = null,
-    f_lyrics_language: String = null,
-    f_music_genre_id: Int | Double = null,
-    page: Int | Double = null,
-    page_size: Int | Double = null,
-    q: String = null,
-    q_lyrics: String = null,
-    quorum_factor: Int | Double = null,
-    s_artist_rating: TSort = null,
-    s_track_rating: TSort = null
-  ): TrackSearchParams = {
+  
+  inline def apply(): TrackSearchParams = {
     val __obj = js.Dynamic.literal()
-    if (f_artist_id != null) __obj.updateDynamic("f_artist_id")(f_artist_id.asInstanceOf[js.Any])
-    if (f_artist_mbid != null) __obj.updateDynamic("f_artist_mbid")(f_artist_mbid.asInstanceOf[js.Any])
-    if (f_has_lyrics != null) __obj.updateDynamic("f_has_lyrics")(f_has_lyrics.asInstanceOf[js.Any])
-    if (f_lyrics_language != null) __obj.updateDynamic("f_lyrics_language")(f_lyrics_language.asInstanceOf[js.Any])
-    if (f_music_genre_id != null) __obj.updateDynamic("f_music_genre_id")(f_music_genre_id.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (q_lyrics != null) __obj.updateDynamic("q_lyrics")(q_lyrics.asInstanceOf[js.Any])
-    if (quorum_factor != null) __obj.updateDynamic("quorum_factor")(quorum_factor.asInstanceOf[js.Any])
-    if (s_artist_rating != null) __obj.updateDynamic("s_artist_rating")(s_artist_rating.asInstanceOf[js.Any])
-    if (s_track_rating != null) __obj.updateDynamic("s_track_rating")(s_track_rating.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackSearchParams]
   }
+  
+  extension [Self <: TrackSearchParams](x: Self) {
+    
+    inline def setF_artist_id(value: Double): Self = StObject.set(x, "f_artist_id", value.asInstanceOf[js.Any])
+    
+    inline def setF_artist_idUndefined: Self = StObject.set(x, "f_artist_id", js.undefined)
+    
+    inline def setF_artist_mbid(value: Double): Self = StObject.set(x, "f_artist_mbid", value.asInstanceOf[js.Any])
+    
+    inline def setF_artist_mbidUndefined: Self = StObject.set(x, "f_artist_mbid", js.undefined)
+    
+    inline def setF_has_lyrics(value: TBoolean): Self = StObject.set(x, "f_has_lyrics", value.asInstanceOf[js.Any])
+    
+    inline def setF_has_lyricsUndefined: Self = StObject.set(x, "f_has_lyrics", js.undefined)
+    
+    inline def setF_lyrics_language(value: String): Self = StObject.set(x, "f_lyrics_language", value.asInstanceOf[js.Any])
+    
+    inline def setF_lyrics_languageUndefined: Self = StObject.set(x, "f_lyrics_language", js.undefined)
+    
+    inline def setF_music_genre_id(value: Double): Self = StObject.set(x, "f_music_genre_id", value.asInstanceOf[js.Any])
+    
+    inline def setF_music_genre_idUndefined: Self = StObject.set(x, "f_music_genre_id", js.undefined)
+    
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    
+    inline def setQ_lyrics(value: String): Self = StObject.set(x, "q_lyrics", value.asInstanceOf[js.Any])
+    
+    inline def setQ_lyricsUndefined: Self = StObject.set(x, "q_lyrics", js.undefined)
+    
+    inline def setQuorum_factor(value: Double): Self = StObject.set(x, "quorum_factor", value.asInstanceOf[js.Any])
+    
+    inline def setQuorum_factorUndefined: Self = StObject.set(x, "quorum_factor", js.undefined)
+    
+    inline def setS_artist_rating(value: TSort): Self = StObject.set(x, "s_artist_rating", value.asInstanceOf[js.Any])
+    
+    inline def setS_artist_ratingUndefined: Self = StObject.set(x, "s_artist_rating", js.undefined)
+    
+    inline def setS_track_rating(value: TSort): Self = StObject.set(x, "s_track_rating", value.asInstanceOf[js.Any])
+    
+    inline def setS_track_ratingUndefined: Self = StObject.set(x, "s_track_rating", js.undefined)
+  }
 }
-

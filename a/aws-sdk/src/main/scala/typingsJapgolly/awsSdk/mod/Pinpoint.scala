@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.pinpointMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsPinpointMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "Pinpoint")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Pinpoint ()
-  extends typingsJapgolly.awsSdk.allMod.Pinpoint {
+open class Pinpoint ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.Pinpoint {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -1,32 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResponsiveModeChangedEventUIParam extends js.Object {
+trait ResponsiveModeChangedEventUIParam extends StObject {
+  
   /**
-  	 * Gets the newly assumed mode.
-  	 */
+    * Gets the newly assumed mode.
+    */
   var mode: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the reference to the igGridResponsive widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets the reference to the igGridResponsive widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the previously assumed mode.
-  	 */
+    * Gets the previously assumed mode.
+    */
   var previousMode: js.UndefOr[String] = js.undefined
 }
-
 object ResponsiveModeChangedEventUIParam {
-  @scala.inline
-  def apply(mode: String = null, owner: js.Any = null, previousMode: String = null): ResponsiveModeChangedEventUIParam = {
+  
+  inline def apply(): ResponsiveModeChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (previousMode != null) __obj.updateDynamic("previousMode")(previousMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsiveModeChangedEventUIParam]
   }
+  
+  extension [Self <: ResponsiveModeChangedEventUIParam](x: Self) {
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setPreviousMode(value: String): Self = StObject.set(x, "previousMode", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousModeUndefined: Self = StObject.set(x, "previousMode", js.undefined)
+  }
 }
-

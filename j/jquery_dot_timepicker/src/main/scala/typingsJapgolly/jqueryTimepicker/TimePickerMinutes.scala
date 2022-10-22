@@ -1,26 +1,39 @@
 package typingsJapgolly.jqueryTimepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimePickerMinutes extends js.Object {
+trait TimePickerMinutes extends StObject {
+  
   /** last displayed minute */
   var ends: js.UndefOr[Double] = js.undefined
+  
   /** interval of displayed minutes */
   var interval: js.UndefOr[Double] = js.undefined
+  
   /** first displayed minute */
   var starts: js.UndefOr[Double] = js.undefined
 }
-
 object TimePickerMinutes {
-  @scala.inline
-  def apply(ends: Int | Double = null, interval: Int | Double = null, starts: Int | Double = null): TimePickerMinutes = {
+  
+  inline def apply(): TimePickerMinutes = {
     val __obj = js.Dynamic.literal()
-    if (ends != null) __obj.updateDynamic("ends")(ends.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (starts != null) __obj.updateDynamic("starts")(starts.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePickerMinutes]
   }
+  
+  extension [Self <: TimePickerMinutes](x: Self) {
+    
+    inline def setEnds(value: Double): Self = StObject.set(x, "ends", value.asInstanceOf[js.Any])
+    
+    inline def setEndsUndefined: Self = StObject.set(x, "ends", js.undefined)
+    
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    
+    inline def setStarts(value: Double): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
+    
+    inline def setStartsUndefined: Self = StObject.set(x, "starts", js.undefined)
+  }
 }
-

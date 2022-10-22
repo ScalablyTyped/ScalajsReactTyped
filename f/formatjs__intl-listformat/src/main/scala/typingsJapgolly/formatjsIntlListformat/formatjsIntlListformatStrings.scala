@@ -1,54 +1,44 @@
 package typingsJapgolly.formatjsIntlListformat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatjsIntlListformatStrings {
-  @js.native
-  sealed trait `best fit` extends js.Object
   
   @js.native
-  sealed trait conjunction extends js.Object
+  sealed trait `best fit` extends StObject
+  inline def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   
   @js.native
-  sealed trait disjunction extends js.Object
+  sealed trait conjunction extends StObject
+  inline def conjunction: conjunction = "conjunction".asInstanceOf[conjunction]
   
   @js.native
-  sealed trait element extends js.Object
+  sealed trait disjunction extends StObject
+  inline def disjunction: disjunction = "disjunction".asInstanceOf[disjunction]
   
   @js.native
-  sealed trait long extends js.Object
+  sealed trait element extends StObject
+  inline def element: element = "element".asInstanceOf[element]
   
   @js.native
-  sealed trait lookup extends js.Object
+  sealed trait long extends StObject
+  inline def long: long = "long".asInstanceOf[long]
   
   @js.native
-  sealed trait narrow extends js.Object
+  sealed trait lookup extends StObject
+  inline def lookup: lookup = "lookup".asInstanceOf[lookup]
   
   @js.native
-  sealed trait short extends js.Object
+  sealed trait narrow extends StObject
+  inline def narrow: narrow = "narrow".asInstanceOf[narrow]
   
   @js.native
-  sealed trait unit extends js.Object
+  sealed trait short extends StObject
+  inline def short: short = "short".asInstanceOf[short]
   
-  @scala.inline
-  def `best fit`: `best fit` = "best fit".asInstanceOf[`best fit`]
-  @scala.inline
-  def conjunction: conjunction = "conjunction".asInstanceOf[conjunction]
-  @scala.inline
-  def disjunction: disjunction = "disjunction".asInstanceOf[disjunction]
-  @scala.inline
-  def element: element = "element".asInstanceOf[element]
-  @scala.inline
-  def long: long = "long".asInstanceOf[long]
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
-  @scala.inline
-  def narrow: narrow = "narrow".asInstanceOf[narrow]
-  @scala.inline
-  def short: short = "short".asInstanceOf[short]
-  @scala.inline
-  def unit: unit = "unit".asInstanceOf[unit]
+  @js.native
+  sealed trait unit extends StObject
+  inline def unit: unit = "unit".asInstanceOf[unit]
 }
-

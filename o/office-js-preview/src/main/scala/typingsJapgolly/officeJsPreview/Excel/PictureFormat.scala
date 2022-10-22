@@ -1,84 +1,77 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PictureFormat extends js.Object
-
+sealed trait PictureFormat extends StObject
 /**
-  *
   * The format of the image.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PictureFormat")
 @js.native
-object PictureFormat extends js.Object {
+object PictureFormat extends StObject {
+  
   /**
-    *
     * Bitmap image.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait bmp extends PictureFormat
+  sealed trait bmp
+    extends StObject
+       with PictureFormat
   
   /**
-    *
     * Graphics Interchange Format.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait gif extends PictureFormat
+  sealed trait gif
+    extends StObject
+       with PictureFormat
   
   /**
-    *
     * Joint Photographic Experts Group.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait jpeg extends PictureFormat
+  sealed trait jpeg
+    extends StObject
+       with PictureFormat
   
   /**
-    *
     * Portable Network Graphics.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait png extends PictureFormat
+  sealed trait png
+    extends StObject
+       with PictureFormat
   
   /**
-    *
     * Scalable Vector Graphic.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait svg extends PictureFormat
+  sealed trait svg
+    extends StObject
+       with PictureFormat
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait unknown extends PictureFormat
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PictureFormat with String] = js.native
-  /* "BMP" */ @js.native
-  object bmp extends TopLevel[bmp with String]
-  
-  /* "GIF" */ @js.native
-  object gif extends TopLevel[gif with String]
-  
-  /* "JPEG" */ @js.native
-  object jpeg extends TopLevel[jpeg with String]
-  
-  /* "PNG" */ @js.native
-  object png extends TopLevel[png with String]
-  
-  /* "SVG" */ @js.native
-  object svg extends TopLevel[svg with String]
-  
-  /* "UNKNOWN" */ @js.native
-  object unknown extends TopLevel[unknown with String]
-  
+  sealed trait unknown
+    extends StObject
+       with PictureFormat
 }
-

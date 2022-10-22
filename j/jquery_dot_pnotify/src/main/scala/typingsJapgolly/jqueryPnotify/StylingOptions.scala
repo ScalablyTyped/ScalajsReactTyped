@@ -1,8 +1,8 @@
 package typingsJapgolly.jqueryPnotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.brighttheme
@@ -12,5 +12,4 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.jqueryPnotify.jqueryPnotifyStrings.fontawesome
   - typingsJapgolly.jqueryPnotify.PNotifyStyling
 */
-trait StylingOptions extends js.Object
-
+trait StylingOptions extends StObject

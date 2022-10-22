@@ -1,19 +1,26 @@
 package typingsJapgolly.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TableState[D /* <: js.Object */] extends js.Object {
+trait TableState[D /* <: js.Object */] extends StObject {
+  
   var hiddenColumns: js.UndefOr[js.Array[IdType[D]]] = js.undefined
 }
-
 object TableState {
-  @scala.inline
-  def apply[D /* <: js.Object */](hiddenColumns: js.Array[IdType[D]] = null): TableState[D] = {
+  
+  inline def apply[D /* <: js.Object */](): TableState[D] = {
     val __obj = js.Dynamic.literal()
-    if (hiddenColumns != null) __obj.updateDynamic("hiddenColumns")(hiddenColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableState[D]]
   }
+  
+  extension [Self <: TableState[?], D /* <: js.Object */](x: Self & TableState[D]) {
+    
+    inline def setHiddenColumns(value: js.Array[IdType[D]]): Self = StObject.set(x, "hiddenColumns", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenColumnsUndefined: Self = StObject.set(x, "hiddenColumns", js.undefined)
+    
+    inline def setHiddenColumnsVarargs(value: IdType[D]*): Self = StObject.set(x, "hiddenColumns", js.Array(value*))
+  }
 }
-

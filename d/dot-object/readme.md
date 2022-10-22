@@ -1,7 +1,7 @@
 
 # Scala.js typings for dot-object
 
-Typings are for version 1.7
+Typings are for version 2.1
 
 ## Library description:
 dot-object makes it possible to transform and read (JSON) objects using dot notation.
@@ -10,10 +10,10 @@ dot-object makes it possible to transform and read (JSON) objects using dot nota
 | ------------------ | :-------------: |
 | Full name          | dot-object |
 | Keywords           | json, filter, transform, dot notation, dot |
-| # releases         | 9 |
-| # dependents       | 214 |
-| # downloads        | 2673464 |
-| # stars            | 13 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 931454.6666666666 |
+| # stars            | 432.0 |
 
 ## Links
 - [Homepage](https://github.com/rhalff/dot-object#readme)

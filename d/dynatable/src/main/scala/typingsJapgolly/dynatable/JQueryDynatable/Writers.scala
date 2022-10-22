@@ -1,11 +1,11 @@
 package typingsJapgolly.dynatable.JQueryDynatable
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Writers extends js.Object {
+trait Writers extends StObject {
+  
   /**
     * Function that returns the cell data to be written inside the cell
     *
@@ -20,7 +20,8 @@ trait Writers extends js.Object {
     *    return record[this.id];
     * };
     */
-  var _attributeWriter: js.UndefOr[js.Function1[/* record */ js.Any, _]] = js.undefined
+  var _attributeWriter: js.UndefOr[js.Function1[/* record */ Any, Any]] = js.undefined
+  
   /**
     * Function that returns the HTML code that will be injected for the cell
     *
@@ -54,7 +55,8 @@ trait Writers extends js.Object {
     *     return td + '>' + html + '</td>';
     * };
     */
-  var _cellWriter: js.UndefOr[js.Function2[/* column */ Column, /* record */ js.Any, String]] = js.undefined
+  var _cellWriter: js.UndefOr[js.Function2[/* column */ Column, /* record */ Any, String]] = js.undefined
+  
   /**
     * Function that write the data inside each row
     *
@@ -79,26 +81,34 @@ trait Writers extends js.Object {
   var _rowWriter: js.UndefOr[
     js.Function4[
       /* rowIndex */ Double, 
-      /* record */ js.Any, 
+      /* record */ Any, 
       /* columns */ js.Array[Column], 
       /* cellWriter */ js.Function, 
       String
     ]
   ] = js.undefined
 }
-
 object Writers {
-  @scala.inline
-  def apply(
-    _attributeWriter: /* record */ js.Any => CallbackTo[js.Any] = null,
-    _cellWriter: (/* column */ Column, /* record */ js.Any) => CallbackTo[String] = null,
-    _rowWriter: (/* rowIndex */ Double, /* record */ js.Any, /* columns */ js.Array[Column], /* cellWriter */ js.Function) => CallbackTo[String] = null
-  ): Writers = {
+  
+  inline def apply(): Writers = {
     val __obj = js.Dynamic.literal()
-    if (_attributeWriter != null) __obj.updateDynamic("_attributeWriter")(js.Any.fromFunction1((t0: /* record */ js.Any) => _attributeWriter(t0).runNow()))
-    if (_cellWriter != null) __obj.updateDynamic("_cellWriter")(js.Any.fromFunction2((t0: /* column */ typingsJapgolly.dynatable.JQueryDynatable.Column, t1: /* record */ js.Any) => _cellWriter(t0, t1).runNow()))
-    if (_rowWriter != null) __obj.updateDynamic("_rowWriter")(js.Any.fromFunction4((t0: /* rowIndex */ scala.Double, t1: /* record */ js.Any, t2: /* columns */ js.Array[typingsJapgolly.dynatable.JQueryDynatable.Column], t3: /* cellWriter */ js.Function) => _rowWriter(t0, t1, t2, t3).runNow()))
     __obj.asInstanceOf[Writers]
   }
+  
+  extension [Self <: Writers](x: Self) {
+    
+    inline def set_attributeWriter(value: /* record */ Any => Any): Self = StObject.set(x, "_attributeWriter", js.Any.fromFunction1(value))
+    
+    inline def set_attributeWriterUndefined: Self = StObject.set(x, "_attributeWriter", js.undefined)
+    
+    inline def set_cellWriter(value: (/* column */ Column, /* record */ Any) => String): Self = StObject.set(x, "_cellWriter", js.Any.fromFunction2(value))
+    
+    inline def set_cellWriterUndefined: Self = StObject.set(x, "_cellWriter", js.undefined)
+    
+    inline def set_rowWriter(
+      value: (/* rowIndex */ Double, /* record */ Any, /* columns */ js.Array[Column], /* cellWriter */ js.Function) => String
+    ): Self = StObject.set(x, "_rowWriter", js.Any.fromFunction4(value))
+    
+    inline def set_rowWriterUndefined: Self = StObject.set(x, "_rowWriter", js.undefined)
+  }
 }
-

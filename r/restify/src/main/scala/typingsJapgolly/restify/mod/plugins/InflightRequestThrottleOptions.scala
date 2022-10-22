@@ -1,22 +1,31 @@
 package typingsJapgolly.restify.mod.plugins
 
 import typingsJapgolly.restify.mod.Server
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InflightRequestThrottleOptions extends js.Object {
-  var err: js.Any
+trait InflightRequestThrottleOptions extends StObject {
+  
+  var err: Any
+  
   var limit: Double
+  
   var server: Server
 }
-
 object InflightRequestThrottleOptions {
-  @scala.inline
-  def apply(err: js.Any, limit: Double, server: Server): InflightRequestThrottleOptions = {
-    val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
   
+  inline def apply(err: Any, limit: Double, server: Server): InflightRequestThrottleOptions = {
+    val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
     __obj.asInstanceOf[InflightRequestThrottleOptions]
   }
+  
+  extension [Self <: InflightRequestThrottleOptions](x: Self) {
+    
+    inline def setErr(value: Any): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+  }
 }
-

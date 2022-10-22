@@ -3,50 +3,67 @@ package typingsJapgolly.node.inspectorMod.Debugger
 import typingsJapgolly.node.inspectorMod.Runtime.ExceptionDetails
 import typingsJapgolly.node.inspectorMod.Runtime.StackTrace
 import typingsJapgolly.node.inspectorMod.Runtime.StackTraceId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SetScriptSourceReturnType extends js.Object {
+trait SetScriptSourceReturnType extends StObject {
+  
   /**
     * Async stack trace, if any.
     */
   var asyncStackTrace: js.UndefOr[StackTrace] = js.undefined
+  
   /**
     * Async stack trace, if any.
     * @experimental
     */
   var asyncStackTraceId: js.UndefOr[StackTraceId] = js.undefined
+  
   /**
     * New stack trace in case editing has happened while VM was stopped.
     */
   var callFrames: js.UndefOr[js.Array[CallFrame]] = js.undefined
+  
   /**
     * Exception details if any.
     */
   var exceptionDetails: js.UndefOr[ExceptionDetails] = js.undefined
+  
   /**
     * Whether current call stack  was modified after applying the changes.
     */
   var stackChanged: js.UndefOr[Boolean] = js.undefined
 }
-
 object SetScriptSourceReturnType {
-  @scala.inline
-  def apply(
-    asyncStackTrace: StackTrace = null,
-    asyncStackTraceId: StackTraceId = null,
-    callFrames: js.Array[CallFrame] = null,
-    exceptionDetails: ExceptionDetails = null,
-    stackChanged: js.UndefOr[Boolean] = js.undefined
-  ): SetScriptSourceReturnType = {
+  
+  inline def apply(): SetScriptSourceReturnType = {
     val __obj = js.Dynamic.literal()
-    if (asyncStackTrace != null) __obj.updateDynamic("asyncStackTrace")(asyncStackTrace.asInstanceOf[js.Any])
-    if (asyncStackTraceId != null) __obj.updateDynamic("asyncStackTraceId")(asyncStackTraceId.asInstanceOf[js.Any])
-    if (callFrames != null) __obj.updateDynamic("callFrames")(callFrames.asInstanceOf[js.Any])
-    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(stackChanged)) __obj.updateDynamic("stackChanged")(stackChanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetScriptSourceReturnType]
   }
+  
+  extension [Self <: SetScriptSourceReturnType](x: Self) {
+    
+    inline def setAsyncStackTrace(value: StackTrace): Self = StObject.set(x, "asyncStackTrace", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncStackTraceId(value: StackTraceId): Self = StObject.set(x, "asyncStackTraceId", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncStackTraceIdUndefined: Self = StObject.set(x, "asyncStackTraceId", js.undefined)
+    
+    inline def setAsyncStackTraceUndefined: Self = StObject.set(x, "asyncStackTrace", js.undefined)
+    
+    inline def setCallFrames(value: js.Array[CallFrame]): Self = StObject.set(x, "callFrames", value.asInstanceOf[js.Any])
+    
+    inline def setCallFramesUndefined: Self = StObject.set(x, "callFrames", js.undefined)
+    
+    inline def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value*))
+    
+    inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
+    
+    inline def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
+    
+    inline def setStackChanged(value: Boolean): Self = StObject.set(x, "stackChanged", value.asInstanceOf[js.Any])
+    
+    inline def setStackChangedUndefined: Self = StObject.set(x, "stackChanged", js.undefined)
+  }
 }
-

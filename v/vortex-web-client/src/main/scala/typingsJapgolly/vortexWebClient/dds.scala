@@ -1,153 +1,311 @@
 package typingsJapgolly.vortexWebClient
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.Instantiable5
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.vortexWebClient.DDS_.EntityQos
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.vortexWebClient.DDS_.Policy
-import typingsJapgolly.vortexWebClient.DDS_.Runtime_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Defines the core Vortex-Web-Client javascript library. It includes the JavaScript API for DDS. This API allows
-  * web applications to share data among them as well as with native DDS applications.
-  */
-@JSGlobal("dds")
-@js.native
-object dds extends js.Object {
+/* was `typeof DDS` */
+object dds {
+  
   @js.native
-  class DataCache protected ()
-    extends typingsJapgolly.vortexWebClient.DDS_.DataCache {
-    /**
-    		 * Constructs a `DataCache` with a given `depth`. If the `cache` parameter
-    		 * is present, then the current cache is initialized with this parameter.
-    		 *
-    		 * Provides a way of storing and flexibly accessing the
-    		 * data received through a `DataReader`. A `DataCache` is organized as
-    		 * a map of queues. The depth of the queues is specified at construction
-    		 * time.
-    		 *
-    		 * @param depth - cache size
-    		 * @param cache - cache data structure
-    		 */
-    def this(depth: Double, cache: js.Any) = this()
+  sealed trait DurabilityKind extends StObject
+  @JSGlobal("dds.DurabilityKind")
+  @js.native
+  object DurabilityKind extends StObject {
+    
+    @js.native
+    sealed trait Persistent
+      extends StObject
+         with DurabilityKind
+    
+    @js.native
+    sealed trait Transient
+      extends StObject
+         with DurabilityKind
+    
+    @js.native
+    sealed trait TransientLocal
+      extends StObject
+         with DurabilityKind
+    
+    @js.native
+    sealed trait Volatile
+      extends StObject
+         with DurabilityKind
   }
   
   @js.native
-  class DataReader protected ()
-    extends typingsJapgolly.vortexWebClient.DDS_.DataReader {
-    /**
-    		 * Creates a `DataReader` for a given topic and a specific in a specific DDS runtime.
-    		 *
-    		 * A `DataReader` allows to read data for a given topic with a specific QoS. A `DataReader`
-    		 * * goes through different states, it is intially disconnected and changes to the connected state
-    		 * when the underlying transport connection is successfully established with the server. At this point
-    		 * a `DataReader` can be explicitely closed or disconnected. A disconnection can happen as the result
-    		 * of a network failure or server failure. Disconnection and reconnections are managed by the runtime.
-    		 *
-    		 * @param runtime - DDS Runtime
-    		 * @param topic - DDS Topic
-    		 * @param qos - DataReader quality of service
-    		 */
-    def this(runtime: Runtime_, topic: typingsJapgolly.vortexWebClient.DDS_.Topic, qos: EntityQos) = this()
+  sealed trait HistoryKind extends StObject
+  @JSGlobal("dds.HistoryKind")
+  @js.native
+  object HistoryKind extends StObject {
+    
+    @js.native
+    sealed trait KeepAll
+      extends StObject
+         with HistoryKind
+    
+    @js.native
+    sealed trait KeepLast
+      extends StObject
+         with HistoryKind
   }
   
   @js.native
-  class DataWriter protected ()
-    extends typingsJapgolly.vortexWebClient.DDS_.DataWriter {
-    /**
-    		 * Creates a `DataWriter` for a given topic and a specific in a specific DDS runtime
-    		 *
-    		 * defines a DDS data writer. This type
-    		 * is used to write data for a specific topic with a given QoS.
-    		 * A `DataWriter` goes through different states, it is intially disconnected and changes to the connected
-    		 * state when the underlying transport connection is successfully established with the server.
-    		 * At this point a `DataWriter` can be explicitely closed or disconnected. A disconnection can happen
-    		 * as the result of a network failure or server failure. Disconnection and reconnections are managed by the
-    		 * runtime.
-    		 *
-    		 * @param runtime - DDS Runtime
-    		 * @param topic - DDS Topic
-    		 * @param qos - DataWriter quality of service
-    		 */
-    def this(runtime: Runtime_, topic: typingsJapgolly.vortexWebClient.DDS_.Topic, qos: EntityQos) = this()
+  sealed trait ReliabilityKind extends StObject
+  @JSGlobal("dds.ReliabilityKind")
+  @js.native
+  object ReliabilityKind extends StObject {
+    
+    @js.native
+    sealed trait BestEffort
+      extends StObject
+         with ReliabilityKind
+    
+    @js.native
+    sealed trait Reliable
+      extends StObject
+         with ReliabilityKind
   }
   
   @js.native
-  class Topic protected ()
-    extends typingsJapgolly.vortexWebClient.DDS_.Topic {
+  trait DataCache extends StObject {
+    
     /**
-    		 * Creates a `Topic` in the domain `did`, named `tname`, having `qos` Qos,
-    		 * for the type `ttype` whose registered name is `tregtype`
-    		 * @param {number} did - DDS domain ID
-    		 * @param {string} tname - topic name
-    		 * @param {TopicQos} qos - topic Qos
-    		 * @param {string} ttype - topic type. If not specified, a generic type is used.
-    		 * @param {string} tregtype - topic registered type name. If not specified, 'ttype' is used.
-    		 */
-    def this(did: Double, tname: String, qos: EntityQos) = this()
-    def this(did: Double, tname: String, qos: EntityQos, ttype: String) = this()
-    def this(did: Double, tname: String, qos: EntityQos, ttype: String, tregtype: String) = this()
+      * Register a listener to be notified whenever data which matches a predicate is written into the cache.
+      * If no predicate is provided then the listeners is always notified upon data inserion.
+      *
+      * @param l - listener function
+      * @param p - predicate
+      */
+    def addListener(l: js.Function1[/* data */ Any, Unit]): Unit = js.native
+    def addListener(l: js.Function1[/* data */ Any, Unit], p: js.Function1[/* data */ Any, Boolean]): Unit = js.native
+    
+    /**
+      * clears the data cache
+      */
+    def clear(): Unit = js.native
+    
+    /**
+      * Returns the list of elements in the cache that satisfy the predicate `f`.
+      *
+      * @param f - the predicate to be applied to filter the cache values
+      * @returns An array holding the filtered values
+      */
+    def filter(f: js.Function1[/* data */ Any, Boolean]): js.Array[Any] = js.native
+    
+    /**
+      * Returns the list of elements in the cache that doesn't satisfy the predicate `f`.
+      *
+      * @returns An array holding the filtered values
+      * @see DataCache#filter
+      */
+    def filterNot(f: js.Function1[/* data */ Any, Boolean]): js.Array[Any] = js.native
+    
+    /**
+      * folds the element of the cache using `z` as the `zero` element and
+      * `f` as the binary operator.
+      *
+      * @param z - initial value
+      * @param {function} f - reduce function
+      */
+    def fold(z: Any, f: js.Function1[/* data */ Any, Any]): Unit = js.native
+    
+    /**
+      * Execute the function `f` for each element of the cache.
+      *
+      * @memberof! dds.DataCache#
+      * @param f - the function to be applied
+      * @returns results of the function execution
+      */
+    def forEach(f: js.Function1[/* data */ Any, Any]): js.Array[Any] = js.native
+    
+    /**
+      * Same as forEach but applied, for each key, only to the first `n` samples of the cache
+      *
+      * @param f - the function to be applied
+      * @param n - samples set size
+      */
+    def forEachN(f: js.Function1[/* data */ Any, Any], n: Double): js.Array[Any] = js.native
+    
+    /**
+      * Return `coffez.Some(v)` if there is an element in the cache corresponding to the
+      * key `k` otherwise it returns `coffez.None`.
+      *
+      * @param k - key
+      */
+    def get(k: Any): Any = js.native
+    
+    /**
+      * Return `coffez.Some(v)` if there is an element in the cache corresponding to the
+      * key `k` otherwise executes `f` and returns its result.
+      *
+      * @param k - key
+      * @param f - the function to apply
+      */
+    def getOrElse(k: Any, f: js.Function1[/* data */ Any, Any]): Any = js.native
+    
+    /**
+      * Returns a cache that is the result of applying `f` to each element of the cache.
+      *
+      * @param f - the function to be applied
+      * @returns A cache holding the results of the function execution
+      */
+    def map(f: js.Function1[/* data */ Any, Any]): typingsJapgolly.vortexWebClient.DDS_.DataCache = js.native
+    
+    /**
+      * Returns the values included in the cache as an array.
+      *
+      * @return All the cache values
+      */
+    def read(): js.Array[Any] = js.native
+    
+    /**
+      * Returns the last value of the cache in an array.
+      *
+      * @return the last value of the cache
+      */
+    def readLast(): Any = js.native
+    
+    /**
+      * Returns the `K`ith value of the cache as Monad, ie: `coffez.Some` if it exists, `coffez.None` if not.
+      *
+      * @return the 'k'th value
+      */
+    def take(): Any = js.native
+    
+    /**
+      * Returns all the values included in the cache as an array and empties the cache.
+      *
+      * @return All the cache values
+      */
+    def takeAll(): js.Array[Any] = js.native
+    
+    /**
+      * Takes elements from the cache up to when the predicate `f` is satisfied
+      *
+      * @param f - the predicate
+      * @return taken cache values
+      */
+    def takeWithFilter(f: js.Function1[/* data */ Any, Boolean]): js.Array[Any] = js.native
+    
+    /**
+      * Write the element `data` with key `k` into the cache.
+      *
+      * @param k - data key
+      * @param data - data value
+      * @returns the written data value
+      */
+    def write(k: Any, data: Any): Any = js.native
   }
   
-  var DataReaderQos: EntityQos = js.native
-  var DataWriterQos: EntityQos = js.native
-  var Durability: TypeofDurability = js.native
-  var History: TypeofHistory = js.native
-  var Reliability: TypeofReliability = js.native
-  var TopicQos: EntityQos = js.native
-  var VERSION: String = js.native
-  var runtime: AnonRuntime = js.native
-  def ContentFilter(expr: String): Policy = js.native
-  def Partition(policies: String*): Policy = js.native
-  def TimeFilter(period: Double): Policy = js.native
-  @js.native
-  object DataCache
-    extends TopLevel[
-          Instantiable2[
-            /* depth */ Double, 
-            /* cache */ js.Any, 
-            typingsJapgolly.vortexWebClient.DDS_.DataCache
-          ]
-        ]
+  trait DataReader extends StObject {
+    
+    /**
+      * Attaches the  listener `l` to this data reader and returns
+      * the id associated to the listener.
+      * @param l - listener code
+      * @returns listener handle
+      */
+    def addListener(l: js.Function1[/* msg */ Any, Unit]): Double
+    
+    /**
+      * closes the DataReader
+      */
+    def close(): Unit
+    
+    /**
+      * removes a listener from this data reader.
+      * @param idx - listener id
+      */
+    def removeListener(idx: Double): Unit
+    
+    def resetStats(): Unit
+  }
+  object DataReader {
+    
+    inline def apply(
+      addListener: js.Function1[/* msg */ Any, Unit] => Double,
+      close: Callback,
+      removeListener: Double => Callback,
+      resetStats: Callback
+    ): DataReader = {
+      val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener), close = close.toJsFn, removeListener = js.Any.fromFunction1((t0: Double) => removeListener(t0).runNow()), resetStats = resetStats.toJsFn)
+      __obj.asInstanceOf[DataReader]
+    }
+    
+    extension [Self <: DataReader](x: Self) {
+      
+      inline def setAddListener(value: js.Function1[/* msg */ Any, Unit] => Double): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+      
+      inline def setClose(value: Callback): Self = StObject.set(x, "close", value.toJsFn)
+      
+      inline def setRemoveListener(value: Double => Callback): Self = StObject.set(x, "removeListener", js.Any.fromFunction1((t0: Double) => value(t0).runNow()))
+      
+      inline def setResetStats(value: Callback): Self = StObject.set(x, "resetStats", value.toJsFn)
+    }
+  }
   
-  @js.native
-  object DataReader
-    extends TopLevel[
-          Instantiable3[
-            /* runtime */ Runtime_, 
-            /* topic */ typingsJapgolly.vortexWebClient.DDS_.Topic, 
-            /* qos */ EntityQos, 
-            typingsJapgolly.vortexWebClient.DDS_.DataReader
-          ]
-        ]
+  trait DataWriter extends StObject {
+    
+    /**
+      * Closes the DataWriter
+      */
+    def close(): Unit
+    
+    /**
+      * Writes one or more samples.
+      * @param ds - data sample
+      */
+    def write(ds: Any*): Unit
+  }
+  object DataWriter {
+    
+    inline def apply(close: Callback, write: /* repeated */ Any => Callback): DataWriter = {
+      val __obj = js.Dynamic.literal(close = close.toJsFn, write = js.Any.fromFunction1((t0: /* repeated */ Any) => write(t0).runNow()))
+      __obj.asInstanceOf[DataWriter]
+    }
+    
+    extension [Self <: DataWriter](x: Self) {
+      
+      inline def setClose(value: Callback): Self = StObject.set(x, "close", value.toJsFn)
+      
+      inline def setWrite(value: /* repeated */ Any => Callback): Self = StObject.set(x, "write", js.Any.fromFunction1((t0: /* repeated */ Any) => value(t0).runNow()))
+    }
+  }
   
-  @js.native
-  object DataWriter
-    extends TopLevel[
-          Instantiable3[
-            /* runtime */ Runtime_, 
-            /* topic */ typingsJapgolly.vortexWebClient.DDS_.Topic, 
-            /* qos */ EntityQos, 
-            typingsJapgolly.vortexWebClient.DDS_.DataWriter
-          ]
-        ]
+  type Durability = Policy
   
-  @js.native
-  object Topic
-    extends TopLevel[
-          Instantiable5[
-            /* did */ Double, 
-            /* tname */ String, 
-            /* qos */ EntityQos, 
-            js.UndefOr[/* ttype */ String], 
-            js.UndefOr[/* tregtype */ String], 
-            typingsJapgolly.vortexWebClient.DDS_.Topic
-          ]
-        ]
+  type History = Policy
   
+  type Reliability = Policy
+  
+  trait Topic extends StObject {
+    
+    /**
+      * Called when topic gets registered in the runtime
+      */
+    def onregistered(): Unit
+    
+    /**
+      * Called when topic gets unregistered in the runtime
+      */
+    def onunregistered(): Unit
+  }
+  object Topic {
+    
+    inline def apply(onregistered: Callback, onunregistered: Callback): Topic = {
+      val __obj = js.Dynamic.literal(onregistered = onregistered.toJsFn, onunregistered = onunregistered.toJsFn)
+      __obj.asInstanceOf[Topic]
+    }
+    
+    extension [Self <: Topic](x: Self) {
+      
+      inline def setOnregistered(value: Callback): Self = StObject.set(x, "onregistered", value.toJsFn)
+      
+      inline def setOnunregistered(value: Callback): Self = StObject.set(x, "onunregistered", value.toJsFn)
+    }
+  }
 }
-

@@ -1,22 +1,27 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotAroonAroonDownOptions extends js.Object {
+trait PlotAroonAroonDownOptions extends StObject {
+  
   /**
     * (Highstock) Styles for an aroonDown line.
     */
   var styles: js.UndefOr[PlotAroonAroonDownStylesOptions] = js.undefined
 }
-
 object PlotAroonAroonDownOptions {
-  @scala.inline
-  def apply(styles: PlotAroonAroonDownStylesOptions = null): PlotAroonAroonDownOptions = {
+  
+  inline def apply(): PlotAroonAroonDownOptions = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotAroonAroonDownOptions]
   }
+  
+  extension [Self <: PlotAroonAroonDownOptions](x: Self) {
+    
+    inline def setStyles(value: PlotAroonAroonDownStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+  }
 }
-

@@ -1,41 +1,39 @@
 package typingsJapgolly.angularCommon.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NumberFormatStyle extends js.Object
-
+sealed trait NumberFormatStyle extends StObject
 @JSImport("@angular/common", "NumberFormatStyle")
 @js.native
-object NumberFormatStyle extends js.Object {
-  @js.native
-  sealed trait Currency extends NumberFormatStyle
-  
-  @js.native
-  sealed trait Decimal extends NumberFormatStyle
-  
-  @js.native
-  sealed trait Percent extends NumberFormatStyle
-  
-  @js.native
-  sealed trait Scientific extends NumberFormatStyle
+object NumberFormatStyle extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NumberFormatStyle with Double] = js.native
-  /* 2 */ @js.native
-  object Currency extends TopLevel[Currency with Double]
+  def apply(value: Double): js.UndefOr[NumberFormatStyle & Double] = js.native
   
-  /* 0 */ @js.native
-  object Decimal extends TopLevel[Decimal with Double]
+  @js.native
+  sealed trait Currency
+    extends StObject
+       with NumberFormatStyle
+  /* 2 */ val Currency: typingsJapgolly.angularCommon.mod.NumberFormatStyle.Currency & Double = js.native
   
-  /* 1 */ @js.native
-  object Percent extends TopLevel[Percent with Double]
+  @js.native
+  sealed trait Decimal
+    extends StObject
+       with NumberFormatStyle
+  /* 0 */ val Decimal: typingsJapgolly.angularCommon.mod.NumberFormatStyle.Decimal & Double = js.native
   
-  /* 3 */ @js.native
-  object Scientific extends TopLevel[Scientific with Double]
+  @js.native
+  sealed trait Percent
+    extends StObject
+       with NumberFormatStyle
+  /* 1 */ val Percent: typingsJapgolly.angularCommon.mod.NumberFormatStyle.Percent & Double = js.native
   
+  @js.native
+  sealed trait Scientific
+    extends StObject
+       with NumberFormatStyle
+  /* 3 */ val Scientific: typingsJapgolly.angularCommon.mod.NumberFormatStyle.Scientific & Double = js.native
 }
-

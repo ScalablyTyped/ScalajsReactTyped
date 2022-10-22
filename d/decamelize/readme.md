@@ -1,7 +1,7 @@
 
 # Scala.js typings for decamelize
 
-Typings are for version 3.2.0
+Typings are for version 6.0.0
 
 ## Library description:
 Convert a camelized string into a lowercased one with a custom separator: unicornRainbow → unicorn_rainbow
@@ -9,16 +9,13 @@ Convert a camelized string into a lowercased one with a custom separator: unicor
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | decamelize |
-| Keywords           | decamelize, decamelcase, camelcase, lowercase, case, dash, hyphen, string, str, text, convert |
-| # releases         | 6 |
-| # dependents       | 420 |
-| # downloads        | 557525009 |
-| # stars            | 8 |
+| Keywords           | decamelize, decamelcase, camelcase, lowercase, case, dash, hyphen, string, text, convert |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1197583766666667E8 |
+| # stars            | 216.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/decamelize#readme)
-- [Bugs](https://github.com/sindresorhus/decamelize/issues)
-- [Repository](https://github.com/sindresorhus/decamelize)
 - [Npm](https://www.npmjs.com/package/decamelize)
     
 

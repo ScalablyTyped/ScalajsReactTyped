@@ -1,8 +1,8 @@
 package typingsJapgolly.reactNativeJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.any
@@ -17,32 +17,28 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.`object`
   - typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.string
 */
-trait Types extends js.Object
-
+trait Types extends StObject
 object Types {
-  @scala.inline
-  def alternatives: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.alternatives = this.cast("alternatives")
-  @scala.inline
-  def any: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.any = this.cast("any")
-  @scala.inline
-  def array: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.array = this.cast("array")
-  @scala.inline
-  def binary: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.binary = this.cast("binary")
-  @scala.inline
-  def boolean: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.boolean = this.cast("boolean")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def date: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.date = this.cast("date")
-  @scala.inline
-  def function: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.function = this.cast("function")
-  @scala.inline
-  def `lazy`: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.`lazy` = this.cast("lazy")
-  @scala.inline
-  def number: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.number = this.cast("number")
-  @scala.inline
-  def `object`: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.string = this.cast("string")
+  
+  inline def alternatives: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.alternatives = "alternatives".asInstanceOf[typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.alternatives]
+  
+  inline def any: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.any = "any".asInstanceOf[typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.any]
+  
+  inline def array: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.array = "array".asInstanceOf[typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.array]
+  
+  inline def binary: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.binary = "binary".asInstanceOf[typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.binary]
+  
+  inline def boolean: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.boolean = "boolean".asInstanceOf[typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.boolean]
+  
+  inline def date: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.date = "date".asInstanceOf[typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.date]
+  
+  inline def function: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.function = "function".asInstanceOf[typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.function]
+  
+  inline def `lazy`: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.`lazy` = "lazy".asInstanceOf[typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.`lazy`]
+  
+  inline def number: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.number = "number".asInstanceOf[typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.number]
+  
+  inline def `object`: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.`object` = "object".asInstanceOf[typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.`object`]
+  
+  inline def string: typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.string = "string".asInstanceOf[typingsJapgolly.reactNativeJoi.reactNativeJoiStrings.string]
 }
-

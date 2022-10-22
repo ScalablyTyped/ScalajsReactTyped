@@ -1,9 +1,9 @@
 package typingsJapgolly.esriLeaflet.mod
 
 import typingsJapgolly.esriLeaflet.mod.leafletAugmentingMod.esri.QueryOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `L.esri.Query` is an abstraction for the query API included in Feature Layers and Image Services. It provides
@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("esri-leaflet", "Query")
 @js.native
-class Query_ protected ()
+open class Query_ protected ()
   extends typingsJapgolly.esriLeaflet.mod.leafletAugmentingMod.esri.Query_ {
   def this(options: QueryOptions) = this()
 }
-

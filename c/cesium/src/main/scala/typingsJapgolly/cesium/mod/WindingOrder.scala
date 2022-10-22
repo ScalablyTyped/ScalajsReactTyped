@@ -1,29 +1,33 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WindingOrder extends js.Object
-
+sealed trait WindingOrder extends StObject
 @JSImport("cesium", "WindingOrder")
 @js.native
-object WindingOrder extends js.Object {
-  @js.native
-  sealed trait CLOCKWISE extends WindingOrder
-  
-  @js.native
-  sealed trait COUNTER_CLOCKWISE extends WindingOrder
+object WindingOrder extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WindingOrder with Double] = js.native
-  /* 0 */ @js.native
-  object CLOCKWISE extends TopLevel[CLOCKWISE with Double]
+  def apply(value: scala.Nothing): js.UndefOr[WindingOrder & scala.Nothing] = js.native
   
-  /* 1 */ @js.native
-  object COUNTER_CLOCKWISE extends TopLevel[COUNTER_CLOCKWISE with Double]
+  /**
+    * Vertices are in clockwise order.
+    */
+  @js.native
+  sealed trait CLOCKWISE
+    extends StObject
+       with WindingOrder
+  /* WebGLConstants.CW */ val CLOCKWISE: typingsJapgolly.cesium.mod.WindingOrder.CLOCKWISE & scala.Nothing = js.native
   
+  /**
+    * Vertices are in counter-clockwise order.
+    */
+  @js.native
+  sealed trait COUNTER_CLOCKWISE
+    extends StObject
+       with WindingOrder
+  /* WebGLConstants.CCW */ val COUNTER_CLOCKWISE: typingsJapgolly.cesium.mod.WindingOrder.COUNTER_CLOCKWISE & scala.Nothing = js.native
 }
-

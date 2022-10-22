@@ -1,46 +1,55 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the PivotItem object, for use in `pivotItem.set({ ... })`. */
-trait PivotItemUpdateData extends js.Object {
+trait PivotItemUpdateData extends StObject {
+  
   /**
-    *
     * Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var isExpanded: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Name of the PivotItem.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies if the PivotItem is visible.
     *
-    * Determines whether the PivotItem is visible or not.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object PivotItemUpdateData {
-  @scala.inline
-  def apply(
-    isExpanded: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): PivotItemUpdateData = {
+  
+  inline def apply(): PivotItemUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotItemUpdateData]
   }
+  
+  extension [Self <: PivotItemUpdateData](x: Self) {
+    
+    inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+    
+    inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

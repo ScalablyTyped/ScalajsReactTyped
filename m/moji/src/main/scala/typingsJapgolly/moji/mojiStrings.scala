@@ -1,50 +1,57 @@
 package typingsJapgolly.moji
 
 import typingsJapgolly.moji.mod.Mojisyu
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mojiStrings {
-  @js.native
-  sealed trait HE extends Mojisyu
   
   @js.native
-  sealed trait HG extends Mojisyu
+  sealed trait HE
+    extends StObject
+       with Mojisyu
+  inline def HE: HE = "HE".asInstanceOf[HE]
   
   @js.native
-  sealed trait HK extends Mojisyu
+  sealed trait HG
+    extends StObject
+       with Mojisyu
+  inline def HG: HG = "HG".asInstanceOf[HG]
   
   @js.native
-  sealed trait HS extends Mojisyu
+  sealed trait HK
+    extends StObject
+       with Mojisyu
+  inline def HK: HK = "HK".asInstanceOf[HK]
   
   @js.native
-  sealed trait KK extends Mojisyu
+  sealed trait HS
+    extends StObject
+       with Mojisyu
+  inline def HS: HS = "HS".asInstanceOf[HS]
   
   @js.native
-  sealed trait ZE extends Mojisyu
+  sealed trait KK
+    extends StObject
+       with Mojisyu
+  inline def KK: KK = "KK".asInstanceOf[KK]
   
   @js.native
-  sealed trait ZK extends Mojisyu
+  sealed trait ZE
+    extends StObject
+       with Mojisyu
+  inline def ZE: ZE = "ZE".asInstanceOf[ZE]
   
   @js.native
-  sealed trait ZS extends Mojisyu
+  sealed trait ZK
+    extends StObject
+       with Mojisyu
+  inline def ZK: ZK = "ZK".asInstanceOf[ZK]
   
-  @scala.inline
-  def HE: HE = "HE".asInstanceOf[HE]
-  @scala.inline
-  def HG: HG = "HG".asInstanceOf[HG]
-  @scala.inline
-  def HK: HK = "HK".asInstanceOf[HK]
-  @scala.inline
-  def HS: HS = "HS".asInstanceOf[HS]
-  @scala.inline
-  def KK: KK = "KK".asInstanceOf[KK]
-  @scala.inline
-  def ZE: ZE = "ZE".asInstanceOf[ZE]
-  @scala.inline
-  def ZK: ZK = "ZK".asInstanceOf[ZK]
-  @scala.inline
-  def ZS: ZS = "ZS".asInstanceOf[ZS]
+  @js.native
+  sealed trait ZS
+    extends StObject
+       with Mojisyu
+  inline def ZS: ZS = "ZS".asInstanceOf[ZS]
 }
-

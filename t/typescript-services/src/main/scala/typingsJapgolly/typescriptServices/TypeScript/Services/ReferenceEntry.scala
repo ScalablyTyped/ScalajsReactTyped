@@ -1,16 +1,34 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.Services.ReferenceEntry")
-@js.native
-class ReferenceEntry protected () extends js.Object {
-  def this(fileName: String, minChar: Double, limChar: Double, isWriteAccess: Boolean) = this()
-  var fileName: String = js.native
-  var isWriteAccess: Boolean = js.native
-  var limChar: Double = js.native
-  var minChar: Double = js.native
+trait ReferenceEntry extends StObject {
+  
+  var fileName: String
+  
+  var isWriteAccess: Boolean
+  
+  var limChar: Double
+  
+  var minChar: Double
 }
-
+object ReferenceEntry {
+  
+  inline def apply(fileName: String, isWriteAccess: Boolean, limChar: Double, minChar: Double): ReferenceEntry = {
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], isWriteAccess = isWriteAccess.asInstanceOf[js.Any], limChar = limChar.asInstanceOf[js.Any], minChar = minChar.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReferenceEntry]
+  }
+  
+  extension [Self <: ReferenceEntry](x: Self) {
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setIsWriteAccess(value: Boolean): Self = StObject.set(x, "isWriteAccess", value.asInstanceOf[js.Any])
+    
+    inline def setLimChar(value: Double): Self = StObject.set(x, "limChar", value.asInstanceOf[js.Any])
+    
+    inline def setMinChar(value: Double): Self = StObject.set(x, "minChar", value.asInstanceOf[js.Any])
+  }
+}

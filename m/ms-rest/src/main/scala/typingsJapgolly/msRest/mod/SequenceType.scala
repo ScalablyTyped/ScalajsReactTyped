@@ -1,32 +1,27 @@
 package typingsJapgolly.msRest.mod
 
-import typingsJapgolly.msRest.AnonElement
+import typingsJapgolly.msRest.anon.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SequenceType extends Mapper {
+trait SequenceType
+  extends StObject
+     with Mapper {
+  
   @JSName("type")
-  var type_SequenceType: AnonElement
+  var type_SequenceType: Element
 }
-
 object SequenceType {
-  @scala.inline
-  def apply(
-    name: MapperType,
-    required: Boolean,
-    serializedName: String,
-    `type`: AnonElement,
-    isConstant: js.UndefOr[Boolean] = js.undefined,
-    nullable: js.UndefOr[Boolean] = js.undefined,
-    readOnly: js.UndefOr[Boolean] = js.undefined
-  ): SequenceType = {
+  
+  inline def apply(name: MapperType, required: Boolean, serializedName: String, `type`: Element): SequenceType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], serializedName = serializedName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(isConstant)) __obj.updateDynamic("isConstant")(isConstant.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceType]
   }
+  
+  extension [Self <: SequenceType](x: Self) {
+    
+    inline def setType(value: Element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

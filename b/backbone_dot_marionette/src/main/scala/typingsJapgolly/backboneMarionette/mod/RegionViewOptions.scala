@@ -1,10 +1,11 @@
 package typingsJapgolly.backboneMarionette.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RegionViewOptions extends js.Object {
+trait RegionViewOptions extends StObject {
+  
   /**
     * DEPRECATED: If you replace the current view with a new view by calling show, by
     * default it will automatically destroy the previous view. You can
@@ -12,13 +13,17 @@ trait RegionViewOptions extends js.Object {
     */
   var preventDestroy: js.UndefOr[Boolean] = js.undefined
 }
-
 object RegionViewOptions {
-  @scala.inline
-  def apply(preventDestroy: js.UndefOr[Boolean] = js.undefined): RegionViewOptions = {
+  
+  inline def apply(): RegionViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preventDestroy)) __obj.updateDynamic("preventDestroy")(preventDestroy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegionViewOptions]
   }
+  
+  extension [Self <: RegionViewOptions](x: Self) {
+    
+    inline def setPreventDestroy(value: Boolean): Self = StObject.set(x, "preventDestroy", value.asInstanceOf[js.Any])
+    
+    inline def setPreventDestroyUndefined: Self = StObject.set(x, "preventDestroy", js.undefined)
+  }
 }
-

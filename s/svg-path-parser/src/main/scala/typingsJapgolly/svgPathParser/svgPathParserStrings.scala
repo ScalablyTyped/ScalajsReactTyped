@@ -1,159 +1,128 @@
 package typingsJapgolly.svgPathParser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgPathParserStrings {
-  @js.native
-  sealed trait A extends js.Object
   
   @js.native
-  sealed trait C extends js.Object
+  sealed trait A extends StObject
+  inline def A: A = "A".asInstanceOf[A]
   
   @js.native
-  sealed trait H extends js.Object
+  sealed trait C extends StObject
+  inline def C: C = "C".asInstanceOf[C]
   
   @js.native
-  sealed trait L extends js.Object
+  sealed trait H extends StObject
+  inline def H: H = "H".asInstanceOf[H]
   
   @js.native
-  sealed trait M extends js.Object
+  sealed trait L extends StObject
+  inline def L: L = "L".asInstanceOf[L]
   
   @js.native
-  sealed trait Q extends js.Object
+  sealed trait M extends StObject
+  inline def M: M = "M".asInstanceOf[M]
   
   @js.native
-  sealed trait S extends js.Object
+  sealed trait Q extends StObject
+  inline def Q: Q = "Q".asInstanceOf[Q]
   
   @js.native
-  sealed trait T extends js.Object
+  sealed trait S extends StObject
+  inline def S: S = "S".asInstanceOf[S]
   
   @js.native
-  sealed trait V extends js.Object
+  sealed trait T extends StObject
+  inline def T: T = "T".asInstanceOf[T]
   
   @js.native
-  sealed trait Z extends js.Object
+  sealed trait V extends StObject
+  inline def V: V = "V".asInstanceOf[V]
   
   @js.native
-  sealed trait a_ extends js.Object
+  sealed trait Z extends StObject
+  inline def Z: Z = "Z".asInstanceOf[Z]
   
   @js.native
-  sealed trait c_ extends js.Object
+  sealed trait a_ extends StObject
+  inline def a_ : a_ = "a".asInstanceOf[a_]
   
   @js.native
-  sealed trait closepath extends js.Object
+  sealed trait c_ extends StObject
+  inline def c_ : c_ = "c".asInstanceOf[c_]
   
   @js.native
-  sealed trait curveto extends js.Object
+  sealed trait closepath extends StObject
+  inline def closepath: closepath = "closepath".asInstanceOf[closepath]
   
   @js.native
-  sealed trait `elliptical arc` extends js.Object
+  sealed trait curveto extends StObject
+  inline def curveto: curveto = "curveto".asInstanceOf[curveto]
   
   @js.native
-  sealed trait h_ extends js.Object
+  sealed trait `elliptical arc` extends StObject
+  inline def `elliptical arc`: `elliptical arc` = ("elliptical arc").asInstanceOf[`elliptical arc`]
   
   @js.native
-  sealed trait `horizontal lineto` extends js.Object
+  sealed trait h_ extends StObject
+  inline def h_ : h_ = "h".asInstanceOf[h_]
   
   @js.native
-  sealed trait l_ extends js.Object
+  sealed trait `horizontal lineto` extends StObject
+  inline def `horizontal lineto`: `horizontal lineto` = ("horizontal lineto").asInstanceOf[`horizontal lineto`]
   
   @js.native
-  sealed trait lineto extends js.Object
+  sealed trait l_ extends StObject
+  inline def l_ : l_ = "l".asInstanceOf[l_]
   
   @js.native
-  sealed trait m_ extends js.Object
+  sealed trait lineto extends StObject
+  inline def lineto: lineto = "lineto".asInstanceOf[lineto]
   
   @js.native
-  sealed trait moveto extends js.Object
+  sealed trait m_ extends StObject
+  inline def m_ : m_ = "m".asInstanceOf[m_]
   
   @js.native
-  sealed trait q_ extends js.Object
+  sealed trait moveto extends StObject
+  inline def moveto: moveto = "moveto".asInstanceOf[moveto]
   
   @js.native
-  sealed trait `quadratic curveto` extends js.Object
+  sealed trait q_ extends StObject
+  inline def q_ : q_ = "q".asInstanceOf[q_]
   
   @js.native
-  sealed trait s_ extends js.Object
+  sealed trait `quadratic curveto` extends StObject
+  inline def `quadratic curveto`: `quadratic curveto` = ("quadratic curveto").asInstanceOf[`quadratic curveto`]
   
   @js.native
-  sealed trait `smooth curveto` extends js.Object
+  sealed trait s_ extends StObject
+  inline def s_ : s_ = "s".asInstanceOf[s_]
   
   @js.native
-  sealed trait `smooth quadratic curveto` extends js.Object
+  sealed trait `smooth curveto` extends StObject
+  inline def `smooth curveto`: `smooth curveto` = ("smooth curveto").asInstanceOf[`smooth curveto`]
   
   @js.native
-  sealed trait t_ extends js.Object
+  sealed trait `smooth quadratic curveto` extends StObject
+  inline def `smooth quadratic curveto`: `smooth quadratic curveto` = ("smooth quadratic curveto").asInstanceOf[`smooth quadratic curveto`]
   
   @js.native
-  sealed trait v_ extends js.Object
+  sealed trait t_ extends StObject
+  inline def t_ : t_ = "t".asInstanceOf[t_]
   
   @js.native
-  sealed trait `vertical lineto` extends js.Object
+  sealed trait v_ extends StObject
+  inline def v_ : v_ = "v".asInstanceOf[v_]
   
   @js.native
-  sealed trait z_ extends js.Object
+  sealed trait `vertical lineto` extends StObject
+  inline def `vertical lineto`: `vertical lineto` = ("vertical lineto").asInstanceOf[`vertical lineto`]
   
-  @scala.inline
-  def A: A = "A".asInstanceOf[A]
-  @scala.inline
-  def C: C = "C".asInstanceOf[C]
-  @scala.inline
-  def H: H = "H".asInstanceOf[H]
-  @scala.inline
-  def L: L = "L".asInstanceOf[L]
-  @scala.inline
-  def M: M = "M".asInstanceOf[M]
-  @scala.inline
-  def Q: Q = "Q".asInstanceOf[Q]
-  @scala.inline
-  def S: S = "S".asInstanceOf[S]
-  @scala.inline
-  def T: T = "T".asInstanceOf[T]
-  @scala.inline
-  def V: V = "V".asInstanceOf[V]
-  @scala.inline
-  def Z: Z = "Z".asInstanceOf[Z]
-  @scala.inline
-  def a_ : a_ = "a".asInstanceOf[a_]
-  @scala.inline
-  def c_ : c_ = "c".asInstanceOf[c_]
-  @scala.inline
-  def closepath: closepath = "closepath".asInstanceOf[closepath]
-  @scala.inline
-  def curveto: curveto = "curveto".asInstanceOf[curveto]
-  @scala.inline
-  def `elliptical arc`: `elliptical arc` = "elliptical arc".asInstanceOf[`elliptical arc`]
-  @scala.inline
-  def h_ : h_ = "h".asInstanceOf[h_]
-  @scala.inline
-  def `horizontal lineto`: `horizontal lineto` = "horizontal lineto".asInstanceOf[`horizontal lineto`]
-  @scala.inline
-  def l_ : l_ = "l".asInstanceOf[l_]
-  @scala.inline
-  def lineto: lineto = "lineto".asInstanceOf[lineto]
-  @scala.inline
-  def m_ : m_ = "m".asInstanceOf[m_]
-  @scala.inline
-  def moveto: moveto = "moveto".asInstanceOf[moveto]
-  @scala.inline
-  def q_ : q_ = "q".asInstanceOf[q_]
-  @scala.inline
-  def `quadratic curveto`: `quadratic curveto` = "quadratic curveto".asInstanceOf[`quadratic curveto`]
-  @scala.inline
-  def s_ : s_ = "s".asInstanceOf[s_]
-  @scala.inline
-  def `smooth curveto`: `smooth curveto` = "smooth curveto".asInstanceOf[`smooth curveto`]
-  @scala.inline
-  def `smooth quadratic curveto`: `smooth quadratic curveto` = "smooth quadratic curveto".asInstanceOf[`smooth quadratic curveto`]
-  @scala.inline
-  def t_ : t_ = "t".asInstanceOf[t_]
-  @scala.inline
-  def v_ : v_ = "v".asInstanceOf[v_]
-  @scala.inline
-  def `vertical lineto`: `vertical lineto` = "vertical lineto".asInstanceOf[`vertical lineto`]
-  @scala.inline
-  def z_ : z_ = "z".asInstanceOf[z_]
+  @js.native
+  sealed trait z_ extends StObject
+  inline def z_ : z_ = "z".asInstanceOf[z_]
 }
-

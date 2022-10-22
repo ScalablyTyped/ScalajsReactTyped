@@ -1,34 +1,49 @@
 package typingsJapgolly.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<{  manualFilters  :boolean,   disableFilters  :boolean,   defaultCanFilter  :boolean,   filterTypes  :react-table.react-table.FilterTypes<D>,   autoResetFilters ? :boolean}> */
-trait UseFiltersOptions[D /* <: js.Object */] extends js.Object {
+/* Inlined std.Partial<{  manualFilters :boolean,   disableFilters :boolean,   defaultCanFilter :boolean,   filterTypes :react-table.react-table.FilterTypes<D>,   autoResetFilters :boolean | undefined}> */
+trait UseFiltersOptions[D /* <: js.Object */] extends StObject {
+  
   var autoResetFilters: js.UndefOr[Boolean] = js.undefined
+  
   var defaultCanFilter: js.UndefOr[Boolean] = js.undefined
+  
   var disableFilters: js.UndefOr[Boolean] = js.undefined
+  
   var filterTypes: js.UndefOr[FilterTypes[D]] = js.undefined
+  
   var manualFilters: js.UndefOr[Boolean] = js.undefined
 }
-
 object UseFiltersOptions {
-  @scala.inline
-  def apply[D /* <: js.Object */](
-    autoResetFilters: js.UndefOr[Boolean] = js.undefined,
-    defaultCanFilter: js.UndefOr[Boolean] = js.undefined,
-    disableFilters: js.UndefOr[Boolean] = js.undefined,
-    filterTypes: FilterTypes[D] = null,
-    manualFilters: js.UndefOr[Boolean] = js.undefined
-  ): UseFiltersOptions[D] = {
+  
+  inline def apply[D /* <: js.Object */](): UseFiltersOptions[D] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResetFilters)) __obj.updateDynamic("autoResetFilters")(autoResetFilters.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultCanFilter)) __obj.updateDynamic("defaultCanFilter")(defaultCanFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFilters)) __obj.updateDynamic("disableFilters")(disableFilters.asInstanceOf[js.Any])
-    if (filterTypes != null) __obj.updateDynamic("filterTypes")(filterTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(manualFilters)) __obj.updateDynamic("manualFilters")(manualFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseFiltersOptions[D]]
   }
+  
+  extension [Self <: UseFiltersOptions[?], D /* <: js.Object */](x: Self & UseFiltersOptions[D]) {
+    
+    inline def setAutoResetFilters(value: Boolean): Self = StObject.set(x, "autoResetFilters", value.asInstanceOf[js.Any])
+    
+    inline def setAutoResetFiltersUndefined: Self = StObject.set(x, "autoResetFilters", js.undefined)
+    
+    inline def setDefaultCanFilter(value: Boolean): Self = StObject.set(x, "defaultCanFilter", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultCanFilterUndefined: Self = StObject.set(x, "defaultCanFilter", js.undefined)
+    
+    inline def setDisableFilters(value: Boolean): Self = StObject.set(x, "disableFilters", value.asInstanceOf[js.Any])
+    
+    inline def setDisableFiltersUndefined: Self = StObject.set(x, "disableFilters", js.undefined)
+    
+    inline def setFilterTypes(value: FilterTypes[D]): Self = StObject.set(x, "filterTypes", value.asInstanceOf[js.Any])
+    
+    inline def setFilterTypesUndefined: Self = StObject.set(x, "filterTypes", js.undefined)
+    
+    inline def setManualFilters(value: Boolean): Self = StObject.set(x, "manualFilters", value.asInstanceOf[js.Any])
+    
+    inline def setManualFiltersUndefined: Self = StObject.set(x, "manualFilters", js.undefined)
+  }
 }
-

@@ -1,224 +1,151 @@
 package typingsJapgolly.xmlcreate
 
-import typingsJapgolly.xmlcreate.optionsMod.IDeclarationOptions
-import typingsJapgolly.xmlcreate.xmlAttributeMod.default
+import typingsJapgolly.xmlcreate.libNodesXmlAttributeMod.IXmlAttributeOptions
+import typingsJapgolly.xmlcreate.libNodesXmlAttributeMod.default
+import typingsJapgolly.xmlcreate.libNodesXmlAttributeTextMod.IXmlAttributeTextOptions
+import typingsJapgolly.xmlcreate.libNodesXmlCdataMod.IXmlCdataOptions
+import typingsJapgolly.xmlcreate.libNodesXmlCharDataMod.IXmlCharDataOptions
+import typingsJapgolly.xmlcreate.libNodesXmlCharRefMod.IXmlCharRefOptions
+import typingsJapgolly.xmlcreate.libNodesXmlCommentMod.IXmlCommentOptions
+import typingsJapgolly.xmlcreate.libNodesXmlDeclMod.IXmlDeclOptions
+import typingsJapgolly.xmlcreate.libNodesXmlDocumentMod.IXmlDocumentOptions
+import typingsJapgolly.xmlcreate.libNodesXmlDtdAttlistMod.IXmlDtdAttlistOptions
+import typingsJapgolly.xmlcreate.libNodesXmlDtdElementMod.IXmlDtdElementOptions
+import typingsJapgolly.xmlcreate.libNodesXmlDtdEntityMod.IXmlDtdEntityOptions
+import typingsJapgolly.xmlcreate.libNodesXmlDtdMod.IXmlDtdOptions
+import typingsJapgolly.xmlcreate.libNodesXmlDtdNotationMod.IXmlDtdNotationOptions
+import typingsJapgolly.xmlcreate.libNodesXmlDtdParamEntityRefMod.IXmlDtdParamEntityRefOptions
+import typingsJapgolly.xmlcreate.libNodesXmlElementMod.IXmlElementOptions
+import typingsJapgolly.xmlcreate.libNodesXmlEntityRefMod.IXmlEntityRefOptions
+import typingsJapgolly.xmlcreate.libNodesXmlProcInstMod.IXmlProcInstOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xmlcreate", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("xmlcreate", JSImport.Namespace)
   @js.native
-  class XmlAttribute protected () extends default {
-    def this(name: String, value: js.Array[typingsJapgolly.xmlcreate.xmlNodeMod.default]) = this()
-    /**
-      * Initializes a new instance of the {@link XmlAttribute} class.
-      *
-      * @param name The name of the XML attribute.
-      * @param value The initial value of the XML attribute. Additional children
-      *              can be added later. Only {@link XmlAttributeText},
-      *              {@link XmlCharRef}, and {@link XmlEntityRef} nodes are
-      *              permitted.
-      */
-    def this(name: String, value: typingsJapgolly.xmlcreate.xmlNodeMod.default) = this()
+  val ^ : js.Any = js.native
+  
+  @JSImport("xmlcreate", "XmlAttribute")
+  @js.native
+  open class XmlAttribute[Parent] protected () extends default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlAttributeOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlAttributeText")
   @js.native
-  class XmlAttributeText protected ()
-    extends typingsJapgolly.xmlcreate.xmlAttributeTextMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlAttributeText} class.
-      *
-      * @param text Text.
-      */
-    def this(text: String) = this()
+  open class XmlAttributeText[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlAttributeTextMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlAttributeTextOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlCdata")
   @js.native
-  class XmlCdata protected ()
-    extends typingsJapgolly.xmlcreate.xmlCdataMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlCdata} class.
-      *
-      * @param data The character data of the CDATA section.
-      */
-    def this(data: String) = this()
+  open class XmlCdata[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlCdataMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlCdataOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlCharData")
   @js.native
-  class XmlCharData protected ()
-    extends typingsJapgolly.xmlcreate.xmlCharDataMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlCharData} class.
-      *
-      * @param charData Character data.
-      */
-    def this(charData: String) = this()
+  open class XmlCharData[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlCharDataMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlCharDataOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlCharRef")
   @js.native
-  class XmlCharRef protected ()
-    extends typingsJapgolly.xmlcreate.xmlCharRefMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlCharRef} class.
-      *
-      * @param char The character to represent using the reference.
-      * @param hex Whether to use the hexadecimal or decimal representation for
-      *            the reference. If left undefined, decimal is the default.
-      */
-    def this(char: String) = this()
-    def this(char: String, hex: Boolean) = this()
+  open class XmlCharRef[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlCharRefMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlCharRefOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlComment")
   @js.native
-  class XmlComment protected ()
-    extends typingsJapgolly.xmlcreate.xmlCommentMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlComment} class.
-      *
-      * @param content The content of the comment.
-      */
-    def this(content: String) = this()
+  open class XmlComment[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlCommentMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlCommentOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlDecl")
   @js.native
-  /**
-    * Initializes a new instance of the {@link XmlDecl} class.
-    *
-    * @param options The options associated with the XML declaration.
-    */
-  class XmlDecl ()
-    extends typingsJapgolly.xmlcreate.xmlDeclMod.default {
-    def this(options: IDeclarationOptions) = this()
+  open class XmlDecl[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlDeclMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlDeclOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlDocument")
   @js.native
-  class XmlDocument protected ()
-    extends typingsJapgolly.xmlcreate.xmlDocumentMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlDocument} class.
-      *
-      * @param root The name of the root element.
-      */
-    def this(root: String) = this()
+  open class XmlDocument protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlDocumentMod.default {
+    def this(options: IXmlDocumentOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlDtd")
   @js.native
-  class XmlDtd protected ()
-    extends typingsJapgolly.xmlcreate.xmlDtdMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlDtd} class.
-      *
-      * @param name The name of the DTD.
-      * @param sysId The system identifier of the DTD, excluding quotation marks.
-      * @param pubId The public identifier of the DTD, excluding quotation marks.
-      *              If a public identifier is provided, a system identifier
-      *              must be provided as well.
-      */
-    def this(name: String) = this()
-    def this(name: String, sysId: String) = this()
-    def this(name: String, sysId: String, pubId: String) = this()
+  open class XmlDtd[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlDtdMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlDtdOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlDtdAttlist")
   @js.native
-  class XmlDtdAttlist protected ()
-    extends typingsJapgolly.xmlcreate.xmlDtdAttlistMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlDtdAttlist} class.
-      *
-      * @param text The text associated with the XML attribute-list declaration.
-      */
-    def this(text: String) = this()
+  open class XmlDtdAttlist[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlDtdAttlistMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlDtdAttlistOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlDtdElement")
   @js.native
-  class XmlDtdElement protected ()
-    extends typingsJapgolly.xmlcreate.xmlDtdElementMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlDtdElement} class.
-      *
-      * @param text The text associated with the XML element declaration.
-      */
-    def this(text: String) = this()
+  open class XmlDtdElement[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlDtdElementMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlDtdElementOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlDtdEntity")
   @js.native
-  class XmlDtdEntity protected ()
-    extends typingsJapgolly.xmlcreate.xmlDtdEntityMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlDtdEntity} class.
-      *
-      * @param text The text associated with the XML entity declaration.
-      */
-    def this(text: String) = this()
+  open class XmlDtdEntity[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlDtdEntityMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlDtdEntityOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlDtdNotation")
   @js.native
-  class XmlDtdNotation protected ()
-    extends typingsJapgolly.xmlcreate.xmlDtdNotationMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlDtdNotation} class.
-      *
-      * @param text The text associated with the XML notation declaration.
-      */
-    def this(text: String) = this()
+  open class XmlDtdNotation[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlDtdNotationMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlDtdNotationOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlDtdParamEntityRef")
   @js.native
-  class XmlDtdParamEntityRef protected ()
-    extends typingsJapgolly.xmlcreate.xmlDtdParamEntityRefMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlDtdParamEntityRef} class.
-      *
-      * @param entity The entity to be referenced.
-      */
-    def this(entity: String) = this()
+  open class XmlDtdParamEntityRef[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlDtdParamEntityRefMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlDtdParamEntityRefOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlElement")
   @js.native
-  class XmlElement protected ()
-    extends typingsJapgolly.xmlcreate.xmlElementMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlElement} class.
-      *
-      * @param name The name of the element.
-      */
-    def this(name: String) = this()
+  open class XmlElement[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlElementMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlElementOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlEntityRef")
   @js.native
-  class XmlEntityRef protected ()
-    extends typingsJapgolly.xmlcreate.xmlEntityRefMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlEntityRef} class.
-      *
-      * @param entity The entity to be referenced.
-      */
-    def this(entity: String) = this()
+  open class XmlEntityRef[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlEntityRefMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlEntityRefOptions) = this()
   }
   
+  @JSImport("xmlcreate", "XmlProcInst")
   @js.native
-  /**
-    * Initializes a new instance of the {@link XmlNode} class.
-    */
-  class XmlNode ()
-    extends typingsJapgolly.xmlcreate.xmlNodeMod.default
-  
-  @js.native
-  class XmlProcInst protected ()
-    extends typingsJapgolly.xmlcreate.xmlProcInstMod.default {
-    /**
-      * Initializes a new instance of the {@link XmlProcInst} class.
-      *
-      * @param target The target of the processing instruction.
-      * @param content The data of the processing instruction, or undefined if
-      *                there is no target.
-      */
-    def this(target: String) = this()
-    def this(target: String, content: String) = this()
+  open class XmlProcInst[Parent] protected ()
+    extends typingsJapgolly.xmlcreate.libNodesXmlProcInstMod.default[Parent] {
+    def this(parent: Parent, validation: Boolean, options: IXmlProcInstOptions) = this()
   }
   
-  def document(root: String): typingsJapgolly.xmlcreate.xmlDocumentMod.default = js.native
+  inline def document(): typingsJapgolly.xmlcreate.libNodesXmlDocumentMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("document")().asInstanceOf[typingsJapgolly.xmlcreate.libNodesXmlDocumentMod.default]
+  inline def document(options: IXmlDocumentOptions): typingsJapgolly.xmlcreate.libNodesXmlDocumentMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("document")(options.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.xmlcreate.libNodesXmlDocumentMod.default]
 }
-

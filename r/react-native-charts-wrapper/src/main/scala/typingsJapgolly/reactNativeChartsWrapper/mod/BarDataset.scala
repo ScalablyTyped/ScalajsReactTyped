@@ -1,26 +1,34 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BarDataset extends Dataset {
+trait BarDataset
+  extends StObject
+     with Dataset {
+  
   var config: js.UndefOr[BarDatasetConfig] = js.undefined
+  
   var values: js.UndefOr[js.Array[BarValue | Double | js.Array[Double]]] = js.undefined
 }
-
 object BarDataset {
-  @scala.inline
-  def apply(
-    config: BarDatasetConfig = null,
-    label: String = null,
-    values: js.Array[BarValue | Double | js.Array[Double]] = null
-  ): BarDataset = {
+  
+  inline def apply(): BarDataset = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarDataset]
   }
+  
+  extension [Self <: BarDataset](x: Self) {
+    
+    inline def setConfig(value: BarDatasetConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    
+    inline def setValues(value: js.Array[BarValue | Double | js.Array[Double]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: (BarValue | Double | js.Array[Double])*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

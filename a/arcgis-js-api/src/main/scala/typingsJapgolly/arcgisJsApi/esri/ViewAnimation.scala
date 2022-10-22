@@ -1,51 +1,46 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`waiting-for-target`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.finished
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.running
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.stopped
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewAnimation
-  extends Accessor
+  extends StObject
+     with Accessor
      with corePromise {
+  
   /**
-    * The state of the animation.  The animation terminates when the state is either `finished` or `stopped` and cannot transition again to `running`. The `finished` state indicates the animation has successfully ended, while the `stopped` state indicates that the animation was interrupted before it reached its final target.
+    * Finishes the view animation by immediately going to the target and sets the state of the animation to `finished`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#state)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#finish)
+    */
+  def finish(): scala.Unit = js.native
+  
+  /**
+    * The state of the animation.
     *
     * @default running
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#state)
     */
   val state: running | finished | stopped | `waiting-for-target` = js.native
+  
+  /**
+    * Stops the view animation at its current state and sets the state of the animation to `stopped`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#stop)
+    */
+  def stop(): scala.Unit = js.native
+  
   /**
     * The target of the animation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#target)
     */
   var target: Viewpoint = js.native
-  /**
-    * Finishes the view animation by immediately going to the target and sets the state of the animation to `finished`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#finish)
-    *
-    *
-    */
-  def finish(): Unit = js.native
-  /**
-    * Stops the view animation at its current state and sets the state of the animation to `stopped`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#stop)
-    *
-    *
-    */
-  def stop(): Unit = js.native
 }
-
-@JSGlobal("__esri.ViewAnimation")
-@js.native
-object ViewAnimation extends TopLevel[ViewAnimationConstructor]
-

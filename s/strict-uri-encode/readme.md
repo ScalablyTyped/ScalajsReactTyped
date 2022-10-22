@@ -11,9 +11,9 @@ A stricter URI encode adhering to RFC 3986
 | Full name          | strict-uri-encode |
 | Keywords           | component, encode, RFC3986, uri |
 | # releases         | 0 |
-| # dependents       | 57 |
-| # downloads        | 242971167 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5.9302406666666664E7 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://github.com/kevva/strict-uri-encode#readme)

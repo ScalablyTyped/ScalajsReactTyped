@@ -5,24 +5,24 @@ import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.ApplicationExec
 import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.IShareTargetActivatedEventArgs
 import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import typingsJapgolly.winrt.Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.WebUI.WebUIShareTargetActivatedEventArgs")
-@js.native
-class WebUIShareTargetActivatedEventArgs ()
-  extends IShareTargetActivatedEventArgs
-     with IActivatedEventArgsDeferral {
-  /* CompleteClass */
-  override var activatedOperation: ActivatedOperation = js.native
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var shareOperation: ShareOperation = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
+trait WebUIShareTargetActivatedEventArgs
+  extends StObject
+     with IShareTargetActivatedEventArgs
+     with IActivatedEventArgsDeferral
+object WebUIShareTargetActivatedEventArgs {
+  
+  inline def apply(
+    activatedOperation: ActivatedOperation,
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    shareOperation: ShareOperation,
+    splashScreen: SplashScreen
+  ): WebUIShareTargetActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], shareOperation = shareOperation.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebUIShareTargetActivatedEventArgs]
+  }
 }
-

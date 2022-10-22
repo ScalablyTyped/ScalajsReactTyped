@@ -1,41 +1,32 @@
 package typingsJapgolly.chrome.chrome.cast.media
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PlayerState extends js.Object
-
+sealed trait PlayerState extends StObject
 @JSGlobal("chrome.cast.media.PlayerState")
 @js.native
-object PlayerState extends js.Object {
-  @js.native
-  sealed trait BUFFERING extends PlayerState
+object PlayerState extends StObject {
   
   @js.native
-  sealed trait IDLE extends PlayerState
+  sealed trait BUFFERING
+    extends StObject
+       with PlayerState
   
   @js.native
-  sealed trait PAUSED extends PlayerState
+  sealed trait IDLE
+    extends StObject
+       with PlayerState
   
   @js.native
-  sealed trait PLAYING extends PlayerState
+  sealed trait PAUSED
+    extends StObject
+       with PlayerState
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PlayerState with String] = js.native
-  /* "BUFFERING" */ @js.native
-  object BUFFERING extends TopLevel[BUFFERING with String]
-  
-  /* "IDLE" */ @js.native
-  object IDLE extends TopLevel[IDLE with String]
-  
-  /* "PAUSED" */ @js.native
-  object PAUSED extends TopLevel[PAUSED with String]
-  
-  /* "PLAYING" */ @js.native
-  object PLAYING extends TopLevel[PLAYING with String]
-  
+  @js.native
+  sealed trait PLAYING
+    extends StObject
+       with PlayerState
 }
-

@@ -3,24 +3,6 @@
 
 Typings are for version 7.1
 
-## Library description:
-Babel compiler core.
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @babel/core |
-| Keywords           | 6to5, babel, classes, const, es6, harmony, let, modules, transpile, transpiler, var, babel-core, compiler |
-| # releases         | 54 |
-| # dependents       | 6743 |
-| # downloads        | 377163697 |
-| # stars            | 2 |
-
-## Links
-- [Homepage](https://babeljs.io/)
-- [Bugs](https://github.com/babel/babel/issues)
-- [Repository](https://github.com/babel/babel)
-- [Npm](https://www.npmjs.com/package/%40babel%2Fcore)
-    
 
 
 ## Note

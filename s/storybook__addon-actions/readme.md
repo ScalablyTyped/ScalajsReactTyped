@@ -1,23 +1,24 @@
 
 # Scala.js typings for storybook__addon-actions
 
-Typings are for version 5.3.13
+Typings are for version 6.5.12
 
 ## Library description:
-Action Logger addon for storybook
+Get UI feedback when an action is performed on an interactive element
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-actions |
-| Keywords           | storybook |
-| # releases         | 419 |
-| # dependents       | 180 |
-| # downloads        | 37833848 |
-| # stars            | 1 |
+| Keywords           | storybook, essentials, data-state |
+| # releases         | 462 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5752515666666666E7 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/addons/actions)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/addons/actions)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
+- [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-actions)
     
 

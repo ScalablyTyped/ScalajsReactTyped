@@ -1,15 +1,13 @@
 package typingsJapgolly.typescriptEventHandler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-event-handler", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class EventHandler[TInput] ()
-    extends typingsJapgolly.typescriptEventHandler.eventHandlerMod.EventHandler[TInput]
+object mod {
   
+  @JSImport("typescript-event-handler", "EventHandler")
+  @js.native
+  open class EventHandler[TInput] ()
+    extends typingsJapgolly.typescriptEventHandler.distEventHandlerMod.EventHandler[TInput]
 }
-

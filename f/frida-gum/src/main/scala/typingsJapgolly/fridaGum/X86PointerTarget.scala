@@ -1,24 +1,20 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.byte
   - typingsJapgolly.fridaGum.fridaGumStrings.dword
   - typingsJapgolly.fridaGum.fridaGumStrings.qword
 */
-trait X86PointerTarget extends js.Object
-
+trait X86PointerTarget extends StObject
 object X86PointerTarget {
-  @scala.inline
-  def byte: typingsJapgolly.fridaGum.fridaGumStrings.byte = this.cast("byte")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dword: typingsJapgolly.fridaGum.fridaGumStrings.dword = this.cast("dword")
-  @scala.inline
-  def qword: typingsJapgolly.fridaGum.fridaGumStrings.qword = this.cast("qword")
+  
+  inline def byte: typingsJapgolly.fridaGum.fridaGumStrings.byte = "byte".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.byte]
+  
+  inline def dword: typingsJapgolly.fridaGum.fridaGumStrings.dword = "dword".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.dword]
+  
+  inline def qword: typingsJapgolly.fridaGum.fridaGumStrings.qword = "qword".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.qword]
 }
-

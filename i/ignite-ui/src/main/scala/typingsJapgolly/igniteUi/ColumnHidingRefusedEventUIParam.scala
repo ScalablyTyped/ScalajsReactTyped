@@ -1,27 +1,38 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColumnHidingRefusedEventUIParam extends js.Object {
+trait ColumnHidingRefusedEventUIParam extends StObject {
+  
   /**
-  	 * Array of column keys. Has a value only if the column's key is a string.
-  	 */
-  var columnKeys: js.UndefOr[js.Array[_]] = js.undefined
+    * Array of column keys. Has a value only if the column's key is a string.
+    */
+  var columnKeys: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Gets a reference to the GridHiding widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the GridHiding widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ColumnHidingRefusedEventUIParam {
-  @scala.inline
-  def apply(columnKeys: js.Array[_] = null, owner: js.Any = null): ColumnHidingRefusedEventUIParam = {
+  
+  inline def apply(): ColumnHidingRefusedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKeys != null) __obj.updateDynamic("columnKeys")(columnKeys.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnHidingRefusedEventUIParam]
   }
+  
+  extension [Self <: ColumnHidingRefusedEventUIParam](x: Self) {
+    
+    inline def setColumnKeys(value: js.Array[Any]): Self = StObject.set(x, "columnKeys", value.asInstanceOf[js.Any])
+    
+    inline def setColumnKeysUndefined: Self = StObject.set(x, "columnKeys", js.undefined)
+    
+    inline def setColumnKeysVarargs(value: Any*): Self = StObject.set(x, "columnKeys", js.Array(value*))
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

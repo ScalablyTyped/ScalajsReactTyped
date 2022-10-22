@@ -1,29 +1,64 @@
 package typingsJapgolly.mjmlReact.mod
 
-import typingsJapgolly.csstype.mod.BackgroundColorProperty
-import typingsJapgolly.csstype.mod.VerticalAlignProperty
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import typingsJapgolly.csstype.mod.Property.BackgroundColor
+import typingsJapgolly.csstype.mod.Property.VerticalAlign
+import typingsJapgolly.mjmlReact.mjmlReactStrings.ltr
+import typingsJapgolly.mjmlReact.mjmlReactStrings.rtl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MjmlGroupProps extends js.Object {
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
-  var verticalAlign: js.UndefOr[VerticalAlignProperty[String | Double]] = js.undefined
+trait MjmlGroupProps extends StObject {
+  
+  var backgroundColor: js.UndefOr[BackgroundColor] = js.undefined
+  
+  var children: js.UndefOr[Node] = js.undefined
+  
+  var direction: js.UndefOr[ltr | rtl] = js.undefined
+  
+  var verticalAlign: js.UndefOr[VerticalAlign[String | Double]] = js.undefined
+  
   var width: js.UndefOr[String | Double] = js.undefined
 }
-
 object MjmlGroupProps {
-  @scala.inline
-  def apply(
-    backgroundColor: BackgroundColorProperty = null,
-    verticalAlign: VerticalAlignProperty[String | Double] = null,
-    width: String | Double = null
-  ): MjmlGroupProps = {
+  
+  inline def apply(): MjmlGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MjmlGroupProps]
   }
+  
+  extension [Self <: MjmlGroupProps](x: Self) {
+    
+    inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setVerticalAlign(value: VerticalAlign[String | Double]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

@@ -1,30 +1,30 @@
 package typingsJapgolly.dropboxjs.Dropbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Dropbox.AuthError")
-@js.native
-class AuthError protected () extends js.Object {
-  def this(queryString: QueryParams) = this()
-  var code: String = js.native
-  var description: String = js.native
-  var uri: String = js.native
+trait AuthError extends StObject {
+  
+  var code: String
+  
+  var description: String
+  
+  var uri: String
 }
-
-/* static members */
-@JSGlobal("Dropbox.AuthError")
-@js.native
-object AuthError extends js.Object {
-  var ACCESS_DENIED: String = js.native
-  var INVALID_GRANT: String = js.native
-  var INVALID_REQUEST: String = js.native
-  var INVALID_SCOPE: String = js.native
-  var SERVER_ERROR: String = js.native
-  var TEMPORARILY_UNAVAILABLE: String = js.native
-  var UNAUTHORIZED_CLIENT: String = js.native
-  var UNSUPPORTED_GRANT_TYPE: String = js.native
-  var UNSUPPORTED_RESPONSE_TYPE: String = js.native
+object AuthError {
+  
+  inline def apply(code: String, description: String, uri: String): AuthError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AuthError]
+  }
+  
+  extension [Self <: AuthError](x: Self) {
+    
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+  }
 }
-

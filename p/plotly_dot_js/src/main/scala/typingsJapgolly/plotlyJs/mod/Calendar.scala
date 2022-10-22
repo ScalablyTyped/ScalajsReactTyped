@@ -1,8 +1,8 @@
 package typingsJapgolly.plotlyJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.plotlyJs.plotlyJsStrings.gregorian
@@ -22,42 +22,38 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.plotlyJs.plotlyJsStrings.thai
   - typingsJapgolly.plotlyJs.plotlyJsStrings.ummalqura
 */
-trait Calendar extends js.Object
-
+trait Calendar extends StObject
 object Calendar {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def chinese: typingsJapgolly.plotlyJs.plotlyJsStrings.chinese = this.cast("chinese")
-  @scala.inline
-  def coptic: typingsJapgolly.plotlyJs.plotlyJsStrings.coptic = this.cast("coptic")
-  @scala.inline
-  def discworld: typingsJapgolly.plotlyJs.plotlyJsStrings.discworld = this.cast("discworld")
-  @scala.inline
-  def ethiopian: typingsJapgolly.plotlyJs.plotlyJsStrings.ethiopian = this.cast("ethiopian")
-  @scala.inline
-  def gregorian: typingsJapgolly.plotlyJs.plotlyJsStrings.gregorian = this.cast("gregorian")
-  @scala.inline
-  def hebrew: typingsJapgolly.plotlyJs.plotlyJsStrings.hebrew = this.cast("hebrew")
-  @scala.inline
-  def islamic: typingsJapgolly.plotlyJs.plotlyJsStrings.islamic = this.cast("islamic")
-  @scala.inline
-  def jalali: typingsJapgolly.plotlyJs.plotlyJsStrings.jalali = this.cast("jalali")
-  @scala.inline
-  def julian: typingsJapgolly.plotlyJs.plotlyJsStrings.julian = this.cast("julian")
-  @scala.inline
-  def mayan: typingsJapgolly.plotlyJs.plotlyJsStrings.mayan = this.cast("mayan")
-  @scala.inline
-  def nanakshahi: typingsJapgolly.plotlyJs.plotlyJsStrings.nanakshahi = this.cast("nanakshahi")
-  @scala.inline
-  def nepali: typingsJapgolly.plotlyJs.plotlyJsStrings.nepali = this.cast("nepali")
-  @scala.inline
-  def persian: typingsJapgolly.plotlyJs.plotlyJsStrings.persian = this.cast("persian")
-  @scala.inline
-  def taiwan: typingsJapgolly.plotlyJs.plotlyJsStrings.taiwan = this.cast("taiwan")
-  @scala.inline
-  def thai: typingsJapgolly.plotlyJs.plotlyJsStrings.thai = this.cast("thai")
-  @scala.inline
-  def ummalqura: typingsJapgolly.plotlyJs.plotlyJsStrings.ummalqura = this.cast("ummalqura")
+  
+  inline def chinese: typingsJapgolly.plotlyJs.plotlyJsStrings.chinese = "chinese".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.chinese]
+  
+  inline def coptic: typingsJapgolly.plotlyJs.plotlyJsStrings.coptic = "coptic".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.coptic]
+  
+  inline def discworld: typingsJapgolly.plotlyJs.plotlyJsStrings.discworld = "discworld".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.discworld]
+  
+  inline def ethiopian: typingsJapgolly.plotlyJs.plotlyJsStrings.ethiopian = "ethiopian".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.ethiopian]
+  
+  inline def gregorian: typingsJapgolly.plotlyJs.plotlyJsStrings.gregorian = "gregorian".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.gregorian]
+  
+  inline def hebrew: typingsJapgolly.plotlyJs.plotlyJsStrings.hebrew = "hebrew".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.hebrew]
+  
+  inline def islamic: typingsJapgolly.plotlyJs.plotlyJsStrings.islamic = "islamic".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.islamic]
+  
+  inline def jalali: typingsJapgolly.plotlyJs.plotlyJsStrings.jalali = "jalali".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.jalali]
+  
+  inline def julian: typingsJapgolly.plotlyJs.plotlyJsStrings.julian = "julian".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.julian]
+  
+  inline def mayan: typingsJapgolly.plotlyJs.plotlyJsStrings.mayan = "mayan".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.mayan]
+  
+  inline def nanakshahi: typingsJapgolly.plotlyJs.plotlyJsStrings.nanakshahi = "nanakshahi".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.nanakshahi]
+  
+  inline def nepali: typingsJapgolly.plotlyJs.plotlyJsStrings.nepali = "nepali".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.nepali]
+  
+  inline def persian: typingsJapgolly.plotlyJs.plotlyJsStrings.persian = "persian".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.persian]
+  
+  inline def taiwan: typingsJapgolly.plotlyJs.plotlyJsStrings.taiwan = "taiwan".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.taiwan]
+  
+  inline def thai: typingsJapgolly.plotlyJs.plotlyJsStrings.thai = "thai".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.thai]
+  
+  inline def ummalqura: typingsJapgolly.plotlyJs.plotlyJsStrings.ummalqura = "ummalqura".asInstanceOf[typingsJapgolly.plotlyJs.plotlyJsStrings.ummalqura]
 }
-

@@ -1,224 +1,180 @@
 package typingsJapgolly.activexPowerpoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexPowerpointStrings {
-  @js.native
-  sealed trait AfterNewPresentation extends js.Object
   
   @js.native
-  sealed trait AfterPresentationOpen extends js.Object
+  sealed trait AfterNewPresentation extends StObject
+  inline def AfterNewPresentation: AfterNewPresentation = "AfterNewPresentation".asInstanceOf[AfterNewPresentation]
   
   @js.native
-  sealed trait Cancel extends js.Object
+  sealed trait AfterPresentationOpen extends StObject
+  inline def AfterPresentationOpen: AfterPresentationOpen = "AfterPresentationOpen".asInstanceOf[AfterPresentationOpen]
   
   @js.native
-  sealed trait ColorSchemeChanged extends js.Object
+  sealed trait Cancel extends StObject
+  inline def Cancel: Cancel = "Cancel".asInstanceOf[Cancel]
   
   @js.native
-  sealed trait GotFocus extends js.Object
+  sealed trait ColorSchemeChanged extends StObject
+  inline def ColorSchemeChanged: ColorSchemeChanged = "ColorSchemeChanged".asInstanceOf[ColorSchemeChanged]
   
   @js.native
-  sealed trait LostFocus extends js.Object
+  sealed trait GotFocus extends StObject
+  inline def GotFocus: GotFocus = "GotFocus".asInstanceOf[GotFocus]
   
   @js.native
-  sealed trait NewPresentation extends js.Object
+  sealed trait LostFocus extends StObject
+  inline def LostFocus: LostFocus = "LostFocus".asInstanceOf[LostFocus]
   
   @js.native
-  sealed trait Pres extends js.Object
+  sealed trait NewPresentation extends StObject
+  inline def NewPresentation: NewPresentation = "NewPresentation".asInstanceOf[NewPresentation]
   
   @js.native
-  sealed trait PresentationBeforeClose extends js.Object
+  sealed trait Pres extends StObject
+  inline def Pres: Pres = "Pres".asInstanceOf[Pres]
   
   @js.native
-  sealed trait PresentationBeforeSave extends js.Object
+  sealed trait PresentationBeforeClose extends StObject
+  inline def PresentationBeforeClose: PresentationBeforeClose = "PresentationBeforeClose".asInstanceOf[PresentationBeforeClose]
   
   @js.native
-  sealed trait PresentationClose extends js.Object
+  sealed trait PresentationBeforeSave extends StObject
+  inline def PresentationBeforeSave: PresentationBeforeSave = "PresentationBeforeSave".asInstanceOf[PresentationBeforeSave]
   
   @js.native
-  sealed trait PresentationCloseFinal extends js.Object
+  sealed trait PresentationClose extends StObject
+  inline def PresentationClose: PresentationClose = "PresentationClose".asInstanceOf[PresentationClose]
   
   @js.native
-  sealed trait PresentationNewSlide extends js.Object
+  sealed trait PresentationCloseFinal extends StObject
+  inline def PresentationCloseFinal: PresentationCloseFinal = "PresentationCloseFinal".asInstanceOf[PresentationCloseFinal]
   
   @js.native
-  sealed trait PresentationOpen extends js.Object
+  sealed trait PresentationNewSlide extends StObject
+  inline def PresentationNewSlide: PresentationNewSlide = "PresentationNewSlide".asInstanceOf[PresentationNewSlide]
   
   @js.native
-  sealed trait PresentationPrint extends js.Object
+  sealed trait PresentationOpen extends StObject
+  inline def PresentationOpen: PresentationOpen = "PresentationOpen".asInstanceOf[PresentationOpen]
   
   @js.native
-  sealed trait PresentationSave extends js.Object
+  sealed trait PresentationPrint extends StObject
+  inline def PresentationPrint: PresentationPrint = "PresentationPrint".asInstanceOf[PresentationPrint]
   
   @js.native
-  sealed trait PresentationSync extends js.Object
+  sealed trait PresentationSave extends StObject
+  inline def PresentationSave: PresentationSave = "PresentationSave".asInstanceOf[PresentationSave]
   
   @js.native
-  sealed trait ProtViewWindow extends js.Object
+  sealed trait PresentationSync extends StObject
+  inline def PresentationSync: PresentationSync = "PresentationSync".asInstanceOf[PresentationSync]
   
   @js.native
-  sealed trait ProtectedViewCloseReason extends js.Object
+  sealed trait ProtViewWindow extends StObject
+  inline def ProtViewWindow: ProtViewWindow = "ProtViewWindow".asInstanceOf[ProtViewWindow]
   
   @js.native
-  sealed trait ProtectedViewWindowActivate extends js.Object
+  sealed trait ProtectedViewCloseReason extends StObject
+  inline def ProtectedViewCloseReason: ProtectedViewCloseReason = "ProtectedViewCloseReason".asInstanceOf[ProtectedViewCloseReason]
   
   @js.native
-  sealed trait ProtectedViewWindowBeforeClose extends js.Object
+  sealed trait ProtectedViewWindowActivate extends StObject
+  inline def ProtectedViewWindowActivate: ProtectedViewWindowActivate = "ProtectedViewWindowActivate".asInstanceOf[ProtectedViewWindowActivate]
   
   @js.native
-  sealed trait ProtectedViewWindowBeforeEdit extends js.Object
+  sealed trait ProtectedViewWindowBeforeClose extends StObject
+  inline def ProtectedViewWindowBeforeClose: ProtectedViewWindowBeforeClose = "ProtectedViewWindowBeforeClose".asInstanceOf[ProtectedViewWindowBeforeClose]
   
   @js.native
-  sealed trait ProtectedViewWindowDeactivate extends js.Object
+  sealed trait ProtectedViewWindowBeforeEdit extends StObject
+  inline def ProtectedViewWindowBeforeEdit: ProtectedViewWindowBeforeEdit = "ProtectedViewWindowBeforeEdit".asInstanceOf[ProtectedViewWindowBeforeEdit]
   
   @js.native
-  sealed trait ProtectedViewWindowOpen extends js.Object
+  sealed trait ProtectedViewWindowDeactivate extends StObject
+  inline def ProtectedViewWindowDeactivate: ProtectedViewWindowDeactivate = "ProtectedViewWindowDeactivate".asInstanceOf[ProtectedViewWindowDeactivate]
   
   @js.native
-  sealed trait Sel extends js.Object
+  sealed trait ProtectedViewWindowOpen extends StObject
+  inline def ProtectedViewWindowOpen: ProtectedViewWindowOpen = "ProtectedViewWindowOpen".asInstanceOf[ProtectedViewWindowOpen]
   
   @js.native
-  sealed trait Sld extends js.Object
+  sealed trait Sel extends StObject
+  inline def Sel: Sel = "Sel".asInstanceOf[Sel]
   
   @js.native
-  sealed trait SldRange extends js.Object
+  sealed trait Sld extends StObject
+  inline def Sld: Sld = "Sld".asInstanceOf[Sld]
   
   @js.native
-  sealed trait SlideSelectionChanged extends js.Object
+  sealed trait SldRange extends StObject
+  inline def SldRange: SldRange = "SldRange".asInstanceOf[SldRange]
   
   @js.native
-  sealed trait SlideShowBegin extends js.Object
+  sealed trait SlideSelectionChanged extends StObject
+  inline def SlideSelectionChanged: SlideSelectionChanged = "SlideSelectionChanged".asInstanceOf[SlideSelectionChanged]
   
   @js.native
-  sealed trait SlideShowEnd extends js.Object
+  sealed trait SlideShowBegin extends StObject
+  inline def SlideShowBegin: SlideShowBegin = "SlideShowBegin".asInstanceOf[SlideShowBegin]
   
   @js.native
-  sealed trait SlideShowNextBuild extends js.Object
+  sealed trait SlideShowEnd extends StObject
+  inline def SlideShowEnd: SlideShowEnd = "SlideShowEnd".asInstanceOf[SlideShowEnd]
   
   @js.native
-  sealed trait SlideShowNextClick extends js.Object
+  sealed trait SlideShowNextBuild extends StObject
+  inline def SlideShowNextBuild: SlideShowNextBuild = "SlideShowNextBuild".asInstanceOf[SlideShowNextBuild]
   
   @js.native
-  sealed trait SlideShowNextSlide extends js.Object
+  sealed trait SlideShowNextClick extends StObject
+  inline def SlideShowNextClick: SlideShowNextClick = "SlideShowNextClick".asInstanceOf[SlideShowNextClick]
   
   @js.native
-  sealed trait SlideShowOnNext extends js.Object
+  sealed trait SlideShowNextSlide extends StObject
+  inline def SlideShowNextSlide: SlideShowNextSlide = "SlideShowNextSlide".asInstanceOf[SlideShowNextSlide]
   
   @js.native
-  sealed trait SlideShowOnPrevious extends js.Object
+  sealed trait SlideShowOnNext extends StObject
+  inline def SlideShowOnNext: SlideShowOnNext = "SlideShowOnNext".asInstanceOf[SlideShowOnNext]
   
   @js.native
-  sealed trait SyncEventType extends js.Object
+  sealed trait SlideShowOnPrevious extends StObject
+  inline def SlideShowOnPrevious: SlideShowOnPrevious = "SlideShowOnPrevious".asInstanceOf[SlideShowOnPrevious]
   
   @js.native
-  sealed trait WindowActivate extends js.Object
+  sealed trait SyncEventType extends StObject
+  inline def SyncEventType: SyncEventType = "SyncEventType".asInstanceOf[SyncEventType]
   
   @js.native
-  sealed trait WindowBeforeDoubleClick extends js.Object
+  sealed trait WindowActivate extends StObject
+  inline def WindowActivate: WindowActivate = "WindowActivate".asInstanceOf[WindowActivate]
   
   @js.native
-  sealed trait WindowBeforeRightClick extends js.Object
+  sealed trait WindowBeforeDoubleClick extends StObject
+  inline def WindowBeforeDoubleClick: WindowBeforeDoubleClick = "WindowBeforeDoubleClick".asInstanceOf[WindowBeforeDoubleClick]
   
   @js.native
-  sealed trait WindowDeactivate extends js.Object
+  sealed trait WindowBeforeRightClick extends StObject
+  inline def WindowBeforeRightClick: WindowBeforeRightClick = "WindowBeforeRightClick".asInstanceOf[WindowBeforeRightClick]
   
   @js.native
-  sealed trait WindowSelectionChange extends js.Object
+  sealed trait WindowDeactivate extends StObject
+  inline def WindowDeactivate: WindowDeactivate = "WindowDeactivate".asInstanceOf[WindowDeactivate]
   
   @js.native
-  sealed trait Wn extends js.Object
+  sealed trait WindowSelectionChange extends StObject
+  inline def WindowSelectionChange: WindowSelectionChange = "WindowSelectionChange".asInstanceOf[WindowSelectionChange]
   
   @js.native
-  sealed trait nEffect extends js.Object
+  sealed trait Wn extends StObject
+  inline def Wn: Wn = "Wn".asInstanceOf[Wn]
   
-  @scala.inline
-  def AfterNewPresentation: AfterNewPresentation = "AfterNewPresentation".asInstanceOf[AfterNewPresentation]
-  @scala.inline
-  def AfterPresentationOpen: AfterPresentationOpen = "AfterPresentationOpen".asInstanceOf[AfterPresentationOpen]
-  @scala.inline
-  def Cancel: Cancel = "Cancel".asInstanceOf[Cancel]
-  @scala.inline
-  def ColorSchemeChanged: ColorSchemeChanged = "ColorSchemeChanged".asInstanceOf[ColorSchemeChanged]
-  @scala.inline
-  def GotFocus: GotFocus = "GotFocus".asInstanceOf[GotFocus]
-  @scala.inline
-  def LostFocus: LostFocus = "LostFocus".asInstanceOf[LostFocus]
-  @scala.inline
-  def NewPresentation: NewPresentation = "NewPresentation".asInstanceOf[NewPresentation]
-  @scala.inline
-  def Pres: Pres = "Pres".asInstanceOf[Pres]
-  @scala.inline
-  def PresentationBeforeClose: PresentationBeforeClose = "PresentationBeforeClose".asInstanceOf[PresentationBeforeClose]
-  @scala.inline
-  def PresentationBeforeSave: PresentationBeforeSave = "PresentationBeforeSave".asInstanceOf[PresentationBeforeSave]
-  @scala.inline
-  def PresentationClose: PresentationClose = "PresentationClose".asInstanceOf[PresentationClose]
-  @scala.inline
-  def PresentationCloseFinal: PresentationCloseFinal = "PresentationCloseFinal".asInstanceOf[PresentationCloseFinal]
-  @scala.inline
-  def PresentationNewSlide: PresentationNewSlide = "PresentationNewSlide".asInstanceOf[PresentationNewSlide]
-  @scala.inline
-  def PresentationOpen: PresentationOpen = "PresentationOpen".asInstanceOf[PresentationOpen]
-  @scala.inline
-  def PresentationPrint: PresentationPrint = "PresentationPrint".asInstanceOf[PresentationPrint]
-  @scala.inline
-  def PresentationSave: PresentationSave = "PresentationSave".asInstanceOf[PresentationSave]
-  @scala.inline
-  def PresentationSync: PresentationSync = "PresentationSync".asInstanceOf[PresentationSync]
-  @scala.inline
-  def ProtViewWindow: ProtViewWindow = "ProtViewWindow".asInstanceOf[ProtViewWindow]
-  @scala.inline
-  def ProtectedViewCloseReason: ProtectedViewCloseReason = "ProtectedViewCloseReason".asInstanceOf[ProtectedViewCloseReason]
-  @scala.inline
-  def ProtectedViewWindowActivate: ProtectedViewWindowActivate = "ProtectedViewWindowActivate".asInstanceOf[ProtectedViewWindowActivate]
-  @scala.inline
-  def ProtectedViewWindowBeforeClose: ProtectedViewWindowBeforeClose = "ProtectedViewWindowBeforeClose".asInstanceOf[ProtectedViewWindowBeforeClose]
-  @scala.inline
-  def ProtectedViewWindowBeforeEdit: ProtectedViewWindowBeforeEdit = "ProtectedViewWindowBeforeEdit".asInstanceOf[ProtectedViewWindowBeforeEdit]
-  @scala.inline
-  def ProtectedViewWindowDeactivate: ProtectedViewWindowDeactivate = "ProtectedViewWindowDeactivate".asInstanceOf[ProtectedViewWindowDeactivate]
-  @scala.inline
-  def ProtectedViewWindowOpen: ProtectedViewWindowOpen = "ProtectedViewWindowOpen".asInstanceOf[ProtectedViewWindowOpen]
-  @scala.inline
-  def Sel: Sel = "Sel".asInstanceOf[Sel]
-  @scala.inline
-  def Sld: Sld = "Sld".asInstanceOf[Sld]
-  @scala.inline
-  def SldRange: SldRange = "SldRange".asInstanceOf[SldRange]
-  @scala.inline
-  def SlideSelectionChanged: SlideSelectionChanged = "SlideSelectionChanged".asInstanceOf[SlideSelectionChanged]
-  @scala.inline
-  def SlideShowBegin: SlideShowBegin = "SlideShowBegin".asInstanceOf[SlideShowBegin]
-  @scala.inline
-  def SlideShowEnd: SlideShowEnd = "SlideShowEnd".asInstanceOf[SlideShowEnd]
-  @scala.inline
-  def SlideShowNextBuild: SlideShowNextBuild = "SlideShowNextBuild".asInstanceOf[SlideShowNextBuild]
-  @scala.inline
-  def SlideShowNextClick: SlideShowNextClick = "SlideShowNextClick".asInstanceOf[SlideShowNextClick]
-  @scala.inline
-  def SlideShowNextSlide: SlideShowNextSlide = "SlideShowNextSlide".asInstanceOf[SlideShowNextSlide]
-  @scala.inline
-  def SlideShowOnNext: SlideShowOnNext = "SlideShowOnNext".asInstanceOf[SlideShowOnNext]
-  @scala.inline
-  def SlideShowOnPrevious: SlideShowOnPrevious = "SlideShowOnPrevious".asInstanceOf[SlideShowOnPrevious]
-  @scala.inline
-  def SyncEventType: SyncEventType = "SyncEventType".asInstanceOf[SyncEventType]
-  @scala.inline
-  def WindowActivate: WindowActivate = "WindowActivate".asInstanceOf[WindowActivate]
-  @scala.inline
-  def WindowBeforeDoubleClick: WindowBeforeDoubleClick = "WindowBeforeDoubleClick".asInstanceOf[WindowBeforeDoubleClick]
-  @scala.inline
-  def WindowBeforeRightClick: WindowBeforeRightClick = "WindowBeforeRightClick".asInstanceOf[WindowBeforeRightClick]
-  @scala.inline
-  def WindowDeactivate: WindowDeactivate = "WindowDeactivate".asInstanceOf[WindowDeactivate]
-  @scala.inline
-  def WindowSelectionChange: WindowSelectionChange = "WindowSelectionChange".asInstanceOf[WindowSelectionChange]
-  @scala.inline
-  def Wn: Wn = "Wn".asInstanceOf[Wn]
-  @scala.inline
-  def nEffect: nEffect = "nEffect".asInstanceOf[nEffect]
+  @js.native
+  sealed trait nEffect extends StObject
+  inline def nEffect: nEffect = "nEffect".asInstanceOf[nEffect]
 }
-

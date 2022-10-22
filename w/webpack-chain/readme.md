@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-chain
 
-Typings are for version 6.4.0
+Typings are for version 6.5.1
 
 ## Library description:
 [![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads]][npm-url] [![Build Status][travis-image]][travis-url]
@@ -10,15 +10,12 @@ Typings are for version 6.4.0
 | ------------------ | :-------------: |
 | Full name          | webpack-chain |
 | Keywords           | webpack, config, chain, fluent, api |
-| # releases         | 19 |
-| # dependents       | 232 |
-| # downloads        | 16910263 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5067172.0 |
+| # stars            | 2951.0 |
 
 ## Links
-- [Homepage](https://github.com/neutrinojs/webpack-chain#readme)
-- [Bugs](https://github.com/neutrinojs/webpack-chain/issues)
-- [Repository](https://github.com/neutrinojs/webpack-chain)
 - [Npm](https://www.npmjs.com/package/webpack-chain)
     
 

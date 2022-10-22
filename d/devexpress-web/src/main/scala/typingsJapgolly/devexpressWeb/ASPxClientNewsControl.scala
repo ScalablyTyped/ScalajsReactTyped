@@ -1,29 +1,19 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxNewsControl object.
   */
-@JSGlobal("ASPxClientNewsControl")
 @js.native
-class ASPxClientNewsControl () extends ASPxClientDataView {
+trait ASPxClientNewsControl
+  extends StObject
+     with ASPxClientDataView {
+  
   /**
     * Fires after an item's tail has been clicked.
     */
   var TailClick: ASPxClientEvent[ASPxClientNewsControlItemEventHandler[ASPxClientNewsControl]] = js.native
 }
-
-/* static members */
-@JSGlobal("ASPxClientNewsControl")
-@js.native
-object ASPxClientNewsControl extends js.Object {
-  /**
-    * Converts the specified object to the ASPxClientNewsControl type. The converted client object specified by the obj parameter.
-    * @param obj The client object to be type cast.
-    */
-  def Cast(obj: js.Any): ASPxClientNewsControl = js.native
-}
-

@@ -1,33 +1,44 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client events that are related to data validation (see ASPxClientEdit.Validate).
   */
-@JSGlobal("ASPxClientEditValidationEventArgs")
-@js.native
-class ASPxClientEditValidationEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientEditValidationEventArgs class with the specified settings.
-    * @param value An object that represents the validated value.
-    * @param errorText A string representing the error description.
-    * @param isValid true if the validated value is valid; otherwise, false.
-    */
-  def this(value: String, errorText: String, isValid: Boolean) = this()
+trait ASPxClientEditValidationEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets or sets the error description.
     */
-  var errorText: String = js.native
+  var errorText: String
+  
   /**
     * Gets or sets a value specifying whether the validated value is valid.
     */
-  var isValid: Boolean = js.native
+  var isValid: Boolean
+  
   /**
     * Gets or sets the editor's value being validated.
     */
-  var value: String = js.native
+  var value: String
 }
-
+object ASPxClientEditValidationEventArgs {
+  
+  inline def apply(errorText: String, isValid: Boolean, value: String): ASPxClientEditValidationEventArgs = {
+    val __obj = js.Dynamic.literal(errorText = errorText.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientEditValidationEventArgs]
+  }
+  
+  extension [Self <: ASPxClientEditValidationEventArgs](x: Self) {
+    
+    inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
+    
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
+}

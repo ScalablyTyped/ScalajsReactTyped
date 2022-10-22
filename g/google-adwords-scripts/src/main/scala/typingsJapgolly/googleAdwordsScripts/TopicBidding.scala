@@ -2,22 +2,29 @@ package typingsJapgolly.googleAdwordsScripts
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TopicBidding extends AdWordsBidding {
+trait TopicBidding
+  extends StObject
+     with AdWordsBidding {
+  
   def clearCpc(): Unit
+  
   def clearCpm(): Unit
+  
   def getCpc(): Double
+  
   def getCpm(): Double
+  
   def setCpc(cpc: Double): Unit
+  
   def setCpm(cpm: Double): Unit
 }
-
 object TopicBidding {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     clearCpc: Callback,
     clearCpm: Callback,
     getCpc: CallbackTo[Double],
@@ -28,17 +35,22 @@ object TopicBidding {
     setCpc: Double => Callback,
     setCpm: Double => Callback
   ): TopicBidding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearCpc")(clearCpc.toJsFn)
-    __obj.updateDynamic("clearCpm")(clearCpm.toJsFn)
-    __obj.updateDynamic("getCpc")(getCpc.toJsFn)
-    __obj.updateDynamic("getCpm")(getCpm.toJsFn)
-    __obj.updateDynamic("getStrategy")(getStrategy.toJsFn)
-    __obj.updateDynamic("getStrategySource")(getStrategySource.toJsFn)
-    __obj.updateDynamic("getStrategyType")(getStrategyType.toJsFn)
-    __obj.updateDynamic("setCpc")(js.Any.fromFunction1((t0: scala.Double) => setCpc(t0).runNow()))
-    __obj.updateDynamic("setCpm")(js.Any.fromFunction1((t0: scala.Double) => setCpm(t0).runNow()))
+    val __obj = js.Dynamic.literal(clearCpc = clearCpc.toJsFn, clearCpm = clearCpm.toJsFn, getCpc = getCpc.toJsFn, getCpm = getCpm.toJsFn, getStrategy = getStrategy.toJsFn, getStrategySource = getStrategySource.toJsFn, getStrategyType = getStrategyType.toJsFn, setCpc = js.Any.fromFunction1((t0: Double) => setCpc(t0).runNow()), setCpm = js.Any.fromFunction1((t0: Double) => setCpm(t0).runNow()))
     __obj.asInstanceOf[TopicBidding]
   }
+  
+  extension [Self <: TopicBidding](x: Self) {
+    
+    inline def setClearCpc(value: Callback): Self = StObject.set(x, "clearCpc", value.toJsFn)
+    
+    inline def setClearCpm(value: Callback): Self = StObject.set(x, "clearCpm", value.toJsFn)
+    
+    inline def setGetCpc(value: CallbackTo[Double]): Self = StObject.set(x, "getCpc", value.toJsFn)
+    
+    inline def setGetCpm(value: CallbackTo[Double]): Self = StObject.set(x, "getCpm", value.toJsFn)
+    
+    inline def setSetCpc(value: Double => Callback): Self = StObject.set(x, "setCpc", js.Any.fromFunction1((t0: Double) => value(t0).runNow()))
+    
+    inline def setSetCpm(value: Double => Callback): Self = StObject.set(x, "setCpm", js.Any.fromFunction1((t0: Double) => value(t0).runNow()))
+  }
 }
-

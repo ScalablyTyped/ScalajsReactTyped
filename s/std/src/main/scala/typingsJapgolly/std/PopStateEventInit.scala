@@ -1,27 +1,27 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PopStateEventInit extends EventInit {
-  var state: js.UndefOr[js.Any] = js.undefined
+trait PopStateEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
+  var state: js.UndefOr[Any] = js.undefined
 }
-
 object PopStateEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    state: js.Any = null
-  ): PopStateEventInit = {
+  
+  inline def apply(): PopStateEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopStateEventInit]
   }
+  
+  extension [Self <: PopStateEventInit](x: Self) {
+    
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+  }
 }
-

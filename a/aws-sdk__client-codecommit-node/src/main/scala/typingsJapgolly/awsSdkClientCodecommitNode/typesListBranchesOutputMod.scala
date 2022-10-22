@@ -1,30 +1,53 @@
 package typingsJapgolly.awsSdkClientCodecommitNode
 
-import typingsJapgolly.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientCodecommitNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/types/ListBranchesOutput", JSImport.Namespace)
-@js.native
-object typesListBranchesOutputMod extends js.Object {
-  @js.native
-  trait ListBranchesOutput extends OutputTypesUnion {
+object typesListBranchesOutputMod {
+  
+  trait ListBranchesOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>The list of branch names.</p>
       */
-    var branches: js.UndefOr[js.Array[String]] = js.native
+    var branches: js.UndefOr[js.Array[String]] = js.undefined
+    
     /**
       * <p>An enumeration token that returns the batch of the results.</p>
       */
-    var nextToken: js.UndefOr[String] = js.native
+    var nextToken: js.UndefOr[String] = js.undefined
   }
-  
+  object ListBranchesOutput {
+    
+    inline def apply($metadata: ResponseMetadata): ListBranchesOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ListBranchesOutput]
+    }
+    
+    extension [Self <: ListBranchesOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setBranches(value: js.Array[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      
+      inline def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
+      
+      inline def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value*))
+      
+      inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    }
+  }
 }
-

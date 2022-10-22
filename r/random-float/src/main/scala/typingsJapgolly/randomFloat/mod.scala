@@ -1,14 +1,14 @@
 package typingsJapgolly.randomFloat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("random-float", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): Double = js.native
-  def apply(maximumValue: Double): Double = js.native
-  def apply(minimumValue: Double, maximumValue: Double): Double = js.native
+object mod {
+  
+  @JSImport("random-float", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(minimum: Double, maximum: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

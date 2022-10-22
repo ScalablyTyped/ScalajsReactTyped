@@ -1,263 +1,231 @@
 package typingsJapgolly.officeJs.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CategoryColor extends js.Object
-
+sealed trait CategoryColor extends StObject
 /**
   * Specifies the category color.
-  * 
+  *
   * **Note**: The actual color depends on how the Outlook client renders it.
   * In this case, the colors noted on each preset are for the Outlook desktop client.
-  * 
-  * [Api set: Mailbox 1.8]
-  * 
+  *
   * @remarks
-  * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * [Api set: Mailbox 1.8]
+  *
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.CategoryColor")
 @js.native
-object CategoryColor extends js.Object {
+object CategoryColor extends StObject {
+  
   /**
     * Default color or no color mapped.
     */
   @js.native
-  sealed trait None extends CategoryColor
+  sealed trait None
+    extends StObject
+       with CategoryColor
   
   /**
     * Red
     */
   @js.native
-  sealed trait Preset0 extends CategoryColor
+  sealed trait Preset0
+    extends StObject
+       with CategoryColor
   
   /**
     * Orange
     */
   @js.native
-  sealed trait Preset1 extends CategoryColor
+  sealed trait Preset1
+    extends StObject
+       with CategoryColor
   
   /**
     * Steel
     */
   @js.native
-  sealed trait Preset10 extends CategoryColor
+  sealed trait Preset10
+    extends StObject
+       with CategoryColor
   
   /**
     * DarkSteel
     */
   @js.native
-  sealed trait Preset11 extends CategoryColor
+  sealed trait Preset11
+    extends StObject
+       with CategoryColor
   
   /**
     * Gray
     */
   @js.native
-  sealed trait Preset12 extends CategoryColor
+  sealed trait Preset12
+    extends StObject
+       with CategoryColor
   
   /**
     * DarkGray
     */
   @js.native
-  sealed trait Preset13 extends CategoryColor
+  sealed trait Preset13
+    extends StObject
+       with CategoryColor
   
   /**
     * Black
     */
   @js.native
-  sealed trait Preset14 extends CategoryColor
+  sealed trait Preset14
+    extends StObject
+       with CategoryColor
   
   /**
     * DarkRed
     */
   @js.native
-  sealed trait Preset15 extends CategoryColor
+  sealed trait Preset15
+    extends StObject
+       with CategoryColor
   
   /**
     * DarkOrange
     */
   @js.native
-  sealed trait Preset16 extends CategoryColor
+  sealed trait Preset16
+    extends StObject
+       with CategoryColor
   
   /**
     * DarkBrown
     */
   @js.native
-  sealed trait Preset17 extends CategoryColor
+  sealed trait Preset17
+    extends StObject
+       with CategoryColor
   
   /**
     * DarkYellow
     */
   @js.native
-  sealed trait Preset18 extends CategoryColor
+  sealed trait Preset18
+    extends StObject
+       with CategoryColor
   
   /**
     * DarkGreen
     */
   @js.native
-  sealed trait Preset19 extends CategoryColor
+  sealed trait Preset19
+    extends StObject
+       with CategoryColor
   
   /**
     * Brown
     */
   @js.native
-  sealed trait Preset2 extends CategoryColor
+  sealed trait Preset2
+    extends StObject
+       with CategoryColor
   
   /**
     * DarkTeal
     */
   @js.native
-  sealed trait Preset20 extends CategoryColor
+  sealed trait Preset20
+    extends StObject
+       with CategoryColor
   
   /**
     * DarkOlive
     */
   @js.native
-  sealed trait Preset21 extends CategoryColor
+  sealed trait Preset21
+    extends StObject
+       with CategoryColor
   
   /**
     * DarkBlue
     */
   @js.native
-  sealed trait Preset22 extends CategoryColor
+  sealed trait Preset22
+    extends StObject
+       with CategoryColor
   
   /**
     * DarkPurple
     */
   @js.native
-  sealed trait Preset23 extends CategoryColor
+  sealed trait Preset23
+    extends StObject
+       with CategoryColor
   
   /**
     * DarkCranberry
     */
   @js.native
-  sealed trait Preset24 extends CategoryColor
+  sealed trait Preset24
+    extends StObject
+       with CategoryColor
   
   /**
     * Yellow
     */
   @js.native
-  sealed trait Preset3 extends CategoryColor
+  sealed trait Preset3
+    extends StObject
+       with CategoryColor
   
   /**
     * Green
     */
   @js.native
-  sealed trait Preset4 extends CategoryColor
+  sealed trait Preset4
+    extends StObject
+       with CategoryColor
   
   /**
     * Teal
     */
   @js.native
-  sealed trait Preset5 extends CategoryColor
+  sealed trait Preset5
+    extends StObject
+       with CategoryColor
   
   /**
     * Olive
     */
   @js.native
-  sealed trait Preset6 extends CategoryColor
+  sealed trait Preset6
+    extends StObject
+       with CategoryColor
   
   /**
     * Blue
     */
   @js.native
-  sealed trait Preset7 extends CategoryColor
+  sealed trait Preset7
+    extends StObject
+       with CategoryColor
   
   /**
     * Purple
     */
   @js.native
-  sealed trait Preset8 extends CategoryColor
+  sealed trait Preset8
+    extends StObject
+       with CategoryColor
   
   /**
     * Cranberry
     */
   @js.native
-  sealed trait Preset9 extends CategoryColor
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CategoryColor with Double] = js.native
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 1 */ @js.native
-  object Preset0 extends TopLevel[Preset0 with Double]
-  
-  /* 2 */ @js.native
-  object Preset1 extends TopLevel[Preset1 with Double]
-  
-  /* 11 */ @js.native
-  object Preset10 extends TopLevel[Preset10 with Double]
-  
-  /* 12 */ @js.native
-  object Preset11 extends TopLevel[Preset11 with Double]
-  
-  /* 13 */ @js.native
-  object Preset12 extends TopLevel[Preset12 with Double]
-  
-  /* 14 */ @js.native
-  object Preset13 extends TopLevel[Preset13 with Double]
-  
-  /* 15 */ @js.native
-  object Preset14 extends TopLevel[Preset14 with Double]
-  
-  /* 16 */ @js.native
-  object Preset15 extends TopLevel[Preset15 with Double]
-  
-  /* 17 */ @js.native
-  object Preset16 extends TopLevel[Preset16 with Double]
-  
-  /* 18 */ @js.native
-  object Preset17 extends TopLevel[Preset17 with Double]
-  
-  /* 19 */ @js.native
-  object Preset18 extends TopLevel[Preset18 with Double]
-  
-  /* 20 */ @js.native
-  object Preset19 extends TopLevel[Preset19 with Double]
-  
-  /* 3 */ @js.native
-  object Preset2 extends TopLevel[Preset2 with Double]
-  
-  /* 21 */ @js.native
-  object Preset20 extends TopLevel[Preset20 with Double]
-  
-  /* 22 */ @js.native
-  object Preset21 extends TopLevel[Preset21 with Double]
-  
-  /* 23 */ @js.native
-  object Preset22 extends TopLevel[Preset22 with Double]
-  
-  /* 24 */ @js.native
-  object Preset23 extends TopLevel[Preset23 with Double]
-  
-  /* 25 */ @js.native
-  object Preset24 extends TopLevel[Preset24 with Double]
-  
-  /* 4 */ @js.native
-  object Preset3 extends TopLevel[Preset3 with Double]
-  
-  /* 5 */ @js.native
-  object Preset4 extends TopLevel[Preset4 with Double]
-  
-  /* 6 */ @js.native
-  object Preset5 extends TopLevel[Preset5 with Double]
-  
-  /* 7 */ @js.native
-  object Preset6 extends TopLevel[Preset6 with Double]
-  
-  /* 8 */ @js.native
-  object Preset7 extends TopLevel[Preset7 with Double]
-  
-  /* 9 */ @js.native
-  object Preset8 extends TopLevel[Preset8 with Double]
-  
-  /* 10 */ @js.native
-  object Preset9 extends TopLevel[Preset9 with Double]
-  
+  sealed trait Preset9
+    extends StObject
+       with CategoryColor
 }
-

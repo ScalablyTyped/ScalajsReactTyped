@@ -1,63 +1,109 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaTrackSettings extends js.Object {
+trait MediaTrackSettings extends StObject {
+  
+  /* standard dom */
   var aspectRatio: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var autoGainControl: js.UndefOr[scala.Boolean] = js.undefined
-  var channelCount: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var deviceId: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var echoCancellation: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var facingMode: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var frameRate: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var groupId: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var height: js.UndefOr[Double] = js.undefined
-  var latency: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var noiseSuppression: js.UndefOr[scala.Boolean] = js.undefined
-  var resizeMode: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var restrictOwnAudio: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var sampleRate: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var sampleSize: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object MediaTrackSettings {
-  @scala.inline
-  def apply(
-    aspectRatio: Int | Double = null,
-    autoGainControl: js.UndefOr[scala.Boolean] = js.undefined,
-    channelCount: Int | Double = null,
-    deviceId: java.lang.String = null,
-    echoCancellation: js.UndefOr[scala.Boolean] = js.undefined,
-    facingMode: java.lang.String = null,
-    frameRate: Int | Double = null,
-    groupId: java.lang.String = null,
-    height: Int | Double = null,
-    latency: Int | Double = null,
-    noiseSuppression: js.UndefOr[scala.Boolean] = js.undefined,
-    resizeMode: java.lang.String = null,
-    sampleRate: Int | Double = null,
-    sampleSize: Int | Double = null,
-    width: Int | Double = null
-  ): MediaTrackSettings = {
+  
+  inline def apply(): MediaTrackSettings = {
     val __obj = js.Dynamic.literal()
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoGainControl)) __obj.updateDynamic("autoGainControl")(autoGainControl.asInstanceOf[js.Any])
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(echoCancellation)) __obj.updateDynamic("echoCancellation")(echoCancellation.asInstanceOf[js.Any])
-    if (facingMode != null) __obj.updateDynamic("facingMode")(facingMode.asInstanceOf[js.Any])
-    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
-    if (!js.isUndefined(noiseSuppression)) __obj.updateDynamic("noiseSuppression")(noiseSuppression.asInstanceOf[js.Any])
-    if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
-    if (sampleSize != null) __obj.updateDynamic("sampleSize")(sampleSize.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTrackSettings]
   }
+  
+  extension [Self <: MediaTrackSettings](x: Self) {
+    
+    inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+    
+    inline def setAutoGainControl(value: scala.Boolean): Self = StObject.set(x, "autoGainControl", value.asInstanceOf[js.Any])
+    
+    inline def setAutoGainControlUndefined: Self = StObject.set(x, "autoGainControl", js.undefined)
+    
+    inline def setDeviceId(value: java.lang.String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    
+    inline def setEchoCancellation(value: scala.Boolean): Self = StObject.set(x, "echoCancellation", value.asInstanceOf[js.Any])
+    
+    inline def setEchoCancellationUndefined: Self = StObject.set(x, "echoCancellation", js.undefined)
+    
+    inline def setFacingMode(value: java.lang.String): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
+    
+    inline def setFacingModeUndefined: Self = StObject.set(x, "facingMode", js.undefined)
+    
+    inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    
+    inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+    
+    inline def setGroupId(value: java.lang.String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setNoiseSuppression(value: scala.Boolean): Self = StObject.set(x, "noiseSuppression", value.asInstanceOf[js.Any])
+    
+    inline def setNoiseSuppressionUndefined: Self = StObject.set(x, "noiseSuppression", js.undefined)
+    
+    inline def setRestrictOwnAudio(value: scala.Boolean): Self = StObject.set(x, "restrictOwnAudio", value.asInstanceOf[js.Any])
+    
+    inline def setRestrictOwnAudioUndefined: Self = StObject.set(x, "restrictOwnAudio", js.undefined)
+    
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    
+    inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+    
+    inline def setSampleSize(value: Double): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
+    
+    inline def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

@@ -1,14 +1,17 @@
 package typingsJapgolly.videoJs.mod.default
 
+import typingsJapgolly.videoJs.mod.videojs.TextTrackButton
 import typingsJapgolly.videoJs.mod.videojs.TrackButtonOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "TextTrackButton")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js", "default.TextTrackButton")
 @js.native
-class TextTrackButtonCls protected ()
-  extends typingsJapgolly.videoJs.mod.videojs.TextTrackButton {
+open class TextTrackButtonCls protected ()
+  extends StObject
+     with TextTrackButton {
   /**
     * Creates an instance of this class.
     *
@@ -21,4 +24,3 @@ class TextTrackButtonCls protected ()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player) = this()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player, options: TrackButtonOptions) = this()
 }
-

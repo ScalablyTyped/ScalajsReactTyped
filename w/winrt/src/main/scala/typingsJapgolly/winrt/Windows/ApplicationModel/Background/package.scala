@@ -1,24 +1,25 @@
-package typingsJapgolly.winrt.Windows.ApplicationModel
+package typingsJapgolly.winrt.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Background {
-  type BackgroundTaskCanceledEventHandler = js.Function2[
-    /* sender */ typingsJapgolly.winrt.Windows.ApplicationModel.Background.IBackgroundTaskInstance, 
-    /* reason */ typingsJapgolly.winrt.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason, 
-    scala.Unit
-  ]
-  type BackgroundTaskCompletedEventHandler = js.Function2[
-    /* sender */ typingsJapgolly.winrt.Windows.ApplicationModel.Background.BackgroundTaskRegistration, 
-    /* args */ typingsJapgolly.winrt.Windows.ApplicationModel.Background.BackgroundTaskCompletedEventArgs, 
-    scala.Unit
-  ]
-  type BackgroundTaskProgressEventHandler = js.Function2[
-    /* sender */ typingsJapgolly.winrt.Windows.ApplicationModel.Background.BackgroundTaskRegistration, 
-    /* args */ typingsJapgolly.winrt.Windows.ApplicationModel.Background.BackgroundTaskProgressEventArgs, 
-    scala.Unit
-  ]
-  type INetworkOperatorHotspotAuthenticationTrigger = typingsJapgolly.winrt.Windows.ApplicationModel.Background.IBackgroundTrigger
-}
+
+type BackgroundTaskCanceledEventHandler = js.Function2[
+/* sender */ IBackgroundTaskInstance, 
+/* reason */ BackgroundTaskCancellationReason, 
+Unit]
+
+type BackgroundTaskCompletedEventHandler = js.Function2[
+/* sender */ BackgroundTaskRegistration, 
+/* args */ BackgroundTaskCompletedEventArgs, 
+Unit]
+
+type BackgroundTaskProgressEventHandler = js.Function2[
+/* sender */ BackgroundTaskRegistration, 
+/* args */ BackgroundTaskProgressEventArgs, 
+Unit]
+
+type INetworkOperatorHotspotAuthenticationTrigger = IBackgroundTrigger
+
+type PushNotificationTrigger = IBackgroundTrigger

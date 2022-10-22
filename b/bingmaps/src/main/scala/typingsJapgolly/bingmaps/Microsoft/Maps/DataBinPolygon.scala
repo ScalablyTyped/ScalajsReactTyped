@@ -1,13 +1,14 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Microsoft.Maps.DataBinPolygon")
 @js.native
-class DataBinPolygon () extends Polygon {
+trait DataBinPolygon
+  extends StObject
+     with Polygon {
+  
   /* Information about the data bin; the contained pushpins and calculated metrics. */
   var dataBinInfo: IDataBinInfo = js.native
 }
-

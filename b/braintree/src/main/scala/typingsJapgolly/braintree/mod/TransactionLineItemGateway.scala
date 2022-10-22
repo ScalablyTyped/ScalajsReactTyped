@@ -1,20 +1,22 @@
 package typingsJapgolly.braintree.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransactionLineItemGateway extends js.Object {
+trait TransactionLineItemGateway extends StObject {
+  
   def findAll(transactionId: String): js.Promise[js.Array[TransactionLineItem]]
 }
-
 object TransactionLineItemGateway {
-  @scala.inline
-  def apply(findAll: String => CallbackTo[js.Promise[js.Array[TransactionLineItem]]]): TransactionLineItemGateway = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("findAll")(js.Any.fromFunction1((t0: java.lang.String) => findAll(t0).runNow()))
+  
+  inline def apply(findAll: String => js.Promise[js.Array[TransactionLineItem]]): TransactionLineItemGateway = {
+    val __obj = js.Dynamic.literal(findAll = js.Any.fromFunction1(findAll))
     __obj.asInstanceOf[TransactionLineItemGateway]
   }
+  
+  extension [Self <: TransactionLineItemGateway](x: Self) {
+    
+    inline def setFindAll(value: String => js.Promise[js.Array[TransactionLineItem]]): Self = StObject.set(x, "findAll", js.Any.fromFunction1(value))
+  }
 }
-

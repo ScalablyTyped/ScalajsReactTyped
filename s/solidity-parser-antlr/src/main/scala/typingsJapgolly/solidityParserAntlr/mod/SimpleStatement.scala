@@ -1,43 +1,27 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.solidityParserAntlr.mod.VariableDeclarationStatement
   - typingsJapgolly.solidityParserAntlr.mod.ExpressionStatement
 */
-trait SimpleStatement extends Statement
-
+trait SimpleStatement
+  extends StObject
+     with Statement
 object SimpleStatement {
-  @scala.inline
-  def VariableDeclarationStatement(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement,
-    variables: js.Array[ASTNode],
-    initialValue: Expression = null,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): SimpleStatement = {
-    val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SimpleStatement]
-  }
-  @scala.inline
-  def ExpressionStatement(
-    expression: Expression,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ExpressionStatement,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): SimpleStatement = {
+  
+  inline def ExpressionStatement(expression: Expression): typingsJapgolly.solidityParserAntlr.mod.ExpressionStatement = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SimpleStatement]
+    __obj.updateDynamic("type")("ExpressionStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.ExpressionStatement]
+  }
+  
+  inline def VariableDeclarationStatement(variables: js.Array[ASTNode]): typingsJapgolly.solidityParserAntlr.mod.VariableDeclarationStatement = {
+    val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VariableDeclarationStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.VariableDeclarationStatement]
   }
 }
-

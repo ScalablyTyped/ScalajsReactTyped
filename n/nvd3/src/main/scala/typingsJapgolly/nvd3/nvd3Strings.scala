@@ -1,94 +1,76 @@
 package typingsJapgolly.nvd3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nvd3Strings {
-  @js.native
-  sealed trait count extends js.Object
   
   @js.native
-  sealed trait expand extends js.Object
+  sealed trait count extends StObject
+  inline def count: count = "count".asInstanceOf[count]
   
   @js.native
-  sealed trait key extends js.Object
+  sealed trait expand extends StObject
+  inline def expand: expand = "expand".asInstanceOf[expand]
   
   @js.native
-  sealed trait percent extends js.Object
+  sealed trait key extends StObject
+  inline def key: key = "key".asInstanceOf[key]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait percent extends StObject
+  inline def percent: percent = "percent".asInstanceOf[percent]
   
   @js.native
-  sealed trait silhouette extends js.Object
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait size extends js.Object
+  sealed trait silhouette extends StObject
+  inline def silhouette: silhouette = "silhouette".asInstanceOf[silhouette]
   
   @js.native
-  sealed trait stack extends js.Object
+  sealed trait size extends StObject
+  inline def size: size = "size".asInstanceOf[size]
   
   @js.native
-  sealed trait stack_percent extends js.Object
+  sealed trait stack extends StObject
+  inline def stack: stack = "stack".asInstanceOf[stack]
   
   @js.native
-  sealed trait stream extends js.Object
+  sealed trait stack_percent extends StObject
+  inline def stack_percent: stack_percent = "stack_percent".asInstanceOf[stack_percent]
   
   @js.native
-  sealed trait `stream-center` extends js.Object
+  sealed trait stream extends StObject
+  inline def stream: stream = "stream".asInstanceOf[stream]
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait `stream-center` extends StObject
+  inline def `stream-center`: `stream-center` = "stream-center".asInstanceOf[`stream-center`]
   
   @js.native
-  sealed trait value extends js.Object
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait wiggle extends js.Object
+  sealed trait value extends StObject
+  inline def value: value = "value".asInstanceOf[value]
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait wiggle extends StObject
+  inline def wiggle: wiggle = "wiggle".asInstanceOf[wiggle]
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait x extends StObject
+  inline def x: x = "x".asInstanceOf[x]
   
   @js.native
-  sealed trait zero extends js.Object
+  sealed trait y extends StObject
+  inline def y: y = "y".asInstanceOf[y]
   
-  @scala.inline
-  def count: count = "count".asInstanceOf[count]
-  @scala.inline
-  def expand: expand = "expand".asInstanceOf[expand]
-  @scala.inline
-  def key: key = "key".asInstanceOf[key]
-  @scala.inline
-  def percent: percent = "percent".asInstanceOf[percent]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def silhouette: silhouette = "silhouette".asInstanceOf[silhouette]
-  @scala.inline
-  def size: size = "size".asInstanceOf[size]
-  @scala.inline
-  def stack: stack = "stack".asInstanceOf[stack]
-  @scala.inline
-  def stack_percent: stack_percent = "stack_percent".asInstanceOf[stack_percent]
-  @scala.inline
-  def stream: stream = "stream".asInstanceOf[stream]
-  @scala.inline
-  def `stream-center`: `stream-center` = "stream-center".asInstanceOf[`stream-center`]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
-  @scala.inline
-  def wiggle: wiggle = "wiggle".asInstanceOf[wiggle]
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
-  @scala.inline
-  def zero: zero = "zero".asInstanceOf[zero]
+  @js.native
+  sealed trait zero extends StObject
+  inline def zero: zero = "zero".asInstanceOf[zero]
 }
-

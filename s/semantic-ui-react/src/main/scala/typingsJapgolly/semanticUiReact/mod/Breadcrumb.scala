@@ -1,23 +1,39 @@
 package typingsJapgolly.semanticUiReact.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.semanticUiReact.breadcrumbBreadcrumbMod.BreadcrumbComponent
-import typingsJapgolly.semanticUiReact.breadcrumbBreadcrumbMod.BreadcrumbProps
+import typingsJapgolly.semanticUiReact.distCommonjsCollectionsBreadcrumbBreadcrumbMod.BreadcrumbComponent
+import typingsJapgolly.semanticUiReact.distCommonjsCollectionsBreadcrumbBreadcrumbMod.BreadcrumbProps
+import typingsJapgolly.semanticUiReact.distCommonjsCollectionsBreadcrumbBreadcrumbSectionMod.BreadcrumbSectionProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "Breadcrumb")
 @js.native
-class Breadcrumb protected ()
-  extends Component[BreadcrumbProps, ComponentState, js.Any] {
+open class Breadcrumb protected ()
+  extends Component[BreadcrumbProps, js.Object, Any] {
   def this(props: BreadcrumbProps) = this()
-  def this(props: BreadcrumbProps, context: js.Any) = this()
+  def this(props: BreadcrumbProps, context: Any) = this()
 }
-
-@JSImport("semantic-ui-react", "Breadcrumb")
-@js.native
-object Breadcrumb extends TopLevel[BreadcrumbComponent]
-
+object Breadcrumb extends Shortcut {
+  
+  @JSImport("semantic-ui-react", "Breadcrumb")
+  @js.native
+  val ^ : BreadcrumbComponent = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("semantic-ui-react", "Breadcrumb.Section")
+  @js.native
+  open class Section protected ()
+    extends Component[BreadcrumbSectionProps, js.Object, Any] {
+    def this(props: BreadcrumbSectionProps) = this()
+    def this(props: BreadcrumbSectionProps, context: Any) = this()
+  }
+  
+  type _To = BreadcrumbComponent
+  
+  /* This means you don't have to write `^`, but can instead just say `Breadcrumb.foo` */
+  override def _to: BreadcrumbComponent = ^
+}

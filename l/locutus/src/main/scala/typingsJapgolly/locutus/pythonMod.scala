@@ -1,21 +1,18 @@
 package typingsJapgolly.locutus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("locutus/python", JSImport.Namespace)
-@js.native
-object pythonMod extends js.Object {
-  @js.native
-  object string extends js.Object {
-    @js.native
-    object capwords extends js.Object {
-      def apply(): js.Any = js.native
-      def apply(str: js.Any): js.Any = js.native
-    }
-    
-  }
+object pythonMod {
   
+  object string {
+    
+    @JSImport("locutus/python", "string")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def capwords(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("capwords")().asInstanceOf[Any]
+    inline def capwords(str: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("capwords")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
+  }
 }
-

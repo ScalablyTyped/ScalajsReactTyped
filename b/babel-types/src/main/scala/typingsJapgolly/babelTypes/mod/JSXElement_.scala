@@ -1,45 +1,57 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.JSXElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait JSXElement_
-  extends Node
+  extends StObject
+     with Node
      with Expression
      with Immutable
      with JSX {
+  
   var children: js.Array[JSXElement_ | JSXExpressionContainer_ | JSXText_]
+  
   var closingElement: JSXClosingElement_
+  
   var openingElement: JSXOpeningElement_
+  
   var selfClosing: js.UndefOr[Boolean] = js.undefined
+  
   @JSName("type")
   var type_JSXElement_ : JSXElement
 }
-
 object JSXElement_ {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     children: js.Array[JSXElement_ | JSXExpressionContainer_ | JSXText_],
     closingElement: JSXClosingElement_,
     end: Double,
     loc: SourceLocation,
     openingElement: JSXOpeningElement_,
-    start: Double,
-    `type`: JSXElement,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    selfClosing: js.UndefOr[Boolean] = js.undefined,
-    trailingComments: js.Array[Comment] = null
+    start: Double
   ): JSXElement_ = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], closingElement = closingElement.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(selfClosing)) __obj.updateDynamic("selfClosing")(selfClosing.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXElement")
     __obj.asInstanceOf[JSXElement_]
   }
+  
+  extension [Self <: JSXElement_](x: Self) {
+    
+    inline def setChildren(value: js.Array[JSXElement_ | JSXExpressionContainer_ | JSXText_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenVarargs(value: (JSXElement_ | JSXExpressionContainer_ | JSXText_)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setClosingElement(value: JSXClosingElement_): Self = StObject.set(x, "closingElement", value.asInstanceOf[js.Any])
+    
+    inline def setOpeningElement(value: JSXOpeningElement_): Self = StObject.set(x, "openingElement", value.asInstanceOf[js.Any])
+    
+    inline def setSelfClosing(value: Boolean): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
+    
+    inline def setSelfClosingUndefined: Self = StObject.set(x, "selfClosing", js.undefined)
+    
+    inline def setType(value: JSXElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

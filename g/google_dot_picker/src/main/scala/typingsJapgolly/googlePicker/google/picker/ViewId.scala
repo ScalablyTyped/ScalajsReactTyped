@@ -1,31 +1,115 @@
 package typingsJapgolly.googlePicker.google.picker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
+sealed trait ViewId extends StObject
 @JSGlobal("google.picker.ViewId")
 @js.native
-object ViewId extends js.Object {
-  var DOCS: String = js.native
-  var DOCS_IMAGES: String = js.native
-  var DOCS_IMAGES_AND_VIDEOS: String = js.native
-  var DOCS_VIDEOS: String = js.native
-  var DOCUMENTS: String = js.native
-  var DRAWINGS: String = js.native
-  var FOLDERS: String = js.native
-  var FORMS: String = js.native
-  var IMAGE_SEARCH: String = js.native
-  var MAPS: String = js.native
-  var PDFS: String = js.native
-  var PHOTOS: String = js.native
-  var PHOTO_ALBUMS: String = js.native
-  var PHOTO_UPLOAD: String = js.native
-  var PRESENTATIONS: String = js.native
-  var RECENTLY_PICKED: String = js.native
-  var SPREADSHEETS: String = js.native
-  var VIDEO_SEARCH: String = js.native
-  var WEBCAM: String = js.native
-  var YOUTUBE: String = js.native
+object ViewId extends StObject {
+  
+  @js.native
+  sealed trait DOCS
+    extends StObject
+       with ViewId
+  
+  @js.native
+  sealed trait DOCS_IMAGES
+    extends StObject
+       with ViewId
+  
+  @js.native
+  sealed trait DOCS_IMAGES_AND_VIDEOS
+    extends StObject
+       with ViewId
+  
+  @js.native
+  sealed trait DOCS_VIDEOS
+    extends StObject
+       with ViewId
+  
+  @js.native
+  sealed trait DOCUMENTS
+    extends StObject
+       with ViewId
+  
+  @js.native
+  sealed trait DRAWINGS
+    extends StObject
+       with ViewId
+  
+  @js.native
+  sealed trait FOLDERS
+    extends StObject
+       with ViewId
+  
+  @js.native
+  sealed trait FORMS
+    extends StObject
+       with ViewId
+  
+  /** @deprecated */
+  @js.native
+  sealed trait IMAGE_SEARCH
+    extends StObject
+       with ViewId
+  
+  @js.native
+  sealed trait PDFS
+    extends StObject
+       with ViewId
+  
+  /** @deprecated */
+  @js.native
+  sealed trait PHOTOS
+    extends StObject
+       with ViewId
+  
+  /** @deprecated */
+  @js.native
+  sealed trait PHOTO_ALBUMS
+    extends StObject
+       with ViewId
+  
+  /** @deprecated */
+  @js.native
+  sealed trait PHOTO_UPLOAD
+    extends StObject
+       with ViewId
+  
+  @js.native
+  sealed trait PRESENTATIONS
+    extends StObject
+       with ViewId
+  
+  /** @deprecated */
+  @js.native
+  sealed trait RECENTLY_PICKED
+    extends StObject
+       with ViewId
+  
+  @js.native
+  sealed trait SPREADSHEETS
+    extends StObject
+       with ViewId
+  
+  /** @deprecated */
+  @js.native
+  sealed trait VIDEO_SEARCH
+    extends StObject
+       with ViewId
+  
+  /** @deprecated */
+  @js.native
+  sealed trait WEBCAM
+    extends StObject
+       with ViewId
+  
+  /** @deprecated */
+  @js.native
+  sealed trait YOUTUBE
+    extends StObject
+       with ViewId
 }
-

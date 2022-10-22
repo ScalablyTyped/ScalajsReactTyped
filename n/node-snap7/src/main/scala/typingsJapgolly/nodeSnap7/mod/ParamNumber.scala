@@ -1,65 +1,63 @@
 package typingsJapgolly.nodeSnap7.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ParamNumber extends js.Object
-
+sealed trait ParamNumber extends StObject
 @JSImport("node-snap7", "ParamNumber")
 @js.native
-object ParamNumber extends js.Object {
-  @js.native
-  sealed trait DstRef extends ParamNumber
-  
-  @js.native
-  sealed trait PDURequest extends ParamNumber
-  
-  @js.native
-  sealed trait PingTimeout extends ParamNumber
-  
-  @js.native
-  sealed trait RecvTimeout extends ParamNumber
-  
-  @js.native
-  sealed trait RemotePort extends ParamNumber
-  
-  @js.native
-  sealed trait SendTimeout extends ParamNumber
-  
-  @js.native
-  sealed trait SrcRef extends ParamNumber
-  
-  @js.native
-  sealed trait SrcTSap extends ParamNumber
+object ParamNumber extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ParamNumber with Double] = js.native
-  /* 8 */ @js.native
-  object DstRef extends TopLevel[DstRef with Double]
+  def apply(value: Double): js.UndefOr[ParamNumber & Double] = js.native
   
-  /* 10 */ @js.native
-  object PDURequest extends TopLevel[PDURequest with Double]
+  @js.native
+  sealed trait DstRef
+    extends StObject
+       with ParamNumber
+  /* 8 */ val DstRef: typingsJapgolly.nodeSnap7.mod.ParamNumber.DstRef & Double = js.native
   
-  /* 3 */ @js.native
-  object PingTimeout extends TopLevel[PingTimeout with Double]
+  @js.native
+  sealed trait PDURequest
+    extends StObject
+       with ParamNumber
+  /* 10 */ val PDURequest: typingsJapgolly.nodeSnap7.mod.ParamNumber.PDURequest & Double = js.native
   
-  /* 5 */ @js.native
-  object RecvTimeout extends TopLevel[RecvTimeout with Double]
+  @js.native
+  sealed trait PingTimeout
+    extends StObject
+       with ParamNumber
+  /* 3 */ val PingTimeout: typingsJapgolly.nodeSnap7.mod.ParamNumber.PingTimeout & Double = js.native
   
-  /* 2 */ @js.native
-  object RemotePort extends TopLevel[RemotePort with Double]
+  @js.native
+  sealed trait RecvTimeout
+    extends StObject
+       with ParamNumber
+  /* 5 */ val RecvTimeout: typingsJapgolly.nodeSnap7.mod.ParamNumber.RecvTimeout & Double = js.native
   
-  /* 4 */ @js.native
-  object SendTimeout extends TopLevel[SendTimeout with Double]
+  @js.native
+  sealed trait RemotePort
+    extends StObject
+       with ParamNumber
+  /* 2 */ val RemotePort: typingsJapgolly.nodeSnap7.mod.ParamNumber.RemotePort & Double = js.native
   
-  /* 7 */ @js.native
-  object SrcRef extends TopLevel[SrcRef with Double]
+  @js.native
+  sealed trait SendTimeout
+    extends StObject
+       with ParamNumber
+  /* 4 */ val SendTimeout: typingsJapgolly.nodeSnap7.mod.ParamNumber.SendTimeout & Double = js.native
   
-  /* 9 */ @js.native
-  object SrcTSap extends TopLevel[SrcTSap with Double]
+  @js.native
+  sealed trait SrcRef
+    extends StObject
+       with ParamNumber
+  /* 7 */ val SrcRef: typingsJapgolly.nodeSnap7.mod.ParamNumber.SrcRef & Double = js.native
   
+  @js.native
+  sealed trait SrcTSap
+    extends StObject
+       with ParamNumber
+  /* 9 */ val SrcTSap: typingsJapgolly.nodeSnap7.mod.ParamNumber.SrcTSap & Double = js.native
 }
-

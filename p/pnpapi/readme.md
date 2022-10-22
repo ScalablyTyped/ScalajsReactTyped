@@ -9,10 +9,10 @@ Typings are for version 0.0
 | ------------------ | :-------------: |
 | Full name          | pnpapi |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 2238 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2285.6666666666665 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/pnpapi)

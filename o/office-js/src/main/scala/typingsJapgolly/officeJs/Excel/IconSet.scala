@@ -1,146 +1,205 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait IconSet extends js.Object
-
+sealed trait IconSet extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.IconSet")
 @js.native
-object IconSet extends js.Object {
+object IconSet extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait fiveArrows extends IconSet
+  sealed trait fiveArrows
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait fiveArrowsGray extends IconSet
+  sealed trait fiveArrowsGray
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait fiveBoxes extends IconSet
+  sealed trait fiveBoxes
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait fiveQuarters extends IconSet
+  sealed trait fiveQuarters
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait fiveRating extends IconSet
+  sealed trait fiveRating
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait fourArrows extends IconSet
+  sealed trait fourArrows
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait fourArrowsGray extends IconSet
+  sealed trait fourArrowsGray
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait fourRating extends IconSet
+  sealed trait fourRating
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait fourRedToBlack extends IconSet
+  sealed trait fourRedToBlack
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait fourTrafficLights extends IconSet
+  sealed trait fourTrafficLights
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait invalid extends IconSet
+  sealed trait invalid
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait threeArrows extends IconSet
+  sealed trait threeArrows
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait threeArrowsGray extends IconSet
+  sealed trait threeArrowsGray
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait threeFlags extends IconSet
+  sealed trait threeFlags
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait threeSigns extends IconSet
+  sealed trait threeSigns
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait threeStars extends IconSet
+  sealed trait threeStars
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait threeSymbols extends IconSet
+  sealed trait threeSymbols
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait threeSymbols2 extends IconSet
+  sealed trait threeSymbols2
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait threeTrafficLights1 extends IconSet
+  sealed trait threeTrafficLights1
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait threeTrafficLights2 extends IconSet
+  sealed trait threeTrafficLights2
+    extends StObject
+       with IconSet
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait threeTriangles extends IconSet
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[IconSet with String] = js.native
-  /* "FiveArrows" */ @js.native
-  object fiveArrows extends TopLevel[fiveArrows with String]
-  
-  /* "FiveArrowsGray" */ @js.native
-  object fiveArrowsGray extends TopLevel[fiveArrowsGray with String]
-  
-  /* "FiveBoxes" */ @js.native
-  object fiveBoxes extends TopLevel[fiveBoxes with String]
-  
-  /* "FiveQuarters" */ @js.native
-  object fiveQuarters extends TopLevel[fiveQuarters with String]
-  
-  /* "FiveRating" */ @js.native
-  object fiveRating extends TopLevel[fiveRating with String]
-  
-  /* "FourArrows" */ @js.native
-  object fourArrows extends TopLevel[fourArrows with String]
-  
-  /* "FourArrowsGray" */ @js.native
-  object fourArrowsGray extends TopLevel[fourArrowsGray with String]
-  
-  /* "FourRating" */ @js.native
-  object fourRating extends TopLevel[fourRating with String]
-  
-  /* "FourRedToBlack" */ @js.native
-  object fourRedToBlack extends TopLevel[fourRedToBlack with String]
-  
-  /* "FourTrafficLights" */ @js.native
-  object fourTrafficLights extends TopLevel[fourTrafficLights with String]
-  
-  /* "Invalid" */ @js.native
-  object invalid extends TopLevel[invalid with String]
-  
-  /* "ThreeArrows" */ @js.native
-  object threeArrows extends TopLevel[threeArrows with String]
-  
-  /* "ThreeArrowsGray" */ @js.native
-  object threeArrowsGray extends TopLevel[threeArrowsGray with String]
-  
-  /* "ThreeFlags" */ @js.native
-  object threeFlags extends TopLevel[threeFlags with String]
-  
-  /* "ThreeSigns" */ @js.native
-  object threeSigns extends TopLevel[threeSigns with String]
-  
-  /* "ThreeStars" */ @js.native
-  object threeStars extends TopLevel[threeStars with String]
-  
-  /* "ThreeSymbols" */ @js.native
-  object threeSymbols extends TopLevel[threeSymbols with String]
-  
-  /* "ThreeSymbols2" */ @js.native
-  object threeSymbols2 extends TopLevel[threeSymbols2 with String]
-  
-  /* "ThreeTrafficLights1" */ @js.native
-  object threeTrafficLights1 extends TopLevel[threeTrafficLights1 with String]
-  
-  /* "ThreeTrafficLights2" */ @js.native
-  object threeTrafficLights2 extends TopLevel[threeTrafficLights2 with String]
-  
-  /* "ThreeTriangles" */ @js.native
-  object threeTriangles extends TopLevel[threeTriangles with String]
-  
+  sealed trait threeTriangles
+    extends StObject
+       with IconSet
 }
-

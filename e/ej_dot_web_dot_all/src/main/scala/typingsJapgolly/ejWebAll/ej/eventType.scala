@@ -1,47 +1,37 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait eventType extends js.Object
-
+sealed trait eventType extends StObject
 @JSGlobal("ej.eventType")
 @js.native
-object eventType extends js.Object {
-  @js.native
-  sealed trait click extends eventType
+object eventType extends StObject {
   
   @js.native
-  sealed trait mouseDown extends eventType
+  sealed trait click
+    extends StObject
+       with eventType
   
   @js.native
-  sealed trait mouseLeave extends eventType
+  sealed trait mouseDown
+    extends StObject
+       with eventType
   
   @js.native
-  sealed trait mouseMove extends eventType
+  sealed trait mouseLeave
+    extends StObject
+       with eventType
   
   @js.native
-  sealed trait mouseUp extends eventType
+  sealed trait mouseMove
+    extends StObject
+       with eventType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[eventType with Double] = js.native
-  /* 0 */ @js.native
-  object click extends TopLevel[click with Double]
-  
-  /* 1 */ @js.native
-  object mouseDown extends TopLevel[mouseDown with Double]
-  
-  /* 2 */ @js.native
-  object mouseLeave extends TopLevel[mouseLeave with Double]
-  
-  /* 3 */ @js.native
-  object mouseMove extends TopLevel[mouseMove with Double]
-  
-  /* 4 */ @js.native
-  object mouseUp extends TopLevel[mouseUp with Double]
-  
+  @js.native
+  sealed trait mouseUp
+    extends StObject
+       with eventType
 }
-

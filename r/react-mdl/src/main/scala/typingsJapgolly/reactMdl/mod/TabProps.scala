@@ -1,42 +1,46 @@
 package typingsJapgolly.reactMdl.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
+import typingsJapgolly.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TabProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any]
+  extends StObject
+     with HTMLProps[Any]
      with CustomRenderedComponent {
+  
   var active: js.UndefOr[Boolean] = js.undefined
+  
   var cssPrefix: js.UndefOr[String] = js.undefined
-  var onTabClick: js.UndefOr[js.Function1[/* tabId */ Double, _]] = js.undefined
+  
+  var onTabClick: js.UndefOr[js.Function1[/* tabId */ Double, Any]] = js.undefined
+  
   var tabId: js.UndefOr[Double] = js.undefined
 }
-
 object TabProps {
-  @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    CustomRenderedComponent: CustomRenderedComponent = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    cssPrefix: String = null,
-    onTabClick: /* tabId */ Double => CallbackTo[js.Any] = null,
-    tabId: Int | Double = null
-  ): TabProps = {
+  
+  inline def apply(): TabProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (CustomRenderedComponent != null) js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (cssPrefix != null) __obj.updateDynamic("cssPrefix")(cssPrefix.asInstanceOf[js.Any])
-    if (onTabClick != null) __obj.updateDynamic("onTabClick")(js.Any.fromFunction1((t0: /* tabId */ scala.Double) => onTabClick(t0).runNow()))
-    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabProps]
   }
+  
+  extension [Self <: TabProps](x: Self) {
+    
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    
+    inline def setCssPrefix(value: String): Self = StObject.set(x, "cssPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setCssPrefixUndefined: Self = StObject.set(x, "cssPrefix", js.undefined)
+    
+    inline def setOnTabClick(value: /* tabId */ Double => Any): Self = StObject.set(x, "onTabClick", js.Any.fromFunction1(value))
+    
+    inline def setOnTabClickUndefined: Self = StObject.set(x, "onTabClick", js.undefined)
+    
+    inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    
+    inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+  }
 }
-

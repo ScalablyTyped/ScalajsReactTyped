@@ -1,23 +1,25 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "CancellationTokenSource")
 @js.native
-class CancellationTokenSource () extends js.Object {
+open class CancellationTokenSource () extends StObject {
+  
   /**
-  		 * The cancellation token of this source.
-  		 */
-  var token: CancellationToken = js.native
-  /**
-  		 * Signal cancellation on the token.
-  		 */
+    * Signal cancellation on the token.
+    */
   def cancel(): Unit = js.native
+  
   /**
-  		 * Dispose object and free resources.
-  		 */
+    * Dispose object and free resources.
+    */
   def dispose(): Unit = js.native
+  
+  /**
+    * The cancellation token of this source.
+    */
+  var token: CancellationToken = js.native
 }
-

@@ -1,38 +1,152 @@
 package typingsJapgolly.datatablesNet.DataTables
 
-import org.scalajs.dom.raw.Node
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColumnLegacy extends js.Object {
-  var _bAutoType: Boolean = js.native
-  var aDataSort: js.Any = js.native
-  var asSorting: js.Array[String] = js.native
-  var bSearchable: Boolean = js.native
-  var bSortable: Boolean = js.native
-  var bVisible: Boolean = js.native
+trait ColumnLegacy extends StObject {
+  
+  var _bAutoType: Boolean
+  
+  var aDataSort: Any
+  
+  var asSorting: js.Array[String]
+  
+  var bSearchable: Boolean
+  
+  var bSortable: Boolean
+  
+  var bVisible: Boolean
+  
+  def fnCreatedCell(cell: Node, cellData: Any, rowData: Any, row: Double, col: Double): Unit
   @JSName("fnCreatedCell")
-  var fnCreatedCell_Original: FunctionColumnCreatedCell = js.native
-  var idx: Double = js.native
-  var mData: js.Any = js.native
-  var mRender: js.Any = js.native
-  var nIf: Node = js.native
-  var nTh: Node = js.native
-  var sClass: String = js.native
-  var sContentPadding: String = js.native
-  var sDefaultContent: String = js.native
-  var sName: String = js.native
-  var sSortDataType: String = js.native
-  var sSortingClass: String = js.native
-  var sSortingClassJUI: String = js.native
-  var sTitle: String = js.native
-  var sType: String = js.native
-  var sWidth: String = js.native
-  var sWidthOrig: String = js.native
-  def fnCreatedCell(cell: Node, cellData: js.Any, rowData: js.Any, row: Double, col: Double): Unit = js.native
-  def fnGetData(data: js.Any, specific: String): js.Any = js.native
-  def fnSetData(data: js.Any, value: js.Any): Unit = js.native
+  var fnCreatedCell_Original: FunctionColumnCreatedCell
+  
+  def fnGetData(data: Any, specific: String): Any
+  
+  def fnSetData(data: Any, value: Any): Unit
+  
+  var idx: Double
+  
+  var mData: Any
+  
+  var mRender: Any
+  
+  var nIf: Node
+  
+  var nTh: Node
+  
+  var sClass: String
+  
+  var sContentPadding: String
+  
+  var sDefaultContent: String
+  
+  var sName: String
+  
+  var sSortDataType: String
+  
+  var sSortingClass: String
+  
+  var sSortingClassJUI: String
+  
+  var sTitle: String
+  
+  var sType: String
+  
+  var sWidth: String
+  
+  var sWidthOrig: String
 }
-
+object ColumnLegacy {
+  
+  inline def apply(
+    _bAutoType: Boolean,
+    aDataSort: Any,
+    asSorting: js.Array[String],
+    bSearchable: Boolean,
+    bSortable: Boolean,
+    bVisible: Boolean,
+    fnCreatedCell: (/* cell */ Node, /* cellData */ Any, /* rowData */ Any, /* row */ Double, /* col */ Double) => Callback,
+    fnGetData: (Any, String) => Any,
+    fnSetData: (Any, Any) => Callback,
+    idx: Double,
+    mData: Any,
+    mRender: Any,
+    nIf: Node,
+    nTh: Node,
+    sClass: String,
+    sContentPadding: String,
+    sDefaultContent: String,
+    sName: String,
+    sSortDataType: String,
+    sSortingClass: String,
+    sSortingClassJUI: String,
+    sTitle: String,
+    sType: String,
+    sWidth: String,
+    sWidthOrig: String
+  ): ColumnLegacy = {
+    val __obj = js.Dynamic.literal(_bAutoType = _bAutoType.asInstanceOf[js.Any], aDataSort = aDataSort.asInstanceOf[js.Any], asSorting = asSorting.asInstanceOf[js.Any], bSearchable = bSearchable.asInstanceOf[js.Any], bSortable = bSortable.asInstanceOf[js.Any], bVisible = bVisible.asInstanceOf[js.Any], fnCreatedCell = js.Any.fromFunction5((t0: /* cell */ Node, t1: /* cellData */ Any, t2: /* rowData */ Any, t3: /* row */ Double, t4: /* col */ Double) => (fnCreatedCell(t0, t1, t2, t3, t4)).runNow()), fnGetData = js.Any.fromFunction2(fnGetData), fnSetData = js.Any.fromFunction2((t0: Any, t1: Any) => (fnSetData(t0, t1)).runNow()), idx = idx.asInstanceOf[js.Any], mData = mData.asInstanceOf[js.Any], mRender = mRender.asInstanceOf[js.Any], nIf = nIf.asInstanceOf[js.Any], nTh = nTh.asInstanceOf[js.Any], sClass = sClass.asInstanceOf[js.Any], sContentPadding = sContentPadding.asInstanceOf[js.Any], sDefaultContent = sDefaultContent.asInstanceOf[js.Any], sName = sName.asInstanceOf[js.Any], sSortDataType = sSortDataType.asInstanceOf[js.Any], sSortingClass = sSortingClass.asInstanceOf[js.Any], sSortingClassJUI = sSortingClassJUI.asInstanceOf[js.Any], sTitle = sTitle.asInstanceOf[js.Any], sType = sType.asInstanceOf[js.Any], sWidth = sWidth.asInstanceOf[js.Any], sWidthOrig = sWidthOrig.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnLegacy]
+  }
+  
+  extension [Self <: ColumnLegacy](x: Self) {
+    
+    inline def setADataSort(value: Any): Self = StObject.set(x, "aDataSort", value.asInstanceOf[js.Any])
+    
+    inline def setAsSorting(value: js.Array[String]): Self = StObject.set(x, "asSorting", value.asInstanceOf[js.Any])
+    
+    inline def setAsSortingVarargs(value: String*): Self = StObject.set(x, "asSorting", js.Array(value*))
+    
+    inline def setBSearchable(value: Boolean): Self = StObject.set(x, "bSearchable", value.asInstanceOf[js.Any])
+    
+    inline def setBSortable(value: Boolean): Self = StObject.set(x, "bSortable", value.asInstanceOf[js.Any])
+    
+    inline def setBVisible(value: Boolean): Self = StObject.set(x, "bVisible", value.asInstanceOf[js.Any])
+    
+    inline def setFnCreatedCell(
+      value: (/* cell */ Node, /* cellData */ Any, /* rowData */ Any, /* row */ Double, /* col */ Double) => Callback
+    ): Self = StObject.set(x, "fnCreatedCell", js.Any.fromFunction5((t0: /* cell */ Node, t1: /* cellData */ Any, t2: /* rowData */ Any, t3: /* row */ Double, t4: /* col */ Double) => (value(t0, t1, t2, t3, t4)).runNow()))
+    
+    inline def setFnGetData(value: (Any, String) => Any): Self = StObject.set(x, "fnGetData", js.Any.fromFunction2(value))
+    
+    inline def setFnSetData(value: (Any, Any) => Callback): Self = StObject.set(x, "fnSetData", js.Any.fromFunction2((t0: Any, t1: Any) => (value(t0, t1)).runNow()))
+    
+    inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
+    
+    inline def setMData(value: Any): Self = StObject.set(x, "mData", value.asInstanceOf[js.Any])
+    
+    inline def setMRender(value: Any): Self = StObject.set(x, "mRender", value.asInstanceOf[js.Any])
+    
+    inline def setNIf(value: Node): Self = StObject.set(x, "nIf", value.asInstanceOf[js.Any])
+    
+    inline def setNTh(value: Node): Self = StObject.set(x, "nTh", value.asInstanceOf[js.Any])
+    
+    inline def setSClass(value: String): Self = StObject.set(x, "sClass", value.asInstanceOf[js.Any])
+    
+    inline def setSContentPadding(value: String): Self = StObject.set(x, "sContentPadding", value.asInstanceOf[js.Any])
+    
+    inline def setSDefaultContent(value: String): Self = StObject.set(x, "sDefaultContent", value.asInstanceOf[js.Any])
+    
+    inline def setSName(value: String): Self = StObject.set(x, "sName", value.asInstanceOf[js.Any])
+    
+    inline def setSSortDataType(value: String): Self = StObject.set(x, "sSortDataType", value.asInstanceOf[js.Any])
+    
+    inline def setSSortingClass(value: String): Self = StObject.set(x, "sSortingClass", value.asInstanceOf[js.Any])
+    
+    inline def setSSortingClassJUI(value: String): Self = StObject.set(x, "sSortingClassJUI", value.asInstanceOf[js.Any])
+    
+    inline def setSTitle(value: String): Self = StObject.set(x, "sTitle", value.asInstanceOf[js.Any])
+    
+    inline def setSType(value: String): Self = StObject.set(x, "sType", value.asInstanceOf[js.Any])
+    
+    inline def setSWidth(value: String): Self = StObject.set(x, "sWidth", value.asInstanceOf[js.Any])
+    
+    inline def setSWidthOrig(value: String): Self = StObject.set(x, "sWidthOrig", value.asInstanceOf[js.Any])
+    
+    inline def set_bAutoType(value: Boolean): Self = StObject.set(x, "_bAutoType", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,21 +1,30 @@
 package typingsJapgolly.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Transition extends js.Object {
+trait Transition extends StObject {
+  
   var delay: js.UndefOr[Double] = js.undefined
+  
   var duration: js.UndefOr[Double] = js.undefined
 }
-
 object Transition {
-  @scala.inline
-  def apply(delay: Int | Double = null, duration: Int | Double = null): Transition = {
+  
+  inline def apply(): Transition = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transition]
   }
+  
+  extension [Self <: Transition](x: Self) {
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+  }
 }
-

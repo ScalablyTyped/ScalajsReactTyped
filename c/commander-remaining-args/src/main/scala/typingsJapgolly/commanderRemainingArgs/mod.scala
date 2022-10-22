@@ -1,13 +1,15 @@
 package typingsJapgolly.commanderRemainingArgs
 
 import typingsJapgolly.commander.mod.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("commander-remaining-args", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(cli: Command): js.Array[String] = js.native
+object mod {
+  
+  inline def apply(cli: Command): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(cli.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  @JSImport("commander-remaining-args", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

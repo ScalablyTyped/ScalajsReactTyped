@@ -1,35 +1,33 @@
 package typingsJapgolly.instabugReactnative.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait dismissType extends js.Object
-
+sealed trait dismissType extends StObject
 @JSImport("instabug-reactnative", "dismissType")
 @js.native
-object dismissType extends js.Object {
-  @js.native
-  sealed trait addAttachment extends dismissType
-  
-  @js.native
-  sealed trait cancel extends dismissType
-  
-  @js.native
-  sealed trait submit extends dismissType
+object dismissType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[dismissType with Double] = js.native
-  /* 2 */ @js.native
-  object addAttachment extends TopLevel[addAttachment with Double]
+  def apply(value: Double): js.UndefOr[dismissType & Double] = js.native
   
-  /* 1 */ @js.native
-  object cancel extends TopLevel[cancel with Double]
+  @js.native
+  sealed trait addAttachment
+    extends StObject
+       with dismissType
+  /* 2 */ val addAttachment: typingsJapgolly.instabugReactnative.mod.dismissType.addAttachment & Double = js.native
   
-  /* 0 */ @js.native
-  object submit extends TopLevel[submit with Double]
+  @js.native
+  sealed trait cancel
+    extends StObject
+       with dismissType
+  /* 1 */ val cancel: typingsJapgolly.instabugReactnative.mod.dismissType.cancel & Double = js.native
   
+  @js.native
+  sealed trait submit
+    extends StObject
+       with dismissType
+  /* 0 */ val submit: typingsJapgolly.instabugReactnative.mod.dismissType.submit & Double = js.native
 }
-

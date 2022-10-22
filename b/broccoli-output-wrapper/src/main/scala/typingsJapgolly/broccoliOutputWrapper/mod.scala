@@ -1,94 +1,152 @@
 package typingsJapgolly.broccoliOutputWrapper
 
+import typingsJapgolly.broccoliOutputWrapper.anon.Fn0
+import typingsJapgolly.broccoliOutputWrapper.anon.FnCall
+import typingsJapgolly.broccoliOutputWrapper.anon.FnCallFileDataOptions
+import typingsJapgolly.broccoliOutputWrapper.anon.FnCallPathDataOptions
+import typingsJapgolly.broccoliOutputWrapper.anon.FnCallPathOptions
+import typingsJapgolly.broccoliOutputWrapper.anon.FnCallTargetPathType
+import typingsJapgolly.broccoliOutputWrapper.anon.Recursive
 import typingsJapgolly.broccoliOutputWrapper.broccoliOutputWrapperStrings.buffer
-import typingsJapgolly.node.Anon4
-import typingsJapgolly.node.Anon5
-import typingsJapgolly.node.AnonEncodingFlag
-import typingsJapgolly.node.AnonEncodingWithFileTypes
-import typingsJapgolly.node.AnonFlag
-import typingsJapgolly.node.AnonFlagString
-import typingsJapgolly.node.AnonWithFileTypes
-import typingsJapgolly.node.Buffer
-import typingsJapgolly.node.BufferEncoding
+import typingsJapgolly.node.NodeJS.ArrayBufferView
+import typingsJapgolly.node.anon.EncodingFlag
+import typingsJapgolly.node.anon.EncodingWithFileTypes
+import typingsJapgolly.node.anon.Flag
+import typingsJapgolly.node.anon.MakeDirectoryOptionsrecur
+import typingsJapgolly.node.anon.MakeDirectoryOptionsrecurMode
+import typingsJapgolly.node.anon.ObjectEncodingOptionsflagEncoding
+import typingsJapgolly.node.anon.ObjectEncodingOptionswith
+import typingsJapgolly.node.anon.ObjectEncodingOptionswithEncoding
+import typingsJapgolly.node.anon.StatSyncOptionsbigintbool
+import typingsJapgolly.node.anon.StatSyncOptionsbigintfals
+import typingsJapgolly.node.anon.StatSyncOptionsbigintfalsBigint
+import typingsJapgolly.node.anon.StatSyncOptionsbiginttrue
+import typingsJapgolly.node.anon.StatSyncOptionsbiginttrueBigint
+import typingsJapgolly.node.anon.WithFileTypes
+import typingsJapgolly.node.bufferMod.global.Buffer
+import typingsJapgolly.node.bufferMod.global.BufferEncoding
+import typingsJapgolly.node.fsMod.BigIntStats
 import typingsJapgolly.node.fsMod.Dirent
 import typingsJapgolly.node.fsMod.MakeDirectoryOptions
+import typingsJapgolly.node.fsMod.Mode
 import typingsJapgolly.node.fsMod.PathLike
-import typingsJapgolly.node.fsMod.RmDirOptions
+import typingsJapgolly.node.fsMod.PathOrFileDescriptor
+import typingsJapgolly.node.fsMod.StatSyncFn
+import typingsJapgolly.node.fsMod.StatSyncOptions
 import typingsJapgolly.node.fsMod.Stats
+import typingsJapgolly.node.fsMod.TimeLike
 import typingsJapgolly.node.fsMod.WriteFileOptions
+import typingsJapgolly.node.fsMod.symlink.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("broccoli-output-wrapper", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  inline def apply(node: Any): FSOutput = ^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any]).asInstanceOf[FSOutput]
+  
+  @JSImport("broccoli-output-wrapper", JSImport.Namespace)
   @js.native
-  trait FSOutput extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @js.native
+  trait FSOutput extends StObject {
+    
+    def appendFileSync(path: PathOrFileDescriptor, data: String): Unit = js.native
+    def appendFileSync(path: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit = js.native
+    def appendFileSync(path: PathOrFileDescriptor, data: js.typedarray.Uint8Array): Unit = js.native
+    def appendFileSync(path: PathOrFileDescriptor, data: js.typedarray.Uint8Array, options: WriteFileOptions): Unit = js.native
     @JSName("appendFileSync")
-    var appendFileSync_Original: FnCallFileDataOptions = js.native
+    var appendFileSync_Original: FnCallPathDataOptions = js.native
+    
+    def existsSync(path: PathLike): Boolean = js.native
     @JSName("existsSync")
     var existsSync_Original: js.Function1[/* path */ PathLike, Boolean] = js.native
+    
+    def lstatSync(path: PathLike): Stats = js.native
+    def lstatSync(path: PathLike, options: Unit): Stats = js.native
+    def lstatSync(path: PathLike, options: StatSyncOptionsbigintbool): Stats | BigIntStats = js.native
+    def lstatSync(path: PathLike, options: StatSyncOptionsbigintfals): js.UndefOr[Stats] = js.native
+    def lstatSync(path: PathLike, options: StatSyncOptionsbigintfalsBigint): Stats = js.native
+    def lstatSync(path: PathLike, options: StatSyncOptionsbiginttrue): js.UndefOr[BigIntStats] = js.native
+    def lstatSync(path: PathLike, options: StatSyncOptionsbiginttrueBigint): BigIntStats = js.native
+    def lstatSync(path: PathLike, options: StatSyncOptions): js.UndefOr[Stats | BigIntStats] = js.native
     @JSName("lstatSync")
-    var lstatSync_Original: js.Function1[/* path */ PathLike, Stats] = js.native
+    var lstatSync_Original: StatSyncFn = js.native
+    @JSName("lstatSync")
+    def lstatSync_Union(path: PathLike): js.UndefOr[Stats] = js.native
+    
+    def mkdirSync(path: PathLike): js.UndefOr[String] = js.native
+    def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): js.UndefOr[String] = js.native
+    def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit = js.native
+    def mkdirSync(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String] = js.native
+    def mkdirSync(path: PathLike, options: Mode): js.UndefOr[String] = js.native
     @JSName("mkdirSync")
-    var mkdirSync_Original: Fn1 = js.native
+    var mkdirSync_Original: Fn0 = js.native
+    @JSName("mkdirSync")
+    def mkdirSync_Unit(path: PathLike): Unit = js.native
+    @JSName("mkdirSync")
+    def mkdirSync_Unit(path: PathLike, options: Mode): Unit = js.native
+    
+    def readFileSync(path: PathOrFileDescriptor): String | Buffer = js.native
+    def readFileSync(path: PathOrFileDescriptor, options: EncodingFlag): String = js.native
+    def readFileSync(path: PathOrFileDescriptor, options: Flag): Buffer = js.native
+    def readFileSync(path: PathOrFileDescriptor, options: ObjectEncodingOptionsflagEncoding): String | Buffer = js.native
+    def readFileSync(path: PathOrFileDescriptor, options: BufferEncoding): String = js.native
+    @JSName("readFileSync")
+    def readFileSync_Buffer(path: PathOrFileDescriptor): Buffer = js.native
     @JSName("readFileSync")
     var readFileSync_Original: FnCall = js.native
+    @JSName("readFileSync")
+    def readFileSync_Union(path: PathOrFileDescriptor, options: BufferEncoding): String | Buffer = js.native
+    
+    def readdirSync(path: PathLike): js.Array[Buffer | String] = js.native
+    def readdirSync(path: PathLike, options: EncodingWithFileTypes): js.Array[String] = js.native
+    def readdirSync(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = js.native
+    def readdirSync(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[Dirent] = js.native
+    def readdirSync(path: PathLike, options: WithFileTypes): js.Array[Buffer] = js.native
+    def readdirSync(path: PathLike, options: BufferEncoding): js.Array[Buffer | String] = js.native
     @JSName("readdirSync")
     var readdirSync_Original: FnCallPathOptions = js.native
-    @JSName("rmdirSync")
-    var rmdirSync_Original: Fn0 = js.native
-    @JSName("statSync")
-    var statSync_Original: js.Function1[/* path */ PathLike, Stats] = js.native
-    @JSName("writeFileSync")
-    var writeFileSync_Original: FnCallPathDataOptions = js.native
-    def appendFileSync(file: Double, data: js.Any): Unit = js.native
-    def appendFileSync(file: Double, data: js.Any, options: WriteFileOptions): Unit = js.native
-    def appendFileSync(file: PathLike, data: js.Any): Unit = js.native
-    def appendFileSync(file: PathLike, data: js.Any, options: WriteFileOptions): Unit = js.native
-    def existsSync(path: PathLike): Boolean = js.native
-    def lstatSync(path: PathLike): Stats = js.native
-    def mkdirSync(path: PathLike): Unit = js.native
-    def mkdirSync(path: PathLike, options: String): Unit = js.native
-    def mkdirSync(path: PathLike, options: Double): Unit = js.native
-    def mkdirSync(path: PathLike, options: MakeDirectoryOptions): Unit = js.native
-    def readFileSync(path: Double): String | Buffer = js.native
-    def readFileSync(path: Double, options: String): String = js.native
-    def readFileSync(path: Double, options: AnonEncodingFlag): String = js.native
-    def readFileSync(path: Double, options: AnonFlag): Buffer = js.native
-    def readFileSync(path: Double, options: AnonFlagString): String | Buffer = js.native
-    def readFileSync(path: PathLike): String | Buffer = js.native
-    def readFileSync(path: PathLike, options: String): String = js.native
-    def readFileSync(path: PathLike, options: AnonEncodingFlag): String = js.native
-    def readFileSync(path: PathLike, options: AnonFlag): Buffer = js.native
-    def readFileSync(path: PathLike, options: AnonFlagString): String | Buffer = js.native
-    @JSName("readFileSync")
-    def readFileSync_Buffer(path: Double): Buffer = js.native
-    @JSName("readFileSync")
-    def readFileSync_Buffer(path: PathLike): Buffer = js.native
-    @JSName("readFileSync")
-    def readFileSync_Union(path: Double, options: String): String | Buffer = js.native
-    @JSName("readFileSync")
-    def readFileSync_Union(path: PathLike, options: String): String | Buffer = js.native
-    def readdirSync(path: PathLike): js.Array[Buffer | String] = js.native
-    def readdirSync(path: PathLike, options: String): js.Array[Buffer | String] = js.native
-    def readdirSync(path: PathLike, options: Anon4): js.Array[Buffer | String] = js.native
-    def readdirSync(path: PathLike, options: Anon5): js.Array[Dirent] = js.native
-    def readdirSync(path: PathLike, options: AnonEncodingWithFileTypes): js.Array[Buffer] = js.native
-    def readdirSync(path: PathLike, options: AnonWithFileTypes): js.Array[String] = js.native
-    def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = js.native
     @JSName("readdirSync")
     def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = js.native
-    def rmdirSync(path: PathLike): Unit = js.native
-    def rmdirSync(path: PathLike, options: RmDirOptions): Unit = js.native
+    
+    def rmdirSync(path: String): Unit = js.native
+    def rmdirSync(path: String, options: Recursive): Unit = js.native
+    
     def statSync(path: PathLike): Stats = js.native
-    def writeFileSync(path: Double, data: js.Any): Unit = js.native
-    def writeFileSync(path: Double, data: js.Any, options: WriteFileOptions): Unit = js.native
-    def writeFileSync(path: PathLike, data: js.Any): Unit = js.native
-    def writeFileSync(path: PathLike, data: js.Any, options: WriteFileOptions): Unit = js.native
+    def statSync(path: PathLike, options: Unit): Stats = js.native
+    def statSync(path: PathLike, options: StatSyncOptionsbigintbool): Stats | BigIntStats = js.native
+    def statSync(path: PathLike, options: StatSyncOptionsbigintfals): js.UndefOr[Stats] = js.native
+    def statSync(path: PathLike, options: StatSyncOptionsbigintfalsBigint): Stats = js.native
+    def statSync(path: PathLike, options: StatSyncOptionsbiginttrue): js.UndefOr[BigIntStats] = js.native
+    def statSync(path: PathLike, options: StatSyncOptionsbiginttrueBigint): BigIntStats = js.native
+    def statSync(path: PathLike, options: StatSyncOptions): js.UndefOr[Stats | BigIntStats] = js.native
+    @JSName("statSync")
+    var statSync_Original: StatSyncFn = js.native
+    @JSName("statSync")
+    def statSync_Union(path: PathLike): js.UndefOr[Stats] = js.native
+    
+    def symlinkOrCopySync(srcPath: String, destPath: String): Unit = js.native
+    
+    def symlinkSync(target: PathLike, path: PathLike): Unit = js.native
+    def symlinkSync(target: PathLike, path: PathLike, `type`: Type): Unit = js.native
+    @JSName("symlinkSync")
+    var symlinkSync_Original: FnCallTargetPathType = js.native
+    
+    def unlinkSync(path: PathLike): Unit = js.native
+    @JSName("unlinkSync")
+    var unlinkSync_Original: js.Function1[/* path */ PathLike, Unit] = js.native
+    
+    def utimesSync(path: PathLike, atime: TimeLike, mtime: TimeLike): Unit = js.native
+    @JSName("utimesSync")
+    var utimesSync_Original: js.Function3[/* path */ PathLike, /* atime */ TimeLike, /* mtime */ TimeLike, Unit] = js.native
+    
+    def writeFileSync(file: PathOrFileDescriptor, data: String): Unit = js.native
+    def writeFileSync(file: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit = js.native
+    def writeFileSync(file: PathOrFileDescriptor, data: ArrayBufferView): Unit = js.native
+    def writeFileSync(file: PathOrFileDescriptor, data: ArrayBufferView, options: WriteFileOptions): Unit = js.native
+    @JSName("writeFileSync")
+    var writeFileSync_Original: FnCallFileDataOptions = js.native
   }
-  
-  def apply(node: js.Any): FSOutput = js.native
 }
-

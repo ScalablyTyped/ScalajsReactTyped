@@ -1,43 +1,87 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.Instantiable1
 import typingsJapgolly.node.httpsMod.ServerOptions
+import typingsJapgolly.node.nodeColonhttpMod.IncomingMessage
+import typingsJapgolly.node.nodeColonhttpMod.ServerResponse
+import typingsJapgolly.node.nodeColonnetMod.Socket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebHookOptions extends js.Object {
+trait WebHookOptions extends StObject {
+  
   var autoOpen: js.UndefOr[Boolean] = js.undefined
+  
   var cert: js.UndefOr[String] = js.undefined
+  
   var healthEndpoint: js.UndefOr[String] = js.undefined
+  
   var host: js.UndefOr[String] = js.undefined
-  var https: js.UndefOr[ServerOptions] = js.undefined
+  
+  var https: js.UndefOr[
+    ServerOptions[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[typingsJapgolly.node.httpMod.IncomingMessage]
+      ]
+    ]
+  ] = js.undefined
+  
   var key: js.UndefOr[String] = js.undefined
+  
   var pfx: js.UndefOr[String] = js.undefined
+  
   var port: js.UndefOr[Double] = js.undefined
 }
-
 object WebHookOptions {
-  @scala.inline
-  def apply(
-    autoOpen: js.UndefOr[Boolean] = js.undefined,
-    cert: String = null,
-    healthEndpoint: String = null,
-    host: String = null,
-    https: ServerOptions = null,
-    key: String = null,
-    pfx: String = null,
-    port: Int | Double = null
-  ): WebHookOptions = {
+  
+  inline def apply(): WebHookOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (healthEndpoint != null) __obj.updateDynamic("healthEndpoint")(healthEndpoint.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebHookOptions]
   }
+  
+  extension [Self <: WebHookOptions](x: Self) {
+    
+    inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
+    
+    inline def setAutoOpenUndefined: Self = StObject.set(x, "autoOpen", js.undefined)
+    
+    inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    
+    inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+    
+    inline def setHealthEndpoint(value: String): Self = StObject.set(x, "healthEndpoint", value.asInstanceOf[js.Any])
+    
+    inline def setHealthEndpointUndefined: Self = StObject.set(x, "healthEndpoint", js.undefined)
+    
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setHttps(
+      value: ServerOptions[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typingsJapgolly.node.httpMod.IncomingMessage]
+          ]
+        ]
+    ): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+    
+    inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setPfx(value: String): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+    
+    inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+  }
 }
-

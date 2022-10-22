@@ -1,55 +1,91 @@
 package typingsJapgolly.jsoneditoronline
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSONEditorActionParams extends js.Object {
+trait JSONEditorActionParams extends StObject {
+  
   @JSName("clone")
   var clone_FJSONEditorActionParams: js.UndefOr[JSONEditorNode] = js.undefined
+  
   var endIndex: js.UndefOr[Double] = js.undefined
+  
   var endParent: js.UndefOr[JSONEditorNode] = js.undefined
+  
   var index: js.UndefOr[Double] = js.undefined
+  
   var newType: js.UndefOr[JSONEditorNodeType] = js.undefined
+  
   var newValue: js.UndefOr[String] = js.undefined
+  
   var node: js.UndefOr[JSONEditorNode] = js.undefined
+  
   var oldType: js.UndefOr[JSONEditorNodeType] = js.undefined
+  
   var oldValue: js.UndefOr[String] = js.undefined
+  
   var parent: js.UndefOr[JSONEditorNode] = js.undefined
+  
   var startIndex: js.UndefOr[Double] = js.undefined
+  
   var startParent: js.UndefOr[JSONEditorNode] = js.undefined
 }
-
 object JSONEditorActionParams {
-  @scala.inline
-  def apply(
-    clone: JSONEditorNode = null,
-    endIndex: Int | Double = null,
-    endParent: JSONEditorNode = null,
-    index: Int | Double = null,
-    newType: JSONEditorNodeType = null,
-    newValue: String = null,
-    node: JSONEditorNode = null,
-    oldType: JSONEditorNodeType = null,
-    oldValue: String = null,
-    parent: JSONEditorNode = null,
-    startIndex: Int | Double = null,
-    startParent: JSONEditorNode = null
-  ): JSONEditorActionParams = {
+  
+  inline def apply(): JSONEditorActionParams = {
     val __obj = js.Dynamic.literal()
-    if (clone != null) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
-    if (endParent != null) __obj.updateDynamic("endParent")(endParent.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (newType != null) __obj.updateDynamic("newType")(newType.asInstanceOf[js.Any])
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (oldType != null) __obj.updateDynamic("oldType")(oldType.asInstanceOf[js.Any])
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
-    if (startParent != null) __obj.updateDynamic("startParent")(startParent.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorActionParams]
   }
+  
+  extension [Self <: JSONEditorActionParams](x: Self) {
+    
+    inline def setClone_(value: JSONEditorNode): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+    
+    inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+    
+    inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+    
+    inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+    
+    inline def setEndParent(value: JSONEditorNode): Self = StObject.set(x, "endParent", value.asInstanceOf[js.Any])
+    
+    inline def setEndParentUndefined: Self = StObject.set(x, "endParent", js.undefined)
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setNewType(value: JSONEditorNodeType): Self = StObject.set(x, "newType", value.asInstanceOf[js.Any])
+    
+    inline def setNewTypeUndefined: Self = StObject.set(x, "newType", js.undefined)
+    
+    inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    
+    inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    
+    inline def setNode(value: JSONEditorNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    
+    inline def setOldType(value: JSONEditorNodeType): Self = StObject.set(x, "oldType", value.asInstanceOf[js.Any])
+    
+    inline def setOldTypeUndefined: Self = StObject.set(x, "oldType", js.undefined)
+    
+    inline def setOldValue(value: String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    
+    inline def setParent(value: JSONEditorNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    
+    inline def setStartParent(value: JSONEditorNode): Self = StObject.set(x, "startParent", value.asInstanceOf[js.Any])
+    
+    inline def setStartParentUndefined: Self = StObject.set(x, "startParent", js.undefined)
+  }
 }
-

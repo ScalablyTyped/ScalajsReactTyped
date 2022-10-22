@@ -3,15 +3,26 @@ package typingsJapgolly.jqueryWindow
 import typingsJapgolly.jqueryWindow.JQueryWindow.Static
 import typingsJapgolly.jqueryWindow.JQueryWindow.Window
 import typingsJapgolly.jqueryWindow.JQueryWindow.WindowOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Register with JQuery static
-@js.native
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
+  
+  def window(options: WindowOptions): Window
   @JSName("window")
-  var window_Original: Static = js.native
-  def window(options: WindowOptions): Window = js.native
+  var window_Original: Static
 }
-
+object JQueryStatic {
+  
+  inline def apply(window: Static): JQueryStatic = {
+    val __obj = js.Dynamic.literal(window = window.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQueryStatic]
+  }
+  
+  extension [Self <: JQueryStatic](x: Self) {
+    
+    inline def setWindow(value: Static): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,28 +1,30 @@
 package typingsJapgolly.webcl.WEBCL
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.6.1
-trait WebCLBuffer extends WebCLMemoryObject {
+trait WebCLBuffer
+  extends StObject
+     with WebCLMemoryObject {
+  
   def createSubBuffer(memFlags: MemFlagsBits, origin: Double, sizeInBytes: Double): WebCLBuffer
 }
-
 object WebCLBuffer {
-  @scala.inline
-  def apply(
-    createSubBuffer: (MemFlagsBits, Double, Double) => CallbackTo[WebCLBuffer],
-    getInfo: MemInfo => CallbackTo[js.Any],
+  
+  inline def apply(
+    createSubBuffer: (MemFlagsBits, Double, Double) => WebCLBuffer,
+    getInfo: MemInfo => Any,
     release: Callback
   ): WebCLBuffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createSubBuffer")(js.Any.fromFunction3((t0: typingsJapgolly.webcl.WEBCL.MemFlagsBits, t1: scala.Double, t2: scala.Double) => createSubBuffer(t0, t1, t2).runNow()))
-    __obj.updateDynamic("getInfo")(js.Any.fromFunction1((t0: typingsJapgolly.webcl.WEBCL.MemInfo) => getInfo(t0).runNow()))
-    __obj.updateDynamic("release")(release.toJsFn)
+    val __obj = js.Dynamic.literal(createSubBuffer = js.Any.fromFunction3(createSubBuffer), getInfo = js.Any.fromFunction1(getInfo), release = release.toJsFn)
     __obj.asInstanceOf[WebCLBuffer]
   }
+  
+  extension [Self <: WebCLBuffer](x: Self) {
+    
+    inline def setCreateSubBuffer(value: (MemFlagsBits, Double, Double) => WebCLBuffer): Self = StObject.set(x, "createSubBuffer", js.Any.fromFunction3(value))
+  }
 }
-

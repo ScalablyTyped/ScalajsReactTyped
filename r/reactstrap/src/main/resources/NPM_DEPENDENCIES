@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "reactstrap" : "9.1.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "reactstrap" : "9.1.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

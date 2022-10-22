@@ -1,17 +1,16 @@
 package typingsJapgolly.easeljs.createjs
 
-import org.scalajs.dom.raw.HTMLCanvasElement
-import org.scalajs.dom.raw.HTMLImageElement
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("createjs.AlphaMaskFilter")
 @js.native
-class AlphaMaskFilter protected () extends Filter {
-  def this(mask: HTMLCanvasElement) = this()
-  def this(mask: HTMLImageElement) = this()
+trait AlphaMaskFilter
+  extends StObject
+     with Filter {
+  
   // properties
   var mask: HTMLImageElement | HTMLCanvasElement = js.native
 }
-

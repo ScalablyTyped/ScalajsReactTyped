@@ -1,36 +1,43 @@
 package typingsJapgolly.postmanCollection.mod
 
-import typingsJapgolly.postmanCollection.AnonDisabled
-import typingsJapgolly.postmanCollection.AnonIgnoreOwnVariables
-import typingsJapgolly.postmanCollection.AnonVariables
+import typingsJapgolly.postmanCollection.anon.Disabled
+import typingsJapgolly.postmanCollection.anon.IgnoreOwnVariables
+import typingsJapgolly.postmanCollection.anon.Variables
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.postmanCollection.mod.PropertyBaseDefinition because Already inherited
 - typingsJapgolly.postmanCollection.mod.PropertyDefinition because var conflicts: description. Inlined id, name, disabled */ @JSImport("postman-collection", "Property")
 @js.native
-class Property[TDefinition /* <: js.Object */] () extends PropertyBase[TDefinition] {
+open class Property[TDefinition /* <: js.Object */] () extends PropertyBase[TDefinition] {
   def this(definition: TDefinition) = this()
-  def this(definition: AnonDisabled[TDefinition]) = this()
-  var disabled: js.UndefOr[Boolean] = js.native
-  var id: js.UndefOr[String] = js.native
-  var name: js.UndefOr[String] = js.native
+  def this(definition: Disabled[TDefinition]) = this()
+  
   def describe(content: String): Unit = js.native
   def describe(content: String, `type`: String): Unit = js.native
-  def toObjectResolved(scope: Null, overrides: js.Array[_]): TDefinition = js.native
-  def toObjectResolved(scope: Null, overrides: js.Array[_], options: AnonIgnoreOwnVariables): TDefinition = js.native
-  def toObjectResolved(scope: AnonVariables, overrides: js.Array[_]): TDefinition = js.native
-  def toObjectResolved(scope: AnonVariables, overrides: js.Array[_], options: AnonIgnoreOwnVariables): TDefinition = js.native
+  
+  var disabled: js.UndefOr[Boolean] = js.native
+  
+  var id: js.UndefOr[String] = js.native
+  
+  var name: js.UndefOr[String] = js.native
+  
+  def toObjectResolved(scope: Null, overrides: js.Array[Any]): TDefinition = js.native
+  def toObjectResolved(scope: Null, overrides: js.Array[Any], options: IgnoreOwnVariables): TDefinition = js.native
+  def toObjectResolved(scope: Variables, overrides: js.Array[Any]): TDefinition = js.native
+  def toObjectResolved(scope: Variables, overrides: js.Array[Any], options: IgnoreOwnVariables): TDefinition = js.native
 }
-
 /* static members */
-@JSImport("postman-collection", "Property")
-@js.native
-object Property extends js.Object {
-  def replaceSubstitutions(str: String, variables: js.Array[VariableList]): String = js.native
-  def replaceSubstitutions(str: String, variables: VariableList): String = js.native
-  def replaceSubstitutionsIn[T](obj: T, variables: js.Array[VariableList], mutate: Boolean): T = js.native
+object Property {
+  
+  @JSImport("postman-collection", "Property")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def replaceSubstitutions(str: String, variables: js.Array[VariableList]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutions")(str.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def replaceSubstitutions(str: String, variables: VariableList): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutions")(str.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def replaceSubstitutionsIn[T](obj: T, variables: js.Array[VariableList], mutate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutionsIn")(obj.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], mutate.asInstanceOf[js.Any])).asInstanceOf[T]
 }
-

@@ -1,12 +1,14 @@
 package typingsJapgolly.isobject
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("isobject", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(`val`: js.Any): Boolean = js.native
+object mod {
+  
+  @JSImport("isobject", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(`val`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }
-

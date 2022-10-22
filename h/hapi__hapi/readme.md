@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__hapi
 
-Typings are for version 19.0
+Typings are for version 20.0
 
 ## Library description:
 HTTP Server framework
@@ -10,13 +10,13 @@ HTTP Server framework
 | ------------------ | :-------------: |
 | Full name          | @hapi/hapi |
 | Keywords           | framework, http, api, web |
-| # releases         | 12 |
-| # dependents       | 134 |
-| # downloads        | 3232804 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 2399189.6666666665 |
+| # stars            | 13953.0 |
 
 ## Links
-- [Homepage](https://hapijs.com)
+- [Homepage](https://hapi.dev)
 - [Bugs](https://github.com/hapijs/hapi/issues)
 - [Repository](https://github.com/hapijs/hapi)
 - [Npm](https://www.npmjs.com/package/%40hapi%2Fhapi)

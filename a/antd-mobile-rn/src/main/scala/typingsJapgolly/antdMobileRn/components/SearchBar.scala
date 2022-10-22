@@ -1,82 +1,70 @@
 package typingsJapgolly.antdMobileRn.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.AnonNativeEvent
-import typingsJapgolly.antdMobileRn.searchBarIndexNativeMod.SearchBarNativeProps
-import typingsJapgolly.antdMobileRn.searchBarStyleIndexNativeMod.ISearchBarStyle
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.anon.NativeEvent
+import typingsJapgolly.antdMobileRn.libSearchBarIndexDotnativeMod.SearchBarNativeProps
+import typingsJapgolly.antdMobileRn.libSearchBarStyleIndexDotnativeMod.ISearchBarStyle
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SearchBar {
-  def apply(
-    styles: ISearchBarStyle,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    cancelText: String = null,
-    defaultValue: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    focused: js.UndefOr[Boolean] = js.undefined,
-    maxLength: Int | Double = null,
-    onBlur: js.UndefOr[Callback] = js.undefined,
-    onCancel: /* value */ String => Callback = null,
-    onChange: /* value */ String => Callback = null,
-    onChangeText: /* text */ String => Callback = null,
-    onClear: /* value */ String => Callback = null,
-    onFocus: js.UndefOr[Callback] = js.undefined,
-    onSubmit: /* value */ String => Callback = null,
-    onSubmitEditing: /* event */ AnonNativeEvent => Callback = null,
-    placeholder: String = null,
-    showCancelButton: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[TextStyle] = null,
-    value: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    SearchBarNativeProps, 
-    typingsJapgolly.antdMobileRn.mod.SearchBar, 
-    Unit, 
-    SearchBarNativeProps
-  ] = {
-    val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    onBlur.foreach(p => __obj.updateDynamic("onBlur")(p.toJsFn))
-    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1((t0: /* value */ java.lang.String) => onCancel(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* value */ java.lang.String) => onChange(t0).runNow()))
-    if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1((t0: /* text */ java.lang.String) => onChangeText(t0).runNow()))
-    if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction1((t0: /* value */ java.lang.String) => onClear(t0).runNow()))
-    onFocus.foreach(p => __obj.updateDynamic("onFocus")(p.toJsFn))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1((t0: /* value */ java.lang.String) => onSubmit(t0).runNow()))
-    if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.antdMobileRn.AnonNativeEvent) => onSubmitEditing(t0).runNow()))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCancelButton)) __obj.updateDynamic("showCancelButton")(showCancelButton.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.searchBarIndexNativeMod.SearchBarNativeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.mod.SearchBar](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.searchBarIndexNativeMod.SearchBarNativeProps])(children: _*)
+  inline def apply(styles: ISearchBarStyle): Builder = {
+    val __props = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[SearchBarNativeProps]))
   }
+  
   @JSImport("antd-mobile-rn", "SearchBar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antdMobileRn.mod.SearchBar] {
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def cancelText(value: String): this.type = set("cancelText", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: String): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def focused(value: Boolean): this.type = set("focused", value.asInstanceOf[js.Any])
+    
+    inline def maxLength(value: Double): this.type = set("maxLength", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: Callback): this.type = set("onBlur", value.toJsFn)
+    
+    inline def onCancel(value: /* value */ String => Callback): this.type = set("onCancel", js.Any.fromFunction1((t0: /* value */ String) => value(t0).runNow()))
+    
+    inline def onChange(value: /* value */ String => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* value */ String) => value(t0).runNow()))
+    
+    inline def onChangeText(value: /* text */ String => Callback): this.type = set("onChangeText", js.Any.fromFunction1((t0: /* text */ String) => value(t0).runNow()))
+    
+    inline def onClear(value: /* value */ String => Callback): this.type = set("onClear", js.Any.fromFunction1((t0: /* value */ String) => value(t0).runNow()))
+    
+    inline def onFocus(value: Callback): this.type = set("onFocus", value.toJsFn)
+    
+    inline def onSubmit(value: /* value */ String => Callback): this.type = set("onSubmit", js.Any.fromFunction1((t0: /* value */ String) => value(t0).runNow()))
+    
+    inline def onSubmitEditing(value: /* event */ NativeEvent => Callback): this.type = set("onSubmitEditing", js.Any.fromFunction1((t0: /* event */ NativeEvent) => value(t0).runNow()))
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def showCancelButton(value: Boolean): this.type = set("showCancelButton", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[TextStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def value(value: String): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: SearchBarNativeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

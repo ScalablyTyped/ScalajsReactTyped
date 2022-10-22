@@ -1,40 +1,67 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import typingsJapgolly.arcgisJsApi.anon.IconSymbol3DLayerProperti
+import typingsJapgolly.arcgisJsApi.anon.ObjectSymbol3DLayerProper
+import typingsJapgolly.arcgisJsApi.anon.TextSymbol3DLayerProperti
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointSymbol3DProperties extends Symbol3DProperties {
+trait PointSymbol3DProperties
+  extends StObject
+     with Symbol3DProperties {
+  
   /**
-    * Settings for adding a callout visualization to the symbol. Callouts are drawn from the point feature location that is being symbolized, to the vertical offset of the symbol. This property has no effect if [verticalOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#verticalOffset) is not set. At the moment only callouts of type line are supported. See [LineCallout3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html).
+    * Settings for adding a callout visualization to the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#callout)
     */
   var callout: js.UndefOr[LineCallout3DProperties] = js.undefined
+  
   /**
-    * Shifts the symbol along the vertical world axis by a given height. The height is set in screen space units like points or pixels. For points displayed with a [callout](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#callout) `verticalOffset` should be set.
+    * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#symbolLayers)
+    */
+  @JSName("symbolLayers")
+  var symbolLayers_PointSymbol3DProperties: js.UndefOr[
+    CollectionProperties[
+      IconSymbol3DLayerProperti | ObjectSymbol3DLayerProper | TextSymbol3DLayerProperti
+    ]
+  ] = js.undefined
+  
+  /**
+    * Shifts the symbol along the vertical world axis by a given height.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#verticalOffset)
     */
   var verticalOffset: js.UndefOr[PointSymbol3DVerticalOffsetProperties] = js.undefined
 }
-
 object PointSymbol3DProperties {
-  @scala.inline
-  def apply(
-    callout: LineCallout3DProperties = null,
-    color: Color_ | js.Array[Double] | String = null,
-    styleOrigin: Symbol3DStyleOrigin = null,
-    symbolLayers: CollectionProperties[Symbol3DLayerProperties] = null,
-    verticalOffset: PointSymbol3DVerticalOffsetProperties = null
-  ): PointSymbol3DProperties = {
+  
+  inline def apply(): PointSymbol3DProperties = {
     val __obj = js.Dynamic.literal()
-    if (callout != null) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (styleOrigin != null) __obj.updateDynamic("styleOrigin")(styleOrigin.asInstanceOf[js.Any])
-    if (symbolLayers != null) __obj.updateDynamic("symbolLayers")(symbolLayers.asInstanceOf[js.Any])
-    if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointSymbol3DProperties]
   }
+  
+  extension [Self <: PointSymbol3DProperties](x: Self) {
+    
+    inline def setCallout(value: LineCallout3DProperties): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
+    
+    inline def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
+    
+    inline def setSymbolLayers(
+      value: CollectionProperties[
+          IconSymbol3DLayerProperti | ObjectSymbol3DLayerProper | TextSymbol3DLayerProperti
+        ]
+    ): Self = StObject.set(x, "symbolLayers", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolLayersUndefined: Self = StObject.set(x, "symbolLayers", js.undefined)
+    
+    inline def setSymbolLayersVarargs(value: (IconSymbol3DLayerProperti | ObjectSymbol3DLayerProper | TextSymbol3DLayerProperti)*): Self = StObject.set(x, "symbolLayers", js.Array(value*))
+    
+    inline def setVerticalOffset(value: PointSymbol3DVerticalOffsetProperties): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalOffsetUndefined: Self = StObject.set(x, "verticalOffset", js.undefined)
+  }
 }
-

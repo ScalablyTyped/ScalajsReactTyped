@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides base data for the client-side events.
   */
-@JSGlobal("BootstrapUIWidgetEventArgsBase")
-@js.native
-class BootstrapUIWidgetEventArgsBase protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the BootstrapUIWidgetEventArgsBase class with the specified widget and its container.
-    * @param component The widget instance.
-    * @param element The widget's container.
-    */
-  def this(component: js.Any, element: js.Any) = this()
+trait BootstrapUIWidgetEventArgsBase
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * The widget instance.
     */
-  var component: js.Any = js.native
+  var component: Any
+  
   /**
     * The widget's container.
     */
-  var element: js.Any = js.native
+  var element: Any
 }
-
+object BootstrapUIWidgetEventArgsBase {
+  
+  inline def apply(component: Any, element: Any): BootstrapUIWidgetEventArgsBase = {
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapUIWidgetEventArgsBase]
+  }
+  
+  extension [Self <: BootstrapUIWidgetEventArgsBase](x: Self) {
+    
+    inline def setComponent(value: Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+  }
+}

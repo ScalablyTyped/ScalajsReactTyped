@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.onPremises
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.serviceToService
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.dedicated
 */
-trait DeviceManagementExchangeConnectorType extends js.Object
-
+trait DeviceManagementExchangeConnectorType extends StObject
 object DeviceManagementExchangeConnectorType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dedicated: typingsJapgolly.microsoftGraph.microsoftGraphStrings.dedicated = this.cast("dedicated")
-  @scala.inline
-  def hosted: typingsJapgolly.microsoftGraph.microsoftGraphStrings.hosted = this.cast("hosted")
-  @scala.inline
-  def onPremises: typingsJapgolly.microsoftGraph.microsoftGraphStrings.onPremises = this.cast("onPremises")
-  @scala.inline
-  def serviceToService: typingsJapgolly.microsoftGraph.microsoftGraphStrings.serviceToService = this.cast("serviceToService")
+  
+  inline def dedicated: typingsJapgolly.microsoftGraph.microsoftGraphStrings.dedicated = "dedicated".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.dedicated]
+  
+  inline def hosted: typingsJapgolly.microsoftGraph.microsoftGraphStrings.hosted = "hosted".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.hosted]
+  
+  inline def onPremises: typingsJapgolly.microsoftGraph.microsoftGraphStrings.onPremises = "onPremises".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.onPremises]
+  
+  inline def serviceToService: typingsJapgolly.microsoftGraph.microsoftGraphStrings.serviceToService = "serviceToService".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.serviceToService]
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for bull
 
-Typings are for version 3.12
+Typings are for version 3.15
 
 ## Library description:
 Job manager
@@ -10,10 +10,10 @@ Job manager
 | ------------------ | :-------------: |
 | Full name          | bull |
 | Keywords           | job, queue, task, parallel |
-| # releases         | 27 |
-| # dependents       | 199 |
-| # downloads        | 3620125 |
-| # stars            | 28 |
+| # releases         | 67 |
+| # dependents       | 0.0 |
+| # downloads        | 1720929.0 |
+| # stars            | 13142.0 |
 
 ## Links
 - [Homepage](https://github.com/OptimalBits/bull#readme)

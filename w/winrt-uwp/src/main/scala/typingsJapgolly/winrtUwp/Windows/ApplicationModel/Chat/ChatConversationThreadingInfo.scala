@@ -1,24 +1,51 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Chat
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides threading info for a ChatConversation . */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatConversationThreadingInfo")
-@js.native
-/** Initializes a new instance of the ChatConversationThreadingInfo class. */
-class ChatConversationThreadingInfo () extends js.Object {
+trait ChatConversationThreadingInfo extends StObject {
+  
   /** Gets or sets the Contact.Id for the remote participant. */
-  var contactId: String = js.native
+  var contactId: String
+  
   /** Gets or sets the ID of the ChatConversation . */
-  var conversationId: String = js.native
+  var conversationId: String
+  
   /** Gets or sets a string where you can store your own custom threading info. */
-  var custom: String = js.native
+  var custom: String
+  
   /** Gets or sets a value that indicates the type of threading info, such as participant, contact ID, conversation ID, and so on. */
-  var kind: ChatConversationThreadingKind = js.native
+  var kind: ChatConversationThreadingKind
+  
   /** Gets the list of participants in the ChatConversation . */
-  var participants: IVector[String] = js.native
+  var participants: IVector[String]
 }
-
+object ChatConversationThreadingInfo {
+  
+  inline def apply(
+    contactId: String,
+    conversationId: String,
+    custom: String,
+    kind: ChatConversationThreadingKind,
+    participants: IVector[String]
+  ): ChatConversationThreadingInfo = {
+    val __obj = js.Dynamic.literal(contactId = contactId.asInstanceOf[js.Any], conversationId = conversationId.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], participants = participants.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChatConversationThreadingInfo]
+  }
+  
+  extension [Self <: ChatConversationThreadingInfo](x: Self) {
+    
+    inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
+    
+    inline def setConversationId(value: String): Self = StObject.set(x, "conversationId", value.asInstanceOf[js.Any])
+    
+    inline def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    
+    inline def setKind(value: ChatConversationThreadingKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setParticipants(value: IVector[String]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-async
 
-Typings are for version 8.0.0
+Typings are for version 10.0.1
 
 ## Library description:
 React component for declarative promise resolution and data fetching
@@ -10,15 +10,12 @@ React component for declarative promise resolution and data fetching
 | ------------------ | :-------------: |
 | Full name          | react-async |
 | Keywords           | react, async, promise, fetch, hook |
-| # releases         | 64 |
-| # dependents       | 17 |
-| # downloads        | 267689 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 132430.0 |
+| # stars            | 2088.0 |
 
 ## Links
-- [Homepage](https://react-async.com/)
-- [Bugs](https://github.com/async-library/react-async/issues)
-- [Repository](https://github.com/async-library/react-async)
 - [Npm](https://www.npmjs.com/package/react-async)
     
 

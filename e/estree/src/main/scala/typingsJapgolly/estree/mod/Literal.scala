@@ -1,58 +1,33 @@
 package typingsJapgolly.estree.mod
 
-import typingsJapgolly.estree.AnonFlags
+import typingsJapgolly.estree.anon.Flags
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.estree.mod.SimpleLiteral
   - typingsJapgolly.estree.mod.RegExpLiteral
+  - typingsJapgolly.estree.mod.BigIntLiteral
 */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.estree.mod.Node because Already inherited */ trait Literal extends Expression
-
+trait Literal extends StObject
 object Literal {
-  @scala.inline
-  def SimpleLiteral(
-    `type`: typingsJapgolly.estree.estreeStrings.Literal,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    raw: String = null,
-    trailingComments: js.Array[Comment] = null,
-    value: String | Boolean | Double = null
-  ): Literal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Literal]
+  
+  inline def BigIntLiteral(bigint: String): typingsJapgolly.estree.mod.BigIntLiteral = {
+    val __obj = js.Dynamic.literal(bigint = bigint.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Literal")
+    __obj.asInstanceOf[typingsJapgolly.estree.mod.BigIntLiteral]
   }
-  @scala.inline
-  def RegExpLiteral(
-    regex: AnonFlags,
-    `type`: typingsJapgolly.estree.estreeStrings.Literal,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    raw: String = null,
-    trailingComments: js.Array[Comment] = null,
-    value: js.RegExp = null
-  ): Literal = {
+  
+  inline def RegExpLiteral(regex: Flags): typingsJapgolly.estree.mod.RegExpLiteral = {
     val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Literal]
+    __obj.updateDynamic("type")("Literal")
+    __obj.asInstanceOf[typingsJapgolly.estree.mod.RegExpLiteral]
+  }
+  
+  inline def SimpleLiteral(): typingsJapgolly.estree.mod.SimpleLiteral = {
+    val __obj = js.Dynamic.literal(value = null)
+    __obj.updateDynamic("type")("Literal")
+    __obj.asInstanceOf[typingsJapgolly.estree.mod.SimpleLiteral]
   }
 }
-

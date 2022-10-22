@@ -2,29 +2,33 @@ package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchedulerEditEvent extends SchedulerEvent {
+trait SchedulerEditEvent
+  extends StObject
+     with SchedulerEvent {
+  
   var container: js.UndefOr[JQuery] = js.undefined
+  
   var event: js.UndefOr[typingsJapgolly.kendoUi.kendo.data.SchedulerEvent] = js.undefined
 }
-
 object SchedulerEditEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Scheduler,
-    container: JQuery = null,
-    event: typingsJapgolly.kendoUi.kendo.data.SchedulerEvent = null
-  ): SchedulerEditEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Scheduler): SchedulerEditEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerEditEvent]
   }
+  
+  extension [Self <: SchedulerEditEvent](x: Self) {
+    
+    inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setEvent(value: typingsJapgolly.kendoUi.kendo.data.SchedulerEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+  }
 }
-

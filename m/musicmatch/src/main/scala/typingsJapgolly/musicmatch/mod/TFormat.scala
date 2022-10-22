@@ -1,21 +1,17 @@
 package typingsJapgolly.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.musicmatch.musicmatchStrings.json
   - typingsJapgolly.musicmatch.musicmatchStrings.xml
 */
-trait TFormat extends js.Object
-
+trait TFormat extends StObject
 object TFormat {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def json: typingsJapgolly.musicmatch.musicmatchStrings.json = this.cast("json")
-  @scala.inline
-  def xml: typingsJapgolly.musicmatch.musicmatchStrings.xml = this.cast("xml")
+  
+  inline def json: typingsJapgolly.musicmatch.musicmatchStrings.json = "json".asInstanceOf[typingsJapgolly.musicmatch.musicmatchStrings.json]
+  
+  inline def xml: typingsJapgolly.musicmatch.musicmatchStrings.xml = "xml".asInstanceOf[typingsJapgolly.musicmatch.musicmatchStrings.xml]
 }
-

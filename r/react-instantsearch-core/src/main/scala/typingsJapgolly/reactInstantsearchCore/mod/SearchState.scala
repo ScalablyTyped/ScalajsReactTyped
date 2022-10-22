@@ -1,61 +1,101 @@
 package typingsJapgolly.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactInstantsearchCore.AnonConfigure
-import typingsJapgolly.reactInstantsearchCore.AnonDictkey
-import typingsJapgolly.reactInstantsearchCore.AnonMax
+import typingsJapgolly.reactInstantsearchCore.anon.Dictkey
+import typingsJapgolly.reactInstantsearchCore.anon.Max
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SearchState
-  extends /* widgetId */ StringDictionary[js.Any] {
-  var configure: js.UndefOr[AnonDictkey] = js.undefined
+  extends StObject
+     with /* widgetId */ StringDictionary[Any] {
+  
+  var configure: js.UndefOr[Dictkey] = js.undefined
+  
   var hierarchicalMenu: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var hitsPerPage: js.UndefOr[Double] = js.undefined
-  var indices: js.UndefOr[StringDictionary[AnonConfigure]] = js.undefined
+  
+  var indices: js.UndefOr[StringDictionary[typingsJapgolly.reactInstantsearchCore.anon.Configure]] = js.undefined
+  
   var menu: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var multiRange: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var page: js.UndefOr[Double] = js.undefined
+  
   var query: js.UndefOr[String] = js.undefined
-  var range: js.UndefOr[StringDictionary[AnonMax]] = js.undefined
+  
+  var range: js.UndefOr[StringDictionary[Max]] = js.undefined
+  
   var refinementList: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
+  
+  var relevancyStrictness: js.UndefOr[Double] = js.undefined
+  
   var sortBy: js.UndefOr[String] = js.undefined
+  
   var toggle: js.UndefOr[StringDictionary[Boolean]] = js.undefined
 }
-
 object SearchState {
-  @scala.inline
-  def apply(
-    StringDictionary: /* widgetId */ StringDictionary[js.Any] = null,
-    configure: AnonDictkey = null,
-    hierarchicalMenu: StringDictionary[String] = null,
-    hitsPerPage: Int | Double = null,
-    indices: StringDictionary[AnonConfigure] = null,
-    menu: StringDictionary[String] = null,
-    multiRange: StringDictionary[String] = null,
-    page: Int | Double = null,
-    query: String = null,
-    range: StringDictionary[AnonMax] = null,
-    refinementList: StringDictionary[js.Array[String]] = null,
-    sortBy: String = null,
-    toggle: StringDictionary[Boolean] = null
-  ): SearchState = {
+  
+  inline def apply(): SearchState = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (configure != null) __obj.updateDynamic("configure")(configure.asInstanceOf[js.Any])
-    if (hierarchicalMenu != null) __obj.updateDynamic("hierarchicalMenu")(hierarchicalMenu.asInstanceOf[js.Any])
-    if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
-    if (indices != null) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
-    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
-    if (multiRange != null) __obj.updateDynamic("multiRange")(multiRange.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (refinementList != null) __obj.updateDynamic("refinementList")(refinementList.asInstanceOf[js.Any])
-    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchState]
   }
+  
+  extension [Self <: SearchState](x: Self) {
+    
+    inline def setConfigure(value: Dictkey): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
+    
+    inline def setConfigureUndefined: Self = StObject.set(x, "configure", js.undefined)
+    
+    inline def setHierarchicalMenu(value: StringDictionary[String]): Self = StObject.set(x, "hierarchicalMenu", value.asInstanceOf[js.Any])
+    
+    inline def setHierarchicalMenuUndefined: Self = StObject.set(x, "hierarchicalMenu", js.undefined)
+    
+    inline def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
+    
+    inline def setHitsPerPageUndefined: Self = StObject.set(x, "hitsPerPage", js.undefined)
+    
+    inline def setIndices(value: StringDictionary[typingsJapgolly.reactInstantsearchCore.anon.Configure]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    
+    inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
+    
+    inline def setMenu(value: StringDictionary[String]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    
+    inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    
+    inline def setMultiRange(value: StringDictionary[String]): Self = StObject.set(x, "multiRange", value.asInstanceOf[js.Any])
+    
+    inline def setMultiRangeUndefined: Self = StObject.set(x, "multiRange", js.undefined)
+    
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    
+    inline def setRange(value: StringDictionary[Max]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    
+    inline def setRefinementList(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "refinementList", value.asInstanceOf[js.Any])
+    
+    inline def setRefinementListUndefined: Self = StObject.set(x, "refinementList", js.undefined)
+    
+    inline def setRelevancyStrictness(value: Double): Self = StObject.set(x, "relevancyStrictness", value.asInstanceOf[js.Any])
+    
+    inline def setRelevancyStrictnessUndefined: Self = StObject.set(x, "relevancyStrictness", js.undefined)
+    
+    inline def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    
+    inline def setToggle(value: StringDictionary[Boolean]): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+    
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+  }
 }
-

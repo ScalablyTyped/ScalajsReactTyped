@@ -1,83 +1,115 @@
 package typingsJapgolly.breeze.mod
 
-import typingsJapgolly.breeze.AnonExpression
-import typingsJapgolly.breeze.AnonMaxLength
-import typingsJapgolly.breeze.AnonMessageTemplate
-import typingsJapgolly.breeze.AnonMinLength
+import typingsJapgolly.breeze.anon.Expression
+import typingsJapgolly.breeze.anon.MaxLength
+import typingsJapgolly.breeze.anon.MessageTemplate
+import typingsJapgolly.breeze.anon.MinLength
 import typingsJapgolly.breeze.breeze.ValidatorFunction
+import typingsJapgolly.breeze.breeze.ValidatorFunctionContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("breeze", "Validator")
 @js.native
-class Validator protected ()
-  extends typingsJapgolly.breeze.breeze.Validator {
+open class Validator protected ()
+  extends StObject
+     with typingsJapgolly.breeze.breeze.Validator {
   def this(name: String, validatorFn: ValidatorFunction) = this()
-  def this(name: String, validatorFn: ValidatorFunction, context: js.Any) = this()
+  def this(name: String, validatorFn: ValidatorFunction, context: Any) = this()
 }
-
 /* static members */
-@JSImport("breeze", "Validator")
-@js.native
-object Validator extends js.Object {
-  /** Map of standard error message templates keyed by validator name.*/
-  var messageTemplates: js.Any = js.native
-  def bool(): typingsJapgolly.breeze.breeze.Validator = js.native
+object Validator {
+  
+  @JSImport("breeze", "Validator")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def bool(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("bool")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
   /** integer between 0 and 255 inclusive */
-  def byte(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def byte(context: AnonMessageTemplate): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def byte(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("byte")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def byte(context: MessageTemplate): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("byte")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
   /** Returns a credit card number validator that performs a Luhn algorithm checksum test for plausability */
-  def creditCard(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def creditCard(context: AnonMessageTemplate): typingsJapgolly.breeze.breeze.Validator = js.native
-  def date(): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def creditCard(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("creditCard")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def creditCard(context: MessageTemplate): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("creditCard")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
+  inline def date(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("date")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
   /** Validators number, double, and single are all the same */
-  def double(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def double(context: AnonMessageTemplate): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def double(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("double")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def double(context: MessageTemplate): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("double")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
   /** Returns a ISO 8601 duration string Validator. */
-  def duration(): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def duration(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("duration")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
   /** Returns the email address validator */
-  def emailAddress(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def emailAddress(context: AnonMessageTemplate): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def emailAddress(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("emailAddress")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def emailAddress(context: MessageTemplate): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("emailAddress")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
   /** Creates a validator instance from a JSON object or an array of instances from an array of JSON objects. */
-  def fromJSON(json: String): typingsJapgolly.breeze.breeze.Validator = js.native
-  def guid(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def int16(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def int16(context: AnonMessageTemplate): typingsJapgolly.breeze.breeze.Validator = js.native
-  def int32(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def int32(context: AnonMessageTemplate): typingsJapgolly.breeze.breeze.Validator = js.native
-  def int64(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def int64(context: AnonMessageTemplate): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def fromJSON(json: String): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
+  inline def guid(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("guid")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
+  inline def int16(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("int16")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def int16(context: MessageTemplate): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("int16")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
+  inline def int32(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("int32")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def int32(context: MessageTemplate): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("int32")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
+  inline def int64(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("int64")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def int64(context: MessageTemplate): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("int64")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
   /** Same as int64 */
-  def integer(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def integer(context: AnonMessageTemplate): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def integer(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("integer")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def integer(context: MessageTemplate): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("integer")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
   /** Creates a regular expression validator with a fixed expression. */
-  def makeRegExpValidator(validatorName: String, expression: js.RegExp, defaultMessage: String): typingsJapgolly.breeze.breeze.Validator = js.native
-  def makeRegExpValidator(validatorName: String, expression: js.RegExp, defaultMessage: String, context: js.Any): typingsJapgolly.breeze.breeze.Validator = js.native
-  def maxLength(context: AnonMaxLength): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def makeRegExpValidator(validatorName: String, expression: js.RegExp, defaultMessage: String): typingsJapgolly.breeze.breeze.Validator = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRegExpValidator")(validatorName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], defaultMessage.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def makeRegExpValidator(validatorName: String, expression: js.RegExp, defaultMessage: String, context: Any): typingsJapgolly.breeze.breeze.Validator = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRegExpValidator")(validatorName.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], defaultMessage.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
+  inline def maxLength(context: MaxLength): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
+  /** Map of standard error message templates keyed by validator name.*/
+  @JSImport("breeze", "Validator.messageTemplates")
+  @js.native
+  def messageTemplates: Any = js.native
+  inline def messageTemplates_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("messageTemplates")(x.asInstanceOf[js.Any])
+  
   /** Always returns true */
-  def none(): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def none(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("none")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
   /** Validators number, double, and single are all the same */
-  def number(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def number(context: AnonMessageTemplate): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def number(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("number")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def number(context: MessageTemplate): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
   /** Returns the phone validator, which handles prefix, country code, area code, and local number, with [-/. ] break characters. */
-  def phone(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def phone(context: AnonMessageTemplate): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def phone(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("phone")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def phone(context: MessageTemplate): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("phone")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
   /** Register a validator instance so that any deserialized metadata can reference it. */
-  def register(validator: typingsJapgolly.breeze.breeze.Validator): Unit = js.native
+  inline def register(validator: typingsJapgolly.breeze.breeze.Validator): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(validator.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /** Register a validator factory so that any deserialized metadata can reference it.  */
-  def registerFactory(fn: js.Function0[this.type], name: String): Unit = js.native
+  inline def registerFactory(fn: js.Function1[/* context */ js.UndefOr[ValidatorFunctionContext], this.type], name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFactory")(fn.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /** Returns a regular expression validator; the expression must be specified in the context parameter */
-  def regularExpression(context: AnonExpression): typingsJapgolly.breeze.breeze.Validator = js.native
-  def required(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def required(context: AnonMessageTemplate): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def regularExpression(context: Expression): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("regularExpression")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
+  inline def required(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("required")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def required(context: MessageTemplate): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("required")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
   /** Validators number, double, and single are all the same */
-  def single(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def single(context: AnonMessageTemplate): typingsJapgolly.breeze.breeze.Validator = js.native
-  def string(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def stringLength(context: AnonMinLength): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def single(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("single")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def single(context: MessageTemplate): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("single")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
+  inline def string(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("string")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
+  inline def stringLength(context: MinLength): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("stringLength")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  
   /** Returns the URL (protocol required) validator */
-  def url(): typingsJapgolly.breeze.breeze.Validator = js.native
-  def url(context: AnonMessageTemplate): typingsJapgolly.breeze.breeze.Validator = js.native
+  inline def url(): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
+  inline def url(context: MessageTemplate): typingsJapgolly.breeze.breeze.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(context.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.Validator]
 }
-

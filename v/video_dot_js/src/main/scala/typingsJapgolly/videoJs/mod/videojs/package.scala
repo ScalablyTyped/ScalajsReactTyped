@@ -1,25 +1,38 @@
-package typingsJapgolly.videoJs.mod
+package typingsJapgolly.videoJs.mod.videojs
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.Element
+import org.scalajs.dom.Node
+import typingsJapgolly.videoJs.anon.Children
+import typingsJapgolly.videoJs.mod.VideoJsPlayer
+import typingsJapgolly.videoJs.mod.VideoJsPlayerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object videojs {
-  type Child = java.lang.String | typingsJapgolly.videoJs.AnonChildren
-  type Component = typingsJapgolly.videoJs.mod.videojs.Component_
-  type Content = java.lang.String | org.scalajs.dom.raw.Element | org.scalajs.dom.raw.Node | (js.Function0[java.lang.String | org.scalajs.dom.raw.Element | org.scalajs.dom.raw.Node])
-  type Dom = typingsJapgolly.videoJs.mod.videojs.Dom_
-  type LanguageTranslations = org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  type Player = typingsJapgolly.videoJs.mod.VideoJsPlayer
-  type PlayerOptions = typingsJapgolly.videoJs.mod.VideoJsPlayerOptions
-  type Plugin = typingsJapgolly.videoJs.mod.videojs.Plugin_
-  type Tech = typingsJapgolly.videoJs.mod.videojs.Tech_
-  type TextTrack = typingsJapgolly.videoJs.mod.videojs.TextTrack_
-  type TextTrackCueList = typingsJapgolly.videoJs.mod.videojs.TextTrackCueList_
-  type XhrCallback = js.Function3[
-    /* error */ js.UndefOr[js.Error], 
-    /* response */ js.UndefOr[typingsJapgolly.videoJs.mod.videojs.XhrResponse], 
-    /* body */ js.UndefOr[js.Any], 
-    scala.Unit
-  ]
-}
+
+/* Rewritten from type alias, can be one of: 
+  - scala.Boolean
+  - typingsJapgolly.videoJs.videoJsStrings.muted
+  - typingsJapgolly.videoJs.videoJsStrings.play
+  - typingsJapgolly.videoJs.videoJsStrings.any
+*/
+type Autoplay = _Autoplay | Boolean
+
+type Child = String | Children
+
+type Content = String | Element | Node | (js.Function0[String | Element | Node])
+
+type LanguageTranslations = StringDictionary[String]
+
+type Player = VideoJsPlayer
+
+type PlayerOptions = VideoJsPlayerOptions
+
+type ReadyCallback = js.ThisFunction0[/* this */ Player, Unit]
+
+type XhrCallback = js.Function3[
+/* error */ js.UndefOr[js.Error], 
+/* response */ js.UndefOr[XhrResponse], 
+/* body */ js.UndefOr[Any], 
+Unit]

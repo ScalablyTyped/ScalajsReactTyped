@@ -10,13 +10,13 @@ Transaction object for Any-DB adapters
 | ------------------ | :-------------: |
 | Full name          | any-db-transaction |
 | Keywords           | any-db, transaction, sql |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 61876 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3204.0 |
+| # stars            | 8.0 |
 
 ## Links
-- [Homepage](https://github.com/grncdr/node-any-db-transaction)
+- [Homepage](https://github.com/grncdr/node-any-db-transaction#readme)
 - [Bugs](https://github.com/grncdr/node-any-db-transaction/issues)
 - [Repository](https://github.com/grncdr/node-any-db-transaction)
 - [Npm](https://www.npmjs.com/package/any-db-transaction)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for invariant
 
-Typings are for version 2.2.0
+Typings are for version 2.2
 
 ## Library description:
 invariant
@@ -10,10 +10,10 @@ invariant
 | ------------------ | :-------------: |
 | Full name          | invariant |
 | Keywords           | test, invariant |
-| # releases         | 3 |
-| # dependents       | 2641 |
-| # downloads        | 387227842 |
-| # stars            | 24 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.2408471666666664E7 |
+| # stars            | 1126.0 |
 
 ## Links
 - [Homepage](https://github.com/zertosh/invariant#readme)

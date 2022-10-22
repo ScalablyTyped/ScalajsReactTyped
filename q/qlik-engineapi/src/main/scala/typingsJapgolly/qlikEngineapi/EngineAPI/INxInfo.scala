@@ -1,32 +1,40 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxInfo...
   */
-trait INxInfo extends js.Object {
+trait INxInfo extends StObject {
+  
   /**
     * Identifier of the object.
     * If the chosen identifier is already in use, the engine automatically sets another one.
     * This parameter is optional. If an identifier is not set, the engine automatically sets one.
     */
   var qId: js.UndefOr[String] = js.undefined
+  
   /**
     * Type of the object.
     * >> This parameter is mandatory.
     */
   var qType: String
 }
-
 object INxInfo {
-  @scala.inline
-  def apply(qType: String, qId: String = null): INxInfo = {
+  
+  inline def apply(qType: String): INxInfo = {
     val __obj = js.Dynamic.literal(qType = qType.asInstanceOf[js.Any])
-    if (qId != null) __obj.updateDynamic("qId")(qId.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxInfo]
   }
+  
+  extension [Self <: INxInfo](x: Self) {
+    
+    inline def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
+    
+    inline def setQIdUndefined: Self = StObject.set(x, "qId", js.undefined)
+    
+    inline def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+  }
 }
-

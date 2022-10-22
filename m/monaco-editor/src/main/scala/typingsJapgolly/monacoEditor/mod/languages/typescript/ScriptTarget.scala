@@ -1,83 +1,81 @@
 package typingsJapgolly.monacoEditor.mod.languages.typescript
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ScriptTarget extends js.Object
-
+sealed trait ScriptTarget extends StObject
 @JSImport("monaco-editor", "languages.typescript.ScriptTarget")
 @js.native
-object ScriptTarget extends js.Object {
-  @js.native
-  sealed trait ES2015 extends ScriptTarget
-  
-  @js.native
-  sealed trait ES2016 extends ScriptTarget
-  
-  @js.native
-  sealed trait ES2017 extends ScriptTarget
-  
-  @js.native
-  sealed trait ES2018 extends ScriptTarget
-  
-  @js.native
-  sealed trait ES2019 extends ScriptTarget
-  
-  @js.native
-  sealed trait ES2020 extends ScriptTarget
-  
-  @js.native
-  sealed trait ES3 extends ScriptTarget
-  
-  @js.native
-  sealed trait ES5 extends ScriptTarget
-  
-  @js.native
-  sealed trait ESNext extends ScriptTarget
-  
-  @js.native
-  sealed trait JSON extends ScriptTarget
-  
-  @js.native
-  sealed trait Latest extends ScriptTarget
+object ScriptTarget extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ScriptTarget with Double] = js.native
-  /* 2 */ @js.native
-  object ES2015 extends TopLevel[ES2015 with Double]
+  def apply(value: Double): js.UndefOr[ScriptTarget & Double] = js.native
   
-  /* 3 */ @js.native
-  object ES2016 extends TopLevel[ES2016 with Double]
+  @js.native
+  sealed trait ES2015
+    extends StObject
+       with ScriptTarget
+  /* 2 */ val ES2015: typingsJapgolly.monacoEditor.mod.languages.typescript.ScriptTarget.ES2015 & Double = js.native
   
-  /* 4 */ @js.native
-  object ES2017 extends TopLevel[ES2017 with Double]
+  @js.native
+  sealed trait ES2016
+    extends StObject
+       with ScriptTarget
+  /* 3 */ val ES2016: typingsJapgolly.monacoEditor.mod.languages.typescript.ScriptTarget.ES2016 & Double = js.native
   
-  /* 5 */ @js.native
-  object ES2018 extends TopLevel[ES2018 with Double]
+  @js.native
+  sealed trait ES2017
+    extends StObject
+       with ScriptTarget
+  /* 4 */ val ES2017: typingsJapgolly.monacoEditor.mod.languages.typescript.ScriptTarget.ES2017 & Double = js.native
   
-  /* 6 */ @js.native
-  object ES2019 extends TopLevel[ES2019 with Double]
+  @js.native
+  sealed trait ES2018
+    extends StObject
+       with ScriptTarget
+  /* 5 */ val ES2018: typingsJapgolly.monacoEditor.mod.languages.typescript.ScriptTarget.ES2018 & Double = js.native
   
-  /* 7 */ @js.native
-  object ES2020 extends TopLevel[ES2020 with Double]
+  @js.native
+  sealed trait ES2019
+    extends StObject
+       with ScriptTarget
+  /* 6 */ val ES2019: typingsJapgolly.monacoEditor.mod.languages.typescript.ScriptTarget.ES2019 & Double = js.native
   
-  /* 0 */ @js.native
-  object ES3 extends TopLevel[ES3 with Double]
+  @js.native
+  sealed trait ES2020
+    extends StObject
+       with ScriptTarget
+  /* 7 */ val ES2020: typingsJapgolly.monacoEditor.mod.languages.typescript.ScriptTarget.ES2020 & Double = js.native
   
-  /* 1 */ @js.native
-  object ES5 extends TopLevel[ES5 with Double]
+  @js.native
+  sealed trait ES3
+    extends StObject
+       with ScriptTarget
+  /* 0 */ val ES3: typingsJapgolly.monacoEditor.mod.languages.typescript.ScriptTarget.ES3 & Double = js.native
   
-  /* 99 */ @js.native
-  object ESNext extends TopLevel[ESNext with Double]
+  @js.native
+  sealed trait ES5
+    extends StObject
+       with ScriptTarget
+  /* 1 */ val ES5: typingsJapgolly.monacoEditor.mod.languages.typescript.ScriptTarget.ES5 & Double = js.native
   
-  /* 100 */ @js.native
-  object JSON extends TopLevel[JSON with Double]
+  @js.native
+  sealed trait ESNext
+    extends StObject
+       with ScriptTarget
+  /* 99 */ val ESNext: typingsJapgolly.monacoEditor.mod.languages.typescript.ScriptTarget.ESNext & Double = js.native
   
-  /* 99 */ @js.native
-  object Latest extends TopLevel[Latest with Double]
+  @js.native
+  sealed trait JSON
+    extends StObject
+       with ScriptTarget
+  /* 100 */ val JSON: typingsJapgolly.monacoEditor.mod.languages.typescript.ScriptTarget.JSON & Double = js.native
   
+  @js.native
+  sealed trait Latest
+    extends StObject
+       with ScriptTarget
+  /* 99 */ val Latest: typingsJapgolly.monacoEditor.mod.languages.typescript.ScriptTarget.Latest & Double = js.native
 }
-

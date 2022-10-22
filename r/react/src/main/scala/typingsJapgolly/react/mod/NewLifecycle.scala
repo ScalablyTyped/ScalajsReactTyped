@@ -1,13 +1,13 @@
 package typingsJapgolly.react.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // This should be "infer SS" but can't use it yet
-trait NewLifecycle[P, S, SS] extends js.Object {
+trait NewLifecycle[P, S, SS] extends StObject {
+  
   /**
     * Called immediately after updating occurs. Not called for the initial render.
     *
@@ -16,6 +16,7 @@ trait NewLifecycle[P, S, SS] extends js.Object {
   var componentDidUpdate: js.UndefOr[
     js.Function3[/* prevProps */ P, /* prevState */ S, /* snapshot */ js.UndefOr[SS], Unit]
   ] = js.undefined
+  
   /**
     * Runs before React applies the result of `render` to the document, and
     * returns an object to be given to componentDidUpdate. Useful for saving
@@ -26,17 +27,21 @@ trait NewLifecycle[P, S, SS] extends js.Object {
     */
   var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ P, /* prevState */ S, SS | Null]] = js.undefined
 }
-
 object NewLifecycle {
-  @scala.inline
-  def apply[P, S, SS](
-    componentDidUpdate: (/* prevProps */ P, /* prevState */ S, /* snapshot */ js.UndefOr[SS]) => Callback = null,
-    getSnapshotBeforeUpdate: (/* prevProps */ P, /* prevState */ S) => CallbackTo[SS | Null] = null
-  ): NewLifecycle[P, S, SS] = {
+  
+  inline def apply[P, S, SS](): NewLifecycle[P, S, SS] = {
     val __obj = js.Dynamic.literal()
-    if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(js.Any.fromFunction3((t0: /* prevProps */ P, t1: /* prevState */ S, t2: /* snapshot */ js.UndefOr[SS]) => componentDidUpdate(t0, t1, t2).runNow()))
-    if (getSnapshotBeforeUpdate != null) __obj.updateDynamic("getSnapshotBeforeUpdate")(js.Any.fromFunction2((t0: /* prevProps */ P, t1: /* prevState */ S) => getSnapshotBeforeUpdate(t0, t1).runNow()))
     __obj.asInstanceOf[NewLifecycle[P, S, SS]]
   }
+  
+  extension [Self <: NewLifecycle[?, ?, ?], P, S, SS](x: Self & (NewLifecycle[P, S, SS])) {
+    
+    inline def setComponentDidUpdate(value: (/* prevProps */ P, /* prevState */ S, /* snapshot */ js.UndefOr[SS]) => Callback): Self = StObject.set(x, "componentDidUpdate", js.Any.fromFunction3((t0: /* prevProps */ P, t1: /* prevState */ S, t2: /* snapshot */ js.UndefOr[SS]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setComponentDidUpdateUndefined: Self = StObject.set(x, "componentDidUpdate", js.undefined)
+    
+    inline def setGetSnapshotBeforeUpdate(value: (/* prevProps */ P, /* prevState */ S) => SS | Null): Self = StObject.set(x, "getSnapshotBeforeUpdate", js.Any.fromFunction2(value))
+    
+    inline def setGetSnapshotBeforeUpdateUndefined: Self = StObject.set(x, "getSnapshotBeforeUpdate", js.undefined)
+  }
 }
-

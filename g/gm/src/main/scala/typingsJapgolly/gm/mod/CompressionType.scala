@@ -1,8 +1,8 @@
 package typingsJapgolly.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gm.gmStrings.None
@@ -16,30 +16,26 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gm.gmStrings.Zip
   - typingsJapgolly.gm.gmStrings.LZMA
 */
-trait CompressionType extends js.Object
-
+trait CompressionType extends StObject
 object CompressionType {
-  @scala.inline
-  def BZip: typingsJapgolly.gm.gmStrings.BZip = this.cast("BZip")
-  @scala.inline
-  def Fax: typingsJapgolly.gm.gmStrings.Fax = this.cast("Fax")
-  @scala.inline
-  def Group4: typingsJapgolly.gm.gmStrings.Group4 = this.cast("Group4")
-  @scala.inline
-  def JPEG: typingsJapgolly.gm.gmStrings.JPEG = this.cast("JPEG")
-  @scala.inline
-  def LZMA: typingsJapgolly.gm.gmStrings.LZMA = this.cast("LZMA")
-  @scala.inline
-  def LZW: typingsJapgolly.gm.gmStrings.LZW = this.cast("LZW")
-  @scala.inline
-  def Lossless: typingsJapgolly.gm.gmStrings.Lossless = this.cast("Lossless")
-  @scala.inline
-  def None: typingsJapgolly.gm.gmStrings.None = this.cast("None")
-  @scala.inline
-  def RLE: typingsJapgolly.gm.gmStrings.RLE = this.cast("RLE")
-  @scala.inline
-  def Zip: typingsJapgolly.gm.gmStrings.Zip = this.cast("Zip")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def BZip: typingsJapgolly.gm.gmStrings.BZip = "BZip".asInstanceOf[typingsJapgolly.gm.gmStrings.BZip]
+  
+  inline def Fax: typingsJapgolly.gm.gmStrings.Fax = "Fax".asInstanceOf[typingsJapgolly.gm.gmStrings.Fax]
+  
+  inline def Group4: typingsJapgolly.gm.gmStrings.Group4 = "Group4".asInstanceOf[typingsJapgolly.gm.gmStrings.Group4]
+  
+  inline def JPEG: typingsJapgolly.gm.gmStrings.JPEG = "JPEG".asInstanceOf[typingsJapgolly.gm.gmStrings.JPEG]
+  
+  inline def LZMA: typingsJapgolly.gm.gmStrings.LZMA = "LZMA".asInstanceOf[typingsJapgolly.gm.gmStrings.LZMA]
+  
+  inline def LZW: typingsJapgolly.gm.gmStrings.LZW = "LZW".asInstanceOf[typingsJapgolly.gm.gmStrings.LZW]
+  
+  inline def Lossless: typingsJapgolly.gm.gmStrings.Lossless = "Lossless".asInstanceOf[typingsJapgolly.gm.gmStrings.Lossless]
+  
+  inline def None: typingsJapgolly.gm.gmStrings.None = "None".asInstanceOf[typingsJapgolly.gm.gmStrings.None]
+  
+  inline def RLE: typingsJapgolly.gm.gmStrings.RLE = "RLE".asInstanceOf[typingsJapgolly.gm.gmStrings.RLE]
+  
+  inline def Zip: typingsJapgolly.gm.gmStrings.Zip = "Zip".asInstanceOf[typingsJapgolly.gm.gmStrings.Zip]
 }
-

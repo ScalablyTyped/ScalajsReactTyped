@@ -1,34 +1,31 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ExpressionStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
+  
   var expression: Expression
+  
   @JSName("type")
   var type_ExpressionStatement: typingsJapgolly.estree.estreeStrings.ExpressionStatement
 }
-
 object ExpressionStatement {
-  @scala.inline
-  def apply(
-    expression: Expression,
-    `type`: typingsJapgolly.estree.estreeStrings.ExpressionStatement,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ExpressionStatement = {
+  
+  inline def apply(expression: Expression): ExpressionStatement = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ExpressionStatement")
     __obj.asInstanceOf[ExpressionStatement]
   }
+  
+  extension [Self <: ExpressionStatement](x: Self) {
+    
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.ExpressionStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

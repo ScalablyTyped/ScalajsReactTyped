@@ -1,16 +1,15 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/windowWhen", JSImport.Namespace)
-@js.native
-object operatorWindowWhenMod extends js.Object {
-  def windowWhen[T](
-    closingSelector: js.Function0[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
-    ]
-  ): js.Any = js.native
+object operatorWindowWhenMod {
+  
+  @JSImport("rxjs-compat/operator/windowWhen", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def windowWhen[T](closingSelector: js.Function0[Observable_[Any]]): Observable_[Observable_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("windowWhen")(closingSelector.asInstanceOf[js.Any]).asInstanceOf[Observable_[Observable_[T]]]
 }
-

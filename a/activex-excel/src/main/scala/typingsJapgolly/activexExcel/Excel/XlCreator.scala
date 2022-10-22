@@ -1,14 +1,11 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1480803660`
+import typingsJapgolly.activexExcel.activexExcelInts.`1480803660`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object XlCreator {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlCreatorCode: `1480803660` = this.cast(1480803660)
+  
+  inline def xlCreatorCode: `1480803660` = 1480803660.asInstanceOf[`1480803660`]
 }
-

@@ -1,23 +1,27 @@
 package typingsJapgolly.minappEnv.wx
 
-import typingsJapgolly.minappEnv.minappEnvNumbers.`0`
-import typingsJapgolly.minappEnv.minappEnvNumbers.`1`
-import typingsJapgolly.minappEnv.minappEnvNumbers.`2`
+import typingsJapgolly.minappEnv.minappEnvInts.`0`
+import typingsJapgolly.minappEnv.minappEnvInts.`1`
+import typingsJapgolly.minappEnv.minappEnvInts.`2`
 import typingsJapgolly.minappEnv.minappEnvStrings.en
 import typingsJapgolly.minappEnv.minappEnvStrings.zh_CN
 import typingsJapgolly.minappEnv.minappEnvStrings.zh_TW
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 用户信息 */
-trait UserInfo extends js.Object {
+trait UserInfo extends StObject {
+  
   /** 用户头像图片的 URL。URL 最后一个数值代表正方形头像大小（有 0、46、64、96、132 数值可选，0 代表 640x640 的正方形头像，46 表示 46x46 的正方形头像，剩余数值以此类推。默认132），用户没有头像时该项为空。若用户更换头像，原有头像 URL 将失效。 */
   var avatarUrl: String
+  
   /** 用户所在城市 */
   var city: String
+  
   /** 用户所在国家 */
   var country: String
+  
   /** 用户性别
     *
     * 可选值：
@@ -25,6 +29,7 @@ trait UserInfo extends js.Object {
     * - 1: 男性;
     * - 2: 女性; */
   var gender: `0` | `1` | `2`
+  
   /** 显示 country，province，city 所用的语言
     *
     * 可选值：
@@ -32,15 +37,16 @@ trait UserInfo extends js.Object {
     * - 'zh_CN': 简体中文;
     * - 'zh_TW': 繁体中文; */
   var language: en | zh_CN | zh_TW
+  
   /** 用户昵称 */
   var nickName: String
+  
   /** 用户所在省份 */
   var province: String
 }
-
 object UserInfo {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     avatarUrl: String,
     city: String,
     country: String,
@@ -50,8 +56,23 @@ object UserInfo {
     province: String
   ): UserInfo = {
     val __obj = js.Dynamic.literal(avatarUrl = avatarUrl.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], nickName = nickName.asInstanceOf[js.Any], province = province.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[UserInfo]
   }
+  
+  extension [Self <: UserInfo](x: Self) {
+    
+    inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
+    
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    
+    inline def setGender(value: `0` | `1` | `2`): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    
+    inline def setLanguage(value: en | zh_CN | zh_TW): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setNickName(value: String): Self = StObject.set(x, "nickName", value.asInstanceOf[js.Any])
+    
+    inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+  }
 }
-

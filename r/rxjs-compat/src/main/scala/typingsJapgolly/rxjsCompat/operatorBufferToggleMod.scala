@@ -1,18 +1,19 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.distTypesInternalTypesMod.SubscribableOrPromise
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/bufferToggle", JSImport.Namespace)
-@js.native
-object operatorBufferToggleMod extends js.Object {
-  def bufferToggle[T, O](
-    openings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<O> */ js.Any,
-    closingSelector: js.Function1[
-      /* value */ O, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ _
-    ]
-  ): js.Any = js.native
+object operatorBufferToggleMod {
+  
+  @JSImport("rxjs-compat/operator/bufferToggle", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def bufferToggle[T, O](
+    openings: SubscribableOrPromise[O],
+    closingSelector: js.Function1[/* value */ O, SubscribableOrPromise[Any]]
+  ): Observable_[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferToggle")(openings.asInstanceOf[js.Any], closingSelector.asInstanceOf[js.Any])).asInstanceOf[Observable_[js.Array[T]]]
 }
-

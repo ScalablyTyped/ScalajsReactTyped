@@ -1,8 +1,8 @@
 package typingsJapgolly.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -10,7 +10,10 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-trait CellProperties extends SettableCellProperties {
+trait CellProperties
+  extends StObject
+     with SettableCellProperties {
+  
   /**
     *
     * Represents the `address` property.
@@ -18,6 +21,7 @@ trait CellProperties extends SettableCellProperties {
     * [Api set: ExcelApi 1.9]
     */
   var address: js.UndefOr[String] = js.undefined
+  
   /**
     *
     * Represents the `addressLocal` property.
@@ -25,6 +29,7 @@ trait CellProperties extends SettableCellProperties {
     * [Api set: ExcelApi 1.9]
     */
   var addressLocal: js.UndefOr[String] = js.undefined
+  
   /**
     *
     * Represents the `hidden` property.
@@ -33,25 +38,25 @@ trait CellProperties extends SettableCellProperties {
     */
   var hidden: js.UndefOr[Boolean] = js.undefined
 }
-
 object CellProperties {
-  @scala.inline
-  def apply(
-    address: String = null,
-    addressLocal: String = null,
-    format: CellPropertiesFormat = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    hyperlink: RangeHyperlink = null,
-    style: String = null
-  ): CellProperties = {
+  
+  inline def apply(): CellProperties = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (addressLocal != null) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellProperties]
   }
+  
+  extension [Self <: CellProperties](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressLocal(value: String): Self = StObject.set(x, "addressLocal", value.asInstanceOf[js.Any])
+    
+    inline def setAddressLocalUndefined: Self = StObject.set(x, "addressLocal", js.undefined)
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+  }
 }
-

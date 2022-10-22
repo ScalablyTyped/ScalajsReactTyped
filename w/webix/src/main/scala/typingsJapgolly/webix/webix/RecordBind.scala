@@ -1,13 +1,7 @@
 package typingsJapgolly.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RecordBind extends js.Object
-
-@JSGlobal("webix.RecordBind")
-@js.native
-object RecordBind extends TopLevel[RecordBind]
-
+trait RecordBind extends StObject

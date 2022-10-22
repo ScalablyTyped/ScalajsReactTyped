@@ -1,33 +1,51 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.collapsed
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.expanded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InputFieldGroupProperties extends js.Object {
+trait InputFieldGroupProperties extends StObject {
+  
   /**
     * The group's description.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#description)
     */
   var description: js.UndefOr[String] = js.undefined
+  
+  var state: js.UndefOr[expanded | collapsed] = js.undefined
+  
   /**
-    * Arcade expression to determine whether this group is visible or not
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#visibilityExpression)
+    * Arcade expression to determine whether this group is visible or not.
     *
     * @default null
+    * @deprecated Since 4.23. Use {@link esri/form/elements/GroupElement#visibilityExpression groupElement.visibilityExpression}
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#visibilityExpression)
     */
   var visibilityExpression: js.UndefOr[String] = js.undefined
 }
-
 object InputFieldGroupProperties {
-  @scala.inline
-  def apply(description: String = null, visibilityExpression: String = null): InputFieldGroupProperties = {
+  
+  inline def apply(): InputFieldGroupProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (visibilityExpression != null) __obj.updateDynamic("visibilityExpression")(visibilityExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputFieldGroupProperties]
   }
+  
+  extension [Self <: InputFieldGroupProperties](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setState(value: expanded | collapsed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setVisibilityExpression(value: String): Self = StObject.set(x, "visibilityExpression", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityExpressionUndefined: Self = StObject.set(x, "visibilityExpression", js.undefined)
+  }
 }
-

@@ -2,31 +2,63 @@ package typingsJapgolly.egg.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.accepts.mod.Accepts
-import typingsJapgolly.eggCookies.mod.^
-import typingsJapgolly.eggLogger.mod.EggLogger
+import typingsJapgolly.egg.anon.FnCall
 import typingsJapgolly.koa.mod.BaseContext
 import typingsJapgolly.node.httpMod.IncomingMessage
 import typingsJapgolly.node.httpMod.ServerResponse
-import typingsJapgolly.urllib.mod.RequestOptions2
+import typingsJapgolly.urllib.srcEsmRequestMod.RequestOptions
+import typingsJapgolly.urllib.srcEsmRequestMod.RequestURL
+import typingsJapgolly.urllib.srcEsmResponseMod.HttpClientResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Context
-  extends BaseContext
-     with /* key */ StringDictionary[js.Any] {
+trait Context[ResponseBodyT]
+  extends StObject
+     with BaseContext
+     with /* key */ StringDictionary[Any] {
+  
+  def __(key: String, values: String*): String = js.native
+  
   /**
     * @see Request#accept
     */
   var accept: Accepts = js.native
+  
   /**
     * @see Request#acceptJSON
     */
   var acceptJSON: Boolean = js.native
+  
   var app: Application = js.native
+  
+  @JSName("body")
+  var body_Context: ResponseBodyT = js.native
+  
   // The new 'cookies' instead of Koa's.
-  var cookies: ^ = js.native
+  var cookies: typingsJapgolly.eggCookies.mod.^ = js.native
+  
+  /**
+    * http request helper base on httpclient, it will auto save httpclient log.
+    * Keep the same api with httpclient.request(url, args).
+    * See https://github.com/node-modules/urllib#api-doc for more details.
+    */
+  def curl(url: RequestURL): js.Promise[HttpClientResponse] = js.native
+  /**
+    * http request helper base on httpclient, it will auto save httpclient log.
+    * Keep the same api with httpclient.request(url, args).
+    * See https://github.com/node-modules/urllib#api-doc for more details.
+    */
+  def curl(url: RequestURL, options: RequestOptions): js.Promise[HttpClientResponse] = js.native
+  /**
+    * http request helper base on httpclient, it will auto save httpclient log.
+    * Keep the same api with httpclient.request(url, args).
+    * See https://github.com/node-modules/urllib#api-doc for more details.
+    */
+  @JSName("curl")
+  var curl_Original: FnCall = js.native
+  
   /**
     * Set the ctx.body.data value
     *
@@ -52,8 +84,35 @@ trait Context
     * }
     * ```
     */
-  var data: js.Any = js.native
+  var data: Any = js.native
+  
+  /**
+    * get upload file stream
+    * @example
+    * ```js
+    * const stream = await this.getFileStream();
+    * // get other fields
+    * console.log(stream.fields);
+    * ```
+    * @method Context#getFileStream
+    * @param {Object} options
+    * @return {ReadStream} stream
+    * @since 1.0.0
+    */
+  def getFileStream(): js.Promise[FileStream] = js.native
+  def getFileStream(options: GetFileStreamOptions): js.Promise[FileStream] = js.native
+  
+  /**
+    * Get logger by name, it's equal to app.loggers['name'], but you can extend it with your own logical
+    */
+  def getLogger(name: String): EggLogger = js.native
+  
+  def gettext(key: String, values: String*): String = js.native
+  
   var helper: IHelper = js.native
+  
+  var httpclient: EggContextHttpClient = js.native
+  
   /**
     * locals is an object for view, you can use `app.locals` and `ctx.locals` to set variables,
     * which will be used as data when view is rendering.
@@ -81,7 +140,8 @@ trait Context
     *
     * @member {Object} Context#locals
     */
-  var locals: IApplicationLocals with IContextLocals = js.native
+  var locals: IApplicationLocals & IContextLocals = js.native
+  
   /**
     * Logger for Application, wrapping app.coreLogger with context infomation
     *
@@ -94,6 +154,7 @@ trait Context
     * ```
     */
   var logger: EggLogger = js.native
+  
   /**
     * set ctx.body.meta value
     *
@@ -115,8 +176,10 @@ trait Context
     * }
     * ```
     */
-  var meta: js.Any = js.native
+  var meta: Any = js.native
+  
   var originalUrl: String = js.native
+  
   /**
     * Resource Parameters
     * @example
@@ -145,57 +208,49 @@ trait Context
     *
     * The number of every page, `GET /api/users?per_page=20` => `20`
     */
-  var params: js.Any = js.native
+  var params: Any = js.native
+  
   /**
-    * @see Request#accept
+    * Request start timer using `performance.now()`
+    */
+  var performanceStarttime: js.UndefOr[Double] = js.native
+  
+  /**
+    * @see Request#queries
     */
   var queries: PlainObject[js.Array[String]] = js.native
+  
+  /**
+    * @see Request#query
+    */
+  @JSName("query")
+  var query_Context: PlainObject[String] = js.native
+  
   /**
     * @see Response#realStatus
     */
   var realStatus: Double = js.native
+  
   // properties of koa.Context
   var req: IncomingMessage = js.native
+  
   var request: Request = js.native
-  var res: ServerResponse = js.native
+  
+  var res: ServerResponse[IncomingMessage] = js.native
+  
   var respond: js.UndefOr[Boolean] = js.native
-  var response: Response = js.native
+  
+  var response: Response[ResponseBodyT] = js.native
+  
   var service: IService = js.native
+  
   /**
     * Request start time
     */
   var starttime: Double = js.native
+  
   /**
     * alias to {@link locals}, compatible with koa that use this variable
     */
-  var state: js.Any = js.native
-  def __(key: String, values: String*): String = js.native
-  /**
-    * http request helper base on httpclient, it will auto save httpclient log.
-    * Keep the same api with httpclient.request(url, args).
-    * See https://github.com/node-modules/urllib#api-doc for more details.
-    */
-  def curl[T](url: String): js.Promise[T] = js.native
-  def curl[T](url: String, opt: RequestOptions2): js.Promise[T] = js.native
-  /**
-    * get upload file stream
-    * @example
-    * ```js
-    * const stream = await this.getFileStream();
-    * // get other fields
-    * console.log(stream.fields);
-    * ```
-    * @method Context#getFileStream
-    * @param {Object} options
-    * @return {ReadStream} stream
-    * @since 1.0.0
-    */
-  def getFileStream(): js.Promise[FileStream] = js.native
-  def getFileStream(options: GetFileStreamOptions): js.Promise[FileStream] = js.native
-  /**
-    * Get logger by name, it's equal to app.loggers['name'], but you can extend it with your own logical
-    */
-  def getLogger(name: String): EggLogger = js.native
-  def gettext(key: String, values: String*): String = js.native
+  var state: Any = js.native
 }
-

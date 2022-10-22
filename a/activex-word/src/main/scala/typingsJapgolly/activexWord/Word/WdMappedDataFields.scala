@@ -1,135 +1,131 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`10`
-import typingsJapgolly.activexWord.activexWordNumbers.`11`
-import typingsJapgolly.activexWord.activexWordNumbers.`12`
-import typingsJapgolly.activexWord.activexWordNumbers.`13`
-import typingsJapgolly.activexWord.activexWordNumbers.`14`
-import typingsJapgolly.activexWord.activexWordNumbers.`15`
-import typingsJapgolly.activexWord.activexWordNumbers.`16`
-import typingsJapgolly.activexWord.activexWordNumbers.`17`
-import typingsJapgolly.activexWord.activexWordNumbers.`18`
-import typingsJapgolly.activexWord.activexWordNumbers.`19`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`20`
-import typingsJapgolly.activexWord.activexWordNumbers.`21`
-import typingsJapgolly.activexWord.activexWordNumbers.`22`
-import typingsJapgolly.activexWord.activexWordNumbers.`23`
-import typingsJapgolly.activexWord.activexWordNumbers.`24`
-import typingsJapgolly.activexWord.activexWordNumbers.`25`
-import typingsJapgolly.activexWord.activexWordNumbers.`26`
-import typingsJapgolly.activexWord.activexWordNumbers.`27`
-import typingsJapgolly.activexWord.activexWordNumbers.`28`
-import typingsJapgolly.activexWord.activexWordNumbers.`29`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`30`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
-import typingsJapgolly.activexWord.activexWordNumbers.`5`
-import typingsJapgolly.activexWord.activexWordNumbers.`6`
-import typingsJapgolly.activexWord.activexWordNumbers.`7`
-import typingsJapgolly.activexWord.activexWordNumbers.`8`
-import typingsJapgolly.activexWord.activexWordNumbers.`9`
+import typingsJapgolly.activexWord.activexWordInts.`10`
+import typingsJapgolly.activexWord.activexWordInts.`11`
+import typingsJapgolly.activexWord.activexWordInts.`12`
+import typingsJapgolly.activexWord.activexWordInts.`13`
+import typingsJapgolly.activexWord.activexWordInts.`14`
+import typingsJapgolly.activexWord.activexWordInts.`15`
+import typingsJapgolly.activexWord.activexWordInts.`16`
+import typingsJapgolly.activexWord.activexWordInts.`17`
+import typingsJapgolly.activexWord.activexWordInts.`18`
+import typingsJapgolly.activexWord.activexWordInts.`19`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`20`
+import typingsJapgolly.activexWord.activexWordInts.`21`
+import typingsJapgolly.activexWord.activexWordInts.`22`
+import typingsJapgolly.activexWord.activexWordInts.`23`
+import typingsJapgolly.activexWord.activexWordInts.`24`
+import typingsJapgolly.activexWord.activexWordInts.`25`
+import typingsJapgolly.activexWord.activexWordInts.`26`
+import typingsJapgolly.activexWord.activexWordInts.`27`
+import typingsJapgolly.activexWord.activexWordInts.`28`
+import typingsJapgolly.activexWord.activexWordInts.`29`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`30`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import typingsJapgolly.activexWord.activexWordInts.`5`
+import typingsJapgolly.activexWord.activexWordInts.`6`
+import typingsJapgolly.activexWord.activexWordInts.`7`
+import typingsJapgolly.activexWord.activexWordInts.`8`
+import typingsJapgolly.activexWord.activexWordInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`10`
-  - typingsJapgolly.activexWord.activexWordNumbers.`11`
-  - typingsJapgolly.activexWord.activexWordNumbers.`29`
-  - typingsJapgolly.activexWord.activexWordNumbers.`17`
-  - typingsJapgolly.activexWord.activexWordNumbers.`16`
-  - typingsJapgolly.activexWord.activexWordNumbers.`12`
-  - typingsJapgolly.activexWord.activexWordNumbers.`9`
-  - typingsJapgolly.activexWord.activexWordNumbers.`15`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`30`
-  - typingsJapgolly.activexWord.activexWordNumbers.`20`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
-  - typingsJapgolly.activexWord.activexWordNumbers.`19`
-  - typingsJapgolly.activexWord.activexWordNumbers.`18`
-  - typingsJapgolly.activexWord.activexWordNumbers.`8`
-  - typingsJapgolly.activexWord.activexWordNumbers.`5`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`7`
-  - typingsJapgolly.activexWord.activexWordNumbers.`14`
-  - typingsJapgolly.activexWord.activexWordNumbers.`27`
-  - typingsJapgolly.activexWord.activexWordNumbers.`28`
-  - typingsJapgolly.activexWord.activexWordNumbers.`22`
-  - typingsJapgolly.activexWord.activexWordNumbers.`23`
-  - typingsJapgolly.activexWord.activexWordNumbers.`25`
-  - typingsJapgolly.activexWord.activexWordNumbers.`24`
-  - typingsJapgolly.activexWord.activexWordNumbers.`26`
-  - typingsJapgolly.activexWord.activexWordNumbers.`13`
-  - typingsJapgolly.activexWord.activexWordNumbers.`6`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`21`
+  - typingsJapgolly.activexWord.activexWordInts.`10`
+  - typingsJapgolly.activexWord.activexWordInts.`11`
+  - typingsJapgolly.activexWord.activexWordInts.`29`
+  - typingsJapgolly.activexWord.activexWordInts.`17`
+  - typingsJapgolly.activexWord.activexWordInts.`16`
+  - typingsJapgolly.activexWord.activexWordInts.`12`
+  - typingsJapgolly.activexWord.activexWordInts.`9`
+  - typingsJapgolly.activexWord.activexWordInts.`15`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`30`
+  - typingsJapgolly.activexWord.activexWordInts.`20`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`19`
+  - typingsJapgolly.activexWord.activexWordInts.`18`
+  - typingsJapgolly.activexWord.activexWordInts.`8`
+  - typingsJapgolly.activexWord.activexWordInts.`5`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`7`
+  - typingsJapgolly.activexWord.activexWordInts.`14`
+  - typingsJapgolly.activexWord.activexWordInts.`27`
+  - typingsJapgolly.activexWord.activexWordInts.`28`
+  - typingsJapgolly.activexWord.activexWordInts.`22`
+  - typingsJapgolly.activexWord.activexWordInts.`23`
+  - typingsJapgolly.activexWord.activexWordInts.`25`
+  - typingsJapgolly.activexWord.activexWordInts.`24`
+  - typingsJapgolly.activexWord.activexWordInts.`26`
+  - typingsJapgolly.activexWord.activexWordInts.`13`
+  - typingsJapgolly.activexWord.activexWordInts.`6`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`21`
 */
-trait WdMappedDataFields extends js.Object
-
+trait WdMappedDataFields extends StObject
 object WdMappedDataFields {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdAddress1: `10` = this.cast(10)
-  @scala.inline
-  def wdAddress2: `11` = this.cast(11)
-  @scala.inline
-  def wdAddress3: `29` = this.cast(29)
-  @scala.inline
-  def wdBusinessFax: `17` = this.cast(17)
-  @scala.inline
-  def wdBusinessPhone: `16` = this.cast(16)
-  @scala.inline
-  def wdCity: `12` = this.cast(12)
-  @scala.inline
-  def wdCompany: `9` = this.cast(9)
-  @scala.inline
-  def wdCountryRegion: `15` = this.cast(15)
-  @scala.inline
-  def wdCourtesyTitle: `2` = this.cast(2)
-  @scala.inline
-  def wdDepartment: `30` = this.cast(30)
-  @scala.inline
-  def wdEmailAddress: `20` = this.cast(20)
-  @scala.inline
-  def wdFirstName: `3` = this.cast(3)
-  @scala.inline
-  def wdHomeFax: `19` = this.cast(19)
-  @scala.inline
-  def wdHomePhone: `18` = this.cast(18)
-  @scala.inline
-  def wdJobTitle: `8` = this.cast(8)
-  @scala.inline
-  def wdLastName: `5` = this.cast(5)
-  @scala.inline
-  def wdMiddleName: `4` = this.cast(4)
-  @scala.inline
-  def wdNickname: `7` = this.cast(7)
-  @scala.inline
-  def wdPostalCode: `14` = this.cast(14)
-  @scala.inline
-  def wdRubyFirstName: `27` = this.cast(27)
-  @scala.inline
-  def wdRubyLastName: `28` = this.cast(28)
-  @scala.inline
-  def wdSpouseCourtesyTitle: `22` = this.cast(22)
-  @scala.inline
-  def wdSpouseFirstName: `23` = this.cast(23)
-  @scala.inline
-  def wdSpouseLastName: `25` = this.cast(25)
-  @scala.inline
-  def wdSpouseMiddleName: `24` = this.cast(24)
-  @scala.inline
-  def wdSpouseNickname: `26` = this.cast(26)
-  @scala.inline
-  def wdState: `13` = this.cast(13)
-  @scala.inline
-  def wdSuffix: `6` = this.cast(6)
-  @scala.inline
-  def wdUniqueIdentifier: `1` = this.cast(1)
-  @scala.inline
-  def wdWebPageURL: `21` = this.cast(21)
+  
+  inline def wdAddress1: `10` = 10.asInstanceOf[`10`]
+  
+  inline def wdAddress2: `11` = 11.asInstanceOf[`11`]
+  
+  inline def wdAddress3: `29` = 29.asInstanceOf[`29`]
+  
+  inline def wdBusinessFax: `17` = 17.asInstanceOf[`17`]
+  
+  inline def wdBusinessPhone: `16` = 16.asInstanceOf[`16`]
+  
+  inline def wdCity: `12` = 12.asInstanceOf[`12`]
+  
+  inline def wdCompany: `9` = 9.asInstanceOf[`9`]
+  
+  inline def wdCountryRegion: `15` = 15.asInstanceOf[`15`]
+  
+  inline def wdCourtesyTitle: `2` = 2.asInstanceOf[`2`]
+  
+  inline def wdDepartment: `30` = 30.asInstanceOf[`30`]
+  
+  inline def wdEmailAddress: `20` = 20.asInstanceOf[`20`]
+  
+  inline def wdFirstName: `3` = 3.asInstanceOf[`3`]
+  
+  inline def wdHomeFax: `19` = 19.asInstanceOf[`19`]
+  
+  inline def wdHomePhone: `18` = 18.asInstanceOf[`18`]
+  
+  inline def wdJobTitle: `8` = 8.asInstanceOf[`8`]
+  
+  inline def wdLastName: `5` = 5.asInstanceOf[`5`]
+  
+  inline def wdMiddleName: `4` = 4.asInstanceOf[`4`]
+  
+  inline def wdNickname: `7` = 7.asInstanceOf[`7`]
+  
+  inline def wdPostalCode: `14` = 14.asInstanceOf[`14`]
+  
+  inline def wdRubyFirstName: `27` = 27.asInstanceOf[`27`]
+  
+  inline def wdRubyLastName: `28` = 28.asInstanceOf[`28`]
+  
+  inline def wdSpouseCourtesyTitle: `22` = 22.asInstanceOf[`22`]
+  
+  inline def wdSpouseFirstName: `23` = 23.asInstanceOf[`23`]
+  
+  inline def wdSpouseLastName: `25` = 25.asInstanceOf[`25`]
+  
+  inline def wdSpouseMiddleName: `24` = 24.asInstanceOf[`24`]
+  
+  inline def wdSpouseNickname: `26` = 26.asInstanceOf[`26`]
+  
+  inline def wdState: `13` = 13.asInstanceOf[`13`]
+  
+  inline def wdSuffix: `6` = 6.asInstanceOf[`6`]
+  
+  inline def wdUniqueIdentifier: `1` = 1.asInstanceOf[`1`]
+  
+  inline def wdWebPageURL: `21` = 21.asInstanceOf[`21`]
 }
-

@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OnClose extends js.Object
-
+sealed trait OnClose extends StObject
 /**
   * An enum that specifies what to do when a URL opened through an OpenLink is closed.
   *
@@ -17,20 +15,15 @@ sealed trait OnClose extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Card_Service.OnClose")
 @js.native
-object OnClose extends js.Object {
-  @js.native
-  sealed trait NOTHING extends OnClose
+object OnClose extends StObject {
   
   @js.native
-  sealed trait RELOAD_ADD_ON extends OnClose
+  sealed trait NOTHING
+    extends StObject
+       with OnClose
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[OnClose with Double] = js.native
-  /* 0 */ @js.native
-  object NOTHING extends TopLevel[NOTHING with Double]
-  
-  /* 1 */ @js.native
-  object RELOAD_ADD_ON extends TopLevel[RELOAD_ADD_ON with Double]
-  
+  @js.native
+  sealed trait RELOAD_ADD_ON
+    extends StObject
+       with OnClose
 }
-

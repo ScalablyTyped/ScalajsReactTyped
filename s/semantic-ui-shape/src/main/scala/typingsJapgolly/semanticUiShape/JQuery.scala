@@ -1,9 +1,6 @@
 package typingsJapgolly.semanticUiShape
 
 import typingsJapgolly.semanticUiShape.SemanticUI.Shape
-import typingsJapgolly.semanticUiShape.SemanticUI.Shape.ClassNameSettings
-import typingsJapgolly.semanticUiShape.SemanticUI.Shape.ErrorSettings
-import typingsJapgolly.semanticUiShape.SemanticUI.Shape.SelectorSettings
 import typingsJapgolly.semanticUiShape.SemanticUI.Shape.Translation
 import typingsJapgolly.semanticUiShape.SemanticUI.ShapeSettings
 import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.`flip back`
@@ -20,165 +17,136 @@ import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.`is animating`
 import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.`set default side`
 import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.`set next side`
 import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.`set stage size`
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.beforeChange
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.className
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.debug
 import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.destroy
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.duration
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.error
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.height
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.initial
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.name
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.namespace
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.next
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.onChange
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.performance
 import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.queue
 import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.refresh
 import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.repaint
 import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.reset
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.selector
 import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.setting
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.silent
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.verbose
-import typingsJapgolly.semanticUiShape.semanticUiShapeStrings.width
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
+  def shape(): JQuery
+  def shape(settings: ShapeSettings): JQuery
   @JSName("shape")
-  var shape_Original: Shape = js.native
-  def shape(): JQuery = js.native
-  def shape(behavior: setting, name: beforeChange): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def shape(behavior: setting, name: beforeChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def shape(behavior: setting, name: className): ClassNameSettings = js.native
-  def shape(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def shape(behavior: setting, name: debug): Boolean = js.native
-  def shape(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def shape(behavior: setting, name: duration): Double = js.native
-  def shape(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def shape(behavior: setting, name: error): ErrorSettings = js.native
-  def shape(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def shape(behavior: setting, name: height): next | initial | Double = js.native
-  def shape(behavior: setting, name: height, value: Double): JQuery = js.native
-  def shape(behavior: setting, name: height, value: initial): JQuery = js.native
-  def shape(behavior: setting, name: height, value: next): JQuery = js.native
-  def shape(behavior: setting, name: name): String = js.native
-  def shape(behavior: setting, name: namespace): String = js.native
-  def shape(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def shape(behavior: setting, name: name, value: String): JQuery = js.native
-  def shape(behavior: setting, name: onChange): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def shape(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def shape(behavior: setting, name: performance): Boolean = js.native
-  def shape(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def shape(behavior: setting, name: selector): SelectorSettings = js.native
-  def shape(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def shape(behavior: setting, name: silent): Boolean = js.native
-  def shape(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def shape(behavior: setting, name: verbose): Boolean = js.native
-  def shape(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def shape(behavior: setting, name: width): next | initial | Double = js.native
-  def shape(behavior: setting, name: width, value: Double): JQuery = js.native
-  def shape(behavior: setting, name: width, value: initial): JQuery = js.native
-  def shape(behavior: setting, name: width, value: next): JQuery = js.native
-  def shape(settings: ShapeSettings): JQuery = js.native
+  var shape_Original: Shape
   @JSName("shape")
-  def shape_destroy(behavior: destroy): JQuery = js.native
+  def shape_destroy(behavior: destroy): JQuery
   /**
     * Flips the shape over counter-clockwise
     */
   @JSName("shape")
-  def shape_flipback(behavior: `flip back`): JQuery = js.native
+  def shape_flipback(behavior: `flip back`): JQuery
   /**
     * Flips the shape downward
     */
   @JSName("shape")
-  def shape_flipdown(behavior: `flip down`): JQuery = js.native
+  def shape_flipdown(behavior: `flip down`): JQuery
   /**
     * Flips the shape left
     */
   @JSName("shape")
-  def shape_flipleft(behavior: `flip left`): JQuery = js.native
+  def shape_flipleft(behavior: `flip left`): JQuery
   /**
     * Flips the shape over clock-wise
     */
   @JSName("shape")
-  def shape_flipover(behavior: `flip over`): JQuery = js.native
+  def shape_flipover(behavior: `flip over`): JQuery
   /**
     * Flips the shape right
     */
   @JSName("shape")
-  def shape_flipright(behavior: `flip right`): JQuery = js.native
+  def shape_flipright(behavior: `flip right`): JQuery
   /**
     * Flips the shape upward
     */
   @JSName("shape")
-  def shape_flipup(behavior: `flip up`): JQuery = js.native
+  def shape_flipup(behavior: `flip up`): JQuery
   /**
     * Returns translation for next side staged below
     */
   @JSName("shape")
-  def shape_gettransformdown(behavior: `get transform down`): Translation = js.native
+  def shape_gettransformdown(behavior: `get transform down`): Translation
   /**
     * Returns translation for next side staged left
     */
   @JSName("shape")
-  def shape_gettransformleft(behavior: `get transform left`): Translation = js.native
+  def shape_gettransformleft(behavior: `get transform left`): Translation
   /**
     * Returns translation for next side staged right
     */
   @JSName("shape")
-  def shape_gettransformright(behavior: `get transform right`): Translation = js.native
+  def shape_gettransformright(behavior: `get transform right`): Translation
   /**
     * Returns translation for next side staged up
     */
   @JSName("shape")
-  def shape_gettransformup(behavior: `get transform up`): Translation = js.native
+  def shape_gettransformup(behavior: `get transform up`): Translation
   /**
     * Returns whether shape is currently animating
     */
   @JSName("shape")
-  def shape_isanimating(behavior: `is animating`): Boolean = js.native
+  def shape_isanimating(behavior: `is animating`): Boolean
   /**
     * Queues an animation until after current animation
     */
   @JSName("shape")
-  def shape_queue(behavior: queue, animation: String): JQuery = js.native
+  def shape_queue(behavior: queue, animation: String): JQuery
   /**
     * Refreshes the selector cache for element sides
     */
   @JSName("shape")
-  def shape_refresh(behavior: refresh): JQuery = js.native
+  def shape_refresh(behavior: refresh): JQuery
   /**
     * Forces a reflow on element
     */
   @JSName("shape")
-  def shape_repaint(behavior: repaint): JQuery = js.native
+  def shape_repaint(behavior: repaint): JQuery
   /**
     * Removes all inline styles
     */
   @JSName("shape")
-  def shape_reset(behavior: reset): JQuery = js.native
+  def shape_reset(behavior: reset): JQuery
   /**
     * Set the next side to next sibling to active element
     */
   @JSName("shape")
-  def shape_setdefaultside(behavior: `set default side`): JQuery = js.native
+  def shape_setdefaultside(behavior: `set default side`): JQuery
   /**
     * Set the next side to a specific selector
     */
   @JSName("shape")
-  def shape_setnextside(behavior: `set next side`, selector: String): JQuery = js.native
+  def shape_setnextside(behavior: `set next side`, selector: String): JQuery
   @JSName("shape")
-  def shape_setnextside(behavior: `set next side`, selector: JQuery): JQuery = js.native
+  def shape_setnextside(behavior: `set next side`, selector: JQuery): JQuery
   /**
     * Sets shape to the content size of the next side
     */
   @JSName("shape")
-  def shape_setstagesize(behavior: `set stage size`): JQuery = js.native
+  def shape_setstagesize(behavior: `set stage size`): JQuery
   @JSName("shape")
-  def shape_setting(behavior: setting, value: ShapeSettings): JQuery = js.native
+  def shape_setting(behavior: setting, value: ShapeSettings): JQuery
+  @JSName("shape")
+  def shape_setting[K /* <: /* keyof semantic-ui-shape.SemanticUI.ShapeSettings */ String */](
+    behavior: setting,
+    name: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-shape.SemanticUI.ShapeSettings._Impl[K] */ js.Any
+  ): JQuery
+  @JSName("shape")
+  def shape_setting[K /* <: /* keyof semantic-ui-shape.SemanticUI.ShapeSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-shape.SemanticUI.ShapeSettings._Impl[K] */ js.Any
 }
-
+object JQuery {
+  
+  inline def apply(shape: Shape): JQuery = {
+    val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  extension [Self <: JQuery](x: Self) {
+    
+    inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+  }
+}

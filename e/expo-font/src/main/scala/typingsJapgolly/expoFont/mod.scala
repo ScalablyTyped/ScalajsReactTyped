@@ -1,25 +1,55 @@
 package typingsJapgolly.expoFont
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.expoAsset.mod.Asset
+import typingsJapgolly.expoFont.buildFontDottypesMod.FontSource
+import typingsJapgolly.expoFont.buildFontDottypesMod.UnloadFontOptions
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("expo-font", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def isLoaded(name: String): Boolean = js.native
-  def isLoading(name: String): Boolean = js.native
-  def loadAsync(nameOrMap: String): js.Promise[Unit] = js.native
-  def loadAsync(nameOrMap: String, source: FontSource): js.Promise[Unit] = js.native
-  def loadAsync(nameOrMap: StringDictionary[FontSource]): js.Promise[Unit] = js.native
-  def loadAsync(nameOrMap: StringDictionary[FontSource], source: FontSource): js.Promise[Unit] = js.native
-  def processFontFamily(): String | Null = js.native
-  def processFontFamily(name: String): String | Null = js.native
-  /**
-    * A font source can be a URI, a module ID, or an Expo Asset.
-    */
-  type FontSource = String | Double | Asset
+object mod {
+  
+  @JSImport("expo-font", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("expo-font", "FontDisplay")
+  @js.native
+  object FontDisplay extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typingsJapgolly.expoFont.buildFontDottypesMod.FontDisplay & String] = js.native
+    
+    /* "auto" */ val AUTO: typingsJapgolly.expoFont.buildFontDottypesMod.FontDisplay.AUTO & String = js.native
+    
+    /* "block" */ val BLOCK: typingsJapgolly.expoFont.buildFontDottypesMod.FontDisplay.BLOCK & String = js.native
+    
+    /* "fallback" */ val FALLBACK: typingsJapgolly.expoFont.buildFontDottypesMod.FontDisplay.FALLBACK & String = js.native
+    
+    /* "optional" */ val OPTIONAL: typingsJapgolly.expoFont.buildFontDottypesMod.FontDisplay.OPTIONAL & String = js.native
+    
+    /* "swap" */ val SWAP: typingsJapgolly.expoFont.buildFontDottypesMod.FontDisplay.SWAP & String = js.native
+  }
+  
+  inline def isLoaded(fontFamily: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoaded")(fontFamily.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isLoading(fontFamily: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoading")(fontFamily.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def loadAsync(fontFamilyOrFontMap: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def loadAsync(fontFamilyOrFontMap: String, source: FontSource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def loadAsync(fontFamilyOrFontMap: Record[String, FontSource]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def loadAsync(fontFamilyOrFontMap: Record[String, FontSource], source: FontSource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def processFontFamily(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("processFontFamily")().asInstanceOf[String | Null]
+  inline def processFontFamily(fontFamily: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("processFontFamily")(fontFamily.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  
+  inline def unloadAllAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadAllAsync")().asInstanceOf[js.Promise[Unit]]
+  
+  inline def unloadAsync(fontFamilyOrFontMap: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def unloadAsync(fontFamilyOrFontMap: String, options: UnloadFontOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def unloadAsync(fontFamilyOrFontMap: Record[String, UnloadFontOptions]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def unloadAsync(fontFamilyOrFontMap: Record[String, UnloadFontOptions], options: UnloadFontOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unloadAsync")(fontFamilyOrFontMap.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def useFonts(map: String): js.Tuple2[Boolean, js.Error | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFonts")(map.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, js.Error | Null]]
+  inline def useFonts(map: Record[String, FontSource]): js.Tuple2[Boolean, js.Error | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFonts")(map.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, js.Error | Null]]
 }
-

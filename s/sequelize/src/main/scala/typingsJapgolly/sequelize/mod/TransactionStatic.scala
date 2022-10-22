@@ -1,15 +1,16 @@
 package typingsJapgolly.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The transaction static object
   *
   * @see Transaction
   */
-trait TransactionStatic extends js.Object {
+trait TransactionStatic extends StObject {
+  
   /**
     * Isolations levels can be set per-transaction by passing `options.isolationLevel` to
     * `sequelize.transaction`. Default to `REPEATABLE_READ` but you can override the default isolation level
@@ -46,6 +47,7 @@ trait TransactionStatic extends js.Object {
     * @see ISOLATION_LEVELS
     */
   var ISOLATION_LEVELS: TransactionIsolationLevels
+  
   /**
     * Possible options for row locking. Used in conjuction with `find` calls:
     *
@@ -82,6 +84,7 @@ trait TransactionStatic extends js.Object {
     * UserModel will be locked but TaskModel won't!
     */
   var LOCK: TransactionLock
+  
   /**
     * Transaction type can be set per-transaction by passing `options.type` to
     * `sequelize.transaction`. Default to `DEFERRED` but you can override the default isolation level
@@ -117,13 +120,19 @@ trait TransactionStatic extends js.Object {
     */
   var TYPES: TransactionTypes
 }
-
 object TransactionStatic {
-  @scala.inline
-  def apply(ISOLATION_LEVELS: TransactionIsolationLevels, LOCK: TransactionLock, TYPES: TransactionTypes): TransactionStatic = {
-    val __obj = js.Dynamic.literal(ISOLATION_LEVELS = ISOLATION_LEVELS.asInstanceOf[js.Any], LOCK = LOCK.asInstanceOf[js.Any], TYPES = TYPES.asInstanceOf[js.Any])
   
+  inline def apply(ISOLATION_LEVELS: TransactionIsolationLevels, LOCK: TransactionLock, TYPES: TransactionTypes): TransactionStatic = {
+    val __obj = js.Dynamic.literal(ISOLATION_LEVELS = ISOLATION_LEVELS.asInstanceOf[js.Any], LOCK = LOCK.asInstanceOf[js.Any], TYPES = TYPES.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionStatic]
   }
+  
+  extension [Self <: TransactionStatic](x: Self) {
+    
+    inline def setISOLATION_LEVELS(value: TransactionIsolationLevels): Self = StObject.set(x, "ISOLATION_LEVELS", value.asInstanceOf[js.Any])
+    
+    inline def setLOCK(value: TransactionLock): Self = StObject.set(x, "LOCK", value.asInstanceOf[js.Any])
+    
+    inline def setTYPES(value: TransactionTypes): Self = StObject.set(x, "TYPES", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,21 +1,24 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "MarkedString")
-@js.native
-object MarkedString extends js.Object {
+object MarkedString {
+  
+  @JSImport("vscode-languageclient", "MarkedString")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a marked string from plain text.
     *
     * @param plainText The plain text.
     */
-  def fromPlainText(plainText: String): String = js.native
+  inline def fromPlainText(plainText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPlainText")(plainText.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   /**
     * Checks whether the given value conforms to the [MarkedString](#MarkedString) type.
     */
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkedString */ Boolean = js.native
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkedString */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.MarkedString */ Boolean]
 }
-

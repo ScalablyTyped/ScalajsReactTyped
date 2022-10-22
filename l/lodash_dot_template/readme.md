@@ -1,7 +1,7 @@
 
 # Scala.js typings for lodash_dot_template
 
-Typings are for version 4.4
+Typings are for version 4.5
 
 ## Library description:
 The Lodash method `_.template` exported as a module.
@@ -10,10 +10,10 @@ The Lodash method `_.template` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.template |
 | Keywords           | lodash-modularized, template |
-| # releases         | 2 |
-| # dependents       | 529 |
-| # downloads        | 252668277 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.2145495E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

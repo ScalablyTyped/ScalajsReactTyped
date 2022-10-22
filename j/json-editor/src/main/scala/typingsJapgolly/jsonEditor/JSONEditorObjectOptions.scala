@@ -1,42 +1,54 @@
 package typingsJapgolly.jsonEditor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSONEditorObjectOptions extends js.Object {
+trait JSONEditorObjectOptions extends StObject {
+  
   /**
     * If set to true, the editor will start collapsed
     */
   var collapsed: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If set to true, the collapse button will be hidden
     */
   var disable_collapse: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If set to true, the Edit JSON button will be hidden
     */
   var disable_edit_json: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If set to true, the Edit Properties button will be hidden
     */
   var disable_properties: js.UndefOr[Boolean] = js.undefined
 }
-
 object JSONEditorObjectOptions {
-  @scala.inline
-  def apply(
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    disable_collapse: js.UndefOr[Boolean] = js.undefined,
-    disable_edit_json: js.UndefOr[Boolean] = js.undefined,
-    disable_properties: js.UndefOr[Boolean] = js.undefined
-  ): JSONEditorObjectOptions = {
+  
+  inline def apply(): JSONEditorObjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_collapse)) __obj.updateDynamic("disable_collapse")(disable_collapse.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_edit_json)) __obj.updateDynamic("disable_edit_json")(disable_edit_json.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_properties)) __obj.updateDynamic("disable_properties")(disable_properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorObjectOptions]
   }
+  
+  extension [Self <: JSONEditorObjectOptions](x: Self) {
+    
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    
+    inline def setDisable_collapse(value: Boolean): Self = StObject.set(x, "disable_collapse", value.asInstanceOf[js.Any])
+    
+    inline def setDisable_collapseUndefined: Self = StObject.set(x, "disable_collapse", js.undefined)
+    
+    inline def setDisable_edit_json(value: Boolean): Self = StObject.set(x, "disable_edit_json", value.asInstanceOf[js.Any])
+    
+    inline def setDisable_edit_jsonUndefined: Self = StObject.set(x, "disable_edit_json", js.undefined)
+    
+    inline def setDisable_properties(value: Boolean): Self = StObject.set(x, "disable_properties", value.asInstanceOf[js.Any])
+    
+    inline def setDisable_propertiesUndefined: Self = StObject.set(x, "disable_properties", js.undefined)
+  }
 }
-

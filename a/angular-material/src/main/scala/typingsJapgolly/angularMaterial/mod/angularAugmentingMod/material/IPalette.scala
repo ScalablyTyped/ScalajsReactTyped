@@ -1,75 +1,138 @@
 package typingsJapgolly.angularMaterial.mod.angularAugmentingMod.material
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPalette extends js.Object {
+trait IPalette extends StObject {
+  
   var `0`: js.UndefOr[String] = js.undefined
+  
   var `100`: js.UndefOr[String] = js.undefined
+  
   var `200`: js.UndefOr[String] = js.undefined
+  
   var `300`: js.UndefOr[String] = js.undefined
+  
   var `400`: js.UndefOr[String] = js.undefined
+  
   var `50`: js.UndefOr[String] = js.undefined
+  
   var `500`: js.UndefOr[String] = js.undefined
+  
   var `600`: js.UndefOr[String] = js.undefined
+  
   var `700`: js.UndefOr[String] = js.undefined
+  
   var `800`: js.UndefOr[String] = js.undefined
+  
   var `900`: js.UndefOr[String] = js.undefined
+  
   var A100: js.UndefOr[String] = js.undefined
+  
   var A200: js.UndefOr[String] = js.undefined
+  
   var A400: js.UndefOr[String] = js.undefined
+  
   var A700: js.UndefOr[String] = js.undefined
+  
   var contrastDarkColors: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var contrastDefaultColor: js.UndefOr[String] = js.undefined
+  
   var contrastLightColors: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var contrastStrongLightColors: js.UndefOr[String | js.Array[String]] = js.undefined
 }
-
 object IPalette {
-  @scala.inline
-  def apply(
-    `0`: String = null,
-    `100`: String = null,
-    `200`: String = null,
-    `300`: String = null,
-    `400`: String = null,
-    `50`: String = null,
-    `500`: String = null,
-    `600`: String = null,
-    `700`: String = null,
-    `800`: String = null,
-    `900`: String = null,
-    A100: String = null,
-    A200: String = null,
-    A400: String = null,
-    A700: String = null,
-    contrastDarkColors: String | js.Array[String] = null,
-    contrastDefaultColor: String = null,
-    contrastLightColors: String | js.Array[String] = null,
-    contrastStrongLightColors: String | js.Array[String] = null
-  ): IPalette = {
+  
+  inline def apply(): IPalette = {
     val __obj = js.Dynamic.literal()
-    if (`0` != null) __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
-    if (`100` != null) __obj.updateDynamic("100")(`100`.asInstanceOf[js.Any])
-    if (`200` != null) __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    if (`300` != null) __obj.updateDynamic("300")(`300`.asInstanceOf[js.Any])
-    if (`400` != null) __obj.updateDynamic("400")(`400`.asInstanceOf[js.Any])
-    if (`50` != null) __obj.updateDynamic("50")(`50`.asInstanceOf[js.Any])
-    if (`500` != null) __obj.updateDynamic("500")(`500`.asInstanceOf[js.Any])
-    if (`600` != null) __obj.updateDynamic("600")(`600`.asInstanceOf[js.Any])
-    if (`700` != null) __obj.updateDynamic("700")(`700`.asInstanceOf[js.Any])
-    if (`800` != null) __obj.updateDynamic("800")(`800`.asInstanceOf[js.Any])
-    if (`900` != null) __obj.updateDynamic("900")(`900`.asInstanceOf[js.Any])
-    if (A100 != null) __obj.updateDynamic("A100")(A100.asInstanceOf[js.Any])
-    if (A200 != null) __obj.updateDynamic("A200")(A200.asInstanceOf[js.Any])
-    if (A400 != null) __obj.updateDynamic("A400")(A400.asInstanceOf[js.Any])
-    if (A700 != null) __obj.updateDynamic("A700")(A700.asInstanceOf[js.Any])
-    if (contrastDarkColors != null) __obj.updateDynamic("contrastDarkColors")(contrastDarkColors.asInstanceOf[js.Any])
-    if (contrastDefaultColor != null) __obj.updateDynamic("contrastDefaultColor")(contrastDefaultColor.asInstanceOf[js.Any])
-    if (contrastLightColors != null) __obj.updateDynamic("contrastLightColors")(contrastLightColors.asInstanceOf[js.Any])
-    if (contrastStrongLightColors != null) __obj.updateDynamic("contrastStrongLightColors")(contrastStrongLightColors.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPalette]
   }
+  
+  extension [Self <: IPalette](x: Self) {
+    
+    inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    
+    inline def set0Undefined: Self = StObject.set(x, "0", js.undefined)
+    
+    inline def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
+    
+    inline def set100Undefined: Self = StObject.set(x, "100", js.undefined)
+    
+    inline def set200(value: String): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    
+    inline def set200Undefined: Self = StObject.set(x, "200", js.undefined)
+    
+    inline def set300(value: String): Self = StObject.set(x, "300", value.asInstanceOf[js.Any])
+    
+    inline def set300Undefined: Self = StObject.set(x, "300", js.undefined)
+    
+    inline def set400(value: String): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
+    
+    inline def set400Undefined: Self = StObject.set(x, "400", js.undefined)
+    
+    inline def set50(value: String): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
+    
+    inline def set500(value: String): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
+    
+    inline def set500Undefined: Self = StObject.set(x, "500", js.undefined)
+    
+    inline def set50Undefined: Self = StObject.set(x, "50", js.undefined)
+    
+    inline def set600(value: String): Self = StObject.set(x, "600", value.asInstanceOf[js.Any])
+    
+    inline def set600Undefined: Self = StObject.set(x, "600", js.undefined)
+    
+    inline def set700(value: String): Self = StObject.set(x, "700", value.asInstanceOf[js.Any])
+    
+    inline def set700Undefined: Self = StObject.set(x, "700", js.undefined)
+    
+    inline def set800(value: String): Self = StObject.set(x, "800", value.asInstanceOf[js.Any])
+    
+    inline def set800Undefined: Self = StObject.set(x, "800", js.undefined)
+    
+    inline def set900(value: String): Self = StObject.set(x, "900", value.asInstanceOf[js.Any])
+    
+    inline def set900Undefined: Self = StObject.set(x, "900", js.undefined)
+    
+    inline def setA100(value: String): Self = StObject.set(x, "A100", value.asInstanceOf[js.Any])
+    
+    inline def setA100Undefined: Self = StObject.set(x, "A100", js.undefined)
+    
+    inline def setA200(value: String): Self = StObject.set(x, "A200", value.asInstanceOf[js.Any])
+    
+    inline def setA200Undefined: Self = StObject.set(x, "A200", js.undefined)
+    
+    inline def setA400(value: String): Self = StObject.set(x, "A400", value.asInstanceOf[js.Any])
+    
+    inline def setA400Undefined: Self = StObject.set(x, "A400", js.undefined)
+    
+    inline def setA700(value: String): Self = StObject.set(x, "A700", value.asInstanceOf[js.Any])
+    
+    inline def setA700Undefined: Self = StObject.set(x, "A700", js.undefined)
+    
+    inline def setContrastDarkColors(value: String | js.Array[String]): Self = StObject.set(x, "contrastDarkColors", value.asInstanceOf[js.Any])
+    
+    inline def setContrastDarkColorsUndefined: Self = StObject.set(x, "contrastDarkColors", js.undefined)
+    
+    inline def setContrastDarkColorsVarargs(value: String*): Self = StObject.set(x, "contrastDarkColors", js.Array(value*))
+    
+    inline def setContrastDefaultColor(value: String): Self = StObject.set(x, "contrastDefaultColor", value.asInstanceOf[js.Any])
+    
+    inline def setContrastDefaultColorUndefined: Self = StObject.set(x, "contrastDefaultColor", js.undefined)
+    
+    inline def setContrastLightColors(value: String | js.Array[String]): Self = StObject.set(x, "contrastLightColors", value.asInstanceOf[js.Any])
+    
+    inline def setContrastLightColorsUndefined: Self = StObject.set(x, "contrastLightColors", js.undefined)
+    
+    inline def setContrastLightColorsVarargs(value: String*): Self = StObject.set(x, "contrastLightColors", js.Array(value*))
+    
+    inline def setContrastStrongLightColors(value: String | js.Array[String]): Self = StObject.set(x, "contrastStrongLightColors", value.asInstanceOf[js.Any])
+    
+    inline def setContrastStrongLightColorsUndefined: Self = StObject.set(x, "contrastStrongLightColors", js.undefined)
+    
+    inline def setContrastStrongLightColorsVarargs(value: String*): Self = StObject.set(x, "contrastStrongLightColors", js.Array(value*))
+  }
 }
-

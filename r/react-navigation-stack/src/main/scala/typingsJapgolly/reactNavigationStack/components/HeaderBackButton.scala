@@ -1,64 +1,67 @@
 package typingsJapgolly.reactNavigationStack.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNative.mod.Animated.WithAnimatedValue
+import typingsJapgolly.reactNative.mod.LayoutChangeEvent
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
-import typingsJapgolly.reactNavigationStack.AnonTintColor
-import typingsJapgolly.reactNavigationStack.headerBackButtonMod.Props
-import typingsJapgolly.reactNavigationStack.headerBackButtonMod.default
+import typingsJapgolly.reactNative.mod.ViewStyle
+import typingsJapgolly.reactNavigationStack.anon.TintColor
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.Layout
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackHeaderLeftButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object HeaderBackButton {
-  def apply(
-    onPress: Callback,
-    allowFontScaling: js.UndefOr[Boolean] = js.undefined,
-    backImage: /* props */ AnonTintColor => CallbackTo[Node] = null,
-    backTitleVisible: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    pressColorAndroid: String = null,
-    tintColor: String = null,
-    title: String = null,
-    titleStyle: StyleProp[TextStyle] = null,
-    truncatedTitle: String = null,
-    width: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, default, Unit, Props] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("onPress")(onPress.toJsFn)
-    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.asInstanceOf[js.Any])
-    if (backImage != null) __obj.updateDynamic("backImage")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactNavigationStack.AnonTintColor) => backImage(t0).runNow()))
-    if (!js.isUndefined(backTitleVisible)) __obj.updateDynamic("backTitleVisible")(backTitleVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (pressColorAndroid != null) __obj.updateDynamic("pressColorAndroid")(pressColorAndroid.asInstanceOf[js.Any])
-    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
-    if (truncatedTitle != null) __obj.updateDynamic("truncatedTitle")(truncatedTitle.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNavigationStack.headerBackButtonMod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNavigationStack.headerBackButtonMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNavigationStack.headerBackButtonMod.Props])(children: _*)
-  }
-  @JSImport("react-navigation-stack/lib/typescript/views/Header/HeaderBackButton", JSImport.Default)
+  @JSImport("react-navigation-stack", "HeaderBackButton")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def accessibilityLabel(value: String): this.type = set("accessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def allowFontScaling(value: Boolean): this.type = set("allowFontScaling", value.asInstanceOf[js.Any])
+    
+    inline def backImage(value: /* props */ TintColor => Node): this.type = set("backImage", js.Any.fromFunction1(value))
+    
+    inline def canGoBack(value: Boolean): this.type = set("canGoBack", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def label(value: String): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def labelStyle(value: WithAnimatedValue[StyleProp[TextStyle]]): this.type = set("labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def labelVisible(value: Boolean): this.type = set("labelVisible", value.asInstanceOf[js.Any])
+    
+    inline def onLabelLayout(value: /* e */ LayoutChangeEvent => Callback): this.type = set("onLabelLayout", js.Any.fromFunction1((t0: /* e */ LayoutChangeEvent) => value(t0).runNow()))
+    
+    inline def onPress(value: Callback): this.type = set("onPress", value.toJsFn)
+    
+    inline def pressColorAndroid(value: String): this.type = set("pressColorAndroid", value.asInstanceOf[js.Any])
+    
+    inline def screenLayout(value: Layout): this.type = set("screenLayout", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def tintColor(value: String): this.type = set("tintColor", value.asInstanceOf[js.Any])
+    
+    inline def titleLayout(value: Layout): this.type = set("titleLayout", value.asInstanceOf[js.Any])
+    
+    inline def truncatedLabel(value: String): this.type = set("truncatedLabel", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: HeaderBackButton.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: StackHeaderLeftButtonProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

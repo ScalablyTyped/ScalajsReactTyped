@@ -11,9 +11,9 @@ A free and unlimited API for Google Translate
 | Full name          | google-translate-api |
 | Keywords           | translate, translator, google, translate, api, free, language |
 | # releases         | 1 |
-| # dependents       | 53 |
-| # downloads        | 424045 |
-| # stars            | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 9187.0 |
+| # stars            | 2166.0 |
 
 ## Links
 - [Homepage](https://github.com/matheuss/google-translate-api#readme)

@@ -1,53 +1,44 @@
 package typingsJapgolly.antd.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.numberMod.NumberProps
-import typingsJapgolly.antd.statisticUtilsMod.Formatter
-import typingsJapgolly.antd.statisticUtilsMod.valueType
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.libStatisticNumberMod.NumberProps
+import typingsJapgolly.antd.libStatisticUtilsMod.FormatConfig
+import typingsJapgolly.antd.libStatisticUtilsMod.Formatter
+import typingsJapgolly.antd.libStatisticUtilsMod.valueType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Number {
-  def apply(
-    value: valueType,
-    decimalSeparator: String = null,
-    formatter: Formatter = null,
-    groupSeparator: String = null,
-    precision: Int | Double = null,
-    prefixCls: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    NumberProps, 
-    MountedWithRawType[NumberProps, js.Object, RawMounted[NumberProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
-      if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.numberMod.NumberProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.numberMod.NumberProps])(children: _*)
+  inline def apply(value: valueType): Builder = {
+    val __props = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[NumberProps]))
   }
+  
   @JSImport("antd/lib/statistic/Number", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def decimalSeparator(value: String): this.type = set("decimalSeparator", value.asInstanceOf[js.Any])
+    
+    inline def formatter(value: Formatter): this.type = set("formatter", value.asInstanceOf[js.Any])
+    
+    inline def formatterFunction2(
+      value: (/* value */ valueType, /* config */ js.UndefOr[FormatConfig]) => japgolly.scalajs.react.facade.React.Node
+    ): this.type = set("formatter", js.Any.fromFunction2(value))
+    
+    inline def groupSeparator(value: String): this.type = set("groupSeparator", value.asInstanceOf[js.Any])
+    
+    inline def precision(value: Double): this.type = set("precision", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: NumberProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

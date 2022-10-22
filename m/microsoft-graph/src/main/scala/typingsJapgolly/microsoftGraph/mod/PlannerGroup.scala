@@ -1,21 +1,31 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlannerGroup extends Entity {
+trait PlannerGroup
+  extends StObject
+     with Entity {
+  
   // Read-only. Nullable. Returns the plannerPlans owned by the group.
-  var plans: js.UndefOr[js.Array[PlannerPlan]] = js.undefined
+  var plans: js.UndefOr[NullableOption[js.Array[PlannerPlan]]] = js.undefined
 }
-
 object PlannerGroup {
-  @scala.inline
-  def apply(id: String = null, plans: js.Array[PlannerPlan] = null): PlannerGroup = {
+  
+  inline def apply(): PlannerGroup = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (plans != null) __obj.updateDynamic("plans")(plans.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerGroup]
   }
+  
+  extension [Self <: PlannerGroup](x: Self) {
+    
+    inline def setPlans(value: NullableOption[js.Array[PlannerPlan]]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
+    
+    inline def setPlansNull: Self = StObject.set(x, "plans", null)
+    
+    inline def setPlansUndefined: Self = StObject.set(x, "plans", js.undefined)
+    
+    inline def setPlansVarargs(value: PlannerPlan*): Self = StObject.set(x, "plans", js.Array(value*))
+  }
 }
-

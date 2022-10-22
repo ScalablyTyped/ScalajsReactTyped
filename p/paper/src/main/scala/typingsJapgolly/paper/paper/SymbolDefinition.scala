@@ -1,8 +1,8 @@
 package typingsJapgolly.paper.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * Symbols allow you to place multiple instances of an item in your
@@ -11,31 +11,21 @@ import scala.scalajs.js.annotation._
   * internal properties such as segment lists and gradient positions don't need
   * to be updated with every transformation.
   */
-@JSGlobal("paper.SymbolDefinition")
 @js.native
-class SymbolDefinition protected () extends js.Object {
-  /** 
-    * Creates a Symbol definition.
-    * 
-    * @param item - the source item which is removed from the scene graph
-    *     and becomes the symbol's definition.
-    */
-  def this(item: Item) = this()
-  def this(item: Item, dontCenter: Boolean) = this()
-  /** 
-    * The item used as the symbol's definition.
-    */
-  var item: Item = js.native
-  /** 
-    * The project that this symbol belongs to.
-    */
-  val project: Project = js.native
+trait SymbolDefinition extends StObject {
+  
   /** 
     * Checks whether the symbol's definition is equal to the supplied symbol.
     * 
     * @return true if they are equal
     */
   def equals(symbol: SymbolDefinition): Boolean = js.native
+  
+  /** 
+    * The item used as the symbol's definition.
+    */
+  var item: Item = js.native
+  
   /** 
     * Places in instance of the symbol in the project.
     * 
@@ -43,5 +33,9 @@ class SymbolDefinition protected () extends js.Object {
     */
   def place(): SymbolItem = js.native
   def place(position: Point): SymbolItem = js.native
+  
+  /** 
+    * The project that this symbol belongs to.
+    */
+  val project: Project = js.native
 }
-

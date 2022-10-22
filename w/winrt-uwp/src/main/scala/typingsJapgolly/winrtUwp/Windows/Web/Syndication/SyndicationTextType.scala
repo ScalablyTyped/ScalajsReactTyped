@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Web.Syndication
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SyndicationTextType extends js.Object
-
+sealed trait SyndicationTextType extends StObject
 /** Specifies the text types supported for syndication content. */
 @JSGlobal("Windows.Web.Syndication.SyndicationTextType")
 @js.native
-object SyndicationTextType extends js.Object {
+object SyndicationTextType extends StObject {
+  
   /** HTML (escaped markup) */
   @js.native
-  sealed trait html extends SyndicationTextType
+  sealed trait html
+    extends StObject
+       with SyndicationTextType
   
   /** Plain text */
   @js.native
-  sealed trait text extends SyndicationTextType
+  sealed trait text
+    extends StObject
+       with SyndicationTextType
   
   /** XML (not escaped) */
   @js.native
-  sealed trait xhtml extends SyndicationTextType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SyndicationTextType with Double] = js.native
-  /* 1 */ @js.native
-  object html extends TopLevel[html with Double]
-  
-  /* 0 */ @js.native
-  object text extends TopLevel[text with Double]
-  
-  /* 2 */ @js.native
-  object xhtml extends TopLevel[xhtml with Double]
-  
+  sealed trait xhtml
+    extends StObject
+       with SyndicationTextType
 }
-

@@ -1,23 +1,28 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.positioningContainerTypesMod.IPositioningContainerProps
+import typingsJapgolly.officeUiFabricReact.libComponentsCoachmarkPositioningContainerPositioningContainerDottypesMod.IPositioningContainerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/PositioningContainer", JSImport.Namespace)
-@js.native
-object libPositioningContainerMod extends js.Object {
+object libPositioningContainerMod {
+  
+  @JSImport("office-ui-fabric-react/lib/PositioningContainer", "PositioningContainer")
   @js.native
-  class PositioningContainer protected () extends js.Object {
+  open class PositioningContainer protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsCoachmarkPositioningContainerMod.PositioningContainer {
     def this(props: IPositioningContainerProps) = this()
   }
-  
   /* static members */
-  @js.native
-  object PositioningContainer extends js.Object {
-    var defaultProps: IPositioningContainerProps = js.native
+  object PositioningContainer {
+    
+    @JSImport("office-ui-fabric-react/lib/PositioningContainer", "PositioningContainer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/PositioningContainer", "PositioningContainer.defaultProps")
+    @js.native
+    def defaultProps: IPositioningContainerProps = js.native
+    inline def defaultProps_=(x: IPositioningContainerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
-  
 }
-

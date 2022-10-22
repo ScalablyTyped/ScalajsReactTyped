@@ -4,117 +4,149 @@ import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.DoubleAccountant
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.None
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Single
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.SingleAccountant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the `format.font` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties`, or the `format.font` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
   *
-  * Represents the `format.font` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties` or the `format.font` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
-trait CellPropertiesFont extends js.Object {
+trait CellPropertiesFont extends StObject {
+  
   /**
-    *
     * Represents the `format.font.bold` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the `format.font.color` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Represents the `format.font.italic` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the `format.font.name` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Represents the `format.font.size` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var size: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Represents the `format.font.strikethrough` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var strikethrough: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the `format.font.subscript` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var subscript: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the `format.font.superscript` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var superscript: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the `format.font.tintAndShade` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Represents the `format.font.underline` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var underline: js.UndefOr[
     RangeUnderlineStyle | None | Single | typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Double | SingleAccountant | DoubleAccountant
   ] = js.undefined
 }
-
 object CellPropertiesFont {
-  @scala.inline
-  def apply(
-    bold: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    size: Int | Double = null,
-    strikethrough: js.UndefOr[Boolean] = js.undefined,
-    subscript: js.UndefOr[Boolean] = js.undefined,
-    superscript: js.UndefOr[Boolean] = js.undefined,
-    tintAndShade: Int | Double = null,
-    underline: RangeUnderlineStyle | None | Single | typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Double | SingleAccountant | DoubleAccountant = null
-  ): CellPropertiesFont = {
+  
+  inline def apply(): CellPropertiesFont = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.asInstanceOf[js.Any])
-    if (!js.isUndefined(subscript)) __obj.updateDynamic("subscript")(subscript.asInstanceOf[js.Any])
-    if (!js.isUndefined(superscript)) __obj.updateDynamic("superscript")(superscript.asInstanceOf[js.Any])
-    if (tintAndShade != null) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
-    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellPropertiesFont]
   }
+  
+  extension [Self <: CellPropertiesFont](x: Self) {
+    
+    inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    
+    inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    
+    inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+    
+    inline def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
+    
+    inline def setSubscript(value: Boolean): Self = StObject.set(x, "subscript", value.asInstanceOf[js.Any])
+    
+    inline def setSubscriptUndefined: Self = StObject.set(x, "subscript", js.undefined)
+    
+    inline def setSuperscript(value: Boolean): Self = StObject.set(x, "superscript", value.asInstanceOf[js.Any])
+    
+    inline def setSuperscriptUndefined: Self = StObject.set(x, "superscript", js.undefined)
+    
+    inline def setTintAndShade(value: Double): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
+    
+    inline def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
+    
+    inline def setUnderline(
+      value: RangeUnderlineStyle | None | Single | typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Double | SingleAccountant | DoubleAccountant
+    ): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+  }
 }
-

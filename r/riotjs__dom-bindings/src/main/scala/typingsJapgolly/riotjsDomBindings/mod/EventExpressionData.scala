@@ -1,23 +1,26 @@
 package typingsJapgolly.riotjsDomBindings.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EventExpressionData
-  extends BaseExpressionData
-     with _ExpressionData {
+trait EventExpressionData[Scope]
+  extends StObject
+     with BaseExpressionData[Scope]
+     with _ExpressionData[Scope] {
+  
   var name: String
 }
-
 object EventExpressionData {
-  @scala.inline
-  def apply(evaluate: js.Any => CallbackTo[js.Any], name: String, `type`: ExpressionType): EventExpressionData = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("evaluate")(js.Any.fromFunction1((t0: js.Any) => evaluate(t0).runNow()))
+  
+  inline def apply[Scope](evaluate: Scope => Any, name: String, `type`: ExpressionType): EventExpressionData[Scope] = {
+    val __obj = js.Dynamic.literal(evaluate = js.Any.fromFunction1(evaluate), name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[EventExpressionData]
+    __obj.asInstanceOf[EventExpressionData[Scope]]
+  }
+  
+  extension [Self <: EventExpressionData[?], Scope](x: Self & EventExpressionData[Scope]) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }
-

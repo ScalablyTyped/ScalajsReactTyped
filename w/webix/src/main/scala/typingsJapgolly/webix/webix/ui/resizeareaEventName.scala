@@ -1,21 +1,17 @@
 package typingsJapgolly.webix.webix.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.webix.webixStrings.onResize
   - typingsJapgolly.webix.webixStrings.onResizeEnd
 */
-trait resizeareaEventName extends js.Object
-
+trait resizeareaEventName extends StObject
 object resizeareaEventName {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onResize: typingsJapgolly.webix.webixStrings.onResize = this.cast("onResize")
-  @scala.inline
-  def onResizeEnd: typingsJapgolly.webix.webixStrings.onResizeEnd = this.cast("onResizeEnd")
+  
+  inline def onResize: typingsJapgolly.webix.webixStrings.onResize = "onResize".asInstanceOf[typingsJapgolly.webix.webixStrings.onResize]
+  
+  inline def onResizeEnd: typingsJapgolly.webix.webixStrings.onResizeEnd = "onResizeEnd".asInstanceOf[typingsJapgolly.webix.webixStrings.onResizeEnd]
 }
-

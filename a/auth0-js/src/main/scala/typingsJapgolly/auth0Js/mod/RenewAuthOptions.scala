@@ -1,42 +1,50 @@
 package typingsJapgolly.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenewAuthOptions extends js.Object {
+trait RenewAuthOptions extends StObject {
+  
   /**
     * identifier of the resource server who will consume the access token issued after Auth
     */
   var audience: js.UndefOr[String] = js.undefined
+  
   /**
     * your Auth0 client identifier obtained when creating the client in the Auth0 Dashboard
     */
   var clientID: js.UndefOr[String] = js.undefined
+  
   /**
     * your Auth0 domain
     */
   var domain: js.UndefOr[String] = js.undefined
+  
   /**
     * value used to mitigate replay attacks when using Implicit Grant.
     * {@link https://auth0.com/docs/api-auth/tutorials/nonce}
     */
   var nonce: js.UndefOr[String] = js.undefined
+  
   /**
     * identifier data type to look for in postMessage event data, where events are initiated
     * from silent callback urls, before accepting a message event is the event expected.
     * A value of false means any postMessage event will trigger a callback.
     */
   var postMessageDataType: js.UndefOr[String] = js.undefined
+  
   /**
     * origin of redirectUri to expect postMessage response from.
     * Defaults to the origin of the receiving window. Only used if usePostMessage is truthy.
     */
   var postMessageOrigin: js.UndefOr[String] = js.undefined
+  
   /**
     * url that the Auth0 will redirect after Auth with the Authorization Response
     */
   var redirectUri: js.UndefOr[String] = js.undefined
+  
   /**
     * how the Auth response is encoded and redirected back to the client.
     * Supported values are `query`, `fragment` and `form_post`.
@@ -44,67 +52,98 @@ trait RenewAuthOptions extends js.Object {
     * {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes}
     */
   var responseMode: js.UndefOr[String] = js.undefined
+  
   /**
     * type of the response used by OAuth 2.0 flow. It can be any space separated
     * list of the values `code`, `token`, `id_token`.
-    * {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0}
+    * {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html}
     */
   var responseType: js.UndefOr[String] = js.undefined
+  
   /**
     * scopes to be requested during Auth. e.g. `openid email`
     */
   var scope: js.UndefOr[String] = js.undefined
+  
   /**
     * value used to mitigate XSRF attacks.
     * {@link https://auth0.com/docs/protocols/oauth2/oauth-state}
     */
   var state: js.UndefOr[String] = js.undefined
+  
   /**
     * value in milliseconds used to timeout when the `/authorize` call is failing
     * as part of the silent authentication with postmessage enabled due to a configuration.
     */
   var timeout: js.UndefOr[Double] = js.undefined
+  
   /**
-    * use postMessage to comunicate between the silent callback and the SPA.
+    * use postMessage to communicate between the silent callback and the SPA.
     * When false the SDK will attempt to parse the url hash should ignore the url hash
     * and no extra behaviour is needed
     * @default false
     */
   var usePostMessage: js.UndefOr[Boolean] = js.undefined
 }
-
 object RenewAuthOptions {
-  @scala.inline
-  def apply(
-    audience: String = null,
-    clientID: String = null,
-    domain: String = null,
-    nonce: String = null,
-    postMessageDataType: String = null,
-    postMessageOrigin: String = null,
-    redirectUri: String = null,
-    responseMode: String = null,
-    responseType: String = null,
-    scope: String = null,
-    state: String = null,
-    timeout: Int | Double = null,
-    usePostMessage: js.UndefOr[Boolean] = js.undefined
-  ): RenewAuthOptions = {
+  
+  inline def apply(): RenewAuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (clientID != null) __obj.updateDynamic("clientID")(clientID.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (postMessageDataType != null) __obj.updateDynamic("postMessageDataType")(postMessageDataType.asInstanceOf[js.Any])
-    if (postMessageOrigin != null) __obj.updateDynamic("postMessageOrigin")(postMessageOrigin.asInstanceOf[js.Any])
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
-    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePostMessage)) __obj.updateDynamic("usePostMessage")(usePostMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenewAuthOptions]
   }
+  
+  extension [Self <: RenewAuthOptions](x: Self) {
+    
+    inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+    
+    inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+    
+    inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+    
+    inline def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
+    
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    
+    inline def setPostMessageDataType(value: String): Self = StObject.set(x, "postMessageDataType", value.asInstanceOf[js.Any])
+    
+    inline def setPostMessageDataTypeUndefined: Self = StObject.set(x, "postMessageDataType", js.undefined)
+    
+    inline def setPostMessageOrigin(value: String): Self = StObject.set(x, "postMessageOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setPostMessageOriginUndefined: Self = StObject.set(x, "postMessageOrigin", js.undefined)
+    
+    inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    
+    inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+    
+    inline def setResponseMode(value: String): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
+    
+    inline def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
+    
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setUsePostMessage(value: Boolean): Self = StObject.set(x, "usePostMessage", value.asInstanceOf[js.Any])
+    
+    inline def setUsePostMessageUndefined: Self = StObject.set(x, "usePostMessage", js.undefined)
+  }
 }
-

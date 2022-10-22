@@ -1,12 +1,14 @@
-package typingsJapgolly.arcgisRestApi
+package typingsJapgolly.arcgisRestApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Color = js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]
-  type ElipticArc = typingsJapgolly.arcgisRestApi.mod.Arc
-  type Position = typingsJapgolly.arcgisRestApi.mod.Position2D | (js.Tuple3[scala.Double, scala.Double, scala.Double]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
-  type Position2D = js.Tuple2[scala.Double, scala.Double]
-}
+
+type Color = js.Tuple4[Double, Double, Double, Double]
+
+type ElipticArc = Arc
+
+type Position = Position2D | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
+
+type Position2D = js.Tuple2[Double, Double]

@@ -1,25 +1,31 @@
 package typingsJapgolly.typescript.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetEffectiveTypeRootsHost extends js.Object {
+trait GetEffectiveTypeRootsHost extends StObject {
+  
   var directoryExists: js.UndefOr[js.Function1[/* directoryName */ java.lang.String, Boolean]] = js.undefined
+  
   var getCurrentDirectory: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
 }
-
 object GetEffectiveTypeRootsHost {
-  @scala.inline
-  def apply(
-    directoryExists: /* directoryName */ java.lang.String => CallbackTo[Boolean] = null,
-    getCurrentDirectory: js.UndefOr[CallbackTo[java.lang.String]] = js.undefined
-  ): GetEffectiveTypeRootsHost = {
+  
+  inline def apply(): GetEffectiveTypeRootsHost = {
     val __obj = js.Dynamic.literal()
-    if (directoryExists != null) __obj.updateDynamic("directoryExists")(js.Any.fromFunction1((t0: /* directoryName */ java.lang.String) => directoryExists(t0).runNow()))
-    getCurrentDirectory.foreach(p => __obj.updateDynamic("getCurrentDirectory")(p.toJsFn))
     __obj.asInstanceOf[GetEffectiveTypeRootsHost]
   }
+  
+  extension [Self <: GetEffectiveTypeRootsHost](x: Self) {
+    
+    inline def setDirectoryExists(value: /* directoryName */ java.lang.String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
+    
+    inline def setDirectoryExistsUndefined: Self = StObject.set(x, "directoryExists", js.undefined)
+    
+    inline def setGetCurrentDirectory(value: CallbackTo[java.lang.String]): Self = StObject.set(x, "getCurrentDirectory", value.toJsFn)
+    
+    inline def setGetCurrentDirectoryUndefined: Self = StObject.set(x, "getCurrentDirectory", js.undefined)
+  }
 }
-

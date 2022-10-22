@@ -1,32 +1,46 @@
 package typingsJapgolly.dplayer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DPlayerSubTitle extends js.Object {
+trait DPlayerSubTitle extends StObject {
+  
   var bottom: js.UndefOr[String] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var fontSize: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[SubTitleType] = js.undefined
+  
   var url: String
 }
-
 object DPlayerSubTitle {
-  @scala.inline
-  def apply(
-    url: String,
-    bottom: String = null,
-    color: String = null,
-    fontSize: String = null,
-    `type`: SubTitleType = null
-  ): DPlayerSubTitle = {
+  
+  inline def apply(url: String): DPlayerSubTitle = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DPlayerSubTitle]
   }
+  
+  extension [Self <: DPlayerSubTitle](x: Self) {
+    
+    inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setType(value: SubTitleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

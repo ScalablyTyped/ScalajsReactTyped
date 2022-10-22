@@ -1,26 +1,27 @@
 package typingsJapgolly.webBluetooth
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BluetoothDeviceEventHandlers extends js.Object {
-  def onadvertisementreceived(ev: Event_): js.Any
-  def ongattserverdisconnected(ev: Event_): js.Any
+trait BluetoothDeviceEventHandlers extends StObject {
+  
+  def onadvertisementreceived(ev: BluetoothAdvertisingEvent): Any
+  
+  def ongattserverdisconnected(ev: Event): Any
 }
-
 object BluetoothDeviceEventHandlers {
-  @scala.inline
-  def apply(
-    onadvertisementreceived: Event_ => CallbackTo[js.Any],
-    ongattserverdisconnected: Event_ => CallbackTo[js.Any]
-  ): BluetoothDeviceEventHandlers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onadvertisementreceived")(js.Any.fromFunction1((t0: typingsJapgolly.std.Event_) => onadvertisementreceived(t0).runNow()))
-    __obj.updateDynamic("ongattserverdisconnected")(js.Any.fromFunction1((t0: typingsJapgolly.std.Event_) => ongattserverdisconnected(t0).runNow()))
+  
+  inline def apply(onadvertisementreceived: BluetoothAdvertisingEvent => Any, ongattserverdisconnected: Event => Any): BluetoothDeviceEventHandlers = {
+    val __obj = js.Dynamic.literal(onadvertisementreceived = js.Any.fromFunction1(onadvertisementreceived), ongattserverdisconnected = js.Any.fromFunction1(ongattserverdisconnected))
     __obj.asInstanceOf[BluetoothDeviceEventHandlers]
   }
+  
+  extension [Self <: BluetoothDeviceEventHandlers](x: Self) {
+    
+    inline def setOnadvertisementreceived(value: BluetoothAdvertisingEvent => Any): Self = StObject.set(x, "onadvertisementreceived", js.Any.fromFunction1(value))
+    
+    inline def setOngattserverdisconnected(value: Event => Any): Self = StObject.set(x, "ongattserverdisconnected", js.Any.fromFunction1(value))
+  }
 }
-

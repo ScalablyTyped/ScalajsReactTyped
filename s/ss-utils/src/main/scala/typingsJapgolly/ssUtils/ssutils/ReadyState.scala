@@ -1,38 +1,30 @@
 package typingsJapgolly.ssUtils.ssutils
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReadyState extends js.Object
-
+sealed trait ReadyState extends StObject
 /**
   * EventSource
   */
 @JSGlobal("ssutils.ReadyState")
 @js.native
-object ReadyState extends js.Object {
-  @js.native
-  sealed trait CLOSED extends ReadyState
+object ReadyState extends StObject {
   
   @js.native
-  sealed trait CONNECTING extends ReadyState
+  sealed trait CLOSED
+    extends StObject
+       with ReadyState
   
   @js.native
-  sealed trait OPEN extends ReadyState
+  sealed trait CONNECTING
+    extends StObject
+       with ReadyState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ReadyState with Double] = js.native
-  /* 2 */ @js.native
-  object CLOSED extends TopLevel[CLOSED with Double]
-  
-  /* 0 */ @js.native
-  object CONNECTING extends TopLevel[CONNECTING with Double]
-  
-  /* 1 */ @js.native
-  object OPEN extends TopLevel[OPEN with Double]
-  
+  @js.native
+  sealed trait OPEN
+    extends StObject
+       with ReadyState
 }
-

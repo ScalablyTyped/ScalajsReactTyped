@@ -1,20 +1,25 @@
 package typingsJapgolly.ionic.definitionsMod
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExitCodeException extends Error {
+trait ExitCodeException
+  extends StObject
+     with Error {
+  
   var exitCode: Double
 }
-
 object ExitCodeException {
-  @scala.inline
-  def apply(exitCode: Double, message: String, name: String, stack: String = null): ExitCodeException = {
+  
+  inline def apply(exitCode: Double, message: String, name: String): ExitCodeException = {
     val __obj = js.Dynamic.literal(exitCode = exitCode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExitCodeException]
   }
+  
+  extension [Self <: ExitCodeException](x: Self) {
+    
+    inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+  }
 }
-

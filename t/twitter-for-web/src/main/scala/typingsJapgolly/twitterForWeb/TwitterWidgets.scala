@@ -1,15 +1,16 @@
 package typingsJapgolly.twitterForWeb
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for Twitter for Websites widgets.
   */
 @js.native
-trait TwitterWidgets extends js.Object {
+trait TwitterWidgets extends StObject {
+  
   /**
     * Create a follow button for a user.
     *
@@ -19,6 +20,7 @@ trait TwitterWidgets extends js.Object {
     */
   def createFollowButton(screen_name: String, target: HTMLElement): js.Promise[HTMLElement] = js.native
   def createFollowButton(screen_name: String, target: HTMLElement, options: TwitterButtonWidgetOptions): js.Promise[HTMLElement] = js.native
+  
   /**
     * Create a hashtag button for a hashtag.
     *
@@ -28,6 +30,7 @@ trait TwitterWidgets extends js.Object {
     */
   def createHashtagButton(hashtag: String, target: HTMLElement): js.Promise[HTMLElement] = js.native
   def createHashtagButton(hashtag: String, target: HTMLElement, options: TwitterButtonWidgetOptions): js.Promise[HTMLElement] = js.native
+  
   /**
     * Create a mention button for a user.
     *
@@ -37,6 +40,7 @@ trait TwitterWidgets extends js.Object {
     */
   def createMentionButton(screen_name: String, target: HTMLElement): js.Promise[HTMLElement] = js.native
   def createMentionButton(screen_name: String, target: HTMLElement, options: TwitterButtonWidgetOptions): js.Promise[HTMLElement] = js.native
+  
   /**
     * Create a share button for a URL.
     *
@@ -46,6 +50,7 @@ trait TwitterWidgets extends js.Object {
     */
   def createShareButton(url: String, target: HTMLElement): js.Promise[HTMLElement] = js.native
   def createShareButton(url: String, target: HTMLElement, options: TwitterButtonWidgetOptions): js.Promise[HTMLElement] = js.native
+  
   /**
     * Create a timeline widget.
     *
@@ -59,6 +64,7 @@ trait TwitterWidgets extends js.Object {
     target: HTMLElement,
     options: TwitterTimelineWidgetOptions
   ): js.Promise[HTMLElement] = js.native
+  
   /**
     * Create an embedded Tweet for a Tweet.
     *
@@ -68,17 +74,17 @@ trait TwitterWidgets extends js.Object {
     */
   def createTweet(tweetId: String, target: HTMLElement): js.Promise[HTMLElement] = js.native
   def createTweet(tweetId: String, target: HTMLElement, options: TwitterTweetWidgetOptions): js.Promise[HTMLElement] = js.native
+  
   /**
     * Initialize Twitter for Websites widgets contained within a page.
     */
   def load(): Unit = js.native
   /**
-    * Initialize Twitter for Websites widgets contained within children of the elements.
-    */
-  def load(elements: js.Array[typingsJapgolly.std.HTMLElement]): Unit = js.native
-  /**
     * Initialize Twitter for Websites widgets contained within children of the element.
     */
-  def load(element: typingsJapgolly.std.HTMLElement): Unit = js.native
+  def load(element: HTMLElement): Unit = js.native
+  /**
+    * Initialize Twitter for Websites widgets contained within children of the elements.
+    */
+  def load(elements: js.Array[HTMLElement]): Unit = js.native
 }
-

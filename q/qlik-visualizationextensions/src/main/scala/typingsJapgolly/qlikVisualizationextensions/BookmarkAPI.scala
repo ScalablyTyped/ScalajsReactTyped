@@ -1,22 +1,23 @@
 package typingsJapgolly.qlikVisualizationextensions
 
 import typingsJapgolly.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BookmarkAPI")
-@js.native
-object BookmarkAPI extends js.Object {
+object BookmarkAPI {
+  
   @js.native
-  trait IBookmark extends js.Object {
+  trait IBookmark extends StObject {
+    
     /**
       * Applies a bookmark.
       * @param id - Bookmark id.
       * @return - A promise of a Qlik engine reply.
       */
     @JSName("apply")
-    def apply(id: String): IPromise[_] = js.native
+    def apply(id: String): IPromise[Any] = js.native
+    
     /**
       * Creates a bookmark based on the current selection.
       * @param title - Bookmark title.
@@ -24,15 +25,14 @@ object BookmarkAPI extends js.Object {
       * @param [sheetId] - Optional. Bookmark sheet id. Introduced in version 2.2.
       * @return - A promise of a Qlik engine reply.
       */
-    def create(title: String, description: String): IPromise[_] = js.native
-    def create(title: String, description: String, sheetId: String): IPromise[_] = js.native
+    def create(title: String, description: String): IPromise[Any] = js.native
+    def create(title: String, description: String, sheetId: String): IPromise[Any] = js.native
+    
     /**
       * Removes a bookmark.
       * @param id - Bookmark id.
       * @return - A promise of a Qlik engine reply.
       */
-    def remove(id: String): IPromise[_] = js.native
+    def remove(id: String): IPromise[Any] = js.native
   }
-  
 }
-

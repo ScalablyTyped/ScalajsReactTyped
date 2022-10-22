@@ -1,8 +1,8 @@
 package typingsJapgolly.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gm.gmStrings.Percentsign
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gm.gmStrings.Lessthansign
   - typingsJapgolly.gm.gmStrings.Greaterthansign
 */
-trait ResizeOption extends js.Object
-
+trait ResizeOption extends StObject
 object ResizeOption {
-  @scala.inline
-  def `@`: typingsJapgolly.gm.gmStrings.`@` = this.cast("@")
-  @scala.inline
-  def Exclamationmark: typingsJapgolly.gm.gmStrings.Exclamationmark = this.cast("!")
-  @scala.inline
-  def Greaterthansign: typingsJapgolly.gm.gmStrings.Greaterthansign = this.cast(">")
-  @scala.inline
-  def Lessthansign: typingsJapgolly.gm.gmStrings.Lessthansign = this.cast("<")
-  @scala.inline
-  def Percentsign: typingsJapgolly.gm.gmStrings.Percentsign = this.cast("%")
-  @scala.inline
-  def ^ : typingsJapgolly.gm.gmStrings.^ = this.cast("^")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ^ : typingsJapgolly.gm.gmStrings.^ = "^".asInstanceOf[typingsJapgolly.gm.gmStrings.^]
+  
+  inline def `@`: typingsJapgolly.gm.gmStrings.`@` = "@".asInstanceOf[typingsJapgolly.gm.gmStrings.`@`]
+  
+  inline def Exclamationmark: typingsJapgolly.gm.gmStrings.Exclamationmark = "!".asInstanceOf[typingsJapgolly.gm.gmStrings.Exclamationmark]
+  
+  inline def Greaterthansign: typingsJapgolly.gm.gmStrings.Greaterthansign = ">".asInstanceOf[typingsJapgolly.gm.gmStrings.Greaterthansign]
+  
+  inline def Lessthansign: typingsJapgolly.gm.gmStrings.Lessthansign = "<".asInstanceOf[typingsJapgolly.gm.gmStrings.Lessthansign]
+  
+  inline def Percentsign: typingsJapgolly.gm.gmStrings.Percentsign = "%".asInstanceOf[typingsJapgolly.gm.gmStrings.Percentsign]
 }
-

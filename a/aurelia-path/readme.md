@@ -1,7 +1,7 @@
 
 # Scala.js typings for aurelia-path
 
-Typings are for version 1.1.4
+Typings are for version 1.1.7
 
 ## Library description:
 Utilities for path manipulation.
@@ -10,10 +10,10 @@ Utilities for path manipulation.
 | ------------------ | :-------------: |
 | Full name          | aurelia-path |
 | Keywords           | aurelia, path |
-| # releases         | 5 |
-| # dependents       | 37 |
-| # downloads        | 457451 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 51215.0 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](http://aurelia.io)

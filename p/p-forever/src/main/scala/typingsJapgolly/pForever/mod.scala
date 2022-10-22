@@ -1,108 +1,71 @@
 package typingsJapgolly.pForever
 
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-forever", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  // TODO: Remove this for the next major release
-  @JSName("default")
-  var default_Original: AnonCall = js.native
-  /**
-  	Symbol used to end the loop.
-  	*/
-  val end: js.Symbol = js.native
-  /**
-  	Run promise-returning & async functions until you end it.
-  	@param fn - Receives the previously returned value. If a `Promise` is returned, it's awaited before calling `fn` again.
-  	@param initialValue - Initial value to pass to `fn`.
-  	@returns Fulfills when `fn` returns `pForever.end`, or rejects if any of the promises returned from `fn` rejects.
-  	@example
-  	```
-  	import pForever = require('p-forever');
-  	pForever(async i => {
-  		i++;
-  		if (i > 100) {
-  			return pForever.end;
-  		}
-  		await createFixture(i);
-  		return i;
-  	}, 0);
-  	// or
-  	let i = 0;
-  	pForever(async () => {
-  		i++;
-  		if (i > 100) {
-  			return pForever.end;
-  		}
-  		await createFixture(i);
-  	});
-  	```
-  	*/
-  def apply[ValueType](
-    fn: js.Function1[
-      /* previousValue */ js.UndefOr[ValueType], 
-      ValueType | js.Thenable[ValueType] | js.Symbol
-    ]
-  ): js.Promise[Unit] = js.native
-  def apply[ValueType](
-    fn: js.Function1[/* previousValue */ ValueType, ValueType | js.Thenable[ValueType] | js.Symbol],
-    initialValue: ValueType
-  ): js.Promise[Unit] = js.native
-  def apply[ValueType](
-    fn: js.Function1[/* previousValue */ ValueType, ValueType | js.Thenable[ValueType] | js.Symbol],
-    initialValue: js.Thenable[ValueType]
-  ): js.Promise[Unit] = js.native
-  /**
-  	Run promise-returning & async functions until you end it.
-  	@param fn - Receives the previously returned value. If a `Promise` is returned, it's awaited before calling `fn` again.
-  	@param initialValue - Initial value to pass to `fn`.
-  	@returns Fulfills when `fn` returns `pForever.end`, or rejects if any of the promises returned from `fn` rejects.
-  	@example
-  	```
-  	import pForever = require('p-forever');
-  	pForever(async i => {
-  		i++;
-  		if (i > 100) {
-  			return pForever.end;
-  		}
-  		await createFixture(i);
-  		return i;
-  	}, 0);
-  	// or
-  	let i = 0;
-  	pForever(async () => {
-  		i++;
-  		if (i > 100) {
-  			return pForever.end;
-  		}
-  		await createFixture(i);
-  	});
-  	```
-  	*/
-  // TODO: Remove this for the next major release
-  def default[ValueType](
-    fn: js.Function1[
-      /* previousValue */ js.UndefOr[ValueType], 
-      ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
-    ]
-  ): js.Promise[Unit] = js.native
-  // TODO: Remove this for the next major release
-  def default[ValueType](
-    fn: js.Function1[
-      /* previousValue */ ValueType, 
-      ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
-    ],
-    initialValue: ValueType
-  ): js.Promise[Unit] = js.native
-  def default[ValueType](
-    fn: js.Function1[
-      /* previousValue */ ValueType, 
-      ValueType | js.Thenable[ValueType] | (/* import warning: importer.ImportType#apply Failed type conversion: typeof pForever.end */ js.Any)
-    ],
-    initialValue: js.Thenable[ValueType]
-  ): js.Promise[Unit] = js.native
+object mod {
+  
+  object default {
+    
+    /**
+    	Run promise-returning & async functions until you end it.
+    	@param function_ - Receives the previously returned value. If a `Promise` is returned, it's awaited before calling `fn` again.
+    	@param initialValue - Initial value to pass to `fn`.
+    	@returns Fulfills when `fn` returns `pForever.end`, or rejects if any of the promises returned from `fn` rejects.
+    	@example
+    	```
+    	import pForever from 'p-forever';
+    	pForever(async index => {
+    		index++;
+    		if (index > 100) {
+    			return pForever.end;
+    		}
+    		await createFixture(index);
+    		return index;
+    	}, 0);
+    	// or
+    	let index = 0;
+    	pForever(async () => {
+    		index++;
+    		if (index > 100) {
+    			return pForever.end;
+    		}
+    		await createFixture(index);
+    	});
+    	```
+    	*/
+    inline def apply[ValueType](
+      function_ : js.Function1[
+          /* previousValue */ js.UndefOr[ValueType], 
+          ValueType | (PromiseLike[js.Symbol | ValueType]) | js.Symbol
+        ]
+    ): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(function_.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def apply[ValueType](
+      function_ : js.Function1[
+          /* previousValue */ ValueType, 
+          ValueType | (PromiseLike[js.Symbol | ValueType]) | js.Symbol
+        ],
+      initialValue: ValueType
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(function_.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def apply[ValueType](
+      function_ : js.Function1[
+          /* previousValue */ ValueType, 
+          ValueType | (PromiseLike[js.Symbol | ValueType]) | js.Symbol
+        ],
+      initialValue: PromiseLike[ValueType]
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(function_.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    
+    @JSImport("p-forever", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+    	Symbol used to end the loop.
+    	*/
+    @JSImport("p-forever", "default.end")
+    @js.native
+    val end: js.Symbol = js.native
+  }
 }
-

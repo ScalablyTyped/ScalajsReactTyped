@@ -1,21 +1,26 @@
 package typingsJapgolly.mfiles
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IUserAccounts extends js.Object {
+trait IUserAccounts extends StObject {
+  
   val Count: Double
+  
   def Item(Index: Double): IUserAccount
 }
-
 object IUserAccounts {
-  @scala.inline
-  def apply(Count: Double, Item: Double => CallbackTo[IUserAccount]): IUserAccounts = {
-    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any])
-    __obj.updateDynamic("Item")(js.Any.fromFunction1((t0: scala.Double) => Item(t0).runNow()))
+  
+  inline def apply(Count: Double, Item: Double => IUserAccount): IUserAccounts = {
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[IUserAccounts]
   }
+  
+  extension [Self <: IUserAccounts](x: Self) {
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    
+    inline def setItem(value: Double => IUserAccount): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+  }
 }
-

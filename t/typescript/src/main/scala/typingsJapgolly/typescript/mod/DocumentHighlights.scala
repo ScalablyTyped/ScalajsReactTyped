@@ -1,20 +1,28 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentHighlights extends js.Object {
+trait DocumentHighlights extends StObject {
+  
   var fileName: java.lang.String
+  
   var highlightSpans: js.Array[HighlightSpan]
 }
-
 object DocumentHighlights {
-  @scala.inline
-  def apply(fileName: java.lang.String, highlightSpans: js.Array[HighlightSpan]): DocumentHighlights = {
-    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], highlightSpans = highlightSpans.asInstanceOf[js.Any])
   
+  inline def apply(fileName: java.lang.String, highlightSpans: js.Array[HighlightSpan]): DocumentHighlights = {
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], highlightSpans = highlightSpans.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentHighlights]
   }
+  
+  extension [Self <: DocumentHighlights](x: Self) {
+    
+    inline def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightSpans(value: js.Array[HighlightSpan]): Self = StObject.set(x, "highlightSpans", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightSpansVarargs(value: HighlightSpan*): Self = StObject.set(x, "highlightSpans", js.Array(value*))
+  }
 }
-

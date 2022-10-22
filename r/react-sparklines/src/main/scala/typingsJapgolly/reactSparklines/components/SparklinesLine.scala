@@ -1,51 +1,35 @@
 package typingsJapgolly.reactSparklines.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.reactSparklines.mod.Point
 import typingsJapgolly.reactSparklines.mod.SparklinesLineProps
 import typingsJapgolly.reactSparklines.reactSparklinesStrings.click
 import typingsJapgolly.reactSparklines.reactSparklinesStrings.enter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SparklinesLine {
-  def apply(
-    color: String = null,
-    onMouseMove: (/* event */ enter | click, /* value */ Double, /* point */ Point) => Callback = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    SparklinesLineProps, 
-    typingsJapgolly.reactSparklines.mod.SparklinesLine, 
-    Unit, 
-    SparklinesLineProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction3((t0: /* event */ typingsJapgolly.reactSparklines.reactSparklinesStrings.enter | typingsJapgolly.reactSparklines.reactSparklinesStrings.click, t1: /* value */ scala.Double, t2: /* point */ typingsJapgolly.reactSparklines.mod.Point) => onMouseMove(t0, t1, t2).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactSparklines.mod.SparklinesLineProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactSparklines.mod.SparklinesLine](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactSparklines.mod.SparklinesLineProps])(children: _*)
-  }
   @JSImport("react-sparklines", "SparklinesLine")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactSparklines.mod.SparklinesLine] {
+    
+    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def onMouseMove(value: (/* event */ enter | click, /* value */ Double, /* point */ Point) => Callback): this.type = set("onMouseMove", js.Any.fromFunction3((t0: /* event */ enter | click, t1: /* value */ Double, t2: /* point */ Point) => (value(t0, t1, t2)).runNow()))
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: SparklinesLine.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SparklinesLineProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

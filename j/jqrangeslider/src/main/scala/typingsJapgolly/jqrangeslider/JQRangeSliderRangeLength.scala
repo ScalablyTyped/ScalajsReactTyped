@@ -1,21 +1,30 @@
 package typingsJapgolly.jqrangeslider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQRangeSliderRangeLength extends js.Object {
-  var max: js.UndefOr[js.Any] = js.undefined
-  var min: js.UndefOr[js.Any] = js.undefined
+trait JQRangeSliderRangeLength extends StObject {
+  
+  var max: js.UndefOr[Any] = js.undefined
+  
+  var min: js.UndefOr[Any] = js.undefined
 }
-
 object JQRangeSliderRangeLength {
-  @scala.inline
-  def apply(max: js.Any = null, min: js.Any = null): JQRangeSliderRangeLength = {
+  
+  inline def apply(): JQRangeSliderRangeLength = {
     val __obj = js.Dynamic.literal()
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQRangeSliderRangeLength]
   }
+  
+  extension [Self <: JQRangeSliderRangeLength](x: Self) {
+    
+    inline def setMax(value: Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+  }
 }
-

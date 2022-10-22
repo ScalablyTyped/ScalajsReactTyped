@@ -1,21 +1,17 @@
 package typingsJapgolly.coreJs
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/reflect/set", JSImport.Namespace)
-@js.native
-object fnReflectSetMod
-  extends TopLevel[
-      js.Function4[
-        /* target */ js.Any, 
-        /* propertyKey */ PropertyKey, 
-        /* value */ js.Any, 
-        /* receiver */ js.UndefOr[js.Any], 
-        Boolean
-      ]
-    ]
-
+object fnReflectSetMod {
+  
+  /* was `typeof core.Reflect.set` */
+  inline def apply(target: Any, propertyKey: PropertyKey, value: Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(target: Any, propertyKey: PropertyKey, value: Any, receiver: Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("core-js/fn/reflect/set", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+}

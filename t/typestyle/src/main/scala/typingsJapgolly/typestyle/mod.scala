@@ -2,45 +2,57 @@ package typingsJapgolly.typestyle
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.std.Record
-import typingsJapgolly.typestyle.typesMod.FontFace
-import typingsJapgolly.typestyle.typesMod.KeyFrames
-import typingsJapgolly.typestyle.typesMod.MediaQuery
-import typingsJapgolly.typestyle.typesMod.NestedCSSProperties
+import typingsJapgolly.typestyle.anon.AutoGenerateTag
+import typingsJapgolly.typestyle.anon.TextContent
+import typingsJapgolly.typestyle.libInternalTypestyleMod.StylesTarget
+import typingsJapgolly.typestyle.libTypesMod.FontFace
+import typingsJapgolly.typestyle.libTypesMod.KeyFrames
+import typingsJapgolly.typestyle.libTypesMod.MediaQuery
+import typingsJapgolly.typestyle.libTypesMod.NestedCSSProperties
 import typingsJapgolly.typestyle.typestyleBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typestyle", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("typestyle", JSImport.Namespace)
   @js.native
-  class TypeStyle protected ()
-    extends typingsJapgolly.typestyle.typestyleMod.TypeStyle {
-    def this(hasAutoGenerateTag: AnonAutoGenerateTag) = this()
+  val ^ : js.Any = js.native
+  
+  @JSImport("typestyle", "TypeStyle")
+  @js.native
+  open class TypeStyle protected ()
+    extends typingsJapgolly.typestyle.libInternalTypestyleMod.TypeStyle {
+    def this(hasAutoGenerateTag: AutoGenerateTag) = this()
   }
   
-  @JSName("classes")
-  def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[js.Any]])*): String = js.native
-  def createTypeStyle(): typingsJapgolly.typestyle.typestyleMod.TypeStyle = js.native
-  def createTypeStyle(target: AnonTextContent): typingsJapgolly.typestyle.typestyleMod.TypeStyle = js.native
-  def cssRaw(mustBeValidCSS: String): Unit = js.native
-  def cssRule(selector: String, objects: NestedCSSProperties*): Unit = js.native
-  @JSName("extend")
-  def extend_false(objects: (js.UndefOr[NestedCSSProperties | Null | `false`])*): NestedCSSProperties = js.native
-  def fontFace(fontFace: FontFace*): Unit = js.native
-  def forceRenderStyles(): Unit = js.native
-  def getStyles(): String = js.native
-  def keyframes(frames: KeyFrames): String = js.native
-  @JSName("media")
-  def media_false(mediaQuery: MediaQuery, objects: (js.UndefOr[`false` | NestedCSSProperties | Null])*): NestedCSSProperties = js.native
-  def reinit(): Unit = js.native
-  def setStylesTarget(tag: AnonTextContent): Unit = js.native
-  def stylesheet[Names /* <: String */](classes: Record[Names, NestedCSSProperties]): Record[Names, String] = js.native
-  @js.native
-  object style extends js.Object {
-    def apply(objects: (js.UndefOr[NestedCSSProperties | Null | `false`])*): String = js.native
-  }
+  inline def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[Any]])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classes")(classes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
+  inline def createTypeStyle(): typingsJapgolly.typestyle.libInternalTypestyleMod.TypeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeStyle")().asInstanceOf[typingsJapgolly.typestyle.libInternalTypestyleMod.TypeStyle]
+  inline def createTypeStyle(target: TextContent): typingsJapgolly.typestyle.libInternalTypestyleMod.TypeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeStyle")(target.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.typestyle.libInternalTypestyleMod.TypeStyle]
+  
+  inline def cssRaw(mustBeValidCSS: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cssRaw")(mustBeValidCSS.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def cssRule(selector: String, objects: NestedCSSProperties*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cssRule")(scala.List(selector.asInstanceOf[js.Any]).`++`(objects.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  
+  inline def extend_false(objects: (js.UndefOr[NestedCSSProperties | Null | `false`])*): NestedCSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[NestedCSSProperties]
+  
+  inline def fontFace(fontFace: FontFace*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFace")(fontFace.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+  
+  inline def forceRenderStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceRenderStyles")().asInstanceOf[Unit]
+  
+  inline def getStyles(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")().asInstanceOf[String]
+  
+  inline def keyframes(frames: KeyFrames): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(frames.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def media_false(mediaQuery: MediaQuery, objects: (js.UndefOr[`false` | NestedCSSProperties | Null])*): NestedCSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("media")(scala.List(mediaQuery.asInstanceOf[js.Any]).`++`(objects.asInstanceOf[Seq[js.Any]])*).asInstanceOf[NestedCSSProperties]
+  
+  inline def reinit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reinit")().asInstanceOf[Unit]
+  
+  inline def setStylesTarget(tag: StylesTarget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStylesTarget")(tag.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def style(objects: (js.UndefOr[NestedCSSProperties | Null | `false`])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
+  
+  inline def stylesheet[Classes /* <: String */](classes: Record[Classes, NestedCSSProperties]): /* import warning: importer.ImportType#apply Failed type conversion: {[ ClassName in Classes ]: string} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stylesheet")(classes.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ ClassName in Classes ]: string} */ js.Any]
 }
-

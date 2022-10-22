@@ -1,95 +1,91 @@
 package typingsJapgolly.officeUiFabricReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.officeUiFabricReact.navTypesMod.INav
-import typingsJapgolly.officeUiFabricReact.navTypesMod.INavButtonProps
-import typingsJapgolly.officeUiFabricReact.navTypesMod.INavLink
-import typingsJapgolly.officeUiFabricReact.navTypesMod.INavLinkGroup
-import typingsJapgolly.officeUiFabricReact.navTypesMod.INavProps
-import typingsJapgolly.officeUiFabricReact.navTypesMod.INavStyleProps
-import typingsJapgolly.officeUiFabricReact.navTypesMod.INavStyles
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
-import typingsJapgolly.uifabricUtilities.icomponentasMod.IComponentAs
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiReactFocus.libComponentsFocusZoneFocusZoneDottypesMod.IFocusZoneProps
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsNavNavDottypesMod.INav
+import typingsJapgolly.officeUiFabricReact.libComponentsNavNavDottypesMod.INavButtonProps
+import typingsJapgolly.officeUiFabricReact.libComponentsNavNavDottypesMod.INavLink
+import typingsJapgolly.officeUiFabricReact.libComponentsNavNavDottypesMod.INavLinkGroup
+import typingsJapgolly.officeUiFabricReact.libComponentsNavNavDottypesMod.INavProps
+import typingsJapgolly.officeUiFabricReact.libComponentsNavNavDottypesMod.INavStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsNavNavDottypesMod.INavStyles
+import typingsJapgolly.officeUiFabricReact.libComponentsNavNavDottypesMod.IRenderGroupHeaderProps
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import typingsJapgolly.uifabricUtilities.libIcomponentasMod.IComponentAs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Nav {
-  def apply(
-    ariaLabel: String = null,
-    className: String = null,
-    componentRef: IRefObject[INav] = null,
-    expandButtonAriaLabel: String = null,
-    groups: js.Array[INavLinkGroup] = null,
-    initialSelectedKey: String = null,
-    isOnTop: js.UndefOr[Boolean] = js.undefined,
-    linkAs: IComponentAs[INavButtonProps] = null,
-    onLinkClick: (/* ev */ js.UndefOr[ReactMouseEventFrom[HTMLElement]], /* item */ js.UndefOr[INavLink]) => Callback = null,
-    onLinkExpandClick: (/* ev */ js.UndefOr[ReactMouseEventFrom[HTMLElement]], /* item */ js.UndefOr[INavLink]) => Callback = null,
-    onRenderGroupHeader: (/* props */ js.UndefOr[INavLinkGroup], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[INavLinkGroup], Element | Null]]) => CallbackTo[Element | Null] = null,
-    onRenderLink: (/* props */ js.UndefOr[INavLink], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[INavLink], Element | Null]]) => CallbackTo[Element | Null] = null,
-    selectedAriaLabel: String = null,
-    selectedKey: String = null,
-    styles: IStyleFunctionOrObject[INavStyleProps, INavStyles] = null,
-    theme: ITheme = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    INavProps, 
-    MountedWithRawType[INavProps, js.Object, RawMounted[INavProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (expandButtonAriaLabel != null) __obj.updateDynamic("expandButtonAriaLabel")(expandButtonAriaLabel.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (initialSelectedKey != null) __obj.updateDynamic("initialSelectedKey")(initialSelectedKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOnTop)) __obj.updateDynamic("isOnTop")(isOnTop.asInstanceOf[js.Any])
-    if (linkAs != null) __obj.updateDynamic("linkAs")(linkAs.asInstanceOf[js.Any])
-    if (onLinkClick != null) __obj.updateDynamic("onLinkClick")(js.Any.fromFunction2((t0: /* ev */ js.UndefOr[japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]], t1: /* item */ js.UndefOr[typingsJapgolly.officeUiFabricReact.navTypesMod.INavLink]) => onLinkClick(t0, t1).runNow()))
-    if (onLinkExpandClick != null) __obj.updateDynamic("onLinkExpandClick")(js.Any.fromFunction2((t0: /* ev */ js.UndefOr[japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]], t1: /* item */ js.UndefOr[typingsJapgolly.officeUiFabricReact.navTypesMod.INavLink]) => onLinkExpandClick(t0, t1).runNow()))
-    if (onRenderGroupHeader != null) __obj.updateDynamic("onRenderGroupHeader")(js.Any.fromFunction2((t0: /* props */ js.UndefOr[typingsJapgolly.officeUiFabricReact.navTypesMod.INavLinkGroup], t1: /* defaultRender */ js.UndefOr[
-  js.Function1[
-    /* props */ js.UndefOr[typingsJapgolly.officeUiFabricReact.navTypesMod.INavLinkGroup], 
-    japgolly.scalajs.react.raw.React.Element | scala.Null
-  ]]) => onRenderGroupHeader(t0, t1).runNow()))
-    if (onRenderLink != null) __obj.updateDynamic("onRenderLink")(js.Any.fromFunction2((t0: /* props */ js.UndefOr[typingsJapgolly.officeUiFabricReact.navTypesMod.INavLink], t1: /* defaultRender */ js.UndefOr[
-  js.Function1[
-    /* props */ js.UndefOr[typingsJapgolly.officeUiFabricReact.navTypesMod.INavLink], 
-    japgolly.scalajs.react.raw.React.Element | scala.Null
-  ]]) => onRenderLink(t0, t1).runNow()))
-    if (selectedAriaLabel != null) __obj.updateDynamic("selectedAriaLabel")(selectedAriaLabel.asInstanceOf[js.Any])
-    if (selectedKey != null) __obj.updateDynamic("selectedKey")(selectedKey.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.officeUiFabricReact.navTypesMod.INavProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.navTypesMod.INavProps])(children: _*)
-  }
   @JSImport("office-ui-fabric-react", "Nav")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def ariaLabel(value: String): this.type = set("ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[INav]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ INav | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ INav | Null) => value(t0).runNow()))
+    
+    inline def expandButtonAriaLabel(value: String): this.type = set("expandButtonAriaLabel", value.asInstanceOf[js.Any])
+    
+    inline def focusZoneProps(value: IFocusZoneProps): this.type = set("focusZoneProps", value.asInstanceOf[js.Any])
+    
+    inline def groups(value: js.Array[INavLinkGroup]): this.type = set("groups", value.asInstanceOf[js.Any])
+    
+    inline def groupsNull: this.type = set("groups", null)
+    
+    inline def groupsVarargs(value: INavLinkGroup*): this.type = set("groups", js.Array(value*))
+    
+    inline def initialSelectedKey(value: String): this.type = set("initialSelectedKey", value.asInstanceOf[js.Any])
+    
+    inline def isOnTop(value: Boolean): this.type = set("isOnTop", value.asInstanceOf[js.Any])
+    
+    inline def linkAs(value: IComponentAs[INavButtonProps]): this.type = set("linkAs", value.asInstanceOf[js.Any])
+    
+    inline def onLinkClick(
+      value: (/* ev */ js.UndefOr[ReactMouseEventFrom[HTMLElement]], /* item */ js.UndefOr[INavLink]) => Callback
+    ): this.type = set("onLinkClick", js.Any.fromFunction2((t0: /* ev */ js.UndefOr[ReactMouseEventFrom[HTMLElement]], t1: /* item */ js.UndefOr[INavLink]) => (value(t0, t1)).runNow()))
+    
+    inline def onLinkExpandClick(
+      value: (/* ev */ js.UndefOr[ReactMouseEventFrom[HTMLElement]], /* item */ js.UndefOr[INavLink]) => Callback
+    ): this.type = set("onLinkExpandClick", js.Any.fromFunction2((t0: /* ev */ js.UndefOr[ReactMouseEventFrom[HTMLElement]], t1: /* item */ js.UndefOr[INavLink]) => (value(t0, t1)).runNow()))
+    
+    inline def onRenderGroupHeader(
+      value: (/* props */ js.UndefOr[IRenderGroupHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IRenderGroupHeaderProps], Element | Null]]) => Element | Null
+    ): this.type = set("onRenderGroupHeader", js.Any.fromFunction2(value))
+    
+    inline def onRenderLink(
+      value: (/* props */ js.UndefOr[INavLink], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[INavLink], Element | Null]]) => Element | Null
+    ): this.type = set("onRenderLink", js.Any.fromFunction2(value))
+    
+    inline def selectedAriaLabel(value: String): this.type = set("selectedAriaLabel", value.asInstanceOf[js.Any])
+    
+    inline def selectedKey(value: String): this.type = set("selectedKey", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IStyleFunctionOrObject[INavStyleProps, INavStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: INavStyleProps => DeepPartial[INavStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Nav.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: INavProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

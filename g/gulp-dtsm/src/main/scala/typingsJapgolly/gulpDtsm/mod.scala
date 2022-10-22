@@ -1,13 +1,15 @@
 package typingsJapgolly.gulpDtsm
 
 import typingsJapgolly.node.NodeJS.WritableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gulp-dtsm", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): WritableStream = js.native
+object mod {
+  
+  inline def apply(): WritableStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[WritableStream]
+  
+  @JSImport("gulp-dtsm", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

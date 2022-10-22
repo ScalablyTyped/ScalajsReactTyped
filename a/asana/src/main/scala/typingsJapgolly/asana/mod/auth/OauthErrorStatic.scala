@@ -1,13 +1,14 @@
 package typingsJapgolly.asana.mod.auth
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OauthErrorStatic
-  extends /**
+  extends StObject
+     with /**
   * @param options {Object} A data blob parsed from a query string or JSON
   * response from the Asana API
   * @option {String} error The string code identifying the error.
@@ -15,5 +16,4 @@ trait OauthErrorStatic
   * @option {String} [error_description] A description of the error.
   * @constructor
   */
-Instantiable1[/* options */ OauthErrorOptions, OauthError]
-
+Instantiable1[/* options */ OauthErrorOptions, js.Error]

@@ -1,10 +1,9 @@
 package typingsJapgolly.umbraco.umbraco.services
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation._
   * Service for handling the main application search, can currently search content, media and members
   *
   */
-trait ISearchService extends js.Object {
+trait ISearchService extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.services.searchService#searchAll
@@ -27,7 +27,8 @@ trait ISearchService extends js.Object {
     * @param {String} args.term seach term
     * @returns {Promise} returns promise containing all matching items
     */
-  def searchAll(args: ISearchArgs): IPromise[_]
+  def searchAll(args: ISearchArgs): IPromise[Any]
+  
   /**
     * @ngdoc method
     * @name umbraco.services.searchService#searchContent
@@ -40,6 +41,7 @@ trait ISearchService extends js.Object {
     * @returns {Promise} returns promise containing all matching content items
     */
   def searchContent(args: ISearchArgs): IPromise[js.Array[ISearchContent]]
+  
   /**
     * @ngdoc method
     * @name umbraco.services.searchService#searchMedia
@@ -52,6 +54,7 @@ trait ISearchService extends js.Object {
     * @returns {Promise} returns promise containing all matching media items
     */
   def searchMedia(args: ISearchArgs): IPromise[js.Array[ISearchMedia]]
+  
   /**
     * @ngdoc method
     * @name umbraco.services.searchService#searchMembers
@@ -65,21 +68,26 @@ trait ISearchService extends js.Object {
     */
   def searchMembers(args: ISearchArgs): IPromise[js.Array[ISearchMember]]
 }
-
 object ISearchService {
-  @scala.inline
-  def apply(
-    searchAll: ISearchArgs => CallbackTo[IPromise[js.Any]],
-    searchContent: ISearchArgs => CallbackTo[IPromise[js.Array[ISearchContent]]],
-    searchMedia: ISearchArgs => CallbackTo[IPromise[js.Array[ISearchMedia]]],
-    searchMembers: ISearchArgs => CallbackTo[IPromise[js.Array[ISearchMember]]]
+  
+  inline def apply(
+    searchAll: ISearchArgs => IPromise[Any],
+    searchContent: ISearchArgs => IPromise[js.Array[ISearchContent]],
+    searchMedia: ISearchArgs => IPromise[js.Array[ISearchMedia]],
+    searchMembers: ISearchArgs => IPromise[js.Array[ISearchMember]]
   ): ISearchService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("searchAll")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.ISearchArgs) => searchAll(t0).runNow()))
-    __obj.updateDynamic("searchContent")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.ISearchArgs) => searchContent(t0).runNow()))
-    __obj.updateDynamic("searchMedia")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.ISearchArgs) => searchMedia(t0).runNow()))
-    __obj.updateDynamic("searchMembers")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.ISearchArgs) => searchMembers(t0).runNow()))
+    val __obj = js.Dynamic.literal(searchAll = js.Any.fromFunction1(searchAll), searchContent = js.Any.fromFunction1(searchContent), searchMedia = js.Any.fromFunction1(searchMedia), searchMembers = js.Any.fromFunction1(searchMembers))
     __obj.asInstanceOf[ISearchService]
   }
+  
+  extension [Self <: ISearchService](x: Self) {
+    
+    inline def setSearchAll(value: ISearchArgs => IPromise[Any]): Self = StObject.set(x, "searchAll", js.Any.fromFunction1(value))
+    
+    inline def setSearchContent(value: ISearchArgs => IPromise[js.Array[ISearchContent]]): Self = StObject.set(x, "searchContent", js.Any.fromFunction1(value))
+    
+    inline def setSearchMedia(value: ISearchArgs => IPromise[js.Array[ISearchMedia]]): Self = StObject.set(x, "searchMedia", js.Any.fromFunction1(value))
+    
+    inline def setSearchMembers(value: ISearchArgs => IPromise[js.Array[ISearchMember]]): Self = StObject.set(x, "searchMembers", js.Any.fromFunction1(value))
+  }
 }
-

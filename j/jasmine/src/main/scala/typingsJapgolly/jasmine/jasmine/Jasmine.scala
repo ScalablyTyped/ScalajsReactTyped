@@ -1,21 +1,30 @@
 package typingsJapgolly.jasmine.jasmine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Jasmine extends js.Object {
+trait Jasmine extends StObject {
+  
   var Spec: typingsJapgolly.jasmine.jasmine.Spec
-  var clock: Clock_
+  
+  var clock: Clock
+  
   var util: Util
 }
-
 object Jasmine {
-  @scala.inline
-  def apply(Spec: Spec, clock: Clock_, util: Util): Jasmine = {
-    val __obj = js.Dynamic.literal(Spec = Spec.asInstanceOf[js.Any], clock = clock.asInstanceOf[js.Any], util = util.asInstanceOf[js.Any])
   
+  inline def apply(Spec: Spec, clock: Clock, util: Util): Jasmine = {
+    val __obj = js.Dynamic.literal(Spec = Spec.asInstanceOf[js.Any], clock = clock.asInstanceOf[js.Any], util = util.asInstanceOf[js.Any])
     __obj.asInstanceOf[Jasmine]
   }
+  
+  extension [Self <: Jasmine](x: Self) {
+    
+    inline def setClock(value: Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
+    
+    inline def setSpec(value: Spec): Self = StObject.set(x, "Spec", value.asInstanceOf[js.Any])
+    
+    inline def setUtil(value: Util): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.GridTemplateAreasProperty
+import typingsJapgolly.csstype.mod.Property.GridTemplateAreas
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridTemplateAreasProps extends js.Object {
-  val gridTemplateAreas: js.UndefOr[ResponsiveValue[GridTemplateAreasProperty]] = js.undefined
+trait GridTemplateAreasProps extends StObject {
+  
+  val gridTemplateAreas: js.UndefOr[ResponsiveValue[GridTemplateAreas]] = js.undefined
 }
-
 object GridTemplateAreasProps {
-  @scala.inline
-  def apply(gridTemplateAreas: ResponsiveValue[GridTemplateAreasProperty] = null): GridTemplateAreasProps = {
+  
+  inline def apply(): GridTemplateAreasProps = {
     val __obj = js.Dynamic.literal()
-    if (gridTemplateAreas != null) __obj.updateDynamic("gridTemplateAreas")(gridTemplateAreas.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridTemplateAreasProps]
   }
+  
+  extension [Self <: GridTemplateAreasProps](x: Self) {
+    
+    inline def setGridTemplateAreas(value: ResponsiveValue[GridTemplateAreas]): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
+    
+    inline def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
+    
+    inline def setGridTemplateAreasVarargs(value: GridTemplateAreas*): Self = StObject.set(x, "gridTemplateAreas", js.Array(value*))
+  }
 }
-

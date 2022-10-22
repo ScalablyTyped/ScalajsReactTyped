@@ -1,14 +1,30 @@
 package typingsJapgolly.unityWebapi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("UnitySettings")
-@js.native
-class UnitySettings () extends js.Object {
-  var iconUrl: String = js.native
-  var name: String = js.native
-  var onInit: js.Function = js.native
+trait UnitySettings extends StObject {
+  
+  var iconUrl: String
+  
+  var name: String
+  
+  var onInit: js.Function
 }
-
+object UnitySettings {
+  
+  inline def apply(iconUrl: String, name: String, onInit: js.Function): UnitySettings = {
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onInit = onInit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UnitySettings]
+  }
+  
+  extension [Self <: UnitySettings](x: Self) {
+    
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setOnInit(value: js.Function): Self = StObject.set(x, "onInit", value.asInstanceOf[js.Any])
+  }
+}

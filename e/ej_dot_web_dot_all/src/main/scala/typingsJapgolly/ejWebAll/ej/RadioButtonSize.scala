@@ -1,31 +1,24 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RadioButtonSize extends js.Object
-
+sealed trait RadioButtonSize extends StObject
 @JSGlobal("ej.RadioButtonSize")
 @js.native
-object RadioButtonSize extends js.Object {
+object RadioButtonSize extends StObject {
+  
   //Shows medium size radio button
   @js.native
-  sealed trait Medium extends RadioButtonSize
+  sealed trait Medium
+    extends StObject
+       with RadioButtonSize
   
   //Shows small size radio button
   @js.native
-  sealed trait Small extends RadioButtonSize
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RadioButtonSize with Double] = js.native
-  /* 1 */ @js.native
-  object Medium extends TopLevel[Medium with Double]
-  
-  /* 0 */ @js.native
-  object Small extends TopLevel[Small with Double]
-  
+  sealed trait Small
+    extends StObject
+       with RadioButtonSize
 }
-

@@ -1,26 +1,36 @@
 package typingsJapgolly.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateItem extends js.Object {
+trait CreateItem extends StObject {
+  
   var data: js.UndefOr[CreateItemData] = js.undefined
+  
   var included: js.Array[CreateItemIncluded]
+  
   var jsonapi: js.UndefOr[JsonApiVersionJsonapi] = js.undefined
 }
-
 object CreateItem {
-  @scala.inline
-  def apply(
-    included: js.Array[CreateItemIncluded],
-    data: CreateItemData = null,
-    jsonapi: JsonApiVersionJsonapi = null
-  ): CreateItem = {
+  
+  inline def apply(included: js.Array[CreateItemIncluded]): CreateItem = {
     val __obj = js.Dynamic.literal(included = included.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (jsonapi != null) __obj.updateDynamic("jsonapi")(jsonapi.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateItem]
   }
+  
+  extension [Self <: CreateItem](x: Self) {
+    
+    inline def setData(value: CreateItemData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setIncluded(value: js.Array[CreateItemIncluded]): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
+    
+    inline def setIncludedVarargs(value: CreateItemIncluded*): Self = StObject.set(x, "included", js.Array(value*))
+    
+    inline def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
+    
+    inline def setJsonapiUndefined: Self = StObject.set(x, "jsonapi", js.undefined)
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for csw-aas-js
 
-Typings are for version 1.0.0
+Typings are for version 2.0.1-SNAPSHOT.1
 
 ## Library description:
 This library is a javascript adapter for csw-aas. This is a wrapper over keycloak.js. It provides react components which can be used by UI applications to incorporate authorization and authentication using configured auth server url
@@ -10,10 +10,10 @@ This library is a javascript adapter for csw-aas. This is a wrapper over keycloa
 | ------------------ | :-------------: |
 | Full name          | csw-aas-js |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 0 |
-| # downloads        | 2090 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 135.66666666666666 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/tmtsoftware/csw-js#readme)

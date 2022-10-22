@@ -1,28 +1,33 @@
 package typingsJapgolly.tensorflowTfjs.mod
 
+import typingsJapgolly.tensorflowTfjsCore.distSerializationMod.ConfigDict
+import typingsJapgolly.tensorflowTfjsCore.distSerializationMod.SerializableConstructor
 import typingsJapgolly.tensorflowTfjsCore.mod.serialization.Serializable
-import typingsJapgolly.tensorflowTfjsCore.serializationMod.ConfigDict
-import typingsJapgolly.tensorflowTfjsCore.serializationMod.SerializableConstructor
-import typingsJapgolly.tensorflowTfjsLayers.recurrentMod.RNNLayerArgs
+import typingsJapgolly.tensorflowTfjsLayers.distLayersRecurrentMod.RNNLayerArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs", "RNN")
 @js.native
-class RNN protected ()
+open class RNN protected ()
   extends typingsJapgolly.tensorflowTfjsLayers.mod.RNN {
   def this(args: RNNLayerArgs) = this()
 }
-
 /* static members */
-@JSImport("@tensorflow/tfjs", "RNN")
-@js.native
-object RNN extends js.Object {
+object RNN {
+  
+  @JSImport("@tensorflow/tfjs", "RNN")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** @nocollapse */
-  var className: String = js.native
+  @JSImport("@tensorflow/tfjs", "RNN.className")
+  @js.native
+  def className: String = js.native
+  inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  
   /** @nocollapse */
-  def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
-  def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = js.native
+  inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
 }
-

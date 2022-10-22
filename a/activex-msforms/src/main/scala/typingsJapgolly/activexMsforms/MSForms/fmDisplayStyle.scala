@@ -1,43 +1,39 @@
 package typingsJapgolly.activexMsforms.MSForms
 
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`1`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`2`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`3`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`4`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`5`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`6`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`7`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`1`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`2`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`3`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`4`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`5`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`6`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`4`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`3`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`7`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`2`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`5`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`1`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`6`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`4`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`3`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`7`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`2`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`5`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`1`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`6`
 */
-trait fmDisplayStyle extends js.Object
-
+trait fmDisplayStyle extends StObject
 object fmDisplayStyle {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fmDisplayStyleCheckBox: `4` = this.cast(4)
-  @scala.inline
-  def fmDisplayStyleCombo: `3` = this.cast(3)
-  @scala.inline
-  def fmDisplayStyleDropList: `7` = this.cast(7)
-  @scala.inline
-  def fmDisplayStyleList: `2` = this.cast(2)
-  @scala.inline
-  def fmDisplayStyleOptionButton: `5` = this.cast(5)
-  @scala.inline
-  def fmDisplayStyleText: `1` = this.cast(1)
-  @scala.inline
-  def fmDisplayStyleToggle: `6` = this.cast(6)
+  
+  inline def fmDisplayStyleCheckBox: `4` = 4.asInstanceOf[`4`]
+  
+  inline def fmDisplayStyleCombo: `3` = 3.asInstanceOf[`3`]
+  
+  inline def fmDisplayStyleDropList: `7` = 7.asInstanceOf[`7`]
+  
+  inline def fmDisplayStyleList: `2` = 2.asInstanceOf[`2`]
+  
+  inline def fmDisplayStyleOptionButton: `5` = 5.asInstanceOf[`5`]
+  
+  inline def fmDisplayStyleText: `1` = 1.asInstanceOf[`1`]
+  
+  inline def fmDisplayStyleToggle: `6` = 6.asInstanceOf[`6`]
 }
-

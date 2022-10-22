@@ -11,9 +11,9 @@ Omelette.js Simple Autocompletion Helper for Node
 | Full name          | omelette |
 | Keywords           | autocompletion, complete, bash completion, zsh completion |
 | # releases         | 6 |
-| # dependents       | 47 |
-| # downloads        | 1460516 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 410404.0 |
+| # stars            | 1291.0 |
 
 ## Links
 - [Homepage](https://github.com/f/omelette)

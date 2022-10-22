@@ -2,64 +2,53 @@ package typingsJapgolly.reactHeadroom.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.reactHeadroom.mod.ReactHeadroomProps
 import typingsJapgolly.reactHeadroom.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactHeadroom {
-  def apply(
-    calcHeightOnResize: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    disable: js.UndefOr[Boolean] = js.undefined,
-    disableInlineStyles: js.UndefOr[Boolean] = js.undefined,
-    downTolerance: Int | Double = null,
-    onPin: js.UndefOr[Callback] = js.undefined,
-    onUnfix: js.UndefOr[Callback] = js.undefined,
-    onUnpin: js.UndefOr[Callback] = js.undefined,
-    parent: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    pinStart: Int | Double = null,
-    style: CSSProperties = null,
-    upTolerance: Int | Double = null,
-    wrapperStyle: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ReactHeadroomProps, default, Unit, ReactHeadroomProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(calcHeightOnResize)) __obj.updateDynamic("calcHeightOnResize")(calcHeightOnResize.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableInlineStyles)) __obj.updateDynamic("disableInlineStyles")(disableInlineStyles.asInstanceOf[js.Any])
-    if (downTolerance != null) __obj.updateDynamic("downTolerance")(downTolerance.asInstanceOf[js.Any])
-    onPin.foreach(p => __obj.updateDynamic("onPin")(p.toJsFn))
-    onUnfix.foreach(p => __obj.updateDynamic("onUnfix")(p.toJsFn))
-    onUnpin.foreach(p => __obj.updateDynamic("onUnpin")(p.toJsFn))
-    parent.foreach(p => __obj.updateDynamic("parent")(p.toJsFn))
-    if (pinStart != null) __obj.updateDynamic("pinStart")(pinStart.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (upTolerance != null) __obj.updateDynamic("upTolerance")(upTolerance.asInstanceOf[js.Any])
-    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactHeadroom.mod.ReactHeadroomProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactHeadroom.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactHeadroom.mod.ReactHeadroomProps])(children: _*)
-  }
   @JSImport("react-headroom", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def calcHeightOnResize(value: Boolean): this.type = set("calcHeightOnResize", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def disable(value: Boolean): this.type = set("disable", value.asInstanceOf[js.Any])
+    
+    inline def disableInlineStyles(value: Boolean): this.type = set("disableInlineStyles", value.asInstanceOf[js.Any])
+    
+    inline def downTolerance(value: Double): this.type = set("downTolerance", value.asInstanceOf[js.Any])
+    
+    inline def onPin(value: Callback): this.type = set("onPin", value.toJsFn)
+    
+    inline def onUnfix(value: Callback): this.type = set("onUnfix", value.toJsFn)
+    
+    inline def onUnpin(value: Callback): this.type = set("onUnpin", value.toJsFn)
+    
+    inline def parent(value: CallbackTo[Any]): this.type = set("parent", value.toJsFn)
+    
+    inline def pinStart(value: Double): this.type = set("pinStart", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def upTolerance(value: Double): this.type = set("upTolerance", value.asInstanceOf[js.Any])
+    
+    inline def wrapperStyle(value: CSSProperties): this.type = set("wrapperStyle", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactHeadroom.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ReactHeadroomProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

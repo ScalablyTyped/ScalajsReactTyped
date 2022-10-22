@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.CurrentFolderChanged event.
   */
-@JSGlobal("ASPxClientFileManagerCurrentFolderChangedEventArgs")
-@js.native
-class ASPxClientFileManagerCurrentFolderChangedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientFileManagerCurrentFolderChangedEventArgs class with the specified settings.
-    * @param name A string value that specifies the folder's name. Initializes the ASPxClientFileManagerCurrentFolderChangedEventArgs.name property.
-    * @param fullName A string value that specifies the folder's full name. Initializes the ASPxClientFileManagerCurrentFolderChangedEventArgs.fullName property.
-    */
-  def this(name: String, fullName: String) = this()
+trait ASPxClientFileManagerCurrentFolderChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the full name of the folder currently being processed.
     */
-  var fullName: String = js.native
+  var fullName: String
+  
   /**
     * Gets the name of the currently processed folder.
     */
-  var name: String = js.native
+  var name: String
 }
-
+object ASPxClientFileManagerCurrentFolderChangedEventArgs {
+  
+  inline def apply(fullName: String, name: String): ASPxClientFileManagerCurrentFolderChangedEventArgs = {
+    val __obj = js.Dynamic.literal(fullName = fullName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientFileManagerCurrentFolderChangedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientFileManagerCurrentFolderChangedEventArgs](x: Self) {
+    
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
+}

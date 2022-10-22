@@ -1,35 +1,31 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4129`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`5`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4129`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`3`
+import typingsJapgolly.activexExcel.activexExcelInts.`4`
+import typingsJapgolly.activexExcel.activexExcelInts.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4129`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`5`
+  - typingsJapgolly.activexExcel.activexExcelInts.`4`
+  - typingsJapgolly.activexExcel.activexExcelInts.`3`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4129`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
 */
-trait XlWindowType extends js.Object
-
+trait XlWindowType extends StObject
 object XlWindowType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlChartAsWindow: `5` = this.cast(5)
-  @scala.inline
-  def xlChartInPlace: `4` = this.cast(4)
-  @scala.inline
-  def xlClipboard: `3` = this.cast(3)
-  @scala.inline
-  def xlInfo: `-4129` = this.cast(-4129)
-  @scala.inline
-  def xlWorkbook: `1` = this.cast(1)
+  
+  inline def xlChartAsWindow: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlChartInPlace: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlClipboard: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlInfo: `-4129` = -4129.asInstanceOf[`-4129`]
+  
+  inline def xlWorkbook: `1` = 1.asInstanceOf[`1`]
 }
-

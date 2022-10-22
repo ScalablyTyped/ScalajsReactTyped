@@ -1,13 +1,17 @@
 package typingsJapgolly.winrt.Windows.Media.Protection
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Protection.MediaProtectionServiceCompletion")
-@js.native
-class MediaProtectionServiceCompletion () extends IMediaProtectionServiceCompletion {
-  /* CompleteClass */
-  override def complete(success: Boolean): Unit = js.native
+trait MediaProtectionServiceCompletion
+  extends StObject
+     with IMediaProtectionServiceCompletion
+object MediaProtectionServiceCompletion {
+  
+  inline def apply(complete: Boolean => Callback): MediaProtectionServiceCompletion = {
+    val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1((t0: Boolean) => complete(t0).runNow()))
+    __obj.asInstanceOf[MediaProtectionServiceCompletion]
+  }
 }
-

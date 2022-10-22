@@ -1,21 +1,32 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookFilterDatetime extends js.Object {
-  var date: js.UndefOr[String] = js.undefined
+trait WorkbookFilterDatetime extends StObject {
+  
+  var date: js.UndefOr[NullableOption[String]] = js.undefined
+  
   var specificity: js.UndefOr[String] = js.undefined
 }
-
 object WorkbookFilterDatetime {
-  @scala.inline
-  def apply(date: String = null, specificity: String = null): WorkbookFilterDatetime = {
+  
+  inline def apply(): WorkbookFilterDatetime = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (specificity != null) __obj.updateDynamic("specificity")(specificity.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookFilterDatetime]
   }
+  
+  extension [Self <: WorkbookFilterDatetime](x: Self) {
+    
+    inline def setDate(value: NullableOption[String]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDateNull: Self = StObject.set(x, "date", null)
+    
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setSpecificity(value: String): Self = StObject.set(x, "specificity", value.asInstanceOf[js.Any])
+    
+    inline def setSpecificityUndefined: Self = StObject.set(x, "specificity", js.undefined)
+  }
 }
-

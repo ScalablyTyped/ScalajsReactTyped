@@ -1,12 +1,10 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.ClientObjectList")
 @js.native
-class ClientObjectList[T] protected () extends ClientObjectCollection[T] {
-  def this(context: ClientRuntimeContext, objectPath: ObjectPath, childItemType: js.Any) = this()
-}
-
+trait ClientObjectList[T]
+  extends StObject
+     with ClientObjectCollection[T]

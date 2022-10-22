@@ -1,10 +1,12 @@
 package typingsJapgolly.highcharts.mod
 
+import typingsJapgolly.highcharts.anon.PartialAnimationOptionsOb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DrilldownOptions extends js.Object {
+trait DrilldownOptions extends StObject {
+  
   /**
     * (Highcharts, Highmaps) Additional styles to apply to the X axis label for
     * a point that has drilldown data. By default it is underlined and blue to
@@ -14,6 +16,7 @@ trait DrilldownOptions extends js.Object {
     * `.highcharts-drilldown-axis-label` class.
     */
   var activeAxisLabelStyle: js.UndefOr[CSSObject] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Additional styles to apply to the data label of a
     * point that has drilldown data. By default it is underlined and blue to
@@ -23,12 +26,14 @@ trait DrilldownOptions extends js.Object {
     * `.highcharts-drilldown-data-label` class.
     */
   var activeDataLabelStyle: js.UndefOr[CSSObject | DrilldownActiveDataLabelStyleOptions] = js.undefined
+  
   /**
     * (Highcharts) When this option is false, clicking a single point will
     * drill down all points in the same category, equivalent to clicking the X
     * axis label.
     */
   var allowPointDrilldown: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Set the animation for all drilldown animations.
     * Animation of a drilldown occurs when drilling between a column point and
@@ -46,13 +51,14 @@ trait DrilldownOptions extends js.Object {
     * - `easing`: A string reference to an easing function set on the `Math`
     * object. See the easing demo.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
+  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
+  
   /**
-    * (Highcharts, Highmaps) Options for the drill up button that appears when
-    * drilling down on a series. The text for the button is defined in
-    * lang.drillUpText.
+    * (Highcharts) Options for the breadcrumbs, the navigation at the top
+    * leading the way up through the drilldown levels.
     */
-  var drillUpButton: js.UndefOr[DrilldownDrillUpButtonOptions] = js.undefined
+  var breadcrumbs: js.UndefOr[DrilldownBreadcrumbsOptions] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) An array of series configurations for the drill
     * down. Each series configuration uses the same syntax as the series option
@@ -61,25 +67,39 @@ trait DrilldownOptions extends js.Object {
     */
   var series: js.UndefOr[js.Array[SeriesOptionsType]] = js.undefined
 }
-
 object DrilldownOptions {
-  @scala.inline
-  def apply(
-    activeAxisLabelStyle: CSSObject = null,
-    activeDataLabelStyle: CSSObject | DrilldownActiveDataLabelStyleOptions = null,
-    allowPointDrilldown: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject = null,
-    drillUpButton: DrilldownDrillUpButtonOptions = null,
-    series: js.Array[SeriesOptionsType] = null
-  ): DrilldownOptions = {
+  
+  inline def apply(): DrilldownOptions = {
     val __obj = js.Dynamic.literal()
-    if (activeAxisLabelStyle != null) __obj.updateDynamic("activeAxisLabelStyle")(activeAxisLabelStyle.asInstanceOf[js.Any])
-    if (activeDataLabelStyle != null) __obj.updateDynamic("activeDataLabelStyle")(activeDataLabelStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPointDrilldown)) __obj.updateDynamic("allowPointDrilldown")(allowPointDrilldown.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (drillUpButton != null) __obj.updateDynamic("drillUpButton")(drillUpButton.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrilldownOptions]
   }
+  
+  extension [Self <: DrilldownOptions](x: Self) {
+    
+    inline def setActiveAxisLabelStyle(value: CSSObject): Self = StObject.set(x, "activeAxisLabelStyle", value.asInstanceOf[js.Any])
+    
+    inline def setActiveAxisLabelStyleUndefined: Self = StObject.set(x, "activeAxisLabelStyle", js.undefined)
+    
+    inline def setActiveDataLabelStyle(value: CSSObject | DrilldownActiveDataLabelStyleOptions): Self = StObject.set(x, "activeDataLabelStyle", value.asInstanceOf[js.Any])
+    
+    inline def setActiveDataLabelStyleUndefined: Self = StObject.set(x, "activeDataLabelStyle", js.undefined)
+    
+    inline def setAllowPointDrilldown(value: Boolean): Self = StObject.set(x, "allowPointDrilldown", value.asInstanceOf[js.Any])
+    
+    inline def setAllowPointDrilldownUndefined: Self = StObject.set(x, "allowPointDrilldown", js.undefined)
+    
+    inline def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setBreadcrumbs(value: DrilldownBreadcrumbsOptions): Self = StObject.set(x, "breadcrumbs", value.asInstanceOf[js.Any])
+    
+    inline def setBreadcrumbsUndefined: Self = StObject.set(x, "breadcrumbs", js.undefined)
+    
+    inline def setSeries(value: js.Array[SeriesOptionsType]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    
+    inline def setSeriesVarargs(value: SeriesOptionsType*): Self = StObject.set(x, "series", js.Array(value*))
+  }
 }
-

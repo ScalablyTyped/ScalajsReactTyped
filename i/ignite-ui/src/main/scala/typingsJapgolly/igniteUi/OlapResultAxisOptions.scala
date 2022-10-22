@@ -1,40 +1,44 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OlapResultAxisOptions
-  extends /**
-	 * Option for OlapResultAxisOptions
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Optional="false" the count of the $.ig.OlapResultAxisMember objects of each tuple.
-  	 */
+    * Optional="false" the count of the $.ig.OlapResultAxisMember objects of each tuple.
+    */
   var tupleSize: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Optional="false" array of $.ig.OlapResultTuple objects which form the axis.
-  	 */
-  var tuples: js.UndefOr[js.Array[_]] = js.undefined
+    * Optional="false" array of $.ig.OlapResultTuple objects which form the axis.
+    */
+  var tuples: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object OlapResultAxisOptions {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for OlapResultAxisOptions
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    tupleSize: Int | Double = null,
-    tuples: js.Array[_] = null
-  ): OlapResultAxisOptions = {
+  
+  inline def apply(): OlapResultAxisOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (tupleSize != null) __obj.updateDynamic("tupleSize")(tupleSize.asInstanceOf[js.Any])
-    if (tuples != null) __obj.updateDynamic("tuples")(tuples.asInstanceOf[js.Any])
     __obj.asInstanceOf[OlapResultAxisOptions]
   }
+  
+  extension [Self <: OlapResultAxisOptions](x: Self) {
+    
+    inline def setTupleSize(value: Double): Self = StObject.set(x, "tupleSize", value.asInstanceOf[js.Any])
+    
+    inline def setTupleSizeUndefined: Self = StObject.set(x, "tupleSize", js.undefined)
+    
+    inline def setTuples(value: js.Array[Any]): Self = StObject.set(x, "tuples", value.asInstanceOf[js.Any])
+    
+    inline def setTuplesUndefined: Self = StObject.set(x, "tuples", js.undefined)
+    
+    inline def setTuplesVarargs(value: Any*): Self = StObject.set(x, "tuples", js.Array(value*))
+  }
 }
-

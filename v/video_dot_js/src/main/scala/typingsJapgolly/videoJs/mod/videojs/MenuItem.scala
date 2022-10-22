@@ -1,16 +1,20 @@
 package typingsJapgolly.videoJs.mod.videojs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The component for a menu item. `<li>`
   */
 @js.native
-trait MenuItem extends ClickableComponent {
+trait MenuItem
+  extends StObject
+     with ClickableComponent {
+  
   @JSName("options_")
   var options__MenuItem: MenuItemOptions = js.native
+  
   /**
     * Set the state for this menu item as selected or not.
     *
@@ -19,4 +23,3 @@ trait MenuItem extends ClickableComponent {
     */
   def selected(selected: Boolean): Unit = js.native
 }
-

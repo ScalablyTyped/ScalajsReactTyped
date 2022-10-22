@@ -10,10 +10,10 @@ Wire Bower dependencies to your source code.
 | ------------------ | :-------------: |
 | Full name          | wiredep |
 | Keywords           | bower, package, management, inject, script, dependencies |
-| # releases         | 1 |
-| # dependents       | 302 |
-| # downloads        | 2452747 |
-| # stars            | 77 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 210979.0 |
+| # stars            | 1158.0 |
 
 ## Links
 - [Homepage](https://github.com/taptapship/wiredep#readme)

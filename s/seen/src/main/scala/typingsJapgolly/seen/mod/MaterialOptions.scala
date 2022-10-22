@@ -1,33 +1,48 @@
 package typingsJapgolly.seen.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MaterialOptions extends js.Object {
+trait MaterialOptions extends StObject {
+  
   var color: js.UndefOr[Color] = js.undefined
+  
   var metallic: js.UndefOr[Boolean] = js.undefined
+  
   var shader: js.UndefOr[Shader] = js.undefined
+  
   var specularColor: js.UndefOr[Color] = js.undefined
+  
   var specularExponent: js.UndefOr[Double] = js.undefined
 }
-
 object MaterialOptions {
-  @scala.inline
-  def apply(
-    color: Color = null,
-    metallic: js.UndefOr[Boolean] = js.undefined,
-    shader: Shader = null,
-    specularColor: Color = null,
-    specularExponent: Int | Double = null
-  ): MaterialOptions = {
+  
+  inline def apply(): MaterialOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(metallic)) __obj.updateDynamic("metallic")(metallic.asInstanceOf[js.Any])
-    if (shader != null) __obj.updateDynamic("shader")(shader.asInstanceOf[js.Any])
-    if (specularColor != null) __obj.updateDynamic("specularColor")(specularColor.asInstanceOf[js.Any])
-    if (specularExponent != null) __obj.updateDynamic("specularExponent")(specularExponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaterialOptions]
   }
+  
+  extension [Self <: MaterialOptions](x: Self) {
+    
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setMetallic(value: Boolean): Self = StObject.set(x, "metallic", value.asInstanceOf[js.Any])
+    
+    inline def setMetallicUndefined: Self = StObject.set(x, "metallic", js.undefined)
+    
+    inline def setShader(value: Shader): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
+    
+    inline def setShaderUndefined: Self = StObject.set(x, "shader", js.undefined)
+    
+    inline def setSpecularColor(value: Color): Self = StObject.set(x, "specularColor", value.asInstanceOf[js.Any])
+    
+    inline def setSpecularColorUndefined: Self = StObject.set(x, "specularColor", js.undefined)
+    
+    inline def setSpecularExponent(value: Double): Self = StObject.set(x, "specularExponent", value.asInstanceOf[js.Any])
+    
+    inline def setSpecularExponentUndefined: Self = StObject.set(x, "specularExponent", js.undefined)
+  }
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TrackLyricsAddParams extends js.Object {
+trait TrackLyricsAddParams extends StObject {
+  
   var lyrics_body: js.UndefOr[String] = js.undefined
+  
   var lyrics_id: js.UndefOr[Double] = js.undefined
 }
-
 object TrackLyricsAddParams {
-  @scala.inline
-  def apply(lyrics_body: String = null, lyrics_id: Int | Double = null): TrackLyricsAddParams = {
+  
+  inline def apply(): TrackLyricsAddParams = {
     val __obj = js.Dynamic.literal()
-    if (lyrics_body != null) __obj.updateDynamic("lyrics_body")(lyrics_body.asInstanceOf[js.Any])
-    if (lyrics_id != null) __obj.updateDynamic("lyrics_id")(lyrics_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackLyricsAddParams]
   }
+  
+  extension [Self <: TrackLyricsAddParams](x: Self) {
+    
+    inline def setLyrics_body(value: String): Self = StObject.set(x, "lyrics_body", value.asInstanceOf[js.Any])
+    
+    inline def setLyrics_bodyUndefined: Self = StObject.set(x, "lyrics_body", js.undefined)
+    
+    inline def setLyrics_id(value: Double): Self = StObject.set(x, "lyrics_id", value.asInstanceOf[js.Any])
+    
+    inline def setLyrics_idUndefined: Self = StObject.set(x, "lyrics_id", js.undefined)
+  }
 }
-

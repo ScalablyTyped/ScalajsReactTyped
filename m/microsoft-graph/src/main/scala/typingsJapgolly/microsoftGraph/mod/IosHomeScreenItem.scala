@@ -1,20 +1,27 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IosHomeScreenItem extends js.Object {
+trait IosHomeScreenItem extends StObject {
+  
   // Name of the app
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object IosHomeScreenItem {
-  @scala.inline
-  def apply(displayName: String = null): IosHomeScreenItem = {
+  
+  inline def apply(): IosHomeScreenItem = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosHomeScreenItem]
   }
+  
+  extension [Self <: IosHomeScreenItem](x: Self) {
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+  }
 }
-

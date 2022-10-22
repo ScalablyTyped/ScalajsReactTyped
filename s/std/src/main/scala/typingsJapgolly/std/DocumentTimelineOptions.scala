@@ -1,19 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentTimelineOptions extends js.Object {
-  var originTime: js.UndefOr[Double] = js.undefined
+trait DocumentTimelineOptions extends StObject {
+  
+  /* standard dom */
+  var originTime: js.UndefOr[DOMHighResTimeStamp] = js.undefined
 }
-
 object DocumentTimelineOptions {
-  @scala.inline
-  def apply(originTime: Int | Double = null): DocumentTimelineOptions = {
+  
+  inline def apply(): DocumentTimelineOptions = {
     val __obj = js.Dynamic.literal()
-    if (originTime != null) __obj.updateDynamic("originTime")(originTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentTimelineOptions]
   }
+  
+  extension [Self <: DocumentTimelineOptions](x: Self) {
+    
+    inline def setOriginTime(value: DOMHighResTimeStamp): Self = StObject.set(x, "originTime", value.asInstanceOf[js.Any])
+    
+    inline def setOriginTimeUndefined: Self = StObject.set(x, "originTime", js.undefined)
+  }
 }
-

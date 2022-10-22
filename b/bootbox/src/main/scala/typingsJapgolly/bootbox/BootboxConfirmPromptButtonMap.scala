@@ -1,26 +1,29 @@
 package typingsJapgolly.bootbox
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ButtonMap options for confirm and prompt modals */
-trait BootboxConfirmPromptButtonMap extends BootboxButtonMap {
+trait BootboxConfirmPromptButtonMap
+  extends StObject
+     with BootboxButtonMap {
+  
   var cancel: BootboxButton | js.Function
+  
   var confirm: BootboxButton | js.Function
 }
-
 object BootboxConfirmPromptButtonMap {
-  @scala.inline
-  def apply(
-    cancel: BootboxButton | js.Function,
-    confirm: BootboxButton | js.Function,
-    StringDictionary: StringDictionary[BootboxButton | js.Function] = null
-  ): BootboxConfirmPromptButtonMap = {
+  
+  inline def apply(cancel: BootboxButton | js.Function, confirm: BootboxButton | js.Function): BootboxConfirmPromptButtonMap = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], confirm = confirm.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[BootboxConfirmPromptButtonMap]
   }
+  
+  extension [Self <: BootboxConfirmPromptButtonMap](x: Self) {
+    
+    inline def setCancel(value: BootboxButton | js.Function): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setConfirm(value: BootboxButton | js.Function): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.minappEnv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICloudConfig extends js.Object {
+trait ICloudConfig extends StObject {
+  
   var env: js.UndefOr[java.lang.String] = js.undefined
+  
   var traceUser: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object ICloudConfig {
-  @scala.inline
-  def apply(env: java.lang.String = null, traceUser: js.UndefOr[scala.Boolean] = js.undefined): ICloudConfig = {
+  
+  inline def apply(): ICloudConfig = {
     val __obj = js.Dynamic.literal()
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceUser)) __obj.updateDynamic("traceUser")(traceUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICloudConfig]
   }
+  
+  extension [Self <: ICloudConfig](x: Self) {
+    
+    inline def setEnv(value: java.lang.String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    
+    inline def setTraceUser(value: scala.Boolean): Self = StObject.set(x, "traceUser", value.asInstanceOf[js.Any])
+    
+    inline def setTraceUserUndefined: Self = StObject.set(x, "traceUser", js.undefined)
+  }
 }
-

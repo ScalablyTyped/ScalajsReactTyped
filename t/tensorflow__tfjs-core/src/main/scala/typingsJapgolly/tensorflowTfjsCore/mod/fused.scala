@@ -1,35 +1,33 @@
 package typingsJapgolly.tensorflowTfjsCore.mod
 
-import typingsJapgolly.tensorflowTfjsCore.AnonA
-import typingsJapgolly.tensorflowTfjsCore.AnonActivation
-import typingsJapgolly.tensorflowTfjsCore.tensorMod.Tensor
-import typingsJapgolly.tensorflowTfjsCore.tensorMod.Tensor3D
-import typingsJapgolly.tensorflowTfjsCore.tensorMod.Tensor4D
+import typingsJapgolly.tensorflowTfjsCore.anon.A
+import typingsJapgolly.tensorflowTfjsCore.anon.Activation
+import typingsJapgolly.tensorflowTfjsCore.anon.Bias
+import typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor
+import typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor3D
+import typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor4D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core", "fused")
-@js.native
-object fused extends js.Object {
-  @js.native
-  object conv2d extends js.Object {
-    def apply[T /* <: Tensor3D | Tensor4D */](
-      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: AnonActivation[T]
-    ): T = js.native
-  }
+object fused {
   
+  @JSImport("@tensorflow/tfjs-core", "fused")
   @js.native
-  object depthwiseConv2d extends js.Object {
-    def apply[T /* <: Tensor3D | Tensor4D */](
-      hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: AnonActivation[T]
-    ): T = js.native
-  }
+  val ^ : js.Any = js.native
   
+  inline def conv2d[T /* <: Tensor3D | Tensor4D */](
+    hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha: Activation[T]
+  ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  inline def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](
+    hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha: Bias[T]
+  ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeightsLeakyreluAlpha.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  @JSImport("@tensorflow/tfjs-core", "fused.matMul")
   @js.native
-  object matMul extends js.Object {
-    def apply[T /* <: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank] */](hasABTransposeATransposeBBiasActivationPreluActivationWeights: AnonA[T]): T = js.native
-  }
-  
+  val matMul: js.Function1[
+    /* hasABTransposeATransposeBBiasActivationPreluActivationWeightsLeakyreluAlpha */ A, 
+    Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank]
+  ] = js.native
 }
-

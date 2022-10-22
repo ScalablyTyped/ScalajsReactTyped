@@ -1,47 +1,43 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6`
 */
-trait PpParagraphAlignment extends js.Object
-
+trait PpParagraphAlignment extends StObject
 object PpParagraphAlignment {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ppAlignCenter: `2` = this.cast(2)
-  @scala.inline
-  def ppAlignDistribute: `5` = this.cast(5)
-  @scala.inline
-  def ppAlignJustify: `4` = this.cast(4)
-  @scala.inline
-  def ppAlignJustifyLow: `7` = this.cast(7)
-  @scala.inline
-  def ppAlignLeft: `1` = this.cast(1)
-  @scala.inline
-  def ppAlignRight: `3` = this.cast(3)
-  @scala.inline
-  def ppAlignThaiDistribute: `6` = this.cast(6)
-  @scala.inline
-  def ppAlignmentMixed: `-2` = this.cast(-2)
+  
+  inline def ppAlignCenter: `2` = 2.asInstanceOf[`2`]
+  
+  inline def ppAlignDistribute: `5` = 5.asInstanceOf[`5`]
+  
+  inline def ppAlignJustify: `4` = 4.asInstanceOf[`4`]
+  
+  inline def ppAlignJustifyLow: `7` = 7.asInstanceOf[`7`]
+  
+  inline def ppAlignLeft: `1` = 1.asInstanceOf[`1`]
+  
+  inline def ppAlignRight: `3` = 3.asInstanceOf[`3`]
+  
+  inline def ppAlignThaiDistribute: `6` = 6.asInstanceOf[`6`]
+  
+  inline def ppAlignmentMixed: `-2` = -2.asInstanceOf[`-2`]
 }
-

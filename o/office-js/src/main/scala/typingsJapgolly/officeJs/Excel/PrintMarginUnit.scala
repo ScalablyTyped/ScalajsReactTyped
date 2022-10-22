@@ -1,53 +1,46 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintMarginUnit extends js.Object
-
+sealed trait PrintMarginUnit extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PrintMarginUnit")
 @js.native
-object PrintMarginUnit extends js.Object {
+object PrintMarginUnit extends StObject {
+  
   /**
-    *
     * Assign the page margins in centimeters.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait centimeters extends PrintMarginUnit
+  sealed trait centimeters
+    extends StObject
+       with PrintMarginUnit
   
   /**
-    *
     * Assign the page margins in inches.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait inches extends PrintMarginUnit
+  sealed trait inches
+    extends StObject
+       with PrintMarginUnit
   
   /**
-    *
     * Assign the page margins in points. A point is 1/72 of an inch.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait points extends PrintMarginUnit
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PrintMarginUnit with String] = js.native
-  /* "Centimeters" */ @js.native
-  object centimeters extends TopLevel[centimeters with String]
-  
-  /* "Inches" */ @js.native
-  object inches extends TopLevel[inches with String]
-  
-  /* "Points" */ @js.native
-  object points extends TopLevel[points with String]
-  
+  sealed trait points
+    extends StObject
+       with PrintMarginUnit
 }
-

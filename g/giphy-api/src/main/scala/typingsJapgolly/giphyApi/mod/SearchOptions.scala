@@ -1,29 +1,36 @@
 package typingsJapgolly.giphyApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchOptions extends BaseOptions {
+trait SearchOptions
+  extends StObject
+     with BaseOptions {
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var offset: js.UndefOr[Double] = js.undefined
+  
   var q: String
 }
-
 object SearchOptions {
-  @scala.inline
-  def apply(
-    q: String,
-    rating: Rating,
-    fmt: Format = null,
-    limit: Int | Double = null,
-    offset: Int | Double = null
-  ): SearchOptions = {
+  
+  inline def apply(q: String, rating: Rating): SearchOptions = {
     val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any], rating = rating.asInstanceOf[js.Any])
-    if (fmt != null) __obj.updateDynamic("fmt")(fmt.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptions]
   }
+  
+  extension [Self <: SearchOptions](x: Self) {
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+  }
 }
-

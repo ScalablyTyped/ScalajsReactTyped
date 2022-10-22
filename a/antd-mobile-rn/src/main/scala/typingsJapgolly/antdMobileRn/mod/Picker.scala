@@ -1,21 +1,29 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.AnonAntLocale
-import typingsJapgolly.antdMobileRn.AnonCascade
-import typingsJapgolly.antdMobileRn.pickerIndexNativeMod.default
+import typingsJapgolly.antdMobileRn.anon.AntLocale
+import typingsJapgolly.antdMobileRn.anon.Cascade
+import typingsJapgolly.antdMobileRn.libPickerIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "Picker")
 @js.native
-class Picker () extends default
-
+open class Picker () extends default
 /* static members */
-@JSImport("antd-mobile-rn", "Picker")
-@js.native
-object Picker extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonCascade = js.native
+object Picker {
+  
+  @JSImport("antd-mobile-rn", "Picker")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "Picker.contextTypes")
+  @js.native
+  def contextTypes: AntLocale = js.native
+  inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile-rn", "Picker.defaultProps")
+  @js.native
+  def defaultProps: Cascade = js.native
+  inline def defaultProps_=(x: Cascade): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

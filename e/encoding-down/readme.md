@@ -4,16 +4,16 @@
 Typings are for version 5.0
 
 ## Library description:
-LevelDOWN wrapper supporting levelup@1 encodings
+An abstract-leveldown implementation that wraps another store to encode keys and values
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | encoding-down |
 | Keywords           | level |
-| # releases         | 14 |
-| # dependents       | 54 |
-| # downloads        | 3336266 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1816810.0 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/Level/encoding-down)

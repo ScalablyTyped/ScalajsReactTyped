@@ -1,20 +1,22 @@
 package typingsJapgolly.aureliaBinding.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BindingExpression extends js.Object {
-  def createBinding(target: js.Any): Binding
+trait BindingExpression extends StObject {
+  
+  def createBinding(target: Any): Binding
 }
-
 object BindingExpression {
-  @scala.inline
-  def apply(createBinding: js.Any => CallbackTo[Binding]): BindingExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createBinding")(js.Any.fromFunction1((t0: js.Any) => createBinding(t0).runNow()))
+  
+  inline def apply(createBinding: Any => Binding): BindingExpression = {
+    val __obj = js.Dynamic.literal(createBinding = js.Any.fromFunction1(createBinding))
     __obj.asInstanceOf[BindingExpression]
   }
+  
+  extension [Self <: BindingExpression](x: Self) {
+    
+    inline def setCreateBinding(value: Any => Binding): Self = StObject.set(x, "createBinding", js.Any.fromFunction1(value))
+  }
 }
-

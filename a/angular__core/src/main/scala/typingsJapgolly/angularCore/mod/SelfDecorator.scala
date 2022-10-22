@@ -1,18 +1,21 @@
 package typingsJapgolly.angularCore.mod
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelfDecorator extends Instantiable0[Self] {
+trait SelfDecorator
+  extends StObject
+     with Instantiable0[Self] {
+  
   /**
     * Parameter decorator to be used on constructor parameters,
     * which tells the DI framework to start dependency resolution from the local injector.
     *
     * Resolution works upward through the injector hierarchy, so the children
-    * of this class must configure their own providers or be prepared for a null result.
+    * of this class must configure their own providers or be prepared for a `null` result.
     *
     * @usageNotes
     *
@@ -23,11 +26,9 @@ trait SelfDecorator extends Instantiable0[Self] {
     * <code-example path="core/di/ts/metadata_spec.ts" region="Self">
     * </code-example>
     *
-    *
     * @see `SkipSelf`
     * @see `Optional`
     *
     */
-  def apply(): js.Any = js.native
+  def apply(): Any = js.native
 }
-

@@ -1,124 +1,108 @@
 package typingsJapgolly.sax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object saxStrings {
-  @js.native
-  sealed trait attribute extends js.Object
   
   @js.native
-  sealed trait cdata extends js.Object
+  sealed trait attribute extends StObject
+  inline def attribute: attribute = "attribute".asInstanceOf[attribute]
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait cdata extends StObject
+  inline def cdata: cdata = "cdata".asInstanceOf[cdata]
   
   @js.native
-  sealed trait closecdata extends js.Object
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait closenamespace extends js.Object
+  sealed trait closecdata extends StObject
+  inline def closecdata: closecdata = "closecdata".asInstanceOf[closecdata]
   
   @js.native
-  sealed trait closetag extends js.Object
+  sealed trait closenamespace extends StObject
+  inline def closenamespace: closenamespace = "closenamespace".asInstanceOf[closenamespace]
   
   @js.native
-  sealed trait comment extends js.Object
+  sealed trait closetag extends StObject
+  inline def closetag: closetag = "closetag".asInstanceOf[closetag]
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait comment extends StObject
+  inline def comment: comment = "comment".asInstanceOf[comment]
   
   @js.native
-  sealed trait doctype extends js.Object
+  sealed trait data extends StObject
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait drain extends js.Object
+  sealed trait doctype extends StObject
+  inline def doctype: doctype = "doctype".asInstanceOf[doctype]
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait drain extends StObject
+  inline def drain: drain = "drain".asInstanceOf[drain]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait finish extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait opencdata extends js.Object
+  sealed trait finish extends StObject
+  inline def finish: finish = "finish".asInstanceOf[finish]
   
   @js.native
-  sealed trait opennamespace extends js.Object
+  sealed trait opencdata extends StObject
+  inline def opencdata: opencdata = "opencdata".asInstanceOf[opencdata]
   
   @js.native
-  sealed trait opentag extends js.Object
+  sealed trait opennamespace extends StObject
+  inline def opennamespace: opennamespace = "opennamespace".asInstanceOf[opennamespace]
   
   @js.native
-  sealed trait pipe extends js.Object
+  sealed trait opentag extends StObject
+  inline def opentag: opentag = "opentag".asInstanceOf[opentag]
   
   @js.native
-  sealed trait processinginstruction extends js.Object
+  sealed trait opentagstart extends StObject
+  inline def opentagstart: opentagstart = "opentagstart".asInstanceOf[opentagstart]
   
   @js.native
-  sealed trait readable extends js.Object
+  sealed trait pipe extends StObject
+  inline def pipe: pipe = "pipe".asInstanceOf[pipe]
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait processinginstruction extends StObject
+  inline def processinginstruction: processinginstruction = "processinginstruction".asInstanceOf[processinginstruction]
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait readable extends StObject
+  inline def readable: readable = "readable".asInstanceOf[readable]
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait ready extends StObject
+  inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait unpipe extends js.Object
+  sealed trait script extends StObject
+  inline def script: script = "script".asInstanceOf[script]
   
-  @scala.inline
-  def attribute: attribute = "attribute".asInstanceOf[attribute]
-  @scala.inline
-  def cdata: cdata = "cdata".asInstanceOf[cdata]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def closecdata: closecdata = "closecdata".asInstanceOf[closecdata]
-  @scala.inline
-  def closenamespace: closenamespace = "closenamespace".asInstanceOf[closenamespace]
-  @scala.inline
-  def closetag: closetag = "closetag".asInstanceOf[closetag]
-  @scala.inline
-  def comment: comment = "comment".asInstanceOf[comment]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def doctype: doctype = "doctype".asInstanceOf[doctype]
-  @scala.inline
-  def drain: drain = "drain".asInstanceOf[drain]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def finish: finish = "finish".asInstanceOf[finish]
-  @scala.inline
-  def opencdata: opencdata = "opencdata".asInstanceOf[opencdata]
-  @scala.inline
-  def opennamespace: opennamespace = "opennamespace".asInstanceOf[opennamespace]
-  @scala.inline
-  def opentag: opentag = "opentag".asInstanceOf[opentag]
-  @scala.inline
-  def pipe: pipe = "pipe".asInstanceOf[pipe]
-  @scala.inline
-  def processinginstruction: processinginstruction = "processinginstruction".asInstanceOf[processinginstruction]
-  @scala.inline
-  def readable: readable = "readable".asInstanceOf[readable]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def script: script = "script".asInstanceOf[script]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
+  @js.native
+  sealed trait sgmldeclaration extends StObject
+  inline def sgmldeclaration: sgmldeclaration = "sgmldeclaration".asInstanceOf[sgmldeclaration]
+  
+  @js.native
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait unpipe extends StObject
+  inline def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
 }
-

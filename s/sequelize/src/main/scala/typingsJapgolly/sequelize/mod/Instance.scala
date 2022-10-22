@@ -1,11 +1,11 @@
 package typingsJapgolly.sequelize.mod
 
-import typingsJapgolly.sequelize.AnonClone
-import typingsJapgolly.sequelize.AnonSkip
+import typingsJapgolly.sequelize.anon.Clone
+import typingsJapgolly.sequelize.anon.Skip
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents an single instance, a database row. You might see it referred to as both Instance and
@@ -29,21 +29,15 @@ import scala.scalajs.js.annotation._
   * @see Sequelize.define for more information about getters and setters
   */
 @js.native
-trait Instance[TAttributes] extends js.Object {
+trait Instance[TAttributes] extends StObject {
+  
   /**
     * Returns the Model the instance was created from.
     *
     * @see Model
     */
   var Model: typingsJapgolly.sequelize.mod.Model[this.type, TAttributes, TAttributes] = js.native
-  /**
-    * Returns true if this instance has not yet been persisted to the database
-    */
-  var isNewRecord: Boolean = js.native
-  /**
-    * A reference to the sequelize instance
-    */
-  var sequelize: Sequelize = js.native
+  
   def changed(): Boolean | js.Array[String] = js.native
   /**
     * If changed is called with a string it will return a boolean indicating whether the value of that key in
@@ -53,11 +47,12 @@ trait Instance[TAttributes] extends js.Object {
     *
     * If changed is called without an argument and no keys have changed, it will return `false`.
     */
-  def changed(key: String): Boolean = js.native
-  def decrement(fields: String): typingsJapgolly.bluebird.mod.^[this.type] = js.native
-  def decrement(fields: String, options: InstanceIncrementDecrementOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
-  def decrement(fields: js.Array[String]): typingsJapgolly.bluebird.mod.^[this.type] = js.native
-  def decrement(fields: js.Array[String], options: InstanceIncrementDecrementOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  def changed(key: /* keyof TAttributes */ String): Boolean = js.native
+  
+  def decrement(fields: /* keyof TAttributes */ String): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  def decrement(fields: /* keyof TAttributes */ String, options: InstanceIncrementDecrementOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  def decrement(fields: js.Array[/* keyof TAttributes */ String]): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  def decrement(fields: js.Array[/* keyof TAttributes */ String], options: InstanceIncrementDecrementOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
   /**
     * Decrement the value of one or more columns. This is done in the database, which means it does not use
     * the values currently stored on the Instance. The decrement is done using a
@@ -80,20 +75,24 @@ trait Instance[TAttributes] extends js.Object {
     */
   def decrement(fields: Partial[TAttributes]): typingsJapgolly.bluebird.mod.^[this.type] = js.native
   def decrement(fields: Partial[TAttributes], options: InstanceIncrementDecrementOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  
   /**
     * Destroy the row corresponding to this instance. Depending on your setting for paranoid, the row will
     * either be completely deleted, or have its deletedAt timestamp set to the current time.
     */
   def destroy(): typingsJapgolly.bluebird.mod.^[Unit] = js.native
   def destroy(options: InstanceDestroyOptions): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Check whether all values of this and `other` Instance are the same
     */
-  def equals(other: Instance[_]): Boolean = js.native
+  def equals(other: Instance[Any]): Boolean = js.native
+  
   /**
     * Check if this is eqaul to one of `others` by calling equals
     */
-  def equalsOneOf(others: js.Array[Instance[_]]): Boolean = js.native
+  def equalsOneOf(others: js.Array[Instance[Any]]): Boolean = js.native
+  
   def get(): TAttributes = js.native
   /**
     * If no key is given, returns all values of the instance, also invoking virtual getters.
@@ -103,17 +102,19 @@ trait Instance[TAttributes] extends js.Object {
     *
     * @param options.plain If set to true, included instances will be returned as plain objects
     */
-  def get(key: String): js.Any = js.native
-  def get(key: String, options: AnonClone): js.Any = js.native
-  def get(options: AnonClone): TAttributes = js.native
+  def get(key: /* keyof TAttributes */ String): Any = js.native
+  def get(key: /* keyof TAttributes */ String, options: Clone): Any = js.native
+  def get(options: Clone): TAttributes = js.native
+  
   /**
     * Get the value of the underlying data value
     */
-  def getDataValue(key: String): js.Any = js.native
-  def increment(fields: String): typingsJapgolly.bluebird.mod.^[this.type] = js.native
-  def increment(fields: String, options: InstanceIncrementDecrementOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
-  def increment(fields: js.Array[String]): typingsJapgolly.bluebird.mod.^[this.type] = js.native
-  def increment(fields: js.Array[String], options: InstanceIncrementDecrementOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  def getDataValue(key: /* keyof TAttributes */ String): Any = js.native
+  
+  def increment(fields: /* keyof TAttributes */ String): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  def increment(fields: /* keyof TAttributes */ String, options: InstanceIncrementDecrementOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  def increment(fields: js.Array[/* keyof TAttributes */ String]): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  def increment(fields: js.Array[/* keyof TAttributes */ String], options: InstanceIncrementDecrementOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
   /**
     * Increment the value of one or more columns. This is done in the database, which means it does not use
     * the values currently stored on the Instance. The increment is done using a
@@ -136,13 +137,20 @@ trait Instance[TAttributes] extends js.Object {
     */
   def increment(fields: Partial[TAttributes]): typingsJapgolly.bluebird.mod.^[this.type] = js.native
   def increment(fields: Partial[TAttributes], options: InstanceIncrementDecrementOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  
+  /**
+    * Returns true if this instance has not yet been persisted to the database
+    */
+  var isNewRecord: Boolean = js.native
+  
   def previous(): js.Object = js.native
   /**
     * If previous is called with a string, it will return the previous value for the key from `_previousDataValues`.
     *
     * If previous is called without an argument, it will return an object containing the previous keys and values that have changed.
     */
-  def previous(key: String): js.Any = js.native
+  def previous(key: /* keyof TAttributes */ String): Any = js.native
+  
   /**
     * Refresh the current instance in-place, i.e. update the object with current data from the DB and return
     * the same object. This is different from doing a `find(Instance.id)`, because that would create and
@@ -151,11 +159,13 @@ trait Instance[TAttributes] extends js.Object {
     */
   def reload(): typingsJapgolly.bluebird.mod.^[this.type] = js.native
   def reload(options: AnyFindOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  
   /**
     * Restore the row corresponding to this instance. Only available for paranoid models.
     */
   def restore(): typingsJapgolly.bluebird.mod.^[Unit] = js.native
   def restore(options: InstanceRestoreOptions): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Validate this instance, and if the validation passes, persist it to the database.
     *
@@ -165,6 +175,12 @@ trait Instance[TAttributes] extends js.Object {
     */
   def save(): typingsJapgolly.bluebird.mod.^[this.type] = js.native
   def save(options: InstanceSaveOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  
+  /**
+    * A reference to the sequelize instance
+    */
+  var sequelize: Sequelize = js.native
+  
   def set(keys: js.Object): this.type = js.native
   def set(keys: js.Object, options: InstanceSetOptions): this.type = js.native
   /**
@@ -191,63 +207,69 @@ trait Instance[TAttributes] extends js.Object {
     * @param options.raw If set to true, field and virtual setters will be ignored
     * @param options.reset Clear all previously set data values
     */
-  def set[K /* <: String */](
+  def set[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): this.type = js.native
-  def set[K /* <: String */](
+  def set[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any,
     options: InstanceSetOptions
   ): this.type = js.native
+  
   def setAttributes(keys: js.Object): this.type = js.native
   def setAttributes(keys: js.Object, options: InstanceSetOptions): this.type = js.native
-  def setAttributes[K /* <: String */](
+  def setAttributes[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): this.type = js.native
-  def setAttributes[K /* <: String */](
+  def setAttributes[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any,
     options: InstanceSetOptions
   ): this.type = js.native
+  
   /**
     * Update the underlying data value
     */
-  def setDataValue[K /* <: String */](
+  def setDataValue[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): Unit = js.native
+  
   /**
     * Convert the instance to a JSON representation. Proxies to calling `get` with no keys. This means get all
     * values gotten from the DB, and apply all custom getters.
     */
   def toJSON(): TAttributes = js.native
+  
   def update(keys: js.Object): typingsJapgolly.bluebird.mod.^[this.type] = js.native
   def update(keys: js.Object, options: InstanceUpdateOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
   /**
     * This is the same as calling `set` and then calling `save`.
     */
-  def update[K /* <: String */](
+  def update[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): typingsJapgolly.bluebird.mod.^[this.type] = js.native
-  def update[K /* <: String */](
+  def update[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any,
     options: InstanceUpdateOptions
   ): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  
   def updateAttributes(keys: js.Object): typingsJapgolly.bluebird.mod.^[this.type] = js.native
   def updateAttributes(keys: js.Object, options: InstanceUpdateOptions): typingsJapgolly.bluebird.mod.^[this.type] = js.native
-  def updateAttributes[K /* <: String */](
+  def updateAttributes[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): typingsJapgolly.bluebird.mod.^[this.type] = js.native
-  def updateAttributes[K /* <: String */](
+  def updateAttributes[K /* <: /* keyof TAttributes */ String */](
     key: K,
     value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any,
     options: InstanceUpdateOptions
   ): typingsJapgolly.bluebird.mod.^[this.type] = js.native
+  
   /**
     * Validate the attribute of this instance according to validation rules set in the model definition.
     *
@@ -257,10 +279,10 @@ trait Instance[TAttributes] extends js.Object {
     * @param options.skip An array of strings. All properties that are in this array will not be validated
     */
   def validate(): typingsJapgolly.bluebird.mod.^[ValidationError] = js.native
-  def validate(options: AnonSkip): typingsJapgolly.bluebird.mod.^[ValidationError] = js.native
+  def validate(options: Skip): typingsJapgolly.bluebird.mod.^[ValidationError] = js.native
+  
   /**
     * Get an object representing the query for this instance, use with `options.where`
     */
   def where(): js.Object = js.native
 }
-

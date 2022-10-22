@@ -1,19 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageBitmapRenderingContextSettings extends js.Object {
+trait ImageBitmapRenderingContextSettings extends StObject {
+  
+  /* standard dom */
   var alpha: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object ImageBitmapRenderingContextSettings {
-  @scala.inline
-  def apply(alpha: js.UndefOr[scala.Boolean] = js.undefined): ImageBitmapRenderingContextSettings = {
+  
+  inline def apply(): ImageBitmapRenderingContextSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageBitmapRenderingContextSettings]
   }
+  
+  extension [Self <: ImageBitmapRenderingContextSettings](x: Self) {
+    
+    inline def setAlpha(value: scala.Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+  }
 }
-

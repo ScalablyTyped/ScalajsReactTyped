@@ -1,26 +1,46 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The IndicatorPoint class's client-side equivalent.
   */
-@JSGlobal("ASPxClientIndicatorPoint")
-@js.native
-class ASPxClientIndicatorPoint () extends ASPxClientWebChartElement {
+trait ASPxClientIndicatorPoint
+  extends StObject
+     with ASPxClientWebChartElement {
+  
   /**
     * Returns the indicator point's argument.
     */
-  var argument: js.Any = js.native
+  var argument: Any
+  
   /**
     * Returns the series to which the indicator and its point belong.
     */
-  var series: ASPxClientSeries = js.native
+  var series: ASPxClientSeries
+  
   /**
     * Returns the values for the indicator point that the Crosshair Cursor highlights.
     */
-  var values: js.Array[_] = js.native
+  var values: js.Array[Any]
 }
-
+object ASPxClientIndicatorPoint {
+  
+  inline def apply(argument: Any, chart: ASPxClientWebChart, series: ASPxClientSeries, values: js.Array[Any]): ASPxClientIndicatorPoint = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientIndicatorPoint]
+  }
+  
+  extension [Self <: ASPxClientIndicatorPoint](x: Self) {
+    
+    inline def setArgument(value: Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    
+    inline def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    
+    inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
+  }
+}

@@ -1,8 +1,8 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON对象，联系人名称对象
@@ -10,37 +10,43 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
   */
-trait PlusContactsContactName extends js.Object {
+trait PlusContactsContactName extends StObject {
+  
   /**
     * 联系人的姓
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
   var familyName: js.UndefOr[String] = js.undefined
+  
   /**
     * 联系人的完整名称，由其它字段组合生成
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
   var formatted: js.UndefOr[String] = js.undefined
+  
   /**
     * 联系人的名
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
   var givenName: js.UndefOr[String] = js.undefined
+  
   /**
     * 联系人的前缀（如Mr.或Dr.）
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
   var honorificPrefix: js.UndefOr[String] = js.undefined
+  
   /**
     * 联系人的后缀
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
   var honorificSuffix: js.UndefOr[String] = js.undefined
+  
   /**
     * 联系人的中间名
     * 
@@ -48,25 +54,37 @@ trait PlusContactsContactName extends js.Object {
     */
   var middleName: js.UndefOr[String] = js.undefined
 }
-
 object PlusContactsContactName {
-  @scala.inline
-  def apply(
-    familyName: String = null,
-    formatted: String = null,
-    givenName: String = null,
-    honorificPrefix: String = null,
-    honorificSuffix: String = null,
-    middleName: String = null
-  ): PlusContactsContactName = {
+  
+  inline def apply(): PlusContactsContactName = {
     val __obj = js.Dynamic.literal()
-    if (familyName != null) __obj.updateDynamic("familyName")(familyName.asInstanceOf[js.Any])
-    if (formatted != null) __obj.updateDynamic("formatted")(formatted.asInstanceOf[js.Any])
-    if (givenName != null) __obj.updateDynamic("givenName")(givenName.asInstanceOf[js.Any])
-    if (honorificPrefix != null) __obj.updateDynamic("honorificPrefix")(honorificPrefix.asInstanceOf[js.Any])
-    if (honorificSuffix != null) __obj.updateDynamic("honorificSuffix")(honorificSuffix.asInstanceOf[js.Any])
-    if (middleName != null) __obj.updateDynamic("middleName")(middleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusContactsContactName]
   }
+  
+  extension [Self <: PlusContactsContactName](x: Self) {
+    
+    inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+    
+    inline def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
+    
+    inline def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
+    
+    inline def setFormattedUndefined: Self = StObject.set(x, "formatted", js.undefined)
+    
+    inline def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+    
+    inline def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
+    
+    inline def setHonorificPrefix(value: String): Self = StObject.set(x, "honorificPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setHonorificPrefixUndefined: Self = StObject.set(x, "honorificPrefix", js.undefined)
+    
+    inline def setHonorificSuffix(value: String): Self = StObject.set(x, "honorificSuffix", value.asInstanceOf[js.Any])
+    
+    inline def setHonorificSuffixUndefined: Self = StObject.set(x, "honorificSuffix", js.undefined)
+    
+    inline def setMiddleName(value: String): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
+    
+    inline def setMiddleNameUndefined: Self = StObject.set(x, "middleName", js.undefined)
+  }
 }
-

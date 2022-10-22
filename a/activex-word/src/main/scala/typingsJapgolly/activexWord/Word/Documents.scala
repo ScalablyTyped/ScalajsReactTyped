@@ -1,118 +1,151 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.Documents")
 @js.native
-class Documents protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.Documents_typekey")
-  var WordDotDocuments_typekey: Documents = js.native
+trait Documents extends StObject {
+  
   def Add(): Document = js.native
   def Add(Template: String): Document = js.native
   def Add(Template: String, NewTemplate: Boolean): Document = js.native
+  def Add(Template: String, NewTemplate: Boolean, DocumentType: Unit, Visible: Boolean): Document = js.native
   def Add(Template: String, NewTemplate: Boolean, DocumentType: WdNewDocumentType): Document = js.native
   def Add(Template: String, NewTemplate: Boolean, DocumentType: WdNewDocumentType, Visible: Boolean): Document = js.native
+  def Add(Template: String, NewTemplate: Unit, DocumentType: Unit, Visible: Boolean): Document = js.native
+  def Add(Template: String, NewTemplate: Unit, DocumentType: WdNewDocumentType): Document = js.native
+  def Add(Template: String, NewTemplate: Unit, DocumentType: WdNewDocumentType, Visible: Boolean): Document = js.native
+  def Add(Template: Unit, NewTemplate: Boolean): Document = js.native
+  def Add(Template: Unit, NewTemplate: Boolean, DocumentType: Unit, Visible: Boolean): Document = js.native
+  def Add(Template: Unit, NewTemplate: Boolean, DocumentType: WdNewDocumentType): Document = js.native
+  def Add(Template: Unit, NewTemplate: Boolean, DocumentType: WdNewDocumentType, Visible: Boolean): Document = js.native
+  def Add(Template: Unit, NewTemplate: Unit, DocumentType: Unit, Visible: Boolean): Document = js.native
+  def Add(Template: Unit, NewTemplate: Unit, DocumentType: WdNewDocumentType): Document = js.native
+  def Add(Template: Unit, NewTemplate: Unit, DocumentType: WdNewDocumentType, Visible: Boolean): Document = js.native
+  
   /** @param string [PostID=''] */
   def AddBlogDocument(ProviderID: String, PostURL: String, BlogName: String): Document = js.native
   def AddBlogDocument(ProviderID: String, PostURL: String, BlogName: String, PostID: String): Document = js.native
+  
   def AddOld(): Document = js.native
-  def AddOld(Template: js.Any): Document = js.native
-  def AddOld(Template: js.Any, NewTemplate: js.Any): Document = js.native
+  def AddOld(Template: Any): Document = js.native
+  def AddOld(Template: Any, NewTemplate: Any): Document = js.native
+  def AddOld(Template: Unit, NewTemplate: Any): Document = js.native
+  
+  val Application: typingsJapgolly.activexWord.Word.Application = js.native
+  
   def CanCheckOut(FileName: String): Boolean = js.native
+  
   def CheckOut(FileName: String): Unit = js.native
+  
   def Close(): Unit = js.native
-  def Close(SaveChanges: js.Any): Unit = js.native
-  def Close(SaveChanges: js.Any, OriginalFormat: js.Any): Unit = js.native
-  def Close(SaveChanges: js.Any, OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
+  def Close(SaveChanges: Any): Unit = js.native
+  def Close(SaveChanges: Any, OriginalFormat: Any): Unit = js.native
+  def Close(SaveChanges: Any, OriginalFormat: Any, RouteDocument: Any): Unit = js.native
+  def Close(SaveChanges: Any, OriginalFormat: Unit, RouteDocument: Any): Unit = js.native
+  def Close(SaveChanges: Unit, OriginalFormat: Any): Unit = js.native
+  def Close(SaveChanges: Unit, OriginalFormat: Any, RouteDocument: Any): Unit = js.native
+  def Close(SaveChanges: Unit, OriginalFormat: Unit, RouteDocument: Any): Unit = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
   def Item(Index: String): Document = js.native
   def Item(Index: Double): Document = js.native
+  
   def Open(
-    FileName: js.Any,
-    ConfirmConversions: js.UndefOr[js.Any],
-    ReadOnly: js.UndefOr[js.Any],
-    AddToRecentFiles: js.UndefOr[js.Any],
-    PasswordDocument: js.UndefOr[js.Any],
-    PasswordTemplate: js.UndefOr[js.Any],
-    Revert: js.UndefOr[js.Any],
-    WritePasswordDocument: js.UndefOr[js.Any],
-    WritePasswordTemplate: js.UndefOr[js.Any],
-    Format: js.UndefOr[js.Any],
-    Encoding: js.UndefOr[js.Any],
-    Visible: js.UndefOr[js.Any],
-    OpenAndRepair: js.UndefOr[js.Any],
-    DocumentDirection: js.UndefOr[js.Any],
-    NoEncodingDialog: js.UndefOr[js.Any],
-    XMLTransform: js.UndefOr[js.Any]
+    FileName: Any,
+    ConfirmConversions: js.UndefOr[Any],
+    ReadOnly: js.UndefOr[Any],
+    AddToRecentFiles: js.UndefOr[Any],
+    PasswordDocument: js.UndefOr[Any],
+    PasswordTemplate: js.UndefOr[Any],
+    Revert: js.UndefOr[Any],
+    WritePasswordDocument: js.UndefOr[Any],
+    WritePasswordTemplate: js.UndefOr[Any],
+    Format: js.UndefOr[Any],
+    Encoding: js.UndefOr[Any],
+    Visible: js.UndefOr[Any],
+    OpenAndRepair: js.UndefOr[Any],
+    DocumentDirection: js.UndefOr[Any],
+    NoEncodingDialog: js.UndefOr[Any],
+    XMLTransform: js.UndefOr[Any]
   ): Document = js.native
+  
   def Open2000(
-    FileName: js.Any,
-    ConfirmConversions: js.UndefOr[js.Any],
-    ReadOnly: js.UndefOr[js.Any],
-    AddToRecentFiles: js.UndefOr[js.Any],
-    PasswordDocument: js.UndefOr[js.Any],
-    PasswordTemplate: js.UndefOr[js.Any],
-    Revert: js.UndefOr[js.Any],
-    WritePasswordDocument: js.UndefOr[js.Any],
-    WritePasswordTemplate: js.UndefOr[js.Any],
-    Format: js.UndefOr[js.Any],
-    Encoding: js.UndefOr[js.Any],
-    Visible: js.UndefOr[js.Any]
+    FileName: Any,
+    ConfirmConversions: js.UndefOr[Any],
+    ReadOnly: js.UndefOr[Any],
+    AddToRecentFiles: js.UndefOr[Any],
+    PasswordDocument: js.UndefOr[Any],
+    PasswordTemplate: js.UndefOr[Any],
+    Revert: js.UndefOr[Any],
+    WritePasswordDocument: js.UndefOr[Any],
+    WritePasswordTemplate: js.UndefOr[Any],
+    Format: js.UndefOr[Any],
+    Encoding: js.UndefOr[Any],
+    Visible: js.UndefOr[Any]
   ): Document = js.native
+  
   def Open2002(
-    FileName: js.Any,
-    ConfirmConversions: js.UndefOr[js.Any],
-    ReadOnly: js.UndefOr[js.Any],
-    AddToRecentFiles: js.UndefOr[js.Any],
-    PasswordDocument: js.UndefOr[js.Any],
-    PasswordTemplate: js.UndefOr[js.Any],
-    Revert: js.UndefOr[js.Any],
-    WritePasswordDocument: js.UndefOr[js.Any],
-    WritePasswordTemplate: js.UndefOr[js.Any],
-    Format: js.UndefOr[js.Any],
-    Encoding: js.UndefOr[js.Any],
-    Visible: js.UndefOr[js.Any],
-    OpenAndRepair: js.UndefOr[js.Any],
-    DocumentDirection: js.UndefOr[js.Any],
-    NoEncodingDialog: js.UndefOr[js.Any]
+    FileName: Any,
+    ConfirmConversions: js.UndefOr[Any],
+    ReadOnly: js.UndefOr[Any],
+    AddToRecentFiles: js.UndefOr[Any],
+    PasswordDocument: js.UndefOr[Any],
+    PasswordTemplate: js.UndefOr[Any],
+    Revert: js.UndefOr[Any],
+    WritePasswordDocument: js.UndefOr[Any],
+    WritePasswordTemplate: js.UndefOr[Any],
+    Format: js.UndefOr[Any],
+    Encoding: js.UndefOr[Any],
+    Visible: js.UndefOr[Any],
+    OpenAndRepair: js.UndefOr[Any],
+    DocumentDirection: js.UndefOr[Any],
+    NoEncodingDialog: js.UndefOr[Any]
   ): Document = js.native
+  
   def OpenNoRepairDialog(
-    FileName: js.Any,
-    ConfirmConversions: js.UndefOr[js.Any],
-    ReadOnly: js.UndefOr[js.Any],
-    AddToRecentFiles: js.UndefOr[js.Any],
-    PasswordDocument: js.UndefOr[js.Any],
-    PasswordTemplate: js.UndefOr[js.Any],
-    Revert: js.UndefOr[js.Any],
-    WritePasswordDocument: js.UndefOr[js.Any],
-    WritePasswordTemplate: js.UndefOr[js.Any],
-    Format: js.UndefOr[js.Any],
-    Encoding: js.UndefOr[js.Any],
-    Visible: js.UndefOr[js.Any],
-    OpenAndRepair: js.UndefOr[js.Any],
-    DocumentDirection: js.UndefOr[js.Any],
-    NoEncodingDialog: js.UndefOr[js.Any],
-    XMLTransform: js.UndefOr[js.Any]
+    FileName: Any,
+    ConfirmConversions: js.UndefOr[Any],
+    ReadOnly: js.UndefOr[Any],
+    AddToRecentFiles: js.UndefOr[Any],
+    PasswordDocument: js.UndefOr[Any],
+    PasswordTemplate: js.UndefOr[Any],
+    Revert: js.UndefOr[Any],
+    WritePasswordDocument: js.UndefOr[Any],
+    WritePasswordTemplate: js.UndefOr[Any],
+    Format: js.UndefOr[Any],
+    Encoding: js.UndefOr[Any],
+    Visible: js.UndefOr[Any],
+    OpenAndRepair: js.UndefOr[Any],
+    DocumentDirection: js.UndefOr[Any],
+    NoEncodingDialog: js.UndefOr[Any],
+    XMLTransform: js.UndefOr[Any]
   ): Document = js.native
+  
   def OpenOld(
-    FileName: js.Any,
-    ConfirmConversions: js.UndefOr[js.Any],
-    ReadOnly: js.UndefOr[js.Any],
-    AddToRecentFiles: js.UndefOr[js.Any],
-    PasswordDocument: js.UndefOr[js.Any],
-    PasswordTemplate: js.UndefOr[js.Any],
-    Revert: js.UndefOr[js.Any],
-    WritePasswordDocument: js.UndefOr[js.Any],
-    WritePasswordTemplate: js.UndefOr[js.Any],
-    Format: js.UndefOr[js.Any]
+    FileName: Any,
+    ConfirmConversions: js.UndefOr[Any],
+    ReadOnly: js.UndefOr[Any],
+    AddToRecentFiles: js.UndefOr[Any],
+    PasswordDocument: js.UndefOr[Any],
+    PasswordTemplate: js.UndefOr[Any],
+    Revert: js.UndefOr[Any],
+    WritePasswordDocument: js.UndefOr[Any],
+    WritePasswordTemplate: js.UndefOr[Any],
+    Format: js.UndefOr[Any]
   ): Document = js.native
+  
+  val Parent: Any = js.native
+  
   def Save(): Unit = js.native
-  def Save(NoPrompt: js.Any): Unit = js.native
-  def Save(NoPrompt: js.Any, OriginalFormat: js.Any): Unit = js.native
+  def Save(NoPrompt: Any): Unit = js.native
+  def Save(NoPrompt: Any, OriginalFormat: Any): Unit = js.native
+  def Save(NoPrompt: Unit, OriginalFormat: Any): Unit = js.native
+  
+  /* private */ @JSName("Word.Documents_typekey")
+  var WordDotDocuments_typekey: Documents = js.native
 }
-

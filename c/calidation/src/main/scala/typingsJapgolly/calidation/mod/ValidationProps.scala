@@ -1,31 +1,39 @@
 package typingsJapgolly.calidation.mod
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.React.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ValidationProps extends js.Object {
-  var config: FieldsConfig
-  var initialValues: js.UndefOr[Dictionary[_]] = js.undefined
-  var transforms: js.UndefOr[Transforms] = js.undefined
-  def children(context: ValidationContext): Node
+trait ValidationProps[T /* <: js.Object */] extends StObject {
+  
+  def children(context: ValidationContext[T]): Node
+  
+  var config: FieldsConfig[T]
+  
+  var initialValues: js.UndefOr[T] = js.undefined
+  
+  var transforms: js.UndefOr[Transforms[T]] = js.undefined
 }
-
 object ValidationProps {
-  @scala.inline
-  def apply(
-    children: ValidationContext => CallbackTo[Node],
-    config: FieldsConfig,
-    initialValues: Dictionary[_] = null,
-    transforms: Transforms = null
-  ): ValidationProps = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
-    __obj.updateDynamic("children")(js.Any.fromFunction1((t0: typingsJapgolly.calidation.mod.ValidationContext) => children(t0).runNow()))
-    if (initialValues != null) __obj.updateDynamic("initialValues")(initialValues.asInstanceOf[js.Any])
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ValidationProps]
+  
+  inline def apply[T /* <: js.Object */](children: ValidationContext[T] => Node, config: FieldsConfig[T]): ValidationProps[T] = {
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), config = config.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValidationProps[T]]
+  }
+  
+  extension [Self <: ValidationProps[?], T /* <: js.Object */](x: Self & ValidationProps[T]) {
+    
+    inline def setChildren(value: ValidationContext[T] => Node): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    
+    inline def setConfig(value: FieldsConfig[T]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    
+    inline def setInitialValues(value: T): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
+    
+    inline def setInitialValuesUndefined: Self = StObject.set(x, "initialValues", js.undefined)
+    
+    inline def setTransforms(value: Transforms[T]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+    
+    inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
   }
 }
-

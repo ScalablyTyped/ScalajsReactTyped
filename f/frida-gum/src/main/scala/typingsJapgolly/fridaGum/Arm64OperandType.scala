@@ -1,8 +1,8 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.reg
@@ -17,32 +17,28 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.fridaGumStrings.prefetch
   - typingsJapgolly.fridaGum.fridaGumStrings.barrier
 */
-trait Arm64OperandType extends js.Object
-
+trait Arm64OperandType extends StObject
 object Arm64OperandType {
-  @scala.inline
-  def barrier: typingsJapgolly.fridaGum.fridaGumStrings.barrier = this.cast("barrier")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def cimm: typingsJapgolly.fridaGum.fridaGumStrings.cimm = this.cast("cimm")
-  @scala.inline
-  def fp: typingsJapgolly.fridaGum.fridaGumStrings.fp = this.cast("fp")
-  @scala.inline
-  def imm: typingsJapgolly.fridaGum.fridaGumStrings.imm = this.cast("imm")
-  @scala.inline
-  def mem: typingsJapgolly.fridaGum.fridaGumStrings.mem = this.cast("mem")
-  @scala.inline
-  def prefetch: typingsJapgolly.fridaGum.fridaGumStrings.prefetch = this.cast("prefetch")
-  @scala.inline
-  def pstate: typingsJapgolly.fridaGum.fridaGumStrings.pstate = this.cast("pstate")
-  @scala.inline
-  def reg: typingsJapgolly.fridaGum.fridaGumStrings.reg = this.cast("reg")
-  @scala.inline
-  def `reg-mrs`: typingsJapgolly.fridaGum.fridaGumStrings.`reg-mrs` = this.cast("reg-mrs")
-  @scala.inline
-  def `reg-msr`: typingsJapgolly.fridaGum.fridaGumStrings.`reg-msr` = this.cast("reg-msr")
-  @scala.inline
-  def sys: typingsJapgolly.fridaGum.fridaGumStrings.sys = this.cast("sys")
+  
+  inline def barrier: typingsJapgolly.fridaGum.fridaGumStrings.barrier = "barrier".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.barrier]
+  
+  inline def cimm: typingsJapgolly.fridaGum.fridaGumStrings.cimm = "cimm".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.cimm]
+  
+  inline def fp: typingsJapgolly.fridaGum.fridaGumStrings.fp = "fp".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.fp]
+  
+  inline def imm: typingsJapgolly.fridaGum.fridaGumStrings.imm = "imm".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.imm]
+  
+  inline def mem: typingsJapgolly.fridaGum.fridaGumStrings.mem = "mem".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.mem]
+  
+  inline def prefetch: typingsJapgolly.fridaGum.fridaGumStrings.prefetch = "prefetch".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.prefetch]
+  
+  inline def pstate: typingsJapgolly.fridaGum.fridaGumStrings.pstate = "pstate".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.pstate]
+  
+  inline def reg: typingsJapgolly.fridaGum.fridaGumStrings.reg = "reg".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.reg]
+  
+  inline def `reg-mrs`: typingsJapgolly.fridaGum.fridaGumStrings.`reg-mrs` = "reg-mrs".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.`reg-mrs`]
+  
+  inline def `reg-msr`: typingsJapgolly.fridaGum.fridaGumStrings.`reg-msr` = "reg-msr".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.`reg-msr`]
+  
+  inline def sys: typingsJapgolly.fridaGum.fridaGumStrings.sys = "sys".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.sys]
 }
-

@@ -2,24 +2,31 @@ package typingsJapgolly.knockback.Knockback
 
 import typingsJapgolly.backbone.mod.Collection
 import typingsJapgolly.backbone.mod.Model
-import typingsJapgolly.knockout.KnockoutObservableArray
+import typingsJapgolly.backbone.mod.ModelSetOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CollectionObservable
-  extends KnockoutObservableArray[js.Any] {
-  def collection(): Collection[Model] = js.native
-  def collection(colleciton: Collection[Model]): js.Any = js.native
-  def comparator(comparatorFunction: js.Any): js.Any = js.native
-  def destroy(): js.Any = js.native
-  def filters(id: js.Any): Model = js.native
-  def filters(ids: js.Array[_]): CollectionObservable = js.native
-  def filters(iterator: js.Function1[/* element */ Model, Boolean]): CollectionObservable = js.native
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<any> * / any */ @js.native
+trait CollectionObservable extends StObject {
+  
+  def collection(): Collection[Model[Any, ModelSetOptions, Any]] = js.native
+  def collection(colleciton: Collection[Model[Any, ModelSetOptions, Any]]): Any = js.native
+  
+  def comparator(comparatorFunction: Any): Any = js.native
+  
+  def destroy(): Any = js.native
+  
+  def filters(id: Any): Model[Any, ModelSetOptions, Any] = js.native
+  def filters(ids: js.Array[Any]): CollectionObservable = js.native
+  def filters(iterator: js.Function1[/* element */ Model[Any, ModelSetOptions, Any], Boolean]): CollectionObservable = js.native
+  
   def hasViewModels(): Boolean = js.native
+  
   def shareOptions(): CollectionOptions = js.native
-  def sortAttribute(attr: String): js.Any = js.native
-  def viewModelByModel(model: Model): ViewModel = js.native
+  
+  def sortAttribute(attr: String): Any = js.native
+  
+  def viewModelByModel(model: Model[Any, ModelSetOptions, Any]): ViewModel = js.native
 }
-

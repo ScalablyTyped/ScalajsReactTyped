@@ -3,13 +3,16 @@ package typingsJapgolly.openlayers.mod
 import typingsJapgolly.openlayers.mod.olx.tilegrid.TileGridOptions
 import typingsJapgolly.openlayers.mod.olx.tilegrid.WMTSOptions
 import typingsJapgolly.openlayers.mod.olx.tilegrid.XYZOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openlayers", "tilegrid")
-@js.native
-object tilegrid extends js.Object {
+object tilegrid {
+  
+  @JSImport("openlayers", "tilegrid")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @classdesc
     * Base class for setting the grid pattern for sources accessing tiled-image
@@ -19,8 +22,9 @@ object tilegrid extends js.Object {
     * @struct
     * @api stable
     */
+  @JSImport("openlayers", "tilegrid.TileGrid")
   @js.native
-  class TileGrid protected () extends js.Object {
+  open class TileGrid protected () extends StObject {
     /**
       * @classdesc
       * Base class for setting the grid pattern for sources accessing tiled-image
@@ -31,6 +35,7 @@ object tilegrid extends js.Object {
       * @api stable
       */
     def this(options: TileGridOptions) = this()
+    
     /**
       * Call a function with each tile coordinate for a given extent and zoom level.
       *
@@ -39,19 +44,22 @@ object tilegrid extends js.Object {
       * @param callback Function called with each tile coordinate.
       * @api
       */
-    def forEachTileCoord(extent: Extent_, zoom: Double, callback: js.Function1[/* coords */ TileCoord, _]): Unit = js.native
+    def forEachTileCoord(extent: Extent_, zoom: Double, callback: js.Function1[/* coords */ TileCoord, Any]): Unit = js.native
+    
     /**
       * Get the maximum zoom level for the grid.
       * @return Max zoom.
       * @api
       */
     def getMaxZoom(): Double = js.native
+    
     /**
       * Get the minimum zoom level for the grid.
       * @return Min zoom.
       * @api
       */
     def getMinZoom(): Double = js.native
+    
     /**
       * Get the origin for the grid at the given zoom level.
       * @param z Z.
@@ -59,6 +67,7 @@ object tilegrid extends js.Object {
       * @api stable
       */
     def getOrigin(z: Double): Coordinate_ = js.native
+    
     /**
       * Get the resolution for the given zoom level.
       * @param z Z.
@@ -66,12 +75,14 @@ object tilegrid extends js.Object {
       * @api stable
       */
     def getResolution(z: Double): Double = js.native
+    
     /**
       * Get the list of resolutions for the tile grid.
       * @return Resolutions.
       * @api stable
       */
     def getResolutions(): js.Array[Double] = js.native
+    
     /**
       * Get the extent of a tile coordinate.
       *
@@ -82,6 +93,7 @@ object tilegrid extends js.Object {
       */
     def getTileCoordExtent(tileCoord: TileCoord): Extent_ = js.native
     def getTileCoordExtent(tileCoord: TileCoord, opt_extent: Extent_): Extent_ = js.native
+    
     /**
       * Get the tile coordinate for the given map coordinate and resolution.  This
       * method considers that coordinates that intersect tile boundaries should be
@@ -95,6 +107,7 @@ object tilegrid extends js.Object {
       */
     def getTileCoordForCoordAndResolution(coordinate: Coordinate_, resolution: Double): TileCoord = js.native
     def getTileCoordForCoordAndResolution(coordinate: Coordinate_, resolution: Double, opt_tileCoord: TileCoord): TileCoord = js.native
+    
     /**
       * Get a tile coordinate given a map coordinate and zoom level.
       * @param coordinate Coordinate.
@@ -105,6 +118,7 @@ object tilegrid extends js.Object {
       */
     def getTileCoordForCoordAndZ(coordinate: Coordinate_, z: Double): TileCoord = js.native
     def getTileCoordForCoordAndZ(coordinate: Coordinate_, z: Double, opt_tileCoord: TileCoord): TileCoord = js.native
+    
     /**
       * Get the tile size for a zoom level. The type of the return value matches the
       * `tileSize` or `tileSizes` that the tile grid was configured with. To always
@@ -114,6 +128,7 @@ object tilegrid extends js.Object {
       * @api stable
       */
     def getTileSize(z: Double): Double | Size = js.native
+    
     /**
       * @param resolution Resolution.
       * @param opt_direction If 0, the nearest resolution will be used.
@@ -134,8 +149,9 @@ object tilegrid extends js.Object {
     * @struct
     * @api
     */
+  @JSImport("openlayers", "tilegrid.WMTS")
   @js.native
-  class WMTS protected () extends TileGrid {
+  open class WMTS protected () extends TileGrid {
     /**
       * @classdesc
       * Set the grid pattern for sources accessing WMTS tiled-image servers.
@@ -145,6 +161,7 @@ object tilegrid extends js.Object {
       * @api
       */
     def this(options: WMTSOptions) = this()
+    
     /**
       * Get the list of matrix identifiers.
       * @return MatrixIds.
@@ -152,18 +169,12 @@ object tilegrid extends js.Object {
       */
     def getMatrixIds(): js.Array[String] = js.native
   }
-  
-  /**
-    * Creates a tile grid with a standard XYZ tiling scheme.
-    * @param opt_options Tile grid options.
-    * @return Tile grid instance.
-    * @api
-    */
-  def createXYZ(): TileGrid = js.native
-  def createXYZ(opt_options: XYZOptions): TileGrid = js.native
-  /* static members */
-  @js.native
-  object WMTS extends js.Object {
+  object WMTS {
+    
+    @JSImport("openlayers", "tilegrid.WMTS")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a tile grid from a WMTS capabilities matrix set.
       * @param matrixSet An object representing a matrixSet in the
@@ -173,9 +184,17 @@ object tilegrid extends js.Object {
       * @return WMTS tileGrid instance.
       * @api
       */
-    def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject): WMTS = js.native
-    def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject, opt_extent: Extent_): WMTS = js.native
+    /* static member */
+    inline def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject): WMTS = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCapabilitiesMatrixSet")(matrixSet.asInstanceOf[js.Any]).asInstanceOf[WMTS]
+    inline def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject, opt_extent: Extent_): WMTS = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromCapabilitiesMatrixSet")(matrixSet.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[WMTS]
   }
   
+  /**
+    * Creates a tile grid with a standard XYZ tiling scheme.
+    * @param opt_options Tile grid options.
+    * @return Tile grid instance.
+    * @api
+    */
+  inline def createXYZ(): TileGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createXYZ")().asInstanceOf[TileGrid]
+  inline def createXYZ(opt_options: XYZOptions): TileGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createXYZ")(opt_options.asInstanceOf[js.Any]).asInstanceOf[TileGrid]
 }
-

@@ -1,0 +1,15 @@
+package typingsJapgolly.cypress.typesLodashFpMod
+
+import typingsJapgolly.cypress.typesLodashMod.__
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait LodashFindLastFrom1x1[T, S] extends StObject {
+  
+  def apply(fromIndex: Double): js.UndefOr[S] = js.native
+  def apply(fromIndex: Double, collection: typingsJapgolly.cypress.typesLodashMod.List[T]): js.UndefOr[S] = js.native
+  def apply(fromIndex: __): LodashFindLastFrom1x5[S] = js.native
+  def apply(fromIndex: __, collection: typingsJapgolly.cypress.typesLodashMod.List[T]): LodashFindLastFrom1x5[S] = js.native
+}

@@ -1,17 +1,26 @@
 package typingsJapgolly.sshpk.mod
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sshpk", "KeyEncryptedError")
 @js.native
-class KeyEncryptedError protected () extends Error {
+open class KeyEncryptedError protected ()
+  extends StObject
+     with Error {
   def this(name: String, format: String) = this()
+  
+  var format: String = js.native
+  
+  var keyName: String = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var message: String = js.native
+  var message: String = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var name: String = js.native
+  var name: String = js.native
 }
-

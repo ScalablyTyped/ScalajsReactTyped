@@ -1,8 +1,8 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 文件系统对象，用于管理特定本地文件目录
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */
-trait PlusIoFileSystem extends js.Object {
+trait PlusIoFileSystem extends StObject {
+  
   /**
     * 文件系统的名称
     * 值为文件系统类型常量值字符串，如“PRIVATE_WWW”、“PRIVATE_DOCUMENTS”。
@@ -18,6 +19,7 @@ trait PlusIoFileSystem extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * 文件系统的根目录
     * 
@@ -25,14 +27,21 @@ trait PlusIoFileSystem extends js.Object {
     */
   var root: js.UndefOr[PlusIoDirectoryEntry] = js.undefined
 }
-
 object PlusIoFileSystem {
-  @scala.inline
-  def apply(name: String = null, root: PlusIoDirectoryEntry = null): PlusIoFileSystem = {
+  
+  inline def apply(): PlusIoFileSystem = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusIoFileSystem]
   }
+  
+  extension [Self <: PlusIoFileSystem](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRoot(value: PlusIoDirectoryEntry): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+  }
 }
-

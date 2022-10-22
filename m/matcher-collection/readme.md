@@ -1,7 +1,7 @@
 
 # Scala.js typings for matcher-collection
 
-Typings are for version 1.1.2
+Typings are for version 2.0.1
 
 ## Library description:
 Minimatch but for collections of minimatcher matchers.
@@ -10,10 +10,10 @@ Minimatch but for collections of minimatcher matchers.
 | ------------------ | :-------------: |
 | Full name          | matcher-collection |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 8 |
-| # downloads        | 12234077 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3840605.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/stefanpenner/matcher-collection#readme)

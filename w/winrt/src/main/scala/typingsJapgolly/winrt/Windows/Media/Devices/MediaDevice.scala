@@ -1,23 +1,7 @@
 package typingsJapgolly.winrt.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Devices.MediaDevice")
-@js.native
-class MediaDevice () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.Media.Devices.MediaDevice")
-@js.native
-object MediaDevice extends js.Object {
-  var ondefaultaudiocapturedevicechanged: js.Any = js.native
-  var ondefaultaudiorenderdevicechanged: js.Any = js.native
-  def getAudioCaptureSelector(): String = js.native
-  def getAudioRenderSelector(): String = js.native
-  def getDefaultAudioCaptureId(role: AudioDeviceRole): String = js.native
-  def getDefaultAudioRenderId(role: AudioDeviceRole): String = js.native
-  def getVideoCaptureSelector(): String = js.native
-}
-
+trait MediaDevice extends StObject

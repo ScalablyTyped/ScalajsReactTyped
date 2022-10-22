@@ -3,13 +3,13 @@ package typingsJapgolly.protobufjs.minimalMod
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.protobufjs.mod.IOneOf
 import typingsJapgolly.protobufjs.mod.OneOfDecorator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs/minimal", "OneOf")
 @js.native
-class OneOf protected ()
+open class OneOf protected ()
   extends typingsJapgolly.protobufjs.mod.OneOf {
   /**
     * Constructs a new oneof instance.
@@ -20,28 +20,31 @@ class OneOf protected ()
     */
   def this(name: String) = this()
   def this(name: String, fieldNames: js.Array[String]) = this()
-  def this(name: String, fieldNames: StringDictionary[js.Any]) = this()
-  def this(name: String, fieldNames: js.Array[String], options: StringDictionary[js.Any]) = this()
-  def this(name: String, fieldNames: StringDictionary[js.Any], options: StringDictionary[js.Any]) = this()
-  def this(name: String, fieldNames: js.Array[String], options: StringDictionary[js.Any], comment: String) = this()
-  def this(
-    name: String,
-    fieldNames: StringDictionary[js.Any],
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
+  def this(name: String, fieldNames: StringDictionary[Any]) = this()
+  def this(name: String, fieldNames: js.Array[String], options: StringDictionary[Any]) = this()
+  def this(name: String, fieldNames: StringDictionary[Any], options: StringDictionary[Any]) = this()
+  def this(name: String, fieldNames: Unit, options: StringDictionary[Any]) = this()
+  def this(name: String, fieldNames: js.Array[String], options: StringDictionary[Any], comment: String) = this()
+  def this(name: String, fieldNames: js.Array[String], options: Unit, comment: String) = this()
+  def this(name: String, fieldNames: StringDictionary[Any], options: StringDictionary[Any], comment: String) = this()
+  def this(name: String, fieldNames: StringDictionary[Any], options: Unit, comment: String) = this()
+  def this(name: String, fieldNames: Unit, options: StringDictionary[Any], comment: String) = this()
+  def this(name: String, fieldNames: Unit, options: Unit, comment: String) = this()
 }
-
 /* static members */
-@JSImport("protobufjs/minimal", "OneOf")
-@js.native
-object OneOf extends js.Object {
+object OneOf {
+  
+  @JSImport("protobufjs/minimal", "OneOf")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * OneOf decorator (TypeScript).
     * @param fieldNames Field names
     * @returns Decorator function
     */
-  def d[T /* <: String */](fieldNames: String*): OneOfDecorator = js.native
+  inline def d[T /* <: String */](fieldNames: String*): OneOfDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldNames.asInstanceOf[Seq[js.Any]]*).asInstanceOf[OneOfDecorator]
+  
   /**
     * Constructs a oneof from a oneof descriptor.
     * @param name Oneof name
@@ -49,6 +52,5 @@ object OneOf extends js.Object {
     * @returns Created oneof
     * @throws {TypeError} If arguments are invalid
     */
-  def fromJSON(name: String, json: IOneOf): typingsJapgolly.protobufjs.mod.OneOf = js.native
+  inline def fromJSON(name: String, json: IOneOf): typingsJapgolly.protobufjs.mod.OneOf = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.protobufjs.mod.OneOf]
 }
-

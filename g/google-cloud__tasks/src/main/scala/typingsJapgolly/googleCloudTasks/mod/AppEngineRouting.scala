@@ -1,22 +1,34 @@
 package typingsJapgolly.googleCloudTasks.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AppEngineRouting extends js.Object {
+trait AppEngineRouting extends StObject {
+  
   var host: String
+  
   var instance: String
+  
   var service: String
+  
   var version: String
 }
-
 object AppEngineRouting {
-  @scala.inline
-  def apply(host: String, instance: String, service: String, version: String): AppEngineRouting = {
-    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
+  inline def apply(host: String, instance: String, service: String, version: String): AppEngineRouting = {
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppEngineRouting]
   }
+  
+  extension [Self <: AppEngineRouting](x: Self) {
+    
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+  }
 }
-

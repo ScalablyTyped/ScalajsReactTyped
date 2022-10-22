@@ -1,27 +1,51 @@
 package typingsJapgolly.winrtUwp.Windows.Media
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVector
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typingsJapgolly.winrtUwp.Windows.Storage.IStorageFile
 import typingsJapgolly.winrtUwp.Windows.Storage.IStorageFolder
 import typingsJapgolly.winrtUwp.Windows.Storage.NameCollisionOption
 import typingsJapgolly.winrtUwp.Windows.Storage.StorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes for creating and saving media playlists for playback. */
-@JSGlobal("Windows.Media.Playlists")
-@js.native
-object Playlists extends js.Object {
+object Playlists {
+  
+  @js.native
+  sealed trait PlaylistFormat extends StObject
+  /** Indicates the format of a playlist file. */
+  @JSGlobal("Windows.Media.Playlists.PlaylistFormat")
+  @js.native
+  object PlaylistFormat extends StObject {
+    
+    /** M3U playlist. */
+    @js.native
+    sealed trait m3u
+      extends StObject
+         with PlaylistFormat
+    
+    /** Windows Media playlist. */
+    @js.native
+    sealed trait windowsMedia
+      extends StObject
+         with PlaylistFormat
+    
+    /** Zune playlist. */
+    @js.native
+    sealed trait zune
+      extends StObject
+         with PlaylistFormat
+  }
+  
   /** Provides access to a media playlist. */
   @js.native
-  /** Creates a new instance of a Playlist object. */
-  class Playlist () extends js.Object {
+  trait Playlist extends StObject {
+    
     /** The set of media files that make up the playlist. */
     var files: IVector[StorageFile] = js.native
+    
     /**
       * Asynchronously saves the playlist to a specified file and folder.
       * @param saveLocation The folder in which to save the playlist.
@@ -44,54 +68,11 @@ object Playlists extends js.Object {
       option: NameCollisionOption,
       playlistFormat: PlaylistFormat
     ): IPromiseWithIAsyncOperation[StorageFile] = js.native
+    
     /**
       * Asynchronously saves the playlist.
       * @return Represents the asynchronous action to save the playlist.
       */
     def saveAsync(): IPromiseWithIAsyncAction = js.native
   }
-  
-  @js.native
-  sealed trait PlaylistFormat extends js.Object
-  
-  /* static members */
-  @js.native
-  object Playlist extends js.Object {
-    /**
-      * Asynchronously loads files into a playlist.
-      * @param file Represents the files to load.
-      * @return Represents the asynchronous operation for loading the playlist. The GetResults method of this IAsyncOperation object returns the playlist.
-      */
-    def loadAsync(file: IStorageFile): IPromiseWithIAsyncOperation[Playlist] = js.native
-  }
-  
-  /** Indicates the format of a playlist file. */
-  @js.native
-  object PlaylistFormat extends js.Object {
-    /** M3U playlist. */
-    @js.native
-    sealed trait m3u extends PlaylistFormat
-    
-    /** Windows Media playlist. */
-    @js.native
-    sealed trait windowsMedia extends PlaylistFormat
-    
-    /** Zune playlist. */
-    @js.native
-    sealed trait zune extends PlaylistFormat
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PlaylistFormat with Double] = js.native
-    /* 2 */ @js.native
-    object m3u extends TopLevel[m3u with Double]
-    
-    /* 0 */ @js.native
-    object windowsMedia extends TopLevel[windowsMedia with Double]
-    
-    /* 1 */ @js.native
-    object zune extends TopLevel[zune with Double]
-    
-  }
-  
 }
-

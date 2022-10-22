@@ -1,27 +1,27 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChannelMergerOptions extends AudioNodeOptions {
+trait ChannelMergerOptions
+  extends StObject
+     with AudioNodeOptions {
+  
+  /* standard dom */
   var numberOfInputs: js.UndefOr[Double] = js.undefined
 }
-
 object ChannelMergerOptions {
-  @scala.inline
-  def apply(
-    channelCount: Int | Double = null,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    numberOfInputs: Int | Double = null
-  ): ChannelMergerOptions = {
+  
+  inline def apply(): ChannelMergerOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (numberOfInputs != null) __obj.updateDynamic("numberOfInputs")(numberOfInputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelMergerOptions]
   }
+  
+  extension [Self <: ChannelMergerOptions](x: Self) {
+    
+    inline def setNumberOfInputs(value: Double): Self = StObject.set(x, "numberOfInputs", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfInputsUndefined: Self = StObject.set(x, "numberOfInputs", js.undefined)
+  }
 }
-

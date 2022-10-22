@@ -1,39 +1,71 @@
 package typingsJapgolly.vuex.mod
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StoreOptions[S] extends js.Object {
+trait StoreOptions[S] extends StObject {
+  
   var actions: js.UndefOr[ActionTree[S, S]] = js.undefined
+  
+  var devtools: js.UndefOr[Boolean] = js.undefined
+  
   var getters: js.UndefOr[GetterTree[S, S]] = js.undefined
+  
   var modules: js.UndefOr[ModuleTree[S]] = js.undefined
+  
   var mutations: js.UndefOr[MutationTree[S]] = js.undefined
+  
   var plugins: js.UndefOr[js.Array[Plugin[S]]] = js.undefined
+  
   var state: js.UndefOr[S | js.Function0[S]] = js.undefined
+  
   var strict: js.UndefOr[Boolean] = js.undefined
 }
-
 object StoreOptions {
-  @scala.inline
-  def apply[S](
-    actions: ActionTree[S, S] = null,
-    getters: GetterTree[S, S] = null,
-    modules: ModuleTree[S] = null,
-    mutations: MutationTree[S] = null,
-    plugins: js.Array[Plugin[S]] = null,
-    state: S | js.Function0[S] = null,
-    strict: js.UndefOr[Boolean] = js.undefined
-  ): StoreOptions[S] = {
+  
+  inline def apply[S](): StoreOptions[S] = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (getters != null) __obj.updateDynamic("getters")(getters.asInstanceOf[js.Any])
-    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
-    if (mutations != null) __obj.updateDynamic("mutations")(mutations.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreOptions[S]]
   }
+  
+  extension [Self <: StoreOptions[?], S](x: Self & StoreOptions[S]) {
+    
+    inline def setActions(value: ActionTree[S, S]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    
+    inline def setDevtools(value: Boolean): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
+    
+    inline def setDevtoolsUndefined: Self = StObject.set(x, "devtools", js.undefined)
+    
+    inline def setGetters(value: GetterTree[S, S]): Self = StObject.set(x, "getters", value.asInstanceOf[js.Any])
+    
+    inline def setGettersUndefined: Self = StObject.set(x, "getters", js.undefined)
+    
+    inline def setModules(value: ModuleTree[S]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    
+    inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+    
+    inline def setMutations(value: MutationTree[S]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
+    
+    inline def setMutationsUndefined: Self = StObject.set(x, "mutations", js.undefined)
+    
+    inline def setPlugins(value: js.Array[Plugin[S]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    
+    inline def setPluginsVarargs(value: Plugin[S]*): Self = StObject.set(x, "plugins", js.Array(value*))
+    
+    inline def setState(value: S | js.Function0[S]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateCallbackTo(value: CallbackTo[S]): Self = StObject.set(x, "state", value.toJsFn)
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+  }
 }
-

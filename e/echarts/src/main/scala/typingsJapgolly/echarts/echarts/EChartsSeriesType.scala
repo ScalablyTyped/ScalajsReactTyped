@@ -1,8 +1,8 @@
 package typingsJapgolly.echarts.echarts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.echarts.echartsStrings.line
@@ -28,54 +28,50 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.echarts.echartsStrings.themeRiver
   - typingsJapgolly.echarts.echartsStrings.custom
 */
-trait EChartsSeriesType extends js.Object
-
+trait EChartsSeriesType extends StObject
 object EChartsSeriesType {
-  @scala.inline
-  def bar: typingsJapgolly.echarts.echartsStrings.bar = this.cast("bar")
-  @scala.inline
-  def boxplot: typingsJapgolly.echarts.echartsStrings.boxplot = this.cast("boxplot")
-  @scala.inline
-  def candlestick: typingsJapgolly.echarts.echartsStrings.candlestick = this.cast("candlestick")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def custom: typingsJapgolly.echarts.echartsStrings.custom = this.cast("custom")
-  @scala.inline
-  def effectScatter: typingsJapgolly.echarts.echartsStrings.effectScatter = this.cast("effectScatter")
-  @scala.inline
-  def funnel: typingsJapgolly.echarts.echartsStrings.funnel = this.cast("funnel")
-  @scala.inline
-  def gauge: typingsJapgolly.echarts.echartsStrings.gauge = this.cast("gauge")
-  @scala.inline
-  def graph: typingsJapgolly.echarts.echartsStrings.graph = this.cast("graph")
-  @scala.inline
-  def heatmap: typingsJapgolly.echarts.echartsStrings.heatmap = this.cast("heatmap")
-  @scala.inline
-  def line: typingsJapgolly.echarts.echartsStrings.line = this.cast("line")
-  @scala.inline
-  def lines: typingsJapgolly.echarts.echartsStrings.lines = this.cast("lines")
-  @scala.inline
-  def map: typingsJapgolly.echarts.echartsStrings.map = this.cast("map")
-  @scala.inline
-  def parallel: typingsJapgolly.echarts.echartsStrings.parallel = this.cast("parallel")
-  @scala.inline
-  def pictorialBar: typingsJapgolly.echarts.echartsStrings.pictorialBar = this.cast("pictorialBar")
-  @scala.inline
-  def pie: typingsJapgolly.echarts.echartsStrings.pie = this.cast("pie")
-  @scala.inline
-  def radar: typingsJapgolly.echarts.echartsStrings.radar = this.cast("radar")
-  @scala.inline
-  def sankey: typingsJapgolly.echarts.echartsStrings.sankey = this.cast("sankey")
-  @scala.inline
-  def scatter: typingsJapgolly.echarts.echartsStrings.scatter = this.cast("scatter")
-  @scala.inline
-  def sunburst: typingsJapgolly.echarts.echartsStrings.sunburst = this.cast("sunburst")
-  @scala.inline
-  def themeRiver: typingsJapgolly.echarts.echartsStrings.themeRiver = this.cast("themeRiver")
-  @scala.inline
-  def tree: typingsJapgolly.echarts.echartsStrings.tree = this.cast("tree")
-  @scala.inline
-  def treemap: typingsJapgolly.echarts.echartsStrings.treemap = this.cast("treemap")
+  
+  inline def bar: typingsJapgolly.echarts.echartsStrings.bar = "bar".asInstanceOf[typingsJapgolly.echarts.echartsStrings.bar]
+  
+  inline def boxplot: typingsJapgolly.echarts.echartsStrings.boxplot = "boxplot".asInstanceOf[typingsJapgolly.echarts.echartsStrings.boxplot]
+  
+  inline def candlestick: typingsJapgolly.echarts.echartsStrings.candlestick = "candlestick".asInstanceOf[typingsJapgolly.echarts.echartsStrings.candlestick]
+  
+  inline def custom: typingsJapgolly.echarts.echartsStrings.custom = "custom".asInstanceOf[typingsJapgolly.echarts.echartsStrings.custom]
+  
+  inline def effectScatter: typingsJapgolly.echarts.echartsStrings.effectScatter = "effectScatter".asInstanceOf[typingsJapgolly.echarts.echartsStrings.effectScatter]
+  
+  inline def funnel: typingsJapgolly.echarts.echartsStrings.funnel = "funnel".asInstanceOf[typingsJapgolly.echarts.echartsStrings.funnel]
+  
+  inline def gauge: typingsJapgolly.echarts.echartsStrings.gauge = "gauge".asInstanceOf[typingsJapgolly.echarts.echartsStrings.gauge]
+  
+  inline def graph: typingsJapgolly.echarts.echartsStrings.graph = "graph".asInstanceOf[typingsJapgolly.echarts.echartsStrings.graph]
+  
+  inline def heatmap: typingsJapgolly.echarts.echartsStrings.heatmap = "heatmap".asInstanceOf[typingsJapgolly.echarts.echartsStrings.heatmap]
+  
+  inline def line: typingsJapgolly.echarts.echartsStrings.line = "line".asInstanceOf[typingsJapgolly.echarts.echartsStrings.line]
+  
+  inline def lines: typingsJapgolly.echarts.echartsStrings.lines = "lines".asInstanceOf[typingsJapgolly.echarts.echartsStrings.lines]
+  
+  inline def map: typingsJapgolly.echarts.echartsStrings.map = "map".asInstanceOf[typingsJapgolly.echarts.echartsStrings.map]
+  
+  inline def parallel: typingsJapgolly.echarts.echartsStrings.parallel = "parallel".asInstanceOf[typingsJapgolly.echarts.echartsStrings.parallel]
+  
+  inline def pictorialBar: typingsJapgolly.echarts.echartsStrings.pictorialBar = "pictorialBar".asInstanceOf[typingsJapgolly.echarts.echartsStrings.pictorialBar]
+  
+  inline def pie: typingsJapgolly.echarts.echartsStrings.pie = "pie".asInstanceOf[typingsJapgolly.echarts.echartsStrings.pie]
+  
+  inline def radar: typingsJapgolly.echarts.echartsStrings.radar = "radar".asInstanceOf[typingsJapgolly.echarts.echartsStrings.radar]
+  
+  inline def sankey: typingsJapgolly.echarts.echartsStrings.sankey = "sankey".asInstanceOf[typingsJapgolly.echarts.echartsStrings.sankey]
+  
+  inline def scatter: typingsJapgolly.echarts.echartsStrings.scatter = "scatter".asInstanceOf[typingsJapgolly.echarts.echartsStrings.scatter]
+  
+  inline def sunburst: typingsJapgolly.echarts.echartsStrings.sunburst = "sunburst".asInstanceOf[typingsJapgolly.echarts.echartsStrings.sunburst]
+  
+  inline def themeRiver: typingsJapgolly.echarts.echartsStrings.themeRiver = "themeRiver".asInstanceOf[typingsJapgolly.echarts.echartsStrings.themeRiver]
+  
+  inline def tree: typingsJapgolly.echarts.echartsStrings.tree = "tree".asInstanceOf[typingsJapgolly.echarts.echartsStrings.tree]
+  
+  inline def treemap: typingsJapgolly.echarts.echartsStrings.treemap = "treemap".asInstanceOf[typingsJapgolly.echarts.echartsStrings.treemap]
 }
-

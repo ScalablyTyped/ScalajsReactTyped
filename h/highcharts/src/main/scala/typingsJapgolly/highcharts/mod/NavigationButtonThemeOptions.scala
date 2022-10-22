@@ -1,37 +1,37 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationButtonThemeOptions extends js.Object {
+trait NavigationButtonThemeOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The default fill exists only to
     * capture hover events.
     */
   var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
-  /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Padding for the button.
-    */
-  var padding: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Default stroke for the buttons.
     */
   var stroke: js.UndefOr[ColorString] = js.undefined
 }
-
 object NavigationButtonThemeOptions {
-  @scala.inline
-  def apply(
-    fill: ColorString | GradientColorObject | PatternObject = null,
-    padding: Int | Double = null,
-    stroke: ColorString = null
-  ): NavigationButtonThemeOptions = {
+  
+  inline def apply(): NavigationButtonThemeOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationButtonThemeOptions]
   }
+  
+  extension [Self <: NavigationButtonThemeOptions](x: Self) {
+    
+    inline def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setStroke(value: ColorString): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+  }
 }
-

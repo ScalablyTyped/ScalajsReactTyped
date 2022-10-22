@@ -1,99 +1,112 @@
 package typingsJapgolly.ink.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.ink.anon.readonlymarginnumberundef
+import typingsJapgolly.ink.buildDomMod.DOMElement
 import typingsJapgolly.ink.inkStrings.`column-reverse`
 import typingsJapgolly.ink.inkStrings.`flex-end`
 import typingsJapgolly.ink.inkStrings.`flex-start`
 import typingsJapgolly.ink.inkStrings.`row-reverse`
 import typingsJapgolly.ink.inkStrings.`space-around`
 import typingsJapgolly.ink.inkStrings.`space-between`
-import typingsJapgolly.ink.inkStrings.`truncate-end`
-import typingsJapgolly.ink.inkStrings.`truncate-middle`
-import typingsJapgolly.ink.inkStrings.`truncate-start`
+import typingsJapgolly.ink.inkStrings.absolute
+import typingsJapgolly.ink.inkStrings.arrow
+import typingsJapgolly.ink.inkStrings.auto
+import typingsJapgolly.ink.inkStrings.bold
 import typingsJapgolly.ink.inkStrings.center
+import typingsJapgolly.ink.inkStrings.classic
 import typingsJapgolly.ink.inkStrings.column
+import typingsJapgolly.ink.inkStrings.double
+import typingsJapgolly.ink.inkStrings.doubleSingle
+import typingsJapgolly.ink.inkStrings.flex
+import typingsJapgolly.ink.inkStrings.none
+import typingsJapgolly.ink.inkStrings.relative
+import typingsJapgolly.ink.inkStrings.round
 import typingsJapgolly.ink.inkStrings.row
-import typingsJapgolly.ink.inkStrings.truncate
-import typingsJapgolly.ink.inkStrings.wrap
-import typingsJapgolly.ink.mod.BoxProps
+import typingsJapgolly.ink.inkStrings.single
+import typingsJapgolly.ink.inkStrings.singleDouble
+import typingsJapgolly.ink.inkStrings.stretch
+import typingsJapgolly.typeFest.sourceLiteralUnionMod.LiteralUnion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Box {
-  def apply(
-    alignItems: `flex-start` | center | `flex-end` = null,
-    flexBasis: String | Double = null,
-    flexDirection: row | `row-reverse` | column | `column-reverse` = null,
-    flexGrow: Int | Double = null,
-    flexShrink: Int | Double = null,
-    height: Double | String = null,
-    justifyContent: `flex-start` | center | `flex-end` | `space-between` | `space-around` = null,
-    margin: Int | Double = null,
-    marginBottom: Int | Double = null,
-    marginLeft: Int | Double = null,
-    marginRight: Int | Double = null,
-    marginTop: Int | Double = null,
-    marginX: Int | Double = null,
-    marginY: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    padding: Int | Double = null,
-    paddingBottom: Int | Double = null,
-    paddingLeft: Int | Double = null,
-    paddingRight: Int | Double = null,
-    paddingTop: Int | Double = null,
-    paddingX: Int | Double = null,
-    paddingY: Int | Double = null,
-    textWrap: wrap | truncate | `truncate-start` | `truncate-middle` | `truncate-end` = null,
-    width: Double | String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[BoxProps, typingsJapgolly.ink.mod.Box, Unit, BoxProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
-    if (flexBasis != null) __obj.updateDynamic("flexBasis")(flexBasis.asInstanceOf[js.Any])
-    if (flexDirection != null) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
-    if (flexGrow != null) __obj.updateDynamic("flexGrow")(flexGrow.asInstanceOf[js.Any])
-    if (flexShrink != null) __obj.updateDynamic("flexShrink")(flexShrink.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
-    if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
-    if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
-    if (textWrap != null) __obj.updateDynamic("textWrap")(textWrap.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.ink.mod.BoxProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.ink.mod.Box](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.ink.mod.BoxProps])(children: _*)
-  }
   @JSImport("ink", "Box")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[DOMElement] {
+    
+    inline def alignItems(value: `flex-start` | center | `flex-end` | stretch): this.type = set("alignItems", value.asInstanceOf[js.Any])
+    
+    inline def alignSelf(value: `flex-start` | center | `flex-end` | auto): this.type = set("alignSelf", value.asInstanceOf[js.Any])
+    
+    inline def borderColor(
+      value: LiteralUnion[
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
+          String
+        ]
+    ): this.type = set("borderColor", value.asInstanceOf[js.Any])
+    
+    inline def borderStyle(value: single | double | round | bold | singleDouble | doubleSingle | classic | arrow): this.type = set("borderStyle", value.asInstanceOf[js.Any])
+    
+    inline def display(value: flex | none): this.type = set("display", value.asInstanceOf[js.Any])
+    
+    inline def flexBasis(value: Double | String): this.type = set("flexBasis", value.asInstanceOf[js.Any])
+    
+    inline def flexDirection(value: row | column | `row-reverse` | `column-reverse`): this.type = set("flexDirection", value.asInstanceOf[js.Any])
+    
+    inline def flexGrow(value: Double): this.type = set("flexGrow", value.asInstanceOf[js.Any])
+    
+    inline def flexShrink(value: Double): this.type = set("flexShrink", value.asInstanceOf[js.Any])
+    
+    inline def height(value: Double | String): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def justifyContent(value: `flex-start` | `flex-end` | `space-between` | `space-around` | center): this.type = set("justifyContent", value.asInstanceOf[js.Any])
+    
+    inline def margin(value: Double): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def marginBottom(value: Double): this.type = set("marginBottom", value.asInstanceOf[js.Any])
+    
+    inline def marginLeft(value: Double): this.type = set("marginLeft", value.asInstanceOf[js.Any])
+    
+    inline def marginRight(value: Double): this.type = set("marginRight", value.asInstanceOf[js.Any])
+    
+    inline def marginTop(value: Double): this.type = set("marginTop", value.asInstanceOf[js.Any])
+    
+    inline def marginX(value: Double): this.type = set("marginX", value.asInstanceOf[js.Any])
+    
+    inline def marginY(value: Double): this.type = set("marginY", value.asInstanceOf[js.Any])
+    
+    inline def minHeight(value: Double | String): this.type = set("minHeight", value.asInstanceOf[js.Any])
+    
+    inline def minWidth(value: Double | String): this.type = set("minWidth", value.asInstanceOf[js.Any])
+    
+    inline def padding(value: Double): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def paddingBottom(value: Double): this.type = set("paddingBottom", value.asInstanceOf[js.Any])
+    
+    inline def paddingLeft(value: Double): this.type = set("paddingLeft", value.asInstanceOf[js.Any])
+    
+    inline def paddingRight(value: Double): this.type = set("paddingRight", value.asInstanceOf[js.Any])
+    
+    inline def paddingTop(value: Double): this.type = set("paddingTop", value.asInstanceOf[js.Any])
+    
+    inline def paddingX(value: Double): this.type = set("paddingX", value.asInstanceOf[js.Any])
+    
+    inline def paddingY(value: Double): this.type = set("paddingY", value.asInstanceOf[js.Any])
+    
+    inline def position(value: absolute | relative): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Box.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: readonlymarginnumberundef): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

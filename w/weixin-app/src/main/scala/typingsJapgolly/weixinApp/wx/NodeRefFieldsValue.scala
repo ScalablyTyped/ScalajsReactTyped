@@ -1,37 +1,55 @@
 package typingsJapgolly.weixinApp.wx
 
-import typingsJapgolly.weixinApp.AnonBottom
-import typingsJapgolly.weixinApp.AnonDataset
-import typingsJapgolly.weixinApp.AnonHeight
-import typingsJapgolly.weixinApp.AnonId
-import typingsJapgolly.weixinApp.AnonPropertiesAny
-import typingsJapgolly.weixinApp.AnonScrollLeft
+import typingsJapgolly.weixinApp.anon.Bottom
+import typingsJapgolly.weixinApp.anon.Dataset
+import typingsJapgolly.weixinApp.anon.Height
+import typingsJapgolly.weixinApp.anon.Id
+import typingsJapgolly.weixinApp.anon.PropertiesAny
+import typingsJapgolly.weixinApp.anon.ScrollLeft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NodeRefFieldsValue extends js.Object {
-  var dataset: AnonDataset
-  var id: AnonId
-  var properties: AnonPropertiesAny
-  var rect: AnonBottom
-  var scrollOffset: AnonScrollLeft
-  var size: AnonHeight
+trait NodeRefFieldsValue extends StObject {
+  
+  var dataset: Dataset
+  
+  var id: Id
+  
+  var properties: PropertiesAny
+  
+  var rect: Bottom
+  
+  var scrollOffset: ScrollLeft
+  
+  var size: Height
 }
-
 object NodeRefFieldsValue {
-  @scala.inline
-  def apply(
-    dataset: AnonDataset,
-    id: AnonId,
-    properties: AnonPropertiesAny,
-    rect: AnonBottom,
-    scrollOffset: AnonScrollLeft,
-    size: AnonHeight
+  
+  inline def apply(
+    dataset: Dataset,
+    id: Id,
+    properties: PropertiesAny,
+    rect: Bottom,
+    scrollOffset: ScrollLeft,
+    size: Height
   ): NodeRefFieldsValue = {
     val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], scrollOffset = scrollOffset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NodeRefFieldsValue]
   }
+  
+  extension [Self <: NodeRefFieldsValue](x: Self) {
+    
+    inline def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: PropertiesAny): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setRect(value: Bottom): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    
+    inline def setScrollOffset(value: ScrollLeft): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
+    
+    inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,20 +1,29 @@
 package typingsJapgolly.webgme
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GmeUtil")
-@js.native
-object GmeUtil extends js.Object {
-  @js.native
-  class Canon () extends js.Object {
-    def parse(thing: js.Any): String = js.native
-    def stringify(thing: js.Any): String = js.native
-  }
+object GmeUtil {
   
-  @JSName("CANON")
-  var CANON_ : Canon = js.native
-  def ASSERT(condition: Boolean): scala.Nothing = js.native
+  trait Canon extends StObject {
+    
+    def parse(thing: Any): String
+    
+    def stringify(thing: Any): String
+  }
+  object Canon {
+    
+    inline def apply(parse: Any => String, stringify: Any => String): Canon = {
+      val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
+      __obj.asInstanceOf[Canon]
+    }
+    
+    extension [Self <: Canon](x: Self) {
+      
+      inline def setParse(value: Any => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      
+      inline def setStringify(value: Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+    }
+  }
 }
-

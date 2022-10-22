@@ -1,41 +1,32 @@
 package typingsJapgolly.phaser.spine
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BlendMode extends js.Object
-
+sealed trait BlendMode extends StObject
 @JSGlobal("spine.BlendMode")
 @js.native
-object BlendMode extends js.Object {
-  @js.native
-  sealed trait Additive extends BlendMode
+object BlendMode extends StObject {
   
   @js.native
-  sealed trait Multiply extends BlendMode
+  sealed trait Additive
+    extends StObject
+       with BlendMode
   
   @js.native
-  sealed trait Normal extends BlendMode
+  sealed trait Multiply
+    extends StObject
+       with BlendMode
   
   @js.native
-  sealed trait Screen extends BlendMode
+  sealed trait Normal
+    extends StObject
+       with BlendMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BlendMode with Double] = js.native
-  /* 1 */ @js.native
-  object Additive extends TopLevel[Additive with Double]
-  
-  /* 2 */ @js.native
-  object Multiply extends TopLevel[Multiply with Double]
-  
-  /* 0 */ @js.native
-  object Normal extends TopLevel[Normal with Double]
-  
-  /* 3 */ @js.native
-  object Screen extends TopLevel[Screen with Double]
-  
+  @js.native
+  sealed trait Screen
+    extends StObject
+       with BlendMode
 }
-

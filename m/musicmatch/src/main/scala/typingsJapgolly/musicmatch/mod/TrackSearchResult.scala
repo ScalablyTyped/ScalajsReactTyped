@@ -1,20 +1,23 @@
 package typingsJapgolly.musicmatch.mod
 
-import typingsJapgolly.musicmatch.AnonBody
+import typingsJapgolly.musicmatch.anon.Body
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TrackSearchResult extends js.Object {
-  var message: AnonBody
-}
-
-object TrackSearchResult {
-  @scala.inline
-  def apply(message: AnonBody): TrackSearchResult = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+trait TrackSearchResult extends StObject {
   
+  var message: Body
+}
+object TrackSearchResult {
+  
+  inline def apply(message: Body): TrackSearchResult = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackSearchResult]
   }
+  
+  extension [Self <: TrackSearchResult](x: Self) {
+    
+    inline def setMessage(value: Body): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+  }
 }
-

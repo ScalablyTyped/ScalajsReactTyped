@@ -1,8 +1,8 @@
 package typingsJapgolly.xrm.Xrm.Controls
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for a quick view control instance on a form.
@@ -10,11 +10,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait QuickFormControl
-  extends Control
+  extends StObject
+     with Control
      with UiFocusable
      with UiCanGetDisabledElement
      with UiCanSetDisabledElement
      with UiCanSetVisibleElement {
+  
   /**
     * Gets the constituent controls in a quick view control.
     * @returns An array of controls.
@@ -43,7 +45,7 @@ trait QuickFormControl
     * @remarks Constituent controls in a quick view control are read only.
     */
   @JSName("getControl")
-  def getControl_T_Control_T[T /* <: Control */](controlName: String): T = js.native
+  def getControl_T_T[T /* <: Control */](controlName: String): T = js.native
   /**
     * Gets a control by index.
     * @param T A Control type
@@ -52,7 +54,8 @@ trait QuickFormControl
     * @remarks Constituent controls in a quick view control are read only.
     */
   @JSName("getControl")
-  def getControl_T_Control_T[T /* <: Control */](index: Double): T = js.native
+  def getControl_T_T[T /* <: Control */](index: Double): T = js.native
+  
   /**
     * Returns whether the data binding for the constituent controls in a quick view control is complete.
     * @returns  True is the data binding for a constituent control is complete, otherwise false.
@@ -62,9 +65,9 @@ trait QuickFormControl
     * @remarks The data binding for the constituent controls in a quick view control may not be complete during the main form OnLoad event
     */
   def isLoaded(): Boolean = js.native
+  
   /**
     * Refreshes the data displayed in a quick view control.
     */
   def refresh(): Unit = js.native
 }
-

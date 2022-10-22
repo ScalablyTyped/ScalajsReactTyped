@@ -1,13 +1,15 @@
 package typingsJapgolly.photonui.photonui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("photonui.FontSelect")
 @js.native
-class FontSelect () extends Select {
-  var fonts: js.Array[String] = js.native
+trait FontSelect
+  extends StObject
+     with Select {
+  
   def addFont(fontName: String): Unit = js.native
+  
+  var fonts: js.Array[String] = js.native
 }
-

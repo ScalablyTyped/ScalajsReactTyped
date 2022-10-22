@@ -1,37 +1,54 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnXHRLoadEventUIParam extends js.Object {
+trait OnXHRLoadEventUIParam extends StObject {
+  
   /**
-  	 * Gets the unique identifier of the file.
-  	 */
+    * Gets the unique identifier of the file.
+    */
   var fileId: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets reference to the fileInfo object - containing information for  fileName, fileSize, serverMessage(if returned from the server-side), etc.
-  	 */
-  var fileInfo: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to the fileInfo object - containing information for  fileName, fileSize, serverMessage(if returned from the server-side), etc.
+    */
+  var fileInfo: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the igUpload widget object.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets the igUpload widget object.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets reference to the original XMLHttpRequest object.
-  	 */
-  var xhr: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to the original XMLHttpRequest object.
+    */
+  var xhr: js.UndefOr[Any] = js.undefined
 }
-
 object OnXHRLoadEventUIParam {
-  @scala.inline
-  def apply(fileId: Int | Double = null, fileInfo: js.Any = null, owner: js.Any = null, xhr: js.Any = null): OnXHRLoadEventUIParam = {
+  
+  inline def apply(): OnXHRLoadEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
-    if (fileInfo != null) __obj.updateDynamic("fileInfo")(fileInfo.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnXHRLoadEventUIParam]
   }
+  
+  extension [Self <: OnXHRLoadEventUIParam](x: Self) {
+    
+    inline def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    
+    inline def setFileInfo(value: Any): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
+    
+    inline def setFileInfoUndefined: Self = StObject.set(x, "fileInfo", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+  }
 }
-

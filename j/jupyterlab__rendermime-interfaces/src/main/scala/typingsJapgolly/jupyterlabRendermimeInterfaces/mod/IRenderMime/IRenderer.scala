@@ -1,15 +1,17 @@
 package typingsJapgolly.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
-import typingsJapgolly.phosphorWidgets.mod.Widget
+import typingsJapgolly.jupyterlabTranslation.libTokensMod.ITranslator
+import typingsJapgolly.luminoWidgets.mod.Widget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A widget which displays the contents of a mime model.
   */
 @js.native
 trait IRenderer extends Widget {
+  
   /**
     * Render a mime model.
     *
@@ -22,5 +24,9 @@ trait IRenderer extends Widget {
     * of the widget to update it if and when new data is available.
     */
   def renderModel(model: IMimeModel): js.Promise[Unit] = js.native
+  
+  /**
+    * The application language translator.
+    */
+  var translator: js.UndefOr[ITranslator] = js.native
 }
-

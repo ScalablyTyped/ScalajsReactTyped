@@ -14,15 +14,16 @@ import typingsJapgolly.jquerySimplepagination.jquerySimplepaginationStrings.sele
 import typingsJapgolly.jquerySimplepagination.jquerySimplepaginationStrings.setPagesCount
 import typingsJapgolly.jquerySimplepagination.jquerySimplepaginationStrings.updateItems
 import typingsJapgolly.jquerySimplepagination.jquerySimplepaginationStrings.updateItemsOnPage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   def pagination(): JQuery = js.native
-  def pagination(method: String): js.Any = js.native
-  def pagination(method: String, value: js.Any): js.Any = js.native
+  def pagination(method: String): Any = js.native
+  def pagination(method: String, value: Any): Any = js.native
   def pagination(options: SimplePaginationOptions): JQuery = js.native
   /**
     * destroy - Visually destroys the pagination, any existing settings are kept.
@@ -141,4 +142,3 @@ trait JQuery extends js.Object {
   @JSName("pagination")
   def pagination_updateItemsOnPage(method: updateItemsOnPage, itemsOnPage: Double): JQuery = js.native
 }
-

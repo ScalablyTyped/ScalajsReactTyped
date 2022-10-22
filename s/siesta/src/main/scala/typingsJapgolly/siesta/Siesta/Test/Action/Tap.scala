@@ -2,38 +2,37 @@ package typingsJapgolly.siesta.Siesta.Test.Action
 
 import typingsJapgolly.siesta.Siesta.Test.Action.Role.IHasTarget
 import typingsJapgolly.siesta.Siesta.Test.IAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
   */
 trait Tap
-  extends IAction
+  extends StObject
+     with IAction
      with IHasTarget {
-  var options: js.UndefOr[js.Any] = js.undefined
+  
+  var options: js.UndefOr[Any] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
 }
-
 object Tap {
-  @scala.inline
-  def apply(
-    desc: String = null,
-    el: js.Any = null,
-    options: js.Any = null,
-    passTargetToNext: js.UndefOr[Boolean] = js.undefined,
-    target: js.Any = null,
-    text: String = null
-  ): Tap = {
+  
+  inline def apply(): Tap = {
     val __obj = js.Dynamic.literal()
-    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(passTargetToNext)) __obj.updateDynamic("passTargetToNext")(passTargetToNext.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tap]
   }
+  
+  extension [Self <: Tap](x: Self) {
+    
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

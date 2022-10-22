@@ -1,65 +1,88 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.rateMod.RateProps
-import typingsJapgolly.antd.rateMod.default
+import japgolly.scalajs.react.ReactKeyboardEventFrom
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLUListElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.libRateMod.RateProps
+import typingsJapgolly.rcRate.esStarMod.StarProps
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.RefAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Rate {
-  def apply(
-    allowClear: js.UndefOr[Boolean] = js.undefined,
-    allowHalf: js.UndefOr[Boolean] = js.undefined,
-    character: VdomNode = null,
-    className: String = null,
-    count: Int | Double = null,
-    defaultValue: Int | Double = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* value */ Double => Callback = null,
-    onHoverChange: /* value */ Double => Callback = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    tooltips: js.Array[String] = null,
-    value: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[RateProps, default, Unit, RateProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowHalf)) __obj.updateDynamic("allowHalf")(allowHalf.asInstanceOf[js.Any])
-    if (character != null) __obj.updateDynamic("character")(character.rawNode.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* value */ scala.Double) => onChange(t0).runNow()))
-    if (onHoverChange != null) __obj.updateDynamic("onHoverChange")(js.Any.fromFunction1((t0: /* value */ scala.Double) => onHoverChange(t0).runNow()))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.rateMod.RateProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.rateMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.rateMod.RateProps])(children: _*)
-  }
-  @JSImport("antd/lib/rate", JSImport.Default)
+  @JSImport("antd", "Rate")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def allowClear(value: Boolean): this.type = set("allowClear", value.asInstanceOf[js.Any])
+    
+    inline def allowHalf(value: Boolean): this.type = set("allowHalf", value.asInstanceOf[js.Any])
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def character(
+      value: japgolly.scalajs.react.facade.React.Node | (js.Function1[/* props */ StarProps, japgolly.scalajs.react.facade.React.Node])
+    ): this.type = set("character", value.asInstanceOf[js.Any])
+    
+    inline def characterFunction1(value: /* props */ StarProps => japgolly.scalajs.react.facade.React.Node): this.type = set("character", js.Any.fromFunction1(value))
+    
+    inline def characterNull: this.type = set("character", null)
+    
+    inline def characterRender(
+      value: (/* origin */ japgolly.scalajs.react.facade.React.Element, /* props */ StarProps) => japgolly.scalajs.react.facade.React.Node
+    ): this.type = set("characterRender", js.Any.fromFunction2(value))
+    
+    inline def characterVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("character", js.Array(value*))
+    
+    inline def characterVdomElement(value: VdomElement): this.type = set("character", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def count(value: Double): this.type = set("count", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: Double): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: String): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: Callback): this.type = set("onBlur", value.toJsFn)
+    
+    inline def onChange(value: /* value */ Double => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* value */ Double) => value(t0).runNow()))
+    
+    inline def onFocus(value: Callback): this.type = set("onFocus", value.toJsFn)
+    
+    inline def onHoverChange(value: /* value */ Double => Callback): this.type = set("onHoverChange", js.Any.fromFunction1((t0: /* value */ Double) => value(t0).runNow()))
+    
+    inline def onKeyDown(value: ReactKeyboardEventFrom[HTMLUListElement & org.scalajs.dom.Element] => Callback): this.type = set("onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLUListElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def tooltips(value: js.Array[String]): this.type = set("tooltips", value.asInstanceOf[js.Any])
+    
+    inline def tooltipsVarargs(value: String*): this.type = set("tooltips", js.Array(value*))
+    
+    inline def value(value: Double): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Rate.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: RateProps & RefAttributes[Any]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,20 +1,61 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.HorizontalLineFormat")
-@js.native
-class HorizontalLineFormat protected () extends js.Object {
-  var Alignment: WdHorizontalLineAlignment = js.native
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Creator: Double = js.native
-  var NoShade: Boolean = js.native
-  val Parent: js.Any = js.native
-  var PercentWidth: Double = js.native
-  var WidthType: WdHorizontalLineWidthType = js.native
-  @JSName("Word.HorizontalLineFormat_typekey")
-  var WordDotHorizontalLineFormat_typekey: HorizontalLineFormat = js.native
+trait HorizontalLineFormat extends StObject {
+  
+  var Alignment: WdHorizontalLineAlignment
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  val Creator: Double
+  
+  var NoShade: Boolean
+  
+  val Parent: Any
+  
+  var PercentWidth: Double
+  
+  var WidthType: WdHorizontalLineWidthType
+  
+  /* private */ @JSName("Word.HorizontalLineFormat_typekey")
+  var WordDotHorizontalLineFormat_typekey: HorizontalLineFormat
 }
-
+object HorizontalLineFormat {
+  
+  inline def apply(
+    Alignment: WdHorizontalLineAlignment,
+    Application: Application,
+    Creator: Double,
+    NoShade: Boolean,
+    Parent: Any,
+    PercentWidth: Double,
+    WidthType: WdHorizontalLineWidthType,
+    WordDotHorizontalLineFormat_typekey: HorizontalLineFormat
+  ): HorizontalLineFormat = {
+    val __obj = js.Dynamic.literal(Alignment = Alignment.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], NoShade = NoShade.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PercentWidth = PercentWidth.asInstanceOf[js.Any], WidthType = WidthType.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.HorizontalLineFormat_typekey")(WordDotHorizontalLineFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HorizontalLineFormat]
+  }
+  
+  extension [Self <: HorizontalLineFormat](x: Self) {
+    
+    inline def setAlignment(value: WdHorizontalLineAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setNoShade(value: Boolean): Self = StObject.set(x, "NoShade", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setPercentWidth(value: Double): Self = StObject.set(x, "PercentWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWidthType(value: WdHorizontalLineWidthType): Self = StObject.set(x, "WidthType", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotHorizontalLineFormat_typekey(value: HorizontalLineFormat): Self = StObject.set(x, "Word.HorizontalLineFormat_typekey", value.asInstanceOf[js.Any])
+  }
+}

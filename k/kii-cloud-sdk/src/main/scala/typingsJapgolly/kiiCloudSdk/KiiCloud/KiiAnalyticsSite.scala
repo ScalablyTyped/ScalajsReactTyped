@@ -1,53 +1,42 @@
 package typingsJapgolly.kiiCloudSdk.KiiCloud
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KiiAnalyticsSite extends js.Object
-
+sealed trait KiiAnalyticsSite extends StObject
 @JSGlobal("KiiCloud.KiiAnalyticsSite")
 @js.native
-object KiiAnalyticsSite extends js.Object {
-  @js.native
-  sealed trait CN extends KiiAnalyticsSite
+object KiiAnalyticsSite extends StObject {
   
   @js.native
-  sealed trait CN3 extends KiiAnalyticsSite
+  sealed trait CN
+    extends StObject
+       with KiiAnalyticsSite
   
   @js.native
-  sealed trait EU extends KiiAnalyticsSite
+  sealed trait CN3
+    extends StObject
+       with KiiAnalyticsSite
   
   @js.native
-  sealed trait JP extends KiiAnalyticsSite
+  sealed trait EU
+    extends StObject
+       with KiiAnalyticsSite
   
   @js.native
-  sealed trait SG extends KiiAnalyticsSite
+  sealed trait JP
+    extends StObject
+       with KiiAnalyticsSite
   
   @js.native
-  sealed trait US extends KiiAnalyticsSite
+  sealed trait SG
+    extends StObject
+       with KiiAnalyticsSite
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KiiAnalyticsSite with Double] = js.native
-  /* 2 */ @js.native
-  object CN extends TopLevel[CN with Double]
-  
-  /* 4 */ @js.native
-  object CN3 extends TopLevel[CN3 with Double]
-  
-  /* 5 */ @js.native
-  object EU extends TopLevel[EU with Double]
-  
-  /* 1 */ @js.native
-  object JP extends TopLevel[JP with Double]
-  
-  /* 3 */ @js.native
-  object SG extends TopLevel[SG with Double]
-  
-  /* 0 */ @js.native
-  object US extends TopLevel[US with Double]
-  
+  @js.native
+  sealed trait US
+    extends StObject
+       with KiiAnalyticsSite
 }
-

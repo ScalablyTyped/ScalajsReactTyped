@@ -1,26 +1,32 @@
 package typingsJapgolly.node.cryptoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DSAKeyPairKeyObjectOptions extends js.Object {
+trait DSAKeyPairKeyObjectOptions extends StObject {
+  
   /**
     * Size of q in bits
     */
   var divisorLength: Double
+  
   /**
     * Key size in bits
     */
   var modulusLength: Double
 }
-
 object DSAKeyPairKeyObjectOptions {
-  @scala.inline
-  def apply(divisorLength: Double, modulusLength: Double): DSAKeyPairKeyObjectOptions = {
-    val __obj = js.Dynamic.literal(divisorLength = divisorLength.asInstanceOf[js.Any], modulusLength = modulusLength.asInstanceOf[js.Any])
   
+  inline def apply(divisorLength: Double, modulusLength: Double): DSAKeyPairKeyObjectOptions = {
+    val __obj = js.Dynamic.literal(divisorLength = divisorLength.asInstanceOf[js.Any], modulusLength = modulusLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[DSAKeyPairKeyObjectOptions]
   }
+  
+  extension [Self <: DSAKeyPairKeyObjectOptions](x: Self) {
+    
+    inline def setDivisorLength(value: Double): Self = StObject.set(x, "divisorLength", value.asInstanceOf[js.Any])
+    
+    inline def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
+  }
 }
-

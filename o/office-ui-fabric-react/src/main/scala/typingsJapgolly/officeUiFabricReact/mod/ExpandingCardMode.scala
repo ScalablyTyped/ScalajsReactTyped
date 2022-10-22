@@ -1,17 +1,19 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "ExpandingCardMode")
 @js.native
-object ExpandingCardMode extends js.Object {
-  /* 0 */ val compact: typingsJapgolly.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode.compact with Double = js.native
-  /* 1 */ val expanded: typingsJapgolly.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode.expanded with Double = js.native
+object ExpandingCardMode extends StObject {
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typingsJapgolly.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode with Double
+    typingsJapgolly.officeUiFabricReact.libComponentsHoverCardExpandingCardDottypesMod.ExpandingCardMode & Double
   ] = js.native
+  
+  /* 0 */ val compact: typingsJapgolly.officeUiFabricReact.libComponentsHoverCardExpandingCardDottypesMod.ExpandingCardMode.compact & Double = js.native
+  
+  /* 1 */ val expanded: typingsJapgolly.officeUiFabricReact.libComponentsHoverCardExpandingCardDottypesMod.ExpandingCardMode.expanded & Double = js.native
 }
-

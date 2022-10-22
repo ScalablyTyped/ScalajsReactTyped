@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.iotjobsdataplaneMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsIotjobsdataplaneMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "IoTJobsDataPlane")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class IoTJobsDataPlane ()
-  extends typingsJapgolly.awsSdk.allMod.IoTJobsDataPlane {
+open class IoTJobsDataPlane ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.IoTJobsDataPlane {
   def this(options: ClientConfiguration) = this()
 }
-

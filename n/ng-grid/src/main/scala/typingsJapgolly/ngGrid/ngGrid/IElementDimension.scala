@@ -1,36 +1,54 @@
 package typingsJapgolly.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IElementDimension extends js.Object {
+trait IElementDimension extends StObject {
+  
   var rootMaxH: js.UndefOr[Double] = js.undefined
+  
   var rootMaxW: js.UndefOr[Double] = js.undefined
+  
   var rowIndexCellW: js.UndefOr[Double] = js.undefined
+  
   var rowSelectedCellW: js.UndefOr[Double] = js.undefined
+  
   var scrollH: js.UndefOr[Double] = js.undefined
+  
   var scrollW: js.UndefOr[Double] = js.undefined
 }
-
 object IElementDimension {
-  @scala.inline
-  def apply(
-    rootMaxH: Int | Double = null,
-    rootMaxW: Int | Double = null,
-    rowIndexCellW: Int | Double = null,
-    rowSelectedCellW: Int | Double = null,
-    scrollH: Int | Double = null,
-    scrollW: Int | Double = null
-  ): IElementDimension = {
+  
+  inline def apply(): IElementDimension = {
     val __obj = js.Dynamic.literal()
-    if (rootMaxH != null) __obj.updateDynamic("rootMaxH")(rootMaxH.asInstanceOf[js.Any])
-    if (rootMaxW != null) __obj.updateDynamic("rootMaxW")(rootMaxW.asInstanceOf[js.Any])
-    if (rowIndexCellW != null) __obj.updateDynamic("rowIndexCellW")(rowIndexCellW.asInstanceOf[js.Any])
-    if (rowSelectedCellW != null) __obj.updateDynamic("rowSelectedCellW")(rowSelectedCellW.asInstanceOf[js.Any])
-    if (scrollH != null) __obj.updateDynamic("scrollH")(scrollH.asInstanceOf[js.Any])
-    if (scrollW != null) __obj.updateDynamic("scrollW")(scrollW.asInstanceOf[js.Any])
     __obj.asInstanceOf[IElementDimension]
   }
+  
+  extension [Self <: IElementDimension](x: Self) {
+    
+    inline def setRootMaxH(value: Double): Self = StObject.set(x, "rootMaxH", value.asInstanceOf[js.Any])
+    
+    inline def setRootMaxHUndefined: Self = StObject.set(x, "rootMaxH", js.undefined)
+    
+    inline def setRootMaxW(value: Double): Self = StObject.set(x, "rootMaxW", value.asInstanceOf[js.Any])
+    
+    inline def setRootMaxWUndefined: Self = StObject.set(x, "rootMaxW", js.undefined)
+    
+    inline def setRowIndexCellW(value: Double): Self = StObject.set(x, "rowIndexCellW", value.asInstanceOf[js.Any])
+    
+    inline def setRowIndexCellWUndefined: Self = StObject.set(x, "rowIndexCellW", js.undefined)
+    
+    inline def setRowSelectedCellW(value: Double): Self = StObject.set(x, "rowSelectedCellW", value.asInstanceOf[js.Any])
+    
+    inline def setRowSelectedCellWUndefined: Self = StObject.set(x, "rowSelectedCellW", js.undefined)
+    
+    inline def setScrollH(value: Double): Self = StObject.set(x, "scrollH", value.asInstanceOf[js.Any])
+    
+    inline def setScrollHUndefined: Self = StObject.set(x, "scrollH", js.undefined)
+    
+    inline def setScrollW(value: Double): Self = StObject.set(x, "scrollW", value.asInstanceOf[js.Any])
+    
+    inline def setScrollWUndefined: Self = StObject.set(x, "scrollW", js.undefined)
+  }
 }
-

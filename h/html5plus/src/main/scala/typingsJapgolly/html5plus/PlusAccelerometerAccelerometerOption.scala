@@ -1,8 +1,8 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 监听设备加速度感应器参数
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/accelerometer.html](http://www.html5plus.org/doc/zh_cn/accelerometer.html)
   */
-trait PlusAccelerometerAccelerometerOption extends js.Object {
+trait PlusAccelerometerAccelerometerOption extends StObject {
+  
   /**
     * 更新加速度信息间隔时间
     * 监听器获取加速度信息的时间间隔，单位为ms，默认值为500ms
@@ -19,13 +20,17 @@ trait PlusAccelerometerAccelerometerOption extends js.Object {
     */
   var frequency: js.UndefOr[Double] = js.undefined
 }
-
 object PlusAccelerometerAccelerometerOption {
-  @scala.inline
-  def apply(frequency: Int | Double = null): PlusAccelerometerAccelerometerOption = {
+  
+  inline def apply(): PlusAccelerometerAccelerometerOption = {
     val __obj = js.Dynamic.literal()
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusAccelerometerAccelerometerOption]
   }
+  
+  extension [Self <: PlusAccelerometerAccelerometerOption](x: Self) {
+    
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+  }
 }
-

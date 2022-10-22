@@ -3,26 +3,30 @@ package typingsJapgolly.nodegit
 import typingsJapgolly.nodegit.diffPerfDataMod.DiffPerfdata
 import typingsJapgolly.nodegit.repositoryMod.Repository
 import typingsJapgolly.nodegit.statusOptionsMod.StatusOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/status-list", JSImport.Namespace)
-@js.native
-object statusListMod extends js.Object {
+object statusListMod {
+  
+  @JSImport("nodegit/status-list", "StatusList")
   @js.native
-  class StatusList () extends js.Object {
+  open class StatusList () extends StObject {
+    
     def entrycount(): Double = js.native
+    
     def free(): Unit = js.native
+    
     def getPerfdata(): js.Promise[DiffPerfdata] = js.native
   }
-  
   /* static members */
-  @js.native
-  object StatusList extends js.Object {
-    def create(repo: Repository): js.Promise[StatusList] = js.native
-    def create(repo: Repository, opts: StatusOptions): js.Promise[StatusList] = js.native
+  object StatusList {
+    
+    @JSImport("nodegit/status-list", "StatusList")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def create(repo: Repository): js.Promise[StatusList] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StatusList]]
+    inline def create(repo: Repository, opts: StatusOptions): js.Promise[StatusList] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StatusList]]
   }
-  
 }
-

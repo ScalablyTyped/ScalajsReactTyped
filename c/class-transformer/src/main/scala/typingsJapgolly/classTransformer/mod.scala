@@ -1,115 +1,122 @@
 package typingsJapgolly.classTransformer
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.classTransformer.classTransformOptionsMod.ClassTransformOptions
-import typingsJapgolly.classTransformer.classTransformerMod.ClassType
-import typingsJapgolly.classTransformer.exposeExcludeOptionsMod.ExcludeOptions
-import typingsJapgolly.classTransformer.exposeExcludeOptionsMod.ExposeOptions
-import typingsJapgolly.classTransformer.exposeExcludeOptionsMod.TransformOptions
-import typingsJapgolly.classTransformer.exposeExcludeOptionsMod.TypeHelpOptions
-import typingsJapgolly.classTransformer.exposeExcludeOptionsMod.TypeOptions
+import typingsJapgolly.classTransformer.typesInterfacesClassConstructorDottypeMod.ClassConstructor
+import typingsJapgolly.classTransformer.typesInterfacesClassTransformerOptionsDotinterfaceMod.ClassTransformOptions
+import typingsJapgolly.classTransformer.typesInterfacesDecoratorOptionsExcludeOptionsDotinterfaceMod.ExcludeOptions
+import typingsJapgolly.classTransformer.typesInterfacesDecoratorOptionsExposeOptionsDotinterfaceMod.ExposeOptions
+import typingsJapgolly.classTransformer.typesInterfacesDecoratorOptionsTransformOptionsDotinterfaceMod.TransformOptions
+import typingsJapgolly.classTransformer.typesInterfacesDecoratorOptionsTypeOptionsDotinterfaceMod.TypeOptions
+import typingsJapgolly.classTransformer.typesInterfacesMetadataTransformFnParamsDotinterfaceMod.TransformFnParams
+import typingsJapgolly.classTransformer.typesInterfacesTypeHelpOptionsDotinterfaceMod.TypeHelpOptions
+import typingsJapgolly.std.ClassDecorator
+import typingsJapgolly.std.MethodDecorator
+import typingsJapgolly.std.PropertyDecorator
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-transformer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class ClassTransformer ()
-    extends typingsJapgolly.classTransformer.classTransformerMod.ClassTransformer
+object mod {
   
+  @JSImport("class-transformer", JSImport.Namespace)
   @js.native
-  sealed trait TransformationType extends js.Object
+  val ^ : js.Any = js.native
   
-  def Exclude(): js.Function2[/* object */ js.Object | js.Function, /* propertyName */ js.UndefOr[String], Unit] = js.native
-  def Exclude(options: ExcludeOptions): js.Function2[/* object */ js.Object | js.Function, /* propertyName */ js.UndefOr[String], Unit] = js.native
-  def Expose(): js.Function2[/* object */ js.Object | js.Function, /* propertyName */ js.UndefOr[String], Unit] = js.native
-  def Expose(options: ExposeOptions): js.Function2[/* object */ js.Object | js.Function, /* propertyName */ js.UndefOr[String], Unit] = js.native
-  def Transform(
-    transformFn: js.Function3[
-      /* value */ js.Any, 
-      /* obj */ js.Any, 
-      /* transformationType */ typingsJapgolly.classTransformer.transformOperationExecutorMod.TransformationType, 
-      _
-    ]
-  ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
-  def Transform(
-    transformFn: js.Function3[
-      /* value */ js.Any, 
-      /* obj */ js.Any, 
-      /* transformationType */ typingsJapgolly.classTransformer.transformOperationExecutorMod.TransformationType, 
-      _
-    ],
-    options: TransformOptions
-  ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
-  def TransformClassToClass(): js.Function = js.native
-  def TransformClassToClass(params: ClassTransformOptions): js.Function = js.native
-  def TransformClassToPlain(): js.Function = js.native
-  def TransformClassToPlain(params: ClassTransformOptions): js.Function = js.native
-  def TransformPlainToClass(classType: js.Any): js.Function = js.native
-  def TransformPlainToClass(classType: js.Any, params: ClassTransformOptions): js.Function = js.native
-  def Type(): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
-  def Type(typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function]): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
-  def Type(
-    typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function],
-    options: TypeOptions
-  ): js.Function2[/* target */ js.Any, /* key */ String, Unit] = js.native
-  def classToClass[T](`object`: T): T = js.native
-  def classToClass[T](`object`: T, options: ClassTransformOptions): T = js.native
-  def classToClass[T](`object`: js.Array[T]): js.Array[T] = js.native
-  def classToClass[T](`object`: js.Array[T], options: ClassTransformOptions): js.Array[T] = js.native
-  def classToClassFromExist[T](`object`: T, fromObject: T): T = js.native
-  def classToClassFromExist[T](`object`: T, fromObject: T, options: ClassTransformOptions): T = js.native
-  def classToClassFromExist[T](`object`: T, fromObjects: js.Array[T]): js.Array[T] = js.native
-  def classToClassFromExist[T](`object`: T, fromObjects: js.Array[T], options: ClassTransformOptions): js.Array[T] = js.native
-  def classToPlain[T](`object`: T): js.Object = js.native
-  def classToPlain[T](`object`: T, options: ClassTransformOptions): js.Object = js.native
-  def classToPlain[T](`object`: js.Array[T]): js.Array[js.Object] = js.native
-  def classToPlain[T](`object`: js.Array[T], options: ClassTransformOptions): js.Array[js.Object] = js.native
-  def classToPlainFromExist[T](`object`: T, plainObject: js.Object): js.Object = js.native
-  def classToPlainFromExist[T](`object`: T, plainObject: js.Object, options: ClassTransformOptions): js.Object = js.native
-  def classToPlainFromExist[T](`object`: T, plainObjects: js.Array[js.Object]): js.Array[js.Object] = js.native
-  def classToPlainFromExist[T](`object`: T, plainObjects: js.Array[js.Object], options: ClassTransformOptions): js.Array[js.Object] = js.native
-  def deserialize[T](cls: ClassType[T], json: String): T = js.native
-  def deserialize[T](cls: ClassType[T], json: String, options: ClassTransformOptions): T = js.native
-  def deserializeArray[T](cls: ClassType[T], json: String): js.Array[T] = js.native
-  def deserializeArray[T](cls: ClassType[T], json: String, options: ClassTransformOptions): js.Array[T] = js.native
-  def plainToClass[T, V](cls: ClassType[T], plain: V): T = js.native
-  def plainToClass[T, V](cls: ClassType[T], plain: V, options: ClassTransformOptions): T = js.native
-  def plainToClass[T, V](cls: ClassType[T], plain: js.Array[V]): js.Array[T] = js.native
-  def plainToClass[T, V](cls: ClassType[T], plain: js.Array[V], options: ClassTransformOptions): js.Array[T] = js.native
-  def plainToClassFromExist[T, V](clsObject: T, plain: V): T = js.native
-  def plainToClassFromExist[T, V](clsObject: T, plain: V, options: ClassTransformOptions): T = js.native
-  def plainToClassFromExist[T, V](clsObject: js.Array[T], plain: js.Array[V]): js.Array[T] = js.native
-  def plainToClassFromExist[T, V](clsObject: js.Array[T], plain: js.Array[V], options: ClassTransformOptions): js.Array[T] = js.native
-  def serialize[T](`object`: T): String = js.native
-  def serialize[T](`object`: T, options: ClassTransformOptions): String = js.native
-  def serialize[T](`object`: js.Array[T]): String = js.native
-  def serialize[T](`object`: js.Array[T], options: ClassTransformOptions): String = js.native
+  @JSImport("class-transformer", "ClassTransformer")
   @js.native
-  object TransformationType extends js.Object {
-    @js.native
-    sealed trait CLASS_TO_CLASS extends TransformationType
-    
-    @js.native
-    sealed trait CLASS_TO_PLAIN extends TransformationType
-    
-    @js.native
-    sealed trait PLAIN_TO_CLASS extends TransformationType
+  open class ClassTransformer ()
+    extends typingsJapgolly.classTransformer.typesClassTransformerMod.ClassTransformer
+  
+  inline def Exclude(): PropertyDecorator & ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Exclude")().asInstanceOf[PropertyDecorator & ClassDecorator]
+  inline def Exclude(options: ExcludeOptions): PropertyDecorator & ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Exclude")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator & ClassDecorator]
+  
+  inline def Expose(): PropertyDecorator & ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Expose")().asInstanceOf[PropertyDecorator & ClassDecorator]
+  inline def Expose(options: ExposeOptions): PropertyDecorator & ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Expose")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator & ClassDecorator]
+  
+  inline def Transform(transformFn: js.Function1[/* params */ TransformFnParams, Any]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(transformFn.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def Transform(transformFn: js.Function1[/* params */ TransformFnParams, Any], options: TransformOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(transformFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  
+  inline def TransformInstanceToInstance(): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformInstanceToInstance")().asInstanceOf[MethodDecorator]
+  inline def TransformInstanceToInstance(params: ClassTransformOptions): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformInstanceToInstance")(params.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
+  
+  inline def TransformInstanceToPlain(): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformInstanceToPlain")().asInstanceOf[MethodDecorator]
+  inline def TransformInstanceToPlain(params: ClassTransformOptions): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformInstanceToPlain")(params.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
+  
+  inline def TransformPlainToInstance(classType: ClassConstructor[Any]): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransformPlainToInstance")(classType.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator]
+  inline def TransformPlainToInstance(classType: ClassConstructor[Any], params: ClassTransformOptions): MethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformPlainToInstance")(classType.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[MethodDecorator]
+  
+  @JSImport("class-transformer", "TransformationType")
+  @js.native
+  object TransformationType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[TransformationType with Double] = js.native
-    /* 2 */ @js.native
-    object CLASS_TO_CLASS extends TopLevel[CLASS_TO_CLASS with Double]
+    def apply(value: Double): js.UndefOr[
+        typingsJapgolly.classTransformer.typesEnumsTransformationTypeDotenumMod.TransformationType & Double
+      ] = js.native
     
-    /* 1 */ @js.native
-    object CLASS_TO_PLAIN extends TopLevel[CLASS_TO_PLAIN with Double]
+    /* 2 */ val CLASS_TO_CLASS: typingsJapgolly.classTransformer.typesEnumsTransformationTypeDotenumMod.TransformationType.CLASS_TO_CLASS & Double = js.native
     
-    /* 0 */ @js.native
-    object PLAIN_TO_CLASS extends TopLevel[PLAIN_TO_CLASS with Double]
+    /* 1 */ val CLASS_TO_PLAIN: typingsJapgolly.classTransformer.typesEnumsTransformationTypeDotenumMod.TransformationType.CLASS_TO_PLAIN & Double = js.native
     
+    /* 0 */ val PLAIN_TO_CLASS: typingsJapgolly.classTransformer.typesEnumsTransformationTypeDotenumMod.TransformationType.PLAIN_TO_CLASS & Double = js.native
   }
   
+  inline def Type(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")().asInstanceOf[PropertyDecorator]
+  inline def Type(typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def Type(
+    typeFunction: js.Function1[/* type */ js.UndefOr[TypeHelpOptions], js.Function],
+    options: TypeOptions
+  ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def Type(typeFunction: Unit, options: TypeOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Type")(typeFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  
+  inline def classToClassFromExist[T](`object`: T, fromObject: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("classToClassFromExist")(`object`.asInstanceOf[js.Any], fromObject.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def classToClassFromExist[T](`object`: T, fromObject: T, options: ClassTransformOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("classToClassFromExist")(`object`.asInstanceOf[js.Any], fromObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def classToClassFromExist[T](`object`: T, fromObjects: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("classToClassFromExist")(`object`.asInstanceOf[js.Any], fromObjects.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def classToClassFromExist[T](`object`: T, fromObjects: js.Array[T], options: ClassTransformOptions): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("classToClassFromExist")(`object`.asInstanceOf[js.Any], fromObjects.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  inline def classToPlain[T](`object`: T): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("classToPlain")(`object`.asInstanceOf[js.Any]).asInstanceOf[Record[String, Any]]
+  inline def classToPlain[T](`object`: T, options: ClassTransformOptions): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("classToPlain")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
+  inline def classToPlain[T](`object`: js.Array[T]): js.Array[Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("classToPlain")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Record[String, Any]]]
+  inline def classToPlain[T](`object`: js.Array[T], options: ClassTransformOptions): js.Array[Record[String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("classToPlain")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Record[String, Any]]]
+  
+  inline def classToPlainFromExist[T](`object`: T, plainObjects: js.Array[Record[String, Any]]): js.Array[Record[String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("classToPlainFromExist")(`object`.asInstanceOf[js.Any], plainObjects.asInstanceOf[js.Any])).asInstanceOf[js.Array[Record[String, Any]]]
+  inline def classToPlainFromExist[T](`object`: T, plainObjects: js.Array[Record[String, Any]], options: ClassTransformOptions): js.Array[Record[String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("classToPlainFromExist")(`object`.asInstanceOf[js.Any], plainObjects.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Record[String, Any]]]
+  inline def classToPlainFromExist[T](`object`: T, plainObject: Record[String, Any]): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("classToPlainFromExist")(`object`.asInstanceOf[js.Any], plainObject.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
+  inline def classToPlainFromExist[T](`object`: T, plainObject: Record[String, Any], options: ClassTransformOptions): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("classToPlainFromExist")(`object`.asInstanceOf[js.Any], plainObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
+  
+  inline def deserialize[T](cls: ClassConstructor[T], json: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(cls.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def deserialize[T](cls: ClassConstructor[T], json: String, options: ClassTransformOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(cls.asInstanceOf[js.Any], json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def deserializeArray[T](cls: ClassConstructor[T], json: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeArray")(cls.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def deserializeArray[T](cls: ClassConstructor[T], json: String, options: ClassTransformOptions): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeArray")(cls.asInstanceOf[js.Any], json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  inline def instanceToInstance[T](`object`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceToInstance")(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def instanceToInstance[T](`object`: T, options: ClassTransformOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("instanceToInstance")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def instanceToInstance[T](`object`: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceToInstance")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def instanceToInstance[T](`object`: js.Array[T], options: ClassTransformOptions): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instanceToInstance")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  inline def instanceToPlain[T](`object`: T): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceToPlain")(`object`.asInstanceOf[js.Any]).asInstanceOf[Record[String, Any]]
+  inline def instanceToPlain[T](`object`: T, options: ClassTransformOptions): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("instanceToPlain")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
+  inline def instanceToPlain[T](`object`: js.Array[T]): js.Array[Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceToPlain")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Record[String, Any]]]
+  inline def instanceToPlain[T](`object`: js.Array[T], options: ClassTransformOptions): js.Array[Record[String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("instanceToPlain")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Record[String, Any]]]
+  
+  inline def plainToClass[T, V](cls: ClassConstructor[T], plain: V): T = (^.asInstanceOf[js.Dynamic].applyDynamic("plainToClass")(cls.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def plainToClass[T, V](cls: ClassConstructor[T], plain: V, options: ClassTransformOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("plainToClass")(cls.asInstanceOf[js.Any], plain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def plainToClass[T, V](cls: ClassConstructor[T], plain: js.Array[V]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("plainToClass")(cls.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def plainToClass[T, V](cls: ClassConstructor[T], plain: js.Array[V], options: ClassTransformOptions): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("plainToClass")(cls.asInstanceOf[js.Any], plain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  inline def plainToClassFromExist[T, V](clsObject: T, plain: V): T = (^.asInstanceOf[js.Dynamic].applyDynamic("plainToClassFromExist")(clsObject.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def plainToClassFromExist[T, V](clsObject: T, plain: V, options: ClassTransformOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("plainToClassFromExist")(clsObject.asInstanceOf[js.Any], plain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def plainToClassFromExist[T, V](clsObject: js.Array[T], plain: js.Array[V]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("plainToClassFromExist")(clsObject.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def plainToClassFromExist[T, V](clsObject: js.Array[T], plain: js.Array[V], options: ClassTransformOptions): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("plainToClassFromExist")(clsObject.asInstanceOf[js.Any], plain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  inline def plainToInstance[T, V](cls: ClassConstructor[T], plain: V): T = (^.asInstanceOf[js.Dynamic].applyDynamic("plainToInstance")(cls.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def plainToInstance[T, V](cls: ClassConstructor[T], plain: V, options: ClassTransformOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("plainToInstance")(cls.asInstanceOf[js.Any], plain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def plainToInstance[T, V](cls: ClassConstructor[T], plain: js.Array[V]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("plainToInstance")(cls.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def plainToInstance[T, V](cls: ClassConstructor[T], plain: js.Array[V], options: ClassTransformOptions): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("plainToInstance")(cls.asInstanceOf[js.Any], plain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  inline def serialize[T](`object`: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serialize[T](`object`: T, options: ClassTransformOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def serialize[T](`object`: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serialize[T](`object`: js.Array[T], options: ClassTransformOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }
-

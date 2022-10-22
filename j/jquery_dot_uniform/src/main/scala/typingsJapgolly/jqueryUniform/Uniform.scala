@@ -1,18 +1,22 @@
 package typingsJapgolly.jqueryUniform
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Uniform extends js.Object {
-  var defaults: UniformOptions = js.native
-  var elements: js.Array[JQuery] = js.native
+trait Uniform extends StObject {
+  
   def apply(): JQuery = js.native
   def apply(options: UniformOptions): JQuery = js.native
+  
+  var defaults: UniformOptions = js.native
+  
+  var elements: js.Array[JQuery] = js.native
+  
   def restore(): Unit = js.native
-  def restore(elemOrSelector: js.Any): Unit = js.native
+  def restore(elemOrSelector: Any): Unit = js.native
+  
   def update(): Unit = js.native
-  def update(elemOrSelector: js.Any): Unit = js.native
+  def update(elemOrSelector: Any): Unit = js.native
 }
-

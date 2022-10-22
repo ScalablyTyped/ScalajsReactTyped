@@ -1,20 +1,26 @@
 package typingsJapgolly.gldatepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GlDatePickerOffset extends js.Object {
+trait GlDatePickerOffset extends StObject {
+  
   var x: Double
+  
   var y: Double
 }
-
 object GlDatePickerOffset {
-  @scala.inline
-  def apply(x: Double, y: Double): GlDatePickerOffset = {
-    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
+  inline def apply(x: Double, y: Double): GlDatePickerOffset = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlDatePickerOffset]
   }
+  
+  extension [Self <: GlDatePickerOffset](x: Self) {
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+  }
 }
-

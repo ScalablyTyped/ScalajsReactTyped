@@ -1,51 +1,77 @@
 package typingsJapgolly.ldapjs.mod
 
-import typingsJapgolly.ldapjs.AnonPagePause
+import typingsJapgolly.ldapjs.anon.PagePause
 import typingsJapgolly.ldapjs.ldapjsStrings.base
 import typingsJapgolly.ldapjs.ldapjsStrings.one
 import typingsJapgolly.ldapjs.ldapjsStrings.sub
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchOptions extends js.Object {
+trait SearchOptions extends StObject {
+  
   /** Defaults to the empty set, which means all attributes */
   var attributes: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var derefAliases: js.UndefOr[Double] = js.undefined
+  
   /**  Defaults to (objectclass=*) */
   var filter: js.UndefOr[String | Filter] = js.undefined
-  var paged: js.UndefOr[Boolean | AnonPagePause] = js.undefined
+  
+  var paged: js.UndefOr[Boolean | PagePause] = js.undefined
+  
   /** Defaults to base */
   var scope: js.UndefOr[base | one | sub] = js.undefined
+  
   /** Defaults to 0 (unlimited) */
   var sizeLimit: js.UndefOr[Double] = js.undefined
+  
   /** Timeout in seconds. Defaults to 10. Lots of servers will ignore this! */
   var timeLimit: js.UndefOr[Double] = js.undefined
+  
   var typesOnly: js.UndefOr[Boolean] = js.undefined
 }
-
 object SearchOptions {
-  @scala.inline
-  def apply(
-    attributes: String | js.Array[String] = null,
-    derefAliases: Int | Double = null,
-    filter: String | Filter = null,
-    paged: Boolean | AnonPagePause = null,
-    scope: base | one | sub = null,
-    sizeLimit: Int | Double = null,
-    timeLimit: Int | Double = null,
-    typesOnly: js.UndefOr[Boolean] = js.undefined
-  ): SearchOptions = {
+  
+  inline def apply(): SearchOptions = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (derefAliases != null) __obj.updateDynamic("derefAliases")(derefAliases.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (paged != null) __obj.updateDynamic("paged")(paged.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (sizeLimit != null) __obj.updateDynamic("sizeLimit")(sizeLimit.asInstanceOf[js.Any])
-    if (timeLimit != null) __obj.updateDynamic("timeLimit")(timeLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(typesOnly)) __obj.updateDynamic("typesOnly")(typesOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptions]
   }
+  
+  extension [Self <: SearchOptions](x: Self) {
+    
+    inline def setAttributes(value: String | js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
+    
+    inline def setDerefAliases(value: Double): Self = StObject.set(x, "derefAliases", value.asInstanceOf[js.Any])
+    
+    inline def setDerefAliasesUndefined: Self = StObject.set(x, "derefAliases", js.undefined)
+    
+    inline def setFilter(value: String | Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setPaged(value: Boolean | PagePause): Self = StObject.set(x, "paged", value.asInstanceOf[js.Any])
+    
+    inline def setPagedUndefined: Self = StObject.set(x, "paged", js.undefined)
+    
+    inline def setScope(value: base | one | sub): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setSizeLimit(value: Double): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
+    
+    inline def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
+    
+    inline def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
+    
+    inline def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
+    
+    inline def setTypesOnly(value: Boolean): Self = StObject.set(x, "typesOnly", value.asInstanceOf[js.Any])
+    
+    inline def setTypesOnlyUndefined: Self = StObject.set(x, "typesOnly", js.undefined)
+  }
 }
-

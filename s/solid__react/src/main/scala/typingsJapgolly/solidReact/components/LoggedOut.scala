@@ -1,14 +1,16 @@
 package typingsJapgolly.solidReact.components
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object LoggedOut
-  extends SharedApply_Object_1928072692[typingsJapgolly.solidReact.mod.LoggedOut] {
+object LoggedOut {
+  
   @JSImport("@solid/react", "LoggedOut")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: LoggedOut.type): SharedBuilder_Object_159303587[typingsJapgolly.solidReact.mod.LoggedOut] = new SharedBuilder_Object_159303587[typingsJapgolly.solidReact.mod.LoggedOut](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: js.Object): SharedBuilder_Object_159303587[typingsJapgolly.solidReact.mod.LoggedOut] = new SharedBuilder_Object_159303587[typingsJapgolly.solidReact.mod.LoggedOut](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

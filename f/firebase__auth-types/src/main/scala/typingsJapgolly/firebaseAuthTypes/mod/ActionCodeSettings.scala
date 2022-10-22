@@ -1,34 +1,48 @@
 package typingsJapgolly.firebaseAuthTypes.mod
 
-import typingsJapgolly.firebaseAuthTypes.AnonBundleId
-import typingsJapgolly.firebaseAuthTypes.AnonInstallApp
+import typingsJapgolly.firebaseAuthTypes.anon.BundleId
+import typingsJapgolly.firebaseAuthTypes.anon.InstallApp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ActionCodeSettings extends js.Object {
-  var android: js.UndefOr[AnonInstallApp] = js.undefined
+trait ActionCodeSettings extends StObject {
+  
+  var android: js.UndefOr[InstallApp] = js.undefined
+  
   var dynamicLinkDomain: js.UndefOr[String] = js.undefined
+  
   var handleCodeInApp: js.UndefOr[Boolean] = js.undefined
-  var iOS: js.UndefOr[AnonBundleId] = js.undefined
+  
+  var iOS: js.UndefOr[BundleId] = js.undefined
+  
   var url: String
 }
-
 object ActionCodeSettings {
-  @scala.inline
-  def apply(
-    url: String,
-    android: AnonInstallApp = null,
-    dynamicLinkDomain: String = null,
-    handleCodeInApp: js.UndefOr[Boolean] = js.undefined,
-    iOS: AnonBundleId = null
-  ): ActionCodeSettings = {
+  
+  inline def apply(url: String): ActionCodeSettings = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
-    if (dynamicLinkDomain != null) __obj.updateDynamic("dynamicLinkDomain")(dynamicLinkDomain.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleCodeInApp)) __obj.updateDynamic("handleCodeInApp")(handleCodeInApp.asInstanceOf[js.Any])
-    if (iOS != null) __obj.updateDynamic("iOS")(iOS.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionCodeSettings]
   }
+  
+  extension [Self <: ActionCodeSettings](x: Self) {
+    
+    inline def setAndroid(value: InstallApp): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    
+    inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
+    
+    inline def setDynamicLinkDomain(value: String): Self = StObject.set(x, "dynamicLinkDomain", value.asInstanceOf[js.Any])
+    
+    inline def setDynamicLinkDomainUndefined: Self = StObject.set(x, "dynamicLinkDomain", js.undefined)
+    
+    inline def setHandleCodeInApp(value: Boolean): Self = StObject.set(x, "handleCodeInApp", value.asInstanceOf[js.Any])
+    
+    inline def setHandleCodeInAppUndefined: Self = StObject.set(x, "handleCodeInApp", js.undefined)
+    
+    inline def setIOS(value: BundleId): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
+    
+    inline def setIOSUndefined: Self = StObject.set(x, "iOS", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

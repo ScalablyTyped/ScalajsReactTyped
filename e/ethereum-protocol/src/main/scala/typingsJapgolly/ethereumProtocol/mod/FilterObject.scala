@@ -1,30 +1,44 @@
 package typingsJapgolly.ethereumProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilterObject extends js.Object {
+trait FilterObject extends StObject {
+  
   var address: js.UndefOr[String] = js.undefined
+  
   var fromBlock: js.UndefOr[Double | String] = js.undefined
+  
   var toBlock: js.UndefOr[Double | String] = js.undefined
+  
   var topics: js.UndefOr[js.Array[LogTopic]] = js.undefined
 }
-
 object FilterObject {
-  @scala.inline
-  def apply(
-    address: String = null,
-    fromBlock: Double | String = null,
-    toBlock: Double | String = null,
-    topics: js.Array[LogTopic] = null
-  ): FilterObject = {
+  
+  inline def apply(): FilterObject = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (fromBlock != null) __obj.updateDynamic("fromBlock")(fromBlock.asInstanceOf[js.Any])
-    if (toBlock != null) __obj.updateDynamic("toBlock")(toBlock.asInstanceOf[js.Any])
-    if (topics != null) __obj.updateDynamic("topics")(topics.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterObject]
   }
+  
+  extension [Self <: FilterObject](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setFromBlock(value: Double | String): Self = StObject.set(x, "fromBlock", value.asInstanceOf[js.Any])
+    
+    inline def setFromBlockUndefined: Self = StObject.set(x, "fromBlock", js.undefined)
+    
+    inline def setToBlock(value: Double | String): Self = StObject.set(x, "toBlock", value.asInstanceOf[js.Any])
+    
+    inline def setToBlockUndefined: Self = StObject.set(x, "toBlock", js.undefined)
+    
+    inline def setTopics(value: js.Array[LogTopic]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+    
+    inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
+    
+    inline def setTopicsVarargs(value: LogTopic*): Self = StObject.set(x, "topics", js.Array(value*))
+  }
 }
-

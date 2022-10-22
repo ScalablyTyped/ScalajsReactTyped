@@ -1,29 +1,27 @@
 package typingsJapgolly.amazonConnectStreams.connect
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConnectOptions extends SuccessFailOptions {
-  /*
-    * A string containing a Connect Queue ARN.
-    */
-  var queueARN: js.UndefOr[String] = js.undefined
+trait ConnectOptions
+  extends StObject
+     with SuccessFailOptions {
+  
+  /** The queue ARN to associate the contact with. */
+  val queueARN: js.UndefOr[String] = js.undefined
 }
-
 object ConnectOptions {
-  @scala.inline
-  def apply(
-    failure: js.UndefOr[Callback] = js.undefined,
-    queueARN: String = null,
-    success: js.UndefOr[Callback] = js.undefined
-  ): ConnectOptions = {
+  
+  inline def apply(): ConnectOptions = {
     val __obj = js.Dynamic.literal()
-    failure.foreach(p => __obj.updateDynamic("failure")(p.toJsFn))
-    if (queueARN != null) __obj.updateDynamic("queueARN")(queueARN.asInstanceOf[js.Any])
-    success.foreach(p => __obj.updateDynamic("success")(p.toJsFn))
     __obj.asInstanceOf[ConnectOptions]
   }
+  
+  extension [Self <: ConnectOptions](x: Self) {
+    
+    inline def setQueueARN(value: String): Self = StObject.set(x, "queueARN", value.asInstanceOf[js.Any])
+    
+    inline def setQueueARNUndefined: Self = StObject.set(x, "queueARN", js.undefined)
+  }
 }
-

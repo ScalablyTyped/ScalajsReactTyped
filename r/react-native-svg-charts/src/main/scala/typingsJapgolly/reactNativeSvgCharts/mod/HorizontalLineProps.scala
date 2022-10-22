@@ -1,19 +1,22 @@
 package typingsJapgolly.reactNativeSvgCharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HorizontalLineProps extends js.Object {
+trait HorizontalLineProps extends StObject {
+  
   var stroke: String
 }
-
 object HorizontalLineProps {
-  @scala.inline
-  def apply(stroke: String): HorizontalLineProps = {
-    val __obj = js.Dynamic.literal(stroke = stroke.asInstanceOf[js.Any])
   
+  inline def apply(stroke: String): HorizontalLineProps = {
+    val __obj = js.Dynamic.literal(stroke = stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[HorizontalLineProps]
   }
+  
+  extension [Self <: HorizontalLineProps](x: Self) {
+    
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+  }
 }
-

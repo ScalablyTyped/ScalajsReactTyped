@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A DataValidationBuilder for a GridValidation.
@@ -19,16 +19,26 @@ import scala.scalajs.js.annotation._
   *       .build();
   *     gridItem.setValidation(gridValidation);
   */
-trait GridValidationBuilder extends js.Object {
+trait GridValidationBuilder extends StObject {
+  
+  def build(): GridValidation
+  
   def requireLimitOneResponsePerColumn(): GridValidationBuilder
 }
-
 object GridValidationBuilder {
-  @scala.inline
-  def apply(requireLimitOneResponsePerColumn: CallbackTo[GridValidationBuilder]): GridValidationBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requireLimitOneResponsePerColumn")(requireLimitOneResponsePerColumn.toJsFn)
+  
+  inline def apply(
+    build: CallbackTo[GridValidation],
+    requireLimitOneResponsePerColumn: CallbackTo[GridValidationBuilder]
+  ): GridValidationBuilder = {
+    val __obj = js.Dynamic.literal(build = build.toJsFn, requireLimitOneResponsePerColumn = requireLimitOneResponsePerColumn.toJsFn)
     __obj.asInstanceOf[GridValidationBuilder]
   }
+  
+  extension [Self <: GridValidationBuilder](x: Self) {
+    
+    inline def setBuild(value: CallbackTo[GridValidation]): Self = StObject.set(x, "build", value.toJsFn)
+    
+    inline def setRequireLimitOneResponsePerColumn(value: CallbackTo[GridValidationBuilder]): Self = StObject.set(x, "requireLimitOneResponsePerColumn", value.toJsFn)
+  }
 }
-

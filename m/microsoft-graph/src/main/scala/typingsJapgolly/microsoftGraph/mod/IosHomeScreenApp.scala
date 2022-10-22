@@ -1,21 +1,27 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IosHomeScreenApp extends IosHomeScreenItem {
-  // BundleID of app
+trait IosHomeScreenApp
+  extends StObject
+     with IosHomeScreenItem {
+  
+  // BundleID of the app if isWebClip is false or the URL of a web clip if isWebClip is true.
   var bundleID: js.UndefOr[String] = js.undefined
 }
-
 object IosHomeScreenApp {
-  @scala.inline
-  def apply(bundleID: String = null, displayName: String = null): IosHomeScreenApp = {
+  
+  inline def apply(): IosHomeScreenApp = {
     val __obj = js.Dynamic.literal()
-    if (bundleID != null) __obj.updateDynamic("bundleID")(bundleID.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosHomeScreenApp]
   }
+  
+  extension [Self <: IosHomeScreenApp](x: Self) {
+    
+    inline def setBundleID(value: String): Self = StObject.set(x, "bundleID", value.asInstanceOf[js.Any])
+    
+    inline def setBundleIDUndefined: Self = StObject.set(x, "bundleID", js.undefined)
+  }
 }
-

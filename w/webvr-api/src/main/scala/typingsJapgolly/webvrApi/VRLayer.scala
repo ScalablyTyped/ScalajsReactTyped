@@ -1,28 +1,47 @@
 package typingsJapgolly.webvrApi
 
-import org.scalajs.dom.raw.HTMLCanvasElement
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VRLayer extends js.Object {
-  var leftBounds: js.UndefOr[js.Array[Double] | scala.scalajs.js.typedarray.Float32Array | Null] = js.undefined
-  var rightBounds: js.UndefOr[js.Array[Double] | scala.scalajs.js.typedarray.Float32Array | Null] = js.undefined
+trait VRLayer extends StObject {
+  
+  var leftBounds: js.UndefOr[js.Array[Double] | js.typedarray.Float32Array | Null] = js.undefined
+  
+  var rightBounds: js.UndefOr[js.Array[Double] | js.typedarray.Float32Array | Null] = js.undefined
+  
   var source: js.UndefOr[HTMLCanvasElement | Null] = js.undefined
 }
-
 object VRLayer {
-  @scala.inline
-  def apply(
-    leftBounds: js.Array[Double] | scala.scalajs.js.typedarray.Float32Array = null,
-    rightBounds: js.Array[Double] | scala.scalajs.js.typedarray.Float32Array = null,
-    source: HTMLCanvasElement = null
-  ): VRLayer = {
+  
+  inline def apply(): VRLayer = {
     val __obj = js.Dynamic.literal()
-    if (leftBounds != null) __obj.updateDynamic("leftBounds")(leftBounds.asInstanceOf[js.Any])
-    if (rightBounds != null) __obj.updateDynamic("rightBounds")(rightBounds.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[VRLayer]
   }
+  
+  extension [Self <: VRLayer](x: Self) {
+    
+    inline def setLeftBounds(value: js.Array[Double] | js.typedarray.Float32Array): Self = StObject.set(x, "leftBounds", value.asInstanceOf[js.Any])
+    
+    inline def setLeftBoundsNull: Self = StObject.set(x, "leftBounds", null)
+    
+    inline def setLeftBoundsUndefined: Self = StObject.set(x, "leftBounds", js.undefined)
+    
+    inline def setLeftBoundsVarargs(value: Double*): Self = StObject.set(x, "leftBounds", js.Array(value*))
+    
+    inline def setRightBounds(value: js.Array[Double] | js.typedarray.Float32Array): Self = StObject.set(x, "rightBounds", value.asInstanceOf[js.Any])
+    
+    inline def setRightBoundsNull: Self = StObject.set(x, "rightBounds", null)
+    
+    inline def setRightBoundsUndefined: Self = StObject.set(x, "rightBounds", js.undefined)
+    
+    inline def setRightBoundsVarargs(value: Double*): Self = StObject.set(x, "rightBounds", js.Array(value*))
+    
+    inline def setSource(value: HTMLCanvasElement): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+  }
 }
-

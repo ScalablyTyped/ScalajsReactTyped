@@ -1,8 +1,8 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base class for a factory that can create a component dynamically.
@@ -12,8 +12,10 @@ import scala.scalajs.js.annotation._
   * @see [Dynamic Components](guide/dynamic-component-loader)
   *
   * @publicApi
+  *
+  * @deprecated Angular no longer requires Component factories. Please use other APIs where
+  *     Component class can be used directly.
   */
-@JSImport("@angular/core", "\u0275ComponentFactory")
+/* note: abstract class */ @JSImport("@angular/core", "\u0275ComponentFactory")
 @js.native
-abstract class ɵComponentFactory[C] () extends ComponentFactory[C]
-
+open class ɵComponentFactory[C] () extends ComponentFactory[C]

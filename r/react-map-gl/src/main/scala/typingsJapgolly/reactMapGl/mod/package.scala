@@ -1,20 +1,28 @@
-package typingsJapgolly.reactMapGl
+package typingsJapgolly.reactMapGl.mod
 
+import typingsJapgolly.react.mod.Context
+import typingsJapgolly.reactMapGl.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ContextViewStateChangeHandler = js.Function1[/* info */ typingsJapgolly.reactMapGl.mod.ContextViewStateChangeInfo, scala.Unit]
-  type ContextViewportChangeHandler = js.Function3[
-    /* viewState */ typingsJapgolly.reactMapGl.mod.ViewportProps, 
-    /* interactionState */ typingsJapgolly.reactMapGl.mod.ExtraState, 
-    /* oldViewState */ typingsJapgolly.reactMapGl.mod.ViewportProps, 
-    scala.Unit
-  ]
-  type EasingFunction = js.Function1[/* t */ scala.Double, scala.Double]
-  type EventManager = js.Any
-  type SVGRedrawOptions = typingsJapgolly.reactMapGl.mod.HTMLRedrawOptions
-  type ViewStateChangeHandler = js.Function1[/* info */ typingsJapgolly.reactMapGl.mod.ViewStateChangeInfo, scala.Unit]
-  type ViewportChangeHandler = js.Function1[/* viewState */ typingsJapgolly.reactMapGl.mod.ViewportProps, scala.Unit]
-}
+
+inline def MapContext: Context[MapContextProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("_MapContext").asInstanceOf[Context[MapContextProps]]
+
+type ContextViewStateChangeHandler = js.Function1[/* info */ ContextViewStateChangeInfo, Unit]
+
+type ContextViewportChangeHandler = js.Function3[
+/* viewState */ ViewportProps, 
+/* interactionState */ ExtraState, 
+/* oldViewState */ ViewportProps, 
+Unit]
+
+type EasingFunction = js.Function1[/* t */ Double, Double]
+
+type EventManager = Any
+
+type SVGRedrawOptions = HTMLRedrawOptions
+
+type ViewStateChangeHandler = js.Function1[/* info */ ViewStateChangeInfo, Unit]
+
+type ViewportChangeHandler = js.Function1[/* viewState */ ViewportProps, Unit]

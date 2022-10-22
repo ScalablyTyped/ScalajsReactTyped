@@ -1,28 +1,78 @@
 package typingsJapgolly.activexAccess.Access
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Access.SmartTag")
-@js.native
-class SmartTag protected () extends js.Object {
-  @JSName("Access.SmartTag_typekey")
-  var AccessDotSmartTag_typekey: SmartTag = js.native
-  val Application: typingsJapgolly.activexAccess.Access.Application = js.native
-  val IsMissing: Boolean = js.native
-  val Name: String = js.native
-  val Parent: js.Any = js.native
+trait SmartTag extends StObject {
+  
+  /* private */ @JSName("Access.SmartTag_typekey")
+  var AccessDotSmartTag_typekey: SmartTag
+  
+  val Application: typingsJapgolly.activexAccess.Access.Application
+  
+  def Delete(): Unit
+  
+  def IsMemberSafe(dispid: Double): Boolean
+  
+  val IsMissing: Boolean
+  
+  val Name: String
+  
+  val Parent: Any
+  
+  def Properties(Index: String): SmartTagProperty
+  def Properties(Index: Double): SmartTagProperty
   @JSName("Properties")
-  val Properties_Original: SmartTagProperties = js.native
+  val Properties_Original: SmartTagProperties
+  
+  def SmartTagActions(Index: String): SmartTagAction
+  def SmartTagActions(Index: Double): SmartTagAction
   @JSName("SmartTagActions")
-  val SmartTagActions_Original: SmartTagActions = js.native
-  val XML: String = js.native
-  def Delete(): Unit = js.native
-  def IsMemberSafe(dispid: Double): Boolean = js.native
-  def Properties(Index: String): SmartTagProperty = js.native
-  def Properties(Index: Double): SmartTagProperty = js.native
-  def SmartTagActions(Index: String): SmartTagAction = js.native
-  def SmartTagActions(Index: Double): SmartTagAction = js.native
+  val SmartTagActions_Original: SmartTagActions
+  
+  val XML: String
 }
-
+object SmartTag {
+  
+  inline def apply(
+    AccessDotSmartTag_typekey: SmartTag,
+    Application: Application,
+    Delete: Callback,
+    IsMemberSafe: Double => Boolean,
+    IsMissing: Boolean,
+    Name: String,
+    Parent: Any,
+    Properties: SmartTagProperties,
+    SmartTagActions: SmartTagActions,
+    XML: String
+  ): SmartTag = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Delete = Delete.toJsFn, IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), IsMissing = IsMissing.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], SmartTagActions = SmartTagActions.asInstanceOf[js.Any], XML = XML.asInstanceOf[js.Any])
+    __obj.updateDynamic("Access.SmartTag_typekey")(AccessDotSmartTag_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SmartTag]
+  }
+  
+  extension [Self <: SmartTag](x: Self) {
+    
+    inline def setAccessDotSmartTag_typekey(value: SmartTag): Self = StObject.set(x, "Access.SmartTag_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setDelete(value: Callback): Self = StObject.set(x, "Delete", value.toJsFn)
+    
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    
+    inline def setIsMissing(value: Boolean): Self = StObject.set(x, "IsMissing", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: SmartTagProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    
+    inline def setSmartTagActions(value: SmartTagActions): Self = StObject.set(x, "SmartTagActions", value.asInstanceOf[js.Any])
+    
+    inline def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
+  }
+}

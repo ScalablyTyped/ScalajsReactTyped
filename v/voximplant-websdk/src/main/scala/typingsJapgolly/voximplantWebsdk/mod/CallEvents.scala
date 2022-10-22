@@ -1,80 +1,78 @@
 package typingsJapgolly.voximplantWebsdk.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CallEvents extends js.Object
-
+sealed trait CallEvents extends StObject
 /**
-	*	VoxImplant.Call events
-	*/
+  *    VoxImplant.Call events
+  */
 @JSImport("voximplant-websdk", "CallEvents")
 @js.native
-object CallEvents extends js.Object {
-  @js.native
-  sealed trait Connected extends CallEvents
-  
-  @js.native
-  sealed trait Disconnected extends CallEvents
-  
-  @js.native
-  sealed trait Failed extends CallEvents
-  
-  @js.native
-  sealed trait ICETimeout extends CallEvents
-  
-  @js.native
-  sealed trait InfoReceived extends CallEvents
-  
-  @js.native
-  sealed trait MessageReceived extends CallEvents
-  
-  @js.native
-  sealed trait ProgressToneStart extends CallEvents
-  
-  @js.native
-  sealed trait ProgressToneStop extends CallEvents
-  
-  @js.native
-  sealed trait TransferComplete extends CallEvents
-  
-  @js.native
-  sealed trait TransferFailed extends CallEvents
+object CallEvents extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CallEvents with Double] = js.native
-  /* 0 */ @js.native
-  object Connected extends TopLevel[Connected with Double]
+  def apply(value: Double): js.UndefOr[CallEvents & Double] = js.native
   
-  /* 1 */ @js.native
-  object Disconnected extends TopLevel[Disconnected with Double]
+  @js.native
+  sealed trait Connected
+    extends StObject
+       with CallEvents
+  /* 0 */ val Connected: typingsJapgolly.voximplantWebsdk.mod.CallEvents.Connected & Double = js.native
   
-  /* 2 */ @js.native
-  object Failed extends TopLevel[Failed with Double]
+  @js.native
+  sealed trait Disconnected
+    extends StObject
+       with CallEvents
+  /* 1 */ val Disconnected: typingsJapgolly.voximplantWebsdk.mod.CallEvents.Disconnected & Double = js.native
   
-  /* 3 */ @js.native
-  object ICETimeout extends TopLevel[ICETimeout with Double]
+  @js.native
+  sealed trait Failed
+    extends StObject
+       with CallEvents
+  /* 2 */ val Failed: typingsJapgolly.voximplantWebsdk.mod.CallEvents.Failed & Double = js.native
   
-  /* 4 */ @js.native
-  object InfoReceived extends TopLevel[InfoReceived with Double]
+  @js.native
+  sealed trait ICETimeout
+    extends StObject
+       with CallEvents
+  /* 3 */ val ICETimeout: typingsJapgolly.voximplantWebsdk.mod.CallEvents.ICETimeout & Double = js.native
   
-  /* 5 */ @js.native
-  object MessageReceived extends TopLevel[MessageReceived with Double]
+  @js.native
+  sealed trait InfoReceived
+    extends StObject
+       with CallEvents
+  /* 4 */ val InfoReceived: typingsJapgolly.voximplantWebsdk.mod.CallEvents.InfoReceived & Double = js.native
   
-  /* 6 */ @js.native
-  object ProgressToneStart extends TopLevel[ProgressToneStart with Double]
+  @js.native
+  sealed trait MessageReceived
+    extends StObject
+       with CallEvents
+  /* 5 */ val MessageReceived: typingsJapgolly.voximplantWebsdk.mod.CallEvents.MessageReceived & Double = js.native
   
-  /* 7 */ @js.native
-  object ProgressToneStop extends TopLevel[ProgressToneStop with Double]
+  @js.native
+  sealed trait ProgressToneStart
+    extends StObject
+       with CallEvents
+  /* 6 */ val ProgressToneStart: typingsJapgolly.voximplantWebsdk.mod.CallEvents.ProgressToneStart & Double = js.native
   
-  /* 8 */ @js.native
-  object TransferComplete extends TopLevel[TransferComplete with Double]
+  @js.native
+  sealed trait ProgressToneStop
+    extends StObject
+       with CallEvents
+  /* 7 */ val ProgressToneStop: typingsJapgolly.voximplantWebsdk.mod.CallEvents.ProgressToneStop & Double = js.native
   
-  /* 9 */ @js.native
-  object TransferFailed extends TopLevel[TransferFailed with Double]
+  @js.native
+  sealed trait TransferComplete
+    extends StObject
+       with CallEvents
+  /* 8 */ val TransferComplete: typingsJapgolly.voximplantWebsdk.mod.CallEvents.TransferComplete & Double = js.native
   
+  @js.native
+  sealed trait TransferFailed
+    extends StObject
+       with CallEvents
+  /* 9 */ val TransferFailed: typingsJapgolly.voximplantWebsdk.mod.CallEvents.TransferFailed & Double = js.native
 }
-

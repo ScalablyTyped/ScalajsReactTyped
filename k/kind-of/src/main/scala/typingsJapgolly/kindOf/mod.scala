@@ -1,5 +1,6 @@
 package typingsJapgolly.kindOf
 
+import typingsJapgolly.kindOf.kindOfStrings.`null`
 import typingsJapgolly.kindOf.kindOfStrings.arguments
 import typingsJapgolly.kindOf.kindOfStrings.array
 import typingsJapgolly.kindOf.kindOfStrings.arrayiterator
@@ -32,57 +33,47 @@ import typingsJapgolly.kindOf.kindOfStrings.uint8clampedarray
 import typingsJapgolly.kindOf.kindOfStrings.undefined
 import typingsJapgolly.kindOf.kindOfStrings.weakmap
 import typingsJapgolly.kindOf.kindOfStrings.weakset
-import typingsJapgolly.node.Buffer
-import typingsJapgolly.std.Date
-import typingsJapgolly.std.Error
-import typingsJapgolly.std.Float32Array
-import typingsJapgolly.std.Float64Array
-import typingsJapgolly.std.Int16Array
-import typingsJapgolly.std.Int32Array
-import typingsJapgolly.std.Int8Array
-import typingsJapgolly.std.Iterator
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.std.Map
-import typingsJapgolly.std.RegExp
 import typingsJapgolly.std.Set
-import typingsJapgolly.std.Uint16Array
-import typingsJapgolly.std.Uint32Array
-import typingsJapgolly.std.Uint8Array
-import typingsJapgolly.std.Uint8ClampedArray
 import typingsJapgolly.std.WeakMap
 import typingsJapgolly.std.WeakSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("kind-of", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): undefined = js.native
-  def apply(thing: String): string = js.native
-  def apply(thing: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof arguments */ js.Any): arguments = js.native
-  def apply(thing: js.Array[_]): array = js.native
-  def apply(thing: js.Function1[/* repeated */ js.Any, _]): function | generatorfunction = js.native
-  def apply(thing: js.Promise[_]): promise = js.native
-  def apply(thing: js.Symbol): symbol = js.native
-  def apply(thing: Boolean): boolean = js.native
-  def apply(thing: Double): number = js.native
-  def apply(thing: Buffer): buffer = js.native
-  def apply(thing: Date): date = js.native
-  def apply(thing: Error): error = js.native
-  def apply(thing: Float32Array): float32array = js.native
-  def apply(thing: Float64Array): float64array = js.native
-  def apply(thing: Int16Array): int16array = js.native
-  def apply(thing: Int32Array): int32array = js.native
-  def apply(thing: Int8Array): int8array = js.native
-  def apply(thing: Iterator[_, _, js.UndefOr[scala.Nothing]]): generator | stringiterator | arrayiterator | mapiterator | setiterator = js.native
-  def apply(thing: Map[_, _]): map = js.native
-  def apply(thing: RegExp): regexp = js.native
-  def apply(thing: Set[_]): set = js.native
-  def apply(thing: Uint16Array): uint16array = js.native
-  def apply(thing: Uint32Array): uint32array = js.native
-  def apply(thing: Uint8Array): uint8array = js.native
-  def apply(thing: Uint8ClampedArray): uint8clampedarray = js.native
-  def apply(thing: WeakMap[_, _]): weakmap = js.native
-  def apply(thing: WeakSet[_]): weakset = js.native
+object mod {
+  
+  inline def apply(thing: String): string = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[string]
+  inline def apply(thing: js.Array[Any]): array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[array]
+  inline def apply(thing: js.Date): date = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[date]
+  inline def apply(thing: js.Error): error = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[error]
+  inline def apply(thing: js.Function1[/* repeated */ Any, Any]): function | generatorfunction = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[function | generatorfunction]
+  inline def apply(thing: js.Iterator[Any]): generator | stringiterator | arrayiterator | mapiterator | setiterator = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[generator | stringiterator | arrayiterator | mapiterator | setiterator]
+  inline def apply(thing: js.Promise[Any]): promise = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[promise]
+  inline def apply(thing: js.RegExp): regexp = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[regexp]
+  inline def apply(thing: js.Symbol): symbol = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[symbol]
+  inline def apply(thing: js.typedarray.Float32Array): float32array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[float32array]
+  inline def apply(thing: js.typedarray.Float64Array): float64array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[float64array]
+  inline def apply(thing: js.typedarray.Int16Array): int16array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[int16array]
+  inline def apply(thing: js.typedarray.Int32Array): int32array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[int32array]
+  inline def apply(thing: js.typedarray.Int8Array): int8array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[int8array]
+  inline def apply(thing: js.typedarray.Uint16Array): uint16array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[uint16array]
+  inline def apply(thing: js.typedarray.Uint32Array): uint32array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[uint32array]
+  inline def apply(thing: js.typedarray.Uint8Array): uint8array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[uint8array]
+  inline def apply(thing: js.typedarray.Uint8ClampedArray): uint8clampedarray = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[uint8clampedarray]
+  inline def apply(thing: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof arguments */ Any): arguments = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[arguments]
+  inline def apply(thing: Boolean): boolean = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[boolean]
+  inline def apply(thing: Double): number = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[number]
+  inline def apply(thing: Null): `null` = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[`null`]
+  inline def apply(thing: Unit): undefined = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[undefined]
+  inline def apply(thing: Buffer): buffer = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[buffer]
+  inline def apply(thing: Map[Any, Any]): map = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[map]
+  inline def apply(thing: Set[Any]): set = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[set]
+  inline def apply(thing: WeakMap[Any, Any]): weakmap = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[weakmap]
+  inline def apply(thing: WeakSet[Any]): weakset = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[weakset]
+  
+  @JSImport("kind-of", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

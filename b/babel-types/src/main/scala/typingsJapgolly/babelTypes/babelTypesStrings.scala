@@ -1,1239 +1,992 @@
 package typingsJapgolly.babelTypes
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object babelTypesStrings {
-  @js.native
-  sealed trait `--` extends js.Object
   
   @js.native
-  sealed trait `-Equalssign` extends js.Object
+  sealed trait ^ extends StObject
+  inline def ^ : ^ = "^".asInstanceOf[^]
   
   @js.native
-  sealed trait `-_` extends js.Object
+  sealed trait `--` extends StObject
+  inline def `--`: `--` = "--".asInstanceOf[`--`]
   
   @js.native
-  sealed trait Ampersand extends js.Object
+  sealed trait `-Equalssign` extends StObject
+  inline def `-Equalssign`: `-Equalssign` = "-=".asInstanceOf[`-Equalssign`]
   
   @js.native
-  sealed trait AmpersandAmpersand extends js.Object
+  sealed trait `-_` extends StObject
+  inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
-  sealed trait AmpersandEqualssign extends js.Object
+  sealed trait Ampersand extends StObject
+  inline def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
   
   @js.native
-  sealed trait AnyTypeAnnotation extends js.Object
+  sealed trait AmpersandAmpersand extends StObject
+  inline def AmpersandAmpersand: AmpersandAmpersand = "&&".asInstanceOf[AmpersandAmpersand]
   
   @js.native
-  sealed trait ArrayExpression extends js.Object
+  sealed trait AmpersandEqualssign extends StObject
+  inline def AmpersandEqualssign: AmpersandEqualssign = "&=".asInstanceOf[AmpersandEqualssign]
   
   @js.native
-  sealed trait ArrayPattern extends js.Object
+  sealed trait AnyTypeAnnotation extends StObject
+  inline def AnyTypeAnnotation: AnyTypeAnnotation = "AnyTypeAnnotation".asInstanceOf[AnyTypeAnnotation]
   
   @js.native
-  sealed trait ArrayTypeAnnotation extends js.Object
+  sealed trait ArrayExpression extends StObject
+  inline def ArrayExpression: ArrayExpression = "ArrayExpression".asInstanceOf[ArrayExpression]
   
   @js.native
-  sealed trait ArrowFunctionExpression extends js.Object
+  sealed trait ArrayPattern extends StObject
+  inline def ArrayPattern: ArrayPattern = "ArrayPattern".asInstanceOf[ArrayPattern]
   
   @js.native
-  sealed trait AssignmentExpression extends js.Object
+  sealed trait ArrayTypeAnnotation extends StObject
+  inline def ArrayTypeAnnotation: ArrayTypeAnnotation = "ArrayTypeAnnotation".asInstanceOf[ArrayTypeAnnotation]
   
   @js.native
-  sealed trait AssignmentPattern extends js.Object
+  sealed trait ArrowFunctionExpression extends StObject
+  inline def ArrowFunctionExpression: ArrowFunctionExpression = "ArrowFunctionExpression".asInstanceOf[ArrowFunctionExpression]
   
   @js.native
-  sealed trait Asterisk extends js.Object
+  sealed trait AssignmentExpression extends StObject
+  inline def AssignmentExpression: AssignmentExpression = "AssignmentExpression".asInstanceOf[AssignmentExpression]
   
   @js.native
-  sealed trait AsteriskAsterisk extends js.Object
+  sealed trait AssignmentPattern extends StObject
+  inline def AssignmentPattern: AssignmentPattern = "AssignmentPattern".asInstanceOf[AssignmentPattern]
   
   @js.native
-  sealed trait AsteriskEqualssign extends js.Object
+  sealed trait Asterisk extends StObject
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
-  sealed trait AwaitExpression extends js.Object
+  sealed trait AsteriskAsterisk extends StObject
+  inline def AsteriskAsterisk: AsteriskAsterisk = "**".asInstanceOf[AsteriskAsterisk]
   
   @js.native
-  sealed trait BinaryExpression extends js.Object
+  sealed trait AsteriskEqualssign extends StObject
+  inline def AsteriskEqualssign: AsteriskEqualssign = "*=".asInstanceOf[AsteriskEqualssign]
   
   @js.native
-  sealed trait BindExpression extends js.Object
+  sealed trait AwaitExpression extends StObject
+  inline def AwaitExpression: AwaitExpression = "AwaitExpression".asInstanceOf[AwaitExpression]
   
   @js.native
-  sealed trait BlockStatement extends js.Object
+  sealed trait BinaryExpression extends StObject
+  inline def BinaryExpression: BinaryExpression = "BinaryExpression".asInstanceOf[BinaryExpression]
   
   @js.native
-  sealed trait BooleanLiteral extends js.Object
+  sealed trait BindExpression extends StObject
+  inline def BindExpression: BindExpression = "BindExpression".asInstanceOf[BindExpression]
   
   @js.native
-  sealed trait BooleanLiteralTypeAnnotation extends js.Object
+  sealed trait BlockStatement extends StObject
+  inline def BlockStatement: BlockStatement = "BlockStatement".asInstanceOf[BlockStatement]
   
   @js.native
-  sealed trait BooleanTypeAnnotation extends js.Object
+  sealed trait BooleanLiteral extends StObject
+  inline def BooleanLiteral: BooleanLiteral = "BooleanLiteral".asInstanceOf[BooleanLiteral]
   
   @js.native
-  sealed trait BreakStatement extends js.Object
+  sealed trait BooleanLiteralTypeAnnotation extends StObject
+  inline def BooleanLiteralTypeAnnotation: BooleanLiteralTypeAnnotation = "BooleanLiteralTypeAnnotation".asInstanceOf[BooleanLiteralTypeAnnotation]
   
   @js.native
-  sealed trait CallExpression extends js.Object
+  sealed trait BooleanTypeAnnotation extends StObject
+  inline def BooleanTypeAnnotation: BooleanTypeAnnotation = "BooleanTypeAnnotation".asInstanceOf[BooleanTypeAnnotation]
   
   @js.native
-  sealed trait CatchClause extends js.Object
+  sealed trait BreakStatement extends StObject
+  inline def BreakStatement: BreakStatement = "BreakStatement".asInstanceOf[BreakStatement]
   
   @js.native
-  sealed trait ClassBody extends js.Object
+  sealed trait CallExpression extends StObject
+  inline def CallExpression: CallExpression = "CallExpression".asInstanceOf[CallExpression]
   
   @js.native
-  sealed trait ClassDeclaration extends js.Object
+  sealed trait CatchClause extends StObject
+  inline def CatchClause: CatchClause = "CatchClause".asInstanceOf[CatchClause]
   
   @js.native
-  sealed trait ClassExpression extends js.Object
+  sealed trait ClassBody extends StObject
+  inline def ClassBody: ClassBody = "ClassBody".asInstanceOf[ClassBody]
   
   @js.native
-  sealed trait ClassImplements extends js.Object
+  sealed trait ClassDeclaration extends StObject
+  inline def ClassDeclaration: ClassDeclaration = "ClassDeclaration".asInstanceOf[ClassDeclaration]
   
   @js.native
-  sealed trait ClassMethod extends js.Object
+  sealed trait ClassExpression extends StObject
+  inline def ClassExpression: ClassExpression = "ClassExpression".asInstanceOf[ClassExpression]
   
   @js.native
-  sealed trait ClassProperty extends js.Object
+  sealed trait ClassImplements extends StObject
+  inline def ClassImplements: ClassImplements = "ClassImplements".asInstanceOf[ClassImplements]
   
   @js.native
-  sealed trait CommentBlock extends js.Object
+  sealed trait ClassMethod extends StObject
+  inline def ClassMethod: ClassMethod = "ClassMethod".asInstanceOf[ClassMethod]
   
   @js.native
-  sealed trait CommentLine extends js.Object
+  sealed trait ClassProperty extends StObject
+  inline def ClassProperty: ClassProperty = "ClassProperty".asInstanceOf[ClassProperty]
   
   @js.native
-  sealed trait ConditionalExpression extends js.Object
+  sealed trait CommentBlock extends StObject
+  inline def CommentBlock: CommentBlock = "CommentBlock".asInstanceOf[CommentBlock]
   
   @js.native
-  sealed trait ContinueStatement extends js.Object
+  sealed trait CommentLine extends StObject
+  inline def CommentLine: CommentLine = "CommentLine".asInstanceOf[CommentLine]
   
   @js.native
-  sealed trait DebuggerStatement extends js.Object
+  sealed trait ConditionalExpression extends StObject
+  inline def ConditionalExpression: ConditionalExpression = "ConditionalExpression".asInstanceOf[ConditionalExpression]
   
   @js.native
-  sealed trait DeclareClass extends js.Object
+  sealed trait ContinueStatement extends StObject
+  inline def ContinueStatement: ContinueStatement = "ContinueStatement".asInstanceOf[ContinueStatement]
   
   @js.native
-  sealed trait DeclareFunction extends js.Object
+  sealed trait DebuggerStatement extends StObject
+  inline def DebuggerStatement: DebuggerStatement = "DebuggerStatement".asInstanceOf[DebuggerStatement]
   
   @js.native
-  sealed trait DeclareInterface extends js.Object
+  sealed trait DeclareClass extends StObject
+  inline def DeclareClass: DeclareClass = "DeclareClass".asInstanceOf[DeclareClass]
   
   @js.native
-  sealed trait DeclareModule extends js.Object
+  sealed trait DeclareFunction extends StObject
+  inline def DeclareFunction: DeclareFunction = "DeclareFunction".asInstanceOf[DeclareFunction]
   
   @js.native
-  sealed trait DeclareTypeAlias extends js.Object
+  sealed trait DeclareInterface extends StObject
+  inline def DeclareInterface: DeclareInterface = "DeclareInterface".asInstanceOf[DeclareInterface]
   
   @js.native
-  sealed trait DeclareVariable extends js.Object
+  sealed trait DeclareModule extends StObject
+  inline def DeclareModule: DeclareModule = "DeclareModule".asInstanceOf[DeclareModule]
   
   @js.native
-  sealed trait Decorator extends js.Object
+  sealed trait DeclareTypeAlias extends StObject
+  inline def DeclareTypeAlias: DeclareTypeAlias = "DeclareTypeAlias".asInstanceOf[DeclareTypeAlias]
   
   @js.native
-  sealed trait Directive extends js.Object
+  sealed trait DeclareVariable extends StObject
+  inline def DeclareVariable: DeclareVariable = "DeclareVariable".asInstanceOf[DeclareVariable]
   
   @js.native
-  sealed trait DirectiveLiteral extends js.Object
+  sealed trait Decorator extends StObject
+  inline def Decorator: Decorator = "Decorator".asInstanceOf[Decorator]
   
   @js.native
-  sealed trait DoExpression extends js.Object
+  sealed trait Directive extends StObject
+  inline def Directive: Directive = "Directive".asInstanceOf[Directive]
   
   @js.native
-  sealed trait DoWhileStatement extends js.Object
+  sealed trait DirectiveLiteral extends StObject
+  inline def DirectiveLiteral: DirectiveLiteral = "DirectiveLiteral".asInstanceOf[DirectiveLiteral]
   
   @js.native
-  sealed trait EmptyStatement extends js.Object
+  sealed trait DoExpression extends StObject
+  inline def DoExpression: DoExpression = "DoExpression".asInstanceOf[DoExpression]
   
   @js.native
-  sealed trait Equalssign extends js.Object
+  sealed trait DoWhileStatement extends StObject
+  inline def DoWhileStatement: DoWhileStatement = "DoWhileStatement".asInstanceOf[DoWhileStatement]
   
   @js.native
-  sealed trait EqualssignEqualssign extends js.Object
+  sealed trait EmptyStatement extends StObject
+  inline def EmptyStatement: EmptyStatement = "EmptyStatement".asInstanceOf[EmptyStatement]
   
   @js.native
-  sealed trait EqualssignEqualssignEqualssign extends js.Object
+  sealed trait Equalssign extends StObject
+  inline def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait Exclamationmark extends js.Object
+  sealed trait EqualssignEqualssign extends StObject
+  inline def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   
   @js.native
-  sealed trait ExclamationmarkEqualssign extends js.Object
+  sealed trait EqualssignEqualssignEqualssign extends StObject
+  inline def EqualssignEqualssignEqualssign: EqualssignEqualssignEqualssign = "===".asInstanceOf[EqualssignEqualssignEqualssign]
   
   @js.native
-  sealed trait ExclamationmarkEqualssignEqualssign extends js.Object
+  sealed trait Exclamationmark extends StObject
+  inline def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
   
   @js.native
-  sealed trait ExistentialTypeParam extends js.Object
+  sealed trait ExclamationmarkEqualssign extends StObject
+  inline def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   
   @js.native
-  sealed trait ExportAllDeclaration extends js.Object
+  sealed trait ExclamationmarkEqualssignEqualssign extends StObject
+  inline def ExclamationmarkEqualssignEqualssign: ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[ExclamationmarkEqualssignEqualssign]
   
   @js.native
-  sealed trait ExportDefaultDeclaration extends js.Object
+  sealed trait ExistentialTypeParam extends StObject
+  inline def ExistentialTypeParam: ExistentialTypeParam = "ExistentialTypeParam".asInstanceOf[ExistentialTypeParam]
   
   @js.native
-  sealed trait ExportDefaultSpecifier extends js.Object
+  sealed trait ExportAllDeclaration extends StObject
+  inline def ExportAllDeclaration: ExportAllDeclaration = "ExportAllDeclaration".asInstanceOf[ExportAllDeclaration]
   
   @js.native
-  sealed trait ExportNamedDeclaration extends js.Object
+  sealed trait ExportDefaultDeclaration extends StObject
+  inline def ExportDefaultDeclaration: ExportDefaultDeclaration = "ExportDefaultDeclaration".asInstanceOf[ExportDefaultDeclaration]
   
   @js.native
-  sealed trait ExportNamespaceSpecifier extends js.Object
+  sealed trait ExportDefaultSpecifier extends StObject
+  inline def ExportDefaultSpecifier: ExportDefaultSpecifier = "ExportDefaultSpecifier".asInstanceOf[ExportDefaultSpecifier]
   
   @js.native
-  sealed trait ExportSpecifier extends js.Object
+  sealed trait ExportNamedDeclaration extends StObject
+  inline def ExportNamedDeclaration: ExportNamedDeclaration = "ExportNamedDeclaration".asInstanceOf[ExportNamedDeclaration]
   
   @js.native
-  sealed trait ExpressionStatement extends js.Object
+  sealed trait ExportNamespaceSpecifier extends StObject
+  inline def ExportNamespaceSpecifier: ExportNamespaceSpecifier = "ExportNamespaceSpecifier".asInstanceOf[ExportNamespaceSpecifier]
   
   @js.native
-  sealed trait File extends js.Object
+  sealed trait ExportSpecifier extends StObject
+  inline def ExportSpecifier: ExportSpecifier = "ExportSpecifier".asInstanceOf[ExportSpecifier]
   
   @js.native
-  sealed trait ForInStatement extends js.Object
+  sealed trait ExpressionStatement extends StObject
+  inline def ExpressionStatement: ExpressionStatement = "ExpressionStatement".asInstanceOf[ExpressionStatement]
   
   @js.native
-  sealed trait ForOfStatement extends js.Object
+  sealed trait File extends StObject
+  inline def File: File = "File".asInstanceOf[File]
   
   @js.native
-  sealed trait ForStatement extends js.Object
+  sealed trait ForInStatement extends StObject
+  inline def ForInStatement: ForInStatement = "ForInStatement".asInstanceOf[ForInStatement]
   
   @js.native
-  sealed trait FunctionDeclaration extends js.Object
+  sealed trait ForOfStatement extends StObject
+  inline def ForOfStatement: ForOfStatement = "ForOfStatement".asInstanceOf[ForOfStatement]
   
   @js.native
-  sealed trait FunctionExpression extends js.Object
+  sealed trait ForStatement extends StObject
+  inline def ForStatement: ForStatement = "ForStatement".asInstanceOf[ForStatement]
   
   @js.native
-  sealed trait FunctionTypeAnnotation extends js.Object
+  sealed trait FunctionDeclaration extends StObject
+  inline def FunctionDeclaration: FunctionDeclaration = "FunctionDeclaration".asInstanceOf[FunctionDeclaration]
   
   @js.native
-  sealed trait FunctionTypeParam extends js.Object
+  sealed trait FunctionExpression extends StObject
+  inline def FunctionExpression: FunctionExpression = "FunctionExpression".asInstanceOf[FunctionExpression]
   
   @js.native
-  sealed trait GenericTypeAnnotation extends js.Object
+  sealed trait FunctionTypeAnnotation extends StObject
+  inline def FunctionTypeAnnotation: FunctionTypeAnnotation = "FunctionTypeAnnotation".asInstanceOf[FunctionTypeAnnotation]
   
   @js.native
-  sealed trait Greaterthansign extends js.Object
+  sealed trait FunctionTypeParam extends StObject
+  inline def FunctionTypeParam: FunctionTypeParam = "FunctionTypeParam".asInstanceOf[FunctionTypeParam]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends js.Object
+  sealed trait GenericTypeAnnotation extends StObject
+  inline def GenericTypeAnnotation: GenericTypeAnnotation = "GenericTypeAnnotation".asInstanceOf[GenericTypeAnnotation]
   
   @js.native
-  sealed trait GreaterthansignGreaterthansign extends js.Object
+  sealed trait Greaterthansign extends StObject
+  inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait GreaterthansignGreaterthansignEqualssign extends js.Object
+  sealed trait GreaterthansignEqualssign extends StObject
+  inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait GreaterthansignGreaterthansignGreaterthansign extends js.Object
+  sealed trait GreaterthansignGreaterthansign extends StObject
+  inline def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
   
   @js.native
-  sealed trait GreaterthansignGreaterthansignGreaterthansignEqualssign extends js.Object
+  sealed trait GreaterthansignGreaterthansignEqualssign extends StObject
+  inline def GreaterthansignGreaterthansignEqualssign: GreaterthansignGreaterthansignEqualssign = ">>=".asInstanceOf[GreaterthansignGreaterthansignEqualssign]
   
   @js.native
-  sealed trait Identifier extends js.Object
+  sealed trait GreaterthansignGreaterthansignGreaterthansign extends StObject
+  inline def GreaterthansignGreaterthansignGreaterthansign: GreaterthansignGreaterthansignGreaterthansign = ">>>".asInstanceOf[GreaterthansignGreaterthansignGreaterthansign]
   
   @js.native
-  sealed trait IfStatement extends js.Object
+  sealed trait GreaterthansignGreaterthansignGreaterthansignEqualssign extends StObject
+  inline def GreaterthansignGreaterthansignGreaterthansignEqualssign: GreaterthansignGreaterthansignGreaterthansignEqualssign = ">>>=".asInstanceOf[GreaterthansignGreaterthansignGreaterthansignEqualssign]
   
   @js.native
-  sealed trait ImportDeclaration extends js.Object
+  sealed trait Identifier extends StObject
+  inline def Identifier: Identifier = "Identifier".asInstanceOf[Identifier]
   
   @js.native
-  sealed trait ImportDefaultSpecifier extends js.Object
+  sealed trait IfStatement extends StObject
+  inline def IfStatement: IfStatement = "IfStatement".asInstanceOf[IfStatement]
   
   @js.native
-  sealed trait ImportNamespaceSpecifier extends js.Object
+  sealed trait ImportDeclaration extends StObject
+  inline def ImportDeclaration: ImportDeclaration = "ImportDeclaration".asInstanceOf[ImportDeclaration]
   
   @js.native
-  sealed trait ImportSpecifier extends js.Object
+  sealed trait ImportDefaultSpecifier extends StObject
+  inline def ImportDefaultSpecifier: ImportDefaultSpecifier = "ImportDefaultSpecifier".asInstanceOf[ImportDefaultSpecifier]
   
   @js.native
-  sealed trait InterfaceDeclaration extends js.Object
+  sealed trait ImportNamespaceSpecifier extends StObject
+  inline def ImportNamespaceSpecifier: ImportNamespaceSpecifier = "ImportNamespaceSpecifier".asInstanceOf[ImportNamespaceSpecifier]
   
   @js.native
-  sealed trait InterfaceExtends extends js.Object
+  sealed trait ImportSpecifier extends StObject
+  inline def ImportSpecifier: ImportSpecifier = "ImportSpecifier".asInstanceOf[ImportSpecifier]
   
   @js.native
-  sealed trait IntersectionTypeAnnotation extends js.Object
+  sealed trait InterfaceDeclaration extends StObject
+  inline def InterfaceDeclaration: InterfaceDeclaration = "InterfaceDeclaration".asInstanceOf[InterfaceDeclaration]
   
   @js.native
-  sealed trait JSXAttribute extends js.Object
+  sealed trait InterfaceExtends extends StObject
+  inline def InterfaceExtends: InterfaceExtends = "InterfaceExtends".asInstanceOf[InterfaceExtends]
   
   @js.native
-  sealed trait JSXClosingElement extends js.Object
+  sealed trait IntersectionTypeAnnotation extends StObject
+  inline def IntersectionTypeAnnotation: IntersectionTypeAnnotation = "IntersectionTypeAnnotation".asInstanceOf[IntersectionTypeAnnotation]
   
   @js.native
-  sealed trait JSXElement extends js.Object
+  sealed trait JSXAttribute extends StObject
+  inline def JSXAttribute: JSXAttribute = "JSXAttribute".asInstanceOf[JSXAttribute]
   
   @js.native
-  sealed trait JSXEmptyExpression extends js.Object
+  sealed trait JSXClosingElement extends StObject
+  inline def JSXClosingElement: JSXClosingElement = "JSXClosingElement".asInstanceOf[JSXClosingElement]
   
   @js.native
-  sealed trait JSXExpressionContainer extends js.Object
+  sealed trait JSXElement extends StObject
+  inline def JSXElement: JSXElement = "JSXElement".asInstanceOf[JSXElement]
   
   @js.native
-  sealed trait JSXIdentifier extends js.Object
+  sealed trait JSXEmptyExpression extends StObject
+  inline def JSXEmptyExpression: JSXEmptyExpression = "JSXEmptyExpression".asInstanceOf[JSXEmptyExpression]
   
   @js.native
-  sealed trait JSXMemberExpression extends js.Object
+  sealed trait JSXExpressionContainer extends StObject
+  inline def JSXExpressionContainer: JSXExpressionContainer = "JSXExpressionContainer".asInstanceOf[JSXExpressionContainer]
   
   @js.native
-  sealed trait JSXNamespacedName extends js.Object
+  sealed trait JSXIdentifier extends StObject
+  inline def JSXIdentifier: JSXIdentifier = "JSXIdentifier".asInstanceOf[JSXIdentifier]
   
   @js.native
-  sealed trait JSXOpeningElement extends js.Object
+  sealed trait JSXMemberExpression extends StObject
+  inline def JSXMemberExpression: JSXMemberExpression = "JSXMemberExpression".asInstanceOf[JSXMemberExpression]
   
   @js.native
-  sealed trait JSXSpreadAttribute extends js.Object
+  sealed trait JSXNamespacedName extends StObject
+  inline def JSXNamespacedName: JSXNamespacedName = "JSXNamespacedName".asInstanceOf[JSXNamespacedName]
   
   @js.native
-  sealed trait JSXText extends js.Object
+  sealed trait JSXOpeningElement extends StObject
+  inline def JSXOpeningElement: JSXOpeningElement = "JSXOpeningElement".asInstanceOf[JSXOpeningElement]
   
   @js.native
-  sealed trait LabeledStatement extends js.Object
+  sealed trait JSXSpreadAttribute extends StObject
+  inline def JSXSpreadAttribute: JSXSpreadAttribute = "JSXSpreadAttribute".asInstanceOf[JSXSpreadAttribute]
   
   @js.native
-  sealed trait Lessthansign extends js.Object
+  sealed trait JSXText extends StObject
+  inline def JSXText: JSXText = "JSXText".asInstanceOf[JSXText]
   
   @js.native
-  sealed trait LessthansignEqualssign extends js.Object
+  sealed trait LabeledStatement extends StObject
+  inline def LabeledStatement: LabeledStatement = "LabeledStatement".asInstanceOf[LabeledStatement]
   
   @js.native
-  sealed trait LessthansignLessthansign extends js.Object
+  sealed trait Lessthansign extends StObject
+  inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait LessthansignLessthansignEqualssign extends js.Object
+  sealed trait LessthansignEqualssign extends StObject
+  inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
-  sealed trait LogicalExpression extends js.Object
+  sealed trait LessthansignLessthansign extends StObject
+  inline def LessthansignLessthansign: LessthansignLessthansign = "<<".asInstanceOf[LessthansignLessthansign]
   
   @js.native
-  sealed trait MemberExpression extends js.Object
+  sealed trait LessthansignLessthansignEqualssign extends StObject
+  inline def LessthansignLessthansignEqualssign: LessthansignLessthansignEqualssign = "<<=".asInstanceOf[LessthansignLessthansignEqualssign]
   
   @js.native
-  sealed trait MetaProperty extends js.Object
+  sealed trait LogicalExpression extends StObject
+  inline def LogicalExpression: LogicalExpression = "LogicalExpression".asInstanceOf[LogicalExpression]
   
   @js.native
-  sealed trait MixedTypeAnnotation extends js.Object
+  sealed trait MemberExpression extends StObject
+  inline def MemberExpression: MemberExpression = "MemberExpression".asInstanceOf[MemberExpression]
   
   @js.native
-  sealed trait NewExpression extends js.Object
+  sealed trait MetaProperty extends StObject
+  inline def MetaProperty: MetaProperty = "MetaProperty".asInstanceOf[MetaProperty]
   
   @js.native
-  sealed trait Noop extends js.Object
+  sealed trait MixedTypeAnnotation extends StObject
+  inline def MixedTypeAnnotation: MixedTypeAnnotation = "MixedTypeAnnotation".asInstanceOf[MixedTypeAnnotation]
   
   @js.native
-  sealed trait NullLiteral extends js.Object
+  sealed trait NewExpression extends StObject
+  inline def NewExpression: NewExpression = "NewExpression".asInstanceOf[NewExpression]
   
   @js.native
-  sealed trait NullLiteralTypeAnnotation extends js.Object
+  sealed trait Noop extends StObject
+  inline def Noop: Noop = "Noop".asInstanceOf[Noop]
   
   @js.native
-  sealed trait NullableTypeAnnotation extends js.Object
+  sealed trait NullLiteral extends StObject
+  inline def NullLiteral: NullLiteral = "NullLiteral".asInstanceOf[NullLiteral]
   
   @js.native
-  sealed trait NumberTypeAnnotation extends js.Object
+  sealed trait NullLiteralTypeAnnotation extends StObject
+  inline def NullLiteralTypeAnnotation: NullLiteralTypeAnnotation = "NullLiteralTypeAnnotation".asInstanceOf[NullLiteralTypeAnnotation]
   
   @js.native
-  sealed trait NumericLiteral extends js.Object
+  sealed trait NullableTypeAnnotation extends StObject
+  inline def NullableTypeAnnotation: NullableTypeAnnotation = "NullableTypeAnnotation".asInstanceOf[NullableTypeAnnotation]
   
   @js.native
-  sealed trait NumericLiteralTypeAnnotation extends js.Object
+  sealed trait NumberTypeAnnotation extends StObject
+  inline def NumberTypeAnnotation: NumberTypeAnnotation = "NumberTypeAnnotation".asInstanceOf[NumberTypeAnnotation]
   
   @js.native
-  sealed trait ObjectExpression extends js.Object
+  sealed trait NumericLiteral extends StObject
+  inline def NumericLiteral: NumericLiteral = "NumericLiteral".asInstanceOf[NumericLiteral]
   
   @js.native
-  sealed trait ObjectMethod extends js.Object
+  sealed trait NumericLiteralTypeAnnotation extends StObject
+  inline def NumericLiteralTypeAnnotation: NumericLiteralTypeAnnotation = "NumericLiteralTypeAnnotation".asInstanceOf[NumericLiteralTypeAnnotation]
   
   @js.native
-  sealed trait ObjectPattern extends js.Object
+  sealed trait ObjectExpression extends StObject
+  inline def ObjectExpression: ObjectExpression = "ObjectExpression".asInstanceOf[ObjectExpression]
   
   @js.native
-  sealed trait ObjectProperty extends js.Object
+  sealed trait ObjectMethod extends StObject
+  inline def ObjectMethod: ObjectMethod = "ObjectMethod".asInstanceOf[ObjectMethod]
   
   @js.native
-  sealed trait ObjectTypeAnnotation extends js.Object
+  sealed trait ObjectPattern extends StObject
+  inline def ObjectPattern: ObjectPattern = "ObjectPattern".asInstanceOf[ObjectPattern]
   
   @js.native
-  sealed trait ObjectTypeCallProperty extends js.Object
+  sealed trait ObjectProperty extends StObject
+  inline def ObjectProperty: ObjectProperty = "ObjectProperty".asInstanceOf[ObjectProperty]
   
   @js.native
-  sealed trait ObjectTypeIndexer extends js.Object
+  sealed trait ObjectTypeAnnotation extends StObject
+  inline def ObjectTypeAnnotation: ObjectTypeAnnotation = "ObjectTypeAnnotation".asInstanceOf[ObjectTypeAnnotation]
   
   @js.native
-  sealed trait ObjectTypeProperty extends js.Object
+  sealed trait ObjectTypeCallProperty extends StObject
+  inline def ObjectTypeCallProperty: ObjectTypeCallProperty = "ObjectTypeCallProperty".asInstanceOf[ObjectTypeCallProperty]
   
   @js.native
-  sealed trait ParenthesizedExpression extends js.Object
+  sealed trait ObjectTypeIndexer extends StObject
+  inline def ObjectTypeIndexer: ObjectTypeIndexer = "ObjectTypeIndexer".asInstanceOf[ObjectTypeIndexer]
   
   @js.native
-  sealed trait Percentsign extends js.Object
+  sealed trait ObjectTypeProperty extends StObject
+  inline def ObjectTypeProperty: ObjectTypeProperty = "ObjectTypeProperty".asInstanceOf[ObjectTypeProperty]
   
   @js.native
-  sealed trait PercentsignEqualssign extends js.Object
+  sealed trait ParenthesizedExpression extends StObject
+  inline def ParenthesizedExpression: ParenthesizedExpression = "ParenthesizedExpression".asInstanceOf[ParenthesizedExpression]
   
   @js.native
-  sealed trait Plussign extends js.Object
+  sealed trait Percentsign extends StObject
+  inline def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
   
   @js.native
-  sealed trait PlussignEqualssign extends js.Object
+  sealed trait PercentsignEqualssign extends StObject
+  inline def PercentsignEqualssign: PercentsignEqualssign = "%=".asInstanceOf[PercentsignEqualssign]
   
   @js.native
-  sealed trait PlussignPlussign extends js.Object
+  sealed trait Plussign extends StObject
+  inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
   @js.native
-  sealed trait Program extends js.Object
+  sealed trait PlussignEqualssign extends StObject
+  inline def PlussignEqualssign: PlussignEqualssign = "+=".asInstanceOf[PlussignEqualssign]
   
   @js.native
-  sealed trait QualifiedTypeIdentifier extends js.Object
+  sealed trait PlussignPlussign extends StObject
+  inline def PlussignPlussign: PlussignPlussign = "++".asInstanceOf[PlussignPlussign]
   
   @js.native
-  sealed trait RegExpLiteral extends js.Object
+  sealed trait Program extends StObject
+  inline def Program: Program = "Program".asInstanceOf[Program]
   
   @js.native
-  sealed trait RestElement extends js.Object
+  sealed trait QualifiedTypeIdentifier extends StObject
+  inline def QualifiedTypeIdentifier: QualifiedTypeIdentifier = "QualifiedTypeIdentifier".asInstanceOf[QualifiedTypeIdentifier]
   
   @js.native
-  sealed trait RestProperty extends js.Object
+  sealed trait RegExpLiteral extends StObject
+  inline def RegExpLiteral: RegExpLiteral = "RegExpLiteral".asInstanceOf[RegExpLiteral]
   
   @js.native
-  sealed trait ReturnStatement extends js.Object
+  sealed trait RestElement extends StObject
+  inline def RestElement: RestElement = "RestElement".asInstanceOf[RestElement]
   
   @js.native
-  sealed trait SequenceExpression extends js.Object
+  sealed trait RestProperty extends StObject
+  inline def RestProperty: RestProperty = "RestProperty".asInstanceOf[RestProperty]
   
   @js.native
-  sealed trait Slash extends js.Object
+  sealed trait ReturnStatement extends StObject
+  inline def ReturnStatement: ReturnStatement = "ReturnStatement".asInstanceOf[ReturnStatement]
   
   @js.native
-  sealed trait SlashEqualssign extends js.Object
+  sealed trait SequenceExpression extends StObject
+  inline def SequenceExpression: SequenceExpression = "SequenceExpression".asInstanceOf[SequenceExpression]
   
   @js.native
-  sealed trait SpreadElement extends js.Object
+  sealed trait Slash extends StObject
+  inline def Slash: Slash = "/".asInstanceOf[Slash]
   
   @js.native
-  sealed trait SpreadProperty extends js.Object
+  sealed trait SlashEqualssign extends StObject
+  inline def SlashEqualssign: SlashEqualssign = "/=".asInstanceOf[SlashEqualssign]
   
   @js.native
-  sealed trait StringLiteral extends js.Object
+  sealed trait SpreadElement extends StObject
+  inline def SpreadElement: SpreadElement = "SpreadElement".asInstanceOf[SpreadElement]
   
   @js.native
-  sealed trait StringLiteralTypeAnnotation extends js.Object
+  sealed trait SpreadProperty extends StObject
+  inline def SpreadProperty: SpreadProperty = "SpreadProperty".asInstanceOf[SpreadProperty]
   
   @js.native
-  sealed trait StringTypeAnnotation extends js.Object
+  sealed trait StringLiteral extends StObject
+  inline def StringLiteral: StringLiteral = "StringLiteral".asInstanceOf[StringLiteral]
   
   @js.native
-  sealed trait Super extends js.Object
+  sealed trait StringLiteralTypeAnnotation extends StObject
+  inline def StringLiteralTypeAnnotation: StringLiteralTypeAnnotation = "StringLiteralTypeAnnotation".asInstanceOf[StringLiteralTypeAnnotation]
   
   @js.native
-  sealed trait SwitchCase extends js.Object
+  sealed trait StringTypeAnnotation extends StObject
+  inline def StringTypeAnnotation: StringTypeAnnotation = "StringTypeAnnotation".asInstanceOf[StringTypeAnnotation]
   
   @js.native
-  sealed trait SwitchStatement extends js.Object
+  sealed trait Super extends StObject
+  inline def Super: Super = "Super".asInstanceOf[Super]
   
   @js.native
-  sealed trait TSAnyKeyword extends js.Object
+  sealed trait SwitchCase extends StObject
+  inline def SwitchCase: SwitchCase = "SwitchCase".asInstanceOf[SwitchCase]
   
   @js.native
-  sealed trait TSArrayType extends js.Object
+  sealed trait SwitchStatement extends StObject
+  inline def SwitchStatement: SwitchStatement = "SwitchStatement".asInstanceOf[SwitchStatement]
   
   @js.native
-  sealed trait TSAsExpression extends js.Object
+  sealed trait TSAnyKeyword extends StObject
+  inline def TSAnyKeyword: TSAnyKeyword = "TSAnyKeyword".asInstanceOf[TSAnyKeyword]
   
   @js.native
-  sealed trait TSBooleanKeyword extends js.Object
+  sealed trait TSArrayType extends StObject
+  inline def TSArrayType: TSArrayType = "TSArrayType".asInstanceOf[TSArrayType]
   
   @js.native
-  sealed trait TSCallSignatureDeclaration extends js.Object
+  sealed trait TSAsExpression extends StObject
+  inline def TSAsExpression: TSAsExpression = "TSAsExpression".asInstanceOf[TSAsExpression]
   
   @js.native
-  sealed trait TSConstructSignatureDeclaration extends js.Object
+  sealed trait TSBooleanKeyword extends StObject
+  inline def TSBooleanKeyword: TSBooleanKeyword = "TSBooleanKeyword".asInstanceOf[TSBooleanKeyword]
   
   @js.native
-  sealed trait TSConstructorType extends js.Object
+  sealed trait TSCallSignatureDeclaration extends StObject
+  inline def TSCallSignatureDeclaration: TSCallSignatureDeclaration = "TSCallSignatureDeclaration".asInstanceOf[TSCallSignatureDeclaration]
   
   @js.native
-  sealed trait TSDeclareFunction extends js.Object
+  sealed trait TSConstructSignatureDeclaration extends StObject
+  inline def TSConstructSignatureDeclaration: TSConstructSignatureDeclaration = "TSConstructSignatureDeclaration".asInstanceOf[TSConstructSignatureDeclaration]
   
   @js.native
-  sealed trait TSDeclareMethod extends js.Object
+  sealed trait TSConstructorType extends StObject
+  inline def TSConstructorType: TSConstructorType = "TSConstructorType".asInstanceOf[TSConstructorType]
   
   @js.native
-  sealed trait TSEnumDeclaration extends js.Object
+  sealed trait TSDeclareFunction extends StObject
+  inline def TSDeclareFunction: TSDeclareFunction = "TSDeclareFunction".asInstanceOf[TSDeclareFunction]
   
   @js.native
-  sealed trait TSEnumMember extends js.Object
+  sealed trait TSDeclareMethod extends StObject
+  inline def TSDeclareMethod: TSDeclareMethod = "TSDeclareMethod".asInstanceOf[TSDeclareMethod]
   
   @js.native
-  sealed trait TSExportAssignment extends js.Object
+  sealed trait TSEnumDeclaration extends StObject
+  inline def TSEnumDeclaration: TSEnumDeclaration = "TSEnumDeclaration".asInstanceOf[TSEnumDeclaration]
   
   @js.native
-  sealed trait TSExpressionWithTypeArguments extends js.Object
+  sealed trait TSEnumMember extends StObject
+  inline def TSEnumMember: TSEnumMember = "TSEnumMember".asInstanceOf[TSEnumMember]
   
   @js.native
-  sealed trait TSExternalModuleReference extends js.Object
+  sealed trait TSExportAssignment extends StObject
+  inline def TSExportAssignment: TSExportAssignment = "TSExportAssignment".asInstanceOf[TSExportAssignment]
   
   @js.native
-  sealed trait TSFunctionType extends js.Object
+  sealed trait TSExpressionWithTypeArguments extends StObject
+  inline def TSExpressionWithTypeArguments: TSExpressionWithTypeArguments = "TSExpressionWithTypeArguments".asInstanceOf[TSExpressionWithTypeArguments]
   
   @js.native
-  sealed trait TSImportEqualsDeclaration extends js.Object
+  sealed trait TSExternalModuleReference extends StObject
+  inline def TSExternalModuleReference: TSExternalModuleReference = "TSExternalModuleReference".asInstanceOf[TSExternalModuleReference]
   
   @js.native
-  sealed trait TSIndexSignature extends js.Object
+  sealed trait TSFunctionType extends StObject
+  inline def TSFunctionType: TSFunctionType = "TSFunctionType".asInstanceOf[TSFunctionType]
   
   @js.native
-  sealed trait TSIndexedAccessType extends js.Object
+  sealed trait TSImportEqualsDeclaration extends StObject
+  inline def TSImportEqualsDeclaration: TSImportEqualsDeclaration = "TSImportEqualsDeclaration".asInstanceOf[TSImportEqualsDeclaration]
   
   @js.native
-  sealed trait TSInterfaceBody extends js.Object
+  sealed trait TSIndexSignature extends StObject
+  inline def TSIndexSignature: TSIndexSignature = "TSIndexSignature".asInstanceOf[TSIndexSignature]
   
   @js.native
-  sealed trait TSInterfaceDeclaration extends js.Object
+  sealed trait TSIndexedAccessType extends StObject
+  inline def TSIndexedAccessType: TSIndexedAccessType = "TSIndexedAccessType".asInstanceOf[TSIndexedAccessType]
   
   @js.native
-  sealed trait TSIntersectionType extends js.Object
+  sealed trait TSInterfaceBody extends StObject
+  inline def TSInterfaceBody: TSInterfaceBody = "TSInterfaceBody".asInstanceOf[TSInterfaceBody]
   
   @js.native
-  sealed trait TSLiteralType extends js.Object
+  sealed trait TSInterfaceDeclaration extends StObject
+  inline def TSInterfaceDeclaration: TSInterfaceDeclaration = "TSInterfaceDeclaration".asInstanceOf[TSInterfaceDeclaration]
   
   @js.native
-  sealed trait TSMappedType extends js.Object
+  sealed trait TSIntersectionType extends StObject
+  inline def TSIntersectionType: TSIntersectionType = "TSIntersectionType".asInstanceOf[TSIntersectionType]
   
   @js.native
-  sealed trait TSMethodSignature extends js.Object
+  sealed trait TSLiteralType extends StObject
+  inline def TSLiteralType: TSLiteralType = "TSLiteralType".asInstanceOf[TSLiteralType]
   
   @js.native
-  sealed trait TSModuleBlock extends js.Object
+  sealed trait TSMappedType extends StObject
+  inline def TSMappedType: TSMappedType = "TSMappedType".asInstanceOf[TSMappedType]
   
   @js.native
-  sealed trait TSModuleDeclaration extends js.Object
+  sealed trait TSMethodSignature extends StObject
+  inline def TSMethodSignature: TSMethodSignature = "TSMethodSignature".asInstanceOf[TSMethodSignature]
   
   @js.native
-  sealed trait TSNamespaceExportDeclaration extends js.Object
+  sealed trait TSModuleBlock extends StObject
+  inline def TSModuleBlock: TSModuleBlock = "TSModuleBlock".asInstanceOf[TSModuleBlock]
   
   @js.native
-  sealed trait TSNeverKeyword extends js.Object
+  sealed trait TSModuleDeclaration extends StObject
+  inline def TSModuleDeclaration: TSModuleDeclaration = "TSModuleDeclaration".asInstanceOf[TSModuleDeclaration]
   
   @js.native
-  sealed trait TSNonNullExpression extends js.Object
+  sealed trait TSNamespaceExportDeclaration extends StObject
+  inline def TSNamespaceExportDeclaration: TSNamespaceExportDeclaration = "TSNamespaceExportDeclaration".asInstanceOf[TSNamespaceExportDeclaration]
   
   @js.native
-  sealed trait TSNullKeyword extends js.Object
+  sealed trait TSNeverKeyword extends StObject
+  inline def TSNeverKeyword: TSNeverKeyword = "TSNeverKeyword".asInstanceOf[TSNeverKeyword]
   
   @js.native
-  sealed trait TSNumberKeyword extends js.Object
+  sealed trait TSNonNullExpression extends StObject
+  inline def TSNonNullExpression: TSNonNullExpression = "TSNonNullExpression".asInstanceOf[TSNonNullExpression]
   
   @js.native
-  sealed trait TSObjectKeyword extends js.Object
+  sealed trait TSNullKeyword extends StObject
+  inline def TSNullKeyword: TSNullKeyword = "TSNullKeyword".asInstanceOf[TSNullKeyword]
   
   @js.native
-  sealed trait TSParameterProperty extends js.Object
+  sealed trait TSNumberKeyword extends StObject
+  inline def TSNumberKeyword: TSNumberKeyword = "TSNumberKeyword".asInstanceOf[TSNumberKeyword]
   
   @js.native
-  sealed trait TSParenthesizedType extends js.Object
+  sealed trait TSObjectKeyword extends StObject
+  inline def TSObjectKeyword: TSObjectKeyword = "TSObjectKeyword".asInstanceOf[TSObjectKeyword]
   
   @js.native
-  sealed trait TSPropertySignature extends js.Object
+  sealed trait TSParameterProperty extends StObject
+  inline def TSParameterProperty: TSParameterProperty = "TSParameterProperty".asInstanceOf[TSParameterProperty]
   
   @js.native
-  sealed trait TSQualifiedName extends js.Object
+  sealed trait TSParenthesizedType extends StObject
+  inline def TSParenthesizedType: TSParenthesizedType = "TSParenthesizedType".asInstanceOf[TSParenthesizedType]
   
   @js.native
-  sealed trait TSStringKeyword extends js.Object
+  sealed trait TSPropertySignature extends StObject
+  inline def TSPropertySignature: TSPropertySignature = "TSPropertySignature".asInstanceOf[TSPropertySignature]
   
   @js.native
-  sealed trait TSSymbolKeyword extends js.Object
+  sealed trait TSQualifiedName extends StObject
+  inline def TSQualifiedName: TSQualifiedName = "TSQualifiedName".asInstanceOf[TSQualifiedName]
   
   @js.native
-  sealed trait TSThisType extends js.Object
+  sealed trait TSStringKeyword extends StObject
+  inline def TSStringKeyword: TSStringKeyword = "TSStringKeyword".asInstanceOf[TSStringKeyword]
   
   @js.native
-  sealed trait TSTupleType extends js.Object
+  sealed trait TSSymbolKeyword extends StObject
+  inline def TSSymbolKeyword: TSSymbolKeyword = "TSSymbolKeyword".asInstanceOf[TSSymbolKeyword]
   
   @js.native
-  sealed trait TSTypeAliasDeclaration extends js.Object
+  sealed trait TSThisType extends StObject
+  inline def TSThisType: TSThisType = "TSThisType".asInstanceOf[TSThisType]
   
   @js.native
-  sealed trait TSTypeAnnotation extends js.Object
+  sealed trait TSTupleType extends StObject
+  inline def TSTupleType: TSTupleType = "TSTupleType".asInstanceOf[TSTupleType]
   
   @js.native
-  sealed trait TSTypeAssertion extends js.Object
+  sealed trait TSTypeAliasDeclaration extends StObject
+  inline def TSTypeAliasDeclaration: TSTypeAliasDeclaration = "TSTypeAliasDeclaration".asInstanceOf[TSTypeAliasDeclaration]
   
   @js.native
-  sealed trait TSTypeLiteral extends js.Object
+  sealed trait TSTypeAnnotation extends StObject
+  inline def TSTypeAnnotation: TSTypeAnnotation = "TSTypeAnnotation".asInstanceOf[TSTypeAnnotation]
   
   @js.native
-  sealed trait TSTypeOperator extends js.Object
+  sealed trait TSTypeAssertion extends StObject
+  inline def TSTypeAssertion: TSTypeAssertion = "TSTypeAssertion".asInstanceOf[TSTypeAssertion]
   
   @js.native
-  sealed trait TSTypeParameter extends js.Object
+  sealed trait TSTypeLiteral extends StObject
+  inline def TSTypeLiteral: TSTypeLiteral = "TSTypeLiteral".asInstanceOf[TSTypeLiteral]
   
   @js.native
-  sealed trait TSTypeParameterDeclaration extends js.Object
+  sealed trait TSTypeOperator extends StObject
+  inline def TSTypeOperator: TSTypeOperator = "TSTypeOperator".asInstanceOf[TSTypeOperator]
   
   @js.native
-  sealed trait TSTypeParameterInstantiation extends js.Object
+  sealed trait TSTypeParameter extends StObject
+  inline def TSTypeParameter: TSTypeParameter = "TSTypeParameter".asInstanceOf[TSTypeParameter]
   
   @js.native
-  sealed trait TSTypePredicate extends js.Object
+  sealed trait TSTypeParameterDeclaration extends StObject
+  inline def TSTypeParameterDeclaration: TSTypeParameterDeclaration = "TSTypeParameterDeclaration".asInstanceOf[TSTypeParameterDeclaration]
   
   @js.native
-  sealed trait TSTypeQuery extends js.Object
+  sealed trait TSTypeParameterInstantiation extends StObject
+  inline def TSTypeParameterInstantiation: TSTypeParameterInstantiation = "TSTypeParameterInstantiation".asInstanceOf[TSTypeParameterInstantiation]
   
   @js.native
-  sealed trait TSTypeReference extends js.Object
+  sealed trait TSTypePredicate extends StObject
+  inline def TSTypePredicate: TSTypePredicate = "TSTypePredicate".asInstanceOf[TSTypePredicate]
   
   @js.native
-  sealed trait TSUndefinedKeyword extends js.Object
+  sealed trait TSTypeQuery extends StObject
+  inline def TSTypeQuery: TSTypeQuery = "TSTypeQuery".asInstanceOf[TSTypeQuery]
   
   @js.native
-  sealed trait TSUnionType extends js.Object
+  sealed trait TSTypeReference extends StObject
+  inline def TSTypeReference: TSTypeReference = "TSTypeReference".asInstanceOf[TSTypeReference]
   
   @js.native
-  sealed trait TSVoidKeyword extends js.Object
+  sealed trait TSUndefinedKeyword extends StObject
+  inline def TSUndefinedKeyword: TSUndefinedKeyword = "TSUndefinedKeyword".asInstanceOf[TSUndefinedKeyword]
   
   @js.native
-  sealed trait TaggedTemplateExpression extends js.Object
+  sealed trait TSUnionType extends StObject
+  inline def TSUnionType: TSUnionType = "TSUnionType".asInstanceOf[TSUnionType]
   
   @js.native
-  sealed trait TemplateElement extends js.Object
+  sealed trait TSVoidKeyword extends StObject
+  inline def TSVoidKeyword: TSVoidKeyword = "TSVoidKeyword".asInstanceOf[TSVoidKeyword]
   
   @js.native
-  sealed trait TemplateLiteral extends js.Object
+  sealed trait TaggedTemplateExpression extends StObject
+  inline def TaggedTemplateExpression: TaggedTemplateExpression = "TaggedTemplateExpression".asInstanceOf[TaggedTemplateExpression]
   
   @js.native
-  sealed trait ThisExpression extends js.Object
+  sealed trait TemplateElement extends StObject
+  inline def TemplateElement: TemplateElement = "TemplateElement".asInstanceOf[TemplateElement]
   
   @js.native
-  sealed trait ThisTypeAnnotation extends js.Object
+  sealed trait TemplateLiteral extends StObject
+  inline def TemplateLiteral: TemplateLiteral = "TemplateLiteral".asInstanceOf[TemplateLiteral]
   
   @js.native
-  sealed trait ThrowStatement extends js.Object
+  sealed trait ThisExpression extends StObject
+  inline def ThisExpression: ThisExpression = "ThisExpression".asInstanceOf[ThisExpression]
   
   @js.native
-  sealed trait Tilde extends js.Object
+  sealed trait ThisTypeAnnotation extends StObject
+  inline def ThisTypeAnnotation: ThisTypeAnnotation = "ThisTypeAnnotation".asInstanceOf[ThisTypeAnnotation]
   
   @js.native
-  sealed trait TryStatement extends js.Object
+  sealed trait ThrowStatement extends StObject
+  inline def ThrowStatement: ThrowStatement = "ThrowStatement".asInstanceOf[ThrowStatement]
   
   @js.native
-  sealed trait TupleTypeAnnotation extends js.Object
+  sealed trait Tilde extends StObject
+  inline def Tilde: Tilde = "~".asInstanceOf[Tilde]
   
   @js.native
-  sealed trait TypeAlias extends js.Object
+  sealed trait TryStatement extends StObject
+  inline def TryStatement: TryStatement = "TryStatement".asInstanceOf[TryStatement]
   
   @js.native
-  sealed trait TypeAnnotation extends js.Object
+  sealed trait TupleTypeAnnotation extends StObject
+  inline def TupleTypeAnnotation: TupleTypeAnnotation = "TupleTypeAnnotation".asInstanceOf[TupleTypeAnnotation]
   
   @js.native
-  sealed trait TypeCastExpression extends js.Object
+  sealed trait TypeAlias extends StObject
+  inline def TypeAlias: TypeAlias = "TypeAlias".asInstanceOf[TypeAlias]
   
   @js.native
-  sealed trait TypeParameterDeclaration extends js.Object
+  sealed trait TypeAnnotation extends StObject
+  inline def TypeAnnotation: TypeAnnotation = "TypeAnnotation".asInstanceOf[TypeAnnotation]
   
   @js.native
-  sealed trait TypeParameterInstantiation extends js.Object
+  sealed trait TypeCastExpression extends StObject
+  inline def TypeCastExpression: TypeCastExpression = "TypeCastExpression".asInstanceOf[TypeCastExpression]
   
   @js.native
-  sealed trait TypeofTypeAnnotation extends js.Object
+  sealed trait TypeParameterDeclaration extends StObject
+  inline def TypeParameterDeclaration: TypeParameterDeclaration = "TypeParameterDeclaration".asInstanceOf[TypeParameterDeclaration]
   
   @js.native
-  sealed trait UnaryExpression extends js.Object
+  sealed trait TypeParameterInstantiation extends StObject
+  inline def TypeParameterInstantiation: TypeParameterInstantiation = "TypeParameterInstantiation".asInstanceOf[TypeParameterInstantiation]
   
   @js.native
-  sealed trait UnionTypeAnnotation extends js.Object
+  sealed trait TypeofTypeAnnotation extends StObject
+  inline def TypeofTypeAnnotation: TypeofTypeAnnotation = "TypeofTypeAnnotation".asInstanceOf[TypeofTypeAnnotation]
   
   @js.native
-  sealed trait UpdateExpression extends js.Object
+  sealed trait UnaryExpression extends StObject
+  inline def UnaryExpression: UnaryExpression = "UnaryExpression".asInstanceOf[UnaryExpression]
   
   @js.native
-  sealed trait VariableDeclaration extends js.Object
+  sealed trait UnionTypeAnnotation extends StObject
+  inline def UnionTypeAnnotation: UnionTypeAnnotation = "UnionTypeAnnotation".asInstanceOf[UnionTypeAnnotation]
   
   @js.native
-  sealed trait VariableDeclarator extends js.Object
+  sealed trait UpdateExpression extends StObject
+  inline def UpdateExpression: UpdateExpression = "UpdateExpression".asInstanceOf[UpdateExpression]
   
   @js.native
-  sealed trait Verticalline extends js.Object
+  sealed trait VariableDeclaration extends StObject
+  inline def VariableDeclaration: VariableDeclaration = "VariableDeclaration".asInstanceOf[VariableDeclaration]
   
   @js.native
-  sealed trait VerticallineEqualssign extends js.Object
+  sealed trait VariableDeclarator extends StObject
+  inline def VariableDeclarator: VariableDeclarator = "VariableDeclarator".asInstanceOf[VariableDeclarator]
   
   @js.native
-  sealed trait VerticallineVerticalline extends js.Object
+  sealed trait Verticalline extends StObject
+  inline def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
   
   @js.native
-  sealed trait VoidTypeAnnotation extends js.Object
+  sealed trait VerticallineEqualssign extends StObject
+  inline def VerticallineEqualssign: VerticallineEqualssign = "|=".asInstanceOf[VerticallineEqualssign]
   
   @js.native
-  sealed trait WhileStatement extends js.Object
+  sealed trait VerticallineVerticalline extends StObject
+  inline def VerticallineVerticalline: VerticallineVerticalline = "||".asInstanceOf[VerticallineVerticalline]
   
   @js.native
-  sealed trait WithStatement extends js.Object
+  sealed trait VoidTypeAnnotation extends StObject
+  inline def VoidTypeAnnotation: VoidTypeAnnotation = "VoidTypeAnnotation".asInstanceOf[VoidTypeAnnotation]
   
   @js.native
-  sealed trait YieldExpression extends js.Object
+  sealed trait WhileStatement extends StObject
+  inline def WhileStatement: WhileStatement = "WhileStatement".asInstanceOf[WhileStatement]
   
   @js.native
-  sealed trait ^ extends js.Object
+  sealed trait WithStatement extends StObject
+  inline def WithStatement: WithStatement = "WithStatement".asInstanceOf[WithStatement]
   
   @js.native
-  sealed trait `^Equalssign` extends js.Object
+  sealed trait YieldExpression extends StObject
+  inline def YieldExpression: YieldExpression = "YieldExpression".asInstanceOf[YieldExpression]
   
   @js.native
-  sealed trait const extends js.Object
+  sealed trait `^Equalssign` extends StObject
+  inline def `^Equalssign`: `^Equalssign` = "^=".asInstanceOf[`^Equalssign`]
   
   @js.native
-  sealed trait constructor extends js.Object
+  sealed trait const extends StObject
+  inline def const: const = "const".asInstanceOf[const]
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait constructor extends StObject
+  inline def constructor: constructor = "constructor".asInstanceOf[constructor]
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait delete extends StObject
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait in extends js.Object
+  sealed trait get extends StObject
+  inline def get: get = "get".asInstanceOf[get]
   
   @js.native
-  sealed trait instanceof extends js.Object
+  sealed trait in extends StObject
+  inline def in: in = "in".asInstanceOf[in]
   
   @js.native
-  sealed trait let extends js.Object
+  sealed trait instanceof extends StObject
+  inline def instanceof: instanceof = "instanceof".asInstanceOf[instanceof]
   
   @js.native
-  sealed trait method extends js.Object
+  sealed trait let extends StObject
+  inline def let: let = "let".asInstanceOf[let]
   
   @js.native
-  sealed trait module extends js.Object
+  sealed trait method extends StObject
+  inline def method: method = "method".asInstanceOf[method]
   
   @js.native
-  sealed trait `private` extends js.Object
+  sealed trait module extends StObject
+  inline def module: module = "module".asInstanceOf[module]
   
   @js.native
-  sealed trait `protected` extends js.Object
+  sealed trait `private` extends StObject
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
-  sealed trait public extends js.Object
+  sealed trait `protected` extends StObject
+  inline def `protected`: `protected` = "protected".asInstanceOf[`protected`]
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait public extends StObject
+  inline def public: public = "public".asInstanceOf[public]
   
   @js.native
-  sealed trait set extends js.Object
+  sealed trait script extends StObject
+  inline def script: script = "script".asInstanceOf[script]
   
   @js.native
-  sealed trait typeof extends js.Object
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
   
   @js.native
-  sealed trait `var` extends js.Object
+  sealed trait typeof extends StObject
+  inline def typeof: typeof = "typeof".asInstanceOf[typeof]
   
   @js.native
-  sealed trait void extends js.Object
+  sealed trait `var` extends StObject
+  inline def `var`: `var` = "var".asInstanceOf[`var`]
   
-  @scala.inline
-  def `--`: `--` = "--".asInstanceOf[`--`]
-  @scala.inline
-  def `-Equalssign`: `-Equalssign` = "-=".asInstanceOf[`-Equalssign`]
-  @scala.inline
-  def `-_`: `-_` = "-".asInstanceOf[`-_`]
-  @scala.inline
-  def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
-  @scala.inline
-  def AmpersandAmpersand: AmpersandAmpersand = "&&".asInstanceOf[AmpersandAmpersand]
-  @scala.inline
-  def AmpersandEqualssign: AmpersandEqualssign = "&=".asInstanceOf[AmpersandEqualssign]
-  @scala.inline
-  def AnyTypeAnnotation: AnyTypeAnnotation = "AnyTypeAnnotation".asInstanceOf[AnyTypeAnnotation]
-  @scala.inline
-  def ArrayExpression: ArrayExpression = "ArrayExpression".asInstanceOf[ArrayExpression]
-  @scala.inline
-  def ArrayPattern: ArrayPattern = "ArrayPattern".asInstanceOf[ArrayPattern]
-  @scala.inline
-  def ArrayTypeAnnotation: ArrayTypeAnnotation = "ArrayTypeAnnotation".asInstanceOf[ArrayTypeAnnotation]
-  @scala.inline
-  def ArrowFunctionExpression: ArrowFunctionExpression = "ArrowFunctionExpression".asInstanceOf[ArrowFunctionExpression]
-  @scala.inline
-  def AssignmentExpression: AssignmentExpression = "AssignmentExpression".asInstanceOf[AssignmentExpression]
-  @scala.inline
-  def AssignmentPattern: AssignmentPattern = "AssignmentPattern".asInstanceOf[AssignmentPattern]
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  @scala.inline
-  def AsteriskAsterisk: AsteriskAsterisk = "**".asInstanceOf[AsteriskAsterisk]
-  @scala.inline
-  def AsteriskEqualssign: AsteriskEqualssign = "*=".asInstanceOf[AsteriskEqualssign]
-  @scala.inline
-  def AwaitExpression: AwaitExpression = "AwaitExpression".asInstanceOf[AwaitExpression]
-  @scala.inline
-  def BinaryExpression: BinaryExpression = "BinaryExpression".asInstanceOf[BinaryExpression]
-  @scala.inline
-  def BindExpression: BindExpression = "BindExpression".asInstanceOf[BindExpression]
-  @scala.inline
-  def BlockStatement: BlockStatement = "BlockStatement".asInstanceOf[BlockStatement]
-  @scala.inline
-  def BooleanLiteral: BooleanLiteral = "BooleanLiteral".asInstanceOf[BooleanLiteral]
-  @scala.inline
-  def BooleanLiteralTypeAnnotation: BooleanLiteralTypeAnnotation = "BooleanLiteralTypeAnnotation".asInstanceOf[BooleanLiteralTypeAnnotation]
-  @scala.inline
-  def BooleanTypeAnnotation: BooleanTypeAnnotation = "BooleanTypeAnnotation".asInstanceOf[BooleanTypeAnnotation]
-  @scala.inline
-  def BreakStatement: BreakStatement = "BreakStatement".asInstanceOf[BreakStatement]
-  @scala.inline
-  def CallExpression: CallExpression = "CallExpression".asInstanceOf[CallExpression]
-  @scala.inline
-  def CatchClause: CatchClause = "CatchClause".asInstanceOf[CatchClause]
-  @scala.inline
-  def ClassBody: ClassBody = "ClassBody".asInstanceOf[ClassBody]
-  @scala.inline
-  def ClassDeclaration: ClassDeclaration = "ClassDeclaration".asInstanceOf[ClassDeclaration]
-  @scala.inline
-  def ClassExpression: ClassExpression = "ClassExpression".asInstanceOf[ClassExpression]
-  @scala.inline
-  def ClassImplements: ClassImplements = "ClassImplements".asInstanceOf[ClassImplements]
-  @scala.inline
-  def ClassMethod: ClassMethod = "ClassMethod".asInstanceOf[ClassMethod]
-  @scala.inline
-  def ClassProperty: ClassProperty = "ClassProperty".asInstanceOf[ClassProperty]
-  @scala.inline
-  def CommentBlock: CommentBlock = "CommentBlock".asInstanceOf[CommentBlock]
-  @scala.inline
-  def CommentLine: CommentLine = "CommentLine".asInstanceOf[CommentLine]
-  @scala.inline
-  def ConditionalExpression: ConditionalExpression = "ConditionalExpression".asInstanceOf[ConditionalExpression]
-  @scala.inline
-  def ContinueStatement: ContinueStatement = "ContinueStatement".asInstanceOf[ContinueStatement]
-  @scala.inline
-  def DebuggerStatement: DebuggerStatement = "DebuggerStatement".asInstanceOf[DebuggerStatement]
-  @scala.inline
-  def DeclareClass: DeclareClass = "DeclareClass".asInstanceOf[DeclareClass]
-  @scala.inline
-  def DeclareFunction: DeclareFunction = "DeclareFunction".asInstanceOf[DeclareFunction]
-  @scala.inline
-  def DeclareInterface: DeclareInterface = "DeclareInterface".asInstanceOf[DeclareInterface]
-  @scala.inline
-  def DeclareModule: DeclareModule = "DeclareModule".asInstanceOf[DeclareModule]
-  @scala.inline
-  def DeclareTypeAlias: DeclareTypeAlias = "DeclareTypeAlias".asInstanceOf[DeclareTypeAlias]
-  @scala.inline
-  def DeclareVariable: DeclareVariable = "DeclareVariable".asInstanceOf[DeclareVariable]
-  @scala.inline
-  def Decorator: Decorator = "Decorator".asInstanceOf[Decorator]
-  @scala.inline
-  def Directive: Directive = "Directive".asInstanceOf[Directive]
-  @scala.inline
-  def DirectiveLiteral: DirectiveLiteral = "DirectiveLiteral".asInstanceOf[DirectiveLiteral]
-  @scala.inline
-  def DoExpression: DoExpression = "DoExpression".asInstanceOf[DoExpression]
-  @scala.inline
-  def DoWhileStatement: DoWhileStatement = "DoWhileStatement".asInstanceOf[DoWhileStatement]
-  @scala.inline
-  def EmptyStatement: EmptyStatement = "EmptyStatement".asInstanceOf[EmptyStatement]
-  @scala.inline
-  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
-  @scala.inline
-  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
-  @scala.inline
-  def EqualssignEqualssignEqualssign: EqualssignEqualssignEqualssign = "===".asInstanceOf[EqualssignEqualssignEqualssign]
-  @scala.inline
-  def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
-  @scala.inline
-  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
-  @scala.inline
-  def ExclamationmarkEqualssignEqualssign: ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[ExclamationmarkEqualssignEqualssign]
-  @scala.inline
-  def ExistentialTypeParam: ExistentialTypeParam = "ExistentialTypeParam".asInstanceOf[ExistentialTypeParam]
-  @scala.inline
-  def ExportAllDeclaration: ExportAllDeclaration = "ExportAllDeclaration".asInstanceOf[ExportAllDeclaration]
-  @scala.inline
-  def ExportDefaultDeclaration: ExportDefaultDeclaration = "ExportDefaultDeclaration".asInstanceOf[ExportDefaultDeclaration]
-  @scala.inline
-  def ExportDefaultSpecifier: ExportDefaultSpecifier = "ExportDefaultSpecifier".asInstanceOf[ExportDefaultSpecifier]
-  @scala.inline
-  def ExportNamedDeclaration: ExportNamedDeclaration = "ExportNamedDeclaration".asInstanceOf[ExportNamedDeclaration]
-  @scala.inline
-  def ExportNamespaceSpecifier: ExportNamespaceSpecifier = "ExportNamespaceSpecifier".asInstanceOf[ExportNamespaceSpecifier]
-  @scala.inline
-  def ExportSpecifier: ExportSpecifier = "ExportSpecifier".asInstanceOf[ExportSpecifier]
-  @scala.inline
-  def ExpressionStatement: ExpressionStatement = "ExpressionStatement".asInstanceOf[ExpressionStatement]
-  @scala.inline
-  def File: File = "File".asInstanceOf[File]
-  @scala.inline
-  def ForInStatement: ForInStatement = "ForInStatement".asInstanceOf[ForInStatement]
-  @scala.inline
-  def ForOfStatement: ForOfStatement = "ForOfStatement".asInstanceOf[ForOfStatement]
-  @scala.inline
-  def ForStatement: ForStatement = "ForStatement".asInstanceOf[ForStatement]
-  @scala.inline
-  def FunctionDeclaration: FunctionDeclaration = "FunctionDeclaration".asInstanceOf[FunctionDeclaration]
-  @scala.inline
-  def FunctionExpression: FunctionExpression = "FunctionExpression".asInstanceOf[FunctionExpression]
-  @scala.inline
-  def FunctionTypeAnnotation: FunctionTypeAnnotation = "FunctionTypeAnnotation".asInstanceOf[FunctionTypeAnnotation]
-  @scala.inline
-  def FunctionTypeParam: FunctionTypeParam = "FunctionTypeParam".asInstanceOf[FunctionTypeParam]
-  @scala.inline
-  def GenericTypeAnnotation: GenericTypeAnnotation = "GenericTypeAnnotation".asInstanceOf[GenericTypeAnnotation]
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
-  @scala.inline
-  def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
-  @scala.inline
-  def GreaterthansignGreaterthansignEqualssign: GreaterthansignGreaterthansignEqualssign = ">>=".asInstanceOf[GreaterthansignGreaterthansignEqualssign]
-  @scala.inline
-  def GreaterthansignGreaterthansignGreaterthansign: GreaterthansignGreaterthansignGreaterthansign = ">>>".asInstanceOf[GreaterthansignGreaterthansignGreaterthansign]
-  @scala.inline
-  def GreaterthansignGreaterthansignGreaterthansignEqualssign: GreaterthansignGreaterthansignGreaterthansignEqualssign = ">>>=".asInstanceOf[GreaterthansignGreaterthansignGreaterthansignEqualssign]
-  @scala.inline
-  def Identifier: Identifier = "Identifier".asInstanceOf[Identifier]
-  @scala.inline
-  def IfStatement: IfStatement = "IfStatement".asInstanceOf[IfStatement]
-  @scala.inline
-  def ImportDeclaration: ImportDeclaration = "ImportDeclaration".asInstanceOf[ImportDeclaration]
-  @scala.inline
-  def ImportDefaultSpecifier: ImportDefaultSpecifier = "ImportDefaultSpecifier".asInstanceOf[ImportDefaultSpecifier]
-  @scala.inline
-  def ImportNamespaceSpecifier: ImportNamespaceSpecifier = "ImportNamespaceSpecifier".asInstanceOf[ImportNamespaceSpecifier]
-  @scala.inline
-  def ImportSpecifier: ImportSpecifier = "ImportSpecifier".asInstanceOf[ImportSpecifier]
-  @scala.inline
-  def InterfaceDeclaration: InterfaceDeclaration = "InterfaceDeclaration".asInstanceOf[InterfaceDeclaration]
-  @scala.inline
-  def InterfaceExtends: InterfaceExtends = "InterfaceExtends".asInstanceOf[InterfaceExtends]
-  @scala.inline
-  def IntersectionTypeAnnotation: IntersectionTypeAnnotation = "IntersectionTypeAnnotation".asInstanceOf[IntersectionTypeAnnotation]
-  @scala.inline
-  def JSXAttribute: JSXAttribute = "JSXAttribute".asInstanceOf[JSXAttribute]
-  @scala.inline
-  def JSXClosingElement: JSXClosingElement = "JSXClosingElement".asInstanceOf[JSXClosingElement]
-  @scala.inline
-  def JSXElement: JSXElement = "JSXElement".asInstanceOf[JSXElement]
-  @scala.inline
-  def JSXEmptyExpression: JSXEmptyExpression = "JSXEmptyExpression".asInstanceOf[JSXEmptyExpression]
-  @scala.inline
-  def JSXExpressionContainer: JSXExpressionContainer = "JSXExpressionContainer".asInstanceOf[JSXExpressionContainer]
-  @scala.inline
-  def JSXIdentifier: JSXIdentifier = "JSXIdentifier".asInstanceOf[JSXIdentifier]
-  @scala.inline
-  def JSXMemberExpression: JSXMemberExpression = "JSXMemberExpression".asInstanceOf[JSXMemberExpression]
-  @scala.inline
-  def JSXNamespacedName: JSXNamespacedName = "JSXNamespacedName".asInstanceOf[JSXNamespacedName]
-  @scala.inline
-  def JSXOpeningElement: JSXOpeningElement = "JSXOpeningElement".asInstanceOf[JSXOpeningElement]
-  @scala.inline
-  def JSXSpreadAttribute: JSXSpreadAttribute = "JSXSpreadAttribute".asInstanceOf[JSXSpreadAttribute]
-  @scala.inline
-  def JSXText: JSXText = "JSXText".asInstanceOf[JSXText]
-  @scala.inline
-  def LabeledStatement: LabeledStatement = "LabeledStatement".asInstanceOf[LabeledStatement]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
-  @scala.inline
-  def LessthansignLessthansign: LessthansignLessthansign = "<<".asInstanceOf[LessthansignLessthansign]
-  @scala.inline
-  def LessthansignLessthansignEqualssign: LessthansignLessthansignEqualssign = "<<=".asInstanceOf[LessthansignLessthansignEqualssign]
-  @scala.inline
-  def LogicalExpression: LogicalExpression = "LogicalExpression".asInstanceOf[LogicalExpression]
-  @scala.inline
-  def MemberExpression: MemberExpression = "MemberExpression".asInstanceOf[MemberExpression]
-  @scala.inline
-  def MetaProperty: MetaProperty = "MetaProperty".asInstanceOf[MetaProperty]
-  @scala.inline
-  def MixedTypeAnnotation: MixedTypeAnnotation = "MixedTypeAnnotation".asInstanceOf[MixedTypeAnnotation]
-  @scala.inline
-  def NewExpression: NewExpression = "NewExpression".asInstanceOf[NewExpression]
-  @scala.inline
-  def Noop: Noop = "Noop".asInstanceOf[Noop]
-  @scala.inline
-  def NullLiteral: NullLiteral = "NullLiteral".asInstanceOf[NullLiteral]
-  @scala.inline
-  def NullLiteralTypeAnnotation: NullLiteralTypeAnnotation = "NullLiteralTypeAnnotation".asInstanceOf[NullLiteralTypeAnnotation]
-  @scala.inline
-  def NullableTypeAnnotation: NullableTypeAnnotation = "NullableTypeAnnotation".asInstanceOf[NullableTypeAnnotation]
-  @scala.inline
-  def NumberTypeAnnotation: NumberTypeAnnotation = "NumberTypeAnnotation".asInstanceOf[NumberTypeAnnotation]
-  @scala.inline
-  def NumericLiteral: NumericLiteral = "NumericLiteral".asInstanceOf[NumericLiteral]
-  @scala.inline
-  def NumericLiteralTypeAnnotation: NumericLiteralTypeAnnotation = "NumericLiteralTypeAnnotation".asInstanceOf[NumericLiteralTypeAnnotation]
-  @scala.inline
-  def ObjectExpression: ObjectExpression = "ObjectExpression".asInstanceOf[ObjectExpression]
-  @scala.inline
-  def ObjectMethod: ObjectMethod = "ObjectMethod".asInstanceOf[ObjectMethod]
-  @scala.inline
-  def ObjectPattern: ObjectPattern = "ObjectPattern".asInstanceOf[ObjectPattern]
-  @scala.inline
-  def ObjectProperty: ObjectProperty = "ObjectProperty".asInstanceOf[ObjectProperty]
-  @scala.inline
-  def ObjectTypeAnnotation: ObjectTypeAnnotation = "ObjectTypeAnnotation".asInstanceOf[ObjectTypeAnnotation]
-  @scala.inline
-  def ObjectTypeCallProperty: ObjectTypeCallProperty = "ObjectTypeCallProperty".asInstanceOf[ObjectTypeCallProperty]
-  @scala.inline
-  def ObjectTypeIndexer: ObjectTypeIndexer = "ObjectTypeIndexer".asInstanceOf[ObjectTypeIndexer]
-  @scala.inline
-  def ObjectTypeProperty: ObjectTypeProperty = "ObjectTypeProperty".asInstanceOf[ObjectTypeProperty]
-  @scala.inline
-  def ParenthesizedExpression: ParenthesizedExpression = "ParenthesizedExpression".asInstanceOf[ParenthesizedExpression]
-  @scala.inline
-  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
-  @scala.inline
-  def PercentsignEqualssign: PercentsignEqualssign = "%=".asInstanceOf[PercentsignEqualssign]
-  @scala.inline
-  def Plussign: Plussign = "+".asInstanceOf[Plussign]
-  @scala.inline
-  def PlussignEqualssign: PlussignEqualssign = "+=".asInstanceOf[PlussignEqualssign]
-  @scala.inline
-  def PlussignPlussign: PlussignPlussign = "++".asInstanceOf[PlussignPlussign]
-  @scala.inline
-  def Program: Program = "Program".asInstanceOf[Program]
-  @scala.inline
-  def QualifiedTypeIdentifier: QualifiedTypeIdentifier = "QualifiedTypeIdentifier".asInstanceOf[QualifiedTypeIdentifier]
-  @scala.inline
-  def RegExpLiteral: RegExpLiteral = "RegExpLiteral".asInstanceOf[RegExpLiteral]
-  @scala.inline
-  def RestElement: RestElement = "RestElement".asInstanceOf[RestElement]
-  @scala.inline
-  def RestProperty: RestProperty = "RestProperty".asInstanceOf[RestProperty]
-  @scala.inline
-  def ReturnStatement: ReturnStatement = "ReturnStatement".asInstanceOf[ReturnStatement]
-  @scala.inline
-  def SequenceExpression: SequenceExpression = "SequenceExpression".asInstanceOf[SequenceExpression]
-  @scala.inline
-  def Slash: Slash = "/".asInstanceOf[Slash]
-  @scala.inline
-  def SlashEqualssign: SlashEqualssign = "/=".asInstanceOf[SlashEqualssign]
-  @scala.inline
-  def SpreadElement: SpreadElement = "SpreadElement".asInstanceOf[SpreadElement]
-  @scala.inline
-  def SpreadProperty: SpreadProperty = "SpreadProperty".asInstanceOf[SpreadProperty]
-  @scala.inline
-  def StringLiteral: StringLiteral = "StringLiteral".asInstanceOf[StringLiteral]
-  @scala.inline
-  def StringLiteralTypeAnnotation: StringLiteralTypeAnnotation = "StringLiteralTypeAnnotation".asInstanceOf[StringLiteralTypeAnnotation]
-  @scala.inline
-  def StringTypeAnnotation: StringTypeAnnotation = "StringTypeAnnotation".asInstanceOf[StringTypeAnnotation]
-  @scala.inline
-  def Super: Super = "Super".asInstanceOf[Super]
-  @scala.inline
-  def SwitchCase: SwitchCase = "SwitchCase".asInstanceOf[SwitchCase]
-  @scala.inline
-  def SwitchStatement: SwitchStatement = "SwitchStatement".asInstanceOf[SwitchStatement]
-  @scala.inline
-  def TSAnyKeyword: TSAnyKeyword = "TSAnyKeyword".asInstanceOf[TSAnyKeyword]
-  @scala.inline
-  def TSArrayType: TSArrayType = "TSArrayType".asInstanceOf[TSArrayType]
-  @scala.inline
-  def TSAsExpression: TSAsExpression = "TSAsExpression".asInstanceOf[TSAsExpression]
-  @scala.inline
-  def TSBooleanKeyword: TSBooleanKeyword = "TSBooleanKeyword".asInstanceOf[TSBooleanKeyword]
-  @scala.inline
-  def TSCallSignatureDeclaration: TSCallSignatureDeclaration = "TSCallSignatureDeclaration".asInstanceOf[TSCallSignatureDeclaration]
-  @scala.inline
-  def TSConstructSignatureDeclaration: TSConstructSignatureDeclaration = "TSConstructSignatureDeclaration".asInstanceOf[TSConstructSignatureDeclaration]
-  @scala.inline
-  def TSConstructorType: TSConstructorType = "TSConstructorType".asInstanceOf[TSConstructorType]
-  @scala.inline
-  def TSDeclareFunction: TSDeclareFunction = "TSDeclareFunction".asInstanceOf[TSDeclareFunction]
-  @scala.inline
-  def TSDeclareMethod: TSDeclareMethod = "TSDeclareMethod".asInstanceOf[TSDeclareMethod]
-  @scala.inline
-  def TSEnumDeclaration: TSEnumDeclaration = "TSEnumDeclaration".asInstanceOf[TSEnumDeclaration]
-  @scala.inline
-  def TSEnumMember: TSEnumMember = "TSEnumMember".asInstanceOf[TSEnumMember]
-  @scala.inline
-  def TSExportAssignment: TSExportAssignment = "TSExportAssignment".asInstanceOf[TSExportAssignment]
-  @scala.inline
-  def TSExpressionWithTypeArguments: TSExpressionWithTypeArguments = "TSExpressionWithTypeArguments".asInstanceOf[TSExpressionWithTypeArguments]
-  @scala.inline
-  def TSExternalModuleReference: TSExternalModuleReference = "TSExternalModuleReference".asInstanceOf[TSExternalModuleReference]
-  @scala.inline
-  def TSFunctionType: TSFunctionType = "TSFunctionType".asInstanceOf[TSFunctionType]
-  @scala.inline
-  def TSImportEqualsDeclaration: TSImportEqualsDeclaration = "TSImportEqualsDeclaration".asInstanceOf[TSImportEqualsDeclaration]
-  @scala.inline
-  def TSIndexSignature: TSIndexSignature = "TSIndexSignature".asInstanceOf[TSIndexSignature]
-  @scala.inline
-  def TSIndexedAccessType: TSIndexedAccessType = "TSIndexedAccessType".asInstanceOf[TSIndexedAccessType]
-  @scala.inline
-  def TSInterfaceBody: TSInterfaceBody = "TSInterfaceBody".asInstanceOf[TSInterfaceBody]
-  @scala.inline
-  def TSInterfaceDeclaration: TSInterfaceDeclaration = "TSInterfaceDeclaration".asInstanceOf[TSInterfaceDeclaration]
-  @scala.inline
-  def TSIntersectionType: TSIntersectionType = "TSIntersectionType".asInstanceOf[TSIntersectionType]
-  @scala.inline
-  def TSLiteralType: TSLiteralType = "TSLiteralType".asInstanceOf[TSLiteralType]
-  @scala.inline
-  def TSMappedType: TSMappedType = "TSMappedType".asInstanceOf[TSMappedType]
-  @scala.inline
-  def TSMethodSignature: TSMethodSignature = "TSMethodSignature".asInstanceOf[TSMethodSignature]
-  @scala.inline
-  def TSModuleBlock: TSModuleBlock = "TSModuleBlock".asInstanceOf[TSModuleBlock]
-  @scala.inline
-  def TSModuleDeclaration: TSModuleDeclaration = "TSModuleDeclaration".asInstanceOf[TSModuleDeclaration]
-  @scala.inline
-  def TSNamespaceExportDeclaration: TSNamespaceExportDeclaration = "TSNamespaceExportDeclaration".asInstanceOf[TSNamespaceExportDeclaration]
-  @scala.inline
-  def TSNeverKeyword: TSNeverKeyword = "TSNeverKeyword".asInstanceOf[TSNeverKeyword]
-  @scala.inline
-  def TSNonNullExpression: TSNonNullExpression = "TSNonNullExpression".asInstanceOf[TSNonNullExpression]
-  @scala.inline
-  def TSNullKeyword: TSNullKeyword = "TSNullKeyword".asInstanceOf[TSNullKeyword]
-  @scala.inline
-  def TSNumberKeyword: TSNumberKeyword = "TSNumberKeyword".asInstanceOf[TSNumberKeyword]
-  @scala.inline
-  def TSObjectKeyword: TSObjectKeyword = "TSObjectKeyword".asInstanceOf[TSObjectKeyword]
-  @scala.inline
-  def TSParameterProperty: TSParameterProperty = "TSParameterProperty".asInstanceOf[TSParameterProperty]
-  @scala.inline
-  def TSParenthesizedType: TSParenthesizedType = "TSParenthesizedType".asInstanceOf[TSParenthesizedType]
-  @scala.inline
-  def TSPropertySignature: TSPropertySignature = "TSPropertySignature".asInstanceOf[TSPropertySignature]
-  @scala.inline
-  def TSQualifiedName: TSQualifiedName = "TSQualifiedName".asInstanceOf[TSQualifiedName]
-  @scala.inline
-  def TSStringKeyword: TSStringKeyword = "TSStringKeyword".asInstanceOf[TSStringKeyword]
-  @scala.inline
-  def TSSymbolKeyword: TSSymbolKeyword = "TSSymbolKeyword".asInstanceOf[TSSymbolKeyword]
-  @scala.inline
-  def TSThisType: TSThisType = "TSThisType".asInstanceOf[TSThisType]
-  @scala.inline
-  def TSTupleType: TSTupleType = "TSTupleType".asInstanceOf[TSTupleType]
-  @scala.inline
-  def TSTypeAliasDeclaration: TSTypeAliasDeclaration = "TSTypeAliasDeclaration".asInstanceOf[TSTypeAliasDeclaration]
-  @scala.inline
-  def TSTypeAnnotation: TSTypeAnnotation = "TSTypeAnnotation".asInstanceOf[TSTypeAnnotation]
-  @scala.inline
-  def TSTypeAssertion: TSTypeAssertion = "TSTypeAssertion".asInstanceOf[TSTypeAssertion]
-  @scala.inline
-  def TSTypeLiteral: TSTypeLiteral = "TSTypeLiteral".asInstanceOf[TSTypeLiteral]
-  @scala.inline
-  def TSTypeOperator: TSTypeOperator = "TSTypeOperator".asInstanceOf[TSTypeOperator]
-  @scala.inline
-  def TSTypeParameter: TSTypeParameter = "TSTypeParameter".asInstanceOf[TSTypeParameter]
-  @scala.inline
-  def TSTypeParameterDeclaration: TSTypeParameterDeclaration = "TSTypeParameterDeclaration".asInstanceOf[TSTypeParameterDeclaration]
-  @scala.inline
-  def TSTypeParameterInstantiation: TSTypeParameterInstantiation = "TSTypeParameterInstantiation".asInstanceOf[TSTypeParameterInstantiation]
-  @scala.inline
-  def TSTypePredicate: TSTypePredicate = "TSTypePredicate".asInstanceOf[TSTypePredicate]
-  @scala.inline
-  def TSTypeQuery: TSTypeQuery = "TSTypeQuery".asInstanceOf[TSTypeQuery]
-  @scala.inline
-  def TSTypeReference: TSTypeReference = "TSTypeReference".asInstanceOf[TSTypeReference]
-  @scala.inline
-  def TSUndefinedKeyword: TSUndefinedKeyword = "TSUndefinedKeyword".asInstanceOf[TSUndefinedKeyword]
-  @scala.inline
-  def TSUnionType: TSUnionType = "TSUnionType".asInstanceOf[TSUnionType]
-  @scala.inline
-  def TSVoidKeyword: TSVoidKeyword = "TSVoidKeyword".asInstanceOf[TSVoidKeyword]
-  @scala.inline
-  def TaggedTemplateExpression: TaggedTemplateExpression = "TaggedTemplateExpression".asInstanceOf[TaggedTemplateExpression]
-  @scala.inline
-  def TemplateElement: TemplateElement = "TemplateElement".asInstanceOf[TemplateElement]
-  @scala.inline
-  def TemplateLiteral: TemplateLiteral = "TemplateLiteral".asInstanceOf[TemplateLiteral]
-  @scala.inline
-  def ThisExpression: ThisExpression = "ThisExpression".asInstanceOf[ThisExpression]
-  @scala.inline
-  def ThisTypeAnnotation: ThisTypeAnnotation = "ThisTypeAnnotation".asInstanceOf[ThisTypeAnnotation]
-  @scala.inline
-  def ThrowStatement: ThrowStatement = "ThrowStatement".asInstanceOf[ThrowStatement]
-  @scala.inline
-  def Tilde: Tilde = "~".asInstanceOf[Tilde]
-  @scala.inline
-  def TryStatement: TryStatement = "TryStatement".asInstanceOf[TryStatement]
-  @scala.inline
-  def TupleTypeAnnotation: TupleTypeAnnotation = "TupleTypeAnnotation".asInstanceOf[TupleTypeAnnotation]
-  @scala.inline
-  def TypeAlias: TypeAlias = "TypeAlias".asInstanceOf[TypeAlias]
-  @scala.inline
-  def TypeAnnotation: TypeAnnotation = "TypeAnnotation".asInstanceOf[TypeAnnotation]
-  @scala.inline
-  def TypeCastExpression: TypeCastExpression = "TypeCastExpression".asInstanceOf[TypeCastExpression]
-  @scala.inline
-  def TypeParameterDeclaration: TypeParameterDeclaration = "TypeParameterDeclaration".asInstanceOf[TypeParameterDeclaration]
-  @scala.inline
-  def TypeParameterInstantiation: TypeParameterInstantiation = "TypeParameterInstantiation".asInstanceOf[TypeParameterInstantiation]
-  @scala.inline
-  def TypeofTypeAnnotation: TypeofTypeAnnotation = "TypeofTypeAnnotation".asInstanceOf[TypeofTypeAnnotation]
-  @scala.inline
-  def UnaryExpression: UnaryExpression = "UnaryExpression".asInstanceOf[UnaryExpression]
-  @scala.inline
-  def UnionTypeAnnotation: UnionTypeAnnotation = "UnionTypeAnnotation".asInstanceOf[UnionTypeAnnotation]
-  @scala.inline
-  def UpdateExpression: UpdateExpression = "UpdateExpression".asInstanceOf[UpdateExpression]
-  @scala.inline
-  def VariableDeclaration: VariableDeclaration = "VariableDeclaration".asInstanceOf[VariableDeclaration]
-  @scala.inline
-  def VariableDeclarator: VariableDeclarator = "VariableDeclarator".asInstanceOf[VariableDeclarator]
-  @scala.inline
-  def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
-  @scala.inline
-  def VerticallineEqualssign: VerticallineEqualssign = "|=".asInstanceOf[VerticallineEqualssign]
-  @scala.inline
-  def VerticallineVerticalline: VerticallineVerticalline = "||".asInstanceOf[VerticallineVerticalline]
-  @scala.inline
-  def VoidTypeAnnotation: VoidTypeAnnotation = "VoidTypeAnnotation".asInstanceOf[VoidTypeAnnotation]
-  @scala.inline
-  def WhileStatement: WhileStatement = "WhileStatement".asInstanceOf[WhileStatement]
-  @scala.inline
-  def WithStatement: WithStatement = "WithStatement".asInstanceOf[WithStatement]
-  @scala.inline
-  def YieldExpression: YieldExpression = "YieldExpression".asInstanceOf[YieldExpression]
-  @scala.inline
-  def ^ : ^ = "^".asInstanceOf[^]
-  @scala.inline
-  def `^Equalssign`: `^Equalssign` = "^=".asInstanceOf[`^Equalssign`]
-  @scala.inline
-  def const: const = "const".asInstanceOf[const]
-  @scala.inline
-  def constructor: constructor = "constructor".asInstanceOf[constructor]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def in: in = "in".asInstanceOf[in]
-  @scala.inline
-  def instanceof: instanceof = "instanceof".asInstanceOf[instanceof]
-  @scala.inline
-  def let: let = "let".asInstanceOf[let]
-  @scala.inline
-  def method: method = "method".asInstanceOf[method]
-  @scala.inline
-  def module: module = "module".asInstanceOf[module]
-  @scala.inline
-  def `private`: `private` = "private".asInstanceOf[`private`]
-  @scala.inline
-  def `protected`: `protected` = "protected".asInstanceOf[`protected`]
-  @scala.inline
-  def public: public = "public".asInstanceOf[public]
-  @scala.inline
-  def script: script = "script".asInstanceOf[script]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
-  def typeof: typeof = "typeof".asInstanceOf[typeof]
-  @scala.inline
-  def `var`: `var` = "var".asInstanceOf[`var`]
-  @scala.inline
-  def void: void = "void".asInstanceOf[void]
+  @js.native
+  sealed trait void extends StObject
+  inline def void: void = "void".asInstanceOf[void]
 }
-

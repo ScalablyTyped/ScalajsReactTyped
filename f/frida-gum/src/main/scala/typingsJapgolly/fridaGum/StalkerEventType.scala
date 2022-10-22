@@ -1,8 +1,8 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.call
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.fridaGumStrings.block
   - typingsJapgolly.fridaGum.fridaGumStrings.compile
 */
-trait StalkerEventType extends js.Object
-
+trait StalkerEventType extends StObject
 object StalkerEventType {
-  @scala.inline
-  def block: typingsJapgolly.fridaGum.fridaGumStrings.block = this.cast("block")
-  @scala.inline
-  def call: typingsJapgolly.fridaGum.fridaGumStrings.call = this.cast("call")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def compile: typingsJapgolly.fridaGum.fridaGumStrings.compile = this.cast("compile")
-  @scala.inline
-  def exec: typingsJapgolly.fridaGum.fridaGumStrings.exec = this.cast("exec")
-  @scala.inline
-  def ret: typingsJapgolly.fridaGum.fridaGumStrings.ret = this.cast("ret")
+  
+  inline def block: typingsJapgolly.fridaGum.fridaGumStrings.block = "block".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.block]
+  
+  inline def call: typingsJapgolly.fridaGum.fridaGumStrings.call = "call".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.call]
+  
+  inline def compile: typingsJapgolly.fridaGum.fridaGumStrings.compile = "compile".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.compile]
+  
+  inline def exec: typingsJapgolly.fridaGum.fridaGumStrings.exec = "exec".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.exec]
+  
+  inline def ret: typingsJapgolly.fridaGum.fridaGumStrings.ret = "ret".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.ret]
 }
-

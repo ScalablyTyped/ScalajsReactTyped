@@ -1,7 +1,7 @@
 
 # Scala.js typings for gravatar
 
-Typings are for version v1.8.0
+Typings are for version 1.8
 
 ## Library description:
 Gravatar Node.js library
@@ -11,9 +11,9 @@ Gravatar Node.js library
 | Full name          | gravatar |
 | Keywords           | gravatar, avatar, package.json |
 | # releases         | 3 |
-| # dependents       | 167 |
-| # downloads        | 802921 |
-| # stars            | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 107467.33333333333 |
+| # stars            | 409.0 |
 
 ## Links
 - [Homepage](https://github.com/emerleite/node-gravatar#readme)

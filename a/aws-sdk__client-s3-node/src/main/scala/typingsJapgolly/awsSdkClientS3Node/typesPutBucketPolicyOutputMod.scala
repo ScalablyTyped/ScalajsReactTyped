@@ -1,18 +1,23 @@
 package typingsJapgolly.awsSdkClientS3Node
 
-import typingsJapgolly.awsSdkClientS3Node.outputTypesUnionMod._OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.MetadataBearer
+import typingsJapgolly.awsSdkClientS3Node.typesOutputTypesUnionMod._OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/types/PutBucketPolicyOutput", JSImport.Namespace)
-@js.native
-object typesPutBucketPolicyOutputMod extends js.Object {
-  @js.native
-  trait PutBucketPolicyOutput
-    extends MetadataBearer
-       with _OutputTypesUnion
+object typesPutBucketPolicyOutputMod {
   
+  trait PutBucketPolicyOutput
+    extends StObject
+       with MetadataBearer
+       with _OutputTypesUnion
+  object PutBucketPolicyOutput {
+    
+    inline def apply($metadata: ResponseMetadata): PutBucketPolicyOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PutBucketPolicyOutput]
+    }
+  }
 }
-

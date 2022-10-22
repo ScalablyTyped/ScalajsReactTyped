@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.System.RemoteSystems
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RemoteSystemDiscoveryType extends js.Object
-
+sealed trait RemoteSystemDiscoveryType extends StObject
 /** Contains the values that describe how remote systems are able to be discovered. */
 @JSGlobal("Windows.System.RemoteSystems.RemoteSystemDiscoveryType")
 @js.native
-object RemoteSystemDiscoveryType extends js.Object {
+object RemoteSystemDiscoveryType extends StObject {
+  
   /** Remote systems are discoverable both through a proximal connection and through cloud connection. */
   @js.native
-  sealed trait any extends RemoteSystemDiscoveryType
+  sealed trait any
+    extends StObject
+       with RemoteSystemDiscoveryType
   
   /** Remote systems are only discoverable through cloud connection. */
   @js.native
-  sealed trait cloud extends RemoteSystemDiscoveryType
+  sealed trait cloud
+    extends StObject
+       with RemoteSystemDiscoveryType
   
   /** Remote systems are only discoverable through a proximal connection, such as a local network or Bluetooth connection. */
   @js.native
-  sealed trait proximal extends RemoteSystemDiscoveryType
+  sealed trait proximal
+    extends StObject
+       with RemoteSystemDiscoveryType
   
   /** Remote systems are discoverable through a proximal connection and are expected to be spatially near to the client device. */
   @js.native
-  sealed trait spatiallyProximal extends RemoteSystemDiscoveryType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RemoteSystemDiscoveryType with Double] = js.native
-  /* 0 */ @js.native
-  object any extends TopLevel[any with Double]
-  
-  /* 2 */ @js.native
-  object cloud extends TopLevel[cloud with Double]
-  
-  /* 1 */ @js.native
-  object proximal extends TopLevel[proximal with Double]
-  
-  /* 3 */ @js.native
-  object spatiallyProximal extends TopLevel[spatiallyProximal with Double]
-  
+  sealed trait spatiallyProximal
+    extends StObject
+       with RemoteSystemDiscoveryType
 }
-

@@ -1,0 +1,28 @@
+package typingsJapgolly.yuka
+
+import typingsJapgolly.yuka.srcMathVector3Mod.Vector3
+import typingsJapgolly.yuka.srcSteeringSteeringBehaviorMod.SteeringBehavior
+import typingsJapgolly.yuka.srcSteeringVehicleMod.Vehicle
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object srcSteeringBehaviorsSeparationBehaviorMod {
+  
+  @JSImport("yuka/src/steering/behaviors/SeparationBehavior", "SeparationBehavior")
+  @js.native
+  /**
+    * Constructs a new separation behavior.
+    */
+  open class SeparationBehavior () extends SteeringBehavior {
+    
+    /**
+      * Calculates the steering force for a single simulation step.
+      *
+      * @param vehicle - The game entity the force is produced for.
+      * @param force - The force/result vector.
+      * @return The force/result vector.
+      */
+    def calculate(vehicle: Vehicle, force: Vector3): Vector3 = js.native
+  }
+}

@@ -2,14 +2,15 @@ package typingsJapgolly.ractive.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Children
-  extends Array[Ractive[Ractive[js.Any]]] {
-  /** Lists of instances targetting anchors by name. */
-  var byName: StringDictionary[js.Array[Ractive[Ractive[_]]]] = js.native
+  extends StObject
+     with Array[Ractive[/* ractive.ractive.Ractive<any> */ Any]] {
+  
+  /** Lists of instances targeting anchors by name. */
+  var byName: StringDictionary[js.Array[Ractive[/* ractive.ractive.Ractive<any> */ Any]]] = js.native
 }
-

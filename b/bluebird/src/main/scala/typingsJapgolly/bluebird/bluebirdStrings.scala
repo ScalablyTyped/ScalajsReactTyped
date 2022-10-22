@@ -1,19 +1,12 @@
 package typingsJapgolly.bluebird
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bluebirdStrings {
-  @js.native
-  sealed trait Object extends js.Object
   
   @js.native
-  sealed trait ResolvableProps extends js.Object
-  
-  @scala.inline
-  def Object: Object = "Object".asInstanceOf[Object]
-  @scala.inline
-  def ResolvableProps: ResolvableProps = "ResolvableProps".asInstanceOf[ResolvableProps]
+  sealed trait Object extends StObject
+  inline def Object: Object = "Object".asInstanceOf[Object]
 }
-

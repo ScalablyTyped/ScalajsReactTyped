@@ -1,66 +1,32 @@
 package typingsJapgolly.auth0.mod
 
-import typingsJapgolly.auth0.auth0Strings.users_export
-import typingsJapgolly.auth0.auth0Strings.users_import
-import typingsJapgolly.auth0.auth0Strings.verification_email
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.auth0.mod.ImportUsersJob
   - typingsJapgolly.auth0.mod.ExportUsersJob
   - typingsJapgolly.auth0.mod.VerificationEmailJob
 */
-trait Job extends js.Object
-
+trait Job extends StObject
 object Job {
-  @scala.inline
-  def ImportUsersJob(
-    id: String,
-    status: JobStatus,
-    `type`: users_import,
-    connection_id: String = null,
-    created_at: String = null,
-    external_id: String = null,
-    send_completion_email: js.UndefOr[Boolean] = js.undefined,
-    upsert: js.UndefOr[Boolean] = js.undefined
-  ): Job = {
+  
+  inline def ExportUsersJob(id: String, status: JobStatus): typingsJapgolly.auth0.mod.ExportUsersJob = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (connection_id != null) __obj.updateDynamic("connection_id")(connection_id.asInstanceOf[js.Any])
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
-    if (external_id != null) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(send_completion_email)) __obj.updateDynamic("send_completion_email")(send_completion_email.asInstanceOf[js.Any])
-    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Job]
+    __obj.updateDynamic("type")("users_export")
+    __obj.asInstanceOf[typingsJapgolly.auth0.mod.ExportUsersJob]
   }
-  @scala.inline
-  def ExportUsersJob(
-    id: String,
-    status: JobStatus,
-    `type`: users_export,
-    connection_id: String = null,
-    created_at: String = null,
-    fields: js.Array[ExportUserField] = null,
-    format: JobFormat = null,
-    location: String = null
-  ): Job = {
+  
+  inline def ImportUsersJob(id: String, status: JobStatus): typingsJapgolly.auth0.mod.ImportUsersJob = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (connection_id != null) __obj.updateDynamic("connection_id")(connection_id.asInstanceOf[js.Any])
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Job]
+    __obj.updateDynamic("type")("users_import")
+    __obj.asInstanceOf[typingsJapgolly.auth0.mod.ImportUsersJob]
   }
-  @scala.inline
-  def VerificationEmailJob(id: String, status: JobStatus, `type`: verification_email, created_at: String = null): Job = {
+  
+  inline def VerificationEmailJob(id: String, status: JobStatus): typingsJapgolly.auth0.mod.VerificationEmailJob = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Job]
+    __obj.updateDynamic("type")("verification_email")
+    __obj.asInstanceOf[typingsJapgolly.auth0.mod.VerificationEmailJob]
   }
 }
-

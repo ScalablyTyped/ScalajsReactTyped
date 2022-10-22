@@ -1,9 +1,8 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
-import typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.ArrayFilter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBootstrapTable.mod.TextFilterData
@@ -13,50 +12,42 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactBootstrapTable.mod.DateFilterData
   - typingsJapgolly.reactBootstrapTable.mod.ArrayFilterData
 */
-trait FilterValue extends js.Object
-
+trait FilterValue extends StObject
 object FilterValue {
-  @scala.inline
-  def TextFilterData(`type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.TextFilter, value: String): FilterValue = {
+  
+  inline def ArrayFilterData(value: js.Array[Double | String]): typingsJapgolly.reactBootstrapTable.mod.ArrayFilterData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FilterValue]
+    __obj.updateDynamic("type")("ArrayFilter")
+    __obj.asInstanceOf[typingsJapgolly.reactBootstrapTable.mod.ArrayFilterData]
   }
-  @scala.inline
-  def SelectFilterData(`type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter, value: String): FilterValue = {
+  
+  inline def DateFilterData(value: DateFilterValue): typingsJapgolly.reactBootstrapTable.mod.DateFilterData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FilterValue]
+    __obj.updateDynamic("type")("DateFilter")
+    __obj.asInstanceOf[typingsJapgolly.reactBootstrapTable.mod.DateFilterData]
   }
-  @scala.inline
-  def DateFilterData(
-    `type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.DateFilter,
-    value: DateFilterValue
-  ): FilterValue = {
+  
+  inline def NumberFilterData(value: NumberFilterValue): typingsJapgolly.reactBootstrapTable.mod.NumberFilterData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FilterValue]
+    __obj.updateDynamic("type")("NumberFilter")
+    __obj.asInstanceOf[typingsJapgolly.reactBootstrapTable.mod.NumberFilterData]
   }
-  @scala.inline
-  def RegexFilterData(`type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter, value: String): FilterValue = {
+  
+  inline def RegexFilterData(value: String): typingsJapgolly.reactBootstrapTable.mod.RegexFilterData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FilterValue]
+    __obj.updateDynamic("type")("RegexFilter")
+    __obj.asInstanceOf[typingsJapgolly.reactBootstrapTable.mod.RegexFilterData]
   }
-  @scala.inline
-  def NumberFilterData(
-    `type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter,
-    value: NumberFilterValue
-  ): FilterValue = {
+  
+  inline def SelectFilterData(value: String): typingsJapgolly.reactBootstrapTable.mod.SelectFilterData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FilterValue]
+    __obj.updateDynamic("type")("SelectFilter")
+    __obj.asInstanceOf[typingsJapgolly.reactBootstrapTable.mod.SelectFilterData]
   }
-  @scala.inline
-  def ArrayFilterData(`type`: ArrayFilter, value: js.Array[Double | String]): FilterValue = {
+  
+  inline def TextFilterData(value: String): typingsJapgolly.reactBootstrapTable.mod.TextFilterData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FilterValue]
+    __obj.updateDynamic("type")("TextFilter")
+    __obj.asInstanceOf[typingsJapgolly.reactBootstrapTable.mod.TextFilterData]
   }
 }
-

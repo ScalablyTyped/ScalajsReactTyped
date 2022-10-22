@@ -1,16 +1,21 @@
 package typingsJapgolly.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait locale extends js.Object {
-  var pager: js.Any
+trait locale extends StObject {
+  
+  var pager: Any
 }
-
-@JSImport("webix", "locale")
-@js.native
-object locale
-  extends TopLevel[typingsJapgolly.webix.webix.locale]
-
+object locale {
+  
+  @JSImport("webix", "locale")
+  @js.native
+  val ^ : typingsJapgolly.webix.webix.locale = js.native
+  
+  extension [Self <: locale](x: Self) {
+    
+    inline def setPager(value: Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+  }
+}

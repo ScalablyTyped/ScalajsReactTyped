@@ -1,20 +1,17 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.ASTSpan")
-@js.native
-class ASTSpan protected () extends IASTSpan {
-  def this(_start: Double, _end: Double) = this()
-  /* CompleteClass */
-  override var _end: Double = js.native
-  /* CompleteClass */
-  override var _start: Double = js.native
-  /* CompleteClass */
-  override def end(): Double = js.native
-  /* CompleteClass */
-  override def start(): Double = js.native
+trait ASTSpan
+  extends StObject
+     with IASTSpan
+object ASTSpan {
+  
+  inline def apply(_end: Double, _start: Double, end: CallbackTo[Double], start: CallbackTo[Double]): ASTSpan = {
+    val __obj = js.Dynamic.literal(_end = _end.asInstanceOf[js.Any], _start = _start.asInstanceOf[js.Any], end = end.toJsFn, start = start.toJsFn)
+    __obj.asInstanceOf[ASTSpan]
+  }
 }
-

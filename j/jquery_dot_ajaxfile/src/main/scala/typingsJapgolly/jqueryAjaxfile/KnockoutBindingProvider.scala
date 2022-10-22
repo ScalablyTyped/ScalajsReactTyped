@@ -1,13 +1,13 @@
 package typingsJapgolly.jqueryAjaxfile
 
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Node
+import org.scalajs.dom.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KnockoutBindingProvider extends js.Object {
+trait KnockoutBindingProvider extends StObject {
+  
   var getBindingAccessors: js.UndefOr[
     js.Function2[
       /* node */ Node, 
@@ -15,22 +15,26 @@ trait KnockoutBindingProvider extends js.Object {
       StringDictionary[String]
     ]
   ] = js.undefined
+  
   def getBindings(node: Node, bindingContext: KnockoutBindingContext): js.Object
+  
   def nodeHasBindings(node: Node): Boolean
 }
-
 object KnockoutBindingProvider {
-  @scala.inline
-  def apply(
-    getBindings: (Node, KnockoutBindingContext) => CallbackTo[js.Object],
-    nodeHasBindings: Node => CallbackTo[Boolean],
-    getBindingAccessors: (/* node */ Node, /* bindingContext */ KnockoutBindingContext) => CallbackTo[StringDictionary[String]] = null
-  ): KnockoutBindingProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBindings")(js.Any.fromFunction2((t0: org.scalajs.dom.raw.Node, t1: typingsJapgolly.jqueryAjaxfile.KnockoutBindingContext) => getBindings(t0, t1).runNow()))
-    __obj.updateDynamic("nodeHasBindings")(js.Any.fromFunction1((t0: org.scalajs.dom.raw.Node) => nodeHasBindings(t0).runNow()))
-    if (getBindingAccessors != null) __obj.updateDynamic("getBindingAccessors")(js.Any.fromFunction2((t0: /* node */ org.scalajs.dom.raw.Node, t1: /* bindingContext */ typingsJapgolly.jqueryAjaxfile.KnockoutBindingContext) => getBindingAccessors(t0, t1).runNow()))
+  
+  inline def apply(getBindings: (Node, KnockoutBindingContext) => js.Object, nodeHasBindings: Node => Boolean): KnockoutBindingProvider = {
+    val __obj = js.Dynamic.literal(getBindings = js.Any.fromFunction2(getBindings), nodeHasBindings = js.Any.fromFunction1(nodeHasBindings))
     __obj.asInstanceOf[KnockoutBindingProvider]
   }
+  
+  extension [Self <: KnockoutBindingProvider](x: Self) {
+    
+    inline def setGetBindingAccessors(value: (/* node */ Node, /* bindingContext */ KnockoutBindingContext) => StringDictionary[String]): Self = StObject.set(x, "getBindingAccessors", js.Any.fromFunction2(value))
+    
+    inline def setGetBindingAccessorsUndefined: Self = StObject.set(x, "getBindingAccessors", js.undefined)
+    
+    inline def setGetBindings(value: (Node, KnockoutBindingContext) => js.Object): Self = StObject.set(x, "getBindings", js.Any.fromFunction2(value))
+    
+    inline def setNodeHasBindings(value: Node => Boolean): Self = StObject.set(x, "nodeHasBindings", js.Any.fromFunction1(value))
+  }
 }
-

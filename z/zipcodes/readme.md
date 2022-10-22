@@ -1,7 +1,7 @@
 
 # Scala.js typings for zipcodes
 
-Typings are for version 6.1
+Typings are for version 8.0
 
 ## Library description:
 Useful zipcode database with helper methods
@@ -10,10 +10,10 @@ Useful zipcode database with helper methods
 | ------------------ | :-------------: |
 | Full name          | zipcodes |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 9 |
-| # downloads        | 431251 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 152276.66666666666 |
+| # stars            | 150.0 |
 
 ## Links
 - [Homepage](https://github.com/davglass/zipcodes#readme)

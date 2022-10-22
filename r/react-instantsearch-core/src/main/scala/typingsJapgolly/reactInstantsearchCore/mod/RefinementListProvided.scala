@@ -1,47 +1,69 @@
 package typingsJapgolly.reactInstantsearchCore.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.reactInstantsearchCore.HitcountnumberisRefinedbo
+import typingsJapgolly.reactInstantsearchCore.anon.HitcountnumberisRefinedbo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RefinementListProvided extends js.Object {
+trait RefinementListProvided extends StObject {
+  
   /** a boolean that says whether you can currently refine */
   var canRefine: Boolean
+  
+  /** a function to generate a URL for the corresponding search state */
+  def createURL(args: Any*): Any
+  
   /** the refinement currently applied */
   var currentRefinement: js.Array[String]
+  
   /** a boolean that says if the items props contains facet values from the global search or from the search inside items. */
   var isFromSearch: Boolean
+  
   /**
     * The list of items the RefinementList can display.
     * If isFromSearch is false, the hit properties like _highlightResult are undefined
     */
   var items: js.Array[HitcountnumberisRefinedbo]
-  /** a function to generate a URL for the corresponding search state */
-  def createURL(args: js.Any*): js.Any
+  
   /** a function to toggle a refinement */
-  def refine(value: js.Array[String]): js.Any
+  def refine(value: js.Array[String]): Any
+  
   /** a function to toggle a search inside items values */
-  def searchForItems(args: js.Any*): js.Any
+  def searchForItems(args: Any*): Any
 }
-
 object RefinementListProvided {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     canRefine: Boolean,
-    createURL: /* repeated */ js.Any => CallbackTo[js.Any],
+    createURL: /* repeated */ Any => Any,
     currentRefinement: js.Array[String],
     isFromSearch: Boolean,
     items: js.Array[HitcountnumberisRefinedbo],
-    refine: js.Array[String] => CallbackTo[js.Any],
-    searchForItems: /* repeated */ js.Any => CallbackTo[js.Any]
+    refine: js.Array[String] => Any,
+    searchForItems: /* repeated */ Any => Any
   ): RefinementListProvided = {
-    val __obj = js.Dynamic.literal(canRefine = canRefine.asInstanceOf[js.Any], currentRefinement = currentRefinement.asInstanceOf[js.Any], isFromSearch = isFromSearch.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
-    __obj.updateDynamic("createURL")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => createURL(t0).runNow()))
-    __obj.updateDynamic("refine")(js.Any.fromFunction1((t0: js.Array[java.lang.String]) => refine(t0).runNow()))
-    __obj.updateDynamic("searchForItems")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => searchForItems(t0).runNow()))
+    val __obj = js.Dynamic.literal(canRefine = canRefine.asInstanceOf[js.Any], createURL = js.Any.fromFunction1(createURL), currentRefinement = currentRefinement.asInstanceOf[js.Any], isFromSearch = isFromSearch.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], refine = js.Any.fromFunction1(refine), searchForItems = js.Any.fromFunction1(searchForItems))
     __obj.asInstanceOf[RefinementListProvided]
   }
+  
+  extension [Self <: RefinementListProvided](x: Self) {
+    
+    inline def setCanRefine(value: Boolean): Self = StObject.set(x, "canRefine", value.asInstanceOf[js.Any])
+    
+    inline def setCreateURL(value: /* repeated */ Any => Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
+    
+    inline def setCurrentRefinement(value: js.Array[String]): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentRefinementVarargs(value: String*): Self = StObject.set(x, "currentRefinement", js.Array(value*))
+    
+    inline def setIsFromSearch(value: Boolean): Self = StObject.set(x, "isFromSearch", value.asInstanceOf[js.Any])
+    
+    inline def setItems(value: js.Array[HitcountnumberisRefinedbo]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsVarargs(value: HitcountnumberisRefinedbo*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setRefine(value: js.Array[String] => Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
+    
+    inline def setSearchForItems(value: /* repeated */ Any => Any): Self = StObject.set(x, "searchForItems", js.Any.fromFunction1(value))
+  }
 }
-

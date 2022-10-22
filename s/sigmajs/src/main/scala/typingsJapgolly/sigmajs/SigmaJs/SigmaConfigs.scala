@@ -1,35 +1,52 @@
 package typingsJapgolly.sigmajs.SigmaJs
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SigmaConfigs extends js.Object {
+trait SigmaConfigs extends StObject {
+  
   var container: js.UndefOr[Element] = js.undefined
+  
   var graph: js.UndefOr[GraphData] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var renderers: js.UndefOr[js.Array[Renderer]] = js.undefined
-  var settings: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  
+  var settings: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
-
 object SigmaConfigs {
-  @scala.inline
-  def apply(
-    container: Element = null,
-    graph: GraphData = null,
-    id: String = null,
-    renderers: js.Array[Renderer] = null,
-    settings: StringDictionary[js.Any] = null
-  ): SigmaConfigs = {
+  
+  inline def apply(): SigmaConfigs = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (graph != null) __obj.updateDynamic("graph")(graph.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (renderers != null) __obj.updateDynamic("renderers")(renderers.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SigmaConfigs]
   }
+  
+  extension [Self <: SigmaConfigs](x: Self) {
+    
+    inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setGraph(value: GraphData): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+    
+    inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setRenderers(value: js.Array[Renderer]): Self = StObject.set(x, "renderers", value.asInstanceOf[js.Any])
+    
+    inline def setRenderersUndefined: Self = StObject.set(x, "renderers", js.undefined)
+    
+    inline def setRenderersVarargs(value: Renderer*): Self = StObject.set(x, "renderers", js.Array(value*))
+    
+    inline def setSettings(value: StringDictionary[Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+  }
 }
-

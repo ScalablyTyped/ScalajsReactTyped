@@ -1,54 +1,52 @@
 package typingsJapgolly.materialUi.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.materialUi.MaterialUI.Card.CardMediaProps
-import typingsJapgolly.materialUi.cardMediaMod.default
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CardMedia {
-  def apply(
-    actAsExpander: js.UndefOr[Boolean] = js.undefined,
-    expandable: js.UndefOr[Boolean] = js.undefined,
-    mediaStyle: CSSProperties = null,
-    overlay: VdomNode = null,
-    overlayContainerStyle: CSSProperties = null,
-    overlayContentStyle: CSSProperties = null,
-    overlayStyle: CSSProperties = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CardMediaProps, default, Unit, CardMediaProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable.asInstanceOf[js.Any])
-    if (mediaStyle != null) __obj.updateDynamic("mediaStyle")(mediaStyle.asInstanceOf[js.Any])
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.rawNode.asInstanceOf[js.Any])
-    if (overlayContainerStyle != null) __obj.updateDynamic("overlayContainerStyle")(overlayContainerStyle.asInstanceOf[js.Any])
-    if (overlayContentStyle != null) __obj.updateDynamic("overlayContentStyle")(overlayContentStyle.asInstanceOf[js.Any])
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUi.MaterialUI.Card.CardMediaProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUi.cardMediaMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUi.MaterialUI.Card.CardMediaProps])(children: _*)
-  }
-  @JSImport("material-ui/Card/CardMedia", JSImport.Default)
+  @JSImport("material-ui", "CardMedia")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.materialUi.mod.CardMedia] {
+    
+    inline def actAsExpander(value: Boolean): this.type = set("actAsExpander", value.asInstanceOf[js.Any])
+    
+    inline def expandable(value: Boolean): this.type = set("expandable", value.asInstanceOf[js.Any])
+    
+    inline def mediaStyle(value: CSSProperties): this.type = set("mediaStyle", value.asInstanceOf[js.Any])
+    
+    inline def overlay(value: VdomNode): this.type = set("overlay", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def overlayContainerStyle(value: CSSProperties): this.type = set("overlayContainerStyle", value.asInstanceOf[js.Any])
+    
+    inline def overlayContentStyle(value: CSSProperties): this.type = set("overlayContentStyle", value.asInstanceOf[js.Any])
+    
+    inline def overlayNull: this.type = set("overlay", null)
+    
+    inline def overlayStyle(value: CSSProperties): this.type = set("overlayStyle", value.asInstanceOf[js.Any])
+    
+    inline def overlayVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("overlay", js.Array(value*))
+    
+    inline def overlayVdomElement(value: VdomElement): this.type = set("overlay", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: CardMedia.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CardMediaProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

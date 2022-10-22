@@ -1,71 +1,72 @@
 package typingsJapgolly.grommet.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.grommet.AnonColorOpacity
-import typingsJapgolly.grommet.AnonHighlight
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.grommet.anon.Highlight
+import typingsJapgolly.grommet.anon.`1`
+import typingsJapgolly.grommet.es6ComponentsMeterMod.MeterProps
+import typingsJapgolly.grommet.es6UtilsMod.A11yTitleType
+import typingsJapgolly.grommet.es6UtilsMod.AlignSelfType
+import typingsJapgolly.grommet.es6UtilsMod.GridAreaType
+import typingsJapgolly.grommet.es6UtilsMod.MarginType
 import typingsJapgolly.grommet.grommetStrings.bar
 import typingsJapgolly.grommet.grommetStrings.circle
 import typingsJapgolly.grommet.grommetStrings.full
+import typingsJapgolly.grommet.grommetStrings.horizontal
 import typingsJapgolly.grommet.grommetStrings.large
 import typingsJapgolly.grommet.grommetStrings.medium
+import typingsJapgolly.grommet.grommetStrings.pie
+import typingsJapgolly.grommet.grommetStrings.semicircle
 import typingsJapgolly.grommet.grommetStrings.small
+import typingsJapgolly.grommet.grommetStrings.vertical
 import typingsJapgolly.grommet.grommetStrings.xlarge
 import typingsJapgolly.grommet.grommetStrings.xsmall
-import typingsJapgolly.grommet.meterMod.MeterProps
-import typingsJapgolly.grommet.utilsMod.A11yTitleType
-import typingsJapgolly.grommet.utilsMod.AlignSelfType
-import typingsJapgolly.grommet.utilsMod.GridAreaType
-import typingsJapgolly.grommet.utilsMod.MarginType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Meter {
-  def apply(
-    a11yTitle: A11yTitleType = null,
-    alignSelf: AlignSelfType = null,
-    background: String | AnonColorOpacity = null,
-    gridArea: GridAreaType = null,
-    margin: MarginType = null,
-    max: Int | Double = null,
-    round: js.UndefOr[Boolean] = js.undefined,
-    size: xsmall | small | medium | large | xlarge | full | String = null,
-    thickness: xsmall | small | medium | large | xlarge | String = null,
-    `type`: bar | circle = null,
-    values: js.Array[AnonHighlight] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[MeterProps, typingsJapgolly.grommet.mod.Meter, Unit, MeterProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.grommet.meterMod.MeterProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.grommet.mod.Meter](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.grommet.meterMod.MeterProps])(children: _*)
-  }
-  @JSImport("grommet", "Meter")
+  @JSImport("grommet/es6", "Meter")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.grommet.es6Mod.Meter] {
+    
+    inline def a11yTitle(value: A11yTitleType): this.type = set("a11yTitle", value.asInstanceOf[js.Any])
+    
+    inline def alignSelf(value: AlignSelfType): this.type = set("alignSelf", value.asInstanceOf[js.Any])
+    
+    inline def background(value: String | `1`): this.type = set("background", value.asInstanceOf[js.Any])
+    
+    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: horizontal | vertical): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def gridArea(value: GridAreaType): this.type = set("gridArea", value.asInstanceOf[js.Any])
+    
+    inline def margin(value: MarginType): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def max(value: Double): this.type = set("max", value.asInstanceOf[js.Any])
+    
+    inline def round(value: Boolean): this.type = set("round", value.asInstanceOf[js.Any])
+    
+    inline def size(value: xsmall | small | medium | large | xlarge | full | String): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def thickness(value: xsmall | small | medium | large | xlarge | String): this.type = set("thickness", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: bar | circle | pie | semicircle): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Double): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def values(value: js.Array[Highlight]): this.type = set("values", value.asInstanceOf[js.Any])
+    
+    inline def valuesVarargs(value: Highlight*): this.type = set("values", js.Array(value*))
+  }
+  
+  implicit def make(companion: Meter.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MeterProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,21 +1,31 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.WebTemplate")
 @js.native
-class WebTemplate () extends ClientObject {
+trait WebTemplate
+  extends StObject
+     with ClientObject {
+  
   def get_description(): String = js.native
+  
   def get_displayCategory(): String = js.native
+  
   def get_id(): Double = js.native
+  
   def get_imageUrl(): String = js.native
+  
   def get_isHidden(): Boolean = js.native
+  
   def get_isRootWebOnly(): Boolean = js.native
+  
   def get_isSubWebOnly(): Boolean = js.native
+  
   def get_lcid(): Double = js.native
+  
   def get_name(): String = js.native
+  
   def get_title(): String = js.native
 }
-

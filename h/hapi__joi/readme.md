@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__joi
 
-Typings are for version 16.0
+Typings are for version 17.1
 
 ## Library description:
 Object schema validation
@@ -10,10 +10,10 @@ Object schema validation
 | ------------------ | :-------------: |
 | Full name          | @hapi/joi |
 | Keywords           | schema, validation |
-| # releases         | 26 |
-| # dependents       | 701 |
-| # downloads        | 58096974 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8609986666666668E7 |
+| # stars            | 19036.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/joi#readme)

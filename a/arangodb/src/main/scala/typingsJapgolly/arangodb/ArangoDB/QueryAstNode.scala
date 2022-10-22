@@ -1,28 +1,34 @@
 package typingsJapgolly.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait QueryAstNode
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var subNodes: js.UndefOr[js.Array[QueryAstNode]] = js.undefined
+  
   var `type`: String
 }
-
 object QueryAstNode {
-  @scala.inline
-  def apply(
-    `type`: String,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    subNodes: js.Array[QueryAstNode] = null
-  ): QueryAstNode = {
+  
+  inline def apply(`type`: String): QueryAstNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (subNodes != null) __obj.updateDynamic("subNodes")(subNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryAstNode]
   }
+  
+  extension [Self <: QueryAstNode](x: Self) {
+    
+    inline def setSubNodes(value: js.Array[QueryAstNode]): Self = StObject.set(x, "subNodes", value.asInstanceOf[js.Any])
+    
+    inline def setSubNodesUndefined: Self = StObject.set(x, "subNodes", js.undefined)
+    
+    inline def setSubNodesVarargs(value: QueryAstNode*): Self = StObject.set(x, "subNodes", js.Array(value*))
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

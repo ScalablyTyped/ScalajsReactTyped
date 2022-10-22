@@ -10,10 +10,10 @@ Jenkins client
 | ------------------ | :-------------: |
 | Full name          | jenkins |
 | Keywords           | jenkins |
-| # releases         | 9 |
-| # dependents       | 50 |
-| # downloads        | 293735 |
-| # stars            | 12 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 51073.666666666664 |
+| # stars            | 318.0 |
 
 ## Links
 - [Homepage](https://github.com/silas/node-jenkins#readme)

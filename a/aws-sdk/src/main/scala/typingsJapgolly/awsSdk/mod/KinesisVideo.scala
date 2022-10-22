@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.kinesisvideoMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsKinesisvideoMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "KinesisVideo")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class KinesisVideo ()
-  extends typingsJapgolly.awsSdk.allMod.KinesisVideo {
+open class KinesisVideo ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.KinesisVideo {
   def this(options: ClientConfiguration) = this()
 }
-

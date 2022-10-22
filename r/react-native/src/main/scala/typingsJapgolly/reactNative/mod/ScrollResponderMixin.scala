@@ -1,15 +1,18 @@
 package typingsJapgolly.reactNative.mod
 
 import japgolly.scalajs.react.ReactEventFrom
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.reactNative.AnonAnimated
-import typingsJapgolly.reactNative.AnonAnimatedHeight
+import org.scalajs.dom.Element
+import typingsJapgolly.reactNative.anon.AnimatedHeight
+import typingsJapgolly.reactNative.anon.AnimatedX
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollResponderMixin extends SubscribableMixin {
+trait ScrollResponderMixin
+  extends StObject
+     with SubscribableMixin {
+  
   /**
     * `componentWillMount` is the closest thing to a  standard "constructor" for
     * React components.
@@ -17,24 +20,29 @@ trait ScrollResponderMixin extends SubscribableMixin {
     * The `keyboardWillShow` is called before input focus.
     */
   def componentWillMount(): Unit = js.native
+  
   /**
     * Returns the node that represents native view that can be scrolled.
     * Components can pass what node to use by defining a `getScrollableNode`
     * function otherwise `this` is used.
     */
-  def scrollResponderGetScrollableNode(): js.Any = js.native
+  def scrollResponderGetScrollableNode(): Any = js.native
+  
   /**
     * Invoke this from an `onMomentumScrollBegin` event.
     */
-  def scrollResponderHandleMomentumScrollBegin(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
+  def scrollResponderHandleMomentumScrollBegin(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
   /**
     * Invoke this from an `onMomentumScrollEnd` event.
     */
-  def scrollResponderHandleMomentumScrollEnd(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
+  def scrollResponderHandleMomentumScrollEnd(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
   /**
     * Invoke this from an `onResponderGrant` event.
     */
-  def scrollResponderHandleResponderGrant(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
+  def scrollResponderHandleResponderGrant(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
   /**
     * Invoke this from an `onResponderReject` event.
     *
@@ -45,12 +53,15 @@ trait ScrollResponderMixin extends SubscribableMixin {
     * altogether. To improve this, find a way to disable the `UIScrollView` after
     * a touch has already started.
     */
-  def scrollResponderHandleResponderReject(): js.Any = js.native
+  def scrollResponderHandleResponderReject(): Any = js.native
+  
   /**
     * Invoke this from an `onResponderRelease` event.
     */
-  def scrollResponderHandleResponderRelease(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
-  def scrollResponderHandleScroll(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
+  def scrollResponderHandleResponderRelease(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
+  def scrollResponderHandleScroll(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
   /**
     * Unfortunately, `onScrollBeginDrag` also fires when *stopping* the scroll
     * animation, and there's not an easy way to distinguish a drag vs. stopping
@@ -58,15 +69,18 @@ trait ScrollResponderMixin extends SubscribableMixin {
     *
     * Invoke this from an `onScrollBeginDrag` event.
     */
-  def scrollResponderHandleScrollBeginDrag(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
+  def scrollResponderHandleScrollBeginDrag(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
   /**
     * Invoke this from an `onScrollEndDrag` event.
     */
-  def scrollResponderHandleScrollEndDrag(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
+  def scrollResponderHandleScrollEndDrag(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
   /**
     * Invoke this from an `onScroll` event.
     */
   def scrollResponderHandleScrollShouldSetResponder(): Boolean = js.native
+  
   /**
     * Merely touch starting is not sufficient for a scroll view to become the
     * responder. Being the "responder" means that the very next touch move/end
@@ -93,6 +107,7 @@ trait ScrollResponderMixin extends SubscribableMixin {
     *
     */
   def scrollResponderHandleStartShouldSetResponder(): Boolean = js.native
+  
   /**
     * There are times when the scroll view wants to become the responder
     * (meaning respond to the next immediate `touchStart/touchEnd`), in a way
@@ -104,7 +119,8 @@ trait ScrollResponderMixin extends SubscribableMixin {
     *
     * Invoke this from an `onStartShouldSetResponderCapture` event.
     */
-  def scrollResponderHandleStartShouldSetResponderCapture(e: ReactEventFrom[NodeHandle with Element]): Boolean = js.native
+  def scrollResponderHandleStartShouldSetResponderCapture(e: ReactEventFrom[NodeHandle & Element]): Boolean = js.native
+  
   /**
     * We will allow the scroll view to give up its lock iff it acquired the lock
     * during an animation. This is a very useful default that happens to satisfy
@@ -121,12 +137,14 @@ trait ScrollResponderMixin extends SubscribableMixin {
     *   rejected.
     */
   def scrollResponderHandleTerminationRequest(): Boolean = js.native
+  
   /**
     * Invoke this from an `onTouchEnd` event.
     *
     * @param e Event.
     */
-  def scrollResponderHandleTouchEnd(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
+  def scrollResponderHandleTouchEnd(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
   /**
     * Invoke this from an `onTouchMove` event.
     *
@@ -138,7 +156,8 @@ trait ScrollResponderMixin extends SubscribableMixin {
     *
     * @param e Touch Start event.
     */
-  def scrollResponderHandleTouchMove(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
+  def scrollResponderHandleTouchMove(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
   /**
     * Invoke this from an `onTouchStart` event.
     *
@@ -150,7 +169,8 @@ trait ScrollResponderMixin extends SubscribableMixin {
     *
     * @param e Touch Start event.
     */
-  def scrollResponderHandleTouchStart(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
+  def scrollResponderHandleTouchStart(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
   /**
     * The calculations performed here assume the scroll view takes up the entire
     * screen - even if has some content inset. We then measure the offsets of the
@@ -162,15 +182,20 @@ trait ScrollResponderMixin extends SubscribableMixin {
     * @param height Height of the text input.
     */
   def scrollResponderInputMeasureAndScrollToKeyboard(left: Double, top: Double, width: Double, height: Double): Unit = js.native
+  
   /**
     * A helper function for this class that lets us quickly determine if the
     * view is currently animating. This is particularly useful to know when
     * a touch has just started or ended.
     */
   def scrollResponderIsAnimating(): Boolean = js.native
-  def scrollResponderKeyboardDidHide(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
-  def scrollResponderKeyboardDidShow(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
-  def scrollResponderKeyboardWillHide(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
+  
+  def scrollResponderKeyboardDidHide(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
+  def scrollResponderKeyboardDidShow(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
+  def scrollResponderKeyboardWillHide(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
   /**
     * Warning, this may be called several times for a single keyboard opening.
     * It's best to store the information in this method and then take any action
@@ -199,7 +224,8 @@ trait ScrollResponderMixin extends SubscribableMixin {
     * relevant to you. (For example, only if you receive these callbacks after
     * you had explicitly focused a node etc).
     */
-  def scrollResponderKeyboardWillShow(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
+  def scrollResponderKeyboardWillShow(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
   /**
     * This method should be used as the callback to onFocus in a TextInputs'
     * parent view. Note that any module using this mixin needs to return
@@ -210,9 +236,11 @@ trait ScrollResponderMixin extends SubscribableMixin {
     * @param preventNegativeScrolling Whether to allow pulling the content
     *        down to make it meet the keyboard's top. Default is false.
     */
-  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any): Unit = js.native
-  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any, additionalOffset: Double): Unit = js.native
-  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any, additionalOffset: Double, preventNegativeScrollOffset: Boolean): Unit = js.native
+  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: Any): Unit = js.native
+  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: Any, additionalOffset: Double): Unit = js.native
+  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: Any, additionalOffset: Double, preventNegativeScrollOffset: Boolean): Unit = js.native
+  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: Any, additionalOffset: Unit, preventNegativeScrollOffset: Boolean): Unit = js.native
+  
   /**
     * A helper function to scroll to a specific point  in the scrollview.
     * This is currently used to help focus on child textviews, but can also
@@ -228,21 +256,23 @@ trait ScrollResponderMixin extends SubscribableMixin {
   def scrollResponderScrollTo(x: Double): Unit = js.native
   def scrollResponderScrollTo(x: Double, y: Double): Unit = js.native
   def scrollResponderScrollTo(x: Double, y: Double, animated: Boolean): Unit = js.native
-  def scrollResponderScrollTo(x: AnonAnimated): Unit = js.native
-  def scrollResponderScrollTo(x: AnonAnimated, y: Double): Unit = js.native
-  def scrollResponderScrollTo(x: AnonAnimated, y: Double, animated: Boolean): Unit = js.native
-  def scrollResponderTextInputFocusError(e: ReactEventFrom[NodeHandle with Element]): Unit = js.native
+  def scrollResponderScrollTo(x: Double, y: Unit, animated: Boolean): Unit = js.native
+  def scrollResponderScrollTo(x: Unit, y: Double): Unit = js.native
+  def scrollResponderScrollTo(x: Unit, y: Double, animated: Boolean): Unit = js.native
+  def scrollResponderScrollTo(x: Unit, y: Unit, animated: Boolean): Unit = js.native
+  def scrollResponderScrollTo(x: AnimatedX): Unit = js.native
+  def scrollResponderScrollTo(x: AnimatedX, y: Double): Unit = js.native
+  def scrollResponderScrollTo(x: AnimatedX, y: Double, animated: Boolean): Unit = js.native
+  def scrollResponderScrollTo(x: AnimatedX, y: Unit, animated: Boolean): Unit = js.native
+  
+  def scrollResponderTextInputFocusError(e: ReactEventFrom[NodeHandle & Element]): Unit = js.native
+  
   /**
     * A helper function to zoom to a specific rect in the scrollview. The argument has the shape
     * {x: number; y: number; width: number; height: number; animated: boolean = true}
     *
     * @platform ios
     */
-  def scrollResponderZoomTo(rect: AnonAnimatedHeight): Unit = js.native
-  def scrollResponderZoomTo(
-    rect: AnonAnimatedHeight,
-     // deprecated, put this inside the rect argument instead
-  animated: Boolean
-  ): Unit = js.native
+  def scrollResponderZoomTo(rect: AnimatedHeight): Unit = js.native
+  def scrollResponderZoomTo(rect: AnimatedHeight, animated: Boolean): Unit = js.native
 }
-

@@ -1,46 +1,53 @@
 package typingsJapgolly.jqrangeslider
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait jQRangeSliderScale extends js.Object {
+trait jQRangeSliderScale extends StObject {
+  
   var first: js.UndefOr[js.Function2[/* min */ Double, /* max */ Double, Double]] = js.undefined
-   // 'true' to stop scale generating ticks from a given value
+  
+  // 'true' to stop scale generating ticks from a given value
   var format: js.UndefOr[
-    js.Function3[
-      /* tickContainer */ js.Any, 
-      /* tickStartValue */ js.Any, 
-      /* tickEndValue */ js.Any, 
-      Unit
-    ]
+    js.Function3[/* tickContainer */ Any, /* tickStartValue */ Any, /* tickEndValue */ Any, Unit]
   ] = js.undefined
-   // compute the next value.
-  var label: js.UndefOr[js.Function2[/* value */ js.Any, /* nextValue */ js.Any, String]] = js.undefined
-   // compute displayed text for a given internal
-  var stop: js.UndefOr[js.Function1[/* value */ js.Any, Boolean]] = js.undefined
-   // compute the ruler first value.
-  def next(value: js.Any): js.Any
+  
+  // compute the next value.
+  var label: js.UndefOr[js.Function2[/* value */ Any, /* nextValue */ Any, String]] = js.undefined
+  
+  // compute the ruler first value.
+  def next(value: Any): Any
+  
+  // compute displayed text for a given internal
+  var stop: js.UndefOr[js.Function1[/* value */ Any, Boolean]] = js.undefined
 }
-
 object jQRangeSliderScale {
-  @scala.inline
-  def apply(
-    next: js.Any => CallbackTo[js.Any],
-    first: (/* min */ Double, /* max */ Double) => CallbackTo[Double] = null,
-    format: (/* tickContainer */ js.Any, /* tickStartValue */ js.Any, /* tickEndValue */ js.Any) => Callback = null,
-    label: (/* value */ js.Any, /* nextValue */ js.Any) => CallbackTo[String] = null,
-    stop: /* value */ js.Any => CallbackTo[Boolean] = null
-  ): jQRangeSliderScale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("next")(js.Any.fromFunction1((t0: js.Any) => next(t0).runNow()))
-    if (first != null) __obj.updateDynamic("first")(js.Any.fromFunction2((t0: /* min */ scala.Double, t1: /* max */ scala.Double) => first(t0, t1).runNow()))
-    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction3((t0: /* tickContainer */ js.Any, t1: /* tickStartValue */ js.Any, t2: /* tickEndValue */ js.Any) => format(t0, t1, t2).runNow()))
-    if (label != null) __obj.updateDynamic("label")(js.Any.fromFunction2((t0: /* value */ js.Any, t1: /* nextValue */ js.Any) => label(t0, t1).runNow()))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1((t0: /* value */ js.Any) => stop(t0).runNow()))
+  
+  inline def apply(next: Any => Any): jQRangeSliderScale = {
+    val __obj = js.Dynamic.literal(next = js.Any.fromFunction1(next))
     __obj.asInstanceOf[jQRangeSliderScale]
   }
+  
+  extension [Self <: jQRangeSliderScale](x: Self) {
+    
+    inline def setFirst(value: (/* min */ Double, /* max */ Double) => Double): Self = StObject.set(x, "first", js.Any.fromFunction2(value))
+    
+    inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+    
+    inline def setFormat(value: (/* tickContainer */ Any, /* tickStartValue */ Any, /* tickEndValue */ Any) => Callback): Self = StObject.set(x, "format", js.Any.fromFunction3((t0: /* tickContainer */ Any, t1: /* tickStartValue */ Any, t2: /* tickEndValue */ Any) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setLabel(value: (/* value */ Any, /* nextValue */ Any) => String): Self = StObject.set(x, "label", js.Any.fromFunction2(value))
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setNext(value: Any => Any): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+    
+    inline def setStop(value: /* value */ Any => Boolean): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+    
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+  }
 }
-

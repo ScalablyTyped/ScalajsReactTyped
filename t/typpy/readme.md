@@ -11,9 +11,9 @@ A better typeof for JavaScript.
 | Full name          | typpy |
 | Keywords           | typeof, javascript, typpy |
 | # releases         | 2 |
-| # dependents       | 45 |
-| # downloads        | 2159673 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 405765.3333333333 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/IonicaBizau/typpy)

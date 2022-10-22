@@ -1,25 +1,29 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneServiceVersion extends Object {
+trait SceneServiceVersion
+  extends StObject
+     with Object {
+  
   /**
     * The major version of the scene layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SceneService.html#version)
     */
   var major: Double
+  
   /**
     * The minor version of the scene layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SceneService.html#version)
     */
   var minor: Double
+  
   /**
     * The complete version string of the scene layer.
     *
@@ -27,21 +31,26 @@ trait SceneServiceVersion extends Object {
     */
   var versionString: String
 }
-
 object SceneServiceVersion {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     major: Double,
     minor: Double,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    propertyIsEnumerable: PropertyKey => Boolean,
     versionString: String
   ): SceneServiceVersion = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], versionString = versionString.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), versionString = versionString.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneServiceVersion]
   }
+  
+  extension [Self <: SceneServiceVersion](x: Self) {
+    
+    inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    
+    inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    
+    inline def setVersionString(value: String): Self = StObject.set(x, "versionString", value.asInstanceOf[js.Any])
+  }
 }
-

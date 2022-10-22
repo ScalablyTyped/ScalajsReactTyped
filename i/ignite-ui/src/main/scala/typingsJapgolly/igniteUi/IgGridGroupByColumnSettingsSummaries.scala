@@ -1,65 +1,70 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridGroupByColumnSettingsSummaries
-  extends /**
-	 * Option for IgGridGroupByColumnSettingsSummaries
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Specifies a custom summary function, which is called for each group, it should return the custom summary result.It takes as argument object with the following signature: {dataRecords: [], array: [], key: "", allGroupData: []} where,
-  	 * dataRecords - array of grouped (for the [data view](ig.datasource#methods:dataView)) data records,
-  	 * array - array of cell values for the specified column,
-  	 * key - key of the grouped column,
-  	 * allGroupData - array of data records for the group(for the whole data source - not only for the data view)
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "string" the name of the function as a string located in the global window object.
-  	 * "function" which will be used for calculating the summary value.
-  	 */
+    * Specifies a custom summary function, which is called for each group, it should return the custom summary result.It takes as argument object with the following signature: {dataRecords: [], array: [], key: "", allGroupData: []} where,
+    * dataRecords - array of grouped (for the [data view](ig.datasource#methods:dataView)) data records,
+    * array - array of cell values for the specified column,
+    * key - key of the grouped column,
+    * allGroupData - array of data records for the group(for the whole data source - not only for the data view)
+    *
+    *
+    * Valid values:
+    * "string" the name of the function as a string located in the global window object.
+    * "function" which will be used for calculating the summary value.
+    */
   var customSummary: js.UndefOr[String | js.Function] = js.undefined
+  
   /**
-  	 * the summary function key
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "avg" average summary function
-  	 * "min" minimum summary function
-  	 * "max" maximum summary function
-  	 * "sum" sum summary function
-  	 * "count" count summary function
-  	 * "custom" custom summary summary function
-  	 */
+    * the summary function key
+    *
+    *
+    * Valid values:
+    * "avg" average summary function
+    * "min" minimum summary function
+    * "max" maximum summary function
+    * "sum" sum summary function
+    * "count" count summary function
+    * "custom" custom summary summary function
+    */
   var summaryFunction: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies the summary text that will be shown before the value
-  	 *
-  	 */
+    * Specifies the summary text that will be shown before the value
+    *
+    */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object IgGridGroupByColumnSettingsSummaries {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgGridGroupByColumnSettingsSummaries
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    customSummary: String | js.Function = null,
-    summaryFunction: String = null,
-    text: String = null
-  ): IgGridGroupByColumnSettingsSummaries = {
+  
+  inline def apply(): IgGridGroupByColumnSettingsSummaries = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (customSummary != null) __obj.updateDynamic("customSummary")(customSummary.asInstanceOf[js.Any])
-    if (summaryFunction != null) __obj.updateDynamic("summaryFunction")(summaryFunction.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridGroupByColumnSettingsSummaries]
   }
+  
+  extension [Self <: IgGridGroupByColumnSettingsSummaries](x: Self) {
+    
+    inline def setCustomSummary(value: String | js.Function): Self = StObject.set(x, "customSummary", value.asInstanceOf[js.Any])
+    
+    inline def setCustomSummaryUndefined: Self = StObject.set(x, "customSummary", js.undefined)
+    
+    inline def setSummaryFunction(value: String): Self = StObject.set(x, "summaryFunction", value.asInstanceOf[js.Any])
+    
+    inline def setSummaryFunctionUndefined: Self = StObject.set(x, "summaryFunction", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

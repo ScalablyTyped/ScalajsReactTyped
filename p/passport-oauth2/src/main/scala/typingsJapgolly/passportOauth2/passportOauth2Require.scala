@@ -1,12 +1,11 @@
 package typingsJapgolly.passportOauth2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This can be used to `require` the library as a side effect.
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("passport-oauth2", JSImport.Namespace)
 @js.native
-object passportOauth2Require extends js.Object
-
+object passportOauth2Require extends StObject

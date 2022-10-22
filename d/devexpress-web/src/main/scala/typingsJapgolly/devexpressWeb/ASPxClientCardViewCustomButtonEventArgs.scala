@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.CustomButtonClick event.
   */
-@JSGlobal("ASPxClientCardViewCustomButtonEventArgs")
-@js.native
-class ASPxClientCardViewCustomButtonEventArgs protected () extends ASPxClientProcessingModeEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientCardViewCustomButtonEventArgs class.
-    * @param visibleIndex An integer value that identifies the card whose custom button has been clicked. This value is assigned to the ASPxClientCardViewCustomButtonEventArgs.visibleIndex property.
-    * @param buttonID An integer value that identifies the clicked custom button. This value is assigned to the ASPxClientCardViewCustomButtonEventArgs.buttonID property.
-    */
-  def this(visibleIndex: Double, buttonID: String) = this()
+trait ASPxClientCardViewCustomButtonEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
+  
   /**
     * Gets the value which identifies the custom button.
     */
-  var buttonID: String = js.native
+  var buttonID: String
+  
   /**
     * Gets the value which identifies the card whose custom button has been clicked.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
-
+object ASPxClientCardViewCustomButtonEventArgs {
+  
+  inline def apply(buttonID: String, processOnServer: Boolean, visibleIndex: Double): ASPxClientCardViewCustomButtonEventArgs = {
+    val __obj = js.Dynamic.literal(buttonID = buttonID.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCardViewCustomButtonEventArgs]
+  }
+  
+  extension [Self <: ASPxClientCardViewCustomButtonEventArgs](x: Self) {
+    
+    inline def setButtonID(value: String): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+  }
+}

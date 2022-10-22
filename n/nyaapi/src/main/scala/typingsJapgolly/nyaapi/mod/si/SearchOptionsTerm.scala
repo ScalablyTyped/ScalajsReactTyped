@@ -1,35 +1,25 @@
 package typingsJapgolly.nyaapi.mod.si
 
-import typingsJapgolly.nyaapi.nyaapiStrings.asc
-import typingsJapgolly.nyaapi.nyaapiStrings.desc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchOptionsTerm extends SearchOptions {
+trait SearchOptionsTerm
+  extends StObject
+     with SearchOptions {
+  
   @JSName("term")
   var term_SearchOptionsTerm: String
 }
-
 object SearchOptionsTerm {
-  @scala.inline
-  def apply(
-    term: String,
-    category: Category = null,
-    direction: asc | desc = null,
-    filter: Filter = null,
-    n: Int | Double = null,
-    p: Int | Double = null,
-    sort: String = null
-  ): SearchOptionsTerm = {
+  
+  inline def apply(term: String): SearchOptionsTerm = {
     val __obj = js.Dynamic.literal(term = term.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptionsTerm]
   }
+  
+  extension [Self <: SearchOptionsTerm](x: Self) {
+    
+    inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+  }
 }
-

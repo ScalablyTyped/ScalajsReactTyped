@@ -1,12 +1,14 @@
 package typingsJapgolly.isFullwidthCodePoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("is-fullwidth-code-point", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(codePoint: Double): Boolean = js.native
+object mod {
+  
+  @JSImport("is-fullwidth-code-point", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(codePoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(codePoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.bottom
   - typingsJapgolly.highcharts.highchartsStrings.middle
   - typingsJapgolly.highcharts.highchartsStrings.top
 */
-trait VerticalAlignValue extends js.Object
-
+trait VerticalAlignValue extends StObject
 object VerticalAlignValue {
-  @scala.inline
-  def bottom: typingsJapgolly.highcharts.highchartsStrings.bottom = this.cast("bottom")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def middle: typingsJapgolly.highcharts.highchartsStrings.middle = this.cast("middle")
-  @scala.inline
-  def top: typingsJapgolly.highcharts.highchartsStrings.top = this.cast("top")
+  
+  inline def bottom: typingsJapgolly.highcharts.highchartsStrings.bottom = "bottom".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.bottom]
+  
+  inline def middle: typingsJapgolly.highcharts.highchartsStrings.middle = "middle".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.middle]
+  
+  inline def top: typingsJapgolly.highcharts.highchartsStrings.top = "top".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.top]
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 开放接口-----设置
 /* Rewritten from type alias, can be one of: 
@@ -14,24 +14,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.baiduApp.baiduAppStrings.scopeDotrecord
   - typingsJapgolly.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum
 */
-trait Scope extends js.Object
-
+trait Scope extends StObject
 object Scope {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def scopeDotaddress: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotaddress = this.cast("scope.address")
-  @scala.inline
-  def scopeDotinvoiceTitle: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotinvoiceTitle = this.cast("scope.invoiceTitle")
-  @scala.inline
-  def scopeDotrecord: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotrecord = this.cast("scope.record")
-  @scala.inline
-  def scopeDotuserInfo: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotuserInfo = this.cast("scope.userInfo")
-  @scala.inline
-  def scopeDotuserLocation: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotuserLocation = this.cast("scope.userLocation")
-  @scala.inline
-  def scopeDotwerun: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotwerun = this.cast("scope.werun")
-  @scala.inline
-  def scopeDotwritePhotosAlbum: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum = this.cast("scope.writePhotosAlbum")
+  
+  inline def scopeDotaddress: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotaddress = "scope.address".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.scopeDotaddress]
+  
+  inline def scopeDotinvoiceTitle: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotinvoiceTitle = "scope.invoiceTitle".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.scopeDotinvoiceTitle]
+  
+  inline def scopeDotrecord: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotrecord = "scope.record".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.scopeDotrecord]
+  
+  inline def scopeDotuserInfo: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotuserInfo = "scope.userInfo".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.scopeDotuserInfo]
+  
+  inline def scopeDotuserLocation: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotuserLocation = "scope.userLocation".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.scopeDotuserLocation]
+  
+  inline def scopeDotwerun: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotwerun = "scope.werun".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.scopeDotwerun]
+  
+  inline def scopeDotwritePhotosAlbum: typingsJapgolly.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.scopeDotwritePhotosAlbum]
 }
-

@@ -1,89 +1,99 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InferencePriority extends js.Object
-
+sealed trait InferencePriority extends StObject
 @JSImport("typescript", "InferencePriority")
 @js.native
-object InferencePriority extends js.Object {
-  @js.native
-  sealed trait AlwaysStrict extends InferencePriority
-  
-  @js.native
-  sealed trait Circularity extends InferencePriority
-  
-  @js.native
-  sealed trait ContravariantConditional extends InferencePriority
-  
-  @js.native
-  sealed trait HomomorphicMappedType extends InferencePriority
-  
-  @js.native
-  sealed trait LiteralKeyof extends InferencePriority
-  
-  @js.native
-  sealed trait MappedTypeConstraint extends InferencePriority
-  
-  @js.native
-  sealed trait MaxValue extends InferencePriority
-  
-  @js.native
-  sealed trait NakedTypeVariable extends InferencePriority
-  
-  @js.native
-  sealed trait NoConstraints extends InferencePriority
-  
-  @js.native
-  sealed trait PartialHomomorphicMappedType extends InferencePriority
-  
-  @js.native
-  sealed trait PriorityImpliesCombination extends InferencePriority
-  
-  @js.native
-  sealed trait ReturnType extends InferencePriority
+object InferencePriority extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InferencePriority with Double] = js.native
-  /* 256 */ @js.native
-  object AlwaysStrict extends TopLevel[AlwaysStrict with Double]
+  def apply(value: Double): js.UndefOr[InferencePriority & Double] = js.native
   
-  /* -1 */ @js.native
-  object Circularity extends TopLevel[Circularity with Double]
+  @js.native
+  sealed trait AlwaysStrict
+    extends StObject
+       with InferencePriority
+  /* 1024 */ val AlwaysStrict: typingsJapgolly.typescript.mod.InferencePriority.AlwaysStrict & Double = js.native
   
-  /* 16 */ @js.native
-  object ContravariantConditional extends TopLevel[ContravariantConditional with Double]
+  @js.native
+  sealed trait Circularity
+    extends StObject
+       with InferencePriority
+  /* -1 */ val Circularity: typingsJapgolly.typescript.mod.InferencePriority.Circularity & Double = js.native
   
-  /* 2 */ @js.native
-  object HomomorphicMappedType extends TopLevel[HomomorphicMappedType with Double]
+  @js.native
+  sealed trait ContravariantConditional
+    extends StObject
+       with InferencePriority
+  /* 64 */ val ContravariantConditional: typingsJapgolly.typescript.mod.InferencePriority.ContravariantConditional & Double = js.native
   
-  /* 64 */ @js.native
-  object LiteralKeyof extends TopLevel[LiteralKeyof with Double]
+  @js.native
+  sealed trait HomomorphicMappedType
+    extends StObject
+       with InferencePriority
+  /* 8 */ val HomomorphicMappedType: typingsJapgolly.typescript.mod.InferencePriority.HomomorphicMappedType & Double = js.native
   
-  /* 8 */ @js.native
-  object MappedTypeConstraint extends TopLevel[MappedTypeConstraint with Double]
+  @js.native
+  sealed trait LiteralKeyof
+    extends StObject
+       with InferencePriority
+  /* 256 */ val LiteralKeyof: typingsJapgolly.typescript.mod.InferencePriority.LiteralKeyof & Double = js.native
   
-  /* 512 */ @js.native
-  object MaxValue extends TopLevel[MaxValue with Double]
+  @js.native
+  sealed trait MappedTypeConstraint
+    extends StObject
+       with InferencePriority
+  /* 32 */ val MappedTypeConstraint: typingsJapgolly.typescript.mod.InferencePriority.MappedTypeConstraint & Double = js.native
   
-  /* 1 */ @js.native
-  object NakedTypeVariable extends TopLevel[NakedTypeVariable with Double]
+  @js.native
+  sealed trait MaxValue
+    extends StObject
+       with InferencePriority
+  /* 2048 */ val MaxValue: typingsJapgolly.typescript.mod.InferencePriority.MaxValue & Double = js.native
   
-  /* 128 */ @js.native
-  object NoConstraints extends TopLevel[NoConstraints with Double]
+  @js.native
+  sealed trait NakedTypeVariable
+    extends StObject
+       with InferencePriority
+  /* 1 */ val NakedTypeVariable: typingsJapgolly.typescript.mod.InferencePriority.NakedTypeVariable & Double = js.native
   
-  /* 4 */ @js.native
-  object PartialHomomorphicMappedType extends TopLevel[PartialHomomorphicMappedType with Double]
+  @js.native
+  sealed trait NoConstraints
+    extends StObject
+       with InferencePriority
+  /* 512 */ val NoConstraints: typingsJapgolly.typescript.mod.InferencePriority.NoConstraints & Double = js.native
   
-  /* 104 */ @js.native
-  object PriorityImpliesCombination extends TopLevel[PriorityImpliesCombination with Double]
+  @js.native
+  sealed trait PartialHomomorphicMappedType
+    extends StObject
+       with InferencePriority
+  /* 16 */ val PartialHomomorphicMappedType: typingsJapgolly.typescript.mod.InferencePriority.PartialHomomorphicMappedType & Double = js.native
   
-  /* 32 */ @js.native
-  object ReturnType extends TopLevel[ReturnType with Double]
+  @js.native
+  sealed trait PriorityImpliesCombination
+    extends StObject
+       with InferencePriority
+  /* 416 */ val PriorityImpliesCombination: typingsJapgolly.typescript.mod.InferencePriority.PriorityImpliesCombination & Double = js.native
   
+  @js.native
+  sealed trait ReturnType
+    extends StObject
+       with InferencePriority
+  /* 128 */ val ReturnType: typingsJapgolly.typescript.mod.InferencePriority.ReturnType & Double = js.native
+  
+  @js.native
+  sealed trait SpeculativeTuple
+    extends StObject
+       with InferencePriority
+  /* 2 */ val SpeculativeTuple: typingsJapgolly.typescript.mod.InferencePriority.SpeculativeTuple & Double = js.native
+  
+  @js.native
+  sealed trait SubstituteSource
+    extends StObject
+       with InferencePriority
+  /* 4 */ val SubstituteSource: typingsJapgolly.typescript.mod.InferencePriority.SubstituteSource & Double = js.native
 }
-

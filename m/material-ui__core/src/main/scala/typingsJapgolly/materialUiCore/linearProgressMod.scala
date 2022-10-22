@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.linearProgressLinearProgressMod.LinearProgressProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/LinearProgress", JSImport.Namespace)
-@js.native
-object linearProgressMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[LinearProgressProps, ComponentState, js.Any] {
-    def this(props: LinearProgressProps) = this()
-    def this(props: LinearProgressProps, context: js.Any) = this()
-  }
+object linearProgressMod {
   
+  @JSImport("@material-ui/core/LinearProgress", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[LinearProgressProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: LinearProgressProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

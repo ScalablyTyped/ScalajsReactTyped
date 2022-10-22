@@ -1,52 +1,30 @@
 package typingsJapgolly.officeJs.Excel
 
-import typingsJapgolly.officeJs.AnonExpand
 import typingsJapgolly.officeJs.Excel.Interfaces.TableSortData
 import typingsJapgolly.officeJs.Excel.Interfaces.TableSortLoadOptions
 import typingsJapgolly.officeJs.OfficeExtension.ClientObject
+import typingsJapgolly.officeJs.anon.Expand
 import typingsJapgolly.officeJs.officeJsStrings.PinYin
 import typingsJapgolly.officeJs.officeJsStrings.StrokeCount
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Manages sorting operations on `Table` objects.
   *
-  * Manages sorting operations on Table objects.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
-@JSGlobal("Excel.TableSort")
 @js.native
-class TableSort () extends ClientObject {
-  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-  @JSName("context")
-  var context_TableSort: RequestContext = js.native
+trait TableSort
+  extends StObject
+     with ClientObject {
+  
   /**
-    *
-    * Represents the current conditions used to last sort the table. Read-only.
-    *
-    * [Api set: ExcelApi 1.2]
-    */
-  val fields: js.Array[SortField] = js.native
-  /**
-    *
-    * Represents whether the casing impacted the last sort of the table. Read-only.
-    *
-    * [Api set: ExcelApi 1.2]
-    */
-  val matchCase: Boolean = js.native
-  /**
-    *
-    * Represents Chinese character ordering method last used to sort the table. Read-only.
-    *
-    * [Api set: ExcelApi 1.2]
-    */
-  val method: SortMethod | PinYin | StrokeCount = js.native
-  /**
-    *
     * Perform a sort operation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     *
     * @param fields The list of conditions to sort on.
@@ -58,18 +36,34 @@ class TableSort () extends ClientObject {
   @JSName("apply")
   def apply(fields: js.Array[SortField], matchCase: Boolean): Unit = js.native
   @JSName("apply")
+  def apply(fields: js.Array[SortField], matchCase: Boolean, method: PinYin | StrokeCount): Unit = js.native
+  @JSName("apply")
   def apply(fields: js.Array[SortField], matchCase: Boolean, method: SortMethod): Unit = js.native
   @JSName("apply")
-  def apply_PinYin(fields: js.Array[SortField], matchCase: Boolean, method: PinYin): Unit = js.native
+  def apply(fields: js.Array[SortField], matchCase: Unit, method: PinYin | StrokeCount): Unit = js.native
   @JSName("apply")
-  def apply_StrokeCount(fields: js.Array[SortField], matchCase: Boolean, method: StrokeCount): Unit = js.native
+  def apply(fields: js.Array[SortField], matchCase: Unit, method: SortMethod): Unit = js.native
+  
   /**
-    *
     * Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   def clear(): Unit = js.native
+  
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_TableSort: RequestContext = js.native
+  
+  /**
+    * Specifies the current conditions used to last sort the table.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
+  val fields: js.Array[SortField] = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -77,20 +71,37 @@ class TableSort () extends ClientObject {
     */
   def load(): TableSort = js.native
   def load(options: TableSortLoadOptions): TableSort = js.native
-  def load(propertyNamesAndPaths: AnonExpand): TableSort = js.native
+  def load(propertyNamesAndPaths: Expand): TableSort = js.native
   def load(propertyNames: String): TableSort = js.native
   def load(propertyNames: js.Array[String]): TableSort = js.native
+  
   /**
+    * Specifies if the casing impacts the last sort of the table.
     *
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
+  val matchCase: Boolean = js.native
+  
+  /**
+    * Represents the Chinese character ordering method last used to sort the table.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
+  val method: SortMethod | PinYin | StrokeCount = js.native
+  
+  /**
     * Reapplies the current sorting parameters to the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   def reapply(): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.TableSort object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableSortData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): TableSortData = js.native
 }
-

@@ -1,13 +1,24 @@
 package typingsJapgolly.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.Pow")
-@js.native
-class Pow protected () extends Interpolation {
-  def this(power: Double) = this()
-  var power: Double = js.native
+trait Pow
+  extends StObject
+     with Interpolation {
+  
+  /* protected */ var power: Double
 }
-
+object Pow {
+  
+  inline def apply(apply: (Double, Double, Double) => Double, applyInternal: Double => Double, power: Double): Pow = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction3(apply), applyInternal = js.Any.fromFunction1(applyInternal), power = power.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Pow]
+  }
+  
+  extension [Self <: Pow](x: Self) {
+    
+    inline def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+  }
+}

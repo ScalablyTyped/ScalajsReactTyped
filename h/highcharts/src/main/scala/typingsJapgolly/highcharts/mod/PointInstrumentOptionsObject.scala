@@ -1,52 +1,60 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointInstrumentOptionsObject extends js.Object {
+trait PointInstrumentOptionsObject extends StObject {
+  
   /**
     * The maximum duration for a note when using a data property for
     * duration. Can be overridden by using either a fixed number or a
     * function for instrumentMapping.duration. Defaults to 2000.
     */
   var maxDuration: js.UndefOr[Double] = js.undefined
+  
   /**
     * The maximum frequency for a note when using a data property for
     * frequency. Can be overridden by using either a fixed number or a
     * function for instrumentMapping.frequency. Defaults to 2200.
     */
   var maxFrequency: js.UndefOr[Double] = js.undefined
+  
   /**
     * The maximum pan value for a note when using a data property for
     * panning. Can be overridden by using either a fixed number or a
     * function for instrumentMapping.pan. Defaults to 1 (fully right).
     */
   var maxPan: js.UndefOr[Double] = js.undefined
+  
   /**
     * The maximum volume for a note when using a data property for volume.
     * Can be overridden by using either a fixed number or a function for
     * instrumentMapping.volume. Defaults to 1.
     */
   var maxVolume: js.UndefOr[Double] = js.undefined
+  
   /**
     * The minimum duration for a note when using a data property for
     * duration. Can be overridden by using either a fixed number or a
     * function for instrumentMapping.duration. Defaults to 20.
     */
   var minDuration: js.UndefOr[Double] = js.undefined
+  
   /**
     * The minimum frequency for a note when using a data property for
     * frequency. Can be overridden by using either a fixed number or a
     * function for instrumentMapping.frequency. Defaults to 220.
     */
   var minFrequency: js.UndefOr[Double] = js.undefined
+  
   /**
     * The minimum pan value for a note when using a data property for
     * panning. Can be overridden by using either a fixed number or a
     * function for instrumentMapping.pan. Defaults to -1 (fully left).
     */
   var minPan: js.UndefOr[Double] = js.undefined
+  
   /**
     * The minimum volume for a note when using a data property for volume.
     * Can be overridden by using either a fixed number or a function for
@@ -54,29 +62,45 @@ trait PointInstrumentOptionsObject extends js.Object {
     */
   var minVolume: js.UndefOr[Double] = js.undefined
 }
-
 object PointInstrumentOptionsObject {
-  @scala.inline
-  def apply(
-    maxDuration: Int | Double = null,
-    maxFrequency: Int | Double = null,
-    maxPan: Int | Double = null,
-    maxVolume: Int | Double = null,
-    minDuration: Int | Double = null,
-    minFrequency: Int | Double = null,
-    minPan: Int | Double = null,
-    minVolume: Int | Double = null
-  ): PointInstrumentOptionsObject = {
+  
+  inline def apply(): PointInstrumentOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
-    if (maxFrequency != null) __obj.updateDynamic("maxFrequency")(maxFrequency.asInstanceOf[js.Any])
-    if (maxPan != null) __obj.updateDynamic("maxPan")(maxPan.asInstanceOf[js.Any])
-    if (maxVolume != null) __obj.updateDynamic("maxVolume")(maxVolume.asInstanceOf[js.Any])
-    if (minDuration != null) __obj.updateDynamic("minDuration")(minDuration.asInstanceOf[js.Any])
-    if (minFrequency != null) __obj.updateDynamic("minFrequency")(minFrequency.asInstanceOf[js.Any])
-    if (minPan != null) __obj.updateDynamic("minPan")(minPan.asInstanceOf[js.Any])
-    if (minVolume != null) __obj.updateDynamic("minVolume")(minVolume.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointInstrumentOptionsObject]
   }
+  
+  extension [Self <: PointInstrumentOptionsObject](x: Self) {
+    
+    inline def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
+    
+    inline def setMaxFrequency(value: Double): Self = StObject.set(x, "maxFrequency", value.asInstanceOf[js.Any])
+    
+    inline def setMaxFrequencyUndefined: Self = StObject.set(x, "maxFrequency", js.undefined)
+    
+    inline def setMaxPan(value: Double): Self = StObject.set(x, "maxPan", value.asInstanceOf[js.Any])
+    
+    inline def setMaxPanUndefined: Self = StObject.set(x, "maxPan", js.undefined)
+    
+    inline def setMaxVolume(value: Double): Self = StObject.set(x, "maxVolume", value.asInstanceOf[js.Any])
+    
+    inline def setMaxVolumeUndefined: Self = StObject.set(x, "maxVolume", js.undefined)
+    
+    inline def setMinDuration(value: Double): Self = StObject.set(x, "minDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMinDurationUndefined: Self = StObject.set(x, "minDuration", js.undefined)
+    
+    inline def setMinFrequency(value: Double): Self = StObject.set(x, "minFrequency", value.asInstanceOf[js.Any])
+    
+    inline def setMinFrequencyUndefined: Self = StObject.set(x, "minFrequency", js.undefined)
+    
+    inline def setMinPan(value: Double): Self = StObject.set(x, "minPan", value.asInstanceOf[js.Any])
+    
+    inline def setMinPanUndefined: Self = StObject.set(x, "minPan", js.undefined)
+    
+    inline def setMinVolume(value: Double): Self = StObject.set(x, "minVolume", value.asInstanceOf[js.Any])
+    
+    inline def setMinVolumeUndefined: Self = StObject.set(x, "minVolume", js.undefined)
+  }
 }
-

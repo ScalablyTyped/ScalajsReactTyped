@@ -1,12 +1,14 @@
 package typingsJapgolly.mumath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mumath/closest", JSImport.Namespace)
-@js.native
-object closestMod extends js.Object {
-  def apply(value: Double, list: js.Array[Double]): Double = js.native
+object closestMod {
+  
+  inline def apply(value: Double, list: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @JSImport("mumath/closest", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

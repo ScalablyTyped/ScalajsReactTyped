@@ -1,23 +1,24 @@
 package typingsJapgolly.knockoutValidation
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KnockoutValidationRuleDefinition extends KnockoutValidationRuleBase {
-  def validator(value: js.Any, params: js.Any): Boolean
+trait KnockoutValidationRuleDefinition
+  extends StObject
+     with KnockoutValidationRuleBase {
+  
+  def validator(value: Any, params: Any): Boolean
 }
-
 object KnockoutValidationRuleDefinition {
-  @scala.inline
-  def apply(
-    message: String | KnockoutValidationMessageFunction,
-    validator: (js.Any, js.Any) => CallbackTo[Boolean]
-  ): KnockoutValidationRuleDefinition = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    __obj.updateDynamic("validator")(js.Any.fromFunction2((t0: js.Any, t1: js.Any) => validator(t0, t1).runNow()))
+  
+  inline def apply(message: String | KnockoutValidationMessageFunction, validator: (Any, Any) => Boolean): KnockoutValidationRuleDefinition = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], validator = js.Any.fromFunction2(validator))
     __obj.asInstanceOf[KnockoutValidationRuleDefinition]
   }
+  
+  extension [Self <: KnockoutValidationRuleDefinition](x: Self) {
+    
+    inline def setValidator(value: (Any, Any) => Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
+  }
 }
-

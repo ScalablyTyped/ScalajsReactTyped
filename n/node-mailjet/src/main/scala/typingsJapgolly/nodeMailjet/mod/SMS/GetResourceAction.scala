@@ -1,13 +1,15 @@
 package typingsJapgolly.nodeMailjet.mod.SMS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetResourceAction extends js.Object {
+trait GetResourceAction extends StObject {
+  
   def id(value: String): GetResourceActionId = js.native
+  def id(value: Double): GetResourceActionId = js.native
+  
   def request(): js.Promise[GetResponseAction] = js.native
   def request(params: GetParams): js.Promise[GetResponseAction] = js.native
 }
-

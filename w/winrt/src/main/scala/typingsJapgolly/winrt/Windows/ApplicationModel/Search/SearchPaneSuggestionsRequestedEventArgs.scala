@@ -1,19 +1,21 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Search
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestedEventArgs")
-@js.native
-class SearchPaneSuggestionsRequestedEventArgs () extends ISearchPaneSuggestionsRequestedEventArgs {
-  /* CompleteClass */
-  override var language: String = js.native
-  /* CompleteClass */
-  override var linguisticDetails: SearchPaneQueryLinguisticDetails = js.native
-  /* CompleteClass */
-  override var queryText: String = js.native
-  /* CompleteClass */
-  override var request: SearchPaneSuggestionsRequest = js.native
+trait SearchPaneSuggestionsRequestedEventArgs
+  extends StObject
+     with ISearchPaneSuggestionsRequestedEventArgs
+object SearchPaneSuggestionsRequestedEventArgs {
+  
+  inline def apply(
+    language: String,
+    linguisticDetails: SearchPaneQueryLinguisticDetails,
+    queryText: String,
+    request: SearchPaneSuggestionsRequest
+  ): SearchPaneSuggestionsRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], linguisticDetails = linguisticDetails.asInstanceOf[js.Any], queryText = queryText.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SearchPaneSuggestionsRequestedEventArgs]
+  }
 }
-

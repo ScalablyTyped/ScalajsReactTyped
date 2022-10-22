@@ -10,10 +10,10 @@ Range header field string parser
 | ------------------ | :-------------: |
 | Full name          | range-parser |
 | Keywords           | range, parser, http |
-| # releases         | 2 |
-| # dependents       | 324 |
-| # downloads        | 459470051 |
-| # stars            | 8 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0114253633333333E8 |
+| # stars            | 84.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/range-parser#readme)

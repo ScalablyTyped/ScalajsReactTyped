@@ -1,59 +1,57 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EChatMemberStateChange extends js.Object
-
+sealed trait EChatMemberStateChange extends StObject
 @JSImport("steam-client", "EChatMemberStateChange")
 @js.native
-object EChatMemberStateChange extends js.Object {
-  @js.native
-  sealed trait Banned extends EChatMemberStateChange
-  
-  @js.native
-  sealed trait Disconnected extends EChatMemberStateChange
-  
-  @js.native
-  sealed trait Entered extends EChatMemberStateChange
-  
-  @js.native
-  sealed trait Kicked extends EChatMemberStateChange
-  
-  @js.native
-  sealed trait Left extends EChatMemberStateChange
-  
-  @js.native
-  sealed trait VoiceDoneSpeaking extends EChatMemberStateChange
-  
-  @js.native
-  sealed trait VoiceSpeaking extends EChatMemberStateChange
+object EChatMemberStateChange extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EChatMemberStateChange with Double] = js.native
-  /* 0x10 */ @js.native
-  object Banned extends TopLevel[Banned with Double]
+  def apply(value: Double): js.UndefOr[EChatMemberStateChange & Double] = js.native
   
-  /* 0x04 */ @js.native
-  object Disconnected extends TopLevel[Disconnected with Double]
+  @js.native
+  sealed trait Banned
+    extends StObject
+       with EChatMemberStateChange
+  /* 0x10 */ val Banned: typingsJapgolly.steamClient.mod.EChatMemberStateChange.Banned & Double = js.native
   
-  /* 0x01 */ @js.native
-  object Entered extends TopLevel[Entered with Double]
+  @js.native
+  sealed trait Disconnected
+    extends StObject
+       with EChatMemberStateChange
+  /* 0x04 */ val Disconnected: typingsJapgolly.steamClient.mod.EChatMemberStateChange.Disconnected & Double = js.native
   
-  /* 0x08 */ @js.native
-  object Kicked extends TopLevel[Kicked with Double]
+  @js.native
+  sealed trait Entered
+    extends StObject
+       with EChatMemberStateChange
+  /* 0x01 */ val Entered: typingsJapgolly.steamClient.mod.EChatMemberStateChange.Entered & Double = js.native
   
-  /* 0x02 */ @js.native
-  object Left extends TopLevel[Left with Double]
+  @js.native
+  sealed trait Kicked
+    extends StObject
+       with EChatMemberStateChange
+  /* 0x08 */ val Kicked: typingsJapgolly.steamClient.mod.EChatMemberStateChange.Kicked & Double = js.native
   
-  /* 0x2000 */ @js.native
-  object VoiceDoneSpeaking extends TopLevel[VoiceDoneSpeaking with Double]
+  @js.native
+  sealed trait Left
+    extends StObject
+       with EChatMemberStateChange
+  /* 0x02 */ val Left: typingsJapgolly.steamClient.mod.EChatMemberStateChange.Left & Double = js.native
   
-  /* 0x1000 */ @js.native
-  object VoiceSpeaking extends TopLevel[VoiceSpeaking with Double]
+  @js.native
+  sealed trait VoiceDoneSpeaking
+    extends StObject
+       with EChatMemberStateChange
+  /* 0x2000 */ val VoiceDoneSpeaking: typingsJapgolly.steamClient.mod.EChatMemberStateChange.VoiceDoneSpeaking & Double = js.native
   
+  @js.native
+  sealed trait VoiceSpeaking
+    extends StObject
+       with EChatMemberStateChange
+  /* 0x1000 */ val VoiceSpeaking: typingsJapgolly.steamClient.mod.EChatMemberStateChange.VoiceSpeaking & Double = js.native
 }
-

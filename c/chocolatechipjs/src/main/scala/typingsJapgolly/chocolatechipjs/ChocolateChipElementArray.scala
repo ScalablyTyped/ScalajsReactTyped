@@ -1,32 +1,38 @@
 package typingsJapgolly.chocolatechipjs
 
+import org.scalajs.dom.Event
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.Text
+import typingsJapgolly.chocolatechipjs.anon.Bottom
 import typingsJapgolly.std.Array
-import typingsJapgolly.std.Event_
-import typingsJapgolly.std.HTMLElement
-import typingsJapgolly.std.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for ChocolateChipJS Element Collections.
   */
 @js.native
-trait ChocolateChipElementArray extends Array[HTMLElement] {
+trait ChocolateChipElementArray
+  extends StObject
+     with Array[HTMLElement] {
+  
   /**
     * Adds the specified class(es) to each of the set of matched elements.
     *
     * @param className One or more space-separated classes to be added to the class attribute of each matched element.
     */
   def addClass(className: String): ChocolateChipElementArray = js.native
+  
   def after(content: String): ChocolateChipElementArray = js.native
+  def after(content: HTMLElement): ChocolateChipElementArray = js.native
   /**
     * Insert content, specified by the parameter, after each element in the set of matched elements.
     *
     * @param content HTML string, DOM element, array of elements to insert after each element in the set of matched elements.
     */
   def after(content: ChocolateChipElementArray): ChocolateChipElementArray = js.native
-  def after(content: HTMLElement): ChocolateChipElementArray = js.native
+  
   /**
     * For each element in the set, get the first element that matches the selector by testing the element
     * itself and traversing up through its ancestors in the DOM tree, or, if a number is provided,
@@ -36,6 +42,7 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def ancestor(selector: String): ChocolateChipElementArray = js.native
   def ancestor(selector: Double): ChocolateChipElementArray = js.native
+  
   /**
     * A method to animate DOM nodes using CSS. This uses CSS transitions.
     *
@@ -46,7 +53,11 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
   def animate(options: js.Object): Unit = js.native
   def animate(options: js.Object, duration: String): Unit = js.native
   def animate(options: js.Object, duration: String, easing: String): Unit = js.native
+  def animate(options: js.Object, duration: Unit, easing: String): Unit = js.native
+  
   def append(content: String): ChocolateChipElementArray = js.native
+  def append(content: HTMLElement): ChocolateChipElementArray = js.native
+  def append(content: Text): ChocolateChipElementArray = js.native
   /**
     * Insert content, specified by the parameter, to the end of each element in the set of matched elements.
     *
@@ -54,8 +65,7 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * of matched elements.
     */
   def append(content: ChocolateChipElementArray): ChocolateChipElementArray = js.native
-  def append(content: HTMLElement): ChocolateChipElementArray = js.native
-  def append(content: Text): ChocolateChipElementArray = js.native
+  
   def appendTo(target: String): ChocolateChipElementArray = js.native
   /**
     * Insert every element in the set of matched elements to the end of the target.
@@ -63,8 +73,9 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param target A selector, element, or HTML string. The matched set of elements will be inserted at the end of the element specified by this parameter.
     * If no position value is provided it will simply append the content to the target.
     */
-  def appendTo(target: js.Array[_]): ChocolateChipElementArray = js.native
+  def appendTo(target: js.Array[Any]): ChocolateChipElementArray = js.native
   def appendTo(target: HTMLElement): ChocolateChipElementArray = js.native
+  
   /**
     * Get the value of an attribute for the first element in the set of matched elements.
     *
@@ -79,14 +90,16 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param value A string indicating the value to set the attribute to.
     */
   def attr(attributeName: String, value: String): ChocolateChipElementArray = js.native
+  
   def before(content: String): ChocolateChipElementArray = js.native
+  def before(content: HTMLElement): ChocolateChipElementArray = js.native
   /**
     * Insert content, specified by the parameter, before each element in the set of matched elements.
     *
     * @param content HTML string, DOM element, array of elements to insert before each element in the set of matched elements.
     */
   def before(content: ChocolateChipElementArray): ChocolateChipElementArray = js.native
-  def before(content: HTMLElement): ChocolateChipElementArray = js.native
+  
   /**
     * Attach a handler to an event for the elements.
     *
@@ -94,8 +107,9 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param handler A function to execute each time the event is triggered.
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     */
-  def bind(eventType: String, handler: js.Function1[/* eventObject */ Event_, _]): ChocolateChipStatic = js.native
-  def bind(eventType: String, handler: js.Function1[/* eventObject */ Event_, _], useCapture: Boolean): ChocolateChipStatic = js.native
+  def bind(eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def bind(eventType: String, handler: js.Function1[/* eventObject */ Event, Any], useCapture: Boolean): ChocolateChipStatic = js.native
+  
   /**
     * Get the children of each element in the set of matched elements, optionally filtered by a selector.
     *
@@ -103,7 +117,9 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def children(): ChocolateChipElementArray = js.native
   def children(selector: String): ChocolateChipElementArray = js.native
+  
   def clone(value: Boolean): ChocolateChipElementArray = js.native
+  
   /**
     * For each element in the set, get the first element that matches the selector by testing the element
     * itself and traversing up through its ancestors in the DOM tree.
@@ -112,6 +128,7 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def closest(selector: String): ChocolateChipElementArray = js.native
   def closest(selector: Double): ChocolateChipElementArray = js.native
+  
   /**
     * Set one or more CSS properties for the set of matched elements.
     *
@@ -131,20 +148,21 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param value A value to set for the property.
     */
   def css(propertyName: String, value: String): ChocolateChipElementArray = js.native
+  
   /**
     * Return the value at the named data store for the first element in the element collection, as set by
     * data(name).
     *
     * @param key Name of the data stored.
     */
-  def data(key: String): js.Any = js.native
+  def data(key: String): Any = js.native
   /**
     * Store arbitrary data associated with the matched elements.
     *
     * @param key A string naming the piece of data to set.
     * @param value The new data value; it can be any Javascript type including Array or Object.
     */
-  def data(key: String, value: js.Any): ChocolateChipElementArray = js.native
+  def data(key: String, value: Any): ChocolateChipElementArray = js.native
   /**
     * Store arbitrary data associated with the matched element.
     *
@@ -153,6 +171,7 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   @JSName("data")
   def data_ChocolateChipElementArray(key: String): ChocolateChipElementArray = js.native
+  
   /**
     * Retrieve a dataset key's value for the first element in the element collection.
     *
@@ -165,7 +184,8 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param key A string naming the piece of data to set.
     * @param value The new data value; it must be a string. You can convert JSON into a string to use with this.
     */
-  def dataset(key: String, value: js.Any): ChocolateChipElementArray = js.native
+  def dataset(key: String, value: Any): ChocolateChipElementArray = js.native
+  
   /**
     * Add a delegated event to listen for the provided event on the descendant elements.
     *
@@ -175,29 +195,34 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * to the element receiving the event.
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     */
-  def delegate(selector: js.Any, eventType: String, handler: js.Function1[/* eventObject */ Event_, _]): ChocolateChipStatic = js.native
+  def delegate(selector: Any, eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def delegate(
-    selector: js.Any,
+    selector: Any,
     eventType: String,
-    handler: js.Function1[/* eventObject */ Event_, _],
+    handler: js.Function1[/* eventObject */ Event, Any],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
+  
   /**
     * Set the property of an element to "disabled".
     */
   def disable(): ChocolateChipElementArray = js.native
+  
   /**
     * Iterate over an Array object, executing a function for each matched element.
     */
-  def each(func: js.Function2[/* ctx */ js.Any, /* idx */ Double, Unit]): Unit = js.native
+  def each(func: js.Function2[/* ctx */ Any, /* idx */ Double, Unit]): Unit = js.native
+  
   /**
     * Remove all child nodes of the set of matched elements from the DOM.
     */
   def empty(): ChocolateChipElementArray = js.native
+  
   /**
     * Set the property of an element to enabled by removing the "disabled" attribute.
     */
   def enable(): ChocolateChipElementArray = js.native
+  
   /**
     * This method returns the element at the position in the array indicated by the argument. This is a zero-based number.
     * When dealing with document nodes, this allows you to cherry pick a node from its collection based on its
@@ -206,6 +231,7 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param index Value indicating the node you wish to access from a collection. This is zero-based.
     */
   def eq(index: Double): ChocolateChipElementArray = js.native
+  
   /**
     * Get the descendants of each element in the current set of matched elements, filtered by a selector or element.
     *
@@ -218,10 +244,12 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param selector A string containing a selector expression to match elements against.
     */
   def find(selector: String): ChocolateChipElementArray = js.native
+  
   /**
     * Reduce the set of matched elements to the first in the set.
     */
   def first(): ChocolateChipElementArray = js.native
+  
   /**
     * Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.
     *
@@ -234,18 +262,21 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param selector A string containing a selector expression to match elements against.
     */
   def has(selector: String): ChocolateChipElementArray = js.native
+  
   /**
     * Return any of the matched elements that have the given attribute.
     *
     * @param className The class name to search for.
     */
   def hasAttr(attributeName: String): ChocolateChipElementArray = js.native
+  
   /**
     * Return any of the matched elements that have the given class.
     *
     * @param className The class name to search for.
     */
   def hasClass(className: String): ChocolateChipElementArray = js.native
+  
   /**
     * Reduce the set of matched elements to those that have a descendant that does not match the selector or DOM element.
     *
@@ -259,11 +290,13 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @ return HTMLElement[]
     */
   def hasnt(selector: String): ChocolateChipElementArray = js.native
+  
   /**
     * Get the current computed height for the first element in the set of matched elements,
     * including padding but excluding borders.
     */
   def height(): Double = js.native
+  
   /**
     * Hide the matched elements.
     *
@@ -275,6 +308,8 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
   def hide(duration: String, callback: js.Function): ChocolateChipElementArray = js.native
   def hide(duration: Double): ChocolateChipElementArray = js.native
   def hide(duration: Double, callback: js.Function): ChocolateChipElementArray = js.native
+  def hide(duration: Unit, callback: js.Function): ChocolateChipElementArray = js.native
+  
   /**
     * Get the HTML contents of the first element in the set of matched elements.
     */
@@ -285,6 +320,7 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param htmlString A string of HTML to set as the content of each matched element.
     */
   def html(htmlString: String): ChocolateChipElementArray = js.native
+  
   /**
     * Search for a given element from among the matched elements on a collection.
     * This method returns the index value as an integer.
@@ -298,19 +334,21 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def index(selector: String): Double = js.native
   def index(selector: js.Array[HTMLElement]): Double = js.native
+  
   /**
     * Insert element(s) into the target element.
     */
   def insert(content: String): ChocolateChipElementArray = js.native
   def insert(content: String, position: String): ChocolateChipElementArray = js.native
   def insert(content: String, position: Double): ChocolateChipElementArray = js.native
+  
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it matches the given arguments.
     *
     * @param elements One or more elements to match the current set of elements against.
     */
-  def is(element: js.Any): ChocolateChipElementArray = js.native
+  def is(element: Any): ChocolateChipElementArray = js.native
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it matches the given arguments.
@@ -318,13 +356,14 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param selector A string containing a selector expression to match elements against.
     */
   def is(selector: String): ChocolateChipElementArray = js.native
+  
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it does not match the given arguments.
     *
     * @param elements One or more elements to match the current set of elements against.
     */
-  def isnt(element: js.Any): ChocolateChipElementArray = js.native
+  def isnt(element: Any): ChocolateChipElementArray = js.native
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it does not match the given arguments.
@@ -332,14 +371,17 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param selector A string containing a selector expression to match elements against.
     */
   def isnt(selector: String): ChocolateChipElementArray = js.native
+  
   /**
     * Reduce the set of matched elements to the last in the set.
     */
   def last(): ChocolateChipElementArray = js.native
+  
   /**
     * Get the immediately following sibling of each element in the set of matched elements.
     */
   def next(): ChocolateChipElementArray = js.native
+  
   /**
     * Remove a handler for an event from the elements. If the second argument is a selector, it tries to undelegate the event.
     * If no arugments are provided, it removes all events from the element(s).
@@ -351,19 +393,47 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def off(): ChocolateChipStatic = js.native
   def off(eventType: String): ChocolateChipStatic = js.native
-  def off(eventType: String, selector: js.Any): ChocolateChipStatic = js.native
-  def off(eventType: String, selector: js.Any, handler: js.Function1[/* eventObject */ Event_, _]): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: Any): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: Any, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def off(
     eventType: String,
-    selector: js.Any,
-    handler: js.Function1[/* eventObject */ Event_, _],
+    selector: Any,
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: Unit, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def off(
+    eventType: String,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ Event, Any],
+    capturePhase: Boolean
+  ): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: Unit, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  def off(eventType: Unit, selector: Any): ChocolateChipStatic = js.native
+  def off(eventType: Unit, selector: Any, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def off(
+    eventType: Unit,
+    selector: Any,
+    handler: js.Function1[/* eventObject */ Event, Any],
+    capturePhase: Boolean
+  ): ChocolateChipStatic = js.native
+  def off(eventType: Unit, selector: Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  def off(eventType: Unit, selector: Unit, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def off(
+    eventType: Unit,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ Event, Any],
+    capturePhase: Boolean
+  ): ChocolateChipStatic = js.native
+  def off(eventType: Unit, selector: Unit, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  
   /**
     * Get an object of the current coordinates of the first element in the set of matched elements, relative to the document.
     * These are: top, left, bottom and right. The values are numbers representing pixel values.
     */
-  def offset(): AnonBottom = js.native
+  def offset(): Bottom = js.native
+  
   /**
     * Add a handler to an event for elements. If a selector is provided as the second argument, this implements a delegated event.
     *
@@ -372,14 +442,16 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param handler A function handler assigned to this event.
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     */
-  def on(eventType: String, selector: js.Any): ChocolateChipStatic = js.native
-  def on(eventType: String, selector: js.Any, handler: js.Function1[/* eventObject */ Event_, _]): ChocolateChipStatic = js.native
+  def on(eventType: String, selector: Any): ChocolateChipStatic = js.native
+  def on(eventType: String, selector: Any, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def on(
     eventType: String,
-    selector: js.Any,
-    handler: js.Function1[/* eventObject */ Event_, _],
+    selector: Any,
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
+  def on(eventType: String, selector: Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  
   /**
     * Get the parent of each element in the current set of matched elements, optionally filtered by a selector.
     * If multiple elements have the same parent, only one instance of the parent is returned.
@@ -388,27 +460,31 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def parent(): ChocolateChipElementArray = js.native
   def parent(selector: String): ChocolateChipElementArray = js.native
+  
   def prepend(content: String): ChocolateChipElementArray = js.native
+  def prepend(content: HTMLElement): ChocolateChipElementArray = js.native
+  def prepend(content: Text): ChocolateChipElementArray = js.native
   /**
     * Insert content, specified by the parameter, at the beginning of each element in the set of matched elements.
     *
     * @param content DOM element, array of elements, or HTML string to insert at the beginning of each element in the set of matched elements.
     */
   def prepend(content: ChocolateChipElementArray): ChocolateChipElementArray = js.native
-  def prepend(content: HTMLElement): ChocolateChipElementArray = js.native
-  def prepend(content: Text): ChocolateChipElementArray = js.native
+  
   def prependTo(target: String): ChocolateChipElementArray = js.native
   /**
     * Insert every element in the set of matched elements to the beginning of the target.
     *
     * @param target A selector, element, or HTML string. The matched set of elements will be inserted at the beginning of the element specified by this parameter.
     */
-  def prependTo(target: js.Array[_]): ChocolateChipElementArray = js.native
+  def prependTo(target: js.Array[Any]): ChocolateChipElementArray = js.native
   def prependTo(target: HTMLElement): ChocolateChipElementArray = js.native
+  
   /**
     * Get the immediately preceding sibling of each element in the set of matched elements.
     */
   def prev(): ChocolateChipElementArray = js.native
+  
   /**
     * Test whether an attribute exists on the first element in the set of matched elements. The value returned is a boolean.
     *
@@ -421,8 +497,9 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param propertyName A string indicating the property to set.
     * @param value A string indicating the value to set the property to.
     */
-  def prop(propertyName: String, value: js.Any): ChocolateChipElementArray = js.native
+  def prop(propertyName: String, value: Any): ChocolateChipElementArray = js.native
   def prop(propertyName: String, value: Boolean): ChocolateChipElementArray = js.native
+  
   /**
     * Remove the set of matched elements from the DOM. If there are any attached events, this will remove them to prevent memory leaks.
     *
@@ -430,12 +507,14 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def remove(): ChocolateChipElementArray = js.native
   def remove(selector: String): ChocolateChipElementArray = js.native
+  
   /**
     * Remove an attribute from a node.
     *
     * @param attributeName A string indicating the attribute to remove.
     */
   def removeAttr(attributeName: String): ChocolateChipElementArray = js.native
+  
   /**
     * Remove a single class or multiple classes from each element in the set of matched elements.
     *
@@ -443,19 +522,22 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def removeClass(): ChocolateChipElementArray = js.native
   def removeClass(className: String): ChocolateChipElementArray = js.native
+  
   /**
     * Remove the value at the named data store for the first element in the element collection, as set by data(name, value).
     *
     * @param key Name of the data stored.
     */
-  def removeData(): js.Any = js.native
-  def removeData(key: String): js.Any = js.native
+  def removeData(): Any = js.native
+  def removeData(key: String): Any = js.native
+  
   /**
     * Remove an element property.
     *
     * @param property The property to remove.
     */
   def removeProp(property: String): ChocolateChipElementArray = js.native
+  
   /**
     * Display the matched elements.
     *
@@ -467,6 +549,8 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
   def show(duration: String, callback: js.Function): ChocolateChipElementArray = js.native
   def show(duration: Double): ChocolateChipElementArray = js.native
   def show(duration: Double, callback: js.Function): ChocolateChipElementArray = js.native
+  def show(duration: Unit, callback: js.Function): ChocolateChipElementArray = js.native
+  
   /**
     * Get the siblings of each element in the set of matched elements, optionally filtered by a selector.
     *
@@ -474,6 +558,7 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def siblings(): ChocolateChipElementArray = js.native
   def siblings(selector: String): ChocolateChipElementArray = js.native
+  
   /**
     * Get the combined text contents of each element in the set of matched elements, including their descendants
     */
@@ -486,8 +571,9 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     *        When Number is supplied, it will be converted to a String representation.
     *        To delete text, use ChocolateChipElementArray.empty() or ChocolateChipElementArray.remove().
     */
-  def text(text: String): org.scalajs.dom.raw.HTMLElement = js.native
-  def text(text: Double): org.scalajs.dom.raw.HTMLElement = js.native
+  def text(text: String): HTMLElement = js.native
+  def text(text: Double): HTMLElement = js.native
+  
   /**
     * Add or remove a classe from each element in the set of matched elements, depending on whether the class is present or not.
     *
@@ -495,12 +581,14 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def toggleClass(className: String): ChocolateChipElementArray = js.native
   def toggleClass(className: String, swtch: Boolean): ChocolateChipElementArray = js.native
+  
   /**
     * Trigger an event on an element.
     *
     * @param eventType The event to trigger.
     */
   def trigger(eventType: String): Unit = js.native
+  
   /**
     * Remove a handler for an event from the elements.
     *
@@ -510,8 +598,13 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def unbind(): ChocolateChipStatic = js.native
   def unbind(eventType: String): ChocolateChipStatic = js.native
-  def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event_, _]): ChocolateChipStatic = js.native
-  def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event_, _], useCapture: Boolean): ChocolateChipStatic = js.native
+  def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event, Any], useCapture: Boolean): ChocolateChipStatic = js.native
+  def unbind(eventType: String, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
+  def unbind(eventType: Unit, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def unbind(eventType: Unit, handler: js.Function1[/* eventObject */ Event, Any], useCapture: Boolean): ChocolateChipStatic = js.native
+  def unbind(eventType: Unit, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
+  
   /**
     * Add a delegated event to listen for the provided event on the descendant elements.
     *
@@ -521,27 +614,56 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     */
   def undelegate(): ChocolateChipStatic = js.native
-  def undelegate(selector: js.Any): ChocolateChipStatic = js.native
-  def undelegate(selector: js.Any, eventType: String): ChocolateChipStatic = js.native
-  def undelegate(selector: js.Any, eventType: String, handler: js.Function1[/* eventObject */ Event_, _]): ChocolateChipStatic = js.native
+  def undelegate(selector: Any): ChocolateChipStatic = js.native
+  def undelegate(selector: Any, eventType: String): ChocolateChipStatic = js.native
+  def undelegate(selector: Any, eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def undelegate(
-    selector: js.Any,
+    selector: Any,
     eventType: String,
-    handler: js.Function1[/* eventObject */ Event_, _],
+    handler: js.Function1[/* eventObject */ Event, Any],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
+  def undelegate(selector: Any, eventType: String, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
+  def undelegate(selector: Any, eventType: Unit, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def undelegate(
+    selector: Any,
+    eventType: Unit,
+    handler: js.Function1[/* eventObject */ Event, Any],
+    useCapture: Boolean
+  ): ChocolateChipStatic = js.native
+  def undelegate(selector: Any, eventType: Unit, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
+  def undelegate(selector: Unit, eventType: String): ChocolateChipStatic = js.native
+  def undelegate(selector: Unit, eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def undelegate(
+    selector: Unit,
+    eventType: String,
+    handler: js.Function1[/* eventObject */ Event, Any],
+    useCapture: Boolean
+  ): ChocolateChipStatic = js.native
+  def undelegate(selector: Unit, eventType: String, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
+  def undelegate(selector: Unit, eventType: Unit, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def undelegate(
+    selector: Unit,
+    eventType: Unit,
+    handler: js.Function1[/* eventObject */ Event, Any],
+    useCapture: Boolean
+  ): ChocolateChipStatic = js.native
+  def undelegate(selector: Unit, eventType: Unit, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
+  
   /**
     * Sorts an array and removes duplicates before returning it.
     */
   def unique(): ChocolateChipElementArray = js.native
+  
   /**
     * Remove the parents of the set of matched elements from the DOM, leaving the matched elements in their place.
     */
   def unwrap(): ChocolateChipElementArray = js.native
+  
   /**
     * Get the current value of the first element in the set of matched elements.
     */
-  def `val`(): js.Any = js.native
+  def `val`(): Any = js.native
   /**
     * Set the value of each element in the set of matched elements.
     *
@@ -549,11 +671,13 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     * to set as selected/checked.
     */
   def `val`(value: String): ChocolateChipElementArray = js.native
+  
   /**
     * Get the current computed width for the first element in the set of matched elements,
     * including padding but excluding borders.
     */
   def width(): Double = js.native
+  
   /**
     * Wrap an HTML structure around each element in the set of matched elements.
     *
@@ -561,4 +685,3 @@ trait ChocolateChipElementArray extends Array[HTMLElement] {
     */
   def wrap(wrappingElement: String): ChocolateChipElementArray = js.native
 }
-

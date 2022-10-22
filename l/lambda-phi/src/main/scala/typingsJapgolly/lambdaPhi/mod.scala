@@ -1,22 +1,32 @@
 package typingsJapgolly.lambdaPhi
 
-import typingsJapgolly.lambdaPhi.lambdaConfigMod.LambdaConfig
+import typingsJapgolly.lambdaPhi.libLambdaConfigMod.LambdaConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lambda-phi", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def Callback(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  def Context(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  def Event(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  def EventContext(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  def Lambda(): js.Function1[/* target */ js.Any, Unit] = js.native
-  def Lambda(lambdaConfig: LambdaConfig): js.Function1[/* target */ js.Any, Unit] = js.native
-  def LambdaHandler(event: js.Any, context: js.Any, callback: js.Any): Unit = js.native
-  def PostConstructor(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = js.native
-  def PreLambdaCallback(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = js.native
-  def PreLambdaTimeout(miliSecondsBeforeTimeout: Double): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = js.native
+object mod {
+  
+  @JSImport("lambda-phi", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def Callback(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Callback")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  
+  inline def Context(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Context")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  
+  inline def Event(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Event")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  
+  inline def EventContext(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("EventContext")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  
+  inline def Lambda(): js.Function1[/* target */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Lambda")().asInstanceOf[js.Function1[/* target */ Any, Unit]]
+  inline def Lambda(lambdaConfig: LambdaConfig): js.Function1[/* target */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Lambda")(lambdaConfig.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ Any, Unit]]
+  
+  inline def LambdaHandler(event: Any, context: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LambdaHandler")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def PostConstructor(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("PostConstructor")().asInstanceOf[js.Function2[/* target */ js.Object, /* methodName */ String, Unit]]
+  
+  inline def PreLambdaCallback(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("PreLambdaCallback")().asInstanceOf[js.Function2[/* target */ js.Object, /* methodName */ String, Unit]]
+  
+  inline def PreLambdaTimeout(miliSecondsBeforeTimeout: Double): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("PreLambdaTimeout")(miliSecondsBeforeTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* methodName */ String, Unit]]
 }
-

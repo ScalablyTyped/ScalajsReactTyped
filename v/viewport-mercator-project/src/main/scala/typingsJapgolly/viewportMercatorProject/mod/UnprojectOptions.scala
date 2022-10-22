@@ -1,20 +1,26 @@
 package typingsJapgolly.viewportMercatorProject.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UnprojectOptions extends ProjectOptions {
+trait UnprojectOptions
+  extends StObject
+     with ProjectOptions {
+  
   var targetZ: js.UndefOr[Double] = js.undefined
 }
-
 object UnprojectOptions {
-  @scala.inline
-  def apply(targetZ: Int | Double = null, topLeft: js.UndefOr[Boolean] = js.undefined): UnprojectOptions = {
+  
+  inline def apply(): UnprojectOptions = {
     val __obj = js.Dynamic.literal()
-    if (targetZ != null) __obj.updateDynamic("targetZ")(targetZ.asInstanceOf[js.Any])
-    if (!js.isUndefined(topLeft)) __obj.updateDynamic("topLeft")(topLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnprojectOptions]
   }
+  
+  extension [Self <: UnprojectOptions](x: Self) {
+    
+    inline def setTargetZ(value: Double): Self = StObject.set(x, "targetZ", value.asInstanceOf[js.Any])
+    
+    inline def setTargetZUndefined: Self = StObject.set(x, "targetZ", js.undefined)
+  }
 }
-

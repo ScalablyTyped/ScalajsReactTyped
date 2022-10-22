@@ -1,49 +1,66 @@
 package typingsJapgolly.uniApp
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScanCodeOptions extends js.Object {
+trait ScanCodeOptions extends StObject {
+  
   /**
     * 结束的回调函数（调用成功、失败都会执行）
     */
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 失败的回调函数
     */
   var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 是否只能从相机扫码，不允许从相册选择图片
     */
   var onlyFromCamera: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * 扫码类型，参数类型是数组，二维码是'qrCode'，一维码是'barCode'，DataMatrix是‘datamatrix’，pdf417是‘pdf417’。
     */
-  var scanType: js.UndefOr[js.Array[_]] = js.undefined
+  var scanType: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
     * 成功返回的回调函数
     */
   var success: js.UndefOr[js.Function1[/* result */ ScanCodeSuccessRes, Unit]] = js.undefined
 }
-
 object ScanCodeOptions {
-  @scala.inline
-  def apply(
-    complete: js.UndefOr[Callback] = js.undefined,
-    fail: js.UndefOr[Callback] = js.undefined,
-    onlyFromCamera: js.UndefOr[Boolean] = js.undefined,
-    scanType: js.Array[_] = null,
-    success: /* result */ ScanCodeSuccessRes => Callback = null
-  ): ScanCodeOptions = {
+  
+  inline def apply(): ScanCodeOptions = {
     val __obj = js.Dynamic.literal()
-    complete.foreach(p => __obj.updateDynamic("complete")(p.toJsFn))
-    fail.foreach(p => __obj.updateDynamic("fail")(p.toJsFn))
-    if (!js.isUndefined(onlyFromCamera)) __obj.updateDynamic("onlyFromCamera")(onlyFromCamera.asInstanceOf[js.Any])
-    if (scanType != null) __obj.updateDynamic("scanType")(scanType.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* result */ typingsJapgolly.uniApp.ScanCodeSuccessRes) => success(t0).runNow()))
     __obj.asInstanceOf[ScanCodeOptions]
   }
+  
+  extension [Self <: ScanCodeOptions](x: Self) {
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setFail(value: Callback): Self = StObject.set(x, "fail", value.toJsFn)
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setOnlyFromCamera(value: Boolean): Self = StObject.set(x, "onlyFromCamera", value.asInstanceOf[js.Any])
+    
+    inline def setOnlyFromCameraUndefined: Self = StObject.set(x, "onlyFromCamera", js.undefined)
+    
+    inline def setScanType(value: js.Array[Any]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
+    
+    inline def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
+    
+    inline def setScanTypeVarargs(value: Any*): Self = StObject.set(x, "scanType", js.Array(value*))
+    
+    inline def setSuccess(value: /* result */ ScanCodeSuccessRes => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* result */ ScanCodeSuccessRes) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

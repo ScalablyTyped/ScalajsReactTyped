@@ -1,20 +1,23 @@
 package typingsJapgolly.angularCore.mod
 
 import typingsJapgolly.angularCore.angularCoreStrings.`Brand for OpaqueViewState that nothing will match`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OpaqueViewState extends js.Object {
+trait OpaqueViewState extends StObject {
+  
   var __brand__ : `Brand for OpaqueViewState that nothing will match`
 }
-
 object OpaqueViewState {
-  @scala.inline
-  def apply(__brand__ : `Brand for OpaqueViewState that nothing will match`): OpaqueViewState = {
-    val __obj = js.Dynamic.literal(__brand__ = __brand__.asInstanceOf[js.Any])
   
+  inline def apply(): OpaqueViewState = {
+    val __obj = js.Dynamic.literal(__brand__ = "Brand for OpaqueViewState that nothing will match")
     __obj.asInstanceOf[OpaqueViewState]
   }
+  
+  extension [Self <: OpaqueViewState](x: Self) {
+    
+    inline def set__brand__(value: `Brand for OpaqueViewState that nothing will match`): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
+  }
 }
-

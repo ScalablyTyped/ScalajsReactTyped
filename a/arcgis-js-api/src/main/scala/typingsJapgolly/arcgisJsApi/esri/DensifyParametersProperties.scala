@@ -6,51 +6,65 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.meters_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.miles_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DensifyParametersProperties extends js.Object {
+trait DensifyParametersProperties extends StObject {
+  
   /**
     * If `true`, Geographic Coordinate System spatial references are used or densify geodesic will be performed.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DensifyParameters.html#geodesic)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#geodesic)
     */
   var geodesic: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The array of geometries to be densified.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DensifyParameters.html#geometries)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#geometries)
     */
   var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
+  
   /**
-    * The length unit of `maxSegmentLength`. For a list of valid units, see [esriSRUnitType Constants](http://resources.arcgis.com/en/help/arcobjects-cpp/componenthelp/index.html#/esriSRUnitType_Constants/000w00000042000000/) and [esriSRUnit2Type Constants](http://resources.arcgis.com/en/help/arcobjects-cpp/componenthelp/index.html#/esriSRUnit2Type_Constants/000w00000041000000/).
+    * The length unit of `maxSegmentLength`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DensifyParameters.html#lengthUnit)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#lengthUnit)
     */
   var lengthUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
+  
   /**
     * All segments longer than `maxSegmentLength` are replaced with sequences of lines no longer than `maxSegmentLength.`
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DensifyParameters.html#maxSegmentLength)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#maxSegmentLength)
     */
   var maxSegmentLength: js.UndefOr[Double] = js.undefined
 }
-
 object DensifyParametersProperties {
-  @scala.inline
-  def apply(
-    geodesic: js.UndefOr[Boolean] = js.undefined,
-    geometries: js.Array[GeometryProperties] = null,
-    lengthUnit: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards = null,
-    maxSegmentLength: Int | Double = null
-  ): DensifyParametersProperties = {
+  
+  inline def apply(): DensifyParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.asInstanceOf[js.Any])
-    if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
-    if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit.asInstanceOf[js.Any])
-    if (maxSegmentLength != null) __obj.updateDynamic("maxSegmentLength")(maxSegmentLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[DensifyParametersProperties]
   }
+  
+  extension [Self <: DensifyParametersProperties](x: Self) {
+    
+    inline def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
+    
+    inline def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
+    
+    inline def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    
+    inline def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
+    
+    inline def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value*))
+    
+    inline def setLengthUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "lengthUnit", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUnitUndefined: Self = StObject.set(x, "lengthUnit", js.undefined)
+    
+    inline def setMaxSegmentLength(value: Double): Self = StObject.set(x, "maxSegmentLength", value.asInstanceOf[js.Any])
+    
+    inline def setMaxSegmentLengthUndefined: Self = StObject.set(x, "maxSegmentLength", js.undefined)
+  }
 }
-

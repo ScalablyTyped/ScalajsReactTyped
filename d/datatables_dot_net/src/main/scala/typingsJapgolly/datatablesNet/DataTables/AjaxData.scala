@@ -1,32 +1,46 @@
 package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AjaxData extends js.Object {
-  var data: js.Any
+trait AjaxData extends StObject {
+  
+  var data: Any
+  
   var draw: js.UndefOr[Double] = js.undefined
+  
   var error: js.UndefOr[String] = js.undefined
+  
   var recordsFiltered: js.UndefOr[Double] = js.undefined
+  
   var recordsTotal: js.UndefOr[Double] = js.undefined
 }
-
 object AjaxData {
-  @scala.inline
-  def apply(
-    data: js.Any,
-    draw: Int | Double = null,
-    error: String = null,
-    recordsFiltered: Int | Double = null,
-    recordsTotal: Int | Double = null
-  ): AjaxData = {
+  
+  inline def apply(data: Any): AjaxData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (draw != null) __obj.updateDynamic("draw")(draw.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (recordsFiltered != null) __obj.updateDynamic("recordsFiltered")(recordsFiltered.asInstanceOf[js.Any])
-    if (recordsTotal != null) __obj.updateDynamic("recordsTotal")(recordsTotal.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxData]
   }
+  
+  extension [Self <: AjaxData](x: Self) {
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDraw(value: Double): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
+    
+    inline def setDrawUndefined: Self = StObject.set(x, "draw", js.undefined)
+    
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setRecordsFiltered(value: Double): Self = StObject.set(x, "recordsFiltered", value.asInstanceOf[js.Any])
+    
+    inline def setRecordsFilteredUndefined: Self = StObject.set(x, "recordsFiltered", js.undefined)
+    
+    inline def setRecordsTotal(value: Double): Self = StObject.set(x, "recordsTotal", value.asInstanceOf[js.Any])
+    
+    inline def setRecordsTotalUndefined: Self = StObject.set(x, "recordsTotal", js.undefined)
+  }
 }
-

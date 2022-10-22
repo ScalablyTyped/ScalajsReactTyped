@@ -1,25 +1,23 @@
 package typingsJapgolly.kdbxweb.mod
 
-import typingsJapgolly.kdbxweb.AnonBool
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "VarDictionary")
 @js.native
-class VarDictionary () extends js.Object {
-  def get(key: String): js.Object = js.native
-  def keys(): js.Array[String] = js.native
-  def remove(key: String): Unit = js.native
-  def set(key: String, `type`: Double, value: js.Object): Unit = js.native
-  def write(stm: BinaryStream): Unit = js.native
-}
-
+open class VarDictionary ()
+  extends typingsJapgolly.kdbxweb.distTypesUtilsVarDictionaryMod.VarDictionary
 /* static members */
-@JSImport("kdbxweb", "VarDictionary")
-@js.native
-object VarDictionary extends js.Object {
-  var ValueType: AnonBool = js.native
-  def read(stm: BinaryStream): VarDictionary = js.native
+object VarDictionary {
+  
+  @JSImport("kdbxweb", "VarDictionary")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("kdbxweb", "VarDictionary.ValueType")
+  @js.native
+  val ValueType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueType */ Any = js.native
+  
+  inline def read(stm: typingsJapgolly.kdbxweb.distTypesUtilsBinaryStreamMod.BinaryStream): typingsJapgolly.kdbxweb.distTypesUtilsVarDictionaryMod.VarDictionary = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(stm.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.kdbxweb.distTypesUtilsVarDictionaryMod.VarDictionary]
 }
-

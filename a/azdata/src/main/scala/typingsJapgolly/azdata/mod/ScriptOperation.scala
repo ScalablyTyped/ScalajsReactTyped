@@ -1,59 +1,57 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ScriptOperation extends js.Object
-
+sealed trait ScriptOperation extends StObject
 @JSImport("azdata", "ScriptOperation")
 @js.native
-object ScriptOperation extends js.Object {
-  @js.native
-  sealed trait Alter extends ScriptOperation
-  
-  @js.native
-  sealed trait Create extends ScriptOperation
-  
-  @js.native
-  sealed trait Delete extends ScriptOperation
-  
-  @js.native
-  sealed trait Execute extends ScriptOperation
-  
-  @js.native
-  sealed trait Insert extends ScriptOperation
-  
-  @js.native
-  sealed trait Select extends ScriptOperation
-  
-  @js.native
-  sealed trait Update extends ScriptOperation
+object ScriptOperation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ScriptOperation with Double] = js.native
-  /* 6 */ @js.native
-  object Alter extends TopLevel[Alter with Double]
+  def apply(value: Double): js.UndefOr[ScriptOperation & Double] = js.native
   
-  /* 1 */ @js.native
-  object Create extends TopLevel[Create with Double]
+  @js.native
+  sealed trait Alter
+    extends StObject
+       with ScriptOperation
+  /* 6 */ val Alter: typingsJapgolly.azdata.mod.ScriptOperation.Alter & Double = js.native
   
-  /* 4 */ @js.native
-  object Delete extends TopLevel[Delete with Double]
+  @js.native
+  sealed trait Create
+    extends StObject
+       with ScriptOperation
+  /* 1 */ val Create: typingsJapgolly.azdata.mod.ScriptOperation.Create & Double = js.native
   
-  /* 5 */ @js.native
-  object Execute extends TopLevel[Execute with Double]
+  @js.native
+  sealed trait Delete
+    extends StObject
+       with ScriptOperation
+  /* 4 */ val Delete: typingsJapgolly.azdata.mod.ScriptOperation.Delete & Double = js.native
   
-  /* 2 */ @js.native
-  object Insert extends TopLevel[Insert with Double]
+  @js.native
+  sealed trait Execute
+    extends StObject
+       with ScriptOperation
+  /* 5 */ val Execute: typingsJapgolly.azdata.mod.ScriptOperation.Execute & Double = js.native
   
-  /* 0 */ @js.native
-  object Select extends TopLevel[Select with Double]
+  @js.native
+  sealed trait Insert
+    extends StObject
+       with ScriptOperation
+  /* 2 */ val Insert: typingsJapgolly.azdata.mod.ScriptOperation.Insert & Double = js.native
   
-  /* 3 */ @js.native
-  object Update extends TopLevel[Update with Double]
+  @js.native
+  sealed trait Select
+    extends StObject
+       with ScriptOperation
+  /* 0 */ val Select: typingsJapgolly.azdata.mod.ScriptOperation.Select & Double = js.native
   
+  @js.native
+  sealed trait Update
+    extends StObject
+       with ScriptOperation
+  /* 3 */ val Update: typingsJapgolly.azdata.mod.ScriptOperation.Update & Double = js.native
 }
-

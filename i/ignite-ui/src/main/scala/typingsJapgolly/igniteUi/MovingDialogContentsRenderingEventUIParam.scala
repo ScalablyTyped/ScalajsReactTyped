@@ -1,22 +1,27 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MovingDialogContentsRenderingEventUIParam extends js.Object {
+trait MovingDialogContentsRenderingEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the ColumnMoving widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the ColumnMoving widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object MovingDialogContentsRenderingEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null): MovingDialogContentsRenderingEventUIParam = {
+  
+  inline def apply(): MovingDialogContentsRenderingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[MovingDialogContentsRenderingEventUIParam]
   }
+  
+  extension [Self <: MovingDialogContentsRenderingEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

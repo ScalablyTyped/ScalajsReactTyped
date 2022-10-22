@@ -9,10 +9,10 @@ Converts HTML to JSX for use with React
 | ------------------ | :-------------: |
 | Full name          | htmltojsx |
 | Keywords           | react, jsx, htmltojsx, html, react-component |
-| # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 154728 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 16456.333333333332 |
+| # stars            | 903.0 |
 
 ## Links
 - [Homepage](https://github.com/reactjs/react-magic)

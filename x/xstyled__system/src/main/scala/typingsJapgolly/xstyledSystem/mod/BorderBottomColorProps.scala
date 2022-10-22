@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.BorderColorProperty
+import typingsJapgolly.csstype.mod.Property.BorderColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BorderBottomColorProps extends js.Object {
-  val borderBottomColor: js.UndefOr[ResponsiveValue[BorderColorProperty]] = js.undefined
+trait BorderBottomColorProps extends StObject {
+  
+  val borderBottomColor: js.UndefOr[ResponsiveValue[BorderColor]] = js.undefined
 }
-
 object BorderBottomColorProps {
-  @scala.inline
-  def apply(borderBottomColor: ResponsiveValue[BorderColorProperty] = null): BorderBottomColorProps = {
+  
+  inline def apply(): BorderBottomColorProps = {
     val __obj = js.Dynamic.literal()
-    if (borderBottomColor != null) __obj.updateDynamic("borderBottomColor")(borderBottomColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderBottomColorProps]
   }
+  
+  extension [Self <: BorderBottomColorProps](x: Self) {
+    
+    inline def setBorderBottomColor(value: ResponsiveValue[BorderColor]): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
+    
+    inline def setBorderBottomColorVarargs(value: BorderColor*): Self = StObject.set(x, "borderBottomColor", js.Array(value*))
+  }
 }
-

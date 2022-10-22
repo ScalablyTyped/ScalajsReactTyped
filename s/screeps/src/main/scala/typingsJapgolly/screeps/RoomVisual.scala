@@ -1,21 +1,12 @@
 package typingsJapgolly.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("RoomVisual")
 @js.native
-/**
-  * You can create new RoomVisual object using its constructor.
-  * @param roomName The room name. If undefined, visuals will be posted to all rooms simultaneously.
-  */
-class RoomVisual () extends js.Object {
-  def this(roomName: String) = this()
-  /**
-    * The name of the room.
-    */
-  var roomName: String = js.native
+trait RoomVisual extends StObject {
+  
   /**
     * Draw a circle.
     * @param pos The position object of the center.
@@ -33,17 +24,33 @@ class RoomVisual () extends js.Object {
     */
   def circle(x: Double, y: Double): RoomVisual = js.native
   def circle(x: Double, y: Double, style: CircleStyle): RoomVisual = js.native
+  
   /**
     * Remove all visuals from the room.
     * @returns The RoomVisual object, for chaining.
     */
   def clear(): RoomVisual = js.native
+  
+  /**
+    * Returns a compact representation of all visuals added in the room in the current tick.
+    * @returns A string with visuals data. There's not much you can do with the string besides store them for later.
+    */
+  def `export`(): String = js.native
+  
   /**
     * Get the stored size of all visuals added in the room in the current tick.
     * It must not exceed 512,000 (500 KB).
     * @returns The size of the visuals in bytes.
     */
   def getSize(): Double = js.native
+  
+  /**
+    * Add previously exported (with `RoomVisual.export`) room visuals to the room visual data of the current tick.
+    * @param data The string returned from `RoomVisual.export`.
+    * @returns The RoomVisual object itself, so that you can chain calls.
+    */
+  def `import`(data: String): RoomVisual = js.native
+  
   /**
     * Draw a line.
     * @param pos1 The start position object.
@@ -64,6 +71,7 @@ class RoomVisual () extends js.Object {
     */
   def line(x1: Double, y1: Double, x2: Double, y2: Double): RoomVisual = js.native
   def line(x1: Double, y1: Double, x2: Double, y2: Double, style: LineStyle): RoomVisual = js.native
+  
   /**
     * Draw a polygon.
     * @param points An array of points. Every array item should be either an array with 2 numbers (i.e. [10,15]), or a RoomPosition object.
@@ -72,6 +80,7 @@ class RoomVisual () extends js.Object {
     */
   def poly(points: js.Array[(js.Tuple2[Double, Double]) | RoomPosition]): RoomVisual = js.native
   def poly(points: js.Array[(js.Tuple2[Double, Double]) | RoomPosition], style: PolyStyle): RoomVisual = js.native
+  
   /**
     * Draw a line.
     * @param topLeftPos The position object of the top-left corner.
@@ -93,6 +102,12 @@ class RoomVisual () extends js.Object {
     */
   def rect(x: Double, y: Double, w: Double, h: Double): RoomVisual = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, style: PolyStyle): RoomVisual = js.native
+  
+  /**
+    * The name of the room.
+    */
+  var roomName: String = js.native
+  
   /**
     * Draw a text label. You can use any valid Unicode characters, including emoji.
     * @param text The text message.
@@ -113,4 +128,3 @@ class RoomVisual () extends js.Object {
   def text(text: String, x: Double, y: Double): RoomVisual = js.native
   def text(text: String, x: Double, y: Double, style: TextStyle): RoomVisual = js.native
 }
-

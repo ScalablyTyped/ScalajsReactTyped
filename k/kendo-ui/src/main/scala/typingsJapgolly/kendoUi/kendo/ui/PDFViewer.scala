@@ -1,31 +1,27 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.PDFViewer")
 @js.native
-class PDFViewer protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: PDFViewerOptions) = this()
+trait PDFViewer
+  extends StObject
+     with Widget {
+  
+  def activatePage(): Unit = js.native
+  
+  def execute(): Unit = js.native
+  
+  def fromFile(file: Any): Unit = js.native
+  
+  def loadPage(): Unit = js.native
+  
   @JSName("options")
   var options_PDFViewer: PDFViewerOptions = js.native
+  
+  def setOptions(options: Any): Unit = js.native
+  
   var wrapper: JQuery = js.native
-  def activatePage(): Unit = js.native
-  def execute(): Unit = js.native
-  def fromFile(): Unit = js.native
-  def loadPage(): Unit = js.native
-  def setOptions(): Unit = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.ui.PDFViewer")
-@js.native
-object PDFViewer extends js.Object {
-  var fn: PDFViewer = js.native
-  def extend(proto: js.Object): PDFViewer = js.native
-}
-

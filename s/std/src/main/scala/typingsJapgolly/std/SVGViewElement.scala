@@ -1,18 +1,17 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the properties of <view> elements, as well as methods to manipulate them. */
 @js.native
 trait SVGViewElement
-  extends SVGElement
-     with SVGFitToViewBox
-     with SVGZoomAndPan {
-  /** @deprecated */
-  val viewTarget: org.scalajs.dom.raw.SVGStringList = js.native
+  extends StObject
+     with SVGElement
+     with SVGFitToViewBox {
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -23,23 +22,16 @@ trait SVGViewElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,
     listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
+    options: org.scalajs.dom.EventListenerOptions
   ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
 }
-
-@JSGlobal("SVGViewElement")
-@js.native
-object SVGViewElement extends Instantiable0[SVGViewElement] {
-  val SVG_ZOOMANDPAN_DISABLE: Double = js.native
-  val SVG_ZOOMANDPAN_MAGNIFY: Double = js.native
-  val SVG_ZOOMANDPAN_UNKNOWN: Double = js.native
-}
-

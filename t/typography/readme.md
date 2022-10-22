@@ -10,10 +10,10 @@ Opinionated toolkit for building websites with beautiful typography
 | ------------------ | :-------------: |
 | Full name          | typography |
 | Keywords           | css, inline styles, react, typography, vertical-rhythm |
-| # releases         | 11 |
-| # dependents       | 85 |
-| # downloads        | 1933719 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 84312.33333333333 |
+| # stars            | 3741.0 |
 
 ## Links
 - [Homepage](https://github.com/KyleAMathews/typography.js)

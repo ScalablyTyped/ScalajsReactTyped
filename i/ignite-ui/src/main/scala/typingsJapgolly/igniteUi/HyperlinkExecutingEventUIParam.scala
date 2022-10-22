@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HyperlinkExecutingEventUIParam extends js.Object {
+trait HyperlinkExecutingEventUIParam extends StObject {
+  
   /**
-  	 * Get the [hyperlink](ig.excel.WorksheetHyperlink) to be executed.
-  	 */
-  var hyperlink: js.UndefOr[js.Any] = js.undefined
+    * Get the [hyperlink](ig.excel.WorksheetHyperlink) to be executed.
+    */
+  var hyperlink: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the spreadsheet widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the spreadsheet widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object HyperlinkExecutingEventUIParam {
-  @scala.inline
-  def apply(hyperlink: js.Any = null, owner: js.Any = null): HyperlinkExecutingEventUIParam = {
+  
+  inline def apply(): HyperlinkExecutingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperlinkExecutingEventUIParam]
   }
+  
+  extension [Self <: HyperlinkExecutingEventUIParam](x: Self) {
+    
+    inline def setHyperlink(value: Any): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
+    
+    inline def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

@@ -1,64 +1,620 @@
 package typingsJapgolly.primereact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLInputElement
-import typingsJapgolly.primereact.passwordMod.PasswordProps
-import typingsJapgolly.primereact.tooltipOptionsMod.TooltipOptions
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.ReactAnimationEventFrom
+import japgolly.scalajs.react.ReactClipboardEventFrom
+import japgolly.scalajs.react.ReactCompositionEventFrom
+import japgolly.scalajs.react.ReactDragEventFrom
+import japgolly.scalajs.react.ReactEventFrom
+import japgolly.scalajs.react.ReactFocusEventFrom
+import japgolly.scalajs.react.ReactKeyboardEventFrom
+import japgolly.scalajs.react.ReactMouseEventFrom
+import japgolly.scalajs.react.ReactPointerEventFrom
+import japgolly.scalajs.react.ReactTouchEventFrom
+import japgolly.scalajs.react.ReactTransitionEventFrom
+import japgolly.scalajs.react.ReactUIEventFrom
+import japgolly.scalajs.react.ReactWheelEventFrom
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLInputElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.primereact.keyfilterKeyfilteroptionsMod.KeyFilterType
+import typingsJapgolly.primereact.passwordPasswordMod.PasswordAppendToType
+import typingsJapgolly.primereact.passwordPasswordMod.PasswordContentType
+import typingsJapgolly.primereact.passwordPasswordMod.PasswordFooterType
+import typingsJapgolly.primereact.passwordPasswordMod.PasswordHeaderType
+import typingsJapgolly.primereact.passwordPasswordMod.PasswordIconParams
+import typingsJapgolly.primereact.passwordPasswordMod.PasswordIconType
+import typingsJapgolly.primereact.passwordPasswordMod.PasswordProps
+import typingsJapgolly.primereact.primereactStrings.`additions removals`
+import typingsJapgolly.primereact.primereactStrings.`additions text`
+import typingsJapgolly.primereact.primereactStrings.`inline`
+import typingsJapgolly.primereact.primereactStrings.`removals additions`
+import typingsJapgolly.primereact.primereactStrings.`removals text`
+import typingsJapgolly.primereact.primereactStrings.`text additions`
+import typingsJapgolly.primereact.primereactStrings.`text removals`
+import typingsJapgolly.primereact.primereactStrings.additions
+import typingsJapgolly.primereact.primereactStrings.all
+import typingsJapgolly.primereact.primereactStrings.ascending
+import typingsJapgolly.primereact.primereactStrings.assertive
+import typingsJapgolly.primereact.primereactStrings.both
+import typingsJapgolly.primereact.primereactStrings.copy
+import typingsJapgolly.primereact.primereactStrings.date
+import typingsJapgolly.primereact.primereactStrings.decimal
+import typingsJapgolly.primereact.primereactStrings.descending
+import typingsJapgolly.primereact.primereactStrings.dialog
+import typingsJapgolly.primereact.primereactStrings.done
+import typingsJapgolly.primereact.primereactStrings.email
+import typingsJapgolly.primereact.primereactStrings.enter
+import typingsJapgolly.primereact.primereactStrings.environment
+import typingsJapgolly.primereact.primereactStrings.execute
+import typingsJapgolly.primereact.primereactStrings.go
+import typingsJapgolly.primereact.primereactStrings.grammar
+import typingsJapgolly.primereact.primereactStrings.grid
+import typingsJapgolly.primereact.primereactStrings.horizontal
+import typingsJapgolly.primereact.primereactStrings.inherit
+import typingsJapgolly.primereact.primereactStrings.link
+import typingsJapgolly.primereact.primereactStrings.list
+import typingsJapgolly.primereact.primereactStrings.listbox
+import typingsJapgolly.primereact.primereactStrings.location
+import typingsJapgolly.primereact.primereactStrings.menu
+import typingsJapgolly.primereact.primereactStrings.mixed
+import typingsJapgolly.primereact.primereactStrings.move
+import typingsJapgolly.primereact.primereactStrings.next
+import typingsJapgolly.primereact.primereactStrings.no
+import typingsJapgolly.primereact.primereactStrings.none
+import typingsJapgolly.primereact.primereactStrings.numeric
+import typingsJapgolly.primereact.primereactStrings.off
+import typingsJapgolly.primereact.primereactStrings.on
+import typingsJapgolly.primereact.primereactStrings.other
+import typingsJapgolly.primereact.primereactStrings.page
+import typingsJapgolly.primereact.primereactStrings.polite
+import typingsJapgolly.primereact.primereactStrings.popup
+import typingsJapgolly.primereact.primereactStrings.previous
+import typingsJapgolly.primereact.primereactStrings.removals
+import typingsJapgolly.primereact.primereactStrings.search
+import typingsJapgolly.primereact.primereactStrings.send
+import typingsJapgolly.primereact.primereactStrings.spelling
+import typingsJapgolly.primereact.primereactStrings.step
+import typingsJapgolly.primereact.primereactStrings.tel
+import typingsJapgolly.primereact.primereactStrings.text
+import typingsJapgolly.primereact.primereactStrings.time
+import typingsJapgolly.primereact.primereactStrings.tree
+import typingsJapgolly.primereact.primereactStrings.url
+import typingsJapgolly.primereact.primereactStrings.user
+import typingsJapgolly.primereact.primereactStrings.vertical
+import typingsJapgolly.primereact.primereactStrings.yes
+import typingsJapgolly.primereact.tooltipTooltipoptionsMod.TooltipOptions
+import typingsJapgolly.react.anon.Html
+import typingsJapgolly.react.mod.AriaRole
+import typingsJapgolly.react.mod.Booleanish
+import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.HTMLInputTypeAttribute
+import typingsJapgolly.react.mod.Ref
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Password {
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLInputElement] = null,
-    ClassAttributes: ClassAttributes[HTMLInputElement] = null,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    feedback: js.UndefOr[Boolean] = js.undefined,
-    mediumLabel: String = null,
-    promptLabel: String = null,
-    strongLabel: String = null,
-    tooltip: js.Any = null,
-    tooltipOptions: TooltipOptions = null,
-    weakLabel: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    PasswordProps, 
-    typingsJapgolly.primereact.primereactPasswordMod.Password, 
-    Unit, 
-    PasswordProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(feedback)) __obj.updateDynamic("feedback")(feedback.asInstanceOf[js.Any])
-    if (mediumLabel != null) __obj.updateDynamic("mediumLabel")(mediumLabel.asInstanceOf[js.Any])
-    if (promptLabel != null) __obj.updateDynamic("promptLabel")(promptLabel.asInstanceOf[js.Any])
-    if (strongLabel != null) __obj.updateDynamic("strongLabel")(strongLabel.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions.asInstanceOf[js.Any])
-    if (weakLabel != null) __obj.updateDynamic("weakLabel")(weakLabel.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.primereact.passwordMod.PasswordProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.primereact.primereactPasswordMod.Password](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.primereact.passwordMod.PasswordProps])(children: _*)
-  }
-  @JSImport("primereact/password", "Password")
+  @JSImport("primereact", "Password")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.primereact.mod.Password] {
+    
+    inline def about(value: String): this.type = set("about", value.asInstanceOf[js.Any])
+    
+    inline def accept(value: String): this.type = set("accept", value.asInstanceOf[js.Any])
+    
+    inline def accessKey(value: String): this.type = set("accessKey", value.asInstanceOf[js.Any])
+    
+    inline def alt(value: String): this.type = set("alt", value.asInstanceOf[js.Any])
+    
+    inline def appendTo(value: PasswordAppendToType): this.type = set("appendTo", value.asInstanceOf[js.Any])
+    
+    inline def appendToNull: this.type = set("appendTo", null)
+    
+    inline def `aria-activedescendant`(value: String): this.type = set("aria-activedescendant", value.asInstanceOf[js.Any])
+    
+    inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
+    
+    inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+    
+    inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
+    
+    inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+    
+    inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
+    
+    inline def `aria-colindex`(value: Double): this.type = set("aria-colindex", value.asInstanceOf[js.Any])
+    
+    inline def `aria-colspan`(value: Double): this.type = set("aria-colspan", value.asInstanceOf[js.Any])
+    
+    inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
+    
+    inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+    
+    inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
+    
+    inline def `aria-details`(value: String): this.type = set("aria-details", value.asInstanceOf[js.Any])
+    
+    inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
+    
+    inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+    
+    inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
+    
+    inline def `aria-expanded`(value: Booleanish): this.type = set("aria-expanded", value.asInstanceOf[js.Any])
+    
+    inline def `aria-flowto`(value: String): this.type = set("aria-flowto", value.asInstanceOf[js.Any])
+    
+    inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
+    
+    inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+    
+    inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
+    
+    inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+    
+    inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+    
+    inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+    
+    inline def `aria-labelledby`(value: String): this.type = set("aria-labelledby", value.asInstanceOf[js.Any])
+    
+    inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
+    
+    inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+    
+    inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
+    
+    inline def `aria-multiline`(value: Booleanish): this.type = set("aria-multiline", value.asInstanceOf[js.Any])
+    
+    inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
+    
+    inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+    
+    inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
+    
+    inline def `aria-placeholder`(value: String): this.type = set("aria-placeholder", value.asInstanceOf[js.Any])
+    
+    inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
+    
+    inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+    
+    inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
+    
+    inline def `aria-relevant`(
+      value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+    ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
+    
+    inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
+    
+    inline def `aria-roledescription`(value: String): this.type = set("aria-roledescription", value.asInstanceOf[js.Any])
+    
+    inline def `aria-rowcount`(value: Double): this.type = set("aria-rowcount", value.asInstanceOf[js.Any])
+    
+    inline def `aria-rowindex`(value: Double): this.type = set("aria-rowindex", value.asInstanceOf[js.Any])
+    
+    inline def `aria-rowspan`(value: Double): this.type = set("aria-rowspan", value.asInstanceOf[js.Any])
+    
+    inline def `aria-selected`(value: Booleanish): this.type = set("aria-selected", value.asInstanceOf[js.Any])
+    
+    inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
+    
+    inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuemin`(value: Double): this.type = set("aria-valuemin", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuenow`(value: Double): this.type = set("aria-valuenow", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuetext`(value: String): this.type = set("aria-valuetext", value.asInstanceOf[js.Any])
+    
+    inline def autoCapitalize(value: String): this.type = set("autoCapitalize", value.asInstanceOf[js.Any])
+    
+    inline def autoComplete(value: String): this.type = set("autoComplete", value.asInstanceOf[js.Any])
+    
+    inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
+    
+    inline def capture(value: Boolean | user | environment): this.type = set("capture", value.asInstanceOf[js.Any])
+    
+    inline def checked(value: Boolean): this.type = set("checked", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: PasswordContentType): this.type = set("content", value.asInstanceOf[js.Any])
+    
+    inline def contentEditable(value: Booleanish | inherit): this.type = set("contentEditable", value.asInstanceOf[js.Any])
+    
+    inline def contentFunction1(value: /* props */ PasswordProps => Node): this.type = set("content", js.Any.fromFunction1(value))
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def contextMenu(value: String): this.type = set("contextMenu", value.asInstanceOf[js.Any])
+    
+    inline def crossOrigin(value: String): this.type = set("crossOrigin", value.asInstanceOf[js.Any])
+    
+    inline def dangerouslySetInnerHTML(value: Html): this.type = set("dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+    
+    inline def datatype(value: String): this.type = set("datatype", value.asInstanceOf[js.Any])
+    
+    inline def defaultChecked(value: Boolean): this.type = set("defaultChecked", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: String | Double | js.Array[String]): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def defaultValueVarargs(value: String*): this.type = set("defaultValue", js.Array(value*))
+    
+    inline def dir(value: String): this.type = set("dir", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def draggable(value: Booleanish): this.type = set("draggable", value.asInstanceOf[js.Any])
+    
+    inline def enterKeyHint(value: enter | done | go | next | previous | search | send): this.type = set("enterKeyHint", value.asInstanceOf[js.Any])
+    
+    inline def feedback(value: Boolean): this.type = set("feedback", value.asInstanceOf[js.Any])
+    
+    inline def footer(value: PasswordFooterType): this.type = set("footer", value.asInstanceOf[js.Any])
+    
+    inline def footerFunction1(value: /* props */ PasswordProps => Node): this.type = set("footer", js.Any.fromFunction1(value))
+    
+    inline def footerNull: this.type = set("footer", null)
+    
+    inline def footerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("footer", js.Array(value*))
+    
+    inline def footerVdomElement(value: VdomElement): this.type = set("footer", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def form(value: String): this.type = set("form", value.asInstanceOf[js.Any])
+    
+    inline def formAction(value: String): this.type = set("formAction", value.asInstanceOf[js.Any])
+    
+    inline def formEncType(value: String): this.type = set("formEncType", value.asInstanceOf[js.Any])
+    
+    inline def formMethod(value: String): this.type = set("formMethod", value.asInstanceOf[js.Any])
+    
+    inline def formNoValidate(value: Boolean): this.type = set("formNoValidate", value.asInstanceOf[js.Any])
+    
+    inline def formTarget(value: String): this.type = set("formTarget", value.asInstanceOf[js.Any])
+    
+    inline def header(value: PasswordHeaderType): this.type = set("header", value.asInstanceOf[js.Any])
+    
+    inline def headerFunction1(value: /* props */ PasswordProps => Node): this.type = set("header", js.Any.fromFunction1(value))
+    
+    inline def headerNull: this.type = set("header", null)
+    
+    inline def headerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("header", js.Array(value*))
+    
+    inline def headerVdomElement(value: VdomElement): this.type = set("header", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def height(value: Double | String): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def hidden(value: Boolean): this.type = set("hidden", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: PasswordIconType): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def iconFunction1(value: /* e */ PasswordIconParams => Node): this.type = set("icon", js.Any.fromFunction1(value))
+    
+    inline def iconNull: this.type = set("icon", null)
+    
+    inline def iconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("icon", js.Array(value*))
+    
+    inline def iconVdomElement(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def inlist(value: Any): this.type = set("inlist", value.asInstanceOf[js.Any])
+    
+    inline def inputClassName(value: String): this.type = set("inputClassName", value.asInstanceOf[js.Any])
+    
+    inline def inputId(value: String): this.type = set("inputId", value.asInstanceOf[js.Any])
+    
+    inline def inputMode(value: none | text | tel | url | email | numeric | decimal | search): this.type = set("inputMode", value.asInstanceOf[js.Any])
+    
+    inline def inputRef(value: Ref[HTMLInputElement]): this.type = set("inputRef", value.asInstanceOf[js.Any])
+    
+    inline def inputRefFunction1(value: HTMLInputElement | Null => Callback): this.type = set("inputRef", js.Any.fromFunction1((t0: HTMLInputElement | Null) => value(t0).runNow()))
+    
+    inline def inputRefNull: this.type = set("inputRef", null)
+    
+    inline def inputStyle(value: js.Object): this.type = set("inputStyle", value.asInstanceOf[js.Any])
+    
+    inline def is(value: String): this.type = set("is", value.asInstanceOf[js.Any])
+    
+    inline def itemID(value: String): this.type = set("itemID", value.asInstanceOf[js.Any])
+    
+    inline def itemProp(value: String): this.type = set("itemProp", value.asInstanceOf[js.Any])
+    
+    inline def itemRef(value: String): this.type = set("itemRef", value.asInstanceOf[js.Any])
+    
+    inline def itemScope(value: Boolean): this.type = set("itemScope", value.asInstanceOf[js.Any])
+    
+    inline def itemType(value: String): this.type = set("itemType", value.asInstanceOf[js.Any])
+    
+    inline def keyfilter(value: KeyFilterType): this.type = set("keyfilter", value.asInstanceOf[js.Any])
+    
+    inline def lang(value: String): this.type = set("lang", value.asInstanceOf[js.Any])
+    
+    inline def list(value: String): this.type = set("list", value.asInstanceOf[js.Any])
+    
+    inline def max(value: Double | String): this.type = set("max", value.asInstanceOf[js.Any])
+    
+    inline def maxLength(value: Double): this.type = set("maxLength", value.asInstanceOf[js.Any])
+    
+    inline def mediumLabel(value: String): this.type = set("mediumLabel", value.asInstanceOf[js.Any])
+    
+    inline def mediumRegex(value: String): this.type = set("mediumRegex", value.asInstanceOf[js.Any])
+    
+    inline def min(value: Double | String): this.type = set("min", value.asInstanceOf[js.Any])
+    
+    inline def minLength(value: Double): this.type = set("minLength", value.asInstanceOf[js.Any])
+    
+    inline def multiple(value: Boolean): this.type = set("multiple", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onAbort(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onAnimationEnd(value: ReactAnimationEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onAnimationEnd", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onAnimationIteration(value: ReactAnimationEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onAnimationIteration", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onAnimationStart(value: ReactAnimationEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onAnimationStart", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onAuxClick(value: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onAuxClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onBeforeInput(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onBeforeInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onBlur(value: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onCanPlay(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onCanPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onCanPlayThrough(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onCanPlayThrough", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onChange(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onClick(value: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onCompositionEnd(value: ReactCompositionEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onCompositionEnd", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onCompositionStart(value: ReactCompositionEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onCompositionStart", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onCompositionUpdate(value: ReactCompositionEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onCompositionUpdate", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onContextMenu(value: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onCopy(value: ReactClipboardEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onCopy", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onCut(value: ReactClipboardEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onCut", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onDoubleClick(value: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onDoubleClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onDrag(value: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onDrag", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onDragEnd(value: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onDragEnd", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onDragEnter(value: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onDragEnter", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onDragExit(value: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onDragExit", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onDragLeave(value: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onDragLeave", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onDragOver(value: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onDragOver", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onDragStart(value: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onDragStart", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onDrop(value: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onDrop", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onDurationChange(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onDurationChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onEmptied(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onEmptied", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onEncrypted(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onEncrypted", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onEnded(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onEnded", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onError(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onError", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onFocus(value: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onHide(value: Callback): this.type = set("onHide", value.toJsFn)
+    
+    inline def onInput(value: (/* event */ ReactEventFrom[HTMLInputElement], /* validatePattern */ Boolean) => Callback): this.type = set("onInput", js.Any.fromFunction2((t0: /* event */ ReactEventFrom[HTMLInputElement], t1: /* validatePattern */ Boolean) => (value(t0, t1)).runNow()))
+    
+    inline def onInvalid(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onInvalid", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onKeyDown(value: ReactKeyboardEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onKeyPress(value: ReactKeyboardEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onKeyPress", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onKeyUp(value: ReactKeyboardEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onKeyUp", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onLoad(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onLoad", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onLoadStart(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onLoadStart", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onLoadedData(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onLoadedData", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onLoadedMetadata(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onLoadedMetadata", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onMouseDown(value: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onMouseEnter(value: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onMouseLeave(value: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseLeave", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onMouseMove(value: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseMove", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onMouseOut(value: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseOut", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onMouseOver(value: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseOver", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onMouseUp(value: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPaste(value: ReactClipboardEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onPaste", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPause(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onPause", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPlay(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPlaying(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onPlaying", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerCancel(value: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerCancel", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerDown(value: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerDown", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerEnter(value: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerEnter", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerLeave(value: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerLeave", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerMove(value: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerMove", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerOut(value: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerOut", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerOver(value: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerOver", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerUp(value: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onPointerUp", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onProgress(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onProgress", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onRateChange(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onRateChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onReset(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onScroll(value: ReactUIEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onSeeked(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onSeeking(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onSeeking", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onSelect(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onShow(value: Callback): this.type = set("onShow", value.toJsFn)
+    
+    inline def onStalled(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onStalled", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onSubmit(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onSubmit", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onSuspend(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onSuspend", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onTimeUpdate(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onTimeUpdate", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onTouchCancel(value: ReactTouchEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onTouchCancel", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onTouchEnd(value: ReactTouchEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onTouchEnd", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onTouchMove(value: ReactTouchEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onTouchMove", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onTouchStart(value: ReactTouchEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onTouchStart", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onTransitionEnd(value: ReactTransitionEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onTransitionEnd", js.Any.fromFunction1((t0: ReactTransitionEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onVolumeChange(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onVolumeChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onWaiting(value: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onWaiting", js.Any.fromFunction1((t0: ReactEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onWheel(value: ReactWheelEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onWheel", js.Any.fromFunction1((t0: ReactWheelEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def panelClassName(value: String): this.type = set("panelClassName", value.asInstanceOf[js.Any])
+    
+    inline def panelStyle(value: js.Object): this.type = set("panelStyle", value.asInstanceOf[js.Any])
+    
+    inline def pattern(value: String): this.type = set("pattern", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def prefix(value: String): this.type = set("prefix", value.asInstanceOf[js.Any])
+    
+    inline def promptLabel(value: String): this.type = set("promptLabel", value.asInstanceOf[js.Any])
+    
+    inline def property(value: String): this.type = set("property", value.asInstanceOf[js.Any])
+    
+    inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
+    
+    inline def readOnly(value: Boolean): this.type = set("readOnly", value.asInstanceOf[js.Any])
+    
+    inline def required(value: Boolean): this.type = set("required", value.asInstanceOf[js.Any])
+    
+    inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
+    
+    inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def security(value: String): this.type = set("security", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Double): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
+    
+    inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
+    
+    inline def src(value: String): this.type = set("src", value.asInstanceOf[js.Any])
+    
+    inline def step(value: Double | String): this.type = set("step", value.asInstanceOf[js.Any])
+    
+    inline def strongLabel(value: String): this.type = set("strongLabel", value.asInstanceOf[js.Any])
+    
+    inline def strongRegex(value: String): this.type = set("strongRegex", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def suppressContentEditableWarning(value: Boolean): this.type = set("suppressContentEditableWarning", value.asInstanceOf[js.Any])
+    
+    inline def suppressHydrationWarning(value: Boolean): this.type = set("suppressHydrationWarning", value.asInstanceOf[js.Any])
+    
+    inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def toggleMask(value: Boolean): this.type = set("toggleMask", value.asInstanceOf[js.Any])
+    
+    inline def tooltip(value: String): this.type = set("tooltip", value.asInstanceOf[js.Any])
+    
+    inline def tooltipOptions(value: TooltipOptions): this.type = set("tooltipOptions", value.asInstanceOf[js.Any])
+    
+    inline def transitionOptions(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
+    ): this.type = set("transitionOptions", value.asInstanceOf[js.Any])
+    
+    inline def translate(value: yes | no): this.type = set("translate", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: HTMLInputTypeAttribute): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def typeof(value: String): this.type = set("typeof", value.asInstanceOf[js.Any])
+    
+    inline def unselectable(value: on | off): this.type = set("unselectable", value.asInstanceOf[js.Any])
+    
+    inline def value(value: String | js.Array[String] | Double): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueVarargs(value: String*): this.type = set("value", js.Array(value*))
+    
+    inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
+    
+    inline def weakLabel(value: String): this.type = set("weakLabel", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Password.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PasswordProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

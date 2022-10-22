@@ -10,10 +10,10 @@ A beanstalkd client for Node.js with promises
 | ------------------ | :-------------: |
 | Full name          | beanstalkd |
 | Keywords           | beanstalkd |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 15394 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3688.0 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/burstable/node-beanstalkd-client#readme)

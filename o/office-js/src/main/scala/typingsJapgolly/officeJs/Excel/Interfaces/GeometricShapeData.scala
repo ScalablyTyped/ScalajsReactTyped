@@ -1,26 +1,31 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `geometricShape.toJSON()`. */
-trait GeometricShapeData extends js.Object {
+trait GeometricShapeData extends StObject {
+  
   /**
+    * Returns the shape identifier.
     *
-    * Returns the shape identifier. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[String] = js.undefined
 }
-
 object GeometricShapeData {
-  @scala.inline
-  def apply(id: String = null): GeometricShapeData = {
+  
+  inline def apply(): GeometricShapeData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeometricShapeData]
   }
+  
+  extension [Self <: GeometricShapeData](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+  }
 }
-

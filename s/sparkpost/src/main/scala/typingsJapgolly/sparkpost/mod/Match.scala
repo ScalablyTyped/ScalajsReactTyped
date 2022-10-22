@@ -1,26 +1,39 @@
 package typingsJapgolly.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Match extends js.Object {
+trait Match extends StObject {
+  
   /** Inbound domain associated with this webhook. Required when protocol is “SMTP”. */
   var domain: js.UndefOr[String] = js.undefined
+  
   /** ESME address binding associated with this webhook  yes, when protocol is “SMPP”. SparkPost Enterprise API only. */
   var esme_address: js.UndefOr[String] = js.undefined
+  
   /** Inbound messaging protocol associated with this webhook. Defaults to “SMTP” */
   var protocol: js.UndefOr[String] = js.undefined
 }
-
 object Match {
-  @scala.inline
-  def apply(domain: String = null, esme_address: String = null, protocol: String = null): Match = {
+  
+  inline def apply(): Match = {
     val __obj = js.Dynamic.literal()
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (esme_address != null) __obj.updateDynamic("esme_address")(esme_address.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[Match]
   }
+  
+  extension [Self <: Match](x: Self) {
+    
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    
+    inline def setEsme_address(value: String): Self = StObject.set(x, "esme_address", value.asInstanceOf[js.Any])
+    
+    inline def setEsme_addressUndefined: Self = StObject.set(x, "esme_address", js.undefined)
+    
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+  }
 }
-

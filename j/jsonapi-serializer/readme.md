@@ -10,10 +10,10 @@ A Node.js framework agnostic library for serializing your data to JSON API
 | ------------------ | :-------------: |
 | Full name          | jsonapi-serializer |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 65 |
-| # downloads        | 1376851 |
-| # stars            | 7 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 204964.66666666666 |
+| # stars            | 704.0 |
 
 ## Links
 - [Homepage](https://github.com/SeyZ/jsonapi-serializer#readme)

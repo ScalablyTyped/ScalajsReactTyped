@@ -1,11 +1,12 @@
 package typingsJapgolly.minappEnv.wx
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CanvasGradient extends js.Object {
+trait CanvasGradient extends StObject {
+  
   /** [CanvasGradient.addColorStop(number stop, [Color](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Color.html) color)](CanvasGradient.addColorStop.md)
   *
   * 添加颜色的渐变点。小于最小 stop 的部分会按最小 stop 的 color 来渲染，大于最大 stop 的部分会按最大 stop 的 color 来渲染
@@ -41,13 +42,15 @@ trait CanvasGradient extends js.Object {
   color: Color
   ): Unit
 }
-
 object CanvasGradient {
-  @scala.inline
-  def apply(addColorStop: (Double, Color) => Callback): CanvasGradient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addColorStop")(js.Any.fromFunction2((t0: scala.Double, t1: typingsJapgolly.minappEnv.wx.Color) => addColorStop(t0, t1).runNow()))
+  
+  inline def apply(addColorStop: (Double, Color) => Callback): CanvasGradient = {
+    val __obj = js.Dynamic.literal(addColorStop = js.Any.fromFunction2((t0: Double, t1: Color) => (addColorStop(t0, t1)).runNow()))
     __obj.asInstanceOf[CanvasGradient]
   }
+  
+  extension [Self <: CanvasGradient](x: Self) {
+    
+    inline def setAddColorStop(value: (Double, Color) => Callback): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2((t0: Double, t1: Color) => (value(t0, t1)).runNow()))
+  }
 }
-

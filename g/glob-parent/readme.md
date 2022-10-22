@@ -10,10 +10,10 @@ Extract the non-magic parent path from a glob string.
 | ------------------ | :-------------: |
 | Full name          | glob-parent |
 | Keywords           | glob, parent, strip, path, dirname, directory, base, wildcard |
-| # releases         | 4 |
-| # dependents       | 176 |
-| # downloads        | 705499576 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5332008933333334E8 |
+| # stars            | 70.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/glob-parent#readme)

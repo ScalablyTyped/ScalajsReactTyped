@@ -1,20 +1,22 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EventSubscriptionVendor stores a set of EventSubscriptions that are
   * subscribed to a particular event type.
   */
 @js.native
-trait EventSubscriptionVendor extends js.Object {
+trait EventSubscriptionVendor extends StObject {
+  
   /**
     * Adds a subscription keyed by an event type.
     *
     */
   def addSubscription(eventType: String, subscription: EventSubscription): EventSubscription = js.native
+  
   /**
     * Returns the array of subscriptions that are currently registered for the
     * given event type.
@@ -24,6 +26,7 @@ trait EventSubscriptionVendor extends js.Object {
     *
     */
   def getSubscriptionsForType(eventType: String): js.Array[EventSubscription] = js.native
+  
   /**
     * Removes a bulk set of the subscriptions.
     *
@@ -32,11 +35,11 @@ trait EventSubscriptionVendor extends js.Object {
     */
   def removeAllSubscriptions(): Unit = js.native
   def removeAllSubscriptions(eventType: String): Unit = js.native
+  
   /**
     * Removes a specific subscription. Instead of calling this function, call
     * `subscription.remove()` directly.
     *
     */
-  def removeSubscription(subscription: js.Any): Unit = js.native
+  def removeSubscription(subscription: Any): Unit = js.native
 }
-

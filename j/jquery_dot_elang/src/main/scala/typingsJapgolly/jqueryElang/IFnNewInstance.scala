@@ -1,23 +1,25 @@
 package typingsJapgolly.jqueryElang
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.jquery.JQuery_
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.jquery.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // interfaces for jQuery.fn.__plugin
-trait IFnNewInstance extends js.Object {
-  def createInstance(el: HTMLElement, options: js.Any, pluginName: String): JQuery_[HTMLElement]
+trait IFnNewInstance extends StObject {
+  
+  def createInstance(el: HTMLElement, options: Any, pluginName: String): JQuery[HTMLElement]
 }
-
 object IFnNewInstance {
-  @scala.inline
-  def apply(createInstance: (HTMLElement, js.Any, String) => CallbackTo[JQuery_[HTMLElement]]): IFnNewInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createInstance")(js.Any.fromFunction3((t0: org.scalajs.dom.raw.HTMLElement, t1: js.Any, t2: java.lang.String) => createInstance(t0, t1, t2).runNow()))
+  
+  inline def apply(createInstance: (HTMLElement, Any, String) => JQuery[HTMLElement]): IFnNewInstance = {
+    val __obj = js.Dynamic.literal(createInstance = js.Any.fromFunction3(createInstance))
     __obj.asInstanceOf[IFnNewInstance]
   }
+  
+  extension [Self <: IFnNewInstance](x: Self) {
+    
+    inline def setCreateInstance(value: (HTMLElement, Any, String) => JQuery[HTMLElement]): Self = StObject.set(x, "createInstance", js.Any.fromFunction3(value))
+  }
 }
-

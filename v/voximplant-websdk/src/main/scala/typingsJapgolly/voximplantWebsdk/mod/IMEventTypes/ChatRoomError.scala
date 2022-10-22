@@ -1,38 +1,52 @@
 package typingsJapgolly.voximplantWebsdk.mod.IMEventTypes
 
 import typingsJapgolly.voximplantWebsdk.mod.VoxImplantIMEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-		* Event dispatched in case of error while chat room operation
-		*/
-trait ChatRoomError extends VoxImplantIMEvent {
+  * Event dispatched in case of error while chat room operation
+  */
+trait ChatRoomError
+  extends StObject
+     with VoxImplantIMEvent {
+  
   /**
-  			* Error code
-  			*/
+    * Error code
+    */
   var code: String
+  
   /**
-  			* Operation name
-  			*/
+    * Operation name
+    */
   var operation: String
+  
   /**
-  			* Room id
-  			*/
+    * Room id
+    */
   var room: String
+  
   /**
-  			* Error description
-  			*/
+    * Error description
+    */
   var text: String
 }
-
 object ChatRoomError {
-  @scala.inline
-  def apply(code: String, operation: String, room: String, text: String): ChatRoomError = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
+  inline def apply(code: String, operation: String, room: String, text: String): ChatRoomError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRoomError]
   }
+  
+  extension [Self <: ChatRoomError](x: Self) {
+    
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    
+    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+  }
 }
-

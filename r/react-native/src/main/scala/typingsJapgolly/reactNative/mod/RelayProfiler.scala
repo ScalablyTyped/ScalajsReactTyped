@@ -1,31 +1,37 @@
 package typingsJapgolly.reactNative.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RelayProfiler extends js.Object {
+trait RelayProfiler extends StObject {
+  
   def attachAggregateHandler(name: String, handler: js.Function2[/* name */ String, /* callback */ js.Function0[Unit], Unit]): Unit
+  
   def attachProfileHandler(
     name: String,
-    handler: js.Function2[/* name */ String, /* state */ js.UndefOr[js.Any], js.Function0[Unit]]
+    handler: js.Function2[/* name */ String, /* state */ js.UndefOr[Any], js.Function0[Unit]]
   ): Unit
 }
-
 object RelayProfiler {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     attachAggregateHandler: (String, js.Function2[/* name */ String, /* callback */ js.Function0[Unit], Unit]) => Callback,
-    attachProfileHandler: (String, js.Function2[/* name */ String, /* state */ js.UndefOr[js.Any], js.Function0[Unit]]) => Callback
+    attachProfileHandler: (String, js.Function2[/* name */ String, /* state */ js.UndefOr[Any], js.Function0[Unit]]) => Callback
   ): RelayProfiler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachAggregateHandler")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Function2[/* name */ java.lang.String, /* callback */ js.Function0[scala.Unit], scala.Unit]) => attachAggregateHandler(t0, t1).runNow()))
-    __obj.updateDynamic("attachProfileHandler")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Function2[
-  /* name */ java.lang.String, 
-  /* state */ js.UndefOr[js.Any], 
-  js.Function0[scala.Unit]]) => attachProfileHandler(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(attachAggregateHandler = js.Any.fromFunction2((t0: String, t1: js.Function2[/* name */ String, /* callback */ js.Function0[Unit], Unit]) => (attachAggregateHandler(t0, t1)).runNow()), attachProfileHandler = js.Any.fromFunction2((t0: String, t1: js.Function2[/* name */ String, /* state */ js.UndefOr[Any], js.Function0[Unit]]) => (attachProfileHandler(t0, t1)).runNow()))
     __obj.asInstanceOf[RelayProfiler]
   }
+  
+  extension [Self <: RelayProfiler](x: Self) {
+    
+    inline def setAttachAggregateHandler(
+      value: (String, js.Function2[/* name */ String, /* callback */ js.Function0[Unit], Unit]) => Callback
+    ): Self = StObject.set(x, "attachAggregateHandler", js.Any.fromFunction2((t0: String, t1: js.Function2[/* name */ String, /* callback */ js.Function0[Unit], Unit]) => (value(t0, t1)).runNow()))
+    
+    inline def setAttachProfileHandler(
+      value: (String, js.Function2[/* name */ String, /* state */ js.UndefOr[Any], js.Function0[Unit]]) => Callback
+    ): Self = StObject.set(x, "attachProfileHandler", js.Any.fromFunction2((t0: String, t1: js.Function2[/* name */ String, /* state */ js.UndefOr[Any], js.Function0[Unit]]) => (value(t0, t1)).runNow()))
+  }
 }
-

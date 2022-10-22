@@ -1,10 +1,11 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColorAxisDataClassesOptions extends js.Object {
+trait ColorAxisDataClassesOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps) The color of each data class. If not
     * set, the color is pulled from the global or chart-specific colors array.
@@ -12,6 +13,7 @@ trait ColorAxisDataClassesOptions extends js.Object {
     * CSS.
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps) The start of the value range that the
     * data class represents, relating to the point value.
@@ -20,6 +22,7 @@ trait ColorAxisDataClassesOptions extends js.Object {
     * overridden by the next `dataClass`.
     */
   var from: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps) The name of the data class as it
     * appears in the legend. If no name is given, it is automatically created
@@ -28,6 +31,7 @@ trait ColorAxisDataClassesOptions extends js.Object {
     * `this.to` can be accessed.
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps) The end of the value range that the
     * data class represents, relating to the point value.
@@ -37,21 +41,29 @@ trait ColorAxisDataClassesOptions extends js.Object {
     */
   var to: js.UndefOr[Double] = js.undefined
 }
-
 object ColorAxisDataClassesOptions {
-  @scala.inline
-  def apply(
-    color: ColorString | GradientColorObject | PatternObject = null,
-    from: Int | Double = null,
-    name: String = null,
-    to: Int | Double = null
-  ): ColorAxisDataClassesOptions = {
+  
+  inline def apply(): ColorAxisDataClassesOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorAxisDataClassesOptions]
   }
+  
+  extension [Self <: ColorAxisDataClassesOptions](x: Self) {
+    
+    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+  }
 }
-

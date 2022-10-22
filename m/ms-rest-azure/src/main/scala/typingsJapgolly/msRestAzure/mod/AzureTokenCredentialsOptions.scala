@@ -2,45 +2,57 @@ package typingsJapgolly.msRestAzure.mod
 
 import typingsJapgolly.msRestAzure.msRestAzureStrings.batch
 import typingsJapgolly.msRestAzure.msRestAzureStrings.graph
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AzureTokenCredentialsOptions extends js.Object {
+trait AzureTokenCredentialsOptions extends StObject {
+  
   /**
     * The authorization scheme. Default value is 'Bearer'.
     */
   var authorizationScheme: js.UndefOr[String] = js.undefined
+  
   /**
     * The Azure environment to authenticate with.
     */
   var environment: js.UndefOr[AzureEnvironment] = js.undefined
+  
   /**
     * The audience for which the token is requested. Valid values are 'graph', 'batch' or any other resource like 'https://vault.azure.com'.
     * If tokenAudience is 'graph' then domain should also be provided and its value should not be the default 'common' tenant. 
     * It must be a string (preferrably in a guid format).
     */
   var tokenAudience: js.UndefOr[graph | batch | String] = js.undefined
+  
   /**
     * The token cache. Default value is MemoryCache from adal.
     */
-  var tokenCache: js.UndefOr[js.Any] = js.undefined
+  var tokenCache: js.UndefOr[Any] = js.undefined
 }
-
 object AzureTokenCredentialsOptions {
-  @scala.inline
-  def apply(
-    authorizationScheme: String = null,
-    environment: AzureEnvironment = null,
-    tokenAudience: graph | batch | String = null,
-    tokenCache: js.Any = null
-  ): AzureTokenCredentialsOptions = {
+  
+  inline def apply(): AzureTokenCredentialsOptions = {
     val __obj = js.Dynamic.literal()
-    if (authorizationScheme != null) __obj.updateDynamic("authorizationScheme")(authorizationScheme.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (tokenAudience != null) __obj.updateDynamic("tokenAudience")(tokenAudience.asInstanceOf[js.Any])
-    if (tokenCache != null) __obj.updateDynamic("tokenCache")(tokenCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureTokenCredentialsOptions]
   }
+  
+  extension [Self <: AzureTokenCredentialsOptions](x: Self) {
+    
+    inline def setAuthorizationScheme(value: String): Self = StObject.set(x, "authorizationScheme", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorizationSchemeUndefined: Self = StObject.set(x, "authorizationScheme", js.undefined)
+    
+    inline def setEnvironment(value: AzureEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    
+    inline def setTokenAudience(value: graph | batch | String): Self = StObject.set(x, "tokenAudience", value.asInstanceOf[js.Any])
+    
+    inline def setTokenAudienceUndefined: Self = StObject.set(x, "tokenAudience", js.undefined)
+    
+    inline def setTokenCache(value: Any): Self = StObject.set(x, "tokenCache", value.asInstanceOf[js.Any])
+    
+    inline def setTokenCacheUndefined: Self = StObject.set(x, "tokenCache", js.undefined)
+  }
 }
-

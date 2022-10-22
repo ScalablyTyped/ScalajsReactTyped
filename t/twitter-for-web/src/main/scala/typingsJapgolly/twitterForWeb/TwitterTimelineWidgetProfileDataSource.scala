@@ -1,28 +1,25 @@
 package typingsJapgolly.twitterForWeb
 
-import typingsJapgolly.twitterForWeb.twitterForWebStrings.profile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.twitterForWeb.AnonScreenName
-  - typingsJapgolly.twitterForWeb.AnonSourceType
+  - typingsJapgolly.twitterForWeb.anon.ScreenName
+  - typingsJapgolly.twitterForWeb.anon.SourceType
 */
-trait TwitterTimelineWidgetProfileDataSource extends _TwitterTimelineWidgetDataSource
-
+trait TwitterTimelineWidgetProfileDataSource
+  extends StObject
+     with _TwitterTimelineWidgetDataSource
 object TwitterTimelineWidgetProfileDataSource {
-  @scala.inline
-  def AnonScreenName(screenName: String, sourceType: profile): TwitterTimelineWidgetProfileDataSource = {
-    val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[TwitterTimelineWidgetProfileDataSource]
+  inline def ScreenName(screenName: String): typingsJapgolly.twitterForWeb.anon.ScreenName = {
+    val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = "profile")
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.anon.ScreenName]
   }
-  @scala.inline
-  def AnonSourceType(sourceType: profile, userId: String): TwitterTimelineWidgetProfileDataSource = {
-    val __obj = js.Dynamic.literal(sourceType = sourceType.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[TwitterTimelineWidgetProfileDataSource]
+  inline def SourceType(userId: String): typingsJapgolly.twitterForWeb.anon.SourceType = {
+    val __obj = js.Dynamic.literal(sourceType = "profile", userId = userId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.anon.SourceType]
   }
 }
-

@@ -1,34 +1,36 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BootstrapModeSettings
-  extends /**
-	 * Option for BootstrapModeSettings
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   var key: js.UndefOr[String] = js.undefined
-  var visibilityTester: js.UndefOr[js.Any] = js.undefined
+  
+  var visibilityTester: js.UndefOr[Any] = js.undefined
 }
-
 object BootstrapModeSettings {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for BootstrapModeSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    key: String = null,
-    visibilityTester: js.Any = null
-  ): BootstrapModeSettings = {
+  
+  inline def apply(): BootstrapModeSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (visibilityTester != null) __obj.updateDynamic("visibilityTester")(visibilityTester.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapModeSettings]
   }
+  
+  extension [Self <: BootstrapModeSettings](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setVisibilityTester(value: Any): Self = StObject.set(x, "visibilityTester", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityTesterUndefined: Self = StObject.set(x, "visibilityTester", js.undefined)
+  }
 }
-

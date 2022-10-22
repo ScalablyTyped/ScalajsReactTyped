@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the cancelable events of a client ASPxGridView column.
   */
-@JSGlobal("ASPxClientGridViewColumnCancelEventArgs")
-@js.native
-class ASPxClientGridViewColumnCancelEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new isntance of the ASPxClientGridViewColumnCancelEventArgs class.
-    * @param column An ASPxClientGridViewColumn object that represents the processed column.
-    */
-  def this(column: ASPxClientGridViewColumn) = this()
+trait ASPxClientGridViewColumnCancelEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
     * Gets the processed client column.
     */
-  var column: ASPxClientGridViewColumn = js.native
+  var column: ASPxClientGridViewColumn
 }
-
+object ASPxClientGridViewColumnCancelEventArgs {
+  
+  inline def apply(cancel: Boolean, column: ASPxClientGridViewColumn): ASPxClientGridViewColumnCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientGridViewColumnCancelEventArgs]
+  }
+  
+  extension [Self <: ASPxClientGridViewColumnCancelEventArgs](x: Self) {
+    
+    inline def setColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+  }
+}

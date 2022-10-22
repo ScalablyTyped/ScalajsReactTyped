@@ -1,37 +1,48 @@
 package typingsJapgolly.winrt.Windows.Devices.Sms
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncAction
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperationWithProgress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISmsDeviceMessageStore extends js.Object {
-  var maxMessages: Double
+trait ISmsDeviceMessageStore extends StObject {
+  
   def deleteMessageAsync(messageId: Double): IAsyncAction
+  
   def deleteMessagesAsync(messageFilter: SmsMessageFilter): IAsyncAction
+  
   def getMessageAsync(messageId: Double): IAsyncOperation[ISmsMessage]
+  
   def getMessagesAsync(messageFilter: SmsMessageFilter): IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double]
+  
+  var maxMessages: Double
 }
-
 object ISmsDeviceMessageStore {
-  @scala.inline
-  def apply(
-    deleteMessageAsync: Double => CallbackTo[IAsyncAction],
-    deleteMessagesAsync: SmsMessageFilter => CallbackTo[IAsyncAction],
-    getMessageAsync: Double => CallbackTo[IAsyncOperation[ISmsMessage]],
-    getMessagesAsync: SmsMessageFilter => CallbackTo[IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double]],
+  
+  inline def apply(
+    deleteMessageAsync: Double => IAsyncAction,
+    deleteMessagesAsync: SmsMessageFilter => IAsyncAction,
+    getMessageAsync: Double => IAsyncOperation[ISmsMessage],
+    getMessagesAsync: SmsMessageFilter => IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double],
     maxMessages: Double
   ): ISmsDeviceMessageStore = {
-    val __obj = js.Dynamic.literal(maxMessages = maxMessages.asInstanceOf[js.Any])
-    __obj.updateDynamic("deleteMessageAsync")(js.Any.fromFunction1((t0: scala.Double) => deleteMessageAsync(t0).runNow()))
-    __obj.updateDynamic("deleteMessagesAsync")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Devices.Sms.SmsMessageFilter) => deleteMessagesAsync(t0).runNow()))
-    __obj.updateDynamic("getMessageAsync")(js.Any.fromFunction1((t0: scala.Double) => getMessageAsync(t0).runNow()))
-    __obj.updateDynamic("getMessagesAsync")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Devices.Sms.SmsMessageFilter) => getMessagesAsync(t0).runNow()))
+    val __obj = js.Dynamic.literal(deleteMessageAsync = js.Any.fromFunction1(deleteMessageAsync), deleteMessagesAsync = js.Any.fromFunction1(deleteMessagesAsync), getMessageAsync = js.Any.fromFunction1(getMessageAsync), getMessagesAsync = js.Any.fromFunction1(getMessagesAsync), maxMessages = maxMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISmsDeviceMessageStore]
   }
+  
+  extension [Self <: ISmsDeviceMessageStore](x: Self) {
+    
+    inline def setDeleteMessageAsync(value: Double => IAsyncAction): Self = StObject.set(x, "deleteMessageAsync", js.Any.fromFunction1(value))
+    
+    inline def setDeleteMessagesAsync(value: SmsMessageFilter => IAsyncAction): Self = StObject.set(x, "deleteMessagesAsync", js.Any.fromFunction1(value))
+    
+    inline def setGetMessageAsync(value: Double => IAsyncOperation[ISmsMessage]): Self = StObject.set(x, "getMessageAsync", js.Any.fromFunction1(value))
+    
+    inline def setGetMessagesAsync(value: SmsMessageFilter => IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double]): Self = StObject.set(x, "getMessagesAsync", js.Any.fromFunction1(value))
+    
+    inline def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
+  }
 }
-

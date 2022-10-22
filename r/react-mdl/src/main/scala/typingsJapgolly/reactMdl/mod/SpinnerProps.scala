@@ -1,29 +1,27 @@
 package typingsJapgolly.reactMdl.mod
 
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
+import typingsJapgolly.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SpinnerProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any] {
+  extends StObject
+     with HTMLProps[Any] {
+  
   var singleColor: js.UndefOr[Boolean] = js.undefined
 }
-
 object SpinnerProps {
-  @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    singleColor: js.UndefOr[Boolean] = js.undefined
-  ): SpinnerProps = {
+  
+  inline def apply(): SpinnerProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(singleColor)) __obj.updateDynamic("singleColor")(singleColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinnerProps]
   }
+  
+  extension [Self <: SpinnerProps](x: Self) {
+    
+    inline def setSingleColor(value: Boolean): Self = StObject.set(x, "singleColor", value.asInstanceOf[js.Any])
+    
+    inline def setSingleColorUndefined: Self = StObject.set(x, "singleColor", js.undefined)
+  }
 }
-

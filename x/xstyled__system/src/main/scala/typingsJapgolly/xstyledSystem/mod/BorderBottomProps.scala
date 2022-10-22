@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.BorderBottomProperty
+import typingsJapgolly.csstype.mod.Property.BorderBottom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BorderBottomProps[TLength] extends js.Object {
-  val borderBottom: js.UndefOr[ResponsiveValue[BorderBottomProperty[TLength]]] = js.undefined
+trait BorderBottomProps[TLength] extends StObject {
+  
+  val borderBottom: js.UndefOr[ResponsiveValue[BorderBottom[TLength]]] = js.undefined
 }
-
 object BorderBottomProps {
-  @scala.inline
-  def apply[TLength](borderBottom: ResponsiveValue[BorderBottomProperty[TLength]] = null): BorderBottomProps[TLength] = {
+  
+  inline def apply[TLength](): BorderBottomProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderBottomProps[TLength]]
   }
+  
+  extension [Self <: BorderBottomProps[?], TLength](x: Self & BorderBottomProps[TLength]) {
+    
+    inline def setBorderBottom(value: ResponsiveValue[BorderBottom[TLength]]): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+    
+    inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+    
+    inline def setBorderBottomVarargs(value: BorderBottom[TLength]*): Self = StObject.set(x, "borderBottom", js.Array(value*))
+  }
 }
-

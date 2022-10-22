@@ -4,16 +4,16 @@
 Typings are for version 1.3
 
 ## Library description:
-Extended Linked Data module
+RDF-Ext is a developer-friendly extension for RDF/JS
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rdf-ext |
 | Keywords           | rdf, rdfjs, rdf-ext |
-| # releases         | 7 |
-| # dependents       | 54 |
-| # downloads        | 37528 |
-| # stars            | 2 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 29664.333333333332 |
+| # stars            | 110.0 |
 
 ## Links
 - [Homepage](https://github.com/rdf-ext/rdf-ext)

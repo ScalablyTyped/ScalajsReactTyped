@@ -1,16 +1,16 @@
 package typingsJapgolly.msRestAzure.mod
 
-import typingsJapgolly.msRestAzure.AnonActiveDirectoryEndpointUrl
-import typingsJapgolly.msRestAzure.AnonActiveDirectoryGraphApiVersion
-import typingsJapgolly.msRestAzure.AnonActiveDirectoryGraphResourceId
-import typingsJapgolly.msRestAzure.AnonActiveDirectoryResourceId
+import typingsJapgolly.msRestAzure.anon.ActiveDirectoryEndpointUrl
+import typingsJapgolly.msRestAzure.anon.ActiveDirectoryGraphApiVersion
+import typingsJapgolly.msRestAzure.anon.ActiveDirectoryGraphResourceId
+import typingsJapgolly.msRestAzure.anon.ActiveDirectoryResourceId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest-azure", "AzureEnvironment")
 @js.native
-class AzureEnvironment protected () extends js.Object {
+open class AzureEnvironment protected () extends StObject {
   /**
     * Initializes a new instance of the AzureEnvironment class.
     * @param {string} parameters.name - The Environment name
@@ -34,83 +34,108 @@ class AzureEnvironment protected () extends js.Object {
     * be validated with Azure AD. Default value is true.
     */
   def this(parameters: AzureEnvironmentParameters) = this()
+  
   /**
     * The Active Directory login endpoint.
     */
   var activeDirectoryEndpointUrl: String = js.native
+  
   /**
     * The Active Directory api version.
     */
   var activeDirectoryGraphApiVersion: String = js.native
+  
   /**
     * The Active Directory resource ID.
     */
   var activeDirectoryGraphResourceId: String = js.native
+  
   /**
     * The resource ID to obtain AD tokens for (token audience).
     */
   var activeDirectoryResourceId: String = js.native
+  
   /**
     * The data lake analytics job and catalog service dns suffix.
     */
   var azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: String = js.native
+  
   /**
     * The data lake store filesystem service dns suffix.
     */
   var azureDataLakeStoreFileSystemEndpointSuffix: String = js.native
+  
   /**
     * The template gallery endpoint.
     */
   var galleryEndpointUrl: String = js.native
+  
   /**
     * The keyvault service dns suffix.
     */
   var keyVaultDnsSuffix: String = js.native
+  
   /**
     * The management service endpoint.
     */
   var managementEndpointUrl: String = js.native
+  
   /**
     * The Environment name.
     */
   var name: String = js.native
+  
   /**
     * The management portal URL.
     */
   var portalUrl: String = js.native
+  
   /**
     * The publish settings file URL.
     */
   var publishingProfileUrl: String = js.native
+  
   /**
     * The resource management endpoint.
     */
   var resourceManagerEndpointUrl: String = js.native
+  
   /**
     * The sql server management endpoint for mobile commands.
     */
   var sqlManagementEndpointUrl: String = js.native
+  
   /**
     * The dns suffix for sql servers.
     */
   var sqlServerHostnameSuffix: String = js.native
+  
   /**
     * The endpoint suffix for storage accounts.
     */
   var storageEndpointSuffix: String = js.native
+  
   /**
     * Determines whether the authentication endpoint should be validated with Azure AD. Default value is true.
     */
   var validateAuthority: Boolean = js.native
 }
-
 /* static members */
-@JSImport("ms-rest-azure", "AzureEnvironment")
-@js.native
-object AzureEnvironment extends js.Object {
-  val Azure: AnonActiveDirectoryEndpointUrl = js.native
-  val AzureChina: AnonActiveDirectoryGraphApiVersion = js.native
-  val AzureGermanCloud: AnonActiveDirectoryResourceId = js.native
-  val AzureUSGovernment: AnonActiveDirectoryGraphResourceId = js.native
+object AzureEnvironment {
+  
+  @JSImport("ms-rest-azure", "AzureEnvironment.Azure")
+  @js.native
+  val Azure: ActiveDirectoryEndpointUrl = js.native
+  
+  @JSImport("ms-rest-azure", "AzureEnvironment.AzureChina")
+  @js.native
+  val AzureChina: ActiveDirectoryGraphApiVersion = js.native
+  
+  @JSImport("ms-rest-azure", "AzureEnvironment.AzureGermanCloud")
+  @js.native
+  val AzureGermanCloud: ActiveDirectoryResourceId = js.native
+  
+  @JSImport("ms-rest-azure", "AzureEnvironment.AzureUSGovernment")
+  @js.native
+  val AzureUSGovernment: ActiveDirectoryGraphResourceId = js.native
 }
-

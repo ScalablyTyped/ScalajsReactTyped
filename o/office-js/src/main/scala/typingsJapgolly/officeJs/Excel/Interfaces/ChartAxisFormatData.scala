@@ -1,34 +1,43 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartAxisFormat.toJSON()`. */
-trait ChartAxisFormatData extends js.Object {
+trait ChartAxisFormatData extends StObject {
+  
   /**
+    * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
     *
-    * Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var font: js.UndefOr[ChartFontData] = js.undefined
+  
   /**
+    * Specifies chart line formatting.
     *
-    * Represents chart line formatting. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var line: js.UndefOr[ChartLineFormatData] = js.undefined
 }
-
 object ChartAxisFormatData {
-  @scala.inline
-  def apply(font: ChartFontData = null, line: ChartLineFormatData = null): ChartAxisFormatData = {
+  
+  inline def apply(): ChartAxisFormatData = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisFormatData]
   }
+  
+  extension [Self <: ChartAxisFormatData](x: Self) {
+    
+    inline def setFont(value: ChartFontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setLine(value: ChartLineFormatData): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.ethereumProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.kwei
@@ -21,40 +21,36 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.gether
   - typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.tether
 */
-trait Unit extends js.Object
-
+trait Unit extends StObject
 object Unit {
-  @scala.inline
-  def ada: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.ada = this.cast("ada")
-  @scala.inline
-  def babbage: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.babbage = this.cast("babbage")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def einstein: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.einstein = this.cast("einstein")
-  @scala.inline
-  def ether: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.ether = this.cast("ether")
-  @scala.inline
-  def finney: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.finney = this.cast("finney")
-  @scala.inline
-  def gether: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.gether = this.cast("gether")
-  @scala.inline
-  def grand: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.grand = this.cast("grand")
-  @scala.inline
-  def gwei: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.gwei = this.cast("gwei")
-  @scala.inline
-  def kether: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.kether = this.cast("kether")
-  @scala.inline
-  def kwei: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.kwei = this.cast("kwei")
-  @scala.inline
-  def mether: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.mether = this.cast("mether")
-  @scala.inline
-  def mwei: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.mwei = this.cast("mwei")
-  @scala.inline
-  def shannon: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.shannon = this.cast("shannon")
-  @scala.inline
-  def szabo: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.szabo = this.cast("szabo")
-  @scala.inline
-  def tether: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.tether = this.cast("tether")
+  
+  inline def ada: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.ada = "ada".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.ada]
+  
+  inline def babbage: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.babbage = "babbage".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.babbage]
+  
+  inline def einstein: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.einstein = "einstein".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.einstein]
+  
+  inline def ether: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.ether = "ether".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.ether]
+  
+  inline def finney: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.finney = "finney".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.finney]
+  
+  inline def gether: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.gether = "gether".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.gether]
+  
+  inline def grand: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.grand = "grand".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.grand]
+  
+  inline def gwei: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.gwei = "gwei".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.gwei]
+  
+  inline def kether: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.kether = "kether".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.kether]
+  
+  inline def kwei: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.kwei = "kwei".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.kwei]
+  
+  inline def mether: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.mether = "mether".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.mether]
+  
+  inline def mwei: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.mwei = "mwei".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.mwei]
+  
+  inline def shannon: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.shannon = "shannon".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.shannon]
+  
+  inline def szabo: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.szabo = "szabo".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.szabo]
+  
+  inline def tether: typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.tether = "tether".asInstanceOf[typingsJapgolly.ethereumProtocol.ethereumProtocolStrings.tether]
 }
-

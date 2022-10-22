@@ -4,43 +4,49 @@ import typingsJapgolly.elasticsearch.elasticsearchStrings.dfs_query_and_fetch
 import typingsJapgolly.elasticsearch.elasticsearchStrings.dfs_query_then_fetch
 import typingsJapgolly.elasticsearch.elasticsearchStrings.query_and_fetch
 import typingsJapgolly.elasticsearch.elasticsearchStrings.query_then_fetch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MSearchParams extends GenericParams {
+trait MSearchParams
+  extends StObject
+     with GenericParams {
+  
   var index: js.UndefOr[NameList] = js.undefined
+  
   var maxConcurrentSearches: js.UndefOr[Double] = js.undefined
+  
   var search_type: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.undefined
+  
   var `type`: js.UndefOr[NameList] = js.undefined
 }
-
 object MSearchParams {
-  @scala.inline
-  def apply(
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    index: NameList = null,
-    maxConcurrentSearches: Int | Double = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    requestTimeout: Int | Double = null,
-    search_type: query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch = null,
-    `type`: NameList = null
-  ): MSearchParams = {
+  
+  inline def apply(): MSearchParams = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (maxConcurrentSearches != null) __obj.updateDynamic("maxConcurrentSearches")(maxConcurrentSearches.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (search_type != null) __obj.updateDynamic("search_type")(search_type.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSearchParams]
   }
+  
+  extension [Self <: MSearchParams](x: Self) {
+    
+    inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
+    
+    inline def setMaxConcurrentSearches(value: Double): Self = StObject.set(x, "maxConcurrentSearches", value.asInstanceOf[js.Any])
+    
+    inline def setMaxConcurrentSearchesUndefined: Self = StObject.set(x, "maxConcurrentSearches", js.undefined)
+    
+    inline def setSearch_type(value: query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch): Self = StObject.set(x, "search_type", value.asInstanceOf[js.Any])
+    
+    inline def setSearch_typeUndefined: Self = StObject.set(x, "search_type", js.undefined)
+    
+    inline def setType(value: NameList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
+  }
 }
-

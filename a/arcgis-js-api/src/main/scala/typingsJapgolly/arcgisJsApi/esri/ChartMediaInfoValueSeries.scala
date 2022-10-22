@@ -1,33 +1,32 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartMediaInfoValueSeries extends Accessor {
+trait ChartMediaInfoValueSeries
+  extends StObject
+     with Accessor {
+  
+  /**
+    * String value indicating the field's name for a series.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#fieldName)
+    */
+  val fieldName: String = js.native
+  
   /**
     * String value indicating the tooltip for a series.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#tooltip)
     */
-  var tooltip: String = js.native
+  val tooltip: String = js.native
+  
   /**
-    * Numerical value indicating the x-value for the chart series.
+    * Numerical value for the chart series.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#x)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#value)
     */
-  var x: Double = js.native
-  /**
-    * Numerical value indicating the y-value for the chart series.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#y)
-    */
-  var y: Double = js.native
+  val value: Double = js.native
 }
-
-@JSGlobal("__esri.ChartMediaInfoValueSeries")
-@js.native
-object ChartMediaInfoValueSeries extends TopLevel[ChartMediaInfoValueSeriesConstructor]
-

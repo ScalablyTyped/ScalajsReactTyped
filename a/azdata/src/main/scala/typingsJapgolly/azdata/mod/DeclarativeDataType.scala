@@ -1,41 +1,51 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeclarativeDataType extends js.Object
-
+sealed trait DeclarativeDataType extends StObject
 @JSImport("azdata", "DeclarativeDataType")
 @js.native
-object DeclarativeDataType extends js.Object {
-  @js.native
-  sealed trait boolean extends DeclarativeDataType
-  
-  @js.native
-  sealed trait category extends DeclarativeDataType
-  
-  @js.native
-  sealed trait editableCategory extends DeclarativeDataType
-  
-  @js.native
-  sealed trait string extends DeclarativeDataType
+object DeclarativeDataType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[DeclarativeDataType with String] = js.native
-  /* "boolean" */ @js.native
-  object boolean extends TopLevel[boolean with String]
+  def apply(value: String): js.UndefOr[DeclarativeDataType & String] = js.native
   
-  /* "category" */ @js.native
-  object category extends TopLevel[category with String]
+  @js.native
+  sealed trait boolean
+    extends StObject
+       with DeclarativeDataType
+  /* "boolean" */ val boolean: typingsJapgolly.azdata.mod.DeclarativeDataType.boolean & String = js.native
   
-  /* "editableCategory" */ @js.native
-  object editableCategory extends TopLevel[editableCategory with String]
+  @js.native
+  sealed trait category
+    extends StObject
+       with DeclarativeDataType
+  /* "category" */ val category: typingsJapgolly.azdata.mod.DeclarativeDataType.category & String = js.native
   
-  /* "string" */ @js.native
-  object string extends TopLevel[string with String]
+  @js.native
+  sealed trait component
+    extends StObject
+       with DeclarativeDataType
+  /* "component" */ val component: typingsJapgolly.azdata.mod.DeclarativeDataType.component & String = js.native
   
+  @js.native
+  sealed trait editableCategory
+    extends StObject
+       with DeclarativeDataType
+  /* "editableCategory" */ val editableCategory: typingsJapgolly.azdata.mod.DeclarativeDataType.editableCategory & String = js.native
+  
+  @js.native
+  sealed trait menu
+    extends StObject
+       with DeclarativeDataType
+  /* "menu" */ val menu: typingsJapgolly.azdata.mod.DeclarativeDataType.menu & String = js.native
+  
+  @js.native
+  sealed trait string
+    extends StObject
+       with DeclarativeDataType
+  /* "string" */ val string: typingsJapgolly.azdata.mod.DeclarativeDataType.string & String = js.native
 }
-

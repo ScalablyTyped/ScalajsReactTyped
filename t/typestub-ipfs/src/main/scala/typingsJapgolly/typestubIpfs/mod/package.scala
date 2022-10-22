@@ -1,19 +1,33 @@
-package typingsJapgolly.typestubIpfs
+package typingsJapgolly.typestubIpfs.mod
 
+import org.scalajs.dom.Blob
+import typingsJapgolly.node.bufferMod.global.Buffer
+import typingsJapgolly.std.BufferSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Big = js.Any
-  type CID = js.Any
-  type Callback[T] = js.Function2[/* error */ js.Error, /* result */ js.UndefOr[T], scala.Unit]
-  type DAGLink = js.Any
-  type DAGLinkRef = typingsJapgolly.typestubIpfs.mod.DAGLink | js.Any
-  type DAGNode = js.Any
-  type FileContent = js.Object | org.scalajs.dom.raw.Blob | java.lang.String
-  type KeyType = java.lang.String | typingsJapgolly.node.Buffer | typingsJapgolly.typestubIpfs.mod.CID | js.Any
-  type Multihash = js.Any | java.lang.String
-  type Obj = typingsJapgolly.std.BufferSource | js.Object
-  type PeerId = js.Any
-}
+
+inline def createNode(options: Options): IPFS = ^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(options.asInstanceOf[js.Any]).asInstanceOf[IPFS]
+
+type Big = Any
+
+type CID = Any
+
+type Callback[T] = js.Function2[/* error */ js.Error, /* result */ js.UndefOr[T], Unit]
+
+type DAGLink = Any
+
+type DAGLinkRef = DAGLink | Any
+
+type DAGNode = Any
+
+type FileContent = js.Object | Blob | String
+
+type KeyType = String | Buffer | CID | Any
+
+type Multihash = Any | String
+
+type Obj = BufferSource | js.Object
+
+type PeerId = Any

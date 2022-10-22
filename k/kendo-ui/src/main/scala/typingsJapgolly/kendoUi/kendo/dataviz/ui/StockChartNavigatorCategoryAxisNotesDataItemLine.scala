@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockChartNavigatorCategoryAxisNotesDataItemLine extends js.Object {
+trait StockChartNavigatorCategoryAxisNotesDataItemLine extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var length: js.UndefOr[Double] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object StockChartNavigatorCategoryAxisNotesDataItemLine {
-  @scala.inline
-  def apply(color: String = null, length: Int | Double = null, width: Int | Double = null): StockChartNavigatorCategoryAxisNotesDataItemLine = {
+  
+  inline def apply(): StockChartNavigatorCategoryAxisNotesDataItemLine = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartNavigatorCategoryAxisNotesDataItemLine]
   }
+  
+  extension [Self <: StockChartNavigatorCategoryAxisNotesDataItemLine](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

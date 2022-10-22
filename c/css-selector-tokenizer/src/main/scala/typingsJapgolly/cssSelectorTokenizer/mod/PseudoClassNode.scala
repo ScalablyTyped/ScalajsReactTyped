@@ -1,34 +1,38 @@
 package typingsJapgolly.cssSelectorTokenizer.mod
 
 import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.`pseudo-class`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PseudoClassNode
-  extends SelectorNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with SelectorNodeType {
+  
   var content: js.UndefOr[String] = js.undefined
+  
   @JSName("name")
   var name_PseudoClassNode: String
+  
   var `type`: `pseudo-class`
 }
-
 object PseudoClassNode {
-  @scala.inline
-  def apply(
-    name: String,
-    `type`: `pseudo-class`,
-    after: String = null,
-    before: String = null,
-    content: String = null
-  ): PseudoClassNode = {
+  
+  inline def apply(name: String): PseudoClassNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pseudo-class")
     __obj.asInstanceOf[PseudoClassNode]
   }
+  
+  extension [Self <: PseudoClassNode](x: Self) {
+    
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: `pseudo-class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

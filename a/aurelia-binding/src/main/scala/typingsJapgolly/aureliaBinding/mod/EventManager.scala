@@ -1,18 +1,18 @@
 package typingsJapgolly.aureliaBinding.mod
 
-import org.scalajs.dom.raw.EventTarget
-import typingsJapgolly.aureliaBinding.AnonProperties
+import org.scalajs.dom.EventTarget
+import typingsJapgolly.aureliaBinding.anon.Properties
 import typingsJapgolly.aureliaBinding.aureliaBindingBooleans.`true`
 import typingsJapgolly.std.EventListenerOrEventListenerObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-binding", "EventManager")
 @js.native
-class EventManager () extends js.Object {
+open class EventManager () extends StObject {
   def this(escapeShadowRoot: Boolean) = this()
-  var escapeShadowRoot: Boolean = js.native
+  
   def addEventListener(
     target: EventTarget,
     targetEvent: String,
@@ -36,6 +36,8 @@ class EventManager () extends js.Object {
     delegate: delegationStrategy,
     disposable: `true`
   ): Disposable = js.native
-  def registerElementConfig(config: AnonProperties): Unit = js.native
+  
+  var escapeShadowRoot: Boolean = js.native
+  
+  def registerElementConfig(config: Properties): Unit = js.native
 }
-

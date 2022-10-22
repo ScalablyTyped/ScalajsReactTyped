@@ -1,7 +1,7 @@
 
 # Scala.js typings for mitt
 
-Typings are for version 1.2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Tiny 200b functional Event Emitter / pubsub.
@@ -9,11 +9,11 @@ Tiny 200b functional Event Emitter / pubsub.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | mitt |
-| Keywords           | events, eventemitter, pubsub |
+| Keywords           | events, eventemitter, emitter, pubsub |
 | # releases         | 3 |
-| # dependents       | 240 |
-| # downloads        | 31678762 |
-| # stars            | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 7172500.0 |
+| # stars            | 7726.0 |
 
 ## Links
 - [Homepage](https://github.com/developit/mitt)

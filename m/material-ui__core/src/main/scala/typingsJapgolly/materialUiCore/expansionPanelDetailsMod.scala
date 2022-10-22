@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/ExpansionPanelDetails", JSImport.Namespace)
-@js.native
-object expansionPanelDetailsMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[ExpansionPanelDetailsProps, ComponentState, js.Any] {
-    def this(props: ExpansionPanelDetailsProps) = this()
-    def this(props: ExpansionPanelDetailsProps, context: js.Any) = this()
-  }
+object expansionPanelDetailsMod {
   
+  @JSImport("@material-ui/core/ExpansionPanelDetails", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[ExpansionPanelDetailsProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: ExpansionPanelDetailsProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

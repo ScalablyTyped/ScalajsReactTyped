@@ -1,15 +1,28 @@
 package typingsJapgolly.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
 import typingsJapgolly.angular.mod.IServiceProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IModalProvider extends IServiceProvider {
+trait IModalProvider
+  extends StObject
+     with IServiceProvider {
+  
   /**
     * Default options all modals will use.
     */
-  var options: IModalSettings = js.native
+  var options: IModalSettings
 }
-
+object IModalProvider {
+  
+  inline def apply($get: Any, options: IModalSettings): IModalProvider = {
+    val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IModalProvider]
+  }
+  
+  extension [Self <: IModalProvider](x: Self) {
+    
+    inline def setOptions(value: IModalSettings): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.drawing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LinearGradientOptions extends js.Object {
+trait LinearGradientOptions extends StObject {
+  
   var name: js.UndefOr[String] = js.undefined
-  var stops: js.UndefOr[js.Any] = js.undefined
+  
+  var stops: js.UndefOr[Any] = js.undefined
 }
-
 object LinearGradientOptions {
-  @scala.inline
-  def apply(name: String = null, stops: js.Any = null): LinearGradientOptions = {
+  
+  inline def apply(): LinearGradientOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinearGradientOptions]
   }
+  
+  extension [Self <: LinearGradientOptions](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setStops(value: Any): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+  }
 }
-

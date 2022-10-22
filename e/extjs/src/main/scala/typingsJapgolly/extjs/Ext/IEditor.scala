@@ -3,137 +3,203 @@ package typingsJapgolly.extjs.Ext
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.extjs.Ext.form.field.IField
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IEditor
-  extends typingsJapgolly.extjs.Ext.container.IContainer {
+  extends StObject
+     with typingsJapgolly.extjs.Ext.container.IContainer {
+  
   /** [Method] private
-  		* @param ct Object
-  		* @param position Object
-  		*/
+    * @param ct Object
+    * @param position Object
+    */
   @JSName("afterRender")
-  var afterRender_IEditor: js.UndefOr[
-    js.Function2[/* ct */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var afterRender_IEditor: js.UndefOr[js.Function2[/* ct */ js.UndefOr[Any], /* position */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Config Option] (String) */
   var alignment: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var allowBlur: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Boolean/Object) */
-  var autoSize: js.UndefOr[js.Any] = js.undefined
+  var autoSize: js.UndefOr[Any] = js.undefined
+  
   /** [Method] Cancels the editing process and hides the editor without persisting any changes
-  		* @param remainVisible Boolean Override the default behavior and keep the editor visible after cancel
-  		*/
+    * @param remainVisible Boolean Override the default behavior and keep the editor visible after cancel
+    */
   var cancelEdit: js.UndefOr[js.Function1[/* remainVisible */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var cancelOnEsc: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Ends the editing process persists the changed value to the underlying field and hides the editor
-  		* @param remainVisible Boolean Override the default behavior and keep the editor visible after edit
-  		*/
+    * @param remainVisible Boolean Override the default behavior and keep the editor visible after edit
+    */
   var completeEdit: js.UndefOr[js.Function1[/* remainVisible */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var completeOnEnter: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Ext.form.field.Field) */
   var field: js.UndefOr[IField] = js.undefined
+  
   /** [Method] Gets the data value of the editor
-  		* @returns Object The data value
-  		*/
-  var getValue: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object The data value
+    */
+  var getValue: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var hideEl: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var ignoreNoChange: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Number[]) */
   var offsets: js.UndefOr[Array] = js.undefined
+  
   /** [Method] private */
   @JSName("onHide")
   var onHide_IEditor: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Method] private */
   @JSName("onShow")
   var onShow_IEditor: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Config Option] (String/HTMLElement/Ext.Element) */
-  var parentEl: js.UndefOr[js.Any] = js.undefined
+  var parentEl: js.UndefOr[Any] = js.undefined
+  
   /** [Method] Realigns the editor to the bound field based on the current alignment config value
-  		* @param autoSize Boolean True to size the field to the dimensions of the bound element.
-  		*/
+    * @param autoSize Boolean True to size the field to the dimensions of the bound element.
+    */
   var realign: js.UndefOr[js.Function1[/* autoSize */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var revertInvalid: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Sets the data value of the editor
-  		* @param value Object Any valid value supported by the underlying field
-  		*/
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param value Object Any valid value supported by the underlying field
+    */
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Starts the editing process and shows the editor
-  		* @param el String/HTMLElement/Ext.Element The element to edit
-  		* @param value String A value to initialize the editor with. If a value is not provided, it defaults to the innerHTML of el.
-  		*/
+    * @param el String/HTMLElement/Ext.Element The element to edit
+    * @param value String A value to initialize the editor with. If a value is not provided, it defaults to the innerHTML of el.
+    */
   var startEdit: js.UndefOr[
-    js.Function2[/* el */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String], Unit]
+    js.Function2[/* el */ js.UndefOr[Any], /* value */ js.UndefOr[java.lang.String], Unit]
   ] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var swallowKeys: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var updateEl: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Object) */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object IEditor {
-  @scala.inline
-  def apply(
-    IContainer: typingsJapgolly.extjs.Ext.container.IContainer = null,
-    afterRender: (/* ct */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any]) => Callback = null,
-    alignment: java.lang.String = null,
-    allowBlur: js.UndefOr[Boolean] = js.undefined,
-    autoSize: js.Any = null,
-    cancelEdit: /* remainVisible */ js.UndefOr[Boolean] => Callback = null,
-    cancelOnEsc: js.UndefOr[Boolean] = js.undefined,
-    completeEdit: /* remainVisible */ js.UndefOr[Boolean] => Callback = null,
-    completeOnEnter: js.UndefOr[Boolean] = js.undefined,
-    field: IField = null,
-    getValue: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    hideEl: js.UndefOr[Boolean] = js.undefined,
-    ignoreNoChange: js.UndefOr[Boolean] = js.undefined,
-    offsets: Array = null,
-    onHide: js.UndefOr[Callback] = js.undefined,
-    onShow: js.UndefOr[Callback] = js.undefined,
-    parentEl: js.Any = null,
-    realign: /* autoSize */ js.UndefOr[Boolean] => Callback = null,
-    revertInvalid: js.UndefOr[Boolean] = js.undefined,
-    setValue: /* value */ js.UndefOr[js.Any] => Callback = null,
-    startEdit: (/* el */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => Callback = null,
-    swallowKeys: js.UndefOr[Boolean] = js.undefined,
-    updateEl: js.UndefOr[Boolean] = js.undefined,
-    value: js.Any = null
-  ): IEditor = {
+  
+  inline def apply(): IEditor = {
     val __obj = js.Dynamic.literal()
-    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction2((t0: /* ct */ js.UndefOr[js.Any], t1: /* position */ js.UndefOr[js.Any]) => afterRender(t0, t1).runNow()))
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowBlur)) __obj.updateDynamic("allowBlur")(allowBlur.asInstanceOf[js.Any])
-    if (autoSize != null) __obj.updateDynamic("autoSize")(autoSize.asInstanceOf[js.Any])
-    if (cancelEdit != null) __obj.updateDynamic("cancelEdit")(js.Any.fromFunction1((t0: /* remainVisible */ js.UndefOr[scala.Boolean]) => cancelEdit(t0).runNow()))
-    if (!js.isUndefined(cancelOnEsc)) __obj.updateDynamic("cancelOnEsc")(cancelOnEsc.asInstanceOf[js.Any])
-    if (completeEdit != null) __obj.updateDynamic("completeEdit")(js.Any.fromFunction1((t0: /* remainVisible */ js.UndefOr[scala.Boolean]) => completeEdit(t0).runNow()))
-    if (!js.isUndefined(completeOnEnter)) __obj.updateDynamic("completeOnEnter")(completeOnEnter.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    getValue.foreach(p => __obj.updateDynamic("getValue")(p.toJsFn))
-    if (!js.isUndefined(hideEl)) __obj.updateDynamic("hideEl")(hideEl.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreNoChange)) __obj.updateDynamic("ignoreNoChange")(ignoreNoChange.asInstanceOf[js.Any])
-    if (offsets != null) __obj.updateDynamic("offsets")(offsets.asInstanceOf[js.Any])
-    onHide.foreach(p => __obj.updateDynamic("onHide")(p.toJsFn))
-    onShow.foreach(p => __obj.updateDynamic("onShow")(p.toJsFn))
-    if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl.asInstanceOf[js.Any])
-    if (realign != null) __obj.updateDynamic("realign")(js.Any.fromFunction1((t0: /* autoSize */ js.UndefOr[scala.Boolean]) => realign(t0).runNow()))
-    if (!js.isUndefined(revertInvalid)) __obj.updateDynamic("revertInvalid")(revertInvalid.asInstanceOf[js.Any])
-    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[js.Any]) => setValue(t0).runNow()))
-    if (startEdit != null) __obj.updateDynamic("startEdit")(js.Any.fromFunction2((t0: /* el */ js.UndefOr[js.Any], t1: /* value */ js.UndefOr[java.lang.String]) => startEdit(t0, t1).runNow()))
-    if (!js.isUndefined(swallowKeys)) __obj.updateDynamic("swallowKeys")(swallowKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateEl)) __obj.updateDynamic("updateEl")(updateEl.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditor]
   }
+  
+  extension [Self <: IEditor](x: Self) {
+    
+    inline def setAfterRender(value: (/* ct */ js.UndefOr[Any], /* position */ js.UndefOr[Any]) => Callback): Self = StObject.set(x, "afterRender", js.Any.fromFunction2((t0: /* ct */ js.UndefOr[Any], t1: /* position */ js.UndefOr[Any]) => (value(t0, t1)).runNow()))
+    
+    inline def setAfterRenderUndefined: Self = StObject.set(x, "afterRender", js.undefined)
+    
+    inline def setAlignment(value: java.lang.String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    
+    inline def setAllowBlur(value: Boolean): Self = StObject.set(x, "allowBlur", value.asInstanceOf[js.Any])
+    
+    inline def setAllowBlurUndefined: Self = StObject.set(x, "allowBlur", js.undefined)
+    
+    inline def setAutoSize(value: Any): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
+    
+    inline def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
+    
+    inline def setCancelEdit(value: /* remainVisible */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "cancelEdit", js.Any.fromFunction1((t0: /* remainVisible */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setCancelEditUndefined: Self = StObject.set(x, "cancelEdit", js.undefined)
+    
+    inline def setCancelOnEsc(value: Boolean): Self = StObject.set(x, "cancelOnEsc", value.asInstanceOf[js.Any])
+    
+    inline def setCancelOnEscUndefined: Self = StObject.set(x, "cancelOnEsc", js.undefined)
+    
+    inline def setCompleteEdit(value: /* remainVisible */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "completeEdit", js.Any.fromFunction1((t0: /* remainVisible */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setCompleteEditUndefined: Self = StObject.set(x, "completeEdit", js.undefined)
+    
+    inline def setCompleteOnEnter(value: Boolean): Self = StObject.set(x, "completeOnEnter", value.asInstanceOf[js.Any])
+    
+    inline def setCompleteOnEnterUndefined: Self = StObject.set(x, "completeOnEnter", js.undefined)
+    
+    inline def setField(value: IField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setGetValue(value: CallbackTo[Any]): Self = StObject.set(x, "getValue", value.toJsFn)
+    
+    inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
+    
+    inline def setHideEl(value: Boolean): Self = StObject.set(x, "hideEl", value.asInstanceOf[js.Any])
+    
+    inline def setHideElUndefined: Self = StObject.set(x, "hideEl", js.undefined)
+    
+    inline def setIgnoreNoChange(value: Boolean): Self = StObject.set(x, "ignoreNoChange", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreNoChangeUndefined: Self = StObject.set(x, "ignoreNoChange", js.undefined)
+    
+    inline def setOffsets(value: Array): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetsUndefined: Self = StObject.set(x, "offsets", js.undefined)
+    
+    inline def setOnHide(value: Callback): Self = StObject.set(x, "onHide", value.toJsFn)
+    
+    inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+    
+    inline def setOnShow(value: Callback): Self = StObject.set(x, "onShow", value.toJsFn)
+    
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    
+    inline def setParentEl(value: Any): Self = StObject.set(x, "parentEl", value.asInstanceOf[js.Any])
+    
+    inline def setParentElUndefined: Self = StObject.set(x, "parentEl", js.undefined)
+    
+    inline def setRealign(value: /* autoSize */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "realign", js.Any.fromFunction1((t0: /* autoSize */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setRealignUndefined: Self = StObject.set(x, "realign", js.undefined)
+    
+    inline def setRevertInvalid(value: Boolean): Self = StObject.set(x, "revertInvalid", value.asInstanceOf[js.Any])
+    
+    inline def setRevertInvalidUndefined: Self = StObject.set(x, "revertInvalid", js.undefined)
+    
+    inline def setSetValue(value: /* value */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setValue", js.Any.fromFunction1((t0: /* value */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    
+    inline def setStartEdit(value: (/* el */ js.UndefOr[Any], /* value */ js.UndefOr[java.lang.String]) => Callback): Self = StObject.set(x, "startEdit", js.Any.fromFunction2((t0: /* el */ js.UndefOr[Any], t1: /* value */ js.UndefOr[java.lang.String]) => (value(t0, t1)).runNow()))
+    
+    inline def setStartEditUndefined: Self = StObject.set(x, "startEdit", js.undefined)
+    
+    inline def setSwallowKeys(value: Boolean): Self = StObject.set(x, "swallowKeys", value.asInstanceOf[js.Any])
+    
+    inline def setSwallowKeysUndefined: Self = StObject.set(x, "swallowKeys", js.undefined)
+    
+    inline def setUpdateEl(value: Boolean): Self = StObject.set(x, "updateEl", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateElUndefined: Self = StObject.set(x, "updateEl", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

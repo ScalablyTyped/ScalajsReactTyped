@@ -1,42 +1,39 @@
 package typingsJapgolly.materialBase
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materialBase.foundationMod.MDCNumbers
-import typingsJapgolly.materialBase.foundationMod.MDCStrings
-import typingsJapgolly.materialBase.foundationMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/base", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@material/base", JSImport.Default)
   @js.native
-  class MDCComponent[A, F /* <: default[A] */] protected ()
-    extends typingsJapgolly.materialBase.componentMod.default[A, F] {
-    def this(root: Element) = this()
-    def this(root: Element, foundation: F, args: js.Any*) = this()
+  open class default[AdapterType /* <: js.Object */] ()
+    extends typingsJapgolly.materialBase.foundationMod.default[AdapterType] {
+    def this(adapter: AdapterType) = this()
   }
   
+  @JSImport("@material/base", "MDCComponent")
   @js.native
-  class MDCFoundation[A] protected () extends default[A] {
-    def this(adapter: A) = this()
+  open class MDCComponent[FoundationType /* <: typingsJapgolly.materialBase.foundationMod.MDCFoundation[js.Object] */] protected ()
+    extends typingsJapgolly.materialBase.componentMod.MDCComponent[FoundationType] {
+    def this(root: Element, foundation: FoundationType, args: Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
   }
-  
   /* static members */
-  @js.native
-  object MDCComponent extends js.Object {
-    def attachTo(root: Element): typingsJapgolly.materialBase.componentMod.MDCComponent[_, default[_]] = js.native
+  object MDCComponent {
+    
+    @JSImport("@material/base", "MDCComponent")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: Element): typingsJapgolly.materialBase.componentMod.MDCComponent[typingsJapgolly.materialBase.foundationMod.MDCFoundation[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materialBase.componentMod.MDCComponent[typingsJapgolly.materialBase.foundationMod.MDCFoundation[js.Object]]]
   }
   
-  /* static members */
+  @JSImport("@material/base", "MDCFoundation")
   @js.native
-  object MDCFoundation extends js.Object {
-    val cssClasses: MDCStrings = js.native
-    val defaultAdapter: js.Any = js.native
-    val numbers: MDCNumbers = js.native
-    val strings: MDCStrings = js.native
+  open class MDCFoundation[AdapterType /* <: js.Object */] ()
+    extends typingsJapgolly.materialBase.foundationMod.MDCFoundation[AdapterType] {
+    def this(adapter: AdapterType) = this()
   }
-  
 }
-

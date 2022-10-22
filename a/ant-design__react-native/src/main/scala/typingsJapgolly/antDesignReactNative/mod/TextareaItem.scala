@@ -1,22 +1,26 @@
 package typingsJapgolly.antDesignReactNative.mod
 
-import typingsJapgolly.antDesignReactNative.AnonAutoHeight
-import typingsJapgolly.antDesignReactNative.textareaItemMod.TextareaItemProps
-import typingsJapgolly.antDesignReactNative.textareaItemMod.default
+import typingsJapgolly.antDesignReactNative.anon.AutoHeight
+import typingsJapgolly.antDesignReactNative.libTextareaItemMod.TextareaItemProps
+import typingsJapgolly.antDesignReactNative.libTextareaItemMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "TextareaItem")
 @js.native
-class TextareaItem protected () extends default {
+open class TextareaItem protected () extends default {
   def this(props: TextareaItemProps) = this()
 }
-
 /* static members */
-@JSImport("@ant-design/react-native", "TextareaItem")
-@js.native
-object TextareaItem extends js.Object {
-  var defaultProps: AnonAutoHeight = js.native
+object TextareaItem {
+  
+  @JSImport("@ant-design/react-native", "TextareaItem")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native", "TextareaItem.defaultProps")
+  @js.native
+  def defaultProps: AutoHeight = js.native
+  inline def defaultProps_=(x: AutoHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

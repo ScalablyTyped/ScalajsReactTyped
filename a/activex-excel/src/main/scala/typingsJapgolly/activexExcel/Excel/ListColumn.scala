@@ -1,39 +1,109 @@
 package typingsJapgolly.activexExcel.Excel
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Excel.ListColumn")
-@js.native
-class ListColumn protected () extends js.Object {
-  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
-  val Creator: XlCreator = js.native
+trait ListColumn extends StObject {
+  
+  val Application: typingsJapgolly.activexExcel.Excel.Application
+  
+  val Creator: XlCreator
+  
+  def DataBodyRange(Address: String): Range
+  def DataBodyRange(RowIndex: Double): Range
+  def DataBodyRange(RowIndex: Double, ColumnIndex: Double): Range
   @JSName("DataBodyRange")
-  val DataBodyRange_Original: Range = js.native
-  @JSName("Excel.ListColumn_typekey")
-  var ExcelDotListColumn_typekey: ListColumn = js.native
-  val Index: Double = js.native
-  val ListDataFormat: typingsJapgolly.activexExcel.Excel.ListDataFormat = js.native
-  var Name: String = js.native
-  val Parent: js.Any = js.native
+  val DataBodyRange_Original: Range
+  
+  def Delete(): Unit
+  
+  /* private */ @JSName("Excel.ListColumn_typekey")
+  var ExcelDotListColumn_typekey: ListColumn
+  
+  val Index: Double
+  
+  val ListDataFormat: typingsJapgolly.activexExcel.Excel.ListDataFormat
+  
+  var Name: String
+  
+  val Parent: Any
+  
+  def Range(Address: String): typingsJapgolly.activexExcel.Excel.Range
+  def Range(RowIndex: Double): typingsJapgolly.activexExcel.Excel.Range
+  def Range(RowIndex: Double, ColumnIndex: Double): typingsJapgolly.activexExcel.Excel.Range
   @JSName("Range")
-  val Range_Original: Range = js.native
-  val SharePointFormula: String = js.native
+  val Range_Original: Range
+  
+  val SharePointFormula: String
+  
+  def Total(Address: String): Range
+  def Total(RowIndex: Double): Range
+  def Total(RowIndex: Double, ColumnIndex: Double): Range
   @JSName("Total")
-  val Total_Original: Range = js.native
-  var TotalsCalculation: XlTotalsCalculation = js.native
-  val XPath: typingsJapgolly.activexExcel.Excel.XPath = js.native
-  val _Default: String = js.native
-  def DataBodyRange(Address: String): Range = js.native
-  def DataBodyRange(RowIndex: Double): Range = js.native
-  def DataBodyRange(RowIndex: Double, ColumnIndex: Double): Range = js.native
-  def Delete(): Unit = js.native
-  def Range(Address: String): typingsJapgolly.activexExcel.Excel.Range = js.native
-  def Range(RowIndex: Double): typingsJapgolly.activexExcel.Excel.Range = js.native
-  def Range(RowIndex: Double, ColumnIndex: Double): typingsJapgolly.activexExcel.Excel.Range = js.native
-  def Total(Address: String): Range = js.native
-  def Total(RowIndex: Double): Range = js.native
-  def Total(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  val Total_Original: Range
+  
+  var TotalsCalculation: XlTotalsCalculation
+  
+  val XPath: typingsJapgolly.activexExcel.Excel.XPath
+  
+  val _Default: String
 }
-
+object ListColumn {
+  
+  inline def apply(
+    Application: Application,
+    Creator: XlCreator,
+    DataBodyRange: Range,
+    Delete: Callback,
+    ExcelDotListColumn_typekey: ListColumn,
+    Index: Double,
+    ListDataFormat: ListDataFormat,
+    Name: String,
+    Parent: Any,
+    Range: Range,
+    SharePointFormula: String,
+    Total: Range,
+    TotalsCalculation: XlTotalsCalculation,
+    XPath: XPath,
+    _Default: String
+  ): ListColumn = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DataBodyRange = DataBodyRange.asInstanceOf[js.Any], Delete = Delete.toJsFn, Index = Index.asInstanceOf[js.Any], ListDataFormat = ListDataFormat.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Range = Range.asInstanceOf[js.Any], SharePointFormula = SharePointFormula.asInstanceOf[js.Any], Total = Total.asInstanceOf[js.Any], TotalsCalculation = TotalsCalculation.asInstanceOf[js.Any], XPath = XPath.asInstanceOf[js.Any], _Default = _Default.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.ListColumn_typekey")(ExcelDotListColumn_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListColumn]
+  }
+  
+  extension [Self <: ListColumn](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setDataBodyRange(value: Range): Self = StObject.set(x, "DataBodyRange", value.asInstanceOf[js.Any])
+    
+    inline def setDelete(value: Callback): Self = StObject.set(x, "Delete", value.toJsFn)
+    
+    inline def setExcelDotListColumn_typekey(value: ListColumn): Self = StObject.set(x, "Excel.ListColumn_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    
+    inline def setListDataFormat(value: ListDataFormat): Self = StObject.set(x, "ListDataFormat", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    
+    inline def setSharePointFormula(value: String): Self = StObject.set(x, "SharePointFormula", value.asInstanceOf[js.Any])
+    
+    inline def setTotal(value: Range): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    
+    inline def setTotalsCalculation(value: XlTotalsCalculation): Self = StObject.set(x, "TotalsCalculation", value.asInstanceOf[js.Any])
+    
+    inline def setXPath(value: XPath): Self = StObject.set(x, "XPath", value.asInstanceOf[js.Any])
+    
+    inline def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+  }
+}

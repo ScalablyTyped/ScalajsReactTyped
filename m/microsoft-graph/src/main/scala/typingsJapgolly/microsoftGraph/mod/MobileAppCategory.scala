@@ -1,24 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MobileAppCategory extends Entity {
+trait MobileAppCategory
+  extends StObject
+     with Entity {
+  
   // The name of the app category.
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The date and time the mobileAppCategory was last modified.
   var lastModifiedDateTime: js.UndefOr[String] = js.undefined
 }
-
 object MobileAppCategory {
-  @scala.inline
-  def apply(displayName: String = null, id: String = null, lastModifiedDateTime: String = null): MobileAppCategory = {
+  
+  inline def apply(): MobileAppCategory = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileAppCategory]
   }
+  
+  extension [Self <: MobileAppCategory](x: Self) {
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+  }
 }
-

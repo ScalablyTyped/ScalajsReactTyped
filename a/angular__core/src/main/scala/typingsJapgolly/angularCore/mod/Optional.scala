@@ -1,13 +1,12 @@
 package typingsJapgolly.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.angularCore.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Optional extends js.Object
-
-@JSImport("@angular/core", "Optional")
-@js.native
-object Optional extends TopLevel[OptionalDecorator]
-
+trait Optional extends StObject
+object Optional {
+  
+  inline def apply: OptionalDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("Optional").asInstanceOf[OptionalDecorator]
+}

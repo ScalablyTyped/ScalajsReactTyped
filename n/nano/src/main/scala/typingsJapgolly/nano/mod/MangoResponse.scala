@@ -1,34 +1,54 @@
 package typingsJapgolly.nano.mod
 
+import typingsJapgolly.nano.anon.IdRev
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MangoResponse[D] extends js.Object {
-  // A string that enables you to specify which page of results you require. Used for paging through result sets.
+/** Mango response.
+  * @see Docs: {@link https://docs.couchdb.org/en/latest/api/database/find.html#db-find}  */
+trait MangoResponse[D] extends StObject {
+  
+  /** A string that enables you to specify which page of results you require.
+    *
+    * Used for paging through result sets. */
   var bookmark: js.UndefOr[String] = js.undefined
-  // Array of documents matching the search. In each matching document, the fields specified in
-  // the fields part of the request body are listed, along with their values.
-  var docs: js.Array[D]
-  // Basic execution statistics for a specific request.
+  
+  /** Array of documents matching the search.
+    * 
+    * In each matching document, the fields specified in the fields part of the request body are listed, along with
+    * their values. */
+  var docs: js.Array[D & IdRev]
+  
+  /** Basic execution statistics for a specific request. */
   var execution_stats: js.UndefOr[MangoExecutionStats] = js.undefined
-  // Execution warnings
+  
+  /** Execution warnings */
   var warning: js.UndefOr[String] = js.undefined
 }
-
 object MangoResponse {
-  @scala.inline
-  def apply[D](
-    docs: js.Array[D],
-    bookmark: String = null,
-    execution_stats: MangoExecutionStats = null,
-    warning: String = null
-  ): MangoResponse[D] = {
+  
+  inline def apply[D](docs: js.Array[D & IdRev]): MangoResponse[D] = {
     val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any])
-    if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark.asInstanceOf[js.Any])
-    if (execution_stats != null) __obj.updateDynamic("execution_stats")(execution_stats.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[MangoResponse[D]]
   }
+  
+  extension [Self <: MangoResponse[?], D](x: Self & MangoResponse[D]) {
+    
+    inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
+    
+    inline def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
+    
+    inline def setDocs(value: js.Array[D & IdRev]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
+    
+    inline def setDocsVarargs(value: (D & IdRev)*): Self = StObject.set(x, "docs", js.Array(value*))
+    
+    inline def setExecution_stats(value: MangoExecutionStats): Self = StObject.set(x, "execution_stats", value.asInstanceOf[js.Any])
+    
+    inline def setExecution_statsUndefined: Self = StObject.set(x, "execution_stats", js.undefined)
+    
+    inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+  }
 }
-

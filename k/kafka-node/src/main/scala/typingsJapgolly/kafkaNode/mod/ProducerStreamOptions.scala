@@ -1,27 +1,36 @@
 package typingsJapgolly.kafkaNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProducerStreamOptions extends js.Object {
+trait ProducerStreamOptions extends StObject {
+  
   var highWaterMark: js.UndefOr[Double] = js.undefined
+  
   var kafkaClient: js.UndefOr[KafkaClientOptions] = js.undefined
+  
   var producer: js.UndefOr[ProducerOptions] = js.undefined
 }
-
 object ProducerStreamOptions {
-  @scala.inline
-  def apply(
-    highWaterMark: Int | Double = null,
-    kafkaClient: KafkaClientOptions = null,
-    producer: ProducerOptions = null
-  ): ProducerStreamOptions = {
+  
+  inline def apply(): ProducerStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (kafkaClient != null) __obj.updateDynamic("kafkaClient")(kafkaClient.asInstanceOf[js.Any])
-    if (producer != null) __obj.updateDynamic("producer")(producer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProducerStreamOptions]
   }
+  
+  extension [Self <: ProducerStreamOptions](x: Self) {
+    
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+    
+    inline def setKafkaClient(value: KafkaClientOptions): Self = StObject.set(x, "kafkaClient", value.asInstanceOf[js.Any])
+    
+    inline def setKafkaClientUndefined: Self = StObject.set(x, "kafkaClient", js.undefined)
+    
+    inline def setProducer(value: ProducerOptions): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
+    
+    inline def setProducerUndefined: Self = StObject.set(x, "producer", js.undefined)
+  }
 }
-

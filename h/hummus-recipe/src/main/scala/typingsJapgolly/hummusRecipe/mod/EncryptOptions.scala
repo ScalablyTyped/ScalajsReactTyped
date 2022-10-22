@@ -1,23 +1,36 @@
 package typingsJapgolly.hummusRecipe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EncryptOptions extends js.Object {
+trait EncryptOptions extends StObject {
+  
   var ownerPassword: js.UndefOr[String] = js.undefined
+  
   var password: js.UndefOr[String] = js.undefined
+  
   var userProtectionFlag: js.UndefOr[Double] = js.undefined
 }
-
 object EncryptOptions {
-  @scala.inline
-  def apply(ownerPassword: String = null, password: String = null, userProtectionFlag: Int | Double = null): EncryptOptions = {
+  
+  inline def apply(): EncryptOptions = {
     val __obj = js.Dynamic.literal()
-    if (ownerPassword != null) __obj.updateDynamic("ownerPassword")(ownerPassword.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (userProtectionFlag != null) __obj.updateDynamic("userProtectionFlag")(userProtectionFlag.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptOptions]
   }
+  
+  extension [Self <: EncryptOptions](x: Self) {
+    
+    inline def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerPasswordUndefined: Self = StObject.set(x, "ownerPassword", js.undefined)
+    
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    
+    inline def setUserProtectionFlag(value: Double): Self = StObject.set(x, "userProtectionFlag", value.asInstanceOf[js.Any])
+    
+    inline def setUserProtectionFlagUndefined: Self = StObject.set(x, "userProtectionFlag", js.undefined)
+  }
 }
-

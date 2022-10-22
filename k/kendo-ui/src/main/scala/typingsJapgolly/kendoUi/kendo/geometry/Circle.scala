@@ -1,25 +1,33 @@
 package typingsJapgolly.kendoUi.kendo.geometry
 
-import typingsJapgolly.kendoUi.kendo.Observable_
+import typingsJapgolly.kendoUi.kendo.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.geometry.Circle")
 @js.native
-class Circle protected () extends Observable_ {
-  def this(center: js.Any, radius: Double) = this()
-  def this(center: Point, radius: Double) = this()
-  var center: Point = js.native
-  var options: CircleOptions = js.native
-  var radius: Double = js.native
+trait Circle
+  extends StObject
+     with Observable {
+  
   def bbox(matrix: Matrix): Rect = js.native
+  
+  var center: Point = js.native
+  
   def equals(other: Circle): Boolean = js.native
+  
   def getCenter(): Point = js.native
+  
   def getRadius(): Double = js.native
+  
+  var options: CircleOptions = js.native
+  
   def pointAt(angle: Double): Point = js.native
-  def setCenter(value: js.Any): Point = js.native
+  
+  var radius: Double = js.native
+  
+  def setCenter(value: Any): Point = js.native
   def setCenter(value: Point): Point = js.native
+  
   def setRadius(value: Double): Circle = js.native
 }
-

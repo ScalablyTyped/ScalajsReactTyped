@@ -1,11 +1,11 @@
 package typingsJapgolly.highcharts.mod
 
-import typingsJapgolly.highcharts.highchartsBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait XAxisLabelsOptions extends js.Object {
+trait XAxisLabelsOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) What part of the string the
     * given position is anchored to. If `left`, the left side of the string is
@@ -14,15 +14,24 @@ trait XAxisLabelsOptions extends js.Object {
     * axis is on and the rotation of the label.
     */
   var align: js.UndefOr[AlignValue] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Whether to allow the axis labels
+    * to overlap. When false, overlapping labels are hidden.
+    */
+  var allowOverlap: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) For horizontal axes, the allowed degrees
     * of label rotation to prevent overlapping labels. If there is enough
     * space, labels are not rotated. As the chart gets narrower, it will start
     * rotating the labels -45 degrees, then remove every second label and try
-    * again with rotations 0 and -45 etc. Set it to `false` to disable
-    * rotation, which will cause the labels to word-wrap if possible.
+    * again with rotations 0 and -45 etc. Set it to `undefined` to disable
+    * rotation, which will cause the labels to word-wrap if possible. Defaults
+    * to `[-45]`` on bottom and top axes, `undefined` on left and right axes.
     */
-  var autoRotation: js.UndefOr[`false` | js.Array[Double]] = js.undefined
+  var autoRotation: js.UndefOr[js.Array[Double]] = js.undefined
+  
   /**
     * (Highcharts, Gantt) When each category width is more than this many
     * pixels, we don't apply auto rotation. Instead, we lay out the axis label
@@ -31,38 +40,53 @@ trait XAxisLabelsOptions extends js.Object {
     * each label.
     */
   var autoRotationLimit: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Gantt) Polar charts only. The label's pixel distance from
     * the perimeter of the plot area.
     */
   var distance: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the axis
     * labels.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A format string for the axis
-    * label.
+    * label. The context is available as format string variables. For example,
+    * you can use `{text}` to insert the default formatted text. The
+    * recommended way of adding units for the label is using `text`, for
+    * example `{text} km`.
+    *
+    * To add custom numeric or datetime formatting, use `{value}` with
+    * formatting, for example `{value:.1f}` or `{value:%Y-%m-%d}`.
+    *
+    * See format string for more examples of formatting.
+    *
+    * The default value is not specified due to the dynamic nature of the
+    * default implementation.
     */
   var format: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback JavaScript function to
     * format the label. The value is given by `this.value`. Additional
-    * properties for `this` are `axis`, `chart`, `isFirst` and `isLast`. The
-    * value of the default label formatter can be retrieved by calling
-    * `this.axis.defaultLabelFormatter.call(this)` within the function.
+    * properties for `this` are `axis`, `chart`, `isFirst`, `isLast` and `text`
+    * which holds the value of the default formatter.
     *
-    * Defaults to:
-    *
-    *  (see online documentation for example)
+    * Defaults to a built in function returning a formatted string depending on
+    * whether the axis is `category`, `datetime`, `numeric` or other.
     */
-  var formatter: js.UndefOr[FormatterCallbackFunction[AxisLabelsFormatterContextObject]] = js.undefined
+  var formatter: js.UndefOr[AxisLabelsFormatterCallbackFunction] = js.undefined
+  
   /**
     * (Gantt) The number of pixels to indent the labels per level in a treegrid
     * axis.
     */
   var indentation: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) How to handle overflowing labels
     * on horizontal axis. If set to `"allow"`, it will not be aligned at all.
@@ -70,11 +94,13 @@ trait XAxisLabelsOptions extends js.Object {
     * to move it, it will be aligned to the edge, else it will be removed.
     */
   var overflow: js.UndefOr[OptionsOverflowValue] = js.undefined
+  
   /**
     * (Highcharts, Gantt) The pixel padding for axis labels, to ensure white
     * space between them.
     */
   var padding: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Defines how the labels are be repositioned according to the
     * 3D chart orientation.
@@ -95,6 +121,7 @@ trait XAxisLabelsOptions extends js.Object {
     * skewing the labels (X and Y scaling are still present).
     */
   var position3d: js.UndefOr[OptionsPosition3dValue] = js.undefined
+  
   /**
     * (Highcharts, Gantt) Whether to reserve space for the labels. By default,
     * space is reserved for the labels in these cases:
@@ -110,11 +137,13 @@ trait XAxisLabelsOptions extends js.Object {
     * the plot area instead of outside.
     */
   var reserveSpace: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Rotation of the labels in
-    * degrees.
+    * degrees. When `undefined`, the `autoRotation` option takes precedence.
     */
   var rotation: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) If enabled, the axis labels will skewed to follow the
     * perspective.
@@ -125,23 +154,28 @@ trait XAxisLabelsOptions extends js.Object {
     * The final appearance depends heavily on `labels.position3d`.
     */
   var skew3d: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Horizontal axes only. The number
-    * of lines to spread the labels over to make room or tighter labels.
+    * of lines to spread the labels over to make room or tighter labels. 0
+    * disables staggering.
     */
   var staggerLines: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) To show only every _n_'th label
     * on the axis, set the step to _n_. Setting the step to 2 shows every other
     * label.
     *
-    * By default, the step is calculated automatically to avoid overlap. To
-    * prevent this, set it to 1\. This usually only happens on a category axis,
-    * and is often a sign that you have chosen the wrong axis type.
+    * By default, when 0, the step is calculated automatically to avoid
+    * overlap. To prevent this, set it to 1\. This usually only happens on a
+    * category axis, and is often a sign that you have chosen the wrong axis
+    * type.
     *
     * Read more at Axis docs => What axis should I use?
     */
   var step: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the label. Use
     * `whiteSpace: 'nowrap'` to prevent wrapping of category labels. Use
@@ -151,76 +185,128 @@ trait XAxisLabelsOptions extends js.Object {
     * class.
     */
   var style: js.UndefOr[CSSObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to use HTML to render
     * the labels.
     */
   var useHTML: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The x position offset of the
-    * label relative to the tick position on the axis.
+    * (Highcharts, Highstock, Highmaps, Gantt) The x position offset of all
+    * labels relative to the tick positions on the axis.
     */
   var x: js.UndefOr[Double] = js.undefined
+  
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The y position offset of the
-    * label relative to the tick position on the axis. The default makes it
-    * adapt to the font size on bottom axis.
+    * (Highcharts, Highstock, Highmaps, Gantt) The y position offset of all
+    * labels relative to the tick positions on the axis. The default makes it
+    * adapt to the font size of the bottom axis.
     */
   var y: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The Z index for the axis labels.
     */
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object XAxisLabelsOptions {
-  @scala.inline
-  def apply(
-    align: AlignValue = null,
-    autoRotation: `false` | js.Array[Double] = null,
-    autoRotationLimit: Int | Double = null,
-    distance: Int | Double = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
-    formatter: FormatterCallbackFunction[AxisLabelsFormatterContextObject] = null,
-    indentation: Int | Double = null,
-    overflow: OptionsOverflowValue = null,
-    padding: Int | Double = null,
-    position3d: OptionsPosition3dValue = null,
-    reserveSpace: js.UndefOr[Boolean] = js.undefined,
-    rotation: Int | Double = null,
-    skew3d: js.UndefOr[Boolean] = js.undefined,
-    staggerLines: Int | Double = null,
-    step: Int | Double = null,
-    style: CSSObject = null,
-    useHTML: js.UndefOr[Boolean] = js.undefined,
-    x: Int | Double = null,
-    y: Int | Double = null,
-    zIndex: Int | Double = null
-  ): XAxisLabelsOptions = {
+  
+  inline def apply(): XAxisLabelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (autoRotation != null) __obj.updateDynamic("autoRotation")(autoRotation.asInstanceOf[js.Any])
-    if (autoRotationLimit != null) __obj.updateDynamic("autoRotationLimit")(autoRotationLimit.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (indentation != null) __obj.updateDynamic("indentation")(indentation.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (position3d != null) __obj.updateDynamic("position3d")(position3d.asInstanceOf[js.Any])
-    if (!js.isUndefined(reserveSpace)) __obj.updateDynamic("reserveSpace")(reserveSpace.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(skew3d)) __obj.updateDynamic("skew3d")(skew3d.asInstanceOf[js.Any])
-    if (staggerLines != null) __obj.updateDynamic("staggerLines")(staggerLines.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[XAxisLabelsOptions]
   }
+  
+  extension [Self <: XAxisLabelsOptions](x: Self) {
+    
+    inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
+    
+    inline def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
+    
+    inline def setAutoRotation(value: js.Array[Double]): Self = StObject.set(x, "autoRotation", value.asInstanceOf[js.Any])
+    
+    inline def setAutoRotationLimit(value: Double): Self = StObject.set(x, "autoRotationLimit", value.asInstanceOf[js.Any])
+    
+    inline def setAutoRotationLimitUndefined: Self = StObject.set(x, "autoRotationLimit", js.undefined)
+    
+    inline def setAutoRotationUndefined: Self = StObject.set(x, "autoRotation", js.undefined)
+    
+    inline def setAutoRotationVarargs(value: Double*): Self = StObject.set(x, "autoRotation", js.Array(value*))
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setFormatter(value: AxisLabelsFormatterCallbackFunction): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    
+    inline def setIndentation(value: Double): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
+    
+    inline def setIndentationUndefined: Self = StObject.set(x, "indentation", js.undefined)
+    
+    inline def setOverflow(value: OptionsOverflowValue): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setPosition3d(value: OptionsPosition3dValue): Self = StObject.set(x, "position3d", value.asInstanceOf[js.Any])
+    
+    inline def setPosition3dUndefined: Self = StObject.set(x, "position3d", js.undefined)
+    
+    inline def setReserveSpace(value: Boolean): Self = StObject.set(x, "reserveSpace", value.asInstanceOf[js.Any])
+    
+    inline def setReserveSpaceUndefined: Self = StObject.set(x, "reserveSpace", js.undefined)
+    
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    
+    inline def setSkew3d(value: Boolean): Self = StObject.set(x, "skew3d", value.asInstanceOf[js.Any])
+    
+    inline def setSkew3dUndefined: Self = StObject.set(x, "skew3d", js.undefined)
+    
+    inline def setStaggerLines(value: Double): Self = StObject.set(x, "staggerLines", value.asInstanceOf[js.Any])
+    
+    inline def setStaggerLinesUndefined: Self = StObject.set(x, "staggerLines", js.undefined)
+    
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
+    
+    inline def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

@@ -1,10 +1,10 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapCheckBoxList")
 @js.native
-class BootstrapCheckBoxList () extends BootstrapListBox
-
+trait BootstrapCheckBoxList
+  extends StObject
+     with BootstrapListBox

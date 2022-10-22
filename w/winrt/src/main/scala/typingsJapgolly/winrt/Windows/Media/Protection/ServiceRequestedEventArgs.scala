@@ -1,15 +1,16 @@
 package typingsJapgolly.winrt.Windows.Media.Protection
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Protection.ServiceRequestedEventArgs")
-@js.native
-class ServiceRequestedEventArgs () extends IServiceRequestedEventArgs {
-  /* CompleteClass */
-  override var completion: MediaProtectionServiceCompletion = js.native
-  /* CompleteClass */
-  override var request: IMediaProtectionServiceRequest = js.native
+trait ServiceRequestedEventArgs
+  extends StObject
+     with IServiceRequestedEventArgs
+object ServiceRequestedEventArgs {
+  
+  inline def apply(completion: MediaProtectionServiceCompletion, request: IMediaProtectionServiceRequest): ServiceRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(completion = completion.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServiceRequestedEventArgs]
+  }
 }
-

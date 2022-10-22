@@ -1,8 +1,10 @@
 package typingsJapgolly.lokijs
 
+import typingsJapgolly.lokijs.anon.PartialGetDataOptions
+import typingsJapgolly.lokijs.anon.PartialSimplesortOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resultset class allowing chainable queries.  Intended to be instanced internally.
@@ -14,35 +16,31 @@ import scala.scalajs.js.annotation._
   *      .where(function(obj) { return obj.name === 'Toyota' })
   *      .data();
   */
-@JSGlobal("Resultset")
 @js.native
-class Resultset[E /* <: js.Object */] protected () extends js.Object {
-  /**
-    * @param collection - The collection which this Resultset will query against.
-    * @param options
-    */
-  def this(collection: Collection[E]) = this()
-  def this(collection: Collection[E], options: js.Any) = this()
+trait Resultset[E /* <: js.Object */] extends StObject {
+  
+  @JSName("$and")
+  def $and(expressionArray: js.Array[LokiQuery[E]]): this.type = js.native
   @JSName("$and")
   var $and_Original: js.Function1[/* expressionArray */ js.Array[LokiQuery[E]], this.type] = js.native
+  
+  @JSName("$or")
+  def $or(expressionArray: js.Array[LokiQuery[E]]): this.type = js.native
   @JSName("$or")
   var $or_Original: js.Function1[/* expressionArray */ js.Array[LokiQuery[E]], this.type] = js.native
+  
+  /**
+    * Alias of copy()
+    */
+  def branch(): Resultset[E] = js.native
   /**
     * Alias of copy()
     */
   @JSName("branch")
   var branch_Original: js.Function0[Resultset[E]] = js.native
+  
   var collection: Collection[E] = js.native
-  var filterInitialized: Boolean = js.native
-  var filteredrows: js.Array[Double] = js.native
-  @JSName("$and")
-  def $and(expressionArray: js.Array[LokiQuery[E]]): this.type = js.native
-  @JSName("$or")
-  def $or(expressionArray: js.Array[LokiQuery[E]]): this.type = js.native
-  /**
-    * Alias of copy()
-    */
-  def branch(): Resultset[E] = js.native
+  
   /**
     * Allows sorting a resultset based on multiple columns.
     * @example
@@ -54,19 +52,22 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     * @param properties - array of property names or subarray of [propertyname, isdesc] used evaluate sort order
     * @returns Reference to this resultset, sorted, for future chain operations.
     */
-  def compoundsort(properties: js.Array[js.Tuple2[String, Boolean]]): this.type = js.native
+  def compoundsort(properties: js.Array[js.Tuple2[/* keyof E */ String, Boolean]]): this.type = js.native
+  
   /**
     * copy() - To support reuse of resultset in branched query situations.
     *
     * @returns Returns a copy of the resultset (set) but the underlying document references will be the same.
     */
   def copy(): Resultset[E] = js.native
+  
   /**
     * count() - returns the number of documents in the resultset.
     *
     * @returns The number of documents in the resultset.
     */
   def count(): Double = js.native
+  
   /**
     * Terminates the chain and returns array of filtered documents
     *
@@ -79,68 +80,97 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     *
     * @returns Array of documents in the resultset
     */
-  def data(): js.Array[E with LokiObj] = js.native
-  def data(options: PartialGetDataOptions): js.Array[E with LokiObj] = js.native
-  def eqJoin(joinData: js.Array[_], leftJoinKey: String, rightJoinKey: String): Resultset[_] = js.native
+  def data(): js.Array[E & LokiObj] = js.native
+  def data(options: PartialGetDataOptions): js.Array[E & LokiObj] = js.native
+  
+  def eqJoin(joinData: js.Array[Any], leftJoinKey: String, rightJoinKey: String): Resultset[Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any]
+  ): Resultset[Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any],
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: js.Array[_], leftJoinKey: String, rightJoinKey: js.Function1[/* obj */ js.Any, String]): Resultset[_] = js.native
+  ): Resultset[Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[Any],
     leftJoinKey: String,
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    rightJoinKey: String,
+    mapFun: Unit,
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(joinData: js.Array[Any], leftJoinKey: String, rightJoinKey: js.Function1[/* obj */ Any, String]): Resultset[Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[Any],
     leftJoinKey: String,
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: js.Array[_], leftJoinKey: js.Function1[/* obj */ js.Any, String], rightJoinKey: String): Resultset[_] = js.native
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any]
+  ): Resultset[Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
+    joinData: js.Array[Any],
+    leftJoinKey: String,
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: js.Array[Any],
+    leftJoinKey: String,
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: Unit,
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(joinData: js.Array[Any], leftJoinKey: js.Function1[/* obj */ Any, String], rightJoinKey: String): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: js.Array[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any]
+  ): Resultset[Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
+    joinData: js.Array[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any],
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+  ): Resultset[Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
-    rightJoinKey: js.Function1[/* obj */ js.Any, String]
-  ): Resultset[_] = js.native
-  def eqJoin(
-    joinData: js.Array[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
-  def eqJoin(
-    joinData: js.Array[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    joinData: js.Array[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: String,
+    mapFun: Unit,
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: js.Array[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: js.Function1[/* obj */ Any, String]
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: js.Array[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any]
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: js.Array[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: js.Array[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: Unit,
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
   /**
     * eqJoin() - Left joining two sets of data. Join keys can be defined or calculated properties
     * eqJoin expects the right join key values to be unique.  Otherwise left data will be joined on the last joinData object with that key
@@ -154,126 +184,187 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     * @param [dataOptions.forceCloneMethod] - Allows overriding the default or collection specified cloning method.
     * @returns A resultset with data in the format [{left: leftObj, right: rightObj}]
     */
-  def eqJoin(joinData: Collection[_], leftJoinKey: String, rightJoinKey: String): Resultset[_] = js.native
+  def eqJoin(joinData: Collection[Any], leftJoinKey: String, rightJoinKey: String): Resultset[Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any]
+  ): Resultset[Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any],
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: Collection[_], leftJoinKey: String, rightJoinKey: js.Function1[/* obj */ js.Any, String]): Resultset[_] = js.native
+  ): Resultset[Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
-    leftJoinKey: String,
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
-  def eqJoin(
-    joinData: Collection[_],
-    leftJoinKey: String,
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: Collection[_], leftJoinKey: js.Function1[/* obj */ js.Any, String], rightJoinKey: String): Resultset[_] = js.native
-  def eqJoin(
-    joinData: Collection[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
-    rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
-  def eqJoin(
-    joinData: Collection[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
-    rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(
-    joinData: Collection[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
-    rightJoinKey: js.Function1[/* obj */ js.Any, String]
-  ): Resultset[_] = js.native
-  def eqJoin(
-    joinData: Collection[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
-  def eqJoin(
-    joinData: Collection[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: Resultset[_], leftJoinKey: String, rightJoinKey: String): Resultset[_] = js.native
-  def eqJoin(
-    joinData: Resultset[_],
+    joinData: Collection[Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: Unit,
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(joinData: Collection[Any], leftJoinKey: String, rightJoinKey: js.Function1[/* obj */ Any, String]): Resultset[Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Collection[Any],
+    leftJoinKey: String,
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any]
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Collection[Any],
+    leftJoinKey: String,
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Collection[Any],
+    leftJoinKey: String,
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: Unit,
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(joinData: Collection[Any], leftJoinKey: js.Function1[/* obj */ Any, String], rightJoinKey: String): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Collection[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: String,
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any]
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Collection[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: String,
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Collection[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: String,
+    mapFun: Unit,
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Collection[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: js.Function1[/* obj */ Any, String]
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Collection[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any]
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Collection[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Collection[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: Unit,
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(joinData: Resultset[Any], leftJoinKey: String, rightJoinKey: String): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Resultset[Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: Resultset[_], leftJoinKey: String, rightJoinKey: js.Function1[/* obj */ js.Any, String]): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any]
+  ): Resultset[Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[Any],
     leftJoinKey: String,
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    rightJoinKey: String,
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[Any],
     leftJoinKey: String,
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: Resultset[_], leftJoinKey: js.Function1[/* obj */ js.Any, String], rightJoinKey: String): Resultset[_] = js.native
-  def eqJoin(
-    joinData: Resultset[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: Unit,
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(joinData: Resultset[Any], leftJoinKey: String, rightJoinKey: js.Function1[/* obj */ Any, String]): Resultset[Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
+    joinData: Resultset[Any],
+    leftJoinKey: String,
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any]
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Resultset[Any],
+    leftJoinKey: String,
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Resultset[Any],
+    leftJoinKey: String,
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: Unit,
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(joinData: Resultset[Any], leftJoinKey: js.Function1[/* obj */ Any, String], rightJoinKey: String): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Resultset[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any]
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Resultset[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: String,
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any],
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+  ): Resultset[Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
-    rightJoinKey: js.Function1[/* obj */ js.Any, String]
-  ): Resultset[_] = js.native
-  def eqJoin(
-    joinData: Resultset[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
-  def eqJoin(
-    joinData: Resultset[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    joinData: Resultset[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: String,
+    mapFun: Unit,
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Resultset[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: js.Function1[/* obj */ Any, String]
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Resultset[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any]
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Resultset[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: js.Function2[/* left */ Any, /* right */ Any, Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  def eqJoin(
+    joinData: Resultset[Any],
+    leftJoinKey: js.Function1[/* obj */ Any, String],
+    rightJoinKey: js.Function1[/* obj */ Any, String],
+    mapFun: Unit,
+    dataOptions: PartialGetDataOptions
+  ): Resultset[Any] = js.native
+  
+  var filterInitialized: Boolean = js.native
+  
+  var filteredrows: js.Array[Double] = js.native
+  
   /**
     * Used for querying via a mongo-style query object.
     *
@@ -282,8 +373,10 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     * @returns this resultset for further chain ops.
     */
   def find(): this.type = js.native
+  def find(query: Unit, firstOnly: Boolean): this.type = js.native
   def find(query: LokiQuery[E]): this.type = js.native
   def find(query: LokiQuery[E], firstOnly: Boolean): this.type = js.native
+  
   /**
     * findAnd() - oversee the operation of AND'ed query expressions.
     *    AND'ed expression evaluation runs each expression progressively against the full collection,
@@ -294,6 +387,7 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     * @returns this resultset for further chain ops.
     */
   def findAnd(expressionArray: js.Array[LokiQuery[E]]): this.type = js.native
+  
   /**
     * findOr() - oversee the operation of OR'ed query expressions.
     *    OR'ed expression evaluation runs each expression individually against the full collection,
@@ -304,6 +398,7 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     * @returns this resultset for further chain ops.
     */
   def findOr(expressionArray: js.Array[LokiQuery[E]]): this.type = js.native
+  
   /**
     * Allows you to limit the number of documents passed to next chain operation.
     *    A resultset copy() is made to avoid altering original resultset.
@@ -312,6 +407,7 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     * @returns Returns a copy of the resultset, limited by qty, for subsequent chain ops.
     */
   def limit(qty: Double): Resultset[E] = js.native
+  
   /**
     * Applies a map function into a new collection for further chaining.
     * @param mapFun - javascript map function
@@ -325,6 +421,7 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     mapFun: js.Function3[/* value */ E, /* index */ Double, /* array */ js.Array[E], U],
     dataOptions: PartialGetDataOptions
   ): Resultset[U] = js.native
+  
   /**
     * data transformation via user supplied functions
     *
@@ -336,6 +433,7 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     mapFunction: js.Function3[/* value */ E, /* index */ Double, /* array */ js.Array[E], U],
     reduceFunction: js.Function1[/* ary */ js.Array[U], R]
   ): R = js.native
+  
   /**
     * Used for skipping 'pos' number of documents in the resultset.
     *
@@ -343,18 +441,21 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     * @returns Returns a copy of the resultset, containing docs starting at 'pos' for subsequent chain ops.
     */
   def offset(pos: Double): Resultset[E] = js.native
+  
   /**
     * Removes all document objects which are currently in resultset from collection (as well as resultset)
     *
     * @returns this (empty) resultset for further chain ops.
     */
   def remove(): this.type = js.native
+  
   /**
     * reset() - Reset the resultset to its initial state.
     *
     * @returns Reference to this resultset, for future chain operations.
     */
   def reset(): this.type = js.native
+  
   /**
     * Simpler, loose evaluation for user to sort based on a property name. (chainable).
     *    Sorting based on the same lt/gt helper functions used for binary indices.
@@ -367,9 +468,10 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     * @param [options.useJavascriptSorting] - whether results are sorted via basic javascript sort.
     * @returns Reference to this resultset, sorted, for future chain operations.
     */
-  def simplesort(propname: String): this.type = js.native
-  def simplesort(propname: String, options: Boolean): this.type = js.native
-  def simplesort(propname: String, options: PartialSimplesortOptions): this.type = js.native
+  def simplesort(propname: /* keyof E */ String): this.type = js.native
+  def simplesort(propname: /* keyof E */ String, options: Boolean): this.type = js.native
+  def simplesort(propname: /* keyof E */ String, options: PartialSimplesortOptions): this.type = js.native
+  
   /**
     * User supplied compare function is provided two documents to compare. (chainable)
     * @example
@@ -382,11 +484,13 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     * @param comparefun - A javascript compare function used for sorting.
     * @returns Reference to this resultset, sorted, for future chain operations.
     */
-  def sort(comparefun: js.Function2[/* a */ E with LokiObj, /* b */ E with LokiObj, Double]): this.type = js.native
+  def sort(comparefun: js.Function2[/* a */ E & LokiObj, /* b */ E & LokiObj, Double]): this.type = js.native
+  
   /**
     * toJSON() - Override of toJSON to avoid circular references
     */
   def toJSON(): Resultset[E] = js.native
+  
   /**
     * transform() - executes a named collection transform or raw array of transform steps against the resultset.
     *
@@ -394,10 +498,11 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     * @param parameters - (Optional) object property hash of parameters, if the transform requires them.
     * @returns either (this) resultset or a clone of of this resultset (depending on steps)
     */
-  def transform(transform: String): Resultset[_] = js.native
-  def transform(transform: String, parameters: js.Object): Resultset[_] = js.native
-  def transform(transform: js.Array[String | Transform]): Resultset[_] = js.native
-  def transform(transform: js.Array[String | Transform], parameters: js.Object): Resultset[_] = js.native
+  def transform(transform: String): Resultset[Any] = js.native
+  def transform(transform: String, parameters: js.Object): Resultset[Any] = js.native
+  def transform(transform: js.Array[String | Transform]): Resultset[Any] = js.native
+  def transform(transform: js.Array[String | Transform], parameters: js.Object): Resultset[Any] = js.native
+  
   /**
     * Used to run an update operation on all documents currently in the resultset.
     *
@@ -405,12 +510,12 @@ class Resultset[E /* <: js.Object */] protected () extends js.Object {
     * @returns this resultset for further chain ops.
     */
   def update(updateFunction: js.Function1[/* obj */ E, Unit]): this.type = js.native
+  
   /**
     * where() - Used for filtering via a javascript filter function.
     *
     * @param fun - A javascript function used for filtering current results by.
     * @returns this resultset for further chain ops.
     */
-  def where(fun: js.Function1[/* data */ E with LokiObj, Boolean]): this.type = js.native
+  def where(fun: js.Function1[/* data */ E & LokiObj, Boolean]): this.type = js.native
 }
-

@@ -10,10 +10,10 @@ Feature rich priority job queue backed by redis
 | ------------------ | :-------------: |
 | Full name          | kue |
 | Keywords           | job, queue, worker, redis |
-| # releases         | 1 |
-| # dependents       | 232 |
-| # downloads        | 1536161 |
-| # stars            | 104 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 113418.33333333333 |
+| # stars            | 9363.0 |
 
 ## Links
 - [Homepage](http://automattic.github.io/kue/)

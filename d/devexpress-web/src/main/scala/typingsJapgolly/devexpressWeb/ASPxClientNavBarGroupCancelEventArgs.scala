@@ -1,24 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for cancellable events which concern manipulations on groups.
   */
-@JSGlobal("ASPxClientNavBarGroupCancelEventArgs")
-@js.native
-class ASPxClientNavBarGroupCancelEventArgs protected () extends ASPxClientProcessingModeCancelEventArgs {
-  /**
-    * Initializes a new object of the ASPxClientNavBarGroupCancelEventArgs type with the specified settings.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
-    * @param group An ASPxClientNavBarGroup object that represents a group related to the event.
-    */
-  def this(processOnServer: Boolean, group: ASPxClientNavBarGroup) = this()
+trait ASPxClientNavBarGroupCancelEventArgs
+  extends StObject
+     with ASPxClientProcessingModeCancelEventArgs {
+  
   /**
     * Gets the group object related to the event.
     */
-  var group: ASPxClientNavBarGroup = js.native
+  var group: ASPxClientNavBarGroup
 }
-
+object ASPxClientNavBarGroupCancelEventArgs {
+  
+  inline def apply(cancel: Boolean, group: ASPxClientNavBarGroup, processOnServer: Boolean): ASPxClientNavBarGroupCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientNavBarGroupCancelEventArgs]
+  }
+  
+  extension [Self <: ASPxClientNavBarGroupCancelEventArgs](x: Self) {
+    
+    inline def setGroup(value: ASPxClientNavBarGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+  }
+}

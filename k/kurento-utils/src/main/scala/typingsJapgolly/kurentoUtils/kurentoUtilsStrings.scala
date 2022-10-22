@@ -1,24 +1,20 @@
 package typingsJapgolly.kurentoUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kurentoUtilsStrings {
-  @js.native
-  sealed trait recv extends js.Object
   
   @js.native
-  sealed trait send extends js.Object
+  sealed trait recv extends StObject
+  inline def recv: recv = "recv".asInstanceOf[recv]
   
   @js.native
-  sealed trait sendRecv extends js.Object
+  sealed trait send extends StObject
+  inline def send: send = "send".asInstanceOf[send]
   
-  @scala.inline
-  def recv: recv = "recv".asInstanceOf[recv]
-  @scala.inline
-  def send: send = "send".asInstanceOf[send]
-  @scala.inline
-  def sendRecv: sendRecv = "sendRecv".asInstanceOf[sendRecv]
+  @js.native
+  sealed trait sendRecv extends StObject
+  inline def sendRecv: sendRecv = "sendRecv".asInstanceOf[sendRecv]
 }
-

@@ -1,24 +1,37 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilterMessages extends js.Object {
+trait FilterMessages extends StObject {
+  
   var and: js.UndefOr[String] = js.undefined
+  
   @JSName("apply")
   var apply: js.UndefOr[String] = js.undefined
+  
   var or: js.UndefOr[String] = js.undefined
 }
-
 object FilterMessages {
-  @scala.inline
-  def apply(and: String = null, apply: String = null, or: String = null): FilterMessages = {
+  
+  inline def apply(): FilterMessages = {
     val __obj = js.Dynamic.literal()
-    if (and != null) __obj.updateDynamic("and")(and.asInstanceOf[js.Any])
-    if (apply != null) __obj.updateDynamic("apply")(apply.asInstanceOf[js.Any])
-    if (or != null) __obj.updateDynamic("or")(or.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterMessages]
   }
+  
+  extension [Self <: FilterMessages](x: Self) {
+    
+    inline def setAnd(value: String): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+    
+    inline def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
+    
+    inline def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+    
+    inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
+    
+    inline def setOr(value: String): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
+    
+    inline def setOrUndefined: Self = StObject.set(x, "or", js.undefined)
+  }
 }
-

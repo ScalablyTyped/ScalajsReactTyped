@@ -1,24 +1,20 @@
 package typingsJapgolly.electronNotifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object electronNotificationsStrings {
-  @js.native
-  sealed trait buttonClicked extends js.Object
   
   @js.native
-  sealed trait clicked extends js.Object
+  sealed trait buttonClicked extends StObject
+  inline def buttonClicked: buttonClicked = "buttonClicked".asInstanceOf[buttonClicked]
   
   @js.native
-  sealed trait swipedRight extends js.Object
+  sealed trait clicked extends StObject
+  inline def clicked: clicked = "clicked".asInstanceOf[clicked]
   
-  @scala.inline
-  def buttonClicked: buttonClicked = "buttonClicked".asInstanceOf[buttonClicked]
-  @scala.inline
-  def clicked: clicked = "clicked".asInstanceOf[clicked]
-  @scala.inline
-  def swipedRight: swipedRight = "swipedRight".asInstanceOf[swipedRight]
+  @js.native
+  sealed trait swipedRight extends StObject
+  inline def swipedRight: swipedRight = "swipedRight".asInstanceOf[swipedRight]
 }
-

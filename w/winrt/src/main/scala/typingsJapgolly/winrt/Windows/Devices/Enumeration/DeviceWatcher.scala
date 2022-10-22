@@ -1,27 +1,26 @@
 package typingsJapgolly.winrt.Windows.Devices.Enumeration
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Enumeration.DeviceWatcher")
-@js.native
-class DeviceWatcher () extends IDeviceWatcher {
-  /* CompleteClass */
-  override var onadded: js.Any = js.native
-  /* CompleteClass */
-  override var onenumerationcompleted: js.Any = js.native
-  /* CompleteClass */
-  override var onremoved: js.Any = js.native
-  /* CompleteClass */
-  override var onstopped: js.Any = js.native
-  /* CompleteClass */
-  override var onupdated: js.Any = js.native
-  /* CompleteClass */
-  override var status: DeviceWatcherStatus = js.native
-  /* CompleteClass */
-  override def start(): Unit = js.native
-  /* CompleteClass */
-  override def stop(): Unit = js.native
+trait DeviceWatcher
+  extends StObject
+     with IDeviceWatcher
+object DeviceWatcher {
+  
+  inline def apply(
+    onadded: Any,
+    onenumerationcompleted: Any,
+    onremoved: Any,
+    onstopped: Any,
+    onupdated: Any,
+    start: Callback,
+    status: DeviceWatcherStatus,
+    stop: Callback
+  ): DeviceWatcher = {
+    val __obj = js.Dynamic.literal(onadded = onadded.asInstanceOf[js.Any], onenumerationcompleted = onenumerationcompleted.asInstanceOf[js.Any], onremoved = onremoved.asInstanceOf[js.Any], onstopped = onstopped.asInstanceOf[js.Any], onupdated = onupdated.asInstanceOf[js.Any], start = start.toJsFn, status = status.asInstanceOf[js.Any], stop = stop.toJsFn)
+    __obj.asInstanceOf[DeviceWatcher]
+  }
 }
-

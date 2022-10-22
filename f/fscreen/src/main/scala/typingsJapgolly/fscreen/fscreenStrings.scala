@@ -1,40 +1,45 @@
 package typingsJapgolly.fscreen
 
 import typingsJapgolly.fscreen.mod.EventName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fscreenStrings {
-  @js.native
-  sealed trait exitFullscreen extends EventName
   
   @js.native
-  sealed trait fullscreenElement extends EventName
+  sealed trait exitFullscreen
+    extends StObject
+       with EventName
+  inline def exitFullscreen: exitFullscreen = "exitFullscreen".asInstanceOf[exitFullscreen]
   
   @js.native
-  sealed trait fullscreenEnabled extends EventName
+  sealed trait fullscreenElement
+    extends StObject
+       with EventName
+  inline def fullscreenElement: fullscreenElement = "fullscreenElement".asInstanceOf[fullscreenElement]
   
   @js.native
-  sealed trait fullscreenchange extends EventName
+  sealed trait fullscreenEnabled
+    extends StObject
+       with EventName
+  inline def fullscreenEnabled: fullscreenEnabled = "fullscreenEnabled".asInstanceOf[fullscreenEnabled]
   
   @js.native
-  sealed trait fullscreenerror extends EventName
+  sealed trait fullscreenchange
+    extends StObject
+       with EventName
+  inline def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
   
   @js.native
-  sealed trait requestFullscreen extends EventName
+  sealed trait fullscreenerror
+    extends StObject
+       with EventName
+  inline def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
   
-  @scala.inline
-  def exitFullscreen: exitFullscreen = "exitFullscreen".asInstanceOf[exitFullscreen]
-  @scala.inline
-  def fullscreenElement: fullscreenElement = "fullscreenElement".asInstanceOf[fullscreenElement]
-  @scala.inline
-  def fullscreenEnabled: fullscreenEnabled = "fullscreenEnabled".asInstanceOf[fullscreenEnabled]
-  @scala.inline
-  def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
-  @scala.inline
-  def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
-  @scala.inline
-  def requestFullscreen: requestFullscreen = "requestFullscreen".asInstanceOf[requestFullscreen]
+  @js.native
+  sealed trait requestFullscreen
+    extends StObject
+       with EventName
+  inline def requestFullscreen: requestFullscreen = "requestFullscreen".asInstanceOf[requestFullscreen]
 }
-

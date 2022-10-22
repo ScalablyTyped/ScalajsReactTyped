@@ -1,20 +1,58 @@
 package typingsJapgolly.moment.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("moment", "HTML5_FMT")
-@js.native
-object HTML5_FMT extends js.Object {
-  var DATE: String = js.native
-  var DATETIME_LOCAL: String = js.native
-  var DATETIME_LOCAL_MS: String = js.native
-  var DATETIME_LOCAL_SECONDS: String = js.native
-  var MONTH: String = js.native
-  var TIME: String = js.native
-  var TIME_MS: String = js.native
-  var TIME_SECONDS: String = js.native
-  var WEEK: String = js.native
+object HTML5_FMT {
+  
+  @JSImport("moment", "HTML5_FMT")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("moment", "HTML5_FMT.DATE")
+  @js.native
+  def DATE: String = js.native
+  
+  @JSImport("moment", "HTML5_FMT.DATETIME_LOCAL")
+  @js.native
+  def DATETIME_LOCAL: String = js.native
+  inline def DATETIME_LOCAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATETIME_LOCAL")(x.asInstanceOf[js.Any])
+  
+  @JSImport("moment", "HTML5_FMT.DATETIME_LOCAL_MS")
+  @js.native
+  def DATETIME_LOCAL_MS: String = js.native
+  inline def DATETIME_LOCAL_MS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATETIME_LOCAL_MS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("moment", "HTML5_FMT.DATETIME_LOCAL_SECONDS")
+  @js.native
+  def DATETIME_LOCAL_SECONDS: String = js.native
+  inline def DATETIME_LOCAL_SECONDS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATETIME_LOCAL_SECONDS")(x.asInstanceOf[js.Any])
+  
+  inline def DATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("moment", "HTML5_FMT.MONTH")
+  @js.native
+  def MONTH: String = js.native
+  inline def MONTH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MONTH")(x.asInstanceOf[js.Any])
+  
+  @JSImport("moment", "HTML5_FMT.TIME")
+  @js.native
+  def TIME: String = js.native
+  inline def TIME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIME")(x.asInstanceOf[js.Any])
+  
+  @JSImport("moment", "HTML5_FMT.TIME_MS")
+  @js.native
+  def TIME_MS: String = js.native
+  inline def TIME_MS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIME_MS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("moment", "HTML5_FMT.TIME_SECONDS")
+  @js.native
+  def TIME_SECONDS: String = js.native
+  inline def TIME_SECONDS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIME_SECONDS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("moment", "HTML5_FMT.WEEK")
+  @js.native
+  def WEEK: String = js.native
+  inline def WEEK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEEK")(x.asInstanceOf[js.Any])
 }
-

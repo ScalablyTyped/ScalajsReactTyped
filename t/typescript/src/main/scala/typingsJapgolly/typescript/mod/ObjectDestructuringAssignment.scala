@@ -1,14 +1,15 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectDestructuringAssignment
-  extends AssignmentExpression[EqualsToken]
+  extends StObject
+     with AssignmentExpression[EqualsToken]
      with DestructuringAssignment {
+  
   @JSName("left")
-  var left_ObjectDestructuringAssignment: ObjectLiteralExpression = js.native
+  val left_ObjectDestructuringAssignment: ObjectLiteralExpression = js.native
 }
-

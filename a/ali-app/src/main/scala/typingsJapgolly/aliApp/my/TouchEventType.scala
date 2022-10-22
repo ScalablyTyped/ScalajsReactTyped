@@ -1,8 +1,8 @@
 package typingsJapgolly.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.aliApp.aliAppStrings.tap
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.aliApp.aliAppStrings.touchend
   - typingsJapgolly.aliApp.aliAppStrings.touchforcechange
 */
-trait TouchEventType extends js.Object
-
+trait TouchEventType extends StObject
 object TouchEventType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def tap: typingsJapgolly.aliApp.aliAppStrings.tap = this.cast("tap")
-  @scala.inline
-  def touchcancel: typingsJapgolly.aliApp.aliAppStrings.touchcancel = this.cast("touchcancel")
-  @scala.inline
-  def touchend: typingsJapgolly.aliApp.aliAppStrings.touchend = this.cast("touchend")
-  @scala.inline
-  def touchforcechange: typingsJapgolly.aliApp.aliAppStrings.touchforcechange = this.cast("touchforcechange")
-  @scala.inline
-  def touchmove: typingsJapgolly.aliApp.aliAppStrings.touchmove = this.cast("touchmove")
-  @scala.inline
-  def touchstart: typingsJapgolly.aliApp.aliAppStrings.touchstart = this.cast("touchstart")
+  
+  inline def tap: typingsJapgolly.aliApp.aliAppStrings.tap = "tap".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.tap]
+  
+  inline def touchcancel: typingsJapgolly.aliApp.aliAppStrings.touchcancel = "touchcancel".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.touchcancel]
+  
+  inline def touchend: typingsJapgolly.aliApp.aliAppStrings.touchend = "touchend".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.touchend]
+  
+  inline def touchforcechange: typingsJapgolly.aliApp.aliAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.touchforcechange]
+  
+  inline def touchmove: typingsJapgolly.aliApp.aliAppStrings.touchmove = "touchmove".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.touchmove]
+  
+  inline def touchstart: typingsJapgolly.aliApp.aliAppStrings.touchstart = "touchstart".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.touchstart]
 }
-

@@ -1,33 +1,48 @@
 package typingsJapgolly.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IHingeConstraintOptions extends js.Object {
+trait IHingeConstraintOptions extends StObject {
+  
   var axisA: js.UndefOr[Vec3] = js.undefined
+  
   var axisB: js.UndefOr[Vec3] = js.undefined
+  
   var maxForce: js.UndefOr[Double] = js.undefined
+  
   var pivotA: js.UndefOr[Vec3] = js.undefined
+  
   var pivotB: js.UndefOr[Vec3] = js.undefined
 }
-
 object IHingeConstraintOptions {
-  @scala.inline
-  def apply(
-    axisA: Vec3 = null,
-    axisB: Vec3 = null,
-    maxForce: Int | Double = null,
-    pivotA: Vec3 = null,
-    pivotB: Vec3 = null
-  ): IHingeConstraintOptions = {
+  
+  inline def apply(): IHingeConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (axisA != null) __obj.updateDynamic("axisA")(axisA.asInstanceOf[js.Any])
-    if (axisB != null) __obj.updateDynamic("axisB")(axisB.asInstanceOf[js.Any])
-    if (maxForce != null) __obj.updateDynamic("maxForce")(maxForce.asInstanceOf[js.Any])
-    if (pivotA != null) __obj.updateDynamic("pivotA")(pivotA.asInstanceOf[js.Any])
-    if (pivotB != null) __obj.updateDynamic("pivotB")(pivotB.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHingeConstraintOptions]
   }
+  
+  extension [Self <: IHingeConstraintOptions](x: Self) {
+    
+    inline def setAxisA(value: Vec3): Self = StObject.set(x, "axisA", value.asInstanceOf[js.Any])
+    
+    inline def setAxisAUndefined: Self = StObject.set(x, "axisA", js.undefined)
+    
+    inline def setAxisB(value: Vec3): Self = StObject.set(x, "axisB", value.asInstanceOf[js.Any])
+    
+    inline def setAxisBUndefined: Self = StObject.set(x, "axisB", js.undefined)
+    
+    inline def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
+    
+    inline def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
+    
+    inline def setPivotA(value: Vec3): Self = StObject.set(x, "pivotA", value.asInstanceOf[js.Any])
+    
+    inline def setPivotAUndefined: Self = StObject.set(x, "pivotA", js.undefined)
+    
+    inline def setPivotB(value: Vec3): Self = StObject.set(x, "pivotB", value.asInstanceOf[js.Any])
+    
+    inline def setPivotBUndefined: Self = StObject.set(x, "pivotB", js.undefined)
+  }
 }
-

@@ -1,13 +1,15 @@
 package typingsJapgolly.asn1js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "LocalConstructedValueBlock")
 @js.native
-class LocalConstructedValueBlock () extends LocalValueBlock {
-  var isIndefiniteForm: scala.Boolean = js.native
-  var value: js.Array[LocalValueBlock] = js.native
+trait LocalConstructedValueBlock
+  extends StObject
+     with ValueBlock
+     with ILocalConstructedValueBlock {
+  
+  @JSName("value")
+  var value_LocalConstructedValueBlock: js.Array[BaseBlock[ValueBlock, ValueBlockJson]] = js.native
 }
-

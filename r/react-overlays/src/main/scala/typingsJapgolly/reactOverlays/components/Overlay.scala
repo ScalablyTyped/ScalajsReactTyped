@@ -1,83 +1,93 @@
 package typingsJapgolly.reactOverlays.components
 
+import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.facade.React.RefHandle
+import org.scalajs.dom.Event
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.ComponentType
-import typingsJapgolly.react.mod.ReactInstance
-import typingsJapgolly.reactOverlays.overlayMod.OverlayProps
-import typingsJapgolly.reactOverlays.overlayMod.OverlayRenderProps
-import typingsJapgolly.reactOverlays.overlayMod.Placements
-import typingsJapgolly.reactOverlays.portalMod.PortalProps
-import typingsJapgolly.reactOverlays.reactOverlaysStrings.click
-import typingsJapgolly.reactOverlays.reactOverlaysStrings.mousedown
-import typingsJapgolly.reactTransitionGroup.transitionMod.TransitionProps
+import typingsJapgolly.react.mod.RefAttributes
+import typingsJapgolly.reactOverlays.anon.ArrowProps
+import typingsJapgolly.reactOverlays.anon.Placement
+import typingsJapgolly.reactOverlays.anon.inbooleanundefinedappearb
+import typingsJapgolly.reactOverlays.esmOverlayMod.OverlayProps
+import typingsJapgolly.reactOverlays.esmUsePopperMod.Offset
+import typingsJapgolly.reactOverlays.esmUsePopperMod.OffsetValue
+import typingsJapgolly.reactOverlays.esmUsePopperMod.UsePopperOptions
+import typingsJapgolly.reactOverlays.esmUseRootCloseMod.MouseEvents
+import typingsJapgolly.reactOverlays.esmUseWaitForDOMRefMod.DOMContainer
+import typingsJapgolly.reactOverlays.reactOverlaysStrings.placement
+import typingsJapgolly.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Overlay {
-  def apply(
-    container: Node | js.Function = null,
-    flip: js.UndefOr[Boolean] = js.undefined,
-    onEnter: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onEntered: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onEntering: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExit: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExited: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExiting: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onHide: (/* props */ PortalProps, /* repeated */ js.Any) => CallbackTo[js.Any] = null,
-    onRendered: js.Function = null,
-    placement: Placements = null,
-    popperConfig: js.Object = null,
-    rootClose: js.UndefOr[Boolean] = js.undefined,
-    rootCloseDisabled: js.UndefOr[Boolean] = js.undefined,
-    rootCloseEvent: click | mousedown = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    target: ReactInstance | js.Function0[ReactInstance] = null,
-    transition: ComponentType[TransitionProps] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: OverlayRenderProps => CallbackTo[Element]
-  ): UnmountedWithRoot[OverlayProps, typingsJapgolly.reactOverlays.mod.Overlay, Unit, OverlayProps] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("children")(js.Any.fromFunction1((t0: typingsJapgolly.reactOverlays.overlayMod.OverlayRenderProps) => children(t0).runNow()))
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEnter(t0).runNow()))
-    if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEntered(t0).runNow()))
-    if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEntering(t0).runNow()))
-    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExit(t0).runNow()))
-    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExited(t0).runNow()))
-    if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExiting(t0).runNow()))
-    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction2((t0: /* props */ typingsJapgolly.reactOverlays.portalMod.PortalProps, t1: /* repeated */ js.Any) => onHide(t0, t1).runNow()))
-    if (onRendered != null) __obj.updateDynamic("onRendered")(onRendered.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (popperConfig != null) __obj.updateDynamic("popperConfig")(popperConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(rootClose)) __obj.updateDynamic("rootClose")(rootClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(rootCloseDisabled)) __obj.updateDynamic("rootCloseDisabled")(rootCloseDisabled.asInstanceOf[js.Any])
-    if (rootCloseEvent != null) __obj.updateDynamic("rootCloseEvent")(rootCloseEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactOverlays.overlayMod.OverlayProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactOverlays.mod.Overlay](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactOverlays.overlayMod.OverlayProps])
+  inline def apply(children: ArrowProps => Node): Builder = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+    new Builder(js.Array(this.component, __props.asInstanceOf[OverlayProps & RefAttributes[HTMLElement]]))
   }
-  @JSImport("react-overlays", "Overlay")
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("react-overlays/esm", "Overlay")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[HTMLElement] {
+    
+    inline def container(value: DOMContainer[HTMLElement]): this.type = set("container", value.asInstanceOf[js.Any])
+    
+    inline def containerCallbackTo(value: CallbackTo[HTMLElement | RefHandle[HTMLElement] | Null]): this.type = set("container", value.toJsFn)
+    
+    inline def containerNull: this.type = set("container", null)
+    
+    inline def containerPadding(value: Double): this.type = set("containerPadding", value.asInstanceOf[js.Any])
+    
+    inline def flip(value: Boolean): this.type = set("flip", value.asInstanceOf[js.Any])
+    
+    inline def offset(value: Offset): this.type = set("offset", value.asInstanceOf[js.Any])
+    
+    inline def offsetFunction1(value: /* details */ Placement => OffsetValue): this.type = set("offset", js.Any.fromFunction1(value))
+    
+    inline def onEnter(value: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Any): this.type = set("onEnter", js.Any.fromFunction2(value))
+    
+    inline def onEntered(value: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Any): this.type = set("onEntered", js.Any.fromFunction2(value))
+    
+    inline def onEntering(value: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Any): this.type = set("onEntering", js.Any.fromFunction2(value))
+    
+    inline def onExit(value: /* node */ HTMLElement => Any): this.type = set("onExit", js.Any.fromFunction1(value))
+    
+    inline def onExited(value: /* node */ HTMLElement => Any): this.type = set("onExited", js.Any.fromFunction1(value))
+    
+    inline def onExiting(value: /* node */ HTMLElement => Any): this.type = set("onExiting", js.Any.fromFunction1(value))
+    
+    inline def onHide(value: /* e */ Event => Callback): this.type = set("onHide", js.Any.fromFunction1((t0: /* e */ Event) => value(t0).runNow()))
+    
+    inline def placement(value: typingsJapgolly.reactOverlays.esmUsePopperMod.Placement): this.type = set("placement", value.asInstanceOf[js.Any])
+    
+    inline def popperConfig(value: Omit[UsePopperOptions, placement]): this.type = set("popperConfig", value.asInstanceOf[js.Any])
+    
+    inline def rootClose(value: Boolean): this.type = set("rootClose", value.asInstanceOf[js.Any])
+    
+    inline def rootCloseDisabled(value: Boolean): this.type = set("rootCloseDisabled", value.asInstanceOf[js.Any])
+    
+    inline def rootCloseEvent(value: MouseEvents): this.type = set("rootCloseEvent", value.asInstanceOf[js.Any])
+    
+    inline def show(value: Boolean): this.type = set("show", value.asInstanceOf[js.Any])
+    
+    inline def target(value: DOMContainer[HTMLElement]): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def targetCallbackTo(value: CallbackTo[HTMLElement | RefHandle[HTMLElement] | Null]): this.type = set("target", value.toJsFn)
+    
+    inline def targetNull: this.type = set("target", null)
+    
+    inline def transition(value: ComponentType[inbooleanundefinedappearb]): this.type = set("transition", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: OverlayProps & RefAttributes[HTMLElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,12 +1,11 @@
 package typingsJapgolly.winrt.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Capture.MediaCapture")
 @js.native
-class MediaCapture ()
-  extends IMediaCapture
+trait MediaCapture
+  extends StObject
+     with IMediaCapture
      with IMediaCaptureVideoPreview
-

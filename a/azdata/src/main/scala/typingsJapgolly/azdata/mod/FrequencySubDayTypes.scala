@@ -1,47 +1,45 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FrequencySubDayTypes extends js.Object
-
+sealed trait FrequencySubDayTypes extends StObject
 @JSImport("azdata", "FrequencySubDayTypes")
 @js.native
-object FrequencySubDayTypes extends js.Object {
-  @js.native
-  sealed trait Hour extends FrequencySubDayTypes
-  
-  @js.native
-  sealed trait Minute extends FrequencySubDayTypes
-  
-  @js.native
-  sealed trait Once extends FrequencySubDayTypes
-  
-  @js.native
-  sealed trait Second extends FrequencySubDayTypes
-  
-  @js.native
-  sealed trait Unknown extends FrequencySubDayTypes
+object FrequencySubDayTypes extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FrequencySubDayTypes with Double] = js.native
-  /* 8 */ @js.native
-  object Hour extends TopLevel[Hour with Double]
+  def apply(value: Double): js.UndefOr[FrequencySubDayTypes & Double] = js.native
   
-  /* 4 */ @js.native
-  object Minute extends TopLevel[Minute with Double]
+  @js.native
+  sealed trait Hour
+    extends StObject
+       with FrequencySubDayTypes
+  /* 8 */ val Hour: typingsJapgolly.azdata.mod.FrequencySubDayTypes.Hour & Double = js.native
   
-  /* 1 */ @js.native
-  object Once extends TopLevel[Once with Double]
+  @js.native
+  sealed trait Minute
+    extends StObject
+       with FrequencySubDayTypes
+  /* 4 */ val Minute: typingsJapgolly.azdata.mod.FrequencySubDayTypes.Minute & Double = js.native
   
-  /* 2 */ @js.native
-  object Second extends TopLevel[Second with Double]
+  @js.native
+  sealed trait Once
+    extends StObject
+       with FrequencySubDayTypes
+  /* 1 */ val Once: typingsJapgolly.azdata.mod.FrequencySubDayTypes.Once & Double = js.native
   
-  /* 0 */ @js.native
-  object Unknown extends TopLevel[Unknown with Double]
+  @js.native
+  sealed trait Second
+    extends StObject
+       with FrequencySubDayTypes
+  /* 2 */ val Second: typingsJapgolly.azdata.mod.FrequencySubDayTypes.Second & Double = js.native
   
+  @js.native
+  sealed trait Unknown
+    extends StObject
+       with FrequencySubDayTypes
+  /* 0 */ val Unknown: typingsJapgolly.azdata.mod.FrequencySubDayTypes.Unknown & Double = js.native
 }
-

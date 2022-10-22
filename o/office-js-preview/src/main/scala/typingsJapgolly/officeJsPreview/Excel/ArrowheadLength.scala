@@ -1,38 +1,43 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ArrowheadLength extends js.Object
-
+sealed trait ArrowheadLength extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ArrowheadLength")
 @js.native
-object ArrowheadLength extends js.Object {
+object ArrowheadLength extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait long extends ArrowheadLength
+  sealed trait long
+    extends StObject
+       with ArrowheadLength
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait medium extends ArrowheadLength
+  sealed trait medium
+    extends StObject
+       with ArrowheadLength
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait short extends ArrowheadLength
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ArrowheadLength with String] = js.native
-  /* "Long" */ @js.native
-  object long extends TopLevel[long with String]
-  
-  /* "Medium" */ @js.native
-  object medium extends TopLevel[medium with String]
-  
-  /* "Short" */ @js.native
-  object short extends TopLevel[short with String]
-  
+  sealed trait short
+    extends StObject
+       with ArrowheadLength
 }
-

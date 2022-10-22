@@ -1,7 +1,7 @@
 
 # Scala.js typings for handlebars
 
-Typings are for version 4.7.3
+Typings are for version 4.7.7
 
 ## Library description:
 Handlebars provides the power necessary to let you build semantic templates effectively with no frustration
@@ -10,10 +10,10 @@ Handlebars provides the power necessary to let you build semantic templates effe
 | ------------------ | :-------------: |
 | Full name          | handlebars |
 | Keywords           | handlebars, mustache, template, html |
-| # releases         | 33 |
-| # dependents       | 6426 |
-| # downloads        | 389759809 |
-| # stars            | 177 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4.1813951666666664E7 |
+| # stars            | 16633.0 |
 
 ## Links
 - [Homepage](http://www.handlebarsjs.com/)

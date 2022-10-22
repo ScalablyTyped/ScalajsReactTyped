@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-node
 
-Typings are for version 7.0.1
+Typings are for version 10.9.1
 
 ## Library description:
 TypeScript execution environment and REPL for node.js, with source map support
@@ -10,13 +10,13 @@ TypeScript execution environment and REPL for node.js, with source map support
 | ------------------ | :-------------: |
 | Full name          | ts-node |
 | Keywords           | typescript, node, runtime, environment, ts, compiler |
-| # releases         | 33 |
-| # dependents       | 1584 |
-| # downloads        | 115630488 |
-| # stars            | 50 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 7.138407466666667E7 |
+| # stars            | 10556.0 |
 
 ## Links
-- [Homepage](https://github.com/TypeStrong/ts-node)
+- [Homepage](https://typestrong.org/ts-node)
 - [Bugs](https://github.com/TypeStrong/ts-node/issues)
 - [Repository](https://github.com/TypeStrong/ts-node)
 - [Npm](https://www.npmjs.com/package/ts-node)

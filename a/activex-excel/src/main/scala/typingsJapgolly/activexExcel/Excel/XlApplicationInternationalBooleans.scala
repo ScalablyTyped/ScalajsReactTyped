@@ -1,67 +1,65 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`33`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`34`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`35`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`36`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`37`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`38`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`39`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`40`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`41`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`42`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`43`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`44`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`45`
+import typingsJapgolly.activexExcel.activexExcelInts.`33`
+import typingsJapgolly.activexExcel.activexExcelInts.`34`
+import typingsJapgolly.activexExcel.activexExcelInts.`35`
+import typingsJapgolly.activexExcel.activexExcelInts.`36`
+import typingsJapgolly.activexExcel.activexExcelInts.`37`
+import typingsJapgolly.activexExcel.activexExcelInts.`38`
+import typingsJapgolly.activexExcel.activexExcelInts.`39`
+import typingsJapgolly.activexExcel.activexExcelInts.`40`
+import typingsJapgolly.activexExcel.activexExcelInts.`41`
+import typingsJapgolly.activexExcel.activexExcelInts.`42`
+import typingsJapgolly.activexExcel.activexExcelInts.`43`
+import typingsJapgolly.activexExcel.activexExcelInts.`44`
+import typingsJapgolly.activexExcel.activexExcelInts.`45`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`33`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`43`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`37`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`40`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`38`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`36`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`39`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`42`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`44`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`35`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`41`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`34`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`45`
+  - typingsJapgolly.activexExcel.activexExcelInts.`33`
+  - typingsJapgolly.activexExcel.activexExcelInts.`43`
+  - typingsJapgolly.activexExcel.activexExcelInts.`37`
+  - typingsJapgolly.activexExcel.activexExcelInts.`40`
+  - typingsJapgolly.activexExcel.activexExcelInts.`38`
+  - typingsJapgolly.activexExcel.activexExcelInts.`36`
+  - typingsJapgolly.activexExcel.activexExcelInts.`39`
+  - typingsJapgolly.activexExcel.activexExcelInts.`42`
+  - typingsJapgolly.activexExcel.activexExcelInts.`44`
+  - typingsJapgolly.activexExcel.activexExcelInts.`35`
+  - typingsJapgolly.activexExcel.activexExcelInts.`41`
+  - typingsJapgolly.activexExcel.activexExcelInts.`34`
+  - typingsJapgolly.activexExcel.activexExcelInts.`45`
 */
-trait XlApplicationInternationalBooleans extends XlApplicationInternational
-
+trait XlApplicationInternationalBooleans
+  extends StObject
+     with XlApplicationInternational
 object XlApplicationInternationalBooleans {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xl24HourClock: `33` = this.cast(33)
-  @scala.inline
-  def xl4DigitYears: `43` = this.cast(43)
-  @scala.inline
-  def xlCurrencyBefore: `37` = this.cast(37)
-  @scala.inline
-  def xlCurrencyLeadingZeros: `40` = this.cast(40)
-  @scala.inline
-  def xlCurrencyMinusSign: `38` = this.cast(38)
-  @scala.inline
-  def xlCurrencySpaceBefore: `36` = this.cast(36)
-  @scala.inline
-  def xlCurrencyTrailingZeros: `39` = this.cast(39)
-  @scala.inline
-  def xlDayLeadingZero: `42` = this.cast(42)
-  @scala.inline
-  def xlMDY: `44` = this.cast(44)
-  @scala.inline
-  def xlMetric: `35` = this.cast(35)
-  @scala.inline
-  def xlMonthLeadingZero: `41` = this.cast(41)
-  @scala.inline
-  def xlNonEnglishFunctions: `34` = this.cast(34)
-  @scala.inline
-  def xlTimeLeadingZero: `45` = this.cast(45)
+  
+  inline def xl24HourClock: `33` = 33.asInstanceOf[`33`]
+  
+  inline def xl4DigitYears: `43` = 43.asInstanceOf[`43`]
+  
+  inline def xlCurrencyBefore: `37` = 37.asInstanceOf[`37`]
+  
+  inline def xlCurrencyLeadingZeros: `40` = 40.asInstanceOf[`40`]
+  
+  inline def xlCurrencyMinusSign: `38` = 38.asInstanceOf[`38`]
+  
+  inline def xlCurrencySpaceBefore: `36` = 36.asInstanceOf[`36`]
+  
+  inline def xlCurrencyTrailingZeros: `39` = 39.asInstanceOf[`39`]
+  
+  inline def xlDayLeadingZero: `42` = 42.asInstanceOf[`42`]
+  
+  inline def xlMDY: `44` = 44.asInstanceOf[`44`]
+  
+  inline def xlMetric: `35` = 35.asInstanceOf[`35`]
+  
+  inline def xlMonthLeadingZero: `41` = 41.asInstanceOf[`41`]
+  
+  inline def xlNonEnglishFunctions: `34` = 34.asInstanceOf[`34`]
+  
+  inline def xlTimeLeadingZero: `45` = 45.asInstanceOf[`45`]
 }
-

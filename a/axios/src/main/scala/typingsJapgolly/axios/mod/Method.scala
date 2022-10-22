@@ -7,11 +7,12 @@ import typingsJapgolly.axios.axiosStrings.link_
 import typingsJapgolly.axios.axiosStrings.options_
 import typingsJapgolly.axios.axiosStrings.patch_
 import typingsJapgolly.axios.axiosStrings.post_
+import typingsJapgolly.axios.axiosStrings.purge_
 import typingsJapgolly.axios.axiosStrings.put_
 import typingsJapgolly.axios.axiosStrings.unlink_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.axios.axiosStrings.get_
@@ -28,51 +29,53 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.axios.axiosStrings.PUT
   - typingsJapgolly.axios.axiosStrings.patch_
   - typingsJapgolly.axios.axiosStrings.PATCH
+  - typingsJapgolly.axios.axiosStrings.purge_
+  - typingsJapgolly.axios.axiosStrings.PURGE
   - typingsJapgolly.axios.axiosStrings.link_
   - typingsJapgolly.axios.axiosStrings.LINK
   - typingsJapgolly.axios.axiosStrings.unlink_
   - typingsJapgolly.axios.axiosStrings.UNLINK
 */
-trait Method extends js.Object
-
+trait Method extends StObject
 object Method {
-  @scala.inline
-  def DELETE: typingsJapgolly.axios.axiosStrings.DELETE = this.cast("DELETE")
-  @scala.inline
-  def GET: typingsJapgolly.axios.axiosStrings.GET = this.cast("GET")
-  @scala.inline
-  def HEAD: typingsJapgolly.axios.axiosStrings.HEAD = this.cast("HEAD")
-  @scala.inline
-  def LINK: typingsJapgolly.axios.axiosStrings.LINK = this.cast("LINK")
-  @scala.inline
-  def OPTIONS: typingsJapgolly.axios.axiosStrings.OPTIONS = this.cast("OPTIONS")
-  @scala.inline
-  def PATCH: typingsJapgolly.axios.axiosStrings.PATCH = this.cast("PATCH")
-  @scala.inline
-  def POST: typingsJapgolly.axios.axiosStrings.POST = this.cast("POST")
-  @scala.inline
-  def PUT: typingsJapgolly.axios.axiosStrings.PUT = this.cast("PUT")
-  @scala.inline
-  def UNLINK: typingsJapgolly.axios.axiosStrings.UNLINK = this.cast("UNLINK")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def delete: delete_ = this.cast("delete")
-  @scala.inline
-  def get: get_ = this.cast("get")
-  @scala.inline
-  def head: head_ = this.cast("head")
-  @scala.inline
-  def link: link_ = this.cast("link")
-  @scala.inline
-  def options: options_ = this.cast("options")
-  @scala.inline
-  def patch: patch_ = this.cast("patch")
-  @scala.inline
-  def post: post_ = this.cast("post")
-  @scala.inline
-  def put: put_ = this.cast("put")
-  @scala.inline
-  def unlink: unlink_ = this.cast("unlink")
+  
+  inline def DELETE: typingsJapgolly.axios.axiosStrings.DELETE = "DELETE".asInstanceOf[typingsJapgolly.axios.axiosStrings.DELETE]
+  
+  inline def GET: typingsJapgolly.axios.axiosStrings.GET = "GET".asInstanceOf[typingsJapgolly.axios.axiosStrings.GET]
+  
+  inline def HEAD: typingsJapgolly.axios.axiosStrings.HEAD = "HEAD".asInstanceOf[typingsJapgolly.axios.axiosStrings.HEAD]
+  
+  inline def LINK: typingsJapgolly.axios.axiosStrings.LINK = "LINK".asInstanceOf[typingsJapgolly.axios.axiosStrings.LINK]
+  
+  inline def OPTIONS: typingsJapgolly.axios.axiosStrings.OPTIONS = "OPTIONS".asInstanceOf[typingsJapgolly.axios.axiosStrings.OPTIONS]
+  
+  inline def PATCH: typingsJapgolly.axios.axiosStrings.PATCH = "PATCH".asInstanceOf[typingsJapgolly.axios.axiosStrings.PATCH]
+  
+  inline def POST: typingsJapgolly.axios.axiosStrings.POST = "POST".asInstanceOf[typingsJapgolly.axios.axiosStrings.POST]
+  
+  inline def PURGE: typingsJapgolly.axios.axiosStrings.PURGE = "PURGE".asInstanceOf[typingsJapgolly.axios.axiosStrings.PURGE]
+  
+  inline def PUT: typingsJapgolly.axios.axiosStrings.PUT = "PUT".asInstanceOf[typingsJapgolly.axios.axiosStrings.PUT]
+  
+  inline def UNLINK: typingsJapgolly.axios.axiosStrings.UNLINK = "UNLINK".asInstanceOf[typingsJapgolly.axios.axiosStrings.UNLINK]
+  
+  inline def delete: delete_ = "delete".asInstanceOf[delete_]
+  
+  inline def get: get_ = "get".asInstanceOf[get_]
+  
+  inline def head: head_ = "head".asInstanceOf[head_]
+  
+  inline def link: link_ = "link".asInstanceOf[link_]
+  
+  inline def options: options_ = "options".asInstanceOf[options_]
+  
+  inline def patch: patch_ = "patch".asInstanceOf[patch_]
+  
+  inline def post: post_ = "post".asInstanceOf[post_]
+  
+  inline def purge: purge_ = "purge".asInstanceOf[purge_]
+  
+  inline def put: put_ = "put".asInstanceOf[put_]
+  
+  inline def unlink: unlink_ = "unlink".asInstanceOf[unlink_]
 }
-

@@ -1,52 +1,77 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FillSymbol3DLayerProperties extends Symbol3DLayerProperties {
+trait FillSymbol3DLayerProperties
+  extends StObject
+     with Symbol3DLayerProperties {
+  
   /**
-    * Indicates whether the symbol layer geometry casts shadows in the scene. Setting this property to `false` will disable shadows for the symbol layer even if direct shadows are enabled in [SceneView.environment](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment).  This property applies only to [MeshSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MeshSymbol3D.html) symbols.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#castShadows)
+    * Indicates whether the symbol layer geometry casts shadows in the scene.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#castShadows)
     */
   var castShadows: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Sets the contour edges on 3D Objects. This is only applicable for [MeshSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MeshSymbol3D.html).  ![symbol3D-edges-solid](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbol3d-edges-solid-2.png)
+    * Sets the contour edges on 3D Objects.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#edges)
     */
   var edges: js.UndefOr[Edges3DProperties] = js.undefined
+  
   /**
-    * The material defines the final color of the graphic, by blending the `color` property set in the material with the feature's geometry color/texture information. `colorMixMode` defines how these colors are mixed together.
+    * The material defines the final color of the graphic, by blending the `color` property set in the material with the feature's geometry color/texture information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#material)
     */
   var material: js.UndefOr[FillSymbol3DLayerMaterialProperties] = js.undefined
+  
   /**
-    * The outline used to draw a line around the filled geometry. This property is not supported in [MeshSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MeshSymbol3D.html) symbol layers.
+    * The outline used to draw a line around the filled geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#outline)
     */
   var outline: js.UndefOr[FillSymbol3DLayerOutlineProperties] = js.undefined
+  
+  /**
+    * The pattern used to render the polygon fill.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#pattern)
+    */
+  var pattern: js.UndefOr[StylePattern3DProperties] = js.undefined
 }
-
 object FillSymbol3DLayerProperties {
-  @scala.inline
-  def apply(
-    castShadows: js.UndefOr[Boolean] = js.undefined,
-    edges: Edges3DProperties = null,
-    material: FillSymbol3DLayerMaterialProperties = null,
-    outline: FillSymbol3DLayerOutlineProperties = null
-  ): FillSymbol3DLayerProperties = {
+  
+  inline def apply(): FillSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(castShadows)) __obj.updateDynamic("castShadows")(castShadows.asInstanceOf[js.Any])
-    if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillSymbol3DLayerProperties]
   }
+  
+  extension [Self <: FillSymbol3DLayerProperties](x: Self) {
+    
+    inline def setCastShadows(value: Boolean): Self = StObject.set(x, "castShadows", value.asInstanceOf[js.Any])
+    
+    inline def setCastShadowsUndefined: Self = StObject.set(x, "castShadows", js.undefined)
+    
+    inline def setEdges(value: Edges3DProperties): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    
+    inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+    
+    inline def setMaterial(value: FillSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    
+    inline def setOutline(value: FillSymbol3DLayerOutlineProperties): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    
+    inline def setPattern(value: StylePattern3DProperties): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+  }
 }
-

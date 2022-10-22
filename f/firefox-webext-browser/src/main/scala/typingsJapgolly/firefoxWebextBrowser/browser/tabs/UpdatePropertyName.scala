@@ -1,9 +1,8 @@
 package typingsJapgolly.firefoxWebextBrowser.browser.tabs
 
-import typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.isarticle_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Event names supported in onUpdated. */
 /* Rewritten from type alias, can be one of: 
@@ -12,42 +11,38 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.discarded
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.favIconUrl
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.hidden
-  - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.isarticle_
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.isArticle
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.mutedInfo
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.pinned
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.sharingState
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.status
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.title
+  - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.url
 */
-trait UpdatePropertyName extends js.Object
-
+trait UpdatePropertyName extends StObject
 object UpdatePropertyName {
-  @scala.inline
-  def attention: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.attention = this.cast("attention")
-  @scala.inline
-  def audible: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.audible = this.cast("audible")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def discarded: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.discarded = this.cast("discarded")
-  @scala.inline
-  def favIconUrl: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.favIconUrl = this.cast("favIconUrl")
-  @scala.inline
-  def hidden: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.hidden = this.cast("hidden")
-  @scala.inline
-  def isArticle: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.isArticle = this.cast("isArticle")
-  @scala.inline
-  def isarticle: isarticle_ = this.cast("isarticle")
-  @scala.inline
-  def mutedInfo: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.mutedInfo = this.cast("mutedInfo")
-  @scala.inline
-  def pinned: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.pinned = this.cast("pinned")
-  @scala.inline
-  def sharingState: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.sharingState = this.cast("sharingState")
-  @scala.inline
-  def status: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.status = this.cast("status")
-  @scala.inline
-  def title: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.title = this.cast("title")
+  
+  inline def attention: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.attention = "attention".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.attention]
+  
+  inline def audible: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.audible = "audible".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.audible]
+  
+  inline def discarded: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.discarded = "discarded".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.discarded]
+  
+  inline def favIconUrl: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.favIconUrl = "favIconUrl".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.favIconUrl]
+  
+  inline def hidden: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.hidden = "hidden".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.hidden]
+  
+  inline def isArticle: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.isArticle = "isArticle".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.isArticle]
+  
+  inline def mutedInfo: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.mutedInfo = "mutedInfo".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.mutedInfo]
+  
+  inline def pinned: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.pinned = "pinned".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.pinned]
+  
+  inline def sharingState: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.sharingState = "sharingState".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.sharingState]
+  
+  inline def status: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.status = "status".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.status]
+  
+  inline def title: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.title = "title".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.title]
+  
+  inline def url: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.url = "url".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.url]
 }
-

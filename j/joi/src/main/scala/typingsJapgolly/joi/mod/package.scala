@@ -1,42 +1,34 @@
-package typingsJapgolly.joi
+package typingsJapgolly.joi.mod
 
+import typingsJapgolly.joi.joiBooleans.`false`
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type DefaultsFunction = js.Function1[/* root */ typingsJapgolly.joi.mod.Schema, typingsJapgolly.joi.mod.Schema]
-  type ExtensionBoundSchema = typingsJapgolly.joi.mod.Schema with typingsJapgolly.joi.AnonCreateError
-  type LanguageOptions = java.lang.String | scala.Boolean | scala.Null | (org.scalablytyped.runtime.StringDictionary[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias joi.joi.LanguageOptions */ js.Object
-  ])
-  type LazySchema = typingsJapgolly.joi.mod.AnySchema
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.joi.mod.AnySchema
-    - typingsJapgolly.joi.mod.ArraySchema
-    - typingsJapgolly.joi.mod.AlternativesSchema
-    - typingsJapgolly.joi.mod.BinarySchema
-    - typingsJapgolly.joi.mod.BooleanSchema
-    - typingsJapgolly.joi.mod.DateSchema
-    - typingsJapgolly.joi.mod.FunctionSchema
-    - typingsJapgolly.joi.mod.NumberSchema
-    - typingsJapgolly.joi.mod.ObjectSchema
-    - typingsJapgolly.joi.mod.StringSchema
-    - typingsJapgolly.joi.mod.LazySchema
-  */
-  type Schema = typingsJapgolly.joi.mod._Schema | typingsJapgolly.joi.mod.LazySchema
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - scala.Double
-    - scala.Boolean
-    - js.Object
-    - scala.Null
-    - typingsJapgolly.joi.mod.Schema
-    - typingsJapgolly.joi.mod.SchemaMap
-  */
-  type SchemaLike = typingsJapgolly.joi.mod._SchemaLike | java.lang.String | scala.Double | scala.Boolean | js.Object | scala.Null | typingsJapgolly.joi.mod.LazySchema
-  type ValidationErrorFunction = js.Function1[
-    /* errors */ js.Array[typingsJapgolly.joi.mod.ValidationErrorItem], 
-    java.lang.String | typingsJapgolly.joi.mod.ValidationErrorItem | js.Array[typingsJapgolly.joi.mod.ValidationErrorItem] | js.Error
-  ]
-}
+
+type BasicType = Boolean | Double | String | js.Array[Any] | js.Object | Null
+
+type CoerceFunction = js.Function2[/* value */ Any, /* helpers */ CustomHelpers[Any], CoerceResult]
+
+type ComparatorFunction = js.Function2[/* a */ Any, /* b */ Any, Boolean]
+
+type CustomValidator[V] = js.Function2[/* value */ V, /* helpers */ CustomHelpers[Any], V | ErrorReport]
+
+type ExtensionBoundSchema = Schema[Any] & SchemaInternals
+
+type ExtensionFactory = js.Function1[/* joi */ Root, Extension]
+
+type ExternalValidationFunction[V] = js.Function2[/* value */ V, /* helpers */ ExternalHelpers, js.UndefOr[V]]
+
+type LanguageMessages = Record[String, String]
+
+type NullableType[T] = js.UndefOr[Null | T]
+
+type SchemaFunction = js.Function1[/* schema */ Schema[Any], Schema[Any]]
+
+type SchemaLike = SchemaLikeWithoutArray | js.Object
+
+type SchemaLikeWithoutArray = String | Double | Boolean | Null | Schema[Any] | (SchemaMap[Any, `false`])
+
+type ValidationErrorFunction = js.Function1[/* errors */ js.Array[ErrorReport], String | ValidationErrorItem | js.Error]

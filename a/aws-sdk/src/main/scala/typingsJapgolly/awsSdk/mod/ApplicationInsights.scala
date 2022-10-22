@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.applicationinsightsMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsApplicationinsightsMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "ApplicationInsights")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ApplicationInsights ()
-  extends typingsJapgolly.awsSdk.allMod.ApplicationInsights {
+open class ApplicationInsights ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.ApplicationInsights {
   def this(options: ClientConfiguration) = this()
 }
-

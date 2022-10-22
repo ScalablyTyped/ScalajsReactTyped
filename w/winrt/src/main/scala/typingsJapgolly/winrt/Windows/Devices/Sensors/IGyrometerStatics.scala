@@ -1,20 +1,23 @@
 package typingsJapgolly.winrt.Windows.Devices.Sensors
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IGyrometerStatics extends js.Object {
+trait IGyrometerStatics extends StObject {
+  
   def getDefault(): Gyrometer
 }
-
 object IGyrometerStatics {
-  @scala.inline
-  def apply(getDefault: CallbackTo[Gyrometer]): IGyrometerStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDefault")(getDefault.toJsFn)
+  
+  inline def apply(getDefault: CallbackTo[Gyrometer]): IGyrometerStatics = {
+    val __obj = js.Dynamic.literal(getDefault = getDefault.toJsFn)
     __obj.asInstanceOf[IGyrometerStatics]
   }
+  
+  extension [Self <: IGyrometerStatics](x: Self) {
+    
+    inline def setGetDefault(value: CallbackTo[Gyrometer]): Self = StObject.set(x, "getDefault", value.toJsFn)
+  }
 }
-

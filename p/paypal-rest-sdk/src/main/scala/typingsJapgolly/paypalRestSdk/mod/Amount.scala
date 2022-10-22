@@ -1,22 +1,33 @@
 package typingsJapgolly.paypalRestSdk.mod
 
-import typingsJapgolly.paypalRestSdk.AnonGiftwrap
+import typingsJapgolly.paypalRestSdk.anon.Giftwrap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Amount extends js.Object {
+trait Amount extends StObject {
+  
   var currency: String
-  var details: js.UndefOr[AnonGiftwrap] = js.undefined
+  
+  var details: js.UndefOr[Giftwrap] = js.undefined
+  
   var total: String
 }
-
 object Amount {
-  @scala.inline
-  def apply(currency: String, total: String, details: AnonGiftwrap = null): Amount = {
+  
+  inline def apply(currency: String, total: String): Amount = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     __obj.asInstanceOf[Amount]
   }
+  
+  extension [Self <: Amount](x: Self) {
+    
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    
+    inline def setDetails(value: Giftwrap): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    
+    inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+  }
 }
-

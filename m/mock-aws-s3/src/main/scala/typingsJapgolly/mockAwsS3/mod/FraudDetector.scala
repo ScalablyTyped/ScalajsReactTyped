@@ -1,17 +1,16 @@
 package typingsJapgolly.mockAwsS3.mod
 
-import typingsJapgolly.awsSdk.frauddetectorMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsFrauddetectorMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "FraudDetector")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class FraudDetector ()
+open class FraudDetector ()
   extends typingsJapgolly.awsSdk.mod.FraudDetector {
   def this(options: ClientConfiguration) = this()
 }
-

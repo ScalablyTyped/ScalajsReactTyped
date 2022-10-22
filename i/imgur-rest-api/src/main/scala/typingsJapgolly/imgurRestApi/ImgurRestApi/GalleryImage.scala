@@ -1,27 +1,40 @@
 package typingsJapgolly.imgurRestApi.ImgurRestApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GalleryImage extends GalleryItem {
+trait GalleryImage
+  extends StObject
+     with GalleryItem {
+  
   var animated: Boolean
+  
   var bandwidth: Double
+  
   var deletehash: js.UndefOr[String] = js.undefined
+  
   var gifv: js.UndefOr[String] = js.undefined
+  
   var height: Double
+  
   var looping: js.UndefOr[Boolean] = js.undefined
+  
   var mp4: js.UndefOr[String] = js.undefined
+  
   var section: String
+  
   var size: Double
+  
   var `type`: String
+  
   var webm: js.UndefOr[String] = js.undefined
+  
   var width: Double
 }
-
 object GalleryImage {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     animated: Boolean,
     bandwidth: Double,
     comment_count: Double,
@@ -42,29 +55,47 @@ object GalleryImage {
     `type`: String,
     ups: Double,
     views: Double,
-    width: Double,
-    account_id: Int | Double = null,
-    account_url: String = null,
-    deletehash: String = null,
-    gifv: String = null,
-    looping: js.UndefOr[Boolean] = js.undefined,
-    mp4: String = null,
-    nsfw: js.UndefOr[Boolean] = js.undefined,
-    vote: String = null,
-    webm: String = null
+    width: Double
   ): GalleryImage = {
     val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any], bandwidth = bandwidth.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], downs = downs.asInstanceOf[js.Any], favorite = favorite.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_album = is_album.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], topic_id = topic_id.asInstanceOf[js.Any], ups = ups.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (account_id != null) __obj.updateDynamic("account_id")(account_id.asInstanceOf[js.Any])
-    if (account_url != null) __obj.updateDynamic("account_url")(account_url.asInstanceOf[js.Any])
-    if (deletehash != null) __obj.updateDynamic("deletehash")(deletehash.asInstanceOf[js.Any])
-    if (gifv != null) __obj.updateDynamic("gifv")(gifv.asInstanceOf[js.Any])
-    if (!js.isUndefined(looping)) __obj.updateDynamic("looping")(looping.asInstanceOf[js.Any])
-    if (mp4 != null) __obj.updateDynamic("mp4")(mp4.asInstanceOf[js.Any])
-    if (!js.isUndefined(nsfw)) __obj.updateDynamic("nsfw")(nsfw.asInstanceOf[js.Any])
-    if (vote != null) __obj.updateDynamic("vote")(vote.asInstanceOf[js.Any])
-    if (webm != null) __obj.updateDynamic("webm")(webm.asInstanceOf[js.Any])
     __obj.asInstanceOf[GalleryImage]
   }
+  
+  extension [Self <: GalleryImage](x: Self) {
+    
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    
+    inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+    
+    inline def setDeletehash(value: String): Self = StObject.set(x, "deletehash", value.asInstanceOf[js.Any])
+    
+    inline def setDeletehashUndefined: Self = StObject.set(x, "deletehash", js.undefined)
+    
+    inline def setGifv(value: String): Self = StObject.set(x, "gifv", value.asInstanceOf[js.Any])
+    
+    inline def setGifvUndefined: Self = StObject.set(x, "gifv", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setLooping(value: Boolean): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
+    
+    inline def setLoopingUndefined: Self = StObject.set(x, "looping", js.undefined)
+    
+    inline def setMp4(value: String): Self = StObject.set(x, "mp4", value.asInstanceOf[js.Any])
+    
+    inline def setMp4Undefined: Self = StObject.set(x, "mp4", js.undefined)
+    
+    inline def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setWebm(value: String): Self = StObject.set(x, "webm", value.asInstanceOf[js.Any])
+    
+    inline def setWebmUndefined: Self = StObject.set(x, "webm", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,20 +1,22 @@
 package typingsJapgolly.coreJs
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RegExpConstructor extends js.Object {
+trait RegExpConstructor extends StObject {
+  
   def escape(str: java.lang.String): java.lang.String
 }
-
 object RegExpConstructor {
-  @scala.inline
-  def apply(escape: java.lang.String => CallbackTo[java.lang.String]): RegExpConstructor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("escape")(js.Any.fromFunction1((t0: java.lang.String) => escape(t0).runNow()))
+  
+  inline def apply(escape: java.lang.String => java.lang.String): RegExpConstructor = {
+    val __obj = js.Dynamic.literal(escape = js.Any.fromFunction1(escape))
     __obj.asInstanceOf[RegExpConstructor]
   }
+  
+  extension [Self <: RegExpConstructor](x: Self) {
+    
+    inline def setEscape(value: java.lang.String => java.lang.String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,117 +1,102 @@
 package typingsJapgolly.forkTsCheckerWebpackPlugin
 
-import typingsJapgolly.forkTsCheckerWebpackPlugin.hooksMod.ForkTsCheckerHooks
-import typingsJapgolly.forkTsCheckerWebpackPlugin.normalizedMessageMod.ErrorType
-import typingsJapgolly.forkTsCheckerWebpackPlugin.normalizedMessageMod.Severity
+import typingsJapgolly.forkTsCheckerWebpackPlugin.libFormatterFormatterOptionsMod.FormatterType
+import typingsJapgolly.forkTsCheckerWebpackPlugin.libIssueIssueSeverityMod.IssueSeverity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object forkTsCheckerWebpackPluginStrings {
-  @js.native
-  sealed trait `0Dot8` extends js.Object
   
   @js.native
-  sealed trait `3Dot8` extends js.Object
+  sealed trait Dotjs extends StObject
+  inline def Dotjs: Dotjs = ".js".asInstanceOf[Dotjs]
   
   @js.native
-  sealed trait INTERNAL_ERROR extends js.Object
+  sealed trait Dotts extends StObject
+  inline def Dotts: Dotts = ".ts".asInstanceOf[Dotts]
   
   @js.native
-  sealed trait cancel extends ForkTsCheckerHooks
+  sealed trait Dottsx extends StObject
+  inline def Dottsx: Dottsx = ".tsx".asInstanceOf[Dottsx]
   
   @js.native
-  sealed trait codeframe extends js.Object
+  sealed trait basic
+    extends StObject
+       with FormatterType
+  inline def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait call extends StObject
+  inline def call: call = "call".asInstanceOf[call]
   
   @js.native
-  sealed trait diagnostic extends ErrorType
+  sealed trait codeframe
+    extends StObject
+       with FormatterType
+  inline def codeframe: codeframe = "codeframe".asInstanceOf[codeframe]
   
   @js.native
-  sealed trait done extends ForkTsCheckerHooks
+  sealed trait dts extends StObject
+  inline def dts: dts = "dts".asInstanceOf[dts]
   
   @js.native
-  sealed trait dts extends js.Object
+  sealed trait error
+    extends StObject
+       with IssueSeverity
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait emit extends ForkTsCheckerHooks
+  sealed trait ignore extends StObject
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
-  sealed trait error extends Severity
+  sealed trait js_ extends StObject
+  inline def js_ : js_ = "js".asInstanceOf[js_]
   
   @js.native
-  sealed trait js_ extends js.Object
+  sealed trait line extends StObject
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait lint extends ErrorType
+  sealed trait quit extends StObject
+  inline def quit: quit = "quit".asInstanceOf[quit]
   
   @js.native
-  sealed trait receive extends ForkTsCheckerHooks
+  sealed trait readonly extends StObject
+  inline def readonly: readonly = "readonly".asInstanceOf[readonly]
   
   @js.native
-  sealed trait run extends js.Object
+  sealed trait reject extends StObject
+  inline def reject: reject = "reject".asInstanceOf[reject]
   
   @js.native
-  sealed trait serviceBeforeStart extends ForkTsCheckerHooks
+  sealed trait resolve extends StObject
+  inline def resolve: resolve = "resolve".asInstanceOf[resolve]
   
   @js.native
-  sealed trait serviceOutOfMemory extends ForkTsCheckerHooks
+  sealed trait space extends StObject
+  inline def space: space = "space".asInstanceOf[space]
   
   @js.native
-  sealed trait serviceStart extends ForkTsCheckerHooks
+  sealed trait warning
+    extends StObject
+       with IssueSeverity
+  inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait serviceStartError extends ForkTsCheckerHooks
+  sealed trait `webpack-infrastructure` extends StObject
+  inline def `webpack-infrastructure`: `webpack-infrastructure` = "webpack-infrastructure".asInstanceOf[`webpack-infrastructure`]
   
   @js.native
-  sealed trait waiting extends ForkTsCheckerHooks
+  sealed trait `write-dts` extends StObject
+  inline def `write-dts`: `write-dts` = "write-dts".asInstanceOf[`write-dts`]
   
   @js.native
-  sealed trait warning extends Severity
+  sealed trait `write-references` extends StObject
+  inline def `write-references`: `write-references` = "write-references".asInstanceOf[`write-references`]
   
-  @scala.inline
-  def `0Dot8`: `0Dot8` = "0.8".asInstanceOf[`0Dot8`]
-  @scala.inline
-  def `3Dot8`: `3Dot8` = "3.8".asInstanceOf[`3Dot8`]
-  @scala.inline
-  def INTERNAL_ERROR: INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[INTERNAL_ERROR]
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
-  def codeframe: codeframe = "codeframe".asInstanceOf[codeframe]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def diagnostic: diagnostic = "diagnostic".asInstanceOf[diagnostic]
-  @scala.inline
-  def done: done = "done".asInstanceOf[done]
-  @scala.inline
-  def dts: dts = "dts".asInstanceOf[dts]
-  @scala.inline
-  def emit: emit = "emit".asInstanceOf[emit]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def js_ : js_ = "js".asInstanceOf[js_]
-  @scala.inline
-  def lint: lint = "lint".asInstanceOf[lint]
-  @scala.inline
-  def receive: receive = "receive".asInstanceOf[receive]
-  @scala.inline
-  def run: run = "run".asInstanceOf[run]
-  @scala.inline
-  def serviceBeforeStart: serviceBeforeStart = "serviceBeforeStart".asInstanceOf[serviceBeforeStart]
-  @scala.inline
-  def serviceOutOfMemory: serviceOutOfMemory = "serviceOutOfMemory".asInstanceOf[serviceOutOfMemory]
-  @scala.inline
-  def serviceStart: serviceStart = "serviceStart".asInstanceOf[serviceStart]
-  @scala.inline
-  def serviceStartError: serviceStartError = "serviceStartError".asInstanceOf[serviceStartError]
-  @scala.inline
-  def waiting: waiting = "waiting".asInstanceOf[waiting]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  @js.native
+  sealed trait `write-tsbuildinfo` extends StObject
+  inline def `write-tsbuildinfo`: `write-tsbuildinfo` = "write-tsbuildinfo".asInstanceOf[`write-tsbuildinfo`]
 }
-

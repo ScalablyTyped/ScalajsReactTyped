@@ -1,12 +1,9 @@
 package typingsJapgolly.nodeSnap7.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-snap7", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  var S7Client: S7ClientStatic = js.native
-}
-
+object ^ extends StObject

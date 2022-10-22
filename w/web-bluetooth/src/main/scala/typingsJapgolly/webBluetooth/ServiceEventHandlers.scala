@@ -1,29 +1,31 @@
 package typingsJapgolly.webBluetooth
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServiceEventHandlers extends js.Object {
-  def onserviceadded(ev: Event_): js.Any
-  def onservicechanged(ev: Event_): js.Any
-  def onserviceremoved(ev: Event_): js.Any
+trait ServiceEventHandlers extends StObject {
+  
+  def onserviceadded(ev: Event): Any
+  
+  def onservicechanged(ev: Event): Any
+  
+  def onserviceremoved(ev: Event): Any
 }
-
 object ServiceEventHandlers {
-  @scala.inline
-  def apply(
-    onserviceadded: Event_ => CallbackTo[js.Any],
-    onservicechanged: Event_ => CallbackTo[js.Any],
-    onserviceremoved: Event_ => CallbackTo[js.Any]
-  ): ServiceEventHandlers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onserviceadded")(js.Any.fromFunction1((t0: typingsJapgolly.std.Event_) => onserviceadded(t0).runNow()))
-    __obj.updateDynamic("onservicechanged")(js.Any.fromFunction1((t0: typingsJapgolly.std.Event_) => onservicechanged(t0).runNow()))
-    __obj.updateDynamic("onserviceremoved")(js.Any.fromFunction1((t0: typingsJapgolly.std.Event_) => onserviceremoved(t0).runNow()))
+  
+  inline def apply(onserviceadded: Event => Any, onservicechanged: Event => Any, onserviceremoved: Event => Any): ServiceEventHandlers = {
+    val __obj = js.Dynamic.literal(onserviceadded = js.Any.fromFunction1(onserviceadded), onservicechanged = js.Any.fromFunction1(onservicechanged), onserviceremoved = js.Any.fromFunction1(onserviceremoved))
     __obj.asInstanceOf[ServiceEventHandlers]
   }
+  
+  extension [Self <: ServiceEventHandlers](x: Self) {
+    
+    inline def setOnserviceadded(value: Event => Any): Self = StObject.set(x, "onserviceadded", js.Any.fromFunction1(value))
+    
+    inline def setOnservicechanged(value: Event => Any): Self = StObject.set(x, "onservicechanged", js.Any.fromFunction1(value))
+    
+    inline def setOnserviceremoved(value: Event => Any): Self = StObject.set(x, "onserviceremoved", js.Any.fromFunction1(value))
+  }
 }
-

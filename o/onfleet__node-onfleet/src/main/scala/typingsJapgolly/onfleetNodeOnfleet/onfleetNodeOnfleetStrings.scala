@@ -3,134 +3,126 @@ package typingsJapgolly.onfleetNodeOnfleet
 import typingsJapgolly.onfleetNodeOnfleet.metadataMod.MetadataSubType
 import typingsJapgolly.onfleetNodeOnfleet.metadataMod.MetadataType
 import typingsJapgolly.onfleetNodeOnfleet.metadataMod.MetadataVisibility
-import typingsJapgolly.onfleetNodeOnfleet.recipientsMod.RecipientQueryKey
+import typingsJapgolly.onfleetNodeOnfleet.resourcesRecipientsMod.RecipientQueryKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onfleetNodeOnfleetStrings {
-  @js.native
-  sealed trait BICYCLE extends js.Object
   
   @js.native
-  sealed trait CAR extends js.Object
+  sealed trait BICYCLE extends StObject
+  inline def BICYCLE: BICYCLE = "BICYCLE".asInstanceOf[BICYCLE]
   
   @js.native
-  sealed trait MOTORCYCLE extends js.Object
+  sealed trait CAR extends StObject
+  inline def CAR: CAR = "CAR".asInstanceOf[CAR]
   
   @js.native
-  sealed trait ORGANIZATION extends js.Object
+  sealed trait MOTORCYCLE extends StObject
+  inline def MOTORCYCLE: MOTORCYCLE = "MOTORCYCLE".asInstanceOf[MOTORCYCLE]
   
   @js.native
-  sealed trait TEAM extends js.Object
+  sealed trait ORGANIZATION extends StObject
+  inline def ORGANIZATION: ORGANIZATION = "ORGANIZATION".asInstanceOf[ORGANIZATION]
   
   @js.native
-  sealed trait TRUCK extends js.Object
+  sealed trait TEAM extends StObject
+  inline def TEAM: TEAM = "TEAM".asInstanceOf[TEAM]
   
   @js.native
-  sealed trait WORKER extends js.Object
+  sealed trait TRUCK extends StObject
+  inline def TRUCK: TRUCK = "TRUCK".asInstanceOf[TRUCK]
   
   @js.native
-  sealed trait api extends MetadataVisibility
+  sealed trait WORKER extends StObject
+  inline def WORKER: WORKER = "WORKER".asInstanceOf[WORKER]
   
   @js.native
-  sealed trait array extends MetadataType
+  sealed trait api
+    extends StObject
+       with MetadataVisibility
+  inline def api: api = "api".asInstanceOf[api]
+  
+  @js.native
+  sealed trait array
+    extends StObject
+       with MetadataType
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
   sealed trait boolean
-    extends MetadataSubType
+    extends StObject
+       with MetadataSubType
        with MetadataType
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait dashboard extends MetadataVisibility
+  sealed trait dashboard
+    extends StObject
+       with MetadataVisibility
+  inline def dashboard: dashboard = "dashboard".asInstanceOf[dashboard]
   
   @js.native
-  sealed trait name extends RecipientQueryKey
+  sealed trait name
+    extends StObject
+       with RecipientQueryKey
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
   sealed trait number
-    extends MetadataSubType
+    extends StObject
+       with MetadataSubType
        with MetadataType
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
   sealed trait `object`
-    extends MetadataSubType
+    extends StObject
+       with MetadataSubType
        with MetadataType
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait organizations extends js.Object
+  sealed trait organizations extends StObject
+  inline def organizations: organizations = "organizations".asInstanceOf[organizations]
   
   @js.native
-  sealed trait phone extends RecipientQueryKey
+  sealed trait phone
+    extends StObject
+       with RecipientQueryKey
+  inline def phone: phone = "phone".asInstanceOf[phone]
   
   @js.native
-  sealed trait shortId extends js.Object
+  sealed trait shortId extends StObject
+  inline def shortId: shortId = "shortId".asInstanceOf[shortId]
   
   @js.native
-  sealed trait standard extends js.Object
+  sealed trait standard extends StObject
+  inline def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
   sealed trait string
-    extends MetadataSubType
+    extends StObject
+       with MetadataSubType
        with MetadataType
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait `super` extends js.Object
+  sealed trait `super` extends StObject
+  inline def `super`: `super` = "super".asInstanceOf[`super`]
   
   @js.native
-  sealed trait teams extends js.Object
+  sealed trait teams extends StObject
+  inline def teams: teams = "teams".asInstanceOf[teams]
   
   @js.native
-  sealed trait worker_ extends MetadataVisibility
+  sealed trait worker_
+    extends StObject
+       with MetadataVisibility
+  inline def worker_ : worker_ = "worker".asInstanceOf[worker_]
   
   @js.native
-  sealed trait workers extends js.Object
-  
-  @scala.inline
-  def BICYCLE: BICYCLE = "BICYCLE".asInstanceOf[BICYCLE]
-  @scala.inline
-  def CAR: CAR = "CAR".asInstanceOf[CAR]
-  @scala.inline
-  def MOTORCYCLE: MOTORCYCLE = "MOTORCYCLE".asInstanceOf[MOTORCYCLE]
-  @scala.inline
-  def ORGANIZATION: ORGANIZATION = "ORGANIZATION".asInstanceOf[ORGANIZATION]
-  @scala.inline
-  def TEAM: TEAM = "TEAM".asInstanceOf[TEAM]
-  @scala.inline
-  def TRUCK: TRUCK = "TRUCK".asInstanceOf[TRUCK]
-  @scala.inline
-  def WORKER: WORKER = "WORKER".asInstanceOf[WORKER]
-  @scala.inline
-  def api: api = "api".asInstanceOf[api]
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def dashboard: dashboard = "dashboard".asInstanceOf[dashboard]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def organizations: organizations = "organizations".asInstanceOf[organizations]
-  @scala.inline
-  def phone: phone = "phone".asInstanceOf[phone]
-  @scala.inline
-  def shortId: shortId = "shortId".asInstanceOf[shortId]
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def `super`: `super` = "super".asInstanceOf[`super`]
-  @scala.inline
-  def teams: teams = "teams".asInstanceOf[teams]
-  @scala.inline
-  def worker_ : worker_ = "worker".asInstanceOf[worker_]
-  @scala.inline
-  def workers: workers = "workers".asInstanceOf[workers]
+  sealed trait workers extends StObject
+  inline def workers: workers = "workers".asInstanceOf[workers]
 }
-

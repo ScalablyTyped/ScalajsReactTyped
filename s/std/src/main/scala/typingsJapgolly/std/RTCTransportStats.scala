@@ -1,43 +1,94 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCTransportStats extends RTCStats {
-  var activeConnection: js.UndefOr[scala.Boolean] = js.undefined
+trait RTCTransportStats
+  extends StObject
+     with RTCStats {
+  
+  /* standard dom */
   var bytesReceived: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var bytesSent: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var dtlsCipher: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var dtlsState: RTCDtlsTransportState
+  
+  /* standard dom */
   var localCertificateId: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var remoteCertificateId: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var rtcpTransportStatsId: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var selectedCandidatePairId: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var srtpCipher: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var tlsVersion: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object RTCTransportStats {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
+    dtlsState: RTCDtlsTransportState,
     id: java.lang.String,
-    timestamp: Double,
-    `type`: org.scalajs.dom.experimental.webrtc.RTCStatsType,
-    activeConnection: js.UndefOr[scala.Boolean] = js.undefined,
-    bytesReceived: Int | Double = null,
-    bytesSent: Int | Double = null,
-    localCertificateId: java.lang.String = null,
-    remoteCertificateId: java.lang.String = null,
-    rtcpTransportStatsId: java.lang.String = null,
-    selectedCandidatePairId: java.lang.String = null
+    timestamp: DOMHighResTimeStamp,
+    `type`: org.scalajs.dom.RTCStatsType
   ): RTCTransportStats = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dtlsState = dtlsState.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeConnection)) __obj.updateDynamic("activeConnection")(activeConnection.asInstanceOf[js.Any])
-    if (bytesReceived != null) __obj.updateDynamic("bytesReceived")(bytesReceived.asInstanceOf[js.Any])
-    if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent.asInstanceOf[js.Any])
-    if (localCertificateId != null) __obj.updateDynamic("localCertificateId")(localCertificateId.asInstanceOf[js.Any])
-    if (remoteCertificateId != null) __obj.updateDynamic("remoteCertificateId")(remoteCertificateId.asInstanceOf[js.Any])
-    if (rtcpTransportStatsId != null) __obj.updateDynamic("rtcpTransportStatsId")(rtcpTransportStatsId.asInstanceOf[js.Any])
-    if (selectedCandidatePairId != null) __obj.updateDynamic("selectedCandidatePairId")(selectedCandidatePairId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCTransportStats]
   }
+  
+  extension [Self <: RTCTransportStats](x: Self) {
+    
+    inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
+    
+    inline def setBytesReceivedUndefined: Self = StObject.set(x, "bytesReceived", js.undefined)
+    
+    inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
+    
+    inline def setBytesSentUndefined: Self = StObject.set(x, "bytesSent", js.undefined)
+    
+    inline def setDtlsCipher(value: java.lang.String): Self = StObject.set(x, "dtlsCipher", value.asInstanceOf[js.Any])
+    
+    inline def setDtlsCipherUndefined: Self = StObject.set(x, "dtlsCipher", js.undefined)
+    
+    inline def setDtlsState(value: RTCDtlsTransportState): Self = StObject.set(x, "dtlsState", value.asInstanceOf[js.Any])
+    
+    inline def setLocalCertificateId(value: java.lang.String): Self = StObject.set(x, "localCertificateId", value.asInstanceOf[js.Any])
+    
+    inline def setLocalCertificateIdUndefined: Self = StObject.set(x, "localCertificateId", js.undefined)
+    
+    inline def setRemoteCertificateId(value: java.lang.String): Self = StObject.set(x, "remoteCertificateId", value.asInstanceOf[js.Any])
+    
+    inline def setRemoteCertificateIdUndefined: Self = StObject.set(x, "remoteCertificateId", js.undefined)
+    
+    inline def setRtcpTransportStatsId(value: java.lang.String): Self = StObject.set(x, "rtcpTransportStatsId", value.asInstanceOf[js.Any])
+    
+    inline def setRtcpTransportStatsIdUndefined: Self = StObject.set(x, "rtcpTransportStatsId", js.undefined)
+    
+    inline def setSelectedCandidatePairId(value: java.lang.String): Self = StObject.set(x, "selectedCandidatePairId", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedCandidatePairIdUndefined: Self = StObject.set(x, "selectedCandidatePairId", js.undefined)
+    
+    inline def setSrtpCipher(value: java.lang.String): Self = StObject.set(x, "srtpCipher", value.asInstanceOf[js.Any])
+    
+    inline def setSrtpCipherUndefined: Self = StObject.set(x, "srtpCipher", js.undefined)
+    
+    inline def setTlsVersion(value: java.lang.String): Self = StObject.set(x, "tlsVersion", value.asInstanceOf[js.Any])
+    
+    inline def setTlsVersionUndefined: Self = StObject.set(x, "tlsVersion", js.undefined)
+  }
 }
-

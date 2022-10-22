@@ -1,9 +1,8 @@
-package typingsJapgolly
+package typingsJapgolly.jqueryTimeago
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object jqueryTimeago {
-  type Timeago = js.Function0[typingsJapgolly.jqueryTimeago.JQuery]
-}
+
+type Timeago = js.Function0[JQuery]

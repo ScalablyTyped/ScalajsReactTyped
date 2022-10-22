@@ -1,13 +1,32 @@
 package typingsJapgolly.angularCommon.httpMod
 
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵInjectableDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http", "HttpXhrBackend")
 @js.native
-class HttpXhrBackend protected ()
-  extends typingsJapgolly.angularCommon.httpHttpMod.HttpXhrBackend {
-  def this(xhrFactory: typingsJapgolly.angularCommon.httpHttpMod.XhrFactory) = this()
+open class HttpXhrBackend protected () extends HttpBackend {
+  def this(xhrFactory: typingsJapgolly.angularCommon.mod.XhrFactory) = this()
+  
+  /* private */ var xhrFactory: Any = js.native
 }
-
+/* static members */
+object HttpXhrBackend {
+  
+  @JSImport("@angular/common/http", "HttpXhrBackend")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/common/http", "HttpXhrBackend.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[HttpXhrBackend, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[HttpXhrBackend, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/common/http", "HttpXhrBackend.\u0275prov")
+  @js.native
+  def ɵprov: ɵɵInjectableDeclaration[HttpXhrBackend] = js.native
+  inline def ɵprov_=(x: ɵɵInjectableDeclaration[HttpXhrBackend]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
+}

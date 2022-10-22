@@ -1,13 +1,13 @@
 package typingsJapgolly.flux
 
-import typingsJapgolly.flux.dispatcherMod.^
+import typingsJapgolly.flux.libDispatcherMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("flux", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("flux", "Dispatcher")
   @js.native
   /**
     * Create an instance of the Dispatcher class to use throughout the application.
@@ -19,7 +19,5 @@ object mod extends js.Object {
     *     var dispatcher = new flux.Dispatcher<any>()
     *     var typedDispatcher = new flux.Dispatcher<MyCustomActionType>()
     */
-  class Dispatcher[TPayload] () extends ^[TPayload]
-  
+  open class Dispatcher[TPayload] () extends ^[TPayload]
 }
-

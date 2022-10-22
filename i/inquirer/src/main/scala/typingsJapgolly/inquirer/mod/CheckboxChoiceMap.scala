@@ -1,31 +1,30 @@
 package typingsJapgolly.inquirer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides all valid choice-types for the `CheckboxQuestion`.
-  *
-  * @template T
-  * The type of the answers.
-  */
-trait CheckboxChoiceMap[T /* <: Answers */] extends BaseChoiceMap[T] {
+trait CheckboxChoiceMap[T /* <: Answers */]
+  extends StObject
+     with BaseChoiceMap[T] {
+  
   var CheckboxChoiceOptions: typingsJapgolly.inquirer.mod.CheckboxChoiceOptions[T]
 }
-
 object CheckboxChoiceMap {
-  @scala.inline
-  def apply[T /* <: Answers */](
+  
+  inline def apply[T /* <: Answers */](
     CheckboxChoiceOptions: CheckboxChoiceOptions[T],
-    Choice: typingsJapgolly.inquirer.choiceMod.^[T],
-    ChoiceOptions: ChoiceOptions[T],
-    Separator: typingsJapgolly.inquirer.separatorMod.^,
+    Choice: typingsJapgolly.inquirer.libObjectsChoiceMod.default[T],
+    ChoiceOptions: ChoiceOptions,
+    Separator: typingsJapgolly.inquirer.libObjectsSeparatorMod.default,
     SeparatorOptions: SeparatorOptions
   ): CheckboxChoiceMap[T] = {
     val __obj = js.Dynamic.literal(CheckboxChoiceOptions = CheckboxChoiceOptions.asInstanceOf[js.Any], Choice = Choice.asInstanceOf[js.Any], ChoiceOptions = ChoiceOptions.asInstanceOf[js.Any], Separator = Separator.asInstanceOf[js.Any], SeparatorOptions = SeparatorOptions.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[CheckboxChoiceMap[T]]
   }
+  
+  extension [Self <: CheckboxChoiceMap[?], T /* <: Answers */](x: Self & CheckboxChoiceMap[T]) {
+    
+    inline def setCheckboxChoiceOptions(value: CheckboxChoiceOptions[T]): Self = StObject.set(x, "CheckboxChoiceOptions", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -3,20 +3,25 @@ package typingsJapgolly.wampy.mod
 import typingsJapgolly.wampy.wampyStrings.kill
 import typingsJapgolly.wampy.wampyStrings.killnowait
 import typingsJapgolly.wampy.wampyStrings.skip
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CancelAdvancedOptions extends js.Object {
+trait CancelAdvancedOptions extends StObject {
+  
   var mode: js.UndefOr[skip | kill | killnowait] = js.undefined
 }
-
 object CancelAdvancedOptions {
-  @scala.inline
-  def apply(mode: skip | kill | killnowait = null): CancelAdvancedOptions = {
+  
+  inline def apply(): CancelAdvancedOptions = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelAdvancedOptions]
   }
+  
+  extension [Self <: CancelAdvancedOptions](x: Self) {
+    
+    inline def setMode(value: skip | kill | killnowait): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+  }
 }
-

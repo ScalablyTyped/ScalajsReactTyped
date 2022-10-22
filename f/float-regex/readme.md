@@ -10,15 +10,12 @@ regular expression to match floating point numbers in javascript notation
 | ------------------ | :-------------: |
 | Full name          | float-regex |
 | Keywords           | regex, regexp, regular expression, floating, point |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 29171 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1649.3333333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/float-regex)
-- [Bugs](https://github.com/substack/float-regex/issues)
-- [Repository](https://github.com/substack/float-regex)
 - [Npm](https://www.npmjs.com/package/float-regex)
     
 

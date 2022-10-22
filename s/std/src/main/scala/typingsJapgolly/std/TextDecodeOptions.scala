@@ -1,19 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextDecodeOptions extends js.Object {
+trait TextDecodeOptions extends StObject {
+  
+  /* standard dom */
   var stream: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object TextDecodeOptions {
-  @scala.inline
-  def apply(stream: js.UndefOr[scala.Boolean] = js.undefined): TextDecodeOptions = {
+  
+  inline def apply(): TextDecodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDecodeOptions]
   }
+  
+  extension [Self <: TextDecodeOptions](x: Self) {
+    
+    inline def setStream(value: scala.Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+  }
 }
-

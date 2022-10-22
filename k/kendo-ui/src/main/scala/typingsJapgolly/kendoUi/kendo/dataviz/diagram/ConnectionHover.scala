@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.diagram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConnectionHover extends js.Object {
+trait ConnectionHover extends StObject {
+  
   var stroke: js.UndefOr[ConnectionHoverStroke] = js.undefined
 }
-
 object ConnectionHover {
-  @scala.inline
-  def apply(stroke: ConnectionHoverStroke = null): ConnectionHover = {
+  
+  inline def apply(): ConnectionHover = {
     val __obj = js.Dynamic.literal()
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionHover]
   }
+  
+  extension [Self <: ConnectionHover](x: Self) {
+    
+    inline def setStroke(value: ConnectionHoverStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+  }
 }
-

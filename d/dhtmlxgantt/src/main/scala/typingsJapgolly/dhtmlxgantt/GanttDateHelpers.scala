@@ -1,61 +1,89 @@
 package typingsJapgolly.dhtmlxgantt
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GanttDateHelpers extends js.Object {
+trait GanttDateHelpers extends StObject {
+  
   def add(origin: js.Date, count: Double, unit: String): js.Date
+  
   def convert_to_utc(origin: js.Date): js.Date
+  
   def copy(origin: js.Date): js.Date
+  
   def date_part(origin: js.Date): js.Date
-  def date_to_str(format: String): js.Any
+  
+  def date_to_str(format: String): Any
+  
   def day_start(origin: js.Date): js.Date
+  
   def getISOWeek(origin: js.Date): Double
+  
   def getUTCISOWeek(origin: js.Date): Double
+  
   def month_start(origin: js.Date): js.Date
-  def str_to_date(format: String): js.Any
+  
+  def str_to_date(format: String): Any
+  
   def time_part(origin: js.Date): js.Date
+  
   def to_fixed(value: Double): String
+  
   def week_start(origin: js.Date): js.Date
+  
   def year_start(origin: js.Date): js.Date
 }
-
 object GanttDateHelpers {
-  @scala.inline
-  def apply(
-    add: (js.Date, Double, String) => CallbackTo[js.Date],
-    convert_to_utc: js.Date => CallbackTo[js.Date],
-    copy: js.Date => CallbackTo[js.Date],
-    date_part: js.Date => CallbackTo[js.Date],
-    date_to_str: String => CallbackTo[js.Any],
-    day_start: js.Date => CallbackTo[js.Date],
-    getISOWeek: js.Date => CallbackTo[Double],
-    getUTCISOWeek: js.Date => CallbackTo[Double],
-    month_start: js.Date => CallbackTo[js.Date],
-    str_to_date: String => CallbackTo[js.Any],
-    time_part: js.Date => CallbackTo[js.Date],
-    to_fixed: Double => CallbackTo[String],
-    week_start: js.Date => CallbackTo[js.Date],
-    year_start: js.Date => CallbackTo[js.Date]
+  
+  inline def apply(
+    add: (js.Date, Double, String) => js.Date,
+    convert_to_utc: js.Date => js.Date,
+    copy: js.Date => js.Date,
+    date_part: js.Date => js.Date,
+    date_to_str: String => Any,
+    day_start: js.Date => js.Date,
+    getISOWeek: js.Date => Double,
+    getUTCISOWeek: js.Date => Double,
+    month_start: js.Date => js.Date,
+    str_to_date: String => Any,
+    time_part: js.Date => js.Date,
+    to_fixed: Double => String,
+    week_start: js.Date => js.Date,
+    year_start: js.Date => js.Date
   ): GanttDateHelpers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(js.Any.fromFunction3((t0: js.Date, t1: scala.Double, t2: java.lang.String) => add(t0, t1, t2).runNow()))
-    __obj.updateDynamic("convert_to_utc")(js.Any.fromFunction1((t0: js.Date) => convert_to_utc(t0).runNow()))
-    __obj.updateDynamic("copy")(js.Any.fromFunction1((t0: js.Date) => copy(t0).runNow()))
-    __obj.updateDynamic("date_part")(js.Any.fromFunction1((t0: js.Date) => date_part(t0).runNow()))
-    __obj.updateDynamic("date_to_str")(js.Any.fromFunction1((t0: java.lang.String) => date_to_str(t0).runNow()))
-    __obj.updateDynamic("day_start")(js.Any.fromFunction1((t0: js.Date) => day_start(t0).runNow()))
-    __obj.updateDynamic("getISOWeek")(js.Any.fromFunction1((t0: js.Date) => getISOWeek(t0).runNow()))
-    __obj.updateDynamic("getUTCISOWeek")(js.Any.fromFunction1((t0: js.Date) => getUTCISOWeek(t0).runNow()))
-    __obj.updateDynamic("month_start")(js.Any.fromFunction1((t0: js.Date) => month_start(t0).runNow()))
-    __obj.updateDynamic("str_to_date")(js.Any.fromFunction1((t0: java.lang.String) => str_to_date(t0).runNow()))
-    __obj.updateDynamic("time_part")(js.Any.fromFunction1((t0: js.Date) => time_part(t0).runNow()))
-    __obj.updateDynamic("to_fixed")(js.Any.fromFunction1((t0: scala.Double) => to_fixed(t0).runNow()))
-    __obj.updateDynamic("week_start")(js.Any.fromFunction1((t0: js.Date) => week_start(t0).runNow()))
-    __obj.updateDynamic("year_start")(js.Any.fromFunction1((t0: js.Date) => year_start(t0).runNow()))
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction3(add), convert_to_utc = js.Any.fromFunction1(convert_to_utc), copy = js.Any.fromFunction1(copy), date_part = js.Any.fromFunction1(date_part), date_to_str = js.Any.fromFunction1(date_to_str), day_start = js.Any.fromFunction1(day_start), getISOWeek = js.Any.fromFunction1(getISOWeek), getUTCISOWeek = js.Any.fromFunction1(getUTCISOWeek), month_start = js.Any.fromFunction1(month_start), str_to_date = js.Any.fromFunction1(str_to_date), time_part = js.Any.fromFunction1(time_part), to_fixed = js.Any.fromFunction1(to_fixed), week_start = js.Any.fromFunction1(week_start), year_start = js.Any.fromFunction1(year_start))
     __obj.asInstanceOf[GanttDateHelpers]
   }
+  
+  extension [Self <: GanttDateHelpers](x: Self) {
+    
+    inline def setAdd(value: (js.Date, Double, String) => js.Date): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
+    
+    inline def setConvert_to_utc(value: js.Date => js.Date): Self = StObject.set(x, "convert_to_utc", js.Any.fromFunction1(value))
+    
+    inline def setCopy(value: js.Date => js.Date): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
+    
+    inline def setDate_part(value: js.Date => js.Date): Self = StObject.set(x, "date_part", js.Any.fromFunction1(value))
+    
+    inline def setDate_to_str(value: String => Any): Self = StObject.set(x, "date_to_str", js.Any.fromFunction1(value))
+    
+    inline def setDay_start(value: js.Date => js.Date): Self = StObject.set(x, "day_start", js.Any.fromFunction1(value))
+    
+    inline def setGetISOWeek(value: js.Date => Double): Self = StObject.set(x, "getISOWeek", js.Any.fromFunction1(value))
+    
+    inline def setGetUTCISOWeek(value: js.Date => Double): Self = StObject.set(x, "getUTCISOWeek", js.Any.fromFunction1(value))
+    
+    inline def setMonth_start(value: js.Date => js.Date): Self = StObject.set(x, "month_start", js.Any.fromFunction1(value))
+    
+    inline def setStr_to_date(value: String => Any): Self = StObject.set(x, "str_to_date", js.Any.fromFunction1(value))
+    
+    inline def setTime_part(value: js.Date => js.Date): Self = StObject.set(x, "time_part", js.Any.fromFunction1(value))
+    
+    inline def setTo_fixed(value: Double => String): Self = StObject.set(x, "to_fixed", js.Any.fromFunction1(value))
+    
+    inline def setWeek_start(value: js.Date => js.Date): Self = StObject.set(x, "week_start", js.Any.fromFunction1(value))
+    
+    inline def setYear_start(value: js.Date => js.Date): Self = StObject.set(x, "year_start", js.Any.fromFunction1(value))
+  }
 }
-

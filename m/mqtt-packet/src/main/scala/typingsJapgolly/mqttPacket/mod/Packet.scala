@@ -1,34 +1,9 @@
 package typingsJapgolly.mqttPacket.mod
 
-import typingsJapgolly.mqttPacket.AnonAssignedClientIdentifier
-import typingsJapgolly.mqttPacket.AnonAuthenticationData
-import typingsJapgolly.mqttPacket.AnonCorrelationData
-import typingsJapgolly.mqttPacket.AnonPayload
-import typingsJapgolly.mqttPacket.AnonReasonString
-import typingsJapgolly.mqttPacket.AnonServerReference
-import typingsJapgolly.mqttPacket.mqttPacketNumbers.`3`
-import typingsJapgolly.mqttPacket.mqttPacketNumbers.`4`
-import typingsJapgolly.mqttPacket.mqttPacketNumbers.`5`
-import typingsJapgolly.mqttPacket.mqttPacketStrings.MQIsdp
-import typingsJapgolly.mqttPacket.mqttPacketStrings.MQTT
-import typingsJapgolly.mqttPacket.mqttPacketStrings.connack
-import typingsJapgolly.mqttPacket.mqttPacketStrings.connect
-import typingsJapgolly.mqttPacket.mqttPacketStrings.disconnect
-import typingsJapgolly.mqttPacket.mqttPacketStrings.pingreq
-import typingsJapgolly.mqttPacket.mqttPacketStrings.pingresp
-import typingsJapgolly.mqttPacket.mqttPacketStrings.puback
-import typingsJapgolly.mqttPacket.mqttPacketStrings.pubcomp
-import typingsJapgolly.mqttPacket.mqttPacketStrings.publish
-import typingsJapgolly.mqttPacket.mqttPacketStrings.pubrec
-import typingsJapgolly.mqttPacket.mqttPacketStrings.pubrel
-import typingsJapgolly.mqttPacket.mqttPacketStrings.suback
-import typingsJapgolly.mqttPacket.mqttPacketStrings.subscribe
-import typingsJapgolly.mqttPacket.mqttPacketStrings.unsuback
-import typingsJapgolly.mqttPacket.mqttPacketStrings.unsubscribe
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.mqttPacket.mod.IConnectPacket
@@ -45,204 +20,83 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.mqttPacket.mod.IPingrespPacket
   - typingsJapgolly.mqttPacket.mod.IDisconnectPacket
   - typingsJapgolly.mqttPacket.mod.IPubrecPacket
+  - typingsJapgolly.mqttPacket.mod.IAuthPacket
 */
-trait Packet extends js.Object
-
+trait Packet extends StObject
 object Packet {
-  @scala.inline
-  def IPingreqPacket(cmd: pingreq, length: Int | Double = null, messageId: Int | Double = null): Packet = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def IAuthPacket(reasonCode: Double): typingsJapgolly.mqttPacket.mod.IAuthPacket = {
+    val __obj = js.Dynamic.literal(cmd = "auth", reasonCode = reasonCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.IAuthPacket]
   }
-  @scala.inline
-  def IPubrelPacket(
-    cmd: pubrel,
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonReasonString = null
-  ): Packet = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def IConnackPacket(sessionPresent: Boolean): typingsJapgolly.mqttPacket.mod.IConnackPacket = {
+    val __obj = js.Dynamic.literal(cmd = "connack", sessionPresent = sessionPresent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.IConnackPacket]
   }
-  @scala.inline
-  def IConnectPacket(
-    clientId: String,
-    cmd: connect,
-    clean: js.UndefOr[Boolean] = js.undefined,
-    keepalive: Int | Double = null,
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    password: Buffer = null,
-    properties: AnonAuthenticationData = null,
-    protocolId: MQTT | MQIsdp = null,
-    protocolVersion: `4` | `5` | `3` = null,
-    username: String = null,
-    will: AnonPayload = null
-  ): Packet = {
-    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], cmd = cmd.asInstanceOf[js.Any])
-    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean.asInstanceOf[js.Any])
-    if (keepalive != null) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (protocolId != null) __obj.updateDynamic("protocolId")(protocolId.asInstanceOf[js.Any])
-    if (protocolVersion != null) __obj.updateDynamic("protocolVersion")(protocolVersion.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (will != null) __obj.updateDynamic("will")(will.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def IConnectPacket(clientId: String): typingsJapgolly.mqttPacket.mod.IConnectPacket = {
+    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], cmd = "connect")
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.IConnectPacket]
   }
-  @scala.inline
-  def IConnackPacket(
-    cmd: connack,
-    returnCode: Double,
-    sessionPresent: Boolean,
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonAssignedClientIdentifier = null
-  ): Packet = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], returnCode = returnCode.asInstanceOf[js.Any], sessionPresent = sessionPresent.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def IDisconnectPacket(): typingsJapgolly.mqttPacket.mod.IDisconnectPacket = {
+    val __obj = js.Dynamic.literal(cmd = "disconnect")
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.IDisconnectPacket]
   }
-  @scala.inline
-  def IUnsubackPacket(
-    cmd: unsuback,
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonReasonString = null
-  ): Packet = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def IPingreqPacket(): typingsJapgolly.mqttPacket.mod.IPingreqPacket = {
+    val __obj = js.Dynamic.literal(cmd = "pingreq")
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.IPingreqPacket]
   }
-  @scala.inline
-  def IPubackPacket(
-    cmd: puback,
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonReasonString = null
-  ): Packet = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def IPingrespPacket(): typingsJapgolly.mqttPacket.mod.IPingrespPacket = {
+    val __obj = js.Dynamic.literal(cmd = "pingresp")
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.IPingrespPacket]
   }
-  @scala.inline
-  def IPingrespPacket(cmd: pingresp, length: Int | Double = null, messageId: Int | Double = null): Packet = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def IPubackPacket(): typingsJapgolly.mqttPacket.mod.IPubackPacket = {
+    val __obj = js.Dynamic.literal(cmd = "puback")
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.IPubackPacket]
   }
-  @scala.inline
-  def IUnsubscribePacket(
-    cmd: unsubscribe,
-    unsubscriptions: js.Array[String],
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonReasonString = null
-  ): Packet = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], unsubscriptions = unsubscriptions.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def IPubcompPacket(): typingsJapgolly.mqttPacket.mod.IPubcompPacket = {
+    val __obj = js.Dynamic.literal(cmd = "pubcomp")
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.IPubcompPacket]
   }
-  @scala.inline
-  def ISubscribePacket(
-    cmd: subscribe,
-    subscriptions: js.Array[ISubscription],
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonReasonString = null
-  ): Packet = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def IPublishPacket(dup: Boolean, payload: String | Buffer, qos: QoS, retain: Boolean, topic: String): typingsJapgolly.mqttPacket.mod.IPublishPacket = {
+    val __obj = js.Dynamic.literal(cmd = "publish", dup = dup.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], qos = qos.asInstanceOf[js.Any], retain = retain.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.IPublishPacket]
   }
-  @scala.inline
-  def ISubackPacket(
-    cmd: suback,
-    granted: js.Array[Double | js.Object],
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonReasonString = null
-  ): Packet = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], granted = granted.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def IPubrecPacket(): typingsJapgolly.mqttPacket.mod.IPubrecPacket = {
+    val __obj = js.Dynamic.literal(cmd = "pubrec")
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.IPubrecPacket]
   }
-  @scala.inline
-  def IDisconnectPacket(
-    cmd: disconnect,
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonServerReference = null
-  ): Packet = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def IPubrelPacket(): typingsJapgolly.mqttPacket.mod.IPubrelPacket = {
+    val __obj = js.Dynamic.literal(cmd = "pubrel")
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.IPubrelPacket]
   }
-  @scala.inline
-  def IPublishPacket(
-    cmd: publish,
-    dup: Boolean,
-    payload: String | Buffer,
-    qos: QoS,
-    retain: Boolean,
-    topic: String,
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonCorrelationData = null
-  ): Packet = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], dup = dup.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], qos = qos.asInstanceOf[js.Any], retain = retain.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def ISubackPacket(granted: js.Array[Double | js.Object]): typingsJapgolly.mqttPacket.mod.ISubackPacket = {
+    val __obj = js.Dynamic.literal(cmd = "suback", granted = granted.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.ISubackPacket]
   }
-  @scala.inline
-  def IPubcompPacket(
-    cmd: pubcomp,
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonReasonString = null
-  ): Packet = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def ISubscribePacket(subscriptions: js.Array[ISubscription]): typingsJapgolly.mqttPacket.mod.ISubscribePacket = {
+    val __obj = js.Dynamic.literal(cmd = "subscribe", subscriptions = subscriptions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.ISubscribePacket]
   }
-  @scala.inline
-  def IPubrecPacket(
-    cmd: pubrec,
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonReasonString = null
-  ): Packet = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Packet]
+  
+  inline def IUnsubackPacket(): typingsJapgolly.mqttPacket.mod.IUnsubackPacket = {
+    val __obj = js.Dynamic.literal(cmd = "unsuback")
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.IUnsubackPacket]
+  }
+  
+  inline def IUnsubscribePacket(unsubscriptions: js.Array[String]): typingsJapgolly.mqttPacket.mod.IUnsubscribePacket = {
+    val __obj = js.Dynamic.literal(cmd = "unsubscribe", unsubscriptions = unsubscriptions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.mqttPacket.mod.IUnsubscribePacket]
   }
 }
-

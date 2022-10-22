@@ -1,8 +1,8 @@
 package typingsJapgolly.hapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.hapi.hapiStrings.onPreStart
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.hapi.hapiStrings.onPreStop
   - typingsJapgolly.hapi.hapiStrings.onPostStop
 */
-trait ServerExtType extends js.Object
-
+trait ServerExtType extends StObject
 object ServerExtType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onPostStart: typingsJapgolly.hapi.hapiStrings.onPostStart = this.cast("onPostStart")
-  @scala.inline
-  def onPostStop: typingsJapgolly.hapi.hapiStrings.onPostStop = this.cast("onPostStop")
-  @scala.inline
-  def onPreStart: typingsJapgolly.hapi.hapiStrings.onPreStart = this.cast("onPreStart")
-  @scala.inline
-  def onPreStop: typingsJapgolly.hapi.hapiStrings.onPreStop = this.cast("onPreStop")
+  
+  inline def onPostStart: typingsJapgolly.hapi.hapiStrings.onPostStart = "onPostStart".asInstanceOf[typingsJapgolly.hapi.hapiStrings.onPostStart]
+  
+  inline def onPostStop: typingsJapgolly.hapi.hapiStrings.onPostStop = "onPostStop".asInstanceOf[typingsJapgolly.hapi.hapiStrings.onPostStop]
+  
+  inline def onPreStart: typingsJapgolly.hapi.hapiStrings.onPreStart = "onPreStart".asInstanceOf[typingsJapgolly.hapi.hapiStrings.onPreStart]
+  
+  inline def onPreStop: typingsJapgolly.hapi.hapiStrings.onPreStop = "onPreStop".asInstanceOf[typingsJapgolly.hapi.hapiStrings.onPreStop]
 }
-

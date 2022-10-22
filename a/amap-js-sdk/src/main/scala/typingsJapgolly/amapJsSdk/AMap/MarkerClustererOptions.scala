@@ -1,40 +1,63 @@
 package typingsJapgolly.amapJsSdk.AMap
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarkerClustererOptions extends js.Object {
+trait MarkerClustererOptions extends StObject {
+  
   var averageCenter: js.UndefOr[Boolean] = js.undefined
+  
   var gridSize: js.UndefOr[Double] = js.undefined
+  
   var maxZoom: js.UndefOr[Double] = js.undefined
+  
   var minClusterSize: js.UndefOr[Double] = js.undefined
-  var renderCluserMarker: js.UndefOr[js.Function1[/* obj */ js.Any, Unit]] = js.undefined
-  var styles: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var renderCluserMarker: js.UndefOr[js.Function1[/* obj */ Any, Unit]] = js.undefined
+  
+  var styles: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var zoomOnClick: js.UndefOr[Boolean] = js.undefined
 }
-
 object MarkerClustererOptions {
-  @scala.inline
-  def apply(
-    averageCenter: js.UndefOr[Boolean] = js.undefined,
-    gridSize: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minClusterSize: Int | Double = null,
-    renderCluserMarker: /* obj */ js.Any => Callback = null,
-    styles: js.Array[_] = null,
-    zoomOnClick: js.UndefOr[Boolean] = js.undefined
-  ): MarkerClustererOptions = {
+  
+  inline def apply(): MarkerClustererOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(averageCenter)) __obj.updateDynamic("averageCenter")(averageCenter.asInstanceOf[js.Any])
-    if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minClusterSize != null) __obj.updateDynamic("minClusterSize")(minClusterSize.asInstanceOf[js.Any])
-    if (renderCluserMarker != null) __obj.updateDynamic("renderCluserMarker")(js.Any.fromFunction1((t0: /* obj */ js.Any) => renderCluserMarker(t0).runNow()))
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomOnClick)) __obj.updateDynamic("zoomOnClick")(zoomOnClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerClustererOptions]
   }
+  
+  extension [Self <: MarkerClustererOptions](x: Self) {
+    
+    inline def setAverageCenter(value: Boolean): Self = StObject.set(x, "averageCenter", value.asInstanceOf[js.Any])
+    
+    inline def setAverageCenterUndefined: Self = StObject.set(x, "averageCenter", js.undefined)
+    
+    inline def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
+    
+    inline def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
+    
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    
+    inline def setMinClusterSize(value: Double): Self = StObject.set(x, "minClusterSize", value.asInstanceOf[js.Any])
+    
+    inline def setMinClusterSizeUndefined: Self = StObject.set(x, "minClusterSize", js.undefined)
+    
+    inline def setRenderCluserMarker(value: /* obj */ Any => Callback): Self = StObject.set(x, "renderCluserMarker", js.Any.fromFunction1((t0: /* obj */ Any) => value(t0).runNow()))
+    
+    inline def setRenderCluserMarkerUndefined: Self = StObject.set(x, "renderCluserMarker", js.undefined)
+    
+    inline def setStyles(value: js.Array[Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    
+    inline def setStylesVarargs(value: Any*): Self = StObject.set(x, "styles", js.Array(value*))
+    
+    inline def setZoomOnClick(value: Boolean): Self = StObject.set(x, "zoomOnClick", value.asInstanceOf[js.Any])
+    
+    inline def setZoomOnClickUndefined: Self = StObject.set(x, "zoomOnClick", js.undefined)
+  }
 }
-

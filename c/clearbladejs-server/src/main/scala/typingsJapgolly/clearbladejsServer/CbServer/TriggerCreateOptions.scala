@@ -1,21 +1,26 @@
 package typingsJapgolly.clearbladejsServer.CbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TriggerCreateOptions extends js.Object {
+trait TriggerCreateOptions extends StObject {
+  
   var def_module: TriggerModule
+  
   var def_name: String
+  
   var key_value_pairs: js.Array[KeyValuePair]
+  
   var name: String
+  
   var service_name: String
+  
   var system_key: String
 }
-
 object TriggerCreateOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     def_module: TriggerModule,
     def_name: String,
     key_value_pairs: js.Array[KeyValuePair],
@@ -24,8 +29,23 @@ object TriggerCreateOptions {
     system_key: String
   ): TriggerCreateOptions = {
     val __obj = js.Dynamic.literal(def_module = def_module.asInstanceOf[js.Any], def_name = def_name.asInstanceOf[js.Any], key_value_pairs = key_value_pairs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service_name = service_name.asInstanceOf[js.Any], system_key = system_key.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TriggerCreateOptions]
   }
+  
+  extension [Self <: TriggerCreateOptions](x: Self) {
+    
+    inline def setDef_module(value: TriggerModule): Self = StObject.set(x, "def_module", value.asInstanceOf[js.Any])
+    
+    inline def setDef_name(value: String): Self = StObject.set(x, "def_name", value.asInstanceOf[js.Any])
+    
+    inline def setKey_value_pairs(value: js.Array[KeyValuePair]): Self = StObject.set(x, "key_value_pairs", value.asInstanceOf[js.Any])
+    
+    inline def setKey_value_pairsVarargs(value: KeyValuePair*): Self = StObject.set(x, "key_value_pairs", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setService_name(value: String): Self = StObject.set(x, "service_name", value.asInstanceOf[js.Any])
+    
+    inline def setSystem_key(value: String): Self = StObject.set(x, "system_key", value.asInstanceOf[js.Any])
+  }
 }
-

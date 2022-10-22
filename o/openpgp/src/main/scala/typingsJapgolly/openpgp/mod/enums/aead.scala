@@ -1,38 +1,36 @@
 package typingsJapgolly.openpgp.mod.enums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait aead extends js.Object
-
+sealed trait aead extends StObject
 /**
   * {@link https://tools.ietf.org/html/draft-ietf-openpgp-rfc4880bis-04#section-9.6|RFC4880bis-04, section 9.6}
   */
 @JSImport("openpgp", "enums.aead")
 @js.native
-object aead extends js.Object {
-  @js.native
-  sealed trait eax extends aead
-  
-  @js.native
-  sealed trait experimental_gcm extends aead
-  
-  @js.native
-  sealed trait ocb extends aead
+object aead extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[aead with Double] = js.native
-  /* 1 */ @js.native
-  object eax extends TopLevel[eax with Double]
+  def apply(value: Double): js.UndefOr[aead & Double] = js.native
   
-  /* 100 */ @js.native
-  object experimental_gcm extends TopLevel[experimental_gcm with Double]
+  @js.native
+  sealed trait eax
+    extends StObject
+       with aead
+  /* 1 */ val eax: typingsJapgolly.openpgp.mod.enums.aead.eax & Double = js.native
   
-  /* 2 */ @js.native
-  object ocb extends TopLevel[ocb with Double]
+  @js.native
+  sealed trait experimental_gcm
+    extends StObject
+       with aead
+  /* 100 */ val experimental_gcm: typingsJapgolly.openpgp.mod.enums.aead.experimental_gcm & Double = js.native
   
+  @js.native
+  sealed trait ocb
+    extends StObject
+       with aead
+  /* 2 */ val ocb: typingsJapgolly.openpgp.mod.enums.aead.ocb & Double = js.native
 }
-

@@ -1,124 +1,231 @@
 package typingsJapgolly.bootstrapTreeview
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BootstrapTreeViewOptions extends js.Object {
+trait BootstrapTreeViewOptions extends StObject {
+  
   var backColor: js.UndefOr[String] = js.undefined
+  
   var borderColor: js.UndefOr[String] = js.undefined
+  
   var checkedIcon: js.UndefOr[String] = js.undefined
+  
   var collapseIcon: js.UndefOr[String] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var data: js.UndefOr[js.Array[BootstrapTreeViewNodeData]] = js.undefined
+  
   var emptyIcon: js.UndefOr[String] = js.undefined
+  
   var enableLinks: js.UndefOr[Boolean] = js.undefined
+  
   var expandIcon: js.UndefOr[String] = js.undefined
+  
   var highlightSearchResults: js.UndefOr[Boolean] = js.undefined
+  
   var highlightSelected: js.UndefOr[Boolean] = js.undefined
+  
   var levels: js.UndefOr[Double] = js.undefined
+  
   var multiSelect: js.UndefOr[Boolean] = js.undefined
+  
   var nodeIcon: js.UndefOr[String] = js.undefined
-  var onNodeChecked: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
-  var onNodeCollapsed: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
-  var onNodeDisabled: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
-  var onNodeEnabled: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
-  var onNodeExpanded: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
-  var onNodeSelected: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
-  var onNodeUnchecked: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
-  var onNodeUnselected: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
-  var onSearchCleared: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
-  var onSearchComplete: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  
+  var onNodeChecked: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  
+  var onNodeCollapsed: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  
+  var onNodeDisabled: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  
+  var onNodeEnabled: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  
+  var onNodeExpanded: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  
+  var onNodeSelected: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  
+  var onNodeUnchecked: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  
+  var onNodeUnselected: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  
+  var onSearchCleared: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  
+  var onSearchComplete: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  
   var onhoverColor: js.UndefOr[String] = js.undefined
+  
   var searchResultBackColor: js.UndefOr[String] = js.undefined
+  
   var searchResultColor: js.UndefOr[String] = js.undefined
+  
   var selectedBackColor: js.UndefOr[String] = js.undefined
+  
   var selectedColor: js.UndefOr[String] = js.undefined
+  
   var selectedIcon: js.UndefOr[String] = js.undefined
+  
   var showBorder: js.UndefOr[Boolean] = js.undefined
+  
   var showCheckbox: js.UndefOr[Boolean] = js.undefined
+  
   var showIcon: js.UndefOr[Boolean] = js.undefined
+  
   var showTags: js.UndefOr[Boolean] = js.undefined
+  
   var uncheckedIcon: js.UndefOr[Boolean] = js.undefined
 }
-
 object BootstrapTreeViewOptions {
-  @scala.inline
-  def apply(
-    backColor: String = null,
-    borderColor: String = null,
-    checkedIcon: String = null,
-    collapseIcon: String = null,
-    color: String = null,
-    data: js.Array[BootstrapTreeViewNodeData] = null,
-    emptyIcon: String = null,
-    enableLinks: js.UndefOr[Boolean] = js.undefined,
-    expandIcon: String = null,
-    highlightSearchResults: js.UndefOr[Boolean] = js.undefined,
-    highlightSelected: js.UndefOr[Boolean] = js.undefined,
-    levels: Int | Double = null,
-    multiSelect: js.UndefOr[Boolean] = js.undefined,
-    nodeIcon: String = null,
-    onNodeChecked: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Callback = null,
-    onNodeCollapsed: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Callback = null,
-    onNodeDisabled: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Callback = null,
-    onNodeEnabled: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Callback = null,
-    onNodeExpanded: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Callback = null,
-    onNodeSelected: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Callback = null,
-    onNodeUnchecked: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Callback = null,
-    onNodeUnselected: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Callback = null,
-    onSearchCleared: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Callback = null,
-    onSearchComplete: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Callback = null,
-    onhoverColor: String = null,
-    searchResultBackColor: String = null,
-    searchResultColor: String = null,
-    selectedBackColor: String = null,
-    selectedColor: String = null,
-    selectedIcon: String = null,
-    showBorder: js.UndefOr[Boolean] = js.undefined,
-    showCheckbox: js.UndefOr[Boolean] = js.undefined,
-    showIcon: js.UndefOr[Boolean] = js.undefined,
-    showTags: js.UndefOr[Boolean] = js.undefined,
-    uncheckedIcon: js.UndefOr[Boolean] = js.undefined
-  ): BootstrapTreeViewOptions = {
+  
+  inline def apply(): BootstrapTreeViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (backColor != null) __obj.updateDynamic("backColor")(backColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (checkedIcon != null) __obj.updateDynamic("checkedIcon")(checkedIcon.asInstanceOf[js.Any])
-    if (collapseIcon != null) __obj.updateDynamic("collapseIcon")(collapseIcon.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (emptyIcon != null) __obj.updateDynamic("emptyIcon")(emptyIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLinks)) __obj.updateDynamic("enableLinks")(enableLinks.asInstanceOf[js.Any])
-    if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightSearchResults)) __obj.updateDynamic("highlightSearchResults")(highlightSearchResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightSelected)) __obj.updateDynamic("highlightSelected")(highlightSelected.asInstanceOf[js.Any])
-    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.asInstanceOf[js.Any])
-    if (nodeIcon != null) __obj.updateDynamic("nodeIcon")(nodeIcon.asInstanceOf[js.Any])
-    if (onNodeChecked != null) __obj.updateDynamic("onNodeChecked")(js.Any.fromFunction2((t0: /* event */ js.Any, t1: /* node */ typingsJapgolly.bootstrapTreeview.BootstrapTreeViewNodeData) => onNodeChecked(t0, t1).runNow()))
-    if (onNodeCollapsed != null) __obj.updateDynamic("onNodeCollapsed")(js.Any.fromFunction2((t0: /* event */ js.Any, t1: /* node */ typingsJapgolly.bootstrapTreeview.BootstrapTreeViewNodeData) => onNodeCollapsed(t0, t1).runNow()))
-    if (onNodeDisabled != null) __obj.updateDynamic("onNodeDisabled")(js.Any.fromFunction2((t0: /* event */ js.Any, t1: /* node */ typingsJapgolly.bootstrapTreeview.BootstrapTreeViewNodeData) => onNodeDisabled(t0, t1).runNow()))
-    if (onNodeEnabled != null) __obj.updateDynamic("onNodeEnabled")(js.Any.fromFunction2((t0: /* event */ js.Any, t1: /* node */ typingsJapgolly.bootstrapTreeview.BootstrapTreeViewNodeData) => onNodeEnabled(t0, t1).runNow()))
-    if (onNodeExpanded != null) __obj.updateDynamic("onNodeExpanded")(js.Any.fromFunction2((t0: /* event */ js.Any, t1: /* node */ typingsJapgolly.bootstrapTreeview.BootstrapTreeViewNodeData) => onNodeExpanded(t0, t1).runNow()))
-    if (onNodeSelected != null) __obj.updateDynamic("onNodeSelected")(js.Any.fromFunction2((t0: /* event */ js.Any, t1: /* node */ typingsJapgolly.bootstrapTreeview.BootstrapTreeViewNodeData) => onNodeSelected(t0, t1).runNow()))
-    if (onNodeUnchecked != null) __obj.updateDynamic("onNodeUnchecked")(js.Any.fromFunction2((t0: /* event */ js.Any, t1: /* node */ typingsJapgolly.bootstrapTreeview.BootstrapTreeViewNodeData) => onNodeUnchecked(t0, t1).runNow()))
-    if (onNodeUnselected != null) __obj.updateDynamic("onNodeUnselected")(js.Any.fromFunction2((t0: /* event */ js.Any, t1: /* node */ typingsJapgolly.bootstrapTreeview.BootstrapTreeViewNodeData) => onNodeUnselected(t0, t1).runNow()))
-    if (onSearchCleared != null) __obj.updateDynamic("onSearchCleared")(js.Any.fromFunction2((t0: /* event */ js.Any, t1: /* node */ typingsJapgolly.bootstrapTreeview.BootstrapTreeViewNodeData) => onSearchCleared(t0, t1).runNow()))
-    if (onSearchComplete != null) __obj.updateDynamic("onSearchComplete")(js.Any.fromFunction2((t0: /* event */ js.Any, t1: /* node */ typingsJapgolly.bootstrapTreeview.BootstrapTreeViewNodeData) => onSearchComplete(t0, t1).runNow()))
-    if (onhoverColor != null) __obj.updateDynamic("onhoverColor")(onhoverColor.asInstanceOf[js.Any])
-    if (searchResultBackColor != null) __obj.updateDynamic("searchResultBackColor")(searchResultBackColor.asInstanceOf[js.Any])
-    if (searchResultColor != null) __obj.updateDynamic("searchResultColor")(searchResultColor.asInstanceOf[js.Any])
-    if (selectedBackColor != null) __obj.updateDynamic("selectedBackColor")(selectedBackColor.asInstanceOf[js.Any])
-    if (selectedColor != null) __obj.updateDynamic("selectedColor")(selectedColor.asInstanceOf[js.Any])
-    if (selectedIcon != null) __obj.updateDynamic("selectedIcon")(selectedIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBorder)) __obj.updateDynamic("showBorder")(showBorder.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTags)) __obj.updateDynamic("showTags")(showTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(uncheckedIcon)) __obj.updateDynamic("uncheckedIcon")(uncheckedIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapTreeViewOptions]
   }
+  
+  extension [Self <: BootstrapTreeViewOptions](x: Self) {
+    
+    inline def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackColorUndefined: Self = StObject.set(x, "backColor", js.undefined)
+    
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setCheckedIcon(value: String): Self = StObject.set(x, "checkedIcon", value.asInstanceOf[js.Any])
+    
+    inline def setCheckedIconUndefined: Self = StObject.set(x, "checkedIcon", js.undefined)
+    
+    inline def setCollapseIcon(value: String): Self = StObject.set(x, "collapseIcon", value.asInstanceOf[js.Any])
+    
+    inline def setCollapseIconUndefined: Self = StObject.set(x, "collapseIcon", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setData(value: js.Array[BootstrapTreeViewNodeData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: BootstrapTreeViewNodeData*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setEmptyIcon(value: String): Self = StObject.set(x, "emptyIcon", value.asInstanceOf[js.Any])
+    
+    inline def setEmptyIconUndefined: Self = StObject.set(x, "emptyIcon", js.undefined)
+    
+    inline def setEnableLinks(value: Boolean): Self = StObject.set(x, "enableLinks", value.asInstanceOf[js.Any])
+    
+    inline def setEnableLinksUndefined: Self = StObject.set(x, "enableLinks", js.undefined)
+    
+    inline def setExpandIcon(value: String): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
+    
+    inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
+    
+    inline def setHighlightSearchResults(value: Boolean): Self = StObject.set(x, "highlightSearchResults", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightSearchResultsUndefined: Self = StObject.set(x, "highlightSearchResults", js.undefined)
+    
+    inline def setHighlightSelected(value: Boolean): Self = StObject.set(x, "highlightSelected", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightSelectedUndefined: Self = StObject.set(x, "highlightSelected", js.undefined)
+    
+    inline def setLevels(value: Double): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    
+    inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+    
+    inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
+    
+    inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
+    
+    inline def setNodeIcon(value: String): Self = StObject.set(x, "nodeIcon", value.asInstanceOf[js.Any])
+    
+    inline def setNodeIconUndefined: Self = StObject.set(x, "nodeIcon", js.undefined)
+    
+    inline def setOnNodeChecked(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Callback): Self = StObject.set(x, "onNodeChecked", js.Any.fromFunction2((t0: /* event */ Any, t1: /* node */ BootstrapTreeViewNodeData) => (value(t0, t1)).runNow()))
+    
+    inline def setOnNodeCheckedUndefined: Self = StObject.set(x, "onNodeChecked", js.undefined)
+    
+    inline def setOnNodeCollapsed(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Callback): Self = StObject.set(x, "onNodeCollapsed", js.Any.fromFunction2((t0: /* event */ Any, t1: /* node */ BootstrapTreeViewNodeData) => (value(t0, t1)).runNow()))
+    
+    inline def setOnNodeCollapsedUndefined: Self = StObject.set(x, "onNodeCollapsed", js.undefined)
+    
+    inline def setOnNodeDisabled(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Callback): Self = StObject.set(x, "onNodeDisabled", js.Any.fromFunction2((t0: /* event */ Any, t1: /* node */ BootstrapTreeViewNodeData) => (value(t0, t1)).runNow()))
+    
+    inline def setOnNodeDisabledUndefined: Self = StObject.set(x, "onNodeDisabled", js.undefined)
+    
+    inline def setOnNodeEnabled(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Callback): Self = StObject.set(x, "onNodeEnabled", js.Any.fromFunction2((t0: /* event */ Any, t1: /* node */ BootstrapTreeViewNodeData) => (value(t0, t1)).runNow()))
+    
+    inline def setOnNodeEnabledUndefined: Self = StObject.set(x, "onNodeEnabled", js.undefined)
+    
+    inline def setOnNodeExpanded(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Callback): Self = StObject.set(x, "onNodeExpanded", js.Any.fromFunction2((t0: /* event */ Any, t1: /* node */ BootstrapTreeViewNodeData) => (value(t0, t1)).runNow()))
+    
+    inline def setOnNodeExpandedUndefined: Self = StObject.set(x, "onNodeExpanded", js.undefined)
+    
+    inline def setOnNodeSelected(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Callback): Self = StObject.set(x, "onNodeSelected", js.Any.fromFunction2((t0: /* event */ Any, t1: /* node */ BootstrapTreeViewNodeData) => (value(t0, t1)).runNow()))
+    
+    inline def setOnNodeSelectedUndefined: Self = StObject.set(x, "onNodeSelected", js.undefined)
+    
+    inline def setOnNodeUnchecked(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Callback): Self = StObject.set(x, "onNodeUnchecked", js.Any.fromFunction2((t0: /* event */ Any, t1: /* node */ BootstrapTreeViewNodeData) => (value(t0, t1)).runNow()))
+    
+    inline def setOnNodeUncheckedUndefined: Self = StObject.set(x, "onNodeUnchecked", js.undefined)
+    
+    inline def setOnNodeUnselected(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Callback): Self = StObject.set(x, "onNodeUnselected", js.Any.fromFunction2((t0: /* event */ Any, t1: /* node */ BootstrapTreeViewNodeData) => (value(t0, t1)).runNow()))
+    
+    inline def setOnNodeUnselectedUndefined: Self = StObject.set(x, "onNodeUnselected", js.undefined)
+    
+    inline def setOnSearchCleared(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Callback): Self = StObject.set(x, "onSearchCleared", js.Any.fromFunction2((t0: /* event */ Any, t1: /* node */ BootstrapTreeViewNodeData) => (value(t0, t1)).runNow()))
+    
+    inline def setOnSearchClearedUndefined: Self = StObject.set(x, "onSearchCleared", js.undefined)
+    
+    inline def setOnSearchComplete(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Callback): Self = StObject.set(x, "onSearchComplete", js.Any.fromFunction2((t0: /* event */ Any, t1: /* node */ BootstrapTreeViewNodeData) => (value(t0, t1)).runNow()))
+    
+    inline def setOnSearchCompleteUndefined: Self = StObject.set(x, "onSearchComplete", js.undefined)
+    
+    inline def setOnhoverColor(value: String): Self = StObject.set(x, "onhoverColor", value.asInstanceOf[js.Any])
+    
+    inline def setOnhoverColorUndefined: Self = StObject.set(x, "onhoverColor", js.undefined)
+    
+    inline def setSearchResultBackColor(value: String): Self = StObject.set(x, "searchResultBackColor", value.asInstanceOf[js.Any])
+    
+    inline def setSearchResultBackColorUndefined: Self = StObject.set(x, "searchResultBackColor", js.undefined)
+    
+    inline def setSearchResultColor(value: String): Self = StObject.set(x, "searchResultColor", value.asInstanceOf[js.Any])
+    
+    inline def setSearchResultColorUndefined: Self = StObject.set(x, "searchResultColor", js.undefined)
+    
+    inline def setSelectedBackColor(value: String): Self = StObject.set(x, "selectedBackColor", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedBackColorUndefined: Self = StObject.set(x, "selectedBackColor", js.undefined)
+    
+    inline def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
+    
+    inline def setSelectedIcon(value: String): Self = StObject.set(x, "selectedIcon", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedIconUndefined: Self = StObject.set(x, "selectedIcon", js.undefined)
+    
+    inline def setShowBorder(value: Boolean): Self = StObject.set(x, "showBorder", value.asInstanceOf[js.Any])
+    
+    inline def setShowBorderUndefined: Self = StObject.set(x, "showBorder", js.undefined)
+    
+    inline def setShowCheckbox(value: Boolean): Self = StObject.set(x, "showCheckbox", value.asInstanceOf[js.Any])
+    
+    inline def setShowCheckboxUndefined: Self = StObject.set(x, "showCheckbox", js.undefined)
+    
+    inline def setShowIcon(value: Boolean): Self = StObject.set(x, "showIcon", value.asInstanceOf[js.Any])
+    
+    inline def setShowIconUndefined: Self = StObject.set(x, "showIcon", js.undefined)
+    
+    inline def setShowTags(value: Boolean): Self = StObject.set(x, "showTags", value.asInstanceOf[js.Any])
+    
+    inline def setShowTagsUndefined: Self = StObject.set(x, "showTags", js.undefined)
+    
+    inline def setUncheckedIcon(value: Boolean): Self = StObject.set(x, "uncheckedIcon", value.asInstanceOf[js.Any])
+    
+    inline def setUncheckedIconUndefined: Self = StObject.set(x, "uncheckedIcon", js.undefined)
+  }
 }
-

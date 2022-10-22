@@ -11,9 +11,9 @@ simple backoff based on segmentio/backo
 | Full name          | backo2 |
 | Keywords           | backoff |
 | # releases         | 1 |
-| # dependents       | 80 |
-| # downloads        | 142079807 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3341731666666668E7 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/mokesmokes/backo)

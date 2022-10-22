@@ -1,8 +1,8 @@
 package typingsJapgolly.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.servicenowLondon.servicenowLondonStrings.Equalssign
@@ -20,38 +20,34 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.servicenowLondon.servicenowLondonStrings.INSTANCEOF
   - typingsJapgolly.servicenowLondon.servicenowLondonStrings.SAMEAS
 */
-trait QueryOperator extends js.Object
-
+trait QueryOperator extends StObject
 object QueryOperator {
-  @scala.inline
-  def CONTAINS: typingsJapgolly.servicenowLondon.servicenowLondonStrings.CONTAINS = this.cast("CONTAINS")
-  @scala.inline
-  def `DOES NOT CONTAIN`: typingsJapgolly.servicenowLondon.servicenowLondonStrings.`DOES NOT CONTAIN` = this.cast("DOES NOT CONTAIN")
-  @scala.inline
-  def ENDSWITH: typingsJapgolly.servicenowLondon.servicenowLondonStrings.ENDSWITH = this.cast("ENDSWITH")
-  @scala.inline
-  def Equalssign: typingsJapgolly.servicenowLondon.servicenowLondonStrings.Equalssign = this.cast("=")
-  @scala.inline
-  def ExclamationmarkEqualssign: typingsJapgolly.servicenowLondon.servicenowLondonStrings.ExclamationmarkEqualssign = this.cast("!=")
-  @scala.inline
-  def Greaterthansign: typingsJapgolly.servicenowLondon.servicenowLondonStrings.Greaterthansign = this.cast(">")
-  @scala.inline
-  def GreaterthansignEqualssign: typingsJapgolly.servicenowLondon.servicenowLondonStrings.GreaterthansignEqualssign = this.cast(">=")
-  @scala.inline
-  def IN: typingsJapgolly.servicenowLondon.servicenowLondonStrings.IN = this.cast("IN")
-  @scala.inline
-  def INSTANCEOF: typingsJapgolly.servicenowLondon.servicenowLondonStrings.INSTANCEOF = this.cast("INSTANCEOF")
-  @scala.inline
-  def Lessthansign: typingsJapgolly.servicenowLondon.servicenowLondonStrings.Lessthansign = this.cast("<")
-  @scala.inline
-  def LessthansignEqualssign: typingsJapgolly.servicenowLondon.servicenowLondonStrings.LessthansignEqualssign = this.cast("<=")
-  @scala.inline
-  def `NOT IN`: typingsJapgolly.servicenowLondon.servicenowLondonStrings.`NOT IN` = this.cast("NOT IN")
-  @scala.inline
-  def SAMEAS: typingsJapgolly.servicenowLondon.servicenowLondonStrings.SAMEAS = this.cast("SAMEAS")
-  @scala.inline
-  def STARTSWITH: typingsJapgolly.servicenowLondon.servicenowLondonStrings.STARTSWITH = this.cast("STARTSWITH")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CONTAINS: typingsJapgolly.servicenowLondon.servicenowLondonStrings.CONTAINS = "CONTAINS".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.CONTAINS]
+  
+  inline def `DOES NOT CONTAIN`: typingsJapgolly.servicenowLondon.servicenowLondonStrings.`DOES NOT CONTAIN` = ("DOES NOT CONTAIN").asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.`DOES NOT CONTAIN`]
+  
+  inline def ENDSWITH: typingsJapgolly.servicenowLondon.servicenowLondonStrings.ENDSWITH = "ENDSWITH".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.ENDSWITH]
+  
+  inline def Equalssign: typingsJapgolly.servicenowLondon.servicenowLondonStrings.Equalssign = "=".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.Equalssign]
+  
+  inline def ExclamationmarkEqualssign: typingsJapgolly.servicenowLondon.servicenowLondonStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.ExclamationmarkEqualssign]
+  
+  inline def Greaterthansign: typingsJapgolly.servicenowLondon.servicenowLondonStrings.Greaterthansign = ">".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.Greaterthansign]
+  
+  inline def GreaterthansignEqualssign: typingsJapgolly.servicenowLondon.servicenowLondonStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.GreaterthansignEqualssign]
+  
+  inline def IN: typingsJapgolly.servicenowLondon.servicenowLondonStrings.IN = "IN".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.IN]
+  
+  inline def INSTANCEOF: typingsJapgolly.servicenowLondon.servicenowLondonStrings.INSTANCEOF = "INSTANCEOF".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.INSTANCEOF]
+  
+  inline def Lessthansign: typingsJapgolly.servicenowLondon.servicenowLondonStrings.Lessthansign = "<".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.Lessthansign]
+  
+  inline def LessthansignEqualssign: typingsJapgolly.servicenowLondon.servicenowLondonStrings.LessthansignEqualssign = "<=".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.LessthansignEqualssign]
+  
+  inline def `NOT IN`: typingsJapgolly.servicenowLondon.servicenowLondonStrings.`NOT IN` = ("NOT IN").asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.`NOT IN`]
+  
+  inline def SAMEAS: typingsJapgolly.servicenowLondon.servicenowLondonStrings.SAMEAS = "SAMEAS".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.SAMEAS]
+  
+  inline def STARTSWITH: typingsJapgolly.servicenowLondon.servicenowLondonStrings.STARTSWITH = "STARTSWITH".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.STARTSWITH]
 }
-

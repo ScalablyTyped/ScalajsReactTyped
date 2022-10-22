@@ -1,10 +1,10 @@
-package typingsJapgolly
+package typingsJapgolly.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object jsfl {
-  type ElementCollection = typingsJapgolly.jsfl.GenericCollection[typingsJapgolly.jsfl.FlashElement]
-  type ItemCollection = typingsJapgolly.jsfl.GenericCollection[typingsJapgolly.jsfl.FlashItem]
-}
+
+type ElementCollection = GenericCollection[FlashElement]
+
+type ItemCollection = GenericCollection[FlashItem]

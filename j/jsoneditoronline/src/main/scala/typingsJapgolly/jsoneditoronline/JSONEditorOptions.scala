@@ -1,34 +1,49 @@
 package typingsJapgolly.jsoneditoronline
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSONEditorOptions extends js.Object {
+trait JSONEditorOptions extends StObject {
+  
   var change: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var history: js.UndefOr[Boolean] = js.undefined
+  
   var mode: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var search: js.UndefOr[Boolean] = js.undefined
 }
-
 object JSONEditorOptions {
-  @scala.inline
-  def apply(
-    change: js.UndefOr[Callback] = js.undefined,
-    history: js.UndefOr[Boolean] = js.undefined,
-    mode: String = null,
-    name: String = null,
-    search: js.UndefOr[Boolean] = js.undefined
-  ): JSONEditorOptions = {
+  
+  inline def apply(): JSONEditorOptions = {
     val __obj = js.Dynamic.literal()
-    change.foreach(p => __obj.updateDynamic("change")(p.toJsFn))
-    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorOptions]
   }
+  
+  extension [Self <: JSONEditorOptions](x: Self) {
+    
+    inline def setChange(value: Callback): Self = StObject.set(x, "change", value.toJsFn)
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+  }
 }
-

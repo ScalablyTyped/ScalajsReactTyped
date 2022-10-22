@@ -1,39 +1,47 @@
 package typingsJapgolly.postmanCollection.mod
 
-import typingsJapgolly.postmanCollection.AnonSrc
+import typingsJapgolly.postmanCollection.anon.Src
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CertificateDefinition extends PropertyDefinition {
-  var cert: js.UndefOr[AnonSrc | String] = js.undefined
-  var key: js.UndefOr[AnonSrc | String] = js.undefined
+trait CertificateDefinition
+  extends StObject
+     with PropertyDefinition {
+  
+  var cert: js.UndefOr[Src | String] = js.undefined
+  
+  var key: js.UndefOr[Src | String] = js.undefined
+  
   var matches: js.UndefOr[js.Array[String] | UrlMatchPatternList] = js.undefined
+  
   var passphrase: js.UndefOr[String] = js.undefined
 }
-
 object CertificateDefinition {
-  @scala.inline
-  def apply(
-    cert: AnonSrc | String = null,
-    description: String | DescriptionDefinition = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    key: AnonSrc | String = null,
-    matches: js.Array[String] | UrlMatchPatternList = null,
-    name: String = null,
-    passphrase: String = null
-  ): CertificateDefinition = {
+  
+  inline def apply(): CertificateDefinition = {
     val __obj = js.Dynamic.literal()
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateDefinition]
   }
+  
+  extension [Self <: CertificateDefinition](x: Self) {
+    
+    inline def setCert(value: Src | String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    
+    inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+    
+    inline def setKey(value: Src | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setMatches(value: js.Array[String] | UrlMatchPatternList): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    
+    inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+    
+    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value*))
+    
+    inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+    
+    inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+  }
 }
-

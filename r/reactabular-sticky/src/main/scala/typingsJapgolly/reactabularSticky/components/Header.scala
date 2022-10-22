@@ -1,56 +1,44 @@
 package typingsJapgolly.reactabularSticky.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.reactabularSticky.PartialUIEvent
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactabularSticky.anon.PartialUIEvent
 import typingsJapgolly.reactabularSticky.mod.StickyHeaderProps
-import typingsJapgolly.reactabularTable.PartialCSSStyleDeclaratio
+import typingsJapgolly.reactabularTable.anon.PartialCSSStyleDeclaratio
 import typingsJapgolly.reactabularTable.mod.Column
 import typingsJapgolly.reactabularTable.mod.HeaderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Header {
-  def apply(
-    className: String = null,
-    headerRows: js.Array[Column] = null,
-    onScroll: /* e */ PartialUIEvent => Callback = null,
-    style: PartialCSSStyleDeclaratio = null,
-    tableBody: HTMLElement = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    StickyHeaderProps with HeaderProps, 
-    typingsJapgolly.reactabularSticky.mod.Header, 
-    Unit, 
-    StickyHeaderProps with HeaderProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (headerRows != null) __obj.updateDynamic("headerRows")(headerRows.asInstanceOf[js.Any])
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.reactabularSticky.PartialUIEvent) => onScroll(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tableBody != null) __obj.updateDynamic("tableBody")(tableBody.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactabularSticky.mod.StickyHeaderProps with typingsJapgolly.reactabularTable.mod.HeaderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactabularSticky.mod.Header](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactabularSticky.mod.StickyHeaderProps with typingsJapgolly.reactabularTable.mod.HeaderProps])(children: _*)
-  }
   @JSImport("reactabular-sticky", "Header")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactabularSticky.mod.Header] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def headerRows(value: js.Array[Column]): this.type = set("headerRows", value.asInstanceOf[js.Any])
+    
+    inline def headerRowsVarargs(value: Column*): this.type = set("headerRows", js.Array(value*))
+    
+    inline def onScroll(value: /* e */ PartialUIEvent => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: /* e */ PartialUIEvent) => value(t0).runNow()))
+    
+    inline def style(value: PartialCSSStyleDeclaratio): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def tableBody(value: HTMLElement): this.type = set("tableBody", value.asInstanceOf[js.Any])
+    
+    inline def tableBodyNull: this.type = set("tableBody", null)
+  }
+  
+  implicit def make(companion: Header.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: StickyHeaderProps & HeaderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

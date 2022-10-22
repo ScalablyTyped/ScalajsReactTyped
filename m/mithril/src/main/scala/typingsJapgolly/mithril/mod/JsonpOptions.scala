@@ -2,43 +2,61 @@ package typingsJapgolly.mithril.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JsonpOptions extends js.Object {
+trait JsonpOptions extends StObject {
+  
   /** If false, redraws mounted components upon completion of the request. If true, it does not. */
   var background: js.UndefOr[Boolean] = js.undefined
+  
   /** The data to be serialized into the request body. */
-  var body: js.UndefOr[js.Any] = js.undefined
+  var body: js.UndefOr[Any] = js.undefined
+  
   /** The name of the querystring parameter name that specifies the callback name. */
   var callbackKey: js.UndefOr[String] = js.undefined
+  
   /** The name of the function that will be called as the callback. */
   var callbackName: js.UndefOr[String] = js.undefined
+  
   /** The data to be interpolated into the URL and serialized into the querystring. */
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var params: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
   /** A constructor to be applied to each object in the response. */
-  var `type`: js.UndefOr[Instantiable1[/* o */ js.Any, js.Any]] = js.undefined
+  var `type`: js.UndefOr[Instantiable1[/* o */ Any, Any]] = js.undefined
 }
-
 object JsonpOptions {
-  @scala.inline
-  def apply(
-    background: js.UndefOr[Boolean] = js.undefined,
-    body: js.Any = null,
-    callbackKey: String = null,
-    callbackName: String = null,
-    params: StringDictionary[js.Any] = null,
-    `type`: Instantiable1[/* o */ js.Any, js.Any] = null
-  ): JsonpOptions = {
+  
+  inline def apply(): JsonpOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (callbackKey != null) __obj.updateDynamic("callbackKey")(callbackKey.asInstanceOf[js.Any])
-    if (callbackName != null) __obj.updateDynamic("callbackName")(callbackName.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonpOptions]
   }
+  
+  extension [Self <: JsonpOptions](x: Self) {
+    
+    inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setCallbackKey(value: String): Self = StObject.set(x, "callbackKey", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackKeyUndefined: Self = StObject.set(x, "callbackKey", js.undefined)
+    
+    inline def setCallbackName(value: String): Self = StObject.set(x, "callbackName", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackNameUndefined: Self = StObject.set(x, "callbackName", js.undefined)
+    
+    inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
+    inline def setType(value: Instantiable1[/* o */ Any, Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

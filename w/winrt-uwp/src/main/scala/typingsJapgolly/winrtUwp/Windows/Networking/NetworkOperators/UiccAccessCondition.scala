@@ -1,74 +1,61 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UiccAccessCondition extends js.Object
-
+sealed trait UiccAccessCondition extends StObject
 /** Describes the conditions placed on operations using a UICC application. */
 @JSGlobal("Windows.Networking.NetworkOperators.UiccAccessCondition")
 @js.native
-object UiccAccessCondition extends js.Object {
+object UiccAccessCondition extends StObject {
+  
   /** Access requires Administrative 5. */
   @js.native
-  sealed trait administrative5 extends UiccAccessCondition
+  sealed trait administrative5
+    extends StObject
+       with UiccAccessCondition
   
   /** Access requires Administrative 6. */
   @js.native
-  sealed trait administrative6 extends UiccAccessCondition
+  sealed trait administrative6
+    extends StObject
+       with UiccAccessCondition
   
   /** Access is always allowed. */
   @js.native
-  sealed trait alwaysAllowed extends UiccAccessCondition
+  sealed trait alwaysAllowed
+    extends StObject
+       with UiccAccessCondition
   
   /** Access is never allowed. */
   @js.native
-  sealed trait neverAllowed extends UiccAccessCondition
+  sealed trait neverAllowed
+    extends StObject
+       with UiccAccessCondition
   
   /** Access requires PIN 1. */
   @js.native
-  sealed trait pin1 extends UiccAccessCondition
+  sealed trait pin1
+    extends StObject
+       with UiccAccessCondition
   
   /** Access requires PIN 2. */
   @js.native
-  sealed trait pin2 extends UiccAccessCondition
+  sealed trait pin2
+    extends StObject
+       with UiccAccessCondition
   
   /** Access requires PIN 3. */
   @js.native
-  sealed trait pin3 extends UiccAccessCondition
+  sealed trait pin3
+    extends StObject
+       with UiccAccessCondition
   
   /** Access requires PIN 4. */
   @js.native
-  sealed trait pin4 extends UiccAccessCondition
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UiccAccessCondition with Double] = js.native
-  /* 5 */ @js.native
-  object administrative5 extends TopLevel[administrative5 with Double]
-  
-  /* 6 */ @js.native
-  object administrative6 extends TopLevel[administrative6 with Double]
-  
-  /* 0 */ @js.native
-  object alwaysAllowed extends TopLevel[alwaysAllowed with Double]
-  
-  /* 7 */ @js.native
-  object neverAllowed extends TopLevel[neverAllowed with Double]
-  
-  /* 1 */ @js.native
-  object pin1 extends TopLevel[pin1 with Double]
-  
-  /* 2 */ @js.native
-  object pin2 extends TopLevel[pin2 with Double]
-  
-  /* 3 */ @js.native
-  object pin3 extends TopLevel[pin3 with Double]
-  
-  /* 4 */ @js.native
-  object pin4 extends TopLevel[pin4 with Double]
-  
+  sealed trait pin4
+    extends StObject
+       with UiccAccessCondition
 }
-

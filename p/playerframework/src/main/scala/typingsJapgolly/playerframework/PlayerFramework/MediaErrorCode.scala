@@ -1,62 +1,52 @@
 package typingsJapgolly.playerframework.PlayerFramework
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaErrorCode extends js.Object
-
+sealed trait MediaErrorCode extends StObject
 @JSGlobal("PlayerFramework.MediaErrorCode")
 @js.native
-object MediaErrorCode extends js.Object {
-  /**
-  		* Media playback was aborted.
-  		**/
-  @js.native
-  sealed trait aborted extends MediaErrorCode
+object MediaErrorCode extends StObject {
   
   /**
-  		* Media playback was aborted due to a corruption problem or because unsupported features were used.
-  		**/
+    * Media playback was aborted.
+    **/
   @js.native
-  sealed trait decode extends MediaErrorCode
+  sealed trait aborted
+    extends StObject
+       with MediaErrorCode
   
   /**
-  		* Media download failed due to a network error.
-  		**/
+    * Media playback was aborted due to a corruption problem or because unsupported features were used.
+    **/
   @js.native
-  sealed trait network extends MediaErrorCode
+  sealed trait decode
+    extends StObject
+       with MediaErrorCode
   
   /**
-  		* Media source could not be loaded either because the server or network failed or because the format is not supported.
-  		**/
+    * Media download failed due to a network error.
+    **/
   @js.native
-  sealed trait notSupported extends MediaErrorCode
+  sealed trait network
+    extends StObject
+       with MediaErrorCode
   
   /**
-  		* An unknown media error occurred.
-  		**/
+    * Media source could not be loaded either because the server or network failed or because the format is not supported.
+    **/
   @js.native
-  sealed trait unknown extends MediaErrorCode
+  sealed trait notSupported
+    extends StObject
+       with MediaErrorCode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaErrorCode with Double] = js.native
-  /* 1 */ @js.native
-  object aborted extends TopLevel[aborted with Double]
-  
-  /* 3 */ @js.native
-  object decode extends TopLevel[decode with Double]
-  
-  /* 2 */ @js.native
-  object network extends TopLevel[network with Double]
-  
-  /* 4 */ @js.native
-  object notSupported extends TopLevel[notSupported with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  /**
+    * An unknown media error occurred.
+    **/
+  @js.native
+  sealed trait unknown
+    extends StObject
+       with MediaErrorCode
 }
-

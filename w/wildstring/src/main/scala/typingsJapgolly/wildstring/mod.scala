@@ -1,16 +1,27 @@
 package typingsJapgolly.wildstring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wildstring", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  var caseSensitive: Boolean = js.native
-  var wildcard: String = js.native
-  def `match`(pattern: String, string: String): Boolean = js.native
-  def replace(pattern: String, strings: String): String = js.native
-  def replace(pattern: String, strings: js.Array[String]): String = js.native
+object mod {
+  
+  @JSImport("wildstring", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("wildstring", "caseSensitive")
+  @js.native
+  def caseSensitive: Boolean = js.native
+  inline def caseSensitive_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("caseSensitive")(x.asInstanceOf[js.Any])
+  
+  inline def `match`(pattern: String, string: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(pattern.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def replace(pattern: String, strings: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(pattern.asInstanceOf[js.Any], strings.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def replace(pattern: String, strings: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(pattern.asInstanceOf[js.Any], strings.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @JSImport("wildstring", "wildcard")
+  @js.native
+  def wildcard: String = js.native
+  inline def wildcard_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wildcard")(x.asInstanceOf[js.Any])
 }
-

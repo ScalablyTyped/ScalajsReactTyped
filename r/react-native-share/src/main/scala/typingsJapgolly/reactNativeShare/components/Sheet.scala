@@ -1,37 +1,21 @@
 package typingsJapgolly.reactNativeShare.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent.Default
 import typingsJapgolly.reactNativeShare.sheetMod.SheetProps
-import typingsJapgolly.reactNativeShare.sheetMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Sheet {
-  def apply(
-    visible: Boolean,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SheetProps, default, Unit, SheetProps] = {
-    val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeShare.sheetMod.SheetProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeShare.sheetMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeShare.sheetMod.SheetProps])(children: _*)
+  inline def apply(visible: Boolean): Default[typingsJapgolly.reactNativeShare.mod.Sheet] = {
+    val __props = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
+    new Default[typingsJapgolly.reactNativeShare.mod.Sheet](js.Array(this.component, __props.asInstanceOf[SheetProps]))
   }
-  @JSImport("react-native-share/Sheet", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("react-native-share", "Sheet")
+  @js.native
+  val component: js.Object = js.native
+  
+  def withProps(p: SheetProps): Default[typingsJapgolly.reactNativeShare.mod.Sheet] = new Default[typingsJapgolly.reactNativeShare.mod.Sheet](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

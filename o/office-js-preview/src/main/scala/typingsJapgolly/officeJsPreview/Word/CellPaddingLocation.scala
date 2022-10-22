@@ -1,44 +1,52 @@
 package typingsJapgolly.officeJsPreview.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CellPaddingLocation extends js.Object
-
+sealed trait CellPaddingLocation extends StObject
 /**
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.CellPaddingLocation")
 @js.native
-object CellPaddingLocation extends js.Object {
+object CellPaddingLocation extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait bottom extends CellPaddingLocation
+  sealed trait bottom
+    extends StObject
+       with CellPaddingLocation
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait left extends CellPaddingLocation
+  sealed trait left
+    extends StObject
+       with CellPaddingLocation
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait right extends CellPaddingLocation
+  sealed trait right
+    extends StObject
+       with CellPaddingLocation
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait top extends CellPaddingLocation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[CellPaddingLocation with String] = js.native
-  /* "Bottom" */ @js.native
-  object bottom extends TopLevel[bottom with String]
-  
-  /* "Left" */ @js.native
-  object left extends TopLevel[left with String]
-  
-  /* "Right" */ @js.native
-  object right extends TopLevel[right with String]
-  
-  /* "Top" */ @js.native
-  object top extends TopLevel[top with String]
-  
+  sealed trait top
+    extends StObject
+       with CellPaddingLocation
 }
-

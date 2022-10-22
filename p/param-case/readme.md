@@ -1,7 +1,7 @@
 
 # Scala.js typings for param-case
 
-Typings are for version 2.1.1
+Typings are for version 3.0.4
 
 ## Library description:
 Transform into a lower cased string with dashes between words
@@ -10,10 +10,10 @@ Transform into a lower cased string with dashes between words
 | ------------------ | :-------------: |
 | Full name          | param-case |
 | Keywords           | param, case, kebab, hyphen, dash, dash-case, param-case, convert, transform |
-| # releases         | 5 |
-| # dependents       | 149 |
-| # downloads        | 206403095 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5.7648942333333336E7 |
+| # stars            | 1779.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/param-case#readme)

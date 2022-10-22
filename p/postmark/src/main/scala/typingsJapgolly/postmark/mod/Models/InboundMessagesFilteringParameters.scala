@@ -1,13 +1,13 @@
 package typingsJapgolly.postmark.mod.Models
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Models.InboundMessagesFilteringParameters")
 @js.native
-class InboundMessagesFilteringParameters protected ()
-  extends typingsJapgolly.postmark.modelsMod.InboundMessagesFilteringParameters {
+open class InboundMessagesFilteringParameters protected ()
+  extends typingsJapgolly.postmark.distClientModelsMod.InboundMessagesFilteringParameters {
   def this(
     count: js.UndefOr[Double],
     offset: js.UndefOr[Double],
@@ -15,10 +15,11 @@ class InboundMessagesFilteringParameters protected ()
     recipient: js.UndefOr[String],
     fromEmail: js.UndefOr[String],
     tag: js.UndefOr[String],
-    status: js.UndefOr[typingsJapgolly.postmark.messageFilteringParametersMod.InboundMessageStatus],
+    status: js.UndefOr[
+        typingsJapgolly.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus
+      ],
     fromDate: js.UndefOr[String],
     toDate: js.UndefOr[String],
     subject: js.UndefOr[String]
   ) = this()
 }
-

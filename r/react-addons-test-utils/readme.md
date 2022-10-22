@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-addons-test-utils
 
-Typings are for version 0.14
+Typings are for version 15.6
 
 ## Library description:
 This package provides the React TestUtils add-on.
@@ -10,10 +10,10 @@ This package provides the React TestUtils add-on.
 | ------------------ | :-------------: |
 | Full name          | react-addons-test-utils |
 | Keywords           | react, react-addon |
-| # releases         | 1 |
-| # dependents       | 309 |
-| # downloads        | 14594933 |
-| # stars            | 15 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 789692.6666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/react#readme)

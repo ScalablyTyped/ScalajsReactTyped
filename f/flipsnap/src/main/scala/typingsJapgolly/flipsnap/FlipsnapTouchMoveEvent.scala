@@ -1,13 +1,16 @@
 package typingsJapgolly.flipsnap
 
-import typingsJapgolly.std.Event_
+import typingsJapgolly.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlipsnapTouchMoveEvent extends Event_ {
+trait FlipsnapTouchMoveEvent
+  extends StObject
+     with Event {
+  
   var delta: Double = js.native
+  
   var direction: Double = js.native
 }
-

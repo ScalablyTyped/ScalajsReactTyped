@@ -2,13 +2,14 @@ package typingsJapgolly.sequelize.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait jsonStatic
-  extends /**
+  extends StObject
+     with /**
   * Creates an object representing nested where conditions for postgres's json data-type.
   * @see {Model#find}
   *
@@ -24,4 +25,3 @@ Instantiable1[(/* conditionsOrPath */ js.Object) | (/* conditionsOrPath */ Strin
       (/* value */ Boolean) | (/* value */ Double) | (/* value */ String), 
       json
     ]
-

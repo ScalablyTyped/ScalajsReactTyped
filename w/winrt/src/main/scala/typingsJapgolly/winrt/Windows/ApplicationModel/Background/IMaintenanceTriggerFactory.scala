@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Background
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IMaintenanceTriggerFactory extends js.Object {
+trait IMaintenanceTriggerFactory extends StObject {
+  
   def create(freshnessTime: Double, oneShot: Boolean): MaintenanceTrigger
 }
-
 object IMaintenanceTriggerFactory {
-  @scala.inline
-  def apply(create: (Double, Boolean) => CallbackTo[MaintenanceTrigger]): IMaintenanceTriggerFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Boolean) => create(t0, t1).runNow()))
+  
+  inline def apply(create: (Double, Boolean) => MaintenanceTrigger): IMaintenanceTriggerFactory = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
     __obj.asInstanceOf[IMaintenanceTriggerFactory]
   }
+  
+  extension [Self <: IMaintenanceTriggerFactory](x: Self) {
+    
+    inline def setCreate(value: (Double, Boolean) => MaintenanceTrigger): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+  }
 }
-

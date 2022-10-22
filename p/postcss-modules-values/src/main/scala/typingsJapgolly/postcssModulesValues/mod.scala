@@ -1,12 +1,40 @@
 package typingsJapgolly.postcssModulesValues
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.postcss.mod.Plugin_
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.postcss.mod.PluginCreator
+import typingsJapgolly.postcssModulesValues.mod.values.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("postcss-modules-values", JSImport.Namespace)
-@js.native
-object mod extends TopLevel[Plugin_[Unit]]
-
+object mod extends Shortcut {
+  
+  @JSImport("postcss-modules-values", JSImport.Namespace)
+  @js.native
+  val ^ : PluginCreator[Options] = js.native
+  
+  type _To = PluginCreator[Options]
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: PluginCreator[Options] = ^
+  
+  object values {
+    
+    trait Options extends StObject {
+      
+      def createImportedName(name: String): String
+    }
+    object Options {
+      
+      inline def apply(createImportedName: String => String): Options = {
+        val __obj = js.Dynamic.literal(createImportedName = js.Any.fromFunction1(createImportedName))
+        __obj.asInstanceOf[Options]
+      }
+      
+      extension [Self <: Options](x: Self) {
+        
+        inline def setCreateImportedName(value: String => String): Self = StObject.set(x, "createImportedName", js.Any.fromFunction1(value))
+      }
+    }
+  }
+}

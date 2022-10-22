@@ -1,23 +1,25 @@
 package typingsJapgolly.jqueryWindow
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.jqueryWindow.JQueryWindow.Window
 import typingsJapgolly.jqueryWindow.JQueryWindow.WindowOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Register with JQuery instance
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   def window(options: WindowOptions): Window
 }
-
 object JQuery {
-  @scala.inline
-  def apply(window: WindowOptions => CallbackTo[Window]): JQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("window")(js.Any.fromFunction1((t0: typingsJapgolly.jqueryWindow.JQueryWindow.WindowOptions) => window(t0).runNow()))
+  
+  inline def apply(window: WindowOptions => Window): JQuery = {
+    val __obj = js.Dynamic.literal(window = js.Any.fromFunction1(window))
     __obj.asInstanceOf[JQuery]
   }
+  
+  extension [Self <: JQuery](x: Self) {
+    
+    inline def setWindow(value: WindowOptions => Window): Self = StObject.set(x, "window", js.Any.fromFunction1(value))
+  }
 }
-

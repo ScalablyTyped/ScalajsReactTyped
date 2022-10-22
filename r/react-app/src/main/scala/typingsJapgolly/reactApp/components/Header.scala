@@ -1,14 +1,16 @@
 package typingsJapgolly.reactApp.components
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object Header
-  extends SharedApply_Object_1928072692[typingsJapgolly.reactApp.mod.Header] {
+object Header {
+  
   @JSImport("react-app", "Header")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: Header.type): SharedBuilder_Object_159303587[typingsJapgolly.reactApp.mod.Header] = new SharedBuilder_Object_159303587[typingsJapgolly.reactApp.mod.Header](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: js.Object): SharedBuilder_Object_159303587[typingsJapgolly.reactApp.mod.Header] = new SharedBuilder_Object_159303587[typingsJapgolly.reactApp.mod.Header](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

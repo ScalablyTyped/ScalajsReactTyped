@@ -1,15 +1,30 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services.Formatting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.Services.Formatting.TextEditInfo")
-@js.native
-class TextEditInfo protected () extends js.Object {
-  def this(position: Double, length: Double, replaceWith: String) = this()
-  var length: Double = js.native
-  var position: Double = js.native
-  var replaceWith: String = js.native
+trait TextEditInfo extends StObject {
+  
+  var length: Double
+  
+  var position: Double
+  
+  var replaceWith: String
 }
-
+object TextEditInfo {
+  
+  inline def apply(length: Double, position: Double, replaceWith: String): TextEditInfo = {
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], replaceWith = replaceWith.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextEditInfo]
+  }
+  
+  extension [Self <: TextEditInfo](x: Self) {
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setReplaceWith(value: String): Self = StObject.set(x, "replaceWith", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,40 +1,58 @@
 package typingsJapgolly.qrcode.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QRCodeOptions extends js.Object {
+trait QRCodeOptions extends StObject {
+  
   /**
     * Error correction level.
-    * Possible values are low, medium, quartile, high or L, M, Q, H.
-    * Default: M
+    * @default 'M'
     */
   var errorCorrectionLevel: js.UndefOr[QRCodeErrorCorrectionLevel] = js.undefined
+  
+  /**
+    * Mask pattern used to mask the symbol.
+    *
+    * If not specified the more suitable value will be calculated.
+    */
+  var maskPattern: js.UndefOr[QRCodeMaskPattern] = js.undefined
+  
   /**
     * Helper function used internally to convert a kanji to its Shift JIS value.
     * Provide this function if you need support for Kanji mode.
     */
-  var toSJISFunc: js.UndefOr[js.Function1[/* codePoint */ String, Double]] = js.undefined
+  var toSJISFunc: js.UndefOr[QRCodeToSJISFunc] = js.undefined
+  
   /**
     * QR Code version. If not specified the more suitable value will be calculated.
     */
   var version: js.UndefOr[Double] = js.undefined
 }
-
 object QRCodeOptions {
-  @scala.inline
-  def apply(
-    errorCorrectionLevel: QRCodeErrorCorrectionLevel = null,
-    toSJISFunc: /* codePoint */ String => CallbackTo[Double] = null,
-    version: Int | Double = null
-  ): QRCodeOptions = {
+  
+  inline def apply(): QRCodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel.asInstanceOf[js.Any])
-    if (toSJISFunc != null) __obj.updateDynamic("toSJISFunc")(js.Any.fromFunction1((t0: /* codePoint */ java.lang.String) => toSJISFunc(t0).runNow()))
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[QRCodeOptions]
   }
+  
+  extension [Self <: QRCodeOptions](x: Self) {
+    
+    inline def setErrorCorrectionLevel(value: QRCodeErrorCorrectionLevel): Self = StObject.set(x, "errorCorrectionLevel", value.asInstanceOf[js.Any])
+    
+    inline def setErrorCorrectionLevelUndefined: Self = StObject.set(x, "errorCorrectionLevel", js.undefined)
+    
+    inline def setMaskPattern(value: QRCodeMaskPattern): Self = StObject.set(x, "maskPattern", value.asInstanceOf[js.Any])
+    
+    inline def setMaskPatternUndefined: Self = StObject.set(x, "maskPattern", js.undefined)
+    
+    inline def setToSJISFunc(value: /* codePoint */ String => Double): Self = StObject.set(x, "toSJISFunc", js.Any.fromFunction1(value))
+    
+    inline def setToSJISFuncUndefined: Self = StObject.set(x, "toSJISFunc", js.undefined)
+    
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

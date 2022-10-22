@@ -1,25 +1,42 @@
 package typingsJapgolly.jqueryNoty
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NotyAnimationOptions extends js.Object {
-  var close: js.UndefOr[js.Any] = js.undefined
+trait NotyAnimationOptions extends StObject {
+  
+  var close: js.UndefOr[Any] = js.undefined
+  
   var easing: js.UndefOr[String] = js.undefined
-  var open: js.UndefOr[js.Any] = js.undefined
+  
+  var open: js.UndefOr[Any] = js.undefined
+  
   var speed: js.UndefOr[Double] = js.undefined
 }
-
 object NotyAnimationOptions {
-  @scala.inline
-  def apply(close: js.Any = null, easing: String = null, open: js.Any = null, speed: Int | Double = null): NotyAnimationOptions = {
+  
+  inline def apply(): NotyAnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotyAnimationOptions]
   }
+  
+  extension [Self <: NotyAnimationOptions](x: Self) {
+    
+    inline def setClose(value: Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    
+    inline def setOpen(value: Any): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+  }
 }
-

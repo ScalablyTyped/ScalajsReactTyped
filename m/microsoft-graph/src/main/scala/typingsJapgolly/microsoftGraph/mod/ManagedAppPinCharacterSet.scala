@@ -1,21 +1,17 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.numeric
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.alphanumericAndSymbol
 */
-trait ManagedAppPinCharacterSet extends js.Object
-
+trait ManagedAppPinCharacterSet extends StObject
 object ManagedAppPinCharacterSet {
-  @scala.inline
-  def alphanumericAndSymbol: typingsJapgolly.microsoftGraph.microsoftGraphStrings.alphanumericAndSymbol = this.cast("alphanumericAndSymbol")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def numeric: typingsJapgolly.microsoftGraph.microsoftGraphStrings.numeric = this.cast("numeric")
+  
+  inline def alphanumericAndSymbol: typingsJapgolly.microsoftGraph.microsoftGraphStrings.alphanumericAndSymbol = "alphanumericAndSymbol".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.alphanumericAndSymbol]
+  
+  inline def numeric: typingsJapgolly.microsoftGraph.microsoftGraphStrings.numeric = "numeric".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.numeric]
 }
-

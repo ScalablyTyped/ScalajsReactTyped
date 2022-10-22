@@ -1,26 +1,39 @@
 package typingsJapgolly.yandexMaps.mod.control
 
-import typingsJapgolly.yandexMaps.AnonContentString
-import typingsJapgolly.yandexMaps.AnonLayout
-import typingsJapgolly.yandexMaps.AnonSelected
+import typingsJapgolly.yandexMaps.anon.Layout
+import typingsJapgolly.yandexMaps.anon.Selected
+import typingsJapgolly.yandexMaps.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IListBoxItemParameters extends js.Object {
-  var data: js.UndefOr[AnonContentString] = js.undefined
-  var options: js.UndefOr[AnonLayout] = js.undefined
-  var state: js.UndefOr[AnonSelected] = js.undefined
+trait IListBoxItemParameters extends StObject {
+  
+  var data: js.UndefOr[`0`] = js.undefined
+  
+  var options: js.UndefOr[Layout] = js.undefined
+  
+  var state: js.UndefOr[Selected] = js.undefined
 }
-
 object IListBoxItemParameters {
-  @scala.inline
-  def apply(data: AnonContentString = null, options: AnonLayout = null, state: AnonSelected = null): IListBoxItemParameters = {
+  
+  inline def apply(): IListBoxItemParameters = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListBoxItemParameters]
   }
+  
+  extension [Self <: IListBoxItemParameters](x: Self) {
+    
+    inline def setData(value: `0`): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setOptions(value: Layout): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setState(value: Selected): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+  }
 }
-

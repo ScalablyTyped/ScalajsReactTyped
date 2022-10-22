@@ -1,46 +1,65 @@
 package typingsJapgolly.jsfl
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FlashActionsPanel extends js.Object {
-  def getClassForObject(): js.Any
-  def getScriptAssistMode(): js.Any
-  def getSelectedText(): js.Any
-  def getText(): js.Any
-  def hasSelection(): js.Any
-  def replaceSelectedText(): js.Any
-  def setScriptAssistMode(): js.Any
-  def setSelection(): js.Any
-  def setText(): js.Any
+trait FlashActionsPanel extends StObject {
+  
+  def getClassForObject(): Any
+  
+  def getScriptAssistMode(): Any
+  
+  def getSelectedText(): Any
+  
+  def getText(): Any
+  
+  def hasSelection(): Any
+  
+  def replaceSelectedText(): Any
+  
+  def setScriptAssistMode(): Any
+  
+  def setSelection(): Any
+  
+  def setText(): Any
 }
-
 object FlashActionsPanel {
-  @scala.inline
-  def apply(
-    getClassForObject: CallbackTo[js.Any],
-    getScriptAssistMode: CallbackTo[js.Any],
-    getSelectedText: CallbackTo[js.Any],
-    getText: CallbackTo[js.Any],
-    hasSelection: CallbackTo[js.Any],
-    replaceSelectedText: CallbackTo[js.Any],
-    setScriptAssistMode: CallbackTo[js.Any],
-    setSelection: CallbackTo[js.Any],
-    setText: CallbackTo[js.Any]
+  
+  inline def apply(
+    getClassForObject: CallbackTo[Any],
+    getScriptAssistMode: CallbackTo[Any],
+    getSelectedText: CallbackTo[Any],
+    getText: CallbackTo[Any],
+    hasSelection: CallbackTo[Any],
+    replaceSelectedText: CallbackTo[Any],
+    setScriptAssistMode: CallbackTo[Any],
+    setSelection: CallbackTo[Any],
+    setText: CallbackTo[Any]
   ): FlashActionsPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getClassForObject")(getClassForObject.toJsFn)
-    __obj.updateDynamic("getScriptAssistMode")(getScriptAssistMode.toJsFn)
-    __obj.updateDynamic("getSelectedText")(getSelectedText.toJsFn)
-    __obj.updateDynamic("getText")(getText.toJsFn)
-    __obj.updateDynamic("hasSelection")(hasSelection.toJsFn)
-    __obj.updateDynamic("replaceSelectedText")(replaceSelectedText.toJsFn)
-    __obj.updateDynamic("setScriptAssistMode")(setScriptAssistMode.toJsFn)
-    __obj.updateDynamic("setSelection")(setSelection.toJsFn)
-    __obj.updateDynamic("setText")(setText.toJsFn)
+    val __obj = js.Dynamic.literal(getClassForObject = getClassForObject.toJsFn, getScriptAssistMode = getScriptAssistMode.toJsFn, getSelectedText = getSelectedText.toJsFn, getText = getText.toJsFn, hasSelection = hasSelection.toJsFn, replaceSelectedText = replaceSelectedText.toJsFn, setScriptAssistMode = setScriptAssistMode.toJsFn, setSelection = setSelection.toJsFn, setText = setText.toJsFn)
     __obj.asInstanceOf[FlashActionsPanel]
   }
+  
+  extension [Self <: FlashActionsPanel](x: Self) {
+    
+    inline def setGetClassForObject(value: CallbackTo[Any]): Self = StObject.set(x, "getClassForObject", value.toJsFn)
+    
+    inline def setGetScriptAssistMode(value: CallbackTo[Any]): Self = StObject.set(x, "getScriptAssistMode", value.toJsFn)
+    
+    inline def setGetSelectedText(value: CallbackTo[Any]): Self = StObject.set(x, "getSelectedText", value.toJsFn)
+    
+    inline def setGetText(value: CallbackTo[Any]): Self = StObject.set(x, "getText", value.toJsFn)
+    
+    inline def setHasSelection(value: CallbackTo[Any]): Self = StObject.set(x, "hasSelection", value.toJsFn)
+    
+    inline def setReplaceSelectedText(value: CallbackTo[Any]): Self = StObject.set(x, "replaceSelectedText", value.toJsFn)
+    
+    inline def setSetScriptAssistMode(value: CallbackTo[Any]): Self = StObject.set(x, "setScriptAssistMode", value.toJsFn)
+    
+    inline def setSetSelection(value: CallbackTo[Any]): Self = StObject.set(x, "setSelection", value.toJsFn)
+    
+    inline def setSetText(value: CallbackTo[Any]): Self = StObject.set(x, "setText", value.toJsFn)
+  }
 }
-

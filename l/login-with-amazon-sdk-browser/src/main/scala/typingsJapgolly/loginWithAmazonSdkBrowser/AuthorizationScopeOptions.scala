@@ -1,8 +1,8 @@
 package typingsJapgolly.loginWithAmazonSdkBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -13,16 +13,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profileColonuser_id
   - typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.postal_code
 */
-trait AuthorizationScopeOptions extends js.Object
-
+trait AuthorizationScopeOptions extends StObject
 object AuthorizationScopeOptions {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def postal_code: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.postal_code = this.cast("postal_code")
-  @scala.inline
-  def profile: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profile = this.cast("profile")
-  @scala.inline
-  def profileColonuser_id: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profileColonuser_id = this.cast("profile:user_id")
+  
+  inline def postal_code: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.postal_code = "postal_code".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.postal_code]
+  
+  inline def profile: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profile = "profile".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profile]
+  
+  inline def profileColonuser_id: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profileColonuser_id = "profile:user_id".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.profileColonuser_id]
 }
-

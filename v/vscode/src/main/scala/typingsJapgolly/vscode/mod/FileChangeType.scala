@@ -1,44 +1,42 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FileChangeType extends js.Object
-
+sealed trait FileChangeType extends StObject
 @JSImport("vscode", "FileChangeType")
 @js.native
-object FileChangeType extends js.Object {
-  /**
-  		 * The contents or metadata of a file have changed.
-  		 */
-  @js.native
-  sealed trait Changed extends FileChangeType
-  
-  /**
-  		 * A file has been created.
-  		 */
-  @js.native
-  sealed trait Created extends FileChangeType
-  
-  /**
-  		 * A file has been deleted.
-  		 */
-  @js.native
-  sealed trait Deleted extends FileChangeType
+object FileChangeType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FileChangeType with Double] = js.native
-  /* 1 */ @js.native
-  object Changed extends TopLevel[Changed with Double]
+  def apply(value: Double): js.UndefOr[FileChangeType & Double] = js.native
   
-  /* 2 */ @js.native
-  object Created extends TopLevel[Created with Double]
+  /**
+    * The contents or metadata of a file have changed.
+    */
+  @js.native
+  sealed trait Changed
+    extends StObject
+       with FileChangeType
+  /* 1 */ val Changed: typingsJapgolly.vscode.mod.FileChangeType.Changed & Double = js.native
   
-  /* 3 */ @js.native
-  object Deleted extends TopLevel[Deleted with Double]
+  /**
+    * A file has been created.
+    */
+  @js.native
+  sealed trait Created
+    extends StObject
+       with FileChangeType
+  /* 2 */ val Created: typingsJapgolly.vscode.mod.FileChangeType.Created & Double = js.native
   
+  /**
+    * A file has been deleted.
+    */
+  @js.native
+  sealed trait Deleted
+    extends StObject
+       with FileChangeType
+  /* 3 */ val Deleted: typingsJapgolly.vscode.mod.FileChangeType.Deleted & Double = js.native
 }
-

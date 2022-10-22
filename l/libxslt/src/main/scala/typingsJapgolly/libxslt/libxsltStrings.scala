@@ -1,20 +1,16 @@
 package typingsJapgolly.libxslt
 
-import typingsJapgolly.libxslt.internalTypesMod.OutputFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libxsltStrings {
-  @js.native
-  sealed trait document extends OutputFormat
   
   @js.native
-  sealed trait string extends OutputFormat
+  sealed trait document extends StObject
+  inline def document: document = "document".asInstanceOf[document]
   
-  @scala.inline
-  def document: document = "document".asInstanceOf[document]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  @js.native
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
 }
-

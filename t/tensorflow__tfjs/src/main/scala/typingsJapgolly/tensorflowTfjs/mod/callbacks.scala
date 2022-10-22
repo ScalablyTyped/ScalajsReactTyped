@@ -1,17 +1,22 @@
 package typingsJapgolly.tensorflowTfjs.mod
 
-import typingsJapgolly.tensorflowTfjsLayers.callbacksMod.EarlyStoppingCallbackArgs
-import typingsJapgolly.tensorflowTfjsLayers.callbacksMod.EarlyStopping_
+import typingsJapgolly.tensorflowTfjsLayers.distCallbacksMod.EarlyStoppingCallbackArgs
+import typingsJapgolly.tensorflowTfjsLayers.distCallbacksMod.EarlyStopping_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs", "callbacks")
-@js.native
-object callbacks extends js.Object {
-  @JSName("earlyStopping")
-  var earlyStopping_Original: js.Function1[/* args */ js.UndefOr[EarlyStoppingCallbackArgs], EarlyStopping_] = js.native
-  def earlyStopping(): EarlyStopping_ = js.native
-  def earlyStopping(args: EarlyStoppingCallbackArgs): EarlyStopping_ = js.native
+object callbacks {
+  
+  @JSImport("@tensorflow/tfjs", "callbacks")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def earlyStopping(): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")().asInstanceOf[EarlyStopping_]
+  inline def earlyStopping(args: EarlyStoppingCallbackArgs): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")(args.asInstanceOf[js.Any]).asInstanceOf[EarlyStopping_]
+  @JSImport("@tensorflow/tfjs", "callbacks.earlyStopping")
+  @js.native
+  def earlyStopping_Fcallbacks: js.Function1[/* args */ js.UndefOr[EarlyStoppingCallbackArgs], EarlyStopping_] = js.native
+  
+  inline def earlyStopping_Fcallbacks_=(x: js.Function1[/* args */ js.UndefOr[EarlyStoppingCallbackArgs], EarlyStopping_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("earlyStopping")(x.asInstanceOf[js.Any])
 }
-

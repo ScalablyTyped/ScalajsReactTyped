@@ -1,238 +1,338 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `workbook.toJSON()`. */
-trait WorkbookData extends js.Object {
+trait WorkbookData extends StObject {
+  
   /**
+    * Specifies if the workbook is in AutoSave mode.
     *
-    * Specifies whether or not the workbook is in autosave mode. Read-Only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var autoSave: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents a collection of bindings that are part of the workbook.
     *
-    * Represents a collection of bindings that are part of the workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var bindings: js.UndefOr[js.Array[BindingData]] = js.undefined
+  
   /**
+    * Returns a number about the version of Excel Calculation Engine.
     *
-    * Returns a number about the version of Excel Calculation Engine. Read-Only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var calculationEngineVersion: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * True if all charts in the workbook are tracking the actual data points to which they are attached.
     False if the charts track the index of the data points.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var chartDataPointTrack: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents a collection of comments associated with the workbook.
     *
-    * Represents a collection of Comments associated with the workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
+  
   /**
+    * Represents the collection of custom XML parts contained by this workbook.
     *
-    * Represents the collection of custom XML parts contained by this workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   var customXmlParts: js.UndefOr[js.Array[CustomXmlPartData]] = js.undefined
+  
   /**
+    * Specifies if changes have been made since the workbook was last saved.
+    You can set this property to `true` if you want to close a modified workbook without either saving it or being prompted to save it.
     *
-    * Specifies whether or not changes have been made since the workbook was last saved.
-    You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var isDirty: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Gets the workbook name.
     *
-    * Gets the workbook name. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
+    * Represents a collection of workbook-scoped named items (named ranges and constants).
     *
-    * Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var names: js.UndefOr[js.Array[NamedItemData]] = js.undefined
+  
   /**
+    * Represents a collection of PivotTableStyles associated with the workbook.
     *
-    * Represents a collection of PivotTableStyles associated with the workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var pivotTableStyles: js.UndefOr[js.Array[PivotTableStyleData]] = js.undefined
+  
   /**
+    * Represents a collection of PivotTables associated with the workbook.
     *
-    * Represents a collection of PivotTables associated with the workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var pivotTables: js.UndefOr[js.Array[PivotTableData]] = js.undefined
+  
   /**
+    * Specifies if the workbook has ever been saved locally or online.
     *
-    * Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var previouslySaved: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Gets the workbook properties.
     *
-    * Gets the workbook properties. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var properties: js.UndefOr[DocumentPropertiesData] = js.undefined
+  
   /**
+    * Returns the protection object for a workbook.
     *
-    * Returns workbook protection object for a workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var protection: js.UndefOr[WorkbookProtectionData] = js.undefined
+  
   /**
+    * Returns `true` if the workbook is open in read-only mode.
     *
-    * True if the workbook is open in Read-only mode. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var readOnly: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents a collection of settings associated with the workbook.
     *
-    * Represents a collection of Settings associated with the workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   var settings: js.UndefOr[js.Array[SettingData]] = js.undefined
+  
   /**
+    * Represents a collection of SlicerStyles associated with the workbook.
     *
-    * Represents a collection of SlicerStyles associated with the workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var slicerStyles: js.UndefOr[js.Array[SlicerStyleData]] = js.undefined
+  
   /**
+    * Represents a collection of slicers associated with the workbook.
     *
-    * Represents a collection of Slicers associated with the workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var slicers: js.UndefOr[js.Array[SlicerData]] = js.undefined
+  
   /**
+    * Represents a collection of styles associated with the workbook.
     *
-    * Represents a collection of styles associated with the workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var styles: js.UndefOr[js.Array[StyleData]] = js.undefined
+  
   /**
+    * Represents a collection of TableStyles associated with the workbook.
     *
-    * Represents a collection of TableStyles associated with the workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var tableStyles: js.UndefOr[js.Array[TableStyleData]] = js.undefined
+  
   /**
+    * Represents a collection of tables associated with the workbook.
     *
-    * Represents a collection of tables associated with the workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var tables: js.UndefOr[js.Array[TableData]] = js.undefined
+  
   /**
+    * Represents a collection of TimelineStyles associated with the workbook.
     *
-    * Represents a collection of TimelineStyles associated with the workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var timelineStyles: js.UndefOr[js.Array[TimelineStyleData]] = js.undefined
+  
   /**
-    *
     * True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
-    Data will permanently lose accuracy when switching this property from false to true.
+    Data will permanently lose accuracy when switching this property from `false` to `true`.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var usePrecisionAsDisplayed: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents a collection of worksheets associated with the workbook.
     *
-    * Represents a collection of worksheets associated with the workbook. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var worksheets: js.UndefOr[js.Array[WorksheetData]] = js.undefined
 }
-
 object WorkbookData {
-  @scala.inline
-  def apply(
-    autoSave: js.UndefOr[Boolean] = js.undefined,
-    bindings: js.Array[BindingData] = null,
-    calculationEngineVersion: Int | Double = null,
-    chartDataPointTrack: js.UndefOr[Boolean] = js.undefined,
-    comments: js.Array[CommentData] = null,
-    customXmlParts: js.Array[CustomXmlPartData] = null,
-    isDirty: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    names: js.Array[NamedItemData] = null,
-    pivotTableStyles: js.Array[PivotTableStyleData] = null,
-    pivotTables: js.Array[PivotTableData] = null,
-    previouslySaved: js.UndefOr[Boolean] = js.undefined,
-    properties: DocumentPropertiesData = null,
-    protection: WorkbookProtectionData = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    settings: js.Array[SettingData] = null,
-    slicerStyles: js.Array[SlicerStyleData] = null,
-    slicers: js.Array[SlicerData] = null,
-    styles: js.Array[StyleData] = null,
-    tableStyles: js.Array[TableStyleData] = null,
-    tables: js.Array[TableData] = null,
-    timelineStyles: js.Array[TimelineStyleData] = null,
-    usePrecisionAsDisplayed: js.UndefOr[Boolean] = js.undefined,
-    worksheets: js.Array[WorksheetData] = null
-  ): WorkbookData = {
+  
+  inline def apply(): WorkbookData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoSave)) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
-    if (calculationEngineVersion != null) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(chartDataPointTrack)) __obj.updateDynamic("chartDataPointTrack")(chartDataPointTrack.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (customXmlParts != null) __obj.updateDynamic("customXmlParts")(customXmlParts.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDirty)) __obj.updateDynamic("isDirty")(isDirty.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
-    if (pivotTableStyles != null) __obj.updateDynamic("pivotTableStyles")(pivotTableStyles.asInstanceOf[js.Any])
-    if (pivotTables != null) __obj.updateDynamic("pivotTables")(pivotTables.asInstanceOf[js.Any])
-    if (!js.isUndefined(previouslySaved)) __obj.updateDynamic("previouslySaved")(previouslySaved.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (protection != null) __obj.updateDynamic("protection")(protection.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (slicerStyles != null) __obj.updateDynamic("slicerStyles")(slicerStyles.asInstanceOf[js.Any])
-    if (slicers != null) __obj.updateDynamic("slicers")(slicers.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tableStyles != null) __obj.updateDynamic("tableStyles")(tableStyles.asInstanceOf[js.Any])
-    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
-    if (timelineStyles != null) __obj.updateDynamic("timelineStyles")(timelineStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePrecisionAsDisplayed)) __obj.updateDynamic("usePrecisionAsDisplayed")(usePrecisionAsDisplayed.asInstanceOf[js.Any])
-    if (worksheets != null) __obj.updateDynamic("worksheets")(worksheets.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookData]
   }
+  
+  extension [Self <: WorkbookData](x: Self) {
+    
+    inline def setAutoSave(value: Boolean): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
+    
+    inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
+    
+    inline def setBindings(value: js.Array[BindingData]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    
+    inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+    
+    inline def setBindingsVarargs(value: BindingData*): Self = StObject.set(x, "bindings", js.Array(value*))
+    
+    inline def setCalculationEngineVersion(value: Double): Self = StObject.set(x, "calculationEngineVersion", value.asInstanceOf[js.Any])
+    
+    inline def setCalculationEngineVersionUndefined: Self = StObject.set(x, "calculationEngineVersion", js.undefined)
+    
+    inline def setChartDataPointTrack(value: Boolean): Self = StObject.set(x, "chartDataPointTrack", value.asInstanceOf[js.Any])
+    
+    inline def setChartDataPointTrackUndefined: Self = StObject.set(x, "chartDataPointTrack", js.undefined)
+    
+    inline def setComments(value: js.Array[CommentData]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    
+    inline def setCommentsVarargs(value: CommentData*): Self = StObject.set(x, "comments", js.Array(value*))
+    
+    inline def setCustomXmlParts(value: js.Array[CustomXmlPartData]): Self = StObject.set(x, "customXmlParts", value.asInstanceOf[js.Any])
+    
+    inline def setCustomXmlPartsUndefined: Self = StObject.set(x, "customXmlParts", js.undefined)
+    
+    inline def setCustomXmlPartsVarargs(value: CustomXmlPartData*): Self = StObject.set(x, "customXmlParts", js.Array(value*))
+    
+    inline def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
+    
+    inline def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNames(value: js.Array[NamedItemData]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    
+    inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    
+    inline def setNamesVarargs(value: NamedItemData*): Self = StObject.set(x, "names", js.Array(value*))
+    
+    inline def setPivotTableStyles(value: js.Array[PivotTableStyleData]): Self = StObject.set(x, "pivotTableStyles", value.asInstanceOf[js.Any])
+    
+    inline def setPivotTableStylesUndefined: Self = StObject.set(x, "pivotTableStyles", js.undefined)
+    
+    inline def setPivotTableStylesVarargs(value: PivotTableStyleData*): Self = StObject.set(x, "pivotTableStyles", js.Array(value*))
+    
+    inline def setPivotTables(value: js.Array[PivotTableData]): Self = StObject.set(x, "pivotTables", value.asInstanceOf[js.Any])
+    
+    inline def setPivotTablesUndefined: Self = StObject.set(x, "pivotTables", js.undefined)
+    
+    inline def setPivotTablesVarargs(value: PivotTableData*): Self = StObject.set(x, "pivotTables", js.Array(value*))
+    
+    inline def setPreviouslySaved(value: Boolean): Self = StObject.set(x, "previouslySaved", value.asInstanceOf[js.Any])
+    
+    inline def setPreviouslySavedUndefined: Self = StObject.set(x, "previouslySaved", js.undefined)
+    
+    inline def setProperties(value: DocumentPropertiesData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setProtection(value: WorkbookProtectionData): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
+    
+    inline def setProtectionUndefined: Self = StObject.set(x, "protection", js.undefined)
+    
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    
+    inline def setSettings(value: js.Array[SettingData]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    
+    inline def setSettingsVarargs(value: SettingData*): Self = StObject.set(x, "settings", js.Array(value*))
+    
+    inline def setSlicerStyles(value: js.Array[SlicerStyleData]): Self = StObject.set(x, "slicerStyles", value.asInstanceOf[js.Any])
+    
+    inline def setSlicerStylesUndefined: Self = StObject.set(x, "slicerStyles", js.undefined)
+    
+    inline def setSlicerStylesVarargs(value: SlicerStyleData*): Self = StObject.set(x, "slicerStyles", js.Array(value*))
+    
+    inline def setSlicers(value: js.Array[SlicerData]): Self = StObject.set(x, "slicers", value.asInstanceOf[js.Any])
+    
+    inline def setSlicersUndefined: Self = StObject.set(x, "slicers", js.undefined)
+    
+    inline def setSlicersVarargs(value: SlicerData*): Self = StObject.set(x, "slicers", js.Array(value*))
+    
+    inline def setStyles(value: js.Array[StyleData]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    
+    inline def setStylesVarargs(value: StyleData*): Self = StObject.set(x, "styles", js.Array(value*))
+    
+    inline def setTableStyles(value: js.Array[TableStyleData]): Self = StObject.set(x, "tableStyles", value.asInstanceOf[js.Any])
+    
+    inline def setTableStylesUndefined: Self = StObject.set(x, "tableStyles", js.undefined)
+    
+    inline def setTableStylesVarargs(value: TableStyleData*): Self = StObject.set(x, "tableStyles", js.Array(value*))
+    
+    inline def setTables(value: js.Array[TableData]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+    
+    inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
+    
+    inline def setTablesVarargs(value: TableData*): Self = StObject.set(x, "tables", js.Array(value*))
+    
+    inline def setTimelineStyles(value: js.Array[TimelineStyleData]): Self = StObject.set(x, "timelineStyles", value.asInstanceOf[js.Any])
+    
+    inline def setTimelineStylesUndefined: Self = StObject.set(x, "timelineStyles", js.undefined)
+    
+    inline def setTimelineStylesVarargs(value: TimelineStyleData*): Self = StObject.set(x, "timelineStyles", js.Array(value*))
+    
+    inline def setUsePrecisionAsDisplayed(value: Boolean): Self = StObject.set(x, "usePrecisionAsDisplayed", value.asInstanceOf[js.Any])
+    
+    inline def setUsePrecisionAsDisplayedUndefined: Self = StObject.set(x, "usePrecisionAsDisplayed", js.undefined)
+    
+    inline def setWorksheets(value: js.Array[WorksheetData]): Self = StObject.set(x, "worksheets", value.asInstanceOf[js.Any])
+    
+    inline def setWorksheetsUndefined: Self = StObject.set(x, "worksheets", js.undefined)
+    
+    inline def setWorksheetsVarargs(value: WorksheetData*): Self = StObject.set(x, "worksheets", js.Array(value*))
+  }
 }
-

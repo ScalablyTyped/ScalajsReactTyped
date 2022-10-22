@@ -1,11 +1,12 @@
 package typingsJapgolly.node.fsMod
 
-import typingsJapgolly.node.BufferEncoding
+import typingsJapgolly.node.bufferMod.global.BufferEncoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OpenDirOptions extends js.Object {
+trait OpenDirOptions extends StObject {
+  
   /**
     * Number of directory entries that are buffered
     * internally when reading from the directory. Higher values lead to better
@@ -13,16 +14,24 @@ trait OpenDirOptions extends js.Object {
     * @default 32
     */
   var bufferSize: js.UndefOr[Double] = js.undefined
+  
   var encoding: js.UndefOr[BufferEncoding] = js.undefined
 }
-
 object OpenDirOptions {
-  @scala.inline
-  def apply(bufferSize: Int | Double = null, encoding: BufferEncoding = null): OpenDirOptions = {
+  
+  inline def apply(): OpenDirOptions = {
     val __obj = js.Dynamic.literal()
-    if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenDirOptions]
   }
+  
+  extension [Self <: OpenDirOptions](x: Self) {
+    
+    inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+    
+    inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+    
+    inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+  }
 }
-

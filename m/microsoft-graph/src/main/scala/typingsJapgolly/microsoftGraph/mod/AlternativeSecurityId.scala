@@ -1,26 +1,45 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AlternativeSecurityId extends js.Object {
+trait AlternativeSecurityId extends StObject {
+  
   // For internal use only
-  var identityProvider: js.UndefOr[String] = js.undefined
+  var identityProvider: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // For internal use only
-  var key: js.UndefOr[Double] = js.undefined
+  var key: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // For internal use only
-  var `type`: js.UndefOr[Double] = js.undefined
+  var `type`: js.UndefOr[NullableOption[Double]] = js.undefined
 }
-
 object AlternativeSecurityId {
-  @scala.inline
-  def apply(identityProvider: String = null, key: Int | Double = null, `type`: Int | Double = null): AlternativeSecurityId = {
+  
+  inline def apply(): AlternativeSecurityId = {
     val __obj = js.Dynamic.literal()
-    if (identityProvider != null) __obj.updateDynamic("identityProvider")(identityProvider.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlternativeSecurityId]
   }
+  
+  extension [Self <: AlternativeSecurityId](x: Self) {
+    
+    inline def setIdentityProvider(value: NullableOption[String]): Self = StObject.set(x, "identityProvider", value.asInstanceOf[js.Any])
+    
+    inline def setIdentityProviderNull: Self = StObject.set(x, "identityProvider", null)
+    
+    inline def setIdentityProviderUndefined: Self = StObject.set(x, "identityProvider", js.undefined)
+    
+    inline def setKey(value: NullableOption[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setType(value: NullableOption[Double]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

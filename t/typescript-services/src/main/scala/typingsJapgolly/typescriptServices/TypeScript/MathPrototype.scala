@@ -1,18 +1,7 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.MathPrototype")
-@js.native
-class MathPrototype () extends js.Object
-
-/* static members */
-@JSGlobal("TypeScript.MathPrototype")
-@js.native
-object MathPrototype extends js.Object {
-  def max(a: Double, b: Double): Double = js.native
-  def min(a: Double, b: Double): Double = js.native
-}
-
+trait MathPrototype extends StObject

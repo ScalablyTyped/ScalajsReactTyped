@@ -1,24 +1,20 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.complete
   - typingsJapgolly.std.stdStrings.interactive
   - typingsJapgolly.std.stdStrings.loading
 */
-trait DocumentReadyState extends js.Object
-
+trait DocumentReadyState extends StObject
 object DocumentReadyState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def complete: typingsJapgolly.std.stdStrings.complete = this.cast("complete")
-  @scala.inline
-  def interactive: typingsJapgolly.std.stdStrings.interactive = this.cast("interactive")
-  @scala.inline
-  def loading: typingsJapgolly.std.stdStrings.loading = this.cast("loading")
+  
+  inline def complete: typingsJapgolly.std.stdStrings.complete = "complete".asInstanceOf[typingsJapgolly.std.stdStrings.complete]
+  
+  inline def interactive: typingsJapgolly.std.stdStrings.interactive = "interactive".asInstanceOf[typingsJapgolly.std.stdStrings.interactive]
+  
+  inline def loading: typingsJapgolly.std.stdStrings.loading = "loading".asInstanceOf[typingsJapgolly.std.stdStrings.loading]
 }
-

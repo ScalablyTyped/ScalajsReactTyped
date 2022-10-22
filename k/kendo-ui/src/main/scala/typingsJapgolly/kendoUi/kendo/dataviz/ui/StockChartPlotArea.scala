@@ -1,30 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockChartPlotArea extends js.Object {
+trait StockChartPlotArea extends StObject {
+  
   var background: js.UndefOr[String] = js.undefined
+  
   var border: js.UndefOr[StockChartPlotAreaBorder] = js.undefined
-  var margin: js.UndefOr[Double | js.Any] = js.undefined
+  
+  var margin: js.UndefOr[Double | Any] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
 }
-
 object StockChartPlotArea {
-  @scala.inline
-  def apply(
-    background: String = null,
-    border: StockChartPlotAreaBorder = null,
-    margin: Double | js.Any = null,
-    opacity: Int | Double = null
-  ): StockChartPlotArea = {
+  
+  inline def apply(): StockChartPlotArea = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartPlotArea]
   }
+  
+  extension [Self <: StockChartPlotArea](x: Self) {
+    
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setBorder(value: StockChartPlotAreaBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setMargin(value: Double | Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+  }
 }
-

@@ -1,35 +1,40 @@
 package typingsJapgolly.mongodb.mod
 
-import typingsJapgolly.mongodb.mongodbStrings.majority
+import typingsJapgolly.bson.mod.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AddUserOptions extends CommonOptions {
-  var customData: js.UndefOr[js.Object] = js.undefined
-  var fsync: Boolean
-  var roles: js.UndefOr[js.Array[js.Object]] = js.undefined
+trait AddUserOptions
+  extends StObject
+     with CommandOperationOptions {
+  
+  /** Custom data associated with the user (only Mongodb 2.6 or higher) */
+  var customData: js.UndefOr[Document] = js.undefined
+  
+  /** @deprecated Please use db.command('createUser', ...) instead for this option */
+  var digestPassword: js.UndefOr[Null] = js.undefined
+  
+  /** Roles associated with the created user */
+  var roles: js.UndefOr[String | (js.Array[RoleSpecification | String]) | RoleSpecification] = js.undefined
 }
-
 object AddUserOptions {
-  @scala.inline
-  def apply(
-    fsync: Boolean,
-    customData: js.Object = null,
-    j: js.UndefOr[Boolean] = js.undefined,
-    roles: js.Array[js.Object] = null,
-    session: ClientSession = null,
-    w: scala.Double | majority | String = null,
-    wtimeout: Int | scala.Double = null
-  ): AddUserOptions = {
-    val __obj = js.Dynamic.literal(fsync = fsync.asInstanceOf[js.Any])
-    if (customData != null) __obj.updateDynamic("customData")(customData.asInstanceOf[js.Any])
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
-    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
+  
+  inline def apply(): AddUserOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddUserOptions]
   }
+  
+  extension [Self <: AddUserOptions](x: Self) {
+    
+    inline def setCustomData(value: Document): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    
+    inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
+    
+    inline def setRoles(value: String | (js.Array[RoleSpecification | String]) | RoleSpecification): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+    
+    inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+    
+    inline def setRolesVarargs(value: (RoleSpecification | String)*): Self = StObject.set(x, "roles", js.Array(value*))
+  }
 }
-

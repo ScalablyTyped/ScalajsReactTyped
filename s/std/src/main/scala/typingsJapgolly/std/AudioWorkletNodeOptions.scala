@@ -1,39 +1,57 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AudioWorkletNodeOptions extends AudioNodeOptions {
+trait AudioWorkletNodeOptions
+  extends StObject
+     with AudioNodeOptions {
+  
+  /* standard dom */
   var numberOfInputs: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var numberOfOutputs: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var outputChannelCount: js.UndefOr[js.Array[Double]] = js.undefined
+  
+  /* standard dom */
   var parameterData: js.UndefOr[Record[java.lang.String, Double]] = js.undefined
-  var processorOptions: js.UndefOr[js.Any] = js.undefined
+  
+  /* standard dom */
+  var processorOptions: js.UndefOr[Any] = js.undefined
 }
-
 object AudioWorkletNodeOptions {
-  @scala.inline
-  def apply(
-    channelCount: Int | Double = null,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    numberOfInputs: Int | Double = null,
-    numberOfOutputs: Int | Double = null,
-    outputChannelCount: js.Array[Double] = null,
-    parameterData: Record[java.lang.String, Double] = null,
-    processorOptions: js.Any = null
-  ): AudioWorkletNodeOptions = {
+  
+  inline def apply(): AudioWorkletNodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (numberOfInputs != null) __obj.updateDynamic("numberOfInputs")(numberOfInputs.asInstanceOf[js.Any])
-    if (numberOfOutputs != null) __obj.updateDynamic("numberOfOutputs")(numberOfOutputs.asInstanceOf[js.Any])
-    if (outputChannelCount != null) __obj.updateDynamic("outputChannelCount")(outputChannelCount.asInstanceOf[js.Any])
-    if (parameterData != null) __obj.updateDynamic("parameterData")(parameterData.asInstanceOf[js.Any])
-    if (processorOptions != null) __obj.updateDynamic("processorOptions")(processorOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioWorkletNodeOptions]
   }
+  
+  extension [Self <: AudioWorkletNodeOptions](x: Self) {
+    
+    inline def setNumberOfInputs(value: Double): Self = StObject.set(x, "numberOfInputs", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfInputsUndefined: Self = StObject.set(x, "numberOfInputs", js.undefined)
+    
+    inline def setNumberOfOutputs(value: Double): Self = StObject.set(x, "numberOfOutputs", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfOutputsUndefined: Self = StObject.set(x, "numberOfOutputs", js.undefined)
+    
+    inline def setOutputChannelCount(value: js.Array[Double]): Self = StObject.set(x, "outputChannelCount", value.asInstanceOf[js.Any])
+    
+    inline def setOutputChannelCountUndefined: Self = StObject.set(x, "outputChannelCount", js.undefined)
+    
+    inline def setOutputChannelCountVarargs(value: Double*): Self = StObject.set(x, "outputChannelCount", js.Array(value*))
+    
+    inline def setParameterData(value: Record[java.lang.String, Double]): Self = StObject.set(x, "parameterData", value.asInstanceOf[js.Any])
+    
+    inline def setParameterDataUndefined: Self = StObject.set(x, "parameterData", js.undefined)
+    
+    inline def setProcessorOptions(value: Any): Self = StObject.set(x, "processorOptions", value.asInstanceOf[js.Any])
+    
+    inline def setProcessorOptionsUndefined: Self = StObject.set(x, "processorOptions", js.undefined)
+  }
 }
-

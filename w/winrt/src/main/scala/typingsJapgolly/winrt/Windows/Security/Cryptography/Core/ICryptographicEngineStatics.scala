@@ -1,13 +1,14 @@
 package typingsJapgolly.winrt.Windows.Security.Cryptography.Core
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICryptographicEngineStatics extends js.Object {
+trait ICryptographicEngineStatics extends StObject {
+  
   def decrypt(key: CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer
+  
   def decryptAndAuthenticate(
     key: CryptographicKey,
     data: IBuffer,
@@ -15,33 +16,46 @@ trait ICryptographicEngineStatics extends js.Object {
     authenticationTag: IBuffer,
     authenticatedData: IBuffer
   ): IBuffer
+  
   def deriveKeyMaterial(key: CryptographicKey, parameters: KeyDerivationParameters, desiredKeySize: Double): IBuffer
+  
   def encrypt(key: CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer
+  
   def encryptAndAuthenticate(key: CryptographicKey, data: IBuffer, nonce: IBuffer, authenticatedData: IBuffer): EncryptedAndAuthenticatedData
+  
   def sign(key: CryptographicKey, data: IBuffer): IBuffer
+  
   def verifySignature(key: CryptographicKey, data: IBuffer, signature: IBuffer): Boolean
 }
-
 object ICryptographicEngineStatics {
-  @scala.inline
-  def apply(
-    decrypt: (CryptographicKey, IBuffer, IBuffer) => CallbackTo[IBuffer],
-    decryptAndAuthenticate: (CryptographicKey, IBuffer, IBuffer, IBuffer, IBuffer) => CallbackTo[IBuffer],
-    deriveKeyMaterial: (CryptographicKey, KeyDerivationParameters, Double) => CallbackTo[IBuffer],
-    encrypt: (CryptographicKey, IBuffer, IBuffer) => CallbackTo[IBuffer],
-    encryptAndAuthenticate: (CryptographicKey, IBuffer, IBuffer, IBuffer) => CallbackTo[EncryptedAndAuthenticatedData],
-    sign: (CryptographicKey, IBuffer) => CallbackTo[IBuffer],
-    verifySignature: (CryptographicKey, IBuffer, IBuffer) => CallbackTo[Boolean]
+  
+  inline def apply(
+    decrypt: (CryptographicKey, IBuffer, IBuffer) => IBuffer,
+    decryptAndAuthenticate: (CryptographicKey, IBuffer, IBuffer, IBuffer, IBuffer) => IBuffer,
+    deriveKeyMaterial: (CryptographicKey, KeyDerivationParameters, Double) => IBuffer,
+    encrypt: (CryptographicKey, IBuffer, IBuffer) => IBuffer,
+    encryptAndAuthenticate: (CryptographicKey, IBuffer, IBuffer, IBuffer) => EncryptedAndAuthenticatedData,
+    sign: (CryptographicKey, IBuffer) => IBuffer,
+    verifySignature: (CryptographicKey, IBuffer, IBuffer) => Boolean
   ): ICryptographicEngineStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decrypt")(js.Any.fromFunction3((t0: typingsJapgolly.winrt.Windows.Security.Cryptography.Core.CryptographicKey, t1: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer, t2: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer) => decrypt(t0, t1, t2).runNow()))
-    __obj.updateDynamic("decryptAndAuthenticate")(js.Any.fromFunction5((t0: typingsJapgolly.winrt.Windows.Security.Cryptography.Core.CryptographicKey, t1: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer, t2: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer, t3: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer, t4: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer) => decryptAndAuthenticate(t0, t1, t2, t3, t4).runNow()))
-    __obj.updateDynamic("deriveKeyMaterial")(js.Any.fromFunction3((t0: typingsJapgolly.winrt.Windows.Security.Cryptography.Core.CryptographicKey, t1: typingsJapgolly.winrt.Windows.Security.Cryptography.Core.KeyDerivationParameters, t2: scala.Double) => deriveKeyMaterial(t0, t1, t2).runNow()))
-    __obj.updateDynamic("encrypt")(js.Any.fromFunction3((t0: typingsJapgolly.winrt.Windows.Security.Cryptography.Core.CryptographicKey, t1: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer, t2: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer) => encrypt(t0, t1, t2).runNow()))
-    __obj.updateDynamic("encryptAndAuthenticate")(js.Any.fromFunction4((t0: typingsJapgolly.winrt.Windows.Security.Cryptography.Core.CryptographicKey, t1: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer, t2: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer, t3: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer) => encryptAndAuthenticate(t0, t1, t2, t3).runNow()))
-    __obj.updateDynamic("sign")(js.Any.fromFunction2((t0: typingsJapgolly.winrt.Windows.Security.Cryptography.Core.CryptographicKey, t1: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer) => sign(t0, t1).runNow()))
-    __obj.updateDynamic("verifySignature")(js.Any.fromFunction3((t0: typingsJapgolly.winrt.Windows.Security.Cryptography.Core.CryptographicKey, t1: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer, t2: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer) => verifySignature(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction3(decrypt), decryptAndAuthenticate = js.Any.fromFunction5(decryptAndAuthenticate), deriveKeyMaterial = js.Any.fromFunction3(deriveKeyMaterial), encrypt = js.Any.fromFunction3(encrypt), encryptAndAuthenticate = js.Any.fromFunction4(encryptAndAuthenticate), sign = js.Any.fromFunction2(sign), verifySignature = js.Any.fromFunction3(verifySignature))
     __obj.asInstanceOf[ICryptographicEngineStatics]
   }
+  
+  extension [Self <: ICryptographicEngineStatics](x: Self) {
+    
+    inline def setDecrypt(value: (CryptographicKey, IBuffer, IBuffer) => IBuffer): Self = StObject.set(x, "decrypt", js.Any.fromFunction3(value))
+    
+    inline def setDecryptAndAuthenticate(value: (CryptographicKey, IBuffer, IBuffer, IBuffer, IBuffer) => IBuffer): Self = StObject.set(x, "decryptAndAuthenticate", js.Any.fromFunction5(value))
+    
+    inline def setDeriveKeyMaterial(value: (CryptographicKey, KeyDerivationParameters, Double) => IBuffer): Self = StObject.set(x, "deriveKeyMaterial", js.Any.fromFunction3(value))
+    
+    inline def setEncrypt(value: (CryptographicKey, IBuffer, IBuffer) => IBuffer): Self = StObject.set(x, "encrypt", js.Any.fromFunction3(value))
+    
+    inline def setEncryptAndAuthenticate(value: (CryptographicKey, IBuffer, IBuffer, IBuffer) => EncryptedAndAuthenticatedData): Self = StObject.set(x, "encryptAndAuthenticate", js.Any.fromFunction4(value))
+    
+    inline def setSign(value: (CryptographicKey, IBuffer) => IBuffer): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
+    
+    inline def setVerifySignature(value: (CryptographicKey, IBuffer, IBuffer) => Boolean): Self = StObject.set(x, "verifySignature", js.Any.fromFunction3(value))
+  }
 }
-

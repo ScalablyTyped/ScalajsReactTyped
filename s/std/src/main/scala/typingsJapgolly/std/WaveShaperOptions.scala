@@ -1,30 +1,36 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WaveShaperOptions extends AudioNodeOptions {
-  var curve: js.UndefOr[js.Array[Double] | scala.scalajs.js.typedarray.Float32Array] = js.undefined
+trait WaveShaperOptions
+  extends StObject
+     with AudioNodeOptions {
+  
+  /* standard dom */
+  var curve: js.UndefOr[js.Array[Double] | js.typedarray.Float32Array] = js.undefined
+  
+  /* standard dom */
   var oversample: js.UndefOr[OverSampleType] = js.undefined
 }
-
 object WaveShaperOptions {
-  @scala.inline
-  def apply(
-    channelCount: Int | Double = null,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    curve: js.Array[Double] | scala.scalajs.js.typedarray.Float32Array = null,
-    oversample: OverSampleType = null
-  ): WaveShaperOptions = {
+  
+  inline def apply(): WaveShaperOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
-    if (oversample != null) __obj.updateDynamic("oversample")(oversample.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaveShaperOptions]
   }
+  
+  extension [Self <: WaveShaperOptions](x: Self) {
+    
+    inline def setCurve(value: js.Array[Double] | js.typedarray.Float32Array): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+    
+    inline def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
+    
+    inline def setCurveVarargs(value: Double*): Self = StObject.set(x, "curve", js.Array(value*))
+    
+    inline def setOversample(value: OverSampleType): Self = StObject.set(x, "oversample", value.asInstanceOf[js.Any])
+    
+    inline def setOversampleUndefined: Self = StObject.set(x, "oversample", js.undefined)
+  }
 }
-

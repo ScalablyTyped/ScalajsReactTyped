@@ -1,67 +1,55 @@
 package typingsJapgolly.winrtUwp.Windows.Media.SpeechRecognition
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SpeechRecognitionAudioProblem extends js.Object
-
+sealed trait SpeechRecognitionAudioProblem extends StObject
 /** Specifies the type of audio problem detected. */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem")
 @js.native
-object SpeechRecognitionAudioProblem extends js.Object {
+object SpeechRecognitionAudioProblem extends StObject {
+  
   /** No audio. For example, the microphone may have been muted. */
   @js.native
-  sealed trait noSignal extends SpeechRecognitionAudioProblem
+  sealed trait noSignal
+    extends StObject
+       with SpeechRecognitionAudioProblem
   
   /** No audio problem. */
   @js.native
-  sealed trait none extends SpeechRecognitionAudioProblem
+  sealed trait none
+    extends StObject
+       with SpeechRecognitionAudioProblem
   
   /** User spoke too fast. */
   @js.native
-  sealed trait tooFast extends SpeechRecognitionAudioProblem
+  sealed trait tooFast
+    extends StObject
+       with SpeechRecognitionAudioProblem
   
   /** Input volume too high. */
   @js.native
-  sealed trait tooLoud extends SpeechRecognitionAudioProblem
+  sealed trait tooLoud
+    extends StObject
+       with SpeechRecognitionAudioProblem
   
   /** Too much background noise interfering with the speech recognition. */
   @js.native
-  sealed trait tooNoisy extends SpeechRecognitionAudioProblem
+  sealed trait tooNoisy
+    extends StObject
+       with SpeechRecognitionAudioProblem
   
   /** Input volume too quiet. */
   @js.native
-  sealed trait tooQuiet extends SpeechRecognitionAudioProblem
+  sealed trait tooQuiet
+    extends StObject
+       with SpeechRecognitionAudioProblem
   
   /** User spoke too slowly. */
   @js.native
-  sealed trait tooSlow extends SpeechRecognitionAudioProblem
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SpeechRecognitionAudioProblem with Double] = js.native
-  /* 2 */ @js.native
-  object noSignal extends TopLevel[noSignal with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 5 */ @js.native
-  object tooFast extends TopLevel[tooFast with Double]
-  
-  /* 3 */ @js.native
-  object tooLoud extends TopLevel[tooLoud with Double]
-  
-  /* 1 */ @js.native
-  object tooNoisy extends TopLevel[tooNoisy with Double]
-  
-  /* 4 */ @js.native
-  object tooQuiet extends TopLevel[tooQuiet with Double]
-  
-  /* 6 */ @js.native
-  object tooSlow extends TopLevel[tooSlow with Double]
-  
+  sealed trait tooSlow
+    extends StObject
+       with SpeechRecognitionAudioProblem
 }
-

@@ -1,75 +1,67 @@
 package typingsJapgolly.formol.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.formol.formolStrings.FormolProps
-import typingsJapgolly.formol.mod.default
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.formol.mod.FormolProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Formol {
-  def apply(
-    allowUnmodifiedSubmit: js.Any = null,
-    cancelText: js.Any = null,
-    className: String = null,
-    classes: js.Any = null,
-    extra: VdomNode = null,
-    i18n: js.Any = null,
-    item: js.Any = null,
-    noCancel: js.Any = null,
-    onSubmit: /* e */ Event_ => Callback = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    submitText: js.Any = null,
-    types: js.Array[String] = null,
-    validator: js.Any => CallbackTo[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof V ]:? string | null}
-    */ FormolProps with js.Any
-    ] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    typingsJapgolly.formol.mod.FormolProps[js.Any], 
-    default, 
-    Unit, 
-    typingsJapgolly.formol.mod.FormolProps[js.Any]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (allowUnmodifiedSubmit != null) __obj.updateDynamic("allowUnmodifiedSubmit")(allowUnmodifiedSubmit.asInstanceOf[js.Any])
-    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.rawNode.asInstanceOf[js.Any])
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (noCancel != null) __obj.updateDynamic("noCancel")(noCancel.asInstanceOf[js.Any])
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.std.Event_) => onSubmit(t0).runNow()))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (submitText != null) __obj.updateDynamic("submitText")(submitText.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
-    if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction1((t0: js.Any) => validator(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.formol.mod.FormolProps[js.Any], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.formol.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.formol.mod.FormolProps[js.Any]])(children: _*)
-  }
   @JSImport("formol", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def allowUnmodifiedSubmit(value: Any): this.type = set("allowUnmodifiedSubmit", value.asInstanceOf[js.Any])
+    
+    inline def cancelText(value: Any): this.type = set("cancelText", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def classes(value: Any): this.type = set("classes", value.asInstanceOf[js.Any])
+    
+    inline def extra(value: VdomNode): this.type = set("extra", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def extraNull: this.type = set("extra", null)
+    
+    inline def extraVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("extra", js.Array(value*))
+    
+    inline def extraVdomElement(value: VdomElement): this.type = set("extra", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def i18n(value: Any): this.type = set("i18n", value.asInstanceOf[js.Any])
+    
+    inline def item(value: Any): this.type = set("item", value.asInstanceOf[js.Any])
+    
+    inline def noCancel(value: Any): this.type = set("noCancel", value.asInstanceOf[js.Any])
+    
+    inline def onSubmit(value: /* e */ Event => Callback): this.type = set("onSubmit", js.Any.fromFunction1((t0: /* e */ Event) => value(t0).runNow()))
+    
+    inline def readOnly(value: Boolean): this.type = set("readOnly", value.asInstanceOf[js.Any])
+    
+    inline def submitText(value: Any): this.type = set("submitText", value.asInstanceOf[js.Any])
+    
+    inline def types(value: js.Array[String]): this.type = set("types", value.asInstanceOf[js.Any])
+    
+    inline def typesVarargs(value: String*): this.type = set("types", js.Array(value*))
+    
+    inline def validator(
+      value: Any => /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof V ]:? string | null} */ js.Any
+    ): this.type = set("validator", js.Any.fromFunction1(value))
+  }
+  
+  implicit def make(companion: Formol.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: FormolProps[Any]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

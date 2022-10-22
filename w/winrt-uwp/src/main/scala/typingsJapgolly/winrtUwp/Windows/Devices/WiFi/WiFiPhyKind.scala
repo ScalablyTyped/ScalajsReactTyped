@@ -1,81 +1,67 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.WiFi
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiPhyKind extends js.Object
-
+sealed trait WiFiPhyKind extends StObject
 /** Describes PHY types supported by standard 802.11. */
 @JSGlobal("Windows.Devices.WiFi.WiFiPhyKind")
 @js.native
-object WiFiPhyKind extends js.Object {
+object WiFiPhyKind extends StObject {
+  
   /** Direct sequence, spread-spectrum (DSSS) PHY. */
   @js.native
-  sealed trait dsss extends WiFiPhyKind
+  sealed trait dsss
+    extends StObject
+       with WiFiPhyKind
   
   /** Extended Rate (ERP) PHY. */
   @js.native
-  sealed trait erp extends WiFiPhyKind
+  sealed trait erp
+    extends StObject
+       with WiFiPhyKind
   
   /** Frequency-hopping, spread-spectrum (FHSS) PHY. */
   @js.native
-  sealed trait fhss extends WiFiPhyKind
+  sealed trait fhss
+    extends StObject
+       with WiFiPhyKind
   
   /** High-rated DSSS (HRDSSS) PHY. */
   @js.native
-  sealed trait hrdsss extends WiFiPhyKind
+  sealed trait hrdsss
+    extends StObject
+       with WiFiPhyKind
   
   /** 802.11n PHY. */
   @js.native
-  sealed trait ht extends WiFiPhyKind
+  sealed trait ht
+    extends StObject
+       with WiFiPhyKind
   
   /** Infrared (IR) baseband PHY. */
   @js.native
-  sealed trait irBaseband extends WiFiPhyKind
+  sealed trait irBaseband
+    extends StObject
+       with WiFiPhyKind
   
   /** Orthogonal frequency division multiplex (OFDM) PHY. */
   @js.native
-  sealed trait ofdm extends WiFiPhyKind
+  sealed trait ofdm
+    extends StObject
+       with WiFiPhyKind
   
   /** Unspecified PHY type */
   @js.native
-  sealed trait unknown extends WiFiPhyKind
+  sealed trait unknown
+    extends StObject
+       with WiFiPhyKind
   
   /** 802.11ac PHY. */
   @js.native
-  sealed trait vht extends WiFiPhyKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiPhyKind with Double] = js.native
-  /* 2 */ @js.native
-  object dsss extends TopLevel[dsss with Double]
-  
-  /* 6 */ @js.native
-  object erp extends TopLevel[erp with Double]
-  
-  /* 1 */ @js.native
-  object fhss extends TopLevel[fhss with Double]
-  
-  /* 5 */ @js.native
-  object hrdsss extends TopLevel[hrdsss with Double]
-  
-  /* 7 */ @js.native
-  object ht extends TopLevel[ht with Double]
-  
-  /* 3 */ @js.native
-  object irBaseband extends TopLevel[irBaseband with Double]
-  
-  /* 4 */ @js.native
-  object ofdm extends TopLevel[ofdm with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 8 */ @js.native
-  object vht extends TopLevel[vht with Double]
-  
+  sealed trait vht
+    extends StObject
+       with WiFiPhyKind
 }
-

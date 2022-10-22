@@ -1,17 +1,18 @@
 organization := "org.scalablytyped.japgolly"
 name := "watson-developer-cloud"
-version := "4.0.1-53cd69"
-scalaVersion := "2.13.1"
+version := "4.0.1-9aa4a2"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "axios" % "0.19.2-c1a737",
-  "org.scalablytyped.japgolly" %%% "ibm-cloud-sdk-core" % "0.1.2-e359af",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "axios" % "1.1.3-dbbef5",
+  "org.scalablytyped.japgolly" %%% "debug" % "4.1-dt-20211202Z-7cd5bd",
+  "org.scalablytyped.japgolly" %%% "ibm-cloud-sdk-core" % "3.1.0-7accdc",
+  "org.scalablytyped.japgolly" %%% "ms" % "v0.7.1-dt-20220818Z-ed60be",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "tough-cookie" % "4.0-dt-20220414Z-f938b4")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

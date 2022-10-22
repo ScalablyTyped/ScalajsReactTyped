@@ -1,172 +1,233 @@
 package typingsJapgolly.waterline.mod
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AttributeValidations extends js.Object {
-  var after: js.UndefOr[AttributeValidation[String]] = js.undefined
-  var alpha: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var alphanumeric: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var array: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var before: js.UndefOr[AttributeValidation[String]] = js.undefined
-  var boolean: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var contains: js.UndefOr[AttributeValidation[String]] = js.undefined
-  var creditcard: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var date: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var decimal: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var email: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var empty: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  @JSName("equals")
-  var equals_FAttributeValidations: js.UndefOr[AttributeValidation[_]] = js.undefined
-  var falsey: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var finite: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var float: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var hexColor: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var hexadecimal: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var in: js.UndefOr[AttributeValidation[js.Array[String]]] = js.undefined
-  var int: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var integer: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var ip: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var ipv4: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var ipv6: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var is: js.UndefOr[AttributeValidation[js.RegExp]] = js.undefined
-  var len: js.UndefOr[AttributeValidation[Double]] = js.undefined
-  var lowercase: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
+trait AttributeValidations extends StObject {
+  
+  var custom: js.UndefOr[AttributeValidation[js.Function]] = js.undefined
+  
+  var isAfter: js.UndefOr[AttributeValidation[js.Date]] = js.undefined
+  
+  var isBefore: js.UndefOr[AttributeValidation[js.Date]] = js.undefined
+  
+  var isBoolean: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
+  
+  var isCreditCard: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
+  
+  var isEmail: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
+  
+  var isHexColor: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
+  
+  var isIP: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
+  
+  var isIn: js.UndefOr[AttributeValidation[js.Array[String]]] = js.undefined
+  
+  var isInteger: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
+  
+  var isNotEmptyString: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
+  
+  var isNotIn: js.UndefOr[AttributeValidation[js.Array[String]]] = js.undefined
+  
+  var isNumber: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
+  
+  var isString: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
+  
+  var isURL: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
+  
+  var isUUID: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
+  
   var max: js.UndefOr[AttributeValidation[Double]] = js.undefined
+  
   var maxLength: js.UndefOr[AttributeValidation[Double]] = js.undefined
+  
   var min: js.UndefOr[AttributeValidation[Double]] = js.undefined
+  
   var minLength: js.UndefOr[AttributeValidation[Double]] = js.undefined
-  var not: js.UndefOr[AttributeValidation[js.RegExp]] = js.undefined
-  var notContains: js.UndefOr[AttributeValidation[String]] = js.undefined
-  var notEmpty: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var notIn: js.UndefOr[AttributeValidation[js.Array[String]]] = js.undefined
-  var notNull: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var notRegex: js.UndefOr[AttributeValidation[js.RegExp]] = js.undefined
-  var `null`: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var number: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var numeric: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
+  
   var regex: js.UndefOr[AttributeValidation[js.RegExp]] = js.undefined
-  var required: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var string: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var truthy: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var undefined: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var uppercase: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var url: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var urlish: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var uuid: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var uuidv3: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
-  var uuidv4: js.UndefOr[AttributeValidation[Boolean]] = js.undefined
 }
-
 object AttributeValidations {
-  @scala.inline
-  def apply(
-    after: AttributeValidation[String] = null,
-    alpha: AttributeValidation[Boolean] = null,
-    alphanumeric: AttributeValidation[Boolean] = null,
-    array: AttributeValidation[Boolean] = null,
-    before: AttributeValidation[String] = null,
-    boolean: AttributeValidation[Boolean] = null,
-    contains: AttributeValidation[String] = null,
-    creditcard: AttributeValidation[Boolean] = null,
-    date: AttributeValidation[Boolean] = null,
-    decimal: AttributeValidation[Boolean] = null,
-    email: AttributeValidation[Boolean] = null,
-    empty: AttributeValidation[Boolean] = null,
-    equals: AttributeValidation[_] = null,
-    falsey: AttributeValidation[Boolean] = null,
-    finite: AttributeValidation[Boolean] = null,
-    float: AttributeValidation[Boolean] = null,
-    hexColor: AttributeValidation[Boolean] = null,
-    hexadecimal: AttributeValidation[Boolean] = null,
-    in: AttributeValidation[js.Array[String]] = null,
-    int: AttributeValidation[Boolean] = null,
-    integer: AttributeValidation[Boolean] = null,
-    ip: AttributeValidation[Boolean] = null,
-    ipv4: AttributeValidation[Boolean] = null,
-    ipv6: AttributeValidation[Boolean] = null,
-    is: AttributeValidation[js.RegExp] = null,
-    len: AttributeValidation[Double] = null,
-    lowercase: AttributeValidation[Boolean] = null,
-    max: AttributeValidation[Double] = null,
-    maxLength: AttributeValidation[Double] = null,
-    min: AttributeValidation[Double] = null,
-    minLength: AttributeValidation[Double] = null,
-    not: AttributeValidation[js.RegExp] = null,
-    notContains: AttributeValidation[String] = null,
-    notEmpty: AttributeValidation[Boolean] = null,
-    notIn: AttributeValidation[js.Array[String]] = null,
-    notNull: AttributeValidation[Boolean] = null,
-    notRegex: AttributeValidation[js.RegExp] = null,
-    `null`: AttributeValidation[Boolean] = null,
-    number: AttributeValidation[Boolean] = null,
-    numeric: AttributeValidation[Boolean] = null,
-    regex: AttributeValidation[js.RegExp] = null,
-    required: AttributeValidation[Boolean] = null,
-    string: AttributeValidation[Boolean] = null,
-    truthy: AttributeValidation[Boolean] = null,
-    undefined: AttributeValidation[Boolean] = null,
-    uppercase: AttributeValidation[Boolean] = null,
-    url: AttributeValidation[Boolean] = null,
-    urlish: AttributeValidation[Boolean] = null,
-    uuid: AttributeValidation[Boolean] = null,
-    uuidv3: AttributeValidation[Boolean] = null,
-    uuidv4: AttributeValidation[Boolean] = null
-  ): AttributeValidations = {
+  
+  inline def apply(): AttributeValidations = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (alphanumeric != null) __obj.updateDynamic("alphanumeric")(alphanumeric.asInstanceOf[js.Any])
-    if (array != null) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (boolean != null) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
-    if (contains != null) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
-    if (creditcard != null) __obj.updateDynamic("creditcard")(creditcard.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
-    if (equals != null) __obj.updateDynamic("equals")(equals.asInstanceOf[js.Any])
-    if (falsey != null) __obj.updateDynamic("falsey")(falsey.asInstanceOf[js.Any])
-    if (finite != null) __obj.updateDynamic("finite")(finite.asInstanceOf[js.Any])
-    if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
-    if (hexColor != null) __obj.updateDynamic("hexColor")(hexColor.asInstanceOf[js.Any])
-    if (hexadecimal != null) __obj.updateDynamic("hexadecimal")(hexadecimal.asInstanceOf[js.Any])
-    if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
-    if (int != null) __obj.updateDynamic("int")(int.asInstanceOf[js.Any])
-    if (integer != null) __obj.updateDynamic("integer")(integer.asInstanceOf[js.Any])
-    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
-    if (ipv4 != null) __obj.updateDynamic("ipv4")(ipv4.asInstanceOf[js.Any])
-    if (ipv6 != null) __obj.updateDynamic("ipv6")(ipv6.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (len != null) __obj.updateDynamic("len")(len.asInstanceOf[js.Any])
-    if (lowercase != null) __obj.updateDynamic("lowercase")(lowercase.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (not != null) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
-    if (notContains != null) __obj.updateDynamic("notContains")(notContains.asInstanceOf[js.Any])
-    if (notEmpty != null) __obj.updateDynamic("notEmpty")(notEmpty.asInstanceOf[js.Any])
-    if (notIn != null) __obj.updateDynamic("notIn")(notIn.asInstanceOf[js.Any])
-    if (notNull != null) __obj.updateDynamic("notNull")(notNull.asInstanceOf[js.Any])
-    if (notRegex != null) __obj.updateDynamic("notRegex")(notRegex.asInstanceOf[js.Any])
-    if (`null` != null) __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (numeric != null) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
-    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
-    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
-    if (truthy != null) __obj.updateDynamic("truthy")(truthy.asInstanceOf[js.Any])
-    if (undefined != null) __obj.updateDynamic("undefined")(undefined.asInstanceOf[js.Any])
-    if (uppercase != null) __obj.updateDynamic("uppercase")(uppercase.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (urlish != null) __obj.updateDynamic("urlish")(urlish.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
-    if (uuidv3 != null) __obj.updateDynamic("uuidv3")(uuidv3.asInstanceOf[js.Any])
-    if (uuidv4 != null) __obj.updateDynamic("uuidv4")(uuidv4.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeValidations]
   }
+  
+  extension [Self <: AttributeValidations](x: Self) {
+    
+    inline def setCustom(value: AttributeValidation[js.Function]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    
+    inline def setCustomCallbackTo(value: CallbackTo[js.Function]): Self = StObject.set(x, "custom", value.toJsFn)
+    
+    inline def setCustomFunction1(value: /* cb */ js.Function1[js.Function, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "custom", js.Any.fromFunction1((t0: /* cb */ js.Function1[js.Function, Any]) => value(t0).runNow()))
+    
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setIsAfter(value: AttributeValidation[js.Date]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
+    
+    inline def setIsAfterCallbackTo(value: CallbackTo[js.Date]): Self = StObject.set(x, "isAfter", value.toJsFn)
+    
+    inline def setIsAfterFunction1(value: /* cb */ js.Function1[js.Date, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isAfter", js.Any.fromFunction1((t0: /* cb */ js.Function1[js.Date, Any]) => value(t0).runNow()))
+    
+    inline def setIsAfterUndefined: Self = StObject.set(x, "isAfter", js.undefined)
+    
+    inline def setIsBefore(value: AttributeValidation[js.Date]): Self = StObject.set(x, "isBefore", value.asInstanceOf[js.Any])
+    
+    inline def setIsBeforeCallbackTo(value: CallbackTo[js.Date]): Self = StObject.set(x, "isBefore", value.toJsFn)
+    
+    inline def setIsBeforeFunction1(value: /* cb */ js.Function1[js.Date, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isBefore", js.Any.fromFunction1((t0: /* cb */ js.Function1[js.Date, Any]) => value(t0).runNow()))
+    
+    inline def setIsBeforeUndefined: Self = StObject.set(x, "isBefore", js.undefined)
+    
+    inline def setIsBoolean(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isBoolean", value.asInstanceOf[js.Any])
+    
+    inline def setIsBooleanCallbackTo(value: CallbackTo[Boolean]): Self = StObject.set(x, "isBoolean", value.toJsFn)
+    
+    inline def setIsBooleanFunction1(value: /* cb */ js.Function1[Boolean, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isBoolean", js.Any.fromFunction1((t0: /* cb */ js.Function1[Boolean, Any]) => value(t0).runNow()))
+    
+    inline def setIsBooleanUndefined: Self = StObject.set(x, "isBoolean", js.undefined)
+    
+    inline def setIsCreditCard(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isCreditCard", value.asInstanceOf[js.Any])
+    
+    inline def setIsCreditCardCallbackTo(value: CallbackTo[Boolean]): Self = StObject.set(x, "isCreditCard", value.toJsFn)
+    
+    inline def setIsCreditCardFunction1(value: /* cb */ js.Function1[Boolean, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isCreditCard", js.Any.fromFunction1((t0: /* cb */ js.Function1[Boolean, Any]) => value(t0).runNow()))
+    
+    inline def setIsCreditCardUndefined: Self = StObject.set(x, "isCreditCard", js.undefined)
+    
+    inline def setIsEmail(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isEmail", value.asInstanceOf[js.Any])
+    
+    inline def setIsEmailCallbackTo(value: CallbackTo[Boolean]): Self = StObject.set(x, "isEmail", value.toJsFn)
+    
+    inline def setIsEmailFunction1(value: /* cb */ js.Function1[Boolean, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isEmail", js.Any.fromFunction1((t0: /* cb */ js.Function1[Boolean, Any]) => value(t0).runNow()))
+    
+    inline def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
+    
+    inline def setIsHexColor(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isHexColor", value.asInstanceOf[js.Any])
+    
+    inline def setIsHexColorCallbackTo(value: CallbackTo[Boolean]): Self = StObject.set(x, "isHexColor", value.toJsFn)
+    
+    inline def setIsHexColorFunction1(value: /* cb */ js.Function1[Boolean, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isHexColor", js.Any.fromFunction1((t0: /* cb */ js.Function1[Boolean, Any]) => value(t0).runNow()))
+    
+    inline def setIsHexColorUndefined: Self = StObject.set(x, "isHexColor", js.undefined)
+    
+    inline def setIsIP(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isIP", value.asInstanceOf[js.Any])
+    
+    inline def setIsIPCallbackTo(value: CallbackTo[Boolean]): Self = StObject.set(x, "isIP", value.toJsFn)
+    
+    inline def setIsIPFunction1(value: /* cb */ js.Function1[Boolean, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isIP", js.Any.fromFunction1((t0: /* cb */ js.Function1[Boolean, Any]) => value(t0).runNow()))
+    
+    inline def setIsIPUndefined: Self = StObject.set(x, "isIP", js.undefined)
+    
+    inline def setIsIn(value: AttributeValidation[js.Array[String]]): Self = StObject.set(x, "isIn", value.asInstanceOf[js.Any])
+    
+    inline def setIsInCallbackTo(value: CallbackTo[js.Array[String]]): Self = StObject.set(x, "isIn", value.toJsFn)
+    
+    inline def setIsInFunction1(value: /* cb */ js.Function1[js.Array[String], Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isIn", js.Any.fromFunction1((t0: /* cb */ js.Function1[js.Array[String], Any]) => value(t0).runNow()))
+    
+    inline def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
+    
+    inline def setIsInVarargs(value: String*): Self = StObject.set(x, "isIn", js.Array(value*))
+    
+    inline def setIsInteger(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isInteger", value.asInstanceOf[js.Any])
+    
+    inline def setIsIntegerCallbackTo(value: CallbackTo[Boolean]): Self = StObject.set(x, "isInteger", value.toJsFn)
+    
+    inline def setIsIntegerFunction1(value: /* cb */ js.Function1[Boolean, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isInteger", js.Any.fromFunction1((t0: /* cb */ js.Function1[Boolean, Any]) => value(t0).runNow()))
+    
+    inline def setIsIntegerUndefined: Self = StObject.set(x, "isInteger", js.undefined)
+    
+    inline def setIsNotEmptyString(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isNotEmptyString", value.asInstanceOf[js.Any])
+    
+    inline def setIsNotEmptyStringCallbackTo(value: CallbackTo[Boolean]): Self = StObject.set(x, "isNotEmptyString", value.toJsFn)
+    
+    inline def setIsNotEmptyStringFunction1(value: /* cb */ js.Function1[Boolean, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isNotEmptyString", js.Any.fromFunction1((t0: /* cb */ js.Function1[Boolean, Any]) => value(t0).runNow()))
+    
+    inline def setIsNotEmptyStringUndefined: Self = StObject.set(x, "isNotEmptyString", js.undefined)
+    
+    inline def setIsNotIn(value: AttributeValidation[js.Array[String]]): Self = StObject.set(x, "isNotIn", value.asInstanceOf[js.Any])
+    
+    inline def setIsNotInCallbackTo(value: CallbackTo[js.Array[String]]): Self = StObject.set(x, "isNotIn", value.toJsFn)
+    
+    inline def setIsNotInFunction1(value: /* cb */ js.Function1[js.Array[String], Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isNotIn", js.Any.fromFunction1((t0: /* cb */ js.Function1[js.Array[String], Any]) => value(t0).runNow()))
+    
+    inline def setIsNotInUndefined: Self = StObject.set(x, "isNotIn", js.undefined)
+    
+    inline def setIsNotInVarargs(value: String*): Self = StObject.set(x, "isNotIn", js.Array(value*))
+    
+    inline def setIsNumber(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isNumber", value.asInstanceOf[js.Any])
+    
+    inline def setIsNumberCallbackTo(value: CallbackTo[Boolean]): Self = StObject.set(x, "isNumber", value.toJsFn)
+    
+    inline def setIsNumberFunction1(value: /* cb */ js.Function1[Boolean, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isNumber", js.Any.fromFunction1((t0: /* cb */ js.Function1[Boolean, Any]) => value(t0).runNow()))
+    
+    inline def setIsNumberUndefined: Self = StObject.set(x, "isNumber", js.undefined)
+    
+    inline def setIsString(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isString", value.asInstanceOf[js.Any])
+    
+    inline def setIsStringCallbackTo(value: CallbackTo[Boolean]): Self = StObject.set(x, "isString", value.toJsFn)
+    
+    inline def setIsStringFunction1(value: /* cb */ js.Function1[Boolean, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isString", js.Any.fromFunction1((t0: /* cb */ js.Function1[Boolean, Any]) => value(t0).runNow()))
+    
+    inline def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
+    
+    inline def setIsURL(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isURL", value.asInstanceOf[js.Any])
+    
+    inline def setIsURLCallbackTo(value: CallbackTo[Boolean]): Self = StObject.set(x, "isURL", value.toJsFn)
+    
+    inline def setIsURLFunction1(value: /* cb */ js.Function1[Boolean, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isURL", js.Any.fromFunction1((t0: /* cb */ js.Function1[Boolean, Any]) => value(t0).runNow()))
+    
+    inline def setIsURLUndefined: Self = StObject.set(x, "isURL", js.undefined)
+    
+    inline def setIsUUID(value: AttributeValidation[Boolean]): Self = StObject.set(x, "isUUID", value.asInstanceOf[js.Any])
+    
+    inline def setIsUUIDCallbackTo(value: CallbackTo[Boolean]): Self = StObject.set(x, "isUUID", value.toJsFn)
+    
+    inline def setIsUUIDFunction1(value: /* cb */ js.Function1[Boolean, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "isUUID", js.Any.fromFunction1((t0: /* cb */ js.Function1[Boolean, Any]) => value(t0).runNow()))
+    
+    inline def setIsUUIDUndefined: Self = StObject.set(x, "isUUID", js.undefined)
+    
+    inline def setMax(value: AttributeValidation[Double]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxCallbackTo(value: CallbackTo[Double]): Self = StObject.set(x, "max", value.toJsFn)
+    
+    inline def setMaxFunction1(value: /* cb */ js.Function1[Double, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "max", js.Any.fromFunction1((t0: /* cb */ js.Function1[Double, Any]) => value(t0).runNow()))
+    
+    inline def setMaxLength(value: AttributeValidation[Double]): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLengthCallbackTo(value: CallbackTo[Double]): Self = StObject.set(x, "maxLength", value.toJsFn)
+    
+    inline def setMaxLengthFunction1(value: /* cb */ js.Function1[Double, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "maxLength", js.Any.fromFunction1((t0: /* cb */ js.Function1[Double, Any]) => value(t0).runNow()))
+    
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: AttributeValidation[Double]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinCallbackTo(value: CallbackTo[Double]): Self = StObject.set(x, "min", value.toJsFn)
+    
+    inline def setMinFunction1(value: /* cb */ js.Function1[Double, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "min", js.Any.fromFunction1((t0: /* cb */ js.Function1[Double, Any]) => value(t0).runNow()))
+    
+    inline def setMinLength(value: AttributeValidation[Double]): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    
+    inline def setMinLengthCallbackTo(value: CallbackTo[Double]): Self = StObject.set(x, "minLength", value.toJsFn)
+    
+    inline def setMinLengthFunction1(value: /* cb */ js.Function1[Double, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "minLength", js.Any.fromFunction1((t0: /* cb */ js.Function1[Double, Any]) => value(t0).runNow()))
+    
+    inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setRegex(value: AttributeValidation[js.RegExp]): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    
+    inline def setRegexCallbackTo(value: CallbackTo[js.RegExp]): Self = StObject.set(x, "regex", value.toJsFn)
+    
+    inline def setRegexFunction1(value: /* cb */ js.Function1[js.RegExp, Any] => japgolly.scalajs.react.Callback): Self = StObject.set(x, "regex", js.Any.fromFunction1((t0: /* cb */ js.Function1[js.RegExp, Any]) => value(t0).runNow()))
+    
+    inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+  }
 }
-

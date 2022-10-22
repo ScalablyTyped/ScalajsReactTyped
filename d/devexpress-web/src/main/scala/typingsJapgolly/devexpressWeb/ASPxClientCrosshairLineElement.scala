@@ -1,13 +1,10 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the CrosshairLineElement class.
   */
-@JSGlobal("ASPxClientCrosshairLineElement")
-@js.native
-class ASPxClientCrosshairLineElement () extends js.Object
-
+trait ASPxClientCrosshairLineElement extends StObject

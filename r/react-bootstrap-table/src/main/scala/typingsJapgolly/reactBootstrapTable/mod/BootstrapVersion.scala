@@ -1,21 +1,17 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.`3`
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.`4`
 */
-trait BootstrapVersion extends js.Object
-
+trait BootstrapVersion extends StObject
 object BootstrapVersion {
-  @scala.inline
-  def `3`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.`3` = this.cast("3")
-  @scala.inline
-  def `4`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.`4` = this.cast("4")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `3`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.`3` = "3".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.`3`]
+  
+  inline def `4`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.`4` = "4".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.`4`]
 }
-

@@ -1,31 +1,27 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`3`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-2`
 */
-trait MsoPresetLightingSoftness extends js.Object
-
+trait MsoPresetLightingSoftness extends StObject
 object MsoPresetLightingSoftness {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoLightingBright: `3` = this.cast(3)
-  @scala.inline
-  def msoLightingDim: `1` = this.cast(1)
-  @scala.inline
-  def msoLightingNormal: `2` = this.cast(2)
-  @scala.inline
-  def msoPresetLightingSoftnessMixed: `-2` = this.cast(-2)
+  
+  inline def msoLightingBright: `3` = 3.asInstanceOf[`3`]
+  
+  inline def msoLightingDim: `1` = 1.asInstanceOf[`1`]
+  
+  inline def msoLightingNormal: `2` = 2.asInstanceOf[`2`]
+  
+  inline def msoPresetLightingSoftnessMixed: `-2` = -2.asInstanceOf[`-2`]
 }
-

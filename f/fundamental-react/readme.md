@@ -1,19 +1,19 @@
 
 # Scala.js typings for fundamental-react
 
-Typings are for version 0.8
+Typings are for version 0.13
 
 ## Library description:
-SAP Fundamentals, implemented in React
+SAP Fundamental Library, implemented in React
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fundamental-react |
 | Keywords           | - |
-| # releases         | 380 |
-| # dependents       | 3 |
-| # downloads        | 101168 |
-| # stars            | 0 |
+| # releases         | 76 |
+| # dependents       | 0.0 |
+| # downloads        | 5614.0 |
+| # stars            | 167.0 |
 
 ## Links
 - [Homepage](https://sap.github.io/fundamental-react)

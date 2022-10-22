@@ -1,52 +1,43 @@
 package typingsJapgolly.materialUi.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.materialUi.MaterialUI.propTypes.tooltipHorizontal
 import typingsJapgolly.materialUi.MaterialUI.propTypes.vertical
-import typingsJapgolly.materialUi.tooltipMod.TooltipProps
-import typingsJapgolly.materialUi.tooltipMod.default
+import typingsJapgolly.materialUi.internalTooltipMod.TooltipProps
+import typingsJapgolly.materialUi.internalTooltipMod.default
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tooltip {
-  def apply(
-    label: js.Any,
-    className: String = null,
-    horizontalPosition: tooltipHorizontal = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    touch: js.UndefOr[Boolean] = js.undefined,
-    verticalPosition: vertical = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TooltipProps, default, Unit, TooltipProps] = {
-    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (horizontalPosition != null) __obj.updateDynamic("horizontalPosition")(horizontalPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
-    if (verticalPosition != null) __obj.updateDynamic("verticalPosition")(verticalPosition.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUi.tooltipMod.TooltipProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUi.tooltipMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUi.tooltipMod.TooltipProps])(children: _*)
+  inline def apply(label: Any): Builder = {
+    val __props = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[TooltipProps]))
   }
+  
   @JSImport("material-ui/internal/Tooltip", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def horizontalPosition(value: tooltipHorizontal): this.type = set("horizontalPosition", value.asInstanceOf[js.Any])
+    
+    inline def show(value: Boolean): this.type = set("show", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def touch(value: Boolean): this.type = set("touch", value.asInstanceOf[js.Any])
+    
+    inline def verticalPosition(value: vertical): this.type = set("verticalPosition", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: TooltipProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

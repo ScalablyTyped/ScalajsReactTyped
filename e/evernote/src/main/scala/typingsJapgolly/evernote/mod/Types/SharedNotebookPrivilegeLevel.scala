@@ -1,53 +1,51 @@
 package typingsJapgolly.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SharedNotebookPrivilegeLevel extends js.Object
-
+sealed trait SharedNotebookPrivilegeLevel extends StObject
 @JSImport("evernote", "Types.SharedNotebookPrivilegeLevel")
 @js.native
-object SharedNotebookPrivilegeLevel extends js.Object {
-  @js.native
-  sealed trait BUSINESS_FULL_ACCESS extends SharedNotebookPrivilegeLevel
-  
-  @js.native
-  sealed trait FULL_ACCESS extends SharedNotebookPrivilegeLevel
-  
-  @js.native
-  sealed trait GROUP extends SharedNotebookPrivilegeLevel
-  
-  @js.native
-  sealed trait MODIFY_NOTEBOOK_PLUS_ACTIVITY extends SharedNotebookPrivilegeLevel
-  
-  @js.native
-  sealed trait READ_NOTEBOOK extends SharedNotebookPrivilegeLevel
-  
-  @js.native
-  sealed trait READ_NOTEBOOK_PLUS_ACTIVITY extends SharedNotebookPrivilegeLevel
+object SharedNotebookPrivilegeLevel extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SharedNotebookPrivilegeLevel with Double] = js.native
-  /* 5 */ @js.native
-  object BUSINESS_FULL_ACCESS extends TopLevel[BUSINESS_FULL_ACCESS with Double]
+  def apply(value: Double): js.UndefOr[SharedNotebookPrivilegeLevel & Double] = js.native
   
-  /* 4 */ @js.native
-  object FULL_ACCESS extends TopLevel[FULL_ACCESS with Double]
+  @js.native
+  sealed trait BUSINESS_FULL_ACCESS
+    extends StObject
+       with SharedNotebookPrivilegeLevel
+  /* 5 */ val BUSINESS_FULL_ACCESS: typingsJapgolly.evernote.mod.Types.SharedNotebookPrivilegeLevel.BUSINESS_FULL_ACCESS & Double = js.native
   
-  /* 3 */ @js.native
-  object GROUP extends TopLevel[GROUP with Double]
+  @js.native
+  sealed trait FULL_ACCESS
+    extends StObject
+       with SharedNotebookPrivilegeLevel
+  /* 4 */ val FULL_ACCESS: typingsJapgolly.evernote.mod.Types.SharedNotebookPrivilegeLevel.FULL_ACCESS & Double = js.native
   
-  /* 1 */ @js.native
-  object MODIFY_NOTEBOOK_PLUS_ACTIVITY extends TopLevel[MODIFY_NOTEBOOK_PLUS_ACTIVITY with Double]
+  @js.native
+  sealed trait GROUP
+    extends StObject
+       with SharedNotebookPrivilegeLevel
+  /* 3 */ val GROUP: typingsJapgolly.evernote.mod.Types.SharedNotebookPrivilegeLevel.GROUP & Double = js.native
   
-  /* 0 */ @js.native
-  object READ_NOTEBOOK extends TopLevel[READ_NOTEBOOK with Double]
+  @js.native
+  sealed trait MODIFY_NOTEBOOK_PLUS_ACTIVITY
+    extends StObject
+       with SharedNotebookPrivilegeLevel
+  /* 1 */ val MODIFY_NOTEBOOK_PLUS_ACTIVITY: typingsJapgolly.evernote.mod.Types.SharedNotebookPrivilegeLevel.MODIFY_NOTEBOOK_PLUS_ACTIVITY & Double = js.native
   
-  /* 2 */ @js.native
-  object READ_NOTEBOOK_PLUS_ACTIVITY extends TopLevel[READ_NOTEBOOK_PLUS_ACTIVITY with Double]
+  @js.native
+  sealed trait READ_NOTEBOOK
+    extends StObject
+       with SharedNotebookPrivilegeLevel
+  /* 0 */ val READ_NOTEBOOK: typingsJapgolly.evernote.mod.Types.SharedNotebookPrivilegeLevel.READ_NOTEBOOK & Double = js.native
   
+  @js.native
+  sealed trait READ_NOTEBOOK_PLUS_ACTIVITY
+    extends StObject
+       with SharedNotebookPrivilegeLevel
+  /* 2 */ val READ_NOTEBOOK_PLUS_ACTIVITY: typingsJapgolly.evernote.mod.Types.SharedNotebookPrivilegeLevel.READ_NOTEBOOK_PLUS_ACTIVITY & Double = js.native
 }
-

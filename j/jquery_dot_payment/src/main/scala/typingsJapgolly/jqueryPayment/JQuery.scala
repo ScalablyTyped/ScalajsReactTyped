@@ -1,20 +1,22 @@
 package typingsJapgolly.jqueryPayment
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   def payment(command: String): JQuery
 }
-
 object JQuery {
-  @scala.inline
-  def apply(payment: String => CallbackTo[JQuery]): JQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("payment")(js.Any.fromFunction1((t0: java.lang.String) => payment(t0).runNow()))
+  
+  inline def apply(payment: String => JQuery): JQuery = {
+    val __obj = js.Dynamic.literal(payment = js.Any.fromFunction1(payment))
     __obj.asInstanceOf[JQuery]
   }
+  
+  extension [Self <: JQuery](x: Self) {
+    
+    inline def setPayment(value: String => JQuery): Self = StObject.set(x, "payment", js.Any.fromFunction1(value))
+  }
 }
-

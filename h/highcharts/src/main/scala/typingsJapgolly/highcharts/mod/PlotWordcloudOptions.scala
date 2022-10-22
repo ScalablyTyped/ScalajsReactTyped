@@ -1,24 +1,17 @@
 package typingsJapgolly.highcharts.mod
 
+import typingsJapgolly.highcharts.anon.PartialAnimationOptionsOb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotWordcloudOptions extends js.Object {
+trait PlotWordcloudOptions extends StObject {
+  
   /**
-    * (Highcharts) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highcharts) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotWordcloudAccessibilityOptions] = js.undefined
-  /**
-    * (Highcharts) If there is no space for a word on the playing field, then
-    * this option will allow the playing field to be extended to fit the word.
-    * If false then the word will be dropped from the visualization.
-    *
-    * NB! This option is currently not decided to be published in the API, and
-    * is therefore marked as private.
-    */
-  var allowExtendPlayingField: js.UndefOr[Boolean] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
+  
   /**
     * (Highcharts) Allow this series' points to be selected by clicking on the
     * graphic (columns, point markers, pie slices, map areas etc).
@@ -29,6 +22,7 @@ trait PlotWordcloudOptions extends js.Object {
     * And alternative way of selecting points is through dragging.
     */
   var allowPointSelect: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) Enable or disable the initial animation when a series is
     * displayed. The animation can also be set as a configuration object.
@@ -36,6 +30,8 @@ trait PlotWordcloudOptions extends js.Object {
     * series itself. For other animations, see chart.animation and the
     * animation parameter under the API methods. The following properties are
     * supported:
+    *
+    * - `defer`: The animation delay time in milliseconds.
     *
     * - `duration`: The duration of the animation in milliseconds.
     *
@@ -45,7 +41,8 @@ trait PlotWordcloudOptions extends js.Object {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[PlotWordcloudAnimationOptions] = js.undefined
+  var animation: js.UndefOr[Boolean | PlotWordcloudAnimationOptions | PartialAnimationOptionsOb] = js.undefined
+  
   /**
     * (Highcharts) For some series, there is a limit that shuts down initial
     * animation by default when the total number of points in the chart is too
@@ -54,10 +51,7 @@ trait PlotWordcloudOptions extends js.Object {
     * set `animationLimit` to `Infinity`.
     */
   var animationLimit: js.UndefOr[Double] = js.undefined
-  /**
-    * (Highcharts) Sets the color blending in the boost module.
-    */
-  var boostBlending: js.UndefOr[OptionsBoostBlendingValue] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The color of the border surrounding each
     * column or bar.
@@ -66,11 +60,13 @@ trait PlotWordcloudOptions extends js.Object {
     * rule.
     */
   var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The corner radius of the border
     * surrounding each column or bar.
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The width of the border surrounding each
     * column or bar. Defaults to `1` when there is room for a border, but to
@@ -81,13 +77,23 @@ trait PlotWordcloudOptions extends js.Object {
     * rule.
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) When `true`, the columns will center in
+    * the category, ignoring null or missing points. When `false`, space will
+    * be reserved for null or missing points.
+    */
+  var centerInCategory: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
     * graphical element.
     */
   var className: js.UndefOr[String] = js.undefined
+  
   var clip: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) The main color of the series. In line type series it applies
     * to the line and the point markers unless otherwise specified. In bar type
@@ -101,6 +107,7 @@ trait PlotWordcloudOptions extends js.Object {
     * `className` option.
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) When using automatic point colors pulled
     * from the global colors or series-specific plotOptions.column.colors
@@ -112,12 +119,14 @@ trait PlotWordcloudOptions extends js.Object {
     * the form `highcharts-color-{n}`.
     */
   var colorByPoint: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps) Determines what data value should be
     * used to calculate point color if `colorAxis` is used. Requires to set
@@ -125,37 +134,40 @@ trait PlotWordcloudOptions extends js.Object {
     * for data grouping is set to `'sum'`.
     */
   var colorKey: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) A series specific or series type specific
     * color set to apply instead of the global colors when colorByPoint is
     * true.
     */
   var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
+  
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotWordcloudConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
+  
   /**
-    * (Highcharts, Highstock, Gantt) When the series contains less points than
-    * the crop threshold, all points are drawn, event if the points fall
-    * outside the visible plot area at the current zoom. The advantage of
-    * drawing all points (including markers and columns), is that animation is
-    * performed on updates. On the other hand, when the series contains more
-    * points than the crop threshold, the series data is cropped to only
-    * contain points that fall within the plot area. The advantage of cropping
-    * away invisible points is to increase performance on large series.
+    * (Highstock) Cumulative Sum feature replaces points' values with the
+    * following formula: `sum of all previous points' values + current point's
+    * value`. Works only for points in a visible range. Adds the
+    * `cumulativeSum` field to each point object that can be accessed e.g. in
+    * the tooltip.pointFormat.
     */
-  var cropThreshold: js.UndefOr[Double] = js.undefined
+  var cumulative: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
@@ -165,27 +177,53 @@ trait PlotWordcloudOptions extends js.Object {
     * listed under series.color.
     */
   var cursor: js.UndefOr[String | CursorValue] = js.undefined
+  
+  /**
+    * (Highcharts) A reserved subspace to store options and values for
+    * customized functionality. Here you can add additional data for your own
+    * event callbacks and formatter callbacks.
+    */
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
+  
+  /**
+    * (Highcharts) Name of the dash style to use for the graph, or for some
+    * series types the outline of each shape.
+    *
+    * In styled mode, the stroke dash-array can be set with the same classes as
+    * listed under series.color.
+    */
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
+  
+  /**
+    * (Highcharts) Indicates data is structured as columns instead of rows.
+    */
+  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) A description of the series to add to the screen reader
     * information about the series.
     */
   var description: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts) 3D columns only. The width of the colored edges.
     */
   var edgeWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
     * large datasets it improves performance.
     */
   var enableMouseTracking: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) General event handlers for the series items. These event
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotWordcloudEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
+  
   /**
     * (Highcharts) When set to `false` will prevent the series data from being
     * included in any form of data export.
@@ -194,12 +232,14 @@ trait PlotWordcloudOptions extends js.Object {
     * `includeInCSVExport`.
     */
   var includeInDataExport: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) An array specifying which option maps to which key in the
     * data point array. This makes it convenient to work with unstructured data
     * arrays from different sources.
     */
   var keys: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Series labels are placed as close to the
     * series as possible in a natural way, seeking to avoid other series. The
@@ -209,22 +249,30 @@ trait PlotWordcloudOptions extends js.Object {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[PlotWordcloudLabelOptions] = js.undefined
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
+  
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotWordcloudLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
+  
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotWordcloudLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The id of another series to link to.
     * Additionally, the value can be ":previous" to link to the previous
     * series. When two series are linked, only the first one appears in the
     * legend. Toggling the visibility of this also toggles the linked series.
+    *
+    * If master series uses data sorting and linked series does not have its
+    * own sorting definition, the linked series will be sorted in the same
+    * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts) The word with the largest weight will have a font size equal
     * to this value. The font size of a word is the ratio between its weight
@@ -232,16 +280,25 @@ trait PlotWordcloudOptions extends js.Object {
     * maxFontSize.
     */
   var maxFontSize: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) A threshold determining the minimum font size that can be
     * applied to a word.
     */
   var minFontSize: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts) Options for the _Series on point_ feature. Only `pie` and
+    * `sunburst` series are supported at this moment.
+    */
+  var onPoint: js.UndefOr[js.Object | PlotWordcloudOnPointOptions] = js.undefined
+  
   /**
     * (Highcharts) Opacity of a series parts: line, fill (e.g. area) and
     * dataLabels.
     */
   var opacity: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) This option decides which algorithm is used for placement,
     * and rotation of a word. The choice of algorith is therefore a crucial
@@ -249,26 +306,43 @@ trait PlotWordcloudOptions extends js.Object {
     * to add their own custom placement strategies for use in word cloud. Read
     * more about it in our documentation
     */
-  var placementStrategy: js.UndefOr[String] = js.undefined
+  var placementStrategy: js.UndefOr[OptionsPlacementStrategyValue] = js.undefined
+  
   /**
     * (Highcharts) Properties for each single point.
     */
-  var point: js.UndefOr[PlotWordcloudPointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
+  
   /**
-    * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
-    * individual series. Overrides the chart wide configuration.
+    * (Highcharts) Same as accessibility.series.descriptionFormatter, but for
+    * an individual series. Overrides the chart wide configuration.
     */
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) When true, X values in the data set are relative
+    * to the current `pointStart`, `pointInterval` and `pointIntervalUnit`
+    * settings. This allows compression of the data for datasets with irregular
+    * X values.
+    *
+    * The real X values are computed on the formula `f(x) = ax + b`, where `a`
+    * is the `pointInterval` (optionally with a time unit given by
+    * `pointIntervalUnit`), and `b` is the `pointStart`.
+    */
+  var relativeXValue: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) Rotation options for the words in the wordcloud.
     */
   var rotation: js.UndefOr[PlotWordcloudRotationOptions] = js.undefined
+  
   /**
     * (Highcharts) Whether to select the series initially. If `showCheckbox` is
     * true, the checkbox next to the series name in the legend will be checked
     * for a selected series.
     */
   var selected: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) Whether to display this particular series or series type in
     * the legend. Standalone series are shown in legend by default, and linked
@@ -276,19 +350,23 @@ trait PlotWordcloudOptions extends js.Object {
     * colorAxis by setting this option to `true`.
     */
   var showInLegend: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) If set to `true`, the accessibility module will skip past
     * the points in this series for keyboard navigation.
     */
   var skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) Spiral used for placing a word after the initial position
     * experienced a collision with either another word or the borders. It is
     * possible for users to add their own custom spiralling algorithms for use
     * in word cloud. Read more about it in our documentation
     */
-  var spiral: js.UndefOr[String] = js.undefined
-  var states: js.UndefOr[PlotWordcloudStatesOptions] = js.undefined
+  var spiral: js.UndefOr[OptionsSpiralValue] = js.undefined
+  
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
+  
   /**
     * (Highcharts) Sticky tracking of mouse events. When true, the `mouseOut`
     * event on a series isn't triggered until the mouse moves over another
@@ -303,16 +381,19 @@ trait PlotWordcloudOptions extends js.Object {
     * limitations.
     */
   var stickyTracking: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) CSS styles for the words.
     */
   var style: js.UndefOr[CSSObject] = js.undefined
+  
   /**
     * (Highcharts) A configuration object for the tooltip rendering of each
     * single series. Properties are inherited from tooltip, but only the
     * following properties can be defined on a series level.
     */
-  var tooltip: js.UndefOr[PlotWordcloudTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) When a series contains a data array that
     * is longer than this, only one dimensional arrays of numbers, or two
@@ -325,118 +406,236 @@ trait PlotWordcloudOptions extends js.Object {
     * two dimensional arrays are allowed.
     */
   var turboThreshold: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Set the initial visibility of the series.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highmaps) Define the z index of the series.
     */
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object PlotWordcloudOptions {
-  @scala.inline
-  def apply(
-    accessibility: js.Object | PlotWordcloudAccessibilityOptions = null,
-    allowExtendPlayingField: js.UndefOr[Boolean] = js.undefined,
-    allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: PlotWordcloudAnimationOptions = null,
-    animationLimit: Int | Double = null,
-    boostBlending: OptionsBoostBlendingValue = null,
-    borderColor: ColorString | GradientColorObject | PatternObject = null,
-    borderRadius: Int | Double = null,
-    borderWidth: Int | Double = null,
-    className: String = null,
-    clip: js.UndefOr[Boolean] = js.undefined,
-    color: ColorString | GradientColorObject | PatternObject = null,
-    colorByPoint: js.UndefOr[Boolean] = js.undefined,
-    colorIndex: Int | Double = null,
-    colorKey: String = null,
-    colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
-    compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotWordcloudConnectorsOptions = null,
-    cropThreshold: Int | Double = null,
-    cursor: String | CursorValue = null,
-    description: String = null,
-    edgeWidth: Int | Double = null,
-    enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotWordcloudEventsOptions = null,
-    includeInDataExport: js.UndefOr[Boolean] = js.undefined,
-    keys: js.Array[String] = null,
-    label: PlotWordcloudLabelOptions = null,
-    lastPrice: PlotWordcloudLastPriceOptions = null,
-    lastVisiblePrice: PlotWordcloudLastVisiblePriceOptions = null,
-    linkedTo: String = null,
-    maxFontSize: Int | Double = null,
-    minFontSize: Int | Double = null,
-    opacity: Int | Double = null,
-    placementStrategy: String = null,
-    point: PlotWordcloudPointOptions = null,
-    pointDescriptionFormatter: js.Function = null,
-    rotation: PlotWordcloudRotationOptions = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    showInLegend: js.UndefOr[Boolean] = js.undefined,
-    skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    spiral: String = null,
-    states: PlotWordcloudStatesOptions = null,
-    stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    style: CSSObject = null,
-    tooltip: PlotWordcloudTooltipOptions = null,
-    turboThreshold: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
-  ): PlotWordcloudOptions = {
+  
+  inline def apply(): PlotWordcloudOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowExtendPlayingField)) __obj.updateDynamic("allowExtendPlayingField")(allowExtendPlayingField.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPointSelect)) __obj.updateDynamic("allowPointSelect")(allowPointSelect.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (animationLimit != null) __obj.updateDynamic("animationLimit")(animationLimit.asInstanceOf[js.Any])
-    if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint.asInstanceOf[js.Any])
-    if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
-    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart.asInstanceOf[js.Any])
-    if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
-    if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (edgeWidth != null) __obj.updateDynamic("edgeWidth")(edgeWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeInDataExport)) __obj.updateDynamic("includeInDataExport")(includeInDataExport.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lastPrice != null) __obj.updateDynamic("lastPrice")(lastPrice.asInstanceOf[js.Any])
-    if (lastVisiblePrice != null) __obj.updateDynamic("lastVisiblePrice")(lastVisiblePrice.asInstanceOf[js.Any])
-    if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo.asInstanceOf[js.Any])
-    if (maxFontSize != null) __obj.updateDynamic("maxFontSize")(maxFontSize.asInstanceOf[js.Any])
-    if (minFontSize != null) __obj.updateDynamic("minFontSize")(minFontSize.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (placementStrategy != null) __obj.updateDynamic("placementStrategy")(placementStrategy.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
-    if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipKeyboardNavigation)) __obj.updateDynamic("skipKeyboardNavigation")(skipKeyboardNavigation.asInstanceOf[js.Any])
-    if (spiral != null) __obj.updateDynamic("spiral")(spiral.asInstanceOf[js.Any])
-    if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotWordcloudOptions]
   }
+  
+  extension [Self <: PlotWordcloudOptions](x: Self) {
+    
+    inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
+    
+    inline def setAllowPointSelect(value: Boolean): Self = StObject.set(x, "allowPointSelect", value.asInstanceOf[js.Any])
+    
+    inline def setAllowPointSelectUndefined: Self = StObject.set(x, "allowPointSelect", js.undefined)
+    
+    inline def setAnimation(value: Boolean | PlotWordcloudAnimationOptions | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationLimit(value: Double): Self = StObject.set(x, "animationLimit", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationLimitUndefined: Self = StObject.set(x, "animationLimit", js.undefined)
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    
+    inline def setCenterInCategory(value: Boolean): Self = StObject.set(x, "centerInCategory", value.asInstanceOf[js.Any])
+    
+    inline def setCenterInCategoryUndefined: Self = StObject.set(x, "centerInCategory", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    
+    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorByPoint(value: Boolean): Self = StObject.set(x, "colorByPoint", value.asInstanceOf[js.Any])
+    
+    inline def setColorByPointUndefined: Self = StObject.set(x, "colorByPoint", js.undefined)
+    
+    inline def setColorIndex(value: Double): Self = StObject.set(x, "colorIndex", value.asInstanceOf[js.Any])
+    
+    inline def setColorIndexUndefined: Self = StObject.set(x, "colorIndex", js.undefined)
+    
+    inline def setColorKey(value: String): Self = StObject.set(x, "colorKey", value.asInstanceOf[js.Any])
+    
+    inline def setColorKeyUndefined: Self = StObject.set(x, "colorKey", js.undefined)
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setColors(value: js.Array[ColorString | GradientColorObject | PatternObject]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    
+    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value*))
+    
+    inline def setCompareStart(value: Boolean): Self = StObject.set(x, "compareStart", value.asInstanceOf[js.Any])
+    
+    inline def setCompareStartUndefined: Self = StObject.set(x, "compareStart", js.undefined)
+    
+    inline def setConnectors(value: SeriesConnectorsOptionsObject): Self = StObject.set(x, "connectors", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorsUndefined: Self = StObject.set(x, "connectors", js.undefined)
+    
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    
+    inline def setCursor(value: String | CursorValue): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    
+    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setEdgeWidth(value: Double): Self = StObject.set(x, "edgeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setEdgeWidthUndefined: Self = StObject.set(x, "edgeWidth", js.undefined)
+    
+    inline def setEnableMouseTracking(value: Boolean): Self = StObject.set(x, "enableMouseTracking", value.asInstanceOf[js.Any])
+    
+    inline def setEnableMouseTrackingUndefined: Self = StObject.set(x, "enableMouseTracking", js.undefined)
+    
+    inline def setEvents(value: SeriesEventsOptionsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def setIncludeInDataExport(value: Boolean): Self = StObject.set(x, "includeInDataExport", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeInDataExportUndefined: Self = StObject.set(x, "includeInDataExport", js.undefined)
+    
+    inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
+    
+    inline def setLabel(value: SeriesLabelOptionsObject): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLastPrice(value: SeriesLastPriceOptionsObject): Self = StObject.set(x, "lastPrice", value.asInstanceOf[js.Any])
+    
+    inline def setLastPriceUndefined: Self = StObject.set(x, "lastPrice", js.undefined)
+    
+    inline def setLastVisiblePrice(value: SeriesLastVisiblePriceOptionsObject): Self = StObject.set(x, "lastVisiblePrice", value.asInstanceOf[js.Any])
+    
+    inline def setLastVisiblePriceUndefined: Self = StObject.set(x, "lastVisiblePrice", js.undefined)
+    
+    inline def setLinkedTo(value: String): Self = StObject.set(x, "linkedTo", value.asInstanceOf[js.Any])
+    
+    inline def setLinkedToUndefined: Self = StObject.set(x, "linkedTo", js.undefined)
+    
+    inline def setMaxFontSize(value: Double): Self = StObject.set(x, "maxFontSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxFontSizeUndefined: Self = StObject.set(x, "maxFontSize", js.undefined)
+    
+    inline def setMinFontSize(value: Double): Self = StObject.set(x, "minFontSize", value.asInstanceOf[js.Any])
+    
+    inline def setMinFontSizeUndefined: Self = StObject.set(x, "minFontSize", js.undefined)
+    
+    inline def setOnPoint(value: js.Object | PlotWordcloudOnPointOptions): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setPlacementStrategy(value: OptionsPlacementStrategyValue): Self = StObject.set(x, "placementStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setPlacementStrategyUndefined: Self = StObject.set(x, "placementStrategy", js.undefined)
+    
+    inline def setPoint(value: PlotSeriesPointOptions): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    
+    inline def setPointDescriptionFormatter(value: js.Function): Self = StObject.set(x, "pointDescriptionFormatter", value.asInstanceOf[js.Any])
+    
+    inline def setPointDescriptionFormatterUndefined: Self = StObject.set(x, "pointDescriptionFormatter", js.undefined)
+    
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    
+    inline def setRelativeXValue(value: Boolean): Self = StObject.set(x, "relativeXValue", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeXValueUndefined: Self = StObject.set(x, "relativeXValue", js.undefined)
+    
+    inline def setRotation(value: PlotWordcloudRotationOptions): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setShowInLegend(value: Boolean): Self = StObject.set(x, "showInLegend", value.asInstanceOf[js.Any])
+    
+    inline def setShowInLegendUndefined: Self = StObject.set(x, "showInLegend", js.undefined)
+    
+    inline def setSkipKeyboardNavigation(value: Boolean): Self = StObject.set(x, "skipKeyboardNavigation", value.asInstanceOf[js.Any])
+    
+    inline def setSkipKeyboardNavigationUndefined: Self = StObject.set(x, "skipKeyboardNavigation", js.undefined)
+    
+    inline def setSpiral(value: OptionsSpiralValue): Self = StObject.set(x, "spiral", value.asInstanceOf[js.Any])
+    
+    inline def setSpiralUndefined: Self = StObject.set(x, "spiral", js.undefined)
+    
+    inline def setStates(value: SeriesStatesOptionsObject): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    
+    inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
+    
+    inline def setStickyTracking(value: Boolean): Self = StObject.set(x, "stickyTracking", value.asInstanceOf[js.Any])
+    
+    inline def setStickyTrackingUndefined: Self = StObject.set(x, "stickyTracking", js.undefined)
+    
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTooltip(value: SeriesTooltipOptionsObject): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setTurboThreshold(value: Double): Self = StObject.set(x, "turboThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setTurboThresholdUndefined: Self = StObject.set(x, "turboThreshold", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

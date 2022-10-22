@@ -1,33 +1,50 @@
 package typingsJapgolly.athenajs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneOptions extends js.Object {
+trait SceneOptions extends StObject {
+  
   var hudScene: js.UndefOr[Scene] = js.undefined
+  
   var layers: js.UndefOr[Double] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   var resources: js.UndefOr[js.Array[Res]] = js.undefined
 }
-
 object SceneOptions {
-  @scala.inline
-  def apply(
-    hudScene: Scene = null,
-    layers: Int | Double = null,
-    name: String = null,
-    opacity: Int | Double = null,
-    resources: js.Array[Res] = null
-  ): SceneOptions = {
+  
+  inline def apply(): SceneOptions = {
     val __obj = js.Dynamic.literal()
-    if (hudScene != null) __obj.updateDynamic("hudScene")(hudScene.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneOptions]
   }
+  
+  extension [Self <: SceneOptions](x: Self) {
+    
+    inline def setHudScene(value: Scene): Self = StObject.set(x, "hudScene", value.asInstanceOf[js.Any])
+    
+    inline def setHudSceneUndefined: Self = StObject.set(x, "hudScene", js.undefined)
+    
+    inline def setLayers(value: Double): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setResources(value: js.Array[Res]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    
+    inline def setResourcesVarargs(value: Res*): Self = StObject.set(x, "resources", js.Array(value*))
+  }
 }
-

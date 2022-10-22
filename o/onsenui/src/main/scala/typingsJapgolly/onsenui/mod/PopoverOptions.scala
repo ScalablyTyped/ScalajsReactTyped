@@ -1,19 +1,24 @@
 package typingsJapgolly.onsenui.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PopoverOptions extends js.Object {
+trait PopoverOptions extends StObject {
+  
   var animation: js.UndefOr[String] = js.undefined
 }
-
 object PopoverOptions {
-  @scala.inline
-  def apply(animation: String = null): PopoverOptions = {
+  
+  inline def apply(): PopoverOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverOptions]
   }
+  
+  extension [Self <: PopoverOptions](x: Self) {
+    
+    inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+  }
 }
-

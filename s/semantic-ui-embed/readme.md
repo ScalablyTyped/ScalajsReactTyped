@@ -10,10 +10,10 @@ Single component release of embed
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-embed |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 2377 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 213.66666666666666 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

@@ -1,11 +1,11 @@
 package typingsJapgolly.breeze.breeze
 
 import typingsJapgolly.breeze.breeze.core.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("breeze.PropertyChangedEvent")
 @js.native
-class PropertyChangedEvent () extends Event
-
+trait PropertyChangedEvent
+  extends StObject
+     with Event

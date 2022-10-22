@@ -1,17 +1,14 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCErrorEvent extends Event_ {
+trait RTCErrorEvent
+  extends StObject
+     with Event {
+  
+  /* standard dom */
   val error: RTCError = js.native
 }
-
-@JSGlobal("RTCErrorEvent")
-@js.native
-object RTCErrorEvent
-  extends Instantiable2[/* type */ java.lang.String, /* eventInitDict */ RTCErrorEventInit, RTCErrorEvent]
-

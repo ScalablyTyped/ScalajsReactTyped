@@ -1,13 +1,10 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Serves as a base object implementing the client column functionality.
+  * Serves as a base class for classes that implement the client column functionality.
   */
-@JSGlobal("ASPxClientGridColumnBase")
-@js.native
-class ASPxClientGridColumnBase () extends js.Object
-
+trait ASPxClientGridColumnBase extends StObject

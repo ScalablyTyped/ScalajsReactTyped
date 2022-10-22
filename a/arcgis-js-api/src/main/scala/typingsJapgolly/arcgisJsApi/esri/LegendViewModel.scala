@@ -1,42 +1,66 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.disabled
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ready
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LegendViewModel extends Accessor {
+trait LegendViewModel
+  extends StObject
+     with Accessor {
+  
   /**
-    * Collection of [ActiveLayerInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html) objects used by the legend view to display data in the legend. Use this property to hide or display the layer's symbols in the legend when an [ActiveLayerInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html) is removed from or added to this collection.
+    * Collection of [ActiveLayerInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html) objects used by the legend view to display data in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#activeLayerInfos)
     */
   var activeLayerInfos: Collection[ActiveLayerInfo] = js.native
+  
   /**
     * Indicates whether to show the [Basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html) layers in the Legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#basemapLegendVisible)
-    *
     * @default filterBasemaps
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#basemapLegendVisible)
     */
   var basemapLegendVisible: Boolean = js.native
+  
   /**
-    * Specifies a subset of the layers in the map to display in the legend. If this property is not set, all operational layers in the map will display in the legend. This property can be used to control layer display order in the legend. Objects in this array are defined with the properties listed below.
+    * When `true`, layers will only be shown in the legend if they are visible in the view's extent.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#hideLayersNotInCurrentView)
+    */
+  var hideLayersNotInCurrentView: Boolean = js.native
+  
+  /**
+    * Specifies a subset of the layers in the map to display in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#layerInfos)
     */
   var layerInfos: js.Array[LegendViewModelLayerInfos] = js.native
+  
+  /**
+    * Determines whether to respect the properties of the layers in the map that control the legend's visibility (`minScale`, `maxScale`, `legendEnabled`).
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#respectLayerVisibility)
+    */
+  var respectLayerVisibility: Boolean = js.native
+  
   /**
     * The view model's state.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#state)
-    *
     * @default disabled
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#state)
     */
   val state: ready | disabled = js.native
+  
   /**
     * The view from which the widget will operate.
     *
@@ -44,8 +68,3 @@ trait LegendViewModel extends Accessor {
     */
   var view: MapView | SceneView = js.native
 }
-
-@JSGlobal("__esri.LegendViewModel")
-@js.native
-object LegendViewModel extends TopLevel[LegendViewModelConstructor]
-

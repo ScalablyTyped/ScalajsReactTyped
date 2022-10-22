@@ -6,35 +6,48 @@ import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.full
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.half
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.icons
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.outlined
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojbutton.ojMenuButtonSettableProperties> */
 trait ojMenuButtonSettablePropertiesLenient
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var chroming: js.UndefOr[full | half | outlined] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var display: js.UndefOr[all | icons] = js.undefined
-  var translations: js.UndefOr[js.Object] = js.undefined
+  
+  var translations: js.UndefOr[js.Object | Null] = js.undefined
 }
-
 object ojMenuButtonSettablePropertiesLenient {
-  @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    chroming: full | half | outlined = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    display: all | icons = null,
-    translations: js.Object = null
-  ): ojMenuButtonSettablePropertiesLenient = {
+  
+  inline def apply(): ojMenuButtonSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (chroming != null) __obj.updateDynamic("chroming")(chroming.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojMenuButtonSettablePropertiesLenient]
   }
+  
+  extension [Self <: ojMenuButtonSettablePropertiesLenient](x: Self) {
+    
+    inline def setChroming(value: full | half | outlined): Self = StObject.set(x, "chroming", value.asInstanceOf[js.Any])
+    
+    inline def setChromingUndefined: Self = StObject.set(x, "chroming", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    
+    inline def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    
+    inline def setTranslationsNull: Self = StObject.set(x, "translations", null)
+    
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+  }
 }
-

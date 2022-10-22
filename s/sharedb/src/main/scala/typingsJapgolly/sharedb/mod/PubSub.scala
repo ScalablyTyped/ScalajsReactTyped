@@ -1,42 +1,57 @@
 package typingsJapgolly.sharedb.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sharedb", "PubSub")
+/* note: abstract class */ @JSImport("sharedb", "PubSub")
 @js.native
-abstract class PubSub protected () extends js.Object {
-  protected def this(options: PubSubOptions) = this()
-  var nextStreamId: Double = js.native
-  var prefix: js.UndefOr[String] = js.native
-  var streams: StringDictionary[Stream] = js.native
-  var streamsCount: Double = js.native
-  var subscribed: StringDictionary[Boolean] = js.native
-  /* private */ def _createStream(channel: js.Any): Unit = js.native
-  /* protected */ def _emit(channel: String, data: StringDictionary[js.Any]): Unit = js.native
-  /* protected */ def _publish(channels: js.Array[String], data: js.Any, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
-  /* private */ def _removeStream(channel: js.Any, stream: js.Any): Unit = js.native
+/* protected */ open class PubSub () extends StObject {
+  /* protected */ def this(options: PubSubOptions) = this()
+  
+  /* private */ def _createStream(channel: Any): Unit = js.native
+  
+  /* protected */ def _emit(channel: String, data: StringDictionary[Any]): Unit = js.native
+  
+  /* protected */ def _publish(channels: js.Array[String], data: Any, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  
+  /* private */ def _removeStream(channel: Any, stream: Any): Unit = js.native
+  
   /* protected */ def _subscribe(channel: String, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  
   /* protected */ def _unsubscribe(channel: String, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  
   def close(): Unit = js.native
   def close(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  
+  /* protected */ var nextStreamId: Double = js.native
+  
+  /* protected */ var prefix: js.UndefOr[String] = js.native
+  
   def publish(
     channels: js.Array[String],
-    data: StringDictionary[js.Any],
+    data: StringDictionary[Any],
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
+  
+  /* protected */ var streams: StringDictionary[Stream] = js.native
+  
+  /* protected */ var streamsCount: Double = js.native
+  
   def subscribe(
     channel: String,
     callback: js.Function2[/* err */ Error | Null, /* stream */ js.UndefOr[Stream], Unit]
   ): Unit = js.native
+  
+  /* protected */ var subscribed: StringDictionary[Boolean] = js.native
 }
-
-/* static members */
-@JSImport("sharedb", "PubSub")
-@js.native
-object PubSub extends js.Object {
-  /* private */ def shallowCopy(obj: js.Any): js.Any = js.native
+object PubSub {
+  
+  @JSImport("sharedb", "PubSub")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def shallowCopy(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowCopy")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
 }
-

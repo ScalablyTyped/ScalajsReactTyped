@@ -1,41 +1,31 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Streams API interface represents a readable stream of byte data. The Fetch API offers a concrete instance of a ReadableStream through the body property of a Response object. */
 @js.native
-trait ReadableStream[R] extends js.Object {
-  val locked: scala.Boolean = js.native
+trait ReadableStream[R] extends StObject {
+  
+  /* standard dom */
   def cancel(): js.Promise[Unit] = js.native
-  def cancel(reason: js.Any): js.Promise[Unit] = js.native
+  def cancel(reason: Any): js.Promise[Unit] = js.native
+  
+  /* standard dom */
   def getReader(): ReadableStreamDefaultReader[R] = js.native
-  def getReader(options: AnonMode): ReadableStreamBYOBReader = js.native
-  def pipeThrough[T](hasWritableReadable: AnonReadable[R, T]): org.scalajs.dom.experimental.ReadableStream[T] = js.native
-  def pipeThrough[T](hasWritableReadable: AnonReadable[R, T], options: PipeOptions): org.scalajs.dom.experimental.ReadableStream[T] = js.native
-  def pipeTo(dest: WritableStream[R]): js.Promise[Unit] = js.native
-  def pipeTo(dest: WritableStream[R], options: PipeOptions): js.Promise[Unit] = js.native
-  def tee(): js.Tuple2[
-    org.scalajs.dom.experimental.ReadableStream[R], 
-    org.scalajs.dom.experimental.ReadableStream[R]
-  ] = js.native
+  
+  /* standard dom */
+  val locked: scala.Boolean = js.native
+  
+  /* standard dom */
+  def pipeThrough[T](transform: ReadableWritablePair[T, R]): org.scalajs.dom.ReadableStream[T] = js.native
+  def pipeThrough[T](transform: ReadableWritablePair[T, R], options: StreamPipeOptions): org.scalajs.dom.ReadableStream[T] = js.native
+  
+  /* standard dom */
+  def pipeTo(destination: WritableStream[R]): js.Promise[Unit] = js.native
+  def pipeTo(destination: WritableStream[R], options: StreamPipeOptions): js.Promise[Unit] = js.native
+  
+  /* standard dom */
+  def tee(): js.Tuple2[org.scalajs.dom.ReadableStream[R], org.scalajs.dom.ReadableStream[R]] = js.native
 }
-
-@JSGlobal("ReadableStream")
-@js.native
-object ReadableStream
-  extends Instantiable0[ReadableStream[js.Object]]
-     with Instantiable1[
-      (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
-      ReadableStream[js.Object | Uint8Array]
-    ]
-     with Instantiable2[
-      (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
-      (/* strategy */ AnonSize) | (/* strategy */ QueuingStrategy[js.Object]), 
-      ReadableStream[js.Object | Uint8Array]
-    ]
-

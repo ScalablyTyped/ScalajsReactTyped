@@ -1,27 +1,23 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`255`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`255`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
-  - typingsJapgolly.activexWord.activexWordNumbers.`255`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`255`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
 */
-trait WdFontBias extends js.Object
-
+trait WdFontBias extends StObject
 object WdFontBias {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdFontBiasDefault: `0` = this.cast(0)
-  @scala.inline
-  def wdFontBiasDontCare: `255` = this.cast(255)
-  @scala.inline
-  def wdFontBiasFareast: `1` = this.cast(1)
+  
+  inline def wdFontBiasDefault: `0` = 0.asInstanceOf[`0`]
+  
+  inline def wdFontBiasDontCare: `255` = 255.asInstanceOf[`255`]
+  
+  inline def wdFontBiasFareast: `1` = 1.asInstanceOf[`1`]
 }
-

@@ -1,55 +1,51 @@
 package typingsJapgolly.reactMeasure.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.react.mod.SFC
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.FC
+import typingsJapgolly.react.mod.Ref
 import typingsJapgolly.reactMeasure.mod.ContentRect
 import typingsJapgolly.reactMeasure.mod.MeasureProps
 import typingsJapgolly.reactMeasure.mod.MeasuredComponentProps
 import typingsJapgolly.reactMeasure.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactMeasure {
-  def apply(
-    bounds: js.UndefOr[Boolean] = js.undefined,
-    client: js.UndefOr[Boolean] = js.undefined,
-    innerRef: Ref = null,
-    margin: js.UndefOr[Boolean] = js.undefined,
-    offset: js.UndefOr[Boolean] = js.undefined,
-    onResize: /* contentRect */ ContentRect => Callback = null,
-    scroll: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: SFC[MeasuredComponentProps] = null
-  ): UnmountedWithRoot[MeasureProps, default, Unit, MeasureProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(bounds)) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (!js.isUndefined(client)) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1((t0: /* contentRect */ typingsJapgolly.reactMeasure.mod.ContentRect) => onResize(t0).runNow()))
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactMeasure.mod.MeasureProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactMeasure.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactMeasure.mod.MeasureProps])
-  }
   @JSImport("react-measure", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def bounds(value: Boolean): this.type = set("bounds", value.asInstanceOf[js.Any])
+    
+    inline def children(value: FC[MeasuredComponentProps]): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def client(value: Boolean): this.type = set("client", value.asInstanceOf[js.Any])
+    
+    inline def innerRef(value: Ref[Element]): this.type = set("innerRef", value.asInstanceOf[js.Any])
+    
+    inline def innerRefFunction1(value: Element | Null => Callback): this.type = set("innerRef", js.Any.fromFunction1((t0: Element | Null) => value(t0).runNow()))
+    
+    inline def innerRefNull: this.type = set("innerRef", null)
+    
+    inline def margin(value: Boolean): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def offset(value: Boolean): this.type = set("offset", value.asInstanceOf[js.Any])
+    
+    inline def onResize(value: /* contentRect */ ContentRect => Callback): this.type = set("onResize", js.Any.fromFunction1((t0: /* contentRect */ ContentRect) => value(t0).runNow()))
+    
+    inline def scroll(value: Boolean): this.type = set("scroll", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactMeasure.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MeasureProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

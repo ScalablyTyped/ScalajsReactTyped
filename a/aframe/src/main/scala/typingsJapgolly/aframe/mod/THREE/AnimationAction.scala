@@ -1,11 +1,16 @@
 package typingsJapgolly.aframe.mod.THREE
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.AnimationAction")
 @js.native
-class AnimationAction ()
-  extends typingsJapgolly.three.mod.AnimationAction
-
+open class AnimationAction protected ()
+  extends typingsJapgolly.three.mod.AnimationAction {
+  def this(
+    mixer: typingsJapgolly.three.srcAnimationAnimationMixerMod.AnimationMixer,
+    clip: typingsJapgolly.three.srcAnimationAnimationClipMod.AnimationClip
+  ) = this()
+}

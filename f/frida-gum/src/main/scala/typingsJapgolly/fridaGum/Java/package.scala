@@ -1,10 +1,11 @@
-package typingsJapgolly.fridaGum
+package typingsJapgolly.fridaGum.Java
 
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Java {
-  type Env = js.Any
-  type MethodImplementation = js.ThisFunction1[/* this */ typingsJapgolly.fridaGum.Java.Wrapper, /* repeated */ js.Any, js.Any]
-}
+
+type Env = Any
+
+type Members[T] = Record[/* keyof T */ String, MethodDispatcher[js.Object] | (Field[Any, js.Object])]

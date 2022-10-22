@@ -1,49 +1,82 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents an icon set criteria for conditional formatting.
   *
-  * Represents an IconSet criteria for conditional formatting.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
-@js.native
-trait IconSetConditionalFormatLoadOptions extends js.Object {
+trait IconSetConditionalFormatLoadOptions extends StObject {
+  
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * An array of criteria and icon sets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set.
     *
-    * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var criteria: js.UndefOr[Boolean] = js.native
+  var criteria: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * If `true`, reverses the icon orders for the icon set. Note that this cannot be set if custom icons are used.
     *
-    * If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var reverseIconOrder: js.UndefOr[Boolean] = js.native
+  var reverseIconOrder: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * If `true`, hides the values and only shows icons.
     *
-    * If true, hides the values and only shows icons.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var showIconOnly: js.UndefOr[Boolean] = js.native
+  var showIconOnly: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * If set, displays the icon set option for the conditional format.
     *
-    * If set, displays the IconSet option for the conditional format.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var style: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Boolean] = js.undefined
 }
-
+object IconSetConditionalFormatLoadOptions {
+  
+  inline def apply(): IconSetConditionalFormatLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[IconSetConditionalFormatLoadOptions]
+  }
+  
+  extension [Self <: IconSetConditionalFormatLoadOptions](x: Self) {
+    
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    
+    inline def setCriteria(value: Boolean): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    
+    inline def setReverseIconOrder(value: Boolean): Self = StObject.set(x, "reverseIconOrder", value.asInstanceOf[js.Any])
+    
+    inline def setReverseIconOrderUndefined: Self = StObject.set(x, "reverseIconOrder", js.undefined)
+    
+    inline def setShowIconOnly(value: Boolean): Self = StObject.set(x, "showIconOnly", value.asInstanceOf[js.Any])
+    
+    inline def setShowIconOnlyUndefined: Self = StObject.set(x, "showIconOnly", js.undefined)
+    
+    inline def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
+}

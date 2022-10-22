@@ -1,19 +1,24 @@
 package typingsJapgolly.chocolatechipjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestInit extends js.Object {
+trait RequestInit extends StObject {
+  
   var timeout: js.UndefOr[Double] = js.undefined
 }
-
 object RequestInit {
-  @scala.inline
-  def apply(timeout: Int | Double = null): RequestInit = {
+  
+  inline def apply(): RequestInit = {
     val __obj = js.Dynamic.literal()
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestInit]
   }
+  
+  extension [Self <: RequestInit](x: Self) {
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

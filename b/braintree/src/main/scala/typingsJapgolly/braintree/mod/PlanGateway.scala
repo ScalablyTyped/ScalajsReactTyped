@@ -1,20 +1,24 @@
 package typingsJapgolly.braintree.mod
 
 import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.braintree.anon.Plans
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlanGateway extends js.Object {
-  def all(): js.Promise[js.Array[Plan]]
+trait PlanGateway extends StObject {
+  
+  def all(): js.Promise[Plans]
 }
-
 object PlanGateway {
-  @scala.inline
-  def apply(all: CallbackTo[js.Promise[js.Array[Plan]]]): PlanGateway = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all.toJsFn)
+  
+  inline def apply(all: CallbackTo[js.Promise[Plans]]): PlanGateway = {
+    val __obj = js.Dynamic.literal(all = all.toJsFn)
     __obj.asInstanceOf[PlanGateway]
   }
+  
+  extension [Self <: PlanGateway](x: Self) {
+    
+    inline def setAll(value: CallbackTo[js.Promise[Plans]]): Self = StObject.set(x, "all", value.toJsFn)
+  }
 }
-

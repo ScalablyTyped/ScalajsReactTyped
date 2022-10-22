@@ -1,39 +1,32 @@
 package typingsJapgolly.reactNativeDatepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeDatepickerStrings {
-  @js.native
-  sealed trait calendar extends js.Object
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait datetime extends js.Object
+  sealed trait calendar extends StObject
+  inline def calendar: calendar = "calendar".asInstanceOf[calendar]
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait date extends StObject
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait spinner extends js.Object
+  sealed trait datetime extends StObject
+  inline def datetime: datetime = "datetime".asInstanceOf[datetime]
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait spinner extends StObject
+  inline def spinner: spinner = "spinner".asInstanceOf[spinner]
   
-  @scala.inline
-  def calendar: calendar = "calendar".asInstanceOf[calendar]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def datetime: datetime = "datetime".asInstanceOf[datetime]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def spinner: spinner = "spinner".asInstanceOf[spinner]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
+  @js.native
+  sealed trait time extends StObject
+  inline def time: time = "time".asInstanceOf[time]
 }
-

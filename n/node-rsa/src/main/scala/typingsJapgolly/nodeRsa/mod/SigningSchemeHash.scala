@@ -1,8 +1,8 @@
 package typingsJapgolly.nodeRsa.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-ripemd160`
@@ -24,46 +24,42 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha384`
   - typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha512`
 */
-trait SigningSchemeHash extends js.Object
-
+trait SigningSchemeHash extends StObject
 object SigningSchemeHash {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `pkcs1-md4`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-md4` = this.cast("pkcs1-md4")
-  @scala.inline
-  def `pkcs1-md5`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-md5` = this.cast("pkcs1-md5")
-  @scala.inline
-  def `pkcs1-ripemd160`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-ripemd160` = this.cast("pkcs1-ripemd160")
-  @scala.inline
-  def `pkcs1-sha`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha` = this.cast("pkcs1-sha")
-  @scala.inline
-  def `pkcs1-sha1`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha1` = this.cast("pkcs1-sha1")
-  @scala.inline
-  def `pkcs1-sha224`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha224` = this.cast("pkcs1-sha224")
-  @scala.inline
-  def `pkcs1-sha256`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha256` = this.cast("pkcs1-sha256")
-  @scala.inline
-  def `pkcs1-sha384`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha384` = this.cast("pkcs1-sha384")
-  @scala.inline
-  def `pkcs1-sha512`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha512` = this.cast("pkcs1-sha512")
-  @scala.inline
-  def `pss-md4`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-md4` = this.cast("pss-md4")
-  @scala.inline
-  def `pss-md5`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-md5` = this.cast("pss-md5")
-  @scala.inline
-  def `pss-ripemd160`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-ripemd160` = this.cast("pss-ripemd160")
-  @scala.inline
-  def `pss-sha`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha` = this.cast("pss-sha")
-  @scala.inline
-  def `pss-sha1`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha1` = this.cast("pss-sha1")
-  @scala.inline
-  def `pss-sha224`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha224` = this.cast("pss-sha224")
-  @scala.inline
-  def `pss-sha256`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha256` = this.cast("pss-sha256")
-  @scala.inline
-  def `pss-sha384`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha384` = this.cast("pss-sha384")
-  @scala.inline
-  def `pss-sha512`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha512` = this.cast("pss-sha512")
+  
+  inline def `pkcs1-md4`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-md4` = "pkcs1-md4".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-md4`]
+  
+  inline def `pkcs1-md5`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-md5` = "pkcs1-md5".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-md5`]
+  
+  inline def `pkcs1-ripemd160`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-ripemd160` = "pkcs1-ripemd160".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-ripemd160`]
+  
+  inline def `pkcs1-sha`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha` = "pkcs1-sha".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha`]
+  
+  inline def `pkcs1-sha1`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha1` = "pkcs1-sha1".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha1`]
+  
+  inline def `pkcs1-sha224`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha224` = "pkcs1-sha224".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha224`]
+  
+  inline def `pkcs1-sha256`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha256` = "pkcs1-sha256".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha256`]
+  
+  inline def `pkcs1-sha384`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha384` = "pkcs1-sha384".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha384`]
+  
+  inline def `pkcs1-sha512`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha512` = "pkcs1-sha512".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pkcs1-sha512`]
+  
+  inline def `pss-md4`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-md4` = "pss-md4".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-md4`]
+  
+  inline def `pss-md5`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-md5` = "pss-md5".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-md5`]
+  
+  inline def `pss-ripemd160`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-ripemd160` = "pss-ripemd160".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-ripemd160`]
+  
+  inline def `pss-sha`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha` = "pss-sha".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha`]
+  
+  inline def `pss-sha1`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha1` = "pss-sha1".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha1`]
+  
+  inline def `pss-sha224`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha224` = "pss-sha224".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha224`]
+  
+  inline def `pss-sha256`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha256` = "pss-sha256".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha256`]
+  
+  inline def `pss-sha384`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha384` = "pss-sha384".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha384`]
+  
+  inline def `pss-sha512`: typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha512` = "pss-sha512".asInstanceOf[typingsJapgolly.nodeRsa.nodeRsaStrings.`pss-sha512`]
 }
-

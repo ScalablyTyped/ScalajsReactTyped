@@ -1,14 +1,28 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MSHTML.ISVGPathSegLinetoVerticalAbs")
-@js.native
-class ISVGPathSegLinetoVerticalAbs protected () extends js.Object {
-  @JSName("MSHTML.ISVGPathSegLinetoVerticalAbs_typekey")
-  var MSHTMLDotISVGPathSegLinetoVerticalAbs_typekey: ISVGPathSegLinetoVerticalAbs = js.native
-  var y: Double = js.native
+trait ISVGPathSegLinetoVerticalAbs extends StObject {
+  
+  /* private */ @JSName("MSHTML.ISVGPathSegLinetoVerticalAbs_typekey")
+  var MSHTMLDotISVGPathSegLinetoVerticalAbs_typekey: ISVGPathSegLinetoVerticalAbs
+  
+  var y: Double
 }
-
+object ISVGPathSegLinetoVerticalAbs {
+  
+  inline def apply(MSHTMLDotISVGPathSegLinetoVerticalAbs_typekey: ISVGPathSegLinetoVerticalAbs, y: Double): ISVGPathSegLinetoVerticalAbs = {
+    val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSHTML.ISVGPathSegLinetoVerticalAbs_typekey")(MSHTMLDotISVGPathSegLinetoVerticalAbs_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISVGPathSegLinetoVerticalAbs]
+  }
+  
+  extension [Self <: ISVGPathSegLinetoVerticalAbs](x: Self) {
+    
+    inline def setMSHTMLDotISVGPathSegLinetoVerticalAbs_typekey(value: ISVGPathSegLinetoVerticalAbs): Self = StObject.set(x, "MSHTML.ISVGPathSegLinetoVerticalAbs_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+  }
+}

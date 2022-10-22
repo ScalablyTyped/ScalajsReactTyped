@@ -1,7 +1,7 @@
 
 # Scala.js typings for socks
 
-Typings are for version 2.3.2
+Typings are for version 2.7.0
 
 ## Library description:
 Fully featured SOCKS proxy client supporting SOCKSv4, SOCKSv4a, and SOCKSv5. Includes Bind and Associate functionality.
@@ -10,10 +10,10 @@ Fully featured SOCKS proxy client supporting SOCKSv4, SOCKSv4a, and SOCKSv5. Inc
 | ------------------ | :-------------: |
 | Full name          | socks |
 | Keywords           | socks, proxy, tor, socks 4, socks 5, socks4, socks5 |
-| # releases         | 13 |
-| # dependents       | 71 |
-| # downloads        | 142626017 |
-| # stars            | 6 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 5.3465473333333336E7 |
+| # stars            | 258.0 |
 
 ## Links
 - [Homepage](https://github.com/JoshGlazebrook/socks/)

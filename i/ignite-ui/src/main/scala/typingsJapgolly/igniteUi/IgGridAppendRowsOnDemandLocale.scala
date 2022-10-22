@@ -1,35 +1,34 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridAppendRowsOnDemandLocale
-  extends /**
-	 * Option for IgGridAppendRowsOnDemandLocale
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Specifies caption text for the "load more data" button.
-  	 *
-  	 */
+    * Specifies caption text for the "load more data" button.
+    *
+    */
   var loadMoreDataButtonText: js.UndefOr[String] = js.undefined
 }
-
 object IgGridAppendRowsOnDemandLocale {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgGridAppendRowsOnDemandLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    loadMoreDataButtonText: String = null
-  ): IgGridAppendRowsOnDemandLocale = {
+  
+  inline def apply(): IgGridAppendRowsOnDemandLocale = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (loadMoreDataButtonText != null) __obj.updateDynamic("loadMoreDataButtonText")(loadMoreDataButtonText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridAppendRowsOnDemandLocale]
   }
+  
+  extension [Self <: IgGridAppendRowsOnDemandLocale](x: Self) {
+    
+    inline def setLoadMoreDataButtonText(value: String): Self = StObject.set(x, "loadMoreDataButtonText", value.asInstanceOf[js.Any])
+    
+    inline def setLoadMoreDataButtonTextUndefined: Self = StObject.set(x, "loadMoreDataButtonText", js.undefined)
+  }
 }
-

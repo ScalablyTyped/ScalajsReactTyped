@@ -2,20 +2,18 @@ package typingsJapgolly.materialUi
 
 import typingsJapgolly.materialUi.MaterialUI.AvatarProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Avatar", JSImport.Namespace)
-@js.native
-object avatarMod extends js.Object {
-  @js.native
-  class Avatar ()
-    extends Component[AvatarProps, js.Object, js.Any]
+object avatarMod {
   
+  @JSImport("material-ui/Avatar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[AvatarProps, js.Object, js.Any]
+  open class default () extends Avatar
   
+  @JSImport("material-ui/Avatar", "Avatar")
+  @js.native
+  open class Avatar ()
+    extends Component[AvatarProps, js.Object, Any]
 }
-

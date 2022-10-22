@@ -1,56 +1,88 @@
 package typingsJapgolly.egg.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.urllib.mod.RequestOptions2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HttpClientConfig extends HttpClientBaseConfig {
+trait HttpClientConfig
+  extends StObject
+     with HttpClientBaseConfig {
+  
+  /** DNS cache lookup interval */
+  var dnsCacheLookupInterval: js.UndefOr[Double] = js.undefined
+  
+  /** DNS cache max age */
+  var dnsCacheMaxLength: js.UndefOr[Double] = js.undefined
+  
   /** Whether enable dns cache */
   var enableDNSCache: js.UndefOr[Boolean] = js.undefined
+  
   /** Enable proxy request, default is false. */
   var enableProxy: js.UndefOr[Boolean] = js.undefined
+  
   /** http.Agent */
   var httpAgent: js.UndefOr[HttpClientBaseConfig] = js.undefined
+  
   /** https.Agent */
   var httpsAgent: js.UndefOr[HttpClientBaseConfig] = js.undefined
+  
   /** proxy agent uri or options, default is null. */
-  var proxy: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
+  var proxy: js.UndefOr[String | StringDictionary[Any]] = js.undefined
+  
   /** Default request args for httpclient */
-  var request: js.UndefOr[RequestOptions2] = js.undefined
+  var request: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestOptions */ Any
+  ] = js.undefined
+  
+  /** use urllib@3 HttpClient */
+  var useHttpClientNext: js.UndefOr[Boolean] = js.undefined
 }
-
 object HttpClientConfig {
-  @scala.inline
-  def apply(
-    enableDNSCache: js.UndefOr[Boolean] = js.undefined,
-    enableProxy: js.UndefOr[Boolean] = js.undefined,
-    freeSocketKeepAliveTimeout: Int | Double = null,
-    freeSocketTimeout: Int | Double = null,
-    httpAgent: HttpClientBaseConfig = null,
-    httpsAgent: HttpClientBaseConfig = null,
-    keepAlive: js.UndefOr[Boolean] = js.undefined,
-    maxFreeSockets: Int | Double = null,
-    maxSockets: Int | Double = null,
-    proxy: String | StringDictionary[js.Any] = null,
-    request: RequestOptions2 = null,
-    timeout: Int | Double = null
-  ): HttpClientConfig = {
+  
+  inline def apply(): HttpClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableDNSCache)) __obj.updateDynamic("enableDNSCache")(enableDNSCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableProxy)) __obj.updateDynamic("enableProxy")(enableProxy.asInstanceOf[js.Any])
-    if (freeSocketKeepAliveTimeout != null) __obj.updateDynamic("freeSocketKeepAliveTimeout")(freeSocketKeepAliveTimeout.asInstanceOf[js.Any])
-    if (freeSocketTimeout != null) __obj.updateDynamic("freeSocketTimeout")(freeSocketTimeout.asInstanceOf[js.Any])
-    if (httpAgent != null) __obj.updateDynamic("httpAgent")(httpAgent.asInstanceOf[js.Any])
-    if (httpsAgent != null) __obj.updateDynamic("httpsAgent")(httpsAgent.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
-    if (maxFreeSockets != null) __obj.updateDynamic("maxFreeSockets")(maxFreeSockets.asInstanceOf[js.Any])
-    if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpClientConfig]
   }
+  
+  extension [Self <: HttpClientConfig](x: Self) {
+    
+    inline def setDnsCacheLookupInterval(value: Double): Self = StObject.set(x, "dnsCacheLookupInterval", value.asInstanceOf[js.Any])
+    
+    inline def setDnsCacheLookupIntervalUndefined: Self = StObject.set(x, "dnsCacheLookupInterval", js.undefined)
+    
+    inline def setDnsCacheMaxLength(value: Double): Self = StObject.set(x, "dnsCacheMaxLength", value.asInstanceOf[js.Any])
+    
+    inline def setDnsCacheMaxLengthUndefined: Self = StObject.set(x, "dnsCacheMaxLength", js.undefined)
+    
+    inline def setEnableDNSCache(value: Boolean): Self = StObject.set(x, "enableDNSCache", value.asInstanceOf[js.Any])
+    
+    inline def setEnableDNSCacheUndefined: Self = StObject.set(x, "enableDNSCache", js.undefined)
+    
+    inline def setEnableProxy(value: Boolean): Self = StObject.set(x, "enableProxy", value.asInstanceOf[js.Any])
+    
+    inline def setEnableProxyUndefined: Self = StObject.set(x, "enableProxy", js.undefined)
+    
+    inline def setHttpAgent(value: HttpClientBaseConfig): Self = StObject.set(x, "httpAgent", value.asInstanceOf[js.Any])
+    
+    inline def setHttpAgentUndefined: Self = StObject.set(x, "httpAgent", js.undefined)
+    
+    inline def setHttpsAgent(value: HttpClientBaseConfig): Self = StObject.set(x, "httpsAgent", value.asInstanceOf[js.Any])
+    
+    inline def setHttpsAgentUndefined: Self = StObject.set(x, "httpsAgent", js.undefined)
+    
+    inline def setProxy(value: String | StringDictionary[Any]): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    
+    inline def setRequest(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestOptions */ Any
+    ): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    
+    inline def setUseHttpClientNext(value: Boolean): Self = StObject.set(x, "useHttpClientNext", value.asInstanceOf[js.Any])
+    
+    inline def setUseHttpClientNextUndefined: Self = StObject.set(x, "useHttpClientNext", js.undefined)
+  }
 }
-

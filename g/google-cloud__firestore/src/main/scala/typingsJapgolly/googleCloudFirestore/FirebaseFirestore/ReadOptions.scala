@@ -1,10 +1,11 @@
 package typingsJapgolly.googleCloudFirestore.FirebaseFirestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadOptions extends js.Object {
+trait ReadOptions extends StObject {
+  
   /**
     * Specifies the set of fields to return and reduces the amount of data
     * transmitted by the backend.
@@ -15,13 +16,19 @@ trait ReadOptions extends js.Object {
     */
   val fieldMask: js.UndefOr[js.Array[String | FieldPath]] = js.undefined
 }
-
 object ReadOptions {
-  @scala.inline
-  def apply(fieldMask: js.Array[String | FieldPath] = null): ReadOptions = {
+  
+  inline def apply(): ReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (fieldMask != null) __obj.updateDynamic("fieldMask")(fieldMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadOptions]
   }
+  
+  extension [Self <: ReadOptions](x: Self) {
+    
+    inline def setFieldMask(value: js.Array[String | FieldPath]): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
+    
+    inline def setFieldMaskUndefined: Self = StObject.set(x, "fieldMask", js.undefined)
+    
+    inline def setFieldMaskVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "fieldMask", js.Array(value*))
+  }
 }
-

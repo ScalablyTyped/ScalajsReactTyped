@@ -1,22 +1,16 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Resources
 
-import typingsJapgolly.winrt.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Resources.ResourceLoader")
-@js.native
-class ResourceLoader () extends IResourceLoader {
-  def this(name: String) = this()
-  /* CompleteClass */
-  override def getString(resource: String): String = js.native
+trait ResourceLoader
+  extends StObject
+     with IResourceLoader
+object ResourceLoader {
+  
+  inline def apply(getString: String => String): ResourceLoader = {
+    val __obj = js.Dynamic.literal(getString = js.Any.fromFunction1(getString))
+    __obj.asInstanceOf[ResourceLoader]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.ApplicationModel.Resources.ResourceLoader")
-@js.native
-object ResourceLoader extends js.Object {
-  def getStringForReference(uri: Uri): String = js.native
-}
-

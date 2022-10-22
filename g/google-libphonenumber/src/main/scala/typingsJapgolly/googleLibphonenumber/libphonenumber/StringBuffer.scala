@@ -1,14 +1,12 @@
 package typingsJapgolly.googleLibphonenumber.libphonenumber
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("libphonenumber.StringBuffer")
 @js.native
-class StringBuffer () extends js.Object {
-  def this(opt_a1: js.Any, var_args: js.Any*) = this()
-  def append(a1: js.Any): StringBuffer = js.native
-  def append(a1: js.Any, opt_a2: js.Any, var_args: js.Any*): StringBuffer = js.native
+trait StringBuffer extends StObject {
+  
+  def append(a1: Any, opt_a2: Any, var_args: Any*): StringBuffer = js.native
+  def append(a1: Any, opt_a2: Unit, var_args: Any*): StringBuffer = js.native
 }
-

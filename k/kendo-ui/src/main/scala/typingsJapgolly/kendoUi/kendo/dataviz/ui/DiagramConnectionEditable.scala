@@ -1,19 +1,26 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramConnectionEditable extends js.Object {
+trait DiagramConnectionEditable extends StObject {
+  
   var tools: js.UndefOr[js.Array[DiagramConnectionEditableTool]] = js.undefined
 }
-
 object DiagramConnectionEditable {
-  @scala.inline
-  def apply(tools: js.Array[DiagramConnectionEditableTool] = null): DiagramConnectionEditable = {
+  
+  inline def apply(): DiagramConnectionEditable = {
     val __obj = js.Dynamic.literal()
-    if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramConnectionEditable]
   }
+  
+  extension [Self <: DiagramConnectionEditable](x: Self) {
+    
+    inline def setTools(value: js.Array[DiagramConnectionEditableTool]): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
+    
+    inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
+    
+    inline def setToolsVarargs(value: DiagramConnectionEditableTool*): Self = StObject.set(x, "tools", js.Array(value*))
+  }
 }
-

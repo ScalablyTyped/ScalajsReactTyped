@@ -1,14 +1,15 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.PositionedSkippedToken")
 @js.native
-class PositionedSkippedToken protected () extends PositionedToken {
-  def this(parentToken: PositionedToken, token: ISyntaxToken, fullStart: Double) = this()
-  var _parentToken: js.Any = js.native
+trait PositionedSkippedToken
+  extends StObject
+     with PositionedToken {
+  
+  /* private */ var _parentToken: Any = js.native
+  
   def parentToken(): PositionedToken = js.native
 }
-

@@ -1,33 +1,50 @@
 package typingsJapgolly.navermaps.naver.maps
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapType extends js.Object {
-  var maxZoom: Double
-  var minZoom: Double
-  var name: String
-  var projection: Projection
-  var tileSize: Size
+trait MapType extends StObject {
+  
   def getTile(x: Double, y: Double, z: Double): HTMLElement | Tile
+  
+  var maxZoom: Double
+  
+  var minZoom: Double
+  
+  var name: String
+  
+  var projection: Projection
+  
+  var tileSize: Size
 }
-
 object MapType {
-  @scala.inline
-  def apply(
-    getTile: (Double, Double, Double) => CallbackTo[HTMLElement | Tile],
+  
+  inline def apply(
+    getTile: (Double, Double, Double) => HTMLElement | Tile,
     maxZoom: Double,
     minZoom: Double,
     name: String,
     projection: Projection,
     tileSize: Size
   ): MapType = {
-    val __obj = js.Dynamic.literal(maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], tileSize = tileSize.asInstanceOf[js.Any])
-    __obj.updateDynamic("getTile")(js.Any.fromFunction3((t0: scala.Double, t1: scala.Double, t2: scala.Double) => getTile(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(getTile = js.Any.fromFunction3(getTile), maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], tileSize = tileSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapType]
   }
+  
+  extension [Self <: MapType](x: Self) {
+    
+    inline def setGetTile(value: (Double, Double, Double) => HTMLElement | Tile): Self = StObject.set(x, "getTile", js.Any.fromFunction3(value))
+    
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setTileSize(value: Size): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+  }
 }
-

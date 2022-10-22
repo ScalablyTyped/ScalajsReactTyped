@@ -1,14 +1,25 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.DidCloseTextDocumentParams
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings.textDocumentSlashdidClose
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.DidCloseTextDocumentParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "DidCloseTextDocumentNotification")
-@js.native
-object DidCloseTextDocumentNotification extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.NotificationType[DidCloseTextDocumentParams, TextDocumentRegistrationOptions] = js.native
+object DidCloseTextDocumentNotification {
+  
+  @JSImport("vscode-languageserver", "DidCloseTextDocumentNotification.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver", "DidCloseTextDocumentNotification.method")
+  @js.native
+  val method: textDocumentSlashdidClose = js.native
+  
+  @JSImport("vscode-languageserver", "DidCloseTextDocumentNotification.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[
+    DidCloseTextDocumentParams, 
+    typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentRegistrationOptions
+  ] = js.native
 }
-

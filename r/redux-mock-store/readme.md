@@ -10,10 +10,10 @@ A mock store for testing your redux async action creators and middleware
 | ------------------ | :-------------: |
 | Full name          | redux-mock-store |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 102 |
-| # downloads        | 30548147 |
-| # stars            | 24 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5179884.666666667 |
+| # stars            | 2456.0 |
 
 ## Links
 - [Homepage](https://github.com/arnaudbenard/redux-mock-store#readme)

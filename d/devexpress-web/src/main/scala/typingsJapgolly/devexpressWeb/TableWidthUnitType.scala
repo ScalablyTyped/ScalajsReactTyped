@@ -1,56 +1,47 @@
 package typingsJapgolly.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TableWidthUnitType extends js.Object
-
+sealed trait TableWidthUnitType extends StObject
 /**
   * Lists values that specify unit types for the table width.
   */
 @JSGlobal("TableWidthUnitType")
 @js.native
-object TableWidthUnitType extends js.Object {
+object TableWidthUnitType extends StObject {
+  
   /**
     * Automatically determined width.
     */
   @js.native
-  sealed trait Auto extends TableWidthUnitType
+  sealed trait Auto
+    extends StObject
+       with TableWidthUnitType
   
   /**
     * Width in fiftieths of a percent.
     */
   @js.native
-  sealed trait FiftiethsOfPercent extends TableWidthUnitType
+  sealed trait FiftiethsOfPercent
+    extends StObject
+       with TableWidthUnitType
   
   /**
     * Width in units of measurements that are currently in effect for the document.
     */
   @js.native
-  sealed trait ModelUnits extends TableWidthUnitType
+  sealed trait ModelUnits
+    extends StObject
+       with TableWidthUnitType
   
   /**
     * Not set.
     */
   @js.native
-  sealed trait Nil extends TableWidthUnitType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TableWidthUnitType with Double] = js.native
-  /* 1 */ @js.native
-  object Auto extends TopLevel[Auto with Double]
-  
-  /* 2 */ @js.native
-  object FiftiethsOfPercent extends TopLevel[FiftiethsOfPercent with Double]
-  
-  /* 3 */ @js.native
-  object ModelUnits extends TopLevel[ModelUnits with Double]
-  
-  /* 0 */ @js.native
-  object Nil extends TopLevel[Nil with Double]
-  
+  sealed trait Nil
+    extends StObject
+       with TableWidthUnitType
 }
-

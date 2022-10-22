@@ -1,297 +1,618 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorMessages extends js.Object {
+trait EditorMessages extends StObject {
+  
   var accessibilityTab: js.UndefOr[String] = js.undefined
+  
   var addColumnLeft: js.UndefOr[String] = js.undefined
+  
   var addColumnRight: js.UndefOr[String] = js.undefined
+  
   var addRowAbove: js.UndefOr[String] = js.undefined
+  
   var addRowBelow: js.UndefOr[String] = js.undefined
+  
   var alignCenter: js.UndefOr[String] = js.undefined
+  
   var alignCenterBottom: js.UndefOr[String] = js.undefined
+  
   var alignCenterMiddle: js.UndefOr[String] = js.undefined
+  
   var alignCenterTop: js.UndefOr[String] = js.undefined
+  
   var alignLeft: js.UndefOr[String] = js.undefined
+  
   var alignLeftBottom: js.UndefOr[String] = js.undefined
+  
   var alignLeftMiddle: js.UndefOr[String] = js.undefined
+  
   var alignLeftTop: js.UndefOr[String] = js.undefined
+  
   var alignRemove: js.UndefOr[String] = js.undefined
+  
   var alignRight: js.UndefOr[String] = js.undefined
+  
   var alignRightBottom: js.UndefOr[String] = js.undefined
+  
   var alignRightMiddle: js.UndefOr[String] = js.undefined
+  
   var alignRightTop: js.UndefOr[String] = js.undefined
+  
   var alignment: js.UndefOr[String] = js.undefined
+  
   var applyFormat: js.UndefOr[String] = js.undefined
+  
   var associateCellsWithHeaders: js.UndefOr[String] = js.undefined
+  
   var backColor: js.UndefOr[String] = js.undefined
+  
   var background: js.UndefOr[String] = js.undefined
+  
   var bold: js.UndefOr[String] = js.undefined
+  
   var border: js.UndefOr[String] = js.undefined
+  
   var caption: js.UndefOr[String] = js.undefined
+  
   var cellMargin: js.UndefOr[String] = js.undefined
+  
   var cellPadding: js.UndefOr[String] = js.undefined
+  
   var cellSpacing: js.UndefOr[String] = js.undefined
+  
   var cellTab: js.UndefOr[String] = js.undefined
+  
   var cleanFormatting: js.UndefOr[String] = js.undefined
+  
   var collapseBorders: js.UndefOr[String] = js.undefined
+  
   var columns: js.UndefOr[String] = js.undefined
+  
   var copyFormat: js.UndefOr[String] = js.undefined
+  
   var createLink: js.UndefOr[String] = js.undefined
+  
   var createTable: js.UndefOr[String] = js.undefined
+  
   var createTableHint: js.UndefOr[String] = js.undefined
+  
   var cssClass: js.UndefOr[String] = js.undefined
+  
   var deleteColumn: js.UndefOr[String] = js.undefined
+  
   var deleteRow: js.UndefOr[String] = js.undefined
+  
   var dialogCancel: js.UndefOr[String] = js.undefined
+  
   var dialogInsert: js.UndefOr[String] = js.undefined
+  
   var dialogOk: js.UndefOr[String] = js.undefined
+  
   var dialogUpdate: js.UndefOr[String] = js.undefined
+  
   var editAreaTitle: js.UndefOr[String] = js.undefined
+  
   var fileTitle: js.UndefOr[String] = js.undefined
+  
   var fileWebAddress: js.UndefOr[String] = js.undefined
+  
   var fontName: js.UndefOr[String] = js.undefined
+  
   var fontNameInherit: js.UndefOr[String] = js.undefined
+  
   var fontSize: js.UndefOr[String] = js.undefined
+  
   var fontSizeInherit: js.UndefOr[String] = js.undefined
+  
   var foreColor: js.UndefOr[String] = js.undefined
+  
   var formatBlock: js.UndefOr[String] = js.undefined
+  
   var formatting: js.UndefOr[String] = js.undefined
+  
   var height: js.UndefOr[String] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var imageAltText: js.UndefOr[String] = js.undefined
+  
   var imageHeight: js.UndefOr[String] = js.undefined
+  
   var imageWebAddress: js.UndefOr[String] = js.undefined
+  
   var imageWidth: js.UndefOr[String] = js.undefined
+  
   var indent: js.UndefOr[String] = js.undefined
+  
   var insertFile: js.UndefOr[String] = js.undefined
+  
   var insertHtml: js.UndefOr[String] = js.undefined
+  
   var insertImage: js.UndefOr[String] = js.undefined
+  
+  var insertLowerRomanList: js.UndefOr[String] = js.undefined
+  
   var insertOrderedList: js.UndefOr[String] = js.undefined
+  
   var insertUnorderedList: js.UndefOr[String] = js.undefined
+  
+  var insertUpperRomanList: js.UndefOr[String] = js.undefined
+  
   var italic: js.UndefOr[String] = js.undefined
+  
   var justifyCenter: js.UndefOr[String] = js.undefined
+  
   var justifyFull: js.UndefOr[String] = js.undefined
+  
   var justifyLeft: js.UndefOr[String] = js.undefined
+  
   var justifyRight: js.UndefOr[String] = js.undefined
+  
   var linkOpenInNewWindow: js.UndefOr[String] = js.undefined
+  
   var linkText: js.UndefOr[String] = js.undefined
+  
   var linkToolTip: js.UndefOr[String] = js.undefined
+  
   var linkWebAddress: js.UndefOr[String] = js.undefined
+  
   var outdent: js.UndefOr[String] = js.undefined
+  
   var overflowAnchor: js.UndefOr[String] = js.undefined
+  
   var print: js.UndefOr[String] = js.undefined
+  
+  var redo: js.UndefOr[String] = js.undefined
+  
   var rows: js.UndefOr[String] = js.undefined
+  
   var selectAllCells: js.UndefOr[String] = js.undefined
+  
   var strikethrough: js.UndefOr[String] = js.undefined
+  
   var style: js.UndefOr[String] = js.undefined
+  
   var subscript: js.UndefOr[String] = js.undefined
+  
   var summary: js.UndefOr[String] = js.undefined
+  
   var superscript: js.UndefOr[String] = js.undefined
+  
+  var tableAlignCenter: js.UndefOr[String] = js.undefined
+  
+  var tableAlignLeft: js.UndefOr[String] = js.undefined
+  
+  var tableAlignRight: js.UndefOr[String] = js.undefined
+  
   var tableTab: js.UndefOr[String] = js.undefined
+  
   var tableWizard: js.UndefOr[String] = js.undefined
+  
   var underline: js.UndefOr[String] = js.undefined
+  
+  var undo: js.UndefOr[String] = js.undefined
+  
   var units: js.UndefOr[String] = js.undefined
+  
   var unlink: js.UndefOr[String] = js.undefined
+  
   var viewHtml: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[String] = js.undefined
+  
   var wrapText: js.UndefOr[String] = js.undefined
 }
-
 object EditorMessages {
-  @scala.inline
-  def apply(
-    accessibilityTab: String = null,
-    addColumnLeft: String = null,
-    addColumnRight: String = null,
-    addRowAbove: String = null,
-    addRowBelow: String = null,
-    alignCenter: String = null,
-    alignCenterBottom: String = null,
-    alignCenterMiddle: String = null,
-    alignCenterTop: String = null,
-    alignLeft: String = null,
-    alignLeftBottom: String = null,
-    alignLeftMiddle: String = null,
-    alignLeftTop: String = null,
-    alignRemove: String = null,
-    alignRight: String = null,
-    alignRightBottom: String = null,
-    alignRightMiddle: String = null,
-    alignRightTop: String = null,
-    alignment: String = null,
-    applyFormat: String = null,
-    associateCellsWithHeaders: String = null,
-    backColor: String = null,
-    background: String = null,
-    bold: String = null,
-    border: String = null,
-    caption: String = null,
-    cellMargin: String = null,
-    cellPadding: String = null,
-    cellSpacing: String = null,
-    cellTab: String = null,
-    cleanFormatting: String = null,
-    collapseBorders: String = null,
-    columns: String = null,
-    copyFormat: String = null,
-    createLink: String = null,
-    createTable: String = null,
-    createTableHint: String = null,
-    cssClass: String = null,
-    deleteColumn: String = null,
-    deleteRow: String = null,
-    dialogCancel: String = null,
-    dialogInsert: String = null,
-    dialogOk: String = null,
-    dialogUpdate: String = null,
-    editAreaTitle: String = null,
-    fileTitle: String = null,
-    fileWebAddress: String = null,
-    fontName: String = null,
-    fontNameInherit: String = null,
-    fontSize: String = null,
-    fontSizeInherit: String = null,
-    foreColor: String = null,
-    formatBlock: String = null,
-    formatting: String = null,
-    height: String = null,
-    id: String = null,
-    imageAltText: String = null,
-    imageHeight: String = null,
-    imageWebAddress: String = null,
-    imageWidth: String = null,
-    indent: String = null,
-    insertFile: String = null,
-    insertHtml: String = null,
-    insertImage: String = null,
-    insertOrderedList: String = null,
-    insertUnorderedList: String = null,
-    italic: String = null,
-    justifyCenter: String = null,
-    justifyFull: String = null,
-    justifyLeft: String = null,
-    justifyRight: String = null,
-    linkOpenInNewWindow: String = null,
-    linkText: String = null,
-    linkToolTip: String = null,
-    linkWebAddress: String = null,
-    outdent: String = null,
-    overflowAnchor: String = null,
-    print: String = null,
-    rows: String = null,
-    selectAllCells: String = null,
-    strikethrough: String = null,
-    style: String = null,
-    subscript: String = null,
-    summary: String = null,
-    superscript: String = null,
-    tableTab: String = null,
-    tableWizard: String = null,
-    underline: String = null,
-    units: String = null,
-    unlink: String = null,
-    viewHtml: String = null,
-    width: String = null,
-    wrapText: String = null
-  ): EditorMessages = {
+  
+  inline def apply(): EditorMessages = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityTab != null) __obj.updateDynamic("accessibilityTab")(accessibilityTab.asInstanceOf[js.Any])
-    if (addColumnLeft != null) __obj.updateDynamic("addColumnLeft")(addColumnLeft.asInstanceOf[js.Any])
-    if (addColumnRight != null) __obj.updateDynamic("addColumnRight")(addColumnRight.asInstanceOf[js.Any])
-    if (addRowAbove != null) __obj.updateDynamic("addRowAbove")(addRowAbove.asInstanceOf[js.Any])
-    if (addRowBelow != null) __obj.updateDynamic("addRowBelow")(addRowBelow.asInstanceOf[js.Any])
-    if (alignCenter != null) __obj.updateDynamic("alignCenter")(alignCenter.asInstanceOf[js.Any])
-    if (alignCenterBottom != null) __obj.updateDynamic("alignCenterBottom")(alignCenterBottom.asInstanceOf[js.Any])
-    if (alignCenterMiddle != null) __obj.updateDynamic("alignCenterMiddle")(alignCenterMiddle.asInstanceOf[js.Any])
-    if (alignCenterTop != null) __obj.updateDynamic("alignCenterTop")(alignCenterTop.asInstanceOf[js.Any])
-    if (alignLeft != null) __obj.updateDynamic("alignLeft")(alignLeft.asInstanceOf[js.Any])
-    if (alignLeftBottom != null) __obj.updateDynamic("alignLeftBottom")(alignLeftBottom.asInstanceOf[js.Any])
-    if (alignLeftMiddle != null) __obj.updateDynamic("alignLeftMiddle")(alignLeftMiddle.asInstanceOf[js.Any])
-    if (alignLeftTop != null) __obj.updateDynamic("alignLeftTop")(alignLeftTop.asInstanceOf[js.Any])
-    if (alignRemove != null) __obj.updateDynamic("alignRemove")(alignRemove.asInstanceOf[js.Any])
-    if (alignRight != null) __obj.updateDynamic("alignRight")(alignRight.asInstanceOf[js.Any])
-    if (alignRightBottom != null) __obj.updateDynamic("alignRightBottom")(alignRightBottom.asInstanceOf[js.Any])
-    if (alignRightMiddle != null) __obj.updateDynamic("alignRightMiddle")(alignRightMiddle.asInstanceOf[js.Any])
-    if (alignRightTop != null) __obj.updateDynamic("alignRightTop")(alignRightTop.asInstanceOf[js.Any])
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (applyFormat != null) __obj.updateDynamic("applyFormat")(applyFormat.asInstanceOf[js.Any])
-    if (associateCellsWithHeaders != null) __obj.updateDynamic("associateCellsWithHeaders")(associateCellsWithHeaders.asInstanceOf[js.Any])
-    if (backColor != null) __obj.updateDynamic("backColor")(backColor.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (bold != null) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (cellMargin != null) __obj.updateDynamic("cellMargin")(cellMargin.asInstanceOf[js.Any])
-    if (cellPadding != null) __obj.updateDynamic("cellPadding")(cellPadding.asInstanceOf[js.Any])
-    if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
-    if (cellTab != null) __obj.updateDynamic("cellTab")(cellTab.asInstanceOf[js.Any])
-    if (cleanFormatting != null) __obj.updateDynamic("cleanFormatting")(cleanFormatting.asInstanceOf[js.Any])
-    if (collapseBorders != null) __obj.updateDynamic("collapseBorders")(collapseBorders.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (copyFormat != null) __obj.updateDynamic("copyFormat")(copyFormat.asInstanceOf[js.Any])
-    if (createLink != null) __obj.updateDynamic("createLink")(createLink.asInstanceOf[js.Any])
-    if (createTable != null) __obj.updateDynamic("createTable")(createTable.asInstanceOf[js.Any])
-    if (createTableHint != null) __obj.updateDynamic("createTableHint")(createTableHint.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (deleteColumn != null) __obj.updateDynamic("deleteColumn")(deleteColumn.asInstanceOf[js.Any])
-    if (deleteRow != null) __obj.updateDynamic("deleteRow")(deleteRow.asInstanceOf[js.Any])
-    if (dialogCancel != null) __obj.updateDynamic("dialogCancel")(dialogCancel.asInstanceOf[js.Any])
-    if (dialogInsert != null) __obj.updateDynamic("dialogInsert")(dialogInsert.asInstanceOf[js.Any])
-    if (dialogOk != null) __obj.updateDynamic("dialogOk")(dialogOk.asInstanceOf[js.Any])
-    if (dialogUpdate != null) __obj.updateDynamic("dialogUpdate")(dialogUpdate.asInstanceOf[js.Any])
-    if (editAreaTitle != null) __obj.updateDynamic("editAreaTitle")(editAreaTitle.asInstanceOf[js.Any])
-    if (fileTitle != null) __obj.updateDynamic("fileTitle")(fileTitle.asInstanceOf[js.Any])
-    if (fileWebAddress != null) __obj.updateDynamic("fileWebAddress")(fileWebAddress.asInstanceOf[js.Any])
-    if (fontName != null) __obj.updateDynamic("fontName")(fontName.asInstanceOf[js.Any])
-    if (fontNameInherit != null) __obj.updateDynamic("fontNameInherit")(fontNameInherit.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontSizeInherit != null) __obj.updateDynamic("fontSizeInherit")(fontSizeInherit.asInstanceOf[js.Any])
-    if (foreColor != null) __obj.updateDynamic("foreColor")(foreColor.asInstanceOf[js.Any])
-    if (formatBlock != null) __obj.updateDynamic("formatBlock")(formatBlock.asInstanceOf[js.Any])
-    if (formatting != null) __obj.updateDynamic("formatting")(formatting.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imageAltText != null) __obj.updateDynamic("imageAltText")(imageAltText.asInstanceOf[js.Any])
-    if (imageHeight != null) __obj.updateDynamic("imageHeight")(imageHeight.asInstanceOf[js.Any])
-    if (imageWebAddress != null) __obj.updateDynamic("imageWebAddress")(imageWebAddress.asInstanceOf[js.Any])
-    if (imageWidth != null) __obj.updateDynamic("imageWidth")(imageWidth.asInstanceOf[js.Any])
-    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
-    if (insertFile != null) __obj.updateDynamic("insertFile")(insertFile.asInstanceOf[js.Any])
-    if (insertHtml != null) __obj.updateDynamic("insertHtml")(insertHtml.asInstanceOf[js.Any])
-    if (insertImage != null) __obj.updateDynamic("insertImage")(insertImage.asInstanceOf[js.Any])
-    if (insertOrderedList != null) __obj.updateDynamic("insertOrderedList")(insertOrderedList.asInstanceOf[js.Any])
-    if (insertUnorderedList != null) __obj.updateDynamic("insertUnorderedList")(insertUnorderedList.asInstanceOf[js.Any])
-    if (italic != null) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (justifyCenter != null) __obj.updateDynamic("justifyCenter")(justifyCenter.asInstanceOf[js.Any])
-    if (justifyFull != null) __obj.updateDynamic("justifyFull")(justifyFull.asInstanceOf[js.Any])
-    if (justifyLeft != null) __obj.updateDynamic("justifyLeft")(justifyLeft.asInstanceOf[js.Any])
-    if (justifyRight != null) __obj.updateDynamic("justifyRight")(justifyRight.asInstanceOf[js.Any])
-    if (linkOpenInNewWindow != null) __obj.updateDynamic("linkOpenInNewWindow")(linkOpenInNewWindow.asInstanceOf[js.Any])
-    if (linkText != null) __obj.updateDynamic("linkText")(linkText.asInstanceOf[js.Any])
-    if (linkToolTip != null) __obj.updateDynamic("linkToolTip")(linkToolTip.asInstanceOf[js.Any])
-    if (linkWebAddress != null) __obj.updateDynamic("linkWebAddress")(linkWebAddress.asInstanceOf[js.Any])
-    if (outdent != null) __obj.updateDynamic("outdent")(outdent.asInstanceOf[js.Any])
-    if (overflowAnchor != null) __obj.updateDynamic("overflowAnchor")(overflowAnchor.asInstanceOf[js.Any])
-    if (print != null) __obj.updateDynamic("print")(print.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (selectAllCells != null) __obj.updateDynamic("selectAllCells")(selectAllCells.asInstanceOf[js.Any])
-    if (strikethrough != null) __obj.updateDynamic("strikethrough")(strikethrough.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (subscript != null) __obj.updateDynamic("subscript")(subscript.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
-    if (superscript != null) __obj.updateDynamic("superscript")(superscript.asInstanceOf[js.Any])
-    if (tableTab != null) __obj.updateDynamic("tableTab")(tableTab.asInstanceOf[js.Any])
-    if (tableWizard != null) __obj.updateDynamic("tableWizard")(tableWizard.asInstanceOf[js.Any])
-    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
-    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
-    if (unlink != null) __obj.updateDynamic("unlink")(unlink.asInstanceOf[js.Any])
-    if (viewHtml != null) __obj.updateDynamic("viewHtml")(viewHtml.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wrapText != null) __obj.updateDynamic("wrapText")(wrapText.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorMessages]
   }
+  
+  extension [Self <: EditorMessages](x: Self) {
+    
+    inline def setAccessibilityTab(value: String): Self = StObject.set(x, "accessibilityTab", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityTabUndefined: Self = StObject.set(x, "accessibilityTab", js.undefined)
+    
+    inline def setAddColumnLeft(value: String): Self = StObject.set(x, "addColumnLeft", value.asInstanceOf[js.Any])
+    
+    inline def setAddColumnLeftUndefined: Self = StObject.set(x, "addColumnLeft", js.undefined)
+    
+    inline def setAddColumnRight(value: String): Self = StObject.set(x, "addColumnRight", value.asInstanceOf[js.Any])
+    
+    inline def setAddColumnRightUndefined: Self = StObject.set(x, "addColumnRight", js.undefined)
+    
+    inline def setAddRowAbove(value: String): Self = StObject.set(x, "addRowAbove", value.asInstanceOf[js.Any])
+    
+    inline def setAddRowAboveUndefined: Self = StObject.set(x, "addRowAbove", js.undefined)
+    
+    inline def setAddRowBelow(value: String): Self = StObject.set(x, "addRowBelow", value.asInstanceOf[js.Any])
+    
+    inline def setAddRowBelowUndefined: Self = StObject.set(x, "addRowBelow", js.undefined)
+    
+    inline def setAlignCenter(value: String): Self = StObject.set(x, "alignCenter", value.asInstanceOf[js.Any])
+    
+    inline def setAlignCenterBottom(value: String): Self = StObject.set(x, "alignCenterBottom", value.asInstanceOf[js.Any])
+    
+    inline def setAlignCenterBottomUndefined: Self = StObject.set(x, "alignCenterBottom", js.undefined)
+    
+    inline def setAlignCenterMiddle(value: String): Self = StObject.set(x, "alignCenterMiddle", value.asInstanceOf[js.Any])
+    
+    inline def setAlignCenterMiddleUndefined: Self = StObject.set(x, "alignCenterMiddle", js.undefined)
+    
+    inline def setAlignCenterTop(value: String): Self = StObject.set(x, "alignCenterTop", value.asInstanceOf[js.Any])
+    
+    inline def setAlignCenterTopUndefined: Self = StObject.set(x, "alignCenterTop", js.undefined)
+    
+    inline def setAlignCenterUndefined: Self = StObject.set(x, "alignCenter", js.undefined)
+    
+    inline def setAlignLeft(value: String): Self = StObject.set(x, "alignLeft", value.asInstanceOf[js.Any])
+    
+    inline def setAlignLeftBottom(value: String): Self = StObject.set(x, "alignLeftBottom", value.asInstanceOf[js.Any])
+    
+    inline def setAlignLeftBottomUndefined: Self = StObject.set(x, "alignLeftBottom", js.undefined)
+    
+    inline def setAlignLeftMiddle(value: String): Self = StObject.set(x, "alignLeftMiddle", value.asInstanceOf[js.Any])
+    
+    inline def setAlignLeftMiddleUndefined: Self = StObject.set(x, "alignLeftMiddle", js.undefined)
+    
+    inline def setAlignLeftTop(value: String): Self = StObject.set(x, "alignLeftTop", value.asInstanceOf[js.Any])
+    
+    inline def setAlignLeftTopUndefined: Self = StObject.set(x, "alignLeftTop", js.undefined)
+    
+    inline def setAlignLeftUndefined: Self = StObject.set(x, "alignLeft", js.undefined)
+    
+    inline def setAlignRemove(value: String): Self = StObject.set(x, "alignRemove", value.asInstanceOf[js.Any])
+    
+    inline def setAlignRemoveUndefined: Self = StObject.set(x, "alignRemove", js.undefined)
+    
+    inline def setAlignRight(value: String): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
+    
+    inline def setAlignRightBottom(value: String): Self = StObject.set(x, "alignRightBottom", value.asInstanceOf[js.Any])
+    
+    inline def setAlignRightBottomUndefined: Self = StObject.set(x, "alignRightBottom", js.undefined)
+    
+    inline def setAlignRightMiddle(value: String): Self = StObject.set(x, "alignRightMiddle", value.asInstanceOf[js.Any])
+    
+    inline def setAlignRightMiddleUndefined: Self = StObject.set(x, "alignRightMiddle", js.undefined)
+    
+    inline def setAlignRightTop(value: String): Self = StObject.set(x, "alignRightTop", value.asInstanceOf[js.Any])
+    
+    inline def setAlignRightTopUndefined: Self = StObject.set(x, "alignRightTop", js.undefined)
+    
+    inline def setAlignRightUndefined: Self = StObject.set(x, "alignRight", js.undefined)
+    
+    inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    
+    inline def setApplyFormat(value: String): Self = StObject.set(x, "applyFormat", value.asInstanceOf[js.Any])
+    
+    inline def setApplyFormatUndefined: Self = StObject.set(x, "applyFormat", js.undefined)
+    
+    inline def setAssociateCellsWithHeaders(value: String): Self = StObject.set(x, "associateCellsWithHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setAssociateCellsWithHeadersUndefined: Self = StObject.set(x, "associateCellsWithHeaders", js.undefined)
+    
+    inline def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackColorUndefined: Self = StObject.set(x, "backColor", js.undefined)
+    
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    
+    inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+    
+    inline def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setCellMargin(value: String): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
+    
+    inline def setCellMarginUndefined: Self = StObject.set(x, "cellMargin", js.undefined)
+    
+    inline def setCellPadding(value: String): Self = StObject.set(x, "cellPadding", value.asInstanceOf[js.Any])
+    
+    inline def setCellPaddingUndefined: Self = StObject.set(x, "cellPadding", js.undefined)
+    
+    inline def setCellSpacing(value: String): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setCellSpacingUndefined: Self = StObject.set(x, "cellSpacing", js.undefined)
+    
+    inline def setCellTab(value: String): Self = StObject.set(x, "cellTab", value.asInstanceOf[js.Any])
+    
+    inline def setCellTabUndefined: Self = StObject.set(x, "cellTab", js.undefined)
+    
+    inline def setCleanFormatting(value: String): Self = StObject.set(x, "cleanFormatting", value.asInstanceOf[js.Any])
+    
+    inline def setCleanFormattingUndefined: Self = StObject.set(x, "cleanFormatting", js.undefined)
+    
+    inline def setCollapseBorders(value: String): Self = StObject.set(x, "collapseBorders", value.asInstanceOf[js.Any])
+    
+    inline def setCollapseBordersUndefined: Self = StObject.set(x, "collapseBorders", js.undefined)
+    
+    inline def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setCopyFormat(value: String): Self = StObject.set(x, "copyFormat", value.asInstanceOf[js.Any])
+    
+    inline def setCopyFormatUndefined: Self = StObject.set(x, "copyFormat", js.undefined)
+    
+    inline def setCreateLink(value: String): Self = StObject.set(x, "createLink", value.asInstanceOf[js.Any])
+    
+    inline def setCreateLinkUndefined: Self = StObject.set(x, "createLink", js.undefined)
+    
+    inline def setCreateTable(value: String): Self = StObject.set(x, "createTable", value.asInstanceOf[js.Any])
+    
+    inline def setCreateTableHint(value: String): Self = StObject.set(x, "createTableHint", value.asInstanceOf[js.Any])
+    
+    inline def setCreateTableHintUndefined: Self = StObject.set(x, "createTableHint", js.undefined)
+    
+    inline def setCreateTableUndefined: Self = StObject.set(x, "createTable", js.undefined)
+    
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    
+    inline def setDeleteColumn(value: String): Self = StObject.set(x, "deleteColumn", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteColumnUndefined: Self = StObject.set(x, "deleteColumn", js.undefined)
+    
+    inline def setDeleteRow(value: String): Self = StObject.set(x, "deleteRow", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteRowUndefined: Self = StObject.set(x, "deleteRow", js.undefined)
+    
+    inline def setDialogCancel(value: String): Self = StObject.set(x, "dialogCancel", value.asInstanceOf[js.Any])
+    
+    inline def setDialogCancelUndefined: Self = StObject.set(x, "dialogCancel", js.undefined)
+    
+    inline def setDialogInsert(value: String): Self = StObject.set(x, "dialogInsert", value.asInstanceOf[js.Any])
+    
+    inline def setDialogInsertUndefined: Self = StObject.set(x, "dialogInsert", js.undefined)
+    
+    inline def setDialogOk(value: String): Self = StObject.set(x, "dialogOk", value.asInstanceOf[js.Any])
+    
+    inline def setDialogOkUndefined: Self = StObject.set(x, "dialogOk", js.undefined)
+    
+    inline def setDialogUpdate(value: String): Self = StObject.set(x, "dialogUpdate", value.asInstanceOf[js.Any])
+    
+    inline def setDialogUpdateUndefined: Self = StObject.set(x, "dialogUpdate", js.undefined)
+    
+    inline def setEditAreaTitle(value: String): Self = StObject.set(x, "editAreaTitle", value.asInstanceOf[js.Any])
+    
+    inline def setEditAreaTitleUndefined: Self = StObject.set(x, "editAreaTitle", js.undefined)
+    
+    inline def setFileTitle(value: String): Self = StObject.set(x, "fileTitle", value.asInstanceOf[js.Any])
+    
+    inline def setFileTitleUndefined: Self = StObject.set(x, "fileTitle", js.undefined)
+    
+    inline def setFileWebAddress(value: String): Self = StObject.set(x, "fileWebAddress", value.asInstanceOf[js.Any])
+    
+    inline def setFileWebAddressUndefined: Self = StObject.set(x, "fileWebAddress", js.undefined)
+    
+    inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+    
+    inline def setFontNameInherit(value: String): Self = StObject.set(x, "fontNameInherit", value.asInstanceOf[js.Any])
+    
+    inline def setFontNameInheritUndefined: Self = StObject.set(x, "fontNameInherit", js.undefined)
+    
+    inline def setFontNameUndefined: Self = StObject.set(x, "fontName", js.undefined)
+    
+    inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeInherit(value: String): Self = StObject.set(x, "fontSizeInherit", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeInheritUndefined: Self = StObject.set(x, "fontSizeInherit", js.undefined)
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setForeColor(value: String): Self = StObject.set(x, "foreColor", value.asInstanceOf[js.Any])
+    
+    inline def setForeColorUndefined: Self = StObject.set(x, "foreColor", js.undefined)
+    
+    inline def setFormatBlock(value: String): Self = StObject.set(x, "formatBlock", value.asInstanceOf[js.Any])
+    
+    inline def setFormatBlockUndefined: Self = StObject.set(x, "formatBlock", js.undefined)
+    
+    inline def setFormatting(value: String): Self = StObject.set(x, "formatting", value.asInstanceOf[js.Any])
+    
+    inline def setFormattingUndefined: Self = StObject.set(x, "formatting", js.undefined)
+    
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setImageAltText(value: String): Self = StObject.set(x, "imageAltText", value.asInstanceOf[js.Any])
+    
+    inline def setImageAltTextUndefined: Self = StObject.set(x, "imageAltText", js.undefined)
+    
+    inline def setImageHeight(value: String): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
+    
+    inline def setImageHeightUndefined: Self = StObject.set(x, "imageHeight", js.undefined)
+    
+    inline def setImageWebAddress(value: String): Self = StObject.set(x, "imageWebAddress", value.asInstanceOf[js.Any])
+    
+    inline def setImageWebAddressUndefined: Self = StObject.set(x, "imageWebAddress", js.undefined)
+    
+    inline def setImageWidth(value: String): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
+    
+    inline def setImageWidthUndefined: Self = StObject.set(x, "imageWidth", js.undefined)
+    
+    inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    
+    inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+    
+    inline def setInsertFile(value: String): Self = StObject.set(x, "insertFile", value.asInstanceOf[js.Any])
+    
+    inline def setInsertFileUndefined: Self = StObject.set(x, "insertFile", js.undefined)
+    
+    inline def setInsertHtml(value: String): Self = StObject.set(x, "insertHtml", value.asInstanceOf[js.Any])
+    
+    inline def setInsertHtmlUndefined: Self = StObject.set(x, "insertHtml", js.undefined)
+    
+    inline def setInsertImage(value: String): Self = StObject.set(x, "insertImage", value.asInstanceOf[js.Any])
+    
+    inline def setInsertImageUndefined: Self = StObject.set(x, "insertImage", js.undefined)
+    
+    inline def setInsertLowerRomanList(value: String): Self = StObject.set(x, "insertLowerRomanList", value.asInstanceOf[js.Any])
+    
+    inline def setInsertLowerRomanListUndefined: Self = StObject.set(x, "insertLowerRomanList", js.undefined)
+    
+    inline def setInsertOrderedList(value: String): Self = StObject.set(x, "insertOrderedList", value.asInstanceOf[js.Any])
+    
+    inline def setInsertOrderedListUndefined: Self = StObject.set(x, "insertOrderedList", js.undefined)
+    
+    inline def setInsertUnorderedList(value: String): Self = StObject.set(x, "insertUnorderedList", value.asInstanceOf[js.Any])
+    
+    inline def setInsertUnorderedListUndefined: Self = StObject.set(x, "insertUnorderedList", js.undefined)
+    
+    inline def setInsertUpperRomanList(value: String): Self = StObject.set(x, "insertUpperRomanList", value.asInstanceOf[js.Any])
+    
+    inline def setInsertUpperRomanListUndefined: Self = StObject.set(x, "insertUpperRomanList", js.undefined)
+    
+    inline def setItalic(value: String): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    
+    inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+    
+    inline def setJustifyCenter(value: String): Self = StObject.set(x, "justifyCenter", value.asInstanceOf[js.Any])
+    
+    inline def setJustifyCenterUndefined: Self = StObject.set(x, "justifyCenter", js.undefined)
+    
+    inline def setJustifyFull(value: String): Self = StObject.set(x, "justifyFull", value.asInstanceOf[js.Any])
+    
+    inline def setJustifyFullUndefined: Self = StObject.set(x, "justifyFull", js.undefined)
+    
+    inline def setJustifyLeft(value: String): Self = StObject.set(x, "justifyLeft", value.asInstanceOf[js.Any])
+    
+    inline def setJustifyLeftUndefined: Self = StObject.set(x, "justifyLeft", js.undefined)
+    
+    inline def setJustifyRight(value: String): Self = StObject.set(x, "justifyRight", value.asInstanceOf[js.Any])
+    
+    inline def setJustifyRightUndefined: Self = StObject.set(x, "justifyRight", js.undefined)
+    
+    inline def setLinkOpenInNewWindow(value: String): Self = StObject.set(x, "linkOpenInNewWindow", value.asInstanceOf[js.Any])
+    
+    inline def setLinkOpenInNewWindowUndefined: Self = StObject.set(x, "linkOpenInNewWindow", js.undefined)
+    
+    inline def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
+    
+    inline def setLinkTextUndefined: Self = StObject.set(x, "linkText", js.undefined)
+    
+    inline def setLinkToolTip(value: String): Self = StObject.set(x, "linkToolTip", value.asInstanceOf[js.Any])
+    
+    inline def setLinkToolTipUndefined: Self = StObject.set(x, "linkToolTip", js.undefined)
+    
+    inline def setLinkWebAddress(value: String): Self = StObject.set(x, "linkWebAddress", value.asInstanceOf[js.Any])
+    
+    inline def setLinkWebAddressUndefined: Self = StObject.set(x, "linkWebAddress", js.undefined)
+    
+    inline def setOutdent(value: String): Self = StObject.set(x, "outdent", value.asInstanceOf[js.Any])
+    
+    inline def setOutdentUndefined: Self = StObject.set(x, "outdent", js.undefined)
+    
+    inline def setOverflowAnchor(value: String): Self = StObject.set(x, "overflowAnchor", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowAnchorUndefined: Self = StObject.set(x, "overflowAnchor", js.undefined)
+    
+    inline def setPrint(value: String): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+    
+    inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
+    
+    inline def setRedo(value: String): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
+    
+    inline def setRedoUndefined: Self = StObject.set(x, "redo", js.undefined)
+    
+    inline def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    
+    inline def setSelectAllCells(value: String): Self = StObject.set(x, "selectAllCells", value.asInstanceOf[js.Any])
+    
+    inline def setSelectAllCellsUndefined: Self = StObject.set(x, "selectAllCells", js.undefined)
+    
+    inline def setStrikethrough(value: String): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+    
+    inline def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setSubscript(value: String): Self = StObject.set(x, "subscript", value.asInstanceOf[js.Any])
+    
+    inline def setSubscriptUndefined: Self = StObject.set(x, "subscript", js.undefined)
+    
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    
+    inline def setSuperscript(value: String): Self = StObject.set(x, "superscript", value.asInstanceOf[js.Any])
+    
+    inline def setSuperscriptUndefined: Self = StObject.set(x, "superscript", js.undefined)
+    
+    inline def setTableAlignCenter(value: String): Self = StObject.set(x, "tableAlignCenter", value.asInstanceOf[js.Any])
+    
+    inline def setTableAlignCenterUndefined: Self = StObject.set(x, "tableAlignCenter", js.undefined)
+    
+    inline def setTableAlignLeft(value: String): Self = StObject.set(x, "tableAlignLeft", value.asInstanceOf[js.Any])
+    
+    inline def setTableAlignLeftUndefined: Self = StObject.set(x, "tableAlignLeft", js.undefined)
+    
+    inline def setTableAlignRight(value: String): Self = StObject.set(x, "tableAlignRight", value.asInstanceOf[js.Any])
+    
+    inline def setTableAlignRightUndefined: Self = StObject.set(x, "tableAlignRight", js.undefined)
+    
+    inline def setTableTab(value: String): Self = StObject.set(x, "tableTab", value.asInstanceOf[js.Any])
+    
+    inline def setTableTabUndefined: Self = StObject.set(x, "tableTab", js.undefined)
+    
+    inline def setTableWizard(value: String): Self = StObject.set(x, "tableWizard", value.asInstanceOf[js.Any])
+    
+    inline def setTableWizardUndefined: Self = StObject.set(x, "tableWizard", js.undefined)
+    
+    inline def setUnderline(value: String): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+    
+    inline def setUndo(value: String): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
+    
+    inline def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
+    
+    inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    
+    inline def setUnlink(value: String): Self = StObject.set(x, "unlink", value.asInstanceOf[js.Any])
+    
+    inline def setUnlinkUndefined: Self = StObject.set(x, "unlink", js.undefined)
+    
+    inline def setViewHtml(value: String): Self = StObject.set(x, "viewHtml", value.asInstanceOf[js.Any])
+    
+    inline def setViewHtmlUndefined: Self = StObject.set(x, "viewHtml", js.undefined)
+    
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setWrapText(value: String): Self = StObject.set(x, "wrapText", value.asInstanceOf[js.Any])
+    
+    inline def setWrapTextUndefined: Self = StObject.set(x, "wrapText", js.undefined)
+  }
 }
-

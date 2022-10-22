@@ -1,41 +1,32 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmitOutputResult extends js.Object
-
+sealed trait EmitOutputResult extends StObject
 @JSGlobal("TypeScript.EmitOutputResult")
 @js.native
-object EmitOutputResult extends js.Object {
-  @js.native
-  sealed trait FailedBecauseOfCompilerOptionsErrors extends EmitOutputResult
+object EmitOutputResult extends StObject {
   
   @js.native
-  sealed trait FailedBecauseOfSyntaxErrors extends EmitOutputResult
+  sealed trait FailedBecauseOfCompilerOptionsErrors
+    extends StObject
+       with EmitOutputResult
   
   @js.native
-  sealed trait FailedToGenerateDeclarationsBecauseOfSemanticErrors extends EmitOutputResult
+  sealed trait FailedBecauseOfSyntaxErrors
+    extends StObject
+       with EmitOutputResult
   
   @js.native
-  sealed trait Succeeded extends EmitOutputResult
+  sealed trait FailedToGenerateDeclarationsBecauseOfSemanticErrors
+    extends StObject
+       with EmitOutputResult
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmitOutputResult with Double] = js.native
-  /* 2 */ @js.native
-  object FailedBecauseOfCompilerOptionsErrors extends TopLevel[FailedBecauseOfCompilerOptionsErrors with Double]
-  
-  /* 1 */ @js.native
-  object FailedBecauseOfSyntaxErrors extends TopLevel[FailedBecauseOfSyntaxErrors with Double]
-  
-  /* 3 */ @js.native
-  object FailedToGenerateDeclarationsBecauseOfSemanticErrors extends TopLevel[FailedToGenerateDeclarationsBecauseOfSemanticErrors with Double]
-  
-  /* 0 */ @js.native
-  object Succeeded extends TopLevel[Succeeded with Double]
-  
+  @js.native
+  sealed trait Succeeded
+    extends StObject
+       with EmitOutputResult
 }
-

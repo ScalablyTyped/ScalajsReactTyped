@@ -2,109 +2,119 @@ package typingsJapgolly.rcTimePicker.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.Instantiable0
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.moment.mod.Moment
-import typingsJapgolly.rcTimePicker.AnonOpen
-import typingsJapgolly.rcTimePicker.PartialTimePickerProps
-import typingsJapgolly.rcTimePicker.mod.^
+import typingsJapgolly.rcTimePicker.anon.Open
+import typingsJapgolly.rcTimePicker.anon.`0`
+import typingsJapgolly.rcTimePicker.mod.Panel
+import typingsJapgolly.rcTimePicker.mod.TimePickerProps
+import typingsJapgolly.rcTimePicker.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RcTimePicker {
-  def apply(
-    addon: PartialTimePickerProps => CallbackTo[Element] = null,
-    allowEmpty: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    clearIcon: VdomNode = null,
-    clearText: String = null,
-    defaultOpenValue: Moment = null,
-    defaultValue: Moment = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledHours: js.UndefOr[CallbackTo[js.Array[Double]]] = js.undefined,
-    disabledMinutes: /* hour */ Double => CallbackTo[js.Array[Double]] = null,
-    disabledSeconds: (/* hour */ Double, /* minute */ Double) => CallbackTo[js.Array[Double]] = null,
-    focusOnOpen: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
-    hideDisabledOptions: js.UndefOr[Boolean] = js.undefined,
-    hourStep: Int | Double = null,
-    id: String = null,
-    inputIcon: VdomNode = null,
-    inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    minuteStep: Int | Double = null,
-    onChange: /* value */ Moment => Callback = null,
-    onClose: /* state */ AnonOpen => Callback = null,
-    onOpen: /* state */ AnonOpen => Callback = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    placeholder: String = null,
-    placement: String = null,
-    popupClassName: String = null,
-    prefixCls: String = null,
-    secondStep: Int | Double = null,
-    showHour: js.UndefOr[Boolean] = js.undefined,
-    showMinute: js.UndefOr[Boolean] = js.undefined,
-    showSecond: js.UndefOr[Boolean] = js.undefined,
-    transitionName: String = null,
-    use12Hours: js.UndefOr[Boolean] = js.undefined,
-    value: Moment = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PartialTimePickerProps, ^, Unit, PartialTimePickerProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (addon != null) __obj.updateDynamic("addon")(js.Any.fromFunction1((t0: typingsJapgolly.rcTimePicker.PartialTimePickerProps) => addon(t0).runNow()))
-    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.rawNode.asInstanceOf[js.Any])
-    if (clearText != null) __obj.updateDynamic("clearText")(clearText.asInstanceOf[js.Any])
-    if (defaultOpenValue != null) __obj.updateDynamic("defaultOpenValue")(defaultOpenValue.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    disabledHours.foreach(p => __obj.updateDynamic("disabledHours")(p.toJsFn))
-    if (disabledMinutes != null) __obj.updateDynamic("disabledMinutes")(js.Any.fromFunction1((t0: /* hour */ scala.Double) => disabledMinutes(t0).runNow()))
-    if (disabledSeconds != null) __obj.updateDynamic("disabledSeconds")(js.Any.fromFunction2((t0: /* hour */ scala.Double, t1: /* minute */ scala.Double) => disabledSeconds(t0, t1).runNow()))
-    if (!js.isUndefined(focusOnOpen)) __obj.updateDynamic("focusOnOpen")(focusOnOpen.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideDisabledOptions)) __obj.updateDynamic("hideDisabledOptions")(hideDisabledOptions.asInstanceOf[js.Any])
-    if (hourStep != null) __obj.updateDynamic("hourStep")(hourStep.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inputIcon != null) __obj.updateDynamic("inputIcon")(inputIcon.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputReadOnly)) __obj.updateDynamic("inputReadOnly")(inputReadOnly.asInstanceOf[js.Any])
-    if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.moment.mod.Moment) => onChange(t0).runNow()))
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: /* state */ typingsJapgolly.rcTimePicker.AnonOpen) => onClose(t0).runNow()))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1((t0: /* state */ typingsJapgolly.rcTimePicker.AnonOpen) => onOpen(t0).runNow()))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (secondStep != null) __obj.updateDynamic("secondStep")(secondStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(use12Hours)) __obj.updateDynamic("use12Hours")(use12Hours.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rcTimePicker.PartialTimePickerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rcTimePicker.mod.^](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rcTimePicker.PartialTimePickerProps])(children: _*)
-  }
-  @JSImport("rc-time-picker", JSImport.Namespace)
+  @JSImport("rc-time-picker", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def addon(value: /* instance */ Instantiable0[Panel] => Node): this.type = set("addon", js.Any.fromFunction1(value))
+    
+    inline def allowEmpty(value: Boolean): this.type = set("allowEmpty", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def clearIcon(value: VdomNode): this.type = set("clearIcon", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def clearIconNull: this.type = set("clearIcon", null)
+    
+    inline def clearIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("clearIcon", js.Array(value*))
+    
+    inline def clearIconVdomElement(value: VdomElement): this.type = set("clearIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def clearText(value: String): this.type = set("clearText", value.asInstanceOf[js.Any])
+    
+    inline def defaultOpenValue(value: Moment): this.type = set("defaultOpenValue", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: Moment): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def disabledHours(value: CallbackTo[js.Array[Double]]): this.type = set("disabledHours", value.toJsFn)
+    
+    inline def disabledMinutes(value: /* hour */ Double => js.Array[Double]): this.type = set("disabledMinutes", js.Any.fromFunction1(value))
+    
+    inline def disabledSeconds(value: (/* hour */ Double, /* minute */ Double) => js.Array[Double]): this.type = set("disabledSeconds", js.Any.fromFunction2(value))
+    
+    inline def focusOnOpen(value: Boolean): this.type = set("focusOnOpen", value.asInstanceOf[js.Any])
+    
+    inline def format(value: String): this.type = set("format", value.asInstanceOf[js.Any])
+    
+    inline def hideDisabledOptions(value: Boolean): this.type = set("hideDisabledOptions", value.asInstanceOf[js.Any])
+    
+    inline def hourStep(value: Double): this.type = set("hourStep", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def inputIcon(value: VdomNode): this.type = set("inputIcon", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def inputIconNull: this.type = set("inputIcon", null)
+    
+    inline def inputIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("inputIcon", js.Array(value*))
+    
+    inline def inputIconVdomElement(value: VdomElement): this.type = set("inputIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def inputReadOnly(value: Boolean): this.type = set("inputReadOnly", value.asInstanceOf[js.Any])
+    
+    inline def minuteStep(value: Double): this.type = set("minuteStep", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* newValue */ Moment => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* newValue */ Moment) => value(t0).runNow()))
+    
+    inline def onClose(value: /* newState */ `0` => Callback): this.type = set("onClose", js.Any.fromFunction1((t0: /* newState */ `0`) => value(t0).runNow()))
+    
+    inline def onOpen(value: /* newState */ Open => Callback): this.type = set("onOpen", js.Any.fromFunction1((t0: /* newState */ Open) => value(t0).runNow()))
+    
+    inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def placement(value: String): this.type = set("placement", value.asInstanceOf[js.Any])
+    
+    inline def popupClassName(value: String): this.type = set("popupClassName", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def secondStep(value: Double): this.type = set("secondStep", value.asInstanceOf[js.Any])
+    
+    inline def showHour(value: Boolean): this.type = set("showHour", value.asInstanceOf[js.Any])
+    
+    inline def showMinute(value: Boolean): this.type = set("showMinute", value.asInstanceOf[js.Any])
+    
+    inline def showSecond(value: Boolean): this.type = set("showSecond", value.asInstanceOf[js.Any])
+    
+    inline def transitionName(value: String): this.type = set("transitionName", value.asInstanceOf[js.Any])
+    
+    inline def use12Hours(value: Boolean): this.type = set("use12Hours", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Moment): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: RcTimePicker.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TimePickerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

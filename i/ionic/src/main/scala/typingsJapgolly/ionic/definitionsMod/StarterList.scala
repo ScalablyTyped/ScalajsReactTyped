@@ -1,22 +1,32 @@
 package typingsJapgolly.ionic.definitionsMod
 
-import typingsJapgolly.ionic.AnonIdName
-import typingsJapgolly.ionic.AnonType
+import typingsJapgolly.ionic.anon.IdName
+import typingsJapgolly.ionic.anon.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StarterList extends js.Object {
-  var integrations: js.Array[AnonIdName]
-  var starters: js.Array[AnonType]
-}
-
-object StarterList {
-  @scala.inline
-  def apply(integrations: js.Array[AnonIdName], starters: js.Array[AnonType]): StarterList = {
-    val __obj = js.Dynamic.literal(integrations = integrations.asInstanceOf[js.Any], starters = starters.asInstanceOf[js.Any])
+trait StarterList extends StObject {
   
+  var integrations: js.Array[IdName]
+  
+  var starters: js.Array[Type]
+}
+object StarterList {
+  
+  inline def apply(integrations: js.Array[IdName], starters: js.Array[Type]): StarterList = {
+    val __obj = js.Dynamic.literal(integrations = integrations.asInstanceOf[js.Any], starters = starters.asInstanceOf[js.Any])
     __obj.asInstanceOf[StarterList]
   }
+  
+  extension [Self <: StarterList](x: Self) {
+    
+    inline def setIntegrations(value: js.Array[IdName]): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+    
+    inline def setIntegrationsVarargs(value: IdName*): Self = StObject.set(x, "integrations", js.Array(value*))
+    
+    inline def setStarters(value: js.Array[Type]): Self = StObject.set(x, "starters", value.asInstanceOf[js.Any])
+    
+    inline def setStartersVarargs(value: Type*): Self = StObject.set(x, "starters", js.Array(value*))
+  }
 }
-

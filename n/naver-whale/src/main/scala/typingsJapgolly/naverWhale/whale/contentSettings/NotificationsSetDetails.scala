@@ -3,30 +3,26 @@ package typingsJapgolly.naverWhale.whale.contentSettings
 import typingsJapgolly.naverWhale.naverWhaleStrings.allow
 import typingsJapgolly.naverWhale.naverWhaleStrings.ask
 import typingsJapgolly.naverWhale.naverWhaleStrings.block
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NotificationsSetDetails
-  extends typingsJapgolly.chrome.chrome.contentSettings.SetDetails {
+  extends StObject
+     with typingsJapgolly.chrome.chrome.contentSettings.SetDetails {
+  
   @JSName("setting")
   var setting_NotificationsSetDetails: allow | block | ask
 }
-
 object NotificationsSetDetails {
-  @scala.inline
-  def apply(
-    primaryPattern: String,
-    setting: allow | block | ask,
-    resourceIdentifier: typingsJapgolly.chrome.chrome.contentSettings.ResourceIdentifier = null,
-    scope: typingsJapgolly.chrome.chrome.contentSettings.ScopeEnum = null,
-    secondaryPattern: String = null
-  ): NotificationsSetDetails = {
+  
+  inline def apply(primaryPattern: String, setting: allow | block | ask): NotificationsSetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
-    if (resourceIdentifier != null) __obj.updateDynamic("resourceIdentifier")(resourceIdentifier.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (secondaryPattern != null) __obj.updateDynamic("secondaryPattern")(secondaryPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationsSetDetails]
   }
+  
+  extension [Self <: NotificationsSetDetails](x: Self) {
+    
+    inline def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+  }
 }
-

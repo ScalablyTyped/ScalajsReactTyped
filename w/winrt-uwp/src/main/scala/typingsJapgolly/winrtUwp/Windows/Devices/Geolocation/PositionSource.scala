@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Geolocation
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PositionSource extends js.Object
-
+sealed trait PositionSource extends StObject
 /** Indicates the source used to obtain a Geocoordinate . */
 @JSGlobal("Windows.Devices.Geolocation.PositionSource")
 @js.native
-object PositionSource extends js.Object {
+object PositionSource extends StObject {
+  
   /** The position was obtained from cellular network data. */
   @js.native
-  sealed trait cellular extends PositionSource
+  sealed trait cellular
+    extends StObject
+       with PositionSource
   
   /** (Starting with Windows 8.1.) The position was obtained from an IP address. */
   @js.native
-  sealed trait ipAddress extends PositionSource
+  sealed trait ipAddress
+    extends StObject
+       with PositionSource
   
   /** The position was obtained from satellite data. */
   @js.native
-  sealed trait satellite extends PositionSource
+  sealed trait satellite
+    extends StObject
+       with PositionSource
   
   /** (Starting with Windows 8.1.) The position was obtained from an unknown source. */
   @js.native
-  sealed trait unknown extends PositionSource
+  sealed trait unknown
+    extends StObject
+       with PositionSource
   
   /** The position was obtained from Wi-Fi network data. */
   @js.native
-  sealed trait wiFi extends PositionSource
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PositionSource with Double] = js.native
-  /* 0 */ @js.native
-  object cellular extends TopLevel[cellular with Double]
-  
-  /* 3 */ @js.native
-  object ipAddress extends TopLevel[ipAddress with Double]
-  
-  /* 1 */ @js.native
-  object satellite extends TopLevel[satellite with Double]
-  
-  /* 4 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 2 */ @js.native
-  object wiFi extends TopLevel[wiFi with Double]
-  
+  sealed trait wiFi
+    extends StObject
+       with PositionSource
 }
-

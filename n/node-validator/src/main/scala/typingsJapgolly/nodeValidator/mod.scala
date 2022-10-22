@@ -7,43 +7,63 @@ import typingsJapgolly.nodeValidator.ValidatorOptions.IsNumberOptions
 import typingsJapgolly.nodeValidator.ValidatorOptions.IsStringOptions
 import typingsJapgolly.nodeValidator.ValidatorOptions.Options
 import typingsJapgolly.std.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-validator", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def bodyValidator(validator: Validatable): js.Any = js.native
-  def express(validator: Validatable): js.Any = js.native
-  def expressParams(validator: Validatable): js.Any = js.native
-  def expressQuery(validator: Validatable): js.Any = js.native
-  def isAnyObject(): IsObjectValidator = js.native
-  def isArray(): Validatable = js.native
-  def isArray(validator: Validatable): Validatable = js.native
-  def isArray(validator: Validatable, options: Options): Validatable = js.native
-  def isBoolean(): Validatable = js.native
-  def isDate(): Validatable = js.native
-  def isDate(options: IsDateOptions): Validatable = js.native
-  def isInteger(): Validatable = js.native
-  def isInteger(options: IsNumberOptions): Validatable = js.native
-  def isIsoDate(): Validatable = js.native
-  def isIsoDate(options: IsDateOptions): Validatable = js.native
-  def isIsoDateTime(): Validatable = js.native
-  def isIsoDateTime(options: IsDateOptions): Validatable = js.native
-  def isNumber(): Validatable = js.native
-  def isNumber(options: IsNumberOptions): Validatable = js.native
-  def isObject(): IsObjectValidator = js.native
-  def isString(): Validatable = js.native
-  def isString(options: IsStringOptions): Validatable = js.native
-  def isStringOrNull(): Validatable = js.native
-  def isStringOrNull(options: IsStringOptions): Validatable = js.native
-  def paramsValidator(validator: Validatable): js.Any = js.native
-  def queryValidator(validator: Validatable): js.Any = js.native
-  def run(
+object mod {
+  
+  @JSImport("node-validator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def bodyValidator(validator: Validatable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyValidator")(validator.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def express(validator: Validatable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("express")(validator.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def expressParams(validator: Validatable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("expressParams")(validator.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def expressQuery(validator: Validatable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("expressQuery")(validator.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def isAnyObject(): IsObjectValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyObject")().asInstanceOf[IsObjectValidator]
+  
+  inline def isArray(): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")().asInstanceOf[Validatable]
+  inline def isArray(validator: Unit, options: Options): Validatable = (^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(validator.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Validatable]
+  inline def isArray(validator: Validatable): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(validator.asInstanceOf[js.Any]).asInstanceOf[Validatable]
+  inline def isArray(validator: Validatable, options: Options): Validatable = (^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(validator.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Validatable]
+  
+  inline def isBoolean(): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")().asInstanceOf[Validatable]
+  
+  inline def isDate(): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")().asInstanceOf[Validatable]
+  inline def isDate(options: IsDateOptions): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(options.asInstanceOf[js.Any]).asInstanceOf[Validatable]
+  
+  inline def isInteger(): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")().asInstanceOf[Validatable]
+  inline def isInteger(options: IsNumberOptions): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(options.asInstanceOf[js.Any]).asInstanceOf[Validatable]
+  
+  inline def isIsoDate(): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isIsoDate")().asInstanceOf[Validatable]
+  inline def isIsoDate(options: IsDateOptions): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isIsoDate")(options.asInstanceOf[js.Any]).asInstanceOf[Validatable]
+  
+  inline def isIsoDateTime(): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isIsoDateTime")().asInstanceOf[Validatable]
+  inline def isIsoDateTime(options: IsDateOptions): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isIsoDateTime")(options.asInstanceOf[js.Any]).asInstanceOf[Validatable]
+  
+  inline def isNumber(): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")().asInstanceOf[Validatable]
+  inline def isNumber(options: IsNumberOptions): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(options.asInstanceOf[js.Any]).asInstanceOf[Validatable]
+  
+  inline def isObject(): IsObjectValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")().asInstanceOf[IsObjectValidator]
+  
+  inline def isString(): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")().asInstanceOf[Validatable]
+  inline def isString(options: IsStringOptions): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(options.asInstanceOf[js.Any]).asInstanceOf[Validatable]
+  
+  inline def isStringOrNull(): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringOrNull")().asInstanceOf[Validatable]
+  inline def isStringOrNull(options: IsStringOptions): Validatable = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringOrNull")(options.asInstanceOf[js.Any]).asInstanceOf[Validatable]
+  
+  inline def paramsValidator(validator: Validatable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("paramsValidator")(validator.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def queryValidator(validator: Validatable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("queryValidator")(validator.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def run(
     validator: Validatable,
-    value: js.Any,
-    callback: js.Function2[/* errorCount */ Number, /* errors */ js.Array[_], Unit]
-  ): Unit = js.native
+    value: Any,
+    callback: js.Function2[/* errorCount */ Number, /* errors */ js.Array[Any], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(validator.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

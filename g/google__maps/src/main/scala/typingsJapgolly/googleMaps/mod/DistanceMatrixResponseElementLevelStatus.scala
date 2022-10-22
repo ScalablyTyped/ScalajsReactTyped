@@ -1,8 +1,8 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleMaps.googleMapsStrings.OK
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.googleMaps.googleMapsStrings.ZERO_RESULTS
   - typingsJapgolly.googleMaps.googleMapsStrings.MAX_ROUTE_LENGTH_EXCEEDED
 */
-trait DistanceMatrixResponseElementLevelStatus extends js.Object
-
+trait DistanceMatrixResponseElementLevelStatus extends StObject
 object DistanceMatrixResponseElementLevelStatus {
-  @scala.inline
-  def MAX_ROUTE_LENGTH_EXCEEDED: typingsJapgolly.googleMaps.googleMapsStrings.MAX_ROUTE_LENGTH_EXCEEDED = this.cast("MAX_ROUTE_LENGTH_EXCEEDED")
-  @scala.inline
-  def NOT_FOUND: typingsJapgolly.googleMaps.googleMapsStrings.NOT_FOUND = this.cast("NOT_FOUND")
-  @scala.inline
-  def OK: typingsJapgolly.googleMaps.googleMapsStrings.OK = this.cast("OK")
-  @scala.inline
-  def ZERO_RESULTS: typingsJapgolly.googleMaps.googleMapsStrings.ZERO_RESULTS = this.cast("ZERO_RESULTS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def MAX_ROUTE_LENGTH_EXCEEDED: typingsJapgolly.googleMaps.googleMapsStrings.MAX_ROUTE_LENGTH_EXCEEDED = "MAX_ROUTE_LENGTH_EXCEEDED".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.MAX_ROUTE_LENGTH_EXCEEDED]
+  
+  inline def NOT_FOUND: typingsJapgolly.googleMaps.googleMapsStrings.NOT_FOUND = "NOT_FOUND".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.NOT_FOUND]
+  
+  inline def OK: typingsJapgolly.googleMaps.googleMapsStrings.OK = "OK".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.OK]
+  
+  inline def ZERO_RESULTS: typingsJapgolly.googleMaps.googleMapsStrings.ZERO_RESULTS = "ZERO_RESULTS".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.ZERO_RESULTS]
 }
-

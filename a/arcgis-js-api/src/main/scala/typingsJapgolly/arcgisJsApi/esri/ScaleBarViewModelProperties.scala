@@ -1,10 +1,11 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScaleBarViewModelProperties extends js.Object {
+trait ScaleBarViewModelProperties extends StObject {
+  
   /**
     * The view from which the widget will operate.
     *
@@ -12,13 +13,17 @@ trait ScaleBarViewModelProperties extends js.Object {
     */
   var view: js.UndefOr[MapViewProperties] = js.undefined
 }
-
 object ScaleBarViewModelProperties {
-  @scala.inline
-  def apply(view: MapViewProperties = null): ScaleBarViewModelProperties = {
+  
+  inline def apply(): ScaleBarViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleBarViewModelProperties]
   }
+  
+  extension [Self <: ScaleBarViewModelProperties](x: Self) {
+    
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

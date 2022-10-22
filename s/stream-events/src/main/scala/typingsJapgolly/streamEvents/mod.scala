@@ -1,13 +1,15 @@
 package typingsJapgolly.streamEvents
 
 import typingsJapgolly.node.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stream-events", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[StreamType /* <: Stream */](stream: StreamType): StreamType = js.native
+object mod {
+  
+  inline def apply[StreamType /* <: Stream */](stream: StreamType): StreamType = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[StreamType]
+  
+  @JSImport("stream-events", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

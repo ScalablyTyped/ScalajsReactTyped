@@ -1,20 +1,28 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Input.Spatial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Input.Spatial.SpatialPointerPose")
-@js.native
-abstract class SpatialPointerPose () extends js.Object {
-   /* unmapped type */ var head: js.Any = js.native
-   /* unmapped type */ var timestamp: js.Any = js.native
+trait SpatialPointerPose extends StObject {
+  
+  /* unmapped type */
+  var head: Any
+  
+  /* unmapped type */
+  var timestamp: Any
 }
-
-/* static members */
-@JSGlobal("Windows.UI.Input.Spatial.SpatialPointerPose")
-@js.native
-object SpatialPointerPose extends js.Object {
-  var tryGetAtTimestamp: js.Any = js.native
+object SpatialPointerPose {
+  
+  inline def apply(head: Any, timestamp: Any): SpatialPointerPose = {
+    val __obj = js.Dynamic.literal(head = head.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpatialPointerPose]
+  }
+  
+  extension [Self <: SpatialPointerPose](x: Self) {
+    
+    inline def setHead(value: Any): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    
+    inline def setTimestamp(value: Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+  }
 }
-

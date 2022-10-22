@@ -1,38 +1,30 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WrapStrategy extends js.Object
-
+sealed trait WrapStrategy extends StObject
 /**
   * An enumeration of the strategies used to handle cell text wrapping.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.WrapStrategy")
 @js.native
-object WrapStrategy extends js.Object {
-  @js.native
-  sealed trait CLIP extends WrapStrategy
+object WrapStrategy extends StObject {
   
   @js.native
-  sealed trait OVERFLOW extends WrapStrategy
+  sealed trait CLIP
+    extends StObject
+       with WrapStrategy
   
   @js.native
-  sealed trait WRAP extends WrapStrategy
+  sealed trait OVERFLOW
+    extends StObject
+       with WrapStrategy
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WrapStrategy with Double] = js.native
-  /* 2 */ @js.native
-  object CLIP extends TopLevel[CLIP with Double]
-  
-  /* 1 */ @js.native
-  object OVERFLOW extends TopLevel[OVERFLOW with Double]
-  
-  /* 0 */ @js.native
-  object WRAP extends TopLevel[WRAP with Double]
-  
+  @js.native
+  sealed trait WRAP
+    extends StObject
+       with WrapStrategy
 }
-

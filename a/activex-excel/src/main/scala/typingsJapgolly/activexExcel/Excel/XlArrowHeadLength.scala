@@ -1,27 +1,23 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4138`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`3`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4138`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4138`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`3`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4138`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
 */
-trait XlArrowHeadLength extends js.Object
-
+trait XlArrowHeadLength extends StObject
 object XlArrowHeadLength {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlArrowHeadLengthLong: `3` = this.cast(3)
-  @scala.inline
-  def xlArrowHeadLengthMedium: `-4138` = this.cast(-4138)
-  @scala.inline
-  def xlArrowHeadLengthShort: `1` = this.cast(1)
+  
+  inline def xlArrowHeadLengthLong: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlArrowHeadLengthMedium: `-4138` = -4138.asInstanceOf[`-4138`]
+  
+  inline def xlArrowHeadLengthShort: `1` = 1.asInstanceOf[`1`]
 }
-

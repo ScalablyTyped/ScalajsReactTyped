@@ -1,26 +1,42 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains control requests' settings.
   */
-@JSGlobal("RequestSettings")
-@js.native
-class RequestSettings () extends js.Object {
+trait RequestSettings extends StObject {
+  
   /**
     * Specifies the maximum number of commands that can be sent in one request.
     */
-  var maxCommandCount: Double = js.native
+  var maxCommandCount: Double
+  
   /**
     * Specifies a period before a request is sent to the server.
     */
-  var pendingPeriod: Double = js.native
+  var pendingPeriod: Double
+  
   /**
     * Specifies the time that the control waits for a response before to sent a request again.
     */
-  var responseWaitingTime: Double = js.native
+  var responseWaitingTime: Double
 }
-
+object RequestSettings {
+  
+  inline def apply(maxCommandCount: Double, pendingPeriod: Double, responseWaitingTime: Double): RequestSettings = {
+    val __obj = js.Dynamic.literal(maxCommandCount = maxCommandCount.asInstanceOf[js.Any], pendingPeriod = pendingPeriod.asInstanceOf[js.Any], responseWaitingTime = responseWaitingTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RequestSettings]
+  }
+  
+  extension [Self <: RequestSettings](x: Self) {
+    
+    inline def setMaxCommandCount(value: Double): Self = StObject.set(x, "maxCommandCount", value.asInstanceOf[js.Any])
+    
+    inline def setPendingPeriod(value: Double): Self = StObject.set(x, "pendingPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setResponseWaitingTime(value: Double): Self = StObject.set(x, "responseWaitingTime", value.asInstanceOf[js.Any])
+  }
+}

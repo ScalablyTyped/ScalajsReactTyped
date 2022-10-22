@@ -3,26 +3,27 @@ package typingsJapgolly.spotifyWebApiNode.mod
 import typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.long_term
 import typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.medium_term
 import typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.short_term
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetTopOptions extends PaginationOptions {
+trait GetTopOptions
+  extends StObject
+     with PaginationOptions {
+  
   var time_range: js.UndefOr[long_term | medium_term | short_term] = js.undefined
 }
-
 object GetTopOptions {
-  @scala.inline
-  def apply(
-    limit: Int | Double = null,
-    offset: Int | Double = null,
-    time_range: long_term | medium_term | short_term = null
-  ): GetTopOptions = {
+  
+  inline def apply(): GetTopOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (time_range != null) __obj.updateDynamic("time_range")(time_range.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTopOptions]
   }
+  
+  extension [Self <: GetTopOptions](x: Self) {
+    
+    inline def setTime_range(value: long_term | medium_term | short_term): Self = StObject.set(x, "time_range", value.asInstanceOf[js.Any])
+    
+    inline def setTime_rangeUndefined: Self = StObject.set(x, "time_range", js.undefined)
+  }
 }
-

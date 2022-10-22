@@ -4,15 +4,18 @@ import japgolly.scalajs.react.Callback
 import typingsJapgolly.minappEnv.minappEnvStrings.game
 import typingsJapgolly.minappEnv.minappEnvStrings.normal
 import typingsJapgolly.minappEnv.minappEnvStrings.ui
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StartAccelerometerOption extends js.Object {
+trait StartAccelerometerOption extends StObject {
+  
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[StartAccelerometerCompleteCallback] = js.undefined
+  
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[StartAccelerometerFailCallback] = js.undefined
+  
   /** 监听加速度数据回调函数的执行频率
     *
     * 可选值：
@@ -22,24 +25,33 @@ trait StartAccelerometerOption extends js.Object {
     *
     * 最低基础库： `2.1.0` */
   var interval: js.UndefOr[game | ui | normal] = js.undefined
+  
   /** 接口调用成功的回调函数 */
   var success: js.UndefOr[StartAccelerometerSuccessCallback] = js.undefined
 }
-
 object StartAccelerometerOption {
-  @scala.inline
-  def apply(
-    complete: /* res */ GeneralCallbackResult => Callback = null,
-    fail: /* res */ GeneralCallbackResult => Callback = null,
-    interval: game | ui | normal = null,
-    success: /* res */ GeneralCallbackResult => Callback = null
-  ): StartAccelerometerOption = {
+  
+  inline def apply(): StartAccelerometerOption = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.minappEnv.wx.GeneralCallbackResult) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.minappEnv.wx.GeneralCallbackResult) => fail(t0).runNow()))
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.minappEnv.wx.GeneralCallbackResult) => success(t0).runNow()))
     __obj.asInstanceOf[StartAccelerometerOption]
   }
+  
+  extension [Self <: StartAccelerometerOption](x: Self) {
+    
+    inline def setComplete(value: /* res */ GeneralCallbackResult => Callback): Self = StObject.set(x, "complete", js.Any.fromFunction1((t0: /* res */ GeneralCallbackResult) => value(t0).runNow()))
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setFail(value: /* res */ GeneralCallbackResult => Callback): Self = StObject.set(x, "fail", js.Any.fromFunction1((t0: /* res */ GeneralCallbackResult) => value(t0).runNow()))
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setInterval(value: game | ui | normal): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    
+    inline def setSuccess(value: /* res */ GeneralCallbackResult => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ GeneralCallbackResult) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

@@ -1,38 +1,43 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BindingType extends js.Object
-
+sealed trait BindingType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.BindingType")
 @js.native
-object BindingType extends js.Object {
+object BindingType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait range extends BindingType
+  sealed trait range
+    extends StObject
+       with BindingType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait table extends BindingType
+  sealed trait table
+    extends StObject
+       with BindingType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait text extends BindingType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[BindingType with String] = js.native
-  /* "Range" */ @js.native
-  object range extends TopLevel[range with String]
-  
-  /* "Table" */ @js.native
-  object table extends TopLevel[table with String]
-  
-  /* "Text" */ @js.native
-  object text extends TopLevel[text with String]
-  
+  sealed trait text
+    extends StObject
+       with BindingType
 }
-

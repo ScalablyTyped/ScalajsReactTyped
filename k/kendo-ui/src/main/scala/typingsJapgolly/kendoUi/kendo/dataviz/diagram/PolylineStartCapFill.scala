@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.diagram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PolylineStartCapFill extends js.Object {
+trait PolylineStartCapFill extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
 }
-
 object PolylineStartCapFill {
-  @scala.inline
-  def apply(color: String = null, opacity: Int | Double = null): PolylineStartCapFill = {
+  
+  inline def apply(): PolylineStartCapFill = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolylineStartCapFill]
   }
+  
+  extension [Self <: PolylineStartCapFill](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+  }
 }
-

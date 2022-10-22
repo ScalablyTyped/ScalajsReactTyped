@@ -1,41 +1,65 @@
 package typingsJapgolly.angularCommon.mod
 
+import typingsJapgolly.angularCommon.angularCommonBooleans.`true`
+import typingsJapgolly.angularCommon.angularCommonStrings.`[ngIf]`
 import typingsJapgolly.angularCommon.angularCommonStrings.binding
 import typingsJapgolly.angularCore.mod.TemplateRef
 import typingsJapgolly.angularCore.mod.ViewContainerRef
+import typingsJapgolly.angularCore.mod.ɵɵDirectiveDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "NgIf")
 @js.native
-class NgIf protected () extends js.Object {
-  def this(_viewContainer: ViewContainerRef, templateRef: TemplateRef[NgIfContext]) = this()
-  var _context: js.Any = js.native
-  var _elseTemplateRef: js.Any = js.native
-  var _elseViewRef: js.Any = js.native
-  var _thenTemplateRef: js.Any = js.native
-  var _thenViewRef: js.Any = js.native
-  var _updateView: js.Any = js.native
-  var _viewContainer: js.Any = js.native
-  /**
-    * The Boolean expression to evaluate as the condition for showing a template.
-    */
-  var ngIf: js.Any = js.native
+open class NgIf[T] protected () extends StObject {
+  def this(_viewContainer: ViewContainerRef, templateRef: TemplateRef[NgIfContext[T]]) = this()
+  
+  /* private */ var _context: Any = js.native
+  
+  /* private */ var _elseTemplateRef: Any = js.native
+  
+  /* private */ var _elseViewRef: Any = js.native
+  
+  /* private */ var _thenTemplateRef: Any = js.native
+  
+  /* private */ var _thenViewRef: Any = js.native
+  
+  /* private */ var _updateView: Any = js.native
+  
+  /* private */ var _viewContainer: Any = js.native
+  
   /**
     * A template to show if the condition expression evaluates to false.
     */
-  var ngIfElse: TemplateRef[NgIfContext] | Null = js.native
+  def ngIfElse_=(templateRef: TemplateRef[NgIfContext[T]] | Null): Unit = js.native
+  
   /**
     * A template to show if the condition expression evaluates to true.
     */
-  var ngIfThen: TemplateRef[NgIfContext] | Null = js.native
+  def ngIfThen_=(templateRef: TemplateRef[NgIfContext[T]] | Null): Unit = js.native
+  
+  /**
+    * The Boolean expression to evaluate as the condition for showing a template.
+    */
+  def ngIf_=(condition: T): Unit = js.native
 }
-
 /* static members */
-@JSImport("@angular/common", "NgIf")
-@js.native
-object NgIf extends js.Object {
+object NgIf {
+  
+  @JSImport("@angular/common", "NgIf")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Asserts the correct type of the context for the template that `NgIf` will render.
+    *
+    * The presence of this method is a signal to the Ivy template type-check compiler that the
+    * `NgIf` structural directive renders its template with a specific context type.
+    */
+  inline def ngTemplateContextGuard[T](dir: NgIf[T], ctx: Any): /* is @angular/common.@angular/common.NgIfContext<std.Exclude<T, false | 0 | '' | null | undefined>> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ngTemplateContextGuard")(dir.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/common.@angular/common.NgIfContext<std.Exclude<T, false | 0 | '' | null | undefined>> */ Boolean]
+  
   /**
     * Assert the correct type of the expression bound to the `ngIf` input within the template.
     *
@@ -44,6 +68,38 @@ object NgIf extends js.Object {
     * to `ngIf` should be narrowed in some way. For `NgIf`, the binding expression itself is used to
     * narrow its type, which allows the strictNullChecks feature of TypeScript to work with `NgIf`.
     */
-  var ngTemplateGuard_ngIf: binding = js.native
+  @JSImport("@angular/common", "NgIf.ngTemplateGuard_ngIf")
+  @js.native
+  def ngTemplateGuard_ngIf: binding = js.native
+  inline def ngTemplateGuard_ngIf_=(x: binding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTemplateGuard_ngIf")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/common", "NgIf.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    NgIf[Any], 
+    `[ngIf]`, 
+    scala.Nothing, 
+    typingsJapgolly.angularCommon.anon.NgIf, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `true`
+  ] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[
+      NgIf[Any], 
+      `[ngIf]`, 
+      scala.Nothing, 
+      typingsJapgolly.angularCommon.anon.NgIf, 
+      js.Object, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `true`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/common", "NgIf.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[NgIf[Any], scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[NgIf[Any], scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }
-

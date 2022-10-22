@@ -1,49 +1,66 @@
 package typingsJapgolly.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkSheet extends Sheet {
+trait WorkSheet
+  extends StObject
+     with Sheet {
+  
   /** AutoFilter info */
   @JSName("!autofilter")
   var Exclamationmarkautofilter: js.UndefOr[AutoFilterInfo] = js.undefined
+  
   /** Column Info */
   @JSName("!cols")
   var Exclamationmarkcols: js.UndefOr[js.Array[ColInfo]] = js.undefined
+  
   /** Merge Ranges */
   @JSName("!merges")
   var Exclamationmarkmerges: js.UndefOr[js.Array[Range]] = js.undefined
+  
   /** Worksheet Protection info */
   @JSName("!protect")
   var Exclamationmarkprotect: js.UndefOr[ProtectInfo] = js.undefined
+  
   /** Row Info */
   @JSName("!rows")
   var Exclamationmarkrows: js.UndefOr[js.Array[RowInfo]] = js.undefined
 }
-
 object WorkSheet {
-  @scala.inline
-  def apply(
-    Exclamationmarkautofilter: AutoFilterInfo = null,
-    Exclamationmarkcols: js.Array[ColInfo] = null,
-    Exclamationmarkmargins: MarginInfo = null,
-    Exclamationmarkmerges: js.Array[Range] = null,
-    Exclamationmarkprotect: ProtectInfo = null,
-    Exclamationmarkref: String = null,
-    Exclamationmarkrows: js.Array[RowInfo] = null,
-    Exclamationmarktype: SheetType = null
-  ): WorkSheet = {
+  
+  inline def apply(): WorkSheet = {
     val __obj = js.Dynamic.literal()
-    if (Exclamationmarkautofilter != null) __obj.updateDynamic("!autofilter")(Exclamationmarkautofilter.asInstanceOf[js.Any])
-    if (Exclamationmarkcols != null) __obj.updateDynamic("!cols")(Exclamationmarkcols.asInstanceOf[js.Any])
-    if (Exclamationmarkmargins != null) __obj.updateDynamic("!margins")(Exclamationmarkmargins.asInstanceOf[js.Any])
-    if (Exclamationmarkmerges != null) __obj.updateDynamic("!merges")(Exclamationmarkmerges.asInstanceOf[js.Any])
-    if (Exclamationmarkprotect != null) __obj.updateDynamic("!protect")(Exclamationmarkprotect.asInstanceOf[js.Any])
-    if (Exclamationmarkref != null) __obj.updateDynamic("!ref")(Exclamationmarkref.asInstanceOf[js.Any])
-    if (Exclamationmarkrows != null) __obj.updateDynamic("!rows")(Exclamationmarkrows.asInstanceOf[js.Any])
-    if (Exclamationmarktype != null) __obj.updateDynamic("!type")(Exclamationmarktype.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkSheet]
   }
+  
+  extension [Self <: WorkSheet](x: Self) {
+    
+    inline def setExclamationmarkautofilter(value: AutoFilterInfo): Self = StObject.set(x, "!autofilter", value.asInstanceOf[js.Any])
+    
+    inline def setExclamationmarkautofilterUndefined: Self = StObject.set(x, "!autofilter", js.undefined)
+    
+    inline def setExclamationmarkcols(value: js.Array[ColInfo]): Self = StObject.set(x, "!cols", value.asInstanceOf[js.Any])
+    
+    inline def setExclamationmarkcolsUndefined: Self = StObject.set(x, "!cols", js.undefined)
+    
+    inline def setExclamationmarkcolsVarargs(value: ColInfo*): Self = StObject.set(x, "!cols", js.Array(value*))
+    
+    inline def setExclamationmarkmerges(value: js.Array[Range]): Self = StObject.set(x, "!merges", value.asInstanceOf[js.Any])
+    
+    inline def setExclamationmarkmergesUndefined: Self = StObject.set(x, "!merges", js.undefined)
+    
+    inline def setExclamationmarkmergesVarargs(value: Range*): Self = StObject.set(x, "!merges", js.Array(value*))
+    
+    inline def setExclamationmarkprotect(value: ProtectInfo): Self = StObject.set(x, "!protect", value.asInstanceOf[js.Any])
+    
+    inline def setExclamationmarkprotectUndefined: Self = StObject.set(x, "!protect", js.undefined)
+    
+    inline def setExclamationmarkrows(value: js.Array[RowInfo]): Self = StObject.set(x, "!rows", value.asInstanceOf[js.Any])
+    
+    inline def setExclamationmarkrowsUndefined: Self = StObject.set(x, "!rows", js.undefined)
+    
+    inline def setExclamationmarkrowsVarargs(value: RowInfo*): Self = StObject.set(x, "!rows", js.Array(value*))
+  }
 }
-

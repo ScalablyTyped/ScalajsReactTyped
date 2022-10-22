@@ -1,23 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileHash extends js.Object {
+trait FileHash extends StObject {
+  
   // File hash type. Possible values are: unknown, sha1, sha256, md5, authenticodeHash256, lsHash, ctph, peSha1, peSha256.
-  var hashType: js.UndefOr[FileHashType] = js.undefined
+  var hashType: js.UndefOr[NullableOption[FileHashType]] = js.undefined
+  
   // Value of the file hash.
-  var hashValue: js.UndefOr[String] = js.undefined
+  var hashValue: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object FileHash {
-  @scala.inline
-  def apply(hashType: FileHashType = null, hashValue: String = null): FileHash = {
+  
+  inline def apply(): FileHash = {
     val __obj = js.Dynamic.literal()
-    if (hashType != null) __obj.updateDynamic("hashType")(hashType.asInstanceOf[js.Any])
-    if (hashValue != null) __obj.updateDynamic("hashValue")(hashValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileHash]
   }
+  
+  extension [Self <: FileHash](x: Self) {
+    
+    inline def setHashType(value: NullableOption[FileHashType]): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
+    
+    inline def setHashTypeNull: Self = StObject.set(x, "hashType", null)
+    
+    inline def setHashTypeUndefined: Self = StObject.set(x, "hashType", js.undefined)
+    
+    inline def setHashValue(value: NullableOption[String]): Self = StObject.set(x, "hashValue", value.asInstanceOf[js.Any])
+    
+    inline def setHashValueNull: Self = StObject.set(x, "hashValue", null)
+    
+    inline def setHashValueUndefined: Self = StObject.set(x, "hashValue", js.undefined)
+  }
 }
-

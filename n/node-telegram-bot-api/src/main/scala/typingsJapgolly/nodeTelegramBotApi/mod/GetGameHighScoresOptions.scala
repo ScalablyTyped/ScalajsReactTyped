@@ -1,23 +1,36 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetGameHighScoresOptions extends js.Object {
+trait GetGameHighScoresOptions extends StObject {
+  
   var chat_id: js.UndefOr[Double] = js.undefined
+  
   var inline_message_id: js.UndefOr[String] = js.undefined
+  
   var message_id: js.UndefOr[Double] = js.undefined
 }
-
 object GetGameHighScoresOptions {
-  @scala.inline
-  def apply(chat_id: Int | Double = null, inline_message_id: String = null, message_id: Int | Double = null): GetGameHighScoresOptions = {
+  
+  inline def apply(): GetGameHighScoresOptions = {
     val __obj = js.Dynamic.literal()
-    if (chat_id != null) __obj.updateDynamic("chat_id")(chat_id.asInstanceOf[js.Any])
-    if (inline_message_id != null) __obj.updateDynamic("inline_message_id")(inline_message_id.asInstanceOf[js.Any])
-    if (message_id != null) __obj.updateDynamic("message_id")(message_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGameHighScoresOptions]
   }
+  
+  extension [Self <: GetGameHighScoresOptions](x: Self) {
+    
+    inline def setChat_id(value: Double): Self = StObject.set(x, "chat_id", value.asInstanceOf[js.Any])
+    
+    inline def setChat_idUndefined: Self = StObject.set(x, "chat_id", js.undefined)
+    
+    inline def setInline_message_id(value: String): Self = StObject.set(x, "inline_message_id", value.asInstanceOf[js.Any])
+    
+    inline def setInline_message_idUndefined: Self = StObject.set(x, "inline_message_id", js.undefined)
+    
+    inline def setMessage_id(value: Double): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
+    
+    inline def setMessage_idUndefined: Self = StObject.set(x, "message_id", js.undefined)
+  }
 }
-

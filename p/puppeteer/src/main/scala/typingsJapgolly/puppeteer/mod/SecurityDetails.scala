@@ -1,39 +1,45 @@
 package typingsJapgolly.puppeteer.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SecurityDetails extends js.Object {
-  /** A string with the name of issuer of the certificate. (e.g. "Let's Encrypt Authority X3"). */
-  def issuer(): String
-  /** String with the security protocol (e.g. TLS 1.2). */
-  def protocol(): String
-  /** Name of the subject to which the certificate was issued to (e.g. "www.example.com"). */
-  def subjectName(): String
-  /** Timestamp stating the start of validity of the certificate. */
-  def validFrom(): Double
-  /** Timestamp stating the end of validity of the certificate. */
-  def validTo(): Double
+@JSImport("puppeteer", "SecurityDetails")
+@js.native
+open class SecurityDetails () extends StObject {
+  
+  /* Excluded from this release type: __constructor */
+  /**
+    * @returns The name of the issuer of the certificate.
+    */
+  def issuer(): String = js.native
+  
+  /* private */ var `private`: Any = js.native
+  
+  /**
+    * @returns The security protocol being used, e.g. "TLS 1.2".
+    */
+  def protocol(): String = js.native
+  
+  /**
+    * @returns The list of {@link https://en.wikipedia.org/wiki/Subject_Alternative_Name | subject alternative names (SANs)} of the certificate.
+    */
+  def subjectAlternativeNames(): js.Array[String] = js.native
+  
+  /**
+    * @returns The name of the subject to which the certificate was issued.
+    */
+  def subjectName(): String = js.native
+  
+  /**
+    * @returns {@link https://en.wikipedia.org/wiki/Unix_time | Unix timestamp}
+    * marking the start of the certificate's validity.
+    */
+  def validFrom(): Double = js.native
+  
+  /**
+    * @returns {@link https://en.wikipedia.org/wiki/Unix_time | Unix timestamp}
+    * marking the end of the certificate's validity.
+    */
+  def validTo(): Double = js.native
 }
-
-object SecurityDetails {
-  @scala.inline
-  def apply(
-    issuer: CallbackTo[String],
-    protocol: CallbackTo[String],
-    subjectName: CallbackTo[String],
-    validFrom: CallbackTo[Double],
-    validTo: CallbackTo[Double]
-  ): SecurityDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("issuer")(issuer.toJsFn)
-    __obj.updateDynamic("protocol")(protocol.toJsFn)
-    __obj.updateDynamic("subjectName")(subjectName.toJsFn)
-    __obj.updateDynamic("validFrom")(validFrom.toJsFn)
-    __obj.updateDynamic("validTo")(validTo.toJsFn)
-    __obj.asInstanceOf[SecurityDetails]
-  }
-}
-

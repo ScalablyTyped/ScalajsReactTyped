@@ -1,71 +1,95 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SortCriteria...
   */
-trait ISortCriteria extends js.Object {
+trait ISortCriteria extends StObject {
+  
   /**
     * Sort by expression.
     */
   var qExpression: js.UndefOr[IValueExpr] = js.undefined
+  
   /**
     * Sorts the field by alphabetical order.
     */
   var qSortByAscii: js.UndefOr[TypeSortDirection] = js.undefined
+  
   /**
     * Sorts the field by expression.
     */
   var qSortByExpression: js.UndefOr[TypeSortDirection] = js.undefined
+  
   /**
     * Sorts the field values by frequency
     * (number of occurrences in the field).
     */
   var qSortByFrequency: js.UndefOr[TypeSortDirection] = js.undefined
+  
   /**
     * no / empty docu
     */
   var qSortByGreyness: js.UndefOr[TypeSortDirection] = js.undefined
+  
   /**
     * Sorts the field values by the initial load order.
     */
   var qSortByLoadOrder: js.UndefOr[TypeSortDirection] = js.undefined
+  
   /**
     * Sorts the field values by numeric value.
     */
   var qSortByNumeric: js.UndefOr[TypeSortDirection] = js.undefined
+  
   /**
     * Sorts the field values according to their logical state
     * (selected, optional, alternative or excluded).
     */
   var qSortByState: js.UndefOr[TypeSortDirection] = js.undefined
 }
-
 object ISortCriteria {
-  @scala.inline
-  def apply(
-    qExpression: IValueExpr = null,
-    qSortByAscii: TypeSortDirection = null,
-    qSortByExpression: TypeSortDirection = null,
-    qSortByFrequency: TypeSortDirection = null,
-    qSortByGreyness: TypeSortDirection = null,
-    qSortByLoadOrder: TypeSortDirection = null,
-    qSortByNumeric: TypeSortDirection = null,
-    qSortByState: TypeSortDirection = null
-  ): ISortCriteria = {
+  
+  inline def apply(): ISortCriteria = {
     val __obj = js.Dynamic.literal()
-    if (qExpression != null) __obj.updateDynamic("qExpression")(qExpression.asInstanceOf[js.Any])
-    if (qSortByAscii != null) __obj.updateDynamic("qSortByAscii")(qSortByAscii.asInstanceOf[js.Any])
-    if (qSortByExpression != null) __obj.updateDynamic("qSortByExpression")(qSortByExpression.asInstanceOf[js.Any])
-    if (qSortByFrequency != null) __obj.updateDynamic("qSortByFrequency")(qSortByFrequency.asInstanceOf[js.Any])
-    if (qSortByGreyness != null) __obj.updateDynamic("qSortByGreyness")(qSortByGreyness.asInstanceOf[js.Any])
-    if (qSortByLoadOrder != null) __obj.updateDynamic("qSortByLoadOrder")(qSortByLoadOrder.asInstanceOf[js.Any])
-    if (qSortByNumeric != null) __obj.updateDynamic("qSortByNumeric")(qSortByNumeric.asInstanceOf[js.Any])
-    if (qSortByState != null) __obj.updateDynamic("qSortByState")(qSortByState.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISortCriteria]
   }
+  
+  extension [Self <: ISortCriteria](x: Self) {
+    
+    inline def setQExpression(value: IValueExpr): Self = StObject.set(x, "qExpression", value.asInstanceOf[js.Any])
+    
+    inline def setQExpressionUndefined: Self = StObject.set(x, "qExpression", js.undefined)
+    
+    inline def setQSortByAscii(value: TypeSortDirection): Self = StObject.set(x, "qSortByAscii", value.asInstanceOf[js.Any])
+    
+    inline def setQSortByAsciiUndefined: Self = StObject.set(x, "qSortByAscii", js.undefined)
+    
+    inline def setQSortByExpression(value: TypeSortDirection): Self = StObject.set(x, "qSortByExpression", value.asInstanceOf[js.Any])
+    
+    inline def setQSortByExpressionUndefined: Self = StObject.set(x, "qSortByExpression", js.undefined)
+    
+    inline def setQSortByFrequency(value: TypeSortDirection): Self = StObject.set(x, "qSortByFrequency", value.asInstanceOf[js.Any])
+    
+    inline def setQSortByFrequencyUndefined: Self = StObject.set(x, "qSortByFrequency", js.undefined)
+    
+    inline def setQSortByGreyness(value: TypeSortDirection): Self = StObject.set(x, "qSortByGreyness", value.asInstanceOf[js.Any])
+    
+    inline def setQSortByGreynessUndefined: Self = StObject.set(x, "qSortByGreyness", js.undefined)
+    
+    inline def setQSortByLoadOrder(value: TypeSortDirection): Self = StObject.set(x, "qSortByLoadOrder", value.asInstanceOf[js.Any])
+    
+    inline def setQSortByLoadOrderUndefined: Self = StObject.set(x, "qSortByLoadOrder", js.undefined)
+    
+    inline def setQSortByNumeric(value: TypeSortDirection): Self = StObject.set(x, "qSortByNumeric", value.asInstanceOf[js.Any])
+    
+    inline def setQSortByNumericUndefined: Self = StObject.set(x, "qSortByNumeric", js.undefined)
+    
+    inline def setQSortByState(value: TypeSortDirection): Self = StObject.set(x, "qSortByState", value.asInstanceOf[js.Any])
+    
+    inline def setQSortByStateUndefined: Self = StObject.set(x, "qSortByState", js.undefined)
+  }
 }
-

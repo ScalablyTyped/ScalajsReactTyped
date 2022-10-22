@@ -1,444 +1,356 @@
 package typingsJapgolly.activexMshtml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexMshtmlStrings {
-  @js.native
-  sealed trait description extends js.Object
   
   @js.native
-  sealed trait eventData extends js.Object
+  sealed trait description extends StObject
+  inline def description: description = "description".asInstanceOf[description]
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait eventData extends StObject
+  inline def eventData: eventData = "eventData".asInstanceOf[eventData]
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait line extends StObject
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait onabort extends js.Object
+  sealed trait name extends StObject
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait onactivate extends js.Object
+  sealed trait onabort extends StObject
+  inline def onabort: onabort = "onabort".asInstanceOf[onabort]
   
   @js.native
-  sealed trait onafterprint extends js.Object
+  sealed trait onactivate extends StObject
+  inline def onactivate: onactivate = "onactivate".asInstanceOf[onactivate]
   
   @js.native
-  sealed trait onafterupdate extends js.Object
+  sealed trait onafterprint extends StObject
+  inline def onafterprint: onafterprint = "onafterprint".asInstanceOf[onafterprint]
   
   @js.native
-  sealed trait onbeforeactivate extends js.Object
+  sealed trait onafterupdate extends StObject
+  inline def onafterupdate: onafterupdate = "onafterupdate".asInstanceOf[onafterupdate]
   
   @js.native
-  sealed trait onbeforecopy extends js.Object
+  sealed trait onbeforeactivate extends StObject
+  inline def onbeforeactivate: onbeforeactivate = "onbeforeactivate".asInstanceOf[onbeforeactivate]
   
   @js.native
-  sealed trait onbeforecut extends js.Object
+  sealed trait onbeforecopy extends StObject
+  inline def onbeforecopy: onbeforecopy = "onbeforecopy".asInstanceOf[onbeforecopy]
   
   @js.native
-  sealed trait onbeforedeactivate extends js.Object
+  sealed trait onbeforecut extends StObject
+  inline def onbeforecut: onbeforecut = "onbeforecut".asInstanceOf[onbeforecut]
   
   @js.native
-  sealed trait onbeforeeditfocus extends js.Object
+  sealed trait onbeforedeactivate extends StObject
+  inline def onbeforedeactivate: onbeforedeactivate = "onbeforedeactivate".asInstanceOf[onbeforedeactivate]
   
   @js.native
-  sealed trait onbeforepaste extends js.Object
+  sealed trait onbeforeeditfocus extends StObject
+  inline def onbeforeeditfocus: onbeforeeditfocus = "onbeforeeditfocus".asInstanceOf[onbeforeeditfocus]
   
   @js.native
-  sealed trait onbeforeprint extends js.Object
+  sealed trait onbeforepaste extends StObject
+  inline def onbeforepaste: onbeforepaste = "onbeforepaste".asInstanceOf[onbeforepaste]
   
   @js.native
-  sealed trait onbeforeunload extends js.Object
+  sealed trait onbeforeprint extends StObject
+  inline def onbeforeprint: onbeforeprint = "onbeforeprint".asInstanceOf[onbeforeprint]
   
   @js.native
-  sealed trait onbeforeupdate extends js.Object
+  sealed trait onbeforeunload extends StObject
+  inline def onbeforeunload: onbeforeunload = "onbeforeunload".asInstanceOf[onbeforeunload]
   
   @js.native
-  sealed trait onblur extends js.Object
+  sealed trait onbeforeupdate extends StObject
+  inline def onbeforeupdate: onbeforeupdate = "onbeforeupdate".asInstanceOf[onbeforeupdate]
   
   @js.native
-  sealed trait onbounce extends js.Object
+  sealed trait onblur extends StObject
+  inline def onblur: onblur = "onblur".asInstanceOf[onblur]
   
   @js.native
-  sealed trait oncellchange extends js.Object
+  sealed trait onbounce extends StObject
+  inline def onbounce: onbounce = "onbounce".asInstanceOf[onbounce]
   
   @js.native
-  sealed trait onchange extends js.Object
+  sealed trait oncellchange extends StObject
+  inline def oncellchange: oncellchange = "oncellchange".asInstanceOf[oncellchange]
   
   @js.native
-  sealed trait onclick extends js.Object
+  sealed trait onchange extends StObject
+  inline def onchange: onchange = "onchange".asInstanceOf[onchange]
   
   @js.native
-  sealed trait oncontextmenu extends js.Object
+  sealed trait onclick extends StObject
+  inline def onclick: onclick = "onclick".asInstanceOf[onclick]
   
   @js.native
-  sealed trait oncontrolselect extends js.Object
+  sealed trait oncontextmenu extends StObject
+  inline def oncontextmenu: oncontextmenu = "oncontextmenu".asInstanceOf[oncontextmenu]
   
   @js.native
-  sealed trait oncopy extends js.Object
+  sealed trait oncontrolselect extends StObject
+  inline def oncontrolselect: oncontrolselect = "oncontrolselect".asInstanceOf[oncontrolselect]
   
   @js.native
-  sealed trait oncut extends js.Object
+  sealed trait oncopy extends StObject
+  inline def oncopy: oncopy = "oncopy".asInstanceOf[oncopy]
   
   @js.native
-  sealed trait ondataavailable extends js.Object
+  sealed trait oncut extends StObject
+  inline def oncut: oncut = "oncut".asInstanceOf[oncut]
   
   @js.native
-  sealed trait ondatasetchanged extends js.Object
+  sealed trait ondataavailable extends StObject
+  inline def ondataavailable: ondataavailable = "ondataavailable".asInstanceOf[ondataavailable]
   
   @js.native
-  sealed trait ondatasetcomplete extends js.Object
+  sealed trait ondatasetchanged extends StObject
+  inline def ondatasetchanged: ondatasetchanged = "ondatasetchanged".asInstanceOf[ondatasetchanged]
   
   @js.native
-  sealed trait ondblclick extends js.Object
+  sealed trait ondatasetcomplete extends StObject
+  inline def ondatasetcomplete: ondatasetcomplete = "ondatasetcomplete".asInstanceOf[ondatasetcomplete]
   
   @js.native
-  sealed trait ondeactivate extends js.Object
+  sealed trait ondblclick extends StObject
+  inline def ondblclick: ondblclick = "ondblclick".asInstanceOf[ondblclick]
   
   @js.native
-  sealed trait ondrag extends js.Object
+  sealed trait ondeactivate extends StObject
+  inline def ondeactivate: ondeactivate = "ondeactivate".asInstanceOf[ondeactivate]
   
   @js.native
-  sealed trait ondragend extends js.Object
+  sealed trait ondrag extends StObject
+  inline def ondrag: ondrag = "ondrag".asInstanceOf[ondrag]
   
   @js.native
-  sealed trait ondragenter extends js.Object
+  sealed trait ondragend extends StObject
+  inline def ondragend: ondragend = "ondragend".asInstanceOf[ondragend]
   
   @js.native
-  sealed trait ondragleave extends js.Object
+  sealed trait ondragenter extends StObject
+  inline def ondragenter: ondragenter = "ondragenter".asInstanceOf[ondragenter]
   
   @js.native
-  sealed trait ondragover extends js.Object
+  sealed trait ondragleave extends StObject
+  inline def ondragleave: ondragleave = "ondragleave".asInstanceOf[ondragleave]
   
   @js.native
-  sealed trait ondragstart extends js.Object
+  sealed trait ondragover extends StObject
+  inline def ondragover: ondragover = "ondragover".asInstanceOf[ondragover]
   
   @js.native
-  sealed trait ondrop extends js.Object
+  sealed trait ondragstart extends StObject
+  inline def ondragstart: ondragstart = "ondragstart".asInstanceOf[ondragstart]
   
   @js.native
-  sealed trait onerror extends js.Object
+  sealed trait ondrop extends StObject
+  inline def ondrop: ondrop = "ondrop".asInstanceOf[ondrop]
   
   @js.native
-  sealed trait onerrorupdate extends js.Object
+  sealed trait onerror extends StObject
+  inline def onerror: onerror = "onerror".asInstanceOf[onerror]
   
   @js.native
-  sealed trait onfilterchange extends js.Object
+  sealed trait onerrorupdate extends StObject
+  inline def onerrorupdate: onerrorupdate = "onerrorupdate".asInstanceOf[onerrorupdate]
   
   @js.native
-  sealed trait onfinish extends js.Object
+  sealed trait onfilterchange extends StObject
+  inline def onfilterchange: onfilterchange = "onfilterchange".asInstanceOf[onfilterchange]
   
   @js.native
-  sealed trait onfocus extends js.Object
+  sealed trait onfinish extends StObject
+  inline def onfinish: onfinish = "onfinish".asInstanceOf[onfinish]
   
   @js.native
-  sealed trait onfocusin extends js.Object
+  sealed trait onfocus extends StObject
+  inline def onfocus: onfocus = "onfocus".asInstanceOf[onfocus]
   
   @js.native
-  sealed trait onfocusout extends js.Object
+  sealed trait onfocusin extends StObject
+  inline def onfocusin: onfocusin = "onfocusin".asInstanceOf[onfocusin]
   
   @js.native
-  sealed trait onhelp extends js.Object
+  sealed trait onfocusout extends StObject
+  inline def onfocusout: onfocusout = "onfocusout".asInstanceOf[onfocusout]
   
   @js.native
-  sealed trait onkeydown extends js.Object
+  sealed trait onhelp extends StObject
+  inline def onhelp: onhelp = "onhelp".asInstanceOf[onhelp]
   
   @js.native
-  sealed trait onkeypress extends js.Object
+  sealed trait onkeydown extends StObject
+  inline def onkeydown: onkeydown = "onkeydown".asInstanceOf[onkeydown]
   
   @js.native
-  sealed trait onkeyup extends js.Object
+  sealed trait onkeypress extends StObject
+  inline def onkeypress: onkeypress = "onkeypress".asInstanceOf[onkeypress]
   
   @js.native
-  sealed trait onlayoutcomplete extends js.Object
+  sealed trait onkeyup extends StObject
+  inline def onkeyup: onkeyup = "onkeyup".asInstanceOf[onkeyup]
   
   @js.native
-  sealed trait onload extends js.Object
+  sealed trait onlayoutcomplete extends StObject
+  inline def onlayoutcomplete: onlayoutcomplete = "onlayoutcomplete".asInstanceOf[onlayoutcomplete]
   
   @js.native
-  sealed trait onlosecapture extends js.Object
+  sealed trait onload extends StObject
+  inline def onload: onload = "onload".asInstanceOf[onload]
   
   @js.native
-  sealed trait onmousedown extends js.Object
+  sealed trait onlosecapture extends StObject
+  inline def onlosecapture: onlosecapture = "onlosecapture".asInstanceOf[onlosecapture]
   
   @js.native
-  sealed trait onmouseenter extends js.Object
+  sealed trait onmousedown extends StObject
+  inline def onmousedown: onmousedown = "onmousedown".asInstanceOf[onmousedown]
   
   @js.native
-  sealed trait onmouseleave extends js.Object
+  sealed trait onmouseenter extends StObject
+  inline def onmouseenter: onmouseenter = "onmouseenter".asInstanceOf[onmouseenter]
   
   @js.native
-  sealed trait onmousemove extends js.Object
+  sealed trait onmouseleave extends StObject
+  inline def onmouseleave: onmouseleave = "onmouseleave".asInstanceOf[onmouseleave]
   
   @js.native
-  sealed trait onmouseout extends js.Object
+  sealed trait onmousemove extends StObject
+  inline def onmousemove: onmousemove = "onmousemove".asInstanceOf[onmousemove]
   
   @js.native
-  sealed trait onmouseover extends js.Object
+  sealed trait onmouseout extends StObject
+  inline def onmouseout: onmouseout = "onmouseout".asInstanceOf[onmouseout]
   
   @js.native
-  sealed trait onmouseup extends js.Object
+  sealed trait onmouseover extends StObject
+  inline def onmouseover: onmouseover = "onmouseover".asInstanceOf[onmouseover]
   
   @js.native
-  sealed trait onmousewheel extends js.Object
+  sealed trait onmouseup extends StObject
+  inline def onmouseup: onmouseup = "onmouseup".asInstanceOf[onmouseup]
   
   @js.native
-  sealed trait onmove extends js.Object
+  sealed trait onmousewheel extends StObject
+  inline def onmousewheel: onmousewheel = "onmousewheel".asInstanceOf[onmousewheel]
   
   @js.native
-  sealed trait onmoveend extends js.Object
+  sealed trait onmove extends StObject
+  inline def onmove: onmove = "onmove".asInstanceOf[onmove]
   
   @js.native
-  sealed trait onmovestart extends js.Object
+  sealed trait onmoveend extends StObject
+  inline def onmoveend: onmoveend = "onmoveend".asInstanceOf[onmoveend]
   
   @js.native
-  sealed trait onpage extends js.Object
+  sealed trait onmovestart extends StObject
+  inline def onmovestart: onmovestart = "onmovestart".asInstanceOf[onmovestart]
   
   @js.native
-  sealed trait onpaste extends js.Object
+  sealed trait onpage extends StObject
+  inline def onpage: onpage = "onpage".asInstanceOf[onpage]
   
   @js.native
-  sealed trait onpropertychange extends js.Object
+  sealed trait onpaste extends StObject
+  inline def onpaste: onpaste = "onpaste".asInstanceOf[onpaste]
   
   @js.native
-  sealed trait onreadystatechange extends js.Object
+  sealed trait onpropertychange extends StObject
+  inline def onpropertychange: onpropertychange = "onpropertychange".asInstanceOf[onpropertychange]
   
   @js.native
-  sealed trait onreset extends js.Object
+  sealed trait onreadystatechange extends StObject
+  inline def onreadystatechange: onreadystatechange = "onreadystatechange".asInstanceOf[onreadystatechange]
   
   @js.native
-  sealed trait onresize extends js.Object
+  sealed trait onreset extends StObject
+  inline def onreset: onreset = "onreset".asInstanceOf[onreset]
   
   @js.native
-  sealed trait onresizeend extends js.Object
+  sealed trait onresize extends StObject
+  inline def onresize: onresize = "onresize".asInstanceOf[onresize]
   
   @js.native
-  sealed trait onresizestart extends js.Object
+  sealed trait onresizeend extends StObject
+  inline def onresizeend: onresizeend = "onresizeend".asInstanceOf[onresizeend]
   
   @js.native
-  sealed trait onrowenter extends js.Object
+  sealed trait onresizestart extends StObject
+  inline def onresizestart: onresizestart = "onresizestart".asInstanceOf[onresizestart]
   
   @js.native
-  sealed trait onrowexit extends js.Object
+  sealed trait onrowenter extends StObject
+  inline def onrowenter: onrowenter = "onrowenter".asInstanceOf[onrowenter]
   
   @js.native
-  sealed trait onrowsdelete extends js.Object
+  sealed trait onrowexit extends StObject
+  inline def onrowexit: onrowexit = "onrowexit".asInstanceOf[onrowexit]
   
   @js.native
-  sealed trait onrowsinserted extends js.Object
+  sealed trait onrowsdelete extends StObject
+  inline def onrowsdelete: onrowsdelete = "onrowsdelete".asInstanceOf[onrowsdelete]
   
   @js.native
-  sealed trait onscriptletevent extends js.Object
+  sealed trait onrowsinserted extends StObject
+  inline def onrowsinserted: onrowsinserted = "onrowsinserted".asInstanceOf[onrowsinserted]
   
   @js.native
-  sealed trait onscroll extends js.Object
+  sealed trait onscriptletevent extends StObject
+  inline def onscriptletevent: onscriptletevent = "onscriptletevent".asInstanceOf[onscriptletevent]
   
   @js.native
-  sealed trait onselect extends js.Object
+  sealed trait onscroll extends StObject
+  inline def onscroll: onscroll = "onscroll".asInstanceOf[onscroll]
   
   @js.native
-  sealed trait onselectionchange extends js.Object
+  sealed trait onselect extends StObject
+  inline def onselect: onselect = "onselect".asInstanceOf[onselect]
   
   @js.native
-  sealed trait onselectstart extends js.Object
+  sealed trait onselectionchange extends StObject
+  inline def onselectionchange: onselectionchange = "onselectionchange".asInstanceOf[onselectionchange]
   
   @js.native
-  sealed trait onstart extends js.Object
+  sealed trait onselectstart extends StObject
+  inline def onselectstart: onselectstart = "onselectstart".asInstanceOf[onselectstart]
   
   @js.native
-  sealed trait onstop extends js.Object
+  sealed trait onstart extends StObject
+  inline def onstart: onstart = "onstart".asInstanceOf[onstart]
   
   @js.native
-  sealed trait onsubmit extends js.Object
+  sealed trait onstop extends StObject
+  inline def onstop: onstop = "onstop".asInstanceOf[onstop]
   
   @js.native
-  sealed trait ontimeout extends js.Object
+  sealed trait onsubmit extends StObject
+  inline def onsubmit: onsubmit = "onsubmit".asInstanceOf[onsubmit]
   
   @js.native
-  sealed trait onunload extends js.Object
+  sealed trait ontimeout extends StObject
+  inline def ontimeout: ontimeout = "ontimeout".asInstanceOf[ontimeout]
   
   @js.native
-  sealed trait pEvtObj extends js.Object
+  sealed trait onunload extends StObject
+  inline def onunload: onunload = "onunload".asInstanceOf[onunload]
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait pEvtObj extends StObject
+  inline def pEvtObj: pEvtObj = "pEvtObj".asInstanceOf[pEvtObj]
   
-  @scala.inline
-  def description: description = "description".asInstanceOf[description]
-  @scala.inline
-  def eventData: eventData = "eventData".asInstanceOf[eventData]
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def onabort: onabort = "onabort".asInstanceOf[onabort]
-  @scala.inline
-  def onactivate: onactivate = "onactivate".asInstanceOf[onactivate]
-  @scala.inline
-  def onafterprint: onafterprint = "onafterprint".asInstanceOf[onafterprint]
-  @scala.inline
-  def onafterupdate: onafterupdate = "onafterupdate".asInstanceOf[onafterupdate]
-  @scala.inline
-  def onbeforeactivate: onbeforeactivate = "onbeforeactivate".asInstanceOf[onbeforeactivate]
-  @scala.inline
-  def onbeforecopy: onbeforecopy = "onbeforecopy".asInstanceOf[onbeforecopy]
-  @scala.inline
-  def onbeforecut: onbeforecut = "onbeforecut".asInstanceOf[onbeforecut]
-  @scala.inline
-  def onbeforedeactivate: onbeforedeactivate = "onbeforedeactivate".asInstanceOf[onbeforedeactivate]
-  @scala.inline
-  def onbeforeeditfocus: onbeforeeditfocus = "onbeforeeditfocus".asInstanceOf[onbeforeeditfocus]
-  @scala.inline
-  def onbeforepaste: onbeforepaste = "onbeforepaste".asInstanceOf[onbeforepaste]
-  @scala.inline
-  def onbeforeprint: onbeforeprint = "onbeforeprint".asInstanceOf[onbeforeprint]
-  @scala.inline
-  def onbeforeunload: onbeforeunload = "onbeforeunload".asInstanceOf[onbeforeunload]
-  @scala.inline
-  def onbeforeupdate: onbeforeupdate = "onbeforeupdate".asInstanceOf[onbeforeupdate]
-  @scala.inline
-  def onblur: onblur = "onblur".asInstanceOf[onblur]
-  @scala.inline
-  def onbounce: onbounce = "onbounce".asInstanceOf[onbounce]
-  @scala.inline
-  def oncellchange: oncellchange = "oncellchange".asInstanceOf[oncellchange]
-  @scala.inline
-  def onchange: onchange = "onchange".asInstanceOf[onchange]
-  @scala.inline
-  def onclick: onclick = "onclick".asInstanceOf[onclick]
-  @scala.inline
-  def oncontextmenu: oncontextmenu = "oncontextmenu".asInstanceOf[oncontextmenu]
-  @scala.inline
-  def oncontrolselect: oncontrolselect = "oncontrolselect".asInstanceOf[oncontrolselect]
-  @scala.inline
-  def oncopy: oncopy = "oncopy".asInstanceOf[oncopy]
-  @scala.inline
-  def oncut: oncut = "oncut".asInstanceOf[oncut]
-  @scala.inline
-  def ondataavailable: ondataavailable = "ondataavailable".asInstanceOf[ondataavailable]
-  @scala.inline
-  def ondatasetchanged: ondatasetchanged = "ondatasetchanged".asInstanceOf[ondatasetchanged]
-  @scala.inline
-  def ondatasetcomplete: ondatasetcomplete = "ondatasetcomplete".asInstanceOf[ondatasetcomplete]
-  @scala.inline
-  def ondblclick: ondblclick = "ondblclick".asInstanceOf[ondblclick]
-  @scala.inline
-  def ondeactivate: ondeactivate = "ondeactivate".asInstanceOf[ondeactivate]
-  @scala.inline
-  def ondrag: ondrag = "ondrag".asInstanceOf[ondrag]
-  @scala.inline
-  def ondragend: ondragend = "ondragend".asInstanceOf[ondragend]
-  @scala.inline
-  def ondragenter: ondragenter = "ondragenter".asInstanceOf[ondragenter]
-  @scala.inline
-  def ondragleave: ondragleave = "ondragleave".asInstanceOf[ondragleave]
-  @scala.inline
-  def ondragover: ondragover = "ondragover".asInstanceOf[ondragover]
-  @scala.inline
-  def ondragstart: ondragstart = "ondragstart".asInstanceOf[ondragstart]
-  @scala.inline
-  def ondrop: ondrop = "ondrop".asInstanceOf[ondrop]
-  @scala.inline
-  def onerror: onerror = "onerror".asInstanceOf[onerror]
-  @scala.inline
-  def onerrorupdate: onerrorupdate = "onerrorupdate".asInstanceOf[onerrorupdate]
-  @scala.inline
-  def onfilterchange: onfilterchange = "onfilterchange".asInstanceOf[onfilterchange]
-  @scala.inline
-  def onfinish: onfinish = "onfinish".asInstanceOf[onfinish]
-  @scala.inline
-  def onfocus: onfocus = "onfocus".asInstanceOf[onfocus]
-  @scala.inline
-  def onfocusin: onfocusin = "onfocusin".asInstanceOf[onfocusin]
-  @scala.inline
-  def onfocusout: onfocusout = "onfocusout".asInstanceOf[onfocusout]
-  @scala.inline
-  def onhelp: onhelp = "onhelp".asInstanceOf[onhelp]
-  @scala.inline
-  def onkeydown: onkeydown = "onkeydown".asInstanceOf[onkeydown]
-  @scala.inline
-  def onkeypress: onkeypress = "onkeypress".asInstanceOf[onkeypress]
-  @scala.inline
-  def onkeyup: onkeyup = "onkeyup".asInstanceOf[onkeyup]
-  @scala.inline
-  def onlayoutcomplete: onlayoutcomplete = "onlayoutcomplete".asInstanceOf[onlayoutcomplete]
-  @scala.inline
-  def onload: onload = "onload".asInstanceOf[onload]
-  @scala.inline
-  def onlosecapture: onlosecapture = "onlosecapture".asInstanceOf[onlosecapture]
-  @scala.inline
-  def onmousedown: onmousedown = "onmousedown".asInstanceOf[onmousedown]
-  @scala.inline
-  def onmouseenter: onmouseenter = "onmouseenter".asInstanceOf[onmouseenter]
-  @scala.inline
-  def onmouseleave: onmouseleave = "onmouseleave".asInstanceOf[onmouseleave]
-  @scala.inline
-  def onmousemove: onmousemove = "onmousemove".asInstanceOf[onmousemove]
-  @scala.inline
-  def onmouseout: onmouseout = "onmouseout".asInstanceOf[onmouseout]
-  @scala.inline
-  def onmouseover: onmouseover = "onmouseover".asInstanceOf[onmouseover]
-  @scala.inline
-  def onmouseup: onmouseup = "onmouseup".asInstanceOf[onmouseup]
-  @scala.inline
-  def onmousewheel: onmousewheel = "onmousewheel".asInstanceOf[onmousewheel]
-  @scala.inline
-  def onmove: onmove = "onmove".asInstanceOf[onmove]
-  @scala.inline
-  def onmoveend: onmoveend = "onmoveend".asInstanceOf[onmoveend]
-  @scala.inline
-  def onmovestart: onmovestart = "onmovestart".asInstanceOf[onmovestart]
-  @scala.inline
-  def onpage: onpage = "onpage".asInstanceOf[onpage]
-  @scala.inline
-  def onpaste: onpaste = "onpaste".asInstanceOf[onpaste]
-  @scala.inline
-  def onpropertychange: onpropertychange = "onpropertychange".asInstanceOf[onpropertychange]
-  @scala.inline
-  def onreadystatechange: onreadystatechange = "onreadystatechange".asInstanceOf[onreadystatechange]
-  @scala.inline
-  def onreset: onreset = "onreset".asInstanceOf[onreset]
-  @scala.inline
-  def onresize: onresize = "onresize".asInstanceOf[onresize]
-  @scala.inline
-  def onresizeend: onresizeend = "onresizeend".asInstanceOf[onresizeend]
-  @scala.inline
-  def onresizestart: onresizestart = "onresizestart".asInstanceOf[onresizestart]
-  @scala.inline
-  def onrowenter: onrowenter = "onrowenter".asInstanceOf[onrowenter]
-  @scala.inline
-  def onrowexit: onrowexit = "onrowexit".asInstanceOf[onrowexit]
-  @scala.inline
-  def onrowsdelete: onrowsdelete = "onrowsdelete".asInstanceOf[onrowsdelete]
-  @scala.inline
-  def onrowsinserted: onrowsinserted = "onrowsinserted".asInstanceOf[onrowsinserted]
-  @scala.inline
-  def onscriptletevent: onscriptletevent = "onscriptletevent".asInstanceOf[onscriptletevent]
-  @scala.inline
-  def onscroll: onscroll = "onscroll".asInstanceOf[onscroll]
-  @scala.inline
-  def onselect: onselect = "onselect".asInstanceOf[onselect]
-  @scala.inline
-  def onselectionchange: onselectionchange = "onselectionchange".asInstanceOf[onselectionchange]
-  @scala.inline
-  def onselectstart: onselectstart = "onselectstart".asInstanceOf[onselectstart]
-  @scala.inline
-  def onstart: onstart = "onstart".asInstanceOf[onstart]
-  @scala.inline
-  def onstop: onstop = "onstop".asInstanceOf[onstop]
-  @scala.inline
-  def onsubmit: onsubmit = "onsubmit".asInstanceOf[onsubmit]
-  @scala.inline
-  def ontimeout: ontimeout = "ontimeout".asInstanceOf[ontimeout]
-  @scala.inline
-  def onunload: onunload = "onunload".asInstanceOf[onunload]
-  @scala.inline
-  def pEvtObj: pEvtObj = "pEvtObj".asInstanceOf[pEvtObj]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  @js.native
+  sealed trait url extends StObject
+  inline def url: url = "url".asInstanceOf[url]
 }
-

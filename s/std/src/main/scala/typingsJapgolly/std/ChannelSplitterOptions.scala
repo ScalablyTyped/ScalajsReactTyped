@@ -1,27 +1,27 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChannelSplitterOptions extends AudioNodeOptions {
+trait ChannelSplitterOptions
+  extends StObject
+     with AudioNodeOptions {
+  
+  /* standard dom */
   var numberOfOutputs: js.UndefOr[Double] = js.undefined
 }
-
 object ChannelSplitterOptions {
-  @scala.inline
-  def apply(
-    channelCount: Int | Double = null,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    numberOfOutputs: Int | Double = null
-  ): ChannelSplitterOptions = {
+  
+  inline def apply(): ChannelSplitterOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (numberOfOutputs != null) __obj.updateDynamic("numberOfOutputs")(numberOfOutputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelSplitterOptions]
   }
+  
+  extension [Self <: ChannelSplitterOptions](x: Self) {
+    
+    inline def setNumberOfOutputs(value: Double): Self = StObject.set(x, "numberOfOutputs", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfOutputsUndefined: Self = StObject.set(x, "numberOfOutputs", js.undefined)
+  }
 }
-

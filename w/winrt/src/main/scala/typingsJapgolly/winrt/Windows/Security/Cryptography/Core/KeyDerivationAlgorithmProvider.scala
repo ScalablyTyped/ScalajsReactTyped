@@ -1,23 +1,17 @@
 package typingsJapgolly.winrt.Windows.Security.Cryptography.Core
 
 import typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider")
-@js.native
-class KeyDerivationAlgorithmProvider () extends IKeyDerivationAlgorithmProvider {
-  /* CompleteClass */
-  override var algorithmName: String = js.native
-  /* CompleteClass */
-  override def createKey(keyMaterial: IBuffer): CryptographicKey = js.native
+trait KeyDerivationAlgorithmProvider
+  extends StObject
+     with IKeyDerivationAlgorithmProvider
+object KeyDerivationAlgorithmProvider {
+  
+  inline def apply(algorithmName: String, createKey: IBuffer => CryptographicKey): KeyDerivationAlgorithmProvider = {
+    val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], createKey = js.Any.fromFunction1(createKey))
+    __obj.asInstanceOf[KeyDerivationAlgorithmProvider]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider")
-@js.native
-object KeyDerivationAlgorithmProvider extends js.Object {
-  def openAlgorithm(algorithm: String): KeyDerivationAlgorithmProvider = js.native
-}
-

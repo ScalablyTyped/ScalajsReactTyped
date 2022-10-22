@@ -1,27 +1,27 @@
 package typingsJapgolly.promClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prom-client", "AggregatorRegistry")
 @js.native
-class AggregatorRegistry () extends Registry {
+open class AggregatorRegistry () extends Registry {
+  
   /**
-  	 * Gets aggregated metrics for all workers. The optional callback and
-  	 * returned Promise resolve with the same value; either may be used.
-  	 * @param {Function?} cb (err, metrics) => any
+  	 * Gets aggregated metrics for all workers.
   	 * @return {Promise<string>} Promise that resolves with the aggregated
-  	 *   metrics.
+  	 * metrics.
   	 */
   def clusterMetrics(): js.Promise[String] = js.native
-  def clusterMetrics(cb: js.Function2[/* err */ js.Error | Null, /* metrics */ js.UndefOr[String], _]): js.Promise[String] = js.native
 }
-
 /* static members */
-@JSImport("prom-client", "AggregatorRegistry")
-@js.native
-object AggregatorRegistry extends js.Object {
+object AggregatorRegistry {
+  
+  @JSImport("prom-client", "AggregatorRegistry")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
   	 * Creates a new Registry instance from an array of metrics that were
   	 * created by `registry.getMetricsAsJSON()`. Metrics are aggregated using
@@ -31,7 +31,9 @@ object AggregatorRegistry extends js.Object {
   	 *   `registry.getMetricsAsJSON()`.
   	 * @return {Registry} aggregated registry.
   	 */
-  def aggregate(metricsArr: js.Array[js.Object]): Registry = js.native
+  inline def aggregate(metricsArr: js.Array[js.Object]): Registry = ^.asInstanceOf[js.Dynamic].applyDynamic("aggregate")(metricsArr.asInstanceOf[js.Any]).asInstanceOf[Registry]
+  
+  // TODO Promise?
   /**
   	 * Sets the registry or registries to be aggregated. Call from workers to
   	 * use a registry/registries other than the default global registry.
@@ -39,7 +41,6 @@ object AggregatorRegistry extends js.Object {
   	 *   aggregated.
   	 * @return {void}
   	 */
-  def setRegistries(regs: js.Array[Registry]): Unit = js.native
-  def setRegistries(regs: Registry): Unit = js.native
+  inline def setRegistries(regs: js.Array[Registry]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRegistries")(regs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setRegistries(regs: Registry): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRegistries")(regs.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

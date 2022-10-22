@@ -1,16 +1,32 @@
 package typingsJapgolly.jexl
 
 import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.jexl.astMod.Ast
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jexl/Expression", JSImport.Namespace)
-@js.native
-object expressionMod extends js.Object {
+object expressionMod {
+  
+  @JSImport("jexl/Expression", JSImport.Default)
   @js.native
-  trait Expression extends js.Object {
-    def _getAst(): js.Any = js.native
+  open class default protected ()
+    extends StObject
+       with Expression {
+    def this(lang: Any, exprStr: String) = this()
+  }
+  
+  type Context = StringDictionary[Any]
+  
+  @js.native
+  trait Expression extends StObject {
+    
+    /**
+      * Get the abstract syntax tree that represents the compiled expression
+      * @returns the abstract syntax tree
+      */
+    def _getAst(): Ast = js.native
+    
     /**
       * Forces a compilation of the expression string that this Expression object
       * was constructed with. This function can be called multiple times; useful
@@ -18,14 +34,16 @@ object expressionMod extends js.Object {
       * @returns this Expression instance, for convenience
       */
     def compile(): Expression = js.native
+    
     /**
       * Asynchronously evaluates the expression within an optional context.
       * @param context A mapping of variables to values, which will be
       *      made accessible to the Jexl expression when evaluating it
       * @returns resolves with the result of the evaluation.
       */
-    def eval(): js.Promise[_] = js.native
-    def eval(context: Context): js.Promise[_] = js.native
+    def eval(): js.Promise[Any] = js.native
+    def eval(context: Context): js.Promise[Any] = js.native
+    
     /**
       * Synchronously evaluates the expression within an optional context.
       * @param context A mapping of variables to values, which will be
@@ -33,15 +51,7 @@ object expressionMod extends js.Object {
       * @returns the result of the evaluation.
       * @throws on error
       */
-    def evalSync(): js.Any = js.native
-    def evalSync(context: Context): js.Any = js.native
+    def evalSync(): Any = js.native
+    def evalSync(context: Context): Any = js.native
   }
-  
-  @js.native
-  class default protected () extends Expression {
-    def this(lang: js.Any, exprStr: String) = this()
-  }
-  
-  type Context = StringDictionary[js.Any]
 }
-

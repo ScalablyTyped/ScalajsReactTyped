@@ -1,63 +1,70 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Input
 
 import typingsJapgolly.winrtUwp.Windows.Devices.Input.PointerDevice
-import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVector
 import typingsJapgolly.winrtUwp.Windows.Foundation.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides basic properties for the input pointer associated with a single mouse, pen/stylus, or touch contact. */
-@JSGlobal("Windows.UI.Input.PointerPoint")
-@js.native
-abstract class PointerPoint () extends js.Object {
+trait PointerPoint extends StObject {
+  
   /** Gets the ID of an input frame. */
-  var frameId: Double = js.native
+  var frameId: Double
+  
   /** Gets a value that indicates whether the physical entity (touch, pen/stylus, or mouse button) is pressed down. */
-  var isInContact: Boolean = js.native
+  var isInContact: Boolean
+  
   /** Gets information about the device associated with the input pointer. */
-  var pointerDevice: PointerDevice = js.native
+  var pointerDevice: PointerDevice
+  
   /** Gets a unique identifier for the input pointer. */
-  var pointerId: Double = js.native
+  var pointerId: Double
+  
   /** Gets the location of the pointer input in client coordinates. */
-  var position: Point = js.native
+  var position: Point
+  
   /** Gets extended information about the input pointer. */
-  var properties: PointerPointProperties = js.native
+  var properties: PointerPointProperties
+  
   /** Gets the raw location of the pointer input in client coordinates. */
-  var rawPosition: Point = js.native
+  var rawPosition: Point
+  
   /** Gets the time when the input occurred. */
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
-
-/* static members */
-@JSGlobal("Windows.UI.Input.PointerPoint")
-@js.native
-object PointerPoint extends js.Object {
-  /**
-    * Retrieves position and state information for the specified pointer.
-    * @param pointerId The ID of the pointer.
-    * @return The pointer property values.
-    */
-  def getCurrentPoint(pointerId: Double): PointerPoint = js.native
-  /**
-    * Retrieves the transformed information for the specified pointer.
-    * @param pointerId The ID of the pointer.
-    * @param transform The transform to apply to the pointer.
-    * @return The pointer property values.
-    */
-  def getCurrentPoint(pointerId: Double, transform: IPointerPointTransform): PointerPoint = js.native
-  /**
-    * Retrieves position and state information for the specified pointer, from the last pointer event up to and including the current pointer event.
-    * @param pointerId The ID of the pointer.
-    * @return The transformed pointer properties (current and historic).
-    */
-  def getIntermediatePoints(pointerId: Double): IVector[PointerPoint] = js.native
-  /**
-    * Retrieves the transformed position and state information for the specified pointer, from the last pointer event up to and including the current pointer event.
-    * @param pointerId The ID of the pointer.
-    * @param transform The transform to apply to the pointer.
-    * @return The transformed pointer properties (current and historic).
-    */
-  def getIntermediatePoints(pointerId: Double, transform: IPointerPointTransform): IVector[PointerPoint] = js.native
+object PointerPoint {
+  
+  inline def apply(
+    frameId: Double,
+    isInContact: Boolean,
+    pointerDevice: PointerDevice,
+    pointerId: Double,
+    position: Point,
+    properties: PointerPointProperties,
+    rawPosition: Point,
+    timestamp: Double
+  ): PointerPoint = {
+    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], isInContact = isInContact.asInstanceOf[js.Any], pointerDevice = pointerDevice.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], rawPosition = rawPosition.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointerPoint]
+  }
+  
+  extension [Self <: PointerPoint](x: Self) {
+    
+    inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    
+    inline def setIsInContact(value: Boolean): Self = StObject.set(x, "isInContact", value.asInstanceOf[js.Any])
+    
+    inline def setPointerDevice(value: PointerDevice): Self = StObject.set(x, "pointerDevice", value.asInstanceOf[js.Any])
+    
+    inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: PointerPointProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setRawPosition(value: Point): Self = StObject.set(x, "rawPosition", value.asInstanceOf[js.Any])
+    
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+  }
 }
-

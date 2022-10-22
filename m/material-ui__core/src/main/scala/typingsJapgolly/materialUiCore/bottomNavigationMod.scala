@@ -1,26 +1,31 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.bottomNavigationBottomNavigationMod.BottomNavigationProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.bottomNavigationBottomNavigationMod.BottomNavigationTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.div
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/BottomNavigation", JSImport.Namespace)
-@js.native
-object bottomNavigationMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[BottomNavigationProps, ComponentState, js.Any] {
-    def this(props: BottomNavigationProps) = this()
-    def this(props: BottomNavigationProps, context: js.Any) = this()
-  }
+object bottomNavigationMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Bottom Navigation](https://mui.com/components/bottom-navigation/)
+    *
+    * API:
+    *
+    * - [BottomNavigation API](https://mui.com/api/bottom-navigation/)
+    */
+  @JSImport("@material-ui/core/BottomNavigation", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[BottomNavigationProps]]
+  val default: OverridableComponent[BottomNavigationTypeMap[js.Object, div]] = js.native
   
+  type _To = OverridableComponent[BottomNavigationTypeMap[js.Object, div]]
+  
+  /* This means you don't have to write `default`, but can instead just say `bottomNavigationMod.foo` */
+  override def _to: OverridableComponent[BottomNavigationTypeMap[js.Object, div]] = default
 }
-

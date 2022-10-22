@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-share
 
-Typings are for version 3.0
+Typings are for version 3.3
 
 ## Library description:
 Social share, sending simple data to other apps.
@@ -10,13 +10,13 @@ Social share, sending simple data to other apps.
 | ------------------ | :-------------: |
 | Full name          | react-native-share |
 | Keywords           | react-native, android, ios, windows, bridge, react, share |
-| # releases         | 12 |
-| # dependents       | 16 |
-| # downloads        | 1177828 |
-| # stars            | 4 |
+| # releases         | 63 |
+| # dependents       | 0.0 |
+| # downloads        | 566948.6666666666 |
+| # stars            | 3169.0 |
 
 ## Links
-- [Homepage](https://github.com/react-native-community/react-native-share#readme)
+- [Homepage](https://react-native-share.github.io/react-native-share/)
 - [Bugs](https://github.com/react-native-community/react-native-share/issues)
 - [Repository](https://github.com/react-native-community/react-native-share)
 - [Npm](https://www.npmjs.com/package/react-native-share)

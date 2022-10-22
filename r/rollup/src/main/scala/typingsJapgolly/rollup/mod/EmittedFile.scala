@@ -1,35 +1,25 @@
 package typingsJapgolly.rollup.mod
 
-import typingsJapgolly.node.Buffer
-import typingsJapgolly.rollup.rollupStrings.asset
-import typingsJapgolly.rollup.rollupStrings.chunk
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.rollup.mod.EmittedAsset
   - typingsJapgolly.rollup.mod.EmittedChunk
 */
-trait EmittedFile extends js.Object
-
+trait EmittedFile extends StObject
 object EmittedFile {
-  @scala.inline
-  def EmittedAsset(`type`: asset, fileName: String = null, name: String = null, source: String | Buffer = null): EmittedFile = {
+  
+  inline def EmittedAsset(): typingsJapgolly.rollup.mod.EmittedAsset = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    __obj.asInstanceOf[EmittedFile]
+    __obj.updateDynamic("type")("asset")
+    __obj.asInstanceOf[typingsJapgolly.rollup.mod.EmittedAsset]
   }
-  @scala.inline
-  def EmittedChunk(id: String, `type`: chunk, fileName: String = null, name: String = null): EmittedFile = {
+  
+  inline def EmittedChunk(id: String): typingsJapgolly.rollup.mod.EmittedChunk = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[EmittedFile]
+    __obj.updateDynamic("type")("chunk")
+    __obj.asInstanceOf[typingsJapgolly.rollup.mod.EmittedChunk]
   }
 }
-

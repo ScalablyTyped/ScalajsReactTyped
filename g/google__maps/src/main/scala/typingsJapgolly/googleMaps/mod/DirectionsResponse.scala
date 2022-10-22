@@ -1,16 +1,18 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DirectionsResponse extends js.Object {
+trait DirectionsResponse extends StObject {
+  
   /**
     * contains an array of available travel modes. This field is returned when a request specifies a travel `mode` and gets no results.
     * The array contains the available travel modes in the countries of the given set of waypoints.
     * This field is not returned if one or more of the waypoints are `via:` waypoints.
     */
   var available_travel_modes: js.Array[String]
+  
   /**
     * contains an array with details about the geocoding of origin, destination and waypoints.
     *
@@ -19,6 +21,7 @@ trait DirectionsResponse extends js.Object {
     * An empty JSON object will occupy the corresponding places in the `geocoded_waypoints` array.
     */
   var geocoded_waypoints: js.Array[GeocodedWaypoint]
+  
   /**
     * contains an array of routes from the origin to the destination.
     *
@@ -32,21 +35,36 @@ trait DirectionsResponse extends js.Object {
     * routing information.
     */
   var routes: js.Array[DirectionsRoute]
+  
   /** contains metadata on the request. */
   var status: DirectionsReponseStatus
 }
-
 object DirectionsResponse {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     available_travel_modes: js.Array[String],
     geocoded_waypoints: js.Array[GeocodedWaypoint],
     routes: js.Array[DirectionsRoute],
     status: DirectionsReponseStatus
   ): DirectionsResponse = {
     val __obj = js.Dynamic.literal(available_travel_modes = available_travel_modes.asInstanceOf[js.Any], geocoded_waypoints = geocoded_waypoints.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DirectionsResponse]
   }
+  
+  extension [Self <: DirectionsResponse](x: Self) {
+    
+    inline def setAvailable_travel_modes(value: js.Array[String]): Self = StObject.set(x, "available_travel_modes", value.asInstanceOf[js.Any])
+    
+    inline def setAvailable_travel_modesVarargs(value: String*): Self = StObject.set(x, "available_travel_modes", js.Array(value*))
+    
+    inline def setGeocoded_waypoints(value: js.Array[GeocodedWaypoint]): Self = StObject.set(x, "geocoded_waypoints", value.asInstanceOf[js.Any])
+    
+    inline def setGeocoded_waypointsVarargs(value: GeocodedWaypoint*): Self = StObject.set(x, "geocoded_waypoints", js.Array(value*))
+    
+    inline def setRoutes(value: js.Array[DirectionsRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    
+    inline def setRoutesVarargs(value: DirectionsRoute*): Self = StObject.set(x, "routes", js.Array(value*))
+    
+    inline def setStatus(value: DirectionsReponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+  }
 }
-

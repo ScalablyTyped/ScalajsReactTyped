@@ -1,8 +1,8 @@
 package typingsJapgolly.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gm.gmStrings.None
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gm.gmStrings.Plane
   - typingsJapgolly.gm.gmStrings.Partition
 */
-trait InterlaceType extends js.Object
-
+trait InterlaceType extends StObject
 object InterlaceType {
-  @scala.inline
-  def Line: typingsJapgolly.gm.gmStrings.Line = this.cast("Line")
-  @scala.inline
-  def None: typingsJapgolly.gm.gmStrings.None = this.cast("None")
-  @scala.inline
-  def Partition: typingsJapgolly.gm.gmStrings.Partition = this.cast("Partition")
-  @scala.inline
-  def Plane: typingsJapgolly.gm.gmStrings.Plane = this.cast("Plane")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Line: typingsJapgolly.gm.gmStrings.Line = "Line".asInstanceOf[typingsJapgolly.gm.gmStrings.Line]
+  
+  inline def None: typingsJapgolly.gm.gmStrings.None = "None".asInstanceOf[typingsJapgolly.gm.gmStrings.None]
+  
+  inline def Partition: typingsJapgolly.gm.gmStrings.Partition = "Partition".asInstanceOf[typingsJapgolly.gm.gmStrings.Partition]
+  
+  inline def Plane: typingsJapgolly.gm.gmStrings.Plane = "Plane".asInstanceOf[typingsJapgolly.gm.gmStrings.Plane]
 }
-

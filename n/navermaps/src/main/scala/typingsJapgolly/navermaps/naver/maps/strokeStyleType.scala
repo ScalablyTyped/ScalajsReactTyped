@@ -1,8 +1,8 @@
 package typingsJapgolly.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.navermaps.navermapsStrings.solid
@@ -17,32 +17,28 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.navermaps.navermapsStrings.longdashdot
   - typingsJapgolly.navermaps.navermapsStrings.longdashdotdot
 */
-trait strokeStyleType extends js.Object
-
+trait strokeStyleType extends StObject
 object strokeStyleType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dash: typingsJapgolly.navermaps.navermapsStrings.dash = this.cast("dash")
-  @scala.inline
-  def dashdot: typingsJapgolly.navermaps.navermapsStrings.dashdot = this.cast("dashdot")
-  @scala.inline
-  def dot: typingsJapgolly.navermaps.navermapsStrings.dot = this.cast("dot")
-  @scala.inline
-  def longdash: typingsJapgolly.navermaps.navermapsStrings.longdash = this.cast("longdash")
-  @scala.inline
-  def longdashdot: typingsJapgolly.navermaps.navermapsStrings.longdashdot = this.cast("longdashdot")
-  @scala.inline
-  def longdashdotdot: typingsJapgolly.navermaps.navermapsStrings.longdashdotdot = this.cast("longdashdotdot")
-  @scala.inline
-  def shortdash: typingsJapgolly.navermaps.navermapsStrings.shortdash = this.cast("shortdash")
-  @scala.inline
-  def shortdashdot: typingsJapgolly.navermaps.navermapsStrings.shortdashdot = this.cast("shortdashdot")
-  @scala.inline
-  def shortdashdotdot: typingsJapgolly.navermaps.navermapsStrings.shortdashdotdot = this.cast("shortdashdotdot")
-  @scala.inline
-  def shortdot: typingsJapgolly.navermaps.navermapsStrings.shortdot = this.cast("shortdot")
-  @scala.inline
-  def solid: typingsJapgolly.navermaps.navermapsStrings.solid = this.cast("solid")
+  
+  inline def dash: typingsJapgolly.navermaps.navermapsStrings.dash = "dash".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.dash]
+  
+  inline def dashdot: typingsJapgolly.navermaps.navermapsStrings.dashdot = "dashdot".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.dashdot]
+  
+  inline def dot: typingsJapgolly.navermaps.navermapsStrings.dot = "dot".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.dot]
+  
+  inline def longdash: typingsJapgolly.navermaps.navermapsStrings.longdash = "longdash".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.longdash]
+  
+  inline def longdashdot: typingsJapgolly.navermaps.navermapsStrings.longdashdot = "longdashdot".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.longdashdot]
+  
+  inline def longdashdotdot: typingsJapgolly.navermaps.navermapsStrings.longdashdotdot = "longdashdotdot".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.longdashdotdot]
+  
+  inline def shortdash: typingsJapgolly.navermaps.navermapsStrings.shortdash = "shortdash".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.shortdash]
+  
+  inline def shortdashdot: typingsJapgolly.navermaps.navermapsStrings.shortdashdot = "shortdashdot".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.shortdashdot]
+  
+  inline def shortdashdotdot: typingsJapgolly.navermaps.navermapsStrings.shortdashdotdot = "shortdashdotdot".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.shortdashdotdot]
+  
+  inline def shortdot: typingsJapgolly.navermaps.navermapsStrings.shortdot = "shortdot".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.shortdot]
+  
+  inline def solid: typingsJapgolly.navermaps.navermapsStrings.solid = "solid".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.solid]
 }
-

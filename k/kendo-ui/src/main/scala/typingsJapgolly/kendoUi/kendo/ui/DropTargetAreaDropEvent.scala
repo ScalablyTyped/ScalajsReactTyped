@@ -1,30 +1,40 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DropTargetAreaDropEvent extends DropTargetAreaEvent {
+trait DropTargetAreaDropEvent
+  extends StObject
+     with DropTargetAreaEvent {
+  
   var draggable: js.UndefOr[Draggable] = js.undefined
+  
   var dropTarget: js.UndefOr[JQuery] = js.undefined
+  
   var target: js.UndefOr[Element] = js.undefined
 }
-
 object DropTargetAreaDropEvent {
-  @scala.inline
-  def apply(
-    sender: DropTargetArea,
-    draggable: Draggable = null,
-    dropTarget: JQuery = null,
-    target: Element = null
-  ): DropTargetAreaDropEvent = {
+  
+  inline def apply(sender: DropTargetArea): DropTargetAreaDropEvent = {
     val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any])
-    if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropTargetAreaDropEvent]
   }
+  
+  extension [Self <: DropTargetAreaDropEvent](x: Self) {
+    
+    inline def setDraggable(value: Draggable): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    
+    inline def setDropTarget(value: JQuery): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+    
+    inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
+    
+    inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

@@ -1,26 +1,27 @@
 package typingsJapgolly.styledSystemCss.mod
 
-import typingsJapgolly.csstype.mod.BorderProperty
-import typingsJapgolly.csstype.mod.BorderRadiusProperty
-import typingsJapgolly.csstype.mod.BorderWidthProperty
-import typingsJapgolly.csstype.mod.BoxShadowProperty
-import typingsJapgolly.csstype.mod.ColorProperty
-import typingsJapgolly.csstype.mod.FontFamilyProperty
-import typingsJapgolly.csstype.mod.FontSizeProperty
-import typingsJapgolly.csstype.mod.FontWeightProperty
-import typingsJapgolly.csstype.mod.HeightProperty
-import typingsJapgolly.csstype.mod.LetterSpacingProperty
-import typingsJapgolly.csstype.mod.LineHeightProperty
-import typingsJapgolly.csstype.mod.LineStyle
-import typingsJapgolly.csstype.mod.MarginProperty
-import typingsJapgolly.csstype.mod.PaddingProperty
-import typingsJapgolly.csstype.mod.WidthProperty
-import typingsJapgolly.csstype.mod.ZIndexProperty
+import typingsJapgolly.csstype.mod.Property.Border
+import typingsJapgolly.csstype.mod.Property.BorderRadius
+import typingsJapgolly.csstype.mod.Property.BorderStyle
+import typingsJapgolly.csstype.mod.Property.BorderWidth
+import typingsJapgolly.csstype.mod.Property.BoxShadow
+import typingsJapgolly.csstype.mod.Property.Color
+import typingsJapgolly.csstype.mod.Property.FontFamily
+import typingsJapgolly.csstype.mod.Property.FontSize
+import typingsJapgolly.csstype.mod.Property.FontWeight
+import typingsJapgolly.csstype.mod.Property.Height
+import typingsJapgolly.csstype.mod.Property.LetterSpacing
+import typingsJapgolly.csstype.mod.Property.LineHeight
+import typingsJapgolly.csstype.mod.Property.Margin
+import typingsJapgolly.csstype.mod.Property.Padding
+import typingsJapgolly.csstype.mod.Property.Width
+import typingsJapgolly.csstype.mod.Property.ZIndex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScaleThemeProperties extends js.Object {
+trait ScaleThemeProperties extends StObject {
+  
   /**
     * | Prop        | CSS Property | Theme Field  |
     * | :---------- | :----------- | :----------- |
@@ -28,7 +29,8 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#border
     */
-  var borderStyles: js.UndefOr[ThemeValue[LineStyle]] = js.undefined
+  var borderStyles: js.UndefOr[ThemeValue[BorderStyle]] = js.undefined
+  
   /**
     * | Prop        | CSS Property | Theme Field  |
     * | :---------- | :----------- | :----------- |
@@ -36,7 +38,8 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#border
     */
-  var borderWidths: js.UndefOr[ThemeValue[BorderWidthProperty[js.Object]]] = js.undefined
+  var borderWidths: js.UndefOr[ThemeValue[BorderWidth[js.Object]]] = js.undefined
+  
   /**
     * | Prop         | CSS Property               | Theme Field |
     * | :----------- | :------------------------- | :---------- |
@@ -50,7 +53,8 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#border
     */
-  var borders: js.UndefOr[ThemeValue[BorderProperty[js.Object]]] = js.undefined
+  var borders: js.UndefOr[ThemeValue[Border[js.Object]]] = js.undefined
+  
   /**
     * | Prop                | CSS Property     | Theme Field |
     * | :------------------ | :--------------- | :---------- |
@@ -59,7 +63,8 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#color
     */
-  var colors: js.UndefOr[ThemeValue[ColorProperty]] = js.undefined
+  var colors: js.UndefOr[ThemeValue[Color]] = js.undefined
+  
   /**
     * | Prop     | CSS Property | Theme Field |
     * | :------- | :----------- | :---------- |
@@ -67,7 +72,8 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#typography
     */
-  var fontSizes: js.UndefOr[ThemeValue[FontSizeProperty[Double]]] = js.undefined
+  var fontSizes: js.UndefOr[ThemeValue[FontSize[Double]]] = js.undefined
+  
   /**
     * | Prop       | CSS Property | Theme Field |
     * | :--------- | :----------- | :---------- |
@@ -75,7 +81,8 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#typography
     */
-  var fontWeights: js.UndefOr[ThemeValue[FontWeightProperty]] = js.undefined
+  var fontWeights: js.UndefOr[ThemeValue[FontWeight]] = js.undefined
+  
   /**
     * | Prop       | CSS Property | Theme Field |
     * | :--------- | :----------- | :---------- |
@@ -83,7 +90,8 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#typography
     */
-  var fonts: js.UndefOr[ThemeValue[FontFamilyProperty]] = js.undefined
+  var fonts: js.UndefOr[ThemeValue[FontFamily]] = js.undefined
+  
   /**
     * | Prop          | CSS Property   | Theme Field    |
     * | :------------ | :------------- | :------------- |
@@ -91,7 +99,8 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#typography
     */
-  var letterSpacings: js.UndefOr[ThemeValue[LetterSpacingProperty[String | Double]]] = js.undefined
+  var letterSpacings: js.UndefOr[ThemeValue[LetterSpacing[String | Double]]] = js.undefined
+  
   /**
     * | Prop       | CSS Property | Theme Field |
     * | :--------- | :----------- | :---------- |
@@ -99,7 +108,8 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#typography
     */
-  var lineHeights: js.UndefOr[ThemeValue[LineHeightProperty[String]]] = js.undefined
+  var lineHeights: js.UndefOr[ThemeValue[LineHeight[String]]] = js.undefined
+  
   /**
     * | Prop         | CSS Property  | Theme Field |
     * | :----------- | :------------ | :---------- |
@@ -107,7 +117,8 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#border
     */
-  var radii: js.UndefOr[ThemeValue[BorderRadiusProperty[js.Object]]] = js.undefined
+  var radii: js.UndefOr[ThemeValue[BorderRadius[js.Object]]] = js.undefined
+  
   /**
     * | Prop       | CSS Property | Theme Field |
     * | :--------- | :----------- | :---------- |
@@ -116,7 +127,8 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#shadow
     */
-  var shadows: js.UndefOr[ThemeValue[BoxShadowProperty]] = js.undefined
+  var shadows: js.UndefOr[ThemeValue[BoxShadow]] = js.undefined
+  
   /**
     * | Prop      | CSS Property | Theme Field |
     * | :-------- | :----------- | :---------- |
@@ -130,11 +142,12 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#layout
     */
-  var sizes: js.UndefOr[ThemeValue[HeightProperty[js.Object] | WidthProperty[js.Object]]] = js.undefined
+  var sizes: js.UndefOr[ThemeValue[Height[js.Object] | Width[js.Object]]] = js.undefined
+  
   /**
     * | Prop              | CSS Property                   | Theme Field |
     * | :---------------- | :----------------------------- | :---------- |
-    * | m, margin	       | margin                         | space       |
+    * | m, margin           | margin                         | space       |
     * | mt, marginTop     | margin-top                     | space       |
     * | mr, marginRight   | margin-right                   | space       |
     * | mb, marginBottom  | margin-bottom                  | space       |
@@ -151,7 +164,8 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#space
     */
-  var space: js.UndefOr[ThemeValue[MarginProperty[Double] with PaddingProperty[Double]]] = js.undefined
+  var space: js.UndefOr[ThemeValue[Margin[Double] & Padding[Double]]] = js.undefined
+  
   /**
     * | Prop    | CSS Property | Theme Field |
     * | :------ | :----------- | :---------- |
@@ -159,43 +173,99 @@ trait ScaleThemeProperties extends js.Object {
     *
     * @see https://styled-system.com/table#position
     */
-  var zIndices: js.UndefOr[ThemeValue[ZIndexProperty]] = js.undefined
+  var zIndices: js.UndefOr[ThemeValue[ZIndex]] = js.undefined
 }
-
 object ScaleThemeProperties {
-  @scala.inline
-  def apply(
-    borderStyles: ThemeValue[LineStyle] = null,
-    borderWidths: ThemeValue[BorderWidthProperty[js.Object]] = null,
-    borders: ThemeValue[BorderProperty[js.Object]] = null,
-    colors: ThemeValue[ColorProperty] = null,
-    fontSizes: ThemeValue[FontSizeProperty[Double]] = null,
-    fontWeights: ThemeValue[FontWeightProperty] = null,
-    fonts: ThemeValue[FontFamilyProperty] = null,
-    letterSpacings: ThemeValue[LetterSpacingProperty[String | Double]] = null,
-    lineHeights: ThemeValue[LineHeightProperty[String]] = null,
-    radii: ThemeValue[BorderRadiusProperty[js.Object]] = null,
-    shadows: ThemeValue[BoxShadowProperty] = null,
-    sizes: ThemeValue[HeightProperty[js.Object] | WidthProperty[js.Object]] = null,
-    space: ThemeValue[MarginProperty[Double] with PaddingProperty[Double]] = null,
-    zIndices: ThemeValue[ZIndexProperty] = null
-  ): ScaleThemeProperties = {
+  
+  inline def apply(): ScaleThemeProperties = {
     val __obj = js.Dynamic.literal()
-    if (borderStyles != null) __obj.updateDynamic("borderStyles")(borderStyles.asInstanceOf[js.Any])
-    if (borderWidths != null) __obj.updateDynamic("borderWidths")(borderWidths.asInstanceOf[js.Any])
-    if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (fontSizes != null) __obj.updateDynamic("fontSizes")(fontSizes.asInstanceOf[js.Any])
-    if (fontWeights != null) __obj.updateDynamic("fontWeights")(fontWeights.asInstanceOf[js.Any])
-    if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
-    if (letterSpacings != null) __obj.updateDynamic("letterSpacings")(letterSpacings.asInstanceOf[js.Any])
-    if (lineHeights != null) __obj.updateDynamic("lineHeights")(lineHeights.asInstanceOf[js.Any])
-    if (radii != null) __obj.updateDynamic("radii")(radii.asInstanceOf[js.Any])
-    if (shadows != null) __obj.updateDynamic("shadows")(shadows.asInstanceOf[js.Any])
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
-    if (zIndices != null) __obj.updateDynamic("zIndices")(zIndices.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleThemeProperties]
   }
+  
+  extension [Self <: ScaleThemeProperties](x: Self) {
+    
+    inline def setBorderStyles(value: ThemeValue[BorderStyle]): Self = StObject.set(x, "borderStyles", value.asInstanceOf[js.Any])
+    
+    inline def setBorderStylesUndefined: Self = StObject.set(x, "borderStyles", js.undefined)
+    
+    inline def setBorderStylesVarargs(value: BorderStyle*): Self = StObject.set(x, "borderStyles", js.Array(value*))
+    
+    inline def setBorderWidths(value: ThemeValue[BorderWidth[js.Object]]): Self = StObject.set(x, "borderWidths", value.asInstanceOf[js.Any])
+    
+    inline def setBorderWidthsUndefined: Self = StObject.set(x, "borderWidths", js.undefined)
+    
+    inline def setBorderWidthsVarargs(value: BorderWidth[js.Object]*): Self = StObject.set(x, "borderWidths", js.Array(value*))
+    
+    inline def setBorders(value: ThemeValue[Border[js.Object]]): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
+    
+    inline def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
+    
+    inline def setBordersVarargs(value: Border[js.Object]*): Self = StObject.set(x, "borders", js.Array(value*))
+    
+    inline def setColors(value: ThemeValue[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    
+    inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value*))
+    
+    inline def setFontSizes(value: ThemeValue[FontSize[Double]]): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizesUndefined: Self = StObject.set(x, "fontSizes", js.undefined)
+    
+    inline def setFontSizesVarargs(value: FontSize[Double]*): Self = StObject.set(x, "fontSizes", js.Array(value*))
+    
+    inline def setFontWeights(value: ThemeValue[FontWeight]): Self = StObject.set(x, "fontWeights", value.asInstanceOf[js.Any])
+    
+    inline def setFontWeightsUndefined: Self = StObject.set(x, "fontWeights", js.undefined)
+    
+    inline def setFontWeightsVarargs(value: FontWeight*): Self = StObject.set(x, "fontWeights", js.Array(value*))
+    
+    inline def setFonts(value: ThemeValue[FontFamily]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+    
+    inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
+    
+    inline def setFontsVarargs(value: FontFamily*): Self = StObject.set(x, "fonts", js.Array(value*))
+    
+    inline def setLetterSpacings(value: ThemeValue[LetterSpacing[String | Double]]): Self = StObject.set(x, "letterSpacings", value.asInstanceOf[js.Any])
+    
+    inline def setLetterSpacingsUndefined: Self = StObject.set(x, "letterSpacings", js.undefined)
+    
+    inline def setLetterSpacingsVarargs(value: (LetterSpacing[String | Double])*): Self = StObject.set(x, "letterSpacings", js.Array(value*))
+    
+    inline def setLineHeights(value: ThemeValue[LineHeight[String]]): Self = StObject.set(x, "lineHeights", value.asInstanceOf[js.Any])
+    
+    inline def setLineHeightsUndefined: Self = StObject.set(x, "lineHeights", js.undefined)
+    
+    inline def setLineHeightsVarargs(value: LineHeight[String]*): Self = StObject.set(x, "lineHeights", js.Array(value*))
+    
+    inline def setRadii(value: ThemeValue[BorderRadius[js.Object]]): Self = StObject.set(x, "radii", value.asInstanceOf[js.Any])
+    
+    inline def setRadiiUndefined: Self = StObject.set(x, "radii", js.undefined)
+    
+    inline def setRadiiVarargs(value: BorderRadius[js.Object]*): Self = StObject.set(x, "radii", js.Array(value*))
+    
+    inline def setShadows(value: ThemeValue[BoxShadow]): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
+    
+    inline def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
+    
+    inline def setShadowsVarargs(value: BoxShadow*): Self = StObject.set(x, "shadows", js.Array(value*))
+    
+    inline def setSizes(value: ThemeValue[Height[js.Object] | Width[js.Object]]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+    
+    inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+    
+    inline def setSizesVarargs(value: (Height[js.Object] | Width[js.Object])*): Self = StObject.set(x, "sizes", js.Array(value*))
+    
+    inline def setSpace(value: ThemeValue[Margin[Double] & Padding[Double]]): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    
+    inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+    
+    inline def setSpaceVarargs(value: (Margin[Double] & Padding[Double])*): Self = StObject.set(x, "space", js.Array(value*))
+    
+    inline def setZIndices(value: ThemeValue[ZIndex]): Self = StObject.set(x, "zIndices", value.asInstanceOf[js.Any])
+    
+    inline def setZIndicesUndefined: Self = StObject.set(x, "zIndices", js.undefined)
+    
+    inline def setZIndicesVarargs(value: ZIndex*): Self = StObject.set(x, "zIndices", js.Array(value*))
+  }
 }
-

@@ -1,63 +1,59 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7`
 */
-trait PpPasteDataType extends js.Object
-
+trait PpPasteDataType extends StObject
 object PpPasteDataType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ppPasteBitmap: `1` = this.cast(1)
-  @scala.inline
-  def ppPasteDefault: `0` = this.cast(0)
-  @scala.inline
-  def ppPasteEnhancedMetafile: `2` = this.cast(2)
-  @scala.inline
-  def ppPasteGIF: `4` = this.cast(4)
-  @scala.inline
-  def ppPasteHTML: `8` = this.cast(8)
-  @scala.inline
-  def ppPasteJPG: `5` = this.cast(5)
-  @scala.inline
-  def ppPasteMetafilePicture: `3` = this.cast(3)
-  @scala.inline
-  def ppPasteOLEObject: `10` = this.cast(10)
-  @scala.inline
-  def ppPastePNG: `6` = this.cast(6)
-  @scala.inline
-  def ppPasteRTF: `9` = this.cast(9)
-  @scala.inline
-  def ppPasteShape: `11` = this.cast(11)
-  @scala.inline
-  def ppPasteText: `7` = this.cast(7)
+  
+  inline def ppPasteBitmap: `1` = 1.asInstanceOf[`1`]
+  
+  inline def ppPasteDefault: `0` = 0.asInstanceOf[`0`]
+  
+  inline def ppPasteEnhancedMetafile: `2` = 2.asInstanceOf[`2`]
+  
+  inline def ppPasteGIF: `4` = 4.asInstanceOf[`4`]
+  
+  inline def ppPasteHTML: `8` = 8.asInstanceOf[`8`]
+  
+  inline def ppPasteJPG: `5` = 5.asInstanceOf[`5`]
+  
+  inline def ppPasteMetafilePicture: `3` = 3.asInstanceOf[`3`]
+  
+  inline def ppPasteOLEObject: `10` = 10.asInstanceOf[`10`]
+  
+  inline def ppPastePNG: `6` = 6.asInstanceOf[`6`]
+  
+  inline def ppPasteRTF: `9` = 9.asInstanceOf[`9`]
+  
+  inline def ppPasteShape: `11` = 11.asInstanceOf[`11`]
+  
+  inline def ppPasteText: `7` = 7.asInstanceOf[`7`]
 }
-

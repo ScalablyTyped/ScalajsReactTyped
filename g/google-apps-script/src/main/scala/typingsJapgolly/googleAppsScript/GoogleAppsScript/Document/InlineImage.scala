@@ -3,9 +3,9 @@ package typingsJapgolly.googleAppsScript.GoogleAppsScript.Document
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Base.Blob
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An element representing an embedded image. An InlineImage can be contained within a
@@ -13,25 +13,39 @@ import scala.scalajs.js.annotation._
   * a FootnoteSection. An InlineImage cannot itself contain any other element. For
   * more information on document structure, see the guide to extending Google Docs.
   */
-trait InlineImage extends Element {
+trait InlineImage
+  extends StObject
+     with Element {
+  
   def getAltDescription(): String
+  
   def getAltTitle(): String
+  
   def getAs(contentType: String): Blob
+  
   def getBlob(): Blob
+  
   def getHeight(): Integer
+  
   def getLinkUrl(): String
+  
   def getWidth(): Integer
+  
   def setAltDescription(description: String): InlineImage
+  
   def setAltTitle(title: String): InlineImage
+  
   def setHeight(height: Integer): InlineImage
+  
   def setLinkUrl(url: String): InlineImage
+  
   def setWidth(width: Integer): InlineImage
 }
-
 object InlineImage {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     asBody: CallbackTo[Body],
+    asDate: CallbackTo[Date],
     asEquation: CallbackTo[Equation],
     asEquationFunction: CallbackTo[EquationFunction],
     asEquationFunctionArgumentSeparator: CallbackTo[EquationFunctionArgumentSeparator],
@@ -46,6 +60,8 @@ object InlineImage {
     asListItem: CallbackTo[ListItem],
     asPageBreak: CallbackTo[PageBreak],
     asParagraph: CallbackTo[Paragraph],
+    asPerson: CallbackTo[Person],
+    asRichLink: CallbackTo[RichLink],
     asTable: CallbackTo[Table],
     asTableCell: CallbackTo[TableCell],
     asTableOfContents: CallbackTo[TableOfContents],
@@ -54,8 +70,8 @@ object InlineImage {
     copy: CallbackTo[Element],
     getAltDescription: CallbackTo[String],
     getAltTitle: CallbackTo[String],
-    getAs: String => CallbackTo[Blob],
-    getAttributes: CallbackTo[js.Any],
+    getAs: String => Blob,
+    getAttributes: CallbackTo[Any],
     getBlob: CallbackTo[Blob],
     getHeight: CallbackTo[Integer],
     getLinkUrl: CallbackTo[String],
@@ -67,57 +83,41 @@ object InlineImage {
     isAtDocumentEnd: CallbackTo[Boolean],
     merge: CallbackTo[Element],
     removeFromParent: CallbackTo[Element],
-    setAltDescription: String => CallbackTo[InlineImage],
-    setAltTitle: String => CallbackTo[InlineImage],
-    setAttributes: js.Any => CallbackTo[Element],
-    setHeight: Integer => CallbackTo[InlineImage],
-    setLinkUrl: String => CallbackTo[InlineImage],
-    setWidth: Integer => CallbackTo[InlineImage]
+    setAltDescription: String => InlineImage,
+    setAltTitle: String => InlineImage,
+    setAttributes: Any => Element,
+    setHeight: Integer => InlineImage,
+    setLinkUrl: String => InlineImage,
+    setWidth: Integer => InlineImage
   ): InlineImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asBody")(asBody.toJsFn)
-    __obj.updateDynamic("asEquation")(asEquation.toJsFn)
-    __obj.updateDynamic("asEquationFunction")(asEquationFunction.toJsFn)
-    __obj.updateDynamic("asEquationFunctionArgumentSeparator")(asEquationFunctionArgumentSeparator.toJsFn)
-    __obj.updateDynamic("asEquationSymbol")(asEquationSymbol.toJsFn)
-    __obj.updateDynamic("asFooterSection")(asFooterSection.toJsFn)
-    __obj.updateDynamic("asFootnote")(asFootnote.toJsFn)
-    __obj.updateDynamic("asFootnoteSection")(asFootnoteSection.toJsFn)
-    __obj.updateDynamic("asHeaderSection")(asHeaderSection.toJsFn)
-    __obj.updateDynamic("asHorizontalRule")(asHorizontalRule.toJsFn)
-    __obj.updateDynamic("asInlineDrawing")(asInlineDrawing.toJsFn)
-    __obj.updateDynamic("asInlineImage")(asInlineImage.toJsFn)
-    __obj.updateDynamic("asListItem")(asListItem.toJsFn)
-    __obj.updateDynamic("asPageBreak")(asPageBreak.toJsFn)
-    __obj.updateDynamic("asParagraph")(asParagraph.toJsFn)
-    __obj.updateDynamic("asTable")(asTable.toJsFn)
-    __obj.updateDynamic("asTableCell")(asTableCell.toJsFn)
-    __obj.updateDynamic("asTableOfContents")(asTableOfContents.toJsFn)
-    __obj.updateDynamic("asTableRow")(asTableRow.toJsFn)
-    __obj.updateDynamic("asText")(asText.toJsFn)
-    __obj.updateDynamic("copy")(copy.toJsFn)
-    __obj.updateDynamic("getAltDescription")(getAltDescription.toJsFn)
-    __obj.updateDynamic("getAltTitle")(getAltTitle.toJsFn)
-    __obj.updateDynamic("getAs")(js.Any.fromFunction1((t0: java.lang.String) => getAs(t0).runNow()))
-    __obj.updateDynamic("getAttributes")(getAttributes.toJsFn)
-    __obj.updateDynamic("getBlob")(getBlob.toJsFn)
-    __obj.updateDynamic("getHeight")(getHeight.toJsFn)
-    __obj.updateDynamic("getLinkUrl")(getLinkUrl.toJsFn)
-    __obj.updateDynamic("getNextSibling")(getNextSibling.toJsFn)
-    __obj.updateDynamic("getParent")(getParent.toJsFn)
-    __obj.updateDynamic("getPreviousSibling")(getPreviousSibling.toJsFn)
-    __obj.updateDynamic("getType")(getType.toJsFn)
-    __obj.updateDynamic("getWidth")(getWidth.toJsFn)
-    __obj.updateDynamic("isAtDocumentEnd")(isAtDocumentEnd.toJsFn)
-    __obj.updateDynamic("merge")(merge.toJsFn)
-    __obj.updateDynamic("removeFromParent")(removeFromParent.toJsFn)
-    __obj.updateDynamic("setAltDescription")(js.Any.fromFunction1((t0: java.lang.String) => setAltDescription(t0).runNow()))
-    __obj.updateDynamic("setAltTitle")(js.Any.fromFunction1((t0: java.lang.String) => setAltTitle(t0).runNow()))
-    __obj.updateDynamic("setAttributes")(js.Any.fromFunction1((t0: js.Any) => setAttributes(t0).runNow()))
-    __obj.updateDynamic("setHeight")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => setHeight(t0).runNow()))
-    __obj.updateDynamic("setLinkUrl")(js.Any.fromFunction1((t0: java.lang.String) => setLinkUrl(t0).runNow()))
-    __obj.updateDynamic("setWidth")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => setWidth(t0).runNow()))
+    val __obj = js.Dynamic.literal(asBody = asBody.toJsFn, asDate = asDate.toJsFn, asEquation = asEquation.toJsFn, asEquationFunction = asEquationFunction.toJsFn, asEquationFunctionArgumentSeparator = asEquationFunctionArgumentSeparator.toJsFn, asEquationSymbol = asEquationSymbol.toJsFn, asFooterSection = asFooterSection.toJsFn, asFootnote = asFootnote.toJsFn, asFootnoteSection = asFootnoteSection.toJsFn, asHeaderSection = asHeaderSection.toJsFn, asHorizontalRule = asHorizontalRule.toJsFn, asInlineDrawing = asInlineDrawing.toJsFn, asInlineImage = asInlineImage.toJsFn, asListItem = asListItem.toJsFn, asPageBreak = asPageBreak.toJsFn, asParagraph = asParagraph.toJsFn, asPerson = asPerson.toJsFn, asRichLink = asRichLink.toJsFn, asTable = asTable.toJsFn, asTableCell = asTableCell.toJsFn, asTableOfContents = asTableOfContents.toJsFn, asTableRow = asTableRow.toJsFn, asText = asText.toJsFn, copy = copy.toJsFn, getAltDescription = getAltDescription.toJsFn, getAltTitle = getAltTitle.toJsFn, getAs = js.Any.fromFunction1(getAs), getAttributes = getAttributes.toJsFn, getBlob = getBlob.toJsFn, getHeight = getHeight.toJsFn, getLinkUrl = getLinkUrl.toJsFn, getNextSibling = getNextSibling.toJsFn, getParent = getParent.toJsFn, getPreviousSibling = getPreviousSibling.toJsFn, getType = getType.toJsFn, getWidth = getWidth.toJsFn, isAtDocumentEnd = isAtDocumentEnd.toJsFn, merge = merge.toJsFn, removeFromParent = removeFromParent.toJsFn, setAltDescription = js.Any.fromFunction1(setAltDescription), setAltTitle = js.Any.fromFunction1(setAltTitle), setAttributes = js.Any.fromFunction1(setAttributes), setHeight = js.Any.fromFunction1(setHeight), setLinkUrl = js.Any.fromFunction1(setLinkUrl), setWidth = js.Any.fromFunction1(setWidth))
     __obj.asInstanceOf[InlineImage]
   }
+  
+  extension [Self <: InlineImage](x: Self) {
+    
+    inline def setGetAltDescription(value: CallbackTo[String]): Self = StObject.set(x, "getAltDescription", value.toJsFn)
+    
+    inline def setGetAltTitle(value: CallbackTo[String]): Self = StObject.set(x, "getAltTitle", value.toJsFn)
+    
+    inline def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
+    
+    inline def setGetBlob(value: CallbackTo[Blob]): Self = StObject.set(x, "getBlob", value.toJsFn)
+    
+    inline def setGetHeight(value: CallbackTo[Integer]): Self = StObject.set(x, "getHeight", value.toJsFn)
+    
+    inline def setGetLinkUrl(value: CallbackTo[String]): Self = StObject.set(x, "getLinkUrl", value.toJsFn)
+    
+    inline def setGetWidth(value: CallbackTo[Integer]): Self = StObject.set(x, "getWidth", value.toJsFn)
+    
+    inline def setSetAltDescription(value: String => InlineImage): Self = StObject.set(x, "setAltDescription", js.Any.fromFunction1(value))
+    
+    inline def setSetAltTitle(value: String => InlineImage): Self = StObject.set(x, "setAltTitle", js.Any.fromFunction1(value))
+    
+    inline def setSetHeight(value: Integer => InlineImage): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+    
+    inline def setSetLinkUrl(value: String => InlineImage): Self = StObject.set(x, "setLinkUrl", js.Any.fromFunction1(value))
+    
+    inline def setSetWidth(value: Integer => InlineImage): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+  }
 }
-

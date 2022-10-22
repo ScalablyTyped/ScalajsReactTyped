@@ -1,46 +1,32 @@
 package typingsJapgolly.glReactExpo.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.WebGLRenderingContext
+import org.scalajs.dom.WebGLRenderingContext
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.glReactExpo.glviewnativeMod.GLViewNativeProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GLViewNative {
-  def apply(
-    onContextCreate: /* gl */ WebGLRenderingContext => Callback = null,
-    style: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: js.Any = null
-  ): UnmountedWithRoot[
-    GLViewNativeProps, 
-    typingsJapgolly.glReactExpo.glviewnativeMod.GLViewNative, 
-    Unit, 
-    GLViewNativeProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (onContextCreate != null) __obj.updateDynamic("onContextCreate")(js.Any.fromFunction1((t0: /* gl */ org.scalajs.dom.raw.WebGLRenderingContext) => onContextCreate(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.glReactExpo.glviewnativeMod.GLViewNativeProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.glReactExpo.glviewnativeMod.GLViewNative](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.glReactExpo.glviewnativeMod.GLViewNativeProps])
-  }
   @JSImport("gl-react-expo/GLViewNative", "GLViewNative")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.glReactExpo.glviewnativeMod.GLViewNative] {
+    
+    inline def children(value: Any): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def onContextCreate(value: /* gl */ WebGLRenderingContext => Callback): this.type = set("onContextCreate", js.Any.fromFunction1((t0: /* gl */ WebGLRenderingContext) => value(t0).runNow()))
+    
+    inline def style(value: Any): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: GLViewNative.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: GLViewNativeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

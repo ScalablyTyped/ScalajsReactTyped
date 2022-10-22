@@ -1,22 +1,28 @@
 package typingsJapgolly.vexflow.mod.Flow
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexflow", "Flow.Tuning")
 @js.native
-class Tuning ()
-  extends typingsJapgolly.vexflow.Vex.Flow.Tuning {
+open class Tuning ()
+  extends StObject
+     with typingsJapgolly.vexflow.Vex.Flow.Tuning {
   def this(tuningString: String) = this()
-}
-
-@JSImport("vexflow", "Flow.Tuning")
-@js.native
-object Tuning extends js.Object {
-  @js.native
-  object names extends /* name */ StringDictionary[String]
   
+  /* CompleteClass */
+  override def getNoteForFret(fretNum: String, stringNum: String): String = js.native
+  
+  /* CompleteClass */
+  override def getValueForFret(fretNum: String, stringNum: String): Double = js.native
+  
+  /* CompleteClass */
+  override def getValueForString(stringNum: String): Double = js.native
+  
+  /* CompleteClass */
+  override def noteToInteger(noteString: String): Double = js.native
+  
+  /* CompleteClass */
+  override def setTuning(tuningString: String): Unit = js.native
 }
-

@@ -1,31 +1,44 @@
 package typingsJapgolly.webAnimationsJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ComputedTimingProperties extends js.Object {
+trait ComputedTimingProperties extends StObject {
+  
   var activeDuration: Double
+  
   var currentIteration: Double | Null
+  
   var endTime: Double
+  
   var localTime: Double | Null
+  
   var progress: Double | Null
 }
-
 object ComputedTimingProperties {
-  @scala.inline
-  def apply(
-    activeDuration: Double,
-    endTime: Double,
-    currentIteration: Int | Double = null,
-    localTime: Int | Double = null,
-    progress: Int | Double = null
-  ): ComputedTimingProperties = {
-    val __obj = js.Dynamic.literal(activeDuration = activeDuration.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any])
-    if (currentIteration != null) __obj.updateDynamic("currentIteration")(currentIteration.asInstanceOf[js.Any])
-    if (localTime != null) __obj.updateDynamic("localTime")(localTime.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+  
+  inline def apply(activeDuration: Double, endTime: Double): ComputedTimingProperties = {
+    val __obj = js.Dynamic.literal(activeDuration = activeDuration.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], currentIteration = null, localTime = null, progress = null)
     __obj.asInstanceOf[ComputedTimingProperties]
   }
+  
+  extension [Self <: ComputedTimingProperties](x: Self) {
+    
+    inline def setActiveDuration(value: Double): Self = StObject.set(x, "activeDuration", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentIterationNull: Self = StObject.set(x, "currentIteration", null)
+    
+    inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    
+    inline def setLocalTime(value: Double): Self = StObject.set(x, "localTime", value.asInstanceOf[js.Any])
+    
+    inline def setLocalTimeNull: Self = StObject.set(x, "localTime", null)
+    
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    
+    inline def setProgressNull: Self = StObject.set(x, "progress", null)
+  }
 }
-

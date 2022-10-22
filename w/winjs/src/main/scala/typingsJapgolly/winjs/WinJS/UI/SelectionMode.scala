@@ -1,47 +1,39 @@
 package typingsJapgolly.winjs.WinJS.UI
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SelectionMode extends js.Object
-
+sealed trait SelectionMode extends StObject
 /**
   * Specifies the selection mode of a ListView.
   **/
 @JSGlobal("WinJS.UI.SelectionMode")
 @js.native
-object SelectionMode extends js.Object {
+object SelectionMode extends StObject {
+  
   /**
     * Multiple items may be selected. Clicking additional items adds them to the selection.
     **/
   @js.native
-  sealed trait multi extends SelectionMode
+  sealed trait multi
+    extends StObject
+       with SelectionMode
   
   /**
     * Items cannot be selected.
     **/
   @js.native
-  sealed trait none extends SelectionMode
+  sealed trait none
+    extends StObject
+       with SelectionMode
   
   /**
     * A single item may be selected.
     **/
   @js.native
-  sealed trait single extends SelectionMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SelectionMode with Double] = js.native
-  /* 2 */ @js.native
-  object multi extends TopLevel[multi with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object single extends TopLevel[single with Double]
-  
+  sealed trait single
+    extends StObject
+       with SelectionMode
 }
-

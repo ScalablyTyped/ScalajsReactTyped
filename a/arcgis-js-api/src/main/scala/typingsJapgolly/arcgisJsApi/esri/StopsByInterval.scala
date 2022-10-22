@@ -1,41 +1,47 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StopsByInterval extends Object {
+trait StopsByInterval
+  extends StObject
+     with Object {
+  
   /**
-    * Specifies a granularity of temporal data and allows you to visualize the data at specified intervals. It can be set at regular interval such as every hour or every day.
+    * Specifies a granularity of temporal data and allows you to visualize the data at specified intervals.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByInterval)
     */
   var interval: TimeInterval
+  
   /**
-    * A period of time with definitive start and end dates. The time slider widget's [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#fullTimeExtent) will be used if this property is not specified.
+    * A period of time with definitive start and end dates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByInterval)
     */
   var timeExtent: js.UndefOr[TimeExtent] = js.undefined
 }
-
 object StopsByInterval {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     interval: TimeInterval,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    timeExtent: TimeExtent = null
+    propertyIsEnumerable: PropertyKey => Boolean
   ): StopsByInterval = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), interval = interval.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[StopsByInterval]
   }
+  
+  extension [Self <: StopsByInterval](x: Self) {
+    
+    inline def setInterval(value: TimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    
+    inline def setTimeExtent(value: TimeExtent): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
+    
+    inline def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
+  }
 }
-

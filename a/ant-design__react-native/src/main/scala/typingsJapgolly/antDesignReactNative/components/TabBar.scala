@@ -1,49 +1,52 @@
 package typingsJapgolly.antDesignReactNative.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.tabBarMod.TabBarNativeProps
-import typingsJapgolly.antDesignReactNative.tabBarMod.default
-import typingsJapgolly.antDesignReactNative.tabBarStyleMod.TabBarStyle
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignReactNative.libTabBarMod.TabBarNativeProps
+import typingsJapgolly.antDesignReactNative.libTabBarStyleMod.TabBarStyle
+import typingsJapgolly.antDesignReactNative.libTabBarTabBarItemMod.TabBarItemProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TabBar {
-  def apply(
-    animated: js.UndefOr[Boolean] = js.undefined,
-    barTintColor: String = null,
-    styles: TabBarStyle = null,
-    swipeable: js.UndefOr[Boolean] = js.undefined,
-    tintColor: String = null,
-    unselectedTintColor: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TabBarNativeProps, default, Unit, TabBarNativeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (barTintColor != null) __obj.updateDynamic("barTintColor")(barTintColor.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeable)) __obj.updateDynamic("swipeable")(swipeable.asInstanceOf[js.Any])
-    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
-    if (unselectedTintColor != null) __obj.updateDynamic("unselectedTintColor")(unselectedTintColor.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.tabBarMod.TabBarNativeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.tabBarMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.tabBarMod.TabBarNativeProps])(children: _*)
+  object Item {
+    
+    inline def apply(title: String): SharedBuilder_TabBarItemProps_504391795[typingsJapgolly.antDesignReactNative.mod.TabBar.Item] = {
+      val __props = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+      new SharedBuilder_TabBarItemProps_504391795[typingsJapgolly.antDesignReactNative.mod.TabBar.Item](js.Array(this.component, __props.asInstanceOf[TabBarItemProps]))
+    }
+    
+    @JSImport("@ant-design/react-native", "TabBar.Item")
+    @js.native
+    val component: js.Object = js.native
+    
+    def withProps(p: TabBarItemProps): SharedBuilder_TabBarItemProps_504391795[typingsJapgolly.antDesignReactNative.mod.TabBar.Item] = new SharedBuilder_TabBarItemProps_504391795[typingsJapgolly.antDesignReactNative.mod.TabBar.Item](js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("@ant-design/react-native/lib/tab-bar", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("@ant-design/react-native", "TabBar")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.TabBar] {
+    
+    inline def animated(value: Boolean): this.type = set("animated", value.asInstanceOf[js.Any])
+    
+    inline def barTintColor(value: String): this.type = set("barTintColor", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: TabBarStyle): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def swipeable(value: Boolean): this.type = set("swipeable", value.asInstanceOf[js.Any])
+    
+    inline def tintColor(value: String): this.type = set("tintColor", value.asInstanceOf[js.Any])
+    
+    inline def unselectedTintColor(value: String): this.type = set("unselectedTintColor", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: TabBar.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TabBarNativeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

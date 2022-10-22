@@ -1,59 +1,53 @@
 package typingsJapgolly.reactNativeMaterialUi.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactNativeMaterialUi.AnonText
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactNativeMaterialUi.anon.Text
 import typingsJapgolly.reactNativeMaterialUi.mod.ButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Button {
-  def apply(
-    text: String,
-    accent: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    icon: String | Element = null,
-    onLongPress: js.UndefOr[Callback] = js.undefined,
-    onPress: js.UndefOr[Callback] = js.undefined,
-    primary: js.UndefOr[Boolean] = js.undefined,
-    raised: js.UndefOr[Boolean] = js.undefined,
-    style: AnonText = null,
-    testID: String = null,
-    upperCase: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ButtonProps, typingsJapgolly.reactNativeMaterialUi.mod.Button, Unit, ButtonProps] = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(accent)) __obj.updateDynamic("accent")(accent.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    onLongPress.foreach(p => __obj.updateDynamic("onLongPress")(p.toJsFn))
-    onPress.foreach(p => __obj.updateDynamic("onPress")(p.toJsFn))
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (!js.isUndefined(upperCase)) __obj.updateDynamic("upperCase")(upperCase.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeMaterialUi.mod.ButtonProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeMaterialUi.mod.Button](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeMaterialUi.mod.ButtonProps])(children: _*)
+  inline def apply(text: String): Builder = {
+    val __props = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ButtonProps]))
   }
+  
   @JSImport("react-native-material-ui", "Button")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeMaterialUi.mod.Button] {
+    
+    inline def accent(value: Boolean): this.type = set("accent", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: String | Element): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def iconVdomElement(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onLongPress(value: Callback): this.type = set("onLongPress", value.toJsFn)
+    
+    inline def onPress(value: Callback): this.type = set("onPress", value.toJsFn)
+    
+    inline def primary(value: Boolean): this.type = set("primary", value.asInstanceOf[js.Any])
+    
+    inline def raised(value: Boolean): this.type = set("raised", value.asInstanceOf[js.Any])
+    
+    inline def style(value: Text): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def testID(value: String): this.type = set("testID", value.asInstanceOf[js.Any])
+    
+    inline def upperCase(value: Boolean): this.type = set("upperCase", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ButtonProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

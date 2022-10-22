@@ -1,21 +1,17 @@
 package typingsJapgolly.reactWindow.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactWindow.reactWindowStrings.ltr
   - typingsJapgolly.reactWindow.reactWindowStrings.rtl
 */
-trait CSSDirection extends js.Object
-
+trait CSSDirection extends StObject
 object CSSDirection {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ltr: typingsJapgolly.reactWindow.reactWindowStrings.ltr = this.cast("ltr")
-  @scala.inline
-  def rtl: typingsJapgolly.reactWindow.reactWindowStrings.rtl = this.cast("rtl")
+  
+  inline def ltr: typingsJapgolly.reactWindow.reactWindowStrings.ltr = "ltr".asInstanceOf[typingsJapgolly.reactWindow.reactWindowStrings.ltr]
+  
+  inline def rtl: typingsJapgolly.reactWindow.reactWindowStrings.rtl = "rtl".asInstanceOf[typingsJapgolly.reactWindow.reactWindowStrings.rtl]
 }
-

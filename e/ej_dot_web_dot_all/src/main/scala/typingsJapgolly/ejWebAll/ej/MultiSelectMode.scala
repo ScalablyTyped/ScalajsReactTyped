@@ -1,38 +1,30 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MultiSelectMode extends js.Object
-
+sealed trait MultiSelectMode extends StObject
 @JSGlobal("ej.MultiSelectMode")
 @js.native
-object MultiSelectMode extends js.Object {
+object MultiSelectMode extends StObject {
+  
   //can select multiple items and it's separated by delimiterChar
   @js.native
-  sealed trait Delimiter extends MultiSelectMode
+  sealed trait Delimiter
+    extends StObject
+       with MultiSelectMode
   
   //can select only single item in DropDownList
   @js.native
-  sealed trait None extends MultiSelectMode
+  sealed trait None
+    extends StObject
+       with MultiSelectMode
   
   //can select multiple items and it's show's like visual box in textbox
   @js.native
-  sealed trait VisualMode extends MultiSelectMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MultiSelectMode with Double] = js.native
-  /* 1 */ @js.native
-  object Delimiter extends TopLevel[Delimiter with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 2 */ @js.native
-  object VisualMode extends TopLevel[VisualMode with Double]
-  
+  sealed trait VisualMode
+    extends StObject
+       with MultiSelectMode
 }
-

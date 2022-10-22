@@ -1,12 +1,18 @@
 package typingsJapgolly.reactInstantsearchDom.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-instantsearch-dom", "HitsPerPage")
 @js.native
-class HitsPerPage ()
-  extends Component[js.Any, js.Object, js.Any]
-
+open class HitsPerPage protected ()
+  extends Component[HitsPerPageProps, js.Object, Any] {
+  def this(props: HitsPerPageProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HitsPerPageProps, context: Any) = this()
+}

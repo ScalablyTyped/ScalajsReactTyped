@@ -1,28 +1,33 @@
 package typingsJapgolly.nodal.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IArrayMetadata
-  extends /* other */ StringDictionary[js.Any] {
+  extends StObject
+     with /* item */ StringDictionary[Any] {
+  
   var offset: js.UndefOr[Double] = js.undefined
+  
   var total: js.UndefOr[Double] = js.undefined
 }
-
 object IArrayMetadata {
-  @scala.inline
-  def apply(
-    StringDictionary: /* other */ StringDictionary[js.Any] = null,
-    offset: Int | Double = null,
-    total: Int | Double = null
-  ): IArrayMetadata = {
+  
+  inline def apply(): IArrayMetadata = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[IArrayMetadata]
   }
+  
+  extension [Self <: IArrayMetadata](x: Self) {
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+  }
 }
-

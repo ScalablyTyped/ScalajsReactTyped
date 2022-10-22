@@ -1,20 +1,23 @@
 package typingsJapgolly.elasticsearch.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FieldStatsResponseIndex extends js.Object {
+trait FieldStatsResponseIndex extends StObject {
+  
   var fields: StringDictionary[FieldStatsResponseField]
 }
-
 object FieldStatsResponseIndex {
-  @scala.inline
-  def apply(fields: StringDictionary[FieldStatsResponseField]): FieldStatsResponseIndex = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
   
+  inline def apply(fields: StringDictionary[FieldStatsResponseField]): FieldStatsResponseIndex = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldStatsResponseIndex]
   }
+  
+  extension [Self <: FieldStatsResponseIndex](x: Self) {
+    
+    inline def setFields(value: StringDictionary[FieldStatsResponseField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+  }
 }
-

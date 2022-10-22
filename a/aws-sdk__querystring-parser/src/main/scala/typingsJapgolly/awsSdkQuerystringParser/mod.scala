@@ -1,13 +1,15 @@
 package typingsJapgolly.awsSdkQuerystringParser
 
-import typingsJapgolly.awsSdkTypes.httpMod.QueryParameterBag
+import typingsJapgolly.awsSdkTypes.distTypesHttpMod.QueryParameterBag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/querystring-parser", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def parseQueryString(querystring: String): QueryParameterBag = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/querystring-parser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def parseQueryString(querystring: String): QueryParameterBag = ^.asInstanceOf[js.Dynamic].applyDynamic("parseQueryString")(querystring.asInstanceOf[js.Any]).asInstanceOf[QueryParameterBag]
 }
-

@@ -1,9 +1,9 @@
 package typingsJapgolly.suitescript
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjAssistantStep.
@@ -16,11 +16,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait nlobjAssistantStep
-  extends /**
+  extends StObject
+     with /**
   *
   * @return
   */
-Instantiable0[/* nlobjAssistantStep */ js.Any] {
+Instantiable0[Any] {
+  
   /**
     * return an array of the names of all fields entered by the user during this step.
     * @return {string[]}
@@ -31,6 +33,7 @@ Instantiable0[/* nlobjAssistantStep */ js.Any] {
     * @since 2009.2
     */
   def getAllFields(): js.Array[String] = js.native
+  
   /**
     * return an array of the names of all sublist fields entered by the user during this step
     * @param {string} group sublist name
@@ -43,6 +46,7 @@ Instantiable0[/* nlobjAssistantStep */ js.Any] {
     * @param group
     */
   def getAllLineItemFields(group: String): Unit = js.native
+  
   /**
     * return an array of the names of all sublists entered by the user during this step.
     * @return {string[]}
@@ -53,6 +57,7 @@ Instantiable0[/* nlobjAssistantStep */ js.Any] {
     * @since 2009.2
     */
   def getAllLineItems(): Unit = js.native
+  
   /**
     * return the value of a field entered by the user during this step.
     * @param {string} name field name
@@ -66,6 +71,7 @@ Instantiable0[/* nlobjAssistantStep */ js.Any] {
     * @return
     */
   def getFieldValue(name: String): String = js.native
+  
   /**
     * return the selected values of a multi-select field as an Array entered by the user during this step.
     * @param {string} name multi-select field name
@@ -78,6 +84,7 @@ Instantiable0[/* nlobjAssistantStep */ js.Any] {
     * @param name
     */
   def getFieldValues(name: String): js.Array[String] = js.native
+  
   /**
     * return the number of lines previously entered by the user in this step (or -1 if the sublist does not exist).
     * @param {string} group sublist name
@@ -90,7 +97,8 @@ Instantiable0[/* nlobjAssistantStep */ js.Any] {
     * @param group
     * @return
     */
-  def getLineItemCount(group: String): js.Any = js.native
+  def getLineItemCount(group: String): Any = js.native
+  
   /**
     * return the value of a sublist field entered by the user during this step.
     * @param {string}    group sublist name
@@ -107,7 +115,8 @@ Instantiable0[/* nlobjAssistantStep */ js.Any] {
     * @param line
     * @return
     */
-  def getLineItemValue(group: String, name: String, line: js.Any): String = js.native
+  def getLineItemValue(group: String, name: String, line: Any): String = js.native
+  
   /**
     * return the index of this step in the assistant page (1-based)
     * @return  {int} the index of this step in the assistant (1-based) based on the order in which the steps were added.
@@ -118,7 +127,8 @@ Instantiable0[/* nlobjAssistantStep */ js.Any] {
     * @since 2009.2
     * @return
     */
-  def getStepNumber(): js.Any = js.native
+  def getStepNumber(): Any = js.native
+  
   /**
     * set helper text for this assistant step.
     * @param {string} help inline help text to display on assistant page for this step
@@ -132,6 +142,7 @@ Instantiable0[/* nlobjAssistantStep */ js.Any] {
     * @return
     */
   def setHelpText(help: String): js.Function0[Unit] = js.native
+  
   /**
     * set the label for this assistant step.
     * @param {string} label display label used for this assistant step
@@ -144,6 +155,5 @@ Instantiable0[/* nlobjAssistantStep */ js.Any] {
     * @param label
     * @return
     */
-  def setLabel(label: String): js.Any = js.native
+  def setLabel(label: String): Any = js.native
 }
-

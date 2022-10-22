@@ -1,20 +1,28 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Flexible wrapper around `ArrayBuffer` that also provides
-  * typed array views on demand.
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "ViewableBuffer")
 @js.native
-class ViewableBuffer protected ()
-  extends typingsJapgolly.pixiJs.PIXI.ViewableBuffer {
-  def this(size: Double) = this()
+open class ViewableBuffer protected ()
+  extends typingsJapgolly.pixiCore.mod.ViewableBuffer {
+  /**
+    * @param arrayBuffer - The source array buffer.
+    */
+  def this(arrayBuffer: js.typedarray.ArrayBuffer) = this()
+  /**
+    * @param length - The size of the buffer in bytes.
+    */
+  def this(length: Double) = this()
 }
-
+/* static members */
+object ViewableBuffer {
+  
+  @JSImport("pixi.js", "ViewableBuffer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def sizeOf(`type`: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[Double]
+}

@@ -10,15 +10,13 @@ Sticky header and body for Reactabular
 | ------------------ | :-------------: |
 | Full name          | reactabular-sticky |
 | Keywords           | react, reactjs, table, tables, reactabular |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 93835 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7086.666666666667 |
+| # stars            | 910.0 |
 
 ## Links
 - [Homepage](http://reactabular.js.org/)
-- [Bugs](https://github.com/reactabular/reactabular/issues)
-- [Repository](https://github.com/reactabular/reactabular)
 - [Npm](https://www.npmjs.com/package/reactabular-sticky)
     
 

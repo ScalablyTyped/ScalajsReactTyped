@@ -1,30 +1,33 @@
 package typingsJapgolly.a11yDialog
 
-import typingsJapgolly.a11yDialog.mod.DialogEvents
+import typingsJapgolly.a11yDialog.mod.A11yDialog.EventType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object a11yDialogStrings {
-  @js.native
-  sealed trait create extends DialogEvents
   
   @js.native
-  sealed trait destroy extends DialogEvents
+  sealed trait create
+    extends StObject
+       with EventType
+  inline def create: create = "create".asInstanceOf[create]
   
   @js.native
-  sealed trait hide extends DialogEvents
+  sealed trait destroy
+    extends StObject
+       with EventType
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait show extends DialogEvents
+  sealed trait hide
+    extends StObject
+       with EventType
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
+  @js.native
+  sealed trait show
+    extends StObject
+       with EventType
+  inline def show: show = "show".asInstanceOf[show]
 }
-

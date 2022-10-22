@@ -1,0 +1,12 @@
+package typingsJapgolly.sipJs.libCoreMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("sip.js/lib/core", "TransportError")
+@js.native
+open class TransportError ()
+  extends typingsJapgolly.sipJs.libCoreExceptionsMod.TransportError {
+  def this(message: String) = this()
+}

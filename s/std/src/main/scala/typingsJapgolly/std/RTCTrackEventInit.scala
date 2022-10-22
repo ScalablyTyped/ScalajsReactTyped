@@ -1,33 +1,44 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCTrackEventInit extends EventInit {
+trait RTCTrackEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
   var receiver: RTCRtpReceiver
-  var streams: js.UndefOr[js.Array[org.scalajs.dom.experimental.mediastream.MediaStream]] = js.undefined
-  var track: org.scalajs.dom.experimental.mediastream.MediaStreamTrack
+  
+  /* standard dom */
+  var streams: js.UndefOr[js.Array[org.scalajs.dom.MediaStream]] = js.undefined
+  
+  /* standard dom */
+  var track: org.scalajs.dom.MediaStreamTrack
+  
+  /* standard dom */
   var transceiver: RTCRtpTransceiver
 }
-
 object RTCTrackEventInit {
-  @scala.inline
-  def apply(
-    receiver: RTCRtpReceiver,
-    track: org.scalajs.dom.experimental.mediastream.MediaStreamTrack,
-    transceiver: RTCRtpTransceiver,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    streams: js.Array[org.scalajs.dom.experimental.mediastream.MediaStream] = null
-  ): RTCTrackEventInit = {
+  
+  inline def apply(receiver: RTCRtpReceiver, track: org.scalajs.dom.MediaStreamTrack, transceiver: RTCRtpTransceiver): RTCTrackEventInit = {
     val __obj = js.Dynamic.literal(receiver = receiver.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], transceiver = transceiver.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (streams != null) __obj.updateDynamic("streams")(streams.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCTrackEventInit]
   }
+  
+  extension [Self <: RTCTrackEventInit](x: Self) {
+    
+    inline def setReceiver(value: RTCRtpReceiver): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
+    
+    inline def setStreams(value: js.Array[org.scalajs.dom.MediaStream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
+    
+    inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
+    
+    inline def setStreamsVarargs(value: org.scalajs.dom.MediaStream*): Self = StObject.set(x, "streams", js.Array(value*))
+    
+    inline def setTrack(value: org.scalajs.dom.MediaStreamTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    
+    inline def setTransceiver(value: RTCRtpTransceiver): Self = StObject.set(x, "transceiver", value.asInstanceOf[js.Any])
+  }
 }
-

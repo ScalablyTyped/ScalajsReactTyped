@@ -1,34 +1,38 @@
 package typingsJapgolly.chrome.chrome.input.ime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InputContext extends js.Object {
+trait InputContext extends StObject {
+  
   /**
     * Whether the text field wants auto-complete.
     * @since Chrome 40.
     */
   var autoComplete: Boolean
+  
   /**
     * Whether the text field wants auto-correct.
     * @since Chrome 40.
     */
   var autoCorrect: Boolean
+  
   /** This is used to specify targets of text field operations. This ID becomes invalid as soon as onBlur is called. */
   var contextID: Double
+  
   /**
     * Whether the text field wants spell-check.
     * @since Chrome 40.
     */
   var spellCheck: Boolean
+  
   /** Type of value this text field edits, (Text, Number, URL, etc) */
   var `type`: String
 }
-
 object InputContext {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     autoComplete: Boolean,
     autoCorrect: Boolean,
     contextID: Double,
@@ -39,5 +43,17 @@ object InputContext {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputContext]
   }
+  
+  extension [Self <: InputContext](x: Self) {
+    
+    inline def setAutoComplete(value: Boolean): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCorrect(value: Boolean): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
+    
+    inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
+    
+    inline def setSpellCheck(value: Boolean): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

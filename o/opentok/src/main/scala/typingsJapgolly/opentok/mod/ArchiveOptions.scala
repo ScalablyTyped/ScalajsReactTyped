@@ -1,33 +1,62 @@
 package typingsJapgolly.opentok.mod
 
+import typingsJapgolly.opentok.opentokStrings.auto
+import typingsJapgolly.opentok.opentokStrings.manual
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArchiveOptions extends js.Object {
+trait ArchiveOptions extends StObject {
+  
   var hasAudio: js.UndefOr[Boolean] = js.undefined
+  
   var hasVideo: js.UndefOr[Boolean] = js.undefined
+  
   var layout: js.UndefOr[ArchiveLayoutOptions] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var outputMode: js.UndefOr[OutputMode] = js.undefined
+  
+  var resolution: js.UndefOr[String] = js.undefined
+  
+  var streamMode: js.UndefOr[auto | manual] = js.undefined
 }
-
 object ArchiveOptions {
-  @scala.inline
-  def apply(
-    hasAudio: js.UndefOr[Boolean] = js.undefined,
-    hasVideo: js.UndefOr[Boolean] = js.undefined,
-    layout: ArchiveLayoutOptions = null,
-    name: String = null,
-    outputMode: OutputMode = null
-  ): ArchiveOptions = {
+  
+  inline def apply(): ArchiveOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasAudio)) __obj.updateDynamic("hasAudio")(hasAudio.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasVideo)) __obj.updateDynamic("hasVideo")(hasVideo.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outputMode != null) __obj.updateDynamic("outputMode")(outputMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArchiveOptions]
   }
+  
+  extension [Self <: ArchiveOptions](x: Self) {
+    
+    inline def setHasAudio(value: Boolean): Self = StObject.set(x, "hasAudio", value.asInstanceOf[js.Any])
+    
+    inline def setHasAudioUndefined: Self = StObject.set(x, "hasAudio", js.undefined)
+    
+    inline def setHasVideo(value: Boolean): Self = StObject.set(x, "hasVideo", value.asInstanceOf[js.Any])
+    
+    inline def setHasVideoUndefined: Self = StObject.set(x, "hasVideo", js.undefined)
+    
+    inline def setLayout(value: ArchiveLayoutOptions): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOutputMode(value: OutputMode): Self = StObject.set(x, "outputMode", value.asInstanceOf[js.Any])
+    
+    inline def setOutputModeUndefined: Self = StObject.set(x, "outputMode", js.undefined)
+    
+    inline def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    
+    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    
+    inline def setStreamMode(value: auto | manual): Self = StObject.set(x, "streamMode", value.asInstanceOf[js.Any])
+    
+    inline def setStreamModeUndefined: Self = StObject.set(x, "streamMode", js.undefined)
+  }
 }
-

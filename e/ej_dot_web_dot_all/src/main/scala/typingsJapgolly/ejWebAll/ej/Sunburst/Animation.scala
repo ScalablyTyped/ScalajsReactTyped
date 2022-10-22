@@ -1,31 +1,24 @@
 package typingsJapgolly.ejWebAll.ej.Sunburst
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Animation extends js.Object
-
+sealed trait Animation extends StObject
 @JSGlobal("ej.Sunburst.Animation")
 @js.native
-object Animation extends js.Object {
-  //string
-  @js.native
-  sealed trait FadeIn extends Animation
+object Animation extends StObject {
   
   //string
   @js.native
-  sealed trait Rotation extends Animation
+  sealed trait FadeIn
+    extends StObject
+       with Animation
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Animation with Double] = js.native
-  /* 1 */ @js.native
-  object FadeIn extends TopLevel[FadeIn with Double]
-  
-  /* 0 */ @js.native
-  object Rotation extends TopLevel[Rotation with Double]
-  
+  //string
+  @js.native
+  sealed trait Rotation
+    extends StObject
+       with Animation
 }
-

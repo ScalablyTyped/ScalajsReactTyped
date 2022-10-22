@@ -1,34 +1,34 @@
 package typingsJapgolly.mdast.mod
 
 import typingsJapgolly.mdast.mdastStrings.paragraph
-import typingsJapgolly.unist.mod.Data
-import typingsJapgolly.unist.mod.Position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Paragraph
-  extends Parent
-     with BlockContent {
+  extends StObject
+     with Parent {
+  
   @JSName("children")
   var children_Paragraph: js.Array[PhrasingContent]
+  
   @JSName("type")
   var type_Paragraph: paragraph
 }
-
 object Paragraph {
-  @scala.inline
-  def apply(
-    children: js.Array[PhrasingContent],
-    `type`: paragraph,
-    data: Data = null,
-    position: Position = null
-  ): Paragraph = {
+  
+  inline def apply(children: js.Array[PhrasingContent]): Paragraph = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("paragraph")
     __obj.asInstanceOf[Paragraph]
   }
+  
+  extension [Self <: Paragraph](x: Self) {
+    
+    inline def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenVarargs(value: PhrasingContent*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setType(value: paragraph): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

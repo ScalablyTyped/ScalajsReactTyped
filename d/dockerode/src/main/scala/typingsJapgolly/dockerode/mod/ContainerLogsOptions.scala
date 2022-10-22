@@ -1,39 +1,67 @@
 package typingsJapgolly.dockerode.mod
 
+import org.scalajs.dom.AbortSignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContainerLogsOptions extends js.Object {
+trait ContainerLogsOptions extends StObject {
+  
+  var abortSignal: js.UndefOr[AbortSignal] = js.undefined
+  
   var details: js.UndefOr[Boolean] = js.undefined
+  
   var follow: js.UndefOr[Boolean] = js.undefined
+  
   var since: js.UndefOr[Double] = js.undefined
+  
   var stderr: js.UndefOr[Boolean] = js.undefined
+  
   var stdout: js.UndefOr[Boolean] = js.undefined
+  
   var tail: js.UndefOr[Double] = js.undefined
+  
   var timestamps: js.UndefOr[Boolean] = js.undefined
 }
-
 object ContainerLogsOptions {
-  @scala.inline
-  def apply(
-    details: js.UndefOr[Boolean] = js.undefined,
-    follow: js.UndefOr[Boolean] = js.undefined,
-    since: Int | Double = null,
-    stderr: js.UndefOr[Boolean] = js.undefined,
-    stdout: js.UndefOr[Boolean] = js.undefined,
-    tail: Int | Double = null,
-    timestamps: js.UndefOr[Boolean] = js.undefined
-  ): ContainerLogsOptions = {
+  
+  inline def apply(): ContainerLogsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(details)) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
-    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
-    if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
-    if (tail != null) __obj.updateDynamic("tail")(tail.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerLogsOptions]
   }
+  
+  extension [Self <: ContainerLogsOptions](x: Self) {
+    
+    inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
+    
+    inline def setAbortSignalUndefined: Self = StObject.set(x, "abortSignal", js.undefined)
+    
+    inline def setDetails(value: Boolean): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    
+    inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+    
+    inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
+    
+    inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    
+    inline def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+    
+    inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+    
+    inline def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+    
+    inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+    
+    inline def setTail(value: Double): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
+    
+    inline def setTailUndefined: Self = StObject.set(x, "tail", js.undefined)
+    
+    inline def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
+  }
 }
-

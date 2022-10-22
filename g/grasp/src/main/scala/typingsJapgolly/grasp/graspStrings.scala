@@ -1,25 +1,25 @@
 package typingsJapgolly.grasp
 
 import typingsJapgolly.grasp.mod.QueryEngineType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object graspStrings {
-  @js.native
-  sealed trait buffer extends js.Object
   
   @js.native
-  sealed trait equery extends QueryEngineType
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
-  sealed trait squery extends QueryEngineType
+  sealed trait equery
+    extends StObject
+       with QueryEngineType
+  inline def equery: equery = "equery".asInstanceOf[equery]
   
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
-  @scala.inline
-  def equery: equery = "equery".asInstanceOf[equery]
-  @scala.inline
-  def squery: squery = "squery".asInstanceOf[squery]
+  @js.native
+  sealed trait squery
+    extends StObject
+       with QueryEngineType
+  inline def squery: squery = "squery".asInstanceOf[squery]
 }
-

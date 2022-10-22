@@ -1,18 +1,22 @@
 package typingsJapgolly.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReactServeOptions extends ServeOptions {
+trait ReactServeOptions
+  extends StObject
+     with ServeOptions {
+  
   var ci: js.UndefOr[Boolean] = js.undefined
+  
   var https: js.UndefOr[Boolean] = js.undefined
+  
   var reactEditor: js.UndefOr[String] = js.undefined
 }
-
 object ReactServeOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     `--`: js.Array[String],
     address: String,
     devapp: Boolean,
@@ -23,29 +27,25 @@ object ReactServeOptions {
     livereload: Boolean,
     open: Boolean,
     port: Double,
-    proxy: Boolean,
-    browser: String = null,
-    browserOption: String = null,
-    ci: js.UndefOr[Boolean] = js.undefined,
-    externalAddressRequired: js.UndefOr[Boolean] = js.undefined,
-    https: js.UndefOr[Boolean] = js.undefined,
-    platform: String = null,
-    project: String = null,
-    reactEditor: String = null,
-    verbose: js.UndefOr[Boolean] = js.undefined
+    proxy: Boolean
   ): ReactServeOptions = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], devapp = devapp.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], lab = lab.asInstanceOf[js.Any], labHost = labHost.asInstanceOf[js.Any], labPort = labPort.asInstanceOf[js.Any], livereload = livereload.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any])
     __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
-    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
-    if (browserOption != null) __obj.updateDynamic("browserOption")(browserOption.asInstanceOf[js.Any])
-    if (!js.isUndefined(ci)) __obj.updateDynamic("ci")(ci.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalAddressRequired)) __obj.updateDynamic("externalAddressRequired")(externalAddressRequired.asInstanceOf[js.Any])
-    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
-    if (reactEditor != null) __obj.updateDynamic("reactEditor")(reactEditor.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactServeOptions]
   }
+  
+  extension [Self <: ReactServeOptions](x: Self) {
+    
+    inline def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
+    
+    inline def setCiUndefined: Self = StObject.set(x, "ci", js.undefined)
+    
+    inline def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+    
+    inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+    
+    inline def setReactEditor(value: String): Self = StObject.set(x, "reactEditor", value.asInstanceOf[js.Any])
+    
+    inline def setReactEditorUndefined: Self = StObject.set(x, "reactEditor", js.undefined)
+  }
 }
-

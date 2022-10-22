@@ -1,57 +1,55 @@
 package typingsJapgolly.jqueryFinger
 
-import typingsJapgolly.jquery.JQueryMouseEventObject
+import typingsJapgolly.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.std.Event_ because Already inherited
-- typingsJapgolly.jquery.BaseJQueryEventObject because Already inherited
-- typingsJapgolly.jquery.JQueryInputEventObject because Already inherited
-- typingsJapgolly.jquery.JQueryKeyEventObject because var conflicts: altKey, cancelBubble, ctrlKey, currentTarget_BaseJQueryEventObject, data, delegateTarget, metaKey, namespace, originalEvent, pageX, pageY, relatedTarget, result, returnValue, shiftKey, target_BaseJQueryEventObject, which. Inlined char, charCode, key, keyCode */ @js.native
-trait JQueryFingerEventObject extends JQueryMouseEventObject {
+@js.native
+trait JQueryFingerEventObject
+  extends StObject
+     with JQueryEventObject {
+  
   /**
     * The absolute x delta since the last event.
     */
   var adx: Double = js.native
+  
   /**
     * The absolute y delta since the last event.
     */
   var ady: Double = js.native
-  /** @deprecated */
-  var char: String = js.native
-  /** @deprecated */
-  var charCode: Double = js.native
+  
   /**
     * The direction of the motion. Value is 1 if the motion is 'positive'
     * (left-to-right or top-to-bottom) or -1 if 'negative'(right-to-left or
     * bottom-to-top).
     */
   var direction: Double = js.native
+  
   /**
     * The x delta since the last event.
     */
   var dx: Double = js.native
+  
   /**
     * The y delta since the last event.
     */
   var dy: Double = js.native
-  var key: String = js.native
-  /** @deprecated */
-  var keyCode: Double = js.native
+  
   /**
     * The orientation of the motion. Adjusted by $.Finger.motionThreshhold.
     * Value is 'horizontal' or 'vertical'.
     */
   var orientation: String = js.native
+  
   /**
     * The x page coordinate.
     */
   var x: Double = js.native
+  
   /**
     * The y page coordinate.
     */
   var y: Double = js.native
 }
-

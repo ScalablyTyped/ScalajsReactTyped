@@ -1,21 +1,16 @@
 organization := "org.scalablytyped.japgolly"
 name := "popmotion-pose"
-version := "3.4.11-1a4847"
-scalaVersion := "2.13.1"
+version := "3.4.11-f574a3"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "framesync" % "4.0.4-fdcb2d",
-  "org.scalablytyped.japgolly" %%% "popmotion" % "8.7.1-c000dd",
-  "org.scalablytyped.japgolly" %%% "popmotion__easing" % "1.0.2-18cc67",
-  "org.scalablytyped.japgolly" %%% "popmotion__popcorn" % "0.4.4-e4ae3a",
-  "org.scalablytyped.japgolly" %%% "pose-core" % "2.1.1-9d3cf0",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "style-value-types" % "3.1.7-06c975",
-  "org.scalablytyped.japgolly" %%% "stylefire" % "7.0.1-4574ed")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "popmotion__easing" % "1.0.2-982ef2",
+  "org.scalablytyped.japgolly" %%% "pose-core" % "2.1.1-b781db",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "style-value-types" % "5.1.2-0eb427",
+  "org.scalablytyped.japgolly" %%% "ts-essentials" % "9.3.0-7966ea")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

@@ -10,10 +10,10 @@ Practical math utils for components
 | ------------------ | :-------------: |
 | Full name          | mumath |
 | Keywords           | math, geometry |
-| # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 2467547 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 664928.6666666666 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/dfcreative/mumath)

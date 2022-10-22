@@ -1,37 +1,55 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColorPaletteOptions extends js.Object {
+trait ColorPaletteOptions extends StObject {
+  
   var change: js.UndefOr[js.Function1[/* e */ ColorPaletteEvent, Unit]] = js.undefined
+  
   var columns: js.UndefOr[Double] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
-  var palette: js.UndefOr[String | js.Any] = js.undefined
+  
+  var palette: js.UndefOr[String | Any] = js.undefined
+  
   var tileSize: js.UndefOr[ColorPaletteTileSize] = js.undefined
+  
   var value: js.UndefOr[String] = js.undefined
 }
-
 object ColorPaletteOptions {
-  @scala.inline
-  def apply(
-    change: /* e */ ColorPaletteEvent => Callback = null,
-    columns: Int | Double = null,
-    name: String = null,
-    palette: String | js.Any = null,
-    tileSize: ColorPaletteTileSize = null,
-    value: String = null
-  ): ColorPaletteOptions = {
+  
+  inline def apply(): ColorPaletteOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ColorPaletteEvent) => change(t0).runNow()))
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorPaletteOptions]
   }
+  
+  extension [Self <: ColorPaletteOptions](x: Self) {
+    
+    inline def setChange(value: /* e */ ColorPaletteEvent => Callback): Self = StObject.set(x, "change", js.Any.fromFunction1((t0: /* e */ ColorPaletteEvent) => value(t0).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPalette(value: String | Any): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    
+    inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+    
+    inline def setTileSize(value: ColorPaletteTileSize): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+    
+    inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

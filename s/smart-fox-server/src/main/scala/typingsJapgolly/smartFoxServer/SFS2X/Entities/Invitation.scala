@@ -1,48 +1,51 @@
 package typingsJapgolly.smartFoxServer.SFS2X.Entities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region Invitation
 // http://docs2x.smartfoxserver.com/api-docs/jsdoc/symbols/SFS2X.Entities.Invitation.html
-@JSGlobal("SFS2X.Entities.Invitation")
-@js.native
-object Invitation extends js.Object {
-  @js.native
-  class InvitationReply () extends js.Object
+object Invitation {
   
-  @js.native
-  class SFSInvitation protected () extends js.Object {
-    /**
-      * Creates a new SFSInvitation instance.
-      * @param {SFSUser} inviter          A SFSUser object corresponding to the user who sent the invitation.
-      * @param {SFSUser} invitee          A SFSUser object corresponding to the user who received the invitation.
-      * @param {number}  secondsForAnswer The number of seconds available to the invitee to reply to the invitation.
-      * @param {Object}  params           An object containing a custom set of parameters representing the invitation details.
-      */
-    def this(inviter: SFSUser, invitee: SFSUser, secondsForAnswer: Double, params: js.Object) = this()
+  trait InvitationReply extends StObject
+  
+  trait SFSInvitation extends StObject {
+    
     /** @type {number} Indicates the id of the invitation. */
-    var id: Double = js.native
+    var id: Double
+    
     /** @type {SFSUser} Returns the SFSUser object corresponding to the user who received the invitation. */
-    var invitee: SFSUser = js.native
+    var invitee: SFSUser
+    
     /** @type {SFSUser} Returns the SFSUser object corresponding to the user who sent the invitation. */
-    var inviter: SFSUser = js.native
+    var inviter: SFSUser
+    
     /** @type {Object} Returns an object containing a custom set of parameters. */
-    var params: js.Object = js.native
+    var params: js.Object
+    
     /** @type {number} Returns the number of seconds available to the invitee to reply to the invitation, after which the invitation expires. */
-    var secondsForAnswer: Double = js.native
+    var secondsForAnswer: Double
   }
-  
-  /* static members */
-  @js.native
-  object InvitationReply extends js.Object {
-    /** @type {number} Invitation is accepted. */
-    var ACCEPT: Double = js.native
-    /** @type {number} Invitation is refused. */
-    var REFUSE: Double = js.native
+  object SFSInvitation {
+    
+    inline def apply(id: Double, invitee: SFSUser, inviter: SFSUser, params: js.Object, secondsForAnswer: Double): SFSInvitation = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invitee = invitee.asInstanceOf[js.Any], inviter = inviter.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], secondsForAnswer = secondsForAnswer.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SFSInvitation]
+    }
+    
+    extension [Self <: SFSInvitation](x: Self) {
+      
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setInvitee(value: SFSUser): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
+      
+      inline def setInviter(value: SFSUser): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
+      
+      inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      
+      inline def setSecondsForAnswer(value: Double): Self = StObject.set(x, "secondsForAnswer", value.asInstanceOf[js.Any])
+    }
   }
-  
 }
-

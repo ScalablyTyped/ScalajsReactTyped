@@ -1,7 +1,7 @@
 
 # Scala.js typings for get-own-enumerable-property-symbols
 
-Typings are for version 3.0.0
+Typings are for version 3.0.2
 
 ## Library description:
 Returns an array of all enumerable symbol properties found directly upon a given object
@@ -10,15 +10,12 @@ Returns an array of all enumerable symbol properties found directly upon a given
 | ------------------ | :-------------: |
 | Full name          | get-own-enumerable-property-symbols |
 | Keywords           | get, enumerable, symbol, property, key, object |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 113977944 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.9759446666666668E7 |
+| # stars            | 6.0 |
 
 ## Links
-- [Homepage](https://github.com/mightyiam/get-own-enumerable-property-symbols#readme)
-- [Bugs](https://github.com/mightyiam/get-own-enumerable-property-symbols/issues)
-- [Repository](https://github.com/mightyiam/get-own-enumerable-property-symbols)
 - [Npm](https://www.npmjs.com/package/get-own-enumerable-property-symbols)
     
 

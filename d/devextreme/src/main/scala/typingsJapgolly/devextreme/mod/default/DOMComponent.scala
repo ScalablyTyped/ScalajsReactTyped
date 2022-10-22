@@ -1,37 +1,35 @@
 package typingsJapgolly.devextreme.mod.default
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.AnonDevice
-import typingsJapgolly.devextreme.mod.DevExpress.DOMComponentOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalajs.dom.Element
+import typingsJapgolly.devextreme.mod.DevExpress.DOMComponent.Properties
+import typingsJapgolly.devextreme.mod.DevExpress.core.DefaultOptionsRule
+import typingsJapgolly.devextreme.mod.DevExpress.core.UserDefinedElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "DOMComponent")
+@JSImport("devextreme", "default.DOMComponent")
 @js.native
-class DOMComponent protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.DOMComponent {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(
-    element: JQuery,
-    options: DOMComponentOptions[typingsJapgolly.devextreme.mod.DevExpress.DOMComponent]
-  ) = this()
-  def this(
-    element: Element,
-    options: DOMComponentOptions[typingsJapgolly.devextreme.mod.DevExpress.DOMComponent]
-  ) = this()
+open class DOMComponent[TProperties] protected ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.DOMComponent[TProperties] {
+  def this(element: UserDefinedElement[Element]) = this()
+  def this(element: UserDefinedElement[Element], options: TProperties) = this()
 }
-
 /* static members */
-@JSImport("devextreme", "DOMComponent")
-@js.native
-object DOMComponent extends js.Object {
-  /** Specifies the device-dependent default configuration options for this component. */
-  def defaultOptions(rule: AnonDevice): Unit = js.native
-  def getInstance(element: JQuery): typingsJapgolly.devextreme.mod.DevExpress.DOMComponent = js.native
-  /** Gets the instance of a widget found using its DOM node. */
-  def getInstance(element: typingsJapgolly.std.Element): typingsJapgolly.devextreme.mod.DevExpress.DOMComponent = js.native
+object DOMComponent {
+  
+  @JSImport("devextreme", "default.DOMComponent")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Specifies the device-dependent default configuration properties for this component.
+    */
+  inline def defaultOptions[TProperties](rule: DefaultOptionsRule[TProperties]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")(rule.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /**
+    * Gets the instance of a UI component found using its DOM node.
+    */
+  inline def getInstance(element: UserDefinedElement[Element]): typingsJapgolly.devextreme.mod.DevExpress.DOMComponent[Properties] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.devextreme.mod.DevExpress.DOMComponent[Properties]]
 }
-

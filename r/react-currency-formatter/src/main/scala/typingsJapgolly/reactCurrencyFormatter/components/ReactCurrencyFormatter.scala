@@ -1,49 +1,72 @@
 package typingsJapgolly.reactCurrencyFormatter.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactCurrencyFormatter.mod.CurrencyFormatterProps
 import typingsJapgolly.reactCurrencyFormatter.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactCurrencyFormatter {
-  def apply(
-    quantity: Double,
-    currency: String = null,
-    decimal: String = null,
-    group: String = null,
-    locale: String = null,
-    pattern: String = null,
-    symbol: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CurrencyFormatterProps, ^, Unit, CurrencyFormatterProps] = {
-    val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any])
   
-      if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactCurrencyFormatter.mod.CurrencyFormatterProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactCurrencyFormatter.mod.^](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactCurrencyFormatter.mod.CurrencyFormatterProps])(children: _*)
+  inline def apply(quantity: Double): Builder = {
+    val __props = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[CurrencyFormatterProps]))
   }
+  
+  object ReactCurrencyFormatter {
+    
+    inline def apply(quantity: Double): typingsJapgolly.reactCurrencyFormatter.components.ReactCurrencyFormatter.ReactCurrencyFormatter.Builder = {
+      val __props = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any])
+      new typingsJapgolly.reactCurrencyFormatter.components.ReactCurrencyFormatter.ReactCurrencyFormatter.Builder(js.Array(this.component, __props.asInstanceOf[CurrencyFormatterProps]))
+    }
+    
+    @JSImport("react-currency-formatter", JSImport.Namespace)
+    @js.native
+    val component: js.Object = js.native
+    
+    @scala.inline
+    open class Builder (val args: js.Array[Any])
+      extends AnyVal
+         with StBuildingComponent[^] {
+      
+      inline def currency(value: String): this.type = set("currency", value.asInstanceOf[js.Any])
+      
+      inline def decimal(value: String): this.type = set("decimal", value.asInstanceOf[js.Any])
+      
+      inline def group(value: String): this.type = set("group", value.asInstanceOf[js.Any])
+      
+      inline def locale(value: String): this.type = set("locale", value.asInstanceOf[js.Any])
+      
+      inline def pattern(value: String): this.type = set("pattern", value.asInstanceOf[js.Any])
+      
+      inline def symbol(value: String): this.type = set("symbol", value.asInstanceOf[js.Any])
+    }
+    
+    def withProps(p: CurrencyFormatterProps): typingsJapgolly.reactCurrencyFormatter.components.ReactCurrencyFormatter.ReactCurrencyFormatter.Builder = new typingsJapgolly.reactCurrencyFormatter.components.ReactCurrencyFormatter.ReactCurrencyFormatter.Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
   @JSImport("react-currency-formatter", JSImport.Namespace)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def currency(value: String): this.type = set("currency", value.asInstanceOf[js.Any])
+    
+    inline def decimal(value: String): this.type = set("decimal", value.asInstanceOf[js.Any])
+    
+    inline def group(value: String): this.type = set("group", value.asInstanceOf[js.Any])
+    
+    inline def locale(value: String): this.type = set("locale", value.asInstanceOf[js.Any])
+    
+    inline def pattern(value: String): this.type = set("pattern", value.asInstanceOf[js.Any])
+    
+    inline def symbol(value: String): this.type = set("symbol", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: CurrencyFormatterProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

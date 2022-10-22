@@ -10,10 +10,10 @@ The lodash method `_.castArray` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.castarray |
 | Keywords           | lodash-modularized, castarray |
-| # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 5046224 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1940267.6666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

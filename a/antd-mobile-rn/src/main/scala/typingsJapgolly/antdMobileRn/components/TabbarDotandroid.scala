@@ -1,49 +1,38 @@
 package typingsJapgolly.antdMobileRn.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.tabBarStyleIndexNativeMod.ITabBarStyle
-import typingsJapgolly.antdMobileRn.tabbarAndroidMod.TabBarNativeProps
-import typingsJapgolly.antdMobileRn.tabbarAndroidMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.libTabBarStyleIndexDotnativeMod.ITabBarStyle
+import typingsJapgolly.antdMobileRn.libTabBarTabbarDotandroidMod.TabBarNativeProps
+import typingsJapgolly.antdMobileRn.libTabBarTabbarDotandroidMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TabbarDotandroid {
-  def apply(
-    animated: js.UndefOr[Boolean] = js.undefined,
-    barTintColor: String = null,
-    styles: ITabBarStyle = null,
-    swipeable: js.UndefOr[Boolean] = js.undefined,
-    tintColor: String = null,
-    unselectedTintColor: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TabBarNativeProps, default, Unit, TabBarNativeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (barTintColor != null) __obj.updateDynamic("barTintColor")(barTintColor.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeable)) __obj.updateDynamic("swipeable")(swipeable.asInstanceOf[js.Any])
-    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
-    if (unselectedTintColor != null) __obj.updateDynamic("unselectedTintColor")(unselectedTintColor.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.tabbarAndroidMod.TabBarNativeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.tabbarAndroidMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.tabbarAndroidMod.TabBarNativeProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn/lib/tab-bar/tabbar.android", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def animated(value: Boolean): this.type = set("animated", value.asInstanceOf[js.Any])
+    
+    inline def barTintColor(value: String): this.type = set("barTintColor", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: ITabBarStyle): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def swipeable(value: Boolean): this.type = set("swipeable", value.asInstanceOf[js.Any])
+    
+    inline def tintColor(value: String): this.type = set("tintColor", value.asInstanceOf[js.Any])
+    
+    inline def unselectedTintColor(value: String): this.type = set("unselectedTintColor", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: TabbarDotandroid.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TabBarNativeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

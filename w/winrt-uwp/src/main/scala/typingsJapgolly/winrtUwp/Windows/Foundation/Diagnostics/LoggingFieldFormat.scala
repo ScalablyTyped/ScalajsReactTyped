@@ -1,151 +1,127 @@
 package typingsJapgolly.winrtUwp.Windows.Foundation.Diagnostics
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LoggingFieldFormat extends js.Object
-
+sealed trait LoggingFieldFormat extends StObject
 /** Specifies the format of an event field. */
 @JSGlobal("Windows.Foundation.Diagnostics.LoggingFieldFormat")
 @js.native
-object LoggingFieldFormat extends js.Object {
-  /** A boolean field. */
-  @js.native
-  sealed trait boolean extends LoggingFieldFormat
+object LoggingFieldFormat extends StObject {
   
   /** No format is specified. */
   @js.native
-  sealed trait default extends LoggingFieldFormat
+  sealed trait default
+    extends StObject
+       with LoggingFieldFormat
+  
+  /** A boolean field. */
+  @js.native
+  sealed trait boolean
+    extends StObject
+       with LoggingFieldFormat
   
   /** A 64-bit FILETIME value. */
   @js.native
-  sealed trait fileTime extends LoggingFieldFormat
+  sealed trait fileTime
+    extends StObject
+       with LoggingFieldFormat
   
   /** A hexadecimal field. */
   @js.native
-  sealed trait hexadecimal extends LoggingFieldFormat
+  sealed trait hexadecimal
+    extends StObject
+       with LoggingFieldFormat
   
   /** The field is hidden. */
   @js.native
-  sealed trait hidden extends LoggingFieldFormat
+  sealed trait hidden
+    extends StObject
+       with LoggingFieldFormat
   
   /** A 32-bit Windows HRESULT value. */
   @js.native
-  sealed trait hresult extends LoggingFieldFormat
+  sealed trait hresult
+    extends StObject
+       with LoggingFieldFormat
   
   /** An Internet Protocol version 4 (IPv4) field. */
   @js.native
-  sealed trait ipv4Address extends LoggingFieldFormat
+  sealed trait ipv4Address
+    extends StObject
+       with LoggingFieldFormat
   
   /** An Internet Protocol version 6 (IPv6) field. */
   @js.native
-  sealed trait ipv6Address extends LoggingFieldFormat
+  sealed trait ipv6Address
+    extends StObject
+       with LoggingFieldFormat
   
   /** A JavaScript Object Notation (JSON) field. */
   @js.native
-  sealed trait json extends LoggingFieldFormat
+  sealed trait json
+    extends StObject
+       with LoggingFieldFormat
   
   /** A 32-bit Windows NTSTATUS value. */
   @js.native
-  sealed trait ntStatus extends LoggingFieldFormat
+  sealed trait ntStatus
+    extends StObject
+       with LoggingFieldFormat
   
   /** A port number field. */
   @js.native
-  sealed trait port extends LoggingFieldFormat
+  sealed trait port
+    extends StObject
+       with LoggingFieldFormat
   
   /** A process identifier field. */
   @js.native
-  sealed trait processId extends LoggingFieldFormat
+  sealed trait processId
+    extends StObject
+       with LoggingFieldFormat
   
   /** A signed value. */
   @js.native
-  sealed trait signed extends LoggingFieldFormat
+  sealed trait signed
+    extends StObject
+       with LoggingFieldFormat
   
   /** A socket address field. */
   @js.native
-  sealed trait socketAddress extends LoggingFieldFormat
+  sealed trait socketAddress
+    extends StObject
+       with LoggingFieldFormat
   
   /** The field contains a MBCS (8-bit character) string. */
   @js.native
-  sealed trait string extends LoggingFieldFormat
+  sealed trait string
+    extends StObject
+       with LoggingFieldFormat
   
   /** A thread identifier field. */
   @js.native
-  sealed trait threadId extends LoggingFieldFormat
+  sealed trait threadId
+    extends StObject
+       with LoggingFieldFormat
   
   /** An unsigned value. */
   @js.native
-  sealed trait unsigned extends LoggingFieldFormat
+  sealed trait unsigned
+    extends StObject
+       with LoggingFieldFormat
   
   /** A 32-bit Win32 error code. */
   @js.native
-  sealed trait win32Error extends LoggingFieldFormat
+  sealed trait win32Error
+    extends StObject
+       with LoggingFieldFormat
   
   /** An Extensible Markup Language (XML) field. */
   @js.native
-  sealed trait xml extends LoggingFieldFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LoggingFieldFormat with Double] = js.native
-  /* 3 */ @js.native
-  object boolean extends TopLevel[boolean with Double]
-  
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 16 */ @js.native
-  object fileTime extends TopLevel[fileTime with Double]
-  
-  /* 4 */ @js.native
-  object hexadecimal extends TopLevel[hexadecimal with Double]
-  
-  /* 1 */ @js.native
-  object hidden extends TopLevel[hidden with Double]
-  
-  /* 15 */ @js.native
-  object hresult extends TopLevel[hresult with Double]
-  
-  /* 8 */ @js.native
-  object ipv4Address extends TopLevel[ipv4Address with Double]
-  
-  /* 9 */ @js.native
-  object ipv6Address extends TopLevel[ipv6Address with Double]
-  
-  /* 12 */ @js.native
-  object json extends TopLevel[json with Double]
-  
-  /* 14 */ @js.native
-  object ntStatus extends TopLevel[ntStatus with Double]
-  
-  /* 7 */ @js.native
-  object port extends TopLevel[port with Double]
-  
-  /* 5 */ @js.native
-  object processId extends TopLevel[processId with Double]
-  
-  /* 17 */ @js.native
-  object signed extends TopLevel[signed with Double]
-  
-  /* 10 */ @js.native
-  object socketAddress extends TopLevel[socketAddress with Double]
-  
-  /* 2 */ @js.native
-  object string extends TopLevel[string with Double]
-  
-  /* 6 */ @js.native
-  object threadId extends TopLevel[threadId with Double]
-  
-  /* 18 */ @js.native
-  object unsigned extends TopLevel[unsigned with Double]
-  
-  /* 13 */ @js.native
-  object win32Error extends TopLevel[win32Error with Double]
-  
-  /* 11 */ @js.native
-  object xml extends TopLevel[xml with Double]
-  
+  sealed trait xml
+    extends StObject
+       with LoggingFieldFormat
 }
-

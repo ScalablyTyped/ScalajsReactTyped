@@ -1,30 +1,44 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UIEventInit extends EventInit {
+trait UIEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
   var detail: js.UndefOr[Double] = js.undefined
-  var view: js.UndefOr[Window_ | Null] = js.undefined
+  
+  /* standard dom */
+  var view: js.UndefOr[org.scalajs.dom.Window | Null] = js.undefined
+  
+  /** @deprecated */
+  /* standard dom */
+  var which: js.UndefOr[Double] = js.undefined
 }
-
 object UIEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    detail: Int | Double = null,
-    view: Window_ = null
-  ): UIEventInit = {
+  
+  inline def apply(): UIEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIEventInit]
   }
+  
+  extension [Self <: UIEventInit](x: Self) {
+    
+    inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    
+    inline def setView(value: org.scalajs.dom.Window): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewNull: Self = StObject.set(x, "view", null)
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+    
+    inline def setWhichUndefined: Self = StObject.set(x, "which", js.undefined)
+  }
 }
-

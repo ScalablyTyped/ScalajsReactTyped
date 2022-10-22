@@ -1,34 +1,39 @@
 package typingsJapgolly.jqueryTimeentry
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITimeEntryRegionalOptions extends js.Object {
+trait ITimeEntryRegionalOptions extends StObject {
+  
   /**
     * The AM and PM display text. This is one of the regional settings fields.
     *
     * default: ['AM','PM']
     */
   var ampmNames: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * The text that separates the time from the AM and PM indicators. This is one of the regional settings fields.
     *
     * default: ''
     */
   var ampmPrefix: js.UndefOr[String] = js.undefined
+  
   /**
     * The separator between time portions. This is one of the regional settings fields.
     *
     * default: ':'
     */
   var separator: js.UndefOr[String] = js.undefined
+  
   /**
     * Indicate whether to use 12-hour (false) or 24-hour (true) time. This is one of the regional settings fields.
     *
     * default: False
     */
   var show24Hours: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The tooltip text for the spinner buttons. This is one of the regional settings fields.
     *
@@ -36,23 +41,37 @@ trait ITimeEntryRegionalOptions extends js.Object {
     */
   var spinnerTexts: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object ITimeEntryRegionalOptions {
-  @scala.inline
-  def apply(
-    ampmNames: js.Array[String] = null,
-    ampmPrefix: String = null,
-    separator: String = null,
-    show24Hours: js.UndefOr[Boolean] = js.undefined,
-    spinnerTexts: js.Array[String] = null
-  ): ITimeEntryRegionalOptions = {
+  
+  inline def apply(): ITimeEntryRegionalOptions = {
     val __obj = js.Dynamic.literal()
-    if (ampmNames != null) __obj.updateDynamic("ampmNames")(ampmNames.asInstanceOf[js.Any])
-    if (ampmPrefix != null) __obj.updateDynamic("ampmPrefix")(ampmPrefix.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(show24Hours)) __obj.updateDynamic("show24Hours")(show24Hours.asInstanceOf[js.Any])
-    if (spinnerTexts != null) __obj.updateDynamic("spinnerTexts")(spinnerTexts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimeEntryRegionalOptions]
   }
+  
+  extension [Self <: ITimeEntryRegionalOptions](x: Self) {
+    
+    inline def setAmpmNames(value: js.Array[String]): Self = StObject.set(x, "ampmNames", value.asInstanceOf[js.Any])
+    
+    inline def setAmpmNamesUndefined: Self = StObject.set(x, "ampmNames", js.undefined)
+    
+    inline def setAmpmNamesVarargs(value: String*): Self = StObject.set(x, "ampmNames", js.Array(value*))
+    
+    inline def setAmpmPrefix(value: String): Self = StObject.set(x, "ampmPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setAmpmPrefixUndefined: Self = StObject.set(x, "ampmPrefix", js.undefined)
+    
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    
+    inline def setShow24Hours(value: Boolean): Self = StObject.set(x, "show24Hours", value.asInstanceOf[js.Any])
+    
+    inline def setShow24HoursUndefined: Self = StObject.set(x, "show24Hours", js.undefined)
+    
+    inline def setSpinnerTexts(value: js.Array[String]): Self = StObject.set(x, "spinnerTexts", value.asInstanceOf[js.Any])
+    
+    inline def setSpinnerTextsUndefined: Self = StObject.set(x, "spinnerTexts", js.undefined)
+    
+    inline def setSpinnerTextsVarargs(value: String*): Self = StObject.set(x, "spinnerTexts", js.Array(value*))
+  }
 }
-

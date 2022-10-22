@@ -1,30 +1,44 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ViewportOptions extends js.Object {
+trait ViewportOptions extends StObject {
+  
   var delay: js.UndefOr[Double] = js.undefined
+  
   var enableAnimation: js.UndefOr[Boolean] = js.undefined
+  
   var margins: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var zoomFactor: js.UndefOr[Double] = js.undefined
 }
-
 object ViewportOptions {
-  @scala.inline
-  def apply(
-    delay: Int | Double = null,
-    enableAnimation: js.UndefOr[Boolean] = js.undefined,
-    margins: js.Array[Double] = null,
-    zoomFactor: Int | Double = null
-  ): ViewportOptions = {
+  
+  inline def apply(): ViewportOptions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.asInstanceOf[js.Any])
-    if (margins != null) __obj.updateDynamic("margins")(margins.asInstanceOf[js.Any])
-    if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewportOptions]
   }
+  
+  extension [Self <: ViewportOptions](x: Self) {
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setEnableAnimation(value: Boolean): Self = StObject.set(x, "enableAnimation", value.asInstanceOf[js.Any])
+    
+    inline def setEnableAnimationUndefined: Self = StObject.set(x, "enableAnimation", js.undefined)
+    
+    inline def setMargins(value: js.Array[Double]): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
+    
+    inline def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
+    
+    inline def setMarginsVarargs(value: Double*): Self = StObject.set(x, "margins", js.Array(value*))
+    
+    inline def setZoomFactor(value: Double): Self = StObject.set(x, "zoomFactor", value.asInstanceOf[js.Any])
+    
+    inline def setZoomFactorUndefined: Self = StObject.set(x, "zoomFactor", js.undefined)
+  }
 }
-

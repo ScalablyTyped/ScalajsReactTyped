@@ -1,18 +1,51 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("PowerPoint.TextStyle")
-@js.native
-class TextStyle protected () extends js.Object {
-  val Application: typingsJapgolly.activexPowerpoint.PowerPoint.Application = js.native
-  val Levels: TextStyleLevels = js.native
-  val Parent: js.Any = js.native
-  @JSName("PowerPoint.TextStyle_typekey")
-  var PowerPointDotTextStyle_typekey: TextStyle = js.native
-  val Ruler: typingsJapgolly.activexPowerpoint.PowerPoint.Ruler = js.native
-  val TextFrame: typingsJapgolly.activexPowerpoint.PowerPoint.TextFrame = js.native
+trait TextStyle extends StObject {
+  
+  val Application: typingsJapgolly.activexPowerpoint.PowerPoint.Application
+  
+  val Levels: TextStyleLevels
+  
+  val Parent: Any
+  
+  /* private */ @JSName("PowerPoint.TextStyle_typekey")
+  var PowerPointDotTextStyle_typekey: TextStyle
+  
+  val Ruler: typingsJapgolly.activexPowerpoint.PowerPoint.Ruler
+  
+  val TextFrame: typingsJapgolly.activexPowerpoint.PowerPoint.TextFrame
 }
-
+object TextStyle {
+  
+  inline def apply(
+    Application: Application,
+    Levels: TextStyleLevels,
+    Parent: Any,
+    PowerPointDotTextStyle_typekey: TextStyle,
+    Ruler: Ruler,
+    TextFrame: TextFrame
+  ): TextStyle = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Levels = Levels.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Ruler = Ruler.asInstanceOf[js.Any], TextFrame = TextFrame.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.TextStyle_typekey")(PowerPointDotTextStyle_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextStyle]
+  }
+  
+  extension [Self <: TextStyle](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setLevels(value: TextStyleLevels): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setPowerPointDotTextStyle_typekey(value: TextStyle): Self = StObject.set(x, "PowerPoint.TextStyle_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setRuler(value: Ruler): Self = StObject.set(x, "Ruler", value.asInstanceOf[js.Any])
+    
+    inline def setTextFrame(value: TextFrame): Self = StObject.set(x, "TextFrame", value.asInstanceOf[js.Any])
+  }
+}

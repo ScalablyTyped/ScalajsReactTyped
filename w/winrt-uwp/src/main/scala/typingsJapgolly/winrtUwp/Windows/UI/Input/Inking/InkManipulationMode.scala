@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Input.Inking
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InkManipulationMode extends js.Object
-
+sealed trait InkManipulationMode extends StObject
 /** Identifies the ink input mode. */
 @JSGlobal("Windows.UI.Input.Inking.InkManipulationMode")
 @js.native
-object InkManipulationMode extends js.Object {
+object InkManipulationMode extends StObject {
+  
   /** All strokes are hit tested against all strokes in the stroke collection. If there is an intersection, InkManager deletes the stroke automatically and returns an invalidated rectangle for processPointerUpdate calls. */
   @js.native
-  sealed trait erasing extends InkManipulationMode
+  sealed trait erasing
+    extends StObject
+       with InkManipulationMode
   
   /** All points are passed to the InkStrokeBuilder and an InkStroke is created. The stroke is appended to the stroke collection of the InkManager or InkStrokeContainer . */
   @js.native
-  sealed trait inking extends InkManipulationMode
+  sealed trait inking
+    extends StObject
+       with InkManipulationMode
   
   /** All points are used to create a polyline. When you call processPointerUp , the polyline is hit tested against entire stroke collection and all strokes within the polyline are marked as selected. */
   @js.native
-  sealed trait selecting extends InkManipulationMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InkManipulationMode with Double] = js.native
-  /* 1 */ @js.native
-  object erasing extends TopLevel[erasing with Double]
-  
-  /* 0 */ @js.native
-  object inking extends TopLevel[inking with Double]
-  
-  /* 2 */ @js.native
-  object selecting extends TopLevel[selecting with Double]
-  
+  sealed trait selecting
+    extends StObject
+       with InkManipulationMode
 }
-

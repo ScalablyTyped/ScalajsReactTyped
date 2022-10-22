@@ -1,19 +1,22 @@
 package typingsJapgolly.wxServerSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommonOption[T] extends js.Object {
+trait CommonOption[T] extends StObject {
+  
   var data: T
 }
-
 object CommonOption {
-  @scala.inline
-  def apply[T](data: T): CommonOption[T] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
+  inline def apply[T](data: T): CommonOption[T] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonOption[T]]
   }
+  
+  extension [Self <: CommonOption[?], T](x: Self & CommonOption[T]) {
+    
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+  }
 }
-

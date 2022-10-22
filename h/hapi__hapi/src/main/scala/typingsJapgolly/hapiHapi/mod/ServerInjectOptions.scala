@@ -1,63 +1,59 @@
 package typingsJapgolly.hapiHapi.mod
 
-import typingsJapgolly.hapiHapi.AnonArtifacts
-import typingsJapgolly.hapiShot.AnonClose
-import typingsJapgolly.hapiShot.mod.Headers
+import typingsJapgolly.hapiHapi.anon.Artifacts
+import typingsJapgolly.hapiShot.mod.PartialURL
 import typingsJapgolly.hapiShot.mod.RequestOptions
-import typingsJapgolly.node.Buffer
-import typingsJapgolly.node.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServerInjectOptions extends RequestOptions {
+trait ServerInjectOptions
+  extends StObject
+     with RequestOptions {
+  
   /**
     * allows access to routes with config.isInternal set to true. Defaults to false.
     */
   var allowInternals: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * sets the initial value of request.app, defaults to {}.
     */
   var app: js.UndefOr[RequestApplicationState] = js.undefined
+  
   /**
     * Authentication bypass options.
     */
-  var auth: js.UndefOr[AnonArtifacts] = js.undefined
+  var auth: js.UndefOr[Artifacts] = js.undefined
+  
   /**
     * sets the initial value of request.plugins, defaults to {}.
     */
   var plugins: js.UndefOr[PluginsStates] = js.undefined
 }
-
 object ServerInjectOptions {
-  @scala.inline
-  def apply(
-    url: String,
-    allowInternals: js.UndefOr[Boolean] = js.undefined,
-    app: RequestApplicationState = null,
-    auth: AnonArtifacts = null,
-    authority: String = null,
-    headers: Headers = null,
-    method: String = null,
-    payload: String | Buffer | Stream | js.Object = null,
-    plugins: PluginsStates = null,
-    remoteAddress: String = null,
-    simulate: AnonClose = null,
-    validate: js.UndefOr[Boolean] = js.undefined
-  ): ServerInjectOptions = {
+  
+  inline def apply(url: String | PartialURL): ServerInjectOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowInternals)) __obj.updateDynamic("allowInternals")(allowInternals.asInstanceOf[js.Any])
-    if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress.asInstanceOf[js.Any])
-    if (simulate != null) __obj.updateDynamic("simulate")(simulate.asInstanceOf[js.Any])
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerInjectOptions]
   }
+  
+  extension [Self <: ServerInjectOptions](x: Self) {
+    
+    inline def setAllowInternals(value: Boolean): Self = StObject.set(x, "allowInternals", value.asInstanceOf[js.Any])
+    
+    inline def setAllowInternalsUndefined: Self = StObject.set(x, "allowInternals", js.undefined)
+    
+    inline def setApp(value: RequestApplicationState): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    
+    inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+    
+    inline def setAuth(value: Artifacts): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    
+    inline def setPlugins(value: PluginsStates): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+  }
 }
-

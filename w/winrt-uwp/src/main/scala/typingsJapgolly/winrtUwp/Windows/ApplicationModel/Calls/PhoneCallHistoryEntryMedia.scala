@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Calls
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhoneCallHistoryEntryMedia extends js.Object
-
+sealed trait PhoneCallHistoryEntryMedia extends StObject
 /** The type of media associated with a call. */
 @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryEntryMedia")
 @js.native
-object PhoneCallHistoryEntryMedia extends js.Object {
+object PhoneCallHistoryEntryMedia extends StObject {
+  
   /** The call contains audio media. */
   @js.native
-  sealed trait audio extends PhoneCallHistoryEntryMedia
+  sealed trait audio
+    extends StObject
+       with PhoneCallHistoryEntryMedia
   
   /** The call contains video media. */
   @js.native
-  sealed trait video extends PhoneCallHistoryEntryMedia
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhoneCallHistoryEntryMedia with Double] = js.native
-  /* 0 */ @js.native
-  object audio extends TopLevel[audio with Double]
-  
-  /* 1 */ @js.native
-  object video extends TopLevel[video with Double]
-  
+  sealed trait video
+    extends StObject
+       with PhoneCallHistoryEntryMedia
 }
-

@@ -1,47 +1,45 @@
 package typingsJapgolly.tsutils.utilUtilMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ScopeBoundary extends js.Object
-
+sealed trait ScopeBoundary extends StObject
 @JSImport("tsutils/util/util", "ScopeBoundary")
 @js.native
-object ScopeBoundary extends js.Object {
-  @js.native
-  sealed trait Block extends ScopeBoundary
-  
-  @js.native
-  sealed trait ConditionalType extends ScopeBoundary
-  
-  @js.native
-  sealed trait Function extends ScopeBoundary
-  
-  @js.native
-  sealed trait None extends ScopeBoundary
-  
-  @js.native
-  sealed trait Type extends ScopeBoundary
+object ScopeBoundary extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ScopeBoundary with Double] = js.native
-  /* 2 */ @js.native
-  object Block extends TopLevel[Block with Double]
+  def apply(value: Double): js.UndefOr[ScopeBoundary & Double] = js.native
   
-  /* 8 */ @js.native
-  object ConditionalType extends TopLevel[ConditionalType with Double]
+  @js.native
+  sealed trait Block
+    extends StObject
+       with ScopeBoundary
+  /* 2 */ val Block: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.Block & Double = js.native
   
-  /* 1 */ @js.native
-  object Function extends TopLevel[Function with Double]
+  @js.native
+  sealed trait ConditionalType
+    extends StObject
+       with ScopeBoundary
+  /* 8 */ val ConditionalType: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.ConditionalType & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait Function
+    extends StObject
+       with ScopeBoundary
+  /* 1 */ val Function: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.Function & Double = js.native
   
-  /* 4 */ @js.native
-  object Type extends TopLevel[Type with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with ScopeBoundary
+  /* 0 */ val None: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.None & Double = js.native
   
+  @js.native
+  sealed trait Type
+    extends StObject
+       with ScopeBoundary
+  /* 4 */ val Type: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.Type & Double = js.native
 }
-

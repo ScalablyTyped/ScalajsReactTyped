@@ -1,8 +1,8 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.AE
@@ -78,154 +78,150 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.VI
   - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ZA
 */
-trait SupportedRegion extends js.Object
-
+trait SupportedRegion extends StObject
 object SupportedRegion {
-  @scala.inline
-  def AE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.AE = this.cast("AE")
-  @scala.inline
-  def AR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.AR = this.cast("AR")
-  @scala.inline
-  def AT: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.AT = this.cast("AT")
-  @scala.inline
-  def AU: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.AU = this.cast("AU")
-  @scala.inline
-  def BE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.BE = this.cast("BE")
-  @scala.inline
-  def BG: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.BG = this.cast("BG")
-  @scala.inline
-  def BO: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.BO = this.cast("BO")
-  @scala.inline
-  def BR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.BR = this.cast("BR")
-  @scala.inline
-  def CA: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CA = this.cast("CA")
-  @scala.inline
-  def CH: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CH = this.cast("CH")
-  @scala.inline
-  def CI: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CI = this.cast("CI")
-  @scala.inline
-  def CL: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CL = this.cast("CL")
-  @scala.inline
-  def CN: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CN = this.cast("CN")
-  @scala.inline
-  def CO: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CO = this.cast("CO")
-  @scala.inline
-  def CR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CR = this.cast("CR")
-  @scala.inline
-  def CZ: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CZ = this.cast("CZ")
-  @scala.inline
-  def DE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.DE = this.cast("DE")
-  @scala.inline
-  def DK: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.DK = this.cast("DK")
-  @scala.inline
-  def EE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.EE = this.cast("EE")
-  @scala.inline
-  def EG: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.EG = this.cast("EG")
-  @scala.inline
-  def ES: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ES = this.cast("ES")
-  @scala.inline
-  def FI: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.FI = this.cast("FI")
-  @scala.inline
-  def FR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.FR = this.cast("FR")
-  @scala.inline
-  def GB: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.GB = this.cast("GB")
-  @scala.inline
-  def GL: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.GL = this.cast("GL")
-  @scala.inline
-  def GR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.GR = this.cast("GR")
-  @scala.inline
-  def GT: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.GT = this.cast("GT")
-  @scala.inline
-  def HK: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.HK = this.cast("HK")
-  @scala.inline
-  def ID: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ID = this.cast("ID")
-  @scala.inline
-  def IE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IE = this.cast("IE")
-  @scala.inline
-  def IL: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IL = this.cast("IL")
-  @scala.inline
-  def IN: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IN = this.cast("IN")
-  @scala.inline
-  def IQ: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IQ = this.cast("IQ")
-  @scala.inline
-  def IS: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IS = this.cast("IS")
-  @scala.inline
-  def IT: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IT = this.cast("IT")
-  @scala.inline
-  def JP: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.JP = this.cast("JP")
-  @scala.inline
-  def KE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.KE = this.cast("KE")
-  @scala.inline
-  def KR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.KR = this.cast("KR")
-  @scala.inline
-  def KW: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.KW = this.cast("KW")
-  @scala.inline
-  def LI: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.LI = this.cast("LI")
-  @scala.inline
-  def LT: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.LT = this.cast("LT")
-  @scala.inline
-  def LU: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.LU = this.cast("LU")
-  @scala.inline
-  def LV: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.LV = this.cast("LV")
-  @scala.inline
-  def MA: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MA = this.cast("MA")
-  @scala.inline
-  def MG: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MG = this.cast("MG")
-  @scala.inline
-  def ML: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ML = this.cast("ML")
-  @scala.inline
-  def MO: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MO = this.cast("MO")
-  @scala.inline
-  def MX: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MX = this.cast("MX")
-  @scala.inline
-  def MY: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MY = this.cast("MY")
-  @scala.inline
-  def NI: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.NI = this.cast("NI")
-  @scala.inline
-  def NL: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.NL = this.cast("NL")
-  @scala.inline
-  def NO: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.NO = this.cast("NO")
-  @scala.inline
-  def NZ: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.NZ = this.cast("NZ")
-  @scala.inline
-  def PE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.PE = this.cast("PE")
-  @scala.inline
-  def PL: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.PL = this.cast("PL")
-  @scala.inline
-  def PR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.PR = this.cast("PR")
-  @scala.inline
-  def PT: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.PT = this.cast("PT")
-  @scala.inline
-  def RO: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.RO = this.cast("RO")
-  @scala.inline
-  def RU: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.RU = this.cast("RU")
-  @scala.inline
-  def RW: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.RW = this.cast("RW")
-  @scala.inline
-  def SE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SE = this.cast("SE")
-  @scala.inline
-  def SG: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SG = this.cast("SG")
-  @scala.inline
-  def SK: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SK = this.cast("SK")
-  @scala.inline
-  def SR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SR = this.cast("SR")
-  @scala.inline
-  def SV: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SV = this.cast("SV")
-  @scala.inline
-  def TH: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.TH = this.cast("TH")
-  @scala.inline
-  def TN: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.TN = this.cast("TN")
-  @scala.inline
-  def TW: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.TW = this.cast("TW")
-  @scala.inline
-  def US: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.US = this.cast("US")
-  @scala.inline
-  def VE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.VE = this.cast("VE")
-  @scala.inline
-  def VI: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.VI = this.cast("VI")
-  @scala.inline
-  def ZA: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ZA = this.cast("ZA")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def AE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.AE = "AE".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.AE]
+  
+  inline def AR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.AR = "AR".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.AR]
+  
+  inline def AT: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.AT = "AT".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.AT]
+  
+  inline def AU: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.AU = "AU".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.AU]
+  
+  inline def BE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.BE = "BE".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.BE]
+  
+  inline def BG: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.BG = "BG".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.BG]
+  
+  inline def BO: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.BO = "BO".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.BO]
+  
+  inline def BR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.BR = "BR".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.BR]
+  
+  inline def CA: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CA = "CA".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CA]
+  
+  inline def CH: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CH = "CH".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CH]
+  
+  inline def CI: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CI = "CI".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CI]
+  
+  inline def CL: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CL = "CL".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CL]
+  
+  inline def CN: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CN = "CN".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CN]
+  
+  inline def CO: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CO = "CO".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CO]
+  
+  inline def CR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CR = "CR".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CR]
+  
+  inline def CZ: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CZ = "CZ".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.CZ]
+  
+  inline def DE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.DE = "DE".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.DE]
+  
+  inline def DK: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.DK = "DK".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.DK]
+  
+  inline def EE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.EE = "EE".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.EE]
+  
+  inline def EG: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.EG = "EG".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.EG]
+  
+  inline def ES: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ES = "ES".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ES]
+  
+  inline def FI: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.FI = "FI".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.FI]
+  
+  inline def FR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.FR = "FR".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.FR]
+  
+  inline def GB: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.GB = "GB".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.GB]
+  
+  inline def GL: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.GL = "GL".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.GL]
+  
+  inline def GR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.GR = "GR".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.GR]
+  
+  inline def GT: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.GT = "GT".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.GT]
+  
+  inline def HK: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.HK = "HK".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.HK]
+  
+  inline def ID: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ID = "ID".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ID]
+  
+  inline def IE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IE = "IE".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IE]
+  
+  inline def IL: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IL = "IL".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IL]
+  
+  inline def IN: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IN = "IN".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IN]
+  
+  inline def IQ: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IQ = "IQ".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IQ]
+  
+  inline def IS: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IS = "IS".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IS]
+  
+  inline def IT: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IT = "IT".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.IT]
+  
+  inline def JP: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.JP = "JP".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.JP]
+  
+  inline def KE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.KE = "KE".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.KE]
+  
+  inline def KR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.KR = "KR".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.KR]
+  
+  inline def KW: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.KW = "KW".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.KW]
+  
+  inline def LI: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.LI = "LI".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.LI]
+  
+  inline def LT: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.LT = "LT".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.LT]
+  
+  inline def LU: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.LU = "LU".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.LU]
+  
+  inline def LV: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.LV = "LV".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.LV]
+  
+  inline def MA: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MA = "MA".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MA]
+  
+  inline def MG: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MG = "MG".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MG]
+  
+  inline def ML: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ML = "ML".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ML]
+  
+  inline def MO: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MO = "MO".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MO]
+  
+  inline def MX: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MX = "MX".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MX]
+  
+  inline def MY: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MY = "MY".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.MY]
+  
+  inline def NI: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.NI = "NI".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.NI]
+  
+  inline def NL: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.NL = "NL".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.NL]
+  
+  inline def NO: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.NO = "NO".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.NO]
+  
+  inline def NZ: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.NZ = "NZ".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.NZ]
+  
+  inline def PE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.PE = "PE".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.PE]
+  
+  inline def PL: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.PL = "PL".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.PL]
+  
+  inline def PR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.PR = "PR".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.PR]
+  
+  inline def PT: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.PT = "PT".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.PT]
+  
+  inline def RO: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.RO = "RO".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.RO]
+  
+  inline def RU: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.RU = "RU".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.RU]
+  
+  inline def RW: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.RW = "RW".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.RW]
+  
+  inline def SE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SE = "SE".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SE]
+  
+  inline def SG: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SG = "SG".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SG]
+  
+  inline def SK: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SK = "SK".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SK]
+  
+  inline def SR: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SR = "SR".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SR]
+  
+  inline def SV: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SV = "SV".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.SV]
+  
+  inline def TH: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.TH = "TH".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.TH]
+  
+  inline def TN: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.TN = "TN".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.TN]
+  
+  inline def TW: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.TW = "TW".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.TW]
+  
+  inline def US: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.US = "US".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.US]
+  
+  inline def VE: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.VE = "VE".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.VE]
+  
+  inline def VI: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.VI = "VI".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.VI]
+  
+  inline def ZA: typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ZA = "ZA".asInstanceOf[typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ZA]
 }
-

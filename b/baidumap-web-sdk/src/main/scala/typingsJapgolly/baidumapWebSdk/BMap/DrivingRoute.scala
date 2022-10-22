@@ -1,24 +1,23 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BMap.DrivingRoute")
 @js.native
-class DrivingRoute protected () extends js.Object {
-  def this(location: String) = this()
-  def this(location: Map) = this()
-  def this(location: Point) = this()
-  def this(location: String, opts: DrivingRouteOptions) = this()
-  def this(location: Map, opts: DrivingRouteOptions) = this()
-  def this(location: Point, opts: DrivingRouteOptions) = this()
+trait DrivingRoute extends StObject {
+  
   def clearResults(): Unit = js.native
+  
   def disableAutoViewport(): Unit = js.native
+  
   def enableAutoViewport(): Unit = js.native
+  
   def getResults(): DrivingRouteResult = js.native
+  
   def getStatus(): ServiceStatusCode = js.native
+  
   def search(start: String, end: String): Unit = js.native
   def search(start: String, end: LocalResultPoi): Unit = js.native
   def search(start: String, end: Point): Unit = js.native
@@ -28,14 +27,20 @@ class DrivingRoute protected () extends js.Object {
   def search(start: Point, end: String): Unit = js.native
   def search(start: Point, end: LocalResultPoi): Unit = js.native
   def search(start: Point, end: Point): Unit = js.native
+  
   def setInfoHtmlSetCallback(callback: js.Function2[/* poi */ LocalResultPoi, /* html */ HTMLElement, Unit]): Unit = js.native
+  
   def setLocation(location: String): Unit = js.native
   def setLocation(location: Map): Unit = js.native
   def setLocation(location: Point): Unit = js.native
+  
   def setMarkersSetCallback(callback: js.Function1[/* pois */ js.Array[LocalResultPoi], Unit]): Unit = js.native
+  
   def setPolicy(policy: DrivingPolicy): Unit = js.native
+  
   def setPolylinesSetCallback(callback: js.Function1[/* routes */ js.Array[Route], Unit]): Unit = js.native
+  
   def setResultsHtmlSetCallback(callback: js.Function1[/* container */ HTMLElement, Unit]): Unit = js.native
+  
   def setSearchCompleteCallback(callback: js.Function1[/* results */ DrivingRouteResult, Unit]): Unit = js.native
 }
-

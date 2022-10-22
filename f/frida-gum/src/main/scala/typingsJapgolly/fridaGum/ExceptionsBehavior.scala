@@ -1,21 +1,17 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.steal
   - typingsJapgolly.fridaGum.fridaGumStrings.propagate
 */
-trait ExceptionsBehavior extends js.Object
-
+trait ExceptionsBehavior extends StObject
 object ExceptionsBehavior {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def propagate: typingsJapgolly.fridaGum.fridaGumStrings.propagate = this.cast("propagate")
-  @scala.inline
-  def steal: typingsJapgolly.fridaGum.fridaGumStrings.steal = this.cast("steal")
+  
+  inline def propagate: typingsJapgolly.fridaGum.fridaGumStrings.propagate = "propagate".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.propagate]
+  
+  inline def steal: typingsJapgolly.fridaGum.fridaGumStrings.steal = "steal".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.steal]
 }
-

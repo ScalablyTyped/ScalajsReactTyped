@@ -1,20 +1,23 @@
 package typingsJapgolly.nodeSql2.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Executable extends js.Object {
+trait Executable extends StObject {
+  
   def toQuery(): QueryLike
 }
-
 object Executable {
-  @scala.inline
-  def apply(toQuery: CallbackTo[QueryLike]): Executable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toQuery")(toQuery.toJsFn)
+  
+  inline def apply(toQuery: CallbackTo[QueryLike]): Executable = {
+    val __obj = js.Dynamic.literal(toQuery = toQuery.toJsFn)
     __obj.asInstanceOf[Executable]
   }
+  
+  extension [Self <: Executable](x: Self) {
+    
+    inline def setToQuery(value: CallbackTo[QueryLike]): Self = StObject.set(x, "toQuery", value.toJsFn)
+  }
 }
-

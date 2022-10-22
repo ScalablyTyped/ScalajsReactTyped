@@ -2,22 +2,26 @@ package typingsJapgolly.reactNative.mod
 
 import typingsJapgolly.reactNative.reactNativeStrings.photo
 import typingsJapgolly.reactNative.reactNativeStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CameraRollStatic extends js.Object {
-   //'Album','All','Event','Faces','Library','PhotoStream','SavedPhotos'
+trait CameraRollStatic extends StObject {
+  
+  //'Album','All','Event','Faces','Library','PhotoStream','SavedPhotos'
   var AssetTypeOptions: js.Array[CameraRollAssetType] = js.native
+  
   var GroupTypesOptions: js.Array[CameraRollGroupType] = js.native
+  
   /**
     * Invokes callback with photo identifier objects from the local camera roll of the device matching shape defined by getPhotosReturnChecker.
     *
     * @param params See getPhotosParamChecker.
     */
   def getPhotos(params: GetPhotosParamType): js.Promise[GetPhotosReturnType] = js.native
-   // "All", "Videos", "Photos"
+  
+  // "All", "Videos", "Photos"
   /**
     * Saves the image to the camera roll / gallery.
     *
@@ -25,11 +29,12 @@ trait CameraRollStatic extends js.Object {
     * On iOS, the tag can be one of the following:
     *      local URI
     *      assets-library tag
-    *      a tag not maching any of the above, which means the image data will be stored in memory (and consume memory as long as the process is alive)
+    *      a tag not matching any of the above, which means the image data will be stored in memory (and consume memory as long as the process is alive)
     *
     * @deprecated use saveToCameraRoll instead
     */
   def saveImageWithTag(tag: String): js.Promise[String] = js.native
+  
   /**
     * Saves the photo or video to the camera roll / gallery.
     *
@@ -45,9 +50,5 @@ trait CameraRollStatic extends js.Object {
     * Returns a Promise which will resolve with the new URI.
     */
   def saveToCameraRoll(tag: String): js.Promise[String] = js.native
-  @JSName("saveToCameraRoll")
-  def saveToCameraRoll_photo(tag: String, `type`: photo): js.Promise[String] = js.native
-  @JSName("saveToCameraRoll")
-  def saveToCameraRoll_video(tag: String, `type`: video): js.Promise[String] = js.native
+  def saveToCameraRoll(tag: String, `type`: photo | video): js.Promise[String] = js.native
 }
-

@@ -1,41 +1,39 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MetadataType extends js.Object
-
+sealed trait MetadataType extends StObject
 @JSImport("azdata", "MetadataType")
 @js.native
-object MetadataType extends js.Object {
-  @js.native
-  sealed trait Function extends MetadataType
-  
-  @js.native
-  sealed trait SProc extends MetadataType
-  
-  @js.native
-  sealed trait Table extends MetadataType
-  
-  @js.native
-  sealed trait View extends MetadataType
+object MetadataType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MetadataType with Double] = js.native
-  /* 3 */ @js.native
-  object Function extends TopLevel[Function with Double]
+  def apply(value: Double): js.UndefOr[MetadataType & Double] = js.native
   
-  /* 2 */ @js.native
-  object SProc extends TopLevel[SProc with Double]
+  @js.native
+  sealed trait Function
+    extends StObject
+       with MetadataType
+  /* 3 */ val Function: typingsJapgolly.azdata.mod.MetadataType.Function & Double = js.native
   
-  /* 0 */ @js.native
-  object Table extends TopLevel[Table with Double]
+  @js.native
+  sealed trait SProc
+    extends StObject
+       with MetadataType
+  /* 2 */ val SProc: typingsJapgolly.azdata.mod.MetadataType.SProc & Double = js.native
   
-  /* 1 */ @js.native
-  object View extends TopLevel[View with Double]
+  @js.native
+  sealed trait Table
+    extends StObject
+       with MetadataType
+  /* 0 */ val Table: typingsJapgolly.azdata.mod.MetadataType.Table & Double = js.native
   
+  @js.native
+  sealed trait View
+    extends StObject
+       with MetadataType
+  /* 1 */ val View: typingsJapgolly.azdata.mod.MetadataType.View & Double = js.native
 }
-

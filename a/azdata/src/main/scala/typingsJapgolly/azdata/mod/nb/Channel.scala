@@ -1,8 +1,8 @@
 package typingsJapgolly.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.azdata.azdataStrings.shell
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.azdata.azdataStrings.stdin
   - typingsJapgolly.azdata.azdataStrings.execute_reply
 */
-trait Channel extends js.Object
-
+trait Channel extends StObject
 object Channel {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def execute_reply: typingsJapgolly.azdata.azdataStrings.execute_reply = this.cast("execute_reply")
-  @scala.inline
-  def iopub: typingsJapgolly.azdata.azdataStrings.iopub = this.cast("iopub")
-  @scala.inline
-  def shell: typingsJapgolly.azdata.azdataStrings.shell = this.cast("shell")
-  @scala.inline
-  def stdin: typingsJapgolly.azdata.azdataStrings.stdin = this.cast("stdin")
+  
+  inline def execute_reply: typingsJapgolly.azdata.azdataStrings.execute_reply = "execute_reply".asInstanceOf[typingsJapgolly.azdata.azdataStrings.execute_reply]
+  
+  inline def iopub: typingsJapgolly.azdata.azdataStrings.iopub = "iopub".asInstanceOf[typingsJapgolly.azdata.azdataStrings.iopub]
+  
+  inline def shell: typingsJapgolly.azdata.azdataStrings.shell = "shell".asInstanceOf[typingsJapgolly.azdata.azdataStrings.shell]
+  
+  inline def stdin: typingsJapgolly.azdata.azdataStrings.stdin = "stdin".asInstanceOf[typingsJapgolly.azdata.azdataStrings.stdin]
 }
-

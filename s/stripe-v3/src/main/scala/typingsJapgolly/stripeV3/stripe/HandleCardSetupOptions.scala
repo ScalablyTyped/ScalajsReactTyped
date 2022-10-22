@@ -1,24 +1,29 @@
 package typingsJapgolly.stripeV3.stripe
 
-import typingsJapgolly.stripeV3.AnonBillingdetails
+import typingsJapgolly.stripeV3.anon.Billingdetails
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HandleCardSetupOptions extends js.Object {
+trait HandleCardSetupOptions extends StObject {
+  
   /**
     * Use this parameter to supply additional data relevant to
     * the payment method, such as billing details.
     */
-  var payment_method_data: js.UndefOr[AnonBillingdetails] = js.undefined
+  var payment_method_data: js.UndefOr[Billingdetails] = js.undefined
 }
-
 object HandleCardSetupOptions {
-  @scala.inline
-  def apply(payment_method_data: AnonBillingdetails = null): HandleCardSetupOptions = {
+  
+  inline def apply(): HandleCardSetupOptions = {
     val __obj = js.Dynamic.literal()
-    if (payment_method_data != null) __obj.updateDynamic("payment_method_data")(payment_method_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleCardSetupOptions]
   }
+  
+  extension [Self <: HandleCardSetupOptions](x: Self) {
+    
+    inline def setPayment_method_data(value: Billingdetails): Self = StObject.set(x, "payment_method_data", value.asInstanceOf[js.Any])
+    
+    inline def setPayment_method_dataUndefined: Self = StObject.set(x, "payment_method_data", js.undefined)
+  }
 }
-

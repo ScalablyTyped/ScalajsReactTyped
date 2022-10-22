@@ -2,9 +2,9 @@ package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.SourceTileOptions
 import typingsJapgolly.openlayers.mod.tilegrid.TileGrid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.Tile")
 @js.native
-class Tile protected () extends Source {
+open class Tile protected () extends Source {
   /**
     * @classdesc
     * Abstract base class; normally only used for creating subclasses and not
@@ -28,6 +28,7 @@ class Tile protected () extends Source {
     * @api
     */
   def this(options: SourceTileOptions) = this()
+  
   /**
     * Return the tile grid of the tile source.
     * @return Tile grid.
@@ -35,4 +36,3 @@ class Tile protected () extends Source {
     */
   def getTileGrid(): TileGrid = js.native
 }
-

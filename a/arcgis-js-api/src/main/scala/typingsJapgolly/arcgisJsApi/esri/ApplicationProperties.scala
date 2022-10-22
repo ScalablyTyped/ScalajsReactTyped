@@ -1,12 +1,14 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationProperties extends Accessor {
+trait ApplicationProperties
+  extends StObject
+     with Accessor {
+  
   /**
     * View-specific properties of application and UI elements for the web map.
     *
@@ -14,8 +16,3 @@ trait ApplicationProperties extends Accessor {
     */
   var viewing: Viewing = js.native
 }
-
-@JSGlobal("__esri.ApplicationProperties")
-@js.native
-object ApplicationProperties extends TopLevel[ApplicationPropertiesConstructor]
-

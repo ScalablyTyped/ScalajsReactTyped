@@ -10,10 +10,10 @@ A utility to match a browselist query to browser user agents
 | ------------------ | :-------------: |
 | Full name          | browserslist-useragent |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 10 |
-| # downloads        | 1342523 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 367239.3333333333 |
+| # stars            | 255.0 |
 
 ## Links
 - [Homepage](https://github.com/pastelsky/browserslist-useragent#readme)

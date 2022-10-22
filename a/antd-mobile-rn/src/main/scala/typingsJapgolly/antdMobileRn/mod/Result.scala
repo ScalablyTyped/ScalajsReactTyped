@@ -1,19 +1,23 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.AnonButtonClick
-import typingsJapgolly.antdMobileRn.resultIndexNativeMod.default
+import typingsJapgolly.antdMobileRn.anon.ButtonClick
+import typingsJapgolly.antdMobileRn.libResultIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "Result")
 @js.native
-class Result () extends default
-
+open class Result () extends default
 /* static members */
-@JSImport("antd-mobile-rn", "Result")
-@js.native
-object Result extends js.Object {
-  var defaultProps: AnonButtonClick = js.native
+object Result {
+  
+  @JSImport("antd-mobile-rn", "Result")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "Result.defaultProps")
+  @js.native
+  def defaultProps: ButtonClick = js.native
+  inline def defaultProps_=(x: ButtonClick): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

@@ -1,28 +1,29 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.QualifiedNameSyntax")
 @js.native
-class QualifiedNameSyntax protected () extends SyntaxNode {
-  def this(left: INameSyntax, dotToken: ISyntaxToken, right: ISyntaxToken, parsedInStrictMode: Boolean) = this()
+trait QualifiedNameSyntax
+  extends StObject
+     with SyntaxNode {
+  
   var dotToken: ISyntaxToken = js.native
-  var left: INameSyntax = js.native
-  var right: ISyntaxToken = js.native
+  
   def isName(): Boolean = js.native
+  
   def isType(): Boolean = js.native
+  
+  var left: INameSyntax = js.native
+  
+  var right: ISyntaxToken = js.native
+  
   def update(left: INameSyntax, dotToken: ISyntaxToken, right: ISyntaxToken): QualifiedNameSyntax = js.native
+  
   def withDotToken(dotToken: ISyntaxToken): QualifiedNameSyntax = js.native
+  
   def withLeft(left: INameSyntax): QualifiedNameSyntax = js.native
+  
   def withRight(right: ISyntaxToken): QualifiedNameSyntax = js.native
 }
-
-/* static members */
-@JSGlobal("TypeScript.QualifiedNameSyntax")
-@js.native
-object QualifiedNameSyntax extends js.Object {
-  def create1(left: INameSyntax, right: ISyntaxToken): QualifiedNameSyntax = js.native
-}
-

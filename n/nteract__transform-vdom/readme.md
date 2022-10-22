@@ -1,7 +1,7 @@
 
 # Scala.js typings for nteract__transform-vdom
 
-Typings are for version 4.0.3
+Typings are for version 4.0.15
 
 ## Library description:
 VDOM Transform for jupyter outputs
@@ -9,11 +9,11 @@ VDOM Transform for jupyter outputs
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @nteract/transform-vdom |
-| Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 7 |
-| # downloads        | 1108161 |
-| # stars            | 0 |
+| Keywords           | jupyter, electron, notebook, nteract, data |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 119437.33333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/nteract/nteract#readme)

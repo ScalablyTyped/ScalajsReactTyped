@@ -1,7 +1,7 @@
 
 # Scala.js typings for vimeo__player
 
-Typings are for version 2.9.1
+Typings are for version 2.16.4
 
 ## Library description:
 Interact with and control an embedded Vimeo Player.
@@ -10,10 +10,10 @@ Interact with and control an embedded Vimeo Player.
 | ------------------ | :-------------: |
 | Full name          | @vimeo/player |
 | Keywords           | vimeo, player, api, iframe, embed, video, javascript, postMessage |
-| # releases         | 19 |
-| # dependents       | 33 |
-| # downloads        | 1646178 |
-| # stars            | 3 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 890951.3333333334 |
+| # stars            | 1280.0 |
 
 ## Links
 - [Homepage](https://github.com/vimeo/player.js#readme)

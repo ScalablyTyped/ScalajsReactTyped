@@ -1,11 +1,11 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "HtmlParser")
 @js.native
-class HtmlParser ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.HtmlParser
-
+open class HtmlParser ()
+  extends StObject
+     with Parser2

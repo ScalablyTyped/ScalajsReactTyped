@@ -1,54 +1,94 @@
 package typingsJapgolly.copyWebpackPlugin
 
+import typingsJapgolly.copyWebpackPlugin.mod.ToType
+import typingsJapgolly.copyWebpackPlugin.typesUtilsMod.InputFileSystem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object copyWebpackPluginStrings {
-  @js.native
-  sealed trait debug extends js.Object
   
   @js.native
-  sealed trait dir extends js.Object
+  sealed trait dir
+    extends StObject
+       with ToType
+  inline def dir: dir = "dir".asInstanceOf[dir]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait dirname
+    extends StObject
+       with InputFileSystem
+  inline def dirname: dirname = "dirname".asInstanceOf[dirname]
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait file
+    extends StObject
+       with ToType
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait join
+    extends StObject
+       with InputFileSystem
+  inline def join: join = "join".asInstanceOf[join]
   
   @js.native
-  sealed trait silent extends js.Object
+  sealed trait lstat
+    extends StObject
+       with InputFileSystem
+  inline def lstat: lstat = "lstat".asInstanceOf[lstat]
   
   @js.native
-  sealed trait template extends js.Object
+  sealed trait purge
+    extends StObject
+       with InputFileSystem
+  inline def purge: purge = "purge".asInstanceOf[purge]
   
   @js.native
-  sealed trait trace extends js.Object
+  sealed trait readFile
+    extends StObject
+       with InputFileSystem
+  inline def readFile: readFile = "readFile".asInstanceOf[readFile]
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait readJson
+    extends StObject
+       with InputFileSystem
+  inline def readJson: readJson = "readJson".asInstanceOf[readJson]
   
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def dir: dir = "dir".asInstanceOf[dir]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def template: template = "template".asInstanceOf[template]
-  @scala.inline
-  def trace: trace = "trace".asInstanceOf[trace]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  @js.native
+  sealed trait readdir
+    extends StObject
+       with InputFileSystem
+  inline def readdir: readdir = "readdir".asInstanceOf[readdir]
+  
+  @js.native
+  sealed trait readlink
+    extends StObject
+       with InputFileSystem
+  inline def readlink: readlink = "readlink".asInstanceOf[readlink]
+  
+  @js.native
+  sealed trait realpath
+    extends StObject
+       with InputFileSystem
+  inline def realpath: realpath = "realpath".asInstanceOf[realpath]
+  
+  @js.native
+  sealed trait relative
+    extends StObject
+       with InputFileSystem
+  inline def relative: relative = "relative".asInstanceOf[relative]
+  
+  @js.native
+  sealed trait stat
+    extends StObject
+       with InputFileSystem
+  inline def stat: stat = "stat".asInstanceOf[stat]
+  
+  @js.native
+  sealed trait template
+    extends StObject
+       with ToType
+  inline def template: template = "template".asInstanceOf[template]
 }
-

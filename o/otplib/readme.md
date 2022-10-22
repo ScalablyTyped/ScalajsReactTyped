@@ -1,7 +1,7 @@
 
 # Scala.js typings for otplib
 
-Typings are for version 11.0.1
+Typings are for version 12.0.1
 
 ## Library description:
 HMAC-based (HOTP) and Time-based (TOTP) One-Time Password library
@@ -10,10 +10,10 @@ HMAC-based (HOTP) and Time-based (TOTP) One-Time Password library
 | ------------------ | :-------------: |
 | Full name          | otplib |
 | Keywords           | totp, hotp, otp, authenticator, one time password, google authenticator, authentication, 2FA, 2 factor, node, browser |
-| # releases         | 29 |
-| # dependents       | 53 |
-| # downloads        | 1299544 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 808737.3333333334 |
+| # stars            | 1403.0 |
 
 ## Links
 - [Homepage](https://github.com/yeojz/otplib#readme)

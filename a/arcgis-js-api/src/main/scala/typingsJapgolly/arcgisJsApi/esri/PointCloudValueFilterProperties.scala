@@ -2,19 +2,23 @@ package typingsJapgolly.arcgisJsApi.esri
 
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.exclude
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.include
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointCloudValueFilterProperties extends PointCloudFilterProperties {
+trait PointCloudValueFilterProperties
+  extends StObject
+     with PointCloudFilterProperties {
+  
   /**
     * Whether points should be included or excluded from the filter.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html#mode)
-    *
     * @default "exclude"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html#mode)
     */
   var mode: js.UndefOr[include | exclude] = js.undefined
+  
   /**
     * An array of numeric values representing the classification codes that the filter should apply.
     *
@@ -22,15 +26,23 @@ trait PointCloudValueFilterProperties extends PointCloudFilterProperties {
     */
   var values: js.UndefOr[js.Array[Double]] = js.undefined
 }
-
 object PointCloudValueFilterProperties {
-  @scala.inline
-  def apply(field: String = null, mode: include | exclude = null, values: js.Array[Double] = null): PointCloudValueFilterProperties = {
+  
+  inline def apply(): PointCloudValueFilterProperties = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudValueFilterProperties]
   }
+  
+  extension [Self <: PointCloudValueFilterProperties](x: Self) {
+    
+    inline def setMode(value: include | exclude): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

@@ -1,19 +1,26 @@
 package typingsJapgolly.request.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExtraPoolOptions extends PoolOptions {
+trait ExtraPoolOptions
+  extends StObject
+     with PoolOptions {
+  
   var maxSockets: js.UndefOr[Double] = js.undefined
 }
-
 object ExtraPoolOptions {
-  @scala.inline
-  def apply(maxSockets: Int | Double = null): ExtraPoolOptions = {
+  
+  inline def apply(): ExtraPoolOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraPoolOptions]
   }
+  
+  extension [Self <: ExtraPoolOptions](x: Self) {
+    
+    inline def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
+    
+    inline def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
+  }
 }
-

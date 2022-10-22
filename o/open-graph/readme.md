@@ -11,12 +11,12 @@ An Open Graph implementation for Node.js.
 | Full name          | open-graph |
 | Keywords           | open graph, open, graph, opengraph, og |
 | # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 51065 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 11270.0 |
+| # stars            | 74.0 |
 
 ## Links
-- [Homepage](https://github.com/samholmes/node-open-graph)
+- [Homepage](https://github.com/samholmes/node-open-graph#readme)
 - [Bugs](https://github.com/samholmes/node-open-graph/issues)
 - [Repository](https://github.com/samholmes/node-open-graph)
 - [Npm](https://www.npmjs.com/package/open-graph)

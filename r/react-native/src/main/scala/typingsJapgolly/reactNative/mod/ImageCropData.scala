@@ -1,48 +1,58 @@
 package typingsJapgolly.reactNative.mod
 
-import typingsJapgolly.reactNative.AnonHeight
-import typingsJapgolly.reactNative.AnonX
+import typingsJapgolly.reactNative.anon.Width
+import typingsJapgolly.reactNative.anon.X
 import typingsJapgolly.reactNative.reactNativeStrings.contain
 import typingsJapgolly.reactNative.reactNativeStrings.cover
 import typingsJapgolly.reactNative.reactNativeStrings.stretch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageCropData extends js.Object {
+trait ImageCropData extends StObject {
+  
   /**
     * (Optional) size to scale the cropped image to.
     */
-  var displaySize: js.UndefOr[AnonHeight] = js.undefined
+  var displaySize: js.UndefOr[Width] = js.undefined
+  
   /**
     * The top-left corner of the cropped image, specified in the original
     * image's coordinate space.
     */
-  var offset: AnonX
+  var offset: X
+  
   /**
     * (Optional) the resizing mode to use when scaling the image. If the
     * `displaySize` param is not specified, this has no effect.
     */
   var resizeMode: js.UndefOr[contain | cover | stretch] = js.undefined
+  
   /**
     * The size (dimensions) of the cropped image, specified in the original
     * image's coordinate space.
     */
-  var size: AnonHeight
+  var size: Width
 }
-
 object ImageCropData {
-  @scala.inline
-  def apply(
-    offset: AnonX,
-    size: AnonHeight,
-    displaySize: AnonHeight = null,
-    resizeMode: contain | cover | stretch = null
-  ): ImageCropData = {
+  
+  inline def apply(offset: X, size: Width): ImageCropData = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-    if (displaySize != null) __obj.updateDynamic("displaySize")(displaySize.asInstanceOf[js.Any])
-    if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageCropData]
   }
+  
+  extension [Self <: ImageCropData](x: Self) {
+    
+    inline def setDisplaySize(value: Width): Self = StObject.set(x, "displaySize", value.asInstanceOf[js.Any])
+    
+    inline def setDisplaySizeUndefined: Self = StObject.set(x, "displaySize", js.undefined)
+    
+    inline def setOffset(value: X): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setResizeMode(value: contain | cover | stretch): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
+    
+    inline def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
+    
+    inline def setSize(value: Width): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+  }
 }
-

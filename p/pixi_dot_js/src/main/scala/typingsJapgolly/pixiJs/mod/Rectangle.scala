@@ -1,38 +1,23 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Rectangle object is an area defined by its position, as indicated by its top-left corner
-  * point (x, y) and by its width and its height.
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "Rectangle")
 @js.native
-class Rectangle ()
-  extends typingsJapgolly.pixiJs.PIXI.Rectangle {
-  def this(x: Double) = this()
-  def this(x: Double, y: Double) = this()
-  def this(x: Double, y: Double, width: Double) = this()
-  def this(x: Double, y: Double, width: Double, height: Double) = this()
-}
-
-/* static members */
-@JSImport("pixi.js", "Rectangle")
-@js.native
-object Rectangle extends js.Object {
+open class Rectangle protected ()
+  extends typingsJapgolly.pixiMath.mod.Rectangle {
   /**
-    * A constant empty rectangle.
-    *
-    * @static
-    * @constant
-    * @member {PIXI.Rectangle}
-    * @return {PIXI.Rectangle} An empty rectangle
+    * @param x - The X coordinate of the upper-left corner of the rectangle
+    * @param y - The Y coordinate of the upper-left corner of the rectangle
+    * @param width - The overall width of the rectangle
+    * @param height - The overall height of the rectangle
     */
-  var EMPTY: typingsJapgolly.pixiJs.PIXI.Rectangle = js.native
+  def this(
+    x: js.UndefOr[String | Double],
+    y: js.UndefOr[String | Double],
+    width: js.UndefOr[String | Double],
+    height: js.UndefOr[String | Double]
+  ) = this()
 }
-

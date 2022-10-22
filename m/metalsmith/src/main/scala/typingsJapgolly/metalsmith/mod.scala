@@ -1,37 +1,102 @@
 package typingsJapgolly.metalsmith
 
 import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.node.fsMod.Stats
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("metalsmith", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  /**
+    * Initialize a new `Metalsmith` builder with a working `directory`.
+    * @param directory  - The working directory.
+    * @example
+    * initialize Metalsmith with the node.js working directory
+    * Metalsmith(__dirname);
+    * @link [Metalsmith] http://www.metalsmith.io/
+    * @link [API] https://github.com/metalsmith/metalsmith#new-metalsmithdir
+    * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L30
+    */
+  inline def apply(directory: String): Metalsmith = ^.asInstanceOf[js.Dynamic].apply(directory.asInstanceOf[js.Any]).asInstanceOf[Metalsmith]
+  
+  @JSImport("metalsmith", JSImport.Namespace)
   @js.native
-  trait Metalsmith extends js.Object {
+  val ^ : js.Any = js.native
+  
+  type Callback = js.Function3[/* err */ js.Error | Null, /* files */ Files, /* metalsmith */ Metalsmith, Unit]
+  
+  /**
+    * Metalsmith representation of a file
+    */
+  trait File
+    extends StObject
+       with /* property */ StringDictionary[Any] {
+    
+    /** A Node {@link Buffer} that can be `.toString`'ed to obtain its human-readable contents */
+    var contents: Buffer
+    
+    /** Octal permission {@link Mode} of a file */
+    var mode: js.UndefOr[String] = js.undefined
+    
+    /** A Node {@link Stats} object with extra filesystem metadata and methods (like {@link Stats.isFile}) */
+    var stats: js.UndefOr[Stats] = js.undefined
+  }
+  object File {
+    
+    inline def apply(contents: Buffer): File = {
+      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
+      __obj.asInstanceOf[File]
+    }
+    
+    extension [Self <: File](x: Self) {
+      
+      inline def setContents(value: Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      
+      inline def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+    }
+  }
+  
+  /**
+    * Metalsmith representation of the files in `metalsmith.source()`.
+    * The keys represent the file paths and the values are {@link Metalsmith.File} objects
+    */
+  type Files = StringDictionary[File]
+  
+  type Ignore = js.Function2[/* path */ String, /* stat */ Stats, Unit]
+  
+  @js.native
+  trait Metalsmith extends StObject {
+    
     /**
       * Perform the `build` with the current settings outputting to the destination directory.
-      * @param fn - Optional Callback function.
+      * @param fn - Optional **(but strongly encouraged)** {@link Callback} function.
       * @example
       * Perform the `build` with the current settings
       * Metalsmith(__dirname).build(
       * function (err: Error): any {
       *     if (err) {throw err;}
       * });
-      * @link [API] https://github.com/segmentio/metalsmith#buildfn
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L184
+      * @link [API] https://github.com/metalsmith/metalsmith#buildfn
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L184
       */
     def build(): js.Object = js.native
     def build(fn: Callback): js.Object = js.native
+    
     /**
       * Get the flag on whether the destination directory will be `cleaned` before writing.
       * @example
       * Retrieve the `clean` flag indicating destination directory removal
       * var clean:boolean = Metalsmith(__dirname).clean();
-      * @link [API] https://github.com/segmentio/metalsmith#cleanboolean
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L132
+      * @link [API] https://github.com/metalsmith/metalsmith#cleanboolean
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L132
       */
     def clean(): Boolean = js.native
     /**
@@ -40,17 +105,18 @@ object mod extends js.Object {
       * @example
       * Set the flag to `clean` the destination directory to false
       * Metalsmith(__dirname).clean(false);
-      * @link [API] https://github.com/segmentio/metalsmith#cleanboolean
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L132
+      * @link [API] https://github.com/metalsmith/metalsmith#cleanboolean
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L132
       */
     def clean(clean: Boolean): Metalsmith = js.native
+    
     /**
       * Get the `maximum` number of files to open at once.
       * @example
       * Retrieve the `maximum` number of files to open at once
       * var max:number = Metalsmith(__dirname).concurrency();
-      * @link [API] https://github.com/segmentio/metalsmith#concurrencymax
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L118
+      * @link [API] https://github.com/metalsmith/metalsmith#concurrencymax
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L118
       */
     def concurrency(): Double = js.native
     /**
@@ -59,17 +125,18 @@ object mod extends js.Object {
       * @example
       * Set the `maximum` number of files to open at once to 50
       * Metalsmith(__dirname).concurrency(50);
-      * @link [API] https://github.com/segmentio/metalsmith#concurrencymax
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L118
+      * @link [API] https://github.com/metalsmith/metalsmith#concurrencymax
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L118
       */
     def concurrency(max: Double): Metalsmith = js.native
+    
     /**
       * Get the absolute path of the `destination` directory.
       * @example
       * Retrieve the absolute `destination` directory path
       * var dst:string = Metalsmith(__dirname).destination();
-      * @link [API] https://github.com/segmentio/metalsmith#destinationpath
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L104
+      * @link [API] https://github.com/metalsmith/metalsmith#destinationpath
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L104
       */
     def destination(): String = js.native
     /**
@@ -81,17 +148,18 @@ object mod extends js.Object {
       * @example
       * Set the absolute `destination` directory to 'C:\Projects\Out\'
       * Metalsmith(__dirname).destination("C:\\\Projects\\\Out");
-      * @link [API] https://github.com/segmentio/metalsmith#destinationpath
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L104
+      * @link [API] https://github.com/metalsmith/metalsmith#destinationpath
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L104
       */
     def destination(path: String): Metalsmith = js.native
+    
     /**
       * Get the absolute path of the `working` directory
       * @example
       * Retrieve the absolute `working` directory path
-      * var wrk:string = Metalsmith(__dirname).directory();
-      * @link [API] https://github.com/segmentio/metalsmith#api
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L62
+      * const mwd:string = Metalsmith(__dirname).directory();
+      * @link [API] https://github.com/metalsmith/metalsmith#api
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L62
       */
     def directory(): String = js.native
     /**
@@ -102,18 +170,19 @@ object mod extends js.Object {
       * Metalsmith(__dirname).directory("working");
       * @example
       * Set the absolute `working` directory to 'C:\Projects\Metalsmith\'
-      * Metalsmith(__dirname).directory("C:\\\Projects\\\Metalsmith");
-      * @link [API] https://github.com/segmentio/metalsmith#api
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L62
+      * Metalsmith(__dirname).directory("C:\\Projects\\Metalsmith");
+      * @link [API] https://github.com/metalsmith/metalsmith#api
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L62
       */
     def directory(directory: String): Metalsmith = js.native
+    
     /**
       * Get the flag on whether to parse YAML `frontmatter`
       * @example
       * Retrieve the `frontmatter` flag indicating YAML parsing
       * var parse:boolean = Metalsmith(__dirname).frontmatter();
-      * @link [API] https://github.com/segmentio/metalsmith#frontmatterboolean
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L145
+      * @link [API] https://github.com/metalsmith/metalsmith#frontmatterboolean
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L145
       */
     def frontmatter(): Boolean = js.native
     /**
@@ -122,17 +191,18 @@ object mod extends js.Object {
       * @example
       * Set the flag to parse YAML `frontmatter` to false
       * Metalsmith(__dirname).frontmatter(false);
-      * @link [API] https://github.com/segmentio/metalsmith#frontmatterboolean
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L145
+      * @link [API] https://github.com/metalsmith/metalsmith#frontmatterboolean
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L145
       */
     def frontmatter(frontmatter: Boolean): Metalsmith = js.native
+    
     /**
       * Get the array of `Ignored` files/paths.
       * @example
       * Retrieve the `ignored` array of files in Metalsmith
-      * var ingnored:string[] = Metalsmith(__dirname).ignore();
-      * @link [API] https://github.com/segmentio/metalsmith#ignorepath
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L159
+      * var ignored:string[] = Metalsmith(__dirname).ignore();
+      * @link [API] https://github.com/metalsmith/metalsmith#ignorepath
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L159
       */
     def ignore(): js.Array[String] = js.native
     /**
@@ -146,19 +216,25 @@ object mod extends js.Object {
       * Metalsmith(__dirname).ignore(ignore(function (filepath: string, stats: Stats) {
       *      return stats.isDirectory() && path.basename(filepath) === 'nested';
       * });
-      * @link [API] https://github.com/segmentio/metalsmith#ignorepath
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L159
+      * @link [API] https://github.com/metalsmith/metalsmith#ignorepath
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L159
       */
     def ignore(files: String): Metalsmith = js.native
     def ignore(files: js.Array[Ignore | String]): Metalsmith = js.native
     def ignore(files: Ignore): Metalsmith = js.native
+    
+    /**
+      * The (read-only) list of ignores of the current metalsmith instance
+      */
+    val ignores: js.Array[String] = js.native
+    
     /**
       * Get the global `metadata` object passed to templates.
       * @example
       * Retrieve the `metadata` object passed to templates
       * var meta:object = Metalsmith(__dirname).metadata();
-      * @link [API] https://github.com/segmentio/metalsmith#metadatajson
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L76
+      * @link [API] https://github.com/metalsmith/metalsmith#metadatajson
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L76
       */
     def metadata(): js.Object = js.native
     /**
@@ -167,20 +243,28 @@ object mod extends js.Object {
       * @example
       * Add 'sitename' to the global `metadata` object
       * Metalsmith(__dirname).metadata({sitename: "My Static Site"});
-      * @link [API] https://github.com/segmentio/metalsmith#metadatajson
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L76
+      * @link [API] https://github.com/metalsmith/metalsmith#metadatajson
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L76
       */
     def metadata(metadata: js.Object): Metalsmith = js.native
+    
     /**
       * Resolve `paths` relative to the root directory.
       * @param paths - The `paths` to resolve.
       * @example
       * Retrieve the path after resolving sub-directies
       * var path:string = Metalsmith(__dirname).path("path-a", "path-b");
-      * @link [API] https://github.com/segmentio/metalsmith#pathpaths
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L171
+      * @link [API] https://github.com/metalsmith/metalsmith#pathpaths
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L171
       */
     def path(paths: String*): String = js.native
+    
+    /**
+      * The (read-only) list of plugins `use`'d by the current metalsmith instance.
+      * When read from inside a plugin, the list is guaranteed to be complete
+      */
+    val plugins: js.Array[Plugin] = js.native
+    
     /**
       * `Process` files through plugins without writing out files.
       * @param fn - Optional Callback function.
@@ -190,11 +274,12 @@ object mod extends js.Object {
       * function (err: Error): any {
       *     if (err) {throw err;}
       * });
-      * @link [API] https://github.com/segmentio/metalsmith#processfn
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L200
+      * @link [API] https://github.com/metalsmith/metalsmith#processfn
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L200
       */
     def process(): js.Object = js.native
     def process(fn: Callback): js.Object = js.native
+    
     /**
       * Read a dictionary of files from a `dir`, parsing frontmatter. If no directory
       * is provided, it will default to the source directory.
@@ -202,7 +287,7 @@ object mod extends js.Object {
       * @example
       * Read a dictionary of files from a `dir`.
       * var files:object = Metalsmith(__dirname).read("subdir");
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L227
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L227
       */
     def read(dir: String): js.Object = js.native
     def read(dir: String, fn: Callback): js.Object = js.native
@@ -213,9 +298,10 @@ object mod extends js.Object {
       * @example
       * Read a dictionary of files from a `dir`.
       * var files:object = Metalsmith(__dirname).read("subdir");
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L227
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L227
       */
     def read(fn: Callback): js.Object = js.native
+    
     /**
       * Read a `file` by path. If the path is not absolute, it will be resolved
       * relative to the source directory.
@@ -223,9 +309,10 @@ object mod extends js.Object {
       * @example
       * Read a `file` by path.
       * var fileData:object = Metalsmith(__dirname).readFile("a.html");
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L261
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L261
       */
     def readFile(file: String): js.Object = js.native
+    
     /**
       * `Run` a set of files through the plugins stack.
       * @param files - The dictionary of files.
@@ -234,8 +321,8 @@ object mod extends js.Object {
       * `Run` all of the middleware functions on a dictionary of files.
       * var callback:Metalsmith.Callback = (err: Error, files: object) => {if (err) {throw err;}};
       * Metalsmith(__dirname).run({fileA: "a.html"} , callback);
-      * @link [API] https://github.com/segmentio/metalsmith#runfiles-fn
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L212
+      * @link [API] https://github.com/metalsmith/metalsmith#runfiles-fn
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L212
       */
     def run(files: js.Object): js.Object = js.native
     def run(files: js.Object, fn: Callback): js.Object = js.native
@@ -247,18 +334,19 @@ object mod extends js.Object {
       * `Run` all of the middleware functions on a dictionary of files.
       * var callback:Metalsmith.Callback = (err: Error, files: object) => {if (err) {throw err;}};
       * Metalsmith(__dirname).run({fileA: "a.html"} , callback);
-      * @link [API] https://github.com/segmentio/metalsmith#runfiles-fn
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L212
+      * @link [API] https://github.com/metalsmith/metalsmith#runfiles-fn
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L212
       */
     def run(files: js.Object, plugins: js.Array[Plugin]): js.Object = js.native
     def run(files: js.Object, plugins: js.Array[Plugin], fn: Callback): js.Object = js.native
+    
     /**
       * Get the absolute path of the `source` directory.
       * @example
       * Retrieve the absolute `source` directory path
       * var src:string = Metalsmith(__dirname).source();
-      * @link [API] https://github.com/segmentio/metalsmith#sourcepath
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L90
+      * @link [API] https://github.com/metalsmith/metalsmith#sourcepath
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L90
       */
     def source(): String = js.native
     /**
@@ -270,10 +358,11 @@ object mod extends js.Object {
       * @example
       * Set the absolute `source` directory to 'C:\Projects\Site\'
       * Metalsmith(__dirname).source("C:\\\Projects\\\Site");
-      * @link [API] https://github.com/segmentio/metalsmith#sourcepath
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L90
+      * @link [API] https://github.com/metalsmith/metalsmith#sourcepath
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L90
       */
     def source(path: String): Metalsmith = js.native
+    
     def use(plugin: js.Array[Plugin]): Metalsmith = js.native
     /**
       * Add a `plugin` function to the stack.
@@ -281,10 +370,11 @@ object mod extends js.Object {
       * @example
       * Add 'metalsmith-markdown' to the middleware stack
       * Metalsmith(__dirname).use(markdown());
-      * @link [API] https://github.com/segmentio/metalsmith#useplugin
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L50
+      * @link [API] https://github.com/metalsmith/metalsmith#useplugin
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L50
       */
     def use(plugin: Plugin): Metalsmith = js.native
+    
     /**
       * Write a dictionary of `files` to a destination `dir`. If no directory is
       * provided, it will default to the destination directory.
@@ -294,11 +384,12 @@ object mod extends js.Object {
       * @example
       * Write a dictionary of `files` to a destination `dir`.
       * Metalsmith(__dirname).write({fileA: "a.html"} , "C:\\\OutDir");
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L308
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L308
       */
     def write(files: js.Object): Unit = js.native
     def write(files: js.Object, dir: String): Unit = js.native
     def write(files: js.Object, dir: String, fn: Callback): Unit = js.native
+    def write(files: js.Object, dir: Unit, fn: Callback): Unit = js.native
     /**
       * Write a dictionary of `files` to a destination `dir`. If no directory is
       * provided, it will default to the destination directory.
@@ -307,9 +398,10 @@ object mod extends js.Object {
       * @example
       * Write a dictionary of `files` to a destination `dir`.
       * Metalsmith(__dirname).write({fileA: "a.html"} , "C:\\\OutDir");
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L308
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L308
       */
     def write(files: js.Object, fn: Callback): Unit = js.native
+    
     /**
       * Write a `file` by path with `data`. If the path is not absolute, it will be
       * resolved relative to the destination directory.
@@ -318,25 +410,14 @@ object mod extends js.Object {
       * @example
       * Write a `file` by path with `data`.
       * Metalsmith(__dirname).writeFile("test.html", {contents: "File Contents"});
-      * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L336
+      * @link [Source] https://github.com/metalsmith/metalsmith/blob/v2.3.0/lib/index.js#L336
       */
     def writeFile(file: String, data: js.Object): Unit = js.native
   }
   
   /**
-    * Initialize a new `Metalsmith` builder with a working `directory`.
-    * @param directory  - The working directory.
-    * @example
-    * initialize Metalsmith with the node.js working directory
-    * Metalsmith(__dirname);
-    * @link [Metalsmith] http://www.metalsmith.io/
-    * @link [API] https://github.com/segmentio/metalsmith#new-metalsmithdir
-    * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L30
+    * A Metalsmith plugin is a function that is passed the file list, the metalsmith instance, and a `done` callback.
+    * Calling the callback is required for asynchronous plugins, and optional for synchronous plugins.
     */
-  def apply(directory: String): Metalsmith = js.native
-  type Callback = js.Function3[/* err */ js.Error | Null, /* files */ Files, /* metalsmith */ Metalsmith, Unit]
-  type Files = StringDictionary[js.Any]
-  type Ignore = js.Function2[/* path */ String, /* stat */ Stats, Unit]
   type Plugin = js.Function3[/* files */ Files, /* metalsmith */ Metalsmith, /* callback */ Callback, Unit]
 }
-

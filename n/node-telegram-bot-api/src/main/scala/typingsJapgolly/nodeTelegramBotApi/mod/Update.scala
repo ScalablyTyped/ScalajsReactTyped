@@ -1,47 +1,106 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Update extends js.Object {
+trait Update extends StObject {
+  
   var callback_query: js.UndefOr[CallbackQuery] = js.undefined
+  
   var channel_post: js.UndefOr[Message] = js.undefined
+  
+  var chat_join_request: js.UndefOr[ChatJoinRequest] = js.undefined
+  
+  var chat_member: js.UndefOr[ChatMemberUpdated] = js.undefined
+  
   var chosen_inline_result: js.UndefOr[ChosenInlineResult] = js.undefined
+  
   var edited_channel_post: js.UndefOr[Message] = js.undefined
+  
   var edited_message: js.UndefOr[Message] = js.undefined
+  
   var inline_query: js.UndefOr[InlineQuery] = js.undefined
+  
   var message: js.UndefOr[Message] = js.undefined
+  
+  var my_chat_member: js.UndefOr[ChatMemberUpdated] = js.undefined
+  
+  var poll: js.UndefOr[Poll] = js.undefined
+  
+  var poll_answer: js.UndefOr[PollAnswer] = js.undefined
+  
   var pre_checkout_query: js.UndefOr[PreCheckoutQuery] = js.undefined
+  
   var shipping_query: js.UndefOr[ShippingQuery] = js.undefined
+  
   var update_id: Double
 }
-
 object Update {
-  @scala.inline
-  def apply(
-    update_id: Double,
-    callback_query: CallbackQuery = null,
-    channel_post: Message = null,
-    chosen_inline_result: ChosenInlineResult = null,
-    edited_channel_post: Message = null,
-    edited_message: Message = null,
-    inline_query: InlineQuery = null,
-    message: Message = null,
-    pre_checkout_query: PreCheckoutQuery = null,
-    shipping_query: ShippingQuery = null
-  ): Update = {
+  
+  inline def apply(update_id: Double): Update = {
     val __obj = js.Dynamic.literal(update_id = update_id.asInstanceOf[js.Any])
-    if (callback_query != null) __obj.updateDynamic("callback_query")(callback_query.asInstanceOf[js.Any])
-    if (channel_post != null) __obj.updateDynamic("channel_post")(channel_post.asInstanceOf[js.Any])
-    if (chosen_inline_result != null) __obj.updateDynamic("chosen_inline_result")(chosen_inline_result.asInstanceOf[js.Any])
-    if (edited_channel_post != null) __obj.updateDynamic("edited_channel_post")(edited_channel_post.asInstanceOf[js.Any])
-    if (edited_message != null) __obj.updateDynamic("edited_message")(edited_message.asInstanceOf[js.Any])
-    if (inline_query != null) __obj.updateDynamic("inline_query")(inline_query.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (pre_checkout_query != null) __obj.updateDynamic("pre_checkout_query")(pre_checkout_query.asInstanceOf[js.Any])
-    if (shipping_query != null) __obj.updateDynamic("shipping_query")(shipping_query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Update]
   }
+  
+  extension [Self <: Update](x: Self) {
+    
+    inline def setCallback_query(value: CallbackQuery): Self = StObject.set(x, "callback_query", value.asInstanceOf[js.Any])
+    
+    inline def setCallback_queryUndefined: Self = StObject.set(x, "callback_query", js.undefined)
+    
+    inline def setChannel_post(value: Message): Self = StObject.set(x, "channel_post", value.asInstanceOf[js.Any])
+    
+    inline def setChannel_postUndefined: Self = StObject.set(x, "channel_post", js.undefined)
+    
+    inline def setChat_join_request(value: ChatJoinRequest): Self = StObject.set(x, "chat_join_request", value.asInstanceOf[js.Any])
+    
+    inline def setChat_join_requestUndefined: Self = StObject.set(x, "chat_join_request", js.undefined)
+    
+    inline def setChat_member(value: ChatMemberUpdated): Self = StObject.set(x, "chat_member", value.asInstanceOf[js.Any])
+    
+    inline def setChat_memberUndefined: Self = StObject.set(x, "chat_member", js.undefined)
+    
+    inline def setChosen_inline_result(value: ChosenInlineResult): Self = StObject.set(x, "chosen_inline_result", value.asInstanceOf[js.Any])
+    
+    inline def setChosen_inline_resultUndefined: Self = StObject.set(x, "chosen_inline_result", js.undefined)
+    
+    inline def setEdited_channel_post(value: Message): Self = StObject.set(x, "edited_channel_post", value.asInstanceOf[js.Any])
+    
+    inline def setEdited_channel_postUndefined: Self = StObject.set(x, "edited_channel_post", js.undefined)
+    
+    inline def setEdited_message(value: Message): Self = StObject.set(x, "edited_message", value.asInstanceOf[js.Any])
+    
+    inline def setEdited_messageUndefined: Self = StObject.set(x, "edited_message", js.undefined)
+    
+    inline def setInline_query(value: InlineQuery): Self = StObject.set(x, "inline_query", value.asInstanceOf[js.Any])
+    
+    inline def setInline_queryUndefined: Self = StObject.set(x, "inline_query", js.undefined)
+    
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setMy_chat_member(value: ChatMemberUpdated): Self = StObject.set(x, "my_chat_member", value.asInstanceOf[js.Any])
+    
+    inline def setMy_chat_memberUndefined: Self = StObject.set(x, "my_chat_member", js.undefined)
+    
+    inline def setPoll(value: Poll): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
+    
+    inline def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
+    
+    inline def setPoll_answer(value: PollAnswer): Self = StObject.set(x, "poll_answer", value.asInstanceOf[js.Any])
+    
+    inline def setPoll_answerUndefined: Self = StObject.set(x, "poll_answer", js.undefined)
+    
+    inline def setPre_checkout_query(value: PreCheckoutQuery): Self = StObject.set(x, "pre_checkout_query", value.asInstanceOf[js.Any])
+    
+    inline def setPre_checkout_queryUndefined: Self = StObject.set(x, "pre_checkout_query", js.undefined)
+    
+    inline def setShipping_query(value: ShippingQuery): Self = StObject.set(x, "shipping_query", value.asInstanceOf[js.Any])
+    
+    inline def setShipping_queryUndefined: Self = StObject.set(x, "shipping_query", js.undefined)
+    
+    inline def setUpdate_id(value: Double): Self = StObject.set(x, "update_id", value.asInstanceOf[js.Any])
+  }
 }
-

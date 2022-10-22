@@ -1,21 +1,29 @@
 package typingsJapgolly.pg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MessageConfig extends js.Object {
+trait MessageConfig extends StObject {
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var `type`: String
 }
-
 object MessageConfig {
-  @scala.inline
-  def apply(`type`: String, name: String = null): MessageConfig = {
+  
+  inline def apply(`type`: String): MessageConfig = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageConfig]
   }
+  
+  extension [Self <: MessageConfig](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

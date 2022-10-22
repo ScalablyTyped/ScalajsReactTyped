@@ -1,17 +1,20 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Activation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDeviceActivatedEventArgs extends IActivatedEventArgs {
+trait IDeviceActivatedEventArgs
+  extends StObject
+     with IActivatedEventArgs {
+  
   var deviceInformationId: String
+  
   var verb: String
 }
-
 object IDeviceActivatedEventArgs {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     deviceInformationId: String,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -19,8 +22,13 @@ object IDeviceActivatedEventArgs {
     verb: String
   ): IDeviceActivatedEventArgs = {
     val __obj = js.Dynamic.literal(deviceInformationId = deviceInformationId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], verb = verb.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IDeviceActivatedEventArgs]
   }
+  
+  extension [Self <: IDeviceActivatedEventArgs](x: Self) {
+    
+    inline def setDeviceInformationId(value: String): Self = StObject.set(x, "deviceInformationId", value.asInstanceOf[js.Any])
+    
+    inline def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+  }
 }
-

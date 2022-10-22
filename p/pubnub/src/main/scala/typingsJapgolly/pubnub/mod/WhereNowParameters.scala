@@ -1,20 +1,25 @@
 package typingsJapgolly.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // whereNow
-trait WhereNowParameters extends js.Object {
+trait WhereNowParameters extends StObject {
+  
   var uuid: js.UndefOr[String] = js.undefined
 }
-
 object WhereNowParameters {
-  @scala.inline
-  def apply(uuid: String = null): WhereNowParameters = {
+  
+  inline def apply(): WhereNowParameters = {
     val __obj = js.Dynamic.literal()
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhereNowParameters]
   }
+  
+  extension [Self <: WhereNowParameters](x: Self) {
+    
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+  }
 }
-

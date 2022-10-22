@@ -1,22 +1,30 @@
 package typingsJapgolly.reactDates.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// defaultPhrases.js
-trait DayPickerNavigationPhrases extends js.Object {
+trait DayPickerNavigationPhrases extends StObject {
+  
   var jumpToNextMonth: js.UndefOr[String] = js.undefined
+  
   var jumpToPrevMonth: js.UndefOr[String] = js.undefined
 }
-
 object DayPickerNavigationPhrases {
-  @scala.inline
-  def apply(jumpToNextMonth: String = null, jumpToPrevMonth: String = null): DayPickerNavigationPhrases = {
+  
+  inline def apply(): DayPickerNavigationPhrases = {
     val __obj = js.Dynamic.literal()
-    if (jumpToNextMonth != null) __obj.updateDynamic("jumpToNextMonth")(jumpToNextMonth.asInstanceOf[js.Any])
-    if (jumpToPrevMonth != null) __obj.updateDynamic("jumpToPrevMonth")(jumpToPrevMonth.asInstanceOf[js.Any])
     __obj.asInstanceOf[DayPickerNavigationPhrases]
   }
+  
+  extension [Self <: DayPickerNavigationPhrases](x: Self) {
+    
+    inline def setJumpToNextMonth(value: String): Self = StObject.set(x, "jumpToNextMonth", value.asInstanceOf[js.Any])
+    
+    inline def setJumpToNextMonthUndefined: Self = StObject.set(x, "jumpToNextMonth", js.undefined)
+    
+    inline def setJumpToPrevMonth(value: String): Self = StObject.set(x, "jumpToPrevMonth", value.asInstanceOf[js.Any])
+    
+    inline def setJumpToPrevMonthUndefined: Self = StObject.set(x, "jumpToPrevMonth", js.undefined)
+  }
 }
-

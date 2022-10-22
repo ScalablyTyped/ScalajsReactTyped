@@ -1,29 +1,22 @@
 package typingsJapgolly.navermaps.naver.maps.Service
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Status extends js.Object
-
+sealed trait Status extends StObject
 @JSGlobal("naver.maps.Service.Status")
 @js.native
-object Status extends js.Object {
-  @js.native
-  sealed trait ERROR extends Status
+object Status extends StObject {
   
   @js.native
-  sealed trait OK extends Status
+  sealed trait ERROR
+    extends StObject
+       with Status
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Status with Double] = js.native
-  /* 1 */ @js.native
-  object ERROR extends TopLevel[ERROR with Double]
-  
-  /* 0 */ @js.native
-  object OK extends TopLevel[OK with Double]
-  
+  @js.native
+  sealed trait OK
+    extends StObject
+       with Status
 }
-

@@ -3,34 +3,28 @@ package typingsJapgolly.mdast.mod
 import typingsJapgolly.mdast.mdastStrings.footnoteReference
 import typingsJapgolly.unist.mod.Data
 import typingsJapgolly.unist.mod.Node
-import typingsJapgolly.unist.mod.Position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FootnoteReference
-  extends StaticPhrasingContent
-     with Node
+  extends StObject
+     with Node[Data]
      with Association {
+  
   @JSName("type")
   var type_FootnoteReference: footnoteReference
 }
-
 object FootnoteReference {
-  @scala.inline
-  def apply(
-    identifier: String,
-    `type`: footnoteReference,
-    data: Data = null,
-    label: String = null,
-    position: Position = null
-  ): FootnoteReference = {
+  
+  inline def apply(identifier: String): FootnoteReference = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("footnoteReference")
     __obj.asInstanceOf[FootnoteReference]
   }
+  
+  extension [Self <: FootnoteReference](x: Self) {
+    
+    inline def setType(value: footnoteReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

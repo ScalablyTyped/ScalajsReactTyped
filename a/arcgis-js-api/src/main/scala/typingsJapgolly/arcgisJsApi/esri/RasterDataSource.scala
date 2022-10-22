@@ -1,26 +1,30 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.raster
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RasterDataSource extends Object {
+trait RasterDataSource
+  extends StObject
+     with Object {
+  
   /**
     * The name of the raster in the registered workspace.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#RasterDataSource)
     */
   var dataSourceName: String
+  
   /**
     * This value is always `raster`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#RasterDataSource)
     */
   var `type`: raster
+  
   /**
     * The workspace where the raster resides as defined in the ArcGIS Server Manager.
     *
@@ -28,22 +32,26 @@ trait RasterDataSource extends Object {
     */
   var workspaceId: String
 }
-
 object RasterDataSource {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     dataSourceName: String,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    `type`: raster,
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
     workspaceId: String
   ): RasterDataSource = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dataSourceName = dataSourceName.asInstanceOf[js.Any], workspaceId = workspaceId.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dataSourceName = dataSourceName.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), workspaceId = workspaceId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("raster")
     __obj.asInstanceOf[RasterDataSource]
   }
+  
+  extension [Self <: RasterDataSource](x: Self) {
+    
+    inline def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: raster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+  }
 }
-

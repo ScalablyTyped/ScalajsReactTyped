@@ -1,29 +1,22 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Constants extends js.Object
-
+sealed trait Constants extends StObject
 @JSGlobal("TypeScript.Constants")
 @js.native
-object Constants extends js.Object {
-  @js.native
-  sealed trait Max31BitInteger extends Constants
+object Constants extends StObject {
   
   @js.native
-  sealed trait Min31BitInteger extends Constants
+  sealed trait Max31BitInteger
+    extends StObject
+       with Constants
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Constants with Double] = js.native
-  /* 1073741823 */ @js.native
-  object Max31BitInteger extends TopLevel[Max31BitInteger with Double]
-  
-  /* -1073741824 */ @js.native
-  object Min31BitInteger extends TopLevel[Min31BitInteger with Double]
-  
+  @js.native
+  sealed trait Min31BitInteger
+    extends StObject
+       with Constants
 }
-

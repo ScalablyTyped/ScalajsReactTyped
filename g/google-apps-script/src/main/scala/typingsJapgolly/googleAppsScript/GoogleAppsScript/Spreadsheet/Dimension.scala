@@ -1,32 +1,25 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Dimension extends js.Object
-
+sealed trait Dimension extends StObject
 /**
   * An enumeration of possible directions along which data can be stored in a spreadsheet.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.Dimension")
 @js.native
-object Dimension extends js.Object {
-  @js.native
-  sealed trait COLUMNS extends Dimension
+object Dimension extends StObject {
   
   @js.native
-  sealed trait ROWS extends Dimension
+  sealed trait COLUMNS
+    extends StObject
+       with Dimension
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Dimension with Double] = js.native
-  /* 0 */ @js.native
-  object COLUMNS extends TopLevel[COLUMNS with Double]
-  
-  /* 1 */ @js.native
-  object ROWS extends TopLevel[ROWS with Double]
-  
+  @js.native
+  sealed trait ROWS
+    extends StObject
+       with Dimension
 }
-

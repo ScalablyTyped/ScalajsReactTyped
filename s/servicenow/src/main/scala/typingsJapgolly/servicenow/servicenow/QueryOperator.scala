@@ -1,8 +1,8 @@
 package typingsJapgolly.servicenow.servicenow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.servicenow.servicenowStrings.Equalssign
@@ -18,34 +18,30 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.servicenow.servicenowStrings.DOESNOTCONTAIN
   - typingsJapgolly.servicenow.servicenowStrings.INSTANCEOF
 */
-trait QueryOperator extends js.Object
-
+trait QueryOperator extends StObject
 object QueryOperator {
-  @scala.inline
-  def CONTAINS: typingsJapgolly.servicenow.servicenowStrings.CONTAINS = this.cast("CONTAINS")
-  @scala.inline
-  def DOESNOTCONTAIN: typingsJapgolly.servicenow.servicenowStrings.DOESNOTCONTAIN = this.cast("DOESNOTCONTAIN")
-  @scala.inline
-  def ENDSWITH: typingsJapgolly.servicenow.servicenowStrings.ENDSWITH = this.cast("ENDSWITH")
-  @scala.inline
-  def Equalssign: typingsJapgolly.servicenow.servicenowStrings.Equalssign = this.cast("=")
-  @scala.inline
-  def ExclamationmarkEqualssign: typingsJapgolly.servicenow.servicenowStrings.ExclamationmarkEqualssign = this.cast("!=")
-  @scala.inline
-  def Greaterthansign: typingsJapgolly.servicenow.servicenowStrings.Greaterthansign = this.cast(">")
-  @scala.inline
-  def GreaterthansignEqualssign: typingsJapgolly.servicenow.servicenowStrings.GreaterthansignEqualssign = this.cast(">=")
-  @scala.inline
-  def IN: typingsJapgolly.servicenow.servicenowStrings.IN = this.cast("IN")
-  @scala.inline
-  def INSTANCEOF: typingsJapgolly.servicenow.servicenowStrings.INSTANCEOF = this.cast("INSTANCEOF")
-  @scala.inline
-  def Lessthansign: typingsJapgolly.servicenow.servicenowStrings.Lessthansign = this.cast("<")
-  @scala.inline
-  def LessthansignEqualssign: typingsJapgolly.servicenow.servicenowStrings.LessthansignEqualssign = this.cast("<=")
-  @scala.inline
-  def STARTSWITH: typingsJapgolly.servicenow.servicenowStrings.STARTSWITH = this.cast("STARTSWITH")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CONTAINS: typingsJapgolly.servicenow.servicenowStrings.CONTAINS = "CONTAINS".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.CONTAINS]
+  
+  inline def DOESNOTCONTAIN: typingsJapgolly.servicenow.servicenowStrings.DOESNOTCONTAIN = "DOESNOTCONTAIN".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.DOESNOTCONTAIN]
+  
+  inline def ENDSWITH: typingsJapgolly.servicenow.servicenowStrings.ENDSWITH = "ENDSWITH".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.ENDSWITH]
+  
+  inline def Equalssign: typingsJapgolly.servicenow.servicenowStrings.Equalssign = "=".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.Equalssign]
+  
+  inline def ExclamationmarkEqualssign: typingsJapgolly.servicenow.servicenowStrings.ExclamationmarkEqualssign = "!=".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.ExclamationmarkEqualssign]
+  
+  inline def Greaterthansign: typingsJapgolly.servicenow.servicenowStrings.Greaterthansign = ">".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.Greaterthansign]
+  
+  inline def GreaterthansignEqualssign: typingsJapgolly.servicenow.servicenowStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.GreaterthansignEqualssign]
+  
+  inline def IN: typingsJapgolly.servicenow.servicenowStrings.IN = "IN".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.IN]
+  
+  inline def INSTANCEOF: typingsJapgolly.servicenow.servicenowStrings.INSTANCEOF = "INSTANCEOF".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.INSTANCEOF]
+  
+  inline def Lessthansign: typingsJapgolly.servicenow.servicenowStrings.Lessthansign = "<".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.Lessthansign]
+  
+  inline def LessthansignEqualssign: typingsJapgolly.servicenow.servicenowStrings.LessthansignEqualssign = "<=".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.LessthansignEqualssign]
+  
+  inline def STARTSWITH: typingsJapgolly.servicenow.servicenowStrings.STARTSWITH = "STARTSWITH".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.STARTSWITH]
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for n3
 
-Typings are for version 1.1
+Typings are for version 1.10
 
 ## Library description:
 Lightning fast, asynchronous, streaming Turtle / N3 / RDF library.
@@ -10,10 +10,10 @@ Lightning fast, asynchronous, streaming Turtle / N3 / RDF library.
 | ------------------ | :-------------: |
 | Full name          | n3 |
 | Keywords           | turtle, rdf, n3, streaming, asynchronous |
-| # releases         | 21 |
-| # dependents       | 141 |
-| # downloads        | 288728 |
-| # stars            | 5 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 85231.0 |
+| # stars            | 597.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs/N3.js#readme)

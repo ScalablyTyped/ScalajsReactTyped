@@ -1,35 +1,53 @@
 package typingsJapgolly.postmanCollection.mod
 
-import typingsJapgolly.postmanCollection.AnonSrcString
+import typingsJapgolly.postmanCollection.anon.SrcString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestBodyDefinition extends PropertyBaseDefinition {
-  var file: js.UndefOr[String | AnonSrcString] = js.undefined
+trait RequestBodyDefinition
+  extends StObject
+     with PropertyBaseDefinition {
+  
+  var file: js.UndefOr[String | SrcString] = js.undefined
+  
   var formdata: js.UndefOr[js.Array[FormParamDefinition] | PropertyList[FormParam]] = js.undefined
+  
   var mode: String
+  
   var raw: js.UndefOr[String] = js.undefined
+  
   var urlencoded: js.UndefOr[js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String] = js.undefined
 }
-
 object RequestBodyDefinition {
-  @scala.inline
-  def apply(
-    mode: String,
-    description: String | DescriptionDefinition = null,
-    file: String | AnonSrcString = null,
-    formdata: js.Array[FormParamDefinition] | PropertyList[FormParam] = null,
-    raw: String = null,
-    urlencoded: js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String = null
-  ): RequestBodyDefinition = {
+  
+  inline def apply(mode: String): RequestBodyDefinition = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (formdata != null) __obj.updateDynamic("formdata")(formdata.asInstanceOf[js.Any])
-    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (urlencoded != null) __obj.updateDynamic("urlencoded")(urlencoded.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyDefinition]
   }
+  
+  extension [Self <: RequestBodyDefinition](x: Self) {
+    
+    inline def setFile(value: String | SrcString): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    
+    inline def setFormdata(value: js.Array[FormParamDefinition] | PropertyList[FormParam]): Self = StObject.set(x, "formdata", value.asInstanceOf[js.Any])
+    
+    inline def setFormdataUndefined: Self = StObject.set(x, "formdata", js.undefined)
+    
+    inline def setFormdataVarargs(value: FormParamDefinition*): Self = StObject.set(x, "formdata", js.Array(value*))
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    
+    inline def setUrlencoded(value: js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String): Self = StObject.set(x, "urlencoded", value.asInstanceOf[js.Any])
+    
+    inline def setUrlencodedUndefined: Self = StObject.set(x, "urlencoded", js.undefined)
+    
+    inline def setUrlencodedVarargs(value: QueryParamDefinition*): Self = StObject.set(x, "urlencoded", js.Array(value*))
+  }
 }
-

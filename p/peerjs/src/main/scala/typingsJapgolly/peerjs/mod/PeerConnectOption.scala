@@ -1,30 +1,42 @@
 package typingsJapgolly.peerjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PeerConnectOption extends js.Object {
+trait PeerConnectOption extends StObject {
+  
   var label: js.UndefOr[String] = js.undefined
-  var metadata: js.UndefOr[js.Any] = js.undefined
+  
+  var metadata: js.UndefOr[Any] = js.undefined
+  
   var reliable: js.UndefOr[Boolean] = js.undefined
+  
   var serialization: js.UndefOr[String] = js.undefined
 }
-
 object PeerConnectOption {
-  @scala.inline
-  def apply(
-    label: String = null,
-    metadata: js.Any = null,
-    reliable: js.UndefOr[Boolean] = js.undefined,
-    serialization: String = null
-  ): PeerConnectOption = {
+  
+  inline def apply(): PeerConnectOption = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(reliable)) __obj.updateDynamic("reliable")(reliable.asInstanceOf[js.Any])
-    if (serialization != null) __obj.updateDynamic("serialization")(serialization.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeerConnectOption]
   }
+  
+  extension [Self <: PeerConnectOption](x: Self) {
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    
+    inline def setReliable(value: Boolean): Self = StObject.set(x, "reliable", value.asInstanceOf[js.Any])
+    
+    inline def setReliableUndefined: Self = StObject.set(x, "reliable", js.undefined)
+    
+    inline def setSerialization(value: String): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
+    
+    inline def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
+  }
 }
-

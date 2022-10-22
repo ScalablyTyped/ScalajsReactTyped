@@ -1,13 +1,12 @@
 package typingsJapgolly.webcola.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "Blocks")
 @js.native
-class Blocks protected ()
-  extends typingsJapgolly.webcola.vpscMod.Blocks {
-  def this(vs: js.Array[typingsJapgolly.webcola.vpscMod.Variable]) = this()
+open class Blocks protected ()
+  extends typingsJapgolly.webcola.distSrcVpscMod.Blocks {
+  def this(vs: js.Array[typingsJapgolly.webcola.distSrcVpscMod.Variable]) = this()
 }
-

@@ -1,39 +1,59 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MessageEventInit extends EventInit {
-  var data: js.UndefOr[js.Any] = js.undefined
+trait MessageEventInit[T]
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
+  var data: js.UndefOr[T] = js.undefined
+  
+  /* standard dom */
   var lastEventId: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var origin: js.UndefOr[java.lang.String] = js.undefined
-  var ports: js.UndefOr[js.Array[org.scalajs.dom.raw.MessagePort]] = js.undefined
+  
+  /* standard dom */
+  var ports: js.UndefOr[js.Array[org.scalajs.dom.MessagePort]] = js.undefined
+  
+  /* standard dom */
   var source: js.UndefOr[MessageEventSource | Null] = js.undefined
 }
-
 object MessageEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    data: js.Any = null,
-    lastEventId: java.lang.String = null,
-    origin: java.lang.String = null,
-    ports: js.Array[org.scalajs.dom.raw.MessagePort] = null,
-    source: MessageEventSource = null
-  ): MessageEventInit = {
+  
+  inline def apply[T](): MessageEventInit[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (lastEventId != null) __obj.updateDynamic("lastEventId")(lastEventId.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MessageEventInit]
+    __obj.asInstanceOf[MessageEventInit[T]]
+  }
+  
+  extension [Self <: MessageEventInit[?], T](x: Self & MessageEventInit[T]) {
+    
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setLastEventId(value: java.lang.String): Self = StObject.set(x, "lastEventId", value.asInstanceOf[js.Any])
+    
+    inline def setLastEventIdUndefined: Self = StObject.set(x, "lastEventId", js.undefined)
+    
+    inline def setOrigin(value: java.lang.String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    
+    inline def setPorts(value: js.Array[org.scalajs.dom.MessagePort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    
+    inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+    
+    inline def setPortsVarargs(value: org.scalajs.dom.MessagePort*): Self = StObject.set(x, "ports", js.Array(value*))
+    
+    inline def setSource(value: MessageEventSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }
-

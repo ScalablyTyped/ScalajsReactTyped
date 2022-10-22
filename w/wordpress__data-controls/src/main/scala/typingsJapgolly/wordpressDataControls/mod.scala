@@ -2,22 +2,32 @@ package typingsJapgolly.wordpressDataControls
 
 import typingsJapgolly.redux.mod.AnyAction
 import typingsJapgolly.wordpressApiFetch.mod.APIFetchOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/data-controls", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apiFetch(options: APIFetchOptions): Unit = js.native
-  def dispatch(storeKey: String, actionName: String, args: js.Any*): Unit = js.native
-  def select(storeKey: String, selectorName: String, args: js.Any*): Unit = js.native
+object mod {
+  
+  @JSImport("@wordpress/data-controls", JSImport.Namespace)
   @js.native
-  object controls extends js.Object {
-    def API_FETCH(action: AnyAction): js.Promise[_] = js.native
-    def DISPATCH(action: AnyAction): Unit = js.native
-    def SELECT(action: AnyAction): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  inline def apiFetch(options: APIFetchOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("apiFetch")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  object controls {
+    
+    @JSImport("@wordpress/data-controls", "controls")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def API_FETCH(action: AnyAction): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("API_FETCH")(action.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    
+    inline def DISPATCH(action: AnyAction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DISPATCH")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def SELECT(action: AnyAction): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("SELECT")(action.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
+  inline def dispatch(storeKey: String, actionName: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")((scala.List(storeKey.asInstanceOf[js.Any], actionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  
+  inline def select(storeKey: String, selectorName: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select")((scala.List(storeKey.asInstanceOf[js.Any], selectorName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 }
-

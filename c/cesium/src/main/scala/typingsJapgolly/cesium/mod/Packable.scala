@@ -1,23 +1,42 @@
 package typingsJapgolly.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line no-unnecessary-class
-@JSImport("cesium", "Packable")
-@js.native
-abstract class Packable () extends js.Object
-
-/* static members */
-@JSImport("cesium", "Packable")
-@js.native
-object Packable extends js.Object {
-  var packedLength: Double = js.native
-  def pack(value: js.Any, array: js.Array[Double]): js.Array[Double] = js.native
-  def pack(value: js.Any, array: js.Array[Double], startingIndex: Double): js.Array[Double] = js.native
-  def unpack(array: js.Array[Double]): Packable = js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): Packable = js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: js.Any): Packable = js.native
+trait Packable extends StObject
+object Packable {
+  
+  @JSImport("cesium", "Packable")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Stores the provided instance into the provided array.
+    * @param value - The value to pack.
+    * @param array - The array to pack into.
+    * @param [startingIndex = 0] - The index into the array at which to start packing the elements.
+    */
+  inline def pack(value: Any, array: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def pack(value: Any, array: js.Array[Double], startingIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * The number of elements used to pack the object into an array.
+    */
+  @JSImport("cesium", "Packable.packedLength")
+  @js.native
+  def packedLength: Double = js.native
+  inline def packedLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("packedLength")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Retrieves an instance from a packed array.
+    * @param array - The packed array.
+    * @param [startingIndex = 0] - The starting index of the element to be unpacked.
+    * @param [result] - The object into which to store the result.
+    * @returns The modified result parameter or a new Object instance if one was not provided.
+    */
+  inline def unpack(array: js.Array[Double]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def unpack(array: js.Array[Double], startingIndex: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def unpack(array: js.Array[Double], startingIndex: Double, result: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def unpack(array: js.Array[Double], startingIndex: Unit, result: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Any]
 }
-

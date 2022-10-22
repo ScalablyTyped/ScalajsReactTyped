@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Data.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AlternateNormalizationFormat extends js.Object
-
+sealed trait AlternateNormalizationFormat extends StObject
 /** Identifies the normalization format of an AlternateWordForm object. */
 @JSGlobal("Windows.Data.Text.AlternateNormalizationFormat")
 @js.native
-object AlternateNormalizationFormat extends js.Object {
+object AlternateNormalizationFormat extends StObject {
+  
   /** A string that has been recognized as a monetary amount. */
   @js.native
-  sealed trait currency extends AlternateNormalizationFormat
+  sealed trait currency
+    extends StObject
+       with AlternateNormalizationFormat
   
   /** A string that has been recognized as a date. */
   @js.native
-  sealed trait date extends AlternateNormalizationFormat
+  sealed trait date
+    extends StObject
+       with AlternateNormalizationFormat
   
   /** A regular string that has not been recognized as a number, currency, date, or time. */
   @js.native
-  sealed trait notNormalized extends AlternateNormalizationFormat
+  sealed trait notNormalized
+    extends StObject
+       with AlternateNormalizationFormat
   
   /** A string that has been recognized as a number. */
   @js.native
-  sealed trait number extends AlternateNormalizationFormat
+  sealed trait number
+    extends StObject
+       with AlternateNormalizationFormat
   
   /** A string that has been recognized as a time. */
   @js.native
-  sealed trait time extends AlternateNormalizationFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AlternateNormalizationFormat with Double] = js.native
-  /* 2 */ @js.native
-  object currency extends TopLevel[currency with Double]
-  
-  /* 3 */ @js.native
-  object date extends TopLevel[date with Double]
-  
-  /* 0 */ @js.native
-  object notNormalized extends TopLevel[notNormalized with Double]
-  
-  /* 1 */ @js.native
-  object number extends TopLevel[number with Double]
-  
-  /* 4 */ @js.native
-  object time extends TopLevel[time with Double]
-  
+  sealed trait time
+    extends StObject
+       with AlternateNormalizationFormat
 }
-

@@ -1,53 +1,42 @@
 package typingsJapgolly.sharepoint.Srch
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UserActionType extends js.Object
-
+sealed trait UserActionType extends StObject
 @JSGlobal("Srch.UserActionType")
 @js.native
-object UserActionType extends js.Object {
-  @js.native
-  sealed trait filterLanguage extends UserActionType
+object UserActionType extends StObject {
   
   @js.native
-  sealed trait pageNext extends UserActionType
+  sealed trait filterLanguage
+    extends StObject
+       with UserActionType
   
   @js.native
-  sealed trait pagePrev extends UserActionType
+  sealed trait pageNext
+    extends StObject
+       with UserActionType
   
   @js.native
-  sealed trait refine extends UserActionType
+  sealed trait pagePrev
+    extends StObject
+       with UserActionType
   
   @js.native
-  sealed trait search extends UserActionType
+  sealed trait refine
+    extends StObject
+       with UserActionType
   
   @js.native
-  sealed trait sort extends UserActionType
+  sealed trait search
+    extends StObject
+       with UserActionType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UserActionType with Double] = js.native
-  /* 5 */ @js.native
-  object filterLanguage extends TopLevel[filterLanguage with Double]
-  
-  /* 1 */ @js.native
-  object pageNext extends TopLevel[pageNext with Double]
-  
-  /* 2 */ @js.native
-  object pagePrev extends TopLevel[pagePrev with Double]
-  
-  /* 3 */ @js.native
-  object refine extends TopLevel[refine with Double]
-  
-  /* 0 */ @js.native
-  object search extends TopLevel[search with Double]
-  
-  /* 4 */ @js.native
-  object sort extends TopLevel[sort with Double]
-  
+  @js.native
+  sealed trait sort
+    extends StObject
+       with UserActionType
 }
-

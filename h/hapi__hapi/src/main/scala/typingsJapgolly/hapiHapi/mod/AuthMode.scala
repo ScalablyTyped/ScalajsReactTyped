@@ -1,24 +1,20 @@
 package typingsJapgolly.hapiHapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.hapiHapi.hapiHapiStrings.required
   - typingsJapgolly.hapiHapi.hapiHapiStrings.optional
   - typingsJapgolly.hapiHapi.hapiHapiStrings.`try`
 */
-trait AuthMode extends js.Object
-
+trait AuthMode extends StObject
 object AuthMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def optional: typingsJapgolly.hapiHapi.hapiHapiStrings.optional = this.cast("optional")
-  @scala.inline
-  def required: typingsJapgolly.hapiHapi.hapiHapiStrings.required = this.cast("required")
-  @scala.inline
-  def `try`: typingsJapgolly.hapiHapi.hapiHapiStrings.`try` = this.cast("try")
+  
+  inline def optional: typingsJapgolly.hapiHapi.hapiHapiStrings.optional = "optional".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.optional]
+  
+  inline def required: typingsJapgolly.hapiHapi.hapiHapiStrings.required = "required".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.required]
+  
+  inline def `try`: typingsJapgolly.hapiHapi.hapiHapiStrings.`try` = "try".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.`try`]
 }
-

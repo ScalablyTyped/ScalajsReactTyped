@@ -1,14 +1,16 @@
 package typingsJapgolly.domo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Domo extends js.Object {
+trait Domo extends StObject {
+  
   def apply(): String = js.native
   def apply(attributes: js.Object): String = js.native
   def apply(attributes: js.Object, content: String*): String = js.native
+  def apply(attributes: Unit, content: String*): String = js.native
+  
   def on(element: String, styles: js.Object*): String = js.native
 }
-

@@ -11,9 +11,9 @@ A minimal, blazing fast user interface library.
 | Full name          | moonjs |
 | Keywords           | moon, mvvm, user interface, UI |
 | # releases         | 1 |
-| # dependents       | 1 |
-| # downloads        | 7558 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 726.3333333333334 |
+| # stars            | 6050.0 |
 
 ## Links
 - [Homepage](https://github.com/KingPixil/moon#readme)

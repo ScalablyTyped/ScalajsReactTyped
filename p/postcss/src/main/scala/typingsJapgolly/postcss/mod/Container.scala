@@ -1,13 +1,10 @@
 package typingsJapgolly.postcss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.postcss.mod.Root_
-  - typingsJapgolly.postcss.mod.AtRule_
-  - typingsJapgolly.postcss.mod.Rule_
-*/
-trait Container extends js.Object
-
+/* note: abstract class */ @JSImport("postcss", "Container")
+@js.native
+open class Container[Child /* <: typingsJapgolly.postcss.libNodeMod.default */] ()
+  extends typingsJapgolly.postcss.libContainerMod.default[Child]

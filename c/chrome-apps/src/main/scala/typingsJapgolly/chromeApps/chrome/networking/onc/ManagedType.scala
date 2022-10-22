@@ -1,58 +1,82 @@
 package typingsJapgolly.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ManagedType[T] extends js.Object {
+trait ManagedType[T] extends StObject {
+  
   /** The active value currently used by the network configuration manager (e.g. Shill). */
   var Active: js.UndefOr[T] = js.undefined
+  
   /**
     * Whether a DevicePolicy for the property exists and allows the property
     * to be edited (i.e. the policy set recommended property value).
     * @default false
     */
   var DeviceEditable: js.UndefOr[Boolean] = js.undefined
+  
   /** The property value provided by the device policy. */
   var DevicePolicy: js.UndefOr[T] = js.undefined
+  
   /** The source from which the effective property value was determined. */
   var Effective: js.UndefOr[String] = js.undefined
+  
   /** The value set for all users of the device. Only provided if *DeviceEditiable* is true. */
   var SharedSetting: js.UndefOr[T] = js.undefined
+  
   /**
     * Whether a UserPolicy for the property exists and allows the property
     * to be edited (i.e. the policy set recommended property value).
     * @default false
     */
   var UserEditable: js.UndefOr[Boolean] = js.undefined
+  
   /** The property value provided by the user policy. */
   var UserPolicy: js.UndefOr[T] = js.undefined
+  
   /** The property value set by the logged in user. Only provided if *UserEditable* is true. */
   var UserSetting: js.UndefOr[T] = js.undefined
 }
-
 object ManagedType {
-  @scala.inline
-  def apply[T](
-    Active: T = null,
-    DeviceEditable: js.UndefOr[Boolean] = js.undefined,
-    DevicePolicy: T = null,
-    Effective: String = null,
-    SharedSetting: T = null,
-    UserEditable: js.UndefOr[Boolean] = js.undefined,
-    UserPolicy: T = null,
-    UserSetting: T = null
-  ): ManagedType[T] = {
+  
+  inline def apply[T](): ManagedType[T] = {
     val __obj = js.Dynamic.literal()
-    if (Active != null) __obj.updateDynamic("Active")(Active.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeviceEditable)) __obj.updateDynamic("DeviceEditable")(DeviceEditable.asInstanceOf[js.Any])
-    if (DevicePolicy != null) __obj.updateDynamic("DevicePolicy")(DevicePolicy.asInstanceOf[js.Any])
-    if (Effective != null) __obj.updateDynamic("Effective")(Effective.asInstanceOf[js.Any])
-    if (SharedSetting != null) __obj.updateDynamic("SharedSetting")(SharedSetting.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserEditable)) __obj.updateDynamic("UserEditable")(UserEditable.asInstanceOf[js.Any])
-    if (UserPolicy != null) __obj.updateDynamic("UserPolicy")(UserPolicy.asInstanceOf[js.Any])
-    if (UserSetting != null) __obj.updateDynamic("UserSetting")(UserSetting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedType[T]]
   }
+  
+  extension [Self <: ManagedType[?], T](x: Self & ManagedType[T]) {
+    
+    inline def setActive(value: T): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+    
+    inline def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
+    
+    inline def setDeviceEditable(value: Boolean): Self = StObject.set(x, "DeviceEditable", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceEditableUndefined: Self = StObject.set(x, "DeviceEditable", js.undefined)
+    
+    inline def setDevicePolicy(value: T): Self = StObject.set(x, "DevicePolicy", value.asInstanceOf[js.Any])
+    
+    inline def setDevicePolicyUndefined: Self = StObject.set(x, "DevicePolicy", js.undefined)
+    
+    inline def setEffective(value: String): Self = StObject.set(x, "Effective", value.asInstanceOf[js.Any])
+    
+    inline def setEffectiveUndefined: Self = StObject.set(x, "Effective", js.undefined)
+    
+    inline def setSharedSetting(value: T): Self = StObject.set(x, "SharedSetting", value.asInstanceOf[js.Any])
+    
+    inline def setSharedSettingUndefined: Self = StObject.set(x, "SharedSetting", js.undefined)
+    
+    inline def setUserEditable(value: Boolean): Self = StObject.set(x, "UserEditable", value.asInstanceOf[js.Any])
+    
+    inline def setUserEditableUndefined: Self = StObject.set(x, "UserEditable", js.undefined)
+    
+    inline def setUserPolicy(value: T): Self = StObject.set(x, "UserPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setUserPolicyUndefined: Self = StObject.set(x, "UserPolicy", js.undefined)
+    
+    inline def setUserSetting(value: T): Self = StObject.set(x, "UserSetting", value.asInstanceOf[js.Any])
+    
+    inline def setUserSettingUndefined: Self = StObject.set(x, "UserSetting", js.undefined)
+  }
 }
-

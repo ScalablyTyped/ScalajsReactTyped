@@ -1,12 +1,12 @@
 package typingsJapgolly.reactMapGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-map-gl", "LinearInterpolator")
 @js.native
-class LinearInterpolator () extends TransitionInterpolator {
+open class LinearInterpolator () extends TransitionInterpolator {
   def this(transitionProps: js.Array[String]) = this()
+  def this(transitionProps: LinearInterpolatorProps) = this()
 }
-

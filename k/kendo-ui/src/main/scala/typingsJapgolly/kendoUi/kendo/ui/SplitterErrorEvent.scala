@@ -2,29 +2,33 @@ package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.kendoUi.JQueryXHR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SplitterErrorEvent extends SplitterEvent {
+trait SplitterErrorEvent
+  extends StObject
+     with SplitterEvent {
+  
   var status: js.UndefOr[String] = js.undefined
+  
   var xhr: js.UndefOr[JQueryXHR] = js.undefined
 }
-
 object SplitterErrorEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Splitter,
-    status: String = null,
-    xhr: JQueryXHR = null
-  ): SplitterErrorEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Splitter): SplitterErrorEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitterErrorEvent]
   }
+  
+  extension [Self <: SplitterErrorEvent](x: Self) {
+    
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setXhr(value: JQueryXHR): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+  }
 }
-

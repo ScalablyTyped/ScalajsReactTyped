@@ -10,10 +10,10 @@ Typings are for version 0.6
 | ------------------ | :-------------: |
 | Full name          | kos-core |
 | Keywords           | - |
-| # releases         | 25 |
-| # dependents       | 1 |
-| # downloads        | 1739 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 79.0 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/ali-kos/kos#readme)

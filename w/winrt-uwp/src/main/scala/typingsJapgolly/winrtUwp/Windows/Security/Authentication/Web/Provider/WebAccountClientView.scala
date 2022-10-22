@@ -1,32 +1,36 @@
 package typingsJapgolly.winrtUwp.Windows.Security.Authentication.Web.Provider
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the client view for a web account. Use this to control what information about an account from a provider is available to the client. */
-@JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountClientView")
-@js.native
-class WebAccountClientView protected () extends js.Object {
-  /**
-    * Creates a new instance of the WebAccountClientView class.
-    * @param viewType The client view type.
-    * @param applicationCallbackUri The callback URI that indicates the completion of the operation.
-    */
-  def this(viewType: WebAccountClientViewType, applicationCallbackUri: Uri) = this()
-  /**
-    * Creates a new instance of the WebAccountClientView class.
-    * @param viewType The client view type.
-    * @param applicationCallbackUri The callback URI that indicates the completion of the operation.
-    * @param accountPairwiseId The account pairwise Id.
-    */
-  def this(viewType: WebAccountClientViewType, applicationCallbackUri: Uri, accountPairwiseId: String) = this()
+trait WebAccountClientView extends StObject {
+  
   /** Gets the account pairwise Id. */
-  var accountPairwiseId: String = js.native
+  var accountPairwiseId: String
+  
   /** Gets the app callback Uri. */
-  var applicationCallbackUri: Uri = js.native
+  var applicationCallbackUri: Uri
+  
   /** Gets the type of web account client view. */
-  var `type`: WebAccountClientViewType = js.native
+  var `type`: WebAccountClientViewType
 }
-
+object WebAccountClientView {
+  
+  inline def apply(accountPairwiseId: String, applicationCallbackUri: Uri, `type`: WebAccountClientViewType): WebAccountClientView = {
+    val __obj = js.Dynamic.literal(accountPairwiseId = accountPairwiseId.asInstanceOf[js.Any], applicationCallbackUri = applicationCallbackUri.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebAccountClientView]
+  }
+  
+  extension [Self <: WebAccountClientView](x: Self) {
+    
+    inline def setAccountPairwiseId(value: String): Self = StObject.set(x, "accountPairwiseId", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: WebAccountClientViewType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
+}

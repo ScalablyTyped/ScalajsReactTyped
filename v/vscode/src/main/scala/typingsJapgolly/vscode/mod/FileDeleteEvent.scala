@@ -1,22 +1,27 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileDeleteEvent extends js.Object {
+trait FileDeleteEvent extends StObject {
+  
   /**
-  		 * The files that got deleted.
-  		 */
+    * The files that got deleted.
+    */
   val files: js.Array[Uri]
 }
-
 object FileDeleteEvent {
-  @scala.inline
-  def apply(files: js.Array[Uri]): FileDeleteEvent = {
-    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
   
+  inline def apply(files: js.Array[Uri]): FileDeleteEvent = {
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileDeleteEvent]
   }
+  
+  extension [Self <: FileDeleteEvent](x: Self) {
+    
+    inline def setFiles(value: js.Array[Uri]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    
+    inline def setFilesVarargs(value: Uri*): Self = StObject.set(x, "files", js.Array(value*))
+  }
 }
-

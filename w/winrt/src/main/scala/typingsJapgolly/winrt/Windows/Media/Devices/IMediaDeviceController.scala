@@ -1,32 +1,38 @@
 package typingsJapgolly.winrt.Windows.Media.Devices
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncAction
 import typingsJapgolly.winrt.Windows.Media.Capture.MediaStreamType
 import typingsJapgolly.winrt.Windows.Media.MediaProperties.IMediaEncodingProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IMediaDeviceController extends js.Object {
+trait IMediaDeviceController extends StObject {
+  
   def getAvailableMediaStreamProperties(mediaStreamType: MediaStreamType): IVectorView[IMediaEncodingProperties]
+  
   def getMediaStreamProperties(mediaStreamType: MediaStreamType): IMediaEncodingProperties
+  
   def setMediaStreamPropertiesAsync(mediaStreamType: MediaStreamType, mediaEncodingProperties: IMediaEncodingProperties): IAsyncAction
 }
-
 object IMediaDeviceController {
-  @scala.inline
-  def apply(
-    getAvailableMediaStreamProperties: MediaStreamType => CallbackTo[IVectorView[IMediaEncodingProperties]],
-    getMediaStreamProperties: MediaStreamType => CallbackTo[IMediaEncodingProperties],
-    setMediaStreamPropertiesAsync: (MediaStreamType, IMediaEncodingProperties) => CallbackTo[IAsyncAction]
+  
+  inline def apply(
+    getAvailableMediaStreamProperties: MediaStreamType => IVectorView[IMediaEncodingProperties],
+    getMediaStreamProperties: MediaStreamType => IMediaEncodingProperties,
+    setMediaStreamPropertiesAsync: (MediaStreamType, IMediaEncodingProperties) => IAsyncAction
   ): IMediaDeviceController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAvailableMediaStreamProperties")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Media.Capture.MediaStreamType) => getAvailableMediaStreamProperties(t0).runNow()))
-    __obj.updateDynamic("getMediaStreamProperties")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Media.Capture.MediaStreamType) => getMediaStreamProperties(t0).runNow()))
-    __obj.updateDynamic("setMediaStreamPropertiesAsync")(js.Any.fromFunction2((t0: typingsJapgolly.winrt.Windows.Media.Capture.MediaStreamType, t1: typingsJapgolly.winrt.Windows.Media.MediaProperties.IMediaEncodingProperties) => setMediaStreamPropertiesAsync(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(getAvailableMediaStreamProperties = js.Any.fromFunction1(getAvailableMediaStreamProperties), getMediaStreamProperties = js.Any.fromFunction1(getMediaStreamProperties), setMediaStreamPropertiesAsync = js.Any.fromFunction2(setMediaStreamPropertiesAsync))
     __obj.asInstanceOf[IMediaDeviceController]
   }
+  
+  extension [Self <: IMediaDeviceController](x: Self) {
+    
+    inline def setGetAvailableMediaStreamProperties(value: MediaStreamType => IVectorView[IMediaEncodingProperties]): Self = StObject.set(x, "getAvailableMediaStreamProperties", js.Any.fromFunction1(value))
+    
+    inline def setGetMediaStreamProperties(value: MediaStreamType => IMediaEncodingProperties): Self = StObject.set(x, "getMediaStreamProperties", js.Any.fromFunction1(value))
+    
+    inline def setSetMediaStreamPropertiesAsync(value: (MediaStreamType, IMediaEncodingProperties) => IAsyncAction): Self = StObject.set(x, "setMediaStreamPropertiesAsync", js.Any.fromFunction2(value))
+  }
 }
-

@@ -1,9 +1,10 @@
 package typingsJapgolly.jweixin.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// 分享到 QQ 空间
 // 保护类
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.jweixin.jweixinStrings.menuItemColoneditTag
@@ -16,28 +17,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonemail
   - typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonbrand
 */
-trait menuProtected extends js.Object
-
+trait menuProtected extends StObject
 object menuProtected {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def menuItemColoncopyUrl: typingsJapgolly.jweixin.jweixinStrings.menuItemColoncopyUrl = this.cast("menuItem:copyUrl")
-  @scala.inline
-  def menuItemColondelete: typingsJapgolly.jweixin.jweixinStrings.menuItemColondelete = this.cast("menuItem:delete")
-  @scala.inline
-  def menuItemColoneditTag: typingsJapgolly.jweixin.jweixinStrings.menuItemColoneditTag = this.cast("menuItem:editTag")
-  @scala.inline
-  def menuItemColonopenWithQQBrowser: typingsJapgolly.jweixin.jweixinStrings.menuItemColonopenWithQQBrowser = this.cast("menuItem:openWithQQBrowser")
-  @scala.inline
-  def menuItemColonopenWithSafari: typingsJapgolly.jweixin.jweixinStrings.menuItemColonopenWithSafari = this.cast("menuItem:openWithSafari")
-  @scala.inline
-  def menuItemColonoriginPage: typingsJapgolly.jweixin.jweixinStrings.menuItemColonoriginPage = this.cast("menuItem:originPage")
-  @scala.inline
-  def menuItemColonreadMode: typingsJapgolly.jweixin.jweixinStrings.menuItemColonreadMode = this.cast("menuItem:readMode")
-  @scala.inline
-  def menuItemColonshareColonbrand: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonbrand = this.cast("menuItem:share:brand")
-  @scala.inline
-  def menuItemColonshareColonemail: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonemail = this.cast("menuItem:share:email")
+  
+  inline def menuItemColoncopyUrl: typingsJapgolly.jweixin.jweixinStrings.menuItemColoncopyUrl = "menuItem:copyUrl".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColoncopyUrl]
+  
+  inline def menuItemColondelete: typingsJapgolly.jweixin.jweixinStrings.menuItemColondelete = "menuItem:delete".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColondelete]
+  
+  inline def menuItemColoneditTag: typingsJapgolly.jweixin.jweixinStrings.menuItemColoneditTag = "menuItem:editTag".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColoneditTag]
+  
+  inline def menuItemColonopenWithQQBrowser: typingsJapgolly.jweixin.jweixinStrings.menuItemColonopenWithQQBrowser = "menuItem:openWithQQBrowser".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColonopenWithQQBrowser]
+  
+  inline def menuItemColonopenWithSafari: typingsJapgolly.jweixin.jweixinStrings.menuItemColonopenWithSafari = "menuItem:openWithSafari".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColonopenWithSafari]
+  
+  inline def menuItemColonoriginPage: typingsJapgolly.jweixin.jweixinStrings.menuItemColonoriginPage = "menuItem:originPage".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColonoriginPage]
+  
+  inline def menuItemColonreadMode: typingsJapgolly.jweixin.jweixinStrings.menuItemColonreadMode = "menuItem:readMode".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColonreadMode]
+  
+  inline def menuItemColonshareColonbrand: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonbrand = "menuItem:share:brand".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonbrand]
+  
+  inline def menuItemColonshareColonemail: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonemail = "menuItem:share:email".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonemail]
 }
-

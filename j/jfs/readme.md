@@ -10,10 +10,10 @@ A simple JSON file store
 | ------------------ | :-------------: |
 | Full name          | jfs |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 418399 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13962.333333333334 |
+| # stars            | 193.0 |
 
 ## Links
 - [Homepage](http://github.com/flosse/json-file-store)

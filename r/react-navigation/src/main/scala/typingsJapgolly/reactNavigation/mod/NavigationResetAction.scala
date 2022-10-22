@@ -1,28 +1,27 @@
 package typingsJapgolly.reactNavigation.mod
 
 import typingsJapgolly.reactNavigation.reactNavigationStrings.NavigationSlashRESET
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NavigationResetAction
-  extends NavigationStackAction
-     with NavigationResetActionPayload {
+  extends StObject
+     with NavigationResetActionPayload
+     with NavigationStackAction {
+  
   var `type`: NavigationSlashRESET
 }
-
 object NavigationResetAction {
-  @scala.inline
-  def apply(
-    actions: js.Array[NavigationNavigateAction],
-    index: Double,
-    `type`: NavigationSlashRESET,
-    key: String = null
-  ): NavigationResetAction = {
+  
+  inline def apply(actions: js.Array[NavigationNavigateAction], index: Double): NavigationResetAction = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/RESET")
     __obj.asInstanceOf[NavigationResetAction]
   }
+  
+  extension [Self <: NavigationResetAction](x: Self) {
+    
+    inline def setType(value: NavigationSlashRESET): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

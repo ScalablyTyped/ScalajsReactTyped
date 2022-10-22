@@ -10,10 +10,10 @@ Table + AngularJS ================= [![Build Status](https://travis-ci.org/esvit
 | ------------------ | :-------------: |
 | Full name          | ng-table |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 601103 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 210255.0 |
+| # stars            | 2801.0 |
 
 ## Links
 - [Homepage](https://github.com/esvit/ng-table#readme)

@@ -2,41 +2,59 @@ package typingsJapgolly.jqueryui.JQueryUI
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.jquery.JQueryEventObject
-import typingsJapgolly.jqueryui.AnonSelected
-import typingsJapgolly.jqueryui.AnonSelecting
-import typingsJapgolly.jqueryui.AnonUnselected
-import typingsJapgolly.jqueryui.AnonUnselecting
+import typingsJapgolly.jqueryui.anon.Selected
+import typingsJapgolly.jqueryui.anon.Selecting
+import typingsJapgolly.jqueryui.anon.Unselected
+import typingsJapgolly.jqueryui.anon.Unselecting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectableEvents extends js.Object {
-  var selected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ AnonSelected, Unit]] = js.undefined
-  var selecting: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ AnonSelecting, Unit]] = js.undefined
-  var start: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ js.Any, Unit]] = js.undefined
-  var stop: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ js.Any, Unit]] = js.undefined
-  var unselected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ AnonUnselected, Unit]] = js.undefined
-  var unselecting: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ AnonUnselecting, Unit]] = js.undefined
+trait SelectableEvents extends StObject {
+  
+  var selected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Selected, Unit]] = js.undefined
+  
+  var selecting: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Selecting, Unit]] = js.undefined
+  
+  var start: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Any, Unit]] = js.undefined
+  
+  var stop: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Any, Unit]] = js.undefined
+  
+  var unselected: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Unselected, Unit]] = js.undefined
+  
+  var unselecting: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* ui */ Unselecting, Unit]] = js.undefined
 }
-
 object SelectableEvents {
-  @scala.inline
-  def apply(
-    selected: (/* event */ JQueryEventObject, /* ui */ AnonSelected) => Callback = null,
-    selecting: (/* event */ JQueryEventObject, /* ui */ AnonSelecting) => Callback = null,
-    start: (/* event */ JQueryEventObject, /* ui */ js.Any) => Callback = null,
-    stop: (/* event */ JQueryEventObject, /* ui */ js.Any) => Callback = null,
-    unselected: (/* event */ JQueryEventObject, /* ui */ AnonUnselected) => Callback = null,
-    unselecting: (/* event */ JQueryEventObject, /* ui */ AnonUnselecting) => Callback = null
-  ): SelectableEvents = {
+  
+  inline def apply(): SelectableEvents = {
     val __obj = js.Dynamic.literal()
-    if (selected != null) __obj.updateDynamic("selected")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.AnonSelected) => selected(t0, t1).runNow()))
-    if (selecting != null) __obj.updateDynamic("selecting")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.AnonSelecting) => selecting(t0, t1).runNow()))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ js.Any) => start(t0, t1).runNow()))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ js.Any) => stop(t0, t1).runNow()))
-    if (unselected != null) __obj.updateDynamic("unselected")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.AnonUnselected) => unselected(t0, t1).runNow()))
-    if (unselecting != null) __obj.updateDynamic("unselecting")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.AnonUnselecting) => unselecting(t0, t1).runNow()))
     __obj.asInstanceOf[SelectableEvents]
   }
+  
+  extension [Self <: SelectableEvents](x: Self) {
+    
+    inline def setSelected(value: (/* event */ JQueryEventObject, /* ui */ Selected) => Callback): Self = StObject.set(x, "selected", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ Selected) => (value(t0, t1)).runNow()))
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setSelecting(value: (/* event */ JQueryEventObject, /* ui */ Selecting) => Callback): Self = StObject.set(x, "selecting", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ Selecting) => (value(t0, t1)).runNow()))
+    
+    inline def setSelectingUndefined: Self = StObject.set(x, "selecting", js.undefined)
+    
+    inline def setStart(value: (/* event */ JQueryEventObject, /* ui */ Any) => Callback): Self = StObject.set(x, "start", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setStop(value: (/* event */ JQueryEventObject, /* ui */ Any) => Callback): Self = StObject.set(x, "stop", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+    
+    inline def setUnselected(value: (/* event */ JQueryEventObject, /* ui */ Unselected) => Callback): Self = StObject.set(x, "unselected", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ Unselected) => (value(t0, t1)).runNow()))
+    
+    inline def setUnselectedUndefined: Self = StObject.set(x, "unselected", js.undefined)
+    
+    inline def setUnselecting(value: (/* event */ JQueryEventObject, /* ui */ Unselecting) => Callback): Self = StObject.set(x, "unselecting", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ Unselecting) => (value(t0, t1)).runNow()))
+    
+    inline def setUnselectingUndefined: Self = StObject.set(x, "unselecting", js.undefined)
+  }
 }
-

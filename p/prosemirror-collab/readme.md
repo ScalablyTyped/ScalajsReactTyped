@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-collab
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 Collaborative editing for ProseMirror
@@ -10,10 +10,10 @@ Collaborative editing for ProseMirror
 | ------------------ | :-------------: |
 | Full name          | prosemirror-collab |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 13 |
-| # downloads        | 774000 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 297252.3333333333 |
+| # stars            | 72.0 |
 
 ## Links
 - [Homepage](https://github.com/prosemirror/prosemirror-collab#readme)

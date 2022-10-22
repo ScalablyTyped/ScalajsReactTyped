@@ -1,71 +1,87 @@
 package typingsJapgolly.wxJsSdkDt.wx
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.wxJsSdkDt.AnonCardList
+import typingsJapgolly.wxJsSdkDt.anon.CardList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChooseCardConfig extends WxBaseRequestConfig {
+trait ChooseCardConfig
+  extends StObject
+     with WxBaseRequestConfig {
+  
   /**
     * 卡券Id
     */
   var cardId: js.UndefOr[String] = js.undefined
+  
   /**
     * 卡券签名
     */
   var cardSign: String
+  
   /**
     * 卡券类型
     */
   var cardType: js.UndefOr[String] = js.undefined
+  
   /**
     * 卡券签名随机串
     */
   var nonceStr: String
+  
   /**
     * 门店Id
     */
   var shopId: js.UndefOr[String] = js.undefined
+  
   /**
     * 签名方式，默认'SHA1'
     */
   var signType: String
+  
   /**
     * var cardList= res.cardList; 用户选中的卡券列表信息
     */
   @JSName("success")
-  var success_ChooseCardConfig: js.UndefOr[js.Function1[/* res */ AnonCardList, Unit]] = js.undefined
+  var success_ChooseCardConfig: js.UndefOr[js.Function1[/* res */ CardList, Unit]] = js.undefined
+  
   /**
     * 卡券签名时间戳
     */
   var timestamp: Double
 }
-
 object ChooseCardConfig {
-  @scala.inline
-  def apply(
-    cardSign: String,
-    nonceStr: String,
-    signType: String,
-    timestamp: Double,
-    cancel: js.UndefOr[Callback] = js.undefined,
-    cardId: String = null,
-    cardType: String = null,
-    complete: /* res */ js.UndefOr[js.Any] => Callback = null,
-    fail: /* error */ js.UndefOr[js.Any] => Callback = null,
-    shopId: String = null,
-    success: /* res */ AnonCardList => Callback = null
-  ): ChooseCardConfig = {
+  
+  inline def apply(cardSign: String, nonceStr: String, signType: String, timestamp: Double): ChooseCardConfig = {
     val __obj = js.Dynamic.literal(cardSign = cardSign.asInstanceOf[js.Any], nonceStr = nonceStr.asInstanceOf[js.Any], signType = signType.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-    cancel.foreach(p => __obj.updateDynamic("cancel")(p.toJsFn))
-    if (cardId != null) __obj.updateDynamic("cardId")(cardId.asInstanceOf[js.Any])
-    if (cardType != null) __obj.updateDynamic("cardType")(cardType.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.UndefOr[js.Any]) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* error */ js.UndefOr[js.Any]) => fail(t0).runNow()))
-    if (shopId != null) __obj.updateDynamic("shopId")(shopId.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.wxJsSdkDt.AnonCardList) => success(t0).runNow()))
     __obj.asInstanceOf[ChooseCardConfig]
   }
+  
+  extension [Self <: ChooseCardConfig](x: Self) {
+    
+    inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
+    
+    inline def setCardIdUndefined: Self = StObject.set(x, "cardId", js.undefined)
+    
+    inline def setCardSign(value: String): Self = StObject.set(x, "cardSign", value.asInstanceOf[js.Any])
+    
+    inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+    
+    inline def setCardTypeUndefined: Self = StObject.set(x, "cardType", js.undefined)
+    
+    inline def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
+    
+    inline def setShopId(value: String): Self = StObject.set(x, "shopId", value.asInstanceOf[js.Any])
+    
+    inline def setShopIdUndefined: Self = StObject.set(x, "shopId", js.undefined)
+    
+    inline def setSignType(value: String): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
+    
+    inline def setSuccess(value: /* res */ CardList => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ CardList) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+  }
 }
-

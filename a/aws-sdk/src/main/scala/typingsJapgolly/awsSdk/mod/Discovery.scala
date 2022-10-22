@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.discoveryMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsDiscoveryMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "Discovery")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Discovery ()
-  extends typingsJapgolly.awsSdk.allMod.Discovery {
+open class Discovery ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.Discovery {
   def this(options: ClientConfiguration) = this()
 }
-

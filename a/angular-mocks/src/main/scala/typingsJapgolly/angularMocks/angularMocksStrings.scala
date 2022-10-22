@@ -1,29 +1,24 @@
 package typingsJapgolly.angularMocks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularMocksStrings {
-  @js.native
-  sealed trait alt extends js.Object
   
   @js.native
-  sealed trait ctrl extends js.Object
+  sealed trait alt extends StObject
+  inline def alt: alt = "alt".asInstanceOf[alt]
   
   @js.native
-  sealed trait meta extends js.Object
+  sealed trait ctrl extends StObject
+  inline def ctrl: ctrl = "ctrl".asInstanceOf[ctrl]
   
   @js.native
-  sealed trait shift extends js.Object
+  sealed trait meta extends StObject
+  inline def meta: meta = "meta".asInstanceOf[meta]
   
-  @scala.inline
-  def alt: alt = "alt".asInstanceOf[alt]
-  @scala.inline
-  def ctrl: ctrl = "ctrl".asInstanceOf[ctrl]
-  @scala.inline
-  def meta: meta = "meta".asInstanceOf[meta]
-  @scala.inline
-  def shift: shift = "shift".asInstanceOf[shift]
+  @js.native
+  sealed trait shift extends StObject
+  inline def shift: shift = "shift".asInstanceOf[shift]
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.ddSlashmmSlashYY
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.highcharts.highchartsStrings.mmSlashddSlashYYYY
   - typingsJapgolly.highcharts.highchartsStrings.YYYYSlashmmSlashdd
 */
-trait OptionsDateFormatValue extends js.Object
-
+trait OptionsDateFormatValue extends StObject
 object OptionsDateFormatValue {
-  @scala.inline
-  def YYYYSlashmmSlashdd: typingsJapgolly.highcharts.highchartsStrings.YYYYSlashmmSlashdd = this.cast("YYYY/mm/dd")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ddSlashmmSlashYY: typingsJapgolly.highcharts.highchartsStrings.ddSlashmmSlashYY = this.cast("dd/mm/YY")
-  @scala.inline
-  def ddSlashmmSlashYYYY: typingsJapgolly.highcharts.highchartsStrings.ddSlashmmSlashYYYY = this.cast("dd/mm/YYYY")
-  @scala.inline
-  def mmSlashddSlashYY: typingsJapgolly.highcharts.highchartsStrings.mmSlashddSlashYY = this.cast("mm/dd/YY")
-  @scala.inline
-  def mmSlashddSlashYYYY: typingsJapgolly.highcharts.highchartsStrings.mmSlashddSlashYYYY = this.cast("mm/dd/YYYY")
+  
+  inline def YYYYSlashmmSlashdd: typingsJapgolly.highcharts.highchartsStrings.YYYYSlashmmSlashdd = "YYYY/mm/dd".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.YYYYSlashmmSlashdd]
+  
+  inline def ddSlashmmSlashYY: typingsJapgolly.highcharts.highchartsStrings.ddSlashmmSlashYY = "dd/mm/YY".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.ddSlashmmSlashYY]
+  
+  inline def ddSlashmmSlashYYYY: typingsJapgolly.highcharts.highchartsStrings.ddSlashmmSlashYYYY = "dd/mm/YYYY".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.ddSlashmmSlashYYYY]
+  
+  inline def mmSlashddSlashYY: typingsJapgolly.highcharts.highchartsStrings.mmSlashddSlashYY = "mm/dd/YY".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.mmSlashddSlashYY]
+  
+  inline def mmSlashddSlashYYYY: typingsJapgolly.highcharts.highchartsStrings.mmSlashddSlashYYYY = "mm/dd/YYYY".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.mmSlashddSlashYYYY]
 }
-

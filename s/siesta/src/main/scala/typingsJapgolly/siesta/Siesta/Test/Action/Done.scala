@@ -1,24 +1,30 @@
 package typingsJapgolly.siesta.Siesta.Test.Action
 
 import typingsJapgolly.siesta.Siesta.Test.IAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
   */
-trait Done extends IAction {
+trait Done
+  extends StObject
+     with IAction {
+  
   var delay: js.UndefOr[Double] = js.undefined
 }
-
 object Done {
-  @scala.inline
-  def apply(delay: Int | Double = null, desc: String = null): Done = {
+  
+  inline def apply(): Done = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Done]
   }
+  
+  extension [Self <: Done](x: Self) {
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+  }
 }
-

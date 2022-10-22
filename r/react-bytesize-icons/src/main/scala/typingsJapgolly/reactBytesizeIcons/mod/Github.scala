@@ -1,12 +1,16 @@
 package typingsJapgolly.reactBytesizeIcons.mod
 
-import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-bytesize-icons", "Github")
+@JSImport("react-bytesize-icons", "GitHub")
 @js.native
-class Github ()
-  extends Component[BytesizeIconsProps, js.Object, js.Any]
-
+open class GitHub protected () extends BytesizeBaseIconComponent {
+  def this(props: BytesizeBaseIconsProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: BytesizeBaseIconsProps, context: Any) = this()
+}

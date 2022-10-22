@@ -1,39 +1,32 @@
 package typingsJapgolly.expressSession
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expressSessionStrings {
-  @js.native
-  sealed trait auto extends js.Object
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait keep extends js.Object
+  sealed trait destroy extends StObject
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait lax extends js.Object
+  sealed trait keep extends StObject
+  inline def keep: keep = "keep".asInstanceOf[keep]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait lax extends StObject
+  inline def lax: lax = "lax".asInstanceOf[lax]
   
   @js.native
-  sealed trait strict extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def keep: keep = "keep".asInstanceOf[keep]
-  @scala.inline
-  def lax: lax = "lax".asInstanceOf[lax]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
+  @js.native
+  sealed trait strict extends StObject
+  inline def strict: strict = "strict".asInstanceOf[strict]
 }
-

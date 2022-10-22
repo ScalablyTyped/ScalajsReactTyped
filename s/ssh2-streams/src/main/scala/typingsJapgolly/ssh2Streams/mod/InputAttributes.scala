@@ -1,36 +1,54 @@
 package typingsJapgolly.ssh2Streams.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InputAttributes extends js.Object {
+trait InputAttributes extends StObject {
+  
   var atime: js.UndefOr[Double | js.Date] = js.undefined
+  
   var gid: js.UndefOr[Double] = js.undefined
+  
   var mode: js.UndefOr[Double | String] = js.undefined
+  
   var mtime: js.UndefOr[Double | js.Date] = js.undefined
+  
   var size: js.UndefOr[Double] = js.undefined
+  
   var uid: js.UndefOr[Double] = js.undefined
 }
-
 object InputAttributes {
-  @scala.inline
-  def apply(
-    atime: Double | js.Date = null,
-    gid: Int | Double = null,
-    mode: Double | String = null,
-    mtime: Double | js.Date = null,
-    size: Int | Double = null,
-    uid: Int | Double = null
-  ): InputAttributes = {
+  
+  inline def apply(): InputAttributes = {
     val __obj = js.Dynamic.literal()
-    if (atime != null) __obj.updateDynamic("atime")(atime.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputAttributes]
   }
+  
+  extension [Self <: InputAttributes](x: Self) {
+    
+    inline def setAtime(value: Double | js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+    
+    inline def setAtimeUndefined: Self = StObject.set(x, "atime", js.undefined)
+    
+    inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+    
+    inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
+    
+    inline def setMode(value: Double | String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setMtime(value: Double | js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    
+    inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    
+    inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+  }
 }
-

@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Security.Cryptography.Core
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Capi1KdfTargetAlgorithm extends js.Object
-
+sealed trait Capi1KdfTargetAlgorithm extends StObject
 /** Represents information about a target algorithm. */
 @JSGlobal("Windows.Security.Cryptography.Core.Capi1KdfTargetAlgorithm")
 @js.native
-object Capi1KdfTargetAlgorithm extends js.Object {
+object Capi1KdfTargetAlgorithm extends StObject {
+  
   /** The target algorithm is AES. */
   @js.native
-  sealed trait aes extends Capi1KdfTargetAlgorithm
+  sealed trait aes
+    extends StObject
+       with Capi1KdfTargetAlgorithm
   
   /** The target algorithm is not AES. */
   @js.native
-  sealed trait notAes extends Capi1KdfTargetAlgorithm
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Capi1KdfTargetAlgorithm with Double] = js.native
-  /* 1 */ @js.native
-  object aes extends TopLevel[aes with Double]
-  
-  /* 0 */ @js.native
-  object notAes extends TopLevel[notAes with Double]
-  
+  sealed trait notAes
+    extends StObject
+       with Capi1KdfTargetAlgorithm
 }
-

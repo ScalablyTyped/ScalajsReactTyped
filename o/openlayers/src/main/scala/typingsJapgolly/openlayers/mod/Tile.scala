@@ -2,13 +2,13 @@ package typingsJapgolly.openlayers.mod
 
 import typingsJapgolly.openlayers.mod.Tile.State
 import typingsJapgolly.openlayers.mod.events.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Tile")
 @js.native
-class Tile protected () extends EventTarget {
+open class Tile protected () extends EventTarget {
   /**
     * @classdesc
     * Base class for tiles.
@@ -17,12 +17,14 @@ class Tile protected () extends EventTarget {
     * @param state State.
     */
   def this(tileCoord: TileCoord, state: State) = this()
+  
   /**
     * Get the tile coordinate for this tile.
     * @return The tile coordinate.
     * @api
     */
   def getTileCoord(): TileCoord = js.native
+  
   /**
     * Load the image or retry if loading previously failed.
     * Loading is taken care of by the tile queue, and calling this method is
@@ -31,10 +33,7 @@ class Tile protected () extends EventTarget {
     */
   def load(): Unit = js.native
 }
-
-@JSImport("openlayers", "Tile")
-@js.native
-object Tile extends js.Object {
+object Tile {
+  
   type State = Double
 }
-

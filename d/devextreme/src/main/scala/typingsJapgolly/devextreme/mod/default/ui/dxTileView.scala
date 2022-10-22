@@ -1,19 +1,12 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxTileViewOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxTileView.ItemLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxTileView")
+@JSImport("devextreme", "default.ui.dxTileView")
 @js.native
-class dxTileView protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.dxTileView {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxTileViewOptions) = this()
-  def this(element: Element, options: dxTileViewOptions) = this()
-}
-
+open class dxTileView[TItem /* <: ItemLike */, TKey] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxTileView[TItem, TKey]

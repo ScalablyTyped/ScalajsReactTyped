@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.BackgroundImageProperty
+import typingsJapgolly.csstype.mod.Property.BackgroundImage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BackgroundImageProps extends js.Object {
-  val backgroundImage: js.UndefOr[ResponsiveValue[BackgroundImageProperty]] = js.undefined
+trait BackgroundImageProps extends StObject {
+  
+  val backgroundImage: js.UndefOr[ResponsiveValue[BackgroundImage]] = js.undefined
 }
-
 object BackgroundImageProps {
-  @scala.inline
-  def apply(backgroundImage: ResponsiveValue[BackgroundImageProperty] = null): BackgroundImageProps = {
+  
+  inline def apply(): BackgroundImageProps = {
     val __obj = js.Dynamic.literal()
-    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundImageProps]
   }
+  
+  extension [Self <: BackgroundImageProps](x: Self) {
+    
+    inline def setBackgroundImage(value: ResponsiveValue[BackgroundImage]): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
+    
+    inline def setBackgroundImageVarargs(value: BackgroundImage*): Self = StObject.set(x, "backgroundImage", js.Array(value*))
+  }
 }
-

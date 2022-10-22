@@ -1,8 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A DataValidation for a ParagraphTextItem.
@@ -15,5 +15,4 @@ import scala.scalajs.js.annotation._
   *     paragraphTextItem.setValidation(paragraphtextValidation);
   */
 // tslint:disable-next-line: no-empty-interface
-trait ParagraphTextValidation extends js.Object
-
+trait ParagraphTextValidation extends StObject

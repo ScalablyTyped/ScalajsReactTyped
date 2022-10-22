@@ -1,13 +1,13 @@
 package typingsJapgolly.angularRouter.mod
 
 import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/router", "PreloadingStrategy")
+/* note: abstract class */ @JSImport("@angular/router", "PreloadingStrategy")
 @js.native
-abstract class PreloadingStrategy () extends js.Object {
-  def preload(route: Route, fn: js.Function0[Observable_[_]]): Observable_[_] = js.native
+open class PreloadingStrategy () extends StObject {
+  
+  def preload(route: Route, fn: js.Function0[Observable_[Any]]): Observable_[Any] = js.native
 }
-

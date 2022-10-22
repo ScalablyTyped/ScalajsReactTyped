@@ -1,41 +1,57 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartPlotAreaHoverEvent extends ChartEvent {
-  var category: js.UndefOr[js.Any] = js.undefined
-  var element: js.UndefOr[js.Any] = js.undefined
-  var originalEvent: js.UndefOr[js.Any] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
-  var x: js.UndefOr[js.Any] = js.undefined
-  var y: js.UndefOr[js.Any] = js.undefined
+trait ChartPlotAreaHoverEvent
+  extends StObject
+     with ChartEvent {
+  
+  var category: js.UndefOr[Any] = js.undefined
+  
+  var element: js.UndefOr[Any] = js.undefined
+  
+  var originalEvent: js.UndefOr[Any] = js.undefined
+  
+  var value: js.UndefOr[Any] = js.undefined
+  
+  var x: js.UndefOr[Any] = js.undefined
+  
+  var y: js.UndefOr[Any] = js.undefined
 }
-
 object ChartPlotAreaHoverEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Chart,
-    category: js.Any = null,
-    element: js.Any = null,
-    originalEvent: js.Any = null,
-    value: js.Any = null,
-    x: js.Any = null,
-    y: js.Any = null
-  ): ChartPlotAreaHoverEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Chart): ChartPlotAreaHoverEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPlotAreaHoverEvent]
   }
+  
+  extension [Self <: ChartPlotAreaHoverEvent](x: Self) {
+    
+    inline def setCategory(value: Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

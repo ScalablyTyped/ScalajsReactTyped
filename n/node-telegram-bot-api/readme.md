@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-telegram-bot-api
 
-Typings are for version 0.40
+Typings are for version 0.57
 
 ## Library description:
 Telegram Bot API
@@ -10,10 +10,10 @@ Telegram Bot API
 | ------------------ | :-------------: |
 | Full name          | node-telegram-bot-api |
 | Keywords           | telegram, telegram bot, telegram bot api, bot |
-| # releases         | 2 |
-| # dependents       | 158 |
-| # downloads        | 1187525 |
-| # stars            | 31 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 252284.33333333334 |
+| # stars            | 6445.0 |
 
 ## Links
 - [Homepage](https://github.com/yagop/node-telegram-bot-api)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "config-file-ts" : "0.2.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "config-file-ts" : "0.2.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

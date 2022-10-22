@@ -1,8 +1,8 @@
 package typingsJapgolly.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *  nodes -> Cy.NodeCollection
@@ -12,22 +12,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait NodeCollection
-  extends CollectionIteration[NodeSingular, NodeSingular]
-     with CollectionGraphManipulation
-     with CollectionEvents
-     with CollectionData
-     with CollectionPosition
-     with CollectionTraversing
-     with CollectionLayout
-     with CollectionSelection
-     with CollectionStyle
-     with CollectionAnimation
-     with CollectionComparision
-     with CollectionBuildingFiltering[NodeSingular, NodeSingular]
-     with CollectionAlgorithms
+  extends StObject
+     with Collection[NodeSingular, NodeSingular]
      with NodeCollectionMetadata
      with NodeCollectionPosition
      with NodeCollectionTraversing
      with NodeCollectionCompound
+     with NodeCollectionLayout
      with _CollectionArgument
-

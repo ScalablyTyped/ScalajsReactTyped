@@ -1,65 +1,63 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EActivationCodeClass extends js.Object
-
+sealed trait EActivationCodeClass extends StObject
 @JSImport("steam-client", "EActivationCodeClass")
 @js.native
-object EActivationCodeClass extends js.Object {
-  @js.native
-  sealed trait DBLookup extends EActivationCodeClass
-  
-  @js.native
-  sealed trait Doom3CDKey extends EActivationCodeClass
-  
-  @js.native
-  sealed trait Invalid extends EActivationCodeClass
-  
-  @js.native
-  sealed trait Max extends EActivationCodeClass
-  
-  @js.native
-  sealed trait Steam2010Key extends EActivationCodeClass
-  
-  @js.native
-  sealed trait Test extends EActivationCodeClass
-  
-  @js.native
-  sealed trait ValveCDKey extends EActivationCodeClass
-  
-  @js.native
-  sealed trait WonCDKey extends EActivationCodeClass
+object EActivationCodeClass extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EActivationCodeClass with Double] = js.native
-  /* 3 */ @js.native
-  object DBLookup extends TopLevel[DBLookup with Double]
+  def apply(value: Double): js.UndefOr[EActivationCodeClass & Double] = js.native
   
-  /* 2 */ @js.native
-  object Doom3CDKey extends TopLevel[Doom3CDKey with Double]
+  @js.native
+  sealed trait DBLookup
+    extends StObject
+       with EActivationCodeClass
+  /* 3 */ val DBLookup: typingsJapgolly.steamClient.mod.EActivationCodeClass.DBLookup & Double = js.native
   
-  /* 4294967295.0 */ @js.native
-  object Invalid extends TopLevel[Invalid with Double]
+  @js.native
+  sealed trait Doom3CDKey
+    extends StObject
+       with EActivationCodeClass
+  /* 2 */ val Doom3CDKey: typingsJapgolly.steamClient.mod.EActivationCodeClass.Doom3CDKey & Double = js.native
   
-  /* 5 */ @js.native
-  object Max extends TopLevel[Max with Double]
+  @js.native
+  sealed trait Invalid
+    extends StObject
+       with EActivationCodeClass
+  /* 4294967295.0 */ val Invalid: typingsJapgolly.steamClient.mod.EActivationCodeClass.Invalid & Double = js.native
   
-  /* 4 */ @js.native
-  object Steam2010Key extends TopLevel[Steam2010Key with Double]
+  @js.native
+  sealed trait Max
+    extends StObject
+       with EActivationCodeClass
+  /* 5 */ val Max: typingsJapgolly.steamClient.mod.EActivationCodeClass.Max & Double = js.native
   
-  /* 2147483647 */ @js.native
-  object Test extends TopLevel[Test with Double]
+  @js.native
+  sealed trait Steam2010Key
+    extends StObject
+       with EActivationCodeClass
+  /* 4 */ val Steam2010Key: typingsJapgolly.steamClient.mod.EActivationCodeClass.Steam2010Key & Double = js.native
   
-  /* 1 */ @js.native
-  object ValveCDKey extends TopLevel[ValveCDKey with Double]
+  @js.native
+  sealed trait Test
+    extends StObject
+       with EActivationCodeClass
+  /* 2147483647 */ val Test: typingsJapgolly.steamClient.mod.EActivationCodeClass.Test & Double = js.native
   
-  /* 0 */ @js.native
-  object WonCDKey extends TopLevel[WonCDKey with Double]
+  @js.native
+  sealed trait ValveCDKey
+    extends StObject
+       with EActivationCodeClass
+  /* 1 */ val ValveCDKey: typingsJapgolly.steamClient.mod.EActivationCodeClass.ValveCDKey & Double = js.native
   
+  @js.native
+  sealed trait WonCDKey
+    extends StObject
+       with EActivationCodeClass
+  /* 0 */ val WonCDKey: typingsJapgolly.steamClient.mod.EActivationCodeClass.WonCDKey & Double = js.native
 }
-

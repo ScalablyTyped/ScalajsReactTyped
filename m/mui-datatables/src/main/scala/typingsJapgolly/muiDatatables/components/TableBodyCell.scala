@@ -1,56 +1,43 @@
 package typingsJapgolly.muiDatatables.components
 
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.muiDatatables.mod.MUIDataTableBodyCell
+import typingsJapgolly.muiDatatables.mod.MUIDataTableOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableBodyCell {
-  def apply(
-    className: String = null,
-    classes: js.Object = null,
-    colIndex: Int | Double = null,
-    columnHeader: js.Any = null,
-    dataIndex: Int | Double = null,
-    options: js.Object = null,
-    otherProps: js.Any = null,
-    rowIndex: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: js.Any = null
-  ): UnmountedSimple[
-    MUIDataTableBodyCell, 
-    MountedWithRawType[MUIDataTableBodyCell, js.Object, RawMounted[MUIDataTableBodyCell, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (colIndex != null) __obj.updateDynamic("colIndex")(colIndex.asInstanceOf[js.Any])
-    if (columnHeader != null) __obj.updateDynamic("columnHeader")(columnHeader.asInstanceOf[js.Any])
-    if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (otherProps != null) __obj.updateDynamic("otherProps")(otherProps.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.muiDatatables.mod.MUIDataTableBodyCell, 
-  japgolly.scalajs.react.Children.None, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.muiDatatables.mod.MUIDataTableBodyCell])
-  }
   @JSImport("mui-datatables", "TableBodyCell")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def children(value: Any): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def classes(value: js.Object): this.type = set("classes", value.asInstanceOf[js.Any])
+    
+    inline def colIndex(value: Double): this.type = set("colIndex", value.asInstanceOf[js.Any])
+    
+    inline def columnHeader(value: Any): this.type = set("columnHeader", value.asInstanceOf[js.Any])
+    
+    inline def dataIndex(value: Double): this.type = set("dataIndex", value.asInstanceOf[js.Any])
+    
+    inline def options(value: MUIDataTableOptions): this.type = set("options", value.asInstanceOf[js.Any])
+    
+    inline def otherProps(value: Any): this.type = set("otherProps", value.asInstanceOf[js.Any])
+    
+    inline def rowIndex(value: Double): this.type = set("rowIndex", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: TableBodyCell.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MUIDataTableBodyCell): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,14 +1,17 @@
 package typingsJapgolly.angularCompiler.mod
 
-import typingsJapgolly.angularCompiler.outputAstMod.TypeModifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler", "Type")
+/* note: abstract class */ @JSImport("@angular/compiler", "Type")
 @js.native
-abstract class Type ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.Type {
-  def this(modifiers: js.Array[TypeModifier]) = this()
+open class Type () extends StObject {
+  def this(modifiers: TypeModifier) = this()
+  
+  def hasModifier(modifier: TypeModifier): Boolean = js.native
+  
+  var modifiers: TypeModifier = js.native
+  
+  def visitType(visitor: TypeVisitor, context: Any): Any = js.native
 }
-

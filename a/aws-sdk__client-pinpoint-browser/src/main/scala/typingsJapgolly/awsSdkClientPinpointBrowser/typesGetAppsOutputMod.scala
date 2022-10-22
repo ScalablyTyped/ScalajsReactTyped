@@ -1,27 +1,41 @@
 package typingsJapgolly.awsSdkClientPinpointBrowser
 
-import typingsJapgolly.awsSdkClientPinpointBrowser.outputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientPinpointBrowser.typesApplicationsResponseMod.UnmarshalledApplicationsResponse
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientPinpointBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/types/GetAppsOutput", JSImport.Namespace)
-@js.native
-object typesGetAppsOutputMod extends js.Object {
-  @js.native
-  trait GetAppsOutput extends OutputTypesUnion {
+object typesGetAppsOutputMod {
+  
+  trait GetAppsOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * Get Applications Result.
       */
-    var ApplicationsResponse: UnmarshalledApplicationsResponse = js.native
+    var ApplicationsResponse: UnmarshalledApplicationsResponse
   }
-  
+  object GetAppsOutput {
+    
+    inline def apply($metadata: ResponseMetadata, ApplicationsResponse: UnmarshalledApplicationsResponse): GetAppsOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ApplicationsResponse = ApplicationsResponse.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetAppsOutput]
+    }
+    
+    extension [Self <: GetAppsOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setApplicationsResponse(value: UnmarshalledApplicationsResponse): Self = StObject.set(x, "ApplicationsResponse", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

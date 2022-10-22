@@ -1,12 +1,31 @@
 package typingsJapgolly.webpack.mod
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack", "HotModuleReplacementPlugin")
-@js.native
-class HotModuleReplacementPlugin () extends Plugin {
-  def this(options: js.Any) = this()
+trait HotModuleReplacementPlugin extends StObject {
+  
+  /**
+  	 * Apply the plugin
+  	 */
+  @JSName("apply")
+  def apply(compiler: Compiler): Unit
+  
+  var options: Any
 }
-
+object HotModuleReplacementPlugin {
+  
+  inline def apply(apply: Compiler => Callback, options: Any): HotModuleReplacementPlugin = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1((t0: Compiler) => apply(t0).runNow()), options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HotModuleReplacementPlugin]
+  }
+  
+  extension [Self <: HotModuleReplacementPlugin](x: Self) {
+    
+    inline def setApply(value: Compiler => Callback): Self = StObject.set(x, "apply", js.Any.fromFunction1((t0: Compiler) => value(t0).runNow()))
+    
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+  }
+}

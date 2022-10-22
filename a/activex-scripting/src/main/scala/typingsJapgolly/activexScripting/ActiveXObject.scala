@@ -3,11 +3,12 @@ package typingsJapgolly.activexScripting
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.activexScripting.Scripting.Dictionary
 import typingsJapgolly.activexScripting.activexScriptingStrings.Item
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ActiveXObject extends js.Object {
+trait ActiveXObject extends StObject {
+  
   @JSName("set")
   def set_Item[TKey, TValue](
     obj: Dictionary[TKey, TValue],
@@ -16,13 +17,15 @@ trait ActiveXObject extends js.Object {
     newValue: TValue
   ): Unit
 }
-
 object ActiveXObject {
-  @scala.inline
-  def apply(set: (Dictionary[js.Any, js.Any], Item, js.Array[js.Any], js.Any) => Callback): ActiveXObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("set")(js.Any.fromFunction4((t0: typingsJapgolly.activexScripting.Scripting.Dictionary[js.Any, js.Any], t1: typingsJapgolly.activexScripting.activexScriptingStrings.Item, t2: js.Array[js.Any], t3: js.Any) => set(t0, t1, t2, t3).runNow()))
+  
+  inline def apply(set: (Dictionary[Any, Any], Item, js.Array[Any], Any) => Callback): ActiveXObject = {
+    val __obj = js.Dynamic.literal(set = js.Any.fromFunction4((t0: Dictionary[Any, Any], t1: Item, t2: js.Array[Any], t3: Any) => (set(t0, t1, t2, t3)).runNow()))
     __obj.asInstanceOf[ActiveXObject]
   }
+  
+  extension [Self <: ActiveXObject](x: Self) {
+    
+    inline def setSet(value: (Dictionary[Any, Any], Item, js.Array[Any], Any) => Callback): Self = StObject.set(x, "set", js.Any.fromFunction4((t0: Dictionary[Any, Any], t1: Item, t2: js.Array[Any], t3: Any) => (value(t0, t1, t2, t3)).runNow()))
+  }
 }
-

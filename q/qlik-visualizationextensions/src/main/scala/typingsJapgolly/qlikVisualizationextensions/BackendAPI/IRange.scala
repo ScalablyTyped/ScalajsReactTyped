@@ -1,15 +1,17 @@
 package typingsJapgolly.qlikVisualizationextensions.BackendAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IRange extends js.Object {
+trait IRange extends StObject {
+  
   /**
     * Highest value in the range
     * Double
     */
   var qMax: Double
+  
   /**
     * If set to true, the range includes the highest value in the range of
     * selections (Equals to ). [bn(50500)]
@@ -17,11 +19,13 @@ trait IRange extends js.Object {
     * that 10 is included in the range of selections.
     */
   var qMaxInclEq: Boolean
+  
   /**
     * Lowest value in the range
     * Double
     */
   var qMin: Double
+  
   /**
     * If set to true, the range includes the lowest value in the range of
     * selections (Equals to ). [bn(50500)]
@@ -30,13 +34,21 @@ trait IRange extends js.Object {
     */
   var qMinInclEq: Boolean
 }
-
 object IRange {
-  @scala.inline
-  def apply(qMax: Double, qMaxInclEq: Boolean, qMin: Double, qMinInclEq: Boolean): IRange = {
-    val __obj = js.Dynamic.literal(qMax = qMax.asInstanceOf[js.Any], qMaxInclEq = qMaxInclEq.asInstanceOf[js.Any], qMin = qMin.asInstanceOf[js.Any], qMinInclEq = qMinInclEq.asInstanceOf[js.Any])
   
+  inline def apply(qMax: Double, qMaxInclEq: Boolean, qMin: Double, qMinInclEq: Boolean): IRange = {
+    val __obj = js.Dynamic.literal(qMax = qMax.asInstanceOf[js.Any], qMaxInclEq = qMaxInclEq.asInstanceOf[js.Any], qMin = qMin.asInstanceOf[js.Any], qMinInclEq = qMinInclEq.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRange]
   }
+  
+  extension [Self <: IRange](x: Self) {
+    
+    inline def setQMax(value: Double): Self = StObject.set(x, "qMax", value.asInstanceOf[js.Any])
+    
+    inline def setQMaxInclEq(value: Boolean): Self = StObject.set(x, "qMaxInclEq", value.asInstanceOf[js.Any])
+    
+    inline def setQMin(value: Double): Self = StObject.set(x, "qMin", value.asInstanceOf[js.Any])
+    
+    inline def setQMinInclEq(value: Boolean): Self = StObject.set(x, "qMinInclEq", value.asInstanceOf[js.Any])
+  }
 }
-

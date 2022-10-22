@@ -1,45 +1,59 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A widget that shows a single image.
   *
   *     var image = CardService.newImage().setAltText("A nice image").setImageUrl("https://image.png");
   */
-trait Image extends js.Object {
+trait Image extends StObject {
+  
   def setAltText(altText: String): Image
+  
   def setAuthorizationAction(action: AuthorizationAction): Image
+  
   def setComposeAction(action: Action, composedEmailType: ComposedEmailType): Image
+  
   def setImageUrl(url: String): Image
+  
   def setOnClickAction(action: Action): Image
+  
   def setOnClickOpenLinkAction(action: Action): Image
+  
   def setOpenLink(openLink: OpenLink): Image
 }
-
 object Image {
-  @scala.inline
-  def apply(
-    setAltText: String => CallbackTo[Image],
-    setAuthorizationAction: AuthorizationAction => CallbackTo[Image],
-    setComposeAction: (Action, ComposedEmailType) => CallbackTo[Image],
-    setImageUrl: String => CallbackTo[Image],
-    setOnClickAction: Action => CallbackTo[Image],
-    setOnClickOpenLinkAction: Action => CallbackTo[Image],
-    setOpenLink: OpenLink => CallbackTo[Image]
+  
+  inline def apply(
+    setAltText: String => Image,
+    setAuthorizationAction: AuthorizationAction => Image,
+    setComposeAction: (Action, ComposedEmailType) => Image,
+    setImageUrl: String => Image,
+    setOnClickAction: Action => Image,
+    setOnClickOpenLinkAction: Action => Image,
+    setOpenLink: OpenLink => Image
   ): Image = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setAltText")(js.Any.fromFunction1((t0: java.lang.String) => setAltText(t0).runNow()))
-    __obj.updateDynamic("setAuthorizationAction")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.AuthorizationAction) => setAuthorizationAction(t0).runNow()))
-    __obj.updateDynamic("setComposeAction")(js.Any.fromFunction2((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Action, t1: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.ComposedEmailType) => setComposeAction(t0, t1).runNow()))
-    __obj.updateDynamic("setImageUrl")(js.Any.fromFunction1((t0: java.lang.String) => setImageUrl(t0).runNow()))
-    __obj.updateDynamic("setOnClickAction")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Action) => setOnClickAction(t0).runNow()))
-    __obj.updateDynamic("setOnClickOpenLinkAction")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Action) => setOnClickOpenLinkAction(t0).runNow()))
-    __obj.updateDynamic("setOpenLink")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.OpenLink) => setOpenLink(t0).runNow()))
+    val __obj = js.Dynamic.literal(setAltText = js.Any.fromFunction1(setAltText), setAuthorizationAction = js.Any.fromFunction1(setAuthorizationAction), setComposeAction = js.Any.fromFunction2(setComposeAction), setImageUrl = js.Any.fromFunction1(setImageUrl), setOnClickAction = js.Any.fromFunction1(setOnClickAction), setOnClickOpenLinkAction = js.Any.fromFunction1(setOnClickOpenLinkAction), setOpenLink = js.Any.fromFunction1(setOpenLink))
     __obj.asInstanceOf[Image]
   }
+  
+  extension [Self <: Image](x: Self) {
+    
+    inline def setSetAltText(value: String => Image): Self = StObject.set(x, "setAltText", js.Any.fromFunction1(value))
+    
+    inline def setSetAuthorizationAction(value: AuthorizationAction => Image): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
+    
+    inline def setSetComposeAction(value: (Action, ComposedEmailType) => Image): Self = StObject.set(x, "setComposeAction", js.Any.fromFunction2(value))
+    
+    inline def setSetImageUrl(value: String => Image): Self = StObject.set(x, "setImageUrl", js.Any.fromFunction1(value))
+    
+    inline def setSetOnClickAction(value: Action => Image): Self = StObject.set(x, "setOnClickAction", js.Any.fromFunction1(value))
+    
+    inline def setSetOnClickOpenLinkAction(value: Action => Image): Self = StObject.set(x, "setOnClickOpenLinkAction", js.Any.fromFunction1(value))
+    
+    inline def setSetOpenLink(value: OpenLink => Image): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
+  }
 }
-

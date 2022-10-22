@@ -1,30 +1,47 @@
 package typingsJapgolly.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EthernetProperties[M /* <: ManagedObject */] extends js.Object {
+trait EthernetProperties[M /* <: ManagedObject */] extends StObject {
+  
   /** The authentication used by the Ethernet network. Possible values are None and 8021X. */
-  var Authentication: js.UndefOr[EthernetAuthenticationType | ManagedType[EthernetAuthenticationType]] = js.undefined
+  var Authentication: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedType<chrome-apps.chrome.networking.onc.EthernetAuthenticationType> : chrome-apps.chrome.networking.onc.EthernetAuthenticationType | undefined */ js.Any
+  ] = js.undefined
+  
   /** Whether the Ethernet network should be connected automatically. */
-  var AutoConnect: js.UndefOr[Boolean | ManagedBoolean] = js.undefined
+  var AutoConnect: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedBoolean : boolean | undefined */ js.Any
+  ] = js.undefined
+  
   /** Network's EAP settings. Required for 8021X authentication. */
   var EAP: js.UndefOr[EAPProperties] = js.undefined
 }
-
 object EthernetProperties {
-  @scala.inline
-  def apply[M /* <: ManagedObject */](
-    Authentication: EthernetAuthenticationType | ManagedType[EthernetAuthenticationType] = null,
-    AutoConnect: Boolean | ManagedBoolean = null,
-    EAP: EAPProperties = null
-  ): EthernetProperties[M] = {
+  
+  inline def apply[M /* <: ManagedObject */](): EthernetProperties[M] = {
     val __obj = js.Dynamic.literal()
-    if (Authentication != null) __obj.updateDynamic("Authentication")(Authentication.asInstanceOf[js.Any])
-    if (AutoConnect != null) __obj.updateDynamic("AutoConnect")(AutoConnect.asInstanceOf[js.Any])
-    if (EAP != null) __obj.updateDynamic("EAP")(EAP.asInstanceOf[js.Any])
     __obj.asInstanceOf[EthernetProperties[M]]
   }
+  
+  extension [Self <: EthernetProperties[?], M /* <: ManagedObject */](x: Self & EthernetProperties[M]) {
+    
+    inline def setAuthentication(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedType<chrome-apps.chrome.networking.onc.EthernetAuthenticationType> : chrome-apps.chrome.networking.onc.EthernetAuthenticationType | undefined */ js.Any
+    ): Self = StObject.set(x, "Authentication", value.asInstanceOf[js.Any])
+    
+    inline def setAuthenticationUndefined: Self = StObject.set(x, "Authentication", js.undefined)
+    
+    inline def setAutoConnect(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedBoolean : boolean | undefined */ js.Any
+    ): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
+    
+    inline def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
+    
+    inline def setEAP(value: EAPProperties): Self = StObject.set(x, "EAP", value.asInstanceOf[js.Any])
+    
+    inline def setEAPUndefined: Self = StObject.set(x, "EAP", js.undefined)
+  }
 }
-

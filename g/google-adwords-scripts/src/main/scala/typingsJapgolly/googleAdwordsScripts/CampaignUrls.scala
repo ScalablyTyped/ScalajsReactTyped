@@ -2,32 +2,32 @@ package typingsJapgolly.googleAdwordsScripts
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CampaignUrls
-  extends AdWordsUrls
+  extends StObject
+     with AdWordsUrls
      with hasSetTrackingTemplate {
+  
   def clearTrackingTemplate(): Unit
 }
-
 object CampaignUrls {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     clearTrackingTemplate: Callback,
     getCustomParameters: CallbackTo[js.Object],
     getTrackingTemplate: CallbackTo[String],
     setCustomParameters: js.Object => Callback,
     setTrackingTemplate: String => Callback
   ): CampaignUrls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearTrackingTemplate")(clearTrackingTemplate.toJsFn)
-    __obj.updateDynamic("getCustomParameters")(getCustomParameters.toJsFn)
-    __obj.updateDynamic("getTrackingTemplate")(getTrackingTemplate.toJsFn)
-    __obj.updateDynamic("setCustomParameters")(js.Any.fromFunction1((t0: js.Object) => setCustomParameters(t0).runNow()))
-    __obj.updateDynamic("setTrackingTemplate")(js.Any.fromFunction1((t0: java.lang.String) => setTrackingTemplate(t0).runNow()))
+    val __obj = js.Dynamic.literal(clearTrackingTemplate = clearTrackingTemplate.toJsFn, getCustomParameters = getCustomParameters.toJsFn, getTrackingTemplate = getTrackingTemplate.toJsFn, setCustomParameters = js.Any.fromFunction1((t0: js.Object) => setCustomParameters(t0).runNow()), setTrackingTemplate = js.Any.fromFunction1((t0: String) => setTrackingTemplate(t0).runNow()))
     __obj.asInstanceOf[CampaignUrls]
   }
+  
+  extension [Self <: CampaignUrls](x: Self) {
+    
+    inline def setClearTrackingTemplate(value: Callback): Self = StObject.set(x, "clearTrackingTemplate", value.toJsFn)
+  }
 }
-

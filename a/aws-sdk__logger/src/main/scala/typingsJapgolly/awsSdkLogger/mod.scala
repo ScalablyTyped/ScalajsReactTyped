@@ -1,36 +1,49 @@
 package typingsJapgolly.awsSdkLogger
 
-import typingsJapgolly.awsSdkTypes.loggerMod.LoggerOptions
+import typingsJapgolly.awsSdkTypes.distTypesLoggerMod.LoggerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/logger", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@aws-sdk/logger", "Logger")
   @js.native
-  class Logger protected ()
-    extends typingsJapgolly.awsSdkTypes.loggerMod.Logger {
+  open class Logger protected ()
+    extends StObject
+       with typingsJapgolly.awsSdkTypes.distTypesLoggerMod.Logger {
     def this(options: LoggerOptions) = this()
-    val logLevel: js.Any = js.native
-    val logger: js.Any = js.native
+    
+    /* CompleteClass */
+    override def debug(content: Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def error(content: Any*): Unit = js.native
+    def error(content: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def info(content: Any*): Unit = js.native
+    def info(content: String): Unit = js.native
+    
+    def log(content: String): Unit = js.native
+    
+    /* private */ val logLevel: Any = js.native
+    
+    /* private */ val logger: Any = js.native
+    
     val options: LoggerOptions = js.native
-    var write: js.Any = js.native
+    
     /* CompleteClass */
-    override def error(content: String): Unit = js.native
-    /* CompleteClass */
-    override def info(content: String): Unit = js.native
-    /* CompleteClass */
-    override def log(content: String): Unit = js.native
-    /* CompleteClass */
-    override def warn(content: String): Unit = js.native
+    override def warn(content: Any*): Unit = js.native
+    def warn(content: String): Unit = js.native
+    
+    /* private */ var write: Any = js.native
   }
-  
   /* static members */
-  @js.native
-  object Logger extends js.Object {
-    val logLevelPriority: js.Any = js.native
+  object Logger {
+    
+    @JSImport("@aws-sdk/logger", "Logger.logLevelPriority")
+    @js.native
+    val logLevelPriority: Any = js.native
   }
-  
 }
-

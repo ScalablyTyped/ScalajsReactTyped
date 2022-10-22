@@ -1,13 +1,13 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.vscode.mod.DebugAdapterExecutable
   - typingsJapgolly.vscode.mod.DebugAdapterServer
+  - typingsJapgolly.vscode.mod.DebugAdapterNamedPipeServer
   - typingsJapgolly.vscode.mod.DebugAdapterInlineImplementation
 */
-trait DebugAdapterDescriptor extends js.Object
-
+trait DebugAdapterDescriptor extends StObject

@@ -1,39 +1,32 @@
 package typingsJapgolly.ionRangeslider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionRangesliderStrings {
-  @js.native
-  sealed trait big extends js.Object
   
   @js.native
-  sealed trait flat extends js.Object
+  sealed trait big extends StObject
+  inline def big: big = "big".asInstanceOf[big]
   
   @js.native
-  sealed trait modern extends js.Object
+  sealed trait flat extends StObject
+  inline def flat: flat = "flat".asInstanceOf[flat]
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait modern extends StObject
+  inline def modern: modern = "modern".asInstanceOf[modern]
   
   @js.native
-  sealed trait sharp extends js.Object
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait sharp extends StObject
+  inline def sharp: sharp = "sharp".asInstanceOf[sharp]
   
-  @scala.inline
-  def big: big = "big".asInstanceOf[big]
-  @scala.inline
-  def flat: flat = "flat".asInstanceOf[flat]
-  @scala.inline
-  def modern: modern = "modern".asInstanceOf[modern]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def sharp: sharp = "sharp".asInstanceOf[sharp]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
+  @js.native
+  sealed trait square extends StObject
+  inline def square: square = "square".asInstanceOf[square]
 }
-

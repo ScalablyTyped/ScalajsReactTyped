@@ -1,31 +1,27 @@
 package typingsJapgolly.riotjsDomBindings.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SimpleBindingData
-  extends BaseBindingData
-     with BindingData {
-  var expressions: js.Array[ExpressionData]
+trait SimpleBindingData[Scope]
+  extends StObject
+     with BaseBindingData[Scope]
+     with _BindingData[Scope] {
+  
+  var expressions: js.Array[ExpressionData[Scope]]
 }
-
 object SimpleBindingData {
-  @scala.inline
-  def apply(
-    expressions: js.Array[ExpressionData],
-    evaluate: /* scope */ js.Any => CallbackTo[js.Any] = null,
-    redundantAttribute: String = null,
-    selector: String = null,
-    `type`: BindingType = null
-  ): SimpleBindingData = {
+  
+  inline def apply[Scope](expressions: js.Array[ExpressionData[Scope]]): SimpleBindingData[Scope] = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
-    if (evaluate != null) __obj.updateDynamic("evaluate")(js.Any.fromFunction1((t0: /* scope */ js.Any) => evaluate(t0).runNow()))
-    if (redundantAttribute != null) __obj.updateDynamic("redundantAttribute")(redundantAttribute.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SimpleBindingData]
+    __obj.asInstanceOf[SimpleBindingData[Scope]]
+  }
+  
+  extension [Self <: SimpleBindingData[?], Scope](x: Self & SimpleBindingData[Scope]) {
+    
+    inline def setExpressions(value: js.Array[ExpressionData[Scope]]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    
+    inline def setExpressionsVarargs(value: ExpressionData[Scope]*): Self = StObject.set(x, "expressions", js.Array(value*))
   }
 }
-

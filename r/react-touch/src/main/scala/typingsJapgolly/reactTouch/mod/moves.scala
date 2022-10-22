@@ -1,65 +1,63 @@
 package typingsJapgolly.reactTouch.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait moves extends js.Object
-
+sealed trait moves extends StObject
 @JSImport("react-touch", "moves")
 @js.native
-object moves extends js.Object {
-  @js.native
-  sealed trait DOWN extends moves
-  
-  @js.native
-  sealed trait DOWNLEFT extends moves
-  
-  @js.native
-  sealed trait DOWNRIGHT extends moves
-  
-  @js.native
-  sealed trait LEFT extends moves
-  
-  @js.native
-  sealed trait RIGHT extends moves
-  
-  @js.native
-  sealed trait UP extends moves
-  
-  @js.native
-  sealed trait UPLEFT extends moves
-  
-  @js.native
-  sealed trait UPRIGHT extends moves
+object moves extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[moves with Double] = js.native
-  /* 6 */ @js.native
-  object DOWN extends TopLevel[DOWN with Double]
+  def apply(value: Double): js.UndefOr[moves & Double] = js.native
   
-  /* 7 */ @js.native
-  object DOWNLEFT extends TopLevel[DOWNLEFT with Double]
+  @js.native
+  sealed trait DOWN
+    extends StObject
+       with moves
+  /* 6 */ val DOWN: typingsJapgolly.reactTouch.mod.moves.DOWN & Double = js.native
   
-  /* 5 */ @js.native
-  object DOWNRIGHT extends TopLevel[DOWNRIGHT with Double]
+  @js.native
+  sealed trait DOWNLEFT
+    extends StObject
+       with moves
+  /* 7 */ val DOWNLEFT: typingsJapgolly.reactTouch.mod.moves.DOWNLEFT & Double = js.native
   
-  /* 3 */ @js.native
-  object LEFT extends TopLevel[LEFT with Double]
+  @js.native
+  sealed trait DOWNRIGHT
+    extends StObject
+       with moves
+  /* 5 */ val DOWNRIGHT: typingsJapgolly.reactTouch.mod.moves.DOWNRIGHT & Double = js.native
   
-  /* 4 */ @js.native
-  object RIGHT extends TopLevel[RIGHT with Double]
+  @js.native
+  sealed trait LEFT
+    extends StObject
+       with moves
+  /* 3 */ val LEFT: typingsJapgolly.reactTouch.mod.moves.LEFT & Double = js.native
   
-  /* 1 */ @js.native
-  object UP extends TopLevel[UP with Double]
+  @js.native
+  sealed trait RIGHT
+    extends StObject
+       with moves
+  /* 4 */ val RIGHT: typingsJapgolly.reactTouch.mod.moves.RIGHT & Double = js.native
   
-  /* 0 */ @js.native
-  object UPLEFT extends TopLevel[UPLEFT with Double]
+  @js.native
+  sealed trait UP
+    extends StObject
+       with moves
+  /* 1 */ val UP: typingsJapgolly.reactTouch.mod.moves.UP & Double = js.native
   
-  /* 2 */ @js.native
-  object UPRIGHT extends TopLevel[UPRIGHT with Double]
+  @js.native
+  sealed trait UPLEFT
+    extends StObject
+       with moves
+  /* 0 */ val UPLEFT: typingsJapgolly.reactTouch.mod.moves.UPLEFT & Double = js.native
   
+  @js.native
+  sealed trait UPRIGHT
+    extends StObject
+       with moves
+  /* 2 */ val UPRIGHT: typingsJapgolly.reactTouch.mod.moves.UPRIGHT & Double = js.native
 }
-

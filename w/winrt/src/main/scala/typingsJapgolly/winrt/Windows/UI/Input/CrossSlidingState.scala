@@ -1,59 +1,47 @@
 package typingsJapgolly.winrt.Windows.UI.Input
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CrossSlidingState extends js.Object
-
+sealed trait CrossSlidingState extends StObject
 @JSGlobal("Windows.UI.Input.CrossSlidingState")
 @js.native
-object CrossSlidingState extends js.Object {
-  @js.native
-  sealed trait completed extends CrossSlidingState
+object CrossSlidingState extends StObject {
   
   @js.native
-  sealed trait dragging extends CrossSlidingState
+  sealed trait completed
+    extends StObject
+       with CrossSlidingState
   
   @js.native
-  sealed trait rearranging extends CrossSlidingState
+  sealed trait dragging
+    extends StObject
+       with CrossSlidingState
   
   @js.native
-  sealed trait selectSpeedBumping extends CrossSlidingState
+  sealed trait rearranging
+    extends StObject
+       with CrossSlidingState
   
   @js.native
-  sealed trait selecting extends CrossSlidingState
+  sealed trait selectSpeedBumping
+    extends StObject
+       with CrossSlidingState
   
   @js.native
-  sealed trait speedBumping extends CrossSlidingState
+  sealed trait selecting
+    extends StObject
+       with CrossSlidingState
   
   @js.native
-  sealed trait started extends CrossSlidingState
+  sealed trait speedBumping
+    extends StObject
+       with CrossSlidingState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CrossSlidingState with Double] = js.native
-  /* 6 */ @js.native
-  object completed extends TopLevel[completed with Double]
-  
-  /* 1 */ @js.native
-  object dragging extends TopLevel[dragging with Double]
-  
-  /* 5 */ @js.native
-  object rearranging extends TopLevel[rearranging with Double]
-  
-  /* 3 */ @js.native
-  object selectSpeedBumping extends TopLevel[selectSpeedBumping with Double]
-  
-  /* 2 */ @js.native
-  object selecting extends TopLevel[selecting with Double]
-  
-  /* 4 */ @js.native
-  object speedBumping extends TopLevel[speedBumping with Double]
-  
-  /* 0 */ @js.native
-  object started extends TopLevel[started with Double]
-  
+  @js.native
+  sealed trait started
+    extends StObject
+       with CrossSlidingState
 }
-

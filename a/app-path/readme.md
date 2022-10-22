@@ -1,7 +1,7 @@
 
 # Scala.js typings for app-path
 
-Typings are for version 3.2.0
+Typings are for version 4.0.0
 
 ## Library description:
 Get the path to an app (macOS)
@@ -10,15 +10,12 @@ Get the path to an app (macOS)
 | ------------------ | :-------------: |
 | Full name          | app-path |
 | Keywords           | macos, applescript, app, application, path, directory, bundle, location |
-| # releases         | 4 |
-| # dependents       | 12 |
-| # downloads        | 1221975 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 971269.0 |
+| # stars            | 57.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/app-path#readme)
-- [Bugs](https://github.com/sindresorhus/app-path/issues)
-- [Repository](https://github.com/sindresorhus/app-path)
 - [Npm](https://www.npmjs.com/package/app-path)
     
 

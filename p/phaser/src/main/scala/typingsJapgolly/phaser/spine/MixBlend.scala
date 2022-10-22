@@ -1,41 +1,32 @@
 package typingsJapgolly.phaser.spine
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MixBlend extends js.Object
-
+sealed trait MixBlend extends StObject
 @JSGlobal("spine.MixBlend")
 @js.native
-object MixBlend extends js.Object {
-  @js.native
-  sealed trait add extends MixBlend
+object MixBlend extends StObject {
   
   @js.native
-  sealed trait first extends MixBlend
+  sealed trait add
+    extends StObject
+       with MixBlend
   
   @js.native
-  sealed trait replace extends MixBlend
+  sealed trait first
+    extends StObject
+       with MixBlend
   
   @js.native
-  sealed trait setup extends MixBlend
+  sealed trait replace
+    extends StObject
+       with MixBlend
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MixBlend with Double] = js.native
-  /* 3 */ @js.native
-  object add extends TopLevel[add with Double]
-  
-  /* 1 */ @js.native
-  object first extends TopLevel[first with Double]
-  
-  /* 2 */ @js.native
-  object replace extends TopLevel[replace with Double]
-  
-  /* 0 */ @js.native
-  object setup extends TopLevel[setup with Double]
-  
+  @js.native
+  sealed trait setup
+    extends StObject
+       with MixBlend
 }
-

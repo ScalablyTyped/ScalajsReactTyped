@@ -1,20 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IosStoreAppAssignmentSettings extends MobileAppAssignmentSettings {
+trait IosStoreAppAssignmentSettings
+  extends StObject
+     with MobileAppAssignmentSettings {
+  
   // The VPN Configuration Id to apply for this app.
-  var vpnConfigurationId: js.UndefOr[String] = js.undefined
+  var vpnConfigurationId: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object IosStoreAppAssignmentSettings {
-  @scala.inline
-  def apply(vpnConfigurationId: String = null): IosStoreAppAssignmentSettings = {
+  
+  inline def apply(): IosStoreAppAssignmentSettings = {
     val __obj = js.Dynamic.literal()
-    if (vpnConfigurationId != null) __obj.updateDynamic("vpnConfigurationId")(vpnConfigurationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosStoreAppAssignmentSettings]
   }
+  
+  extension [Self <: IosStoreAppAssignmentSettings](x: Self) {
+    
+    inline def setVpnConfigurationId(value: NullableOption[String]): Self = StObject.set(x, "vpnConfigurationId", value.asInstanceOf[js.Any])
+    
+    inline def setVpnConfigurationIdNull: Self = StObject.set(x, "vpnConfigurationId", null)
+    
+    inline def setVpnConfigurationIdUndefined: Self = StObject.set(x, "vpnConfigurationId", js.undefined)
+  }
 }
-

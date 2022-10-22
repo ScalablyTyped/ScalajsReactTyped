@@ -1,53 +1,41 @@
 package typingsJapgolly.rsocketTypes.reactiveSocketTypesMod
 
-import typingsJapgolly.rsocketTypes.rsocketTypesStrings.CLOSED
-import typingsJapgolly.rsocketTypes.rsocketTypesStrings.CONNECTED
-import typingsJapgolly.rsocketTypes.rsocketTypesStrings.CONNECTING
-import typingsJapgolly.rsocketTypes.rsocketTypesStrings.ERROR
-import typingsJapgolly.rsocketTypes.rsocketTypesStrings.NOT_CONNECTED
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.rsocketTypes.AnonKind
-  - typingsJapgolly.rsocketTypes.Anon0
-  - typingsJapgolly.rsocketTypes.Anon1
-  - typingsJapgolly.rsocketTypes.Anon2
-  - typingsJapgolly.rsocketTypes.AnonError
+  - typingsJapgolly.rsocketTypes.anon.Kind
+  - typingsJapgolly.rsocketTypes.anon.`0`
+  - typingsJapgolly.rsocketTypes.anon.`1`
+  - typingsJapgolly.rsocketTypes.anon.`2`
+  - typingsJapgolly.rsocketTypes.anon.Error
 */
-trait ConnectionStatus extends js.Object
-
+trait ConnectionStatus extends StObject
 object ConnectionStatus {
-  @scala.inline
-  def AnonKind(kind: NOT_CONNECTED): ConnectionStatus = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[ConnectionStatus]
+  inline def `0`(): typingsJapgolly.rsocketTypes.anon.`0` = {
+    val __obj = js.Dynamic.literal(kind = "CONNECTING")
+    __obj.asInstanceOf[typingsJapgolly.rsocketTypes.anon.`0`]
   }
-  @scala.inline
-  def Anon2(kind: CLOSED): ConnectionStatus = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[ConnectionStatus]
+  inline def `1`(): typingsJapgolly.rsocketTypes.anon.`1` = {
+    val __obj = js.Dynamic.literal(kind = "CONNECTED")
+    __obj.asInstanceOf[typingsJapgolly.rsocketTypes.anon.`1`]
   }
-  @scala.inline
-  def AnonError(error: js.Error, kind: ERROR): ConnectionStatus = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[ConnectionStatus]
+  inline def `2`(): typingsJapgolly.rsocketTypes.anon.`2` = {
+    val __obj = js.Dynamic.literal(kind = "CLOSED")
+    __obj.asInstanceOf[typingsJapgolly.rsocketTypes.anon.`2`]
   }
-  @scala.inline
-  def Anon0(kind: CONNECTING): ConnectionStatus = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[ConnectionStatus]
+  inline def Error(error: js.Error): typingsJapgolly.rsocketTypes.anon.Error = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], kind = "ERROR")
+    __obj.asInstanceOf[typingsJapgolly.rsocketTypes.anon.Error]
   }
-  @scala.inline
-  def Anon1(kind: CONNECTED): ConnectionStatus = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[ConnectionStatus]
+  inline def Kind(): typingsJapgolly.rsocketTypes.anon.Kind = {
+    val __obj = js.Dynamic.literal(kind = "NOT_CONNECTED")
+    __obj.asInstanceOf[typingsJapgolly.rsocketTypes.anon.Kind]
   }
 }
-

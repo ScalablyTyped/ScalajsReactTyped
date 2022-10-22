@@ -1,33 +1,48 @@
 package typingsJapgolly.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResultProcessingOptions extends js.Object {
+trait ResultProcessingOptions extends StObject {
+  
   var build: js.UndefOr[Boolean] = js.undefined
+  
   var decompose: js.UndefOr[DecomposeOptions] = js.undefined
+  
   var document: js.UndefOr[Boolean] = js.undefined
+  
   var single: js.UndefOr[Boolean] = js.undefined
+  
   var stream: js.UndefOr[Boolean] = js.undefined
 }
-
 object ResultProcessingOptions {
-  @scala.inline
-  def apply(
-    build: js.UndefOr[Boolean] = js.undefined,
-    decompose: DecomposeOptions = null,
-    document: js.UndefOr[Boolean] = js.undefined,
-    single: js.UndefOr[Boolean] = js.undefined,
-    stream: js.UndefOr[Boolean] = js.undefined
-  ): ResultProcessingOptions = {
+  
+  inline def apply(): ResultProcessingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(build)) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
-    if (decompose != null) __obj.updateDynamic("decompose")(decompose.asInstanceOf[js.Any])
-    if (!js.isUndefined(document)) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
-    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultProcessingOptions]
   }
+  
+  extension [Self <: ResultProcessingOptions](x: Self) {
+    
+    inline def setBuild(value: Boolean): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    
+    inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    
+    inline def setDecompose(value: DecomposeOptions): Self = StObject.set(x, "decompose", value.asInstanceOf[js.Any])
+    
+    inline def setDecomposeUndefined: Self = StObject.set(x, "decompose", js.undefined)
+    
+    inline def setDocument(value: Boolean): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    
+    inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+    
+    inline def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
+    
+    inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+  }
 }
-

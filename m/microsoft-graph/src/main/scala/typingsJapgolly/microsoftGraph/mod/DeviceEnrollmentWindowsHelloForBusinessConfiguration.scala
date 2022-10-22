@@ -1,82 +1,150 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollmentConfiguration {
-  // Not yet documented. Possible values are: notConfigured, enabled, disabled.
+trait DeviceEnrollmentWindowsHelloForBusinessConfiguration
+  extends StObject
+     with DeviceEnrollmentConfiguration {
+  
+  /**
+    * Controls the ability to use the anti-spoofing features for facial recognition on devices which support it. If set to
+    * disabled, anti-spoofing features are not allowed. If set to Not Configured, the user can choose whether they want to
+    * use anti-spoofing. Possible values are: notConfigured, enabled, disabled.
+    */
   var enhancedBiometricsState: js.UndefOr[Enablement] = js.undefined
-  // Not yet documented
+  
+  /**
+    * Controls the period of time (in days) that a PIN can be used before the system requires the user to change it. This
+    * must be set between 0 and 730, inclusive. If set to 0, the user's PIN will never expire
+    */
   var pinExpirationInDays: js.UndefOr[Double] = js.undefined
-  // Not yet documented. Possible values are: allowed, required, disallowed.
+  
+  /**
+    * Controls the ability to use lowercase letters in the Windows Hello for Business PIN. Allowed permits the use of
+    * lowercase letter(s), whereas Required ensures they are present. If set to Not Allowed, lowercase letters will not be
+    * permitted. Possible values are: allowed, required, disallowed.
+    */
   var pinLowercaseCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.undefined
-  // Not yet documented
+  
+  /**
+    * Controls the maximum number of characters allowed for the Windows Hello for Business PIN. This value must be between 4
+    * and 127, inclusive. This value must be greater than or equal to the value set for the minimum PIN.
+    */
   var pinMaximumLength: js.UndefOr[Double] = js.undefined
-  // Not yet documented
+  
+  /**
+    * Controls the minimum number of characters required for the Windows Hello for Business PIN. This value must be between 4
+    * and 127, inclusive, and less than or equal to the value set for the maximum PIN.
+    */
   var pinMinimumLength: js.UndefOr[Double] = js.undefined
-  // Not yet documented
+  
+  /**
+    * Controls the ability to prevent users from using past PINs. This must be set between 0 and 50, inclusive, and the
+    * current PIN of the user is included in that count. If set to 0, previous PINs are not stored. PIN history is not
+    * preserved through a PIN reset.
+    */
   var pinPreviousBlockCount: js.UndefOr[Double] = js.undefined
-  // Not yet documented. Possible values are: allowed, required, disallowed.
+  
+  /**
+    * Controls the ability to use special characters in the Windows Hello for Business PIN. Allowed permits the use of
+    * special character(s), whereas Required ensures they are present. If set to Not Allowed, special character(s) will not
+    * be permitted. Possible values are: allowed, required, disallowed.
+    */
   var pinSpecialCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.undefined
-  // Not yet documented. Possible values are: allowed, required, disallowed.
+  
+  /**
+    * Controls the ability to use uppercase letters in the Windows Hello for Business PIN. Allowed permits the use of
+    * uppercase letter(s), whereas Required ensures they are present. If set to Not Allowed, uppercase letters will not be
+    * permitted. Possible values are: allowed, required, disallowed.
+    */
   var pinUppercaseCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.undefined
-  // Not yet documented
+  
+  /**
+    * Controls the use of Remote Windows Hello for Business. Remote Windows Hello for Business provides the ability for a
+    * portable, registered device to be usable as a companion for desktop authentication. The desktop must be Azure AD joined
+    * and the companion device must have a Windows Hello for Business PIN.
+    */
   var remotePassportEnabled: js.UndefOr[Boolean] = js.undefined
-  // Not yet documented
+  
+  /**
+    * Controls whether to require a Trusted Platform Module (TPM) for provisioning Windows Hello for Business. A TPM provides
+    * an additional security benefit in that data stored on it cannot be used on other devices. If set to False, all devices
+    * can provision Windows Hello for Business even if there is not a usable TPM.
+    */
   var securityDeviceRequired: js.UndefOr[Boolean] = js.undefined
-  // Not yet documented. Possible values are: notConfigured, enabled, disabled.
+  
+  /**
+    * Controls whether to allow the device to be configured for Windows Hello for Business. If set to disabled, the user
+    * cannot provision Windows Hello for Business except on Azure Active Directory joined mobile phones if otherwise
+    * required. If set to Not Configured, Intune will not override client defaults. Possible values are: notConfigured,
+    * enabled, disabled.
+    */
   var state: js.UndefOr[Enablement] = js.undefined
-  // Not yet documented
+  
+  /**
+    * Controls the use of biometric gestures, such as face and fingerprint, as an alternative to the Windows Hello for
+    * Business PIN. If set to False, biometric gestures are not allowed. Users must still configure a PIN as a backup in case
+    * of failures.
+    */
   var unlockWithBiometricsEnabled: js.UndefOr[Boolean] = js.undefined
 }
-
 object DeviceEnrollmentWindowsHelloForBusinessConfiguration {
-  @scala.inline
-  def apply(
-    assignments: js.Array[EnrollmentConfigurationAssignment] = null,
-    createdDateTime: String = null,
-    description: String = null,
-    displayName: String = null,
-    enhancedBiometricsState: Enablement = null,
-    id: String = null,
-    lastModifiedDateTime: String = null,
-    pinExpirationInDays: Int | Double = null,
-    pinLowercaseCharactersUsage: WindowsHelloForBusinessPinUsage = null,
-    pinMaximumLength: Int | Double = null,
-    pinMinimumLength: Int | Double = null,
-    pinPreviousBlockCount: Int | Double = null,
-    pinSpecialCharactersUsage: WindowsHelloForBusinessPinUsage = null,
-    pinUppercaseCharactersUsage: WindowsHelloForBusinessPinUsage = null,
-    priority: Int | Double = null,
-    remotePassportEnabled: js.UndefOr[Boolean] = js.undefined,
-    securityDeviceRequired: js.UndefOr[Boolean] = js.undefined,
-    state: Enablement = null,
-    unlockWithBiometricsEnabled: js.UndefOr[Boolean] = js.undefined,
-    version: Int | Double = null
-  ): DeviceEnrollmentWindowsHelloForBusinessConfiguration = {
+  
+  inline def apply(): DeviceEnrollmentWindowsHelloForBusinessConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (enhancedBiometricsState != null) __obj.updateDynamic("enhancedBiometricsState")(enhancedBiometricsState.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (pinExpirationInDays != null) __obj.updateDynamic("pinExpirationInDays")(pinExpirationInDays.asInstanceOf[js.Any])
-    if (pinLowercaseCharactersUsage != null) __obj.updateDynamic("pinLowercaseCharactersUsage")(pinLowercaseCharactersUsage.asInstanceOf[js.Any])
-    if (pinMaximumLength != null) __obj.updateDynamic("pinMaximumLength")(pinMaximumLength.asInstanceOf[js.Any])
-    if (pinMinimumLength != null) __obj.updateDynamic("pinMinimumLength")(pinMinimumLength.asInstanceOf[js.Any])
-    if (pinPreviousBlockCount != null) __obj.updateDynamic("pinPreviousBlockCount")(pinPreviousBlockCount.asInstanceOf[js.Any])
-    if (pinSpecialCharactersUsage != null) __obj.updateDynamic("pinSpecialCharactersUsage")(pinSpecialCharactersUsage.asInstanceOf[js.Any])
-    if (pinUppercaseCharactersUsage != null) __obj.updateDynamic("pinUppercaseCharactersUsage")(pinUppercaseCharactersUsage.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(remotePassportEnabled)) __obj.updateDynamic("remotePassportEnabled")(remotePassportEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(securityDeviceRequired)) __obj.updateDynamic("securityDeviceRequired")(securityDeviceRequired.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(unlockWithBiometricsEnabled)) __obj.updateDynamic("unlockWithBiometricsEnabled")(unlockWithBiometricsEnabled.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceEnrollmentWindowsHelloForBusinessConfiguration]
   }
+  
+  extension [Self <: DeviceEnrollmentWindowsHelloForBusinessConfiguration](x: Self) {
+    
+    inline def setEnhancedBiometricsState(value: Enablement): Self = StObject.set(x, "enhancedBiometricsState", value.asInstanceOf[js.Any])
+    
+    inline def setEnhancedBiometricsStateUndefined: Self = StObject.set(x, "enhancedBiometricsState", js.undefined)
+    
+    inline def setPinExpirationInDays(value: Double): Self = StObject.set(x, "pinExpirationInDays", value.asInstanceOf[js.Any])
+    
+    inline def setPinExpirationInDaysUndefined: Self = StObject.set(x, "pinExpirationInDays", js.undefined)
+    
+    inline def setPinLowercaseCharactersUsage(value: WindowsHelloForBusinessPinUsage): Self = StObject.set(x, "pinLowercaseCharactersUsage", value.asInstanceOf[js.Any])
+    
+    inline def setPinLowercaseCharactersUsageUndefined: Self = StObject.set(x, "pinLowercaseCharactersUsage", js.undefined)
+    
+    inline def setPinMaximumLength(value: Double): Self = StObject.set(x, "pinMaximumLength", value.asInstanceOf[js.Any])
+    
+    inline def setPinMaximumLengthUndefined: Self = StObject.set(x, "pinMaximumLength", js.undefined)
+    
+    inline def setPinMinimumLength(value: Double): Self = StObject.set(x, "pinMinimumLength", value.asInstanceOf[js.Any])
+    
+    inline def setPinMinimumLengthUndefined: Self = StObject.set(x, "pinMinimumLength", js.undefined)
+    
+    inline def setPinPreviousBlockCount(value: Double): Self = StObject.set(x, "pinPreviousBlockCount", value.asInstanceOf[js.Any])
+    
+    inline def setPinPreviousBlockCountUndefined: Self = StObject.set(x, "pinPreviousBlockCount", js.undefined)
+    
+    inline def setPinSpecialCharactersUsage(value: WindowsHelloForBusinessPinUsage): Self = StObject.set(x, "pinSpecialCharactersUsage", value.asInstanceOf[js.Any])
+    
+    inline def setPinSpecialCharactersUsageUndefined: Self = StObject.set(x, "pinSpecialCharactersUsage", js.undefined)
+    
+    inline def setPinUppercaseCharactersUsage(value: WindowsHelloForBusinessPinUsage): Self = StObject.set(x, "pinUppercaseCharactersUsage", value.asInstanceOf[js.Any])
+    
+    inline def setPinUppercaseCharactersUsageUndefined: Self = StObject.set(x, "pinUppercaseCharactersUsage", js.undefined)
+    
+    inline def setRemotePassportEnabled(value: Boolean): Self = StObject.set(x, "remotePassportEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setRemotePassportEnabledUndefined: Self = StObject.set(x, "remotePassportEnabled", js.undefined)
+    
+    inline def setSecurityDeviceRequired(value: Boolean): Self = StObject.set(x, "securityDeviceRequired", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityDeviceRequiredUndefined: Self = StObject.set(x, "securityDeviceRequired", js.undefined)
+    
+    inline def setState(value: Enablement): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setUnlockWithBiometricsEnabled(value: Boolean): Self = StObject.set(x, "unlockWithBiometricsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setUnlockWithBiometricsEnabledUndefined: Self = StObject.set(x, "unlockWithBiometricsEnabled", js.undefined)
+  }
 }
-

@@ -1,28 +1,33 @@
 package typingsJapgolly.lodashDecorators
 
 import typingsJapgolly.lodashDecorators.applicatorsMod.Applicator
-import typingsJapgolly.lodashDecorators.commonMod.InstanceChainData
-import typingsJapgolly.lodashDecorators.decoratorConfigMod.DecoratorConfigOptions
+import typingsJapgolly.lodashDecorators.factoryCommonMod.InstanceChainData
+import typingsJapgolly.lodashDecorators.factoryDecoratorConfigMod.DecoratorConfigOptions
 import typingsJapgolly.lodashDecorators.utilsMod.CompositeKeyWeakMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-decorators/factory", JSImport.Namespace)
-@js.native
-object factoryMod extends js.Object {
+object factoryMod {
+  
+  @JSImport("lodash-decorators/factory", "DecoratorConfig")
   @js.native
-  class DecoratorConfig protected ()
-    extends typingsJapgolly.lodashDecorators.decoratorConfigMod.DecoratorConfig {
+  open class DecoratorConfig protected ()
+    extends typingsJapgolly.lodashDecorators.factoryDecoratorConfigMod.DecoratorConfig {
     def this(execute: js.Function, applicator: Applicator) = this()
     def this(execute: js.Function, applicator: Applicator, options: DecoratorConfigOptions) = this()
   }
   
+  @JSImport("lodash-decorators/factory", "DecoratorFactory")
   @js.native
-  class InternalDecoratorFactory ()
-    extends typingsJapgolly.lodashDecorators.decoratorFactoryMod.InternalDecoratorFactory
+  val DecoratorFactory: typingsJapgolly.lodashDecorators.factoryDecoratorFactoryMod.InternalDecoratorFactory = js.native
   
-  val DecoratorFactory: typingsJapgolly.lodashDecorators.decoratorFactoryMod.InternalDecoratorFactory = js.native
+  @JSImport("lodash-decorators/factory", "InstanceChainMap")
+  @js.native
   val InstanceChainMap: CompositeKeyWeakMap[InstanceChainData] = js.native
+  
+  @JSImport("lodash-decorators/factory", "InternalDecoratorFactory")
+  @js.native
+  open class InternalDecoratorFactory ()
+    extends typingsJapgolly.lodashDecorators.factoryDecoratorFactoryMod.InternalDecoratorFactory
 }
-

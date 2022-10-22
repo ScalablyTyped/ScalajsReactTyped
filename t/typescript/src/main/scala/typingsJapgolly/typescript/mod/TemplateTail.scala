@@ -1,16 +1,18 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TemplateTail
-  extends TemplateLiteralLikeNode
-     with TemplateLiteralToken {
+  extends StObject
+     with TemplateLiteralLikeNode
+     with PseudoLiteralToken {
+  
   @JSName("kind")
-  var kind_TemplateTail: typingsJapgolly.typescript.mod.SyntaxKind.TemplateTail = js.native
+  val kind_TemplateTail: typingsJapgolly.typescript.mod.SyntaxKind.TemplateTail = js.native
+  
   @JSName("parent")
-  var parent_TemplateTail: TemplateSpan = js.native
+  val parent_TemplateTail: TemplateSpan | TemplateLiteralTypeSpan = js.native
 }
-

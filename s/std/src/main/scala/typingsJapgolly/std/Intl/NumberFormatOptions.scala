@@ -1,48 +1,145 @@
 package typingsJapgolly.std.Intl
 
+import typingsJapgolly.std.stdStrings.always
+import typingsJapgolly.std.stdStrings.auto
+import typingsJapgolly.std.stdStrings.compact
+import typingsJapgolly.std.stdStrings.engineering
+import typingsJapgolly.std.stdStrings.exceptZero
+import typingsJapgolly.std.stdStrings.long
+import typingsJapgolly.std.stdStrings.narrow
+import typingsJapgolly.std.stdStrings.never
+import typingsJapgolly.std.stdStrings.scientific
+import typingsJapgolly.std.stdStrings.short
+import typingsJapgolly.std.stdStrings.standard
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NumberFormatOptions extends js.Object {
+trait NumberFormatOptions extends StObject {
+  
+  /* standard es2020.intl */
+  var compactDisplay: js.UndefOr[short | long] = js.undefined
+  
+  /* standard es5 */
   var currency: js.UndefOr[String] = js.undefined
+  
+  /* standard es2020.intl */
   var currencyDisplay: js.UndefOr[String] = js.undefined
+  
+  /* standard es5 */
+  /* standard es2020.intl */
+  /* standard es2020.intl */
+  /* standard es2020.intl */
+  /* standard es2020.intl */
+  var currencySign: js.UndefOr[String] = js.undefined
+  
+  /* standard es5 */
   var localeMatcher: js.UndefOr[String] = js.undefined
+  
+  /* standard es5 */
   var maximumFractionDigits: js.UndefOr[Double] = js.undefined
+  
+  /* standard es5 */
   var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
+  
+  /* standard es5 */
   var minimumFractionDigits: js.UndefOr[Double] = js.undefined
+  
+  /* standard es5 */
   var minimumIntegerDigits: js.UndefOr[Double] = js.undefined
+  
+  /* standard es5 */
   var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
+  
+  /* standard es2020.intl */
+  var notation: js.UndefOr[standard | scientific | engineering | compact] = js.undefined
+  
+  /* standard es2020.intl */
+  var signDisplay: js.UndefOr[auto | never | always | exceptZero] = js.undefined
+  
+  /* standard es5 */
   var style: js.UndefOr[String] = js.undefined
+  
+  /* standard es2020.intl */
+  var unit: js.UndefOr[String] = js.undefined
+  
+  /* standard es2020.intl */
+  var unitDisplay: js.UndefOr[short | long | narrow] = js.undefined
+  
+  /* standard es5 */
   var useGrouping: js.UndefOr[Boolean] = js.undefined
 }
-
 object NumberFormatOptions {
-  @scala.inline
-  def apply(
-    currency: String = null,
-    currencyDisplay: String = null,
-    localeMatcher: String = null,
-    maximumFractionDigits: Int | Double = null,
-    maximumSignificantDigits: Int | Double = null,
-    minimumFractionDigits: Int | Double = null,
-    minimumIntegerDigits: Int | Double = null,
-    minimumSignificantDigits: Int | Double = null,
-    style: String = null,
-    useGrouping: js.UndefOr[Boolean] = js.undefined
-  ): NumberFormatOptions = {
+  
+  inline def apply(): NumberFormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (currencyDisplay != null) __obj.updateDynamic("currencyDisplay")(currencyDisplay.asInstanceOf[js.Any])
-    if (localeMatcher != null) __obj.updateDynamic("localeMatcher")(localeMatcher.asInstanceOf[js.Any])
-    if (maximumFractionDigits != null) __obj.updateDynamic("maximumFractionDigits")(maximumFractionDigits.asInstanceOf[js.Any])
-    if (maximumSignificantDigits != null) __obj.updateDynamic("maximumSignificantDigits")(maximumSignificantDigits.asInstanceOf[js.Any])
-    if (minimumFractionDigits != null) __obj.updateDynamic("minimumFractionDigits")(minimumFractionDigits.asInstanceOf[js.Any])
-    if (minimumIntegerDigits != null) __obj.updateDynamic("minimumIntegerDigits")(minimumIntegerDigits.asInstanceOf[js.Any])
-    if (minimumSignificantDigits != null) __obj.updateDynamic("minimumSignificantDigits")(minimumSignificantDigits.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGrouping)) __obj.updateDynamic("useGrouping")(useGrouping.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFormatOptions]
   }
+  
+  extension [Self <: NumberFormatOptions](x: Self) {
+    
+    inline def setCompactDisplay(value: short | long): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setCompactDisplayUndefined: Self = StObject.set(x, "compactDisplay", js.undefined)
+    
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    
+    inline def setCurrencyDisplay(value: String): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
+    
+    inline def setCurrencySign(value: String): Self = StObject.set(x, "currencySign", value.asInstanceOf[js.Any])
+    
+    inline def setCurrencySignUndefined: Self = StObject.set(x, "currencySign", js.undefined)
+    
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    
+    inline def setLocaleMatcher(value: String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+    
+    inline def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
+    
+    inline def setMaximumFractionDigitsUndefined: Self = StObject.set(x, "maximumFractionDigits", js.undefined)
+    
+    inline def setMaximumSignificantDigits(value: Double): Self = StObject.set(x, "maximumSignificantDigits", value.asInstanceOf[js.Any])
+    
+    inline def setMaximumSignificantDigitsUndefined: Self = StObject.set(x, "maximumSignificantDigits", js.undefined)
+    
+    inline def setMinimumFractionDigits(value: Double): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
+    
+    inline def setMinimumFractionDigitsUndefined: Self = StObject.set(x, "minimumFractionDigits", js.undefined)
+    
+    inline def setMinimumIntegerDigits(value: Double): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
+    
+    inline def setMinimumIntegerDigitsUndefined: Self = StObject.set(x, "minimumIntegerDigits", js.undefined)
+    
+    inline def setMinimumSignificantDigits(value: Double): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
+    
+    inline def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
+    
+    inline def setNotation(value: standard | scientific | engineering | compact): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
+    
+    inline def setNotationUndefined: Self = StObject.set(x, "notation", js.undefined)
+    
+    inline def setSignDisplay(value: auto | never | always | exceptZero): Self = StObject.set(x, "signDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setSignDisplayUndefined: Self = StObject.set(x, "signDisplay", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    
+    inline def setUnitDisplay(value: short | long | narrow): Self = StObject.set(x, "unitDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setUnitDisplayUndefined: Self = StObject.set(x, "unitDisplay", js.undefined)
+    
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    
+    inline def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+    
+    inline def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
+  }
 }
-

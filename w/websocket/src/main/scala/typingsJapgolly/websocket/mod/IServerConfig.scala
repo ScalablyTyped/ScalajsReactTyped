@@ -1,11 +1,18 @@
 package typingsJapgolly.websocket.mod
 
+import org.scalablytyped.runtime.Instantiable1
+import typingsJapgolly.node.httpMod.IncomingMessage
 import typingsJapgolly.node.httpMod.Server
+import typingsJapgolly.node.httpMod.ServerResponse
+import typingsJapgolly.node.nodeColonnetMod.Socket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IServerConfig extends IConfig {
+trait IServerConfig
+  extends StObject
+     with IConfig {
+  
   /**
     * If this is true, websocket connections will be accepted regardless of the path
     * and protocol specified by the client. The protocol accepted will be the first
@@ -13,13 +20,7 @@ trait IServerConfig extends IConfig {
     * @default false
     */
   var autoAcceptConnections: js.UndefOr[Boolean] = js.undefined
-  /**
-    * The Nagle Algorithm makes more efficient use of network resources by introducing a
-    * small delay before sending small packets so that multiple messages can be batched
-    * together before going onto the wire. This however comes at the cost of latency.
-    * @default true
-    */
-  var disableNagleAlgorithm: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If true, the server will consider any connection that has not received any
     * data within the amount of time specified by `keepaliveGracePeriod` after a
@@ -27,8 +28,36 @@ trait IServerConfig extends IConfig {
     * @default true
     */
   var dropConnectionOnKeepaliveTimeout: js.UndefOr[Boolean] = js.undefined
+  
   /** The http or https server instance(s) to attach to */
-  var httpServer: Server | typingsJapgolly.node.httpsMod.Server | (js.Array[Server | typingsJapgolly.node.httpsMod.Server])
+  var httpServer: (Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ]) | (typingsJapgolly.node.httpsMod.Server[
+    Instantiable1[/* socket */ Socket, typingsJapgolly.node.nodeColonhttpMod.IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      typingsJapgolly.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
+    ]
+  ]) | (js.Array[
+    (Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ]) | (typingsJapgolly.node.httpsMod.Server[
+      Instantiable1[/* socket */ Socket, typingsJapgolly.node.nodeColonhttpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typingsJapgolly.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
+      ]
+    ])
+  ])
+  
   /**
     * Whether or not the X-Forwarded-For header should be respected.
     * It's important to set this to 'true' when accepting connections
@@ -40,6 +69,7 @@ trait IServerConfig extends IConfig {
     * @default false
     */
   var ignoreXForwardedFor: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If true, the server will automatically send a ping to all clients every
     * `keepaliveInterval` milliseconds. Each client has an independent `keepalive`
@@ -47,6 +77,7 @@ trait IServerConfig extends IConfig {
     * @default true
     */
   var keepalive: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The amount of time to wait after sending a `keepalive` ping before closing
     * the connection if the connected peer does not respond. Ignored if `keepalive`
@@ -55,11 +86,13 @@ trait IServerConfig extends IConfig {
     * @default 10000
     */
   var keepaliveGracePeriod: js.UndefOr[Double] = js.undefined
+  
   /**
     * The interval in milliseconds to send `keepalive` pings to connected clients.
     * @default 20000
     */
   var keepaliveInterval: js.UndefOr[Double] = js.undefined
+  
   /**
     * Whether to use native TCP keep-alive instead of WebSockets ping
     * and pong packets.  Native TCP keep-alive sends smaller packets
@@ -72,42 +105,115 @@ trait IServerConfig extends IConfig {
     */
   var useNativeKeepalive: js.UndefOr[Boolean] = js.undefined
 }
-
 object IServerConfig {
-  @scala.inline
-  def apply(
-    httpServer: Server | typingsJapgolly.node.httpsMod.Server | (js.Array[Server | typingsJapgolly.node.httpsMod.Server]),
-    assembleFragments: js.UndefOr[Boolean] = js.undefined,
-    autoAcceptConnections: js.UndefOr[Boolean] = js.undefined,
-    closeTimeout: Int | Double = null,
-    disableNagleAlgorithm: js.UndefOr[Boolean] = js.undefined,
-    dropConnectionOnKeepaliveTimeout: js.UndefOr[Boolean] = js.undefined,
-    fragmentOutgoingMessages: js.UndefOr[Boolean] = js.undefined,
-    fragmentationThreshold: Int | Double = null,
-    ignoreXForwardedFor: js.UndefOr[Boolean] = js.undefined,
-    keepalive: js.UndefOr[Boolean] = js.undefined,
-    keepaliveGracePeriod: Int | Double = null,
-    keepaliveInterval: Int | Double = null,
-    maxReceivedFrameSize: Int | Double = null,
-    maxReceivedMessageSize: Int | Double = null,
-    useNativeKeepalive: js.UndefOr[Boolean] = js.undefined
+  
+  inline def apply(
+    httpServer: (Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ]) | (typingsJapgolly.node.httpsMod.Server[
+      Instantiable1[/* socket */ Socket, typingsJapgolly.node.nodeColonhttpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typingsJapgolly.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
+      ]
+    ]) | (js.Array[
+      (Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ]) | (typingsJapgolly.node.httpsMod.Server[
+        Instantiable1[/* socket */ Socket, typingsJapgolly.node.nodeColonhttpMod.IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          typingsJapgolly.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
+        ]
+      ])
+    ])
   ): IServerConfig = {
     val __obj = js.Dynamic.literal(httpServer = httpServer.asInstanceOf[js.Any])
-    if (!js.isUndefined(assembleFragments)) __obj.updateDynamic("assembleFragments")(assembleFragments.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoAcceptConnections)) __obj.updateDynamic("autoAcceptConnections")(autoAcceptConnections.asInstanceOf[js.Any])
-    if (closeTimeout != null) __obj.updateDynamic("closeTimeout")(closeTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableNagleAlgorithm)) __obj.updateDynamic("disableNagleAlgorithm")(disableNagleAlgorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropConnectionOnKeepaliveTimeout)) __obj.updateDynamic("dropConnectionOnKeepaliveTimeout")(dropConnectionOnKeepaliveTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(fragmentOutgoingMessages)) __obj.updateDynamic("fragmentOutgoingMessages")(fragmentOutgoingMessages.asInstanceOf[js.Any])
-    if (fragmentationThreshold != null) __obj.updateDynamic("fragmentationThreshold")(fragmentationThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreXForwardedFor)) __obj.updateDynamic("ignoreXForwardedFor")(ignoreXForwardedFor.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
-    if (keepaliveGracePeriod != null) __obj.updateDynamic("keepaliveGracePeriod")(keepaliveGracePeriod.asInstanceOf[js.Any])
-    if (keepaliveInterval != null) __obj.updateDynamic("keepaliveInterval")(keepaliveInterval.asInstanceOf[js.Any])
-    if (maxReceivedFrameSize != null) __obj.updateDynamic("maxReceivedFrameSize")(maxReceivedFrameSize.asInstanceOf[js.Any])
-    if (maxReceivedMessageSize != null) __obj.updateDynamic("maxReceivedMessageSize")(maxReceivedMessageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeKeepalive)) __obj.updateDynamic("useNativeKeepalive")(useNativeKeepalive.asInstanceOf[js.Any])
     __obj.asInstanceOf[IServerConfig]
   }
+  
+  extension [Self <: IServerConfig](x: Self) {
+    
+    inline def setAutoAcceptConnections(value: Boolean): Self = StObject.set(x, "autoAcceptConnections", value.asInstanceOf[js.Any])
+    
+    inline def setAutoAcceptConnectionsUndefined: Self = StObject.set(x, "autoAcceptConnections", js.undefined)
+    
+    inline def setDropConnectionOnKeepaliveTimeout(value: Boolean): Self = StObject.set(x, "dropConnectionOnKeepaliveTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setDropConnectionOnKeepaliveTimeoutUndefined: Self = StObject.set(x, "dropConnectionOnKeepaliveTimeout", js.undefined)
+    
+    inline def setHttpServer(
+      value: (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typingsJapgolly.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typingsJapgolly.node.nodeColonhttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typingsJapgolly.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
+          ]
+        ]) | (js.Array[
+          (Server[
+            Instantiable1[/* socket */ Socket, IncomingMessage], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              ServerResponse[IncomingMessage]
+            ]
+          ]) | (typingsJapgolly.node.httpsMod.Server[
+            Instantiable1[/* socket */ Socket, typingsJapgolly.node.nodeColonhttpMod.IncomingMessage], 
+            Instantiable1[
+              /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+              typingsJapgolly.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
+            ]
+          ])
+        ])
+    ): Self = StObject.set(x, "httpServer", value.asInstanceOf[js.Any])
+    
+    inline def setHttpServerVarargs(
+      value: ((Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typingsJapgolly.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typingsJapgolly.node.nodeColonhttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typingsJapgolly.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
+          ]
+        ]))*
+    ): Self = StObject.set(x, "httpServer", js.Array(value*))
+    
+    inline def setIgnoreXForwardedFor(value: Boolean): Self = StObject.set(x, "ignoreXForwardedFor", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreXForwardedForUndefined: Self = StObject.set(x, "ignoreXForwardedFor", js.undefined)
+    
+    inline def setKeepalive(value: Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
+    
+    inline def setKeepaliveGracePeriod(value: Double): Self = StObject.set(x, "keepaliveGracePeriod", value.asInstanceOf[js.Any])
+    
+    inline def setKeepaliveGracePeriodUndefined: Self = StObject.set(x, "keepaliveGracePeriod", js.undefined)
+    
+    inline def setKeepaliveInterval(value: Double): Self = StObject.set(x, "keepaliveInterval", value.asInstanceOf[js.Any])
+    
+    inline def setKeepaliveIntervalUndefined: Self = StObject.set(x, "keepaliveInterval", js.undefined)
+    
+    inline def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
+    
+    inline def setUseNativeKeepalive(value: Boolean): Self = StObject.set(x, "useNativeKeepalive", value.asInstanceOf[js.Any])
+    
+    inline def setUseNativeKeepaliveUndefined: Self = StObject.set(x, "useNativeKeepalive", js.undefined)
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__drawer
 
-Typings are for version 0.43
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components Web drawer component
@@ -10,10 +10,10 @@ The Material Components Web drawer component
 | ------------------ | :-------------: |
 | Full name          | @material/drawer |
 | Keywords           | material components, material design, navigation, drawer |
-| # releases         | 164 |
-| # dependents       | 54 |
-| # downloads        | 1285773 |
-| # stars            | 0 |
+| # releases         | 731 |
+| # dependents       | 0.0 |
+| # downloads        | 196460.66666666666 |
+| # stars            | 16411.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)
@@ -24,7 +24,7 @@ The Material Components Web drawer component
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

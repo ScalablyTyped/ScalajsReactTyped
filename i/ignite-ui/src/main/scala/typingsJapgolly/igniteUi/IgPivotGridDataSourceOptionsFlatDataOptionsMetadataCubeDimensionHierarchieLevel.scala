@@ -1,49 +1,54 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel
-  extends /**
-	 * Option for IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * A caption for the level.
-  	 */
+    * A caption for the level.
+    */
   var caption: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * A function called for each item of the data source array when level members are created.
-  	 * Based on the item parameter the function should return a value that will form the $.ig.Member's name and caption.
-  	 */
+    * A function called for each item of the data source array when level members are created.
+    * Based on the item parameter the function should return a value that will form the $.ig.Member's name and caption.
+    */
   var memberProvider: js.UndefOr[js.Function] = js.undefined
+  
   /**
-  	 * Optional="false" A name for the level.
-  	 * The unique name of the level is formed using the following pattern:
-  	 * {<hierarchy.uniqueName>}.[<levelMetadata.name>]
-  	 */
+    * Optional="false" A name for the level.
+    * The unique name of the level is formed using the following pattern:
+    * {<hierarchy.uniqueName>}.[<levelMetadata.name>]
+    */
   var name: js.UndefOr[String] = js.undefined
 }
-
 object IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    caption: String = null,
-    memberProvider: js.Function = null,
-    name: String = null
-  ): IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel = {
+  
+  inline def apply(): IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (memberProvider != null) __obj.updateDynamic("memberProvider")(memberProvider.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel]
   }
+  
+  extension [Self <: IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel](x: Self) {
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setMemberProvider(value: js.Function): Self = StObject.set(x, "memberProvider", value.asInstanceOf[js.Any])
+    
+    inline def setMemberProviderUndefined: Self = StObject.set(x, "memberProvider", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

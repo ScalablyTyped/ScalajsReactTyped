@@ -1,9 +1,8 @@
-package typingsJapgolly.tableau
+package typingsJapgolly.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object tableau {
-  type ListenerFunction[T /* <: typingsJapgolly.tableau.tableau.TableauEvent */] = js.Function1[/* event */ T, scala.Unit]
-}
+
+type ListenerFunction[T /* <: TableauEvent */] = js.Function1[/* event */ T, Unit]

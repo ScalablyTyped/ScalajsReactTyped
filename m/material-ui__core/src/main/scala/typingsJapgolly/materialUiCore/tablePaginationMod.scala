@@ -1,26 +1,33 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.tablePaginationTablePaginationMod.TablePaginationProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import typingsJapgolly.materialUiCore.tablePaginationTablePaginationMod.TablePaginationBaseProps
+import typingsJapgolly.materialUiCore.tablePaginationTablePaginationMod.TablePaginationTypeMap
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/TablePagination", JSImport.Namespace)
-@js.native
-object tablePaginationMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[TablePaginationProps, ComponentState, js.Any] {
-    def this(props: TablePaginationProps) = this()
-    def this(props: TablePaginationProps, context: js.Any) = this()
-  }
+object tablePaginationMod extends Shortcut {
   
+  /**
+    * A `TableCell` based component for placing inside `TableFooter` for pagination.
+    * Demos:
+    *
+    * - [Tables](https://mui.com/components/tables/)
+    *
+    * API:
+    *
+    * - [TablePagination API](https://mui.com/api/table-pagination/)
+    * - inherits [TableCell API](https://mui.com/api/table-cell/)
+    */
+  @JSImport("@material-ui/core/TablePagination", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[TablePaginationProps]]
+  val default: OverridableComponent[TablePaginationTypeMap[js.Object, ComponentType[TablePaginationBaseProps]]] = js.native
   
+  type _To = OverridableComponent[TablePaginationTypeMap[js.Object, ComponentType[TablePaginationBaseProps]]]
+  
+  /* This means you don't have to write `default`, but can instead just say `tablePaginationMod.foo` */
+  override def _to: OverridableComponent[TablePaginationTypeMap[js.Object, ComponentType[TablePaginationBaseProps]]] = default
 }
-

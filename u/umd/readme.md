@@ -10,10 +10,10 @@ Universal Module Definition for use in automated build systems
 | ------------------ | :-------------: |
 | Full name          | umd |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 31 |
-| # downloads        | 25743668 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5545566.333333333 |
+| # stars            | 140.0 |
 
 ## Links
 - [Homepage](https://github.com/ForbesLindesay/umd#readme)

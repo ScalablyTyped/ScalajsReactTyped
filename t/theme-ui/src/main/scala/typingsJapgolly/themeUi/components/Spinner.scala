@@ -1,53 +1,21 @@
 package typingsJapgolly.themeUi.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.SVGSVGElement
+import org.scalajs.dom.SVGSVGElement
+import typingsJapgolly.StBuildingComponent.Default
 import typingsJapgolly.react.mod.PropsWithoutRef
 import typingsJapgolly.react.mod.RefAttributes
-import typingsJapgolly.themeUiComponents.mod.SpinnerProps
+import typingsJapgolly.themeUiComponents.distDeclarationsSrcSpinnerMod.SpinnerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This component has complicated props, you'll have to assemble `props` yourself using js.Dynamic.literal(...) or similar. */
 object Spinner {
-  def apply(
-    props: PropsWithoutRef[SpinnerProps] with RefAttributes[SVGSVGElement] with js.Object,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    PropsWithoutRef[SpinnerProps] with RefAttributes[SVGSVGElement] with js.Object, 
-    MountedWithRawType[
-      PropsWithoutRef[SpinnerProps] with RefAttributes[SVGSVGElement] with js.Object, 
-      js.Object, 
-      RawMounted[
-        PropsWithoutRef[SpinnerProps] with RefAttributes[SVGSVGElement] with js.Object, 
-        js.Object
-      ]
-    ]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      js.Dynamic.global.Object.assign(__obj, props)
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.react.mod.PropsWithoutRef[typingsJapgolly.themeUiComponents.mod.SpinnerProps] with typingsJapgolly.react.mod.RefAttributes[org.scalajs.dom.raw.SVGSVGElement] with js.Object, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.react.mod.PropsWithoutRef[typingsJapgolly.themeUiComponents.mod.SpinnerProps] with typingsJapgolly.react.mod.RefAttributes[org.scalajs.dom.raw.SVGSVGElement] with js.Object])(children: _*)
-  }
   @JSImport("theme-ui", "Spinner")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: Spinner.type): Default[SVGSVGElement] = new Default[SVGSVGElement](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PropsWithoutRef[SpinnerProps] & RefAttributes[SVGSVGElement]): Default[SVGSVGElement] = new Default[SVGSVGElement](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

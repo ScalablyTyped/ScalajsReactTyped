@@ -1,24 +1,14 @@
-package typingsJapgolly.plaidLink.mod
+package typingsJapgolly.plaidLink.mod.Plaid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Plaid {
-  type OnEvent = js.Function2[
-    /* eventName */ typingsJapgolly.plaidLink.mod.Plaid.EventName, 
-    /* metadata */ typingsJapgolly.plaidLink.mod.Plaid.OnEventMetaData, 
-    scala.Unit
-  ]
-  type OnExit = js.Function2[
-    /* error */ typingsJapgolly.plaidLink.mod.Plaid.Error | scala.Null, 
-    /* metadata */ typingsJapgolly.plaidLink.mod.Plaid.OnExitMetaData, 
-    scala.Unit
-  ]
-  type OnLoad = js.Function0[scala.Unit]
-  type OnSuccess = js.Function2[
-    /* public_token */ java.lang.String, 
-    /* metadata */ typingsJapgolly.plaidLink.mod.Plaid.OnSuccessMetaData, 
-    scala.Unit
-  ]
-}
+
+type OnEvent = js.Function2[/* eventName */ EventName, /* metadata */ OnEventMetaData, Unit]
+
+type OnExit = js.Function2[/* error */ Error | Null, /* metadata */ OnExitMetaData, Unit]
+
+type OnLoad = js.Function0[Unit]
+
+type OnSuccess = js.Function2[/* public_token */ String, /* metadata */ OnSuccessMetaData, Unit]

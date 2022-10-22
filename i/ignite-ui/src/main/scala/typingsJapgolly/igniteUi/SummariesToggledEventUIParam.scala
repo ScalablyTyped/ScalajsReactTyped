@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SummariesToggledEventUIParam extends js.Object {
+trait SummariesToggledEventUIParam extends StObject {
+  
   /**
-  	 * Gets whether summaries are shown or not.
-  	 */
+    * Gets whether summaries are shown or not.
+    */
   var isToShow: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets the igGridSummaries widget object.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets the igGridSummaries widget object.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object SummariesToggledEventUIParam {
-  @scala.inline
-  def apply(isToShow: js.UndefOr[Boolean] = js.undefined, owner: js.Any = null): SummariesToggledEventUIParam = {
+  
+  inline def apply(): SummariesToggledEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isToShow)) __obj.updateDynamic("isToShow")(isToShow.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummariesToggledEventUIParam]
   }
+  
+  extension [Self <: SummariesToggledEventUIParam](x: Self) {
+    
+    inline def setIsToShow(value: Boolean): Self = StObject.set(x, "isToShow", value.asInstanceOf[js.Any])
+    
+    inline def setIsToShowUndefined: Self = StObject.set(x, "isToShow", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

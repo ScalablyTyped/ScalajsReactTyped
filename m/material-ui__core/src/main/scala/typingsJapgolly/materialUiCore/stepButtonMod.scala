@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.stepButtonStepButtonMod.StepButtonProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.button
+import typingsJapgolly.materialUiCore.stepButtonStepButtonMod.StepButtonTypeMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/StepButton", JSImport.Namespace)
-@js.native
-object stepButtonMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[StepButtonProps, ComponentState, js.Any] {
-    def this(props: StepButtonProps) = this()
-    def this(props: StepButtonProps, context: js.Any) = this()
-  }
+object stepButtonMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Steppers](https://mui.com/components/steppers/)
+    *
+    * API:
+    *
+    * - [StepButton API](https://mui.com/api/step-button/)
+    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    */
+  @JSImport("@material-ui/core/StepButton", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[StepButtonProps]]
+  val default: ExtendButtonBase[StepButtonTypeMap[js.Object, button]] = js.native
   
+  type _To = ExtendButtonBase[StepButtonTypeMap[js.Object, button]]
+  
+  /* This means you don't have to write `default`, but can instead just say `stepButtonMod.foo` */
+  override def _to: ExtendButtonBase[StepButtonTypeMap[js.Object, button]] = default
 }
-

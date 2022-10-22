@@ -11,9 +11,9 @@ Resolve an options object based on configuration.
 | Full name          | resolve-options |
 | Keywords           | options, functions, resolver, type, configuration, config, opts, opt, default |
 | # releases         | 1 |
-| # dependents       | 4 |
-| # downloads        | 33630975 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6296952.666666667 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/resolve-options#readme)

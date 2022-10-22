@@ -1,74 +1,134 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InputBoxProperties extends ComponentProperties {
+trait InputBoxProperties
+  extends StObject
+     with ComponentProperties {
+  
   var ariaLive: js.UndefOr[String] = js.undefined
+  
   var columns: js.UndefOr[Double] = js.undefined
+  
   var inputType: js.UndefOr[InputBoxInputType] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var min: js.UndefOr[Double] = js.undefined
-  var multiline: js.UndefOr[Boolean] = js.undefined
-  var placeHolder: js.UndefOr[String] = js.undefined
-  var required: js.UndefOr[Boolean] = js.undefined
-  var rows: js.UndefOr[Double] = js.undefined
+  
   /**
-  		 * Whether to stop key event propagation when enter is pressed in the input box. Leaving this as false
-  		 * means the event will propagate up to any parents that have handlers (such as validate on Dialogs)
-  		 */
+    * The maximum value allowed for the input. Only valid for number inputs.
+    */
+  var max: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The maximum number of characters allowed in the input box.
+    */
+  var maxLength: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The minimum value allowed for the input. Only valid for number inputs.
+    */
+  var min: js.UndefOr[Double] = js.undefined
+  
+  var multiline: js.UndefOr[Boolean] = js.undefined
+  
+  var placeHolder: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Whether the input box is marked with the 'readonly' attribute
+    */
+  var readOnly: js.UndefOr[Boolean] = js.undefined
+  
+  var required: js.UndefOr[Boolean] = js.undefined
+  
+  var rows: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Whether to stop key event propagation when enter is pressed in the input box. Leaving this as false
+    * means the event will propagate up to any parents that have handlers (such as validate on Dialogs)
+    */
   var stopEnterPropagation: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * This title will show when hovered over
+    */
+  var title: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The error message to show when custom validation fails. Note that built-in validations
+    * (such as min/max values) will use the default error messages for those validations
+    * as appropriate.
+    */
+  var validationErrorMessage: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[String] = js.undefined
 }
-
 object InputBoxProperties {
-  @scala.inline
-  def apply(
-    CSSStyles: StringDictionary[String] = null,
-    ariaLabel: String = null,
-    ariaLive: String = null,
-    ariaRole: String = null,
-    ariaSelected: js.UndefOr[Boolean] = js.undefined,
-    columns: Int | Double = null,
-    display: DisplayType = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String = null,
-    inputType: InputBoxInputType = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    multiline: js.UndefOr[Boolean] = js.undefined,
-    placeHolder: String = null,
-    position: PositionType = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    rows: Int | Double = null,
-    stopEnterPropagation: js.UndefOr[Boolean] = js.undefined,
-    value: String = null,
-    width: Double | String = null
-  ): InputBoxProperties = {
+  
+  inline def apply(): InputBoxProperties = {
     val __obj = js.Dynamic.literal()
-    if (CSSStyles != null) __obj.updateDynamic("CSSStyles")(CSSStyles.asInstanceOf[js.Any])
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (ariaLive != null) __obj.updateDynamic("ariaLive")(ariaLive.asInstanceOf[js.Any])
-    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaSelected)) __obj.updateDynamic("ariaSelected")(ariaSelected.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
-    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopEnterPropagation)) __obj.updateDynamic("stopEnterPropagation")(stopEnterPropagation.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputBoxProperties]
   }
+  
+  extension [Self <: InputBoxProperties](x: Self) {
+    
+    inline def setAriaLive(value: String): Self = StObject.set(x, "ariaLive", value.asInstanceOf[js.Any])
+    
+    inline def setAriaLiveUndefined: Self = StObject.set(x, "ariaLive", js.undefined)
+    
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setInputType(value: InputBoxInputType): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
+    
+    inline def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+    
+    inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+    
+    inline def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
+    
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    
+    inline def setStopEnterPropagation(value: Boolean): Self = StObject.set(x, "stopEnterPropagation", value.asInstanceOf[js.Any])
+    
+    inline def setStopEnterPropagationUndefined: Self = StObject.set(x, "stopEnterPropagation", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setValidationErrorMessage(value: String): Self = StObject.set(x, "validationErrorMessage", value.asInstanceOf[js.Any])
+    
+    inline def setValidationErrorMessageUndefined: Self = StObject.set(x, "validationErrorMessage", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

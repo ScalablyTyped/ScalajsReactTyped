@@ -1,8 +1,8 @@
 package typingsJapgolly.nodeHueApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nodeHueApi.nodeHueApiStrings.`Living room`
@@ -24,46 +24,42 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.nodeHueApi.nodeHueApiStrings.Carport
   - typingsJapgolly.nodeHueApi.nodeHueApiStrings.Other
 */
-trait RoomType extends js.Object
-
+trait RoomType extends StObject
 object RoomType {
-  @scala.inline
-  def Bathroom: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Bathroom = this.cast("Bathroom")
-  @scala.inline
-  def Bedroom: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Bedroom = this.cast("Bedroom")
-  @scala.inline
-  def Carport: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Carport = this.cast("Carport")
-  @scala.inline
-  def Dining: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Dining = this.cast("Dining")
-  @scala.inline
-  def Driveway: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Driveway = this.cast("Driveway")
-  @scala.inline
-  def `Front door`: typingsJapgolly.nodeHueApi.nodeHueApiStrings.`Front door` = this.cast("Front door")
-  @scala.inline
-  def `Garage Terrace`: typingsJapgolly.nodeHueApi.nodeHueApiStrings.`Garage Terrace` = this.cast("Garage Terrace")
-  @scala.inline
-  def Garden: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Garden = this.cast("Garden")
-  @scala.inline
-  def Gym: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Gym = this.cast("Gym")
-  @scala.inline
-  def Hallway: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Hallway = this.cast("Hallway")
-  @scala.inline
-  def `Kids bedroom`: typingsJapgolly.nodeHueApi.nodeHueApiStrings.`Kids bedroom` = this.cast("Kids bedroom")
-  @scala.inline
-  def Kitchen: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Kitchen = this.cast("Kitchen")
-  @scala.inline
-  def `Living room`: typingsJapgolly.nodeHueApi.nodeHueApiStrings.`Living room` = this.cast("Living room")
-  @scala.inline
-  def Nursery: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Nursery = this.cast("Nursery")
-  @scala.inline
-  def Office: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Office = this.cast("Office")
-  @scala.inline
-  def Other: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Other = this.cast("Other")
-  @scala.inline
-  def Recreation: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Recreation = this.cast("Recreation")
-  @scala.inline
-  def Toilet: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Toilet = this.cast("Toilet")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Bathroom: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Bathroom = "Bathroom".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Bathroom]
+  
+  inline def Bedroom: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Bedroom = "Bedroom".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Bedroom]
+  
+  inline def Carport: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Carport = "Carport".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Carport]
+  
+  inline def Dining: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Dining = "Dining".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Dining]
+  
+  inline def Driveway: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Driveway = "Driveway".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Driveway]
+  
+  inline def `Front door`: typingsJapgolly.nodeHueApi.nodeHueApiStrings.`Front door` = ("Front door").asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.`Front door`]
+  
+  inline def `Garage Terrace`: typingsJapgolly.nodeHueApi.nodeHueApiStrings.`Garage Terrace` = ("Garage Terrace").asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.`Garage Terrace`]
+  
+  inline def Garden: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Garden = "Garden".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Garden]
+  
+  inline def Gym: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Gym = "Gym".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Gym]
+  
+  inline def Hallway: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Hallway = "Hallway".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Hallway]
+  
+  inline def `Kids bedroom`: typingsJapgolly.nodeHueApi.nodeHueApiStrings.`Kids bedroom` = ("Kids bedroom").asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.`Kids bedroom`]
+  
+  inline def Kitchen: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Kitchen = "Kitchen".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Kitchen]
+  
+  inline def `Living room`: typingsJapgolly.nodeHueApi.nodeHueApiStrings.`Living room` = ("Living room").asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.`Living room`]
+  
+  inline def Nursery: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Nursery = "Nursery".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Nursery]
+  
+  inline def Office: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Office = "Office".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Office]
+  
+  inline def Other: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Other = "Other".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Other]
+  
+  inline def Recreation: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Recreation = "Recreation".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Recreation]
+  
+  inline def Toilet: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Toilet = "Toilet".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Toilet]
 }
-

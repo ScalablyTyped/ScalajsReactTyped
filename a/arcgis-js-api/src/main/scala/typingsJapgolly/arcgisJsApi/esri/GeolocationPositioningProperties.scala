@@ -1,64 +1,81 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import typingsJapgolly.arcgisJsApi.anon.MapViewPropertiestype2d
+import typingsJapgolly.arcgisJsApi.anon.SceneViewPropertiestype3d
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeolocationPositioningProperties extends js.Object {
+trait GeolocationPositioningProperties extends StObject {
+  
   /**
-    * The HTML5 Geolocation Position options for locating. Refer to [Geolocation API Specification](http://www.w3.org/TR/geolocation-API/#position-options) for details.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#geolocationOptions)
+    * The HTML5 Geolocation Position options for locating.
     *
     * @default { maximumAge: 0, timeout: 15000, enableHighAccuracy: true }
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#geolocationOptions)
     */
-  var geolocationOptions: js.UndefOr[js.Any] = js.undefined
+  var geolocationOptions: js.UndefOr[Any] = js.undefined
+  
   /**
     * Indicates whether to navigate the view to the position and scale of the geolocated result.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#goToLocationEnabled)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#goToLocationEnabled)
     */
   var goToLocationEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The graphic used to show the user's location on the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#graphic)
     */
   var graphic: js.UndefOr[GraphicProperties] = js.undefined
+  
   /**
-    * The scale to set on the view when navigating to the position of the geolocated result. If a scale value is not explicitly set, then the view will navigate to a default scale of `2500`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#scale)
+    * The scale to set on the view when navigating to the position of the geolocated result.
     *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#scale)
     */
   var scale: js.UndefOr[Double] = js.undefined
+  
   /**
     * The view associated with the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
 }
-
 object GeolocationPositioningProperties {
-  @scala.inline
-  def apply(
-    geolocationOptions: js.Any = null,
-    goToLocationEnabled: js.UndefOr[Boolean] = js.undefined,
-    graphic: GraphicProperties = null,
-    scale: Int | Double = null,
-    view: MapViewProperties | SceneViewProperties = null
-  ): GeolocationPositioningProperties = {
+  
+  inline def apply(): GeolocationPositioningProperties = {
     val __obj = js.Dynamic.literal()
-    if (geolocationOptions != null) __obj.updateDynamic("geolocationOptions")(geolocationOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(goToLocationEnabled)) __obj.updateDynamic("goToLocationEnabled")(goToLocationEnabled.asInstanceOf[js.Any])
-    if (graphic != null) __obj.updateDynamic("graphic")(graphic.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationPositioningProperties]
   }
+  
+  extension [Self <: GeolocationPositioningProperties](x: Self) {
+    
+    inline def setGeolocationOptions(value: Any): Self = StObject.set(x, "geolocationOptions", value.asInstanceOf[js.Any])
+    
+    inline def setGeolocationOptionsUndefined: Self = StObject.set(x, "geolocationOptions", js.undefined)
+    
+    inline def setGoToLocationEnabled(value: Boolean): Self = StObject.set(x, "goToLocationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setGoToLocationEnabledUndefined: Self = StObject.set(x, "goToLocationEnabled", js.undefined)
+    
+    inline def setGraphic(value: GraphicProperties): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
+    
+    inline def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
+    
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

@@ -1,16 +1,20 @@
 package typingsJapgolly.riotjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryStatic extends js.Object {
-  var riot: String = js.native
-  def observable(el: js.Any): js.Any = js.native
+trait JQueryStatic extends StObject {
+  
+  def observable(el: Any): Any = js.native
+  
   def render(): String = js.native
   def render(template: String): String = js.native
-  def render(template: String, data: js.Any): String = js.native
-  def route(to: js.Any): Unit = js.native
+  def render(template: String, data: Any): String = js.native
+  def render(template: Unit, data: Any): String = js.native
+  
+  var riot: String = js.native
+  
+  def route(to: Any): Unit = js.native
 }
-

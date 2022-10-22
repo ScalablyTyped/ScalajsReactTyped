@@ -1,172 +1,283 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the conditional formats that are overlap the range.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
-@js.native
-trait ConditionalFormatCollectionLoadOptions extends js.Object {
+trait ConditionalFormatCollectionLoadOptions extends StObject {
+  
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
     *
-    * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-    For example to format all cells between 5 and 10.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var cellValue: js.UndefOr[CellValueConditionalFormatLoadOptions] = js.native
+  var cellValue: js.UndefOr[CellValueConditionalFormatLoadOptions] = js.undefined
+  
   /**
+    * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
     *
-    * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-    For example to format all cells between 5 and 10.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var cellValueOrNullObject: js.UndefOr[CellValueConditionalFormatLoadOptions] = js.native
+  var cellValueOrNullObject: js.UndefOr[CellValueConditionalFormatLoadOptions] = js.undefined
+  
   /**
+    * For EACH ITEM in the collection: Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
     *
-    * For EACH ITEM in the collection: Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var colorScale: js.UndefOr[ColorScaleConditionalFormatLoadOptions] = js.native
+  var colorScale: js.UndefOr[ColorScaleConditionalFormatLoadOptions] = js.undefined
+  
   /**
+    * For EACH ITEM in the collection: Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
     *
-    * For EACH ITEM in the collection: Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var colorScaleOrNullObject: js.UndefOr[ColorScaleConditionalFormatLoadOptions] = js.native
+  var colorScaleOrNullObject: js.UndefOr[ColorScaleConditionalFormatLoadOptions] = js.undefined
+  
   /**
-    *
     * For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional format is a custom type.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var custom: js.UndefOr[CustomConditionalFormatLoadOptions] = js.native
+  var custom: js.UndefOr[CustomConditionalFormatLoadOptions] = js.undefined
+  
   /**
-    *
     * For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional format is a custom type.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var customOrNullObject: js.UndefOr[CustomConditionalFormatLoadOptions] = js.native
+  var customOrNullObject: js.UndefOr[CustomConditionalFormatLoadOptions] = js.undefined
+  
   /**
-    *
     * For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var dataBar: js.UndefOr[DataBarConditionalFormatLoadOptions] = js.native
+  var dataBar: js.UndefOr[DataBarConditionalFormatLoadOptions] = js.undefined
+  
   /**
-    *
     * For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var dataBarOrNullObject: js.UndefOr[DataBarConditionalFormatLoadOptions] = js.native
+  var dataBarOrNullObject: js.UndefOr[DataBarConditionalFormatLoadOptions] = js.undefined
+  
   /**
+    * For EACH ITEM in the collection: Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
     *
-    * For EACH ITEM in the collection: Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var iconSet: js.UndefOr[IconSetConditionalFormatLoadOptions] = js.native
+  var iconSet: js.UndefOr[IconSetConditionalFormatLoadOptions] = js.undefined
+  
   /**
+    * For EACH ITEM in the collection: Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.
     *
-    * For EACH ITEM in the collection: Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var iconSetOrNullObject: js.UndefOr[IconSetConditionalFormatLoadOptions] = js.native
+  var iconSetOrNullObject: js.UndefOr[IconSetConditionalFormatLoadOptions] = js.undefined
+  
   /**
+    * For EACH ITEM in the collection: The priority of the conditional format in the current `ConditionalFormatCollection`.
     *
-    * For EACH ITEM in the collection: The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * For EACH ITEM in the collection: Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
     *
-    * For EACH ITEM in the collection: Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var preset: js.UndefOr[PresetCriteriaConditionalFormatLoadOptions] = js.native
+  var preset: js.UndefOr[PresetCriteriaConditionalFormatLoadOptions] = js.undefined
+  
   /**
+    * For EACH ITEM in the collection: Returns the preset criteria conditional format. See `Excel.PresetCriteriaConditionalFormat` for more details.
     *
-    * For EACH ITEM in the collection: Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var presetOrNullObject: js.UndefOr[PresetCriteriaConditionalFormatLoadOptions] = js.native
+  var presetOrNullObject: js.UndefOr[PresetCriteriaConditionalFormatLoadOptions] = js.undefined
+  
   /**
-    *
     * For EACH ITEM in the collection: The priority (or index) within the conditional format collection that this conditional format currently exists in. Changing this also
     changes other conditional formats' priorities, to allow for a contiguous priority order.
     Use a negative priority to begin from the back.
-    Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-    Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it. Read-only.
+    Priorities greater than the bounds will get and set to the maximum (or minimum if negative) priority.
+    Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var priority: js.UndefOr[Boolean] = js.native
+  var priority: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * For EACH ITEM in the collection: If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
-    Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these
+    Value is `null` on data bars, icon sets, and color scales as there's no concept of `StopIfTrue` for these.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var stopIfTrue: js.UndefOr[Boolean] = js.native
+  var stopIfTrue: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * For EACH ITEM in the collection: Returns the specific text conditional format properties if the current conditional format is a text type.
-    For example to format cells matching the word "Text".
+    For example, to format cells matching the word "Text".
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var textComparison: js.UndefOr[TextConditionalFormatLoadOptions] = js.native
+  var textComparison: js.UndefOr[TextConditionalFormatLoadOptions] = js.undefined
+  
   /**
-    *
     * For EACH ITEM in the collection: Returns the specific text conditional format properties if the current conditional format is a text type.
-    For example to format cells matching the word "Text".
+    For example, to format cells matching the word "Text".
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var textComparisonOrNullObject: js.UndefOr[TextConditionalFormatLoadOptions] = js.native
+  var textComparisonOrNullObject: js.UndefOr[TextConditionalFormatLoadOptions] = js.undefined
+  
   /**
+    * For EACH ITEM in the collection: Returns the top/bottom conditional format properties if the current conditional format is a `TopBottom` type.
+    For example, to format the top 10% or bottom 10 items.
     *
-    * For EACH ITEM in the collection: Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-    For example to format the top 10% or bottom 10 items.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var topBottom: js.UndefOr[TopBottomConditionalFormatLoadOptions] = js.native
+  var topBottom: js.UndefOr[TopBottomConditionalFormatLoadOptions] = js.undefined
+  
   /**
+    * For EACH ITEM in the collection: Returns the top/bottom conditional format properties if the current conditional format is a `TopBottom` type.
+    For example, to format the top 10% or bottom 10 items.
     *
-    * For EACH ITEM in the collection: Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-    For example to format the top 10% or bottom 10 items.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var topBottomOrNullObject: js.UndefOr[TopBottomConditionalFormatLoadOptions] = js.native
+  var topBottomOrNullObject: js.UndefOr[TopBottomConditionalFormatLoadOptions] = js.undefined
+  
   /**
+    * For EACH ITEM in the collection: A type of conditional format. Only one can be set at a time.
     *
-    * For EACH ITEM in the collection: A type of conditional format. Only one can be set at a time. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var `type`: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[Boolean] = js.undefined
 }
-
+object ConditionalFormatCollectionLoadOptions {
+  
+  inline def apply(): ConditionalFormatCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ConditionalFormatCollectionLoadOptions]
+  }
+  
+  extension [Self <: ConditionalFormatCollectionLoadOptions](x: Self) {
+    
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    
+    inline def setCellValue(value: CellValueConditionalFormatLoadOptions): Self = StObject.set(x, "cellValue", value.asInstanceOf[js.Any])
+    
+    inline def setCellValueOrNullObject(value: CellValueConditionalFormatLoadOptions): Self = StObject.set(x, "cellValueOrNullObject", value.asInstanceOf[js.Any])
+    
+    inline def setCellValueOrNullObjectUndefined: Self = StObject.set(x, "cellValueOrNullObject", js.undefined)
+    
+    inline def setCellValueUndefined: Self = StObject.set(x, "cellValue", js.undefined)
+    
+    inline def setColorScale(value: ColorScaleConditionalFormatLoadOptions): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
+    
+    inline def setColorScaleOrNullObject(value: ColorScaleConditionalFormatLoadOptions): Self = StObject.set(x, "colorScaleOrNullObject", value.asInstanceOf[js.Any])
+    
+    inline def setColorScaleOrNullObjectUndefined: Self = StObject.set(x, "colorScaleOrNullObject", js.undefined)
+    
+    inline def setColorScaleUndefined: Self = StObject.set(x, "colorScale", js.undefined)
+    
+    inline def setCustom(value: CustomConditionalFormatLoadOptions): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    
+    inline def setCustomOrNullObject(value: CustomConditionalFormatLoadOptions): Self = StObject.set(x, "customOrNullObject", value.asInstanceOf[js.Any])
+    
+    inline def setCustomOrNullObjectUndefined: Self = StObject.set(x, "customOrNullObject", js.undefined)
+    
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDataBar(value: DataBarConditionalFormatLoadOptions): Self = StObject.set(x, "dataBar", value.asInstanceOf[js.Any])
+    
+    inline def setDataBarOrNullObject(value: DataBarConditionalFormatLoadOptions): Self = StObject.set(x, "dataBarOrNullObject", value.asInstanceOf[js.Any])
+    
+    inline def setDataBarOrNullObjectUndefined: Self = StObject.set(x, "dataBarOrNullObject", js.undefined)
+    
+    inline def setDataBarUndefined: Self = StObject.set(x, "dataBar", js.undefined)
+    
+    inline def setIconSet(value: IconSetConditionalFormatLoadOptions): Self = StObject.set(x, "iconSet", value.asInstanceOf[js.Any])
+    
+    inline def setIconSetOrNullObject(value: IconSetConditionalFormatLoadOptions): Self = StObject.set(x, "iconSetOrNullObject", value.asInstanceOf[js.Any])
+    
+    inline def setIconSetOrNullObjectUndefined: Self = StObject.set(x, "iconSetOrNullObject", js.undefined)
+    
+    inline def setIconSetUndefined: Self = StObject.set(x, "iconSet", js.undefined)
+    
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setPreset(value: PresetCriteriaConditionalFormatLoadOptions): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+    
+    inline def setPresetOrNullObject(value: PresetCriteriaConditionalFormatLoadOptions): Self = StObject.set(x, "presetOrNullObject", value.asInstanceOf[js.Any])
+    
+    inline def setPresetOrNullObjectUndefined: Self = StObject.set(x, "presetOrNullObject", js.undefined)
+    
+    inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+    
+    inline def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    
+    inline def setStopIfTrue(value: Boolean): Self = StObject.set(x, "stopIfTrue", value.asInstanceOf[js.Any])
+    
+    inline def setStopIfTrueUndefined: Self = StObject.set(x, "stopIfTrue", js.undefined)
+    
+    inline def setTextComparison(value: TextConditionalFormatLoadOptions): Self = StObject.set(x, "textComparison", value.asInstanceOf[js.Any])
+    
+    inline def setTextComparisonOrNullObject(value: TextConditionalFormatLoadOptions): Self = StObject.set(x, "textComparisonOrNullObject", value.asInstanceOf[js.Any])
+    
+    inline def setTextComparisonOrNullObjectUndefined: Self = StObject.set(x, "textComparisonOrNullObject", js.undefined)
+    
+    inline def setTextComparisonUndefined: Self = StObject.set(x, "textComparison", js.undefined)
+    
+    inline def setTopBottom(value: TopBottomConditionalFormatLoadOptions): Self = StObject.set(x, "topBottom", value.asInstanceOf[js.Any])
+    
+    inline def setTopBottomOrNullObject(value: TopBottomConditionalFormatLoadOptions): Self = StObject.set(x, "topBottomOrNullObject", value.asInstanceOf[js.Any])
+    
+    inline def setTopBottomOrNullObjectUndefined: Self = StObject.set(x, "topBottomOrNullObject", js.undefined)
+    
+    inline def setTopBottomUndefined: Self = StObject.set(x, "topBottom", js.undefined)
+    
+    inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
+}

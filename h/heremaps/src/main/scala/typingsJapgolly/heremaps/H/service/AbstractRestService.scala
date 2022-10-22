@@ -1,26 +1,17 @@
 package typingsJapgolly.heremaps.H.service
 
-import typingsJapgolly.heremaps.H.service.AbstractRestService.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Abstract rest service class
   */
-@JSGlobal("H.service.AbstractRestService")
 @js.native
-/**
-  * Constructor
-  * @param opt_options {H.service.AbstractRestService.Options=}
-  */
-class AbstractRestService () extends IConfigurable {
-  def this(opt_options: Options) = this()
+trait AbstractRestService
+  extends StObject
+     with IConfigurable
+object AbstractRestService {
+  
+  type Options = Any
 }
-
-@JSGlobal("H.service.AbstractRestService")
-@js.native
-object AbstractRestService extends js.Object {
-  type Options = js.Any
-}
-

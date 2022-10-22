@@ -10,10 +10,10 @@ A sane JSONP implementation.
 | ------------------ | :-------------: |
 | Full name          | jsonp |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 206 |
-| # downloads        | 6980319 |
-| # stars            | 17 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2093889.6666666667 |
+| # stars            | 1909.0 |
 
 ## Links
 - [Homepage](https://github.com/LearnBoost/jsonp#readme)

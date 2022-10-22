@@ -1,34 +1,43 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `removeDuplicatesResult.toJSON()`. */
-trait RemoveDuplicatesResultData extends js.Object {
+trait RemoveDuplicatesResultData extends StObject {
+  
   /**
-    *
     * Number of duplicated rows removed by the operation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var removed: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Number of remaining unique rows present in the resulting range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var uniqueRemaining: js.UndefOr[Double] = js.undefined
 }
-
 object RemoveDuplicatesResultData {
-  @scala.inline
-  def apply(removed: Int | Double = null, uniqueRemaining: Int | Double = null): RemoveDuplicatesResultData = {
+  
+  inline def apply(): RemoveDuplicatesResultData = {
     val __obj = js.Dynamic.literal()
-    if (removed != null) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
-    if (uniqueRemaining != null) __obj.updateDynamic("uniqueRemaining")(uniqueRemaining.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveDuplicatesResultData]
   }
+  
+  extension [Self <: RemoveDuplicatesResultData](x: Self) {
+    
+    inline def setRemoved(value: Double): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    
+    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+    
+    inline def setUniqueRemaining(value: Double): Self = StObject.set(x, "uniqueRemaining", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueRemainingUndefined: Self = StObject.set(x, "uniqueRemaining", js.undefined)
+  }
 }
-

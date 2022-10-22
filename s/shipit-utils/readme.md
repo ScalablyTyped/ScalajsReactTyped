@@ -10,10 +10,10 @@ Typings are for version 1.4
 | ------------------ | :-------------: |
 | Full name          | shipit-utils |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 37 |
-| # downloads        | 260751 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 21345.666666666668 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/shipit-utils)

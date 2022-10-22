@@ -1,166 +1,148 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AggregationFunction extends js.Object
-
+sealed trait AggregationFunction extends StObject
 /**
+  * Aggregation function for the DataPivotField.
   *
-  * Aggregation Function for the Data Pivot Field.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.AggregationFunction")
 @js.native
-object AggregationFunction extends js.Object {
+object AggregationFunction extends StObject {
+  
   /**
-    *
     * Excel will automatically select the aggregation based on the data items.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait automatic extends AggregationFunction
+  sealed trait automatic
+    extends StObject
+       with AggregationFunction
   
   /**
-    *
     * Aggregate using the average of the data, equivalent to the AVERAGE function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait average extends AggregationFunction
+  sealed trait average
+    extends StObject
+       with AggregationFunction
   
   /**
-    *
     * Aggregate using the count of items in the data, equivalent to the COUNTA function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait count extends AggregationFunction
+  sealed trait count
+    extends StObject
+       with AggregationFunction
   
   /**
-    *
     * Aggregate using the count of numbers in the data, equivalent to the COUNT function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait countNumbers extends AggregationFunction
+  sealed trait countNumbers
+    extends StObject
+       with AggregationFunction
   
   /**
-    *
     * Aggregate using the maximum value of the data, equivalent to the MAX function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait max extends AggregationFunction
+  sealed trait max
+    extends StObject
+       with AggregationFunction
   
   /**
-    *
     * Aggregate using the minimum value of the data, equivalent to the MIN function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait min extends AggregationFunction
+  sealed trait min
+    extends StObject
+       with AggregationFunction
   
   /**
-    *
     * Aggregate using the product of the data, equivalent to the PRODUCT function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait product extends AggregationFunction
+  sealed trait product
+    extends StObject
+       with AggregationFunction
   
   /**
-    *
     * Aggregate using the standard deviation of the data, equivalent to the STDEV function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait standardDeviation extends AggregationFunction
+  sealed trait standardDeviation
+    extends StObject
+       with AggregationFunction
   
   /**
-    *
     * Aggregate using the standard deviation of the data, equivalent to the STDEVP function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait standardDeviationP extends AggregationFunction
+  sealed trait standardDeviationP
+    extends StObject
+       with AggregationFunction
   
   /**
-    *
     * Aggregate using the sum of the data, equivalent to the SUM function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait sum extends AggregationFunction
+  sealed trait sum
+    extends StObject
+       with AggregationFunction
   
   /**
-    *
     * Aggregation function is unknown or unsupported.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait unknown extends AggregationFunction
+  sealed trait unknown
+    extends StObject
+       with AggregationFunction
   
   /**
-    *
     * Aggregate using the variance of the data, equivalent to the VAR function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait variance extends AggregationFunction
+  sealed trait variance
+    extends StObject
+       with AggregationFunction
   
   /**
-    *
     * Aggregate using the variance of the data, equivalent to the VARP function.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait varianceP extends AggregationFunction
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[AggregationFunction with String] = js.native
-  /* "Automatic" */ @js.native
-  object automatic extends TopLevel[automatic with String]
-  
-  /* "Average" */ @js.native
-  object average extends TopLevel[average with String]
-  
-  /* "Count" */ @js.native
-  object count extends TopLevel[count with String]
-  
-  /* "CountNumbers" */ @js.native
-  object countNumbers extends TopLevel[countNumbers with String]
-  
-  /* "Max" */ @js.native
-  object max extends TopLevel[max with String]
-  
-  /* "Min" */ @js.native
-  object min extends TopLevel[min with String]
-  
-  /* "Product" */ @js.native
-  object product extends TopLevel[product with String]
-  
-  /* "StandardDeviation" */ @js.native
-  object standardDeviation extends TopLevel[standardDeviation with String]
-  
-  /* "StandardDeviationP" */ @js.native
-  object standardDeviationP extends TopLevel[standardDeviationP with String]
-  
-  /* "Sum" */ @js.native
-  object sum extends TopLevel[sum with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
-  
-  /* "Variance" */ @js.native
-  object variance extends TopLevel[variance with String]
-  
-  /* "VarianceP" */ @js.native
-  object varianceP extends TopLevel[varianceP with String]
-  
+  sealed trait varianceP
+    extends StObject
+       with AggregationFunction
 }
-

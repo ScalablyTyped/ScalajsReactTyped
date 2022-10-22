@@ -1,19 +1,19 @@
 
 # Scala.js typings for jose
 
-Typings are for version 1.22.2
+Typings are for version 4.10.0
 
 ## Library description:
-JSON Web Almost Everything - JWA, JWS, JWE, JWK, JWT, JWKS for Node.js with minimal dependencies
+'JSON Web Almost Everything' - JWA, JWS, JWE, JWT, JWK, JWKS for Node.js, Browser, Cloudflare Workers, Deno, and other Web-interoperable runtimes
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jose |
-| Keywords           | access token, access_token, compact, decode, decrypt, ec, ecdsa, eddsa, electron, encrypt, flattened, general, id token, id_token, jose, json web token, jsonwebtoken, jwa, jwe, jwk, jwks, jws, jwt, logout token, logout_token, oct, okp, rsa, secp256k1, sign, validate, verify |
-| # releases         | 21 |
-| # dependents       | 17 |
-| # downloads        | 208266 |
-| # stars            | 2 |
+| Keywords           | browser, cloudflare, compact, decode, decrypt, deno, detached, ec, ecdsa, eddsa, electron, embedded, encrypt, flattened, general, isomorphic, jose, json web token, jsonwebtoken, jwa, jwe, jwk, jwks, jws, jwt, oct, okp, payload, pem, pkcs8, rsa, secp256k1, sign, signature, spki, universal, validate, verify, webcrypto, workers, x509 |
+| # releases         | 105 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1267601E7 |
+| # stars            | 2579.0 |
 
 ## Links
 - [Homepage](https://github.com/panva/jose)

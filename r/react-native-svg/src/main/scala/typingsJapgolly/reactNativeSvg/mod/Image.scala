@@ -1,22 +1,28 @@
 package typingsJapgolly.reactNativeSvg.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
+import typingsJapgolly.reactNativeSvg.anon.PreserveAspectRatio
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg", "Image")
 @js.native
-class Image protected ()
-  extends Component[ImageProps, ComponentState, js.Any] {
-  def this(props: ImageProps) = this()
-  def this(props: ImageProps, context: js.Any) = this()
+open class Image ()
+  extends typingsJapgolly.reactNativeSvg.libTypescriptReactNativeSVGMod.Image
+/* static members */
+object Image {
+  
+  @JSImport("react-native-svg", "Image")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native-svg", "Image.defaultProps")
+  @js.native
+  def defaultProps: PreserveAspectRatio = js.native
+  inline def defaultProps_=(x: PreserveAspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-native-svg", "Image.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }
-
-@JSImport("react-native-svg", "Image")
-@js.native
-object Image extends TopLevel[ComponentClass[ImageProps, ComponentState]]
-

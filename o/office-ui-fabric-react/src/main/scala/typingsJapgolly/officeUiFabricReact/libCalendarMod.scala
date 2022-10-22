@@ -1,56 +1,86 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.calendarTypesMod.ICalendarProps
+import typingsJapgolly.officeUiFabricReact.libComponentsCalendarCalendarDottypesMod.ICalendarProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Calendar", JSImport.Namespace)
-@js.native
-object libCalendarMod extends js.Object {
+object libCalendarMod {
+  
+  @JSImport("office-ui-fabric-react/lib/Calendar", "Calendar")
   @js.native
-  class Calendar protected ()
-    extends typingsJapgolly.officeUiFabricReact.calendarMod.Calendar {
+  open class Calendar protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsCalendarMod.Calendar {
     def this(props: ICalendarProps) = this()
   }
-  
   /* static members */
-  @js.native
-  object Calendar extends js.Object {
-    var defaultProps: ICalendarProps = js.native
+  object Calendar {
+    
+    @JSImport("office-ui-fabric-react/lib/Calendar", "Calendar")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/Calendar", "Calendar.defaultProps")
+    @js.native
+    def defaultProps: ICalendarProps = js.native
+    inline def defaultProps_=(x: ICalendarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/Calendar", "DateRangeType")
   @js.native
-  object DateRangeType extends js.Object {
-    /* 0 */ val Day: typingsJapgolly.officeUiFabricReact.dateValuesMod.DateRangeType.Day with Double = js.native
-    /* 2 */ val Month: typingsJapgolly.officeUiFabricReact.dateValuesMod.DateRangeType.Month with Double = js.native
-    /* 1 */ val Week: typingsJapgolly.officeUiFabricReact.dateValuesMod.DateRangeType.Week with Double = js.native
-    /* 3 */ val WorkWeek: typingsJapgolly.officeUiFabricReact.dateValuesMod.DateRangeType.WorkWeek with Double = js.native
+  object DateRangeType extends StObject {
+    
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.officeUiFabricReact.dateValuesMod.DateRangeType with Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType & Double
+      ] = js.native
+    
+    /* 0 */ val Day: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType.Day & Double = js.native
+    
+    /* 2 */ val Month: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType.Month & Double = js.native
+    
+    /* 1 */ val Week: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType.Week & Double = js.native
+    
+    /* 3 */ val WorkWeek: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType.WorkWeek & Double = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/Calendar", "DayOfWeek")
   @js.native
-  object DayOfWeek extends js.Object {
-    /* 5 */ val Friday: typingsJapgolly.officeUiFabricReact.dateValuesMod.DayOfWeek.Friday with Double = js.native
-    /* 1 */ val Monday: typingsJapgolly.officeUiFabricReact.dateValuesMod.DayOfWeek.Monday with Double = js.native
-    /* 6 */ val Saturday: typingsJapgolly.officeUiFabricReact.dateValuesMod.DayOfWeek.Saturday with Double = js.native
-    /* 0 */ val Sunday: typingsJapgolly.officeUiFabricReact.dateValuesMod.DayOfWeek.Sunday with Double = js.native
-    /* 4 */ val Thursday: typingsJapgolly.officeUiFabricReact.dateValuesMod.DayOfWeek.Thursday with Double = js.native
-    /* 2 */ val Tuesday: typingsJapgolly.officeUiFabricReact.dateValuesMod.DayOfWeek.Tuesday with Double = js.native
-    /* 3 */ val Wednesday: typingsJapgolly.officeUiFabricReact.dateValuesMod.DayOfWeek.Wednesday with Double = js.native
+  object DayOfWeek extends StObject {
+    
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.officeUiFabricReact.dateValuesMod.DayOfWeek with Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek & Double
+      ] = js.native
+    
+    /* 5 */ val Friday: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Friday & Double = js.native
+    
+    /* 1 */ val Monday: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Monday & Double = js.native
+    
+    /* 6 */ val Saturday: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Saturday & Double = js.native
+    
+    /* 0 */ val Sunday: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Sunday & Double = js.native
+    
+    /* 4 */ val Thursday: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Thursday & Double = js.native
+    
+    /* 2 */ val Tuesday: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Tuesday & Double = js.native
+    
+    /* 3 */ val Wednesday: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DayOfWeek.Wednesday & Double = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/Calendar", "FirstWeekOfYear")
   @js.native
-  object FirstWeekOfYear extends js.Object {
-    /* 0 */ val FirstDay: typingsJapgolly.officeUiFabricReact.dateValuesMod.FirstWeekOfYear.FirstDay with Double = js.native
-    /* 2 */ val FirstFourDayWeek: typingsJapgolly.officeUiFabricReact.dateValuesMod.FirstWeekOfYear.FirstFourDayWeek with Double = js.native
-    /* 1 */ val FirstFullWeek: typingsJapgolly.officeUiFabricReact.dateValuesMod.FirstWeekOfYear.FirstFullWeek with Double = js.native
+  object FirstWeekOfYear extends StObject {
+    
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.officeUiFabricReact.dateValuesMod.FirstWeekOfYear with Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.FirstWeekOfYear & Double
+      ] = js.native
+    
+    /* 0 */ val FirstDay: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.FirstWeekOfYear.FirstDay & Double = js.native
+    
+    /* 2 */ val FirstFourDayWeek: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.FirstWeekOfYear.FirstFourDayWeek & Double = js.native
+    
+    /* 1 */ val FirstFullWeek: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.FirstWeekOfYear.FirstFullWeek & Double = js.native
   }
-  
 }
-

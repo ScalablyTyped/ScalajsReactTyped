@@ -1,14 +1,21 @@
 package typingsJapgolly.storybookAddonLinks.components
 
-import typingsJapgolly.storybookAddonLinks.reactMod.default
+import typingsJapgolly.storybookAddonLinks.distTs3Dot9ReactComponentsLinkMod.Props
+import typingsJapgolly.storybookAddonLinks.distTs3Dot9ReactMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object React extends SharedApply_Props_307887035[default] {
-  @JSImport("@storybook/addon-links/dist/react", JSImport.Default)
-  @js.native
-  override object componentImport extends js.Object
+object React {
   
+  inline def apply(kind: String, story: String): SharedBuilder_Props1666750416[default] = {
+    val __props = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
+    new SharedBuilder_Props1666750416[default](js.Array(this.component, __props.asInstanceOf[Props]))
+  }
+  
+  @JSImport("@storybook/addon-links/dist/ts3.9/react", JSImport.Default)
+  @js.native
+  val component: js.Object = js.native
+  
+  def withProps(p: Props): SharedBuilder_Props1666750416[default] = new SharedBuilder_Props1666750416[default](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.menuListMenuListMod.MenuListProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/MenuList", JSImport.Namespace)
-@js.native
-object menuListMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[MenuListProps, ComponentState, js.Any] {
-    def this(props: MenuListProps) = this()
-    def this(props: MenuListProps, context: js.Any) = this()
-  }
+object menuListMod {
   
+  @JSImport("@material-ui/core/MenuList", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[MenuListProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: MenuListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

@@ -1,11 +1,10 @@
 package typingsJapgolly.fabric.mod.fabric
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.Canvas2dFilterBackend")
 @js.native
-class Canvas2dFilterBackend ()
+open class Canvas2dFilterBackend ()
   extends typingsJapgolly.fabric.fabricImplMod.Canvas2dFilterBackend
-

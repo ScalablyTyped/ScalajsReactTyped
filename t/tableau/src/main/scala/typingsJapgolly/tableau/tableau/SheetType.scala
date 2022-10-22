@@ -1,35 +1,27 @@
 package typingsJapgolly.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SheetType extends js.Object
-
+sealed trait SheetType extends StObject
 @JSGlobal("tableau.SheetType")
 @js.native
-object SheetType extends js.Object {
-  @js.native
-  sealed trait DASHBOARD extends SheetType
+object SheetType extends StObject {
   
   @js.native
-  sealed trait STORY extends SheetType
+  sealed trait DASHBOARD
+    extends StObject
+       with SheetType
   
   @js.native
-  sealed trait WORKSHEET extends SheetType
+  sealed trait STORY
+    extends StObject
+       with SheetType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SheetType with String] = js.native
-  /* "dashboard" */ @js.native
-  object DASHBOARD extends TopLevel[DASHBOARD with String]
-  
-  /* "story" */ @js.native
-  object STORY extends TopLevel[STORY with String]
-  
-  /* "worksheet" */ @js.native
-  object WORKSHEET extends TopLevel[WORKSHEET with String]
-  
+  @js.native
+  sealed trait WORKSHEET
+    extends StObject
+       with SheetType
 }
-

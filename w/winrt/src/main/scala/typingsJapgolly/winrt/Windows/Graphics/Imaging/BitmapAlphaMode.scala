@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Graphics.Imaging
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BitmapAlphaMode extends js.Object
-
+sealed trait BitmapAlphaMode extends StObject
 @JSGlobal("Windows.Graphics.Imaging.BitmapAlphaMode")
 @js.native
-object BitmapAlphaMode extends js.Object {
-  @js.native
-  sealed trait ignore extends BitmapAlphaMode
+object BitmapAlphaMode extends StObject {
   
   @js.native
-  sealed trait premultiplied extends BitmapAlphaMode
+  sealed trait ignore
+    extends StObject
+       with BitmapAlphaMode
   
   @js.native
-  sealed trait straight extends BitmapAlphaMode
+  sealed trait premultiplied
+    extends StObject
+       with BitmapAlphaMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BitmapAlphaMode with Double] = js.native
-  /* 2 */ @js.native
-  object ignore extends TopLevel[ignore with Double]
-  
-  /* 0 */ @js.native
-  object premultiplied extends TopLevel[premultiplied with Double]
-  
-  /* 1 */ @js.native
-  object straight extends TopLevel[straight with Double]
-  
+  @js.native
+  sealed trait straight
+    extends StObject
+       with BitmapAlphaMode
 }
-

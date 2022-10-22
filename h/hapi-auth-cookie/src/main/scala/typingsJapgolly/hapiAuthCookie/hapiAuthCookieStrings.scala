@@ -1,49 +1,40 @@
 package typingsJapgolly.hapiAuthCookie
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hapiAuthCookieStrings {
-  @js.native
-  sealed trait Lax extends js.Object
   
   @js.native
-  sealed trait Strict extends js.Object
+  sealed trait Lax extends StObject
+  inline def Lax: Lax = "Lax".asInstanceOf[Lax]
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait Strict extends StObject
+  inline def Strict: Strict = "Strict".asInstanceOf[Strict]
   
   @js.native
-  sealed trait base64json extends js.Object
+  sealed trait base64 extends StObject
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait cookie extends js.Object
+  sealed trait base64json extends StObject
+  inline def base64json: base64json = "base64json".asInstanceOf[base64json]
   
   @js.native
-  sealed trait form extends js.Object
+  sealed trait cookie extends StObject
+  inline def cookie: cookie = "cookie".asInstanceOf[cookie]
   
   @js.native
-  sealed trait iron extends js.Object
+  sealed trait form extends StObject
+  inline def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait iron extends StObject
+  inline def iron: iron = "iron".asInstanceOf[iron]
   
-  @scala.inline
-  def Lax: Lax = "Lax".asInstanceOf[Lax]
-  @scala.inline
-  def Strict: Strict = "Strict".asInstanceOf[Strict]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def base64json: base64json = "base64json".asInstanceOf[base64json]
-  @scala.inline
-  def cookie: cookie = "cookie".asInstanceOf[cookie]
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
-  @scala.inline
-  def iron: iron = "iron".asInstanceOf[iron]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
 }
-

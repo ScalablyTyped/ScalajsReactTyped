@@ -1,53 +1,45 @@
 package typingsJapgolly.yandexMaps.mod
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.yandexMaps.anon.DomEvent
+import typingsJapgolly.yandexMaps.yandexMapsStrings.`type`
+import typingsJapgolly.yandexMaps.yandexMapsStrings.newZoom
+import typingsJapgolly.yandexMaps.yandexMapsStrings.objectId
+import typingsJapgolly.yandexMaps.yandexMapsStrings.oldZoom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IEvent extends js.Object {
-  def allowMapEvent(): Unit
-  def callMethod(name: String): Unit
-  def get(name: String): js.Object
-  def getSourceEvent(): IEvent | Null
-  def isDefaultPrevented(): Boolean
-  def isImmediatePropagationStopped(): Boolean
-  def isMapEventAllowed(): Boolean
-  def isPropagationStopped(): Boolean
-  def preventDefault(): Boolean
-  def stopImmediatePropagation(): Boolean
-  def stopPropagation(): Boolean
+@js.native
+trait IEvent[OriginalEvent, TargetGeometry] extends StObject {
+  
+  def allowMapEvent(): Unit = js.native
+  
+  def callMethod(name: String): Unit = js.native
+  
+  def get(name: newZoom | oldZoom): js.UndefOr[Double] = js.native
+  def get(name: String): Any = js.native
+  def get[T /* <: OriginalEvent */, K /* <: /* keyof T */ String */](name: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  
+  def getSourceEvent(): (IEvent[OriginalEvent, TargetGeometry]) | Null = js.native
+  
+  @JSName("get")
+  def get_objectId(name: objectId): js.UndefOr[String] = js.native
+  @JSName("get")
+  def get_type(name: `type`): String = js.native
+  
+  def isDefaultPrevented(): Boolean = js.native
+  
+  def isImmediatePropagationStopped(): Boolean = js.native
+  
+  def isMapEventAllowed(): Boolean = js.native
+  
+  def isPropagationStopped(): Boolean = js.native
+  
+  var originalEvent: DomEvent[OriginalEvent, TargetGeometry] = js.native
+  
+  def preventDefault(): Boolean = js.native
+  
+  def stopImmediatePropagation(): Boolean = js.native
+  
+  def stopPropagation(): Boolean = js.native
 }
-
-object IEvent {
-  @scala.inline
-  def apply(
-    allowMapEvent: Callback,
-    callMethod: String => Callback,
-    get: String => CallbackTo[js.Object],
-    getSourceEvent: CallbackTo[IEvent | Null],
-    isDefaultPrevented: CallbackTo[Boolean],
-    isImmediatePropagationStopped: CallbackTo[Boolean],
-    isMapEventAllowed: CallbackTo[Boolean],
-    isPropagationStopped: CallbackTo[Boolean],
-    preventDefault: CallbackTo[Boolean],
-    stopImmediatePropagation: CallbackTo[Boolean],
-    stopPropagation: CallbackTo[Boolean]
-  ): IEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowMapEvent")(allowMapEvent.toJsFn)
-    __obj.updateDynamic("callMethod")(js.Any.fromFunction1((t0: java.lang.String) => callMethod(t0).runNow()))
-    __obj.updateDynamic("get")(js.Any.fromFunction1((t0: java.lang.String) => get(t0).runNow()))
-    __obj.updateDynamic("getSourceEvent")(getSourceEvent.toJsFn)
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    __obj.updateDynamic("isImmediatePropagationStopped")(isImmediatePropagationStopped.toJsFn)
-    __obj.updateDynamic("isMapEventAllowed")(isMapEventAllowed.toJsFn)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped.toJsFn)
-    __obj.updateDynamic("preventDefault")(preventDefault.toJsFn)
-    __obj.updateDynamic("stopImmediatePropagation")(stopImmediatePropagation.toJsFn)
-    __obj.updateDynamic("stopPropagation")(stopPropagation.toJsFn)
-    __obj.asInstanceOf[IEvent]
-  }
-}
-

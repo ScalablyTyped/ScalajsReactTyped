@@ -1,14 +1,16 @@
 package typingsJapgolly.reactable.components
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object Tfoot
-  extends SharedApply_Object_1928072692[typingsJapgolly.reactable.mod.Tfoot] {
+object Tfoot {
+  
   @JSImport("reactable", "Tfoot")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: Tfoot.type): SharedBuilder_Object_159303587[typingsJapgolly.reactable.mod.Tfoot] = new SharedBuilder_Object_159303587[typingsJapgolly.reactable.mod.Tfoot](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: js.Object): SharedBuilder_Object_159303587[typingsJapgolly.reactable.mod.Tfoot] = new SharedBuilder_Object_159303587[typingsJapgolly.reactable.mod.Tfoot](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

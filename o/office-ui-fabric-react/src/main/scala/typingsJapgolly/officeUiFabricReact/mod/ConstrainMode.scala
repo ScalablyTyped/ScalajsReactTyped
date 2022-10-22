@@ -1,17 +1,19 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "ConstrainMode")
 @js.native
-object ConstrainMode extends js.Object {
-  /* 1 */ val horizontalConstrained: typingsJapgolly.officeUiFabricReact.detailsListTypesMod.ConstrainMode.horizontalConstrained with Double = js.native
-  /* 0 */ val unconstrained: typingsJapgolly.officeUiFabricReact.detailsListTypesMod.ConstrainMode.unconstrained with Double = js.native
+object ConstrainMode extends StObject {
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typingsJapgolly.officeUiFabricReact.detailsListTypesMod.ConstrainMode with Double
+    typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ConstrainMode & Double
   ] = js.native
+  
+  /* 1 */ val horizontalConstrained: typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ConstrainMode.horizontalConstrained & Double = js.native
+  
+  /* 0 */ val unconstrained: typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ConstrainMode.unconstrained & Double = js.native
 }
-

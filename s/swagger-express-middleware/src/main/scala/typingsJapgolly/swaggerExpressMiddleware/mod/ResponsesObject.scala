@@ -1,21 +1,25 @@
 package typingsJapgolly.swaggerExpressMiddleware.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ResponsesObject
-  extends /* index */ StringDictionary[Response | js.Any] {
+  extends StObject
+     with /* index */ StringDictionary[Response | Any] {
+  
   var default: Response
 }
-
 object ResponsesObject {
-  @scala.inline
-  def apply(default: Response, StringDictionary: /* index */ StringDictionary[Response | js.Any] = null): ResponsesObject = {
+  
+  inline def apply(default: Response): ResponsesObject = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ResponsesObject]
   }
+  
+  extension [Self <: ResponsesObject](x: Self) {
+    
+    inline def setDefault(value: Response): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+  }
 }
-

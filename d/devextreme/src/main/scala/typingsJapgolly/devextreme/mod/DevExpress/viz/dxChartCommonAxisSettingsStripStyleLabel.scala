@@ -1,35 +1,47 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.devextremeStrings.bottom
-import typingsJapgolly.devextreme.devextremeStrings.center
-import typingsJapgolly.devextreme.devextremeStrings.left
-import typingsJapgolly.devextreme.devextremeStrings.right
-import typingsJapgolly.devextreme.devextremeStrings.top
+import typingsJapgolly.devextreme.mod.DevExpress.common.HorizontalAlignment
+import typingsJapgolly.devextreme.mod.DevExpress.common.VerticalAlignment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxChartCommonAxisSettingsStripStyleLabel extends js.Object {
-  /** Specifies font options for strip labels. */
+trait dxChartCommonAxisSettingsStripStyleLabel extends StObject {
+  
+  /**
+    * Specifies font properties for strip labels.
+    */
   var font: js.UndefOr[Font] = js.undefined
-  /** Aligns strip labels in the horizontal direction. */
-  var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
-  /** Aligns strip labels in the vertical direction. */
-  var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
+  
+  /**
+    * Aligns strip labels in the horizontal direction.
+    */
+  var horizontalAlignment: js.UndefOr[HorizontalAlignment] = js.undefined
+  
+  /**
+    * Aligns strip labels in the vertical direction.
+    */
+  var verticalAlignment: js.UndefOr[VerticalAlignment] = js.undefined
 }
-
 object dxChartCommonAxisSettingsStripStyleLabel {
-  @scala.inline
-  def apply(
-    font: Font = null,
-    horizontalAlignment: center | left | right = null,
-    verticalAlignment: bottom | center | top = null
-  ): dxChartCommonAxisSettingsStripStyleLabel = {
+  
+  inline def apply(): dxChartCommonAxisSettingsStripStyleLabel = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartCommonAxisSettingsStripStyleLabel]
   }
+  
+  extension [Self <: dxChartCommonAxisSettingsStripStyleLabel](x: Self) {
+    
+    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setHorizontalAlignment(value: HorizontalAlignment): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    
+    inline def setVerticalAlignment(value: VerticalAlignment): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+  }
 }
-

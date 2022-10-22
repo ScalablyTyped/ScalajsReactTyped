@@ -1,27 +1,38 @@
 package typingsJapgolly.sequelize.mod
 
-import typingsJapgolly.sequelize.AnonDatabase
+import typingsJapgolly.sequelize.anon.Database
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for replication Options in the sequelize constructor
   *
   * @see Options
   */
-trait ReplicationOptions extends js.Object {
-  var read: js.UndefOr[js.Array[AnonDatabase]] = js.undefined
-  var write: js.UndefOr[AnonDatabase] = js.undefined
+trait ReplicationOptions extends StObject {
+  
+  var read: js.UndefOr[js.Array[Database]] = js.undefined
+  
+  var write: js.UndefOr[Database] = js.undefined
 }
-
 object ReplicationOptions {
-  @scala.inline
-  def apply(read: js.Array[AnonDatabase] = null, write: AnonDatabase = null): ReplicationOptions = {
+  
+  inline def apply(): ReplicationOptions = {
     val __obj = js.Dynamic.literal()
-    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
-    if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationOptions]
   }
+  
+  extension [Self <: ReplicationOptions](x: Self) {
+    
+    inline def setRead(value: js.Array[Database]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    
+    inline def setReadVarargs(value: Database*): Self = StObject.set(x, "read", js.Array(value*))
+    
+    inline def setWrite(value: Database): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    
+    inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+  }
 }
-

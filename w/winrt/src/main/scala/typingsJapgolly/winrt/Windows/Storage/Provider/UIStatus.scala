@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Storage.Provider
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UIStatus extends js.Object
-
+sealed trait UIStatus extends StObject
 @JSGlobal("Windows.Storage.Provider.UIStatus")
 @js.native
-object UIStatus extends js.Object {
-  @js.native
-  sealed trait complete extends UIStatus
+object UIStatus extends StObject {
   
   @js.native
-  sealed trait hidden extends UIStatus
+  sealed trait complete
+    extends StObject
+       with UIStatus
   
   @js.native
-  sealed trait unavailable extends UIStatus
+  sealed trait hidden
+    extends StObject
+       with UIStatus
   
   @js.native
-  sealed trait visible extends UIStatus
+  sealed trait unavailable
+    extends StObject
+       with UIStatus
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UIStatus with Double] = js.native
-  /* 3 */ @js.native
-  object complete extends TopLevel[complete with Double]
-  
-  /* 1 */ @js.native
-  object hidden extends TopLevel[hidden with Double]
-  
-  /* 0 */ @js.native
-  object unavailable extends TopLevel[unavailable with Double]
-  
-  /* 2 */ @js.native
-  object visible extends TopLevel[visible with Double]
-  
+  @js.native
+  sealed trait visible
+    extends StObject
+       with UIStatus
 }
-

@@ -1,35 +1,28 @@
 package typingsJapgolly.playerframework.PlayerFramework
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ImageErrorCode extends js.Object
-
+sealed trait ImageErrorCode extends StObject
 @JSGlobal("PlayerFramework.ImageErrorCode")
 @js.native
-object ImageErrorCode extends js.Object {
-  /**
-  		* Image download was aborted.
-  		**/
-  @js.native
-  sealed trait aborted extends ImageErrorCode
+object ImageErrorCode extends StObject {
   
   /**
-  		* An unknown image error occurred.
-  		**/
+    * Image download was aborted.
+    **/
   @js.native
-  sealed trait unknown extends ImageErrorCode
+  sealed trait aborted
+    extends StObject
+       with ImageErrorCode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ImageErrorCode with Double] = js.native
-  /* 1 */ @js.native
-  object aborted extends TopLevel[aborted with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  /**
+    * An unknown image error occurred.
+    **/
+  @js.native
+  sealed trait unknown
+    extends StObject
+       with ImageErrorCode
 }
-

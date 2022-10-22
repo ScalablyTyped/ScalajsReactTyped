@@ -1,30 +1,44 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events which concern clicking on the control's tabs.
   */
-@JSGlobal("ASPxClientTabControlTabClickEventArgs")
-@js.native
-class ASPxClientTabControlTabClickEventArgs protected () extends ASPxClientTabControlTabCancelEventArgs {
-  /**
-    * Initializes a new object of the ASPxClientTabControlTabClickEventArgs type with the specified settings.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
-    * @param tab An ASPxClientTab object that represents a tab related to the event.
-    * @param htmlElement An HTML object that contains the processed tab.
-    * @param htmlEvent A DHTML event object that relates to the processed event.
-    */
-  def this(processOnServer: Boolean, tab: ASPxClientTab, htmlElement: js.Any, htmlEvent: js.Any) = this()
+trait ASPxClientTabControlTabClickEventArgs
+  extends StObject
+     with ASPxClientTabControlTabCancelEventArgs {
+  
   /**
     * Gets the HTML object that contains the processed tab.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any
+  
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any
 }
-
+object ASPxClientTabControlTabClickEventArgs {
+  
+  inline def apply(
+    cancel: Boolean,
+    htmlElement: Any,
+    htmlEvent: Any,
+    processOnServer: Boolean,
+    reloadContentOnCallback: Boolean,
+    tab: ASPxClientTab
+  ): ASPxClientTabControlTabClickEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], reloadContentOnCallback = reloadContentOnCallback.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientTabControlTabClickEventArgs]
+  }
+  
+  extension [Self <: ASPxClientTabControlTabClickEventArgs](x: Self) {
+    
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+  }
+}

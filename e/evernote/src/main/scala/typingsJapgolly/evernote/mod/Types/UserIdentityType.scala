@@ -1,35 +1,33 @@
 package typingsJapgolly.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UserIdentityType extends js.Object
-
+sealed trait UserIdentityType extends StObject
 @JSImport("evernote", "Types.UserIdentityType")
 @js.native
-object UserIdentityType extends js.Object {
-  @js.native
-  sealed trait EMAIL extends UserIdentityType
-  
-  @js.native
-  sealed trait EVERNOTE_USERID extends UserIdentityType
-  
-  @js.native
-  sealed trait IDENTITYID extends UserIdentityType
+object UserIdentityType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UserIdentityType with Double] = js.native
-  /* 2 */ @js.native
-  object EMAIL extends TopLevel[EMAIL with Double]
+  def apply(value: Double): js.UndefOr[UserIdentityType & Double] = js.native
   
-  /* 1 */ @js.native
-  object EVERNOTE_USERID extends TopLevel[EVERNOTE_USERID with Double]
+  @js.native
+  sealed trait EMAIL
+    extends StObject
+       with UserIdentityType
+  /* 2 */ val EMAIL: typingsJapgolly.evernote.mod.Types.UserIdentityType.EMAIL & Double = js.native
   
-  /* 3 */ @js.native
-  object IDENTITYID extends TopLevel[IDENTITYID with Double]
+  @js.native
+  sealed trait EVERNOTE_USERID
+    extends StObject
+       with UserIdentityType
+  /* 1 */ val EVERNOTE_USERID: typingsJapgolly.evernote.mod.Types.UserIdentityType.EVERNOTE_USERID & Double = js.native
   
+  @js.native
+  sealed trait IDENTITYID
+    extends StObject
+       with UserIdentityType
+  /* 3 */ val IDENTITYID: typingsJapgolly.evernote.mod.Types.UserIdentityType.IDENTITYID & Double = js.native
 }
-

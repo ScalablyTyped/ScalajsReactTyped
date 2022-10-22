@@ -1,31 +1,24 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NavigationBarOrientation extends js.Object
-
+sealed trait NavigationBarOrientation extends StObject
 @JSGlobal("Microsoft.Maps.NavigationBarOrientation")
 @js.native
-object NavigationBarOrientation extends js.Object {
+object NavigationBarOrientation extends StObject {
+  
   /** Repositions the buttons in the navigation bar such that they are aligned horizontally. */
   @js.native
-  sealed trait horizontal extends NavigationBarOrientation
+  sealed trait horizontal
+    extends StObject
+       with NavigationBarOrientation
   
   /** Repositions the buttons in the navigation bar such that they are aligned vertically. */
   @js.native
-  sealed trait vertical extends NavigationBarOrientation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NavigationBarOrientation with Double] = js.native
-  /* 0 */ @js.native
-  object horizontal extends TopLevel[horizontal with Double]
-  
-  /* 1 */ @js.native
-  object vertical extends TopLevel[vertical with Double]
-  
+  sealed trait vertical
+    extends StObject
+       with NavigationBarOrientation
 }
-

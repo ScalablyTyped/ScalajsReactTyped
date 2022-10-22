@@ -1,37 +1,38 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait VariableDeclarator
-  extends BaseNode
-     with Node {
+  extends StObject
+     with BaseNode {
+  
   var id: Pattern
+  
   var init: js.UndefOr[Expression | Null] = js.undefined
+  
   @JSName("type")
   var type_VariableDeclarator: typingsJapgolly.estree.estreeStrings.VariableDeclarator
 }
-
 object VariableDeclarator {
-  @scala.inline
-  def apply(
-    id: Pattern,
-    `type`: typingsJapgolly.estree.estreeStrings.VariableDeclarator,
-    init: Expression = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): VariableDeclarator = {
+  
+  inline def apply(id: Pattern): VariableDeclarator = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VariableDeclarator")
     __obj.asInstanceOf[VariableDeclarator]
   }
+  
+  extension [Self <: VariableDeclarator](x: Self) {
+    
+    inline def setId(value: Pattern): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setInit(value: Expression): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    
+    inline def setInitNull: Self = StObject.set(x, "init", null)
+    
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.VariableDeclarator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

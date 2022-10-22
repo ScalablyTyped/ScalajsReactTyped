@@ -1,25 +1,30 @@
 package typingsJapgolly.breeze.breeze
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NamingConventionOptions extends js.Object {
+trait NamingConventionOptions extends StObject {
+  
   var clientPropertyNameToServer: js.UndefOr[js.Function1[/* name */ String, String]] = js.undefined
+  
   var serverPropertyNameToClient: js.UndefOr[js.Function1[/* name */ String, String]] = js.undefined
 }
-
 object NamingConventionOptions {
-  @scala.inline
-  def apply(
-    clientPropertyNameToServer: /* name */ String => CallbackTo[String] = null,
-    serverPropertyNameToClient: /* name */ String => CallbackTo[String] = null
-  ): NamingConventionOptions = {
+  
+  inline def apply(): NamingConventionOptions = {
     val __obj = js.Dynamic.literal()
-    if (clientPropertyNameToServer != null) __obj.updateDynamic("clientPropertyNameToServer")(js.Any.fromFunction1((t0: /* name */ java.lang.String) => clientPropertyNameToServer(t0).runNow()))
-    if (serverPropertyNameToClient != null) __obj.updateDynamic("serverPropertyNameToClient")(js.Any.fromFunction1((t0: /* name */ java.lang.String) => serverPropertyNameToClient(t0).runNow()))
     __obj.asInstanceOf[NamingConventionOptions]
   }
+  
+  extension [Self <: NamingConventionOptions](x: Self) {
+    
+    inline def setClientPropertyNameToServer(value: /* name */ String => String): Self = StObject.set(x, "clientPropertyNameToServer", js.Any.fromFunction1(value))
+    
+    inline def setClientPropertyNameToServerUndefined: Self = StObject.set(x, "clientPropertyNameToServer", js.undefined)
+    
+    inline def setServerPropertyNameToClient(value: /* name */ String => String): Self = StObject.set(x, "serverPropertyNameToClient", js.Any.fromFunction1(value))
+    
+    inline def setServerPropertyNameToClientUndefined: Self = StObject.set(x, "serverPropertyNameToClient", js.undefined)
+  }
 }
-

@@ -1,74 +1,128 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookChart extends Entity {
+trait WorkbookChart
+  extends StObject
+     with Entity {
+  
   // Represents chart axes. Read-only.
-  var axes: js.UndefOr[WorkbookChartAxes] = js.undefined
+  var axes: js.UndefOr[NullableOption[WorkbookChartAxes]] = js.undefined
+  
   // Represents the datalabels on the chart. Read-only.
-  var dataLabels: js.UndefOr[WorkbookChartDataLabels] = js.undefined
+  var dataLabels: js.UndefOr[NullableOption[WorkbookChartDataLabels]] = js.undefined
+  
   // Encapsulates the format properties for the chart area. Read-only.
-  var format: js.UndefOr[WorkbookChartAreaFormat] = js.undefined
+  var format: js.UndefOr[NullableOption[WorkbookChartAreaFormat]] = js.undefined
+  
   // Represents the height, in points, of the chart object.
   var height: js.UndefOr[Double] = js.undefined
+  
   // The distance, in points, from the left side of the chart to the worksheet origin.
   var left: js.UndefOr[Double] = js.undefined
+  
   // Represents the legend for the chart. Read-only.
-  var legend: js.UndefOr[WorkbookChartLegend] = js.undefined
+  var legend: js.UndefOr[NullableOption[WorkbookChartLegend]] = js.undefined
+  
   // Represents the name of a chart object.
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Represents either a single series or collection of series in the chart. Read-only.
-  var series: js.UndefOr[js.Array[WorkbookChartSeries]] = js.undefined
+  var series: js.UndefOr[NullableOption[js.Array[WorkbookChartSeries]]] = js.undefined
+  
   /**
     * Represents the title of the specified chart, including the text, visibility, position and formating of the title.
     * Read-only.
     */
-  var title: js.UndefOr[WorkbookChartTitle] = js.undefined
+  var title: js.UndefOr[NullableOption[WorkbookChartTitle]] = js.undefined
+  
   /**
     * Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of
     * the chart area (on a chart).
     */
   var top: js.UndefOr[Double] = js.undefined
+  
   // Represents the width, in points, of the chart object.
   var width: js.UndefOr[Double] = js.undefined
+  
   // The worksheet containing the current chart. Read-only.
-  var worksheet: js.UndefOr[WorkbookWorksheet] = js.undefined
+  var worksheet: js.UndefOr[NullableOption[WorkbookWorksheet]] = js.undefined
 }
-
 object WorkbookChart {
-  @scala.inline
-  def apply(
-    axes: WorkbookChartAxes = null,
-    dataLabels: WorkbookChartDataLabels = null,
-    format: WorkbookChartAreaFormat = null,
-    height: Int | Double = null,
-    id: String = null,
-    left: Int | Double = null,
-    legend: WorkbookChartLegend = null,
-    name: String = null,
-    series: js.Array[WorkbookChartSeries] = null,
-    title: WorkbookChartTitle = null,
-    top: Int | Double = null,
-    width: Int | Double = null,
-    worksheet: WorkbookWorksheet = null
-  ): WorkbookChart = {
+  
+  inline def apply(): WorkbookChart = {
     val __obj = js.Dynamic.literal()
-    if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChart]
   }
+  
+  extension [Self <: WorkbookChart](x: Self) {
+    
+    inline def setAxes(value: NullableOption[WorkbookChartAxes]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+    
+    inline def setAxesNull: Self = StObject.set(x, "axes", null)
+    
+    inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+    
+    inline def setDataLabels(value: NullableOption[WorkbookChartDataLabels]): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
+    
+    inline def setDataLabelsNull: Self = StObject.set(x, "dataLabels", null)
+    
+    inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
+    
+    inline def setFormat(value: NullableOption[WorkbookChartAreaFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatNull: Self = StObject.set(x, "format", null)
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setLegend(value: NullableOption[WorkbookChartLegend]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    
+    inline def setLegendNull: Self = StObject.set(x, "legend", null)
+    
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSeries(value: NullableOption[js.Array[WorkbookChartSeries]]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesNull: Self = StObject.set(x, "series", null)
+    
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    
+    inline def setSeriesVarargs(value: WorkbookChartSeries*): Self = StObject.set(x, "series", js.Array(value*))
+    
+    inline def setTitle(value: NullableOption[WorkbookChartTitle]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setWorksheet(value: NullableOption[WorkbookWorksheet]): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
+    
+    inline def setWorksheetNull: Self = StObject.set(x, "worksheet", null)
+    
+    inline def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
+  }
 }
-

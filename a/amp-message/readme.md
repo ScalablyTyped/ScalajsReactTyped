@@ -10,10 +10,10 @@ Higher level Message object for the AMP protocol
 | ------------------ | :-------------: |
 | Full name          | amp-message |
 | Keywords           | amp, actor, message, messaging, zmq, zeromq |
-| # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 14680801 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4222900.666666667 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/visionmedia/node-amp-message)

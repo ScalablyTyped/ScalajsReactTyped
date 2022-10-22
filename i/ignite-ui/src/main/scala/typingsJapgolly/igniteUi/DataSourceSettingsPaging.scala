@@ -1,81 +1,98 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DataSourceSettingsPaging
-  extends /**
-	 * Option for DataSourceSettingsPaging
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Whether when a new page of data is requested we should append the new data to the existing data
-  	 *
-  	 */
+    * Whether when a new page of data is requested we should append the new data to the existing data
+    *
+    */
   var appendPage: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Paging is not enabled by default
-  	 *
-  	 */
+    * Paging is not enabled by default
+    *
+    */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Current page index
-  	 *
-  	 */
+    * Current page index
+    *
+    */
   var pageIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Denotes the name of the encoded URL parameter that will state what is the currently requested page index
-  	 *
-  	 */
+    * Denotes the name of the encoded URL parameter that will state what is the currently requested page index
+    *
+    */
   var pageIndexUrlKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Number of records on each page
-  	 *
-  	 */
+    * Number of records on each page
+    *
+    */
   var pageSize: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Denotes the name of the encoded URL parameter that will state what is the currently requested page size
-  	 *
-  	 */
+    * Denotes the name of the encoded URL parameter that will state what is the currently requested page size
+    *
+    */
   var pageSizeUrlKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Type for the paging operation
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "local" Data is paged client-side.
-  	 * "remote" A remote request is done and URL params encoded
-  	 */
+    * Type for the paging operation
+    *
+    *
+    * Valid values:
+    * "local" Data is paged client-side.
+    * "remote" A remote request is done and URL params encoded
+    */
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object DataSourceSettingsPaging {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for DataSourceSettingsPaging
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    appendPage: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    pageIndex: Int | Double = null,
-    pageIndexUrlKey: String = null,
-    pageSize: Int | Double = null,
-    pageSizeUrlKey: String = null,
-    `type`: String = null
-  ): DataSourceSettingsPaging = {
+  
+  inline def apply(): DataSourceSettingsPaging = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(appendPage)) __obj.updateDynamic("appendPage")(appendPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (pageIndex != null) __obj.updateDynamic("pageIndex")(pageIndex.asInstanceOf[js.Any])
-    if (pageIndexUrlKey != null) __obj.updateDynamic("pageIndexUrlKey")(pageIndexUrlKey.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageSizeUrlKey != null) __obj.updateDynamic("pageSizeUrlKey")(pageSizeUrlKey.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSettingsPaging]
   }
+  
+  extension [Self <: DataSourceSettingsPaging](x: Self) {
+    
+    inline def setAppendPage(value: Boolean): Self = StObject.set(x, "appendPage", value.asInstanceOf[js.Any])
+    
+    inline def setAppendPageUndefined: Self = StObject.set(x, "appendPage", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
+    
+    inline def setPageIndexUndefined: Self = StObject.set(x, "pageIndex", js.undefined)
+    
+    inline def setPageIndexUrlKey(value: String): Self = StObject.set(x, "pageIndexUrlKey", value.asInstanceOf[js.Any])
+    
+    inline def setPageIndexUrlKeyUndefined: Self = StObject.set(x, "pageIndexUrlKey", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPageSizeUrlKey(value: String): Self = StObject.set(x, "pageSizeUrlKey", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUrlKeyUndefined: Self = StObject.set(x, "pageSizeUrlKey", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

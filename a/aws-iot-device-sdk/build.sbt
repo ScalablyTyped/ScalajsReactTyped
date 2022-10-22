@@ -1,18 +1,16 @@
 organization := "org.scalablytyped.japgolly"
 name := "aws-iot-device-sdk"
-version := "2.2.0-dt-20200225Z-8a1194"
-scalaVersion := "2.13.1"
+version := "2.2.11-dt-20220818Z-b59dbe"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "mqtt" % "3.0.0-a8b122",
-  "org.scalablytyped.japgolly" %%% "mqtt-packet" % "6.2.1-672d96",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "ws" % "7.2-dt-20200227Z-0c2dec")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "mqtt" % "4.3.7-55340d",
+  "org.scalablytyped.japgolly" %%% "mqtt-packet" % "8.1.2-9e1747",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "ws" % "8.5-dt-20220624Z-5c45c7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

@@ -1,27 +1,27 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebGLContextEventInit extends EventInit {
+trait WebGLContextEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
   var statusMessage: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object WebGLContextEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    statusMessage: java.lang.String = null
-  ): WebGLContextEventInit = {
+  
+  inline def apply(): WebGLContextEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLContextEventInit]
   }
+  
+  extension [Self <: WebGLContextEventInit](x: Self) {
+    
+    inline def setStatusMessage(value: java.lang.String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+  }
 }
-

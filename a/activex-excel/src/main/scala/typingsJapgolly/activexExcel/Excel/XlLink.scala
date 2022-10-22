@@ -1,31 +1,27 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`6`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`5`
+import typingsJapgolly.activexExcel.activexExcelInts.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`6`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`5`
+  - typingsJapgolly.activexExcel.activexExcelInts.`6`
 */
-trait XlLink extends js.Object
-
+trait XlLink extends StObject
 object XlLink {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlExcelLinks: `1` = this.cast(1)
-  @scala.inline
-  def xlOLELinks: `2` = this.cast(2)
-  @scala.inline
-  def xlPublishers: `5` = this.cast(5)
-  @scala.inline
-  def xlSubscribers: `6` = this.cast(6)
+  
+  inline def xlExcelLinks: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlOLELinks: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlPublishers: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlSubscribers: `6` = 6.asInstanceOf[`6`]
 }
-

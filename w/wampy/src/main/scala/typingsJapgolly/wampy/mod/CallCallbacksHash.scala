@@ -1,24 +1,30 @@
 package typingsJapgolly.wampy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CallCallbacksHash extends js.Object {
+trait CallCallbacksHash extends StObject {
+  
   var onError: js.UndefOr[ErrorCallback] = js.undefined
+  
   var onSuccess: js.UndefOr[SuccessCallback] = js.undefined
 }
-
 object CallCallbacksHash {
-  @scala.inline
-  def apply(
-    onError: /* args */ ErrorArgs => japgolly.scalajs.react.Callback = null,
-    onSuccess: /* args */ DataArgs => japgolly.scalajs.react.Callback = null
-  ): CallCallbacksHash = {
+  
+  inline def apply(): CallCallbacksHash = {
     val __obj = js.Dynamic.literal()
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.wampy.mod.ErrorArgs) => onError(t0).runNow()))
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.wampy.mod.DataArgs) => onSuccess(t0).runNow()))
     __obj.asInstanceOf[CallCallbacksHash]
   }
+  
+  extension [Self <: CallCallbacksHash](x: Self) {
+    
+    inline def setOnError(value: /* args */ ErrorArgs => japgolly.scalajs.react.Callback): Self = StObject.set(x, "onError", js.Any.fromFunction1((t0: /* args */ ErrorArgs) => value(t0).runNow()))
+    
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    
+    inline def setOnSuccess(value: /* args */ DataArgs => japgolly.scalajs.react.Callback): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1((t0: /* args */ DataArgs) => value(t0).runNow()))
+    
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+  }
 }
-

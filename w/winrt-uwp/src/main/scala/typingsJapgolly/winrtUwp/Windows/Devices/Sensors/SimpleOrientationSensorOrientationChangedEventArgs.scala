@@ -1,16 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the sensor reading–changed event. */
-@JSGlobal("Windows.Devices.Sensors.SimpleOrientationSensorOrientationChangedEventArgs")
-@js.native
-abstract class SimpleOrientationSensorOrientationChangedEventArgs () extends js.Object {
+trait SimpleOrientationSensorOrientationChangedEventArgs extends StObject {
+  
   /** Gets the current sensor orientation. */
-  var orientation: SimpleOrientation = js.native
+  var orientation: SimpleOrientation
+  
   /** Gets the time of the current sensor reading. */
-  var timestamp: js.Date = js.native
+  var timestamp: js.Date
 }
-
+object SimpleOrientationSensorOrientationChangedEventArgs {
+  
+  inline def apply(orientation: SimpleOrientation, timestamp: js.Date): SimpleOrientationSensorOrientationChangedEventArgs = {
+    val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SimpleOrientationSensorOrientationChangedEventArgs]
+  }
+  
+  extension [Self <: SimpleOrientationSensorOrientationChangedEventArgs](x: Self) {
+    
+    inline def setOrientation(value: SimpleOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+  }
+}

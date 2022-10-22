@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-jest
 
-Typings are for version 5.3.13
+Typings are for version 6.5.12
 
 ## Library description:
 React storybook addon that show component jest report
@@ -9,14 +9,14 @@ React storybook addon that show component jest report
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-jest |
-| Keywords           | addon, jest, react, report, results, storybook, unit-testing |
-| # releases         | 421 |
-| # dependents       | 9 |
-| # downloads        | 869344 |
-| # stars            | 1 |
+| Keywords           | addon, jest, react, report, results, storybook, unit-testing, test |
+| # releases         | 462 |
+| # dependents       | 0.0 |
+| # downloads        | 332064.3333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/addons/jest)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/addons/jest)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-jest)

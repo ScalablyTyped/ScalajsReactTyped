@@ -1,408 +1,423 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ListFormat extends js.Object
-
+sealed trait ListFormat extends StObject
 @JSImport("typescript", "ListFormat")
 @js.native
-object ListFormat extends js.Object {
-  @js.native
-  sealed trait AllowTrailingComma extends ListFormat
-  
-  @js.native
-  sealed trait AmpersandDelimited extends ListFormat
-  
-  @js.native
-  sealed trait AngleBrackets extends ListFormat
-  
-  @js.native
-  sealed trait ArrayBindingPatternElements extends ListFormat
-  
-  @js.native
-  sealed trait ArrayLiteralExpressionElements extends ListFormat
-  
-  @js.native
-  sealed trait AsteriskDelimited extends ListFormat
-  
-  @js.native
-  sealed trait BarDelimited extends ListFormat
-  
-  @js.native
-  sealed trait Braces extends ListFormat
-  
-  @js.native
-  sealed trait BracketsMask extends ListFormat
-  
-  @js.native
-  sealed trait CallExpressionArguments extends ListFormat
-  
-  @js.native
-  sealed trait CaseBlockClauses extends ListFormat
-  
-  @js.native
-  sealed trait CaseOrDefaultClauseStatements extends ListFormat
-  
-  @js.native
-  sealed trait ClassHeritageClauses extends ListFormat
-  
-  @js.native
-  sealed trait ClassMembers extends ListFormat
-  
-  @js.native
-  sealed trait CommaDelimited extends ListFormat
-  
-  @js.native
-  sealed trait CommaListElements extends ListFormat
-  
-  @js.native
-  sealed trait Decorators extends ListFormat
-  
-  @js.native
-  sealed trait DelimitersMask extends ListFormat
-  
-  @js.native
-  sealed trait EnumMembers extends ListFormat
-  
-  @js.native
-  sealed trait HeritageClauseTypes extends ListFormat
-  
-  @js.native
-  sealed trait HeritageClauses extends ListFormat
-  
-  @js.native
-  sealed trait Indented extends ListFormat
-  
-  @js.native
-  sealed trait IndexSignatureParameters extends ListFormat
-  
-  @js.native
-  sealed trait InterfaceMembers extends ListFormat
-  
-  @js.native
-  sealed trait IntersectionTypeConstituents extends ListFormat
-  
-  @js.native
-  sealed trait JSDocComment extends ListFormat
-  
-  @js.native
-  sealed trait JsxElementAttributes extends ListFormat
-  
-  @js.native
-  sealed trait JsxElementOrFragmentChildren extends ListFormat
-  
-  @js.native
-  sealed trait LinesMask extends ListFormat
-  
-  @js.native
-  sealed trait Modifiers extends ListFormat
-  
-  @js.native
-  sealed trait MultiLine extends ListFormat
-  
-  @js.native
-  sealed trait MultiLineBlockStatements extends ListFormat
-  
-  @js.native
-  sealed trait MultiLineFunctionBodyStatements extends ListFormat
-  
-  @js.native
-  sealed trait MultiLineTypeLiteralMembers extends ListFormat
-  
-  @js.native
-  sealed trait NamedImportsOrExportsElements extends ListFormat
-  
-  @js.native
-  sealed trait NewExpressionArguments extends ListFormat
-  
-  @js.native
-  sealed trait NoInterveningComments extends ListFormat
-  
-  @js.native
-  sealed trait NoSpaceIfEmpty extends ListFormat
-  
-  @js.native
-  sealed trait NoTrailingNewLine extends ListFormat
-  
-  @js.native
-  sealed trait None extends ListFormat
-  
-  @js.native
-  sealed trait NotDelimited extends ListFormat
-  
-  @js.native
-  sealed trait ObjectBindingPatternElements extends ListFormat
-  
-  @js.native
-  sealed trait ObjectLiteralExpressionProperties extends ListFormat
-  
-  @js.native
-  sealed trait Optional extends ListFormat
-  
-  @js.native
-  sealed trait OptionalIfEmpty extends ListFormat
-  
-  @js.native
-  sealed trait OptionalIfUndefined extends ListFormat
-  
-  @js.native
-  sealed trait Parameters extends ListFormat
-  
-  @js.native
-  sealed trait Parenthesis extends ListFormat
-  
-  @js.native
-  sealed trait PreferNewLine extends ListFormat
-  
-  @js.native
-  sealed trait PreserveLines extends ListFormat
-  
-  @js.native
-  sealed trait SingleElement extends ListFormat
-  
-  @js.native
-  sealed trait SingleLine extends ListFormat
-  
-  @js.native
-  sealed trait SingleLineBlockStatements extends ListFormat
-  
-  @js.native
-  sealed trait SingleLineFunctionBodyStatements extends ListFormat
-  
-  @js.native
-  sealed trait SingleLineTypeLiteralMembers extends ListFormat
-  
-  @js.native
-  sealed trait SourceFileStatements extends ListFormat
-  
-  @js.native
-  sealed trait SpaceBetweenBraces extends ListFormat
-  
-  @js.native
-  sealed trait SpaceBetweenSiblings extends ListFormat
-  
-  @js.native
-  sealed trait SquareBrackets extends ListFormat
-  
-  @js.native
-  sealed trait TemplateExpressionSpans extends ListFormat
-  
-  @js.native
-  sealed trait TupleTypeElements extends ListFormat
-  
-  @js.native
-  sealed trait TypeArguments extends ListFormat
-  
-  @js.native
-  sealed trait TypeParameters extends ListFormat
-  
-  @js.native
-  sealed trait UnionTypeConstituents extends ListFormat
-  
-  @js.native
-  sealed trait VariableDeclarationList extends ListFormat
+object ListFormat extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ListFormat with Double] = js.native
-  /* 64 */ @js.native
-  object AllowTrailingComma extends TopLevel[AllowTrailingComma with Double]
-  
-  /* 8 */ @js.native
-  object AmpersandDelimited extends TopLevel[AmpersandDelimited with Double]
-  
-  /* 4096 */ @js.native
-  object AngleBrackets extends TopLevel[AngleBrackets with Double]
-  
-  /* 524880 */ @js.native
-  object ArrayBindingPatternElements extends TopLevel[ArrayBindingPatternElements with Double]
-  
-  /* 8914 */ @js.native
-  object ArrayLiteralExpressionElements extends TopLevel[ArrayLiteralExpressionElements with Double]
-  
-  /* 32 */ @js.native
-  object AsteriskDelimited extends TopLevel[AsteriskDelimited with Double]
-  
-  /* 4 */ @js.native
-  object BarDelimited extends TopLevel[BarDelimited with Double]
-  
-  /* 1024 */ @js.native
-  object Braces extends TopLevel[Braces with Double]
-  
-  /* 15360 */ @js.native
-  object BracketsMask extends TopLevel[BracketsMask with Double]
-  
-  /* 2576 */ @js.native
-  object CallExpressionArguments extends TopLevel[CallExpressionArguments with Double]
-  
-  /* 129 */ @js.native
-  object CaseBlockClauses extends TopLevel[CaseBlockClauses with Double]
-  
-  /* 163969 */ @js.native
-  object CaseOrDefaultClauseStatements extends TopLevel[CaseOrDefaultClauseStatements with Double]
-  
-  /* 0 */ @js.native
-  object ClassHeritageClauses extends TopLevel[ClassHeritageClauses with Double]
-  
-  /* 129 */ @js.native
-  object ClassMembers extends TopLevel[ClassMembers with Double]
-  
-  /* 16 */ @js.native
-  object CommaDelimited extends TopLevel[CommaDelimited with Double]
-  
-  /* 528 */ @js.native
-  object CommaListElements extends TopLevel[CommaListElements with Double]
-  
-  /* 49153 */ @js.native
-  object Decorators extends TopLevel[Decorators with Double]
-  
-  /* 60 */ @js.native
-  object DelimitersMask extends TopLevel[DelimitersMask with Double]
-  
-  /* 145 */ @js.native
-  object EnumMembers extends TopLevel[EnumMembers with Double]
-  
-  /* 528 */ @js.native
-  object HeritageClauseTypes extends TopLevel[HeritageClauseTypes with Double]
-  
-  /* 512 */ @js.native
-  object HeritageClauses extends TopLevel[HeritageClauses with Double]
-  
-  /* 128 */ @js.native
-  object Indented extends TopLevel[Indented with Double]
-  
-  /* 8848 */ @js.native
-  object IndexSignatureParameters extends TopLevel[IndexSignatureParameters with Double]
-  
-  /* 129 */ @js.native
-  object InterfaceMembers extends TopLevel[InterfaceMembers with Double]
-  
-  /* 520 */ @js.native
-  object IntersectionTypeConstituents extends TopLevel[IntersectionTypeConstituents with Double]
-  
-  /* 33 */ @js.native
-  object JSDocComment extends TopLevel[JSDocComment with Double]
-  
-  /* 262656 */ @js.native
-  object JsxElementAttributes extends TopLevel[JsxElementAttributes with Double]
-  
-  /* 262144 */ @js.native
-  object JsxElementOrFragmentChildren extends TopLevel[JsxElementOrFragmentChildren with Double]
-  
-  /* 3 */ @js.native
-  object LinesMask extends TopLevel[LinesMask with Double]
-  
-  /* 262656 */ @js.native
-  object Modifiers extends TopLevel[Modifiers with Double]
-  
-  /* 1 */ @js.native
-  object MultiLine extends TopLevel[MultiLine with Double]
-  
-  /* 129 */ @js.native
-  object MultiLineBlockStatements extends TopLevel[MultiLineBlockStatements with Double]
-  
-  /* 1 */ @js.native
-  object MultiLineFunctionBodyStatements extends TopLevel[MultiLineFunctionBodyStatements with Double]
-  
-  /* 32897 */ @js.native
-  object MultiLineTypeLiteralMembers extends TopLevel[MultiLineTypeLiteralMembers with Double]
-  
-  /* 525136 */ @js.native
-  object NamedImportsOrExportsElements extends TopLevel[NamedImportsOrExportsElements with Double]
-  
-  /* 18960 */ @js.native
-  object NewExpressionArguments extends TopLevel[NewExpressionArguments with Double]
-  
-  /* 262144 */ @js.native
-  object NoInterveningComments extends TopLevel[NoInterveningComments with Double]
-  
-  /* 524288 */ @js.native
-  object NoSpaceIfEmpty extends TopLevel[NoSpaceIfEmpty with Double]
-  
-  /* 131072 */ @js.native
-  object NoTrailingNewLine extends TopLevel[NoTrailingNewLine with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 0 */ @js.native
-  object NotDelimited extends TopLevel[NotDelimited with Double]
-  
-  /* 525136 */ @js.native
-  object ObjectBindingPatternElements extends TopLevel[ObjectBindingPatternElements with Double]
-  
-  /* 526226 */ @js.native
-  object ObjectLiteralExpressionProperties extends TopLevel[ObjectLiteralExpressionProperties with Double]
-  
-  /* 49152 */ @js.native
-  object Optional extends TopLevel[Optional with Double]
-  
-  /* 32768 */ @js.native
-  object OptionalIfEmpty extends TopLevel[OptionalIfEmpty with Double]
-  
-  /* 16384 */ @js.native
-  object OptionalIfUndefined extends TopLevel[OptionalIfUndefined with Double]
-  
-  /* 2576 */ @js.native
-  object Parameters extends TopLevel[Parameters with Double]
-  
-  /* 2048 */ @js.native
-  object Parenthesis extends TopLevel[Parenthesis with Double]
-  
-  /* 65536 */ @js.native
-  object PreferNewLine extends TopLevel[PreferNewLine with Double]
-  
-  /* 2 */ @js.native
-  object PreserveLines extends TopLevel[PreserveLines with Double]
-  
-  /* 1048576 */ @js.native
-  object SingleElement extends TopLevel[SingleElement with Double]
-  
-  /* 0 */ @js.native
-  object SingleLine extends TopLevel[SingleLine with Double]
-  
-  /* 768 */ @js.native
-  object SingleLineBlockStatements extends TopLevel[SingleLineBlockStatements with Double]
-  
-  /* 768 */ @js.native
-  object SingleLineFunctionBodyStatements extends TopLevel[SingleLineFunctionBodyStatements with Double]
-  
-  /* 768 */ @js.native
-  object SingleLineTypeLiteralMembers extends TopLevel[SingleLineTypeLiteralMembers with Double]
-  
-  /* 131073 */ @js.native
-  object SourceFileStatements extends TopLevel[SourceFileStatements with Double]
-  
-  /* 256 */ @js.native
-  object SpaceBetweenBraces extends TopLevel[SpaceBetweenBraces with Double]
-  
-  /* 512 */ @js.native
-  object SpaceBetweenSiblings extends TopLevel[SpaceBetweenSiblings with Double]
-  
-  /* 8192 */ @js.native
-  object SquareBrackets extends TopLevel[SquareBrackets with Double]
-  
-  /* 262144 */ @js.native
-  object TemplateExpressionSpans extends TopLevel[TemplateExpressionSpans with Double]
-  
-  /* 528 */ @js.native
-  object TupleTypeElements extends TopLevel[TupleTypeElements with Double]
-  
-  /* 53776 */ @js.native
-  object TypeArguments extends TopLevel[TypeArguments with Double]
-  
-  /* 53776 */ @js.native
-  object TypeParameters extends TopLevel[TypeParameters with Double]
-  
-  /* 516 */ @js.native
-  object UnionTypeConstituents extends TopLevel[UnionTypeConstituents with Double]
-  
-  /* 528 */ @js.native
-  object VariableDeclarationList
-    extends TopLevel[typingsJapgolly.typescript.mod.ListFormat.VariableDeclarationList with Double]
-  
+  def apply(value: Double): js.UndefOr[ListFormat & Double] = js.native
+  
+  @js.native
+  sealed trait AllowTrailingComma
+    extends StObject
+       with ListFormat
+  /* 64 */ val AllowTrailingComma: typingsJapgolly.typescript.mod.ListFormat.AllowTrailingComma & Double = js.native
+  
+  @js.native
+  sealed trait AmpersandDelimited
+    extends StObject
+       with ListFormat
+  /* 8 */ val AmpersandDelimited: typingsJapgolly.typescript.mod.ListFormat.AmpersandDelimited & Double = js.native
+  
+  @js.native
+  sealed trait AngleBrackets
+    extends StObject
+       with ListFormat
+  /* 4096 */ val AngleBrackets: typingsJapgolly.typescript.mod.ListFormat.AngleBrackets & Double = js.native
+  
+  @js.native
+  sealed trait ArrayBindingPatternElements
+    extends StObject
+       with ListFormat
+  /* 524880 */ val ArrayBindingPatternElements: typingsJapgolly.typescript.mod.ListFormat.ArrayBindingPatternElements & Double = js.native
+  
+  @js.native
+  sealed trait ArrayLiteralExpressionElements
+    extends StObject
+       with ListFormat
+  /* 8914 */ val ArrayLiteralExpressionElements: typingsJapgolly.typescript.mod.ListFormat.ArrayLiteralExpressionElements & Double = js.native
+  
+  @js.native
+  sealed trait AsteriskDelimited
+    extends StObject
+       with ListFormat
+  /* 32 */ val AsteriskDelimited: typingsJapgolly.typescript.mod.ListFormat.AsteriskDelimited & Double = js.native
+  
+  @js.native
+  sealed trait BarDelimited
+    extends StObject
+       with ListFormat
+  /* 4 */ val BarDelimited: typingsJapgolly.typescript.mod.ListFormat.BarDelimited & Double = js.native
+  
+  @js.native
+  sealed trait Braces
+    extends StObject
+       with ListFormat
+  /* 1024 */ val Braces: typingsJapgolly.typescript.mod.ListFormat.Braces & Double = js.native
+  
+  @js.native
+  sealed trait BracketsMask
+    extends StObject
+       with ListFormat
+  /* 15360 */ val BracketsMask: typingsJapgolly.typescript.mod.ListFormat.BracketsMask & Double = js.native
+  
+  @js.native
+  sealed trait CallExpressionArguments
+    extends StObject
+       with ListFormat
+  /* 2576 */ val CallExpressionArguments: typingsJapgolly.typescript.mod.ListFormat.CallExpressionArguments & Double = js.native
+  
+  @js.native
+  sealed trait CaseBlockClauses
+    extends StObject
+       with ListFormat
+  /* 129 */ val CaseBlockClauses: typingsJapgolly.typescript.mod.ListFormat.CaseBlockClauses & Double = js.native
+  
+  @js.native
+  sealed trait CaseOrDefaultClauseStatements
+    extends StObject
+       with ListFormat
+  /* 163969 */ val CaseOrDefaultClauseStatements: typingsJapgolly.typescript.mod.ListFormat.CaseOrDefaultClauseStatements & Double = js.native
+  
+  @js.native
+  sealed trait ClassHeritageClauses
+    extends StObject
+       with ListFormat
+  /* 0 */ val ClassHeritageClauses: typingsJapgolly.typescript.mod.ListFormat.ClassHeritageClauses & Double = js.native
+  
+  @js.native
+  sealed trait ClassMembers
+    extends StObject
+       with ListFormat
+  /* 129 */ val ClassMembers: typingsJapgolly.typescript.mod.ListFormat.ClassMembers & Double = js.native
+  
+  @js.native
+  sealed trait CommaDelimited
+    extends StObject
+       with ListFormat
+  /* 16 */ val CommaDelimited: typingsJapgolly.typescript.mod.ListFormat.CommaDelimited & Double = js.native
+  
+  @js.native
+  sealed trait CommaListElements
+    extends StObject
+       with ListFormat
+  /* 528 */ val CommaListElements: typingsJapgolly.typescript.mod.ListFormat.CommaListElements & Double = js.native
+  
+  @js.native
+  sealed trait Decorators
+    extends StObject
+       with ListFormat
+  /* 2146305 */ val Decorators: typingsJapgolly.typescript.mod.ListFormat.Decorators & Double = js.native
+  
+  @js.native
+  sealed trait DelimitersMask
+    extends StObject
+       with ListFormat
+  /* 60 */ val DelimitersMask: typingsJapgolly.typescript.mod.ListFormat.DelimitersMask & Double = js.native
+  
+  @js.native
+  sealed trait EnumMembers
+    extends StObject
+       with ListFormat
+  /* 145 */ val EnumMembers: typingsJapgolly.typescript.mod.ListFormat.EnumMembers & Double = js.native
+  
+  @js.native
+  sealed trait HeritageClauseTypes
+    extends StObject
+       with ListFormat
+  /* 528 */ val HeritageClauseTypes: typingsJapgolly.typescript.mod.ListFormat.HeritageClauseTypes & Double = js.native
+  
+  @js.native
+  sealed trait HeritageClauses
+    extends StObject
+       with ListFormat
+  /* 512 */ val HeritageClauses: typingsJapgolly.typescript.mod.ListFormat.HeritageClauses & Double = js.native
+  
+  @js.native
+  sealed trait ImportClauseEntries
+    extends StObject
+       with ListFormat
+  /* 526226 */ val ImportClauseEntries: typingsJapgolly.typescript.mod.ListFormat.ImportClauseEntries & Double = js.native
+  
+  @js.native
+  sealed trait Indented
+    extends StObject
+       with ListFormat
+  /* 128 */ val Indented: typingsJapgolly.typescript.mod.ListFormat.Indented & Double = js.native
+  
+  @js.native
+  sealed trait IndexSignatureParameters
+    extends StObject
+       with ListFormat
+  /* 8848 */ val IndexSignatureParameters: typingsJapgolly.typescript.mod.ListFormat.IndexSignatureParameters & Double = js.native
+  
+  @js.native
+  sealed trait InterfaceMembers
+    extends StObject
+       with ListFormat
+  /* 129 */ val InterfaceMembers: typingsJapgolly.typescript.mod.ListFormat.InterfaceMembers & Double = js.native
+  
+  @js.native
+  sealed trait IntersectionTypeConstituents
+    extends StObject
+       with ListFormat
+  /* 520 */ val IntersectionTypeConstituents: typingsJapgolly.typescript.mod.ListFormat.IntersectionTypeConstituents & Double = js.native
+  
+  @js.native
+  sealed trait JSDocComment
+    extends StObject
+       with ListFormat
+  /* 33 */ val JSDocComment: typingsJapgolly.typescript.mod.ListFormat.JSDocComment & Double = js.native
+  
+  @js.native
+  sealed trait JsxElementAttributes
+    extends StObject
+       with ListFormat
+  /* 262656 */ val JsxElementAttributes: typingsJapgolly.typescript.mod.ListFormat.JsxElementAttributes & Double = js.native
+  
+  @js.native
+  sealed trait JsxElementOrFragmentChildren
+    extends StObject
+       with ListFormat
+  /* 262144 */ val JsxElementOrFragmentChildren: typingsJapgolly.typescript.mod.ListFormat.JsxElementOrFragmentChildren & Double = js.native
+  
+  @js.native
+  sealed trait LinesMask
+    extends StObject
+       with ListFormat
+  /* 3 */ val LinesMask: typingsJapgolly.typescript.mod.ListFormat.LinesMask & Double = js.native
+  
+  @js.native
+  sealed trait Modifiers
+    extends StObject
+       with ListFormat
+  /* 2359808 */ val Modifiers: typingsJapgolly.typescript.mod.ListFormat.Modifiers & Double = js.native
+  
+  @js.native
+  sealed trait MultiLine
+    extends StObject
+       with ListFormat
+  /* 1 */ val MultiLine: typingsJapgolly.typescript.mod.ListFormat.MultiLine & Double = js.native
+  
+  @js.native
+  sealed trait MultiLineBlockStatements
+    extends StObject
+       with ListFormat
+  /* 129 */ val MultiLineBlockStatements: typingsJapgolly.typescript.mod.ListFormat.MultiLineBlockStatements & Double = js.native
+  
+  @js.native
+  sealed trait MultiLineFunctionBodyStatements
+    extends StObject
+       with ListFormat
+  /* 1 */ val MultiLineFunctionBodyStatements: typingsJapgolly.typescript.mod.ListFormat.MultiLineFunctionBodyStatements & Double = js.native
+  
+  @js.native
+  sealed trait MultiLineTupleTypeElements
+    extends StObject
+       with ListFormat
+  /* 657 */ val MultiLineTupleTypeElements: typingsJapgolly.typescript.mod.ListFormat.MultiLineTupleTypeElements & Double = js.native
+  
+  @js.native
+  sealed trait MultiLineTypeLiteralMembers
+    extends StObject
+       with ListFormat
+  /* 32897 */ val MultiLineTypeLiteralMembers: typingsJapgolly.typescript.mod.ListFormat.MultiLineTypeLiteralMembers & Double = js.native
+  
+  @js.native
+  sealed trait NamedImportsOrExportsElements
+    extends StObject
+       with ListFormat
+  /* 525136 */ val NamedImportsOrExportsElements: typingsJapgolly.typescript.mod.ListFormat.NamedImportsOrExportsElements & Double = js.native
+  
+  @js.native
+  sealed trait NewExpressionArguments
+    extends StObject
+       with ListFormat
+  /* 18960 */ val NewExpressionArguments: typingsJapgolly.typescript.mod.ListFormat.NewExpressionArguments & Double = js.native
+  
+  @js.native
+  sealed trait NoInterveningComments
+    extends StObject
+       with ListFormat
+  /* 262144 */ val NoInterveningComments: typingsJapgolly.typescript.mod.ListFormat.NoInterveningComments & Double = js.native
+  
+  @js.native
+  sealed trait NoSpaceIfEmpty
+    extends StObject
+       with ListFormat
+  /* 524288 */ val NoSpaceIfEmpty: typingsJapgolly.typescript.mod.ListFormat.NoSpaceIfEmpty & Double = js.native
+  
+  @js.native
+  sealed trait NoTrailingNewLine
+    extends StObject
+       with ListFormat
+  /* 131072 */ val NoTrailingNewLine: typingsJapgolly.typescript.mod.ListFormat.NoTrailingNewLine & Double = js.native
+  
+  @js.native
+  sealed trait None
+    extends StObject
+       with ListFormat
+  /* 0 */ val None: typingsJapgolly.typescript.mod.ListFormat.None & Double = js.native
+  
+  @js.native
+  sealed trait NotDelimited
+    extends StObject
+       with ListFormat
+  /* 0 */ val NotDelimited: typingsJapgolly.typescript.mod.ListFormat.NotDelimited & Double = js.native
+  
+  @js.native
+  sealed trait ObjectBindingPatternElements
+    extends StObject
+       with ListFormat
+  /* 525136 */ val ObjectBindingPatternElements: typingsJapgolly.typescript.mod.ListFormat.ObjectBindingPatternElements & Double = js.native
+  
+  @js.native
+  sealed trait ObjectLiteralExpressionProperties
+    extends StObject
+       with ListFormat
+  /* 526226 */ val ObjectLiteralExpressionProperties: typingsJapgolly.typescript.mod.ListFormat.ObjectLiteralExpressionProperties & Double = js.native
+  
+  @js.native
+  sealed trait Optional
+    extends StObject
+       with ListFormat
+  /* 49152 */ val Optional: typingsJapgolly.typescript.mod.ListFormat.Optional & Double = js.native
+  
+  @js.native
+  sealed trait OptionalIfEmpty
+    extends StObject
+       with ListFormat
+  /* 32768 */ val OptionalIfEmpty: typingsJapgolly.typescript.mod.ListFormat.OptionalIfEmpty & Double = js.native
+  
+  @js.native
+  sealed trait OptionalIfUndefined
+    extends StObject
+       with ListFormat
+  /* 16384 */ val OptionalIfUndefined: typingsJapgolly.typescript.mod.ListFormat.OptionalIfUndefined & Double = js.native
+  
+  @js.native
+  sealed trait Parameters
+    extends StObject
+       with ListFormat
+  /* 2576 */ val Parameters: typingsJapgolly.typescript.mod.ListFormat.Parameters & Double = js.native
+  
+  @js.native
+  sealed trait Parenthesis
+    extends StObject
+       with ListFormat
+  /* 2048 */ val Parenthesis: typingsJapgolly.typescript.mod.ListFormat.Parenthesis & Double = js.native
+  
+  @js.native
+  sealed trait PreferNewLine
+    extends StObject
+       with ListFormat
+  /* 65536 */ val PreferNewLine: typingsJapgolly.typescript.mod.ListFormat.PreferNewLine & Double = js.native
+  
+  @js.native
+  sealed trait PreserveLines
+    extends StObject
+       with ListFormat
+  /* 2 */ val PreserveLines: typingsJapgolly.typescript.mod.ListFormat.PreserveLines & Double = js.native
+  
+  @js.native
+  sealed trait SingleElement
+    extends StObject
+       with ListFormat
+  /* 1048576 */ val SingleElement: typingsJapgolly.typescript.mod.ListFormat.SingleElement & Double = js.native
+  
+  @js.native
+  sealed trait SingleLine
+    extends StObject
+       with ListFormat
+  /* 0 */ val SingleLine: typingsJapgolly.typescript.mod.ListFormat.SingleLine & Double = js.native
+  
+  @js.native
+  sealed trait SingleLineBlockStatements
+    extends StObject
+       with ListFormat
+  /* 768 */ val SingleLineBlockStatements: typingsJapgolly.typescript.mod.ListFormat.SingleLineBlockStatements & Double = js.native
+  
+  @js.native
+  sealed trait SingleLineFunctionBodyStatements
+    extends StObject
+       with ListFormat
+  /* 768 */ val SingleLineFunctionBodyStatements: typingsJapgolly.typescript.mod.ListFormat.SingleLineFunctionBodyStatements & Double = js.native
+  
+  @js.native
+  sealed trait SingleLineTupleTypeElements
+    extends StObject
+       with ListFormat
+  /* 528 */ val SingleLineTupleTypeElements: typingsJapgolly.typescript.mod.ListFormat.SingleLineTupleTypeElements & Double = js.native
+  
+  @js.native
+  sealed trait SingleLineTypeLiteralMembers
+    extends StObject
+       with ListFormat
+  /* 768 */ val SingleLineTypeLiteralMembers: typingsJapgolly.typescript.mod.ListFormat.SingleLineTypeLiteralMembers & Double = js.native
+  
+  @js.native
+  sealed trait SourceFileStatements
+    extends StObject
+       with ListFormat
+  /* 131073 */ val SourceFileStatements: typingsJapgolly.typescript.mod.ListFormat.SourceFileStatements & Double = js.native
+  
+  @js.native
+  sealed trait SpaceAfterList
+    extends StObject
+       with ListFormat
+  /* 2097152 */ val SpaceAfterList: typingsJapgolly.typescript.mod.ListFormat.SpaceAfterList & Double = js.native
+  
+  @js.native
+  sealed trait SpaceBetweenBraces
+    extends StObject
+       with ListFormat
+  /* 256 */ val SpaceBetweenBraces: typingsJapgolly.typescript.mod.ListFormat.SpaceBetweenBraces & Double = js.native
+  
+  @js.native
+  sealed trait SpaceBetweenSiblings
+    extends StObject
+       with ListFormat
+  /* 512 */ val SpaceBetweenSiblings: typingsJapgolly.typescript.mod.ListFormat.SpaceBetweenSiblings & Double = js.native
+  
+  @js.native
+  sealed trait SquareBrackets
+    extends StObject
+       with ListFormat
+  /* 8192 */ val SquareBrackets: typingsJapgolly.typescript.mod.ListFormat.SquareBrackets & Double = js.native
+  
+  @js.native
+  sealed trait TemplateExpressionSpans
+    extends StObject
+       with ListFormat
+  /* 262144 */ val TemplateExpressionSpans: typingsJapgolly.typescript.mod.ListFormat.TemplateExpressionSpans & Double = js.native
+  
+  @js.native
+  sealed trait TypeArguments
+    extends StObject
+       with ListFormat
+  /* 53776 */ val TypeArguments: typingsJapgolly.typescript.mod.ListFormat.TypeArguments & Double = js.native
+  
+  @js.native
+  sealed trait TypeParameters
+    extends StObject
+       with ListFormat
+  /* 53776 */ val TypeParameters: typingsJapgolly.typescript.mod.ListFormat.TypeParameters & Double = js.native
+  
+  @js.native
+  sealed trait UnionTypeConstituents
+    extends StObject
+       with ListFormat
+  /* 516 */ val UnionTypeConstituents: typingsJapgolly.typescript.mod.ListFormat.UnionTypeConstituents & Double = js.native
+  
+  @js.native
+  sealed trait VariableDeclarationList
+    extends StObject
+       with ListFormat
+  /* 528 */ val VariableDeclarationList: typingsJapgolly.typescript.mod.ListFormat.VariableDeclarationList & Double = js.native
 }
-

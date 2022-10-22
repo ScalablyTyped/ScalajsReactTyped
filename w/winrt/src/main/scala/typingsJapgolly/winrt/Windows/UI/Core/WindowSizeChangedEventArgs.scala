@@ -1,16 +1,17 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
 import typingsJapgolly.winrt.Windows.Foundation.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Core.WindowSizeChangedEventArgs")
-@js.native
-class WindowSizeChangedEventArgs () extends IWindowSizeChangedEventArgs {
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-  /* CompleteClass */
-  override var size: Size = js.native
+trait WindowSizeChangedEventArgs
+  extends StObject
+     with IWindowSizeChangedEventArgs
+object WindowSizeChangedEventArgs {
+  
+  inline def apply(handled: Boolean, size: Size): WindowSizeChangedEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WindowSizeChangedEventArgs]
+  }
 }
-

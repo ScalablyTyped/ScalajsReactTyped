@@ -1,27 +1,23 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
 */
-trait WdPreferredWidthType extends js.Object
-
+trait WdPreferredWidthType extends StObject
 object WdPreferredWidthType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdPreferredWidthAuto: `1` = this.cast(1)
-  @scala.inline
-  def wdPreferredWidthPercent: `2` = this.cast(2)
-  @scala.inline
-  def wdPreferredWidthPoints: `3` = this.cast(3)
+  
+  inline def wdPreferredWidthAuto: `1` = 1.asInstanceOf[`1`]
+  
+  inline def wdPreferredWidthPercent: `2` = 2.asInstanceOf[`2`]
+  
+  inline def wdPreferredWidthPoints: `3` = 3.asInstanceOf[`3`]
 }
-

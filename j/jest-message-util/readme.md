@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-message-util
 
-Typings are for version 24.9.0
+Typings are for version 29.2.0
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-message-util |
 | Keywords           | - |
-| # releases         | 53 |
-| # dependents       | 46 |
-| # downloads        | 267094443 |
-| # stars            | 0 |
+| # releases         | 62 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0762991966666667E8 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

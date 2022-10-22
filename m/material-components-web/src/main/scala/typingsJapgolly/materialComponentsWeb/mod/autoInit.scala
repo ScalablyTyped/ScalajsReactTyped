@@ -1,16 +1,50 @@
 package typingsJapgolly.materialComponentsWeb.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialAutoInit.mod.MDCAutoInit
+import org.scalajs.dom.Document
+import typingsJapgolly.materialAutoInit.mod.MDCAttachable
+import typingsJapgolly.materialBase.componentMod.MDCComponent
+import typingsJapgolly.materialBase.foundationMod.MDCFoundation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Auto-initializes all mdc components on a page.
-  */
-// tslint:disable-next-line:strict-export-declare-modifiers
-@JSImport("material-components-web", "autoInit")
-@js.native
-object autoInit extends TopLevel[MDCAutoInit]
-
+object autoInit {
+  
+  /**
+    * Auto-initializes all MDC components on a page.
+    */
+  inline def apply(): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
+  inline def apply(root: Document): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
+  
+  @JSImport("material-components-web", "autoInit")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("material-components-web", "autoInit.deregister")
+  @js.native
+  def deregister: js.Function1[/* componentName */ String, Unit] = js.native
+  
+  @JSImport("material-components-web", "autoInit.deregisterAll")
+  @js.native
+  def deregisterAll: js.Function0[Unit] = js.native
+  inline def deregisterAll_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deregisterAll")(x.asInstanceOf[js.Any])
+  
+  inline def deregister_=(x: js.Function1[/* componentName */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deregister")(x.asInstanceOf[js.Any])
+  
+  @JSImport("material-components-web", "autoInit.register")
+  @js.native
+  def register: js.Function3[
+    /* componentName */ String, 
+    /* Constructor */ MDCAttachable, 
+    /* warn */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], 
+    Unit
+  ] = js.native
+  inline def register_=(
+    x: js.Function3[
+      /* componentName */ String, 
+      /* Constructor */ MDCAttachable, 
+      /* warn */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], 
+      Unit
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("register")(x.asInstanceOf[js.Any])
+}

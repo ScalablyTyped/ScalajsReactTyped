@@ -1,72 +1,147 @@
 package typingsJapgolly.semanticUiReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLAnchorElement
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandContent
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandItem
-import typingsJapgolly.semanticUiReact.iconIconMod.IconProps
-import typingsJapgolly.semanticUiReact.stepDescriptionMod.StepDescriptionProps
-import typingsJapgolly.semanticUiReact.stepMod.default
-import typingsJapgolly.semanticUiReact.stepStepMod.StepProps
-import typingsJapgolly.semanticUiReact.stepTitleMod.StepTitleProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.ElementType
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLAnchorElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.ReactNodeArray
+import typingsJapgolly.semanticUiReact.distCommonjsElementsIconIconMod.IconProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsStepStepContentMod.StepContentProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsStepStepDescriptionMod.StepDescriptionProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsStepStepGroupMod.StepGroupProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsStepStepMod.StepProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsStepStepTitleMod.StepTitleProps
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Step {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    as: js.Any = null,
-    className: String = null,
-    completed: js.UndefOr[Boolean] = js.undefined,
-    content: SemanticShorthandContent = null,
-    description: SemanticShorthandItem[StepDescriptionProps] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    href: String = null,
-    icon: SemanticShorthandItem[IconProps] = null,
-    link: js.UndefOr[Boolean] = js.undefined,
-    onClick: (/* event */ ReactMouseEventFrom[HTMLAnchorElement], /* data */ StepProps) => Callback = null,
-    ordered: js.UndefOr[Boolean] = js.undefined,
-    title: SemanticShorthandItem[StepTitleProps] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[StepProps, default, Unit, StepProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(completed)) __obj.updateDynamic("completed")(completed.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement], t1: /* data */ typingsJapgolly.semanticUiReact.stepStepMod.StepProps) => onClick(t0, t1).runNow()))
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.stepStepMod.StepProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.stepMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.stepStepMod.StepProps])(children: _*)
+  object Content {
+    
+    @JSImport("semantic-ui-react", "Step.Content")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Content.type): SharedBuilder_StepContentProps_346528489 = new SharedBuilder_StepContentProps_346528489(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: StepContentProps): SharedBuilder_StepContentProps_346528489 = new SharedBuilder_StepContentProps_346528489(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/elements/Step", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object Description {
+    
+    @JSImport("semantic-ui-react", "Step.Description")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Description.type): SharedBuilder_StepDescriptionProps1143921112 = new SharedBuilder_StepDescriptionProps1143921112(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: StepDescriptionProps): SharedBuilder_StepDescriptionProps1143921112 = new SharedBuilder_StepDescriptionProps1143921112(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object Group {
+    
+    @JSImport("semantic-ui-react", "Step.Group")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Group.type): SharedBuilder_StepGroupProps1660011682 = new SharedBuilder_StepGroupProps1660011682(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: StepGroupProps): SharedBuilder_StepGroupProps1660011682 = new SharedBuilder_StepGroupProps1660011682(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object Title {
+    
+    @JSImport("semantic-ui-react", "Step.Title")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Title.type): SharedBuilder_StepTitleProps_1759314943 = new SharedBuilder_StepTitleProps_1759314943(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: StepTitleProps): SharedBuilder_StepTitleProps_1759314943 = new SharedBuilder_StepTitleProps_1759314943(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  @JSImport("semantic-ui-react", "Step")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def active(value: Boolean): this.type = set("active", value.asInstanceOf[js.Any])
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def completed(value: Boolean): this.type = set("completed", value.asInstanceOf[js.Any])
+    
+    inline def content(value: SemanticShorthandContent): this.type = set("content", value.asInstanceOf[js.Any])
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def description(value: SemanticShorthandItem[StepDescriptionProps]): this.type = set("description", value.asInstanceOf[js.Any])
+    
+    inline def descriptionFunction3(
+      value: (/* component */ ElementType, StepDescriptionProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("description", js.Any.fromFunction3(value))
+    
+    inline def descriptionNull: this.type = set("description", null)
+    
+    inline def descriptionVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("description", js.Array(value*))
+    
+    inline def descriptionVdomElement(value: VdomElement): this.type = set("description", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def href(value: String): this.type = set("href", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: SemanticShorthandItem[IconProps]): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def iconFunction3(
+      value: (/* component */ ElementType, IconProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("icon", js.Any.fromFunction3(value))
+    
+    inline def iconNull: this.type = set("icon", null)
+    
+    inline def iconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("icon", js.Array(value*))
+    
+    inline def iconVdomElement(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def link(value: Boolean): this.type = set("link", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: (/* event */ ReactMouseEventFrom[HTMLAnchorElement], /* data */ StepProps) => Callback): this.type = set("onClick", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLAnchorElement], t1: /* data */ StepProps) => (value(t0, t1)).runNow()))
+    
+    inline def ordered(value: Boolean): this.type = set("ordered", value.asInstanceOf[js.Any])
+    
+    inline def title(value: SemanticShorthandItem[StepTitleProps]): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def titleFunction3(
+      value: (/* component */ ElementType, StepTitleProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("title", js.Any.fromFunction3(value))
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Step.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: StepProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

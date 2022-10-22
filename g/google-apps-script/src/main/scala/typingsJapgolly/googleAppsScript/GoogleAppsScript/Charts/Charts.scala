@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Entry point for creating Charts in scripts.
@@ -38,36 +38,52 @@ import scala.scalajs.js.annotation._
   *        return htmlOutput;
   *     }
   */
-trait Charts extends js.Object {
-  var ChartHiddenDimensionStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ js.Any
-  var ChartMergeStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ js.Any
-  var ChartType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ js.Any
-  var ColumnType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ js.Any
-  var CurveStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ js.Any
-  var PointStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ js.Any
-  var Position: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ js.Any
+trait Charts extends StObject {
+  
+  var ChartHiddenDimensionStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ Any
+  
+  var ChartMergeStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ Any
+  
+  var ChartType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ Any
+  
+  var ColumnType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ Any
+  
+  var CurveStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ Any
+  
+  var PointStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ Any
+  
+  var Position: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ Any
+  
   def newAreaChart(): AreaChartBuilder
+  
   def newBarChart(): BarChartBuilder
+  
   def newColumnChart(): ColumnChartBuilder
+  
   def newDataTable(): DataTableBuilder
+  
   def newDataViewDefinition(): DataViewDefinitionBuilder
+  
   def newLineChart(): LineChartBuilder
+  
   def newPieChart(): PieChartBuilder
+  
   def newScatterChart(): ScatterChartBuilder
+  
   def newTableChart(): TableChartBuilder
+  
   def newTextStyle(): TextStyleBuilder
 }
-
 object Charts {
-  @scala.inline
-  def apply(
-    ChartHiddenDimensionStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ js.Any,
-    ChartMergeStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ js.Any,
-    ChartType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ js.Any,
-    ColumnType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ js.Any,
-    CurveStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ js.Any,
-    PointStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ js.Any,
-    Position: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ js.Any,
+  
+  inline def apply(
+    ChartHiddenDimensionStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ Any,
+    ChartMergeStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ Any,
+    ChartType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ Any,
+    ColumnType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ Any,
+    CurveStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ Any,
+    PointStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ Any,
+    Position: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ Any,
     newAreaChart: CallbackTo[AreaChartBuilder],
     newBarChart: CallbackTo[BarChartBuilder],
     newColumnChart: CallbackTo[ColumnChartBuilder],
@@ -78,19 +94,49 @@ object Charts {
     newScatterChart: CallbackTo[ScatterChartBuilder],
     newTableChart: CallbackTo[TableChartBuilder],
     newTextStyle: CallbackTo[TextStyleBuilder]
-  ): Charts = {
-    val __obj = js.Dynamic.literal(ChartHiddenDimensionStrategy = ChartHiddenDimensionStrategy.asInstanceOf[js.Any], ChartMergeStrategy = ChartMergeStrategy.asInstanceOf[js.Any], ChartType = ChartType.asInstanceOf[js.Any], ColumnType = ColumnType.asInstanceOf[js.Any], CurveStyle = CurveStyle.asInstanceOf[js.Any], PointStyle = PointStyle.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any])
-    __obj.updateDynamic("newAreaChart")(newAreaChart.toJsFn)
-    __obj.updateDynamic("newBarChart")(newBarChart.toJsFn)
-    __obj.updateDynamic("newColumnChart")(newColumnChart.toJsFn)
-    __obj.updateDynamic("newDataTable")(newDataTable.toJsFn)
-    __obj.updateDynamic("newDataViewDefinition")(newDataViewDefinition.toJsFn)
-    __obj.updateDynamic("newLineChart")(newLineChart.toJsFn)
-    __obj.updateDynamic("newPieChart")(newPieChart.toJsFn)
-    __obj.updateDynamic("newScatterChart")(newScatterChart.toJsFn)
-    __obj.updateDynamic("newTableChart")(newTableChart.toJsFn)
-    __obj.updateDynamic("newTextStyle")(newTextStyle.toJsFn)
-    __obj.asInstanceOf[Charts]
+  ): typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts.Charts = {
+    val __obj = js.Dynamic.literal(ChartHiddenDimensionStrategy = ChartHiddenDimensionStrategy.asInstanceOf[js.Any], ChartMergeStrategy = ChartMergeStrategy.asInstanceOf[js.Any], ChartType = ChartType.asInstanceOf[js.Any], ColumnType = ColumnType.asInstanceOf[js.Any], CurveStyle = CurveStyle.asInstanceOf[js.Any], PointStyle = PointStyle.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], newAreaChart = newAreaChart.toJsFn, newBarChart = newBarChart.toJsFn, newColumnChart = newColumnChart.toJsFn, newDataTable = newDataTable.toJsFn, newDataViewDefinition = newDataViewDefinition.toJsFn, newLineChart = newLineChart.toJsFn, newPieChart = newPieChart.toJsFn, newScatterChart = newScatterChart.toJsFn, newTableChart = newTableChart.toJsFn, newTextStyle = newTextStyle.toJsFn)
+    __obj.asInstanceOf[typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts.Charts]
+  }
+  
+  extension [Self <: typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts.Charts](x: Self) {
+    
+    inline def setChartHiddenDimensionStrategy(
+      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ Any
+    ): Self = StObject.set(x, "ChartHiddenDimensionStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setChartMergeStrategy(
+      value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ Any
+    ): Self = StObject.set(x, "ChartMergeStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setChartType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ Any): Self = StObject.set(x, "ChartType", value.asInstanceOf[js.Any])
+    
+    inline def setColumnType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ Any): Self = StObject.set(x, "ColumnType", value.asInstanceOf[js.Any])
+    
+    inline def setCurveStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ Any): Self = StObject.set(x, "CurveStyle", value.asInstanceOf[js.Any])
+    
+    inline def setNewAreaChart(value: CallbackTo[AreaChartBuilder]): Self = StObject.set(x, "newAreaChart", value.toJsFn)
+    
+    inline def setNewBarChart(value: CallbackTo[BarChartBuilder]): Self = StObject.set(x, "newBarChart", value.toJsFn)
+    
+    inline def setNewColumnChart(value: CallbackTo[ColumnChartBuilder]): Self = StObject.set(x, "newColumnChart", value.toJsFn)
+    
+    inline def setNewDataTable(value: CallbackTo[DataTableBuilder]): Self = StObject.set(x, "newDataTable", value.toJsFn)
+    
+    inline def setNewDataViewDefinition(value: CallbackTo[DataViewDefinitionBuilder]): Self = StObject.set(x, "newDataViewDefinition", value.toJsFn)
+    
+    inline def setNewLineChart(value: CallbackTo[LineChartBuilder]): Self = StObject.set(x, "newLineChart", value.toJsFn)
+    
+    inline def setNewPieChart(value: CallbackTo[PieChartBuilder]): Self = StObject.set(x, "newPieChart", value.toJsFn)
+    
+    inline def setNewScatterChart(value: CallbackTo[ScatterChartBuilder]): Self = StObject.set(x, "newScatterChart", value.toJsFn)
+    
+    inline def setNewTableChart(value: CallbackTo[TableChartBuilder]): Self = StObject.set(x, "newTableChart", value.toJsFn)
+    
+    inline def setNewTextStyle(value: CallbackTo[TextStyleBuilder]): Self = StObject.set(x, "newTextStyle", value.toJsFn)
+    
+    inline def setPointStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ Any): Self = StObject.set(x, "PointStyle", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ Any): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
   }
 }
-

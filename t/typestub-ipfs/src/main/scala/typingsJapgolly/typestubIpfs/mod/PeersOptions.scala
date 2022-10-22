@@ -1,21 +1,30 @@
 package typingsJapgolly.typestubIpfs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PeersOptions extends js.Object {
+trait PeersOptions extends StObject {
+  
   var v: js.UndefOr[Boolean] = js.undefined
+  
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
-
 object PeersOptions {
-  @scala.inline
-  def apply(v: js.UndefOr[Boolean] = js.undefined, verbose: js.UndefOr[Boolean] = js.undefined): PeersOptions = {
+  
+  inline def apply(): PeersOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeersOptions]
   }
+  
+  extension [Self <: PeersOptions](x: Self) {
+    
+    inline def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+  }
 }
-

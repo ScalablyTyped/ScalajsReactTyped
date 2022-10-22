@@ -1,43 +1,48 @@
 package typingsJapgolly.openpgp.mod
 
-import typingsJapgolly.openpgp.mod.packet.List
-import typingsJapgolly.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openpgp", "signature")
-@js.native
-object signature extends js.Object {
+object signature {
+  
+  @JSImport("openpgp", "signature")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Class that represents an OpenPGP signature.
     */
+  @JSImport("openpgp", "signature.Signature")
   @js.native
-  class Signature protected () extends js.Object {
+  open class Signature protected () extends StObject {
     /**
       * @param packetlist The signature packets
       */
-    def this(packetlist: List) = this()
+    def this(packetlist: typingsJapgolly.openpgp.mod.packet.List) = this()
+    
     /**
       * Returns ASCII armored text of signature
       * @returns ASCII armor
       */
     def armor(): ReadableStream[String] = js.native
+    
+    var packets: typingsJapgolly.openpgp.mod.packet.List = js.native
   }
   
-  def read(input: ReadableStream[Uint8Array]): Signature = js.native
   /**
     * reads an OpenPGP signature as byte array and returns a signature object
     * @param input binary signature
     * @returns new signature object
     */
-  def read(input: Uint8Array): Signature = js.native
+  inline def read(input: js.typedarray.Uint8Array): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
+  inline def read(input: ReadableStream[js.typedarray.Uint8Array]): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
+  
   /**
     * reads an OpenPGP armored signature and returns a signature object
     * @param armoredText text to be parsed
     * @returns new signature object
     */
-  def readArmored(armoredText: String): Signature = js.native
-  def readArmored(armoredText: ReadableStream[String]): Signature = js.native
+  inline def readArmored(armoredText: String): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
+  inline def readArmored(armoredText: ReadableStream[String]): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
 }
-

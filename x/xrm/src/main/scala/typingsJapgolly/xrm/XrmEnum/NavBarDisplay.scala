@@ -3,9 +3,9 @@ package typingsJapgolly.xrm.XrmEnum
 import typingsJapgolly.xrm.xrmStrings.entity
 import typingsJapgolly.xrm.xrmStrings.off
 import typingsJapgolly.xrm.xrmStrings.on
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Navigation Bar Display options for Xrm.Url.FormOpenParameters.navbar, Xrm.Url.ViewOpenParameters.navbar, and Xrm.Utility.FormOpenParameters.navbar.
@@ -16,16 +16,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.on
   - typingsJapgolly.xrm.xrmStrings.off
 */
-trait NavBarDisplay extends js.Object
-
+trait NavBarDisplay extends StObject
 object NavBarDisplay {
-  @scala.inline
-  def Entity: entity = this.cast("entity")
-  @scala.inline
-  def Off: off = this.cast("off")
-  @scala.inline
-  def On: on = this.cast("on")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Entity: entity = "entity".asInstanceOf[entity]
+  
+  inline def Off: off = "off".asInstanceOf[off]
+  
+  inline def On: on = "on".asInstanceOf[on]
 }
-

@@ -1,26 +1,28 @@
 package typingsJapgolly.azdata.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IconProvider extends DataProvider {
-  def getConnectionIconId(connection: IConnectionProfile, serverInfo: ServerInfo): Thenable[String]
+trait IconProvider
+  extends StObject
+     with DataProvider {
+  
+  def getConnectionIconId(connection: IConnectionProfile, serverInfo: ServerInfo): Thenable[js.UndefOr[String]]
 }
-
 object IconProvider {
-  @scala.inline
-  def apply(
-    getConnectionIconId: (IConnectionProfile, ServerInfo) => CallbackTo[Thenable[String]],
-    providerId: String,
-    handle: Int | Double = null
+  
+  inline def apply(
+    getConnectionIconId: (IConnectionProfile, ServerInfo) => Thenable[js.UndefOr[String]],
+    providerId: String
   ): IconProvider = {
-    val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any])
-    __obj.updateDynamic("getConnectionIconId")(js.Any.fromFunction2((t0: typingsJapgolly.azdata.mod.IConnectionProfile, t1: typingsJapgolly.azdata.mod.ServerInfo) => getConnectionIconId(t0, t1).runNow()))
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getConnectionIconId = js.Any.fromFunction2(getConnectionIconId), providerId = providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconProvider]
   }
+  
+  extension [Self <: IconProvider](x: Self) {
+    
+    inline def setGetConnectionIconId(value: (IConnectionProfile, ServerInfo) => Thenable[js.UndefOr[String]]): Self = StObject.set(x, "getConnectionIconId", js.Any.fromFunction2(value))
+  }
 }
-

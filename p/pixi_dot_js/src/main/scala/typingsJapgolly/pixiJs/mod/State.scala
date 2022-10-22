@@ -1,20 +1,19 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a WebGL state, and is is passed The WebGL StateManager.
-  *
-  * Each mesh rendered may require WebGL to be in a different state.
-  * For example you may want different blend mode or to enable polygon offsets
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "State")
 @js.native
-class State ()
-  extends typingsJapgolly.pixiJs.PIXI.State
-
+open class State ()
+  extends typingsJapgolly.pixiCore.mod.State
+/* static members */
+object State {
+  
+  @JSImport("pixi.js", "State")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def for2d(): typingsJapgolly.pixiCore.mod.State = ^.asInstanceOf[js.Dynamic].applyDynamic("for2d")().asInstanceOf[typingsJapgolly.pixiCore.mod.State]
+}

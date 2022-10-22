@@ -1,31 +1,31 @@
 package typingsJapgolly.baiduApp.swan
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.baiduApp.AnonBankAccount
+import typingsJapgolly.baiduApp.anon.BankAccount
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region
 trait ChooseInvoiceTitleOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   @JSName("success")
-  var success_ChooseInvoiceTitleOptions: js.UndefOr[js.Function1[/* res */ AnonBankAccount, Unit]] = js.undefined
+  var success_ChooseInvoiceTitleOptions: js.UndefOr[js.Function1[/* res */ BankAccount, Unit]] = js.undefined
 }
-
 object ChooseInvoiceTitleOptions {
-  @scala.inline
-  def apply(
-    complete: /* res */ js.Any => Callback = null,
-    fail: js.Any => Callback = null,
-    success: /* res */ AnonBankAccount => Callback = null
-  ): ChooseInvoiceTitleOptions = {
+  
+  inline def apply(): ChooseInvoiceTitleOptions = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.baiduApp.AnonBankAccount) => success(t0).runNow()))
     __obj.asInstanceOf[ChooseInvoiceTitleOptions]
   }
+  
+  extension [Self <: ChooseInvoiceTitleOptions](x: Self) {
+    
+    inline def setSuccess(value: /* res */ BankAccount => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ BankAccount) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

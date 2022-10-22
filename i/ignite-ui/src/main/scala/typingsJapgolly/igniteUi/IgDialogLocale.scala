@@ -1,70 +1,84 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgDialogLocale
-  extends /**
-	 * Option for IgDialogLocale
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Gets/Sets the title/tooltip for the close button in the dialog.
-  	 *
-  	 */
+    * Gets/Sets the title/tooltip for the close button in the dialog.
+    *
+    */
   var closeButtonTitle: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the title/tooltip for the maximize button in the dialog.
-  	 *
-  	 */
+    * Gets/Sets the title/tooltip for the maximize button in the dialog.
+    *
+    */
   var maximizeButtonTitle: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the title/tooltip for the minimize button in the dialog.
-  	 *
-  	 */
+    * Gets/Sets the title/tooltip for the minimize button in the dialog.
+    *
+    */
   var minimizeButtonTitle: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the title/tooltip for the pin button in the dialog.
-  	 *
-  	 */
+    * Gets/Sets the title/tooltip for the pin button in the dialog.
+    *
+    */
   var pinButtonTitle: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the title/tooltip for the restore button in the dialog.
-  	 *
-  	 */
+    * Gets/Sets the title/tooltip for the restore button in the dialog.
+    *
+    */
   var restoreButtonTitle: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the title/tooltip for the pin button in the dialog.
-  	 *
-  	 */
+    * Gets/Sets the title/tooltip for the pin button in the dialog.
+    *
+    */
   var unpinButtonTitle: js.UndefOr[String] = js.undefined
 }
-
 object IgDialogLocale {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgDialogLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    closeButtonTitle: String = null,
-    maximizeButtonTitle: String = null,
-    minimizeButtonTitle: String = null,
-    pinButtonTitle: String = null,
-    restoreButtonTitle: String = null,
-    unpinButtonTitle: String = null
-  ): IgDialogLocale = {
+  
+  inline def apply(): IgDialogLocale = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (closeButtonTitle != null) __obj.updateDynamic("closeButtonTitle")(closeButtonTitle.asInstanceOf[js.Any])
-    if (maximizeButtonTitle != null) __obj.updateDynamic("maximizeButtonTitle")(maximizeButtonTitle.asInstanceOf[js.Any])
-    if (minimizeButtonTitle != null) __obj.updateDynamic("minimizeButtonTitle")(minimizeButtonTitle.asInstanceOf[js.Any])
-    if (pinButtonTitle != null) __obj.updateDynamic("pinButtonTitle")(pinButtonTitle.asInstanceOf[js.Any])
-    if (restoreButtonTitle != null) __obj.updateDynamic("restoreButtonTitle")(restoreButtonTitle.asInstanceOf[js.Any])
-    if (unpinButtonTitle != null) __obj.updateDynamic("unpinButtonTitle")(unpinButtonTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgDialogLocale]
   }
+  
+  extension [Self <: IgDialogLocale](x: Self) {
+    
+    inline def setCloseButtonTitle(value: String): Self = StObject.set(x, "closeButtonTitle", value.asInstanceOf[js.Any])
+    
+    inline def setCloseButtonTitleUndefined: Self = StObject.set(x, "closeButtonTitle", js.undefined)
+    
+    inline def setMaximizeButtonTitle(value: String): Self = StObject.set(x, "maximizeButtonTitle", value.asInstanceOf[js.Any])
+    
+    inline def setMaximizeButtonTitleUndefined: Self = StObject.set(x, "maximizeButtonTitle", js.undefined)
+    
+    inline def setMinimizeButtonTitle(value: String): Self = StObject.set(x, "minimizeButtonTitle", value.asInstanceOf[js.Any])
+    
+    inline def setMinimizeButtonTitleUndefined: Self = StObject.set(x, "minimizeButtonTitle", js.undefined)
+    
+    inline def setPinButtonTitle(value: String): Self = StObject.set(x, "pinButtonTitle", value.asInstanceOf[js.Any])
+    
+    inline def setPinButtonTitleUndefined: Self = StObject.set(x, "pinButtonTitle", js.undefined)
+    
+    inline def setRestoreButtonTitle(value: String): Self = StObject.set(x, "restoreButtonTitle", value.asInstanceOf[js.Any])
+    
+    inline def setRestoreButtonTitleUndefined: Self = StObject.set(x, "restoreButtonTitle", js.undefined)
+    
+    inline def setUnpinButtonTitle(value: String): Self = StObject.set(x, "unpinButtonTitle", value.asInstanceOf[js.Any])
+    
+    inline def setUnpinButtonTitleUndefined: Self = StObject.set(x, "unpinButtonTitle", js.undefined)
+  }
 }
-

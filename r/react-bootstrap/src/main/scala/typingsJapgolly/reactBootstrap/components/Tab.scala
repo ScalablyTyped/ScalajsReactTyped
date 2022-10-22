@@ -1,64 +1,98 @@
 package typingsJapgolly.reactBootstrap.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.reactBootstrap.tabMod.TabProps
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactBootstrap.libTabContainerMod.TabContainerProps
+import typingsJapgolly.reactBootstrap.libTabContentMod.TabContentProps
+import typingsJapgolly.reactBootstrap.libTabMod.TabProps
+import typingsJapgolly.reactBootstrap.libTabPaneMod.TabPaneProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tab {
-  def apply(
-    animation: js.UndefOr[Boolean] = js.undefined,
-    `aria-labelledby`: String = null,
-    bsClass: String = null,
-    eventKey: js.Any = null,
-    onEnter: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onEntered: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onEntering: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExit: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExited: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExiting: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    tabClassName: String = null,
-    title: VdomNode = null,
-    unmountOnExit: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TabProps, typingsJapgolly.reactBootstrap.mod.Tab, Unit, TabProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
-    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEnter(t0).runNow()))
-    if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEntered(t0).runNow()))
-    if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEntering(t0).runNow()))
-    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExit(t0).runNow()))
-    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExited(t0).runNow()))
-    if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExiting(t0).runNow()))
-    if (tabClassName != null) __obj.updateDynamic("tabClassName")(tabClassName.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBootstrap.tabMod.TabProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactBootstrap.mod.Tab](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBootstrap.tabMod.TabProps])(children: _*)
+  object Container {
+    
+    @JSImport("react-bootstrap", "Tab.Container")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Container.type): SharedBuilder_TabContainerProps1178728042[typingsJapgolly.reactBootstrap.mod.Tab.Container] = new SharedBuilder_TabContainerProps1178728042[typingsJapgolly.reactBootstrap.mod.Tab.Container](js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: TabContainerProps): SharedBuilder_TabContainerProps1178728042[typingsJapgolly.reactBootstrap.mod.Tab.Container] = new SharedBuilder_TabContainerProps1178728042[typingsJapgolly.reactBootstrap.mod.Tab.Container](js.Array(this.component, p.asInstanceOf[js.Any]))
   }
+  
+  object Content {
+    
+    @JSImport("react-bootstrap", "Tab.Content")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Content.type): SharedBuilder_TabContentProps1043271847[typingsJapgolly.reactBootstrap.mod.Tab.Content] = new SharedBuilder_TabContentProps1043271847[typingsJapgolly.reactBootstrap.mod.Tab.Content](js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: TabContentProps): SharedBuilder_TabContentProps1043271847[typingsJapgolly.reactBootstrap.mod.Tab.Content] = new SharedBuilder_TabContentProps1043271847[typingsJapgolly.reactBootstrap.mod.Tab.Content](js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object Pane {
+    
+    @JSImport("react-bootstrap", "Tab.Pane")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Pane.type): SharedBuilder_TabPaneProps1024747231[typingsJapgolly.reactBootstrap.mod.Tab.Pane] = new SharedBuilder_TabPaneProps1024747231[typingsJapgolly.reactBootstrap.mod.Tab.Pane](js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: TabPaneProps): SharedBuilder_TabPaneProps1024747231[typingsJapgolly.reactBootstrap.mod.Tab.Pane] = new SharedBuilder_TabPaneProps1024747231[typingsJapgolly.reactBootstrap.mod.Tab.Pane](js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
   @JSImport("react-bootstrap", "Tab")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactBootstrap.mod.Tab] {
+    
+    inline def animation(value: Boolean): this.type = set("animation", value.asInstanceOf[js.Any])
+    
+    inline def `aria-labelledby`(value: String): this.type = set("aria-labelledby", value.asInstanceOf[js.Any])
+    
+    inline def bsClass(value: String): this.type = set("bsClass", value.asInstanceOf[js.Any])
+    
+    inline def eventKey(value: Any): this.type = set("eventKey", value.asInstanceOf[js.Any])
+    
+    inline def onEnter(value: /* node */ HTMLElement => Any): this.type = set("onEnter", js.Any.fromFunction1(value))
+    
+    inline def onEntered(value: /* node */ HTMLElement => Any): this.type = set("onEntered", js.Any.fromFunction1(value))
+    
+    inline def onEntering(value: /* node */ HTMLElement => Any): this.type = set("onEntering", js.Any.fromFunction1(value))
+    
+    inline def onExit(value: /* node */ HTMLElement => Any): this.type = set("onExit", js.Any.fromFunction1(value))
+    
+    inline def onExited(value: /* node */ HTMLElement => Any): this.type = set("onExited", js.Any.fromFunction1(value))
+    
+    inline def onExiting(value: /* node */ HTMLElement => Any): this.type = set("onExiting", js.Any.fromFunction1(value))
+    
+    inline def tabClassName(value: String): this.type = set("tabClassName", value.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def unmountOnExit(value: Boolean): this.type = set("unmountOnExit", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Tab.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TabProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

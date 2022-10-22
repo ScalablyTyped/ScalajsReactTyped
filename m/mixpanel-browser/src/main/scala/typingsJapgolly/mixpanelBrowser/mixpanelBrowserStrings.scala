@@ -1,30 +1,29 @@
 package typingsJapgolly.mixpanelBrowser
 
 import typingsJapgolly.mixpanelBrowser.mod.Persistence
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mixpanelBrowserStrings {
-  @js.native
-  sealed trait cookie extends Persistence
   
   @js.native
-  sealed trait localStorage extends Persistence
+  sealed trait cookie
+    extends StObject
+       with Persistence
+  inline def cookie: cookie = "cookie".asInstanceOf[cookie]
   
   @js.native
-  sealed trait sendBeacon extends js.Object
+  sealed trait localStorage
+    extends StObject
+       with Persistence
+  inline def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
   
   @js.native
-  sealed trait xhr extends js.Object
+  sealed trait sendBeacon extends StObject
+  inline def sendBeacon: sendBeacon = "sendBeacon".asInstanceOf[sendBeacon]
   
-  @scala.inline
-  def cookie: cookie = "cookie".asInstanceOf[cookie]
-  @scala.inline
-  def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
-  @scala.inline
-  def sendBeacon: sendBeacon = "sendBeacon".asInstanceOf[sendBeacon]
-  @scala.inline
-  def xhr: xhr = "xhr".asInstanceOf[xhr]
+  @js.native
+  sealed trait xhr extends StObject
+  inline def xhr: xhr = "xhr".asInstanceOf[xhr]
 }
-

@@ -1,23 +1,32 @@
 package typingsJapgolly.css.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParserOptions extends js.Object {
+trait ParserOptions extends StObject {
+  
   /** Silently fail on parse errors */
   var silent: js.UndefOr[Boolean] = js.undefined
+  
   /** The path to the file containing css. Makes errors and source maps more helpful, by letting them know where code comes from. */
   var source: js.UndefOr[String] = js.undefined
 }
-
 object ParserOptions {
-  @scala.inline
-  def apply(silent: js.UndefOr[Boolean] = js.undefined, source: String = null): ParserOptions = {
+  
+  inline def apply(): ParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }
+  
+  extension [Self <: ParserOptions](x: Self) {
+    
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+  }
 }
-

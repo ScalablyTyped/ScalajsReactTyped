@@ -1,30 +1,31 @@
 package typingsJapgolly.googleAdwordsScripts
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TopicBuilder[Topic] extends DisplayBuilder[TopicBuilder[Topic]] {
+trait TopicBuilder[Topic]
+  extends StObject
+     with DisplayBuilder[TopicBuilder[Topic]] {
+  
   def withTopicId(topicId: Double): TopicBuilder[Topic]
 }
-
 object TopicBuilder {
-  @scala.inline
-  def apply[Topic](
+  
+  inline def apply[Topic](
     build: CallbackTo[AdWordsOperation[TopicBuilder[Topic]]],
     exclude: CallbackTo[AdWordsOperation[TopicBuilder[Topic]]],
-    withCpc: Double => CallbackTo[TopicBuilder[Topic]],
-    withCpm: Double => CallbackTo[TopicBuilder[Topic]],
-    withTopicId: Double => CallbackTo[TopicBuilder[Topic]]
+    withCpc: Double => TopicBuilder[Topic],
+    withCpm: Double => TopicBuilder[Topic],
+    withTopicId: Double => TopicBuilder[Topic]
   ): TopicBuilder[Topic] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("exclude")(exclude.toJsFn)
-    __obj.updateDynamic("withCpc")(js.Any.fromFunction1((t0: scala.Double) => withCpc(t0).runNow()))
-    __obj.updateDynamic("withCpm")(js.Any.fromFunction1((t0: scala.Double) => withCpm(t0).runNow()))
-    __obj.updateDynamic("withTopicId")(js.Any.fromFunction1((t0: scala.Double) => withTopicId(t0).runNow()))
+    val __obj = js.Dynamic.literal(build = build.toJsFn, exclude = exclude.toJsFn, withCpc = js.Any.fromFunction1(withCpc), withCpm = js.Any.fromFunction1(withCpm), withTopicId = js.Any.fromFunction1(withTopicId))
     __obj.asInstanceOf[TopicBuilder[Topic]]
   }
+  
+  extension [Self <: TopicBuilder[?], Topic](x: Self & TopicBuilder[Topic]) {
+    
+    inline def setWithTopicId(value: Double => TopicBuilder[Topic]): Self = StObject.set(x, "withTopicId", js.Any.fromFunction1(value))
+  }
 }
-

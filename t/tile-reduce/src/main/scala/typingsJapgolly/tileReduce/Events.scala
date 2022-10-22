@@ -5,12 +5,13 @@ import typingsJapgolly.tileReduce.tileReduceStrings.end
 import typingsJapgolly.tileReduce.tileReduceStrings.map
 import typingsJapgolly.tileReduce.tileReduceStrings.reduce
 import typingsJapgolly.tileReduce.tileReduceStrings.start
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Events extends js.Object {
+trait Events extends StObject {
+  
   /**
     * End Event
     *
@@ -23,7 +24,7 @@ trait Events extends js.Object {
     * })
     */
   @JSName("on")
-  def on_end(`type`: end, callback: js.Function1[/* error */ js.Any, Unit]): Events = js.native
+  def on_end(`type`: end, callback: js.Function1[/* error */ Any, Unit]): Events = js.native
   /**
     * Map Event
     *
@@ -53,7 +54,7 @@ trait Events extends js.Object {
     * })
     */
   @JSName("on")
-  def on_reduce(`type`: reduce, callback: js.Function2[/* result */ js.Any, /* tile */ Tile, Unit]): Events = js.native
+  def on_reduce(`type`: reduce, callback: js.Function2[/* result */ Any, /* tile */ Tile, Unit]): Events = js.native
   /**
     * Start Event
     *
@@ -67,4 +68,3 @@ trait Events extends js.Object {
   @JSName("on")
   def on_start(`type`: start, callback: js.Function0[Unit]): Events = js.native
 }
-

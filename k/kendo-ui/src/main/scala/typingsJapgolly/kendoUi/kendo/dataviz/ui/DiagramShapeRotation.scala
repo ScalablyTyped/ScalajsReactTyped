@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramShapeRotation extends js.Object {
+trait DiagramShapeRotation extends StObject {
+  
   var angle: js.UndefOr[Double] = js.undefined
 }
-
 object DiagramShapeRotation {
-  @scala.inline
-  def apply(angle: Int | Double = null): DiagramShapeRotation = {
+  
+  inline def apply(): DiagramShapeRotation = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramShapeRotation]
   }
+  
+  extension [Self <: DiagramShapeRotation](x: Self) {
+    
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+  }
 }
-

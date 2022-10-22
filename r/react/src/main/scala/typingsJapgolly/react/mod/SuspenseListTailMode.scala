@@ -1,21 +1,17 @@
 package typingsJapgolly.react.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.react.reactStrings.collapsed
   - typingsJapgolly.react.reactStrings.hidden
 */
-trait SuspenseListTailMode extends js.Object
-
+trait SuspenseListTailMode extends StObject
 object SuspenseListTailMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def collapsed: typingsJapgolly.react.reactStrings.collapsed = this.cast("collapsed")
-  @scala.inline
-  def hidden: typingsJapgolly.react.reactStrings.hidden = this.cast("hidden")
+  
+  inline def collapsed: typingsJapgolly.react.reactStrings.collapsed = "collapsed".asInstanceOf[typingsJapgolly.react.reactStrings.collapsed]
+  
+  inline def hidden: typingsJapgolly.react.reactStrings.hidden = "hidden".asInstanceOf[typingsJapgolly.react.reactStrings.hidden]
 }
-

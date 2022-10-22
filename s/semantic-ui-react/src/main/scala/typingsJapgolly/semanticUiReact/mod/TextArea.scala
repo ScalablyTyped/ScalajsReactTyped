@@ -1,11 +1,10 @@
 package typingsJapgolly.semanticUiReact.mod
 
+import typingsJapgolly.semanticUiReact.distCommonjsAddonsTextAreaMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "TextArea")
 @js.native
-class TextArea ()
-  extends typingsJapgolly.semanticUiReact.textAreaTextAreaMod.TextArea
-
+open class TextArea () extends default

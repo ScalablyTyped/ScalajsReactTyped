@@ -1,41 +1,37 @@
 package typingsJapgolly.amazonConnectStreams.connect
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConnectionType extends js.Object
-
+sealed trait ConnectionType extends StObject
+/** Lists the different types of connections. */
 @JSGlobal("connect.ConnectionType")
 @js.native
-object ConnectionType extends js.Object {
+object ConnectionType extends StObject {
+  
+  /** The agent connection. */
   @js.native
-  sealed trait AGENT extends ConnectionType
+  sealed trait AGENT
+    extends StObject
+       with ConnectionType
   
+  /** An inbound connection, usually representing an inbound call. */
   @js.native
-  sealed trait INBOUND extends ConnectionType
+  sealed trait INBOUND
+    extends StObject
+       with ConnectionType
   
+  /** A special connection type representing a manager listen-in session. */
   @js.native
-  sealed trait MONITORING extends ConnectionType
+  sealed trait MONITORING
+    extends StObject
+       with ConnectionType
   
+  /** An outbound connection, representing either an outbound call or additional connection added to the contact. */
   @js.native
-  sealed trait OUTBOUND extends ConnectionType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConnectionType with String] = js.native
-  /* "agent" */ @js.native
-  object AGENT extends TopLevel[AGENT with String]
-  
-  /* "inbound" */ @js.native
-  object INBOUND extends TopLevel[INBOUND with String]
-  
-  /* "monitoring" */ @js.native
-  object MONITORING extends TopLevel[MONITORING with String]
-  
-  /* "outbound" */ @js.native
-  object OUTBOUND extends TopLevel[OUTBOUND with String]
-  
+  sealed trait OUTBOUND
+    extends StObject
+       with ConnectionType
 }
-

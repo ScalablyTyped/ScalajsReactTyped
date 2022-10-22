@@ -1,12 +1,14 @@
 package typingsJapgolly.bitwise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bitwise/integer/toggle-bit", JSImport.Namespace)
-@js.native
-object integerToggleBitMod extends js.Object {
-  def default(int32: Double, position: Double): Double = js.native
+object integerToggleBitMod {
+  
+  @JSImport("bitwise/integer/toggle-bit", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(int32: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(int32.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

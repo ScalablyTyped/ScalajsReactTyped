@@ -1,18 +1,34 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Streaming.Adaptive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the PlaybackBitrateChanged event. */
-@JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourcePlaybackBitrateChangedEventArgs")
-@js.native
-abstract class AdaptiveMediaSourcePlaybackBitrateChangedEventArgs () extends js.Object {
+trait AdaptiveMediaSourcePlaybackBitrateChangedEventArgs extends StObject {
+  
   /** Gets a value indicating whether the media source contains only audio data. */
-  var audioOnly: Boolean = js.native
+  var audioOnly: Boolean
+  
   /** Gets the new playback bitrate. */
-  var newValue: Double = js.native
+  var newValue: Double
+  
   /** Gets the old playback bitrate. */
-  var oldValue: Double = js.native
+  var oldValue: Double
 }
-
+object AdaptiveMediaSourcePlaybackBitrateChangedEventArgs {
+  
+  inline def apply(audioOnly: Boolean, newValue: Double, oldValue: Double): AdaptiveMediaSourcePlaybackBitrateChangedEventArgs = {
+    val __obj = js.Dynamic.literal(audioOnly = audioOnly.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AdaptiveMediaSourcePlaybackBitrateChangedEventArgs]
+  }
+  
+  extension [Self <: AdaptiveMediaSourcePlaybackBitrateChangedEventArgs](x: Self) {
+    
+    inline def setAudioOnly(value: Boolean): Self = StObject.set(x, "audioOnly", value.asInstanceOf[js.Any])
+    
+    inline def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+  }
+}

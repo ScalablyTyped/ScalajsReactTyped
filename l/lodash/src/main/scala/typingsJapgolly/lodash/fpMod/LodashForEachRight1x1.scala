@@ -1,15 +1,16 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.mod.List
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashForEachRight1x1[T] extends js.Object {
+trait LodashForEachRight1x1[T] extends StObject {
+  
   def apply(collection: js.Array[T]): js.Array[T] = js.native
-  def apply(collection: List[T]): List[T] = js.native
+  def apply(collection: typingsJapgolly.lodash.mod.List[T]): typingsJapgolly.lodash.mod.List[T] = js.native
   def apply[T1 /* <: js.Object */](): js.UndefOr[T1 | Null] = js.native
-  def apply[TArray /* <: js.UndefOr[js.Array[T] | Null] */](collection: TArray with (js.UndefOr[js.Array[T] | Null])): TArray = js.native
+  def apply[T1 /* <: js.Object */](collection: T1): T1 = js.native
+  def apply[TArray /* <: js.UndefOr[js.Array[T] | Null] */](collection: Unit & TArray): TArray = js.native
+  def apply[TArray /* <: js.UndefOr[js.Array[T] | Null] */](collection: Null & TArray): TArray = js.native
 }
-

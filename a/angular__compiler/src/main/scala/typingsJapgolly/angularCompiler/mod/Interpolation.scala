@@ -1,17 +1,20 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "Interpolation")
 @js.native
-class Interpolation protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.Interpolation {
+open class Interpolation protected () extends AST {
   def this(
-    span: typingsJapgolly.angularCompiler.astMod.ParseSpan,
-    strings: js.Array[_],
-    expressions: js.Array[_]
+    span: ParseSpan,
+    sourceSpan: AbsoluteSourceSpan,
+    strings: js.Array[Any],
+    expressions: js.Array[Any]
   ) = this()
+  
+  var expressions: js.Array[Any] = js.native
+  
+  var strings: js.Array[Any] = js.native
 }
-

@@ -1,42 +1,56 @@
 package typingsJapgolly.phaser.Phaser.Types.Physics.Matter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MatterChamferConfig extends js.Object {
+trait MatterChamferConfig extends StObject {
+  
   /**
     * The quality of the chamfering. -1 means 'auto'.
     */
   var quality: js.UndefOr[Double] = js.undefined
+  
   /**
     * The maximum quality of the chamfering. The higher this value, the more vertices are created.
     */
   var qualityMax: js.UndefOr[Double] = js.undefined
+  
   /**
     * The minimum quality of the chamfering. The higher this value, the more vertices are created.
     */
   var qualityMin: js.UndefOr[Double] = js.undefined
+  
   /**
     * A single number, or an array, to specify the radius for each vertex.
     */
   var radius: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
-
 object MatterChamferConfig {
-  @scala.inline
-  def apply(
-    quality: Int | Double = null,
-    qualityMax: Int | Double = null,
-    qualityMin: Int | Double = null,
-    radius: Double | js.Array[Double] = null
-  ): MatterChamferConfig = {
+  
+  inline def apply(): MatterChamferConfig = {
     val __obj = js.Dynamic.literal()
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (qualityMax != null) __obj.updateDynamic("qualityMax")(qualityMax.asInstanceOf[js.Any])
-    if (qualityMin != null) __obj.updateDynamic("qualityMin")(qualityMin.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatterChamferConfig]
   }
+  
+  extension [Self <: MatterChamferConfig](x: Self) {
+    
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    
+    inline def setQualityMax(value: Double): Self = StObject.set(x, "qualityMax", value.asInstanceOf[js.Any])
+    
+    inline def setQualityMaxUndefined: Self = StObject.set(x, "qualityMax", js.undefined)
+    
+    inline def setQualityMin(value: Double): Self = StObject.set(x, "qualityMin", value.asInstanceOf[js.Any])
+    
+    inline def setQualityMinUndefined: Self = StObject.set(x, "qualityMin", js.undefined)
+    
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    
+    inline def setRadius(value: Double | js.Array[Double]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    
+    inline def setRadiusVarargs(value: Double*): Self = StObject.set(x, "radius", js.Array(value*))
+  }
 }
-

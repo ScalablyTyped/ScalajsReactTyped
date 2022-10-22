@@ -1,8 +1,8 @@
 package typingsJapgolly.zoneJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Task type: `microTask`, `macroTask`, `eventTask`.
@@ -12,16 +12,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.zoneJs.zoneJsStrings.macroTask
   - typingsJapgolly.zoneJs.zoneJsStrings.eventTask
 */
-trait TaskType extends js.Object
-
+trait TaskType extends StObject
 object TaskType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def eventTask: typingsJapgolly.zoneJs.zoneJsStrings.eventTask = this.cast("eventTask")
-  @scala.inline
-  def macroTask: typingsJapgolly.zoneJs.zoneJsStrings.macroTask = this.cast("macroTask")
-  @scala.inline
-  def microTask: typingsJapgolly.zoneJs.zoneJsStrings.microTask = this.cast("microTask")
+  
+  inline def eventTask: typingsJapgolly.zoneJs.zoneJsStrings.eventTask = "eventTask".asInstanceOf[typingsJapgolly.zoneJs.zoneJsStrings.eventTask]
+  
+  inline def macroTask: typingsJapgolly.zoneJs.zoneJsStrings.macroTask = "macroTask".asInstanceOf[typingsJapgolly.zoneJs.zoneJsStrings.macroTask]
+  
+  inline def microTask: typingsJapgolly.zoneJs.zoneJsStrings.microTask = "microTask".asInstanceOf[typingsJapgolly.zoneJs.zoneJsStrings.microTask]
 }
-

@@ -1,56 +1,50 @@
 package typingsJapgolly.wixStyleReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.wixStyleReact.loaderMod.LoaderColor
-import typingsJapgolly.wixStyleReact.loaderMod.LoaderProps
-import typingsJapgolly.wixStyleReact.loaderMod.LoaderSize
-import typingsJapgolly.wixStyleReact.loaderMod.LoaderStatus
-import typingsJapgolly.wixStyleReact.loaderMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.wixStyleReact.distTypesLoaderMod.LoaderColor
+import typingsJapgolly.wixStyleReact.distTypesLoaderMod.LoaderProps
+import typingsJapgolly.wixStyleReact.distTypesLoaderMod.LoaderSize
+import typingsJapgolly.wixStyleReact.distTypesLoaderMod.LoaderStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Loader {
-  def apply(
-    color: LoaderColor = null,
-    dataHook: String = null,
-    shouldLoadAsync: js.UndefOr[Boolean] = js.undefined,
-    size: LoaderSize = null,
-    status: LoaderStatus = null,
-    statusMessage: String = null,
-    styles: String = null,
-    text: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[LoaderProps, default, Unit, LoaderProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dataHook != null) __obj.updateDynamic("dataHook")(dataHook.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldLoadAsync)) __obj.updateDynamic("shouldLoadAsync")(shouldLoadAsync.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.wixStyleReact.loaderMod.LoaderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.wixStyleReact.loaderMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.wixStyleReact.loaderMod.LoaderProps])(children: _*)
-  }
-  @JSImport("wix-style-react/Loader", JSImport.Default)
+  @JSImport("wix-style-react", "Loader")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.wixStyleReact.mod.Loader] {
+    
+    inline def color(value: LoaderColor): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def dataHook(value: String): this.type = set("dataHook", value.asInstanceOf[js.Any])
+    
+    inline def size(value: LoaderSize): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def status(value: LoaderStatus): this.type = set("status", value.asInstanceOf[js.Any])
+    
+    inline def statusMessage(value: String): this.type = set("statusMessage", value.asInstanceOf[js.Any])
+    
+    inline def text(value: VdomNode): this.type = set("text", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def textNull: this.type = set("text", null)
+    
+    inline def textVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("text", js.Array(value*))
+    
+    inline def textVdomElement(value: VdomElement): this.type = set("text", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Loader.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: LoaderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

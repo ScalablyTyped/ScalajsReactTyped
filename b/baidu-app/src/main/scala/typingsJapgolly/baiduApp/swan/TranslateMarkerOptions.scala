@@ -1,46 +1,55 @@
 package typingsJapgolly.baiduApp.swan
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.baiduApp.AnonLongitude
+import typingsJapgolly.baiduApp.anon.Longitude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TranslateMarkerOptions
-  extends BaseOptions[js.Any, js.Any] {
-  	// 动画持续时长，默认值1000ms，平移与旋转分别计算。
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
+  // 动画持续时长，默认值1000ms，平移与旋转分别计算。
   var animationEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
-  	// 指定marker移动到的目标点
+  
+  // 指定marker移动到的目标点
   var autoRotate: Boolean
-  	// 指定 marker
-  var destination: AnonLongitude
-  	// marker 的旋转角度
+  
+  // 指定 marker
+  var destination: Longitude
+  
+  // marker 的旋转角度
   var duration: js.UndefOr[Double] = js.undefined
+  
   var markerId: Double
-  	// 移动过程中是否自动旋转 marker
+  
+  // 移动过程中是否自动旋转 marker
   var rotate: Double
 }
-
 object TranslateMarkerOptions {
-  @scala.inline
-  def apply(
-    autoRotate: Boolean,
-    destination: AnonLongitude,
-    markerId: Double,
-    rotate: Double,
-    animationEnd: js.UndefOr[Callback] = js.undefined,
-    complete: /* res */ js.Any => Callback = null,
-    duration: Int | Double = null,
-    fail: js.Any => Callback = null,
-    success: js.Any => Callback = null
-  ): TranslateMarkerOptions = {
+  
+  inline def apply(autoRotate: Boolean, destination: Longitude, markerId: Double, rotate: Double): TranslateMarkerOptions = {
     val __obj = js.Dynamic.literal(autoRotate = autoRotate.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], markerId = markerId.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any])
-    animationEnd.foreach(p => __obj.updateDynamic("animationEnd")(p.toJsFn))
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: js.Any) => success(t0).runNow()))
     __obj.asInstanceOf[TranslateMarkerOptions]
   }
+  
+  extension [Self <: TranslateMarkerOptions](x: Self) {
+    
+    inline def setAnimationEnd(value: Callback): Self = StObject.set(x, "animationEnd", value.toJsFn)
+    
+    inline def setAnimationEndUndefined: Self = StObject.set(x, "animationEnd", js.undefined)
+    
+    inline def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
+    
+    inline def setDestination(value: Longitude): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setMarkerId(value: Double): Self = StObject.set(x, "markerId", value.asInstanceOf[js.Any])
+    
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+  }
 }
-

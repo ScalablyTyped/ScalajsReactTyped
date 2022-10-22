@@ -1,94 +1,57 @@
 package typingsJapgolly.hlsJs.mod
 
+import typingsJapgolly.hlsJs.anon.Bytes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * a Level object represents a given quality level and contains quality level related info
-  */
-trait Level extends js.Object {
-  /**
-    * attribute list
-    */
-  var attrs: js.Array[LevelAttr]
-  /**
-    * audio codec
-    */
-  var audioCodec: String
-  /**
-    * level bitrate
-    */
-  var bitrate: Double
-  /**
-    * level details
-    */
-  var details: js.UndefOr[LevelDetails] = js.undefined
-  /**
-    * whether there is any error on the fragment
-    */
-  var fragmentError: js.UndefOr[Boolean] = js.undefined
-  /**
-    * video height
-    */
-  var height: Double
-  /**
-    * index of the level
-    */
-  var level: js.UndefOr[Double] = js.undefined
-  /**
-    * error code
-    */
-  var loadError: Double
-  /**
-    * level name
-    */
-  var name: String
-  /**
-    * array of unrecognized codecs
-    */
-  var unkownCodecs: js.Array[String]
-  /**
-    * level url. might contain several items if failover/redundant streams are found in the manifest
-    */
-  var url: js.Array[String]
-  /**
-    * index of current url from url[] array
-    */
-  var urlId: Double
-  /**
-    * video codec
-    */
-  var videoCodec: String
-  /**
-    * video width
-    */
-  var width: Double
+@JSImport("hls.js", "Level")
+@js.native
+open class Level protected () extends StObject {
+  def this(data: LevelParsed) = this()
+  
+  /* private */ var _urlId: Any = js.native
+  
+  val attrs: LevelAttributes = js.native
+  
+  val audioCodec: js.UndefOr[String] = js.native
+  
+  var audioGroupIds: js.UndefOr[js.Array[String]] = js.native
+  
+  val bitrate: Double = js.native
+  
+  val codecSet: String = js.native
+  
+  var details: js.UndefOr[LevelDetails] = js.native
+  
+  var fragmentError: Double = js.native
+  
+  val height: Double = js.native
+  
+  val id: Double = js.native
+  
+  var loadError: Double = js.native
+  
+  var loaded: js.UndefOr[Bytes] = js.native
+  
+  def maxBitrate: Double = js.native
+  
+  val name: js.UndefOr[String] = js.native
+  
+  var realBitrate: Double = js.native
+  
+  var textGroupIds: js.UndefOr[js.Array[String]] = js.native
+  
+  val unknownCodecs: js.UndefOr[js.Array[String]] = js.native
+  
+  def uri: String = js.native
+  
+  var url: js.Array[String] = js.native
+  
+  def urlId: Double = js.native
+  def urlId_=(value: Double): Unit = js.native
+  
+  val videoCodec: js.UndefOr[String] = js.native
+  
+  val width: Double = js.native
 }
-
-object Level {
-  @scala.inline
-  def apply(
-    attrs: js.Array[LevelAttr],
-    audioCodec: String,
-    bitrate: Double,
-    height: Double,
-    loadError: Double,
-    name: String,
-    unkownCodecs: js.Array[String],
-    url: js.Array[String],
-    urlId: Double,
-    videoCodec: String,
-    width: Double,
-    details: LevelDetails = null,
-    fragmentError: js.UndefOr[Boolean] = js.undefined,
-    level: Int | Double = null
-  ): Level = {
-    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], audioCodec = audioCodec.asInstanceOf[js.Any], bitrate = bitrate.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], loadError = loadError.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], unkownCodecs = unkownCodecs.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], urlId = urlId.asInstanceOf[js.Any], videoCodec = videoCodec.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (!js.isUndefined(fragmentError)) __obj.updateDynamic("fragmentError")(fragmentError.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Level]
-  }
-}
-

@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Enumeration
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeviceUnpairingResultStatus extends js.Object
-
+sealed trait DeviceUnpairingResultStatus extends StObject
 /** The result of the unpairing action. */
 @JSGlobal("Windows.Devices.Enumeration.DeviceUnpairingResultStatus")
 @js.native
-object DeviceUnpairingResultStatus extends js.Object {
+object DeviceUnpairingResultStatus extends StObject {
+  
   /** The caller does not have sufficient permissions to unpair the device. */
   @js.native
-  sealed trait accessDenied extends DeviceUnpairingResultStatus
+  sealed trait accessDenied
+    extends StObject
+       with DeviceUnpairingResultStatus
   
   /** The device object was already unpaired. */
   @js.native
-  sealed trait alreadyUnpaired extends DeviceUnpairingResultStatus
+  sealed trait alreadyUnpaired
+    extends StObject
+       with DeviceUnpairingResultStatus
   
   /** An unknown failure occurred. */
   @js.native
-  sealed trait failed extends DeviceUnpairingResultStatus
+  sealed trait failed
+    extends StObject
+       with DeviceUnpairingResultStatus
   
   /** The device object is currently in the middle of either a pairing or unpairing action. */
   @js.native
-  sealed trait operationAlreadyInProgress extends DeviceUnpairingResultStatus
+  sealed trait operationAlreadyInProgress
+    extends StObject
+       with DeviceUnpairingResultStatus
   
   /** The device object is successfully unpaired. */
   @js.native
-  sealed trait unpaired extends DeviceUnpairingResultStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DeviceUnpairingResultStatus with Double] = js.native
-  /* 3 */ @js.native
-  object accessDenied extends TopLevel[accessDenied with Double]
-  
-  /* 1 */ @js.native
-  object alreadyUnpaired extends TopLevel[alreadyUnpaired with Double]
-  
-  /* 4 */ @js.native
-  object failed extends TopLevel[failed with Double]
-  
-  /* 2 */ @js.native
-  object operationAlreadyInProgress extends TopLevel[operationAlreadyInProgress with Double]
-  
-  /* 0 */ @js.native
-  object unpaired extends TopLevel[unpaired with Double]
-  
+  sealed trait unpaired
+    extends StObject
+       with DeviceUnpairingResultStatus
 }
-

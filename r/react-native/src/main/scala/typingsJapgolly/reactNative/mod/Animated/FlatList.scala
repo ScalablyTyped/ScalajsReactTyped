@@ -1,12 +1,19 @@
 package typingsJapgolly.reactNative.mod.Animated
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.react.mod.Component
+import typingsJapgolly.reactNative.mod.FlatListProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native", "Animated.FlatList")
 @js.native
-object FlatList
-  extends TopLevel[AnimatedComponent[typingsJapgolly.reactNative.mod.FlatList[js.Any]]]
-
+open class FlatList[ItemT] protected ()
+  extends Component[AnimatedProps[FlatListProps[ItemT]], js.Object, Any] {
+  def this(props: AnimatedProps[FlatListProps[ItemT]]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: AnimatedProps[FlatListProps[ItemT]], context: Any) = this()
+}

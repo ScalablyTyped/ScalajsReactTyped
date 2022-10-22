@@ -1,75 +1,132 @@
 package typingsJapgolly.griddleReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GriddleStyleElements[T] extends js.Object {
+trait GriddleStyleElements[T] extends StObject {
+  
   var Cell: js.UndefOr[T] = js.undefined
+  
   var Filter: js.UndefOr[T] = js.undefined
+  
   var Layout: js.UndefOr[T] = js.undefined
+  
   var Loading: js.UndefOr[T] = js.undefined
+  
   var NextButton: js.UndefOr[T] = js.undefined
+  
   var NoResults: js.UndefOr[T] = js.undefined
+  
   var PageDropdown: js.UndefOr[T] = js.undefined
+  
   var Pagination: js.UndefOr[T] = js.undefined
+  
   var PreviousButton: js.UndefOr[T] = js.undefined
+  
   var Row: js.UndefOr[T] = js.undefined
+  
   var RowDefinition: js.UndefOr[T] = js.undefined
+  
   var Settings: js.UndefOr[T] = js.undefined
+  
   var SettingsToggle: js.UndefOr[T] = js.undefined
+  
   var Table: js.UndefOr[T] = js.undefined
+  
   var TableBody: js.UndefOr[T] = js.undefined
+  
   var TableHeading: js.UndefOr[T] = js.undefined
+  
   var TableHeadingCell: js.UndefOr[T] = js.undefined
+  
   var TableHeadingCellAscending: js.UndefOr[T] = js.undefined
+  
   var TableHeadingCellDescending: js.UndefOr[T] = js.undefined
 }
-
 object GriddleStyleElements {
-  @scala.inline
-  def apply[T](
-    Cell: T = null,
-    Filter: T = null,
-    Layout: T = null,
-    Loading: T = null,
-    NextButton: T = null,
-    NoResults: T = null,
-    PageDropdown: T = null,
-    Pagination: T = null,
-    PreviousButton: T = null,
-    Row: T = null,
-    RowDefinition: T = null,
-    Settings: T = null,
-    SettingsToggle: T = null,
-    Table: T = null,
-    TableBody: T = null,
-    TableHeading: T = null,
-    TableHeadingCell: T = null,
-    TableHeadingCellAscending: T = null,
-    TableHeadingCellDescending: T = null
-  ): GriddleStyleElements[T] = {
+  
+  inline def apply[T](): GriddleStyleElements[T] = {
     val __obj = js.Dynamic.literal()
-    if (Cell != null) __obj.updateDynamic("Cell")(Cell.asInstanceOf[js.Any])
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (Layout != null) __obj.updateDynamic("Layout")(Layout.asInstanceOf[js.Any])
-    if (Loading != null) __obj.updateDynamic("Loading")(Loading.asInstanceOf[js.Any])
-    if (NextButton != null) __obj.updateDynamic("NextButton")(NextButton.asInstanceOf[js.Any])
-    if (NoResults != null) __obj.updateDynamic("NoResults")(NoResults.asInstanceOf[js.Any])
-    if (PageDropdown != null) __obj.updateDynamic("PageDropdown")(PageDropdown.asInstanceOf[js.Any])
-    if (Pagination != null) __obj.updateDynamic("Pagination")(Pagination.asInstanceOf[js.Any])
-    if (PreviousButton != null) __obj.updateDynamic("PreviousButton")(PreviousButton.asInstanceOf[js.Any])
-    if (Row != null) __obj.updateDynamic("Row")(Row.asInstanceOf[js.Any])
-    if (RowDefinition != null) __obj.updateDynamic("RowDefinition")(RowDefinition.asInstanceOf[js.Any])
-    if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
-    if (SettingsToggle != null) __obj.updateDynamic("SettingsToggle")(SettingsToggle.asInstanceOf[js.Any])
-    if (Table != null) __obj.updateDynamic("Table")(Table.asInstanceOf[js.Any])
-    if (TableBody != null) __obj.updateDynamic("TableBody")(TableBody.asInstanceOf[js.Any])
-    if (TableHeading != null) __obj.updateDynamic("TableHeading")(TableHeading.asInstanceOf[js.Any])
-    if (TableHeadingCell != null) __obj.updateDynamic("TableHeadingCell")(TableHeadingCell.asInstanceOf[js.Any])
-    if (TableHeadingCellAscending != null) __obj.updateDynamic("TableHeadingCellAscending")(TableHeadingCellAscending.asInstanceOf[js.Any])
-    if (TableHeadingCellDescending != null) __obj.updateDynamic("TableHeadingCellDescending")(TableHeadingCellDescending.asInstanceOf[js.Any])
     __obj.asInstanceOf[GriddleStyleElements[T]]
   }
+  
+  extension [Self <: GriddleStyleElements[?], T](x: Self & GriddleStyleElements[T]) {
+    
+    inline def setCell(value: T): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
+    
+    inline def setCellUndefined: Self = StObject.set(x, "Cell", js.undefined)
+    
+    inline def setFilter(value: T): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    
+    inline def setLayout(value: T): Self = StObject.set(x, "Layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "Layout", js.undefined)
+    
+    inline def setLoading(value: T): Self = StObject.set(x, "Loading", value.asInstanceOf[js.Any])
+    
+    inline def setLoadingUndefined: Self = StObject.set(x, "Loading", js.undefined)
+    
+    inline def setNextButton(value: T): Self = StObject.set(x, "NextButton", value.asInstanceOf[js.Any])
+    
+    inline def setNextButtonUndefined: Self = StObject.set(x, "NextButton", js.undefined)
+    
+    inline def setNoResults(value: T): Self = StObject.set(x, "NoResults", value.asInstanceOf[js.Any])
+    
+    inline def setNoResultsUndefined: Self = StObject.set(x, "NoResults", js.undefined)
+    
+    inline def setPageDropdown(value: T): Self = StObject.set(x, "PageDropdown", value.asInstanceOf[js.Any])
+    
+    inline def setPageDropdownUndefined: Self = StObject.set(x, "PageDropdown", js.undefined)
+    
+    inline def setPagination(value: T): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
+    
+    inline def setPaginationUndefined: Self = StObject.set(x, "Pagination", js.undefined)
+    
+    inline def setPreviousButton(value: T): Self = StObject.set(x, "PreviousButton", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousButtonUndefined: Self = StObject.set(x, "PreviousButton", js.undefined)
+    
+    inline def setRow(value: T): Self = StObject.set(x, "Row", value.asInstanceOf[js.Any])
+    
+    inline def setRowDefinition(value: T): Self = StObject.set(x, "RowDefinition", value.asInstanceOf[js.Any])
+    
+    inline def setRowDefinitionUndefined: Self = StObject.set(x, "RowDefinition", js.undefined)
+    
+    inline def setRowUndefined: Self = StObject.set(x, "Row", js.undefined)
+    
+    inline def setSettings(value: T): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+    
+    inline def setSettingsToggle(value: T): Self = StObject.set(x, "SettingsToggle", value.asInstanceOf[js.Any])
+    
+    inline def setSettingsToggleUndefined: Self = StObject.set(x, "SettingsToggle", js.undefined)
+    
+    inline def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
+    
+    inline def setTable(value: T): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
+    
+    inline def setTableBody(value: T): Self = StObject.set(x, "TableBody", value.asInstanceOf[js.Any])
+    
+    inline def setTableBodyUndefined: Self = StObject.set(x, "TableBody", js.undefined)
+    
+    inline def setTableHeading(value: T): Self = StObject.set(x, "TableHeading", value.asInstanceOf[js.Any])
+    
+    inline def setTableHeadingCell(value: T): Self = StObject.set(x, "TableHeadingCell", value.asInstanceOf[js.Any])
+    
+    inline def setTableHeadingCellAscending(value: T): Self = StObject.set(x, "TableHeadingCellAscending", value.asInstanceOf[js.Any])
+    
+    inline def setTableHeadingCellAscendingUndefined: Self = StObject.set(x, "TableHeadingCellAscending", js.undefined)
+    
+    inline def setTableHeadingCellDescending(value: T): Self = StObject.set(x, "TableHeadingCellDescending", value.asInstanceOf[js.Any])
+    
+    inline def setTableHeadingCellDescendingUndefined: Self = StObject.set(x, "TableHeadingCellDescending", js.undefined)
+    
+    inline def setTableHeadingCellUndefined: Self = StObject.set(x, "TableHeadingCell", js.undefined)
+    
+    inline def setTableHeadingUndefined: Self = StObject.set(x, "TableHeading", js.undefined)
+    
+    inline def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
+  }
 }
-

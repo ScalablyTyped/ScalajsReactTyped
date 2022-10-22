@@ -1,19 +1,24 @@
 package typingsJapgolly.openlayers.mod.olx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceOrientationOptions extends js.Object {
+trait DeviceOrientationOptions extends StObject {
+  
   var tracking: js.UndefOr[Boolean] = js.undefined
 }
-
 object DeviceOrientationOptions {
-  @scala.inline
-  def apply(tracking: js.UndefOr[Boolean] = js.undefined): DeviceOrientationOptions = {
+  
+  inline def apply(): DeviceOrientationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(tracking)) __obj.updateDynamic("tracking")(tracking.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceOrientationOptions]
   }
+  
+  extension [Self <: DeviceOrientationOptions](x: Self) {
+    
+    inline def setTracking(value: Boolean): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
+    
+    inline def setTrackingUndefined: Self = StObject.set(x, "tracking", js.undefined)
+  }
 }
-

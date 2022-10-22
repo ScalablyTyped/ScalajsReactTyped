@@ -1,27 +1,42 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Response from the classifier for multiple phrases. */
-trait ClassificationCollection extends js.Object {
+trait ClassificationCollection extends StObject {
+  
   /** Unique identifier for this classifier. */
   var classifier_id: js.UndefOr[String] = js.undefined
+  
   /** An array of classifier responses for each submitted phrase. */
   var collection: js.UndefOr[js.Array[CollectionItem]] = js.undefined
+  
   /** Link to the classifier. */
   var url: js.UndefOr[String] = js.undefined
 }
-
 object ClassificationCollection {
-  @scala.inline
-  def apply(classifier_id: String = null, collection: js.Array[CollectionItem] = null, url: String = null): ClassificationCollection = {
+  
+  inline def apply(): ClassificationCollection = {
     val __obj = js.Dynamic.literal()
-    if (classifier_id != null) __obj.updateDynamic("classifier_id")(classifier_id.asInstanceOf[js.Any])
-    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassificationCollection]
   }
+  
+  extension [Self <: ClassificationCollection](x: Self) {
+    
+    inline def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
+    
+    inline def setClassifier_idUndefined: Self = StObject.set(x, "classifier_id", js.undefined)
+    
+    inline def setCollection(value: js.Array[CollectionItem]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    
+    inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+    
+    inline def setCollectionVarargs(value: CollectionItem*): Self = StObject.set(x, "collection", js.Array(value*))
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

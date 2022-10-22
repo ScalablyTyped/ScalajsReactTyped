@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Protection.PlayReady
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NDProximityDetectionType extends js.Object
-
+sealed trait NDProximityDetectionType extends StObject
 /** Indicates the transport protocol that the proximity detection process uses. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDProximityDetectionType")
 @js.native
-object NDProximityDetectionType extends js.Object {
+object NDProximityDetectionType extends StObject {
+  
   /** Proximity detection uses the TCP transport protocol. */
   @js.native
-  sealed trait tcp extends NDProximityDetectionType
+  sealed trait tcp
+    extends StObject
+       with NDProximityDetectionType
   
   /** Proximity detection can use either UDP or TCP as the transport protocol. */
   @js.native
-  sealed trait transportAgnostic extends NDProximityDetectionType
+  sealed trait transportAgnostic
+    extends StObject
+       with NDProximityDetectionType
   
   /** Proximity detection uses the UDP transport protocol. */
   @js.native
-  sealed trait udp extends NDProximityDetectionType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NDProximityDetectionType with Double] = js.native
-  /* 1 */ @js.native
-  object tcp extends TopLevel[tcp with Double]
-  
-  /* 2 */ @js.native
-  object transportAgnostic extends TopLevel[transportAgnostic with Double]
-  
-  /* 0 */ @js.native
-  object udp extends TopLevel[udp with Double]
-  
+  sealed trait udp
+    extends StObject
+       with NDProximityDetectionType
 }
-

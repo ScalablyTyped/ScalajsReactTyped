@@ -1,7 +1,7 @@
 
 # Scala.js typings for gulp-pug
 
-Typings are for version 4.0.1
+Typings are for version 5.0.0
 
 ## Library description:
 Gulp plugin for compiling Pug templates
@@ -10,10 +10,10 @@ Gulp plugin for compiling Pug templates
 | ------------------ | :-------------: |
 | Full name          | gulp-pug |
 | Keywords           | jade, pug, gulpplugin, stream, compile |
-| # releases         | 3 |
-| # dependents       | 149 |
-| # downloads        | 825810 |
-| # stars            | 55 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 103370.0 |
+| # stars            | 521.0 |
 
 ## Links
 - [Homepage](https://github.com/gulp-community/gulp-pug#readme)

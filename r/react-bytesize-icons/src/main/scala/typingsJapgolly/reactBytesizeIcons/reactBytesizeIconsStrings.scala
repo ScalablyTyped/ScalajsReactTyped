@@ -2,44 +2,47 @@ package typingsJapgolly.reactBytesizeIcons
 
 import typingsJapgolly.reactBytesizeIcons.mod.StrokeLinecap
 import typingsJapgolly.reactBytesizeIcons.mod.StrokeLinejoin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactBytesizeIconsStrings {
-  @js.native
-  sealed trait bevel extends StrokeLinejoin
   
   @js.native
-  sealed trait butt extends StrokeLinecap
+  sealed trait bevel
+    extends StObject
+       with StrokeLinejoin
+  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
+  
+  @js.native
+  sealed trait butt
+    extends StObject
+       with StrokeLinecap
+  inline def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
   sealed trait inherit
-    extends StrokeLinecap
+    extends StObject
+       with StrokeLinecap
        with StrokeLinejoin
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
-  sealed trait miter extends StrokeLinejoin
+  sealed trait miter
+    extends StObject
+       with StrokeLinejoin
+  inline def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
   sealed trait round
-    extends StrokeLinecap
+    extends StObject
+       with StrokeLinecap
        with StrokeLinejoin
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait square extends StrokeLinecap
-  
-  @scala.inline
-  def bevel: bevel = "bevel".asInstanceOf[bevel]
-  @scala.inline
-  def butt: butt = "butt".asInstanceOf[butt]
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def miter: miter = "miter".asInstanceOf[miter]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
+  sealed trait square
+    extends StObject
+       with StrokeLinecap
+  inline def square: square = "square".asInstanceOf[square]
 }
-

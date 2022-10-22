@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Storage.Search
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DateStackOption extends js.Object
-
+sealed trait DateStackOption extends StObject
 /** Indicates the unit of time used to group files into folders if a CommonFolderQuery based on date is used to create a QueryOptions object. */
 @JSGlobal("Windows.Storage.Search.DateStackOption")
 @js.native
-object DateStackOption extends js.Object {
+object DateStackOption extends StObject {
+  
   /** The content is grouped by month. */
   @js.native
-  sealed trait month extends DateStackOption
+  sealed trait month
+    extends StObject
+       with DateStackOption
   
   /** The query options are not based on the date. */
   @js.native
-  sealed trait none extends DateStackOption
+  sealed trait none
+    extends StObject
+       with DateStackOption
   
   /** The content is grouped by year. */
   @js.native
-  sealed trait year extends DateStackOption
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DateStackOption with Double] = js.native
-  /* 2 */ @js.native
-  object month extends TopLevel[month with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object year extends TopLevel[year with Double]
-  
+  sealed trait year
+    extends StObject
+       with DateStackOption
 }
-

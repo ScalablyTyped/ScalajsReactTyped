@@ -1,171 +1,156 @@
 package typingsJapgolly.menubar
 
-import typingsJapgolly.menubar.getWindowPositionMod.TaskbarLocation_
-import typingsJapgolly.menubar.getWindowPositionMod.WindowPosition
+import typingsJapgolly.menubar.libUtilGetWindowPositionMod.TaskbarLocation_
+import typingsJapgolly.menubar.libUtilGetWindowPositionMod.WindowPosition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menubarStrings {
-  @js.native
-  sealed trait bottom extends TaskbarLocation_
   
   @js.native
-  sealed trait bottomCenter extends js.Object
+  sealed trait activateWithApp extends StObject
+  inline def activateWithApp: activateWithApp = "activateWithApp".asInstanceOf[activateWithApp]
   
   @js.native
-  sealed trait bottomLeft extends js.Object
+  sealed trait bottom
+    extends StObject
+       with TaskbarLocation_
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait bottomRight extends WindowPosition
+  sealed trait bottomCenter extends StObject
+  inline def bottomCenter: bottomCenter = "bottomCenter".asInstanceOf[bottomCenter]
   
   @js.native
-  sealed trait browserWindow extends js.Object
+  sealed trait bottomLeft
+    extends StObject
+       with WindowPosition
+  inline def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait bottomRight
+    extends StObject
+       with WindowPosition
+  inline def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   
   @js.native
-  sealed trait dir extends js.Object
+  sealed trait browserWindow extends StObject
+  inline def browserWindow: browserWindow = "browserWindow".asInstanceOf[browserWindow]
   
   @js.native
-  sealed trait icon extends js.Object
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait index extends js.Object
+  sealed trait dir extends StObject
+  inline def dir: dir = "dir".asInstanceOf[dir]
   
   @js.native
-  sealed trait left extends TaskbarLocation_
+  sealed trait icon extends StObject
+  inline def icon: icon = "icon".asInstanceOf[icon]
   
   @js.native
-  sealed trait leftCenter extends js.Object
+  sealed trait index extends StObject
+  inline def index: index = "index".asInstanceOf[index]
   
   @js.native
-  sealed trait loadUrlOptions extends js.Object
+  sealed trait left
+    extends StObject
+       with TaskbarLocation_
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait mockDotappDotgetAppPath extends js.Object
+  sealed trait leftCenter extends StObject
+  inline def leftCenter: leftCenter = "leftCenter".asInstanceOf[leftCenter]
   
   @js.native
-  sealed trait preloadWindow extends js.Object
+  sealed trait loadUrlOptions extends StObject
+  inline def loadUrlOptions: loadUrlOptions = "loadUrlOptions".asInstanceOf[loadUrlOptions]
   
   @js.native
-  sealed trait right extends TaskbarLocation_
+  sealed trait preloadWindow extends StObject
+  inline def preloadWindow: preloadWindow = "preloadWindow".asInstanceOf[preloadWindow]
   
   @js.native
-  sealed trait rightCenter extends js.Object
+  sealed trait right
+    extends StObject
+       with TaskbarLocation_
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait showDockIcon extends js.Object
+  sealed trait rightCenter extends StObject
+  inline def rightCenter: rightCenter = "rightCenter".asInstanceOf[rightCenter]
   
   @js.native
-  sealed trait showOnAllWorkspaces extends js.Object
+  sealed trait showDockIcon extends StObject
+  inline def showDockIcon: showDockIcon = "showDockIcon".asInstanceOf[showDockIcon]
   
   @js.native
-  sealed trait showOnRightClick extends js.Object
+  sealed trait showOnAllWorkspaces extends StObject
+  inline def showOnAllWorkspaces: showOnAllWorkspaces = "showOnAllWorkspaces".asInstanceOf[showOnAllWorkspaces]
   
   @js.native
-  sealed trait tooltip extends js.Object
+  sealed trait showOnRightClick extends StObject
+  inline def showOnRightClick: showOnRightClick = "showOnRightClick".asInstanceOf[showOnRightClick]
   
   @js.native
-  sealed trait top extends TaskbarLocation_
+  sealed trait tooltip extends StObject
+  inline def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   
   @js.native
-  sealed trait topCenter extends js.Object
+  sealed trait top
+    extends StObject
+       with TaskbarLocation_
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait topLeft extends js.Object
+  sealed trait topCenter extends StObject
+  inline def topCenter: topCenter = "topCenter".asInstanceOf[topCenter]
   
   @js.native
-  sealed trait topRight extends WindowPosition
+  sealed trait topLeft extends StObject
+  inline def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
   
   @js.native
-  sealed trait tray extends js.Object
+  sealed trait topRight
+    extends StObject
+       with WindowPosition
+  inline def topRight: topRight = "topRight".asInstanceOf[topRight]
   
   @js.native
-  sealed trait trayBottomCenter extends WindowPosition
+  sealed trait tray extends StObject
+  inline def tray: tray = "tray".asInstanceOf[tray]
   
   @js.native
-  sealed trait trayBottomLeft extends WindowPosition
+  sealed trait trayBottomCenter
+    extends StObject
+       with WindowPosition
+  inline def trayBottomCenter: trayBottomCenter = "trayBottomCenter".asInstanceOf[trayBottomCenter]
   
   @js.native
-  sealed trait trayBottomRight extends js.Object
+  sealed trait trayBottomLeft extends StObject
+  inline def trayBottomLeft: trayBottomLeft = "trayBottomLeft".asInstanceOf[trayBottomLeft]
   
   @js.native
-  sealed trait trayCenter extends WindowPosition
+  sealed trait trayBottomRight extends StObject
+  inline def trayBottomRight: trayBottomRight = "trayBottomRight".asInstanceOf[trayBottomRight]
   
   @js.native
-  sealed trait trayLeft extends js.Object
+  sealed trait trayCenter
+    extends StObject
+       with WindowPosition
+  inline def trayCenter: trayCenter = "trayCenter".asInstanceOf[trayCenter]
   
   @js.native
-  sealed trait trayRight extends js.Object
+  sealed trait trayLeft extends StObject
+  inline def trayLeft: trayLeft = "trayLeft".asInstanceOf[trayLeft]
   
   @js.native
-  sealed trait windowPosition extends js.Object
+  sealed trait trayRight extends StObject
+  inline def trayRight: trayRight = "trayRight".asInstanceOf[trayRight]
   
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def bottomCenter: bottomCenter = "bottomCenter".asInstanceOf[bottomCenter]
-  @scala.inline
-  def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
-  @scala.inline
-  def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
-  @scala.inline
-  def browserWindow: browserWindow = "browserWindow".asInstanceOf[browserWindow]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def dir: dir = "dir".asInstanceOf[dir]
-  @scala.inline
-  def icon: icon = "icon".asInstanceOf[icon]
-  @scala.inline
-  def index: index = "index".asInstanceOf[index]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def leftCenter: leftCenter = "leftCenter".asInstanceOf[leftCenter]
-  @scala.inline
-  def loadUrlOptions: loadUrlOptions = "loadUrlOptions".asInstanceOf[loadUrlOptions]
-  @scala.inline
-  def mockDotappDotgetAppPath: mockDotappDotgetAppPath = "mock.app.getAppPath".asInstanceOf[mockDotappDotgetAppPath]
-  @scala.inline
-  def preloadWindow: preloadWindow = "preloadWindow".asInstanceOf[preloadWindow]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rightCenter: rightCenter = "rightCenter".asInstanceOf[rightCenter]
-  @scala.inline
-  def showDockIcon: showDockIcon = "showDockIcon".asInstanceOf[showDockIcon]
-  @scala.inline
-  def showOnAllWorkspaces: showOnAllWorkspaces = "showOnAllWorkspaces".asInstanceOf[showOnAllWorkspaces]
-  @scala.inline
-  def showOnRightClick: showOnRightClick = "showOnRightClick".asInstanceOf[showOnRightClick]
-  @scala.inline
-  def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def topCenter: topCenter = "topCenter".asInstanceOf[topCenter]
-  @scala.inline
-  def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
-  @scala.inline
-  def topRight: topRight = "topRight".asInstanceOf[topRight]
-  @scala.inline
-  def tray: tray = "tray".asInstanceOf[tray]
-  @scala.inline
-  def trayBottomCenter: trayBottomCenter = "trayBottomCenter".asInstanceOf[trayBottomCenter]
-  @scala.inline
-  def trayBottomLeft: trayBottomLeft = "trayBottomLeft".asInstanceOf[trayBottomLeft]
-  @scala.inline
-  def trayBottomRight: trayBottomRight = "trayBottomRight".asInstanceOf[trayBottomRight]
-  @scala.inline
-  def trayCenter: trayCenter = "trayCenter".asInstanceOf[trayCenter]
-  @scala.inline
-  def trayLeft: trayLeft = "trayLeft".asInstanceOf[trayLeft]
-  @scala.inline
-  def trayRight: trayRight = "trayRight".asInstanceOf[trayRight]
-  @scala.inline
-  def windowPosition: windowPosition = "windowPosition".asInstanceOf[windowPosition]
+  @js.native
+  sealed trait windowPosition extends StObject
+  inline def windowPosition: windowPosition = "windowPosition".asInstanceOf[windowPosition]
 }
-

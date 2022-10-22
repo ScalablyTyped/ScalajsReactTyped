@@ -1,26 +1,20 @@
 package typingsJapgolly.umbraco.umbraco.resources
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OrderItemsBy extends js.Object
-
+sealed trait OrderItemsBy extends StObject
 /**
   * Property to order items by, default: `SortOrder`
   */
 @JSGlobal("umbraco.resources.OrderItemsBy")
 @js.native
-object OrderItemsBy extends js.Object {
+object OrderItemsBy extends StObject {
+  
   @js.native
-  sealed trait SortOrder extends OrderItemsBy
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[OrderItemsBy with Double] = js.native
-  /* 0 */ @js.native
-  object SortOrder extends TopLevel[SortOrder with Double]
-  
+  sealed trait SortOrder
+    extends StObject
+       with OrderItemsBy
 }
-

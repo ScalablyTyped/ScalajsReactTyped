@@ -1,67 +1,55 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UiccAppKind extends js.Object
-
+sealed trait UiccAppKind extends StObject
 /** Describes the kinds of UICC applications. */
 @JSGlobal("Windows.Networking.NetworkOperators.UiccAppKind")
 @js.native
-object UiccAppKind extends js.Object {
+object UiccAppKind extends StObject {
+  
   /** CDMA application. */
   @js.native
-  sealed trait csim extends UiccAppKind
+  sealed trait csim
+    extends StObject
+       with UiccAppKind
   
   /** IP multimedia services application. */
   @js.native
-  sealed trait isim extends UiccAppKind
+  sealed trait isim
+    extends StObject
+       with UiccAppKind
   
   /** Master File application. */
   @js.native
-  sealed trait mf extends UiccAppKind
+  sealed trait mf
+    extends StObject
+       with UiccAppKind
   
   /** Removable user identity card application. */
   @js.native
-  sealed trait mfRuim extends UiccAppKind
+  sealed trait mfRuim
+    extends StObject
+       with UiccAppKind
   
   /** A GSM application. */
   @js.native
-  sealed trait mfSim extends UiccAppKind
+  sealed trait mfSim
+    extends StObject
+       with UiccAppKind
   
   /** An unknown kind. */
   @js.native
-  sealed trait unknown extends UiccAppKind
+  sealed trait unknown
+    extends StObject
+       with UiccAppKind
   
   /** UMTS application. */
   @js.native
-  sealed trait usim extends UiccAppKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UiccAppKind with Double] = js.native
-  /* 5 */ @js.native
-  object csim extends TopLevel[csim with Double]
-  
-  /* 6 */ @js.native
-  object isim extends TopLevel[isim with Double]
-  
-  /* 1 */ @js.native
-  object mf extends TopLevel[mf with Double]
-  
-  /* 3 */ @js.native
-  object mfRuim extends TopLevel[mfRuim with Double]
-  
-  /* 2 */ @js.native
-  object mfSim extends TopLevel[mfSim with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 4 */ @js.native
-  object usim extends TopLevel[usim with Double]
-  
+  sealed trait usim
+    extends StObject
+       with UiccAppKind
 }
-

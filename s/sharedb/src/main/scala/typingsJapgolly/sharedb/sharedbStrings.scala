@@ -1,268 +1,350 @@
 package typingsJapgolly.sharedb
 
+import typingsJapgolly.sharedb.libSharedbMod.ConnectionState
+import typingsJapgolly.sharedb.libSharedbMod.DocEvent
+import typingsJapgolly.sharedb.libSharedbMod.OTType
+import typingsJapgolly.sharedb.libSharedbMod.QueryEvent
+import typingsJapgolly.sharedb.libSharedbMod.RequestAction
 import typingsJapgolly.sharedb.mod.middleware.SnapshotType
-import typingsJapgolly.sharedb.sharedbMod.DocEvent
-import typingsJapgolly.sharedb.sharedbMod.OTType
-import typingsJapgolly.sharedb.sharedbMod.QueryEvent
-import typingsJapgolly.sharedb.sharedbMod.RequestAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharedbStrings {
-  @js.native
-  sealed trait afterSubmit extends js.Object
   
   @js.native
-  sealed trait apply extends js.Object
+  sealed trait afterSubmit extends StObject
+  inline def afterSubmit: afterSubmit = "afterSubmit".asInstanceOf[afterSubmit]
   
   @js.native
-  sealed trait `before op` extends DocEvent
+  sealed trait afterWrite extends StObject
+  inline def afterWrite: afterWrite = "afterWrite".asInstanceOf[afterWrite]
   
   @js.native
-  sealed trait bf extends RequestAction
+  sealed trait apply extends StObject
+  inline def apply: apply = "apply".asInstanceOf[apply]
   
   @js.native
-  sealed trait bs extends RequestAction
+  sealed trait `before op`
+    extends StObject
+       with DocEvent
+  inline def `before op`: `before op` = ("before op").asInstanceOf[`before op`]
   
   @js.native
-  sealed trait bu extends RequestAction
+  sealed trait `before op batch`
+    extends StObject
+       with DocEvent
+  inline def `before op batch`: `before op batch` = ("before op batch").asInstanceOf[`before op batch`]
   
   @js.native
-  sealed trait byTimestamp extends SnapshotType
+  sealed trait bf
+    extends StObject
+       with RequestAction
+  inline def bf: bf = "bf".asInstanceOf[bf]
   
   @js.native
-  sealed trait byVersion extends SnapshotType
+  sealed trait bs
+    extends StObject
+       with RequestAction
+  inline def bs: bs = "bs".asInstanceOf[bs]
   
   @js.native
-  sealed trait changed extends QueryEvent
+  sealed trait bu
+    extends StObject
+       with RequestAction
+  inline def bu: bu = "bu".asInstanceOf[bu]
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait byTimestamp
+    extends StObject
+       with SnapshotType
+  inline def byTimestamp: byTimestamp = "byTimestamp".asInstanceOf[byTimestamp]
   
   @js.native
-  sealed trait commit extends js.Object
+  sealed trait byVersion
+    extends StObject
+       with SnapshotType
+  inline def byVersion: byVersion = "byVersion".asInstanceOf[byVersion]
   
   @js.native
-  sealed trait connect extends js.Object
+  sealed trait changed
+    extends StObject
+       with QueryEvent
+  inline def changed: changed = "changed".asInstanceOf[changed]
   
   @js.native
-  sealed trait create extends DocEvent
+  sealed trait closed
+    extends StObject
+       with ConnectionState
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait current extends SnapshotType
+  sealed trait commit extends StObject
+  inline def commit: commit = "commit".asInstanceOf[commit]
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait connect extends StObject
+  inline def connect: connect = "connect".asInstanceOf[connect]
   
   @js.native
-  sealed trait del extends DocEvent
+  sealed trait connected
+    extends StObject
+       with ConnectionState
+  inline def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
-  sealed trait doc extends js.Object
+  sealed trait connecting
+    extends StObject
+       with ConnectionState
+  inline def connecting: connecting = "connecting".asInstanceOf[connecting]
   
   @js.native
-  sealed trait drain extends js.Object
+  sealed trait create
+    extends StObject
+       with DocEvent
+  inline def create: create = "create".asInstanceOf[create]
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait current
+    extends StObject
+       with SnapshotType
+  inline def current: current = "current".asInstanceOf[current]
+  
+  @js.native
+  sealed trait data extends StObject
+  inline def data: data = "data".asInstanceOf[data]
+  
+  @js.native
+  sealed trait del
+    extends StObject
+       with DocEvent
+  inline def del: del = "del".asInstanceOf[del]
+  
+  @js.native
+  sealed trait destroy
+    extends StObject
+       with DocEvent
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @js.native
+  sealed trait disconnected
+    extends StObject
+       with ConnectionState
+  inline def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  
+  @js.native
+  sealed trait doc extends StObject
+  inline def doc: doc = "doc".asInstanceOf[doc]
   
   @js.native
   sealed trait error
-    extends DocEvent
+    extends StObject
+       with DocEvent
        with QueryEvent
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait extra extends QueryEvent
+  sealed trait extra
+    extends StObject
+       with QueryEvent
+  inline def extra: extra = "extra".asInstanceOf[extra]
   
   @js.native
-  sealed trait f extends RequestAction
+  sealed trait f
+    extends StObject
+       with RequestAction
+  inline def f: f = "f".asInstanceOf[f]
   
   @js.native
-  sealed trait finish extends js.Object
+  sealed trait insert
+    extends StObject
+       with QueryEvent
+  inline def insert: insert = "insert".asInstanceOf[insert]
   
   @js.native
-  sealed trait insert extends QueryEvent
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait load extends DocEvent
+  sealed trait load
+    extends StObject
+       with DocEvent
+  inline def load: load = "load".asInstanceOf[load]
   
   @js.native
-  sealed trait move extends QueryEvent
+  sealed trait move
+    extends StObject
+       with QueryEvent
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait nf extends RequestAction
+  sealed trait nf
+    extends StObject
+       with RequestAction
+  inline def nf: nf = "nf".asInstanceOf[nf]
   
   @js.native
-  sealed trait `no write pending` extends DocEvent
+  sealed trait `no write pending`
+    extends StObject
+       with DocEvent
+  inline def `no write pending`: `no write pending` = ("no write pending").asInstanceOf[`no write pending`]
   
   @js.native
-  sealed trait `nothing pending` extends DocEvent
+  sealed trait `nothing pending`
+    extends StObject
+       with DocEvent
+  inline def `nothing pending`: `nothing pending` = ("nothing pending").asInstanceOf[`nothing pending`]
   
   @js.native
-  sealed trait nt extends RequestAction
+  sealed trait nt
+    extends StObject
+       with RequestAction
+  inline def nt: nt = "nt".asInstanceOf[nt]
   
   @js.native
   sealed trait op
-    extends DocEvent
+    extends StObject
+       with DocEvent
        with RequestAction
+  inline def op: op = "op".asInstanceOf[op]
   
   @js.native
-  sealed trait `ot-json0` extends OTType
+  sealed trait `op batch`
+    extends StObject
+       with DocEvent
+  inline def `op batch`: `op batch` = ("op batch").asInstanceOf[`op batch`]
   
   @js.native
-  sealed trait `ot-text` extends OTType
+  sealed trait `ot-json0`
+    extends StObject
+       with OTType
+  inline def `ot-json0`: `ot-json0` = "ot-json0".asInstanceOf[`ot-json0`]
   
   @js.native
-  sealed trait `ot-text-tp2` extends OTType
+  sealed trait `ot-json1`
+    extends StObject
+       with OTType
+  inline def `ot-json1`: `ot-json1` = "ot-json1".asInstanceOf[`ot-json1`]
   
   @js.native
-  sealed trait pipe extends js.Object
+  sealed trait `ot-text`
+    extends StObject
+       with OTType
+  inline def `ot-text`: `ot-text` = "ot-text".asInstanceOf[`ot-text`]
   
   @js.native
-  sealed trait qf extends RequestAction
+  sealed trait `ot-text-tp2`
+    extends StObject
+       with OTType
+  inline def `ot-text-tp2`: `ot-text-tp2` = "ot-text-tp2".asInstanceOf[`ot-text-tp2`]
   
   @js.native
-  sealed trait qs extends RequestAction
+  sealed trait p extends StObject
+  inline def p: p = "p".asInstanceOf[p]
   
   @js.native
-  sealed trait qu extends RequestAction
+  sealed trait qf
+    extends StObject
+       with RequestAction
+  inline def qf: qf = "qf".asInstanceOf[qf]
   
   @js.native
-  sealed trait query extends js.Object
+  sealed trait qs
+    extends StObject
+       with RequestAction
+  inline def qs: qs = "qs".asInstanceOf[qs]
   
   @js.native
-  sealed trait readSnapshots extends js.Object
+  sealed trait qu
+    extends StObject
+       with RequestAction
+  inline def qu: qu = "qu".asInstanceOf[qu]
   
   @js.native
-  sealed trait readable extends js.Object
+  sealed trait query extends StObject
+  inline def query: query = "query".asInstanceOf[query]
   
   @js.native
-  sealed trait ready extends QueryEvent
+  sealed trait readSnapshots extends StObject
+  inline def readSnapshots: readSnapshots = "readSnapshots".asInstanceOf[readSnapshots]
   
   @js.native
-  sealed trait receive extends js.Object
+  sealed trait ready
+    extends StObject
+       with QueryEvent
+  inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait remove extends QueryEvent
+  sealed trait receive extends StObject
+  inline def receive: receive = "receive".asInstanceOf[receive]
   
   @js.native
-  sealed trait reply extends js.Object
+  sealed trait receivePresence extends StObject
+  inline def receivePresence: receivePresence = "receivePresence".asInstanceOf[receivePresence]
   
   @js.native
-  sealed trait `rich-text` extends OTType
+  sealed trait remove
+    extends StObject
+       with QueryEvent
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
-  sealed trait s extends RequestAction
+  sealed trait reply extends StObject
+  inline def reply: reply = "reply".asInstanceOf[reply]
   
   @js.native
-  sealed trait submit extends js.Object
+  sealed trait `rich-text`
+    extends StObject
+       with OTType
+  inline def `rich-text`: `rich-text` = "rich-text".asInstanceOf[`rich-text`]
   
   @js.native
-  sealed trait u extends RequestAction
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait unpipe extends js.Object
+  sealed trait s
+    extends StObject
+       with RequestAction
+  inline def s: s = "s".asInstanceOf[s]
   
-  @scala.inline
-  def afterSubmit: afterSubmit = "afterSubmit".asInstanceOf[afterSubmit]
-  @scala.inline
-  def apply: apply = "apply".asInstanceOf[apply]
-  @scala.inline
-  def `before op`: `before op` = "before op".asInstanceOf[`before op`]
-  @scala.inline
-  def bf: bf = "bf".asInstanceOf[bf]
-  @scala.inline
-  def bs: bs = "bs".asInstanceOf[bs]
-  @scala.inline
-  def bu: bu = "bu".asInstanceOf[bu]
-  @scala.inline
-  def byTimestamp: byTimestamp = "byTimestamp".asInstanceOf[byTimestamp]
-  @scala.inline
-  def byVersion: byVersion = "byVersion".asInstanceOf[byVersion]
-  @scala.inline
-  def changed: changed = "changed".asInstanceOf[changed]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def commit: commit = "commit".asInstanceOf[commit]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
-  @scala.inline
-  def current: current = "current".asInstanceOf[current]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def del: del = "del".asInstanceOf[del]
-  @scala.inline
-  def doc: doc = "doc".asInstanceOf[doc]
-  @scala.inline
-  def drain: drain = "drain".asInstanceOf[drain]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def extra: extra = "extra".asInstanceOf[extra]
-  @scala.inline
-  def f: f = "f".asInstanceOf[f]
-  @scala.inline
-  def finish: finish = "finish".asInstanceOf[finish]
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def nf: nf = "nf".asInstanceOf[nf]
-  @scala.inline
-  def `no write pending`: `no write pending` = "no write pending".asInstanceOf[`no write pending`]
-  @scala.inline
-  def `nothing pending`: `nothing pending` = "nothing pending".asInstanceOf[`nothing pending`]
-  @scala.inline
-  def nt: nt = "nt".asInstanceOf[nt]
-  @scala.inline
-  def op: op = "op".asInstanceOf[op]
-  @scala.inline
-  def `ot-json0`: `ot-json0` = "ot-json0".asInstanceOf[`ot-json0`]
-  @scala.inline
-  def `ot-text`: `ot-text` = "ot-text".asInstanceOf[`ot-text`]
-  @scala.inline
-  def `ot-text-tp2`: `ot-text-tp2` = "ot-text-tp2".asInstanceOf[`ot-text-tp2`]
-  @scala.inline
-  def pipe: pipe = "pipe".asInstanceOf[pipe]
-  @scala.inline
-  def qf: qf = "qf".asInstanceOf[qf]
-  @scala.inline
-  def qs: qs = "qs".asInstanceOf[qs]
-  @scala.inline
-  def qu: qu = "qu".asInstanceOf[qu]
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
-  @scala.inline
-  def readSnapshots: readSnapshots = "readSnapshots".asInstanceOf[readSnapshots]
-  @scala.inline
-  def readable: readable = "readable".asInstanceOf[readable]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def receive: receive = "receive".asInstanceOf[receive]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def reply: reply = "reply".asInstanceOf[reply]
-  @scala.inline
-  def `rich-text`: `rich-text` = "rich-text".asInstanceOf[`rich-text`]
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
-  @scala.inline
-  def submit: submit = "submit".asInstanceOf[submit]
-  @scala.inline
-  def u: u = "u".asInstanceOf[u]
-  @scala.inline
-  def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
+  @js.native
+  sealed trait send extends StObject
+  inline def send: send = "send".asInstanceOf[send]
+  
+  @js.native
+  sealed trait sendPresence extends StObject
+  inline def sendPresence: sendPresence = "sendPresence".asInstanceOf[sendPresence]
+  
+  @js.native
+  sealed trait stopped
+    extends StObject
+       with ConnectionState
+  inline def stopped: stopped = "stopped".asInstanceOf[stopped]
+  
+  @js.native
+  sealed trait submit extends StObject
+  inline def submit: submit = "submit".asInstanceOf[submit]
+  
+  @js.native
+  sealed trait submitRequestEnd extends StObject
+  inline def submitRequestEnd: submitRequestEnd = "submitRequestEnd".asInstanceOf[submitRequestEnd]
+  
+  @js.native
+  sealed trait timing extends StObject
+  inline def timing: timing = "timing".asInstanceOf[timing]
+  
+  @js.native
+  sealed trait `type` extends StObject
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
+  
+  @js.native
+  sealed trait u
+    extends StObject
+       with RequestAction
+  inline def u: u = "u".asInstanceOf[u]
+  
+  @js.native
+  sealed trait v extends StObject
+  inline def v: v = "v".asInstanceOf[v]
 }
-

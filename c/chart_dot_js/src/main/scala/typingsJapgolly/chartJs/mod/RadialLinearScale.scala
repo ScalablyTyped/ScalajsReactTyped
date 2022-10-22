@@ -1,39 +1,71 @@
 package typingsJapgolly.chartJs.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.chartJs.anon.Y
+import typingsJapgolly.chartJs.typesBasicMod.AnyObject
+import typingsJapgolly.chartJs.typesGeometricMod.ChartArea
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RadialLinearScale extends js.Object {
-  var angleLines: js.UndefOr[AngleLineOptions] = js.undefined
-  var animate: js.UndefOr[Boolean] = js.undefined
-  var display: js.UndefOr[Boolean] = js.undefined
-  var gridLines: js.UndefOr[GridLineOptions] = js.undefined
-  var pointLabels: js.UndefOr[PointLabelOptions] = js.undefined
-  var position: js.UndefOr[PositionType] = js.undefined
-  var ticks: js.UndefOr[LinearTickOptions] = js.undefined
+@js.native
+trait RadialLinearScale[O /* <: RadialLinearScaleOptions */] extends Scale[O] {
+  
+  def getBasePosition(index: Double): Y = js.native
+  
+  def getDistanceFromCenterForValue(value: Double): Double = js.native
+  
+  def getIndexAngle(index: Double): Double = js.native
+  
+  def getPointLabelPosition(index: Double): ChartArea = js.native
+  
+  def getPointPosition(index: Double, distanceFromCenter: Double): Y = js.native
+  
+  def getPointPositionForValue(index: Double, value: Double): Y = js.native
+  
+  def getValueForDistanceFromCenter(distance: Double): Double = js.native
+  
+  def setCenterPoint(leftMovement: Double, rightMovement: Double, topMovement: Double, bottomMovement: Double): Unit = js.native
 }
-
+/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.RadialLinearScale<chart.js.chart.js.RadialLinearScaleOptions>, new <O extends chart.js.chart.js.RadialLinearScaleOptions = chart.js.chart.js.RadialLinearScaleOptions>(cfg : chart.js.chart.js/types/basic.AnyObject): chart.js.chart.js.RadialLinearScale<O>} */
 object RadialLinearScale {
-  @scala.inline
-  def apply(
-    angleLines: AngleLineOptions = null,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    display: js.UndefOr[Boolean] = js.undefined,
-    gridLines: GridLineOptions = null,
-    pointLabels: PointLabelOptions = null,
-    position: PositionType = null,
-    ticks: LinearTickOptions = null
-  ): RadialLinearScale = {
-    val __obj = js.Dynamic.literal()
-    if (angleLines != null) __obj.updateDynamic("angleLines")(angleLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (gridLines != null) __obj.updateDynamic("gridLines")(gridLines.asInstanceOf[js.Any])
-    if (pointLabels != null) __obj.updateDynamic("pointLabels")(pointLabels.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RadialLinearScale]
-  }
+  
+  @JSImport("chart.js", "RadialLinearScale")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("chart.js", "RadialLinearScale.afterRegister")
+  @js.native
+  def afterRegister: js.UndefOr[js.Function0[Unit]] = js.native
+  inline def afterRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterRegister")(x.asInstanceOf[js.Any])
+  
+  @JSImport("chart.js", "RadialLinearScale.afterUnregister")
+  @js.native
+  def afterUnregister: js.UndefOr[js.Function0[Unit]] = js.native
+  inline def afterUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterUnregister")(x.asInstanceOf[js.Any])
+  
+  @JSImport("chart.js", "RadialLinearScale.beforeRegister")
+  @js.native
+  def beforeRegister: js.UndefOr[js.Function0[Unit]] = js.native
+  inline def beforeRegister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeRegister")(x.asInstanceOf[js.Any])
+  
+  @JSImport("chart.js", "RadialLinearScale.beforeUnregister")
+  @js.native
+  def beforeUnregister: js.UndefOr[js.Function0[Unit]] = js.native
+  inline def beforeUnregister_=(x: js.UndefOr[js.Function0[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeUnregister")(x.asInstanceOf[js.Any])
+  
+  @JSImport("chart.js", "RadialLinearScale.defaultRoutes")
+  @js.native
+  def defaultRoutes: js.UndefOr[StringDictionary[String]] = js.native
+  inline def defaultRoutes_=(x: js.UndefOr[StringDictionary[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultRoutes")(x.asInstanceOf[js.Any])
+  
+  @JSImport("chart.js", "RadialLinearScale.defaults")
+  @js.native
+  def defaults: js.UndefOr[AnyObject] = js.native
+  inline def defaults_=(x: js.UndefOr[AnyObject]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+  
+  @JSImport("chart.js", "RadialLinearScale.id")
+  @js.native
+  def id: String = js.native
+  inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
 }
-

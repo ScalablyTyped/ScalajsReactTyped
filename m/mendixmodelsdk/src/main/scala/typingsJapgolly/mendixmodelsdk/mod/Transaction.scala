@@ -1,15 +1,14 @@
 package typingsJapgolly.mendixmodelsdk.mod
 
-import typingsJapgolly.mendixmodelsdk.transactionManagerMod.TransactionManager
-import typingsJapgolly.mendixmodelsdk.transactionManagerMod.TransactionType
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalDeltasTransactionManagerMod.TransactionManager
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalDeltasTransactionManagerMod.TransactionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "Transaction")
 @js.native
-class Transaction protected ()
-  extends typingsJapgolly.mendixmodelsdk.transactionManagerMod.Transaction {
+open class Transaction protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcSdkInternalDeltasTransactionManagerMod.Transaction {
   def this(transactionType: TransactionType, transactionManager: TransactionManager) = this()
 }
-

@@ -1,375 +1,369 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SymbolFlags extends js.Object
-
+sealed trait SymbolFlags extends StObject
 @JSImport("typescript", "SymbolFlags")
 @js.native
-object SymbolFlags extends js.Object {
-  @js.native
-  sealed trait Accessor extends SymbolFlags
-  
-  @js.native
-  sealed trait Alias extends SymbolFlags
-  
-  @js.native
-  sealed trait AliasExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait Assignment extends SymbolFlags
-  
-  @js.native
-  sealed trait BlockScoped extends SymbolFlags
-  
-  @js.native
-  sealed trait BlockScopedVariable extends SymbolFlags
-  
-  @js.native
-  sealed trait BlockScopedVariableExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait Class extends SymbolFlags
-  
-  @js.native
-  sealed trait ClassExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait ClassMember extends SymbolFlags
-  
-  @js.native
-  sealed trait ConstEnum extends SymbolFlags
-  
-  @js.native
-  sealed trait ConstEnumExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait Constructor extends SymbolFlags
-  
-  @js.native
-  sealed trait Enum extends SymbolFlags
-  
-  @js.native
-  sealed trait EnumMember extends SymbolFlags
-  
-  @js.native
-  sealed trait EnumMemberExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait ExportHasLocal extends SymbolFlags
-  
-  @js.native
-  sealed trait ExportStar extends SymbolFlags
-  
-  @js.native
-  sealed trait ExportValue extends SymbolFlags
-  
-  @js.native
-  sealed trait Function extends SymbolFlags
-  
-  @js.native
-  sealed trait FunctionExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait FunctionScopedVariable extends SymbolFlags
-  
-  @js.native
-  sealed trait FunctionScopedVariableExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait GetAccessor extends SymbolFlags
-  
-  @js.native
-  sealed trait GetAccessorExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait Interface extends SymbolFlags
-  
-  @js.native
-  sealed trait InterfaceExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait Method extends SymbolFlags
-  
-  @js.native
-  sealed trait MethodExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait Module extends SymbolFlags
-  
-  @js.native
-  sealed trait ModuleExports extends SymbolFlags
-  
-  @js.native
-  sealed trait ModuleMember extends SymbolFlags
-  
-  @js.native
-  sealed trait Namespace extends SymbolFlags
-  
-  @js.native
-  sealed trait NamespaceModule extends SymbolFlags
-  
-  @js.native
-  sealed trait NamespaceModuleExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait None extends SymbolFlags
-  
-  @js.native
-  sealed trait ObjectLiteral extends SymbolFlags
-  
-  @js.native
-  sealed trait Optional extends SymbolFlags
-  
-  @js.native
-  sealed trait ParameterExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait Property extends SymbolFlags
-  
-  @js.native
-  sealed trait PropertyExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait PropertyOrAccessor extends SymbolFlags
-  
-  @js.native
-  sealed trait Prototype extends SymbolFlags
-  
-  @js.native
-  sealed trait RegularEnum extends SymbolFlags
-  
-  @js.native
-  sealed trait RegularEnumExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait SetAccessor extends SymbolFlags
-  
-  @js.native
-  sealed trait SetAccessorExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait Signature extends SymbolFlags
-  
-  @js.native
-  sealed trait Transient extends SymbolFlags
-  
-  @js.native
-  sealed trait Type extends SymbolFlags
-  
-  @js.native
-  sealed trait TypeAlias extends SymbolFlags
-  
-  @js.native
-  sealed trait TypeAliasExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait TypeLiteral extends SymbolFlags
-  
-  @js.native
-  sealed trait TypeParameter extends SymbolFlags
-  
-  @js.native
-  sealed trait TypeParameterExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait Value extends SymbolFlags
-  
-  @js.native
-  sealed trait ValueModule extends SymbolFlags
-  
-  @js.native
-  sealed trait ValueModuleExcludes extends SymbolFlags
-  
-  @js.native
-  sealed trait Variable extends SymbolFlags
+object SymbolFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SymbolFlags with Double] = js.native
-  /* 98304 */ @js.native
-  object Accessor extends TopLevel[Accessor with Double]
+  def apply(value: Double): js.UndefOr[SymbolFlags & Double] = js.native
   
-  /* 2097152 */ @js.native
-  object Alias extends TopLevel[Alias with Double]
+  @js.native
+  sealed trait Accessor
+    extends StObject
+       with SymbolFlags
+  /* 98304 */ val Accessor: typingsJapgolly.typescript.mod.SymbolFlags.Accessor & Double = js.native
   
-  /* 2097152 */ @js.native
-  object AliasExcludes extends TopLevel[AliasExcludes with Double]
+  @js.native
+  sealed trait Alias
+    extends StObject
+       with SymbolFlags
+  /* 2097152 */ val Alias: typingsJapgolly.typescript.mod.SymbolFlags.Alias & Double = js.native
   
-  /* 67108864 */ @js.native
-  object Assignment extends TopLevel[Assignment with Double]
+  @js.native
+  sealed trait AliasExcludes
+    extends StObject
+       with SymbolFlags
+  /* 2097152 */ val AliasExcludes: typingsJapgolly.typescript.mod.SymbolFlags.AliasExcludes & Double = js.native
   
-  /* 418 */ @js.native
-  object BlockScoped extends TopLevel[BlockScoped with Double]
+  @js.native
+  sealed trait Assignment
+    extends StObject
+       with SymbolFlags
+  /* 67108864 */ val Assignment: typingsJapgolly.typescript.mod.SymbolFlags.Assignment & Double = js.native
   
-  /* 2 */ @js.native
-  object BlockScopedVariable extends TopLevel[BlockScopedVariable with Double]
+  @js.native
+  sealed trait BlockScoped
+    extends StObject
+       with SymbolFlags
+  /* 418 */ val BlockScoped: typingsJapgolly.typescript.mod.SymbolFlags.BlockScoped & Double = js.native
   
-  /* 111551 */ @js.native
-  object BlockScopedVariableExcludes extends TopLevel[BlockScopedVariableExcludes with Double]
+  @js.native
+  sealed trait BlockScopedVariable
+    extends StObject
+       with SymbolFlags
+  /* 2 */ val BlockScopedVariable: typingsJapgolly.typescript.mod.SymbolFlags.BlockScopedVariable & Double = js.native
   
-  /* 32 */ @js.native
-  object Class extends TopLevel[Class with Double]
+  @js.native
+  sealed trait BlockScopedVariableExcludes
+    extends StObject
+       with SymbolFlags
+  /* 111551 */ val BlockScopedVariableExcludes: typingsJapgolly.typescript.mod.SymbolFlags.BlockScopedVariableExcludes & Double = js.native
   
-  /* 899503 */ @js.native
-  object ClassExcludes extends TopLevel[ClassExcludes with Double]
+  @js.native
+  sealed trait Class
+    extends StObject
+       with SymbolFlags
+  /* 32 */ val Class: typingsJapgolly.typescript.mod.SymbolFlags.Class & Double = js.native
   
-  /* 106500 */ @js.native
-  object ClassMember extends TopLevel[ClassMember with Double]
+  @js.native
+  sealed trait ClassExcludes
+    extends StObject
+       with SymbolFlags
+  /* 899503 */ val ClassExcludes: typingsJapgolly.typescript.mod.SymbolFlags.ClassExcludes & Double = js.native
   
-  /* 128 */ @js.native
-  object ConstEnum extends TopLevel[ConstEnum with Double]
+  @js.native
+  sealed trait ClassMember
+    extends StObject
+       with SymbolFlags
+  /* 106500 */ val ClassMember: typingsJapgolly.typescript.mod.SymbolFlags.ClassMember & Double = js.native
   
-  /* 899967 */ @js.native
-  object ConstEnumExcludes extends TopLevel[ConstEnumExcludes with Double]
+  @js.native
+  sealed trait ConstEnum
+    extends StObject
+       with SymbolFlags
+  /* 128 */ val ConstEnum: typingsJapgolly.typescript.mod.SymbolFlags.ConstEnum & Double = js.native
   
-  /* 16384 */ @js.native
-  object Constructor extends TopLevel[Constructor with Double]
+  @js.native
+  sealed trait ConstEnumExcludes
+    extends StObject
+       with SymbolFlags
+  /* 899967 */ val ConstEnumExcludes: typingsJapgolly.typescript.mod.SymbolFlags.ConstEnumExcludes & Double = js.native
   
-  /* 384 */ @js.native
-  object Enum extends TopLevel[Enum with Double]
+  @js.native
+  sealed trait Constructor
+    extends StObject
+       with SymbolFlags
+  /* 16384 */ val Constructor: typingsJapgolly.typescript.mod.SymbolFlags.Constructor & Double = js.native
   
-  /* 8 */ @js.native
-  object EnumMember
-    extends TopLevel[typingsJapgolly.typescript.mod.SymbolFlags.EnumMember with Double]
+  @js.native
+  sealed trait Enum
+    extends StObject
+       with SymbolFlags
+  /* 384 */ val Enum: typingsJapgolly.typescript.mod.SymbolFlags.Enum & Double = js.native
   
-  /* 900095 */ @js.native
-  object EnumMemberExcludes extends TopLevel[EnumMemberExcludes with Double]
+  @js.native
+  sealed trait EnumMember
+    extends StObject
+       with SymbolFlags
+  /* 8 */ val EnumMember: typingsJapgolly.typescript.mod.SymbolFlags.EnumMember & Double = js.native
   
-  /* 944 */ @js.native
-  object ExportHasLocal extends TopLevel[ExportHasLocal with Double]
+  @js.native
+  sealed trait EnumMemberExcludes
+    extends StObject
+       with SymbolFlags
+  /* 900095 */ val EnumMemberExcludes: typingsJapgolly.typescript.mod.SymbolFlags.EnumMemberExcludes & Double = js.native
   
-  /* 8388608 */ @js.native
-  object ExportStar extends TopLevel[ExportStar with Double]
+  @js.native
+  sealed trait ExportHasLocal
+    extends StObject
+       with SymbolFlags
+  /* 944 */ val ExportHasLocal: typingsJapgolly.typescript.mod.SymbolFlags.ExportHasLocal & Double = js.native
   
-  /* 1048576 */ @js.native
-  object ExportValue extends TopLevel[ExportValue with Double]
+  @js.native
+  sealed trait ExportStar
+    extends StObject
+       with SymbolFlags
+  /* 8388608 */ val ExportStar: typingsJapgolly.typescript.mod.SymbolFlags.ExportStar & Double = js.native
   
-  /* 16 */ @js.native
-  object Function extends TopLevel[Function with Double]
+  @js.native
+  sealed trait ExportValue
+    extends StObject
+       with SymbolFlags
+  /* 1048576 */ val ExportValue: typingsJapgolly.typescript.mod.SymbolFlags.ExportValue & Double = js.native
   
-  /* 110991 */ @js.native
-  object FunctionExcludes extends TopLevel[FunctionExcludes with Double]
+  @js.native
+  sealed trait Function
+    extends StObject
+       with SymbolFlags
+  /* 16 */ val Function: typingsJapgolly.typescript.mod.SymbolFlags.Function & Double = js.native
   
-  /* 1 */ @js.native
-  object FunctionScopedVariable extends TopLevel[FunctionScopedVariable with Double]
+  @js.native
+  sealed trait FunctionExcludes
+    extends StObject
+       with SymbolFlags
+  /* 110991 */ val FunctionExcludes: typingsJapgolly.typescript.mod.SymbolFlags.FunctionExcludes & Double = js.native
   
-  /* 111550 */ @js.native
-  object FunctionScopedVariableExcludes extends TopLevel[FunctionScopedVariableExcludes with Double]
+  @js.native
+  sealed trait FunctionScopedVariable
+    extends StObject
+       with SymbolFlags
+  /* 1 */ val FunctionScopedVariable: typingsJapgolly.typescript.mod.SymbolFlags.FunctionScopedVariable & Double = js.native
   
-  /* 32768 */ @js.native
-  object GetAccessor extends TopLevel[GetAccessor with Double]
+  @js.native
+  sealed trait FunctionScopedVariableExcludes
+    extends StObject
+       with SymbolFlags
+  /* 111550 */ val FunctionScopedVariableExcludes: typingsJapgolly.typescript.mod.SymbolFlags.FunctionScopedVariableExcludes & Double = js.native
   
-  /* 46015 */ @js.native
-  object GetAccessorExcludes extends TopLevel[GetAccessorExcludes with Double]
+  @js.native
+  sealed trait GetAccessor
+    extends StObject
+       with SymbolFlags
+  /* 32768 */ val GetAccessor: typingsJapgolly.typescript.mod.SymbolFlags.GetAccessor & Double = js.native
   
-  /* 64 */ @js.native
-  object Interface extends TopLevel[Interface with Double]
+  @js.native
+  sealed trait GetAccessorExcludes
+    extends StObject
+       with SymbolFlags
+  /* 46015 */ val GetAccessorExcludes: typingsJapgolly.typescript.mod.SymbolFlags.GetAccessorExcludes & Double = js.native
   
-  /* 788872 */ @js.native
-  object InterfaceExcludes extends TopLevel[InterfaceExcludes with Double]
+  @js.native
+  sealed trait Interface
+    extends StObject
+       with SymbolFlags
+  /* 64 */ val Interface: typingsJapgolly.typescript.mod.SymbolFlags.Interface & Double = js.native
   
-  /* 8192 */ @js.native
-  object Method extends TopLevel[Method with Double]
+  @js.native
+  sealed trait InterfaceExcludes
+    extends StObject
+       with SymbolFlags
+  /* 788872 */ val InterfaceExcludes: typingsJapgolly.typescript.mod.SymbolFlags.InterfaceExcludes & Double = js.native
   
-  /* 103359 */ @js.native
-  object MethodExcludes extends TopLevel[MethodExcludes with Double]
+  @js.native
+  sealed trait Method
+    extends StObject
+       with SymbolFlags
+  /* 8192 */ val Method: typingsJapgolly.typescript.mod.SymbolFlags.Method & Double = js.native
   
-  /* 1536 */ @js.native
-  object Module extends TopLevel[Module with Double]
+  @js.native
+  sealed trait MethodExcludes
+    extends StObject
+       with SymbolFlags
+  /* 103359 */ val MethodExcludes: typingsJapgolly.typescript.mod.SymbolFlags.MethodExcludes & Double = js.native
   
-  /* 134217728 */ @js.native
-  object ModuleExports extends TopLevel[ModuleExports with Double]
+  @js.native
+  sealed trait Module
+    extends StObject
+       with SymbolFlags
+  /* 1536 */ val Module: typingsJapgolly.typescript.mod.SymbolFlags.Module & Double = js.native
   
-  /* 2623475 */ @js.native
-  object ModuleMember extends TopLevel[ModuleMember with Double]
+  @js.native
+  sealed trait ModuleExports
+    extends StObject
+       with SymbolFlags
+  /* 134217728 */ val ModuleExports: typingsJapgolly.typescript.mod.SymbolFlags.ModuleExports & Double = js.native
   
-  /* 1920 */ @js.native
-  object Namespace extends TopLevel[Namespace with Double]
+  @js.native
+  sealed trait ModuleMember
+    extends StObject
+       with SymbolFlags
+  /* 2623475 */ val ModuleMember: typingsJapgolly.typescript.mod.SymbolFlags.ModuleMember & Double = js.native
   
-  /* 1024 */ @js.native
-  object NamespaceModule extends TopLevel[NamespaceModule with Double]
+  @js.native
+  sealed trait Namespace
+    extends StObject
+       with SymbolFlags
+  /* 1920 */ val Namespace: typingsJapgolly.typescript.mod.SymbolFlags.Namespace & Double = js.native
   
-  /* 0 */ @js.native
-  object NamespaceModuleExcludes extends TopLevel[NamespaceModuleExcludes with Double]
+  @js.native
+  sealed trait NamespaceModule
+    extends StObject
+       with SymbolFlags
+  /* 1024 */ val NamespaceModule: typingsJapgolly.typescript.mod.SymbolFlags.NamespaceModule & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait NamespaceModuleExcludes
+    extends StObject
+       with SymbolFlags
+  /* 0 */ val NamespaceModuleExcludes: typingsJapgolly.typescript.mod.SymbolFlags.NamespaceModuleExcludes & Double = js.native
   
-  /* 4096 */ @js.native
-  object ObjectLiteral extends TopLevel[ObjectLiteral with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with SymbolFlags
+  /* 0 */ val None: typingsJapgolly.typescript.mod.SymbolFlags.None & Double = js.native
   
-  /* 16777216 */ @js.native
-  object Optional extends TopLevel[Optional with Double]
+  @js.native
+  sealed trait ObjectLiteral
+    extends StObject
+       with SymbolFlags
+  /* 4096 */ val ObjectLiteral: typingsJapgolly.typescript.mod.SymbolFlags.ObjectLiteral & Double = js.native
   
-  /* 111551 */ @js.native
-  object ParameterExcludes extends TopLevel[ParameterExcludes with Double]
+  @js.native
+  sealed trait Optional
+    extends StObject
+       with SymbolFlags
+  /* 16777216 */ val Optional: typingsJapgolly.typescript.mod.SymbolFlags.Optional & Double = js.native
   
-  /* 4 */ @js.native
-  object Property extends TopLevel[Property with Double]
+  @js.native
+  sealed trait ParameterExcludes
+    extends StObject
+       with SymbolFlags
+  /* 111551 */ val ParameterExcludes: typingsJapgolly.typescript.mod.SymbolFlags.ParameterExcludes & Double = js.native
   
-  /* 0 */ @js.native
-  object PropertyExcludes extends TopLevel[PropertyExcludes with Double]
+  @js.native
+  sealed trait Property
+    extends StObject
+       with SymbolFlags
+  /* 4 */ val Property: typingsJapgolly.typescript.mod.SymbolFlags.Property & Double = js.native
   
-  /* 98308 */ @js.native
-  object PropertyOrAccessor extends TopLevel[PropertyOrAccessor with Double]
+  @js.native
+  sealed trait PropertyExcludes
+    extends StObject
+       with SymbolFlags
+  /* 0 */ val PropertyExcludes: typingsJapgolly.typescript.mod.SymbolFlags.PropertyExcludes & Double = js.native
   
-  /* 4194304 */ @js.native
-  object Prototype extends TopLevel[Prototype with Double]
+  @js.native
+  sealed trait PropertyOrAccessor
+    extends StObject
+       with SymbolFlags
+  /* 98308 */ val PropertyOrAccessor: typingsJapgolly.typescript.mod.SymbolFlags.PropertyOrAccessor & Double = js.native
   
-  /* 256 */ @js.native
-  object RegularEnum extends TopLevel[RegularEnum with Double]
+  @js.native
+  sealed trait Prototype
+    extends StObject
+       with SymbolFlags
+  /* 4194304 */ val Prototype: typingsJapgolly.typescript.mod.SymbolFlags.Prototype & Double = js.native
   
-  /* 899327 */ @js.native
-  object RegularEnumExcludes extends TopLevel[RegularEnumExcludes with Double]
+  @js.native
+  sealed trait RegularEnum
+    extends StObject
+       with SymbolFlags
+  /* 256 */ val RegularEnum: typingsJapgolly.typescript.mod.SymbolFlags.RegularEnum & Double = js.native
   
-  /* 65536 */ @js.native
-  object SetAccessor extends TopLevel[SetAccessor with Double]
+  @js.native
+  sealed trait RegularEnumExcludes
+    extends StObject
+       with SymbolFlags
+  /* 899327 */ val RegularEnumExcludes: typingsJapgolly.typescript.mod.SymbolFlags.RegularEnumExcludes & Double = js.native
   
-  /* 78783 */ @js.native
-  object SetAccessorExcludes extends TopLevel[SetAccessorExcludes with Double]
+  @js.native
+  sealed trait SetAccessor
+    extends StObject
+       with SymbolFlags
+  /* 65536 */ val SetAccessor: typingsJapgolly.typescript.mod.SymbolFlags.SetAccessor & Double = js.native
   
-  /* 131072 */ @js.native
-  object Signature
-    extends TopLevel[typingsJapgolly.typescript.mod.SymbolFlags.Signature with Double]
+  @js.native
+  sealed trait SetAccessorExcludes
+    extends StObject
+       with SymbolFlags
+  /* 78783 */ val SetAccessorExcludes: typingsJapgolly.typescript.mod.SymbolFlags.SetAccessorExcludes & Double = js.native
   
-  /* 33554432 */ @js.native
-  object Transient extends TopLevel[Transient with Double]
+  @js.native
+  sealed trait Signature
+    extends StObject
+       with SymbolFlags
+  /* 131072 */ val Signature: typingsJapgolly.typescript.mod.SymbolFlags.Signature & Double = js.native
   
-  /* 788968 */ @js.native
-  object Type
-    extends TopLevel[typingsJapgolly.typescript.mod.SymbolFlags.Type with Double]
+  @js.native
+  sealed trait Transient
+    extends StObject
+       with SymbolFlags
+  /* 33554432 */ val Transient: typingsJapgolly.typescript.mod.SymbolFlags.Transient & Double = js.native
   
-  /* 524288 */ @js.native
-  object TypeAlias extends TopLevel[TypeAlias with Double]
+  @js.native
+  sealed trait Type
+    extends StObject
+       with SymbolFlags
+  /* 788968 */ val Type: typingsJapgolly.typescript.mod.SymbolFlags.Type & Double = js.native
   
-  /* 788968 */ @js.native
-  object TypeAliasExcludes extends TopLevel[TypeAliasExcludes with Double]
+  @js.native
+  sealed trait TypeAlias
+    extends StObject
+       with SymbolFlags
+  /* 524288 */ val TypeAlias: typingsJapgolly.typescript.mod.SymbolFlags.TypeAlias & Double = js.native
   
-  /* 2048 */ @js.native
-  object TypeLiteral extends TopLevel[TypeLiteral with Double]
+  @js.native
+  sealed trait TypeAliasExcludes
+    extends StObject
+       with SymbolFlags
+  /* 788968 */ val TypeAliasExcludes: typingsJapgolly.typescript.mod.SymbolFlags.TypeAliasExcludes & Double = js.native
   
-  /* 262144 */ @js.native
-  object TypeParameter
-    extends TopLevel[typingsJapgolly.typescript.mod.SymbolFlags.TypeParameter with Double]
+  @js.native
+  sealed trait TypeLiteral
+    extends StObject
+       with SymbolFlags
+  /* 2048 */ val TypeLiteral: typingsJapgolly.typescript.mod.SymbolFlags.TypeLiteral & Double = js.native
   
-  /* 526824 */ @js.native
-  object TypeParameterExcludes extends TopLevel[TypeParameterExcludes with Double]
+  @js.native
+  sealed trait TypeParameter
+    extends StObject
+       with SymbolFlags
+  /* 262144 */ val TypeParameter: typingsJapgolly.typescript.mod.SymbolFlags.TypeParameter & Double = js.native
   
-  /* 111551 */ @js.native
-  object Value extends TopLevel[Value with Double]
+  @js.native
+  sealed trait TypeParameterExcludes
+    extends StObject
+       with SymbolFlags
+  /* 526824 */ val TypeParameterExcludes: typingsJapgolly.typescript.mod.SymbolFlags.TypeParameterExcludes & Double = js.native
   
-  /* 512 */ @js.native
-  object ValueModule extends TopLevel[ValueModule with Double]
+  @js.native
+  sealed trait Value
+    extends StObject
+       with SymbolFlags
+  /* 111551 */ val Value: typingsJapgolly.typescript.mod.SymbolFlags.Value & Double = js.native
   
-  /* 110735 */ @js.native
-  object ValueModuleExcludes extends TopLevel[ValueModuleExcludes with Double]
+  @js.native
+  sealed trait ValueModule
+    extends StObject
+       with SymbolFlags
+  /* 512 */ val ValueModule: typingsJapgolly.typescript.mod.SymbolFlags.ValueModule & Double = js.native
   
-  /* 3 */ @js.native
-  object Variable extends TopLevel[Variable with Double]
+  @js.native
+  sealed trait ValueModuleExcludes
+    extends StObject
+       with SymbolFlags
+  /* 110735 */ val ValueModuleExcludes: typingsJapgolly.typescript.mod.SymbolFlags.ValueModuleExcludes & Double = js.native
   
+  @js.native
+  sealed trait Variable
+    extends StObject
+       with SymbolFlags
+  /* 3 */ val Variable: typingsJapgolly.typescript.mod.SymbolFlags.Variable & Double = js.native
 }
-

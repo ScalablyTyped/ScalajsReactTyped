@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-api-middleware
 
-Typings are for version 3.0
+Typings are for version 3.2
 
 ## Library description:
 Redux middleware for calling an API.
@@ -10,15 +10,12 @@ Redux middleware for calling an API.
 | ------------------ | :-------------: |
 | Full name          | redux-api-middleware |
 | Keywords           | redux, api, middleware, redux-middleware, flux |
-| # releases         | 12 |
-| # dependents       | 42 |
-| # downloads        | 1517857 |
-| # stars            | 20 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 131246.0 |
+| # stars            | 1495.0 |
 
 ## Links
-- [Homepage](https://github.com/agraboso/redux-api-middleware)
-- [Bugs](https://github.com/agraboso/redux-api-middleware/issues)
-- [Repository](https://github.com/agraboso/redux-api-middleware)
 - [Npm](https://www.npmjs.com/package/redux-api-middleware)
     
 

@@ -1,49 +1,42 @@
 package typingsJapgolly.reactBeautifulDnd.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactBeautifulDnd.mod.DraggableId
 import typingsJapgolly.reactBeautifulDnd.mod.DraggableProps
 import typingsJapgolly.reactBeautifulDnd.mod.DraggableProvided
 import typingsJapgolly.reactBeautifulDnd.mod.DraggableRubric
 import typingsJapgolly.reactBeautifulDnd.mod.DraggableStateSnapshot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Draggable {
-  def apply(
+  
+  inline def apply(
+    children: (/* provided */ DraggableProvided, /* snapshot */ DraggableStateSnapshot, /* rubric */ DraggableRubric) => Element,
     draggableId: DraggableId,
-    index: Double,
-    disableInteractiveElementBlocking: js.UndefOr[Boolean] = js.undefined,
-    isDragDisabled: js.UndefOr[Boolean] = js.undefined,
-    shouldRespectForcePress: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: (/* provided */ DraggableProvided, /* snapshot */ DraggableStateSnapshot, /* rubric */ DraggableRubric) => CallbackTo[Element]
-  ): UnmountedWithRoot[DraggableProps, typingsJapgolly.reactBeautifulDnd.mod.Draggable, Unit, DraggableProps] = {
-    val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("children")(js.Any.fromFunction3((t0: /* provided */ typingsJapgolly.reactBeautifulDnd.mod.DraggableProvided, t1: /* snapshot */ typingsJapgolly.reactBeautifulDnd.mod.DraggableStateSnapshot, t2: /* rubric */ typingsJapgolly.reactBeautifulDnd.mod.DraggableRubric) => children(t0, t1, t2).runNow()))
-    if (!js.isUndefined(disableInteractiveElementBlocking)) __obj.updateDynamic("disableInteractiveElementBlocking")(disableInteractiveElementBlocking.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDragDisabled)) __obj.updateDynamic("isDragDisabled")(isDragDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldRespectForcePress)) __obj.updateDynamic("shouldRespectForcePress")(shouldRespectForcePress.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBeautifulDnd.mod.DraggableProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactBeautifulDnd.mod.Draggable](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBeautifulDnd.mod.DraggableProps])
+    index: Double
+  ): Builder = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction3(children), draggableId = draggableId.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[DraggableProps]))
   }
+  
   @JSImport("react-beautiful-dnd", "Draggable")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactBeautifulDnd.mod.Draggable] {
+    
+    inline def disableInteractiveElementBlocking(value: Boolean): this.type = set("disableInteractiveElementBlocking", value.asInstanceOf[js.Any])
+    
+    inline def isDragDisabled(value: Boolean): this.type = set("isDragDisabled", value.asInstanceOf[js.Any])
+    
+    inline def shouldRespectForcePress(value: Boolean): this.type = set("shouldRespectForcePress", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: DraggableProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

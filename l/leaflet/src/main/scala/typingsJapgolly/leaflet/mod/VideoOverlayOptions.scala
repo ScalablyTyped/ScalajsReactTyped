@@ -1,50 +1,57 @@
 package typingsJapgolly.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VideoOverlayOptions extends ImageOverlayOptions {
+trait VideoOverlayOptions
+  extends StObject
+     with ImageOverlayOptions {
+  
   /** Whether the video starts playing automatically when loaded. */
   var autoplay: js.UndefOr[Boolean] = js.undefined
-  /** Whether the video will save aspect ratio after the projection. */
+  
+  /**
+    * Whether the video will save aspect ratio after the projection. Relevant for supported browsers. See
+    * [browser compatibility](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
+    */
   var keepAspectRatio: js.UndefOr[Boolean] = js.undefined
+  
   /** Whether the video will loop back to the beginning when played. */
   var loop: js.UndefOr[Boolean] = js.undefined
+  
+  /** Whether the video starts on mute when loaded. */
+  var muted: js.UndefOr[Boolean] = js.undefined
+  
+  var playsInline: js.UndefOr[Boolean] = js.undefined
 }
-
 object VideoOverlayOptions {
-  @scala.inline
-  def apply(
-    alt: String = null,
-    attribution: String = null,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    crossOrigin: CrossOrigin = null,
-    errorOverlayUrl: String = null,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    keepAspectRatio: js.UndefOr[Boolean] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    opacity: Int | Double = null,
-    pane: String = null,
-    zIndex: Int | Double = null
-  ): VideoOverlayOptions = {
+  
+  inline def apply(): VideoOverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (errorOverlayUrl != null) __obj.updateDynamic("errorOverlayUrl")(errorOverlayUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAspectRatio)) __obj.updateDynamic("keepAspectRatio")(keepAspectRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoOverlayOptions]
   }
+  
+  extension [Self <: VideoOverlayOptions](x: Self) {
+    
+    inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    
+    inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+    
+    inline def setKeepAspectRatio(value: Boolean): Self = StObject.set(x, "keepAspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def setKeepAspectRatioUndefined: Self = StObject.set(x, "keepAspectRatio", js.undefined)
+    
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    
+    inline def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
+    
+    inline def setPlaysInline(value: Boolean): Self = StObject.set(x, "playsInline", value.asInstanceOf[js.Any])
+    
+    inline def setPlaysInlineUndefined: Self = StObject.set(x, "playsInline", js.undefined)
+  }
 }
-

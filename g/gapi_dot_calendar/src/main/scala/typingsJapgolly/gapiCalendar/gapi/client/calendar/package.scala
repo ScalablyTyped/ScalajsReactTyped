@@ -1,13 +1,16 @@
-package typingsJapgolly.gapiCalendar.gapi.client
+package typingsJapgolly.gapiCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object calendar {
-  type AclDeleteParameters = typingsJapgolly.gapiCalendar.gapi.client.calendar.AclGetParameters
-  type date = java.lang.String
-  type datetime = java.lang.String
-  type etag = java.lang.String
-  type integer = scala.Double
-}
+
+type AclDeleteParameters = AclGetParameters
+
+type date = String
+
+type datetime = String
+
+type etag = String
+
+type integer = Double

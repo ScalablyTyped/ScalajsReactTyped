@@ -1,19 +1,20 @@
 package typingsJapgolly.nodegit
 
 import typingsJapgolly.nodegit.diffDeltaMod.DiffDelta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/status-entry", JSImport.Namespace)
-@js.native
-object statusEntryMod extends js.Object {
+object statusEntryMod {
+  
+  @JSImport("nodegit/status-entry", "StatusEntry")
   @js.native
-  class StatusEntry () extends js.Object {
+  open class StatusEntry () extends StObject {
+    
     def headToIndex(): DiffDelta = js.native
+    
     def indexToWorkdir(): DiffDelta = js.native
+    
     def status(): Double = js.native
   }
-  
 }
-

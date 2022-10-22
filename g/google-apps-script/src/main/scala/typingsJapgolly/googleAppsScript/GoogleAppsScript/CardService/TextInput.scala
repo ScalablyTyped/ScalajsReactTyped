@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A input field widget that accepts text input.
@@ -13,39 +12,56 @@ import scala.scalajs.js.annotation._
   *         .setTitle("Text input title")
   *         .setHint("Text input hint");
   */
-trait TextInput extends js.Object {
+trait TextInput extends StObject {
+  
   def setFieldName(fieldName: String): TextInput
+  
   def setHint(hint: String): TextInput
+  
   def setMultiline(multiline: Boolean): TextInput
+  
   def setOnChangeAction(action: Action): TextInput
+  
   def setSuggestions(suggestions: Suggestions): TextInput
+  
   def setSuggestionsAction(suggestionsAction: Action): TextInput
+  
   def setTitle(title: String): TextInput
+  
   def setValue(value: String): TextInput
 }
-
 object TextInput {
-  @scala.inline
-  def apply(
-    setFieldName: String => CallbackTo[TextInput],
-    setHint: String => CallbackTo[TextInput],
-    setMultiline: Boolean => CallbackTo[TextInput],
-    setOnChangeAction: Action => CallbackTo[TextInput],
-    setSuggestions: Suggestions => CallbackTo[TextInput],
-    setSuggestionsAction: Action => CallbackTo[TextInput],
-    setTitle: String => CallbackTo[TextInput],
-    setValue: String => CallbackTo[TextInput]
+  
+  inline def apply(
+    setFieldName: String => TextInput,
+    setHint: String => TextInput,
+    setMultiline: Boolean => TextInput,
+    setOnChangeAction: Action => TextInput,
+    setSuggestions: Suggestions => TextInput,
+    setSuggestionsAction: Action => TextInput,
+    setTitle: String => TextInput,
+    setValue: String => TextInput
   ): TextInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setFieldName")(js.Any.fromFunction1((t0: java.lang.String) => setFieldName(t0).runNow()))
-    __obj.updateDynamic("setHint")(js.Any.fromFunction1((t0: java.lang.String) => setHint(t0).runNow()))
-    __obj.updateDynamic("setMultiline")(js.Any.fromFunction1((t0: scala.Boolean) => setMultiline(t0).runNow()))
-    __obj.updateDynamic("setOnChangeAction")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Action) => setOnChangeAction(t0).runNow()))
-    __obj.updateDynamic("setSuggestions")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Suggestions) => setSuggestions(t0).runNow()))
-    __obj.updateDynamic("setSuggestionsAction")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Action) => setSuggestionsAction(t0).runNow()))
-    __obj.updateDynamic("setTitle")(js.Any.fromFunction1((t0: java.lang.String) => setTitle(t0).runNow()))
-    __obj.updateDynamic("setValue")(js.Any.fromFunction1((t0: java.lang.String) => setValue(t0).runNow()))
+    val __obj = js.Dynamic.literal(setFieldName = js.Any.fromFunction1(setFieldName), setHint = js.Any.fromFunction1(setHint), setMultiline = js.Any.fromFunction1(setMultiline), setOnChangeAction = js.Any.fromFunction1(setOnChangeAction), setSuggestions = js.Any.fromFunction1(setSuggestions), setSuggestionsAction = js.Any.fromFunction1(setSuggestionsAction), setTitle = js.Any.fromFunction1(setTitle), setValue = js.Any.fromFunction1(setValue))
     __obj.asInstanceOf[TextInput]
   }
+  
+  extension [Self <: TextInput](x: Self) {
+    
+    inline def setSetFieldName(value: String => TextInput): Self = StObject.set(x, "setFieldName", js.Any.fromFunction1(value))
+    
+    inline def setSetHint(value: String => TextInput): Self = StObject.set(x, "setHint", js.Any.fromFunction1(value))
+    
+    inline def setSetMultiline(value: Boolean => TextInput): Self = StObject.set(x, "setMultiline", js.Any.fromFunction1(value))
+    
+    inline def setSetOnChangeAction(value: Action => TextInput): Self = StObject.set(x, "setOnChangeAction", js.Any.fromFunction1(value))
+    
+    inline def setSetSuggestions(value: Suggestions => TextInput): Self = StObject.set(x, "setSuggestions", js.Any.fromFunction1(value))
+    
+    inline def setSetSuggestionsAction(value: Action => TextInput): Self = StObject.set(x, "setSuggestionsAction", js.Any.fromFunction1(value))
+    
+    inline def setSetTitle(value: String => TextInput): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    
+    inline def setSetValue(value: String => TextInput): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+  }
 }
-

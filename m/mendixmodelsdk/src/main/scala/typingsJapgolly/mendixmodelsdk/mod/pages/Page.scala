@@ -1,19 +1,19 @@
 package typingsJapgolly.mendixmodelsdk.mod.pages
 
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typingsJapgolly.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typingsJapgolly.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/page relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/page relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk", "pages.Page")
 @js.native
-class Page protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.pages.Page {
+open class Page protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.pages.Page {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -22,17 +22,28 @@ class Page protected ()
     container: IFolderBase
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "pages.Page")
-@js.native
-object Page extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object Page {
+  
+  @JSImport("mendixmodelsdk", "pages.Page")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Page unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
-  def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.pagesMod.pages.Page = js.native
+  /* static member */
+  inline def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.Page = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.Page]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.Page.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.Page.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

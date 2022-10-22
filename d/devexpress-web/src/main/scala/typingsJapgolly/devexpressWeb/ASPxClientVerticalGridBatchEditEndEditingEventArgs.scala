@@ -1,28 +1,44 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientVerticalGrid.BatchEditEndEditing event.
   */
-@JSGlobal("ASPxClientVerticalGridBatchEditEndEditingEventArgs")
-@js.native
-class ASPxClientVerticalGridBatchEditEndEditingEventArgs protected () extends ASPxClientCancelEventArgs {
+trait ASPxClientVerticalGridBatchEditEndEditingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
-    * Initializes a new instance of the ASPxClientVerticalGridBatchEditEndEditingEventArgs class with the specified settings.
-    * @param visibleIndex An integer value that specifies the visible index of the record. This value is assigned to the ASPxClientVerticalGridBatchEditEndEditingEventArgs.visibleIndex property.
-    * @param recordValues A hashtable that stores information about editable cells. This value is assigned to the ASPxClientVerticalGridBatchEditEndEditingEventArgs.recordValues property.
+    * Gets the row to which the edited cell belongs.
     */
-  def this(visibleIndex: Double, recordValues: js.Any) = this()
+  var focusedRow: ASPxClientVerticalGridRow
+  
   /**
     * Gets a hashtable that maintains information about editable cells.
     */
-  var recordValues: js.Any = js.native
+  var recordValues: Any
+  
   /**
     * Gets the visible index of the record whose cells have been edited.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
-
+object ASPxClientVerticalGridBatchEditEndEditingEventArgs {
+  
+  inline def apply(cancel: Boolean, focusedRow: ASPxClientVerticalGridRow, recordValues: Any, visibleIndex: Double): ASPxClientVerticalGridBatchEditEndEditingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], focusedRow = focusedRow.asInstanceOf[js.Any], recordValues = recordValues.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditEndEditingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientVerticalGridBatchEditEndEditingEventArgs](x: Self) {
+    
+    inline def setFocusedRow(value: ASPxClientVerticalGridRow): Self = StObject.set(x, "focusedRow", value.asInstanceOf[js.Any])
+    
+    inline def setRecordValues(value: Any): Self = StObject.set(x, "recordValues", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+  }
+}

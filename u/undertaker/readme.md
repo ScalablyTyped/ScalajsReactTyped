@@ -10,10 +10,10 @@ Task registry that allows composition through series/parallel methods.
 | ------------------ | :-------------: |
 | Full name          | undertaker |
 | Keywords           | registry, runner, task |
-| # releases         | 2 |
-| # dependents       | 32 |
-| # downloads        | 29006181 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4953675.666666667 |
+| # stars            | 183.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/undertaker#readme)

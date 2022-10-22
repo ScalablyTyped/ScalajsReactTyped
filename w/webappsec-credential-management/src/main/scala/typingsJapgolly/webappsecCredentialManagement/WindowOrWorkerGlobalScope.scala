@@ -1,16 +1,16 @@
 package typingsJapgolly.webappsecCredentialManagement
 
-import org.scalajs.dom.experimental.Response
-import typingsJapgolly.std.Request
+import org.scalajs.dom.Request
+import org.scalajs.dom.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowOrWorkerGlobalScope extends js.Object {
+trait WindowOrWorkerGlobalScope extends StObject {
+  
   def fetch(url: String): js.Promise[Response] = js.native
   def fetch(url: String, init: CMRequestInit): js.Promise[Response] = js.native
   def fetch(url: Request): js.Promise[Response] = js.native
   def fetch(url: Request, init: CMRequestInit): js.Promise[Response] = js.native
 }
-

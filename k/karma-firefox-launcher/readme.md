@@ -1,7 +1,7 @@
 
 # Scala.js typings for karma-firefox-launcher
 
-Typings are for version 1.3
+Typings are for version 2.1
 
 ## Library description:
 A Karma plugin. Launcher for Firefox.
@@ -10,10 +10,10 @@ A Karma plugin. Launcher for Firefox.
 | ------------------ | :-------------: |
 | Full name          | karma-firefox-launcher |
 | Keywords           | karma, testing, karma-plugin, karma-launcher, firefox |
-| # releases         | 3 |
-| # dependents       | 241 |
-| # downloads        | 9661538 |
-| # stars            | 7 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1420192.3333333333 |
+| # stars            | 99.0 |
 
 ## Links
 - [Homepage](https://github.com/karma-runner/karma-firefox-launcher#readme)

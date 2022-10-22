@@ -1,61 +1,78 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationAnnotationsLabelsOptions extends js.Object {
+trait NavigationAnnotationsLabelsOptions extends StObject {
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Accessibility options for an
+    * annotation label.
+    */
+  var accessibility: js.UndefOr[AnnotationLabelAccessibilityOptionsObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The alignment of the
     * annotation's label. If right, the right side of the label should be
     * touching the point.
     */
   var align: js.UndefOr[AlignValue] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to allow the
     * annotation's labels to overlap. To make the labels less sensitive for
     * overlapping, the can be set to 0.
     */
   var allowOverlap: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
     * for the annotation's label.
     */
   var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border color for the
     * annotation's label.
     */
   var borderColor: js.UndefOr[ColorString] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border radius in pixels for
     * the annotaiton's label.
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border width in pixels for
     * the annotation's label
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A class name for styling by CSS.
     */
   var className: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to hide the annotation's
     * label that is outside the plot area.
     */
   var crop: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The label's pixel distance from
     * the point.
     */
   var distance: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A format string for the data
     * label.
     */
   var format: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback JavaScript function to
     * format the annotation's label. Note that if a `format` or `text` are
@@ -63,61 +80,78 @@ trait NavigationAnnotationsLabelsOptions extends js.Object {
     * `This` refers to a point object.
     */
   var formatter: js.UndefOr[FormatterCallbackFunction[Point]] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Whether the annotation is
+    * visible in the exported data table.
+    */
+  var includeInDataExport: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) How to handle the annotation's
     * label that flow outside the plot area. The justify option aligns the
     * label inside the plot area.
     */
   var overflow: js.UndefOr[OptionsOverflowValue] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) When either the borderWidth or
     * the backgroundColor is set, this is the padding within the box.
     */
   var padding: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This option defines the point to
     * which the label will be connected. It can be either the point which
     * exists in the series - it is referenced by the point's id - or a new
     * point with defined x, y properties and optionally axes.
     */
-  var point: js.UndefOr[String | MockPointOptionsObject | NavigationAnnotationsLabelsPointOptions] = js.undefined
+  var point: js.UndefOr[String | AnnotationMockPointFunction | AnnotationMockPointOptionsObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The shadow of the box. The
     * shadow can be an object configuration containing `color`, `offsetX`,
     * `offsetY`, `opacity` and `width`.
     */
   var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of a symbol to use for
     * the border around the label. Symbols are predefined functions on the
     * Renderer object.
     */
   var shape: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Styles for the annotation's
     * label.
     */
   var style: js.UndefOr[CSSObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Alias for the format option.
     */
   var text: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to use HTML to render
     * the annotation's label.
     */
   var useHTML: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The vertical alignment of the
     * annotation's label.
     */
   var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The x position offset of the
     * label relative to the point. Note that if a `distance` is defined, the
     * distance takes precedence over `x` and `y` options.
     */
   var x: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The y position offset of the
     * label relative to the point. Note that if a `distance` is defined, the
@@ -125,57 +159,111 @@ trait NavigationAnnotationsLabelsOptions extends js.Object {
     */
   var y: js.UndefOr[Double] = js.undefined
 }
-
 object NavigationAnnotationsLabelsOptions {
-  @scala.inline
-  def apply(
-    align: AlignValue = null,
-    allowOverlap: js.UndefOr[Boolean] = js.undefined,
-    backgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    borderColor: ColorString = null,
-    borderRadius: Int | Double = null,
-    borderWidth: Int | Double = null,
-    className: String = null,
-    crop: js.UndefOr[Boolean] = js.undefined,
-    distance: Int | Double = null,
-    format: String = null,
-    formatter: FormatterCallbackFunction[Point] = null,
-    overflow: OptionsOverflowValue = null,
-    padding: Int | Double = null,
-    point: String | MockPointOptionsObject | NavigationAnnotationsLabelsPointOptions = null,
-    shadow: Boolean | ShadowOptionsObject = null,
-    shape: String = null,
-    style: CSSObject = null,
-    text: String = null,
-    useHTML: js.UndefOr[Boolean] = js.undefined,
-    verticalAlign: VerticalAlignValue = null,
-    x: Int | Double = null,
-    y: Int | Double = null
-  ): NavigationAnnotationsLabelsOptions = {
+  
+  inline def apply(): NavigationAnnotationsLabelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(crop)) __obj.updateDynamic("crop")(crop.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationAnnotationsLabelsOptions]
   }
+  
+  extension [Self <: NavigationAnnotationsLabelsOptions](x: Self) {
+    
+    inline def setAccessibility(value: AnnotationLabelAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
+    
+    inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
+    
+    inline def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
+    
+    inline def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setCrop(value: Boolean): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+    
+    inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setFormatter(value: FormatterCallbackFunction[Point]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    
+    inline def setIncludeInDataExport(value: Boolean): Self = StObject.set(x, "includeInDataExport", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeInDataExportUndefined: Self = StObject.set(x, "includeInDataExport", js.undefined)
+    
+    inline def setOverflow(value: OptionsOverflowValue): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setPoint(value: String | AnnotationMockPointFunction | AnnotationMockPointOptionsObject): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    
+    inline def setPointFunction1(value: /* annotation */ Annotation => AnnotationMockPointOptionsObject): Self = StObject.set(x, "point", js.Any.fromFunction1(value))
+    
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    
+    inline def setShadow(value: Boolean | ShadowOptionsObject): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    
+    inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
+    
+    inline def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
+    
+    inline def setVerticalAlign(value: VerticalAlignValue): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

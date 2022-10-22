@@ -1,22 +1,16 @@
 package typingsJapgolly.nodeMailjet.mod.SMS
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.nodeMailjet.mod.ConfigOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Client extends js.Object {
-  def get(action: String): GetResource
-  def post(action: String): PostResource
+@js.native
+trait Client extends StObject {
+  
+  def get(action: String): GetResource = js.native
+  def get(action: String, options: ConfigOptions): GetResource = js.native
+  
+  def post(action: String): PostResource = js.native
+  def post(action: String, options: ConfigOptions): PostResource = js.native
 }
-
-object Client {
-  @scala.inline
-  def apply(get: String => CallbackTo[GetResource], post: String => CallbackTo[PostResource]): Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(js.Any.fromFunction1((t0: java.lang.String) => get(t0).runNow()))
-    __obj.updateDynamic("post")(js.Any.fromFunction1((t0: java.lang.String) => post(t0).runNow()))
-    __obj.asInstanceOf[Client]
-  }
-}
-

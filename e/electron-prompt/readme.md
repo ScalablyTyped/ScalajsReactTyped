@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-prompt
 
-Typings are for version 1.3
+Typings are for version 1.6
 
 ## Library description:
 Electron helper to prompt for a value via input or select
@@ -10,10 +10,10 @@ Electron helper to prompt for a value via input or select
 | ------------------ | :-------------: |
 | Full name          | electron-prompt |
 | Keywords           | electron, prompt, string |
-| # releases         | 7 |
-| # dependents       | 7 |
-| # downloads        | 36800 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 44457.666666666664 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/p-sam/electron-prompt#readme)

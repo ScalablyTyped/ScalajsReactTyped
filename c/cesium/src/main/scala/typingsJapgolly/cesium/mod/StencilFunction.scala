@@ -1,65 +1,87 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StencilFunction extends js.Object
-
+sealed trait StencilFunction extends StObject
 @JSImport("cesium", "StencilFunction")
 @js.native
-object StencilFunction extends js.Object {
-  @js.native
-  sealed trait ALWAYS extends StencilFunction
-  
-  @js.native
-  sealed trait EQUAL extends StencilFunction
-  
-  @js.native
-  sealed trait GREATER extends StencilFunction
-  
-  @js.native
-  sealed trait GREATER_OR_EQUAL extends StencilFunction
-  
-  @js.native
-  sealed trait LESS extends StencilFunction
-  
-  @js.native
-  sealed trait LESS_OR_EQUAL extends StencilFunction
-  
-  @js.native
-  sealed trait NEVER extends StencilFunction
-  
-  @js.native
-  sealed trait NOT_EQUAL extends StencilFunction
+object StencilFunction extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StencilFunction with Double] = js.native
-  /* 7 */ @js.native
-  object ALWAYS extends TopLevel[ALWAYS with Double]
+  def apply(value: scala.Nothing): js.UndefOr[StencilFunction & scala.Nothing] = js.native
   
-  /* 2 */ @js.native
-  object EQUAL extends TopLevel[EQUAL with Double]
+  /**
+    * The stencil test always passes.
+    */
+  @js.native
+  sealed trait ALWAYS
+    extends StObject
+       with StencilFunction
+  /* WebGLConstants.ALWAYS */ val ALWAYS: typingsJapgolly.cesium.mod.StencilFunction.ALWAYS & scala.Nothing = js.native
   
-  /* 4 */ @js.native
-  object GREATER extends TopLevel[GREATER with Double]
+  /**
+    * The stencil test passes when the masked reference value is equal to the masked stencil value.
+    */
+  @js.native
+  sealed trait EQUAL
+    extends StObject
+       with StencilFunction
+  /* WebGLConstants.EQUAL */ val EQUAL: typingsJapgolly.cesium.mod.StencilFunction.EQUAL & scala.Nothing = js.native
   
-  /* 6 */ @js.native
-  object GREATER_OR_EQUAL extends TopLevel[GREATER_OR_EQUAL with Double]
+  /**
+    * The stencil test passes when the masked reference value is greater than the masked stencil value.
+    */
+  @js.native
+  sealed trait GREATER
+    extends StObject
+       with StencilFunction
+  /* WebGLConstants.GREATER */ val GREATER: typingsJapgolly.cesium.mod.StencilFunction.GREATER & scala.Nothing = js.native
   
-  /* 1 */ @js.native
-  object LESS extends TopLevel[LESS with Double]
+  /**
+    * The stencil test passes when the masked reference value is greater than or equal to the masked stencil value.
+    */
+  @js.native
+  sealed trait GREATER_OR_EQUAL
+    extends StObject
+       with StencilFunction
+  /* WebGLConstants.GEQUAL */ val GREATER_OR_EQUAL: typingsJapgolly.cesium.mod.StencilFunction.GREATER_OR_EQUAL & scala.Nothing = js.native
   
-  /* 3 */ @js.native
-  object LESS_OR_EQUAL extends TopLevel[LESS_OR_EQUAL with Double]
+  /**
+    * The stencil test passes when the masked reference value is less than the masked stencil value.
+    */
+  @js.native
+  sealed trait LESS
+    extends StObject
+       with StencilFunction
+  /* WebGLConstants.LESS */ val LESS: typingsJapgolly.cesium.mod.StencilFunction.LESS & scala.Nothing = js.native
   
-  /* 0 */ @js.native
-  object NEVER extends TopLevel[NEVER with Double]
+  /**
+    * The stencil test passes when the masked reference value is less than or equal to the masked stencil value.
+    */
+  @js.native
+  sealed trait LESS_OR_EQUAL
+    extends StObject
+       with StencilFunction
+  /* WebGLConstants.LEQUAL */ val LESS_OR_EQUAL: typingsJapgolly.cesium.mod.StencilFunction.LESS_OR_EQUAL & scala.Nothing = js.native
   
-  /* 5 */ @js.native
-  object NOT_EQUAL extends TopLevel[NOT_EQUAL with Double]
+  /**
+    * The stencil test never passes.
+    */
+  @js.native
+  sealed trait NEVER
+    extends StObject
+       with StencilFunction
+  /* WebGLConstants.NEVER */ val NEVER: typingsJapgolly.cesium.mod.StencilFunction.NEVER & scala.Nothing = js.native
   
+  /**
+    * The stencil test passes when the masked reference value is not equal to the masked stencil value.
+    */
+  @js.native
+  sealed trait NOT_EQUAL
+    extends StObject
+       with StencilFunction
+  /* WebGLConstants.NOTEQUAL */ val NOT_EQUAL: typingsJapgolly.cesium.mod.StencilFunction.NOT_EQUAL & scala.Nothing = js.native
 }
-

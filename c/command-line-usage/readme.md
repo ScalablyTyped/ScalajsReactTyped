@@ -10,10 +10,10 @@ Generates command-line usage information
 | ------------------ | :-------------: |
 | Full name          | command-line-usage |
 | Keywords           | terminal, command line, usage, generator |
-| # releases         | 15 |
-| # dependents       | 608 |
-| # downloads        | 10229715 |
-| # stars            | 4 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 4238611.333333333 |
+| # stars            | 176.0 |
 
 ## Links
 - [Homepage](https://github.com/75lb/command-line-usage#readme)

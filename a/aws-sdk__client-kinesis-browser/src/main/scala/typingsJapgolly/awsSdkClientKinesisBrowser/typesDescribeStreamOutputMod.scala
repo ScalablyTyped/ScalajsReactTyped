@@ -1,27 +1,41 @@
 package typingsJapgolly.awsSdkClientKinesisBrowser
 
-import typingsJapgolly.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkClientKinesisBrowser.typesOutputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientKinesisBrowser.typesStreamDescriptionMod.UnmarshalledStreamDescription
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/types/DescribeStreamOutput", JSImport.Namespace)
-@js.native
-object typesDescribeStreamOutputMod extends js.Object {
-  @js.native
-  trait DescribeStreamOutput extends OutputTypesUnion {
+object typesDescribeStreamOutputMod {
+  
+  trait DescribeStreamOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>The current status of the stream, the stream Amazon Resource Name (ARN), an array of shard objects that comprise the stream, and whether there are more shards available.</p>
       */
-    var StreamDescription: UnmarshalledStreamDescription = js.native
+    var StreamDescription: UnmarshalledStreamDescription
   }
-  
+  object DescribeStreamOutput {
+    
+    inline def apply($metadata: ResponseMetadata, StreamDescription: UnmarshalledStreamDescription): DescribeStreamOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], StreamDescription = StreamDescription.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DescribeStreamOutput]
+    }
+    
+    extension [Self <: DescribeStreamOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setStreamDescription(value: UnmarshalledStreamDescription): Self = StObject.set(x, "StreamDescription", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

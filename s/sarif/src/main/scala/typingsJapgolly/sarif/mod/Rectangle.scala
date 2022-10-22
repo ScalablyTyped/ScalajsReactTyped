@@ -1,54 +1,72 @@
 package typingsJapgolly.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Rectangle extends js.Object {
+trait Rectangle extends StObject {
+  
   /**
     * The Y coordinate of the bottom edge of the rectangle, measured in the image's natural units.
     */
   var bottom: js.UndefOr[Double] = js.undefined
+  
   /**
     * The X coordinate of the left edge of the rectangle, measured in the image's natural units.
     */
   var left: js.UndefOr[Double] = js.undefined
+  
   /**
     * A message relevant to the rectangle.
     */
   var message: js.UndefOr[Message] = js.undefined
+  
   /**
     * Key/value pairs that provide additional information about the rectangle.
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
+  
   /**
     * The X coordinate of the right edge of the rectangle, measured in the image's natural units.
     */
   var right: js.UndefOr[Double] = js.undefined
+  
   /**
     * The Y coordinate of the top edge of the rectangle, measured in the image's natural units.
     */
   var top: js.UndefOr[Double] = js.undefined
 }
-
 object Rectangle {
-  @scala.inline
-  def apply(
-    bottom: Int | Double = null,
-    left: Int | Double = null,
-    message: Message = null,
-    properties: PropertyBag = null,
-    right: Int | Double = null,
-    top: Int | Double = null
-  ): Rectangle = {
+  
+  inline def apply(): Rectangle = {
     val __obj = js.Dynamic.literal()
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rectangle]
   }
+  
+  extension [Self <: Rectangle](x: Self) {
+    
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+  }
 }
-

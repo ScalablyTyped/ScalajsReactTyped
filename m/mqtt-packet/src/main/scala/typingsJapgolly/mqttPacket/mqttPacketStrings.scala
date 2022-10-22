@@ -1,100 +1,115 @@
 package typingsJapgolly.mqttPacket
 
 import typingsJapgolly.mqttPacket.mod.PacketCmd
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mqttPacketStrings {
-  @js.native
-  sealed trait MQIsdp extends js.Object
   
   @js.native
-  sealed trait MQTT extends js.Object
+  sealed trait MQIsdp extends StObject
+  inline def MQIsdp: MQIsdp = "MQIsdp".asInstanceOf[MQIsdp]
   
   @js.native
-  sealed trait connack extends PacketCmd
+  sealed trait MQTT extends StObject
+  inline def MQTT: MQTT = "MQTT".asInstanceOf[MQTT]
   
   @js.native
-  sealed trait connect extends PacketCmd
+  sealed trait auth
+    extends StObject
+       with PacketCmd
+  inline def auth: auth = "auth".asInstanceOf[auth]
   
   @js.native
-  sealed trait disconnect extends PacketCmd
+  sealed trait connack
+    extends StObject
+       with PacketCmd
+  inline def connack: connack = "connack".asInstanceOf[connack]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait connect
+    extends StObject
+       with PacketCmd
+  inline def connect: connect = "connect".asInstanceOf[connect]
   
   @js.native
-  sealed trait packet extends js.Object
+  sealed trait disconnect
+    extends StObject
+       with PacketCmd
+  inline def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
   
   @js.native
-  sealed trait pingreq extends PacketCmd
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait pingresp extends PacketCmd
+  sealed trait packet extends StObject
+  inline def packet: packet = "packet".asInstanceOf[packet]
   
   @js.native
-  sealed trait puback extends PacketCmd
+  sealed trait pingreq
+    extends StObject
+       with PacketCmd
+  inline def pingreq: pingreq = "pingreq".asInstanceOf[pingreq]
   
   @js.native
-  sealed trait pubcomp extends PacketCmd
+  sealed trait pingresp
+    extends StObject
+       with PacketCmd
+  inline def pingresp: pingresp = "pingresp".asInstanceOf[pingresp]
   
   @js.native
-  sealed trait publish extends PacketCmd
+  sealed trait puback
+    extends StObject
+       with PacketCmd
+  inline def puback: puback = "puback".asInstanceOf[puback]
   
   @js.native
-  sealed trait pubrec extends PacketCmd
+  sealed trait pubcomp
+    extends StObject
+       with PacketCmd
+  inline def pubcomp: pubcomp = "pubcomp".asInstanceOf[pubcomp]
   
   @js.native
-  sealed trait pubrel extends PacketCmd
+  sealed trait publish
+    extends StObject
+       with PacketCmd
+  inline def publish: publish = "publish".asInstanceOf[publish]
   
   @js.native
-  sealed trait suback extends PacketCmd
+  sealed trait pubrec
+    extends StObject
+       with PacketCmd
+  inline def pubrec: pubrec = "pubrec".asInstanceOf[pubrec]
   
   @js.native
-  sealed trait subscribe extends PacketCmd
+  sealed trait pubrel
+    extends StObject
+       with PacketCmd
+  inline def pubrel: pubrel = "pubrel".asInstanceOf[pubrel]
   
   @js.native
-  sealed trait unsuback extends PacketCmd
+  sealed trait suback
+    extends StObject
+       with PacketCmd
+  inline def suback: suback = "suback".asInstanceOf[suback]
   
   @js.native
-  sealed trait unsubscribe extends PacketCmd
+  sealed trait subscribe
+    extends StObject
+       with PacketCmd
+  inline def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
   
-  @scala.inline
-  def MQIsdp: MQIsdp = "MQIsdp".asInstanceOf[MQIsdp]
-  @scala.inline
-  def MQTT: MQTT = "MQTT".asInstanceOf[MQTT]
-  @scala.inline
-  def connack: connack = "connack".asInstanceOf[connack]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def packet: packet = "packet".asInstanceOf[packet]
-  @scala.inline
-  def pingreq: pingreq = "pingreq".asInstanceOf[pingreq]
-  @scala.inline
-  def pingresp: pingresp = "pingresp".asInstanceOf[pingresp]
-  @scala.inline
-  def puback: puback = "puback".asInstanceOf[puback]
-  @scala.inline
-  def pubcomp: pubcomp = "pubcomp".asInstanceOf[pubcomp]
-  @scala.inline
-  def publish: publish = "publish".asInstanceOf[publish]
-  @scala.inline
-  def pubrec: pubrec = "pubrec".asInstanceOf[pubrec]
-  @scala.inline
-  def pubrel: pubrel = "pubrel".asInstanceOf[pubrel]
-  @scala.inline
-  def suback: suback = "suback".asInstanceOf[suback]
-  @scala.inline
-  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
-  @scala.inline
-  def unsuback: unsuback = "unsuback".asInstanceOf[unsuback]
-  @scala.inline
-  def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
+  @js.native
+  sealed trait unsuback
+    extends StObject
+       with PacketCmd
+  inline def unsuback: unsuback = "unsuback".asInstanceOf[unsuback]
+  
+  @js.native
+  sealed trait unsubscribe
+    extends StObject
+       with PacketCmd
+  inline def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
 }
-

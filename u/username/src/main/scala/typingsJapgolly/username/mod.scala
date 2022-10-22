@@ -1,19 +1,16 @@
 package typingsJapgolly.username
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("username", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): js.Promise[String] = js.native
-  /**
-    * Tries to get the username from the LOGNAME, USER, LNAME or USERNAME environment variables. Falls back
-    * to returning an empty string in the reare case none of the environment variables are set.
-    *
-    * @return The username or empty string if not found.
-    */
-  def sync(): String = js.native
+object mod {
+  
+  @JSImport("username", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def username(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("username")().asInstanceOf[js.Promise[js.UndefOr[String]]]
+  
+  inline def usernameSync(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("usernameSync")().asInstanceOf[js.UndefOr[String]]
 }
-

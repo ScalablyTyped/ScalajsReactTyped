@@ -1,12 +1,13 @@
 package typingsJapgolly.phaser.Phaser.Loader.FileTypes
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.phaser.Phaser.Loader.File
 import typingsJapgolly.phaser.Phaser.Loader.LoaderPlugin
 import typingsJapgolly.phaser.Phaser.Loader.MultiFile
-import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.BitmapFontFileConfig
-import typingsJapgolly.phaser.Phaser.Types.Loader.XHRSettingsObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single Bitmap Font based File suitable for loading by the Loader.
@@ -15,91 +16,42 @@ import scala.scalajs.js.annotation._
   * 
   * For documentation about what all the arguments and configuration options mean please see Phaser.Loader.LoaderPlugin#bitmapFont.
   */
-@JSGlobal("Phaser.Loader.FileTypes.BitmapFontFile")
-@js.native
-class BitmapFontFile protected () extends MultiFile {
-  /**
-    * 
-    * @param loader A reference to the Loader that is responsible for this file.
-    * @param key The key to use for this file, or a file configuration object.
-    * @param textureURL The absolute or relative URL to load the font image file from. If undefined or `null` it will be set to `<key>.png`, i.e. if `key` was "alien" then the URL will be "alien.png".
-    * @param fontDataURL The absolute or relative URL to load the font xml data file from. If undefined or `null` it will be set to `<key>.xml`, i.e. if `key` was "alien" then the URL will be "alien.xml".
-    * @param textureXhrSettings An XHR Settings configuration object for the font image file. Used in replacement of the Loaders default XHR Settings.
-    * @param fontDataXhrSettings An XHR Settings configuration object for the font data xml file. Used in replacement of the Loaders default XHR Settings.
-    */
-  def this(loader: LoaderPlugin, key: String) = this()
-  def this(loader: LoaderPlugin, key: BitmapFontFileConfig) = this()
-  def this(loader: LoaderPlugin, key: String, textureURL: String) = this()
-  def this(loader: LoaderPlugin, key: String, textureURL: js.Array[String]) = this()
-  def this(loader: LoaderPlugin, key: BitmapFontFileConfig, textureURL: String) = this()
-  def this(loader: LoaderPlugin, key: BitmapFontFileConfig, textureURL: js.Array[String]) = this()
-  def this(loader: LoaderPlugin, key: String, textureURL: String, fontDataURL: String) = this()
-  def this(loader: LoaderPlugin, key: String, textureURL: js.Array[String], fontDataURL: String) = this()
-  def this(loader: LoaderPlugin, key: BitmapFontFileConfig, textureURL: String, fontDataURL: String) = this()
-  def this(loader: LoaderPlugin, key: BitmapFontFileConfig, textureURL: js.Array[String], fontDataURL: String) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: String,
-    textureURL: String,
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: String,
-    textureURL: js.Array[String],
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: BitmapFontFileConfig,
-    textureURL: String,
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: BitmapFontFileConfig,
-    textureURL: js.Array[String],
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: String,
-    textureURL: String,
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    fontDataXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: String,
-    textureURL: js.Array[String],
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    fontDataXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: BitmapFontFileConfig,
-    textureURL: String,
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    fontDataXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: BitmapFontFileConfig,
-    textureURL: js.Array[String],
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    fontDataXhrSettings: XHRSettingsObject
-  ) = this()
+trait BitmapFontFile
+  extends StObject
+     with MultiFile {
+  
   /**
     * Adds this file to its target cache upon successful loading and processing.
     */
-  def addToCache(): Unit = js.native
+  def addToCache(): Unit
 }
-
+object BitmapFontFile {
+  
+  inline def apply(
+    addToCache: Callback,
+    addToMultiFile: File => MultiFile,
+    baseURL: String,
+    complete: Boolean,
+    config: Any,
+    failed: Double,
+    files: js.Array[File],
+    isReadyToProcess: CallbackTo[Boolean],
+    key: String,
+    loader: LoaderPlugin,
+    onFileComplete: File => Callback,
+    onFileFailed: File => Callback,
+    path: String,
+    pending: Double,
+    prefix: String,
+    `type`: String
+  ): BitmapFontFile = {
+    val __obj = js.Dynamic.literal(addToCache = addToCache.toJsFn, addToMultiFile = js.Any.fromFunction1(addToMultiFile), baseURL = baseURL.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], isReadyToProcess = isReadyToProcess.toJsFn, key = key.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], onFileComplete = js.Any.fromFunction1((t0: File) => onFileComplete(t0).runNow()), onFileFailed = js.Any.fromFunction1((t0: File) => onFileFailed(t0).runNow()), path = path.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BitmapFontFile]
+  }
+  
+  extension [Self <: BitmapFontFile](x: Self) {
+    
+    inline def setAddToCache(value: Callback): Self = StObject.set(x, "addToCache", value.toJsFn)
+  }
+}

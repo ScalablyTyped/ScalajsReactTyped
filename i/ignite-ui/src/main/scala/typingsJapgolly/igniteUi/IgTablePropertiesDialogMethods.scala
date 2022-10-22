@@ -1,22 +1,27 @@
 package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IgTablePropertiesDialogMethods extends js.Object {
+trait IgTablePropertiesDialogMethods extends StObject {
+  
   def hide(): Unit
+  
   def show(item: js.Object): Unit
 }
-
 object IgTablePropertiesDialogMethods {
-  @scala.inline
-  def apply(hide: Callback, show: js.Object => Callback): IgTablePropertiesDialogMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hide")(hide.toJsFn)
-    __obj.updateDynamic("show")(js.Any.fromFunction1((t0: js.Object) => show(t0).runNow()))
+  
+  inline def apply(hide: Callback, show: js.Object => Callback): IgTablePropertiesDialogMethods = {
+    val __obj = js.Dynamic.literal(hide = hide.toJsFn, show = js.Any.fromFunction1((t0: js.Object) => show(t0).runNow()))
     __obj.asInstanceOf[IgTablePropertiesDialogMethods]
   }
+  
+  extension [Self <: IgTablePropertiesDialogMethods](x: Self) {
+    
+    inline def setHide(value: Callback): Self = StObject.set(x, "hide", value.toJsFn)
+    
+    inline def setShow(value: js.Object => Callback): Self = StObject.set(x, "show", js.Any.fromFunction1((t0: js.Object) => value(t0).runNow()))
+  }
 }
-

@@ -1,9 +1,9 @@
 package typingsJapgolly.esriLeaflet.mod
 
 import typingsJapgolly.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: VirtualGrid extends support
 /**
@@ -30,8 +30,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("esri-leaflet", "FeatureLayer")
 @js.native
-class FeatureLayer_ protected ()
+open class FeatureLayer_ protected ()
   extends typingsJapgolly.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayer_ {
   def this(options: FeatureLayerOptions) = this()
 }
-

@@ -1,89 +1,78 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeFillType extends js.Object
-
+sealed trait ShapeFillType extends StObject
 /**
-  *
   * Specifies a shape's fill type.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeFillType")
 @js.native
-object ShapeFillType extends js.Object {
+object ShapeFillType extends StObject {
+  
   /**
-    *
     * Gradient fill.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait gradient extends ShapeFillType
+  sealed trait gradient
+    extends StObject
+       with ShapeFillType
   
   /**
-    *
     * Mixed fill.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait mixed extends ShapeFillType
+  sealed trait mixed
+    extends StObject
+       with ShapeFillType
   
   /**
-    *
     * No fill.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait noFill extends ShapeFillType
+  sealed trait noFill
+    extends StObject
+       with ShapeFillType
   
   /**
-    *
     * Pattern fill.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait pattern extends ShapeFillType
+  sealed trait pattern
+    extends StObject
+       with ShapeFillType
   
   /**
-    *
     * Picture and texture fill.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait pictureAndTexture extends ShapeFillType
+  sealed trait pictureAndTexture
+    extends StObject
+       with ShapeFillType
   
   /**
-    *
     * Solid fill.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait solid extends ShapeFillType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeFillType with String] = js.native
-  /* "Gradient" */ @js.native
-  object gradient extends TopLevel[gradient with String]
-  
-  /* "Mixed" */ @js.native
-  object mixed extends TopLevel[mixed with String]
-  
-  /* "NoFill" */ @js.native
-  object noFill extends TopLevel[noFill with String]
-  
-  /* "Pattern" */ @js.native
-  object pattern extends TopLevel[pattern with String]
-  
-  /* "PictureAndTexture" */ @js.native
-  object pictureAndTexture extends TopLevel[pictureAndTexture with String]
-  
-  /* "Solid" */ @js.native
-  object solid extends TopLevel[solid with String]
-  
+  sealed trait solid
+    extends StObject
+       with ShapeFillType
 }
-

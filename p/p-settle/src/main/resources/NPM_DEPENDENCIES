@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-settle" : "3.1.0"
+      "p-settle" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-settle" : "3.1.0"
+      "p-settle" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

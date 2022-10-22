@@ -1,19 +1,16 @@
 package typingsJapgolly.countrySelectJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object countrySelectJsStrings {
-  @js.native
-  sealed trait destroy extends js.Object
   
   @js.native
-  sealed trait getSelectedCountryData extends js.Object
+  sealed trait destroy extends StObject
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def getSelectedCountryData: getSelectedCountryData = "getSelectedCountryData".asInstanceOf[getSelectedCountryData]
+  @js.native
+  sealed trait getSelectedCountryData extends StObject
+  inline def getSelectedCountryData: getSelectedCountryData = "getSelectedCountryData".asInstanceOf[getSelectedCountryData]
 }
-

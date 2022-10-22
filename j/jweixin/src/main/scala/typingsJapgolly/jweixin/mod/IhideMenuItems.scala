@@ -1,27 +1,26 @@
 package typingsJapgolly.jweixin.mod
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IhideMenuItems extends BaseParams {
+trait IhideMenuItems
+  extends StObject
+     with BaseParams {
+  
   var menuList: js.Array[menuProtected | menuShare]
 }
-
 object IhideMenuItems {
-  @scala.inline
-  def apply(
-    menuList: js.Array[menuProtected | menuShare],
-    complete: /* repeated */ js.Any => Callback = null,
-    fail: /* repeated */ js.Any => Callback = null,
-    success: /* repeated */ js.Any => Callback = null
-  ): IhideMenuItems = {
+  
+  inline def apply(menuList: js.Array[menuProtected | menuShare]): IhideMenuItems = {
     val __obj = js.Dynamic.literal(menuList = menuList.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => success(t0).runNow()))
     __obj.asInstanceOf[IhideMenuItems]
   }
+  
+  extension [Self <: IhideMenuItems](x: Self) {
+    
+    inline def setMenuList(value: js.Array[menuProtected | menuShare]): Self = StObject.set(x, "menuList", value.asInstanceOf[js.Any])
+    
+    inline def setMenuListVarargs(value: (menuProtected | menuShare)*): Self = StObject.set(x, "menuList", js.Array(value*))
+  }
 }
-

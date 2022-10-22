@@ -1,43 +1,101 @@
 package typingsJapgolly.tsInvariant
 
-import typingsJapgolly.node.NodeJS.Process
 import typingsJapgolly.std.Error
+import typingsJapgolly.std.Exclude
+import typingsJapgolly.tsInvariant.tsInvariantStrings.silent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-invariant", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("ts-invariant", JSImport.Namespace)
   @js.native
-  class InvariantError () extends Error {
+  val ^ : js.Any = js.native
+  
+  object default {
+    
+    inline def apply(condition: Any): /* asserts condition */ Boolean = ^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any]).asInstanceOf[/* asserts condition */ Boolean]
+    inline def apply(condition: Any, message: String): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts condition */ Boolean]
+    inline def apply(condition: Any, message: Double): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts condition */ Boolean]
+    
+    @JSImport("ts-invariant", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def debug(data: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(data.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def debug(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def debug(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    
+    inline def error(data: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(data.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def error(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def error(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    
+    inline def log(data: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(data.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def log(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def log(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    
+    inline def warn(data: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(data.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def warn(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def warn(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  }
+  
+  @JSImport("ts-invariant", "InvariantError")
+  @js.native
+  open class InvariantError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
     def this(message: Double) = this()
+    
     var framesToPop: Double = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
   }
   
-  var process: Process = js.native
-  @js.native
-  object default extends js.Object {
-    def apply(condition: js.Any): Unit = js.native
-    def apply(condition: js.Any, message: String): Unit = js.native
-    def apply(condition: js.Any, message: Double): Unit = js.native
-    def error(args: js.Any*): Unit = js.native
-    def warn(args: js.Any*): Unit = js.native
+  object invariant {
+    
+    inline def apply(condition: Any): /* asserts condition */ Boolean = ^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any]).asInstanceOf[/* asserts condition */ Boolean]
+    inline def apply(condition: Any, message: String): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts condition */ Boolean]
+    inline def apply(condition: Any, message: Double): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts condition */ Boolean]
+    
+    @JSImport("ts-invariant", "invariant")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def debug(data: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(data.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def debug(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def debug(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    
+    inline def error(data: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(data.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def error(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def error(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    
+    inline def log(data: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(data.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def log(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def log(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    
+    inline def warn(data: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(data.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def warn(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def warn(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   }
   
-  @js.native
-  object invariant extends js.Object {
-    def apply(condition: js.Any): Unit = js.native
-    def apply(condition: js.Any, message: String): Unit = js.native
-    def apply(condition: js.Any, message: Double): Unit = js.native
-    def error(args: js.Any*): Unit = js.native
-    def warn(args: js.Any*): Unit = js.native
-  }
+  inline def setVerbosity(level: VerbosityLevel): VerbosityLevel = ^.asInstanceOf[js.Dynamic].applyDynamic("setVerbosity")(level.asInstanceOf[js.Any]).asInstanceOf[VerbosityLevel]
   
+  type ConsoleMethodName = Exclude[VerbosityLevel, silent]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typingsJapgolly.tsInvariant.tsInvariantStrings.debug
+    - typingsJapgolly.tsInvariant.tsInvariantStrings.log
+    - typingsJapgolly.tsInvariant.tsInvariantStrings.warn
+    - typingsJapgolly.tsInvariant.tsInvariantStrings.error
+    - typingsJapgolly.tsInvariant.tsInvariantStrings.silent
+  */
+  trait VerbosityLevel extends StObject
 }
-

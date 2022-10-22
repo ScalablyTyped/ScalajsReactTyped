@@ -1,30 +1,44 @@
 package typingsJapgolly.winrt.Windows.Security.Cryptography.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IKeyDerivationAlgorithmNamesStatics extends js.Object {
+trait IKeyDerivationAlgorithmNamesStatics extends StObject {
+  
   var pbkdf2Md5: String
+  
   var pbkdf2Sha1: String
+  
   var pbkdf2Sha256: String
+  
   var pbkdf2Sha384: String
+  
   var pbkdf2Sha512: String
+  
   var sp800108CtrHmacMd5: String
+  
   var sp800108CtrHmacSha1: String
+  
   var sp800108CtrHmacSha256: String
+  
   var sp800108CtrHmacSha384: String
+  
   var sp800108CtrHmacSha512: String
+  
   var sp80056aConcatMd5: String
+  
   var sp80056aConcatSha1: String
+  
   var sp80056aConcatSha256: String
+  
   var sp80056aConcatSha384: String
+  
   var sp80056aConcatSha512: String
 }
-
 object IKeyDerivationAlgorithmNamesStatics {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     pbkdf2Md5: String,
     pbkdf2Sha1: String,
     pbkdf2Sha256: String,
@@ -42,8 +56,39 @@ object IKeyDerivationAlgorithmNamesStatics {
     sp80056aConcatSha512: String
   ): IKeyDerivationAlgorithmNamesStatics = {
     val __obj = js.Dynamic.literal(pbkdf2Md5 = pbkdf2Md5.asInstanceOf[js.Any], pbkdf2Sha1 = pbkdf2Sha1.asInstanceOf[js.Any], pbkdf2Sha256 = pbkdf2Sha256.asInstanceOf[js.Any], pbkdf2Sha384 = pbkdf2Sha384.asInstanceOf[js.Any], pbkdf2Sha512 = pbkdf2Sha512.asInstanceOf[js.Any], sp800108CtrHmacMd5 = sp800108CtrHmacMd5.asInstanceOf[js.Any], sp800108CtrHmacSha1 = sp800108CtrHmacSha1.asInstanceOf[js.Any], sp800108CtrHmacSha256 = sp800108CtrHmacSha256.asInstanceOf[js.Any], sp800108CtrHmacSha384 = sp800108CtrHmacSha384.asInstanceOf[js.Any], sp800108CtrHmacSha512 = sp800108CtrHmacSha512.asInstanceOf[js.Any], sp80056aConcatMd5 = sp80056aConcatMd5.asInstanceOf[js.Any], sp80056aConcatSha1 = sp80056aConcatSha1.asInstanceOf[js.Any], sp80056aConcatSha256 = sp80056aConcatSha256.asInstanceOf[js.Any], sp80056aConcatSha384 = sp80056aConcatSha384.asInstanceOf[js.Any], sp80056aConcatSha512 = sp80056aConcatSha512.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IKeyDerivationAlgorithmNamesStatics]
   }
+  
+  extension [Self <: IKeyDerivationAlgorithmNamesStatics](x: Self) {
+    
+    inline def setPbkdf2Md5(value: String): Self = StObject.set(x, "pbkdf2Md5", value.asInstanceOf[js.Any])
+    
+    inline def setPbkdf2Sha1(value: String): Self = StObject.set(x, "pbkdf2Sha1", value.asInstanceOf[js.Any])
+    
+    inline def setPbkdf2Sha256(value: String): Self = StObject.set(x, "pbkdf2Sha256", value.asInstanceOf[js.Any])
+    
+    inline def setPbkdf2Sha384(value: String): Self = StObject.set(x, "pbkdf2Sha384", value.asInstanceOf[js.Any])
+    
+    inline def setPbkdf2Sha512(value: String): Self = StObject.set(x, "pbkdf2Sha512", value.asInstanceOf[js.Any])
+    
+    inline def setSp800108CtrHmacMd5(value: String): Self = StObject.set(x, "sp800108CtrHmacMd5", value.asInstanceOf[js.Any])
+    
+    inline def setSp800108CtrHmacSha1(value: String): Self = StObject.set(x, "sp800108CtrHmacSha1", value.asInstanceOf[js.Any])
+    
+    inline def setSp800108CtrHmacSha256(value: String): Self = StObject.set(x, "sp800108CtrHmacSha256", value.asInstanceOf[js.Any])
+    
+    inline def setSp800108CtrHmacSha384(value: String): Self = StObject.set(x, "sp800108CtrHmacSha384", value.asInstanceOf[js.Any])
+    
+    inline def setSp800108CtrHmacSha512(value: String): Self = StObject.set(x, "sp800108CtrHmacSha512", value.asInstanceOf[js.Any])
+    
+    inline def setSp80056aConcatMd5(value: String): Self = StObject.set(x, "sp80056aConcatMd5", value.asInstanceOf[js.Any])
+    
+    inline def setSp80056aConcatSha1(value: String): Self = StObject.set(x, "sp80056aConcatSha1", value.asInstanceOf[js.Any])
+    
+    inline def setSp80056aConcatSha256(value: String): Self = StObject.set(x, "sp80056aConcatSha256", value.asInstanceOf[js.Any])
+    
+    inline def setSp80056aConcatSha384(value: String): Self = StObject.set(x, "sp80056aConcatSha384", value.asInstanceOf[js.Any])
+    
+    inline def setSp80056aConcatSha512(value: String): Self = StObject.set(x, "sp80056aConcatSha512", value.asInstanceOf[js.Any])
+  }
 }
-

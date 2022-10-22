@@ -1,28 +1,39 @@
 package typingsJapgolly.node.inspectorMod.Profiler
 
 import typingsJapgolly.node.inspectorMod.Debugger.Location
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConsoleProfileStartedEventDataType extends js.Object {
+trait ConsoleProfileStartedEventDataType extends StObject {
+  
   var id: String
+  
   /**
     * Location of console.profile().
     */
   var location: Location
+  
   /**
     * Profile title passed as an argument to console.profile().
     */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object ConsoleProfileStartedEventDataType {
-  @scala.inline
-  def apply(id: String, location: Location, title: String = null): ConsoleProfileStartedEventDataType = {
+  
+  inline def apply(id: String, location: Location): ConsoleProfileStartedEventDataType = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsoleProfileStartedEventDataType]
   }
+  
+  extension [Self <: ConsoleProfileStartedEventDataType](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

@@ -1,13 +1,11 @@
 package typingsJapgolly.officeJsPreview.Visio
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OverlayVerticalAlignment extends js.Object
-
+sealed trait OverlayVerticalAlignment extends StObject
 /**
   *
   * Represents the Vertical Alignment of the Overlay relative to the shape.
@@ -16,14 +14,17 @@ sealed trait OverlayVerticalAlignment extends js.Object
   */
 @JSGlobal("Visio.OverlayVerticalAlignment")
 @js.native
-object OverlayVerticalAlignment extends js.Object {
+object OverlayVerticalAlignment extends StObject {
+  
   /**
     *
     * bottom
     *
     */
   @js.native
-  sealed trait bottom extends OverlayVerticalAlignment
+  sealed trait bottom
+    extends StObject
+       with OverlayVerticalAlignment
   
   /**
     *
@@ -31,7 +32,9 @@ object OverlayVerticalAlignment extends js.Object {
     *
     */
   @js.native
-  sealed trait middle extends OverlayVerticalAlignment
+  sealed trait middle
+    extends StObject
+       with OverlayVerticalAlignment
   
   /**
     *
@@ -39,18 +42,7 @@ object OverlayVerticalAlignment extends js.Object {
     *
     */
   @js.native
-  sealed trait top extends OverlayVerticalAlignment
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[OverlayVerticalAlignment with String] = js.native
-  /* "Bottom" */ @js.native
-  object bottom extends TopLevel[bottom with String]
-  
-  /* "Middle" */ @js.native
-  object middle extends TopLevel[middle with String]
-  
-  /* "Top" */ @js.native
-  object top extends TopLevel[top with String]
-  
+  sealed trait top
+    extends StObject
+       with OverlayVerticalAlignment
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.coinbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.coinbase.coinbaseStrings.wallet
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.coinbase.coinbaseStrings.vault
   - typingsJapgolly.coinbase.coinbaseStrings.multisig_vault
 */
-trait AccountType extends js.Object
-
+trait AccountType extends StObject
 object AccountType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fiat: typingsJapgolly.coinbase.coinbaseStrings.fiat = this.cast("fiat")
-  @scala.inline
-  def multisig: typingsJapgolly.coinbase.coinbaseStrings.multisig = this.cast("multisig")
-  @scala.inline
-  def multisig_vault: typingsJapgolly.coinbase.coinbaseStrings.multisig_vault = this.cast("multisig_vault")
-  @scala.inline
-  def vault: typingsJapgolly.coinbase.coinbaseStrings.vault = this.cast("vault")
-  @scala.inline
-  def wallet: typingsJapgolly.coinbase.coinbaseStrings.wallet = this.cast("wallet")
+  
+  inline def fiat: typingsJapgolly.coinbase.coinbaseStrings.fiat = "fiat".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.fiat]
+  
+  inline def multisig: typingsJapgolly.coinbase.coinbaseStrings.multisig = "multisig".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.multisig]
+  
+  inline def multisig_vault: typingsJapgolly.coinbase.coinbaseStrings.multisig_vault = "multisig_vault".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.multisig_vault]
+  
+  inline def vault: typingsJapgolly.coinbase.coinbaseStrings.vault = "vault".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.vault]
+  
+  inline def wallet: typingsJapgolly.coinbase.coinbaseStrings.wallet = "wallet".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.wallet]
 }
-

@@ -1,28 +1,25 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import typingsJapgolly.dateFns.anon.AddSuffix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/formatDistance", JSImport.Namespace)
-@js.native
-object formatDistanceMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(date: Double, baseDate: Double): String = js.native
-    def apply(date: Double, baseDate: Double, options: AnonAddSuffix): String = js.native
-    def apply(date: Double, baseDate: Double, options: AnonIncludeSeconds): String = js.native
-    def apply(date: Double, baseDate: Date): String = js.native
-    def apply(date: Double, baseDate: Date, options: AnonAddSuffix): String = js.native
-    def apply(date: Double, baseDate: Date, options: AnonIncludeSeconds): String = js.native
-    def apply(date: Date, baseDate: Double): String = js.native
-    def apply(date: Date, baseDate: Double, options: AnonAddSuffix): String = js.native
-    def apply(date: Date, baseDate: Double, options: AnonIncludeSeconds): String = js.native
-    def apply(date: Date, baseDate: Date): String = js.native
-    def apply(date: Date, baseDate: Date, options: AnonAddSuffix): String = js.native
-    def apply(date: Date, baseDate: Date, options: AnonIncludeSeconds): String = js.native
-  }
+object formatDistanceMod {
   
+  object default {
+    
+    inline def apply(date: js.Date, baseDate: js.Date): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: js.Date, baseDate: js.Date, options: AddSuffix): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: js.Date, baseDate: Double): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: js.Date, baseDate: Double, options: AddSuffix): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, baseDate: js.Date): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, baseDate: js.Date, options: AddSuffix): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, baseDate: Double): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double, baseDate: Double, options: AddSuffix): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @JSImport("date-fns/formatDistance", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

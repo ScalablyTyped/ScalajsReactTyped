@@ -1,49 +1,79 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.drawing
 
 import typingsJapgolly.kendoUi.kendo.geometry.Transformation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextOptions extends js.Object {
+trait TextOptions extends StObject {
+  
   var clip: js.UndefOr[typingsJapgolly.kendoUi.kendo.drawing.Path] = js.undefined
+  
   var cursor: js.UndefOr[String] = js.undefined
+  
   var fill: js.UndefOr[typingsJapgolly.kendoUi.kendo.drawing.FillOptions] = js.undefined
+  
   var font: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   var stroke: js.UndefOr[typingsJapgolly.kendoUi.kendo.drawing.StrokeOptions] = js.undefined
+  
   var tooltip: js.UndefOr[typingsJapgolly.kendoUi.kendo.drawing.TooltipOptions] = js.undefined
+  
   var transform: js.UndefOr[Transformation] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object TextOptions {
-  @scala.inline
-  def apply(
-    clip: typingsJapgolly.kendoUi.kendo.drawing.Path = null,
-    cursor: String = null,
-    fill: typingsJapgolly.kendoUi.kendo.drawing.FillOptions = null,
-    font: String = null,
-    name: String = null,
-    opacity: Int | Double = null,
-    stroke: typingsJapgolly.kendoUi.kendo.drawing.StrokeOptions = null,
-    tooltip: typingsJapgolly.kendoUi.kendo.drawing.TooltipOptions = null,
-    transform: Transformation = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): TextOptions = {
+  
+  inline def apply(): TextOptions = {
     val __obj = js.Dynamic.literal()
-    if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextOptions]
   }
+  
+  extension [Self <: TextOptions](x: Self) {
+    
+    inline def setClip(value: typingsJapgolly.kendoUi.kendo.drawing.Path): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    
+    inline def setFill(value: typingsJapgolly.kendoUi.kendo.drawing.FillOptions): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setStroke(value: typingsJapgolly.kendoUi.kendo.drawing.StrokeOptions): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setTooltip(value: typingsJapgolly.kendoUi.kendo.drawing.TooltipOptions): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setTransform(value: Transformation): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

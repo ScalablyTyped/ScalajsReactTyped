@@ -1,41 +1,39 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AlertType extends js.Object
-
+sealed trait AlertType extends StObject
 @JSImport("azdata", "AlertType")
 @js.native
-object AlertType extends js.Object {
-  @js.native
-  sealed trait nonSqlServerEvent extends AlertType
-  
-  @js.native
-  sealed trait sqlServerEvent extends AlertType
-  
-  @js.native
-  sealed trait sqlServerPerformanceCondition extends AlertType
-  
-  @js.native
-  sealed trait wmiEvent extends AlertType
+object AlertType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AlertType with Double] = js.native
-  /* 3 */ @js.native
-  object nonSqlServerEvent extends TopLevel[nonSqlServerEvent with Double]
+  def apply(value: Double): js.UndefOr[AlertType & Double] = js.native
   
-  /* 1 */ @js.native
-  object sqlServerEvent extends TopLevel[sqlServerEvent with Double]
+  @js.native
+  sealed trait nonSqlServerEvent
+    extends StObject
+       with AlertType
+  /* 3 */ val nonSqlServerEvent: typingsJapgolly.azdata.mod.AlertType.nonSqlServerEvent & Double = js.native
   
-  /* 2 */ @js.native
-  object sqlServerPerformanceCondition extends TopLevel[sqlServerPerformanceCondition with Double]
+  @js.native
+  sealed trait sqlServerEvent
+    extends StObject
+       with AlertType
+  /* 1 */ val sqlServerEvent: typingsJapgolly.azdata.mod.AlertType.sqlServerEvent & Double = js.native
   
-  /* 4 */ @js.native
-  object wmiEvent extends TopLevel[wmiEvent with Double]
+  @js.native
+  sealed trait sqlServerPerformanceCondition
+    extends StObject
+       with AlertType
+  /* 2 */ val sqlServerPerformanceCondition: typingsJapgolly.azdata.mod.AlertType.sqlServerPerformanceCondition & Double = js.native
   
+  @js.native
+  sealed trait wmiEvent
+    extends StObject
+       with AlertType
+  /* 4 */ val wmiEvent: typingsJapgolly.azdata.mod.AlertType.wmiEvent & Double = js.native
 }
-

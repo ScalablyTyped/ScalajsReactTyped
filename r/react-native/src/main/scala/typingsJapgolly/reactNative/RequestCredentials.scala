@@ -1,24 +1,20 @@
 package typingsJapgolly.reactNative
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNative.reactNativeStrings.omit
   - typingsJapgolly.reactNative.reactNativeStrings.`same-origin`
   - typingsJapgolly.reactNative.reactNativeStrings.include
 */
-trait RequestCredentials extends js.Object
-
+trait RequestCredentials extends StObject
 object RequestCredentials {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def include: typingsJapgolly.reactNative.reactNativeStrings.include = this.cast("include")
-  @scala.inline
-  def omit: typingsJapgolly.reactNative.reactNativeStrings.omit = this.cast("omit")
-  @scala.inline
-  def `same-origin`: typingsJapgolly.reactNative.reactNativeStrings.`same-origin` = this.cast("same-origin")
+  
+  inline def include: typingsJapgolly.reactNative.reactNativeStrings.include = "include".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.include]
+  
+  inline def omit: typingsJapgolly.reactNative.reactNativeStrings.omit = "omit".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.omit]
+  
+  inline def `same-origin`: typingsJapgolly.reactNative.reactNativeStrings.`same-origin` = "same-origin".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.`same-origin`]
 }
-

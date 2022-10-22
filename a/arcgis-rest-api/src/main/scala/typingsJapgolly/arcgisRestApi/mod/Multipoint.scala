@@ -1,28 +1,27 @@
 package typingsJapgolly.arcgisRestApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Multipoint
-  extends HasZM
+  extends StObject
+     with HasZM
      with Geometry {
+  
   var points: js.Array[Position]
 }
-
 object Multipoint {
-  @scala.inline
-  def apply(
-    points: js.Array[Position],
-    hasM: js.UndefOr[Boolean] = js.undefined,
-    hasZ: js.UndefOr[Boolean] = js.undefined,
-    spatialReference: SpatialReference = null
-  ): Multipoint = {
+  
+  inline def apply(points: js.Array[Position]): Multipoint = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[Multipoint]
   }
+  
+  extension [Self <: Multipoint](x: Self) {
+    
+    inline def setPoints(value: js.Array[Position]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    
+    inline def setPointsVarargs(value: Position*): Self = StObject.set(x, "points", js.Array(value*))
+  }
 }
-

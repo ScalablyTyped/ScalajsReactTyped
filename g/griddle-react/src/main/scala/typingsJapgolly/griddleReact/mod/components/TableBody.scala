@@ -1,12 +1,17 @@
 package typingsJapgolly.griddleReact.mod.components
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("griddle-react", "components.TableBody")
 @js.native
-class TableBody ()
-  extends Component[TableBodyProps, js.Any, js.Any]
-
+open class TableBody protected () extends Component[TableBodyProps, Any, Any] {
+  def this(props: TableBodyProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: TableBodyProps, context: Any) = this()
+}

@@ -1,16 +1,20 @@
 package typingsJapgolly.jqueryAjaxfile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait KnockoutComputed[T]
-  extends KnockoutObservable[T]
+  extends StObject
+     with KnockoutObservable[T]
      with KnockoutComputedFunctions[T] {
-  var fn: KnockoutComputedFunctions[_] = js.native
+  
   def dispose(): Unit = js.native
+  
+  var fn: KnockoutComputedFunctions[Any] = js.native
+  
   def getDependenciesCount(): Double = js.native
+  
   def isActive(): Boolean = js.native
 }
-

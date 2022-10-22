@@ -1,12 +1,14 @@
 package typingsJapgolly.uniqueRandom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("unique-random", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(minimum: Double, maximum: Double): js.Function0[Double] = js.native
+object mod {
+  
+  @JSImport("unique-random", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(minimum: Double, maximum: Double): js.Function0[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Double]]
 }
-

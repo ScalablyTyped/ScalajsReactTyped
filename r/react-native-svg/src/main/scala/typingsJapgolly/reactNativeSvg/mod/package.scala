@@ -1,44 +1,77 @@
-package typingsJapgolly.reactNativeSvg
+package typingsJapgolly.reactNativeSvg.mod
 
+import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactNative.mod.ImageSourcePropType
+import typingsJapgolly.reactNativeSvg.libTypescriptLocalSvgMod.LocalProps
+import typingsJapgolly.reactNativeSvg.libTypescriptXmlMod.AstProps
+import typingsJapgolly.reactNativeSvg.libTypescriptXmlMod.JsxAST
+import typingsJapgolly.reactNativeSvg.libTypescriptXmlMod.Middleware
+import typingsJapgolly.reactNativeSvg.libTypescriptXmlMod.UriProps
+import typingsJapgolly.reactNativeSvg.libTypescriptXmlMod.XmlProps
+import typingsJapgolly.reactNativeSvg.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.sub
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.`super`
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.baseline
-    - js.Array[typingsJapgolly.reactNativeSvg.mod.NumberProp]
-    - typingsJapgolly.reactNativeSvg.mod.NumberProp
-  */
-  type BaselineShift = typingsJapgolly.reactNativeSvg.mod._BaselineShift | js.Array[typingsJapgolly.reactNativeSvg.mod.NumberProp] | typingsJapgolly.reactNativeSvg.mod.NumberProp
-  type Color = typingsJapgolly.reactNativeSvg.mod.int32ARGBColor | typingsJapgolly.reactNativeSvg.mod.rgbaArray | java.lang.String
-  type ColumnMajorTransformMatrix = js.Tuple6[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double]
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.reactNativeSvg.mod.NumberProp
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.normal
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.bold
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.bolder
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.lighter
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.`100`
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.`200`
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.`300`
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.`400`
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.`500`
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.`600`
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.`700`
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.`800`
-    - typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.`900`
-  */
-  type FontWeight = typingsJapgolly.reactNativeSvg.mod._FontWeight | typingsJapgolly.reactNativeSvg.mod.NumberProp
-  type Middleware = js.Function1[
-    /* ast */ typingsJapgolly.reactNativeSvg.mod.XmlAST, 
-    typingsJapgolly.reactNativeSvg.mod.XmlAST
-  ]
-  type NumberArray = js.Array[typingsJapgolly.reactNativeSvg.mod.NumberProp] | typingsJapgolly.reactNativeSvg.mod.NumberProp
-  type NumberProp = java.lang.String | scala.Double
-  type Styles = org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  type int32ARGBColor = scala.Double
-  type rgbaArray = js.Array[scala.Double]
-}
+
+inline def LocalSvg(props: LocalProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LocalSvg")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+
+inline def RNSVGCircle: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGCircle").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGClipPath: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGClipPath").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGDefs: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGDefs").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGEllipse: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGEllipse").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGForeignObject: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGForeignObject").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGGroup: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGGroup").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGImage: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGImage").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGLine: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGLine").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGLinearGradient: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGLinearGradient").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGMarker: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGMarker").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGMask: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGMask").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGPath: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGPath").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGPattern: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGPattern").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGRadialGradient: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGRadialGradient").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGRect: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGRect").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGSvg: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGSvg").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGSymbol: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGSymbol").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGTSpan: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGTSpan").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGText: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGText").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGTextPath: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGTextPath").asInstanceOf[ComponentType[Any]]
+
+inline def RNSVGUse: ComponentType[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("RNSVGUse").asInstanceOf[ComponentType[Any]]
+
+inline def SvgAst(hasAstOverride: AstProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SvgAst")(hasAstOverride.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+
+inline def SvgCss(props: XmlProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SvgCss")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+
+inline def SvgCssUri(props: UriProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SvgCssUri")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+
+inline def SvgUri(props: UriProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SvgUri")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+
+inline def SvgXml(props: XmlProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SvgXml")(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+
+inline def inlineStyles: Middleware = ^.asInstanceOf[js.Dynamic].selectDynamic("inlineStyles").asInstanceOf[Middleware]
+
+inline def loadLocalRawResource: js.Function1[/* source */ ImageSourcePropType, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("loadLocalRawResource").asInstanceOf[js.Function1[/* source */ ImageSourcePropType, js.Promise[Any]]]
+
+inline def parse(source: String): JsxAST | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[JsxAST | Null]
+inline def parse(source: String, middleware: Middleware): JsxAST | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[JsxAST | Null]

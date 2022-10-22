@@ -1,13 +1,13 @@
 package typingsJapgolly.reactInstantsearchCore.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.reactInstantsearchCore.AnonHighlightProperty
-import typingsJapgolly.reactInstantsearchCore.AnonIsHighlighted
+import typingsJapgolly.reactInstantsearchCore.anon.HighlightProperty
+import typingsJapgolly.reactInstantsearchCore.anon.IsHighlighted
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HighlightProvided[TDoc] extends js.Object {
+trait HighlightProvided[TDoc] extends StObject {
+  
   /**
     * function to retrieve and parse an attribute from a hit. It takes a configuration object with 3 attributes:
     * * highlightProperty which is the property that contains the highlight structure from the records,
@@ -24,15 +24,17 @@ trait HighlightProvided[TDoc] extends js.Object {
     * }) as Array<Array<{value: string, isHighlighted: boolean}>>
     * ```
     */
-  def highlight(configuration: AnonHighlightProperty[TDoc]): js.Array[AnonIsHighlighted]
+  def highlight(configuration: HighlightProperty[TDoc]): js.Array[IsHighlighted]
 }
-
 object HighlightProvided {
-  @scala.inline
-  def apply[TDoc](highlight: AnonHighlightProperty[TDoc] => CallbackTo[js.Array[AnonIsHighlighted]]): HighlightProvided[TDoc] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("highlight")(js.Any.fromFunction1((t0: typingsJapgolly.reactInstantsearchCore.AnonHighlightProperty[TDoc]) => highlight(t0).runNow()))
+  
+  inline def apply[TDoc](highlight: HighlightProperty[TDoc] => js.Array[IsHighlighted]): HighlightProvided[TDoc] = {
+    val __obj = js.Dynamic.literal(highlight = js.Any.fromFunction1(highlight))
     __obj.asInstanceOf[HighlightProvided[TDoc]]
   }
+  
+  extension [Self <: HighlightProvided[?], TDoc](x: Self & HighlightProvided[TDoc]) {
+    
+    inline def setHighlight(value: HighlightProperty[TDoc] => js.Array[IsHighlighted]): Self = StObject.set(x, "highlight", js.Any.fromFunction1(value))
+  }
 }
-

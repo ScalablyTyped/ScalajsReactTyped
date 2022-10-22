@@ -1,16 +1,16 @@
 package typingsJapgolly.apolloProtobufjs.lightMod
 
 import typingsJapgolly.apolloProtobufjs.mod.RPCImpl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@apollo/protobufjs/light", "rpc")
-@js.native
-object rpc extends js.Object {
+object rpc {
+  
   /** An RPC service as returned by {@link Service#create}. */
+  @JSImport("@apollo/protobufjs/light", "rpc.Service")
   @js.native
-  class Service protected ()
+  open class Service protected ()
     extends typingsJapgolly.apolloProtobufjs.mod.rpc.Service {
     /**
       * Constructs a new RPC service instance.
@@ -21,7 +21,6 @@ object rpc extends js.Object {
     def this(rpcImpl: RPCImpl) = this()
     def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
     def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+    def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
   }
-  
 }
-

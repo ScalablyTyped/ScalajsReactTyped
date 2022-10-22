@@ -1,49 +1,54 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridColumnMovingColumnSetting
-  extends /**
-	 * Option for IgGridColumnMovingColumnSetting
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Allows the column to be moved.
-  	 *
-  	 */
+    * Allows the column to be moved.
+    *
+    */
   var allowMoving: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Column index. Can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers.
-  	 *
-  	 */
+    * Column index. Can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers.
+    *
+    */
   var columnIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Column key. This is a required property in every column setting if columnIndex is not set.
-  	 *
-  	 */
+    * Column key. This is a required property in every column setting if columnIndex is not set.
+    *
+    */
   var columnKey: js.UndefOr[String] = js.undefined
 }
-
 object IgGridColumnMovingColumnSetting {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgGridColumnMovingColumnSetting
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    allowMoving: js.UndefOr[Boolean] = js.undefined,
-    columnIndex: Int | Double = null,
-    columnKey: String = null
-  ): IgGridColumnMovingColumnSetting = {
+  
+  inline def apply(): IgGridColumnMovingColumnSetting = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowMoving)) __obj.updateDynamic("allowMoving")(allowMoving.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridColumnMovingColumnSetting]
   }
+  
+  extension [Self <: IgGridColumnMovingColumnSetting](x: Self) {
+    
+    inline def setAllowMoving(value: Boolean): Self = StObject.set(x, "allowMoving", value.asInstanceOf[js.Any])
+    
+    inline def setAllowMovingUndefined: Self = StObject.set(x, "allowMoving", js.undefined)
+    
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+  }
 }
-

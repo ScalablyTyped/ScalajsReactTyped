@@ -1,23 +1,36 @@
 package typingsJapgolly.swaggerExpressMiddleware.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContactObject extends js.Object {
+trait ContactObject extends StObject {
+  
   var email: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object ContactObject {
-  @scala.inline
-  def apply(email: String = null, name: String = null, url: String = null): ContactObject = {
+  
+  inline def apply(): ContactObject = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactObject]
   }
+  
+  extension [Self <: ContactObject](x: Self) {
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

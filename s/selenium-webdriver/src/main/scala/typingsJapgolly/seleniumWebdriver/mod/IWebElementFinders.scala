@@ -1,11 +1,11 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IWebElementFinders extends js.Object {
+trait IWebElementFinders extends StObject {
+  
   /**
     * Schedule a command to find a descendant of this element. If the element
     * cannot be found, a {@code bot.ErrorCode.NO_SUCH_ELEMENT} result will
@@ -47,6 +47,7 @@ trait IWebElementFinders extends js.Object {
     *     element will be invalidated and all scheduled commands aborted.
     */
   def findElement(locator: Locator): WebElementPromise
+  
   /**
     * Schedules a command to find all of the descendants of this element that
     * match the given search criteria.
@@ -58,17 +59,20 @@ trait IWebElementFinders extends js.Object {
     */
   def findElements(locator: Locator): js.Promise[js.Array[WebElement]]
 }
-
 object IWebElementFinders {
-  @scala.inline
-  def apply(
-    findElement: Locator => CallbackTo[WebElementPromise],
-    findElements: Locator => CallbackTo[js.Promise[js.Array[WebElement]]]
+  
+  inline def apply(
+    findElement: Locator => WebElementPromise,
+    findElements: Locator => js.Promise[js.Array[WebElement]]
   ): IWebElementFinders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("findElement")(js.Any.fromFunction1((t0: typingsJapgolly.seleniumWebdriver.mod.Locator) => findElement(t0).runNow()))
-    __obj.updateDynamic("findElements")(js.Any.fromFunction1((t0: typingsJapgolly.seleniumWebdriver.mod.Locator) => findElements(t0).runNow()))
+    val __obj = js.Dynamic.literal(findElement = js.Any.fromFunction1(findElement), findElements = js.Any.fromFunction1(findElements))
     __obj.asInstanceOf[IWebElementFinders]
   }
+  
+  extension [Self <: IWebElementFinders](x: Self) {
+    
+    inline def setFindElement(value: Locator => WebElementPromise): Self = StObject.set(x, "findElement", js.Any.fromFunction1(value))
+    
+    inline def setFindElements(value: Locator => js.Promise[js.Array[WebElement]]): Self = StObject.set(x, "findElements", js.Any.fromFunction1(value))
+  }
 }
-

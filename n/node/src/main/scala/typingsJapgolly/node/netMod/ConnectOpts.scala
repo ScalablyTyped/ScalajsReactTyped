@@ -1,10 +1,11 @@
 package typingsJapgolly.node.netMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConnectOpts extends js.Object {
+trait ConnectOpts extends StObject {
+  
   /**
     * If specified, incoming data is stored in a single buffer and passed to the supplied callback when data arrives on the socket.
     * Note: this will cause the streaming functionality to not provide any data, however events like 'error', 'end', and 'close' will
@@ -12,13 +13,17 @@ trait ConnectOpts extends js.Object {
     */
   var onread: js.UndefOr[OnReadOpts] = js.undefined
 }
-
 object ConnectOpts {
-  @scala.inline
-  def apply(onread: OnReadOpts = null): ConnectOpts = {
+  
+  inline def apply(): ConnectOpts = {
     val __obj = js.Dynamic.literal()
-    if (onread != null) __obj.updateDynamic("onread")(onread.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOpts]
   }
+  
+  extension [Self <: ConnectOpts](x: Self) {
+    
+    inline def setOnread(value: OnReadOpts): Self = StObject.set(x, "onread", value.asInstanceOf[js.Any])
+    
+    inline def setOnreadUndefined: Self = StObject.set(x, "onread", js.undefined)
+  }
 }
-

@@ -1,26 +1,39 @@
-package typingsJapgolly.tryghostContentApi
+package typingsJapgolly.tryghostContentApi.mod
 
+import typingsJapgolly.tryghostContentApi.anon.Id
+import typingsJapgolly.tryghostContentApi.anon.Slug
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ArrayOrValue[T] = T | js.Array[T]
-  type BrowseFunction[T] = js.Function2[
-    /* options */ js.UndefOr[typingsJapgolly.tryghostContentApi.mod.Params], 
-    /* memberToken */ js.UndefOr[typingsJapgolly.tryghostContentApi.mod.Nullable[java.lang.String]], 
-    js.Promise[T]
-  ]
-  type FieldParam = java.lang.String
-  type FilterParam = java.lang.String
-  type LimitParam = scala.Double | java.lang.String
-  type Nullable[T] = T | scala.Null
-  type OrderParam = java.lang.String
-  type PageParam = scala.Double
-  type ReadFunction[T] = js.Function3[
-    /* data */ typingsJapgolly.tryghostContentApi.mod.GhostData, 
-    /* options */ js.UndefOr[typingsJapgolly.tryghostContentApi.mod.Params], 
-    /* memberToken */ js.UndefOr[typingsJapgolly.tryghostContentApi.mod.Nullable[java.lang.String]], 
-    js.Promise[T]
-  ]
-}
+
+type ArrayOrValue[T] = T | js.Array[T]
+
+type Authors = BrowseResults[Author]
+
+type BrowseFunction[T] = js.Function2[
+/* options */ js.UndefOr[Params], 
+/* memberToken */ js.UndefOr[Nullable[String]], 
+js.Promise[T]]
+
+type FieldParam = String
+
+type FilterParam = String
+
+type LimitParam = Double | String
+
+type Nullable[T] = T | Null
+
+type OrderParam = String
+
+type PageParam = Double
+
+type PostsOrPages = BrowseResults[PostOrPage]
+
+type ReadFunction[T] = js.Function3[
+/* data */ Id | Slug, 
+/* options */ js.UndefOr[Params], 
+/* memberToken */ js.UndefOr[Nullable[String]], 
+js.Promise[T]]
+
+type Tags = BrowseResults[Tag]

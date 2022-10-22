@@ -1,34 +1,49 @@
 package typingsJapgolly.azureSb.mod.Azure.ServiceBus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<azure-sb.azure-sb.Azure.ServiceBus.ICreateSubscriptionOptions> */
-trait CreateSubscriptionOptions extends js.Object {
+trait CreateSubscriptionOptions extends StObject {
+  
   var DefaultMessageTimeToLive: js.UndefOr[String] = js.undefined
+  
   var EnableDeadLetteringOnFilterEvaluationExceptions: js.UndefOr[Boolean] = js.undefined
+  
   var EnableDeadLetteringOnMessageExpiration: js.UndefOr[Boolean] = js.undefined
+  
   var LockDuration: js.UndefOr[String] = js.undefined
+  
   var RequiresSession: js.UndefOr[Boolean] = js.undefined
 }
-
 object CreateSubscriptionOptions {
-  @scala.inline
-  def apply(
-    DefaultMessageTimeToLive: String = null,
-    EnableDeadLetteringOnFilterEvaluationExceptions: js.UndefOr[Boolean] = js.undefined,
-    EnableDeadLetteringOnMessageExpiration: js.UndefOr[Boolean] = js.undefined,
-    LockDuration: String = null,
-    RequiresSession: js.UndefOr[Boolean] = js.undefined
-  ): CreateSubscriptionOptions = {
+  
+  inline def apply(): CreateSubscriptionOptions = {
     val __obj = js.Dynamic.literal()
-    if (DefaultMessageTimeToLive != null) __obj.updateDynamic("DefaultMessageTimeToLive")(DefaultMessageTimeToLive.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableDeadLetteringOnFilterEvaluationExceptions)) __obj.updateDynamic("EnableDeadLetteringOnFilterEvaluationExceptions")(EnableDeadLetteringOnFilterEvaluationExceptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableDeadLetteringOnMessageExpiration)) __obj.updateDynamic("EnableDeadLetteringOnMessageExpiration")(EnableDeadLetteringOnMessageExpiration.asInstanceOf[js.Any])
-    if (LockDuration != null) __obj.updateDynamic("LockDuration")(LockDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequiresSession)) __obj.updateDynamic("RequiresSession")(RequiresSession.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSubscriptionOptions]
   }
+  
+  extension [Self <: CreateSubscriptionOptions](x: Self) {
+    
+    inline def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultMessageTimeToLiveUndefined: Self = StObject.set(x, "DefaultMessageTimeToLive", js.undefined)
+    
+    inline def setEnableDeadLetteringOnFilterEvaluationExceptions(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
+    
+    inline def setEnableDeadLetteringOnFilterEvaluationExceptionsUndefined: Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", js.undefined)
+    
+    inline def setEnableDeadLetteringOnMessageExpiration(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
+    
+    inline def setEnableDeadLetteringOnMessageExpirationUndefined: Self = StObject.set(x, "EnableDeadLetteringOnMessageExpiration", js.undefined)
+    
+    inline def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
+    
+    inline def setLockDurationUndefined: Self = StObject.set(x, "LockDuration", js.undefined)
+    
+    inline def setRequiresSession(value: Boolean): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
+    
+    inline def setRequiresSessionUndefined: Self = StObject.set(x, "RequiresSession", js.undefined)
+  }
 }
-

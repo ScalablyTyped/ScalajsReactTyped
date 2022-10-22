@@ -1,14 +1,14 @@
 package typingsJapgolly.evernote.mod.NoteStore
 
-import typingsJapgolly.evernote.AnonErrorsArray
+import typingsJapgolly.evernote.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.ManageNotebookSharesResult")
 @js.native
-class ManageNotebookSharesResult () extends js.Object {
-  def this(args: AnonErrorsArray) = this()
+open class ManageNotebookSharesResult () extends StObject {
+  def this(args: `0`) = this()
+  
   var errors: js.UndefOr[js.Array[ManageNotebookSharesError]] = js.native
 }
-

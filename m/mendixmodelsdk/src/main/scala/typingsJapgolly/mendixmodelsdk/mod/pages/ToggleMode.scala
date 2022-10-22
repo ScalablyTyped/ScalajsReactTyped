@@ -1,22 +1,49 @@
 package typingsJapgolly.mendixmodelsdk.mod.pages
 
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "pages.ToggleMode")
 @js.native
-class ToggleMode ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.pages.ToggleMode
-
-/* static members */
-@JSImport("mendixmodelsdk", "pages.ToggleMode")
-@js.native
-object ToggleMode extends js.Object {
-  var None: typingsJapgolly.mendixmodelsdk.pagesMod.pages.ToggleMode = js.native
-  var PushContentAside: typingsJapgolly.mendixmodelsdk.pagesMod.pages.ToggleMode = js.native
-  var ShrinkContentInitiallyClosed: typingsJapgolly.mendixmodelsdk.pagesMod.pages.ToggleMode = js.native
-  var ShrinkContentInitiallyOpen: typingsJapgolly.mendixmodelsdk.pagesMod.pages.ToggleMode = js.native
-  var SlideOverContent: typingsJapgolly.mendixmodelsdk.pagesMod.pages.ToggleMode = js.native
+open class ToggleMode protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.pages.ToggleMode {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
-
+object ToggleMode {
+  
+  @JSImport("mendixmodelsdk", "pages.ToggleMode")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.ToggleMode.None")
+  @js.native
+  def None: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode = js.native
+  inline def None_=(x: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.ToggleMode.PushContentAside")
+  @js.native
+  def PushContentAside: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode = js.native
+  inline def PushContentAside_=(x: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PushContentAside")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.ToggleMode.ShrinkContentInitiallyClosed")
+  @js.native
+  def ShrinkContentInitiallyClosed: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode = js.native
+  inline def ShrinkContentInitiallyClosed_=(x: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShrinkContentInitiallyClosed")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.ToggleMode.ShrinkContentInitiallyOpen")
+  @js.native
+  def ShrinkContentInitiallyOpen: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode = js.native
+  inline def ShrinkContentInitiallyOpen_=(x: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShrinkContentInitiallyOpen")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.ToggleMode.SlideOverContent")
+  @js.native
+  def SlideOverContent: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode = js.native
+  inline def SlideOverContent_=(x: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SlideOverContent")(x.asInstanceOf[js.Any])
+}

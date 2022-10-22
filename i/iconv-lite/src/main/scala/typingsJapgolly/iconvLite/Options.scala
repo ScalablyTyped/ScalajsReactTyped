@@ -1,27 +1,36 @@
 package typingsJapgolly.iconvLite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Options extends js.Object {
+trait Options extends StObject {
+  
   var addBOM: js.UndefOr[Boolean] = js.undefined
+  
   var defaultEncoding: js.UndefOr[String] = js.undefined
+  
   var stripBOM: js.UndefOr[Boolean] = js.undefined
 }
-
 object Options {
-  @scala.inline
-  def apply(
-    addBOM: js.UndefOr[Boolean] = js.undefined,
-    defaultEncoding: String = null,
-    stripBOM: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addBOM)) __obj.updateDynamic("addBOM")(addBOM.asInstanceOf[js.Any])
-    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripBOM)) __obj.updateDynamic("stripBOM")(stripBOM.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  
+  extension [Self <: Options](x: Self) {
+    
+    inline def setAddBOM(value: Boolean): Self = StObject.set(x, "addBOM", value.asInstanceOf[js.Any])
+    
+    inline def setAddBOMUndefined: Self = StObject.set(x, "addBOM", js.undefined)
+    
+    inline def setDefaultEncoding(value: String): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
+    
+    inline def setStripBOM(value: Boolean): Self = StObject.set(x, "stripBOM", value.asInstanceOf[js.Any])
+    
+    inline def setStripBOMUndefined: Self = StObject.set(x, "stripBOM", js.undefined)
+  }
 }
-

@@ -1,16 +1,15 @@
 organization := "org.scalablytyped.japgolly"
 name := "aframe"
-version := "0.8-dt-20200225Z-8110a3"
-scalaVersion := "2.13.1"
+version := "1.2-dt-20220503Z-2a515a"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "three" % "0.109.0-aeed2b",
-  "org.scalablytyped.japgolly" %%% "tween_dot_js" % "18.5-dt-20200227Z-45320a")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "animejs" % "3.1-dt-20220712Z-15bbf4",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "three" % "0.144-dt-20220902Z-0d26e6",
+  "org.scalablytyped.japgolly" %%% "webxr" % "0.5-dt-20220721Z-685295")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

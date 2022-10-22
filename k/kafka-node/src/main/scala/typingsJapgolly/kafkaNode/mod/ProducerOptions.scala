@@ -1,27 +1,36 @@
 package typingsJapgolly.kafkaNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProducerOptions extends js.Object {
+trait ProducerOptions extends StObject {
+  
   var ackTimeoutMs: js.UndefOr[Double] = js.undefined
+  
   var partitionerType: js.UndefOr[Double] = js.undefined
+  
   var requireAcks: js.UndefOr[Double] = js.undefined
 }
-
 object ProducerOptions {
-  @scala.inline
-  def apply(
-    ackTimeoutMs: Int | Double = null,
-    partitionerType: Int | Double = null,
-    requireAcks: Int | Double = null
-  ): ProducerOptions = {
+  
+  inline def apply(): ProducerOptions = {
     val __obj = js.Dynamic.literal()
-    if (ackTimeoutMs != null) __obj.updateDynamic("ackTimeoutMs")(ackTimeoutMs.asInstanceOf[js.Any])
-    if (partitionerType != null) __obj.updateDynamic("partitionerType")(partitionerType.asInstanceOf[js.Any])
-    if (requireAcks != null) __obj.updateDynamic("requireAcks")(requireAcks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProducerOptions]
   }
+  
+  extension [Self <: ProducerOptions](x: Self) {
+    
+    inline def setAckTimeoutMs(value: Double): Self = StObject.set(x, "ackTimeoutMs", value.asInstanceOf[js.Any])
+    
+    inline def setAckTimeoutMsUndefined: Self = StObject.set(x, "ackTimeoutMs", js.undefined)
+    
+    inline def setPartitionerType(value: Double): Self = StObject.set(x, "partitionerType", value.asInstanceOf[js.Any])
+    
+    inline def setPartitionerTypeUndefined: Self = StObject.set(x, "partitionerType", js.undefined)
+    
+    inline def setRequireAcks(value: Double): Self = StObject.set(x, "requireAcks", value.asInstanceOf[js.Any])
+    
+    inline def setRequireAcksUndefined: Self = StObject.set(x, "requireAcks", js.undefined)
+  }
 }
-

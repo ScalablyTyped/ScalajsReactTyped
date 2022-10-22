@@ -1,17 +1,14 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "CommaExpr")
 @js.native
-class CommaExpr protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.CommaExpr {
-  def this(parts: js.Array[typingsJapgolly.angularCompiler.outputAstMod.Expression]) = this()
-  def this(
-    parts: js.Array[typingsJapgolly.angularCompiler.outputAstMod.Expression],
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+open class CommaExpr protected () extends Expression {
+  def this(parts: js.Array[Expression]) = this()
+  def this(parts: js.Array[Expression], sourceSpan: ParseSourceSpan) = this()
+  
+  var parts: js.Array[Expression] = js.native
 }
-

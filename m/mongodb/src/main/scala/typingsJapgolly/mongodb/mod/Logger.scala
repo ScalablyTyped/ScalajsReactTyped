@@ -1,69 +1,103 @@
 package typingsJapgolly.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "Logger")
 @js.native
-class Logger protected () extends js.Object {
+open class Logger protected () extends StObject {
+  /**
+    * Creates a new Logger instance
+    *
+    * @param className - The Class name associated with the logging instance
+    * @param options - Optional logging settings
+    */
   def this(className: String) = this()
   def this(className: String, options: LoggerOptions) = this()
+  
+  var className: String = js.native
+  
   /**
     * Log a message at the debug level
+    *
+    * @param message - The message to log
+    * @param object - Additional meta data to log
     */
-  def debug(message: String, state: LoggerState): Unit = js.native
+  def debug(message: String): Unit = js.native
+  def debug(message: String, `object`: Any): Unit = js.native
+  
   /**
     * Log a message at the error level
+    *
+    * @param message - The message to log
+    * @param object - Additional meta data to log
     */
-  def error(message: String, state: LoggerState): Unit = js.native
+  def error(message: String): Unit = js.native
+  def error(message: String, `object`: Any): Unit = js.native
+  
   /**
     * Log a message at the info level
+    *
+    * @param message - The message to log
+    * @param object - Additional meta data to log
     */
-  def info(message: String, state: LoggerState): Unit = js.native
-  /**
-    * Is the logger set at debug level
-    */
+  def info(message: String): Unit = js.native
+  def info(message: String, `object`: Any): Unit = js.native
+  
+  /** Is the logger set at debug level */
   def isDebug(): Boolean = js.native
-  /**
-    * Is the logger set at error level
-    */
+  
+  /** Is the logger set at error level */
   def isError(): Boolean = js.native
-  /**
-    * Is the logger set at info level
-    */
+  
+  /** Is the logger set at info level */
   def isInfo(): Boolean = js.native
-  /**
-    * Is the logger set at error level
-    */
+  
+  /** Is the logger set at error level */
   def isWarn(): Boolean = js.native
+  
   /**
     * Log a message at the warn level
+    *
+    * @param message - The message to log
+    * @param object - Additional meta data to log
     */
-  def warn(message: String, state: LoggerState): Unit = js.native
+  def warn(message: String): Unit = js.native
+  def warn(message: String, `object`: Any): Unit = js.native
 }
-
 /* static members */
-@JSImport("mongodb", "Logger")
-@js.native
-object Logger extends js.Object {
+object Logger {
+  
+  @JSImport("mongodb", "Logger")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /** Get the current logger function */
+  inline def currentLogger(): LoggerFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("currentLogger")().asInstanceOf[LoggerFunction]
+  
   /**
-    * Get the current logger function
+    * Filter log messages for a particular class
+    *
+    * @param type - The type of filter (currently only class)
+    * @param values - The filters to apply
     */
-  def currentLogger(): log = js.native
+  inline def filter(`type`: String, values: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(`type`.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /** Resets the logger to default settings, error and no filtered classes */
+  inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  
   /**
-    * Set what classes to log.
+    * Set the current logger function
+    *
+    * @param logger - Custom logging function
     */
-  def filter(`type`: String, values: js.Array[String]): Unit = js.native
-  /**
-    * Resets the logger to default settings, error and no filtered classes
-    */
-  def reset(): Unit = js.native
-  //Set the current logger function
-  def setCurrentLogger(log: log): Unit = js.native
+  inline def setCurrentLogger(logger: LoggerFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCurrentLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /**
     * Set the current log level
+    *
+    * @param newLevel - Set current log level (debug, warn, info, error)
     */
-  def setLevel(level: String): Unit = js.native
+  inline def setLevel(newLevel: LoggerLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(newLevel.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

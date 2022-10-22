@@ -1,8 +1,7 @@
 package typingsJapgolly.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IArray extends js.Object
-
+trait IArray extends StObject

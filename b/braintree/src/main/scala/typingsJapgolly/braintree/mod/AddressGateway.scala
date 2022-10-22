@@ -1,31 +1,39 @@
 package typingsJapgolly.braintree.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AddressGateway extends js.Object {
+trait AddressGateway extends StObject {
+  
   def create(request: AddressCreateRequest): js.Promise[ValidatedResponse[Address]]
+  
   def delete(customerId: String, addressId: String): js.Promise[Unit]
+  
   def find(customerId: String, addressId: String): js.Promise[Address]
+  
   def update(customerId: String, addressId: String, updates: AddressUpdateRequest): js.Promise[ValidatedResponse[Address]]
 }
-
 object AddressGateway {
-  @scala.inline
-  def apply(
-    create: AddressCreateRequest => CallbackTo[js.Promise[ValidatedResponse[Address]]],
-    delete: (String, String) => CallbackTo[js.Promise[Unit]],
-    find: (String, String) => CallbackTo[js.Promise[Address]],
-    update: (String, String, AddressUpdateRequest) => CallbackTo[js.Promise[ValidatedResponse[Address]]]
+  
+  inline def apply(
+    create: AddressCreateRequest => js.Promise[ValidatedResponse[Address]],
+    delete: (String, String) => js.Promise[Unit],
+    find: (String, String) => js.Promise[Address],
+    update: (String, String, AddressUpdateRequest) => js.Promise[ValidatedResponse[Address]]
   ): AddressGateway = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(js.Any.fromFunction1((t0: typingsJapgolly.braintree.mod.AddressCreateRequest) => create(t0).runNow()))
-    __obj.updateDynamic("delete")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => delete(t0, t1).runNow()))
-    __obj.updateDynamic("find")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => find(t0, t1).runNow()))
-    __obj.updateDynamic("update")(js.Any.fromFunction3((t0: java.lang.String, t1: java.lang.String, t2: typingsJapgolly.braintree.mod.AddressUpdateRequest) => update(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction2(delete), find = js.Any.fromFunction2(find), update = js.Any.fromFunction3(update))
     __obj.asInstanceOf[AddressGateway]
   }
+  
+  extension [Self <: AddressGateway](x: Self) {
+    
+    inline def setCreate(value: AddressCreateRequest => js.Promise[ValidatedResponse[Address]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    
+    inline def setDelete(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
+    
+    inline def setFind(value: (String, String) => js.Promise[Address]): Self = StObject.set(x, "find", js.Any.fromFunction2(value))
+    
+    inline def setUpdate(value: (String, String, AddressUpdateRequest) => js.Promise[ValidatedResponse[Address]]): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+  }
 }
-

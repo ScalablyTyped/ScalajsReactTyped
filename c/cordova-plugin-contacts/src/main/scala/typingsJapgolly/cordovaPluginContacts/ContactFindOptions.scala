@@ -1,34 +1,42 @@
 package typingsJapgolly.cordovaPluginContacts
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Search options to filter navigator.contacts.  */
-trait ContactFindOptions extends js.Object {
+trait ContactFindOptions extends StObject {
+  
   /* Contact fields to be returned back. If specified, the resulting Contact object only features values for these fields. */
   var desiredFields: js.UndefOr[js.Array[ContactFieldType]] = js.undefined
+  
   /** The search string used to find navigator.contacts. */
   var filter: js.UndefOr[String] = js.undefined
+  
   /** Determines if the find operation returns multiple navigator.contacts. */
   var multiple: js.UndefOr[Boolean] = js.undefined
 }
-
-@JSGlobal("ContactFindOptions")
-@js.native
-object ContactFindOptions
-  extends /** Constructor for ContactFindOptions object */
-Instantiable0[ContactFindOptions]
-     with Instantiable1[/* filter */ String, ContactFindOptions]
-     with Instantiable2[/* filter */ String, /* multiple */ Boolean, ContactFindOptions]
-     with Instantiable3[
-      /* filter */ String, 
-      /* multiple */ Boolean, 
-      /* desiredFields */ js.Array[ContactFieldType], 
-      ContactFindOptions
-    ]
-
+object ContactFindOptions {
+  
+  inline def apply(): ContactFindOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ContactFindOptions]
+  }
+  
+  extension [Self <: ContactFindOptions](x: Self) {
+    
+    inline def setDesiredFields(value: js.Array[ContactFieldType]): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
+    
+    inline def setDesiredFieldsUndefined: Self = StObject.set(x, "desiredFields", js.undefined)
+    
+    inline def setDesiredFieldsVarargs(value: ContactFieldType*): Self = StObject.set(x, "desiredFields", js.Array(value*))
+    
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+  }
+}

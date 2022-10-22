@@ -1,60 +1,81 @@
 package typingsJapgolly.smartFoxServer.SFS2X.Requests
 
 import typingsJapgolly.smartFoxServer.SFS2X.Entities.Data.Vec3D
-import typingsJapgolly.smartFoxServer.SFS2X.Entities.MMORoom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region MMO
 // http://docs2x.smartfoxserver.com/api-docs/jsdoc/symbols/SFS2X.Requests.MMO.html
-@JSGlobal("SFS2X.Requests.MMO")
-@js.native
-object MMO extends js.Object {
-  @js.native
-  class MMORoomSettings protected () extends js.Object {
-    /**
-      * Creates a new MMORoomSettings instance.
-      * @param {string} name The name of the MMORoom to be created.
-      */
-    def this(name: String) = this()
+object MMO {
+  
+  trait MMORoomSettings extends StObject {
+    
     /** @type {Entities.Data.Vec3D} Defines the Area of Interest (AoI) for the MMORoom. */
-    var defaultAOI: Vec3D = js.native
+    var defaultAOI: Vec3D
+    
     /** @type {MapLimits} Defines the limits of the virtual environment represented by the MMORoom. */
-    var mapLimits: MapLimits = js.native
+    var mapLimits: MapLimits
+    
     /** @type {number} Configures the speed at which the SFSEvent.PROXIMITY_LIST_UPDATE event is sent by the server. */
-    var proximityListUpdateMillis: Double = js.native
+    var proximityListUpdateMillis: Double
+    
     /** @type {boolean} Sets if the users entry points in the current user's Area of Interest should be transmitted in the SFSEvent.PROXIMITY_LIST_UPDATE event. */
-    var sendAOIEntryPoint: Boolean = js.native
+    var sendAOIEntryPoint: Boolean
+    
     /** @type {number} Defines the time limit before a user without a physical position set inside the MMORoom is kicked from the Room. */
-    var userMaxLimboSeconds: Double = js.native
+    var userMaxLimboSeconds: Double
+  }
+  object MMORoomSettings {
+    
+    inline def apply(
+      defaultAOI: Vec3D,
+      mapLimits: MapLimits,
+      proximityListUpdateMillis: Double,
+      sendAOIEntryPoint: Boolean,
+      userMaxLimboSeconds: Double
+    ): MMORoomSettings = {
+      val __obj = js.Dynamic.literal(defaultAOI = defaultAOI.asInstanceOf[js.Any], mapLimits = mapLimits.asInstanceOf[js.Any], proximityListUpdateMillis = proximityListUpdateMillis.asInstanceOf[js.Any], sendAOIEntryPoint = sendAOIEntryPoint.asInstanceOf[js.Any], userMaxLimboSeconds = userMaxLimboSeconds.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MMORoomSettings]
+    }
+    
+    extension [Self <: MMORoomSettings](x: Self) {
+      
+      inline def setDefaultAOI(value: Vec3D): Self = StObject.set(x, "defaultAOI", value.asInstanceOf[js.Any])
+      
+      inline def setMapLimits(value: MapLimits): Self = StObject.set(x, "mapLimits", value.asInstanceOf[js.Any])
+      
+      inline def setProximityListUpdateMillis(value: Double): Self = StObject.set(x, "proximityListUpdateMillis", value.asInstanceOf[js.Any])
+      
+      inline def setSendAOIEntryPoint(value: Boolean): Self = StObject.set(x, "sendAOIEntryPoint", value.asInstanceOf[js.Any])
+      
+      inline def setUserMaxLimboSeconds(value: Double): Self = StObject.set(x, "userMaxLimboSeconds", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  class MapLimits protected () extends js.Object {
-    /**
-      * Creates a new MapLimits instance.
-      * @param {Entities.Data.Vec3D} lowerLimit
-      * @param {Entities.Data.Vec3D} higherLimit
-      */
-    def this(lowerLimit: Vec3D, higherLimit: Vec3D) = this()
+  trait MapLimits extends StObject {
+    
     /** @type {Entities.Data.Vec3D} Returns the higher coordinates limit of the virtual environment along the X,Y,Z axes. */
-    var higherLimit: Vec3D = js.native
+    var higherLimit: Vec3D
+    
     /** @type {Entities.Data.Vec3D} Returns the lower coordinates limit of the virtual environment along the X,Y,Z axes. */
-    var lowerLimit: Vec3D = js.native
+    var lowerLimit: Vec3D
+  }
+  object MapLimits {
+    
+    inline def apply(higherLimit: Vec3D, lowerLimit: Vec3D): MapLimits = {
+      val __obj = js.Dynamic.literal(higherLimit = higherLimit.asInstanceOf[js.Any], lowerLimit = lowerLimit.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MapLimits]
+    }
+    
+    extension [Self <: MapLimits](x: Self) {
+      
+      inline def setHigherLimit(value: Vec3D): Self = StObject.set(x, "higherLimit", value.asInstanceOf[js.Any])
+      
+      inline def setLowerLimit(value: Vec3D): Self = StObject.set(x, "lowerLimit", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  class SetUserPositionRequest protected () extends js.Object {
-    /**
-      * Creates a new SetUserPositionRequest instance.
-      * @param {Entities.Data.Vec3D} pos        The user position.
-      * @param {Entities.MMORoom}    [targetRoom=null] The MMORoom object corresponding to the Room where the position should be set; if null, the last Room joined by the user is used.
-      */
-    def this(pos: Vec3D) = this()
-    def this(pos: Vec3D, targetRoom: MMORoom) = this()
-  }
-  
+  trait SetUserPositionRequest extends StObject
 }
-

@@ -11,74 +11,92 @@ import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Mixed
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Right
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Top
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the TableCell object, for use in "tableCell.set({ ... })". */
-trait TableCellUpdateData extends js.Object {
+/** An interface for updating data on the TableCell object, for use in `tableCell.set({ ... })`. */
+trait TableCellUpdateData extends StObject {
+  
   /**
-    *
     * Gets the body object of the cell.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var body: js.UndefOr[BodyUpdateData] = js.undefined
+  
   /**
-    *
     * Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var columnWidth: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
+  
   /**
-    *
     * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var shadingColor: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Gets and sets the text of the cell.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var value: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var verticalAlignment: js.UndefOr[VerticalAlignment | Mixed | Top | Center | Bottom] = js.undefined
 }
-
 object TableCellUpdateData {
-  @scala.inline
-  def apply(
-    body: BodyUpdateData = null,
-    columnWidth: Int | Double = null,
-    horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
-    shadingColor: String = null,
-    value: String = null,
-    verticalAlignment: VerticalAlignment | Mixed | Top | Center | Bottom = null
-  ): TableCellUpdateData = {
+  
+  inline def apply(): TableCellUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellUpdateData]
   }
+  
+  extension [Self <: TableCellUpdateData](x: Self) {
+    
+    inline def setBody(value: BodyUpdateData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    
+    inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+    
+    inline def setHorizontalAlignment(value: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    
+    inline def setShadingColor(value: String): Self = StObject.set(x, "shadingColor", value.asInstanceOf[js.Any])
+    
+    inline def setShadingColorUndefined: Self = StObject.set(x, "shadingColor", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setVerticalAlignment(value: VerticalAlignment | Mixed | Top | Center | Bottom): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+  }
 }
-

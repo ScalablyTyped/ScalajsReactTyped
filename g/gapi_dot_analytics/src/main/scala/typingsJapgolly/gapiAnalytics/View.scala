@@ -1,23 +1,36 @@
 package typingsJapgolly.gapiAnalytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait View extends js.Object {
+trait View extends StObject {
+  
   var accountId: js.UndefOr[String] = js.undefined
+  
   var webPropertyId: js.UndefOr[String] = js.undefined
+  
   var webViewId: js.UndefOr[String] = js.undefined
 }
-
 object View {
-  @scala.inline
-  def apply(accountId: String = null, webPropertyId: String = null, webViewId: String = null): View = {
+  
+  inline def apply(): View = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])
-    if (webViewId != null) __obj.updateDynamic("webViewId")(webViewId.asInstanceOf[js.Any])
     __obj.asInstanceOf[View]
   }
+  
+  extension [Self <: View](x: Self) {
+    
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    
+    inline def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
+    
+    inline def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
+    
+    inline def setWebViewId(value: String): Self = StObject.set(x, "webViewId", value.asInstanceOf[js.Any])
+    
+    inline def setWebViewIdUndefined: Self = StObject.set(x, "webViewId", js.undefined)
+  }
 }
-

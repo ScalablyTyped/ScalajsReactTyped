@@ -1,19 +1,13 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxToolbar.ItemLike
 import typingsJapgolly.devextreme.mod.DevExpress.ui.dxToolbarOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxToolbar")
+@JSImport("devextreme", "default.ui.dxToolbar")
 @js.native
-class dxToolbar protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxToolbarOptions) = this()
-  def this(element: Element, options: dxToolbarOptions) = this()
-}
-
+open class dxToolbar[TItem /* <: ItemLike */, TKey] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget[dxToolbarOptions[TItem, TKey], TItem, TKey]

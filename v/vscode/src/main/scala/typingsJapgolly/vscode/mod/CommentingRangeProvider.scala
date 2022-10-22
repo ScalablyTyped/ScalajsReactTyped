@@ -1,25 +1,25 @@
 package typingsJapgolly.vscode.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommentingRangeProvider extends js.Object {
+trait CommentingRangeProvider extends StObject {
+  
   /**
-  		 * Provide a list of ranges which allow new comment threads creation or null for a given document
-  		 */
+    * Provide a list of ranges which allow new comment threads creation or null for a given document
+    */
   def provideCommentingRanges(document: TextDocument, token: CancellationToken): ProviderResult[js.Array[Range]]
 }
-
 object CommentingRangeProvider {
-  @scala.inline
-  def apply(
-    provideCommentingRanges: (TextDocument, CancellationToken) => CallbackTo[ProviderResult[js.Array[Range]]]
-  ): CommentingRangeProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideCommentingRanges")(js.Any.fromFunction2((t0: typingsJapgolly.vscode.mod.TextDocument, t1: typingsJapgolly.vscode.mod.CancellationToken) => provideCommentingRanges(t0, t1).runNow()))
+  
+  inline def apply(provideCommentingRanges: (TextDocument, CancellationToken) => ProviderResult[js.Array[Range]]): CommentingRangeProvider = {
+    val __obj = js.Dynamic.literal(provideCommentingRanges = js.Any.fromFunction2(provideCommentingRanges))
     __obj.asInstanceOf[CommentingRangeProvider]
   }
+  
+  extension [Self <: CommentingRangeProvider](x: Self) {
+    
+    inline def setProvideCommentingRanges(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[Range]]): Self = StObject.set(x, "provideCommentingRanges", js.Any.fromFunction2(value))
+  }
 }
-

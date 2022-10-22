@@ -1,20 +1,26 @@
 package typingsJapgolly.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AccelerometerMPU6050Option extends AccelerometerGeneralOption {
+trait AccelerometerMPU6050Option
+  extends StObject
+     with AccelerometerGeneralOption {
+  
   var sensitivity: js.UndefOr[Double] = js.undefined
 }
-
 object AccelerometerMPU6050Option {
-  @scala.inline
-  def apply(controller: String = null, sensitivity: Int | Double = null): AccelerometerMPU6050Option = {
+  
+  inline def apply(): AccelerometerMPU6050Option = {
     val __obj = js.Dynamic.literal()
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (sensitivity != null) __obj.updateDynamic("sensitivity")(sensitivity.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccelerometerMPU6050Option]
   }
+  
+  extension [Self <: AccelerometerMPU6050Option](x: Self) {
+    
+    inline def setSensitivity(value: Double): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
+    
+    inline def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
+  }
 }
-

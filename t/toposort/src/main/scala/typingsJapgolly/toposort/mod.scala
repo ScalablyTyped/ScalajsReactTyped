@@ -1,13 +1,17 @@
 package typingsJapgolly.toposort
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("toposort", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[T](edges: js.Array[js.Tuple2[T, js.UndefOr[T]]]): js.Array[T] = js.native
+object mod {
+  
+  inline def apply[T](edges: js.Array[js.Tuple2[T, js.UndefOr[T]]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(edges.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  
+  @JSImport("toposort", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * This is a convenience method that allows you to define nodes that may or
     * may not be connected to any other nodes. The ordering of unconnected
@@ -18,6 +22,5 @@ object mod extends js.Object {
     * @returns a list of vertices, sorted from "start" to "end"
     * @throws if there are any cycles in the graph
     */
-  def array[T](nodes: js.Array[T], edges: js.Array[js.Tuple2[T, js.UndefOr[T]]]): js.Array[T] = js.native
+  inline def array[T](nodes: js.Array[T], edges: js.Array[js.Tuple2[T, js.UndefOr[T]]]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(nodes.asInstanceOf[js.Any], edges.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }
-

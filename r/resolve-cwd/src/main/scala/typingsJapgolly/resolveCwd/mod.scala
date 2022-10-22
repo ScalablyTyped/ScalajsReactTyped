@@ -1,12 +1,11 @@
 package typingsJapgolly.resolveCwd
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("resolve-cwd", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
   	Resolve the path of a module like [`require.resolve()`](https://nodejs.org/api/globals.html#globals_require_resolve) but from the current working directory.
   	@param moduleId - What you would use in `require()`.
@@ -23,7 +22,12 @@ object mod extends js.Object {
   	//=> '/Users/sindresorhus/unicorn/foo.js'
   	```
   	*/
-  def apply(moduleId: String): String = js.native
+  inline def apply(moduleId: String): String = ^.asInstanceOf[js.Dynamic].apply(moduleId.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("resolve-cwd", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
   	Resolve the path of a module like [`require.resolve()`](https://nodejs.org/api/globals.html#globals_require_resolve) but from the current working directory.
   	@param moduleId - What you would use in `require()`.
@@ -39,6 +43,5 @@ object mod extends js.Object {
   	//=> '/Users/sindresorhus/unicorn/foo.js'
   	```
   	*/
-  def silent(moduleId: String): js.UndefOr[String] = js.native
+  inline def silent(moduleId: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("silent")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }
-

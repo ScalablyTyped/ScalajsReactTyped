@@ -1,47 +1,52 @@
 package typingsJapgolly.winjs.mod.UI
 
-import typingsJapgolly.std.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.winjs.WinJS.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides functions to load HTML content programmatically.
 **/
-@JSImport("winjs", "UI.Fragments")
-@js.native
-object Fragments extends js.Object {
+object Fragments {
+  
+  @JSImport("winjs", "UI.Fragments")
+  @js.native
+  val ^ : js.Any = js.native
+  
   //#region Functions
   /**
     * Starts loading the fragment at the specified location. The returned promise completes when the fragment is ready to be copied.
     * @param href The URI that contains the fragment to be copied.
     * @returns A promise that is fulfilled when the fragment has been prepared for copying.
     **/
-  def cache(href: String): Promise[_] = js.native
+  inline def cache(href: String): Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(href.asInstanceOf[js.Any]).asInstanceOf[Promise[Any]]
+  
   /**
     * Removes any cached information about the specified fragment. This method does not unload any scripts or styles that are referenced by the fragment.
     * @param href The URI that contains the fragment to be cleared. If no URI is provided, the entire contents of the cache are cleared.
     **/
-  def clearCache(href: String): Unit = js.native
-  def clearCache(href: HTMLElement): Unit = js.native
+  inline def clearCache(href: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")(href.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearCache(href: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")(href.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /**
     * Loads the contents of the specified URI into the specified element without copying it.
     * @param href The URI that contains the fragment to copy.
     * @param element Optional. The element to which the fragment is appended.
     * @returns A promise that is fulfilled when the fragment has been loaded. If a target element is not specified, the copied fragment is the completed value. The element is not added to the cache. See also rendercopy, where the element is added to the cache.
     **/
-  def render(href: String): Promise[org.scalajs.dom.raw.HTMLElement] = js.native
-  def render(href: String, element: org.scalajs.dom.raw.HTMLElement): Promise[org.scalajs.dom.raw.HTMLElement] = js.native
+  inline def render(href: String): Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(href.asInstanceOf[js.Any]).asInstanceOf[Promise[HTMLElement]]
+  inline def render(href: String, element: HTMLElement): Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(href.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Promise[HTMLElement]]
+  
   /**
     * Loads and copies the contents of the specified URI into the specified element.
     * @param href The URI that contains the fragment to copy.
     * @param target The element to which the fragment is appended.
     * @returns A promise that is fulfilled when the fragment has been loaded. If a target element is not specified, the copied fragment is the completed value. The fragment is added to the cache. See also render, where the element is not added to the cache.
     **/
-  def renderCopy(href: String): Promise[org.scalajs.dom.raw.HTMLElement] = js.native
-  def renderCopy(href: String, target: org.scalajs.dom.raw.HTMLElement): Promise[org.scalajs.dom.raw.HTMLElement] = js.native
-  def renderCopy(href: HTMLElement): Promise[org.scalajs.dom.raw.HTMLElement] = js.native
-  def renderCopy(href: HTMLElement, target: org.scalajs.dom.raw.HTMLElement): Promise[org.scalajs.dom.raw.HTMLElement] = js.native
+  inline def renderCopy(href: String): Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderCopy")(href.asInstanceOf[js.Any]).asInstanceOf[Promise[HTMLElement]]
+  inline def renderCopy(href: String, target: HTMLElement): Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderCopy")(href.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Promise[HTMLElement]]
+  inline def renderCopy(href: HTMLElement): Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderCopy")(href.asInstanceOf[js.Any]).asInstanceOf[Promise[HTMLElement]]
+  inline def renderCopy(href: HTMLElement, target: HTMLElement): Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderCopy")(href.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Promise[HTMLElement]]
 }
-

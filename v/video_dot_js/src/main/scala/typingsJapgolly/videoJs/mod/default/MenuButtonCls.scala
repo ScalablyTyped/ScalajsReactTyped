@@ -1,14 +1,17 @@
 package typingsJapgolly.videoJs.mod.default
 
+import typingsJapgolly.videoJs.mod.videojs.MenuButton
 import typingsJapgolly.videoJs.mod.videojs.MenuButtonOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "MenuButton")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js", "default.MenuButton")
 @js.native
-class MenuButtonCls protected ()
-  extends typingsJapgolly.videoJs.mod.videojs.MenuButton {
+open class MenuButtonCls protected ()
+  extends StObject
+     with MenuButton {
   /**
     * Creates an instance of this class.
     *
@@ -21,4 +24,3 @@ class MenuButtonCls protected ()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player) = this()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player, options: MenuButtonOptions) = this()
 }
-

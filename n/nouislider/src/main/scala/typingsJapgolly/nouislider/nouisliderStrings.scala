@@ -1,64 +1,32 @@
 package typingsJapgolly.nouislider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nouisliderStrings {
-  @js.native
-  sealed trait count extends js.Object
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal extends StObject
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait lower extends js.Object
+  sealed trait lower extends StObject
+  inline def lower: lower = "lower".asInstanceOf[lower]
   
   @js.native
-  sealed trait ltr extends js.Object
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait positions extends js.Object
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait range extends js.Object
+  sealed trait upper extends StObject
+  inline def upper: upper = "upper".asInstanceOf[upper]
   
   @js.native
-  sealed trait rtl extends js.Object
-  
-  @js.native
-  sealed trait steps extends js.Object
-  
-  @js.native
-  sealed trait upper extends js.Object
-  
-  @js.native
-  sealed trait values extends js.Object
-  
-  @js.native
-  sealed trait vertical extends js.Object
-  
-  @scala.inline
-  def count: count = "count".asInstanceOf[count]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def lower: lower = "lower".asInstanceOf[lower]
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
-  @scala.inline
-  def positions: positions = "positions".asInstanceOf[positions]
-  @scala.inline
-  def range: range = "range".asInstanceOf[range]
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
-  @scala.inline
-  def steps: steps = "steps".asInstanceOf[steps]
-  @scala.inline
-  def upper: upper = "upper".asInstanceOf[upper]
-  @scala.inline
-  def values: values = "values".asInstanceOf[values]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  sealed trait vertical extends StObject
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
-

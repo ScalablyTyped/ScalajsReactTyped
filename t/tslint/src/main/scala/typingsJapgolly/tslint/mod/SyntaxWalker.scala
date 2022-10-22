@@ -1,11 +1,10 @@
 package typingsJapgolly.tslint.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tslint", "SyntaxWalker")
 @js.native
-class SyntaxWalker ()
-  extends typingsJapgolly.tslint.syntaxWalkerMod.SyntaxWalker
-
+open class SyntaxWalker ()
+  extends typingsJapgolly.tslint.libLanguageWalkerMod.SyntaxWalker

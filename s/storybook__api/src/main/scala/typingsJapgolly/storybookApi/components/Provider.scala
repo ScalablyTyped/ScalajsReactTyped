@@ -1,54 +1,63 @@
 package typingsJapgolly.storybookApi.components
 
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Component
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reachRouter.mod.NavigateFn
-import typingsJapgolly.reachRouter.mod.WindowLocation
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.std.ReturnType
 import typingsJapgolly.storybookApi.mod.Combo
-import typingsJapgolly.storybookApi.mod.Props
+import typingsJapgolly.storybookApi.mod.ManagerProviderProps
+import typingsJapgolly.storybookRouter.anon.PartialLocationAncestorOrigins
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Provider {
-  def apply(
+  
+  inline def apply(
     docsMode: Boolean,
-    provider: typingsJapgolly.storybookApi.initProviderApiMod.Provider,
-    default: js.UndefOr[Boolean] = js.undefined,
-    location: WindowLocation = null,
-    navigate: NavigateFn = null,
-    path: String = null,
-    storyId: String = null,
-    uri: String = null,
-    viewMode: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: (Component[js.Object, js.Object]) | (js.Function1[/* props */ Combo, Component[js.Object, js.Object]])
-  ): UnmountedWithRoot[Props, typingsJapgolly.storybookApi.mod.Provider, Unit, Props] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], docsMode = docsMode.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
-  
-      if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (navigate != null) __obj.updateDynamic("navigate")(navigate.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (storyId != null) __obj.updateDynamic("storyId")(storyId.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
-    if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.storybookApi.mod.Props, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.storybookApi.mod.Provider](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.storybookApi.mod.Props])
+    location: PartialLocationAncestorOrigins,
+    navigate: ReturnType[
+      js.Function0[
+        js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]
+      ]
+    ],
+    path: String,
+    provider: typingsJapgolly.storybookApi.distTs3Dot9ModulesProviderMod.Provider
+  ): Builder = {
+    val __props = js.Dynamic.literal(docsMode = docsMode.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], navigate = navigate.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ManagerProviderProps]))
   }
+  
   @JSImport("@storybook/api", "Provider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.storybookApi.mod.Provider] {
+    
+    inline def children(value: Node | (js.Function1[/* props */ Combo, Node])): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenFunction1(value: /* props */ Combo => Node): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def childrenNull: this.type = set("children", null)
+    
+    inline def childrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def refId(value: String): this.type = set("refId", value.asInstanceOf[js.Any])
+    
+    inline def singleStory(value: Boolean): this.type = set("singleStory", value.asInstanceOf[js.Any])
+    
+    inline def storyId(value: String): this.type = set("storyId", value.asInstanceOf[js.Any])
+    
+    inline def viewMode(value: String): this.type = set("viewMode", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ManagerProviderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

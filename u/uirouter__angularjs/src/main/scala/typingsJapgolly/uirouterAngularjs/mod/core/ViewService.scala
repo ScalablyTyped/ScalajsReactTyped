@@ -1,26 +1,28 @@
 package typingsJapgolly.uirouterAngularjs.mod.core
 
-import typingsJapgolly.uirouterCore.AnonUiViewContextAnchor
-import typingsJapgolly.uirouterCore.commonCommonMod.TypedMap
-import typingsJapgolly.uirouterCore.viewInterfaceMod.ActiveUIView
-import typingsJapgolly.uirouterCore.viewInterfaceMod.ViewConfig
-import typingsJapgolly.uirouterCore.viewInterfaceMod.ViewContext
+import typingsJapgolly.uirouterCore.anon.UiViewContextAnchor
+import typingsJapgolly.uirouterCore.libCommonCommonMod.TypedMap
+import typingsJapgolly.uirouterCore.libViewInterfaceMod.ActiveUIView
+import typingsJapgolly.uirouterCore.libViewInterfaceMod.ViewConfig
+import typingsJapgolly.uirouterCore.libViewInterfaceMod.ViewContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "core.ViewService")
 @js.native
-class ViewService protected ()
+open class ViewService protected ()
   extends typingsJapgolly.uirouterCore.mod.ViewService {
-  /** @hidden */
-  def this(/** @hidden */ router: typingsJapgolly.uirouterCore.routerMod.UIRouter) = this()
+  /** @internal */
+  def this(/** @internal */ router: typingsJapgolly.uirouterCore.libRouterMod.UIRouter) = this()
 }
-
 /* static members */
-@JSImport("@uirouter/angularjs", "core.ViewService")
-@js.native
-object ViewService extends js.Object {
+object ViewService {
+  
+  @JSImport("@uirouter/angularjs", "core.ViewService")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Given a ui-view and a ViewConfig, determines if they "match".
     *
@@ -76,9 +78,10 @@ object ViewService extends js.Object {
     * - And the remaining segments [ "$default", "bar" ].join("."_ of the ViewConfig's target name match
     *   the tail of the ui-view's fqn "default.bar"
     *
-    * @internalapi
+    * @internal
     */
-  def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = js.native
+  inline def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(uiViewsByFqn.asInstanceOf[js.Any], uiView.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* viewConfig */ ViewConfig, Boolean]]
+  
   /**
     * Normalizes a view's name from a state.views configuration block.
     *
@@ -90,7 +93,6 @@ object ViewService extends js.Object {
     *
     * @returns the normalized uiViewName and uiViewContextAnchor that the view targets
     */
-  def normalizeUIViewTarget(context: ViewContext): AnonUiViewContextAnchor = js.native
-  def normalizeUIViewTarget(context: ViewContext, rawViewName: String): AnonUiViewContextAnchor = js.native
+  inline def normalizeUIViewTarget(context: ViewContext): UiViewContextAnchor = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUIViewTarget")(context.asInstanceOf[js.Any]).asInstanceOf[UiViewContextAnchor]
+  inline def normalizeUIViewTarget(context: ViewContext, rawViewName: String): UiViewContextAnchor = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUIViewTarget")(context.asInstanceOf[js.Any], rawViewName.asInstanceOf[js.Any])).asInstanceOf[UiViewContextAnchor]
 }
-

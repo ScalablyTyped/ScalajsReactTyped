@@ -1,29 +1,26 @@
 package typingsJapgolly.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults")
-@js.native
-class EasComplianceResults () extends IEasComplianceResults {
-  /* CompleteClass */
-  override var compliant: Boolean = js.native
-  /* CompleteClass */
-  override var disallowConvenienceLogonResult: EasDisallowConvenienceLogonResult = js.native
-  /* CompleteClass */
-  override var maxInactivityTimeLockResult: EasMaxInactivityTimeLockResult = js.native
-  /* CompleteClass */
-  override var maxPasswordFailedAttemptsResult: EasMaxPasswordFailedAttemptsResult = js.native
-  /* CompleteClass */
-  override var minPasswordComplexCharactersResult: EasMinPasswordComplexCharactersResult = js.native
-  /* CompleteClass */
-  override var minPasswordLengthResult: EasMinPasswordLengthResult = js.native
-  /* CompleteClass */
-  override var passwordExpirationResult: EasPasswordExpirationResult = js.native
-  /* CompleteClass */
-  override var passwordHistoryResult: EasPasswordHistoryResult = js.native
-  /* CompleteClass */
-  override var requireEncryptionResult: EasRequireEncryptionResult = js.native
+trait EasComplianceResults
+  extends StObject
+     with IEasComplianceResults
+object EasComplianceResults {
+  
+  inline def apply(
+    compliant: Boolean,
+    disallowConvenienceLogonResult: EasDisallowConvenienceLogonResult,
+    maxInactivityTimeLockResult: EasMaxInactivityTimeLockResult,
+    maxPasswordFailedAttemptsResult: EasMaxPasswordFailedAttemptsResult,
+    minPasswordComplexCharactersResult: EasMinPasswordComplexCharactersResult,
+    minPasswordLengthResult: EasMinPasswordLengthResult,
+    passwordExpirationResult: EasPasswordExpirationResult,
+    passwordHistoryResult: EasPasswordHistoryResult,
+    requireEncryptionResult: EasRequireEncryptionResult
+  ): EasComplianceResults = {
+    val __obj = js.Dynamic.literal(compliant = compliant.asInstanceOf[js.Any], disallowConvenienceLogonResult = disallowConvenienceLogonResult.asInstanceOf[js.Any], maxInactivityTimeLockResult = maxInactivityTimeLockResult.asInstanceOf[js.Any], maxPasswordFailedAttemptsResult = maxPasswordFailedAttemptsResult.asInstanceOf[js.Any], minPasswordComplexCharactersResult = minPasswordComplexCharactersResult.asInstanceOf[js.Any], minPasswordLengthResult = minPasswordLengthResult.asInstanceOf[js.Any], passwordExpirationResult = passwordExpirationResult.asInstanceOf[js.Any], passwordHistoryResult = passwordHistoryResult.asInstanceOf[js.Any], requireEncryptionResult = requireEncryptionResult.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EasComplianceResults]
+  }
 }
-

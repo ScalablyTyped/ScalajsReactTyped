@@ -10,15 +10,12 @@ String formatting inspired by Python's str.format()
 | ------------------ | :-------------: |
 | Full name          | string-format |
 | Keywords           | string, formatting, language, util |
-| # releases         | 3 |
-| # dependents       | 216 |
-| # downloads        | 4729091 |
-| # stars            | 10 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1066612.0 |
+| # stars            | 321.0 |
 
 ## Links
-- [Homepage](https://github.com/davidchambers/string-format)
-- [Bugs](https://github.com/davidchambers/string-format/issues)
-- [Repository](https://github.com/davidchambers/string-format)
 - [Npm](https://www.npmjs.com/package/string-format)
     
 

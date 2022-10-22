@@ -1,8 +1,8 @@
 package typingsJapgolly.tsutils.utilUtilMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.tsutils.tsutilsStrings.noImplicitAny
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.tsutils.tsutilsStrings.alwaysStrict
   - typingsJapgolly.tsutils.tsutilsStrings.strictBindCallApply
 */
-trait StrictCompilerOption extends js.Object
-
+trait StrictCompilerOption extends StObject
 object StrictCompilerOption {
-  @scala.inline
-  def alwaysStrict: typingsJapgolly.tsutils.tsutilsStrings.alwaysStrict = this.cast("alwaysStrict")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def noImplicitAny: typingsJapgolly.tsutils.tsutilsStrings.noImplicitAny = this.cast("noImplicitAny")
-  @scala.inline
-  def noImplicitThis: typingsJapgolly.tsutils.tsutilsStrings.noImplicitThis = this.cast("noImplicitThis")
-  @scala.inline
-  def strictBindCallApply: typingsJapgolly.tsutils.tsutilsStrings.strictBindCallApply = this.cast("strictBindCallApply")
-  @scala.inline
-  def strictFunctionTypes: typingsJapgolly.tsutils.tsutilsStrings.strictFunctionTypes = this.cast("strictFunctionTypes")
-  @scala.inline
-  def strictNullChecks: typingsJapgolly.tsutils.tsutilsStrings.strictNullChecks = this.cast("strictNullChecks")
-  @scala.inline
-  def strictPropertyInitialization: typingsJapgolly.tsutils.tsutilsStrings.strictPropertyInitialization = this.cast("strictPropertyInitialization")
+  
+  inline def alwaysStrict: typingsJapgolly.tsutils.tsutilsStrings.alwaysStrict = "alwaysStrict".asInstanceOf[typingsJapgolly.tsutils.tsutilsStrings.alwaysStrict]
+  
+  inline def noImplicitAny: typingsJapgolly.tsutils.tsutilsStrings.noImplicitAny = "noImplicitAny".asInstanceOf[typingsJapgolly.tsutils.tsutilsStrings.noImplicitAny]
+  
+  inline def noImplicitThis: typingsJapgolly.tsutils.tsutilsStrings.noImplicitThis = "noImplicitThis".asInstanceOf[typingsJapgolly.tsutils.tsutilsStrings.noImplicitThis]
+  
+  inline def strictBindCallApply: typingsJapgolly.tsutils.tsutilsStrings.strictBindCallApply = "strictBindCallApply".asInstanceOf[typingsJapgolly.tsutils.tsutilsStrings.strictBindCallApply]
+  
+  inline def strictFunctionTypes: typingsJapgolly.tsutils.tsutilsStrings.strictFunctionTypes = "strictFunctionTypes".asInstanceOf[typingsJapgolly.tsutils.tsutilsStrings.strictFunctionTypes]
+  
+  inline def strictNullChecks: typingsJapgolly.tsutils.tsutilsStrings.strictNullChecks = "strictNullChecks".asInstanceOf[typingsJapgolly.tsutils.tsutilsStrings.strictNullChecks]
+  
+  inline def strictPropertyInitialization: typingsJapgolly.tsutils.tsutilsStrings.strictPropertyInitialization = "strictPropertyInitialization".asInstanceOf[typingsJapgolly.tsutils.tsutilsStrings.strictPropertyInitialization]
 }
-

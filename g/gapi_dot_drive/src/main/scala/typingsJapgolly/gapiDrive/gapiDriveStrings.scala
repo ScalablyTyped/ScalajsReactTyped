@@ -1,49 +1,40 @@
 package typingsJapgolly.gapiDrive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapiDriveStrings {
-  @js.native
-  sealed trait apiNumbersignchannel extends js.Object
   
   @js.native
-  sealed trait drive$property extends js.Object
+  sealed trait apiNumbersignchannel extends StObject
+  inline def apiNumbersignchannel: apiNumbersignchannel = "api#channel".asInstanceOf[apiNumbersignchannel]
   
   @js.native
-  sealed trait driveNumbersignfile extends js.Object
+  sealed trait drive$property extends StObject
+  inline def drive$property: drive$property = "drive$property".asInstanceOf[drive$property]
   
   @js.native
-  sealed trait driveNumbersignfileList extends js.Object
+  sealed trait driveNumbersignfile extends StObject
+  inline def driveNumbersignfile: driveNumbersignfile = "drive#file".asInstanceOf[driveNumbersignfile]
   
   @js.native
-  sealed trait driveNumbersigngeneratedIds extends js.Object
+  sealed trait driveNumbersignfileList extends StObject
+  inline def driveNumbersignfileList: driveNumbersignfileList = "drive#fileList".asInstanceOf[driveNumbersignfileList]
   
   @js.native
-  sealed trait driveNumbersignparentReference extends js.Object
+  sealed trait driveNumbersigngeneratedIds extends StObject
+  inline def driveNumbersigngeneratedIds: driveNumbersigngeneratedIds = "drive#generatedIds".asInstanceOf[driveNumbersigngeneratedIds]
   
   @js.native
-  sealed trait driveNumbersignpermission extends js.Object
+  sealed trait driveNumbersignparentReference extends StObject
+  inline def driveNumbersignparentReference: driveNumbersignparentReference = "drive#parentReference".asInstanceOf[driveNumbersignparentReference]
   
   @js.native
-  sealed trait driveNumbersignuser extends js.Object
+  sealed trait driveNumbersignpermission extends StObject
+  inline def driveNumbersignpermission: driveNumbersignpermission = "drive#permission".asInstanceOf[driveNumbersignpermission]
   
-  @scala.inline
-  def apiNumbersignchannel: apiNumbersignchannel = "api#channel".asInstanceOf[apiNumbersignchannel]
-  @scala.inline
-  def drive$property: drive$property = "drive$property".asInstanceOf[drive$property]
-  @scala.inline
-  def driveNumbersignfile: driveNumbersignfile = "drive#file".asInstanceOf[driveNumbersignfile]
-  @scala.inline
-  def driveNumbersignfileList: driveNumbersignfileList = "drive#fileList".asInstanceOf[driveNumbersignfileList]
-  @scala.inline
-  def driveNumbersigngeneratedIds: driveNumbersigngeneratedIds = "drive#generatedIds".asInstanceOf[driveNumbersigngeneratedIds]
-  @scala.inline
-  def driveNumbersignparentReference: driveNumbersignparentReference = "drive#parentReference".asInstanceOf[driveNumbersignparentReference]
-  @scala.inline
-  def driveNumbersignpermission: driveNumbersignpermission = "drive#permission".asInstanceOf[driveNumbersignpermission]
-  @scala.inline
-  def driveNumbersignuser: driveNumbersignuser = "drive#user".asInstanceOf[driveNumbersignuser]
+  @js.native
+  sealed trait driveNumbersignuser extends StObject
+  inline def driveNumbersignuser: driveNumbersignuser = "drive#user".asInstanceOf[driveNumbersignuser]
 }
-

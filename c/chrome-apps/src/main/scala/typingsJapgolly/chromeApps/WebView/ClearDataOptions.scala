@@ -1,12 +1,13 @@
 package typingsJapgolly.chromeApps.WebView
 
 import typingsJapgolly.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options that determine what data should be cleared by *clearData* */
-trait ClearDataOptions extends js.Object {
+trait ClearDataOptions extends StObject {
+  
   /**
     * Clear data accumulated on or after this date,
     * represented in milliseconds since the epoch
@@ -16,13 +17,17 @@ trait ClearDataOptions extends js.Object {
     */
   var since: js.UndefOr[integer] = js.undefined
 }
-
 object ClearDataOptions {
-  @scala.inline
-  def apply(since: Int | Double = null): ClearDataOptions = {
+  
+  inline def apply(): ClearDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearDataOptions]
   }
+  
+  extension [Self <: ClearDataOptions](x: Self) {
+    
+    inline def setSince(value: integer): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+  }
 }
-

@@ -1,24 +1,29 @@
 package typingsJapgolly.jqueryAjaxfile
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IAjaxFileStatic extends js.Object {
-  var DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ js.Any
+trait IAjaxFileStatic extends StObject {
+  
+  var DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ Any
+  
   def send[T](option: IOption): IAjaxFilePromise[T]
 }
-
 object IAjaxFileStatic {
-  @scala.inline
-  def apply(
-    DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ js.Any,
-    send: IOption => CallbackTo[IAjaxFilePromise[js.Any]]
+  
+  inline def apply(
+    DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ Any,
+    send: IOption => IAjaxFilePromise[Any]
   ): IAjaxFileStatic = {
-    val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any])
-    __obj.updateDynamic("send")(js.Any.fromFunction1((t0: typingsJapgolly.jqueryAjaxfile.IOption) => send(t0).runNow()))
+    val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any], send = js.Any.fromFunction1(send))
     __obj.asInstanceOf[IAjaxFileStatic]
   }
+  
+  extension [Self <: IAjaxFileStatic](x: Self) {
+    
+    inline def setDataType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ Any): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    
+    inline def setSend(value: IOption => IAjaxFilePromise[Any]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+  }
 }
-

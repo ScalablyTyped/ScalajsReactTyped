@@ -2,14 +2,17 @@ package typingsJapgolly.typescriptServices.mod
 
 import typingsJapgolly.typescriptServices.TypeScript.IScriptSnapshot
 import typingsJapgolly.typescriptServices.TypeScript.ISimpleText
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-services", "SimpleText")
-@js.native
-object SimpleText extends js.Object {
-  def fromScriptSnapshot(scriptSnapshot: IScriptSnapshot): ISimpleText = js.native
-  def fromString(value: String): ISimpleText = js.native
+object SimpleText {
+  
+  @JSImport("typescript-services", "SimpleText")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromScriptSnapshot(scriptSnapshot: IScriptSnapshot): ISimpleText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromScriptSnapshot")(scriptSnapshot.asInstanceOf[js.Any]).asInstanceOf[ISimpleText]
+  
+  inline def fromString(value: String): ISimpleText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleText]
 }
-

@@ -1,31 +1,24 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait sortOrder extends js.Object
-
+sealed trait sortOrder extends StObject
 @JSGlobal("ej.sortOrder")
 @js.native
-object sortOrder extends js.Object {
+object sortOrder extends StObject {
+  
   //Enum for Ascending sort order
   @js.native
-  sealed trait Ascending extends sortOrder
+  sealed trait Ascending
+    extends StObject
+       with sortOrder
   
   //Enum for Descending sort order
   @js.native
-  sealed trait Descending extends sortOrder
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[sortOrder with Double] = js.native
-  /* 0 */ @js.native
-  object Ascending extends TopLevel[Ascending with Double]
-  
-  /* 1 */ @js.native
-  object Descending extends TopLevel[Descending with Double]
-  
+  sealed trait Descending
+    extends StObject
+       with sortOrder
 }
-

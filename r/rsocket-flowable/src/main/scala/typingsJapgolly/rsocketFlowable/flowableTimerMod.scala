@@ -1,13 +1,15 @@
 package typingsJapgolly.rsocketFlowable
 
 import typingsJapgolly.rsocketFlowable.flowableMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rsocket-flowable/FlowableTimer", JSImport.Namespace)
-@js.native
-object flowableTimerMod extends js.Object {
-  def every(ms: Double): default[Double] = js.native
+object flowableTimerMod {
+  
+  @JSImport("rsocket-flowable/FlowableTimer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def every(ms: Double): default[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(ms.asInstanceOf[js.Any]).asInstanceOf[default[Double]]
 }
-

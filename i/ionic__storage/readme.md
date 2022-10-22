@@ -1,19 +1,19 @@
 
 # Scala.js typings for ionic__storage
 
-Typings are for version 2.2.0
+Typings are for version 3.0.6
 
 ## Library description:
-Ionic Storage utility
+Ionic Storage Helper
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @ionic/storage |
-| Keywords           | ionic, angular, localforage, cordova, hybrid |
-| # releases         | 2 |
-| # dependents       | 167 |
-| # downloads        | 1974475 |
-| # stars            | 1 |
+| Keywords           | capacitor, plugin, native |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 255269.33333333334 |
+| # stars            | 316.0 |
 
 ## Links
 - [Homepage](https://github.com/ionic-team/ionic-storage#readme)

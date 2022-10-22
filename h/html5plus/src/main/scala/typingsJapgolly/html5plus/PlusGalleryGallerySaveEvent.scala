@@ -1,15 +1,16 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 保存图片到相册成功事件
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
   */
-trait PlusGalleryGallerySaveEvent extends js.Object {
+trait PlusGalleryGallerySaveEvent extends StObject {
+  
   /**
     * 保存到相册的图片路径
     * 
@@ -17,13 +18,17 @@ trait PlusGalleryGallerySaveEvent extends js.Object {
     */
   var path: js.UndefOr[String] = js.undefined
 }
-
 object PlusGalleryGallerySaveEvent {
-  @scala.inline
-  def apply(path: String = null): PlusGalleryGallerySaveEvent = {
+  
+  inline def apply(): PlusGalleryGallerySaveEvent = {
     val __obj = js.Dynamic.literal()
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusGalleryGallerySaveEvent]
   }
+  
+  extension [Self <: PlusGalleryGallerySaveEvent](x: Self) {
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+  }
 }
-

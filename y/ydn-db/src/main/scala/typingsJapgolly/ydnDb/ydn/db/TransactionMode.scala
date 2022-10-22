@@ -1,29 +1,22 @@
 package typingsJapgolly.ydnDb.ydn.db
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TransactionMode extends js.Object
-
+sealed trait TransactionMode extends StObject
 @JSGlobal("ydn.db.TransactionMode")
 @js.native
-object TransactionMode extends js.Object {
-  @js.native
-  sealed trait readonly extends TransactionMode
+object TransactionMode extends StObject {
   
   @js.native
-  sealed trait readwrite extends TransactionMode
+  sealed trait readonly
+    extends StObject
+       with TransactionMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TransactionMode with Double] = js.native
-  /* 0 */ @js.native
-  object readonly extends TopLevel[readonly with Double]
-  
-  /* 1 */ @js.native
-  object readwrite extends TopLevel[readwrite with Double]
-  
+  @js.native
+  sealed trait readwrite
+    extends StObject
+       with TransactionMode
 }
-

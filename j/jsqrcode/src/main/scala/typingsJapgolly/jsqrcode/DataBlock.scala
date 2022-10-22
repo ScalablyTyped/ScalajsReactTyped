@@ -1,23 +1,37 @@
 package typingsJapgolly.jsqrcode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DataBlock")
-@js.native
-class DataBlock protected () extends js.Object {
-  def this(numDataCodewords: Double, codewords: js.Array[Double]) = this()
-  val Codewords: js.Array[Double] = js.native
-  val NumDataCodewords: Double = js.native
-  var codewords: js.Array[Double] = js.native
-  var numDataCodewords: Double = js.native
+trait DataBlock extends StObject {
+  
+  val Codewords: js.Array[Double]
+  
+  val NumDataCodewords: Double
+  
+  /* private */ var codewords: js.Array[Double]
+  
+  /* private */ var numDataCodewords: Double
 }
-
-/* static members */
-@JSGlobal("DataBlock")
-@js.native
-object DataBlock extends js.Object {
-  def getDataBlocks(rawCodewords: js.Array[Double], version: Version, ecLevel: ErrorCorrectionLevel): js.Array[DataBlock] = js.native
+object DataBlock {
+  
+  inline def apply(
+    Codewords: js.Array[Double],
+    NumDataCodewords: Double,
+    codewords: js.Array[Double],
+    numDataCodewords: Double
+  ): DataBlock = {
+    val __obj = js.Dynamic.literal(Codewords = Codewords.asInstanceOf[js.Any], NumDataCodewords = NumDataCodewords.asInstanceOf[js.Any], codewords = codewords.asInstanceOf[js.Any], numDataCodewords = numDataCodewords.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataBlock]
+  }
+  
+  extension [Self <: DataBlock](x: Self) {
+    
+    inline def setCodewords(value: js.Array[Double]): Self = StObject.set(x, "Codewords", value.asInstanceOf[js.Any])
+    
+    inline def setCodewordsVarargs(value: Double*): Self = StObject.set(x, "Codewords", js.Array(value*))
+    
+    inline def setNumDataCodewords(value: Double): Self = StObject.set(x, "NumDataCodewords", value.asInstanceOf[js.Any])
+  }
 }
-

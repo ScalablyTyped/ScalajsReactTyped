@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Devices
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RegionOfInterestType extends js.Object
-
+sealed trait RegionOfInterestType extends StObject
 /** Defines the different types of regions of interest that can be detected the capture device. */
 @JSGlobal("Windows.Media.Devices.RegionOfInterestType")
 @js.native
-object RegionOfInterestType extends js.Object {
+object RegionOfInterestType extends StObject {
+  
   /** The region of interest is a detected face. */
   @js.native
-  sealed trait face extends RegionOfInterestType
+  sealed trait face
+    extends StObject
+       with RegionOfInterestType
   
   /** The type of region of interest is unknown. */
   @js.native
-  sealed trait unknown extends RegionOfInterestType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RegionOfInterestType with Double] = js.native
-  /* 1 */ @js.native
-  object face extends TopLevel[face with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  sealed trait unknown
+    extends StObject
+       with RegionOfInterestType
 }
-

@@ -1,29 +1,22 @@
 package typingsJapgolly.unityWebapi
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UnityPlaybackState extends js.Object
-
+sealed trait UnityPlaybackState extends StObject
 @JSGlobal("UnityPlaybackState")
 @js.native
-object UnityPlaybackState extends js.Object {
-  @js.native
-  sealed trait Paused extends UnityPlaybackState
+object UnityPlaybackState extends StObject {
   
   @js.native
-  sealed trait Playing extends UnityPlaybackState
+  sealed trait Paused
+    extends StObject
+       with UnityPlaybackState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UnityPlaybackState with Double] = js.native
-  /* 1 */ @js.native
-  object Paused extends TopLevel[Paused with Double]
-  
-  /* 0 */ @js.native
-  object Playing extends TopLevel[Playing with Double]
-  
+  @js.native
+  sealed trait Playing
+    extends StObject
+       with UnityPlaybackState
 }
-

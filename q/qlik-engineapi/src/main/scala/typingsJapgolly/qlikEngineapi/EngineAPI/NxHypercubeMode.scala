@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * One of:
@@ -17,18 +17,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.K
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.T
 */
-trait NxHypercubeMode extends js.Object
-
+trait NxHypercubeMode extends StObject
 object NxHypercubeMode {
-  @scala.inline
-  def K: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.K = this.cast("K")
-  @scala.inline
-  def P: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.P = this.cast("P")
-  @scala.inline
-  def S: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.S = this.cast("S")
-  @scala.inline
-  def T: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.T = this.cast("T")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def K: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.K = "K".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.K]
+  
+  inline def P: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.P = "P".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.P]
+  
+  inline def S: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.S = "S".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.S]
+  
+  inline def T: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.T = "T".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.T]
 }
-

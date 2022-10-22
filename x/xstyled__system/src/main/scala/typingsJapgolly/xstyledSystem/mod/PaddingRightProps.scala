@@ -1,25 +1,35 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.PaddingRightProperty
+import typingsJapgolly.csstype.mod.Property.PaddingRight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaddingRightProps[TLength] extends js.Object {
-  val paddingRight: js.UndefOr[ResponsiveValue[PaddingRightProperty[TLength]]] = js.undefined
-  val pr: js.UndefOr[ResponsiveValue[PaddingRightProperty[TLength]]] = js.undefined
+trait PaddingRightProps[TLength] extends StObject {
+  
+  val paddingRight: js.UndefOr[ResponsiveValue[PaddingRight[TLength]]] = js.undefined
+  
+  val pr: js.UndefOr[ResponsiveValue[PaddingRight[TLength]]] = js.undefined
 }
-
 object PaddingRightProps {
-  @scala.inline
-  def apply[TLength](
-    paddingRight: ResponsiveValue[PaddingRightProperty[TLength]] = null,
-    pr: ResponsiveValue[PaddingRightProperty[TLength]] = null
-  ): PaddingRightProps[TLength] = {
+  
+  inline def apply[TLength](): PaddingRightProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingRightProps[TLength]]
   }
+  
+  extension [Self <: PaddingRightProps[?], TLength](x: Self & PaddingRightProps[TLength]) {
+    
+    inline def setPaddingRight(value: ResponsiveValue[PaddingRight[TLength]]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
+    
+    inline def setPaddingRightVarargs(value: PaddingRight[TLength]*): Self = StObject.set(x, "paddingRight", js.Array(value*))
+    
+    inline def setPr(value: ResponsiveValue[PaddingRight[TLength]]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+    
+    inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
+    
+    inline def setPrVarargs(value: PaddingRight[TLength]*): Self = StObject.set(x, "pr", js.Array(value*))
+  }
 }
-

@@ -3,34 +3,51 @@ package typingsJapgolly.arangodb.ArangoDB
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.arangodb.arangodbStrings.id
 import typingsJapgolly.arangodb.arangodbStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArangoSearchViewCollectionLink extends js.Object {
+trait ArangoSearchViewCollectionLink extends StObject {
+  
   var analyzers: js.UndefOr[js.Array[String]] = js.undefined
+  
   var fields: js.UndefOr[StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]] = js.undefined
+  
   var includeAllFields: js.UndefOr[Boolean] = js.undefined
+  
   var storeValues: js.UndefOr[none | id] = js.undefined
+  
   var trackListPositions: js.UndefOr[Boolean] = js.undefined
 }
-
 object ArangoSearchViewCollectionLink {
-  @scala.inline
-  def apply(
-    analyzers: js.Array[String] = null,
-    fields: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]] = null,
-    includeAllFields: js.UndefOr[Boolean] = js.undefined,
-    storeValues: none | id = null,
-    trackListPositions: js.UndefOr[Boolean] = js.undefined
-  ): ArangoSearchViewCollectionLink = {
+  
+  inline def apply(): ArangoSearchViewCollectionLink = {
     val __obj = js.Dynamic.literal()
-    if (analyzers != null) __obj.updateDynamic("analyzers")(analyzers.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeAllFields)) __obj.updateDynamic("includeAllFields")(includeAllFields.asInstanceOf[js.Any])
-    if (storeValues != null) __obj.updateDynamic("storeValues")(storeValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackListPositions)) __obj.updateDynamic("trackListPositions")(trackListPositions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArangoSearchViewCollectionLink]
   }
+  
+  extension [Self <: ArangoSearchViewCollectionLink](x: Self) {
+    
+    inline def setAnalyzers(value: js.Array[String]): Self = StObject.set(x, "analyzers", value.asInstanceOf[js.Any])
+    
+    inline def setAnalyzersUndefined: Self = StObject.set(x, "analyzers", js.undefined)
+    
+    inline def setAnalyzersVarargs(value: String*): Self = StObject.set(x, "analyzers", js.Array(value*))
+    
+    inline def setFields(value: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setIncludeAllFields(value: Boolean): Self = StObject.set(x, "includeAllFields", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeAllFieldsUndefined: Self = StObject.set(x, "includeAllFields", js.undefined)
+    
+    inline def setStoreValues(value: none | id): Self = StObject.set(x, "storeValues", value.asInstanceOf[js.Any])
+    
+    inline def setStoreValuesUndefined: Self = StObject.set(x, "storeValues", js.undefined)
+    
+    inline def setTrackListPositions(value: Boolean): Self = StObject.set(x, "trackListPositions", value.asInstanceOf[js.Any])
+    
+    inline def setTrackListPositionsUndefined: Self = StObject.set(x, "trackListPositions", js.undefined)
+  }
 }
-

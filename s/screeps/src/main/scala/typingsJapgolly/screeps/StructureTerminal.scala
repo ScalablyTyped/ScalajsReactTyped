@@ -1,31 +1,24 @@
 package typingsJapgolly.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sends any resources to a Terminal in another room.
   */
 @js.native
 trait StructureTerminal
-  extends OwnedStructure[STRUCTURE_TERMINAL]
+  extends StObject
+     with OwnedStructure[STRUCTURE_TERMINAL]
      with AnyOwnedStructure
      with AnyStoreStructure {
+  
   /**
     * The remaining amount of ticks while this terminal cannot be used to make StructureTerminal.send or Game.market.deal calls.
     */
   var cooldown: Double = js.native
-  /**
-    * A Store object that contains cargo of this structure.
-    */
-  var store: StoreDefinition = js.native
-  /**
-    * The total amount of resources the storage can contain.
-    * @deprecated An alias for .store.getCapacity().
-    */
-  var storeCapacity: Double = js.native
+  
   /**
     * Sends resource to a Terminal in another room with the specified name.
     * @param resourceType One of the RESOURCE_* constants.
@@ -35,9 +28,15 @@ trait StructureTerminal
     */
   def send(resourceType: ResourceConstant, amount: Double, destination: String): ScreepsReturnCode = js.native
   def send(resourceType: ResourceConstant, amount: Double, destination: String, description: String): ScreepsReturnCode = js.native
+  
+  /**
+    * A Store object that contains cargo of this structure.
+    */
+  var store: StoreDefinition = js.native
+  
+  /**
+    * The total amount of resources the storage can contain.
+    * @deprecated An alias for .store.getCapacity().
+    */
+  var storeCapacity: Double = js.native
 }
-
-@JSGlobal("StructureTerminal")
-@js.native
-object StructureTerminal extends TopLevel[StructureTerminalConstructor]
-

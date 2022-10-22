@@ -1,24 +1,20 @@
 package typingsJapgolly.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.center
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.left
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.right
 */
-trait HorizontalAlignment extends js.Object
-
+trait HorizontalAlignment extends StObject
 object HorizontalAlignment {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def center: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.center = this.cast("center")
-  @scala.inline
-  def left: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.left = this.cast("left")
-  @scala.inline
-  def right: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.right = this.cast("right")
+  
+  inline def center: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.center = "center".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.center]
+  
+  inline def left: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.left = "left".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.left]
+  
+  inline def right: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.right = "right".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.right]
 }
-

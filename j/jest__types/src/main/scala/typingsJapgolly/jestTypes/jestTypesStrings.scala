@@ -1,729 +1,429 @@
 package typingsJapgolly.jestTypes
 
-import typingsJapgolly.jestTypes.circusMod.HookType
-import typingsJapgolly.jestTypes.circusMod.SharedHookType
-import typingsJapgolly.jestTypes.circusMod.TestStatus
-import typingsJapgolly.jestTypes.circusMod._BlockMode
-import typingsJapgolly.jestTypes.configMod.DisplayNameColor
-import typingsJapgolly.jestTypes.configMod.NotifyMode
-import typingsJapgolly.jestTypes.configMod.SnapshotUpdateState
+import typingsJapgolly.jestTypes.mod.CoverageProvider
+import typingsJapgolly.jestTypes.mod.CoverageReporterName
+import typingsJapgolly.jestTypes.mod.FakeableAPI
+import typingsJapgolly.jestTypes.mod.HookType
+import typingsJapgolly.jestTypes.mod.NotifyMode
+import typingsJapgolly.jestTypes.mod.SharedHookType
+import typingsJapgolly.jestTypes.mod.SnapshotUpdateState
+import typingsJapgolly.jestTypes.mod.Status
+import typingsJapgolly.jestTypes.mod.TestStatus
+import typingsJapgolly.jestTypes.mod._BlockMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jestTypesStrings {
-  @js.native
-  sealed trait Array extends js.Object
   
   @js.native
-  sealed trait ArrayBuffer extends js.Object
+  sealed trait Date
+    extends StObject
+       with FakeableAPI
+  inline def Date: Date = "Date".asInstanceOf[Date]
   
   @js.native
-  sealed trait Boolean extends js.Object
+  sealed trait add_hook extends StObject
+  inline def add_hook: add_hook = "add_hook".asInstanceOf[add_hook]
   
   @js.native
-  sealed trait Buffer extends js.Object
-  
-  @js.native
-  sealed trait DataView extends js.Object
-  
-  @js.native
-  sealed trait Date extends js.Object
-  
-  @js.native
-  sealed trait Error extends js.Object
-  
-  @js.native
-  sealed trait EvalError extends js.Object
-  
-  @js.native
-  sealed trait Float32Array extends js.Object
-  
-  @js.native
-  sealed trait Float64Array extends js.Object
-  
-  @js.native
-  sealed trait Function extends js.Object
-  
-  @js.native
-  sealed trait GLOBAL extends js.Object
-  
-  @js.native
-  sealed trait Infinity extends js.Object
-  
-  @js.native
-  sealed trait Int16Array extends js.Object
-  
-  @js.native
-  sealed trait Int32Array extends js.Object
-  
-  @js.native
-  sealed trait Int8Array extends js.Object
-  
-  @js.native
-  sealed trait Intl extends js.Object
-  
-  @js.native
-  sealed trait JSON extends js.Object
-  
-  @js.native
-  sealed trait Map extends js.Object
-  
-  @js.native
-  sealed trait Math extends js.Object
-  
-  @js.native
-  sealed trait NaN extends js.Object
-  
-  @js.native
-  sealed trait Number extends js.Object
-  
-  @js.native
-  sealed trait Object extends js.Object
-  
-  @js.native
-  sealed trait Promise extends js.Object
-  
-  @js.native
-  sealed trait RangeError extends js.Object
-  
-  @js.native
-  sealed trait ReferenceError extends js.Object
-  
-  @js.native
-  sealed trait RegExp extends js.Object
-  
-  @js.native
-  sealed trait Set extends js.Object
-  
-  @js.native
-  sealed trait String extends js.Object
-  
-  @js.native
-  sealed trait Symbol extends js.Object
-  
-  @js.native
-  sealed trait SyntaxError extends js.Object
-  
-  @js.native
-  sealed trait TypeError extends js.Object
-  
-  @js.native
-  sealed trait URIError extends js.Object
-  
-  @js.native
-  sealed trait Uint16Array extends js.Object
-  
-  @js.native
-  sealed trait Uint32Array extends js.Object
-  
-  @js.native
-  sealed trait Uint8Array extends js.Object
-  
-  @js.native
-  sealed trait Uint8ClampedArray extends js.Object
-  
-  @js.native
-  sealed trait WeakMap extends js.Object
-  
-  @js.native
-  sealed trait WeakSet extends js.Object
-  
-  @js.native
-  sealed trait add_hook extends js.Object
-  
-  @js.native
-  sealed trait add_test extends js.Object
+  sealed trait add_test extends StObject
+  inline def add_test: add_test = "add_test".asInstanceOf[add_test]
   
   @js.native
   sealed trait afterAll
-    extends HookType
+    extends StObject
+       with HookType
        with SharedHookType
+  inline def afterAll: afterAll = "afterAll".asInstanceOf[afterAll]
   
   @js.native
-  sealed trait afterEach extends HookType
+  sealed trait afterEach
+    extends StObject
+       with HookType
+  inline def afterEach: afterEach = "afterEach".asInstanceOf[afterEach]
   
   @js.native
-  sealed trait all extends SnapshotUpdateState
+  sealed trait all
+    extends StObject
+       with SnapshotUpdateState
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait always extends NotifyMode
+  sealed trait always
+    extends StObject
+       with NotifyMode
+  inline def always: always = "always".asInstanceOf[always]
+  
+  @js.native
+  sealed trait babel
+    extends StObject
+       with CoverageProvider
+  inline def babel: babel = "babel".asInstanceOf[babel]
   
   @js.native
   sealed trait beforeAll
-    extends HookType
+    extends StObject
+       with HookType
        with SharedHookType
+  inline def beforeAll: beforeAll = "beforeAll".asInstanceOf[beforeAll]
   
   @js.native
-  sealed trait beforeEach extends HookType
+  sealed trait beforeEach
+    extends StObject
+       with HookType
+  inline def beforeEach: beforeEach = "beforeEach".asInstanceOf[beforeEach]
   
   @js.native
-  sealed trait bgBlack extends DisplayNameColor
+  sealed trait cancelAnimationFrame
+    extends StObject
+       with FakeableAPI
+  inline def cancelAnimationFrame: cancelAnimationFrame = "cancelAnimationFrame".asInstanceOf[cancelAnimationFrame]
   
   @js.native
-  sealed trait bgBlackBright extends DisplayNameColor
+  sealed trait cancelIdleCallback
+    extends StObject
+       with FakeableAPI
+  inline def cancelIdleCallback: cancelIdleCallback = "cancelIdleCallback".asInstanceOf[cancelIdleCallback]
   
   @js.native
-  sealed trait bgBlue extends DisplayNameColor
+  sealed trait change
+    extends StObject
+       with NotifyMode
+  inline def change: change = "change".asInstanceOf[change]
   
   @js.native
-  sealed trait bgBlueBright extends DisplayNameColor
+  sealed trait clearImmediate
+    extends StObject
+       with FakeableAPI
+  inline def clearImmediate: clearImmediate = "clearImmediate".asInstanceOf[clearImmediate]
   
   @js.native
-  sealed trait bgCyan extends DisplayNameColor
+  sealed trait clearInterval
+    extends StObject
+       with FakeableAPI
+  inline def clearInterval: clearInterval = "clearInterval".asInstanceOf[clearInterval]
   
   @js.native
-  sealed trait bgCyanBright extends DisplayNameColor
+  sealed trait clearTimeout
+    extends StObject
+       with FakeableAPI
+  inline def clearTimeout: clearTimeout = "clearTimeout".asInstanceOf[clearTimeout]
   
   @js.native
-  sealed trait bgGreen extends DisplayNameColor
+  sealed trait clover
+    extends StObject
+       with CoverageReporterName
+  inline def clover: clover = "clover".asInstanceOf[clover]
   
   @js.native
-  sealed trait bgGreenBright extends DisplayNameColor
+  sealed trait cobertura
+    extends StObject
+       with CoverageReporterName
+  inline def cobertura: cobertura = "cobertura".asInstanceOf[cobertura]
   
   @js.native
-  sealed trait bgMagenta extends DisplayNameColor
+  sealed trait describeBlock extends StObject
+  inline def describeBlock: describeBlock = "describeBlock".asInstanceOf[describeBlock]
   
   @js.native
-  sealed trait bgMagentaBright extends DisplayNameColor
+  sealed trait disabled
+    extends StObject
+       with Status
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait bgRed extends DisplayNameColor
+  sealed trait done
+    extends StObject
+       with TestStatus
+  inline def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait bgRedBright extends DisplayNameColor
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait bgWhite extends DisplayNameColor
+  sealed trait failed
+    extends StObject
+       with Status
+  inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
-  sealed trait bgWhiteBright extends DisplayNameColor
+  sealed trait failure
+    extends StObject
+       with NotifyMode
+  inline def failure: failure = "failure".asInstanceOf[failure]
   
   @js.native
-  sealed trait bgYellow extends DisplayNameColor
+  sealed trait `failure-change`
+    extends StObject
+       with NotifyMode
+  inline def `failure-change`: `failure-change` = "failure-change".asInstanceOf[`failure-change`]
   
   @js.native
-  sealed trait bgYellowBright extends DisplayNameColor
+  sealed trait finish_describe_definition extends StObject
+  inline def finish_describe_definition: finish_describe_definition = "finish_describe_definition".asInstanceOf[finish_describe_definition]
   
   @js.native
-  sealed trait black extends DisplayNameColor
+  sealed trait hook_failure extends StObject
+  inline def hook_failure: hook_failure = "hook_failure".asInstanceOf[hook_failure]
   
   @js.native
-  sealed trait blackBright extends DisplayNameColor
+  sealed trait hook_start extends StObject
+  inline def hook_start: hook_start = "hook_start".asInstanceOf[hook_start]
   
   @js.native
-  sealed trait blue extends DisplayNameColor
+  sealed trait hook_success extends StObject
+  inline def hook_success: hook_success = "hook_success".asInstanceOf[hook_success]
   
   @js.native
-  sealed trait blueBright extends DisplayNameColor
+  sealed trait hrtime
+    extends StObject
+       with FakeableAPI
+  inline def hrtime: hrtime = "hrtime".asInstanceOf[hrtime]
   
   @js.native
-  sealed trait change extends NotifyMode
+  sealed trait html
+    extends StObject
+       with CoverageReporterName
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
-  sealed trait clover extends js.Object
+  sealed trait `html-spa`
+    extends StObject
+       with CoverageReporterName
+  inline def `html-spa`: `html-spa` = "html-spa".asInstanceOf[`html-spa`]
   
   @js.native
-  sealed trait cobertura extends js.Object
+  sealed trait include_test_location_in_result extends StObject
+  inline def include_test_location_in_result: include_test_location_in_result = "include_test_location_in_result".asInstanceOf[include_test_location_in_result]
   
   @js.native
-  sealed trait console extends js.Object
+  sealed trait json
+    extends StObject
+       with CoverageReporterName
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait cyan extends DisplayNameColor
+  sealed trait `json-summary`
+    extends StObject
+       with CoverageReporterName
+  inline def `json-summary`: `json-summary` = "json-summary".asInstanceOf[`json-summary`]
   
   @js.native
-  sealed trait cyanBright extends DisplayNameColor
+  sealed trait lcov
+    extends StObject
+       with CoverageReporterName
+  inline def lcov: lcov = "lcov".asInstanceOf[lcov]
   
   @js.native
-  sealed trait decodeURI extends js.Object
+  sealed trait lcovonly
+    extends StObject
+       with CoverageReporterName
+  inline def lcovonly: lcovonly = "lcovonly".asInstanceOf[lcovonly]
   
   @js.native
-  sealed trait decodeURIComponent extends js.Object
+  sealed trait `new`
+    extends StObject
+       with SnapshotUpdateState
+  inline def `new`: `new` = "new".asInstanceOf[`new`]
   
   @js.native
-  sealed trait done extends TestStatus
+  sealed trait nextTick
+    extends StObject
+       with FakeableAPI
+  inline def nextTick: nextTick = "nextTick".asInstanceOf[nextTick]
   
   @js.native
-  sealed trait encodeURI extends js.Object
+  sealed trait none
+    extends StObject
+       with SnapshotUpdateState
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait encodeURIComponent extends js.Object
+  sealed trait only
+    extends StObject
+       with _BlockMode
+  inline def only: only = "only".asInstanceOf[only]
   
   @js.native
-  sealed trait error_ extends js.Object
+  sealed trait passed
+    extends StObject
+       with Status
+  inline def passed: passed = "passed".asInstanceOf[passed]
   
   @js.native
-  sealed trait eval extends js.Object
+  sealed trait pending
+    extends StObject
+       with Status
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
-  sealed trait failure extends NotifyMode
+  sealed trait performance
+    extends StObject
+       with FakeableAPI
+  inline def performance: performance = "performance".asInstanceOf[performance]
   
   @js.native
-  sealed trait `failure-change` extends NotifyMode
+  sealed trait queueMicrotask
+    extends StObject
+       with FakeableAPI
+  inline def queueMicrotask: queueMicrotask = "queueMicrotask".asInstanceOf[queueMicrotask]
   
   @js.native
-  sealed trait fake extends js.Object
+  sealed trait requestAnimationFrame
+    extends StObject
+       with FakeableAPI
+  inline def requestAnimationFrame: requestAnimationFrame = "requestAnimationFrame".asInstanceOf[requestAnimationFrame]
   
   @js.native
-  sealed trait finish_describe_definition extends js.Object
+  sealed trait requestIdleCallback
+    extends StObject
+       with FakeableAPI
+  inline def requestIdleCallback: requestIdleCallback = "requestIdleCallback".asInstanceOf[requestIdleCallback]
   
   @js.native
-  sealed trait global_ extends js.Object
+  sealed trait run_describe_finish extends StObject
+  inline def run_describe_finish: run_describe_finish = "run_describe_finish".asInstanceOf[run_describe_finish]
   
   @js.native
-  sealed trait gray extends DisplayNameColor
+  sealed trait run_describe_start extends StObject
+  inline def run_describe_start: run_describe_start = "run_describe_start".asInstanceOf[run_describe_start]
   
   @js.native
-  sealed trait green extends DisplayNameColor
+  sealed trait run_finish extends StObject
+  inline def run_finish: run_finish = "run_finish".asInstanceOf[run_finish]
   
   @js.native
-  sealed trait greenBright extends DisplayNameColor
+  sealed trait run_start extends StObject
+  inline def run_start: run_start = "run_start".asInstanceOf[run_start]
   
   @js.native
-  sealed trait grey extends DisplayNameColor
+  sealed trait setImmediate
+    extends StObject
+       with FakeableAPI
+  inline def setImmediate: setImmediate = "setImmediate".asInstanceOf[setImmediate]
   
   @js.native
-  sealed trait hook_failure extends js.Object
+  sealed trait setInterval
+    extends StObject
+       with FakeableAPI
+  inline def setInterval: setInterval = "setInterval".asInstanceOf[setInterval]
   
   @js.native
-  sealed trait hook_start extends js.Object
+  sealed trait setTimeout
+    extends StObject
+       with FakeableAPI
+  inline def setTimeout: setTimeout = "setTimeout".asInstanceOf[setTimeout]
   
   @js.native
-  sealed trait hook_success extends js.Object
-  
-  @js.native
-  sealed trait html extends js.Object
-  
-  @js.native
-  sealed trait include_test_location_in_result extends js.Object
-  
-  @js.native
-  sealed trait isFinite extends js.Object
-  
-  @js.native
-  sealed trait isNaN extends js.Object
-  
-  @js.native
-  sealed trait `json-summary` extends js.Object
-  
-  @js.native
-  sealed trait json_ extends js.Object
-  
-  @js.native
-  sealed trait lcovonly extends js.Object
-  
-  @js.native
-  sealed trait magenta extends DisplayNameColor
-  
-  @js.native
-  sealed trait magentaBright extends DisplayNameColor
-  
-  @js.native
-  sealed trait `new` extends SnapshotUpdateState
-  
-  @js.native
-  sealed trait none extends SnapshotUpdateState
-  
-  @js.native
-  sealed trait only extends _BlockMode
-  
-  @js.native
-  sealed trait parseFloat extends js.Object
-  
-  @js.native
-  sealed trait parseInt extends js.Object
-  
-  @js.native
-  sealed trait process extends js.Object
-  
-  @js.native
-  sealed trait queueMicrotask extends js.Object
-  
-  @js.native
-  sealed trait real extends js.Object
-  
-  @js.native
-  sealed trait red extends DisplayNameColor
-  
-  @js.native
-  sealed trait redBright extends DisplayNameColor
-  
-  @js.native
-  sealed trait root extends js.Object
-  
-  @js.native
-  sealed trait run_describe_finish extends js.Object
-  
-  @js.native
-  sealed trait run_describe_start extends js.Object
-  
-  @js.native
-  sealed trait run_finish extends js.Object
-  
-  @js.native
-  sealed trait run_start extends js.Object
-  
-  @js.native
-  sealed trait setup extends js.Object
+  sealed trait setup extends StObject
+  inline def setup: setup = "setup".asInstanceOf[setup]
   
   @js.native
   sealed trait skip
-    extends TestStatus
+    extends StObject
+       with TestStatus
        with _BlockMode
+  inline def skip: skip = "skip".asInstanceOf[skip]
   
   @js.native
-  sealed trait start_describe_definition extends js.Object
+  sealed trait skipped
+    extends StObject
+       with Status
+  inline def skipped: skipped = "skipped".asInstanceOf[skipped]
   
   @js.native
-  sealed trait success extends NotifyMode
+  sealed trait start_describe_definition extends StObject
+  inline def start_describe_definition: start_describe_definition = "start_describe_definition".asInstanceOf[start_describe_definition]
   
   @js.native
-  sealed trait `success-change` extends NotifyMode
+  sealed trait success
+    extends StObject
+       with NotifyMode
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait teamcity extends js.Object
+  sealed trait `success-change`
+    extends StObject
+       with NotifyMode
+  inline def `success-change`: `success-change` = "success-change".asInstanceOf[`success-change`]
   
   @js.native
-  sealed trait teardown extends js.Object
+  sealed trait teamcity
+    extends StObject
+       with CoverageReporterName
+  inline def teamcity: teamcity = "teamcity".asInstanceOf[teamcity]
   
   @js.native
-  sealed trait test_done extends js.Object
+  sealed trait teardown extends StObject
+  inline def teardown: teardown = "teardown".asInstanceOf[teardown]
   
   @js.native
-  sealed trait test_fn_failure extends js.Object
+  sealed trait test extends StObject
+  inline def test: test = "test".asInstanceOf[test]
   
   @js.native
-  sealed trait test_fn_start extends js.Object
+  sealed trait test_done extends StObject
+  inline def test_done: test_done = "test_done".asInstanceOf[test_done]
   
   @js.native
-  sealed trait test_fn_success extends js.Object
+  sealed trait test_fn_failure extends StObject
+  inline def test_fn_failure: test_fn_failure = "test_fn_failure".asInstanceOf[test_fn_failure]
   
   @js.native
-  sealed trait test_retry extends js.Object
+  sealed trait test_fn_start extends StObject
+  inline def test_fn_start: test_fn_start = "test_fn_start".asInstanceOf[test_fn_start]
   
   @js.native
-  sealed trait test_skip extends js.Object
+  sealed trait test_fn_success extends StObject
+  inline def test_fn_success: test_fn_success = "test_fn_success".asInstanceOf[test_fn_success]
   
   @js.native
-  sealed trait test_start extends js.Object
+  sealed trait test_retry extends StObject
+  inline def test_retry: test_retry = "test_retry".asInstanceOf[test_retry]
   
   @js.native
-  sealed trait test_todo extends js.Object
+  sealed trait test_skip extends StObject
+  inline def test_skip: test_skip = "test_skip".asInstanceOf[test_skip]
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait test_start extends StObject
+  inline def test_start: test_start = "test_start".asInstanceOf[test_start]
   
   @js.native
-  sealed trait `text-lcov` extends js.Object
+  sealed trait test_todo extends StObject
+  inline def test_todo: test_todo = "test_todo".asInstanceOf[test_todo]
   
   @js.native
-  sealed trait `text-summary` extends js.Object
+  sealed trait text
+    extends StObject
+       with CoverageReporterName
+  inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait `text-lcov`
+    extends StObject
+       with CoverageReporterName
+  inline def `text-lcov`: `text-lcov` = "text-lcov".asInstanceOf[`text-lcov`]
+  
+  @js.native
+  sealed trait `text-summary`
+    extends StObject
+       with CoverageReporterName
+  inline def `text-summary`: `text-summary` = "text-summary".asInstanceOf[`text-summary`]
   
   @js.native
   sealed trait todo
-    extends TestStatus
+    extends StObject
+       with Status
+       with TestStatus
        with _BlockMode
+  inline def todo: todo = "todo".asInstanceOf[todo]
   
   @js.native
-  sealed trait undefined extends js.Object
-  
-  @js.native
-  sealed trait v8debug extends js.Object
-  
-  @js.native
-  sealed trait white extends DisplayNameColor
-  
-  @js.native
-  sealed trait whiteBright extends DisplayNameColor
-  
-  @js.native
-  sealed trait yellow extends DisplayNameColor
-  
-  @js.native
-  sealed trait yellowBright extends DisplayNameColor
-  
-  @scala.inline
-  def Array: Array = "Array".asInstanceOf[Array]
-  @scala.inline
-  def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
-  @scala.inline
-  def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
-  @scala.inline
-  def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
-  @scala.inline
-  def DataView: DataView = "DataView".asInstanceOf[DataView]
-  @scala.inline
-  def Date: Date = "Date".asInstanceOf[Date]
-  @scala.inline
-  def Error: Error = "Error".asInstanceOf[Error]
-  @scala.inline
-  def EvalError: EvalError = "EvalError".asInstanceOf[EvalError]
-  @scala.inline
-  def Float32Array: Float32Array = "Float32Array".asInstanceOf[Float32Array]
-  @scala.inline
-  def Float64Array: Float64Array = "Float64Array".asInstanceOf[Float64Array]
-  @scala.inline
-  def Function: Function = "Function".asInstanceOf[Function]
-  @scala.inline
-  def GLOBAL: GLOBAL = "GLOBAL".asInstanceOf[GLOBAL]
-  @scala.inline
-  def Infinity: Infinity = "Infinity".asInstanceOf[Infinity]
-  @scala.inline
-  def Int16Array: Int16Array = "Int16Array".asInstanceOf[Int16Array]
-  @scala.inline
-  def Int32Array: Int32Array = "Int32Array".asInstanceOf[Int32Array]
-  @scala.inline
-  def Int8Array: Int8Array = "Int8Array".asInstanceOf[Int8Array]
-  @scala.inline
-  def Intl: Intl = "Intl".asInstanceOf[Intl]
-  @scala.inline
-  def JSON: JSON = "JSON".asInstanceOf[JSON]
-  @scala.inline
-  def Map: Map = "Map".asInstanceOf[Map]
-  @scala.inline
-  def Math: Math = "Math".asInstanceOf[Math]
-  @scala.inline
-  def NaN: NaN = "NaN".asInstanceOf[NaN]
-  @scala.inline
-  def Number: Number = "Number".asInstanceOf[Number]
-  @scala.inline
-  def Object: Object = "Object".asInstanceOf[Object]
-  @scala.inline
-  def Promise: Promise = "Promise".asInstanceOf[Promise]
-  @scala.inline
-  def RangeError: RangeError = "RangeError".asInstanceOf[RangeError]
-  @scala.inline
-  def ReferenceError: ReferenceError = "ReferenceError".asInstanceOf[ReferenceError]
-  @scala.inline
-  def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
-  @scala.inline
-  def Set: Set = "Set".asInstanceOf[Set]
-  @scala.inline
-  def String: String = "String".asInstanceOf[String]
-  @scala.inline
-  def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
-  @scala.inline
-  def SyntaxError: SyntaxError = "SyntaxError".asInstanceOf[SyntaxError]
-  @scala.inline
-  def TypeError: TypeError = "TypeError".asInstanceOf[TypeError]
-  @scala.inline
-  def URIError: URIError = "URIError".asInstanceOf[URIError]
-  @scala.inline
-  def Uint16Array: Uint16Array = "Uint16Array".asInstanceOf[Uint16Array]
-  @scala.inline
-  def Uint32Array: Uint32Array = "Uint32Array".asInstanceOf[Uint32Array]
-  @scala.inline
-  def Uint8Array: Uint8Array = "Uint8Array".asInstanceOf[Uint8Array]
-  @scala.inline
-  def Uint8ClampedArray: Uint8ClampedArray = "Uint8ClampedArray".asInstanceOf[Uint8ClampedArray]
-  @scala.inline
-  def WeakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
-  @scala.inline
-  def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
-  @scala.inline
-  def add_hook: add_hook = "add_hook".asInstanceOf[add_hook]
-  @scala.inline
-  def add_test: add_test = "add_test".asInstanceOf[add_test]
-  @scala.inline
-  def afterAll: afterAll = "afterAll".asInstanceOf[afterAll]
-  @scala.inline
-  def afterEach: afterEach = "afterEach".asInstanceOf[afterEach]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def beforeAll: beforeAll = "beforeAll".asInstanceOf[beforeAll]
-  @scala.inline
-  def beforeEach: beforeEach = "beforeEach".asInstanceOf[beforeEach]
-  @scala.inline
-  def bgBlack: bgBlack = "bgBlack".asInstanceOf[bgBlack]
-  @scala.inline
-  def bgBlackBright: bgBlackBright = "bgBlackBright".asInstanceOf[bgBlackBright]
-  @scala.inline
-  def bgBlue: bgBlue = "bgBlue".asInstanceOf[bgBlue]
-  @scala.inline
-  def bgBlueBright: bgBlueBright = "bgBlueBright".asInstanceOf[bgBlueBright]
-  @scala.inline
-  def bgCyan: bgCyan = "bgCyan".asInstanceOf[bgCyan]
-  @scala.inline
-  def bgCyanBright: bgCyanBright = "bgCyanBright".asInstanceOf[bgCyanBright]
-  @scala.inline
-  def bgGreen: bgGreen = "bgGreen".asInstanceOf[bgGreen]
-  @scala.inline
-  def bgGreenBright: bgGreenBright = "bgGreenBright".asInstanceOf[bgGreenBright]
-  @scala.inline
-  def bgMagenta: bgMagenta = "bgMagenta".asInstanceOf[bgMagenta]
-  @scala.inline
-  def bgMagentaBright: bgMagentaBright = "bgMagentaBright".asInstanceOf[bgMagentaBright]
-  @scala.inline
-  def bgRed: bgRed = "bgRed".asInstanceOf[bgRed]
-  @scala.inline
-  def bgRedBright: bgRedBright = "bgRedBright".asInstanceOf[bgRedBright]
-  @scala.inline
-  def bgWhite: bgWhite = "bgWhite".asInstanceOf[bgWhite]
-  @scala.inline
-  def bgWhiteBright: bgWhiteBright = "bgWhiteBright".asInstanceOf[bgWhiteBright]
-  @scala.inline
-  def bgYellow: bgYellow = "bgYellow".asInstanceOf[bgYellow]
-  @scala.inline
-  def bgYellowBright: bgYellowBright = "bgYellowBright".asInstanceOf[bgYellowBright]
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
-  @scala.inline
-  def blackBright: blackBright = "blackBright".asInstanceOf[blackBright]
-  @scala.inline
-  def blue: blue = "blue".asInstanceOf[blue]
-  @scala.inline
-  def blueBright: blueBright = "blueBright".asInstanceOf[blueBright]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def clover: clover = "clover".asInstanceOf[clover]
-  @scala.inline
-  def cobertura: cobertura = "cobertura".asInstanceOf[cobertura]
-  @scala.inline
-  def console: console = "console".asInstanceOf[console]
-  @scala.inline
-  def cyan: cyan = "cyan".asInstanceOf[cyan]
-  @scala.inline
-  def cyanBright: cyanBright = "cyanBright".asInstanceOf[cyanBright]
-  @scala.inline
-  def decodeURI: decodeURI = "decodeURI".asInstanceOf[decodeURI]
-  @scala.inline
-  def decodeURIComponent: decodeURIComponent = "decodeURIComponent".asInstanceOf[decodeURIComponent]
-  @scala.inline
-  def done: done = "done".asInstanceOf[done]
-  @scala.inline
-  def encodeURI: encodeURI = "encodeURI".asInstanceOf[encodeURI]
-  @scala.inline
-  def encodeURIComponent: encodeURIComponent = "encodeURIComponent".asInstanceOf[encodeURIComponent]
-  @scala.inline
-  def error_ : error_ = "error".asInstanceOf[error_]
-  @scala.inline
-  def eval: eval = "eval".asInstanceOf[eval]
-  @scala.inline
-  def failure: failure = "failure".asInstanceOf[failure]
-  @scala.inline
-  def `failure-change`: `failure-change` = "failure-change".asInstanceOf[`failure-change`]
-  @scala.inline
-  def fake: fake = "fake".asInstanceOf[fake]
-  @scala.inline
-  def finish_describe_definition: finish_describe_definition = "finish_describe_definition".asInstanceOf[finish_describe_definition]
-  @scala.inline
-  def global_ : global_ = "global".asInstanceOf[global_]
-  @scala.inline
-  def gray: gray = "gray".asInstanceOf[gray]
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
-  @scala.inline
-  def greenBright: greenBright = "greenBright".asInstanceOf[greenBright]
-  @scala.inline
-  def grey: grey = "grey".asInstanceOf[grey]
-  @scala.inline
-  def hook_failure: hook_failure = "hook_failure".asInstanceOf[hook_failure]
-  @scala.inline
-  def hook_start: hook_start = "hook_start".asInstanceOf[hook_start]
-  @scala.inline
-  def hook_success: hook_success = "hook_success".asInstanceOf[hook_success]
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def include_test_location_in_result: include_test_location_in_result = "include_test_location_in_result".asInstanceOf[include_test_location_in_result]
-  @scala.inline
-  def isFinite: isFinite = "isFinite".asInstanceOf[isFinite]
-  @scala.inline
-  def isNaN: isNaN = "isNaN".asInstanceOf[isNaN]
-  @scala.inline
-  def `json-summary`: `json-summary` = "json-summary".asInstanceOf[`json-summary`]
-  @scala.inline
-  def json_ : json_ = "json".asInstanceOf[json_]
-  @scala.inline
-  def lcovonly: lcovonly = "lcovonly".asInstanceOf[lcovonly]
-  @scala.inline
-  def magenta: magenta = "magenta".asInstanceOf[magenta]
-  @scala.inline
-  def magentaBright: magentaBright = "magentaBright".asInstanceOf[magentaBright]
-  @scala.inline
-  def `new`: `new` = "new".asInstanceOf[`new`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def only: only = "only".asInstanceOf[only]
-  @scala.inline
-  def parseFloat: parseFloat = "parseFloat".asInstanceOf[parseFloat]
-  @scala.inline
-  def parseInt: parseInt = "parseInt".asInstanceOf[parseInt]
-  @scala.inline
-  def process: process = "process".asInstanceOf[process]
-  @scala.inline
-  def queueMicrotask: queueMicrotask = "queueMicrotask".asInstanceOf[queueMicrotask]
-  @scala.inline
-  def real: real = "real".asInstanceOf[real]
-  @scala.inline
-  def red: red = "red".asInstanceOf[red]
-  @scala.inline
-  def redBright: redBright = "redBright".asInstanceOf[redBright]
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
-  @scala.inline
-  def run_describe_finish: run_describe_finish = "run_describe_finish".asInstanceOf[run_describe_finish]
-  @scala.inline
-  def run_describe_start: run_describe_start = "run_describe_start".asInstanceOf[run_describe_start]
-  @scala.inline
-  def run_finish: run_finish = "run_finish".asInstanceOf[run_finish]
-  @scala.inline
-  def run_start: run_start = "run_start".asInstanceOf[run_start]
-  @scala.inline
-  def setup: setup = "setup".asInstanceOf[setup]
-  @scala.inline
-  def skip: skip = "skip".asInstanceOf[skip]
-  @scala.inline
-  def start_describe_definition: start_describe_definition = "start_describe_definition".asInstanceOf[start_describe_definition]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def `success-change`: `success-change` = "success-change".asInstanceOf[`success-change`]
-  @scala.inline
-  def teamcity: teamcity = "teamcity".asInstanceOf[teamcity]
-  @scala.inline
-  def teardown: teardown = "teardown".asInstanceOf[teardown]
-  @scala.inline
-  def test_done: test_done = "test_done".asInstanceOf[test_done]
-  @scala.inline
-  def test_fn_failure: test_fn_failure = "test_fn_failure".asInstanceOf[test_fn_failure]
-  @scala.inline
-  def test_fn_start: test_fn_start = "test_fn_start".asInstanceOf[test_fn_start]
-  @scala.inline
-  def test_fn_success: test_fn_success = "test_fn_success".asInstanceOf[test_fn_success]
-  @scala.inline
-  def test_retry: test_retry = "test_retry".asInstanceOf[test_retry]
-  @scala.inline
-  def test_skip: test_skip = "test_skip".asInstanceOf[test_skip]
-  @scala.inline
-  def test_start: test_start = "test_start".asInstanceOf[test_start]
-  @scala.inline
-  def test_todo: test_todo = "test_todo".asInstanceOf[test_todo]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def `text-lcov`: `text-lcov` = "text-lcov".asInstanceOf[`text-lcov`]
-  @scala.inline
-  def `text-summary`: `text-summary` = "text-summary".asInstanceOf[`text-summary`]
-  @scala.inline
-  def todo: todo = "todo".asInstanceOf[todo]
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
-  @scala.inline
-  def v8debug: v8debug = "v8debug".asInstanceOf[v8debug]
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
-  @scala.inline
-  def whiteBright: whiteBright = "whiteBright".asInstanceOf[whiteBright]
-  @scala.inline
-  def yellow: yellow = "yellow".asInstanceOf[yellow]
-  @scala.inline
-  def yellowBright: yellowBright = "yellowBright".asInstanceOf[yellowBright]
+  sealed trait v8
+    extends StObject
+       with CoverageProvider
+  inline def v8: v8 = "v8".asInstanceOf[v8]
 }
-

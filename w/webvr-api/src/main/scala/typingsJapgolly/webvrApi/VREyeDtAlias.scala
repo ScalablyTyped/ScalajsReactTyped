@@ -1,8 +1,8 @@
 package typingsJapgolly.webvrApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Typescript doesn't allow redefinition of type aliases even if they match,
 // thus the _dt_alias to signal this being an alias for the use of DefinitelyTyped
@@ -10,14 +10,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.webvrApi.webvrApiStrings.left
   - typingsJapgolly.webvrApi.webvrApiStrings.right
 */
-trait VREyeDtAlias extends js.Object
-
+trait VREyeDtAlias extends StObject
 object VREyeDtAlias {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def left: typingsJapgolly.webvrApi.webvrApiStrings.left = this.cast("left")
-  @scala.inline
-  def right: typingsJapgolly.webvrApi.webvrApiStrings.right = this.cast("right")
+  
+  inline def left: typingsJapgolly.webvrApi.webvrApiStrings.left = "left".asInstanceOf[typingsJapgolly.webvrApi.webvrApiStrings.left]
+  
+  inline def right: typingsJapgolly.webvrApi.webvrApiStrings.right = "right".asInstanceOf[typingsJapgolly.webvrApi.webvrApiStrings.right]
 }
-

@@ -1,21 +1,28 @@
 package typingsJapgolly.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("chrome.cast.media.EditTracksInfoRequest")
-@js.native
-/**
-  * @param {Array<number>=} opt_activeTrackIds
-  * @param {chrome.cast.media.TextTrackStyle=} opt_textTrackStyle
-  * @constructor
-  * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.EditTracksInfoRequest
-  */
-class EditTracksInfoRequest () extends js.Object {
-  def this(activeTrackIds: js.Array[Double]) = this()
-  def this(activeTrackIds: js.Array[Double], textTrackStyle: TextTrackStyle) = this()
-  var activeTrackIds: js.Array[Double] = js.native
-  var textTrackStyle: TextTrackStyle = js.native
+trait EditTracksInfoRequest extends StObject {
+  
+  var activeTrackIds: js.Array[Double]
+  
+  var textTrackStyle: TextTrackStyle
 }
-
+object EditTracksInfoRequest {
+  
+  inline def apply(activeTrackIds: js.Array[Double], textTrackStyle: TextTrackStyle): EditTracksInfoRequest = {
+    val __obj = js.Dynamic.literal(activeTrackIds = activeTrackIds.asInstanceOf[js.Any], textTrackStyle = textTrackStyle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EditTracksInfoRequest]
+  }
+  
+  extension [Self <: EditTracksInfoRequest](x: Self) {
+    
+    inline def setActiveTrackIds(value: js.Array[Double]): Self = StObject.set(x, "activeTrackIds", value.asInstanceOf[js.Any])
+    
+    inline def setActiveTrackIdsVarargs(value: Double*): Self = StObject.set(x, "activeTrackIds", js.Array(value*))
+    
+    inline def setTextTrackStyle(value: TextTrackStyle): Self = StObject.set(x, "textTrackStyle", value.asInstanceOf[js.Any])
+  }
+}

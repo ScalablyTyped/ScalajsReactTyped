@@ -1,56 +1,60 @@
 package typingsJapgolly.mendixmodelsdk.mod.domainmodels
 
-import typingsJapgolly.mendixmodelsdk.baseModelMod.IModel
-import typingsJapgolly.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
-import typingsJapgolly.mendixmodelsdk.documenttemplatesMod.documenttemplates.AttributeWidget
-import typingsJapgolly.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn
-import typingsJapgolly.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem
-import typingsJapgolly.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
-import typingsJapgolly.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit
-import typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.SortItem
-import typingsJapgolly.mendixmodelsdk.pagesMod.pages.ClientTemplateParameter
-import typingsJapgolly.mendixmodelsdk.pagesMod.pages.GridColumn
-import typingsJapgolly.mendixmodelsdk.pagesMod.pages.ListViewSearch
-import typingsJapgolly.mendixmodelsdk.pagesMod.pages.MemberWidget
-import typingsJapgolly.mendixmodelsdk.pagesMod.pages.RangeSearchField
-import typingsJapgolly.mendixmodelsdk.pagesMod.pages.SingleSearchField
-import typingsJapgolly.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString
+import typingsJapgolly.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typingsJapgolly.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.WidgetValue
+import typingsJapgolly.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.AttributeWidget
+import typingsJapgolly.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DataGridColumn
+import typingsJapgolly.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.GridSortItem
+import typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression
+import typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.SortItem
+import typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplateParameter
+import typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.GridColumn
+import typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ListViewSearch
+import typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.MemberWidget
+import typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.RangeSearchField
+import typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.SingleSearchField
+import typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.StaticOrDynamicString
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * In version 9.6.0: added public
   * In version 7.11.0: introduced
   */
 @JSImport("mendixmodelsdk", "domainmodels.AttributeRef")
 @js.native
-class AttributeRef protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.domainmodels.AttributeRef {
+open class AttributeRef protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.domainmodels.AttributeRef {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "domainmodels.AttributeRef")
-@js.native
-object AttributeRef extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object AttributeRef {
+  
+  @JSImport("mendixmodelsdk", "domainmodels.AttributeRef")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
-  def create(model: IModel): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def create(model: IModel): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'attributeRef' property
@@ -59,7 +63,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInAttributeWidgetUnderAttributeRef(container: AttributeWidget): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInAttributeWidgetUnderAttributeRef(container: AttributeWidget): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'attributeRef' property
@@ -68,7 +74,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInClientTemplateParameterUnderAttributeRef(container: ClientTemplateParameter): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInClientTemplateParameterUnderAttributeRef(container: ClientTemplateParameter): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateParameterUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'attributeRef' property
@@ -77,7 +85,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInDataGridColumnUnderAttributeRef(container: DataGridColumn): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInDataGridColumnUnderAttributeRef(container: DataGridColumn): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'attributeRef' property
@@ -86,7 +96,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInDocumentTemplatesGridSortItemUnderAttributeRef(container: GridSortItem): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInDocumentTemplatesGridSortItemUnderAttributeRef(container: GridSortItem): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplatesGridSortItemUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'attributeRef' property
@@ -95,7 +107,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInGridColumnUnderAttributeRef(container: GridColumn): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInGridColumnUnderAttributeRef(container: GridColumn): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'searchRefs' property
@@ -104,7 +118,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInListViewSearchUnderSearchRefs(container: ListViewSearch): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInListViewSearchUnderSearchRefs(container: ListViewSearch): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewSearchUnderSearchRefs")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'attributeRef' property
@@ -113,7 +129,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInMemberWidgetUnderAttributeRef(container: MemberWidget): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInMemberWidgetUnderAttributeRef(container: MemberWidget): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberWidgetUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'attributeRef' property
@@ -122,7 +140,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInPagesGridSortItemUnderAttributeRef(container: typingsJapgolly.mendixmodelsdk.pagesMod.pages.GridSortItem): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInPagesGridSortItemUnderAttributeRef(container: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.GridSortItem): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPagesGridSortItemUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'lowerBoundRef' property
@@ -131,7 +151,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInRangeSearchFieldUnderLowerBoundRef(container: RangeSearchField): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInRangeSearchFieldUnderLowerBoundRef(container: RangeSearchField): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRangeSearchFieldUnderLowerBoundRef")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'upperBoundRef' property
@@ -140,7 +162,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInRangeSearchFieldUnderUpperBoundRef(container: RangeSearchField): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInRangeSearchFieldUnderUpperBoundRef(container: RangeSearchField): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRangeSearchFieldUnderUpperBoundRef")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'attributeRef' property
@@ -149,7 +173,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInSingleSearchFieldUnderAttributeRef(container: SingleSearchField): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInSingleSearchFieldUnderAttributeRef(container: SingleSearchField): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSingleSearchFieldUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'attributeRef' property
@@ -158,7 +184,9 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInSortItemUnderAttributeRef(container: SortItem): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInSortItemUnderAttributeRef(container: SortItem): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSortItemUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'attributeRef' property
@@ -167,16 +195,20 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInStaticOrDynamicStringUnderAttributeRef(container: StaticOrDynamicString): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInStaticOrDynamicStringUnderAttributeRef(container: StaticOrDynamicString): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticOrDynamicStringUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'member' property
     * of the parent expressions.VariableRefExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.11.0 and higher
+    *  7.11.0 to 9.7.0
     */
-  def createInVariableRefExpressionUnderMember(container: VariableRefExpression): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInVariableRefExpressionUnderMember(container: VariableRefExpression): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVariableRefExpressionUnderMember")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
     * The new AttributeRef will be automatically stored in the 'attributeRef' property
@@ -185,6 +217,18 @@ object AttributeRef extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.11.0 and higher
     */
-  def createInWidgetValueUnderAttributeRef(container: WidgetValue): typingsJapgolly.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = js.native
+  /* static member */
+  inline def createInWidgetValueUnderAttributeRef(container: WidgetValue): typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeRef]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "domainmodels.AttributeRef.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "domainmodels.AttributeRef.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

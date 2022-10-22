@@ -1,13 +1,16 @@
 package typingsJapgolly.bitwise
 
 import typingsJapgolly.bitwise.typesMod.Bit
+import typingsJapgolly.bitwise.typesMod.Bits
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bitwise/esm/bits/reduce-xnor", JSImport.Namespace)
-@js.native
-object bitsReduceXnorMod extends js.Object {
-  def default(bits: js.Array[Bit]): Bit = js.native
+object bitsReduceXnorMod {
+  
+  @JSImport("bitwise/bits/reduce-xnor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(bits: Bits): Bit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any]).asInstanceOf[Bit]
 }
-

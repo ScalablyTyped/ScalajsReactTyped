@@ -1,61 +1,45 @@
 package typingsJapgolly.catalog.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.catalog.catalogNumbers.`1`
-import typingsJapgolly.catalog.catalogNumbers.`2`
-import typingsJapgolly.catalog.catalogNumbers.`3`
-import typingsJapgolly.catalog.catalogNumbers.`4`
-import typingsJapgolly.catalog.catalogNumbers.`5`
-import typingsJapgolly.catalog.catalogNumbers.`6`
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.catalog.catalogInts.`1`
+import typingsJapgolly.catalog.catalogInts.`2`
+import typingsJapgolly.catalog.catalogInts.`3`
+import typingsJapgolly.catalog.catalogInts.`4`
+import typingsJapgolly.catalog.catalogInts.`5`
+import typingsJapgolly.catalog.catalogInts.`6`
 import typingsJapgolly.catalog.mod.HintSpecimenProps
 import typingsJapgolly.catalog.mod.SpecimenProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object HintSpecimen {
-  def apply(
-    directive: js.UndefOr[Boolean] = js.undefined,
-    important: js.UndefOr[Boolean] = js.undefined,
-    neutral: js.UndefOr[Boolean] = js.undefined,
-    rawBody: String = null,
-    rawOptions: String = null,
-    span: `1` | `2` | `3` | `4` | `5` | `6` = null,
-    warning: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    SpecimenProps with HintSpecimenProps, 
-    typingsJapgolly.catalog.mod.HintSpecimen, 
-    Unit, 
-    SpecimenProps with HintSpecimenProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(directive)) __obj.updateDynamic("directive")(directive.asInstanceOf[js.Any])
-    if (!js.isUndefined(important)) __obj.updateDynamic("important")(important.asInstanceOf[js.Any])
-    if (!js.isUndefined(neutral)) __obj.updateDynamic("neutral")(neutral.asInstanceOf[js.Any])
-    if (rawBody != null) __obj.updateDynamic("rawBody")(rawBody.asInstanceOf[js.Any])
-    if (rawOptions != null) __obj.updateDynamic("rawOptions")(rawOptions.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.catalog.mod.SpecimenProps with typingsJapgolly.catalog.mod.HintSpecimenProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.catalog.mod.HintSpecimen](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.catalog.mod.SpecimenProps with typingsJapgolly.catalog.mod.HintSpecimenProps])(children: _*)
-  }
   @JSImport("catalog", "HintSpecimen")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.catalog.mod.HintSpecimen] {
+    
+    inline def directive(value: Boolean): this.type = set("directive", value.asInstanceOf[js.Any])
+    
+    inline def important(value: Boolean): this.type = set("important", value.asInstanceOf[js.Any])
+    
+    inline def neutral(value: Boolean): this.type = set("neutral", value.asInstanceOf[js.Any])
+    
+    inline def rawBody(value: String): this.type = set("rawBody", value.asInstanceOf[js.Any])
+    
+    inline def rawOptions(value: String): this.type = set("rawOptions", value.asInstanceOf[js.Any])
+    
+    inline def span(value: `1` | `2` | `3` | `4` | `5` | `6`): this.type = set("span", value.asInstanceOf[js.Any])
+    
+    inline def warning(value: Boolean): this.type = set("warning", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: HintSpecimen.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SpecimenProps & HintSpecimenProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

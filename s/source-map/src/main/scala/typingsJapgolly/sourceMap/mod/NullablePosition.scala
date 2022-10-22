@@ -1,23 +1,36 @@
 package typingsJapgolly.sourceMap.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NullablePosition extends js.Object {
+trait NullablePosition extends StObject {
+  
   var column: Double | Null
+  
   var lastColumn: Double | Null
+  
   var line: Double | Null
 }
-
 object NullablePosition {
-  @scala.inline
-  def apply(column: Int | Double = null, lastColumn: Int | Double = null, line: Int | Double = null): NullablePosition = {
-    val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (lastColumn != null) __obj.updateDynamic("lastColumn")(lastColumn.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+  
+  inline def apply(): NullablePosition = {
+    val __obj = js.Dynamic.literal(column = null, lastColumn = null, line = null)
     __obj.asInstanceOf[NullablePosition]
   }
+  
+  extension [Self <: NullablePosition](x: Self) {
+    
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    
+    inline def setColumnNull: Self = StObject.set(x, "column", null)
+    
+    inline def setLastColumn(value: Double): Self = StObject.set(x, "lastColumn", value.asInstanceOf[js.Any])
+    
+    inline def setLastColumnNull: Self = StObject.set(x, "lastColumn", null)
+    
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineNull: Self = StObject.set(x, "line", null)
+  }
 }
-

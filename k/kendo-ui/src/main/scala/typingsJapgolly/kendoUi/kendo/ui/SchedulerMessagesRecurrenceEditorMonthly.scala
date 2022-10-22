@@ -1,25 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchedulerMessagesRecurrenceEditorMonthly extends js.Object {
+trait SchedulerMessagesRecurrenceEditorMonthly extends StObject {
+  
   var day: js.UndefOr[String] = js.undefined
+  
   var interval: js.UndefOr[String] = js.undefined
+  
   var repeatEvery: js.UndefOr[String] = js.undefined
+  
   var repeatOn: js.UndefOr[String] = js.undefined
 }
-
 object SchedulerMessagesRecurrenceEditorMonthly {
-  @scala.inline
-  def apply(day: String = null, interval: String = null, repeatEvery: String = null, repeatOn: String = null): SchedulerMessagesRecurrenceEditorMonthly = {
+  
+  inline def apply(): SchedulerMessagesRecurrenceEditorMonthly = {
     val __obj = js.Dynamic.literal()
-    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (repeatEvery != null) __obj.updateDynamic("repeatEvery")(repeatEvery.asInstanceOf[js.Any])
-    if (repeatOn != null) __obj.updateDynamic("repeatOn")(repeatOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorMonthly]
   }
+  
+  extension [Self <: SchedulerMessagesRecurrenceEditorMonthly](x: Self) {
+    
+    inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    
+    inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+    
+    inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    
+    inline def setRepeatEvery(value: String): Self = StObject.set(x, "repeatEvery", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatEveryUndefined: Self = StObject.set(x, "repeatEvery", js.undefined)
+    
+    inline def setRepeatOn(value: String): Self = StObject.set(x, "repeatOn", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatOnUndefined: Self = StObject.set(x, "repeatOn", js.undefined)
+  }
 }
-

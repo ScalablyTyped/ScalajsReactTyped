@@ -1,68 +1,88 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BorderLineStyle extends js.Object
-
+sealed trait BorderLineStyle extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.BorderLineStyle")
 @js.native
-object BorderLineStyle extends js.Object {
+object BorderLineStyle extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait continuous extends BorderLineStyle
+  sealed trait continuous
+    extends StObject
+       with BorderLineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait dash extends BorderLineStyle
+  sealed trait dash
+    extends StObject
+       with BorderLineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait dashDot extends BorderLineStyle
+  sealed trait dashDot
+    extends StObject
+       with BorderLineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait dashDotDot extends BorderLineStyle
+  sealed trait dashDotDot
+    extends StObject
+       with BorderLineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait dot extends BorderLineStyle
+  sealed trait dot
+    extends StObject
+       with BorderLineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait double extends BorderLineStyle
+  sealed trait double
+    extends StObject
+       with BorderLineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait none extends BorderLineStyle
+  sealed trait none
+    extends StObject
+       with BorderLineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait slantDashDot extends BorderLineStyle
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[BorderLineStyle with String] = js.native
-  /* "Continuous" */ @js.native
-  object continuous extends TopLevel[continuous with String]
-  
-  /* "Dash" */ @js.native
-  object dash extends TopLevel[dash with String]
-  
-  /* "DashDot" */ @js.native
-  object dashDot extends TopLevel[dashDot with String]
-  
-  /* "DashDotDot" */ @js.native
-  object dashDotDot extends TopLevel[dashDotDot with String]
-  
-  /* "Dot" */ @js.native
-  object dot extends TopLevel[dot with String]
-  
-  /* "Double" */ @js.native
-  object double extends TopLevel[double with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "SlantDashDot" */ @js.native
-  object slantDashDot extends TopLevel[slantDashDot with String]
-  
+  sealed trait slantDashDot
+    extends StObject
+       with BorderLineStyle
 }
-

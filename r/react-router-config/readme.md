@@ -10,10 +10,10 @@ Static route config matching for React Router
 | ------------------ | :-------------: |
 | Full name          | react-router-config |
 | Keywords           | react, router, route, routing, static routes, route config, react router |
-| # releases         | 15 |
-| # dependents       | 158 |
-| # downloads        | 3526601 |
-| # stars            | 8 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 987906.6666666666 |
+| # stars            | 47366.0 |
 
 ## Links
 - [Homepage](https://github.com/ReactTraining/react-router#readme)

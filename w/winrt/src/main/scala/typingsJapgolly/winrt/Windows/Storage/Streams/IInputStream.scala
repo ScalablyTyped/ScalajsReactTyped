@@ -1,27 +1,30 @@
 package typingsJapgolly.winrt.Windows.Storage.Streams
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import typingsJapgolly.winrt.Windows.Foundation.IClosable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IInputStream extends IClosable {
+trait IInputStream
+  extends StObject
+     with IClosable {
+  
   def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IAsyncOperationWithProgress[IBuffer, Double]
 }
-
 object IInputStream {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     close: Callback,
-    readAsync: (IBuffer, Double, InputStreamOptions) => CallbackTo[IAsyncOperationWithProgress[IBuffer, Double]]
+    readAsync: (IBuffer, Double, InputStreamOptions) => IAsyncOperationWithProgress[IBuffer, Double]
   ): IInputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close.toJsFn)
-    __obj.updateDynamic("readAsync")(js.Any.fromFunction3((t0: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer, t1: scala.Double, t2: typingsJapgolly.winrt.Windows.Storage.Streams.InputStreamOptions) => readAsync(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(close = close.toJsFn, readAsync = js.Any.fromFunction3(readAsync))
     __obj.asInstanceOf[IInputStream]
   }
+  
+  extension [Self <: IInputStream](x: Self) {
+    
+    inline def setReadAsync(value: (IBuffer, Double, InputStreamOptions) => IAsyncOperationWithProgress[IBuffer, Double]): Self = StObject.set(x, "readAsync", js.Any.fromFunction3(value))
+  }
 }
-

@@ -1,71 +1,90 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataValidationOperator extends js.Object
-
+sealed trait DataValidationOperator extends StObject
 /**
+  * Represents the data validation operator enum.
   *
-  * Represents Data validation operator enum.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.DataValidationOperator")
 @js.native
-object DataValidationOperator extends js.Object {
+object DataValidationOperator extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait between extends DataValidationOperator
+  sealed trait between
+    extends StObject
+       with DataValidationOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait equalTo extends DataValidationOperator
+  sealed trait equalTo
+    extends StObject
+       with DataValidationOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait greaterThan extends DataValidationOperator
+  sealed trait greaterThan
+    extends StObject
+       with DataValidationOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait greaterThanOrEqualTo extends DataValidationOperator
+  sealed trait greaterThanOrEqualTo
+    extends StObject
+       with DataValidationOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait lessThan extends DataValidationOperator
+  sealed trait lessThan
+    extends StObject
+       with DataValidationOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait lessThanOrEqualTo extends DataValidationOperator
+  sealed trait lessThanOrEqualTo
+    extends StObject
+       with DataValidationOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait notBetween extends DataValidationOperator
+  sealed trait notBetween
+    extends StObject
+       with DataValidationOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait notEqualTo extends DataValidationOperator
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[DataValidationOperator with String] = js.native
-  /* "Between" */ @js.native
-  object between extends TopLevel[between with String]
-  
-  /* "EqualTo" */ @js.native
-  object equalTo extends TopLevel[equalTo with String]
-  
-  /* "GreaterThan" */ @js.native
-  object greaterThan extends TopLevel[greaterThan with String]
-  
-  /* "GreaterThanOrEqualTo" */ @js.native
-  object greaterThanOrEqualTo extends TopLevel[greaterThanOrEqualTo with String]
-  
-  /* "LessThan" */ @js.native
-  object lessThan extends TopLevel[lessThan with String]
-  
-  /* "LessThanOrEqualTo" */ @js.native
-  object lessThanOrEqualTo extends TopLevel[lessThanOrEqualTo with String]
-  
-  /* "NotBetween" */ @js.native
-  object notBetween extends TopLevel[notBetween with String]
-  
-  /* "NotEqualTo" */ @js.native
-  object notEqualTo extends TopLevel[notEqualTo with String]
-  
+  sealed trait notEqualTo
+    extends StObject
+       with DataValidationOperator
 }
-

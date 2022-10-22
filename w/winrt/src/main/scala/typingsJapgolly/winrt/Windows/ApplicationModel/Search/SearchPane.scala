@@ -1,17 +1,10 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Search
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Search.SearchPane")
 @js.native
-class SearchPane () extends ISearchPane
-
-/* static members */
-@JSGlobal("Windows.ApplicationModel.Search.SearchPane")
-@js.native
-object SearchPane extends js.Object {
-  def getForCurrentView(): SearchPane = js.native
-}
-
+trait SearchPane
+  extends StObject
+     with ISearchPane

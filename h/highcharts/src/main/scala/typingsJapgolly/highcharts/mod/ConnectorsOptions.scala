@@ -1,10 +1,11 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConnectorsOptions extends js.Object {
+trait ConnectorsOptions extends StObject {
+  
   /**
     * (Gantt) Set the default pathfinder margin to use, in pixels. Some
     * Pathfinder algorithms attempt to avoid obstacles, such as other points in
@@ -16,39 +17,47 @@ trait ConnectorsOptions extends js.Object {
     * number. For more space around existing points, set this number higher.
     */
   var algorithmMargin: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Gantt) Set the default dash style for this chart's connecting lines.
     */
   var dashStyle: js.UndefOr[String] = js.undefined
+  
   /**
     * (Gantt) Enable connectors for this chart. Requires Highcharts Gantt.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Gantt) Marker options specific to the end markers for this chart's
     * Pathfinder connectors. Overrides the generic marker options.
     */
   var endMarker: js.UndefOr[ConnectorsEndMarkerOptions] = js.undefined
+  
   /**
     * (Gantt) Set the default color for this chart's Pathfinder connecting
     * lines. Defaults to the color of the point being connected.
     */
   var lineColor: js.UndefOr[ColorString] = js.undefined
+  
   /**
     * (Gantt) Set the default pixel width for this chart's Pathfinder
     * connecting lines.
     */
   var lineWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Gantt) Marker options for this chart's Pathfinder connectors. Note that
     * this option is overridden by the `startMarker` and `endMarker` options.
     */
   var marker: js.UndefOr[ConnectorsMarkerOptions] = js.undefined
+  
   /**
     * (Gantt) Marker options specific to the start markers for this chart's
     * Pathfinder connectors. Overrides the generic marker options.
     */
   var startMarker: js.UndefOr[ConnectorsStartMarkerOptions] = js.undefined
+  
   /**
     * (Gantt) Set the default pathfinder algorithm to use for this chart. It is
     * possible to define your own algorithms by adding them to the
@@ -74,31 +83,49 @@ trait ConnectorsOptions extends js.Object {
     */
   var `type`: js.UndefOr[PathfinderTypeValue] = js.undefined
 }
-
 object ConnectorsOptions {
-  @scala.inline
-  def apply(
-    algorithmMargin: Int | Double = null,
-    dashStyle: String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    endMarker: ConnectorsEndMarkerOptions = null,
-    lineColor: ColorString = null,
-    lineWidth: Int | Double = null,
-    marker: ConnectorsMarkerOptions = null,
-    startMarker: ConnectorsStartMarkerOptions = null,
-    `type`: PathfinderTypeValue = null
-  ): ConnectorsOptions = {
+  
+  inline def apply(): ConnectorsOptions = {
     val __obj = js.Dynamic.literal()
-    if (algorithmMargin != null) __obj.updateDynamic("algorithmMargin")(algorithmMargin.asInstanceOf[js.Any])
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (endMarker != null) __obj.updateDynamic("endMarker")(endMarker.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (startMarker != null) __obj.updateDynamic("startMarker")(startMarker.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorsOptions]
   }
+  
+  extension [Self <: ConnectorsOptions](x: Self) {
+    
+    inline def setAlgorithmMargin(value: Double): Self = StObject.set(x, "algorithmMargin", value.asInstanceOf[js.Any])
+    
+    inline def setAlgorithmMarginUndefined: Self = StObject.set(x, "algorithmMargin", js.undefined)
+    
+    inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setEndMarker(value: ConnectorsEndMarkerOptions): Self = StObject.set(x, "endMarker", value.asInstanceOf[js.Any])
+    
+    inline def setEndMarkerUndefined: Self = StObject.set(x, "endMarker", js.undefined)
+    
+    inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
+    inline def setMarker(value: ConnectorsMarkerOptions): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    
+    inline def setStartMarker(value: ConnectorsStartMarkerOptions): Self = StObject.set(x, "startMarker", value.asInstanceOf[js.Any])
+    
+    inline def setStartMarkerUndefined: Self = StObject.set(x, "startMarker", js.undefined)
+    
+    inline def setType(value: PathfinderTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

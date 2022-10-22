@@ -1,42 +1,83 @@
-package typingsJapgolly.jsplumb
+package typingsJapgolly.jsplumb.mod
 
+import org.scalajs.dom.Element
+import typingsJapgolly.jsplumb.anon.AnchorCount
+import typingsJapgolly.jsplumb.anon.Faces
+import typingsJapgolly.jsplumb.jsplumbStrings.AutoDefault
+import typingsJapgolly.jsplumb.jsplumbStrings.Blank
+import typingsJapgolly.jsplumb.jsplumbStrings.Dot
+import typingsJapgolly.jsplumb.jsplumbStrings.Perimeter
+import typingsJapgolly.jsplumb.jsplumbStrings.Rectangle
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type AnchorSpec = typingsJapgolly.jsplumb.mod.AnchorId | (js.Tuple2[typingsJapgolly.jsplumb.mod.AnchorId, typingsJapgolly.jsplumb.mod.AnchorOptions])
-  type ConnectionId = java.lang.String
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.jsplumb.jsplumbStrings.Bezier
-    - typingsJapgolly.jsplumb.jsplumbStrings.StateMachine
-    - typingsJapgolly.jsplumb.jsplumbStrings.Flowchart
-    - typingsJapgolly.jsplumb.jsplumbStrings.Straight
-    - typingsJapgolly.jsplumb.mod.UserDefinedConnectorId
-  */
-  type ConnectorId = typingsJapgolly.jsplumb.mod._ConnectorId | typingsJapgolly.jsplumb.mod.UserDefinedConnectorId
-  type ConnectorSpec = typingsJapgolly.jsplumb.mod.ConnectorId | (js.Tuple2[
-    typingsJapgolly.jsplumb.mod.ConnectorId, 
-    typingsJapgolly.jsplumb.mod.ConnectorOptions
-  ])
-  type ElementGroupRef = typingsJapgolly.jsplumb.mod.ElementId | org.scalajs.dom.raw.Element | (js.Array[org.scalajs.dom.raw.Element | typingsJapgolly.jsplumb.mod.ElementId])
-  type ElementId = java.lang.String
-  type ElementRef = typingsJapgolly.jsplumb.mod.ElementId | org.scalajs.dom.raw.Element
-  /* -------------------------------------------- ENDPOINTS ------------------------------------------------------ */
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.jsplumb.jsplumbStrings.Rectangle
-    - typingsJapgolly.jsplumb.jsplumbStrings.Dot
-    - typingsJapgolly.jsplumb.jsplumbStrings.Blank
-    - typingsJapgolly.jsplumb.mod.UserDefinedEndpointId
-  */
-  type EndpointId = typingsJapgolly.jsplumb.mod._EndpointId | typingsJapgolly.jsplumb.mod.UserDefinedEndpointId
-  type EndpointSpec = typingsJapgolly.jsplumb.mod.EndpointId | (js.Tuple2[
-    typingsJapgolly.jsplumb.mod.EndpointId, 
-    typingsJapgolly.jsplumb.mod.EndpointOptions
-  ])
-  type OverlaySpec = typingsJapgolly.jsplumb.mod.OverlayId | (js.Tuple2[typingsJapgolly.jsplumb.mod.OverlayId, typingsJapgolly.jsplumb.mod.OverlayOptions])
-  type Selector = java.lang.String
-  type UUID = java.lang.String
-  type UserDefinedConnectorId = java.lang.String
-  type UserDefinedEndpointId = java.lang.String
-}
+
+type AnchorArraySpec = js.Tuple7[Double, Double, Double, Double, js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[String]]
+
+type AnchorContinuousSpec = AnchorContinuousId | (js.Tuple2[AnchorContinuousId, Faces])
+
+type AnchorDynamicId = AutoDefault
+
+type AnchorDynamicSpec = js.Array[AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec]
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.jsplumb.mod.AnchorStaticId
+  - typingsJapgolly.jsplumb.mod.AnchorDynamicId
+  - typingsJapgolly.jsplumb.mod.AnchorPerimeterId
+  - typingsJapgolly.jsplumb.mod.AnchorContinuousId
+*/
+type AnchorId = _AnchorId | AnchorDynamicId | AnchorPerimeterId
+
+type AnchorPerimeterId = Perimeter
+
+type AnchorPerimeterSpec = AnchorPerimeterId | (js.Tuple2[AnchorPerimeterId, AnchorCount])
+
+type AnchorSpec = AnchorStaticSpec | AnchorDynamicSpec | AnchorPerimeterSpec | AnchorContinuousSpec
+
+type AnchorStaticSpec = AnchorStaticId | AnchorArraySpec
+
+type ConnectionId = String
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.jsplumb.jsplumbStrings.Bezier
+  - typingsJapgolly.jsplumb.jsplumbStrings.StateMachine
+  - typingsJapgolly.jsplumb.jsplumbStrings.Flowchart
+  - typingsJapgolly.jsplumb.jsplumbStrings.Straight
+  - typingsJapgolly.jsplumb.mod.UserDefinedConnectorId
+*/
+type ConnectorId = _ConnectorId | UserDefinedConnectorId
+
+type ConnectorSpec = ConnectorId | (js.Tuple2[ConnectorId, ConnectorOptions])
+
+type ElementGroupRef = ElementId | Element | (js.Array[Element | ElementId])
+
+type ElementId = String
+
+type ElementRef = ElementId | Element
+
+type EndpointBlank = Blank
+
+type EndpointBlankOptions = js.Object
+
+type EndpointDot = Dot
+
+type EndpointId = EndpointRectangle | EndpointDot | EndpointBlank
+
+type EndpointRectangle = Rectangle
+
+/* -------------------------------------------- ENDPOINTS ------------------------------------------------------ */
+type EndpointSpec = EndpointId | (js.Tuple2[
+EndpointBlank | EndpointDot | EndpointRectangle, 
+EndpointBlankOptions | EndpointDotOptions | EndpointRectangleOptions])
+
+type OrphanedPositions = Record[String, Position]
+
+type OverlaySpec = OverlayId | (js.Tuple2[OverlayId, OverlayOptions])
+
+type Selector = String
+
+type UUID = String
+
+type UserDefinedConnectorId = String

@@ -1,81 +1,165 @@
 package typingsJapgolly.vis.mod
 
-import typingsJapgolly.vis.AnonAlign
-import typingsJapgolly.vis.AnonColor
-import typingsJapgolly.vis.AnonForceDirection
-import typingsJapgolly.vis.AnonFrom
+import typingsJapgolly.vis.anon.Angle
+import typingsJapgolly.vis.anon.Enabled
+import typingsJapgolly.vis.anon.From
+import typingsJapgolly.vis.anon.Maximum
+import typingsJapgolly.vis.anon.To
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EdgeOptions extends js.Object {
+trait EdgeOptions extends StObject {
+  
   var arrowStrikethrough: js.UndefOr[Boolean] = js.undefined
-  var arrows: js.UndefOr[String | AnonFrom] = js.undefined
-  var color: js.UndefOr[String | AnonColor] = js.undefined
+  
+  var arrows: js.UndefOr[String | From] = js.undefined
+  
+  var chosen: js.UndefOr[Boolean | typingsJapgolly.vis.anon.Edge] = js.undefined
+  
+  var color: js.UndefOr[String | typingsJapgolly.vis.anon.Color] = js.undefined
+  
   var dashes: js.UndefOr[Boolean | js.Array[Double]] = js.undefined
-  var font: js.UndefOr[String | AnonAlign] = js.undefined
+  
+  var endPointOffset: js.UndefOr[To] = js.undefined
+  
+  var font: js.UndefOr[String | Font] = js.undefined
+  
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
   var hoverWidth: js.UndefOr[Double] = js.undefined
-   // please note, hoverWidth could be also a function. This case is not represented here
+  
+  // please note, hoverWidth could be also a function. This case is not represented here
   var label: js.UndefOr[String] = js.undefined
+  
   var labelHighlightBold: js.UndefOr[Boolean] = js.undefined
+  
   var length: js.UndefOr[Double] = js.undefined
+  
   var physics: js.UndefOr[Boolean] = js.undefined
+  
   var scaling: js.UndefOr[OptionsScaling] = js.undefined
+  
   var selectionWidth: js.UndefOr[Double] = js.undefined
-   // please note, selectionWidth could be also a function. This case is not represented here
+  
+  var selfReference: js.UndefOr[Angle] = js.undefined
+  
+  // please note, selectionWidth could be also a function. This case is not represented here
   var selfReferenceSize: js.UndefOr[Double] = js.undefined
+  
   var shadow: js.UndefOr[Boolean | OptionsShadow] = js.undefined
-  var smooth: js.UndefOr[Boolean | AnonForceDirection] = js.undefined
+  
+  var smooth: js.UndefOr[Boolean | Enabled] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[Double] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
+  
+  var widthConstraint: js.UndefOr[Double | Boolean | Maximum] = js.undefined
 }
-
 object EdgeOptions {
-  @scala.inline
-  def apply(
-    arrowStrikethrough: js.UndefOr[Boolean] = js.undefined,
-    arrows: String | AnonFrom = null,
-    color: String | AnonColor = null,
-    dashes: Boolean | js.Array[Double] = null,
-    font: String | AnonAlign = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    hoverWidth: Int | Double = null,
-    label: String = null,
-    labelHighlightBold: js.UndefOr[Boolean] = js.undefined,
-    length: Int | Double = null,
-    physics: js.UndefOr[Boolean] = js.undefined,
-    scaling: OptionsScaling = null,
-    selectionWidth: Int | Double = null,
-    selfReferenceSize: Int | Double = null,
-    shadow: Boolean | OptionsShadow = null,
-    smooth: Boolean | AnonForceDirection = null,
-    title: String = null,
-    value: Int | Double = null,
-    width: Int | Double = null
-  ): EdgeOptions = {
+  
+  inline def apply(): EdgeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrowStrikethrough)) __obj.updateDynamic("arrowStrikethrough")(arrowStrikethrough.asInstanceOf[js.Any])
-    if (arrows != null) __obj.updateDynamic("arrows")(arrows.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashes != null) __obj.updateDynamic("dashes")(dashes.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (hoverWidth != null) __obj.updateDynamic("hoverWidth")(hoverWidth.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelHighlightBold)) __obj.updateDynamic("labelHighlightBold")(labelHighlightBold.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(physics)) __obj.updateDynamic("physics")(physics.asInstanceOf[js.Any])
-    if (scaling != null) __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
-    if (selectionWidth != null) __obj.updateDynamic("selectionWidth")(selectionWidth.asInstanceOf[js.Any])
-    if (selfReferenceSize != null) __obj.updateDynamic("selfReferenceSize")(selfReferenceSize.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeOptions]
   }
+  
+  extension [Self <: EdgeOptions](x: Self) {
+    
+    inline def setArrowStrikethrough(value: Boolean): Self = StObject.set(x, "arrowStrikethrough", value.asInstanceOf[js.Any])
+    
+    inline def setArrowStrikethroughUndefined: Self = StObject.set(x, "arrowStrikethrough", js.undefined)
+    
+    inline def setArrows(value: String | From): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
+    
+    inline def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
+    
+    inline def setChosen(value: Boolean | typingsJapgolly.vis.anon.Edge): Self = StObject.set(x, "chosen", value.asInstanceOf[js.Any])
+    
+    inline def setChosenUndefined: Self = StObject.set(x, "chosen", js.undefined)
+    
+    inline def setColor(value: String | typingsJapgolly.vis.anon.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setDashes(value: Boolean | js.Array[Double]): Self = StObject.set(x, "dashes", value.asInstanceOf[js.Any])
+    
+    inline def setDashesUndefined: Self = StObject.set(x, "dashes", js.undefined)
+    
+    inline def setDashesVarargs(value: Double*): Self = StObject.set(x, "dashes", js.Array(value*))
+    
+    inline def setEndPointOffset(value: To): Self = StObject.set(x, "endPointOffset", value.asInstanceOf[js.Any])
+    
+    inline def setEndPointOffsetUndefined: Self = StObject.set(x, "endPointOffset", js.undefined)
+    
+    inline def setFont(value: String | Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setHoverWidth(value: Double): Self = StObject.set(x, "hoverWidth", value.asInstanceOf[js.Any])
+    
+    inline def setHoverWidthUndefined: Self = StObject.set(x, "hoverWidth", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelHighlightBold(value: Boolean): Self = StObject.set(x, "labelHighlightBold", value.asInstanceOf[js.Any])
+    
+    inline def setLabelHighlightBoldUndefined: Self = StObject.set(x, "labelHighlightBold", js.undefined)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    
+    inline def setPhysics(value: Boolean): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
+    
+    inline def setPhysicsUndefined: Self = StObject.set(x, "physics", js.undefined)
+    
+    inline def setScaling(value: OptionsScaling): Self = StObject.set(x, "scaling", value.asInstanceOf[js.Any])
+    
+    inline def setScalingUndefined: Self = StObject.set(x, "scaling", js.undefined)
+    
+    inline def setSelectionWidth(value: Double): Self = StObject.set(x, "selectionWidth", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionWidthUndefined: Self = StObject.set(x, "selectionWidth", js.undefined)
+    
+    inline def setSelfReference(value: Angle): Self = StObject.set(x, "selfReference", value.asInstanceOf[js.Any])
+    
+    inline def setSelfReferenceSize(value: Double): Self = StObject.set(x, "selfReferenceSize", value.asInstanceOf[js.Any])
+    
+    inline def setSelfReferenceSizeUndefined: Self = StObject.set(x, "selfReferenceSize", js.undefined)
+    
+    inline def setSelfReferenceUndefined: Self = StObject.set(x, "selfReference", js.undefined)
+    
+    inline def setShadow(value: Boolean | OptionsShadow): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    
+    inline def setSmooth(value: Boolean | Enabled): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthConstraint(value: Double | Boolean | Maximum): Self = StObject.set(x, "widthConstraint", value.asInstanceOf[js.Any])
+    
+    inline def setWidthConstraintUndefined: Self = StObject.set(x, "widthConstraint", js.undefined)
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

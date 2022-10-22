@@ -1,17 +1,16 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Uniform")
 @js.native
-class Uniform protected ()
-  extends typingsJapgolly.three.uniformMod.Uniform {
-  def this(value: js.Any) = this()
+open class Uniform protected ()
+  extends typingsJapgolly.three.srcThreeMod.Uniform {
+  def this(value: Any) = this()
   /**
-  	 * @deprecated
-  	 */
-  def this(`type`: String, value: js.Any) = this()
+    * @deprecated
+    */
+  def this(`type`: String, value: Any) = this()
 }
-

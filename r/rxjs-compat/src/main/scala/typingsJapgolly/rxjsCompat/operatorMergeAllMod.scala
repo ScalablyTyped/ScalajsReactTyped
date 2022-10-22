@@ -1,17 +1,19 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/mergeAll", JSImport.Namespace)
-@js.native
-object operatorMergeAllMod extends js.Object {
-  def mergeAll[T](): js.Any = js.native
-  def mergeAll[T](concurrent: Double): js.Any = js.native
-  @JSName("mergeAll")
-  def mergeAll_TR[T, R](): js.Any = js.native
-  @JSName("mergeAll")
-  def mergeAll_TR[T, R](concurrent: Double): js.Any = js.native
+object operatorMergeAllMod {
+  
+  @JSImport("rxjs-compat/operator/mergeAll", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def mergeAll[T](): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAll")().asInstanceOf[Observable_[T]]
+  inline def mergeAll[T](concurrent: Double): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAll")(concurrent.asInstanceOf[js.Any]).asInstanceOf[Observable_[T]]
+  
+  inline def mergeAll_TR[T, R](): Observable_[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAll")().asInstanceOf[Observable_[R]]
+  inline def mergeAll_TR[T, R](concurrent: Double): Observable_[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAll")(concurrent.asInstanceOf[js.Any]).asInstanceOf[Observable_[R]]
 }
-

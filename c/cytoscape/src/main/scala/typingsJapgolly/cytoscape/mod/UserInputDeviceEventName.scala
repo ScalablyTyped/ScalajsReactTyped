@@ -1,8 +1,8 @@
 package typingsJapgolly.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * These are normal browser events that you can bind to via Cytoscape.js.
@@ -20,28 +20,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.cytoscape.cytoscapeStrings.touchmove
   - typingsJapgolly.cytoscape.cytoscapeStrings.touchend
 */
-trait UserInputDeviceEventName extends js.Object
-
+trait UserInputDeviceEventName extends StObject
 object UserInputDeviceEventName {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def click: typingsJapgolly.cytoscape.cytoscapeStrings.click = this.cast("click")
-  @scala.inline
-  def mousedown: typingsJapgolly.cytoscape.cytoscapeStrings.mousedown = this.cast("mousedown")
-  @scala.inline
-  def mousemove: typingsJapgolly.cytoscape.cytoscapeStrings.mousemove = this.cast("mousemove")
-  @scala.inline
-  def mouseout: typingsJapgolly.cytoscape.cytoscapeStrings.mouseout = this.cast("mouseout")
-  @scala.inline
-  def mouseover: typingsJapgolly.cytoscape.cytoscapeStrings.mouseover = this.cast("mouseover")
-  @scala.inline
-  def mouseup: typingsJapgolly.cytoscape.cytoscapeStrings.mouseup = this.cast("mouseup")
-  @scala.inline
-  def touchend: typingsJapgolly.cytoscape.cytoscapeStrings.touchend = this.cast("touchend")
-  @scala.inline
-  def touchmove: typingsJapgolly.cytoscape.cytoscapeStrings.touchmove = this.cast("touchmove")
-  @scala.inline
-  def touchstart: typingsJapgolly.cytoscape.cytoscapeStrings.touchstart = this.cast("touchstart")
+  
+  inline def click: typingsJapgolly.cytoscape.cytoscapeStrings.click = "click".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.click]
+  
+  inline def mousedown: typingsJapgolly.cytoscape.cytoscapeStrings.mousedown = "mousedown".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.mousedown]
+  
+  inline def mousemove: typingsJapgolly.cytoscape.cytoscapeStrings.mousemove = "mousemove".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.mousemove]
+  
+  inline def mouseout: typingsJapgolly.cytoscape.cytoscapeStrings.mouseout = "mouseout".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.mouseout]
+  
+  inline def mouseover: typingsJapgolly.cytoscape.cytoscapeStrings.mouseover = "mouseover".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.mouseover]
+  
+  inline def mouseup: typingsJapgolly.cytoscape.cytoscapeStrings.mouseup = "mouseup".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.mouseup]
+  
+  inline def touchend: typingsJapgolly.cytoscape.cytoscapeStrings.touchend = "touchend".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.touchend]
+  
+  inline def touchmove: typingsJapgolly.cytoscape.cytoscapeStrings.touchmove = "touchmove".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.touchmove]
+  
+  inline def touchstart: typingsJapgolly.cytoscape.cytoscapeStrings.touchstart = "touchstart".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.touchstart]
 }
-

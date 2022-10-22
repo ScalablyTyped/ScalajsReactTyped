@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-typings
 
-Typings are for version 0.12.0
+Typings are for version 0.22.3
 
 ## Library description:
 Typings for Vega.
@@ -10,10 +10,10 @@ Typings for Vega.
 | ------------------ | :-------------: |
 | Full name          | vega-typings |
 | Keywords           | vega, typescript, typings |
-| # releases         | 93 |
-| # dependents       | 13 |
-| # downloads        | 2759152 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1045512.0 |
+| # stars            | 9848.0 |
 
 ## Links
 - [Homepage](https://github.com/vega/vega#readme)

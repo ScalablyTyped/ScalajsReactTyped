@@ -1,9 +1,12 @@
 package typingsJapgolly.asana.mod.resources
 
+import org.scalablytyped.runtime.Shortcut
 import typingsJapgolly.asana.mod.Dispatcher
+import typingsJapgolly.asana.mod.resources.Webhooks.Type
+import typingsJapgolly.bluebird.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * **Webhooks are currently in BETA - The information here may change.**
@@ -55,13 +58,13 @@ import scala.scalajs.js.annotation._
   * @class
   * @param {Dispatcher} dispatcher The API dispatcher
   */
-@JSImport("asana", "resources.Webhooks")
 @js.native
-class Webhooks protected () extends Resource {
-  /**
-    * @param dispatcher
-    */
-  def this(dispatcher: Dispatcher) = this()
+trait Webhooks
+  extends StObject
+     with TopLevelResource {
+  
+  def create(resource: String, target: String, data: Any): ^[Type] = js.native
+  def create(resource: String, target: String, data: Any, dispatchOptions: Any): ^[Type] = js.native
   /**
     * * Establishing a webhook is a two-part process. First, a simple HTTP POST
     * * similar to any other resource creation. Since you could have multiple
@@ -78,7 +81,7 @@ class Webhooks protected () extends Resource {
     * * fail to setup, and you will receive an error in response to your attempt
     * * to create it. This means you need to be able to receive and complete the
     * * webhook *while* the POST request is in-flight.
-    *   * @param {Number} resource A resource ID to subscribe to. The resource can be a task or project.
+    *   * @param {String|Number} resource A resource ID to subscribe to. The resource can be a task or project.
     *   * @param {String} target The URL to receive the HTTP POST.
     *   * @param {Object} data Data for the request
     *   * @param {Object} [dispatchOptions] Options, if any, to pass the dispatcher for the request
@@ -89,8 +92,9 @@ class Webhooks protected () extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def create(resource: Double, target: String, data: js.Any): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def create(resource: Double, target: String, data: js.Any, dispatchOptions: js.Any): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def create(resource: Double, target: String, data: Any): ^[Type] = js.native
+  def create(resource: Double, target: String, data: Any, dispatchOptions: Any): ^[Type] = js.native
+  
   /**
     * * This method permanently removes a webhook. Note that it may be possible
     * * to receive a request that was already in flight after deleting the
@@ -102,14 +106,19 @@ class Webhooks protected () extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def deleteById(webhook: String): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def deleteById(webhook: String, dispatchOptions: js.Any): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def deleteById(webhook: String): ^[Any] = js.native
+  def deleteById(webhook: String, dispatchOptions: Any): ^[Any] = js.native
+  
+  def getAll(workspace: String): ^[Any] = js.native
+  def getAll(workspace: String, params: Any): ^[Any] = js.native
+  def getAll(workspace: String, params: Any, dispatchOptions: Any): ^[Any] = js.native
+  def getAll(workspace: String, params: Unit, dispatchOptions: Any): ^[Any] = js.native
   /**
     * * Returns the compact representation of all webhooks your app has
     * * registered for the authenticated user in the given workspace.
-    *   * @param {Number} workspace The workspace to query for webhooks in.
+    *   * @param {String|Number} workspace The workspace to query for webhooks in.
     *   * @param {Object} [params] Parameters for the request
-    *   * @param {Number} [params.resource] Only return webhooks for the given resource.
+    *   * @param {String|Number} [params.resource] Only return webhooks for the given resource.
     *   * @param {Object} [dispatchOptions] Options, if any, to pass the dispatcher for the request
     *   * @return {Promise} The response from the API
     * @param workspace
@@ -117,9 +126,11 @@ class Webhooks protected () extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def getAll(workspace: Double): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def getAll(workspace: Double, params: js.Any): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def getAll(workspace: Double, params: js.Any, dispatchOptions: js.Any): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def getAll(workspace: Double): ^[Any] = js.native
+  def getAll(workspace: Double, params: Any): ^[Any] = js.native
+  def getAll(workspace: Double, params: Any, dispatchOptions: Any): ^[Any] = js.native
+  def getAll(workspace: Double, params: Unit, dispatchOptions: Any): ^[Any] = js.native
+  
   /**
     * * Returns the full record for the given webhook.
     *   * @param {String} webhook The webhook to get.
@@ -131,8 +142,123 @@ class Webhooks protected () extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def getById(webhook: String): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def getById(webhook: String, params: js.Any): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def getById(webhook: String, params: js.Any, dispatchOptions: js.Any): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def getById(webhook: String): ^[Any] = js.native
+  def getById(webhook: String, params: Any): ^[Any] = js.native
+  def getById(webhook: String, params: Any, dispatchOptions: Any): ^[Any] = js.native
+  def getById(webhook: String, params: Unit, dispatchOptions: Any): ^[Any] = js.native
 }
-
+object Webhooks extends Shortcut {
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("asana", "resources.Webhooks")
+  @js.native
+  open class ^ protected ()
+    extends StObject
+       with Webhooks {
+    /**
+      * @param dispatcher
+      */
+    def this(dispatcher: Dispatcher) = this()
+  }
+  
+  @JSImport("asana", "resources.Webhooks")
+  @js.native
+  val ^ : WebhooksStatic = js.native
+  
+  trait Filter extends StObject {
+    
+    var action: String
+    
+    var fields: js.Array[String]
+    
+    var resource_subtype: String
+    
+    var resource_type: String
+  }
+  object Filter {
+    
+    inline def apply(action: String, fields: js.Array[String], resource_subtype: String, resource_type: String): Filter = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], resource_subtype = resource_subtype.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Filter]
+    }
+    
+    extension [Self <: Filter](x: Self) {
+      
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
+      
+      inline def setResource_subtype(value: String): Self = StObject.set(x, "resource_subtype", value.asInstanceOf[js.Any])
+      
+      inline def setResource_type(value: String): Self = StObject.set(x, "resource_type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Type
+    extends StObject
+       with Resource {
+    
+    var active: Boolean
+    
+    var created_at: String
+    
+    var filters: js.Array[Filter]
+    
+    var last_failure_at: String
+    
+    var last_failure_content: String
+    
+    var last_success_at: String
+    
+    var resource: Resource
+    
+    var target: String
+  }
+  object Type {
+    
+    inline def apply(
+      active: Boolean,
+      created_at: String,
+      filters: js.Array[Filter],
+      gid: String,
+      last_failure_at: String,
+      last_failure_content: String,
+      last_success_at: String,
+      name: String,
+      resource: Resource,
+      resource_type: String,
+      target: String
+    ): Type = {
+      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], gid = gid.asInstanceOf[js.Any], last_failure_at = last_failure_at.asInstanceOf[js.Any], last_failure_content = last_failure_content.asInstanceOf[js.Any], last_success_at = last_success_at.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Type]
+    }
+    
+    extension [Self <: Type](x: Self) {
+      
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      
+      inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      
+      inline def setFilters(value: js.Array[Filter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      
+      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value*))
+      
+      inline def setLast_failure_at(value: String): Self = StObject.set(x, "last_failure_at", value.asInstanceOf[js.Any])
+      
+      inline def setLast_failure_content(value: String): Self = StObject.set(x, "last_failure_content", value.asInstanceOf[js.Any])
+      
+      inline def setLast_success_at(value: String): Self = StObject.set(x, "last_success_at", value.asInstanceOf[js.Any])
+      
+      inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type _To = WebhooksStatic
+  
+  /* This means you don't have to write `^`, but can instead just say `Webhooks.foo` */
+  override def _to: WebhooksStatic = ^
+}

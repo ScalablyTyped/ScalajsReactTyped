@@ -1,21 +1,30 @@
 package typingsJapgolly.playmusic.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LibraryOptions extends js.Object {
+trait LibraryOptions extends StObject {
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var nextPageToken: js.UndefOr[String] = js.undefined
 }
-
 object LibraryOptions {
-  @scala.inline
-  def apply(limit: Int | Double = null, nextPageToken: String = null): LibraryOptions = {
+  
+  inline def apply(): LibraryOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[LibraryOptions]
   }
+  
+  extension [Self <: LibraryOptions](x: Self) {
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+  }
 }
-

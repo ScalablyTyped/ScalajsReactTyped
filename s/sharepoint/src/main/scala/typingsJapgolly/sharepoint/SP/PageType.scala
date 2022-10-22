@@ -1,95 +1,77 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PageType extends js.Object
-
+sealed trait PageType extends StObject
 @JSGlobal("SP.PageType")
 @js.native
-object PageType extends js.Object {
-  @js.native
-  sealed trait defaultView extends PageType
+object PageType extends StObject {
   
   @js.native
-  sealed trait dialogView extends PageType
+  sealed trait defaultView
+    extends StObject
+       with PageType
   
   @js.native
-  sealed trait displayForm extends PageType
+  sealed trait dialogView
+    extends StObject
+       with PageType
   
   @js.native
-  sealed trait displayFormDialog extends PageType
+  sealed trait displayForm
+    extends StObject
+       with PageType
   
   @js.native
-  sealed trait editForm extends PageType
+  sealed trait displayFormDialog
+    extends StObject
+       with PageType
   
   @js.native
-  sealed trait editFormDialog extends PageType
+  sealed trait editForm
+    extends StObject
+       with PageType
   
   @js.native
-  sealed trait invalid extends PageType
+  sealed trait editFormDialog
+    extends StObject
+       with PageType
   
   @js.native
-  sealed trait newForm extends PageType
+  sealed trait invalid
+    extends StObject
+       with PageType
   
   @js.native
-  sealed trait newFormDialog extends PageType
+  sealed trait newForm
+    extends StObject
+       with PageType
   
   @js.native
-  sealed trait normalView extends PageType
+  sealed trait newFormDialog
+    extends StObject
+       with PageType
   
   @js.native
-  sealed trait pAGE_MAXITEMS extends PageType
+  sealed trait normalView
+    extends StObject
+       with PageType
   
   @js.native
-  sealed trait solutionForm extends PageType
+  sealed trait pAGE_MAXITEMS
+    extends StObject
+       with PageType
   
   @js.native
-  sealed trait view extends PageType
+  sealed trait solutionForm
+    extends StObject
+       with PageType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PageType with Double] = js.native
-  /* 1 */ @js.native
-  object defaultView extends TopLevel[defaultView with Double]
-  
-  /* 3 */ @js.native
-  object dialogView extends TopLevel[dialogView with Double]
-  
-  /* 5 */ @js.native
-  object displayForm extends TopLevel[displayForm with Double]
-  
-  /* 6 */ @js.native
-  object displayFormDialog extends TopLevel[displayFormDialog with Double]
-  
-  /* 7 */ @js.native
-  object editForm extends TopLevel[editForm with Double]
-  
-  /* 8 */ @js.native
-  object editFormDialog extends TopLevel[editFormDialog with Double]
-  
-  /* 0 */ @js.native
-  object invalid extends TopLevel[invalid with Double]
-  
-  /* 9 */ @js.native
-  object newForm extends TopLevel[newForm with Double]
-  
-  /* 10 */ @js.native
-  object newFormDialog extends TopLevel[newFormDialog with Double]
-  
-  /* 2 */ @js.native
-  object normalView extends TopLevel[normalView with Double]
-  
-  /* 12 */ @js.native
-  object pAGE_MAXITEMS extends TopLevel[pAGE_MAXITEMS with Double]
-  
-  /* 11 */ @js.native
-  object solutionForm extends TopLevel[solutionForm with Double]
-  
-  /* 4 */ @js.native
-  object view extends TopLevel[view with Double]
-  
+  @js.native
+  sealed trait view
+    extends StObject
+       with PageType
 }
-

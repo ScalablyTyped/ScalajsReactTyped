@@ -1,29 +1,33 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StripeOrientation extends js.Object
-
+sealed trait StripeOrientation extends StObject
 @JSImport("cesium", "StripeOrientation")
 @js.native
-object StripeOrientation extends js.Object {
-  @js.native
-  sealed trait HORIZONTAL extends StripeOrientation
-  
-  @js.native
-  sealed trait VERTICAL extends StripeOrientation
+object StripeOrientation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StripeOrientation with Double] = js.native
-  /* 0 */ @js.native
-  object HORIZONTAL extends TopLevel[HORIZONTAL with Double]
+  def apply(value: Double): js.UndefOr[StripeOrientation & Double] = js.native
   
-  /* 1 */ @js.native
-  object VERTICAL extends TopLevel[VERTICAL with Double]
+  /**
+    * Horizontal orientation.
+    */
+  @js.native
+  sealed trait HORIZONTAL
+    extends StObject
+       with StripeOrientation
+  /* 0 */ val HORIZONTAL: typingsJapgolly.cesium.mod.StripeOrientation.HORIZONTAL & Double = js.native
   
+  /**
+    * Vertical orientation.
+    */
+  @js.native
+  sealed trait VERTICAL
+    extends StObject
+       with StripeOrientation
+  /* 1 */ val VERTICAL: typingsJapgolly.cesium.mod.StripeOrientation.VERTICAL & Double = js.native
 }
-

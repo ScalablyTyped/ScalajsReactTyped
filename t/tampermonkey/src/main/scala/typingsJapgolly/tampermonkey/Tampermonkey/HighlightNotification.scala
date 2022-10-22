@@ -1,38 +1,32 @@
 package typingsJapgolly.tampermonkey.Tampermonkey
 
 import typingsJapgolly.tampermonkey.tampermonkeyBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait HighlightNotification
-  extends Notification
+  extends StObject
+     with Notification
      with NotificationDetails {
+  
   @JSName("highlight")
   var highlight_HighlightNotification: `true`
+  
   @JSName("text")
-  var text_HighlightNotification: js.UndefOr[scala.Nothing] = js.undefined
+  var text_HighlightNotification: Unit
 }
-
 object HighlightNotification {
-  @scala.inline
-  def apply(
-    highlight: `true`,
-    image: String = null,
-    onclick: NotificationOnClick = null,
-    ondone: NotificationOnDone = null,
-    text: js.UndefOr[scala.Nothing] = js.undefined,
-    timeout: Int | Double = null,
-    title: String = null
-  ): HighlightNotification = {
-    val __obj = js.Dynamic.literal(highlight = highlight.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (onclick != null) __obj.updateDynamic("onclick")(onclick.asInstanceOf[js.Any])
-    if (ondone != null) __obj.updateDynamic("ondone")(ondone.asInstanceOf[js.Any])
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+  
+  inline def apply(text: Unit): HighlightNotification = {
+    val __obj = js.Dynamic.literal(highlight = true, text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightNotification]
   }
+  
+  extension [Self <: HighlightNotification](x: Self) {
+    
+    inline def setHighlight(value: `true`): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: Unit): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+  }
 }
-

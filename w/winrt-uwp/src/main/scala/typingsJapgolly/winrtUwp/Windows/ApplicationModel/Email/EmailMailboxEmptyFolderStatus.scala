@@ -1,60 +1,49 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailMailboxEmptyFolderStatus extends js.Object
-
+sealed trait EmailMailboxEmptyFolderStatus extends StObject
 /** Indicates the result of a call to TryEmptyFolderAsync . */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus")
 @js.native
-object EmailMailboxEmptyFolderStatus extends js.Object {
+object EmailMailboxEmptyFolderStatus extends StObject {
+  
   /** An error occurred while deleting parts of the folder. */
   @js.native
-  sealed trait couldNotDeleteEverything extends EmailMailboxEmptyFolderStatus
+  sealed trait couldNotDeleteEverything
+    extends StObject
+       with EmailMailboxEmptyFolderStatus
   
   /** There was a network error while trying to empty the folder. */
   @js.native
-  sealed trait networkError extends EmailMailboxEmptyFolderStatus
+  sealed trait networkError
+    extends StObject
+       with EmailMailboxEmptyFolderStatus
   
   /** There was a permissions error while trying to empty the folder. */
   @js.native
-  sealed trait permissionsError extends EmailMailboxEmptyFolderStatus
+  sealed trait permissionsError
+    extends StObject
+       with EmailMailboxEmptyFolderStatus
   
   /** There was a server error while trying to empty the folder. */
   @js.native
-  sealed trait serverError extends EmailMailboxEmptyFolderStatus
+  sealed trait serverError
+    extends StObject
+       with EmailMailboxEmptyFolderStatus
   
   /** The folder was successfully emptied. */
   @js.native
-  sealed trait success extends EmailMailboxEmptyFolderStatus
+  sealed trait success
+    extends StObject
+       with EmailMailboxEmptyFolderStatus
   
   /** There was an unknown error while trying to empty the folder. */
   @js.native
-  sealed trait unknownFailure extends EmailMailboxEmptyFolderStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailMailboxEmptyFolderStatus with Double] = js.native
-  /* 5 */ @js.native
-  object couldNotDeleteEverything extends TopLevel[couldNotDeleteEverything with Double]
-  
-  /* 1 */ @js.native
-  object networkError extends TopLevel[networkError with Double]
-  
-  /* 2 */ @js.native
-  object permissionsError extends TopLevel[permissionsError with Double]
-  
-  /* 3 */ @js.native
-  object serverError extends TopLevel[serverError with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 4 */ @js.native
-  object unknownFailure extends TopLevel[unknownFailure with Double]
-  
+  sealed trait unknownFailure
+    extends StObject
+       with EmailMailboxEmptyFolderStatus
 }
-

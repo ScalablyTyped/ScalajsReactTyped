@@ -1,9 +1,9 @@
 package typingsJapgolly.xrm.Xrm.Controls
 
 import typingsJapgolly.xrm.Xrm.OptionSetValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for an OptionSet control.
@@ -11,7 +11,10 @@ import scala.scalajs.js.annotation._
   * @see {@link StandardControl}
   */
 @js.native
-trait OptionSetControl extends StandardControl {
+trait OptionSetControl
+  extends StObject
+     with StandardControl {
+  
   /**
     * Adds an option.
     *
@@ -23,10 +26,12 @@ trait OptionSetControl extends StandardControl {
     */
   def addOption(option: OptionSetValue): Unit = js.native
   def addOption(option: OptionSetValue, index: Double): Unit = js.native
+  
   /**
     * Clears all options.
     */
   def clearOptions(): Unit = js.native
+  
   /**
     * Removes the option matching the value.
     *
@@ -34,4 +39,3 @@ trait OptionSetControl extends StandardControl {
     */
   def removeOption(value: Double): Unit = js.native
 }
-

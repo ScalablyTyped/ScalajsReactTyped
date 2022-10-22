@@ -1,24 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.RowFocusing event.
   */
-@JSGlobal("ASPxClientGridViewRowFocusingEventArgs")
-@js.native
-class ASPxClientGridViewRowFocusingEventArgs protected () extends ASPxClientGridViewRowCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientGridViewRowFocusingEventArgs class.
-    * @param visibleIndex An integer value specifying the row visible index.
-    * @param htmlEvent An object specifying the HTML event.
-    */
-  def this(visibleIndex: Double, htmlEvent: js.Any) = this()
+trait ASPxClientGridViewRowFocusingEventArgs
+  extends StObject
+     with ASPxClientGridViewRowCancelEventArgs {
+  
   /**
     * Provides access to the parameters associated with the ASPxClientGridView.RowFocusing event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any
 }
-
+object ASPxClientGridViewRowFocusingEventArgs {
+  
+  inline def apply(cancel: Boolean, htmlEvent: Any, visibleIndex: Double): ASPxClientGridViewRowFocusingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientGridViewRowFocusingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientGridViewRowFocusingEventArgs](x: Self) {
+    
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+  }
+}

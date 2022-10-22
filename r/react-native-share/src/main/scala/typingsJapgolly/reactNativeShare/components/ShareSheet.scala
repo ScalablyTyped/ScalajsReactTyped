@@ -1,50 +1,38 @@
 package typingsJapgolly.reactNativeShare.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewProps
 import typingsJapgolly.reactNativeShare.mod.ShareSheetProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ShareSheet {
-  def apply(
-    visible: Boolean,
-    onCancel: Callback,
-    overlayStyle: StyleProp[ViewProps] = null,
-    style: StyleProp[ViewProps] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ShareSheetProps, 
-    typingsJapgolly.reactNativeShare.mod.ShareSheet, 
-    Unit, 
-    ShareSheetProps
-  ] = {
-    val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onCancel")(onCancel.toJsFn)
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeShare.mod.ShareSheetProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeShare.mod.ShareSheet](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeShare.mod.ShareSheetProps])(children: _*)
+  inline def apply(onCancel: Callback, visible: Boolean): Builder = {
+    val __props = js.Dynamic.literal(onCancel = onCancel.toJsFn, visible = visible.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ShareSheetProps]))
   }
+  
   @JSImport("react-native-share", "ShareSheet")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeShare.mod.ShareSheet] {
+    
+    inline def overlayStyle(value: StyleProp[ViewProps]): this.type = set("overlayStyle", value.asInstanceOf[js.Any])
+    
+    inline def overlayStyleNull: this.type = set("overlayStyle", null)
+    
+    inline def style(value: StyleProp[ViewProps]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+  }
+  
+  def withProps(p: ShareSheetProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

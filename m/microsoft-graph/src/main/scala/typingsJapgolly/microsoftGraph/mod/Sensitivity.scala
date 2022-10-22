@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.normal
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.`private`
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.confidential
 */
-trait Sensitivity extends js.Object
-
+trait Sensitivity extends StObject
 object Sensitivity {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def confidential: typingsJapgolly.microsoftGraph.microsoftGraphStrings.confidential = this.cast("confidential")
-  @scala.inline
-  def normal: typingsJapgolly.microsoftGraph.microsoftGraphStrings.normal = this.cast("normal")
-  @scala.inline
-  def personal: typingsJapgolly.microsoftGraph.microsoftGraphStrings.personal = this.cast("personal")
-  @scala.inline
-  def `private`: typingsJapgolly.microsoftGraph.microsoftGraphStrings.`private` = this.cast("private")
+  
+  inline def confidential: typingsJapgolly.microsoftGraph.microsoftGraphStrings.confidential = "confidential".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.confidential]
+  
+  inline def normal: typingsJapgolly.microsoftGraph.microsoftGraphStrings.normal = "normal".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.normal]
+  
+  inline def personal: typingsJapgolly.microsoftGraph.microsoftGraphStrings.personal = "personal".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.personal]
+  
+  inline def `private`: typingsJapgolly.microsoftGraph.microsoftGraphStrings.`private` = "private".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.`private`]
 }
-

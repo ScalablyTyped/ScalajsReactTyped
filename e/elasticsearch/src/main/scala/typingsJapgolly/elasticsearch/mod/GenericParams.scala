@@ -1,36 +1,58 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GenericParams extends js.Object {
-  var body: js.UndefOr[js.Any] = js.undefined
+trait GenericParams extends StObject {
+  
+  var body: js.UndefOr[Any] = js.undefined
+  
   var filterPath: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var ignore: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  
   var maxRetries: js.UndefOr[Double] = js.undefined
+  
   var method: js.UndefOr[String] = js.undefined
+  
   var requestTimeout: js.UndefOr[Double] = js.undefined
 }
-
 object GenericParams {
-  @scala.inline
-  def apply(
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    requestTimeout: Int | Double = null
-  ): GenericParams = {
+  
+  inline def apply(): GenericParams = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenericParams]
   }
+  
+  extension [Self <: GenericParams](x: Self) {
+    
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setFilterPath(value: String | js.Array[String]): Self = StObject.set(x, "filterPath", value.asInstanceOf[js.Any])
+    
+    inline def setFilterPathUndefined: Self = StObject.set(x, "filterPath", js.undefined)
+    
+    inline def setFilterPathVarargs(value: String*): Self = StObject.set(x, "filterPath", js.Array(value*))
+    
+    inline def setIgnore(value: Double | js.Array[Double]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+    
+    inline def setIgnoreVarargs(value: Double*): Self = StObject.set(x, "ignore", js.Array(value*))
+    
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+  }
 }
-

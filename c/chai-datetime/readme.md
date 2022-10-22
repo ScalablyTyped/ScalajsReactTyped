@@ -9,15 +9,15 @@ date / time comparison matchers for chai
 | ------------------ | :-------------: |
 | Full name          | chai-datetime |
 | Keywords           | chai, chai-plugin, objects, date, time, browser, testing, jasmine |
-| # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 1770136 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 392823.0 |
+| # stars            | 43.0 |
 
 ## Links
-- [Homepage](https://github.com/gaslight/chai-datetime#readme)
-- [Bugs](https://github.com/gaslight/chai-datetime/issues)
-- [Repository](https://github.com/gaslight/chai-datetime)
+- [Homepage](https://github.com/mguterl/chai-datetime#readme)
+- [Bugs](https://github.com/mguterl/chai-datetime/issues)
+- [Repository](https://github.com/mguterl/chai-datetime)
 - [Npm](https://www.npmjs.com/package/chai-datetime)
     
 

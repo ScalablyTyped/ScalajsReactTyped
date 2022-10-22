@@ -1,24 +1,20 @@
 package typingsJapgolly.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gm.gmStrings.frame
   - typingsJapgolly.gm.gmStrings.unframe
   - typingsJapgolly.gm.gmStrings.concatenate
 */
-trait OperationMode extends js.Object
-
+trait OperationMode extends StObject
 object OperationMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def concatenate: typingsJapgolly.gm.gmStrings.concatenate = this.cast("concatenate")
-  @scala.inline
-  def frame: typingsJapgolly.gm.gmStrings.frame = this.cast("frame")
-  @scala.inline
-  def unframe: typingsJapgolly.gm.gmStrings.unframe = this.cast("unframe")
+  
+  inline def concatenate: typingsJapgolly.gm.gmStrings.concatenate = "concatenate".asInstanceOf[typingsJapgolly.gm.gmStrings.concatenate]
+  
+  inline def frame: typingsJapgolly.gm.gmStrings.frame = "frame".asInstanceOf[typingsJapgolly.gm.gmStrings.frame]
+  
+  inline def unframe: typingsJapgolly.gm.gmStrings.unframe = "unframe".asInstanceOf[typingsJapgolly.gm.gmStrings.unframe]
 }
-

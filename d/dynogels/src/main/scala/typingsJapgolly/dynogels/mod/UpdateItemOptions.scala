@@ -1,61 +1,90 @@
 package typingsJapgolly.dynogels.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.awsSdk.dynamodbMod.AttributeUpdates
-import typingsJapgolly.awsSdk.dynamodbMod.ConditionExpression
-import typingsJapgolly.awsSdk.dynamodbMod.ConditionalOperator
-import typingsJapgolly.awsSdk.dynamodbMod.ExpectedAttributeMap
-import typingsJapgolly.awsSdk.dynamodbMod.ExpressionAttributeNameMap
-import typingsJapgolly.awsSdk.dynamodbMod.ReturnConsumedCapacity
-import typingsJapgolly.awsSdk.dynamodbMod.ReturnItemCollectionMetrics
-import typingsJapgolly.awsSdk.dynamodbMod.ReturnValue
-import typingsJapgolly.awsSdk.dynamodbMod.UpdateExpression
+import typingsJapgolly.awsSdk.clientsDynamodbMod.AttributeUpdates
+import typingsJapgolly.awsSdk.clientsDynamodbMod.ConditionExpression
+import typingsJapgolly.awsSdk.clientsDynamodbMod.ConditionalOperator
+import typingsJapgolly.awsSdk.clientsDynamodbMod.ExpectedAttributeMap
+import typingsJapgolly.awsSdk.clientsDynamodbMod.ExpressionAttributeNameMap
+import typingsJapgolly.awsSdk.clientsDynamodbMod.ReturnConsumedCapacity
+import typingsJapgolly.awsSdk.clientsDynamodbMod.ReturnItemCollectionMetrics
+import typingsJapgolly.awsSdk.clientsDynamodbMod.ReturnValue
+import typingsJapgolly.awsSdk.clientsDynamodbMod.UpdateExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UpdateItemOptions extends js.Object {
-  var AttributeUpdates: js.UndefOr[typingsJapgolly.awsSdk.dynamodbMod.AttributeUpdates] = js.undefined
-  var ConditionExpression: js.UndefOr[typingsJapgolly.awsSdk.dynamodbMod.ConditionExpression] = js.undefined
-  var ConditionalOperator: js.UndefOr[typingsJapgolly.awsSdk.dynamodbMod.ConditionalOperator] = js.undefined
+trait UpdateItemOptions extends StObject {
+  
+  var AttributeUpdates: js.UndefOr[typingsJapgolly.awsSdk.clientsDynamodbMod.AttributeUpdates] = js.undefined
+  
+  var ConditionExpression: js.UndefOr[typingsJapgolly.awsSdk.clientsDynamodbMod.ConditionExpression] = js.undefined
+  
+  var ConditionalOperator: js.UndefOr[typingsJapgolly.awsSdk.clientsDynamodbMod.ConditionalOperator] = js.undefined
+  
   var Expected: js.UndefOr[ExpectedAttributeMap] = js.undefined
+  
   var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.undefined
-  var ExpressionAttributeValues: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var ReturnConsumedCapacity: js.UndefOr[typingsJapgolly.awsSdk.dynamodbMod.ReturnConsumedCapacity] = js.undefined
-  var ReturnItemCollectionMetrics: js.UndefOr[typingsJapgolly.awsSdk.dynamodbMod.ReturnItemCollectionMetrics] = js.undefined
+  
+  var ExpressionAttributeValues: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
+  var ReturnConsumedCapacity: js.UndefOr[typingsJapgolly.awsSdk.clientsDynamodbMod.ReturnConsumedCapacity] = js.undefined
+  
+  var ReturnItemCollectionMetrics: js.UndefOr[typingsJapgolly.awsSdk.clientsDynamodbMod.ReturnItemCollectionMetrics] = js.undefined
+  
   var ReturnValues: js.UndefOr[ReturnValue] = js.undefined
-  var UpdateExpression: js.UndefOr[typingsJapgolly.awsSdk.dynamodbMod.UpdateExpression] = js.undefined
-  var expected: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  
+  var UpdateExpression: js.UndefOr[typingsJapgolly.awsSdk.clientsDynamodbMod.UpdateExpression] = js.undefined
+  
+  var expected: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
-
 object UpdateItemOptions {
-  @scala.inline
-  def apply(
-    AttributeUpdates: AttributeUpdates = null,
-    ConditionExpression: ConditionExpression = null,
-    ConditionalOperator: ConditionalOperator = null,
-    Expected: ExpectedAttributeMap = null,
-    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
-    ExpressionAttributeValues: StringDictionary[js.Any] = null,
-    ReturnConsumedCapacity: ReturnConsumedCapacity = null,
-    ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = null,
-    ReturnValues: ReturnValue = null,
-    UpdateExpression: UpdateExpression = null,
-    expected: StringDictionary[js.Any] = null
-  ): UpdateItemOptions = {
+  
+  inline def apply(): UpdateItemOptions = {
     val __obj = js.Dynamic.literal()
-    if (AttributeUpdates != null) __obj.updateDynamic("AttributeUpdates")(AttributeUpdates.asInstanceOf[js.Any])
-    if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression.asInstanceOf[js.Any])
-    if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])
-    if (Expected != null) __obj.updateDynamic("Expected")(Expected.asInstanceOf[js.Any])
-    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames.asInstanceOf[js.Any])
-    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues.asInstanceOf[js.Any])
-    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
-    if (ReturnItemCollectionMetrics != null) __obj.updateDynamic("ReturnItemCollectionMetrics")(ReturnItemCollectionMetrics.asInstanceOf[js.Any])
-    if (ReturnValues != null) __obj.updateDynamic("ReturnValues")(ReturnValues.asInstanceOf[js.Any])
-    if (UpdateExpression != null) __obj.updateDynamic("UpdateExpression")(UpdateExpression.asInstanceOf[js.Any])
-    if (expected != null) __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateItemOptions]
   }
+  
+  extension [Self <: UpdateItemOptions](x: Self) {
+    
+    inline def setAttributeUpdates(value: AttributeUpdates): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
+    
+    inline def setAttributeUpdatesUndefined: Self = StObject.set(x, "AttributeUpdates", js.undefined)
+    
+    inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
+    
+    inline def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
+    
+    inline def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
+    
+    inline def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
+    
+    inline def setExpected(value: ExpectedAttributeMap): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
+    
+    inline def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
+    
+    inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+    
+    inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+    
+    inline def setExpressionAttributeValues(value: StringDictionary[Any]): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+    
+    inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
+    
+    inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+    
+    inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+    
+    inline def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
+    
+    inline def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
+    
+    inline def setReturnValues(value: ReturnValue): Self = StObject.set(x, "ReturnValues", value.asInstanceOf[js.Any])
+    
+    inline def setReturnValuesUndefined: Self = StObject.set(x, "ReturnValues", js.undefined)
+    
+    inline def setUpdateExpression(value: UpdateExpression): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateExpressionUndefined: Self = StObject.set(x, "UpdateExpression", js.undefined)
+  }
 }
-

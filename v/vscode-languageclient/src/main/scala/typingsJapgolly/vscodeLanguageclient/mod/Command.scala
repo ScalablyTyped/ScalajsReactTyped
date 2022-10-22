@@ -1,19 +1,22 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "Command")
-@js.native
-object Command extends js.Object {
+object Command {
+  
+  @JSImport("vscode-languageclient", "Command")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Command literal.
     */
-  def create(title: String, command: String, args: js.Any*): typingsJapgolly.vscodeLanguageserverTypes.mod.Command = js.native
+  inline def create(title: String, command: String, args: Any*): typingsJapgolly.vscodeLanguageserverTypes.mod.Command = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((scala.List(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.Command]
+  
   /**
     * Checks whether the given literal conforms to the [Command](#Command) interface.
     */
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Command */ Boolean = js.native
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Command */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Command */ Boolean]
 }
-

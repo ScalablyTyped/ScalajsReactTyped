@@ -1,42 +1,22 @@
 package typingsJapgolly.navigationReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent.Default
 import typingsJapgolly.navigation.mod.StateNavigator
-import typingsJapgolly.navigationReact.AnonStateNavigator
+import typingsJapgolly.navigationReact.mod.NavigationHandlerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NavigationHandler {
-  def apply(
-    stateNavigator: StateNavigator,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    AnonStateNavigator, 
-    typingsJapgolly.navigationReact.mod.NavigationHandler, 
-    Unit, 
-    AnonStateNavigator
-  ] = {
-    val __obj = js.Dynamic.literal(stateNavigator = stateNavigator.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.navigationReact.AnonStateNavigator, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.navigationReact.mod.NavigationHandler](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.navigationReact.AnonStateNavigator])(children: _*)
+  inline def apply(stateNavigator: StateNavigator[Any, String]): Default[typingsJapgolly.navigationReact.mod.NavigationHandler] = {
+    val __props = js.Dynamic.literal(stateNavigator = stateNavigator.asInstanceOf[js.Any])
+    new Default[typingsJapgolly.navigationReact.mod.NavigationHandler](js.Array(this.component, __props.asInstanceOf[NavigationHandlerProps]))
   }
+  
   @JSImport("navigation-react", "NavigationHandler")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: NavigationHandlerProps): Default[typingsJapgolly.navigationReact.mod.NavigationHandler] = new Default[typingsJapgolly.navigationReact.mod.NavigationHandler](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

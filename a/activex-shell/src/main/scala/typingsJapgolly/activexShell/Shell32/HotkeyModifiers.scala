@@ -1,32 +1,28 @@
 package typingsJapgolly.activexShell.Shell32
 
-import typingsJapgolly.activexShell.activexShellNumbers.`1`
-import typingsJapgolly.activexShell.activexShellNumbers.`2`
-import typingsJapgolly.activexShell.activexShellNumbers.`4`
-import typingsJapgolly.activexShell.activexShellNumbers.`8`
+import typingsJapgolly.activexShell.activexShellInts.`1`
+import typingsJapgolly.activexShell.activexShellInts.`2`
+import typingsJapgolly.activexShell.activexShellInts.`4`
+import typingsJapgolly.activexShell.activexShellInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line no-const-enum
+// eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexShell.activexShellNumbers.`1`
-  - typingsJapgolly.activexShell.activexShellNumbers.`2`
-  - typingsJapgolly.activexShell.activexShellNumbers.`4`
-  - typingsJapgolly.activexShell.activexShellNumbers.`8`
+  - typingsJapgolly.activexShell.activexShellInts.`1`
+  - typingsJapgolly.activexShell.activexShellInts.`2`
+  - typingsJapgolly.activexShell.activexShellInts.`4`
+  - typingsJapgolly.activexShell.activexShellInts.`8`
 */
-trait HotkeyModifiers extends js.Object
-
+trait HotkeyModifiers extends StObject
 object HotkeyModifiers {
-  @scala.inline
-  def ALT: `4` = this.cast(4)
-  @scala.inline
-  def CTRL: `2` = this.cast(2)
-  @scala.inline
-  def Extended: `8` = this.cast(8)
-  @scala.inline
-  def SHIFT: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ALT: `4` = 4.asInstanceOf[`4`]
+  
+  inline def CTRL: `2` = 2.asInstanceOf[`2`]
+  
+  inline def Extended: `8` = 8.asInstanceOf[`8`]
+  
+  inline def SHIFT: `1` = 1.asInstanceOf[`1`]
 }
-

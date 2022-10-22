@@ -1,26 +1,31 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.cardMediaCardMediaMod.CardMediaProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.cardMediaCardMediaMod.CardMediaTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.div
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/CardMedia", JSImport.Namespace)
-@js.native
-object cardMediaMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[CardMediaProps, ComponentState, js.Any] {
-    def this(props: CardMediaProps) = this()
-    def this(props: CardMediaProps, context: js.Any) = this()
-  }
+object cardMediaMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Cards](https://mui.com/components/cards/)
+    *
+    * API:
+    *
+    * - [CardMedia API](https://mui.com/api/card-media/)
+    */
+  @JSImport("@material-ui/core/CardMedia", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[CardMediaProps]]
+  val default: OverridableComponent[CardMediaTypeMap[js.Object, div]] = js.native
   
+  type _To = OverridableComponent[CardMediaTypeMap[js.Object, div]]
+  
+  /* This means you don't have to write `default`, but can instead just say `cardMediaMod.foo` */
+  override def _to: OverridableComponent[CardMediaTypeMap[js.Object, div]] = default
 }
-

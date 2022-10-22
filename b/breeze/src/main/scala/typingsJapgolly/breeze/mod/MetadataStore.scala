@@ -1,22 +1,25 @@
 package typingsJapgolly.breeze.mod
 
 import typingsJapgolly.breeze.breeze.MetadataStoreOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("breeze", "MetadataStore")
 @js.native
-class MetadataStore ()
-  extends typingsJapgolly.breeze.breeze.MetadataStore {
+open class MetadataStore ()
+  extends StObject
+     with typingsJapgolly.breeze.breeze.MetadataStore {
   def this(config: MetadataStoreOptions) = this()
 }
-
 /* static members */
-@JSImport("breeze", "MetadataStore")
-@js.native
-object MetadataStore extends js.Object {
-  def importMetadata(exportedString: String): typingsJapgolly.breeze.breeze.MetadataStore = js.native
-  def normalizeTypeName(typeName: String): String = js.native
+object MetadataStore {
+  
+  @JSImport("breeze", "MetadataStore")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def importMetadata(exportedString: String): typingsJapgolly.breeze.breeze.MetadataStore = ^.asInstanceOf[js.Dynamic].applyDynamic("importMetadata")(exportedString.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.breeze.breeze.MetadataStore]
+  
+  inline def normalizeTypeName(typeName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTypeName")(typeName.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

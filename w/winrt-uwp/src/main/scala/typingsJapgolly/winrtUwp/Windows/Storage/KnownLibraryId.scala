@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Storage
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KnownLibraryId extends js.Object
-
+sealed trait KnownLibraryId extends StObject
 /** Provides values that identify storage libraries. */
 @JSGlobal("Windows.Storage.KnownLibraryId")
 @js.native
-object KnownLibraryId extends js.Object {
+object KnownLibraryId extends StObject {
+  
   /** Documents library. */
   @js.native
-  sealed trait documents extends KnownLibraryId
+  sealed trait documents
+    extends StObject
+       with KnownLibraryId
   
   /** Music library. */
   @js.native
-  sealed trait music extends KnownLibraryId
+  sealed trait music
+    extends StObject
+       with KnownLibraryId
   
   /** Pictures library. */
   @js.native
-  sealed trait pictures extends KnownLibraryId
+  sealed trait pictures
+    extends StObject
+       with KnownLibraryId
   
   /** Videos library. */
   @js.native
-  sealed trait videos extends KnownLibraryId
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KnownLibraryId with Double] = js.native
-  /* 3 */ @js.native
-  object documents extends TopLevel[documents with Double]
-  
-  /* 0 */ @js.native
-  object music extends TopLevel[music with Double]
-  
-  /* 1 */ @js.native
-  object pictures extends TopLevel[pictures with Double]
-  
-  /* 2 */ @js.native
-  object videos extends TopLevel[videos with Double]
-  
+  sealed trait videos
+    extends StObject
+       with KnownLibraryId
 }
-

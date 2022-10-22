@@ -10,10 +10,10 @@ Typings are for version 0.1.26
 | ------------------ | :-------------: |
 | Full name          | wonder-frp |
 | Keywords           | FRP, Wonder-FRP |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 1620 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 105.66666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/wonder-frp)

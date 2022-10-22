@@ -10,15 +10,13 @@ Compute the Voronoi diagram of a set of two-dimensional points.
 | ------------------ | :-------------: |
 | Full name          | d3-voronoi |
 | Keywords           | d3, d3-module, voronoi, delaunay |
-| # releases         | 3 |
-| # dependents       | 56 |
-| # downloads        | 26942671 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5089244.666666667 |
+| # stars            | 243.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-voronoi/)
-- [Bugs](https://github.com/d3/d3-voronoi/issues)
-- [Repository](https://github.com/d3/d3-voronoi)
 - [Npm](https://www.npmjs.com/package/d3-voronoi)
     
 

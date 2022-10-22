@@ -1,21 +1,30 @@
 package typingsJapgolly.jqueryElang
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPageResource extends js.Object {
+trait IPageResource extends StObject {
+  
   var lang: js.UndefOr[IPageLangItems] = js.undefined
+  
   var selectedLang: js.UndefOr[String] = js.undefined
 }
-
 object IPageResource {
-  @scala.inline
-  def apply(lang: IPageLangItems = null, selectedLang: String = null): IPageResource = {
+  
+  inline def apply(): IPageResource = {
     val __obj = js.Dynamic.literal()
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (selectedLang != null) __obj.updateDynamic("selectedLang")(selectedLang.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPageResource]
   }
+  
+  extension [Self <: IPageResource](x: Self) {
+    
+    inline def setLang(value: IPageLangItems): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    
+    inline def setSelectedLang(value: String): Self = StObject.set(x, "selectedLang", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedLangUndefined: Self = StObject.set(x, "selectedLang", js.undefined)
+  }
 }
-

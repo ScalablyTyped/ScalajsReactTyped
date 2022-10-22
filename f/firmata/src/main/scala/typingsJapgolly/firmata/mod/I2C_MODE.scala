@@ -1,32 +1,28 @@
 package typingsJapgolly.firmata.mod
 
-import typingsJapgolly.firmata.firmataNumbers.`0`
-import typingsJapgolly.firmata.firmataNumbers.`1`
-import typingsJapgolly.firmata.firmataNumbers.`2`
-import typingsJapgolly.firmata.firmataNumbers.`3`
+import typingsJapgolly.firmata.firmataInts.`0`
+import typingsJapgolly.firmata.firmataInts.`1`
+import typingsJapgolly.firmata.firmataInts.`2`
+import typingsJapgolly.firmata.firmataInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/firmata/firmata.js/blob/v0.15.0/lib/firmata.js#L466-L471
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.firmata.firmataNumbers.`0`
-  - typingsJapgolly.firmata.firmataNumbers.`1`
-  - typingsJapgolly.firmata.firmataNumbers.`2`
-  - typingsJapgolly.firmata.firmataNumbers.`3`
+  - typingsJapgolly.firmata.firmataInts.`0`
+  - typingsJapgolly.firmata.firmataInts.`1`
+  - typingsJapgolly.firmata.firmataInts.`2`
+  - typingsJapgolly.firmata.firmataInts.`3`
 */
-trait I2C_MODE extends js.Object
-
+trait I2C_MODE extends StObject
 object I2C_MODE {
-  @scala.inline
-  def CONTINUOUS_READ: `2` = this.cast(2)
-  @scala.inline
-  def READ: `1` = this.cast(1)
-  @scala.inline
-  def STOP_READING: `3` = this.cast(3)
-  @scala.inline
-  def WRITE: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CONTINUOUS_READ: `2` = 2.asInstanceOf[`2`]
+  
+  inline def READ: `1` = 1.asInstanceOf[`1`]
+  
+  inline def STOP_READING: `3` = 3.asInstanceOf[`3`]
+  
+  inline def WRITE: `0` = 0.asInstanceOf[`0`]
 }
-

@@ -6,6 +6,7 @@ import typingsJapgolly.mapboxGl.mapboxGlStrings.auto
 import typingsJapgolly.mapboxGl.mapboxGlStrings.both
 import typingsJapgolly.mapboxGl.mapboxGlStrings.center
 import typingsJapgolly.mapboxGl.mapboxGlStrings.height
+import typingsJapgolly.mapboxGl.mapboxGlStrings.horizontal
 import typingsJapgolly.mapboxGl.mapboxGlStrings.left
 import typingsJapgolly.mapboxGl.mapboxGlStrings.line
 import typingsJapgolly.mapboxGl.mapboxGlStrings.lowercase
@@ -15,136 +16,283 @@ import typingsJapgolly.mapboxGl.mapboxGlStrings.point
 import typingsJapgolly.mapboxGl.mapboxGlStrings.right
 import typingsJapgolly.mapboxGl.mapboxGlStrings.source_
 import typingsJapgolly.mapboxGl.mapboxGlStrings.uppercase
+import typingsJapgolly.mapboxGl.mapboxGlStrings.vertical
 import typingsJapgolly.mapboxGl.mapboxGlStrings.viewport
 import typingsJapgolly.mapboxGl.mapboxGlStrings.width
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SymbolLayout
-  extends Layout
+  extends StObject
+     with Layout
      with _AnyLayout {
+  
   var `icon-allow-overlap`: js.UndefOr[Boolean | StyleFunction | Expression] = js.undefined
+  
   var `icon-anchor`: js.UndefOr[Anchor | StyleFunction | Expression] = js.undefined
-  var `icon-ignore-placement`: js.UndefOr[Boolean] = js.undefined
+  
+  var `icon-ignore-placement`: js.UndefOr[Boolean | Expression] = js.undefined
+  
   var `icon-image`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
+  
   var `icon-keep-upright`: js.UndefOr[Boolean] = js.undefined
+  
   var `icon-offset`: js.UndefOr[js.Array[Double] | StyleFunction | Expression] = js.undefined
+  
   var `icon-optional`: js.UndefOr[Boolean] = js.undefined
+  
   var `icon-padding`: js.UndefOr[Double | Expression] = js.undefined
+  
   var `icon-pitch-alignment`: js.UndefOr[map | viewport | auto] = js.undefined
+  
   var `icon-rotate`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `icon-rotation-alignment`: js.UndefOr[map | viewport | auto] = js.undefined
+  
   var `icon-size`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `icon-text-fit`: js.UndefOr[none | both | width | height] = js.undefined
+  
   var `icon-text-fit-padding`: js.UndefOr[js.Array[Double] | Expression] = js.undefined
+  
   var `symbol-avoid-edges`: js.UndefOr[Boolean] = js.undefined
+  
   var `symbol-placement`: js.UndefOr[point | line | `line-center`] = js.undefined
+  
+  var `symbol-sort-key`: js.UndefOr[Double | Expression] = js.undefined
+  
   var `symbol-spacing`: js.UndefOr[Double | Expression] = js.undefined
+  
   var `symbol-z-order`: js.UndefOr[`viewport-y` | source_] = js.undefined
+  
   var `text-allow-overlap`: js.UndefOr[Boolean] = js.undefined
+  
   var `text-anchor`: js.UndefOr[Anchor | StyleFunction | Expression] = js.undefined
+  
   var `text-field`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
-  var `text-font`: js.UndefOr[String | js.Array[String] | Expression] = js.undefined
+  
+  var `text-font`: js.UndefOr[js.Array[String] | Expression] = js.undefined
+  
   var `text-ignore-placement`: js.UndefOr[Boolean] = js.undefined
-  var `text-justify`: js.UndefOr[left | center | right | Expression] = js.undefined
+  
+  var `text-justify`: js.UndefOr[auto | left | center | right | Expression] = js.undefined
+  
   var `text-keep-upright`: js.UndefOr[Boolean] = js.undefined
+  
   var `text-letter-spacing`: js.UndefOr[Double | Expression] = js.undefined
+  
   var `text-line-height`: js.UndefOr[Double | Expression] = js.undefined
+  
   var `text-max-angle`: js.UndefOr[Double | Expression] = js.undefined
-  var `text-max-width`: js.UndefOr[Double | Expression] = js.undefined
+  
+  var `text-max-width`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `text-offset`: js.UndefOr[js.Array[Double] | Expression] = js.undefined
+  
   var `text-optional`: js.UndefOr[Boolean] = js.undefined
+  
   var `text-padding`: js.UndefOr[Double | Expression] = js.undefined
+  
   var `text-pitch-alignment`: js.UndefOr[map | viewport | auto] = js.undefined
+  
+  var `text-radial-offset`: js.UndefOr[Double | Expression] = js.undefined
+  
   var `text-rotate`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `text-rotation-alignment`: js.UndefOr[map | viewport | auto] = js.undefined
+  
   var `text-size`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `text-transform`: js.UndefOr[none | uppercase | lowercase | StyleFunction | Expression] = js.undefined
+  
+  var `text-variable-anchor`: js.UndefOr[js.Array[Anchor]] = js.undefined
+  
+  var `text-writing-mode`: js.UndefOr[js.Array[horizontal | vertical]] = js.undefined
 }
-
 object SymbolLayout {
-  @scala.inline
-  def apply(
-    `icon-allow-overlap`: Boolean | StyleFunction | Expression = null,
-    `icon-anchor`: Anchor | StyleFunction | Expression = null,
-    `icon-ignore-placement`: js.UndefOr[Boolean] = js.undefined,
-    `icon-image`: String | StyleFunction | Expression = null,
-    `icon-keep-upright`: js.UndefOr[Boolean] = js.undefined,
-    `icon-offset`: js.Array[Double] | StyleFunction | Expression = null,
-    `icon-optional`: js.UndefOr[Boolean] = js.undefined,
-    `icon-padding`: Double | Expression = null,
-    `icon-pitch-alignment`: map | viewport | auto = null,
-    `icon-rotate`: Double | StyleFunction | Expression = null,
-    `icon-rotation-alignment`: map | viewport | auto = null,
-    `icon-size`: Double | StyleFunction | Expression = null,
-    `icon-text-fit`: none | both | width | height = null,
-    `icon-text-fit-padding`: js.Array[Double] | Expression = null,
-    `symbol-avoid-edges`: js.UndefOr[Boolean] = js.undefined,
-    `symbol-placement`: point | line | `line-center` = null,
-    `symbol-spacing`: Double | Expression = null,
-    `symbol-z-order`: `viewport-y` | source_ = null,
-    `text-allow-overlap`: js.UndefOr[Boolean] = js.undefined,
-    `text-anchor`: Anchor | StyleFunction | Expression = null,
-    `text-field`: String | StyleFunction | Expression = null,
-    `text-font`: String | js.Array[String] | Expression = null,
-    `text-ignore-placement`: js.UndefOr[Boolean] = js.undefined,
-    `text-justify`: left | center | right | Expression = null,
-    `text-keep-upright`: js.UndefOr[Boolean] = js.undefined,
-    `text-letter-spacing`: Double | Expression = null,
-    `text-line-height`: Double | Expression = null,
-    `text-max-angle`: Double | Expression = null,
-    `text-max-width`: Double | Expression = null,
-    `text-offset`: js.Array[Double] | Expression = null,
-    `text-optional`: js.UndefOr[Boolean] = js.undefined,
-    `text-padding`: Double | Expression = null,
-    `text-pitch-alignment`: map | viewport | auto = null,
-    `text-rotate`: Double | StyleFunction | Expression = null,
-    `text-rotation-alignment`: map | viewport | auto = null,
-    `text-size`: Double | StyleFunction | Expression = null,
-    `text-transform`: none | uppercase | lowercase | StyleFunction | Expression = null,
-    visibility: Visibility = null
-  ): SymbolLayout = {
+  
+  inline def apply(): SymbolLayout = {
     val __obj = js.Dynamic.literal()
-    if (`icon-allow-overlap` != null) __obj.updateDynamic("icon-allow-overlap")(`icon-allow-overlap`.asInstanceOf[js.Any])
-    if (`icon-anchor` != null) __obj.updateDynamic("icon-anchor")(`icon-anchor`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`icon-ignore-placement`)) __obj.updateDynamic("icon-ignore-placement")(`icon-ignore-placement`.asInstanceOf[js.Any])
-    if (`icon-image` != null) __obj.updateDynamic("icon-image")(`icon-image`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`icon-keep-upright`)) __obj.updateDynamic("icon-keep-upright")(`icon-keep-upright`.asInstanceOf[js.Any])
-    if (`icon-offset` != null) __obj.updateDynamic("icon-offset")(`icon-offset`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`icon-optional`)) __obj.updateDynamic("icon-optional")(`icon-optional`.asInstanceOf[js.Any])
-    if (`icon-padding` != null) __obj.updateDynamic("icon-padding")(`icon-padding`.asInstanceOf[js.Any])
-    if (`icon-pitch-alignment` != null) __obj.updateDynamic("icon-pitch-alignment")(`icon-pitch-alignment`.asInstanceOf[js.Any])
-    if (`icon-rotate` != null) __obj.updateDynamic("icon-rotate")(`icon-rotate`.asInstanceOf[js.Any])
-    if (`icon-rotation-alignment` != null) __obj.updateDynamic("icon-rotation-alignment")(`icon-rotation-alignment`.asInstanceOf[js.Any])
-    if (`icon-size` != null) __obj.updateDynamic("icon-size")(`icon-size`.asInstanceOf[js.Any])
-    if (`icon-text-fit` != null) __obj.updateDynamic("icon-text-fit")(`icon-text-fit`.asInstanceOf[js.Any])
-    if (`icon-text-fit-padding` != null) __obj.updateDynamic("icon-text-fit-padding")(`icon-text-fit-padding`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`symbol-avoid-edges`)) __obj.updateDynamic("symbol-avoid-edges")(`symbol-avoid-edges`.asInstanceOf[js.Any])
-    if (`symbol-placement` != null) __obj.updateDynamic("symbol-placement")(`symbol-placement`.asInstanceOf[js.Any])
-    if (`symbol-spacing` != null) __obj.updateDynamic("symbol-spacing")(`symbol-spacing`.asInstanceOf[js.Any])
-    if (`symbol-z-order` != null) __obj.updateDynamic("symbol-z-order")(`symbol-z-order`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`text-allow-overlap`)) __obj.updateDynamic("text-allow-overlap")(`text-allow-overlap`.asInstanceOf[js.Any])
-    if (`text-anchor` != null) __obj.updateDynamic("text-anchor")(`text-anchor`.asInstanceOf[js.Any])
-    if (`text-field` != null) __obj.updateDynamic("text-field")(`text-field`.asInstanceOf[js.Any])
-    if (`text-font` != null) __obj.updateDynamic("text-font")(`text-font`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`text-ignore-placement`)) __obj.updateDynamic("text-ignore-placement")(`text-ignore-placement`.asInstanceOf[js.Any])
-    if (`text-justify` != null) __obj.updateDynamic("text-justify")(`text-justify`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`text-keep-upright`)) __obj.updateDynamic("text-keep-upright")(`text-keep-upright`.asInstanceOf[js.Any])
-    if (`text-letter-spacing` != null) __obj.updateDynamic("text-letter-spacing")(`text-letter-spacing`.asInstanceOf[js.Any])
-    if (`text-line-height` != null) __obj.updateDynamic("text-line-height")(`text-line-height`.asInstanceOf[js.Any])
-    if (`text-max-angle` != null) __obj.updateDynamic("text-max-angle")(`text-max-angle`.asInstanceOf[js.Any])
-    if (`text-max-width` != null) __obj.updateDynamic("text-max-width")(`text-max-width`.asInstanceOf[js.Any])
-    if (`text-offset` != null) __obj.updateDynamic("text-offset")(`text-offset`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`text-optional`)) __obj.updateDynamic("text-optional")(`text-optional`.asInstanceOf[js.Any])
-    if (`text-padding` != null) __obj.updateDynamic("text-padding")(`text-padding`.asInstanceOf[js.Any])
-    if (`text-pitch-alignment` != null) __obj.updateDynamic("text-pitch-alignment")(`text-pitch-alignment`.asInstanceOf[js.Any])
-    if (`text-rotate` != null) __obj.updateDynamic("text-rotate")(`text-rotate`.asInstanceOf[js.Any])
-    if (`text-rotation-alignment` != null) __obj.updateDynamic("text-rotation-alignment")(`text-rotation-alignment`.asInstanceOf[js.Any])
-    if (`text-size` != null) __obj.updateDynamic("text-size")(`text-size`.asInstanceOf[js.Any])
-    if (`text-transform` != null) __obj.updateDynamic("text-transform")(`text-transform`.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolLayout]
   }
+  
+  extension [Self <: SymbolLayout](x: Self) {
+    
+    inline def `setIcon-allow-overlap`(value: Boolean | StyleFunction | Expression): Self = StObject.set(x, "icon-allow-overlap", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-allow-overlapUndefined`: Self = StObject.set(x, "icon-allow-overlap", js.undefined)
+    
+    inline def `setIcon-anchor`(value: Anchor | StyleFunction | Expression): Self = StObject.set(x, "icon-anchor", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-anchorUndefined`: Self = StObject.set(x, "icon-anchor", js.undefined)
+    
+    inline def `setIcon-ignore-placement`(value: Boolean | Expression): Self = StObject.set(x, "icon-ignore-placement", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-ignore-placementUndefined`: Self = StObject.set(x, "icon-ignore-placement", js.undefined)
+    
+    inline def `setIcon-image`(value: String | StyleFunction | Expression): Self = StObject.set(x, "icon-image", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-imageUndefined`: Self = StObject.set(x, "icon-image", js.undefined)
+    
+    inline def `setIcon-keep-upright`(value: Boolean): Self = StObject.set(x, "icon-keep-upright", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-keep-uprightUndefined`: Self = StObject.set(x, "icon-keep-upright", js.undefined)
+    
+    inline def `setIcon-offset`(value: js.Array[Double] | StyleFunction | Expression): Self = StObject.set(x, "icon-offset", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-offsetUndefined`: Self = StObject.set(x, "icon-offset", js.undefined)
+    
+    inline def `setIcon-offsetVarargs`(value: Double*): Self = StObject.set(x, "icon-offset", js.Array(value*))
+    
+    inline def `setIcon-optional`(value: Boolean): Self = StObject.set(x, "icon-optional", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-optionalUndefined`: Self = StObject.set(x, "icon-optional", js.undefined)
+    
+    inline def `setIcon-padding`(value: Double | Expression): Self = StObject.set(x, "icon-padding", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-paddingUndefined`: Self = StObject.set(x, "icon-padding", js.undefined)
+    
+    inline def `setIcon-pitch-alignment`(value: map | viewport | auto): Self = StObject.set(x, "icon-pitch-alignment", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-pitch-alignmentUndefined`: Self = StObject.set(x, "icon-pitch-alignment", js.undefined)
+    
+    inline def `setIcon-rotate`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "icon-rotate", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-rotateUndefined`: Self = StObject.set(x, "icon-rotate", js.undefined)
+    
+    inline def `setIcon-rotation-alignment`(value: map | viewport | auto): Self = StObject.set(x, "icon-rotation-alignment", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-rotation-alignmentUndefined`: Self = StObject.set(x, "icon-rotation-alignment", js.undefined)
+    
+    inline def `setIcon-size`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "icon-size", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-sizeUndefined`: Self = StObject.set(x, "icon-size", js.undefined)
+    
+    inline def `setIcon-text-fit`(value: none | both | width | height): Self = StObject.set(x, "icon-text-fit", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-text-fit-padding`(value: js.Array[Double] | Expression): Self = StObject.set(x, "icon-text-fit-padding", value.asInstanceOf[js.Any])
+    
+    inline def `setIcon-text-fit-paddingUndefined`: Self = StObject.set(x, "icon-text-fit-padding", js.undefined)
+    
+    inline def `setIcon-text-fit-paddingVarargs`(value: Double*): Self = StObject.set(x, "icon-text-fit-padding", js.Array(value*))
+    
+    inline def `setIcon-text-fitUndefined`: Self = StObject.set(x, "icon-text-fit", js.undefined)
+    
+    inline def `setSymbol-avoid-edges`(value: Boolean): Self = StObject.set(x, "symbol-avoid-edges", value.asInstanceOf[js.Any])
+    
+    inline def `setSymbol-avoid-edgesUndefined`: Self = StObject.set(x, "symbol-avoid-edges", js.undefined)
+    
+    inline def `setSymbol-placement`(value: point | line | `line-center`): Self = StObject.set(x, "symbol-placement", value.asInstanceOf[js.Any])
+    
+    inline def `setSymbol-placementUndefined`: Self = StObject.set(x, "symbol-placement", js.undefined)
+    
+    inline def `setSymbol-sort-key`(value: Double | Expression): Self = StObject.set(x, "symbol-sort-key", value.asInstanceOf[js.Any])
+    
+    inline def `setSymbol-sort-keyUndefined`: Self = StObject.set(x, "symbol-sort-key", js.undefined)
+    
+    inline def `setSymbol-spacing`(value: Double | Expression): Self = StObject.set(x, "symbol-spacing", value.asInstanceOf[js.Any])
+    
+    inline def `setSymbol-spacingUndefined`: Self = StObject.set(x, "symbol-spacing", js.undefined)
+    
+    inline def `setSymbol-z-order`(value: `viewport-y` | source_): Self = StObject.set(x, "symbol-z-order", value.asInstanceOf[js.Any])
+    
+    inline def `setSymbol-z-orderUndefined`: Self = StObject.set(x, "symbol-z-order", js.undefined)
+    
+    inline def `setText-allow-overlap`(value: Boolean): Self = StObject.set(x, "text-allow-overlap", value.asInstanceOf[js.Any])
+    
+    inline def `setText-allow-overlapUndefined`: Self = StObject.set(x, "text-allow-overlap", js.undefined)
+    
+    inline def `setText-anchor`(value: Anchor | StyleFunction | Expression): Self = StObject.set(x, "text-anchor", value.asInstanceOf[js.Any])
+    
+    inline def `setText-anchorUndefined`: Self = StObject.set(x, "text-anchor", js.undefined)
+    
+    inline def `setText-field`(value: String | StyleFunction | Expression): Self = StObject.set(x, "text-field", value.asInstanceOf[js.Any])
+    
+    inline def `setText-fieldUndefined`: Self = StObject.set(x, "text-field", js.undefined)
+    
+    inline def `setText-font`(value: js.Array[String] | Expression): Self = StObject.set(x, "text-font", value.asInstanceOf[js.Any])
+    
+    inline def `setText-fontUndefined`: Self = StObject.set(x, "text-font", js.undefined)
+    
+    inline def `setText-fontVarargs`(value: String*): Self = StObject.set(x, "text-font", js.Array(value*))
+    
+    inline def `setText-ignore-placement`(value: Boolean): Self = StObject.set(x, "text-ignore-placement", value.asInstanceOf[js.Any])
+    
+    inline def `setText-ignore-placementUndefined`: Self = StObject.set(x, "text-ignore-placement", js.undefined)
+    
+    inline def `setText-justify`(value: auto | left | center | right | Expression): Self = StObject.set(x, "text-justify", value.asInstanceOf[js.Any])
+    
+    inline def `setText-justifyUndefined`: Self = StObject.set(x, "text-justify", js.undefined)
+    
+    inline def `setText-keep-upright`(value: Boolean): Self = StObject.set(x, "text-keep-upright", value.asInstanceOf[js.Any])
+    
+    inline def `setText-keep-uprightUndefined`: Self = StObject.set(x, "text-keep-upright", js.undefined)
+    
+    inline def `setText-letter-spacing`(value: Double | Expression): Self = StObject.set(x, "text-letter-spacing", value.asInstanceOf[js.Any])
+    
+    inline def `setText-letter-spacingUndefined`: Self = StObject.set(x, "text-letter-spacing", js.undefined)
+    
+    inline def `setText-line-height`(value: Double | Expression): Self = StObject.set(x, "text-line-height", value.asInstanceOf[js.Any])
+    
+    inline def `setText-line-heightUndefined`: Self = StObject.set(x, "text-line-height", js.undefined)
+    
+    inline def `setText-max-angle`(value: Double | Expression): Self = StObject.set(x, "text-max-angle", value.asInstanceOf[js.Any])
+    
+    inline def `setText-max-angleUndefined`: Self = StObject.set(x, "text-max-angle", js.undefined)
+    
+    inline def `setText-max-width`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "text-max-width", value.asInstanceOf[js.Any])
+    
+    inline def `setText-max-widthUndefined`: Self = StObject.set(x, "text-max-width", js.undefined)
+    
+    inline def `setText-offset`(value: js.Array[Double] | Expression): Self = StObject.set(x, "text-offset", value.asInstanceOf[js.Any])
+    
+    inline def `setText-offsetUndefined`: Self = StObject.set(x, "text-offset", js.undefined)
+    
+    inline def `setText-offsetVarargs`(value: Double*): Self = StObject.set(x, "text-offset", js.Array(value*))
+    
+    inline def `setText-optional`(value: Boolean): Self = StObject.set(x, "text-optional", value.asInstanceOf[js.Any])
+    
+    inline def `setText-optionalUndefined`: Self = StObject.set(x, "text-optional", js.undefined)
+    
+    inline def `setText-padding`(value: Double | Expression): Self = StObject.set(x, "text-padding", value.asInstanceOf[js.Any])
+    
+    inline def `setText-paddingUndefined`: Self = StObject.set(x, "text-padding", js.undefined)
+    
+    inline def `setText-pitch-alignment`(value: map | viewport | auto): Self = StObject.set(x, "text-pitch-alignment", value.asInstanceOf[js.Any])
+    
+    inline def `setText-pitch-alignmentUndefined`: Self = StObject.set(x, "text-pitch-alignment", js.undefined)
+    
+    inline def `setText-radial-offset`(value: Double | Expression): Self = StObject.set(x, "text-radial-offset", value.asInstanceOf[js.Any])
+    
+    inline def `setText-radial-offsetUndefined`: Self = StObject.set(x, "text-radial-offset", js.undefined)
+    
+    inline def `setText-rotate`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "text-rotate", value.asInstanceOf[js.Any])
+    
+    inline def `setText-rotateUndefined`: Self = StObject.set(x, "text-rotate", js.undefined)
+    
+    inline def `setText-rotation-alignment`(value: map | viewport | auto): Self = StObject.set(x, "text-rotation-alignment", value.asInstanceOf[js.Any])
+    
+    inline def `setText-rotation-alignmentUndefined`: Self = StObject.set(x, "text-rotation-alignment", js.undefined)
+    
+    inline def `setText-size`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "text-size", value.asInstanceOf[js.Any])
+    
+    inline def `setText-sizeUndefined`: Self = StObject.set(x, "text-size", js.undefined)
+    
+    inline def `setText-transform`(value: none | uppercase | lowercase | StyleFunction | Expression): Self = StObject.set(x, "text-transform", value.asInstanceOf[js.Any])
+    
+    inline def `setText-transformUndefined`: Self = StObject.set(x, "text-transform", js.undefined)
+    
+    inline def `setText-variable-anchor`(value: js.Array[Anchor]): Self = StObject.set(x, "text-variable-anchor", value.asInstanceOf[js.Any])
+    
+    inline def `setText-variable-anchorUndefined`: Self = StObject.set(x, "text-variable-anchor", js.undefined)
+    
+    inline def `setText-variable-anchorVarargs`(value: Anchor*): Self = StObject.set(x, "text-variable-anchor", js.Array(value*))
+    
+    inline def `setText-writing-mode`(value: js.Array[horizontal | vertical]): Self = StObject.set(x, "text-writing-mode", value.asInstanceOf[js.Any])
+    
+    inline def `setText-writing-modeUndefined`: Self = StObject.set(x, "text-writing-mode", js.undefined)
+    
+    inline def `setText-writing-modeVarargs`(value: (horizontal | vertical)*): Self = StObject.set(x, "text-writing-mode", js.Array(value*))
+  }
 }
-

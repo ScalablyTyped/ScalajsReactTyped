@@ -1,10 +1,11 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PresentationProperties extends js.Object {
+trait PresentationProperties extends StObject {
+  
   /**
     * A collection of [slides](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html) that bookmark [viewpoints](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html), visible layers, and other settings previously defined in a [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).
     *
@@ -12,13 +13,19 @@ trait PresentationProperties extends js.Object {
     */
   var slides: js.UndefOr[CollectionProperties[SlideProperties]] = js.undefined
 }
-
 object PresentationProperties {
-  @scala.inline
-  def apply(slides: CollectionProperties[SlideProperties] = null): PresentationProperties = {
+  
+  inline def apply(): PresentationProperties = {
     val __obj = js.Dynamic.literal()
-    if (slides != null) __obj.updateDynamic("slides")(slides.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresentationProperties]
   }
+  
+  extension [Self <: PresentationProperties](x: Self) {
+    
+    inline def setSlides(value: CollectionProperties[SlideProperties]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
+    
+    inline def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
+    
+    inline def setSlidesVarargs(value: SlideProperties*): Self = StObject.set(x, "slides", js.Array(value*))
+  }
 }
-

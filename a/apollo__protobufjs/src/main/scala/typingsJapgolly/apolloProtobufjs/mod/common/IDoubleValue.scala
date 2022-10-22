@@ -1,20 +1,25 @@
 package typingsJapgolly.apolloProtobufjs.mod.common
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a google.protobuf.DoubleValue message. */
-trait IDoubleValue extends js.Object {
+trait IDoubleValue extends StObject {
+  
   var value: js.UndefOr[Double] = js.undefined
 }
-
 object IDoubleValue {
-  @scala.inline
-  def apply(value: Int | Double = null): IDoubleValue = {
+  
+  inline def apply(): IDoubleValue = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDoubleValue]
   }
+  
+  extension [Self <: IDoubleValue](x: Self) {
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

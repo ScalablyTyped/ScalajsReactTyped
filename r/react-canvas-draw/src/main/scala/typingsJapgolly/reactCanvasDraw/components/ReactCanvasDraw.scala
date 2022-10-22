@@ -1,75 +1,85 @@
 package typingsJapgolly.reactCanvasDraw.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.reactCanvasDraw.anon.Max
 import typingsJapgolly.reactCanvasDraw.mod.CanvasDraw
 import typingsJapgolly.reactCanvasDraw.mod.CanvasDrawProps
 import typingsJapgolly.reactCanvasDraw.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactCanvasDraw {
-  def apply(
-    backgroundColor: String = null,
-    brushColor: String = null,
-    brushRadius: Int | Double = null,
-    canvasHeight: Double | String = null,
-    canvasWidth: Double | String = null,
-    catenaryColor: String = null,
-    className: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    gridColor: String = null,
-    hideGrid: js.UndefOr[Boolean] = js.undefined,
-    hideInterface: js.UndefOr[Boolean] = js.undefined,
-    imgSrc: String = null,
-    immediateLoading: js.UndefOr[Boolean] = js.undefined,
-    lazyRadius: Int | Double = null,
-    loadTimeOffset: Int | Double = null,
-    onChange: /* canvas */ CanvasDraw => Callback = null,
-    saveData: String = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CanvasDrawProps, default, Unit, CanvasDrawProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (brushColor != null) __obj.updateDynamic("brushColor")(brushColor.asInstanceOf[js.Any])
-    if (brushRadius != null) __obj.updateDynamic("brushRadius")(brushRadius.asInstanceOf[js.Any])
-    if (canvasHeight != null) __obj.updateDynamic("canvasHeight")(canvasHeight.asInstanceOf[js.Any])
-    if (canvasWidth != null) __obj.updateDynamic("canvasWidth")(canvasWidth.asInstanceOf[js.Any])
-    if (catenaryColor != null) __obj.updateDynamic("catenaryColor")(catenaryColor.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (gridColor != null) __obj.updateDynamic("gridColor")(gridColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideGrid)) __obj.updateDynamic("hideGrid")(hideGrid.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideInterface)) __obj.updateDynamic("hideInterface")(hideInterface.asInstanceOf[js.Any])
-    if (imgSrc != null) __obj.updateDynamic("imgSrc")(imgSrc.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediateLoading)) __obj.updateDynamic("immediateLoading")(immediateLoading.asInstanceOf[js.Any])
-    if (lazyRadius != null) __obj.updateDynamic("lazyRadius")(lazyRadius.asInstanceOf[js.Any])
-    if (loadTimeOffset != null) __obj.updateDynamic("loadTimeOffset")(loadTimeOffset.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* canvas */ typingsJapgolly.reactCanvasDraw.mod.CanvasDraw) => onChange(t0).runNow()))
-    if (saveData != null) __obj.updateDynamic("saveData")(saveData.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactCanvasDraw.mod.CanvasDrawProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactCanvasDraw.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactCanvasDraw.mod.CanvasDrawProps])(children: _*)
-  }
   @JSImport("react-canvas-draw", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def backgroundColor(value: String): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def brushColor(value: String): this.type = set("brushColor", value.asInstanceOf[js.Any])
+    
+    inline def brushRadius(value: Double): this.type = set("brushRadius", value.asInstanceOf[js.Any])
+    
+    inline def canvasHeight(value: Double | String): this.type = set("canvasHeight", value.asInstanceOf[js.Any])
+    
+    inline def canvasWidth(value: Double | String): this.type = set("canvasWidth", value.asInstanceOf[js.Any])
+    
+    inline def catenaryColor(value: String): this.type = set("catenaryColor", value.asInstanceOf[js.Any])
+    
+    inline def clampLinesToDocument(value: Boolean): this.type = set("clampLinesToDocument", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def enablePanAndZoom(value: Boolean): this.type = set("enablePanAndZoom", value.asInstanceOf[js.Any])
+    
+    inline def gridColor(value: String): this.type = set("gridColor", value.asInstanceOf[js.Any])
+    
+    inline def gridLineWidth(value: Double): this.type = set("gridLineWidth", value.asInstanceOf[js.Any])
+    
+    inline def gridSizeX(value: Double): this.type = set("gridSizeX", value.asInstanceOf[js.Any])
+    
+    inline def gridSizeY(value: Double): this.type = set("gridSizeY", value.asInstanceOf[js.Any])
+    
+    inline def hideGrid(value: Boolean): this.type = set("hideGrid", value.asInstanceOf[js.Any])
+    
+    inline def hideGridX(value: Boolean): this.type = set("hideGridX", value.asInstanceOf[js.Any])
+    
+    inline def hideGridY(value: Boolean): this.type = set("hideGridY", value.asInstanceOf[js.Any])
+    
+    inline def hideInterface(value: Boolean): this.type = set("hideInterface", value.asInstanceOf[js.Any])
+    
+    inline def imgSrc(value: String): this.type = set("imgSrc", value.asInstanceOf[js.Any])
+    
+    inline def immediateLoading(value: Boolean): this.type = set("immediateLoading", value.asInstanceOf[js.Any])
+    
+    inline def lazyRadius(value: Double): this.type = set("lazyRadius", value.asInstanceOf[js.Any])
+    
+    inline def loadTimeOffset(value: Double): this.type = set("loadTimeOffset", value.asInstanceOf[js.Any])
+    
+    inline def mouseZoomFactor(value: Double): this.type = set("mouseZoomFactor", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* canvas */ CanvasDraw => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* canvas */ CanvasDraw) => value(t0).runNow()))
+    
+    inline def onChangeNull: this.type = set("onChange", null)
+    
+    inline def saveData(value: String): this.type = set("saveData", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def zoomExtents(value: Max): this.type = set("zoomExtents", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactCanvasDraw.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CanvasDrawProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

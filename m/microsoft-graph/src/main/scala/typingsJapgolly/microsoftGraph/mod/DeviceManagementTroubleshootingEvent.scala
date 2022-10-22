@@ -1,24 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceManagementTroubleshootingEvent extends Entity {
+trait DeviceManagementTroubleshootingEvent
+  extends StObject
+     with Entity {
+  
   // Id used for tracing the failure in the service.
-  var correlationId: js.UndefOr[String] = js.undefined
+  var correlationId: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Time when the event occurred .
   var eventDateTime: js.UndefOr[String] = js.undefined
 }
-
 object DeviceManagementTroubleshootingEvent {
-  @scala.inline
-  def apply(correlationId: String = null, eventDateTime: String = null, id: String = null): DeviceManagementTroubleshootingEvent = {
+  
+  inline def apply(): DeviceManagementTroubleshootingEvent = {
     val __obj = js.Dynamic.literal()
-    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId.asInstanceOf[js.Any])
-    if (eventDateTime != null) __obj.updateDynamic("eventDateTime")(eventDateTime.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceManagementTroubleshootingEvent]
   }
+  
+  extension [Self <: DeviceManagementTroubleshootingEvent](x: Self) {
+    
+    inline def setCorrelationId(value: NullableOption[String]): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
+    
+    inline def setCorrelationIdNull: Self = StObject.set(x, "correlationId", null)
+    
+    inline def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
+    
+    inline def setEventDateTime(value: String): Self = StObject.set(x, "eventDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setEventDateTimeUndefined: Self = StObject.set(x, "eventDateTime", js.undefined)
+  }
 }
-

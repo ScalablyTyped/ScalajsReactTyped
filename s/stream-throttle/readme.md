@@ -11,9 +11,9 @@ A rate limiter for Node.js streams.
 | Full name          | stream-throttle |
 | Keywords           | streams, throttling, ratelimit |
 | # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 18261060 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 2631874.3333333335 |
+| # stars            | 203.0 |
 
 ## Links
 - [Homepage](https://github.com/tjgq/node-stream-throttle)

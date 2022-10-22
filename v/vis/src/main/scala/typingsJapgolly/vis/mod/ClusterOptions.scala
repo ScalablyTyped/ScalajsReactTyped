@@ -1,11 +1,11 @@
 package typingsJapgolly.vis.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClusterOptions extends js.Object {
+trait ClusterOptions extends StObject {
+  
   /**
     * Optional.
     * This is an object containing the options for the edges connected to the cluster.
@@ -15,6 +15,7 @@ trait ClusterOptions extends js.Object {
     * If undefined, default edge options will be used.
     */
   var clusterEdgeProperties: js.UndefOr[EdgeOptions] = js.undefined
+  
   /**
     * Optional.
     * This is an object containing the options for the cluster node.
@@ -24,6 +25,7 @@ trait ClusterOptions extends js.Object {
     * If undefined, default node options will be used.
     */
   var clusterNodeProperties: js.UndefOr[NodeOptions] = js.undefined
+  
   /**
     * Optional for all but the cluster method.
     * The cluster module loops over all nodes that are selected to be in the cluster
@@ -31,7 +33,8 @@ trait ClusterOptions extends js.Object {
     * this node will be added to the cluster. You have access to all options (including the default)
     * as well as any custom fields you may have added to the node to determine whether or not to include it in the cluster.
     */
-  var joinCondition: js.UndefOr[js.Function1[/* nodeOptions */ js.Any, Boolean]] = js.undefined
+  var joinCondition: js.UndefOr[js.Function1[/* nodeOptions */ Any, Boolean]] = js.undefined
+  
   /**
     * Optional.
     * Before creating the new cluster node, this (optional) function will be called with the properties
@@ -41,28 +44,38 @@ trait ClusterOptions extends js.Object {
     */
   var processProperties: js.UndefOr[
     js.Function3[
-      /* clusterOptions */ js.Any, 
-      /* childNodesOptions */ js.Array[_], 
-      /* childEdgesOptions */ js.Array[_], 
-      _
+      /* clusterOptions */ Any, 
+      /* childNodesOptions */ js.Array[Any], 
+      /* childEdgesOptions */ js.Array[Any], 
+      Any
     ]
   ] = js.undefined
 }
-
 object ClusterOptions {
-  @scala.inline
-  def apply(
-    clusterEdgeProperties: EdgeOptions = null,
-    clusterNodeProperties: NodeOptions = null,
-    joinCondition: /* nodeOptions */ js.Any => CallbackTo[Boolean] = null,
-    processProperties: (/* clusterOptions */ js.Any, /* childNodesOptions */ js.Array[js.Any], /* childEdgesOptions */ js.Array[js.Any]) => CallbackTo[js.Any] = null
-  ): ClusterOptions = {
+  
+  inline def apply(): ClusterOptions = {
     val __obj = js.Dynamic.literal()
-    if (clusterEdgeProperties != null) __obj.updateDynamic("clusterEdgeProperties")(clusterEdgeProperties.asInstanceOf[js.Any])
-    if (clusterNodeProperties != null) __obj.updateDynamic("clusterNodeProperties")(clusterNodeProperties.asInstanceOf[js.Any])
-    if (joinCondition != null) __obj.updateDynamic("joinCondition")(js.Any.fromFunction1((t0: /* nodeOptions */ js.Any) => joinCondition(t0).runNow()))
-    if (processProperties != null) __obj.updateDynamic("processProperties")(js.Any.fromFunction3((t0: /* clusterOptions */ js.Any, t1: /* childNodesOptions */ js.Array[js.Any], t2: /* childEdgesOptions */ js.Array[js.Any]) => processProperties(t0, t1, t2).runNow()))
     __obj.asInstanceOf[ClusterOptions]
   }
+  
+  extension [Self <: ClusterOptions](x: Self) {
+    
+    inline def setClusterEdgeProperties(value: EdgeOptions): Self = StObject.set(x, "clusterEdgeProperties", value.asInstanceOf[js.Any])
+    
+    inline def setClusterEdgePropertiesUndefined: Self = StObject.set(x, "clusterEdgeProperties", js.undefined)
+    
+    inline def setClusterNodeProperties(value: NodeOptions): Self = StObject.set(x, "clusterNodeProperties", value.asInstanceOf[js.Any])
+    
+    inline def setClusterNodePropertiesUndefined: Self = StObject.set(x, "clusterNodeProperties", js.undefined)
+    
+    inline def setJoinCondition(value: /* nodeOptions */ Any => Boolean): Self = StObject.set(x, "joinCondition", js.Any.fromFunction1(value))
+    
+    inline def setJoinConditionUndefined: Self = StObject.set(x, "joinCondition", js.undefined)
+    
+    inline def setProcessProperties(
+      value: (/* clusterOptions */ Any, /* childNodesOptions */ js.Array[Any], /* childEdgesOptions */ js.Array[Any]) => Any
+    ): Self = StObject.set(x, "processProperties", js.Any.fromFunction3(value))
+    
+    inline def setProcessPropertiesUndefined: Self = StObject.set(x, "processProperties", js.undefined)
+  }
 }
-

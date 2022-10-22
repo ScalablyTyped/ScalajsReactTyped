@@ -1,26 +1,28 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISlidingWindowSource extends js.Object {
+trait ISlidingWindowSource extends StObject {
+  
   def fetchMoreItems(
-    argument: js.Any,
+    argument: Any,
     sourceIndex: Double,
-    window: js.Array[_],
+    window: js.Array[Any],
     destinationIndex: Double,
     spaceAvailable: Double
   ): Double
 }
-
 object ISlidingWindowSource {
-  @scala.inline
-  def apply(fetchMoreItems: (js.Any, Double, js.Array[js.Any], Double, Double) => CallbackTo[Double]): ISlidingWindowSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fetchMoreItems")(js.Any.fromFunction5((t0: js.Any, t1: scala.Double, t2: js.Array[js.Any], t3: scala.Double, t4: scala.Double) => fetchMoreItems(t0, t1, t2, t3, t4).runNow()))
+  
+  inline def apply(fetchMoreItems: (Any, Double, js.Array[Any], Double, Double) => Double): ISlidingWindowSource = {
+    val __obj = js.Dynamic.literal(fetchMoreItems = js.Any.fromFunction5(fetchMoreItems))
     __obj.asInstanceOf[ISlidingWindowSource]
   }
+  
+  extension [Self <: ISlidingWindowSource](x: Self) {
+    
+    inline def setFetchMoreItems(value: (Any, Double, js.Array[Any], Double, Double) => Double): Self = StObject.set(x, "fetchMoreItems", js.Any.fromFunction5(value))
+  }
 }
-

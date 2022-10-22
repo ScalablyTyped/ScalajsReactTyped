@@ -1,41 +1,46 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DirectionsViewModelTimeAttribute extends Object {
+trait DirectionsViewModelTimeAttribute
+  extends StObject
+     with Object {
+  
   /**
     * The name of the network attribute to use for the drive time when computing directions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#timeAttribute)
     */
   var name: String
+  
   /**
-    * The units to use when calculating drive time for directions.  **Possible Values:** feet | kilometers | meters | miles | nautical-miles | yards
+    * The units to use when calculating drive time for directions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#timeAttribute)
     */
-  var units: js.UndefOr[String] = js.undefined
+  var units: String
 }
-
 object DirectionsViewModelTimeAttribute {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     name: String,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    units: String = null
+    propertyIsEnumerable: PropertyKey => Boolean,
+    units: String
   ): DirectionsViewModelTimeAttribute = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), units = units.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsViewModelTimeAttribute]
   }
+  
+  extension [Self <: DirectionsViewModelTimeAttribute](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+  }
 }
-

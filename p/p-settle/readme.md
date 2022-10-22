@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-settle
 
-Typings are for version 3.1.0
+Typings are for version 5.1.0
 
 ## Library description:
 Settle promises concurrently and get their fulfillment value or rejection reason
@@ -10,10 +10,10 @@ Settle promises concurrently and get their fulfillment value or rejection reason
 | ------------------ | :-------------: |
 | Full name          | p-settle |
 | Keywords           | promise, settle, settled, resolved, iterator, fulfill, reject, fulfilled, rejected, reflect, inspect, error, async, await, promises, concurrently, concurrency, parallel, bluebird |
-| # releases         | 4 |
-| # dependents       | 29 |
-| # downloads        | 1146845 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2369403.3333333335 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-settle#readme)

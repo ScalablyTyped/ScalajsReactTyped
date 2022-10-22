@@ -1,13 +1,12 @@
 package typingsJapgolly.grammarkdown.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Symbol")
 @js.native
-class Symbol protected ()
-  extends typingsJapgolly.grammarkdown.symbolsMod.Symbol {
-  def this(kind: typingsJapgolly.grammarkdown.symbolsMod.SymbolKind, name: String) = this()
+open class Symbol protected ()
+  extends typingsJapgolly.grammarkdown.distSymbolsMod.Symbol {
+  def this(kind: typingsJapgolly.grammarkdown.distSymbolsMod.SymbolKind, name: String) = this()
 }
-

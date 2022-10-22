@@ -2,12 +2,15 @@ package typingsJapgolly.winrtUwp.Windows.Data.Xml.Dom
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the text content of an element or attribute. */
-trait IXmlText extends IXmlCharacterData {
+trait IXmlText
+  extends StObject
+     with IXmlCharacterData {
+  
   /**
     * Splits this text node into two text nodes at the specified offset and inserts the new text node into the tree as a sibling that immediately follows this node.
     * @param offset The number of characters at which to split this text node into two nodes, starting from zero.
@@ -15,66 +18,51 @@ trait IXmlText extends IXmlCharacterData {
     */
   def splitText(offset: Double): IXmlText
 }
-
 object IXmlText {
-  @scala.inline
-  def apply(
-    appendChild: IXmlNode => CallbackTo[IXmlNode],
+  
+  inline def apply(
+    appendChild: IXmlNode => IXmlNode,
     appendData: String => Callback,
     attributes: XmlNamedNodeMap,
     childNodes: XmlNodeList,
-    cloneNode: Boolean => CallbackTo[IXmlNode],
+    cloneNode: Boolean => IXmlNode,
     data: String,
     deleteData: (Double, Double) => Callback,
     firstChild: IXmlNode,
     getXml: CallbackTo[String],
     hasChildNodes: CallbackTo[Boolean],
     innerText: String,
-    insertBefore: (IXmlNode, IXmlNode) => CallbackTo[IXmlNode],
+    insertBefore: (IXmlNode, IXmlNode) => IXmlNode,
     insertData: (Double, String) => Callback,
     lastChild: IXmlNode,
     length: Double,
-    localName: js.Any,
-    namespaceUri: js.Any,
+    localName: Any,
+    namespaceUri: Any,
     nextSibling: IXmlNode,
     nodeName: String,
     nodeType: NodeType,
-    nodeValue: js.Any,
+    nodeValue: Any,
     normalize: Callback,
     ownerDocument: XmlDocument,
     parentNode: IXmlNode,
-    prefix: js.Any,
+    prefix: Any,
     previousSibling: IXmlNode,
-    removeChild: IXmlNode => CallbackTo[IXmlNode],
-    replaceChild: (IXmlNode, IXmlNode) => CallbackTo[IXmlNode],
+    removeChild: IXmlNode => IXmlNode,
+    replaceChild: (IXmlNode, IXmlNode) => IXmlNode,
     replaceData: (Double, Double, String) => Callback,
-    selectNodes: String => CallbackTo[XmlNodeList],
-    selectNodesNS: (String, js.Any) => CallbackTo[XmlNodeList],
-    selectSingleNode: String => CallbackTo[IXmlNode],
-    selectSingleNodeNS: (String, js.Any) => CallbackTo[IXmlNode],
-    splitText: Double => CallbackTo[IXmlText],
-    substringData: (Double, Double) => CallbackTo[String]
+    selectNodes: String => XmlNodeList,
+    selectNodesNS: (String, Any) => XmlNodeList,
+    selectSingleNode: String => IXmlNode,
+    selectSingleNodeNS: (String, Any) => IXmlNode,
+    splitText: Double => IXmlText,
+    substringData: (Double, Double) => String
   ): IXmlText = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], firstChild = firstChild.asInstanceOf[js.Any], innerText = innerText.asInstanceOf[js.Any], lastChild = lastChild.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], localName = localName.asInstanceOf[js.Any], namespaceUri = namespaceUri.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], ownerDocument = ownerDocument.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any])
-    __obj.updateDynamic("appendChild")(js.Any.fromFunction1((t0: typingsJapgolly.winrtUwp.Windows.Data.Xml.Dom.IXmlNode) => appendChild(t0).runNow()))
-    __obj.updateDynamic("appendData")(js.Any.fromFunction1((t0: java.lang.String) => appendData(t0).runNow()))
-    __obj.updateDynamic("cloneNode")(js.Any.fromFunction1((t0: scala.Boolean) => cloneNode(t0).runNow()))
-    __obj.updateDynamic("deleteData")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Double) => deleteData(t0, t1).runNow()))
-    __obj.updateDynamic("getXml")(getXml.toJsFn)
-    __obj.updateDynamic("hasChildNodes")(hasChildNodes.toJsFn)
-    __obj.updateDynamic("insertBefore")(js.Any.fromFunction2((t0: typingsJapgolly.winrtUwp.Windows.Data.Xml.Dom.IXmlNode, t1: typingsJapgolly.winrtUwp.Windows.Data.Xml.Dom.IXmlNode) => insertBefore(t0, t1).runNow()))
-    __obj.updateDynamic("insertData")(js.Any.fromFunction2((t0: scala.Double, t1: java.lang.String) => insertData(t0, t1).runNow()))
-    __obj.updateDynamic("normalize")(normalize.toJsFn)
-    __obj.updateDynamic("removeChild")(js.Any.fromFunction1((t0: typingsJapgolly.winrtUwp.Windows.Data.Xml.Dom.IXmlNode) => removeChild(t0).runNow()))
-    __obj.updateDynamic("replaceChild")(js.Any.fromFunction2((t0: typingsJapgolly.winrtUwp.Windows.Data.Xml.Dom.IXmlNode, t1: typingsJapgolly.winrtUwp.Windows.Data.Xml.Dom.IXmlNode) => replaceChild(t0, t1).runNow()))
-    __obj.updateDynamic("replaceData")(js.Any.fromFunction3((t0: scala.Double, t1: scala.Double, t2: java.lang.String) => replaceData(t0, t1, t2).runNow()))
-    __obj.updateDynamic("selectNodes")(js.Any.fromFunction1((t0: java.lang.String) => selectNodes(t0).runNow()))
-    __obj.updateDynamic("selectNodesNS")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Any) => selectNodesNS(t0, t1).runNow()))
-    __obj.updateDynamic("selectSingleNode")(js.Any.fromFunction1((t0: java.lang.String) => selectSingleNode(t0).runNow()))
-    __obj.updateDynamic("selectSingleNodeNS")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Any) => selectSingleNodeNS(t0, t1).runNow()))
-    __obj.updateDynamic("splitText")(js.Any.fromFunction1((t0: scala.Double) => splitText(t0).runNow()))
-    __obj.updateDynamic("substringData")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Double) => substringData(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), appendData = js.Any.fromFunction1((t0: String) => appendData(t0).runNow()), attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], cloneNode = js.Any.fromFunction1(cloneNode), data = data.asInstanceOf[js.Any], deleteData = js.Any.fromFunction2((t0: Double, t1: Double) => (deleteData(t0, t1)).runNow()), firstChild = firstChild.asInstanceOf[js.Any], getXml = getXml.toJsFn, hasChildNodes = hasChildNodes.toJsFn, innerText = innerText.asInstanceOf[js.Any], insertBefore = js.Any.fromFunction2(insertBefore), insertData = js.Any.fromFunction2((t0: Double, t1: String) => (insertData(t0, t1)).runNow()), lastChild = lastChild.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], localName = localName.asInstanceOf[js.Any], namespaceUri = namespaceUri.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], normalize = normalize.toJsFn, ownerDocument = ownerDocument.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any], removeChild = js.Any.fromFunction1(removeChild), replaceChild = js.Any.fromFunction2(replaceChild), replaceData = js.Any.fromFunction3((t0: Double, t1: Double, t2: String) => (replaceData(t0, t1, t2)).runNow()), selectNodes = js.Any.fromFunction1(selectNodes), selectNodesNS = js.Any.fromFunction2(selectNodesNS), selectSingleNode = js.Any.fromFunction1(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction2(selectSingleNodeNS), splitText = js.Any.fromFunction1(splitText), substringData = js.Any.fromFunction2(substringData))
     __obj.asInstanceOf[IXmlText]
   }
+  
+  extension [Self <: IXmlText](x: Self) {
+    
+    inline def setSplitText(value: Double => IXmlText): Self = StObject.set(x, "splitText", js.Any.fromFunction1(value))
+  }
 }
-

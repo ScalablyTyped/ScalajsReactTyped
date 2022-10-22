@@ -1,43 +1,39 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`0`
-import typingsJapgolly.mfiles.mfilesNumbers.`16`
-import typingsJapgolly.mfiles.mfilesNumbers.`1`
-import typingsJapgolly.mfiles.mfilesNumbers.`2`
-import typingsJapgolly.mfiles.mfilesNumbers.`32`
-import typingsJapgolly.mfiles.mfilesNumbers.`4`
-import typingsJapgolly.mfiles.mfilesNumbers.`8`
+import typingsJapgolly.mfiles.mfilesInts.`0`
+import typingsJapgolly.mfiles.mfilesInts.`16`
+import typingsJapgolly.mfiles.mfilesInts.`1`
+import typingsJapgolly.mfiles.mfilesInts.`2`
+import typingsJapgolly.mfiles.mfilesInts.`32`
+import typingsJapgolly.mfiles.mfilesInts.`4`
+import typingsJapgolly.mfiles.mfilesInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.mfiles.mfilesNumbers.`0`
-  - typingsJapgolly.mfiles.mfilesNumbers.`1`
-  - typingsJapgolly.mfiles.mfilesNumbers.`2`
-  - typingsJapgolly.mfiles.mfilesNumbers.`4`
-  - typingsJapgolly.mfiles.mfilesNumbers.`8`
-  - typingsJapgolly.mfiles.mfilesNumbers.`16`
-  - typingsJapgolly.mfiles.mfilesNumbers.`32`
+  - typingsJapgolly.mfiles.mfilesInts.`0`
+  - typingsJapgolly.mfiles.mfilesInts.`1`
+  - typingsJapgolly.mfiles.mfilesInts.`2`
+  - typingsJapgolly.mfiles.mfilesInts.`4`
+  - typingsJapgolly.mfiles.mfilesInts.`8`
+  - typingsJapgolly.mfiles.mfilesInts.`16`
+  - typingsJapgolly.mfiles.mfilesInts.`32`
 */
-trait MFAttachVaultOptionsFlag extends js.Object
-
+trait MFAttachVaultOptionsFlag extends StObject
 object MFAttachVaultOptionsFlag {
-  @scala.inline
-  def EventHandlers: `32` = this.cast(32)
-  @scala.inline
-  def ExportImportJobs: `8` = this.cast(8)
-  @scala.inline
-  def ExportedDataSets: `4` = this.cast(4)
-  @scala.inline
-  def ExternalObjectTypes: `1` = this.cast(1)
-  @scala.inline
-  def ExternalSources: `2` = this.cast(2)
-  @scala.inline
-  def ExternalUserGroups: `16` = this.cast(16)
-  @scala.inline
-  def None: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def EventHandlers: `32` = 32.asInstanceOf[`32`]
+  
+  inline def ExportImportJobs: `8` = 8.asInstanceOf[`8`]
+  
+  inline def ExportedDataSets: `4` = 4.asInstanceOf[`4`]
+  
+  inline def ExternalObjectTypes: `1` = 1.asInstanceOf[`1`]
+  
+  inline def ExternalSources: `2` = 2.asInstanceOf[`2`]
+  
+  inline def ExternalUserGroups: `16` = 16.asInstanceOf[`16`]
+  
+  inline def None: `0` = 0.asInstanceOf[`0`]
 }
-

@@ -1,23 +1,27 @@
 package typingsJapgolly.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Document
 trait ObjectWithId
-  extends /* key */ StringDictionary[js.Any]
+  extends StObject
+     with /* key */ StringDictionary[Any]
      with DocumentLike {
+  
   var _id: String
 }
-
 object ObjectWithId {
-  @scala.inline
-  def apply(_id: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): ObjectWithId = {
+  
+  inline def apply(_id: String): ObjectWithId = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ObjectWithId]
   }
+  
+  extension [Self <: ObjectWithId](x: Self) {
+    
+    inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+  }
 }
-

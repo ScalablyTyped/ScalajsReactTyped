@@ -1,35 +1,33 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EConnectionProtocol extends js.Object
-
+sealed trait EConnectionProtocol extends StObject
 @JSImport("steam-client", "EConnectionProtocol")
 @js.native
-object EConnectionProtocol extends js.Object {
-  @js.native
-  sealed trait TCP extends EConnectionProtocol
-  
-  @js.native
-  sealed trait UDP extends EConnectionProtocol
-  
-  @js.native
-  sealed trait WebSocket extends EConnectionProtocol
+object EConnectionProtocol extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EConnectionProtocol with Double] = js.native
-  /* 1 */ @js.native
-  object TCP extends TopLevel[TCP with Double]
+  def apply(value: Double): js.UndefOr[EConnectionProtocol & Double] = js.native
   
-  /* 2 */ @js.native
-  object UDP extends TopLevel[UDP with Double]
+  @js.native
+  sealed trait TCP
+    extends StObject
+       with EConnectionProtocol
+  /* 1 */ val TCP: typingsJapgolly.steamClient.mod.EConnectionProtocol.TCP & Double = js.native
   
-  /* 3 */ @js.native
-  object WebSocket extends TopLevel[WebSocket with Double]
+  @js.native
+  sealed trait UDP
+    extends StObject
+       with EConnectionProtocol
+  /* 2 */ val UDP: typingsJapgolly.steamClient.mod.EConnectionProtocol.UDP & Double = js.native
   
+  @js.native
+  sealed trait WebSocket
+    extends StObject
+       with EConnectionProtocol
+  /* 3 */ val WebSocket: typingsJapgolly.steamClient.mod.EConnectionProtocol.WebSocket & Double = js.native
 }
-

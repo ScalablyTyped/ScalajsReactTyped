@@ -1,16 +1,14 @@
 package typingsJapgolly.sequelize.mod
 
 import org.scalablytyped.runtime.Instantiable4
-import typingsJapgolly.std.Error
-import typingsJapgolly.std.ErrorConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ValidationErrorItem
-  extends Error
-     with ErrorConstructor
+  extends StObject
+     with BaseError
      with /**
   * Validation Error Item
   * Instances of this class are included in the `ValidationError.errors` property.
@@ -27,11 +25,13 @@ Instantiable4[
       /* value */ String, 
       ValidationErrorItem
     ] {
+  
   /** The field that triggered the validation error */
   var path: String = js.native
+  
   /** The type of the validation error */
   var `type`: String = js.native
+  
   /** The value that generated the error */
   var value: String = js.native
 }
-

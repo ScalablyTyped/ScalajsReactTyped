@@ -1,35 +1,42 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Intersect extends js.Object
-
+sealed trait Intersect extends StObject
 @JSImport("cesium", "Intersect")
 @js.native
-object Intersect extends js.Object {
-  @js.native
-  sealed trait INSIDE extends Intersect
-  
-  @js.native
-  sealed trait INTERSECTING extends Intersect
-  
-  @js.native
-  sealed trait OUTSIDE extends Intersect
+object Intersect extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Intersect with Double] = js.native
-  /* 2 */ @js.native
-  object INSIDE extends TopLevel[INSIDE with Double]
+  def apply(value: Double): js.UndefOr[Intersect & Double] = js.native
   
-  /* 1 */ @js.native
-  object INTERSECTING extends TopLevel[INTERSECTING with Double]
+  /**
+    * Represents that an object is fully within the frustum.
+    */
+  @js.native
+  sealed trait INSIDE
+    extends StObject
+       with Intersect
+  /* 1 */ val INSIDE: typingsJapgolly.cesium.mod.Intersect.INSIDE & Double = js.native
   
-  /* 0 */ @js.native
-  object OUTSIDE extends TopLevel[OUTSIDE with Double]
+  /**
+    * Represents that an object intersects one of the frustum's planes.
+    */
+  @js.native
+  sealed trait INTERSECTING
+    extends StObject
+       with Intersect
+  /* 0 */ val INTERSECTING: typingsJapgolly.cesium.mod.Intersect.INTERSECTING & Double = js.native
   
+  /**
+    * Represents that an object is not contained within the frustum.
+    */
+  @js.native
+  sealed trait OUTSIDE
+    extends StObject
+       with Intersect
+  /* -1 */ val OUTSIDE: typingsJapgolly.cesium.mod.Intersect.OUTSIDE & Double = js.native
 }
-

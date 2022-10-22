@@ -1,19 +1,20 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "EmbeddedViewRef")
+/* note: abstract class */ @JSImport("@angular/core", "EmbeddedViewRef")
 @js.native
-abstract class EmbeddedViewRef[C] () extends ViewRef {
+open class EmbeddedViewRef[C] () extends ViewRef {
+  
   /**
     * The context for this view, inherited from the anchor element.
     */
-  val context: C = js.native
+  var context: C = js.native
+  
   /**
     * The root nodes for this embedded view.
     */
-  val rootNodes: js.Array[_] = js.native
+  def rootNodes: js.Array[Any] = js.native
 }
-

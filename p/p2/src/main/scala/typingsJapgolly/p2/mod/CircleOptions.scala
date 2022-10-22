@@ -1,33 +1,26 @@
 package typingsJapgolly.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CircleOptions extends SharedShapeOptions {
+trait CircleOptions
+  extends StObject
+     with SharedShapeOptions {
+  
   var radius: js.UndefOr[Double] = js.undefined
 }
-
 object CircleOptions {
-  @scala.inline
-  def apply(
-    angle: Int | Double = null,
-    collisionGroup: Int | Double = null,
-    collisionMask: Int | Double = null,
-    collisionResponse: js.UndefOr[Boolean] = js.undefined,
-    position: js.Tuple2[Double, Double] = null,
-    radius: Int | Double = null,
-    sensor: js.UndefOr[Boolean] = js.undefined
-  ): CircleOptions = {
+  
+  inline def apply(): CircleOptions = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (collisionGroup != null) __obj.updateDynamic("collisionGroup")(collisionGroup.asInstanceOf[js.Any])
-    if (collisionMask != null) __obj.updateDynamic("collisionMask")(collisionMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(collisionResponse)) __obj.updateDynamic("collisionResponse")(collisionResponse.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensor)) __obj.updateDynamic("sensor")(sensor.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleOptions]
   }
+  
+  extension [Self <: CircleOptions](x: Self) {
+    
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+  }
 }
-

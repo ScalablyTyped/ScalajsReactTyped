@@ -1,8 +1,8 @@
 package typingsJapgolly.dhtmlxgantt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterAutoSchedule
@@ -109,216 +109,212 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskUnselected
   - typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTemplatesReady
 */
-trait GanttEventName extends js.Object
-
+trait GanttEventName extends StObject
 object GanttEventName {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onAfterAutoSchedule: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterAutoSchedule = this.cast("onAfterAutoSchedule")
-  @scala.inline
-  def onAfterBatchUpdate: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterBatchUpdate = this.cast("onAfterBatchUpdate")
-  @scala.inline
-  def onAfterLightbox: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterLightbox = this.cast("onAfterLightbox")
-  @scala.inline
-  def onAfterLinkAdd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterLinkAdd = this.cast("onAfterLinkAdd")
-  @scala.inline
-  def onAfterLinkDelete: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterLinkDelete = this.cast("onAfterLinkDelete")
-  @scala.inline
-  def onAfterLinkUpdate: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterLinkUpdate = this.cast("onAfterLinkUpdate")
-  @scala.inline
-  def onAfterQuickInfo: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterQuickInfo = this.cast("onAfterQuickInfo")
-  @scala.inline
-  def onAfterRedo: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterRedo = this.cast("onAfterRedo")
-  @scala.inline
-  def onAfterSort: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterSort = this.cast("onAfterSort")
-  @scala.inline
-  def onAfterTaskAdd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskAdd = this.cast("onAfterTaskAdd")
-  @scala.inline
-  def onAfterTaskAutoSchedule: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskAutoSchedule = this.cast("onAfterTaskAutoSchedule")
-  @scala.inline
-  def onAfterTaskDelete: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskDelete = this.cast("onAfterTaskDelete")
-  @scala.inline
-  def onAfterTaskDrag: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskDrag = this.cast("onAfterTaskDrag")
-  @scala.inline
-  def onAfterTaskMove: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskMove = this.cast("onAfterTaskMove")
-  @scala.inline
-  def onAfterTaskUpdate: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskUpdate = this.cast("onAfterTaskUpdate")
-  @scala.inline
-  def onAfterUndo: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterUndo = this.cast("onAfterUndo")
-  @scala.inline
-  def onAjaxError: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAjaxError = this.cast("onAjaxError")
-  @scala.inline
-  def onAutoScheduleCircularLink: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAutoScheduleCircularLink = this.cast("onAutoScheduleCircularLink")
-  @scala.inline
-  def onBeforeAutoSchedule: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeAutoSchedule = this.cast("onBeforeAutoSchedule")
-  @scala.inline
-  def onBeforeBatchUpdate: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeBatchUpdate = this.cast("onBeforeBatchUpdate")
-  @scala.inline
-  def onBeforeCollapse: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeCollapse = this.cast("onBeforeCollapse")
-  @scala.inline
-  def onBeforeDataRender: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeDataRender = this.cast("onBeforeDataRender")
-  @scala.inline
-  def onBeforeExpand: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeExpand = this.cast("onBeforeExpand")
-  @scala.inline
-  def onBeforeGanttReady: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeGanttReady = this.cast("onBeforeGanttReady")
-  @scala.inline
-  def onBeforeGanttRender: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeGanttRender = this.cast("onBeforeGanttRender")
-  @scala.inline
-  def onBeforeLightbox: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLightbox = this.cast("onBeforeLightbox")
-  @scala.inline
-  def onBeforeLinkAdd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkAdd = this.cast("onBeforeLinkAdd")
-  @scala.inline
-  def onBeforeLinkDelete: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkDelete = this.cast("onBeforeLinkDelete")
-  @scala.inline
-  def onBeforeLinkDisplay: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkDisplay = this.cast("onBeforeLinkDisplay")
-  @scala.inline
-  def onBeforeLinkUpdate: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkUpdate = this.cast("onBeforeLinkUpdate")
-  @scala.inline
-  def onBeforeMultiSelect: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeMultiSelect = this.cast("onBeforeMultiSelect")
-  @scala.inline
-  def onBeforeParse: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeParse = this.cast("onBeforeParse")
-  @scala.inline
-  def onBeforeRedo: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeRedo = this.cast("onBeforeRedo")
-  @scala.inline
-  def onBeforeRedoStack: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeRedoStack = this.cast("onBeforeRedoStack")
-  @scala.inline
-  def onBeforeRowDragEnd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeRowDragEnd = this.cast("onBeforeRowDragEnd")
-  @scala.inline
-  def onBeforeRowDragMove: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeRowDragMove = this.cast("onBeforeRowDragMove")
-  @scala.inline
-  def onBeforeTaskAdd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskAdd = this.cast("onBeforeTaskAdd")
-  @scala.inline
-  def onBeforeTaskAutoSchedule: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskAutoSchedule = this.cast("onBeforeTaskAutoSchedule")
-  @scala.inline
-  def onBeforeTaskChanged: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskChanged = this.cast("onBeforeTaskChanged")
-  @scala.inline
-  def onBeforeTaskDelete: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskDelete = this.cast("onBeforeTaskDelete")
-  @scala.inline
-  def onBeforeTaskDisplay: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskDisplay = this.cast("onBeforeTaskDisplay")
-  @scala.inline
-  def onBeforeTaskDrag: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskDrag = this.cast("onBeforeTaskDrag")
-  @scala.inline
-  def onBeforeTaskMove: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskMove = this.cast("onBeforeTaskMove")
-  @scala.inline
-  def onBeforeTaskMultiSelect: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskMultiSelect = this.cast("onBeforeTaskMultiSelect")
-  @scala.inline
-  def onBeforeTaskSelected: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskSelected = this.cast("onBeforeTaskSelected")
-  @scala.inline
-  def onBeforeTaskUpdate: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskUpdate = this.cast("onBeforeTaskUpdate")
-  @scala.inline
-  def onBeforeUndo: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeUndo = this.cast("onBeforeUndo")
-  @scala.inline
-  def onBeforeUndoStack: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeUndoStack = this.cast("onBeforeUndoStack")
-  @scala.inline
-  def onCircularLinkError: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onCircularLinkError = this.cast("onCircularLinkError")
-  @scala.inline
-  def onClear: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onClear = this.cast("onClear")
-  @scala.inline
-  def onCollapse: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onCollapse = this.cast("onCollapse")
-  @scala.inline
-  def onColumnResize: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onColumnResize = this.cast("onColumnResize")
-  @scala.inline
-  def onColumnResizeEnd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onColumnResizeEnd = this.cast("onColumnResizeEnd")
-  @scala.inline
-  def onColumnResizeStart: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onColumnResizeStart = this.cast("onColumnResizeStart")
-  @scala.inline
-  def onContextMenu: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onContextMenu = this.cast("onContextMenu")
-  @scala.inline
-  def onDataProcessorReady: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onDataProcessorReady = this.cast("onDataProcessorReady")
-  @scala.inline
-  def onDataRender: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onDataRender = this.cast("onDataRender")
-  @scala.inline
-  def onDestroy: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onDestroy = this.cast("onDestroy")
-  @scala.inline
-  def onEmptyClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onEmptyClick = this.cast("onEmptyClick")
-  @scala.inline
-  def onError: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onError = this.cast("onError")
-  @scala.inline
-  def onExpand: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onExpand = this.cast("onExpand")
-  @scala.inline
-  def onGanttLayoutReady: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGanttLayoutReady = this.cast("onGanttLayoutReady")
-  @scala.inline
-  def onGanttReady: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGanttReady = this.cast("onGanttReady")
-  @scala.inline
-  def onGanttRender: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGanttRender = this.cast("onGanttRender")
-  @scala.inline
-  def onGanttScroll: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGanttScroll = this.cast("onGanttScroll")
-  @scala.inline
-  def onGridHeaderClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGridHeaderClick = this.cast("onGridHeaderClick")
-  @scala.inline
-  def onGridResize: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGridResize = this.cast("onGridResize")
-  @scala.inline
-  def onGridResizeEnd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGridResizeEnd = this.cast("onGridResizeEnd")
-  @scala.inline
-  def onGridResizeStart: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGridResizeStart = this.cast("onGridResizeStart")
-  @scala.inline
-  def onLightbox: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightbox = this.cast("onLightbox")
-  @scala.inline
-  def onLightboxButton: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxButton = this.cast("onLightboxButton")
-  @scala.inline
-  def onLightboxCancel: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxCancel = this.cast("onLightboxCancel")
-  @scala.inline
-  def onLightboxChange: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxChange = this.cast("onLightboxChange")
-  @scala.inline
-  def onLightboxDelete: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxDelete = this.cast("onLightboxDelete")
-  @scala.inline
-  def onLightboxSave: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxSave = this.cast("onLightboxSave")
-  @scala.inline
-  def onLinkClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLinkClick = this.cast("onLinkClick")
-  @scala.inline
-  def onLinkDblClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLinkDblClick = this.cast("onLinkDblClick")
-  @scala.inline
-  def onLinkIdChange: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLinkIdChange = this.cast("onLinkIdChange")
-  @scala.inline
-  def onLinkValidation: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLinkValidation = this.cast("onLinkValidation")
-  @scala.inline
-  def onLoadEnd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLoadEnd = this.cast("onLoadEnd")
-  @scala.inline
-  def onLoadStart: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLoadStart = this.cast("onLoadStart")
-  @scala.inline
-  def onMouseMove: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onMouseMove = this.cast("onMouseMove")
-  @scala.inline
-  def onMultiSelect: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onMultiSelect = this.cast("onMultiSelect")
-  @scala.inline
-  def onOptionsLoad: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onOptionsLoad = this.cast("onOptionsLoad")
-  @scala.inline
-  def onParse: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onParse = this.cast("onParse")
-  @scala.inline
-  def onQuickInfo: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onQuickInfo = this.cast("onQuickInfo")
-  @scala.inline
-  def onRowDragEnd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onRowDragEnd = this.cast("onRowDragEnd")
-  @scala.inline
-  def onRowDragStart: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onRowDragStart = this.cast("onRowDragStart")
-  @scala.inline
-  def onScaleAdjusted: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onScaleAdjusted = this.cast("onScaleAdjusted")
-  @scala.inline
-  def onScaleClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onScaleClick = this.cast("onScaleClick")
-  @scala.inline
-  def onTaskClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskClick = this.cast("onTaskClick")
-  @scala.inline
-  def onTaskClosed: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskClosed = this.cast("onTaskClosed")
-  @scala.inline
-  def onTaskCreated: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskCreated = this.cast("onTaskCreated")
-  @scala.inline
-  def onTaskDblClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskDblClick = this.cast("onTaskDblClick")
-  @scala.inline
-  def onTaskDrag: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskDrag = this.cast("onTaskDrag")
-  @scala.inline
-  def onTaskIdChange: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskIdChange = this.cast("onTaskIdChange")
-  @scala.inline
-  def onTaskLoading: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskLoading = this.cast("onTaskLoading")
-  @scala.inline
-  def onTaskMultiSelect: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskMultiSelect = this.cast("onTaskMultiSelect")
-  @scala.inline
-  def onTaskOpened: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskOpened = this.cast("onTaskOpened")
-  @scala.inline
-  def onTaskRowClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskRowClick = this.cast("onTaskRowClick")
-  @scala.inline
-  def onTaskSelected: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskSelected = this.cast("onTaskSelected")
-  @scala.inline
-  def onTaskUnselected: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskUnselected = this.cast("onTaskUnselected")
-  @scala.inline
-  def onTemplatesReady: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTemplatesReady = this.cast("onTemplatesReady")
+  
+  inline def onAfterAutoSchedule: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterAutoSchedule = "onAfterAutoSchedule".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterAutoSchedule]
+  
+  inline def onAfterBatchUpdate: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterBatchUpdate = "onAfterBatchUpdate".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterBatchUpdate]
+  
+  inline def onAfterLightbox: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterLightbox = "onAfterLightbox".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterLightbox]
+  
+  inline def onAfterLinkAdd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterLinkAdd = "onAfterLinkAdd".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterLinkAdd]
+  
+  inline def onAfterLinkDelete: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterLinkDelete = "onAfterLinkDelete".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterLinkDelete]
+  
+  inline def onAfterLinkUpdate: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterLinkUpdate = "onAfterLinkUpdate".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterLinkUpdate]
+  
+  inline def onAfterQuickInfo: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterQuickInfo = "onAfterQuickInfo".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterQuickInfo]
+  
+  inline def onAfterRedo: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterRedo = "onAfterRedo".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterRedo]
+  
+  inline def onAfterSort: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterSort = "onAfterSort".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterSort]
+  
+  inline def onAfterTaskAdd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskAdd = "onAfterTaskAdd".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskAdd]
+  
+  inline def onAfterTaskAutoSchedule: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskAutoSchedule = "onAfterTaskAutoSchedule".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskAutoSchedule]
+  
+  inline def onAfterTaskDelete: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskDelete = "onAfterTaskDelete".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskDelete]
+  
+  inline def onAfterTaskDrag: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskDrag = "onAfterTaskDrag".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskDrag]
+  
+  inline def onAfterTaskMove: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskMove = "onAfterTaskMove".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskMove]
+  
+  inline def onAfterTaskUpdate: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskUpdate = "onAfterTaskUpdate".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterTaskUpdate]
+  
+  inline def onAfterUndo: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterUndo = "onAfterUndo".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAfterUndo]
+  
+  inline def onAjaxError: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAjaxError = "onAjaxError".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAjaxError]
+  
+  inline def onAutoScheduleCircularLink: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAutoScheduleCircularLink = "onAutoScheduleCircularLink".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onAutoScheduleCircularLink]
+  
+  inline def onBeforeAutoSchedule: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeAutoSchedule = "onBeforeAutoSchedule".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeAutoSchedule]
+  
+  inline def onBeforeBatchUpdate: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeBatchUpdate = "onBeforeBatchUpdate".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeBatchUpdate]
+  
+  inline def onBeforeCollapse: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeCollapse = "onBeforeCollapse".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeCollapse]
+  
+  inline def onBeforeDataRender: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeDataRender = "onBeforeDataRender".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeDataRender]
+  
+  inline def onBeforeExpand: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeExpand = "onBeforeExpand".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeExpand]
+  
+  inline def onBeforeGanttReady: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeGanttReady = "onBeforeGanttReady".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeGanttReady]
+  
+  inline def onBeforeGanttRender: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeGanttRender = "onBeforeGanttRender".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeGanttRender]
+  
+  inline def onBeforeLightbox: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLightbox = "onBeforeLightbox".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLightbox]
+  
+  inline def onBeforeLinkAdd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkAdd = "onBeforeLinkAdd".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkAdd]
+  
+  inline def onBeforeLinkDelete: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkDelete = "onBeforeLinkDelete".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkDelete]
+  
+  inline def onBeforeLinkDisplay: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkDisplay = "onBeforeLinkDisplay".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkDisplay]
+  
+  inline def onBeforeLinkUpdate: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkUpdate = "onBeforeLinkUpdate".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeLinkUpdate]
+  
+  inline def onBeforeMultiSelect: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeMultiSelect = "onBeforeMultiSelect".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeMultiSelect]
+  
+  inline def onBeforeParse: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeParse = "onBeforeParse".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeParse]
+  
+  inline def onBeforeRedo: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeRedo = "onBeforeRedo".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeRedo]
+  
+  inline def onBeforeRedoStack: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeRedoStack = "onBeforeRedoStack".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeRedoStack]
+  
+  inline def onBeforeRowDragEnd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeRowDragEnd = "onBeforeRowDragEnd".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeRowDragEnd]
+  
+  inline def onBeforeRowDragMove: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeRowDragMove = "onBeforeRowDragMove".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeRowDragMove]
+  
+  inline def onBeforeTaskAdd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskAdd = "onBeforeTaskAdd".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskAdd]
+  
+  inline def onBeforeTaskAutoSchedule: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskAutoSchedule = "onBeforeTaskAutoSchedule".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskAutoSchedule]
+  
+  inline def onBeforeTaskChanged: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskChanged = "onBeforeTaskChanged".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskChanged]
+  
+  inline def onBeforeTaskDelete: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskDelete = "onBeforeTaskDelete".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskDelete]
+  
+  inline def onBeforeTaskDisplay: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskDisplay = "onBeforeTaskDisplay".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskDisplay]
+  
+  inline def onBeforeTaskDrag: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskDrag = "onBeforeTaskDrag".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskDrag]
+  
+  inline def onBeforeTaskMove: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskMove = "onBeforeTaskMove".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskMove]
+  
+  inline def onBeforeTaskMultiSelect: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskMultiSelect = "onBeforeTaskMultiSelect".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskMultiSelect]
+  
+  inline def onBeforeTaskSelected: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskSelected = "onBeforeTaskSelected".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskSelected]
+  
+  inline def onBeforeTaskUpdate: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskUpdate = "onBeforeTaskUpdate".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeTaskUpdate]
+  
+  inline def onBeforeUndo: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeUndo = "onBeforeUndo".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeUndo]
+  
+  inline def onBeforeUndoStack: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeUndoStack = "onBeforeUndoStack".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onBeforeUndoStack]
+  
+  inline def onCircularLinkError: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onCircularLinkError = "onCircularLinkError".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onCircularLinkError]
+  
+  inline def onClear: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onClear = "onClear".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onClear]
+  
+  inline def onCollapse: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onCollapse = "onCollapse".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onCollapse]
+  
+  inline def onColumnResize: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onColumnResize = "onColumnResize".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onColumnResize]
+  
+  inline def onColumnResizeEnd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onColumnResizeEnd = "onColumnResizeEnd".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onColumnResizeEnd]
+  
+  inline def onColumnResizeStart: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onColumnResizeStart = "onColumnResizeStart".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onColumnResizeStart]
+  
+  inline def onContextMenu: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onContextMenu = "onContextMenu".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onContextMenu]
+  
+  inline def onDataProcessorReady: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onDataProcessorReady = "onDataProcessorReady".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onDataProcessorReady]
+  
+  inline def onDataRender: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onDataRender = "onDataRender".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onDataRender]
+  
+  inline def onDestroy: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onDestroy = "onDestroy".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onDestroy]
+  
+  inline def onEmptyClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onEmptyClick = "onEmptyClick".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onEmptyClick]
+  
+  inline def onError: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onError = "onError".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onError]
+  
+  inline def onExpand: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onExpand = "onExpand".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onExpand]
+  
+  inline def onGanttLayoutReady: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGanttLayoutReady = "onGanttLayoutReady".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGanttLayoutReady]
+  
+  inline def onGanttReady: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGanttReady = "onGanttReady".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGanttReady]
+  
+  inline def onGanttRender: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGanttRender = "onGanttRender".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGanttRender]
+  
+  inline def onGanttScroll: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGanttScroll = "onGanttScroll".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGanttScroll]
+  
+  inline def onGridHeaderClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGridHeaderClick = "onGridHeaderClick".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGridHeaderClick]
+  
+  inline def onGridResize: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGridResize = "onGridResize".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGridResize]
+  
+  inline def onGridResizeEnd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGridResizeEnd = "onGridResizeEnd".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGridResizeEnd]
+  
+  inline def onGridResizeStart: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGridResizeStart = "onGridResizeStart".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onGridResizeStart]
+  
+  inline def onLightbox: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightbox = "onLightbox".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightbox]
+  
+  inline def onLightboxButton: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxButton = "onLightboxButton".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxButton]
+  
+  inline def onLightboxCancel: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxCancel = "onLightboxCancel".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxCancel]
+  
+  inline def onLightboxChange: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxChange = "onLightboxChange".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxChange]
+  
+  inline def onLightboxDelete: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxDelete = "onLightboxDelete".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxDelete]
+  
+  inline def onLightboxSave: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxSave = "onLightboxSave".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLightboxSave]
+  
+  inline def onLinkClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLinkClick = "onLinkClick".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLinkClick]
+  
+  inline def onLinkDblClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLinkDblClick = "onLinkDblClick".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLinkDblClick]
+  
+  inline def onLinkIdChange: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLinkIdChange = "onLinkIdChange".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLinkIdChange]
+  
+  inline def onLinkValidation: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLinkValidation = "onLinkValidation".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLinkValidation]
+  
+  inline def onLoadEnd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLoadEnd = "onLoadEnd".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLoadEnd]
+  
+  inline def onLoadStart: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLoadStart = "onLoadStart".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onLoadStart]
+  
+  inline def onMouseMove: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onMouseMove = "onMouseMove".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onMouseMove]
+  
+  inline def onMultiSelect: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onMultiSelect = "onMultiSelect".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onMultiSelect]
+  
+  inline def onOptionsLoad: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onOptionsLoad = "onOptionsLoad".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onOptionsLoad]
+  
+  inline def onParse: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onParse = "onParse".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onParse]
+  
+  inline def onQuickInfo: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onQuickInfo = "onQuickInfo".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onQuickInfo]
+  
+  inline def onRowDragEnd: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onRowDragEnd = "onRowDragEnd".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onRowDragEnd]
+  
+  inline def onRowDragStart: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onRowDragStart = "onRowDragStart".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onRowDragStart]
+  
+  inline def onScaleAdjusted: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onScaleAdjusted = "onScaleAdjusted".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onScaleAdjusted]
+  
+  inline def onScaleClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onScaleClick = "onScaleClick".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onScaleClick]
+  
+  inline def onTaskClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskClick = "onTaskClick".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskClick]
+  
+  inline def onTaskClosed: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskClosed = "onTaskClosed".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskClosed]
+  
+  inline def onTaskCreated: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskCreated = "onTaskCreated".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskCreated]
+  
+  inline def onTaskDblClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskDblClick = "onTaskDblClick".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskDblClick]
+  
+  inline def onTaskDrag: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskDrag = "onTaskDrag".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskDrag]
+  
+  inline def onTaskIdChange: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskIdChange = "onTaskIdChange".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskIdChange]
+  
+  inline def onTaskLoading: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskLoading = "onTaskLoading".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskLoading]
+  
+  inline def onTaskMultiSelect: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskMultiSelect = "onTaskMultiSelect".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskMultiSelect]
+  
+  inline def onTaskOpened: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskOpened = "onTaskOpened".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskOpened]
+  
+  inline def onTaskRowClick: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskRowClick = "onTaskRowClick".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskRowClick]
+  
+  inline def onTaskSelected: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskSelected = "onTaskSelected".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskSelected]
+  
+  inline def onTaskUnselected: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskUnselected = "onTaskUnselected".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTaskUnselected]
+  
+  inline def onTemplatesReady: typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTemplatesReady = "onTemplatesReady".asInstanceOf[typingsJapgolly.dhtmlxgantt.dhtmlxganttStrings.onTemplatesReady]
 }
-

@@ -10,10 +10,10 @@ Redis adapter for catbox
 | ------------------ | :-------------: |
 | Full name          | @hapi/catbox-redis |
 | Keywords           | cache, catbox, redis |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 84610 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 39958.666666666664 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/catbox-redis#readme)

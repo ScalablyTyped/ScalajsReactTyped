@@ -1,8 +1,8 @@
 package typingsJapgolly.shelljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.shelljs.shelljsStrings.`-b`
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.shelljs.shelljsStrings.`-p`
   - typingsJapgolly.shelljs.shelljsStrings.`-S`
 */
-trait TestOptions extends js.Object
-
+trait TestOptions extends StObject
 object TestOptions {
-  @scala.inline
-  def `-L`: typingsJapgolly.shelljs.shelljsStrings.`-L` = this.cast("-L")
-  @scala.inline
-  def `-S`: typingsJapgolly.shelljs.shelljsStrings.`-S` = this.cast("-S")
-  @scala.inline
-  def `-b`: typingsJapgolly.shelljs.shelljsStrings.`-b` = this.cast("-b")
-  @scala.inline
-  def `-c`: typingsJapgolly.shelljs.shelljsStrings.`-c` = this.cast("-c")
-  @scala.inline
-  def `-d`: typingsJapgolly.shelljs.shelljsStrings.`-d` = this.cast("-d")
-  @scala.inline
-  def `-e`: typingsJapgolly.shelljs.shelljsStrings.`-e` = this.cast("-e")
-  @scala.inline
-  def `-f`: typingsJapgolly.shelljs.shelljsStrings.`-f` = this.cast("-f")
-  @scala.inline
-  def `-p`: typingsJapgolly.shelljs.shelljsStrings.`-p` = this.cast("-p")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `-L`: typingsJapgolly.shelljs.shelljsStrings.`-L` = "-L".asInstanceOf[typingsJapgolly.shelljs.shelljsStrings.`-L`]
+  
+  inline def `-S`: typingsJapgolly.shelljs.shelljsStrings.`-S` = "-S".asInstanceOf[typingsJapgolly.shelljs.shelljsStrings.`-S`]
+  
+  inline def `-b`: typingsJapgolly.shelljs.shelljsStrings.`-b` = "-b".asInstanceOf[typingsJapgolly.shelljs.shelljsStrings.`-b`]
+  
+  inline def `-c`: typingsJapgolly.shelljs.shelljsStrings.`-c` = "-c".asInstanceOf[typingsJapgolly.shelljs.shelljsStrings.`-c`]
+  
+  inline def `-d`: typingsJapgolly.shelljs.shelljsStrings.`-d` = "-d".asInstanceOf[typingsJapgolly.shelljs.shelljsStrings.`-d`]
+  
+  inline def `-e`: typingsJapgolly.shelljs.shelljsStrings.`-e` = "-e".asInstanceOf[typingsJapgolly.shelljs.shelljsStrings.`-e`]
+  
+  inline def `-f`: typingsJapgolly.shelljs.shelljsStrings.`-f` = "-f".asInstanceOf[typingsJapgolly.shelljs.shelljsStrings.`-f`]
+  
+  inline def `-p`: typingsJapgolly.shelljs.shelljsStrings.`-p` = "-p".asInstanceOf[typingsJapgolly.shelljs.shelljsStrings.`-p`]
 }
-

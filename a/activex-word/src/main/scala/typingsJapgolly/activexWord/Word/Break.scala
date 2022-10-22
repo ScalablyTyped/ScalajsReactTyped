@@ -1,18 +1,51 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.Break")
-@js.native
-class Break protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Creator: Double = js.native
-  val PageIndex: Double = js.native
-  val Parent: js.Any = js.native
-  val Range: typingsJapgolly.activexWord.Word.Range = js.native
-  @JSName("Word.Break_typekey")
-  var WordDotBreak_typekey: Break = js.native
+trait Break extends StObject {
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  val Creator: Double
+  
+  val PageIndex: Double
+  
+  val Parent: Any
+  
+  val Range: typingsJapgolly.activexWord.Word.Range
+  
+  /* private */ @JSName("Word.Break_typekey")
+  var WordDotBreak_typekey: Break
 }
-
+object Break {
+  
+  inline def apply(
+    Application: Application,
+    Creator: Double,
+    PageIndex: Double,
+    Parent: Any,
+    Range: Range,
+    WordDotBreak_typekey: Break
+  ): Break = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], PageIndex = PageIndex.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Range = Range.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.Break_typekey")(WordDotBreak_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Break]
+  }
+  
+  extension [Self <: Break](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setPageIndex(value: Double): Self = StObject.set(x, "PageIndex", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotBreak_typekey(value: Break): Self = StObject.set(x, "Word.Break_typekey", value.asInstanceOf[js.Any])
+  }
+}

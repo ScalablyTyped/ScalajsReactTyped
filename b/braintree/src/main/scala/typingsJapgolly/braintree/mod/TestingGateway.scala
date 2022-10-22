@@ -1,34 +1,44 @@
 package typingsJapgolly.braintree.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TestingGateway extends js.Object {
+trait TestingGateway extends StObject {
+  
   def settle(transactionId: String): js.Promise[ValidatedResponse[Transaction]]
+  
   def settlementConfirm(transactionId: String): js.Promise[ValidatedResponse[Transaction]]
+  
   def settlementDecline(transactionId: String): js.Promise[ValidatedResponse[Transaction]]
+  
   def settlementOperationWithEnvironmentCheck(transactionId: String): js.Promise[ValidatedResponse[Transaction]]
+  
   def settlementPending(transactionId: String): js.Promise[ValidatedResponse[Transaction]]
 }
-
 object TestingGateway {
-  @scala.inline
-  def apply(
-    settle: String => CallbackTo[js.Promise[ValidatedResponse[Transaction]]],
-    settlementConfirm: String => CallbackTo[js.Promise[ValidatedResponse[Transaction]]],
-    settlementDecline: String => CallbackTo[js.Promise[ValidatedResponse[Transaction]]],
-    settlementOperationWithEnvironmentCheck: String => CallbackTo[js.Promise[ValidatedResponse[Transaction]]],
-    settlementPending: String => CallbackTo[js.Promise[ValidatedResponse[Transaction]]]
+  
+  inline def apply(
+    settle: String => js.Promise[ValidatedResponse[Transaction]],
+    settlementConfirm: String => js.Promise[ValidatedResponse[Transaction]],
+    settlementDecline: String => js.Promise[ValidatedResponse[Transaction]],
+    settlementOperationWithEnvironmentCheck: String => js.Promise[ValidatedResponse[Transaction]],
+    settlementPending: String => js.Promise[ValidatedResponse[Transaction]]
   ): TestingGateway = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("settle")(js.Any.fromFunction1((t0: java.lang.String) => settle(t0).runNow()))
-    __obj.updateDynamic("settlementConfirm")(js.Any.fromFunction1((t0: java.lang.String) => settlementConfirm(t0).runNow()))
-    __obj.updateDynamic("settlementDecline")(js.Any.fromFunction1((t0: java.lang.String) => settlementDecline(t0).runNow()))
-    __obj.updateDynamic("settlementOperationWithEnvironmentCheck")(js.Any.fromFunction1((t0: java.lang.String) => settlementOperationWithEnvironmentCheck(t0).runNow()))
-    __obj.updateDynamic("settlementPending")(js.Any.fromFunction1((t0: java.lang.String) => settlementPending(t0).runNow()))
+    val __obj = js.Dynamic.literal(settle = js.Any.fromFunction1(settle), settlementConfirm = js.Any.fromFunction1(settlementConfirm), settlementDecline = js.Any.fromFunction1(settlementDecline), settlementOperationWithEnvironmentCheck = js.Any.fromFunction1(settlementOperationWithEnvironmentCheck), settlementPending = js.Any.fromFunction1(settlementPending))
     __obj.asInstanceOf[TestingGateway]
   }
+  
+  extension [Self <: TestingGateway](x: Self) {
+    
+    inline def setSettle(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = StObject.set(x, "settle", js.Any.fromFunction1(value))
+    
+    inline def setSettlementConfirm(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = StObject.set(x, "settlementConfirm", js.Any.fromFunction1(value))
+    
+    inline def setSettlementDecline(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = StObject.set(x, "settlementDecline", js.Any.fromFunction1(value))
+    
+    inline def setSettlementOperationWithEnvironmentCheck(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = StObject.set(x, "settlementOperationWithEnvironmentCheck", js.Any.fromFunction1(value))
+    
+    inline def setSettlementPending(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = StObject.set(x, "settlementPending", js.Any.fromFunction1(value))
+  }
 }
-

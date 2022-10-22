@@ -1,19 +1,25 @@
-package typingsJapgolly.clearbladejsNode
+package typingsJapgolly.clearbladejsNode.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.clearbladejsNode.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type CbCallback = js.Function2[
-    /* error */ scala.Boolean, 
-    /* response */ typingsJapgolly.clearbladejsNode.mod.Resp, 
-    scala.Unit
-  ]
-  type ItemOptions = typingsJapgolly.clearbladejsNode.mod.CollectionOptionsWithID
-  type KeyValuePair = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type MessageCallback = js.Function1[/* message */ java.lang.String, scala.Unit]
-  type QueryFilter = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.clearbladejsNode.mod.QueryFilterValue]
-  type QueryFilterValue = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.clearbladejsNode.mod.QueryValue]
-  type QueryValue = java.lang.String | scala.Double | scala.Boolean
-}
+
+inline def ClearBlade: ClearBladeGlobal = ^.asInstanceOf[js.Dynamic].selectDynamic("ClearBlade").asInstanceOf[ClearBladeGlobal]
+inline def ClearBlade_=(x: ClearBladeGlobal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearBlade")(x.asInstanceOf[js.Any])
+
+type CbCallback = js.Function2[/* error */ Boolean, /* response */ Resp, Unit]
+
+type ItemOptions = CollectionOptionsWithID
+
+type KeyValuePair = StringDictionary[Any]
+
+type MessageCallback = js.Function1[/* message */ String, Unit]
+
+type QueryFilter = StringDictionary[QueryFilterValue]
+
+type QueryFilterValue = StringDictionary[QueryValue]
+
+type QueryValue = String | Double | Boolean

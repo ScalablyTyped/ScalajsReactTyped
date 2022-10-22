@@ -1,14 +1,19 @@
 package typingsJapgolly.grommetIcons.components
 
+import org.scalajs.dom.SVGSVGElement
+import typingsJapgolly.grommetIcons.es6IconsMod.IconProps
+import typingsJapgolly.react.mod.SVGProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object ShieldSecurity
-  extends `SharedApply_<intersection>335678977`[typingsJapgolly.grommetIcons.mod.ShieldSecurity] {
-  @JSImport("grommet-icons", "ShieldSecurity")
-  @js.native
-  override object componentImport extends js.Object
+object ShieldSecurity {
   
+  @JSImport("grommet-icons/es6", "ShieldSecurity")
+  @js.native
+  val component: js.Object = js.native
+  
+  implicit def make(companion: ShieldSecurity.type): SharedBuilder_IconPropsSVGProps_867722073[SVGSVGElement] = new SharedBuilder_IconPropsSVGProps_867722073[SVGSVGElement](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IconProps & SVGProps[SVGSVGElement]): SharedBuilder_IconPropsSVGProps_867722073[SVGSVGElement] = new SharedBuilder_IconPropsSVGProps_867722073[SVGSVGElement](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

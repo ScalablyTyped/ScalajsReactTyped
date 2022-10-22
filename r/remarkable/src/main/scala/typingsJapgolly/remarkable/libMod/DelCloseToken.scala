@@ -1,23 +1,28 @@
 package typingsJapgolly.remarkable.libMod
 
 import typingsJapgolly.remarkable.remarkableStrings.del_open
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.remarkable.libMod._Token because Already inherited */ trait DelCloseToken extends TagToken {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.remarkable.libMod._Token because Already inherited */ trait DelCloseToken
+  extends StObject
+     with TagToken {
+  
   @JSName("type")
   var type_DelCloseToken: del_open
 }
-
 object DelCloseToken {
-  @scala.inline
-  def apply(level: Double, `type`: del_open, lines: js.Tuple2[Double, Double] = null): DelCloseToken = {
+  
+  inline def apply(level: Double): DelCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("del_open")
     __obj.asInstanceOf[DelCloseToken]
   }
+  
+  extension [Self <: DelCloseToken](x: Self) {
+    
+    inline def setType(value: del_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

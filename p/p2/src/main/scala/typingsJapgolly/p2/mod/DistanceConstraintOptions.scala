@@ -1,34 +1,44 @@
 package typingsJapgolly.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DistanceConstraintOptions extends ConstraintOptions {
+trait DistanceConstraintOptions
+  extends StObject
+     with ConstraintOptions {
+  
   var distance: js.UndefOr[Double] = js.undefined
+  
   var localAnchorA: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+  
   var localAnchorB: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+  
   var maxForce: js.UndefOr[Double] = js.undefined
 }
-
 object DistanceConstraintOptions {
-  @scala.inline
-  def apply(
-    collideConnected: js.UndefOr[Boolean] = js.undefined,
-    distance: Int | Double = null,
-    localAnchorA: js.Tuple2[Double, Double] = null,
-    localAnchorB: js.Tuple2[Double, Double] = null,
-    maxForce: Int | Double = null,
-    wakeUpBodies: js.UndefOr[Boolean] = js.undefined
-  ): DistanceConstraintOptions = {
+  
+  inline def apply(): DistanceConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collideConnected)) __obj.updateDynamic("collideConnected")(collideConnected.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (localAnchorA != null) __obj.updateDynamic("localAnchorA")(localAnchorA.asInstanceOf[js.Any])
-    if (localAnchorB != null) __obj.updateDynamic("localAnchorB")(localAnchorB.asInstanceOf[js.Any])
-    if (maxForce != null) __obj.updateDynamic("maxForce")(maxForce.asInstanceOf[js.Any])
-    if (!js.isUndefined(wakeUpBodies)) __obj.updateDynamic("wakeUpBodies")(wakeUpBodies.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistanceConstraintOptions]
   }
+  
+  extension [Self <: DistanceConstraintOptions](x: Self) {
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    
+    inline def setLocalAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
+    
+    inline def setLocalAnchorAUndefined: Self = StObject.set(x, "localAnchorA", js.undefined)
+    
+    inline def setLocalAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
+    
+    inline def setLocalAnchorBUndefined: Self = StObject.set(x, "localAnchorB", js.undefined)
+    
+    inline def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
+    
+    inline def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
+  }
 }
-

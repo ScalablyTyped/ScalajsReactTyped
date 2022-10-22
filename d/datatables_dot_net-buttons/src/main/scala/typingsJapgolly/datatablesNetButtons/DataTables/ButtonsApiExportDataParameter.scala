@@ -1,45 +1,72 @@
 package typingsJapgolly.datatablesNetButtons.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ButtonsApiExportDataParameter extends js.Object {
-  var columns: js.UndefOr[js.Any] = js.undefined
+trait ButtonsApiExportDataParameter extends StObject {
+  
+  var columns: js.UndefOr[Any] = js.undefined
+  
   var decodeEntities: js.UndefOr[Boolean] = js.undefined
-  var format: js.UndefOr[js.Any] = js.undefined
-  var modifier: js.UndefOr[js.Any] = js.undefined
+  
+  var format: js.UndefOr[Any] = js.undefined
+  
+  var modifier: js.UndefOr[Any] = js.undefined
+  
   var orthogonal: js.UndefOr[String] = js.undefined
-  var rows: js.UndefOr[js.Any] = js.undefined
+  
+  var rows: js.UndefOr[Any] = js.undefined
+  
   var stripHtml: js.UndefOr[Boolean] = js.undefined
+  
   var stripNewlines: js.UndefOr[Boolean] = js.undefined
+  
   var trim: js.UndefOr[Boolean] = js.undefined
 }
-
 object ButtonsApiExportDataParameter {
-  @scala.inline
-  def apply(
-    columns: js.Any = null,
-    decodeEntities: js.UndefOr[Boolean] = js.undefined,
-    format: js.Any = null,
-    modifier: js.Any = null,
-    orthogonal: String = null,
-    rows: js.Any = null,
-    stripHtml: js.UndefOr[Boolean] = js.undefined,
-    stripNewlines: js.UndefOr[Boolean] = js.undefined,
-    trim: js.UndefOr[Boolean] = js.undefined
-  ): ButtonsApiExportDataParameter = {
+  
+  inline def apply(): ButtonsApiExportDataParameter = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(decodeEntities)) __obj.updateDynamic("decodeEntities")(decodeEntities.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
-    if (orthogonal != null) __obj.updateDynamic("orthogonal")(orthogonal.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripHtml)) __obj.updateDynamic("stripHtml")(stripHtml.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripNewlines)) __obj.updateDynamic("stripNewlines")(stripNewlines.asInstanceOf[js.Any])
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonsApiExportDataParameter]
   }
+  
+  extension [Self <: ButtonsApiExportDataParameter](x: Self) {
+    
+    inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setDecodeEntities(value: Boolean): Self = StObject.set(x, "decodeEntities", value.asInstanceOf[js.Any])
+    
+    inline def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
+    
+    inline def setFormat(value: Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setModifier(value: Any): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    
+    inline def setOrthogonal(value: String): Self = StObject.set(x, "orthogonal", value.asInstanceOf[js.Any])
+    
+    inline def setOrthogonalUndefined: Self = StObject.set(x, "orthogonal", js.undefined)
+    
+    inline def setRows(value: Any): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    
+    inline def setStripHtml(value: Boolean): Self = StObject.set(x, "stripHtml", value.asInstanceOf[js.Any])
+    
+    inline def setStripHtmlUndefined: Self = StObject.set(x, "stripHtml", js.undefined)
+    
+    inline def setStripNewlines(value: Boolean): Self = StObject.set(x, "stripNewlines", value.asInstanceOf[js.Any])
+    
+    inline def setStripNewlinesUndefined: Self = StObject.set(x, "stripNewlines", js.undefined)
+    
+    inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+    
+    inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+  }
 }
-

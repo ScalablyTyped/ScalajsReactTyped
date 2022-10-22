@@ -1,8 +1,8 @@
 package typingsJapgolly.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a singular cluster containing your buckets.
@@ -14,9 +14,11 @@ import scala.scalajs.js.annotation._
   * @param cnstr The connection string for your cluster.
   * @param options The options object.
   */
-class Cluster () extends js.Object {
+open class Cluster () extends StObject {
   def this(cnstr: String) = this()
   def this(cnstr: String, options: ClusterConstructorOptions) = this()
+  def this(cnstr: Unit, options: ClusterConstructorOptions) = this()
+  
   /**
     * Authenticate to the cluster using a specific authentication type.
     * @param auther
@@ -28,6 +30,7 @@ class Cluster () extends js.Object {
     * @param password RBAC password.
     */
   def authenticate(username: String, password: String): Unit = js.native
+  
   /**
     * Creates a manager allowing the management of a Couchbase cluster.
     */
@@ -38,6 +41,7 @@ class Cluster () extends js.Object {
     * @param password The password for your cluster.
     */
   def manager(username: String, password: String): ClusterManager = js.native
+  
   /**
     * Open a bucket to perform operations. This will begin the handshake process immediately and operations will complete later. Subscribe to the connect event to be alerted when the connection is ready, though be aware operations can be successfully queued before this.
     * @param name The name of the bucket to open.
@@ -47,5 +51,9 @@ class Cluster () extends js.Object {
   def openBucket(name: String, callback: js.Function): Bucket = js.native
   def openBucket(name: String, password: String): Bucket = js.native
   def openBucket(name: String, password: String, callback: js.Function): Bucket = js.native
+  def openBucket(name: String, password: Unit, callback: js.Function): Bucket = js.native
+  def openBucket(name: Unit, callback: js.Function): Bucket = js.native
+  def openBucket(name: Unit, password: String): Bucket = js.native
+  def openBucket(name: Unit, password: String, callback: js.Function): Bucket = js.native
+  def openBucket(name: Unit, password: Unit, callback: js.Function): Bucket = js.native
 }
-

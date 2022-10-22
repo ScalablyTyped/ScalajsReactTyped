@@ -1,27 +1,92 @@
 package typingsJapgolly.activexMsforms.MSForms
 
 import typingsJapgolly.activexStdole.stdole.StdPicture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MSForms.Image")
-@js.native
-class Image protected () extends js.Object {
-  var AutoSize: Boolean = js.native
-  var BackColor: Double = js.native
-  var BackStyle: fmBackStyle = js.native
-  var BorderColor: Double = js.native
-  var BorderStyle: fmBorderStyle = js.native
-  var Enabled: Boolean = js.native
-  @JSName("MSForms.Image_typekey")
-  var MSFormsDotImage_typekey: Image = js.native
-  var MouseIcon: StdPicture = js.native
-  var MousePointer: fmMousePointer = js.native
-  var Picture: StdPicture = js.native
-  var PictureAlignment: fmPictureAlignment = js.native
-  var PictureSizeMode: fmPictureSizeMode = js.native
-  var PictureTiling: Boolean = js.native
-  var SpecialEffect: fmSpecialEffect = js.native
+trait Image extends StObject {
+  
+  var AutoSize: Boolean
+  
+  var BackColor: Double
+  
+  var BackStyle: fmBackStyle
+  
+  var BorderColor: Double
+  
+  var BorderStyle: fmBorderStyle
+  
+  var Enabled: Boolean
+  
+  /* private */ @JSName("MSForms.Image_typekey")
+  var MSFormsDotImage_typekey: Image
+  
+  var MouseIcon: StdPicture
+  
+  var MousePointer: fmMousePointer
+  
+  var Picture: StdPicture
+  
+  var PictureAlignment: fmPictureAlignment
+  
+  var PictureSizeMode: fmPictureSizeMode
+  
+  var PictureTiling: Boolean
+  
+  var SpecialEffect: fmSpecialEffect
 }
-
+object Image {
+  
+  inline def apply(
+    AutoSize: Boolean,
+    BackColor: Double,
+    BackStyle: fmBackStyle,
+    BorderColor: Double,
+    BorderStyle: fmBorderStyle,
+    Enabled: Boolean,
+    MSFormsDotImage_typekey: Image,
+    MouseIcon: StdPicture,
+    MousePointer: fmMousePointer,
+    Picture: StdPicture,
+    PictureAlignment: fmPictureAlignment,
+    PictureSizeMode: fmPictureSizeMode,
+    PictureTiling: Boolean,
+    SpecialEffect: fmSpecialEffect
+  ): Image = {
+    val __obj = js.Dynamic.literal(AutoSize = AutoSize.asInstanceOf[js.Any], BackColor = BackColor.asInstanceOf[js.Any], BackStyle = BackStyle.asInstanceOf[js.Any], BorderColor = BorderColor.asInstanceOf[js.Any], BorderStyle = BorderStyle.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], MouseIcon = MouseIcon.asInstanceOf[js.Any], MousePointer = MousePointer.asInstanceOf[js.Any], Picture = Picture.asInstanceOf[js.Any], PictureAlignment = PictureAlignment.asInstanceOf[js.Any], PictureSizeMode = PictureSizeMode.asInstanceOf[js.Any], PictureTiling = PictureTiling.asInstanceOf[js.Any], SpecialEffect = SpecialEffect.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSForms.Image_typekey")(MSFormsDotImage_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Image]
+  }
+  
+  extension [Self <: Image](x: Self) {
+    
+    inline def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
+    
+    inline def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackStyle(value: fmBackStyle): Self = StObject.set(x, "BackStyle", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderStyle(value: fmBorderStyle): Self = StObject.set(x, "BorderStyle", value.asInstanceOf[js.Any])
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    
+    inline def setMSFormsDotImage_typekey(value: Image): Self = StObject.set(x, "MSForms.Image_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
+    
+    inline def setMousePointer(value: fmMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
+    
+    inline def setPicture(value: StdPicture): Self = StObject.set(x, "Picture", value.asInstanceOf[js.Any])
+    
+    inline def setPictureAlignment(value: fmPictureAlignment): Self = StObject.set(x, "PictureAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setPictureSizeMode(value: fmPictureSizeMode): Self = StObject.set(x, "PictureSizeMode", value.asInstanceOf[js.Any])
+    
+    inline def setPictureTiling(value: Boolean): Self = StObject.set(x, "PictureTiling", value.asInstanceOf[js.Any])
+    
+    inline def setSpecialEffect(value: fmSpecialEffect): Self = StObject.set(x, "SpecialEffect", value.asInstanceOf[js.Any])
+  }
+}

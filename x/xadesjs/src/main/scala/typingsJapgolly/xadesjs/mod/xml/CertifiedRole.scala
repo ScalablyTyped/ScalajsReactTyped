@@ -1,11 +1,12 @@
 package typingsJapgolly.xadesjs.mod.xml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs", "xml.CertifiedRole")
 @js.native
-class CertifiedRole ()
-  extends typingsJapgolly.xadesjs.xmlMod.CertifiedRole
-
+open class CertifiedRole ()
+  extends typingsJapgolly.xadesjs.buildTypesXmlMod.CertifiedRole {
+  def this(properties: js.Object) = this()
+}

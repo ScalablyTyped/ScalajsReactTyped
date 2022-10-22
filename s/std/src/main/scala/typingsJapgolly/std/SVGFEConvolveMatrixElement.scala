@@ -1,31 +1,29 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <feConvolveMatrix> element. */
 @js.native
 trait SVGFEConvolveMatrixElement
-  extends SVGElement
+  extends StObject
+     with SVGElement
      with SVGFilterPrimitiveStandardAttributes {
+  
+  /* standard dom */
   val SVG_EDGEMODE_DUPLICATE: Double = js.native
+  
+  /* standard dom */
   val SVG_EDGEMODE_NONE: Double = js.native
+  
+  /* standard dom */
   val SVG_EDGEMODE_UNKNOWN: Double = js.native
+  
+  /* standard dom */
   val SVG_EDGEMODE_WRAP: Double = js.native
-  val bias: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val divisor: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val edgeMode: org.scalajs.dom.raw.SVGAnimatedEnumeration = js.native
-  val in1: org.scalajs.dom.raw.SVGAnimatedString = js.native
-  val kernelMatrix: org.scalajs.dom.raw.SVGAnimatedNumberList = js.native
-  val kernelUnitLengthX: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val kernelUnitLengthY: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val orderX: org.scalajs.dom.raw.SVGAnimatedInteger = js.native
-  val orderY: org.scalajs.dom.raw.SVGAnimatedInteger = js.native
-  val preserveAlpha: org.scalajs.dom.raw.SVGAnimatedBoolean = js.native
-  val targetX: org.scalajs.dom.raw.SVGAnimatedInteger = js.native
-  val targetY: org.scalajs.dom.raw.SVGAnimatedInteger = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -36,24 +34,52 @@ trait SVGFEConvolveMatrixElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  /* standard dom */
+  val bias: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  val divisor: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  val edgeMode: org.scalajs.dom.SVGAnimatedEnumeration = js.native
+  
+  /* standard dom */
+  val in1: org.scalajs.dom.SVGAnimatedString = js.native
+  
+  /* standard dom */
+  val kernelMatrix: org.scalajs.dom.SVGAnimatedNumberList = js.native
+  
+  /* standard dom */
+  val kernelUnitLengthX: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  val kernelUnitLengthY: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  val orderX: org.scalajs.dom.SVGAnimatedInteger = js.native
+  
+  /* standard dom */
+  val orderY: org.scalajs.dom.SVGAnimatedInteger = js.native
+  
+  /* standard dom */
+  val preserveAlpha: org.scalajs.dom.SVGAnimatedBoolean = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,
     listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
+    options: org.scalajs.dom.EventListenerOptions
   ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  
+  /* standard dom */
+  val targetX: org.scalajs.dom.SVGAnimatedInteger = js.native
+  
+  /* standard dom */
+  val targetY: org.scalajs.dom.SVGAnimatedInteger = js.native
 }
-
-@JSGlobal("SVGFEConvolveMatrixElement")
-@js.native
-object SVGFEConvolveMatrixElement extends Instantiable0[SVGFEConvolveMatrixElement] {
-  val SVG_EDGEMODE_DUPLICATE: Double = js.native
-  val SVG_EDGEMODE_NONE: Double = js.native
-  val SVG_EDGEMODE_UNKNOWN: Double = js.native
-  val SVG_EDGEMODE_WRAP: Double = js.native
-}
-

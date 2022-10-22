@@ -1,15 +1,16 @@
 package typingsJapgolly.winrt.Windows.Devices.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Input.TouchCapabilities")
-@js.native
-class TouchCapabilities () extends ITouchCapabilities {
-  /* CompleteClass */
-  override var contacts: Double = js.native
-  /* CompleteClass */
-  override var touchPresent: Double = js.native
+trait TouchCapabilities
+  extends StObject
+     with ITouchCapabilities
+object TouchCapabilities {
+  
+  inline def apply(contacts: Double, touchPresent: Double): TouchCapabilities = {
+    val __obj = js.Dynamic.literal(contacts = contacts.asInstanceOf[js.Any], touchPresent = touchPresent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TouchCapabilities]
+  }
 }
-

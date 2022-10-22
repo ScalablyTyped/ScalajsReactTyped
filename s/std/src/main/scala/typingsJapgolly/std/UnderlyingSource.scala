@@ -1,31 +1,45 @@
 package typingsJapgolly.std
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UnderlyingSource[R] extends js.Object {
-  var cancel: js.UndefOr[ReadableStreamErrorCallback] = js.undefined
-  var pull: js.UndefOr[ReadableStreamDefaultControllerCallback[R]] = js.undefined
-  var start: js.UndefOr[ReadableStreamDefaultControllerCallback[R]] = js.undefined
-  var `type`: js.UndefOr[scala.Nothing] = js.undefined
+trait UnderlyingSource[R] extends StObject {
+  
+  /* standard dom */
+  var cancel: js.UndefOr[UnderlyingSourceCancelCallback] = js.undefined
+  
+  /* standard dom */
+  var pull: js.UndefOr[UnderlyingSourcePullCallback[R]] = js.undefined
+  
+  /* standard dom */
+  var start: js.UndefOr[UnderlyingSourceStartCallback[R]] = js.undefined
+  
+  /* standard dom */
+  var `type`: Unit
 }
-
 object UnderlyingSource {
-  @scala.inline
-  def apply[R](
-    cancel: /* reason */ js.Any => CallbackTo[Unit | js.Thenable[Unit]] = null,
-    pull: /* controller */ ReadableStreamDefaultController[R] => CallbackTo[Unit | js.Thenable[Unit]] = null,
-    start: /* controller */ ReadableStreamDefaultController[R] => CallbackTo[Unit | js.Thenable[Unit]] = null,
-    `type`: js.UndefOr[scala.Nothing] = js.undefined
-  ): UnderlyingSource[R] = {
+  
+  inline def apply[R](`type`: Unit): UnderlyingSource[R] = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1((t0: /* reason */ js.Any) => cancel(t0).runNow()))
-    if (pull != null) __obj.updateDynamic("pull")(js.Any.fromFunction1((t0: /* controller */ typingsJapgolly.std.ReadableStreamDefaultController[R]) => pull(t0).runNow()))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1((t0: /* controller */ typingsJapgolly.std.ReadableStreamDefaultController[R]) => start(t0).runNow()))
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnderlyingSource[R]]
   }
+  
+  extension [Self <: UnderlyingSource[?], R](x: Self & UnderlyingSource[R]) {
+    
+    inline def setCancel(value: /* reason */ js.UndefOr[Any] => Unit | PromiseLike[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setPull(value: /* controller */ ReadableStreamController[R] => Unit | PromiseLike[Unit]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
+    
+    inline def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
+    
+    inline def setStart(value: /* controller */ ReadableStreamController[R] => Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setType(value: Unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

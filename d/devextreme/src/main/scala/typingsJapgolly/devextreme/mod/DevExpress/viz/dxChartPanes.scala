@@ -1,31 +1,38 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.AnonLeft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxChartPanes extends dxChartCommonPaneSettings {
-  /** Specifies the pane's height (or width when the chart is rotated) in a multi-pane chart. */
+trait dxChartPanes
+  extends StObject
+     with dxChartCommonPaneSettings {
+  
+  /**
+    * Specifies the pane&apos;s height (or width when the chart is rotated) in a multi-pane chart.
+    */
   var height: js.UndefOr[Double | String] = js.undefined
-  /** Specifies the name of the pane. */
+  
+  /**
+    * Specifies the name of the pane.
+    */
   var name: js.UndefOr[String] = js.undefined
 }
-
 object dxChartPanes {
-  @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    border: AnonLeft = null,
-    height: Double | String = null,
-    name: String = null
-  ): dxChartPanes = {
+  
+  inline def apply(): dxChartPanes = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartPanes]
   }
+  
+  extension [Self <: dxChartPanes](x: Self) {
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

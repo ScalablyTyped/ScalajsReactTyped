@@ -1,21 +1,27 @@
 package typingsJapgolly.nodeHueApi.mod
 
-import typingsJapgolly.nodeHueApi.AnonApi
+import typingsJapgolly.nodeHueApi.anon.Api
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IBridgeVersion extends js.Object {
-  var name: String
-  var version: AnonApi
-}
-
-object IBridgeVersion {
-  @scala.inline
-  def apply(name: String, version: AnonApi): IBridgeVersion = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+trait IBridgeVersion extends StObject {
   
+  var name: String
+  
+  var version: Api
+}
+object IBridgeVersion {
+  
+  inline def apply(name: String, version: Api): IBridgeVersion = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBridgeVersion]
   }
+  
+  extension [Self <: IBridgeVersion](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: Api): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+  }
 }
-

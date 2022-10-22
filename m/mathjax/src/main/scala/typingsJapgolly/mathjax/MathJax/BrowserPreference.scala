@@ -1,36 +1,54 @@
 package typingsJapgolly.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BrowserPreference extends js.Object {
+trait BrowserPreference extends StObject {
+  
   var Chrome: js.UndefOr[String] = js.undefined
+  
   var Firefox: js.UndefOr[String] = js.undefined
+  
   var MSIE: js.UndefOr[String] = js.undefined
+  
   var Opera: js.UndefOr[String] = js.undefined
+  
   var Safari: js.UndefOr[String] = js.undefined
+  
   var other: js.UndefOr[String] = js.undefined
 }
-
 object BrowserPreference {
-  @scala.inline
-  def apply(
-    Chrome: String = null,
-    Firefox: String = null,
-    MSIE: String = null,
-    Opera: String = null,
-    Safari: String = null,
-    other: String = null
-  ): BrowserPreference = {
+  
+  inline def apply(): BrowserPreference = {
     val __obj = js.Dynamic.literal()
-    if (Chrome != null) __obj.updateDynamic("Chrome")(Chrome.asInstanceOf[js.Any])
-    if (Firefox != null) __obj.updateDynamic("Firefox")(Firefox.asInstanceOf[js.Any])
-    if (MSIE != null) __obj.updateDynamic("MSIE")(MSIE.asInstanceOf[js.Any])
-    if (Opera != null) __obj.updateDynamic("Opera")(Opera.asInstanceOf[js.Any])
-    if (Safari != null) __obj.updateDynamic("Safari")(Safari.asInstanceOf[js.Any])
-    if (other != null) __obj.updateDynamic("other")(other.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserPreference]
   }
+  
+  extension [Self <: BrowserPreference](x: Self) {
+    
+    inline def setChrome(value: String): Self = StObject.set(x, "Chrome", value.asInstanceOf[js.Any])
+    
+    inline def setChromeUndefined: Self = StObject.set(x, "Chrome", js.undefined)
+    
+    inline def setFirefox(value: String): Self = StObject.set(x, "Firefox", value.asInstanceOf[js.Any])
+    
+    inline def setFirefoxUndefined: Self = StObject.set(x, "Firefox", js.undefined)
+    
+    inline def setMSIE(value: String): Self = StObject.set(x, "MSIE", value.asInstanceOf[js.Any])
+    
+    inline def setMSIEUndefined: Self = StObject.set(x, "MSIE", js.undefined)
+    
+    inline def setOpera(value: String): Self = StObject.set(x, "Opera", value.asInstanceOf[js.Any])
+    
+    inline def setOperaUndefined: Self = StObject.set(x, "Opera", js.undefined)
+    
+    inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    
+    inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
+    
+    inline def setSafari(value: String): Self = StObject.set(x, "Safari", value.asInstanceOf[js.Any])
+    
+    inline def setSafariUndefined: Self = StObject.set(x, "Safari", js.undefined)
+  }
 }
-

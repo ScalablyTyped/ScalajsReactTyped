@@ -1,21 +1,30 @@
 package typingsJapgolly.bootstrapTimepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimepickerIconOptions extends js.Object {
+trait TimepickerIconOptions extends StObject {
+  
   var down: js.UndefOr[String] = js.undefined
+  
   var up: js.UndefOr[String] = js.undefined
 }
-
 object TimepickerIconOptions {
-  @scala.inline
-  def apply(down: String = null, up: String = null): TimepickerIconOptions = {
+  
+  inline def apply(): TimepickerIconOptions = {
     val __obj = js.Dynamic.literal()
-    if (down != null) __obj.updateDynamic("down")(down.asInstanceOf[js.Any])
-    if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimepickerIconOptions]
   }
+  
+  extension [Self <: TimepickerIconOptions](x: Self) {
+    
+    inline def setDown(value: String): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+    
+    inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
+    
+    inline def setUp(value: String): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+    
+    inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
+  }
 }
-

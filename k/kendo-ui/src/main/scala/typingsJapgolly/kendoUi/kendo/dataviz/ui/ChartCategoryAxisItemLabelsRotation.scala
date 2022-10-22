@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartCategoryAxisItemLabelsRotation extends js.Object {
+trait ChartCategoryAxisItemLabelsRotation extends StObject {
+  
   var align: js.UndefOr[String] = js.undefined
+  
   var angle: js.UndefOr[Double | String] = js.undefined
 }
-
 object ChartCategoryAxisItemLabelsRotation {
-  @scala.inline
-  def apply(align: String = null, angle: Double | String = null): ChartCategoryAxisItemLabelsRotation = {
+  
+  inline def apply(): ChartCategoryAxisItemLabelsRotation = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartCategoryAxisItemLabelsRotation]
   }
+  
+  extension [Self <: ChartCategoryAxisItemLabelsRotation](x: Self) {
+    
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setAngle(value: Double | String): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+  }
 }
-

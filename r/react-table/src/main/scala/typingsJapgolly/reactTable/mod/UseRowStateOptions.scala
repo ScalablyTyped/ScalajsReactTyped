@@ -1,29 +1,37 @@
 package typingsJapgolly.reactTable.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<{initialRowStateAccessor (row : react-table.react-table.Row<D>): react-table.react-table.UseRowStateLocalState<D, unknown>, getResetRowStateDeps (instance : react-table.react-table.TableInstance<D>): std.Array<any>,   autoResetRowState ? :boolean}> */
-trait UseRowStateOptions[D /* <: js.Object */] extends js.Object {
+/* Inlined std.Partial<{initialRowStateAccessor (row : react-table.react-table.Row<D>): react-table.react-table.UseRowStateLocalState<D, unknown>, getResetRowStateDeps (instance : react-table.react-table.TableInstance<D>): std.Array<any>,   autoResetRowState :boolean | undefined}> */
+trait UseRowStateOptions[D /* <: js.Object */] extends StObject {
+  
   var autoResetRowState: js.UndefOr[Boolean] = js.undefined
-  var getResetRowStateDeps: js.UndefOr[js.Function1[/* instance */ TableInstance[D], js.Array[_]]] = js.undefined
-  var initialRowStateAccessor: js.UndefOr[js.Function1[/* row */ Row[D], UseRowStateLocalState[D, _]]] = js.undefined
+  
+  var getResetRowStateDeps: js.UndefOr[js.Function1[/* instance */ TableInstance[D], js.Array[Any]]] = js.undefined
+  
+  var initialRowStateAccessor: js.UndefOr[js.Function1[/* row */ Row[D], UseRowStateLocalState[D, Any]]] = js.undefined
 }
-
 object UseRowStateOptions {
-  @scala.inline
-  def apply[D /* <: js.Object */](
-    autoResetRowState: js.UndefOr[Boolean] = js.undefined,
-    getResetRowStateDeps: /* instance */ TableInstance[D] => CallbackTo[js.Array[js.Any]] = null,
-    initialRowStateAccessor: /* row */ Row[D] => CallbackTo[UseRowStateLocalState[D, js.Any]] = null
-  ): UseRowStateOptions[D] = {
+  
+  inline def apply[D /* <: js.Object */](): UseRowStateOptions[D] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResetRowState)) __obj.updateDynamic("autoResetRowState")(autoResetRowState.asInstanceOf[js.Any])
-    if (getResetRowStateDeps != null) __obj.updateDynamic("getResetRowStateDeps")(js.Any.fromFunction1((t0: /* instance */ typingsJapgolly.reactTable.mod.TableInstance[D]) => getResetRowStateDeps(t0).runNow()))
-    if (initialRowStateAccessor != null) __obj.updateDynamic("initialRowStateAccessor")(js.Any.fromFunction1((t0: /* row */ typingsJapgolly.reactTable.mod.Row[D]) => initialRowStateAccessor(t0).runNow()))
     __obj.asInstanceOf[UseRowStateOptions[D]]
   }
+  
+  extension [Self <: UseRowStateOptions[?], D /* <: js.Object */](x: Self & UseRowStateOptions[D]) {
+    
+    inline def setAutoResetRowState(value: Boolean): Self = StObject.set(x, "autoResetRowState", value.asInstanceOf[js.Any])
+    
+    inline def setAutoResetRowStateUndefined: Self = StObject.set(x, "autoResetRowState", js.undefined)
+    
+    inline def setGetResetRowStateDeps(value: /* instance */ TableInstance[D] => js.Array[Any]): Self = StObject.set(x, "getResetRowStateDeps", js.Any.fromFunction1(value))
+    
+    inline def setGetResetRowStateDepsUndefined: Self = StObject.set(x, "getResetRowStateDeps", js.undefined)
+    
+    inline def setInitialRowStateAccessor(value: /* row */ Row[D] => UseRowStateLocalState[D, Any]): Self = StObject.set(x, "initialRowStateAccessor", js.Any.fromFunction1(value))
+    
+    inline def setInitialRowStateAccessorUndefined: Self = StObject.set(x, "initialRowStateAccessor", js.undefined)
+  }
 }
-

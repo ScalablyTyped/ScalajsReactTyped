@@ -1,22 +1,28 @@
 package typingsJapgolly.chrome.chrome.input.ime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CursorPositionParameters extends js.Object {
+trait CursorPositionParameters extends StObject {
+  
   /** ID of the candidate to select. */
   var candidateID: Double
+  
   /** ID of the context that owns the candidate window. */
   var contextID: Double
 }
-
 object CursorPositionParameters {
-  @scala.inline
-  def apply(candidateID: Double, contextID: Double): CursorPositionParameters = {
-    val __obj = js.Dynamic.literal(candidateID = candidateID.asInstanceOf[js.Any], contextID = contextID.asInstanceOf[js.Any])
   
+  inline def apply(candidateID: Double, contextID: Double): CursorPositionParameters = {
+    val __obj = js.Dynamic.literal(candidateID = candidateID.asInstanceOf[js.Any], contextID = contextID.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorPositionParameters]
   }
+  
+  extension [Self <: CursorPositionParameters](x: Self) {
+    
+    inline def setCandidateID(value: Double): Self = StObject.set(x, "candidateID", value.asInstanceOf[js.Any])
+    
+    inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
+  }
 }
-

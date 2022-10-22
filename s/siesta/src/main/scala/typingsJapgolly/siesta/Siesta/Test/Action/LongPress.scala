@@ -2,31 +2,21 @@ package typingsJapgolly.siesta.Siesta.Test.Action
 
 import typingsJapgolly.siesta.Siesta.Test.Action.Role.IHasTarget
 import typingsJapgolly.siesta.Siesta.Test.IAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
   */
 trait LongPress
-  extends IAction
+  extends StObject
+     with IAction
      with IHasTarget
-
 object LongPress {
-  @scala.inline
-  def apply(
-    desc: String = null,
-    el: js.Any = null,
-    passTargetToNext: js.UndefOr[Boolean] = js.undefined,
-    target: js.Any = null
-  ): LongPress = {
+  
+  inline def apply(): LongPress = {
     val __obj = js.Dynamic.literal()
-    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
-    if (!js.isUndefined(passTargetToNext)) __obj.updateDynamic("passTargetToNext")(passTargetToNext.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[LongPress]
   }
 }
-

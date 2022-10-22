@@ -1,38 +1,18 @@
 package typingsJapgolly.reactSketchapp.components
 
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactSketchapp.clipPathMod.ClipPathProps
-import typingsJapgolly.reactSketchapp.clipPathMod.default
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.reactSketchapp.libComponentsSvgClipPathMod.Props
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ClipPath {
-  def apply(
-    id: String,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: js.Array[Node] | Node = null
-  ): UnmountedWithRoot[ClipPathProps, default, Unit, ClipPathProps] = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactSketchapp.clipPathMod.ClipPathProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactSketchapp.clipPathMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactSketchapp.clipPathMod.ClipPathProps])
-  }
-  @JSImport("react-sketchapp/lib/components/Svg/ClipPath", JSImport.Default)
+  @JSImport("react-sketchapp/lib/components/Svg", "ClipPath")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: ClipPath.type): Default[typingsJapgolly.reactSketchapp.libComponentsSvgMod.ClipPath] = new Default[typingsJapgolly.reactSketchapp.libComponentsSvgMod.ClipPath](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: Props): Default[typingsJapgolly.reactSketchapp.libComponentsSvgMod.ClipPath] = new Default[typingsJapgolly.reactSketchapp.libComponentsSvgMod.ClipPath](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

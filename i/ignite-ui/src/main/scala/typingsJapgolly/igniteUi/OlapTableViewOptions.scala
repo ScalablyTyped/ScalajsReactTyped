@@ -1,52 +1,60 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OlapTableViewOptions
-  extends /**
-	 * Option for OlapTableViewOptions
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Optional="false" a value indicating whether the result has one or more hierarchies in the columns.
-  	 */
+    * Optional="false" a value indicating whether the result has one or more hierarchies in the columns.
+    */
   var hasColumns: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Optional="false" a value indicating whether the result has one or more hierarchies in the rows.
-  	 */
+    * Optional="false" a value indicating whether the result has one or more hierarchies in the rows.
+    */
   var hasRows: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Optional="false" an object of type $.ig.OlapResult.
-  	 */
-  var result: js.UndefOr[js.Any] = js.undefined
+    * Optional="false" an object of type $.ig.OlapResult.
+    */
+  var result: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Optional="false" an object containing the table view configuration options as properties.
-  	 */
+    * Optional="false" an object containing the table view configuration options as properties.
+    */
   var viewSettings: js.UndefOr[OlapTableViewOptionsViewSettings] = js.undefined
 }
-
 object OlapTableViewOptions {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for OlapTableViewOptions
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    hasColumns: js.UndefOr[Boolean] = js.undefined,
-    hasRows: js.UndefOr[Boolean] = js.undefined,
-    result: js.Any = null,
-    viewSettings: OlapTableViewOptionsViewSettings = null
-  ): OlapTableViewOptions = {
+  
+  inline def apply(): OlapTableViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(hasColumns)) __obj.updateDynamic("hasColumns")(hasColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasRows)) __obj.updateDynamic("hasRows")(hasRows.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (viewSettings != null) __obj.updateDynamic("viewSettings")(viewSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[OlapTableViewOptions]
   }
+  
+  extension [Self <: OlapTableViewOptions](x: Self) {
+    
+    inline def setHasColumns(value: Boolean): Self = StObject.set(x, "hasColumns", value.asInstanceOf[js.Any])
+    
+    inline def setHasColumnsUndefined: Self = StObject.set(x, "hasColumns", js.undefined)
+    
+    inline def setHasRows(value: Boolean): Self = StObject.set(x, "hasRows", value.asInstanceOf[js.Any])
+    
+    inline def setHasRowsUndefined: Self = StObject.set(x, "hasRows", js.undefined)
+    
+    inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    
+    inline def setViewSettings(value: OlapTableViewOptionsViewSettings): Self = StObject.set(x, "viewSettings", value.asInstanceOf[js.Any])
+    
+    inline def setViewSettingsUndefined: Self = StObject.set(x, "viewSettings", js.undefined)
+  }
 }
-

@@ -1,33 +1,27 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ImportDefaultSpecifier
-  extends BaseModuleSpecifier
+  extends StObject
+     with BaseModuleSpecifier
      with ModuleSpecifier {
+  
   @JSName("type")
   var type_ImportDefaultSpecifier: typingsJapgolly.estree.estreeStrings.ImportDefaultSpecifier
 }
-
 object ImportDefaultSpecifier {
-  @scala.inline
-  def apply(
-    local: Identifier,
-    `type`: typingsJapgolly.estree.estreeStrings.ImportDefaultSpecifier,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ImportDefaultSpecifier = {
+  
+  inline def apply(local: Identifier): ImportDefaultSpecifier = {
     val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ImportDefaultSpecifier")
     __obj.asInstanceOf[ImportDefaultSpecifier]
   }
+  
+  extension [Self <: ImportDefaultSpecifier](x: Self) {
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.ImportDefaultSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

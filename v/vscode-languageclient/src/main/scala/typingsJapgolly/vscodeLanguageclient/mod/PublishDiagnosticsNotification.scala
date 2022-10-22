@@ -1,13 +1,22 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.PublishDiagnosticsParams
+import typingsJapgolly.vscodeLanguageclient.vscodeLanguageclientStrings.textDocumentSlashpublishDiagnostics
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.PublishDiagnosticsParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "PublishDiagnosticsNotification")
-@js.native
-object PublishDiagnosticsNotification extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.NotificationType[PublishDiagnosticsParams, Unit] = js.native
+object PublishDiagnosticsNotification {
+  
+  @JSImport("vscode-languageclient", "PublishDiagnosticsNotification.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageclient", "PublishDiagnosticsNotification.method")
+  @js.native
+  val method: textDocumentSlashpublishDiagnostics = js.native
+  
+  @JSImport("vscode-languageclient", "PublishDiagnosticsNotification.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[PublishDiagnosticsParams, Unit] = js.native
 }
-

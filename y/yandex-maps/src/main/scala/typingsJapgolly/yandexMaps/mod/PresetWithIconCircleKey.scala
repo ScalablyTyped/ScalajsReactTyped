@@ -1,0 +1,205 @@
+package typingsJapgolly.yandexMaps.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueHomeCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueScienceCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueAirportCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueAttentionCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueAutoCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBarCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBarberCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBeachCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBicycleCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBicycle2CircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBookCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueCarWashCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueChristianCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueCinemaCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueCircusCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueCourtCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueDeliveryCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueDiscountCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueDogCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueEducationCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueEntertainmentCenterCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFactoryCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFamilyCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFashionCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFoodCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFuelStationCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueGardenCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueGovernmentCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueHeartCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueHotelCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueHydroCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueInfoCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueLaundryCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueLeisureCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueMassTransitCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueMedicalCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueMoneyCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueMountainCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueNightClubCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueObservationCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueParkCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueParkingCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbluePersonCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbluePocketCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbluePoolCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbluePostCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueRailwayCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueRapidTransitCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueRepairShopCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueRunCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueShoppingCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueSouvenirsCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueSportCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueStarCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueTheaterCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueToiletCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueUnderpassCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueVegetationCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueVideoCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueWasteCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueWaterParkCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueWaterwayCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueWorshipCircleIcon
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueZooCircleIcon
+*/
+trait PresetWithIconCircleKey
+  extends StObject
+     with _PresetKey
+object PresetWithIconCircleKey {
+  
+  inline def islandsNumbersignblueAirportCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueAirportCircleIcon = "islands#blueAirportCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueAirportCircleIcon]
+  
+  inline def islandsNumbersignblueAttentionCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueAttentionCircleIcon = "islands#blueAttentionCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueAttentionCircleIcon]
+  
+  inline def islandsNumbersignblueAutoCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueAutoCircleIcon = "islands#blueAutoCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueAutoCircleIcon]
+  
+  inline def islandsNumbersignblueBarCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBarCircleIcon = "islands#blueBarCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBarCircleIcon]
+  
+  inline def islandsNumbersignblueBarberCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBarberCircleIcon = "islands#blueBarberCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBarberCircleIcon]
+  
+  inline def islandsNumbersignblueBeachCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBeachCircleIcon = "islands#blueBeachCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBeachCircleIcon]
+  
+  inline def islandsNumbersignblueBicycle2CircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBicycle2CircleIcon = "islands#blueBicycle2CircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBicycle2CircleIcon]
+  
+  inline def islandsNumbersignblueBicycleCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBicycleCircleIcon = "islands#blueBicycleCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBicycleCircleIcon]
+  
+  inline def islandsNumbersignblueBookCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBookCircleIcon = "islands#blueBookCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueBookCircleIcon]
+  
+  inline def islandsNumbersignblueCarWashCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueCarWashCircleIcon = "islands#blueCarWashCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueCarWashCircleIcon]
+  
+  inline def islandsNumbersignblueChristianCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueChristianCircleIcon = "islands#blueChristianCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueChristianCircleIcon]
+  
+  inline def islandsNumbersignblueCinemaCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueCinemaCircleIcon = "islands#blueCinemaCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueCinemaCircleIcon]
+  
+  inline def islandsNumbersignblueCircusCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueCircusCircleIcon = "islands#blueCircusCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueCircusCircleIcon]
+  
+  inline def islandsNumbersignblueCourtCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueCourtCircleIcon = "islands#blueCourtCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueCourtCircleIcon]
+  
+  inline def islandsNumbersignblueDeliveryCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueDeliveryCircleIcon = "islands#blueDeliveryCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueDeliveryCircleIcon]
+  
+  inline def islandsNumbersignblueDiscountCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueDiscountCircleIcon = "islands#blueDiscountCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueDiscountCircleIcon]
+  
+  inline def islandsNumbersignblueDogCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueDogCircleIcon = "islands#blueDogCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueDogCircleIcon]
+  
+  inline def islandsNumbersignblueEducationCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueEducationCircleIcon = "islands#blueEducationCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueEducationCircleIcon]
+  
+  inline def islandsNumbersignblueEntertainmentCenterCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueEntertainmentCenterCircleIcon = "islands#blueEntertainmentCenterCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueEntertainmentCenterCircleIcon]
+  
+  inline def islandsNumbersignblueFactoryCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFactoryCircleIcon = "islands#blueFactoryCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFactoryCircleIcon]
+  
+  inline def islandsNumbersignblueFamilyCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFamilyCircleIcon = "islands#blueFamilyCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFamilyCircleIcon]
+  
+  inline def islandsNumbersignblueFashionCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFashionCircleIcon = "islands#blueFashionCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFashionCircleIcon]
+  
+  inline def islandsNumbersignblueFoodCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFoodCircleIcon = "islands#blueFoodCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFoodCircleIcon]
+  
+  inline def islandsNumbersignblueFuelStationCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFuelStationCircleIcon = "islands#blueFuelStationCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueFuelStationCircleIcon]
+  
+  inline def islandsNumbersignblueGardenCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueGardenCircleIcon = "islands#blueGardenCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueGardenCircleIcon]
+  
+  inline def islandsNumbersignblueGovernmentCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueGovernmentCircleIcon = "islands#blueGovernmentCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueGovernmentCircleIcon]
+  
+  inline def islandsNumbersignblueHeartCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueHeartCircleIcon = "islands#blueHeartCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueHeartCircleIcon]
+  
+  inline def islandsNumbersignblueHomeCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueHomeCircleIcon = "islands#blueHomeCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueHomeCircleIcon]
+  
+  inline def islandsNumbersignblueHotelCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueHotelCircleIcon = "islands#blueHotelCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueHotelCircleIcon]
+  
+  inline def islandsNumbersignblueHydroCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueHydroCircleIcon = "islands#blueHydroCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueHydroCircleIcon]
+  
+  inline def islandsNumbersignblueInfoCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueInfoCircleIcon = "islands#blueInfoCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueInfoCircleIcon]
+  
+  inline def islandsNumbersignblueLaundryCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueLaundryCircleIcon = "islands#blueLaundryCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueLaundryCircleIcon]
+  
+  inline def islandsNumbersignblueLeisureCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueLeisureCircleIcon = "islands#blueLeisureCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueLeisureCircleIcon]
+  
+  inline def islandsNumbersignblueMassTransitCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueMassTransitCircleIcon = "islands#blueMassTransitCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueMassTransitCircleIcon]
+  
+  inline def islandsNumbersignblueMedicalCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueMedicalCircleIcon = "islands#blueMedicalCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueMedicalCircleIcon]
+  
+  inline def islandsNumbersignblueMoneyCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueMoneyCircleIcon = "islands#blueMoneyCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueMoneyCircleIcon]
+  
+  inline def islandsNumbersignblueMountainCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueMountainCircleIcon = "islands#blueMountainCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueMountainCircleIcon]
+  
+  inline def islandsNumbersignblueNightClubCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueNightClubCircleIcon = "islands#blueNightClubCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueNightClubCircleIcon]
+  
+  inline def islandsNumbersignblueObservationCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueObservationCircleIcon = "islands#blueObservationCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueObservationCircleIcon]
+  
+  inline def islandsNumbersignblueParkCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueParkCircleIcon = "islands#blueParkCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueParkCircleIcon]
+  
+  inline def islandsNumbersignblueParkingCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueParkingCircleIcon = "islands#blueParkingCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueParkingCircleIcon]
+  
+  inline def islandsNumbersignbluePersonCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbluePersonCircleIcon = "islands#bluePersonCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbluePersonCircleIcon]
+  
+  inline def islandsNumbersignbluePocketCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbluePocketCircleIcon = "islands#bluePocketCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbluePocketCircleIcon]
+  
+  inline def islandsNumbersignbluePoolCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbluePoolCircleIcon = "islands#bluePoolCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbluePoolCircleIcon]
+  
+  inline def islandsNumbersignbluePostCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbluePostCircleIcon = "islands#bluePostCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbluePostCircleIcon]
+  
+  inline def islandsNumbersignblueRailwayCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueRailwayCircleIcon = "islands#blueRailwayCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueRailwayCircleIcon]
+  
+  inline def islandsNumbersignblueRapidTransitCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueRapidTransitCircleIcon = "islands#blueRapidTransitCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueRapidTransitCircleIcon]
+  
+  inline def islandsNumbersignblueRepairShopCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueRepairShopCircleIcon = "islands#blueRepairShopCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueRepairShopCircleIcon]
+  
+  inline def islandsNumbersignblueRunCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueRunCircleIcon = "islands#blueRunCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueRunCircleIcon]
+  
+  inline def islandsNumbersignblueScienceCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueScienceCircleIcon = "islands#blueScienceCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueScienceCircleIcon]
+  
+  inline def islandsNumbersignblueShoppingCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueShoppingCircleIcon = "islands#blueShoppingCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueShoppingCircleIcon]
+  
+  inline def islandsNumbersignblueSouvenirsCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueSouvenirsCircleIcon = "islands#blueSouvenirsCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueSouvenirsCircleIcon]
+  
+  inline def islandsNumbersignblueSportCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueSportCircleIcon = "islands#blueSportCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueSportCircleIcon]
+  
+  inline def islandsNumbersignblueStarCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueStarCircleIcon = "islands#blueStarCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueStarCircleIcon]
+  
+  inline def islandsNumbersignblueTheaterCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueTheaterCircleIcon = "islands#blueTheaterCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueTheaterCircleIcon]
+  
+  inline def islandsNumbersignblueToiletCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueToiletCircleIcon = "islands#blueToiletCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueToiletCircleIcon]
+  
+  inline def islandsNumbersignblueUnderpassCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueUnderpassCircleIcon = "islands#blueUnderpassCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueUnderpassCircleIcon]
+  
+  inline def islandsNumbersignblueVegetationCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueVegetationCircleIcon = "islands#blueVegetationCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueVegetationCircleIcon]
+  
+  inline def islandsNumbersignblueVideoCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueVideoCircleIcon = "islands#blueVideoCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueVideoCircleIcon]
+  
+  inline def islandsNumbersignblueWasteCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueWasteCircleIcon = "islands#blueWasteCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueWasteCircleIcon]
+  
+  inline def islandsNumbersignblueWaterParkCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueWaterParkCircleIcon = "islands#blueWaterParkCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueWaterParkCircleIcon]
+  
+  inline def islandsNumbersignblueWaterwayCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueWaterwayCircleIcon = "islands#blueWaterwayCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueWaterwayCircleIcon]
+  
+  inline def islandsNumbersignblueWorshipCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueWorshipCircleIcon = "islands#blueWorshipCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueWorshipCircleIcon]
+  
+  inline def islandsNumbersignblueZooCircleIcon: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueZooCircleIcon = "islands#blueZooCircleIcon".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueZooCircleIcon]
+}

@@ -1,88 +1,153 @@
 package typingsJapgolly.semanticUiReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLAnchorElement
-import typingsJapgolly.semanticUiReact.genericMod.SemanticFLOATS
-import typingsJapgolly.semanticUiReact.genericMod.SemanticSIZES
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandCollection
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandContent
-import typingsJapgolly.semanticUiReact.genericMod.SemanticVERTICALALIGNMENTS
-import typingsJapgolly.semanticUiReact.listItemMod.ListItemProps
-import typingsJapgolly.semanticUiReact.listListMod.ListProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLAnchorElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.semanticUiReact.distCommonjsElementsListListContentMod.ListContentProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsListListDescriptionMod.ListDescriptionProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsListListHeaderMod.ListHeaderProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsListListIconMod.ListIconProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsListListItemMod.ListItemProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsListListListMod.ListListProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsListListMod.ListProps
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticFLOATS
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticSIZES
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandCollection
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.very
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object List {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    animated: js.UndefOr[Boolean] = js.undefined,
-    as: js.Any = null,
-    bulleted: js.UndefOr[Boolean] = js.undefined,
-    celled: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    content: SemanticShorthandContent = null,
-    divided: js.UndefOr[Boolean] = js.undefined,
-    floated: SemanticFLOATS = null,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    items: SemanticShorthandCollection[ListItemProps] = null,
-    link: js.UndefOr[Boolean] = js.undefined,
-    onItemClick: (/* event */ ReactMouseEventFrom[HTMLAnchorElement], /* data */ ListItemProps) => Callback = null,
-    ordered: js.UndefOr[Boolean] = js.undefined,
-    relaxed: Boolean | very = null,
-    selection: js.UndefOr[Boolean] = js.undefined,
-    size: SemanticSIZES = null,
-    verticalAlign: SemanticVERTICALALIGNMENTS = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    ListProps, 
-    MountedWithRawType[ListProps, js.Object, RawMounted[ListProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(bulleted)) __obj.updateDynamic("bulleted")(bulleted.asInstanceOf[js.Any])
-    if (!js.isUndefined(celled)) __obj.updateDynamic("celled")(celled.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(divided)) __obj.updateDynamic("divided")(divided.asInstanceOf[js.Any])
-    if (floated != null) __obj.updateDynamic("floated")(floated.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement], t1: /* data */ typingsJapgolly.semanticUiReact.listItemMod.ListItemProps) => onItemClick(t0, t1).runNow()))
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.asInstanceOf[js.Any])
-    if (relaxed != null) __obj.updateDynamic("relaxed")(relaxed.asInstanceOf[js.Any])
-    if (!js.isUndefined(selection)) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.semanticUiReact.listListMod.ListProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.listListMod.ListProps])(children: _*)
+  object Content {
+    
+    @JSImport("semantic-ui-react", "List.Content")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Content.type): SharedBuilder_ListContentProps263480470 = new SharedBuilder_ListContentProps263480470(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: ListContentProps): SharedBuilder_ListContentProps263480470 = new SharedBuilder_ListContentProps263480470(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/elements/List", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object Description {
+    
+    @JSImport("semantic-ui-react", "List.Description")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Description.type): SharedBuilder_ListDescriptionProps_1472215284 = new SharedBuilder_ListDescriptionProps_1472215284(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: ListDescriptionProps): SharedBuilder_ListDescriptionProps_1472215284 = new SharedBuilder_ListDescriptionProps_1472215284(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object Header {
+    
+    @JSImport("semantic-ui-react", "List.Header")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Header.type): SharedBuilder_ListHeaderProps1204678537 = new SharedBuilder_ListHeaderProps1204678537(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: ListHeaderProps): SharedBuilder_ListHeaderProps1204678537 = new SharedBuilder_ListHeaderProps1204678537(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object Icon {
+    
+    @JSImport("semantic-ui-react", "List.Icon")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Icon.type): SharedBuilder_ListIconProps1510837280 = new SharedBuilder_ListIconProps1510837280(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: ListIconProps): SharedBuilder_ListIconProps1510837280 = new SharedBuilder_ListIconProps1510837280(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object Item {
+    
+    @JSImport("semantic-ui-react", "List.Item")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Item.type): SharedBuilder_ListItemProps_1291039995 = new SharedBuilder_ListItemProps_1291039995(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: ListItemProps): SharedBuilder_ListItemProps_1291039995 = new SharedBuilder_ListItemProps_1291039995(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object List {
+    
+    @JSImport("semantic-ui-react", "List.List")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: List.type): SharedBuilder_ListListProps_1805365981 = new SharedBuilder_ListListProps_1805365981(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: ListListProps): SharedBuilder_ListListProps_1805365981 = new SharedBuilder_ListListProps_1805365981(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  @JSImport("semantic-ui-react", "List")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def animated(value: Boolean): this.type = set("animated", value.asInstanceOf[js.Any])
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def bulleted(value: Boolean): this.type = set("bulleted", value.asInstanceOf[js.Any])
+    
+    inline def celled(value: Boolean): this.type = set("celled", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def content(value: SemanticShorthandContent): this.type = set("content", value.asInstanceOf[js.Any])
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def divided(value: Boolean): this.type = set("divided", value.asInstanceOf[js.Any])
+    
+    inline def floated(value: SemanticFLOATS): this.type = set("floated", value.asInstanceOf[js.Any])
+    
+    inline def horizontal(value: Boolean): this.type = set("horizontal", value.asInstanceOf[js.Any])
+    
+    inline def inverted(value: Boolean): this.type = set("inverted", value.asInstanceOf[js.Any])
+    
+    inline def items(value: SemanticShorthandCollection[ListItemProps]): this.type = set("items", value.asInstanceOf[js.Any])
+    
+    inline def itemsVarargs(value: SemanticShorthandItem[ListItemProps]*): this.type = set("items", js.Array(value*))
+    
+    inline def link(value: Boolean): this.type = set("link", value.asInstanceOf[js.Any])
+    
+    inline def onItemClick(value: (/* event */ ReactMouseEventFrom[HTMLAnchorElement], /* data */ ListItemProps) => Callback): this.type = set("onItemClick", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLAnchorElement], t1: /* data */ ListItemProps) => (value(t0, t1)).runNow()))
+    
+    inline def ordered(value: Boolean): this.type = set("ordered", value.asInstanceOf[js.Any])
+    
+    inline def relaxed(value: Boolean | very): this.type = set("relaxed", value.asInstanceOf[js.Any])
+    
+    inline def selection(value: Boolean): this.type = set("selection", value.asInstanceOf[js.Any])
+    
+    inline def size(value: SemanticSIZES): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def verticalAlign(value: SemanticVERTICALALIGNMENTS): this.type = set("verticalAlign", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: List.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ListProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

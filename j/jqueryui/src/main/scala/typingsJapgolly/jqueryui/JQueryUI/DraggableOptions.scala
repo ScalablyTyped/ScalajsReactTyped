@@ -1,117 +1,200 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
-import japgolly.scalajs.react.Callback
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.jquery.JQueryEventObject
+import org.scalajs.dom.Element
 import typingsJapgolly.jqueryui.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DraggableOptions extends DraggableEvents {
+trait DraggableOptions
+  extends StObject
+     with DraggableEvents {
+  
   var addClasses: js.UndefOr[Boolean] = js.undefined
-  var appendTo: js.UndefOr[js.Any] = js.undefined
+  
+  var appendTo: js.UndefOr[Any] = js.undefined
+  
   var axis: js.UndefOr[String] = js.undefined
+  
   var cancel: js.UndefOr[String] = js.undefined
+  
   var classes: js.UndefOr[DraggableClasses] = js.undefined
+  
   var connectToSortable: js.UndefOr[Element | js.Array[Element] | JQuery | String] = js.undefined
-  var containment: js.UndefOr[js.Any] = js.undefined
+  
+  var containment: js.UndefOr[Any] = js.undefined
+  
   var cursor: js.UndefOr[String] = js.undefined
-  var cursorAt: js.UndefOr[js.Any] = js.undefined
+  
+  var cursorAt: js.UndefOr[Any] = js.undefined
+  
   var delay: js.UndefOr[Double] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var distance: js.UndefOr[Double] = js.undefined
+  
   var grid: js.UndefOr[js.Array[Double]] = js.undefined
-  var handle: js.UndefOr[js.Any] = js.undefined
-  var helper: js.UndefOr[js.Any] = js.undefined
-  var iframeFix: js.UndefOr[js.Any] = js.undefined
+  
+  var handle: js.UndefOr[Any] = js.undefined
+  
+  var helper: js.UndefOr[Any] = js.undefined
+  
+  var iframeFix: js.UndefOr[Any] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   var refreshPositions: js.UndefOr[Boolean] = js.undefined
-  var revert: js.UndefOr[js.Any] = js.undefined
+  
+  var revert: js.UndefOr[Any] = js.undefined
+  
   var revertDuration: js.UndefOr[Double] = js.undefined
+  
   var scope: js.UndefOr[String] = js.undefined
+  
   var scroll: js.UndefOr[Boolean] = js.undefined
+  
   var scrollSensitivity: js.UndefOr[Double] = js.undefined
+  
   var scrollSpeed: js.UndefOr[Double] = js.undefined
-  var snap: js.UndefOr[js.Any] = js.undefined
+  
+  var snap: js.UndefOr[Any] = js.undefined
+  
   var snapMode: js.UndefOr[String] = js.undefined
+  
   var snapTolerance: js.UndefOr[Double] = js.undefined
+  
   var stack: js.UndefOr[String] = js.undefined
+  
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object DraggableOptions {
-  @scala.inline
-  def apply(
-    addClasses: js.UndefOr[Boolean] = js.undefined,
-    appendTo: js.Any = null,
-    axis: String = null,
-    cancel: String = null,
-    classes: DraggableClasses = null,
-    connectToSortable: Element | js.Array[Element] | JQuery | String = null,
-    containment: js.Any = null,
-    create: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Callback = null,
-    cursor: String = null,
-    cursorAt: js.Any = null,
-    delay: Int | Double = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    distance: Int | Double = null,
-    drag: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Callback = null,
-    grid: js.Array[Double] = null,
-    handle: js.Any = null,
-    helper: js.Any = null,
-    iframeFix: js.Any = null,
-    opacity: Int | Double = null,
-    refreshPositions: js.UndefOr[Boolean] = js.undefined,
-    revert: js.Any = null,
-    revertDuration: Int | Double = null,
-    scope: String = null,
-    scroll: js.UndefOr[Boolean] = js.undefined,
-    scrollSensitivity: Int | Double = null,
-    scrollSpeed: Int | Double = null,
-    snap: js.Any = null,
-    snapMode: String = null,
-    snapTolerance: Int | Double = null,
-    stack: String = null,
-    start: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Callback = null,
-    stop: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Callback = null,
-    zIndex: Int | Double = null
-  ): DraggableOptions = {
+  
+  inline def apply(): DraggableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addClasses)) __obj.updateDynamic("addClasses")(addClasses.asInstanceOf[js.Any])
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (connectToSortable != null) __obj.updateDynamic("connectToSortable")(connectToSortable.asInstanceOf[js.Any])
-    if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DraggableEventUIParams) => create(t0, t1).runNow()))
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (cursorAt != null) __obj.updateDynamic("cursorAt")(cursorAt.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DraggableEventUIParams) => drag(t0, t1).runNow()))
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
-    if (iframeFix != null) __obj.updateDynamic("iframeFix")(iframeFix.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshPositions)) __obj.updateDynamic("refreshPositions")(refreshPositions.asInstanceOf[js.Any])
-    if (revert != null) __obj.updateDynamic("revert")(revert.asInstanceOf[js.Any])
-    if (revertDuration != null) __obj.updateDynamic("revertDuration")(revertDuration.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
-    if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
-    if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
-    if (snapMode != null) __obj.updateDynamic("snapMode")(snapMode.asInstanceOf[js.Any])
-    if (snapTolerance != null) __obj.updateDynamic("snapTolerance")(snapTolerance.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DraggableEventUIParams) => start(t0, t1).runNow()))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DraggableEventUIParams) => stop(t0, t1).runNow()))
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableOptions]
   }
+  
+  extension [Self <: DraggableOptions](x: Self) {
+    
+    inline def setAddClasses(value: Boolean): Self = StObject.set(x, "addClasses", value.asInstanceOf[js.Any])
+    
+    inline def setAddClassesUndefined: Self = StObject.set(x, "addClasses", js.undefined)
+    
+    inline def setAppendTo(value: Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    
+    inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+    
+    inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setClasses(value: DraggableClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setConnectToSortable(value: Element | js.Array[Element] | JQuery | String): Self = StObject.set(x, "connectToSortable", value.asInstanceOf[js.Any])
+    
+    inline def setConnectToSortableUndefined: Self = StObject.set(x, "connectToSortable", js.undefined)
+    
+    inline def setConnectToSortableVarargs(value: Element*): Self = StObject.set(x, "connectToSortable", js.Array(value*))
+    
+    inline def setContainment(value: Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    
+    inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
+    
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorAt(value: Any): Self = StObject.set(x, "cursorAt", value.asInstanceOf[js.Any])
+    
+    inline def setCursorAtUndefined: Self = StObject.set(x, "cursorAt", js.undefined)
+    
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    
+    inline def setGrid(value: js.Array[Double]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    
+    inline def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value*))
+    
+    inline def setHandle(value: Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    
+    inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+    
+    inline def setHelper(value: Any): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    
+    inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
+    
+    inline def setIframeFix(value: Any): Self = StObject.set(x, "iframeFix", value.asInstanceOf[js.Any])
+    
+    inline def setIframeFixUndefined: Self = StObject.set(x, "iframeFix", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setRefreshPositions(value: Boolean): Self = StObject.set(x, "refreshPositions", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshPositionsUndefined: Self = StObject.set(x, "refreshPositions", js.undefined)
+    
+    inline def setRevert(value: Any): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
+    
+    inline def setRevertDuration(value: Double): Self = StObject.set(x, "revertDuration", value.asInstanceOf[js.Any])
+    
+    inline def setRevertDurationUndefined: Self = StObject.set(x, "revertDuration", js.undefined)
+    
+    inline def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
+    
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    
+    inline def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
+    
+    inline def setScrollSensitivityUndefined: Self = StObject.set(x, "scrollSensitivity", js.undefined)
+    
+    inline def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
+    
+    inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+    
+    inline def setSnap(value: Any): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
+    
+    inline def setSnapMode(value: String): Self = StObject.set(x, "snapMode", value.asInstanceOf[js.Any])
+    
+    inline def setSnapModeUndefined: Self = StObject.set(x, "snapMode", js.undefined)
+    
+    inline def setSnapTolerance(value: Double): Self = StObject.set(x, "snapTolerance", value.asInstanceOf[js.Any])
+    
+    inline def setSnapToleranceUndefined: Self = StObject.set(x, "snapTolerance", js.undefined)
+    
+    inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
+    
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

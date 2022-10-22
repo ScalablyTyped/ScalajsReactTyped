@@ -1,36 +1,48 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnalyserOptions extends AudioNodeOptions {
+trait AnalyserOptions
+  extends StObject
+     with AudioNodeOptions {
+  
+  /* standard dom */
   var fftSize: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var maxDecibels: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var minDecibels: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var smoothingTimeConstant: js.UndefOr[Double] = js.undefined
 }
-
 object AnalyserOptions {
-  @scala.inline
-  def apply(
-    channelCount: Int | Double = null,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    fftSize: Int | Double = null,
-    maxDecibels: Int | Double = null,
-    minDecibels: Int | Double = null,
-    smoothingTimeConstant: Int | Double = null
-  ): AnalyserOptions = {
+  
+  inline def apply(): AnalyserOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (fftSize != null) __obj.updateDynamic("fftSize")(fftSize.asInstanceOf[js.Any])
-    if (maxDecibels != null) __obj.updateDynamic("maxDecibels")(maxDecibels.asInstanceOf[js.Any])
-    if (minDecibels != null) __obj.updateDynamic("minDecibels")(minDecibels.asInstanceOf[js.Any])
-    if (smoothingTimeConstant != null) __obj.updateDynamic("smoothingTimeConstant")(smoothingTimeConstant.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyserOptions]
   }
+  
+  extension [Self <: AnalyserOptions](x: Self) {
+    
+    inline def setFftSize(value: Double): Self = StObject.set(x, "fftSize", value.asInstanceOf[js.Any])
+    
+    inline def setFftSizeUndefined: Self = StObject.set(x, "fftSize", js.undefined)
+    
+    inline def setMaxDecibels(value: Double): Self = StObject.set(x, "maxDecibels", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDecibelsUndefined: Self = StObject.set(x, "maxDecibels", js.undefined)
+    
+    inline def setMinDecibels(value: Double): Self = StObject.set(x, "minDecibels", value.asInstanceOf[js.Any])
+    
+    inline def setMinDecibelsUndefined: Self = StObject.set(x, "minDecibels", js.undefined)
+    
+    inline def setSmoothingTimeConstant(value: Double): Self = StObject.set(x, "smoothingTimeConstant", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothingTimeConstantUndefined: Self = StObject.set(x, "smoothingTimeConstant", js.undefined)
+  }
 }
-

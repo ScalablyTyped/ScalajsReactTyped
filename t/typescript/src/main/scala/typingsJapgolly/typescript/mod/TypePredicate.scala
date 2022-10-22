@@ -3,9 +3,9 @@ package typingsJapgolly.typescript.mod
 import typingsJapgolly.typescript.mod.TypePredicateKind.AssertsIdentifier
 import typingsJapgolly.typescript.mod.TypePredicateKind.AssertsThis
 import typingsJapgolly.typescript.mod.TypePredicateKind.This
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.typescript.mod.ThisTypePredicate
@@ -13,56 +13,33 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.typescript.mod.AssertsThisTypePredicate
   - typingsJapgolly.typescript.mod.AssertsIdentifierTypePredicate
 */
-trait TypePredicate extends js.Object
-
+trait TypePredicate extends StObject
 object TypePredicate {
-  @scala.inline
-  def ThisTypePredicate(
-    kind: This,
-    `type`: Type,
-    parameterIndex: js.UndefOr[scala.Nothing] = js.undefined,
-    parameterName: js.UndefOr[scala.Nothing] = js.undefined
-  ): TypePredicate = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(parameterIndex)) __obj.updateDynamic("parameterIndex")(parameterIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(parameterName)) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypePredicate]
+  
+  inline def AssertsIdentifierTypePredicate(kind: AssertsIdentifier, parameterIndex: Double, parameterName: java.lang.String): typingsJapgolly.typescript.mod.AssertsIdentifierTypePredicate = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.AssertsIdentifierTypePredicate]
   }
-  @scala.inline
-  def IdentifierTypePredicate(
+  
+  inline def AssertsThisTypePredicate(kind: AssertsThis, parameterIndex: Unit, parameterName: Unit): typingsJapgolly.typescript.mod.AssertsThisTypePredicate = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.AssertsThisTypePredicate]
+  }
+  
+  inline def IdentifierTypePredicate(
     kind: typingsJapgolly.typescript.mod.TypePredicateKind.Identifier,
     parameterIndex: Double,
     parameterName: java.lang.String,
     `type`: Type
-  ): TypePredicate = {
+  ): typingsJapgolly.typescript.mod.IdentifierTypePredicate = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypePredicate]
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.IdentifierTypePredicate]
   }
-  @scala.inline
-  def AssertsThisTypePredicate(
-    kind: AssertsThis,
-    parameterIndex: js.UndefOr[scala.Nothing] = js.undefined,
-    parameterName: js.UndefOr[scala.Nothing] = js.undefined,
-    `type`: Type = null
-  ): TypePredicate = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(parameterIndex)) __obj.updateDynamic("parameterIndex")(parameterIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(parameterName)) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypePredicate]
-  }
-  @scala.inline
-  def AssertsIdentifierTypePredicate(
-    kind: AssertsIdentifier,
-    parameterIndex: Double,
-    parameterName: java.lang.String,
-    `type`: Type = null
-  ): TypePredicate = {
+  
+  inline def ThisTypePredicate(kind: This, parameterIndex: Unit, parameterName: Unit, `type`: Type): typingsJapgolly.typescript.mod.ThisTypePredicate = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TypePredicate]
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.ThisTypePredicate]
   }
 }
-

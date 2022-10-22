@@ -1,33 +1,39 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.WiFiDirect
 
-import typingsJapgolly.winrtUwp.Windows.Devices.Enumeration.DevicePairingKinds
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used by an app to specify the connection parameters for a Wi-Fi Direct connect/pairing operation. */
-@JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectConnectionParameters")
-@js.native
-/** Creates a new WiFiDirectConnectionParameters object. */
-class WiFiDirectConnectionParameters () extends js.Object {
+trait WiFiDirectConnectionParameters extends StObject {
+  
   /** The group owner intent value used for group owner negotiation in a Wi-Fi Direct connect/pairing operation. */
-  var groupOwnerIntent: Double = js.native
+  var groupOwnerIntent: Double
+  
   /** Gets a list of supported configuration methods, in order of preference. */
-  var preferenceOrderedConfigurationMethods: IVector[WiFiDirectConfigurationMethod] = js.native
+  var preferenceOrderedConfigurationMethods: IVector[WiFiDirectConfigurationMethod]
+  
   /** Gets or sets a value specifying a device's preferred pairing procedure. */
-  var preferredPairingProcedure: WiFiDirectPairingProcedure = js.native
+  var preferredPairingProcedure: WiFiDirectPairingProcedure
 }
-
-/* static members */
-@JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectConnectionParameters")
-@js.native
-object WiFiDirectConnectionParameters extends js.Object {
-  /**
-    * Gets a list of the DevicePairingKinds supporting the given configuration method.
-    * @param configurationMethod A value specifying a configuration method.
-    * @return A value specifying a pairing kind, for use with the pairing functionality in the Windows.Devices.Enumeration API.
-    */
-  def getDevicePairingKinds(configurationMethod: WiFiDirectConfigurationMethod): DevicePairingKinds = js.native
+object WiFiDirectConnectionParameters {
+  
+  inline def apply(
+    groupOwnerIntent: Double,
+    preferenceOrderedConfigurationMethods: IVector[WiFiDirectConfigurationMethod],
+    preferredPairingProcedure: WiFiDirectPairingProcedure
+  ): WiFiDirectConnectionParameters = {
+    val __obj = js.Dynamic.literal(groupOwnerIntent = groupOwnerIntent.asInstanceOf[js.Any], preferenceOrderedConfigurationMethods = preferenceOrderedConfigurationMethods.asInstanceOf[js.Any], preferredPairingProcedure = preferredPairingProcedure.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WiFiDirectConnectionParameters]
+  }
+  
+  extension [Self <: WiFiDirectConnectionParameters](x: Self) {
+    
+    inline def setGroupOwnerIntent(value: Double): Self = StObject.set(x, "groupOwnerIntent", value.asInstanceOf[js.Any])
+    
+    inline def setPreferenceOrderedConfigurationMethods(value: IVector[WiFiDirectConfigurationMethod]): Self = StObject.set(x, "preferenceOrderedConfigurationMethods", value.asInstanceOf[js.Any])
+    
+    inline def setPreferredPairingProcedure(value: WiFiDirectPairingProcedure): Self = StObject.set(x, "preferredPairingProcedure", value.asInstanceOf[js.Any])
+  }
 }
-

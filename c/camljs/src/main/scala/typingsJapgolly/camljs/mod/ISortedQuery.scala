@@ -1,31 +1,36 @@
 package typingsJapgolly.camljs.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISortedQuery extends IFinalizable {
+trait ISortedQuery
+  extends StObject
+     with IFinalizable {
+  
   /** Specifies next order field (ascending) */
-  def ThenBy(fieldInternalName: String): js.Any
+  def ThenBy(fieldInternalName: String): ISortedQuery
+  
   /** Specifies next order field (descending) */
-  def ThenByDesc(fieldInternalName: String): js.Any
+  def ThenByDesc(fieldInternalName: String): ISortedQuery
 }
-
 object ISortedQuery {
-  @scala.inline
-  def apply(
-    ThenBy: String => CallbackTo[js.Any],
-    ThenByDesc: String => CallbackTo[js.Any],
-    ToCamlQuery: CallbackTo[js.Any],
+  
+  inline def apply(
+    ThenBy: String => ISortedQuery,
+    ThenByDesc: String => ISortedQuery,
+    ToCamlQuery: CallbackTo[Any],
     ToString: CallbackTo[String]
   ): ISortedQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ThenBy")(js.Any.fromFunction1((t0: java.lang.String) => ThenBy(t0).runNow()))
-    __obj.updateDynamic("ThenByDesc")(js.Any.fromFunction1((t0: java.lang.String) => ThenByDesc(t0).runNow()))
-    __obj.updateDynamic("ToCamlQuery")(ToCamlQuery.toJsFn)
-    __obj.updateDynamic("ToString")(ToString.toJsFn)
+    val __obj = js.Dynamic.literal(ThenBy = js.Any.fromFunction1(ThenBy), ThenByDesc = js.Any.fromFunction1(ThenByDesc), ToCamlQuery = ToCamlQuery.toJsFn, ToString = ToString.toJsFn)
     __obj.asInstanceOf[ISortedQuery]
   }
+  
+  extension [Self <: ISortedQuery](x: Self) {
+    
+    inline def setThenBy(value: String => ISortedQuery): Self = StObject.set(x, "ThenBy", js.Any.fromFunction1(value))
+    
+    inline def setThenByDesc(value: String => ISortedQuery): Self = StObject.set(x, "ThenByDesc", js.Any.fromFunction1(value))
+  }
 }
-

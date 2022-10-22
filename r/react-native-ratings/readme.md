@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-ratings
 
-Typings are for version 6.5.0
+Typings are for version 8.1.0
 
 ## Library description:
 The standard Ratings component for React Native
@@ -10,15 +10,12 @@ The standard Ratings component for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-ratings |
 | Keywords           | react-native, reactjs, reactnative, gestures, ios, stars, android, ratings, ui-components |
-| # releases         | 12 |
-| # dependents       | 10 |
-| # downloads        | 1434979 |
-| # stars            | 1 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 465969.3333333333 |
+| # stars            | 700.0 |
 
 ## Links
-- [Homepage](https://github.com/Monte9/react-native-ratings#readme)
-- [Bugs](https://github.com/Monte9/react-native-ratings/issues)
-- [Repository](https://github.com/Monte9/react-native-ratings)
 - [Npm](https://www.npmjs.com/package/react-native-ratings)
     
 

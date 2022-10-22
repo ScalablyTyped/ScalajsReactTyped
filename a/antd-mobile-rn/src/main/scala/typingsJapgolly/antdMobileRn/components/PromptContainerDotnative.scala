@@ -1,63 +1,67 @@
 package typingsJapgolly.antdMobileRn.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antdMobileRn.antdMobileRnStrings.`login-password`
 import typingsJapgolly.antdMobileRn.antdMobileRnStrings.`secure-text`
-import typingsJapgolly.antdMobileRn.antdMobileRnStrings.default
-import typingsJapgolly.antdMobileRn.modalPropsTypeMod.CallbackOrActions
-import typingsJapgolly.antdMobileRn.promptContainerNativeMod.PropmptContainerProps
-import typingsJapgolly.antdMobileRn.promptDotnativeMod.IPromptStyle
+import typingsJapgolly.antdMobileRn.libModalPromptContainerDotnativeMod.PropmptContainerProps
+import typingsJapgolly.antdMobileRn.libModalPromptContainerDotnativeMod.default
+import typingsJapgolly.antdMobileRn.libModalPropsTypeMod.CallbackOrActions
+import typingsJapgolly.antdMobileRn.libModalStylePromptDotnativeMod.IPromptStyle
 import typingsJapgolly.reactNative.mod.TextStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PromptContainerDotnative {
-  def apply(
-    actions: CallbackOrActions[TextStyle],
-    defaultValue: String = null,
-    message: VdomNode = null,
-    onAnimationEnd: /* visible */ Boolean => Callback = null,
-    placeholders: js.Array[String] = null,
-    styles: IPromptStyle = null,
-    title: VdomNode = null,
-    `type`: default | `login-password` | `secure-text` = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    PropmptContainerProps, 
-    typingsJapgolly.antdMobileRn.promptContainerNativeMod.default, 
-    Unit, 
-    PropmptContainerProps
-  ] = {
-    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
   
-      if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.rawNode.asInstanceOf[js.Any])
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1((t0: /* visible */ scala.Boolean) => onAnimationEnd(t0).runNow()))
-    if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.promptContainerNativeMod.PropmptContainerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.promptContainerNativeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.promptContainerNativeMod.PropmptContainerProps])(children: _*)
+  inline def apply(actions: CallbackOrActions[TextStyle]): Builder = {
+    val __props = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[PropmptContainerProps]))
   }
+  
   @JSImport("antd-mobile-rn/lib/modal/PromptContainer.native", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def defaultValue(value: String): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def message(value: VdomNode): this.type = set("message", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def messageNull: this.type = set("message", null)
+    
+    inline def messageVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("message", js.Array(value*))
+    
+    inline def messageVdomElement(value: VdomElement): this.type = set("message", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onAnimationEnd(value: /* visible */ Boolean => Callback): this.type = set("onAnimationEnd", js.Any.fromFunction1((t0: /* visible */ Boolean) => value(t0).runNow()))
+    
+    inline def placeholders(value: js.Array[String]): this.type = set("placeholders", value.asInstanceOf[js.Any])
+    
+    inline def placeholdersVarargs(value: String*): this.type = set("placeholders", js.Array(value*))
+    
+    inline def styles(value: IPromptStyle): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def `type`(value: typingsJapgolly.antdMobileRn.antdMobileRnStrings.default | `login-password` | `secure-text`): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: PropmptContainerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

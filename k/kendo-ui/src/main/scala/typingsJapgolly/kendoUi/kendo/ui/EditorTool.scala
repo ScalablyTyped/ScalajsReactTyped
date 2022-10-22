@@ -1,39 +1,62 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorTool extends js.Object {
+trait EditorTool extends StObject {
+  
   var columns: js.UndefOr[Double] = js.undefined
+  
   var exec: js.UndefOr[js.Function] = js.undefined
+  
   var items: js.UndefOr[js.Array[EditorToolItem]] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
-  var palette: js.UndefOr[String | js.Any] = js.undefined
+  
+  var palette: js.UndefOr[String | Any] = js.undefined
+  
   var template: js.UndefOr[String] = js.undefined
+  
   var tooltip: js.UndefOr[String] = js.undefined
 }
-
 object EditorTool {
-  @scala.inline
-  def apply(
-    columns: Int | Double = null,
-    exec: js.Function = null,
-    items: js.Array[EditorToolItem] = null,
-    name: String = null,
-    palette: String | js.Any = null,
-    template: String = null,
-    tooltip: String = null
-  ): EditorTool = {
+  
+  inline def apply(): EditorTool = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (exec != null) __obj.updateDynamic("exec")(exec.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorTool]
   }
+  
+  extension [Self <: EditorTool](x: Self) {
+    
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setExec(value: js.Function): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+    
+    inline def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
+    
+    inline def setItems(value: js.Array[EditorToolItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: EditorToolItem*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPalette(value: String | Any): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    
+    inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+    
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+  }
 }
-

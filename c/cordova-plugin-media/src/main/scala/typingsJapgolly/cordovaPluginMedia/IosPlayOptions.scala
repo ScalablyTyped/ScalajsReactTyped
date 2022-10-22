@@ -1,28 +1,34 @@
 package typingsJapgolly.cordovaPluginMedia
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *  iOS optional parameters for media.play
   *  See https://github.com/apache/cordova-plugin-media#ios-quirks
   */
-trait IosPlayOptions extends js.Object {
+trait IosPlayOptions extends StObject {
+  
   var numberOfLoops: js.UndefOr[Double] = js.undefined
+  
   var playAudioWhenScreenIsLocked: js.UndefOr[Boolean] = js.undefined
 }
-
 object IosPlayOptions {
-  @scala.inline
-  def apply(
-    numberOfLoops: Int | Double = null,
-    playAudioWhenScreenIsLocked: js.UndefOr[Boolean] = js.undefined
-  ): IosPlayOptions = {
+  
+  inline def apply(): IosPlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (numberOfLoops != null) __obj.updateDynamic("numberOfLoops")(numberOfLoops.asInstanceOf[js.Any])
-    if (!js.isUndefined(playAudioWhenScreenIsLocked)) __obj.updateDynamic("playAudioWhenScreenIsLocked")(playAudioWhenScreenIsLocked.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosPlayOptions]
   }
+  
+  extension [Self <: IosPlayOptions](x: Self) {
+    
+    inline def setNumberOfLoops(value: Double): Self = StObject.set(x, "numberOfLoops", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfLoopsUndefined: Self = StObject.set(x, "numberOfLoops", js.undefined)
+    
+    inline def setPlayAudioWhenScreenIsLocked(value: Boolean): Self = StObject.set(x, "playAudioWhenScreenIsLocked", value.asInstanceOf[js.Any])
+    
+    inline def setPlayAudioWhenScreenIsLockedUndefined: Self = StObject.set(x, "playAudioWhenScreenIsLocked", js.undefined)
+  }
 }
-

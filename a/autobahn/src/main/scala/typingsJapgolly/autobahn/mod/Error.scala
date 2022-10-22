@@ -1,20 +1,28 @@
 package typingsJapgolly.autobahn.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("autobahn", "Error")
 @js.native
-class Error () extends IError {
+open class Error ()
+  extends StObject
+     with IError {
   def this(error: String) = this()
-  def this(error: String, args: js.Array[_]) = this()
-  def this(error: String, args: js.Array[_], kwargs: js.Any) = this()
+  def this(error: String, args: js.Array[Any]) = this()
+  def this(error: Unit, args: js.Array[Any]) = this()
+  def this(error: String, args: js.Array[Any], kwargs: Any) = this()
+  def this(error: String, args: Unit, kwargs: Any) = this()
+  def this(error: Unit, args: js.Array[Any], kwargs: Any) = this()
+  def this(error: Unit, args: Unit, kwargs: Any) = this()
+  
   /* CompleteClass */
-  override var args: js.Array[_] = js.native
+  var args: js.Array[Any] = js.native
+  
   /* CompleteClass */
-  override var error: String = js.native
+  var error: String = js.native
+  
   /* CompleteClass */
-  override var kwargs: js.Any = js.native
+  var kwargs: Any = js.native
 }
-

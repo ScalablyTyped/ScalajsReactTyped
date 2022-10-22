@@ -1,27 +1,34 @@
 package typingsJapgolly.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// -------------------------------------
-// View
-// -------------------------------------
-trait View[D] extends js.Object {
-  var map: js.UndefOr[js.Function1[/* doc */ D with Document, Unit]] = js.undefined
-  var reduce: js.UndefOr[js.Function1[/* doc */ D with Document, Unit]] = js.undefined
+trait View[D] extends StObject {
+  
+  var map: js.UndefOr[String | DocumentInfer[D]] = js.undefined
+  
+  var reduce: js.UndefOr[String | DocumentInfer[D]] = js.undefined
 }
-
 object View {
-  @scala.inline
-  def apply[D](
-    map: /* doc */ D with Document => japgolly.scalajs.react.Callback = null,
-    reduce: /* doc */ D with Document => japgolly.scalajs.react.Callback = null
-  ): View[D] = {
+  
+  inline def apply[D](): View[D] = {
     val __obj = js.Dynamic.literal()
-    if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1((t0: /* doc */ D with typingsJapgolly.nano.mod.Document) => map(t0).runNow()))
-    if (reduce != null) __obj.updateDynamic("reduce")(js.Any.fromFunction1((t0: /* doc */ D with typingsJapgolly.nano.mod.Document) => reduce(t0).runNow()))
     __obj.asInstanceOf[View[D]]
   }
+  
+  extension [Self <: View[?], D](x: Self & View[D]) {
+    
+    inline def setMap(value: String | DocumentInfer[D]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMapFunction1(value: /* doc */ D & Document => japgolly.scalajs.react.Callback): Self = StObject.set(x, "map", js.Any.fromFunction1((t0: /* doc */ D & Document) => value(t0).runNow()))
+    
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    
+    inline def setReduce(value: String | DocumentInfer[D]): Self = StObject.set(x, "reduce", value.asInstanceOf[js.Any])
+    
+    inline def setReduceFunction1(value: /* doc */ D & Document => japgolly.scalajs.react.Callback): Self = StObject.set(x, "reduce", js.Any.fromFunction1((t0: /* doc */ D & Document) => value(t0).runNow()))
+    
+    inline def setReduceUndefined: Self = StObject.set(x, "reduce", js.undefined)
+  }
 }
-

@@ -1,20 +1,22 @@
 package typingsJapgolly.slickgrid.Slick
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FormatterFactory[T /* <: SlickData */] extends js.Object {
-  def getFormatter(column: Column[T]): Formatter[_]
+trait FormatterFactory[T /* <: SlickData */] extends StObject {
+  
+  def getFormatter(column: Column[T]): Formatter[Any]
 }
-
 object FormatterFactory {
-  @scala.inline
-  def apply[T /* <: SlickData */](getFormatter: Column[T] => CallbackTo[Formatter[js.Any]]): FormatterFactory[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getFormatter")(js.Any.fromFunction1((t0: typingsJapgolly.slickgrid.Slick.Column[T]) => getFormatter(t0).runNow()))
+  
+  inline def apply[T /* <: SlickData */](getFormatter: Column[T] => Formatter[Any]): FormatterFactory[T] = {
+    val __obj = js.Dynamic.literal(getFormatter = js.Any.fromFunction1(getFormatter))
     __obj.asInstanceOf[FormatterFactory[T]]
   }
+  
+  extension [Self <: FormatterFactory[?], T /* <: SlickData */](x: Self & FormatterFactory[T]) {
+    
+    inline def setGetFormatter(value: Column[T] => Formatter[Any]): Self = StObject.set(x, "getFormatter", js.Any.fromFunction1(value))
+  }
 }
-

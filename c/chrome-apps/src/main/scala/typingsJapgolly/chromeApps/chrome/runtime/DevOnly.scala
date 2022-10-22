@@ -1,8 +1,8 @@
 package typingsJapgolly.chromeApps.chrome.runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotalpha
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.chromeApps.chromeAppsStrings.displaySource
   - typingsJapgolly.chromeApps.chromeAppsStrings.signedInDevices
 */
-trait DevOnly extends js.Object
-
+trait DevOnly extends StObject
 object DevOnly {
-  @scala.inline
-  def appDotwindowDotalpha: typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotalpha = this.cast("app.window.alpha")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def diagnostics: typingsJapgolly.chromeApps.chromeAppsStrings.diagnostics = this.cast("diagnostics")
-  @scala.inline
-  def displaySource: typingsJapgolly.chromeApps.chromeAppsStrings.displaySource = this.cast("displaySource")
-  @scala.inline
-  def signedInDevices: typingsJapgolly.chromeApps.chromeAppsStrings.signedInDevices = this.cast("signedInDevices")
+  
+  inline def appDotwindowDotalpha: typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotalpha = "app.window.alpha".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotalpha]
+  
+  inline def diagnostics: typingsJapgolly.chromeApps.chromeAppsStrings.diagnostics = "diagnostics".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.diagnostics]
+  
+  inline def displaySource: typingsJapgolly.chromeApps.chromeAppsStrings.displaySource = "displaySource".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.displaySource]
+  
+  inline def signedInDevices: typingsJapgolly.chromeApps.chromeAppsStrings.signedInDevices = "signedInDevices".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.signedInDevices]
 }
-

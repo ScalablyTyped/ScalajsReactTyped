@@ -1,22 +1,33 @@
 package typingsJapgolly.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
-trait PBKDF2Params extends js.Object {
+trait PBKDF2Params extends StObject {
+  
   var iter: js.UndefOr[Double] = js.undefined
+  
   var salt: js.UndefOr[BitArray_] = js.undefined
 }
-
 object PBKDF2Params {
-  @scala.inline
-  def apply(iter: Int | Double = null, salt: BitArray_ = null): PBKDF2Params = {
+  
+  inline def apply(): PBKDF2Params = {
     val __obj = js.Dynamic.literal()
-    if (iter != null) __obj.updateDynamic("iter")(iter.asInstanceOf[js.Any])
-    if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
     __obj.asInstanceOf[PBKDF2Params]
   }
+  
+  extension [Self <: PBKDF2Params](x: Self) {
+    
+    inline def setIter(value: Double): Self = StObject.set(x, "iter", value.asInstanceOf[js.Any])
+    
+    inline def setIterUndefined: Self = StObject.set(x, "iter", js.undefined)
+    
+    inline def setSalt(value: BitArray_): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+    
+    inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
+    
+    inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value*))
+  }
 }
-

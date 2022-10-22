@@ -1,24 +1,30 @@
 package typingsJapgolly.typestubIpfs.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.typestubIpfs.typestubIpfsStrings.file
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPFSGetResult extends js.Object {
+trait IPFSGetResult extends StObject {
+  
   var content: Buffer
+  
   var depth: Double
+  
   var hash: Buffer
+  
   var name: String
+  
   var path: String
+  
   var size: Double
+  
   var `type`: file | String
 }
-
 object IPFSGetResult {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     content: Buffer,
     depth: Double,
     hash: Buffer,
@@ -31,5 +37,21 @@ object IPFSGetResult {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPFSGetResult]
   }
+  
+  extension [Self <: IPFSGetResult](x: Self) {
+    
+    inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    
+    inline def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: file | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

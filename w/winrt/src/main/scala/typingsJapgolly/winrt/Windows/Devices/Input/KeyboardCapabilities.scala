@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.Devices.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Input.KeyboardCapabilities")
-@js.native
-class KeyboardCapabilities () extends IKeyboardCapabilities {
-  /* CompleteClass */
-  override var keyboardPresent: Double = js.native
+trait KeyboardCapabilities
+  extends StObject
+     with IKeyboardCapabilities
+object KeyboardCapabilities {
+  
+  inline def apply(keyboardPresent: Double): KeyboardCapabilities = {
+    val __obj = js.Dynamic.literal(keyboardPresent = keyboardPresent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeyboardCapabilities]
+  }
 }
-

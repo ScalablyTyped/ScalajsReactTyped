@@ -1,35 +1,33 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UIKind extends js.Object
-
+sealed trait UIKind extends StObject
 @JSImport("vscode", "UIKind")
 @js.native
-object UIKind extends js.Object {
-  /**
-  		 * Extensions are accessed from a desktop application.
-  		 */
-  @js.native
-  sealed trait Desktop extends UIKind
-  
-  /**
-  		 * Extensions are accessed from a web browser.
-  		 */
-  @js.native
-  sealed trait Web extends UIKind
+object UIKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UIKind with Double] = js.native
-  /* 1 */ @js.native
-  object Desktop extends TopLevel[Desktop with Double]
+  def apply(value: Double): js.UndefOr[UIKind & Double] = js.native
   
-  /* 2 */ @js.native
-  object Web extends TopLevel[Web with Double]
+  /**
+    * Extensions are accessed from a desktop application.
+    */
+  @js.native
+  sealed trait Desktop
+    extends StObject
+       with UIKind
+  /* 1 */ val Desktop: typingsJapgolly.vscode.mod.UIKind.Desktop & Double = js.native
   
+  /**
+    * Extensions are accessed from a web browser.
+    */
+  @js.native
+  sealed trait Web
+    extends StObject
+       with UIKind
+  /* 2 */ val Web: typingsJapgolly.vscode.mod.UIKind.Web & Double = js.native
 }
-

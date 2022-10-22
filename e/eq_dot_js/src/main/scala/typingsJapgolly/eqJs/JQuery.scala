@@ -1,9 +1,8 @@
 package typingsJapgolly.eqJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Support jQuery selectors.
-trait JQuery extends js.Object
-
+trait JQuery extends StObject

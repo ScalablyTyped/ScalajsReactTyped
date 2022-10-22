@@ -1,64 +1,52 @@
 package typingsJapgolly.growingIo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object growingIoStrings {
-  @js.native
-  sealed trait appDotset extends js.Object
   
   @js.native
-  sealed trait clearUserId extends js.Object
+  sealed trait appDotset extends StObject
+  inline def appDotset: appDotset = "app.set".asInstanceOf[appDotset]
   
   @js.native
-  sealed trait config extends js.Object
+  sealed trait clearUserId extends StObject
+  inline def clearUserId: clearUserId = "clearUserId".asInstanceOf[clearUserId]
   
   @js.native
-  sealed trait evarDotset extends js.Object
+  sealed trait config extends StObject
+  inline def config: config = "config".asInstanceOf[config]
   
   @js.native
-  sealed trait init extends js.Object
+  sealed trait evarDotset extends StObject
+  inline def evarDotset: evarDotset = "evar.set".asInstanceOf[evarDotset]
   
   @js.native
-  sealed trait pageDotset extends js.Object
+  sealed trait init extends StObject
+  inline def init: init = "init".asInstanceOf[init]
   
   @js.native
-  sealed trait peopleDotset extends js.Object
+  sealed trait pageDotset extends StObject
+  inline def pageDotset: pageDotset = "page.set".asInstanceOf[pageDotset]
   
   @js.native
-  sealed trait sendPage extends js.Object
+  sealed trait peopleDotset extends StObject
+  inline def peopleDotset: peopleDotset = "people.set".asInstanceOf[peopleDotset]
   
   @js.native
-  sealed trait setUserId extends js.Object
+  sealed trait sendPage extends StObject
+  inline def sendPage: sendPage = "sendPage".asInstanceOf[sendPage]
   
   @js.native
-  sealed trait track extends js.Object
+  sealed trait setUserId extends StObject
+  inline def setUserId: setUserId = "setUserId".asInstanceOf[setUserId]
   
   @js.native
-  sealed trait visitDotset extends js.Object
+  sealed trait track extends StObject
+  inline def track: track = "track".asInstanceOf[track]
   
-  @scala.inline
-  def appDotset: appDotset = "app.set".asInstanceOf[appDotset]
-  @scala.inline
-  def clearUserId: clearUserId = "clearUserId".asInstanceOf[clearUserId]
-  @scala.inline
-  def config: config = "config".asInstanceOf[config]
-  @scala.inline
-  def evarDotset: evarDotset = "evar.set".asInstanceOf[evarDotset]
-  @scala.inline
-  def init: init = "init".asInstanceOf[init]
-  @scala.inline
-  def pageDotset: pageDotset = "page.set".asInstanceOf[pageDotset]
-  @scala.inline
-  def peopleDotset: peopleDotset = "people.set".asInstanceOf[peopleDotset]
-  @scala.inline
-  def sendPage: sendPage = "sendPage".asInstanceOf[sendPage]
-  @scala.inline
-  def setUserId: setUserId = "setUserId".asInstanceOf[setUserId]
-  @scala.inline
-  def track: track = "track".asInstanceOf[track]
-  @scala.inline
-  def visitDotset: visitDotset = "visit.set".asInstanceOf[visitDotset]
+  @js.native
+  sealed trait visitDotset extends StObject
+  inline def visitDotset: visitDotset = "visit.set".asInstanceOf[visitDotset]
 }
-

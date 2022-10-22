@@ -1,10 +1,7 @@
 package typingsJapgolly.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("google.earth.GEControl")
-@js.native
-class GEControl () extends js.Object
-
+trait GEControl extends StObject

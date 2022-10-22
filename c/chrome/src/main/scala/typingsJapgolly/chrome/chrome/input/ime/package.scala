@@ -1,45 +1,34 @@
-package typingsJapgolly.chrome.chrome.input
+package typingsJapgolly.chrome.chrome.input.ime
 
+import typingsJapgolly.chrome.chrome.events.Event
+import typingsJapgolly.chrome.chromeStrings.undo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object ime {
-  type ActivateEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function2[/* engineID */ java.lang.String, /* screen */ java.lang.String, scala.Unit]
-  ]
-  type BlurEvent = typingsJapgolly.chrome.chrome.events.Event[js.Function1[/* contextID */ scala.Double, scala.Unit]]
-  type CandidateClickedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function3[
-      /* engineID */ java.lang.String, 
-      /* candidateID */ scala.Double, 
-      /* button */ java.lang.String, 
-      scala.Unit
-    ]
-  ]
-  type DeactivatedEvent = typingsJapgolly.chrome.chrome.events.Event[js.Function1[/* engineID */ java.lang.String, scala.Unit]]
-  type FocusEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function1[/* context */ typingsJapgolly.chrome.chrome.input.ime.InputContext, scala.Unit]
-  ]
-  type InputContextUpdateEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function1[/* context */ typingsJapgolly.chrome.chrome.input.ime.InputContext, scala.Unit]
-  ]
-  type InputResetEvent = typingsJapgolly.chrome.chrome.events.Event[js.Function1[/* engineID */ java.lang.String, scala.Unit]]
-  type KeyEventEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function2[
-      /* engineID */ java.lang.String, 
-      /* keyData */ typingsJapgolly.chrome.chrome.input.ime.KeyboardEvent, 
-      scala.Unit
-    ]
-  ]
-  type MenuItemActivatedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function2[/* engineID */ java.lang.String, /* name */ java.lang.String, scala.Unit]
-  ]
-  type SurroundingTextChangedEvent = typingsJapgolly.chrome.chrome.events.Event[
-    js.Function2[
-      /* engineID */ java.lang.String, 
-      /* surroundingInfo */ typingsJapgolly.chrome.chrome.input.ime.SurroundingTextInfo, 
-      scala.Unit
-    ]
-  ]
-}
+
+type ActivateEvent = Event[js.Function2[/* engineID */ String, /* screen */ String, Unit]]
+
+type AssistiveWindowButtonClickedEvent = Event[js.Function1[/* details */ AssistiveWindowButtonClickedDetails, Unit]]
+
+type AssistiveWindowType = undo
+
+type BlurEvent = Event[js.Function1[/* contextID */ Double, Unit]]
+
+type CandidateClickedEvent = Event[
+js.Function3[/* engineID */ String, /* candidateID */ Double, /* button */ String, Unit]]
+
+type DeactivatedEvent = Event[js.Function1[/* engineID */ String, Unit]]
+
+type FocusEvent = Event[js.Function1[/* context */ InputContext, Unit]]
+
+type InputContextUpdateEvent = Event[js.Function1[/* context */ InputContext, Unit]]
+
+type InputResetEvent = Event[js.Function1[/* engineID */ String, Unit]]
+
+type KeyEventEvent = Event[js.Function2[/* engineID */ String, /* keyData */ KeyboardEvent, Unit]]
+
+type MenuItemActivatedEvent = Event[js.Function2[/* engineID */ String, /* name */ String, Unit]]
+
+type SurroundingTextChangedEvent = Event[
+js.Function2[/* engineID */ String, /* surroundingInfo */ SurroundingTextInfo, Unit]]

@@ -1,31 +1,45 @@
 package typingsJapgolly.egg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IEggPluginItem extends js.Object {
+trait IEggPluginItem extends StObject {
+  
   @JSName("package")
   var _package: js.UndefOr[String] = js.undefined
+  
   var enable: js.UndefOr[Boolean] = js.undefined
+  
   var env: js.UndefOr[js.Array[EggEnvType]] = js.undefined
+  
   var path: js.UndefOr[String] = js.undefined
 }
-
 object IEggPluginItem {
-  @scala.inline
-  def apply(
-    _package: String = null,
-    enable: js.UndefOr[Boolean] = js.undefined,
-    env: js.Array[EggEnvType] = null,
-    path: String = null
-  ): IEggPluginItem = {
+  
+  inline def apply(): IEggPluginItem = {
     val __obj = js.Dynamic.literal()
-    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEggPluginItem]
   }
+  
+  extension [Self <: IEggPluginItem](x: Self) {
+    
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    
+    inline def setEnv(value: js.Array[EggEnvType]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    
+    inline def setEnvVarargs(value: EggEnvType*): Self = StObject.set(x, "env", js.Array(value*))
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    
+    inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+  }
 }
-

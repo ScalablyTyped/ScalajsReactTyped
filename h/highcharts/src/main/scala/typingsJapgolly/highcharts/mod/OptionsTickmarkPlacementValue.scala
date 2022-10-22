@@ -1,21 +1,17 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.between
   - typingsJapgolly.highcharts.highchartsStrings.on
 */
-trait OptionsTickmarkPlacementValue extends js.Object
-
+trait OptionsTickmarkPlacementValue extends StObject
 object OptionsTickmarkPlacementValue {
-  @scala.inline
-  def between: typingsJapgolly.highcharts.highchartsStrings.between = this.cast("between")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def on: typingsJapgolly.highcharts.highchartsStrings.on = this.cast("on")
+  
+  inline def between: typingsJapgolly.highcharts.highchartsStrings.between = "between".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.between]
+  
+  inline def on: typingsJapgolly.highcharts.highchartsStrings.on = "on".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.on]
 }
-

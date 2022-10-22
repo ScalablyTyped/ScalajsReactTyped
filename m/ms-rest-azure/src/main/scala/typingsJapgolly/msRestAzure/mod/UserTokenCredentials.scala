@@ -2,13 +2,15 @@ package typingsJapgolly.msRestAzure.mod
 
 import typingsJapgolly.msRest.mod.ServiceClientCredentials
 import typingsJapgolly.msRest.mod.WebResource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest-azure", "UserTokenCredentials")
 @js.native
-class UserTokenCredentials protected () extends ServiceClientCredentials {
+open class UserTokenCredentials protected ()
+  extends StObject
+     with ServiceClientCredentials {
   def this(
     clientId: String,
     domain: String,
@@ -16,6 +18,7 @@ class UserTokenCredentials protected () extends ServiceClientCredentials {
     password: String,
     options: AzureTokenCredentialsOptions
   ) = this()
+  
   /**
     * Gets the token from the cache. If the token is expired or about to be expired then it gets the new access token.
     * @param  {function} callback  The callback in the form (err, result)
@@ -24,6 +27,7 @@ class UserTokenCredentials protected () extends ServiceClientCredentials {
     *                       {object} [tokenResponse] The tokenResponse (tokenType and accessToken are the two important properties). 
     */
   def getToken(callback: js.Function2[/* err */ js.Error, /* result */ TokenResponse, Unit]): Unit = js.native
+  
   /**
     * Signs a request with the Authentication header.
     *
@@ -33,4 +37,3 @@ class UserTokenCredentials protected () extends ServiceClientCredentials {
   /* CompleteClass */
   override def signRequest(webResource: WebResource, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }
-

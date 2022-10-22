@@ -1,23 +1,26 @@
 package typingsJapgolly.hapiJoi.mod
 
 import typingsJapgolly.hapiJoi.hapiJoiBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DomainOptions extends js.Object {
+trait DomainOptions extends StObject {
+  
   /**
     * If `true`, Unicode characters are permitted
     *
     * @default true
     */
   var allowUnicode: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Number of segments required for the domain.
     *
     * @default 2
     */
   var minDomainSegments: js.UndefOr[Double] = js.undefined
+  
   /**
     * Options for TLD (top level domain) validation. By default, the TLD must be a valid name listed on the [IANA registry](http://data.iana.org/TLD/tlds-alpha-by-domain.txt)
     *
@@ -25,19 +28,25 @@ trait DomainOptions extends js.Object {
     */
   var tlds: js.UndefOr[TopLevelDomainOptions | `false`] = js.undefined
 }
-
 object DomainOptions {
-  @scala.inline
-  def apply(
-    allowUnicode: js.UndefOr[Boolean] = js.undefined,
-    minDomainSegments: Int | Double = null,
-    tlds: TopLevelDomainOptions | `false` = null
-  ): DomainOptions = {
+  
+  inline def apply(): DomainOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnicode)) __obj.updateDynamic("allowUnicode")(allowUnicode.asInstanceOf[js.Any])
-    if (minDomainSegments != null) __obj.updateDynamic("minDomainSegments")(minDomainSegments.asInstanceOf[js.Any])
-    if (tlds != null) __obj.updateDynamic("tlds")(tlds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainOptions]
   }
+  
+  extension [Self <: DomainOptions](x: Self) {
+    
+    inline def setAllowUnicode(value: Boolean): Self = StObject.set(x, "allowUnicode", value.asInstanceOf[js.Any])
+    
+    inline def setAllowUnicodeUndefined: Self = StObject.set(x, "allowUnicode", js.undefined)
+    
+    inline def setMinDomainSegments(value: Double): Self = StObject.set(x, "minDomainSegments", value.asInstanceOf[js.Any])
+    
+    inline def setMinDomainSegmentsUndefined: Self = StObject.set(x, "minDomainSegments", js.undefined)
+    
+    inline def setTlds(value: TopLevelDomainOptions | `false`): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
+    
+    inline def setTldsUndefined: Self = StObject.set(x, "tlds", js.undefined)
+  }
 }
-

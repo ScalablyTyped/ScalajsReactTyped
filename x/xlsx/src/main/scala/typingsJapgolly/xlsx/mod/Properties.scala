@@ -1,58 +1,88 @@
 package typingsJapgolly.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Properties extends js.Object {
+trait Properties extends StObject {
+  
   /** Summary tab "Author" */
   var Author: js.UndefOr[String] = js.undefined
+  
   /** Summary tab "Category" */
   var Category: js.UndefOr[String] = js.undefined
+  
   /** Summary tab "Comments" */
   var Comments: js.UndefOr[String] = js.undefined
+  
   /** Summary tab "Company" */
   var Company: js.UndefOr[String] = js.undefined
+  
   /** Statistics tab "Created" */
   var CreatedDate: js.UndefOr[js.Date] = js.undefined
+  
   /** Summary tab "Keywords" */
   var Keywords: js.UndefOr[String] = js.undefined
+  
   /** Statistics tab "Last saved by" */
   var LastAuthor: js.UndefOr[String] = js.undefined
+  
   /** Summary tab "Manager" */
   var Manager: js.UndefOr[String] = js.undefined
+  
   /** Summary tab "Subject" */
   var Subject: js.UndefOr[String] = js.undefined
+  
   /** Summary tab "Title" */
   var Title: js.UndefOr[String] = js.undefined
 }
-
 object Properties {
-  @scala.inline
-  def apply(
-    Author: String = null,
-    Category: String = null,
-    Comments: String = null,
-    Company: String = null,
-    CreatedDate: js.Date = null,
-    Keywords: String = null,
-    LastAuthor: String = null,
-    Manager: String = null,
-    Subject: String = null,
-    Title: String = null
-  ): Properties = {
+  
+  inline def apply(): Properties = {
     val __obj = js.Dynamic.literal()
-    if (Author != null) __obj.updateDynamic("Author")(Author.asInstanceOf[js.Any])
-    if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
-    if (Comments != null) __obj.updateDynamic("Comments")(Comments.asInstanceOf[js.Any])
-    if (Company != null) __obj.updateDynamic("Company")(Company.asInstanceOf[js.Any])
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (Keywords != null) __obj.updateDynamic("Keywords")(Keywords.asInstanceOf[js.Any])
-    if (LastAuthor != null) __obj.updateDynamic("LastAuthor")(LastAuthor.asInstanceOf[js.Any])
-    if (Manager != null) __obj.updateDynamic("Manager")(Manager.asInstanceOf[js.Any])
-    if (Subject != null) __obj.updateDynamic("Subject")(Subject.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Properties]
   }
+  
+  extension [Self <: Properties](x: Self) {
+    
+    inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorUndefined: Self = StObject.set(x, "Author", js.undefined)
+    
+    inline def setCategory(value: String): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
+    
+    inline def setComments(value: String): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
+    
+    inline def setCommentsUndefined: Self = StObject.set(x, "Comments", js.undefined)
+    
+    inline def setCompany(value: String): Self = StObject.set(x, "Company", value.asInstanceOf[js.Any])
+    
+    inline def setCompanyUndefined: Self = StObject.set(x, "Company", js.undefined)
+    
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    
+    inline def setKeywords(value: String): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
+    
+    inline def setKeywordsUndefined: Self = StObject.set(x, "Keywords", js.undefined)
+    
+    inline def setLastAuthor(value: String): Self = StObject.set(x, "LastAuthor", value.asInstanceOf[js.Any])
+    
+    inline def setLastAuthorUndefined: Self = StObject.set(x, "LastAuthor", js.undefined)
+    
+    inline def setManager(value: String): Self = StObject.set(x, "Manager", value.asInstanceOf[js.Any])
+    
+    inline def setManagerUndefined: Self = StObject.set(x, "Manager", js.undefined)
+    
+    inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    
+    inline def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
+  }
 }
-

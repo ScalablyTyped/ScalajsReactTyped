@@ -2,57 +2,47 @@ package typingsJapgolly.reactLazylog.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLAnchorElement
+import japgolly.scalajs.react.facade.React.Node
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLAnchorElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactLazylog.AnonText
-import typingsJapgolly.reactLazylog.lineMod.LineProps
-import typingsJapgolly.reactLazylog.lineMod.default
+import typingsJapgolly.reactLazylog.anon.Text
+import typingsJapgolly.reactLazylog.buildLineMod.LineProps
+import typingsJapgolly.reactLazylog.buildLineMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Line {
-  def apply(
-    data: js.Array[AnonText],
-    number: Double,
-    rowHeight: Double,
-    formatPart: /* text */ String => CallbackTo[Node] = null,
-    highlight: js.UndefOr[Boolean] = js.undefined,
-    onLineNumberClick: ReactMouseEventFrom[HTMLAnchorElement] => Callback = null,
-    onRowClick: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[LineProps, default, Unit, LineProps] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any])
   
-      if (formatPart != null) __obj.updateDynamic("formatPart")(js.Any.fromFunction1((t0: /* text */ java.lang.String) => formatPart(t0).runNow()))
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (onLineNumberClick != null) __obj.updateDynamic("onLineNumberClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onLineNumberClick(t0).runNow()))
-    onRowClick.foreach(p => __obj.updateDynamic("onRowClick")(p.toJsFn))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactLazylog.lineMod.LineProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactLazylog.lineMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactLazylog.lineMod.LineProps])(children: _*)
+  inline def apply(data: js.Array[Text], number: Double, rowHeight: Double): Builder = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[LineProps]))
   }
+  
   @JSImport("react-lazylog/build/Line", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def formatPart(value: /* text */ String => Node): this.type = set("formatPart", js.Any.fromFunction1(value))
+    
+    inline def highlight(value: Boolean): this.type = set("highlight", value.asInstanceOf[js.Any])
+    
+    inline def onLineNumberClick(value: ReactMouseEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onLineNumberClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onRowClick(value: CallbackTo[Any]): this.type = set("onRowClick", value.toJsFn)
+    
+    inline def selectable(value: Boolean): this.type = set("selectable", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: LineProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

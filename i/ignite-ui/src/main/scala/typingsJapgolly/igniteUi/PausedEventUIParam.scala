@@ -1,32 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PausedEventUIParam extends js.Object {
+trait PausedEventUIParam extends StObject {
+  
   /**
-  	 * Get the current time in the video at which the event was fired.
-  	 */
+    * Get the current time in the video at which the event was fired.
+    */
   var currentTime: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Get the video duration in seconds.
-  	 */
+    * Get the video duration in seconds.
+    */
   var duration: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Get the url of the playing video.
-  	 */
+    * Get the url of the playing video.
+    */
   var source: js.UndefOr[String] = js.undefined
 }
-
 object PausedEventUIParam {
-  @scala.inline
-  def apply(currentTime: Int | Double = null, duration: Int | Double = null, source: String = null): PausedEventUIParam = {
+  
+  inline def apply(): PausedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[PausedEventUIParam]
   }
+  
+  extension [Self <: PausedEventUIParam](x: Self) {
+    
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+  }
 }
-

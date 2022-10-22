@@ -1,49 +1,65 @@
 package typingsJapgolly.materialTabScroller
 
-import org.scalajs.dom.raw.Element
+import typingsJapgolly.materialBase.Element
 import typingsJapgolly.materialBase.componentMod.MDCComponent
-import typingsJapgolly.materialBase.foundationMod.default
 import typingsJapgolly.materialTabScroller.foundationMod.MDCTabScrollerFoundation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tab-scroller/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
+  
+  @JSImport("@material/tab-scroller/component", "MDCTabScroller")
   @js.native
-  class MDCTabScroller () extends MDCComponent[MDCTabScrollerFoundation, default[MDCTabScrollerFoundation]] {
+  open class MDCTabScroller protected () extends MDCComponent[MDCTabScrollerFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCTabScrollerFoundation, args: Any*) = this()
+    
+    /* private */ var area: Any = js.native
+    
+    /* private */ var content: Any = js.native
+    
     /**
       * Returns the width of the scroll content
       */
     def getScrollContentWidth(): Double = js.native
+    
     /**
       * Returns the current visual scroll position
       */
     def getScrollPosition(): Double = js.native
+    
+    /* private */ var handleInteraction: Any = js.native
+    
+    /* private */ var handleTransitionEnd: Any = js.native
+    
     /**
       * Increments the scroll value by the given amount
       * @param scrollXIncrement The pixel value by which to increment the scroll value
       */
     def incrementScroll(scrollXIncrement: Double): Unit = js.native
+    
     def initialize(): Unit = js.native
+    
     /**
       * Scrolls to the given pixel position
       * @param scrollX The pixel value to scroll to
       */
     def scrollTo(scrollX: Double): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object MDCTabScroller extends js.Object {
-    def attachTo(root: Element): MDCTabScroller = js.native
+  object MDCTabScroller {
+    
+    @JSImport("@material/tab-scroller/component", "MDCTabScroller")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: org.scalajs.dom.Element): MDCTabScroller = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTabScroller]
   }
   
   type MDCTabScrollerFactory = js.Function2[
-    /* el */ Element, 
+    /* el */ org.scalajs.dom.Element, 
     /* foundation */ js.UndefOr[MDCTabScrollerFoundation], 
     MDCTabScroller
   ]
 }
-

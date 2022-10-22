@@ -1,11 +1,18 @@
 package typingsJapgolly.nanp
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nanp", JSImport.Namespace)
-@js.native
-object mod extends TopLevel[Nanp_]
-
+object mod extends Shortcut {
+  
+  @JSImport("nanp", JSImport.Namespace)
+  @js.native
+  val ^ : Nanp = js.native
+  
+  type _To = Nanp
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: Nanp = ^
+}

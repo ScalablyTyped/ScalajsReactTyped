@@ -1,51 +1,80 @@
 package typingsJapgolly.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarkerOptions extends js.Object {
-  var animation: js.UndefOr[js.Any] = js.undefined
+trait MarkerOptions extends StObject {
+  
+  var animation: js.UndefOr[Animation] = js.undefined
+  
   var clickable: js.UndefOr[Boolean] = js.undefined
+  
   var cursor: js.UndefOr[String] = js.undefined
+  
   var draggable: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[js.Any] = js.undefined
-  var map: js.UndefOr[Map] = js.undefined
-  var position: js.UndefOr[js.Any] = js.undefined
-  var shape: js.UndefOr[js.Any] = js.undefined
+  
+  var icon: js.UndefOr[String | ImageIcon | SymbolIcon | HtmlIcon] = js.undefined
+  
+  var map: Map
+  
+  var position: Coord | CoordLiteral
+  
+  var shape: js.UndefOr[MarkerShape] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
+  
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object MarkerOptions {
-  @scala.inline
-  def apply(
-    animation: js.Any = null,
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    cursor: String = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    icon: js.Any = null,
-    map: Map = null,
-    position: js.Any = null,
-    shape: js.Any = null,
-    title: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
-  ): MarkerOptions = {
-    val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+  
+  inline def apply(map: Map, position: Coord | CoordLiteral): MarkerOptions = {
+    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }
+  
+  extension [Self <: MarkerOptions](x: Self) {
+    
+    inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+    
+    inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+    
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    
+    inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    
+    inline def setIcon(value: String | ImageIcon | SymbolIcon | HtmlIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: Coord | CoordLiteral): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setShape(value: MarkerShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

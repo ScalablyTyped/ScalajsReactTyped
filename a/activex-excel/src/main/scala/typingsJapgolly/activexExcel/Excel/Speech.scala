@@ -1,19 +1,25 @@
 package typingsJapgolly.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Excel.Speech")
 @js.native
-class Speech protected () extends js.Object {
+trait Speech extends StObject {
+  
   var Direction: XlSpeakDirection = js.native
-  @JSName("Excel.Speech_typekey")
+  
+  /* private */ @JSName("Excel.Speech_typekey")
   var ExcelDotSpeech_typekey: Speech = js.native
-  var SpeakCellOnEnter: Boolean = js.native
+  
   def Speak(Text: String): Unit = js.native
   def Speak(Text: String, SpeakAsync: Boolean): Unit = js.native
   def Speak(Text: String, SpeakAsync: Boolean, SpeakXML: Boolean): Unit = js.native
   def Speak(Text: String, SpeakAsync: Boolean, SpeakXML: Boolean, Purge: Boolean): Unit = js.native
+  def Speak(Text: String, SpeakAsync: Boolean, SpeakXML: Unit, Purge: Boolean): Unit = js.native
+  def Speak(Text: String, SpeakAsync: Unit, SpeakXML: Boolean): Unit = js.native
+  def Speak(Text: String, SpeakAsync: Unit, SpeakXML: Boolean, Purge: Boolean): Unit = js.native
+  def Speak(Text: String, SpeakAsync: Unit, SpeakXML: Unit, Purge: Boolean): Unit = js.native
+  
+  var SpeakCellOnEnter: Boolean = js.native
 }
-

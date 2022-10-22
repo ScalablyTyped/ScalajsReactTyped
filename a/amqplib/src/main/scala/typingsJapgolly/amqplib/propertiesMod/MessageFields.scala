@@ -1,28 +1,32 @@
 package typingsJapgolly.amqplib.propertiesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MessageFields extends CommonMessageFields {
+trait MessageFields
+  extends StObject
+     with CommonMessageFields {
+  
   var consumerTag: js.UndefOr[String] = js.undefined
+  
   var messageCount: js.UndefOr[Double] = js.undefined
 }
-
 object MessageFields {
-  @scala.inline
-  def apply(
-    deliveryTag: Double,
-    exchange: String,
-    redelivered: Boolean,
-    routingKey: String,
-    consumerTag: String = null,
-    messageCount: Int | Double = null
-  ): MessageFields = {
+  
+  inline def apply(deliveryTag: Double, exchange: String, redelivered: Boolean, routingKey: String): MessageFields = {
     val __obj = js.Dynamic.literal(deliveryTag = deliveryTag.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any], redelivered = redelivered.asInstanceOf[js.Any], routingKey = routingKey.asInstanceOf[js.Any])
-    if (consumerTag != null) __obj.updateDynamic("consumerTag")(consumerTag.asInstanceOf[js.Any])
-    if (messageCount != null) __obj.updateDynamic("messageCount")(messageCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageFields]
   }
+  
+  extension [Self <: MessageFields](x: Self) {
+    
+    inline def setConsumerTag(value: String): Self = StObject.set(x, "consumerTag", value.asInstanceOf[js.Any])
+    
+    inline def setConsumerTagUndefined: Self = StObject.set(x, "consumerTag", js.undefined)
+    
+    inline def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
+    
+    inline def setMessageCountUndefined: Self = StObject.set(x, "messageCount", js.undefined)
+  }
 }
-

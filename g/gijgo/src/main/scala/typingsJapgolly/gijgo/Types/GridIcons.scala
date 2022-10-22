@@ -1,30 +1,42 @@
 package typingsJapgolly.gijgo.Types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridIcons extends js.Object {
+trait GridIcons extends StObject {
+  
   var collapseGroup: js.UndefOr[String] = js.undefined
+  
   var collapseRow: js.UndefOr[String] = js.undefined
+  
   var expandGroup: js.UndefOr[String] = js.undefined
+  
   var expandRow: js.UndefOr[String] = js.undefined
 }
-
 object GridIcons {
-  @scala.inline
-  def apply(
-    collapseGroup: String = null,
-    collapseRow: String = null,
-    expandGroup: String = null,
-    expandRow: String = null
-  ): GridIcons = {
+  
+  inline def apply(): GridIcons = {
     val __obj = js.Dynamic.literal()
-    if (collapseGroup != null) __obj.updateDynamic("collapseGroup")(collapseGroup.asInstanceOf[js.Any])
-    if (collapseRow != null) __obj.updateDynamic("collapseRow")(collapseRow.asInstanceOf[js.Any])
-    if (expandGroup != null) __obj.updateDynamic("expandGroup")(expandGroup.asInstanceOf[js.Any])
-    if (expandRow != null) __obj.updateDynamic("expandRow")(expandRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridIcons]
   }
+  
+  extension [Self <: GridIcons](x: Self) {
+    
+    inline def setCollapseGroup(value: String): Self = StObject.set(x, "collapseGroup", value.asInstanceOf[js.Any])
+    
+    inline def setCollapseGroupUndefined: Self = StObject.set(x, "collapseGroup", js.undefined)
+    
+    inline def setCollapseRow(value: String): Self = StObject.set(x, "collapseRow", value.asInstanceOf[js.Any])
+    
+    inline def setCollapseRowUndefined: Self = StObject.set(x, "collapseRow", js.undefined)
+    
+    inline def setExpandGroup(value: String): Self = StObject.set(x, "expandGroup", value.asInstanceOf[js.Any])
+    
+    inline def setExpandGroupUndefined: Self = StObject.set(x, "expandGroup", js.undefined)
+    
+    inline def setExpandRow(value: String): Self = StObject.set(x, "expandRow", value.asInstanceOf[js.Any])
+    
+    inline def setExpandRowUndefined: Self = StObject.set(x, "expandRow", js.undefined)
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 文件路径类型
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */
-trait PlusIoURLType extends js.Object {
+trait PlusIoURLType extends StObject {
+  
   /**
     * 本地路径URL
     * 可在html页面中直接访问本地资源，以“file:///”开头，后面跟随系统的绝对路径。
@@ -18,6 +19,7 @@ trait PlusIoURLType extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   var LocalURL: js.UndefOr[PlusIoLocalURL] = js.undefined
+  
   /**
     * 相对路径URL
     * 只能在扩展API中使用，相对于基座提供的特定目录，以“_”开头。
@@ -25,6 +27,7 @@ trait PlusIoURLType extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   var RelativeURL: js.UndefOr[PlusIoRelativeURL] = js.undefined
+  
   /**
     * 网络路径URL
     * 可在html页面中以网络资源模式访问本地资源，以“http://”开头，后面跟随相对路径。
@@ -33,15 +36,25 @@ trait PlusIoURLType extends js.Object {
     */
   var RomoteURL: js.UndefOr[String] = js.undefined
 }
-
 object PlusIoURLType {
-  @scala.inline
-  def apply(LocalURL: PlusIoLocalURL = null, RelativeURL: PlusIoRelativeURL = null, RomoteURL: String = null): PlusIoURLType = {
+  
+  inline def apply(): PlusIoURLType = {
     val __obj = js.Dynamic.literal()
-    if (LocalURL != null) __obj.updateDynamic("LocalURL")(LocalURL.asInstanceOf[js.Any])
-    if (RelativeURL != null) __obj.updateDynamic("RelativeURL")(RelativeURL.asInstanceOf[js.Any])
-    if (RomoteURL != null) __obj.updateDynamic("RomoteURL")(RomoteURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusIoURLType]
   }
+  
+  extension [Self <: PlusIoURLType](x: Self) {
+    
+    inline def setLocalURL(value: PlusIoLocalURL): Self = StObject.set(x, "LocalURL", value.asInstanceOf[js.Any])
+    
+    inline def setLocalURLUndefined: Self = StObject.set(x, "LocalURL", js.undefined)
+    
+    inline def setRelativeURL(value: PlusIoRelativeURL): Self = StObject.set(x, "RelativeURL", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeURLUndefined: Self = StObject.set(x, "RelativeURL", js.undefined)
+    
+    inline def setRomoteURL(value: String): Self = StObject.set(x, "RomoteURL", value.asInstanceOf[js.Any])
+    
+    inline def setRomoteURLUndefined: Self = StObject.set(x, "RomoteURL", js.undefined)
+  }
 }
-

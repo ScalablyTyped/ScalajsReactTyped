@@ -1,20 +1,24 @@
 package typingsJapgolly.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransferPlaybackOptions extends js.Object {
-  var device_ids: js.Array[String]
+trait TransferPlaybackOptions extends StObject {
+  
   var play: js.UndefOr[Boolean] = js.undefined
 }
-
 object TransferPlaybackOptions {
-  @scala.inline
-  def apply(device_ids: js.Array[String], play: js.UndefOr[Boolean] = js.undefined): TransferPlaybackOptions = {
-    val __obj = js.Dynamic.literal(device_ids = device_ids.asInstanceOf[js.Any])
-    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
+  
+  inline def apply(): TransferPlaybackOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransferPlaybackOptions]
   }
+  
+  extension [Self <: TransferPlaybackOptions](x: Self) {
+    
+    inline def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+    
+    inline def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
+  }
 }
-

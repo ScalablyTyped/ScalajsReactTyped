@@ -1,38 +1,44 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LayerOptionsProperties extends js.Object {
+trait LayerOptionsProperties extends StObject {
+  
   /**
-    * Applicable to [Imagery Layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html). Indicates whether or not only the topmost raster should be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-LayerOptions.html#returnTopmostRaster)
+    * Applicable to [Imagery Layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html).
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-LayerOptions.html#returnTopmostRaster)
     */
   var returnTopmostRaster: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Applicable to [Imagery Layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html). Indicates whether records without data should display within the popup.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-LayerOptions.html#showNoDataRecords)
+    * Applicable to [Imagery Layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html).
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-LayerOptions.html#showNoDataRecords)
     */
   var showNoDataRecords: js.UndefOr[Boolean] = js.undefined
 }
-
 object LayerOptionsProperties {
-  @scala.inline
-  def apply(
-    returnTopmostRaster: js.UndefOr[Boolean] = js.undefined,
-    showNoDataRecords: js.UndefOr[Boolean] = js.undefined
-  ): LayerOptionsProperties = {
+  
+  inline def apply(): LayerOptionsProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(returnTopmostRaster)) __obj.updateDynamic("returnTopmostRaster")(returnTopmostRaster.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNoDataRecords)) __obj.updateDynamic("showNoDataRecords")(showNoDataRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerOptionsProperties]
   }
+  
+  extension [Self <: LayerOptionsProperties](x: Self) {
+    
+    inline def setReturnTopmostRaster(value: Boolean): Self = StObject.set(x, "returnTopmostRaster", value.asInstanceOf[js.Any])
+    
+    inline def setReturnTopmostRasterUndefined: Self = StObject.set(x, "returnTopmostRaster", js.undefined)
+    
+    inline def setShowNoDataRecords(value: Boolean): Self = StObject.set(x, "showNoDataRecords", value.asInstanceOf[js.Any])
+    
+    inline def setShowNoDataRecordsUndefined: Self = StObject.set(x, "showNoDataRecords", js.undefined)
+  }
 }
-

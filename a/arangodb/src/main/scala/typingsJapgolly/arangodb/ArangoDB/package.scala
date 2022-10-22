@@ -1,23 +1,396 @@
-package typingsJapgolly.arangodb
+package typingsJapgolly.arangodb.ArangoDB
 
+import typingsJapgolly.arangodb.anon.From
+import typingsJapgolly.arangodb.anon.To
+import typingsJapgolly.arangodb.arangodbInts.`2`
+import typingsJapgolly.arangodb.arangodbInts.`3`
+import typingsJapgolly.arangodb.arangodbStrings.arangosearch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object ArangoDB {
-  type CollectionType = typingsJapgolly.arangodb.ArangoDB.DocumentCollectionType | typingsJapgolly.arangodb.ArangoDB.EdgeCollectionType
-  type Document[T /* <: js.Object */] = typingsJapgolly.arangodb.AnonDictkey with typingsJapgolly.arangodb.arangodbStrings.Document with T with typingsJapgolly.arangodb.ArangoDB.DocumentMetadata
-  // Collection
-  type DocumentCollectionType = typingsJapgolly.arangodb.arangodbNumbers.`2`
-  type DocumentIterator[T /* <: js.Object */] = js.Function2[
-    /* document */ typingsJapgolly.arangodb.ArangoDB.Document[T], 
-    /* number */ scala.Double, 
-    scala.Unit
-  ]
-  type Edge[T /* <: js.Object */] = typingsJapgolly.arangodb.ArangoDB.Document[T] with typingsJapgolly.arangodb.AnonFrom
-  type EdgeCollectionType = typingsJapgolly.arangodb.arangodbNumbers.`3`
-  type Patch[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? T[K] | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias arangodb.ArangoDB.Patch<T[K]> * / object}
-    */ typingsJapgolly.arangodb.arangodbStrings.Patch_ with T
-  type ViewType = typingsJapgolly.arangodb.arangodbStrings.arangosearch
-}
+
+type CollectionType = DocumentCollectionType | EdgeCollectionType
+
+type Document[T /* <: js.Object */] = From & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K]} */ js.Any) & DocumentMetadata
+
+// Collection
+type DocumentCollectionType = `2`
+
+type DocumentIterator[T /* <: js.Object */] = js.Function2[/* document */ Document[T], /* number */ Double, Unit]
+
+type Edge[T /* <: js.Object */] = Document[T] & To
+
+type EdgeCollectionType = `3`
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_NO_ERROR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_FAILED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SYS_ERROR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_OUT_OF_MEMORY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_INTERNAL
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ILLEGAL_NUMBER
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_NUMERIC_OVERFLOW
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ILLEGAL_OPTION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_DEAD_PID
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_NOT_IMPLEMENTED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_BAD_PARAMETER
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_FORBIDDEN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_OUT_OF_MEMORY_MMAP
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CORRUPTED_CSV
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_FILE_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CANNOT_WRITE_FILE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CANNOT_OVERWRITE_FILE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_TYPE_ERROR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_LOCK_TIMEOUT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CANNOT_CREATE_DIRECTORY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CANNOT_CREATE_TEMP_FILE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REQUEST_CANCELED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_DEBUG
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_IP_ADDRESS_INVALID
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_FILE_EXISTS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_LOCKED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_DEADLOCK
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SHUTTING_DOWN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ONLY_ENTERPRISE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_RESOURCE_LIMIT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_ICU_ERROR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CANNOT_READ_FILE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_HTTP_BAD_PARAMETER
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_HTTP_UNAUTHORIZED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_HTTP_FORBIDDEN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_HTTP_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_HTTP_METHOD_NOT_ALLOWED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_HTTP_NOT_ACCEPTABLE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_HTTP_PRECONDITION_FAILED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_HTTP_SERVER_ERROR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_HTTP_SERVICE_UNAVAILABLE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_HTTP_GATEWAY_TIMEOUT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_HTTP_CORRUPTED_JSON
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_HTTP_SUPERFLUOUS_SUFFICES
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_ILLEGAL_STATE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DATAFILE_SEALED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_READ_ONLY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DUPLICATE_IDENTIFIER
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DATAFILE_UNREADABLE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DATAFILE_EMPTY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_RECOVERY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DATAFILE_STATISTICS_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_CORRUPTED_DATAFILE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_ILLEGAL_PARAMETER_FILE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_CORRUPTED_COLLECTION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_MMAP_FAILED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_FILESYSTEM_FULL
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_NO_JOURNAL
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DATAFILE_ALREADY_EXISTS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DATADIR_LOCKED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_COLLECTION_DIRECTORY_ALREADY_EXISTS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_MSYNC_FAILED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DATADIR_UNLOCKABLE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_SYNC_TIMEOUT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_CONFLICT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DATADIR_INVALID
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DOCUMENT_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DATA_SOURCE_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_COLLECTION_PARAMETER_MISSING
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DOCUMENT_HANDLE_BAD
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_MAXIMAL_SIZE_TOO_SMALL
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DUPLICATE_NAME
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_ILLEGAL_NAME
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_NO_INDEX
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_UNIQUE_CONSTRAINT_VIOLATED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_INDEX_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_CROSS_COLLECTION_REQUEST
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_INDEX_HANDLE_BAD
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DOCUMENT_TOO_LARGE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_COLLECTION_NOT_UNLOADED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_COLLECTION_TYPE_INVALID
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_VALIDATION_FAILED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_ATTRIBUTE_PARSER_FAILED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DOCUMENT_KEY_BAD
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DOCUMENT_KEY_UNEXPECTED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DATADIR_NOT_WRITABLE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_OUT_OF_KEYS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DOCUMENT_KEY_MISSING
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DOCUMENT_TYPE_INVALID
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DATABASE_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DATABASE_NAME_INVALID
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_USE_SYSTEM_DATABASE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_ENDPOINT_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_INVALID_KEY_GENERATOR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_INVALID_EDGE_ATTRIBUTE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_INDEX_DOCUMENT_ATTRIBUTE_MISSING
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_INDEX_CREATION_FAILED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_WRITE_THROTTLE_TIMEOUT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_COLLECTION_TYPE_MISMATCH
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_COLLECTION_NOT_LOADED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DOCUMENT_REV_BAD
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_DATAFILE_FULL
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_EMPTY_DATADIR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_TRY_AGAIN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_BUSY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_MERGE_IN_PROGRESS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ARANGO_IO_ERROR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_NO_RESPONSE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_INVALID_RESPONSE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_MASTER_ERROR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_MASTER_INCOMPATIBLE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_MASTER_CHANGE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_LOOP
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_UNEXPECTED_MARKER
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_INVALID_APPLIER_STATE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_UNEXPECTED_TRANSACTION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_INVALID_APPLIER_CONFIGURATION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_RUNNING
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_APPLIER_STOPPED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_NO_START_TICK
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_START_TICK_NOT_PRESENT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_WRONG_CHECKSUM
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_REPLICATION_SHARD_NONEMPTY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_NO_AGENCY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_NO_COORDINATOR_HEADER
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_LOCK_PLAN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COLLECTION_ID_EXISTS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_CREATE_COLLECTION_IN_PLAN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_READ_CURRENT_VERSION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_CREATE_COLLECTION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_TIMEOUT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_REMOVE_COLLECTION_IN_PLAN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_REMOVE_COLLECTION_IN_CURRENT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_CREATE_DATABASE_IN_PLAN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_CREATE_DATABASE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_REMOVE_DATABASE_IN_PLAN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_REMOVE_DATABASE_IN_CURRENT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_SHARD_GONE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_CONNECTION_LOST
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_MUST_NOT_SPECIFY_KEY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_GOT_CONTRADICTING_ANSWERS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_NOT_ALL_SHARDING_ATTRIBUTES_GIVEN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_MUST_NOT_CHANGE_SHARDING_ATTRIBUTES
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_UNSUPPORTED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_ONLY_ON_COORDINATOR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_READING_PLAN_AGENCY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_TRUNCATE_COLLECTION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_AQL_COMMUNICATION
+  - / * ERROR_ARANGO_DOCUMENT_NOT_FOUND_OR_SHARDING_ATTRIBUTES_CHANGED * / java.lang.String
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_DETERMINE_ID
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_ONLY_ON_DBSERVER
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_BACKEND_UNAVAILABLE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_UNKNOWN_CALLBACK_ENDPOINT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_AGENCY_STRUCTURE_INVALID
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_AQL_COLLECTION_OUT_OF_SYNC
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_CREATE_INDEX_IN_PLAN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_DROP_INDEX_IN_PLAN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_CHAIN_OF_DISTRIBUTESHARDSLIKE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_MUST_NOT_DROP_COLL_OTHER_DISTRIBUTESHARDSLIKE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_UNKNOWN_DISTRIBUTESHARDSLIKE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_INSUFFICIENT_DBSERVERS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_DROP_FOLLOWER
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_SHARD_LEADER_REFUSES_REPLICATION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_SHARD_FOLLOWER_REFUSES_OPERATION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_SHARD_LEADER_RESIGNED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_AGENCY_COMMUNICATION_FAILED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_DISTRIBUTE_SHARDS_LIKE_REPLICATION_FACTOR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_DISTRIBUTE_SHARDS_LIKE_NUMBER_OF_SHARDS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_LEADERSHIP_CHALLENGE_ONGOING
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_NOT_LEADER
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CLUSTER_COULD_NOT_CREATE_VIEW_IN_PLAN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_KILLED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_PARSE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_EMPTY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_SCRIPT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_NUMBER_OUT_OF_RANGE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_VARIABLE_NAME_INVALID
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_VARIABLE_REDECLARED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_VARIABLE_NAME_UNKNOWN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_COLLECTION_LOCK_FAILED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_TOO_MANY_COLLECTIONS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_DOCUMENT_ATTRIBUTE_REDECLARED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_FUNCTION_NAME_UNKNOWN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_FUNCTION_ARGUMENT_NUMBER_MISMATCH
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_FUNCTION_ARGUMENT_TYPE_MISMATCH
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_INVALID_REGEX
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_BIND_PARAMETERS_INVALID
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_BIND_PARAMETER_MISSING
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_BIND_PARAMETER_UNDECLARED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_BIND_PARAMETER_TYPE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_INVALID_LOGICAL_VALUE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_INVALID_ARITHMETIC_VALUE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_DIVISION_BY_ZERO
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_ARRAY_EXPECTED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_FAIL_CALLED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_GEO_INDEX_MISSING
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_FULLTEXT_INDEX_MISSING
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_INVALID_DATE_VALUE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_MULTI_MODIFY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_INVALID_AGGREGATE_EXPRESSION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_COMPILE_TIME_OPTIONS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_EXCEPTION_OPTIONS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_COLLECTION_USED_IN_EXPRESSION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_DISALLOWED_DYNAMIC_CALL
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_ACCESS_AFTER_MODIFICATION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_FUNCTION_INVALID_NAME
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_FUNCTION_INVALID_CODE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_FUNCTION_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_FUNCTION_RUNTIME_ERROR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_BAD_JSON_PLAN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_IN_USE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_USER_ASSERT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUERY_USER_WARN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CURSOR_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CURSOR_BUSY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_TRANSACTION_INTERNAL
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_TRANSACTION_NESTED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_TRANSACTION_UNREGISTERED_COLLECTION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_TRANSACTION_DISALLOWED_OPERATION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_TRANSACTION_ABORTED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_USER_INVALID_NAME
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_USER_INVALID_PASSWORD
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_USER_DUPLICATE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_USER_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_USER_CHANGE_PASSWORD
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_USER_EXTERNAL
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_INVALID_NAME
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_INVALID_MOUNT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_DOWNLOAD_FAILED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_UPLOAD_FAILED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_LDAP_CANNOT_INIT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_LDAP_CANNOT_SET_OPTION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_LDAP_CANNOT_BIND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_LDAP_CANNOT_UNBIND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_LDAP_CANNOT_SEARCH
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_LDAP_CANNOT_START_TLS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_LDAP_FOUND_NO_OBJECTS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_LDAP_NOT_ONE_USER_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_LDAP_USER_NOT_IDENTIFIED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_LDAP_INVALID_MODE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_TASK_INVALID_ID
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_TASK_DUPLICATE_ID
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_TASK_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_GRAPH_INVALID_GRAPH
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_GRAPH_COULD_NOT_CREATE_GRAPH
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_GRAPH_INVALID_VERTEX
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_GRAPH_COULD_NOT_CREATE_VERTEX
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_GRAPH_COULD_NOT_CHANGE_VERTEX
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_GRAPH_INVALID_EDGE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_GRAPH_COULD_NOT_CREATE_EDGE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_GRAPH_COULD_NOT_CHANGE_EDGE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_GRAPH_TOO_MANY_ITERATIONS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_GRAPH_INVALID_FILTER_RESULT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_GRAPH_EMPTY
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SESSION_UNKNOWN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SESSION_EXPIRED
+  - typingsJapgolly.arangodb.arangodbStrings.SIMPLE_CLIENT_UNKNOWN_ERROR
+  - typingsJapgolly.arangodb.arangodbStrings.SIMPLE_CLIENT_COULD_NOT_CONNECT
+  - typingsJapgolly.arangodb.arangodbStrings.SIMPLE_CLIENT_COULD_NOT_WRITE
+  - typingsJapgolly.arangodb.arangodbStrings.SIMPLE_CLIENT_COULD_NOT_READ
+  - typingsJapgolly.arangodb.arangodbStrings.COMMUNICATOR_REQUEST_ABORTED
+  - typingsJapgolly.arangodb.arangodbStrings.COMMUNICATOR_DISABLED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_MALFORMED_MANIFEST_FILE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_INVALID_SERVICE_MANIFEST
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_FILES_MISSING
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_FILES_OUTDATED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_INVALID_FOXX_OPTIONS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_INVALID_MOUNTPOINT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_NEEDS_CONFIGURATION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_MOUNTPOINT_CONFLICT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_MANIFEST_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_OPTIONS_MALFORMED
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_SOURCE_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_SOURCE_ERROR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SERVICE_UNKNOWN_SCRIPT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_MODULE_NOT_FOUND
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_MODULE_SYNTAX_ERROR
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_MODULE_FAILURE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_NO_SMART_COLLECTION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_NO_SMART_GRAPH_ATTRIBUTE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_CANNOT_DROP_SMART_COLLECTION
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_KEY_MUST_BE_PREFIXED_WITH_SMART_GRAPH_ATTRIBUTE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_ILLEGAL_SMART_GRAPH_ATTRIBUTE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_AGENCY_INQUIRY_SYNTAX
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_AGENCY_INFORM_MUST_BE_OBJECT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_AGENCY_INFORM_MUST_CONTAIN_TERM
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_AGENCY_INFORM_MUST_CONTAIN_ID
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_AGENCY_INFORM_MUST_CONTAIN_ACTIVE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_AGENCY_INFORM_MUST_CONTAIN_POOL
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_AGENCY_INFORM_MUST_CONTAIN_MIN_PING
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_AGENCY_INFORM_MUST_CONTAIN_MAX_PING
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_AGENCY_INFORM_MUST_CONTAIN_TIMEOUT_MULT
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_AGENCY_INQUIRE_CLIENT_ID_MUST_BE_STRING
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_AGENCY_CANNOT_REBUILD_DBS
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_SUPERVISION_GENERAL_FAILURE
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_DISPATCHER_IS_STOPPING
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUEUE_UNKNOWN
+  - typingsJapgolly.arangodb.arangodbStrings.ERROR_QUEUE_FULL
+*/
+type ErrorName = _ErrorName | (/* ERROR_ARANGO_DOCUMENT_NOT_FOUND_OR_SHARDING_ATTRIBUTES_CHANGED */ String)
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.arangodb.arangodbStrings.continue
+  - typingsJapgolly.arangodb.arangodbStrings.`switching protocols`
+  - typingsJapgolly.arangodb.arangodbStrings.processing
+  - typingsJapgolly.arangodb.arangodbStrings.ok
+  - typingsJapgolly.arangodb.arangodbStrings.created
+  - typingsJapgolly.arangodb.arangodbStrings.accepted
+  - typingsJapgolly.arangodb.arangodbStrings.`non-authoritative information`
+  - typingsJapgolly.arangodb.arangodbStrings.`no content`
+  - typingsJapgolly.arangodb.arangodbStrings.`reset content`
+  - typingsJapgolly.arangodb.arangodbStrings.`partial content`
+  - typingsJapgolly.arangodb.arangodbStrings.`multi-status`
+  - typingsJapgolly.arangodb.arangodbStrings.`already reported`
+  - typingsJapgolly.arangodb.arangodbStrings.`im used`
+  - typingsJapgolly.arangodb.arangodbStrings.`multiple choices`
+  - typingsJapgolly.arangodb.arangodbStrings.`moved permanently`
+  - typingsJapgolly.arangodb.arangodbStrings.found
+  - typingsJapgolly.arangodb.arangodbStrings.`see other`
+  - typingsJapgolly.arangodb.arangodbStrings.`not modified`
+  - typingsJapgolly.arangodb.arangodbStrings.`use proxy`
+  - / * (unused) * / java.lang.String
+  - typingsJapgolly.arangodb.arangodbStrings.`temporary redirect`
+  - typingsJapgolly.arangodb.arangodbStrings.`permanent redirect`
+  - typingsJapgolly.arangodb.arangodbStrings.`bad request`
+  - typingsJapgolly.arangodb.arangodbStrings.unauthorized
+  - typingsJapgolly.arangodb.arangodbStrings.`payment required`
+  - typingsJapgolly.arangodb.arangodbStrings.forbidden
+  - typingsJapgolly.arangodb.arangodbStrings.`not found`
+  - typingsJapgolly.arangodb.arangodbStrings.`method not allowed`
+  - typingsJapgolly.arangodb.arangodbStrings.`not acceptable`
+  - typingsJapgolly.arangodb.arangodbStrings.`proxy authentication required`
+  - typingsJapgolly.arangodb.arangodbStrings.`request timeout`
+  - typingsJapgolly.arangodb.arangodbStrings.conflict
+  - typingsJapgolly.arangodb.arangodbStrings.gone
+  - typingsJapgolly.arangodb.arangodbStrings.`length required`
+  - typingsJapgolly.arangodb.arangodbStrings.`precondition failed`
+  - typingsJapgolly.arangodb.arangodbStrings.`payload too large`
+  - typingsJapgolly.arangodb.arangodbStrings.`uri too long`
+  - typingsJapgolly.arangodb.arangodbStrings.`unsupported media type`
+  - typingsJapgolly.arangodb.arangodbStrings.`range not satisfiable`
+  - typingsJapgolly.arangodb.arangodbStrings.`expectation failed`
+  - typingsJapgolly.arangodb.arangodbStrings.`misdirected request`
+  - typingsJapgolly.arangodb.arangodbStrings.`unprocessable entity`
+  - typingsJapgolly.arangodb.arangodbStrings.locked
+  - typingsJapgolly.arangodb.arangodbStrings.`failed dependency`
+  - typingsJapgolly.arangodb.arangodbStrings.`unordered collection`
+  - typingsJapgolly.arangodb.arangodbStrings.`upgrade required`
+  - typingsJapgolly.arangodb.arangodbStrings.`precondition required`
+  - typingsJapgolly.arangodb.arangodbStrings.`too many requests`
+  - typingsJapgolly.arangodb.arangodbStrings.`request header fields too large`
+  - typingsJapgolly.arangodb.arangodbStrings.`unavailable for legal reasons`
+  - typingsJapgolly.arangodb.arangodbStrings.`internal server error`
+  - typingsJapgolly.arangodb.arangodbStrings.`not implemented`
+  - typingsJapgolly.arangodb.arangodbStrings.`bad gateway`
+  - typingsJapgolly.arangodb.arangodbStrings.`service unavailable`
+  - typingsJapgolly.arangodb.arangodbStrings.`gateway timeout`
+  - typingsJapgolly.arangodb.arangodbStrings.`http version not supported`
+  - typingsJapgolly.arangodb.arangodbStrings.`variant also negotiates`
+  - typingsJapgolly.arangodb.arangodbStrings.`insufficient storage`
+  - typingsJapgolly.arangodb.arangodbStrings.`loop detected`
+  - typingsJapgolly.arangodb.arangodbStrings.`bandwidth limit exceeded`
+  - typingsJapgolly.arangodb.arangodbStrings.`not extended`
+  - typingsJapgolly.arangodb.arangodbStrings.`network authentication required`
+*/
+type HttpStatus = _HttpStatus | (/* (unused) */ String)
+
+type ViewType = arangosearch

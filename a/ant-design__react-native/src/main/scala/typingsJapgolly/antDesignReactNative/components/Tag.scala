@@ -1,61 +1,51 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.tagMod.TagNativeProps
-import typingsJapgolly.antDesignReactNative.tagMod.default
-import typingsJapgolly.antDesignReactNative.tagStyleMod.TagStyle
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignReactNative.libTagMod.TagNativeProps
+import typingsJapgolly.antDesignReactNative.libTagStyleMod.TagStyle
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tag {
-  def apply(
-    afterClose: js.UndefOr[Callback] = js.undefined,
-    closable: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* selected */ Boolean => Callback = null,
-    onClose: js.UndefOr[Callback] = js.undefined,
-    onLongPress: js.UndefOr[Callback] = js.undefined,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    small: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
-    styles: Partial[TagStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TagNativeProps, default, Unit, TagNativeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      afterClose.foreach(p => __obj.updateDynamic("afterClose")(p.toJsFn))
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* selected */ scala.Boolean) => onChange(t0).runNow()))
-    onClose.foreach(p => __obj.updateDynamic("onClose")(p.toJsFn))
-    onLongPress.foreach(p => __obj.updateDynamic("onLongPress")(p.toJsFn))
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (!js.isUndefined(small)) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.tagMod.TagNativeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.tagMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.tagMod.TagNativeProps])(children: _*)
-  }
-  @JSImport("@ant-design/react-native/lib/tag", JSImport.Default)
+  @JSImport("@ant-design/react-native", "Tag")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.Tag] {
+    
+    inline def afterClose(value: Callback): this.type = set("afterClose", value.toJsFn)
+    
+    inline def closable(value: Boolean): this.type = set("closable", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* selected */ Boolean => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* selected */ Boolean) => value(t0).runNow()))
+    
+    inline def onClose(value: Callback): this.type = set("onClose", value.toJsFn)
+    
+    inline def onLongPress(value: Callback): this.type = set("onLongPress", value.toJsFn)
+    
+    inline def selected(value: Boolean): this.type = set("selected", value.asInstanceOf[js.Any])
+    
+    inline def small(value: Boolean): this.type = set("small", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: Partial[TagStyle]): this.type = set("styles", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Tag.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TagNativeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

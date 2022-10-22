@@ -1,22 +1,31 @@
 package typingsJapgolly.nightwatch.mod
 
-import typingsJapgolly.nightwatch.AnonUi
+import typingsJapgolly.nightwatch.anon.Autostartsession
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NightwatchTestRunner extends js.Object {
-  var options: js.UndefOr[AnonUi] = js.undefined
+trait NightwatchTestRunner extends StObject {
+  
+  var options: js.UndefOr[Autostartsession] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object NightwatchTestRunner {
-  @scala.inline
-  def apply(options: AnonUi = null, `type`: String = null): NightwatchTestRunner = {
+  
+  inline def apply(): NightwatchTestRunner = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchTestRunner]
   }
+  
+  extension [Self <: NightwatchTestRunner](x: Self) {
+    
+    inline def setOptions(value: Autostartsession): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

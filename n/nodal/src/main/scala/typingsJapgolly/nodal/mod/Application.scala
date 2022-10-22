@@ -1,16 +1,16 @@
 package typingsJapgolly.nodal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "Application")
 @js.native
-class Application ()
+open class Application ()
   extends typingsJapgolly.fxn.mod.Application {
+  
   /**
     * HTTP Error
     */
-  def error(req: js.Any, res: js.Any, start: js.Any, status: Double, message: String, err: js.Any): Unit = js.native
+  def error(req: Any, res: Any, start: Any, status: Double, message: String, err: Any): Unit = js.native
 }
-

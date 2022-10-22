@@ -1,19 +1,29 @@
 package typingsJapgolly.timeago
 
-import typingsJapgolly.std.Date
-import typingsJapgolly.std.Element
+import org.scalajs.dom.Element
 import typingsJapgolly.timeago.Timeago.TimeagoStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
+  
+  def timeago(timestamp: String): String
+  def timeago(timestamp: js.Date): String
+  def timeago(timestamp: Element): String
+  def timeago(timestamp: Double): String
   @JSName("timeago")
-  var timeago_Original: TimeagoStatic = js.native
-  def timeago(timestamp: String): String = js.native
-  def timeago(timestamp: Double): String = js.native
-  def timeago(timestamp: Date): String = js.native
-  def timeago(timestamp: Element): String = js.native
+  var timeago_Original: TimeagoStatic
 }
-
+object JQueryStatic {
+  
+  inline def apply(timeago: TimeagoStatic): JQueryStatic = {
+    val __obj = js.Dynamic.literal(timeago = timeago.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQueryStatic]
+  }
+  
+  extension [Self <: JQueryStatic](x: Self) {
+    
+    inline def setTimeago(value: TimeagoStatic): Self = StObject.set(x, "timeago", value.asInstanceOf[js.Any])
+  }
+}

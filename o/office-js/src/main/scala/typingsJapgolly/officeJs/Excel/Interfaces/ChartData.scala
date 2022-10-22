@@ -7,233 +7,304 @@ import typingsJapgolly.officeJs.officeJsStrings.Interplotted
 import typingsJapgolly.officeJs.officeJsStrings.NotPlotted
 import typingsJapgolly.officeJs.officeJsStrings.Rows
 import typingsJapgolly.officeJs.officeJsStrings.Zero
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chart.toJSON()`. */
-trait ChartData extends js.Object {
+trait ChartData extends StObject {
+  
   /**
+    * Represents chart axes.
     *
-    * Represents chart axes. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var axes: js.UndefOr[ChartAxesData] = js.undefined
+  
   /**
+    * Specifies a chart category label level enumeration constant, referring to the level of the source category labels.
     *
-    * Returns or sets a ChartCategoryLabelLevel enumeration constant referring to
-    the level of where the category labels are being sourced from. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var categoryLabelLevel: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the type of the chart. See `Excel.ChartType` for details.
     *
-    * Represents the type of the chart. See Excel.ChartType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var chartType: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84, starting with typingsJapgolly.officeJs.Excel.ChartType, typingsJapgolly.officeJs.officeJsStrings.Invalid, typingsJapgolly.officeJs.officeJsStrings.ColumnClustered */ Any
   ] = js.undefined
+  
   /**
+    * Represents the data labels on the chart.
     *
-    * Represents the datalabels on the chart. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var dataLabels: js.UndefOr[ChartDataLabelsData] = js.undefined
+  
   /**
+    * Specifies the way that blank cells are plotted on a chart.
     *
-    * Returns or sets the way that blank cells are plotted on a chart. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var displayBlanksAs: js.UndefOr[ChartDisplayBlanksAs | NotPlotted | Zero | Interplotted] = js.undefined
+  
   /**
+    * Encapsulates the format properties for the chart area.
     *
-    * Encapsulates the format properties for the chart area. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var format: js.UndefOr[ChartAreaFormatData] = js.undefined
+  
   /**
+    * Specifies the height, in points, of the chart object.
     *
-    * Represents the height, in points, of the chart object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var height: js.UndefOr[Double] = js.undefined
+  
   /**
+    * The unique ID of chart.
     *
-    * The unique id of chart. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var id: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * The distance, in points, from the left side of the chart to the worksheet origin.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var left: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Represents the legend for the chart.
     *
-    * Represents the legend for the chart. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var legend: js.UndefOr[ChartLegendData] = js.undefined
+  
   /**
+    * Specifies the name of a chart object.
     *
-    * Represents the name of a chart object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
+    * Encapsulates the options for a pivot chart.
     *
-    * Encapsulates the options for a pivot chart. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var pivotOptions: js.UndefOr[ChartPivotOptionsData] = js.undefined
+  
   /**
+    * Represents the plot area for the chart.
     *
-    * Represents the plotArea for the chart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var plotArea: js.UndefOr[ChartPlotAreaData] = js.undefined
+  
   /**
+    * Specifies the way columns or rows are used as data series on the chart.
     *
-    * Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var plotBy: js.UndefOr[ChartPlotBy | Rows | Columns] = js.undefined
+  
   /**
+    * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
     *
-    * True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var plotVisibleOnly: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents either a single series or collection of series in the chart.
     *
-    * Represents either a single series or collection of series in the chart. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var series: js.UndefOr[js.Array[ChartSeriesData]] = js.undefined
+  
   /**
+    * Specifies a chart series name level enumeration constant, referring to the level of the source series names.
     *
-    * Returns or sets a ChartSeriesNameLevel enumeration constant referring to
-    the level of where the series names are being sourced from. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var seriesNameLevel: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies whether to display all field buttons on a PivotChart.
     *
-    * Represents whether to display all field buttons on a PivotChart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showAllFieldButtons: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
-    * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
-    If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
+    * Specifies whether to show the data labels when the value is greater than the maximum value on the value axis.
+    If the value axis becomes smaller than the size of the data points, you can use this property to set whether to show the data labels.
     This property applies to 2-D charts only.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var showDataLabelsOverMaximum: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the chart style for the chart.
     *
-    * Returns or sets the chart style for the chart. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var style: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
     *
-    * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var title: js.UndefOr[ChartTitleData] = js.undefined
+  
   /**
+    * Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
     *
-    * Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var top: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the width, in points, of the chart object.
     *
-    * Represents the width, in points, of the chart object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object ChartData {
-  @scala.inline
-  def apply(
-    axes: ChartAxesData = null,
-    categoryLabelLevel: Int | Double = null,
-    chartType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84 */ js.Any = null,
-    dataLabels: ChartDataLabelsData = null,
-    displayBlanksAs: ChartDisplayBlanksAs | NotPlotted | Zero | Interplotted = null,
-    format: ChartAreaFormatData = null,
-    height: Int | Double = null,
-    id: String = null,
-    left: Int | Double = null,
-    legend: ChartLegendData = null,
-    name: String = null,
-    pivotOptions: ChartPivotOptionsData = null,
-    plotArea: ChartPlotAreaData = null,
-    plotBy: ChartPlotBy | Rows | Columns = null,
-    plotVisibleOnly: js.UndefOr[Boolean] = js.undefined,
-    series: js.Array[ChartSeriesData] = null,
-    seriesNameLevel: Int | Double = null,
-    showAllFieldButtons: js.UndefOr[Boolean] = js.undefined,
-    showDataLabelsOverMaximum: js.UndefOr[Boolean] = js.undefined,
-    style: Int | Double = null,
-    title: ChartTitleData = null,
-    top: Int | Double = null,
-    width: Int | Double = null
-  ): ChartData = {
+  
+  inline def apply(): ChartData = {
     val __obj = js.Dynamic.literal()
-    if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
-    if (categoryLabelLevel != null) __obj.updateDynamic("categoryLabelLevel")(categoryLabelLevel.asInstanceOf[js.Any])
-    if (chartType != null) __obj.updateDynamic("chartType")(chartType.asInstanceOf[js.Any])
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (displayBlanksAs != null) __obj.updateDynamic("displayBlanksAs")(displayBlanksAs.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pivotOptions != null) __obj.updateDynamic("pivotOptions")(pivotOptions.asInstanceOf[js.Any])
-    if (plotArea != null) __obj.updateDynamic("plotArea")(plotArea.asInstanceOf[js.Any])
-    if (plotBy != null) __obj.updateDynamic("plotBy")(plotBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(plotVisibleOnly)) __obj.updateDynamic("plotVisibleOnly")(plotVisibleOnly.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (seriesNameLevel != null) __obj.updateDynamic("seriesNameLevel")(seriesNameLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAllFieldButtons)) __obj.updateDynamic("showAllFieldButtons")(showAllFieldButtons.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDataLabelsOverMaximum)) __obj.updateDynamic("showDataLabelsOverMaximum")(showDataLabelsOverMaximum.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartData]
   }
+  
+  extension [Self <: ChartData](x: Self) {
+    
+    inline def setAxes(value: ChartAxesData): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+    
+    inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+    
+    inline def setCategoryLabelLevel(value: Double): Self = StObject.set(x, "categoryLabelLevel", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryLabelLevelUndefined: Self = StObject.set(x, "categoryLabelLevel", js.undefined)
+    
+    inline def setChartType(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84, starting with typingsJapgolly.officeJs.Excel.ChartType, typingsJapgolly.officeJs.officeJsStrings.Invalid, typingsJapgolly.officeJs.officeJsStrings.ColumnClustered */ Any
+    ): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
+    
+    inline def setChartTypeUndefined: Self = StObject.set(x, "chartType", js.undefined)
+    
+    inline def setDataLabels(value: ChartDataLabelsData): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
+    
+    inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
+    
+    inline def setDisplayBlanksAs(value: ChartDisplayBlanksAs | NotPlotted | Zero | Interplotted): Self = StObject.set(x, "displayBlanksAs", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayBlanksAsUndefined: Self = StObject.set(x, "displayBlanksAs", js.undefined)
+    
+    inline def setFormat(value: ChartAreaFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setLegend(value: ChartLegendData): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPivotOptions(value: ChartPivotOptionsData): Self = StObject.set(x, "pivotOptions", value.asInstanceOf[js.Any])
+    
+    inline def setPivotOptionsUndefined: Self = StObject.set(x, "pivotOptions", js.undefined)
+    
+    inline def setPlotArea(value: ChartPlotAreaData): Self = StObject.set(x, "plotArea", value.asInstanceOf[js.Any])
+    
+    inline def setPlotAreaUndefined: Self = StObject.set(x, "plotArea", js.undefined)
+    
+    inline def setPlotBy(value: ChartPlotBy | Rows | Columns): Self = StObject.set(x, "plotBy", value.asInstanceOf[js.Any])
+    
+    inline def setPlotByUndefined: Self = StObject.set(x, "plotBy", js.undefined)
+    
+    inline def setPlotVisibleOnly(value: Boolean): Self = StObject.set(x, "plotVisibleOnly", value.asInstanceOf[js.Any])
+    
+    inline def setPlotVisibleOnlyUndefined: Self = StObject.set(x, "plotVisibleOnly", js.undefined)
+    
+    inline def setSeries(value: js.Array[ChartSeriesData]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesNameLevel(value: Double): Self = StObject.set(x, "seriesNameLevel", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesNameLevelUndefined: Self = StObject.set(x, "seriesNameLevel", js.undefined)
+    
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    
+    inline def setSeriesVarargs(value: ChartSeriesData*): Self = StObject.set(x, "series", js.Array(value*))
+    
+    inline def setShowAllFieldButtons(value: Boolean): Self = StObject.set(x, "showAllFieldButtons", value.asInstanceOf[js.Any])
+    
+    inline def setShowAllFieldButtonsUndefined: Self = StObject.set(x, "showAllFieldButtons", js.undefined)
+    
+    inline def setShowDataLabelsOverMaximum(value: Boolean): Self = StObject.set(x, "showDataLabelsOverMaximum", value.asInstanceOf[js.Any])
+    
+    inline def setShowDataLabelsOverMaximumUndefined: Self = StObject.set(x, "showDataLabelsOverMaximum", js.undefined)
+    
+    inline def setStyle(value: Double): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTitle(value: ChartTitleData): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

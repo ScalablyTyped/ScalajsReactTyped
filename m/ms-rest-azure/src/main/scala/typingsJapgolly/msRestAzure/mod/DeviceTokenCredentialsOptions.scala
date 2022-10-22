@@ -1,38 +1,29 @@
 package typingsJapgolly.msRestAzure.mod
 
-import typingsJapgolly.msRestAzure.msRestAzureStrings.batch
-import typingsJapgolly.msRestAzure.msRestAzureStrings.graph
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceTokenCredentialsOptions extends LoginWithUsernamePasswordOptions {
+trait DeviceTokenCredentialsOptions
+  extends StObject
+     with LoginWithUsernamePasswordOptions {
+  
   /**
     * The user name for account in the form: 'user@example.com'. Default value is 'user@example.com'.
     */
   var username: js.UndefOr[String] = js.undefined
 }
-
 object DeviceTokenCredentialsOptions {
-  @scala.inline
-  def apply(
-    authorizationScheme: String = null,
-    clientId: String = null,
-    domain: String = null,
-    environment: AzureEnvironment = null,
-    tokenAudience: graph | batch | String = null,
-    tokenCache: js.Any = null,
-    username: String = null
-  ): DeviceTokenCredentialsOptions = {
+  
+  inline def apply(): DeviceTokenCredentialsOptions = {
     val __obj = js.Dynamic.literal()
-    if (authorizationScheme != null) __obj.updateDynamic("authorizationScheme")(authorizationScheme.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (tokenAudience != null) __obj.updateDynamic("tokenAudience")(tokenAudience.asInstanceOf[js.Any])
-    if (tokenCache != null) __obj.updateDynamic("tokenCache")(tokenCache.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceTokenCredentialsOptions]
   }
+  
+  extension [Self <: DeviceTokenCredentialsOptions](x: Self) {
+    
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+  }
 }
-

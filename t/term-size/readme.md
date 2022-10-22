@@ -1,7 +1,7 @@
 
 # Scala.js typings for term-size
 
-Typings are for version 2.2.0
+Typings are for version 3.0.2
 
 ## Library description:
 Reliably get the terminal window size (columns & rows)
@@ -10,10 +10,10 @@ Reliably get the terminal window size (columns & rows)
 | ------------------ | :-------------: |
 | Full name          | term-size |
 | Keywords           | terminal, size, console, window, width, height, columns, rows, lines, tty, redirected |
-| # releases         | 2 |
-| # dependents       | 57 |
-| # downloads        | 185267720 |
-| # stars            | 2 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 3.1366552E7 |
+| # stars            | 129.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/term-size#readme)

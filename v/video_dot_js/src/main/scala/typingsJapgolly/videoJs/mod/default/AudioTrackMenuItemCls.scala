@@ -1,14 +1,17 @@
 package typingsJapgolly.videoJs.mod.default
 
+import typingsJapgolly.videoJs.mod.videojs.AudioTrackMenuItem
 import typingsJapgolly.videoJs.mod.videojs.AudioTrackMenuItemOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "AudioTrackMenuItem")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js", "default.AudioTrackMenuItem")
 @js.native
-class AudioTrackMenuItemCls protected ()
-  extends typingsJapgolly.videoJs.mod.videojs.AudioTrackMenuItem {
+open class AudioTrackMenuItemCls protected ()
+  extends StObject
+     with AudioTrackMenuItem {
   /**
     * Creates an instance of this class.
     *
@@ -21,4 +24,3 @@ class AudioTrackMenuItemCls protected ()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player) = this()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player, options: AudioTrackMenuItemOptions) = this()
 }
-

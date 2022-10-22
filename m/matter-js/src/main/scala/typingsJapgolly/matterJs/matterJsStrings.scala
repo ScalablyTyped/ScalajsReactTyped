@@ -1,104 +1,96 @@
 package typingsJapgolly.matterJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matterJsStrings {
-  @js.native
-  sealed trait afterAdd extends js.Object
   
   @js.native
-  sealed trait afterRemove extends js.Object
+  sealed trait afterAdd extends StObject
+  inline def afterAdd: afterAdd = "afterAdd".asInstanceOf[afterAdd]
   
   @js.native
-  sealed trait afterRender extends js.Object
+  sealed trait afterRemove extends StObject
+  inline def afterRemove: afterRemove = "afterRemove".asInstanceOf[afterRemove]
   
   @js.native
-  sealed trait afterTick extends js.Object
+  sealed trait afterRender extends StObject
+  inline def afterRender: afterRender = "afterRender".asInstanceOf[afterRender]
   
   @js.native
-  sealed trait afterUpdate extends js.Object
+  sealed trait afterTick extends StObject
+  inline def afterTick: afterTick = "afterTick".asInstanceOf[afterTick]
   
   @js.native
-  sealed trait beforeAdd extends js.Object
+  sealed trait afterUpdate extends StObject
+  inline def afterUpdate: afterUpdate = "afterUpdate".asInstanceOf[afterUpdate]
   
   @js.native
-  sealed trait beforeRemove extends js.Object
+  sealed trait beforeAdd extends StObject
+  inline def beforeAdd: beforeAdd = "beforeAdd".asInstanceOf[beforeAdd]
   
   @js.native
-  sealed trait beforeRender extends js.Object
+  sealed trait beforeRemove extends StObject
+  inline def beforeRemove: beforeRemove = "beforeRemove".asInstanceOf[beforeRemove]
   
   @js.native
-  sealed trait beforeTick extends js.Object
+  sealed trait beforeRender extends StObject
+  inline def beforeRender: beforeRender = "beforeRender".asInstanceOf[beforeRender]
   
   @js.native
-  sealed trait beforeUpdate extends js.Object
+  sealed trait beforeTick extends StObject
+  inline def beforeTick: beforeTick = "beforeTick".asInstanceOf[beforeTick]
   
   @js.native
-  sealed trait collisionActive extends js.Object
+  sealed trait beforeUpdate extends StObject
+  inline def beforeUpdate: beforeUpdate = "beforeUpdate".asInstanceOf[beforeUpdate]
   
   @js.native
-  sealed trait collisionEnd extends js.Object
+  sealed trait collisionActive extends StObject
+  inline def collisionActive: collisionActive = "collisionActive".asInstanceOf[collisionActive]
   
   @js.native
-  sealed trait collisionStart extends js.Object
+  sealed trait collisionEnd extends StObject
+  inline def collisionEnd: collisionEnd = "collisionEnd".asInstanceOf[collisionEnd]
   
   @js.native
-  sealed trait mousedown extends js.Object
+  sealed trait collisionStart extends StObject
+  inline def collisionStart: collisionStart = "collisionStart".asInstanceOf[collisionStart]
   
   @js.native
-  sealed trait mousemove extends js.Object
+  sealed trait line extends StObject
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait mouseup extends js.Object
+  sealed trait mousedown extends StObject
+  inline def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   
   @js.native
-  sealed trait sleepEnd extends js.Object
+  sealed trait mousemove extends StObject
+  inline def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
   
   @js.native
-  sealed trait sleepStart extends js.Object
+  sealed trait mouseup extends StObject
+  inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   
   @js.native
-  sealed trait tick extends js.Object
+  sealed trait pin extends StObject
+  inline def pin: pin = "pin".asInstanceOf[pin]
   
-  @scala.inline
-  def afterAdd: afterAdd = "afterAdd".asInstanceOf[afterAdd]
-  @scala.inline
-  def afterRemove: afterRemove = "afterRemove".asInstanceOf[afterRemove]
-  @scala.inline
-  def afterRender: afterRender = "afterRender".asInstanceOf[afterRender]
-  @scala.inline
-  def afterTick: afterTick = "afterTick".asInstanceOf[afterTick]
-  @scala.inline
-  def afterUpdate: afterUpdate = "afterUpdate".asInstanceOf[afterUpdate]
-  @scala.inline
-  def beforeAdd: beforeAdd = "beforeAdd".asInstanceOf[beforeAdd]
-  @scala.inline
-  def beforeRemove: beforeRemove = "beforeRemove".asInstanceOf[beforeRemove]
-  @scala.inline
-  def beforeRender: beforeRender = "beforeRender".asInstanceOf[beforeRender]
-  @scala.inline
-  def beforeTick: beforeTick = "beforeTick".asInstanceOf[beforeTick]
-  @scala.inline
-  def beforeUpdate: beforeUpdate = "beforeUpdate".asInstanceOf[beforeUpdate]
-  @scala.inline
-  def collisionActive: collisionActive = "collisionActive".asInstanceOf[collisionActive]
-  @scala.inline
-  def collisionEnd: collisionEnd = "collisionEnd".asInstanceOf[collisionEnd]
-  @scala.inline
-  def collisionStart: collisionStart = "collisionStart".asInstanceOf[collisionStart]
-  @scala.inline
-  def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
-  @scala.inline
-  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
-  @scala.inline
-  def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
-  @scala.inline
-  def sleepEnd: sleepEnd = "sleepEnd".asInstanceOf[sleepEnd]
-  @scala.inline
-  def sleepStart: sleepStart = "sleepStart".asInstanceOf[sleepStart]
-  @scala.inline
-  def tick: tick = "tick".asInstanceOf[tick]
+  @js.native
+  sealed trait sleepEnd extends StObject
+  inline def sleepEnd: sleepEnd = "sleepEnd".asInstanceOf[sleepEnd]
+  
+  @js.native
+  sealed trait sleepStart extends StObject
+  inline def sleepStart: sleepStart = "sleepStart".asInstanceOf[sleepStart]
+  
+  @js.native
+  sealed trait spring extends StObject
+  inline def spring: spring = "spring".asInstanceOf[spring]
+  
+  @js.native
+  sealed trait tick extends StObject
+  inline def tick: tick = "tick".asInstanceOf[tick]
 }
-

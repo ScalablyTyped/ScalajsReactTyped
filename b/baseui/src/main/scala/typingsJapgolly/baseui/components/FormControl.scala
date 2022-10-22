@@ -1,55 +1,89 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.formControlMod.FormControlOverrides
-import typingsJapgolly.baseui.formControlMod.FormControlProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.anon.Error
+import typingsJapgolly.baseui.formControlTypesMod.FormControlOverrides
+import typingsJapgolly.baseui.formControlTypesMod.FormControlProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FormControl {
-  def apply(
-    caption: VdomNode = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    error: Boolean | Node = null,
-    label: VdomNode = null,
-    overrides: FormControlOverrides = null,
-    positive: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    FormControlProps, 
-    typingsJapgolly.baseui.formControlMod.FormControl, 
-    Unit, 
-    FormControlProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (caption != null) __obj.updateDynamic("caption")(caption.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.rawNode.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (positive != null) __obj.updateDynamic("positive")(positive.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.formControlMod.FormControlProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.formControlMod.FormControl](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.formControlMod.FormControlProps])(children: _*)
-  }
   @JSImport("baseui/form-control", "FormControl")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.formControlMod.FormControl] {
+    
+    inline def caption(value: Node | (js.Function1[/* props */ js.Object, Node])): this.type = set("caption", value.asInstanceOf[js.Any])
+    
+    inline def captionFunction1(value: /* props */ js.Object => Node): this.type = set("caption", js.Any.fromFunction1(value))
+    
+    inline def captionNull: this.type = set("caption", null)
+    
+    inline def captionVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("caption", js.Array(value*))
+    
+    inline def captionVdomElement(value: VdomElement): this.type = set("caption", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def counter(value: Boolean | Error): this.type = set("counter", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def error(value: Node | (js.Function1[/* props */ js.Object, Node])): this.type = set("error", value.asInstanceOf[js.Any])
+    
+    inline def errorFunction1(value: /* props */ js.Object => Node): this.type = set("error", js.Any.fromFunction1(value))
+    
+    inline def errorNull: this.type = set("error", null)
+    
+    inline def errorVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("error", js.Array(value*))
+    
+    inline def errorVdomElement(value: VdomElement): this.type = set("error", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def htmlFor(value: String): this.type = set("htmlFor", value.asInstanceOf[js.Any])
+    
+    inline def label(value: Node | (js.Function1[/* props */ js.Object, Node])): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def labelEndEnhancer(value: Node | (js.Function1[/* props */ js.Object, Node])): this.type = set("labelEndEnhancer", value.asInstanceOf[js.Any])
+    
+    inline def labelEndEnhancerFunction1(value: /* props */ js.Object => Node): this.type = set("labelEndEnhancer", js.Any.fromFunction1(value))
+    
+    inline def labelEndEnhancerNull: this.type = set("labelEndEnhancer", null)
+    
+    inline def labelEndEnhancerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("labelEndEnhancer", js.Array(value*))
+    
+    inline def labelEndEnhancerVdomElement(value: VdomElement): this.type = set("labelEndEnhancer", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def labelFunction1(value: /* props */ js.Object => Node): this.type = set("label", js.Any.fromFunction1(value))
+    
+    inline def labelNull: this.type = set("label", null)
+    
+    inline def labelVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("label", js.Array(value*))
+    
+    inline def labelVdomElement(value: VdomElement): this.type = set("label", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def overrides(value: FormControlOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def positive(value: Node | (js.Function1[/* props */ js.Object, Node])): this.type = set("positive", value.asInstanceOf[js.Any])
+    
+    inline def positiveFunction1(value: /* props */ js.Object => Node): this.type = set("positive", js.Any.fromFunction1(value))
+    
+    inline def positiveNull: this.type = set("positive", null)
+    
+    inline def positiveVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("positive", js.Array(value*))
+    
+    inline def positiveVdomElement(value: VdomElement): this.type = set("positive", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: FormControl.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: FormControlProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

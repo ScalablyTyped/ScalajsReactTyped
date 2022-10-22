@@ -1,31 +1,28 @@
 package typingsJapgolly.xmldsigjs.mod
 
-import typingsJapgolly.std.Crypto_
-import typingsJapgolly.xmldsigjs.applicationMod.CryptoEx
+import org.scalajs.dom.Crypto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs", "Application")
 @js.native
-class Application ()
-  extends typingsJapgolly.xmldsigjs.applicationMod.Application
-
+open class Application ()
+  extends typingsJapgolly.xmldsigjs.buildTypesApplicationMod.Application
 /* static members */
-@JSImport("xmldsigjs", "Application")
-@js.native
-object Application extends js.Object {
-  /**
-    * Gets the crypto module from the Application
-    */
-  def crypto(): CryptoEx = js.native
-  def isNodePlugin(): Boolean = js.native
+object Application {
+  
+  @JSImport("xmldsigjs", "Application")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def isNodePlugin(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodePlugin")().asInstanceOf[Boolean]
+  
   /**
     * Sets crypto engine for the current Application
     * @param  {string} name
     * @param  {Crypto} crypto
     * @returns void
     */
-  def setEngine(name: String, crypto: Crypto_): Unit = js.native
+  inline def setEngine(name: String, crypto: Crypto): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEngine")(name.asInstanceOf[js.Any], crypto.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

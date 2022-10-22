@@ -1,27 +1,40 @@
 package typingsJapgolly.reactNative.mod
 
 import typingsJapgolly.reactNative.reactNativeStrings.RippleAndroid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait RippleBackgroundPropType
-  extends BaseBackgroundPropType
+  extends StObject
+     with BaseBackgroundPropType
      with BackgroundPropType {
-  var borderless: js.UndefOr[Boolean] = js.undefined
-  var color: js.UndefOr[Double] = js.undefined
+  
+  var borderless: Boolean
+  
+  var color: js.UndefOr[Double | Null] = js.undefined
+  
   @JSName("type")
   var type_RippleBackgroundPropType: RippleAndroid
 }
-
 object RippleBackgroundPropType {
-  @scala.inline
-  def apply(`type`: RippleAndroid, borderless: js.UndefOr[Boolean] = js.undefined, color: Int | Double = null): RippleBackgroundPropType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+  
+  inline def apply(borderless: Boolean): RippleBackgroundPropType = {
+    val __obj = js.Dynamic.literal(borderless = borderless.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RippleAndroid")
     __obj.asInstanceOf[RippleBackgroundPropType]
   }
+  
+  extension [Self <: RippleBackgroundPropType](x: Self) {
+    
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    
+    inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorNull: Self = StObject.set(x, "color", null)
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setType(value: RippleAndroid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

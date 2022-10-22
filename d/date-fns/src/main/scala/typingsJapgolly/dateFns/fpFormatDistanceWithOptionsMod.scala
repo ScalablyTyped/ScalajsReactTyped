@@ -1,16 +1,22 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.dateFns.anon.AddSuffixIncludeSeconds
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/fp/formatDistanceWithOptions", JSImport.Namespace)
-@js.native
-object fpFormatDistanceWithOptionsMod extends js.Object {
-  @js.native
-  object default extends TopLevel[CurriedFn3[AnonAddSuffixIncludeSeconds, Date | Double, Date | Double, String]]
+object fpFormatDistanceWithOptionsMod {
   
+  object default extends Shortcut {
+    
+    @JSImport("date-fns/fp/formatDistanceWithOptions", JSImport.Default)
+    @js.native
+    val ^ : CurriedFn3[AddSuffixIncludeSeconds, js.Date | Double, js.Date | Double, String] = js.native
+    
+    type _To = CurriedFn3[AddSuffixIncludeSeconds, js.Date | Double, js.Date | Double, String]
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: CurriedFn3[AddSuffixIncludeSeconds, js.Date | Double, js.Date | Double, String] = ^
+  }
 }
-

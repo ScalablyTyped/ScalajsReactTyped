@@ -1,11 +1,12 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "WebGLClipping")
 @js.native
-class WebGLClipping ()
-  extends typingsJapgolly.three.webGLClippingMod.WebGLClipping
-
+open class WebGLClipping protected ()
+  extends typingsJapgolly.three.srcThreeMod.WebGLClipping {
+  def this(properties: typingsJapgolly.three.srcRenderersWebglWebGLPropertiesMod.WebGLProperties) = this()
+}

@@ -1,47 +1,62 @@
 package typingsJapgolly.winrtUwp.Windows.Networking
 
 import typingsJapgolly.winrtUwp.Windows.Networking.Connectivity.IPInformation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a hostname or an IP address. */
-@JSGlobal("Windows.Networking.HostName")
-@js.native
-class HostName protected () extends js.Object {
-  /**
-    * Creates a new HostName object from a string that contains a hostname or an IP address.
-    * @param hostName A string that contains a hostname or an IP address.
-    */
-  def this(hostName: String) = this()
+trait HostName extends StObject {
+  
   /** Gets the canonical name for the HostName object. */
-  var canonicalName: String = js.native
+  var canonicalName: String
+  
   /** Gets the display name for the HostName object. */
-  var displayName: String = js.native
+  var displayName: String
+  
   /** Gets the IPInformation object for a local IP address assigned to a HostName object. */
-  var ipInformation: IPInformation = js.native
-  /** Gets the original string used to construct the HostName object. */
-  var rawName: String = js.native
-  /** Gets the HostNameType of the HostName object. */
-  var `type`: HostNameType = js.native
+  var ipInformation: IPInformation
+  
   /**
     * Determines whether the specified HostName object has an equivalent value to the current HostName object.
     * @param hostName A HostName object that is compared with the current HostName.
     * @return A Boolean value that indicates whether the specified HostName object is equal to the current HostName object.
     */
-  def isEqual(hostName: HostName): Boolean = js.native
+  def isEqual(hostName: HostName): Boolean
+  
+  /** Gets the original string used to construct the HostName object. */
+  var rawName: String
+  
+  /** Gets the HostNameType of the HostName object. */
+  var `type`: HostNameType
 }
-
-/* static members */
-@JSGlobal("Windows.Networking.HostName")
-@js.native
-object HostName extends js.Object {
-  /**
-    * Compares two strings to determine if they represent the same hostname.
-    * @param value1 A hostname or IP address.
-    * @param value2 A hostname or IP address.
-    * @return The return value indicates the lexicographic relation of value1 to value2. If the two parameters represent the same canonical hostname, then zero is returned. If value1 is less than value2, the return value is less than zero. If value1 is greater than value2, the return vale is greater than zero.
-    */
-  def compare(value1: String, value2: String): Double = js.native
+object HostName {
+  
+  inline def apply(
+    canonicalName: String,
+    displayName: String,
+    ipInformation: IPInformation,
+    isEqual: HostName => Boolean,
+    rawName: String,
+    `type`: HostNameType
+  ): HostName = {
+    val __obj = js.Dynamic.literal(canonicalName = canonicalName.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], ipInformation = ipInformation.asInstanceOf[js.Any], isEqual = js.Any.fromFunction1(isEqual), rawName = rawName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HostName]
+  }
+  
+  extension [Self <: HostName](x: Self) {
+    
+    inline def setCanonicalName(value: String): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setIpInformation(value: IPInformation): Self = StObject.set(x, "ipInformation", value.asInstanceOf[js.Any])
+    
+    inline def setIsEqual(value: HostName => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    
+    inline def setRawName(value: String): Self = StObject.set(x, "rawName", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: HostNameType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

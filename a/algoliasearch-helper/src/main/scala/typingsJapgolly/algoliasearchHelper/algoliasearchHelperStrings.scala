@@ -1,215 +1,217 @@
 package typingsJapgolly.algoliasearchHelper
 
 import typingsJapgolly.algoliasearchHelper.mod.SearchParameters.Operator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object algoliasearchHelperStrings {
-  @js.native
-  sealed trait Equalssign extends Operator
   
   @js.native
-  sealed trait ExclamationmarkEqualssign extends Operator
+  sealed trait Equalssign
+    extends StObject
+       with Operator
+  inline def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait Greaterthansign extends Operator
+  sealed trait ExclamationmarkEqualssign
+    extends StObject
+       with Operator
+  inline def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends Operator
+  sealed trait Greaterthansign
+    extends StObject
+       with Operator
+  inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait Lessthansign extends Operator
+  sealed trait GreaterthansignEqualssign
+    extends StObject
+       with Operator
+  inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait LessthansignEqualssign extends Operator
+  sealed trait Lessthansign
+    extends StObject
+       with Operator
+  inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait ManagedParameters extends js.Object
+  sealed trait LessthansignEqualssign
+    extends StObject
+       with Operator
+  inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
-  sealed trait allOptional extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait attribute extends js.Object
+  sealed trait allOptional extends StObject
+  inline def allOptional: allOptional = "allOptional".asInstanceOf[allOptional]
   
   @js.native
-  sealed trait change extends js.Object
+  sealed trait alpha extends StObject
+  inline def alpha: alpha = "alpha".asInstanceOf[alpha]
   
   @js.native
-  sealed trait disjunctive extends js.Object
+  sealed trait attribute extends StObject
+  inline def attribute: attribute = "attribute".asInstanceOf[attribute]
   
   @js.native
-  sealed trait disjunctiveFacets extends js.Object
+  sealed trait change extends StObject
+  inline def change: change = "change".asInstanceOf[change]
   
   @js.native
-  sealed trait disjunctiveFacetsRefinements extends js.Object
+  sealed trait count extends StObject
+  inline def count: count = "count".asInstanceOf[count]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait disjunctive extends StObject
+  inline def disjunctive: disjunctive = "disjunctive".asInstanceOf[disjunctive]
   
   @js.native
-  sealed trait exclude extends js.Object
+  sealed trait disjunctiveFacets extends StObject
+  inline def disjunctiveFacets: disjunctiveFacets = "disjunctiveFacets".asInstanceOf[disjunctiveFacets]
   
   @js.native
-  sealed trait facet extends js.Object
+  sealed trait disjunctiveFacetsRefinements extends StObject
+  inline def disjunctiveFacetsRefinements: disjunctiveFacetsRefinements = "disjunctiveFacetsRefinements".asInstanceOf[disjunctiveFacetsRefinements]
   
   @js.native
-  sealed trait facets extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait facetsExcludes extends js.Object
+  sealed trait exclude extends StObject
+  inline def exclude: exclude = "exclude".asInstanceOf[exclude]
   
   @js.native
-  sealed trait facetsRefinements extends js.Object
+  sealed trait facet extends StObject
+  inline def facet: facet = "facet".asInstanceOf[facet]
   
   @js.native
-  sealed trait firstWords extends js.Object
+  sealed trait facets extends StObject
+  inline def facets: facets = "facets".asInstanceOf[facets]
   
   @js.native
-  sealed trait hierarchical extends js.Object
+  sealed trait facetsExcludes extends StObject
+  inline def facetsExcludes: facetsExcludes = "facetsExcludes".asInstanceOf[facetsExcludes]
   
   @js.native
-  sealed trait hierarchicalFacets extends js.Object
+  sealed trait facetsRefinements extends StObject
+  inline def facetsRefinements: facetsRefinements = "facetsRefinements".asInstanceOf[facetsRefinements]
   
   @js.native
-  sealed trait hierarchicalFacetsRefinements extends js.Object
+  sealed trait firstWords extends StObject
+  inline def firstWords: firstWords = "firstWords".asInstanceOf[firstWords]
   
   @js.native
-  sealed trait ignorePlurals extends js.Object
+  sealed trait hidden extends StObject
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
-  sealed trait index extends js.Object
+  sealed trait hierarchical extends StObject
+  inline def hierarchical: hierarchical = "hierarchical".asInstanceOf[hierarchical]
   
   @js.native
-  sealed trait lastWords extends js.Object
+  sealed trait hierarchicalFacets extends StObject
+  inline def hierarchicalFacets: hierarchicalFacets = "hierarchicalFacets".asInstanceOf[hierarchicalFacets]
   
   @js.native
-  sealed trait multiWordsSynonym extends js.Object
+  sealed trait hierarchicalFacetsRefinements extends StObject
+  inline def hierarchicalFacetsRefinements: hierarchicalFacetsRefinements = "hierarchicalFacetsRefinements".asInstanceOf[hierarchicalFacetsRefinements]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait ignorePlurals extends StObject
+  inline def ignorePlurals: ignorePlurals = "ignorePlurals".asInstanceOf[ignorePlurals]
   
   @js.native
-  sealed trait numeric extends js.Object
+  sealed trait index extends StObject
+  inline def index: index = "index".asInstanceOf[index]
   
   @js.native
-  sealed trait numericRefinements extends js.Object
+  sealed trait lastWords extends StObject
+  inline def lastWords: lastWords = "lastWords".asInstanceOf[lastWords]
   
   @js.native
-  sealed trait prefixAll extends js.Object
+  sealed trait multiWordsSynonym extends StObject
+  inline def multiWordsSynonym: multiWordsSynonym = "multiWordsSynonym".asInstanceOf[multiWordsSynonym]
   
   @js.native
-  sealed trait prefixLast extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait prefixNone extends js.Object
+  sealed trait numeric extends StObject
+  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
-  sealed trait result extends js.Object
+  sealed trait numericRefinements extends StObject
+  inline def numericRefinements: numericRefinements = "numericRefinements".asInstanceOf[numericRefinements]
   
   @js.native
-  sealed trait search extends js.Object
+  sealed trait optionalFilters extends StObject
+  inline def optionalFilters: optionalFilters = "optionalFilters".asInstanceOf[optionalFilters]
   
   @js.native
-  sealed trait searchForFacetValues extends js.Object
+  sealed trait params extends StObject
+  inline def params: params = "params".asInstanceOf[params]
   
   @js.native
-  sealed trait searchOnce extends js.Object
+  sealed trait prefixAll extends StObject
+  inline def prefixAll: prefixAll = "prefixAll".asInstanceOf[prefixAll]
   
   @js.native
-  sealed trait searchQueueEmpty extends js.Object
+  sealed trait prefixLast extends StObject
+  inline def prefixLast: prefixLast = "prefixLast".asInstanceOf[prefixLast]
   
   @js.native
-  sealed trait singleWordSynonym extends js.Object
+  sealed trait prefixNone extends StObject
+  inline def prefixNone: prefixNone = "prefixNone".asInstanceOf[prefixNone]
   
   @js.native
-  sealed trait tagRefinements extends js.Object
+  sealed trait queryLanguages extends StObject
+  inline def queryLanguages: queryLanguages = "queryLanguages".asInstanceOf[queryLanguages]
   
   @js.native
-  sealed trait word extends js.Object
+  sealed trait relevancyStrictness extends StObject
+  inline def relevancyStrictness: relevancyStrictness = "relevancyStrictness".asInstanceOf[relevancyStrictness]
   
-  @scala.inline
-  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
-  @scala.inline
-  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
-  @scala.inline
-  def ManagedParameters: ManagedParameters = "ManagedParameters".asInstanceOf[ManagedParameters]
-  @scala.inline
-  def allOptional: allOptional = "allOptional".asInstanceOf[allOptional]
-  @scala.inline
-  def attribute: attribute = "attribute".asInstanceOf[attribute]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def disjunctive: disjunctive = "disjunctive".asInstanceOf[disjunctive]
-  @scala.inline
-  def disjunctiveFacets: disjunctiveFacets = "disjunctiveFacets".asInstanceOf[disjunctiveFacets]
-  @scala.inline
-  def disjunctiveFacetsRefinements: disjunctiveFacetsRefinements = "disjunctiveFacetsRefinements".asInstanceOf[disjunctiveFacetsRefinements]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def exclude: exclude = "exclude".asInstanceOf[exclude]
-  @scala.inline
-  def facet: facet = "facet".asInstanceOf[facet]
-  @scala.inline
-  def facets: facets = "facets".asInstanceOf[facets]
-  @scala.inline
-  def facetsExcludes: facetsExcludes = "facetsExcludes".asInstanceOf[facetsExcludes]
-  @scala.inline
-  def facetsRefinements: facetsRefinements = "facetsRefinements".asInstanceOf[facetsRefinements]
-  @scala.inline
-  def firstWords: firstWords = "firstWords".asInstanceOf[firstWords]
-  @scala.inline
-  def hierarchical: hierarchical = "hierarchical".asInstanceOf[hierarchical]
-  @scala.inline
-  def hierarchicalFacets: hierarchicalFacets = "hierarchicalFacets".asInstanceOf[hierarchicalFacets]
-  @scala.inline
-  def hierarchicalFacetsRefinements: hierarchicalFacetsRefinements = "hierarchicalFacetsRefinements".asInstanceOf[hierarchicalFacetsRefinements]
-  @scala.inline
-  def ignorePlurals: ignorePlurals = "ignorePlurals".asInstanceOf[ignorePlurals]
-  @scala.inline
-  def index: index = "index".asInstanceOf[index]
-  @scala.inline
-  def lastWords: lastWords = "lastWords".asInstanceOf[lastWords]
-  @scala.inline
-  def multiWordsSynonym: multiWordsSynonym = "multiWordsSynonym".asInstanceOf[multiWordsSynonym]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
-  @scala.inline
-  def numericRefinements: numericRefinements = "numericRefinements".asInstanceOf[numericRefinements]
-  @scala.inline
-  def prefixAll: prefixAll = "prefixAll".asInstanceOf[prefixAll]
-  @scala.inline
-  def prefixLast: prefixLast = "prefixLast".asInstanceOf[prefixLast]
-  @scala.inline
-  def prefixNone: prefixNone = "prefixNone".asInstanceOf[prefixNone]
-  @scala.inline
-  def result: result = "result".asInstanceOf[result]
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
-  @scala.inline
-  def searchForFacetValues: searchForFacetValues = "searchForFacetValues".asInstanceOf[searchForFacetValues]
-  @scala.inline
-  def searchOnce: searchOnce = "searchOnce".asInstanceOf[searchOnce]
-  @scala.inline
-  def searchQueueEmpty: searchQueueEmpty = "searchQueueEmpty".asInstanceOf[searchQueueEmpty]
-  @scala.inline
-  def singleWordSynonym: singleWordSynonym = "singleWordSynonym".asInstanceOf[singleWordSynonym]
-  @scala.inline
-  def tagRefinements: tagRefinements = "tagRefinements".asInstanceOf[tagRefinements]
-  @scala.inline
-  def word: word = "word".asInstanceOf[word]
+  @js.native
+  sealed trait result extends StObject
+  inline def result: result = "result".asInstanceOf[result]
+  
+  @js.native
+  sealed trait ruleContexts extends StObject
+  inline def ruleContexts: ruleContexts = "ruleContexts".asInstanceOf[ruleContexts]
+  
+  @js.native
+  sealed trait search extends StObject
+  inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
+  sealed trait searchForFacetValues extends StObject
+  inline def searchForFacetValues: searchForFacetValues = "searchForFacetValues".asInstanceOf[searchForFacetValues]
+  
+  @js.native
+  sealed trait searchOnce extends StObject
+  inline def searchOnce: searchOnce = "searchOnce".asInstanceOf[searchOnce]
+  
+  @js.native
+  sealed trait searchQueueEmpty extends StObject
+  inline def searchQueueEmpty: searchQueueEmpty = "searchQueueEmpty".asInstanceOf[searchQueueEmpty]
+  
+  @js.native
+  sealed trait singleWordSynonym extends StObject
+  inline def singleWordSynonym: singleWordSynonym = "singleWordSynonym".asInstanceOf[singleWordSynonym]
+  
+  @js.native
+  sealed trait tagRefinements extends StObject
+  inline def tagRefinements: tagRefinements = "tagRefinements".asInstanceOf[tagRefinements]
+  
+  @js.native
+  sealed trait word extends StObject
+  inline def word: word = "word".asInstanceOf[word]
 }
-

@@ -1,79 +1,64 @@
 package typingsJapgolly.jquerySimplepagination
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jquerySimplepaginationStrings {
-  @js.native
-  sealed trait destroy extends js.Object
   
   @js.native
-  sealed trait disable extends js.Object
+  sealed trait destroy extends StObject
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait drawPage extends js.Object
+  sealed trait disable extends StObject
+  inline def disable: disable = "disable".asInstanceOf[disable]
   
   @js.native
-  sealed trait enable extends js.Object
+  sealed trait drawPage extends StObject
+  inline def drawPage: drawPage = "drawPage".asInstanceOf[drawPage]
   
   @js.native
-  sealed trait getCurrentPage extends js.Object
+  sealed trait enable extends StObject
+  inline def enable: enable = "enable".asInstanceOf[enable]
   
   @js.native
-  sealed trait getItemsOnPage extends js.Object
+  sealed trait getCurrentPage extends StObject
+  inline def getCurrentPage: getCurrentPage = "getCurrentPage".asInstanceOf[getCurrentPage]
   
   @js.native
-  sealed trait getPagesCount extends js.Object
+  sealed trait getItemsOnPage extends StObject
+  inline def getItemsOnPage: getItemsOnPage = "getItemsOnPage".asInstanceOf[getItemsOnPage]
   
   @js.native
-  sealed trait nextPage extends js.Object
+  sealed trait getPagesCount extends StObject
+  inline def getPagesCount: getPagesCount = "getPagesCount".asInstanceOf[getPagesCount]
   
   @js.native
-  sealed trait prevPage extends js.Object
+  sealed trait nextPage extends StObject
+  inline def nextPage: nextPage = "nextPage".asInstanceOf[nextPage]
   
   @js.native
-  sealed trait redraw extends js.Object
+  sealed trait prevPage extends StObject
+  inline def prevPage: prevPage = "prevPage".asInstanceOf[prevPage]
   
   @js.native
-  sealed trait selectPage extends js.Object
+  sealed trait redraw extends StObject
+  inline def redraw: redraw = "redraw".asInstanceOf[redraw]
   
   @js.native
-  sealed trait setPagesCount extends js.Object
+  sealed trait selectPage extends StObject
+  inline def selectPage: selectPage = "selectPage".asInstanceOf[selectPage]
   
   @js.native
-  sealed trait updateItems extends js.Object
+  sealed trait setPagesCount extends StObject
+  inline def setPagesCount: setPagesCount = "setPagesCount".asInstanceOf[setPagesCount]
   
   @js.native
-  sealed trait updateItemsOnPage extends js.Object
+  sealed trait updateItems extends StObject
+  inline def updateItems: updateItems = "updateItems".asInstanceOf[updateItems]
   
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def disable: disable = "disable".asInstanceOf[disable]
-  @scala.inline
-  def drawPage: drawPage = "drawPage".asInstanceOf[drawPage]
-  @scala.inline
-  def enable: enable = "enable".asInstanceOf[enable]
-  @scala.inline
-  def getCurrentPage: getCurrentPage = "getCurrentPage".asInstanceOf[getCurrentPage]
-  @scala.inline
-  def getItemsOnPage: getItemsOnPage = "getItemsOnPage".asInstanceOf[getItemsOnPage]
-  @scala.inline
-  def getPagesCount: getPagesCount = "getPagesCount".asInstanceOf[getPagesCount]
-  @scala.inline
-  def nextPage: nextPage = "nextPage".asInstanceOf[nextPage]
-  @scala.inline
-  def prevPage: prevPage = "prevPage".asInstanceOf[prevPage]
-  @scala.inline
-  def redraw: redraw = "redraw".asInstanceOf[redraw]
-  @scala.inline
-  def selectPage: selectPage = "selectPage".asInstanceOf[selectPage]
-  @scala.inline
-  def setPagesCount: setPagesCount = "setPagesCount".asInstanceOf[setPagesCount]
-  @scala.inline
-  def updateItems: updateItems = "updateItems".asInstanceOf[updateItems]
-  @scala.inline
-  def updateItemsOnPage: updateItemsOnPage = "updateItemsOnPage".asInstanceOf[updateItemsOnPage]
+  @js.native
+  sealed trait updateItemsOnPage extends StObject
+  inline def updateItemsOnPage: updateItemsOnPage = "updateItemsOnPage".asInstanceOf[updateItemsOnPage]
 }
-

@@ -1,20 +1,22 @@
 package typingsJapgolly.phonegap
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SQLTransaction extends js.Object {
+trait SQLTransaction extends StObject {
+  
   def executeSql(sql: String): SQLResultSet
 }
-
 object SQLTransaction {
-  @scala.inline
-  def apply(executeSql: String => CallbackTo[SQLResultSet]): SQLTransaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("executeSql")(js.Any.fromFunction1((t0: java.lang.String) => executeSql(t0).runNow()))
+  
+  inline def apply(executeSql: String => SQLResultSet): SQLTransaction = {
+    val __obj = js.Dynamic.literal(executeSql = js.Any.fromFunction1(executeSql))
     __obj.asInstanceOf[SQLTransaction]
   }
+  
+  extension [Self <: SQLTransaction](x: Self) {
+    
+    inline def setExecuteSql(value: String => SQLResultSet): Self = StObject.set(x, "executeSql", js.Any.fromFunction1(value))
+  }
 }
-

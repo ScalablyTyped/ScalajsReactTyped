@@ -1,159 +1,106 @@
 package typingsJapgolly.sift
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.sift.siftNumbers.`-1`
-import typingsJapgolly.sift.siftNumbers.`0`
-import typingsJapgolly.sift.siftNumbers.`1`
-import typingsJapgolly.sift.siftStrings.g
-import typingsJapgolly.sift.siftStrings.i
-import typingsJapgolly.sift.siftStrings.m
-import typingsJapgolly.sift.siftStrings.u
-import typingsJapgolly.std.Partial
-import typingsJapgolly.std.RegExp
+import typingsJapgolly.sift.anon.PartialOptions
+import typingsJapgolly.sift.libCoreMod.Operation
+import typingsJapgolly.sift.libCoreMod.Options
+import typingsJapgolly.sift.libCoreMod.Query
+import typingsJapgolly.sift.libCoreMod.QueryOperation
+import typingsJapgolly.sift.libOperationsMod.$All
+import typingsJapgolly.sift.libOperationsMod.$And
+import typingsJapgolly.sift.libOperationsMod.$ElemMatch
+import typingsJapgolly.sift.libOperationsMod.$Exists
+import typingsJapgolly.sift.libOperationsMod.$In
+import typingsJapgolly.sift.libOperationsMod.$Ne
+import typingsJapgolly.sift.libOperationsMod.$Nin
+import typingsJapgolly.sift.libOperationsMod.$Nor
+import typingsJapgolly.sift.libOperationsMod.$Not
+import typingsJapgolly.sift.libOperationsMod.$Or
+import typingsJapgolly.sift.libUtilsMod.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sift", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  trait InternalQuery[T /* <: SupportedTypes */] extends Query[T]
+object mod {
   
+  @JSImport("sift", JSImport.Namespace)
   @js.native
-  trait Query[T /* <: SupportedTypes */] extends js.Object {
-    @JSName("$all")
-    var $all: js.UndefOr[
-        js.Array[
-          Partial[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-          ]
-        ]
-      ] = js.native
-    @JSName("$and")
-    var $and: js.UndefOr[
-        js.Array[
-          Partial[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-          ]
-        ]
-      ] = js.native
-    @JSName("$elemMatch")
-    var $elemMatch: js.UndefOr[ExternalQuery[T]] = js.native
-    @JSName("$eq")
-    var $eq: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-      ] = js.native
-    @JSName("$exists")
-    var $exists: js.UndefOr[Boolean] = js.native
-    @JSName("$gt")
-    var $gt: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-      ] = js.native
-    @JSName("$gte")
-    var $gte: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-      ] = js.native
-    @JSName("$in")
-    var $in: js.UndefOr[
-        js.Array[
-          Partial[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-          ]
-        ]
-      ] = js.native
-    @JSName("$lt")
-    var $lt: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-      ] = js.native
-    @JSName("$lte")
-    var $lte: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-      ] = js.native
-    @JSName("$mod")
-    var $mod: js.UndefOr[js.Array[Double]] = js.native
-    @JSName("$ne")
-    var $ne: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-      ] = js.native
-    @JSName("$nin")
-    var $nin: js.UndefOr[
-        js.Array[
-          Partial[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-          ]
-        ]
-      ] = js.native
-    @JSName("$nor")
-    var $nor: js.UndefOr[
-        js.Array[
-          Partial[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-          ]
-        ]
-      ] = js.native
-    @JSName("$not")
-    var $not: js.UndefOr[SiftQuery[T]] = js.native
-    @JSName("$options")
-    var $options: js.UndefOr[i | g | m | u] = js.native
-    @JSName("$or")
-    var $or: js.UndefOr[
-        js.Array[
-          Partial[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-          ]
-        ]
-      ] = js.native
-    @JSName("$regex")
-    var $regex: js.UndefOr[js.RegExp | String] = js.native
-    @JSName("$size")
-    var $size: js.UndefOr[Double] = js.native
-    @JSName("$type")
-    var $type: js.UndefOr[js.Any] = js.native
-    @JSName("$where")
-    var $where: js.UndefOr[String | WhereFn[T]] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[TItem, TSchema /* <: TItem */](query: Query[TSchema]): js.Function3[/* item */ Any, /* key */ js.UndefOr[Key], /* owner */ js.UndefOr[Any], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* item */ Any, /* key */ js.UndefOr[Key], /* owner */ js.UndefOr[Any], Boolean]]
+  inline def default[TItem, TSchema /* <: TItem */](query: Query[TSchema], options: PartialOptions): js.Function3[/* item */ Any, /* key */ js.UndefOr[Key], /* owner */ js.UndefOr[Any], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* item */ Any, /* key */ js.UndefOr[Key], /* owner */ js.UndefOr[Any], Boolean]]
+  
+  @JSImport("sift", "$Size")
+  @js.native
+  open class $Size protected ()
+    extends typingsJapgolly.sift.libMod.$Size {
+    def this(params: Any, owneryQuery: Any, options: Options) = this()
+    def this(params: Any, owneryQuery: Any, options: Options, name: String) = this()
   }
   
+  @JSImport("sift", "EqualsOperation")
   @js.native
-  trait Sift extends js.Object {
-    def apply[T /* <: js.Array[SupportedTypes] */](query: SiftQuery[T]): FilterFn = js.native
-    def apply[T](query: SiftQuery[_], rawSelector: js.Function1[/* item */ T, Boolean]): Exec = js.native
-    def apply[T /* <: SupportedTypes */](query: SiftQuery[T], target: T): T = js.native
-    def apply[T /* <: SupportedTypes */](query: SiftQuery[T], target: T, rawSelector: js.Any): T = js.native
-    def apply[T /* <: SupportedTypes */](query: RegExp, target: T): T = js.native
-    def apply[T /* <: SupportedTypes */](query: RegExp, target: T, rawSelector: js.Any): T = js.native
-    def compare[T, K](a: T, b: K): `0` | `-1` | `1` = js.native
-    def indexOf[T /* <: SupportedTypes */](query: SiftQuery[T], target: T): Double = js.native
-    def indexOf[T /* <: SupportedTypes */](query: SiftQuery[T], target: T, rawSelector: js.Any): Double = js.native
-    def use[K](plugin: PluginDefinition[K]): Unit = js.native
-    def use[K](plugin: PluginFunction[K]): Unit = js.native
+  open class EqualsOperation[TParam] protected ()
+    extends typingsJapgolly.sift.libMod.EqualsOperation[TParam] {
+    def this(params: TParam, owneryQuery: Any, options: Options) = this()
+    def this(params: TParam, owneryQuery: Any, options: Options, name: String) = this()
   }
   
-  val default: Sift = js.native
-  type ElemMatch[T /* <: StringDictionary[js.Array[_]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? sift.sift.SiftQuery<T[P]>}
-    */ typingsJapgolly.sift.siftStrings.ElemMatch with T
-  type Exec = js.Function1[/* array */ SupportedTypes, SupportedTypes]
-  type ExternalQuery[T /* <: SupportedTypes */] = ElemMatch[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-  ]
-  type FilterFn = js.Function3[
-    /* value */ js.Any, 
-    /* index */ js.UndefOr[Double], 
-    /* array */ js.UndefOr[js.Array[js.Any]], 
-    Boolean
-  ]
-  type KeyOrValue[T /* <: SupportedTypes */] = T with (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any)
-  type PluginDefinition[T] = StringDictionary[js.Function2[/* a */ T, /* b */ T, Boolean | Double]]
-  type PluginFunction[T] = js.Function1[/* sift */ Sift, PluginDefinition[T]]
-  type SiftQuery[T /* <: SupportedTypes */] = ExternalQuery[T] with InternalQuery[T]
-  type SupportedTypes = js.Array[String | StringDictionary[js.Any] | Double | Null | js.Any]
-  type WhereFn[T /* <: SupportedTypes */] = js.ThisFunction3[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ /* this */ js.Any, 
-    /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ /* value */ js.Any, 
-    /* index */ Double, 
-    /* array */ T, 
-    Boolean
-  ]
+  inline def all(params: js.Array[Query[Any]], ownerQuery: Query[Any], options: Options, name: String): $All = (^.asInstanceOf[js.Dynamic].applyDynamic("$all")(params.asInstanceOf[js.Any], ownerQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$All]
+  
+  inline def and(params: js.Array[Query[Any]], ownerQuery: Query[Any], options: Options, name: String): $And = (^.asInstanceOf[js.Dynamic].applyDynamic("$and")(params.asInstanceOf[js.Any], ownerQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$And]
+  
+  inline def createDefaultQueryOperation[TItem, TSchema /* <: TItem */](query: Query[TSchema], ownerQuery: Any): QueryOperation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultQueryOperation")(query.asInstanceOf[js.Any], ownerQuery.asInstanceOf[js.Any])).asInstanceOf[QueryOperation[Any]]
+  inline def createDefaultQueryOperation[TItem, TSchema /* <: TItem */](query: Query[TSchema], ownerQuery: Any, hasCompareOperations: PartialOptions): QueryOperation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultQueryOperation")(query.asInstanceOf[js.Any], ownerQuery.asInstanceOf[js.Any], hasCompareOperations.asInstanceOf[js.Any])).asInstanceOf[QueryOperation[Any]]
+  
+  inline def createEqualsOperation(params: Any, owneryQuery: Any, options: Options): typingsJapgolly.sift.libCoreMod.EqualsOperation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEqualsOperation")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.sift.libCoreMod.EqualsOperation[Any]]
+  
+  inline def createOperationTester[TItem](operation: Operation[TItem]): js.Function3[/* item */ TItem, /* key */ js.UndefOr[Key], /* owner */ js.UndefOr[Any], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOperationTester")(operation.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* item */ TItem, /* key */ js.UndefOr[Key], /* owner */ js.UndefOr[Any], Boolean]]
+  
+  inline def createQueryOperation[TItem, TSchema](query: Query[TSchema]): QueryOperation[TItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueryOperation")(query.asInstanceOf[js.Any]).asInstanceOf[QueryOperation[TItem]]
+  inline def createQueryOperation[TItem, TSchema](query: Query[TSchema], owneryQuery: Any): QueryOperation[TItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("createQueryOperation")(query.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any])).asInstanceOf[QueryOperation[TItem]]
+  inline def createQueryOperation[TItem, TSchema](query: Query[TSchema], owneryQuery: Any, hasCompareOperations: PartialOptions): QueryOperation[TItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("createQueryOperation")(query.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], hasCompareOperations.asInstanceOf[js.Any])).asInstanceOf[QueryOperation[TItem]]
+  inline def createQueryOperation[TItem, TSchema](query: Query[TSchema], owneryQuery: Unit, hasCompareOperations: PartialOptions): QueryOperation[TItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("createQueryOperation")(query.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], hasCompareOperations.asInstanceOf[js.Any])).asInstanceOf[QueryOperation[TItem]]
+  
+  inline def createQueryTester[TItem, TSchema](query: Query[TSchema]): js.Function3[/* item */ TItem, /* key */ js.UndefOr[Key], /* owner */ js.UndefOr[Any], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueryTester")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* item */ TItem, /* key */ js.UndefOr[Key], /* owner */ js.UndefOr[Any], Boolean]]
+  inline def createQueryTester[TItem, TSchema](query: Query[TSchema], options: PartialOptions): js.Function3[/* item */ TItem, /* key */ js.UndefOr[Key], /* owner */ js.UndefOr[Any], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("createQueryTester")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* item */ TItem, /* key */ js.UndefOr[Key], /* owner */ js.UndefOr[Any], Boolean]]
+  
+  inline def elemMatch(params: Any, owneryQuery: Query[Any], options: Options, name: String): $ElemMatch = (^.asInstanceOf[js.Dynamic].applyDynamic("$elemMatch")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$ElemMatch]
+  
+  inline def eq(params: Any, owneryQuery: Query[Any], options: Options): typingsJapgolly.sift.libCoreMod.EqualsOperation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$eq")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.sift.libCoreMod.EqualsOperation[Any]]
+  
+  inline def exists(params: Boolean, owneryQuery: Query[Any], options: Options, name: String): $Exists = (^.asInstanceOf[js.Dynamic].applyDynamic("$exists")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$Exists]
+  
+  inline def gt(params: Any, owneryQuery: Any, options: Options, name: String): Operation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$gt")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Operation[Any]]
+  
+  inline def gte(params: Any, owneryQuery: Any, options: Options, name: String): Operation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$gte")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Operation[Any]]
+  
+  inline def in(params: Any, owneryQuery: Query[Any], options: Options, name: String): $In = (^.asInstanceOf[js.Dynamic].applyDynamic("$in")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$In]
+  
+  inline def lt(params: Any, owneryQuery: Any, options: Options, name: String): Operation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$lt")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Operation[Any]]
+  
+  inline def lte(params: Any, owneryQuery: Any, options: Options, name: String): Operation[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("$lte")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Operation[Any]]
+  
+  inline def mod(hasModEqualsValue: js.Array[Double], owneryQuery: Query[Any], options: Options): typingsJapgolly.sift.libCoreMod.EqualsOperation[js.Function1[/* b */ Any, Boolean]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$mod")(hasModEqualsValue.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.sift.libCoreMod.EqualsOperation[js.Function1[/* b */ Any, Boolean]]]
+  
+  inline def ne(params: Any, owneryQuery: Query[Any], options: Options, name: String): $Ne = (^.asInstanceOf[js.Dynamic].applyDynamic("$ne")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$Ne]
+  
+  inline def nin(params: Any, owneryQuery: Query[Any], options: Options, name: String): $Nin = (^.asInstanceOf[js.Dynamic].applyDynamic("$nin")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$Nin]
+  
+  inline def nor(params: js.Array[Query[Any]], owneryQuery: Query[Any], options: Options, name: String): $Nor = (^.asInstanceOf[js.Dynamic].applyDynamic("$nor")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$Nor]
+  
+  inline def not(params: Any, owneryQuery: Query[Any], options: Options, name: String): $Not = (^.asInstanceOf[js.Dynamic].applyDynamic("$not")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$Not]
+  
+  inline def options(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("$options")().asInstanceOf[Any]
+  
+  inline def or(params: js.Array[Query[Any]], owneryQuery: Query[Any], options: Options, name: String): $Or = (^.asInstanceOf[js.Dynamic].applyDynamic("$or")(params.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[$Or]
+  
+  inline def regex(pattern: String, owneryQuery: Query[Any], options: Options): typingsJapgolly.sift.libCoreMod.EqualsOperation[js.RegExp] = (^.asInstanceOf[js.Dynamic].applyDynamic("$regex")(pattern.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.sift.libCoreMod.EqualsOperation[js.RegExp]]
+  
+  inline def size(params: Double, ownerQuery: Query[Any], options: Options): typingsJapgolly.sift.libOperationsMod.$Size = (^.asInstanceOf[js.Dynamic].applyDynamic("$size")(params.asInstanceOf[js.Any], ownerQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.sift.libOperationsMod.$Size]
+  
+  inline def `type`(clazz: String, owneryQuery: Query[Any], options: Options): typingsJapgolly.sift.libCoreMod.EqualsOperation[js.Function1[/* b */ Any, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$type")(clazz.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.sift.libCoreMod.EqualsOperation[js.Function1[/* b */ Any, Any]]]
+  inline def `type`(clazz: js.Function, owneryQuery: Query[Any], options: Options): typingsJapgolly.sift.libCoreMod.EqualsOperation[js.Function1[/* b */ Any, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$type")(clazz.asInstanceOf[js.Any], owneryQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.sift.libCoreMod.EqualsOperation[js.Function1[/* b */ Any, Any]]]
+  
+  inline def where(params: String, ownerQuery: Query[Any], options: Options): typingsJapgolly.sift.libCoreMod.EqualsOperation[js.Function1[/* b */ Any, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$where")(params.asInstanceOf[js.Any], ownerQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.sift.libCoreMod.EqualsOperation[js.Function1[/* b */ Any, Any]]]
+  inline def where(params: js.Function, ownerQuery: Query[Any], options: Options): typingsJapgolly.sift.libCoreMod.EqualsOperation[js.Function1[/* b */ Any, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("$where")(params.asInstanceOf[js.Any], ownerQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.sift.libCoreMod.EqualsOperation[js.Function1[/* b */ Any, Any]]]
 }
-

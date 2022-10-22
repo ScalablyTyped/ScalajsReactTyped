@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EasDisallowConvenienceLogonResult extends js.Object
-
+sealed trait EasDisallowConvenienceLogonResult extends StObject
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasDisallowConvenienceLogonResult")
 @js.native
-object EasDisallowConvenienceLogonResult extends js.Object {
-  @js.native
-  sealed trait canBeCompliant extends EasDisallowConvenienceLogonResult
+object EasDisallowConvenienceLogonResult extends StObject {
   
   @js.native
-  sealed trait compliant extends EasDisallowConvenienceLogonResult
+  sealed trait canBeCompliant
+    extends StObject
+       with EasDisallowConvenienceLogonResult
   
   @js.native
-  sealed trait notEvaluated extends EasDisallowConvenienceLogonResult
+  sealed trait compliant
+    extends StObject
+       with EasDisallowConvenienceLogonResult
   
   @js.native
-  sealed trait requestedPolicyIsStricter extends EasDisallowConvenienceLogonResult
+  sealed trait notEvaluated
+    extends StObject
+       with EasDisallowConvenienceLogonResult
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EasDisallowConvenienceLogonResult with Double] = js.native
-  /* 2 */ @js.native
-  object canBeCompliant extends TopLevel[canBeCompliant with Double]
-  
-  /* 1 */ @js.native
-  object compliant extends TopLevel[compliant with Double]
-  
-  /* 0 */ @js.native
-  object notEvaluated extends TopLevel[notEvaluated with Double]
-  
-  /* 3 */ @js.native
-  object requestedPolicyIsStricter extends TopLevel[requestedPolicyIsStricter with Double]
-  
+  @js.native
+  sealed trait requestedPolicyIsStricter
+    extends StObject
+       with EasDisallowConvenienceLogonResult
 }
-

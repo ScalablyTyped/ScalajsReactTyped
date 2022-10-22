@@ -1,7 +1,7 @@
 
 # Scala.js typings for nuid
 
-Typings are for version 1.1.0
+Typings are for version 1.1.6
 
 ## Library description:
 NUID - A highly performant unique identifier generator.
@@ -10,10 +10,10 @@ NUID - A highly performant unique identifier generator.
 | ------------------ | :-------------: |
 | Full name          | nuid |
 | Keywords           | unique, identifier, generator |
-| # releases         | 3 |
-| # dependents       | 12 |
-| # downloads        | 2624856 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 320083.6666666667 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://nats.io)

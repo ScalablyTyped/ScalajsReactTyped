@@ -1,13 +1,12 @@
-package typingsJapgolly.semanticUiDimmer
+package typingsJapgolly.semanticUiDimmer.SemanticUI
 
+import typingsJapgolly.semanticUiDimmer.SemanticUI.DimmerSettings.Param
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object SemanticUI {
-  type Dimmer = typingsJapgolly.semanticUiDimmer.SemanticUI.Dimmer_
-  /**
-    * @see {@link http://semantic-ui.com/modules/dimmer.html#/settings}
-    */
-  type DimmerSettings = typingsJapgolly.semanticUiDimmer.SemanticUI.DimmerSettings.Param
-}
+
+/**
+  * @see {@link http://semantic-ui.com/modules/dimmer.html#/settings}
+  */
+type DimmerSettings = Param

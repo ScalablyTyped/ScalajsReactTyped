@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ActiveCellChangedEventUIParam extends js.Object {
+trait ActiveCellChangedEventUIParam extends StObject {
+  
   /**
-  	 * Gets reference to the cell object.
-  	 */
-  var cell: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to the cell object.
+    */
+  var cell: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets reference to GridSelection.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to GridSelection.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ActiveCellChangedEventUIParam {
-  @scala.inline
-  def apply(cell: js.Any = null, owner: js.Any = null): ActiveCellChangedEventUIParam = {
+  
+  inline def apply(): ActiveCellChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveCellChangedEventUIParam]
   }
+  
+  extension [Self <: ActiveCellChangedEventUIParam](x: Self) {
+    
+    inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    
+    inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

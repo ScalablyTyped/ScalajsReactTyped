@@ -1,30 +1,44 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events related to clicking on the control's tabs.
   */
-@JSGlobal("BootstrapClientTabControlTabClickEventArgs")
-@js.native
-class BootstrapClientTabControlTabClickEventArgs protected () extends BootstrapClientTabControlTabCancelEventArgs {
-  /**
-    * Initializes a new object of the BootstrapClientTabControlTabClickEventArgs type with the specified settings.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
-    * @param tab An BootstrapClientTab object that represents a tab related to the event.
-    * @param htmlElement An HTML object that contains the processed tab.
-    * @param htmlEvent A DHTML event object that relates to the processed event.
-    */
-  def this(processOnServer: Boolean, tab: BootstrapClientTab, htmlElement: js.Any, htmlEvent: js.Any) = this()
+trait BootstrapClientTabControlTabClickEventArgs
+  extends StObject
+     with BootstrapClientTabControlTabCancelEventArgs {
+  
   /**
     * Gets an HTML object that contains the processed tab.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any
+  
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any
 }
-
+object BootstrapClientTabControlTabClickEventArgs {
+  
+  inline def apply(
+    cancel: Boolean,
+    htmlElement: Any,
+    htmlEvent: Any,
+    processOnServer: Boolean,
+    reloadContentOnCallback: Boolean,
+    tab: BootstrapClientTab
+  ): BootstrapClientTabControlTabClickEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], reloadContentOnCallback = reloadContentOnCallback.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapClientTabControlTabClickEventArgs]
+  }
+  
+  extension [Self <: BootstrapClientTabControlTabClickEventArgs](x: Self) {
+    
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,19 +1,26 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnenotePagePreviewLinks extends js.Object {
-  var previewImageUrl: js.UndefOr[ExternalLink] = js.undefined
+trait OnenotePagePreviewLinks extends StObject {
+  
+  var previewImageUrl: js.UndefOr[NullableOption[ExternalLink]] = js.undefined
 }
-
 object OnenotePagePreviewLinks {
-  @scala.inline
-  def apply(previewImageUrl: ExternalLink = null): OnenotePagePreviewLinks = {
+  
+  inline def apply(): OnenotePagePreviewLinks = {
     val __obj = js.Dynamic.literal()
-    if (previewImageUrl != null) __obj.updateDynamic("previewImageUrl")(previewImageUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnenotePagePreviewLinks]
   }
+  
+  extension [Self <: OnenotePagePreviewLinks](x: Self) {
+    
+    inline def setPreviewImageUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "previewImageUrl", value.asInstanceOf[js.Any])
+    
+    inline def setPreviewImageUrlNull: Self = StObject.set(x, "previewImageUrl", null)
+    
+    inline def setPreviewImageUrlUndefined: Self = StObject.set(x, "previewImageUrl", js.undefined)
+  }
 }
-

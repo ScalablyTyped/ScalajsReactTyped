@@ -1,49 +1,33 @@
 package typingsJapgolly.reactSparklines.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactSparklines.mod.Point
 import typingsJapgolly.reactSparklines.mod.SparklinesTextProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SparklinesText {
-  def apply(
-    fontFamily: String = null,
-    fontSize: Int | Double = null,
-    point: Point = null,
-    text: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    SparklinesTextProps, 
-    typingsJapgolly.reactSparklines.mod.SparklinesText, 
-    Unit, 
-    SparklinesTextProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactSparklines.mod.SparklinesTextProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactSparklines.mod.SparklinesText](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactSparklines.mod.SparklinesTextProps])(children: _*)
-  }
   @JSImport("react-sparklines", "SparklinesText")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactSparklines.mod.SparklinesText] {
+    
+    inline def fontFamily(value: String): this.type = set("fontFamily", value.asInstanceOf[js.Any])
+    
+    inline def fontSize(value: Double): this.type = set("fontSize", value.asInstanceOf[js.Any])
+    
+    inline def point(value: Point): this.type = set("point", value.asInstanceOf[js.Any])
+    
+    inline def text(value: String): this.type = set("text", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: SparklinesText.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SparklinesTextProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,19 +1,24 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnnotationsCrookedLineTypeLineOptions extends js.Object {
+trait AnnotationsCrookedLineTypeLineOptions extends StObject {
+  
   var fill: js.UndefOr[String] = js.undefined
 }
-
 object AnnotationsCrookedLineTypeLineOptions {
-  @scala.inline
-  def apply(fill: String = null): AnnotationsCrookedLineTypeLineOptions = {
+  
+  inline def apply(): AnnotationsCrookedLineTypeLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsCrookedLineTypeLineOptions]
   }
+  
+  extension [Self <: AnnotationsCrookedLineTypeLineOptions](x: Self) {
+    
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+  }
 }
-

@@ -11,9 +11,9 @@ Typings are for version 2.0.1
 | Full name          | cordova-plugin-device-motion |
 | Keywords           | cordova, device, motion, ecosystem:cordova, cordova-firefoxos, cordova-android, cordova-amazon-fireos, cordova-ubuntu, cordova-ios, cordova-blackberry10, cordova-wp7, cordova-wp8, cordova-windows8, cordova-windows, cordova-tizen, cordova-browser |
 | # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 113709 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 12804.666666666666 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/apache/cordova-plugin-device-motion#readme)

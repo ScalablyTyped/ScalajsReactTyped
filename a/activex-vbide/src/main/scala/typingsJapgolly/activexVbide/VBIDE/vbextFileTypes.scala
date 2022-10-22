@@ -1,67 +1,63 @@
 package typingsJapgolly.activexVbide.VBIDE
 
-import typingsJapgolly.activexVbide.activexVbideNumbers.`0`
-import typingsJapgolly.activexVbide.activexVbideNumbers.`10`
-import typingsJapgolly.activexVbide.activexVbideNumbers.`11`
-import typingsJapgolly.activexVbide.activexVbideNumbers.`12`
-import typingsJapgolly.activexVbide.activexVbideNumbers.`1`
-import typingsJapgolly.activexVbide.activexVbideNumbers.`2`
-import typingsJapgolly.activexVbide.activexVbideNumbers.`3`
-import typingsJapgolly.activexVbide.activexVbideNumbers.`4`
-import typingsJapgolly.activexVbide.activexVbideNumbers.`5`
-import typingsJapgolly.activexVbide.activexVbideNumbers.`6`
-import typingsJapgolly.activexVbide.activexVbideNumbers.`7`
-import typingsJapgolly.activexVbide.activexVbideNumbers.`8`
-import typingsJapgolly.activexVbide.activexVbideNumbers.`9`
+import typingsJapgolly.activexVbide.activexVbideInts.`0`
+import typingsJapgolly.activexVbide.activexVbideInts.`10`
+import typingsJapgolly.activexVbide.activexVbideInts.`11`
+import typingsJapgolly.activexVbide.activexVbideInts.`12`
+import typingsJapgolly.activexVbide.activexVbideInts.`1`
+import typingsJapgolly.activexVbide.activexVbideInts.`2`
+import typingsJapgolly.activexVbide.activexVbideInts.`3`
+import typingsJapgolly.activexVbide.activexVbideInts.`4`
+import typingsJapgolly.activexVbide.activexVbideInts.`5`
+import typingsJapgolly.activexVbide.activexVbideInts.`6`
+import typingsJapgolly.activexVbide.activexVbideInts.`7`
+import typingsJapgolly.activexVbide.activexVbideInts.`8`
+import typingsJapgolly.activexVbide.activexVbideInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexVbide.activexVbideNumbers.`10`
-  - typingsJapgolly.activexVbide.activexVbideNumbers.`2`
-  - typingsJapgolly.activexVbide.activexVbideNumbers.`12`
-  - typingsJapgolly.activexVbide.activexVbideNumbers.`9`
-  - typingsJapgolly.activexVbide.activexVbideNumbers.`4`
-  - typingsJapgolly.activexVbide.activexVbideNumbers.`0`
-  - typingsJapgolly.activexVbide.activexVbideNumbers.`5`
-  - typingsJapgolly.activexVbide.activexVbideNumbers.`11`
-  - typingsJapgolly.activexVbide.activexVbideNumbers.`1`
-  - typingsJapgolly.activexVbide.activexVbideNumbers.`3`
-  - typingsJapgolly.activexVbide.activexVbideNumbers.`8`
-  - typingsJapgolly.activexVbide.activexVbideNumbers.`6`
-  - typingsJapgolly.activexVbide.activexVbideNumbers.`7`
+  - typingsJapgolly.activexVbide.activexVbideInts.`10`
+  - typingsJapgolly.activexVbide.activexVbideInts.`2`
+  - typingsJapgolly.activexVbide.activexVbideInts.`12`
+  - typingsJapgolly.activexVbide.activexVbideInts.`9`
+  - typingsJapgolly.activexVbide.activexVbideInts.`4`
+  - typingsJapgolly.activexVbide.activexVbideInts.`0`
+  - typingsJapgolly.activexVbide.activexVbideInts.`5`
+  - typingsJapgolly.activexVbide.activexVbideInts.`11`
+  - typingsJapgolly.activexVbide.activexVbideInts.`1`
+  - typingsJapgolly.activexVbide.activexVbideInts.`3`
+  - typingsJapgolly.activexVbide.activexVbideInts.`8`
+  - typingsJapgolly.activexVbide.activexVbideInts.`6`
+  - typingsJapgolly.activexVbide.activexVbideInts.`7`
 */
-trait vbextFileTypes extends js.Object
-
+trait vbextFileTypes extends StObject
 object vbextFileTypes {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def vbextFileTypeBinary: `10` = this.cast(10)
-  @scala.inline
-  def vbextFileTypeClass: `2` = this.cast(2)
-  @scala.inline
-  def vbextFileTypeDesigners: `12` = this.cast(12)
-  @scala.inline
-  def vbextFileTypeDocObject: `9` = this.cast(9)
-  @scala.inline
-  def vbextFileTypeExe: `4` = this.cast(4)
-  @scala.inline
-  def vbextFileTypeForm: `0` = this.cast(0)
-  @scala.inline
-  def vbextFileTypeFrx: `5` = this.cast(5)
-  @scala.inline
-  def vbextFileTypeGroupProject: `11` = this.cast(11)
-  @scala.inline
-  def vbextFileTypeModule: `1` = this.cast(1)
-  @scala.inline
-  def vbextFileTypeProject: `3` = this.cast(3)
-  @scala.inline
-  def vbextFileTypePropertyPage: `8` = this.cast(8)
-  @scala.inline
-  def vbextFileTypeRes: `6` = this.cast(6)
-  @scala.inline
-  def vbextFileTypeUserControl: `7` = this.cast(7)
+  
+  inline def vbextFileTypeBinary: `10` = 10.asInstanceOf[`10`]
+  
+  inline def vbextFileTypeClass: `2` = 2.asInstanceOf[`2`]
+  
+  inline def vbextFileTypeDesigners: `12` = 12.asInstanceOf[`12`]
+  
+  inline def vbextFileTypeDocObject: `9` = 9.asInstanceOf[`9`]
+  
+  inline def vbextFileTypeExe: `4` = 4.asInstanceOf[`4`]
+  
+  inline def vbextFileTypeForm: `0` = 0.asInstanceOf[`0`]
+  
+  inline def vbextFileTypeFrx: `5` = 5.asInstanceOf[`5`]
+  
+  inline def vbextFileTypeGroupProject: `11` = 11.asInstanceOf[`11`]
+  
+  inline def vbextFileTypeModule: `1` = 1.asInstanceOf[`1`]
+  
+  inline def vbextFileTypeProject: `3` = 3.asInstanceOf[`3`]
+  
+  inline def vbextFileTypePropertyPage: `8` = 8.asInstanceOf[`8`]
+  
+  inline def vbextFileTypeRes: `6` = 6.asInstanceOf[`6`]
+  
+  inline def vbextFileTypeUserControl: `7` = 7.asInstanceOf[`7`]
 }
-

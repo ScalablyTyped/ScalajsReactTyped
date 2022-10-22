@@ -1,11 +1,12 @@
 package typingsJapgolly.xmldsigjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs", "XmlDsigC14NTransform")
 @js.native
-class XmlDsigC14NTransform ()
-  extends typingsJapgolly.xmldsigjs.c14nMod.XmlDsigC14NTransform
-
+open class XmlDsigC14NTransform ()
+  extends typingsJapgolly.xmldsigjs.buildTypesXmlMod.XmlDsigC14NTransform {
+  def this(properties: js.Object) = this()
+}

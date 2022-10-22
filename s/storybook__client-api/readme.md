@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__client-api
 
-Typings are for version 5.3.13
+Typings are for version 6.5.12
 
 ## Library description:
 Storybook Client API
@@ -10,13 +10,13 @@ Storybook Client API
 | ------------------ | :-------------: |
 | Full name          | @storybook/client-api |
 | Keywords           | storybook |
-| # releases         | 286 |
-| # dependents       | 16 |
-| # downloads        | 27636558 |
-| # stars            | 0 |
+| # releases         | 461 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9568164666666668E7 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/lib/client-api)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/lib/client-api)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Fclient-api)

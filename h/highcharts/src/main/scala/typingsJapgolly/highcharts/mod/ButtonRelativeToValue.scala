@@ -1,21 +1,17 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.plotBox
   - typingsJapgolly.highcharts.highchartsStrings.spacingBox
 */
-trait ButtonRelativeToValue extends js.Object
-
+trait ButtonRelativeToValue extends StObject
 object ButtonRelativeToValue {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def plotBox: typingsJapgolly.highcharts.highchartsStrings.plotBox = this.cast("plotBox")
-  @scala.inline
-  def spacingBox: typingsJapgolly.highcharts.highchartsStrings.spacingBox = this.cast("spacingBox")
+  
+  inline def plotBox: typingsJapgolly.highcharts.highchartsStrings.plotBox = "plotBox".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.plotBox]
+  
+  inline def spacingBox: typingsJapgolly.highcharts.highchartsStrings.spacingBox = "spacingBox".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.spacingBox]
 }
-

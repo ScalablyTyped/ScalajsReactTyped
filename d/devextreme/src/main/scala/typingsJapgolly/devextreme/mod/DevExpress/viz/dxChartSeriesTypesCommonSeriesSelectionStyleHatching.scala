@@ -1,38 +1,55 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.devextremeStrings.left
-import typingsJapgolly.devextreme.devextremeStrings.none
-import typingsJapgolly.devextreme.devextremeStrings.right
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.HatchDirection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Configures hatching that applies when a user selects the series. */
-trait dxChartSeriesTypesCommonSeriesSelectionStyleHatching extends js.Object {
-  /** Specifies the direction of hatching lines. */
-  var direction: js.UndefOr[left | none | right] = js.undefined
-  /** Specifies how transparent hatching lines should be. */
+trait dxChartSeriesTypesCommonSeriesSelectionStyleHatching extends StObject {
+  
+  /**
+    * Specifies the direction of hatching lines.
+    */
+  var direction: js.UndefOr[HatchDirection] = js.undefined
+  
+  /**
+    * Specifies how transparent hatching lines should be.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** Specifies the distance between two side-by-side hatching lines in pixels. */
+  
+  /**
+    * Specifies the distance between two side-by-side hatching lines in pixels.
+    */
   var step: js.UndefOr[Double] = js.undefined
-  /** Specifies the width of hatching lines in pixels. */
+  
+  /**
+    * Specifies the width of hatching lines in pixels.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object dxChartSeriesTypesCommonSeriesSelectionStyleHatching {
-  @scala.inline
-  def apply(
-    direction: left | none | right = null,
-    opacity: Int | Double = null,
-    step: Int | Double = null,
-    width: Int | Double = null
-  ): dxChartSeriesTypesCommonSeriesSelectionStyleHatching = {
+  
+  inline def apply(): dxChartSeriesTypesCommonSeriesSelectionStyleHatching = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartSeriesTypesCommonSeriesSelectionStyleHatching]
   }
+  
+  extension [Self <: dxChartSeriesTypesCommonSeriesSelectionStyleHatching](x: Self) {
+    
+    inline def setDirection(value: HatchDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

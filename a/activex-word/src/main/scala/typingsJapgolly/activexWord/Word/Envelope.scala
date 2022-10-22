@@ -1,144 +1,296 @@
 package typingsJapgolly.activexWord.Word
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.Envelope")
-@js.native
-class Envelope protected () extends js.Object {
-  val Address: Range = js.native
-  var AddressFromLeft: Double = js.native
-  var AddressFromTop: Double = js.native
-  val AddressStyle: Style = js.native
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Creator: Double = js.native
-  var DefaultFaceUp: Boolean = js.native
-  var DefaultHeight: Double = js.native
-  var DefaultOmitReturnAddress: Boolean = js.native
-  var DefaultOrientation: WdEnvelopeOrientation = js.native
-  var DefaultPrintBarCode: Boolean = js.native
-  var DefaultPrintFIMA: Boolean = js.native
-  var DefaultSize: String = js.native
-  var DefaultWidth: Double = js.native
-  var FeedSource: WdPaperTray = js.native
-  val Parent: js.Any = js.native
-  var RecipientNamefromLeft: Double = js.native
-  var RecipientNamefromTop: Double = js.native
-  var RecipientPostalfromLeft: Double = js.native
-  var RecipientPostalfromTop: Double = js.native
-  val ReturnAddress: Range = js.native
-  var ReturnAddressFromLeft: Double = js.native
-  var ReturnAddressFromTop: Double = js.native
-  val ReturnAddressStyle: Style = js.native
-  var SenderNamefromLeft: Double = js.native
-  var SenderNamefromTop: Double = js.native
-  var SenderPostalfromLeft: Double = js.native
-  var SenderPostalfromTop: Double = js.native
-  var Vertical: Boolean = js.native
-  @JSName("Word.Envelope_typekey")
-  var WordDotEnvelope_typekey: Envelope = js.native
+trait Envelope extends StObject {
+  
+  val Address: Range
+  
+  var AddressFromLeft: Double
+  
+  var AddressFromTop: Double
+  
+  val AddressStyle: Style
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  val Creator: Double
+  
+  var DefaultFaceUp: Boolean
+  
+  var DefaultHeight: Double
+  
+  var DefaultOmitReturnAddress: Boolean
+  
+  var DefaultOrientation: WdEnvelopeOrientation
+  
+  var DefaultPrintBarCode: Boolean
+  
+  var DefaultPrintFIMA: Boolean
+  
+  var DefaultSize: String
+  
+  var DefaultWidth: Double
+  
+  var FeedSource: WdPaperTray
+  
   def Insert(
-    ExtractAddress: js.UndefOr[js.Any],
-    Address: js.UndefOr[js.Any],
-    AutoText: js.UndefOr[js.Any],
-    OmitReturnAddress: js.UndefOr[js.Any],
-    ReturnAddress: js.UndefOr[js.Any],
-    ReturnAutoText: js.UndefOr[js.Any],
-    PrintBarCode: js.UndefOr[js.Any],
-    PrintFIMA: js.UndefOr[js.Any],
-    Size: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    FeedSource: js.UndefOr[js.Any],
-    AddressFromLeft: js.UndefOr[js.Any],
-    AddressFromTop: js.UndefOr[js.Any],
-    ReturnAddressFromLeft: js.UndefOr[js.Any],
-    ReturnAddressFromTop: js.UndefOr[js.Any],
-    DefaultFaceUp: js.UndefOr[js.Any],
-    DefaultOrientation: js.UndefOr[js.Any],
-    PrintEPostage: js.UndefOr[js.Any],
-    Vertical: js.UndefOr[js.Any],
-    RecipientNamefromLeft: js.UndefOr[js.Any],
-    RecipientNamefromTop: js.UndefOr[js.Any],
-    RecipientPostalfromLeft: js.UndefOr[js.Any],
-    RecipientPostalfromTop: js.UndefOr[js.Any],
-    SenderNamefromLeft: js.UndefOr[js.Any],
-    SenderNamefromTop: js.UndefOr[js.Any],
-    SenderPostalfromLeft: js.UndefOr[js.Any],
-    SenderPostalfromTop: js.UndefOr[js.Any]
-  ): Unit = js.native
+    ExtractAddress: js.UndefOr[Any],
+    Address: js.UndefOr[Any],
+    AutoText: js.UndefOr[Any],
+    OmitReturnAddress: js.UndefOr[Any],
+    ReturnAddress: js.UndefOr[Any],
+    ReturnAutoText: js.UndefOr[Any],
+    PrintBarCode: js.UndefOr[Any],
+    PrintFIMA: js.UndefOr[Any],
+    Size: js.UndefOr[Any],
+    Height: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    FeedSource: js.UndefOr[Any],
+    AddressFromLeft: js.UndefOr[Any],
+    AddressFromTop: js.UndefOr[Any],
+    ReturnAddressFromLeft: js.UndefOr[Any],
+    ReturnAddressFromTop: js.UndefOr[Any],
+    DefaultFaceUp: js.UndefOr[Any],
+    DefaultOrientation: js.UndefOr[Any],
+    PrintEPostage: js.UndefOr[Any],
+    Vertical: js.UndefOr[Any],
+    RecipientNamefromLeft: js.UndefOr[Any],
+    RecipientNamefromTop: js.UndefOr[Any],
+    RecipientPostalfromLeft: js.UndefOr[Any],
+    RecipientPostalfromTop: js.UndefOr[Any],
+    SenderNamefromLeft: js.UndefOr[Any],
+    SenderNamefromTop: js.UndefOr[Any],
+    SenderPostalfromLeft: js.UndefOr[Any],
+    SenderPostalfromTop: js.UndefOr[Any]
+  ): Unit
+  
   def Insert2000(
-    ExtractAddress: js.UndefOr[js.Any],
-    Address: js.UndefOr[js.Any],
-    AutoText: js.UndefOr[js.Any],
-    OmitReturnAddress: js.UndefOr[js.Any],
-    ReturnAddress: js.UndefOr[js.Any],
-    ReturnAutoText: js.UndefOr[js.Any],
-    PrintBarCode: js.UndefOr[js.Any],
-    PrintFIMA: js.UndefOr[js.Any],
-    Size: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    FeedSource: js.UndefOr[js.Any],
-    AddressFromLeft: js.UndefOr[js.Any],
-    AddressFromTop: js.UndefOr[js.Any],
-    ReturnAddressFromLeft: js.UndefOr[js.Any],
-    ReturnAddressFromTop: js.UndefOr[js.Any],
-    DefaultFaceUp: js.UndefOr[js.Any],
-    DefaultOrientation: js.UndefOr[js.Any]
-  ): Unit = js.native
-  def Options(): Unit = js.native
+    ExtractAddress: js.UndefOr[Any],
+    Address: js.UndefOr[Any],
+    AutoText: js.UndefOr[Any],
+    OmitReturnAddress: js.UndefOr[Any],
+    ReturnAddress: js.UndefOr[Any],
+    ReturnAutoText: js.UndefOr[Any],
+    PrintBarCode: js.UndefOr[Any],
+    PrintFIMA: js.UndefOr[Any],
+    Size: js.UndefOr[Any],
+    Height: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    FeedSource: js.UndefOr[Any],
+    AddressFromLeft: js.UndefOr[Any],
+    AddressFromTop: js.UndefOr[Any],
+    ReturnAddressFromLeft: js.UndefOr[Any],
+    ReturnAddressFromTop: js.UndefOr[Any],
+    DefaultFaceUp: js.UndefOr[Any],
+    DefaultOrientation: js.UndefOr[Any]
+  ): Unit
+  
+  def Options(): Unit
+  
+  val Parent: Any
+  
   def PrintOut(
-    ExtractAddress: js.UndefOr[js.Any],
-    Address: js.UndefOr[js.Any],
-    AutoText: js.UndefOr[js.Any],
-    OmitReturnAddress: js.UndefOr[js.Any],
-    ReturnAddress: js.UndefOr[js.Any],
-    ReturnAutoText: js.UndefOr[js.Any],
-    PrintBarCode: js.UndefOr[js.Any],
-    PrintFIMA: js.UndefOr[js.Any],
-    Size: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    FeedSource: js.UndefOr[js.Any],
-    AddressFromLeft: js.UndefOr[js.Any],
-    AddressFromTop: js.UndefOr[js.Any],
-    ReturnAddressFromLeft: js.UndefOr[js.Any],
-    ReturnAddressFromTop: js.UndefOr[js.Any],
-    DefaultFaceUp: js.UndefOr[js.Any],
-    DefaultOrientation: js.UndefOr[js.Any],
-    PrintEPostage: js.UndefOr[js.Any],
-    Vertical: js.UndefOr[js.Any],
-    RecipientNamefromLeft: js.UndefOr[js.Any],
-    RecipientNamefromTop: js.UndefOr[js.Any],
-    RecipientPostalfromLeft: js.UndefOr[js.Any],
-    RecipientPostalfromTop: js.UndefOr[js.Any],
-    SenderNamefromLeft: js.UndefOr[js.Any],
-    SenderNamefromTop: js.UndefOr[js.Any],
-    SenderPostalfromLeft: js.UndefOr[js.Any],
-    SenderPostalfromTop: js.UndefOr[js.Any]
-  ): Unit = js.native
+    ExtractAddress: js.UndefOr[Any],
+    Address: js.UndefOr[Any],
+    AutoText: js.UndefOr[Any],
+    OmitReturnAddress: js.UndefOr[Any],
+    ReturnAddress: js.UndefOr[Any],
+    ReturnAutoText: js.UndefOr[Any],
+    PrintBarCode: js.UndefOr[Any],
+    PrintFIMA: js.UndefOr[Any],
+    Size: js.UndefOr[Any],
+    Height: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    FeedSource: js.UndefOr[Any],
+    AddressFromLeft: js.UndefOr[Any],
+    AddressFromTop: js.UndefOr[Any],
+    ReturnAddressFromLeft: js.UndefOr[Any],
+    ReturnAddressFromTop: js.UndefOr[Any],
+    DefaultFaceUp: js.UndefOr[Any],
+    DefaultOrientation: js.UndefOr[Any],
+    PrintEPostage: js.UndefOr[Any],
+    Vertical: js.UndefOr[Any],
+    RecipientNamefromLeft: js.UndefOr[Any],
+    RecipientNamefromTop: js.UndefOr[Any],
+    RecipientPostalfromLeft: js.UndefOr[Any],
+    RecipientPostalfromTop: js.UndefOr[Any],
+    SenderNamefromLeft: js.UndefOr[Any],
+    SenderNamefromTop: js.UndefOr[Any],
+    SenderPostalfromLeft: js.UndefOr[Any],
+    SenderPostalfromTop: js.UndefOr[Any]
+  ): Unit
+  
   def PrintOut2000(
-    ExtractAddress: js.UndefOr[js.Any],
-    Address: js.UndefOr[js.Any],
-    AutoText: js.UndefOr[js.Any],
-    OmitReturnAddress: js.UndefOr[js.Any],
-    ReturnAddress: js.UndefOr[js.Any],
-    ReturnAutoText: js.UndefOr[js.Any],
-    PrintBarCode: js.UndefOr[js.Any],
-    PrintFIMA: js.UndefOr[js.Any],
-    Size: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    FeedSource: js.UndefOr[js.Any],
-    AddressFromLeft: js.UndefOr[js.Any],
-    AddressFromTop: js.UndefOr[js.Any],
-    ReturnAddressFromLeft: js.UndefOr[js.Any],
-    ReturnAddressFromTop: js.UndefOr[js.Any],
-    DefaultFaceUp: js.UndefOr[js.Any],
-    DefaultOrientation: js.UndefOr[js.Any]
-  ): Unit = js.native
-  def UpdateDocument(): Unit = js.native
+    ExtractAddress: js.UndefOr[Any],
+    Address: js.UndefOr[Any],
+    AutoText: js.UndefOr[Any],
+    OmitReturnAddress: js.UndefOr[Any],
+    ReturnAddress: js.UndefOr[Any],
+    ReturnAutoText: js.UndefOr[Any],
+    PrintBarCode: js.UndefOr[Any],
+    PrintFIMA: js.UndefOr[Any],
+    Size: js.UndefOr[Any],
+    Height: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    FeedSource: js.UndefOr[Any],
+    AddressFromLeft: js.UndefOr[Any],
+    AddressFromTop: js.UndefOr[Any],
+    ReturnAddressFromLeft: js.UndefOr[Any],
+    ReturnAddressFromTop: js.UndefOr[Any],
+    DefaultFaceUp: js.UndefOr[Any],
+    DefaultOrientation: js.UndefOr[Any]
+  ): Unit
+  
+  var RecipientNamefromLeft: Double
+  
+  var RecipientNamefromTop: Double
+  
+  var RecipientPostalfromLeft: Double
+  
+  var RecipientPostalfromTop: Double
+  
+  val ReturnAddress: Range
+  
+  var ReturnAddressFromLeft: Double
+  
+  var ReturnAddressFromTop: Double
+  
+  val ReturnAddressStyle: Style
+  
+  var SenderNamefromLeft: Double
+  
+  var SenderNamefromTop: Double
+  
+  var SenderPostalfromLeft: Double
+  
+  var SenderPostalfromTop: Double
+  
+  def UpdateDocument(): Unit
+  
+  var Vertical: Boolean
+  
+  /* private */ @JSName("Word.Envelope_typekey")
+  var WordDotEnvelope_typekey: Envelope
 }
-
+object Envelope {
+  
+  inline def apply(
+    Address: Range,
+    AddressFromLeft: Double,
+    AddressFromTop: Double,
+    AddressStyle: Style,
+    Application: Application,
+    Creator: Double,
+    DefaultFaceUp: Boolean,
+    DefaultHeight: Double,
+    DefaultOmitReturnAddress: Boolean,
+    DefaultOrientation: WdEnvelopeOrientation,
+    DefaultPrintBarCode: Boolean,
+    DefaultPrintFIMA: Boolean,
+    DefaultSize: String,
+    DefaultWidth: Double,
+    FeedSource: WdPaperTray,
+    Insert2000: (js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Callback,
+    Options: Callback,
+    Parent: Any,
+    PrintOut2000: (js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Callback,
+    RecipientNamefromLeft: Double,
+    RecipientNamefromTop: Double,
+    RecipientPostalfromLeft: Double,
+    RecipientPostalfromTop: Double,
+    ReturnAddress: Range,
+    ReturnAddressFromLeft: Double,
+    ReturnAddressFromTop: Double,
+    ReturnAddressStyle: Style,
+    SenderNamefromLeft: Double,
+    SenderNamefromTop: Double,
+    SenderPostalfromLeft: Double,
+    SenderPostalfromTop: Double,
+    UpdateDocument: Callback,
+    Vertical: Boolean,
+    WordDotEnvelope_typekey: Envelope
+  ): Envelope = {
+    val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], AddressFromLeft = AddressFromLeft.asInstanceOf[js.Any], AddressFromTop = AddressFromTop.asInstanceOf[js.Any], AddressStyle = AddressStyle.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DefaultFaceUp = DefaultFaceUp.asInstanceOf[js.Any], DefaultHeight = DefaultHeight.asInstanceOf[js.Any], DefaultOmitReturnAddress = DefaultOmitReturnAddress.asInstanceOf[js.Any], DefaultOrientation = DefaultOrientation.asInstanceOf[js.Any], DefaultPrintBarCode = DefaultPrintBarCode.asInstanceOf[js.Any], DefaultPrintFIMA = DefaultPrintFIMA.asInstanceOf[js.Any], DefaultSize = DefaultSize.asInstanceOf[js.Any], DefaultWidth = DefaultWidth.asInstanceOf[js.Any], FeedSource = FeedSource.asInstanceOf[js.Any], Insert2000 = js.Any.fromFunction18((t0: js.UndefOr[Any], t1: js.UndefOr[Any], t2: js.UndefOr[Any], t3: js.UndefOr[Any], t4: js.UndefOr[Any], t5: js.UndefOr[Any], t6: js.UndefOr[Any], t7: js.UndefOr[Any], t8: js.UndefOr[Any], t9: js.UndefOr[Any], t10: js.UndefOr[Any], t11: js.UndefOr[Any], t12: js.UndefOr[Any], t13: js.UndefOr[Any], t14: js.UndefOr[Any], t15: js.UndefOr[Any], t16: js.UndefOr[Any], t17: js.UndefOr[Any]) => (Insert2000(t0, t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17)).runNow()), Options = Options.toJsFn, Parent = Parent.asInstanceOf[js.Any], PrintOut2000 = js.Any.fromFunction18((t0: js.UndefOr[Any], t1: js.UndefOr[Any], t2: js.UndefOr[Any], t3: js.UndefOr[Any], t4: js.UndefOr[Any], t5: js.UndefOr[Any], t6: js.UndefOr[Any], t7: js.UndefOr[Any], t8: js.UndefOr[Any], t9: js.UndefOr[Any], t10: js.UndefOr[Any], t11: js.UndefOr[Any], t12: js.UndefOr[Any], t13: js.UndefOr[Any], t14: js.UndefOr[Any], t15: js.UndefOr[Any], t16: js.UndefOr[Any], t17: js.UndefOr[Any]) => (PrintOut2000(t0, t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17)).runNow()), RecipientNamefromLeft = RecipientNamefromLeft.asInstanceOf[js.Any], RecipientNamefromTop = RecipientNamefromTop.asInstanceOf[js.Any], RecipientPostalfromLeft = RecipientPostalfromLeft.asInstanceOf[js.Any], RecipientPostalfromTop = RecipientPostalfromTop.asInstanceOf[js.Any], ReturnAddress = ReturnAddress.asInstanceOf[js.Any], ReturnAddressFromLeft = ReturnAddressFromLeft.asInstanceOf[js.Any], ReturnAddressFromTop = ReturnAddressFromTop.asInstanceOf[js.Any], ReturnAddressStyle = ReturnAddressStyle.asInstanceOf[js.Any], SenderNamefromLeft = SenderNamefromLeft.asInstanceOf[js.Any], SenderNamefromTop = SenderNamefromTop.asInstanceOf[js.Any], SenderPostalfromLeft = SenderPostalfromLeft.asInstanceOf[js.Any], SenderPostalfromTop = SenderPostalfromTop.asInstanceOf[js.Any], UpdateDocument = UpdateDocument.toJsFn, Vertical = Vertical.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.Envelope_typekey")(WordDotEnvelope_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Envelope]
+  }
+  
+  extension [Self <: Envelope](x: Self) {
+    
+    inline def setAddress(value: Range): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressFromLeft(value: Double): Self = StObject.set(x, "AddressFromLeft", value.asInstanceOf[js.Any])
+    
+    inline def setAddressFromTop(value: Double): Self = StObject.set(x, "AddressFromTop", value.asInstanceOf[js.Any])
+    
+    inline def setAddressStyle(value: Style): Self = StObject.set(x, "AddressStyle", value.asInstanceOf[js.Any])
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultFaceUp(value: Boolean): Self = StObject.set(x, "DefaultFaceUp", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultHeight(value: Double): Self = StObject.set(x, "DefaultHeight", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultOmitReturnAddress(value: Boolean): Self = StObject.set(x, "DefaultOmitReturnAddress", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultOrientation(value: WdEnvelopeOrientation): Self = StObject.set(x, "DefaultOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultPrintBarCode(value: Boolean): Self = StObject.set(x, "DefaultPrintBarCode", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultPrintFIMA(value: Boolean): Self = StObject.set(x, "DefaultPrintFIMA", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultSize(value: String): Self = StObject.set(x, "DefaultSize", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultWidth(value: Double): Self = StObject.set(x, "DefaultWidth", value.asInstanceOf[js.Any])
+    
+    inline def setFeedSource(value: WdPaperTray): Self = StObject.set(x, "FeedSource", value.asInstanceOf[js.Any])
+    
+    inline def setInsert2000(
+      value: (js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Callback
+    ): Self = StObject.set(x, "Insert2000", js.Any.fromFunction18((t0: js.UndefOr[Any], t1: js.UndefOr[Any], t2: js.UndefOr[Any], t3: js.UndefOr[Any], t4: js.UndefOr[Any], t5: js.UndefOr[Any], t6: js.UndefOr[Any], t7: js.UndefOr[Any], t8: js.UndefOr[Any], t9: js.UndefOr[Any], t10: js.UndefOr[Any], t11: js.UndefOr[Any], t12: js.UndefOr[Any], t13: js.UndefOr[Any], t14: js.UndefOr[Any], t15: js.UndefOr[Any], t16: js.UndefOr[Any], t17: js.UndefOr[Any]) => (value(t0, t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17)).runNow()))
+    
+    inline def setOptions(value: Callback): Self = StObject.set(x, "Options", value.toJsFn)
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setPrintOut2000(
+      value: (js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Callback
+    ): Self = StObject.set(x, "PrintOut2000", js.Any.fromFunction18((t0: js.UndefOr[Any], t1: js.UndefOr[Any], t2: js.UndefOr[Any], t3: js.UndefOr[Any], t4: js.UndefOr[Any], t5: js.UndefOr[Any], t6: js.UndefOr[Any], t7: js.UndefOr[Any], t8: js.UndefOr[Any], t9: js.UndefOr[Any], t10: js.UndefOr[Any], t11: js.UndefOr[Any], t12: js.UndefOr[Any], t13: js.UndefOr[Any], t14: js.UndefOr[Any], t15: js.UndefOr[Any], t16: js.UndefOr[Any], t17: js.UndefOr[Any]) => (value(t0, t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17)).runNow()))
+    
+    inline def setRecipientNamefromLeft(value: Double): Self = StObject.set(x, "RecipientNamefromLeft", value.asInstanceOf[js.Any])
+    
+    inline def setRecipientNamefromTop(value: Double): Self = StObject.set(x, "RecipientNamefromTop", value.asInstanceOf[js.Any])
+    
+    inline def setRecipientPostalfromLeft(value: Double): Self = StObject.set(x, "RecipientPostalfromLeft", value.asInstanceOf[js.Any])
+    
+    inline def setRecipientPostalfromTop(value: Double): Self = StObject.set(x, "RecipientPostalfromTop", value.asInstanceOf[js.Any])
+    
+    inline def setReturnAddress(value: Range): Self = StObject.set(x, "ReturnAddress", value.asInstanceOf[js.Any])
+    
+    inline def setReturnAddressFromLeft(value: Double): Self = StObject.set(x, "ReturnAddressFromLeft", value.asInstanceOf[js.Any])
+    
+    inline def setReturnAddressFromTop(value: Double): Self = StObject.set(x, "ReturnAddressFromTop", value.asInstanceOf[js.Any])
+    
+    inline def setReturnAddressStyle(value: Style): Self = StObject.set(x, "ReturnAddressStyle", value.asInstanceOf[js.Any])
+    
+    inline def setSenderNamefromLeft(value: Double): Self = StObject.set(x, "SenderNamefromLeft", value.asInstanceOf[js.Any])
+    
+    inline def setSenderNamefromTop(value: Double): Self = StObject.set(x, "SenderNamefromTop", value.asInstanceOf[js.Any])
+    
+    inline def setSenderPostalfromLeft(value: Double): Self = StObject.set(x, "SenderPostalfromLeft", value.asInstanceOf[js.Any])
+    
+    inline def setSenderPostalfromTop(value: Double): Self = StObject.set(x, "SenderPostalfromTop", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateDocument(value: Callback): Self = StObject.set(x, "UpdateDocument", value.toJsFn)
+    
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "Vertical", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotEnvelope_typekey(value: Envelope): Self = StObject.set(x, "Word.Envelope_typekey", value.asInstanceOf[js.Any])
+  }
+}

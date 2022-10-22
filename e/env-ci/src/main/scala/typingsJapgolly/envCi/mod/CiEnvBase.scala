@@ -1,20 +1,23 @@
 package typingsJapgolly.envCi.mod
 
 import typingsJapgolly.envCi.envCiBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CiEnvBase extends js.Object {
+trait CiEnvBase extends StObject {
+  
   var isCi: `true`
 }
-
 object CiEnvBase {
-  @scala.inline
-  def apply(isCi: `true`): CiEnvBase = {
-    val __obj = js.Dynamic.literal(isCi = isCi.asInstanceOf[js.Any])
   
+  inline def apply(): CiEnvBase = {
+    val __obj = js.Dynamic.literal(isCi = true)
     __obj.asInstanceOf[CiEnvBase]
   }
+  
+  extension [Self <: CiEnvBase](x: Self) {
+    
+    inline def setIsCi(value: `true`): Self = StObject.set(x, "isCi", value.asInstanceOf[js.Any])
+  }
 }
-

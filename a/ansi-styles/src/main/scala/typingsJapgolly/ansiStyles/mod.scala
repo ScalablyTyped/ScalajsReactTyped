@@ -1,128 +1,820 @@
 package typingsJapgolly.ansiStyles
 
-import typingsJapgolly.ansiStyles.escapeCodeMod.EscapeCode.CodePair
-import typingsJapgolly.ansiStyles.escapeCodeMod.EscapeCode.Conversions
-import typingsJapgolly.ansiStyles.escapeCodeMod.EscapeCode.Modifier
-import typingsJapgolly.std.Map
+import typingsJapgolly.std.ReadonlyMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ansi-styles", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val bgBlack: CodePair = js.native
-  val bgBlackBright: CodePair = js.native
-  val bgBlue: CodePair = js.native
-  val bgBlueBright: CodePair = js.native
-  val bgCyan: CodePair = js.native
-  val bgCyanBright: CodePair = js.native
-  val bgGreen: CodePair = js.native
-  val bgGreenBright: CodePair = js.native
-  val bgMagenta: CodePair = js.native
-  val bgMagentaBright: CodePair = js.native
-  val bgRed: CodePair = js.native
-  val bgRedBright: CodePair = js.native
-  val bgWhite: CodePair = js.native
-  val bgWhiteBright: CodePair = js.native
-  val bgYellow: CodePair = js.native
-  val bgYellowBright: CodePair = js.native
-  val black: CodePair = js.native
-  val blue: CodePair = js.native
-  val blueBright: CodePair = js.native
-  val bold: CodePair = js.native
-  val codes: Map[Double, Double] = js.native
-  val cyan: CodePair = js.native
-  val cyanBright: CodePair = js.native
-  val dim: CodePair = js.native
-  val gray: CodePair = js.native
-  val green: CodePair = js.native
-  val greenBright: CodePair = js.native
-  val grey: CodePair = js.native
-  val hidden: CodePair = js.native
-  val inverse: CodePair = js.native
-  val italic: CodePair = js.native
-  val magenta: CodePair = js.native
-  val magentaBright: CodePair = js.native
-  val modifier: Modifier = js.native
-  val red: CodePair = js.native
-  val redBright: CodePair = js.native
-  val reset: CodePair = js.native
-  val strikethrough: CodePair = js.native
-  val underline: CodePair = js.native
-  val white: CodePair = js.native
-  val whiteBright: CodePair = js.native
-  val yellow: CodePair = js.native
-  val yellowBright: CodePair = js.native
-  @js.native
-  object bgColor extends js.Object {
+object mod {
+  
+  /* Inlined { readonly modifier :ansi-styles.ansi-styles.Modifier,  readonly color :ansi-styles.ansi-styles.ColorBase & ansi-styles.ansi-styles.ForegroundColor,  readonly bgColor :ansi-styles.ansi-styles.ColorBase & ansi-styles.ansi-styles.BackgroundColor,  readonly codes :std.ReadonlyMap<number, number>} & ansi-styles.ansi-styles.ForegroundColor & ansi-styles.ansi-styles.BackgroundColor & ansi-styles.ansi-styles.Modifier & ansi-styles.ansi-styles.ConvertColor */
+  object default {
+    
+    @JSImport("ansi-styles", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * 16 color ansi code
-      */
-    var ansi: Conversions = js.native
+    	Convert from the ANSI 256 color space to the ANSI 16 color space.
+    	@param code - A number representing the ANSI 256 color.
+    	*/
+    inline def ansi256ToAnsi(code: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ansi256ToAnsi")(code.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @JSImport("ansi-styles", "default.bgBlack")
+    @js.native
+    val bgBlack: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgBlackBright")
+    @js.native
+    val bgBlackBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgBlue")
+    @js.native
+    val bgBlue: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgBlueBright")
+    @js.native
+    val bgBlueBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgColor")
+    @js.native
+    val bgColor: ColorBase & BackgroundColor = js.native
+    
+    @JSImport("ansi-styles", "default.bgCyan")
+    @js.native
+    val bgCyan: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgCyanBright")
+    @js.native
+    val bgCyanBright: CSPair = js.native
+    
     /**
-      * truecolor(16 million color) ansi code
-      */
-    var ansi16m: Conversions = js.native
+    	Alias for `bgBlackBright`.
+    	*/
+    @JSImport("ansi-styles", "default.bgGray")
+    @js.native
+    val bgGray: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgGreen")
+    @js.native
+    val bgGreen: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgGreenBright")
+    @js.native
+    val bgGreenBright: CSPair = js.native
+    
     /**
-      * 256 color ansi code
-      */
-    var ansi256: Conversions = js.native
-    var bgBlack: CodePair = js.native
-    var bgBlackBright: CodePair = js.native
-    var bgBlue: CodePair = js.native
-    var bgBlueBright: CodePair = js.native
-    var bgCyan: CodePair = js.native
-    var bgCyanBright: CodePair = js.native
-    var bgGreen: CodePair = js.native
-    var bgGreenBright: CodePair = js.native
-    var bgMagenta: CodePair = js.native
-    var bgMagentaBright: CodePair = js.native
-    var bgRed: CodePair = js.native
-    var bgRedBright: CodePair = js.native
-    var bgWhite: CodePair = js.native
-    var bgWhiteBright: CodePair = js.native
-    var bgYellow: CodePair = js.native
-    var bgYellowBright: CodePair = js.native
-    var close: String = js.native
+    	Alias for `bgBlackBright`.
+    	*/
+    @JSImport("ansi-styles", "default.bgGrey")
+    @js.native
+    val bgGrey: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgMagenta")
+    @js.native
+    val bgMagenta: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgMagentaBright")
+    @js.native
+    val bgMagentaBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgRed")
+    @js.native
+    val bgRed: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgRedBright")
+    @js.native
+    val bgRedBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgWhite")
+    @js.native
+    val bgWhite: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgWhiteBright")
+    @js.native
+    val bgWhiteBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgYellow")
+    @js.native
+    val bgYellow: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgYellowBright")
+    @js.native
+    val bgYellowBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.black")
+    @js.native
+    val black: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.blackBright")
+    @js.native
+    val blackBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.blue")
+    @js.native
+    val blue: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.blueBright")
+    @js.native
+    val blueBright: CSPair = js.native
+    
+    /**
+    	Make text bold.
+    	*/
+    @JSImport("ansi-styles", "default.bold")
+    @js.native
+    val bold: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.codes")
+    @js.native
+    val codes: ReadonlyMap[Double, Double] = js.native
+    
+    @JSImport("ansi-styles", "default.color")
+    @js.native
+    val color: ColorBase & ForegroundColor = js.native
+    
+    @JSImport("ansi-styles", "default.cyan")
+    @js.native
+    val cyan: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.cyanBright")
+    @js.native
+    val cyanBright: CSPair = js.native
+    
+    /**
+    	Emitting only a small amount of light.
+    	*/
+    @JSImport("ansi-styles", "default.dim")
+    @js.native
+    val dim: CSPair = js.native
+    
+    /**
+    	Alias for `blackBright`.
+    	*/
+    @JSImport("ansi-styles", "default.gray")
+    @js.native
+    val gray: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.green")
+    @js.native
+    val green: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.greenBright")
+    @js.native
+    val greenBright: CSPair = js.native
+    
+    /**
+    	Alias for `blackBright`.
+    	*/
+    @JSImport("ansi-styles", "default.grey")
+    @js.native
+    val grey: CSPair = js.native
+    
+    /**
+    	Convert from the RGB HEX color space to the ANSI 16 color space.
+    	@param hex - A hexadecimal string containing RGB data.
+    	*/
+    inline def hexToAnsi(hex: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToAnsi")(hex.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    /**
+    	Convert from the RGB HEX color space to the ANSI 256 color space.
+    	@param hex - A hexadecimal string containing RGB data.
+    	*/
+    inline def hexToAnsi256(hex: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToAnsi256")(hex.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    /**
+    	Convert from the RGB HEX color space to the RGB color space.
+    	@param hex - A hexadecimal string containing RGB data.
+    	*/
+    inline def hexToRgb(hex: String): js.Tuple3[/* red */ Double, /* green */ Double, /* blue */ Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToRgb")(hex.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[/* red */ Double, /* green */ Double, /* blue */ Double]]
+    
+    /**
+    	Prints the text, but makes it invisible.
+    	*/
+    @JSImport("ansi-styles", "default.hidden")
+    @js.native
+    val hidden: CSPair = js.native
+    
+    /**
+    	Inverse background and foreground colors.
+    	*/
+    @JSImport("ansi-styles", "default.inverse")
+    @js.native
+    val inverse: CSPair = js.native
+    
+    /**
+    	Make text italic. (Not widely supported)
+    	*/
+    @JSImport("ansi-styles", "default.italic")
+    @js.native
+    val italic: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.magenta")
+    @js.native
+    val magenta: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.magentaBright")
+    @js.native
+    val magentaBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.modifier")
+    @js.native
+    val modifier: Modifier = js.native
+    
+    /**
+    	Make text overline.
+    	Supported on VTE-based terminals, the GNOME terminal, mintty, and Git Bash.
+    	*/
+    @JSImport("ansi-styles", "default.overline")
+    @js.native
+    val overline: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.red")
+    @js.native
+    val red: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.redBright")
+    @js.native
+    val redBright: CSPair = js.native
+    
+    /**
+    	Resets the current color chain.
+    	*/
+    @JSImport("ansi-styles", "default.reset")
+    @js.native
+    val reset: CSPair = js.native
+    
+    /**
+    	Convert from the RGB color space to the ANSI 16 color space.
+    	@param red - (`0...255`)
+    	@param green - (`0...255`)
+    	@param blue - (`0...255`)
+    	*/
+    inline def rgbToAnsi(red: Double, green: Double, blue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToAnsi")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    /**
+    	Convert from the RGB color space to the ANSI 256 color space.
+    	@param red - (`0...255`)
+    	@param green - (`0...255`)
+    	@param blue - (`0...255`)
+    	*/
+    inline def rgbToAnsi256(red: Double, green: Double, blue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToAnsi256")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    /**
+    	Puts a horizontal line through the center of the text. (Not widely supported)
+    	*/
+    @JSImport("ansi-styles", "default.strikethrough")
+    @js.native
+    val strikethrough: CSPair = js.native
+    
+    /**
+    	Make text underline. (Not widely supported)
+    	*/
+    @JSImport("ansi-styles", "default.underline")
+    @js.native
+    val underline: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.white")
+    @js.native
+    val white: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.whiteBright")
+    @js.native
+    val whiteBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.yellow")
+    @js.native
+    val yellow: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.yellowBright")
+    @js.native
+    val yellowBright: CSPair = js.native
   }
   
+  @JSImport("ansi-styles", "backgroundColorNames")
   @js.native
-  object color extends js.Object {
+  val backgroundColorNames: js.Array[BackgroundColorName] = js.native
+  
+  @JSImport("ansi-styles", "colorNames")
+  @js.native
+  val colorNames: js.Array[ColorName] = js.native
+  
+  @JSImport("ansi-styles", "foregroundColorNames")
+  @js.native
+  val foregroundColorNames: js.Array[ForegroundColorName] = js.native
+  
+  @JSImport("ansi-styles", "modifierNames")
+  @js.native
+  val modifierNames: js.Array[ModifierName] = js.native
+  
+  trait BackgroundColor extends StObject {
+    
+    val bgBlack: CSPair
+    
+    val bgBlackBright: CSPair
+    
+    val bgBlue: CSPair
+    
+    val bgBlueBright: CSPair
+    
+    val bgCyan: CSPair
+    
+    val bgCyanBright: CSPair
+    
     /**
-      * 16 color ansi code
-      */
-    var ansi: Conversions = js.native
+    	Alias for `bgBlackBright`.
+    	*/
+    val bgGray: CSPair
+    
+    val bgGreen: CSPair
+    
+    val bgGreenBright: CSPair
+    
     /**
-      * truecolor(16 million color) ansi code
-      */
-    var ansi16m: Conversions = js.native
-    /**
-      * 256 color ansi code
-      */
-    var ansi256: Conversions = js.native
-    var black: CodePair = js.native
-    var blue: CodePair = js.native
-    var blueBright: CodePair = js.native
-    var close: String = js.native
-    var cyan: CodePair = js.native
-    var cyanBright: CodePair = js.native
-    /**
-      * bright black
-      */
-    var gray: CodePair = js.native
-    var green: CodePair = js.native
-    var greenBright: CodePair = js.native
-    var grey: CodePair = js.native
-    var magenta: CodePair = js.native
-    var magentaBright: CodePair = js.native
-    var red: CodePair = js.native
-    var redBright: CodePair = js.native
-    var white: CodePair = js.native
-    var whiteBright: CodePair = js.native
-    var yellow: CodePair = js.native
-    var yellowBright: CodePair = js.native
+    	Alias for `bgBlackBright`.
+    	*/
+    val bgGrey: CSPair
+    
+    val bgMagenta: CSPair
+    
+    val bgMagentaBright: CSPair
+    
+    val bgRed: CSPair
+    
+    val bgRedBright: CSPair
+    
+    val bgWhite: CSPair
+    
+    val bgWhiteBright: CSPair
+    
+    val bgYellow: CSPair
+    
+    val bgYellowBright: CSPair
+  }
+  object BackgroundColor {
+    
+    inline def apply(
+      bgBlack: CSPair,
+      bgBlackBright: CSPair,
+      bgBlue: CSPair,
+      bgBlueBright: CSPair,
+      bgCyan: CSPair,
+      bgCyanBright: CSPair,
+      bgGray: CSPair,
+      bgGreen: CSPair,
+      bgGreenBright: CSPair,
+      bgGrey: CSPair,
+      bgMagenta: CSPair,
+      bgMagentaBright: CSPair,
+      bgRed: CSPair,
+      bgRedBright: CSPair,
+      bgWhite: CSPair,
+      bgWhiteBright: CSPair,
+      bgYellow: CSPair,
+      bgYellowBright: CSPair
+    ): BackgroundColor = {
+      val __obj = js.Dynamic.literal(bgBlack = bgBlack.asInstanceOf[js.Any], bgBlackBright = bgBlackBright.asInstanceOf[js.Any], bgBlue = bgBlue.asInstanceOf[js.Any], bgBlueBright = bgBlueBright.asInstanceOf[js.Any], bgCyan = bgCyan.asInstanceOf[js.Any], bgCyanBright = bgCyanBright.asInstanceOf[js.Any], bgGray = bgGray.asInstanceOf[js.Any], bgGreen = bgGreen.asInstanceOf[js.Any], bgGreenBright = bgGreenBright.asInstanceOf[js.Any], bgGrey = bgGrey.asInstanceOf[js.Any], bgMagenta = bgMagenta.asInstanceOf[js.Any], bgMagentaBright = bgMagentaBright.asInstanceOf[js.Any], bgRed = bgRed.asInstanceOf[js.Any], bgRedBright = bgRedBright.asInstanceOf[js.Any], bgWhite = bgWhite.asInstanceOf[js.Any], bgWhiteBright = bgWhiteBright.asInstanceOf[js.Any], bgYellow = bgYellow.asInstanceOf[js.Any], bgYellowBright = bgYellowBright.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BackgroundColor]
+    }
+    
+    extension [Self <: BackgroundColor](x: Self) {
+      
+      inline def setBgBlack(value: CSPair): Self = StObject.set(x, "bgBlack", value.asInstanceOf[js.Any])
+      
+      inline def setBgBlackBright(value: CSPair): Self = StObject.set(x, "bgBlackBright", value.asInstanceOf[js.Any])
+      
+      inline def setBgBlue(value: CSPair): Self = StObject.set(x, "bgBlue", value.asInstanceOf[js.Any])
+      
+      inline def setBgBlueBright(value: CSPair): Self = StObject.set(x, "bgBlueBright", value.asInstanceOf[js.Any])
+      
+      inline def setBgCyan(value: CSPair): Self = StObject.set(x, "bgCyan", value.asInstanceOf[js.Any])
+      
+      inline def setBgCyanBright(value: CSPair): Self = StObject.set(x, "bgCyanBright", value.asInstanceOf[js.Any])
+      
+      inline def setBgGray(value: CSPair): Self = StObject.set(x, "bgGray", value.asInstanceOf[js.Any])
+      
+      inline def setBgGreen(value: CSPair): Self = StObject.set(x, "bgGreen", value.asInstanceOf[js.Any])
+      
+      inline def setBgGreenBright(value: CSPair): Self = StObject.set(x, "bgGreenBright", value.asInstanceOf[js.Any])
+      
+      inline def setBgGrey(value: CSPair): Self = StObject.set(x, "bgGrey", value.asInstanceOf[js.Any])
+      
+      inline def setBgMagenta(value: CSPair): Self = StObject.set(x, "bgMagenta", value.asInstanceOf[js.Any])
+      
+      inline def setBgMagentaBright(value: CSPair): Self = StObject.set(x, "bgMagentaBright", value.asInstanceOf[js.Any])
+      
+      inline def setBgRed(value: CSPair): Self = StObject.set(x, "bgRed", value.asInstanceOf[js.Any])
+      
+      inline def setBgRedBright(value: CSPair): Self = StObject.set(x, "bgRedBright", value.asInstanceOf[js.Any])
+      
+      inline def setBgWhite(value: CSPair): Self = StObject.set(x, "bgWhite", value.asInstanceOf[js.Any])
+      
+      inline def setBgWhiteBright(value: CSPair): Self = StObject.set(x, "bgWhiteBright", value.asInstanceOf[js.Any])
+      
+      inline def setBgYellow(value: CSPair): Self = StObject.set(x, "bgYellow", value.asInstanceOf[js.Any])
+      
+      inline def setBgYellowBright(value: CSPair): Self = StObject.set(x, "bgYellowBright", value.asInstanceOf[js.Any])
+    }
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgBlack
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgRed
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgGreen
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgYellow
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgBlue
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgCyan
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgMagenta
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgWhite
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgGray
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgGrey
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgBlackBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgRedBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgGreenBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgYellowBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgBlueBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgCyanBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgMagentaBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bgWhiteBright
+  */
+  trait BackgroundColorName
+    extends StObject
+       with ColorName
+  
+  trait CSPair extends StObject {
+    
+    /**
+    	The ANSI terminal control sequence for ending this style.
+    	*/
+    val close: String
+    
+    // eslint-disable-line @typescript-eslint/naming-convention
+    /**
+    	The ANSI terminal control sequence for starting this style.
+    	*/
+    val open: String
+  }
+  object CSPair {
+    
+    inline def apply(close: String, open: String): CSPair = {
+      val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CSPair]
+    }
+    
+    extension [Self <: CSPair](x: Self) {
+      
+      inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      
+      inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ColorBase extends StObject {
+    
+    def ansi(code: Double): String
+    
+    def ansi16m(red: Double, green: Double, blue: Double): String
+    
+    def ansi256(code: Double): String
+    
+    /**
+    	The ANSI terminal control sequence for ending this color.
+    	*/
+    val close: String
+  }
+  object ColorBase {
+    
+    inline def apply(
+      ansi: Double => String,
+      ansi16m: (Double, Double, Double) => String,
+      ansi256: Double => String,
+      close: String
+    ): ColorBase = {
+      val __obj = js.Dynamic.literal(ansi = js.Any.fromFunction1(ansi), ansi16m = js.Any.fromFunction3(ansi16m), ansi256 = js.Any.fromFunction1(ansi256), close = close.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ColorBase]
+    }
+    
+    extension [Self <: ColorBase](x: Self) {
+      
+      inline def setAnsi(value: Double => String): Self = StObject.set(x, "ansi", js.Any.fromFunction1(value))
+      
+      inline def setAnsi16m(value: (Double, Double, Double) => String): Self = StObject.set(x, "ansi16m", js.Any.fromFunction3(value))
+      
+      inline def setAnsi256(value: Double => String): Self = StObject.set(x, "ansi256", js.Any.fromFunction1(value))
+      
+      inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typingsJapgolly.ansiStyles.mod.ForegroundColorName
+    - typingsJapgolly.ansiStyles.mod.BackgroundColorName
+  */
+  trait ColorName extends StObject
+  
+  trait ConvertColor extends StObject {
+    
+    /**
+    	Convert from the ANSI 256 color space to the ANSI 16 color space.
+    	@param code - A number representing the ANSI 256 color.
+    	*/
+    def ansi256ToAnsi(code: Double): Double
+    
+    /**
+    	Convert from the RGB HEX color space to the ANSI 16 color space.
+    	@param hex - A hexadecimal string containing RGB data.
+    	*/
+    def hexToAnsi(hex: String): Double
+    
+    /**
+    	Convert from the RGB HEX color space to the ANSI 256 color space.
+    	@param hex - A hexadecimal string containing RGB data.
+    	*/
+    def hexToAnsi256(hex: String): Double
+    
+    /**
+    	Convert from the RGB HEX color space to the RGB color space.
+    	@param hex - A hexadecimal string containing RGB data.
+    	*/
+    def hexToRgb(hex: String): js.Tuple3[/* red */ Double, /* green */ Double, /* blue */ Double]
+    
+    /**
+    	Convert from the RGB color space to the ANSI 16 color space.
+    	@param red - (`0...255`)
+    	@param green - (`0...255`)
+    	@param blue - (`0...255`)
+    	*/
+    def rgbToAnsi(red: Double, green: Double, blue: Double): Double
+    
+    /**
+    	Convert from the RGB color space to the ANSI 256 color space.
+    	@param red - (`0...255`)
+    	@param green - (`0...255`)
+    	@param blue - (`0...255`)
+    	*/
+    def rgbToAnsi256(red: Double, green: Double, blue: Double): Double
+  }
+  object ConvertColor {
+    
+    inline def apply(
+      ansi256ToAnsi: Double => Double,
+      hexToAnsi: String => Double,
+      hexToAnsi256: String => Double,
+      hexToRgb: String => js.Tuple3[/* red */ Double, /* green */ Double, /* blue */ Double],
+      rgbToAnsi: (Double, Double, Double) => Double,
+      rgbToAnsi256: (Double, Double, Double) => Double
+    ): ConvertColor = {
+      val __obj = js.Dynamic.literal(ansi256ToAnsi = js.Any.fromFunction1(ansi256ToAnsi), hexToAnsi = js.Any.fromFunction1(hexToAnsi), hexToAnsi256 = js.Any.fromFunction1(hexToAnsi256), hexToRgb = js.Any.fromFunction1(hexToRgb), rgbToAnsi = js.Any.fromFunction3(rgbToAnsi), rgbToAnsi256 = js.Any.fromFunction3(rgbToAnsi256))
+      __obj.asInstanceOf[ConvertColor]
+    }
+    
+    extension [Self <: ConvertColor](x: Self) {
+      
+      inline def setAnsi256ToAnsi(value: Double => Double): Self = StObject.set(x, "ansi256ToAnsi", js.Any.fromFunction1(value))
+      
+      inline def setHexToAnsi(value: String => Double): Self = StObject.set(x, "hexToAnsi", js.Any.fromFunction1(value))
+      
+      inline def setHexToAnsi256(value: String => Double): Self = StObject.set(x, "hexToAnsi256", js.Any.fromFunction1(value))
+      
+      inline def setHexToRgb(value: String => js.Tuple3[/* red */ Double, /* green */ Double, /* blue */ Double]): Self = StObject.set(x, "hexToRgb", js.Any.fromFunction1(value))
+      
+      inline def setRgbToAnsi(value: (Double, Double, Double) => Double): Self = StObject.set(x, "rgbToAnsi", js.Any.fromFunction3(value))
+      
+      inline def setRgbToAnsi256(value: (Double, Double, Double) => Double): Self = StObject.set(x, "rgbToAnsi256", js.Any.fromFunction3(value))
+    }
+  }
+  
+  trait ForegroundColor extends StObject {
+    
+    val black: CSPair
+    
+    val blackBright: CSPair
+    
+    val blue: CSPair
+    
+    val blueBright: CSPair
+    
+    val cyan: CSPair
+    
+    val cyanBright: CSPair
+    
+    /**
+    	Alias for `blackBright`.
+    	*/
+    val gray: CSPair
+    
+    val green: CSPair
+    
+    val greenBright: CSPair
+    
+    /**
+    	Alias for `blackBright`.
+    	*/
+    val grey: CSPair
+    
+    val magenta: CSPair
+    
+    val magentaBright: CSPair
+    
+    val red: CSPair
+    
+    val redBright: CSPair
+    
+    val white: CSPair
+    
+    val whiteBright: CSPair
+    
+    val yellow: CSPair
+    
+    val yellowBright: CSPair
+  }
+  object ForegroundColor {
+    
+    inline def apply(
+      black: CSPair,
+      blackBright: CSPair,
+      blue: CSPair,
+      blueBright: CSPair,
+      cyan: CSPair,
+      cyanBright: CSPair,
+      gray: CSPair,
+      green: CSPair,
+      greenBright: CSPair,
+      grey: CSPair,
+      magenta: CSPair,
+      magentaBright: CSPair,
+      red: CSPair,
+      redBright: CSPair,
+      white: CSPair,
+      whiteBright: CSPair,
+      yellow: CSPair,
+      yellowBright: CSPair
+    ): ForegroundColor = {
+      val __obj = js.Dynamic.literal(black = black.asInstanceOf[js.Any], blackBright = blackBright.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], blueBright = blueBright.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], cyanBright = cyanBright.asInstanceOf[js.Any], gray = gray.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], greenBright = greenBright.asInstanceOf[js.Any], grey = grey.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], magentaBright = magentaBright.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], redBright = redBright.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any], whiteBright = whiteBright.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any], yellowBright = yellowBright.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ForegroundColor]
+    }
+    
+    extension [Self <: ForegroundColor](x: Self) {
+      
+      inline def setBlack(value: CSPair): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
+      
+      inline def setBlackBright(value: CSPair): Self = StObject.set(x, "blackBright", value.asInstanceOf[js.Any])
+      
+      inline def setBlue(value: CSPair): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+      
+      inline def setBlueBright(value: CSPair): Self = StObject.set(x, "blueBright", value.asInstanceOf[js.Any])
+      
+      inline def setCyan(value: CSPair): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
+      
+      inline def setCyanBright(value: CSPair): Self = StObject.set(x, "cyanBright", value.asInstanceOf[js.Any])
+      
+      inline def setGray(value: CSPair): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
+      
+      inline def setGreen(value: CSPair): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+      
+      inline def setGreenBright(value: CSPair): Self = StObject.set(x, "greenBright", value.asInstanceOf[js.Any])
+      
+      inline def setGrey(value: CSPair): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
+      
+      inline def setMagenta(value: CSPair): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
+      
+      inline def setMagentaBright(value: CSPair): Self = StObject.set(x, "magentaBright", value.asInstanceOf[js.Any])
+      
+      inline def setRed(value: CSPair): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+      
+      inline def setRedBright(value: CSPair): Self = StObject.set(x, "redBright", value.asInstanceOf[js.Any])
+      
+      inline def setWhite(value: CSPair): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+      
+      inline def setWhiteBright(value: CSPair): Self = StObject.set(x, "whiteBright", value.asInstanceOf[js.Any])
+      
+      inline def setYellow(value: CSPair): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+      
+      inline def setYellowBright(value: CSPair): Self = StObject.set(x, "yellowBright", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.black
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.red
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.green
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.yellow
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.blue
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.cyan
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.magenta
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.white
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.gray
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.grey
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.blackBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.redBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.greenBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.yellowBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.blueBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.cyanBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.magentaBright
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.whiteBright
+  */
+  trait ForegroundColorName
+    extends StObject
+       with ColorName
+  
+  trait Modifier extends StObject {
+    
+    /**
+    	Make text bold.
+    	*/
+    val bold: CSPair
+    
+    /**
+    	Emitting only a small amount of light.
+    	*/
+    val dim: CSPair
+    
+    /**
+    	Prints the text, but makes it invisible.
+    	*/
+    val hidden: CSPair
+    
+    /**
+    	Inverse background and foreground colors.
+    	*/
+    val inverse: CSPair
+    
+    /**
+    	Make text italic. (Not widely supported)
+    	*/
+    val italic: CSPair
+    
+    /**
+    	Make text overline.
+    	Supported on VTE-based terminals, the GNOME terminal, mintty, and Git Bash.
+    	*/
+    val overline: CSPair
+    
+    /**
+    	Resets the current color chain.
+    	*/
+    val reset: CSPair
+    
+    /**
+    	Puts a horizontal line through the center of the text. (Not widely supported)
+    	*/
+    val strikethrough: CSPair
+    
+    /**
+    	Make text underline. (Not widely supported)
+    	*/
+    val underline: CSPair
+  }
+  object Modifier {
+    
+    inline def apply(
+      bold: CSPair,
+      dim: CSPair,
+      hidden: CSPair,
+      inverse: CSPair,
+      italic: CSPair,
+      overline: CSPair,
+      reset: CSPair,
+      strikethrough: CSPair,
+      underline: CSPair
+    ): Modifier = {
+      val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], dim = dim.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any], italic = italic.asInstanceOf[js.Any], overline = overline.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], strikethrough = strikethrough.asInstanceOf[js.Any], underline = underline.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Modifier]
+    }
+    
+    extension [Self <: Modifier](x: Self) {
+      
+      inline def setBold(value: CSPair): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      
+      inline def setDim(value: CSPair): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
+      
+      inline def setHidden(value: CSPair): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      
+      inline def setInverse(value: CSPair): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+      
+      inline def setItalic(value: CSPair): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      
+      inline def setOverline(value: CSPair): Self = StObject.set(x, "overline", value.asInstanceOf[js.Any])
+      
+      inline def setReset(value: CSPair): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      
+      inline def setStrikethrough(value: CSPair): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+      
+      inline def setUnderline(value: CSPair): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.reset
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.bold
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.dim
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.italic
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.underline
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.overline
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.inverse
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.hidden
+    - typingsJapgolly.ansiStyles.ansiStylesStrings.strikethrough
+  */
+  trait ModifierName extends StObject
 }
-

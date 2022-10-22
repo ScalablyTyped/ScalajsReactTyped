@@ -1,19 +1,22 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObjectIdentifierParam extends js.Object {
+trait ObjectIdentifierParam extends StObject {
+  
   var oid: String
 }
-
 object ObjectIdentifierParam {
-  @scala.inline
-  def apply(oid: String): ObjectIdentifierParam = {
-    val __obj = js.Dynamic.literal(oid = oid.asInstanceOf[js.Any])
   
+  inline def apply(oid: String): ObjectIdentifierParam = {
+    val __obj = js.Dynamic.literal(oid = oid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectIdentifierParam]
   }
+  
+  extension [Self <: ObjectIdentifierParam](x: Self) {
+    
+    inline def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
+  }
 }
-

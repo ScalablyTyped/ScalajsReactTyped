@@ -3,14 +3,58 @@ package typingsJapgolly.ionicAngular.mod
 import typingsJapgolly.angularCore.mod.ChangeDetectorRef
 import typingsJapgolly.angularCore.mod.ElementRef
 import typingsJapgolly.angularCore.mod.NgZone
+import typingsJapgolly.angularCore.mod.ɵɵComponentDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import typingsJapgolly.ionicAngular.anon.Translucent
+import typingsJapgolly.ionicAngular.ionicAngularBooleans.`false`
+import typingsJapgolly.ionicAngular.ionicAngularStrings.Asterisk
+import typingsJapgolly.ionicAngular.ionicAngularStrings.`ion-card-header`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular", "IonCardHeader")
 @js.native
-class IonCardHeader protected ()
-  extends typingsJapgolly.ionicAngular.distMod.IonCardHeader {
-  def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
+open class IonCardHeader protected ()
+  extends typingsJapgolly.ionicAngular.directivesProxiesMod.IonCardHeader {
+  def this(c: ChangeDetectorRef, r: ElementRef[Any], z: NgZone) = this()
 }
-
+/* static members */
+object IonCardHeader {
+  
+  @JSImport("@ionic/angular", "IonCardHeader")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ionic/angular", "IonCardHeader.\u0275cmp")
+  @js.native
+  def ɵcmp: ɵɵComponentDeclaration[
+    typingsJapgolly.ionicAngular.directivesProxiesMod.IonCardHeader, 
+    `ion-card-header`, 
+    scala.Nothing, 
+    Translucent, 
+    js.Object, 
+    scala.Nothing, 
+    js.Array[Asterisk], 
+    `false`
+  ] = js.native
+  inline def ɵcmp_=(
+    x: ɵɵComponentDeclaration[
+      typingsJapgolly.ionicAngular.directivesProxiesMod.IonCardHeader, 
+      `ion-card-header`, 
+      scala.Nothing, 
+      Translucent, 
+      js.Object, 
+      scala.Nothing, 
+      js.Array[Asterisk], 
+      `false`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275cmp")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@ionic/angular", "IonCardHeader.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[typingsJapgolly.ionicAngular.directivesProxiesMod.IonCardHeader, scala.Nothing] = js.native
+  inline def ɵfac_=(
+    x: ɵɵFactoryDeclaration[typingsJapgolly.ionicAngular.directivesProxiesMod.IonCardHeader, scala.Nothing]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+}

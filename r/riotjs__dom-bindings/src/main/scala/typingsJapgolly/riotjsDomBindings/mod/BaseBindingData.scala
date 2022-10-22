@@ -1,31 +1,42 @@
 package typingsJapgolly.riotjsDomBindings.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseBindingData extends js.Object {
-  var evaluate: js.UndefOr[js.Function1[/* scope */ js.Any, _]] = js.undefined
+trait BaseBindingData[Scope] extends StObject {
+  
+  var evaluate: js.UndefOr[js.Function1[/* scope */ Scope, Any]] = js.undefined
+  
   var redundantAttribute: js.UndefOr[String] = js.undefined
+  
   var selector: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[BindingType] = js.undefined
 }
-
 object BaseBindingData {
-  @scala.inline
-  def apply(
-    evaluate: /* scope */ js.Any => CallbackTo[js.Any] = null,
-    redundantAttribute: String = null,
-    selector: String = null,
-    `type`: BindingType = null
-  ): BaseBindingData = {
+  
+  inline def apply[Scope](): BaseBindingData[Scope] = {
     val __obj = js.Dynamic.literal()
-    if (evaluate != null) __obj.updateDynamic("evaluate")(js.Any.fromFunction1((t0: /* scope */ js.Any) => evaluate(t0).runNow()))
-    if (redundantAttribute != null) __obj.updateDynamic("redundantAttribute")(redundantAttribute.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BaseBindingData]
+    __obj.asInstanceOf[BaseBindingData[Scope]]
+  }
+  
+  extension [Self <: BaseBindingData[?], Scope](x: Self & BaseBindingData[Scope]) {
+    
+    inline def setEvaluate(value: /* scope */ Scope => Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
+    
+    inline def setEvaluateUndefined: Self = StObject.set(x, "evaluate", js.undefined)
+    
+    inline def setRedundantAttribute(value: String): Self = StObject.set(x, "redundantAttribute", value.asInstanceOf[js.Any])
+    
+    inline def setRedundantAttributeUndefined: Self = StObject.set(x, "redundantAttribute", js.undefined)
+    
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    
+    inline def setType(value: BindingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }
-

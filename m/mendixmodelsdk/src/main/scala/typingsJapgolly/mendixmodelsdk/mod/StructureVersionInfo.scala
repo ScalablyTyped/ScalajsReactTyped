@@ -1,15 +1,14 @@
 package typingsJapgolly.mendixmodelsdk.mod
 
-import typingsJapgolly.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
-import typingsJapgolly.mendixmodelsdk.versionChecksMod.StructureType
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalVersionChecksMod.IStructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalVersionChecksMod.StructureType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "StructureVersionInfo")
 @js.native
-class StructureVersionInfo protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.StructureVersionInfo {
+open class StructureVersionInfo protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.StructureVersionInfo {
   def this(info: IStructureVersionInfo, structureType: StructureType) = this()
 }
-

@@ -6,79 +6,84 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.meters_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.miles_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CircleProperties extends PolygonProperties {
+trait CircleProperties
+  extends StObject
+     with PolygonProperties {
+  
   /**
-    * The center point of the circle. The center must be specified either as a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) or an array of longitude/latitude coordinates.
+    * The center point of the circle.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#center)
     */
   var center: js.UndefOr[PointProperties] = js.undefined
+  
   /**
-    * Applicable when the spatial reference of the center point is either set to Web Mercator (wkid: 3857) or geographic/geodesic (wkid: 4326). When  either of those spatial references is used, set geodesic to `true` to minimize distortion. Other coordinate systems will not create geodesic circles.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#geodesic)
+    * Applicable when the spatial reference of the center point is either set to Web Mercator (wkid: 3857) or geographic/geodesic (wkid: 4326).
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#geodesic)
     */
   var geodesic: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * This value defines the number of points along the curve of the circle.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#numberOfPoints)
-    *
     * @default 60
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#numberOfPoints)
     */
   var numberOfPoints: js.UndefOr[Double] = js.undefined
+  
   /**
     * The radius of the circle.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#radius)
-    *
     * @default 1000
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#radius)
     */
   var radius: js.UndefOr[Double] = js.undefined
+  
   /**
     * Unit of the radius.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#radiusUnit)
-    *
     * @default meters
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html#radiusUnit)
     */
   var radiusUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
 }
-
 object CircleProperties {
-  @scala.inline
-  def apply(
-    center: PointProperties = null,
-    centroid: PointProperties = null,
-    geodesic: js.UndefOr[Boolean] = js.undefined,
-    hasM: js.UndefOr[Boolean] = js.undefined,
-    hasZ: js.UndefOr[Boolean] = js.undefined,
-    isSelfIntersecting: js.UndefOr[Boolean] = js.undefined,
-    numberOfPoints: Int | Double = null,
-    radius: Int | Double = null,
-    radiusUnit: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards = null,
-    rings: js.Array[js.Array[js.Array[Double]]] = null,
-    spatialReference: SpatialReferenceProperties = null
-  ): CircleProperties = {
+  
+  inline def apply(): CircleProperties = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (centroid != null) __obj.updateDynamic("centroid")(centroid.asInstanceOf[js.Any])
-    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelfIntersecting)) __obj.updateDynamic("isSelfIntersecting")(isSelfIntersecting.asInstanceOf[js.Any])
-    if (numberOfPoints != null) __obj.updateDynamic("numberOfPoints")(numberOfPoints.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (radiusUnit != null) __obj.updateDynamic("radiusUnit")(radiusUnit.asInstanceOf[js.Any])
-    if (rings != null) __obj.updateDynamic("rings")(rings.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleProperties]
   }
+  
+  extension [Self <: CircleProperties](x: Self) {
+    
+    inline def setCenter(value: PointProperties): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    
+    inline def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
+    
+    inline def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
+    
+    inline def setNumberOfPoints(value: Double): Self = StObject.set(x, "numberOfPoints", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfPointsUndefined: Self = StObject.set(x, "numberOfPoints", js.undefined)
+    
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    
+    inline def setRadiusUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "radiusUnit", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUnitUndefined: Self = StObject.set(x, "radiusUnit", js.undefined)
+  }
 }
-

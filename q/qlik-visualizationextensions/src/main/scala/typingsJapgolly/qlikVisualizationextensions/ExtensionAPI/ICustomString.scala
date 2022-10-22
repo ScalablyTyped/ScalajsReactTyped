@@ -1,19 +1,25 @@
 package typingsJapgolly.qlikVisualizationextensions.ExtensionAPI
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICustomString extends ICustomControl {
+trait ICustomString
+  extends StObject
+     with ICustomControl {
+  
   var defaultValue: String
+  
   var expression: ExpressionType
+  
   var maxlength: Double
+  
   var show: valueOrfunc[Boolean]
 }
-
 object ICustomString {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     defaultValue: String,
     expression: ExpressionType,
     label: String,
@@ -26,5 +32,17 @@ object ICustomString {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomString]
   }
+  
+  extension [Self <: ICustomString](x: Self) {
+    
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setExpression(value: ExpressionType): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    
+    inline def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
+    
+    inline def setShow(value: valueOrfunc[Boolean]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowCallbackTo(value: CallbackTo[Boolean]): Self = StObject.set(x, "show", value.toJsFn)
+  }
 }
-

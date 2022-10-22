@@ -1,13 +1,13 @@
 package typingsJapgolly.angularOdataResources.OData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("OData.Property")
 @js.native
-class Property protected () extends IExecutable {
-  def this(value: String) = this()
-  var value: js.Any = js.native
+trait Property
+  extends StObject
+     with IExecutable {
+  
+  /* private */ var value: Any = js.native
 }
-

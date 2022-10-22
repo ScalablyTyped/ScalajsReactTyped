@@ -4,21 +4,21 @@
 Typings are for version 1.3
 
 ## Library description:
-JavaScript Client Library for the Ghost [Content API](https://ghost.org/docs/api/content/)
+JavaScript Client Library for the Ghost [Content API](https://ghost.org/docs/content-api/)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @tryghost/content-api |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 8 |
-| # downloads        | 143866 |
-| # stars            | 0 |
+| # releases         | 55 |
+| # dependents       | 0.0 |
+| # downloads        | 147481.0 |
+| # stars            | 84.0 |
 
 ## Links
-- [Homepage](https://github.com/TryGhost/Ghost-SDKs#readme)
-- [Bugs](https://github.com/TryGhost/Ghost-SDKs/issues)
-- [Repository](https://github.com/TryGhost/Ghost-SDKs)
+- [Homepage](https://github.com/TryGhost/SDK/tree/master#readme)
+- [Bugs](https://github.com/TryGhost/SDK/issues)
+- [Repository](https://github.com/TryGhost/SDK/tree/master)
 - [Npm](https://www.npmjs.com/package/%40tryghost%2Fcontent-api)
     
 

@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Document
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextAlignment extends js.Object
-
+sealed trait TextAlignment extends StObject
 /**
   * An enumeration of the type of text alignments.
   *
@@ -17,26 +15,20 @@ sealed trait TextAlignment extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Document.TextAlignment")
 @js.native
-object TextAlignment extends js.Object {
-  @js.native
-  sealed trait NORMAL extends TextAlignment
+object TextAlignment extends StObject {
   
   @js.native
-  sealed trait SUBSCRIPT extends TextAlignment
+  sealed trait NORMAL
+    extends StObject
+       with TextAlignment
   
   @js.native
-  sealed trait SUPERSCRIPT extends TextAlignment
+  sealed trait SUBSCRIPT
+    extends StObject
+       with TextAlignment
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextAlignment with Double] = js.native
-  /* 0 */ @js.native
-  object NORMAL extends TopLevel[NORMAL with Double]
-  
-  /* 2 */ @js.native
-  object SUBSCRIPT extends TopLevel[SUBSCRIPT with Double]
-  
-  /* 1 */ @js.native
-  object SUPERSCRIPT extends TopLevel[SUPERSCRIPT with Double]
-  
+  @js.native
+  sealed trait SUPERSCRIPT
+    extends StObject
+       with TextAlignment
 }
-

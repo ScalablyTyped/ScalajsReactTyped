@@ -1,27 +1,32 @@
 package typingsJapgolly.ionic.definitionsMod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.node.fsMod.Stats
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IntegrationAddHandlers extends js.Object {
+trait IntegrationAddHandlers extends StObject {
+  
   var conflictHandler: js.UndefOr[js.Function2[/* f */ String, /* stats */ Stats, js.Promise[Boolean]]] = js.undefined
+  
   var onFileCreate: js.UndefOr[js.Function1[/* f */ String, Unit]] = js.undefined
 }
-
 object IntegrationAddHandlers {
-  @scala.inline
-  def apply(
-    conflictHandler: (/* f */ String, /* stats */ Stats) => CallbackTo[js.Promise[Boolean]] = null,
-    onFileCreate: /* f */ String => Callback = null
-  ): IntegrationAddHandlers = {
+  
+  inline def apply(): IntegrationAddHandlers = {
     val __obj = js.Dynamic.literal()
-    if (conflictHandler != null) __obj.updateDynamic("conflictHandler")(js.Any.fromFunction2((t0: /* f */ java.lang.String, t1: /* stats */ typingsJapgolly.node.fsMod.Stats) => conflictHandler(t0, t1).runNow()))
-    if (onFileCreate != null) __obj.updateDynamic("onFileCreate")(js.Any.fromFunction1((t0: /* f */ java.lang.String) => onFileCreate(t0).runNow()))
     __obj.asInstanceOf[IntegrationAddHandlers]
   }
+  
+  extension [Self <: IntegrationAddHandlers](x: Self) {
+    
+    inline def setConflictHandler(value: (/* f */ String, /* stats */ Stats) => js.Promise[Boolean]): Self = StObject.set(x, "conflictHandler", js.Any.fromFunction2(value))
+    
+    inline def setConflictHandlerUndefined: Self = StObject.set(x, "conflictHandler", js.undefined)
+    
+    inline def setOnFileCreate(value: /* f */ String => Callback): Self = StObject.set(x, "onFileCreate", js.Any.fromFunction1((t0: /* f */ String) => value(t0).runNow()))
+    
+    inline def setOnFileCreateUndefined: Self = StObject.set(x, "onFileCreate", js.undefined)
+  }
 }
-

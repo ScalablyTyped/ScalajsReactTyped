@@ -1,74 +1,126 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnenotePage extends OnenoteEntitySchemaObjectModel {
+trait OnenotePage
+  extends StObject
+     with OnenoteEntitySchemaObjectModel {
+  
   // The page's HTML content.
-  var content: js.UndefOr[js.Any] = js.undefined
+  var content: js.UndefOr[NullableOption[Any]] = js.undefined
+  
   // The URL for the page's HTML content. Read-only.
-  var contentUrl: js.UndefOr[String] = js.undefined
+  var contentUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The unique identifier of the application that created the page. Read-only.
-  var createdByAppId: js.UndefOr[String] = js.undefined
+  var createdByAppId: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601
-    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
-    * '2014-01-01T00:00:00Z'. Read-only.
+    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     */
-  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The indentation level of the page. Read-only.
-  var level: js.UndefOr[Double] = js.undefined
+  var level: js.UndefOr[NullableOption[Double]] = js.undefined
+  
   /**
     * Links for opening the page. The oneNoteClientURL link opens the page in the OneNote native client if it 's installed.
     * The oneNoteWebUrl link opens the page in OneNote on the web. Read-only.
     */
-  var links: js.UndefOr[PageLinks] = js.undefined
+  var links: js.UndefOr[NullableOption[PageLinks]] = js.undefined
+  
   // The order of the page within its parent section. Read-only.
-  var order: js.UndefOr[Double] = js.undefined
+  var order: js.UndefOr[NullableOption[Double]] = js.undefined
+  
   // The notebook that contains the page. Read-only.
-  var parentNotebook: js.UndefOr[Notebook] = js.undefined
+  var parentNotebook: js.UndefOr[NullableOption[Notebook]] = js.undefined
+  
   // The section that contains the page. Read-only.
-  var parentSection: js.UndefOr[OnenoteSection] = js.undefined
+  var parentSection: js.UndefOr[NullableOption[OnenoteSection]] = js.undefined
+  
   // The title of the page.
-  var title: js.UndefOr[String] = js.undefined
-  var userTags: js.UndefOr[js.Array[String]] = js.undefined
+  var title: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var userTags: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
-
 object OnenotePage {
-  @scala.inline
-  def apply(
-    content: js.Any = null,
-    contentUrl: String = null,
-    createdByAppId: String = null,
-    createdDateTime: String = null,
-    id: String = null,
-    lastModifiedDateTime: String = null,
-    level: Int | Double = null,
-    links: PageLinks = null,
-    order: Int | Double = null,
-    parentNotebook: Notebook = null,
-    parentSection: OnenoteSection = null,
-    self: String = null,
-    title: String = null,
-    userTags: js.Array[String] = null
-  ): OnenotePage = {
+  
+  inline def apply(): OnenotePage = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
-    if (createdByAppId != null) __obj.updateDynamic("createdByAppId")(createdByAppId.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (parentNotebook != null) __obj.updateDynamic("parentNotebook")(parentNotebook.asInstanceOf[js.Any])
-    if (parentSection != null) __obj.updateDynamic("parentSection")(parentSection.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (userTags != null) __obj.updateDynamic("userTags")(userTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnenotePage]
   }
+  
+  extension [Self <: OnenotePage](x: Self) {
+    
+    inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentNull: Self = StObject.set(x, "content", null)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setContentUrl(value: NullableOption[String]): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+    
+    inline def setContentUrlNull: Self = StObject.set(x, "contentUrl", null)
+    
+    inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+    
+    inline def setCreatedByAppId(value: NullableOption[String]): Self = StObject.set(x, "createdByAppId", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedByAppIdNull: Self = StObject.set(x, "createdByAppId", null)
+    
+    inline def setCreatedByAppIdUndefined: Self = StObject.set(x, "createdByAppId", js.undefined)
+    
+    inline def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
+    
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    
+    inline def setLevel(value: NullableOption[Double]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelNull: Self = StObject.set(x, "level", null)
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setLinks(value: NullableOption[PageLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    
+    inline def setLinksNull: Self = StObject.set(x, "links", null)
+    
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    
+    inline def setOrder(value: NullableOption[Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setOrderNull: Self = StObject.set(x, "order", null)
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    
+    inline def setParentNotebook(value: NullableOption[Notebook]): Self = StObject.set(x, "parentNotebook", value.asInstanceOf[js.Any])
+    
+    inline def setParentNotebookNull: Self = StObject.set(x, "parentNotebook", null)
+    
+    inline def setParentNotebookUndefined: Self = StObject.set(x, "parentNotebook", js.undefined)
+    
+    inline def setParentSection(value: NullableOption[OnenoteSection]): Self = StObject.set(x, "parentSection", value.asInstanceOf[js.Any])
+    
+    inline def setParentSectionNull: Self = StObject.set(x, "parentSection", null)
+    
+    inline def setParentSectionUndefined: Self = StObject.set(x, "parentSection", js.undefined)
+    
+    inline def setTitle(value: NullableOption[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setUserTags(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "userTags", value.asInstanceOf[js.Any])
+    
+    inline def setUserTagsNull: Self = StObject.set(x, "userTags", null)
+    
+    inline def setUserTagsUndefined: Self = StObject.set(x, "userTags", js.undefined)
+    
+    inline def setUserTagsVarargs(value: String*): Self = StObject.set(x, "userTags", js.Array(value*))
+  }
 }
-

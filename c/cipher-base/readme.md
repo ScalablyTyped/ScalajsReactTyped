@@ -10,10 +10,10 @@ abstract base class for crypto-streams
 | ------------------ | :-------------: |
 | Full name          | cipher-base |
 | Keywords           | cipher, stream |
-| # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 278942976 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.1490842666666664E7 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/crypto-browserify/cipher-base#readme)

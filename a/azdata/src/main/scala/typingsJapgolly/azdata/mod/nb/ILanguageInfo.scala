@@ -1,29 +1,40 @@
 package typingsJapgolly.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ILanguageInfo extends js.Object {
+trait ILanguageInfo extends StObject {
+  
   var codemirror_mode: js.UndefOr[String | ICodeMirrorMode] = js.undefined
+  
   var mimetype: js.UndefOr[String] = js.undefined
+  
   var name: String
+  
   var version: js.UndefOr[String] = js.undefined
 }
-
 object ILanguageInfo {
-  @scala.inline
-  def apply(
-    name: String,
-    codemirror_mode: String | ICodeMirrorMode = null,
-    mimetype: String = null,
-    version: String = null
-  ): ILanguageInfo = {
+  
+  inline def apply(name: String): ILanguageInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (codemirror_mode != null) __obj.updateDynamic("codemirror_mode")(codemirror_mode.asInstanceOf[js.Any])
-    if (mimetype != null) __obj.updateDynamic("mimetype")(mimetype.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILanguageInfo]
   }
+  
+  extension [Self <: ILanguageInfo](x: Self) {
+    
+    inline def setCodemirror_mode(value: String | ICodeMirrorMode): Self = StObject.set(x, "codemirror_mode", value.asInstanceOf[js.Any])
+    
+    inline def setCodemirror_modeUndefined: Self = StObject.set(x, "codemirror_mode", js.undefined)
+    
+    inline def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
+    
+    inline def setMimetypeUndefined: Self = StObject.set(x, "mimetype", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

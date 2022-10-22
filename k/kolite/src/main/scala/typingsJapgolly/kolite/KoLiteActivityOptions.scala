@@ -1,46 +1,73 @@
 package typingsJapgolly.kolite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Activity /////////////////////////////////////////////
-trait KoLiteActivityOptions extends js.Object {
+trait KoLiteActivityOptions extends StObject {
+  
   var align: js.UndefOr[String] = js.undefined
-  var color: js.UndefOr[js.Any] = js.undefined
+  
+  var color: js.UndefOr[Any] = js.undefined
+  
   var length: js.UndefOr[Double] = js.undefined
+  
   var padding: js.UndefOr[Double] = js.undefined
+  
   var segments: js.UndefOr[Double] = js.undefined
+  
   var space: js.UndefOr[Double] = js.undefined
+  
   var speed: js.UndefOr[Double] = js.undefined
+  
   var valign: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object KoLiteActivityOptions {
-  @scala.inline
-  def apply(
-    align: String = null,
-    color: js.Any = null,
-    length: Int | Double = null,
-    padding: Int | Double = null,
-    segments: Int | Double = null,
-    space: Int | Double = null,
-    speed: Int | Double = null,
-    valign: String = null,
-    width: Int | Double = null
-  ): KoLiteActivityOptions = {
+  
+  inline def apply(): KoLiteActivityOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
-    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[KoLiteActivityOptions]
   }
+  
+  extension [Self <: KoLiteActivityOptions](x: Self) {
+    
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    
+    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+    
+    inline def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    
+    inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+    
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    
+    inline def setValign(value: String): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
+    
+    inline def setValignUndefined: Self = StObject.set(x, "valign", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

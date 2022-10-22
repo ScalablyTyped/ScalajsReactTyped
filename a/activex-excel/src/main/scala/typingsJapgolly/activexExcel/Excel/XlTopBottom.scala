@@ -1,23 +1,19 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`0`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`0`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`0`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`0`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
 */
-trait XlTopBottom extends js.Object
-
+trait XlTopBottom extends StObject
 object XlTopBottom {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlTop10Bottom: `0` = this.cast(0)
-  @scala.inline
-  def xlTop10Top: `1` = this.cast(1)
+  
+  inline def xlTop10Bottom: `0` = 0.asInstanceOf[`0`]
+  
+  inline def xlTop10Top: `1` = 1.asInstanceOf[`1`]
 }
-

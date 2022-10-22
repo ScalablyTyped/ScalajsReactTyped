@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.TextShadowProperty
+import typingsJapgolly.csstype.mod.Property.TextShadow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextShadowProps extends js.Object {
-  val textShadow: js.UndefOr[ResponsiveValue[TextShadowProperty | Double]] = js.undefined
+trait TextShadowProps extends StObject {
+  
+  val textShadow: js.UndefOr[ResponsiveValue[TextShadow | Double]] = js.undefined
 }
-
 object TextShadowProps {
-  @scala.inline
-  def apply(textShadow: ResponsiveValue[TextShadowProperty | Double] = null): TextShadowProps = {
+  
+  inline def apply(): TextShadowProps = {
     val __obj = js.Dynamic.literal()
-    if (textShadow != null) __obj.updateDynamic("textShadow")(textShadow.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextShadowProps]
   }
+  
+  extension [Self <: TextShadowProps](x: Self) {
+    
+    inline def setTextShadow(value: ResponsiveValue[TextShadow | Double]): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
+    
+    inline def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
+    
+    inline def setTextShadowVarargs(value: (TextShadow | Double)*): Self = StObject.set(x, "textShadow", js.Array(value*))
+  }
 }
-

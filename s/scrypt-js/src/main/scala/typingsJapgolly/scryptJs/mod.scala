@@ -1,139 +1,42 @@
 package typingsJapgolly.scryptJs
 
-import typingsJapgolly.node.Buffer
-import typingsJapgolly.std.Uint8Array
+import typingsJapgolly.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("scrypt-js", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(
-    password: js.Array[Double],
-    salt: js.Array[Double],
+object mod {
+  
+  @JSImport("scrypt-js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def scrypt(
+    password: ArrayLike[Double],
+    salt: ArrayLike[Double],
     N: Double,
     r: Double,
     p: Double,
-    dklen: Double,
-    callback: js.Function3[
-      /* error */ js.UndefOr[js.Error | Null], 
-      /* progress */ Double, 
-      /* key */ js.UndefOr[js.Array[Double]], 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    password: js.Array[Double],
-    salt: Buffer,
+    dkLen: Double
+  ): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("scrypt")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], N.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], dkLen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+  inline def scrypt(
+    password: ArrayLike[Double],
+    salt: ArrayLike[Double],
     N: Double,
     r: Double,
     p: Double,
-    dklen: Double,
-    callback: js.Function3[
-      /* error */ js.UndefOr[js.Error | Null], 
-      /* progress */ Double, 
-      /* key */ js.UndefOr[js.Array[Double]], 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    password: js.Array[Double],
-    salt: Uint8Array,
+    dkLen: Double,
+    callback: ProgressCallback
+  ): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("scrypt")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], N.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], dkLen.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+  
+  inline def syncScrypt(
+    password: ArrayLike[Double],
+    salt: ArrayLike[Double],
     N: Double,
     r: Double,
     p: Double,
-    dklen: Double,
-    callback: js.Function3[
-      /* error */ js.UndefOr[js.Error | Null], 
-      /* progress */ Double, 
-      /* key */ js.UndefOr[js.Array[Double]], 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    password: Buffer,
-    salt: js.Array[Double],
-    N: Double,
-    r: Double,
-    p: Double,
-    dklen: Double,
-    callback: js.Function3[
-      /* error */ js.UndefOr[js.Error | Null], 
-      /* progress */ Double, 
-      /* key */ js.UndefOr[js.Array[Double]], 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    password: Buffer,
-    salt: Buffer,
-    N: Double,
-    r: Double,
-    p: Double,
-    dklen: Double,
-    callback: js.Function3[
-      /* error */ js.UndefOr[js.Error | Null], 
-      /* progress */ Double, 
-      /* key */ js.UndefOr[js.Array[Double]], 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    password: Buffer,
-    salt: Uint8Array,
-    N: Double,
-    r: Double,
-    p: Double,
-    dklen: Double,
-    callback: js.Function3[
-      /* error */ js.UndefOr[js.Error | Null], 
-      /* progress */ Double, 
-      /* key */ js.UndefOr[js.Array[Double]], 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    password: Uint8Array,
-    salt: js.Array[Double],
-    N: Double,
-    r: Double,
-    p: Double,
-    dklen: Double,
-    callback: js.Function3[
-      /* error */ js.UndefOr[js.Error | Null], 
-      /* progress */ Double, 
-      /* key */ js.UndefOr[js.Array[Double]], 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    password: Uint8Array,
-    salt: Buffer,
-    N: Double,
-    r: Double,
-    p: Double,
-    dklen: Double,
-    callback: js.Function3[
-      /* error */ js.UndefOr[js.Error | Null], 
-      /* progress */ Double, 
-      /* key */ js.UndefOr[js.Array[Double]], 
-      Unit
-    ]
-  ): Unit = js.native
-  def apply(
-    password: Uint8Array,
-    salt: Uint8Array,
-    N: Double,
-    r: Double,
-    p: Double,
-    dklen: Double,
-    callback: js.Function3[
-      /* error */ js.UndefOr[js.Error | Null], 
-      /* progress */ Double, 
-      /* key */ js.UndefOr[js.Array[Double]], 
-      Unit
-    ]
-  ): Unit = js.native
+    dkLen: Double
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("syncScrypt")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], N.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], dkLen.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  type ProgressCallback = js.Function1[/* progress */ Double, Boolean | Unit]
 }
-

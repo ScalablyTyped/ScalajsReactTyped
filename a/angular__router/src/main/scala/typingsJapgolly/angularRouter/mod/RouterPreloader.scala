@@ -1,38 +1,67 @@
 package typingsJapgolly.angularRouter.mod
 
 import typingsJapgolly.angularCore.mod.Compiler
-import typingsJapgolly.angularCore.mod.Injector
-import typingsJapgolly.angularCore.mod.NgModuleFactoryLoader
+import typingsJapgolly.angularCore.mod.EnvironmentInjector
 import typingsJapgolly.angularCore.mod.OnDestroy
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵInjectableDeclaration
 import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "RouterPreloader")
 @js.native
-class RouterPreloader protected () extends OnDestroy {
+open class RouterPreloader protected ()
+  extends StObject
+     with OnDestroy {
   def this(
     router: Router,
-    moduleLoader: NgModuleFactoryLoader,
     compiler: Compiler,
-    injector: Injector,
-    preloadingStrategy: PreloadingStrategy
+    injector: EnvironmentInjector,
+    preloadingStrategy: PreloadingStrategy,
+    loader: RouterConfigLoader
   ) = this()
-  var injector: js.Any = js.native
-  var loader: js.Any = js.native
-  var preloadConfig: js.Any = js.native
-  var preloadingStrategy: js.Any = js.native
-  var processRoutes: js.Any = js.native
-  var router: js.Any = js.native
-  var subscription: js.Any = js.native
+  
+  /* private */ var injector: Any = js.native
+  
+  /* private */ var loader: Any = js.native
+  
   /**
     * A callback method that performs custom clean-up, invoked immediately
-    * after a directive, pipe, or service instance is destroyed.
+    * before a directive, pipe, or service instance is destroyed.
     */
   /* CompleteClass */
   override def ngOnDestroy(): Unit = js.native
-  def preload(): Observable_[_] = js.native
+  
+  def preload(): Observable_[Any] = js.native
+  
+  /* private */ var preloadConfig: Any = js.native
+  
+  /* private */ var preloadingStrategy: Any = js.native
+  
+  /* private */ var processRoutes: Any = js.native
+  
+  /* private */ var router: Any = js.native
+  
   def setUpPreloading(): Unit = js.native
+  
+  /* private */ var subscription: Any = js.native
 }
-
+/* static members */
+object RouterPreloader {
+  
+  @JSImport("@angular/router", "RouterPreloader")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/router", "RouterPreloader.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[RouterPreloader, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[RouterPreloader, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/router", "RouterPreloader.\u0275prov")
+  @js.native
+  def ɵprov: ɵɵInjectableDeclaration[RouterPreloader] = js.native
+  inline def ɵprov_=(x: ɵɵInjectableDeclaration[RouterPreloader]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
+}

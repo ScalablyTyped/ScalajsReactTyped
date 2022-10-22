@@ -1,8 +1,8 @@
 package typingsJapgolly.facebookInstantGames.FBInstant
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A filter that may be applied to a Context Choose operation
@@ -15,16 +15,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.INCLUDE_EXISTING_CHALLENGES
   - typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.NEW_PLAYERS_ONLY
 */
-trait ContextFilter extends js.Object
-
+trait ContextFilter extends StObject
 object ContextFilter {
-  @scala.inline
-  def INCLUDE_EXISTING_CHALLENGES: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.INCLUDE_EXISTING_CHALLENGES = this.cast("INCLUDE_EXISTING_CHALLENGES")
-  @scala.inline
-  def NEW_CONTEXT_ONLY: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.NEW_CONTEXT_ONLY = this.cast("NEW_CONTEXT_ONLY")
-  @scala.inline
-  def NEW_PLAYERS_ONLY: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.NEW_PLAYERS_ONLY = this.cast("NEW_PLAYERS_ONLY")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def INCLUDE_EXISTING_CHALLENGES: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.INCLUDE_EXISTING_CHALLENGES = "INCLUDE_EXISTING_CHALLENGES".asInstanceOf[typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.INCLUDE_EXISTING_CHALLENGES]
+  
+  inline def NEW_CONTEXT_ONLY: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.NEW_CONTEXT_ONLY = "NEW_CONTEXT_ONLY".asInstanceOf[typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.NEW_CONTEXT_ONLY]
+  
+  inline def NEW_PLAYERS_ONLY: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.NEW_PLAYERS_ONLY = "NEW_PLAYERS_ONLY".asInstanceOf[typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.NEW_PLAYERS_ONLY]
 }
-

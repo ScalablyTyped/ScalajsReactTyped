@@ -1,40 +1,42 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgMapCrosshairPoint
-  extends /**
-	 * Option for IgMapCrosshairPoint
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * The x coordinate.
-  	 */
+    * The x coordinate.
+    */
   var x: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * The y coordinate.
-  	 */
+    * The y coordinate.
+    */
   var y: js.UndefOr[Double] = js.undefined
 }
-
 object IgMapCrosshairPoint {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgMapCrosshairPoint
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    x: Int | Double = null,
-    y: Int | Double = null
-  ): IgMapCrosshairPoint = {
+  
+  inline def apply(): IgMapCrosshairPoint = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgMapCrosshairPoint]
   }
+  
+  extension [Self <: IgMapCrosshairPoint](x: Self) {
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

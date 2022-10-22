@@ -1,573 +1,569 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10025880`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10061943`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10156544`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10526303`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11119017`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11186720`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11206502`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11394815`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11788021`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11823615`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11829830`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11920639`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12180223`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12632256`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12695295`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`128`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12903679`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13353215`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13382297`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13422920`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13434880`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13458026`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13495295`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13499135`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13688896`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13749760`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13826810`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13828244`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13850042`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13882323`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13959039`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`139`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14020607`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14053594`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14150650`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14204888`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14381203`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14474460`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14480885`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14481663`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14524637`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14599344`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14745599`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14772545`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14804223`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14822282`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15128749`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15130800`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15134970`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15136253`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15453831`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15570276`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15624315`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15631086`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15658671`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15660543`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15792895`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15794160`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15794175`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16118015`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16119285`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16436871`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16443110`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16448255`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16449525`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16711680`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16711935`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16748574`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16760576`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16775408`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16775416`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16776960`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16777200`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16777215`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`17919`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2139610`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2237106`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2263842`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2330219`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`255`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`25600`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2763429`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2970272`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3107669`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3145645`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`32768`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`32896`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3329330`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3329434`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`36095`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3937500`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4163021`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`42495`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4678655`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5197615`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5275647`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`55295`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5737262`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6053069`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6333684`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`64636`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`65280`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`65407`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`65535`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6908265`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7059389`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7071982`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7346457`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7451452`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7504122`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`755384`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8034025`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8036607`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8388352`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8388608`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8388736`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8421376`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8421504`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8421616`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8519755`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8721863`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8894686`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9109504`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9109643`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9125192`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9145088`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9221330`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9234160`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9408444`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9419919`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9470064`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9498256`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9639167`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9662683`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10025880`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10061943`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10156544`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10526303`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11119017`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11186720`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11206502`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11394815`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11788021`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11823615`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11829830`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11920639`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12180223`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12632256`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12695295`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`128`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12903679`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13353215`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13382297`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13422920`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13434880`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13458026`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13495295`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13499135`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13688896`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13749760`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13826810`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13828244`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13850042`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13882323`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13959039`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`139`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14020607`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14053594`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14150650`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14204888`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14381203`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14474460`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14480885`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14481663`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14524637`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14599344`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14745599`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14772545`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14804223`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14822282`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15128749`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15130800`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15134970`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15136253`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15453831`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15570276`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15624315`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15631086`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15658671`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15660543`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15792895`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15794160`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15794175`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16118015`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16119285`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16436871`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16443110`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16448255`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16449525`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16711680`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16711935`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16748574`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16760576`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16775408`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16775416`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16776960`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16777200`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16777215`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`17919`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2139610`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2237106`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2263842`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2330219`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`255`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`25600`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2763429`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2970272`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3107669`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3145645`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`32768`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`32896`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3329330`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3329434`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`36095`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3937500`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4163021`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`42495`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4678655`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5197615`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5275647`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`55295`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5737262`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6053069`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6333684`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`64636`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`65280`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`65407`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`65535`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6908265`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7059389`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7071982`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7346457`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7451452`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7504122`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`755384`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8034025`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8036607`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8388352`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8388608`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8388736`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8421376`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8421504`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8421616`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8519755`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8721863`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8894686`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9109504`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9109643`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9125192`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9145088`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9221330`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9234160`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9408444`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9419919`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9470064`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9498256`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9639167`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9662683`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16775408`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14150650`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16776960`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13959039`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16777200`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14480885`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12903679`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13495295`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16711680`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14822282`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2763429`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8894686`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10526303`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`65407`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5275647`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15570276`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14481663`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3937500`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9109504`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9145088`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`755384`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11119017`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`25600`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7059389`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9109643`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3107669`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`36095`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13382297`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`139`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8034025`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9419919`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9125192`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5197615`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13749760`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13828244`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9639167`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16760576`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6908265`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16748574`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2237106`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15792895`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2263842`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16711935`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14474460`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16775416`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`55295`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2139610`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8421504`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`32768`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3145645`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15794160`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11823615`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6053069`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8519755`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15794175`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9234160`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16443110`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16118015`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`64636`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13499135`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15128749`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8421616`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13826810`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13882323`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9498256`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12695295`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8036607`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11186720`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16436871`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10061943`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14599344`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14745599`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`65280`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3329330`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15134970`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`128`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11206502`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13434880`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13850042`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14381203`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7451452`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15624315`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10156544`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13422920`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8721863`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7346457`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16449525`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14804223`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11920639`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11394815`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8388608`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15136253`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`32896`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2330219`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`42495`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`17919`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14053594`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7071982`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10025880`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15658671`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9662683`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14020607`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12180223`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4163021`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13353215`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14524637`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15130800`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8388736`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`255`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9408444`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14772545`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7504122`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6333684`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5737262`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15660543`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2970272`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12632256`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15453831`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13458026`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9470064`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16448255`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8388352`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11829830`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9221330`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8421376`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14204888`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4678655`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13688896`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15631086`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11788021`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16777215`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16119285`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`65535`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3329434`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16775408`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14150650`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16776960`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13959039`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16777200`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14480885`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12903679`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13495295`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16711680`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14822282`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2763429`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8894686`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10526303`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`65407`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5275647`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15570276`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14481663`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3937500`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9109504`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9145088`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`755384`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11119017`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`25600`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7059389`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9109643`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3107669`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`36095`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13382297`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`139`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8034025`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9419919`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9125192`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5197615`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13749760`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13828244`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9639167`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16760576`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6908265`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16748574`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2237106`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15792895`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2263842`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16711935`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14474460`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16775416`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`55295`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2139610`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8421504`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`32768`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3145645`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15794160`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11823615`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6053069`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8519755`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15794175`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9234160`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16443110`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16118015`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`64636`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13499135`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15128749`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8421616`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13826810`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13882323`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9498256`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12695295`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8036607`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11186720`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16436871`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10061943`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14599344`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14745599`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`65280`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3329330`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15134970`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`128`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11206502`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13434880`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13850042`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14381203`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7451452`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15624315`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10156544`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13422920`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8721863`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7346457`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16449525`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14804223`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11920639`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11394815`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8388608`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15136253`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`32896`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2330219`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`42495`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`17919`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14053594`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7071982`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10025880`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15658671`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9662683`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14020607`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12180223`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4163021`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13353215`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14524637`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15130800`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8388736`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`255`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9408444`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14772545`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7504122`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6333684`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5737262`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15660543`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2970272`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12632256`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15453831`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13458026`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9470064`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16448255`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8388352`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11829830`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9221330`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8421376`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14204888`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4678655`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13688896`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15631086`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11788021`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16777215`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16119285`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`65535`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3329434`
 */
-trait XlRgbColor extends js.Object
-
+trait XlRgbColor extends StObject
 object XlRgbColor {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def rgbAliceBlue: `16775408` = this.cast(16775408)
-  @scala.inline
-  def rgbAntiqueWhite: `14150650` = this.cast(14150650)
-  @scala.inline
-  def rgbAqua: `16776960` = this.cast(16776960)
-  @scala.inline
-  def rgbAquamarine: `13959039` = this.cast(13959039)
-  @scala.inline
-  def rgbAzure: `16777200` = this.cast(16777200)
-  @scala.inline
-  def rgbBeige: `14480885` = this.cast(14480885)
-  @scala.inline
-  def rgbBisque: `12903679` = this.cast(12903679)
-  @scala.inline
-  def rgbBlack: `0` = this.cast(0)
-  @scala.inline
-  def rgbBlanchedAlmond: `13495295` = this.cast(13495295)
-  @scala.inline
-  def rgbBlue: `16711680` = this.cast(16711680)
-  @scala.inline
-  def rgbBlueViolet: `14822282` = this.cast(14822282)
-  @scala.inline
-  def rgbBrown: `2763429` = this.cast(2763429)
-  @scala.inline
-  def rgbBurlyWood: `8894686` = this.cast(8894686)
-  @scala.inline
-  def rgbCadetBlue: `10526303` = this.cast(10526303)
-  @scala.inline
-  def rgbChartreuse: `65407` = this.cast(65407)
-  @scala.inline
-  def rgbCoral: `5275647` = this.cast(5275647)
-  @scala.inline
-  def rgbCornflowerBlue: `15570276` = this.cast(15570276)
-  @scala.inline
-  def rgbCornsilk: `14481663` = this.cast(14481663)
-  @scala.inline
-  def rgbCrimson: `3937500` = this.cast(3937500)
-  @scala.inline
-  def rgbDarkBlue: `9109504` = this.cast(9109504)
-  @scala.inline
-  def rgbDarkCyan: `9145088` = this.cast(9145088)
-  @scala.inline
-  def rgbDarkGoldenrod: `755384` = this.cast(755384)
-  @scala.inline
-  def rgbDarkGray: `11119017` = this.cast(11119017)
-  @scala.inline
-  def rgbDarkGreen: `25600` = this.cast(25600)
-  @scala.inline
-  def rgbDarkGrey: `11119017` = this.cast(11119017)
-  @scala.inline
-  def rgbDarkKhaki: `7059389` = this.cast(7059389)
-  @scala.inline
-  def rgbDarkMagenta: `9109643` = this.cast(9109643)
-  @scala.inline
-  def rgbDarkOliveGreen: `3107669` = this.cast(3107669)
-  @scala.inline
-  def rgbDarkOrange: `36095` = this.cast(36095)
-  @scala.inline
-  def rgbDarkOrchid: `13382297` = this.cast(13382297)
-  @scala.inline
-  def rgbDarkRed: `139` = this.cast(139)
-  @scala.inline
-  def rgbDarkSalmon: `8034025` = this.cast(8034025)
-  @scala.inline
-  def rgbDarkSeaGreen: `9419919` = this.cast(9419919)
-  @scala.inline
-  def rgbDarkSlateBlue: `9125192` = this.cast(9125192)
-  @scala.inline
-  def rgbDarkSlateGray: `5197615` = this.cast(5197615)
-  @scala.inline
-  def rgbDarkSlateGrey: `5197615` = this.cast(5197615)
-  @scala.inline
-  def rgbDarkTurquoise: `13749760` = this.cast(13749760)
-  @scala.inline
-  def rgbDarkViolet: `13828244` = this.cast(13828244)
-  @scala.inline
-  def rgbDeepPink: `9639167` = this.cast(9639167)
-  @scala.inline
-  def rgbDeepSkyBlue: `16760576` = this.cast(16760576)
-  @scala.inline
-  def rgbDimGray: `6908265` = this.cast(6908265)
-  @scala.inline
-  def rgbDimGrey: `6908265` = this.cast(6908265)
-  @scala.inline
-  def rgbDodgerBlue: `16748574` = this.cast(16748574)
-  @scala.inline
-  def rgbFireBrick: `2237106` = this.cast(2237106)
-  @scala.inline
-  def rgbFloralWhite: `15792895` = this.cast(15792895)
-  @scala.inline
-  def rgbForestGreen: `2263842` = this.cast(2263842)
-  @scala.inline
-  def rgbFuchsia: `16711935` = this.cast(16711935)
-  @scala.inline
-  def rgbGainsboro: `14474460` = this.cast(14474460)
-  @scala.inline
-  def rgbGhostWhite: `16775416` = this.cast(16775416)
-  @scala.inline
-  def rgbGold: `55295` = this.cast(55295)
-  @scala.inline
-  def rgbGoldenrod: `2139610` = this.cast(2139610)
-  @scala.inline
-  def rgbGray: `8421504` = this.cast(8421504)
-  @scala.inline
-  def rgbGreen: `32768` = this.cast(32768)
-  @scala.inline
-  def rgbGreenYellow: `3145645` = this.cast(3145645)
-  @scala.inline
-  def rgbGrey: `8421504` = this.cast(8421504)
-  @scala.inline
-  def rgbHoneydew: `15794160` = this.cast(15794160)
-  @scala.inline
-  def rgbHotPink: `11823615` = this.cast(11823615)
-  @scala.inline
-  def rgbIndianRed: `6053069` = this.cast(6053069)
-  @scala.inline
-  def rgbIndigo: `8519755` = this.cast(8519755)
-  @scala.inline
-  def rgbIvory: `15794175` = this.cast(15794175)
-  @scala.inline
-  def rgbKhaki: `9234160` = this.cast(9234160)
-  @scala.inline
-  def rgbLavender: `16443110` = this.cast(16443110)
-  @scala.inline
-  def rgbLavenderBlush: `16118015` = this.cast(16118015)
-  @scala.inline
-  def rgbLawnGreen: `64636` = this.cast(64636)
-  @scala.inline
-  def rgbLemonChiffon: `13499135` = this.cast(13499135)
-  @scala.inline
-  def rgbLightBlue: `15128749` = this.cast(15128749)
-  @scala.inline
-  def rgbLightCoral: `8421616` = this.cast(8421616)
-  @scala.inline
-  def rgbLightCyan: `9145088` = this.cast(9145088)
-  @scala.inline
-  def rgbLightGoldenrodYellow: `13826810` = this.cast(13826810)
-  @scala.inline
-  def rgbLightGray: `13882323` = this.cast(13882323)
-  @scala.inline
-  def rgbLightGreen: `9498256` = this.cast(9498256)
-  @scala.inline
-  def rgbLightGrey: `13882323` = this.cast(13882323)
-  @scala.inline
-  def rgbLightPink: `12695295` = this.cast(12695295)
-  @scala.inline
-  def rgbLightSalmon: `8036607` = this.cast(8036607)
-  @scala.inline
-  def rgbLightSeaGreen: `11186720` = this.cast(11186720)
-  @scala.inline
-  def rgbLightSkyBlue: `16436871` = this.cast(16436871)
-  @scala.inline
-  def rgbLightSlateGray: `10061943` = this.cast(10061943)
-  @scala.inline
-  def rgbLightSlateGrey: `10061943` = this.cast(10061943)
-  @scala.inline
-  def rgbLightSteelBlue: `14599344` = this.cast(14599344)
-  @scala.inline
-  def rgbLightYellow: `14745599` = this.cast(14745599)
-  @scala.inline
-  def rgbLime: `65280` = this.cast(65280)
-  @scala.inline
-  def rgbLimeGreen: `3329330` = this.cast(3329330)
-  @scala.inline
-  def rgbLinen: `15134970` = this.cast(15134970)
-  @scala.inline
-  def rgbMaroon: `128` = this.cast(128)
-  @scala.inline
-  def rgbMediumAquamarine: `11206502` = this.cast(11206502)
-  @scala.inline
-  def rgbMediumBlue: `13434880` = this.cast(13434880)
-  @scala.inline
-  def rgbMediumOrchid: `13850042` = this.cast(13850042)
-  @scala.inline
-  def rgbMediumPurple: `14381203` = this.cast(14381203)
-  @scala.inline
-  def rgbMediumSeaGreen: `7451452` = this.cast(7451452)
-  @scala.inline
-  def rgbMediumSlateBlue: `15624315` = this.cast(15624315)
-  @scala.inline
-  def rgbMediumSpringGreen: `10156544` = this.cast(10156544)
-  @scala.inline
-  def rgbMediumTurquoise: `13422920` = this.cast(13422920)
-  @scala.inline
-  def rgbMediumVioletRed: `8721863` = this.cast(8721863)
-  @scala.inline
-  def rgbMidnightBlue: `7346457` = this.cast(7346457)
-  @scala.inline
-  def rgbMintCream: `16449525` = this.cast(16449525)
-  @scala.inline
-  def rgbMistyRose: `14804223` = this.cast(14804223)
-  @scala.inline
-  def rgbMoccasin: `11920639` = this.cast(11920639)
-  @scala.inline
-  def rgbNavajoWhite: `11394815` = this.cast(11394815)
-  @scala.inline
-  def rgbNavy: `8388608` = this.cast(8388608)
-  @scala.inline
-  def rgbNavyBlue: `8388608` = this.cast(8388608)
-  @scala.inline
-  def rgbOldLace: `15136253` = this.cast(15136253)
-  @scala.inline
-  def rgbOlive: `32896` = this.cast(32896)
-  @scala.inline
-  def rgbOliveDrab: `2330219` = this.cast(2330219)
-  @scala.inline
-  def rgbOrange: `42495` = this.cast(42495)
-  @scala.inline
-  def rgbOrangeRed: `17919` = this.cast(17919)
-  @scala.inline
-  def rgbOrchid: `14053594` = this.cast(14053594)
-  @scala.inline
-  def rgbPaleGoldenrod: `7071982` = this.cast(7071982)
-  @scala.inline
-  def rgbPaleGreen: `10025880` = this.cast(10025880)
-  @scala.inline
-  def rgbPaleTurquoise: `15658671` = this.cast(15658671)
-  @scala.inline
-  def rgbPaleVioletRed: `9662683` = this.cast(9662683)
-  @scala.inline
-  def rgbPapayaWhip: `14020607` = this.cast(14020607)
-  @scala.inline
-  def rgbPeachPuff: `12180223` = this.cast(12180223)
-  @scala.inline
-  def rgbPeru: `4163021` = this.cast(4163021)
-  @scala.inline
-  def rgbPink: `13353215` = this.cast(13353215)
-  @scala.inline
-  def rgbPlum: `14524637` = this.cast(14524637)
-  @scala.inline
-  def rgbPowderBlue: `15130800` = this.cast(15130800)
-  @scala.inline
-  def rgbPurple: `8388736` = this.cast(8388736)
-  @scala.inline
-  def rgbRed: `255` = this.cast(255)
-  @scala.inline
-  def rgbRosyBrown: `9408444` = this.cast(9408444)
-  @scala.inline
-  def rgbRoyalBlue: `14772545` = this.cast(14772545)
-  @scala.inline
-  def rgbSalmon: `7504122` = this.cast(7504122)
-  @scala.inline
-  def rgbSandyBrown: `6333684` = this.cast(6333684)
-  @scala.inline
-  def rgbSeaGreen: `5737262` = this.cast(5737262)
-  @scala.inline
-  def rgbSeashell: `15660543` = this.cast(15660543)
-  @scala.inline
-  def rgbSienna: `2970272` = this.cast(2970272)
-  @scala.inline
-  def rgbSilver: `12632256` = this.cast(12632256)
-  @scala.inline
-  def rgbSkyBlue: `15453831` = this.cast(15453831)
-  @scala.inline
-  def rgbSlateBlue: `13458026` = this.cast(13458026)
-  @scala.inline
-  def rgbSlateGray: `9470064` = this.cast(9470064)
-  @scala.inline
-  def rgbSlateGrey: `9470064` = this.cast(9470064)
-  @scala.inline
-  def rgbSnow: `16448255` = this.cast(16448255)
-  @scala.inline
-  def rgbSpringGreen: `8388352` = this.cast(8388352)
-  @scala.inline
-  def rgbSteelBlue: `11829830` = this.cast(11829830)
-  @scala.inline
-  def rgbTan: `9221330` = this.cast(9221330)
-  @scala.inline
-  def rgbTeal: `8421376` = this.cast(8421376)
-  @scala.inline
-  def rgbThistle: `14204888` = this.cast(14204888)
-  @scala.inline
-  def rgbTomato: `4678655` = this.cast(4678655)
-  @scala.inline
-  def rgbTurquoise: `13688896` = this.cast(13688896)
-  @scala.inline
-  def rgbViolet: `15631086` = this.cast(15631086)
-  @scala.inline
-  def rgbWheat: `11788021` = this.cast(11788021)
-  @scala.inline
-  def rgbWhite: `16777215` = this.cast(16777215)
-  @scala.inline
-  def rgbWhiteSmoke: `16119285` = this.cast(16119285)
-  @scala.inline
-  def rgbYellow: `65535` = this.cast(65535)
-  @scala.inline
-  def rgbYellowGreen: `3329434` = this.cast(3329434)
+  
+  inline def rgbAliceBlue: `16775408` = 16775408.asInstanceOf[`16775408`]
+  
+  inline def rgbAntiqueWhite: `14150650` = 14150650.asInstanceOf[`14150650`]
+  
+  inline def rgbAqua: `16776960` = 16776960.asInstanceOf[`16776960`]
+  
+  inline def rgbAquamarine: `13959039` = 13959039.asInstanceOf[`13959039`]
+  
+  inline def rgbAzure: `16777200` = 16777200.asInstanceOf[`16777200`]
+  
+  inline def rgbBeige: `14480885` = 14480885.asInstanceOf[`14480885`]
+  
+  inline def rgbBisque: `12903679` = 12903679.asInstanceOf[`12903679`]
+  
+  inline def rgbBlack: `0` = 0.asInstanceOf[`0`]
+  
+  inline def rgbBlanchedAlmond: `13495295` = 13495295.asInstanceOf[`13495295`]
+  
+  inline def rgbBlue: `16711680` = 16711680.asInstanceOf[`16711680`]
+  
+  inline def rgbBlueViolet: `14822282` = 14822282.asInstanceOf[`14822282`]
+  
+  inline def rgbBrown: `2763429` = 2763429.asInstanceOf[`2763429`]
+  
+  inline def rgbBurlyWood: `8894686` = 8894686.asInstanceOf[`8894686`]
+  
+  inline def rgbCadetBlue: `10526303` = 10526303.asInstanceOf[`10526303`]
+  
+  inline def rgbChartreuse: `65407` = 65407.asInstanceOf[`65407`]
+  
+  inline def rgbCoral: `5275647` = 5275647.asInstanceOf[`5275647`]
+  
+  inline def rgbCornflowerBlue: `15570276` = 15570276.asInstanceOf[`15570276`]
+  
+  inline def rgbCornsilk: `14481663` = 14481663.asInstanceOf[`14481663`]
+  
+  inline def rgbCrimson: `3937500` = 3937500.asInstanceOf[`3937500`]
+  
+  inline def rgbDarkBlue: `9109504` = 9109504.asInstanceOf[`9109504`]
+  
+  inline def rgbDarkCyan: `9145088` = 9145088.asInstanceOf[`9145088`]
+  
+  inline def rgbDarkGoldenrod: `755384` = 755384.asInstanceOf[`755384`]
+  
+  inline def rgbDarkGray: `11119017` = 11119017.asInstanceOf[`11119017`]
+  
+  inline def rgbDarkGreen: `25600` = 25600.asInstanceOf[`25600`]
+  
+  inline def rgbDarkGrey: `11119017` = 11119017.asInstanceOf[`11119017`]
+  
+  inline def rgbDarkKhaki: `7059389` = 7059389.asInstanceOf[`7059389`]
+  
+  inline def rgbDarkMagenta: `9109643` = 9109643.asInstanceOf[`9109643`]
+  
+  inline def rgbDarkOliveGreen: `3107669` = 3107669.asInstanceOf[`3107669`]
+  
+  inline def rgbDarkOrange: `36095` = 36095.asInstanceOf[`36095`]
+  
+  inline def rgbDarkOrchid: `13382297` = 13382297.asInstanceOf[`13382297`]
+  
+  inline def rgbDarkRed: `139` = 139.asInstanceOf[`139`]
+  
+  inline def rgbDarkSalmon: `8034025` = 8034025.asInstanceOf[`8034025`]
+  
+  inline def rgbDarkSeaGreen: `9419919` = 9419919.asInstanceOf[`9419919`]
+  
+  inline def rgbDarkSlateBlue: `9125192` = 9125192.asInstanceOf[`9125192`]
+  
+  inline def rgbDarkSlateGray: `5197615` = 5197615.asInstanceOf[`5197615`]
+  
+  inline def rgbDarkSlateGrey: `5197615` = 5197615.asInstanceOf[`5197615`]
+  
+  inline def rgbDarkTurquoise: `13749760` = 13749760.asInstanceOf[`13749760`]
+  
+  inline def rgbDarkViolet: `13828244` = 13828244.asInstanceOf[`13828244`]
+  
+  inline def rgbDeepPink: `9639167` = 9639167.asInstanceOf[`9639167`]
+  
+  inline def rgbDeepSkyBlue: `16760576` = 16760576.asInstanceOf[`16760576`]
+  
+  inline def rgbDimGray: `6908265` = 6908265.asInstanceOf[`6908265`]
+  
+  inline def rgbDimGrey: `6908265` = 6908265.asInstanceOf[`6908265`]
+  
+  inline def rgbDodgerBlue: `16748574` = 16748574.asInstanceOf[`16748574`]
+  
+  inline def rgbFireBrick: `2237106` = 2237106.asInstanceOf[`2237106`]
+  
+  inline def rgbFloralWhite: `15792895` = 15792895.asInstanceOf[`15792895`]
+  
+  inline def rgbForestGreen: `2263842` = 2263842.asInstanceOf[`2263842`]
+  
+  inline def rgbFuchsia: `16711935` = 16711935.asInstanceOf[`16711935`]
+  
+  inline def rgbGainsboro: `14474460` = 14474460.asInstanceOf[`14474460`]
+  
+  inline def rgbGhostWhite: `16775416` = 16775416.asInstanceOf[`16775416`]
+  
+  inline def rgbGold: `55295` = 55295.asInstanceOf[`55295`]
+  
+  inline def rgbGoldenrod: `2139610` = 2139610.asInstanceOf[`2139610`]
+  
+  inline def rgbGray: `8421504` = 8421504.asInstanceOf[`8421504`]
+  
+  inline def rgbGreen: `32768` = 32768.asInstanceOf[`32768`]
+  
+  inline def rgbGreenYellow: `3145645` = 3145645.asInstanceOf[`3145645`]
+  
+  inline def rgbGrey: `8421504` = 8421504.asInstanceOf[`8421504`]
+  
+  inline def rgbHoneydew: `15794160` = 15794160.asInstanceOf[`15794160`]
+  
+  inline def rgbHotPink: `11823615` = 11823615.asInstanceOf[`11823615`]
+  
+  inline def rgbIndianRed: `6053069` = 6053069.asInstanceOf[`6053069`]
+  
+  inline def rgbIndigo: `8519755` = 8519755.asInstanceOf[`8519755`]
+  
+  inline def rgbIvory: `15794175` = 15794175.asInstanceOf[`15794175`]
+  
+  inline def rgbKhaki: `9234160` = 9234160.asInstanceOf[`9234160`]
+  
+  inline def rgbLavender: `16443110` = 16443110.asInstanceOf[`16443110`]
+  
+  inline def rgbLavenderBlush: `16118015` = 16118015.asInstanceOf[`16118015`]
+  
+  inline def rgbLawnGreen: `64636` = 64636.asInstanceOf[`64636`]
+  
+  inline def rgbLemonChiffon: `13499135` = 13499135.asInstanceOf[`13499135`]
+  
+  inline def rgbLightBlue: `15128749` = 15128749.asInstanceOf[`15128749`]
+  
+  inline def rgbLightCoral: `8421616` = 8421616.asInstanceOf[`8421616`]
+  
+  inline def rgbLightCyan: `9145088` = 9145088.asInstanceOf[`9145088`]
+  
+  inline def rgbLightGoldenrodYellow: `13826810` = 13826810.asInstanceOf[`13826810`]
+  
+  inline def rgbLightGray: `13882323` = 13882323.asInstanceOf[`13882323`]
+  
+  inline def rgbLightGreen: `9498256` = 9498256.asInstanceOf[`9498256`]
+  
+  inline def rgbLightGrey: `13882323` = 13882323.asInstanceOf[`13882323`]
+  
+  inline def rgbLightPink: `12695295` = 12695295.asInstanceOf[`12695295`]
+  
+  inline def rgbLightSalmon: `8036607` = 8036607.asInstanceOf[`8036607`]
+  
+  inline def rgbLightSeaGreen: `11186720` = 11186720.asInstanceOf[`11186720`]
+  
+  inline def rgbLightSkyBlue: `16436871` = 16436871.asInstanceOf[`16436871`]
+  
+  inline def rgbLightSlateGray: `10061943` = 10061943.asInstanceOf[`10061943`]
+  
+  inline def rgbLightSlateGrey: `10061943` = 10061943.asInstanceOf[`10061943`]
+  
+  inline def rgbLightSteelBlue: `14599344` = 14599344.asInstanceOf[`14599344`]
+  
+  inline def rgbLightYellow: `14745599` = 14745599.asInstanceOf[`14745599`]
+  
+  inline def rgbLime: `65280` = 65280.asInstanceOf[`65280`]
+  
+  inline def rgbLimeGreen: `3329330` = 3329330.asInstanceOf[`3329330`]
+  
+  inline def rgbLinen: `15134970` = 15134970.asInstanceOf[`15134970`]
+  
+  inline def rgbMaroon: `128` = 128.asInstanceOf[`128`]
+  
+  inline def rgbMediumAquamarine: `11206502` = 11206502.asInstanceOf[`11206502`]
+  
+  inline def rgbMediumBlue: `13434880` = 13434880.asInstanceOf[`13434880`]
+  
+  inline def rgbMediumOrchid: `13850042` = 13850042.asInstanceOf[`13850042`]
+  
+  inline def rgbMediumPurple: `14381203` = 14381203.asInstanceOf[`14381203`]
+  
+  inline def rgbMediumSeaGreen: `7451452` = 7451452.asInstanceOf[`7451452`]
+  
+  inline def rgbMediumSlateBlue: `15624315` = 15624315.asInstanceOf[`15624315`]
+  
+  inline def rgbMediumSpringGreen: `10156544` = 10156544.asInstanceOf[`10156544`]
+  
+  inline def rgbMediumTurquoise: `13422920` = 13422920.asInstanceOf[`13422920`]
+  
+  inline def rgbMediumVioletRed: `8721863` = 8721863.asInstanceOf[`8721863`]
+  
+  inline def rgbMidnightBlue: `7346457` = 7346457.asInstanceOf[`7346457`]
+  
+  inline def rgbMintCream: `16449525` = 16449525.asInstanceOf[`16449525`]
+  
+  inline def rgbMistyRose: `14804223` = 14804223.asInstanceOf[`14804223`]
+  
+  inline def rgbMoccasin: `11920639` = 11920639.asInstanceOf[`11920639`]
+  
+  inline def rgbNavajoWhite: `11394815` = 11394815.asInstanceOf[`11394815`]
+  
+  inline def rgbNavy: `8388608` = 8388608.asInstanceOf[`8388608`]
+  
+  inline def rgbNavyBlue: `8388608` = 8388608.asInstanceOf[`8388608`]
+  
+  inline def rgbOldLace: `15136253` = 15136253.asInstanceOf[`15136253`]
+  
+  inline def rgbOlive: `32896` = 32896.asInstanceOf[`32896`]
+  
+  inline def rgbOliveDrab: `2330219` = 2330219.asInstanceOf[`2330219`]
+  
+  inline def rgbOrange: `42495` = 42495.asInstanceOf[`42495`]
+  
+  inline def rgbOrangeRed: `17919` = 17919.asInstanceOf[`17919`]
+  
+  inline def rgbOrchid: `14053594` = 14053594.asInstanceOf[`14053594`]
+  
+  inline def rgbPaleGoldenrod: `7071982` = 7071982.asInstanceOf[`7071982`]
+  
+  inline def rgbPaleGreen: `10025880` = 10025880.asInstanceOf[`10025880`]
+  
+  inline def rgbPaleTurquoise: `15658671` = 15658671.asInstanceOf[`15658671`]
+  
+  inline def rgbPaleVioletRed: `9662683` = 9662683.asInstanceOf[`9662683`]
+  
+  inline def rgbPapayaWhip: `14020607` = 14020607.asInstanceOf[`14020607`]
+  
+  inline def rgbPeachPuff: `12180223` = 12180223.asInstanceOf[`12180223`]
+  
+  inline def rgbPeru: `4163021` = 4163021.asInstanceOf[`4163021`]
+  
+  inline def rgbPink: `13353215` = 13353215.asInstanceOf[`13353215`]
+  
+  inline def rgbPlum: `14524637` = 14524637.asInstanceOf[`14524637`]
+  
+  inline def rgbPowderBlue: `15130800` = 15130800.asInstanceOf[`15130800`]
+  
+  inline def rgbPurple: `8388736` = 8388736.asInstanceOf[`8388736`]
+  
+  inline def rgbRed: `255` = 255.asInstanceOf[`255`]
+  
+  inline def rgbRosyBrown: `9408444` = 9408444.asInstanceOf[`9408444`]
+  
+  inline def rgbRoyalBlue: `14772545` = 14772545.asInstanceOf[`14772545`]
+  
+  inline def rgbSalmon: `7504122` = 7504122.asInstanceOf[`7504122`]
+  
+  inline def rgbSandyBrown: `6333684` = 6333684.asInstanceOf[`6333684`]
+  
+  inline def rgbSeaGreen: `5737262` = 5737262.asInstanceOf[`5737262`]
+  
+  inline def rgbSeashell: `15660543` = 15660543.asInstanceOf[`15660543`]
+  
+  inline def rgbSienna: `2970272` = 2970272.asInstanceOf[`2970272`]
+  
+  inline def rgbSilver: `12632256` = 12632256.asInstanceOf[`12632256`]
+  
+  inline def rgbSkyBlue: `15453831` = 15453831.asInstanceOf[`15453831`]
+  
+  inline def rgbSlateBlue: `13458026` = 13458026.asInstanceOf[`13458026`]
+  
+  inline def rgbSlateGray: `9470064` = 9470064.asInstanceOf[`9470064`]
+  
+  inline def rgbSlateGrey: `9470064` = 9470064.asInstanceOf[`9470064`]
+  
+  inline def rgbSnow: `16448255` = 16448255.asInstanceOf[`16448255`]
+  
+  inline def rgbSpringGreen: `8388352` = 8388352.asInstanceOf[`8388352`]
+  
+  inline def rgbSteelBlue: `11829830` = 11829830.asInstanceOf[`11829830`]
+  
+  inline def rgbTan: `9221330` = 9221330.asInstanceOf[`9221330`]
+  
+  inline def rgbTeal: `8421376` = 8421376.asInstanceOf[`8421376`]
+  
+  inline def rgbThistle: `14204888` = 14204888.asInstanceOf[`14204888`]
+  
+  inline def rgbTomato: `4678655` = 4678655.asInstanceOf[`4678655`]
+  
+  inline def rgbTurquoise: `13688896` = 13688896.asInstanceOf[`13688896`]
+  
+  inline def rgbViolet: `15631086` = 15631086.asInstanceOf[`15631086`]
+  
+  inline def rgbWheat: `11788021` = 11788021.asInstanceOf[`11788021`]
+  
+  inline def rgbWhite: `16777215` = 16777215.asInstanceOf[`16777215`]
+  
+  inline def rgbWhiteSmoke: `16119285` = 16119285.asInstanceOf[`16119285`]
+  
+  inline def rgbYellow: `65535` = 65535.asInstanceOf[`65535`]
+  
+  inline def rgbYellowGreen: `3329434` = 3329434.asInstanceOf[`3329434`]
 }
-

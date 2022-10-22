@@ -1,19 +1,24 @@
 package typingsJapgolly.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IMapCheckZoomRangeOptions extends js.Object {
+trait IMapCheckZoomRangeOptions extends StObject {
+  
   var checkZoomRange: js.UndefOr[Boolean] = js.undefined
 }
-
 object IMapCheckZoomRangeOptions {
-  @scala.inline
-  def apply(checkZoomRange: js.UndefOr[Boolean] = js.undefined): IMapCheckZoomRangeOptions = {
+  
+  inline def apply(): IMapCheckZoomRangeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkZoomRange)) __obj.updateDynamic("checkZoomRange")(checkZoomRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapCheckZoomRangeOptions]
   }
+  
+  extension [Self <: IMapCheckZoomRangeOptions](x: Self) {
+    
+    inline def setCheckZoomRange(value: Boolean): Self = StObject.set(x, "checkZoomRange", value.asInstanceOf[js.Any])
+    
+    inline def setCheckZoomRangeUndefined: Self = StObject.set(x, "checkZoomRange", js.undefined)
+  }
 }
-

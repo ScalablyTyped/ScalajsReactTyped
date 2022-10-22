@@ -4,27 +4,32 @@ import japgolly.scalajs.react.Callback
 import typingsJapgolly.uniApp.uniAppStrings.default
 import typingsJapgolly.uniApp.uniAppStrings.none
 import typingsJapgolly.uniApp.uniAppStrings.number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PreviewImageOptions extends js.Object {
+trait PreviewImageOptions extends StObject {
+  
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 当前显示图片的链接，不填则默认为 urls 的第一张
     */
   var count: js.UndefOr[String] = js.undefined
+  
   /**
     * current 为当前显示图片的链接/索引值，不填或填写的值无效则为 urls 的第一张。App平台在 1.9.5至1.9.8之间，current为必填。不填会报错
     */
   var current: js.UndefOr[String] = js.undefined
+  
   /**
     * 接口调用失败的回调函数
     */
   var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 图片指示器样式
     * - default: 底部圆点指示器
@@ -32,48 +37,72 @@ trait PreviewImageOptions extends js.Object {
     * - none: 不显示指示器
     */
   var indicator: js.UndefOr[default | number | none] = js.undefined
+  
   /**
     * 长按图片显示操作菜单，如不填默认为保存相册，1.9.5 起支持。
     */
   var longPressActions: js.UndefOr[LongPressActionsOptions] = js.undefined
+  
   /**
     * 是否可循环预览
     */
   var loop: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * 接口调用成功的回调函数
     */
   var success: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 需要预览的图片链接列表
     */
-  var urls: js.UndefOr[String | js.Array[_]] = js.undefined
+  var urls: js.UndefOr[String | js.Array[Any]] = js.undefined
 }
-
 object PreviewImageOptions {
-  @scala.inline
-  def apply(
-    complete: js.UndefOr[Callback] = js.undefined,
-    count: String = null,
-    current: String = null,
-    fail: js.UndefOr[Callback] = js.undefined,
-    indicator: default | number | none = null,
-    longPressActions: LongPressActionsOptions = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    success: js.UndefOr[Callback] = js.undefined,
-    urls: String | js.Array[_] = null
-  ): PreviewImageOptions = {
+  
+  inline def apply(): PreviewImageOptions = {
     val __obj = js.Dynamic.literal()
-    complete.foreach(p => __obj.updateDynamic("complete")(p.toJsFn))
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    fail.foreach(p => __obj.updateDynamic("fail")(p.toJsFn))
-    if (indicator != null) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
-    if (longPressActions != null) __obj.updateDynamic("longPressActions")(longPressActions.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    success.foreach(p => __obj.updateDynamic("success")(p.toJsFn))
-    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewImageOptions]
   }
+  
+  extension [Self <: PreviewImageOptions](x: Self) {
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    
+    inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+    
+    inline def setFail(value: Callback): Self = StObject.set(x, "fail", value.toJsFn)
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setIndicator(value: default | number | none): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+    
+    inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
+    
+    inline def setLongPressActions(value: LongPressActionsOptions): Self = StObject.set(x, "longPressActions", value.asInstanceOf[js.Any])
+    
+    inline def setLongPressActionsUndefined: Self = StObject.set(x, "longPressActions", js.undefined)
+    
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    
+    inline def setSuccess(value: Callback): Self = StObject.set(x, "success", value.toJsFn)
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setUrls(value: String | js.Array[Any]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    
+    inline def setUrlsVarargs(value: Any*): Self = StObject.set(x, "urls", js.Array(value*))
+  }
 }
-

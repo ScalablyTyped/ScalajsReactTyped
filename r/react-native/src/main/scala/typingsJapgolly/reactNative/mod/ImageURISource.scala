@@ -5,23 +5,26 @@ import typingsJapgolly.reactNative.reactNativeStrings.`force-cache`
 import typingsJapgolly.reactNative.reactNativeStrings.`only-if-cached`
 import typingsJapgolly.reactNative.reactNativeStrings.default
 import typingsJapgolly.reactNative.reactNativeStrings.reload
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageURISource extends js.Object {
+trait ImageURISource extends StObject {
+  
   /**
     * `body` is the HTTP body to send with the request. This must be a valid
     * UTF-8 string, and will be sent exactly as specified, with no
     * additional encoding (e.g. URL-escaping or base64) applied.
     */
   var body: js.UndefOr[String] = js.undefined
+  
   /**
     * `bundle` is the iOS asset bundle which the image is included in. This
     * will default to [NSBundle mainBundle] if not set.
     * @platform ios
     */
   var bundle: js.UndefOr[String] = js.undefined
+  
   /**
     * `cache` determines how the requests handles potentially cached
     * responses.
@@ -43,21 +46,26 @@ trait ImageURISource extends js.Object {
     * @platform ios
     */
   var cache: js.UndefOr[default | reload | `force-cache` | `only-if-cached`] = js.undefined
+  
   /**
     * `headers` is an object representing the HTTP headers to send along with the
     * request for a remote image.
     */
   var headers: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   /**
     * `method` is the HTTP Method to use. Defaults to GET if not specified.
     */
   var method: js.UndefOr[String] = js.undefined
+  
   /**
     * `scale` is used to indicate the scale factor of the image. Defaults to 1.0 if
     * unspecified, meaning that one image pixel equates to one display point / DIP.
     */
   var scale: js.UndefOr[Double] = js.undefined
+  
   /**
     * `uri` is a string representing the resource identifier for the image, which
     * could be an http address, a local file path, or the name of a static image
@@ -65,37 +73,56 @@ trait ImageURISource extends js.Object {
     * function).
     */
   var uri: js.UndefOr[String] = js.undefined
+  
   /**
     * `width` and `height` can be specified if known at build time, in which case
     * these will be used to set the default `<Image/>` component dimensions.
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object ImageURISource {
-  @scala.inline
-  def apply(
-    body: String = null,
-    bundle: String = null,
-    cache: default | reload | `force-cache` | `only-if-cached` = null,
-    headers: StringDictionary[String] = null,
-    height: Int | Double = null,
-    method: String = null,
-    scale: Int | Double = null,
-    uri: String = null,
-    width: Int | Double = null
-  ): ImageURISource = {
+  
+  inline def apply(): ImageURISource = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (bundle != null) __obj.updateDynamic("bundle")(bundle.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageURISource]
   }
+  
+  extension [Self <: ImageURISource](x: Self) {
+    
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setBundle(value: String): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
+    
+    inline def setBundleUndefined: Self = StObject.set(x, "bundle", js.undefined)
+    
+    inline def setCache(value: default | reload | `force-cache` | `only-if-cached`): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

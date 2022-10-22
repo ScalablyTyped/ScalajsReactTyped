@@ -10,10 +10,10 @@ Nice-looking lightweight console ASCII line charts ╭┈╯ with no dependencie
 | ------------------ | :-------------: |
 | Full name          | asciichart |
 | Keywords           | asciichart, ascii, chart, charting, charts, console, terminal, draw, box-drawing, box drawing, drawing, stats, line, linear, plot, graph, ascii graphics, graphics, command line, commandline, bash, shell, sh, light |
-| # releases         | 2 |
-| # dependents       | 31 |
-| # downloads        | 65781 |
-| # stars            | 5 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 22295.0 |
+| # stars            | 1410.0 |
 
 ## Links
 - [Homepage](https://github.com/kroitor/asciichart)

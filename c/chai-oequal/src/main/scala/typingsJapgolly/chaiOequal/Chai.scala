@@ -1,40 +1,44 @@
 package typingsJapgolly.chaiOequal
 
-import typingsJapgolly.chai.Chai_.Equal
-import typingsJapgolly.chai.Chai_.LanguageChains
-import typingsJapgolly.chai.Chai_.NumericComparison
-import typingsJapgolly.chai.Chai_.TypeComparison
+import typingsJapgolly.chai.Chai.Equal
+import typingsJapgolly.chai.Chai.LanguageChains
+import typingsJapgolly.chai.Chai.NumericComparison
+import typingsJapgolly.chai.Chai.TypeComparison
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Chai")
-@js.native
-object Chai extends js.Object {
+object Chai {
+  
   // For Assert APIs
   @js.native
-  trait Assert extends js.Object {
-    def oeq(act: js.Any, exp: js.Any): Equal = js.native
-    def oeq(act: js.Any, exp: js.Any, method: String): Equal = js.native
-    def oeql(act: js.Any, exp: js.Any): Equal = js.native
-    def oeql(act: js.Any, exp: js.Any, method: String): Equal = js.native
-    def oequal(act: js.Any, exp: js.Any): Equal = js.native
-    def oequal(act: js.Any, exp: js.Any, method: String): Equal = js.native
+  trait Assert extends StObject {
+    
+    def oeq(act: Any, exp: Any): Equal = js.native
+    def oeq(act: Any, exp: Any, method: String): Equal = js.native
+    
+    def oeql(act: Any, exp: Any): Equal = js.native
+    def oeql(act: Any, exp: Any, method: String): Equal = js.native
+    
+    def oequal(act: Any, exp: Any): Equal = js.native
+    def oequal(act: Any, exp: Any, method: String): Equal = js.native
   }
   
   // For BDD APIs
   @js.native
   trait Assertion
-    extends LanguageChains
+    extends StObject
+       with LanguageChains
        with NumericComparison
        with TypeComparison {
-    def oeq(result: js.Any): Equal = js.native
-    def oeq(result: js.Any, method: String): Equal = js.native
-    def oeql(result: js.Any): Equal = js.native
-    def oeql(result: js.Any, method: String): Equal = js.native
-    def oequal(result: js.Any): Equal = js.native
-    def oequal(result: js.Any, method: String): Equal = js.native
+    
+    def oeq(result: Any): Equal = js.native
+    def oeq(result: Any, method: String): Equal = js.native
+    
+    def oeql(result: Any): Equal = js.native
+    def oeql(result: Any, method: String): Equal = js.native
+    
+    def oequal(result: Any): Equal = js.native
+    def oequal(result: Any, method: String): Equal = js.native
   }
-  
 }
-

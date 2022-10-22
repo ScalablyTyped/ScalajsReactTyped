@@ -1,31 +1,43 @@
 package typingsJapgolly.kendoUi.kendo.mobile.ui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SplitViewOptions extends js.Object {
+trait SplitViewOptions extends StObject {
+  
   var init: js.UndefOr[js.Function1[/* e */ SplitViewInitEvent, Unit]] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var show: js.UndefOr[js.Function1[/* e */ SplitViewShowEvent, Unit]] = js.undefined
+  
   var style: js.UndefOr[String] = js.undefined
 }
-
 object SplitViewOptions {
-  @scala.inline
-  def apply(
-    init: /* e */ SplitViewInitEvent => Callback = null,
-    name: String = null,
-    show: /* e */ SplitViewShowEvent => Callback = null,
-    style: String = null
-  ): SplitViewOptions = {
+  
+  inline def apply(): SplitViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.mobile.ui.SplitViewInitEvent) => init(t0).runNow()))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.mobile.ui.SplitViewShowEvent) => show(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitViewOptions]
   }
+  
+  extension [Self <: SplitViewOptions](x: Self) {
+    
+    inline def setInit(value: /* e */ SplitViewInitEvent => Callback): Self = StObject.set(x, "init", js.Any.fromFunction1((t0: /* e */ SplitViewInitEvent) => value(t0).runNow()))
+    
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setShow(value: /* e */ SplitViewShowEvent => Callback): Self = StObject.set(x, "show", js.Any.fromFunction1((t0: /* e */ SplitViewShowEvent) => value(t0).runNow()))
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

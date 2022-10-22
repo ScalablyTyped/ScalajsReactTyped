@@ -1,23 +1,28 @@
 package typingsJapgolly.objectFitImages
 
-import typingsJapgolly.std.HTMLElement
-import typingsJapgolly.std.NodeList
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.Node
+import org.scalajs.dom.NodeList
+import typingsJapgolly.objectFitImages.anon.SkipTest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("object-fit-images", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): Unit = js.native
-  def apply(images: String): Unit = js.native
-  def apply(images: String, options: AnonSkipTest): Unit = js.native
-  def apply(images: js.Array[HTMLElement]): Unit = js.native
-  def apply(images: js.Array[HTMLElement], options: AnonSkipTest): Unit = js.native
-  def apply(images: Null, options: AnonSkipTest): Unit = js.native
-  def apply(images: HTMLElement): Unit = js.native
-  def apply(images: HTMLElement, options: AnonSkipTest): Unit = js.native
-  def apply(images: NodeList): Unit = js.native
-  def apply(images: NodeList, options: AnonSkipTest): Unit = js.native
+object mod {
+  
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(images: String): Unit = ^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(images: String, options: SkipTest): Unit = (^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(images: js.Array[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(images: js.Array[HTMLElement], options: SkipTest): Unit = (^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(images: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(images: HTMLElement, options: SkipTest): Unit = (^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(images: NodeList[Node]): Unit = ^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(images: NodeList[Node], options: SkipTest): Unit = (^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(images: Null, options: SkipTest): Unit = (^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(images: Unit, options: SkipTest): Unit = (^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("object-fit-images", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

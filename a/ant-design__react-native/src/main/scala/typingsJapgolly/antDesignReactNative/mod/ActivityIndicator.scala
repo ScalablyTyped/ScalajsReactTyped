@@ -1,19 +1,23 @@
 package typingsJapgolly.antDesignReactNative.mod
 
-import typingsJapgolly.antDesignReactNative.AnonAnimating
-import typingsJapgolly.antDesignReactNative.activityIndicatorMod.default
+import typingsJapgolly.antDesignReactNative.anon.Animating
+import typingsJapgolly.antDesignReactNative.libActivityIndicatorMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "ActivityIndicator")
 @js.native
-class ActivityIndicator () extends default
-
+open class ActivityIndicator () extends default
 /* static members */
-@JSImport("@ant-design/react-native", "ActivityIndicator")
-@js.native
-object ActivityIndicator extends js.Object {
-  var defaultProps: AnonAnimating = js.native
+object ActivityIndicator {
+  
+  @JSImport("@ant-design/react-native", "ActivityIndicator")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native", "ActivityIndicator.defaultProps")
+  @js.native
+  def defaultProps: Animating = js.native
+  inline def defaultProps_=(x: Animating): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

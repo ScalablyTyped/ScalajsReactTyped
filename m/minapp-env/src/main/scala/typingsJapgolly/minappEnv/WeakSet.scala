@@ -1,20 +1,18 @@
 package typingsJapgolly.minappEnv
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WeakSet[T] extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
-  val toStringTag: typingsJapgolly.minappEnv.minappEnvStrings.WeakSet = js.native
+trait WeakSet[T] extends StObject {
+  
   def add(value: T): this.type = js.native
+  
   def delete(value: T): scala.Boolean = js.native
+  
   def has(value: T): scala.Boolean = js.native
+  
+  @JSName(js.Symbol.toStringTag)
+  val toStringTag: typingsJapgolly.minappEnv.minappEnvStrings.WeakSet = js.native
 }
-
-@JSGlobal("WeakSet")
-@js.native
-object WeakSet extends TopLevel[WeakSetConstructor]
-

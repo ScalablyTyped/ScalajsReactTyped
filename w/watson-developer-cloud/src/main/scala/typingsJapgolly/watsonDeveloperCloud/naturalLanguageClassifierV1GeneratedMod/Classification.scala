@@ -1,42 +1,59 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * model interfaces
   ************************/
 /** Response from the classifier for a phrase. */
-trait Classification extends js.Object {
+trait Classification extends StObject {
+  
   /** An array of up to ten class-confidence pairs sorted in descending order of confidence. */
   var classes: js.UndefOr[js.Array[ClassifiedClass]] = js.undefined
+  
   /** Unique identifier for this classifier. */
   var classifier_id: js.UndefOr[String] = js.undefined
+  
   /** The submitted phrase. */
   var text: js.UndefOr[String] = js.undefined
+  
   /** The class with the highest confidence. */
   var top_class: js.UndefOr[String] = js.undefined
+  
   /** Link to the classifier. */
   var url: js.UndefOr[String] = js.undefined
 }
-
 object Classification {
-  @scala.inline
-  def apply(
-    classes: js.Array[ClassifiedClass] = null,
-    classifier_id: String = null,
-    text: String = null,
-    top_class: String = null,
-    url: String = null
-  ): Classification = {
+  
+  inline def apply(): Classification = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (classifier_id != null) __obj.updateDynamic("classifier_id")(classifier_id.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (top_class != null) __obj.updateDynamic("top_class")(top_class.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Classification]
   }
+  
+  extension [Self <: Classification](x: Self) {
+    
+    inline def setClasses(value: js.Array[ClassifiedClass]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setClassesVarargs(value: ClassifiedClass*): Self = StObject.set(x, "classes", js.Array(value*))
+    
+    inline def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
+    
+    inline def setClassifier_idUndefined: Self = StObject.set(x, "classifier_id", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setTop_class(value: String): Self = StObject.set(x, "top_class", value.asInstanceOf[js.Any])
+    
+    inline def setTop_classUndefined: Self = StObject.set(x, "top_class", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

@@ -1,18 +1,21 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.linkTypesMod.ILinkProps
+import typingsJapgolly.officeUiFabricReact.libComponentsLinkLinkDottypesMod.ILinkProps
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Link", JSImport.Namespace)
-@js.native
-object libLinkMod extends js.Object {
-  @js.native
-  class LinkBase ()
-    extends typingsJapgolly.officeUiFabricReact.linkBaseMod.LinkBase
+object libLinkMod {
   
+  @JSImport("office-ui-fabric-react/lib/Link", "Link")
+  @js.native
   val Link: FunctionComponent[ILinkProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Link", "LinkBase")
+  @js.native
+  open class LinkBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsLinkMod.LinkBase {
+    def this(props: ILinkProps) = this()
+  }
 }
-

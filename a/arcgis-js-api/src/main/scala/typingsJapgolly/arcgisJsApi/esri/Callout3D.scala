@@ -1,16 +1,11 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Callout3D
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport
-
-@JSGlobal("__esri.Callout3D")
-@js.native
-object Callout3D extends TopLevel[Callout3DConstructor]
-

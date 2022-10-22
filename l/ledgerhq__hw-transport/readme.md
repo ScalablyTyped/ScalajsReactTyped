@@ -10,15 +10,15 @@ Ledger Hardware Wallet common interface of the communication layer
 | ------------------ | :-------------: |
 | Full name          | @ledgerhq/hw-transport |
 | Keywords           | Ledger, LedgerWallet, NanoS, Blue, Hardware Wallet |
-| # releases         | 149 |
-| # dependents       | 66 |
-| # downloads        | 581368 |
-| # stars            | 0 |
+| # releases         | 76 |
+| # dependents       | 0.0 |
+| # downloads        | 690974.3333333334 |
+| # stars            | 118.0 |
 
 ## Links
-- [Homepage](https://github.com/LedgerHQ/ledgerjs)
-- [Bugs](https://github.com/LedgerHQ/ledgerjs/issues)
-- [Repository](https://github.com/LedgerHQ/ledgerjs)
+- [Homepage](https://github.com/LedgerHQ/ledger-live/tree/develop/libs/ledgerjs/packages/hw-transport)
+- [Bugs](https://github.com/LedgerHQ/ledger-live/issues)
+- [Repository](https://github.com/LedgerHQ/ledger-live)
 - [Npm](https://www.npmjs.com/package/%40ledgerhq%2Fhw-transport)
     
 

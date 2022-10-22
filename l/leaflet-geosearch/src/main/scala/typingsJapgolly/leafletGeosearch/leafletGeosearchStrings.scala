@@ -1,34 +1,44 @@
 package typingsJapgolly.leafletGeosearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object leafletGeosearchStrings {
-  @js.native
-  sealed trait bar extends js.Object
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait Feature extends StObject
+  inline def Feature: Feature = "Feature".asInstanceOf[Feature]
   
   @js.native
-  sealed trait node extends js.Object
+  sealed trait Point extends StObject
+  inline def Point: Point = "Point".asInstanceOf[Point]
   
   @js.native
-  sealed trait relation extends js.Object
+  sealed trait bar extends StObject
+  inline def bar: bar = "bar".asInstanceOf[bar]
   
   @js.native
-  sealed trait way extends js.Object
+  sealed trait button extends StObject
+  inline def button: button = "button".asInstanceOf[button]
   
-  @scala.inline
-  def bar: bar = "bar".asInstanceOf[bar]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
-  @scala.inline
-  def relation: relation = "relation".asInstanceOf[relation]
-  @scala.inline
-  def way: way = "way".asInstanceOf[way]
+  @js.native
+  sealed trait centroid extends StObject
+  inline def centroid: centroid = "centroid".asInstanceOf[centroid]
+  
+  @js.native
+  sealed trait exact extends StObject
+  inline def exact: exact = "exact".asInstanceOf[exact]
+  
+  @js.native
+  sealed trait fallback extends StObject
+  inline def fallback: fallback = "fallback".asInstanceOf[fallback]
+  
+  @js.native
+  sealed trait interpolated extends StObject
+  inline def interpolated: interpolated = "interpolated".asInstanceOf[interpolated]
+  
+  @js.native
+  sealed trait point_ extends StObject
+  inline def point_ : point_ = "point".asInstanceOf[point_]
 }
-

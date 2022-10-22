@@ -11,9 +11,9 @@ Improves usage of html inline styles in javascript.
 | Full name          | stylenames |
 | Keywords           | inline-styles, styles, es6, middleware |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 19758 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 29020.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/kmathmann/stylenames#readme)

@@ -1,30 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WindowsDefenderScanActionResult extends DeviceActionResult {
+trait WindowsDefenderScanActionResult
+  extends StObject
+     with DeviceActionResult {
+  
   // Scan type either full scan or quick scan
-  var scanType: js.UndefOr[String] = js.undefined
+  var scanType: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object WindowsDefenderScanActionResult {
-  @scala.inline
-  def apply(
-    actionName: String = null,
-    actionState: ActionState = null,
-    lastUpdatedDateTime: String = null,
-    scanType: String = null,
-    startDateTime: String = null
-  ): WindowsDefenderScanActionResult = {
+  
+  inline def apply(): WindowsDefenderScanActionResult = {
     val __obj = js.Dynamic.literal()
-    if (actionName != null) __obj.updateDynamic("actionName")(actionName.asInstanceOf[js.Any])
-    if (actionState != null) __obj.updateDynamic("actionState")(actionState.asInstanceOf[js.Any])
-    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
-    if (scanType != null) __obj.updateDynamic("scanType")(scanType.asInstanceOf[js.Any])
-    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsDefenderScanActionResult]
   }
+  
+  extension [Self <: WindowsDefenderScanActionResult](x: Self) {
+    
+    inline def setScanType(value: NullableOption[String]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
+    
+    inline def setScanTypeNull: Self = StObject.set(x, "scanType", null)
+    
+    inline def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
+  }
 }
-

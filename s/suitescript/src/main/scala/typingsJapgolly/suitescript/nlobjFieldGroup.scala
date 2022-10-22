@@ -1,9 +1,9 @@
 package typingsJapgolly.suitescript
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjFieldGroup (currently only supported on nlobjAssistant pages)
@@ -16,11 +16,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait nlobjFieldGroup
-  extends /**
+  extends StObject
+     with /**
   *
   * @return
   */
-Instantiable0[/* nlobjFieldGroup */ js.Any] {
+Instantiable0[Any] {
+  
   /**
     * set collapsibility property for this field group.
     *
@@ -38,6 +40,7 @@ Instantiable0[/* nlobjFieldGroup */ js.Any] {
     */
   def setCollapsible(collapsible: Boolean): js.Function0[Unit] = js.native
   def setCollapsible(collapsible: Boolean, defaultcollapsed: Boolean): js.Function0[Unit] = js.native
+  
   /**
     * set the label for this field group.
     * @param {string} label display label for field group
@@ -51,6 +54,7 @@ Instantiable0[/* nlobjFieldGroup */ js.Any] {
     * @return
     */
   def setLabel(label: String): js.Function0[Unit] = js.native
+  
   /**
     * set showBorder property for this field group.
     *
@@ -65,6 +69,7 @@ Instantiable0[/* nlobjFieldGroup */ js.Any] {
     * @return
     */
   def setShowBorder(showBorder: Boolean): js.Function0[Unit] = js.native
+  
   /**
     * set singleColumn property for this field group.
     *
@@ -80,4 +85,3 @@ Instantiable0[/* nlobjFieldGroup */ js.Any] {
     */
   def setSingleColumn(singleColumn: Boolean): js.Function0[Unit] = js.native
 }
-

@@ -1,13 +1,13 @@
 package typingsJapgolly.phenomnomnominalTsquery
 
-import typingsJapgolly.phenomnomnominalTsquery.tsqueryTypesMod.TSQueryApi
+import typingsJapgolly.phenomnomnominalTsquery.distSrcTsqueryTypesMod.TSQueryApi
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@phenomnomnominal/tsquery", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@phenomnomnominal/tsquery", "tsquery")
+  @js.native
   val tsquery: TSQueryApi = js.native
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.findProcess
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object findProcessStrings {
-  @js.native
-  sealed trait name extends js.Object
   
   @js.native
-  sealed trait pid extends js.Object
+  sealed trait name extends StObject
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait port extends js.Object
+  sealed trait pid extends StObject
+  inline def pid: pid = "pid".asInstanceOf[pid]
   
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def pid: pid = "pid".asInstanceOf[pid]
-  @scala.inline
-  def port: port = "port".asInstanceOf[port]
+  @js.native
+  sealed trait port extends StObject
+  inline def port: port = "port".asInstanceOf[port]
 }
-

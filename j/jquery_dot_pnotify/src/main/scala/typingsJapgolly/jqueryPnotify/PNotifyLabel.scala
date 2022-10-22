@@ -1,33 +1,48 @@
 package typingsJapgolly.jqueryPnotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PNotifyLabel extends js.Object {
+trait PNotifyLabel extends StObject {
+  
   var all: js.UndefOr[String] = js.undefined
+  
   var close: js.UndefOr[String] = js.undefined
+  
   var last: js.UndefOr[String] = js.undefined
+  
   var redisplay: js.UndefOr[String] = js.undefined
+  
   var stick: js.UndefOr[String] = js.undefined
 }
-
 object PNotifyLabel {
-  @scala.inline
-  def apply(
-    all: String = null,
-    close: String = null,
-    last: String = null,
-    redisplay: String = null,
-    stick: String = null
-  ): PNotifyLabel = {
+  
+  inline def apply(): PNotifyLabel = {
     val __obj = js.Dynamic.literal()
-    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
-    if (redisplay != null) __obj.updateDynamic("redisplay")(redisplay.asInstanceOf[js.Any])
-    if (stick != null) __obj.updateDynamic("stick")(stick.asInstanceOf[js.Any])
     __obj.asInstanceOf[PNotifyLabel]
   }
+  
+  extension [Self <: PNotifyLabel](x: Self) {
+    
+    inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    
+    inline def setRedisplay(value: String): Self = StObject.set(x, "redisplay", value.asInstanceOf[js.Any])
+    
+    inline def setRedisplayUndefined: Self = StObject.set(x, "redisplay", js.undefined)
+    
+    inline def setStick(value: String): Self = StObject.set(x, "stick", value.asInstanceOf[js.Any])
+    
+    inline def setStickUndefined: Self = StObject.set(x, "stick", js.undefined)
+  }
 }
-

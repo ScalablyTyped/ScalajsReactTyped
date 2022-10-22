@@ -1,33 +1,47 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenderOptions extends js.Object {
+trait RenderOptions extends StObject {
+  
   var autoViewport: js.UndefOr[Boolean] = js.undefined
+  
   var highlightMode: js.UndefOr[HighlightModes] = js.undefined
+  
   var map: Map
+  
   var panel: js.UndefOr[String | HTMLElement] = js.undefined
+  
   var selectFirstResult: js.UndefOr[Boolean] = js.undefined
 }
-
 object RenderOptions {
-  @scala.inline
-  def apply(
-    map: Map,
-    autoViewport: js.UndefOr[Boolean] = js.undefined,
-    highlightMode: Int | Double = null,
-    panel: String | HTMLElement = null,
-    selectFirstResult: js.UndefOr[Boolean] = js.undefined
-  ): RenderOptions = {
+  
+  inline def apply(map: Map): RenderOptions = {
     val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoViewport)) __obj.updateDynamic("autoViewport")(autoViewport.asInstanceOf[js.Any])
-    if (highlightMode != null) __obj.updateDynamic("highlightMode")(highlightMode.asInstanceOf[js.Any])
-    if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectFirstResult)) __obj.updateDynamic("selectFirstResult")(selectFirstResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]
   }
+  
+  extension [Self <: RenderOptions](x: Self) {
+    
+    inline def setAutoViewport(value: Boolean): Self = StObject.set(x, "autoViewport", value.asInstanceOf[js.Any])
+    
+    inline def setAutoViewportUndefined: Self = StObject.set(x, "autoViewport", js.undefined)
+    
+    inline def setHighlightMode(value: HighlightModes): Self = StObject.set(x, "highlightMode", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightModeUndefined: Self = StObject.set(x, "highlightMode", js.undefined)
+    
+    inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setPanel(value: String | HTMLElement): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    
+    inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+    
+    inline def setSelectFirstResult(value: Boolean): Self = StObject.set(x, "selectFirstResult", value.asInstanceOf[js.Any])
+    
+    inline def setSelectFirstResultUndefined: Self = StObject.set(x, "selectFirstResult", js.undefined)
+  }
 }
-

@@ -32,424 +32,560 @@ import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.ThreePhaseColor
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Triangle
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.TwoPhaseColor
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartSeries object, for use in `chartSeries.set({ ... })`. */
-trait ChartSeriesUpdateData extends js.Object {
+trait ChartSeriesUpdateData extends StObject {
+  
   /**
+    * Specifies the group for the specified series.
     *
-    * Returns or sets the group for the specified series. Read/Write
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var axisGroup: js.UndefOr[ChartAxisGroup | Primary | Secondary] = js.undefined
+  
   /**
-    *
     * Encapsulates the bin options for histogram charts and pareto charts.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var binOptions: js.UndefOr[ChartBinOptionsUpdateData] = js.undefined
+  
   /**
-    *
     * Encapsulates the options for the box and whisker charts.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var boxwhiskerOptions: js.UndefOr[ChartBoxwhiskerOptionsUpdateData] = js.undefined
+  
   /**
+    * This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts.
     *
-    * This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var bubbleScale: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Represents the chart type of a series. See `Excel.ChartType` for details.
     *
-    * Represents the chart type of a series. See Excel.ChartType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var chartType: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84, starting with typingsJapgolly.officeJsPreview.Excel.ChartType, typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Invalid, typingsJapgolly.officeJsPreview.officeJsPreviewStrings.ColumnClustered */ Any
   ] = js.undefined
+  
   /**
+    * Represents a collection of all data labels in the series.
     *
-    * Represents a collection of all dataLabels in the series.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var dataLabels: js.UndefOr[ChartDataLabelsUpdateData] = js.undefined
+  
   /**
+    * Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnut exploded charts.
+    Throws an `InvalidArgument` error on invalid charts.
     *
-    * Represents the doughnut hole size of a chart series.  Only valid on doughnut and doughnutExploded charts.
-    Throws an invalid argument exception on invalid charts.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var doughnutHoleSize: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie).
     *
-    * Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var explosion: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies if the series is filtered. Not applicable for surface charts.
     *
-    * Boolean value representing if the series is filtered or not. Not applicable for surface charts.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var filtered: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.
     *
-    * Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var firstSliceAngle: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Represents the formatting of a chart series, which includes fill and line formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var format: js.UndefOr[ChartSeriesFormatUpdateData] = js.undefined
+  
   /**
+    * Represents the gap width of a chart series. Only valid on bar and column charts, as well as
+    specific classes of line and pie charts. Throws an invalid argument exception on invalid charts.
     *
-    * Represents the gap width of a chart series.  Only valid on bar and column charts, as well as
-    specific classes of line and pie charts.  Throws an invalid argument exception on invalid charts.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var gapWidth: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the color for maximum value of a region map chart series.
     *
-    * Returns or sets the color for maximum value of a region map chart series. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var gradientMaximumColor: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies the type for maximum value of a region map chart series.
     *
-    * Returns or sets the type for maximum value of a region map chart series. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var gradientMaximumType: js.UndefOr[ChartGradientStyleType | ExtremeValue | Number | Percent] = js.undefined
+  
   /**
+    * Specifies the maximum value of a region map chart series.
     *
-    * Returns or sets the maximum value of a region map chart series. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var gradientMaximumValue: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the color for the midpoint value of a region map chart series.
     *
-    * Returns or sets the color for midpoint value of a region map chart series. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var gradientMidpointColor: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies the type for the midpoint value of a region map chart series.
     *
-    * Returns or sets the type for midpoint value of a region map chart series. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var gradientMidpointType: js.UndefOr[ChartGradientStyleType | ExtremeValue | Number | Percent] = js.undefined
+  
   /**
+    * Specifies the midpoint value of a region map chart series.
     *
-    * Returns or sets the midpoint value of a region map chart series. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var gradientMidpointValue: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the color for the minimum value of a region map chart series.
     *
-    * Returns or sets the color for minimum value of a region map chart series. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var gradientMinimumColor: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies the type for the minimum value of a region map chart series.
     *
-    * Returns or sets the type for minimum value of a region map chart series. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var gradientMinimumType: js.UndefOr[ChartGradientStyleType | ExtremeValue | Number | Percent] = js.undefined
+  
   /**
+    * Specifies the minimum value of a region map chart series.
     *
-    * Returns or sets the minimum value of a region map chart series. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var gradientMinimumValue: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the series gradient style of a region map chart.
     *
-    * Returns or sets series gradient style of a region map chart. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var gradientStyle: js.UndefOr[ChartGradientStyle | TwoPhaseColor | ThreePhaseColor] = js.undefined
+  
   /**
+    * Specifies if the series has data labels.
     *
-    * Boolean value representing if the series has data labels or not.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var hasDataLabels: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the fill color for negative data points in a series.
     *
-    * Returns or sets the fill color for negative data points in a series. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var invertColor: js.UndefOr[String] = js.undefined
+  
   /**
+    * True if Excel inverts the pattern in the item when it corresponds to a negative number.
     *
-    * True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var invertIfNegative: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Encapsulates the options for a region map chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var mapOptions: js.UndefOr[ChartMapOptionsUpdateData] = js.undefined
+  
   /**
+    * Specifies the marker background color of a chart series.
     *
-    * Represents markers background color of a chart series.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var markerBackgroundColor: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies the marker foreground color of a chart series.
     *
-    * Represents markers foreground color of a chart series.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var markerForegroundColor: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies the marker size of a chart series.
     *
-    * Represents marker size of a chart series.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var markerSize: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the marker style of a chart series. See `Excel.ChartMarkerStyle` for details.
     *
-    * Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var markerStyle: js.UndefOr[
     ChartMarkerStyle | Invalid | Automatic | None | Square | Diamond | Triangle | X | Star | Dot | Dash | Circle | Plus | Picture
   ] = js.undefined
+  
   /**
+    * Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
     *
-    * Represents the name of a series in a chart.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
     *
-    * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var overlap: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the series parent label strategy area for a treemap chart.
     *
-    * Returns or sets the series parent label strategy area for a treemap chart. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var parentLabelStrategy: js.UndefOr[ChartParentLabelStrategy | None | Banner | Overlapping] = js.undefined
+  
   /**
+    * Specifies the plot order of a chart series within the chart group.
     *
-    * Represents the plot order of a chart series within the chart group.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var plotOrder: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the size of the secondary section of either a pie-of-pie chart or a bar-of-pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
     *
-    * Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var secondPlotSize: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies whether connector lines are shown in waterfall charts.
     *
-    * Specifies whether or not connector lines are shown in waterfall charts. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showConnectorLines: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether leader lines are displayed for each data label in the series.
     *
-    * Specifies whether or not leader lines are displayed for each data label in the series. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showLeaderLines: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the series has a shadow.
     *
-    * Boolean value representing if the series has a shadow or not.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showShadow: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the series is smooth. Only applicable to line and scatter charts.
     *
-    * Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var smooth: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the way the two sections of either a pie-of-pie chart or a bar-of-pie chart are split.
     *
-    * Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var splitType: js.UndefOr[
     ChartSplitType | SplitByPosition | SplitByValue | SplitByPercentValue | SplitByCustomSplit
   ] = js.undefined
+  
   /**
+    * Specifies the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart.
     *
-    * Returns or sets the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var splitValue: js.UndefOr[Double] = js.undefined
+  
   /**
+    * True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
     *
-    * True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one series. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var varyByCategories: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the error bar object of a chart series.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var xErrorBars: js.UndefOr[ChartErrorBarsUpdateData] = js.undefined
+  
   /**
-    *
     * Represents the error bar object of a chart series.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var yErrorBars: js.UndefOr[ChartErrorBarsUpdateData] = js.undefined
 }
-
 object ChartSeriesUpdateData {
-  @scala.inline
-  def apply(
-    axisGroup: ChartAxisGroup | Primary | Secondary = null,
-    binOptions: ChartBinOptionsUpdateData = null,
-    boxwhiskerOptions: ChartBoxwhiskerOptionsUpdateData = null,
-    bubbleScale: Int | Double = null,
-    chartType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84 */ js.Any = null,
-    dataLabels: ChartDataLabelsUpdateData = null,
-    doughnutHoleSize: Int | Double = null,
-    explosion: Int | Double = null,
-    filtered: js.UndefOr[Boolean] = js.undefined,
-    firstSliceAngle: Int | Double = null,
-    format: ChartSeriesFormatUpdateData = null,
-    gapWidth: Int | Double = null,
-    gradientMaximumColor: String = null,
-    gradientMaximumType: ChartGradientStyleType | ExtremeValue | Number | Percent = null,
-    gradientMaximumValue: Int | Double = null,
-    gradientMidpointColor: String = null,
-    gradientMidpointType: ChartGradientStyleType | ExtremeValue | Number | Percent = null,
-    gradientMidpointValue: Int | Double = null,
-    gradientMinimumColor: String = null,
-    gradientMinimumType: ChartGradientStyleType | ExtremeValue | Number | Percent = null,
-    gradientMinimumValue: Int | Double = null,
-    gradientStyle: ChartGradientStyle | TwoPhaseColor | ThreePhaseColor = null,
-    hasDataLabels: js.UndefOr[Boolean] = js.undefined,
-    invertColor: String = null,
-    invertIfNegative: js.UndefOr[Boolean] = js.undefined,
-    mapOptions: ChartMapOptionsUpdateData = null,
-    markerBackgroundColor: String = null,
-    markerForegroundColor: String = null,
-    markerSize: Int | Double = null,
-    markerStyle: ChartMarkerStyle | Invalid | Automatic | None | Square | Diamond | Triangle | X | Star | Dot | Dash | Circle | Plus | Picture = null,
-    name: String = null,
-    overlap: Int | Double = null,
-    parentLabelStrategy: ChartParentLabelStrategy | None | Banner | Overlapping = null,
-    plotOrder: Int | Double = null,
-    secondPlotSize: Int | Double = null,
-    showConnectorLines: js.UndefOr[Boolean] = js.undefined,
-    showLeaderLines: js.UndefOr[Boolean] = js.undefined,
-    showShadow: js.UndefOr[Boolean] = js.undefined,
-    smooth: js.UndefOr[Boolean] = js.undefined,
-    splitType: ChartSplitType | SplitByPosition | SplitByValue | SplitByPercentValue | SplitByCustomSplit = null,
-    splitValue: Int | Double = null,
-    varyByCategories: js.UndefOr[Boolean] = js.undefined,
-    xErrorBars: ChartErrorBarsUpdateData = null,
-    yErrorBars: ChartErrorBarsUpdateData = null
-  ): ChartSeriesUpdateData = {
+  
+  inline def apply(): ChartSeriesUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (axisGroup != null) __obj.updateDynamic("axisGroup")(axisGroup.asInstanceOf[js.Any])
-    if (binOptions != null) __obj.updateDynamic("binOptions")(binOptions.asInstanceOf[js.Any])
-    if (boxwhiskerOptions != null) __obj.updateDynamic("boxwhiskerOptions")(boxwhiskerOptions.asInstanceOf[js.Any])
-    if (bubbleScale != null) __obj.updateDynamic("bubbleScale")(bubbleScale.asInstanceOf[js.Any])
-    if (chartType != null) __obj.updateDynamic("chartType")(chartType.asInstanceOf[js.Any])
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (doughnutHoleSize != null) __obj.updateDynamic("doughnutHoleSize")(doughnutHoleSize.asInstanceOf[js.Any])
-    if (explosion != null) __obj.updateDynamic("explosion")(explosion.asInstanceOf[js.Any])
-    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered.asInstanceOf[js.Any])
-    if (firstSliceAngle != null) __obj.updateDynamic("firstSliceAngle")(firstSliceAngle.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (gapWidth != null) __obj.updateDynamic("gapWidth")(gapWidth.asInstanceOf[js.Any])
-    if (gradientMaximumColor != null) __obj.updateDynamic("gradientMaximumColor")(gradientMaximumColor.asInstanceOf[js.Any])
-    if (gradientMaximumType != null) __obj.updateDynamic("gradientMaximumType")(gradientMaximumType.asInstanceOf[js.Any])
-    if (gradientMaximumValue != null) __obj.updateDynamic("gradientMaximumValue")(gradientMaximumValue.asInstanceOf[js.Any])
-    if (gradientMidpointColor != null) __obj.updateDynamic("gradientMidpointColor")(gradientMidpointColor.asInstanceOf[js.Any])
-    if (gradientMidpointType != null) __obj.updateDynamic("gradientMidpointType")(gradientMidpointType.asInstanceOf[js.Any])
-    if (gradientMidpointValue != null) __obj.updateDynamic("gradientMidpointValue")(gradientMidpointValue.asInstanceOf[js.Any])
-    if (gradientMinimumColor != null) __obj.updateDynamic("gradientMinimumColor")(gradientMinimumColor.asInstanceOf[js.Any])
-    if (gradientMinimumType != null) __obj.updateDynamic("gradientMinimumType")(gradientMinimumType.asInstanceOf[js.Any])
-    if (gradientMinimumValue != null) __obj.updateDynamic("gradientMinimumValue")(gradientMinimumValue.asInstanceOf[js.Any])
-    if (gradientStyle != null) __obj.updateDynamic("gradientStyle")(gradientStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasDataLabels)) __obj.updateDynamic("hasDataLabels")(hasDataLabels.asInstanceOf[js.Any])
-    if (invertColor != null) __obj.updateDynamic("invertColor")(invertColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(invertIfNegative)) __obj.updateDynamic("invertIfNegative")(invertIfNegative.asInstanceOf[js.Any])
-    if (mapOptions != null) __obj.updateDynamic("mapOptions")(mapOptions.asInstanceOf[js.Any])
-    if (markerBackgroundColor != null) __obj.updateDynamic("markerBackgroundColor")(markerBackgroundColor.asInstanceOf[js.Any])
-    if (markerForegroundColor != null) __obj.updateDynamic("markerForegroundColor")(markerForegroundColor.asInstanceOf[js.Any])
-    if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
-    if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (overlap != null) __obj.updateDynamic("overlap")(overlap.asInstanceOf[js.Any])
-    if (parentLabelStrategy != null) __obj.updateDynamic("parentLabelStrategy")(parentLabelStrategy.asInstanceOf[js.Any])
-    if (plotOrder != null) __obj.updateDynamic("plotOrder")(plotOrder.asInstanceOf[js.Any])
-    if (secondPlotSize != null) __obj.updateDynamic("secondPlotSize")(secondPlotSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(showConnectorLines)) __obj.updateDynamic("showConnectorLines")(showConnectorLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLeaderLines)) __obj.updateDynamic("showLeaderLines")(showLeaderLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
-    if (splitType != null) __obj.updateDynamic("splitType")(splitType.asInstanceOf[js.Any])
-    if (splitValue != null) __obj.updateDynamic("splitValue")(splitValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(varyByCategories)) __obj.updateDynamic("varyByCategories")(varyByCategories.asInstanceOf[js.Any])
-    if (xErrorBars != null) __obj.updateDynamic("xErrorBars")(xErrorBars.asInstanceOf[js.Any])
-    if (yErrorBars != null) __obj.updateDynamic("yErrorBars")(yErrorBars.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesUpdateData]
   }
+  
+  extension [Self <: ChartSeriesUpdateData](x: Self) {
+    
+    inline def setAxisGroup(value: ChartAxisGroup | Primary | Secondary): Self = StObject.set(x, "axisGroup", value.asInstanceOf[js.Any])
+    
+    inline def setAxisGroupUndefined: Self = StObject.set(x, "axisGroup", js.undefined)
+    
+    inline def setBinOptions(value: ChartBinOptionsUpdateData): Self = StObject.set(x, "binOptions", value.asInstanceOf[js.Any])
+    
+    inline def setBinOptionsUndefined: Self = StObject.set(x, "binOptions", js.undefined)
+    
+    inline def setBoxwhiskerOptions(value: ChartBoxwhiskerOptionsUpdateData): Self = StObject.set(x, "boxwhiskerOptions", value.asInstanceOf[js.Any])
+    
+    inline def setBoxwhiskerOptionsUndefined: Self = StObject.set(x, "boxwhiskerOptions", js.undefined)
+    
+    inline def setBubbleScale(value: Double): Self = StObject.set(x, "bubbleScale", value.asInstanceOf[js.Any])
+    
+    inline def setBubbleScaleUndefined: Self = StObject.set(x, "bubbleScale", js.undefined)
+    
+    inline def setChartType(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 84, starting with typingsJapgolly.officeJsPreview.Excel.ChartType, typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Invalid, typingsJapgolly.officeJsPreview.officeJsPreviewStrings.ColumnClustered */ Any
+    ): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
+    
+    inline def setChartTypeUndefined: Self = StObject.set(x, "chartType", js.undefined)
+    
+    inline def setDataLabels(value: ChartDataLabelsUpdateData): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
+    
+    inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
+    
+    inline def setDoughnutHoleSize(value: Double): Self = StObject.set(x, "doughnutHoleSize", value.asInstanceOf[js.Any])
+    
+    inline def setDoughnutHoleSizeUndefined: Self = StObject.set(x, "doughnutHoleSize", js.undefined)
+    
+    inline def setExplosion(value: Double): Self = StObject.set(x, "explosion", value.asInstanceOf[js.Any])
+    
+    inline def setExplosionUndefined: Self = StObject.set(x, "explosion", js.undefined)
+    
+    inline def setFiltered(value: Boolean): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
+    
+    inline def setFilteredUndefined: Self = StObject.set(x, "filtered", js.undefined)
+    
+    inline def setFirstSliceAngle(value: Double): Self = StObject.set(x, "firstSliceAngle", value.asInstanceOf[js.Any])
+    
+    inline def setFirstSliceAngleUndefined: Self = StObject.set(x, "firstSliceAngle", js.undefined)
+    
+    inline def setFormat(value: ChartSeriesFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setGapWidth(value: Double): Self = StObject.set(x, "gapWidth", value.asInstanceOf[js.Any])
+    
+    inline def setGapWidthUndefined: Self = StObject.set(x, "gapWidth", js.undefined)
+    
+    inline def setGradientMaximumColor(value: String): Self = StObject.set(x, "gradientMaximumColor", value.asInstanceOf[js.Any])
+    
+    inline def setGradientMaximumColorUndefined: Self = StObject.set(x, "gradientMaximumColor", js.undefined)
+    
+    inline def setGradientMaximumType(value: ChartGradientStyleType | ExtremeValue | Number | Percent): Self = StObject.set(x, "gradientMaximumType", value.asInstanceOf[js.Any])
+    
+    inline def setGradientMaximumTypeUndefined: Self = StObject.set(x, "gradientMaximumType", js.undefined)
+    
+    inline def setGradientMaximumValue(value: Double): Self = StObject.set(x, "gradientMaximumValue", value.asInstanceOf[js.Any])
+    
+    inline def setGradientMaximumValueUndefined: Self = StObject.set(x, "gradientMaximumValue", js.undefined)
+    
+    inline def setGradientMidpointColor(value: String): Self = StObject.set(x, "gradientMidpointColor", value.asInstanceOf[js.Any])
+    
+    inline def setGradientMidpointColorUndefined: Self = StObject.set(x, "gradientMidpointColor", js.undefined)
+    
+    inline def setGradientMidpointType(value: ChartGradientStyleType | ExtremeValue | Number | Percent): Self = StObject.set(x, "gradientMidpointType", value.asInstanceOf[js.Any])
+    
+    inline def setGradientMidpointTypeUndefined: Self = StObject.set(x, "gradientMidpointType", js.undefined)
+    
+    inline def setGradientMidpointValue(value: Double): Self = StObject.set(x, "gradientMidpointValue", value.asInstanceOf[js.Any])
+    
+    inline def setGradientMidpointValueUndefined: Self = StObject.set(x, "gradientMidpointValue", js.undefined)
+    
+    inline def setGradientMinimumColor(value: String): Self = StObject.set(x, "gradientMinimumColor", value.asInstanceOf[js.Any])
+    
+    inline def setGradientMinimumColorUndefined: Self = StObject.set(x, "gradientMinimumColor", js.undefined)
+    
+    inline def setGradientMinimumType(value: ChartGradientStyleType | ExtremeValue | Number | Percent): Self = StObject.set(x, "gradientMinimumType", value.asInstanceOf[js.Any])
+    
+    inline def setGradientMinimumTypeUndefined: Self = StObject.set(x, "gradientMinimumType", js.undefined)
+    
+    inline def setGradientMinimumValue(value: Double): Self = StObject.set(x, "gradientMinimumValue", value.asInstanceOf[js.Any])
+    
+    inline def setGradientMinimumValueUndefined: Self = StObject.set(x, "gradientMinimumValue", js.undefined)
+    
+    inline def setGradientStyle(value: ChartGradientStyle | TwoPhaseColor | ThreePhaseColor): Self = StObject.set(x, "gradientStyle", value.asInstanceOf[js.Any])
+    
+    inline def setGradientStyleUndefined: Self = StObject.set(x, "gradientStyle", js.undefined)
+    
+    inline def setHasDataLabels(value: Boolean): Self = StObject.set(x, "hasDataLabels", value.asInstanceOf[js.Any])
+    
+    inline def setHasDataLabelsUndefined: Self = StObject.set(x, "hasDataLabels", js.undefined)
+    
+    inline def setInvertColor(value: String): Self = StObject.set(x, "invertColor", value.asInstanceOf[js.Any])
+    
+    inline def setInvertColorUndefined: Self = StObject.set(x, "invertColor", js.undefined)
+    
+    inline def setInvertIfNegative(value: Boolean): Self = StObject.set(x, "invertIfNegative", value.asInstanceOf[js.Any])
+    
+    inline def setInvertIfNegativeUndefined: Self = StObject.set(x, "invertIfNegative", js.undefined)
+    
+    inline def setMapOptions(value: ChartMapOptionsUpdateData): Self = StObject.set(x, "mapOptions", value.asInstanceOf[js.Any])
+    
+    inline def setMapOptionsUndefined: Self = StObject.set(x, "mapOptions", js.undefined)
+    
+    inline def setMarkerBackgroundColor(value: String): Self = StObject.set(x, "markerBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerBackgroundColorUndefined: Self = StObject.set(x, "markerBackgroundColor", js.undefined)
+    
+    inline def setMarkerForegroundColor(value: String): Self = StObject.set(x, "markerForegroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerForegroundColorUndefined: Self = StObject.set(x, "markerForegroundColor", js.undefined)
+    
+    inline def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerSizeUndefined: Self = StObject.set(x, "markerSize", js.undefined)
+    
+    inline def setMarkerStyle(
+      value: ChartMarkerStyle | Invalid | Automatic | None | Square | Diamond | Triangle | X | Star | Dot | Dash | Circle | Plus | Picture
+    ): Self = StObject.set(x, "markerStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerStyleUndefined: Self = StObject.set(x, "markerStyle", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOverlap(value: Double): Self = StObject.set(x, "overlap", value.asInstanceOf[js.Any])
+    
+    inline def setOverlapUndefined: Self = StObject.set(x, "overlap", js.undefined)
+    
+    inline def setParentLabelStrategy(value: ChartParentLabelStrategy | None | Banner | Overlapping): Self = StObject.set(x, "parentLabelStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setParentLabelStrategyUndefined: Self = StObject.set(x, "parentLabelStrategy", js.undefined)
+    
+    inline def setPlotOrder(value: Double): Self = StObject.set(x, "plotOrder", value.asInstanceOf[js.Any])
+    
+    inline def setPlotOrderUndefined: Self = StObject.set(x, "plotOrder", js.undefined)
+    
+    inline def setSecondPlotSize(value: Double): Self = StObject.set(x, "secondPlotSize", value.asInstanceOf[js.Any])
+    
+    inline def setSecondPlotSizeUndefined: Self = StObject.set(x, "secondPlotSize", js.undefined)
+    
+    inline def setShowConnectorLines(value: Boolean): Self = StObject.set(x, "showConnectorLines", value.asInstanceOf[js.Any])
+    
+    inline def setShowConnectorLinesUndefined: Self = StObject.set(x, "showConnectorLines", js.undefined)
+    
+    inline def setShowLeaderLines(value: Boolean): Self = StObject.set(x, "showLeaderLines", value.asInstanceOf[js.Any])
+    
+    inline def setShowLeaderLinesUndefined: Self = StObject.set(x, "showLeaderLines", js.undefined)
+    
+    inline def setShowShadow(value: Boolean): Self = StObject.set(x, "showShadow", value.asInstanceOf[js.Any])
+    
+    inline def setShowShadowUndefined: Self = StObject.set(x, "showShadow", js.undefined)
+    
+    inline def setSmooth(value: Boolean): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
+    
+    inline def setSplitType(value: ChartSplitType | SplitByPosition | SplitByValue | SplitByPercentValue | SplitByCustomSplit): Self = StObject.set(x, "splitType", value.asInstanceOf[js.Any])
+    
+    inline def setSplitTypeUndefined: Self = StObject.set(x, "splitType", js.undefined)
+    
+    inline def setSplitValue(value: Double): Self = StObject.set(x, "splitValue", value.asInstanceOf[js.Any])
+    
+    inline def setSplitValueUndefined: Self = StObject.set(x, "splitValue", js.undefined)
+    
+    inline def setVaryByCategories(value: Boolean): Self = StObject.set(x, "varyByCategories", value.asInstanceOf[js.Any])
+    
+    inline def setVaryByCategoriesUndefined: Self = StObject.set(x, "varyByCategories", js.undefined)
+    
+    inline def setXErrorBars(value: ChartErrorBarsUpdateData): Self = StObject.set(x, "xErrorBars", value.asInstanceOf[js.Any])
+    
+    inline def setXErrorBarsUndefined: Self = StObject.set(x, "xErrorBars", js.undefined)
+    
+    inline def setYErrorBars(value: ChartErrorBarsUpdateData): Self = StObject.set(x, "yErrorBars", value.asInstanceOf[js.Any])
+    
+    inline def setYErrorBarsUndefined: Self = StObject.set(x, "yErrorBars", js.undefined)
+  }
 }
-

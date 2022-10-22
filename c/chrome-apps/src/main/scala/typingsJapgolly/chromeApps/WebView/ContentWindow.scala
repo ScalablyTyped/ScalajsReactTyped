@@ -1,12 +1,13 @@
 package typingsJapgolly.chromeApps.WebView
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Messaging handle to a guest window. */
-trait ContentWindow extends js.Object {
+trait ContentWindow extends StObject {
+  
   /**
     * Posts a message to the embedded web content as long as the embedded
     * content is displaying a page from the target origin. This method is
@@ -23,15 +24,17 @@ trait ContentWindow extends js.Object {
     * @param message Message object to send to the guest.
     * @param targetOrigin Specifies what the origin of the guest window must be for the event to be dispatched.
     */
-  def postMessage(message: js.Any, targetOrigin: String): Unit
+  def postMessage(message: Any, targetOrigin: String): Unit
 }
-
 object ContentWindow {
-  @scala.inline
-  def apply(postMessage: (js.Any, String) => Callback): ContentWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("postMessage")(js.Any.fromFunction2((t0: js.Any, t1: java.lang.String) => postMessage(t0, t1).runNow()))
+  
+  inline def apply(postMessage: (Any, String) => Callback): ContentWindow = {
+    val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction2((t0: Any, t1: String) => (postMessage(t0, t1)).runNow()))
     __obj.asInstanceOf[ContentWindow]
   }
+  
+  extension [Self <: ContentWindow](x: Self) {
+    
+    inline def setPostMessage(value: (Any, String) => Callback): Self = StObject.set(x, "postMessage", js.Any.fromFunction2((t0: Any, t1: String) => (value(t0, t1)).runNow()))
+  }
 }
-

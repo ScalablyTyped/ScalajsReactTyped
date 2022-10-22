@@ -1,16 +1,24 @@
 package typingsJapgolly.reactNativeFirebase.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-firebase", "notifications")
-@js.native
-object notifications extends TopLevel[NotificationsModule] {
+object notifications extends Shortcut {
+  
+  @JSImport("react-native-firebase", "notifications")
   @js.native
-  class Notification ()
+  val ^ : NotificationsModule = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("react-native-firebase", "notifications.Notification")
+  @js.native
+  open class Notification ()
     extends typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Notification
   
+  type _To = NotificationsModule
+  
+  /* This means you don't have to write `^`, but can instead just say `notifications.foo` */
+  override def _to: NotificationsModule = ^
 }
-

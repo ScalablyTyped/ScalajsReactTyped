@@ -1,21 +1,30 @@
 package typingsJapgolly.bson.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bson", "Code")
 @js.native
-class Code protected () extends js.Object {
+open class Code protected () extends StObject {
   /**
-    * @param code A string or function.
-    * @param scope An optional scope for the function.
+    * @param code - a string or function.
+    * @param scope - an optional scope for the function.
     */
   def this(code: String) = this()
   def this(code: js.Function) = this()
-  def this(code: String, scope: js.Any) = this()
-  def this(code: js.Function, scope: js.Any) = this()
-  val code: String | js.Function = js.native
-  val scope: js.UndefOr[js.Any] = js.native
+  def this(code: String, scope: Document) = this()
+  def this(code: js.Function, scope: Document) = this()
+  
+  var _bsontype: typingsJapgolly.bson.bsonStrings.Code = js.native
+  
+  var code: String | js.Function = js.native
+  
+  /* Excluded from this release type: toExtendedJSON */
+  /* Excluded from this release type: fromExtendedJSON */
+  def inspect(): String = js.native
+  
+  var scope: js.UndefOr[Document] = js.native
+  
+  def toJSON(): typingsJapgolly.bson.anon.Code = js.native
 }
-

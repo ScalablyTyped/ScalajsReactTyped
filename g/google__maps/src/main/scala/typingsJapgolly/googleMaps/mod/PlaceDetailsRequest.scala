@@ -1,10 +1,11 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlaceDetailsRequest extends js.Object {
+trait PlaceDetailsRequest extends StObject {
+  
   /**
     * One or more fields, specifying the types of place data to return, separated by a comma.
     *
@@ -13,14 +14,17 @@ trait PlaceDetailsRequest extends js.Object {
     * This applies only to Place Details requests.
     */
   var fields: js.UndefOr[js.Array[PlaceDetailsRequestField]] = js.undefined
+  
   /**
     * The language code, indicating in which language the results should be returned, if possible.
     * Note that some fields may not be available in the requested language.
     * Note that we often update supported languages so this list may not be exhaustive.
     */
   var language: js.UndefOr[Language] = js.undefined
+  
   /** A textual identifier that uniquely identifies a place, returned from a Place Search. */
   var placeid: String
+  
   /**
     * The region code, specified as a ccTLD (country code top-level domain) two-character value.
     * Most ccTLD codes are identical to ISO 3166-1 codes, with some exceptions.
@@ -30,28 +34,40 @@ trait PlaceDetailsRequest extends js.Object {
     * for results in the specified region.
     */
   var region: js.UndefOr[String] = js.undefined
+  
   /**
     * A random string which identifies an autocomplete session for billing purposes.
     * Use this for Place Details requests that are called following an autocomplete request in the same user session
     */
   var sessiontoken: js.UndefOr[String] = js.undefined
 }
-
 object PlaceDetailsRequest {
-  @scala.inline
-  def apply(
-    placeid: String,
-    fields: js.Array[PlaceDetailsRequestField] = null,
-    language: Language = null,
-    region: String = null,
-    sessiontoken: String = null
-  ): PlaceDetailsRequest = {
+  
+  inline def apply(placeid: String): PlaceDetailsRequest = {
     val __obj = js.Dynamic.literal(placeid = placeid.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (sessiontoken != null) __obj.updateDynamic("sessiontoken")(sessiontoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceDetailsRequest]
   }
+  
+  extension [Self <: PlaceDetailsRequest](x: Self) {
+    
+    inline def setFields(value: js.Array[PlaceDetailsRequestField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: PlaceDetailsRequestField*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setPlaceid(value: String): Self = StObject.set(x, "placeid", value.asInstanceOf[js.Any])
+    
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    
+    inline def setSessiontoken(value: String): Self = StObject.set(x, "sessiontoken", value.asInstanceOf[js.Any])
+    
+    inline def setSessiontokenUndefined: Self = StObject.set(x, "sessiontoken", js.undefined)
+  }
 }
-

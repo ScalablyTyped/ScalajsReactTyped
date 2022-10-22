@@ -1,38 +1,31 @@
 package typingsJapgolly.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Orientation extends js.Object
-
+sealed trait Orientation extends StObject
 /**
   * Lists values specifying the page orientation.
   */
 @JSGlobal("Orientation")
 @js.native
-object Orientation extends js.Object {
+object Orientation extends StObject {
+  
   /**
     * Worksheet page orientation is landscape.
     */
   @js.native
-  sealed trait Landscape extends Orientation
+  sealed trait Landscape
+    extends StObject
+       with Orientation
   
   /**
     * Worksheet page orientation is portrait.
     */
   @js.native
-  sealed trait Portrait extends Orientation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Orientation with Double] = js.native
-  /* 0 */ @js.native
-  object Landscape extends TopLevel[Landscape with Double]
-  
-  /* 1 */ @js.native
-  object Portrait extends TopLevel[Portrait with Double]
-  
+  sealed trait Portrait
+    extends StObject
+       with Orientation
 }
-

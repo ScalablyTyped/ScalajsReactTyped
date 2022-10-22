@@ -1,66 +1,81 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ModuleKind extends js.Object
-
+sealed trait ModuleKind extends StObject
 @JSImport("typescript", "ModuleKind")
 @js.native
-object ModuleKind extends js.Object {
-  @js.native
-  sealed trait AMD extends ModuleKind
-  
-  @js.native
-  sealed trait CommonJS extends ModuleKind
-  
-  @js.native
-  sealed trait ES2015 extends ModuleKind
-  
-  @js.native
-  sealed trait ES2020 extends ModuleKind
-  
-  @js.native
-  sealed trait ESNext extends ModuleKind
-  
-  @js.native
-  sealed trait None extends ModuleKind
-  
-  @js.native
-  sealed trait System extends ModuleKind
-  
-  @js.native
-  sealed trait UMD extends ModuleKind
+object ModuleKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ModuleKind with Double] = js.native
-  /* 2 */ @js.native
-  object AMD extends TopLevel[AMD with Double]
+  def apply(value: Double): js.UndefOr[ModuleKind & Double] = js.native
   
-  /* 1 */ @js.native
-  object CommonJS extends TopLevel[CommonJS with Double]
+  @js.native
+  sealed trait AMD
+    extends StObject
+       with ModuleKind
+  /* 2 */ val AMD: typingsJapgolly.typescript.mod.ModuleKind.AMD & Double = js.native
   
-  /* 5 */ @js.native
-  object ES2015 extends TopLevel[ES2015 with Double]
+  @js.native
+  sealed trait CommonJS
+    extends StObject
+       with ModuleKind
+  /* 1 */ val CommonJS: typingsJapgolly.typescript.mod.ModuleKind.CommonJS & Double = js.native
   
-  /* 6 */ @js.native
-  object ES2020 extends TopLevel[ES2020 with Double]
+  @js.native
+  sealed trait ES2015
+    extends StObject
+       with ModuleKind
+  /* 5 */ val ES2015: typingsJapgolly.typescript.mod.ModuleKind.ES2015 & Double = js.native
   
-  /* 99 */ @js.native
-  object ESNext extends TopLevel[ESNext with Double]
+  @js.native
+  sealed trait ES2020
+    extends StObject
+       with ModuleKind
+  /* 6 */ val ES2020: typingsJapgolly.typescript.mod.ModuleKind.ES2020 & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait ES2022
+    extends StObject
+       with ModuleKind
+  /* 7 */ val ES2022: typingsJapgolly.typescript.mod.ModuleKind.ES2022 & Double = js.native
   
-  /* 4 */ @js.native
-  object System
-    extends TopLevel[typingsJapgolly.typescript.mod.ModuleKind.System with Double]
+  @js.native
+  sealed trait ESNext
+    extends StObject
+       with ModuleKind
+  /* 99 */ val ESNext: typingsJapgolly.typescript.mod.ModuleKind.ESNext & Double = js.native
   
-  /* 3 */ @js.native
-  object UMD extends TopLevel[UMD with Double]
+  @js.native
+  sealed trait Node16
+    extends StObject
+       with ModuleKind
+  /* 100 */ val Node16: typingsJapgolly.typescript.mod.ModuleKind.Node16 & Double = js.native
   
+  @js.native
+  sealed trait NodeNext
+    extends StObject
+       with ModuleKind
+  /* 199 */ val NodeNext: typingsJapgolly.typescript.mod.ModuleKind.NodeNext & Double = js.native
+  
+  @js.native
+  sealed trait None
+    extends StObject
+       with ModuleKind
+  /* 0 */ val None: typingsJapgolly.typescript.mod.ModuleKind.None & Double = js.native
+  
+  @js.native
+  sealed trait System
+    extends StObject
+       with ModuleKind
+  /* 4 */ val System: typingsJapgolly.typescript.mod.ModuleKind.System & Double = js.native
+  
+  @js.native
+  sealed trait UMD
+    extends StObject
+       with ModuleKind
+  /* 3 */ val UMD: typingsJapgolly.typescript.mod.ModuleKind.UMD & Double = js.native
 }
-

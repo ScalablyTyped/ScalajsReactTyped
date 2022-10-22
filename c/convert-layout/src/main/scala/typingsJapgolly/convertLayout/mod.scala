@@ -1,18 +1,47 @@
 package typingsJapgolly.convertLayout
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("convert-layout", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  var by: layout = js.native
-  var de: layout = js.native
-  var es: layout = js.native
-  var he: layout = js.native
-  var kk: layout = js.native
-  var ru: layout = js.native
-  var uk: layout = js.native
+object mod {
+  
+  @JSImport("convert-layout", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("convert-layout", "by")
+  @js.native
+  def by: layout = js.native
+  inline def by_=(x: layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("by")(x.asInstanceOf[js.Any])
+  
+  @JSImport("convert-layout", "de")
+  @js.native
+  def de: layout = js.native
+  inline def de_=(x: layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("de")(x.asInstanceOf[js.Any])
+  
+  @JSImport("convert-layout", "es")
+  @js.native
+  def es: layout = js.native
+  inline def es_=(x: layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("es")(x.asInstanceOf[js.Any])
+  
+  @JSImport("convert-layout", "he")
+  @js.native
+  def he: layout = js.native
+  inline def he_=(x: layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("he")(x.asInstanceOf[js.Any])
+  
+  @JSImport("convert-layout", "kk")
+  @js.native
+  def kk: layout = js.native
+  inline def kk_=(x: layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kk")(x.asInstanceOf[js.Any])
+  
+  @JSImport("convert-layout", "ru")
+  @js.native
+  def ru: layout = js.native
+  inline def ru_=(x: layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ru")(x.asInstanceOf[js.Any])
+  
+  @JSImport("convert-layout", "uk")
+  @js.native
+  def uk: layout = js.native
+  inline def uk_=(x: layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uk")(x.asInstanceOf[js.Any])
 }
-

@@ -1,27 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeViewCheckboxes extends js.Object {
+trait TreeViewCheckboxes extends StObject {
+  
   var checkChildren: js.UndefOr[Boolean] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var template: js.UndefOr[String | js.Function] = js.undefined
 }
-
 object TreeViewCheckboxes {
-  @scala.inline
-  def apply(
-    checkChildren: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    template: String | js.Function = null
-  ): TreeViewCheckboxes = {
+  
+  inline def apply(): TreeViewCheckboxes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkChildren)) __obj.updateDynamic("checkChildren")(checkChildren.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewCheckboxes]
   }
+  
+  extension [Self <: TreeViewCheckboxes](x: Self) {
+    
+    inline def setCheckChildren(value: Boolean): Self = StObject.set(x, "checkChildren", value.asInstanceOf[js.Any])
+    
+    inline def setCheckChildrenUndefined: Self = StObject.set(x, "checkChildren", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+  }
 }
-

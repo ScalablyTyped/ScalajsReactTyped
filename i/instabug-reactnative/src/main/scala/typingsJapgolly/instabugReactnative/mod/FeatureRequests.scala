@@ -1,55 +1,65 @@
 package typingsJapgolly.instabugReactnative.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instabug-reactnative", "FeatureRequests")
-@js.native
-object FeatureRequests extends js.Object {
-  @js.native
-  sealed trait actionTypes extends js.Object
+object FeatureRequests {
   
-  def setEmailFieldRequired(
-    isEmailFieldRequired: Boolean,
-    actionTypes: js.Array[typingsJapgolly.instabugReactnative.mod.FeatureRequests.actionTypes]
-  ): Unit = js.native
-  def setEnabled(isEnabled: Boolean): Unit = js.native
-  def show(): Unit = js.native
+  @JSImport("instabug-reactnative", "FeatureRequests")
   @js.native
-  object actionTypes extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @js.native
+  sealed trait actionTypes extends StObject
+  /**
+    * Instabug action types.
+    * @readonly
+    * @enum {number}
+    */
+  @JSImport("instabug-reactnative", "FeatureRequests.actionTypes")
+  @js.native
+  object actionTypes extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typingsJapgolly.instabugReactnative.mod.FeatureRequests.actionTypes & Double] = js.native
+    
     @js.native
     sealed trait addCommentToFeature
-      extends typingsJapgolly.instabugReactnative.mod.FeatureRequests.actionTypes
-    
-    @js.native
-    sealed trait allActions
-      extends typingsJapgolly.instabugReactnative.mod.FeatureRequests.actionTypes
-    
-    @js.native
-    sealed trait reportBug
-      extends typingsJapgolly.instabugReactnative.mod.FeatureRequests.actionTypes
+      extends StObject
+         with typingsJapgolly.instabugReactnative.mod.FeatureRequests.actionTypes
+    /* 1 */ val addCommentToFeature: typingsJapgolly.instabugReactnative.mod.FeatureRequests.actionTypes.addCommentToFeature & Double = js.native
     
     @js.native
     sealed trait requestNewFeature
-      extends typingsJapgolly.instabugReactnative.mod.FeatureRequests.actionTypes
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.instabugReactnative.mod.FeatureRequests.actionTypes with Double] = js.native
-    /* 3 */ @js.native
-    object addCommentToFeature extends TopLevel[addCommentToFeature with Double]
-    
-    /* 0 */ @js.native
-    object allActions extends TopLevel[allActions with Double]
-    
-    /* 1 */ @js.native
-    object reportBug extends TopLevel[reportBug with Double]
-    
-    /* 2 */ @js.native
-    object requestNewFeature extends TopLevel[requestNewFeature with Double]
-    
+      extends StObject
+         with typingsJapgolly.instabugReactnative.mod.FeatureRequests.actionTypes
+    /* 0 */ val requestNewFeature: typingsJapgolly.instabugReactnative.mod.FeatureRequests.actionTypes.requestNewFeature & Double = js.native
   }
   
+  /**
+    * Sets whether users are required to enter an email address or not when
+    * sending reports.
+    * Defaults to YES.
+    * @param {boolean} isEmailFieldRequired A boolean to indicate whether email
+    * field is required or not.
+    * @param {actionTypes} actionTypes An enum that indicates which action
+    *                                  types will have the isEmailFieldRequired
+    */
+  inline def setEmailFieldRequired(
+    isEmailFieldRequired: Boolean,
+    actionTypes: js.Array[typingsJapgolly.instabugReactnative.mod.FeatureRequests.actionTypes]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEmailFieldRequired")(isEmailFieldRequired.asInstanceOf[js.Any], actionTypes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Enables and disables everything related to feature requests.
+    * @param {boolean} isEnabled 
+    */
+  inline def setEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /**
+    * Shows the UI for feature requests list
+    *
+    */
+  inline def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
 }
-

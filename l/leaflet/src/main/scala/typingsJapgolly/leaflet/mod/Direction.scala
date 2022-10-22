@@ -1,8 +1,8 @@
 package typingsJapgolly.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.leaflet.leafletStrings.right
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.leaflet.leafletStrings.center
   - typingsJapgolly.leaflet.leafletStrings.auto
 */
-trait Direction extends js.Object
-
+trait Direction extends StObject
 object Direction {
-  @scala.inline
-  def auto: typingsJapgolly.leaflet.leafletStrings.auto = this.cast("auto")
-  @scala.inline
-  def bottom: typingsJapgolly.leaflet.leafletStrings.bottom = this.cast("bottom")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def center: typingsJapgolly.leaflet.leafletStrings.center = this.cast("center")
-  @scala.inline
-  def left: typingsJapgolly.leaflet.leafletStrings.left = this.cast("left")
-  @scala.inline
-  def right: typingsJapgolly.leaflet.leafletStrings.right = this.cast("right")
-  @scala.inline
-  def top: typingsJapgolly.leaflet.leafletStrings.top = this.cast("top")
+  
+  inline def auto: typingsJapgolly.leaflet.leafletStrings.auto = "auto".asInstanceOf[typingsJapgolly.leaflet.leafletStrings.auto]
+  
+  inline def bottom: typingsJapgolly.leaflet.leafletStrings.bottom = "bottom".asInstanceOf[typingsJapgolly.leaflet.leafletStrings.bottom]
+  
+  inline def center: typingsJapgolly.leaflet.leafletStrings.center = "center".asInstanceOf[typingsJapgolly.leaflet.leafletStrings.center]
+  
+  inline def left: typingsJapgolly.leaflet.leafletStrings.left = "left".asInstanceOf[typingsJapgolly.leaflet.leafletStrings.left]
+  
+  inline def right: typingsJapgolly.leaflet.leafletStrings.right = "right".asInstanceOf[typingsJapgolly.leaflet.leafletStrings.right]
+  
+  inline def top: typingsJapgolly.leaflet.leafletStrings.top = "top".asInstanceOf[typingsJapgolly.leaflet.leafletStrings.top]
 }
-

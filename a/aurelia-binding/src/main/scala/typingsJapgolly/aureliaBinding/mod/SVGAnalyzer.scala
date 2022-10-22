@@ -1,20 +1,22 @@
 package typingsJapgolly.aureliaBinding.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SVGAnalyzer extends js.Object {
+trait SVGAnalyzer extends StObject {
+  
   def isStandardSvgAttribute(nodeName: String, attributeName: String): Boolean
 }
-
 object SVGAnalyzer {
-  @scala.inline
-  def apply(isStandardSvgAttribute: (String, String) => CallbackTo[Boolean]): SVGAnalyzer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isStandardSvgAttribute")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => isStandardSvgAttribute(t0, t1).runNow()))
+  
+  inline def apply(isStandardSvgAttribute: (String, String) => Boolean): SVGAnalyzer = {
+    val __obj = js.Dynamic.literal(isStandardSvgAttribute = js.Any.fromFunction2(isStandardSvgAttribute))
     __obj.asInstanceOf[SVGAnalyzer]
   }
+  
+  extension [Self <: SVGAnalyzer](x: Self) {
+    
+    inline def setIsStandardSvgAttribute(value: (String, String) => Boolean): Self = StObject.set(x, "isStandardSvgAttribute", js.Any.fromFunction2(value))
+  }
 }
-

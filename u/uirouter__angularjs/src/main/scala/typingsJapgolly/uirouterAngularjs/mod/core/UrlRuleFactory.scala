@@ -1,20 +1,21 @@
 package typingsJapgolly.uirouterAngularjs.mod.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "core.UrlRuleFactory")
 @js.native
-class UrlRuleFactory protected ()
+open class UrlRuleFactory protected ()
   extends typingsJapgolly.uirouterCore.mod.UrlRuleFactory {
-  def this(router: typingsJapgolly.uirouterCore.routerMod.UIRouter) = this()
+  def this(router: typingsJapgolly.uirouterCore.libRouterMod.UIRouter) = this()
 }
-
 /* static members */
-@JSImport("@uirouter/angularjs", "core.UrlRuleFactory")
-@js.native
-object UrlRuleFactory extends js.Object {
-  def isUrlRule(obj: js.Any): Boolean = js.native
+object UrlRuleFactory {
+  
+  @JSImport("@uirouter/angularjs", "core.UrlRuleFactory")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def isUrlRule(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlRule")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }
-

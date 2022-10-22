@@ -10,10 +10,10 @@ MongoDB query language implemented as a node.js Stream
 | ------------------ | :-------------: |
 | Full name          | jsonquery |
 | Keywords           | json, mongodb, mongo, stream, filter, query, database, levelup, leveldb |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 3953 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1491.3333333333333 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/eugeneware/jsonquery#readme)

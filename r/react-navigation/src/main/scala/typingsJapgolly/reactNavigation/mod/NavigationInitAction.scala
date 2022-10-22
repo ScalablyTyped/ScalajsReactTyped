@@ -1,27 +1,35 @@
 package typingsJapgolly.reactNavigation.mod
 
 import typingsJapgolly.reactNavigation.reactNavigationStrings.NavigationSlashINIT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.reactNavigation.mod._NavigationAction because Already inherited */ trait NavigationInitAction
-  extends NavigationStackAction
+  extends StObject
      with NavigationInitActionPayload
+     with NavigationStackAction
      with NavigationTabAction {
+  
   var key: js.UndefOr[String] = js.undefined
+  
   var `type`: NavigationSlashINIT
 }
-
 object NavigationInitAction {
-  @scala.inline
-  def apply(`type`: NavigationSlashINIT, key: String = null, params: NavigationParams = null): NavigationInitAction = {
+  
+  inline def apply(): NavigationInitAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/INIT")
     __obj.asInstanceOf[NavigationInitAction]
   }
+  
+  extension [Self <: NavigationInitAction](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setType(value: NavigationSlashINIT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

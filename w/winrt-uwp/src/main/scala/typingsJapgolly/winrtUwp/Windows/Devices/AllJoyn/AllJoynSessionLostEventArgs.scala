@@ -1,19 +1,24 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.AllJoyn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information that identifies the reason for a lost session. */
-@JSGlobal("Windows.Devices.AllJoyn.AllJoynSessionLostEventArgs")
-@js.native
-class AllJoynSessionLostEventArgs protected () extends js.Object {
-  /**
-    * Generates an AllJoynSessionLostEventArgs object containing information that identifies the reason for the lost session.
-    * @param reason The reason the session was lost.
-    */
-  def this(reason: AllJoynSessionLostReason) = this()
+trait AllJoynSessionLostEventArgs extends StObject {
+  
   /** Retrieves a value that indicates the reason for a lost session. */
-  var reason: AllJoynSessionLostReason = js.native
+  var reason: AllJoynSessionLostReason
 }
-
+object AllJoynSessionLostEventArgs {
+  
+  inline def apply(reason: AllJoynSessionLostReason): AllJoynSessionLostEventArgs = {
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AllJoynSessionLostEventArgs]
+  }
+  
+  extension [Self <: AllJoynSessionLostEventArgs](x: Self) {
+    
+    inline def setReason(value: AllJoynSessionLostReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+  }
+}

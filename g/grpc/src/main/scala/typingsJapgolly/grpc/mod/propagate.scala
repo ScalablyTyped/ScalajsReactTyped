@@ -1,47 +1,45 @@
 package typingsJapgolly.grpc.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait propagate extends js.Object
-
+sealed trait propagate extends StObject
 @JSImport("grpc", "propagate")
 @js.native
-object propagate extends js.Object {
-  @js.native
-  sealed trait CANCELLATION extends propagate
-  
-  @js.native
-  sealed trait CENSUS_STATS_CONTEXT extends propagate
-  
-  @js.native
-  sealed trait CENSUS_TRACING_CONTEXT extends propagate
-  
-  @js.native
-  sealed trait DEADLINE extends propagate
-  
-  @js.native
-  sealed trait DEFAULTS extends propagate
+object propagate extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[propagate with Double] = js.native
-  /* 3 */ @js.native
-  object CANCELLATION extends TopLevel[CANCELLATION with Double]
+  def apply(value: Double): js.UndefOr[propagate & Double] = js.native
   
-  /* 1 */ @js.native
-  object CENSUS_STATS_CONTEXT extends TopLevel[CENSUS_STATS_CONTEXT with Double]
+  @js.native
+  sealed trait CANCELLATION
+    extends StObject
+       with propagate
+  /* 3 */ val CANCELLATION: typingsJapgolly.grpc.mod.propagate.CANCELLATION & Double = js.native
   
-  /* 2 */ @js.native
-  object CENSUS_TRACING_CONTEXT extends TopLevel[CENSUS_TRACING_CONTEXT with Double]
+  @js.native
+  sealed trait CENSUS_STATS_CONTEXT
+    extends StObject
+       with propagate
+  /* 1 */ val CENSUS_STATS_CONTEXT: typingsJapgolly.grpc.mod.propagate.CENSUS_STATS_CONTEXT & Double = js.native
   
-  /* 0 */ @js.native
-  object DEADLINE extends TopLevel[DEADLINE with Double]
+  @js.native
+  sealed trait CENSUS_TRACING_CONTEXT
+    extends StObject
+       with propagate
+  /* 2 */ val CENSUS_TRACING_CONTEXT: typingsJapgolly.grpc.mod.propagate.CENSUS_TRACING_CONTEXT & Double = js.native
   
-  /* 4 */ @js.native
-  object DEFAULTS extends TopLevel[DEFAULTS with Double]
+  @js.native
+  sealed trait DEADLINE
+    extends StObject
+       with propagate
+  /* 0 */ val DEADLINE: typingsJapgolly.grpc.mod.propagate.DEADLINE & Double = js.native
   
+  @js.native
+  sealed trait DEFAULTS
+    extends StObject
+       with propagate
+  /* 4 */ val DEFAULTS: typingsJapgolly.grpc.mod.propagate.DEFAULTS & Double = js.native
 }
-

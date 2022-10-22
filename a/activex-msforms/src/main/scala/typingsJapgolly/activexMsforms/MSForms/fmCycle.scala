@@ -1,23 +1,19 @@
 package typingsJapgolly.activexMsforms.MSForms
 
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`0`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`2`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`0`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`0`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`2`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`0`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`2`
 */
-trait fmCycle extends js.Object
-
+trait fmCycle extends StObject
 object fmCycle {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fmCycleAllForms: `0` = this.cast(0)
-  @scala.inline
-  def fmCycleCurrentForm: `2` = this.cast(2)
+  
+  inline def fmCycleAllForms: `0` = 0.asInstanceOf[`0`]
+  
+  inline def fmCycleCurrentForm: `2` = 2.asInstanceOf[`2`]
 }
-

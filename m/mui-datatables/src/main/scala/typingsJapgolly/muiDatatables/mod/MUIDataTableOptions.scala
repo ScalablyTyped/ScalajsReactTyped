@@ -2,77 +2,132 @@ package typingsJapgolly.muiDatatables.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Component
-import japgolly.scalajs.react.raw.React.Element
-import japgolly.scalajs.react.raw.React.Node
-import typingsJapgolly.muiDatatables.AnonColIndex
-import typingsJapgolly.muiDatatables.AnonDataDataIndex
-import typingsJapgolly.muiDatatables.AnonFilename
-import typingsJapgolly.muiDatatables.AnonLookup
-import typingsJapgolly.muiDatatables.AnonRowIndex
-import typingsJapgolly.muiDatatables.AnonXAxis
+import japgolly.scalajs.react.facade.React.Component
+import japgolly.scalajs.react.facade.React.Node
+import org.scalajs.dom.HTMLInputElement
+import typingsJapgolly.muiDatatables.anon.ColIndex
+import typingsJapgolly.muiDatatables.anon.Columns
+import typingsJapgolly.muiDatatables.anon.DataIndex
+import typingsJapgolly.muiDatatables.anon.DataLookup
+import typingsJapgolly.muiDatatables.anon.Lookup
+import typingsJapgolly.muiDatatables.anon.PartialMUIDataTableTextLaBody
+import typingsJapgolly.muiDatatables.anon.Partialfilenamestringsepa
+import typingsJapgolly.muiDatatables.anon.XAxis
+import typingsJapgolly.muiDatatables.muiDatatablesBooleans.`false`
+import typingsJapgolly.muiDatatables.muiDatatablesStrings.above
+import typingsJapgolly.muiDatatables.muiDatatablesStrings.asc
 import typingsJapgolly.muiDatatables.muiDatatablesStrings.chip
+import typingsJapgolly.muiDatatables.muiDatatablesStrings.desc
+import typingsJapgolly.muiDatatables.muiDatatablesStrings.none
+import typingsJapgolly.muiDatatables.muiDatatablesStrings.replace
 import typingsJapgolly.muiDatatables.muiDatatablesStrings.reset
+import typingsJapgolly.react.mod.HTMLAttributes
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MUIDataTableOptions extends js.Object {
+/* Inlined std.Partial<{  caseSensitive :boolean,   confirmFilters :boolean,   columnOrder :std.Array<number>,   count :number, customFilterDialogFooter (filterList : mui-datatables.mui-datatables.MUIDataTableState['filterList'], applyNewFilters : (args : ...any): any | undefined): react.react.ReactNode, customFooter (rowCount : number, page : number, rowsPerPage : number, changeRowsPerPage : (page : string | number): void, changePage : (newPage : number): void, textLabels : std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabels>): react.react.ReactNode, customRowRender (data : std.Array<any>, dataIndex : number, rowIndex : number): react.react.ReactNode, customSearch (searchQuery : string, currentRow : std.Array<any>, columns : std.Array<any>): boolean, customSearchRender (searchText : string, handleSearch : (text : string): void, hideSearch : (): void, options : any): react.react.Component<{}, {}, any> | react.react.<global>.JSX.Element, customSort (data : std.Array<any>, colIndex : number, order : string): std.Array<any>, customTableBodyFooterRender (options : {  data :std.Array<any>,   selectableRows :mui-datatables.mui-datatables.SelectableRows,   columns :std.Array<any>}): any, customToolbar (data : {  displayData :mui-datatables.mui-datatables.DisplayData}): react.react.ReactNode, customToolbarSelect (selectedRows : {  data :std.Array<{  index :number,   dataIndex :number}>,   lookup :{[key: number] : boolean}}, displayData : mui-datatables.mui-datatables.DisplayData, setSelectedRows : (rows : std.Array<number>): void): react.react.ReactNode,   disableToolbarSelect :boolean,   download :mui-datatables.mui-datatables.ToolbarButton,   downloadOptions :std.Partial<{  filename :string,   separator :string,   filterOptions :std.Partial<{  useDisplayedColumnsOnly :boolean,   useDisplayedRowsOnly :boolean}>}>,   draggableColumns :mui-datatables.mui-datatables.MUIDataTableDraggableColumns,   elevation :number,   enableNestedDataAccess :string,   expandableRows :boolean,   expandableRowsHeader :boolean,   expandableRowsOnClick :boolean,   filter :mui-datatables.mui-datatables.ToolbarButton,   filterArrayFullMatch :boolean,   filterType :mui-datatables.mui-datatables.FilterType,   fixedHeader :boolean,   fixedHeaderOptions :{  xAxis :boolean,   yAxis :boolean},   fixedSelectColumn :boolean, isRowExpandable (dataIndex : number, expandedRows : mui-datatables.mui-datatables.MUIDataTableIsRowCheck | undefined): boolean, isRowSelectable (dataIndex : number, selectedRows : mui-datatables.mui-datatables.MUIDataTableIsRowCheck | undefined): boolean,   jumpToPage :boolean, onCellClick (colData : any, cellMeta : {  colIndex :number,   rowIndex :number,   dataIndex :number,   event :react.react.MouseEvent<std.Element, react.react.NativeMouseEvent>}): void, onChangePage (currentPage : number): void, onChangeRowsPerPage (numberOfRows : number): void, onColumnOrderChange (newColumnOrder : std.Array<number>, columnIndex : number, newPosition : number): void, onColumnSortChange (changedColumn : string, direction : 'asc' | 'desc'): void,   onColumnViewChange :(changedColumn : string, action : string): void | undefined, onDownload (buildHead : (columns : any): string, buildBody : (data : any): string, columns : any, data : any): string | boolean, onFilterChange (changedColumn : string | mui-datatables.mui-datatables.MUIDataTableColumn | null, filterList : mui-datatables.mui-datatables.MUIDataTableState['filterList'], type : mui-datatables.mui-datatables.FilterType | 'chip' | 'reset', changedColumnIndex : number, displayData : mui-datatables.mui-datatables.DisplayData): void, onFilterChipClose (index : number, removedFilter : string, filterList : mui-datatables.mui-datatables.MUIDataTableState['filterList']): void, onFilterConfirm (filterList : mui-datatables.mui-datatables.MUIDataTableState['filterList']): void, onFilterDialogClose (): void, onFilterDialogOpen (): void, onRowClick (rowData : std.Array<string>, rowMeta : {  dataIndex :number,   rowIndex :number}): void, onRowExpansionChange (currentRowsExpanded : std.Array<any>, allRowsExpanded : std.Array<any>, rowsExpanded : std.Array<any> | undefined): void, onRowsDelete (rowsDeleted : {  lookup :{[dataIndex: number] : boolean},   data :std.Array<{  index :number,   dataIndex :number}>}, newTableData : std.Array<any>): void | false, onRowSelectionChange (currentRowsSelected : std.Array<any>, allRowsSelected : std.Array<any>, rowsSelected : std.Array<any> | undefined): void, onSearchChange (searchText : string | null): void, onSearchClose (): void, onSearchOpen (): void, onTableChange (action : string, tableState : mui-datatables.mui-datatables.MUIDataTableState): void, onTableInit (action : string, tableState : mui-datatables.mui-datatables.MUIDataTableState): void, onViewColumnsChange (changedColumn : string, action : string): void,   page :number,   pagination :boolean,   print :mui-datatables.mui-datatables.ToolbarButton, renderExpandableRow (rowData : std.Array<string>, rowMeta : {  dataIndex :number,   rowIndex :number}): react.react.ReactNode,   resizableColumns :boolean,   responsive :mui-datatables.mui-datatables.Responsive,   rowHover :boolean,   rowsExpanded :std.Array<any>,   rowsPerPage :number,   rowsPerPageOptions :std.Array<number>,   rowsSelected :std.Array<any>,   search :mui-datatables.mui-datatables.ToolbarButton,   searchOpen :boolean,   searchAlwaysOpen :boolean,   searchProps :react.react.HTMLAttributes<std.HTMLInputElement>,   searchPlaceholder :string,   searchText :string,   selectableRows :mui-datatables.mui-datatables.SelectableRows,   selectableRowsHeader :boolean,   selectableRowsHideCheckboxes :boolean,   selectableRowsOnClick :boolean,   selectToolbarPlacement :'replace' | 'above' | 'none',   serverSide :boolean, setFilterChipProps (colIndex : number, colName : string, data : std.ReadonlyArray<std.Array<any>>): mui-datatables.mui-datatables.MUIDataTableChip, setRowProps (row : std.Array<any>, dataIndex : number, rowIndex : number): object, setTableProps (): object,   sort :boolean,   sortFilterList :boolean,   sortOrder :mui-datatables.mui-datatables.MUISortOptions,   tableId :string,   tableBodyHeight :string,   tableBodyMaxHeight :string,   textLabels :std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabels>,   viewColumns :mui-datatables.mui-datatables.ToolbarButton,   storageKey :string}> */
+trait MUIDataTableOptions extends StObject {
+  
   var caseSensitive: js.UndefOr[Boolean] = js.undefined
+  
+  var columnOrder: js.UndefOr[js.Array[Double]] = js.undefined
+  
+  var confirmFilters: js.UndefOr[Boolean] = js.undefined
+  
   var count: js.UndefOr[Double] = js.undefined
-  var customFilterDialogFooter: js.UndefOr[js.Function1[/* filterList */ js.Array[_], Node]] = js.undefined
-  var customFooter: js.UndefOr[
-    js.Function5[
-      /* rowCount */ Double, 
-      /* page */ Double, 
-      /* rowsPerPage */ Double, 
-      /* changeRowsPerPage */ js.Function0[_], 
-      /* changePage */ Double, 
+  
+  var customFilterDialogFooter: js.UndefOr[
+    js.Function2[
+      /* filterList */ js.Array[js.Array[String]], 
+      /* applyNewFilters */ js.UndefOr[js.Function1[/* repeated */ Any, Any]], 
       Node
     ]
   ] = js.undefined
-  var customRowRender: js.UndefOr[
-    js.Function3[/* data */ js.Array[_], /* dataIndex */ Double, /* rowIndex */ Double, Node]
+  
+  var customFooter: js.UndefOr[
+    js.Function6[
+      /* rowCount */ Double, 
+      /* page */ Double, 
+      /* rowsPerPage */ Double, 
+      /* changeRowsPerPage */ js.Function1[/* page */ String | Double, Unit], 
+      /* changePage */ js.Function1[/* newPage */ Double, Unit], 
+      /* textLabels */ PartialMUIDataTableTextLaBody, 
+      Node
+    ]
   ] = js.undefined
+  
+  var customRowRender: js.UndefOr[
+    js.Function3[/* data */ js.Array[Any], /* dataIndex */ Double, /* rowIndex */ Double, Node]
+  ] = js.undefined
+  
   var customSearch: js.UndefOr[
     js.Function3[
       /* searchQuery */ String, 
-      /* currentRow */ js.Array[_], 
-      /* columns */ js.Array[_], 
+      /* currentRow */ js.Array[Any], 
+      /* columns */ js.Array[Any], 
       Boolean
     ]
   ] = js.undefined
+  
   var customSearchRender: js.UndefOr[
     js.Function4[
       /* searchText */ String, 
-      /* handleSearch */ js.Any, 
-      /* hideSearch */ js.Any, 
-      /* options */ js.Any, 
+      /* handleSearch */ js.Function1[/* text */ String, Unit], 
+      /* hideSearch */ js.Function0[Unit], 
+      /* options */ Any, 
       (Component[js.Object, js.Object]) | Element
     ]
   ] = js.undefined
+  
   var customSort: js.UndefOr[
-    js.Function3[/* data */ js.Array[_], /* colIndex */ Double, /* order */ String, js.Array[_]]
+    js.Function3[/* data */ js.Array[Any], /* colIndex */ Double, /* order */ String, js.Array[Any]]
   ] = js.undefined
-  var customToolbar: js.UndefOr[js.Function0[Node]] = js.undefined
+  
+  var customTableBodyFooterRender: js.UndefOr[js.Function1[/* options */ Columns, Any]] = js.undefined
+  
+  var customToolbar: js.UndefOr[js.Function1[/* data */ typingsJapgolly.muiDatatables.anon.DisplayData, Node]] = js.undefined
+  
   var customToolbarSelect: js.UndefOr[
     js.Function3[
-      /* selectedRows */ AnonLookup, 
-      /* displayData */ js.Array[AnonDataDataIndex], 
+      /* selectedRows */ DataLookup, 
+      /* displayData */ DisplayData, 
       /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit], 
       Node
     ]
   ] = js.undefined
+  
   var disableToolbarSelect: js.UndefOr[Boolean] = js.undefined
-  var download: js.UndefOr[Boolean] = js.undefined
-  var downloadOptions: js.UndefOr[AnonFilename] = js.undefined
+  
+  var download: js.UndefOr[ToolbarButton] = js.undefined
+  
+  var downloadOptions: js.UndefOr[Partialfilenamestringsepa] = js.undefined
+  
+  var draggableColumns: js.UndefOr[MUIDataTableDraggableColumns] = js.undefined
+  
   var elevation: js.UndefOr[Double] = js.undefined
+  
+  var enableNestedDataAccess: js.UndefOr[String] = js.undefined
+  
   var expandableRows: js.UndefOr[Boolean] = js.undefined
+  
+  var expandableRowsHeader: js.UndefOr[Boolean] = js.undefined
+  
   var expandableRowsOnClick: js.UndefOr[Boolean] = js.undefined
-  var filter: js.UndefOr[Boolean] = js.undefined
+  
+  var filter: js.UndefOr[ToolbarButton] = js.undefined
+  
+  var filterArrayFullMatch: js.UndefOr[Boolean] = js.undefined
+  
   var filterType: js.UndefOr[FilterType] = js.undefined
+  
   var fixedHeader: js.UndefOr[Boolean] = js.undefined
-  var fixedHeaderOptions: js.UndefOr[AnonXAxis] = js.undefined
+  
+  var fixedHeaderOptions: js.UndefOr[XAxis] = js.undefined
+  
+  var fixedSelectColumn: js.UndefOr[Boolean] = js.undefined
+  
   var isRowExpandable: js.UndefOr[
     js.Function2[
       /* dataIndex */ Double, 
@@ -80,6 +135,7 @@ trait MUIDataTableOptions extends js.Object {
       Boolean
     ]
   ] = js.undefined
+  
   var isRowSelectable: js.UndefOr[
     js.Function2[
       /* dataIndex */ Double, 
@@ -87,214 +143,570 @@ trait MUIDataTableOptions extends js.Object {
       Boolean
     ]
   ] = js.undefined
-  var onCellClick: js.UndefOr[js.Function2[/* colData */ js.Any, /* cellMeta */ AnonColIndex, Unit]] = js.undefined
+  
+  var jumpToPage: js.UndefOr[Boolean] = js.undefined
+  
+  var onCellClick: js.UndefOr[js.Function2[/* colData */ Any, /* cellMeta */ ColIndex, Unit]] = js.undefined
+  
   var onChangePage: js.UndefOr[js.Function1[/* currentPage */ Double, Unit]] = js.undefined
+  
   var onChangeRowsPerPage: js.UndefOr[js.Function1[/* numberOfRows */ Double, Unit]] = js.undefined
-  var onColumnSortChange: js.UndefOr[js.Function2[/* changedColumn */ String, /* direction */ String, Unit]] = js.undefined
-  var onColumnViewChange: js.UndefOr[js.Function2[/* changedColumn */ String, /* action */ String, Unit]] = js.undefined
-  /**
-    * A callback function that triggers when the user downloads the CSV file.
-    * In the callback, you can control what is written to the CSV file.
-    * Return false to cancel download of file.
-    */
-  var onDownload: js.UndefOr[
-    js.Function4[
-      /* buildHead */ js.Function1[/* columns */ js.Any, String], 
-      /* buildBody */ js.Function1[/* data */ js.Any, String], 
-      /* columns */ js.Any, 
-      /* data */ js.Any, 
-      String | Boolean
-    ]
-  ] = js.undefined
-  var onFilterChange: js.UndefOr[
+  
+  var onColumnOrderChange: js.UndefOr[
     js.Function3[
-      /* changedColumn */ String, 
-      /* filterList */ js.Array[_], 
-      /* type */ FilterType | chip | reset, 
+      /* newColumnOrder */ js.Array[Double], 
+      /* columnIndex */ Double, 
+      /* newPosition */ Double, 
       Unit
     ]
   ] = js.undefined
+  
+  var onColumnSortChange: js.UndefOr[js.Function2[/* changedColumn */ String, /* direction */ asc | desc, Unit]] = js.undefined
+  
+  var onColumnViewChange: js.UndefOr[js.Function2[/* changedColumn */ String, /* action */ String, Unit]] = js.undefined
+  
+  var onDownload: js.UndefOr[
+    js.Function4[
+      /* buildHead */ js.Function1[/* columns */ Any, String], 
+      /* buildBody */ js.Function1[/* data */ Any, String], 
+      /* columns */ Any, 
+      /* data */ Any, 
+      String | Boolean
+    ]
+  ] = js.undefined
+  
+  var onFilterChange: js.UndefOr[
+    js.Function5[
+      /* changedColumn */ String | MUIDataTableColumn | Null, 
+      /* filterList */ js.Array[js.Array[String]], 
+      /* type */ FilterType | chip | reset, 
+      /* changedColumnIndex */ Double, 
+      /* displayData */ DisplayData, 
+      Unit
+    ]
+  ] = js.undefined
+  
+  var onFilterChipClose: js.UndefOr[
+    js.Function3[
+      /* index */ Double, 
+      /* removedFilter */ String, 
+      /* filterList */ js.Array[js.Array[String]], 
+      Unit
+    ]
+  ] = js.undefined
+  
+  var onFilterConfirm: js.UndefOr[js.Function1[/* filterList */ js.Array[js.Array[String]], Unit]] = js.undefined
+  
   var onFilterDialogClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var onFilterDialogOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex, Unit]] = js.undefined
-  var onRowsDelete: js.UndefOr[js.Function1[/* rowsDeleted */ js.Array[_], Unit]] = js.undefined
-  var onRowsExpand: js.UndefOr[
-    js.Function2[/* currentRowsExpanded */ js.Array[_], /* allRowsExpanded */ js.Array[_], Unit]
+  
+  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ DataIndex, Unit]] = js.undefined
+  
+  var onRowExpansionChange: js.UndefOr[
+    js.Function3[
+      /* currentRowsExpanded */ js.Array[Any], 
+      /* allRowsExpanded */ js.Array[Any], 
+      /* rowsExpanded */ js.UndefOr[js.Array[Any]], 
+      Unit
+    ]
   ] = js.undefined
-  var onRowsSelect: js.UndefOr[
-    js.Function2[/* currentRowsSelected */ js.Array[_], /* rowsSelected */ js.Array[_], Unit]
+  
+  var onRowSelectionChange: js.UndefOr[
+    js.Function3[
+      /* currentRowsSelected */ js.Array[Any], 
+      /* allRowsSelected */ js.Array[Any], 
+      /* rowsSelected */ js.UndefOr[js.Array[Any]], 
+      Unit
+    ]
   ] = js.undefined
-  var onSearchChange: js.UndefOr[js.Function1[/* searchText */ String, Unit]] = js.undefined
+  
+  var onRowsDelete: js.UndefOr[
+    js.Function2[/* rowsDeleted */ Lookup, /* newTableData */ js.Array[Any], Unit | `false`]
+  ] = js.undefined
+  
+  var onSearchChange: js.UndefOr[js.Function1[/* searchText */ String | Null, Unit]] = js.undefined
+  
   var onSearchClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var onSearchOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var onTableChange: js.UndefOr[js.Function2[/* action */ String, /* tableState */ MUIDataTableState, Unit]] = js.undefined
+  
   var onTableInit: js.UndefOr[js.Function2[/* action */ String, /* tableState */ MUIDataTableState, Unit]] = js.undefined
+  
+  var onViewColumnsChange: js.UndefOr[js.Function2[/* changedColumn */ String, /* action */ String, Unit]] = js.undefined
+  
   var page: js.UndefOr[Double] = js.undefined
+  
   var pagination: js.UndefOr[Boolean] = js.undefined
-  var print: js.UndefOr[Boolean] = js.undefined
-  var renderExpandableRow: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex, Node]] = js.undefined
+  
+  var print: js.UndefOr[ToolbarButton] = js.undefined
+  
+  var renderExpandableRow: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ DataIndex, Node]] = js.undefined
+  
   var resizableColumns: js.UndefOr[Boolean] = js.undefined
+  
   var responsive: js.UndefOr[Responsive] = js.undefined
+  
   var rowHover: js.UndefOr[Boolean] = js.undefined
-  var rowsExpanded: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var rowsExpanded: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var rowsPerPage: js.UndefOr[Double] = js.undefined
+  
   var rowsPerPageOptions: js.UndefOr[js.Array[Double]] = js.undefined
-  var rowsSelected: js.UndefOr[js.Array[_]] = js.undefined
-  var search: js.UndefOr[Boolean] = js.undefined
+  
+  var rowsSelected: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var search: js.UndefOr[ToolbarButton] = js.undefined
+  
+  var searchAlwaysOpen: js.UndefOr[Boolean] = js.undefined
+  
   var searchOpen: js.UndefOr[Boolean] = js.undefined
+  
   var searchPlaceholder: js.UndefOr[String] = js.undefined
+  
+  var searchProps: js.UndefOr[HTMLAttributes[HTMLInputElement]] = js.undefined
+  
   var searchText: js.UndefOr[String] = js.undefined
+  
+  var selectToolbarPlacement: js.UndefOr[replace | above | none] = js.undefined
+  
   var selectableRows: js.UndefOr[SelectableRows] = js.undefined
+  
   var selectableRowsHeader: js.UndefOr[Boolean] = js.undefined
+  
+  var selectableRowsHideCheckboxes: js.UndefOr[Boolean] = js.undefined
+  
   var selectableRowsOnClick: js.UndefOr[Boolean] = js.undefined
+  
   var serverSide: js.UndefOr[Boolean] = js.undefined
-  var serverSideFilterList: js.UndefOr[js.Array[_]] = js.undefined
-  var setRowProps: js.UndefOr[js.Function2[/* row */ js.Array[_], /* rowIndex */ Double, js.Object]] = js.undefined
+  
+  var setFilterChipProps: js.UndefOr[
+    js.Function3[
+      /* colIndex */ Double, 
+      /* colName */ String, 
+      /* data */ js.Array[js.Array[Any]], 
+      MUIDataTableChip
+    ]
+  ] = js.undefined
+  
+  var setRowProps: js.UndefOr[
+    js.Function3[/* row */ js.Array[Any], /* dataIndex */ Double, /* rowIndex */ Double, js.Object]
+  ] = js.undefined
+  
   var setTableProps: js.UndefOr[js.Function0[js.Object]] = js.undefined
+  
   var sort: js.UndefOr[Boolean] = js.undefined
+  
   var sortFilterList: js.UndefOr[Boolean] = js.undefined
-  var textLabels: js.UndefOr[MUIDataTableTextLabels] = js.undefined
-  var viewColumns: js.UndefOr[Boolean] = js.undefined
+  
+  var sortOrder: js.UndefOr[MUISortOptions] = js.undefined
+  
+  var storageKey: js.UndefOr[String] = js.undefined
+  
+  var tableBodyHeight: js.UndefOr[String] = js.undefined
+  
+  var tableBodyMaxHeight: js.UndefOr[String] = js.undefined
+  
+  var tableId: js.UndefOr[String] = js.undefined
+  
+  var textLabels: js.UndefOr[PartialMUIDataTableTextLaBody] = js.undefined
+  
+  var viewColumns: js.UndefOr[ToolbarButton] = js.undefined
 }
-
 object MUIDataTableOptions {
-  @scala.inline
-  def apply(
-    caseSensitive: js.UndefOr[Boolean] = js.undefined,
-    count: Int | Double = null,
-    customFilterDialogFooter: /* filterList */ js.Array[js.Any] => CallbackTo[Node] = null,
-    customFooter: (/* rowCount */ Double, /* page */ Double, /* rowsPerPage */ Double, /* changeRowsPerPage */ js.Function0[js.Any], /* changePage */ Double) => CallbackTo[Node] = null,
-    customRowRender: (/* data */ js.Array[js.Any], /* dataIndex */ Double, /* rowIndex */ Double) => CallbackTo[Node] = null,
-    customSearch: (/* searchQuery */ String, /* currentRow */ js.Array[js.Any], /* columns */ js.Array[js.Any]) => CallbackTo[Boolean] = null,
-    customSearchRender: (/* searchText */ String, /* handleSearch */ js.Any, /* hideSearch */ js.Any, /* options */ js.Any) => CallbackTo[(Component[js.Object, js.Object]) | Element] = null,
-    customSort: (/* data */ js.Array[js.Any], /* colIndex */ Double, /* order */ String) => CallbackTo[js.Array[js.Any]] = null,
-    customToolbar: js.UndefOr[CallbackTo[Node]] = js.undefined,
-    customToolbarSelect: (/* selectedRows */ AnonLookup, /* displayData */ js.Array[AnonDataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => CallbackTo[Node] = null,
-    disableToolbarSelect: js.UndefOr[Boolean] = js.undefined,
-    download: js.UndefOr[Boolean] = js.undefined,
-    downloadOptions: AnonFilename = null,
-    elevation: Int | Double = null,
-    expandableRows: js.UndefOr[Boolean] = js.undefined,
-    expandableRowsOnClick: js.UndefOr[Boolean] = js.undefined,
-    filter: js.UndefOr[Boolean] = js.undefined,
-    filterType: FilterType = null,
-    fixedHeader: js.UndefOr[Boolean] = js.undefined,
-    fixedHeaderOptions: AnonXAxis = null,
-    isRowExpandable: (/* dataIndex */ Double, /* expandedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => CallbackTo[Boolean] = null,
-    isRowSelectable: (/* dataIndex */ Double, /* selectedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => CallbackTo[Boolean] = null,
-    onCellClick: (/* colData */ js.Any, /* cellMeta */ AnonColIndex) => Callback = null,
-    onChangePage: /* currentPage */ Double => Callback = null,
-    onChangeRowsPerPage: /* numberOfRows */ Double => Callback = null,
-    onColumnSortChange: (/* changedColumn */ String, /* direction */ String) => Callback = null,
-    onColumnViewChange: (/* changedColumn */ String, /* action */ String) => Callback = null,
-    onDownload: (/* buildHead */ js.Function1[/* columns */ js.Any, String], /* buildBody */ js.Function1[/* data */ js.Any, String], /* columns */ js.Any, /* data */ js.Any) => CallbackTo[String | Boolean] = null,
-    onFilterChange: (/* changedColumn */ String, /* filterList */ js.Array[js.Any], /* type */ FilterType | chip | reset) => Callback = null,
-    onFilterDialogClose: js.UndefOr[Callback] = js.undefined,
-    onFilterDialogOpen: js.UndefOr[Callback] = js.undefined,
-    onRowClick: (/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex) => Callback = null,
-    onRowsDelete: /* rowsDeleted */ js.Array[js.Any] => Callback = null,
-    onRowsExpand: (/* currentRowsExpanded */ js.Array[js.Any], /* allRowsExpanded */ js.Array[js.Any]) => Callback = null,
-    onRowsSelect: (/* currentRowsSelected */ js.Array[js.Any], /* rowsSelected */ js.Array[js.Any]) => Callback = null,
-    onSearchChange: /* searchText */ String => Callback = null,
-    onSearchClose: js.UndefOr[Callback] = js.undefined,
-    onSearchOpen: js.UndefOr[Callback] = js.undefined,
-    onTableChange: (/* action */ String, /* tableState */ MUIDataTableState) => Callback = null,
-    onTableInit: (/* action */ String, /* tableState */ MUIDataTableState) => Callback = null,
-    page: Int | Double = null,
-    pagination: js.UndefOr[Boolean] = js.undefined,
-    print: js.UndefOr[Boolean] = js.undefined,
-    renderExpandableRow: (/* rowData */ js.Array[String], /* rowMeta */ AnonRowIndex) => CallbackTo[Node] = null,
-    resizableColumns: js.UndefOr[Boolean] = js.undefined,
-    responsive: Responsive = null,
-    rowHover: js.UndefOr[Boolean] = js.undefined,
-    rowsExpanded: js.Array[_] = null,
-    rowsPerPage: Int | Double = null,
-    rowsPerPageOptions: js.Array[Double] = null,
-    rowsSelected: js.Array[_] = null,
-    search: js.UndefOr[Boolean] = js.undefined,
-    searchOpen: js.UndefOr[Boolean] = js.undefined,
-    searchPlaceholder: String = null,
-    searchText: String = null,
-    selectableRows: SelectableRows = null,
-    selectableRowsHeader: js.UndefOr[Boolean] = js.undefined,
-    selectableRowsOnClick: js.UndefOr[Boolean] = js.undefined,
-    serverSide: js.UndefOr[Boolean] = js.undefined,
-    serverSideFilterList: js.Array[_] = null,
-    setRowProps: (/* row */ js.Array[js.Any], /* rowIndex */ Double) => CallbackTo[js.Object] = null,
-    setTableProps: js.UndefOr[CallbackTo[js.Object]] = js.undefined,
-    sort: js.UndefOr[Boolean] = js.undefined,
-    sortFilterList: js.UndefOr[Boolean] = js.undefined,
-    textLabels: MUIDataTableTextLabels = null,
-    viewColumns: js.UndefOr[Boolean] = js.undefined
-  ): MUIDataTableOptions = {
+  
+  inline def apply(): MUIDataTableOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (customFilterDialogFooter != null) __obj.updateDynamic("customFilterDialogFooter")(js.Any.fromFunction1((t0: /* filterList */ js.Array[js.Any]) => customFilterDialogFooter(t0).runNow()))
-    if (customFooter != null) __obj.updateDynamic("customFooter")(js.Any.fromFunction5((t0: /* rowCount */ scala.Double, t1: /* page */ scala.Double, t2: /* rowsPerPage */ scala.Double, t3: /* changeRowsPerPage */ js.Function0[js.Any], t4: /* changePage */ scala.Double) => customFooter(t0, t1, t2, t3, t4).runNow()))
-    if (customRowRender != null) __obj.updateDynamic("customRowRender")(js.Any.fromFunction3((t0: /* data */ js.Array[js.Any], t1: /* dataIndex */ scala.Double, t2: /* rowIndex */ scala.Double) => customRowRender(t0, t1, t2).runNow()))
-    if (customSearch != null) __obj.updateDynamic("customSearch")(js.Any.fromFunction3((t0: /* searchQuery */ java.lang.String, t1: /* currentRow */ js.Array[js.Any], t2: /* columns */ js.Array[js.Any]) => customSearch(t0, t1, t2).runNow()))
-    if (customSearchRender != null) __obj.updateDynamic("customSearchRender")(js.Any.fromFunction4((t0: /* searchText */ java.lang.String, t1: /* handleSearch */ js.Any, t2: /* hideSearch */ js.Any, t3: /* options */ js.Any) => customSearchRender(t0, t1, t2, t3).runNow()))
-    if (customSort != null) __obj.updateDynamic("customSort")(js.Any.fromFunction3((t0: /* data */ js.Array[js.Any], t1: /* colIndex */ scala.Double, t2: /* order */ java.lang.String) => customSort(t0, t1, t2).runNow()))
-    customToolbar.foreach(p => __obj.updateDynamic("customToolbar")(p.toJsFn))
-    if (customToolbarSelect != null) __obj.updateDynamic("customToolbarSelect")(js.Any.fromFunction3((t0: /* selectedRows */ typingsJapgolly.muiDatatables.AnonLookup, t1: /* displayData */ js.Array[typingsJapgolly.muiDatatables.AnonDataDataIndex], t2: /* setSelectedRows */ js.Function1[/* rows */ js.Array[scala.Double], scala.Unit]) => customToolbarSelect(t0, t1, t2).runNow()))
-    if (!js.isUndefined(disableToolbarSelect)) __obj.updateDynamic("disableToolbarSelect")(disableToolbarSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
-    if (downloadOptions != null) __obj.updateDynamic("downloadOptions")(downloadOptions.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandableRows)) __obj.updateDynamic("expandableRows")(expandableRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandableRowsOnClick)) __obj.updateDynamic("expandableRowsOnClick")(expandableRowsOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])
-    if (fixedHeaderOptions != null) __obj.updateDynamic("fixedHeaderOptions")(fixedHeaderOptions.asInstanceOf[js.Any])
-    if (isRowExpandable != null) __obj.updateDynamic("isRowExpandable")(js.Any.fromFunction2((t0: /* dataIndex */ scala.Double, t1: /* expandedRows */ js.UndefOr[typingsJapgolly.muiDatatables.mod.MUIDataTableIsRowCheck]) => isRowExpandable(t0, t1).runNow()))
-    if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction2((t0: /* dataIndex */ scala.Double, t1: /* selectedRows */ js.UndefOr[typingsJapgolly.muiDatatables.mod.MUIDataTableIsRowCheck]) => isRowSelectable(t0, t1).runNow()))
-    if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction2((t0: /* colData */ js.Any, t1: /* cellMeta */ typingsJapgolly.muiDatatables.AnonColIndex) => onCellClick(t0, t1).runNow()))
-    if (onChangePage != null) __obj.updateDynamic("onChangePage")(js.Any.fromFunction1((t0: /* currentPage */ scala.Double) => onChangePage(t0).runNow()))
-    if (onChangeRowsPerPage != null) __obj.updateDynamic("onChangeRowsPerPage")(js.Any.fromFunction1((t0: /* numberOfRows */ scala.Double) => onChangeRowsPerPage(t0).runNow()))
-    if (onColumnSortChange != null) __obj.updateDynamic("onColumnSortChange")(js.Any.fromFunction2((t0: /* changedColumn */ java.lang.String, t1: /* direction */ java.lang.String) => onColumnSortChange(t0, t1).runNow()))
-    if (onColumnViewChange != null) __obj.updateDynamic("onColumnViewChange")(js.Any.fromFunction2((t0: /* changedColumn */ java.lang.String, t1: /* action */ java.lang.String) => onColumnViewChange(t0, t1).runNow()))
-    if (onDownload != null) __obj.updateDynamic("onDownload")(js.Any.fromFunction4((t0: /* buildHead */ js.Function1[/* columns */ js.Any, java.lang.String], t1: /* buildBody */ js.Function1[/* data */ js.Any, java.lang.String], t2: /* columns */ js.Any, t3: /* data */ js.Any) => onDownload(t0, t1, t2, t3).runNow()))
-    if (onFilterChange != null) __obj.updateDynamic("onFilterChange")(js.Any.fromFunction3((t0: /* changedColumn */ java.lang.String, t1: /* filterList */ js.Array[js.Any], t2: /* type */ typingsJapgolly.muiDatatables.mod.FilterType | typingsJapgolly.muiDatatables.muiDatatablesStrings.chip | typingsJapgolly.muiDatatables.muiDatatablesStrings.reset) => onFilterChange(t0, t1, t2).runNow()))
-    onFilterDialogClose.foreach(p => __obj.updateDynamic("onFilterDialogClose")(p.toJsFn))
-    onFilterDialogOpen.foreach(p => __obj.updateDynamic("onFilterDialogOpen")(p.toJsFn))
-    if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction2((t0: /* rowData */ js.Array[java.lang.String], t1: /* rowMeta */ typingsJapgolly.muiDatatables.AnonRowIndex) => onRowClick(t0, t1).runNow()))
-    if (onRowsDelete != null) __obj.updateDynamic("onRowsDelete")(js.Any.fromFunction1((t0: /* rowsDeleted */ js.Array[js.Any]) => onRowsDelete(t0).runNow()))
-    if (onRowsExpand != null) __obj.updateDynamic("onRowsExpand")(js.Any.fromFunction2((t0: /* currentRowsExpanded */ js.Array[js.Any], t1: /* allRowsExpanded */ js.Array[js.Any]) => onRowsExpand(t0, t1).runNow()))
-    if (onRowsSelect != null) __obj.updateDynamic("onRowsSelect")(js.Any.fromFunction2((t0: /* currentRowsSelected */ js.Array[js.Any], t1: /* rowsSelected */ js.Array[js.Any]) => onRowsSelect(t0, t1).runNow()))
-    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction1((t0: /* searchText */ java.lang.String) => onSearchChange(t0).runNow()))
-    onSearchClose.foreach(p => __obj.updateDynamic("onSearchClose")(p.toJsFn))
-    onSearchOpen.foreach(p => __obj.updateDynamic("onSearchOpen")(p.toJsFn))
-    if (onTableChange != null) __obj.updateDynamic("onTableChange")(js.Any.fromFunction2((t0: /* action */ java.lang.String, t1: /* tableState */ typingsJapgolly.muiDatatables.mod.MUIDataTableState) => onTableChange(t0, t1).runNow()))
-    if (onTableInit != null) __obj.updateDynamic("onTableInit")(js.Any.fromFunction2((t0: /* action */ java.lang.String, t1: /* tableState */ typingsJapgolly.muiDatatables.mod.MUIDataTableState) => onTableInit(t0, t1).runNow()))
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
-    if (!js.isUndefined(print)) __obj.updateDynamic("print")(print.asInstanceOf[js.Any])
-    if (renderExpandableRow != null) __obj.updateDynamic("renderExpandableRow")(js.Any.fromFunction2((t0: /* rowData */ js.Array[java.lang.String], t1: /* rowMeta */ typingsJapgolly.muiDatatables.AnonRowIndex) => renderExpandableRow(t0, t1).runNow()))
-    if (!js.isUndefined(resizableColumns)) __obj.updateDynamic("resizableColumns")(resizableColumns.asInstanceOf[js.Any])
-    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHover)) __obj.updateDynamic("rowHover")(rowHover.asInstanceOf[js.Any])
-    if (rowsExpanded != null) __obj.updateDynamic("rowsExpanded")(rowsExpanded.asInstanceOf[js.Any])
-    if (rowsPerPage != null) __obj.updateDynamic("rowsPerPage")(rowsPerPage.asInstanceOf[js.Any])
-    if (rowsPerPageOptions != null) __obj.updateDynamic("rowsPerPageOptions")(rowsPerPageOptions.asInstanceOf[js.Any])
-    if (rowsSelected != null) __obj.updateDynamic("rowsSelected")(rowsSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchOpen)) __obj.updateDynamic("searchOpen")(searchOpen.asInstanceOf[js.Any])
-    if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder.asInstanceOf[js.Any])
-    if (searchText != null) __obj.updateDynamic("searchText")(searchText.asInstanceOf[js.Any])
-    if (selectableRows != null) __obj.updateDynamic("selectableRows")(selectableRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectableRowsHeader)) __obj.updateDynamic("selectableRowsHeader")(selectableRowsHeader.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectableRowsOnClick)) __obj.updateDynamic("selectableRowsOnClick")(selectableRowsOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverSide)) __obj.updateDynamic("serverSide")(serverSide.asInstanceOf[js.Any])
-    if (serverSideFilterList != null) __obj.updateDynamic("serverSideFilterList")(serverSideFilterList.asInstanceOf[js.Any])
-    if (setRowProps != null) __obj.updateDynamic("setRowProps")(js.Any.fromFunction2((t0: /* row */ js.Array[js.Any], t1: /* rowIndex */ scala.Double) => setRowProps(t0, t1).runNow()))
-    setTableProps.foreach(p => __obj.updateDynamic("setTableProps")(p.toJsFn))
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortFilterList)) __obj.updateDynamic("sortFilterList")(sortFilterList.asInstanceOf[js.Any])
-    if (textLabels != null) __obj.updateDynamic("textLabels")(textLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewColumns)) __obj.updateDynamic("viewColumns")(viewColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableOptions]
   }
+  
+  extension [Self <: MUIDataTableOptions](x: Self) {
+    
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    
+    inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    
+    inline def setColumnOrder(value: js.Array[Double]): Self = StObject.set(x, "columnOrder", value.asInstanceOf[js.Any])
+    
+    inline def setColumnOrderUndefined: Self = StObject.set(x, "columnOrder", js.undefined)
+    
+    inline def setColumnOrderVarargs(value: Double*): Self = StObject.set(x, "columnOrder", js.Array(value*))
+    
+    inline def setConfirmFilters(value: Boolean): Self = StObject.set(x, "confirmFilters", value.asInstanceOf[js.Any])
+    
+    inline def setConfirmFiltersUndefined: Self = StObject.set(x, "confirmFilters", js.undefined)
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    
+    inline def setCustomFilterDialogFooter(
+      value: (/* filterList */ js.Array[js.Array[String]], /* applyNewFilters */ js.UndefOr[js.Function1[/* repeated */ Any, Any]]) => Node
+    ): Self = StObject.set(x, "customFilterDialogFooter", js.Any.fromFunction2(value))
+    
+    inline def setCustomFilterDialogFooterUndefined: Self = StObject.set(x, "customFilterDialogFooter", js.undefined)
+    
+    inline def setCustomFooter(
+      value: (/* rowCount */ Double, /* page */ Double, /* rowsPerPage */ Double, /* changeRowsPerPage */ js.Function1[/* page */ String | Double, Unit], /* changePage */ js.Function1[/* newPage */ Double, Unit], /* textLabels */ PartialMUIDataTableTextLaBody) => Node
+    ): Self = StObject.set(x, "customFooter", js.Any.fromFunction6(value))
+    
+    inline def setCustomFooterUndefined: Self = StObject.set(x, "customFooter", js.undefined)
+    
+    inline def setCustomRowRender(value: (/* data */ js.Array[Any], /* dataIndex */ Double, /* rowIndex */ Double) => Node): Self = StObject.set(x, "customRowRender", js.Any.fromFunction3(value))
+    
+    inline def setCustomRowRenderUndefined: Self = StObject.set(x, "customRowRender", js.undefined)
+    
+    inline def setCustomSearch(
+      value: (/* searchQuery */ String, /* currentRow */ js.Array[Any], /* columns */ js.Array[Any]) => Boolean
+    ): Self = StObject.set(x, "customSearch", js.Any.fromFunction3(value))
+    
+    inline def setCustomSearchRender(
+      value: (/* searchText */ String, /* handleSearch */ js.Function1[/* text */ String, Unit], /* hideSearch */ js.Function0[Unit], /* options */ Any) => (Component[js.Object, js.Object]) | Element
+    ): Self = StObject.set(x, "customSearchRender", js.Any.fromFunction4(value))
+    
+    inline def setCustomSearchRenderUndefined: Self = StObject.set(x, "customSearchRender", js.undefined)
+    
+    inline def setCustomSearchUndefined: Self = StObject.set(x, "customSearch", js.undefined)
+    
+    inline def setCustomSort(value: (/* data */ js.Array[Any], /* colIndex */ Double, /* order */ String) => js.Array[Any]): Self = StObject.set(x, "customSort", js.Any.fromFunction3(value))
+    
+    inline def setCustomSortUndefined: Self = StObject.set(x, "customSort", js.undefined)
+    
+    inline def setCustomTableBodyFooterRender(value: /* options */ Columns => Any): Self = StObject.set(x, "customTableBodyFooterRender", js.Any.fromFunction1(value))
+    
+    inline def setCustomTableBodyFooterRenderUndefined: Self = StObject.set(x, "customTableBodyFooterRender", js.undefined)
+    
+    inline def setCustomToolbar(value: /* data */ typingsJapgolly.muiDatatables.anon.DisplayData => Node): Self = StObject.set(x, "customToolbar", js.Any.fromFunction1(value))
+    
+    inline def setCustomToolbarSelect(
+      value: (/* selectedRows */ DataLookup, /* displayData */ DisplayData, /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => Node
+    ): Self = StObject.set(x, "customToolbarSelect", js.Any.fromFunction3(value))
+    
+    inline def setCustomToolbarSelectUndefined: Self = StObject.set(x, "customToolbarSelect", js.undefined)
+    
+    inline def setCustomToolbarUndefined: Self = StObject.set(x, "customToolbar", js.undefined)
+    
+    inline def setDisableToolbarSelect(value: Boolean): Self = StObject.set(x, "disableToolbarSelect", value.asInstanceOf[js.Any])
+    
+    inline def setDisableToolbarSelectUndefined: Self = StObject.set(x, "disableToolbarSelect", js.undefined)
+    
+    inline def setDownload(value: ToolbarButton): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    
+    inline def setDownloadOptions(value: Partialfilenamestringsepa): Self = StObject.set(x, "downloadOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDownloadOptionsUndefined: Self = StObject.set(x, "downloadOptions", js.undefined)
+    
+    inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+    
+    inline def setDraggableColumns(value: MUIDataTableDraggableColumns): Self = StObject.set(x, "draggableColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDraggableColumnsUndefined: Self = StObject.set(x, "draggableColumns", js.undefined)
+    
+    inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+    
+    inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
+    
+    inline def setEnableNestedDataAccess(value: String): Self = StObject.set(x, "enableNestedDataAccess", value.asInstanceOf[js.Any])
+    
+    inline def setEnableNestedDataAccessUndefined: Self = StObject.set(x, "enableNestedDataAccess", js.undefined)
+    
+    inline def setExpandableRows(value: Boolean): Self = StObject.set(x, "expandableRows", value.asInstanceOf[js.Any])
+    
+    inline def setExpandableRowsHeader(value: Boolean): Self = StObject.set(x, "expandableRowsHeader", value.asInstanceOf[js.Any])
+    
+    inline def setExpandableRowsHeaderUndefined: Self = StObject.set(x, "expandableRowsHeader", js.undefined)
+    
+    inline def setExpandableRowsOnClick(value: Boolean): Self = StObject.set(x, "expandableRowsOnClick", value.asInstanceOf[js.Any])
+    
+    inline def setExpandableRowsOnClickUndefined: Self = StObject.set(x, "expandableRowsOnClick", js.undefined)
+    
+    inline def setExpandableRowsUndefined: Self = StObject.set(x, "expandableRows", js.undefined)
+    
+    inline def setFilter(value: ToolbarButton): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterArrayFullMatch(value: Boolean): Self = StObject.set(x, "filterArrayFullMatch", value.asInstanceOf[js.Any])
+    
+    inline def setFilterArrayFullMatchUndefined: Self = StObject.set(x, "filterArrayFullMatch", js.undefined)
+    
+    inline def setFilterType(value: FilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
+    
+    inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
+    
+    inline def setFixedHeaderOptions(value: XAxis): Self = StObject.set(x, "fixedHeaderOptions", value.asInstanceOf[js.Any])
+    
+    inline def setFixedHeaderOptionsUndefined: Self = StObject.set(x, "fixedHeaderOptions", js.undefined)
+    
+    inline def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
+    
+    inline def setFixedSelectColumn(value: Boolean): Self = StObject.set(x, "fixedSelectColumn", value.asInstanceOf[js.Any])
+    
+    inline def setFixedSelectColumnUndefined: Self = StObject.set(x, "fixedSelectColumn", js.undefined)
+    
+    inline def setIsRowExpandable(value: (/* dataIndex */ Double, /* expandedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => Boolean): Self = StObject.set(x, "isRowExpandable", js.Any.fromFunction2(value))
+    
+    inline def setIsRowExpandableUndefined: Self = StObject.set(x, "isRowExpandable", js.undefined)
+    
+    inline def setIsRowSelectable(value: (/* dataIndex */ Double, /* selectedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => Boolean): Self = StObject.set(x, "isRowSelectable", js.Any.fromFunction2(value))
+    
+    inline def setIsRowSelectableUndefined: Self = StObject.set(x, "isRowSelectable", js.undefined)
+    
+    inline def setJumpToPage(value: Boolean): Self = StObject.set(x, "jumpToPage", value.asInstanceOf[js.Any])
+    
+    inline def setJumpToPageUndefined: Self = StObject.set(x, "jumpToPage", js.undefined)
+    
+    inline def setOnCellClick(value: (/* colData */ Any, /* cellMeta */ ColIndex) => Callback): Self = StObject.set(x, "onCellClick", js.Any.fromFunction2((t0: /* colData */ Any, t1: /* cellMeta */ ColIndex) => (value(t0, t1)).runNow()))
+    
+    inline def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
+    
+    inline def setOnChangePage(value: /* currentPage */ Double => Callback): Self = StObject.set(x, "onChangePage", js.Any.fromFunction1((t0: /* currentPage */ Double) => value(t0).runNow()))
+    
+    inline def setOnChangePageUndefined: Self = StObject.set(x, "onChangePage", js.undefined)
+    
+    inline def setOnChangeRowsPerPage(value: /* numberOfRows */ Double => Callback): Self = StObject.set(x, "onChangeRowsPerPage", js.Any.fromFunction1((t0: /* numberOfRows */ Double) => value(t0).runNow()))
+    
+    inline def setOnChangeRowsPerPageUndefined: Self = StObject.set(x, "onChangeRowsPerPage", js.undefined)
+    
+    inline def setOnColumnOrderChange(
+      value: (/* newColumnOrder */ js.Array[Double], /* columnIndex */ Double, /* newPosition */ Double) => Callback
+    ): Self = StObject.set(x, "onColumnOrderChange", js.Any.fromFunction3((t0: /* newColumnOrder */ js.Array[Double], t1: /* columnIndex */ Double, t2: /* newPosition */ Double) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnColumnOrderChangeUndefined: Self = StObject.set(x, "onColumnOrderChange", js.undefined)
+    
+    inline def setOnColumnSortChange(value: (/* changedColumn */ String, /* direction */ asc | desc) => Callback): Self = StObject.set(x, "onColumnSortChange", js.Any.fromFunction2((t0: /* changedColumn */ String, t1: /* direction */ asc | desc) => (value(t0, t1)).runNow()))
+    
+    inline def setOnColumnSortChangeUndefined: Self = StObject.set(x, "onColumnSortChange", js.undefined)
+    
+    inline def setOnColumnViewChange(value: (/* changedColumn */ String, /* action */ String) => Callback): Self = StObject.set(x, "onColumnViewChange", js.Any.fromFunction2((t0: /* changedColumn */ String, t1: /* action */ String) => (value(t0, t1)).runNow()))
+    
+    inline def setOnColumnViewChangeUndefined: Self = StObject.set(x, "onColumnViewChange", js.undefined)
+    
+    inline def setOnDownload(
+      value: (/* buildHead */ js.Function1[/* columns */ Any, String], /* buildBody */ js.Function1[/* data */ Any, String], /* columns */ Any, /* data */ Any) => String | Boolean
+    ): Self = StObject.set(x, "onDownload", js.Any.fromFunction4(value))
+    
+    inline def setOnDownloadUndefined: Self = StObject.set(x, "onDownload", js.undefined)
+    
+    inline def setOnFilterChange(
+      value: (/* changedColumn */ String | MUIDataTableColumn | Null, /* filterList */ js.Array[js.Array[String]], /* type */ FilterType | chip | reset, /* changedColumnIndex */ Double, /* displayData */ DisplayData) => Callback
+    ): Self = StObject.set(x, "onFilterChange", js.Any.fromFunction5((t0: /* changedColumn */ String | MUIDataTableColumn | Null, t1: /* filterList */ js.Array[js.Array[String]], t2: /* type */ FilterType | chip | reset, t3: /* changedColumnIndex */ Double, t4: /* displayData */ DisplayData) => (value(t0, t1, t2, t3, t4)).runNow()))
+    
+    inline def setOnFilterChangeUndefined: Self = StObject.set(x, "onFilterChange", js.undefined)
+    
+    inline def setOnFilterChipClose(
+      value: (/* index */ Double, /* removedFilter */ String, /* filterList */ js.Array[js.Array[String]]) => Callback
+    ): Self = StObject.set(x, "onFilterChipClose", js.Any.fromFunction3((t0: /* index */ Double, t1: /* removedFilter */ String, t2: /* filterList */ js.Array[js.Array[String]]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnFilterChipCloseUndefined: Self = StObject.set(x, "onFilterChipClose", js.undefined)
+    
+    inline def setOnFilterConfirm(value: /* filterList */ js.Array[js.Array[String]] => Callback): Self = StObject.set(x, "onFilterConfirm", js.Any.fromFunction1((t0: /* filterList */ js.Array[js.Array[String]]) => value(t0).runNow()))
+    
+    inline def setOnFilterConfirmUndefined: Self = StObject.set(x, "onFilterConfirm", js.undefined)
+    
+    inline def setOnFilterDialogClose(value: Callback): Self = StObject.set(x, "onFilterDialogClose", value.toJsFn)
+    
+    inline def setOnFilterDialogCloseUndefined: Self = StObject.set(x, "onFilterDialogClose", js.undefined)
+    
+    inline def setOnFilterDialogOpen(value: Callback): Self = StObject.set(x, "onFilterDialogOpen", value.toJsFn)
+    
+    inline def setOnFilterDialogOpenUndefined: Self = StObject.set(x, "onFilterDialogOpen", js.undefined)
+    
+    inline def setOnRowClick(value: (/* rowData */ js.Array[String], /* rowMeta */ DataIndex) => Callback): Self = StObject.set(x, "onRowClick", js.Any.fromFunction2((t0: /* rowData */ js.Array[String], t1: /* rowMeta */ DataIndex) => (value(t0, t1)).runNow()))
+    
+    inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
+    
+    inline def setOnRowExpansionChange(
+      value: (/* currentRowsExpanded */ js.Array[Any], /* allRowsExpanded */ js.Array[Any], /* rowsExpanded */ js.UndefOr[js.Array[Any]]) => Callback
+    ): Self = StObject.set(x, "onRowExpansionChange", js.Any.fromFunction3((t0: /* currentRowsExpanded */ js.Array[Any], t1: /* allRowsExpanded */ js.Array[Any], t2: /* rowsExpanded */ js.UndefOr[js.Array[Any]]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnRowExpansionChangeUndefined: Self = StObject.set(x, "onRowExpansionChange", js.undefined)
+    
+    inline def setOnRowSelectionChange(
+      value: (/* currentRowsSelected */ js.Array[Any], /* allRowsSelected */ js.Array[Any], /* rowsSelected */ js.UndefOr[js.Array[Any]]) => Callback
+    ): Self = StObject.set(x, "onRowSelectionChange", js.Any.fromFunction3((t0: /* currentRowsSelected */ js.Array[Any], t1: /* allRowsSelected */ js.Array[Any], t2: /* rowsSelected */ js.UndefOr[js.Array[Any]]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnRowSelectionChangeUndefined: Self = StObject.set(x, "onRowSelectionChange", js.undefined)
+    
+    inline def setOnRowsDelete(value: (/* rowsDeleted */ Lookup, /* newTableData */ js.Array[Any]) => Unit | `false`): Self = StObject.set(x, "onRowsDelete", js.Any.fromFunction2(value))
+    
+    inline def setOnRowsDeleteUndefined: Self = StObject.set(x, "onRowsDelete", js.undefined)
+    
+    inline def setOnSearchChange(value: /* searchText */ String | Null => Callback): Self = StObject.set(x, "onSearchChange", js.Any.fromFunction1((t0: /* searchText */ String | Null) => value(t0).runNow()))
+    
+    inline def setOnSearchChangeUndefined: Self = StObject.set(x, "onSearchChange", js.undefined)
+    
+    inline def setOnSearchClose(value: Callback): Self = StObject.set(x, "onSearchClose", value.toJsFn)
+    
+    inline def setOnSearchCloseUndefined: Self = StObject.set(x, "onSearchClose", js.undefined)
+    
+    inline def setOnSearchOpen(value: Callback): Self = StObject.set(x, "onSearchOpen", value.toJsFn)
+    
+    inline def setOnSearchOpenUndefined: Self = StObject.set(x, "onSearchOpen", js.undefined)
+    
+    inline def setOnTableChange(value: (/* action */ String, /* tableState */ MUIDataTableState) => Callback): Self = StObject.set(x, "onTableChange", js.Any.fromFunction2((t0: /* action */ String, t1: /* tableState */ MUIDataTableState) => (value(t0, t1)).runNow()))
+    
+    inline def setOnTableChangeUndefined: Self = StObject.set(x, "onTableChange", js.undefined)
+    
+    inline def setOnTableInit(value: (/* action */ String, /* tableState */ MUIDataTableState) => Callback): Self = StObject.set(x, "onTableInit", js.Any.fromFunction2((t0: /* action */ String, t1: /* tableState */ MUIDataTableState) => (value(t0, t1)).runNow()))
+    
+    inline def setOnTableInitUndefined: Self = StObject.set(x, "onTableInit", js.undefined)
+    
+    inline def setOnViewColumnsChange(value: (/* changedColumn */ String, /* action */ String) => Callback): Self = StObject.set(x, "onViewColumnsChange", js.Any.fromFunction2((t0: /* changedColumn */ String, t1: /* action */ String) => (value(t0, t1)).runNow()))
+    
+    inline def setOnViewColumnsChangeUndefined: Self = StObject.set(x, "onViewColumnsChange", js.undefined)
+    
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPagination(value: Boolean): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    
+    inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+    
+    inline def setPrint(value: ToolbarButton): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+    
+    inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
+    
+    inline def setRenderExpandableRow(value: (/* rowData */ js.Array[String], /* rowMeta */ DataIndex) => Node): Self = StObject.set(x, "renderExpandableRow", js.Any.fromFunction2(value))
+    
+    inline def setRenderExpandableRowUndefined: Self = StObject.set(x, "renderExpandableRow", js.undefined)
+    
+    inline def setResizableColumns(value: Boolean): Self = StObject.set(x, "resizableColumns", value.asInstanceOf[js.Any])
+    
+    inline def setResizableColumnsUndefined: Self = StObject.set(x, "resizableColumns", js.undefined)
+    
+    inline def setResponsive(value: Responsive): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+    
+    inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+    
+    inline def setRowHover(value: Boolean): Self = StObject.set(x, "rowHover", value.asInstanceOf[js.Any])
+    
+    inline def setRowHoverUndefined: Self = StObject.set(x, "rowHover", js.undefined)
+    
+    inline def setRowsExpanded(value: js.Array[Any]): Self = StObject.set(x, "rowsExpanded", value.asInstanceOf[js.Any])
+    
+    inline def setRowsExpandedUndefined: Self = StObject.set(x, "rowsExpanded", js.undefined)
+    
+    inline def setRowsExpandedVarargs(value: Any*): Self = StObject.set(x, "rowsExpanded", js.Array(value*))
+    
+    inline def setRowsPerPage(value: Double): Self = StObject.set(x, "rowsPerPage", value.asInstanceOf[js.Any])
+    
+    inline def setRowsPerPageOptions(value: js.Array[Double]): Self = StObject.set(x, "rowsPerPageOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRowsPerPageOptionsUndefined: Self = StObject.set(x, "rowsPerPageOptions", js.undefined)
+    
+    inline def setRowsPerPageOptionsVarargs(value: Double*): Self = StObject.set(x, "rowsPerPageOptions", js.Array(value*))
+    
+    inline def setRowsPerPageUndefined: Self = StObject.set(x, "rowsPerPage", js.undefined)
+    
+    inline def setRowsSelected(value: js.Array[Any]): Self = StObject.set(x, "rowsSelected", value.asInstanceOf[js.Any])
+    
+    inline def setRowsSelectedUndefined: Self = StObject.set(x, "rowsSelected", js.undefined)
+    
+    inline def setRowsSelectedVarargs(value: Any*): Self = StObject.set(x, "rowsSelected", js.Array(value*))
+    
+    inline def setSearch(value: ToolbarButton): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchAlwaysOpen(value: Boolean): Self = StObject.set(x, "searchAlwaysOpen", value.asInstanceOf[js.Any])
+    
+    inline def setSearchAlwaysOpenUndefined: Self = StObject.set(x, "searchAlwaysOpen", js.undefined)
+    
+    inline def setSearchOpen(value: Boolean): Self = StObject.set(x, "searchOpen", value.asInstanceOf[js.Any])
+    
+    inline def setSearchOpenUndefined: Self = StObject.set(x, "searchOpen", js.undefined)
+    
+    inline def setSearchPlaceholder(value: String): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
+    
+    inline def setSearchPlaceholderUndefined: Self = StObject.set(x, "searchPlaceholder", js.undefined)
+    
+    inline def setSearchProps(value: HTMLAttributes[HTMLInputElement]): Self = StObject.set(x, "searchProps", value.asInstanceOf[js.Any])
+    
+    inline def setSearchPropsUndefined: Self = StObject.set(x, "searchProps", js.undefined)
+    
+    inline def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
+    
+    inline def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    
+    inline def setSelectToolbarPlacement(value: replace | above | none): Self = StObject.set(x, "selectToolbarPlacement", value.asInstanceOf[js.Any])
+    
+    inline def setSelectToolbarPlacementUndefined: Self = StObject.set(x, "selectToolbarPlacement", js.undefined)
+    
+    inline def setSelectableRows(value: SelectableRows): Self = StObject.set(x, "selectableRows", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableRowsHeader(value: Boolean): Self = StObject.set(x, "selectableRowsHeader", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableRowsHeaderUndefined: Self = StObject.set(x, "selectableRowsHeader", js.undefined)
+    
+    inline def setSelectableRowsHideCheckboxes(value: Boolean): Self = StObject.set(x, "selectableRowsHideCheckboxes", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableRowsHideCheckboxesUndefined: Self = StObject.set(x, "selectableRowsHideCheckboxes", js.undefined)
+    
+    inline def setSelectableRowsOnClick(value: Boolean): Self = StObject.set(x, "selectableRowsOnClick", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableRowsOnClickUndefined: Self = StObject.set(x, "selectableRowsOnClick", js.undefined)
+    
+    inline def setSelectableRowsUndefined: Self = StObject.set(x, "selectableRows", js.undefined)
+    
+    inline def setServerSide(value: Boolean): Self = StObject.set(x, "serverSide", value.asInstanceOf[js.Any])
+    
+    inline def setServerSideUndefined: Self = StObject.set(x, "serverSide", js.undefined)
+    
+    inline def setSetFilterChipProps(
+      value: (/* colIndex */ Double, /* colName */ String, /* data */ js.Array[js.Array[Any]]) => MUIDataTableChip
+    ): Self = StObject.set(x, "setFilterChipProps", js.Any.fromFunction3(value))
+    
+    inline def setSetFilterChipPropsUndefined: Self = StObject.set(x, "setFilterChipProps", js.undefined)
+    
+    inline def setSetRowProps(value: (/* row */ js.Array[Any], /* dataIndex */ Double, /* rowIndex */ Double) => js.Object): Self = StObject.set(x, "setRowProps", js.Any.fromFunction3(value))
+    
+    inline def setSetRowPropsUndefined: Self = StObject.set(x, "setRowProps", js.undefined)
+    
+    inline def setSetTableProps(value: CallbackTo[js.Object]): Self = StObject.set(x, "setTableProps", value.toJsFn)
+    
+    inline def setSetTablePropsUndefined: Self = StObject.set(x, "setTableProps", js.undefined)
+    
+    inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortFilterList(value: Boolean): Self = StObject.set(x, "sortFilterList", value.asInstanceOf[js.Any])
+    
+    inline def setSortFilterListUndefined: Self = StObject.set(x, "sortFilterList", js.undefined)
+    
+    inline def setSortOrder(value: MUISortOptions): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
+    
+    inline def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
+    
+    inline def setTableBodyHeight(value: String): Self = StObject.set(x, "tableBodyHeight", value.asInstanceOf[js.Any])
+    
+    inline def setTableBodyHeightUndefined: Self = StObject.set(x, "tableBodyHeight", js.undefined)
+    
+    inline def setTableBodyMaxHeight(value: String): Self = StObject.set(x, "tableBodyMaxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setTableBodyMaxHeightUndefined: Self = StObject.set(x, "tableBodyMaxHeight", js.undefined)
+    
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    
+    inline def setTextLabels(value: PartialMUIDataTableTextLaBody): Self = StObject.set(x, "textLabels", value.asInstanceOf[js.Any])
+    
+    inline def setTextLabelsUndefined: Self = StObject.set(x, "textLabels", js.undefined)
+    
+    inline def setViewColumns(value: ToolbarButton): Self = StObject.set(x, "viewColumns", value.asInstanceOf[js.Any])
+    
+    inline def setViewColumnsUndefined: Self = StObject.set(x, "viewColumns", js.undefined)
+  }
 }
-

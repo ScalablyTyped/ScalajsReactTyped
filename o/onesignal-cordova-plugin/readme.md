@@ -10,10 +10,10 @@ OneSignal is a high volume Push Notification service for mobile apps. In additio
 | ------------------ | :-------------: |
 | Full name          | onesignal-cordova-plugin |
 | Keywords           | push, notification, push notification, push notifications, apns, gcm, adm, retention, messaging, ecosystem:cordova, cordova-android, cordova-ios, cordova-amazon-fireos |
-| # releases         | 20 |
-| # dependents       | 1 |
-| # downloads        | 263916 |
-| # stars            | 4 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 57727.333333333336 |
+| # stars            | 231.0 |
 
 ## Links
 - [Homepage](https://github.com/onesignal/OneSignal-Cordova-SDK#readme)

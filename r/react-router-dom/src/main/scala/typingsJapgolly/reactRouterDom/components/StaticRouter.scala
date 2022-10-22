@@ -1,47 +1,30 @@
 package typingsJapgolly.reactRouterDom.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactRouter.mod.StaticRouterContext
-import typingsJapgolly.reactRouter.mod.StaticRouterProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactRouterDom.anon.PartialLocation
+import typingsJapgolly.reactRouterDom.distServerMod.StaticRouterProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StaticRouter {
-  def apply(
-    basename: String = null,
-    context: StaticRouterContext = null,
-    location: String | js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    StaticRouterProps, 
-    typingsJapgolly.reactRouterDom.mod.StaticRouter, 
-    Unit, 
-    StaticRouterProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (basename != null) __obj.updateDynamic("basename")(basename.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactRouter.mod.StaticRouterProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactRouterDom.mod.StaticRouter](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactRouter.mod.StaticRouterProps])(children: _*)
+  inline def apply(location: PartialLocation | String): Builder = {
+    val __props = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[StaticRouterProps]))
   }
-  @JSImport("react-router-dom", "StaticRouter")
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("react-router-dom/dist/server", "StaticRouter")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def basename(value: String): this.type = set("basename", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: StaticRouterProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

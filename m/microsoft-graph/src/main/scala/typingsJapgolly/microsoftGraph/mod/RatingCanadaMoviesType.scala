@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.allAllowed
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove18
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.restricted
 */
-trait RatingCanadaMoviesType extends js.Object
-
+trait RatingCanadaMoviesType extends StObject
 object RatingCanadaMoviesType {
-  @scala.inline
-  def agesAbove14: typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove14 = this.cast("agesAbove14")
-  @scala.inline
-  def agesAbove18: typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove18 = this.cast("agesAbove18")
-  @scala.inline
-  def allAllowed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allAllowed = this.cast("allAllowed")
-  @scala.inline
-  def allBlocked: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allBlocked = this.cast("allBlocked")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def general: typingsJapgolly.microsoftGraph.microsoftGraphStrings.general = this.cast("general")
-  @scala.inline
-  def parentalGuidance: typingsJapgolly.microsoftGraph.microsoftGraphStrings.parentalGuidance = this.cast("parentalGuidance")
-  @scala.inline
-  def restricted: typingsJapgolly.microsoftGraph.microsoftGraphStrings.restricted = this.cast("restricted")
+  
+  inline def agesAbove14: typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove14 = "agesAbove14".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove14]
+  
+  inline def agesAbove18: typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove18 = "agesAbove18".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.agesAbove18]
+  
+  inline def allAllowed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.allAllowed]
+  
+  inline def allBlocked: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.allBlocked]
+  
+  inline def general: typingsJapgolly.microsoftGraph.microsoftGraphStrings.general = "general".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.general]
+  
+  inline def parentalGuidance: typingsJapgolly.microsoftGraph.microsoftGraphStrings.parentalGuidance = "parentalGuidance".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.parentalGuidance]
+  
+  inline def restricted: typingsJapgolly.microsoftGraph.microsoftGraphStrings.restricted = "restricted".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.restricted]
 }
-

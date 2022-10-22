@@ -1,30 +1,42 @@
 package typingsJapgolly.durandal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DurandalRelativeRouteSettings extends js.Object {
+trait DurandalRelativeRouteSettings extends StObject {
+  
   var dynamicHash: js.UndefOr[String] = js.undefined
+  
   var fromParent: js.UndefOr[Boolean] = js.undefined
+  
   var moduleId: js.UndefOr[String] = js.undefined
+  
   var route: js.UndefOr[String] = js.undefined
 }
-
 object DurandalRelativeRouteSettings {
-  @scala.inline
-  def apply(
-    dynamicHash: String = null,
-    fromParent: js.UndefOr[Boolean] = js.undefined,
-    moduleId: String = null,
-    route: String = null
-  ): DurandalRelativeRouteSettings = {
+  
+  inline def apply(): DurandalRelativeRouteSettings = {
     val __obj = js.Dynamic.literal()
-    if (dynamicHash != null) __obj.updateDynamic("dynamicHash")(dynamicHash.asInstanceOf[js.Any])
-    if (!js.isUndefined(fromParent)) __obj.updateDynamic("fromParent")(fromParent.asInstanceOf[js.Any])
-    if (moduleId != null) __obj.updateDynamic("moduleId")(moduleId.asInstanceOf[js.Any])
-    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
     __obj.asInstanceOf[DurandalRelativeRouteSettings]
   }
+  
+  extension [Self <: DurandalRelativeRouteSettings](x: Self) {
+    
+    inline def setDynamicHash(value: String): Self = StObject.set(x, "dynamicHash", value.asInstanceOf[js.Any])
+    
+    inline def setDynamicHashUndefined: Self = StObject.set(x, "dynamicHash", js.undefined)
+    
+    inline def setFromParent(value: Boolean): Self = StObject.set(x, "fromParent", value.asInstanceOf[js.Any])
+    
+    inline def setFromParentUndefined: Self = StObject.set(x, "fromParent", js.undefined)
+    
+    inline def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
+    
+    inline def setModuleIdUndefined: Self = StObject.set(x, "moduleId", js.undefined)
+    
+    inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    
+    inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
+  }
 }
-

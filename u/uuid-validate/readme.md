@@ -10,10 +10,10 @@ Javascript validator for UUID versions 1 through 5
 | ------------------ | :-------------: |
 | Full name          | uuid-validate |
 | Keywords           | uuid, validate, validator |
-| # releases         | 2 |
-| # dependents       | 62 |
-| # downloads        | 1727502 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 410885.6666666667 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/WatchBeam/uuid-validate)

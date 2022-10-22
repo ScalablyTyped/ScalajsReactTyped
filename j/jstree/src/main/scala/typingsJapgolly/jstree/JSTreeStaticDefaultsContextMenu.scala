@@ -1,10 +1,11 @@
 package typingsJapgolly.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSTreeStaticDefaultsContextMenu extends js.Object {
+trait JSTreeStaticDefaultsContextMenu extends StObject {
+  
   /**
     * an object of actions, or a function that accepts a node and a callback function and calls the callback function
     * with an object of actions available for that node (you can also return the items too).
@@ -32,13 +33,15 @@ trait JSTreeStaticDefaultsContextMenu extends js.Object {
     * @name $.jstree.defaults.contextmenu.items
     * @plugin contextmenu
     */
-  var items: js.Any
+  var items: Any
+  
   /**
     * a boolean indicating if the node should be selected when the context menu is invoked on it. Defaults to `true`.
     * @name $.jstree.defaults.contextmenu.select_node
     * @plugin contextmenu
     */
   var select_node: Boolean
+  
   /**
     * a boolean indicating if the menu should be shown aligned with the node. Defaults to `true`,
     * otherwise the mouse coordinates are used.
@@ -47,13 +50,19 @@ trait JSTreeStaticDefaultsContextMenu extends js.Object {
     */
   var show_at_node: Boolean
 }
-
 object JSTreeStaticDefaultsContextMenu {
-  @scala.inline
-  def apply(items: js.Any, select_node: Boolean, show_at_node: Boolean): JSTreeStaticDefaultsContextMenu = {
-    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], select_node = select_node.asInstanceOf[js.Any], show_at_node = show_at_node.asInstanceOf[js.Any])
   
+  inline def apply(items: Any, select_node: Boolean, show_at_node: Boolean): JSTreeStaticDefaultsContextMenu = {
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], select_node = select_node.asInstanceOf[js.Any], show_at_node = show_at_node.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaultsContextMenu]
   }
+  
+  extension [Self <: JSTreeStaticDefaultsContextMenu](x: Self) {
+    
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setSelect_node(value: Boolean): Self = StObject.set(x, "select_node", value.asInstanceOf[js.Any])
+    
+    inline def setShow_at_node(value: Boolean): Self = StObject.set(x, "show_at_node", value.asInstanceOf[js.Any])
+  }
 }
-

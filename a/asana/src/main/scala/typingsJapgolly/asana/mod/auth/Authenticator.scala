@@ -1,9 +1,9 @@
 package typingsJapgolly.asana.mod.auth
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A layer to abstract the differences between using different types of
@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
   * establishing credentials and applying them to outgoing requests.
   * @constructor
   */
-trait Authenticator extends js.Object {
+trait Authenticator extends StObject {
+  
   /**
     * Establishes credentials.
     *
@@ -20,6 +21,7 @@ trait Authenticator extends js.Object {
     * @return
     */
   def establishCredentials(): typingsJapgolly.bluebird.mod.^[Unit]
+  
   /**
     * Attempts to refresh credentials, if possible, given the current credentials.
     *
@@ -30,17 +32,20 @@ trait Authenticator extends js.Object {
     */
   def refreshCredentials(): typingsJapgolly.bluebird.mod.^[Boolean]
 }
-
 object Authenticator {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     establishCredentials: CallbackTo[typingsJapgolly.bluebird.mod.^[Unit]],
     refreshCredentials: CallbackTo[typingsJapgolly.bluebird.mod.^[Boolean]]
   ): Authenticator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("establishCredentials")(establishCredentials.toJsFn)
-    __obj.updateDynamic("refreshCredentials")(refreshCredentials.toJsFn)
+    val __obj = js.Dynamic.literal(establishCredentials = establishCredentials.toJsFn, refreshCredentials = refreshCredentials.toJsFn)
     __obj.asInstanceOf[Authenticator]
   }
+  
+  extension [Self <: Authenticator](x: Self) {
+    
+    inline def setEstablishCredentials(value: CallbackTo[typingsJapgolly.bluebird.mod.^[Unit]]): Self = StObject.set(x, "establishCredentials", value.toJsFn)
+    
+    inline def setRefreshCredentials(value: CallbackTo[typingsJapgolly.bluebird.mod.^[Boolean]]): Self = StObject.set(x, "refreshCredentials", value.toJsFn)
+  }
 }
-

@@ -1,228 +1,198 @@
 package typingsJapgolly.angularCore
 
-import typingsJapgolly.angularCore.helpersMod.HelperFunction
-import typingsJapgolly.angularCore.mod.BypassType
 import typingsJapgolly.angularCore.mod.GlobalTargetName
-import typingsJapgolly.angularCore.propertyNameMod.PropertyNameWithText
+import typingsJapgolly.angularCore.mod.InjectorScope
+import typingsJapgolly.angularCore.mod.ɵBypassType
+import typingsJapgolly.angularCore.schematicsUtilsTypescriptPropertyNameMod.PropertyNameWithText
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularCoreStrings {
-  @js.native
-  sealed trait `@angularSlashcommon` extends js.Object
   
   @js.native
-  sealed trait `@angularSlashplatform-browser` extends js.Object
+  sealed trait Asterisk extends StObject
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
-  sealed trait AnonChangeDetection extends js.Object
+  sealed trait `Brand for OpaqueViewState that nothing will match` extends StObject
+  inline def `Brand for OpaqueViewState that nothing will match`: `Brand for OpaqueViewState that nothing will match` = ("Brand for OpaqueViewState that nothing will match").asInstanceOf[`Brand for OpaqueViewState that nothing will match`]
   
   @js.native
-  sealed trait AnonContentQueries extends js.Object
+  sealed trait BrowserAnimations extends StObject
+  inline def BrowserAnimations: BrowserAnimations = "BrowserAnimations".asInstanceOf[BrowserAnimations]
   
   @js.native
-  sealed trait AnonExportAs extends js.Object
+  sealed trait HTML
+    extends StObject
+       with ɵBypassType
+  inline def HTML: HTML = "HTML".asInstanceOf[HTML]
   
   @js.native
-  sealed trait AnyDuringRendererMigration extends HelperFunction
+  sealed trait HostBindingOpCodes extends StObject
+  inline def HostBindingOpCodes: HostBindingOpCodes = "HostBindingOpCodes".asInstanceOf[HostBindingOpCodes]
   
   @js.native
-  sealed trait Asterisk extends js.Object
+  sealed trait I18nCreateOpCodes extends StObject
+  inline def I18nCreateOpCodes: I18nCreateOpCodes = "I18nCreateOpCodes".asInstanceOf[I18nCreateOpCodes]
   
   @js.native
-  sealed trait `Brand for OpaqueViewState that nothing will match` extends js.Object
+  sealed trait I18nRemoveOpCodes extends StObject
+  inline def I18nRemoveOpCodes: I18nRemoveOpCodes = "I18nRemoveOpCodes".asInstanceOf[I18nRemoveOpCodes]
   
   @js.native
-  sealed trait `Brand for PlayerFactory that nothing will match` extends js.Object
+  sealed trait I18nUpdateOpCodes extends StObject
+  inline def I18nUpdateOpCodes: I18nUpdateOpCodes = "I18nUpdateOpCodes".asInstanceOf[I18nUpdateOpCodes]
   
   @js.native
-  sealed trait DOCUMENT extends js.Object
+  sealed trait ICU extends StObject
+  inline def ICU: ICU = "ICU".asInstanceOf[ICU]
   
   @js.native
-  sealed trait Html extends BypassType
+  sealed trait NO_CHANGE extends StObject
+  inline def NO_CHANGE: NO_CHANGE = "NO_CHANGE".asInstanceOf[NO_CHANGE]
   
   @js.native
-  sealed trait NO_CHANGE extends js.Object
+  sealed trait NoopAnimations extends StObject
+  inline def NoopAnimations: NoopAnimations = "NoopAnimations".asInstanceOf[NoopAnimations]
   
   @js.native
-  sealed trait ResourceUrl extends BypassType
+  sealed trait ResourceURL
+    extends StObject
+       with ɵBypassType
+  inline def ResourceURL: ResourceURL = "ResourceURL".asInstanceOf[ResourceURL]
   
   @js.native
-  sealed trait Script extends BypassType
+  sealed trait Script
+    extends StObject
+       with ɵBypassType
+  inline def Script: Script = "Script".asInstanceOf[Script]
   
   @js.native
-  sealed trait Style extends BypassType
+  sealed trait Style
+    extends StObject
+       with ɵBypassType
+  inline def Style: Style = "Style".asInstanceOf[Style]
   
   @js.native
-  sealed trait Url extends BypassType
+  sealed trait TStylingRange extends StObject
+  inline def TStylingRange: TStylingRange = "TStylingRange".asInstanceOf[TStylingRange]
   
   @js.native
-  sealed trait __ngRendererAnimateHelper extends HelperFunction
+  sealed trait TrustedHTML extends StObject
+  inline def TrustedHTML: TrustedHTML = "TrustedHTML".asInstanceOf[TrustedHTML]
   
   @js.native
-  sealed trait __ngRendererAttachViewAfterHelper extends HelperFunction
+  sealed trait TrustedScript extends StObject
+  inline def TrustedScript: TrustedScript = "TrustedScript".asInstanceOf[TrustedScript]
   
   @js.native
-  sealed trait __ngRendererCreateElementHelper extends HelperFunction
+  sealed trait TrustedScriptURL extends StObject
+  inline def TrustedScriptURL: TrustedScriptURL = "TrustedScriptURL".asInstanceOf[TrustedScriptURL]
   
   @js.native
-  sealed trait __ngRendererCreateTemplateAnchorHelper extends HelperFunction
+  sealed trait URL
+    extends StObject
+       with ɵBypassType
+  inline def URL: URL = "URL".asInstanceOf[URL]
   
   @js.native
-  sealed trait __ngRendererCreateTextHelper extends HelperFunction
+  sealed trait any extends StObject
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait __ngRendererDestroyViewHelper extends HelperFunction
+  sealed trait `array-map` extends StObject
+  inline def `array-map`: `array-map` = "array-map".asInstanceOf[`array-map`]
   
   @js.native
-  sealed trait __ngRendererDetachViewHelper extends HelperFunction
+  sealed trait body
+    extends StObject
+       with GlobalTargetName
+  inline def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait __ngRendererProjectNodesHelper extends HelperFunction
+  sealed trait component extends StObject
+  inline def component: component = "component".asInstanceOf[component]
   
   @js.native
-  sealed trait __ngRendererSetElementAttributeHelper extends HelperFunction
+  sealed trait directive extends StObject
+  inline def directive: directive = "directive".asInstanceOf[directive]
   
   @js.native
-  sealed trait __ngRendererSplitNamespaceHelper extends HelperFunction
+  sealed trait document
+    extends StObject
+       with GlobalTargetName
+  inline def document: document = "document".asInstanceOf[document]
   
   @js.native
-  sealed trait _empty extends js.Object
+  sealed trait element extends StObject
+  inline def element: element = "element".asInstanceOf[element]
   
   @js.native
-  sealed trait any extends js.Object
+  sealed trait environment
+    extends StObject
+       with InjectorScope
+  inline def environment: environment = "environment".asInstanceOf[environment]
   
   @js.native
-  sealed trait body extends GlobalTargetName
+  sealed trait escapedText
+    extends StObject
+       with PropertyNameWithText
+  inline def escapedText: escapedText = "escapedText".asInstanceOf[escapedText]
   
   @js.native
-  sealed trait comment extends js.Object
+  sealed trait invalid extends StObject
+  inline def invalid: invalid = "invalid".asInstanceOf[invalid]
   
   @js.native
-  sealed trait component extends js.Object
+  sealed trait isInJSDocNamespace
+    extends StObject
+       with PropertyNameWithText
+  inline def isInJSDocNamespace: isInJSDocNamespace = "isInJSDocNamespace".asInstanceOf[isInJSDocNamespace]
   
   @js.native
-  sealed trait document_ extends GlobalTargetName
+  sealed trait ngmodule extends StObject
+  inline def ngmodule: ngmodule = "ngmodule".asInstanceOf[ngmodule]
   
   @js.native
-  sealed trait element extends js.Object
+  sealed trait noop extends StObject
+  inline def noop: noop = "noop".asInstanceOf[noop]
   
   @js.native
-  sealed trait `en-US` extends js.Object
+  sealed trait originalKeywordKind
+    extends StObject
+       with PropertyNameWithText
+  inline def originalKeywordKind: originalKeywordKind = "originalKeywordKind".asInstanceOf[originalKeywordKind]
   
   @js.native
-  sealed trait escapedText extends PropertyNameWithText
+  sealed trait pipe extends StObject
+  inline def pipe: pipe = "pipe".asInstanceOf[pipe]
   
   @js.native
-  sealed trait isInJSDocNamespace extends PropertyNameWithText
+  sealed trait platform
+    extends StObject
+       with InjectorScope
+  inline def platform: platform = "platform".asInstanceOf[platform]
   
   @js.native
-  sealed trait noop extends js.Object
+  sealed trait root
+    extends StObject
+       with InjectorScope
+  inline def root: root = "root".asInstanceOf[root]
   
   @js.native
-  sealed trait originalKeywordKind extends PropertyNameWithText
+  sealed trait text
+    extends StObject
+       with PropertyNameWithText
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait root extends js.Object
+  sealed trait window
+    extends StObject
+       with GlobalTargetName
+  inline def window: window = "window".asInstanceOf[window]
   
   @js.native
-  sealed trait text extends PropertyNameWithText
-  
-  @js.native
-  sealed trait window extends GlobalTargetName
-  
-  @js.native
-  sealed trait zoneDotjs extends js.Object
-  
-  @js.native
-  sealed trait ɵɵBaseDef extends js.Object
-  
-  @scala.inline
-  def `@angularSlashcommon`: `@angularSlashcommon` = "@angular/common".asInstanceOf[`@angularSlashcommon`]
-  @scala.inline
-  def `@angularSlashplatform-browser`: `@angularSlashplatform-browser` = "@angular/platform-browser".asInstanceOf[`@angularSlashplatform-browser`]
-  @scala.inline
-  def AnonChangeDetection: AnonChangeDetection = "AnonChangeDetection".asInstanceOf[AnonChangeDetection]
-  @scala.inline
-  def AnonContentQueries: AnonContentQueries = "AnonContentQueries".asInstanceOf[AnonContentQueries]
-  @scala.inline
-  def AnonExportAs: AnonExportAs = "AnonExportAs".asInstanceOf[AnonExportAs]
-  @scala.inline
-  def AnyDuringRendererMigration: AnyDuringRendererMigration = "AnyDuringRendererMigration".asInstanceOf[AnyDuringRendererMigration]
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  @scala.inline
-  def `Brand for OpaqueViewState that nothing will match`: `Brand for OpaqueViewState that nothing will match` = "Brand for OpaqueViewState that nothing will match".asInstanceOf[`Brand for OpaqueViewState that nothing will match`]
-  @scala.inline
-  def `Brand for PlayerFactory that nothing will match`: `Brand for PlayerFactory that nothing will match` = "Brand for PlayerFactory that nothing will match".asInstanceOf[`Brand for PlayerFactory that nothing will match`]
-  @scala.inline
-  def DOCUMENT: DOCUMENT = "DOCUMENT".asInstanceOf[DOCUMENT]
-  @scala.inline
-  def Html: Html = "Html".asInstanceOf[Html]
-  @scala.inline
-  def NO_CHANGE: NO_CHANGE = "NO_CHANGE".asInstanceOf[NO_CHANGE]
-  @scala.inline
-  def ResourceUrl: ResourceUrl = "ResourceUrl".asInstanceOf[ResourceUrl]
-  @scala.inline
-  def Script: Script = "Script".asInstanceOf[Script]
-  @scala.inline
-  def Style: Style = "Style".asInstanceOf[Style]
-  @scala.inline
-  def Url: Url = "Url".asInstanceOf[Url]
-  @scala.inline
-  def __ngRendererAnimateHelper: __ngRendererAnimateHelper = "__ngRendererAnimateHelper".asInstanceOf[__ngRendererAnimateHelper]
-  @scala.inline
-  def __ngRendererAttachViewAfterHelper: __ngRendererAttachViewAfterHelper = "__ngRendererAttachViewAfterHelper".asInstanceOf[__ngRendererAttachViewAfterHelper]
-  @scala.inline
-  def __ngRendererCreateElementHelper: __ngRendererCreateElementHelper = "__ngRendererCreateElementHelper".asInstanceOf[__ngRendererCreateElementHelper]
-  @scala.inline
-  def __ngRendererCreateTemplateAnchorHelper: __ngRendererCreateTemplateAnchorHelper = "__ngRendererCreateTemplateAnchorHelper".asInstanceOf[__ngRendererCreateTemplateAnchorHelper]
-  @scala.inline
-  def __ngRendererCreateTextHelper: __ngRendererCreateTextHelper = "__ngRendererCreateTextHelper".asInstanceOf[__ngRendererCreateTextHelper]
-  @scala.inline
-  def __ngRendererDestroyViewHelper: __ngRendererDestroyViewHelper = "__ngRendererDestroyViewHelper".asInstanceOf[__ngRendererDestroyViewHelper]
-  @scala.inline
-  def __ngRendererDetachViewHelper: __ngRendererDetachViewHelper = "__ngRendererDetachViewHelper".asInstanceOf[__ngRendererDetachViewHelper]
-  @scala.inline
-  def __ngRendererProjectNodesHelper: __ngRendererProjectNodesHelper = "__ngRendererProjectNodesHelper".asInstanceOf[__ngRendererProjectNodesHelper]
-  @scala.inline
-  def __ngRendererSetElementAttributeHelper: __ngRendererSetElementAttributeHelper = "__ngRendererSetElementAttributeHelper".asInstanceOf[__ngRendererSetElementAttributeHelper]
-  @scala.inline
-  def __ngRendererSplitNamespaceHelper: __ngRendererSplitNamespaceHelper = "__ngRendererSplitNamespaceHelper".asInstanceOf[__ngRendererSplitNamespaceHelper]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
-  @scala.inline
-  def comment: comment = "comment".asInstanceOf[comment]
-  @scala.inline
-  def component: component = "component".asInstanceOf[component]
-  @scala.inline
-  def document_ : document_ = "document".asInstanceOf[document_]
-  @scala.inline
-  def element: element = "element".asInstanceOf[element]
-  @scala.inline
-  def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
-  @scala.inline
-  def escapedText: escapedText = "escapedText".asInstanceOf[escapedText]
-  @scala.inline
-  def isInJSDocNamespace: isInJSDocNamespace = "isInJSDocNamespace".asInstanceOf[isInJSDocNamespace]
-  @scala.inline
-  def noop: noop = "noop".asInstanceOf[noop]
-  @scala.inline
-  def originalKeywordKind: originalKeywordKind = "originalKeywordKind".asInstanceOf[originalKeywordKind]
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
-  @scala.inline
-  def zoneDotjs: zoneDotjs = "zone.js".asInstanceOf[zoneDotjs]
-  @scala.inline
-  def ɵɵBaseDef: ɵɵBaseDef = "\u0275\u0275BaseDef".asInstanceOf[ɵɵBaseDef]
+  sealed trait zoneDotjs extends StObject
+  inline def zoneDotjs: zoneDotjs = "zone.js".asInstanceOf[zoneDotjs]
 }
-

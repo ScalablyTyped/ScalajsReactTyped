@@ -1,14 +1,23 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.DidChangeConfigurationParams
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.DidChangeConfigurationRegistrationOptions
+import typingsJapgolly.vscodeLanguageclient.vscodeLanguageclientStrings.workspaceSlashdidChangeConfiguration
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.DidChangeConfigurationParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.DidChangeConfigurationRegistrationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "DidChangeConfigurationNotification")
-@js.native
-object DidChangeConfigurationNotification extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.NotificationType[DidChangeConfigurationParams, DidChangeConfigurationRegistrationOptions] = js.native
+object DidChangeConfigurationNotification {
+  
+  @JSImport("vscode-languageclient", "DidChangeConfigurationNotification.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageclient", "DidChangeConfigurationNotification.method")
+  @js.native
+  val method: workspaceSlashdidChangeConfiguration = js.native
+  
+  @JSImport("vscode-languageclient", "DidChangeConfigurationNotification.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[DidChangeConfigurationParams, DidChangeConfigurationRegistrationOptions] = js.native
 }
-

@@ -2,13 +2,15 @@ package typingsJapgolly.d
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.std.PropertyDescriptorMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("d/lazy", JSImport.Namespace)
-@js.native
-object lazyMod extends js.Object {
-  def apply(obj: StringDictionary[js.PropertyDescriptor]): PropertyDescriptorMap = js.native
+object lazyMod {
+  
+  inline def apply(obj: StringDictionary[js.PropertyDescriptor]): PropertyDescriptorMap = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[PropertyDescriptorMap]
+  
+  @JSImport("d/lazy", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

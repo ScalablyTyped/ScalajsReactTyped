@@ -1,161 +1,173 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.devextreme.AnonAggregateByCategory
-import typingsJapgolly.devextreme.AnonAllowSlidersSwap
-import typingsJapgolly.devextreme.AnonBarGroupPadding
-import typingsJapgolly.devextreme.AnonCancelComponentData
-import typingsJapgolly.devextreme.AnonComponentTElementDxElementModelAny
-import typingsJapgolly.devextreme.AnonElement
-import typingsJapgolly.devextreme.AnonElementEventModel
-import typingsJapgolly.devextreme.AnonFormatModel
-import typingsJapgolly.devextreme.AnonImage
-import typingsJapgolly.devextreme.AnonInvalidRangeColor
-import typingsJapgolly.devextreme.AnonModel
-import typingsJapgolly.devextreme.AnonName
-import typingsJapgolly.devextreme.AnonOpacity
-import typingsJapgolly.devextreme.AnonOpacityWidth
-import typingsJapgolly.devextreme.AnonRight
-import typingsJapgolly.devextreme.AnonTargetAny
-import typingsJapgolly.devextreme.devextremeStrings.auto
-import typingsJapgolly.devextreme.devextremeStrings.genericDotcarmine
-import typingsJapgolly.devextreme.devextremeStrings.genericDotcontrast
-import typingsJapgolly.devextreme.devextremeStrings.genericDotdark
-import typingsJapgolly.devextreme.devextremeStrings.genericDotdarkmoon
-import typingsJapgolly.devextreme.devextremeStrings.genericDotdarkviolet
-import typingsJapgolly.devextreme.devextremeStrings.genericDotgreenmist
-import typingsJapgolly.devextreme.devextremeStrings.genericDotlight
-import typingsJapgolly.devextreme.devextremeStrings.genericDotsoftblue
-import typingsJapgolly.devextreme.devextremeStrings.ios7Dotdefault
-import typingsJapgolly.devextreme.devextremeStrings.keep
-import typingsJapgolly.devextreme.devextremeStrings.materialDotblueDotlight
-import typingsJapgolly.devextreme.devextremeStrings.materialDotlimeDotlight
-import typingsJapgolly.devextreme.devextremeStrings.materialDotorangeDotlight
-import typingsJapgolly.devextreme.devextremeStrings.materialDotpurpleDotlight
-import typingsJapgolly.devextreme.devextremeStrings.materialDottealDotlight
-import typingsJapgolly.devextreme.devextremeStrings.reset
-import typingsJapgolly.devextreme.devextremeStrings.shift
-import typingsJapgolly.devextreme.mod.DevExpress.data.DataSource
-import typingsJapgolly.devextreme.mod.DevExpress.data.DataSourceOptions
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.devextreme.anon.AggregateByCategory
+import typingsJapgolly.devextreme.anon.AllowSlidersSwap
+import typingsJapgolly.devextreme.anon.BarGroupPadding
+import typingsJapgolly.devextreme.anon.Image
+import typingsJapgolly.devextreme.anon.InvalidRangeColor
+import typingsJapgolly.devextreme.anon.LeftRight
+import typingsJapgolly.devextreme.anon.OpacityWidth
+import typingsJapgolly.devextreme.anon.`4`
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.VisualRangeUpdateMode
+import typingsJapgolly.devextreme.mod.DevExpress.data.DataSource.DataSourceLike
+import typingsJapgolly.devextreme.mod.DevExpress.viz.dxRangeSelector.ValueChangedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxRangeSelectorOptions extends BaseWidgetOptions[dxRangeSelector] {
-  /** Specifies the options for the range selector's background. */
-  var background: js.UndefOr[AnonImage] = js.undefined
-  /** Specifies the RangeSelector's behavior options. */
-  var behavior: js.UndefOr[AnonAllowSlidersSwap] = js.undefined
-  /** Specifies the options required to display a chart as the range selector's background. */
-  var chart: js.UndefOr[AnonBarGroupPadding] = js.undefined
-  /** Specifies the color of the parent page element. */
+trait dxRangeSelectorOptions
+  extends StObject
+     with BaseWidgetOptions[dxRangeSelector] {
+  
+  /**
+    * Specifies the properties for the range selector&apos;s background.
+    */
+  var background: js.UndefOr[Image] = js.undefined
+  
+  /**
+    * Specifies the RangeSelector&apos;s behavior properties.
+    */
+  var behavior: js.UndefOr[AllowSlidersSwap] = js.undefined
+  
+  /**
+    * Specifies the properties required to display a chart as the range selector&apos;s background.
+    */
+  var chart: js.UndefOr[BarGroupPadding] = js.undefined
+  
+  /**
+    * Specifies the color of the parent page element.
+    */
   var containerBackgroundColor: js.UndefOr[String] = js.undefined
-  /** Specifies a data source for the scale values and for the chart at the background. */
-  var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.undefined
-  /** Specifies the data source field that provides data for the scale. */
+  
+  /**
+    * Specifies a data source for the scale values and for the chart at the background.
+    */
+  var dataSource: js.UndefOr[(DataSourceLike[Any, Any]) | Null] = js.undefined
+  
+  /**
+    * Specifies the data source field that provides data for the scale.
+    */
   var dataSourceField: js.UndefOr[String] = js.undefined
-  /** Range selector's indent options. */
-  var indent: js.UndefOr[AnonRight] = js.undefined
-  /** A function that is executed after the widget's value is changed. */
-  var onValueChanged: js.UndefOr[js.Function1[/* e */ AnonElementEventModel, _]] = js.undefined
-  /** Specifies options of the range selector's scale. */
-  var scale: js.UndefOr[AnonAggregateByCategory] = js.undefined
-  /** Specifies the color of the selected range. */
+  
+  /**
+    * Range selector&apos;s indent properties.
+    */
+  var indent: js.UndefOr[LeftRight] = js.undefined
+  
+  /**
+    * A function that is executed after the UI component&apos;s value is changed.
+    */
+  var onValueChanged: js.UndefOr[js.Function1[/* e */ ValueChangedEvent, Unit]] = js.undefined
+  
+  /**
+    * Specifies properties of the range selector&apos;s scale.
+    */
+  var scale: js.UndefOr[AggregateByCategory] = js.undefined
+  
+  /**
+    * Specifies the color of the selected range.
+    */
   var selectedRangeColor: js.UndefOr[String] = js.undefined
-  /** Specifies how the selected range should behave when data is updated. Applies only when the RangeSelector is bound to a data source. */
-  var selectedRangeUpdateMode: js.UndefOr[auto | keep | reset | shift] = js.undefined
-  /** Specifies range selector shutter options. */
-  var shutter: js.UndefOr[AnonOpacity] = js.undefined
-  /** Specifies the appearance of the range selector's slider handles. */
-  var sliderHandle: js.UndefOr[AnonOpacityWidth] = js.undefined
-  /** Defines the options of the range selector slider markers. */
-  var sliderMarker: js.UndefOr[AnonInvalidRangeColor] = js.undefined
-  /** The selected range (initial or current). Equals the entire scale when not set. */
+  
+  /**
+    * Specifies how the selected range should behave when data is updated. Applies only when the RangeSelector is bound to a data source.
+    */
+  var selectedRangeUpdateMode: js.UndefOr[VisualRangeUpdateMode] = js.undefined
+  
+  /**
+    * Specifies range selector shutter properties.
+    */
+  var shutter: js.UndefOr[`4`] = js.undefined
+  
+  /**
+    * Specifies the appearance of the range selector&apos;s slider handles.
+    */
+  var sliderHandle: js.UndefOr[OpacityWidth] = js.undefined
+  
+  /**
+    * Defines the properties of the range selector slider markers.
+    */
+  var sliderMarker: js.UndefOr[InvalidRangeColor] = js.undefined
+  
+  /**
+    * The selected range (initial or current). Equals the entire scale when not set.
+    */
   var value: js.UndefOr[(js.Array[Double | String | js.Date]) | VizRange] = js.undefined
 }
-
 object dxRangeSelectorOptions {
-  @scala.inline
-  def apply(
-    background: AnonImage = null,
-    behavior: AnonAllowSlidersSwap = null,
-    bindingOptions: js.Any = null,
-    chart: AnonBarGroupPadding = null,
-    containerBackgroundColor: String = null,
-    dataSource: js.Array[_] | DataSource | DataSourceOptions | String = null,
-    dataSourceField: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    export: BaseWidgetExport = null,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    indent: AnonRight = null,
-    loadingIndicator: BaseWidgetLoadingIndicator = null,
-    margin: BaseWidgetMargin = null,
-    onDisposing: /* e */ AnonModel[dxRangeSelector] => CallbackTo[js.Any] = null,
-    onDrawn: /* e */ AnonComponentTElementDxElementModelAny[dxRangeSelector] => CallbackTo[js.Any] = null,
-    onExported: /* e */ AnonComponentTElementDxElementModelAny[dxRangeSelector] => CallbackTo[js.Any] = null,
-    onExporting: /* e */ AnonFormatModel[dxRangeSelector] => CallbackTo[js.Any] = null,
-    onFileSaving: /* e */ AnonCancelComponentData[dxRangeSelector] => CallbackTo[js.Any] = null,
-    onIncidentOccurred: /* e */ AnonTargetAny[dxRangeSelector] => CallbackTo[js.Any] = null,
-    onInitialized: /* e */ AnonElement[dxRangeSelector] => CallbackTo[js.Any] = null,
-    onOptionChanged: /* e */ AnonName[dxRangeSelector] => CallbackTo[js.Any] = null,
-    onValueChanged: /* e */ AnonElementEventModel => CallbackTo[js.Any] = null,
-    pathModified: js.UndefOr[Boolean] = js.undefined,
-    redrawOnResize: js.UndefOr[Boolean] = js.undefined,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    scale: AnonAggregateByCategory = null,
-    selectedRangeColor: String = null,
-    selectedRangeUpdateMode: auto | keep | reset | shift = null,
-    shutter: AnonOpacity = null,
-    size: BaseWidgetSize = null,
-    sliderHandle: AnonOpacityWidth = null,
-    sliderMarker: AnonInvalidRangeColor = null,
-    theme: genericDotdark | genericDotlight | genericDotcontrast | ios7Dotdefault | genericDotcarmine | genericDotdarkmoon | genericDotdarkviolet | genericDotgreenmist | genericDotsoftblue | materialDotblueDotlight | materialDotlimeDotlight | materialDotorangeDotlight | materialDotpurpleDotlight | materialDottealDotlight = null,
-    title: BaseWidgetTitle | String = null,
-    tooltip: BaseWidgetTooltip = null,
-    value: (js.Array[Double | String | js.Date]) | VizRange = null,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxRangeSelectorOptions = {
+  
+  inline def apply(): dxRangeSelectorOptions = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (behavior != null) __obj.updateDynamic("behavior")(behavior.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
-    if (containerBackgroundColor != null) __obj.updateDynamic("containerBackgroundColor")(containerBackgroundColor.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataSourceField != null) __obj.updateDynamic("dataSourceField")(dataSourceField.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
-    if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonModel[typingsJapgolly.devextreme.mod.DevExpress.viz.dxRangeSelector]) => onDisposing(t0).runNow()))
-    if (onDrawn != null) __obj.updateDynamic("onDrawn")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonComponentTElementDxElementModelAny[typingsJapgolly.devextreme.mod.DevExpress.viz.dxRangeSelector]) => onDrawn(t0).runNow()))
-    if (onExported != null) __obj.updateDynamic("onExported")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonComponentTElementDxElementModelAny[typingsJapgolly.devextreme.mod.DevExpress.viz.dxRangeSelector]) => onExported(t0).runNow()))
-    if (onExporting != null) __obj.updateDynamic("onExporting")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonFormatModel[typingsJapgolly.devextreme.mod.DevExpress.viz.dxRangeSelector]) => onExporting(t0).runNow()))
-    if (onFileSaving != null) __obj.updateDynamic("onFileSaving")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonCancelComponentData[typingsJapgolly.devextreme.mod.DevExpress.viz.dxRangeSelector]) => onFileSaving(t0).runNow()))
-    if (onIncidentOccurred != null) __obj.updateDynamic("onIncidentOccurred")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonTargetAny[typingsJapgolly.devextreme.mod.DevExpress.viz.dxRangeSelector]) => onIncidentOccurred(t0).runNow()))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonElement[typingsJapgolly.devextreme.mod.DevExpress.viz.dxRangeSelector]) => onInitialized(t0).runNow()))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonName[typingsJapgolly.devextreme.mod.DevExpress.viz.dxRangeSelector]) => onOptionChanged(t0).runNow()))
-    if (onValueChanged != null) __obj.updateDynamic("onValueChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonElementEventModel) => onValueChanged(t0).runNow()))
-    if (!js.isUndefined(pathModified)) __obj.updateDynamic("pathModified")(pathModified.asInstanceOf[js.Any])
-    if (!js.isUndefined(redrawOnResize)) __obj.updateDynamic("redrawOnResize")(redrawOnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (selectedRangeColor != null) __obj.updateDynamic("selectedRangeColor")(selectedRangeColor.asInstanceOf[js.Any])
-    if (selectedRangeUpdateMode != null) __obj.updateDynamic("selectedRangeUpdateMode")(selectedRangeUpdateMode.asInstanceOf[js.Any])
-    if (shutter != null) __obj.updateDynamic("shutter")(shutter.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (sliderHandle != null) __obj.updateDynamic("sliderHandle")(sliderHandle.asInstanceOf[js.Any])
-    if (sliderMarker != null) __obj.updateDynamic("sliderMarker")(sliderMarker.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxRangeSelectorOptions]
   }
+  
+  extension [Self <: dxRangeSelectorOptions](x: Self) {
+    
+    inline def setBackground(value: Image): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setBehavior(value: AllowSlidersSwap): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    
+    inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+    
+    inline def setChart(value: BarGroupPadding): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    
+    inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
+    
+    inline def setContainerBackgroundColor(value: String): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setContainerBackgroundColorUndefined: Self = StObject.set(x, "containerBackgroundColor", js.undefined)
+    
+    inline def setDataSource(value: DataSourceLike[Any, Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceField(value: String): Self = StObject.set(x, "dataSourceField", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceFieldUndefined: Self = StObject.set(x, "dataSourceField", js.undefined)
+    
+    inline def setDataSourceNull: Self = StObject.set(x, "dataSource", null)
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
+    
+    inline def setIndent(value: LeftRight): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    
+    inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+    
+    inline def setOnValueChanged(value: /* e */ ValueChangedEvent => Callback): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1((t0: /* e */ ValueChangedEvent) => value(t0).runNow()))
+    
+    inline def setOnValueChangedUndefined: Self = StObject.set(x, "onValueChanged", js.undefined)
+    
+    inline def setScale(value: AggregateByCategory): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setSelectedRangeColor(value: String): Self = StObject.set(x, "selectedRangeColor", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedRangeColorUndefined: Self = StObject.set(x, "selectedRangeColor", js.undefined)
+    
+    inline def setSelectedRangeUpdateMode(value: VisualRangeUpdateMode): Self = StObject.set(x, "selectedRangeUpdateMode", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedRangeUpdateModeUndefined: Self = StObject.set(x, "selectedRangeUpdateMode", js.undefined)
+    
+    inline def setShutter(value: `4`): Self = StObject.set(x, "shutter", value.asInstanceOf[js.Any])
+    
+    inline def setShutterUndefined: Self = StObject.set(x, "shutter", js.undefined)
+    
+    inline def setSliderHandle(value: OpacityWidth): Self = StObject.set(x, "sliderHandle", value.asInstanceOf[js.Any])
+    
+    inline def setSliderHandleUndefined: Self = StObject.set(x, "sliderHandle", js.undefined)
+    
+    inline def setSliderMarker(value: InvalidRangeColor): Self = StObject.set(x, "sliderMarker", value.asInstanceOf[js.Any])
+    
+    inline def setSliderMarkerUndefined: Self = StObject.set(x, "sliderMarker", js.undefined)
+    
+    inline def setValue(value: (js.Array[Double | String | js.Date]) | VizRange): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setValueVarargs(value: (Double | String | js.Date)*): Self = StObject.set(x, "value", js.Array(value*))
+  }
 }
-

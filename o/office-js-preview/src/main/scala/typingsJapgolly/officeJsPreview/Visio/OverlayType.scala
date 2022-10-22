@@ -1,13 +1,11 @@
 package typingsJapgolly.officeJsPreview.Visio
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OverlayType extends js.Object
-
+sealed trait OverlayType extends StObject
 /**
   *
   * Represents the type of the overlay.
@@ -16,14 +14,17 @@ sealed trait OverlayType extends js.Object
   */
 @JSGlobal("Visio.OverlayType")
 @js.native
-object OverlayType extends js.Object {
+object OverlayType extends StObject {
+  
   /**
     *
     * html
     *
     */
   @js.native
-  sealed trait html extends OverlayType
+  sealed trait html
+    extends StObject
+       with OverlayType
   
   /**
     *
@@ -31,7 +32,9 @@ object OverlayType extends js.Object {
     *
     */
   @js.native
-  sealed trait image extends OverlayType
+  sealed trait image
+    extends StObject
+       with OverlayType
   
   /**
     *
@@ -39,18 +42,7 @@ object OverlayType extends js.Object {
     *
     */
   @js.native
-  sealed trait text extends OverlayType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[OverlayType with String] = js.native
-  /* "Html" */ @js.native
-  object html extends TopLevel[html with String]
-  
-  /* "Image" */ @js.native
-  object image extends TopLevel[image with String]
-  
-  /* "Text" */ @js.native
-  object text extends TopLevel[text with String]
-  
+  sealed trait text
+    extends StObject
+       with OverlayType
 }
-

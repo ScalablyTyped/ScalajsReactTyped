@@ -1,44 +1,32 @@
 package typingsJapgolly.ace.AceAjax
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OptionProvider extends js.Object {
+@js.native
+trait OptionProvider extends StObject {
+  
   /**
     * Get a Configuration Option
     **/
-  def getOption(name: String): js.Any
+  def getOption(name: String): Any = js.native
+  
   /**
     * Get Configuration Options
     **/
-  def getOptions(): js.Any
+  def getOptions(): StringDictionary[Any] = js.native
+  def getOptions(optionNames: js.Array[String]): StringDictionary[Any] = js.native
+  def getOptions(optionNames: StringDictionary[Any]): StringDictionary[Any] = js.native
+  
   /**
     * Sets a Configuration Option
     **/
-  def setOption(optionName: String, optionValue: js.Any): Unit
+  def setOption(optionName: String, optionValue: Any): Unit = js.native
+  
   /**
     * Sets Configuration Options
     **/
-  def setOptions(keyValueTuples: js.Any): Unit
+  def setOptions(keyValueTuples: StringDictionary[Any]): Unit = js.native
 }
-
-object OptionProvider {
-  @scala.inline
-  def apply(
-    getOption: String => CallbackTo[js.Any],
-    getOptions: CallbackTo[js.Any],
-    setOption: (String, js.Any) => Callback,
-    setOptions: js.Any => Callback
-  ): OptionProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getOption")(js.Any.fromFunction1((t0: java.lang.String) => getOption(t0).runNow()))
-    __obj.updateDynamic("getOptions")(getOptions.toJsFn)
-    __obj.updateDynamic("setOption")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Any) => setOption(t0, t1).runNow()))
-    __obj.updateDynamic("setOptions")(js.Any.fromFunction1((t0: js.Any) => setOptions(t0).runNow()))
-    __obj.asInstanceOf[OptionProvider]
-  }
-}
-

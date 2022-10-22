@@ -1,20 +1,23 @@
 package typingsJapgolly.node.http2Mod
 
-import typingsJapgolly.node.urlMod.URL_
+import typingsJapgolly.node.nodeColonurlMod.URL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AlternativeServiceOptions extends js.Object {
-  var origin: Double | String | URL_
-}
-
-object AlternativeServiceOptions {
-  @scala.inline
-  def apply(origin: Double | String | URL_): AlternativeServiceOptions = {
-    val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
+trait AlternativeServiceOptions extends StObject {
   
+  var origin: Double | String | URL
+}
+object AlternativeServiceOptions {
+  
+  inline def apply(origin: Double | String | URL): AlternativeServiceOptions = {
+    val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlternativeServiceOptions]
   }
+  
+  extension [Self <: AlternativeServiceOptions](x: Self) {
+    
+    inline def setOrigin(value: Double | String | URL): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+  }
 }
-

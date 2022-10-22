@@ -1,41 +1,50 @@
 package typingsJapgolly.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the worksheet search criteria to be used.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
-trait WorksheetSearchCriteria extends js.Object {
+trait WorksheetSearchCriteria extends StObject {
+  
   /**
-    *
-    * Specifies whether the match needs to be complete or partial.
+    * Specifies if the match needs to be complete or partial.
     A complete match matches the entire contents of the cell. A partial match matches a substring within the content of the cell (e.g., `cat` partially matches `caterpillar` and `scatter`).
-    Default is false (partial).
+    Default is `false` (partial).
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var completeMatch: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the match is case-sensitive. Default is `false` (case-insensitive).
     *
-    * Specifies whether the match is case sensitive. Default is false (insensitive).
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var matchCase: js.UndefOr[Boolean] = js.undefined
 }
-
 object WorksheetSearchCriteria {
-  @scala.inline
-  def apply(completeMatch: js.UndefOr[Boolean] = js.undefined, matchCase: js.UndefOr[Boolean] = js.undefined): WorksheetSearchCriteria = {
+  
+  inline def apply(): WorksheetSearchCriteria = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(completeMatch)) __obj.updateDynamic("completeMatch")(completeMatch.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetSearchCriteria]
   }
+  
+  extension [Self <: WorksheetSearchCriteria](x: Self) {
+    
+    inline def setCompleteMatch(value: Boolean): Self = StObject.set(x, "completeMatch", value.asInstanceOf[js.Any])
+    
+    inline def setCompleteMatchUndefined: Self = StObject.set(x, "completeMatch", js.undefined)
+    
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+    
+    inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+  }
 }
-

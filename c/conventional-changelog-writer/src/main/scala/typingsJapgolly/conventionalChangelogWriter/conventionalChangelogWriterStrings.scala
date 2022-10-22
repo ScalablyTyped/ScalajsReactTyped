@@ -1,19 +1,12 @@
 package typingsJapgolly.conventionalChangelogWriter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conventionalChangelogWriterStrings {
-  @js.native
-  sealed trait Omit extends js.Object
   
   @js.native
-  sealed trait raw extends js.Object
-  
-  @scala.inline
-  def Omit: Omit = "Omit".asInstanceOf[Omit]
-  @scala.inline
-  def raw: raw = "raw".asInstanceOf[raw]
+  sealed trait raw extends StObject
+  inline def raw: raw = "raw".asInstanceOf[raw]
 }
-

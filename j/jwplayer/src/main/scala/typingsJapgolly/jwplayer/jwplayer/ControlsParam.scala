@@ -1,19 +1,22 @@
 package typingsJapgolly.jwplayer.jwplayer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ControlsParam extends js.Object {
+trait ControlsParam extends StObject {
+  
   var controls: Boolean
 }
-
 object ControlsParam {
-  @scala.inline
-  def apply(controls: Boolean): ControlsParam = {
-    val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any])
   
+  inline def apply(controls: Boolean): ControlsParam = {
+    val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlsParam]
   }
+  
+  extension [Self <: ControlsParam](x: Self) {
+    
+    inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+  }
 }
-

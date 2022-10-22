@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.Graphics.Printing.OptionDetails
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionChangedEventArgs")
-@js.native
-class PrintTaskOptionChangedEventArgs () extends IPrintTaskOptionChangedEventArgs {
-  /* CompleteClass */
-  override var optionId: js.Any = js.native
+trait PrintTaskOptionChangedEventArgs
+  extends StObject
+     with IPrintTaskOptionChangedEventArgs
+object PrintTaskOptionChangedEventArgs {
+  
+  inline def apply(optionId: Any): PrintTaskOptionChangedEventArgs = {
+    val __obj = js.Dynamic.literal(optionId = optionId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrintTaskOptionChangedEventArgs]
+  }
 }
-

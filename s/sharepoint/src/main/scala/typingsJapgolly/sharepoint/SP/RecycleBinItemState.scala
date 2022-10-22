@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RecycleBinItemState extends js.Object
-
+sealed trait RecycleBinItemState extends StObject
 @JSGlobal("SP.RecycleBinItemState")
 @js.native
-object RecycleBinItemState extends js.Object {
-  @js.native
-  sealed trait firstStageRecycleBin extends RecycleBinItemState
+object RecycleBinItemState extends StObject {
   
   @js.native
-  sealed trait none extends RecycleBinItemState
+  sealed trait firstStageRecycleBin
+    extends StObject
+       with RecycleBinItemState
   
   @js.native
-  sealed trait secondStageRecycleBin extends RecycleBinItemState
+  sealed trait none
+    extends StObject
+       with RecycleBinItemState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RecycleBinItemState with Double] = js.native
-  /* 1 */ @js.native
-  object firstStageRecycleBin extends TopLevel[firstStageRecycleBin with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object secondStageRecycleBin extends TopLevel[secondStageRecycleBin with Double]
-  
+  @js.native
+  sealed trait secondStageRecycleBin
+    extends StObject
+       with RecycleBinItemState
 }
-

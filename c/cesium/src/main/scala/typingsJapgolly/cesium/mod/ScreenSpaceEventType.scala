@@ -1,107 +1,150 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ScreenSpaceEventType extends js.Object
-
+sealed trait ScreenSpaceEventType extends StObject
 @JSImport("cesium", "ScreenSpaceEventType")
 @js.native
-object ScreenSpaceEventType extends js.Object {
-  @js.native
-  sealed trait LEFT_CLICK extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait LEFT_DOUBLE_CLICK extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait LEFT_DOWN extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait LEFT_UP extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait MIDDLE_CLICK extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait MIDDLE_DOWN extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait MIDDLE_UP extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait MOUSE_MOVE extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait PINCH_END extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait PINCH_MOVE extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait PINCH_START extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait RIGHT_CLICK extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait RIGHT_DOWN extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait RIGHT_UP extends ScreenSpaceEventType
-  
-  @js.native
-  sealed trait WHEEL extends ScreenSpaceEventType
+object ScreenSpaceEventType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ScreenSpaceEventType with Double] = js.native
-  /* 2 */ @js.native
-  object LEFT_CLICK extends TopLevel[LEFT_CLICK with Double]
+  def apply(value: Double): js.UndefOr[ScreenSpaceEventType & Double] = js.native
   
-  /* 3 */ @js.native
-  object LEFT_DOUBLE_CLICK extends TopLevel[LEFT_DOUBLE_CLICK with Double]
+  /**
+    * Represents a mouse left click event.
+    */
+  @js.native
+  sealed trait LEFT_CLICK
+    extends StObject
+       with ScreenSpaceEventType
+  /* 2 */ val LEFT_CLICK: typingsJapgolly.cesium.mod.ScreenSpaceEventType.LEFT_CLICK & Double = js.native
   
-  /* 0 */ @js.native
-  object LEFT_DOWN extends TopLevel[LEFT_DOWN with Double]
+  /**
+    * Represents a mouse left double click event.
+    */
+  @js.native
+  sealed trait LEFT_DOUBLE_CLICK
+    extends StObject
+       with ScreenSpaceEventType
+  /* 3 */ val LEFT_DOUBLE_CLICK: typingsJapgolly.cesium.mod.ScreenSpaceEventType.LEFT_DOUBLE_CLICK & Double = js.native
   
-  /* 1 */ @js.native
-  object LEFT_UP extends TopLevel[LEFT_UP with Double]
+  /**
+    * Represents a mouse left button down event.
+    */
+  @js.native
+  sealed trait LEFT_DOWN
+    extends StObject
+       with ScreenSpaceEventType
+  /* 0 */ val LEFT_DOWN: typingsJapgolly.cesium.mod.ScreenSpaceEventType.LEFT_DOWN & Double = js.native
   
-  /* 12 */ @js.native
-  object MIDDLE_CLICK extends TopLevel[MIDDLE_CLICK with Double]
+  /**
+    * Represents a mouse left button up event.
+    */
+  @js.native
+  sealed trait LEFT_UP
+    extends StObject
+       with ScreenSpaceEventType
+  /* 1 */ val LEFT_UP: typingsJapgolly.cesium.mod.ScreenSpaceEventType.LEFT_UP & Double = js.native
   
-  /* 10 */ @js.native
-  object MIDDLE_DOWN extends TopLevel[MIDDLE_DOWN with Double]
+  /**
+    * Represents a mouse middle click event.
+    */
+  @js.native
+  sealed trait MIDDLE_CLICK
+    extends StObject
+       with ScreenSpaceEventType
+  /* 12 */ val MIDDLE_CLICK: typingsJapgolly.cesium.mod.ScreenSpaceEventType.MIDDLE_CLICK & Double = js.native
   
-  /* 11 */ @js.native
-  object MIDDLE_UP extends TopLevel[MIDDLE_UP with Double]
+  /**
+    * Represents a mouse middle button down event.
+    */
+  @js.native
+  sealed trait MIDDLE_DOWN
+    extends StObject
+       with ScreenSpaceEventType
+  /* 10 */ val MIDDLE_DOWN: typingsJapgolly.cesium.mod.ScreenSpaceEventType.MIDDLE_DOWN & Double = js.native
   
-  /* 15 */ @js.native
-  object MOUSE_MOVE extends TopLevel[MOUSE_MOVE with Double]
+  /**
+    * Represents a mouse middle button up event.
+    */
+  @js.native
+  sealed trait MIDDLE_UP
+    extends StObject
+       with ScreenSpaceEventType
+  /* 11 */ val MIDDLE_UP: typingsJapgolly.cesium.mod.ScreenSpaceEventType.MIDDLE_UP & Double = js.native
   
-  /* 18 */ @js.native
-  object PINCH_END extends TopLevel[PINCH_END with Double]
+  /**
+    * Represents a mouse move event.
+    */
+  @js.native
+  sealed trait MOUSE_MOVE
+    extends StObject
+       with ScreenSpaceEventType
+  /* 15 */ val MOUSE_MOVE: typingsJapgolly.cesium.mod.ScreenSpaceEventType.MOUSE_MOVE & Double = js.native
   
-  /* 19 */ @js.native
-  object PINCH_MOVE extends TopLevel[PINCH_MOVE with Double]
+  /**
+    * Represents the end of a two-finger event on a touch surface.
+    */
+  @js.native
+  sealed trait PINCH_END
+    extends StObject
+       with ScreenSpaceEventType
+  /* 18 */ val PINCH_END: typingsJapgolly.cesium.mod.ScreenSpaceEventType.PINCH_END & Double = js.native
   
-  /* 17 */ @js.native
-  object PINCH_START extends TopLevel[PINCH_START with Double]
+  /**
+    * Represents a change of a two-finger event on a touch surface.
+    */
+  @js.native
+  sealed trait PINCH_MOVE
+    extends StObject
+       with ScreenSpaceEventType
+  /* 19 */ val PINCH_MOVE: typingsJapgolly.cesium.mod.ScreenSpaceEventType.PINCH_MOVE & Double = js.native
   
-  /* 7 */ @js.native
-  object RIGHT_CLICK extends TopLevel[RIGHT_CLICK with Double]
+  /**
+    * Represents the start of a two-finger event on a touch surface.
+    */
+  @js.native
+  sealed trait PINCH_START
+    extends StObject
+       with ScreenSpaceEventType
+  /* 17 */ val PINCH_START: typingsJapgolly.cesium.mod.ScreenSpaceEventType.PINCH_START & Double = js.native
   
-  /* 5 */ @js.native
-  object RIGHT_DOWN extends TopLevel[RIGHT_DOWN with Double]
+  /**
+    * Represents a mouse right click event.
+    */
+  @js.native
+  sealed trait RIGHT_CLICK
+    extends StObject
+       with ScreenSpaceEventType
+  /* 7 */ val RIGHT_CLICK: typingsJapgolly.cesium.mod.ScreenSpaceEventType.RIGHT_CLICK & Double = js.native
   
-  /* 6 */ @js.native
-  object RIGHT_UP extends TopLevel[RIGHT_UP with Double]
+  /**
+    * Represents a mouse left button down event.
+    */
+  @js.native
+  sealed trait RIGHT_DOWN
+    extends StObject
+       with ScreenSpaceEventType
+  /* 5 */ val RIGHT_DOWN: typingsJapgolly.cesium.mod.ScreenSpaceEventType.RIGHT_DOWN & Double = js.native
   
-  /* 16 */ @js.native
-  object WHEEL extends TopLevel[WHEEL with Double]
+  /**
+    * Represents a mouse right button up event.
+    */
+  @js.native
+  sealed trait RIGHT_UP
+    extends StObject
+       with ScreenSpaceEventType
+  /* 6 */ val RIGHT_UP: typingsJapgolly.cesium.mod.ScreenSpaceEventType.RIGHT_UP & Double = js.native
   
+  /**
+    * Represents a mouse wheel event.
+    */
+  @js.native
+  sealed trait WHEEL
+    extends StObject
+       with ScreenSpaceEventType
+  /* 16 */ val WHEEL: typingsJapgolly.cesium.mod.ScreenSpaceEventType.WHEEL & Double = js.native
 }
-

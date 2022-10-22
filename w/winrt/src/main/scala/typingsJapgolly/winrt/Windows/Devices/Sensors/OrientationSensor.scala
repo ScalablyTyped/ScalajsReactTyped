@@ -1,26 +1,22 @@
 package typingsJapgolly.winrt.Windows.Devices.Sensors
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Sensors.OrientationSensor")
-@js.native
-class OrientationSensor () extends IOrientationSensor {
-  /* CompleteClass */
-  override var minimumReportInterval: Double = js.native
-  /* CompleteClass */
-  override var onreadingchanged: js.Any = js.native
-  /* CompleteClass */
-  override var reportInterval: Double = js.native
-  /* CompleteClass */
-  override def getCurrentReading(): OrientationSensorReading = js.native
+trait OrientationSensor
+  extends StObject
+     with IOrientationSensor
+object OrientationSensor {
+  
+  inline def apply(
+    getCurrentReading: CallbackTo[OrientationSensorReading],
+    minimumReportInterval: Double,
+    onreadingchanged: Any,
+    reportInterval: Double
+  ): OrientationSensor = {
+    val __obj = js.Dynamic.literal(getCurrentReading = getCurrentReading.toJsFn, minimumReportInterval = minimumReportInterval.asInstanceOf[js.Any], onreadingchanged = onreadingchanged.asInstanceOf[js.Any], reportInterval = reportInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OrientationSensor]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Devices.Sensors.OrientationSensor")
-@js.native
-object OrientationSensor extends js.Object {
-  def getDefault(): OrientationSensor = js.native
-}
-

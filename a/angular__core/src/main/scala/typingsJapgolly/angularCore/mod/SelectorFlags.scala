@@ -1,36 +1,32 @@
 package typingsJapgolly.angularCore.mod
 
-import typingsJapgolly.angularCore.angularCoreNumbers.`1`
-import typingsJapgolly.angularCore.angularCoreNumbers.`2`
-import typingsJapgolly.angularCore.angularCoreNumbers.`4`
-import typingsJapgolly.angularCore.angularCoreNumbers.`8`
+import typingsJapgolly.angularCore.angularCoreInts.`1`
+import typingsJapgolly.angularCore.angularCoreInts.`2`
+import typingsJapgolly.angularCore.angularCoreInts.`4`
+import typingsJapgolly.angularCore.angularCoreInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Flags used to build up CssSelectors */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.angularCore.angularCoreNumbers.`1`
-  - typingsJapgolly.angularCore.angularCoreNumbers.`2`
-  - typingsJapgolly.angularCore.angularCoreNumbers.`4`
-  - typingsJapgolly.angularCore.angularCoreNumbers.`8`
+  - typingsJapgolly.angularCore.angularCoreInts.`1`
+  - typingsJapgolly.angularCore.angularCoreInts.`2`
+  - typingsJapgolly.angularCore.angularCoreInts.`4`
+  - typingsJapgolly.angularCore.angularCoreInts.`8`
 */
-trait SelectorFlags extends js.Object
-
+trait SelectorFlags extends StObject
 object SelectorFlags {
+  
   /** Mode for matching attributes */
-  @scala.inline
-  def ATTRIBUTE: `2` = this.cast(2)
+  inline def ATTRIBUTE: `2` = 2.asInstanceOf[`2`]
+  
   /** Mode for matching class names */
-  @scala.inline
-  def CLASS: `8` = this.cast(8)
+  inline def CLASS: `8` = 8.asInstanceOf[`8`]
+  
   /** Mode for matching tag names */
-  @scala.inline
-  def ELEMENT: `4` = this.cast(4)
+  inline def ELEMENT: `4` = 4.asInstanceOf[`4`]
+  
   /** Indicates this is the beginning of a new negative selector */
-  @scala.inline
-  def NOT: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  inline def NOT: `1` = 1.asInstanceOf[`1`]
 }
-

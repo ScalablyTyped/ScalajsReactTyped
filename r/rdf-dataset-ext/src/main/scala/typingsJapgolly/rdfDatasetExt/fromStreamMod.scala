@@ -1,15 +1,24 @@
 package typingsJapgolly.rdfDatasetExt
 
-import typingsJapgolly.node.eventsMod.EventEmitter
-import typingsJapgolly.rdfJs.mod.BaseQuad
-import typingsJapgolly.rdfJs.mod.DatasetCore
+import typingsJapgolly.rdfjsTypes.dataModelMod.BaseQuad
+import typingsJapgolly.rdfjsTypes.datasetMod.DatasetCore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rdf-dataset-ext/fromStream", JSImport.Namespace)
-@js.native
-object fromStreamMod extends js.Object {
-  def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, stream: EventEmitter): js.Promise[D] = js.native
+object fromStreamMod {
+  
+  /**
+    * Adds all quads from stream till the stream is finished.
+    *
+    * Errors emitted by the stream are forwarded as Promise rejects. Returns the given dataset.
+    */
+  inline def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](
+    dataset: D,
+    stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventEmitter */ Any
+  ): js.Promise[D] = (^.asInstanceOf[js.Dynamic].apply(dataset.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[D]]
+  
+  @JSImport("rdf-dataset-ext/fromStream", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

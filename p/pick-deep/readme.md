@@ -10,15 +10,12 @@ Creates an object composed of the picked object properties from a nested object 
 | ------------------ | :-------------: |
 | Full name          | pick-deep |
 | Keywords           | obj, object, prop, property, dot, path, pick, deep, pickDeep, pick-deep, access, notation, dotty, key, nested, paths, properties, props, segment, value, values, custom, separator, small, fast |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 22524 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9956.333333333334 |
+| # stars            | 8.0 |
 
 ## Links
-- [Homepage](https://github.com/strikeentco/pick-deep#readme)
-- [Bugs](https://github.com/strikeentco/pick-deep/issues)
-- [Repository](https://github.com/strikeentco/pick-deep)
 - [Npm](https://www.npmjs.com/package/pick-deep)
     
 

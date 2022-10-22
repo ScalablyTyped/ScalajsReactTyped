@@ -1,33 +1,35 @@
 organization := "org.scalablytyped.japgolly"
 name := "jimp__plugins"
-version := "0.8.5-77afa3"
-scalaVersion := "2.13.1"
+version := "0.16.2-045d32"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "jimp__core" % "0.8.5-f7c0b8",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-blit" % "0.8.5-4792e4",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-blur" % "0.8.5-d631da",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-color" % "0.8.5-391bb9",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-contain" % "0.8.5-38c7e1",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-cover" % "0.8.5-25b797",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-crop" % "0.8.5-fbc726",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-displace" % "0.8.5-f5be00",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-dither" % "0.8.5-a8c4ad",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-flip" % "0.8.5-1efcd3",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-gaussian" % "0.8.5-70aec2",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-invert" % "0.8.5-f2b93d",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-mask" % "0.8.5-6b259c",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-normalize" % "0.8.5-6edc6b",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-print" % "0.8.5-c0c0d0",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-resize" % "0.8.5-3e13e0",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-rotate" % "0.8.5-2b469d",
-  "org.scalablytyped.japgolly" %%% "jimp__plugin-scale" % "0.8.5-9b7dff",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "jimp__core" % "0.16.2-580876",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-blit" % "0.16.2-797332",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-blur" % "0.16.2-4b23d0",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-circle" % "0.16.2-51c4bb",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-color" % "0.16.2-09768f",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-contain" % "0.16.2-84d91e",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-cover" % "0.16.2-1992f2",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-crop" % "0.16.2-2b1495",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-displace" % "0.16.2-632336",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-dither" % "0.16.2-a4177e",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-fisheye" % "0.16.2-5f87bd",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-flip" % "0.16.2-bb536a",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-gaussian" % "0.16.2-93f481",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-invert" % "0.16.2-60d1c8",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-mask" % "0.16.2-c5fd84",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-normalize" % "0.16.2-eb230a",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-print" % "0.16.2-5fa02a",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-resize" % "0.16.2-430645",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-rotate" % "0.16.2-3a7534",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-scale" % "0.16.2-93541c",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-shadow" % "0.16.2-44fac7",
+  "org.scalablytyped.japgolly" %%% "jimp__plugin-threshold" % "0.16.2-5f91c0",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

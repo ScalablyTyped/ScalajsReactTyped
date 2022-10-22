@@ -1,8 +1,8 @@
 package typingsJapgolly.openlayers.mod.format
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -20,5 +20,4 @@ import scala.scalajs.js.annotation._
   * Base class for JSON feature formats.
   *
   */
-class JSONFeature () extends Feature
-
+open class JSONFeature () extends Feature

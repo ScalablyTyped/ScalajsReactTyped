@@ -1,398 +1,518 @@
 package typingsJapgolly.mapboxMapboxSdk
 
-import typingsJapgolly.mapboxMapboxSdk.directionsMod.DirectionsAnnotation
-import typingsJapgolly.mapboxMapboxSdk.directionsMod.DirectionsClass
-import typingsJapgolly.mapboxMapboxSdk.directionsMod.DirectionsGeometry
-import typingsJapgolly.mapboxMapboxSdk.directionsMod.DirectionsMode
-import typingsJapgolly.mapboxMapboxSdk.directionsMod.DirectionsOverview
-import typingsJapgolly.mapboxMapboxSdk.directionsMod.DirectionsProfile
-import typingsJapgolly.mapboxMapboxSdk.directionsMod.DirectionsSide
-import typingsJapgolly.mapboxMapboxSdk.directionsMod.DirectionsUnits
-import typingsJapgolly.mapboxMapboxSdk.directionsMod.ManeuverModifier
-import typingsJapgolly.mapboxMapboxSdk.directionsMod.ManeuverType
-import typingsJapgolly.mapboxMapboxSdk.geocodingMod.GeocodeMode
-import typingsJapgolly.mapboxMapboxSdk.geocodingMod.GeocodeQueryType
-import typingsJapgolly.mapboxMapboxSdk.mapiRequestMod.DirectionsApproach
-import typingsJapgolly.mapboxMapboxSdk.mapiRequestMod.MapboxProfile
-import typingsJapgolly.mapboxMapboxSdk.tilequeryMod.GeometryType
+import typingsJapgolly.mapboxMapboxSdk.libClassesMapiRequestMod.DirectionsApproach
+import typingsJapgolly.mapboxMapboxSdk.libClassesMapiRequestMod.MapboxProfile
+import typingsJapgolly.mapboxMapboxSdk.servicesDirectionsMod.DirectionsAnnotation
+import typingsJapgolly.mapboxMapboxSdk.servicesDirectionsMod.DirectionsClass
+import typingsJapgolly.mapboxMapboxSdk.servicesDirectionsMod.DirectionsGeometry
+import typingsJapgolly.mapboxMapboxSdk.servicesDirectionsMod.DirectionsMode
+import typingsJapgolly.mapboxMapboxSdk.servicesDirectionsMod.DirectionsOverview
+import typingsJapgolly.mapboxMapboxSdk.servicesDirectionsMod.DirectionsSide
+import typingsJapgolly.mapboxMapboxSdk.servicesDirectionsMod.DirectionsUnits
+import typingsJapgolly.mapboxMapboxSdk.servicesDirectionsMod.ManeuverModifier
+import typingsJapgolly.mapboxMapboxSdk.servicesDirectionsMod.ManeuverType
+import typingsJapgolly.mapboxMapboxSdk.servicesGeocodingMod.GeocodeMode
+import typingsJapgolly.mapboxMapboxSdk.servicesGeocodingMod.GeocodeQueryType
+import typingsJapgolly.mapboxMapboxSdk.servicesOptimizationMod.OptimizationAnnotation
+import typingsJapgolly.mapboxMapboxSdk.servicesTilequeryMod.GeometryType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapboxMapboxSdkStrings {
-  @js.native
-  sealed trait address extends GeocodeQueryType
   
   @js.native
-  sealed trait any extends js.Object
+  sealed trait Feature extends StObject
+  inline def Feature: Feature = "Feature".asInstanceOf[Feature]
+  
+  @js.native
+  sealed trait FeatureCollection extends StObject
+  inline def FeatureCollection: FeatureCollection = "FeatureCollection".asInstanceOf[FeatureCollection]
+  
+  @js.native
+  sealed trait Point extends StObject
+  inline def Point: Point = "Point".asInstanceOf[Point]
+  
+  @js.native
+  sealed trait address
+    extends StObject
+       with GeocodeQueryType
+  inline def address: address = "address".asInstanceOf[address]
+  
+  @js.native
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
+  
+  @js.native
+  sealed trait any extends StObject
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait arrive
-    extends ManeuverModifier
+    extends StObject
+       with ManeuverModifier
        with ManeuverType
+  inline def arrive: arrive = "arrive".asInstanceOf[arrive]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait congestion extends DirectionsAnnotation
+  sealed trait congestion
+    extends StObject
+       with DirectionsAnnotation
+  inline def congestion: congestion = "congestion".asInstanceOf[congestion]
   
   @js.native
-  sealed trait continue extends ManeuverType
+  sealed trait continue
+    extends StObject
+       with ManeuverType
+  inline def continue: continue = "continue".asInstanceOf[continue]
   
   @js.native
-  sealed trait country extends GeocodeQueryType
+  sealed trait country
+    extends StObject
+       with GeocodeQueryType
+  inline def country: country = "country".asInstanceOf[country]
   
   @js.native
-  sealed trait curb extends DirectionsApproach
+  sealed trait created extends StObject
+  inline def created: created = "created".asInstanceOf[created]
+  
+  @js.native
+  sealed trait curb
+    extends StObject
+       with DirectionsApproach
+  inline def curb: curb = "curb".asInstanceOf[curb]
   
   @js.native
   sealed trait cycling
-    extends DirectionsMode
-       with DirectionsProfile
+    extends StObject
+       with DirectionsMode
        with MapboxProfile
+  inline def cycling: cycling = "cycling".asInstanceOf[cycling]
+  
+  @js.native
+  sealed trait data extends StObject
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
   sealed trait depart
-    extends ManeuverModifier
+    extends StObject
+       with ManeuverModifier
        with ManeuverType
+  inline def depart: depart = "depart".asInstanceOf[depart]
   
   @js.native
-  sealed trait distance extends DirectionsAnnotation
+  sealed trait distance
+    extends StObject
+       with DirectionsAnnotation
+       with OptimizationAnnotation
+  inline def distance: distance = "distance".asInstanceOf[distance]
   
   @js.native
-  sealed trait district extends GeocodeQueryType
+  sealed trait district
+    extends StObject
+       with GeocodeQueryType
+  inline def district: district = "district".asInstanceOf[district]
   
   @js.native
   sealed trait driving
-    extends DirectionsMode
-       with DirectionsProfile
+    extends StObject
+       with DirectionsMode
        with MapboxProfile
+  inline def driving: driving = "driving".asInstanceOf[driving]
   
   @js.native
-  sealed trait `driving-traffic` extends DirectionsProfile
+  sealed trait `driving-traffic`
+    extends StObject
+       with MapboxProfile
+  inline def `driving-traffic`: `driving-traffic` = "driving-traffic".asInstanceOf[`driving-traffic`]
   
   @js.native
-  sealed trait duration extends DirectionsAnnotation
+  sealed trait duration
+    extends StObject
+       with DirectionsAnnotation
+       with OptimizationAnnotation
+  inline def duration: duration = "duration".asInstanceOf[duration]
   
   @js.native
-  sealed trait `end of road` extends ManeuverType
+  sealed trait `end of road`
+    extends StObject
+       with ManeuverType
+  inline def `end of road`: `end of road` = ("end of road").asInstanceOf[`end of road`]
   
   @js.native
-  sealed trait `exit rotary` extends ManeuverType
+  sealed trait `exit rotary`
+    extends StObject
+       with ManeuverType
+  inline def `exit rotary`: `exit rotary` = ("exit rotary").asInstanceOf[`exit rotary`]
   
   @js.native
-  sealed trait `exit roundabout` extends ManeuverType
+  sealed trait `exit roundabout`
+    extends StObject
+       with ManeuverType
+  inline def `exit roundabout`: `exit roundabout` = ("exit roundabout").asInstanceOf[`exit roundabout`]
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait failed extends StObject
+  inline def failed: failed = "failed".asInstanceOf[failed]
+  
+  @js.native
+  sealed trait `false`
+    extends StObject
+       with DirectionsOverview
+  inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
   sealed trait ferry
-    extends DirectionsClass
+    extends StObject
+       with DirectionsClass
        with DirectionsMode
+  inline def ferry: ferry = "ferry".asInstanceOf[ferry]
   
   @js.native
-  sealed trait first extends js.Object
+  sealed trait first extends StObject
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
-  sealed trait fork extends ManeuverType
+  sealed trait fork
+    extends StObject
+       with ManeuverType
+  inline def fork: fork = "fork".asInstanceOf[fork]
   
   @js.native
-  sealed trait full extends DirectionsOverview
+  sealed trait form extends StObject
+  inline def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait geojson extends DirectionsGeometry
+  sealed trait full
+    extends StObject
+       with DirectionsOverview
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait imperial extends DirectionsUnits
+  sealed trait geojson
+    extends StObject
+       with DirectionsGeometry
+  inline def geojson: geojson = "geojson".asInstanceOf[geojson]
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait imperial
+    extends StObject
+       with DirectionsUnits
+  inline def imperial: imperial = "imperial".asInstanceOf[imperial]
   
   @js.native
-  sealed trait last extends js.Object
+  sealed trait json extends StObject
+  inline def json: json = "json".asInstanceOf[json]
+  
+  @js.native
+  sealed trait large extends StObject
+  inline def large: large = "large".asInstanceOf[large]
+  
+  @js.native
+  sealed trait last extends StObject
+  inline def last: last = "last".asInstanceOf[last]
   
   @js.native
   sealed trait left
-    extends DirectionsSide
+    extends StObject
+       with DirectionsSide
        with ManeuverModifier
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait linestring extends GeometryType
+  sealed trait linestring
+    extends StObject
+       with GeometryType
+  inline def linestring: linestring = "linestring".asInstanceOf[linestring]
   
   @js.native
-  sealed trait locality extends GeocodeQueryType
+  sealed trait locality
+    extends StObject
+       with GeocodeQueryType
+  inline def locality: locality = "locality".asInstanceOf[locality]
   
   @js.native
-  sealed trait mapboxDotplaces extends GeocodeMode
+  sealed trait mapboxDotplaces
+    extends StObject
+       with GeocodeMode
+  inline def mapboxDotplaces: mapboxDotplaces = "mapbox.places".asInstanceOf[mapboxDotplaces]
   
   @js.native
-  sealed trait `mapboxDotplaces-permanent` extends GeocodeMode
+  sealed trait `mapboxDotplaces-permanent`
+    extends StObject
+       with GeocodeMode
+  inline def `mapboxDotplaces-permanent`: `mapboxDotplaces-permanent` = "mapbox.places-permanent".asInstanceOf[`mapboxDotplaces-permanent`]
   
   @js.native
-  sealed trait merge extends ManeuverType
+  sealed trait merge
+    extends StObject
+       with ManeuverType
+  inline def merge: merge = "merge".asInstanceOf[merge]
   
   @js.native
-  sealed trait metric extends DirectionsUnits
+  sealed trait metric
+    extends StObject
+       with DirectionsUnits
+  inline def metric: metric = "metric".asInstanceOf[metric]
   
   @js.native
-  sealed trait motorway extends DirectionsClass
+  sealed trait modified extends StObject
+  inline def modified: modified = "modified".asInstanceOf[modified]
   
   @js.native
-  sealed trait neighborhood extends GeocodeQueryType
+  sealed trait motorway
+    extends StObject
+       with DirectionsClass
+  inline def motorway: motorway = "motorway".asInstanceOf[motorway]
   
   @js.native
-  sealed trait `new name` extends ManeuverType
+  sealed trait neighborhood
+    extends StObject
+       with GeocodeQueryType
+  inline def neighborhood: neighborhood = "neighborhood".asInstanceOf[neighborhood]
   
   @js.native
-  sealed trait notification extends ManeuverType
+  sealed trait `new name`
+    extends StObject
+       with ManeuverType
+  inline def `new name`: `new name` = ("new name").asInstanceOf[`new name`]
   
   @js.native
-  sealed trait `off ramp` extends ManeuverType
+  sealed trait notification
+    extends StObject
+       with ManeuverType
+  inline def notification: notification = "notification".asInstanceOf[notification]
   
   @js.native
-  sealed trait `on ramp` extends ManeuverType
+  sealed trait `off ramp`
+    extends StObject
+       with ManeuverType
+  inline def `off ramp`: `off ramp` = ("off ramp").asInstanceOf[`off ramp`]
   
   @js.native
-  sealed trait place extends GeocodeQueryType
+  sealed trait `on ramp`
+    extends StObject
+       with ManeuverType
+  inline def `on ramp`: `on ramp` = ("on ramp").asInstanceOf[`on ramp`]
   
   @js.native
-  sealed trait png extends js.Object
+  sealed trait place
+    extends StObject
+       with GeocodeQueryType
+  inline def place: place = "place".asInstanceOf[place]
   
   @js.native
-  sealed trait poi extends GeocodeQueryType
+  sealed trait png extends StObject
+  inline def png: png = "png".asInstanceOf[png]
   
   @js.native
-  sealed trait poiDotlandmark extends GeocodeQueryType
+  sealed trait poi
+    extends StObject
+       with GeocodeQueryType
+  inline def poi: poi = "poi".asInstanceOf[poi]
   
   @js.native
-  sealed trait point extends GeometryType
+  sealed trait poiDotlandmark
+    extends StObject
+       with GeocodeQueryType
+  inline def poiDotlandmark: poiDotlandmark = "poi.landmark".asInstanceOf[poiDotlandmark]
   
   @js.native
-  sealed trait polygon extends GeometryType
+  sealed trait point_
+    extends StObject
+       with GeometryType
+  inline def point_ : point_ = "point".asInstanceOf[point_]
   
   @js.native
-  sealed trait polyline extends DirectionsGeometry
+  sealed trait polygon
+    extends StObject
+       with GeometryType
+  inline def polygon: polygon = "polygon".asInstanceOf[polygon]
   
   @js.native
-  sealed trait polyline6 extends DirectionsGeometry
+  sealed trait polyline
+    extends StObject
+       with DirectionsGeometry
+  inline def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
-  sealed trait postcode extends GeocodeQueryType
+  sealed trait polyline6
+    extends StObject
+       with DirectionsGeometry
+  inline def polyline6: polyline6 = "polyline6".asInstanceOf[polyline6]
   
   @js.native
-  sealed trait region extends GeocodeQueryType
+  sealed trait postcode
+    extends StObject
+       with GeocodeQueryType
+  inline def postcode: postcode = "postcode".asInstanceOf[postcode]
   
   @js.native
-  sealed trait restricted extends DirectionsClass
+  sealed trait `private` extends StObject
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
+  
+  @js.native
+  sealed trait processing extends StObject
+  inline def processing: processing = "processing".asInstanceOf[processing]
+  
+  @js.native
+  sealed trait public extends StObject
+  inline def public: public = "public".asInstanceOf[public]
+  
+  @js.native
+  sealed trait queued extends StObject
+  inline def queued: queued = "queued".asInstanceOf[queued]
+  
+  @js.native
+  sealed trait raster extends StObject
+  inline def raster: raster = "raster".asInstanceOf[raster]
+  
+  @js.native
+  sealed trait region
+    extends StObject
+       with GeocodeQueryType
+  inline def region: region = "region".asInstanceOf[region]
+  
+  @js.native
+  sealed trait restricted
+    extends StObject
+       with DirectionsClass
+  inline def restricted: restricted = "restricted".asInstanceOf[restricted]
   
   @js.native
   sealed trait right
-    extends DirectionsSide
+    extends StObject
+       with DirectionsSide
        with ManeuverModifier
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait rotary extends ManeuverType
+  sealed trait rotary
+    extends StObject
+       with ManeuverType
+  inline def rotary: rotary = "rotary".asInstanceOf[rotary]
   
   @js.native
-  sealed trait roundabout extends ManeuverType
+  sealed trait roundabout
+    extends StObject
+       with ManeuverType
+  inline def roundabout: roundabout = "roundabout".asInstanceOf[roundabout]
   
   @js.native
-  sealed trait `roundabout turn` extends ManeuverType
+  sealed trait `roundabout turn`
+    extends StObject
+       with ManeuverType
+  inline def `roundabout turn`: `roundabout turn` = ("roundabout turn").asInstanceOf[`roundabout turn`]
   
   @js.native
-  sealed trait `sharp left` extends ManeuverModifier
+  sealed trait `sharp left`
+    extends StObject
+       with ManeuverModifier
+  inline def `sharp left`: `sharp left` = ("sharp left").asInstanceOf[`sharp left`]
   
   @js.native
-  sealed trait `sharp right` extends ManeuverModifier
+  sealed trait `sharp right`
+    extends StObject
+       with ManeuverModifier
+  inline def `sharp right`: `sharp right` = ("sharp right").asInstanceOf[`sharp right`]
   
   @js.native
-  sealed trait simplified extends DirectionsOverview
+  sealed trait simplified
+    extends StObject
+       with DirectionsOverview
+  inline def simplified: simplified = "simplified".asInstanceOf[simplified]
   
   @js.native
-  sealed trait `slight left` extends ManeuverModifier
+  sealed trait `slight left`
+    extends StObject
+       with ManeuverModifier
+  inline def `slight left`: `slight left` = ("slight left").asInstanceOf[`slight left`]
   
   @js.native
-  sealed trait `slight right` extends ManeuverModifier
+  sealed trait `slight right`
+    extends StObject
+       with ManeuverModifier
+  inline def `slight right`: `slight right` = ("slight right").asInstanceOf[`slight right`]
   
   @js.native
-  sealed trait speed extends DirectionsAnnotation
+  sealed trait small extends StObject
+  inline def small: small = "small".asInstanceOf[small]
   
   @js.native
-  sealed trait straight extends ManeuverModifier
+  sealed trait speed
+    extends StObject
+       with DirectionsAnnotation
+       with OptimizationAnnotation
+  inline def speed: speed = "speed".asInstanceOf[speed]
   
   @js.native
-  sealed trait toll extends DirectionsClass
+  sealed trait straight
+    extends StObject
+       with ManeuverModifier
+  inline def straight: straight = "straight".asInstanceOf[straight]
   
   @js.native
-  sealed trait train extends DirectionsMode
+  sealed trait success extends StObject
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait tunnel extends DirectionsClass
+  sealed trait toll
+    extends StObject
+       with DirectionsClass
+  inline def toll: toll = "toll".asInstanceOf[toll]
   
   @js.native
-  sealed trait turn extends ManeuverType
+  sealed trait train
+    extends StObject
+       with DirectionsMode
+  inline def train: train = "train".asInstanceOf[train]
   
   @js.native
-  sealed trait unaccessible extends DirectionsMode
+  sealed trait tunnel
+    extends StObject
+       with DirectionsClass
+  inline def tunnel: tunnel = "tunnel".asInstanceOf[tunnel]
   
   @js.native
-  sealed trait unlimited extends js.Object
+  sealed trait turn
+    extends StObject
+       with ManeuverType
+  inline def turn: turn = "turn".asInstanceOf[turn]
   
   @js.native
-  sealed trait unrestricted extends DirectionsApproach
+  sealed trait unaccessible
+    extends StObject
+       with DirectionsMode
+  inline def unaccessible: unaccessible = "unaccessible".asInstanceOf[unaccessible]
   
   @js.native
-  sealed trait uturn extends ManeuverModifier
+  sealed trait unlimited extends StObject
+  inline def unlimited: unlimited = "unlimited".asInstanceOf[unlimited]
+  
+  @js.native
+  sealed trait unrestricted
+    extends StObject
+       with DirectionsApproach
+  inline def unrestricted: unrestricted = "unrestricted".asInstanceOf[unrestricted]
+  
+  @js.native
+  sealed trait uturn
+    extends StObject
+       with ManeuverModifier
+  inline def uturn: uturn = "uturn".asInstanceOf[uturn]
+  
+  @js.native
+  sealed trait vector extends StObject
+  inline def vector: vector = "vector".asInstanceOf[vector]
   
   @js.native
   sealed trait walking
-    extends DirectionsMode
-       with DirectionsProfile
+    extends StObject
+       with DirectionsMode
        with MapboxProfile
-  
-  @scala.inline
-  def address: address = "address".asInstanceOf[address]
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
-  @scala.inline
-  def arrive: arrive = "arrive".asInstanceOf[arrive]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def congestion: congestion = "congestion".asInstanceOf[congestion]
-  @scala.inline
-  def continue: continue = "continue".asInstanceOf[continue]
-  @scala.inline
-  def country: country = "country".asInstanceOf[country]
-  @scala.inline
-  def curb: curb = "curb".asInstanceOf[curb]
-  @scala.inline
-  def cycling: cycling = "cycling".asInstanceOf[cycling]
-  @scala.inline
-  def depart: depart = "depart".asInstanceOf[depart]
-  @scala.inline
-  def distance: distance = "distance".asInstanceOf[distance]
-  @scala.inline
-  def district: district = "district".asInstanceOf[district]
-  @scala.inline
-  def driving: driving = "driving".asInstanceOf[driving]
-  @scala.inline
-  def `driving-traffic`: `driving-traffic` = "driving-traffic".asInstanceOf[`driving-traffic`]
-  @scala.inline
-  def duration: duration = "duration".asInstanceOf[duration]
-  @scala.inline
-  def `end of road`: `end of road` = "end of road".asInstanceOf[`end of road`]
-  @scala.inline
-  def `exit rotary`: `exit rotary` = "exit rotary".asInstanceOf[`exit rotary`]
-  @scala.inline
-  def `exit roundabout`: `exit roundabout` = "exit roundabout".asInstanceOf[`exit roundabout`]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
-  @scala.inline
-  def ferry: ferry = "ferry".asInstanceOf[ferry]
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
-  @scala.inline
-  def fork: fork = "fork".asInstanceOf[fork]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
-  @scala.inline
-  def geojson: geojson = "geojson".asInstanceOf[geojson]
-  @scala.inline
-  def imperial: imperial = "imperial".asInstanceOf[imperial]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def last: last = "last".asInstanceOf[last]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def linestring: linestring = "linestring".asInstanceOf[linestring]
-  @scala.inline
-  def locality: locality = "locality".asInstanceOf[locality]
-  @scala.inline
-  def mapboxDotplaces: mapboxDotplaces = "mapbox.places".asInstanceOf[mapboxDotplaces]
-  @scala.inline
-  def `mapboxDotplaces-permanent`: `mapboxDotplaces-permanent` = "mapbox.places-permanent".asInstanceOf[`mapboxDotplaces-permanent`]
-  @scala.inline
-  def merge: merge = "merge".asInstanceOf[merge]
-  @scala.inline
-  def metric: metric = "metric".asInstanceOf[metric]
-  @scala.inline
-  def motorway: motorway = "motorway".asInstanceOf[motorway]
-  @scala.inline
-  def neighborhood: neighborhood = "neighborhood".asInstanceOf[neighborhood]
-  @scala.inline
-  def `new name`: `new name` = "new name".asInstanceOf[`new name`]
-  @scala.inline
-  def notification: notification = "notification".asInstanceOf[notification]
-  @scala.inline
-  def `off ramp`: `off ramp` = "off ramp".asInstanceOf[`off ramp`]
-  @scala.inline
-  def `on ramp`: `on ramp` = "on ramp".asInstanceOf[`on ramp`]
-  @scala.inline
-  def place: place = "place".asInstanceOf[place]
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
-  @scala.inline
-  def poi: poi = "poi".asInstanceOf[poi]
-  @scala.inline
-  def poiDotlandmark: poiDotlandmark = "poi.landmark".asInstanceOf[poiDotlandmark]
-  @scala.inline
-  def point: point = "point".asInstanceOf[point]
-  @scala.inline
-  def polygon: polygon = "polygon".asInstanceOf[polygon]
-  @scala.inline
-  def polyline: polyline = "polyline".asInstanceOf[polyline]
-  @scala.inline
-  def polyline6: polyline6 = "polyline6".asInstanceOf[polyline6]
-  @scala.inline
-  def postcode: postcode = "postcode".asInstanceOf[postcode]
-  @scala.inline
-  def region: region = "region".asInstanceOf[region]
-  @scala.inline
-  def restricted: restricted = "restricted".asInstanceOf[restricted]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rotary: rotary = "rotary".asInstanceOf[rotary]
-  @scala.inline
-  def roundabout: roundabout = "roundabout".asInstanceOf[roundabout]
-  @scala.inline
-  def `roundabout turn`: `roundabout turn` = "roundabout turn".asInstanceOf[`roundabout turn`]
-  @scala.inline
-  def `sharp left`: `sharp left` = "sharp left".asInstanceOf[`sharp left`]
-  @scala.inline
-  def `sharp right`: `sharp right` = "sharp right".asInstanceOf[`sharp right`]
-  @scala.inline
-  def simplified: simplified = "simplified".asInstanceOf[simplified]
-  @scala.inline
-  def `slight left`: `slight left` = "slight left".asInstanceOf[`slight left`]
-  @scala.inline
-  def `slight right`: `slight right` = "slight right".asInstanceOf[`slight right`]
-  @scala.inline
-  def speed: speed = "speed".asInstanceOf[speed]
-  @scala.inline
-  def straight: straight = "straight".asInstanceOf[straight]
-  @scala.inline
-  def toll: toll = "toll".asInstanceOf[toll]
-  @scala.inline
-  def train: train = "train".asInstanceOf[train]
-  @scala.inline
-  def tunnel: tunnel = "tunnel".asInstanceOf[tunnel]
-  @scala.inline
-  def turn: turn = "turn".asInstanceOf[turn]
-  @scala.inline
-  def unaccessible: unaccessible = "unaccessible".asInstanceOf[unaccessible]
-  @scala.inline
-  def unlimited: unlimited = "unlimited".asInstanceOf[unlimited]
-  @scala.inline
-  def unrestricted: unrestricted = "unrestricted".asInstanceOf[unrestricted]
-  @scala.inline
-  def uturn: uturn = "uturn".asInstanceOf[uturn]
-  @scala.inline
-  def walking: walking = "walking".asInstanceOf[walking]
+  inline def walking: walking = "walking".asInstanceOf[walking]
 }
-

@@ -1,26 +1,30 @@
 package typingsJapgolly.natural.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BrillPOSTagger extends js.Object {
+trait BrillPOSTagger extends StObject {
+  
   var lexicon: Lexicon
+  
   var ruleSet: RuleSet
-  def tag(sentence: js.Array[String]): js.Array[js.Array[String]]
+  
+  def tag(sentence: js.Array[String]): Sentence
 }
-
 object BrillPOSTagger {
-  @scala.inline
-  def apply(
-    lexicon: Lexicon,
-    ruleSet: RuleSet,
-    tag: js.Array[String] => CallbackTo[js.Array[js.Array[String]]]
-  ): BrillPOSTagger = {
-    val __obj = js.Dynamic.literal(lexicon = lexicon.asInstanceOf[js.Any], ruleSet = ruleSet.asInstanceOf[js.Any])
-    __obj.updateDynamic("tag")(js.Any.fromFunction1((t0: js.Array[java.lang.String]) => tag(t0).runNow()))
+  
+  inline def apply(lexicon: Lexicon, ruleSet: RuleSet, tag: js.Array[String] => Sentence): BrillPOSTagger = {
+    val __obj = js.Dynamic.literal(lexicon = lexicon.asInstanceOf[js.Any], ruleSet = ruleSet.asInstanceOf[js.Any], tag = js.Any.fromFunction1(tag))
     __obj.asInstanceOf[BrillPOSTagger]
   }
+  
+  extension [Self <: BrillPOSTagger](x: Self) {
+    
+    inline def setLexicon(value: Lexicon): Self = StObject.set(x, "lexicon", value.asInstanceOf[js.Any])
+    
+    inline def setRuleSet(value: RuleSet): Self = StObject.set(x, "ruleSet", value.asInstanceOf[js.Any])
+    
+    inline def setTag(value: js.Array[String] => Sentence): Self = StObject.set(x, "tag", js.Any.fromFunction1(value))
+  }
 }
-

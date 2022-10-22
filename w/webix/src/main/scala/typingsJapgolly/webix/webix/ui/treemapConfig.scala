@@ -1,185 +1,348 @@
 package typingsJapgolly.webix.webix.ui
 
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.webix.webix.EventHash
 import typingsJapgolly.webix.webix.WebixCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait treemapConfig extends js.Object {
+trait treemapConfig extends StObject {
+  
   var activeItem: js.UndefOr[Boolean] = js.undefined
-  var animate: js.UndefOr[js.Any] = js.undefined
+  
+  var animate: js.UndefOr[Any] = js.undefined
+  
   var borderless: js.UndefOr[Boolean] = js.undefined
+  
   var branch: js.UndefOr[String] = js.undefined
+  
   var click: js.UndefOr[String | WebixCallback] = js.undefined
+  
   var clipboard: js.UndefOr[Boolean | String] = js.undefined
+  
   var container: js.UndefOr[String | HTMLElement] = js.undefined
-  var css: js.UndefOr[js.Any] = js.undefined
-  var data: js.UndefOr[String | js.Array[_]] = js.undefined
+  
+  var css: js.UndefOr[Any] = js.undefined
+  
+  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
+  
   var dataFeed: js.UndefOr[String | WebixCallback] = js.undefined
+  
   var datathrottle: js.UndefOr[Double] = js.undefined
+  
   var datatype: js.UndefOr[String] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var filterMode: js.UndefOr[js.Any] = js.undefined
+  
+  var filterMode: js.UndefOr[Any] = js.undefined
+  
   var gravity: js.UndefOr[Double] = js.undefined
+  
   var header: js.UndefOr[Boolean] = js.undefined
+  
   var headerHeight: js.UndefOr[Double] = js.undefined
-  var headerTemplate: js.UndefOr[String] = js.undefined
+  
+  var headerTemplate: js.UndefOr[String | WebixCallback] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
   var id: js.UndefOr[String | Double] = js.undefined
-  var item: js.UndefOr[js.Any] = js.undefined
+  
+  var item: js.UndefOr[Any] = js.undefined
+  
   var keyPressTimeout: js.UndefOr[Double] = js.undefined
+  
   var maxHeight: js.UndefOr[Double] = js.undefined
+  
   var maxWidth: js.UndefOr[Double] = js.undefined
+  
   var minHeight: js.UndefOr[Double] = js.undefined
+  
   var minWidth: js.UndefOr[Double] = js.undefined
+  
   var mouseEventDelay: js.UndefOr[Double] = js.undefined
+  
   var multiselect: js.UndefOr[String | Boolean] = js.undefined
+  
   var navigation: js.UndefOr[Boolean] = js.undefined
+  
   var on: js.UndefOr[EventHash] = js.undefined
-  var onClick: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var onContext: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  
+  var onClick: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
+  var onContext: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
   var onDblClick: js.UndefOr[WebixCallback] = js.undefined
+  
   var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
-  var pager: js.UndefOr[js.Any] = js.undefined
+  
+  var pager: js.UndefOr[Any] = js.undefined
+  
   var ready: js.UndefOr[WebixCallback] = js.undefined
+  
   var removeMissed: js.UndefOr[Boolean] = js.undefined
-  var rules: js.UndefOr[js.Any] = js.undefined
-  var save: js.UndefOr[js.Any] = js.undefined
-  var scheme: js.UndefOr[js.Any] = js.undefined
+  
+  var rules: js.UndefOr[Any] = js.undefined
+  
+  var save: js.UndefOr[Any] = js.undefined
+  
+  var scheme: js.UndefOr[Any] = js.undefined
+  
   var scroll: js.UndefOr[Boolean | String] = js.undefined
+  
   var scrollSpeed: js.UndefOr[String] = js.undefined
+  
   var select: js.UndefOr[Boolean | String] = js.undefined
+  
   var subRender: js.UndefOr[Boolean] = js.undefined
+  
   var template: js.UndefOr[String | WebixCallback] = js.undefined
+  
   var templateCopy: js.UndefOr[WebixCallback] = js.undefined
+  
   var threeState: js.UndefOr[Boolean] = js.undefined
-  var tooltip: js.UndefOr[js.Any] = js.undefined
-  var `type`: js.UndefOr[js.Any] = js.undefined
-  var url: js.UndefOr[js.Any] = js.undefined
+  
+  var tooltip: js.UndefOr[Any] = js.undefined
+  
+  var `type`: js.UndefOr[Any] = js.undefined
+  
+  var url: js.UndefOr[Any] = js.undefined
+  
   var value: js.UndefOr[String | WebixCallback] = js.undefined
+  
   var view: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object treemapConfig {
-  @scala.inline
-  def apply(
-    activeItem: js.UndefOr[Boolean] = js.undefined,
-    animate: js.Any = null,
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    branch: String = null,
-    click: String | WebixCallback = null,
-    clipboard: Boolean | String = null,
-    container: String | HTMLElement = null,
-    css: js.Any = null,
-    data: String | js.Array[_] = null,
-    dataFeed: String | WebixCallback = null,
-    datathrottle: Int | Double = null,
-    datatype: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    filterMode: js.Any = null,
-    gravity: Int | Double = null,
-    header: js.UndefOr[Boolean] = js.undefined,
-    headerHeight: Int | Double = null,
-    headerTemplate: String = null,
-    height: Int | Double = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    id: String | Double = null,
-    item: js.Any = null,
-    keyPressTimeout: Int | Double = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    mouseEventDelay: Int | Double = null,
-    multiselect: String | Boolean = null,
-    navigation: js.UndefOr[Boolean] = js.undefined,
-    on: EventHash = null,
-    onClick: StringDictionary[js.Any] = null,
-    onContext: StringDictionary[js.Any] = null,
-    onDblClick: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    onMouseMove: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    pager: js.Any = null,
-    ready: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    removeMissed: js.UndefOr[Boolean] = js.undefined,
-    rules: js.Any = null,
-    save: js.Any = null,
-    scheme: js.Any = null,
-    scroll: Boolean | String = null,
-    scrollSpeed: String = null,
-    select: Boolean | String = null,
-    subRender: js.UndefOr[Boolean] = js.undefined,
-    template: String | WebixCallback = null,
-    templateCopy: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    threeState: js.UndefOr[Boolean] = js.undefined,
-    tooltip: js.Any = null,
-    `type`: js.Any = null,
-    url: js.Any = null,
-    value: String | WebixCallback = null,
-    view: String = null,
-    width: Int | Double = null
-  ): treemapConfig = {
+  
+  inline def apply(): treemapConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeItem)) __obj.updateDynamic("activeItem")(activeItem.asInstanceOf[js.Any])
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
-    if (clipboard != null) __obj.updateDynamic("clipboard")(clipboard.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataFeed != null) __obj.updateDynamic("dataFeed")(dataFeed.asInstanceOf[js.Any])
-    if (datathrottle != null) __obj.updateDynamic("datathrottle")(datathrottle.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (headerHeight != null) __obj.updateDynamic("headerHeight")(headerHeight.asInstanceOf[js.Any])
-    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (keyPressTimeout != null) __obj.updateDynamic("keyPressTimeout")(keyPressTimeout.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (mouseEventDelay != null) __obj.updateDynamic("mouseEventDelay")(mouseEventDelay.asInstanceOf[js.Any])
-    if (multiselect != null) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigation)) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
-    if (onContext != null) __obj.updateDynamic("onContext")(onContext.asInstanceOf[js.Any])
-    if (onDblClick != null) __obj.updateDynamic("onDblClick")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onDblClick(t0).runNow()))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseMove(t0).runNow()))
-    if (pager != null) __obj.updateDynamic("pager")(pager.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => ready(t0).runNow()))
-    if (!js.isUndefined(removeMissed)) __obj.updateDynamic("removeMissed")(removeMissed.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (!js.isUndefined(subRender)) __obj.updateDynamic("subRender")(subRender.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (templateCopy != null) __obj.updateDynamic("templateCopy")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => templateCopy(t0).runNow()))
-    if (!js.isUndefined(threeState)) __obj.updateDynamic("threeState")(threeState.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[treemapConfig]
   }
+  
+  extension [Self <: treemapConfig](x: Self) {
+    
+    inline def setActiveItem(value: Boolean): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
+    
+    inline def setActiveItemUndefined: Self = StObject.set(x, "activeItem", js.undefined)
+    
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    
+    inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+    
+    inline def setClick(value: String | WebixCallback): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    
+    inline def setClipboard(value: Boolean | String): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
+    
+    inline def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
+    
+    inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    
+    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataFeed(value: String | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
+    
+    inline def setDataFeedUndefined: Self = StObject.set(x, "dataFeed", js.undefined)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setDatathrottle(value: Double): Self = StObject.set(x, "datathrottle", value.asInstanceOf[js.Any])
+    
+    inline def setDatathrottleUndefined: Self = StObject.set(x, "datathrottle", js.undefined)
+    
+    inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+    
+    inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setFilterMode(value: Any): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
+    
+    inline def setFilterModeUndefined: Self = StObject.set(x, "filterMode", js.undefined)
+    
+    inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    
+    inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
+    
+    inline def setHeaderTemplate(value: String | WebixCallback): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    
+    inline def setKeyPressTimeout(value: Double): Self = StObject.set(x, "keyPressTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setKeyPressTimeoutUndefined: Self = StObject.set(x, "keyPressTimeout", js.undefined)
+    
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setMouseEventDelay(value: Double): Self = StObject.set(x, "mouseEventDelay", value.asInstanceOf[js.Any])
+    
+    inline def setMouseEventDelayUndefined: Self = StObject.set(x, "mouseEventDelay", js.undefined)
+    
+    inline def setMultiselect(value: String | Boolean): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
+    
+    inline def setMultiselectUndefined: Self = StObject.set(x, "multiselect", js.undefined)
+    
+    inline def setNavigation(value: Boolean): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    
+    inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
+    
+    inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    inline def setOnClick(value: StringDictionary[Any]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    
+    inline def setOnContext(value: StringDictionary[Any]): Self = StObject.set(x, "onContext", value.asInstanceOf[js.Any])
+    
+    inline def setOnContextUndefined: Self = StObject.set(x, "onContext", js.undefined)
+    
+    inline def setOnDblClick(value: WebixCallback): Self = StObject.set(x, "onDblClick", value.asInstanceOf[js.Any])
+    
+    inline def setOnDblClickUndefined: Self = StObject.set(x, "onDblClick", js.undefined)
+    
+    inline def setOnMouseMove(value: WebixCallback): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
+    
+    inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+    
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    
+    inline def setPager(value: Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+    
+    inline def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
+    
+    inline def setReady(value: WebixCallback): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+    
+    inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+    
+    inline def setRemoveMissed(value: Boolean): Self = StObject.set(x, "removeMissed", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveMissedUndefined: Self = StObject.set(x, "removeMissed", js.undefined)
+    
+    inline def setRules(value: Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    
+    inline def setSave(value: Any): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    
+    inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    
+    inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+    
+    inline def setScroll(value: Boolean | String): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    
+    inline def setScrollSpeed(value: String): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
+    
+    inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+    
+    inline def setSelect(value: Boolean | String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setSubRender(value: Boolean): Self = StObject.set(x, "subRender", value.asInstanceOf[js.Any])
+    
+    inline def setSubRenderUndefined: Self = StObject.set(x, "subRender", js.undefined)
+    
+    inline def setTemplate(value: String | WebixCallback): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateCopy(value: WebixCallback): Self = StObject.set(x, "templateCopy", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateCopyUndefined: Self = StObject.set(x, "templateCopy", js.undefined)
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setThreeState(value: Boolean): Self = StObject.set(x, "threeState", value.asInstanceOf[js.Any])
+    
+    inline def setThreeStateUndefined: Self = StObject.set(x, "threeState", js.undefined)
+    
+    inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setValue(value: String | WebixCallback): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

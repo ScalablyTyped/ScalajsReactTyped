@@ -1,41 +1,42 @@
 package typingsJapgolly.googleAdwordsScripts
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ImageAdBuilder[ImageAd]
-  extends AdWordsBuilder[ImageAdBuilder[ImageAd]]
-     with hasFinalUrlBuilder[ImageAdBuilder[ImageAd]]
-     with hasTrackingTemplateBuilder[ImageAdBuilder[ImageAd]] {
+  extends StObject
+     with AdBuilder[ImageAdBuilder[ImageAd]] {
+  
   def withDisplayUrl(displayUrl: String): ImageAdBuilder[ImageAd]
+  
   def withImage(image: Media): ImageAdBuilder[ImageAd]
+  
   def withName(name: String): ImageAdBuilder[ImageAd]
 }
-
 object ImageAdBuilder {
-  @scala.inline
-  def apply[ImageAd](
+  
+  inline def apply[ImageAd](
     build: CallbackTo[AdWordsOperation[ImageAdBuilder[ImageAd]]],
-    withCustomParameters: js.Object => CallbackTo[ImageAdBuilder[ImageAd]],
-    withDisplayUrl: String => CallbackTo[ImageAdBuilder[ImageAd]],
-    withFinalUrl: String => CallbackTo[ImageAdBuilder[ImageAd]],
-    withImage: Media => CallbackTo[ImageAdBuilder[ImageAd]],
-    withMobileFinalUrl: String => CallbackTo[ImageAdBuilder[ImageAd]],
-    withName: String => CallbackTo[ImageAdBuilder[ImageAd]],
-    withTrackingTemplate: String => CallbackTo[ImageAdBuilder[ImageAd]]
+    withCustomParameters: js.Object => ImageAdBuilder[ImageAd],
+    withDisplayUrl: String => ImageAdBuilder[ImageAd],
+    withFinalUrl: String => ImageAdBuilder[ImageAd],
+    withImage: Media => ImageAdBuilder[ImageAd],
+    withMobileFinalUrl: String => ImageAdBuilder[ImageAd],
+    withName: String => ImageAdBuilder[ImageAd],
+    withTrackingTemplate: String => ImageAdBuilder[ImageAd]
   ): ImageAdBuilder[ImageAd] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("withCustomParameters")(js.Any.fromFunction1((t0: js.Object) => withCustomParameters(t0).runNow()))
-    __obj.updateDynamic("withDisplayUrl")(js.Any.fromFunction1((t0: java.lang.String) => withDisplayUrl(t0).runNow()))
-    __obj.updateDynamic("withFinalUrl")(js.Any.fromFunction1((t0: java.lang.String) => withFinalUrl(t0).runNow()))
-    __obj.updateDynamic("withImage")(js.Any.fromFunction1((t0: typingsJapgolly.googleAdwordsScripts.Media) => withImage(t0).runNow()))
-    __obj.updateDynamic("withMobileFinalUrl")(js.Any.fromFunction1((t0: java.lang.String) => withMobileFinalUrl(t0).runNow()))
-    __obj.updateDynamic("withName")(js.Any.fromFunction1((t0: java.lang.String) => withName(t0).runNow()))
-    __obj.updateDynamic("withTrackingTemplate")(js.Any.fromFunction1((t0: java.lang.String) => withTrackingTemplate(t0).runNow()))
+    val __obj = js.Dynamic.literal(build = build.toJsFn, withCustomParameters = js.Any.fromFunction1(withCustomParameters), withDisplayUrl = js.Any.fromFunction1(withDisplayUrl), withFinalUrl = js.Any.fromFunction1(withFinalUrl), withImage = js.Any.fromFunction1(withImage), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl), withName = js.Any.fromFunction1(withName), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
     __obj.asInstanceOf[ImageAdBuilder[ImageAd]]
   }
+  
+  extension [Self <: ImageAdBuilder[?], ImageAd](x: Self & ImageAdBuilder[ImageAd]) {
+    
+    inline def setWithDisplayUrl(value: String => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))
+    
+    inline def setWithImage(value: Media => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withImage", js.Any.fromFunction1(value))
+    
+    inline def setWithName(value: String => ImageAdBuilder[ImageAd]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
+  }
 }
-

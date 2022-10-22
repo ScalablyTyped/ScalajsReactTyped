@@ -1,8 +1,8 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IAP商品对象
@@ -10,25 +10,29 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
   */
-trait PlusPaymentIAPProduct extends js.Object {
+trait PlusPaymentIAPProduct extends StObject {
+  
   /**
     * 商品的描述信息
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   var description: js.UndefOr[String] = js.undefined
+  
   /**
     * 商品的价格
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   var price: js.UndefOr[String] = js.undefined
+  
   /**
     * 商品的标识
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   var productid: js.UndefOr[String] = js.undefined
+  
   /**
     * 商品标题
     * 
@@ -36,16 +40,29 @@ trait PlusPaymentIAPProduct extends js.Object {
     */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object PlusPaymentIAPProduct {
-  @scala.inline
-  def apply(description: String = null, price: String = null, productid: String = null, title: String = null): PlusPaymentIAPProduct = {
+  
+  inline def apply(): PlusPaymentIAPProduct = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (productid != null) __obj.updateDynamic("productid")(productid.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusPaymentIAPProduct]
   }
+  
+  extension [Self <: PlusPaymentIAPProduct](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    
+    inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
+    
+    inline def setProductid(value: String): Self = StObject.set(x, "productid", value.asInstanceOf[js.Any])
+    
+    inline def setProductidUndefined: Self = StObject.set(x, "productid", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

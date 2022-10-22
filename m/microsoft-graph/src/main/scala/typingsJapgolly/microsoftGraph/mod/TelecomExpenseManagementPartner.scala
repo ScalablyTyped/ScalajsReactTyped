@@ -1,40 +1,59 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TelecomExpenseManagementPartner extends Entity {
+trait TelecomExpenseManagementPartner
+  extends StObject
+     with Entity {
+  
   // Whether the partner's AAD app has been authorized to access Intune.
   var appAuthorized: js.UndefOr[Boolean] = js.undefined
+  
   // Display name of the TEM partner.
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Whether Intune's connection to the TEM service is currently enabled or disabled.
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   // Timestamp of the last request sent to Intune by the TEM partner.
   var lastConnectionDateTime: js.UndefOr[String] = js.undefined
+  
   // URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object TelecomExpenseManagementPartner {
-  @scala.inline
-  def apply(
-    appAuthorized: js.UndefOr[Boolean] = js.undefined,
-    displayName: String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    lastConnectionDateTime: String = null,
-    url: String = null
-  ): TelecomExpenseManagementPartner = {
+  
+  inline def apply(): TelecomExpenseManagementPartner = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appAuthorized)) __obj.updateDynamic("appAuthorized")(appAuthorized.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastConnectionDateTime != null) __obj.updateDynamic("lastConnectionDateTime")(lastConnectionDateTime.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TelecomExpenseManagementPartner]
   }
+  
+  extension [Self <: TelecomExpenseManagementPartner](x: Self) {
+    
+    inline def setAppAuthorized(value: Boolean): Self = StObject.set(x, "appAuthorized", value.asInstanceOf[js.Any])
+    
+    inline def setAppAuthorizedUndefined: Self = StObject.set(x, "appAuthorized", js.undefined)
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setLastConnectionDateTime(value: String): Self = StObject.set(x, "lastConnectionDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastConnectionDateTimeUndefined: Self = StObject.set(x, "lastConnectionDateTime", js.undefined)
+    
+    inline def setUrl(value: NullableOption[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.jsforce.describeResultMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.jsforce.jsforceStrings.tnsColonID
@@ -23,44 +23,40 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.jsforce.jsforceStrings.urnColonSearchLayoutButtonsDisplayed
   - typingsJapgolly.jsforce.jsforceStrings.urnColonSearchLayoutFieldsDisplayed
 */
-trait SOAPType extends js.Object
-
+trait SOAPType extends StObject
 object SOAPType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def tnsColonID: typingsJapgolly.jsforce.jsforceStrings.tnsColonID = this.cast("tns:ID")
-  @scala.inline
-  def urnColonJunctionIdListNames: typingsJapgolly.jsforce.jsforceStrings.urnColonJunctionIdListNames = this.cast("urn:JunctionIdListNames")
-  @scala.inline
-  def urnColonRecordTypesSupported: typingsJapgolly.jsforce.jsforceStrings.urnColonRecordTypesSupported = this.cast("urn:RecordTypesSupported")
-  @scala.inline
-  def urnColonRelationshipReferenceTo: typingsJapgolly.jsforce.jsforceStrings.urnColonRelationshipReferenceTo = this.cast("urn:RelationshipReferenceTo")
-  @scala.inline
-  def urnColonSearchLayoutButtonsDisplayed: typingsJapgolly.jsforce.jsforceStrings.urnColonSearchLayoutButtonsDisplayed = this.cast("urn:SearchLayoutButtonsDisplayed")
-  @scala.inline
-  def urnColonSearchLayoutFieldsDisplayed: typingsJapgolly.jsforce.jsforceStrings.urnColonSearchLayoutFieldsDisplayed = this.cast("urn:SearchLayoutFieldsDisplayed")
-  @scala.inline
-  def urnColonaddress: typingsJapgolly.jsforce.jsforceStrings.urnColonaddress = this.cast("urn:address")
-  @scala.inline
-  def urnColonlocation: typingsJapgolly.jsforce.jsforceStrings.urnColonlocation = this.cast("urn:location")
-  @scala.inline
-  def xsdColonanyType: typingsJapgolly.jsforce.jsforceStrings.xsdColonanyType = this.cast("xsd:anyType")
-  @scala.inline
-  def xsdColonbase64Binary: typingsJapgolly.jsforce.jsforceStrings.xsdColonbase64Binary = this.cast("xsd:base64Binary")
-  @scala.inline
-  def xsdColonboolean: typingsJapgolly.jsforce.jsforceStrings.xsdColonboolean = this.cast("xsd:boolean")
-  @scala.inline
-  def xsdColondate: typingsJapgolly.jsforce.jsforceStrings.xsdColondate = this.cast("xsd:date")
-  @scala.inline
-  def xsdColondateTime: typingsJapgolly.jsforce.jsforceStrings.xsdColondateTime = this.cast("xsd:dateTime")
-  @scala.inline
-  def xsdColondouble: typingsJapgolly.jsforce.jsforceStrings.xsdColondouble = this.cast("xsd:double")
-  @scala.inline
-  def xsdColonint: typingsJapgolly.jsforce.jsforceStrings.xsdColonint = this.cast("xsd:int")
-  @scala.inline
-  def xsdColonstring: typingsJapgolly.jsforce.jsforceStrings.xsdColonstring = this.cast("xsd:string")
-  @scala.inline
-  def xsdColontime: typingsJapgolly.jsforce.jsforceStrings.xsdColontime = this.cast("xsd:time")
+  
+  inline def tnsColonID: typingsJapgolly.jsforce.jsforceStrings.tnsColonID = "tns:ID".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.tnsColonID]
+  
+  inline def urnColonJunctionIdListNames: typingsJapgolly.jsforce.jsforceStrings.urnColonJunctionIdListNames = "urn:JunctionIdListNames".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.urnColonJunctionIdListNames]
+  
+  inline def urnColonRecordTypesSupported: typingsJapgolly.jsforce.jsforceStrings.urnColonRecordTypesSupported = "urn:RecordTypesSupported".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.urnColonRecordTypesSupported]
+  
+  inline def urnColonRelationshipReferenceTo: typingsJapgolly.jsforce.jsforceStrings.urnColonRelationshipReferenceTo = "urn:RelationshipReferenceTo".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.urnColonRelationshipReferenceTo]
+  
+  inline def urnColonSearchLayoutButtonsDisplayed: typingsJapgolly.jsforce.jsforceStrings.urnColonSearchLayoutButtonsDisplayed = "urn:SearchLayoutButtonsDisplayed".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.urnColonSearchLayoutButtonsDisplayed]
+  
+  inline def urnColonSearchLayoutFieldsDisplayed: typingsJapgolly.jsforce.jsforceStrings.urnColonSearchLayoutFieldsDisplayed = "urn:SearchLayoutFieldsDisplayed".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.urnColonSearchLayoutFieldsDisplayed]
+  
+  inline def urnColonaddress: typingsJapgolly.jsforce.jsforceStrings.urnColonaddress = "urn:address".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.urnColonaddress]
+  
+  inline def urnColonlocation: typingsJapgolly.jsforce.jsforceStrings.urnColonlocation = "urn:location".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.urnColonlocation]
+  
+  inline def xsdColonanyType: typingsJapgolly.jsforce.jsforceStrings.xsdColonanyType = "xsd:anyType".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.xsdColonanyType]
+  
+  inline def xsdColonbase64Binary: typingsJapgolly.jsforce.jsforceStrings.xsdColonbase64Binary = "xsd:base64Binary".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.xsdColonbase64Binary]
+  
+  inline def xsdColonboolean: typingsJapgolly.jsforce.jsforceStrings.xsdColonboolean = "xsd:boolean".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.xsdColonboolean]
+  
+  inline def xsdColondate: typingsJapgolly.jsforce.jsforceStrings.xsdColondate = "xsd:date".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.xsdColondate]
+  
+  inline def xsdColondateTime: typingsJapgolly.jsforce.jsforceStrings.xsdColondateTime = "xsd:dateTime".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.xsdColondateTime]
+  
+  inline def xsdColondouble: typingsJapgolly.jsforce.jsforceStrings.xsdColondouble = "xsd:double".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.xsdColondouble]
+  
+  inline def xsdColonint: typingsJapgolly.jsforce.jsforceStrings.xsdColonint = "xsd:int".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.xsdColonint]
+  
+  inline def xsdColonstring: typingsJapgolly.jsforce.jsforceStrings.xsdColonstring = "xsd:string".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.xsdColonstring]
+  
+  inline def xsdColontime: typingsJapgolly.jsforce.jsforceStrings.xsdColontime = "xsd:time".asInstanceOf[typingsJapgolly.jsforce.jsforceStrings.xsdColontime]
 }
-

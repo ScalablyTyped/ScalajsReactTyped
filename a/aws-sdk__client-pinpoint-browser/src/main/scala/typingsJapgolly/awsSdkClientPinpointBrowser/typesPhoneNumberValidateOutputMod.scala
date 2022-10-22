@@ -1,27 +1,41 @@
 package typingsJapgolly.awsSdkClientPinpointBrowser
 
-import typingsJapgolly.awsSdkClientPinpointBrowser.outputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientPinpointBrowser.typesNumberValidateResponseMod.UnmarshalledNumberValidateResponse
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientPinpointBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/types/PhoneNumberValidateOutput", JSImport.Namespace)
-@js.native
-object typesPhoneNumberValidateOutputMod extends js.Object {
-  @js.native
-  trait PhoneNumberValidateOutput extends OutputTypesUnion {
+object typesPhoneNumberValidateOutputMod {
+  
+  trait PhoneNumberValidateOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * Phone Number Validate response.
       */
-    var NumberValidateResponse: UnmarshalledNumberValidateResponse = js.native
+    var NumberValidateResponse: UnmarshalledNumberValidateResponse
   }
-  
+  object PhoneNumberValidateOutput {
+    
+    inline def apply($metadata: ResponseMetadata, NumberValidateResponse: UnmarshalledNumberValidateResponse): PhoneNumberValidateOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], NumberValidateResponse = NumberValidateResponse.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PhoneNumberValidateOutput]
+    }
+    
+    extension [Self <: PhoneNumberValidateOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setNumberValidateResponse(value: UnmarshalledNumberValidateResponse): Self = StObject.set(x, "NumberValidateResponse", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

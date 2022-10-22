@@ -1,71 +1,67 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`10`
-import typingsJapgolly.activexWord.activexWordNumbers.`11`
-import typingsJapgolly.activexWord.activexWordNumbers.`12`
-import typingsJapgolly.activexWord.activexWordNumbers.`13`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
-import typingsJapgolly.activexWord.activexWordNumbers.`5`
-import typingsJapgolly.activexWord.activexWordNumbers.`6`
-import typingsJapgolly.activexWord.activexWordNumbers.`7`
-import typingsJapgolly.activexWord.activexWordNumbers.`8`
-import typingsJapgolly.activexWord.activexWordNumbers.`9`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`10`
+import typingsJapgolly.activexWord.activexWordInts.`11`
+import typingsJapgolly.activexWord.activexWordInts.`12`
+import typingsJapgolly.activexWord.activexWordInts.`13`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import typingsJapgolly.activexWord.activexWordInts.`5`
+import typingsJapgolly.activexWord.activexWordInts.`6`
+import typingsJapgolly.activexWord.activexWordInts.`7`
+import typingsJapgolly.activexWord.activexWordInts.`8`
+import typingsJapgolly.activexWord.activexWordInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`13`
-  - typingsJapgolly.activexWord.activexWordNumbers.`11`
-  - typingsJapgolly.activexWord.activexWordNumbers.`5`
-  - typingsJapgolly.activexWord.activexWordNumbers.`6`
-  - typingsJapgolly.activexWord.activexWordNumbers.`12`
-  - typingsJapgolly.activexWord.activexWordNumbers.`7`
-  - typingsJapgolly.activexWord.activexWordNumbers.`8`
-  - typingsJapgolly.activexWord.activexWordNumbers.`9`
-  - typingsJapgolly.activexWord.activexWordNumbers.`10`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`13`
+  - typingsJapgolly.activexWord.activexWordInts.`11`
+  - typingsJapgolly.activexWord.activexWordInts.`5`
+  - typingsJapgolly.activexWord.activexWordInts.`6`
+  - typingsJapgolly.activexWord.activexWordInts.`12`
+  - typingsJapgolly.activexWord.activexWordInts.`7`
+  - typingsJapgolly.activexWord.activexWordInts.`8`
+  - typingsJapgolly.activexWord.activexWordInts.`9`
+  - typingsJapgolly.activexWord.activexWordInts.`10`
 */
-trait WdHelpType extends js.Object
-
+trait WdHelpType extends StObject
 object WdHelpType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdHelp: `0` = this.cast(0)
-  @scala.inline
-  def wdHelpAbout: `1` = this.cast(1)
-  @scala.inline
-  def wdHelpActiveWindow: `2` = this.cast(2)
-  @scala.inline
-  def wdHelpContents: `3` = this.cast(3)
-  @scala.inline
-  def wdHelpExamplesAndDemos: `4` = this.cast(4)
-  @scala.inline
-  def wdHelpHWP: `13` = this.cast(13)
-  @scala.inline
-  def wdHelpIchitaro: `11` = this.cast(11)
-  @scala.inline
-  def wdHelpIndex: `5` = this.cast(5)
-  @scala.inline
-  def wdHelpKeyboard: `6` = this.cast(6)
-  @scala.inline
-  def wdHelpPE2: `12` = this.cast(12)
-  @scala.inline
-  def wdHelpPSSHelp: `7` = this.cast(7)
-  @scala.inline
-  def wdHelpQuickPreview: `8` = this.cast(8)
-  @scala.inline
-  def wdHelpSearch: `9` = this.cast(9)
-  @scala.inline
-  def wdHelpUsingHelp: `10` = this.cast(10)
+  
+  inline def wdHelp: `0` = 0.asInstanceOf[`0`]
+  
+  inline def wdHelpAbout: `1` = 1.asInstanceOf[`1`]
+  
+  inline def wdHelpActiveWindow: `2` = 2.asInstanceOf[`2`]
+  
+  inline def wdHelpContents: `3` = 3.asInstanceOf[`3`]
+  
+  inline def wdHelpExamplesAndDemos: `4` = 4.asInstanceOf[`4`]
+  
+  inline def wdHelpHWP: `13` = 13.asInstanceOf[`13`]
+  
+  inline def wdHelpIchitaro: `11` = 11.asInstanceOf[`11`]
+  
+  inline def wdHelpIndex: `5` = 5.asInstanceOf[`5`]
+  
+  inline def wdHelpKeyboard: `6` = 6.asInstanceOf[`6`]
+  
+  inline def wdHelpPE2: `12` = 12.asInstanceOf[`12`]
+  
+  inline def wdHelpPSSHelp: `7` = 7.asInstanceOf[`7`]
+  
+  inline def wdHelpQuickPreview: `8` = 8.asInstanceOf[`8`]
+  
+  inline def wdHelpSearch: `9` = 9.asInstanceOf[`9`]
+  
+  inline def wdHelpUsingHelp: `10` = 10.asInstanceOf[`10`]
 }
-

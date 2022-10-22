@@ -1,14 +1,13 @@
 package typingsJapgolly.gitlab.mod
 
-import typingsJapgolly.gitlab.baseServiceMod.BaseServiceOptions
+import typingsJapgolly.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitlab", "IssueNotes")
 @js.native
-class IssueNotes ()
-  extends typingsJapgolly.gitlab.servicesMod.IssueNotes {
+open class IssueNotes protected ()
+  extends typingsJapgolly.gitlab.distTypesCoreServicesMod.IssueNotes {
   def this(options: BaseServiceOptions) = this()
 }
-

@@ -1,15 +1,17 @@
 package typingsJapgolly.winrt.Windows.Networking.Connectivity
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Connectivity.NetworkItem")
-@js.native
-class NetworkItem () extends INetworkItem {
-  /* CompleteClass */
-  override var networkId: String = js.native
-  /* CompleteClass */
-  override def getNetworkTypes(): NetworkTypes = js.native
+trait NetworkItem
+  extends StObject
+     with INetworkItem
+object NetworkItem {
+  
+  inline def apply(getNetworkTypes: CallbackTo[NetworkTypes], networkId: String): NetworkItem = {
+    val __obj = js.Dynamic.literal(getNetworkTypes = getNetworkTypes.toJsFn, networkId = networkId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkItem]
+  }
 }
-

@@ -1,20 +1,23 @@
 package typingsJapgolly.jsurl
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UrlQuery extends js.Object {
+trait UrlQuery extends StObject {
+  
   def clear(): Unit
 }
-
 object UrlQuery {
-  @scala.inline
-  def apply(clear: Callback): UrlQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear.toJsFn)
+  
+  inline def apply(clear: Callback): UrlQuery = {
+    val __obj = js.Dynamic.literal(clear = clear.toJsFn)
     __obj.asInstanceOf[UrlQuery]
   }
+  
+  extension [Self <: UrlQuery](x: Self) {
+    
+    inline def setClear(value: Callback): Self = StObject.set(x, "clear", value.toJsFn)
+  }
 }
-

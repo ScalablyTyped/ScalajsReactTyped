@@ -1,6 +1,5 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`data-file`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`feature-record-set-layer`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`linear-unit`
@@ -13,48 +12,30 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.date
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.double
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.field
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.long
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.string
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.string_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ParameterValue
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
+  
   /**
     * Specifies the parameter's data type.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ParameterValue.html#dataType)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#dataType)
     */
-  var dataType: boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string | `multi-value` = js.native
+  var dataType: boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string_ | `multi-value` = js.native
+  
   /**
-    * The value of the parameter. The data structure of this value depends on the `dataType`.
+    * The value of the parameter.
     *
-    * Data Type | JavaScript Type
-    * ----------|----------------
-    * string | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-    * double | [Number (float)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
-    * long | [Number (int)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
-    * boolean | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
-    * date | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
-    * linear-unit | [LinearUnit](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LinearUnit.html)
-    * data-file | [DataFile](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataFile.html)
-    * raster-data | [RasterData](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RasterData.html)
-    * record-set | [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html)
-    * raster-data-layer | [RasterData](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RasterData.html)
-    * feature-record-set-layer | [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html)
-    * field | [Field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html)
-    * multi-value | [Object[]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-    *               An array of any of the objects listed above.
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ParameterValue.html#value)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#value)
     */
-  var value: js.Any = js.native
+  var value: Boolean | DataFile | js.Date | Double | FeatureSet | Field | LinearUnit | RasterData | String | (js.Array[
+    Boolean | DataFile | js.Date | Double | FeatureSet | Field | LinearUnit | RasterData | String
+  ]) = js.native
 }
-
-@JSGlobal("__esri.ParameterValue")
-@js.native
-object ParameterValue extends TopLevel[ParameterValueConstructor]
-

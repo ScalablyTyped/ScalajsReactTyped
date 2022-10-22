@@ -1,129 +1,245 @@
 package typingsJapgolly.webix.mod.ui
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.webix.mod.EventHash
 import typingsJapgolly.webix.mod.WebixCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait toolbarConfig extends js.Object {
-  var animate: js.UndefOr[js.Any] = js.undefined
+trait toolbarConfig extends StObject {
+  
+  var animate: js.UndefOr[Any] = js.undefined
+  
   var borderless: js.UndefOr[Boolean] = js.undefined
-  var cols: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var cols: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var complexData: js.UndefOr[Boolean] = js.undefined
+  
   var container: js.UndefOr[String | HTMLElement] = js.undefined
-  var css: js.UndefOr[js.Any] = js.undefined
-  var data: js.UndefOr[String | js.Array[_]] = js.undefined
+  
+  var css: js.UndefOr[Any] = js.undefined
+  
+  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
+  
   var dataFeed: js.UndefOr[String | WebixCallback] = js.undefined
+  
   var datatype: js.UndefOr[String] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var elements: js.UndefOr[js.Array[_]] = js.undefined
-  var elementsConfig: js.UndefOr[js.Any] = js.undefined
+  
+  var elements: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var elementsConfig: js.UndefOr[Any] = js.undefined
+  
   var gravity: js.UndefOr[Double] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
   var id: js.UndefOr[String | Double] = js.undefined
+  
   var isolate: js.UndefOr[Boolean] = js.undefined
+  
   var margin: js.UndefOr[Double] = js.undefined
+  
   var maxHeight: js.UndefOr[Double] = js.undefined
+  
   var maxWidth: js.UndefOr[Double] = js.undefined
+  
   var minHeight: js.UndefOr[Double] = js.undefined
+  
   var minWidth: js.UndefOr[Double] = js.undefined
+  
   var on: js.UndefOr[EventHash] = js.undefined
-  var padding: js.UndefOr[js.Any] = js.undefined
+  
+  var padding: js.UndefOr[Any] = js.undefined
+  
   var paddingX: js.UndefOr[Double] = js.undefined
+  
   var paddingY: js.UndefOr[Double] = js.undefined
+  
   var responsive: js.UndefOr[String] = js.undefined
-  var rows: js.UndefOr[js.Array[_]] = js.undefined
-  var rules: js.UndefOr[js.Any] = js.undefined
+  
+  var rows: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var rules: js.UndefOr[Any] = js.undefined
+  
   var scroll: js.UndefOr[Boolean | String] = js.undefined
+  
   var scrollSpeed: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[js.Any] = js.undefined
+  
+  var url: js.UndefOr[Any] = js.undefined
+  
   var view: js.UndefOr[String] = js.undefined
+  
   var visibleBatch: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object toolbarConfig {
-  @scala.inline
-  def apply(
-    animate: js.Any = null,
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    cols: js.Array[_] = null,
-    complexData: js.UndefOr[Boolean] = js.undefined,
-    container: String | HTMLElement = null,
-    css: js.Any = null,
-    data: String | js.Array[_] = null,
-    dataFeed: String | WebixCallback = null,
-    datatype: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elements: js.Array[_] = null,
-    elementsConfig: js.Any = null,
-    gravity: Int | Double = null,
-    height: Int | Double = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    id: String | Double = null,
-    isolate: js.UndefOr[Boolean] = js.undefined,
-    margin: Int | Double = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    on: EventHash = null,
-    padding: js.Any = null,
-    paddingX: Int | Double = null,
-    paddingY: Int | Double = null,
-    responsive: String = null,
-    rows: js.Array[_] = null,
-    rules: js.Any = null,
-    scroll: Boolean | String = null,
-    scrollSpeed: String = null,
-    `type`: String = null,
-    url: js.Any = null,
-    view: String = null,
-    visibleBatch: String = null,
-    width: Int | Double = null
-  ): toolbarConfig = {
+  
+  inline def apply(): toolbarConfig = {
     val __obj = js.Dynamic.literal()
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (!js.isUndefined(complexData)) __obj.updateDynamic("complexData")(complexData.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataFeed != null) __obj.updateDynamic("dataFeed")(dataFeed.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
-    if (elementsConfig != null) __obj.updateDynamic("elementsConfig")(elementsConfig.asInstanceOf[js.Any])
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isolate)) __obj.updateDynamic("isolate")(isolate.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
-    if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
-    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (visibleBatch != null) __obj.updateDynamic("visibleBatch")(visibleBatch.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[toolbarConfig]
   }
+  
+  extension [Self <: toolbarConfig](x: Self) {
+    
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    
+    inline def setCols(value: js.Array[Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    
+    inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+    
+    inline def setColsVarargs(value: Any*): Self = StObject.set(x, "cols", js.Array(value*))
+    
+    inline def setComplexData(value: Boolean): Self = StObject.set(x, "complexData", value.asInstanceOf[js.Any])
+    
+    inline def setComplexDataUndefined: Self = StObject.set(x, "complexData", js.undefined)
+    
+    inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    
+    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataFeed(value: String | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
+    
+    inline def setDataFeedUndefined: Self = StObject.set(x, "dataFeed", js.undefined)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+    
+    inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setElements(value: js.Array[Any]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    
+    inline def setElementsConfig(value: Any): Self = StObject.set(x, "elementsConfig", value.asInstanceOf[js.Any])
+    
+    inline def setElementsConfigUndefined: Self = StObject.set(x, "elementsConfig", js.undefined)
+    
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    
+    inline def setElementsVarargs(value: Any*): Self = StObject.set(x, "elements", js.Array(value*))
+    
+    inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIsolate(value: Boolean): Self = StObject.set(x, "isolate", value.asInstanceOf[js.Any])
+    
+    inline def setIsolateUndefined: Self = StObject.set(x, "isolate", js.undefined)
+    
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    
+    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
+    
+    inline def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
+    
+    inline def setResponsive(value: String): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+    
+    inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+    
+    inline def setRows(value: js.Array[Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    
+    inline def setRowsVarargs(value: Any*): Self = StObject.set(x, "rows", js.Array(value*))
+    
+    inline def setRules(value: Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    
+    inline def setScroll(value: Boolean | String): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    
+    inline def setScrollSpeed(value: String): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
+    
+    inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setVisibleBatch(value: String): Self = StObject.set(x, "visibleBatch", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleBatchUndefined: Self = StObject.set(x, "visibleBatch", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

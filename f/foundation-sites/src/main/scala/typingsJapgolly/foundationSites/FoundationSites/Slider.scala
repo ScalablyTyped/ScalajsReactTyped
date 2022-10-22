@@ -1,21 +1,8 @@
 package typingsJapgolly.foundationSites.FoundationSites
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://foundation.zurb.com/sites/docs/slider.html#javascript-reference
-trait Slider extends js.Object {
-  def destroy(): Unit
-}
-
-object Slider {
-  @scala.inline
-  def apply(destroy: Callback): Slider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy.toJsFn)
-    __obj.asInstanceOf[Slider]
-  }
-}
-
+// https://get.foundation/sites/docs/slider.html#javascript-reference
+trait Slider extends StObject

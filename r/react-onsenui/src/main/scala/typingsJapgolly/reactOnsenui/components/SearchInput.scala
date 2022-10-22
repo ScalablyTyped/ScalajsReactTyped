@@ -1,59 +1,49 @@
 package typingsJapgolly.reactOnsenui.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.ReactEventFrom
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameValue
-import typingsJapgolly.std.Event_
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
+import typingsJapgolly.reactOnsenui.anon.InputId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SearchInput {
-  def apply(
-    className: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    inputId: String = null,
-    modifier: String = null,
-    onChange: /* e */ Event_ => Callback = null,
-    style: CSSProperties = null,
-    value: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    HTMLAttributesidclassNameValue, 
-    typingsJapgolly.reactOnsenui.mod.SearchInput, 
-    Unit, 
-    HTMLAttributesidclassNameValue
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inputId != null) __obj.updateDynamic("inputId")(inputId.asInstanceOf[js.Any])
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.std.Event_) => onChange(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameValue, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactOnsenui.mod.SearchInput](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameValue])(children: _*)
-  }
   @JSImport("react-onsenui", "SearchInput")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactOnsenui.mod.SearchInput] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def inputId(value: String): this.type = set("inputId", value.asInstanceOf[js.Any])
+    
+    inline def modifier(value: String): this.type = set("modifier", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* e */ ReactEventFrom[Any & Element] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* e */ ReactEventFrom[Any & Element]) => value(t0).runNow()))
+    
+    inline def onInput(value: /* e */ ReactEventFrom[Any & Element] => Callback): this.type = set("onInput", js.Any.fromFunction1((t0: /* e */ ReactEventFrom[Any & Element]) => value(t0).runNow()))
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def value(value: String): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: SearchInput.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: HTMLAttributesidclassName & InputId): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

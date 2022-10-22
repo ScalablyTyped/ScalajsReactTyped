@@ -1,20 +1,26 @@
 package typingsJapgolly.node.dnsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MxRecord extends js.Object {
+trait MxRecord extends StObject {
+  
   var exchange: String
+  
   var priority: Double
 }
-
 object MxRecord {
-  @scala.inline
-  def apply(exchange: String, priority: Double): MxRecord = {
-    val __obj = js.Dynamic.literal(exchange = exchange.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
   
+  inline def apply(exchange: String, priority: Double): MxRecord = {
+    val __obj = js.Dynamic.literal(exchange = exchange.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[MxRecord]
   }
+  
+  extension [Self <: MxRecord](x: Self) {
+    
+    inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
+    
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.opsworksMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsOpsworksMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "OpsWorks")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class OpsWorks ()
-  extends typingsJapgolly.awsSdk.allMod.OpsWorks {
+open class OpsWorks ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.OpsWorks {
   def this(options: ClientConfiguration) = this()
 }
-

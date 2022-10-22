@@ -11,12 +11,12 @@ a simple ring buffer data structure
 | Full name          | ringbufferjs |
 | Keywords           | ring, buffer, circular, queue, ring buffer, circular buffer, data structure |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 6225632 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 28256.0 |
+| # stars            | 25.0 |
 
 ## Links
-- [Homepage](https://github.com/janogonzalez/ringbufferjs#readme)
+- [Homepage](https://github.com/janogonzalez/ringbufferjs)
 - [Bugs](https://github.com/janogonzalez/ringbufferjs/issues)
 - [Repository](https://github.com/janogonzalez/ringbufferjs)
 - [Npm](https://www.npmjs.com/package/ringbufferjs)

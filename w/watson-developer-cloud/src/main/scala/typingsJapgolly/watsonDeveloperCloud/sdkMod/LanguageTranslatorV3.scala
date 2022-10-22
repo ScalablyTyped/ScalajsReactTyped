@@ -1,17 +1,17 @@
 package typingsJapgolly.watsonDeveloperCloud.sdkMod
 
-import typingsJapgolly.watsonDeveloperCloud.v3Mod.Options
-import typingsJapgolly.watsonDeveloperCloud.v3Mod.^
+import typingsJapgolly.watsonDeveloperCloud.languageTranslatorV3Mod.Options
+import typingsJapgolly.watsonDeveloperCloud.languageTranslatorV3Mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IBM Watson&trade; Language Translator translates text from one language to another. The service offers multiple IBM provided translation models that you can customize based on your unique terminology and language. Use Language Translator to take news from across the globe and present it in your language, communicate with your customers in their own language, and more.
   */
 @JSImport("watson-developer-cloud/sdk", "LanguageTranslatorV3")
 @js.native
-class LanguageTranslatorV3 protected () extends ^ {
+open class LanguageTranslatorV3 protected () extends ^ {
   /**
     * Construct a LanguageTranslatorV3 object.
     *
@@ -32,11 +32,15 @@ class LanguageTranslatorV3 protected () extends ^ {
     */
   def this(options: Options) = this()
 }
-
-/* static members */
-@JSImport("watson-developer-cloud/sdk", "LanguageTranslatorV3")
-@js.native
-object LanguageTranslatorV3 extends js.Object {
-  var URL: String = js.native
+object LanguageTranslatorV3 {
+  
+  @JSImport("watson-developer-cloud/sdk", "LanguageTranslatorV3")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("watson-developer-cloud/sdk", "LanguageTranslatorV3.URL")
+  @js.native
+  def URL: String = js.native
+  inline def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
 }
-

@@ -12,109 +12,62 @@ import typingsJapgolly.dateFp.dateFpStrings.seconds
 import typingsJapgolly.dateFp.dateFpStrings.week
 import typingsJapgolly.dateFp.dateFpStrings.year
 import typingsJapgolly.dateFp.dateFpStrings.years
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fp", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @JSName("add")
-  def add_days(unit: days, value: Double, date: js.Date): js.Date = js.native
-  @JSName("add")
-  def add_hours(unit: hours, value: Double, date: js.Date): js.Date = js.native
-  @JSName("add")
-  def add_milliseconds(unit: milliseconds, value: Double, date: js.Date): js.Date = js.native
-  @JSName("add")
-  def add_minutes(unit: minutes, value: Double, date: js.Date): js.Date = js.native
-  @JSName("add")
-  def add_months(unit: months, value: Double, date: js.Date): js.Date = js.native
-  @JSName("add")
-  def add_seconds(unit: seconds, value: Double, date: js.Date): js.Date = js.native
-  @JSName("add")
-  def add_years(unit: years, value: Double, date: js.Date): js.Date = js.native
-  def clone(date: js.Date): js.Date = js.native
-  @JSName("convertTo")
-  def convertTo_days(unit: days, date: js.Date): Double = js.native
-  @JSName("convertTo")
-  def convertTo_hours(unit: hours, date: js.Date): Double = js.native
-  @JSName("convertTo")
-  def convertTo_milliseconds(unit: milliseconds, date: js.Date): Double = js.native
-  @JSName("convertTo")
-  def convertTo_minutes(unit: minutes, date: js.Date): Double = js.native
-  @JSName("convertTo")
-  def convertTo_seconds(unit: seconds, date: js.Date): Double = js.native
-  @JSName("diff")
-  def diff_days(unit: days, a: js.Date, b: js.Date): Double = js.native
-  @JSName("diff")
-  def diff_hours(unit: hours, a: js.Date, b: js.Date): Double = js.native
-  @JSName("diff")
-  def diff_milliseconds(unit: milliseconds, a: js.Date, b: js.Date): Double = js.native
-  @JSName("diff")
-  def diff_minutes(unit: minutes, a: js.Date, b: js.Date): Double = js.native
-  @JSName("diff")
-  def diff_months(unit: months, a: js.Date, b: js.Date): Double = js.native
-  @JSName("diff")
-  def diff_seconds(unit: seconds, a: js.Date, b: js.Date): Double = js.native
-  @JSName("diff")
-  def diff_years(unit: years, a: js.Date, b: js.Date): Double = js.native
-  def equals(a: js.Date, b: js.Date): Boolean = js.native
-  def format(format: String, date: js.Date): String = js.native
-  def fromTime(time: Double): js.Date = js.native
-  @JSName("get")
-  def get_date(property: date, date: js.Date): Double = js.native
-  @JSName("get")
-  def get_day(property: day, date: js.Date): Double = js.native
-  @JSName("get")
-  def get_hours(property: hours, date: js.Date): Double = js.native
-  @JSName("get")
-  def get_milliseconds(property: milliseconds, date: js.Date): Double = js.native
-  @JSName("get")
-  def get_minutes(property: minutes, date: js.Date): Double = js.native
-  @JSName("get")
-  def get_month(property: month, date: js.Date): Double = js.native
-  @JSName("get")
-  def get_seconds(property: seconds, date: js.Date): Double = js.native
-  @JSName("get")
-  def get_week(property: week, date: js.Date): Double = js.native
-  @JSName("get")
-  def get_year(property: year, date: js.Date): Double = js.native
-  def isLeapYear(date: js.Date): Boolean = js.native
-  def isValid(date: js.Date): Boolean = js.native
-  def max(dates: js.Array[js.Date]): js.Date = js.native
-  def min(dates: js.Array[js.Date]): js.Date = js.native
-  def of(dateParts: js.Array[Double]): js.Date = js.native
-  def parse(format: String, date: String): js.Date = js.native
-  @JSName("set")
-  def set_date(property: date, value: Double, date: js.Date): js.Date = js.native
-  @JSName("set")
-  def set_hours(property: hours, value: Double, date: js.Date): js.Date = js.native
-  @JSName("set")
-  def set_milliseconds(property: milliseconds, value: Double, date: js.Date): js.Date = js.native
-  @JSName("set")
-  def set_minutes(property: minutes, value: Double, date: js.Date): js.Date = js.native
-  @JSName("set")
-  def set_month(property: month, value: Double, date: js.Date): js.Date = js.native
-  @JSName("set")
-  def set_seconds(property: seconds, value: Double, date: js.Date): js.Date = js.native
-  @JSName("set")
-  def set_week(property: week, value: Double, date: js.Date): js.Date = js.native
-  @JSName("set")
-  def set_year(property: year, value: Double, date: js.Date): js.Date = js.native
-  @JSName("sub")
-  def sub_days(unit: days, value: Double, date: js.Date): js.Date = js.native
-  @JSName("sub")
-  def sub_hours(unit: hours, value: Double, date: js.Date): js.Date = js.native
-  @JSName("sub")
-  def sub_milliseconds(unit: milliseconds, value: Double, date: js.Date): js.Date = js.native
-  @JSName("sub")
-  def sub_minutes(unit: minutes, value: Double, date: js.Date): js.Date = js.native
-  @JSName("sub")
-  def sub_months(unit: months, value: Double, date: js.Date): js.Date = js.native
-  @JSName("sub")
-  def sub_seconds(unit: seconds, value: Double, date: js.Date): js.Date = js.native
-  @JSName("sub")
-  def sub_years(unit: years, value: Double, date: js.Date): js.Date = js.native
-  def unixTime(date: js.Date): Double = js.native
+object mod {
+  
+  @JSImport("date-fp", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def add(
+    unit: milliseconds | seconds | minutes | hours | days | months | years,
+    value: Double,
+    date: js.Date
+  ): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(unit.asInstanceOf[js.Any], value.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  
+  inline def clone_(date: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(date.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+  
+  inline def convertTo(unit: milliseconds | seconds | minutes | hours | days, date: js.Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convertTo")(unit.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def diff(unit: milliseconds | seconds | minutes | hours | days | months | years, a: js.Date, b: js.Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(unit.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def equals_(a: js.Date, b: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def format(format: String, date: js.Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(format.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def fromTime(time: Double): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTime")(time.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+  
+  inline def get(
+    property: milliseconds | seconds | minutes | hours | date | day | week | month | year,
+    date: js.Date
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(property.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def isLeapYear(date: js.Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isValid(date: js.Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def max(dates: js.Array[js.Date]): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dates.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+  
+  inline def min(dates: js.Array[js.Date]): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dates.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+  
+  inline def of(dateParts: js.Array[Double]): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(dateParts.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+  
+  inline def parse(format: String, date: String): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(format.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  
+  inline def set(
+    property: milliseconds | seconds | minutes | hours | date | week | month | year,
+    value: Double,
+    date: js.Date
+  ): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  
+  inline def sub(
+    unit: milliseconds | seconds | minutes | hours | days | months | years,
+    value: Double,
+    date: js.Date
+  ): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(unit.asInstanceOf[js.Any], value.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  
+  inline def unixTime(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unixTime")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
 }
-

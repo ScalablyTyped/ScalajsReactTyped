@@ -1,59 +1,68 @@
 package typingsJapgolly.antlr4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antlr4/error", JSImport.Namespace)
-@js.native
-object errorMod extends js.Object {
-  @js.native
-  class BailErrorStrategy ()
-    extends typingsJapgolly.antlr4.errorStrategyMod.ErrorStrategy
+object errorMod {
   
+  @JSImport("antlr4/error", "BailErrorStrategy")
   @js.native
-  class ConsoleErrorListener ()
-    extends typingsJapgolly.antlr4.errorListenerMod.ErrorListener
+  open class BailErrorStrategy ()
+    extends typingsJapgolly.antlr4.errorErrorStrategyMod.BailErrorStrategy
   
+  @JSImport("antlr4/error", "ConsoleErrorListener")
   @js.native
-  class DefaultErrorStrategy ()
-    extends typingsJapgolly.antlr4.errorStrategyMod.ErrorStrategy
+  open class ConsoleErrorListener ()
+    extends typingsJapgolly.antlr4.errorErrorListenerMod.ConsoleErrorListener
   
+  @JSImport("antlr4/error", "DefaultErrorStrategy")
   @js.native
-  class ErrorListener ()
-    extends typingsJapgolly.antlr4.errorListenerMod.ErrorListener
+  open class DefaultErrorStrategy ()
+    extends typingsJapgolly.antlr4.errorErrorStrategyMod.DefaultErrorStrategy
   
+  @JSImport("antlr4/error", "ErrorListener")
   @js.native
-  class ErrorStrategy ()
-    extends typingsJapgolly.antlr4.errorStrategyMod.ErrorStrategy
+  open class ErrorListener ()
+    extends typingsJapgolly.antlr4.errorErrorListenerMod.ErrorListener
   
+  @JSImport("antlr4/error", "ErrorStrategy")
   @js.native
-  class FailedPredicateException ()
-    extends typingsJapgolly.antlr4.errorsMod.RecognitionException
+  open class ErrorStrategy ()
+    extends typingsJapgolly.antlr4.errorErrorStrategyMod.ErrorStrategy
   
+  @JSImport("antlr4/error", "FailedPredicateException")
   @js.native
-  class InputMismatchException ()
-    extends typingsJapgolly.antlr4.errorsMod.RecognitionException
+  open class FailedPredicateException ()
+    extends typingsJapgolly.antlr4.errorErrorsMod.FailedPredicateException
   
+  @JSImport("antlr4/error", "InputMismatchException")
   @js.native
-  class LexerNoViableAltException ()
-    extends typingsJapgolly.antlr4.errorsMod.RecognitionException
+  open class InputMismatchException ()
+    extends typingsJapgolly.antlr4.errorErrorsMod.InputMismatchException
   
+  @JSImport("antlr4/error", "LexerNoViableAltException")
   @js.native
-  class NoViableAltException ()
-    extends typingsJapgolly.antlr4.errorsMod.RecognitionException
+  open class LexerNoViableAltException ()
+    extends typingsJapgolly.antlr4.errorErrorsMod.LexerNoViableAltException
   
+  @JSImport("antlr4/error", "NoViableAltException")
   @js.native
-  class ParseCancellationException ()
-    extends typingsJapgolly.antlr4.errorsMod.RecognitionException
+  open class NoViableAltException ()
+    extends typingsJapgolly.antlr4.errorErrorsMod.NoViableAltException
   
+  @JSImport("antlr4/error", "ParseCancellationException")
   @js.native
-  class ProxyErrorListener ()
-    extends typingsJapgolly.antlr4.errorListenerMod.ErrorListener
+  open class ParseCancellationException ()
+    extends typingsJapgolly.antlr4.errorErrorsMod.ParseCancellationException
   
+  @JSImport("antlr4/error", "ProxyErrorListener")
   @js.native
-  class RecognitionException ()
-    extends typingsJapgolly.antlr4.errorsMod.RecognitionException
+  open class ProxyErrorListener ()
+    extends typingsJapgolly.antlr4.errorErrorListenerMod.ProxyErrorListener
   
+  @JSImport("antlr4/error", "RecognitionException")
+  @js.native
+  open class RecognitionException ()
+    extends typingsJapgolly.antlr4.errorErrorsMod.RecognitionException
 }
-

@@ -1,19 +1,20 @@
 package typingsJapgolly.objectInspect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object objectInspectStrings {
-  @js.native
-  sealed trait double extends js.Object
   
   @js.native
-  sealed trait single extends js.Object
+  sealed trait Charactertabulation extends StObject
+  inline def Charactertabulation: Charactertabulation = "\t".asInstanceOf[Charactertabulation]
   
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
+  @js.native
+  sealed trait double extends StObject
+  inline def double: double = "double".asInstanceOf[double]
+  
+  @js.native
+  sealed trait single extends StObject
+  inline def single: single = "single".asInstanceOf[single]
 }
-

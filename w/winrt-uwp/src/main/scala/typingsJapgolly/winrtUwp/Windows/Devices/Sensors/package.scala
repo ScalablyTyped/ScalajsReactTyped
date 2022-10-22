@@ -1,10 +1,10 @@
-package typingsJapgolly.winrtUwp.Windows.Devices
+package typingsJapgolly.winrtUwp.Windows.Devices.Sensors
 
+import typingsJapgolly.winrtUwp.Windows.IInspectable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Sensors {
-  /** Identifies a threshold for sensor data. When this threshold is crossed, the sensor trigger will activate. */
-  type ISensorDataThreshold = typingsJapgolly.winrtUwp.Windows.IInspectable
-}
+
+/** Identifies a threshold for sensor data. When this threshold is crossed, the sensor trigger will activate. */
+type ISensorDataThreshold = IInspectable

@@ -1,17 +1,19 @@
 package typingsJapgolly.matrixAppserviceBridge.mod
 
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matrix-appservice-bridge", "RemoteUser")
 @js.native
-class RemoteUser protected () extends js.Object {
+open class RemoteUser protected ()
+  extends typingsJapgolly.matrixAppserviceBridge.libModelsUsersRemoteMod.RemoteUser {
+  /**
+    * @param identifier The unique ID for this user.
+    * @param data The serialized key-value data object to assign to this user.
+    * @throws If identifier is not supplied.
+    */
   def this(id: String) = this()
-  def this(id: String, data: js.Object) = this()
-  def get(key: String): js.Object = js.native
-  def getId(): String = js.native
-  def serialize(): js.Object = js.native
-  def set(key: String, `val`: js.Object): Unit = js.native
+  def this(id: String, data: Record[String, Any]) = this()
 }
-

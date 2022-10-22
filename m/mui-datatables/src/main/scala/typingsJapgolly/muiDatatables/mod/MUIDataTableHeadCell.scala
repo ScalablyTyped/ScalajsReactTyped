@@ -1,39 +1,54 @@
 package typingsJapgolly.muiDatatables.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MUIDataTableHeadCell extends js.Object {
-  var children: js.UndefOr[js.Any] = js.undefined
+trait MUIDataTableHeadCell extends StObject {
+  
+  var children: js.UndefOr[Any] = js.undefined
+  
   var classes: js.UndefOr[js.Object] = js.undefined
+  
   var hint: String
-  var options: js.Object
+  
+  var options: MUIDataTableOptions
+  
   var sort: Boolean
-  var sortDirection: js.UndefOr[SortDirection] = js.undefined
+  
+  var sortOrder: js.UndefOr[MUISortOptions] = js.undefined
+  
   def toggleSort(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): js.Any
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
+  ): Any
 }
-
 object MUIDataTableHeadCell {
-  @scala.inline
-  def apply(
-    hint: String,
-    options: js.Object,
-    sort: Boolean,
-    toggleSort: js.Any => CallbackTo[js.Any],
-    children: js.Any = null,
-    classes: js.Object = null,
-    sortDirection: SortDirection = null
-  ): MUIDataTableHeadCell = {
-    val __obj = js.Dynamic.literal(hint = hint.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any])
-    __obj.updateDynamic("toggleSort")(js.Any.fromFunction1((t0: js.Any) => toggleSort(t0).runNow()))
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection.asInstanceOf[js.Any])
+  
+  inline def apply(hint: String, options: MUIDataTableOptions, sort: Boolean, toggleSort: Any => Any): MUIDataTableHeadCell = {
+    val __obj = js.Dynamic.literal(hint = hint.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any], toggleSort = js.Any.fromFunction1(toggleSort))
     __obj.asInstanceOf[MUIDataTableHeadCell]
   }
+  
+  extension [Self <: MUIDataTableHeadCell](x: Self) {
+    
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    
+    inline def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortOrder(value: MUISortOptions): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    
+    inline def setToggleSort(value: Any => Any): Self = StObject.set(x, "toggleSort", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,36 +1,55 @@
 package typingsJapgolly.node.childProcessMod
 
-import typingsJapgolly.node.NodeJS.Signals
+import typingsJapgolly.node.processMod.global.NodeJS.Signals
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpawnSyncReturns[T] extends js.Object {
+trait SpawnSyncReturns[T] extends StObject {
+  
   var error: js.UndefOr[js.Error] = js.undefined
-  var output: js.Array[String]
+  
+  var output: js.Array[T | Null]
+  
   var pid: Double
+  
   var signal: Signals | Null
+  
   var status: Double | Null
+  
   var stderr: T
+  
   var stdout: T
 }
-
 object SpawnSyncReturns {
-  @scala.inline
-  def apply[T](
-    output: js.Array[String],
-    pid: Double,
-    stderr: T,
-    stdout: T,
-    error: js.Error = null,
-    signal: Signals = null,
-    status: Int | Double = null
-  ): SpawnSyncReturns[T] = {
-    val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+  
+  inline def apply[T](output: js.Array[T | Null], pid: Double, stderr: T, stdout: T): SpawnSyncReturns[T] = {
+    val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any], signal = null, status = null)
     __obj.asInstanceOf[SpawnSyncReturns[T]]
   }
+  
+  extension [Self <: SpawnSyncReturns[?], T](x: Self & SpawnSyncReturns[T]) {
+    
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setOutput(value: js.Array[T | Null]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    
+    inline def setOutputVarargs(value: (T | Null)*): Self = StObject.set(x, "output", js.Array(value*))
+    
+    inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    
+    inline def setSignal(value: Signals): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalNull: Self = StObject.set(x, "signal", null)
+    
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
+    inline def setStderr(value: T): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+    
+    inline def setStdout(value: T): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+  }
 }
-

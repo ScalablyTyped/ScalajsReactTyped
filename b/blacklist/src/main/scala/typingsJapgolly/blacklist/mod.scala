@@ -1,14 +1,16 @@
 package typingsJapgolly.blacklist
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("blacklist", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(src: js.Any, args: String*): js.Any = js.native
-  def apply(src: js.Any, spec: StringDictionary[Boolean]): js.Any = js.native
+object mod {
+  
+  inline def apply(src: Any, args: String*): Any = ^.asInstanceOf[js.Dynamic].apply(scala.List(src.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def apply(src: Any, spec: StringDictionary[Boolean]): Any = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  @JSImport("blacklist", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

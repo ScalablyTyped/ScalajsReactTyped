@@ -1,10 +1,10 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapRadioButtonList")
 @js.native
-class BootstrapRadioButtonList () extends BootstrapListBox
-
+trait BootstrapRadioButtonList
+  extends StObject
+     with BootstrapListBox

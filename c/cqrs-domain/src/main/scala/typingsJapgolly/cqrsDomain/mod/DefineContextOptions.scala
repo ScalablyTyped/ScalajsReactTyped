@@ -1,24 +1,29 @@
 package typingsJapgolly.cqrsDomain.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // endregion
 // region defineContext
-trait DefineContextOptions extends js.Object {
+trait DefineContextOptions extends StObject {
+  
   /**
     * optional, default is the directory name
     */
   var name: js.UndefOr[String] = js.undefined
 }
-
 object DefineContextOptions {
-  @scala.inline
-  def apply(name: String = null): DefineContextOptions = {
+  
+  inline def apply(): DefineContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineContextOptions]
   }
+  
+  extension [Self <: DefineContextOptions](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

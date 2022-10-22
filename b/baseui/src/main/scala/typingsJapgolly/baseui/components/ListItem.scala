@@ -1,50 +1,51 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.listMod.ArtworkSizesT
-import typingsJapgolly.baseui.listMod.OverridesT
-import typingsJapgolly.baseui.listMod.PropsT
+import org.scalajs.dom.HTMLLIElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.anon.sizeIconPropssizeIconProp
+import typingsJapgolly.baseui.listTypesMod.ArtworkSizes
+import typingsJapgolly.baseui.listTypesMod.ListOverrides
+import typingsJapgolly.baseui.listTypesMod.ListProps
+import typingsJapgolly.baseui.listTypesMod.Shape
+import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.RefAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ListItem {
-  def apply(
-    artwork: VdomNode = null,
-    artworkSize: ArtworkSizesT = null,
-    endEnhancer: VdomNode = null,
-    overrides: OverridesT = null,
-    sublist: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[PropsT, MountedWithRawType[PropsT, js.Object, RawMounted[PropsT, js.Object]]] = {
-    val __obj = js.Dynamic.literal()
   
-      if (artwork != null) __obj.updateDynamic("artwork")(artwork.rawNode.asInstanceOf[js.Any])
-    if (artworkSize != null) __obj.updateDynamic("artworkSize")(artworkSize.asInstanceOf[js.Any])
-    if (endEnhancer != null) __obj.updateDynamic("endEnhancer")(endEnhancer.rawNode.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(sublist)) __obj.updateDynamic("sublist")(sublist.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.baseui.listMod.PropsT, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.listMod.PropsT])(children: _*)
-  }
   @JSImport("baseui/list", "ListItem")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[HTMLLIElement] {
+    
+    inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+    
+    inline def `aria-selected`(value: Boolean): this.type = set("aria-selected", value.asInstanceOf[js.Any])
+    
+    inline def artwork(value: ComponentType[sizeIconPropssizeIconProp]): this.type = set("artwork", value.asInstanceOf[js.Any])
+    
+    inline def artworkSize(value: ArtworkSizes | Double): this.type = set("artworkSize", value.asInstanceOf[js.Any])
+    
+    inline def endEnhancer(value: ComponentType[js.Object]): this.type = set("endEnhancer", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def overrides(value: ListOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def shape(value: Shape): this.type = set("shape", value.asInstanceOf[js.Any])
+    
+    inline def sublist(value: Boolean): this.type = set("sublist", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ListItem.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ListProps & RefAttributes[HTMLLIElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

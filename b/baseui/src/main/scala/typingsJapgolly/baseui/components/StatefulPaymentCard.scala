@@ -1,126 +1,168 @@
 package typingsJapgolly.baseui.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
 import japgolly.scalajs.react.ReactFocusEventFrom
 import japgolly.scalajs.react.ReactKeyboardEventFrom
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.Node
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLInputElement
-import typingsJapgolly.baseui.baseuiStrings.both
-import typingsJapgolly.baseui.baseuiStrings.change_
-import typingsJapgolly.baseui.baseuiStrings.compact
-import typingsJapgolly.baseui.baseuiStrings.default_
-import typingsJapgolly.baseui.baseuiStrings.large_
-import typingsJapgolly.baseui.baseuiStrings.left
-import typingsJapgolly.baseui.baseuiStrings.none
-import typingsJapgolly.baseui.baseuiStrings.right
-import typingsJapgolly.baseui.inputMod.InputOverrides
-import typingsJapgolly.baseui.inputMod.SharedProps
-import typingsJapgolly.baseui.inputMod.State
-import typingsJapgolly.baseui.paymentCardMod.PaymentCardOverrides
-import typingsJapgolly.baseui.paymentCardMod.StatefulPaymentCardProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.facade.React.RefHandle
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLInputElement
+import org.scalajs.dom.HTMLTextAreaElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.baseuiStrings.any
+import typingsJapgolly.baseui.inputTypesMod.Adjoined
+import typingsJapgolly.baseui.inputTypesMod.SharedProps
+import typingsJapgolly.baseui.inputTypesMod.Size
+import typingsJapgolly.baseui.inputTypesMod.State
+import typingsJapgolly.baseui.inputTypesMod.StateType
+import typingsJapgolly.baseui.paymentCardTypesMod.PaymentCardOverrides
+import typingsJapgolly.baseui.paymentCardTypesMod.StatefulPaymentCardProps
+import typingsJapgolly.csstype.mod.Property.Resize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StatefulPaymentCard {
-  def apply(
-    adjoined: none | left | right | both = null,
-    `aria-describedby`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    autoComplete: String = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    clearable: js.UndefOr[Boolean] = js.undefined,
-    `data-baseweb`: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    endEnhancer: (js.Function1[/* args */ SharedProps, Node]) | Node = null,
-    error: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    initialState: State = null,
-    inputRef: Ref = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    name: String = null,
-    onBlur: ReactFocusEventFrom[HTMLInputElement] => Callback = null,
-    onChange: ReactEventFrom[HTMLInputElement] => Callback = null,
-    onFocus: ReactFocusEventFrom[HTMLInputElement] => Callback = null,
-    onKeyDown: ReactKeyboardEventFrom[HTMLInputElement] => Callback = null,
-    onKeyPress: ReactKeyboardEventFrom[HTMLInputElement] => Callback = null,
-    onKeyUp: ReactKeyboardEventFrom[HTMLInputElement] => Callback = null,
-    overrides: InputOverrides with PaymentCardOverrides = null,
-    placeholder: String = null,
-    positive: js.UndefOr[Boolean] = js.undefined,
-    required: js.UndefOr[Boolean] = js.undefined,
-    rows: Int | Double = null,
-    size: default_ | compact | large_ = null,
-    startEnhancer: (js.Function1[/* args */ SharedProps, Node]) | Node = null,
-    stateReducer: (change_, /* nextState */ State, /* currentState */ State) => CallbackTo[State] = null,
-    `type`: String = null,
-    value: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    StatefulPaymentCardProps, 
-    MountedWithRawType[StatefulPaymentCardProps, js.Object, RawMounted[StatefulPaymentCardProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (adjoined != null) __obj.updateDynamic("adjoined")(adjoined.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearable)) __obj.updateDynamic("clearable")(clearable.asInstanceOf[js.Any])
-    if (`data-baseweb` != null) __obj.updateDynamic("data-baseweb")(`data-baseweb`.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (endEnhancer != null) __obj.updateDynamic("endEnhancer")(endEnhancer.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onBlur(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onChange(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onFocus(t0).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onKeyDown(t0).runNow()))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onKeyPress(t0).runNow()))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onKeyUp(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (startEnhancer != null) __obj.updateDynamic("startEnhancer")(startEnhancer.asInstanceOf[js.Any])
-    if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction3((t0: typingsJapgolly.baseui.baseuiStrings.change_, t1: /* nextState */ typingsJapgolly.baseui.inputMod.State, t2: /* currentState */ typingsJapgolly.baseui.inputMod.State) => stateReducer(t0, t1, t2).runNow()))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.baseui.paymentCardMod.StatefulPaymentCardProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.paymentCardMod.StatefulPaymentCardProps])(children: _*)
-  }
   @JSImport("baseui/payment-card", "StatefulPaymentCard")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def adjoined(value: Adjoined): this.type = set("adjoined", value.asInstanceOf[js.Any])
+    
+    inline def `aria-activedescendant`(value: String): this.type = set("aria-activedescendant", value.asInstanceOf[js.Any])
+    
+    inline def `aria-autocomplete`(value: String): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+    
+    inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
+    
+    inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
+    
+    inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
+    
+    inline def `aria-haspopup`(value: String): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+    
+    inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+    
+    inline def `aria-labelledby`(value: String): this.type = set("aria-labelledby", value.asInstanceOf[js.Any])
+    
+    inline def autoComplete(value: String): this.type = set("autoComplete", value.asInstanceOf[js.Any])
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def clearOnEscape(value: Boolean): this.type = set("clearOnEscape", value.asInstanceOf[js.Any])
+    
+    inline def clearable(value: Boolean): this.type = set("clearable", value.asInstanceOf[js.Any])
+    
+    inline def `data-baseweb`(value: String): this.type = set("data-baseweb", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def endEnhancer(value: Node | (js.Function1[/* props */ SharedProps, Node])): this.type = set("endEnhancer", value.asInstanceOf[js.Any])
+    
+    inline def endEnhancerFunction1(value: /* props */ SharedProps => Node): this.type = set("endEnhancer", js.Any.fromFunction1(value))
+    
+    inline def endEnhancerNull: this.type = set("endEnhancer", null)
+    
+    inline def endEnhancerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("endEnhancer", js.Array(value*))
+    
+    inline def endEnhancerVdomElement(value: VdomElement): this.type = set("endEnhancer", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def error(value: Boolean): this.type = set("error", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def initialState(value: State): this.type = set("initialState", value.asInstanceOf[js.Any])
+    
+    inline def inputMode(value: String): this.type = set("inputMode", value.asInstanceOf[js.Any])
+    
+    inline def inputRef(value: RefHandle[HTMLInputElement | HTMLTextAreaElement]): this.type = set("inputRef", value.asInstanceOf[js.Any])
+    
+    inline def max(value: Double): this.type = set("max", value.asInstanceOf[js.Any])
+    
+    inline def maxLength(value: Double): this.type = set("maxLength", value.asInstanceOf[js.Any])
+    
+    inline def min(value: Double): this.type = set("min", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(
+      value: /* e */ ReactFocusEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element] => Callback
+    ): this.type = set("onBlur", js.Any.fromFunction1((t0: /* e */ ReactFocusEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onChange(
+      value: /* e */ ReactEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element] => Callback
+    ): this.type = set("onChange", js.Any.fromFunction1((t0: /* e */ ReactEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onClear(
+      value: /* e */ ReactEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element] => Callback
+    ): this.type = set("onClear", js.Any.fromFunction1((t0: /* e */ ReactEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onFocus(
+      value: /* e */ ReactFocusEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element] => Callback
+    ): this.type = set("onFocus", js.Any.fromFunction1((t0: /* e */ ReactFocusEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onKeyDown(
+      value: /* e */ ReactKeyboardEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element] => Callback
+    ): this.type = set("onKeyDown", js.Any.fromFunction1((t0: /* e */ ReactKeyboardEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onKeyPress(
+      value: /* e */ ReactKeyboardEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element] => Callback
+    ): this.type = set("onKeyPress", js.Any.fromFunction1((t0: /* e */ ReactKeyboardEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onKeyUp(
+      value: /* e */ ReactKeyboardEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element] => Callback
+    ): this.type = set("onKeyUp", js.Any.fromFunction1((t0: /* e */ ReactKeyboardEventFrom[(HTMLInputElement | HTMLTextAreaElement) & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def overrides(value: PaymentCardOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def pattern(value: String): this.type = set("pattern", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def positive(value: Boolean): this.type = set("positive", value.asInstanceOf[js.Any])
+    
+    inline def readOnly(value: Boolean): this.type = set("readOnly", value.asInstanceOf[js.Any])
+    
+    inline def required(value: Boolean): this.type = set("required", value.asInstanceOf[js.Any])
+    
+    inline def resize(value: Resize): this.type = set("resize", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def rows(value: Double): this.type = set("rows", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Size): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def startEnhancer(value: Node | (js.Function1[/* props */ SharedProps, Node])): this.type = set("startEnhancer", value.asInstanceOf[js.Any])
+    
+    inline def startEnhancerFunction1(value: /* props */ SharedProps => Node): this.type = set("startEnhancer", js.Any.fromFunction1(value))
+    
+    inline def startEnhancerNull: this.type = set("startEnhancer", null)
+    
+    inline def startEnhancerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("startEnhancer", js.Array(value*))
+    
+    inline def startEnhancerVdomElement(value: VdomElement): this.type = set("startEnhancer", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def stateReducer(value: (/* stateType */ StateType, /* nextState */ State, /* currentState */ State) => State): this.type = set("stateReducer", js.Any.fromFunction3(value))
+    
+    inline def step(value: Double | any): this.type = set("step", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: String): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def value(value: String | Double): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: StatefulPaymentCard.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: StatefulPaymentCardProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

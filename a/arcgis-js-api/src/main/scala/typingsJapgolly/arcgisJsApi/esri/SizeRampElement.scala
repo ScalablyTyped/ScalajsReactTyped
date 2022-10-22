@@ -1,27 +1,30 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SizeRampElement
-  extends Object
+  extends StObject
+     with Object
      with LegendElement {
+  
   /**
     * The individual size stops rendered in the legend that correspond to the size visual variable in the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SizeRampElement)
     */
   var infos: js.Array[SizeRampStop]
+  
   /**
     * The title of the size ramp as displayed in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SizeRampElement)
     */
   var title: js.UndefOr[String | RampTitle] = js.undefined
+  
   /**
     * The type of this element is always `size-ramp`.
     *
@@ -29,23 +32,30 @@ trait SizeRampElement
     */
   var `type`: String
 }
-
 object SizeRampElement {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     infos: js.Array[SizeRampStop],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    `type`: String,
-    title: String | RampTitle = null
+    propertyIsEnumerable: PropertyKey => Boolean,
+    `type`: String
   ): SizeRampElement = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], infos = infos.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), infos = infos.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeRampElement]
   }
+  
+  extension [Self <: SizeRampElement](x: Self) {
+    
+    inline def setInfos(value: js.Array[SizeRampStop]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
+    
+    inline def setInfosVarargs(value: SizeRampStop*): Self = StObject.set(x, "infos", js.Array(value*))
+    
+    inline def setTitle(value: String | RampTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

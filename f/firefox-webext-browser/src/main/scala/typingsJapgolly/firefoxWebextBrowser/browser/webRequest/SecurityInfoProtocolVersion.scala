@@ -1,8 +1,8 @@
 package typingsJapgolly.firefoxWebextBrowser.browser.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Protocol version if state is "secure" */
 /* Rewritten from type alias, can be one of: 
@@ -12,20 +12,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot3
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown
 */
-trait SecurityInfoProtocolVersion extends js.Object
-
+trait SecurityInfoProtocolVersion extends StObject
 object SecurityInfoProtocolVersion {
-  @scala.inline
-  def TLSv1: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1 = this.cast("TLSv1")
-  @scala.inline
-  def TLSv1Dot1: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot1 = this.cast("TLSv1.1")
-  @scala.inline
-  def TLSv1Dot2: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot2 = this.cast("TLSv1.2")
-  @scala.inline
-  def TLSv1Dot3: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot3 = this.cast("TLSv1.3")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def unknown: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown = this.cast("unknown")
+  
+  inline def TLSv1: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1 = "TLSv1".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1]
+  
+  inline def TLSv1Dot1: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot1 = "TLSv1.1".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot1]
+  
+  inline def TLSv1Dot2: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot2 = "TLSv1.2".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot2]
+  
+  inline def TLSv1Dot3: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot3 = "TLSv1.3".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.TLSv1Dot3]
+  
+  inline def unknown: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown = "unknown".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown]
 }
-

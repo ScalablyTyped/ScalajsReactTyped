@@ -1,18 +1,19 @@
 
 # Scala.js typings for bootstrap-fileinput
 
+Typings are for version 5.2
 
 ## Library description:
-An enhanced HTML 5 file input for Bootstrap 3.x with file preview, multiple selection, ajax uploads, and more features.
+An enhanced HTML 5 file input for Bootstrap 5.x, 4.x, and 3.x with file preview, multiple selection, ajax uploads, and more features.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | bootstrap-fileinput |
 | Keywords           | file, input, preview, image, upload, ajax, multiple, delete, progress, gallery |
-| # releases         | 17 |
-| # dependents       | 7 |
-| # downloads        | 198977 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 37161.333333333336 |
+| # stars            | 5234.0 |
 
 ## Links
 - [Homepage](https://github.com/kartik-v/bootstrap-fileinput)

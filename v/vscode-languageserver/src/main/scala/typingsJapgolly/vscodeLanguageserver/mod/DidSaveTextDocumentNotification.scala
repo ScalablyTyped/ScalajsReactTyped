@@ -1,14 +1,23 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.DidSaveTextDocumentParams
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.TextDocumentSaveRegistrationOptions
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings.textDocumentSlashdidSave
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.DidSaveTextDocumentParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentSaveRegistrationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "DidSaveTextDocumentNotification")
-@js.native
-object DidSaveTextDocumentNotification extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.NotificationType[DidSaveTextDocumentParams, TextDocumentSaveRegistrationOptions] = js.native
+object DidSaveTextDocumentNotification {
+  
+  @JSImport("vscode-languageserver", "DidSaveTextDocumentNotification.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver", "DidSaveTextDocumentNotification.method")
+  @js.native
+  val method: textDocumentSlashdidSave = js.native
+  
+  @JSImport("vscode-languageserver", "DidSaveTextDocumentNotification.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[DidSaveTextDocumentParams, TextDocumentSaveRegistrationOptions] = js.native
 }
-

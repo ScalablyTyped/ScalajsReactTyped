@@ -1,35 +1,33 @@
 package typingsJapgolly.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ServiceLevel extends js.Object
-
+sealed trait ServiceLevel extends StObject
 @JSImport("evernote", "Types.ServiceLevel")
 @js.native
-object ServiceLevel extends js.Object {
-  @js.native
-  sealed trait BASIC extends ServiceLevel
-  
-  @js.native
-  sealed trait PLUS extends ServiceLevel
-  
-  @js.native
-  sealed trait PREMIUM extends ServiceLevel
+object ServiceLevel extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ServiceLevel with Double] = js.native
-  /* 1 */ @js.native
-  object BASIC extends TopLevel[BASIC with Double]
+  def apply(value: Double): js.UndefOr[ServiceLevel & Double] = js.native
   
-  /* 2 */ @js.native
-  object PLUS extends TopLevel[PLUS with Double]
+  @js.native
+  sealed trait BASIC
+    extends StObject
+       with ServiceLevel
+  /* 1 */ val BASIC: typingsJapgolly.evernote.mod.Types.ServiceLevel.BASIC & Double = js.native
   
-  /* 3 */ @js.native
-  object PREMIUM extends TopLevel[PREMIUM with Double]
+  @js.native
+  sealed trait PLUS
+    extends StObject
+       with ServiceLevel
+  /* 2 */ val PLUS: typingsJapgolly.evernote.mod.Types.ServiceLevel.PLUS & Double = js.native
   
+  @js.native
+  sealed trait PREMIUM
+    extends StObject
+       with ServiceLevel
+  /* 3 */ val PREMIUM: typingsJapgolly.evernote.mod.Types.ServiceLevel.PREMIUM & Double = js.native
 }
-

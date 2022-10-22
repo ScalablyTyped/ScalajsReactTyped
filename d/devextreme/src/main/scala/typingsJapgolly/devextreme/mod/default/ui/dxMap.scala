@@ -1,19 +1,11 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxMapOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxMap")
+@JSImport("devextreme", "default.ui.dxMap")
 @js.native
-class dxMap protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.dxMap {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxMapOptions) = this()
-  def this(element: Element, options: dxMapOptions) = this()
-}
-
+open class dxMap ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxMap

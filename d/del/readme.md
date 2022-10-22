@@ -1,7 +1,7 @@
 
 # Scala.js typings for del
 
-Typings are for version 5.1.0
+Typings are for version 7.0.0
 
 ## Library description:
 Delete files and directories
@@ -10,10 +10,10 @@ Delete files and directories
 | ------------------ | :-------------: |
 | Full name          | del |
 | Keywords           | delete, files, folders, directories, remove, destroy, trash, unlink, clean, cleaning, cleanup, rm, rmrf, rimraf, rmdir, glob, gulpfriendly, file, folder, directory, fs, filesystem |
-| # releases         | 6 |
-| # dependents       | 2892 |
-| # downloads        | 419752804 |
-| # stars            | 282 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 6.718257033333333E7 |
+| # stars            | 1260.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/del#readme)

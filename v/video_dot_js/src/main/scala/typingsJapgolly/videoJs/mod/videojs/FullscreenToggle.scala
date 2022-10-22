@@ -1,15 +1,18 @@
 package typingsJapgolly.videoJs.mod.videojs
 
 import typingsJapgolly.videoJs.mod.videojs.EventTarget.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Toggle fullscreen video
   */
 @js.native
-trait FullscreenToggle extends Button {
+trait FullscreenToggle
+  extends StObject
+     with Button {
+  
   /**
     * Handles fullscreenchange on the player and change control text accordingly.
     *
@@ -21,4 +24,3 @@ trait FullscreenToggle extends Button {
     */
   def handleFullscreenChange(event: Event): Unit = js.native
 }
-

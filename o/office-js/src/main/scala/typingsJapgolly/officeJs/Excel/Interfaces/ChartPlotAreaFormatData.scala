@@ -1,26 +1,31 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartPlotAreaFormat.toJSON()`. */
-trait ChartPlotAreaFormatData extends js.Object {
+trait ChartPlotAreaFormatData extends StObject {
+  
   /**
+    * Specifies the border attributes of a chart plot area.
     *
-    * Represents the border attributes of a chart plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var border: js.UndefOr[ChartBorderData] = js.undefined
 }
-
 object ChartPlotAreaFormatData {
-  @scala.inline
-  def apply(border: ChartBorderData = null): ChartPlotAreaFormatData = {
+  
+  inline def apply(): ChartPlotAreaFormatData = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPlotAreaFormatData]
   }
+  
+  extension [Self <: ChartPlotAreaFormatData](x: Self) {
+    
+    inline def setBorder(value: ChartBorderData): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+  }
 }
-

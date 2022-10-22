@@ -11,14 +11,11 @@ A simple library containing all known terminal ansi escape codes and sequences.
 | Full name          | ansi-escape-sequences |
 | Keywords           | ansi, terminal, colour, color, command line, cursor |
 | # releases         | 7 |
-| # dependents       | 54 |
-| # downloads        | 6373569 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1148359.3333333333 |
+| # stars            | 55.0 |
 
 ## Links
-- [Homepage](https://github.com/75lb/ansi-escape-sequences#readme)
-- [Bugs](https://github.com/75lb/ansi-escape-sequences/issues)
-- [Repository](https://github.com/75lb/ansi-escape-sequences)
 - [Npm](https://www.npmjs.com/package/ansi-escape-sequences)
     
 

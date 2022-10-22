@@ -1,37 +1,88 @@
 package typingsJapgolly.reactIs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-is", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("react-is", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-is", "AsyncMode")
+  @js.native
   val AsyncMode: js.Symbol = js.native
+  
+  @JSImport("react-is", "ContextConsumer")
+  @js.native
   val ContextConsumer: js.Symbol = js.native
+  
+  @JSImport("react-is", "ContextProvider")
+  @js.native
   val ContextProvider: js.Symbol = js.native
+  
+  @JSImport("react-is", "Element")
+  @js.native
   val Element: js.Symbol = js.native
+  
+  @JSImport("react-is", "ForwardRef")
+  @js.native
   val ForwardRef: js.Symbol = js.native
+  
+  @JSImport("react-is", "Fragment")
+  @js.native
   val Fragment: js.Symbol = js.native
+  
+  @JSImport("react-is", "Lazy")
+  @js.native
   val Lazy: js.Symbol = js.native
+  
+  @JSImport("react-is", "Memo")
+  @js.native
   val Memo: js.Symbol = js.native
+  
+  @JSImport("react-is", "Portal")
+  @js.native
   val Portal: js.Symbol = js.native
+  
+  @JSImport("react-is", "Profiler")
+  @js.native
   val Profiler: js.Symbol = js.native
+  
+  @JSImport("react-is", "StrictMode")
+  @js.native
   val StrictMode: js.Symbol = js.native
+  
+  @JSImport("react-is", "Suspense")
+  @js.native
   val Suspense: js.Symbol = js.native
-  def isAsyncMode(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
-  def isContextConsumer(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
-  def isContextProvider(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
-  def isElement(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
-  def isForwardRef(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
-  def isFragment(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
-  def isLazy(value: js.Any): /* is react.react.LazyExoticComponent<any> */ Boolean = js.native
-  def isMemo(value: js.Any): /* is react.react.MemoExoticComponent<any> */ Boolean = js.native
-  def isPortal(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
-  def isProfiler(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
-  def isStrictMode(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
-  def isSuspense(value: js.Any): /* is react.react.ReactElement */ Boolean = js.native
-  def isValidElementType(value: js.Any): /* is react.react.ReactType<any> */ Boolean = js.native
-  def typeOf(value: js.Any): js.UndefOr[js.Symbol] = js.native
+  
+  inline def isAsyncMode(value: Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsyncMode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  
+  inline def isContextConsumer(value: Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContextConsumer")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  
+  inline def isContextProvider(value: Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContextProvider")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  
+  inline def isElement(value: Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  
+  inline def isForwardRef(value: Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForwardRef")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  
+  inline def isFragment(value: Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  
+  inline def isLazy(value: Any): /* is react.react.LazyExoticComponent<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLazy")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.LazyExoticComponent<any> */ Boolean]
+  
+  inline def isMemo(value: Any): /* is react.react.MemoExoticComponent<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMemo")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.MemoExoticComponent<any> */ Boolean]
+  
+  inline def isPortal(value: Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPortal")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  
+  inline def isProfiler(value: Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProfiler")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  
+  inline def isStrictMode(value: Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStrictMode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  
+  inline def isSuspense(value: Any): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuspense")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
+  
+  inline def isValidElementType(value: Any): /* is react.react.ElementType<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElementType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ElementType<any> */ Boolean]
+  
+  inline def typeOf(value: Any): js.UndefOr[js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("typeOf")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Symbol]]
 }
-

@@ -1,29 +1,38 @@
 package typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `listClassifiers` operation. */
-trait ListClassifiersParams extends js.Object {
+trait ListClassifiersParams extends StObject {
+  
   var headers: js.UndefOr[js.Object] = js.undefined
+  
   var return_response: js.UndefOr[Boolean] = js.undefined
+  
   /** Specify `true` to return details about the classifiers. Omit this parameter to return a brief list of classifiers. */
   var verbose: js.UndefOr[Boolean] = js.undefined
 }
-
 object ListClassifiersParams {
-  @scala.inline
-  def apply(
-    headers: js.Object = null,
-    return_response: js.UndefOr[Boolean] = js.undefined,
-    verbose: js.UndefOr[Boolean] = js.undefined
-  ): ListClassifiersParams = {
+  
+  inline def apply(): ListClassifiersParams = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListClassifiersParams]
   }
+  
+  extension [Self <: ListClassifiersParams](x: Self) {
+    
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+  }
 }
-

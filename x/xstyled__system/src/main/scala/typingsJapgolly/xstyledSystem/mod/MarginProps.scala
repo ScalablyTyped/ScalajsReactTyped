@@ -1,25 +1,35 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.MarginTopProperty
+import typingsJapgolly.csstype.mod.Property.MarginTop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarginProps[TLength] extends js.Object {
-  val m: js.UndefOr[ResponsiveValue[MarginTopProperty[TLength]]] = js.undefined
-  val margin: js.UndefOr[ResponsiveValue[MarginTopProperty[TLength]]] = js.undefined
+trait MarginProps[TLength] extends StObject {
+  
+  val m: js.UndefOr[ResponsiveValue[MarginTop[TLength]]] = js.undefined
+  
+  val margin: js.UndefOr[ResponsiveValue[MarginTop[TLength]]] = js.undefined
 }
-
 object MarginProps {
-  @scala.inline
-  def apply[TLength](
-    m: ResponsiveValue[MarginTopProperty[TLength]] = null,
-    margin: ResponsiveValue[MarginTopProperty[TLength]] = null
-  ): MarginProps[TLength] = {
+  
+  inline def apply[TLength](): MarginProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginProps[TLength]]
   }
+  
+  extension [Self <: MarginProps[?], TLength](x: Self & MarginProps[TLength]) {
+    
+    inline def setM(value: ResponsiveValue[MarginTop[TLength]]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+    
+    inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
+    
+    inline def setMVarargs(value: MarginTop[TLength]*): Self = StObject.set(x, "m", js.Array(value*))
+    
+    inline def setMargin(value: ResponsiveValue[MarginTop[TLength]]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setMarginVarargs(value: MarginTop[TLength]*): Self = StObject.set(x, "margin", js.Array(value*))
+  }
 }
-

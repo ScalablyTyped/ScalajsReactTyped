@@ -4,38 +4,58 @@ import typingsJapgolly.reactNavigation.reactNavigationStrings.history
 import typingsJapgolly.reactNavigation.reactNavigationStrings.initialRoute
 import typingsJapgolly.reactNavigation.reactNavigationStrings.none
 import typingsJapgolly.reactNavigation.reactNavigationStrings.order
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationSwitchRouterConfig extends js.Object {
+trait NavigationSwitchRouterConfig extends StObject {
+  
   var backBehavior: js.UndefOr[none | initialRoute | history | order] = js.undefined
+  
   var initialRouteName: js.UndefOr[String] = js.undefined
+  
   var initialRouteParams: js.UndefOr[NavigationParams] = js.undefined
+  
   var order: js.UndefOr[js.Array[String]] = js.undefined
+  
   var paths: js.UndefOr[NavigationPathsConfig] = js.undefined
-   // defaults to 'none'
+  
+  // defaults to 'none'
   var resetOnBlur: js.UndefOr[Boolean] = js.undefined
 }
-
 object NavigationSwitchRouterConfig {
-  @scala.inline
-  def apply(
-    backBehavior: none | initialRoute | history | order = null,
-    initialRouteName: String = null,
-    initialRouteParams: NavigationParams = null,
-    order: js.Array[String] = null,
-    paths: NavigationPathsConfig = null,
-    resetOnBlur: js.UndefOr[Boolean] = js.undefined
-  ): NavigationSwitchRouterConfig = {
+  
+  inline def apply(): NavigationSwitchRouterConfig = {
     val __obj = js.Dynamic.literal()
-    if (backBehavior != null) __obj.updateDynamic("backBehavior")(backBehavior.asInstanceOf[js.Any])
-    if (initialRouteName != null) __obj.updateDynamic("initialRouteName")(initialRouteName.asInstanceOf[js.Any])
-    if (initialRouteParams != null) __obj.updateDynamic("initialRouteParams")(initialRouteParams.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnBlur)) __obj.updateDynamic("resetOnBlur")(resetOnBlur.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationSwitchRouterConfig]
   }
+  
+  extension [Self <: NavigationSwitchRouterConfig](x: Self) {
+    
+    inline def setBackBehavior(value: none | initialRoute | history | order): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
+    
+    inline def setBackBehaviorUndefined: Self = StObject.set(x, "backBehavior", js.undefined)
+    
+    inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
+    
+    inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
+    
+    inline def setInitialRouteParams(value: NavigationParams): Self = StObject.set(x, "initialRouteParams", value.asInstanceOf[js.Any])
+    
+    inline def setInitialRouteParamsUndefined: Self = StObject.set(x, "initialRouteParams", js.undefined)
+    
+    inline def setOrder(value: js.Array[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    
+    inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value*))
+    
+    inline def setPaths(value: NavigationPathsConfig): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    
+    inline def setResetOnBlur(value: Boolean): Self = StObject.set(x, "resetOnBlur", value.asInstanceOf[js.Any])
+    
+    inline def setResetOnBlurUndefined: Self = StObject.set(x, "resetOnBlur", js.undefined)
+  }
 }
-

@@ -10,10 +10,10 @@ SASLprep: Stringprep Profile for User Names and Passwords, rfc4013.
 | ------------------ | :-------------: |
 | Full name          | saslprep |
 | Keywords           | sasl, saslprep, stringprep, rfc4013, 4013 |
-| # releases         | 4 |
-| # dependents       | 29 |
-| # downloads        | 29063136 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9070505.666666666 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/reklatsmasters/saslprep#readme)

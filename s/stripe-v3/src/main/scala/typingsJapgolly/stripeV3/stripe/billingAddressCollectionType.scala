@@ -1,24 +1,20 @@
 package typingsJapgolly.stripeV3.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.stripeV3.stripeV3Strings.required
   - typingsJapgolly.stripeV3.stripeV3Strings.auto
   - typingsJapgolly.stripeV3.stripeV3Strings._empty
 */
-trait billingAddressCollectionType extends js.Object
-
+trait billingAddressCollectionType extends StObject
 object billingAddressCollectionType {
-  @scala.inline
-  def _empty: typingsJapgolly.stripeV3.stripeV3Strings._empty = this.cast("")
-  @scala.inline
-  def auto: typingsJapgolly.stripeV3.stripeV3Strings.auto = this.cast("auto")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def required: typingsJapgolly.stripeV3.stripeV3Strings.required = this.cast("required")
+  
+  inline def _empty: typingsJapgolly.stripeV3.stripeV3Strings._empty = "".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings._empty]
+  
+  inline def auto: typingsJapgolly.stripeV3.stripeV3Strings.auto = "auto".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.auto]
+  
+  inline def required: typingsJapgolly.stripeV3.stripeV3Strings.required = "required".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.required]
 }
-

@@ -1,22 +1,27 @@
 package typingsJapgolly.node.inspectorMod.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GlobalLexicalScopeNamesParameterType extends js.Object {
+trait GlobalLexicalScopeNamesParameterType extends StObject {
+  
   /**
     * Specifies in which execution context to lookup global scope variables.
     */
   var executionContextId: js.UndefOr[ExecutionContextId] = js.undefined
 }
-
 object GlobalLexicalScopeNamesParameterType {
-  @scala.inline
-  def apply(executionContextId: Int | Double = null): GlobalLexicalScopeNamesParameterType = {
+  
+  inline def apply(): GlobalLexicalScopeNamesParameterType = {
     val __obj = js.Dynamic.literal()
-    if (executionContextId != null) __obj.updateDynamic("executionContextId")(executionContextId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalLexicalScopeNamesParameterType]
   }
+  
+  extension [Self <: GlobalLexicalScopeNamesParameterType](x: Self) {
+    
+    inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
+    
+    inline def setExecutionContextIdUndefined: Self = StObject.set(x, "executionContextId", js.undefined)
+  }
 }
-

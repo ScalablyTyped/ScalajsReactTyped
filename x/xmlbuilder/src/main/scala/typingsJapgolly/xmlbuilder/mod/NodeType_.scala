@@ -1,164 +1,162 @@
 package typingsJapgolly.xmlbuilder.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NodeType_ extends js.Object
-
+sealed trait NodeType_ extends StObject
 /**
   * Defines the type of a node in the XML document.
   */
 @JSImport("xmlbuilder", "NodeType")
 @js.native
-object NodeType_ extends js.Object {
+object NodeType_ extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[NodeType_ & Double] = js.native
+  
   /**
     * An attribute node
     */
   @js.native
-  sealed trait Attribute extends NodeType_
+  sealed trait Attribute
+    extends StObject
+       with NodeType_
+  /* 2 */ val Attribute: typingsJapgolly.xmlbuilder.mod.NodeType_.Attribute & Double = js.native
   
   /**
     * An attribute declaraiton node inside DocType
     */
   @js.native
-  sealed trait AttributeDeclaration extends NodeType_
+  sealed trait AttributeDeclaration
+    extends StObject
+       with NodeType_
+  /* 203 */ val AttributeDeclaration: typingsJapgolly.xmlbuilder.mod.NodeType_.AttributeDeclaration & Double = js.native
   
   /**
     * A CDATA node
     */
   @js.native
-  sealed trait CData extends NodeType_
+  sealed trait CData
+    extends StObject
+       with NodeType_
+  /* 4 */ val CData: typingsJapgolly.xmlbuilder.mod.NodeType_.CData & Double = js.native
   
   /**
     * A comment node
     */
   @js.native
-  sealed trait Comment extends NodeType_
+  sealed trait Comment
+    extends StObject
+       with NodeType_
+  /* 8 */ val Comment: typingsJapgolly.xmlbuilder.mod.NodeType_.Comment & Double = js.native
   
   /**
     * An XML declaration node
     */
   @js.native
-  sealed trait Declaration extends NodeType_
+  sealed trait Declaration
+    extends StObject
+       with NodeType_
+  /* 201 */ val Declaration: typingsJapgolly.xmlbuilder.mod.NodeType_.Declaration & Double = js.native
   
   /**
     * A Doctype node
     */
   @js.native
-  sealed trait DocType extends NodeType_
+  sealed trait DocType
+    extends StObject
+       with NodeType_
+  /* 10 */ val DocType: typingsJapgolly.xmlbuilder.mod.NodeType_.DocType & Double = js.native
   
   /**
     * A document node
     */
   @js.native
-  sealed trait Document extends NodeType_
+  sealed trait Document
+    extends StObject
+       with NodeType_
+  /* 9 */ val Document: typingsJapgolly.xmlbuilder.mod.NodeType_.Document & Double = js.native
   
   /**
     * A document fragment node
     */
   @js.native
-  sealed trait DocumentFragment extends NodeType_
+  sealed trait DocumentFragment
+    extends StObject
+       with NodeType_
+  /* 11 */ val DocumentFragment: typingsJapgolly.xmlbuilder.mod.NodeType_.DocumentFragment & Double = js.native
   
   /**
     * An element node
     */
   @js.native
-  sealed trait Element extends NodeType_
+  sealed trait Element
+    extends StObject
+       with NodeType_
+  /* 1 */ val Element: typingsJapgolly.xmlbuilder.mod.NodeType_.Element & Double = js.native
   
   /**
     * An element declaration node inside DocType
     */
   @js.native
-  sealed trait ElementDeclaration extends NodeType_
+  sealed trait ElementDeclaration
+    extends StObject
+       with NodeType_
+  /* 204 */ val ElementDeclaration: typingsJapgolly.xmlbuilder.mod.NodeType_.ElementDeclaration & Double = js.native
   
   /**
     * An entity declaration node inside DocType
     */
   @js.native
-  sealed trait EntityDeclaration extends NodeType_
+  sealed trait EntityDeclaration
+    extends StObject
+       with NodeType_
+  /* 6 */ val EntityDeclaration: typingsJapgolly.xmlbuilder.mod.NodeType_.EntityDeclaration & Double = js.native
   
   /**
     * An entity reference node inside DocType
     */
   @js.native
-  sealed trait EntityReference extends NodeType_
+  sealed trait EntityReference
+    extends StObject
+       with NodeType_
+  /* 5 */ val EntityReference: typingsJapgolly.xmlbuilder.mod.NodeType_.EntityReference & Double = js.native
   
   /**
     * A notation declaration node inside DocType
     */
   @js.native
-  sealed trait NotationDeclaration extends NodeType_
+  sealed trait NotationDeclaration
+    extends StObject
+       with NodeType_
+  /* 12 */ val NotationDeclaration: typingsJapgolly.xmlbuilder.mod.NodeType_.NotationDeclaration & Double = js.native
   
   /**
     * A processing instruction node
     */
   @js.native
-  sealed trait ProcessingInstruction extends NodeType_
+  sealed trait ProcessingInstruction
+    extends StObject
+       with NodeType_
+  /* 7 */ val ProcessingInstruction: typingsJapgolly.xmlbuilder.mod.NodeType_.ProcessingInstruction & Double = js.native
   
   /**
     * A raw text node
     */
   @js.native
-  sealed trait Raw extends NodeType_
+  sealed trait Raw
+    extends StObject
+       with NodeType_
+  /* 202 */ val Raw: typingsJapgolly.xmlbuilder.mod.NodeType_.Raw & Double = js.native
   
   /**
     * A text node
     */
   @js.native
-  sealed trait Text extends NodeType_
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NodeType_ with Double] = js.native
-  /* 2 */ @js.native
-  object Attribute extends TopLevel[Attribute with Double]
-  
-  /* 203 */ @js.native
-  object AttributeDeclaration extends TopLevel[AttributeDeclaration with Double]
-  
-  /* 4 */ @js.native
-  object CData extends TopLevel[CData with Double]
-  
-  /* 8 */ @js.native
-  object Comment extends TopLevel[Comment with Double]
-  
-  /* 201 */ @js.native
-  object Declaration extends TopLevel[Declaration with Double]
-  
-  /* 10 */ @js.native
-  object DocType extends TopLevel[DocType with Double]
-  
-  /* 9 */ @js.native
-  object Document extends TopLevel[Document with Double]
-  
-  /* 11 */ @js.native
-  object DocumentFragment extends TopLevel[DocumentFragment with Double]
-  
-  /* 1 */ @js.native
-  object Element extends TopLevel[Element with Double]
-  
-  /* 204 */ @js.native
-  object ElementDeclaration extends TopLevel[ElementDeclaration with Double]
-  
-  /* 6 */ @js.native
-  object EntityDeclaration extends TopLevel[EntityDeclaration with Double]
-  
-  /* 5 */ @js.native
-  object EntityReference extends TopLevel[EntityReference with Double]
-  
-  /* 12 */ @js.native
-  object NotationDeclaration extends TopLevel[NotationDeclaration with Double]
-  
-  /* 7 */ @js.native
-  object ProcessingInstruction extends TopLevel[ProcessingInstruction with Double]
-  
-  /* 202 */ @js.native
-  object Raw extends TopLevel[Raw with Double]
-  
-  /* 3 */ @js.native
-  object Text extends TopLevel[Text with Double]
-  
+  sealed trait Text
+    extends StObject
+       with NodeType_
+  /* 3 */ val Text: typingsJapgolly.xmlbuilder.mod.NodeType_.Text & Double = js.native
 }
-

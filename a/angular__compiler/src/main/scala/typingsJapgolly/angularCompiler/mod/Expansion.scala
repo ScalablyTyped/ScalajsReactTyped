@@ -1,37 +1,35 @@
 package typingsJapgolly.angularCompiler.mod
 
-import typingsJapgolly.angularCompiler.i18nAstMod.Message
-import typingsJapgolly.angularCompiler.i18nAstMod.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "Expansion")
 @js.native
-class Expansion protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.Expansion {
+open class Expansion protected ()
+  extends NodeWithI18n
+     with Node2 {
   def this(
     switchValue: String,
     `type`: String,
-    cases: js.Array[typingsJapgolly.angularCompiler.mlParserAstMod.ExpansionCase],
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    switchValueSourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    cases: js.Array[ExpansionCase],
+    sourceSpan: ParseSourceSpan,
+    switchValueSourceSpan: ParseSourceSpan
   ) = this()
   def this(
     switchValue: String,
     `type`: String,
-    cases: js.Array[typingsJapgolly.angularCompiler.mlParserAstMod.ExpansionCase],
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    switchValueSourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: Message
+    cases: js.Array[ExpansionCase],
+    sourceSpan: ParseSourceSpan,
+    switchValueSourceSpan: ParseSourceSpan,
+    i18n: I18nMeta2
   ) = this()
-  def this(
-    switchValue: String,
-    `type`: String,
-    cases: js.Array[typingsJapgolly.angularCompiler.mlParserAstMod.ExpansionCase],
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    switchValueSourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: Node
-  ) = this()
+  
+  var cases: js.Array[ExpansionCase] = js.native
+  
+  var switchValue: String = js.native
+  
+  var switchValueSourceSpan: ParseSourceSpan = js.native
+  
+  var `type`: String = js.native
 }
-

@@ -1,34 +1,28 @@
 package typingsJapgolly.postlightMercuryParser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postlightMercuryParserStrings {
-  @js.native
-  sealed trait html extends js.Object
   
   @js.native
-  sealed trait ltr extends js.Object
+  sealed trait html extends StObject
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
-  sealed trait markdown extends js.Object
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait rtl extends js.Object
+  sealed trait markdown extends StObject
+  inline def markdown: markdown = "markdown".asInstanceOf[markdown]
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
-  @scala.inline
-  def markdown: markdown = "markdown".asInstanceOf[markdown]
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  @js.native
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
 }
-

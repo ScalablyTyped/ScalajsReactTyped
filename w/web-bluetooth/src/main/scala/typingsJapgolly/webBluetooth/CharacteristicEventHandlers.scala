@@ -1,21 +1,23 @@
 package typingsJapgolly.webBluetooth
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CharacteristicEventHandlers extends js.Object {
-  def oncharacteristicvaluechanged(ev: Event_): js.Any
+trait CharacteristicEventHandlers extends StObject {
+  
+  def oncharacteristicvaluechanged(ev: Event): Any
 }
-
 object CharacteristicEventHandlers {
-  @scala.inline
-  def apply(oncharacteristicvaluechanged: Event_ => CallbackTo[js.Any]): CharacteristicEventHandlers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oncharacteristicvaluechanged")(js.Any.fromFunction1((t0: typingsJapgolly.std.Event_) => oncharacteristicvaluechanged(t0).runNow()))
+  
+  inline def apply(oncharacteristicvaluechanged: Event => Any): CharacteristicEventHandlers = {
+    val __obj = js.Dynamic.literal(oncharacteristicvaluechanged = js.Any.fromFunction1(oncharacteristicvaluechanged))
     __obj.asInstanceOf[CharacteristicEventHandlers]
   }
+  
+  extension [Self <: CharacteristicEventHandlers](x: Self) {
+    
+    inline def setOncharacteristicvaluechanged(value: Event => Any): Self = StObject.set(x, "oncharacteristicvaluechanged", js.Any.fromFunction1(value))
+  }
 }
-

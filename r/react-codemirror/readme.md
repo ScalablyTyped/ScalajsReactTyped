@@ -10,10 +10,10 @@ Codemirror
 | ------------------ | :-------------: |
 | Full name          | react-codemirror |
 | Keywords           | react, react-component, codemirror, editor, code |
-| # releases         | 1 |
-| # dependents       | 108 |
-| # downloads        | 1462572 |
-| # stars            | 10 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 131777.66666666666 |
+| # stars            | 1516.0 |
 
 ## Links
 - [Homepage](https://github.com/JedWatson/react-codemirror)

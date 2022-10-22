@@ -1,24 +1,39 @@
 package typingsJapgolly.aframe.mod.THREE
 
-import typingsJapgolly.three.constantsMod.Mapping
-import typingsJapgolly.three.constantsMod.PixelFormat
-import typingsJapgolly.three.constantsMod.TextureDataType
-import typingsJapgolly.three.constantsMod.TextureEncoding
-import typingsJapgolly.three.constantsMod.TextureFilter
-import typingsJapgolly.three.constantsMod.Wrapping
-import typingsJapgolly.three.polyfillsMod.TypedArray
+import typingsJapgolly.std.BufferSource
+import typingsJapgolly.three.srcConstantsMod.Mapping
+import typingsJapgolly.three.srcConstantsMod.PixelFormat
+import typingsJapgolly.three.srcConstantsMod.TextureDataType
+import typingsJapgolly.three.srcConstantsMod.TextureEncoding
+import typingsJapgolly.three.srcConstantsMod.TextureFilter
+import typingsJapgolly.three.srcConstantsMod.Wrapping
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.DataTexture")
 @js.native
-class DataTexture protected ()
+open class DataTexture protected ()
   extends typingsJapgolly.three.mod.DataTexture {
+  /**
+    * @param data
+    * @param width
+    * @param height
+    * @param [format=THREE.RGBAFormat]
+    * @param [type=THREE.UnsignedByteType]
+    * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+    * @param [wrapS=THREE.ClampToEdgeWrapping]
+    * @param [wrapT=THREE.ClampToEdgeWrapping]
+    * @param [magFilter=THREE.NearestFilter]
+    * @param [minFilter=THREE.NearestFilter]
+    * @param [anisotropy=1]
+    * @param [encoding=THREE.LinearEncoding]
+    */
   def this(
-    data: TypedArray,
-    width: Double,
-    height: Double,
+    data: js.UndefOr[BufferSource | Null],
+    width: js.UndefOr[Double],
+    height: js.UndefOr[Double],
     format: js.UndefOr[PixelFormat],
     `type`: js.UndefOr[TextureDataType],
     mapping: js.UndefOr[Mapping],
@@ -30,4 +45,3 @@ class DataTexture protected ()
     encoding: js.UndefOr[TextureEncoding]
   ) = this()
 }
-

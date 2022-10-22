@@ -1,6 +1,6 @@
 package typingsJapgolly.winrtUwp.Windows.Media
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IIterable
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IMap
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVector
@@ -9,7 +9,6 @@ import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import typingsJapgolly.winrtUwp.Windows.Foundation.Rect
-import typingsJapgolly.winrtUwp.Windows.Graphics.DirectX.Direct3D11.IDirect3DSurface
 import typingsJapgolly.winrtUwp.Windows.Graphics.Imaging.ImageStream
 import typingsJapgolly.winrtUwp.Windows.Media.Core.MediaStreamSource
 import typingsJapgolly.winrtUwp.Windows.Media.Effects.IAudioEffectDefinition
@@ -20,105 +19,262 @@ import typingsJapgolly.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfi
 import typingsJapgolly.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties
 import typingsJapgolly.winrtUwp.Windows.Media.Transcoding.TranscodeFailureReason
 import typingsJapgolly.winrtUwp.Windows.Storage.IStorageFile
-import typingsJapgolly.winrtUwp.Windows.Storage.StorageFile
-import typingsJapgolly.winrtUwp.Windows.UI.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for editing, previewing, and saving edited media clips. */
-@JSGlobal("Windows.Media.Editing")
-@js.native
-object Editing extends js.Object {
-  /** Represents a single audio track for accompanying a video clip. */
+object Editing {
+  
   @js.native
-  abstract class BackgroundAudioTrack () extends js.Object {
+  sealed trait MediaTrimmingPreference extends StObject
+  /** Used to specify if media trimming should use a faster or a more precise algorithm during transcoding. */
+  @JSGlobal("Windows.Media.Editing.MediaTrimmingPreference")
+  @js.native
+  object MediaTrimmingPreference extends StObject {
+    
+    /** Use the faster trimming algorithm during transcoding. */
+    @js.native
+    sealed trait fast
+      extends StObject
+         with MediaTrimmingPreference
+    
+    /** Use the more precise trimming algorithm during transcoding. */
+    @js.native
+    sealed trait precise
+      extends StObject
+         with MediaTrimmingPreference
+  }
+  
+  @js.native
+  sealed trait VideoFramePrecision extends StObject
+  /** Used to specify the frame precision algorithm when retrieving a thumbnail. */
+  @JSGlobal("Windows.Media.Editing.VideoFramePrecision")
+  @js.native
+  object VideoFramePrecision extends StObject {
+    
+    /** Use a more precise algorithm to get a thumbnail to the nearest frame. */
+    @js.native
+    sealed trait nearestFrame
+      extends StObject
+         with VideoFramePrecision
+    
+    /** Use a faster but less precise algorithm to get the thumbnail. */
+    @js.native
+    sealed trait nearestKeyFrame
+      extends StObject
+         with VideoFramePrecision
+  }
+  
+  /** Represents a single audio track for accompanying a video clip. */
+  trait BackgroundAudioTrack extends StObject {
+    
     /** Gets the list of audio effect definitions for processing the background audio track. */
-    var audioEffectDefinitions: IVector[IAudioEffectDefinition] = js.native
+    var audioEffectDefinitions: IVector[IAudioEffectDefinition]
+    
     /** Specifies how long to wait before starting background audio playback. */
-    var delay: Double = js.native
-    /** Original playback time of the background audio track, without the effects of the TrimTimeFromStart and TrimTimeFromEnd properties. */
-    var originalDuration: Double = js.native
-    /** The amount of time to trim from the end of the background audio track. */
-    var trimTimeFromEnd: Double = js.native
-    /** The amount of time to trim from the beginning of the background audio track. */
-    var trimTimeFromStart: Double = js.native
-    /** Duration of the background audio track with TrimTimeFromStart and TrimTimeFromEnd applied to playback. */
-    var trimmedDuration: Double = js.native
-    /** An associative collection for storing custom properties associated with the background audio track. */
-    var userData: IMap[String, String] = js.native
-    /** Gets or sets the volume of the background audio track. */
-    var volume: Double = js.native
+    var delay: Double
+    
     /**
       * Gets the AudioEncodingProperties for the background audio track.
       * @return The AudioEncodingProperties for the background audio track.
       */
-    def getAudioEncodingProperties(): AudioEncodingProperties = js.native
+    def getAudioEncodingProperties(): AudioEncodingProperties
+    
+    /** Original playback time of the background audio track, without the effects of the TrimTimeFromStart and TrimTimeFromEnd properties. */
+    var originalDuration: Double
+    
+    /** The amount of time to trim from the end of the background audio track. */
+    var trimTimeFromEnd: Double
+    
+    /** The amount of time to trim from the beginning of the background audio track. */
+    var trimTimeFromStart: Double
+    
+    /** Duration of the background audio track with TrimTimeFromStart and TrimTimeFromEnd applied to playback. */
+    var trimmedDuration: Double
+    
+    /** An associative collection for storing custom properties associated with the background audio track. */
+    var userData: IMap[String, String]
+    
+    /** Gets or sets the volume of the background audio track. */
+    var volume: Double
+  }
+  object BackgroundAudioTrack {
+    
+    inline def apply(
+      audioEffectDefinitions: IVector[IAudioEffectDefinition],
+      delay: Double,
+      getAudioEncodingProperties: CallbackTo[AudioEncodingProperties],
+      originalDuration: Double,
+      trimTimeFromEnd: Double,
+      trimTimeFromStart: Double,
+      trimmedDuration: Double,
+      userData: IMap[String, String],
+      volume: Double
+    ): BackgroundAudioTrack = {
+      val __obj = js.Dynamic.literal(audioEffectDefinitions = audioEffectDefinitions.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], getAudioEncodingProperties = getAudioEncodingProperties.toJsFn, originalDuration = originalDuration.asInstanceOf[js.Any], trimTimeFromEnd = trimTimeFromEnd.asInstanceOf[js.Any], trimTimeFromStart = trimTimeFromStart.asInstanceOf[js.Any], trimmedDuration = trimmedDuration.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BackgroundAudioTrack]
+    }
+    
+    extension [Self <: BackgroundAudioTrack](x: Self) {
+      
+      inline def setAudioEffectDefinitions(value: IVector[IAudioEffectDefinition]): Self = StObject.set(x, "audioEffectDefinitions", value.asInstanceOf[js.Any])
+      
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      
+      inline def setGetAudioEncodingProperties(value: CallbackTo[AudioEncodingProperties]): Self = StObject.set(x, "getAudioEncodingProperties", value.toJsFn)
+      
+      inline def setOriginalDuration(value: Double): Self = StObject.set(x, "originalDuration", value.asInstanceOf[js.Any])
+      
+      inline def setTrimTimeFromEnd(value: Double): Self = StObject.set(x, "trimTimeFromEnd", value.asInstanceOf[js.Any])
+      
+      inline def setTrimTimeFromStart(value: Double): Self = StObject.set(x, "trimTimeFromStart", value.asInstanceOf[js.Any])
+      
+      inline def setTrimmedDuration(value: Double): Self = StObject.set(x, "trimmedDuration", value.asInstanceOf[js.Any])
+      
+      inline def setUserData(value: IMap[String, String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      
+      inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    }
   }
   
   /** Represents an audio track embedded in the media clip. */
-  @js.native
-  abstract class EmbeddedAudioTrack () extends js.Object {
+  trait EmbeddedAudioTrack extends StObject {
+    
     /**
       * Gets the AudioEncodingProperties for the embedded audio track.
       * @return The AudioEncodingProperties for the embedded audio track.
       */
-    def getAudioEncodingProperties(): AudioEncodingProperties = js.native
+    def getAudioEncodingProperties(): AudioEncodingProperties
+  }
+  object EmbeddedAudioTrack {
+    
+    inline def apply(getAudioEncodingProperties: CallbackTo[AudioEncodingProperties]): EmbeddedAudioTrack = {
+      val __obj = js.Dynamic.literal(getAudioEncodingProperties = getAudioEncodingProperties.toJsFn)
+      __obj.asInstanceOf[EmbeddedAudioTrack]
+    }
+    
+    extension [Self <: EmbeddedAudioTrack](x: Self) {
+      
+      inline def setGetAudioEncodingProperties(value: CallbackTo[AudioEncodingProperties]): Self = StObject.set(x, "getAudioEncodingProperties", value.toJsFn)
+    }
   }
   
   /** Represents a single media object. */
-  @js.native
-  abstract class MediaClip () extends js.Object {
+  trait MediaClip extends StObject {
+    
     /** Gets the list of audio effect definitions for processing the media clip. */
-    var audioEffectDefinitions: IVector[IAudioEffectDefinition] = js.native
+    var audioEffectDefinitions: IVector[IAudioEffectDefinition]
+    
     /** The list of embedded audio tracks in this media clip. */
-    var embeddedAudioTracks: IVectorView[EmbeddedAudioTrack] = js.native
+    var embeddedAudioTracks: IVectorView[EmbeddedAudioTrack]
+    
     /** The time when the media clip stops playing within a MediaComposition . */
-    var endTimeInComposition: Double = js.native
-    /** Original playback time of the media clip, without the effects of TrimTimeFromStart and TrimTimeFromEnd properties. */
-    var originalDuration: Double = js.native
-    /** The index of the audio track within the media clip that is used for playback. */
-    var selectedEmbeddedAudioTrackIndex: Double = js.native
-    /** The time when the media clip starts playing within a MediaComposition . */
-    var startTimeInComposition: Double = js.native
-    /** The amount of time to trim from the end of the media clip. */
-    var trimTimeFromEnd: Double = js.native
-    /** The amount of time to trim from the beginning of the media clip. */
-    var trimTimeFromStart: Double = js.native
-    /** Duration of the media clip with TrimTimeFromStart and TrimTimeFromEnd applied to playback. */
-    var trimmedDuration: Double = js.native
-    /** An associative collection for storing custom properties associated with the media clip. */
-    var userData: IMap[String, String] = js.native
-    /** Gets the list of video effect definitions for processing the media clip. */
-    var videoEffectDefinitions: IVector[IVideoEffectDefinition] = js.native
-    /** Gets or sets the volume of the media clip. */
-    var volume: Double = js.native
+    var endTimeInComposition: Double
+    
     /**
       * Gets the VideoEncodingProperties for the media clip.
       * @return The VideoEncodingProperties for the media clip.
       */
-    def getVideoEncodingProperties(): VideoEncodingProperties = js.native
+    def getVideoEncodingProperties(): VideoEncodingProperties
+    
+    /** Original playback time of the media clip, without the effects of TrimTimeFromStart and TrimTimeFromEnd properties. */
+    var originalDuration: Double
+    
+    /** The index of the audio track within the media clip that is used for playback. */
+    var selectedEmbeddedAudioTrackIndex: Double
+    
+    /** The time when the media clip starts playing within a MediaComposition . */
+    var startTimeInComposition: Double
+    
+    /** The amount of time to trim from the end of the media clip. */
+    var trimTimeFromEnd: Double
+    
+    /** The amount of time to trim from the beginning of the media clip. */
+    var trimTimeFromStart: Double
+    
+    /** Duration of the media clip with TrimTimeFromStart and TrimTimeFromEnd applied to playback. */
+    var trimmedDuration: Double
+    
+    /** An associative collection for storing custom properties associated with the media clip. */
+    var userData: IMap[String, String]
+    
+    /** Gets the list of video effect definitions for processing the media clip. */
+    var videoEffectDefinitions: IVector[IVideoEffectDefinition]
+    
+    /** Gets or sets the volume of the media clip. */
+    var volume: Double
+  }
+  object MediaClip {
+    
+    inline def apply(
+      audioEffectDefinitions: IVector[IAudioEffectDefinition],
+      embeddedAudioTracks: IVectorView[EmbeddedAudioTrack],
+      endTimeInComposition: Double,
+      getVideoEncodingProperties: CallbackTo[VideoEncodingProperties],
+      originalDuration: Double,
+      selectedEmbeddedAudioTrackIndex: Double,
+      startTimeInComposition: Double,
+      trimTimeFromEnd: Double,
+      trimTimeFromStart: Double,
+      trimmedDuration: Double,
+      userData: IMap[String, String],
+      videoEffectDefinitions: IVector[IVideoEffectDefinition],
+      volume: Double
+    ): MediaClip = {
+      val __obj = js.Dynamic.literal(audioEffectDefinitions = audioEffectDefinitions.asInstanceOf[js.Any], embeddedAudioTracks = embeddedAudioTracks.asInstanceOf[js.Any], endTimeInComposition = endTimeInComposition.asInstanceOf[js.Any], getVideoEncodingProperties = getVideoEncodingProperties.toJsFn, originalDuration = originalDuration.asInstanceOf[js.Any], selectedEmbeddedAudioTrackIndex = selectedEmbeddedAudioTrackIndex.asInstanceOf[js.Any], startTimeInComposition = startTimeInComposition.asInstanceOf[js.Any], trimTimeFromEnd = trimTimeFromEnd.asInstanceOf[js.Any], trimTimeFromStart = trimTimeFromStart.asInstanceOf[js.Any], trimmedDuration = trimmedDuration.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any], videoEffectDefinitions = videoEffectDefinitions.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MediaClip]
+    }
+    
+    extension [Self <: MediaClip](x: Self) {
+      
+      inline def setAudioEffectDefinitions(value: IVector[IAudioEffectDefinition]): Self = StObject.set(x, "audioEffectDefinitions", value.asInstanceOf[js.Any])
+      
+      inline def setEmbeddedAudioTracks(value: IVectorView[EmbeddedAudioTrack]): Self = StObject.set(x, "embeddedAudioTracks", value.asInstanceOf[js.Any])
+      
+      inline def setEndTimeInComposition(value: Double): Self = StObject.set(x, "endTimeInComposition", value.asInstanceOf[js.Any])
+      
+      inline def setGetVideoEncodingProperties(value: CallbackTo[VideoEncodingProperties]): Self = StObject.set(x, "getVideoEncodingProperties", value.toJsFn)
+      
+      inline def setOriginalDuration(value: Double): Self = StObject.set(x, "originalDuration", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedEmbeddedAudioTrackIndex(value: Double): Self = StObject.set(x, "selectedEmbeddedAudioTrackIndex", value.asInstanceOf[js.Any])
+      
+      inline def setStartTimeInComposition(value: Double): Self = StObject.set(x, "startTimeInComposition", value.asInstanceOf[js.Any])
+      
+      inline def setTrimTimeFromEnd(value: Double): Self = StObject.set(x, "trimTimeFromEnd", value.asInstanceOf[js.Any])
+      
+      inline def setTrimTimeFromStart(value: Double): Self = StObject.set(x, "trimTimeFromStart", value.asInstanceOf[js.Any])
+      
+      inline def setTrimmedDuration(value: Double): Self = StObject.set(x, "trimmedDuration", value.asInstanceOf[js.Any])
+      
+      inline def setUserData(value: IMap[String, String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      
+      inline def setVideoEffectDefinitions(value: IVector[IVideoEffectDefinition]): Self = StObject.set(x, "videoEffectDefinitions", value.asInstanceOf[js.Any])
+      
+      inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    }
   }
   
   /** Represents a collection of media clips and background audio tracks. */
   @js.native
-  /** Initializes a new instance of the MediaComposition class. */
-  class MediaComposition () extends js.Object {
+  trait MediaComposition extends StObject {
+    
     /** A collection of background audio tracks for playback in the media composition. */
     var backgroundAudioTracks: IVector[BackgroundAudioTrack] = js.native
+    
     /** A collection of media clips for playback in the media composition. */
     var clips: IVector[MediaClip] = js.native
-    /** The total playback time of the media composition. */
-    var duration: Double = js.native
-    /** Gets the list of overlay layers for the media composition. */
-    var overlayLayers: IVector[MediaOverlayLayer] = js.native
-    /** An associative collection for storing custom properties associated with the media composition. */
-    var userData: IMap[String, String] = js.native
+    
     /**
       * Create a new default media encoding profile which can be modified if necessary.
       * @return The newly created MediaEncodingProfile .
       */
     def createDefaultEncodingProfile(): MediaEncodingProfile = js.native
+    
+    /** The total playback time of the media composition. */
+    var duration: Double = js.native
+    
     /**
       * Creates a new MediaStreamSource .
       * @return The newly created MediaStreamSource .
@@ -130,6 +286,7 @@ object Editing extends js.Object {
       * @return The newly created MediaStreamSource .
       */
     def generateMediaStreamSource(encodingProfile: MediaEncodingProfile): MediaStreamSource = js.native
+    
     /**
       * Creates a new MediaStreamSource used to preview the edited media.
       * @param scaledWidth The width of the preview media.
@@ -137,6 +294,7 @@ object Editing extends js.Object {
       * @return The new MediaStreamSource used to preview the edited media.
       */
     def generatePreviewMediaStreamSource(scaledWidth: Double, scaledHeight: Double): MediaStreamSource = js.native
+    
     /**
       * Asynchronously gets an image stream that represents a thumbnail of the media composition.
       * @param timeFromStart Specifies the point in the timeline of the MediaComposition from which to render the thumbnail, offset from the start of the MediaComposition.
@@ -151,6 +309,7 @@ object Editing extends js.Object {
       scaledHeight: Double,
       framePrecision: VideoFramePrecision
     ): IPromiseWithIAsyncOperation[ImageStream] = js.native
+    
     /**
       * Asynchronously gets a vector view of thumbnails of the media composition.
       * @param timesFromStart Specifies the points in the timeline of the MediaComposition from which to render the thumbnails, offset from the start of the MediaComposition.
@@ -164,7 +323,11 @@ object Editing extends js.Object {
       scaledWidth: Double,
       scaledHeight: Double,
       framePrecision: VideoFramePrecision
-    ): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    ): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
+    
+    /** Gets the list of overlay layers for the media composition. */
+    var overlayLayers: IVector[MediaOverlayLayer] = js.native
+    
     /**
       * Asynchronously renders the MediaComposition to the specified file.
       * @param destination The file to which this MediaComposition is rendered.
@@ -190,163 +353,78 @@ object Editing extends js.Object {
       trimmingPreference: MediaTrimmingPreference,
       encodingProfile: MediaEncodingProfile
     ): IPromiseWithIAsyncOperationWithProgress[TranscodeFailureReason, Double] = js.native
+    
     /**
       * Asynchronously serializes the MediaComposition to disk so that it can be loaded and modified in the future.
       * @param file The file to which the MediaComposition is saved.
       * @return An async action which can be used to track the success or failure of the operation.
       */
     def saveAsync(file: IStorageFile): IPromiseWithIAsyncAction = js.native
+    
+    /** An associative collection for storing custom properties associated with the media composition. */
+    var userData: IMap[String, String] = js.native
   }
   
   /** Represents an overlay that can be used in a media composition. */
-  @js.native
-  class MediaOverlay protected () extends js.Object {
-    /**
-      * Initializes a new instance of the MediaOverlay class.
-      * @param clip The media clip to be used for the overlay.
-      */
-    def this(clip: MediaClip) = this()
-    /**
-      * Initializes a new instance of the MediaOverlay class.
-      * @param clip The media clip to be used for the overlay.
-      * @param position The position of the overlay.
-      * @param opacity The opacity of the overlay, in the range of 0.0 to 1.0, where 0.0 is completely transparent and 1.0 is completely opaque.
-      */
-    def this(clip: MediaClip, position: Rect, opacity: Double) = this()
+  trait MediaOverlay extends StObject {
+    
     /** Gets or sets a value indicating whether audio is enabled for the MediaOverlay . */
-    var audioEnabled: Boolean = js.native
+    var audioEnabled: Boolean
+    
     /** Gets the media clip to be used for the overlay. */
-    var clip: MediaClip = js.native
+    var clip: MediaClip
+    
     /** Gets or sets the time span from the start of the clip after which the media overlay should be rendered. */
-    var delay: Double = js.native
+    var delay: Double
+    
     /** Gets the opacity of the overlay. */
-    var opacity: Double = js.native
+    var opacity: Double
+    
     /** Gets the position of the overlay. */
-    var position: Rect = js.native
+    var position: Rect
+  }
+  object MediaOverlay {
+    
+    inline def apply(audioEnabled: Boolean, clip: MediaClip, delay: Double, opacity: Double, position: Rect): MediaOverlay = {
+      val __obj = js.Dynamic.literal(audioEnabled = audioEnabled.asInstanceOf[js.Any], clip = clip.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MediaOverlay]
+    }
+    
+    extension [Self <: MediaOverlay](x: Self) {
+      
+      inline def setAudioEnabled(value: Boolean): Self = StObject.set(x, "audioEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setClip(value: MediaClip): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+      
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      
+      inline def setPosition(value: Rect): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    }
   }
   
   /** Represents a layer of a media overlay. */
-  @js.native
-  /** Initializes a new instance of the MediaOverlayLayer class. */
-  class MediaOverlayLayer () extends js.Object {
-    /**
-      * Initializes a new instance of the MediaOverlayLayer class.
-      * @param compositorDefinition The definition of the custom compositor associated with the media overlay layer.
-      */
-    def this(compositorDefinition: IVideoCompositorDefinition) = this()
+  trait MediaOverlayLayer extends StObject {
+    
     /** Gets the definition of the custom compositor associated with the media overlay layer, if there is one. */
-    var customCompositorDefinition: IVideoCompositorDefinition = js.native
+    var customCompositorDefinition: IVideoCompositorDefinition
+    
     /** Gets the list of overlays for this media overlay layer. */
-    var overlays: IVector[MediaOverlay] = js.native
+    var overlays: IVector[MediaOverlay]
   }
-  
-  @js.native
-  sealed trait MediaTrimmingPreference extends js.Object
-  
-  @js.native
-  sealed trait VideoFramePrecision extends js.Object
-  
-  /* static members */
-  @js.native
-  object BackgroundAudioTrack extends js.Object {
-    /**
-      * Creates a background audio track object with audio content copied from an embedded audio track object.
-      * @param embeddedAudioTrack An embedded audio track to use as the source audio for the background audio track.
-      * @return A new background audio track object containing audio content copied from the embedded audio track.
-      */
-    def createFromEmbeddedAudioTrack(embeddedAudioTrack: EmbeddedAudioTrack): BackgroundAudioTrack = js.native
-    /**
-      * Creates a background audio track from an audio file.
-      * @param file A StorageFile object representing the source audio file.
-      * @return A new background audio track object containing the contents of the audio file.
-      */
-    def createFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[BackgroundAudioTrack] = js.native
+  object MediaOverlayLayer {
+    
+    inline def apply(customCompositorDefinition: IVideoCompositorDefinition, overlays: IVector[MediaOverlay]): MediaOverlayLayer = {
+      val __obj = js.Dynamic.literal(customCompositorDefinition = customCompositorDefinition.asInstanceOf[js.Any], overlays = overlays.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MediaOverlayLayer]
+    }
+    
+    extension [Self <: MediaOverlayLayer](x: Self) {
+      
+      inline def setCustomCompositorDefinition(value: IVideoCompositorDefinition): Self = StObject.set(x, "customCompositorDefinition", value.asInstanceOf[js.Any])
+      
+      inline def setOverlays(value: IVector[MediaOverlay]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
+    }
   }
-  
-  /* static members */
-  @js.native
-  object MediaClip extends js.Object {
-    /**
-      * Creates a solid color video clip that displays a single color for a specified length of time. Solid color video clips are typically used to create an explicit gap between video segments.
-      * @param color The color to display in the video clip.
-      * @param originalDuration How long to display the color in the video clip.
-      * @return A new media clip object containing the color-based video clip.
-      */
-    def createFromColor(color: Color, originalDuration: Double): MediaClip = js.native
-    /**
-      * Creates a video clip from a video file.
-      * @param file A StorageFile object representing the source video file.
-      * @return A new media clip object containing a video clip of the video file.
-      */
-    def createFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[MediaClip] = js.native
-    /**
-      * Creates a video clip that displays a single image for a specified length of time.
-      * @param file A StorageFile object representing the source image file.
-      * @param originalDuration How long to display the image in the video clip.
-      * @return A new media clip object containing the image-based video clip.
-      */
-    def createFromImageFileAsync(file: IStorageFile, originalDuration: Double): IPromiseWithIAsyncOperation[MediaClip] = js.native
-    /**
-      * Creates a video clip from a Direct3D surface.
-      * @param surface The Direct3D surface.
-      * @param originalDuration The initial duration of the created video clip.
-      * @return A new media clip object containing the video clip.
-      */
-    def createFromSurface(surface: IDirect3DSurface, originalDuration: Double): MediaClip = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object MediaComposition extends js.Object {
-    /**
-      * Asynchronously loads a MediaComposition from a StorageFile .
-      * @param file The file from which to load the MediaComposition .
-      * @return An async operation which can be used to track the success or failure of the operation.
-      */
-    def loadAsync(file: StorageFile): IPromiseWithIAsyncOperation[MediaComposition] = js.native
-  }
-  
-  /** Used to specify if media trimming should use a faster or a more precise algorithm during transcoding. */
-  @js.native
-  object MediaTrimmingPreference extends js.Object {
-    /** Use the faster trimming algorithm during transcoding. */
-    @js.native
-    sealed trait fast extends MediaTrimmingPreference
-    
-    /** Use the more precise trimming algorithm during transcoding. */
-    @js.native
-    sealed trait precise extends MediaTrimmingPreference
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[MediaTrimmingPreference with Double] = js.native
-    /* 0 */ @js.native
-    object fast extends TopLevel[fast with Double]
-    
-    /* 1 */ @js.native
-    object precise extends TopLevel[precise with Double]
-    
-  }
-  
-  /** Used to specify the frame precision algorithm when retrieving a thumbnail. */
-  @js.native
-  object VideoFramePrecision extends js.Object {
-    /** Use a more precise algorithm to get a thumbnail to the nearest frame. */
-    @js.native
-    sealed trait nearestFrame extends VideoFramePrecision
-    
-    /** Use a faster but less precise algorithm to get the thumbnail. */
-    @js.native
-    sealed trait nearestKeyFrame extends VideoFramePrecision
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[VideoFramePrecision with Double] = js.native
-    /* 0 */ @js.native
-    object nearestFrame extends TopLevel[nearestFrame with Double]
-    
-    /* 1 */ @js.native
-    object nearestKeyFrame extends TopLevel[nearestKeyFrame with Double]
-    
-  }
-  
 }
-

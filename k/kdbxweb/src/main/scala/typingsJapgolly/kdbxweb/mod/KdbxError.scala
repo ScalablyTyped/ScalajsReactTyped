@@ -1,15 +1,13 @@
 package typingsJapgolly.kdbxweb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "KdbxError")
 @js.native
-class KdbxError protected () extends js.Object {
-  def this(code: Double, message: String) = this()
-  var code: Double = js.native
-  var message: String = js.native
-  var name: typingsJapgolly.kdbxweb.kdbxwebStrings.KdbxError = js.native
+open class KdbxError protected ()
+  extends typingsJapgolly.kdbxweb.distTypesErrorsKdbxErrorMod.KdbxError {
+  def this(code: String) = this()
+  def this(code: String, message: String) = this()
 }
-

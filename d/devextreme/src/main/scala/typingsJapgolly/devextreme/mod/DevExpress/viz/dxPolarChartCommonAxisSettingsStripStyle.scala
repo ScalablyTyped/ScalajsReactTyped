@@ -1,20 +1,27 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPolarChartCommonAxisSettingsStripStyle extends js.Object {
-  /** An object defining the configuration options for a strip label style. */
+trait dxPolarChartCommonAxisSettingsStripStyle extends StObject {
+  
+  /**
+    * An object defining the configuration properties for a strip label style.
+    */
   var label: js.UndefOr[dxPolarChartCommonAxisSettingsStripStyleLabel] = js.undefined
 }
-
 object dxPolarChartCommonAxisSettingsStripStyle {
-  @scala.inline
-  def apply(label: dxPolarChartCommonAxisSettingsStripStyleLabel = null): dxPolarChartCommonAxisSettingsStripStyle = {
+  
+  inline def apply(): dxPolarChartCommonAxisSettingsStripStyle = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartCommonAxisSettingsStripStyle]
   }
+  
+  extension [Self <: dxPolarChartCommonAxisSettingsStripStyle](x: Self) {
+    
+    inline def setLabel(value: dxPolarChartCommonAxisSettingsStripStyleLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+  }
 }
-

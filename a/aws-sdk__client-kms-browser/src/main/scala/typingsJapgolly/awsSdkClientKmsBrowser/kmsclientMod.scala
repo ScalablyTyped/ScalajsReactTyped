@@ -1,36 +1,36 @@
 package typingsJapgolly.awsSdkClientKmsBrowser
 
-import org.scalajs.dom.raw.Blob
-import typingsJapgolly.awsSdkClientKmsBrowser.inputTypesUnionMod.InputTypesUnion
 import typingsJapgolly.awsSdkClientKmsBrowser.kmsconfigurationMod.KMSConfiguration
 import typingsJapgolly.awsSdkClientKmsBrowser.kmsconfigurationMod.KMSResolvedConfiguration
-import typingsJapgolly.awsSdkClientKmsBrowser.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkMiddlewareStack.mod.MiddlewareStack
-import typingsJapgolly.awsSdkTypes.commandMod.Command
+import typingsJapgolly.awsSdkClientKmsBrowser.typesInputTypesUnionMod.InputTypesUnion
+import typingsJapgolly.awsSdkClientKmsBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesCommandMod.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-browser/KMSClient", JSImport.Namespace)
-@js.native
-object kmsclientMod extends js.Object {
+object kmsclientMod {
+  
+  @JSImport("@aws-sdk/client-kms-browser/KMSClient", "KMSClient")
   @js.native
-  class KMSClient protected () extends js.Object {
+  open class KMSClient protected () extends StObject {
     def this(configuration: KMSConfiguration) = this()
-    val config: KMSResolvedConfiguration = js.native
-    val middlewareStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob] = js.native
+    
+    /* protected */ val config: KMSResolvedConfiguration = js.native
+    
     def destroy(): Unit = js.native
+    
+    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any = js.native
+    
     /**
       * This will need to be revised when the command interface lands.
       */
     def send[InputType /* <: InputTypesUnion */, OutputType /* <: OutputTypesUnion */](
-      command: Command[InputTypesUnion, InputType, OutputTypesUnion, OutputType, KMSResolvedConfiguration, Blob]
+      command: Command[InputTypesUnion, InputType, OutputTypesUnion, OutputType, KMSResolvedConfiguration]
     ): js.Promise[OutputType] = js.native
     def send[InputType /* <: InputTypesUnion */, OutputType /* <: OutputTypesUnion */](
-      command: Command[InputTypesUnion, InputType, OutputTypesUnion, OutputType, KMSResolvedConfiguration, Blob],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[OutputType], Unit]
+      command: Command[InputTypesUnion, InputType, OutputTypesUnion, OutputType, KMSResolvedConfiguration],
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
     ): Unit = js.native
   }
-  
 }
-

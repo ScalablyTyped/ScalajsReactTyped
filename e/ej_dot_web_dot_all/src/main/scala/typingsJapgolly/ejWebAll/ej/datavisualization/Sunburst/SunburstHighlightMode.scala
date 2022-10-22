@@ -1,45 +1,36 @@
 package typingsJapgolly.ejWebAll.ej.datavisualization.Sunburst
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SunburstHighlightMode extends js.Object
-
+sealed trait SunburstHighlightMode extends StObject
 @JSGlobal("ej.datavisualization.Sunburst.SunburstHighlightMode")
 @js.native
-object SunburstHighlightMode extends js.Object {
-  //string
-  @js.native
-  sealed trait All extends SunburstHighlightMode
+object SunburstHighlightMode extends StObject {
   
   //string
   @js.native
-  sealed trait Child extends SunburstHighlightMode
+  sealed trait All
+    extends StObject
+       with SunburstHighlightMode
   
   //string
   @js.native
-  sealed trait Parent extends SunburstHighlightMode
+  sealed trait Child
+    extends StObject
+       with SunburstHighlightMode
   
   //string
   @js.native
-  sealed trait Point extends SunburstHighlightMode
+  sealed trait Parent
+    extends StObject
+       with SunburstHighlightMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SunburstHighlightMode with Double] = js.native
-  /* 3 */ @js.native
-  object All extends TopLevel[All with Double]
-  
-  /* 2 */ @js.native
-  object Child extends TopLevel[Child with Double]
-  
-  /* 1 */ @js.native
-  object Parent extends TopLevel[Parent with Double]
-  
-  /* 0 */ @js.native
-  object Point extends TopLevel[Point with Double]
-  
+  //string
+  @js.native
+  sealed trait Point
+    extends StObject
+       with SunburstHighlightMode
 }
-

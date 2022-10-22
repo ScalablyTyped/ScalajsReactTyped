@@ -1,22 +1,32 @@
 package typingsJapgolly.orientjs.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ORawExpression extends _OSqlExpression {
-  var db: ODB
-  var value: String
+trait ORawExpression
+  extends StObject
+     with _OSqlExpression {
+  
   def as(alias: String): ORawExpression
+  
+  var db: ODB
+  
+  var value: String
 }
-
 object ORawExpression {
-  @scala.inline
-  def apply(as: String => CallbackTo[ORawExpression], db: ODB, value: String): ORawExpression = {
-    val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("as")(js.Any.fromFunction1((t0: java.lang.String) => as(t0).runNow()))
+  
+  inline def apply(as: String => ORawExpression, db: ODB, value: String): ORawExpression = {
+    val __obj = js.Dynamic.literal(as = js.Any.fromFunction1(as), db = db.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ORawExpression]
   }
+  
+  extension [Self <: ORawExpression](x: Self) {
+    
+    inline def setAs(value: String => ORawExpression): Self = StObject.set(x, "as", js.Any.fromFunction1(value))
+    
+    inline def setDb(value: ODB): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

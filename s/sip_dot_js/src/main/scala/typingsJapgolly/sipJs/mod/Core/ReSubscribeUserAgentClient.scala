@@ -1,21 +1,28 @@
 package typingsJapgolly.sipJs.mod.Core
 
-import typingsJapgolly.sipJs.outgoingRequestMod.OutgoingRequestDelegate
-import typingsJapgolly.sipJs.outgoingRequestMod.RequestOptions
+import typingsJapgolly.sipJs.libCoreMessagesOutgoingRequestMod.OutgoingRequestDelegate
+import typingsJapgolly.sipJs.libCoreMessagesOutgoingRequestMod.RequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.ReSubscribeUserAgentClient")
 @js.native
-class ReSubscribeUserAgentClient protected ()
-  extends typingsJapgolly.sipJs.coreMod.ReSubscribeUserAgentClient {
-  def this(dialog: typingsJapgolly.sipJs.dialogsMod.SubscriptionDialog) = this()
-  def this(dialog: typingsJapgolly.sipJs.dialogsMod.SubscriptionDialog, delegate: OutgoingRequestDelegate) = this()
+open class ReSubscribeUserAgentClient protected ()
+  extends typingsJapgolly.sipJs.libCoreMod.ReSubscribeUserAgentClient {
+  def this(dialog: typingsJapgolly.sipJs.libCoreDialogsMod.SubscriptionDialog) = this()
   def this(
-    dialog: typingsJapgolly.sipJs.dialogsMod.SubscriptionDialog,
+    dialog: typingsJapgolly.sipJs.libCoreDialogsMod.SubscriptionDialog,
+    delegate: OutgoingRequestDelegate
+  ) = this()
+  def this(
+    dialog: typingsJapgolly.sipJs.libCoreDialogsMod.SubscriptionDialog,
+    delegate: Unit,
+    options: RequestOptions
+  ) = this()
+  def this(
+    dialog: typingsJapgolly.sipJs.libCoreDialogsMod.SubscriptionDialog,
     delegate: OutgoingRequestDelegate,
     options: RequestOptions
   ) = this()
 }
-

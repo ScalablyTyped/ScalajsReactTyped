@@ -1,36 +1,31 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.estree.mod.Node because Already inherited */ trait Identifier
-  extends BaseNode
-     with Expression
+trait Identifier
+  extends StObject
+     with BaseNode
      with Pattern {
+  
   var name: String
+  
   @JSName("type")
   var type_Identifier: typingsJapgolly.estree.estreeStrings.Identifier
 }
-
 object Identifier {
-  @scala.inline
-  def apply(
-    name: String,
-    `type`: typingsJapgolly.estree.estreeStrings.Identifier,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Identifier = {
+  
+  inline def apply(name: String): Identifier = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Identifier")
     __obj.asInstanceOf[Identifier]
   }
+  
+  extension [Self <: Identifier](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.Identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

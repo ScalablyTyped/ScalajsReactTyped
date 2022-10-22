@@ -10,10 +10,10 @@ easy access to your Cloud Foundry application environment
 | ------------------ | :-------------: |
 | Full name          | cfenv |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 90 |
-| # downloads        | 11728585 |
-| # stars            | 13 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 215144.0 |
+| # stars            | 69.0 |
 
 ## Links
 - [Homepage](https://github.com/cloudfoundry-community/node-cfenv)

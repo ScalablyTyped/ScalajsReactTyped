@@ -1,21 +1,29 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Readonly<{  name  :react-native.react-native.AccessibilityActionName,   label ? :string}> */
-trait AccessibilityActionInfo extends js.Object {
+/* Inlined std.Readonly<{  name :react-native.react-native.AccessibilityActionName | string,   label :string | undefined}> */
+trait AccessibilityActionInfo extends StObject {
+  
   val label: js.UndefOr[String] = js.undefined
-  val name: AccessibilityActionName
+  
+  val name: AccessibilityActionName | String
 }
-
 object AccessibilityActionInfo {
-  @scala.inline
-  def apply(name: AccessibilityActionName, label: String = null): AccessibilityActionInfo = {
+  
+  inline def apply(name: AccessibilityActionName | String): AccessibilityActionInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibilityActionInfo]
   }
+  
+  extension [Self <: AccessibilityActionInfo](x: Self) {
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setName(value: AccessibilityActionName | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

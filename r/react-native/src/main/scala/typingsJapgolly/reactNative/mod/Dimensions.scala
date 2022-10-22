@@ -1,17 +1,17 @@
 package typingsJapgolly.reactNative.mod
 
+import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.reactNative.AnonScreen
+import typingsJapgolly.reactNative.anon.Screen
 import typingsJapgolly.reactNative.reactNativeStrings.change
 import typingsJapgolly.reactNative.reactNativeStrings.screen
 import typingsJapgolly.reactNative.reactNativeStrings.window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dimensions extends js.Object {
+trait Dimensions extends StObject {
+  
   /**
     * Add an event listener for dimension changes
     *
@@ -19,9 +19,8 @@ trait Dimensions extends js.Object {
     * @param handler the event handler
     */
   @JSName("addEventListener")
-  def addEventListener_change(`type`: change, handler: js.Function1[/* hasWindowScreen */ AnonScreen, Unit]): Unit = js.native
-  @JSName("get")
-  def get_screen(dim: screen): ScaledSize = js.native
+  def addEventListener_change(`type`: change, handler: js.Function1[/* hasWindowScreen */ Screen, Unit]): EmitterSubscription
+  
   /**
     * Initial dimensions are set before runApplication is called so they
     * should be available before any other require's are run, but may be
@@ -36,24 +35,26 @@ trait Dimensions extends js.Object {
     @param dim Name of dimension as defined when calling set.
     @returns Value for the dimension.
     */
-  @JSName("get")
-  def get_window(dim: window): ScaledSize = js.native
-  /**
-    * Remove an event listener
-    *
-    * @param type the type of event
-    * @param handler the event handler
-    */
-  @JSName("removeEventListener")
-  def removeEventListener_change(`type`: change, handler: js.Function1[/* hasWindowScreen */ AnonScreen, Unit]): Unit = js.native
+  def get(dim: window | screen): ScaledSize
+  
   /**
     * This should only be called from native code by sending the didUpdateDimensions event.
     * @param dims Simple string-keyed object of dimensions to set
     */
-  def set(dims: StringDictionary[js.Any]): Unit = js.native
+  def set(dims: StringDictionary[Any]): Unit
 }
-
-@JSImport("react-native", "Dimensions")
-@js.native
-object Dimensions extends TopLevel[Dimensions]
-
+object Dimensions {
+  
+  @JSImport("react-native", "Dimensions")
+  @js.native
+  val ^ : Dimensions = js.native
+  
+  extension [Self <: Dimensions](x: Self) {
+    
+    inline def setAddEventListener(value: (change, js.Function1[/* hasWindowScreen */ Screen, Unit]) => EmitterSubscription): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+    
+    inline def setGet(value: window | screen => ScaledSize): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    
+    inline def setSet(value: StringDictionary[Any] => Callback): Self = StObject.set(x, "set", js.Any.fromFunction1((t0: StringDictionary[Any]) => value(t0).runNow()))
+  }
+}

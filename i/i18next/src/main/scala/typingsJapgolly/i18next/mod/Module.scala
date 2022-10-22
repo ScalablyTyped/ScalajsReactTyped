@@ -1,25 +1,23 @@
 package typingsJapgolly.i18next.mod
 
-import typingsJapgolly.i18next.i18nextStrings.`3rdParty`
-import typingsJapgolly.i18next.i18nextStrings.backend
-import typingsJapgolly.i18next.i18nextStrings.i18nFormat
-import typingsJapgolly.i18next.i18nextStrings.languageDetector
-import typingsJapgolly.i18next.i18nextStrings.logger
-import typingsJapgolly.i18next.i18nextStrings.postProcessor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Module extends js.Object {
-  var `type`: backend | logger | languageDetector | postProcessor | i18nFormat | `3rdParty`
+trait Module extends StObject {
+  
+  var `type`: ModuleType
 }
-
 object Module {
-  @scala.inline
-  def apply(`type`: backend | logger | languageDetector | postProcessor | i18nFormat | `3rdParty`): Module = {
+  
+  inline def apply(`type`: ModuleType): Module = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Module]
   }
+  
+  extension [Self <: Module](x: Self) {
+    
+    inline def setType(value: ModuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

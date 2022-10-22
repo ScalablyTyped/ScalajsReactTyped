@@ -1,18 +1,19 @@
 package typingsJapgolly.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
-import typingsJapgolly.ibmCloudSdkCore.helperMod.FileObject
+import typingsJapgolly.ibmCloudSdkCore.esLibHelperMod.FileObject
 import typingsJapgolly.ibmCloudSdkCore.mod.BaseService
-import typingsJapgolly.node.Buffer
 import typingsJapgolly.node.NodeJS.ReadableStream
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ### Service Overview The IBM&reg; Text to Speech service provides APIs that use IBM's speech-synthesis capabilities to synthesize text into natural-sounding speech in a variety of languages, dialects, and voices. The service supports at least one male or female voice, sometimes both, for each language. The audio is streamed back to the client with minimal delay.   For speech synthesis, the service supports a synchronous HTTP Representational State Transfer (REST) interface. It also supports a WebSocket interface that provides both plain text and SSML input, including the SSML &lt;mark&gt; element and word timings. SSML is an XML-based markup language that provides text annotation for speech-synthesis applications.   The service also offers a customization interface. You can use the interface to define sounds-like or phonetic translations for words. A sounds-like translation consists of one or more words that, when combined, sound like the word. A phonetic translation is based on the SSML phoneme format for representing a word. You can specify a phonetic translation in standard International Phonetic Alphabet (IPA) representation or in the proprietary IBM Symbolic Phonetic Representation (SPR).
   */
 @js.native
 trait TextToSpeechV1 extends BaseService {
+  
   /*************************
     * customWords
     ************************/
@@ -59,8 +60,9 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def addWord(params: AddWordParams): js.Promise[_] | Unit = js.native
-  def addWord(params: AddWordParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def addWord(params: AddWordParams): js.Promise[Any] | Unit = js.native
+  def addWord(params: AddWordParams, callback: Callback[Empty]): js.Promise[Any] | Unit = js.native
+  
   /**
     * Add custom words.
     *
@@ -101,8 +103,9 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def addWords(params: AddWordsParams): js.Promise[_] | Unit = js.native
-  def addWords(params: AddWordsParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def addWords(params: AddWordsParams): js.Promise[Any] | Unit = js.native
+  def addWords(params: AddWordsParams, callback: Callback[Empty]): js.Promise[Any] | Unit = js.native
+  
   /*************************
     * customModels
     ************************/
@@ -128,8 +131,9 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createVoiceModel(params: CreateVoiceModelParams): js.Promise[_] | Unit = js.native
-  def createVoiceModel(params: CreateVoiceModelParams, callback: Callback[VoiceModel]): js.Promise[_] | Unit = js.native
+  def createVoiceModel(params: CreateVoiceModelParams): js.Promise[Any] | Unit = js.native
+  def createVoiceModel(params: CreateVoiceModelParams, callback: Callback[VoiceModel]): js.Promise[Any] | Unit = js.native
+  
   /*************************
     * userData
     ************************/
@@ -152,8 +156,9 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteUserData(params: DeleteUserDataParams): js.Promise[_] | Unit = js.native
-  def deleteUserData(params: DeleteUserDataParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteUserData(params: DeleteUserDataParams): js.Promise[Any] | Unit = js.native
+  def deleteUserData(params: DeleteUserDataParams, callback: Callback[Empty]): js.Promise[Any] | Unit = js.native
+  
   /**
     * Delete a custom model.
     *
@@ -172,8 +177,9 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteVoiceModel(params: DeleteVoiceModelParams): js.Promise[_] | Unit = js.native
-  def deleteVoiceModel(params: DeleteVoiceModelParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteVoiceModel(params: DeleteVoiceModelParams): js.Promise[Any] | Unit = js.native
+  def deleteVoiceModel(params: DeleteVoiceModelParams, callback: Callback[Empty]): js.Promise[Any] | Unit = js.native
+  
   /**
     * Delete a custom word.
     *
@@ -193,8 +199,9 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteWord(params: DeleteWordParams): js.Promise[_] | Unit = js.native
-  def deleteWord(params: DeleteWordParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteWord(params: DeleteWordParams): js.Promise[Any] | Unit = js.native
+  def deleteWord(params: DeleteWordParams, callback: Callback[Empty]): js.Promise[Any] | Unit = js.native
+  
   /*************************
     * pronunciation
     ************************/
@@ -226,8 +233,9 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getPronunciation(params: GetPronunciationParams): js.Promise[_] | Unit = js.native
-  def getPronunciation(params: GetPronunciationParams, callback: Callback[Pronunciation]): js.Promise[_] | Unit = js.native
+  def getPronunciation(params: GetPronunciationParams): js.Promise[Any] | Unit = js.native
+  def getPronunciation(params: GetPronunciationParams, callback: Callback[Pronunciation]): js.Promise[Any] | Unit = js.native
+  
   /*************************
     * voices
     ************************/
@@ -250,8 +258,9 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getVoice(params: GetVoiceParams): js.Promise[_] | Unit = js.native
-  def getVoice(params: GetVoiceParams, callback: Callback[Voice]): js.Promise[_] | Unit = js.native
+  def getVoice(params: GetVoiceParams): js.Promise[Any] | Unit = js.native
+  def getVoice(params: GetVoiceParams, callback: Callback[Voice]): js.Promise[Any] | Unit = js.native
+  
   /**
     * Get a custom model.
     *
@@ -271,8 +280,9 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getVoiceModel(params: GetVoiceModelParams): js.Promise[_] | Unit = js.native
-  def getVoiceModel(params: GetVoiceModelParams, callback: Callback[VoiceModel]): js.Promise[_] | Unit = js.native
+  def getVoiceModel(params: GetVoiceModelParams): js.Promise[Any] | Unit = js.native
+  def getVoiceModel(params: GetVoiceModelParams, callback: Callback[VoiceModel]): js.Promise[Any] | Unit = js.native
+  
   /**
     * Get a custom word.
     *
@@ -293,8 +303,9 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getWord(params: GetWordParams): js.Promise[_] | Unit = js.native
-  def getWord(params: GetWordParams, callback: Callback[Translation]): js.Promise[_] | Unit = js.native
+  def getWord(params: GetWordParams): js.Promise[Any] | Unit = js.native
+  def getWord(params: GetWordParams, callback: Callback[Translation]): js.Promise[Any] | Unit = js.native
+  
   /**
     * List custom models.
     *
@@ -316,9 +327,11 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listVoiceModels(): js.Promise[_] | Unit = js.native
-  def listVoiceModels(params: ListVoiceModelsParams): js.Promise[_] | Unit = js.native
-  def listVoiceModels(params: ListVoiceModelsParams, callback: Callback[VoiceModels]): js.Promise[_] | Unit = js.native
+  def listVoiceModels(): js.Promise[Any] | Unit = js.native
+  def listVoiceModels(params: Unit, callback: Callback[VoiceModels]): js.Promise[Any] | Unit = js.native
+  def listVoiceModels(params: ListVoiceModelsParams): js.Promise[Any] | Unit = js.native
+  def listVoiceModels(params: ListVoiceModelsParams, callback: Callback[VoiceModels]): js.Promise[Any] | Unit = js.native
+  
   /**
     * List voices.
     *
@@ -333,9 +346,11 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listVoices(): js.Promise[_] | Unit = js.native
-  def listVoices(params: ListVoicesParams): js.Promise[_] | Unit = js.native
-  def listVoices(params: ListVoicesParams, callback: Callback[Voices]): js.Promise[_] | Unit = js.native
+  def listVoices(): js.Promise[Any] | Unit = js.native
+  def listVoices(params: Unit, callback: Callback[Voices]): js.Promise[Any] | Unit = js.native
+  def listVoices(params: ListVoicesParams): js.Promise[Any] | Unit = js.native
+  def listVoices(params: ListVoicesParams, callback: Callback[Voices]): js.Promise[Any] | Unit = js.native
+  
   /**
     * List custom words.
     *
@@ -355,8 +370,13 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listWords(params: ListWordsParams): js.Promise[_] | Unit = js.native
-  def listWords(params: ListWordsParams, callback: Callback[Words]): js.Promise[_] | Unit = js.native
+  def listWords(params: ListWordsParams): js.Promise[Any] | Unit = js.native
+  def listWords(params: ListWordsParams, callback: Callback[Words]): js.Promise[Any] | Unit = js.native
+  
+  var name: String = js.native
+  
+  var serviceVersion: String = js.native
+  
   /*************************
     * synthesis
     ************************/
@@ -452,8 +472,9 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def synthesize(params: SynthesizeParams): js.Promise[_] | Unit = js.native
-  def synthesize(params: SynthesizeParams, callback: Callback[ReadableStream | FileObject | Buffer]): js.Promise[_] | Unit = js.native
+  def synthesize(params: SynthesizeParams): js.Promise[Any] | Unit = js.native
+  def synthesize(params: SynthesizeParams, callback: Callback[ReadableStream | FileObject | Buffer]): js.Promise[Any] | Unit = js.native
+  
   /**
     * Update a custom model.
     *
@@ -492,7 +513,6 @@ trait TextToSpeechV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def updateVoiceModel(params: UpdateVoiceModelParams): js.Promise[_] | Unit = js.native
-  def updateVoiceModel(params: UpdateVoiceModelParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def updateVoiceModel(params: UpdateVoiceModelParams): js.Promise[Any] | Unit = js.native
+  def updateVoiceModel(params: UpdateVoiceModelParams, callback: Callback[Empty]): js.Promise[Any] | Unit = js.native
 }
-

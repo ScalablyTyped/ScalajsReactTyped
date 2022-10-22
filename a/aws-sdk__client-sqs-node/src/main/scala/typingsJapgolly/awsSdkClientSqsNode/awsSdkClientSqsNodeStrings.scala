@@ -1,239 +1,172 @@
 package typingsJapgolly.awsSdkClientSqsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsSdkClientSqsNodeStrings {
-  @js.native
-  sealed trait All extends js.Object
   
   @js.native
-  sealed trait ApproximateFirstReceiveTimestamp extends js.Object
+  sealed trait All extends StObject
+  inline def All: All = "All".asInstanceOf[All]
   
   @js.native
-  sealed trait ApproximateNumberOfMessages extends js.Object
+  sealed trait ApproximateFirstReceiveTimestamp extends StObject
+  inline def ApproximateFirstReceiveTimestamp: ApproximateFirstReceiveTimestamp = "ApproximateFirstReceiveTimestamp".asInstanceOf[ApproximateFirstReceiveTimestamp]
   
   @js.native
-  sealed trait ApproximateNumberOfMessagesDelayed extends js.Object
+  sealed trait ApproximateNumberOfMessages extends StObject
+  inline def ApproximateNumberOfMessages: ApproximateNumberOfMessages = "ApproximateNumberOfMessages".asInstanceOf[ApproximateNumberOfMessages]
   
   @js.native
-  sealed trait ApproximateNumberOfMessagesNotVisible extends js.Object
+  sealed trait ApproximateNumberOfMessagesDelayed extends StObject
+  inline def ApproximateNumberOfMessagesDelayed: ApproximateNumberOfMessagesDelayed = "ApproximateNumberOfMessagesDelayed".asInstanceOf[ApproximateNumberOfMessagesDelayed]
   
   @js.native
-  sealed trait ApproximateReceiveCount extends js.Object
+  sealed trait ApproximateNumberOfMessagesNotVisible extends StObject
+  inline def ApproximateNumberOfMessagesNotVisible: ApproximateNumberOfMessagesNotVisible = "ApproximateNumberOfMessagesNotVisible".asInstanceOf[ApproximateNumberOfMessagesNotVisible]
   
   @js.native
-  sealed trait BatchEntryIdsNotDistinct extends js.Object
+  sealed trait ApproximateReceiveCount extends StObject
+  inline def ApproximateReceiveCount: ApproximateReceiveCount = "ApproximateReceiveCount".asInstanceOf[ApproximateReceiveCount]
   
   @js.native
-  sealed trait BatchRequestTooLong extends js.Object
+  sealed trait BatchEntryIdsNotDistinct extends StObject
+  inline def BatchEntryIdsNotDistinct: BatchEntryIdsNotDistinct = "BatchEntryIdsNotDistinct".asInstanceOf[BatchEntryIdsNotDistinct]
   
   @js.native
-  sealed trait ContentBasedDeduplication extends js.Object
+  sealed trait BatchRequestTooLong extends StObject
+  inline def BatchRequestTooLong: BatchRequestTooLong = "BatchRequestTooLong".asInstanceOf[BatchRequestTooLong]
   
   @js.native
-  sealed trait CreateQueueInput extends js.Object
+  sealed trait ContentBasedDeduplication extends StObject
+  inline def ContentBasedDeduplication: ContentBasedDeduplication = "ContentBasedDeduplication".asInstanceOf[ContentBasedDeduplication]
   
   @js.native
-  sealed trait CreatedTimestamp extends js.Object
+  sealed trait CreatedTimestamp extends StObject
+  inline def CreatedTimestamp: CreatedTimestamp = "CreatedTimestamp".asInstanceOf[CreatedTimestamp]
   
   @js.native
-  sealed trait DelaySeconds extends js.Object
+  sealed trait DelaySeconds extends StObject
+  inline def DelaySeconds: DelaySeconds = "DelaySeconds".asInstanceOf[DelaySeconds]
   
   @js.native
-  sealed trait EmptyBatchRequest extends js.Object
+  sealed trait EmptyBatchRequest extends StObject
+  inline def EmptyBatchRequest: EmptyBatchRequest = "EmptyBatchRequest".asInstanceOf[EmptyBatchRequest]
   
   @js.native
-  sealed trait FifoQueue extends js.Object
+  sealed trait FifoQueue extends StObject
+  inline def FifoQueue: FifoQueue = "FifoQueue".asInstanceOf[FifoQueue]
   
   @js.native
-  sealed trait GetQueueAttributesOutput extends js.Object
+  sealed trait InvalidAttributeName extends StObject
+  inline def InvalidAttributeName: InvalidAttributeName = "InvalidAttributeName".asInstanceOf[InvalidAttributeName]
   
   @js.native
-  sealed trait InvalidAttributeName extends js.Object
+  sealed trait InvalidBatchEntryId extends StObject
+  inline def InvalidBatchEntryId: InvalidBatchEntryId = "InvalidBatchEntryId".asInstanceOf[InvalidBatchEntryId]
   
   @js.native
-  sealed trait InvalidBatchEntryId extends js.Object
+  sealed trait InvalidIdFormat extends StObject
+  inline def InvalidIdFormat: InvalidIdFormat = "InvalidIdFormat".asInstanceOf[InvalidIdFormat]
   
   @js.native
-  sealed trait InvalidIdFormat extends js.Object
+  sealed trait InvalidMessageContents extends StObject
+  inline def InvalidMessageContents: InvalidMessageContents = "InvalidMessageContents".asInstanceOf[InvalidMessageContents]
   
   @js.native
-  sealed trait InvalidMessageContents extends js.Object
+  sealed trait KmsDataKeyReusePeriodSeconds extends StObject
+  inline def KmsDataKeyReusePeriodSeconds: KmsDataKeyReusePeriodSeconds = "KmsDataKeyReusePeriodSeconds".asInstanceOf[KmsDataKeyReusePeriodSeconds]
   
   @js.native
-  sealed trait KmsDataKeyReusePeriodSeconds extends js.Object
+  sealed trait KmsMasterKeyId extends StObject
+  inline def KmsMasterKeyId: KmsMasterKeyId = "KmsMasterKeyId".asInstanceOf[KmsMasterKeyId]
   
   @js.native
-  sealed trait KmsMasterKeyId extends js.Object
+  sealed trait LastModifiedTimestamp extends StObject
+  inline def LastModifiedTimestamp: LastModifiedTimestamp = "LastModifiedTimestamp".asInstanceOf[LastModifiedTimestamp]
   
   @js.native
-  sealed trait LastModifiedTimestamp extends js.Object
+  sealed trait MaximumMessageSize extends StObject
+  inline def MaximumMessageSize: MaximumMessageSize = "MaximumMessageSize".asInstanceOf[MaximumMessageSize]
   
   @js.native
-  sealed trait MaximumMessageSize extends js.Object
+  sealed trait MessageDeduplicationId extends StObject
+  inline def MessageDeduplicationId: MessageDeduplicationId = "MessageDeduplicationId".asInstanceOf[MessageDeduplicationId]
   
   @js.native
-  sealed trait MessageDeduplicationId extends js.Object
+  sealed trait MessageGroupId extends StObject
+  inline def MessageGroupId: MessageGroupId = "MessageGroupId".asInstanceOf[MessageGroupId]
   
   @js.native
-  sealed trait MessageGroupId extends js.Object
+  sealed trait MessageNotInflight extends StObject
+  inline def MessageNotInflight: MessageNotInflight = "MessageNotInflight".asInstanceOf[MessageNotInflight]
   
   @js.native
-  sealed trait MessageNotInflight extends js.Object
+  sealed trait MessageRetentionPeriod extends StObject
+  inline def MessageRetentionPeriod: MessageRetentionPeriod = "MessageRetentionPeriod".asInstanceOf[MessageRetentionPeriod]
   
   @js.native
-  sealed trait MessageRetentionPeriod extends js.Object
+  sealed trait OverLimit extends StObject
+  inline def OverLimit: OverLimit = "OverLimit".asInstanceOf[OverLimit]
   
   @js.native
-  sealed trait OverLimit extends js.Object
+  sealed trait Policy extends StObject
+  inline def Policy: Policy = "Policy".asInstanceOf[Policy]
   
   @js.native
-  sealed trait Policy extends js.Object
+  sealed trait PurgeQueueInProgress extends StObject
+  inline def PurgeQueueInProgress: PurgeQueueInProgress = "PurgeQueueInProgress".asInstanceOf[PurgeQueueInProgress]
   
   @js.native
-  sealed trait PurgeQueueInProgress extends js.Object
+  sealed trait QueueArn extends StObject
+  inline def QueueArn: QueueArn = "QueueArn".asInstanceOf[QueueArn]
   
   @js.native
-  sealed trait QueueArn extends js.Object
+  sealed trait QueueDeletedRecently extends StObject
+  inline def QueueDeletedRecently: QueueDeletedRecently = "QueueDeletedRecently".asInstanceOf[QueueDeletedRecently]
   
   @js.native
-  sealed trait QueueDeletedRecently extends js.Object
+  sealed trait QueueDoesNotExist extends StObject
+  inline def QueueDoesNotExist: QueueDoesNotExist = "QueueDoesNotExist".asInstanceOf[QueueDoesNotExist]
   
   @js.native
-  sealed trait QueueDoesNotExist extends js.Object
+  sealed trait QueueNameExists extends StObject
+  inline def QueueNameExists: QueueNameExists = "QueueNameExists".asInstanceOf[QueueNameExists]
   
   @js.native
-  sealed trait QueueNameExists extends js.Object
+  sealed trait ReceiptHandleIsInvalid extends StObject
+  inline def ReceiptHandleIsInvalid: ReceiptHandleIsInvalid = "ReceiptHandleIsInvalid".asInstanceOf[ReceiptHandleIsInvalid]
   
   @js.native
-  sealed trait ReceiptHandleIsInvalid extends js.Object
+  sealed trait ReceiveMessageWaitTimeSeconds extends StObject
+  inline def ReceiveMessageWaitTimeSeconds: ReceiveMessageWaitTimeSeconds = "ReceiveMessageWaitTimeSeconds".asInstanceOf[ReceiveMessageWaitTimeSeconds]
   
   @js.native
-  sealed trait ReceiveMessageWaitTimeSeconds extends js.Object
+  sealed trait RedrivePolicy extends StObject
+  inline def RedrivePolicy: RedrivePolicy = "RedrivePolicy".asInstanceOf[RedrivePolicy]
   
   @js.native
-  sealed trait RedrivePolicy extends js.Object
+  sealed trait SenderId extends StObject
+  inline def SenderId: SenderId = "SenderId".asInstanceOf[SenderId]
   
   @js.native
-  sealed trait SenderId extends js.Object
+  sealed trait SentTimestamp extends StObject
+  inline def SentTimestamp: SentTimestamp = "SentTimestamp".asInstanceOf[SentTimestamp]
   
   @js.native
-  sealed trait SentTimestamp extends js.Object
+  sealed trait SequenceNumber extends StObject
+  inline def SequenceNumber: SequenceNumber = "SequenceNumber".asInstanceOf[SequenceNumber]
   
   @js.native
-  sealed trait SequenceNumber extends js.Object
+  sealed trait TooManyEntriesInBatchRequest extends StObject
+  inline def TooManyEntriesInBatchRequest: TooManyEntriesInBatchRequest = "TooManyEntriesInBatchRequest".asInstanceOf[TooManyEntriesInBatchRequest]
   
   @js.native
-  sealed trait SetQueueAttributesInput extends js.Object
+  sealed trait UnsupportedOperation extends StObject
+  inline def UnsupportedOperation: UnsupportedOperation = "UnsupportedOperation".asInstanceOf[UnsupportedOperation]
   
   @js.native
-  sealed trait TooManyEntriesInBatchRequest extends js.Object
-  
-  @js.native
-  sealed trait UnsupportedOperation extends js.Object
-  
-  @js.native
-  sealed trait VisibilityTimeout extends js.Object
-  
-  @js.native
-  sealed trait _Message extends js.Object
-  
-  @js.native
-  sealed trait _UnmarshalledMessage extends js.Object
-  
-  @scala.inline
-  def All: All = "All".asInstanceOf[All]
-  @scala.inline
-  def ApproximateFirstReceiveTimestamp: ApproximateFirstReceiveTimestamp = "ApproximateFirstReceiveTimestamp".asInstanceOf[ApproximateFirstReceiveTimestamp]
-  @scala.inline
-  def ApproximateNumberOfMessages: ApproximateNumberOfMessages = "ApproximateNumberOfMessages".asInstanceOf[ApproximateNumberOfMessages]
-  @scala.inline
-  def ApproximateNumberOfMessagesDelayed: ApproximateNumberOfMessagesDelayed = "ApproximateNumberOfMessagesDelayed".asInstanceOf[ApproximateNumberOfMessagesDelayed]
-  @scala.inline
-  def ApproximateNumberOfMessagesNotVisible: ApproximateNumberOfMessagesNotVisible = "ApproximateNumberOfMessagesNotVisible".asInstanceOf[ApproximateNumberOfMessagesNotVisible]
-  @scala.inline
-  def ApproximateReceiveCount: ApproximateReceiveCount = "ApproximateReceiveCount".asInstanceOf[ApproximateReceiveCount]
-  @scala.inline
-  def BatchEntryIdsNotDistinct: BatchEntryIdsNotDistinct = "BatchEntryIdsNotDistinct".asInstanceOf[BatchEntryIdsNotDistinct]
-  @scala.inline
-  def BatchRequestTooLong: BatchRequestTooLong = "BatchRequestTooLong".asInstanceOf[BatchRequestTooLong]
-  @scala.inline
-  def ContentBasedDeduplication: ContentBasedDeduplication = "ContentBasedDeduplication".asInstanceOf[ContentBasedDeduplication]
-  @scala.inline
-  def CreateQueueInput: CreateQueueInput = "CreateQueueInput".asInstanceOf[CreateQueueInput]
-  @scala.inline
-  def CreatedTimestamp: CreatedTimestamp = "CreatedTimestamp".asInstanceOf[CreatedTimestamp]
-  @scala.inline
-  def DelaySeconds: DelaySeconds = "DelaySeconds".asInstanceOf[DelaySeconds]
-  @scala.inline
-  def EmptyBatchRequest: EmptyBatchRequest = "EmptyBatchRequest".asInstanceOf[EmptyBatchRequest]
-  @scala.inline
-  def FifoQueue: FifoQueue = "FifoQueue".asInstanceOf[FifoQueue]
-  @scala.inline
-  def GetQueueAttributesOutput: GetQueueAttributesOutput = "GetQueueAttributesOutput".asInstanceOf[GetQueueAttributesOutput]
-  @scala.inline
-  def InvalidAttributeName: InvalidAttributeName = "InvalidAttributeName".asInstanceOf[InvalidAttributeName]
-  @scala.inline
-  def InvalidBatchEntryId: InvalidBatchEntryId = "InvalidBatchEntryId".asInstanceOf[InvalidBatchEntryId]
-  @scala.inline
-  def InvalidIdFormat: InvalidIdFormat = "InvalidIdFormat".asInstanceOf[InvalidIdFormat]
-  @scala.inline
-  def InvalidMessageContents: InvalidMessageContents = "InvalidMessageContents".asInstanceOf[InvalidMessageContents]
-  @scala.inline
-  def KmsDataKeyReusePeriodSeconds: KmsDataKeyReusePeriodSeconds = "KmsDataKeyReusePeriodSeconds".asInstanceOf[KmsDataKeyReusePeriodSeconds]
-  @scala.inline
-  def KmsMasterKeyId: KmsMasterKeyId = "KmsMasterKeyId".asInstanceOf[KmsMasterKeyId]
-  @scala.inline
-  def LastModifiedTimestamp: LastModifiedTimestamp = "LastModifiedTimestamp".asInstanceOf[LastModifiedTimestamp]
-  @scala.inline
-  def MaximumMessageSize: MaximumMessageSize = "MaximumMessageSize".asInstanceOf[MaximumMessageSize]
-  @scala.inline
-  def MessageDeduplicationId: MessageDeduplicationId = "MessageDeduplicationId".asInstanceOf[MessageDeduplicationId]
-  @scala.inline
-  def MessageGroupId: MessageGroupId = "MessageGroupId".asInstanceOf[MessageGroupId]
-  @scala.inline
-  def MessageNotInflight: MessageNotInflight = "MessageNotInflight".asInstanceOf[MessageNotInflight]
-  @scala.inline
-  def MessageRetentionPeriod: MessageRetentionPeriod = "MessageRetentionPeriod".asInstanceOf[MessageRetentionPeriod]
-  @scala.inline
-  def OverLimit: OverLimit = "OverLimit".asInstanceOf[OverLimit]
-  @scala.inline
-  def Policy: Policy = "Policy".asInstanceOf[Policy]
-  @scala.inline
-  def PurgeQueueInProgress: PurgeQueueInProgress = "PurgeQueueInProgress".asInstanceOf[PurgeQueueInProgress]
-  @scala.inline
-  def QueueArn: QueueArn = "QueueArn".asInstanceOf[QueueArn]
-  @scala.inline
-  def QueueDeletedRecently: QueueDeletedRecently = "QueueDeletedRecently".asInstanceOf[QueueDeletedRecently]
-  @scala.inline
-  def QueueDoesNotExist: QueueDoesNotExist = "QueueDoesNotExist".asInstanceOf[QueueDoesNotExist]
-  @scala.inline
-  def QueueNameExists: QueueNameExists = "QueueNameExists".asInstanceOf[QueueNameExists]
-  @scala.inline
-  def ReceiptHandleIsInvalid: ReceiptHandleIsInvalid = "ReceiptHandleIsInvalid".asInstanceOf[ReceiptHandleIsInvalid]
-  @scala.inline
-  def ReceiveMessageWaitTimeSeconds: ReceiveMessageWaitTimeSeconds = "ReceiveMessageWaitTimeSeconds".asInstanceOf[ReceiveMessageWaitTimeSeconds]
-  @scala.inline
-  def RedrivePolicy: RedrivePolicy = "RedrivePolicy".asInstanceOf[RedrivePolicy]
-  @scala.inline
-  def SenderId: SenderId = "SenderId".asInstanceOf[SenderId]
-  @scala.inline
-  def SentTimestamp: SentTimestamp = "SentTimestamp".asInstanceOf[SentTimestamp]
-  @scala.inline
-  def SequenceNumber: SequenceNumber = "SequenceNumber".asInstanceOf[SequenceNumber]
-  @scala.inline
-  def SetQueueAttributesInput: SetQueueAttributesInput = "SetQueueAttributesInput".asInstanceOf[SetQueueAttributesInput]
-  @scala.inline
-  def TooManyEntriesInBatchRequest: TooManyEntriesInBatchRequest = "TooManyEntriesInBatchRequest".asInstanceOf[TooManyEntriesInBatchRequest]
-  @scala.inline
-  def UnsupportedOperation: UnsupportedOperation = "UnsupportedOperation".asInstanceOf[UnsupportedOperation]
-  @scala.inline
-  def VisibilityTimeout: VisibilityTimeout = "VisibilityTimeout".asInstanceOf[VisibilityTimeout]
-  @scala.inline
-  def _Message: _Message = "_Message".asInstanceOf[_Message]
-  @scala.inline
-  def _UnmarshalledMessage: _UnmarshalledMessage = "_UnmarshalledMessage".asInstanceOf[_UnmarshalledMessage]
+  sealed trait VisibilityTimeout extends StObject
+  inline def VisibilityTimeout: VisibilityTimeout = "VisibilityTimeout".asInstanceOf[VisibilityTimeout]
 }
-

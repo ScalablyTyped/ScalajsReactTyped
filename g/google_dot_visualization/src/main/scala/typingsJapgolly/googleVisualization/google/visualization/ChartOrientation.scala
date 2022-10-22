@@ -1,21 +1,17 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleVisualization.googleVisualizationStrings.vertical
   - typingsJapgolly.googleVisualization.googleVisualizationStrings.horizontal
 */
-trait ChartOrientation extends js.Object
-
+trait ChartOrientation extends StObject
 object ChartOrientation {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def horizontal: typingsJapgolly.googleVisualization.googleVisualizationStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typingsJapgolly.googleVisualization.googleVisualizationStrings.vertical = this.cast("vertical")
+  
+  inline def horizontal: typingsJapgolly.googleVisualization.googleVisualizationStrings.horizontal = "horizontal".asInstanceOf[typingsJapgolly.googleVisualization.googleVisualizationStrings.horizontal]
+  
+  inline def vertical: typingsJapgolly.googleVisualization.googleVisualizationStrings.vertical = "vertical".asInstanceOf[typingsJapgolly.googleVisualization.googleVisualizationStrings.vertical]
 }
-

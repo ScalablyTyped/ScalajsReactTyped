@@ -1,111 +1,204 @@
 package typingsJapgolly.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IWheelInfoOptions extends js.Object {
+trait IWheelInfoOptions extends StObject {
+  
   var axis: js.UndefOr[Vec3] = js.undefined
+  
   var axleLocal: js.UndefOr[Vec3] = js.undefined
+  
   var axleWorld: js.UndefOr[Vec3] = js.undefined
+  
   var body: js.UndefOr[Body] = js.undefined
+  
   var chassisConnectionPointLocal: js.UndefOr[Vec3] = js.undefined
+  
   var chassisConnectionPointWorld: js.UndefOr[Vec3] = js.undefined
+  
   var clippedInvContactDotSuspension: js.UndefOr[Double] = js.undefined
+  
   var customSlidingRotationalSpeed: js.UndefOr[Double] = js.undefined
+  
   var dampingCompression: js.UndefOr[Double] = js.undefined
+  
   var dampingRelaxation: js.UndefOr[Double] = js.undefined
+  
   var deltaRotation: js.UndefOr[Double] = js.undefined
+  
   var direction: js.UndefOr[Vec3] = js.undefined
+  
   var directionLocal: js.UndefOr[Vec3] = js.undefined
+  
   var directionWorld: js.UndefOr[Vec3] = js.undefined
+  
   var frictionSlip: js.UndefOr[Double] = js.undefined
+  
   var isFronmtWheel: js.UndefOr[Boolean] = js.undefined
+  
   var maxSuspensionForce: js.UndefOr[Double] = js.undefined
+  
   var maxSuspensionTravel: js.UndefOr[Double] = js.undefined
+  
   var position: js.UndefOr[Vec3] = js.undefined
+  
   var radius: js.UndefOr[Double] = js.undefined
+  
   var rollInfluence: js.UndefOr[Double] = js.undefined
+  
   var rotation: js.UndefOr[Double] = js.undefined
+  
   var skidInfo: js.UndefOr[Double] = js.undefined
+  
   var steering: js.UndefOr[Double] = js.undefined
+  
   var suspensionForce: js.UndefOr[Double] = js.undefined
+  
   var suspensionLength: js.UndefOr[Double] = js.undefined
+  
   var suspensionMaxLength: js.UndefOr[Double] = js.undefined
+  
   var suspensionRelativeVelocity: js.UndefOr[Double] = js.undefined
+  
   var suspensionRestLength: js.UndefOr[Double] = js.undefined
+  
   var suspensionStiffness: js.UndefOr[Double] = js.undefined
+  
   var useCustomSlidingRotationalSpeed: js.UndefOr[Boolean] = js.undefined
 }
-
 object IWheelInfoOptions {
-  @scala.inline
-  def apply(
-    axis: Vec3 = null,
-    axleLocal: Vec3 = null,
-    axleWorld: Vec3 = null,
-    body: Body = null,
-    chassisConnectionPointLocal: Vec3 = null,
-    chassisConnectionPointWorld: Vec3 = null,
-    clippedInvContactDotSuspension: Int | Double = null,
-    customSlidingRotationalSpeed: Int | Double = null,
-    dampingCompression: Int | Double = null,
-    dampingRelaxation: Int | Double = null,
-    deltaRotation: Int | Double = null,
-    direction: Vec3 = null,
-    directionLocal: Vec3 = null,
-    directionWorld: Vec3 = null,
-    frictionSlip: Int | Double = null,
-    isFronmtWheel: js.UndefOr[Boolean] = js.undefined,
-    maxSuspensionForce: Int | Double = null,
-    maxSuspensionTravel: Int | Double = null,
-    position: Vec3 = null,
-    radius: Int | Double = null,
-    rollInfluence: Int | Double = null,
-    rotation: Int | Double = null,
-    skidInfo: Int | Double = null,
-    steering: Int | Double = null,
-    suspensionForce: Int | Double = null,
-    suspensionLength: Int | Double = null,
-    suspensionMaxLength: Int | Double = null,
-    suspensionRelativeVelocity: Int | Double = null,
-    suspensionRestLength: Int | Double = null,
-    suspensionStiffness: Int | Double = null,
-    useCustomSlidingRotationalSpeed: js.UndefOr[Boolean] = js.undefined
-  ): IWheelInfoOptions = {
+  
+  inline def apply(): IWheelInfoOptions = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (axleLocal != null) __obj.updateDynamic("axleLocal")(axleLocal.asInstanceOf[js.Any])
-    if (axleWorld != null) __obj.updateDynamic("axleWorld")(axleWorld.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (chassisConnectionPointLocal != null) __obj.updateDynamic("chassisConnectionPointLocal")(chassisConnectionPointLocal.asInstanceOf[js.Any])
-    if (chassisConnectionPointWorld != null) __obj.updateDynamic("chassisConnectionPointWorld")(chassisConnectionPointWorld.asInstanceOf[js.Any])
-    if (clippedInvContactDotSuspension != null) __obj.updateDynamic("clippedInvContactDotSuspension")(clippedInvContactDotSuspension.asInstanceOf[js.Any])
-    if (customSlidingRotationalSpeed != null) __obj.updateDynamic("customSlidingRotationalSpeed")(customSlidingRotationalSpeed.asInstanceOf[js.Any])
-    if (dampingCompression != null) __obj.updateDynamic("dampingCompression")(dampingCompression.asInstanceOf[js.Any])
-    if (dampingRelaxation != null) __obj.updateDynamic("dampingRelaxation")(dampingRelaxation.asInstanceOf[js.Any])
-    if (deltaRotation != null) __obj.updateDynamic("deltaRotation")(deltaRotation.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (directionLocal != null) __obj.updateDynamic("directionLocal")(directionLocal.asInstanceOf[js.Any])
-    if (directionWorld != null) __obj.updateDynamic("directionWorld")(directionWorld.asInstanceOf[js.Any])
-    if (frictionSlip != null) __obj.updateDynamic("frictionSlip")(frictionSlip.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFronmtWheel)) __obj.updateDynamic("isFronmtWheel")(isFronmtWheel.asInstanceOf[js.Any])
-    if (maxSuspensionForce != null) __obj.updateDynamic("maxSuspensionForce")(maxSuspensionForce.asInstanceOf[js.Any])
-    if (maxSuspensionTravel != null) __obj.updateDynamic("maxSuspensionTravel")(maxSuspensionTravel.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (rollInfluence != null) __obj.updateDynamic("rollInfluence")(rollInfluence.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (skidInfo != null) __obj.updateDynamic("skidInfo")(skidInfo.asInstanceOf[js.Any])
-    if (steering != null) __obj.updateDynamic("steering")(steering.asInstanceOf[js.Any])
-    if (suspensionForce != null) __obj.updateDynamic("suspensionForce")(suspensionForce.asInstanceOf[js.Any])
-    if (suspensionLength != null) __obj.updateDynamic("suspensionLength")(suspensionLength.asInstanceOf[js.Any])
-    if (suspensionMaxLength != null) __obj.updateDynamic("suspensionMaxLength")(suspensionMaxLength.asInstanceOf[js.Any])
-    if (suspensionRelativeVelocity != null) __obj.updateDynamic("suspensionRelativeVelocity")(suspensionRelativeVelocity.asInstanceOf[js.Any])
-    if (suspensionRestLength != null) __obj.updateDynamic("suspensionRestLength")(suspensionRestLength.asInstanceOf[js.Any])
-    if (suspensionStiffness != null) __obj.updateDynamic("suspensionStiffness")(suspensionStiffness.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCustomSlidingRotationalSpeed)) __obj.updateDynamic("useCustomSlidingRotationalSpeed")(useCustomSlidingRotationalSpeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWheelInfoOptions]
   }
+  
+  extension [Self <: IWheelInfoOptions](x: Self) {
+    
+    inline def setAxis(value: Vec3): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    
+    inline def setAxleLocal(value: Vec3): Self = StObject.set(x, "axleLocal", value.asInstanceOf[js.Any])
+    
+    inline def setAxleLocalUndefined: Self = StObject.set(x, "axleLocal", js.undefined)
+    
+    inline def setAxleWorld(value: Vec3): Self = StObject.set(x, "axleWorld", value.asInstanceOf[js.Any])
+    
+    inline def setAxleWorldUndefined: Self = StObject.set(x, "axleWorld", js.undefined)
+    
+    inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setChassisConnectionPointLocal(value: Vec3): Self = StObject.set(x, "chassisConnectionPointLocal", value.asInstanceOf[js.Any])
+    
+    inline def setChassisConnectionPointLocalUndefined: Self = StObject.set(x, "chassisConnectionPointLocal", js.undefined)
+    
+    inline def setChassisConnectionPointWorld(value: Vec3): Self = StObject.set(x, "chassisConnectionPointWorld", value.asInstanceOf[js.Any])
+    
+    inline def setChassisConnectionPointWorldUndefined: Self = StObject.set(x, "chassisConnectionPointWorld", js.undefined)
+    
+    inline def setClippedInvContactDotSuspension(value: Double): Self = StObject.set(x, "clippedInvContactDotSuspension", value.asInstanceOf[js.Any])
+    
+    inline def setClippedInvContactDotSuspensionUndefined: Self = StObject.set(x, "clippedInvContactDotSuspension", js.undefined)
+    
+    inline def setCustomSlidingRotationalSpeed(value: Double): Self = StObject.set(x, "customSlidingRotationalSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setCustomSlidingRotationalSpeedUndefined: Self = StObject.set(x, "customSlidingRotationalSpeed", js.undefined)
+    
+    inline def setDampingCompression(value: Double): Self = StObject.set(x, "dampingCompression", value.asInstanceOf[js.Any])
+    
+    inline def setDampingCompressionUndefined: Self = StObject.set(x, "dampingCompression", js.undefined)
+    
+    inline def setDampingRelaxation(value: Double): Self = StObject.set(x, "dampingRelaxation", value.asInstanceOf[js.Any])
+    
+    inline def setDampingRelaxationUndefined: Self = StObject.set(x, "dampingRelaxation", js.undefined)
+    
+    inline def setDeltaRotation(value: Double): Self = StObject.set(x, "deltaRotation", value.asInstanceOf[js.Any])
+    
+    inline def setDeltaRotationUndefined: Self = StObject.set(x, "deltaRotation", js.undefined)
+    
+    inline def setDirection(value: Vec3): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionLocal(value: Vec3): Self = StObject.set(x, "directionLocal", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionLocalUndefined: Self = StObject.set(x, "directionLocal", js.undefined)
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setDirectionWorld(value: Vec3): Self = StObject.set(x, "directionWorld", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionWorldUndefined: Self = StObject.set(x, "directionWorld", js.undefined)
+    
+    inline def setFrictionSlip(value: Double): Self = StObject.set(x, "frictionSlip", value.asInstanceOf[js.Any])
+    
+    inline def setFrictionSlipUndefined: Self = StObject.set(x, "frictionSlip", js.undefined)
+    
+    inline def setIsFronmtWheel(value: Boolean): Self = StObject.set(x, "isFronmtWheel", value.asInstanceOf[js.Any])
+    
+    inline def setIsFronmtWheelUndefined: Self = StObject.set(x, "isFronmtWheel", js.undefined)
+    
+    inline def setMaxSuspensionForce(value: Double): Self = StObject.set(x, "maxSuspensionForce", value.asInstanceOf[js.Any])
+    
+    inline def setMaxSuspensionForceUndefined: Self = StObject.set(x, "maxSuspensionForce", js.undefined)
+    
+    inline def setMaxSuspensionTravel(value: Double): Self = StObject.set(x, "maxSuspensionTravel", value.asInstanceOf[js.Any])
+    
+    inline def setMaxSuspensionTravelUndefined: Self = StObject.set(x, "maxSuspensionTravel", js.undefined)
+    
+    inline def setPosition(value: Vec3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    
+    inline def setRollInfluence(value: Double): Self = StObject.set(x, "rollInfluence", value.asInstanceOf[js.Any])
+    
+    inline def setRollInfluenceUndefined: Self = StObject.set(x, "rollInfluence", js.undefined)
+    
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    
+    inline def setSkidInfo(value: Double): Self = StObject.set(x, "skidInfo", value.asInstanceOf[js.Any])
+    
+    inline def setSkidInfoUndefined: Self = StObject.set(x, "skidInfo", js.undefined)
+    
+    inline def setSteering(value: Double): Self = StObject.set(x, "steering", value.asInstanceOf[js.Any])
+    
+    inline def setSteeringUndefined: Self = StObject.set(x, "steering", js.undefined)
+    
+    inline def setSuspensionForce(value: Double): Self = StObject.set(x, "suspensionForce", value.asInstanceOf[js.Any])
+    
+    inline def setSuspensionForceUndefined: Self = StObject.set(x, "suspensionForce", js.undefined)
+    
+    inline def setSuspensionLength(value: Double): Self = StObject.set(x, "suspensionLength", value.asInstanceOf[js.Any])
+    
+    inline def setSuspensionLengthUndefined: Self = StObject.set(x, "suspensionLength", js.undefined)
+    
+    inline def setSuspensionMaxLength(value: Double): Self = StObject.set(x, "suspensionMaxLength", value.asInstanceOf[js.Any])
+    
+    inline def setSuspensionMaxLengthUndefined: Self = StObject.set(x, "suspensionMaxLength", js.undefined)
+    
+    inline def setSuspensionRelativeVelocity(value: Double): Self = StObject.set(x, "suspensionRelativeVelocity", value.asInstanceOf[js.Any])
+    
+    inline def setSuspensionRelativeVelocityUndefined: Self = StObject.set(x, "suspensionRelativeVelocity", js.undefined)
+    
+    inline def setSuspensionRestLength(value: Double): Self = StObject.set(x, "suspensionRestLength", value.asInstanceOf[js.Any])
+    
+    inline def setSuspensionRestLengthUndefined: Self = StObject.set(x, "suspensionRestLength", js.undefined)
+    
+    inline def setSuspensionStiffness(value: Double): Self = StObject.set(x, "suspensionStiffness", value.asInstanceOf[js.Any])
+    
+    inline def setSuspensionStiffnessUndefined: Self = StObject.set(x, "suspensionStiffness", js.undefined)
+    
+    inline def setUseCustomSlidingRotationalSpeed(value: Boolean): Self = StObject.set(x, "useCustomSlidingRotationalSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setUseCustomSlidingRotationalSpeedUndefined: Self = StObject.set(x, "useCustomSlidingRotationalSpeed", js.undefined)
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for tiny-invariant
 
-Typings are for version 1.0.6
+Typings are for version 1.3.1
 
 ## Library description:
 A tiny invariant function
@@ -9,11 +9,11 @@ A tiny invariant function
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | tiny-invariant |
-| Keywords           | invariant, error |
-| # releases         | 12 |
-| # dependents       | 200 |
-| # downloads        | 69337278 |
-| # stars            | 0 |
+| Keywords           | invariant, error, assert, asserts |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7342971666666668E7 |
+| # stars            | 877.0 |
 
 ## Links
 - [Homepage](https://github.com/alexreardon/tiny-invariant#readme)

@@ -1,16 +1,13 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "PrefixNot")
 @js.native
-class PrefixNot protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.PrefixNot {
-  def this(
-    span: typingsJapgolly.angularCompiler.astMod.ParseSpan,
-    expression: typingsJapgolly.angularCompiler.astMod.AST
-  ) = this()
+open class PrefixNot protected () extends AST {
+  def this(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, expression: AST) = this()
+  
+  var expression: AST = js.native
 }
-

@@ -1,26 +1,33 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
-import typingsJapgolly.baidumapWebSdk.AnonFromitem
-import typingsJapgolly.baidumapWebSdk.AnonItem
+import typingsJapgolly.baidumapWebSdk.anon.Fromitem
+import typingsJapgolly.baidumapWebSdk.anon.Item
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BMap.Autocomplete")
 @js.native
-class Autocomplete () extends js.Object {
-  def this(opts: AutocompleteOptions) = this()
+trait Autocomplete extends StObject {
+  
   def dispose(): Unit = js.native
+  
   def getResults(): AutocompleteResult = js.native
+  
   def hide(): Unit = js.native
-  def onconfirm(event: AnonItem): Unit = js.native
-  def onhighlight(event: AnonFromitem): Unit = js.native
+  
+  def onconfirm(event: Item): Unit = js.native
+  
+  def onhighlight(event: Fromitem): Unit = js.native
+  
   def search(keywords: String): Unit = js.native
+  
   def setInputValue(keyword: String): Unit = js.native
+  
   def setLocation(location: String): Unit = js.native
   def setLocation(location: Map): Unit = js.native
   def setLocation(location: Point): Unit = js.native
+  
   def setTypes(types: js.Array[String]): Unit = js.native
+  
   def show(): Unit = js.native
 }
-

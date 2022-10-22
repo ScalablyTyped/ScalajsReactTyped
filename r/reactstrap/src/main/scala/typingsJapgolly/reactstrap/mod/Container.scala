@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.containerMod.ContainerProps
+import typingsJapgolly.reactstrap.typesLibContainerMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "Container")
 @js.native
-class Container[T] ()
-  extends Component[ContainerProps, js.Object, js.Any]
-
+open class Container () extends default

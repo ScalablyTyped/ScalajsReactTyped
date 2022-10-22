@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.popperPopperMod.PopperProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Popper", JSImport.Namespace)
-@js.native
-object popperMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[PopperProps, ComponentState, js.Any] {
-    def this(props: PopperProps) = this()
-    def this(props: PopperProps, context: js.Any) = this()
-  }
+object popperMod {
   
+  @JSImport("@material-ui/core/Popper", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[PopperProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: PopperProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

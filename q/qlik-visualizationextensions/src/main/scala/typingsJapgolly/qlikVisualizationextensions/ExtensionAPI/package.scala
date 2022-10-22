@@ -1,11 +1,12 @@
-package typingsJapgolly.qlikVisualizationextensions
+package typingsJapgolly.qlikVisualizationextensions.ExtensionAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object ExtensionAPI {
-  type ICustomInteger = typingsJapgolly.qlikVisualizationextensions.ExtensionAPI.ICustomNumber
-  type func[T] = js.Function0[T]
-  type valueOrfunc[T] = T | typingsJapgolly.qlikVisualizationextensions.ExtensionAPI.func[T]
-}
+
+type ICustomInteger = ICustomNumber
+
+type func[T] = js.Function0[T]
+
+type valueOrfunc[T] = T | func[T]

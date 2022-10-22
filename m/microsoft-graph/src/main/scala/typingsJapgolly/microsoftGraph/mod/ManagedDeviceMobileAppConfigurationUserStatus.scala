@@ -1,43 +1,62 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ManagedDeviceMobileAppConfigurationUserStatus extends Entity {
+trait ManagedDeviceMobileAppConfigurationUserStatus
+  extends StObject
+     with Entity {
+  
   // Devices count for that user.
   var devicesCount: js.UndefOr[Double] = js.undefined
+  
   // Last modified date time of the policy report.
   var lastReportedDateTime: js.UndefOr[String] = js.undefined
+  
   /**
     * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated,
     * nonCompliant, error, conflict, notAssigned.
     */
   var status: js.UndefOr[ComplianceStatus] = js.undefined
+  
   // User name of the DevicePolicyStatus.
-  var userDisplayName: js.UndefOr[String] = js.undefined
+  var userDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // UserPrincipalName.
-  var userPrincipalName: js.UndefOr[String] = js.undefined
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ManagedDeviceMobileAppConfigurationUserStatus {
-  @scala.inline
-  def apply(
-    devicesCount: Int | Double = null,
-    id: String = null,
-    lastReportedDateTime: String = null,
-    status: ComplianceStatus = null,
-    userDisplayName: String = null,
-    userPrincipalName: String = null
-  ): ManagedDeviceMobileAppConfigurationUserStatus = {
+  
+  inline def apply(): ManagedDeviceMobileAppConfigurationUserStatus = {
     val __obj = js.Dynamic.literal()
-    if (devicesCount != null) __obj.updateDynamic("devicesCount")(devicesCount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastReportedDateTime != null) __obj.updateDynamic("lastReportedDateTime")(lastReportedDateTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (userDisplayName != null) __obj.updateDynamic("userDisplayName")(userDisplayName.asInstanceOf[js.Any])
-    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedDeviceMobileAppConfigurationUserStatus]
   }
+  
+  extension [Self <: ManagedDeviceMobileAppConfigurationUserStatus](x: Self) {
+    
+    inline def setDevicesCount(value: Double): Self = StObject.set(x, "devicesCount", value.asInstanceOf[js.Any])
+    
+    inline def setDevicesCountUndefined: Self = StObject.set(x, "devicesCount", js.undefined)
+    
+    inline def setLastReportedDateTime(value: String): Self = StObject.set(x, "lastReportedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastReportedDateTimeUndefined: Self = StObject.set(x, "lastReportedDateTime", js.undefined)
+    
+    inline def setStatus(value: ComplianceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setUserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
+    
+    inline def setUserDisplayNameNull: Self = StObject.set(x, "userDisplayName", null)
+    
+    inline def setUserDisplayNameUndefined: Self = StObject.set(x, "userDisplayName", js.undefined)
+    
+    inline def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
+    
+    inline def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
+    
+    inline def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
+  }
 }
-

@@ -1,30 +1,35 @@
 package typingsJapgolly.uirouterAngularjs.mod
 
-import typingsJapgolly.uirouterCore.transitionInterfaceMod.HookFn
-import typingsJapgolly.uirouterCore.transitionInterfaceMod.HookMatchCriteria
-import typingsJapgolly.uirouterCore.transitionInterfaceMod.HookRegOptions
+import typingsJapgolly.uirouterCore.libTransitionInterfaceMod.HookFn
+import typingsJapgolly.uirouterCore.libTransitionInterfaceMod.HookMatchCriteria
+import typingsJapgolly.uirouterCore.libTransitionInterfaceMod.HookRegOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "RegisteredHook")
 @js.native
-class RegisteredHook protected ()
+open class RegisteredHook protected ()
   extends typingsJapgolly.uirouterCore.mod.RegisteredHook {
   def this(
-    tranSvc: typingsJapgolly.uirouterCore.transitionServiceMod.TransitionService,
-    eventType: typingsJapgolly.uirouterCore.transitionEventTypeMod.TransitionEventType,
+    tranSvc: typingsJapgolly.uirouterCore.libTransitionTransitionServiceMod.TransitionService,
+    eventType: typingsJapgolly.uirouterCore.libTransitionTransitionEventTypeMod.TransitionEventType,
     callback: HookFn,
     matchCriteria: HookMatchCriteria,
-    removeHookFromRegistry: js.Function1[/* hook */ typingsJapgolly.uirouterCore.hookRegistryMod.RegisteredHook, Unit]
+    removeHookFromRegistry: js.Function1[
+        /* hook */ typingsJapgolly.uirouterCore.libTransitionHookRegistryMod.RegisteredHook, 
+        Unit
+      ]
   ) = this()
   def this(
-    tranSvc: typingsJapgolly.uirouterCore.transitionServiceMod.TransitionService,
-    eventType: typingsJapgolly.uirouterCore.transitionEventTypeMod.TransitionEventType,
+    tranSvc: typingsJapgolly.uirouterCore.libTransitionTransitionServiceMod.TransitionService,
+    eventType: typingsJapgolly.uirouterCore.libTransitionTransitionEventTypeMod.TransitionEventType,
     callback: HookFn,
     matchCriteria: HookMatchCriteria,
-    removeHookFromRegistry: js.Function1[/* hook */ typingsJapgolly.uirouterCore.hookRegistryMod.RegisteredHook, Unit],
+    removeHookFromRegistry: js.Function1[
+        /* hook */ typingsJapgolly.uirouterCore.libTransitionHookRegistryMod.RegisteredHook, 
+        Unit
+      ],
     options: HookRegOptions
   ) = this()
 }
-

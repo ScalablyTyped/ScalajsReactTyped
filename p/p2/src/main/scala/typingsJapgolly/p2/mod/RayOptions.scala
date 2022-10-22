@@ -1,41 +1,65 @@
 package typingsJapgolly.p2.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RayOptions extends js.Object {
+trait RayOptions extends StObject {
+  
   var callback: js.UndefOr[js.Function1[/* result */ RaycastResult, Unit]] = js.undefined
+  
   var checkCollisionResponse: js.UndefOr[Boolean] = js.undefined
+  
   var collisionGroup: js.UndefOr[Double] = js.undefined
+  
   var collisionMask: js.UndefOr[Double] = js.undefined
+  
   var from: js.Tuple2[Double, Double]
-  var mode: js.UndefOr[Double] = js.undefined
+  
+  var mode: js.UndefOr[
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Ray.CLOSEST */ Any
+  ] = js.undefined
+  
   var skipBackfaces: js.UndefOr[Boolean] = js.undefined
+  
   var to: js.Tuple2[Double, Double]
 }
-
 object RayOptions {
-  @scala.inline
-  def apply(
-    from: js.Tuple2[Double, Double],
-    to: js.Tuple2[Double, Double],
-    callback: /* result */ RaycastResult => Callback = null,
-    checkCollisionResponse: js.UndefOr[Boolean] = js.undefined,
-    collisionGroup: Int | Double = null,
-    collisionMask: Int | Double = null,
-    mode: Int | Double = null,
-    skipBackfaces: js.UndefOr[Boolean] = js.undefined
-  ): RayOptions = {
+  
+  inline def apply(from: js.Tuple2[Double, Double], to: js.Tuple2[Double, Double]): RayOptions = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1((t0: /* result */ typingsJapgolly.p2.mod.RaycastResult) => callback(t0).runNow()))
-    if (!js.isUndefined(checkCollisionResponse)) __obj.updateDynamic("checkCollisionResponse")(checkCollisionResponse.asInstanceOf[js.Any])
-    if (collisionGroup != null) __obj.updateDynamic("collisionGroup")(collisionGroup.asInstanceOf[js.Any])
-    if (collisionMask != null) __obj.updateDynamic("collisionMask")(collisionMask.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipBackfaces)) __obj.updateDynamic("skipBackfaces")(skipBackfaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[RayOptions]
   }
+  
+  extension [Self <: RayOptions](x: Self) {
+    
+    inline def setCallback(value: /* result */ RaycastResult => Callback): Self = StObject.set(x, "callback", js.Any.fromFunction1((t0: /* result */ RaycastResult) => value(t0).runNow()))
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setCheckCollisionResponse(value: Boolean): Self = StObject.set(x, "checkCollisionResponse", value.asInstanceOf[js.Any])
+    
+    inline def setCheckCollisionResponseUndefined: Self = StObject.set(x, "checkCollisionResponse", js.undefined)
+    
+    inline def setCollisionGroup(value: Double): Self = StObject.set(x, "collisionGroup", value.asInstanceOf[js.Any])
+    
+    inline def setCollisionGroupUndefined: Self = StObject.set(x, "collisionGroup", js.undefined)
+    
+    inline def setCollisionMask(value: Double): Self = StObject.set(x, "collisionMask", value.asInstanceOf[js.Any])
+    
+    inline def setCollisionMaskUndefined: Self = StObject.set(x, "collisionMask", js.undefined)
+    
+    inline def setFrom(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setMode(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Ray.CLOSEST */ Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setSkipBackfaces(value: Boolean): Self = StObject.set(x, "skipBackfaces", value.asInstanceOf[js.Any])
+    
+    inline def setSkipBackfacesUndefined: Self = StObject.set(x, "skipBackfaces", js.undefined)
+    
+    inline def setTo(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,19 +1,25 @@
-package typingsJapgolly.elliptic
+package typingsJapgolly.elliptic.mod
 
+import typingsJapgolly.elliptic.mod.^
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type BNInput = java.lang.String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | scala.Double | typingsJapgolly.node.Buffer | scala.scalajs.js.typedarray.Uint8Array | js.Array[scala.Double]
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.elliptic.mod.ec.Signature
-    - typingsJapgolly.elliptic.mod.ec.SignatureOptions
-    - typingsJapgolly.std.Uint8Array
-    - js.Array[scala.Double]
-    - java.lang.String
-  */
-  type SignatureInput = typingsJapgolly.elliptic.mod._SignatureInput | js.Array[scala.Double] | scala.scalajs.js.typedarray.Uint8Array | java.lang.String
-  type ec = typingsJapgolly.elliptic.mod.ec_
-  type eddsa = typingsJapgolly.elliptic.mod.eddsa_
-}
+
+inline def rand: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("rand").asInstanceOf[Any]
+
+inline def utils: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("utils").asInstanceOf[Any]
+
+inline def version: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[Double]
+
+type BNInput = String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ Any) | Double | Buffer | js.typedarray.Uint8Array | js.Array[Double]
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.elliptic.mod.ec.Signature
+  - typingsJapgolly.elliptic.mod.ec.SignatureOptions
+  - js.typedarray.Uint8Array
+  - js.Array[scala.Double]
+  - java.lang.String
+*/
+type SignatureInput = _SignatureInput | js.Array[Double] | js.typedarray.Uint8Array | String

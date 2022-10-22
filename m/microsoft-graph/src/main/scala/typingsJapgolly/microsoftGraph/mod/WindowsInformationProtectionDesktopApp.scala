@@ -1,40 +1,45 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WindowsInformationProtectionDesktopApp extends WindowsInformationProtectionApp {
+trait WindowsInformationProtectionDesktopApp
+  extends StObject
+     with WindowsInformationProtectionApp {
+  
   // The binary name.
   var binaryName: js.UndefOr[String] = js.undefined
+  
   // The high binary version.
-  var binaryVersionHigh: js.UndefOr[String] = js.undefined
+  var binaryVersionHigh: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The lower binary version.
-  var binaryVersionLow: js.UndefOr[String] = js.undefined
+  var binaryVersionLow: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object WindowsInformationProtectionDesktopApp {
-  @scala.inline
-  def apply(
-    binaryName: String = null,
-    binaryVersionHigh: String = null,
-    binaryVersionLow: String = null,
-    denied: js.UndefOr[Boolean] = js.undefined,
-    description: String = null,
-    displayName: String = null,
-    productName: String = null,
-    publisherName: String = null
-  ): WindowsInformationProtectionDesktopApp = {
+  
+  inline def apply(): WindowsInformationProtectionDesktopApp = {
     val __obj = js.Dynamic.literal()
-    if (binaryName != null) __obj.updateDynamic("binaryName")(binaryName.asInstanceOf[js.Any])
-    if (binaryVersionHigh != null) __obj.updateDynamic("binaryVersionHigh")(binaryVersionHigh.asInstanceOf[js.Any])
-    if (binaryVersionLow != null) __obj.updateDynamic("binaryVersionLow")(binaryVersionLow.asInstanceOf[js.Any])
-    if (!js.isUndefined(denied)) __obj.updateDynamic("denied")(denied.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsInformationProtectionDesktopApp]
   }
+  
+  extension [Self <: WindowsInformationProtectionDesktopApp](x: Self) {
+    
+    inline def setBinaryName(value: String): Self = StObject.set(x, "binaryName", value.asInstanceOf[js.Any])
+    
+    inline def setBinaryNameUndefined: Self = StObject.set(x, "binaryName", js.undefined)
+    
+    inline def setBinaryVersionHigh(value: NullableOption[String]): Self = StObject.set(x, "binaryVersionHigh", value.asInstanceOf[js.Any])
+    
+    inline def setBinaryVersionHighNull: Self = StObject.set(x, "binaryVersionHigh", null)
+    
+    inline def setBinaryVersionHighUndefined: Self = StObject.set(x, "binaryVersionHigh", js.undefined)
+    
+    inline def setBinaryVersionLow(value: NullableOption[String]): Self = StObject.set(x, "binaryVersionLow", value.asInstanceOf[js.Any])
+    
+    inline def setBinaryVersionLowNull: Self = StObject.set(x, "binaryVersionLow", null)
+    
+    inline def setBinaryVersionLowUndefined: Self = StObject.set(x, "binaryVersionLow", js.undefined)
+  }
 }
-

@@ -1,22 +1,29 @@
 package typingsJapgolly.reactCalendarTimeline.mod
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.React.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarkerProps extends js.Object {
+trait MarkerProps extends StObject {
+  
   var children: js.UndefOr[js.Function1[/* props */ CustomMarkerChildrenProps, Node]] = js.undefined
+  
   var date: js.Date | Double
 }
-
 object MarkerProps {
-  @scala.inline
-  def apply(date: js.Date | Double, children: /* props */ CustomMarkerChildrenProps => CallbackTo[Node] = null): MarkerProps = {
+  
+  inline def apply(date: js.Date | Double): MarkerProps = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactCalendarTimeline.mod.CustomMarkerChildrenProps) => children(t0).runNow()))
     __obj.asInstanceOf[MarkerProps]
   }
+  
+  extension [Self <: MarkerProps](x: Self) {
+    
+    inline def setChildren(value: /* props */ CustomMarkerChildrenProps => Node): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setDate(value: js.Date | Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+  }
 }
-

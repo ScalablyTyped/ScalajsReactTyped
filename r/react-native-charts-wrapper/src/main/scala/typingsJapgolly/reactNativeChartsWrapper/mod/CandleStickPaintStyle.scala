@@ -1,24 +1,20 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.FILL
   - typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.STROKE
   - typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.FILL_AND_STROKE
 */
-trait CandleStickPaintStyle extends js.Object
-
+trait CandleStickPaintStyle extends StObject
 object CandleStickPaintStyle {
-  @scala.inline
-  def FILL: typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.FILL = this.cast("FILL")
-  @scala.inline
-  def FILL_AND_STROKE: typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.FILL_AND_STROKE = this.cast("FILL_AND_STROKE")
-  @scala.inline
-  def STROKE: typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.STROKE = this.cast("STROKE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def FILL: typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.FILL = "FILL".asInstanceOf[typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.FILL]
+  
+  inline def FILL_AND_STROKE: typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.FILL_AND_STROKE = "FILL_AND_STROKE".asInstanceOf[typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.FILL_AND_STROKE]
+  
+  inline def STROKE: typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.STROKE = "STROKE".asInstanceOf[typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.STROKE]
 }
-

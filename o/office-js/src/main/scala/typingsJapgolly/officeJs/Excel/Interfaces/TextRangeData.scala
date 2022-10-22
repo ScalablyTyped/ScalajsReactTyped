@@ -1,34 +1,43 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `textRange.toJSON()`. */
-trait TextRangeData extends js.Object {
+trait TextRangeData extends StObject {
+  
   /**
+    * Returns a `ShapeFont` object that represents the font attributes for the text range.
     *
-    * Returns a ShapeFont object that represents the font attributes for the text range. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var font: js.UndefOr[ShapeFontData] = js.undefined
+  
   /**
-    *
     * Represents the plain text content of the text range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object TextRangeData {
-  @scala.inline
-  def apply(font: ShapeFontData = null, text: String = null): TextRangeData = {
+  
+  inline def apply(): TextRangeData = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextRangeData]
   }
+  
+  extension [Self <: TextRangeData](x: Self) {
+    
+    inline def setFont(value: ShapeFontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

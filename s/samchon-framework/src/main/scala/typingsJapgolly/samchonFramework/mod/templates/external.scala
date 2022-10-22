@@ -1,55 +1,59 @@
 package typingsJapgolly.samchonFramework.mod.templates
 
-import typingsJapgolly.samchon.iclientdriverMod.IClientDriver
-import typingsJapgolly.samchon.iexternalserverMod.IExternalServer
+import typingsJapgolly.samchon.protocolCommunicatorIclientdriverMod.IClientDriver
+import typingsJapgolly.samchon.templatesExternalInterfacesIexternalserverMod.IExternalServer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon-framework", "templates.external")
-@js.native
-object external extends js.Object {
+object external {
+  
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.external.ExternalClientArray")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class ExternalClientArray[T /* <: typingsJapgolly.samchon.externalSystemMod.ExternalSystem */] ()
+  open class ExternalClientArray[T /* <: typingsJapgolly.samchon.templatesExternalExternalSystemMod.ExternalSystem */] ()
     extends typingsJapgolly.samchon.mod.templates.external.ExternalClientArray[T]
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.external.ExternalServer")
   @js.native
-  abstract class ExternalServer protected ()
+  open class ExternalServer protected ()
     extends typingsJapgolly.samchon.mod.templates.external.ExternalServer {
     /**
       * Construct from parent {@link ExternalSystemArray}.
       *
       * @param systemArray The parent {@link ExternalSystemArray} object.
       */
-    def this(systemArray: typingsJapgolly.samchon.externalSystemArrayMod.ExternalSystemArray[IExternalServer]) = this()
+    def this(systemArray: typingsJapgolly.samchon.templatesExternalExternalSystemArrayMod.ExternalSystemArray[IExternalServer]) = this()
   }
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.external.ExternalServerArray")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class ExternalServerArray[T /* <: IExternalServer */] ()
+  open class ExternalServerArray[T /* <: IExternalServer */] ()
     extends typingsJapgolly.samchon.mod.templates.external.ExternalServerArray[T]
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.external.ExternalServerClientArray")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class ExternalServerClientArray[T /* <: typingsJapgolly.samchon.externalSystemMod.ExternalSystem */] ()
+  open class ExternalServerClientArray[T /* <: typingsJapgolly.samchon.templatesExternalExternalSystemMod.ExternalSystem */] ()
     extends typingsJapgolly.samchon.mod.templates.external.ExternalServerClientArray[T]
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.external.ExternalSystem")
   @js.native
-  abstract class ExternalSystem protected ()
+  open class ExternalSystem protected ()
     extends typingsJapgolly.samchon.mod.templates.external.ExternalSystem {
     /**
       * Construct from parent {@link ExternalSystemArray}.
       *
       * @param systemArray The parent {@link ExternalSystemArray} object.
       */
-    def this(systemArray: typingsJapgolly.samchon.externalSystemArrayMod.ExternalSystemArray[typingsJapgolly.samchon.externalSystemMod.ExternalSystem]) = this()
+    def this(systemArray: typingsJapgolly.samchon.templatesExternalExternalSystemArrayMod.ExternalSystemArray[typingsJapgolly.samchon.templatesExternalExternalSystemMod.ExternalSystem]) = this()
     /**
       * Constrct from parent {@link ExternalSystemArray} and communicator.
       *
@@ -57,28 +61,28 @@ object external extends js.Object {
       * @param communicator Communicator with the remote, external system.
       */
     def this(
-      systemArray: typingsJapgolly.samchon.externalSystemArrayMod.ExternalSystemArray[typingsJapgolly.samchon.externalSystemMod.ExternalSystem],
+      systemArray: typingsJapgolly.samchon.templatesExternalExternalSystemArrayMod.ExternalSystemArray[typingsJapgolly.samchon.templatesExternalExternalSystemMod.ExternalSystem],
       communicator: IClientDriver
     ) = this()
   }
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.external.ExternalSystemArray")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class ExternalSystemArray[System /* <: typingsJapgolly.samchon.externalSystemMod.ExternalSystem */] ()
+  open class ExternalSystemArray[System /* <: typingsJapgolly.samchon.templatesExternalExternalSystemMod.ExternalSystem */] ()
     extends typingsJapgolly.samchon.mod.templates.external.ExternalSystemArray[System]
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.external.ExternalSystemRole")
   @js.native
-  abstract class ExternalSystemRole protected ()
+  open class ExternalSystemRole protected ()
     extends typingsJapgolly.samchon.mod.templates.external.ExternalSystemRole {
     /**
       * Constructor from a system.
       *
       * @param system An external system containing this role.
       */
-    def this(system: typingsJapgolly.samchon.externalSystemMod.ExternalSystem) = this()
+    def this(system: typingsJapgolly.samchon.templatesExternalExternalSystemMod.ExternalSystem) = this()
   }
-  
 }
-

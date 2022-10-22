@@ -1,26 +1,24 @@
 package typingsJapgolly.knockoutRx
 
-import typingsJapgolly.knockout.KnockoutObservable
-import typingsJapgolly.knockout.KnockoutSubscribable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Rx")
-@js.native
-object Rx extends js.Object {
+object Rx {
+  
   @js.native
-  trait Observable[T] extends js.Object {
-    def toKoObservable(): KnockoutObservable[T] = js.native
-    def toKoObservable(initialValue: T): KnockoutObservable[T] = js.native
-    def toKoSubscribable(): KnockoutSubscribable[T] = js.native
+  trait Observable[T] extends StObject {
+    
+    def toKoObservable(): Any = js.native
+    def toKoObservable(initialValue: T): Any = js.native
+    
+    def toKoSubscribable(): Any = js.native
   }
   
   @js.native
-  trait Subject[T] extends js.Object {
-    def toKoObservable(): KnockoutObservable[T] = js.native
-    def toKoObservable(initialValue: T): KnockoutObservable[T] = js.native
+  trait Subject[T] extends StObject {
+    
+    def toKoObservable(): Any = js.native
+    def toKoObservable(initialValue: T): Any = js.native
   }
-  
 }
-

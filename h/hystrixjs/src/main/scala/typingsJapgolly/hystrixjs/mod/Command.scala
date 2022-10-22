@@ -1,20 +1,23 @@
 package typingsJapgolly.hystrixjs.mod
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Command extends js.Object {
-  def execute(args: js.Any*): js.Thenable[_]
+trait Command extends StObject {
+  
+  def execute(args: Any*): PromiseLike[Any]
 }
-
 object Command {
-  @scala.inline
-  def apply(execute: /* repeated */ js.Any => CallbackTo[js.Thenable[js.Any]]): Command = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => execute(t0).runNow()))
+  
+  inline def apply(execute: /* repeated */ Any => PromiseLike[Any]): Command = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
     __obj.asInstanceOf[Command]
   }
+  
+  extension [Self <: Command](x: Self) {
+    
+    inline def setExecute(value: /* repeated */ Any => PromiseLike[Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+  }
 }
-

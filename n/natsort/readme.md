@@ -1,7 +1,7 @@
 
 # Scala.js typings for natsort
 
-Typings are for version 2.0.2
+Typings are for version 2.0.3
 
 ## Library description:
 Javascript natural sort algorithm with unicode support.
@@ -10,15 +10,15 @@ Javascript natural sort algorithm with unicode support.
 | ------------------ | :-------------: |
 | Full name          | natsort |
 | Keywords           | natural, natsort, sort, sorter, numeric, unicode, algorithm, date, datetime, desc, case-insensitive |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 198881 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 39118.666666666664 |
+| # stars            | 66.0 |
 
 ## Links
-- [Homepage](https://github.com/netop/natsort#readme)
-- [Bugs](https://github.com/netop/natsort/issues)
-- [Repository](https://github.com/netop/natsort)
+- [Homepage](https://github.com/bubkoo/natsort#readme)
+- [Bugs](https://github.com/bubkoo/natsort/issues)
+- [Repository](https://github.com/bubkoo/natsort)
 - [Npm](https://www.npmjs.com/package/natsort)
     
 

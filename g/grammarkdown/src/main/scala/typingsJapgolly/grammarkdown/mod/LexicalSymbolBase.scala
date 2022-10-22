@@ -1,12 +1,13 @@
 package typingsJapgolly.grammarkdown.mod
 
-import typingsJapgolly.grammarkdown.nodesMod.LexicalSymbolKind
+import typingsJapgolly.grammarkdown.distTokensMod.LexicalSymbolKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grammarkdown", "LexicalSymbolBase")
+/* note: abstract class */ @JSImport("grammarkdown", "LexicalSymbolBase")
 @js.native
-abstract class LexicalSymbolBase[TKind /* <: LexicalSymbolKind */] ()
-  extends typingsJapgolly.grammarkdown.nodesMod.Node[TKind]
-
+open class LexicalSymbolBase[TKind /* <: LexicalSymbolKind */] protected ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.LexicalSymbolBase[TKind] {
+  def this(kind: TKind) = this()
+}

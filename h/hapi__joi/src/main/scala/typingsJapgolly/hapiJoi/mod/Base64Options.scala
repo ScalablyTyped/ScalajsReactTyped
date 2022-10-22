@@ -1,12 +1,14 @@
 package typingsJapgolly.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<@hapi/joi.@hapi/joi.DataUriOptions, 'paddingRequired'> */
-trait Base64Options extends js.Object {
+trait Base64Options extends StObject {
+  
   var paddingRequired: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * if true, uses the URI-safe base64 format which replaces `+` with `-` and `\` with `_`.
     *
@@ -14,14 +16,21 @@ trait Base64Options extends js.Object {
     */
   var urlSafe: js.UndefOr[Boolean] = js.undefined
 }
-
 object Base64Options {
-  @scala.inline
-  def apply(paddingRequired: js.UndefOr[Boolean] = js.undefined, urlSafe: js.UndefOr[Boolean] = js.undefined): Base64Options = {
+  
+  inline def apply(): Base64Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(paddingRequired)) __obj.updateDynamic("paddingRequired")(paddingRequired.asInstanceOf[js.Any])
-    if (!js.isUndefined(urlSafe)) __obj.updateDynamic("urlSafe")(urlSafe.asInstanceOf[js.Any])
     __obj.asInstanceOf[Base64Options]
   }
+  
+  extension [Self <: Base64Options](x: Self) {
+    
+    inline def setPaddingRequired(value: Boolean): Self = StObject.set(x, "paddingRequired", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingRequiredUndefined: Self = StObject.set(x, "paddingRequired", js.undefined)
+    
+    inline def setUrlSafe(value: Boolean): Self = StObject.set(x, "urlSafe", value.asInstanceOf[js.Any])
+    
+    inline def setUrlSafeUndefined: Self = StObject.set(x, "urlSafe", js.undefined)
+  }
 }
-

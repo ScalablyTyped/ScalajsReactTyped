@@ -1,46 +1,68 @@
 package typingsJapgolly.reactWeui.mod
 
-import typingsJapgolly.reactWeui.AnonDefaultIndex
+import typingsJapgolly.reactWeui.anon.DefaultIndex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-weui", "Tab")
 @js.native
-class Tab protected () extends js.Object {
-  def this(args: js.Any*) = this()
-  def handleHeaderClick(idx: js.Any): Unit = js.native
-  def parseChild(children: js.Any): js.Any = js.native
-  def render(): js.Any = js.native
-  def renderBar(`type`: js.Any, children: js.Any, cls: js.Any): js.Any = js.native
-}
-
-/* static members */
-@JSImport("react-weui", "Tab")
-@js.native
-object Tab extends js.Object {
-  var defaultProps: AnonDefaultIndex = js.native
-  @js.native
-  object propTypes extends js.Object {
-    @js.native
-    object defaultIndex extends js.Object {
-      def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
-      def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
-    }
-    
-    @js.native
-    object onChange extends js.Object {
-      def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
-      def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
-    }
-    
-    @js.native
-    object `type` extends js.Object {
-      def apply(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
-      def isRequired(p0: js.Any, p1: js.Any, p2: js.Any, p3: js.Any, p4: js.Any, p5: js.Any): js.Any = js.native
-    }
-    
-  }
+open class Tab protected () extends StObject {
+  def this(args: Any*) = this()
   
+  def handleHeaderClick(idx: Any): Unit = js.native
+  
+  def parseChild(children: Any): Any = js.native
+  
+  def render(): Any = js.native
+  
+  def renderBar(`type`: Any, children: Any, cls: Any): Any = js.native
 }
-
+/* static members */
+object Tab {
+  
+  @JSImport("react-weui", "Tab")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-weui", "Tab.defaultProps")
+  @js.native
+  def defaultProps: DefaultIndex = js.native
+  inline def defaultProps_=(x: DefaultIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  object propTypes {
+    
+    object defaultIndex {
+      
+      inline def apply(p0: Any, p1: Any, p2: Any, p3: Any, p4: Any, p5: Any): Any = (^.asInstanceOf[js.Dynamic].apply(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any])).asInstanceOf[Any]
+      
+      @JSImport("react-weui", "Tab.propTypes.defaultIndex")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      inline def isRequired(p0: Any, p1: Any, p2: Any, p3: Any, p4: Any, p5: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any])).asInstanceOf[Any]
+    }
+    
+    object onChange {
+      
+      inline def apply(p0: Any, p1: Any, p2: Any, p3: Any, p4: Any, p5: Any): Any = (^.asInstanceOf[js.Dynamic].apply(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any])).asInstanceOf[Any]
+      
+      @JSImport("react-weui", "Tab.propTypes.onChange")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      inline def isRequired(p0: Any, p1: Any, p2: Any, p3: Any, p4: Any, p5: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any])).asInstanceOf[Any]
+    }
+    
+    object `type` {
+      
+      inline def apply(p0: Any, p1: Any, p2: Any, p3: Any, p4: Any, p5: Any): Any = (^.asInstanceOf[js.Dynamic].apply(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any])).asInstanceOf[Any]
+      
+      @JSImport("react-weui", "Tab.propTypes.type")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      inline def isRequired(p0: Any, p1: Any, p2: Any, p3: Any, p4: Any, p5: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], p4.asInstanceOf[js.Any], p5.asInstanceOf[js.Any])).asInstanceOf[Any]
+    }
+  }
+}

@@ -1,10 +1,7 @@
 package typingsJapgolly.gaeaModel.FitGaea
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("FitGaea._")
-@js.native
-class _underscore () extends js.Object
-
+trait _underscore extends StObject

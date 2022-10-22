@@ -1,32 +1,47 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseItemVersion extends Entity {
+trait BaseItemVersion
+  extends StObject
+     with Entity {
+  
   // Identity of the user which last modified the version. Read-only.
-  var lastModifiedBy: js.UndefOr[IdentitySet] = js.undefined
+  var lastModifiedBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
+  
   // Date and time the version was last modified. Read-only.
-  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Indicates the publication status of this particular version. Read-only.
-  var publication: js.UndefOr[PublicationFacet] = js.undefined
+  var publication: js.UndefOr[NullableOption[PublicationFacet]] = js.undefined
 }
-
 object BaseItemVersion {
-  @scala.inline
-  def apply(
-    id: String = null,
-    lastModifiedBy: IdentitySet = null,
-    lastModifiedDateTime: String = null,
-    publication: PublicationFacet = null
-  ): BaseItemVersion = {
+  
+  inline def apply(): BaseItemVersion = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (publication != null) __obj.updateDynamic("publication")(publication.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseItemVersion]
   }
+  
+  extension [Self <: BaseItemVersion](x: Self) {
+    
+    inline def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedByNull: Self = StObject.set(x, "lastModifiedBy", null)
+    
+    inline def setLastModifiedByUndefined: Self = StObject.set(x, "lastModifiedBy", js.undefined)
+    
+    inline def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
+    
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    
+    inline def setPublication(value: NullableOption[PublicationFacet]): Self = StObject.set(x, "publication", value.asInstanceOf[js.Any])
+    
+    inline def setPublicationNull: Self = StObject.set(x, "publication", null)
+    
+    inline def setPublicationUndefined: Self = StObject.set(x, "publication", js.undefined)
+  }
 }
-

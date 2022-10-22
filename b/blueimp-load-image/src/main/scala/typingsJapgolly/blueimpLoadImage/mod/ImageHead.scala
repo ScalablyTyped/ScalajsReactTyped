@@ -1,19 +1,24 @@
 package typingsJapgolly.blueimpLoadImage.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageHead extends js.Object {
-  var imageHead: js.UndefOr[scala.scalajs.js.typedarray.ArrayBuffer | scala.scalajs.js.typedarray.Uint8Array] = js.undefined
+trait ImageHead extends StObject {
+  
+  var imageHead: js.UndefOr[js.typedarray.ArrayBuffer | js.typedarray.Uint8Array] = js.undefined
 }
-
 object ImageHead {
-  @scala.inline
-  def apply(imageHead: scala.scalajs.js.typedarray.ArrayBuffer | scala.scalajs.js.typedarray.Uint8Array = null): ImageHead = {
+  
+  inline def apply(): ImageHead = {
     val __obj = js.Dynamic.literal()
-    if (imageHead != null) __obj.updateDynamic("imageHead")(imageHead.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageHead]
   }
+  
+  extension [Self <: ImageHead](x: Self) {
+    
+    inline def setImageHead(value: js.typedarray.ArrayBuffer | js.typedarray.Uint8Array): Self = StObject.set(x, "imageHead", value.asInstanceOf[js.Any])
+    
+    inline def setImageHeadUndefined: Self = StObject.set(x, "imageHead", js.undefined)
+  }
 }
-

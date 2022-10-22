@@ -1,36 +1,29 @@
 package typingsJapgolly.akamaiEdgeworkers.EW
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ImmutableRequest
-  extends ReadsHeaders
+  extends StObject
+     with ReadsHeaders
      with ReadsVariables
      with Request
-
 object ImmutableRequest {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
+    body: ReadableStreamEW[Any],
     cpCode: Double,
-    getHeader: String => CallbackTo[js.Array[String] | Null],
-    getVariable: String => CallbackTo[js.UndefOr[String]],
+    getHeader: String => js.Array[String] | Null,
+    getVariable: String => js.UndefOr[String],
     host: String,
     method: String,
     path: String,
     query: String,
     scheme: String,
-    url: String,
-    device: Device = null,
-    userLocation: UserLocation = null
+    url: String
   ): ImmutableRequest = {
-    val __obj = js.Dynamic.literal(cpCode = cpCode.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("getHeader")(js.Any.fromFunction1((t0: java.lang.String) => getHeader(t0).runNow()))
-    __obj.updateDynamic("getVariable")(js.Any.fromFunction1((t0: java.lang.String) => getVariable(t0).runNow()))
-    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (userLocation != null) __obj.updateDynamic("userLocation")(userLocation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], cpCode = cpCode.asInstanceOf[js.Any], getHeader = js.Any.fromFunction1(getHeader), getVariable = js.Any.fromFunction1(getVariable), host = host.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImmutableRequest]
   }
 }
-

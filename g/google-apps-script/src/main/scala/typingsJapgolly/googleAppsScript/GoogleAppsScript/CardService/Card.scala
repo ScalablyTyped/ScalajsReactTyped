@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A context card that represents a single view in the
@@ -18,16 +18,19 @@ import scala.scalajs.js.annotation._
   *         .addSection(cardSection)
   *         .build();
   */
-trait Card extends js.Object {
+trait Card extends StObject {
+  
   def printJson(): String
 }
-
 object Card {
-  @scala.inline
-  def apply(printJson: CallbackTo[String]): Card = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("printJson")(printJson.toJsFn)
+  
+  inline def apply(printJson: CallbackTo[String]): Card = {
+    val __obj = js.Dynamic.literal(printJson = printJson.toJsFn)
     __obj.asInstanceOf[Card]
   }
+  
+  extension [Self <: Card](x: Self) {
+    
+    inline def setPrintJson(value: CallbackTo[String]): Self = StObject.set(x, "printJson", value.toJsFn)
+  }
 }
-

@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EventReceiverSynchronization extends js.Object
-
+sealed trait EventReceiverSynchronization extends StObject
 @JSGlobal("SP.EventReceiverSynchronization")
 @js.native
-object EventReceiverSynchronization extends js.Object {
-  @js.native
-  sealed trait asynchronous extends EventReceiverSynchronization
+object EventReceiverSynchronization extends StObject {
   
   @js.native
-  sealed trait defaultSynchronization extends EventReceiverSynchronization
+  sealed trait asynchronous
+    extends StObject
+       with EventReceiverSynchronization
   
   @js.native
-  sealed trait synchronous extends EventReceiverSynchronization
+  sealed trait defaultSynchronization
+    extends StObject
+       with EventReceiverSynchronization
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EventReceiverSynchronization with Double] = js.native
-  /* 2 */ @js.native
-  object asynchronous extends TopLevel[asynchronous with Double]
-  
-  /* 0 */ @js.native
-  object defaultSynchronization extends TopLevel[defaultSynchronization with Double]
-  
-  /* 1 */ @js.native
-  object synchronous extends TopLevel[synchronous with Double]
-  
+  @js.native
+  sealed trait synchronous
+    extends StObject
+       with EventReceiverSynchronization
 }
-

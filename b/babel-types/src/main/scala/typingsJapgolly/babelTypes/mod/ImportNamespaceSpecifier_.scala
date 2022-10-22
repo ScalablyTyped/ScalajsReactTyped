@@ -1,36 +1,32 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.ImportNamespaceSpecifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ImportNamespaceSpecifier_
-  extends Node
+  extends StObject
+     with Node
      with ModuleSpecifier {
+  
   var local: Identifier_
+  
   @JSName("type")
   var type_ImportNamespaceSpecifier_ : ImportNamespaceSpecifier
 }
-
 object ImportNamespaceSpecifier_ {
-  @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    local: Identifier_,
-    start: Double,
-    `type`: ImportNamespaceSpecifier,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ImportNamespaceSpecifier_ = {
+  
+  inline def apply(end: Double, loc: SourceLocation, local: Identifier_, start: Double): ImportNamespaceSpecifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ImportNamespaceSpecifier")
     __obj.asInstanceOf[ImportNamespaceSpecifier_]
   }
+  
+  extension [Self <: ImportNamespaceSpecifier_](x: Self) {
+    
+    inline def setLocal(value: Identifier_): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: ImportNamespaceSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

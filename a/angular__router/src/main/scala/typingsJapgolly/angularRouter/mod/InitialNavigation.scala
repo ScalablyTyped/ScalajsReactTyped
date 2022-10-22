@@ -1,33 +1,20 @@
 package typingsJapgolly.angularRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.angularRouter.angularRouterBooleans.`true`
-  - typingsJapgolly.angularRouter.angularRouterBooleans.`false`
-  - typingsJapgolly.angularRouter.angularRouterStrings.enabled
   - typingsJapgolly.angularRouter.angularRouterStrings.disabled
-  - typingsJapgolly.angularRouter.angularRouterStrings.legacy_enabled
-  - typingsJapgolly.angularRouter.angularRouterStrings.legacy_disabled
+  - typingsJapgolly.angularRouter.angularRouterStrings.enabledBlocking
+  - typingsJapgolly.angularRouter.angularRouterStrings.enabledNonBlocking
 */
-trait InitialNavigation extends js.Object
-
+trait InitialNavigation extends StObject
 object InitialNavigation {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def disabled: typingsJapgolly.angularRouter.angularRouterStrings.disabled = this.cast("disabled")
-  @scala.inline
-  def enabled: typingsJapgolly.angularRouter.angularRouterStrings.enabled = this.cast("enabled")
-  @scala.inline
-  def `false`: typingsJapgolly.angularRouter.angularRouterBooleans.`false` = this.cast(false)
-  @scala.inline
-  def legacy_disabled: typingsJapgolly.angularRouter.angularRouterStrings.legacy_disabled = this.cast("legacy_disabled")
-  @scala.inline
-  def legacy_enabled: typingsJapgolly.angularRouter.angularRouterStrings.legacy_enabled = this.cast("legacy_enabled")
-  @scala.inline
-  def `true`: typingsJapgolly.angularRouter.angularRouterBooleans.`true` = this.cast(true)
+  
+  inline def disabled: typingsJapgolly.angularRouter.angularRouterStrings.disabled = "disabled".asInstanceOf[typingsJapgolly.angularRouter.angularRouterStrings.disabled]
+  
+  inline def enabledBlocking: typingsJapgolly.angularRouter.angularRouterStrings.enabledBlocking = "enabledBlocking".asInstanceOf[typingsJapgolly.angularRouter.angularRouterStrings.enabledBlocking]
+  
+  inline def enabledNonBlocking: typingsJapgolly.angularRouter.angularRouterStrings.enabledNonBlocking = "enabledNonBlocking".asInstanceOf[typingsJapgolly.angularRouter.angularRouterStrings.enabledNonBlocking]
 }
-

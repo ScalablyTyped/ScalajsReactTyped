@@ -1,19 +1,24 @@
 package typingsJapgolly.spotifyApi.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TrackRelinkingParameterObject extends js.Object {
+trait TrackRelinkingParameterObject extends StObject {
+  
   var market: js.UndefOr[String] = js.undefined
 }
-
 object TrackRelinkingParameterObject {
-  @scala.inline
-  def apply(market: String = null): TrackRelinkingParameterObject = {
+  
+  inline def apply(): TrackRelinkingParameterObject = {
     val __obj = js.Dynamic.literal()
-    if (market != null) __obj.updateDynamic("market")(market.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackRelinkingParameterObject]
   }
+  
+  extension [Self <: TrackRelinkingParameterObject](x: Self) {
+    
+    inline def setMarket(value: String): Self = StObject.set(x, "market", value.asInstanceOf[js.Any])
+    
+    inline def setMarketUndefined: Self = StObject.set(x, "market", js.undefined)
+  }
 }
-

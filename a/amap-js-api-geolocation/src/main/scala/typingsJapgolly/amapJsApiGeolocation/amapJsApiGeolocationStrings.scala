@@ -3,65 +3,71 @@ package typingsJapgolly.amapJsApiGeolocation
 import typingsJapgolly.amapJsApiGeolocation.AMap.Geolocation.ButtonPosition
 import typingsJapgolly.amapJsApiGeolocation.AMap.Geolocation.LocationType
 import typingsJapgolly.amapJsApiGeolocation.AMap.Geolocation.SearchStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amapJsApiGeolocationStrings {
-  @js.native
-  sealed trait LB extends ButtonPosition
   
   @js.native
-  sealed trait LT extends ButtonPosition
+  sealed trait LB
+    extends StObject
+       with ButtonPosition
+  inline def LB: LB = "LB".asInstanceOf[LB]
   
   @js.native
-  sealed trait RB extends ButtonPosition
+  sealed trait LT
+    extends StObject
+       with ButtonPosition
+  inline def LT: LT = "LT".asInstanceOf[LT]
   
   @js.native
-  sealed trait RT extends ButtonPosition
+  sealed trait RB
+    extends StObject
+       with ButtonPosition
+  inline def RB: RB = "RB".asInstanceOf[RB]
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait RT
+    extends StObject
+       with ButtonPosition
+  inline def RT: RT = "RT".asInstanceOf[RT]
   
   @js.native
-  sealed trait base extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait complete extends SearchStatus
+  sealed trait base extends StObject
+  inline def base: base = "base".asInstanceOf[base]
   
   @js.native
-  sealed trait error extends SearchStatus
+  sealed trait complete
+    extends StObject
+       with SearchStatus
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait html5 extends LocationType
+  sealed trait error
+    extends StObject
+       with SearchStatus
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait ip extends LocationType
+  sealed trait html5
+    extends StObject
+       with LocationType
+  inline def html5: html5 = "html5".asInstanceOf[html5]
   
   @js.native
-  sealed trait sdk extends LocationType
+  sealed trait ip
+    extends StObject
+       with LocationType
+  inline def ip: ip = "ip".asInstanceOf[ip]
   
-  @scala.inline
-  def LB: LB = "LB".asInstanceOf[LB]
-  @scala.inline
-  def LT: LT = "LT".asInstanceOf[LT]
-  @scala.inline
-  def RB: RB = "RB".asInstanceOf[RB]
-  @scala.inline
-  def RT: RT = "RT".asInstanceOf[RT]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def base: base = "base".asInstanceOf[base]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def html5: html5 = "html5".asInstanceOf[html5]
-  @scala.inline
-  def ip: ip = "ip".asInstanceOf[ip]
-  @scala.inline
-  def sdk: sdk = "sdk".asInstanceOf[sdk]
+  @js.native
+  sealed trait sdk
+    extends StObject
+       with LocationType
+  inline def sdk: sdk = "sdk".asInstanceOf[sdk]
 }
-

@@ -1,24 +1,28 @@
 package typingsJapgolly.googleMaps.mod
 
 import typingsJapgolly.googleMaps.googleMapsStrings.now
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DirectionsRequest extends js.Object {
+trait DirectionsRequest extends StObject {
+  
   /**
     * If set to `true`, specifies that the Directions service may provide more than one route alternative in the response.
     * Note that providing route alternatives may increase the response time from the server.
     */
   var alternatives: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Specifies the desired time of arrival for transit directions, in seconds since midnight, January 1, 1970 UTC.
     * You can specify either `departure_time` or `arrival_time`, but not both.
     * Note that `arrival_time` must be specified as an integer.
     */
   var arrival_time: js.UndefOr[js.Date | Double] = js.undefined
+  
   /** Indicates that the calculated route(s) should avoid the indicated features. */
   var avoid: js.UndefOr[js.Array[TravelRestriction]] = js.undefined
+  
   /**
     * Specifies the desired time of departure. You can specify the time as an integer in seconds since midnight, January 1, 1970 UTC.
     * Alternatively, you can specify a value of `now`, which sets the departure time to the current time (correct to the nearest second).
@@ -32,11 +36,13 @@ trait DirectionsRequest extends js.Object {
     *    and signature. The `departure_time` must be set to the current time or some time in the future. It cannot be in the past.
     */
   var departure_time: js.UndefOr[js.Date | Double | now] = js.undefined
+  
   /**
     * The address, textual latitude/longitude value, or place ID to which you wish to calculate directions.
     * The options for the `destination` parameter are the same as for the `origin` parameter, described above
     */
   var destination: LatLng
+  
   /**
     * The language in which to return results.
     *
@@ -53,14 +59,17 @@ trait DirectionsRequest extends js.Object {
     *    For example, utca and tér are synonyms for street in Hungarian.
     */
   var language: js.UndefOr[Language] = js.undefined
+  
   /**
     * Specifies the mode of transport to use when calculating directions
     *
     * @default TravelMode.driving
     */
   var mode: js.UndefOr[TravelMode] = js.undefined
+  
   /** Wherever to optimize the provided route by rearranging the waypoints in a more efficient order. */
   var optimize: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The address, textual latitude/longitude value, or place ID from which you wish to calculate directions.
     *  - If you pass an address, the Directions service geocodes the string and converts it to a latitude/longitude coordinate
@@ -82,8 +91,10 @@ trait DirectionsRequest extends js.Object {
     *    `origin=place_id:ChIJ3S-JXmauEmsRUcIaWtf4MzE`
     */
   var origin: LatLng
+  
   /** Specifies the region code, specified as a ccTLD ("top-level domain") two-character value. */
   var region: js.UndefOr[String] = js.undefined
+  
   /**
     * Specifies the assumptions to use when calculating time in traffic.
     * This setting affects the value returned in the `duration_in_traffic` field in the response, which contains the predicted time
@@ -97,12 +108,14 @@ trait DirectionsRequest extends js.Object {
     * @default TrafficModel.best_guess
     */
   var traffic_model: js.UndefOr[TrafficModel] = js.undefined
+  
   /**
     * Specifies one or more preferred modes of transit.
     * This parameter may only be specified for transit directions, and only if the request includes an API key or
     * a Google Maps APIs Premium Plan client ID.
     */
   var transit_mode: js.UndefOr[js.Array[TransitMode]] = js.undefined
+  
   /**
     * Specifies preferences for transit routes.
     * Using this parameter, you can bias the options returned, rather than accepting the default best route chosen by the API.
@@ -110,8 +123,10 @@ trait DirectionsRequest extends js.Object {
     * a Google Maps APIs Premium Plan client ID.
     */
   var transit_routing_preference: js.UndefOr[TransitRoutingPreference] = js.undefined
+  
   /** Specifies the unit system to use when displaying results. */
   var units: js.UndefOr[UnitSystem] = js.undefined
+  
   /**
     * Specifies an array of waypoints.
     * Waypoints alter a route by routing it through the specified location(s).
@@ -122,41 +137,75 @@ trait DirectionsRequest extends js.Object {
     */
   var waypoints: js.UndefOr[js.Array[LatLng]] = js.undefined
 }
-
 object DirectionsRequest {
-  @scala.inline
-  def apply(
-    destination: LatLng,
-    origin: LatLng,
-    alternatives: js.UndefOr[Boolean] = js.undefined,
-    arrival_time: js.Date | Double = null,
-    avoid: js.Array[TravelRestriction] = null,
-    departure_time: js.Date | Double | now = null,
-    language: Language = null,
-    mode: TravelMode = null,
-    optimize: js.UndefOr[Boolean] = js.undefined,
-    region: String = null,
-    traffic_model: TrafficModel = null,
-    transit_mode: js.Array[TransitMode] = null,
-    transit_routing_preference: TransitRoutingPreference = null,
-    units: UnitSystem = null,
-    waypoints: js.Array[LatLng] = null
-  ): DirectionsRequest = {
+  
+  inline def apply(destination: LatLng, origin: LatLng): DirectionsRequest = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
-    if (!js.isUndefined(alternatives)) __obj.updateDynamic("alternatives")(alternatives.asInstanceOf[js.Any])
-    if (arrival_time != null) __obj.updateDynamic("arrival_time")(arrival_time.asInstanceOf[js.Any])
-    if (avoid != null) __obj.updateDynamic("avoid")(avoid.asInstanceOf[js.Any])
-    if (departure_time != null) __obj.updateDynamic("departure_time")(departure_time.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimize)) __obj.updateDynamic("optimize")(optimize.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (traffic_model != null) __obj.updateDynamic("traffic_model")(traffic_model.asInstanceOf[js.Any])
-    if (transit_mode != null) __obj.updateDynamic("transit_mode")(transit_mode.asInstanceOf[js.Any])
-    if (transit_routing_preference != null) __obj.updateDynamic("transit_routing_preference")(transit_routing_preference.asInstanceOf[js.Any])
-    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
-    if (waypoints != null) __obj.updateDynamic("waypoints")(waypoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsRequest]
   }
+  
+  extension [Self <: DirectionsRequest](x: Self) {
+    
+    inline def setAlternatives(value: Boolean): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
+    
+    inline def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
+    
+    inline def setArrival_time(value: js.Date | Double): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
+    
+    inline def setArrival_timeUndefined: Self = StObject.set(x, "arrival_time", js.undefined)
+    
+    inline def setAvoid(value: js.Array[TravelRestriction]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
+    
+    inline def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
+    
+    inline def setAvoidVarargs(value: TravelRestriction*): Self = StObject.set(x, "avoid", js.Array(value*))
+    
+    inline def setDeparture_time(value: js.Date | Double | now): Self = StObject.set(x, "departure_time", value.asInstanceOf[js.Any])
+    
+    inline def setDeparture_timeUndefined: Self = StObject.set(x, "departure_time", js.undefined)
+    
+    inline def setDestination(value: LatLng): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setMode(value: TravelMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setOptimize(value: Boolean): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
+    
+    inline def setOptimizeUndefined: Self = StObject.set(x, "optimize", js.undefined)
+    
+    inline def setOrigin(value: LatLng): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    
+    inline def setTraffic_model(value: TrafficModel): Self = StObject.set(x, "traffic_model", value.asInstanceOf[js.Any])
+    
+    inline def setTraffic_modelUndefined: Self = StObject.set(x, "traffic_model", js.undefined)
+    
+    inline def setTransit_mode(value: js.Array[TransitMode]): Self = StObject.set(x, "transit_mode", value.asInstanceOf[js.Any])
+    
+    inline def setTransit_modeUndefined: Self = StObject.set(x, "transit_mode", js.undefined)
+    
+    inline def setTransit_modeVarargs(value: TransitMode*): Self = StObject.set(x, "transit_mode", js.Array(value*))
+    
+    inline def setTransit_routing_preference(value: TransitRoutingPreference): Self = StObject.set(x, "transit_routing_preference", value.asInstanceOf[js.Any])
+    
+    inline def setTransit_routing_preferenceUndefined: Self = StObject.set(x, "transit_routing_preference", js.undefined)
+    
+    inline def setUnits(value: UnitSystem): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    
+    inline def setWaypoints(value: js.Array[LatLng]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
+    
+    inline def setWaypointsUndefined: Self = StObject.set(x, "waypoints", js.undefined)
+    
+    inline def setWaypointsVarargs(value: LatLng*): Self = StObject.set(x, "waypoints", js.Array(value*))
+  }
 }
-

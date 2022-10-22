@@ -1,56 +1,47 @@
 package typingsJapgolly.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SubDocumentType extends js.Object
-
+sealed trait SubDocumentType extends StObject
 /**
   * Lists values specifying the sub-document type.
   */
 @JSGlobal("SubDocumentType")
 @js.native
-object SubDocumentType extends js.Object {
+object SubDocumentType extends StObject {
+  
   /**
     * A footer.
     */
   @js.native
-  sealed trait Footer extends SubDocumentType
+  sealed trait Footer
+    extends StObject
+       with SubDocumentType
   
   /**
     * A header.
     */
   @js.native
-  sealed trait Header extends SubDocumentType
+  sealed trait Header
+    extends StObject
+       with SubDocumentType
   
   /**
     * The main document body.
     */
   @js.native
-  sealed trait Main extends SubDocumentType
+  sealed trait Main
+    extends StObject
+       with SubDocumentType
   
   /**
     * A text box.
     */
   @js.native
-  sealed trait TextBox extends SubDocumentType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SubDocumentType with Double] = js.native
-  /* 2 */ @js.native
-  object Footer extends TopLevel[Footer with Double]
-  
-  /* 1 */ @js.native
-  object Header extends TopLevel[Header with Double]
-  
-  /* 0 */ @js.native
-  object Main extends TopLevel[Main with Double]
-  
-  /* 3 */ @js.native
-  object TextBox extends TopLevel[TextBox with Double]
-  
+  sealed trait TextBox
+    extends StObject
+       with SubDocumentType
 }
-

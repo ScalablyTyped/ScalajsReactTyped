@@ -2,56 +2,74 @@ package typingsJapgolly.reactBootstrapTable.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactEventFrom
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InsertModalHeaderProps extends js.Object {
+trait InsertModalHeaderProps extends StObject {
+  
   /**
-  	 * Callback function to call prior to closing the Insert Modal window.
-  	 */
-  var beforeClose: js.UndefOr[js.Function1[/* e */ ReactEventFrom[Element], Unit]] = js.undefined
+    * Callback function to call prior to closing the Insert Modal window.
+    */
+  var beforeClose: js.UndefOr[js.Function1[/* e */ ReactEventFrom[Any & Element], Unit]] = js.undefined
+  
   /**
-  	 * Header class name.
-  	 */
+    * Header class name.
+    */
   var className: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Set to true to hide the close button. Default is false.
-  	 */
+    * Set to true to hide the close button. Default is false.
+    */
   var hideClose: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Callback function to call to close the Insert Modal window.
-  	 */
+    * Callback function to call to close the Insert Modal window.
+    */
   var onModalClose: js.UndefOr[js.Function1[/* closeModal */ js.Function0[Unit], Unit]] = js.undefined
+  
   /**
-  	 * Title to display in the header.
-  	 */
+    * Title to display in the header.
+    */
   var title: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Bootstrap version.
-  	 */
+    * Bootstrap version.
+    */
   var version: js.UndefOr[BootstrapVersion] = js.undefined
 }
-
 object InsertModalHeaderProps {
-  @scala.inline
-  def apply(
-    beforeClose: /* e */ ReactEventFrom[Element] => Callback = null,
-    className: String = null,
-    hideClose: js.UndefOr[Boolean] = js.undefined,
-    onModalClose: /* closeModal */ js.Function0[Unit] => Callback = null,
-    title: String = null,
-    version: BootstrapVersion = null
-  ): InsertModalHeaderProps = {
+  
+  inline def apply(): InsertModalHeaderProps = {
     val __obj = js.Dynamic.literal()
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction1((t0: /* e */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.Element]) => beforeClose(t0).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideClose)) __obj.updateDynamic("hideClose")(hideClose.asInstanceOf[js.Any])
-    if (onModalClose != null) __obj.updateDynamic("onModalClose")(js.Any.fromFunction1((t0: /* closeModal */ js.Function0[scala.Unit]) => onModalClose(t0).runNow()))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertModalHeaderProps]
   }
+  
+  extension [Self <: InsertModalHeaderProps](x: Self) {
+    
+    inline def setBeforeClose(value: /* e */ ReactEventFrom[Any & Element] => Callback): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1((t0: /* e */ ReactEventFrom[Any & Element]) => value(t0).runNow()))
+    
+    inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setHideClose(value: Boolean): Self = StObject.set(x, "hideClose", value.asInstanceOf[js.Any])
+    
+    inline def setHideCloseUndefined: Self = StObject.set(x, "hideClose", js.undefined)
+    
+    inline def setOnModalClose(value: /* closeModal */ js.Function0[Unit] => Callback): Self = StObject.set(x, "onModalClose", js.Any.fromFunction1((t0: /* closeModal */ js.Function0[Unit]) => value(t0).runNow()))
+    
+    inline def setOnModalCloseUndefined: Self = StObject.set(x, "onModalClose", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setVersion(value: BootstrapVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

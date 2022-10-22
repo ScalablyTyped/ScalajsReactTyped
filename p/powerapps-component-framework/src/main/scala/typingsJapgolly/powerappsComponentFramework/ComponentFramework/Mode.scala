@@ -1,68 +1,89 @@
 package typingsJapgolly.powerappsComponentFramework.ComponentFramework
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-	 * The interface for the context.mode
-	 */
-trait Mode extends js.Object {
+  * The interface for the context.mode
+  */
+trait Mode extends StObject {
+  
   /**
-  		 * Height in pixels allocated to the control. If it's -1, then there is no limit on height
-  		 */
+    * Height in pixels allocated to the control. If it's -1, then there is no limit on height
+    */
   var allocatedHeight: Double
+  
   /**
-  		 * Width in pixels allocated to the control.
-  		 */
+    * Width in pixels allocated to the control.
+    */
   var allocatedWidth: Double
+  
   /**
-  		 * Is the control in 'Read-only' mode.
-  		 */
+    * Is the control in 'Read-only' mode.
+    */
   var isControlDisabled: Boolean
+  
   /**
-  		 * Is the control in 'Visible' mode.
-  		 */
+    * Is the control in 'Visible' mode.
+    */
   var isVisible: Boolean
+  
   /**
-  		 * The defined control label
-  		 */
+    * The defined control label
+    */
   var label: String
+  
   /**
-  		 * set control state so that it will be stored in one session
-  		 */
+    * set control state so that it will be stored in one session
+    */
   def setControlState(state: Dictionary): Boolean
+  
   /**
-  		 * Make the control full screen.
-  		 * @param value True if control needs to autosize to full screen. False if control needs to autosize to allocated width.
-  		 */
+    * Make the control full screen.
+    * @param value True if control needs to autosize to full screen. False if control needs to autosize to allocated width.
+    */
   def setFullScreen(value: Boolean): Unit
+  
   /**
-  		 * API to determine container sizing if control needs to react. Control will get allocatedWidth/allocatedHeight if input is 'true'
-  		 * @param value True if controls needs to track container size, control will get allocatedWidth/allocatedHeight
-  		 */
+    * API to determine container sizing if control needs to react. Control will get allocatedWidth/allocatedHeight if input is 'true'
+    * @param value True if controls needs to track container size, control will get allocatedWidth/allocatedHeight
+    */
   def trackContainerResize(value: Boolean): Unit
 }
-
 object Mode {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     allocatedHeight: Double,
     allocatedWidth: Double,
     isControlDisabled: Boolean,
     isVisible: Boolean,
     label: String,
-    setControlState: Dictionary => CallbackTo[Boolean],
+    setControlState: Dictionary => Boolean,
     setFullScreen: Boolean => Callback,
     trackContainerResize: Boolean => Callback
   ): Mode = {
-    val __obj = js.Dynamic.literal(allocatedHeight = allocatedHeight.asInstanceOf[js.Any], allocatedWidth = allocatedWidth.asInstanceOf[js.Any], isControlDisabled = isControlDisabled.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-    __obj.updateDynamic("setControlState")(js.Any.fromFunction1((t0: typingsJapgolly.powerappsComponentFramework.ComponentFramework.Dictionary) => setControlState(t0).runNow()))
-    __obj.updateDynamic("setFullScreen")(js.Any.fromFunction1((t0: scala.Boolean) => setFullScreen(t0).runNow()))
-    __obj.updateDynamic("trackContainerResize")(js.Any.fromFunction1((t0: scala.Boolean) => trackContainerResize(t0).runNow()))
+    val __obj = js.Dynamic.literal(allocatedHeight = allocatedHeight.asInstanceOf[js.Any], allocatedWidth = allocatedWidth.asInstanceOf[js.Any], isControlDisabled = isControlDisabled.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], setControlState = js.Any.fromFunction1(setControlState), setFullScreen = js.Any.fromFunction1((t0: Boolean) => setFullScreen(t0).runNow()), trackContainerResize = js.Any.fromFunction1((t0: Boolean) => trackContainerResize(t0).runNow()))
     __obj.asInstanceOf[Mode]
   }
+  
+  extension [Self <: Mode](x: Self) {
+    
+    inline def setAllocatedHeight(value: Double): Self = StObject.set(x, "allocatedHeight", value.asInstanceOf[js.Any])
+    
+    inline def setAllocatedWidth(value: Double): Self = StObject.set(x, "allocatedWidth", value.asInstanceOf[js.Any])
+    
+    inline def setIsControlDisabled(value: Boolean): Self = StObject.set(x, "isControlDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setSetControlState(value: Dictionary => Boolean): Self = StObject.set(x, "setControlState", js.Any.fromFunction1(value))
+    
+    inline def setSetFullScreen(value: Boolean => Callback): Self = StObject.set(x, "setFullScreen", js.Any.fromFunction1((t0: Boolean) => value(t0).runNow()))
+    
+    inline def setTrackContainerResize(value: Boolean => Callback): Self = StObject.set(x, "trackContainerResize", js.Any.fromFunction1((t0: Boolean) => value(t0).runNow()))
+  }
 }
-

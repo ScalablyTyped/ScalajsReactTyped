@@ -1,15 +1,15 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MSHTML.IHTMLDOMImplementation")
 @js.native
-class IHTMLDOMImplementation protected () extends js.Object {
-  @JSName("MSHTML.IHTMLDOMImplementation_typekey")
+trait IHTMLDOMImplementation extends StObject {
+  
+  /* private */ @JSName("MSHTML.IHTMLDOMImplementation_typekey")
   var MSHTMLDotIHTMLDOMImplementation_typekey: IHTMLDOMImplementation = js.native
+  
   def hasFeature(bstrfeature: String): Boolean = js.native
-  def hasFeature(bstrfeature: String, version: js.Any): Boolean = js.native
+  def hasFeature(bstrfeature: String, version: Any): Boolean = js.native
 }
-

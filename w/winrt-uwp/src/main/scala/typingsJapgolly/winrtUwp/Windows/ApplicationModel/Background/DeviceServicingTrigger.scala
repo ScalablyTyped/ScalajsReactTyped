@@ -1,15 +1,14 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Background
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an event that an application can trigger to initiate a long-running update (firmware or settings) of a device. */
-@JSGlobal("Windows.ApplicationModel.Background.DeviceServicingTrigger")
 @js.native
-/** Constructor for DeviceServicingTrigger . Takes no parameters. */
-class DeviceServicingTrigger () extends js.Object {
+trait DeviceServicingTrigger extends StObject {
+  
   /**
     * Triggers the background task (settings or firmware update) and returns a DeviceTriggerResult indicating success or failure of the trigger request. Takes the DeviceInformation.ID string and an optional estimated time the background task will run. If your app cannot determine an appropriate time estimate, provide zero as the estimated time.
     * @param deviceId The DeviceInformation.ID of the device the background task will access.
@@ -26,4 +25,3 @@ class DeviceServicingTrigger () extends js.Object {
     */
   def requestAsync(deviceId: String, expectedDuration: Double, args: String): IPromiseWithIAsyncOperation[DeviceTriggerResult] = js.native
 }
-

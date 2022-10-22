@@ -1,94 +1,76 @@
 package typingsJapgolly.freedom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object freedomStrings {
-  @js.native
-  sealed trait onClientState extends js.Object
   
   @js.native
-  sealed trait onConnection extends js.Object
+  sealed trait onClientState extends StObject
+  inline def onClientState: onClientState = "onClientState".asInstanceOf[onClientState]
   
   @js.native
-  sealed trait onData extends js.Object
+  sealed trait onConnection extends StObject
+  inline def onConnection: onConnection = "onConnection".asInstanceOf[onConnection]
   
   @js.native
-  sealed trait onDisconnect extends js.Object
+  sealed trait onData extends StObject
+  inline def onData: onData = "onData".asInstanceOf[onData]
   
   @js.native
-  sealed trait onMessage extends js.Object
+  sealed trait onDisconnect extends StObject
+  inline def onDisconnect: onDisconnect = "onDisconnect".asInstanceOf[onDisconnect]
   
   @js.native
-  sealed trait onUserProfile extends js.Object
+  sealed trait onMessage extends StObject
+  inline def onMessage: onMessage = "onMessage".asInstanceOf[onMessage]
   
   @js.native
-  sealed trait onaddstream extends js.Object
+  sealed trait onUserProfile extends StObject
+  inline def onUserProfile: onUserProfile = "onUserProfile".asInstanceOf[onUserProfile]
   
   @js.native
-  sealed trait onclose extends js.Object
+  sealed trait onaddstream extends StObject
+  inline def onaddstream: onaddstream = "onaddstream".asInstanceOf[onaddstream]
   
   @js.native
-  sealed trait ondatachannel extends js.Object
+  sealed trait onclose extends StObject
+  inline def onclose: onclose = "onclose".asInstanceOf[onclose]
   
   @js.native
-  sealed trait onerror extends js.Object
+  sealed trait ondatachannel extends StObject
+  inline def ondatachannel: ondatachannel = "ondatachannel".asInstanceOf[ondatachannel]
   
   @js.native
-  sealed trait onicecandidate extends js.Object
+  sealed trait onerror extends StObject
+  inline def onerror: onerror = "onerror".asInstanceOf[onerror]
   
   @js.native
-  sealed trait oniceconnectionstatechange extends js.Object
+  sealed trait onicecandidate extends StObject
+  inline def onicecandidate: onicecandidate = "onicecandidate".asInstanceOf[onicecandidate]
   
   @js.native
-  sealed trait onmessage_ extends js.Object
+  sealed trait oniceconnectionstatechange extends StObject
+  inline def oniceconnectionstatechange: oniceconnectionstatechange = "oniceconnectionstatechange".asInstanceOf[oniceconnectionstatechange]
   
   @js.native
-  sealed trait onnegotiationneeded extends js.Object
+  sealed trait onmessage_ extends StObject
+  inline def onmessage_ : onmessage_ = "onmessage".asInstanceOf[onmessage_]
   
   @js.native
-  sealed trait onopen extends js.Object
+  sealed trait onnegotiationneeded extends StObject
+  inline def onnegotiationneeded: onnegotiationneeded = "onnegotiationneeded".asInstanceOf[onnegotiationneeded]
   
   @js.native
-  sealed trait onremovestream extends js.Object
+  sealed trait onopen extends StObject
+  inline def onopen: onopen = "onopen".asInstanceOf[onopen]
   
   @js.native
-  sealed trait onsignalingstatechange extends js.Object
+  sealed trait onremovestream extends StObject
+  inline def onremovestream: onremovestream = "onremovestream".asInstanceOf[onremovestream]
   
-  @scala.inline
-  def onClientState: onClientState = "onClientState".asInstanceOf[onClientState]
-  @scala.inline
-  def onConnection: onConnection = "onConnection".asInstanceOf[onConnection]
-  @scala.inline
-  def onData: onData = "onData".asInstanceOf[onData]
-  @scala.inline
-  def onDisconnect: onDisconnect = "onDisconnect".asInstanceOf[onDisconnect]
-  @scala.inline
-  def onMessage: onMessage = "onMessage".asInstanceOf[onMessage]
-  @scala.inline
-  def onUserProfile: onUserProfile = "onUserProfile".asInstanceOf[onUserProfile]
-  @scala.inline
-  def onaddstream: onaddstream = "onaddstream".asInstanceOf[onaddstream]
-  @scala.inline
-  def onclose: onclose = "onclose".asInstanceOf[onclose]
-  @scala.inline
-  def ondatachannel: ondatachannel = "ondatachannel".asInstanceOf[ondatachannel]
-  @scala.inline
-  def onerror: onerror = "onerror".asInstanceOf[onerror]
-  @scala.inline
-  def onicecandidate: onicecandidate = "onicecandidate".asInstanceOf[onicecandidate]
-  @scala.inline
-  def oniceconnectionstatechange: oniceconnectionstatechange = "oniceconnectionstatechange".asInstanceOf[oniceconnectionstatechange]
-  @scala.inline
-  def onmessage_ : onmessage_ = "onmessage".asInstanceOf[onmessage_]
-  @scala.inline
-  def onnegotiationneeded: onnegotiationneeded = "onnegotiationneeded".asInstanceOf[onnegotiationneeded]
-  @scala.inline
-  def onopen: onopen = "onopen".asInstanceOf[onopen]
-  @scala.inline
-  def onremovestream: onremovestream = "onremovestream".asInstanceOf[onremovestream]
-  @scala.inline
-  def onsignalingstatechange: onsignalingstatechange = "onsignalingstatechange".asInstanceOf[onsignalingstatechange]
+  @js.native
+  sealed trait onsignalingstatechange extends StObject
+  inline def onsignalingstatechange: onsignalingstatechange = "onsignalingstatechange".asInstanceOf[onsignalingstatechange]
 }
-

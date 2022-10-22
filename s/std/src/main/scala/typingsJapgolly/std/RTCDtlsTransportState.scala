@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.closed
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.failed
   - typingsJapgolly.std.stdStrings.`new`
 */
-trait RTCDtlsTransportState extends js.Object
-
+trait RTCDtlsTransportState extends StObject
 object RTCDtlsTransportState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def closed: typingsJapgolly.std.stdStrings.closed = this.cast("closed")
-  @scala.inline
-  def connected: typingsJapgolly.std.stdStrings.connected = this.cast("connected")
-  @scala.inline
-  def connecting: typingsJapgolly.std.stdStrings.connecting = this.cast("connecting")
-  @scala.inline
-  def failed: typingsJapgolly.std.stdStrings.failed = this.cast("failed")
-  @scala.inline
-  def `new`: typingsJapgolly.std.stdStrings.`new` = this.cast("new")
+  
+  inline def closed: typingsJapgolly.std.stdStrings.closed = "closed".asInstanceOf[typingsJapgolly.std.stdStrings.closed]
+  
+  inline def connected: typingsJapgolly.std.stdStrings.connected = "connected".asInstanceOf[typingsJapgolly.std.stdStrings.connected]
+  
+  inline def connecting: typingsJapgolly.std.stdStrings.connecting = "connecting".asInstanceOf[typingsJapgolly.std.stdStrings.connecting]
+  
+  inline def failed: typingsJapgolly.std.stdStrings.failed = "failed".asInstanceOf[typingsJapgolly.std.stdStrings.failed]
+  
+  inline def `new`: typingsJapgolly.std.stdStrings.`new` = "new".asInstanceOf[typingsJapgolly.std.stdStrings.`new`]
 }
-

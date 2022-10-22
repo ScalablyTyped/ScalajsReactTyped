@@ -2,18 +2,21 @@ package typingsJapgolly.winrt.Windows.Media.Capture
 
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
 import typingsJapgolly.winrt.Windows.Storage.StorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Capture.CameraCaptureUI")
-@js.native
-class CameraCaptureUI () extends ICameraCaptureUI {
-  /* CompleteClass */
-  override var photoSettings: CameraCaptureUIPhotoCaptureSettings = js.native
-  /* CompleteClass */
-  override var videoSettings: CameraCaptureUIVideoCaptureSettings = js.native
-  /* CompleteClass */
-  override def captureFileAsync(mode: CameraCaptureUIMode): IAsyncOperation[StorageFile] = js.native
+trait CameraCaptureUI
+  extends StObject
+     with ICameraCaptureUI
+object CameraCaptureUI {
+  
+  inline def apply(
+    captureFileAsync: CameraCaptureUIMode => IAsyncOperation[StorageFile],
+    photoSettings: CameraCaptureUIPhotoCaptureSettings,
+    videoSettings: CameraCaptureUIVideoCaptureSettings
+  ): CameraCaptureUI = {
+    val __obj = js.Dynamic.literal(captureFileAsync = js.Any.fromFunction1(captureFileAsync), photoSettings = photoSettings.asInstanceOf[js.Any], videoSettings = videoSettings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CameraCaptureUI]
+  }
 }
-

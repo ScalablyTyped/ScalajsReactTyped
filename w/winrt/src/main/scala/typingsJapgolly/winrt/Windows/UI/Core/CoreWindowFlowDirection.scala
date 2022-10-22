@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CoreWindowFlowDirection extends js.Object
-
+sealed trait CoreWindowFlowDirection extends StObject
 @JSGlobal("Windows.UI.Core.CoreWindowFlowDirection")
 @js.native
-object CoreWindowFlowDirection extends js.Object {
-  @js.native
-  sealed trait leftToRight extends CoreWindowFlowDirection
+object CoreWindowFlowDirection extends StObject {
   
   @js.native
-  sealed trait rightToLeft extends CoreWindowFlowDirection
+  sealed trait leftToRight
+    extends StObject
+       with CoreWindowFlowDirection
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CoreWindowFlowDirection with Double] = js.native
-  /* 0 */ @js.native
-  object leftToRight extends TopLevel[leftToRight with Double]
-  
-  /* 1 */ @js.native
-  object rightToLeft extends TopLevel[rightToLeft with Double]
-  
+  @js.native
+  sealed trait rightToLeft
+    extends StObject
+       with CoreWindowFlowDirection
 }
-

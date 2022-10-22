@@ -1,63 +1,51 @@
 package typingsJapgolly.hlsJs.mod
 
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoaderContext extends js.Object {
-  /**
-    * fragment object
-    */
-  var frag: Fragment
-  /**
-    * level id
-    */
-  var level: Double
-  /**
-    * true if onProgress should report partial chunk of loaded content
-    */
+trait LoaderContext extends StObject {
+  
+  var headers: js.UndefOr[Record[String, String]] = js.undefined
+  
   var progressData: js.UndefOr[Boolean] = js.undefined
-  /**
-    * end byte range offset
-    */
+  
   var rangeEnd: js.UndefOr[Double] = js.undefined
-  /**
-    * start byte range offset
-    */
+  
   var rangeStart: js.UndefOr[Double] = js.undefined
-  /**
-    * loader response type (arraybuffer or default response type for playlist)
-    */
+  
   var responseType: String
-  /**
-    * request type
-    * - level, manifest
-    */
-  var `type`: String
-  /**
-    * target URL
-    */
+  
   var url: String
 }
-
 object LoaderContext {
-  @scala.inline
-  def apply(
-    frag: Fragment,
-    level: Double,
-    responseType: String,
-    `type`: String,
-    url: String,
-    progressData: js.UndefOr[Boolean] = js.undefined,
-    rangeEnd: Int | Double = null,
-    rangeStart: Int | Double = null
-  ): LoaderContext = {
-    val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressData)) __obj.updateDynamic("progressData")(progressData.asInstanceOf[js.Any])
-    if (rangeEnd != null) __obj.updateDynamic("rangeEnd")(rangeEnd.asInstanceOf[js.Any])
-    if (rangeStart != null) __obj.updateDynamic("rangeStart")(rangeStart.asInstanceOf[js.Any])
+  
+  inline def apply(responseType: String, url: String): LoaderContext = {
+    val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderContext]
   }
+  
+  extension [Self <: LoaderContext](x: Self) {
+    
+    inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setProgressData(value: Boolean): Self = StObject.set(x, "progressData", value.asInstanceOf[js.Any])
+    
+    inline def setProgressDataUndefined: Self = StObject.set(x, "progressData", js.undefined)
+    
+    inline def setRangeEnd(value: Double): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
+    
+    inline def setRangeEndUndefined: Self = StObject.set(x, "rangeEnd", js.undefined)
+    
+    inline def setRangeStart(value: Double): Self = StObject.set(x, "rangeStart", value.asInstanceOf[js.Any])
+    
+    inline def setRangeStartUndefined: Self = StObject.set(x, "rangeStart", js.undefined)
+    
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.coinbaseCommerceNode.mod
 
-import typingsJapgolly.coinbaseCommerceNode.AnonBlock
-import typingsJapgolly.coinbaseCommerceNode.AnonContext
-import typingsJapgolly.coinbaseCommerceNode.PartialRecordCryptoNamest
+import typingsJapgolly.coinbaseCommerceNode.anon.Block
+import typingsJapgolly.coinbaseCommerceNode.anon.Context
+import typingsJapgolly.coinbaseCommerceNode.anon.PartialRecordCryptoNamest
 import typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.charge
 import typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonconfirmed
 import typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColoncreated
@@ -12,13 +12,12 @@ import typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeCo
 import typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.chargeColonresolved
 import typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.checkout
 import typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("coinbase-commerce-node", "resources")
-@js.native
-object resources extends js.Object {
+object resources {
+  
   /**
     * Merge CreateACharge with Charge class.
     */
@@ -27,83 +26,136 @@ object resources extends js.Object {
     *
     * @link https://github.com/coinbase/coinbase-commerce-node#charges
     */
+  @JSImport("coinbase-commerce-node", "resources.Charge")
   @js.native
-  class Charge ()
+  open class Charge protected ()
     extends Resource[CreateCharge]
        with ChargeResource {
+    /**
+      * Charge constructor.
+      */
+    def this(data: CreateCharge) = this()
+    
     /**
       * Set of addresses associated with the charge.
       */
     /* CompleteClass */
-    override var addresses: PartialRecordCryptoNamest = js.native
+    var addresses: PartialRecordCryptoNamest = js.native
+    
     /**
       * User fiendly primary key.
       */
     /* CompleteClass */
-    override var code: String = js.native
+    var code: String = js.native
+    
     /**
       * Charge creation time.
       */
     /* CompleteClass */
-    override var created_at: Timestamp = js.native
+    var created_at: Timestamp = js.native
+    
     /**
       * More detailed description of the charge.
       * 200 characters or less.
       */
     /* CompleteClass */
-    override var description: String = js.native
+    var description: String = js.native
+    
     /**
       * Charge expiration time.
       */
     /* CompleteClass */
-    override var expires_at: Timestamp = js.native
+    var expires_at: Timestamp = js.native
+    
     /**
       * Hosted charge URL.
       */
     /* CompleteClass */
-    override var hosted_url: String = js.native
+    var hosted_url: String = js.native
+    
     /**
       * Charge UUID
       */
     /* CompleteClass */
-    override var id: String = js.native
+    var id: String = js.native
+    
     /**
       * Charge metadata provided by you, the developer.
       */
     /* CompleteClass */
     @JSName("metadata")
-    override var metadata_ChargeResource: KeyVal = js.native
+    var metadata_ChargeResource: KeyVal = js.native
+    
     /**
       * Charge name.
       * 100 characters or less.
       */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
+    
     /**
       * Array of charge payment objects.
       */
     /* CompleteClass */
-    override var payments: js.Array[AnonBlock] = js.native
+    var payments: js.Array[Block] = js.native
+    
     /**
       * Charge price information object.
       */
     /* CompleteClass */
-    override var pricing: Pricing = js.native
+    var pricing: Pricing = js.native
+    
     /**
       * Charge pricing type.
       */
     /* CompleteClass */
-    override var pricing_type: PricingType = js.native
+    var pricing_type: PricingType = js.native
+    
     /**
       * Resource name.
       */
     /* CompleteClass */
-    override var resource: charge = js.native
+    var resource: charge = js.native
+    
     /**
       * Array of status update objects.
       */
     /* CompleteClass */
-    override var timeline: js.Array[AnonContext] = js.native
+    var timeline: js.Array[Context] = js.native
+  }
+  object Charge {
+    
+    @JSImport("coinbase-commerce-node", "resources.Charge")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Fetch all charges.
+      */
+    /* static member */
+    inline def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Charge]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Charge]]]
+    inline def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Charge]]): js.Promise[js.Array[Charge]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Charge]]]
+    
+    /**
+      * Create a charge.
+      */
+    /* static member */
+    inline def create(chargeData: CreateCharge): js.Promise[Charge] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(chargeData.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Charge]]
+    inline def create(chargeData: CreateCharge, callback: Callback[Charge]): js.Promise[Charge] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(chargeData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Charge]]
+    
+    /**
+      * List charges.
+      */
+    /* static member */
+    inline def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Charge], Pagination]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[Charge], Pagination]]]
+    inline def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Charge]): js.Promise[js.Tuple2[js.Array[Charge], Pagination]] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[Charge], Pagination]]]
+    
+    /**
+      * Retrieve a charge by ID.
+      */
+    /* static member */
+    inline def retrieve(chargeId: String): js.Promise[Charge] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(chargeId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Charge]]
+    inline def retrieve(chargeId: String, callback: Callback[Charge]): js.Promise[Charge] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(chargeId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Charge]]
   }
   
   /**
@@ -114,37 +166,95 @@ object resources extends js.Object {
     *
     * @link https://github.com/coinbase/coinbase-commerce-node#checkouts
     */
+  @JSImport("coinbase-commerce-node", "resources.Checkout")
   @js.native
-  class Checkout ()
+  open class Checkout protected ()
     extends Resource[CreateCheckout]
        with CheckoutResource {
+    /**
+      * Charge constructor.
+      */
+    def this(data: CreateCheckout) = this()
+    
     /**
       * More detailed description.
       * 200 characters or less.
       */
     /* CompleteClass */
-    override var description: String = js.native
+    var description: String = js.native
+    
     /**
       * Checkout UUID.
       */
     /* CompleteClass */
-    override var id: String = js.native
+    var id: String = js.native
+    
     /**
       * Checkout name.
       * 100 characters or less.
       */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
+    
     /**
       * Checkout pricing type.
       */
     /* CompleteClass */
-    override var pricing_type: PricingType = js.native
+    var pricing_type: PricingType = js.native
+    
     /**
       * Resource name.
       */
     /* CompleteClass */
-    override var resource: checkout = js.native
+    var resource: checkout = js.native
+  }
+  object Checkout {
+    
+    @JSImport("coinbase-commerce-node", "resources.Checkout")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Fetch all checkouts.
+      */
+    /* static member */
+    inline def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Checkout]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Checkout]]]
+    inline def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Checkout]]): js.Promise[js.Array[Checkout]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Checkout]]]
+    
+    /**
+      * Create a checkout.
+      */
+    /* static member */
+    inline def create(checkoutData: CreateCheckout): js.Promise[Checkout] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(checkoutData.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Checkout]]
+    inline def create(checkoutData: CreateCheckout, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(checkoutData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
+    
+    /**
+      * Delete a checkout by ID.
+      */
+    /* static member */
+    inline def deleteById(checkoutId: String): js.Promise[Checkout] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteById")(checkoutId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Checkout]]
+    inline def deleteById(checkoutId: String, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteById")(checkoutId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
+    
+    /**
+      * List checkouts.
+      */
+    /* static member */
+    inline def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Checkout], Pagination]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[Checkout], Pagination]]]
+    inline def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Checkout]): js.Promise[js.Tuple2[js.Array[Checkout], Pagination]] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[Checkout], Pagination]]]
+    
+    /**
+      * Retrieve a checkout by ID.
+      */
+    /* static member */
+    inline def retrieve(checkoutId: String): js.Promise[Checkout] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(checkoutId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Checkout]]
+    inline def retrieve(checkoutId: String, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(checkoutId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
+    
+    /**
+      * Update a checkout by ID.
+      */
+    /* static member */
+    inline def updateById(checkoutId: String, update: UpdateCheckout): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateById")(checkoutId.asInstanceOf[js.Any], update.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
+    inline def updateById(checkoutId: String, update: UpdateCheckout, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateById")(checkoutId.asInstanceOf[js.Any], update.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
   }
   
   /**
@@ -155,41 +265,79 @@ object resources extends js.Object {
     *
     * @link https://github.com/coinbase/coinbase-commerce-node#events
     */
+  @JSImport("coinbase-commerce-node", "resources.Event")
   @js.native
-  class Event ()
+  open class Event protected ()
     extends Resource[EventResource[ChargeResource | CheckoutResource]]
        with EventResource[ChargeResource | CheckoutResource] {
+    /**
+      * Charge constructor.
+      */
+    def this(data: EventResource[ChargeResource | CheckoutResource]) = this()
+    
     /**
       * API version of the `data` payload.
       */
     /* CompleteClass */
-    override var api_version: String = js.native
+    var api_version: String = js.native
+    
     /**
       * Event creation time.
       */
     /* CompleteClass */
-    override var created_at: Timestamp = js.native
+    var created_at: Timestamp = js.native
+    
     /**
       * Event Payload.
       * Resource of the associated object at the time of the event.
       */
     /* CompleteClass */
-    override var data: ChargeResource | CheckoutResource = js.native
+    var data: ChargeResource | CheckoutResource = js.native
+    
     /**
       * Event UUID.
       */
     /* CompleteClass */
-    override var id: String = js.native
+    var id: String = js.native
+    
     /**
       * Resource name.
       */
     /* CompleteClass */
-    override var resource: event = js.native
+    var resource: event = js.native
+    
     /**
       * Event type.
       */
     /* CompleteClass */
-    override var `type`: chargeColoncreated | chargeColonconfirmed | chargeColonfailed | chargeColondelayed | chargeColonpending | chargeColonresolved = js.native
+    var `type`: chargeColoncreated | chargeColonconfirmed | chargeColonfailed | chargeColondelayed | chargeColonpending | chargeColonresolved = js.native
+  }
+  object Event {
+    
+    @JSImport("coinbase-commerce-node", "resources.Event")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Fetch all events.
+      */
+    /* static member */
+    inline def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Event]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Event]]]
+    inline def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Event]]): js.Promise[js.Array[Event]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Event]]]
+    
+    /**
+      * List events.
+      */
+    /* static member */
+    inline def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Event], Pagination]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[Event], Pagination]]]
+    inline def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Event]): js.Promise[js.Tuple2[js.Array[Event], Pagination]] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[Event], Pagination]]]
+    
+    /**
+      * Retrieve a event by ID.
+      */
+    /* static member */
+    inline def retrieve(eventId: String): js.Promise[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(eventId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Event]]
+    inline def retrieve(eventId: String, callback: Callback[Event]): js.Promise[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(eventId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Event]]
   }
   
   /**
@@ -198,114 +346,37 @@ object resources extends js.Object {
     *
     * @link https://github.com/coinbase/coinbase-commerce-node#documentation
     */
+  /* note: abstract class */ @JSImport("coinbase-commerce-node", "resources.Resource")
   @js.native
-  abstract class Resource[Request] protected () extends js.Object {
+  open class Resource[Request] protected () extends StObject {
     /**
       * Charge constructor.
       */
     def this(data: Request) = this()
+    
     /**
       * Delete the current resource.
       */
     def delete(): js.Promise[this.type] = js.native
     def delete(callback: Callback[this.type]): js.Promise[this.type] = js.native
+    
     /**
       * Save new resource to Coinbase Commerce.
       */
     def insert(): js.Promise[this.type] = js.native
     def insert(callback: Callback[this.type]): js.Promise[this.type] = js.native
+    
     /**
       * Save the current resource.
       * Creates a new resource if it doesn't already exist in Coinbase Commerce's systems.
       */
     def save(): js.Promise[this.type] = js.native
     def save(callback: Callback[this.type]): js.Promise[this.type] = js.native
+    
     /**
       * Update the current resource.
       */
     def update(): js.Promise[this.type] = js.native
     def update(callback: Callback[this.type]): js.Promise[this.type] = js.native
   }
-  
-  /* static members */
-  @js.native
-  object Charge extends js.Object {
-    /**
-      * Fetch all charges.
-      */
-    def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Charge]] = js.native
-    def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Charge]]): js.Promise[js.Array[Charge]] = js.native
-    /**
-      * Create a charge.
-      */
-    def create(chargeData: CreateCharge): js.Promise[Charge] = js.native
-    def create(chargeData: CreateCharge, callback: Callback[Charge]): js.Promise[Charge] = js.native
-    /**
-      * List charges.
-      */
-    def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Charge], Pagination]] = js.native
-    def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Charge]): js.Promise[js.Tuple2[js.Array[Charge], Pagination]] = js.native
-    /**
-      * Retrieve a charge by ID.
-      */
-    def retrieve(chargeId: String): js.Promise[Charge] = js.native
-    def retrieve(chargeId: String, callback: Callback[Charge]): js.Promise[Charge] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Checkout extends js.Object {
-    /**
-      * Fetch all checkouts.
-      */
-    def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Checkout]] = js.native
-    def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Checkout]]): js.Promise[js.Array[Checkout]] = js.native
-    /**
-      * Create a checkout.
-      */
-    def create(checkoutData: CreateCheckout): js.Promise[Checkout] = js.native
-    def create(checkoutData: CreateCheckout, callback: Callback[Checkout]): js.Promise[Checkout] = js.native
-    /**
-      * Delete a checkout by ID.
-      */
-    def deleteById(checkoutId: String): js.Promise[Checkout] = js.native
-    def deleteById(checkoutId: String, callback: Callback[Checkout]): js.Promise[Checkout] = js.native
-    /**
-      * List checkouts.
-      */
-    def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Checkout], Pagination]] = js.native
-    def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Checkout]): js.Promise[js.Tuple2[js.Array[Checkout], Pagination]] = js.native
-    /**
-      * Retrieve a checkout by ID.
-      */
-    def retrieve(checkoutId: String): js.Promise[Checkout] = js.native
-    def retrieve(checkoutId: String, callback: Callback[Checkout]): js.Promise[Checkout] = js.native
-    /**
-      * Update a checkout by ID.
-      */
-    def updateById(checkoutId: String, update: UpdateCheckout): js.Promise[Checkout] = js.native
-    def updateById(checkoutId: String, update: UpdateCheckout, callback: Callback[Checkout]): js.Promise[Checkout] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Event extends js.Object {
-    /**
-      * Fetch all events.
-      */
-    def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Event]] = js.native
-    def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Event]]): js.Promise[js.Array[Event]] = js.native
-    /**
-      * List events.
-      */
-    def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Event], Pagination]] = js.native
-    def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Event]): js.Promise[js.Tuple2[js.Array[Event], Pagination]] = js.native
-    /**
-      * Retrieve a event by ID.
-      */
-    def retrieve(eventId: String): js.Promise[Event] = js.native
-    def retrieve(eventId: String, callback: Callback[Event]): js.Promise[Event] = js.native
-  }
-  
 }
-

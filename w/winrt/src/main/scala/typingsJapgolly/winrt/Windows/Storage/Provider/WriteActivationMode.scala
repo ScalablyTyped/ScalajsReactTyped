@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Storage.Provider
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WriteActivationMode extends js.Object
-
+sealed trait WriteActivationMode extends StObject
 @JSGlobal("Windows.Storage.Provider.WriteActivationMode")
 @js.native
-object WriteActivationMode extends js.Object {
-  @js.native
-  sealed trait afterWrite extends WriteActivationMode
+object WriteActivationMode extends StObject {
   
   @js.native
-  sealed trait notNeeded extends WriteActivationMode
+  sealed trait afterWrite
+    extends StObject
+       with WriteActivationMode
   
   @js.native
-  sealed trait readOnly extends WriteActivationMode
+  sealed trait notNeeded
+    extends StObject
+       with WriteActivationMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WriteActivationMode with Double] = js.native
-  /* 2 */ @js.native
-  object afterWrite extends TopLevel[afterWrite with Double]
-  
-  /* 1 */ @js.native
-  object notNeeded extends TopLevel[notNeeded with Double]
-  
-  /* 0 */ @js.native
-  object readOnly extends TopLevel[readOnly with Double]
-  
+  @js.native
+  sealed trait readOnly
+    extends StObject
+       with WriteActivationMode
 }
-

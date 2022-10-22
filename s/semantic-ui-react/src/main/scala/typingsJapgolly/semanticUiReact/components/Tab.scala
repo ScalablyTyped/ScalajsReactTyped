@@ -1,62 +1,61 @@
 package typingsJapgolly.semanticUiReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLDivElement
-import typingsJapgolly.semanticUiReact.AnonMenuItem
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.semanticUiReact.distCommonjsModulesTabTabMod.TabProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesTabTabPaneMod.TabPaneProps
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.left
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.right
-import typingsJapgolly.semanticUiReact.tabMod.default
-import typingsJapgolly.semanticUiReact.tabTabMod.TabProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tab {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    activeIndex: Double | String = null,
-    as: js.Any = null,
-    defaultActiveIndex: Double | String = null,
-    grid: js.Any = null,
-    menu: js.Any = null,
-    menuPosition: left | right = null,
-    onTabChange: (/* event */ ReactMouseEventFrom[HTMLDivElement], /* data */ TabProps) => Callback = null,
-    panes: js.Array[AnonMenuItem] = null,
-    renderActiveOnly: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TabProps, default, Unit, TabProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (defaultActiveIndex != null) __obj.updateDynamic("defaultActiveIndex")(defaultActiveIndex.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
-    if (menuPosition != null) __obj.updateDynamic("menuPosition")(menuPosition.asInstanceOf[js.Any])
-    if (onTabChange != null) __obj.updateDynamic("onTabChange")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement], t1: /* data */ typingsJapgolly.semanticUiReact.tabTabMod.TabProps) => onTabChange(t0, t1).runNow()))
-    if (panes != null) __obj.updateDynamic("panes")(panes.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderActiveOnly)) __obj.updateDynamic("renderActiveOnly")(renderActiveOnly.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.tabTabMod.TabProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.tabMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.tabTabMod.TabProps])(children: _*)
+  object Pane {
+    
+    @JSImport("semantic-ui-react", "Tab.Pane")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Pane.type): SharedBuilder_TabPaneProps33467167 = new SharedBuilder_TabPaneProps33467167(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: TabPaneProps): SharedBuilder_TabPaneProps33467167 = new SharedBuilder_TabPaneProps33467167(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/modules/Tab", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("semantic-ui-react", "Tab")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def activeIndex(value: Double | String): this.type = set("activeIndex", value.asInstanceOf[js.Any])
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def defaultActiveIndex(value: Double | String): this.type = set("defaultActiveIndex", value.asInstanceOf[js.Any])
+    
+    inline def grid(value: Any): this.type = set("grid", value.asInstanceOf[js.Any])
+    
+    inline def menu(value: Any): this.type = set("menu", value.asInstanceOf[js.Any])
+    
+    inline def menuPosition(value: left | right): this.type = set("menuPosition", value.asInstanceOf[js.Any])
+    
+    inline def onTabChange(value: (/* event */ ReactMouseEventFrom[HTMLDivElement], /* data */ TabProps) => Callback): this.type = set("onTabChange", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLDivElement], t1: /* data */ TabProps) => (value(t0, t1)).runNow()))
+    
+    inline def panes(value: js.Array[typingsJapgolly.semanticUiReact.anon.MenuItem]): this.type = set("panes", value.asInstanceOf[js.Any])
+    
+    inline def panesVarargs(value: typingsJapgolly.semanticUiReact.anon.MenuItem*): this.type = set("panes", js.Array(value*))
+    
+    inline def renderActiveOnly(value: Boolean): this.type = set("renderActiveOnly", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Tab.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TabProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

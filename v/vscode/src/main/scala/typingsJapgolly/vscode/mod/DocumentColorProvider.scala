@@ -1,43 +1,47 @@
 package typingsJapgolly.vscode.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.vscode.AnonDocument
+import typingsJapgolly.vscode.anon.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentColorProvider extends js.Object {
+trait DocumentColorProvider extends StObject {
+  
   /**
-  		 * Provide [representations](#ColorPresentation) for a color.
-  		 *
-  		 * @param color The color to show and insert.
-  		 * @param context A context object with additional information
-  		 * @param token A cancellation token.
-  		 * @return An array of color presentations or a thenable that resolves to such. The lack of a result
-  		 * can be signaled by returning `undefined`, `null`, or an empty array.
-  		 */
-  def provideColorPresentations(color: Color, context: AnonDocument, token: CancellationToken): ProviderResult[js.Array[ColorPresentation]]
+    * Provide {@link ColorPresentation representations} for a color.
+    *
+    * @param color The color to show and insert.
+    * @param context A context object with additional information
+    * @param token A cancellation token.
+    * @return An array of color presentations or a thenable that resolves to such. The lack of a result
+    * can be signaled by returning `undefined`, `null`, or an empty array.
+    */
+  def provideColorPresentations(color: Color, context: Document, token: CancellationToken): ProviderResult[js.Array[ColorPresentation]]
+  
   /**
-  		 * Provide colors for the given document.
-  		 *
-  		 * @param document The document in which the command was invoked.
-  		 * @param token A cancellation token.
-  		 * @return An array of [color information](#ColorInformation) or a thenable that resolves to such. The lack of a result
-  		 * can be signaled by returning `undefined`, `null`, or an empty array.
-  		 */
+    * Provide colors for the given document.
+    *
+    * @param document The document in which the command was invoked.
+    * @param token A cancellation token.
+    * @return An array of {@link ColorInformation color information} or a thenable that resolves to such. The lack of a result
+    * can be signaled by returning `undefined`, `null`, or an empty array.
+    */
   def provideDocumentColors(document: TextDocument, token: CancellationToken): ProviderResult[js.Array[ColorInformation]]
 }
-
 object DocumentColorProvider {
-  @scala.inline
-  def apply(
-    provideColorPresentations: (Color, AnonDocument, CancellationToken) => CallbackTo[ProviderResult[js.Array[ColorPresentation]]],
-    provideDocumentColors: (TextDocument, CancellationToken) => CallbackTo[ProviderResult[js.Array[ColorInformation]]]
+  
+  inline def apply(
+    provideColorPresentations: (Color, Document, CancellationToken) => ProviderResult[js.Array[ColorPresentation]],
+    provideDocumentColors: (TextDocument, CancellationToken) => ProviderResult[js.Array[ColorInformation]]
   ): DocumentColorProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideColorPresentations")(js.Any.fromFunction3((t0: typingsJapgolly.vscode.mod.Color, t1: typingsJapgolly.vscode.AnonDocument, t2: typingsJapgolly.vscode.mod.CancellationToken) => provideColorPresentations(t0, t1, t2).runNow()))
-    __obj.updateDynamic("provideDocumentColors")(js.Any.fromFunction2((t0: typingsJapgolly.vscode.mod.TextDocument, t1: typingsJapgolly.vscode.mod.CancellationToken) => provideDocumentColors(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(provideColorPresentations = js.Any.fromFunction3(provideColorPresentations), provideDocumentColors = js.Any.fromFunction2(provideDocumentColors))
     __obj.asInstanceOf[DocumentColorProvider]
   }
+  
+  extension [Self <: DocumentColorProvider](x: Self) {
+    
+    inline def setProvideColorPresentations(value: (Color, Document, CancellationToken) => ProviderResult[js.Array[ColorPresentation]]): Self = StObject.set(x, "provideColorPresentations", js.Any.fromFunction3(value))
+    
+    inline def setProvideDocumentColors(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[ColorInformation]]): Self = StObject.set(x, "provideDocumentColors", js.Any.fromFunction2(value))
+  }
 }
-

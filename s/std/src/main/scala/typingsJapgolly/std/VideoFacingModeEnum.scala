@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.environment
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.right
   - typingsJapgolly.std.stdStrings.user
 */
-trait VideoFacingModeEnum extends js.Object
-
+trait VideoFacingModeEnum extends StObject
 object VideoFacingModeEnum {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def environment: typingsJapgolly.std.stdStrings.environment = this.cast("environment")
-  @scala.inline
-  def left: typingsJapgolly.std.stdStrings.left = this.cast("left")
-  @scala.inline
-  def right: typingsJapgolly.std.stdStrings.right = this.cast("right")
-  @scala.inline
-  def user: typingsJapgolly.std.stdStrings.user = this.cast("user")
+  
+  inline def environment: typingsJapgolly.std.stdStrings.environment = "environment".asInstanceOf[typingsJapgolly.std.stdStrings.environment]
+  
+  inline def left: typingsJapgolly.std.stdStrings.left = "left".asInstanceOf[typingsJapgolly.std.stdStrings.left]
+  
+  inline def right: typingsJapgolly.std.stdStrings.right = "right".asInstanceOf[typingsJapgolly.std.stdStrings.right]
+  
+  inline def user: typingsJapgolly.std.stdStrings.user = "user".asInstanceOf[typingsJapgolly.std.stdStrings.user]
 }
-

@@ -1,21 +1,34 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnenotePagePreview extends js.Object {
-  var links: js.UndefOr[OnenotePagePreviewLinks] = js.undefined
-  var previewText: js.UndefOr[String] = js.undefined
+trait OnenotePagePreview extends StObject {
+  
+  var links: js.UndefOr[NullableOption[OnenotePagePreviewLinks]] = js.undefined
+  
+  var previewText: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object OnenotePagePreview {
-  @scala.inline
-  def apply(links: OnenotePagePreviewLinks = null, previewText: String = null): OnenotePagePreview = {
+  
+  inline def apply(): OnenotePagePreview = {
     val __obj = js.Dynamic.literal()
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (previewText != null) __obj.updateDynamic("previewText")(previewText.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnenotePagePreview]
   }
+  
+  extension [Self <: OnenotePagePreview](x: Self) {
+    
+    inline def setLinks(value: NullableOption[OnenotePagePreviewLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    
+    inline def setLinksNull: Self = StObject.set(x, "links", null)
+    
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    
+    inline def setPreviewText(value: NullableOption[String]): Self = StObject.set(x, "previewText", value.asInstanceOf[js.Any])
+    
+    inline def setPreviewTextNull: Self = StObject.set(x, "previewText", null)
+    
+    inline def setPreviewTextUndefined: Self = StObject.set(x, "previewText", js.undefined)
+  }
 }
-

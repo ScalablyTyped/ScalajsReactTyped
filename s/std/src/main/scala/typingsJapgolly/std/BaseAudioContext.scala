@@ -1,97 +1,164 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typingsJapgolly.std.stdStrings.statechange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseAudioContext extends EventTarget {
-  val audioWorklet: AudioWorklet = js.native
-  val currentTime: Double = js.native
-  val destination: org.scalajs.dom.raw.AudioDestinationNode = js.native
-  val listener: org.scalajs.dom.raw.AudioListener = js.native
-  var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  val sampleRate: Double = js.native
-  val state: AudioContextState = js.native
-  @JSName("addEventListener")
-  def addEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+trait BaseAudioContext
+  extends StObject
+     with EventTarget {
+  
+  /* standard dom */
   @JSName("addEventListener")
   def addEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
-  def createAnalyser(): org.scalajs.dom.raw.AnalyserNode = js.native
-  def createBiquadFilter(): org.scalajs.dom.raw.BiquadFilterNode = js.native
-  def createBuffer(numberOfChannels: Double, length: Double, sampleRate: Double): org.scalajs.dom.raw.AudioBuffer = js.native
-  def createBufferSource(): org.scalajs.dom.raw.AudioBufferSourceNode = js.native
-  def createChannelMerger(): org.scalajs.dom.raw.ChannelMergerNode = js.native
-  def createChannelMerger(numberOfInputs: Double): org.scalajs.dom.raw.ChannelMergerNode = js.native
-  def createChannelSplitter(): org.scalajs.dom.raw.ChannelSplitterNode = js.native
-  def createChannelSplitter(numberOfOutputs: Double): org.scalajs.dom.raw.ChannelSplitterNode = js.native
+  
+  /** Available only in secure contexts. */
+  /* standard dom */
+  val audioWorklet: AudioWorklet = js.native
+  
+  /* standard dom */
+  def createAnalyser(): org.scalajs.dom.AnalyserNode = js.native
+  
+  /* standard dom */
+  def createBiquadFilter(): org.scalajs.dom.BiquadFilterNode = js.native
+  
+  /* standard dom */
+  def createBuffer(numberOfChannels: Double, length: Double, sampleRate: Double): org.scalajs.dom.AudioBuffer = js.native
+  
+  /* standard dom */
+  def createBufferSource(): org.scalajs.dom.AudioBufferSourceNode = js.native
+  
+  /* standard dom */
+  def createChannelMerger(): org.scalajs.dom.ChannelMergerNode = js.native
+  def createChannelMerger(numberOfInputs: Double): org.scalajs.dom.ChannelMergerNode = js.native
+  
+  /* standard dom */
+  def createChannelSplitter(): org.scalajs.dom.ChannelSplitterNode = js.native
+  def createChannelSplitter(numberOfOutputs: Double): org.scalajs.dom.ChannelSplitterNode = js.native
+  
+  /* standard dom */
   def createConstantSource(): ConstantSourceNode = js.native
-  def createConvolver(): org.scalajs.dom.raw.ConvolverNode = js.native
-  def createDelay(): org.scalajs.dom.raw.DelayNode = js.native
-  def createDelay(maxDelayTime: Double): org.scalajs.dom.raw.DelayNode = js.native
-  def createDynamicsCompressor(): org.scalajs.dom.raw.DynamicsCompressorNode = js.native
-  def createGain(): org.scalajs.dom.raw.GainNode = js.native
+  
+  /* standard dom */
+  def createConvolver(): org.scalajs.dom.ConvolverNode = js.native
+  
+  /* standard dom */
+  def createDelay(): org.scalajs.dom.DelayNode = js.native
+  def createDelay(maxDelayTime: Double): org.scalajs.dom.DelayNode = js.native
+  
+  /* standard dom */
+  def createDynamicsCompressor(): org.scalajs.dom.DynamicsCompressorNode = js.native
+  
+  /* standard dom */
+  def createGain(): org.scalajs.dom.GainNode = js.native
+  
+  /* standard dom */
   def createIIRFilter(feedforward: js.Array[Double], feedback: js.Array[Double]): IIRFilterNode = js.native
-  def createIIRFilter(feedforward: Iterable[Double], feedback: Iterable[Double]): IIRFilterNode = js.native
-  def createOscillator(): org.scalajs.dom.raw.OscillatorNode = js.native
-  def createPanner(): org.scalajs.dom.raw.PannerNode = js.native
-  def createPeriodicWave(real: js.Array[Double], imag: js.Array[Double]): org.scalajs.dom.raw.PeriodicWave = js.native
-  def createPeriodicWave(real: js.Array[Double], imag: js.Array[Double], constraints: PeriodicWaveConstraints): org.scalajs.dom.raw.PeriodicWave = js.native
-  def createPeriodicWave(real: js.Array[Double], imag: Float32Array): org.scalajs.dom.raw.PeriodicWave = js.native
-  def createPeriodicWave(real: js.Array[Double], imag: Float32Array, constraints: PeriodicWaveConstraints): org.scalajs.dom.raw.PeriodicWave = js.native
-  def createPeriodicWave(real: Float32Array, imag: js.Array[Double]): org.scalajs.dom.raw.PeriodicWave = js.native
-  def createPeriodicWave(real: Float32Array, imag: js.Array[Double], constraints: PeriodicWaveConstraints): org.scalajs.dom.raw.PeriodicWave = js.native
-  def createPeriodicWave(real: Float32Array, imag: Float32Array): org.scalajs.dom.raw.PeriodicWave = js.native
-  def createPeriodicWave(real: Float32Array, imag: Float32Array, constraints: PeriodicWaveConstraints): org.scalajs.dom.raw.PeriodicWave = js.native
-  def createPeriodicWave(real: Iterable[Double], imag: Iterable[Double]): org.scalajs.dom.raw.PeriodicWave = js.native
-  def createPeriodicWave(real: Iterable[Double], imag: Iterable[Double], constraints: PeriodicWaveConstraints): org.scalajs.dom.raw.PeriodicWave = js.native
+  /* standard dom.iterable */
+  def createIIRFilter(feedforward: js.Iterable[Double], feedback: js.Iterable[Double]): IIRFilterNode = js.native
+  
+  /* standard dom */
+  def createOscillator(): org.scalajs.dom.OscillatorNode = js.native
+  
+  /* standard dom */
+  def createPanner(): org.scalajs.dom.PannerNode = js.native
+  
+  /* standard dom */
+  def createPeriodicWave(real: js.Array[Double], imag: js.Array[Double]): org.scalajs.dom.PeriodicWave = js.native
+  def createPeriodicWave(real: js.Array[Double], imag: js.Array[Double], constraints: PeriodicWaveConstraints): org.scalajs.dom.PeriodicWave = js.native
+  def createPeriodicWave(real: js.Array[Double], imag: js.typedarray.Float32Array): org.scalajs.dom.PeriodicWave = js.native
+  def createPeriodicWave(real: js.Array[Double], imag: js.typedarray.Float32Array, constraints: PeriodicWaveConstraints): org.scalajs.dom.PeriodicWave = js.native
+  /* standard dom.iterable */
+  def createPeriodicWave(real: js.Iterable[Double], imag: js.Iterable[Double]): org.scalajs.dom.PeriodicWave = js.native
+  def createPeriodicWave(real: js.Iterable[Double], imag: js.Iterable[Double], constraints: PeriodicWaveConstraints): org.scalajs.dom.PeriodicWave = js.native
+  def createPeriodicWave(real: js.typedarray.Float32Array, imag: js.Array[Double]): org.scalajs.dom.PeriodicWave = js.native
+  def createPeriodicWave(real: js.typedarray.Float32Array, imag: js.Array[Double], constraints: PeriodicWaveConstraints): org.scalajs.dom.PeriodicWave = js.native
+  def createPeriodicWave(real: js.typedarray.Float32Array, imag: js.typedarray.Float32Array): org.scalajs.dom.PeriodicWave = js.native
+  def createPeriodicWave(
+    real: js.typedarray.Float32Array,
+    imag: js.typedarray.Float32Array,
+    constraints: PeriodicWaveConstraints
+  ): org.scalajs.dom.PeriodicWave = js.native
+  
+  /** @deprecated */
+  /* standard dom */
   def createScriptProcessor(): ScriptProcessorNode = js.native
   def createScriptProcessor(bufferSize: Double): ScriptProcessorNode = js.native
   def createScriptProcessor(bufferSize: Double, numberOfInputChannels: Double): ScriptProcessorNode = js.native
   def createScriptProcessor(bufferSize: Double, numberOfInputChannels: Double, numberOfOutputChannels: Double): ScriptProcessorNode = js.native
-  def createStereoPanner(): org.scalajs.dom.raw.StereoPannerNode = js.native
-  def createWaveShaper(): org.scalajs.dom.raw.WaveShaperNode = js.native
-  def decodeAudioData(audioData: scala.scalajs.js.typedarray.ArrayBuffer): js.Promise[org.scalajs.dom.raw.AudioBuffer] = js.native
+  def createScriptProcessor(bufferSize: Double, numberOfInputChannels: Unit, numberOfOutputChannels: Double): ScriptProcessorNode = js.native
+  def createScriptProcessor(bufferSize: Unit, numberOfInputChannels: Double): ScriptProcessorNode = js.native
+  def createScriptProcessor(bufferSize: Unit, numberOfInputChannels: Double, numberOfOutputChannels: Double): ScriptProcessorNode = js.native
+  def createScriptProcessor(bufferSize: Unit, numberOfInputChannels: Unit, numberOfOutputChannels: Double): ScriptProcessorNode = js.native
+  
+  /* standard dom */
+  def createStereoPanner(): org.scalajs.dom.StereoPannerNode = js.native
+  
+  /* standard dom */
+  def createWaveShaper(): org.scalajs.dom.WaveShaperNode = js.native
+  
+  /* standard dom */
+  val currentTime: Double = js.native
+  
+  /* standard dom */
+  def decodeAudioData(audioData: js.typedarray.ArrayBuffer): js.Promise[org.scalajs.dom.AudioBuffer] = js.native
+  def decodeAudioData(audioData: js.typedarray.ArrayBuffer, successCallback: Null, errorCallback: DecodeErrorCallback): js.Promise[org.scalajs.dom.AudioBuffer] = js.native
+  def decodeAudioData(audioData: js.typedarray.ArrayBuffer, successCallback: Unit, errorCallback: DecodeErrorCallback): js.Promise[org.scalajs.dom.AudioBuffer] = js.native
+  def decodeAudioData(audioData: js.typedarray.ArrayBuffer, successCallback: DecodeSuccessCallback): js.Promise[org.scalajs.dom.AudioBuffer] = js.native
   def decodeAudioData(
-    audioData: scala.scalajs.js.typedarray.ArrayBuffer,
-    successCallback: Null,
-    errorCallback: DecodeErrorCallback
-  ): js.Promise[org.scalajs.dom.raw.AudioBuffer] = js.native
-  def decodeAudioData(audioData: scala.scalajs.js.typedarray.ArrayBuffer, successCallback: DecodeSuccessCallback): js.Promise[org.scalajs.dom.raw.AudioBuffer] = js.native
-  def decodeAudioData(
-    audioData: scala.scalajs.js.typedarray.ArrayBuffer,
+    audioData: js.typedarray.ArrayBuffer,
     successCallback: DecodeSuccessCallback,
     errorCallback: DecodeErrorCallback
-  ): js.Promise[org.scalajs.dom.raw.AudioBuffer] = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  ): js.Promise[org.scalajs.dom.AudioBuffer] = js.native
+  
+  /* standard dom */
+  val destination: org.scalajs.dom.AudioDestinationNode = js.native
+  
+  /* standard dom */
+  val listener: org.scalajs.dom.AudioListener = js.native
+  
+  /* standard dom */
+  var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]) | Null = js.native
+  
+  /* standard dom */
   @JSName("removeEventListener")
   def removeEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_statechange(
-    `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: EventListenerOptions
-  ): Unit = js.native
+  
+  /* standard dom */
+  val sampleRate: Double = js.native
+  
+  /* standard dom */
+  val state: AudioContextState = js.native
 }
-
-@JSGlobal("BaseAudioContext")
-@js.native
-object BaseAudioContext extends Instantiable0[BaseAudioContext]
-

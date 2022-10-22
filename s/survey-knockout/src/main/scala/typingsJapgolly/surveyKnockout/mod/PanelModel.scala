@@ -1,81 +1,111 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.surveyKnockout.mod.IShortcutText because Already inherited
 - typingsJapgolly.surveyKnockout.mod.ISurveyElement because Already inherited
 - typingsJapgolly.surveyKnockout.mod.IConditionRunner because Already inherited
-- typingsJapgolly.surveyKnockout.mod.IElement because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name, parent, visible. Inlined renderWidth, width, rightIndent, startWithNewLine */ @JSImport("survey-knockout", "PanelModel")
+- typingsJapgolly.surveyKnockout.mod.IElement because var conflicts: containsErrors, isCollapsed, isExpanded, isPage, isPanel, isReadOnly, isVisible, maxWidth, minWidth, name, parent, renderWidth, rightIndent, shortcutText, skeletonComponentName, visible, width. Inlined startWithNewLine */ @JSImport("survey-knockout", "PanelModel")
 @js.native
-class PanelModel () extends PanelModelBase {
+open class PanelModel () extends PanelModelBase {
   def this(name: String) = this()
-  /**
-    * The left indent. Set this property to increase the panel left indent.
+  
+  /*
+    * The Panel toolbar gets adaptive if the property is set to true.
     */
-  var indent: Double = js.native
-  /**
+  def allowAdaptiveActions: Boolean = js.native
+  def allowAdaptiveActions_=(`val`: Boolean): Unit = js.native
+  
+  def cancelPreview(): Unit = js.native
+  
+  def clearOnDeletingContainer(): Unit = js.native
+  
+  def contentId: String = js.native
+  
+  var focusIn: Any = js.native
+  
+  def footerActions: Any = js.native
+  
+  var footerToolbarValue: Any = js.native
+  
+  def getContainerCss(): String = js.native
+  
+  /* protected */ def getCssError(cssClasses: Any): String = js.native
+  
+  def getFooterToolbar(): ActionContainer[Action] = js.native
+  
+  def hasEditButton: Boolean = js.native
+  
+  /*
     * The inner indent. Set this property to increase the panel content margin.
     */
-  var innerIndent: Double = js.native
-  var innerPaddingLeft: String = js.native
-  /**
-    * Returns true if the Panel is in the collapsed state
-    * @see state
-    * @see collapse
-    * @see isExpanded
+  def innerIndent: Double = js.native
+  def innerIndent_=(`val`: Double): Unit = js.native
+  
+  def innerPaddingLeft: String = js.native
+  def innerPaddingLeft_=(`val`: String): Unit = js.native
+  
+  @JSName("isPanel")
+  def isPanel_MPanelModel: Boolean = js.native
+  
+  def moveTo(container: IPanel): Boolean = js.native
+  def moveTo(container: IPanel, insertBefore: Any): Boolean = js.native
+  
+  /*
+    * The property returns the question number. If question is invisible then it returns empty string.
+    * If visibleIndex is 1, then no is 2, or 'B' if survey.questionStartIndex is 'A'.
     */
-  val isCollapsed: Boolean = js.native
-  /**
-    * Returns true if the Panel is in the expanded state
-    * @see state
-    * @see expand
-    * @see isCollapsed
-    */
-  val isExpanded: Boolean = js.native
-  var paddingLeft: String = js.native
-  var paddingRight: String = js.native
-  /**
+  @JSName("no")
+  def no_MPanelModel: String = js.native
+  
+  /*
     * Get/set the page where the panel is located.
     */
-  var page: IPage = js.native
-  var renderWidth: String = js.native
-  /**
-    * The right indent of the Panel.
+  def page: IPage = js.native
+  def page_=(`val`: IPage): Unit = js.native
+  
+  /*
+    * Gets or sets the first question index for elements inside the panel. The first question index is '1.' by default and it is taken from survey.questionStartIndex property.
+    * You may start it from '100' or from 'A', by setting '100' or 'A' to this property.
+    * You can set the start index to "(1)" or "# A)" or "a)" to render question number as (1), # A) and a) accordingly.
     */
-  var rightIndent: Double = js.native
-  /**
+  def questionStartIndex: String = js.native
+  def questionStartIndex_=(`val`: String): Unit = js.native
+  
+  /* protected */ def setNo(visibleIndex: Double): Unit = js.native
+  
+  /*
+    * Set showNumber to true to start showing the number for this panel.
+    */
+  def showNumber: Boolean = js.native
+  def showNumber_=(`val`: Boolean): Unit = js.native
+  
+  /*
+    * Gets or sets a value that specifies how the elements numbers inside panel are displayed.
+    * 
+    * The following options are available:
+    * 
+    * - `default` - display questions numbers as defined in parent panel or survey
+    * - `onpanel` - display questions numbers, start numbering from beginning of this page
+    * - `off` - turn off the numbering for questions titles
+    */
+  def showQuestionNumbers: String = js.native
+  def showQuestionNumbers_=(`val`: String): Unit = js.native
+  
+  /*
     * The Panel renders on the new line if the property is true. If the property is false, the panel tries to render on the same line/row with a previous question/panel.
     */
-  var startWithNewLine: Boolean = js.native
-  /**
-    * Set this property to "collapsed" to render only Panel title and expanded button and to "expanded" to render the collapsed button in the Panel caption
+  def startWithNewLine: Boolean = js.native
+  def startWithNewLine_=(`val`: Boolean): Unit = js.native
+  @JSName("startWithNewLine")
+  var startWithNewLine_FPanelModel: Boolean = js.native
+  
+  /*
+    * Returns the visible index of the panel in the survey. Commonly it is -1 and it doesn't show.
+    * You have to set showNumber to true to show index/numbering for the Panel
     */
-  var state: String = js.native
-  /**
-    * The Panel width.
-    */
-  var width: String = js.native
-  def clearOnDeletingContainer(): Unit = js.native
-  /**
-    * Collapse the Panel
-    * @see state
-    */
-  def collapse(): Unit = js.native
-  /**
-    * Expand the Panel
-    * @see state
-    */
-  def expand(): Unit = js.native
-  /**
-    * Move panel to a new container Page/Panel. Add as a last element if insertBefore parameter is not used or inserted into the given index,
-    * if insert parameter is number, or before the given element, if the insertBefore parameter is a question or panel
-    * @param container Page or Panel to where a question is relocated.
-    * @param insertBefore Use it if you want to set the panel to a specific position. You may use a number (use 0 to insert int the beginning) or element, if you want to insert before this element.
-    */
-  def moveTo(container: IPanel): Boolean = js.native
-  def moveTo(container: IPanel, insertBefore: js.Any): Boolean = js.native
-  def stateChangedCallback(): Unit = js.native
+  def visibleIndex: Double = js.native
 }
-

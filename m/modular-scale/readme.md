@@ -10,10 +10,10 @@ Module for generating a modular scale.
 | ------------------ | :-------------: |
 | Full name          | modular-scale |
 | Keywords           | modular, scale, typography, design, css |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 28511 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1337.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/kristoferjoseph/modular-scale)

@@ -1,19 +1,24 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.AllJoyn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains status information that indicates why a Producer app was stopped. */
-@JSGlobal("Windows.Devices.AllJoyn.AllJoynProducerStoppedEventArgs")
-@js.native
-class AllJoynProducerStoppedEventArgs protected () extends js.Object {
-  /**
-    * Generates an object containing status information for the stopped Producer app.
-    * @param status An AllJoyn status code that indicates why the Producer was stopped.
-    */
-  def this(status: Double) = this()
+trait AllJoynProducerStoppedEventArgs extends StObject {
+  
   /** Returns an AllJoyn status code that indicates why the Producer was stopped. Common values are defined by AllJoynStatus . */
-  var status: Double = js.native
+  var status: Double
 }
-
+object AllJoynProducerStoppedEventArgs {
+  
+  inline def apply(status: Double): AllJoynProducerStoppedEventArgs = {
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AllJoynProducerStoppedEventArgs]
+  }
+  
+  extension [Self <: AllJoynProducerStoppedEventArgs](x: Self) {
+    
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+  }
+}

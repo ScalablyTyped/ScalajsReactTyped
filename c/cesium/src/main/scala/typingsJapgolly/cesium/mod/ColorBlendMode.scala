@@ -1,35 +1,33 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ColorBlendMode extends js.Object
-
+sealed trait ColorBlendMode extends StObject
 @JSImport("cesium", "ColorBlendMode")
 @js.native
-object ColorBlendMode extends js.Object {
-  @js.native
-  sealed trait HIGHLIGHT extends ColorBlendMode
-  
-  @js.native
-  sealed trait MIX extends ColorBlendMode
-  
-  @js.native
-  sealed trait REPLACE extends ColorBlendMode
+object ColorBlendMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ColorBlendMode with Double] = js.native
-  /* 0 */ @js.native
-  object HIGHLIGHT extends TopLevel[HIGHLIGHT with Double]
+  def apply(value: Double): js.UndefOr[ColorBlendMode & Double] = js.native
   
-  /* 2 */ @js.native
-  object MIX extends TopLevel[MIX with Double]
+  @js.native
+  sealed trait HIGHLIGHT
+    extends StObject
+       with ColorBlendMode
+  /* 0 */ val HIGHLIGHT: typingsJapgolly.cesium.mod.ColorBlendMode.HIGHLIGHT & Double = js.native
   
-  /* 1 */ @js.native
-  object REPLACE extends TopLevel[REPLACE with Double]
+  @js.native
+  sealed trait MIX
+    extends StObject
+       with ColorBlendMode
+  /* 2 */ val MIX: typingsJapgolly.cesium.mod.ColorBlendMode.MIX & Double = js.native
   
+  @js.native
+  sealed trait REPLACE
+    extends StObject
+       with ColorBlendMode
+  /* 1 */ val REPLACE: typingsJapgolly.cesium.mod.ColorBlendMode.REPLACE & Double = js.native
 }
-

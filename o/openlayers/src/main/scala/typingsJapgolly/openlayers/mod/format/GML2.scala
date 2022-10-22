@@ -1,9 +1,9 @@
 package typingsJapgolly.openlayers.mod.format
 
 import typingsJapgolly.openlayers.mod.olx.format.GMLOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -23,7 +23,6 @@ import scala.scalajs.js.annotation._
   * @param opt_options Optional configuration object.
   * @api
   */
-class GML2 () extends GMLBase {
+open class GML2 () extends GMLBase {
   def this(opt_options: GMLOptions) = this()
 }
-

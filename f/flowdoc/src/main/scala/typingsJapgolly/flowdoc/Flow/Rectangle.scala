@@ -2,29 +2,27 @@ package typingsJapgolly.flowdoc.Flow
 
 import typingsJapgolly.flowdoc.Shape
 import typingsJapgolly.flowdoc.flowdocStrings.RECT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Rectangle extends Shape {
+trait Rectangle
+  extends StObject
+     with Shape {
+  
   @JSName("type")
   var type_Rectangle: RECT
 }
-
 object Rectangle {
-  @scala.inline
-  def apply(
-    id: String,
-    name: String,
-    position: Point,
-    size: Size,
-    `type`: RECT,
-    connections: js.Array[Connection] = null
-  ): Rectangle = {
+  
+  inline def apply(id: String, name: String, position: Point, size: Size): Rectangle = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RECT")
     __obj.asInstanceOf[Rectangle]
   }
+  
+  extension [Self <: Rectangle](x: Self) {
+    
+    inline def setType(value: RECT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

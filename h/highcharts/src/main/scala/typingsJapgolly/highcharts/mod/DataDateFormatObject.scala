@@ -1,18 +1,37 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Structure for alternative date formats to parse.
   */
-@js.native
-trait DataDateFormatObject extends js.Object {
-  var alternative: js.UndefOr[String] = js.native
+trait DataDateFormatObject extends StObject {
+  
+  var alternative: js.UndefOr[String] = js.undefined
+  
+  def parser(`match`: js.Array[Double]): Double
   @JSName("parser")
-  var parser_Original: typingsJapgolly.highcharts.dataMod.highchartsAugmentingMod.DataDateFormatCallbackFunction = js.native
-  var regex: js.RegExp = js.native
-  def parser(`match`: js.Array[Double]): Double = js.native
+  var parser_Original: typingsJapgolly.highcharts.modulesDataMod.highchartsAugmentingMod.DataDateFormatCallbackFunction
+  
+  var regex: js.RegExp
 }
-
+object DataDateFormatObject {
+  
+  inline def apply(parser: /* match */ js.Array[Double] => Double, regex: js.RegExp): DataDateFormatObject = {
+    val __obj = js.Dynamic.literal(parser = js.Any.fromFunction1(parser), regex = regex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataDateFormatObject]
+  }
+  
+  extension [Self <: DataDateFormatObject](x: Self) {
+    
+    inline def setAlternative(value: String): Self = StObject.set(x, "alternative", value.asInstanceOf[js.Any])
+    
+    inline def setAlternativeUndefined: Self = StObject.set(x, "alternative", js.undefined)
+    
+    inline def setParser(value: /* match */ js.Array[Double] => Double): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
+    
+    inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+  }
+}

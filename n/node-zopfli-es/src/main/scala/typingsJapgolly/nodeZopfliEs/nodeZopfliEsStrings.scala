@@ -1,25 +1,27 @@
 package typingsJapgolly.nodeZopfliEs
 
 import typingsJapgolly.nodeZopfliEs.mod.Format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeZopfliEsStrings {
-  @js.native
-  sealed trait deflate extends Format
   
   @js.native
-  sealed trait gzip extends Format
+  sealed trait deflate
+    extends StObject
+       with Format
+  inline def deflate: deflate = "deflate".asInstanceOf[deflate]
   
   @js.native
-  sealed trait zlib extends Format
+  sealed trait gzip
+    extends StObject
+       with Format
+  inline def gzip: gzip = "gzip".asInstanceOf[gzip]
   
-  @scala.inline
-  def deflate: deflate = "deflate".asInstanceOf[deflate]
-  @scala.inline
-  def gzip: gzip = "gzip".asInstanceOf[gzip]
-  @scala.inline
-  def zlib: zlib = "zlib".asInstanceOf[zlib]
+  @js.native
+  sealed trait zlib
+    extends StObject
+       with Format
+  inline def zlib: zlib = "zlib".asInstanceOf[zlib]
 }
-

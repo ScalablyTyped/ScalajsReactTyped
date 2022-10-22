@@ -1,7 +1,7 @@
 
 # Scala.js typings for mssql
 
-Typings are for version 6.0.0
+Typings are for version 8.1
 
 ## Library description:
 Microsoft SQL Server client for Node.js.
@@ -10,10 +10,10 @@ Microsoft SQL Server client for Node.js.
 | ------------------ | :-------------: |
 | Full name          | mssql |
 | Keywords           | database, mssql, sql, server, msnodesql, sqlserver, tds, node-tds, tedious, node-sqlserver, sqlserver, msnodesqlv8, azure, node-mssql |
-| # releases         | 39 |
-| # dependents       | 457 |
-| # downloads        | 4232016 |
-| # stars            | 137 |
+| # releases         | 37 |
+| # dependents       | 0.0 |
+| # downloads        | 1155476.3333333333 |
+| # stars            | 2043.0 |
 
 ## Links
 - [Homepage](https://github.com/tediousjs/node-mssql#readme)

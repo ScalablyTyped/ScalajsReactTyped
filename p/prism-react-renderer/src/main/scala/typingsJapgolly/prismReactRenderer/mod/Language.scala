@@ -1,8 +1,8 @@
 package typingsJapgolly.prismReactRenderer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.prismReactRenderer.prismReactRendererStrings.markup
@@ -38,74 +38,70 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.prismReactRenderer.prismReactRendererStrings.wasm
   - typingsJapgolly.prismReactRenderer.prismReactRendererStrings.yaml
 */
-trait Language extends js.Object
-
+trait Language extends StObject
 object Language {
-  @scala.inline
-  def actionscript: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.actionscript = this.cast("actionscript")
-  @scala.inline
-  def bash: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.bash = this.cast("bash")
-  @scala.inline
-  def c: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.c = this.cast("c")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def clike: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.clike = this.cast("clike")
-  @scala.inline
-  def coffeescript: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.coffeescript = this.cast("coffeescript")
-  @scala.inline
-  def cpp: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.cpp = this.cast("cpp")
-  @scala.inline
-  def css: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.css = this.cast("css")
-  @scala.inline
-  def `css-extr`: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.`css-extr` = this.cast("css-extr")
-  @scala.inline
-  def diff: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.diff = this.cast("diff")
-  @scala.inline
-  def git: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.git = this.cast("git")
-  @scala.inline
-  def go: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.go = this.cast("go")
-  @scala.inline
-  def graphql: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.graphql = this.cast("graphql")
-  @scala.inline
-  def handlebars: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.handlebars = this.cast("handlebars")
-  @scala.inline
-  def javascript: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.javascript = this.cast("javascript")
-  @scala.inline
-  def json: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.json = this.cast("json")
-  @scala.inline
-  def jsx: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.jsx = this.cast("jsx")
-  @scala.inline
-  def less: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.less = this.cast("less")
-  @scala.inline
-  def makefile: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.makefile = this.cast("makefile")
-  @scala.inline
-  def markdown: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.markdown = this.cast("markdown")
-  @scala.inline
-  def markup: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.markup = this.cast("markup")
-  @scala.inline
-  def objectivec: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.objectivec = this.cast("objectivec")
-  @scala.inline
-  def ocaml: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.ocaml = this.cast("ocaml")
-  @scala.inline
-  def python: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.python = this.cast("python")
-  @scala.inline
-  def reason: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.reason = this.cast("reason")
-  @scala.inline
-  def sass: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.sass = this.cast("sass")
-  @scala.inline
-  def scss: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.scss = this.cast("scss")
-  @scala.inline
-  def sql: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.sql = this.cast("sql")
-  @scala.inline
-  def stylus: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.stylus = this.cast("stylus")
-  @scala.inline
-  def tsx: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.tsx = this.cast("tsx")
-  @scala.inline
-  def typescript: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.typescript = this.cast("typescript")
-  @scala.inline
-  def wasm: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.wasm = this.cast("wasm")
-  @scala.inline
-  def yaml: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.yaml = this.cast("yaml")
+  
+  inline def actionscript: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.actionscript = "actionscript".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.actionscript]
+  
+  inline def bash: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.bash = "bash".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.bash]
+  
+  inline def c: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.c = "c".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.c]
+  
+  inline def clike: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.clike = "clike".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.clike]
+  
+  inline def coffeescript: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.coffeescript = "coffeescript".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.coffeescript]
+  
+  inline def cpp: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.cpp = "cpp".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.cpp]
+  
+  inline def css: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.css = "css".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.css]
+  
+  inline def `css-extr`: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.`css-extr` = "css-extr".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.`css-extr`]
+  
+  inline def diff: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.diff = "diff".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.diff]
+  
+  inline def git: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.git = "git".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.git]
+  
+  inline def go: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.go = "go".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.go]
+  
+  inline def graphql: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.graphql = "graphql".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.graphql]
+  
+  inline def handlebars: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.handlebars = "handlebars".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.handlebars]
+  
+  inline def javascript: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.javascript = "javascript".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.javascript]
+  
+  inline def json: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.json = "json".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.json]
+  
+  inline def jsx: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.jsx = "jsx".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.jsx]
+  
+  inline def less: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.less = "less".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.less]
+  
+  inline def makefile: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.makefile = "makefile".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.makefile]
+  
+  inline def markdown: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.markdown = "markdown".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.markdown]
+  
+  inline def markup: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.markup = "markup".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.markup]
+  
+  inline def objectivec: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.objectivec = "objectivec".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.objectivec]
+  
+  inline def ocaml: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.ocaml = "ocaml".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.ocaml]
+  
+  inline def python: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.python = "python".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.python]
+  
+  inline def reason: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.reason = "reason".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.reason]
+  
+  inline def sass: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.sass = "sass".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.sass]
+  
+  inline def scss: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.scss = "scss".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.scss]
+  
+  inline def sql: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.sql = "sql".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.sql]
+  
+  inline def stylus: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.stylus = "stylus".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.stylus]
+  
+  inline def tsx: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.tsx = "tsx".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.tsx]
+  
+  inline def typescript: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.typescript = "typescript".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.typescript]
+  
+  inline def wasm: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.wasm = "wasm".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.wasm]
+  
+  inline def yaml: typingsJapgolly.prismReactRenderer.prismReactRendererStrings.yaml = "yaml".asInstanceOf[typingsJapgolly.prismReactRenderer.prismReactRendererStrings.yaml]
 }
-

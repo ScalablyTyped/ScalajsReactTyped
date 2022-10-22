@@ -1,55 +1,46 @@
 package typingsJapgolly.reactCountTo.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactCountTo.mod.Props
 import typingsJapgolly.reactCountTo.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactCountTo {
-  def apply(
-    speed: Double,
-    to: Double,
-    className: String = null,
-    delay: Int | Double = null,
-    digits: Int | Double = null,
-    easing: /* progress */ Double => CallbackTo[Double] = null,
-    from: Int | Double = null,
-    onComplete: js.UndefOr[Callback] = js.undefined,
-    tagName: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: /* value */ Double => CallbackTo[Element] = null
-  ): UnmountedWithRoot[Props, ^, Unit, Props] = {
-    val __obj = js.Dynamic.literal(speed = speed.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
-      if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1((t0: /* value */ scala.Double) => children(t0).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1((t0: /* progress */ scala.Double) => easing(t0).runNow()))
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    onComplete.foreach(p => __obj.updateDynamic("onComplete")(p.toJsFn))
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactCountTo.mod.Props, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactCountTo.mod.^](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactCountTo.mod.Props])
+  inline def apply(speed: Double, to: Double): Builder = {
+    val __props = js.Dynamic.literal(speed = speed.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[Props]))
   }
+  
   @JSImport("react-count-to", JSImport.Namespace)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[^] {
+    
+    inline def children(value: /* value */ Double => Element): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def delay(value: Double): this.type = set("delay", value.asInstanceOf[js.Any])
+    
+    inline def digits(value: Double): this.type = set("digits", value.asInstanceOf[js.Any])
+    
+    inline def easing(value: /* progress */ Double => Double): this.type = set("easing", js.Any.fromFunction1(value))
+    
+    inline def from(value: Double): this.type = set("from", value.asInstanceOf[js.Any])
+    
+    inline def onComplete(value: Callback): this.type = set("onComplete", value.toJsFn)
+    
+    inline def tagName(value: String): this.type = set("tagName", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

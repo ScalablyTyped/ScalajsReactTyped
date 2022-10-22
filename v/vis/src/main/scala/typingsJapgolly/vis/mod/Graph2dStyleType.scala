@@ -1,24 +1,20 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.vis.visStrings.line
   - typingsJapgolly.vis.visStrings.bar
   - typingsJapgolly.vis.visStrings.points
 */
-trait Graph2dStyleType extends js.Object
-
+trait Graph2dStyleType extends StObject
 object Graph2dStyleType {
-  @scala.inline
-  def bar: typingsJapgolly.vis.visStrings.bar = this.cast("bar")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def line: typingsJapgolly.vis.visStrings.line = this.cast("line")
-  @scala.inline
-  def points: typingsJapgolly.vis.visStrings.points = this.cast("points")
+  
+  inline def bar: typingsJapgolly.vis.visStrings.bar = "bar".asInstanceOf[typingsJapgolly.vis.visStrings.bar]
+  
+  inline def line: typingsJapgolly.vis.visStrings.line = "line".asInstanceOf[typingsJapgolly.vis.visStrings.line]
+  
+  inline def points: typingsJapgolly.vis.visStrings.points = "points".asInstanceOf[typingsJapgolly.vis.visStrings.points]
 }
-

@@ -1,20 +1,25 @@
 package typingsJapgolly.reactNative.mod
 
 import typingsJapgolly.reactNative.reactNativeStrings.dismissedAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DatePickerAndroidDismissedAction extends DatePickerAndroidOpenReturn {
+trait DatePickerAndroidDismissedAction
+  extends StObject
+     with DatePickerAndroidOpenReturn {
+  
   var action: dismissedAction
 }
-
 object DatePickerAndroidDismissedAction {
-  @scala.inline
-  def apply(action: dismissedAction): DatePickerAndroidDismissedAction = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
   
+  inline def apply(): DatePickerAndroidDismissedAction = {
+    val __obj = js.Dynamic.literal(action = "dismissedAction")
     __obj.asInstanceOf[DatePickerAndroidDismissedAction]
   }
+  
+  extension [Self <: DatePickerAndroidDismissedAction](x: Self) {
+    
+    inline def setAction(value: dismissedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+  }
 }
-

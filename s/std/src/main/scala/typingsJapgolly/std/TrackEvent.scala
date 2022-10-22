@@ -1,20 +1,16 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The TrackEvent interface, part of the HTML DOM specification, is used for events which represent changes to the set of available tracks on an HTML media element; these events are addtrack and removetrack. */
 @js.native
-trait TrackEvent extends Event_ {
-  val track: VideoTrack | org.scalajs.dom.raw.AudioTrack | org.scalajs.dom.raw.TextTrack | Null = js.native
+trait TrackEvent
+  extends StObject
+     with Event {
+  
+  /** Returns the track object (TextTrack, AudioTrack, or VideoTrack) to which the event relates. */
+  /* standard dom */
+  val track: org.scalajs.dom.TextTrack | Null = js.native
 }
-
-@JSGlobal("TrackEvent")
-@js.native
-object TrackEvent
-  extends Instantiable1[/* typeArg */ java.lang.String, TrackEvent]
-     with Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ TrackEventInit, TrackEvent]
-

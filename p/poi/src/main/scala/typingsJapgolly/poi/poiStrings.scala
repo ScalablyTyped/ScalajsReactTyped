@@ -1,115 +1,103 @@
 package typingsJapgolly.poi
 
 import typingsJapgolly.poi.mod.Mode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object poiStrings {
-  @js.native
-  sealed trait all extends js.Object
   
   @js.native
-  sealed trait `async-node` extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait `async-node` extends StObject
+  inline def `async-node`: `async-node` = "async-node".asInstanceOf[`async-node`]
   
   @js.native
-  sealed trait body extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait cjs extends js.Object
+  sealed trait blocking extends StObject
+  inline def blocking: blocking = "blocking".asInstanceOf[blocking]
   
   @js.native
-  sealed trait dependency extends js.Object
+  sealed trait body extends StObject
+  inline def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait development extends Mode
+  sealed trait cjs extends StObject
+  inline def cjs: cjs = "cjs".asInstanceOf[cjs]
   
   @js.native
-  sealed trait electron extends js.Object
+  sealed trait defer extends StObject
+  inline def defer: defer = "defer".asInstanceOf[defer]
   
   @js.native
-  sealed trait `electron-main` extends js.Object
+  sealed trait development
+    extends StObject
+       with Mode
+  inline def development: development = "development".asInstanceOf[development]
   
   @js.native
-  sealed trait `electron-renderer` extends js.Object
+  sealed trait electron extends StObject
+  inline def electron: electron = "electron".asInstanceOf[electron]
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait `electron-main` extends StObject
+  inline def `electron-main`: `electron-main` = "electron-main".asInstanceOf[`electron-main`]
   
   @js.native
-  sealed trait iife extends js.Object
+  sealed trait `electron-renderer` extends StObject
+  inline def `electron-renderer`: `electron-renderer` = "electron-renderer".asInstanceOf[`electron-renderer`]
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait head extends StObject
+  inline def head: head = "head".asInstanceOf[head]
   
   @js.native
-  sealed trait node extends js.Object
+  sealed trait iife extends StObject
+  inline def iife: iife = "iife".asInstanceOf[iife]
   
   @js.native
-  sealed trait `node-webkit` extends js.Object
+  sealed trait manual extends StObject
+  inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait module extends StObject
+  inline def module: module = "module".asInstanceOf[module]
   
   @js.native
-  sealed trait production extends Mode
+  sealed trait node extends StObject
+  inline def node: node = "node".asInstanceOf[node]
   
   @js.native
-  sealed trait test extends Mode
+  sealed trait `node-webkit` extends StObject
+  inline def `node-webkit`: `node-webkit` = "node-webkit".asInstanceOf[`node-webkit`]
   
   @js.native
-  sealed trait umd extends js.Object
+  sealed trait production
+    extends StObject
+       with Mode
+  inline def production: production = "production".asInstanceOf[production]
   
   @js.native
-  sealed trait web extends js.Object
+  sealed trait test
+    extends StObject
+       with Mode
+  inline def test: test = "test".asInstanceOf[test]
   
   @js.native
-  sealed trait webworker extends js.Object
+  sealed trait umd extends StObject
+  inline def umd: umd = "umd".asInstanceOf[umd]
   
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def `async-node`: `async-node` = "async-node".asInstanceOf[`async-node`]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
-  @scala.inline
-  def cjs: cjs = "cjs".asInstanceOf[cjs]
-  @scala.inline
-  def dependency: dependency = "dependency".asInstanceOf[dependency]
-  @scala.inline
-  def development: development = "development".asInstanceOf[development]
-  @scala.inline
-  def electron: electron = "electron".asInstanceOf[electron]
-  @scala.inline
-  def `electron-main`: `electron-main` = "electron-main".asInstanceOf[`electron-main`]
-  @scala.inline
-  def `electron-renderer`: `electron-renderer` = "electron-renderer".asInstanceOf[`electron-renderer`]
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
-  @scala.inline
-  def iife: iife = "iife".asInstanceOf[iife]
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
-  @scala.inline
-  def `node-webkit`: `node-webkit` = "node-webkit".asInstanceOf[`node-webkit`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def production: production = "production".asInstanceOf[production]
-  @scala.inline
-  def test: test = "test".asInstanceOf[test]
-  @scala.inline
-  def umd: umd = "umd".asInstanceOf[umd]
-  @scala.inline
-  def web: web = "web".asInstanceOf[web]
-  @scala.inline
-  def webworker: webworker = "webworker".asInstanceOf[webworker]
+  @js.native
+  sealed trait web extends StObject
+  inline def web: web = "web".asInstanceOf[web]
+  
+  @js.native
+  sealed trait webworker extends StObject
+  inline def webworker: webworker = "webworker".asInstanceOf[webworker]
 }
-

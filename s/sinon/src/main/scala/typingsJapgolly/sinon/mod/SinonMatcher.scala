@@ -1,11 +1,11 @@
 package typingsJapgolly.sinon.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SinonMatcher extends js.Object {
+trait SinonMatcher extends StObject {
+  
   /**
     * All matchers implement and and or. This allows to logically combine mutliple matchers.
     * The result is a new matchers that requires both (and) or one of the matchers (or) to return true.
@@ -13,6 +13,7 @@ trait SinonMatcher extends js.Object {
     * var bookWithPages = sinon.match.instanceOf(Book).and(sinon.match.has("pages"));
     */
   def and(expr: SinonMatcher): SinonMatcher
+  
   /**
     * All matchers implement and and or. This allows to logically combine mutliple matchers.
     * The result is a new matchers that requires both (and) or one of the matchers (or) to return true.
@@ -20,21 +21,22 @@ trait SinonMatcher extends js.Object {
     * var bookWithPages = sinon.match.instanceOf(Book).and(sinon.match.has("pages"));
     */
   def or(expr: SinonMatcher): SinonMatcher
-  def test(`val`: js.Any): Boolean
+  
+  def test(`val`: Any): Boolean
 }
-
 object SinonMatcher {
-  @scala.inline
-  def apply(
-    and: SinonMatcher => CallbackTo[SinonMatcher],
-    or: SinonMatcher => CallbackTo[SinonMatcher],
-    test: js.Any => CallbackTo[Boolean]
-  ): SinonMatcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("and")(js.Any.fromFunction1((t0: typingsJapgolly.sinon.mod.SinonMatcher) => and(t0).runNow()))
-    __obj.updateDynamic("or")(js.Any.fromFunction1((t0: typingsJapgolly.sinon.mod.SinonMatcher) => or(t0).runNow()))
-    __obj.updateDynamic("test")(js.Any.fromFunction1((t0: js.Any) => test(t0).runNow()))
+  
+  inline def apply(and: SinonMatcher => SinonMatcher, or: SinonMatcher => SinonMatcher, test: Any => Boolean): SinonMatcher = {
+    val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), or = js.Any.fromFunction1(or), test = js.Any.fromFunction1(test))
     __obj.asInstanceOf[SinonMatcher]
   }
+  
+  extension [Self <: SinonMatcher](x: Self) {
+    
+    inline def setAnd(value: SinonMatcher => SinonMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+    
+    inline def setOr(value: SinonMatcher => SinonMatcher): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+    
+    inline def setTest(value: Any => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+  }
 }
-

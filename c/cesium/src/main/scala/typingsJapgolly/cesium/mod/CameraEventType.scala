@@ -1,47 +1,60 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CameraEventType extends js.Object
-
+sealed trait CameraEventType extends StObject
 @JSImport("cesium", "CameraEventType")
 @js.native
-object CameraEventType extends js.Object {
-  @js.native
-  sealed trait LEFT_DRAG extends CameraEventType
-  
-  @js.native
-  sealed trait MIDDLE_DRAG extends CameraEventType
-  
-  @js.native
-  sealed trait PINCH extends CameraEventType
-  
-  @js.native
-  sealed trait RIGHT_DRAG extends CameraEventType
-  
-  @js.native
-  sealed trait WHEEL extends CameraEventType
+object CameraEventType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CameraEventType with Double] = js.native
-  /* 0 */ @js.native
-  object LEFT_DRAG extends TopLevel[LEFT_DRAG with Double]
+  def apply(value: Double): js.UndefOr[CameraEventType & Double] = js.native
   
-  /* 2 */ @js.native
-  object MIDDLE_DRAG extends TopLevel[MIDDLE_DRAG with Double]
+  /**
+    * A left mouse button press followed by moving the mouse and releasing the button.
+    */
+  @js.native
+  sealed trait LEFT_DRAG
+    extends StObject
+       with CameraEventType
+  /* 0 */ val LEFT_DRAG: typingsJapgolly.cesium.mod.CameraEventType.LEFT_DRAG & Double = js.native
   
-  /* 4 */ @js.native
-  object PINCH extends TopLevel[PINCH with Double]
+  /**
+    * A middle mouse button press followed by moving the mouse and releasing the button.
+    */
+  @js.native
+  sealed trait MIDDLE_DRAG
+    extends StObject
+       with CameraEventType
+  /* 2 */ val MIDDLE_DRAG: typingsJapgolly.cesium.mod.CameraEventType.MIDDLE_DRAG & Double = js.native
   
-  /* 1 */ @js.native
-  object RIGHT_DRAG extends TopLevel[RIGHT_DRAG with Double]
+  /**
+    * A two-finger touch on a touch surface.
+    */
+  @js.native
+  sealed trait PINCH
+    extends StObject
+       with CameraEventType
+  /* 4 */ val PINCH: typingsJapgolly.cesium.mod.CameraEventType.PINCH & Double = js.native
   
-  /* 3 */ @js.native
-  object WHEEL extends TopLevel[WHEEL with Double]
+  /**
+    * A right mouse button press followed by moving the mouse and releasing the button.
+    */
+  @js.native
+  sealed trait RIGHT_DRAG
+    extends StObject
+       with CameraEventType
+  /* 1 */ val RIGHT_DRAG: typingsJapgolly.cesium.mod.CameraEventType.RIGHT_DRAG & Double = js.native
   
+  /**
+    * Scrolling the middle mouse button.
+    */
+  @js.native
+  sealed trait WHEEL
+    extends StObject
+       with CameraEventType
+  /* 3 */ val WHEEL: typingsJapgolly.cesium.mod.CameraEventType.WHEEL & Double = js.native
 }
-

@@ -1,31 +1,43 @@
 package typingsJapgolly.openapiTypes.mod.OpenAPIV3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaTypeObject extends js.Object {
+trait MediaTypeObject extends StObject {
+  
   var encoding: js.UndefOr[StringDictionary[EncodingObject]] = js.undefined
-  var example: js.UndefOr[js.Any] = js.undefined
+  
+  var example: js.UndefOr[Any] = js.undefined
+  
   var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.undefined
+  
   var schema: js.UndefOr[ReferenceObject | SchemaObject] = js.undefined
 }
-
 object MediaTypeObject {
-  @scala.inline
-  def apply(
-    encoding: StringDictionary[EncodingObject] = null,
-    example: js.Any = null,
-    examples: StringDictionary[ReferenceObject | ExampleObject] = null,
-    schema: ReferenceObject | SchemaObject = null
-  ): MediaTypeObject = {
+  
+  inline def apply(): MediaTypeObject = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
-    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTypeObject]
   }
+  
+  extension [Self <: MediaTypeObject](x: Self) {
+    
+    inline def setEncoding(value: StringDictionary[EncodingObject]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setExample(value: Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+    
+    inline def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
+    
+    inline def setExamples(value: StringDictionary[ReferenceObject | ExampleObject]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+    
+    inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
+    
+    inline def setSchema(value: ReferenceObject | SchemaObject): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+  }
 }
-

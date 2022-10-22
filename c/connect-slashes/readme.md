@@ -9,10 +9,10 @@ Trailing slash redirect middleware for Connect and Express.js
 | ------------------ | :-------------: |
 | Full name          | connect-slashes |
 | Keywords           | trailing, slash, connect, middleware, express |
-| # releases         | 2 |
-| # dependents       | 31 |
-| # downloads        | 1574490 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 301957.3333333333 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/avinoamr/connect-slashes#readme)

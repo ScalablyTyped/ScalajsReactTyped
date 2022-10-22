@@ -1,23 +1,31 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.AutoTextEntry")
 @js.native
-class AutoTextEntry protected () extends js.Object {
+trait AutoTextEntry extends StObject {
+  
   val Application: typingsJapgolly.activexWord.Word.Application = js.native
+  
   val Creator: Double = js.native
-  val Index: Double = js.native
-  var Name: String = js.native
-  val Parent: js.Any = js.native
-  val StyleName: String = js.native
-  var Value: String = js.native
-  @JSName("Word.AutoTextEntry_typekey")
-  var WordDotAutoTextEntry_typekey: AutoTextEntry = js.native
+  
   def Delete(): Unit = js.native
+  
+  val Index: Double = js.native
+  
   def Insert(Where: Range): Range = js.native
-  def Insert(Where: Range, RichText: js.Any): Range = js.native
+  def Insert(Where: Range, RichText: Any): Range = js.native
+  
+  var Name: String = js.native
+  
+  val Parent: Any = js.native
+  
+  val StyleName: String = js.native
+  
+  var Value: String = js.native
+  
+  /* private */ @JSName("Word.AutoTextEntry_typekey")
+  var WordDotAutoTextEntry_typekey: AutoTextEntry = js.native
 }
-

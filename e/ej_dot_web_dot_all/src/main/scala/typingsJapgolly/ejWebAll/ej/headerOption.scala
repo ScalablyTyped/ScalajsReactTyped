@@ -1,29 +1,22 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait headerOption extends js.Object
-
+sealed trait headerOption extends StObject
 @JSGlobal("ej.headerOption")
 @js.native
-object headerOption extends js.Object {
-  @js.native
-  sealed trait row extends headerOption
+object headerOption extends StObject {
   
   @js.native
-  sealed trait tHead extends headerOption
+  sealed trait row
+    extends StObject
+       with headerOption
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[headerOption with Double] = js.native
-  /* 0 */ @js.native
-  object row extends TopLevel[row with Double]
-  
-  /* 1 */ @js.native
-  object tHead extends TopLevel[tHead with Double]
-  
+  @js.native
+  sealed trait tHead
+    extends StObject
+       with headerOption
 }
-

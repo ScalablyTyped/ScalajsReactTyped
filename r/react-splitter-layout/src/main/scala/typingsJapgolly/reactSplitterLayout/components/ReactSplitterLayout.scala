@@ -1,58 +1,49 @@
 package typingsJapgolly.reactSplitterLayout.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactSplitterLayout.mod.SplitterLayoutProps
 import typingsJapgolly.reactSplitterLayout.mod.TPrimaryIndex
 import typingsJapgolly.reactSplitterLayout.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactSplitterLayout {
-  def apply(
-    customClassName: String = null,
-    onDragEnd: js.UndefOr[Callback] = js.undefined,
-    onDragStart: js.UndefOr[Callback] = js.undefined,
-    onSecondaryPaneSizeChange: /* value */ Double => Callback = null,
-    percentage: js.UndefOr[Boolean] = js.undefined,
-    primaryIndex: TPrimaryIndex = null,
-    primaryMinSize: Int | Double = null,
-    secondaryInitialSize: Int | Double = null,
-    secondaryMinSize: Int | Double = null,
-    vertical: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SplitterLayoutProps, default, Unit, SplitterLayoutProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (customClassName != null) __obj.updateDynamic("customClassName")(customClassName.asInstanceOf[js.Any])
-    onDragEnd.foreach(p => __obj.updateDynamic("onDragEnd")(p.toJsFn))
-    onDragStart.foreach(p => __obj.updateDynamic("onDragStart")(p.toJsFn))
-    if (onSecondaryPaneSizeChange != null) __obj.updateDynamic("onSecondaryPaneSizeChange")(js.Any.fromFunction1((t0: /* value */ scala.Double) => onSecondaryPaneSizeChange(t0).runNow()))
-    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
-    if (primaryIndex != null) __obj.updateDynamic("primaryIndex")(primaryIndex.asInstanceOf[js.Any])
-    if (primaryMinSize != null) __obj.updateDynamic("primaryMinSize")(primaryMinSize.asInstanceOf[js.Any])
-    if (secondaryInitialSize != null) __obj.updateDynamic("secondaryInitialSize")(secondaryInitialSize.asInstanceOf[js.Any])
-    if (secondaryMinSize != null) __obj.updateDynamic("secondaryMinSize")(secondaryMinSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactSplitterLayout.mod.SplitterLayoutProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactSplitterLayout.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactSplitterLayout.mod.SplitterLayoutProps])(children: _*)
-  }
   @JSImport("react-splitter-layout", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def children(value: Any): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def customClassName(value: String): this.type = set("customClassName", value.asInstanceOf[js.Any])
+    
+    inline def onDragEnd(value: Callback): this.type = set("onDragEnd", value.toJsFn)
+    
+    inline def onDragStart(value: Callback): this.type = set("onDragStart", value.toJsFn)
+    
+    inline def onSecondaryPaneSizeChange(value: /* value */ Double => Callback): this.type = set("onSecondaryPaneSizeChange", js.Any.fromFunction1((t0: /* value */ Double) => value(t0).runNow()))
+    
+    inline def percentage(value: Boolean): this.type = set("percentage", value.asInstanceOf[js.Any])
+    
+    inline def primaryIndex(value: TPrimaryIndex): this.type = set("primaryIndex", value.asInstanceOf[js.Any])
+    
+    inline def primaryMinSize(value: Double): this.type = set("primaryMinSize", value.asInstanceOf[js.Any])
+    
+    inline def secondaryInitialSize(value: Double): this.type = set("secondaryInitialSize", value.asInstanceOf[js.Any])
+    
+    inline def secondaryMinSize(value: Double): this.type = set("secondaryMinSize", value.asInstanceOf[js.Any])
+    
+    inline def vertical(value: Boolean): this.type = set("vertical", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactSplitterLayout.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SplitterLayoutProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,171 +1,206 @@
 package typingsJapgolly.vimeoPlayer
 
+import typingsJapgolly.vimeoPlayer.mod.TrackKind
 import typingsJapgolly.vimeoPlayer.mod.VimeoVideoQuality
-import typingsJapgolly.vimeoPlayer.mod._EventName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vimeoPlayerStrings {
-  @js.native
-  sealed trait `1080p` extends VimeoVideoQuality
   
   @js.native
-  sealed trait `240p` extends VimeoVideoQuality
+  sealed trait `1080p`
+    extends StObject
+       with VimeoVideoQuality
+  inline def `1080p`: `1080p` = "1080p".asInstanceOf[`1080p`]
   
   @js.native
-  sealed trait `2K` extends VimeoVideoQuality
+  sealed trait `240p`
+    extends StObject
+       with VimeoVideoQuality
+  inline def `240p`: `240p` = "240p".asInstanceOf[`240p`]
   
   @js.native
-  sealed trait `360p` extends VimeoVideoQuality
+  sealed trait `2K`
+    extends StObject
+       with VimeoVideoQuality
+  inline def `2K`: `2K` = "2K".asInstanceOf[`2K`]
   
   @js.native
-  sealed trait `4K` extends VimeoVideoQuality
+  sealed trait `360p`
+    extends StObject
+       with VimeoVideoQuality
+  inline def `360p`: `360p` = "360p".asInstanceOf[`360p`]
   
   @js.native
-  sealed trait `540p` extends VimeoVideoQuality
+  sealed trait `4K`
+    extends StObject
+       with VimeoVideoQuality
+  inline def `4K`: `4K` = "4K".asInstanceOf[`4K`]
   
   @js.native
-  sealed trait `720p` extends VimeoVideoQuality
+  sealed trait `540p`
+    extends StObject
+       with VimeoVideoQuality
+  inline def `540p`: `540p` = "540p".asInstanceOf[`540p`]
   
   @js.native
-  sealed trait ContrastError extends js.Object
+  sealed trait `720p`
+    extends StObject
+       with VimeoVideoQuality
+  inline def `720p`: `720p` = "720p".asInstanceOf[`720p`]
   
   @js.native
-  sealed trait InvalidCuePoint extends js.Object
+  sealed trait ContrastError extends StObject
+  inline def ContrastError: ContrastError = "ContrastError".asInstanceOf[ContrastError]
   
   @js.native
-  sealed trait InvalidTrackError extends js.Object
+  sealed trait InvalidCuePoint extends StObject
+  inline def InvalidCuePoint: InvalidCuePoint = "InvalidCuePoint".asInstanceOf[InvalidCuePoint]
   
   @js.native
-  sealed trait InvalidTrackLanguageError extends js.Object
+  sealed trait InvalidTrackError extends StObject
+  inline def InvalidTrackError: InvalidTrackError = "InvalidTrackError".asInstanceOf[InvalidTrackError]
   
   @js.native
-  sealed trait PasswordError extends js.Object
+  sealed trait InvalidTrackLanguageError extends StObject
+  inline def InvalidTrackLanguageError: InvalidTrackLanguageError = "InvalidTrackLanguageError".asInstanceOf[InvalidTrackLanguageError]
   
   @js.native
-  sealed trait PrivacyError extends js.Object
+  sealed trait PasswordError extends StObject
+  inline def PasswordError: PasswordError = "PasswordError".asInstanceOf[PasswordError]
   
   @js.native
-  sealed trait RangeError extends js.Object
+  sealed trait PrivacyError extends StObject
+  inline def PrivacyError: PrivacyError = "PrivacyError".asInstanceOf[PrivacyError]
   
   @js.native
-  sealed trait TypeError extends js.Object
+  sealed trait RangeError extends StObject
+  inline def RangeError: RangeError = "RangeError".asInstanceOf[RangeError]
   
   @js.native
-  sealed trait UnsupportedError extends js.Object
+  sealed trait TypeError extends StObject
+  inline def TypeError: TypeError = "TypeError".asInstanceOf[TypeError]
   
   @js.native
-  sealed trait bufferend extends _EventName
+  sealed trait UnsupportedError extends StObject
+  inline def UnsupportedError: UnsupportedError = "UnsupportedError".asInstanceOf[UnsupportedError]
   
   @js.native
-  sealed trait bufferstart extends _EventName
+  sealed trait auto
+    extends StObject
+       with VimeoVideoQuality
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait cuechange extends _EventName
+  sealed trait bufferend extends StObject
+  inline def bufferend: bufferend = "bufferend".asInstanceOf[bufferend]
   
   @js.native
-  sealed trait cuepoint extends _EventName
+  sealed trait bufferstart extends StObject
+  inline def bufferstart: bufferstart = "bufferstart".asInstanceOf[bufferstart]
   
   @js.native
-  sealed trait ended extends _EventName
+  sealed trait camerachange extends StObject
+  inline def camerachange: camerachange = "camerachange".asInstanceOf[camerachange]
   
   @js.native
-  sealed trait error extends _EventName
+  sealed trait captions
+    extends StObject
+       with TrackKind
+  inline def captions: captions = "captions".asInstanceOf[captions]
   
   @js.native
-  sealed trait loaded extends _EventName
+  sealed trait chapterchange extends StObject
+  inline def chapterchange: chapterchange = "chapterchange".asInstanceOf[chapterchange]
   
   @js.native
-  sealed trait pause extends _EventName
+  sealed trait cuechange extends StObject
+  inline def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
   
   @js.native
-  sealed trait play extends _EventName
+  sealed trait cuepoint extends StObject
+  inline def cuepoint: cuepoint = "cuepoint".asInstanceOf[cuepoint]
   
   @js.native
-  sealed trait playbackratechange extends _EventName
+  sealed trait durationchange extends StObject
+  inline def durationchange: durationchange = "durationchange".asInstanceOf[durationchange]
   
   @js.native
-  sealed trait progress extends _EventName
+  sealed trait ended extends StObject
+  inline def ended: ended = "ended".asInstanceOf[ended]
   
   @js.native
-  sealed trait seeked extends _EventName
+  sealed trait enterpictureinpicture extends StObject
+  inline def enterpictureinpicture: enterpictureinpicture = "enterpictureinpicture".asInstanceOf[enterpictureinpicture]
   
   @js.native
-  sealed trait seeking extends _EventName
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait texttrackchange extends _EventName
+  sealed trait fullscreenchange extends StObject
+  inline def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
   
   @js.native
-  sealed trait timeupdate extends _EventName
+  sealed trait leavepictureinpicture extends StObject
+  inline def leavepictureinpicture: leavepictureinpicture = "leavepictureinpicture".asInstanceOf[leavepictureinpicture]
   
   @js.native
-  sealed trait volumechange extends _EventName
+  sealed trait loaded extends StObject
+  inline def loaded: loaded = "loaded".asInstanceOf[loaded]
   
-  @scala.inline
-  def `1080p`: `1080p` = "1080p".asInstanceOf[`1080p`]
-  @scala.inline
-  def `240p`: `240p` = "240p".asInstanceOf[`240p`]
-  @scala.inline
-  def `2K`: `2K` = "2K".asInstanceOf[`2K`]
-  @scala.inline
-  def `360p`: `360p` = "360p".asInstanceOf[`360p`]
-  @scala.inline
-  def `4K`: `4K` = "4K".asInstanceOf[`4K`]
-  @scala.inline
-  def `540p`: `540p` = "540p".asInstanceOf[`540p`]
-  @scala.inline
-  def `720p`: `720p` = "720p".asInstanceOf[`720p`]
-  @scala.inline
-  def ContrastError: ContrastError = "ContrastError".asInstanceOf[ContrastError]
-  @scala.inline
-  def InvalidCuePoint: InvalidCuePoint = "InvalidCuePoint".asInstanceOf[InvalidCuePoint]
-  @scala.inline
-  def InvalidTrackError: InvalidTrackError = "InvalidTrackError".asInstanceOf[InvalidTrackError]
-  @scala.inline
-  def InvalidTrackLanguageError: InvalidTrackLanguageError = "InvalidTrackLanguageError".asInstanceOf[InvalidTrackLanguageError]
-  @scala.inline
-  def PasswordError: PasswordError = "PasswordError".asInstanceOf[PasswordError]
-  @scala.inline
-  def PrivacyError: PrivacyError = "PrivacyError".asInstanceOf[PrivacyError]
-  @scala.inline
-  def RangeError: RangeError = "RangeError".asInstanceOf[RangeError]
-  @scala.inline
-  def TypeError: TypeError = "TypeError".asInstanceOf[TypeError]
-  @scala.inline
-  def UnsupportedError: UnsupportedError = "UnsupportedError".asInstanceOf[UnsupportedError]
-  @scala.inline
-  def bufferend: bufferend = "bufferend".asInstanceOf[bufferend]
-  @scala.inline
-  def bufferstart: bufferstart = "bufferstart".asInstanceOf[bufferstart]
-  @scala.inline
-  def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
-  @scala.inline
-  def cuepoint: cuepoint = "cuepoint".asInstanceOf[cuepoint]
-  @scala.inline
-  def ended: ended = "ended".asInstanceOf[ended]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def loaded: loaded = "loaded".asInstanceOf[loaded]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def play: play = "play".asInstanceOf[play]
-  @scala.inline
-  def playbackratechange: playbackratechange = "playbackratechange".asInstanceOf[playbackratechange]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def seeked: seeked = "seeked".asInstanceOf[seeked]
-  @scala.inline
-  def seeking: seeking = "seeking".asInstanceOf[seeking]
-  @scala.inline
-  def texttrackchange: texttrackchange = "texttrackchange".asInstanceOf[texttrackchange]
-  @scala.inline
-  def timeupdate: timeupdate = "timeupdate".asInstanceOf[timeupdate]
-  @scala.inline
-  def volumechange: volumechange = "volumechange".asInstanceOf[volumechange]
+  @js.native
+  sealed trait pause extends StObject
+  inline def pause: pause = "pause".asInstanceOf[pause]
+  
+  @js.native
+  sealed trait play extends StObject
+  inline def play: play = "play".asInstanceOf[play]
+  
+  @js.native
+  sealed trait playbackratechange extends StObject
+  inline def playbackratechange: playbackratechange = "playbackratechange".asInstanceOf[playbackratechange]
+  
+  @js.native
+  sealed trait playing extends StObject
+  inline def playing: playing = "playing".asInstanceOf[playing]
+  
+  @js.native
+  sealed trait progress extends StObject
+  inline def progress: progress = "progress".asInstanceOf[progress]
+  
+  @js.native
+  sealed trait qualitychange extends StObject
+  inline def qualitychange: qualitychange = "qualitychange".asInstanceOf[qualitychange]
+  
+  @js.native
+  sealed trait resize extends StObject
+  inline def resize: resize = "resize".asInstanceOf[resize]
+  
+  @js.native
+  sealed trait seeked extends StObject
+  inline def seeked: seeked = "seeked".asInstanceOf[seeked]
+  
+  @js.native
+  sealed trait seeking extends StObject
+  inline def seeking: seeking = "seeking".asInstanceOf[seeking]
+  
+  @js.native
+  sealed trait subtitles
+    extends StObject
+       with TrackKind
+  inline def subtitles: subtitles = "subtitles".asInstanceOf[subtitles]
+  
+  @js.native
+  sealed trait texttrackchange extends StObject
+  inline def texttrackchange: texttrackchange = "texttrackchange".asInstanceOf[texttrackchange]
+  
+  @js.native
+  sealed trait timeupdate extends StObject
+  inline def timeupdate: timeupdate = "timeupdate".asInstanceOf[timeupdate]
+  
+  @js.native
+  sealed trait volumechange extends StObject
+  inline def volumechange: volumechange = "volumechange".asInstanceOf[volumechange]
 }
-

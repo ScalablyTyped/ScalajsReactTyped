@@ -1,45 +1,34 @@
 package typingsJapgolly.materialUi.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.materialUi.circleRippleMod.CircleRippleProps
-import typingsJapgolly.materialUi.circleRippleMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.materialUi.internalCircleRippleMod.CircleRippleProps
+import typingsJapgolly.materialUi.internalCircleRippleMod.default
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CircleRipple {
-  def apply(
-    aborted: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    opacity: Int | Double = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CircleRippleProps, default, Unit, CircleRippleProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(aborted)) __obj.updateDynamic("aborted")(aborted.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUi.circleRippleMod.CircleRippleProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUi.circleRippleMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUi.circleRippleMod.CircleRippleProps])(children: _*)
-  }
   @JSImport("material-ui/internal/CircleRipple", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def aborted(value: Boolean): this.type = set("aborted", value.asInstanceOf[js.Any])
+    
+    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def opacity(value: Double): this.type = set("opacity", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: CircleRipple.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CircleRippleProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

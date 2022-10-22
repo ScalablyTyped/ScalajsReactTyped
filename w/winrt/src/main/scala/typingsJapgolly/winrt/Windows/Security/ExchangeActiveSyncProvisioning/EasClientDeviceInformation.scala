@@ -1,23 +1,23 @@
 package typingsJapgolly.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation")
-@js.native
-class EasClientDeviceInformation () extends IEasClientDeviceInformation {
-  /* CompleteClass */
-  override var friendlyName: String = js.native
-  /* CompleteClass */
-  override var id: String = js.native
-  /* CompleteClass */
-  override var operatingSystem: String = js.native
-  /* CompleteClass */
-  override var systemManufacturer: String = js.native
-  /* CompleteClass */
-  override var systemProductName: String = js.native
-  /* CompleteClass */
-  override var systemSku: String = js.native
+trait EasClientDeviceInformation
+  extends StObject
+     with IEasClientDeviceInformation
+object EasClientDeviceInformation {
+  
+  inline def apply(
+    friendlyName: String,
+    id: String,
+    operatingSystem: String,
+    systemManufacturer: String,
+    systemProductName: String,
+    systemSku: String
+  ): EasClientDeviceInformation = {
+    val __obj = js.Dynamic.literal(friendlyName = friendlyName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], operatingSystem = operatingSystem.asInstanceOf[js.Any], systemManufacturer = systemManufacturer.asInstanceOf[js.Any], systemProductName = systemProductName.asInstanceOf[js.Any], systemSku = systemSku.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EasClientDeviceInformation]
+  }
 }
-

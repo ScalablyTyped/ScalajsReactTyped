@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__iron
 
-Typings are for version 6.0.0
+Typings are for version 7.0.0
 
 ## Library description:
 Encapsulated tokens (encrypted and mac'ed objects)
@@ -10,10 +10,10 @@ Encapsulated tokens (encrypted and mac'ed objects)
 | ------------------ | :-------------: |
 | Full name          | @hapi/iron |
 | Keywords           | authentication, encryption, data integrity |
-| # releases         | 6 |
-| # dependents       | 13 |
-| # downloads        | 3147155 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2821833.3333333335 |
+| # stars            | 601.0 |
 
 ## Links
 - [Homepage](https://github.com/hueniverse/iron#readme)

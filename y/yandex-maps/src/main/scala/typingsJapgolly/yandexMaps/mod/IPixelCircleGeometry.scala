@@ -1,38 +1,40 @@
 package typingsJapgolly.yandexMaps.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPixelCircleGeometry extends IPixelGeometry {
+trait IPixelCircleGeometry
+  extends StObject
+     with IPixelGeometry {
+  
   def getCoordinates(): js.Array[Double]
+  
   def getRadius(): Double
 }
-
 object IPixelCircleGeometry {
-  @scala.inline
-  def apply(
-    equals: IPixelGeometry => CallbackTo[Boolean],
-    events: IEventManager,
+  
+  inline def apply(
+    equals_ : IPixelGeometry => Boolean,
+    events: IEventManager[js.Object],
     getBounds: CallbackTo[js.Array[js.Array[Double]] | Null],
     getCoordinates: CallbackTo[js.Array[Double]],
     getMetaData: CallbackTo[js.Object],
     getRadius: CallbackTo[Double],
     getType: CallbackTo[String],
-    scale: Double => CallbackTo[IPixelGeometry],
-    shift: js.Array[Double] => CallbackTo[IPixelGeometry]
+    scale: Double => IPixelGeometry,
+    shift: js.Array[Double] => IPixelGeometry
   ): IPixelCircleGeometry = {
-    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
-    __obj.updateDynamic("equals")(js.Any.fromFunction1((t0: typingsJapgolly.yandexMaps.mod.IPixelGeometry) => equals(t0).runNow()))
-    __obj.updateDynamic("getBounds")(getBounds.toJsFn)
-    __obj.updateDynamic("getCoordinates")(getCoordinates.toJsFn)
-    __obj.updateDynamic("getMetaData")(getMetaData.toJsFn)
-    __obj.updateDynamic("getRadius")(getRadius.toJsFn)
-    __obj.updateDynamic("getType")(getType.toJsFn)
-    __obj.updateDynamic("scale")(js.Any.fromFunction1((t0: scala.Double) => scale(t0).runNow()))
-    __obj.updateDynamic("shift")(js.Any.fromFunction1((t0: js.Array[scala.Double]) => shift(t0).runNow()))
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], getBounds = getBounds.toJsFn, getCoordinates = getCoordinates.toJsFn, getMetaData = getMetaData.toJsFn, getRadius = getRadius.toJsFn, getType = getType.toJsFn, scale = js.Any.fromFunction1(scale), shift = js.Any.fromFunction1(shift))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[IPixelCircleGeometry]
   }
+  
+  extension [Self <: IPixelCircleGeometry](x: Self) {
+    
+    inline def setGetCoordinates(value: CallbackTo[js.Array[Double]]): Self = StObject.set(x, "getCoordinates", value.toJsFn)
+    
+    inline def setGetRadius(value: CallbackTo[Double]): Self = StObject.set(x, "getRadius", value.toJsFn)
+  }
 }
-

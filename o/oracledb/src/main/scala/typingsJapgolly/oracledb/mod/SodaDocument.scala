@@ -1,33 +1,20 @@
 package typingsJapgolly.oracledb.mod
 
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SodaDocuments represents the document for SODA read and write operations.
   */
-trait SodaDocument extends js.Object {
+trait SodaDocument extends StObject {
+  
   /** Creation time of the document as a string in the UTC time zone using an ISO8601 format. */
   val createdOn: js.UndefOr[String] = js.undefined
-  /** Unique key value for this document. */
-  val key: js.UndefOr[String] = js.undefined
-  /** Last modified time of the document as a string in the UTC time zone using an ISO8601 format. */
-  val lastModified: String
-  /**
-    * An arbitrary string value designating the content media type. The recommendation when creating documents is to use a MIME type for the media type.
-    * By default, collections store only JSON document content and this property will be ‘application/json’. This property will be null if the media type
-    * is unknown, which will only be in the rare case when a collection was created to store mixed or non-JSON content on top of a pre-existing database table,
-    * and that table has NULLs in its mediaType column.
-    * 
-    * @default 'application/json'
-    */
-  val mediaType: js.UndefOr[String] = js.undefined
-  /** Version of the document. */
-  val version: String
+  
   /**
     * A synchronous method that returns the document content as an object.
     *
@@ -35,7 +22,8 @@ trait SodaDocument extends js.Object {
     *
     * @since 3.0
     */
-  def getContent(): Record[String, _]
+  def getContent(): Record[String, Any]
+  
   /**
     * A synchronous method that returns the document content as a Buffer.
     *
@@ -47,6 +35,7 @@ trait SodaDocument extends js.Object {
     * @since 3.0
     */
   def getContentAsBuffer(): Buffer
+  
   /**
     * A synchronous method that returns JSON document content as a String.
     *
@@ -57,28 +46,61 @@ trait SodaDocument extends js.Object {
     * @since 3.0
     */
   def getContentAsString(): String
+  
+  /** Unique key value for this document. */
+  val key: js.UndefOr[String] = js.undefined
+  
+  /** Last modified time of the document as a string in the UTC time zone using an ISO8601 format. */
+  val lastModified: String
+  
+  /**
+    * An arbitrary string value designating the content media type. The recommendation when creating documents is to use a MIME type for the media type.
+    * By default, collections store only JSON document content and this property will be ‘application/json’. This property will be null if the media type
+    * is unknown, which will only be in the rare case when a collection was created to store mixed or non-JSON content on top of a pre-existing database table,
+    * and that table has NULLs in its mediaType column.
+    *
+    * @default 'application/json'
+    */
+  val mediaType: js.UndefOr[String] = js.undefined
+  
+  /** Version of the document. */
+  val version: String
 }
-
 object SodaDocument {
-  @scala.inline
-  def apply(
-    getContent: CallbackTo[Record[String, js.Any]],
+  
+  inline def apply(
+    getContent: CallbackTo[Record[String, Any]],
     getContentAsBuffer: CallbackTo[Buffer],
     getContentAsString: CallbackTo[String],
     lastModified: String,
-    version: String,
-    createdOn: String = null,
-    key: String = null,
-    mediaType: String = null
+    version: String
   ): SodaDocument = {
-    val __obj = js.Dynamic.literal(lastModified = lastModified.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    __obj.updateDynamic("getContent")(getContent.toJsFn)
-    __obj.updateDynamic("getContentAsBuffer")(getContentAsBuffer.toJsFn)
-    __obj.updateDynamic("getContentAsString")(getContentAsString.toJsFn)
-    if (createdOn != null) __obj.updateDynamic("createdOn")(createdOn.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getContent = getContent.toJsFn, getContentAsBuffer = getContentAsBuffer.toJsFn, getContentAsString = getContentAsString.toJsFn, lastModified = lastModified.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SodaDocument]
   }
+  
+  extension [Self <: SodaDocument](x: Self) {
+    
+    inline def setCreatedOn(value: String): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedOnUndefined: Self = StObject.set(x, "createdOn", js.undefined)
+    
+    inline def setGetContent(value: CallbackTo[Record[String, Any]]): Self = StObject.set(x, "getContent", value.toJsFn)
+    
+    inline def setGetContentAsBuffer(value: CallbackTo[Buffer]): Self = StObject.set(x, "getContentAsBuffer", value.toJsFn)
+    
+    inline def setGetContentAsString(value: CallbackTo[String]): Self = StObject.set(x, "getContentAsString", value.toJsFn)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    
+    inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+  }
 }
-

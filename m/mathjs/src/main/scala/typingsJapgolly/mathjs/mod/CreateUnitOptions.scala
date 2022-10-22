@@ -5,31 +5,45 @@ import typingsJapgolly.mathjs.mathjsStrings.binary_short
 import typingsJapgolly.mathjs.mathjsStrings.long
 import typingsJapgolly.mathjs.mathjsStrings.none
 import typingsJapgolly.mathjs.mathjsStrings.short
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateUnitOptions extends js.Object {
+trait CreateUnitOptions extends StObject {
+  
   var aliases: js.UndefOr[js.Array[String]] = js.undefined
+  
   var offset: js.UndefOr[Double] = js.undefined
+  
   var `override`: js.UndefOr[Boolean] = js.undefined
+  
   var prefixes: js.UndefOr[none | short | long | binary_short | binary_long] = js.undefined
 }
-
 object CreateUnitOptions {
-  @scala.inline
-  def apply(
-    aliases: js.Array[String] = null,
-    offset: Int | Double = null,
-    `override`: js.UndefOr[Boolean] = js.undefined,
-    prefixes: none | short | long | binary_short | binary_long = null
-  ): CreateUnitOptions = {
+  
+  inline def apply(): CreateUnitOptions = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
-    if (prefixes != null) __obj.updateDynamic("prefixes")(prefixes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUnitOptions]
   }
+  
+  extension [Self <: CreateUnitOptions](x: Self) {
+    
+    inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    
+    inline def setPrefixes(value: none | short | long | binary_short | binary_long): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
+  }
 }
-

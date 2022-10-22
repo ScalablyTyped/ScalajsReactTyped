@@ -1,39 +1,70 @@
 package typingsJapgolly.officeJs.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents ink analysis data for an identified text line formed by ink strokes.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
-trait InkAnalysisLineLoadOptions extends js.Object {
-  @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+trait InkAnalysisLineLoadOptions extends StObject {
+  
   /**
-    *
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
+  @JSName("$all")
+  var $all: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Gets the ID of the InkAnalysisLine object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Reference to the parent InkAnalysisParagraph.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
-  var paragraph: js.UndefOr[InkAnalysisParagraphLoadOptions] = js.native
+  var paragraph: js.UndefOr[InkAnalysisParagraphLoadOptions] = js.undefined
+  
   /**
-    *
     * Gets the ink analysis words in this ink analysis line.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
-  var words: js.UndefOr[InkAnalysisWordCollectionLoadOptions] = js.native
+  var words: js.UndefOr[InkAnalysisWordCollectionLoadOptions] = js.undefined
 }
-
+object InkAnalysisLineLoadOptions {
+  
+  inline def apply(): InkAnalysisLineLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[InkAnalysisLineLoadOptions]
+  }
+  
+  extension [Self <: InkAnalysisLineLoadOptions](x: Self) {
+    
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setParagraph(value: InkAnalysisParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+    
+    inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
+    
+    inline def setWords(value: InkAnalysisWordCollectionLoadOptions): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    
+    inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+  }
+}

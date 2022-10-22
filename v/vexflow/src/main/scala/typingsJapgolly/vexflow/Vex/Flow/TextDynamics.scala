@@ -1,22 +1,15 @@
 package typingsJapgolly.vexflow.Vex.Flow
 
-import typingsJapgolly.vexflow.AnonLineText
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Vex.Flow.TextDynamics")
 @js.native
-class TextDynamics protected () extends Note {
-  def this(text_struct: AnonLineText) = this()
+trait TextDynamics
+  extends StObject
+     with Note {
+  
   def draw(): Unit = js.native
+  
   def setLine(line: Double): TextDynamics = js.native
 }
-
-/* static members */
-@JSGlobal("Vex.Flow.TextDynamics")
-@js.native
-object TextDynamics extends js.Object {
-  var DEBUG: Boolean = js.native
-}
-

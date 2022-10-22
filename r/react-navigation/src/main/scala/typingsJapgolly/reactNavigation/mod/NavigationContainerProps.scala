@@ -4,21 +4,26 @@ import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.react.mod.ComponentType
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationContainerProps[State, Options, ScreenProps] extends js.Object {
+trait NavigationContainerProps[State, Options, ScreenProps] extends StObject {
+  
   /**
     * Controls whether the navigation container handles URLs opened via 'Linking'
     * @see https://facebook.github.io/react-native/docs/linking
     * @see https://reactnavigation.org/docs/en/deep-linking.html
     */
   var enableURLHandling: js.UndefOr[Boolean] = js.undefined
-  var loadNavigationState: js.UndefOr[js.Function0[js.Promise[_]]] = js.undefined
+  
+  var loadNavigationState: js.UndefOr[js.Function0[js.Promise[Any]]] = js.undefined
+  
   var navigation: js.UndefOr[NavigationScreenProp[State, NavigationParams]] = js.undefined
+  
   var navigationOptions: js.UndefOr[Options] = js.undefined
-   // defaults to true
+  
+  // defaults to true
   var onNavigationStateChange: js.UndefOr[
     js.Function3[
       /* prevNavigationState */ NavigationState, 
@@ -27,46 +32,80 @@ trait NavigationContainerProps[State, Options, ScreenProps] extends js.Object {
       js.UndefOr[Unit | Null]
     ]
   ] = js.undefined
-  var persistNavigationState: js.UndefOr[js.Function1[/* state */ NavigationState, js.Promise[_]]] = js.undefined
+  
+  var persistNavigationState: js.UndefOr[js.Function1[/* state */ NavigationState, js.Promise[Any]]] = js.undefined
+  
   /*
     * This prop is no longer supported. Use `loadNavigationState` and
     * `persistNavigationState` instead.
     */
   var persistenceKey: js.UndefOr[String | Null] = js.undefined
+  
   var renderLoadingExperimental: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  
   var screenProps: js.UndefOr[ScreenProps] = js.undefined
+  
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  
   var uriPrefix: js.UndefOr[String | js.RegExp] = js.undefined
 }
-
 object NavigationContainerProps {
-  @scala.inline
-  def apply[State, Options, ScreenProps](
-    enableURLHandling: js.UndefOr[Boolean] = js.undefined,
-    loadNavigationState: js.UndefOr[CallbackTo[js.Promise[js.Any]]] = js.undefined,
-    navigation: NavigationScreenProp[State, NavigationParams] = null,
-    navigationOptions: Options = null,
-    onNavigationStateChange: (/* prevNavigationState */ NavigationState, /* nextNavigationState */ NavigationState, /* action */ NavigationAction) => CallbackTo[js.UndefOr[Unit | Null]] = null,
-    persistNavigationState: /* state */ NavigationState => CallbackTo[js.Promise[js.Any]] = null,
-    persistenceKey: String = null,
-    renderLoadingExperimental: ComponentType[js.Object] = null,
-    screenProps: ScreenProps = null,
-    style: StyleProp[ViewStyle] = null,
-    uriPrefix: String | js.RegExp = null
-  ): NavigationContainerProps[State, Options, ScreenProps] = {
+  
+  inline def apply[State, Options, ScreenProps](): NavigationContainerProps[State, Options, ScreenProps] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableURLHandling)) __obj.updateDynamic("enableURLHandling")(enableURLHandling.asInstanceOf[js.Any])
-    loadNavigationState.foreach(p => __obj.updateDynamic("loadNavigationState")(p.toJsFn))
-    if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
-    if (navigationOptions != null) __obj.updateDynamic("navigationOptions")(navigationOptions.asInstanceOf[js.Any])
-    if (onNavigationStateChange != null) __obj.updateDynamic("onNavigationStateChange")(js.Any.fromFunction3((t0: /* prevNavigationState */ typingsJapgolly.reactNavigation.mod.NavigationState, t1: /* nextNavigationState */ typingsJapgolly.reactNavigation.mod.NavigationState, t2: /* action */ typingsJapgolly.reactNavigation.mod.NavigationAction) => onNavigationStateChange(t0, t1, t2).runNow()))
-    if (persistNavigationState != null) __obj.updateDynamic("persistNavigationState")(js.Any.fromFunction1((t0: /* state */ typingsJapgolly.reactNavigation.mod.NavigationState) => persistNavigationState(t0).runNow()))
-    if (persistenceKey != null) __obj.updateDynamic("persistenceKey")(persistenceKey.asInstanceOf[js.Any])
-    if (renderLoadingExperimental != null) __obj.updateDynamic("renderLoadingExperimental")(renderLoadingExperimental.asInstanceOf[js.Any])
-    if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (uriPrefix != null) __obj.updateDynamic("uriPrefix")(uriPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationContainerProps[State, Options, ScreenProps]]
   }
+  
+  extension [Self <: NavigationContainerProps[?, ?, ?], State, Options, ScreenProps](x: Self & (NavigationContainerProps[State, Options, ScreenProps])) {
+    
+    inline def setEnableURLHandling(value: Boolean): Self = StObject.set(x, "enableURLHandling", value.asInstanceOf[js.Any])
+    
+    inline def setEnableURLHandlingUndefined: Self = StObject.set(x, "enableURLHandling", js.undefined)
+    
+    inline def setLoadNavigationState(value: CallbackTo[js.Promise[Any]]): Self = StObject.set(x, "loadNavigationState", value.toJsFn)
+    
+    inline def setLoadNavigationStateUndefined: Self = StObject.set(x, "loadNavigationState", js.undefined)
+    
+    inline def setNavigation(value: NavigationScreenProp[State, NavigationParams]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    
+    inline def setNavigationOptions(value: Options): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
+    
+    inline def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
+    
+    inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
+    
+    inline def setOnNavigationStateChange(
+      value: (/* prevNavigationState */ NavigationState, /* nextNavigationState */ NavigationState, /* action */ NavigationAction) => js.UndefOr[Unit | Null]
+    ): Self = StObject.set(x, "onNavigationStateChange", js.Any.fromFunction3(value))
+    
+    inline def setOnNavigationStateChangeUndefined: Self = StObject.set(x, "onNavigationStateChange", js.undefined)
+    
+    inline def setPersistNavigationState(value: /* state */ NavigationState => js.Promise[Any]): Self = StObject.set(x, "persistNavigationState", js.Any.fromFunction1(value))
+    
+    inline def setPersistNavigationStateUndefined: Self = StObject.set(x, "persistNavigationState", js.undefined)
+    
+    inline def setPersistenceKey(value: String): Self = StObject.set(x, "persistenceKey", value.asInstanceOf[js.Any])
+    
+    inline def setPersistenceKeyNull: Self = StObject.set(x, "persistenceKey", null)
+    
+    inline def setPersistenceKeyUndefined: Self = StObject.set(x, "persistenceKey", js.undefined)
+    
+    inline def setRenderLoadingExperimental(value: ComponentType[js.Object]): Self = StObject.set(x, "renderLoadingExperimental", value.asInstanceOf[js.Any])
+    
+    inline def setRenderLoadingExperimentalUndefined: Self = StObject.set(x, "renderLoadingExperimental", js.undefined)
+    
+    inline def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+    
+    inline def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
+    
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setUriPrefix(value: String | js.RegExp): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setUriPrefixUndefined: Self = StObject.set(x, "uriPrefix", js.undefined)
+  }
 }
-

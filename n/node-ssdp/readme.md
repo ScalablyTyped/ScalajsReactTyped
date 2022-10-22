@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-ssdp
 
-Typings are for version 3.3
+Typings are for version 4.0
 
 ## Library description:
 A node.js SSDP client and server library.
@@ -10,10 +10,10 @@ A node.js SSDP client and server library.
 | ------------------ | :-------------: |
 | Full name          | node-ssdp |
 | Keywords           | ssdp, multicast, media, device, upnp, chromecast, iot |
-| # releases         | 3 |
-| # dependents       | 101 |
-| # downloads        | 300149 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 32973.0 |
+| # stars            | 259.0 |
 
 ## Links
 - [Homepage](https://github.com/diversario/node-ssdp#readme)

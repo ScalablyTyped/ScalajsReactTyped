@@ -1,7 +1,7 @@
 
 # Scala.js typings for in-range
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check if a number is in a given range
@@ -9,11 +9,11 @@ Check if a number is in a given range
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | in-range |
-| Keywords           | in, range, number, check, is |
+| Keywords           | in, range, number, check, is, bigint |
 | # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 37221 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6511.333333333333 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/in-range#readme)

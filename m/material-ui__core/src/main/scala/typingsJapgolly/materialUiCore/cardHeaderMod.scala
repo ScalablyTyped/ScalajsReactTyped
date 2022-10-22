@@ -1,26 +1,29 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.cardHeaderCardHeaderMod.CardHeaderProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.cardHeaderCardHeaderMod.OverridableCardHeader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/CardHeader", JSImport.Namespace)
-@js.native
-object cardHeaderMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[CardHeaderProps, ComponentState, js.Any] {
-    def this(props: CardHeaderProps) = this()
-    def this(props: CardHeaderProps, context: js.Any) = this()
-  }
+object cardHeaderMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Cards](https://mui.com/components/cards/)
+    *
+    * API:
+    *
+    * - [CardHeader API](https://mui.com/api/card-header/)
+    */
+  @JSImport("@material-ui/core/CardHeader", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[CardHeaderProps]]
+  val default: OverridableCardHeader = js.native
   
+  type _To = OverridableCardHeader
+  
+  /* This means you don't have to write `default`, but can instead just say `cardHeaderMod.foo` */
+  override def _to: OverridableCardHeader = default
 }
-

@@ -1,17 +1,17 @@
 package typingsJapgolly.jasmine.jasmine
 
-import typingsJapgolly.std.Symbol
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("jasmine.any")
 @js.native
-object any extends js.Object {
-  /**
-    * That will succeed if the actual value being compared is an instance of the specified class/constructor.
-    */
-  def apply(aclass: Constructor): AsymmetricMatcher[_] = js.native
-  def apply(aclass: Symbol): AsymmetricMatcher[_] = js.native
+trait Any
+  extends StObject
+     with AsymmetricMatcher[scala.Any]
+     with Instantiable1[/* expectedClass */ scala.Any, scala.Any]
+     with _Expected[scala.Any] {
+  
+  @JSName("jasmineToString")
+  def jasmineToString_MAny(prettyPrint: js.Function1[/* value */ scala.Any, String]): String = js.native
 }
-

@@ -1,40 +1,61 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UserInstallStateSummary extends Entity {
+trait UserInstallStateSummary
+  extends StObject
+     with Entity {
+  
   // The install state of the eBook.
-  var deviceStates: js.UndefOr[js.Array[DeviceInstallState]] = js.undefined
+  var deviceStates: js.UndefOr[NullableOption[js.Array[DeviceInstallState]]] = js.undefined
+  
   // Failed Device Count.
   var failedDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Installed Device Count.
   var installedDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Not installed device count.
   var notInstalledDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // User name.
-  var userName: js.UndefOr[String] = js.undefined
+  var userName: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object UserInstallStateSummary {
-  @scala.inline
-  def apply(
-    deviceStates: js.Array[DeviceInstallState] = null,
-    failedDeviceCount: Int | Double = null,
-    id: String = null,
-    installedDeviceCount: Int | Double = null,
-    notInstalledDeviceCount: Int | Double = null,
-    userName: String = null
-  ): UserInstallStateSummary = {
+  
+  inline def apply(): UserInstallStateSummary = {
     val __obj = js.Dynamic.literal()
-    if (deviceStates != null) __obj.updateDynamic("deviceStates")(deviceStates.asInstanceOf[js.Any])
-    if (failedDeviceCount != null) __obj.updateDynamic("failedDeviceCount")(failedDeviceCount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (installedDeviceCount != null) __obj.updateDynamic("installedDeviceCount")(installedDeviceCount.asInstanceOf[js.Any])
-    if (notInstalledDeviceCount != null) __obj.updateDynamic("notInstalledDeviceCount")(notInstalledDeviceCount.asInstanceOf[js.Any])
-    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserInstallStateSummary]
   }
+  
+  extension [Self <: UserInstallStateSummary](x: Self) {
+    
+    inline def setDeviceStates(value: NullableOption[js.Array[DeviceInstallState]]): Self = StObject.set(x, "deviceStates", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceStatesNull: Self = StObject.set(x, "deviceStates", null)
+    
+    inline def setDeviceStatesUndefined: Self = StObject.set(x, "deviceStates", js.undefined)
+    
+    inline def setDeviceStatesVarargs(value: DeviceInstallState*): Self = StObject.set(x, "deviceStates", js.Array(value*))
+    
+    inline def setFailedDeviceCount(value: Double): Self = StObject.set(x, "failedDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setFailedDeviceCountUndefined: Self = StObject.set(x, "failedDeviceCount", js.undefined)
+    
+    inline def setInstalledDeviceCount(value: Double): Self = StObject.set(x, "installedDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setInstalledDeviceCountUndefined: Self = StObject.set(x, "installedDeviceCount", js.undefined)
+    
+    inline def setNotInstalledDeviceCount(value: Double): Self = StObject.set(x, "notInstalledDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setNotInstalledDeviceCountUndefined: Self = StObject.set(x, "notInstalledDeviceCount", js.undefined)
+    
+    inline def setUserName(value: NullableOption[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    
+    inline def setUserNameNull: Self = StObject.set(x, "userName", null)
+    
+    inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+  }
 }
-

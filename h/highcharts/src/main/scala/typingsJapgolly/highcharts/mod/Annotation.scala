@@ -1,51 +1,61 @@
 package typingsJapgolly.highcharts.mod
 
+import typingsJapgolly.highcharts.anon.PartialAnnotationsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Annotation")
 @js.native
-class Annotation protected () extends js.Object {
+open class Annotation protected () extends StObject {
   /**
     * An annotation class which serves as a container for items like labels or
     * shapes. Created items are positioned on the chart either by linking them
     * to existing points or created mock points
     *
     * @param chart
-    *        a chart instance
+    *        A chart instance
     *
     * @param userOptions
-    *        the options object
+    *        The annotation options
     */
   def this(chart: Chart_, userOptions: AnnotationsOptions) = this()
+  
   /**
     * The chart that the annotation belongs to.
     */
   var chart: Chart_ = js.native
+  
   /**
-    * The array of control points.
+    * The group svg element.
     */
-  var controlPoints: js.Array[js.Object] = js.native
+  var group: SVGElement = js.native
+  
   /**
-    * The array of labels which belong to the annotation.
+    * The group svg element of the annotation's labels.
     */
-  var labels: js.Array[js.Object] = js.native
+  var labelsGroup: SVGElement = js.native
+  
   /**
     * The options for the annotations.
     */
   var options: AnnotationsOptions = js.native
+  
   /**
-    * The array of points which defines the annotation.
+    * The group svg element of the annotation's shapes.
     */
-  var points: js.Array[Point] = js.native
+  var shapesGroup: SVGElement = js.native
+  
   /**
-    * The array of shapes which belong to the annotation.
+    * Updates an annotation.
+    *
+    * @param userOptions
+    *        New user options for the annotation.
     */
-  var shapes: js.Array[js.Object] = js.native
+  def update(userOptions: PartialAnnotationsOptions): Unit = js.native
+  
   /**
     * The user options for the annotations.
     */
   var userOptions: AnnotationsOptions = js.native
 }
-

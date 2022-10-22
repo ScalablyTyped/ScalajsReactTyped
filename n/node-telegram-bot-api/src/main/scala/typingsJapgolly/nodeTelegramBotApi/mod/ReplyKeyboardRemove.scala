@@ -1,20 +1,28 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReplyKeyboardRemove extends js.Object {
+trait ReplyKeyboardRemove extends StObject {
+  
   var remove_keyboard: Boolean
+  
   var selective: js.UndefOr[Boolean] = js.undefined
 }
-
 object ReplyKeyboardRemove {
-  @scala.inline
-  def apply(remove_keyboard: Boolean, selective: js.UndefOr[Boolean] = js.undefined): ReplyKeyboardRemove = {
+  
+  inline def apply(remove_keyboard: Boolean): ReplyKeyboardRemove = {
     val __obj = js.Dynamic.literal(remove_keyboard = remove_keyboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(selective)) __obj.updateDynamic("selective")(selective.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplyKeyboardRemove]
   }
+  
+  extension [Self <: ReplyKeyboardRemove](x: Self) {
+    
+    inline def setRemove_keyboard(value: Boolean): Self = StObject.set(x, "remove_keyboard", value.asInstanceOf[js.Any])
+    
+    inline def setSelective(value: Boolean): Self = StObject.set(x, "selective", value.asInstanceOf[js.Any])
+    
+    inline def setSelectiveUndefined: Self = StObject.set(x, "selective", js.undefined)
+  }
 }
-

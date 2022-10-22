@@ -1,10 +1,11 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typingsJapgolly.jsrsasign.AnonRsaprvkey
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * X.509 CRL class to sign and generate hex encoded CRL
@@ -30,25 +31,53 @@ import scala.scalajs.js.annotation._
   * //     signatureAlgorithm   AlgorithmIdentifier,
   * //     signatureValue       BIT STRING  }
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.CRL")
-@js.native
-class CRL () extends ASN1Object {
-  def this(params: AnonRsaprvkey) = this()
+trait CRL
+  extends StObject
+     with ASN1Object {
+  
   /**
-    * get PEM formatted CRL string after signed
-    * @return PEM formatted string of certificate
+    * get PEM formatted CRL string after signed.
+    * @return PEM formatted string of CRL
+    * @description
+    * This method returns a string of PEM formatted CRL.
     * @example
-    * var cert = new KJUR.asn1.x509.CRL({'tbsobj': tbs, 'rsaprvkey': prvKey});
-    * cert.sign();
-    * var sPEM =  cert.getPEMString();
+    * crl = new KJUR.asn1.x509.CRL({...});
+    * crl.getPEM() →
+    * "-----BEGIN X509 CRL-----\r\n..."
     */
-  def getPEMString(): String = js.native
+  def getPEM(): String
+  
   /**
     * sign TBSCertList and set signature value internally
     * @example
     * var cert = new KJUR.asn1.x509.CRL({'tbsobj': tbs, 'prvkeyobj': prvKey});
     * cert.sign();
     */
-  def sign(): Unit = js.native
+  def sign(): Unit
 }
-
+object CRL {
+  
+  inline def apply(
+    getEncodedHex: CallbackTo[String],
+    getFreshValueHex: CallbackTo[String],
+    getLengthHexFromValue: CallbackTo[String],
+    getPEM: CallbackTo[String],
+    getValueHex: CallbackTo[String],
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    sign: Callback
+  ): CRL = {
+    val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getPEM = getPEM.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], sign = sign.toJsFn, params = null)
+    __obj.asInstanceOf[CRL]
+  }
+  
+  extension [Self <: CRL](x: Self) {
+    
+    inline def setGetPEM(value: CallbackTo[String]): Self = StObject.set(x, "getPEM", value.toJsFn)
+    
+    inline def setSign(value: Callback): Self = StObject.set(x, "sign", value.toJsFn)
+  }
+}

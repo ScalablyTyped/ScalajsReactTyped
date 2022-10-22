@@ -1,25 +1,27 @@
 package typingsJapgolly.nodeAbi
 
 import typingsJapgolly.nodeAbi.mod.Runtime
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeAbiStrings {
-  @js.native
-  sealed trait electron extends Runtime
   
   @js.native
-  sealed trait node extends Runtime
+  sealed trait electron
+    extends StObject
+       with Runtime
+  inline def electron: electron = "electron".asInstanceOf[electron]
   
   @js.native
-  sealed trait `node-webkit` extends Runtime
+  sealed trait node
+    extends StObject
+       with Runtime
+  inline def node: node = "node".asInstanceOf[node]
   
-  @scala.inline
-  def electron: electron = "electron".asInstanceOf[electron]
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
-  @scala.inline
-  def `node-webkit`: `node-webkit` = "node-webkit".asInstanceOf[`node-webkit`]
+  @js.native
+  sealed trait `node-webkit`
+    extends StObject
+       with Runtime
+  inline def `node-webkit`: `node-webkit` = "node-webkit".asInstanceOf[`node-webkit`]
 }
-

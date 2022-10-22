@@ -1,8 +1,8 @@
 package typingsJapgolly.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 动画 https://docs.alipay.com/mini/api/ui-animation
@@ -15,24 +15,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.aliApp.aliAppStrings.`step-start`
   - typingsJapgolly.aliApp.aliAppStrings.`step-end`
 */
-trait TimingFunction extends js.Object
-
+trait TimingFunction extends StObject
 object TimingFunction {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ease: typingsJapgolly.aliApp.aliAppStrings.ease = this.cast("ease")
-  @scala.inline
-  def `ease-in`: typingsJapgolly.aliApp.aliAppStrings.`ease-in` = this.cast("ease-in")
-  @scala.inline
-  def `ease-in-out`: typingsJapgolly.aliApp.aliAppStrings.`ease-in-out` = this.cast("ease-in-out")
-  @scala.inline
-  def `ease-out`: typingsJapgolly.aliApp.aliAppStrings.`ease-out` = this.cast("ease-out")
-  @scala.inline
-  def linear: typingsJapgolly.aliApp.aliAppStrings.linear = this.cast("linear")
-  @scala.inline
-  def `step-end`: typingsJapgolly.aliApp.aliAppStrings.`step-end` = this.cast("step-end")
-  @scala.inline
-  def `step-start`: typingsJapgolly.aliApp.aliAppStrings.`step-start` = this.cast("step-start")
+  
+  inline def ease: typingsJapgolly.aliApp.aliAppStrings.ease = "ease".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.ease]
+  
+  inline def `ease-in`: typingsJapgolly.aliApp.aliAppStrings.`ease-in` = "ease-in".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.`ease-in`]
+  
+  inline def `ease-in-out`: typingsJapgolly.aliApp.aliAppStrings.`ease-in-out` = "ease-in-out".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.`ease-in-out`]
+  
+  inline def `ease-out`: typingsJapgolly.aliApp.aliAppStrings.`ease-out` = "ease-out".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.`ease-out`]
+  
+  inline def linear: typingsJapgolly.aliApp.aliAppStrings.linear = "linear".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.linear]
+  
+  inline def `step-end`: typingsJapgolly.aliApp.aliAppStrings.`step-end` = "step-end".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.`step-end`]
+  
+  inline def `step-start`: typingsJapgolly.aliApp.aliAppStrings.`step-start` = "step-start".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.`step-start`]
 }
-

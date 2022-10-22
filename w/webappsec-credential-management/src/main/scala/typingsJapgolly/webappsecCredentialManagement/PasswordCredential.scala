@@ -1,24 +1,18 @@
 package typingsJapgolly.webappsecCredentialManagement
 
-import org.scalajs.dom.raw.HTMLFormElement
+import typingsJapgolly.webappsecCredentialManagement.webappsecCredentialManagementStrings.password
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://www.w3.org/TR/credential-management-1/#passwordcredential}
   */
-@JSGlobal("PasswordCredential")
-@js.native
-class PasswordCredential protected ()
-  extends SiteBoundCredential
+trait PasswordCredential
+  extends StObject
+     with SiteBoundCredential
      with CredentialType {
-  def this(data: HTMLFormElement) = this()
-  /**
-    * @see {@link https://www.w3.org/TR/credential-management-1/#dom-passwordcredential-passwordcredential-data}
-    * @see {@link https://www.w3.org/TR/credential-management-1/#dom-passwordcredential-passwordcredential}
-    */
-  def this(data: PasswordCredentialData) = this()
+  
   /**
     * If the developer wishes to specify additional data to insert into the
     * request body when submitting the credential information to a remote
@@ -27,7 +21,8 @@ class PasswordCredential protected ()
     * mixed into the object to produce the body. The value is {@code null}
     * unless otherwise specified.
     */
-  var additionalData: CredentialBodyType | Null = js.native
+  var additionalData: CredentialBodyType | Null
+  
   /**
     * Represents the name which will be used for the ID field when submitting
     * the PasswordCredential to a remote endpoint via {@code fetch()}. It
@@ -35,14 +30,16 @@ class PasswordCredential protected ()
     * whatever the backend service expects.
     * @see {@link https://www.w3.org/TR/credential-management-1/#dom-passwordcredential-idname}
     */
-  var idName: String = js.native
+  var idName: String
+  
   /**
     * The plain-text password. Returned for implementation of the 08/04/2017
     * Working Draft of Credential Management, not returned before this.
     *
     * @see {@link https://www.w3.org/TR/credential-management-1/#passwordcredential}
     */
-  val password: js.UndefOr[String] = js.native
+  val password: js.UndefOr[String] = js.undefined
+  
   /**
     * Represents the name which will be used for the ID field when submitting
     * the PasswordCredential to a remote endpoint via fetch(). It defaults to
@@ -51,8 +48,33 @@ class PasswordCredential protected ()
     *
     * @see {@link https://www.w3.org/TR/credential-management-1/#dom-passwordcredential-passwordname}
     */
-  var passwordName: String = js.native
+  var passwordName: String
+  
   @JSName("type")
-  val type_PasswordCredential: typingsJapgolly.webappsecCredentialManagement.webappsecCredentialManagementStrings.password = js.native
+  val type_PasswordCredential: typingsJapgolly.webappsecCredentialManagement.webappsecCredentialManagementStrings.password
 }
-
+object PasswordCredential {
+  
+  inline def apply(id: String, idName: String, passwordName: String): PasswordCredential = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], idName = idName.asInstanceOf[js.Any], passwordName = passwordName.asInstanceOf[js.Any], additionalData = null, iconURL = null, name = null)
+    __obj.updateDynamic("type")("password")
+    __obj.asInstanceOf[PasswordCredential]
+  }
+  
+  extension [Self <: PasswordCredential](x: Self) {
+    
+    inline def setAdditionalData(value: CredentialBodyType): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalDataNull: Self = StObject.set(x, "additionalData", null)
+    
+    inline def setIdName(value: String): Self = StObject.set(x, "idName", value.asInstanceOf[js.Any])
+    
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    
+    inline def setPasswordName(value: String): Self = StObject.set(x, "passwordName", value.asInstanceOf[js.Any])
+    
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    
+    inline def setType(value: password): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
+}

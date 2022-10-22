@@ -1,8 +1,8 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.estree.mod.ImportSpecifier
@@ -10,78 +10,30 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.estree.mod.ImportNamespaceSpecifier
   - typingsJapgolly.estree.mod.ExportSpecifier
 */
-trait ModuleSpecifier extends Node
-
+trait ModuleSpecifier extends StObject
 object ModuleSpecifier {
-  @scala.inline
-  def ImportSpecifier(
-    imported: Identifier,
-    local: Identifier,
-    `type`: typingsJapgolly.estree.estreeStrings.ImportSpecifier,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ModuleSpecifier = {
-    val __obj = js.Dynamic.literal(imported = imported.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleSpecifier]
-  }
-  @scala.inline
-  def ImportDefaultSpecifier(
-    local: Identifier,
-    `type`: typingsJapgolly.estree.estreeStrings.ImportDefaultSpecifier,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ModuleSpecifier = {
-    val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleSpecifier]
-  }
-  @scala.inline
-  def ImportNamespaceSpecifier(
-    local: Identifier,
-    `type`: typingsJapgolly.estree.estreeStrings.ImportNamespaceSpecifier,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ModuleSpecifier = {
-    val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleSpecifier]
-  }
-  @scala.inline
-  def ExportSpecifier(
-    exported: Identifier,
-    local: Identifier,
-    `type`: typingsJapgolly.estree.estreeStrings.ExportSpecifier,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ModuleSpecifier = {
+  
+  inline def ExportSpecifier(exported: Identifier, local: Identifier): typingsJapgolly.estree.mod.ExportSpecifier = {
     val __obj = js.Dynamic.literal(exported = exported.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleSpecifier]
+    __obj.updateDynamic("type")("ExportSpecifier")
+    __obj.asInstanceOf[typingsJapgolly.estree.mod.ExportSpecifier]
+  }
+  
+  inline def ImportDefaultSpecifier(local: Identifier): typingsJapgolly.estree.mod.ImportDefaultSpecifier = {
+    val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ImportDefaultSpecifier")
+    __obj.asInstanceOf[typingsJapgolly.estree.mod.ImportDefaultSpecifier]
+  }
+  
+  inline def ImportNamespaceSpecifier(local: Identifier): typingsJapgolly.estree.mod.ImportNamespaceSpecifier = {
+    val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ImportNamespaceSpecifier")
+    __obj.asInstanceOf[typingsJapgolly.estree.mod.ImportNamespaceSpecifier]
+  }
+  
+  inline def ImportSpecifier(imported: Identifier, local: Identifier): typingsJapgolly.estree.mod.ImportSpecifier = {
+    val __obj = js.Dynamic.literal(imported = imported.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ImportSpecifier")
+    __obj.asInstanceOf[typingsJapgolly.estree.mod.ImportSpecifier]
   }
 }
-

@@ -1,20 +1,25 @@
 package typingsJapgolly.protobufjs.mod.common
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a google.protobuf.BoolValue message. */
-trait IBoolValue extends js.Object {
+trait IBoolValue extends StObject {
+  
   var value: js.UndefOr[Boolean] = js.undefined
 }
-
 object IBoolValue {
-  @scala.inline
-  def apply(value: js.UndefOr[Boolean] = js.undefined): IBoolValue = {
+  
+  inline def apply(): IBoolValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBoolValue]
   }
+  
+  extension [Self <: IBoolValue](x: Self) {
+    
+    inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

@@ -1,12 +1,11 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.seleniumWebdriver.capabilitiesMod.Capabilities
-  - typingsJapgolly.seleniumWebdriver.AnonDesired
+  - typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities
+  - typingsJapgolly.seleniumWebdriver.anon.Desired
 */
-trait CreateSessionCapabilities extends js.Object
-
+trait CreateSessionCapabilities extends StObject

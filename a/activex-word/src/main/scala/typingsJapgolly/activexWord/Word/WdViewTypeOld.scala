@@ -1,23 +1,19 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
-import typingsJapgolly.activexWord.activexWordNumbers.`6`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import typingsJapgolly.activexWord.activexWordInts.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`6`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`6`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
 */
-trait WdViewTypeOld extends js.Object
-
+trait WdViewTypeOld extends StObject
 object WdViewTypeOld {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdOnlineView: `6` = this.cast(6)
-  @scala.inline
-  def wdPageView: `3` = this.cast(3)
+  
+  inline def wdOnlineView: `6` = 6.asInstanceOf[`6`]
+  
+  inline def wdPageView: `3` = 3.asInstanceOf[`3`]
 }
-

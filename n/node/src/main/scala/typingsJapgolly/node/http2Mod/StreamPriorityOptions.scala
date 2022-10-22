@@ -1,30 +1,42 @@
 package typingsJapgolly.node.http2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StreamPriorityOptions extends js.Object {
+trait StreamPriorityOptions extends StObject {
+  
   var exclusive: js.UndefOr[Boolean] = js.undefined
+  
   var parent: js.UndefOr[Double] = js.undefined
+  
   var silent: js.UndefOr[Boolean] = js.undefined
+  
   var weight: js.UndefOr[Double] = js.undefined
 }
-
 object StreamPriorityOptions {
-  @scala.inline
-  def apply(
-    exclusive: js.UndefOr[Boolean] = js.undefined,
-    parent: Int | Double = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    weight: Int | Double = null
-  ): StreamPriorityOptions = {
+  
+  inline def apply(): StreamPriorityOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamPriorityOptions]
   }
+  
+  extension [Self <: StreamPriorityOptions](x: Self) {
+    
+    inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    
+    inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+    
+    inline def setParent(value: Double): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

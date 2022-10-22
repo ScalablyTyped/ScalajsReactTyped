@@ -1,13 +1,26 @@
 package typingsJapgolly.webpack.mod
 
+import typingsJapgolly.webpack.webpackBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webpack", "IgnorePlugin")
 @js.native
-class IgnorePlugin protected () extends Plugin {
-  def this(requestRegExp: js.Any) = this()
-  def this(requestRegExp: js.Any, contextRegExp: js.Any) = this()
+open class IgnorePlugin protected () extends StObject {
+  def this(options: IgnorePluginOptions) = this()
+  
+  /**
+  	 * Apply the plugin
+  	 */
+  @JSName("apply")
+  def apply(compiler: Compiler): Unit = js.native
+  
+  /**
+  	 * Note that if "contextRegExp" is given, both the "resourceRegExp"
+  	 * and "contextRegExp" have to match.
+  	 */
+  def checkIgnore(resolveData: ResolveData): js.UndefOr[`false`] = js.native
+  
+  var options: IgnorePluginOptions = js.native
 }
-

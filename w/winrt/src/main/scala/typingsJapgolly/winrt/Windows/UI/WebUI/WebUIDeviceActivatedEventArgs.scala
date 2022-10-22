@@ -4,26 +4,25 @@ import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.ActivationKind
 import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.IDeviceActivatedEventArgs
 import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.SplashScreen
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.WebUI.WebUIDeviceActivatedEventArgs")
-@js.native
-class WebUIDeviceActivatedEventArgs ()
-  extends IDeviceActivatedEventArgs
-     with IActivatedEventArgsDeferral {
-  /* CompleteClass */
-  override var activatedOperation: ActivatedOperation = js.native
-  /* CompleteClass */
-  override var deviceInformationId: String = js.native
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
-  /* CompleteClass */
-  override var verb: String = js.native
+trait WebUIDeviceActivatedEventArgs
+  extends StObject
+     with IDeviceActivatedEventArgs
+     with IActivatedEventArgsDeferral
+object WebUIDeviceActivatedEventArgs {
+  
+  inline def apply(
+    activatedOperation: ActivatedOperation,
+    deviceInformationId: String,
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen,
+    verb: String
+  ): WebUIDeviceActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any], deviceInformationId = deviceInformationId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], verb = verb.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebUIDeviceActivatedEventArgs]
+  }
 }
-

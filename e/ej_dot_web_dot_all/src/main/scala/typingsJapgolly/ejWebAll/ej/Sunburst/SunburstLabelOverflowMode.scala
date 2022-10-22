@@ -1,38 +1,30 @@
 package typingsJapgolly.ejWebAll.ej.Sunburst
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SunburstLabelOverflowMode extends js.Object
-
+sealed trait SunburstLabelOverflowMode extends StObject
 @JSGlobal("ej.Sunburst.SunburstLabelOverflowMode")
 @js.native
-object SunburstLabelOverflowMode extends js.Object {
-  //string
-  @js.native
-  sealed trait Hide extends SunburstLabelOverflowMode
+object SunburstLabelOverflowMode extends StObject {
   
   //string
   @js.native
-  sealed trait None extends SunburstLabelOverflowMode
+  sealed trait Hide
+    extends StObject
+       with SunburstLabelOverflowMode
   
   //string
   @js.native
-  sealed trait Trim extends SunburstLabelOverflowMode
+  sealed trait None
+    extends StObject
+       with SunburstLabelOverflowMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SunburstLabelOverflowMode with Double] = js.native
-  /* 1 */ @js.native
-  object Hide extends TopLevel[Hide with Double]
-  
-  /* 2 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 0 */ @js.native
-  object Trim extends TopLevel[Trim with Double]
-  
+  //string
+  @js.native
+  sealed trait Trim
+    extends StObject
+       with SunburstLabelOverflowMode
 }
-

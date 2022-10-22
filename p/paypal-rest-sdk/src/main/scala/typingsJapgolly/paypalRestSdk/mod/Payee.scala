@@ -1,22 +1,33 @@
 package typingsJapgolly.paypalRestSdk.mod
 
-import typingsJapgolly.paypalRestSdk.AnonBrandname
+import typingsJapgolly.paypalRestSdk.anon.Brandname
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Payee extends js.Object {
+trait Payee extends StObject {
+  
   var email: String
+  
   var merchant_id: String
-  var payee_display_metadata: js.UndefOr[AnonBrandname] = js.undefined
+  
+  var payee_display_metadata: js.UndefOr[Brandname] = js.undefined
 }
-
 object Payee {
-  @scala.inline
-  def apply(email: String, merchant_id: String, payee_display_metadata: AnonBrandname = null): Payee = {
+  
+  inline def apply(email: String, merchant_id: String): Payee = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], merchant_id = merchant_id.asInstanceOf[js.Any])
-    if (payee_display_metadata != null) __obj.updateDynamic("payee_display_metadata")(payee_display_metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payee]
   }
+  
+  extension [Self <: Payee](x: Self) {
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setMerchant_id(value: String): Self = StObject.set(x, "merchant_id", value.asInstanceOf[js.Any])
+    
+    inline def setPayee_display_metadata(value: Brandname): Self = StObject.set(x, "payee_display_metadata", value.asInstanceOf[js.Any])
+    
+    inline def setPayee_display_metadataUndefined: Self = StObject.set(x, "payee_display_metadata", js.undefined)
+  }
 }
-

@@ -1,14 +1,25 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BootstrapClientFloatingActionButtonContextChangingEventArgs")
-@js.native
-class BootstrapClientFloatingActionButtonContextChangingEventArgs protected () extends ASPxClientFloatingActionButtonContextChangingEventArgs {
-  def this(action: BootstrapClientFABAction) = this()
+trait BootstrapClientFloatingActionButtonContextChangingEventArgs
+  extends StObject
+     with ASPxClientFloatingActionButtonContextChangingEventArgs {
+  
   @JSName("action")
-  var action_BootstrapClientFloatingActionButtonContextChangingEventArgs: BootstrapClientFABAction = js.native
+  var action_BootstrapClientFloatingActionButtonContextChangingEventArgs: BootstrapClientFABAction
 }
-
+object BootstrapClientFloatingActionButtonContextChangingEventArgs {
+  
+  inline def apply(action: BootstrapClientFABAction): BootstrapClientFloatingActionButtonContextChangingEventArgs = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapClientFloatingActionButtonContextChangingEventArgs]
+  }
+  
+  extension [Self <: BootstrapClientFloatingActionButtonContextChangingEventArgs](x: Self) {
+    
+    inline def setAction(value: BootstrapClientFABAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+  }
+}

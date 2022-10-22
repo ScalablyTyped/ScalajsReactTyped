@@ -1,36 +1,49 @@
 package typingsJapgolly.bloem
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.bloem.anon.Initialcapacity
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bloem", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("bloem", JSImport.Namespace)
   @js.native
-  class Bloem protected () extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("bloem", "Bloem")
+  @js.native
+  open class Bloem protected () extends StObject {
     def this(size: Double, slices: Double, buffer: Buffer) = this()
+    
     def add(key: Buffer): Unit = js.native
+    
     def has(key: Buffer): Boolean = js.native
   }
   
+  @JSImport("bloem", "SafeBloem")
   @js.native
-  class SafeBloem protected () extends js.Object {
+  open class SafeBloem protected () extends StObject {
     def this(capacity: Double, error_rate: Double, buffer: Buffer) = this()
+    
     def add(key: Buffer): Boolean = js.native
+    
     def has(key: Buffer): Boolean = js.native
   }
   
+  @JSImport("bloem", "ScalingBloem")
   @js.native
-  class ScalingBloem protected () extends js.Object {
+  open class ScalingBloem protected () extends StObject {
     def this(error_rate: Double) = this()
-    def this(error_rate: Double, options: AnonInitialcapacity) = this()
+    def this(error_rate: Double, options: Initialcapacity) = this()
+    
     def add(key: Buffer): Unit = js.native
+    
     def has(key: Buffer): Boolean = js.native
   }
   
-  def calculateSize(capacity: Double, error_rate: Double): Double = js.native
-  def calculateSlices(size: Double, capacity: Double): Double = js.native
+  inline def calculateSize(capacity: Double, error_rate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSize")(capacity.asInstanceOf[js.Any], error_rate.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def calculateSlices(size: Double, capacity: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSlices")(size.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

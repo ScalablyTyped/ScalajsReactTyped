@@ -1,23 +1,39 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BubbleDataset extends Dataset {
+trait BubbleDataset
+  extends StObject
+     with Dataset {
+  
   var config: js.UndefOr[BubbleDatasetConfig] = js.undefined
+  
   @JSName("label")
   var label_BubbleDataset: String
+  
   var values: js.UndefOr[js.Array[BubbleValue]] = js.undefined
 }
-
 object BubbleDataset {
-  @scala.inline
-  def apply(label: String, config: BubbleDatasetConfig = null, values: js.Array[BubbleValue] = null): BubbleDataset = {
+  
+  inline def apply(label: String): BubbleDataset = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[BubbleDataset]
   }
+  
+  extension [Self <: BubbleDataset](x: Self) {
+    
+    inline def setConfig(value: BubbleDatasetConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setValues(value: js.Array[BubbleValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: BubbleValue*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

@@ -2,17 +2,19 @@ package typingsJapgolly.reactNative.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactEventFrom
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImagePropsIOS extends js.Object {
+trait ImagePropsIOS extends StObject {
+  
   /**
     * blurRadius: the blur radius of the blur filter added to the image
     * @platform ios
     */
   var blurRadius: js.UndefOr[Double] = js.undefined
+  
   /**
     * When the image is resized, the corners of the size specified by capInsets will stay a fixed size,
     * but the center content and borders of the image will be stretched.
@@ -20,6 +22,7 @@ trait ImagePropsIOS extends js.Object {
     * More info on Apple documentation
     */
   var capInsets: js.UndefOr[Insets] = js.undefined
+  
   /**
     * Invoked when a partial load of the image is complete. The definition of
     * what constitutes a "partial load" is loader specific though this is meant
@@ -27,26 +30,35 @@ trait ImagePropsIOS extends js.Object {
     * @platform ios
     */
   var onPartialLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * Invoked on download progress with {nativeEvent: {loaded, total}}
     */
-  var onProgress: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
+  var onProgress: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle & Element], Unit]] = js.undefined
 }
-
 object ImagePropsIOS {
-  @scala.inline
-  def apply(
-    blurRadius: Int | Double = null,
-    capInsets: Insets = null,
-    onPartialLoad: js.UndefOr[Callback] = js.undefined,
-    onProgress: ReactEventFrom[NodeHandle with Element] => Callback = null
-  ): ImagePropsIOS = {
+  
+  inline def apply(): ImagePropsIOS = {
     val __obj = js.Dynamic.literal()
-    if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
-    if (capInsets != null) __obj.updateDynamic("capInsets")(capInsets.asInstanceOf[js.Any])
-    onPartialLoad.foreach(p => __obj.updateDynamic("onPartialLoad")(p.toJsFn))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onProgress(t0).runNow()))
     __obj.asInstanceOf[ImagePropsIOS]
   }
+  
+  extension [Self <: ImagePropsIOS](x: Self) {
+    
+    inline def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
+    
+    inline def setCapInsets(value: Insets): Self = StObject.set(x, "capInsets", value.asInstanceOf[js.Any])
+    
+    inline def setCapInsetsUndefined: Self = StObject.set(x, "capInsets", js.undefined)
+    
+    inline def setOnPartialLoad(value: Callback): Self = StObject.set(x, "onPartialLoad", value.toJsFn)
+    
+    inline def setOnPartialLoadUndefined: Self = StObject.set(x, "onPartialLoad", js.undefined)
+    
+    inline def setOnProgress(value: ReactEventFrom[NodeHandle & Element] => Callback): Self = StObject.set(x, "onProgress", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+  }
 }
-

@@ -1,31 +1,25 @@
 package typingsJapgolly.reactNative.mod
 
-import typingsJapgolly.reactNative.reactNativeStrings.RippleAndroid
-import typingsJapgolly.reactNative.reactNativeStrings.ThemeAttrAndroid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNative.mod.RippleBackgroundPropType
   - typingsJapgolly.reactNative.mod.ThemeAttributeBackgroundPropType
 */
-trait BackgroundPropType extends js.Object
-
+trait BackgroundPropType extends StObject
 object BackgroundPropType {
-  @scala.inline
-  def RippleBackgroundPropType(`type`: RippleAndroid, borderless: js.UndefOr[Boolean] = js.undefined, color: Int | Double = null): BackgroundPropType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BackgroundPropType]
+  
+  inline def RippleBackgroundPropType(borderless: Boolean): typingsJapgolly.reactNative.mod.RippleBackgroundPropType = {
+    val __obj = js.Dynamic.literal(borderless = borderless.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RippleAndroid")
+    __obj.asInstanceOf[typingsJapgolly.reactNative.mod.RippleBackgroundPropType]
   }
-  @scala.inline
-  def ThemeAttributeBackgroundPropType(attribute: String, `type`: ThemeAttrAndroid): BackgroundPropType = {
+  
+  inline def ThemeAttributeBackgroundPropType(attribute: String): typingsJapgolly.reactNative.mod.ThemeAttributeBackgroundPropType = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BackgroundPropType]
+    __obj.updateDynamic("type")("ThemeAttrAndroid")
+    __obj.asInstanceOf[typingsJapgolly.reactNative.mod.ThemeAttributeBackgroundPropType]
   }
 }
-

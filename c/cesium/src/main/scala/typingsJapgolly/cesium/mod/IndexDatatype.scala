@@ -1,44 +1,45 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait IndexDatatype extends js.Object
-
+sealed trait IndexDatatype extends StObject
 @JSImport("cesium", "IndexDatatype")
 @js.native
-object IndexDatatype extends js.Object {
-  @js.native
-  sealed trait UNSIGNED_BYTE extends IndexDatatype
-  
-  @js.native
-  sealed trait UNSIGNED_INT extends IndexDatatype
-  
-  @js.native
-  sealed trait UNSIGNED_SHORT extends IndexDatatype
+object IndexDatatype extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[IndexDatatype with Double] = js.native
-  def createTypedArray(numberOfVertices: Double, indicesLengthOrArray: js.Any): scala.scalajs.js.typedarray.Uint16Array | scala.scalajs.js.typedarray.Uint32Array = js.native
-  def createTypedArrayFromArrayBuffer(
-    numberOfVertices: Double,
-    sourceArray: scala.scalajs.js.typedarray.ArrayBuffer,
-    byteOffset: Double,
-    length: Double
-  ): scala.scalajs.js.typedarray.Uint16Array | scala.scalajs.js.typedarray.Uint32Array = js.native
-  def getSizeInBytes(indexDatatype: IndexDatatype): Double = js.native
-  def validate(indexDatatype: IndexDatatype): Boolean = js.native
-  /* 0 */ @js.native
-  object UNSIGNED_BYTE extends TopLevel[UNSIGNED_BYTE with Double]
+  def apply(value: scala.Nothing): js.UndefOr[IndexDatatype & scala.Nothing] = js.native
   
-  /* 2 */ @js.native
-  object UNSIGNED_INT extends TopLevel[UNSIGNED_INT with Double]
+  /**
+    * 8-bit unsigned byte corresponding to <code>UNSIGNED_BYTE</code> and the type
+    * of an element in <code>Uint8Array</code>.
+    */
+  @js.native
+  sealed trait UNSIGNED_BYTE
+    extends StObject
+       with IndexDatatype
+  /* WebGLConstants.UNSIGNED_BYTE */ val UNSIGNED_BYTE: typingsJapgolly.cesium.mod.IndexDatatype.UNSIGNED_BYTE & scala.Nothing = js.native
   
-  /* 1 */ @js.native
-  object UNSIGNED_SHORT extends TopLevel[UNSIGNED_SHORT with Double]
+  /**
+    * 32-bit unsigned int corresponding to <code>UNSIGNED_INT</code> and the type
+    * of an element in <code>Uint32Array</code>.
+    */
+  @js.native
+  sealed trait UNSIGNED_INT
+    extends StObject
+       with IndexDatatype
+  /* WebGLConstants.UNSIGNED_INT */ val UNSIGNED_INT: typingsJapgolly.cesium.mod.IndexDatatype.UNSIGNED_INT & scala.Nothing = js.native
   
+  /**
+    * 16-bit unsigned short corresponding to <code>UNSIGNED_SHORT</code> and the type
+    * of an element in <code>Uint16Array</code>.
+    */
+  @js.native
+  sealed trait UNSIGNED_SHORT
+    extends StObject
+       with IndexDatatype
+  /* WebGLConstants.UNSIGNED_SHORT */ val UNSIGNED_SHORT: typingsJapgolly.cesium.mod.IndexDatatype.UNSIGNED_SHORT & scala.Nothing = js.native
 }
-

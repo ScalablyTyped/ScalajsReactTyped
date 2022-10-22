@@ -1,20 +1,28 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExpandNodeInfo extends js.Object {
-  var nodePath: String
+trait ExpandNodeInfo extends StObject {
+  
+  var nodePath: js.UndefOr[String] = js.undefined
+  
   var sessionId: String
 }
-
 object ExpandNodeInfo {
-  @scala.inline
-  def apply(nodePath: String, sessionId: String): ExpandNodeInfo = {
-    val __obj = js.Dynamic.literal(nodePath = nodePath.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
   
+  inline def apply(sessionId: String): ExpandNodeInfo = {
+    val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandNodeInfo]
   }
+  
+  extension [Self <: ExpandNodeInfo](x: Self) {
+    
+    inline def setNodePath(value: String): Self = StObject.set(x, "nodePath", value.asInstanceOf[js.Any])
+    
+    inline def setNodePathUndefined: Self = StObject.set(x, "nodePath", js.undefined)
+    
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+  }
 }
-

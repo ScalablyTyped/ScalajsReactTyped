@@ -1,15 +1,16 @@
 package typingsJapgolly.easeljs.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("createjs.Shape")
 @js.native
-class Shape () extends DisplayObject {
-  def this(graphics: Graphics) = this()
+trait Shape
+  extends StObject
+     with DisplayObject {
+  
+  def clone(recursive: Boolean): Shape = js.native
+  
   // properties
   var graphics: Graphics = js.native
-  def clone(recursive: Boolean): Shape = js.native
 }
-

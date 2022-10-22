@@ -1,24 +1,27 @@
 package typingsJapgolly.webrtc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcofferoptions
-trait RTCOfferOptions extends RTCOfferAnswerOptions {
+trait RTCOfferOptions
+  extends StObject
+     with RTCOfferAnswerOptions {
+  
   var iceRestart: js.UndefOr[Boolean] = js.undefined
 }
-
 object RTCOfferOptions {
-  @scala.inline
-  def apply(
-    iceRestart: js.UndefOr[Boolean] = js.undefined,
-    voiceActivityDetection: js.UndefOr[Boolean] = js.undefined
-  ): RTCOfferOptions = {
+  
+  inline def apply(): RTCOfferOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(iceRestart)) __obj.updateDynamic("iceRestart")(iceRestart.asInstanceOf[js.Any])
-    if (!js.isUndefined(voiceActivityDetection)) __obj.updateDynamic("voiceActivityDetection")(voiceActivityDetection.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCOfferOptions]
   }
+  
+  extension [Self <: RTCOfferOptions](x: Self) {
+    
+    inline def setIceRestart(value: Boolean): Self = StObject.set(x, "iceRestart", value.asInstanceOf[js.Any])
+    
+    inline def setIceRestartUndefined: Self = StObject.set(x, "iceRestart", js.undefined)
+  }
 }
-

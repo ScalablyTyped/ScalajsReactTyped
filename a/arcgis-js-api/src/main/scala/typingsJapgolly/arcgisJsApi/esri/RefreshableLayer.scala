@@ -1,30 +1,39 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RefreshableLayer extends js.Object {
-  /**
-    * Refresh interval of the layer in minutes. Value of `0` indicates no refresh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
-    *
-    * @default 0
-    */
-  var refreshInterval: Double
+trait RefreshableLayer extends StObject {
+  
   /**
     * Fetches all the data for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refresh)
-    *
-    *
     */
-  def refresh(): Unit
+  def refresh(): scala.Unit
+  
+  /**
+    * Refresh interval of the layer in minutes.
+    *
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
+    */
+  var refreshInterval: Double
 }
-
-@JSGlobal("__esri.RefreshableLayer")
-@js.native
-object RefreshableLayer extends TopLevel[RefreshableLayerConstructor]
-
+object RefreshableLayer {
+  
+  inline def apply(refresh: Callback, refreshInterval: Double): RefreshableLayer = {
+    val __obj = js.Dynamic.literal(refresh = refresh.toJsFn, refreshInterval = refreshInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RefreshableLayer]
+  }
+  
+  extension [Self <: RefreshableLayer](x: Self) {
+    
+    inline def setRefresh(value: Callback): Self = StObject.set(x, "refresh", value.toJsFn)
+    
+    inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
+  }
+}

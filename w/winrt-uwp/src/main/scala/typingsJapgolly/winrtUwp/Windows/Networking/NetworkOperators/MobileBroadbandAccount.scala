@@ -1,43 +1,62 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.NetworkOperators
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a mobile broadband account and related information about the network provider for the account. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccount")
-@js.native
-abstract class MobileBroadbandAccount () extends js.Object {
+trait MobileBroadbandAccount extends StObject {
+  
   /** Gets the mobile broadband device information associated with this account. */
-  var currentDeviceInformation: MobileBroadbandDeviceInformation = js.native
+  var currentDeviceInformation: MobileBroadbandDeviceInformation
+  
   /** Gets the Mobile Broadband network object for this account. */
-  var currentNetwork: MobileBroadbandNetwork = js.native
-  /** Gets a unique identifier for the mobile broadband account. */
-  var networkAccountId: String = js.native
-  /** A unique identifier for the network provider for the mobile broadband account. */
-  var serviceProviderGuid: String = js.native
-  /** The name of the network provider for the mobile broadband account. */
-  var serviceProviderName: String = js.native
+  var currentNetwork: MobileBroadbandNetwork
+  
   /**
     * Retrieves an array of ConnectionProfile objects that represent connections associated with the Mobile Broadband account.
     * @return An array of ConnectionProfile objects.
     */
-  def getConnectionProfiles(): IVectorView[ConnectionProfile] = js.native
+  def getConnectionProfiles(): IVectorView[ConnectionProfile]
+  
+  /** Gets a unique identifier for the mobile broadband account. */
+  var networkAccountId: String
+  
+  /** A unique identifier for the network provider for the mobile broadband account. */
+  var serviceProviderGuid: String
+  
+  /** The name of the network provider for the mobile broadband account. */
+  var serviceProviderName: String
 }
-
-/* static members */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccount")
-@js.native
-object MobileBroadbandAccount extends js.Object {
-  /** A list of all network account IDs for the network service provider. */
-  var availableNetworkAccountIds: IVectorView[String] = js.native
-  /**
-    * Creates a mobile broadband account for the mobile device associated with the supplied network account ID.
-    * @param networkAccountId The network account ID to use to select the corresponding mobile broadband device to use for the account.
-    * @return A mobile broadband account for the mobile device associated with the supplied network account ID.
-    */
-  def createFromNetworkAccountId(networkAccountId: String): MobileBroadbandAccount = js.native
+object MobileBroadbandAccount {
+  
+  inline def apply(
+    currentDeviceInformation: MobileBroadbandDeviceInformation,
+    currentNetwork: MobileBroadbandNetwork,
+    getConnectionProfiles: CallbackTo[IVectorView[ConnectionProfile]],
+    networkAccountId: String,
+    serviceProviderGuid: String,
+    serviceProviderName: String
+  ): MobileBroadbandAccount = {
+    val __obj = js.Dynamic.literal(currentDeviceInformation = currentDeviceInformation.asInstanceOf[js.Any], currentNetwork = currentNetwork.asInstanceOf[js.Any], getConnectionProfiles = getConnectionProfiles.toJsFn, networkAccountId = networkAccountId.asInstanceOf[js.Any], serviceProviderGuid = serviceProviderGuid.asInstanceOf[js.Any], serviceProviderName = serviceProviderName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MobileBroadbandAccount]
+  }
+  
+  extension [Self <: MobileBroadbandAccount](x: Self) {
+    
+    inline def setCurrentDeviceInformation(value: MobileBroadbandDeviceInformation): Self = StObject.set(x, "currentDeviceInformation", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentNetwork(value: MobileBroadbandNetwork): Self = StObject.set(x, "currentNetwork", value.asInstanceOf[js.Any])
+    
+    inline def setGetConnectionProfiles(value: CallbackTo[IVectorView[ConnectionProfile]]): Self = StObject.set(x, "getConnectionProfiles", value.toJsFn)
+    
+    inline def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setServiceProviderGuid(value: String): Self = StObject.set(x, "serviceProviderGuid", value.asInstanceOf[js.Any])
+    
+    inline def setServiceProviderName(value: String): Self = StObject.set(x, "serviceProviderName", value.asInstanceOf[js.Any])
+  }
 }
-

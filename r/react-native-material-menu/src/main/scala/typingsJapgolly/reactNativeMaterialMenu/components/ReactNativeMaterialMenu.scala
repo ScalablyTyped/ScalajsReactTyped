@@ -1,47 +1,41 @@
 package typingsJapgolly.reactNativeMaterialMenu.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomElement
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNative.mod.StyleProp
+import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.reactNativeMaterialMenu.mod.MenuProps
 import typingsJapgolly.reactNativeMaterialMenu.mod.default
-import typingsJapgolly.std.StyleMedia_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactNativeMaterialMenu {
-  def apply(
-    animationDuration: Int | Double = null,
-    button: VdomElement = null,
-    onHidden: js.UndefOr[Callback] = js.undefined,
-    style: StyleMedia_ = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[MenuProps, default, Unit, MenuProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.rawElement.asInstanceOf[js.Any])
-    onHidden.foreach(p => __obj.updateDynamic("onHidden")(p.toJsFn))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeMaterialMenu.mod.MenuProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeMaterialMenu.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeMaterialMenu.mod.MenuProps])(children: _*)
-  }
   @JSImport("react-native-material-menu", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def animationDuration(value: Double): this.type = set("animationDuration", value.asInstanceOf[js.Any])
+    
+    inline def button(value: VdomElement): this.type = set("button", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onHidden(value: Callback): this.type = set("onHidden", value.toJsFn)
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def testID(value: String): this.type = set("testID", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactNativeMaterialMenu.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MenuProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

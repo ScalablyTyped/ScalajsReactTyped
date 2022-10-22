@@ -1,48 +1,49 @@
 package typingsJapgolly.routeNode
 
-import typingsJapgolly.routeNode.mod.QueryParamsMode
-import typingsJapgolly.routeNode.mod.TrailingSlashMode
+import typingsJapgolly.routeNode.distRouteNodeMod.QueryParamsMode
+import typingsJapgolly.routeNode.distRouteNodeMod.TrailingSlashMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeNodeStrings {
-  @js.native
-  sealed trait always extends TrailingSlashMode
   
   @js.native
   sealed trait default
-    extends QueryParamsMode
+    extends StObject
+       with QueryParamsMode
        with TrailingSlashMode
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait loose extends QueryParamsMode
+  sealed trait always
+    extends StObject
+       with TrailingSlashMode
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait never extends TrailingSlashMode
+  sealed trait loose
+    extends StObject
+       with QueryParamsMode
+  inline def loose: loose = "loose".asInstanceOf[loose]
   
   @js.native
-  sealed trait query extends js.Object
+  sealed trait never
+    extends StObject
+       with TrailingSlashMode
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
-  sealed trait strict extends QueryParamsMode
+  sealed trait query extends StObject
+  inline def query: query = "query".asInstanceOf[query]
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait strict
+    extends StObject
+       with QueryParamsMode
+  inline def strict: strict = "strict".asInstanceOf[strict]
   
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def loose: loose = "loose".asInstanceOf[loose]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  @js.native
+  sealed trait url extends StObject
+  inline def url: url = "url".asInstanceOf[url]
 }
-

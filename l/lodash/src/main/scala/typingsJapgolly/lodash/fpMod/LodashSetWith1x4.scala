@@ -3,12 +3,13 @@ package typingsJapgolly.lodash.fpMod
 import typingsJapgolly.lodash.mod.PropertyPath
 import typingsJapgolly.lodash.mod.SetWithCustomizer
 import typingsJapgolly.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashSetWith1x4 extends js.Object {
+trait LodashSetWith1x4 extends StObject {
+  
   def apply(customizer: __, path: PropertyPath): LodashSetWith1x6 = js.native
   def apply[T /* <: js.Object */](customizer: SetWithCustomizer[T]): LodashSetWith1x5[T] = js.native
   def apply[T /* <: js.Object */](customizer: SetWithCustomizer[T], path: PropertyPath): LodashSetWith1x7[T] = js.native
@@ -17,4 +18,3 @@ trait LodashSetWith1x4 extends js.Object {
   def apply[T /* <: js.Object */](customizer: __, path: PropertyPath, `object`: T): LodashSetWith1x14[T] = js.native
   def apply[T /* <: js.Object */](customizer: __, path: __, `object`: T): LodashSetWith1x12[T] = js.native
 }
-

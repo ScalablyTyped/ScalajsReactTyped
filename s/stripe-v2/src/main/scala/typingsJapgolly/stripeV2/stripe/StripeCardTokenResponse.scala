@@ -1,16 +1,18 @@
 package typingsJapgolly.stripeV2.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StripeCardTokenResponse extends StripeTokenResponse {
+trait StripeCardTokenResponse
+  extends StObject
+     with StripeTokenResponse {
+  
   var card: StripeCard
 }
-
 object StripeCardTokenResponse {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     card: StripeCard,
     client_ip: String,
     created: Double,
@@ -18,14 +20,16 @@ object StripeCardTokenResponse {
     livemode: Boolean,
     `object`: String,
     `type`: String,
-    used: Boolean,
-    error: StripeError = null
+    used: Boolean
   ): StripeCardTokenResponse = {
     val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any], client_ip = client_ip.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeCardTokenResponse]
   }
+  
+  extension [Self <: StripeCardTokenResponse](x: Self) {
+    
+    inline def setCard(value: StripeCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+  }
 }
-

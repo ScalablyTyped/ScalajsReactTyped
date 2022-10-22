@@ -1,57 +1,45 @@
 package typingsJapgolly.materialUi.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.materialUi.MaterialUI.CircularProgressProps
-import typingsJapgolly.materialUi.circularProgressMod.default
 import typingsJapgolly.materialUi.materialUiStrings.determinate
 import typingsJapgolly.materialUi.materialUiStrings.indeterminate
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CircularProgress {
-  def apply(
-    color: String = null,
-    innerStyle: CSSProperties = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    mode: determinate | indeterminate = null,
-    size: Int | Double = null,
-    style: CSSProperties = null,
-    thickness: Int | Double = null,
-    value: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CircularProgressProps, default, Unit, CircularProgressProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (innerStyle != null) __obj.updateDynamic("innerStyle")(innerStyle.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUi.MaterialUI.CircularProgressProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUi.circularProgressMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUi.MaterialUI.CircularProgressProps])(children: _*)
-  }
-  @JSImport("material-ui/CircularProgress", JSImport.Default)
+  @JSImport("material-ui", "CircularProgress")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.materialUi.mod.CircularProgress] {
+    
+    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def innerStyle(value: CSSProperties): this.type = set("innerStyle", value.asInstanceOf[js.Any])
+    
+    inline def max(value: Double): this.type = set("max", value.asInstanceOf[js.Any])
+    
+    inline def min(value: Double): this.type = set("min", value.asInstanceOf[js.Any])
+    
+    inline def mode(value: determinate | indeterminate): this.type = set("mode", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Double): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def thickness(value: Double): this.type = set("thickness", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Double): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: CircularProgress.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CircularProgressProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

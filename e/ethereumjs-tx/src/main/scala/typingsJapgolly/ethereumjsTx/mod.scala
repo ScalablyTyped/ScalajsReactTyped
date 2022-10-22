@@ -1,31 +1,33 @@
 package typingsJapgolly.ethereumjsTx
 
-import typingsJapgolly.ethereumjsTx.fakeMod.default
-import typingsJapgolly.ethereumjsTx.typesMod.BufferLike
-import typingsJapgolly.ethereumjsTx.typesMod.FakeTxData
-import typingsJapgolly.ethereumjsTx.typesMod.PrefixedHexString
-import typingsJapgolly.ethereumjsTx.typesMod.TransactionOptions
-import typingsJapgolly.ethereumjsTx.typesMod.TxData
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.ethereumjsTx.distFakeMod.default
+import typingsJapgolly.ethereumjsTx.distTypesMod.BufferLike
+import typingsJapgolly.ethereumjsTx.distTypesMod.FakeTxData
+import typingsJapgolly.ethereumjsTx.distTypesMod.PrefixedHexString
+import typingsJapgolly.ethereumjsTx.distTypesMod.TransactionOptions
+import typingsJapgolly.ethereumjsTx.distTypesMod.TxData
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ethereumjs-tx", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("ethereumjs-tx", "FakeTransaction")
   @js.native
-  class FakeTransaction () extends default {
+  open class FakeTransaction () extends default {
     def this(data: js.Array[BufferLike]) = this()
     def this(data: FakeTxData) = this()
     def this(data: PrefixedHexString) = this()
     def this(data: Buffer) = this()
     def this(data: js.Array[BufferLike], opts: TransactionOptions) = this()
+    def this(data: Unit, opts: TransactionOptions) = this()
     def this(data: FakeTxData, opts: TransactionOptions) = this()
     def this(data: PrefixedHexString, opts: TransactionOptions) = this()
     def this(data: Buffer, opts: TransactionOptions) = this()
   }
   
+  @JSImport("ethereumjs-tx", "Transaction")
   @js.native
   /**
     * Creates a new transaction from an object with its fields' values.
@@ -56,17 +58,16 @@ object mod extends js.Object {
     * const tx = new Transaction(txData);
     * ```
     */
-  class Transaction ()
-    extends typingsJapgolly.ethereumjsTx.transactionMod.default {
+  open class Transaction ()
+    extends typingsJapgolly.ethereumjsTx.distTransactionMod.default {
     def this(data: js.Array[BufferLike]) = this()
     def this(data: PrefixedHexString) = this()
     def this(data: TxData) = this()
     def this(data: Buffer) = this()
     def this(data: js.Array[BufferLike], opts: TransactionOptions) = this()
+    def this(data: Unit, opts: TransactionOptions) = this()
     def this(data: PrefixedHexString, opts: TransactionOptions) = this()
     def this(data: TxData, opts: TransactionOptions) = this()
     def this(data: Buffer, opts: TransactionOptions) = this()
   }
-  
 }
-

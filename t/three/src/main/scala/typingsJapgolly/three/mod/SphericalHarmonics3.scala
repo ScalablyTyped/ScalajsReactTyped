@@ -1,18 +1,19 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "SphericalHarmonics3")
 @js.native
-class SphericalHarmonics3 ()
-  extends typingsJapgolly.three.sphericalHarmonics3Mod.SphericalHarmonics3
-
+open class SphericalHarmonics3 ()
+  extends typingsJapgolly.three.srcThreeMod.SphericalHarmonics3
 /* static members */
-@JSImport("three", "SphericalHarmonics3")
-@js.native
-object SphericalHarmonics3 extends js.Object {
-  def getBasisAt(normal: typingsJapgolly.three.vector3Mod.Vector3, shBasis: js.Array[Double]): Unit = js.native
+object SphericalHarmonics3 {
+  
+  @JSImport("three", "SphericalHarmonics3")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getBasisAt(normal: typingsJapgolly.three.srcMathVector3Mod.Vector3, shBasis: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getBasisAt")(normal.asInstanceOf[js.Any], shBasis.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

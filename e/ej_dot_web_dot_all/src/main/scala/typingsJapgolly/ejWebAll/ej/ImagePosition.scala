@@ -1,45 +1,36 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ImagePosition extends js.Object
-
+sealed trait ImagePosition extends StObject
 @JSGlobal("ej.ImagePosition")
 @js.native
-object ImagePosition extends js.Object {
+object ImagePosition extends StObject {
+  
   //support for aligning text in top and image in bottom
   @js.native
-  sealed trait ImageBottom extends ImagePosition
+  sealed trait ImageBottom
+    extends StObject
+       with ImagePosition
   
   //support for aligning text in right and image in left
   @js.native
-  sealed trait ImageLeft extends ImagePosition
+  sealed trait ImageLeft
+    extends StObject
+       with ImagePosition
   
   //support for aligning text in left and image in right
   @js.native
-  sealed trait ImageRight extends ImagePosition
+  sealed trait ImageRight
+    extends StObject
+       with ImagePosition
   
   //support for aligning text in bottom and image in top.
   @js.native
-  sealed trait ImageTop extends ImagePosition
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ImagePosition with Double] = js.native
-  /* 3 */ @js.native
-  object ImageBottom extends TopLevel[ImageBottom with Double]
-  
-  /* 1 */ @js.native
-  object ImageLeft extends TopLevel[ImageLeft with Double]
-  
-  /* 0 */ @js.native
-  object ImageRight extends TopLevel[ImageRight with Double]
-  
-  /* 2 */ @js.native
-  object ImageTop extends TopLevel[ImageTop with Double]
-  
+  sealed trait ImageTop
+    extends StObject
+       with ImagePosition
 }
-

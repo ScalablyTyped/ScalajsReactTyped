@@ -1,22 +1,26 @@
 package typingsJapgolly.rcPicker
 
-import japgolly.scalajs.react.raw.React.Element
-import typingsJapgolly.rcPicker.pickerMod.Picker
-import typingsJapgolly.rcPicker.pickerPanelMod.PickerPanelProps
+import typingsJapgolly.rcPicker.esPickerPanelMod.PickerPanelProps
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-picker/lib", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class RangePicker[DateType] ()
-    extends typingsJapgolly.rcPicker.rangePickerMod.RangePicker[DateType]
+object mod {
   
+  @JSImport("rc-picker", JSImport.Namespace)
   @js.native
-  class default[DateType] () extends Picker[DateType]
+  val ^ : js.Any = js.native
   
-  def PickerPanel[DateType](props: PickerPanelProps[DateType]): Element = js.native
+  @JSImport("rc-picker", JSImport.Default)
+  @js.native
+  open class default[DateType] ()
+    extends typingsJapgolly.rcPicker.esPickerMod.default[DateType]
+  
+  inline def PickerPanel[DateType](props: PickerPanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PickerPanel")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @JSImport("rc-picker", "RangePicker")
+  @js.native
+  open class RangePicker[DateType] ()
+    extends typingsJapgolly.rcPicker.esRangePickerMod.default[DateType]
 }
-

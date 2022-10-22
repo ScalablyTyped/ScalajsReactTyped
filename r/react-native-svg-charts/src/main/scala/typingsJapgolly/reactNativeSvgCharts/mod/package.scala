@@ -1,23 +1,24 @@
-package typingsJapgolly.reactNativeSvgCharts
+package typingsJapgolly.reactNativeSvgCharts.mod
 
+import typingsJapgolly.d3Scale.mod.ScaleBand_
+import typingsJapgolly.d3Scale.mod.ScaleLinear_
+import typingsJapgolly.d3Scale.mod.ScaleLogarithmic
+import typingsJapgolly.d3Scale.mod.ScalePower
+import typingsJapgolly.d3Scale.mod.ScaleTime_
+import typingsJapgolly.d3Shape.mod.Series
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type AccessorFunction[T, U] = js.Function1[/* props */ typingsJapgolly.reactNativeSvgCharts.mod.AccessorFunctionProps[T], U]
-  type OffsetFunction = js.Function2[
-    /* series */ typingsJapgolly.d3Shape.mod.Series[js.Any, js.Any], 
-    /* order */ js.Array[scala.Double], 
-    scala.Unit
-  ]
-  type OrderFunction = js.Function1[
-    /* series */ typingsJapgolly.d3Shape.mod.Series[js.Any, js.Any], 
-    js.Array[scala.Double]
-  ]
-  type ScaleFunction = js.Function0[
-    (typingsJapgolly.reactNativeSvgCharts.mod.ScaleType[js.Any, js.Any]) | typingsJapgolly.d3Scale.mod.ScaleBand_[js.Any]
-  ]
-  type ScaleType[Range, Output] = (typingsJapgolly.d3Scale.mod.ScaleLinear_[Range, Output]) | (typingsJapgolly.d3Scale.mod.ScaleLogarithmic[Range, Output]) | (typingsJapgolly.d3Scale.mod.ScalePower[Range, Output]) | (typingsJapgolly.d3Scale.mod.ScaleTime_[Range, Output])
-  type SortFunction[T] = js.Function2[/* a */ T, /* b */ T, scala.Double]
-}
+
+type AccessorFunction[T, U] = js.Function1[/* props */ AccessorFunctionProps[T], U]
+
+type OffsetFunction = js.Function2[/* series */ Series[Any, Any], /* order */ js.Array[Double], Unit]
+
+type OrderFunction = js.Function1[/* series */ Series[Any, Any], js.Array[Double]]
+
+type ScaleFunction = js.Function0[(ScaleType[Any, Any]) | ScaleBand_[Any]]
+
+type ScaleType[Range, Output] = (ScaleLinear_[Range, Output, scala.Nothing]) | (ScaleLogarithmic[Range, Output, scala.Nothing]) | (ScalePower[Range, Output, scala.Nothing]) | (ScaleTime_[Range, Output, scala.Nothing])
+
+type SortFunction[T] = js.Function2[/* a */ T, /* b */ T, Double]

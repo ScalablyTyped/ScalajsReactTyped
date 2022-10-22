@@ -1,34 +1,33 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgHierarchicalGridFeature
-  extends /**
-	 * Option for IgHierarchicalGridFeature
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Name of the feature to be enabled.
-  	 */
+    * Name of the feature to be enabled.
+    */
   var name: js.UndefOr[String] = js.undefined
 }
-
 object IgHierarchicalGridFeature {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgHierarchicalGridFeature
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    name: String = null
-  ): IgHierarchicalGridFeature = {
+  
+  inline def apply(): IgHierarchicalGridFeature = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgHierarchicalGridFeature]
   }
+  
+  extension [Self <: IgHierarchicalGridFeature](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

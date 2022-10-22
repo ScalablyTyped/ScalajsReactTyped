@@ -1,11 +1,12 @@
 package typingsJapgolly.xadesjs.mod.xml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs", "xml.UnsignedSignatureProperty")
 @js.native
-class UnsignedSignatureProperty ()
-  extends typingsJapgolly.xadesjs.xmlMod.UnsignedSignatureProperty
-
+open class UnsignedSignatureProperty ()
+  extends typingsJapgolly.xadesjs.buildTypesXmlMod.UnsignedSignatureProperty {
+  def this(properties: js.Object) = this()
+}

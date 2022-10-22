@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Core.CoreWindowEventArgs")
-@js.native
-class CoreWindowEventArgs () extends ICoreWindowEventArgs {
-  /* CompleteClass */
-  override var handled: Boolean = js.native
+trait CoreWindowEventArgs
+  extends StObject
+     with ICoreWindowEventArgs
+object CoreWindowEventArgs {
+  
+  inline def apply(handled: Boolean): CoreWindowEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CoreWindowEventArgs]
+  }
 }
-

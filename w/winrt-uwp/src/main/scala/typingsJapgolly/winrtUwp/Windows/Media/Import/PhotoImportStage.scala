@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Import
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhotoImportStage extends js.Object
-
+sealed trait PhotoImportStage extends StObject
 /** Specifies the stages of the photo import process. */
 @JSGlobal("Windows.Media.Import.PhotoImportStage")
 @js.native
-object PhotoImportStage extends js.Object {
+object PhotoImportStage extends StObject {
+  
   /** Imported items are currently being deleted from the source. */
   @js.native
-  sealed trait deletingImportedItemsFromSource extends PhotoImportStage
+  sealed trait deletingImportedItemsFromSource
+    extends StObject
+       with PhotoImportStage
   
   /** Items are currently being found. */
   @js.native
-  sealed trait findingItems extends PhotoImportStage
+  sealed trait findingItems
+    extends StObject
+       with PhotoImportStage
   
   /** Items are currently being imported */
   @js.native
-  sealed trait importingItems extends PhotoImportStage
+  sealed trait importingItems
+    extends StObject
+       with PhotoImportStage
   
   /** The photo import process has not started. */
   @js.native
-  sealed trait notStarted extends PhotoImportStage
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhotoImportStage with Double] = js.native
-  /* 3 */ @js.native
-  object deletingImportedItemsFromSource extends TopLevel[deletingImportedItemsFromSource with Double]
-  
-  /* 1 */ @js.native
-  object findingItems extends TopLevel[findingItems with Double]
-  
-  /* 2 */ @js.native
-  object importingItems extends TopLevel[importingItems with Double]
-  
-  /* 0 */ @js.native
-  object notStarted extends TopLevel[notStarted with Double]
-  
+  sealed trait notStarted
+    extends StObject
+       with PhotoImportStage
 }
-

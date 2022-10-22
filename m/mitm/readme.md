@@ -10,10 +10,10 @@ Intercept and mock outgoing network TCP connections and HTTP requests for testin
 | ------------------ | :-------------: |
 | Full name          | mitm |
 | Keywords           | http, https, intercept, interception, mock, network, socket, tcp, test, webmock |
-| # releases         | 5 |
-| # dependents       | 20 |
-| # downloads        | 699082 |
-| # stars            | 6 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 63362.333333333336 |
+| # stars            | 615.0 |
 
 ## Links
 - [Homepage](https://github.com/moll/node-mitm)

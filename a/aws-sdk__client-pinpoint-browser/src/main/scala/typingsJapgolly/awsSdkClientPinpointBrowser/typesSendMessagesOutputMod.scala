@@ -1,27 +1,41 @@
 package typingsJapgolly.awsSdkClientPinpointBrowser
 
-import typingsJapgolly.awsSdkClientPinpointBrowser.outputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientPinpointBrowser.typesMessageResponseMod.UnmarshalledMessageResponse
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientPinpointBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/types/SendMessagesOutput", JSImport.Namespace)
-@js.native
-object typesSendMessagesOutputMod extends js.Object {
-  @js.native
-  trait SendMessagesOutput extends OutputTypesUnion {
+object typesSendMessagesOutputMod {
+  
+  trait SendMessagesOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * Send message response.
       */
-    var MessageResponse: UnmarshalledMessageResponse = js.native
+    var MessageResponse: UnmarshalledMessageResponse
   }
-  
+  object SendMessagesOutput {
+    
+    inline def apply($metadata: ResponseMetadata, MessageResponse: UnmarshalledMessageResponse): SendMessagesOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], MessageResponse = MessageResponse.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SendMessagesOutput]
+    }
+    
+    extension [Self <: SendMessagesOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMessageResponse(value: UnmarshalledMessageResponse): Self = StObject.set(x, "MessageResponse", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

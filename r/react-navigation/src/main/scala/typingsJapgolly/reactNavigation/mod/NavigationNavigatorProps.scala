@@ -1,34 +1,49 @@
 package typingsJapgolly.reactNavigation.mod
 
 import typingsJapgolly.reactNavigation.reactNavigationStrings.`no-preference`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationNavigatorProps[Options, State, ScreenProps] extends js.Object {
+trait NavigationNavigatorProps[Options, State, ScreenProps] extends StObject {
+  
   var detached: js.UndefOr[Boolean] = js.undefined
+  
   var navigation: js.UndefOr[NavigationProp[State]] = js.undefined
+  
   var navigationOptions: js.UndefOr[Options] = js.undefined
+  
   var screenProps: js.UndefOr[ScreenProps] = js.undefined
+  
   var theme: js.UndefOr[SupportedThemes | `no-preference`] = js.undefined
 }
-
 object NavigationNavigatorProps {
-  @scala.inline
-  def apply[Options, State, ScreenProps](
-    detached: js.UndefOr[Boolean] = js.undefined,
-    navigation: NavigationProp[State] = null,
-    navigationOptions: Options = null,
-    screenProps: ScreenProps = null,
-    theme: SupportedThemes | `no-preference` = null
-  ): NavigationNavigatorProps[Options, State, ScreenProps] = {
+  
+  inline def apply[Options, State, ScreenProps](): NavigationNavigatorProps[Options, State, ScreenProps] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
-    if (navigation != null) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
-    if (navigationOptions != null) __obj.updateDynamic("navigationOptions")(navigationOptions.asInstanceOf[js.Any])
-    if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationNavigatorProps[Options, State, ScreenProps]]
   }
+  
+  extension [Self <: NavigationNavigatorProps[?, ?, ?], Options, State, ScreenProps](x: Self & (NavigationNavigatorProps[Options, State, ScreenProps])) {
+    
+    inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    
+    inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+    
+    inline def setNavigation(value: NavigationProp[State]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    
+    inline def setNavigationOptions(value: Options): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
+    
+    inline def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
+    
+    inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
+    
+    inline def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+    
+    inline def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
+    
+    inline def setTheme(value: SupportedThemes | `no-preference`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+  }
 }
-

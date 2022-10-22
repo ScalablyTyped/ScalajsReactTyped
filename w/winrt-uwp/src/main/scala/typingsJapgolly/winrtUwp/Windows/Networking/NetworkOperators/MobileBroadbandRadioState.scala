@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MobileBroadbandRadioState extends js.Object
-
+sealed trait MobileBroadbandRadioState extends StObject
 /** Describes radio states for a Mobile Broadband device. */
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandRadioState")
 @js.native
-object MobileBroadbandRadioState extends js.Object {
+object MobileBroadbandRadioState extends StObject {
+  
   /** The radio is off. This can be because it has been turned off using a physical switch on the device, or using a software mechanism such as Airplane Mode on the control panel. */
   @js.native
-  sealed trait off extends MobileBroadbandRadioState
+  sealed trait off
+    extends StObject
+       with MobileBroadbandRadioState
   
   /** The radio is on. */
   @js.native
-  sealed trait on extends MobileBroadbandRadioState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MobileBroadbandRadioState with Double] = js.native
-  /* 0 */ @js.native
-  object off extends TopLevel[off with Double]
-  
-  /* 1 */ @js.native
-  object on extends TopLevel[on with Double]
-  
+  sealed trait on
+    extends StObject
+       with MobileBroadbandRadioState
 }
-

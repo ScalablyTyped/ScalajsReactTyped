@@ -1,37 +1,56 @@
 package typingsJapgolly.readableStream.mod
 
+import typingsJapgolly.node.bufferMod.global.BufferEncoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ==== _stream_readable ====
-trait ReadableStateOptions extends js.Object {
-  var defaultEncoding: js.UndefOr[String] = js.undefined
-  var encoding: js.UndefOr[String] = js.undefined
+trait ReadableStateOptions extends StObject {
+  
+  var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
+  
+  var encoding: js.UndefOr[BufferEncoding] = js.undefined
+  
   var highWaterMark: js.UndefOr[Double] = js.undefined
+  
   var objectMode: js.UndefOr[Boolean] = js.undefined
+  
   var readableHighWaterMark: js.UndefOr[Double] = js.undefined
+  
   var readableObjectMode: js.UndefOr[Boolean] = js.undefined
 }
-
 object ReadableStateOptions {
-  @scala.inline
-  def apply(
-    defaultEncoding: String = null,
-    encoding: String = null,
-    highWaterMark: Int | Double = null,
-    objectMode: js.UndefOr[Boolean] = js.undefined,
-    readableHighWaterMark: Int | Double = null,
-    readableObjectMode: js.UndefOr[Boolean] = js.undefined
-  ): ReadableStateOptions = {
+  
+  inline def apply(): ReadableStateOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
-    if (readableHighWaterMark != null) __obj.updateDynamic("readableHighWaterMark")(readableHighWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(readableObjectMode)) __obj.updateDynamic("readableObjectMode")(readableObjectMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadableStateOptions]
   }
+  
+  extension [Self <: ReadableStateOptions](x: Self) {
+    
+    inline def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
+    
+    inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+    
+    inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+    
+    inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+    
+    inline def setReadableHighWaterMark(value: Double): Self = StObject.set(x, "readableHighWaterMark", value.asInstanceOf[js.Any])
+    
+    inline def setReadableHighWaterMarkUndefined: Self = StObject.set(x, "readableHighWaterMark", js.undefined)
+    
+    inline def setReadableObjectMode(value: Boolean): Self = StObject.set(x, "readableObjectMode", value.asInstanceOf[js.Any])
+    
+    inline def setReadableObjectModeUndefined: Self = StObject.set(x, "readableObjectMode", js.undefined)
+  }
 }
-

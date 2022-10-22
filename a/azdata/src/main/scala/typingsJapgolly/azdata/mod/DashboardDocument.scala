@@ -1,20 +1,26 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DashboardDocument extends js.Object {
+trait DashboardDocument extends StObject {
+  
   var profile: IConnectionProfile
+  
   var serverInfo: ServerInfo
 }
-
 object DashboardDocument {
-  @scala.inline
-  def apply(profile: IConnectionProfile, serverInfo: ServerInfo): DashboardDocument = {
-    val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any], serverInfo = serverInfo.asInstanceOf[js.Any])
   
+  inline def apply(profile: IConnectionProfile, serverInfo: ServerInfo): DashboardDocument = {
+    val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any], serverInfo = serverInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashboardDocument]
   }
+  
+  extension [Self <: DashboardDocument](x: Self) {
+    
+    inline def setProfile(value: IConnectionProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    
+    inline def setServerInfo(value: ServerInfo): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
+  }
 }
-

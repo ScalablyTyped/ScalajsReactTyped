@@ -1,27 +1,36 @@
 package typingsJapgolly.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResponseHeaderType extends js.Object {
+trait ResponseHeaderType extends StObject {
+  
   var `cache-control`: js.UndefOr[String] = js.undefined
+  
   var `content-disposition`: js.UndefOr[String] = js.undefined
+  
   var `content-type`: js.UndefOr[String] = js.undefined
 }
-
 object ResponseHeaderType {
-  @scala.inline
-  def apply(
-    `cache-control`: String = null,
-    `content-disposition`: String = null,
-    `content-type`: String = null
-  ): ResponseHeaderType = {
+  
+  inline def apply(): ResponseHeaderType = {
     val __obj = js.Dynamic.literal()
-    if (`cache-control` != null) __obj.updateDynamic("cache-control")(`cache-control`.asInstanceOf[js.Any])
-    if (`content-disposition` != null) __obj.updateDynamic("content-disposition")(`content-disposition`.asInstanceOf[js.Any])
-    if (`content-type` != null) __obj.updateDynamic("content-type")(`content-type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseHeaderType]
   }
+  
+  extension [Self <: ResponseHeaderType](x: Self) {
+    
+    inline def `setCache-control`(value: String): Self = StObject.set(x, "cache-control", value.asInstanceOf[js.Any])
+    
+    inline def `setCache-controlUndefined`: Self = StObject.set(x, "cache-control", js.undefined)
+    
+    inline def `setContent-disposition`(value: String): Self = StObject.set(x, "content-disposition", value.asInstanceOf[js.Any])
+    
+    inline def `setContent-dispositionUndefined`: Self = StObject.set(x, "content-disposition", js.undefined)
+    
+    inline def `setContent-type`(value: String): Self = StObject.set(x, "content-type", value.asInstanceOf[js.Any])
+    
+    inline def `setContent-typeUndefined`: Self = StObject.set(x, "content-type", js.undefined)
+  }
 }
-

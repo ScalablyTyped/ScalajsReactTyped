@@ -1,12 +1,15 @@
 package typingsJapgolly.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openlayers", "featureloader")
-@js.native
-object featureloader extends js.Object {
+object featureloader {
+  
+  @JSImport("openlayers", "featureloader")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Create an XHR feature loader for a `url` and `format`. The feature loader
     * loads features (with XHR), parses the features, and adds them to the
@@ -16,8 +19,9 @@ object featureloader extends js.Object {
     * @return The feature loader.
     * @api
     */
-  def tile(url: String, format: typingsJapgolly.openlayers.mod.format.Feature): FeatureLoader_ = js.native
-  def tile(url: FeatureUrlFunction, format: typingsJapgolly.openlayers.mod.format.Feature): FeatureLoader_ = js.native
+  inline def tile(url: String, format: typingsJapgolly.openlayers.mod.format.Feature): FeatureLoader_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tile")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader_]
+  inline def tile(url: FeatureUrlFunction, format: typingsJapgolly.openlayers.mod.format.Feature): FeatureLoader_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tile")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader_]
+  
   /**
     * Create an XHR feature loader for a `url` and `format`. The feature loader
     * loads features (with XHR), parses the features, and adds them to the
@@ -27,7 +31,6 @@ object featureloader extends js.Object {
     * @return The feature loader.
     * @api
     */
-  def xhr(url: String, format: typingsJapgolly.openlayers.mod.format.Feature): FeatureLoader_ = js.native
-  def xhr(url: FeatureUrlFunction, format: typingsJapgolly.openlayers.mod.format.Feature): FeatureLoader_ = js.native
+  inline def xhr(url: String, format: typingsJapgolly.openlayers.mod.format.Feature): FeatureLoader_ = (^.asInstanceOf[js.Dynamic].applyDynamic("xhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader_]
+  inline def xhr(url: FeatureUrlFunction, format: typingsJapgolly.openlayers.mod.format.Feature): FeatureLoader_ = (^.asInstanceOf[js.Dynamic].applyDynamic("xhr")(url.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FeatureLoader_]
 }
-

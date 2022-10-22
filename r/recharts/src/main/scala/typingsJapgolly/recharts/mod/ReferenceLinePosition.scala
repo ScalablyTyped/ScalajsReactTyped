@@ -1,24 +1,20 @@
 package typingsJapgolly.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.recharts.rechartsStrings.start
   - typingsJapgolly.recharts.rechartsStrings.middle
   - typingsJapgolly.recharts.rechartsStrings.end
 */
-trait ReferenceLinePosition extends js.Object
-
+trait ReferenceLinePosition extends StObject
 object ReferenceLinePosition {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def end: typingsJapgolly.recharts.rechartsStrings.end = this.cast("end")
-  @scala.inline
-  def middle: typingsJapgolly.recharts.rechartsStrings.middle = this.cast("middle")
-  @scala.inline
-  def start: typingsJapgolly.recharts.rechartsStrings.start = this.cast("start")
+  
+  inline def end: typingsJapgolly.recharts.rechartsStrings.end = "end".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.end]
+  
+  inline def middle: typingsJapgolly.recharts.rechartsStrings.middle = "middle".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.middle]
+  
+  inline def start: typingsJapgolly.recharts.rechartsStrings.start = "start".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.start]
 }
-

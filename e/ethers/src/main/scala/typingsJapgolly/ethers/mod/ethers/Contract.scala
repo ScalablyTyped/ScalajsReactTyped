@@ -1,33 +1,20 @@
 package typingsJapgolly.ethers.mod.ethers
 
-import typingsJapgolly.ethers.typesMod.MinimalProvider
-import typingsJapgolly.ethers.typesMod.ParamType
-import typingsJapgolly.ethers.typesMod.Signer
+import typingsJapgolly.ethersprojectAbstractProvider.mod.Provider
+import typingsJapgolly.ethersprojectContracts.mod.ContractInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ethers", "ethers.Contract")
 @js.native
-class Contract protected ()
-  extends typingsJapgolly.ethers.ethersMod.Contract {
-  def this(addressOrName: String, contractInterface: String, signerOrProvider: MinimalProvider) = this()
-  def this(addressOrName: String, contractInterface: String, signerOrProvider: Signer) = this()
+open class Contract protected ()
+  extends typingsJapgolly.ethers.libEthersMod.Contract {
+  def this(addressOrName: String, contractInterface: ContractInterface) = this()
+  def this(addressOrName: String, contractInterface: ContractInterface, signerOrProvider: Provider) = this()
   def this(
     addressOrName: String,
-    contractInterface: js.Array[String | ParamType],
-    signerOrProvider: MinimalProvider
-  ) = this()
-  def this(addressOrName: String, contractInterface: js.Array[String | ParamType], signerOrProvider: Signer) = this()
-  def this(
-    addressOrName: String,
-    contractInterface: typingsJapgolly.ethers.interfaceMod.Interface,
-    signerOrProvider: MinimalProvider
-  ) = this()
-  def this(
-    addressOrName: String,
-    contractInterface: typingsJapgolly.ethers.interfaceMod.Interface,
-    signerOrProvider: Signer
+    contractInterface: ContractInterface,
+    signerOrProvider: typingsJapgolly.ethersprojectAbstractSigner.mod.Signer
   ) = this()
 }
-

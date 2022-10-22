@@ -1,21 +1,34 @@
 package typingsJapgolly.businessRulesEngine.mod
 
-import typingsJapgolly.businessRulesEngine.AnonContains
+import typingsJapgolly.businessRulesEngine.anon.Contains
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("business-rules-engine", "MessageLocalization")
 @js.native
-class MessageLocalization () extends js.Object
-
+open class MessageLocalization () extends StObject
 /* static members */
-@JSImport("business-rules-engine", "MessageLocalization")
-@js.native
-object MessageLocalization extends js.Object {
-  var ValidationMessages: AnonContains = js.native
-  var customMsg: String = js.native
-  var defaultMessages: AnonContains = js.native
-  def GetValidationMessage(validator: js.Any): String = js.native
+object MessageLocalization {
+  
+  @JSImport("business-rules-engine", "MessageLocalization")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def GetValidationMessage(validator: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetValidationMessage")(validator.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("business-rules-engine", "MessageLocalization.ValidationMessages")
+  @js.native
+  def ValidationMessages: Contains = js.native
+  inline def ValidationMessages_=(x: Contains): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValidationMessages")(x.asInstanceOf[js.Any])
+  
+  @JSImport("business-rules-engine", "MessageLocalization.customMsg")
+  @js.native
+  def customMsg: String = js.native
+  inline def customMsg_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("customMsg")(x.asInstanceOf[js.Any])
+  
+  @JSImport("business-rules-engine", "MessageLocalization.defaultMessages")
+  @js.native
+  def defaultMessages: Contains = js.native
+  inline def defaultMessages_=(x: Contains): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMessages")(x.asInstanceOf[js.Any])
 }
-

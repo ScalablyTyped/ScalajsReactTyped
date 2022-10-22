@@ -1,27 +1,39 @@
 package typingsJapgolly.meteor.Meteor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait absoluteUrlOptions extends js.Object {
+trait absoluteUrlOptions extends StObject {
+  
+  /** Replace localhost with 127.0.0.1. Useful for services that don't recognize localhost as a domain name. */
   var replaceLocalhost: js.UndefOr[Boolean] = js.undefined
+  
+  /** Override the default ROOT_URL from the server environment. For example: "`http://foo.example.com`" */
   var rootUrl: js.UndefOr[String] = js.undefined
+  
+  /** Create an HTTPS URL. */
   var secure: js.UndefOr[Boolean] = js.undefined
 }
-
 object absoluteUrlOptions {
-  @scala.inline
-  def apply(
-    replaceLocalhost: js.UndefOr[Boolean] = js.undefined,
-    rootUrl: String = null,
-    secure: js.UndefOr[Boolean] = js.undefined
-  ): absoluteUrlOptions = {
+  
+  inline def apply(): absoluteUrlOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(replaceLocalhost)) __obj.updateDynamic("replaceLocalhost")(replaceLocalhost.asInstanceOf[js.Any])
-    if (rootUrl != null) __obj.updateDynamic("rootUrl")(rootUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[absoluteUrlOptions]
   }
+  
+  extension [Self <: absoluteUrlOptions](x: Self) {
+    
+    inline def setReplaceLocalhost(value: Boolean): Self = StObject.set(x, "replaceLocalhost", value.asInstanceOf[js.Any])
+    
+    inline def setReplaceLocalhostUndefined: Self = StObject.set(x, "replaceLocalhost", js.undefined)
+    
+    inline def setRootUrl(value: String): Self = StObject.set(x, "rootUrl", value.asInstanceOf[js.Any])
+    
+    inline def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
+    
+    inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+    
+    inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+  }
 }
-

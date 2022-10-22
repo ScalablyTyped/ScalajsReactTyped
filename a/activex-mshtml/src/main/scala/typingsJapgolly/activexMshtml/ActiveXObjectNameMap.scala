@@ -3,21 +3,23 @@ package typingsJapgolly.activexMshtml
 import typingsJapgolly.activexMshtml.MSHTML.CTemplatePrinter
 import typingsJapgolly.activexMshtml.MSHTML.HTMLDocument
 import typingsJapgolly.activexMshtml.MSHTML.Scriptlet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
+  
   @JSName("ScriptBridge.ScriptBridge")
   var ScriptBridgeDotScriptBridge: Scriptlet
+  
   @JSName("TemplatePrinter.TemplatePrinter")
   var TemplatePrinterDotTemplatePrinter: CTemplatePrinter
+  
   var htmlfile: HTMLDocument
 }
-
 object ActiveXObjectNameMap {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     ScriptBridgeDotScriptBridge: Scriptlet,
     TemplatePrinterDotTemplatePrinter: CTemplatePrinter,
     htmlfile: HTMLDocument
@@ -27,5 +29,13 @@ object ActiveXObjectNameMap {
     __obj.updateDynamic("TemplatePrinter.TemplatePrinter")(TemplatePrinterDotTemplatePrinter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
+  
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
+    
+    inline def setHtmlfile(value: HTMLDocument): Self = StObject.set(x, "htmlfile", value.asInstanceOf[js.Any])
+    
+    inline def setScriptBridgeDotScriptBridge(value: Scriptlet): Self = StObject.set(x, "ScriptBridge.ScriptBridge", value.asInstanceOf[js.Any])
+    
+    inline def setTemplatePrinterDotTemplatePrinter(value: CTemplatePrinter): Self = StObject.set(x, "TemplatePrinter.TemplatePrinter", value.asInstanceOf[js.Any])
+  }
 }
-

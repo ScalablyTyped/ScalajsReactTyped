@@ -1,30 +1,42 @@
 package typingsJapgolly.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RemoveOptions extends js.Object {
+trait RemoveOptions extends StObject {
+  
   var overwrite: js.UndefOr[Boolean] = js.undefined
+  
   var returnOld: js.UndefOr[Boolean] = js.undefined
+  
   var silent: js.UndefOr[Boolean] = js.undefined
+  
   var waitForSync: js.UndefOr[Boolean] = js.undefined
 }
-
 object RemoveOptions {
-  @scala.inline
-  def apply(
-    overwrite: js.UndefOr[Boolean] = js.undefined,
-    returnOld: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    waitForSync: js.UndefOr[Boolean] = js.undefined
-  ): RemoveOptions = {
+  
+  inline def apply(): RemoveOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnOld)) __obj.updateDynamic("returnOld")(returnOld.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveOptions]
   }
+  
+  extension [Self <: RemoveOptions](x: Self) {
+    
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    
+    inline def setReturnOld(value: Boolean): Self = StObject.set(x, "returnOld", value.asInstanceOf[js.Any])
+    
+    inline def setReturnOldUndefined: Self = StObject.set(x, "returnOld", js.undefined)
+    
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    
+    inline def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
+  }
 }
-

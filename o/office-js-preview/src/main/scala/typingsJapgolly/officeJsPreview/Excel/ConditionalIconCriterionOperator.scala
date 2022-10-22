@@ -1,41 +1,45 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalIconCriterionOperator extends js.Object
-
+sealed trait ConditionalIconCriterionOperator extends StObject
 /**
-  *
   * Represents the operator for each icon criteria.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalIconCriterionOperator")
 @js.native
-object ConditionalIconCriterionOperator extends js.Object {
+object ConditionalIconCriterionOperator extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait greaterThan extends ConditionalIconCriterionOperator
+  sealed trait greaterThan
+    extends StObject
+       with ConditionalIconCriterionOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait greaterThanOrEqual extends ConditionalIconCriterionOperator
+  sealed trait greaterThanOrEqual
+    extends StObject
+       with ConditionalIconCriterionOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait invalid extends ConditionalIconCriterionOperator
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalIconCriterionOperator with String] = js.native
-  /* "GreaterThan" */ @js.native
-  object greaterThan extends TopLevel[greaterThan with String]
-  
-  /* "GreaterThanOrEqual" */ @js.native
-  object greaterThanOrEqual extends TopLevel[greaterThanOrEqual with String]
-  
-  /* "Invalid" */ @js.native
-  object invalid extends TopLevel[invalid with String]
-  
+  sealed trait invalid
+    extends StObject
+       with ConditionalIconCriterionOperator
 }
-

@@ -1,39 +1,32 @@
 package typingsJapgolly.mathjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mathjaxStrings {
-  @js.native
-  sealed trait CommonHTML extends js.Object
   
   @js.native
-  sealed trait `HTML-CSS` extends js.Object
+  sealed trait CommonHTML extends StObject
+  inline def CommonHTML: CommonHTML = "CommonHTML".asInstanceOf[CommonHTML]
   
   @js.native
-  sealed trait NativeMML extends js.Object
+  sealed trait `HTML-CSS` extends StObject
+  inline def `HTML-CSS`: `HTML-CSS` = "HTML-CSS".asInstanceOf[`HTML-CSS`]
   
   @js.native
-  sealed trait PlainSource extends js.Object
+  sealed trait NativeMML extends StObject
+  inline def NativeMML: NativeMML = "NativeMML".asInstanceOf[NativeMML]
   
   @js.native
-  sealed trait PreviewHTML extends js.Object
+  sealed trait PlainSource extends StObject
+  inline def PlainSource: PlainSource = "PlainSource".asInstanceOf[PlainSource]
   
   @js.native
-  sealed trait SVG extends js.Object
+  sealed trait PreviewHTML extends StObject
+  inline def PreviewHTML: PreviewHTML = "PreviewHTML".asInstanceOf[PreviewHTML]
   
-  @scala.inline
-  def CommonHTML: CommonHTML = "CommonHTML".asInstanceOf[CommonHTML]
-  @scala.inline
-  def `HTML-CSS`: `HTML-CSS` = "HTML-CSS".asInstanceOf[`HTML-CSS`]
-  @scala.inline
-  def NativeMML: NativeMML = "NativeMML".asInstanceOf[NativeMML]
-  @scala.inline
-  def PlainSource: PlainSource = "PlainSource".asInstanceOf[PlainSource]
-  @scala.inline
-  def PreviewHTML: PreviewHTML = "PreviewHTML".asInstanceOf[PreviewHTML]
-  @scala.inline
-  def SVG: SVG = "SVG".asInstanceOf[SVG]
+  @js.native
+  sealed trait SVG extends StObject
+  inline def SVG: SVG = "SVG".asInstanceOf[SVG]
 }
-

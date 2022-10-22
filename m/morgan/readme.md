@@ -10,10 +10,10 @@ HTTP request logger middleware for node.js
 | ------------------ | :-------------: |
 | Full name          | morgan |
 | Keywords           | express, http, logger, middleware |
-| # releases         | 2 |
-| # dependents       | 4490 |
-| # downloads        | 89651535 |
-| # stars            | 428 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4155348666666666E7 |
+| # stars            | 7127.0 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/morgan#readme)

@@ -1,8 +1,7 @@
 package typingsJapgolly.slickgrid.Slick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PluginOptions extends js.Object
-
+trait PluginOptions extends StObject

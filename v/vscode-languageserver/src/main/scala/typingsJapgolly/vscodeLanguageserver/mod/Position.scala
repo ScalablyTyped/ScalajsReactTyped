@@ -1,21 +1,27 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "Position")
-@js.native
-object Position extends js.Object {
+object Position {
+  
+  @JSImport("vscode-languageserver", "Position")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Position literal from the given line and character.
     * @param line The position's line.
     * @param character The position's character.
     */
-  def create(line: Double, character: Double): typingsJapgolly.vscodeLanguageserverTypes.mod.Position = js.native
+  inline def create(
+    line: typingsJapgolly.vscodeLanguageserverTypes.mod.uinteger,
+    character: typingsJapgolly.vscodeLanguageserverTypes.mod.uinteger
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.Position = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(line.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.Position]
+  
   /**
-    * Checks whether the given liternal conforms to the [Position](#Position) interface.
+    * Checks whether the given literal conforms to the [Position](#Position) interface.
     */
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean = js.native
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean]
 }
-

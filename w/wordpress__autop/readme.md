@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__autop
 
-Typings are for version 2.3
+Typings are for version 3.19.0
 
 ## Library description:
 WordPress's automatic paragraph functions `autop` and `removep`.
@@ -9,21 +9,22 @@ WordPress's automatic paragraph functions `autop` and `removep`.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/autop |
-| Keywords           | wordpress, autop |
-| # releases         | 18 |
-| # dependents       | 6 |
-| # downloads        | 190852 |
-| # stars            | 0 |
+| Keywords           | wordpress, gutenberg, autop |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 125085.66666666667 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/autop/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/autop/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fautop)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

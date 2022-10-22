@@ -1,7 +1,7 @@
 
 # Scala.js typings for pify
 
-Typings are for version 3.0.0
+Typings are for version 6.1.0
 
 ## Library description:
 Promisify a callback-style function
@@ -9,11 +9,11 @@ Promisify a callback-style function
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pify |
-| Keywords           | promise, promises, promisify, all, denodify, denodeify, callback, cb, node, then, thenify, convert, transform, wrap, wrapper, bind, to, async, await, es2015, bluebird |
-| # releases         | 3 |
-| # dependents       | 1291 |
-| # downloads        | 1137653893 |
-| # stars            | 61 |
+| Keywords           | promisify, callback, promise, promises, denodify, denodeify, node, then, thenify, convert, transform, wrap, wrapper, bind, async, await, es2015, bluebird |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.806008766666667E8 |
+| # stars            | 1461.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/pify#readme)
@@ -24,7 +24,7 @@ Promisify a callback-style function
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

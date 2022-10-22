@@ -1,26 +1,45 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IdentitySet extends js.Object {
+trait IdentitySet extends StObject {
+  
   // Optional. The application associated with this action.
-  var application: js.UndefOr[Identity] = js.undefined
+  var application: js.UndefOr[NullableOption[Identity]] = js.undefined
+  
   // Optional. The device associated with this action.
-  var device: js.UndefOr[Identity] = js.undefined
+  var device: js.UndefOr[NullableOption[Identity]] = js.undefined
+  
   // Optional. The user associated with this action.
-  var user: js.UndefOr[Identity] = js.undefined
+  var user: js.UndefOr[NullableOption[Identity]] = js.undefined
 }
-
 object IdentitySet {
-  @scala.inline
-  def apply(application: Identity = null, device: Identity = null, user: Identity = null): IdentitySet = {
+  
+  inline def apply(): IdentitySet = {
     val __obj = js.Dynamic.literal()
-    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
-    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitySet]
   }
+  
+  extension [Self <: IdentitySet](x: Self) {
+    
+    inline def setApplication(value: NullableOption[Identity]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationNull: Self = StObject.set(x, "application", null)
+    
+    inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+    
+    inline def setDevice(value: NullableOption[Identity]): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceNull: Self = StObject.set(x, "device", null)
+    
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    
+    inline def setUser(value: NullableOption[Identity]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    
+    inline def setUserNull: Self = StObject.set(x, "user", null)
+    
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+  }
 }
-

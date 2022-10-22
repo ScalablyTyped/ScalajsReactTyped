@@ -1,33 +1,58 @@
 package typingsJapgolly.ssh2Streams.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Algorithms extends js.Object {
+trait Algorithms extends StObject {
+  
   var cipher: js.UndefOr[js.Array[String]] = js.undefined
+  
   var compress: js.UndefOr[js.Array[String]] = js.undefined
+  
   var hmac: js.UndefOr[js.Array[String]] = js.undefined
+  
   var kex: js.UndefOr[js.Array[String]] = js.undefined
+  
   var serverHostKey: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object Algorithms {
-  @scala.inline
-  def apply(
-    cipher: js.Array[String] = null,
-    compress: js.Array[String] = null,
-    hmac: js.Array[String] = null,
-    kex: js.Array[String] = null,
-    serverHostKey: js.Array[String] = null
-  ): Algorithms = {
+  
+  inline def apply(): Algorithms = {
     val __obj = js.Dynamic.literal()
-    if (cipher != null) __obj.updateDynamic("cipher")(cipher.asInstanceOf[js.Any])
-    if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (hmac != null) __obj.updateDynamic("hmac")(hmac.asInstanceOf[js.Any])
-    if (kex != null) __obj.updateDynamic("kex")(kex.asInstanceOf[js.Any])
-    if (serverHostKey != null) __obj.updateDynamic("serverHostKey")(serverHostKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Algorithms]
   }
+  
+  extension [Self <: Algorithms](x: Self) {
+    
+    inline def setCipher(value: js.Array[String]): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
+    
+    inline def setCipherUndefined: Self = StObject.set(x, "cipher", js.undefined)
+    
+    inline def setCipherVarargs(value: String*): Self = StObject.set(x, "cipher", js.Array(value*))
+    
+    inline def setCompress(value: js.Array[String]): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+    
+    inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+    
+    inline def setCompressVarargs(value: String*): Self = StObject.set(x, "compress", js.Array(value*))
+    
+    inline def setHmac(value: js.Array[String]): Self = StObject.set(x, "hmac", value.asInstanceOf[js.Any])
+    
+    inline def setHmacUndefined: Self = StObject.set(x, "hmac", js.undefined)
+    
+    inline def setHmacVarargs(value: String*): Self = StObject.set(x, "hmac", js.Array(value*))
+    
+    inline def setKex(value: js.Array[String]): Self = StObject.set(x, "kex", value.asInstanceOf[js.Any])
+    
+    inline def setKexUndefined: Self = StObject.set(x, "kex", js.undefined)
+    
+    inline def setKexVarargs(value: String*): Self = StObject.set(x, "kex", js.Array(value*))
+    
+    inline def setServerHostKey(value: js.Array[String]): Self = StObject.set(x, "serverHostKey", value.asInstanceOf[js.Any])
+    
+    inline def setServerHostKeyUndefined: Self = StObject.set(x, "serverHostKey", js.undefined)
+    
+    inline def setServerHostKeyVarargs(value: String*): Self = StObject.set(x, "serverHostKey", js.Array(value*))
+  }
 }
-

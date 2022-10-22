@@ -1,77 +1,33 @@
 package typingsJapgolly.reactVirtualized
 
-import typingsJapgolly.reactVirtualized.esGridMod.ScrollDirection
-import typingsJapgolly.reactVirtualized.esTableMod.SortDirectionType
 import typingsJapgolly.reactVirtualized.mod.Alignment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactVirtualizedStrings {
-  @js.native
-  sealed trait ASC extends SortDirectionType
   
   @js.native
-  sealed trait DESC extends SortDirectionType
+  sealed trait auto
+    extends StObject
+       with Alignment
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait _empty extends js.Object
+  sealed trait center
+    extends StObject
+       with Alignment
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait auto extends Alignment
+  sealed trait end
+    extends StObject
+       with Alignment
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait cells extends js.Object
-  
-  @js.native
-  sealed trait center extends Alignment
-  
-  @js.native
-  sealed trait edges extends js.Object
-  
-  @js.native
-  sealed trait end extends Alignment
-  
-  @js.native
-  sealed trait grid extends js.Object
-  
-  @js.native
-  sealed trait horizontal extends ScrollDirection
-  
-  @js.native
-  sealed trait rowgroup extends js.Object
-  
-  @js.native
-  sealed trait start extends Alignment
-  
-  @js.native
-  sealed trait vertical extends ScrollDirection
-  
-  @scala.inline
-  def ASC: ASC = "ASC".asInstanceOf[ASC]
-  @scala.inline
-  def DESC: DESC = "DESC".asInstanceOf[DESC]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def cells: cells = "cells".asInstanceOf[cells]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def edges: edges = "edges".asInstanceOf[edges]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def grid: grid = "grid".asInstanceOf[grid]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def rowgroup: rowgroup = "rowgroup".asInstanceOf[rowgroup]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  sealed trait start
+    extends StObject
+       with Alignment
+  inline def start: start = "start".asInstanceOf[start]
 }
-

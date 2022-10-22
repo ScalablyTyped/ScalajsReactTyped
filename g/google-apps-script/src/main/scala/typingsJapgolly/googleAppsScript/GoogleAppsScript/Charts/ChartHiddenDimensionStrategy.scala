@@ -1,44 +1,35 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartHiddenDimensionStrategy extends js.Object
-
+sealed trait ChartHiddenDimensionStrategy extends StObject
 /**
   * An enumeration of how hidden dimensions in a source are expressed in a chart.
   */
 @JSGlobal("GoogleAppsScript.Charts.ChartHiddenDimensionStrategy")
 @js.native
-object ChartHiddenDimensionStrategy extends js.Object {
-  @js.native
-  sealed trait IGNORE_BOTH extends ChartHiddenDimensionStrategy
+object ChartHiddenDimensionStrategy extends StObject {
   
   @js.native
-  sealed trait IGNORE_COLUMNS extends ChartHiddenDimensionStrategy
+  sealed trait IGNORE_BOTH
+    extends StObject
+       with ChartHiddenDimensionStrategy
   
   @js.native
-  sealed trait IGNORE_ROWS extends ChartHiddenDimensionStrategy
+  sealed trait IGNORE_COLUMNS
+    extends StObject
+       with ChartHiddenDimensionStrategy
   
   @js.native
-  sealed trait SHOW_BOTH extends ChartHiddenDimensionStrategy
+  sealed trait IGNORE_ROWS
+    extends StObject
+       with ChartHiddenDimensionStrategy
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChartHiddenDimensionStrategy with Double] = js.native
-  /* 0 */ @js.native
-  object IGNORE_BOTH extends TopLevel[IGNORE_BOTH with Double]
-  
-  /* 2 */ @js.native
-  object IGNORE_COLUMNS extends TopLevel[IGNORE_COLUMNS with Double]
-  
-  /* 1 */ @js.native
-  object IGNORE_ROWS extends TopLevel[IGNORE_ROWS with Double]
-  
-  /* 3 */ @js.native
-  object SHOW_BOTH extends TopLevel[SHOW_BOTH with Double]
-  
+  @js.native
+  sealed trait SHOW_BOTH
+    extends StObject
+       with ChartHiddenDimensionStrategy
 }
-

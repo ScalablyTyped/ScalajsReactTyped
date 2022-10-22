@@ -10,10 +10,10 @@ The lodash method `_.range` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.range |
 | Keywords           | lodash-modularized, range |
-| # releases         | 0 |
-| # dependents       | 135 |
-| # downloads        | 3216726 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 825459.3333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response object that may be returned from a method that creates universal action.
@@ -25,16 +25,19 @@ import scala.scalajs.js.annotation._
   *             cardBuilder2.build();
   *         ]).build();
   */
-trait UniversalActionResponse extends js.Object {
+trait UniversalActionResponse extends StObject {
+  
   def printJson(): String
 }
-
 object UniversalActionResponse {
-  @scala.inline
-  def apply(printJson: CallbackTo[String]): UniversalActionResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("printJson")(printJson.toJsFn)
+  
+  inline def apply(printJson: CallbackTo[String]): UniversalActionResponse = {
+    val __obj = js.Dynamic.literal(printJson = printJson.toJsFn)
     __obj.asInstanceOf[UniversalActionResponse]
   }
+  
+  extension [Self <: UniversalActionResponse](x: Self) {
+    
+    inline def setPrintJson(value: CallbackTo[String]): Self = StObject.set(x, "printJson", value.toJsFn)
+  }
 }
-

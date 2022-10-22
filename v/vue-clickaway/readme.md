@@ -10,10 +10,10 @@ Reusable clickaway directive for reusable Vue.js components
 | ------------------ | :-------------: |
 | Full name          | vue-clickaway |
 | Keywords           | click, clickaway, reusable, vue, vue-directive, vuejs |
-| # releases         | 4 |
-| # dependents       | 98 |
-| # downloads        | 1963031 |
-| # stars            | 8 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 371364.0 |
+| # stars            | 966.0 |
 
 ## Links
 - [Homepage](https://github.com/simplesmiler/vue-clickaway)

@@ -3,110 +3,140 @@ package typingsJapgolly.officeJs.Excel.Interfaces
 import typingsJapgolly.officeJs.Excel.ChartPlotAreaPosition
 import typingsJapgolly.officeJs.officeJsStrings.Automatic
 import typingsJapgolly.officeJs.officeJsStrings.Custom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartPlotArea object, for use in `chartPlotArea.set({ ... })`. */
-trait ChartPlotAreaUpdateData extends js.Object {
+trait ChartPlotAreaUpdateData extends StObject {
+  
   /**
+    * Specifies the formatting of a chart plot area.
     *
-    * Represents the formatting of a chart plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var format: js.UndefOr[ChartPlotAreaFormatUpdateData] = js.undefined
+  
   /**
+    * Specifies the height value of a plot area.
     *
-    * Represents the height value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var height: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the inside height value of a plot area.
     *
-    * Represents the insideHeight value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var insideHeight: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the inside left value of a plot area.
     *
-    * Represents the insideLeft value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var insideLeft: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the inside top value of a plot area.
     *
-    * Represents the insideTop value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var insideTop: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the inside width value of a plot area.
     *
-    * Represents the insideWidth value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var insideWidth: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the left value of a plot area.
     *
-    * Represents the left value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var left: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the position of a plot area.
     *
-    * Represents the position of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var position: js.UndefOr[ChartPlotAreaPosition | Automatic | Custom] = js.undefined
+  
   /**
+    * Specifies the top value of a plot area.
     *
-    * Represents the top value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var top: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the width value of a plot area.
     *
-    * Represents the width value of plotArea.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object ChartPlotAreaUpdateData {
-  @scala.inline
-  def apply(
-    format: ChartPlotAreaFormatUpdateData = null,
-    height: Int | Double = null,
-    insideHeight: Int | Double = null,
-    insideLeft: Int | Double = null,
-    insideTop: Int | Double = null,
-    insideWidth: Int | Double = null,
-    left: Int | Double = null,
-    position: ChartPlotAreaPosition | Automatic | Custom = null,
-    top: Int | Double = null,
-    width: Int | Double = null
-  ): ChartPlotAreaUpdateData = {
+  
+  inline def apply(): ChartPlotAreaUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (insideHeight != null) __obj.updateDynamic("insideHeight")(insideHeight.asInstanceOf[js.Any])
-    if (insideLeft != null) __obj.updateDynamic("insideLeft")(insideLeft.asInstanceOf[js.Any])
-    if (insideTop != null) __obj.updateDynamic("insideTop")(insideTop.asInstanceOf[js.Any])
-    if (insideWidth != null) __obj.updateDynamic("insideWidth")(insideWidth.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPlotAreaUpdateData]
   }
+  
+  extension [Self <: ChartPlotAreaUpdateData](x: Self) {
+    
+    inline def setFormat(value: ChartPlotAreaFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setInsideHeight(value: Double): Self = StObject.set(x, "insideHeight", value.asInstanceOf[js.Any])
+    
+    inline def setInsideHeightUndefined: Self = StObject.set(x, "insideHeight", js.undefined)
+    
+    inline def setInsideLeft(value: Double): Self = StObject.set(x, "insideLeft", value.asInstanceOf[js.Any])
+    
+    inline def setInsideLeftUndefined: Self = StObject.set(x, "insideLeft", js.undefined)
+    
+    inline def setInsideTop(value: Double): Self = StObject.set(x, "insideTop", value.asInstanceOf[js.Any])
+    
+    inline def setInsideTopUndefined: Self = StObject.set(x, "insideTop", js.undefined)
+    
+    inline def setInsideWidth(value: Double): Self = StObject.set(x, "insideWidth", value.asInstanceOf[js.Any])
+    
+    inline def setInsideWidthUndefined: Self = StObject.set(x, "insideWidth", js.undefined)
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setPosition(value: ChartPlotAreaPosition | Automatic | Custom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

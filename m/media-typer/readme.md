@@ -1,7 +1,7 @@
 
 # Scala.js typings for media-typer
 
-Typings are for version 0.3
+Typings are for version 1.1
 
 ## Library description:
 Simple RFC 6838 media type parser and formatter
@@ -10,10 +10,10 @@ Simple RFC 6838 media type parser and formatter
 | ------------------ | :-------------: |
 | Full name          | media-typer |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 172 |
-| # downloads        | 419687967 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.490627666666667E7 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/media-typer#readme)

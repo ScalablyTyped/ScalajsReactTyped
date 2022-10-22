@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Core
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FaceDetectionMode extends js.Object
-
+sealed trait FaceDetectionMode extends StObject
 /** Specifies the mode used for face detection. */
 @JSGlobal("Windows.Media.Core.FaceDetectionMode")
 @js.native
-object FaceDetectionMode extends js.Object {
+object FaceDetectionMode extends StObject {
+  
   /** The prioritization of detection speed and result quality are balanced. */
   @js.native
-  sealed trait balanced extends FaceDetectionMode
+  sealed trait balanced
+    extends StObject
+       with FaceDetectionMode
   
   /** The speed of face detection is prioritized over the accuracy of the face detection results. */
   @js.native
-  sealed trait highPerformance extends FaceDetectionMode
+  sealed trait highPerformance
+    extends StObject
+       with FaceDetectionMode
   
   /** The accuracy of face detection results is prioritized over the speed of face detection. */
   @js.native
-  sealed trait highQuality extends FaceDetectionMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FaceDetectionMode with Double] = js.native
-  /* 1 */ @js.native
-  object balanced extends TopLevel[balanced with Double]
-  
-  /* 0 */ @js.native
-  object highPerformance extends TopLevel[highPerformance with Double]
-  
-  /* 2 */ @js.native
-  object highQuality extends TopLevel[highQuality with Double]
-  
+  sealed trait highQuality
+    extends StObject
+       with FaceDetectionMode
 }
-

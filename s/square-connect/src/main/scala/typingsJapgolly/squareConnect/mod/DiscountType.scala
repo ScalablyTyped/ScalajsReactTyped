@@ -1,8 +1,8 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.squareConnect.squareConnectStrings.FIXED_AMOUNT
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.squareConnect.squareConnectStrings.VARIABLE_PERCENTAGE
   - typingsJapgolly.squareConnect.squareConnectStrings.UNKNOWN_DISCOUNT
 */
-trait DiscountType extends js.Object
-
+trait DiscountType extends StObject
 object DiscountType {
-  @scala.inline
-  def FIXED_AMOUNT: typingsJapgolly.squareConnect.squareConnectStrings.FIXED_AMOUNT = this.cast("FIXED_AMOUNT")
-  @scala.inline
-  def FIXED_PERCENTAGE: typingsJapgolly.squareConnect.squareConnectStrings.FIXED_PERCENTAGE = this.cast("FIXED_PERCENTAGE")
-  @scala.inline
-  def UNKNOWN_DISCOUNT: typingsJapgolly.squareConnect.squareConnectStrings.UNKNOWN_DISCOUNT = this.cast("UNKNOWN_DISCOUNT")
-  @scala.inline
-  def VARIABLE_AMOUNT: typingsJapgolly.squareConnect.squareConnectStrings.VARIABLE_AMOUNT = this.cast("VARIABLE_AMOUNT")
-  @scala.inline
-  def VARIABLE_PERCENTAGE: typingsJapgolly.squareConnect.squareConnectStrings.VARIABLE_PERCENTAGE = this.cast("VARIABLE_PERCENTAGE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def FIXED_AMOUNT: typingsJapgolly.squareConnect.squareConnectStrings.FIXED_AMOUNT = "FIXED_AMOUNT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.FIXED_AMOUNT]
+  
+  inline def FIXED_PERCENTAGE: typingsJapgolly.squareConnect.squareConnectStrings.FIXED_PERCENTAGE = "FIXED_PERCENTAGE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.FIXED_PERCENTAGE]
+  
+  inline def UNKNOWN_DISCOUNT: typingsJapgolly.squareConnect.squareConnectStrings.UNKNOWN_DISCOUNT = "UNKNOWN_DISCOUNT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UNKNOWN_DISCOUNT]
+  
+  inline def VARIABLE_AMOUNT: typingsJapgolly.squareConnect.squareConnectStrings.VARIABLE_AMOUNT = "VARIABLE_AMOUNT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VARIABLE_AMOUNT]
+  
+  inline def VARIABLE_PERCENTAGE: typingsJapgolly.squareConnect.squareConnectStrings.VARIABLE_PERCENTAGE = "VARIABLE_PERCENTAGE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VARIABLE_PERCENTAGE]
 }
-

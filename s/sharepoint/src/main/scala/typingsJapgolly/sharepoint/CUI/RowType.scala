@@ -1,24 +1,20 @@
 package typingsJapgolly.sharepoint.CUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.sharepoint.sharepointNumbers.`2`
-  - typingsJapgolly.sharepoint.sharepointNumbers.`3`
-  - typingsJapgolly.sharepoint.sharepointNumbers.`4`
+  - typingsJapgolly.sharepoint.sharepointInts.`2`
+  - typingsJapgolly.sharepoint.sharepointInts.`3`
+  - typingsJapgolly.sharepoint.sharepointInts.`4`
 */
-trait RowType extends js.Object
-
+trait RowType extends StObject
 object RowType {
-  @scala.inline
-  def `2`: typingsJapgolly.sharepoint.sharepointNumbers.`2` = this.cast(2)
-  @scala.inline
-  def `3`: typingsJapgolly.sharepoint.sharepointNumbers.`3` = this.cast(3)
-  @scala.inline
-  def `4`: typingsJapgolly.sharepoint.sharepointNumbers.`4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `2`: typingsJapgolly.sharepoint.sharepointInts.`2` = 2.asInstanceOf[typingsJapgolly.sharepoint.sharepointInts.`2`]
+  
+  inline def `3`: typingsJapgolly.sharepoint.sharepointInts.`3` = 3.asInstanceOf[typingsJapgolly.sharepoint.sharepointInts.`3`]
+  
+  inline def `4`: typingsJapgolly.sharepoint.sharepointInts.`4` = 4.asInstanceOf[typingsJapgolly.sharepoint.sharepointInts.`4`]
 }
-

@@ -1,60 +1,81 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectFilter extends _Filter {
+trait SelectFilter
+  extends StObject
+     with _Filter {
+  
   /**
-  	 * Condition. Can be 'eq' (exactly equal) or 'like' (contains the given string). Defaults to 'like'.
-  	 */
+    * Condition. Can be 'eq' (exactly equal) or 'like' (contains the given string). Defaults to 'like'.
+    */
   var condition: js.UndefOr[FilterCondition] = js.undefined
+  
   /**
-  	 * Default value for the select filter.
-  	 */
+    * Default value for the select filter.
+    */
   var defaultValue: js.UndefOr[String | Double | Boolean] = js.undefined
+  
   /**
-  	 * Options for the filter select.
-  	 */
+    * Options for the filter select.
+    */
   var options: SelectFilterOptionsType
+  
   /**
-  	 * Placeholder text to show in the filter.
-  	 */
+    * Placeholder text to show in the filter.
+    */
   var selectText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * CSS Style to use for the select filter.
-  	 */
+    * CSS Style to use for the select filter.
+    */
   var style: js.UndefOr[CSSProperties] = js.undefined
+  
   /**
-  	 * Filter type must be 'SelectFilter'
-  	 */
+    * Filter type must be 'SelectFilter'
+    */
   var `type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter
+  
   /**
-  	 * Disable the empty option in the dropdown filter.
-  	 */
+    * Disable the empty option in the dropdown filter.
+    */
   var withoutEmptyOption: js.UndefOr[Boolean] = js.undefined
 }
-
 object SelectFilter {
-  @scala.inline
-  def apply(
-    options: SelectFilterOptionsType,
-    `type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter,
-    condition: FilterCondition = null,
-    defaultValue: String | Double | Boolean = null,
-    selectText: String = null,
-    style: CSSProperties = null,
-    withoutEmptyOption: js.UndefOr[Boolean] = js.undefined
-  ): SelectFilter = {
+  
+  inline def apply(options: SelectFilterOptionsType): SelectFilter = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (selectText != null) __obj.updateDynamic("selectText")(selectText.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutEmptyOption)) __obj.updateDynamic("withoutEmptyOption")(withoutEmptyOption.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SelectFilter")
     __obj.asInstanceOf[SelectFilter]
   }
+  
+  extension [Self <: SelectFilter](x: Self) {
+    
+    inline def setCondition(value: FilterCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    
+    inline def setDefaultValue(value: String | Double | Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setOptions(value: SelectFilterOptionsType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setSelectText(value: String): Self = StObject.set(x, "selectText", value.asInstanceOf[js.Any])
+    
+    inline def setSelectTextUndefined: Self = StObject.set(x, "selectText", js.undefined)
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setType(value: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setWithoutEmptyOption(value: Boolean): Self = StObject.set(x, "withoutEmptyOption", value.asInstanceOf[js.Any])
+    
+    inline def setWithoutEmptyOptionUndefined: Self = StObject.set(x, "withoutEmptyOption", js.undefined)
+  }
 }
-

@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.FocusedCellChanging event.
   */
-@JSGlobal("ASPxClientTreeListFocusedCellChangingEventArgs")
-@js.native
-class ASPxClientTreeListFocusedCellChangingEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientTreeListFocusedCellChangingEventArgs class.
-    * @param cellInfo An ASPxClientTreeListCellInfo object providing information about the focused cell.
-    */
-  def this(cellInfo: ASPxClientTreeListCellInfo) = this()
+trait ASPxClientTreeListFocusedCellChangingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
     * Provides information on a cell currently being focused.
     */
-  var cellInfo: ASPxClientTreeListCellInfo = js.native
+  var cellInfo: ASPxClientTreeListCellInfo
 }
-
+object ASPxClientTreeListFocusedCellChangingEventArgs {
+  
+  inline def apply(cancel: Boolean, cellInfo: ASPxClientTreeListCellInfo): ASPxClientTreeListFocusedCellChangingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cellInfo = cellInfo.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientTreeListFocusedCellChangingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientTreeListFocusedCellChangingEventArgs](x: Self) {
+    
+    inline def setCellInfo(value: ASPxClientTreeListCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
+  }
+}

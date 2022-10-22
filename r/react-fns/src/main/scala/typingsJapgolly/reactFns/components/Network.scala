@@ -1,50 +1,47 @@
 package typingsJapgolly.reactFns.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.ComponentType
-import typingsJapgolly.reactFns.networkNetworkMod.NetworkProps
-import typingsJapgolly.reactFns.typesMod.SharedRenderProps
+import typingsJapgolly.reactFns.distNetworkNetworkMod.NetworkProps
+import typingsJapgolly.reactFns.distTypesMod.SharedRenderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Network {
-  def apply(
-    component: ComponentType[NetworkProps | Unit] = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    render: NetworkProps => CallbackTo[Node] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: (js.Function1[NetworkProps, Node]) | Node = null
-  ): UnmountedWithRoot[
-    SharedRenderProps[NetworkProps], 
-    typingsJapgolly.reactFns.mod.Network, 
-    Unit, 
-    SharedRenderProps[NetworkProps]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1((t0: typingsJapgolly.reactFns.networkNetworkMod.NetworkProps) => render(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactFns.typesMod.SharedRenderProps[typingsJapgolly.reactFns.networkNetworkMod.NetworkProps], 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactFns.mod.Network](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactFns.typesMod.SharedRenderProps[typingsJapgolly.reactFns.networkNetworkMod.NetworkProps]])
-  }
   @JSImport("react-fns", "Network")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactFns.mod.Network] {
+    
+    inline def children(value: (js.Function1[NetworkProps, Node]) | Node): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenFunction1(value: NetworkProps => Node): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def childrenNull: this.type = set("children", null)
+    
+    inline def childrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def component(value: ComponentType[NetworkProps | Unit]): this.type = set("component", value.asInstanceOf[js.Any])
+    
+    inline def debug(value: Boolean): this.type = set("debug", value.asInstanceOf[js.Any])
+    
+    inline def render(value: NetworkProps => Node): this.type = set("render", js.Any.fromFunction1(value))
+  }
+  
+  implicit def make(companion: Network.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SharedRenderProps[NetworkProps]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

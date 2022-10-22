@@ -5,24 +5,24 @@ import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.ApplicationExec
 import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.IFileOpenPickerActivatedEventArgs
 import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import typingsJapgolly.winrt.Windows.Storage.Pickers.Provider.FileOpenPickerUI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.WebUI.WebUIFileOpenPickerActivatedEventArgs")
-@js.native
-class WebUIFileOpenPickerActivatedEventArgs ()
-  extends IFileOpenPickerActivatedEventArgs
-     with IActivatedEventArgsDeferral {
-  /* CompleteClass */
-  override var activatedOperation: ActivatedOperation = js.native
-  /* CompleteClass */
-  override var fileOpenPickerUI: FileOpenPickerUI = js.native
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
+trait WebUIFileOpenPickerActivatedEventArgs
+  extends StObject
+     with IFileOpenPickerActivatedEventArgs
+     with IActivatedEventArgsDeferral
+object WebUIFileOpenPickerActivatedEventArgs {
+  
+  inline def apply(
+    activatedOperation: ActivatedOperation,
+    fileOpenPickerUI: FileOpenPickerUI,
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen
+  ): WebUIFileOpenPickerActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any], fileOpenPickerUI = fileOpenPickerUI.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebUIFileOpenPickerActivatedEventArgs]
+  }
 }
-

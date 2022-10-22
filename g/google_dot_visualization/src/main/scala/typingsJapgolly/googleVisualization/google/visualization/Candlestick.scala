@@ -1,27 +1,36 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Candlestick extends js.Object {
+trait Candlestick extends StObject {
+  
   var fallingColor: js.UndefOr[ChartStrokeFill] = js.undefined
+  
   var hollowIsRising: js.UndefOr[Boolean] = js.undefined
+  
   var risingColor: js.UndefOr[ChartStrokeFill] = js.undefined
 }
-
 object Candlestick {
-  @scala.inline
-  def apply(
-    fallingColor: ChartStrokeFill = null,
-    hollowIsRising: js.UndefOr[Boolean] = js.undefined,
-    risingColor: ChartStrokeFill = null
-  ): Candlestick = {
+  
+  inline def apply(): Candlestick = {
     val __obj = js.Dynamic.literal()
-    if (fallingColor != null) __obj.updateDynamic("fallingColor")(fallingColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hollowIsRising)) __obj.updateDynamic("hollowIsRising")(hollowIsRising.asInstanceOf[js.Any])
-    if (risingColor != null) __obj.updateDynamic("risingColor")(risingColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Candlestick]
   }
+  
+  extension [Self <: Candlestick](x: Self) {
+    
+    inline def setFallingColor(value: ChartStrokeFill): Self = StObject.set(x, "fallingColor", value.asInstanceOf[js.Any])
+    
+    inline def setFallingColorUndefined: Self = StObject.set(x, "fallingColor", js.undefined)
+    
+    inline def setHollowIsRising(value: Boolean): Self = StObject.set(x, "hollowIsRising", value.asInstanceOf[js.Any])
+    
+    inline def setHollowIsRisingUndefined: Self = StObject.set(x, "hollowIsRising", js.undefined)
+    
+    inline def setRisingColor(value: ChartStrokeFill): Self = StObject.set(x, "risingColor", value.asInstanceOf[js.Any])
+    
+    inline def setRisingColorUndefined: Self = StObject.set(x, "risingColor", js.undefined)
+  }
 }
-

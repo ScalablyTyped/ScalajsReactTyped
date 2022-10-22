@@ -1,20 +1,25 @@
 package typingsJapgolly.ethereumProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EventParameter extends DataItem {
+trait EventParameter
+  extends StObject
+     with DataItem {
+  
   var indexed: Boolean
 }
-
 object EventParameter {
-  @scala.inline
-  def apply(indexed: Boolean, name: String, `type`: String, components: js.Array[DataItem] = null): EventParameter = {
+  
+  inline def apply(indexed: Boolean, name: String, `type`: String): EventParameter = {
     val __obj = js.Dynamic.literal(indexed = indexed.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventParameter]
   }
+  
+  extension [Self <: EventParameter](x: Self) {
+    
+    inline def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
+  }
 }
-

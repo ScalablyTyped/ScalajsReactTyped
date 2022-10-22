@@ -1,21 +1,32 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommsNotification extends js.Object {
+trait CommsNotification extends StObject {
+  
+  // Possible values are: created, updated, deleted.
   var changeType: js.UndefOr[ChangeType] = js.undefined
+  
+  // URI of the resource that was changed.
   var resourceUrl: js.UndefOr[String] = js.undefined
 }
-
 object CommsNotification {
-  @scala.inline
-  def apply(changeType: ChangeType = null, resourceUrl: String = null): CommsNotification = {
+  
+  inline def apply(): CommsNotification = {
     val __obj = js.Dynamic.literal()
-    if (changeType != null) __obj.updateDynamic("changeType")(changeType.asInstanceOf[js.Any])
-    if (resourceUrl != null) __obj.updateDynamic("resourceUrl")(resourceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommsNotification]
   }
+  
+  extension [Self <: CommsNotification](x: Self) {
+    
+    inline def setChangeType(value: ChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    
+    inline def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
+    
+    inline def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
+    
+    inline def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
+  }
 }
-

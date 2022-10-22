@@ -1,29 +1,24 @@
 package typingsJapgolly.typescriptCompare
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typescriptCompareStrings {
-  @js.native
-  sealed trait broaderLeft extends js.Object
   
   @js.native
-  sealed trait broaderRight extends js.Object
+  sealed trait broaderLeft extends StObject
+  inline def broaderLeft: broaderLeft = "broaderLeft".asInstanceOf[broaderLeft]
   
   @js.native
-  sealed trait equal extends js.Object
+  sealed trait broaderRight extends StObject
+  inline def broaderRight: broaderRight = "broaderRight".asInstanceOf[broaderRight]
   
   @js.native
-  sealed trait mismatch extends js.Object
+  sealed trait equal extends StObject
+  inline def equal: equal = "equal".asInstanceOf[equal]
   
-  @scala.inline
-  def broaderLeft: broaderLeft = "broaderLeft".asInstanceOf[broaderLeft]
-  @scala.inline
-  def broaderRight: broaderRight = "broaderRight".asInstanceOf[broaderRight]
-  @scala.inline
-  def equal: equal = "equal".asInstanceOf[equal]
-  @scala.inline
-  def mismatch: mismatch = "mismatch".asInstanceOf[mismatch]
+  @js.native
+  sealed trait mismatch extends StObject
+  inline def mismatch: mismatch = "mismatch".asInstanceOf[mismatch]
 }
-

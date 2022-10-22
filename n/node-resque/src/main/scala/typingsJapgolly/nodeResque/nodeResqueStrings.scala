@@ -2,93 +2,103 @@ package typingsJapgolly.nodeResque
 
 import typingsJapgolly.nodeResque.mod.SchedulerEvent
 import typingsJapgolly.nodeResque.mod.WorkerEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeResqueStrings {
-  @js.native
-  sealed trait cleanStuckWorker extends SchedulerEvent
   
   @js.native
-  sealed trait cleaning_worker extends WorkerEvent
+  sealed trait cleanStuckWorker
+    extends StObject
+       with SchedulerEvent
+  inline def cleanStuckWorker: cleanStuckWorker = "cleanStuckWorker".asInstanceOf[cleanStuckWorker]
+  
+  @js.native
+  sealed trait cleaning_worker
+    extends StObject
+       with WorkerEvent
+  inline def cleaning_worker: cleaning_worker = "cleaning_worker".asInstanceOf[cleaning_worker]
   
   @js.native
   sealed trait end
-    extends SchedulerEvent
+    extends StObject
+       with SchedulerEvent
        with WorkerEvent
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait error
-    extends SchedulerEvent
+    extends StObject
+       with SchedulerEvent
        with WorkerEvent
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait failure extends WorkerEvent
+  sealed trait failure
+    extends StObject
+       with WorkerEvent
+  inline def failure: failure = "failure".asInstanceOf[failure]
   
   @js.native
-  sealed trait job extends WorkerEvent
+  sealed trait job
+    extends StObject
+       with WorkerEvent
+  inline def job: job = "job".asInstanceOf[job]
   
   @js.native
-  sealed trait master extends SchedulerEvent
+  sealed trait master
+    extends StObject
+       with SchedulerEvent
+  inline def master: master = "master".asInstanceOf[master]
   
   @js.native
-  sealed trait pause extends WorkerEvent
+  sealed trait pause
+    extends StObject
+       with WorkerEvent
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait ping extends WorkerEvent
+  sealed trait ping
+    extends StObject
+       with WorkerEvent
+  inline def ping: ping = "ping".asInstanceOf[ping]
   
   @js.native
   sealed trait poll
-    extends SchedulerEvent
+    extends StObject
+       with SchedulerEvent
        with WorkerEvent
+  inline def poll: poll = "poll".asInstanceOf[poll]
   
   @js.native
-  sealed trait reEnqueue extends WorkerEvent
+  sealed trait reEnqueue
+    extends StObject
+       with WorkerEvent
+  inline def reEnqueue: reEnqueue = "reEnqueue".asInstanceOf[reEnqueue]
   
   @js.native
   sealed trait start
-    extends SchedulerEvent
+    extends StObject
+       with SchedulerEvent
        with WorkerEvent
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait success extends WorkerEvent
+  sealed trait success
+    extends StObject
+       with WorkerEvent
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait transferredJob extends SchedulerEvent
+  sealed trait transferredJob
+    extends StObject
+       with SchedulerEvent
+  inline def transferredJob: transferredJob = "transferredJob".asInstanceOf[transferredJob]
   
   @js.native
-  sealed trait workingTimestamp extends SchedulerEvent
-  
-  @scala.inline
-  def cleanStuckWorker: cleanStuckWorker = "cleanStuckWorker".asInstanceOf[cleanStuckWorker]
-  @scala.inline
-  def cleaning_worker: cleaning_worker = "cleaning_worker".asInstanceOf[cleaning_worker]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def failure: failure = "failure".asInstanceOf[failure]
-  @scala.inline
-  def job: job = "job".asInstanceOf[job]
-  @scala.inline
-  def master: master = "master".asInstanceOf[master]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def ping: ping = "ping".asInstanceOf[ping]
-  @scala.inline
-  def poll: poll = "poll".asInstanceOf[poll]
-  @scala.inline
-  def reEnqueue: reEnqueue = "reEnqueue".asInstanceOf[reEnqueue]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def transferredJob: transferredJob = "transferredJob".asInstanceOf[transferredJob]
-  @scala.inline
-  def workingTimestamp: workingTimestamp = "workingTimestamp".asInstanceOf[workingTimestamp]
+  sealed trait workingTimestamp
+    extends StObject
+       with SchedulerEvent
+  inline def workingTimestamp: workingTimestamp = "workingTimestamp".asInstanceOf[workingTimestamp]
 }
-

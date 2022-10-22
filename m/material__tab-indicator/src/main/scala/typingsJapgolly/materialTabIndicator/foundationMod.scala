@@ -1,50 +1,31 @@
 package typingsJapgolly.materialTabIndicator
 
-import org.scalajs.dom.raw.ClientRect
+import org.scalajs.dom.DOMRect
 import typingsJapgolly.materialBase.foundationMod.MDCFoundation
 import typingsJapgolly.materialTabIndicator.adapterMod.MDCTabIndicatorAdapter
+import typingsJapgolly.materialTabIndicator.anon.PartialMDCTabIndicatorAda
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tab-indicator/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
+  
+  /* note: abstract class */ @JSImport("@material/tab-indicator/foundation", JSImport.Default)
   @js.native
-  abstract class MDCTabIndicatorFoundation () extends MDCFoundation[MDCTabIndicatorAdapter] {
+  open class default () extends MDCTabIndicatorFoundation {
     def this(adapter: PartialMDCTabIndicatorAda) = this()
+  }
+  
+  /* note: abstract class */ @JSImport("@material/tab-indicator/foundation", "MDCTabIndicatorFoundation")
+  @js.native
+  open class MDCTabIndicatorFoundation () extends MDCFoundation[MDCTabIndicatorAdapter] {
+    def this(adapter: PartialMDCTabIndicatorAda) = this()
+    
     def activate(): Unit = js.native
-    def activate(previousIndicatorClientRect: ClientRect): Unit = js.native
-    def computeContentClientRect(): ClientRect = js.native
+    def activate(previousIndicatorClientRect: DOMRect): Unit = js.native
+    
+    def computeContentClientRect(): DOMRect = js.native
+    
     def deactivate(): Unit = js.native
-    // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
-    /* CompleteClass */
-    override def destroy(): Unit = js.native
-    // Subclasses should override this method to perform initialization routines (registering events, etc.)
-    /* CompleteClass */
-    override def init(): Unit = js.native
   }
-  
-  @js.native
-  abstract class default () extends MDCTabIndicatorFoundation {
-    def this(adapter: PartialMDCTabIndicatorAda) = this()
-  }
-  
-  /* static members */
-  @js.native
-  object MDCTabIndicatorFoundation extends js.Object {
-    val cssClasses: AnonACTIVE = js.native
-    val defaultAdapter: MDCTabIndicatorAdapter = js.native
-    val strings: AnonCONTENTSELECTOR = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    val cssClasses: AnonACTIVE = js.native
-    val defaultAdapter: MDCTabIndicatorAdapter = js.native
-    val strings: AnonCONTENTSELECTOR = js.native
-  }
-  
 }
-

@@ -10,10 +10,10 @@ The lodash method `_.curry` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.curry |
 | Keywords           | lodash-modularized, curry |
-| # releases         | 0 |
-| # dependents       | 129 |
-| # downloads        | 11468268 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2833949.3333333335 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -1,17 +1,20 @@
 package typingsJapgolly.ldapjs.mod
 
-import typingsJapgolly.ldapjs.AnonAttribute
+import typingsJapgolly.ldapjs.anon.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ldapjs", "EqualityFilter")
 @js.native
-class EqualityFilter protected () extends Filter {
-  def this(options: AnonAttribute) = this()
+open class EqualityFilter protected ()
+  extends StObject
+     with Filter {
+  def this(options: Value) = this()
+  
   /* CompleteClass */
-  override var `type`: String = js.native
+  override def matches(obj: Any): Boolean = js.native
+  
   /* CompleteClass */
-  override def matches(obj: js.Any): Boolean = js.native
+  var `type`: String = js.native
 }
-

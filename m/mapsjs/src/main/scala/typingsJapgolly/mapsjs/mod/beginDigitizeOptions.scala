@@ -1,53 +1,84 @@
 package typingsJapgolly.mapsjs.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.mapsjs.mod.geometry.polygon
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait beginDigitizeOptions extends js.Object {
+trait beginDigitizeOptions extends StObject {
+  
   var circleEndAction: js.UndefOr[js.Function1[/* circle */ polygon, Unit]] = js.undefined
+  
   var envelopeEndAction: js.UndefOr[js.Function1[/* env */ envelope, Unit]] = js.undefined
+  
   var geometryStyle: js.UndefOr[typingsJapgolly.mapsjs.mod.geometryStyle] = js.undefined
+  
   var key: js.UndefOr[String] = js.undefined
+  
   var leavePath: js.UndefOr[Boolean] = js.undefined
-  var nodeMoveAction: js.UndefOr[js.Function3[/* x */ Double, /* y */ Double, /* actionType */ String, _]] = js.undefined
+  
+  var nodeMoveAction: js.UndefOr[js.Function3[/* x */ Double, /* y */ Double, /* actionType */ String, Any]] = js.undefined
+  
   var nodeTapAndHoldAction: js.UndefOr[js.Function2[/* setIdx */ Double, /* idx */ Double, Boolean]] = js.undefined
+  
   var shapeChangeAction: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var shapeType: String
+  
   var styledGeometry: js.UndefOr[typingsJapgolly.mapsjs.mod.styledGeometry] = js.undefined
+  
   var suppressNodeAdd: js.UndefOr[Boolean] = js.undefined
 }
-
 object beginDigitizeOptions {
-  @scala.inline
-  def apply(
-    shapeType: String,
-    circleEndAction: /* circle */ polygon => Callback = null,
-    envelopeEndAction: /* env */ envelope => Callback = null,
-    geometryStyle: geometryStyle = null,
-    key: String = null,
-    leavePath: js.UndefOr[Boolean] = js.undefined,
-    nodeMoveAction: (/* x */ Double, /* y */ Double, /* actionType */ String) => CallbackTo[js.Any] = null,
-    nodeTapAndHoldAction: (/* setIdx */ Double, /* idx */ Double) => CallbackTo[Boolean] = null,
-    shapeChangeAction: js.UndefOr[Callback] = js.undefined,
-    styledGeometry: styledGeometry = null,
-    suppressNodeAdd: js.UndefOr[Boolean] = js.undefined
-  ): beginDigitizeOptions = {
+  
+  inline def apply(shapeType: String): beginDigitizeOptions = {
     val __obj = js.Dynamic.literal(shapeType = shapeType.asInstanceOf[js.Any])
-    if (circleEndAction != null) __obj.updateDynamic("circleEndAction")(js.Any.fromFunction1((t0: /* circle */ typingsJapgolly.mapsjs.mod.geometry.polygon) => circleEndAction(t0).runNow()))
-    if (envelopeEndAction != null) __obj.updateDynamic("envelopeEndAction")(js.Any.fromFunction1((t0: /* env */ typingsJapgolly.mapsjs.mod.envelope) => envelopeEndAction(t0).runNow()))
-    if (geometryStyle != null) __obj.updateDynamic("geometryStyle")(geometryStyle.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(leavePath)) __obj.updateDynamic("leavePath")(leavePath.asInstanceOf[js.Any])
-    if (nodeMoveAction != null) __obj.updateDynamic("nodeMoveAction")(js.Any.fromFunction3((t0: /* x */ scala.Double, t1: /* y */ scala.Double, t2: /* actionType */ java.lang.String) => nodeMoveAction(t0, t1, t2).runNow()))
-    if (nodeTapAndHoldAction != null) __obj.updateDynamic("nodeTapAndHoldAction")(js.Any.fromFunction2((t0: /* setIdx */ scala.Double, t1: /* idx */ scala.Double) => nodeTapAndHoldAction(t0, t1).runNow()))
-    shapeChangeAction.foreach(p => __obj.updateDynamic("shapeChangeAction")(p.toJsFn))
-    if (styledGeometry != null) __obj.updateDynamic("styledGeometry")(styledGeometry.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressNodeAdd)) __obj.updateDynamic("suppressNodeAdd")(suppressNodeAdd.asInstanceOf[js.Any])
     __obj.asInstanceOf[beginDigitizeOptions]
   }
+  
+  extension [Self <: beginDigitizeOptions](x: Self) {
+    
+    inline def setCircleEndAction(value: /* circle */ polygon => Callback): Self = StObject.set(x, "circleEndAction", js.Any.fromFunction1((t0: /* circle */ polygon) => value(t0).runNow()))
+    
+    inline def setCircleEndActionUndefined: Self = StObject.set(x, "circleEndAction", js.undefined)
+    
+    inline def setEnvelopeEndAction(value: /* env */ envelope => Callback): Self = StObject.set(x, "envelopeEndAction", js.Any.fromFunction1((t0: /* env */ envelope) => value(t0).runNow()))
+    
+    inline def setEnvelopeEndActionUndefined: Self = StObject.set(x, "envelopeEndAction", js.undefined)
+    
+    inline def setGeometryStyle(value: geometryStyle): Self = StObject.set(x, "geometryStyle", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryStyleUndefined: Self = StObject.set(x, "geometryStyle", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setLeavePath(value: Boolean): Self = StObject.set(x, "leavePath", value.asInstanceOf[js.Any])
+    
+    inline def setLeavePathUndefined: Self = StObject.set(x, "leavePath", js.undefined)
+    
+    inline def setNodeMoveAction(value: (/* x */ Double, /* y */ Double, /* actionType */ String) => Any): Self = StObject.set(x, "nodeMoveAction", js.Any.fromFunction3(value))
+    
+    inline def setNodeMoveActionUndefined: Self = StObject.set(x, "nodeMoveAction", js.undefined)
+    
+    inline def setNodeTapAndHoldAction(value: (/* setIdx */ Double, /* idx */ Double) => Boolean): Self = StObject.set(x, "nodeTapAndHoldAction", js.Any.fromFunction2(value))
+    
+    inline def setNodeTapAndHoldActionUndefined: Self = StObject.set(x, "nodeTapAndHoldAction", js.undefined)
+    
+    inline def setShapeChangeAction(value: Callback): Self = StObject.set(x, "shapeChangeAction", value.toJsFn)
+    
+    inline def setShapeChangeActionUndefined: Self = StObject.set(x, "shapeChangeAction", js.undefined)
+    
+    inline def setShapeType(value: String): Self = StObject.set(x, "shapeType", value.asInstanceOf[js.Any])
+    
+    inline def setStyledGeometry(value: styledGeometry): Self = StObject.set(x, "styledGeometry", value.asInstanceOf[js.Any])
+    
+    inline def setStyledGeometryUndefined: Self = StObject.set(x, "styledGeometry", js.undefined)
+    
+    inline def setSuppressNodeAdd(value: Boolean): Self = StObject.set(x, "suppressNodeAdd", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressNodeAddUndefined: Self = StObject.set(x, "suppressNodeAdd", js.undefined)
+  }
 }
-

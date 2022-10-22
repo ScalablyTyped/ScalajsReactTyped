@@ -1,24 +1,17 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Constants that define the type of gradient on text.
-  *
-  * @static
-  * @constant
-  * @name TEXT_GRADIENT
-  * @memberof PIXI
-  * @type {object}
-  * @property {number} LINEAR_VERTICAL Vertical gradient
-  * @property {number} LINEAR_HORIZONTAL Linear gradient
-  */
 @JSImport("pixi.js", "TEXT_GRADIENT")
 @js.native
-object TEXT_GRADIENT extends js.Object {
-  var LINEAR_HORIZONTAL: Double = js.native
-  var LINEAR_VERTICAL: Double = js.native
+object TEXT_GRADIENT extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[typingsJapgolly.pixiText.mod.TEXT_GRADIENT & Double] = js.native
+  
+  /* 1 */ val LINEAR_HORIZONTAL: typingsJapgolly.pixiText.mod.TEXT_GRADIENT.LINEAR_HORIZONTAL & Double = js.native
+  
+  /* 0 */ val LINEAR_VERTICAL: typingsJapgolly.pixiText.mod.TEXT_GRADIENT.LINEAR_VERTICAL & Double = js.native
 }
-

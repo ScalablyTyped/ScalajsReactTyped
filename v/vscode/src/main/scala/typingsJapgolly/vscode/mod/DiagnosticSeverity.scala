@@ -1,54 +1,52 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DiagnosticSeverity extends js.Object
-
+sealed trait DiagnosticSeverity extends StObject
 @JSImport("vscode", "DiagnosticSeverity")
 @js.native
-object DiagnosticSeverity extends js.Object {
-  /**
-  		 * Something not allowed by the rules of a language or other means.
-  		 */
-  @js.native
-  sealed trait Error extends DiagnosticSeverity
-  
-  /**
-  		 * Something to hint to a better way of doing it, like proposing
-  		 * a refactoring.
-  		 */
-  @js.native
-  sealed trait Hint extends DiagnosticSeverity
-  
-  /**
-  		 * Something to inform about but not a problem.
-  		 */
-  @js.native
-  sealed trait Information extends DiagnosticSeverity
-  
-  /**
-  		 * Something suspicious but allowed.
-  		 */
-  @js.native
-  sealed trait Warning extends DiagnosticSeverity
+object DiagnosticSeverity extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DiagnosticSeverity with Double] = js.native
-  /* 0 */ @js.native
-  object Error extends TopLevel[Error with Double]
+  def apply(value: Double): js.UndefOr[DiagnosticSeverity & Double] = js.native
   
-  /* 3 */ @js.native
-  object Hint extends TopLevel[Hint with Double]
+  /**
+    * Something not allowed by the rules of a language or other means.
+    */
+  @js.native
+  sealed trait Error
+    extends StObject
+       with DiagnosticSeverity
+  /* 0 */ val Error: typingsJapgolly.vscode.mod.DiagnosticSeverity.Error & Double = js.native
   
-  /* 2 */ @js.native
-  object Information extends TopLevel[Information with Double]
+  /**
+    * Something to hint to a better way of doing it, like proposing
+    * a refactoring.
+    */
+  @js.native
+  sealed trait Hint
+    extends StObject
+       with DiagnosticSeverity
+  /* 3 */ val Hint: typingsJapgolly.vscode.mod.DiagnosticSeverity.Hint & Double = js.native
   
-  /* 1 */ @js.native
-  object Warning extends TopLevel[Warning with Double]
+  /**
+    * Something to inform about but not a problem.
+    */
+  @js.native
+  sealed trait Information
+    extends StObject
+       with DiagnosticSeverity
+  /* 2 */ val Information: typingsJapgolly.vscode.mod.DiagnosticSeverity.Information & Double = js.native
   
+  /**
+    * Something suspicious but allowed.
+    */
+  @js.native
+  sealed trait Warning
+    extends StObject
+       with DiagnosticSeverity
+  /* 1 */ val Warning: typingsJapgolly.vscode.mod.DiagnosticSeverity.Warning & Double = js.native
 }
-

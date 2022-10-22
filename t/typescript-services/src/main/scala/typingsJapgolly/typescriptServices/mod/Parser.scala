@@ -1,23 +1,26 @@
 package typingsJapgolly.typescriptServices.mod
 
 import typingsJapgolly.typescriptServices.TypeScript.ISimpleText
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-services", "Parser")
-@js.native
-object Parser extends js.Object {
-  def incrementalParse(
+object Parser {
+  
+  @JSImport("typescript-services", "Parser")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def incrementalParse(
     oldSyntaxTree: typingsJapgolly.typescriptServices.TypeScript.SyntaxTree,
     textChangeRange: typingsJapgolly.typescriptServices.TypeScript.TextChangeRange,
     newText: ISimpleText
-  ): typingsJapgolly.typescriptServices.TypeScript.SyntaxTree = js.native
-  def parse(
+  ): typingsJapgolly.typescriptServices.TypeScript.SyntaxTree = (^.asInstanceOf[js.Dynamic].applyDynamic("incrementalParse")(oldSyntaxTree.asInstanceOf[js.Any], textChangeRange.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.typescriptServices.TypeScript.SyntaxTree]
+  
+  inline def parse(
     fileName: String,
     text: ISimpleText,
     isDeclaration: Boolean,
     options: typingsJapgolly.typescriptServices.TypeScript.ParseOptions
-  ): typingsJapgolly.typescriptServices.TypeScript.SyntaxTree = js.native
+  ): typingsJapgolly.typescriptServices.TypeScript.SyntaxTree = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(fileName.asInstanceOf[js.Any], text.asInstanceOf[js.Any], isDeclaration.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.typescriptServices.TypeScript.SyntaxTree]
 }
-

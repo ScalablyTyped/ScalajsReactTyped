@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Storage.Pickers.Provider
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SetFileNameResult extends js.Object
-
+sealed trait SetFileNameResult extends StObject
 @JSGlobal("Windows.Storage.Pickers.Provider.SetFileNameResult")
 @js.native
-object SetFileNameResult extends js.Object {
-  @js.native
-  sealed trait notAllowed extends SetFileNameResult
+object SetFileNameResult extends StObject {
   
   @js.native
-  sealed trait succeeded extends SetFileNameResult
+  sealed trait notAllowed
+    extends StObject
+       with SetFileNameResult
   
   @js.native
-  sealed trait unavailable extends SetFileNameResult
+  sealed trait succeeded
+    extends StObject
+       with SetFileNameResult
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SetFileNameResult with Double] = js.native
-  /* 1 */ @js.native
-  object notAllowed extends TopLevel[notAllowed with Double]
-  
-  /* 0 */ @js.native
-  object succeeded extends TopLevel[succeeded with Double]
-  
-  /* 2 */ @js.native
-  object unavailable extends TopLevel[unavailable with Double]
-  
+  @js.native
+  sealed trait unavailable
+    extends StObject
+       with SetFileNameResult
 }
-

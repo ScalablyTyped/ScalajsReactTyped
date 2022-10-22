@@ -1,11 +1,8 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("WebGLTexture")
-@js.native
-object WebGLTexture extends Instantiable0[WebGLTexture]
-
+/** Part of the WebGL API and represents an opaque texture object providing storage and state for texturing operations. */
+trait WebGLTexture extends StObject

@@ -1,23 +1,32 @@
 package typingsJapgolly.c3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SidePadding extends js.Object {
+trait SidePadding extends StObject {
+  
   /** Left padding. */
   var left: js.UndefOr[Double] = js.undefined
+  
   /** Right padding. */
   var right: js.UndefOr[Double] = js.undefined
 }
-
 object SidePadding {
-  @scala.inline
-  def apply(left: Int | Double = null, right: Int | Double = null): SidePadding = {
+  
+  inline def apply(): SidePadding = {
     val __obj = js.Dynamic.literal()
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     __obj.asInstanceOf[SidePadding]
   }
+  
+  extension [Self <: SidePadding](x: Self) {
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+  }
 }
-

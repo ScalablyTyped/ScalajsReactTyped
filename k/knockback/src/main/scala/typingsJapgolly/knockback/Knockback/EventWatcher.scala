@@ -1,24 +1,20 @@
 package typingsJapgolly.knockback.Knockback
 
 import typingsJapgolly.backbone.mod.Model
-import typingsJapgolly.knockout.KnockoutObservable
+import typingsJapgolly.backbone.mod.ModelSetOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Knockback.EventWatcher")
 @js.native
-class EventWatcher () extends Destroyable {
-  def emitter(): Model = js.native
-  def emitter(newEmitter: Model): js.Any = js.native
-  def registerCallbacks(obj: js.Any, callback_info: js.Any): js.Any = js.native
-  def releaseCallbacks(obj: js.Any): js.Any = js.native
+trait EventWatcher
+  extends StObject
+     with Destroyable {
+  
+  def emitter(): Model[Any, ModelSetOptions, Any] = js.native
+  def emitter(newEmitter: Model[Any, ModelSetOptions, Any]): Any = js.native
+  
+  def registerCallbacks(obj: Any, callback_info: Any): Any = js.native
+  
+  def releaseCallbacks(obj: Any): Any = js.native
 }
-
-/* static members */
-@JSGlobal("Knockback.EventWatcher")
-@js.native
-object EventWatcher extends js.Object {
-  def useOptionsOrCreate(options: js.Any, emitter: KnockoutObservable[_], obj: Model, callback_options: js.Any): js.Any = js.native
-}
-

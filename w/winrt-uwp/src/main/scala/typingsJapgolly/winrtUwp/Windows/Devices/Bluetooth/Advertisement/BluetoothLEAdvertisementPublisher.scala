@@ -4,31 +4,15 @@ import typingsJapgolly.winrtUwp.Windows.Foundation.EventHandler
 import typingsJapgolly.winrtUwp.Windows.Foundation.TypedEventHandler
 import typingsJapgolly.winrtUwp.Windows.WinRTEvent
 import typingsJapgolly.winrtUwp.winrtUwpStrings.statuschanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object to send Bluetooth Low Energy (LE) advertisements. */
-@JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisher")
 @js.native
-/** Creates a new BluetoothLEAdvertisementPublisher object. */
-class BluetoothLEAdvertisementPublisher () extends js.Object {
-  /**
-    * Creates a new BluetoothLEAdvertisementPublisher object with the Bluetooth LE advertisement to publish.
-    * @param advertisement The Bluetooth LE advertisement to publish.
-    */
-  def this(advertisement: BluetoothLEAdvertisement) = this()
-  /** Gets a copy of the Bluetooth LE advertisement to publish. */
-  var advertisement: BluetoothLEAdvertisement = js.native
-  /** Notification that the status of the BluetoothLEAdvertisementPublisher has changed. */
-  @JSName("onstatuschanged")
-  var onstatuschanged_Original: TypedEventHandler[
-    BluetoothLEAdvertisementPublisher, 
-    BluetoothLEAdvertisementPublisherStatusChangedEventArgs
-  ] = js.native
-  /** Gets the current status of the BluetoothLEAdvertisementPublisher . */
-  var status: BluetoothLEAdvertisementPublisherStatus = js.native
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+trait BluetoothLEAdvertisementPublisher extends StObject {
+  
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statuschanged(
     `type`: statuschanged,
@@ -37,11 +21,22 @@ class BluetoothLEAdvertisementPublisher () extends js.Object {
       BluetoothLEAdvertisementPublisherStatusChangedEventArgs
     ]
   ): Unit = js.native
+  
+  /** Gets a copy of the Bluetooth LE advertisement to publish. */
+  var advertisement: BluetoothLEAdvertisement = js.native
+  
   /** Notification that the status of the BluetoothLEAdvertisementPublisher has changed. */
   def onstatuschanged(
-    ev: BluetoothLEAdvertisementPublisherStatusChangedEventArgs with WinRTEvent[BluetoothLEAdvertisementPublisher]
+    ev: BluetoothLEAdvertisementPublisherStatusChangedEventArgs & WinRTEvent[BluetoothLEAdvertisementPublisher]
   ): Unit = js.native
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  /** Notification that the status of the BluetoothLEAdvertisementPublisher has changed. */
+  @JSName("onstatuschanged")
+  var onstatuschanged_Original: TypedEventHandler[
+    BluetoothLEAdvertisementPublisher, 
+    BluetoothLEAdvertisementPublisherStatusChangedEventArgs
+  ] = js.native
+  
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statuschanged(
     `type`: statuschanged,
@@ -50,9 +45,13 @@ class BluetoothLEAdvertisementPublisher () extends js.Object {
       BluetoothLEAdvertisementPublisherStatusChangedEventArgs
     ]
   ): Unit = js.native
+  
   /** Start advertising a Bluetooth LE advertisement payload. */
   def start(): Unit = js.native
+  
+  /** Gets the current status of the BluetoothLEAdvertisementPublisher . */
+  var status: BluetoothLEAdvertisementPublisherStatus = js.native
+  
   /** Stop the publisher and stop advertising a Bluetooth LE advertisement payload. */
   def stop(): Unit = js.native
 }
-

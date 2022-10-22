@@ -1,69 +1,73 @@
 package typingsJapgolly.nodeValidator
 
-import typingsJapgolly.nodeValidator.ValidatorOptions.IsDateOptions
-import typingsJapgolly.nodeValidator.ValidatorOptions.IsNumberOptions
-import typingsJapgolly.nodeValidator.ValidatorOptions.IsStringOptions
-import typingsJapgolly.nodeValidator.ValidatorOptions.Options
-import typingsJapgolly.std.Number
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Validator")
-@js.native
-object Validator extends js.Object {
-  @js.native
-  trait IsObjectValidator extends Validatable {
-    def withCustom(customValidator: ValidateFn): IsObjectValidator = js.native
-    def withOptional(name: String, validator: Validatable): IsObjectValidator = js.native
-    def withRequired(name: String, validator: Validatable): IsObjectValidator = js.native
+object Validator {
+  
+  trait IsObjectValidator
+    extends StObject
+       with Validatable {
+    
+    def withCustom(customValidator: ValidateFn): IsObjectValidator
+    
+    def withOptional(name: String, validator: Validatable): IsObjectValidator
+    
+    def withRequired(name: String, validator: Validatable): IsObjectValidator
+  }
+  object IsObjectValidator {
+    
+    inline def apply(
+      validate: (/* value */ Any, /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit]) => Callback,
+      withCustom: ValidateFn => IsObjectValidator,
+      withOptional: (String, Validatable) => IsObjectValidator,
+      withRequired: (String, Validatable) => IsObjectValidator
+    ): IsObjectValidator = {
+      val __obj = js.Dynamic.literal(validate = js.Any.fromFunction2((t0: /* value */ Any, t1: /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit]) => (validate(t0, t1)).runNow()), withCustom = js.Any.fromFunction1(withCustom), withOptional = js.Any.fromFunction2(withOptional), withRequired = js.Any.fromFunction2(withRequired))
+      __obj.asInstanceOf[IsObjectValidator]
+    }
+    
+    extension [Self <: IsObjectValidator](x: Self) {
+      
+      inline def setWithCustom(value: ValidateFn => IsObjectValidator): Self = StObject.set(x, "withCustom", js.Any.fromFunction1(value))
+      
+      inline def setWithOptional(value: (String, Validatable) => IsObjectValidator): Self = StObject.set(x, "withOptional", js.Any.fromFunction2(value))
+      
+      inline def setWithRequired(value: (String, Validatable) => IsObjectValidator): Self = StObject.set(x, "withRequired", js.Any.fromFunction2(value))
+    }
   }
   
-  @js.native
-  trait Validatable extends js.Object {
-    @JSName("validate")
-    var validate_Original: ValidateFn = js.native
+  trait Validatable extends StObject {
+    
     def validate(
-      value: js.Any,
-      onError: js.Function3[/* message */ String, /* childName */ String, /* childValie */ js.Any, Unit]
-    ): Unit = js.native
+      value: Any,
+      onError: js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit]
+    ): Unit
+    @JSName("validate")
+    var validate_Original: ValidateFn
+  }
+  object Validatable {
+    
+    inline def apply(
+      validate: (/* value */ Any, /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit]) => Callback
+    ): Validatable = {
+      val __obj = js.Dynamic.literal(validate = js.Any.fromFunction2((t0: /* value */ Any, t1: /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit]) => (validate(t0, t1)).runNow()))
+      __obj.asInstanceOf[Validatable]
+    }
+    
+    extension [Self <: Validatable](x: Self) {
+      
+      inline def setValidate(
+        value: (/* value */ Any, /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit]) => Callback
+      ): Self = StObject.set(x, "validate", js.Any.fromFunction2((t0: /* value */ Any, t1: /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit]) => (value(t0, t1)).runNow()))
+    }
   }
   
-  def bodyValidator(validator: Validatable): js.Any = js.native
-  def express(validator: Validatable): js.Any = js.native
-  def expressParams(validator: Validatable): js.Any = js.native
-  def expressQuery(validator: Validatable): js.Any = js.native
-  def isAnyObject(): IsObjectValidator = js.native
-  def isArray(): Validatable = js.native
-  def isArray(validator: Validatable): Validatable = js.native
-  def isArray(validator: Validatable, options: Options): Validatable = js.native
-  def isBoolean(): Validatable = js.native
-  def isDate(): Validatable = js.native
-  def isDate(options: IsDateOptions): Validatable = js.native
-  def isInteger(): Validatable = js.native
-  def isInteger(options: IsNumberOptions): Validatable = js.native
-  def isIsoDate(): Validatable = js.native
-  def isIsoDate(options: IsDateOptions): Validatable = js.native
-  def isIsoDateTime(): Validatable = js.native
-  def isIsoDateTime(options: IsDateOptions): Validatable = js.native
-  def isNumber(): Validatable = js.native
-  def isNumber(options: IsNumberOptions): Validatable = js.native
-  def isObject(): IsObjectValidator = js.native
-  def isString(): Validatable = js.native
-  def isString(options: IsStringOptions): Validatable = js.native
-  def isStringOrNull(): Validatable = js.native
-  def isStringOrNull(options: IsStringOptions): Validatable = js.native
-  def paramsValidator(validator: Validatable): js.Any = js.native
-  def queryValidator(validator: Validatable): js.Any = js.native
-  def run(
-    validator: Validatable,
-    value: js.Any,
-    callback: js.Function2[/* errorCount */ Number, /* errors */ js.Array[_], Unit]
-  ): Unit = js.native
   type ValidateFn = js.Function2[
-    /* value */ js.Any, 
-    /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ js.Any, Unit], 
+    /* value */ Any, 
+    /* onError */ js.Function3[/* message */ String, /* childName */ String, /* childValie */ Any, Unit], 
     Unit
   ]
 }
-

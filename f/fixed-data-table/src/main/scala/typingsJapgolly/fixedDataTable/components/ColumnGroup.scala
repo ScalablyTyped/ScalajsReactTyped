@@ -1,47 +1,33 @@
 package typingsJapgolly.fixedDataTable.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.fixedDataTable.mod.CellProps
 import typingsJapgolly.fixedDataTable.mod.ColumnGroupProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ColumnGroup {
-  def apply(
-    header: String | Element | (js.Function1[/* props */ CellProps, String | Element]),
-    align: String = null,
-    fixed: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ColumnGroupProps, 
-    typingsJapgolly.fixedDataTable.mod.ColumnGroup, 
-    Unit, 
-    ColumnGroupProps
-  ] = {
-    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
   
-      if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.fixedDataTable.mod.ColumnGroupProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.fixedDataTable.mod.ColumnGroup](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.fixedDataTable.mod.ColumnGroupProps])(children: _*)
+  inline def apply(header: String | Element | (js.Function1[/* props */ CellProps, String | Element])): Builder = {
+    val __props = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ColumnGroupProps]))
   }
+  
   @JSImport("fixed-data-table", "ColumnGroup")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.fixedDataTable.mod.ColumnGroup] {
+    
+    inline def align(value: String): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def fixed(value: Boolean): this.type = set("fixed", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ColumnGroupProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

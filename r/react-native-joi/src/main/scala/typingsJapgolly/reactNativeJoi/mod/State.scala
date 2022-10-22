@@ -1,25 +1,42 @@
 package typingsJapgolly.reactNativeJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait State extends js.Object {
+trait State extends StObject {
+  
   var key: js.UndefOr[String] = js.undefined
-  var parent: js.UndefOr[js.Any] = js.undefined
+  
+  var parent: js.UndefOr[Any] = js.undefined
+  
   var path: js.UndefOr[String] = js.undefined
-  var reference: js.UndefOr[js.Any] = js.undefined
+  
+  var reference: js.UndefOr[Any] = js.undefined
 }
-
 object State {
-  @scala.inline
-  def apply(key: String = null, parent: js.Any = null, path: String = null, reference: js.Any = null): State = {
+  
+  inline def apply(): State = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (reference != null) __obj.updateDynamic("reference")(reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
+  
+  extension [Self <: State](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setReference(value: Any): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    
+    inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+  }
 }
-

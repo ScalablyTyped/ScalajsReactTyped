@@ -1,23 +1,22 @@
 package typingsJapgolly.semanticUiReact.mod
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.facade.React.ComponentClassP
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.semanticUiReact.searchResultMod.SearchResultProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesSearchSearchResultMod.SearchResultProps
+import typingsJapgolly.semanticUiReact.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "SearchResult")
 @js.native
-class SearchResult protected ()
-  extends Component[SearchResultProps, ComponentState, js.Any] {
+open class SearchResult protected ()
+  extends Component[SearchResultProps, js.Object, Any] {
   def this(props: SearchResultProps) = this()
-  def this(props: SearchResultProps, context: js.Any) = this()
+  def this(props: SearchResultProps, context: Any) = this()
 }
-
-@JSImport("semantic-ui-react", "SearchResult")
-@js.native
-object SearchResult extends TopLevel[ComponentClass[SearchResultProps, ComponentState]]
-
+object SearchResult {
+  
+  inline def apply: ComponentClassP[SearchResultProps & js.Object] = ^.asInstanceOf[js.Dynamic].selectDynamic("SearchResult").asInstanceOf[ComponentClassP[SearchResultProps & js.Object]]
+}

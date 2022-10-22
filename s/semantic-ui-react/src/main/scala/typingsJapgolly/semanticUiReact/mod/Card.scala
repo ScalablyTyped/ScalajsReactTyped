@@ -1,23 +1,22 @@
 package typingsJapgolly.semanticUiReact.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.semanticUiReact.cardCardMod.CardComponent
-import typingsJapgolly.semanticUiReact.cardCardMod.CardProps
+import typingsJapgolly.semanticUiReact.distCommonjsViewsCardCardMod.CardComponent
+import typingsJapgolly.semanticUiReact.distCommonjsViewsCardCardMod.CardProps
+import typingsJapgolly.semanticUiReact.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "Card")
 @js.native
-class Card protected ()
-  extends Component[CardProps, ComponentState, js.Any] {
+open class Card protected ()
+  extends Component[CardProps, js.Object, Any] {
   def this(props: CardProps) = this()
-  def this(props: CardProps, context: js.Any) = this()
+  def this(props: CardProps, context: Any) = this()
 }
-
-@JSImport("semantic-ui-react", "Card")
-@js.native
-object Card extends TopLevel[CardComponent]
-
+object Card {
+  
+  inline def apply: CardComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Card").asInstanceOf[CardComponent]
+}

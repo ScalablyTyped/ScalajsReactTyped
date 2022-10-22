@@ -1,20 +1,20 @@
 package typingsJapgolly.fsReadfilePromise
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.fsReadfilePromise.anon.Encoding
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.node.fsMod.PathLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fs-readfile-promise", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * If a file descriptor is provided, the underlying file will _not_ be closed automatically.
     */
-  def apply(path: PathType): js.Promise[Buffer] = js.native
+  inline def apply(path: PathType): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   /**
     * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -22,8 +22,13 @@ object mod extends js.Object {
     * @param options Either the encoding for the result, or an object that contains the encoding and an optional flag.
     * If a flag is not provided, it defaults to `'r'`.
     */
-  def apply(path: PathType, options: OptionsType): js.Promise[String] = js.native
-  type OptionsType = AnonEncoding | String
+  inline def apply(path: PathType, options: OptionsType): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
+  @JSImport("fs-readfile-promise", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  type OptionsType = Encoding | String
+  
   type PathType = PathLike | Double
 }
-

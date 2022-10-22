@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.listGroupItemMod.ListGroupItemProps
+import typingsJapgolly.reactstrap.typesLibListGroupItemMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "ListGroupItem")
 @js.native
-class ListGroupItem[T] ()
-  extends Component[ListGroupItemProps, js.Object, js.Any]
-
+open class ListGroupItem () extends default

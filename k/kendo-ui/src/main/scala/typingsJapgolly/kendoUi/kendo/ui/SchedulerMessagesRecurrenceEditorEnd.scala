@@ -1,36 +1,54 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchedulerMessagesRecurrenceEditorEnd extends js.Object {
+trait SchedulerMessagesRecurrenceEditorEnd extends StObject {
+  
   var after: js.UndefOr[String] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var mobileLabel: js.UndefOr[String] = js.undefined
+  
   var never: js.UndefOr[String] = js.undefined
+  
   var occurrence: js.UndefOr[String] = js.undefined
+  
   var on: js.UndefOr[String] = js.undefined
 }
-
 object SchedulerMessagesRecurrenceEditorEnd {
-  @scala.inline
-  def apply(
-    after: String = null,
-    label: String = null,
-    mobileLabel: String = null,
-    never: String = null,
-    occurrence: String = null,
-    on: String = null
-  ): SchedulerMessagesRecurrenceEditorEnd = {
+  
+  inline def apply(): SchedulerMessagesRecurrenceEditorEnd = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (mobileLabel != null) __obj.updateDynamic("mobileLabel")(mobileLabel.asInstanceOf[js.Any])
-    if (never != null) __obj.updateDynamic("never")(never.asInstanceOf[js.Any])
-    if (occurrence != null) __obj.updateDynamic("occurrence")(occurrence.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorEnd]
   }
+  
+  extension [Self <: SchedulerMessagesRecurrenceEditorEnd](x: Self) {
+    
+    inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setMobileLabel(value: String): Self = StObject.set(x, "mobileLabel", value.asInstanceOf[js.Any])
+    
+    inline def setMobileLabelUndefined: Self = StObject.set(x, "mobileLabel", js.undefined)
+    
+    inline def setNever(value: String): Self = StObject.set(x, "never", value.asInstanceOf[js.Any])
+    
+    inline def setNeverUndefined: Self = StObject.set(x, "never", js.undefined)
+    
+    inline def setOccurrence(value: String): Self = StObject.set(x, "occurrence", value.asInstanceOf[js.Any])
+    
+    inline def setOccurrenceUndefined: Self = StObject.set(x, "occurrence", js.undefined)
+    
+    inline def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+  }
 }
-

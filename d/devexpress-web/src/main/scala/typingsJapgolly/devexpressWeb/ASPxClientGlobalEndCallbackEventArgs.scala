@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGlobalEvents.EndCallback event.
   */
-@JSGlobal("ASPxClientGlobalEndCallbackEventArgs")
-@js.native
-class ASPxClientGlobalEndCallbackEventArgs protected () extends ASPxClientEndCallbackEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientGlobalEndCallbackEventArgs class.
-    * @param control An ASPxClientControl class descendant object that is the control that initiated a callback.
-    */
-  def this(control: ASPxClientControl) = this()
+trait ASPxClientGlobalEndCallbackEventArgs
+  extends StObject
+     with ASPxClientEndCallbackEventArgs {
+  
   /**
     * Gets an object that initiated a callback.
     */
-  var control: ASPxClientControl = js.native
+  var control: ASPxClientControl
 }
-
+object ASPxClientGlobalEndCallbackEventArgs {
+  
+  inline def apply(command: String, control: ASPxClientControl): ASPxClientGlobalEndCallbackEventArgs = {
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientGlobalEndCallbackEventArgs]
+  }
+  
+  extension [Self <: ASPxClientGlobalEndCallbackEventArgs](x: Self) {
+    
+    inline def setControl(value: ASPxClientControl): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+  }
+}

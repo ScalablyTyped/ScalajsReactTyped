@@ -2,16 +2,20 @@ package typingsJapgolly.reduxStorage
 
 import org.scalablytyped.runtime.NumberDictionary
 import typingsJapgolly.reduxStorage.mod.StorageEngine
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-storage-decorator-filter", JSImport.Namespace)
-@js.native
-object reduxStorageDecoratorFilterMod extends js.Object {
-  def default(engine: StorageEngine): StorageEngine = js.native
-  def default(engine: StorageEngine, whitelist: FilterList): StorageEngine = js.native
-  def default(engine: StorageEngine, whitelist: FilterList, blacklist: FilterList): StorageEngine = js.native
+object reduxStorageDecoratorFilterMod {
+  
+  @JSImport("redux-storage-decorator-filter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(engine: StorageEngine): StorageEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(engine.asInstanceOf[js.Any]).asInstanceOf[StorageEngine]
+  inline def default(engine: StorageEngine, whitelist: Unit, blacklist: FilterList): StorageEngine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(engine.asInstanceOf[js.Any], whitelist.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[StorageEngine]
+  inline def default(engine: StorageEngine, whitelist: FilterList): StorageEngine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(engine.asInstanceOf[js.Any], whitelist.asInstanceOf[js.Any])).asInstanceOf[StorageEngine]
+  inline def default(engine: StorageEngine, whitelist: FilterList, blacklist: FilterList): StorageEngine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(engine.asInstanceOf[js.Any], whitelist.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[StorageEngine]
+  
   type FilterList = NumberDictionary[String | js.Array[String]]
 }
-

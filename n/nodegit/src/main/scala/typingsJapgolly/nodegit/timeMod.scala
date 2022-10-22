@@ -1,17 +1,17 @@
 package typingsJapgolly.nodegit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/time", JSImport.Namespace)
-@js.native
-object timeMod extends js.Object {
+object timeMod {
+  
+  @JSImport("nodegit/time", "Time")
   @js.native
-  class Time () extends js.Object {
+  open class Time () extends StObject {
+    
     def offset(): Double = js.native
+    
     def time(): Double = js.native
   }
-  
 }
-

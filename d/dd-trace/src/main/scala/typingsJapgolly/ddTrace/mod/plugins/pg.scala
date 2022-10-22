@@ -1,30 +1,36 @@
 package typingsJapgolly.ddTrace.mod.plugins
 
-import typingsJapgolly.ddTrace.mod.Analyzable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This plugin automatically instruments the
   * [pg](https://node-postgres.com/) module.
   */
 trait pg
-  extends Integration
-     with Analyzable
-
+  extends StObject
+     with Instrumentation {
+  
+  /**
+    * The service name to be used for this plugin. If a function is used, it will be passed the connection parameters and its return value will be used as the service name.
+    */
+  @JSName("service")
+  var service_pg: js.UndefOr[String | (js.Function1[/* params */ Any, String])] = js.undefined
+}
 object pg {
-  @scala.inline
-  def apply(
-    analytics: Boolean | Double = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    service: String = null
-  ): pg = {
+  
+  inline def apply(): pg = {
     val __obj = js.Dynamic.literal()
-    if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[pg]
   }
+  
+  extension [Self <: pg](x: Self) {
+    
+    inline def setService(value: String | (js.Function1[/* params */ Any, String])): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    
+    inline def setServiceFunction1(value: /* params */ Any => String): Self = StObject.set(x, "service", js.Any.fromFunction1(value))
+    
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+  }
 }
-

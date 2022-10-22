@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.Media.PlayTo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.PlayTo.VolumeChangeRequestedEventArgs")
-@js.native
-class VolumeChangeRequestedEventArgs () extends IVolumeChangeRequestedEventArgs {
-  /* CompleteClass */
-  override var volume: Double = js.native
+trait VolumeChangeRequestedEventArgs
+  extends StObject
+     with IVolumeChangeRequestedEventArgs
+object VolumeChangeRequestedEventArgs {
+  
+  inline def apply(volume: Double): VolumeChangeRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(volume = volume.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VolumeChangeRequestedEventArgs]
+  }
 }
-

@@ -1,144 +1,228 @@
 package typingsJapgolly.nivoBar.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.SVGRectElement
-import typingsJapgolly.nivoBar.dataFromindexeskeysLegend
-import typingsJapgolly.nivoBar.mod.AccessorFunc
-import typingsJapgolly.nivoBar.mod.Axis
-import typingsJapgolly.nivoBar.mod.BarDatum
-import typingsJapgolly.nivoBar.mod.BarDatumWithColor
-import typingsJapgolly.nivoBar.mod.BarExtendedDatum
-import typingsJapgolly.nivoBar.mod.BarItemProps
-import typingsJapgolly.nivoBar.mod.BarSvgProps
-import typingsJapgolly.nivoBar.mod.IndexByFunc
-import typingsJapgolly.nivoBar.mod.LabelFormatter
-import typingsJapgolly.nivoBar.mod.Layer
-import typingsJapgolly.nivoBar.mod.TooltipProp
-import typingsJapgolly.nivoBar.mod.ValueFormatter
+import org.scalajs.dom.SVGRectElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.nivoAnnotations.distTypesTypesMod.AnnotationMatcher
+import typingsJapgolly.nivoAxes.distTypesTypesMod.AxisProps
+import typingsJapgolly.nivoAxes.distTypesTypesMod.GridValues
+import typingsJapgolly.nivoBar.anon.Color
+import typingsJapgolly.nivoBar.distTypesTypesMod.BarDatum
+import typingsJapgolly.nivoBar.distTypesTypesMod.BarItemProps
+import typingsJapgolly.nivoBar.distTypesTypesMod.BarLayer
+import typingsJapgolly.nivoBar.distTypesTypesMod.BarLegendProps
+import typingsJapgolly.nivoBar.distTypesTypesMod.BarSvgProps
+import typingsJapgolly.nivoBar.distTypesTypesMod.BarTooltipProps
+import typingsJapgolly.nivoBar.distTypesTypesMod.ComputedBarDatum
+import typingsJapgolly.nivoBar.distTypesTypesMod.ComputedBarDatumWithValue
+import typingsJapgolly.nivoBar.distTypesTypesMod.ComputedDatum
+import typingsJapgolly.nivoBar.distTypesTypesMod.LabelFormatter
+import typingsJapgolly.nivoBar.distTypesTypesMod.LegendLabelDatum
 import typingsJapgolly.nivoBar.nivoBarStrings.auto
 import typingsJapgolly.nivoBar.nivoBarStrings.grouped
 import typingsJapgolly.nivoBar.nivoBarStrings.horizontal
+import typingsJapgolly.nivoBar.nivoBarStrings.id
+import typingsJapgolly.nivoBar.nivoBarStrings.indexValue
 import typingsJapgolly.nivoBar.nivoBarStrings.stacked
 import typingsJapgolly.nivoBar.nivoBarStrings.vertical
-import typingsJapgolly.nivoColors.mod.InheritedColorProp
-import typingsJapgolly.nivoColors.mod.OrdinalColorsInstruction
-import typingsJapgolly.nivoCore.AnonDictkey
-import typingsJapgolly.nivoCore.AnonId
+import typingsJapgolly.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
+import typingsJapgolly.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
+import typingsJapgolly.nivoCore.anon.Dictkey
+import typingsJapgolly.nivoCore.anon.Id
 import typingsJapgolly.nivoCore.mod.Box
 import typingsJapgolly.nivoCore.mod.CartesianMarkerProps
+import typingsJapgolly.nivoCore.mod.DatumValue
+import typingsJapgolly.nivoCore.mod.PropertyAccessor
 import typingsJapgolly.nivoCore.mod.Theme
-import typingsJapgolly.react.mod.StatelessComponent
+import typingsJapgolly.nivoCore.mod.ValueFormat
+import typingsJapgolly.nivoScales.distTypesTypesMod.ScaleBandSpec
+import typingsJapgolly.nivoScales.distTypesTypesMod.ScaleSpec
+import typingsJapgolly.react.mod.FC
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ResponsiveBar {
-  def apply(
-    data: js.Array[js.Object],
-    animate: js.UndefOr[Boolean] = js.undefined,
-    axisBottom: Axis = null,
-    axisLeft: Axis = null,
-    axisRight: Axis = null,
-    axisTop: Axis = null,
-    barComponent: StatelessComponent[BarItemProps] = null,
-    borderRadius: Int | Double = null,
-    borderWidth: Int | Double = null,
-    colors: OrdinalColorsInstruction[_] = null,
-    defs: js.Array[AnonDictkey] = null,
-    enableGridX: js.UndefOr[Boolean] = js.undefined,
-    enableGridY: js.UndefOr[Boolean] = js.undefined,
-    enableLabel: js.UndefOr[Boolean] = js.undefined,
-    fill: js.Array[AnonId[BarDatum]] = null,
-    groupMode: stacked | grouped = null,
-    indexBy: String | IndexByFunc = null,
-    innerPadding: Int | Double = null,
-    isInteractive: js.UndefOr[Boolean] = js.undefined,
-    keys: js.Array[String] = null,
-    label: String | AccessorFunc = null,
-    labelFormat: String | LabelFormatter = null,
-    labelLinkColor: InheritedColorProp[BarDatumWithColor] = null,
-    labelSkipHeight: Int | Double = null,
-    labelSkipWidth: Int | Double = null,
-    labelTextColor: InheritedColorProp[BarDatumWithColor] = null,
-    layers: js.Array[Layer] = null,
-    layout: horizontal | vertical = null,
-    legends: js.Array[dataFromindexeskeysLegend] = null,
-    margin: Box = null,
-    markers: js.Array[CartesianMarkerProps] = null,
-    maxValue: Double | auto = null,
-    minValue: Double | auto = null,
-    motionDamping: Int | Double = null,
-    motionStiffness: Int | Double = null,
-    onClick: (/* datum */ BarExtendedDatum, /* event */ ReactMouseEventFrom[SVGRectElement]) => Callback = null,
-    padding: Int | Double = null,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    theme: Theme = null,
-    tooltip: TooltipProp = null,
-    tooltipFormat: String | ValueFormatter = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[BarSvgProps, typingsJapgolly.nivoBar.mod.ResponsiveBar, Unit, BarSvgProps] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom.asInstanceOf[js.Any])
-    if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft.asInstanceOf[js.Any])
-    if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight.asInstanceOf[js.Any])
-    if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop.asInstanceOf[js.Any])
-    if (barComponent != null) __obj.updateDynamic("barComponent")(barComponent.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (defs != null) __obj.updateDynamic("defs")(defs.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridX)) __obj.updateDynamic("enableGridX")(enableGridX.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridY)) __obj.updateDynamic("enableGridY")(enableGridY.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLabel)) __obj.updateDynamic("enableLabel")(enableLabel.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (groupMode != null) __obj.updateDynamic("groupMode")(groupMode.asInstanceOf[js.Any])
-    if (indexBy != null) __obj.updateDynamic("indexBy")(indexBy.asInstanceOf[js.Any])
-    if (innerPadding != null) __obj.updateDynamic("innerPadding")(innerPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat.asInstanceOf[js.Any])
-    if (labelLinkColor != null) __obj.updateDynamic("labelLinkColor")(labelLinkColor.asInstanceOf[js.Any])
-    if (labelSkipHeight != null) __obj.updateDynamic("labelSkipHeight")(labelSkipHeight.asInstanceOf[js.Any])
-    if (labelSkipWidth != null) __obj.updateDynamic("labelSkipWidth")(labelSkipWidth.asInstanceOf[js.Any])
-    if (labelTextColor != null) __obj.updateDynamic("labelTextColor")(labelTextColor.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (legends != null) __obj.updateDynamic("legends")(legends.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
-    if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2((t0: /* datum */ typingsJapgolly.nivoBar.mod.BarExtendedDatum, t1: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.SVGRectElement]) => onClick(t0, t1).runNow()))
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.nivoBar.mod.BarSvgProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.nivoBar.mod.ResponsiveBar](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.nivoBar.mod.BarSvgProps])(children: _*)
+  inline def apply[RawDatum /* <: BarDatum */](data: js.Array[RawDatum], height: Double, width: Double): Builder[RawDatum] = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    new Builder[RawDatum](js.Array(this.component, __props.asInstanceOf[BarSvgProps[RawDatum]]))
   }
+  
   @JSImport("@nivo/bar", "ResponsiveBar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[RawDatum /* <: BarDatum */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def animate(value: Boolean): this.type = set("animate", value.asInstanceOf[js.Any])
+    
+    inline def annotations(value: js.Array[AnnotationMatcher[ComputedBarDatum[RawDatum]]]): this.type = set("annotations", value.asInstanceOf[js.Any])
+    
+    inline def annotationsVarargs(value: AnnotationMatcher[ComputedBarDatum[RawDatum]]*): this.type = set("annotations", js.Array(value*))
+    
+    inline def ariaDescribedBy(value: String): this.type = set("ariaDescribedBy", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabel(value: String): this.type = set("ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabelledBy(value: String): this.type = set("ariaLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def axisBottom(value: AxisProps[Any]): this.type = set("axisBottom", value.asInstanceOf[js.Any])
+    
+    inline def axisBottomNull: this.type = set("axisBottom", null)
+    
+    inline def axisLeft(value: AxisProps[Any]): this.type = set("axisLeft", value.asInstanceOf[js.Any])
+    
+    inline def axisLeftNull: this.type = set("axisLeft", null)
+    
+    inline def axisRight(value: AxisProps[Any]): this.type = set("axisRight", value.asInstanceOf[js.Any])
+    
+    inline def axisRightNull: this.type = set("axisRight", null)
+    
+    inline def axisTop(value: AxisProps[Any]): this.type = set("axisTop", value.asInstanceOf[js.Any])
+    
+    inline def axisTopNull: this.type = set("axisTop", null)
+    
+    inline def barAriaDescribedBy(value: /* data */ ComputedDatum[RawDatum] => js.UndefOr[String]): this.type = set("barAriaDescribedBy", js.Any.fromFunction1(value))
+    
+    inline def barAriaLabel(value: /* data */ ComputedDatum[RawDatum] => js.UndefOr[String]): this.type = set("barAriaLabel", js.Any.fromFunction1(value))
+    
+    inline def barAriaLabelledBy(value: /* data */ ComputedDatum[RawDatum] => js.UndefOr[String]): this.type = set("barAriaLabelledBy", js.Any.fromFunction1(value))
+    
+    inline def barComponent(value: FC[BarItemProps[RawDatum]]): this.type = set("barComponent", value.asInstanceOf[js.Any])
+    
+    inline def borderColor(value: InheritedColorConfig[ComputedBarDatumWithValue[RawDatum]]): this.type = set("borderColor", value.asInstanceOf[js.Any])
+    
+    inline def borderRadius(value: Double): this.type = set("borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def borderWidth(value: Double): this.type = set("borderWidth", value.asInstanceOf[js.Any])
+    
+    inline def colorBy(value: id | indexValue): this.type = set("colorBy", value.asInstanceOf[js.Any])
+    
+    inline def colors(value: OrdinalColorScaleConfig[ComputedDatum[RawDatum]]): this.type = set("colors", value.asInstanceOf[js.Any])
+    
+    inline def colorsFunction1(value: ComputedDatum[RawDatum] => String): this.type = set("colors", js.Any.fromFunction1(value))
+    
+    inline def colorsVarargs(value: String*): this.type = set("colors", js.Array(value*))
+    
+    inline def defs(value: js.Array[Dictkey]): this.type = set("defs", value.asInstanceOf[js.Any])
+    
+    inline def defsVarargs(value: Dictkey*): this.type = set("defs", js.Array(value*))
+    
+    inline def enableGridX(value: Boolean): this.type = set("enableGridX", value.asInstanceOf[js.Any])
+    
+    inline def enableGridY(value: Boolean): this.type = set("enableGridY", value.asInstanceOf[js.Any])
+    
+    inline def enableLabel(value: Boolean): this.type = set("enableLabel", value.asInstanceOf[js.Any])
+    
+    inline def fill(value: js.Array[Id[ComputedBarDatum[RawDatum]]]): this.type = set("fill", value.asInstanceOf[js.Any])
+    
+    inline def fillVarargs(value: Id[ComputedBarDatum[RawDatum]]*): this.type = set("fill", js.Array(value*))
+    
+    inline def gridXValues(value: GridValues[String | Double]): this.type = set("gridXValues", value.asInstanceOf[js.Any])
+    
+    inline def gridYValues(value: GridValues[String | Double]): this.type = set("gridYValues", value.asInstanceOf[js.Any])
+    
+    inline def groupMode(value: grouped | stacked): this.type = set("groupMode", value.asInstanceOf[js.Any])
+    
+    inline def indexBy(value: PropertyAccessor[RawDatum, String]): this.type = set("indexBy", value.asInstanceOf[js.Any])
+    
+    inline def indexByFunction1(value: RawDatum => String): this.type = set("indexBy", js.Any.fromFunction1(value))
+    
+    inline def indexScale(value: ScaleBandSpec): this.type = set("indexScale", value.asInstanceOf[js.Any])
+    
+    inline def initialHiddenIds(value: js.Array[String]): this.type = set("initialHiddenIds", value.asInstanceOf[js.Any])
+    
+    inline def initialHiddenIdsVarargs(value: String*): this.type = set("initialHiddenIds", js.Array(value*))
+    
+    inline def innerPadding(value: Double): this.type = set("innerPadding", value.asInstanceOf[js.Any])
+    
+    inline def isFocusable(value: Boolean): this.type = set("isFocusable", value.asInstanceOf[js.Any])
+    
+    inline def isInteractive(value: Boolean): this.type = set("isInteractive", value.asInstanceOf[js.Any])
+    
+    inline def keys(value: js.Array[String]): this.type = set("keys", value.asInstanceOf[js.Any])
+    
+    inline def keysVarargs(value: String*): this.type = set("keys", js.Array(value*))
+    
+    inline def label(value: PropertyAccessor[ComputedDatum[RawDatum], String]): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def labelFormat(value: String | LabelFormatter): this.type = set("labelFormat", value.asInstanceOf[js.Any])
+    
+    inline def labelFormatFunction1(value: /* label */ String | Double => String | Double): this.type = set("labelFormat", js.Any.fromFunction1(value))
+    
+    inline def labelFunction1(value: ComputedDatum[RawDatum] => String): this.type = set("label", js.Any.fromFunction1(value))
+    
+    inline def labelSkipHeight(value: Double): this.type = set("labelSkipHeight", value.asInstanceOf[js.Any])
+    
+    inline def labelSkipWidth(value: Double): this.type = set("labelSkipWidth", value.asInstanceOf[js.Any])
+    
+    inline def labelTextColor(value: InheritedColorConfig[ComputedBarDatumWithValue[RawDatum]]): this.type = set("labelTextColor", value.asInstanceOf[js.Any])
+    
+    inline def layers(value: js.Array[BarLayer[RawDatum]]): this.type = set("layers", value.asInstanceOf[js.Any])
+    
+    inline def layersVarargs(value: BarLayer[RawDatum]*): this.type = set("layers", js.Array(value*))
+    
+    inline def layout(value: horizontal | vertical): this.type = set("layout", value.asInstanceOf[js.Any])
+    
+    inline def legendLabel(value: PropertyAccessor[LegendLabelDatum[RawDatum], String]): this.type = set("legendLabel", value.asInstanceOf[js.Any])
+    
+    inline def legendLabelFunction1(value: LegendLabelDatum[RawDatum] => String): this.type = set("legendLabel", js.Any.fromFunction1(value))
+    
+    inline def legends(value: js.Array[BarLegendProps]): this.type = set("legends", value.asInstanceOf[js.Any])
+    
+    inline def legendsVarargs(value: BarLegendProps*): this.type = set("legends", js.Array(value*))
+    
+    inline def margin(value: Box): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def markers(value: js.Array[CartesianMarkerProps[DatumValue]]): this.type = set("markers", value.asInstanceOf[js.Any])
+    
+    inline def markersVarargs(value: CartesianMarkerProps[DatumValue]*): this.type = set("markers", js.Array(value*))
+    
+    inline def maxValue(value: auto | Double): this.type = set("maxValue", value.asInstanceOf[js.Any])
+    
+    inline def minValue(value: auto | Double): this.type = set("minValue", value.asInstanceOf[js.Any])
+    
+    inline def motionConfig(
+      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
+    ): this.type = set("motionConfig", value.asInstanceOf[js.Any])
+    
+    inline def onClick(
+      value: (/* datum */ ComputedDatum[RawDatum] & Color, /* event */ ReactMouseEventFrom[SVGRectElement]) => Callback
+    ): this.type = set("onClick", js.Any.fromFunction2((t0: /* datum */ ComputedDatum[RawDatum] & Color, t1: /* event */ ReactMouseEventFrom[SVGRectElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onMouseEnter(
+      value: (/* datum */ ComputedDatum[RawDatum], /* event */ ReactMouseEventFrom[SVGRectElement]) => Callback
+    ): this.type = set("onMouseEnter", js.Any.fromFunction2((t0: /* datum */ ComputedDatum[RawDatum], t1: /* event */ ReactMouseEventFrom[SVGRectElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onMouseLeave(
+      value: (/* datum */ ComputedDatum[RawDatum], /* event */ ReactMouseEventFrom[SVGRectElement]) => Callback
+    ): this.type = set("onMouseLeave", js.Any.fromFunction2((t0: /* datum */ ComputedDatum[RawDatum], t1: /* event */ ReactMouseEventFrom[SVGRectElement]) => (value(t0, t1)).runNow()))
+    
+    inline def padding(value: Double): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def renderWrapper(value: Boolean): this.type = set("renderWrapper", value.asInstanceOf[js.Any])
+    
+    inline def reverse(value: Boolean): this.type = set("reverse", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: Theme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def tooltip(value: FC[BarTooltipProps[RawDatum]]): this.type = set("tooltip", value.asInstanceOf[js.Any])
+    
+    inline def tooltipLabel(value: PropertyAccessor[ComputedDatum[RawDatum], String]): this.type = set("tooltipLabel", value.asInstanceOf[js.Any])
+    
+    inline def tooltipLabelFunction1(value: ComputedDatum[RawDatum] => String): this.type = set("tooltipLabel", js.Any.fromFunction1(value))
+    
+    inline def valueFormat(value: ValueFormat[Double, Unit]): this.type = set("valueFormat", value.asInstanceOf[js.Any])
+    
+    inline def valueScale(value: ScaleSpec): this.type = set("valueScale", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[RawDatum /* <: BarDatum */](p: BarSvgProps[RawDatum]): Builder[RawDatum] = new Builder[RawDatum](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

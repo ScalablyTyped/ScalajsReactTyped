@@ -1,24 +1,20 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.strict
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.moderate
 */
-trait SafeSearchFilterType extends js.Object
-
+trait SafeSearchFilterType extends StObject
 object SafeSearchFilterType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def moderate: typingsJapgolly.microsoftGraph.microsoftGraphStrings.moderate = this.cast("moderate")
-  @scala.inline
-  def strict: typingsJapgolly.microsoftGraph.microsoftGraphStrings.strict = this.cast("strict")
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  
+  inline def moderate: typingsJapgolly.microsoftGraph.microsoftGraphStrings.moderate = "moderate".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.moderate]
+  
+  inline def strict: typingsJapgolly.microsoftGraph.microsoftGraphStrings.strict = "strict".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.strict]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

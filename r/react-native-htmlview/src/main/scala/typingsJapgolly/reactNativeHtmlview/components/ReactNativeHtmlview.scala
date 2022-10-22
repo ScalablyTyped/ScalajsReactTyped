@@ -1,79 +1,62 @@
 package typingsJapgolly.reactNativeHtmlview.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.ComponentType
-import typingsJapgolly.reactNative.mod.ImageStyle
-import typingsJapgolly.reactNative.mod.StyleProp
-import typingsJapgolly.reactNative.mod.TextProperties
-import typingsJapgolly.reactNative.mod.TextStyle
-import typingsJapgolly.reactNative.mod.ViewProperties
-import typingsJapgolly.reactNative.mod.ViewStyle
+import typingsJapgolly.reactNative.mod.TextProps
+import typingsJapgolly.reactNative.mod.ViewProps
 import typingsJapgolly.reactNativeHtmlview.mod.HTMLViewNode
+import typingsJapgolly.reactNativeHtmlview.mod.HTMLViewNodeRenderer
 import typingsJapgolly.reactNativeHtmlview.mod.HTMLViewProps
-import typingsJapgolly.reactNativeHtmlview.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactNativeHtmlview {
-  def apply(
-    value: String,
-    NodeComponent: ComponentType[js.Object] = null,
-    RootComponent: ComponentType[js.Object] = null,
-    TextComponent: ComponentType[js.Object] = null,
-    addLineBreaks: js.UndefOr[Boolean] = js.undefined,
-    bullet: String = null,
-    lineBreak: String = null,
-    nodeComponentProps: TextProperties = null,
-    onLinkLongPress: /* url */ String => Callback = null,
-    onLinkPress: /* url */ String => Callback = null,
-    paragraphBreak: String = null,
-    renderNode: (/* node */ HTMLViewNode, /* index */ Double, /* siblings */ HTMLViewNode, /* parent */ HTMLViewNode, /* defaultRenderer */ js.Function2[/* node */ HTMLViewNode, /* parent */ HTMLViewNode, Node]) => CallbackTo[Node] = null,
-    rootComponentProps: ViewProperties = null,
-    stylesheet: StringDictionary[StyleProp[ViewStyle | TextStyle | ImageStyle]] = null,
-    textComponentProps: TextProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[HTMLViewProps, default, Unit, HTMLViewProps] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
-      if (NodeComponent != null) __obj.updateDynamic("NodeComponent")(NodeComponent.asInstanceOf[js.Any])
-    if (RootComponent != null) __obj.updateDynamic("RootComponent")(RootComponent.asInstanceOf[js.Any])
-    if (TextComponent != null) __obj.updateDynamic("TextComponent")(TextComponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(addLineBreaks)) __obj.updateDynamic("addLineBreaks")(addLineBreaks.asInstanceOf[js.Any])
-    if (bullet != null) __obj.updateDynamic("bullet")(bullet.asInstanceOf[js.Any])
-    if (lineBreak != null) __obj.updateDynamic("lineBreak")(lineBreak.asInstanceOf[js.Any])
-    if (nodeComponentProps != null) __obj.updateDynamic("nodeComponentProps")(nodeComponentProps.asInstanceOf[js.Any])
-    if (onLinkLongPress != null) __obj.updateDynamic("onLinkLongPress")(js.Any.fromFunction1((t0: /* url */ java.lang.String) => onLinkLongPress(t0).runNow()))
-    if (onLinkPress != null) __obj.updateDynamic("onLinkPress")(js.Any.fromFunction1((t0: /* url */ java.lang.String) => onLinkPress(t0).runNow()))
-    if (paragraphBreak != null) __obj.updateDynamic("paragraphBreak")(paragraphBreak.asInstanceOf[js.Any])
-    if (renderNode != null) __obj.updateDynamic("renderNode")(js.Any.fromFunction5((t0: /* node */ typingsJapgolly.reactNativeHtmlview.mod.HTMLViewNode, t1: /* index */ scala.Double, t2: /* siblings */ typingsJapgolly.reactNativeHtmlview.mod.HTMLViewNode, t3: /* parent */ typingsJapgolly.reactNativeHtmlview.mod.HTMLViewNode, t4: /* defaultRenderer */ js.Function2[
-  /* node */ typingsJapgolly.reactNativeHtmlview.mod.HTMLViewNode, 
-  /* parent */ typingsJapgolly.reactNativeHtmlview.mod.HTMLViewNode, 
-  japgolly.scalajs.react.raw.React.Node]) => renderNode(t0, t1, t2, t3, t4).runNow()))
-    if (rootComponentProps != null) __obj.updateDynamic("rootComponentProps")(rootComponentProps.asInstanceOf[js.Any])
-    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet.asInstanceOf[js.Any])
-    if (textComponentProps != null) __obj.updateDynamic("textComponentProps")(textComponentProps.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeHtmlview.mod.HTMLViewProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeHtmlview.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeHtmlview.mod.HTMLViewProps])(children: _*)
+  inline def apply(value: String): Builder = {
+    val __props = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[HTMLViewProps]))
   }
+  
   @JSImport("react-native-htmlview", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def NodeComponent(value: ComponentType[js.Object]): this.type = set("NodeComponent", value.asInstanceOf[js.Any])
+    
+    inline def RootComponent(value: ComponentType[js.Object]): this.type = set("RootComponent", value.asInstanceOf[js.Any])
+    
+    inline def TextComponent(value: ComponentType[js.Object]): this.type = set("TextComponent", value.asInstanceOf[js.Any])
+    
+    inline def addLineBreaks(value: Boolean): this.type = set("addLineBreaks", value.asInstanceOf[js.Any])
+    
+    inline def bullet(value: String): this.type = set("bullet", value.asInstanceOf[js.Any])
+    
+    inline def lineBreak(value: String): this.type = set("lineBreak", value.asInstanceOf[js.Any])
+    
+    inline def nodeComponentProps(value: TextProps): this.type = set("nodeComponentProps", value.asInstanceOf[js.Any])
+    
+    inline def onLinkLongPress(value: /* url */ String => Callback): this.type = set("onLinkLongPress", js.Any.fromFunction1((t0: /* url */ String) => value(t0).runNow()))
+    
+    inline def onLinkPress(value: /* url */ String => Callback): this.type = set("onLinkPress", js.Any.fromFunction1((t0: /* url */ String) => value(t0).runNow()))
+    
+    inline def paragraphBreak(value: String): this.type = set("paragraphBreak", value.asInstanceOf[js.Any])
+    
+    inline def renderNode(
+      value: (/* node */ HTMLViewNode, /* index */ Double, /* siblings */ js.Array[HTMLViewNode], /* parent */ HTMLViewNode, /* defaultRenderer */ HTMLViewNodeRenderer) => Node
+    ): this.type = set("renderNode", js.Any.fromFunction5(value))
+    
+    inline def rootComponentProps(value: ViewProps): this.type = set("rootComponentProps", value.asInstanceOf[js.Any])
+    
+    inline def textComponentProps(value: TextProps): this.type = set("textComponentProps", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: HTMLViewProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

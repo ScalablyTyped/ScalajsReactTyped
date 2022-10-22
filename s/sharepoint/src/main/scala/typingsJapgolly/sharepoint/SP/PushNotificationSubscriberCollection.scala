@@ -1,13 +1,17 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushNotificationSubscriberCollection extends ClientObjectCollection[PushNotificationSubscriber] {
+trait PushNotificationSubscriberCollection
+  extends StObject
+     with ClientObjectCollection[PushNotificationSubscriber] {
+  
   def getByStoreId(id: String): PushNotificationSubscriber = js.native
+  
   def get_item(index: Double): PushNotificationSubscriber = js.native
+  
   def itemAt(index: Double): PushNotificationSubscriber = js.native
 }
-

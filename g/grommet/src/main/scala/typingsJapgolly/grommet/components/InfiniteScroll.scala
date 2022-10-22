@@ -1,57 +1,53 @@
 package typingsJapgolly.grommet.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.grommet.grommetStrings.window
-import typingsJapgolly.grommet.infiniteScrollMod.InfiniteScrollProps
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.grommet.es6ComponentsInfiniteScrollMod.InfiniteScrollProps
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object InfiniteScroll {
-  def apply(
-    items: js.Array[_] = null,
-    onMore: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    renderMarker: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    replace: js.UndefOr[Boolean] = js.undefined,
-    scrollableAncestor: Node | window = null,
-    show: Int | Double = null,
-    step: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: /* repeated */ js.Any => CallbackTo[js.Any] = null
-  ): UnmountedWithRoot[
-    InfiniteScrollProps, 
-    typingsJapgolly.grommet.mod.InfiniteScroll, 
-    Unit, 
-    InfiniteScrollProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => children(t0).runNow()))
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (onMore != null) __obj.updateDynamic("onMore")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMore(t0).runNow()))
-    if (renderMarker != null) __obj.updateDynamic("renderMarker")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => renderMarker(t0).runNow()))
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
-    if (scrollableAncestor != null) __obj.updateDynamic("scrollableAncestor")(scrollableAncestor.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.grommet.infiniteScrollMod.InfiniteScrollProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.grommet.mod.InfiniteScroll](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.grommet.infiniteScrollMod.InfiniteScrollProps])
-  }
-  @JSImport("grommet", "InfiniteScroll")
+  @JSImport("grommet/es6", "InfiniteScroll")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def children(value: Node | js.Function): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenNull: this.type = set("children", null)
+    
+    inline def childrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def items(value: js.Array[String | Double | Element | (Record[String, Any])]): this.type = set("items", value.asInstanceOf[js.Any])
+    
+    inline def itemsVarargs(value: (String | Double | Element | (Record[String, Any]))*): this.type = set("items", js.Array(value*))
+    
+    inline def onMore(value: Callback): this.type = set("onMore", value.toJsFn)
+    
+    inline def renderMarker(value: /* marker */ Element => Element): this.type = set("renderMarker", js.Any.fromFunction1(value))
+    
+    inline def replace(value: Boolean): this.type = set("replace", value.asInstanceOf[js.Any])
+    
+    inline def show(value: Double): this.type = set("show", value.asInstanceOf[js.Any])
+    
+    inline def step(value: Double): this.type = set("step", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: InfiniteScroll.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: InfiniteScrollProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

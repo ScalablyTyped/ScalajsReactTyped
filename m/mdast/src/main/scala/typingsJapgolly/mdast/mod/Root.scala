@@ -3,24 +3,27 @@ package typingsJapgolly.mdast.mod
 import typingsJapgolly.mdast.mdastStrings.root
 import typingsJapgolly.unist.mod.Data
 import typingsJapgolly.unist.mod.Node
-import typingsJapgolly.unist.mod.Position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Root extends Parent {
+trait Root
+  extends StObject
+     with Parent {
+  
   @JSName("type")
   var type_Root: root
 }
-
 object Root {
-  @scala.inline
-  def apply(children: js.Array[Node], `type`: root, data: Data = null, position: Position = null): Root = {
+  
+  inline def apply(children: js.Array[Node[Data]]): Root = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("root")
     __obj.asInstanceOf[Root]
   }
+  
+  extension [Self <: Root](x: Self) {
+    
+    inline def setType(value: root): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

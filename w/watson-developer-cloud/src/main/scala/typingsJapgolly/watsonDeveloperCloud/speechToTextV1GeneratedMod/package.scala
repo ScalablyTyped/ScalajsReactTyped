@@ -1,15 +1,18 @@
-package typingsJapgolly.watsonDeveloperCloud
+package typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
+import typingsJapgolly.axios.mod.AxiosResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object speechToTextV1GeneratedMod {
-  /** The callback for a service request. */
-  type Callback[T] = js.Function3[
-    /* error */ js.Any, 
-    /* body */ js.UndefOr[T], 
-    /* response */ js.UndefOr[typingsJapgolly.axios.mod.AxiosResponse[T]], 
-    scala.Unit
-  ]
-}
+
+/* static member */
+inline def URL: String = ^.asInstanceOf[js.Dynamic].selectDynamic("URL").asInstanceOf[String]
+inline def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
+
+/** The callback for a service request. */
+type Callback[T] = js.Function3[
+/* error */ Any, 
+/* body */ js.UndefOr[T], 
+/* response */ js.UndefOr[AxiosResponse[T, Any]], 
+Unit]

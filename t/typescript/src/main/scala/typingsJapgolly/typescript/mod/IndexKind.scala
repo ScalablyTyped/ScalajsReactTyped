@@ -1,30 +1,27 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait IndexKind extends js.Object
-
+sealed trait IndexKind extends StObject
 @JSImport("typescript", "IndexKind")
 @js.native
-object IndexKind extends js.Object {
-  @js.native
-  sealed trait Number extends IndexKind
-  
-  @js.native
-  sealed trait String extends IndexKind
+object IndexKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[IndexKind with Double] = js.native
-  /* 1 */ @js.native
-  object Number extends TopLevel[Number with Double]
+  def apply(value: Double): js.UndefOr[IndexKind & Double] = js.native
   
-  /* 0 */ @js.native
-  object String
-    extends TopLevel[typingsJapgolly.typescript.mod.IndexKind.String with Double]
+  @js.native
+  sealed trait Number
+    extends StObject
+       with IndexKind
+  /* 1 */ val Number: typingsJapgolly.typescript.mod.IndexKind.Number & Double = js.native
   
+  @js.native
+  sealed trait String
+    extends StObject
+       with IndexKind
+  /* 0 */ val String: typingsJapgolly.typescript.mod.IndexKind.String & Double = js.native
 }
-

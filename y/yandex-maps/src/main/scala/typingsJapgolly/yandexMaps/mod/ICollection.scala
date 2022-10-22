@@ -1,29 +1,38 @@
 package typingsJapgolly.yandexMaps.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICollection extends IEventEmitter {
+trait ICollection
+  extends StObject
+     with IEventEmitter {
+  
   def add(`object`: js.Object): this.type
+  
   def getIterator(): IIterator
+  
   def remove(`object`: js.Object): this.type
 }
-
 object ICollection {
-  @scala.inline
-  def apply(
-    add: js.Object => CallbackTo[ICollection],
-    events: IEventManager,
+  
+  inline def apply(
+    add: js.Object => ICollection,
+    events: IEventManager[js.Object],
     getIterator: CallbackTo[IIterator],
-    remove: js.Object => CallbackTo[ICollection]
+    remove: js.Object => ICollection
   ): ICollection = {
-    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
-    __obj.updateDynamic("add")(js.Any.fromFunction1((t0: js.Object) => add(t0).runNow()))
-    __obj.updateDynamic("getIterator")(getIterator.toJsFn)
-    __obj.updateDynamic("remove")(js.Any.fromFunction1((t0: js.Object) => remove(t0).runNow()))
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), events = events.asInstanceOf[js.Any], getIterator = getIterator.toJsFn, remove = js.Any.fromFunction1(remove))
     __obj.asInstanceOf[ICollection]
   }
+  
+  extension [Self <: ICollection](x: Self) {
+    
+    inline def setAdd(value: js.Object => ICollection): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    
+    inline def setGetIterator(value: CallbackTo[IIterator]): Self = StObject.set(x, "getIterator", value.toJsFn)
+    
+    inline def setRemove(value: js.Object => ICollection): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+  }
 }
-

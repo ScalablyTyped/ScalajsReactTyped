@@ -1,50 +1,36 @@
 package typingsJapgolly.awsSdkClientSqsNode
 
-import typingsJapgolly.awsSdkClientSqsNode.inputTypesUnionMod.InputTypesUnion
-import typingsJapgolly.awsSdkClientSqsNode.outputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientSqsNode.sqsconfigurationMod.SQSConfiguration
 import typingsJapgolly.awsSdkClientSqsNode.sqsconfigurationMod.SQSResolvedConfiguration
-import typingsJapgolly.awsSdkMiddlewareStack.mod.MiddlewareStack
-import typingsJapgolly.awsSdkTypes.commandMod.Command
-import typingsJapgolly.node.streamMod.Readable
+import typingsJapgolly.awsSdkClientSqsNode.typesInputTypesUnionMod.InputTypesUnion
+import typingsJapgolly.awsSdkClientSqsNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesCommandMod.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/SQSClient", JSImport.Namespace)
-@js.native
-object sqsclientMod extends js.Object {
+object sqsclientMod {
+  
+  @JSImport("@aws-sdk/client-sqs-node/SQSClient", "SQSClient")
   @js.native
-  class SQSClient protected () extends js.Object {
+  open class SQSClient protected () extends StObject {
     def this(configuration: SQSConfiguration) = this()
-    val config: SQSResolvedConfiguration = js.native
-    val middlewareStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable] = js.native
+    
+    /* protected */ val config: SQSResolvedConfiguration = js.native
+    
     def destroy(): Unit = js.native
+    
+    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any = js.native
+    
     /**
       * This will need to be revised when the command interface lands.
       */
     def send[InputType /* <: InputTypesUnion */, OutputType /* <: OutputTypesUnion */](
-      command: Command[
-          InputTypesUnion, 
-          InputType, 
-          OutputTypesUnion, 
-          OutputType, 
-          SQSResolvedConfiguration, 
-          Readable
-        ]
+      command: Command[InputTypesUnion, InputType, OutputTypesUnion, OutputType, SQSResolvedConfiguration]
     ): js.Promise[OutputType] = js.native
     def send[InputType /* <: InputTypesUnion */, OutputType /* <: OutputTypesUnion */](
-      command: Command[
-          InputTypesUnion, 
-          InputType, 
-          OutputTypesUnion, 
-          OutputType, 
-          SQSResolvedConfiguration, 
-          Readable
-        ],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[OutputType], Unit]
+      command: Command[InputTypesUnion, InputType, OutputTypesUnion, OutputType, SQSResolvedConfiguration],
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
     ): Unit = js.native
   }
-  
 }
-

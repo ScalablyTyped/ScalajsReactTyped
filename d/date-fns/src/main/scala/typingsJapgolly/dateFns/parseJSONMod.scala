@@ -1,16 +1,19 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/fp/parseJSON", JSImport.Namespace)
-@js.native
-object parseJSONMod extends js.Object {
-  @js.native
-  object default extends TopLevel[CurriedFn1[String | Double | Date, Date]]
+object parseJSONMod {
   
+  object default {
+    
+    inline def apply(argument: String): js.Date = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    inline def apply(argument: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    inline def apply(argument: Double): js.Date = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    
+    @JSImport("date-fns/parseJSON", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

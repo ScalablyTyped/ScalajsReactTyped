@@ -1,20 +1,25 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogInfoResponse")
 @js.native
-class CatalogInfoResponse () extends js.Object {
+open class CatalogInfoResponse () extends StObject {
+  
   /**
-    * The set of [Error](#type-error)s encountered.
+    * Any errors that occurred during the request.
     */
   var errors: js.UndefOr[js.Array[js.Error]] = js.native
+  
+  /**
+    * Limits that apply to this API.
+    */
   var limits: js.UndefOr[CatalogInfoResponseLimits] = js.native
+  
   /**
     * Names and abbreviations for standard units.
     */
   var standard_unit_description_group: js.UndefOr[StandardUnitDescriptionGroup] = js.native
 }
-

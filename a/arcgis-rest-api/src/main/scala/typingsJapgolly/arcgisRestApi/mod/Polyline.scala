@@ -1,28 +1,27 @@
 package typingsJapgolly.arcgisRestApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Polyline
-  extends HasZM
+  extends StObject
+     with HasZM
      with Geometry {
+  
   var paths: js.Array[js.Array[Position]]
 }
-
 object Polyline {
-  @scala.inline
-  def apply(
-    paths: js.Array[js.Array[Position]],
-    hasM: js.UndefOr[Boolean] = js.undefined,
-    hasZ: js.UndefOr[Boolean] = js.undefined,
-    spatialReference: SpatialReference = null
-  ): Polyline = {
+  
+  inline def apply(paths: js.Array[js.Array[Position]]): Polyline = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[Polyline]
   }
+  
+  extension [Self <: Polyline](x: Self) {
+    
+    inline def setPaths(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    
+    inline def setPathsVarargs(value: js.Array[Position]*): Self = StObject.set(x, "paths", js.Array(value*))
+  }
 }
-

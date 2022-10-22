@@ -1,32 +1,25 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeveloperMetadataVisibility extends js.Object
-
+sealed trait DeveloperMetadataVisibility extends StObject
 /**
   * An enumeration of the types of developer metadata visibility.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.DeveloperMetadataVisibility")
 @js.native
-object DeveloperMetadataVisibility extends js.Object {
-  @js.native
-  sealed trait DOCUMENT extends DeveloperMetadataVisibility
+object DeveloperMetadataVisibility extends StObject {
   
   @js.native
-  sealed trait PROJECT extends DeveloperMetadataVisibility
+  sealed trait DOCUMENT
+    extends StObject
+       with DeveloperMetadataVisibility
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DeveloperMetadataVisibility with Double] = js.native
-  /* 0 */ @js.native
-  object DOCUMENT extends TopLevel[DOCUMENT with Double]
-  
-  /* 1 */ @js.native
-  object PROJECT extends TopLevel[PROJECT with Double]
-  
+  @js.native
+  sealed trait PROJECT
+    extends StObject
+       with DeveloperMetadataVisibility
 }
-

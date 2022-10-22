@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-focus-lock
 
-Typings are for version 2.2.1
+Typings are for version 2.9.1
 
 ## Library description:
 It is a trap! (for a focus)
@@ -10,10 +10,10 @@ It is a trap! (for a focus)
 | ------------------ | :-------------: |
 | Full name          | react-focus-lock |
 | Keywords           | react, focus, lock, trap, tabbable |
-| # releases         | 49 |
-| # dependents       | 59 |
-| # downloads        | 26893996 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 6976304.333333333 |
+| # stars            | 973.0 |
 
 ## Links
 - [Homepage](https://github.com/theKashey/react-focus-lock#readme)

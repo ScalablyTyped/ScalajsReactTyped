@@ -1,13 +1,17 @@
 package typingsJapgolly.wordpressViewport
 
+import typingsJapgolly.react.mod.ComponentType
 import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/viewport/with-viewport-match", JSImport.Namespace)
-@js.native
-object withViewportMatchMod extends js.Object {
+object withViewportMatchMod {
+  
+  @JSImport("@wordpress/viewport/with-viewport-match", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Higher-order component creator, creating a new component which renders with the given prop names,
     * where the value passed to the underlying component is the result of the query assigned as the
@@ -19,18 +23,20 @@ object withViewportMatchMod extends js.Object {
     *
     * ```jsx
     * function MyComponent( { isMobile } ) {
-    * 	return (
-    * 		<div>Currently: { isMobile ? 'Mobile' : 'Not Mobile' }</div>
-    * 	);
+    *     return (
+    *         <div>Currently: { isMobile ? 'Mobile' : 'Not Mobile' }</div>
+    *     );
     * }
     *
     * MyComponent = withViewportMatch( { isMobile: '< small' } )( MyComponent );
     * ```
     */
   // prettier-ignore
-  def default[T /* <: Record[String, String] */](queries: T): js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
-    _
-  ] = js.native
+  inline def default[T /* <: Record[String, String] */](queries: T): js.Function1[
+    /* component */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer V> ? react.react.ComponentType<std.Omit<V, keyof T>> : never */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(queries.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer V> ? react.react.ComponentType<std.Omit<V, keyof T>> : never */ js.Any
+  ]]
 }
-

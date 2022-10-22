@@ -1,41 +1,32 @@
 package typingsJapgolly.webpack.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.webpack.AnonModule
-import typingsJapgolly.webpack.mod.DefinePlugin.CodeValueObject
-import typingsJapgolly.webpack.mod.compilation.normalModuleFactory.Parser
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack", "DefinePlugin")
-@js.native
-class DefinePlugin protected () extends Plugin {
-  def this(definitions: StringDictionary[CodeValueObject]) = this()
+trait DefinePlugin extends StObject {
+  
+  /**
+  	 * Apply the plugin
+  	 */
+  @JSName("apply")
+  def apply(compiler: Compiler): Unit
+  
+  var definitions: Record[String, CodeValue]
 }
-
-/* static members */
-@JSImport("webpack", "DefinePlugin")
-@js.native
-object DefinePlugin extends js.Object {
-  @js.native
-  class RuntimeValue protected () extends js.Object {
-    def this(fn: js.Function1[/* hasModule */ AnonModule, CodeValuePrimitive]) = this()
-    def this(
-      fn: js.Function1[/* hasModule */ AnonModule, CodeValuePrimitive],
-      fileDependencies: js.Array[String]
-    ) = this()
-    def exec(parser: Parser): CodeValuePrimitive = js.native
+object DefinePlugin {
+  
+  inline def apply(apply: Compiler => Callback, definitions: Record[String, CodeValue]): DefinePlugin = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1((t0: Compiler) => apply(t0).runNow()), definitions = definitions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefinePlugin]
   }
   
-  def runtimeValue(fn: js.Function1[/* hasModule */ AnonModule, CodeValuePrimitive]): RuntimeValue = js.native
-  def runtimeValue(
-    fn: js.Function1[/* hasModule */ AnonModule, CodeValuePrimitive],
-    fileDependencies: js.Array[String]
-  ): RuntimeValue = js.native
-  type CodeValueObject = CodeValuePrimitive | (StringDictionary[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias webpack.webpack.DefinePlugin.CodeValueObject */ js.Object
-  ])
-  type CodeValuePrimitive = js.UndefOr[String | Double | Boolean | js.RegExp | RuntimeValue | Null]
+  extension [Self <: DefinePlugin](x: Self) {
+    
+    inline def setApply(value: Compiler => Callback): Self = StObject.set(x, "apply", js.Any.fromFunction1((t0: Compiler) => value(t0).runNow()))
+    
+    inline def setDefinitions(value: Record[String, CodeValue]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,33 +1,29 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQuery
 import typingsJapgolly.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.Pager")
 @js.native
-class Pager protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: PagerOptions) = this()
+trait Pager
+  extends StObject
+     with Widget {
+  
   var dataSource: DataSource = js.native
+  
   @JSName("options")
   var options_Pager: PagerOptions = js.native
-  var wrapper: JQuery = js.native
+  
   def page(): Double = js.native
   def page(page: Double): Unit = js.native
+  
   def pageSize(): Double = js.native
+  
   def refresh(): Unit = js.native
+  
   def totalPages(): Double = js.native
+  
+  var wrapper: JQuery = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.ui.Pager")
-@js.native
-object Pager extends js.Object {
-  var fn: Pager = js.native
-  def extend(proto: js.Object): Pager = js.native
-}
-

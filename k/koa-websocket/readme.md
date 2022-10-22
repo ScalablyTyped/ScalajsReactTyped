@@ -10,10 +10,10 @@ Light wrapper around Koa providing a websocket middleware handler that is koa-ro
 | ------------------ | :-------------: |
 | Full name          | koa-websocket |
 | Keywords           | koa, websockets, ws, sockets, routes |
-| # releases         | 4 |
-| # dependents       | 58 |
-| # downloads        | 253046 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 34538.333333333336 |
+| # stars            | 248.0 |
 
 ## Links
 - [Homepage](https://github.com/kudos/koa-websocket)

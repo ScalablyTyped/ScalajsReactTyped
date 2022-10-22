@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CaretType extends js.Object
-
+sealed trait CaretType extends StObject
 /** Specifies the caret type. */
 @JSGlobal("Windows.UI.Text.CaretType")
 @js.native
-object CaretType extends js.Object {
+object CaretType extends StObject {
+  
   /** The insertion point for a sequenced language; that is, characters that are typed with one key stroke. */
   @js.native
-  sealed trait normal extends CaretType
+  sealed trait normal
+    extends StObject
+       with CaretType
   
   /** The insertion point is null. */
   @js.native
-  sealed trait `null` extends CaretType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CaretType with Double] = js.native
-  /* 0 */ @js.native
-  object normal extends TopLevel[normal with Double]
-  
-  /* 1 */ @js.native
-  object `null` extends TopLevel[`null` with Double]
-  
+  sealed trait `null`
+    extends StObject
+       with CaretType
 }
-

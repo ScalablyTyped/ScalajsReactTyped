@@ -1,8 +1,8 @@
 package typingsJapgolly.jwplayer.jwplayer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.jwplayer.jwplayerStrings.adBlock
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.jwplayer.jwplayerStrings.seeked
   - typingsJapgolly.jwplayer.jwplayerStrings.remove
 */
-trait NoParamEvent extends js.Object
-
+trait NoParamEvent extends StObject
 object NoParamEvent {
-  @scala.inline
-  def adBlock: typingsJapgolly.jwplayer.jwplayerStrings.adBlock = this.cast("adBlock")
-  @scala.inline
-  def beforeComplete: typingsJapgolly.jwplayer.jwplayerStrings.beforeComplete = this.cast("beforeComplete")
-  @scala.inline
-  def beforePlay: typingsJapgolly.jwplayer.jwplayerStrings.beforePlay = this.cast("beforePlay")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def complete: typingsJapgolly.jwplayer.jwplayerStrings.complete = this.cast("complete")
-  @scala.inline
-  def displayClick: typingsJapgolly.jwplayer.jwplayerStrings.displayClick = this.cast("displayClick")
-  @scala.inline
-  def playlistComplete: typingsJapgolly.jwplayer.jwplayerStrings.playlistComplete = this.cast("playlistComplete")
-  @scala.inline
-  def remove: typingsJapgolly.jwplayer.jwplayerStrings.remove = this.cast("remove")
-  @scala.inline
-  def seeked: typingsJapgolly.jwplayer.jwplayerStrings.seeked = this.cast("seeked")
+  
+  inline def adBlock: typingsJapgolly.jwplayer.jwplayerStrings.adBlock = "adBlock".asInstanceOf[typingsJapgolly.jwplayer.jwplayerStrings.adBlock]
+  
+  inline def beforeComplete: typingsJapgolly.jwplayer.jwplayerStrings.beforeComplete = "beforeComplete".asInstanceOf[typingsJapgolly.jwplayer.jwplayerStrings.beforeComplete]
+  
+  inline def beforePlay: typingsJapgolly.jwplayer.jwplayerStrings.beforePlay = "beforePlay".asInstanceOf[typingsJapgolly.jwplayer.jwplayerStrings.beforePlay]
+  
+  inline def complete: typingsJapgolly.jwplayer.jwplayerStrings.complete = "complete".asInstanceOf[typingsJapgolly.jwplayer.jwplayerStrings.complete]
+  
+  inline def displayClick: typingsJapgolly.jwplayer.jwplayerStrings.displayClick = "displayClick".asInstanceOf[typingsJapgolly.jwplayer.jwplayerStrings.displayClick]
+  
+  inline def playlistComplete: typingsJapgolly.jwplayer.jwplayerStrings.playlistComplete = "playlistComplete".asInstanceOf[typingsJapgolly.jwplayer.jwplayerStrings.playlistComplete]
+  
+  inline def remove: typingsJapgolly.jwplayer.jwplayerStrings.remove = "remove".asInstanceOf[typingsJapgolly.jwplayer.jwplayerStrings.remove]
+  
+  inline def seeked: typingsJapgolly.jwplayer.jwplayerStrings.seeked = "seeked".asInstanceOf[typingsJapgolly.jwplayer.jwplayerStrings.seeked]
 }
-

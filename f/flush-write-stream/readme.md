@@ -10,10 +10,10 @@ A write stream constructor that supports a flush function that is called before 
 | ------------------ | :-------------: |
 | Full name          | flush-write-stream |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 45 |
-| # downloads        | 286995259 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.5499432E7 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/flush-write-stream)

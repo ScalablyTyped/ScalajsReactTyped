@@ -1,67 +1,77 @@
 package typingsJapgolly.phonon
 
-import typingsJapgolly.phonon.Phonon_.PhononAjaxErrorFlag
-import typingsJapgolly.phonon.Phonon_.PhononColor
-import typingsJapgolly.phonon.Phonon_.PhononPopoverDirection
+import typingsJapgolly.phonon.Phonon.PhononAjaxErrorFlag
+import typingsJapgolly.phonon.Phonon.PhononColor
+import typingsJapgolly.phonon.Phonon.PhononPopoverDirection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object phononStrings {
-  @js.native
-  sealed trait JSON_MALFORMED extends PhononAjaxErrorFlag
   
   @js.native
-  sealed trait NO_INTERNET_ACCESS extends PhononAjaxErrorFlag
+  sealed trait JSON_MALFORMED
+    extends StObject
+       with PhononAjaxErrorFlag
+  inline def JSON_MALFORMED: JSON_MALFORMED = "JSON_MALFORMED".asInstanceOf[JSON_MALFORMED]
   
   @js.native
-  sealed trait REQUEST_CANCELED extends PhononAjaxErrorFlag
+  sealed trait NO_INTERNET_ACCESS
+    extends StObject
+       with PhononAjaxErrorFlag
+  inline def NO_INTERNET_ACCESS: NO_INTERNET_ACCESS = "NO_INTERNET_ACCESS".asInstanceOf[NO_INTERNET_ACCESS]
   
   @js.native
-  sealed trait TIMEOUT_EXCEEDED extends PhononAjaxErrorFlag
+  sealed trait REQUEST_CANCELED
+    extends StObject
+       with PhononAjaxErrorFlag
+  inline def REQUEST_CANCELED: REQUEST_CANCELED = "REQUEST_CANCELED".asInstanceOf[REQUEST_CANCELED]
   
   @js.native
-  sealed trait XMLHTTPREQUEST_UNAVAILABLE extends PhononAjaxErrorFlag
+  sealed trait TIMEOUT_EXCEEDED
+    extends StObject
+       with PhononAjaxErrorFlag
+  inline def TIMEOUT_EXCEEDED: TIMEOUT_EXCEEDED = "TIMEOUT_EXCEEDED".asInstanceOf[TIMEOUT_EXCEEDED]
   
   @js.native
-  sealed trait left extends PhononPopoverDirection
+  sealed trait XMLHTTPREQUEST_UNAVAILABLE
+    extends StObject
+       with PhononAjaxErrorFlag
+  inline def XMLHTTPREQUEST_UNAVAILABLE: XMLHTTPREQUEST_UNAVAILABLE = "XMLHTTPREQUEST_UNAVAILABLE".asInstanceOf[XMLHTTPREQUEST_UNAVAILABLE]
   
   @js.native
-  sealed trait negative extends PhononColor
+  sealed trait left
+    extends StObject
+       with PhononPopoverDirection
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait positive extends PhononColor
+  sealed trait negative
+    extends StObject
+       with PhononColor
+  inline def negative: negative = "negative".asInstanceOf[negative]
   
   @js.native
-  sealed trait right extends PhononPopoverDirection
+  sealed trait positive
+    extends StObject
+       with PhononColor
+  inline def positive: positive = "positive".asInstanceOf[positive]
   
   @js.native
-  sealed trait title extends PhononPopoverDirection
+  sealed trait right
+    extends StObject
+       with PhononPopoverDirection
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait `title-left` extends PhononPopoverDirection
+  sealed trait title
+    extends StObject
+       with PhononPopoverDirection
+  inline def title: title = "title".asInstanceOf[title]
   
-  @scala.inline
-  def JSON_MALFORMED: JSON_MALFORMED = "JSON_MALFORMED".asInstanceOf[JSON_MALFORMED]
-  @scala.inline
-  def NO_INTERNET_ACCESS: NO_INTERNET_ACCESS = "NO_INTERNET_ACCESS".asInstanceOf[NO_INTERNET_ACCESS]
-  @scala.inline
-  def REQUEST_CANCELED: REQUEST_CANCELED = "REQUEST_CANCELED".asInstanceOf[REQUEST_CANCELED]
-  @scala.inline
-  def TIMEOUT_EXCEEDED: TIMEOUT_EXCEEDED = "TIMEOUT_EXCEEDED".asInstanceOf[TIMEOUT_EXCEEDED]
-  @scala.inline
-  def XMLHTTPREQUEST_UNAVAILABLE: XMLHTTPREQUEST_UNAVAILABLE = "XMLHTTPREQUEST_UNAVAILABLE".asInstanceOf[XMLHTTPREQUEST_UNAVAILABLE]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def negative: negative = "negative".asInstanceOf[negative]
-  @scala.inline
-  def positive: positive = "positive".asInstanceOf[positive]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def title: title = "title".asInstanceOf[title]
-  @scala.inline
-  def `title-left`: `title-left` = "title-left".asInstanceOf[`title-left`]
+  @js.native
+  sealed trait `title-left`
+    extends StObject
+       with PhononPopoverDirection
+  inline def `title-left`: `title-left` = "title-left".asInstanceOf[`title-left`]
 }
-

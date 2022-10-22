@@ -1,25 +1,24 @@
-package typingsJapgolly.terminalKit
+package typingsJapgolly.terminalKit.terminalMod
 
+import typingsJapgolly.terminalKit.anon.G
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object terminalMod {
-  type Autocompletion = (js.Function2[
-    /* inputString */ java.lang.String, 
-    /* callback */ typingsJapgolly.terminalKit.terminalMod.Callback[
-      java.lang.String | typingsJapgolly.terminalKit.terminalMod.AutocompletionArray[java.lang.String]
-    ], 
-    scala.Unit
-  ]) | (js.Function1[
-    /* inputString */ java.lang.String, 
-    js.Promise[
-      java.lang.String | typingsJapgolly.terminalKit.terminalMod.AutocompletionArray[java.lang.String]
-    ]
-  ])
-  type CTerminal = typingsJapgolly.terminalKit.terminalMod.Terminal with (js.Function1[/* repeated */ js.Any, typingsJapgolly.terminalKit.terminalMod.Terminal])
-  type Callback[T] = (js.Function1[/* err */ js.Any, scala.Unit]) | (js.Function2[/* err */ js.UndefOr[scala.Nothing], /* arg */ T, scala.Unit])
-  type Chainable[T] = T with typingsJapgolly.terminalKit.terminalMod.ChainableInterface[T]
-  type Palette = js.Array[typingsJapgolly.terminalKit.AnonG]
-  type Terminal = typingsJapgolly.terminalKit.terminalMod.Impl with typingsJapgolly.nextgenEvents.mod.^ 
-}
+
+type AnimationArray = js.Array[String]
+
+type AnimationOption = BuiltinAnimation | AnimationArray
+
+type Autocompletion = (js.Function2[
+/* inputString */ String, 
+/* callback */ Callback[String | AutocompletionArray[String]], 
+Unit]) | (js.Function1[/* inputString */ String, js.Promise[String | AutocompletionArray[String]]])
+
+type CTerminal = Terminal & (js.Function1[/* repeated */ Any, Terminal])
+
+type Callback[T] = js.Function2[/* err */ Any, /* arg */ T, Unit]
+
+type Chainable[T] = T & ChainableInterface[T]
+
+type Palette = js.Array[G]

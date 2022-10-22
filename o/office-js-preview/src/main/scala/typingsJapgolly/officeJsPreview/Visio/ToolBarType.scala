@@ -1,13 +1,11 @@
 package typingsJapgolly.officeJsPreview.Visio
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ToolBarType extends js.Object
-
+sealed trait ToolBarType extends StObject
 /**
   *
   * Toolbar IDs of the app
@@ -16,14 +14,17 @@ sealed trait ToolBarType extends js.Object
   */
 @JSGlobal("Visio.ToolBarType")
 @js.native
-object ToolBarType extends js.Object {
+object ToolBarType extends StObject {
+  
   /**
     *
     * CommandBar
     *
     */
   @js.native
-  sealed trait commandBar extends ToolBarType
+  sealed trait commandBar
+    extends StObject
+       with ToolBarType
   
   /**
     *
@@ -31,7 +32,9 @@ object ToolBarType extends js.Object {
     *
     */
   @js.native
-  sealed trait pageNavigationBar extends ToolBarType
+  sealed trait pageNavigationBar
+    extends StObject
+       with ToolBarType
   
   /**
     *
@@ -39,18 +42,7 @@ object ToolBarType extends js.Object {
     *
     */
   @js.native
-  sealed trait statusBar extends ToolBarType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ToolBarType with String] = js.native
-  /* "CommandBar" */ @js.native
-  object commandBar extends TopLevel[commandBar with String]
-  
-  /* "PageNavigationBar" */ @js.native
-  object pageNavigationBar extends TopLevel[pageNavigationBar with String]
-  
-  /* "StatusBar" */ @js.native
-  object statusBar extends TopLevel[statusBar with String]
-  
+  sealed trait statusBar
+    extends StObject
+       with ToolBarType
 }
-

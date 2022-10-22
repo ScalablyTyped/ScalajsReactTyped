@@ -10,10 +10,10 @@ Isomorphic function returning a deferred promise. Uses native `Promise.defer` if
 | ------------------ | :-------------: |
 | Full name          | defer-promise |
 | Keywords           | defer, promise, es6, native, deferred |
-| # releases         | 4 |
-| # dependents       | 11 |
-| # downloads        | 977436 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 49672.333333333336 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/75lb/defer-promise#readme)

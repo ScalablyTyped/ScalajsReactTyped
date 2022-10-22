@@ -1,46 +1,51 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgSplitButtonItem
-  extends /**
-	 * Option for IgSplitButtonItem
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Css class to represent the iconClass of the item
-  	 */
+    * Css class to represent the iconClass of the item
+    */
   var iconClass: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Item display label
-  	 */
+    * Item display label
+    */
   var label: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Item name
-  	 */
+    * Item name
+    */
   var name: js.UndefOr[String] = js.undefined
 }
-
 object IgSplitButtonItem {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgSplitButtonItem
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    iconClass: String = null,
-    label: String = null,
-    name: String = null
-  ): IgSplitButtonItem = {
+  
+  inline def apply(): IgSplitButtonItem = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgSplitButtonItem]
   }
+  
+  extension [Self <: IgSplitButtonItem](x: Self) {
+    
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

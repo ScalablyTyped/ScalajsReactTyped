@@ -1,16 +1,19 @@
 package typingsJapgolly.vexflow.Vex.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Vex.Flow.StaveSection")
 @js.native
-class StaveSection protected () extends Modifier {
-  def this(section: String, x: Double, shift_y: Double) = this()
+trait StaveSection
+  extends StObject
+     with Modifier {
+  
   def draw(stave: Stave, shift_x: Double): StaveSection = js.native
+  
   def setShiftX(x: Double): StaveSection = js.native
+  
   def setShiftY(y: Double): StaveSection = js.native
+  
   def setStaveSection(section: String): StaveSection = js.native
 }
-

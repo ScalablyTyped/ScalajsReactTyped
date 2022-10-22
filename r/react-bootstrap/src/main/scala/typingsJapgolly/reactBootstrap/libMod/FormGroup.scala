@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.libMod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.formGroupMod.FormGroupProps
+import typingsJapgolly.reactBootstrap.libFormGroupMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "FormGroup")
 @js.native
-class FormGroup ()
-  extends Component[FormGroupProps, js.Object, js.Any]
-
+open class FormGroup () extends ^

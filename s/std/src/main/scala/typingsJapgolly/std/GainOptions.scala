@@ -1,27 +1,27 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GainOptions extends AudioNodeOptions {
+trait GainOptions
+  extends StObject
+     with AudioNodeOptions {
+  
+  /* standard dom */
   var gain: js.UndefOr[Double] = js.undefined
 }
-
 object GainOptions {
-  @scala.inline
-  def apply(
-    channelCount: Int | Double = null,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    gain: Int | Double = null
-  ): GainOptions = {
+  
+  inline def apply(): GainOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (gain != null) __obj.updateDynamic("gain")(gain.asInstanceOf[js.Any])
     __obj.asInstanceOf[GainOptions]
   }
+  
+  extension [Self <: GainOptions](x: Self) {
+    
+    inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
+    
+    inline def setGainUndefined: Self = StObject.set(x, "gain", js.undefined)
+  }
 }
-

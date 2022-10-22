@@ -1,8 +1,8 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleMaps.googleMapsStrings.ROOFTOP
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.googleMaps.googleMapsStrings.GEOMETRIC_CENTER
   - typingsJapgolly.googleMaps.googleMapsStrings.APPROXIMATE
 */
-trait LocationType extends js.Object
-
+trait LocationType extends StObject
 object LocationType {
-  @scala.inline
-  def APPROXIMATE: typingsJapgolly.googleMaps.googleMapsStrings.APPROXIMATE = this.cast("APPROXIMATE")
-  @scala.inline
-  def GEOMETRIC_CENTER: typingsJapgolly.googleMaps.googleMapsStrings.GEOMETRIC_CENTER = this.cast("GEOMETRIC_CENTER")
-  @scala.inline
-  def RANGE_INTERPOLATED: typingsJapgolly.googleMaps.googleMapsStrings.RANGE_INTERPOLATED = this.cast("RANGE_INTERPOLATED")
-  @scala.inline
-  def ROOFTOP: typingsJapgolly.googleMaps.googleMapsStrings.ROOFTOP = this.cast("ROOFTOP")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def APPROXIMATE: typingsJapgolly.googleMaps.googleMapsStrings.APPROXIMATE = "APPROXIMATE".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.APPROXIMATE]
+  
+  inline def GEOMETRIC_CENTER: typingsJapgolly.googleMaps.googleMapsStrings.GEOMETRIC_CENTER = "GEOMETRIC_CENTER".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.GEOMETRIC_CENTER]
+  
+  inline def RANGE_INTERPOLATED: typingsJapgolly.googleMaps.googleMapsStrings.RANGE_INTERPOLATED = "RANGE_INTERPOLATED".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.RANGE_INTERPOLATED]
+  
+  inline def ROOFTOP: typingsJapgolly.googleMaps.googleMapsStrings.ROOFTOP = "ROOFTOP".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.ROOFTOP]
 }
-

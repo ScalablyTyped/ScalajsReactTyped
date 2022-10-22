@@ -1,87 +1,83 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`10`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`11`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`12`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`13`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`14`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`15`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`16`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`7`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`9`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`0`
+import typingsJapgolly.activexOffice.activexOfficeInts.`10`
+import typingsJapgolly.activexOffice.activexOfficeInts.`11`
+import typingsJapgolly.activexOffice.activexOfficeInts.`12`
+import typingsJapgolly.activexOffice.activexOfficeInts.`13`
+import typingsJapgolly.activexOffice.activexOfficeInts.`14`
+import typingsJapgolly.activexOffice.activexOfficeInts.`15`
+import typingsJapgolly.activexOffice.activexOfficeInts.`16`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`3`
+import typingsJapgolly.activexOffice.activexOfficeInts.`4`
+import typingsJapgolly.activexOffice.activexOfficeInts.`5`
+import typingsJapgolly.activexOffice.activexOfficeInts.`6`
+import typingsJapgolly.activexOffice.activexOfficeInts.`7`
+import typingsJapgolly.activexOffice.activexOfficeInts.`8`
+import typingsJapgolly.activexOffice.activexOfficeInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`7`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`9`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`10`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`14`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`16`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`12`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`11`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`13`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`15`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`0`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`5`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`6`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`7`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`8`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`9`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`10`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`14`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`16`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`3`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`12`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`11`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`4`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`13`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`15`
 */
-trait MsoThemeColorIndex extends js.Object
-
+trait MsoThemeColorIndex extends StObject
 object MsoThemeColorIndex {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoNotThemeColor: `0` = this.cast(0)
-  @scala.inline
-  def msoThemeColorAccent1: `5` = this.cast(5)
-  @scala.inline
-  def msoThemeColorAccent2: `6` = this.cast(6)
-  @scala.inline
-  def msoThemeColorAccent3: `7` = this.cast(7)
-  @scala.inline
-  def msoThemeColorAccent4: `8` = this.cast(8)
-  @scala.inline
-  def msoThemeColorAccent5: `9` = this.cast(9)
-  @scala.inline
-  def msoThemeColorAccent6: `10` = this.cast(10)
-  @scala.inline
-  def msoThemeColorBackground1: `14` = this.cast(14)
-  @scala.inline
-  def msoThemeColorBackground2: `16` = this.cast(16)
-  @scala.inline
-  def msoThemeColorDark1: `1` = this.cast(1)
-  @scala.inline
-  def msoThemeColorDark2: `3` = this.cast(3)
-  @scala.inline
-  def msoThemeColorFollowedHyperlink: `12` = this.cast(12)
-  @scala.inline
-  def msoThemeColorHyperlink: `11` = this.cast(11)
-  @scala.inline
-  def msoThemeColorLight1: `2` = this.cast(2)
-  @scala.inline
-  def msoThemeColorLight2: `4` = this.cast(4)
-  @scala.inline
-  def msoThemeColorMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoThemeColorText1: `13` = this.cast(13)
-  @scala.inline
-  def msoThemeColorText2: `15` = this.cast(15)
+  
+  inline def msoNotThemeColor: `0` = 0.asInstanceOf[`0`]
+  
+  inline def msoThemeColorAccent1: `5` = 5.asInstanceOf[`5`]
+  
+  inline def msoThemeColorAccent2: `6` = 6.asInstanceOf[`6`]
+  
+  inline def msoThemeColorAccent3: `7` = 7.asInstanceOf[`7`]
+  
+  inline def msoThemeColorAccent4: `8` = 8.asInstanceOf[`8`]
+  
+  inline def msoThemeColorAccent5: `9` = 9.asInstanceOf[`9`]
+  
+  inline def msoThemeColorAccent6: `10` = 10.asInstanceOf[`10`]
+  
+  inline def msoThemeColorBackground1: `14` = 14.asInstanceOf[`14`]
+  
+  inline def msoThemeColorBackground2: `16` = 16.asInstanceOf[`16`]
+  
+  inline def msoThemeColorDark1: `1` = 1.asInstanceOf[`1`]
+  
+  inline def msoThemeColorDark2: `3` = 3.asInstanceOf[`3`]
+  
+  inline def msoThemeColorFollowedHyperlink: `12` = 12.asInstanceOf[`12`]
+  
+  inline def msoThemeColorHyperlink: `11` = 11.asInstanceOf[`11`]
+  
+  inline def msoThemeColorLight1: `2` = 2.asInstanceOf[`2`]
+  
+  inline def msoThemeColorLight2: `4` = 4.asInstanceOf[`4`]
+  
+  inline def msoThemeColorMixed: `-2` = -2.asInstanceOf[`-2`]
+  
+  inline def msoThemeColorText1: `13` = 13.asInstanceOf[`13`]
+  
+  inline def msoThemeColorText2: `15` = 15.asInstanceOf[`15`]
 }
-

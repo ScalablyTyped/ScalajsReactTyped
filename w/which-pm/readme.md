@@ -10,15 +10,12 @@ Detects what package manager was used for installation
 | ------------------ | :-------------: |
 | Full name          | which-pm |
 | Keywords           | npm, pnpm, yarn |
-| # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 1957288 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1598186.0 |
+| # stars            | 45.0 |
 
 ## Links
-- [Homepage](https://github.com/zkochan/packages#readme)
-- [Bugs](https://github.com/zkochan/packages/labels/package%3A%20which-pm)
-- [Repository](https://github.com/zkochan/packages)
 - [Npm](https://www.npmjs.com/package/which-pm)
     
 

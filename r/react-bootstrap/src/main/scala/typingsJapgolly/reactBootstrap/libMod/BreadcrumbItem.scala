@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.libMod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.breadcrumbItemMod.BreadcrumbItemProps
+import typingsJapgolly.reactBootstrap.libBreadcrumbItemMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "BreadcrumbItem")
 @js.native
-class BreadcrumbItem ()
-  extends Component[BreadcrumbItemProps, js.Object, js.Any]
-
+open class BreadcrumbItem () extends ^

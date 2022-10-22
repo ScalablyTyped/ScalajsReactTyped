@@ -1,31 +1,31 @@
 package typingsJapgolly.winrt.Windows.Storage.Pickers
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVector
 import typingsJapgolly.winrt.Windows.Foundation.Collections.ValueSet
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
 import typingsJapgolly.winrt.Windows.Storage.StorageFolder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.Pickers.FolderPicker")
-@js.native
-class FolderPicker () extends IFolderPicker {
-  /* CompleteClass */
-  override var commitButtonText: String = js.native
-  /* CompleteClass */
-  override var continuationData: ValueSet = js.native
-  /* CompleteClass */
-  override var fileTypeFilter: IVector[String] = js.native
-  /* CompleteClass */
-  override var settingsIdentifier: String = js.native
-  /* CompleteClass */
-  override var suggestedStartLocation: PickerLocationId = js.native
-  /* CompleteClass */
-  override var viewMode: PickerViewMode = js.native
-  /* CompleteClass */
-  override def pickFolderAndContinue(): Unit = js.native
-  /* CompleteClass */
-  override def pickSingleFolderAsync(): IAsyncOperation[StorageFolder] = js.native
+trait FolderPicker
+  extends StObject
+     with IFolderPicker
+object FolderPicker {
+  
+  inline def apply(
+    commitButtonText: String,
+    continuationData: ValueSet,
+    fileTypeFilter: IVector[String],
+    pickFolderAndContinue: Callback,
+    pickSingleFolderAsync: CallbackTo[IAsyncOperation[StorageFolder]],
+    settingsIdentifier: String,
+    suggestedStartLocation: PickerLocationId,
+    viewMode: PickerViewMode
+  ): FolderPicker = {
+    val __obj = js.Dynamic.literal(commitButtonText = commitButtonText.asInstanceOf[js.Any], continuationData = continuationData.asInstanceOf[js.Any], fileTypeFilter = fileTypeFilter.asInstanceOf[js.Any], pickFolderAndContinue = pickFolderAndContinue.toJsFn, pickSingleFolderAsync = pickSingleFolderAsync.toJsFn, settingsIdentifier = settingsIdentifier.asInstanceOf[js.Any], suggestedStartLocation = suggestedStartLocation.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FolderPicker]
+  }
 }
-

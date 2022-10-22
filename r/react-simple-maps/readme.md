@@ -4,16 +4,16 @@
 Typings are for version 1.0
 
 ## Library description:
-An svg map component built with and for React
+An svg map chart component built with and for React
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-simple-maps |
-| Keywords           | react, maps, worldmap, geo, d3 |
-| # releases         | 10 |
-| # dependents       | 12 |
-| # downloads        | 552917 |
-| # stars            | 3 |
+| Keywords           | react, maps, charts, worldmap, usa, d3-geo |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 415018.6666666667 |
+| # stars            | 2482.0 |
 
 ## Links
 - [Homepage](https://github.com/zcreativelabs/react-simple-maps#readme)

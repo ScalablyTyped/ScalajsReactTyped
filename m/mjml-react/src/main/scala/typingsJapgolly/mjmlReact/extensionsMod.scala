@@ -1,28 +1,73 @@
 package typingsJapgolly.mjmlReact
 
+import typingsJapgolly.mjmlReact.anon.Children
+import typingsJapgolly.mjmlReact.anon.Condition
+import typingsJapgolly.mjmlReact.anon.Html
+import typingsJapgolly.mjmlReact.anon.Src
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mjml-react/extensions", JSImport.Namespace)
-@js.native
-object extensionsMod extends js.Object {
-  @js.native
-  class MjmlComment ()
-    extends Component[AnonChildren, js.Object, js.Any]
+object extensionsMod {
   
+  @JSImport("mjml-react/extensions", "MjmlComment")
   @js.native
-  class MjmlConditionalComment ()
-    extends Component[AnonCondition, js.Object, js.Any]
+  open class MjmlComment protected ()
+    extends Component[Children, js.Object, Any] {
+    def this(props: Children) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Children, context: Any) = this()
+  }
   
+  @JSImport("mjml-react/extensions", "MjmlConditionalComment")
   @js.native
-  class MjmlTrackingPixel ()
-    extends Component[AnonSrc, js.Object, js.Any]
+  open class MjmlConditionalComment protected ()
+    extends Component[Condition, js.Object, Any] {
+    def this(props: Condition) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Condition, context: Any) = this()
+  }
   
+  @JSImport("mjml-react/extensions", "MjmlHtml")
   @js.native
-  class MjmlYahooStyle ()
-    extends Component[AnonChildren, js.Object, js.Any]
+  open class MjmlHtml protected ()
+    extends Component[Html, js.Object, Any] {
+    def this(props: Html) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Html, context: Any) = this()
+  }
   
+  @JSImport("mjml-react/extensions", "MjmlTrackingPixel")
+  @js.native
+  open class MjmlTrackingPixel protected ()
+    extends Component[Src, js.Object, Any] {
+    def this(props: Src) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Src, context: Any) = this()
+  }
+  
+  @JSImport("mjml-react/extensions", "MjmlYahooStyle")
+  @js.native
+  open class MjmlYahooStyle protected ()
+    extends Component[Children, js.Object, Any] {
+    def this(props: Children) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Children, context: Any) = this()
+  }
 }
-

@@ -1,187 +1,189 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NodeFlags extends js.Object
-
+sealed trait NodeFlags extends StObject
 @JSImport("typescript", "NodeFlags")
 @js.native
-object NodeFlags extends js.Object {
-  @js.native
-  sealed trait AwaitContext extends NodeFlags
-  
-  @js.native
-  sealed trait BlockScoped extends NodeFlags
-  
-  @js.native
-  sealed trait Const extends NodeFlags
-  
-  @js.native
-  sealed trait ContainsThis extends NodeFlags
-  
-  @js.native
-  sealed trait ContextFlags extends NodeFlags
-  
-  @js.native
-  sealed trait DecoratorContext extends NodeFlags
-  
-  @js.native
-  sealed trait DisallowInContext extends NodeFlags
-  
-  @js.native
-  sealed trait ExportContext extends NodeFlags
-  
-  @js.native
-  sealed trait GlobalAugmentation extends NodeFlags
-  
-  @js.native
-  sealed trait HasAggregatedChildData extends NodeFlags
-  
-  @js.native
-  sealed trait HasAsyncFunctions extends NodeFlags
-  
-  @js.native
-  sealed trait HasExplicitReturn extends NodeFlags
-  
-  @js.native
-  sealed trait HasImplicitReturn extends NodeFlags
-  
-  @js.native
-  sealed trait JSDoc extends NodeFlags
-  
-  @js.native
-  sealed trait JavaScriptFile extends NodeFlags
-  
-  @js.native
-  sealed trait JsonFile extends NodeFlags
-  
-  @js.native
-  sealed trait Let extends NodeFlags
-  
-  @js.native
-  sealed trait Namespace extends NodeFlags
-  
-  @js.native
-  sealed trait NestedNamespace extends NodeFlags
-  
-  @js.native
-  sealed trait None extends NodeFlags
-  
-  @js.native
-  sealed trait OptionalChain extends NodeFlags
-  
-  @js.native
-  sealed trait ReachabilityAndEmitFlags extends NodeFlags
-  
-  @js.native
-  sealed trait ReachabilityCheckFlags extends NodeFlags
-  
-  @js.native
-  sealed trait Synthesized extends NodeFlags
-  
-  @js.native
-  sealed trait ThisNodeHasError extends NodeFlags
-  
-  @js.native
-  sealed trait ThisNodeOrAnySubNodesHasError extends NodeFlags
-  
-  @js.native
-  sealed trait TypeExcludesFlags extends NodeFlags
-  
-  @js.native
-  sealed trait YieldContext extends NodeFlags
+object NodeFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NodeFlags with Double] = js.native
-  /* 32768 */ @js.native
-  object AwaitContext extends TopLevel[AwaitContext with Double]
+  def apply(value: Double): js.UndefOr[NodeFlags & Double] = js.native
   
-  /* 3 */ @js.native
-  object BlockScoped extends TopLevel[BlockScoped with Double]
+  @js.native
+  sealed trait AwaitContext
+    extends StObject
+       with NodeFlags
+  /* 32768 */ val AwaitContext: typingsJapgolly.typescript.mod.NodeFlags.AwaitContext & Double = js.native
   
-  /* 2 */ @js.native
-  object Const extends TopLevel[Const with Double]
+  @js.native
+  sealed trait BlockScoped
+    extends StObject
+       with NodeFlags
+  /* 3 */ val BlockScoped: typingsJapgolly.typescript.mod.NodeFlags.BlockScoped & Double = js.native
   
-  /* 128 */ @js.native
-  object ContainsThis extends TopLevel[ContainsThis with Double]
+  @js.native
+  sealed trait Const
+    extends StObject
+       with NodeFlags
+  /* 2 */ val Const: typingsJapgolly.typescript.mod.NodeFlags.Const & Double = js.native
   
-  /* 25358336 */ @js.native
-  object ContextFlags extends TopLevel[ContextFlags with Double]
+  @js.native
+  sealed trait ContainsThis
+    extends StObject
+       with NodeFlags
+  /* 128 */ val ContainsThis: typingsJapgolly.typescript.mod.NodeFlags.ContainsThis & Double = js.native
   
-  /* 16384 */ @js.native
-  object DecoratorContext extends TopLevel[DecoratorContext with Double]
+  @js.native
+  sealed trait ContextFlags
+    extends StObject
+       with NodeFlags
+  /* 50720768 */ val ContextFlags: typingsJapgolly.typescript.mod.NodeFlags.ContextFlags & Double = js.native
   
-  /* 4096 */ @js.native
-  object DisallowInContext extends TopLevel[DisallowInContext with Double]
+  @js.native
+  sealed trait DecoratorContext
+    extends StObject
+       with NodeFlags
+  /* 16384 */ val DecoratorContext: typingsJapgolly.typescript.mod.NodeFlags.DecoratorContext & Double = js.native
   
-  /* 64 */ @js.native
-  object ExportContext extends TopLevel[ExportContext with Double]
+  @js.native
+  sealed trait DisallowConditionalTypesContext
+    extends StObject
+       with NodeFlags
+  /* 65536 */ val DisallowConditionalTypesContext: typingsJapgolly.typescript.mod.NodeFlags.DisallowConditionalTypesContext & Double = js.native
   
-  /* 1024 */ @js.native
-  object GlobalAugmentation extends TopLevel[GlobalAugmentation with Double]
+  @js.native
+  sealed trait DisallowInContext
+    extends StObject
+       with NodeFlags
+  /* 4096 */ val DisallowInContext: typingsJapgolly.typescript.mod.NodeFlags.DisallowInContext & Double = js.native
   
-  /* 524288 */ @js.native
-  object HasAggregatedChildData extends TopLevel[HasAggregatedChildData with Double]
+  @js.native
+  sealed trait ExportContext
+    extends StObject
+       with NodeFlags
+  /* 64 */ val ExportContext: typingsJapgolly.typescript.mod.NodeFlags.ExportContext & Double = js.native
   
-  /* 2048 */ @js.native
-  object HasAsyncFunctions extends TopLevel[HasAsyncFunctions with Double]
+  @js.native
+  sealed trait GlobalAugmentation
+    extends StObject
+       with NodeFlags
+  /* 1024 */ val GlobalAugmentation: typingsJapgolly.typescript.mod.NodeFlags.GlobalAugmentation & Double = js.native
   
-  /* 512 */ @js.native
-  object HasExplicitReturn extends TopLevel[HasExplicitReturn with Double]
+  @js.native
+  sealed trait HasAggregatedChildData
+    extends StObject
+       with NodeFlags
+  /* 1048576 */ val HasAggregatedChildData: typingsJapgolly.typescript.mod.NodeFlags.HasAggregatedChildData & Double = js.native
   
-  /* 256 */ @js.native
-  object HasImplicitReturn extends TopLevel[HasImplicitReturn with Double]
+  @js.native
+  sealed trait HasAsyncFunctions
+    extends StObject
+       with NodeFlags
+  /* 2048 */ val HasAsyncFunctions: typingsJapgolly.typescript.mod.NodeFlags.HasAsyncFunctions & Double = js.native
   
-  /* 4194304 */ @js.native
-  object JSDoc
-    extends TopLevel[typingsJapgolly.typescript.mod.NodeFlags.JSDoc with Double]
+  @js.native
+  sealed trait HasExplicitReturn
+    extends StObject
+       with NodeFlags
+  /* 512 */ val HasExplicitReturn: typingsJapgolly.typescript.mod.NodeFlags.HasExplicitReturn & Double = js.native
   
-  /* 131072 */ @js.native
-  object JavaScriptFile extends TopLevel[JavaScriptFile with Double]
+  @js.native
+  sealed trait HasImplicitReturn
+    extends StObject
+       with NodeFlags
+  /* 256 */ val HasImplicitReturn: typingsJapgolly.typescript.mod.NodeFlags.HasImplicitReturn & Double = js.native
   
-  /* 33554432 */ @js.native
-  object JsonFile extends TopLevel[JsonFile with Double]
+  @js.native
+  sealed trait JSDoc
+    extends StObject
+       with NodeFlags
+  /* 8388608 */ val JSDoc: typingsJapgolly.typescript.mod.NodeFlags.JSDoc & Double = js.native
   
-  /* 1 */ @js.native
-  object Let extends TopLevel[Let with Double]
+  @js.native
+  sealed trait JavaScriptFile
+    extends StObject
+       with NodeFlags
+  /* 262144 */ val JavaScriptFile: typingsJapgolly.typescript.mod.NodeFlags.JavaScriptFile & Double = js.native
   
-  /* 16 */ @js.native
-  object Namespace extends TopLevel[Namespace with Double]
+  @js.native
+  sealed trait JsonFile
+    extends StObject
+       with NodeFlags
+  /* 67108864 */ val JsonFile: typingsJapgolly.typescript.mod.NodeFlags.JsonFile & Double = js.native
   
-  /* 4 */ @js.native
-  object NestedNamespace extends TopLevel[NestedNamespace with Double]
+  @js.native
+  sealed trait Let
+    extends StObject
+       with NodeFlags
+  /* 1 */ val Let: typingsJapgolly.typescript.mod.NodeFlags.Let & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait Namespace
+    extends StObject
+       with NodeFlags
+  /* 16 */ val Namespace: typingsJapgolly.typescript.mod.NodeFlags.Namespace & Double = js.native
   
-  /* 32 */ @js.native
-  object OptionalChain
-    extends TopLevel[typingsJapgolly.typescript.mod.NodeFlags.OptionalChain with Double]
+  @js.native
+  sealed trait NestedNamespace
+    extends StObject
+       with NodeFlags
+  /* 4 */ val NestedNamespace: typingsJapgolly.typescript.mod.NodeFlags.NestedNamespace & Double = js.native
   
-  /* 2816 */ @js.native
-  object ReachabilityAndEmitFlags extends TopLevel[ReachabilityAndEmitFlags with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with NodeFlags
+  /* 0 */ val None: typingsJapgolly.typescript.mod.NodeFlags.None & Double = js.native
   
-  /* 768 */ @js.native
-  object ReachabilityCheckFlags extends TopLevel[ReachabilityCheckFlags with Double]
+  @js.native
+  sealed trait OptionalChain
+    extends StObject
+       with NodeFlags
+  /* 32 */ val OptionalChain: typingsJapgolly.typescript.mod.NodeFlags.OptionalChain & Double = js.native
   
-  /* 8 */ @js.native
-  object Synthesized extends TopLevel[Synthesized with Double]
+  @js.native
+  sealed trait ReachabilityAndEmitFlags
+    extends StObject
+       with NodeFlags
+  /* 2816 */ val ReachabilityAndEmitFlags: typingsJapgolly.typescript.mod.NodeFlags.ReachabilityAndEmitFlags & Double = js.native
   
-  /* 65536 */ @js.native
-  object ThisNodeHasError extends TopLevel[ThisNodeHasError with Double]
+  @js.native
+  sealed trait ReachabilityCheckFlags
+    extends StObject
+       with NodeFlags
+  /* 768 */ val ReachabilityCheckFlags: typingsJapgolly.typescript.mod.NodeFlags.ReachabilityCheckFlags & Double = js.native
   
-  /* 262144 */ @js.native
-  object ThisNodeOrAnySubNodesHasError extends TopLevel[ThisNodeOrAnySubNodesHasError with Double]
+  @js.native
+  sealed trait Synthesized
+    extends StObject
+       with NodeFlags
+  /* 8 */ val Synthesized: typingsJapgolly.typescript.mod.NodeFlags.Synthesized & Double = js.native
   
-  /* 40960 */ @js.native
-  object TypeExcludesFlags extends TopLevel[TypeExcludesFlags with Double]
+  @js.native
+  sealed trait ThisNodeHasError
+    extends StObject
+       with NodeFlags
+  /* 131072 */ val ThisNodeHasError: typingsJapgolly.typescript.mod.NodeFlags.ThisNodeHasError & Double = js.native
   
-  /* 8192 */ @js.native
-  object YieldContext extends TopLevel[YieldContext with Double]
+  @js.native
+  sealed trait ThisNodeOrAnySubNodesHasError
+    extends StObject
+       with NodeFlags
+  /* 524288 */ val ThisNodeOrAnySubNodesHasError: typingsJapgolly.typescript.mod.NodeFlags.ThisNodeOrAnySubNodesHasError & Double = js.native
   
+  @js.native
+  sealed trait TypeExcludesFlags
+    extends StObject
+       with NodeFlags
+  /* 40960 */ val TypeExcludesFlags: typingsJapgolly.typescript.mod.NodeFlags.TypeExcludesFlags & Double = js.native
+  
+  @js.native
+  sealed trait YieldContext
+    extends StObject
+       with NodeFlags
+  /* 8192 */ val YieldContext: typingsJapgolly.typescript.mod.NodeFlags.YieldContext & Double = js.native
 }
-

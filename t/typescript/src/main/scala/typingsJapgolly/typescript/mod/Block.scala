@@ -1,15 +1,18 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Block
-  extends Statement
-     with BlockLike {
+  extends StObject
+     with Statement
+     with BlockLike
+     with HasJSDoc {
+  
   @JSName("kind")
-  var kind_Block: typingsJapgolly.typescript.mod.SyntaxKind.Block = js.native
-  var statements: NodeArray[Statement] = js.native
+  val kind_Block: typingsJapgolly.typescript.mod.SyntaxKind.Block = js.native
+  
+  val statements: NodeArray[Statement] = js.native
 }
-

@@ -1,35 +1,46 @@
 package typingsJapgolly.mendixmodelsdk.mod.codeactions
 
-import typingsJapgolly.mendixmodelsdk.codeactionsMod.StructureVersionInfo
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcGenCodeactionsMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * In version 7.21.0: introduced
   */
-@JSImport("mendixmodelsdk", "codeactions.PrimitiveType")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "codeactions.PrimitiveType")
 @js.native
-abstract class PrimitiveType protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.codeactions.PrimitiveType {
+open class PrimitiveType protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.codeactions.PrimitiveType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "codeactions.PrimitiveType")
-@js.native
-object PrimitiveType extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object PrimitiveType {
+  
+  @JSImport("mendixmodelsdk", "codeactions.PrimitiveType")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "codeactions.PrimitiveType.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "codeactions.PrimitiveType.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

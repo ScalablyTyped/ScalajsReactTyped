@@ -1,12 +1,18 @@
 package typingsJapgolly.reactOnsenui.mod
 
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameCalculateItemHeight
+import typingsJapgolly.reactOnsenui.anon.CalculateItemHeight
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "LazyList")
 @js.native
-class LazyList ()
-  extends typingsJapgolly.react.mod.Component[HTMLAttributesidclassNameCalculateItemHeight, js.Any, js.Any]
-
+open class LazyList protected () extends Component[CalculateItemHeight, Any] {
+  def this(props: HTMLAttributesidclassName & CalculateItemHeight) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HTMLAttributesidclassName & CalculateItemHeight, context: Any) = this()
+}

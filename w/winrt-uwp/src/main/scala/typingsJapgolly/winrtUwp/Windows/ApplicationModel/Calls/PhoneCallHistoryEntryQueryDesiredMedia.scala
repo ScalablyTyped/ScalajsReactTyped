@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Calls
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhoneCallHistoryEntryQueryDesiredMedia extends js.Object
-
+sealed trait PhoneCallHistoryEntryQueryDesiredMedia extends StObject
 /** A filter used to retrieve call entries based on the contained media. */
 @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryEntryQueryDesiredMedia")
 @js.native
-object PhoneCallHistoryEntryQueryDesiredMedia extends js.Object {
+object PhoneCallHistoryEntryQueryDesiredMedia extends StObject {
+  
   /** All media types. */
   @js.native
-  sealed trait all extends PhoneCallHistoryEntryQueryDesiredMedia
+  sealed trait all
+    extends StObject
+       with PhoneCallHistoryEntryQueryDesiredMedia
   
   /** Audio media. */
   @js.native
-  sealed trait audio extends PhoneCallHistoryEntryQueryDesiredMedia
+  sealed trait audio
+    extends StObject
+       with PhoneCallHistoryEntryQueryDesiredMedia
   
   /** No associated media. */
   @js.native
-  sealed trait none extends PhoneCallHistoryEntryQueryDesiredMedia
+  sealed trait none
+    extends StObject
+       with PhoneCallHistoryEntryQueryDesiredMedia
   
   /** Video media. */
   @js.native
-  sealed trait video extends PhoneCallHistoryEntryQueryDesiredMedia
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhoneCallHistoryEntryQueryDesiredMedia with Double] = js.native
-  /* 3 */ @js.native
-  object all extends TopLevel[all with Double]
-  
-  /* 1 */ @js.native
-  object audio extends TopLevel[audio with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object video extends TopLevel[video with Double]
-  
+  sealed trait video
+    extends StObject
+       with PhoneCallHistoryEntryQueryDesiredMedia
 }
-

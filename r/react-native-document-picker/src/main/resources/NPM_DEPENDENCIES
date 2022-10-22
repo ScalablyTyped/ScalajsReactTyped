@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-document-picker" : "8.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-document-picker" : "8.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

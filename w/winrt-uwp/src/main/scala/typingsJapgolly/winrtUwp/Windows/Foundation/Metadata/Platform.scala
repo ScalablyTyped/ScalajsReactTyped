@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Foundation.Metadata
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Platform extends js.Object
-
+sealed trait Platform extends StObject
 /** Specifies the platforms that a specified type should be supported in, as used by Windows Runtime attributes and metadata. */
 @JSGlobal("Windows.Foundation.Metadata.Platform")
 @js.native
-object Platform extends js.Object {
+object Platform extends StObject {
+  
   /** For use by Windows metadata. */
   @js.native
-  sealed trait windows extends Platform
+  sealed trait windows
+    extends StObject
+       with Platform
   
   /** For use by Windows Phone metadata. */
   @js.native
-  sealed trait windowsPhone extends Platform
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Platform with Double] = js.native
-  /* 0 */ @js.native
-  object windows extends TopLevel[windows with Double]
-  
-  /* 1 */ @js.native
-  object windowsPhone extends TopLevel[windowsPhone with Double]
-  
+  sealed trait windowsPhone
+    extends StObject
+       with Platform
 }
-

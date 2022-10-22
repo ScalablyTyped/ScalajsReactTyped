@@ -1,34 +1,45 @@
 package typingsJapgolly.voximplantWebsdk.mod.IMEventTypes
 
 import typingsJapgolly.voximplantWebsdk.mod.VoxImplantIMEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-		*	Event dispatched if an invitation to chat room was declined by the invitee
-		*/
-trait ChatRoomInviteDeclined extends VoxImplantIMEvent {
+  *    Event dispatched if an invitation to chat room was declined by the invitee
+  */
+trait ChatRoomInviteDeclined
+  extends StObject
+     with VoxImplantIMEvent {
+  
   /**
-  			* User id (invitee)
-  			*/
+    * User id (invitee)
+    */
   var invitee: String
+  
   /**
-  			* A reason of the invitation
-  			*/
+    * A reason of the invitation
+    */
   var reason: String
+  
   /**
-  			* Room id
-  			*/
+    * Room id
+    */
   var room: String
 }
-
 object ChatRoomInviteDeclined {
-  @scala.inline
-  def apply(invitee: String, reason: String, room: String): ChatRoomInviteDeclined = {
-    val __obj = js.Dynamic.literal(invitee = invitee.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
   
+  inline def apply(invitee: String, reason: String, room: String): ChatRoomInviteDeclined = {
+    val __obj = js.Dynamic.literal(invitee = invitee.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRoomInviteDeclined]
   }
+  
+  extension [Self <: ChatRoomInviteDeclined](x: Self) {
+    
+    inline def setInvitee(value: String): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
+    
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,26 +1,22 @@
 package typingsJapgolly.firefoxWebextBrowser.browser.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* tabs types */
 /** An event that caused a muted state change. */
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.user
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.capture
-  - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.extension
+  - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension`
 */
-trait MutedInfoReason extends js.Object
-
+trait MutedInfoReason extends StObject
 object MutedInfoReason {
-  @scala.inline
-  def capture: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.capture = this.cast("capture")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def extension: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.extension = this.cast("extension")
-  @scala.inline
-  def user: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.user = this.cast("user")
+  
+  inline def capture: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.capture = "capture".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.capture]
+  
+  inline def `extension`: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension` = "extension".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension`]
+  
+  inline def user: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.user = "user".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.user]
 }
-

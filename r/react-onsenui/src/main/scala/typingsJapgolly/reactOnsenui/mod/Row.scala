@@ -1,12 +1,18 @@
 package typingsJapgolly.reactOnsenui.mod
 
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameStyle
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
+import typingsJapgolly.reactOnsenui.anon.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "Row")
 @js.native
-class Row ()
-  extends typingsJapgolly.react.mod.Component[HTMLAttributesidclassNameStyle, js.Any, js.Any]
-
+open class Row protected () extends Component[`1`, Any] {
+  def this(props: HTMLAttributesidclassName & `1`) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HTMLAttributesidclassName & `1`, context: Any) = this()
+}

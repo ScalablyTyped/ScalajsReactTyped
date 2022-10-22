@@ -2,31 +2,45 @@ package typingsJapgolly.typescriptServices.TypeScript
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISyntaxToken extends IPrimaryExpressionSyntax {
-  var tokenKind: SyntaxKind
+trait ISyntaxToken
+  extends StObject
+     with IPrimaryExpressionSyntax {
+  
   def hasLeadingComment(): Boolean
+  
   def hasLeadingNewLine(): Boolean
+  
   def hasLeadingSkippedText(): Boolean
+  
   def hasLeadingTrivia(): Boolean
+  
   def hasSkippedToken(): Boolean
+  
   def hasTrailingComment(): Boolean
+  
   def hasTrailingNewLine(): Boolean
+  
   def hasTrailingSkippedText(): Boolean
+  
   def hasTrailingTrivia(): Boolean
+  
   def text(): String
-  def value(): js.Any
+  
+  var tokenKind: SyntaxKind
+  
+  def value(): Any
+  
   def valueText(): String
 }
-
 object ISyntaxToken {
-  @scala.inline
-  def apply(
-    accept: ISyntaxVisitor => CallbackTo[js.Any],
-    childAt: Double => CallbackTo[ISyntaxElement],
+  
+  inline def apply(
+    accept: ISyntaxVisitor => Any,
+    childAt: Double => ISyntaxElement,
     childCount: CallbackTo[Double],
     collectTextElements: js.Array[String] => Callback,
     firstToken: CallbackTo[ISyntaxToken],
@@ -60,53 +74,42 @@ object ISyntaxToken {
     tokenKind: SyntaxKind,
     trailingTrivia: CallbackTo[ISyntaxTriviaList],
     trailingTriviaWidth: CallbackTo[Double],
-    value: CallbackTo[js.Any],
+    value: CallbackTo[Any],
     valueText: CallbackTo[String],
     width: CallbackTo[Double],
-    withLeadingTrivia: ISyntaxTriviaList => CallbackTo[ISyntaxNodeOrToken],
-    withTrailingTrivia: ISyntaxTriviaList => CallbackTo[ISyntaxNodeOrToken]
+    withLeadingTrivia: ISyntaxTriviaList => ISyntaxNodeOrToken,
+    withTrailingTrivia: ISyntaxTriviaList => ISyntaxNodeOrToken
   ): ISyntaxToken = {
-    val __obj = js.Dynamic.literal(tokenKind = tokenKind.asInstanceOf[js.Any])
-    __obj.updateDynamic("accept")(js.Any.fromFunction1((t0: typingsJapgolly.typescriptServices.TypeScript.ISyntaxVisitor) => accept(t0).runNow()))
-    __obj.updateDynamic("childAt")(js.Any.fromFunction1((t0: scala.Double) => childAt(t0).runNow()))
-    __obj.updateDynamic("childCount")(childCount.toJsFn)
-    __obj.updateDynamic("collectTextElements")(js.Any.fromFunction1((t0: js.Array[java.lang.String]) => collectTextElements(t0).runNow()))
-    __obj.updateDynamic("firstToken")(firstToken.toJsFn)
-    __obj.updateDynamic("fullText")(fullText.toJsFn)
-    __obj.updateDynamic("fullWidth")(fullWidth.toJsFn)
-    __obj.updateDynamic("hasLeadingComment")(hasLeadingComment.toJsFn)
-    __obj.updateDynamic("hasLeadingNewLine")(hasLeadingNewLine.toJsFn)
-    __obj.updateDynamic("hasLeadingSkippedText")(hasLeadingSkippedText.toJsFn)
-    __obj.updateDynamic("hasLeadingTrivia")(hasLeadingTrivia.toJsFn)
-    __obj.updateDynamic("hasSkippedToken")(hasSkippedToken.toJsFn)
-    __obj.updateDynamic("hasTrailingComment")(hasTrailingComment.toJsFn)
-    __obj.updateDynamic("hasTrailingNewLine")(hasTrailingNewLine.toJsFn)
-    __obj.updateDynamic("hasTrailingSkippedText")(hasTrailingSkippedText.toJsFn)
-    __obj.updateDynamic("hasTrailingTrivia")(hasTrailingTrivia.toJsFn)
-    __obj.updateDynamic("isExpression")(isExpression.toJsFn)
-    __obj.updateDynamic("isIncrementallyUnusable")(isIncrementallyUnusable.toJsFn)
-    __obj.updateDynamic("isList")(isList.toJsFn)
-    __obj.updateDynamic("isMemberExpression")(isMemberExpression.toJsFn)
-    __obj.updateDynamic("isNode")(isNode.toJsFn)
-    __obj.updateDynamic("isPostfixExpression")(isPostfixExpression.toJsFn)
-    __obj.updateDynamic("isPrimaryExpression")(isPrimaryExpression.toJsFn)
-    __obj.updateDynamic("isSeparatedList")(isSeparatedList.toJsFn)
-    __obj.updateDynamic("isToken")(isToken.toJsFn)
-    __obj.updateDynamic("isTypeScriptSpecific")(isTypeScriptSpecific.toJsFn)
-    __obj.updateDynamic("isUnaryExpression")(isUnaryExpression.toJsFn)
-    __obj.updateDynamic("kind")(kind.toJsFn)
-    __obj.updateDynamic("lastToken")(lastToken.toJsFn)
-    __obj.updateDynamic("leadingTrivia")(leadingTrivia.toJsFn)
-    __obj.updateDynamic("leadingTriviaWidth")(leadingTriviaWidth.toJsFn)
-    __obj.updateDynamic("text")(text.toJsFn)
-    __obj.updateDynamic("trailingTrivia")(trailingTrivia.toJsFn)
-    __obj.updateDynamic("trailingTriviaWidth")(trailingTriviaWidth.toJsFn)
-    __obj.updateDynamic("value")(value.toJsFn)
-    __obj.updateDynamic("valueText")(valueText.toJsFn)
-    __obj.updateDynamic("width")(width.toJsFn)
-    __obj.updateDynamic("withLeadingTrivia")(js.Any.fromFunction1((t0: typingsJapgolly.typescriptServices.TypeScript.ISyntaxTriviaList) => withLeadingTrivia(t0).runNow()))
-    __obj.updateDynamic("withTrailingTrivia")(js.Any.fromFunction1((t0: typingsJapgolly.typescriptServices.TypeScript.ISyntaxTriviaList) => withTrailingTrivia(t0).runNow()))
+    val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), childAt = js.Any.fromFunction1(childAt), childCount = childCount.toJsFn, collectTextElements = js.Any.fromFunction1((t0: js.Array[String]) => collectTextElements(t0).runNow()), firstToken = firstToken.toJsFn, fullText = fullText.toJsFn, fullWidth = fullWidth.toJsFn, hasLeadingComment = hasLeadingComment.toJsFn, hasLeadingNewLine = hasLeadingNewLine.toJsFn, hasLeadingSkippedText = hasLeadingSkippedText.toJsFn, hasLeadingTrivia = hasLeadingTrivia.toJsFn, hasSkippedToken = hasSkippedToken.toJsFn, hasTrailingComment = hasTrailingComment.toJsFn, hasTrailingNewLine = hasTrailingNewLine.toJsFn, hasTrailingSkippedText = hasTrailingSkippedText.toJsFn, hasTrailingTrivia = hasTrailingTrivia.toJsFn, isExpression = isExpression.toJsFn, isIncrementallyUnusable = isIncrementallyUnusable.toJsFn, isList = isList.toJsFn, isMemberExpression = isMemberExpression.toJsFn, isNode = isNode.toJsFn, isPostfixExpression = isPostfixExpression.toJsFn, isPrimaryExpression = isPrimaryExpression.toJsFn, isSeparatedList = isSeparatedList.toJsFn, isToken = isToken.toJsFn, isTypeScriptSpecific = isTypeScriptSpecific.toJsFn, isUnaryExpression = isUnaryExpression.toJsFn, kind = kind.toJsFn, lastToken = lastToken.toJsFn, leadingTrivia = leadingTrivia.toJsFn, leadingTriviaWidth = leadingTriviaWidth.toJsFn, text = text.toJsFn, tokenKind = tokenKind.asInstanceOf[js.Any], trailingTrivia = trailingTrivia.toJsFn, trailingTriviaWidth = trailingTriviaWidth.toJsFn, value = value.toJsFn, valueText = valueText.toJsFn, width = width.toJsFn, withLeadingTrivia = js.Any.fromFunction1(withLeadingTrivia), withTrailingTrivia = js.Any.fromFunction1(withTrailingTrivia))
     __obj.asInstanceOf[ISyntaxToken]
   }
+  
+  extension [Self <: ISyntaxToken](x: Self) {
+    
+    inline def setHasLeadingComment(value: CallbackTo[Boolean]): Self = StObject.set(x, "hasLeadingComment", value.toJsFn)
+    
+    inline def setHasLeadingNewLine(value: CallbackTo[Boolean]): Self = StObject.set(x, "hasLeadingNewLine", value.toJsFn)
+    
+    inline def setHasLeadingSkippedText(value: CallbackTo[Boolean]): Self = StObject.set(x, "hasLeadingSkippedText", value.toJsFn)
+    
+    inline def setHasLeadingTrivia(value: CallbackTo[Boolean]): Self = StObject.set(x, "hasLeadingTrivia", value.toJsFn)
+    
+    inline def setHasSkippedToken(value: CallbackTo[Boolean]): Self = StObject.set(x, "hasSkippedToken", value.toJsFn)
+    
+    inline def setHasTrailingComment(value: CallbackTo[Boolean]): Self = StObject.set(x, "hasTrailingComment", value.toJsFn)
+    
+    inline def setHasTrailingNewLine(value: CallbackTo[Boolean]): Self = StObject.set(x, "hasTrailingNewLine", value.toJsFn)
+    
+    inline def setHasTrailingSkippedText(value: CallbackTo[Boolean]): Self = StObject.set(x, "hasTrailingSkippedText", value.toJsFn)
+    
+    inline def setHasTrailingTrivia(value: CallbackTo[Boolean]): Self = StObject.set(x, "hasTrailingTrivia", value.toJsFn)
+    
+    inline def setText(value: CallbackTo[String]): Self = StObject.set(x, "text", value.toJsFn)
+    
+    inline def setTokenKind(value: SyntaxKind): Self = StObject.set(x, "tokenKind", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: CallbackTo[Any]): Self = StObject.set(x, "value", value.toJsFn)
+    
+    inline def setValueText(value: CallbackTo[String]): Self = StObject.set(x, "valueText", value.toJsFn)
+  }
 }
-

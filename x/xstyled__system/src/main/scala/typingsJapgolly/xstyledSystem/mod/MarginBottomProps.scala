@@ -1,25 +1,35 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.MarginBottomProperty
+import typingsJapgolly.csstype.mod.Property.MarginBottom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarginBottomProps[TLength] extends js.Object {
-  val marginBottom: js.UndefOr[ResponsiveValue[MarginBottomProperty[TLength]]] = js.undefined
-  val mb: js.UndefOr[ResponsiveValue[MarginBottomProperty[TLength]]] = js.undefined
+trait MarginBottomProps[TLength] extends StObject {
+  
+  val marginBottom: js.UndefOr[ResponsiveValue[MarginBottom[TLength]]] = js.undefined
+  
+  val mb: js.UndefOr[ResponsiveValue[MarginBottom[TLength]]] = js.undefined
 }
-
 object MarginBottomProps {
-  @scala.inline
-  def apply[TLength](
-    marginBottom: ResponsiveValue[MarginBottomProperty[TLength]] = null,
-    mb: ResponsiveValue[MarginBottomProperty[TLength]] = null
-  ): MarginBottomProps[TLength] = {
+  
+  inline def apply[TLength](): MarginBottomProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginBottomProps[TLength]]
   }
+  
+  extension [Self <: MarginBottomProps[?], TLength](x: Self & MarginBottomProps[TLength]) {
+    
+    inline def setMarginBottom(value: ResponsiveValue[MarginBottom[TLength]]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+    
+    inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+    
+    inline def setMarginBottomVarargs(value: MarginBottom[TLength]*): Self = StObject.set(x, "marginBottom", js.Array(value*))
+    
+    inline def setMb(value: ResponsiveValue[MarginBottom[TLength]]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+    
+    inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
+    
+    inline def setMbVarargs(value: MarginBottom[TLength]*): Self = StObject.set(x, "mb", js.Array(value*))
+  }
 }
-

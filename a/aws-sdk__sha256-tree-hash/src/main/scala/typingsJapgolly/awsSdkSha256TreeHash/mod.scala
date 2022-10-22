@@ -1,39 +1,45 @@
 package typingsJapgolly.awsSdkSha256TreeHash
 
-import typingsJapgolly.awsSdkTypes.cryptoMod.Hash
-import typingsJapgolly.awsSdkTypes.cryptoMod.HashConstructor
-import typingsJapgolly.awsSdkTypes.utilMod.Decoder
+import typingsJapgolly.awsSdkTypes.distTypesCryptoMod.Hash
+import typingsJapgolly.awsSdkTypes.distTypesCryptoMod.HashConstructor
+import typingsJapgolly.awsSdkTypes.distTypesUtilMod.Decoder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/sha256-tree-hash", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@aws-sdk/sha256-tree-hash", "TreeHash")
   @js.native
-  class TreeHash protected () extends Hash {
+  open class TreeHash protected ()
+    extends StObject
+       with Hash {
     /**
       * Initializes a TreeHash.
       * @param Sha256 A Sha256 hash constructor.
       */
     def this(Sha256: HashConstructor, fromUtf8: Decoder) = this()
-    val Sha256: js.Any = js.native
-    var buffer: js.UndefOr[js.Any] = js.native
-    var collectedHashDigests: js.Any = js.native
+    
+    /* private */ val Sha256: Any = js.native
+    
+    /* private */ var buffer: Any = js.native
+    
+    /* private */ var collectedHashDigests: Any = js.native
+    
     /**
       * Converts source data into a Uint8Array.
       * @param data Data to convert to a Uint8Array.
       */
-    var convertToBuffer: js.Any = js.native
-    val fromUtf8: js.Any = js.native
+    /* private */ var convertToBuffer: Any = js.native
+    
+    /* private */ val fromUtf8: Any = js.native
+    
     /**
       * Generates Sha256 hashes from 1 MiB chunks of the
       * internal buffer.
       * Will set the internal buffer to any bytes remaining
       * that is less than 1 MiB.
       */
-    var hashBuffer: js.Any = js.native
+    /* private */ var hashBuffer: Any = js.native
   }
-  
 }
-

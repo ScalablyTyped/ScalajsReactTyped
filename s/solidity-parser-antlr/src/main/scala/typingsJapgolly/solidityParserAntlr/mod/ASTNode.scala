@@ -1,27 +1,13 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
 import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.`private`
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.constant
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.days
 import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.default
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ether
 import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.external
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.finney
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.hours
 import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.internal
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.minutes
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.payable
 import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.public
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.pure
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.seconds
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.szabo
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.view
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.weeks
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.wei
-import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.years
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.solidityParserAntlr.mod.SourceUnit
@@ -79,879 +65,399 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.solidityParserAntlr.mod.AssemblyItem
   - typingsJapgolly.solidityParserAntlr.mod.Expression
 */
-trait ASTNode extends js.Object
-
+trait ASTNode extends StObject
 object ASTNode {
-  @scala.inline
-  def WhileStatement(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.WhileStatement,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
+  
+  inline def ArrayTypeName(baseTypeName: TypeName): typingsJapgolly.solidityParserAntlr.mod.ArrayTypeName = {
+    val __obj = js.Dynamic.literal(baseTypeName = baseTypeName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArrayTypeName")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.ArrayTypeName]
+  }
+  
+  inline def AssemblyAssignment(expression: AssemblyExpression, names: js.Array[Identifier]): typingsJapgolly.solidityParserAntlr.mod.AssemblyAssignment = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssemblyAssignment")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblyAssignment]
+  }
+  
+  inline def AssemblyBlock(operations: js.Array[AssemblyItem]): typingsJapgolly.solidityParserAntlr.mod.AssemblyBlock = {
+    val __obj = js.Dynamic.literal(operations = operations.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssemblyBlock")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblyBlock]
+  }
+  
+  inline def AssemblyCall(arguments: js.Array[AssemblyExpression], functionName: String): typingsJapgolly.solidityParserAntlr.mod.AssemblyCall = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssemblyCall")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblyCall]
+  }
+  
+  inline def AssemblyCase(): typingsJapgolly.solidityParserAntlr.mod.AssemblyCase = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("AssemblyCase")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblyCase]
   }
-  @scala.inline
-  def InlineAssemblyStatement(
-    body: AssemblyBlock,
-    language: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.InlineAssemblyStatement,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+  
+  inline def AssemblyFor(): typingsJapgolly.solidityParserAntlr.mod.AssemblyFor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("AssemblyFor")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblyFor]
   }
-  @scala.inline
-  def VariableDeclarationStatement(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement,
-    variables: js.Array[ASTNode],
-    initialValue: Expression = null,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+  
+  inline def AssemblyFunctionDefinition(): typingsJapgolly.solidityParserAntlr.mod.AssemblyFunctionDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("AssemblyFunctionDefinition")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblyFunctionDefinition]
   }
-  @scala.inline
-  def DecimalNumber(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.DecimalNumber,
-    value: String,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
+  
+  inline def AssemblyFunctionReturns(): typingsJapgolly.solidityParserAntlr.mod.AssemblyFunctionReturns = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("AssemblyFunctionReturns")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblyFunctionReturns]
+  }
+  
+  inline def AssemblyIf(): typingsJapgolly.solidityParserAntlr.mod.AssemblyIf = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("AssemblyIf")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblyIf]
+  }
+  
+  inline def AssemblyLiteral(): typingsJapgolly.solidityParserAntlr.mod.AssemblyLiteral = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("AssemblyLiteral")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblyLiteral]
+  }
+  
+  inline def AssemblyLocalDefinition(): typingsJapgolly.solidityParserAntlr.mod.AssemblyLocalDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("AssemblyLocalDefinition")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblyLocalDefinition]
+  }
+  
+  inline def AssemblyStackAssignment(): typingsJapgolly.solidityParserAntlr.mod.AssemblyStackAssignment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("AssemblyStackAssignment")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblyStackAssignment]
+  }
+  
+  inline def AssemblySwitch(): typingsJapgolly.solidityParserAntlr.mod.AssemblySwitch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("AssemblySwitch")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.AssemblySwitch]
+  }
+  
+  inline def BinaryOperation(left: Expression, operator: BinOp, right: Expression): typingsJapgolly.solidityParserAntlr.mod.BinaryOperation = {
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BinaryOperation")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.BinaryOperation]
+  }
+  
+  inline def Block(statements: js.Array[Statement]): typingsJapgolly.solidityParserAntlr.mod.Block = {
+    val __obj = js.Dynamic.literal(statements = statements.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Block")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.Block]
+  }
+  
+  inline def BooleanLiteral(value: Boolean): typingsJapgolly.solidityParserAntlr.mod.BooleanLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("BooleanLiteral")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.BooleanLiteral]
   }
-  @scala.inline
-  def ElementaryTypeName(
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeName,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def ModifierInvocation(
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ModifierInvocation,
-    arguments: js.Array[Expression] = null,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def SourceUnit(
-    children: js.Array[ASTNode],
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.SourceUnit,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def EmitStatement(
-    eventCall: FunctionCall,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EmitStatement,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(eventCall = eventCall.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def StateVariableDeclaration(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.StateVariableDeclaration,
-    variables: js.Array[VariableDeclaration],
-    initialValue: Expression = null,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def Continue(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.Continue,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
+  
+  inline def Break(): typingsJapgolly.solidityParserAntlr.mod.Break = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("Break")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.Break]
   }
-  @scala.inline
-  def ContractDefinition(
+  
+  inline def BreakStatement(): typingsJapgolly.solidityParserAntlr.mod.BreakStatement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("BreakStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.BreakStatement]
+  }
+  
+  inline def Conditional(falseExpression: ASTNode, trueExpression: ASTNode): typingsJapgolly.solidityParserAntlr.mod.Conditional = {
+    val __obj = js.Dynamic.literal(falseExpression = falseExpression.asInstanceOf[js.Any], trueExpression = trueExpression.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Conditional")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.Conditional]
+  }
+  
+  inline def Continue(): typingsJapgolly.solidityParserAntlr.mod.Continue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("Continue")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.Continue]
+  }
+  
+  inline def ContinueStatement(): typingsJapgolly.solidityParserAntlr.mod.ContinueStatement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("ContinueStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.ContinueStatement]
+  }
+  
+  inline def ContractDefinition(
     baseContracts: js.Array[InheritanceSpecifier],
     kind: String,
     name: String,
-    subNodes: js.Array[ASTNode],
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ContractDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
+    subNodes: js.Array[ASTNode]
+  ): typingsJapgolly.solidityParserAntlr.mod.ContractDefinition = {
     val __obj = js.Dynamic.literal(baseContracts = baseContracts.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], subNodes = subNodes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("ContractDefinition")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.ContractDefinition]
   }
-  @scala.inline
-  def IndexAccess(
-    base: Expression,
-    index: Expression,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def AssemblyIf(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyIf,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def AssemblyCase(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCase,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def Break(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.Break,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def FunctionTypeName(
-    parameterTypes: js.Array[TypeName],
-    returnTypes: js.Array[TypeName],
-    stateMutability: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.FunctionTypeName,
-    visibility: String,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(parameterTypes = parameterTypes.asInstanceOf[js.Any], returnTypes = returnTypes.asInstanceOf[js.Any], stateMutability = stateMutability.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def BinaryOperation(
-    left: Expression,
-    operator: BinOp,
-    right: Expression,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.BinaryOperation,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def Block(
-    statements: js.Array[Statement],
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.Block,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(statements = statements.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def ReturnStatement(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ReturnStatement,
-    expression: Expression = null,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def AssemblyStackAssignment(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyStackAssignment,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def BreakStatement(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.BreakStatement,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def LabelDefinition(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.LabelDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def AssemblyCall(
-    arguments: js.Array[AssemblyExpression],
-    functionName: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCall,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def UsingForDeclaration(
-    libraryName: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.UsingForDeclaration,
-    typeName: TypeName,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(libraryName = libraryName.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def HexNumber(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.HexNumber,
-    value: String,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
+  
+  inline def DecimalNumber(value: String): typingsJapgolly.solidityParserAntlr.mod.DecimalNumber = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("DecimalNumber")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.DecimalNumber]
   }
-  @scala.inline
-  def ArrayTypeName(
-    baseTypeName: TypeName,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ArrayTypeName,
-    length: Expression = null,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(baseTypeName = baseTypeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def AssemblyBlock(
-    operations: js.Array[AssemblyItem],
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(operations = operations.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def StructDefinition(
-    members: js.Array[VariableDeclaration],
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.StructDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def EnumDefinition(
-    members: js.Array[EnumValue],
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EnumDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def InheritanceSpecifier(
-    arguments: js.Array[Expression],
-    baseName: UserDefinedTypeName,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.InheritanceSpecifier,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], baseName = baseName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def AssemblyFor(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFor,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def ThrowStatement(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ThrowStatement,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def AssemblySwitch(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblySwitch,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def VariableDeclaration(
-    isIndexed: Boolean,
-    isStateVar: Boolean,
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclaration,
-    typeName: TypeName,
-    expression: Expression = null,
-    isDeclaredConst: js.UndefOr[Boolean] = js.undefined,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null,
-    storageLocation: String = null,
-    visibility: public | `private` | internal | default = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(isIndexed = isIndexed.asInstanceOf[js.Any], isStateVar = isStateVar.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDeclaredConst)) __obj.updateDynamic("isDeclaredConst")(isDeclaredConst.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (storageLocation != null) __obj.updateDynamic("storageLocation")(storageLocation.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def ModifierDefinition(
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ModifierDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def DoWhileStatement(
-    body: Statement,
-    condition: Expression,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.DoWhileStatement,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
+  
+  inline def DoWhileStatement(body: Statement, condition: Expression): typingsJapgolly.solidityParserAntlr.mod.DoWhileStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("DoWhileStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.DoWhileStatement]
   }
-  @scala.inline
-  def ForStatement(
-    body: Statement,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ForStatement,
-    conditionExpression: Expression = null,
-    initExpression: SimpleStatement = null,
-    loc: Location = null,
-    loopExpression: ExpressionStatement = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (conditionExpression != null) __obj.updateDynamic("conditionExpression")(conditionExpression.asInstanceOf[js.Any])
-    if (initExpression != null) __obj.updateDynamic("initExpression")(initExpression.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (loopExpression != null) __obj.updateDynamic("loopExpression")(loopExpression.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+  
+  inline def ElementaryTypeName(name: String): typingsJapgolly.solidityParserAntlr.mod.ElementaryTypeName = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ElementaryTypeName")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.ElementaryTypeName]
   }
-  @scala.inline
-  def AssemblyLocalDefinition(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLocalDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def NumberLiteral(
-    number: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null,
-    subdenomination: wei | szabo | finney | ether | seconds | minutes | hours | days | weeks | years = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (subdenomination != null) __obj.updateDynamic("subdenomination")(subdenomination.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def AssemblyLiteral(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def HexLiteral(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral,
-    value: String,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def StringLiteral(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.StringLiteral,
-    value: String,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def PragmaDirective(
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.PragmaDirective,
-    value: String,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def ElementaryTypeNameExpression(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression,
-    typeName: ElementaryTypeName,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
+  
+  inline def ElementaryTypeNameExpression(typeName: ElementaryTypeName): typingsJapgolly.solidityParserAntlr.mod.ElementaryTypeNameExpression = {
     val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("ElementaryTypeNameExpression")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.ElementaryTypeNameExpression]
   }
-  @scala.inline
-  def ExpressionStatement(
-    expression: Expression,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ExpressionStatement,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
+  
+  inline def EmitStatement(eventCall: FunctionCall): typingsJapgolly.solidityParserAntlr.mod.EmitStatement = {
+    val __obj = js.Dynamic.literal(eventCall = eventCall.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EmitStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.EmitStatement]
+  }
+  
+  inline def EnumDefinition(members: js.Array[EnumValue], name: String): typingsJapgolly.solidityParserAntlr.mod.EnumDefinition = {
+    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EnumDefinition")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.EnumDefinition]
+  }
+  
+  inline def EnumValue(name: String): typingsJapgolly.solidityParserAntlr.mod.EnumValue = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EnumValue")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.EnumValue]
+  }
+  
+  inline def EventDefinition(name: String, parameters: js.Array[VariableDeclaration]): typingsJapgolly.solidityParserAntlr.mod.EventDefinition = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EventDefinition")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.EventDefinition]
+  }
+  
+  inline def ExpressionStatement(expression: Expression): typingsJapgolly.solidityParserAntlr.mod.ExpressionStatement = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("ExpressionStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.ExpressionStatement]
   }
-  @scala.inline
-  def FunctionDefinition(
+  
+  inline def ForStatement(body: Statement): typingsJapgolly.solidityParserAntlr.mod.ForStatement = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ForStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.ForStatement]
+  }
+  
+  inline def FunctionCall(arguments: js.Array[Expression], expression: Expression, names: js.Array[String]): typingsJapgolly.solidityParserAntlr.mod.FunctionCall = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FunctionCall")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.FunctionCall]
+  }
+  
+  inline def FunctionDefinition(
     isConstructor: Boolean,
     modifiers: js.Array[ModifierInvocation],
     parameters: js.Array[VariableDeclaration],
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.FunctionDefinition,
-    visibility: default | external | internal | public | `private`,
-    body: Block = null,
-    loc: Location = null,
-    name: String = null,
-    range: js.Tuple2[Double, Double] = null,
-    returnParameters: js.Array[VariableDeclaration] = null,
-    stateMutability: pure | constant | payable | view = null
-  ): ASTNode = {
+    visibility: default | external | internal | public | `private`
+  ): typingsJapgolly.solidityParserAntlr.mod.FunctionDefinition = {
     val __obj = js.Dynamic.literal(isConstructor = isConstructor.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (returnParameters != null) __obj.updateDynamic("returnParameters")(returnParameters.asInstanceOf[js.Any])
-    if (stateMutability != null) __obj.updateDynamic("stateMutability")(stateMutability.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("FunctionDefinition")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.FunctionDefinition]
   }
-  @scala.inline
-  def SubAssembly(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.SubAssembly,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+  
+  inline def FunctionTypeName(
+    parameterTypes: js.Array[TypeName],
+    returnTypes: js.Array[TypeName],
+    stateMutability: String,
+    visibility: String
+  ): typingsJapgolly.solidityParserAntlr.mod.FunctionTypeName = {
+    val __obj = js.Dynamic.literal(parameterTypes = parameterTypes.asInstanceOf[js.Any], returnTypes = returnTypes.asInstanceOf[js.Any], stateMutability = stateMutability.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FunctionTypeName")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.FunctionTypeName]
   }
-  @scala.inline
-  def Mapping(
-    keyType: ElementaryTypeName,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.Mapping,
-    valueType: TypeName,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(keyType = keyType.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def BooleanLiteral(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.BooleanLiteral,
-    value: Boolean,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
+  
+  inline def HexLiteral(value: String): typingsJapgolly.solidityParserAntlr.mod.HexLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("HexLiteral")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.HexLiteral]
   }
-  @scala.inline
-  def ImportDirective(
-    path: String,
-    symbolAliases: js.Array[js.Tuple2[String, String]],
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ImportDirective,
-    unitAlias: String,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], symbolAliases = symbolAliases.asInstanceOf[js.Any], unitAlias = unitAlias.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+  
+  inline def HexNumber(value: String): typingsJapgolly.solidityParserAntlr.mod.HexNumber = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("HexNumber")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.HexNumber]
   }
-  @scala.inline
-  def MemberAccess(
-    expression: Expression,
-    memberName: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.MemberAccess,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], memberName = memberName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+  
+  inline def Identifier(name: String): typingsJapgolly.solidityParserAntlr.mod.Identifier = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Identifier")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.Identifier]
   }
-  @scala.inline
-  def AssemblyFunctionReturns(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionReturns,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def ContinueStatement(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ContinueStatement,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def UserDefinedTypeName(
-    namePath: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.UserDefinedTypeName,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(namePath = namePath.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
-  }
-  @scala.inline
-  def IfStatement(
-    condition: Expression,
-    trueBody: Statement,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.IfStatement,
-    falseBody: Statement = null,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
+  
+  inline def IfStatement(condition: Expression, trueBody: Statement): typingsJapgolly.solidityParserAntlr.mod.IfStatement = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], trueBody = trueBody.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (falseBody != null) __obj.updateDynamic("falseBody")(falseBody.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("IfStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.IfStatement]
   }
-  @scala.inline
-  def AssemblyFunctionDefinition(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
+  
+  inline def ImportDirective(path: String, symbolAliases: js.Array[js.Tuple2[String, String]], unitAlias: String): typingsJapgolly.solidityParserAntlr.mod.ImportDirective = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], symbolAliases = symbolAliases.asInstanceOf[js.Any], unitAlias = unitAlias.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ImportDirective")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.ImportDirective]
+  }
+  
+  inline def IndexAccess(base: Expression, index: Expression): typingsJapgolly.solidityParserAntlr.mod.IndexAccess = {
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IndexAccess")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.IndexAccess]
+  }
+  
+  inline def InheritanceSpecifier(arguments: js.Array[Expression], baseName: UserDefinedTypeName): typingsJapgolly.solidityParserAntlr.mod.InheritanceSpecifier = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], baseName = baseName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("InheritanceSpecifier")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.InheritanceSpecifier]
+  }
+  
+  inline def InlineAssemblyStatement(body: AssemblyBlock, language: String): typingsJapgolly.solidityParserAntlr.mod.InlineAssemblyStatement = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("InlineAssemblyStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.InlineAssemblyStatement]
+  }
+  
+  inline def LabelDefinition(): typingsJapgolly.solidityParserAntlr.mod.LabelDefinition = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("LabelDefinition")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.LabelDefinition]
   }
-  @scala.inline
-  def Conditional(
-    falseExpression: ASTNode,
-    trueExpression: ASTNode,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.Conditional,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(falseExpression = falseExpression.asInstanceOf[js.Any], trueExpression = trueExpression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+  
+  inline def Mapping(keyType: ElementaryTypeName, valueType: TypeName): typingsJapgolly.solidityParserAntlr.mod.Mapping = {
+    val __obj = js.Dynamic.literal(keyType = keyType.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Mapping")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.Mapping]
   }
-  @scala.inline
-  def EnumValue(
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EnumValue,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
+  
+  inline def MemberAccess(expression: Expression, memberName: String): typingsJapgolly.solidityParserAntlr.mod.MemberAccess = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], memberName = memberName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MemberAccess")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.MemberAccess]
+  }
+  
+  inline def ModifierDefinition(name: String): typingsJapgolly.solidityParserAntlr.mod.ModifierDefinition = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("ModifierDefinition")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.ModifierDefinition]
   }
-  @scala.inline
-  def FunctionCall(
-    arguments: js.Array[Expression],
-    expression: Expression,
-    names: js.Array[String],
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.FunctionCall,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+  
+  inline def ModifierInvocation(name: String): typingsJapgolly.solidityParserAntlr.mod.ModifierInvocation = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], arguments = null)
+    __obj.updateDynamic("type")("ModifierInvocation")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.ModifierInvocation]
   }
-  @scala.inline
-  def Identifier(
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.Identifier,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+  
+  inline def NumberLiteral(number: String): typingsJapgolly.solidityParserAntlr.mod.NumberLiteral = {
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], subdenomination = null)
+    __obj.updateDynamic("type")("NumberLiteral")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.NumberLiteral]
   }
-  @scala.inline
-  def EventDefinition(
-    name: String,
-    parameters: js.Array[VariableDeclaration],
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EventDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+  
+  inline def PragmaDirective(name: String, value: String): typingsJapgolly.solidityParserAntlr.mod.PragmaDirective = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("PragmaDirective")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.PragmaDirective]
   }
-  @scala.inline
-  def AssemblyAssignment(
-    expression: AssemblyExpression,
-    names: js.Array[Identifier],
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyAssignment,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+  
+  inline def ReturnStatement(): typingsJapgolly.solidityParserAntlr.mod.ReturnStatement = {
+    val __obj = js.Dynamic.literal(expression = null)
+    __obj.updateDynamic("type")("ReturnStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.ReturnStatement]
   }
-  @scala.inline
-  def TupleExpression(
-    components: js.Array[Expression],
-    isArray: Boolean,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ASTNode = {
+  
+  inline def SourceUnit(children: js.Array[ASTNode]): typingsJapgolly.solidityParserAntlr.mod.SourceUnit = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SourceUnit")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.SourceUnit]
+  }
+  
+  inline def StateVariableDeclaration(variables: js.Array[VariableDeclaration]): typingsJapgolly.solidityParserAntlr.mod.StateVariableDeclaration = {
+    val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StateVariableDeclaration")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.StateVariableDeclaration]
+  }
+  
+  inline def StringLiteral(value: String): typingsJapgolly.solidityParserAntlr.mod.StringLiteral = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StringLiteral")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.StringLiteral]
+  }
+  
+  inline def StructDefinition(members: js.Array[VariableDeclaration], name: String): typingsJapgolly.solidityParserAntlr.mod.StructDefinition = {
+    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StructDefinition")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.StructDefinition]
+  }
+  
+  inline def SubAssembly(): typingsJapgolly.solidityParserAntlr.mod.SubAssembly = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("SubAssembly")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.SubAssembly]
+  }
+  
+  inline def ThrowStatement(): typingsJapgolly.solidityParserAntlr.mod.ThrowStatement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("ThrowStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.ThrowStatement]
+  }
+  
+  inline def TupleExpression(components: js.Array[Expression], isArray: Boolean): typingsJapgolly.solidityParserAntlr.mod.TupleExpression = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], isArray = isArray.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ASTNode]
+    __obj.updateDynamic("type")("TupleExpression")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.TupleExpression]
+  }
+  
+  inline def UserDefinedTypeName(namePath: String): typingsJapgolly.solidityParserAntlr.mod.UserDefinedTypeName = {
+    val __obj = js.Dynamic.literal(namePath = namePath.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UserDefinedTypeName")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.UserDefinedTypeName]
+  }
+  
+  inline def UsingForDeclaration(libraryName: String, typeName: TypeName): typingsJapgolly.solidityParserAntlr.mod.UsingForDeclaration = {
+    val __obj = js.Dynamic.literal(libraryName = libraryName.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UsingForDeclaration")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.UsingForDeclaration]
+  }
+  
+  inline def VariableDeclaration(isIndexed: Boolean, isStateVar: Boolean, name: String, typeName: TypeName): typingsJapgolly.solidityParserAntlr.mod.VariableDeclaration = {
+    val __obj = js.Dynamic.literal(isIndexed = isIndexed.asInstanceOf[js.Any], isStateVar = isStateVar.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], typeName = typeName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VariableDeclaration")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.VariableDeclaration]
+  }
+  
+  inline def VariableDeclarationStatement(variables: js.Array[ASTNode]): typingsJapgolly.solidityParserAntlr.mod.VariableDeclarationStatement = {
+    val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VariableDeclarationStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.VariableDeclarationStatement]
+  }
+  
+  inline def WhileStatement(): typingsJapgolly.solidityParserAntlr.mod.WhileStatement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("WhileStatement")
+    __obj.asInstanceOf[typingsJapgolly.solidityParserAntlr.mod.WhileStatement]
   }
 }
-

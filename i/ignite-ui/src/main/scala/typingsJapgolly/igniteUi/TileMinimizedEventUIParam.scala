@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TileMinimizedEventUIParam extends js.Object {
+trait TileMinimizedEventUIParam extends StObject {
+  
   /**
-  	 * Used to get a reference to the tile manager the minimized tile belongs to.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Used to get a reference to the tile manager the minimized tile belongs to.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to get the jQuery element of the minimized tile
-  	 */
-  var tile: js.UndefOr[js.Any] = js.undefined
+    * Used to get the jQuery element of the minimized tile
+    */
+  var tile: js.UndefOr[Any] = js.undefined
 }
-
 object TileMinimizedEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null, tile: js.Any = null): TileMinimizedEventUIParam = {
+  
+  inline def apply(): TileMinimizedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (tile != null) __obj.updateDynamic("tile")(tile.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileMinimizedEventUIParam]
   }
+  
+  extension [Self <: TileMinimizedEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setTile(value: Any): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+    
+    inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
+  }
 }
-

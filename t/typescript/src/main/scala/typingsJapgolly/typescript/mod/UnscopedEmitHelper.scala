@@ -1,23 +1,32 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.typescriptBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UnscopedEmitHelper extends EmitHelper {
+trait UnscopedEmitHelper
+  extends StObject
+     with EmitHelperBase
+     with EmitHelper {
+  
   @JSName("scoped")
   val scoped_UnscopedEmitHelper: `false`
+  
   @JSName("text")
   val text_UnscopedEmitHelper: java.lang.String
 }
-
 object UnscopedEmitHelper {
-  @scala.inline
-  def apply(name: java.lang.String, scoped: `false`, text: java.lang.String, priority: Int | Double = null): UnscopedEmitHelper = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scoped = scoped.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+  
+  inline def apply(name: java.lang.String, text: java.lang.String): UnscopedEmitHelper = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scoped = false, text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnscopedEmitHelper]
   }
+  
+  extension [Self <: UnscopedEmitHelper](x: Self) {
+    
+    inline def setScoped(value: `false`): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+  }
 }
-

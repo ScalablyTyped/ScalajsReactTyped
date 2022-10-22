@@ -1,7 +1,7 @@
 
 # Scala.js typings for auto-bind
 
-Typings are for version 2.1.1
+Typings are for version 5.0.1
 
 ## Library description:
 Automatically bind methods to their class instance
@@ -10,10 +10,10 @@ Automatically bind methods to their class instance
 | ------------------ | :-------------: |
 | Full name          | auto-bind |
 | Keywords           | auto, bind, class, methods, method, automatically, prototype, instance, function, this, self, react, component |
-| # releases         | 8 |
-| # dependents       | 115 |
-| # downloads        | 15653456 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 7838611.333333333 |
+| # stars            | 436.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/auto-bind#readme)

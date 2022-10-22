@@ -1,26 +1,17 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.facade.React.ElementType
 import typingsJapgolly.materialUiCore.listItemTextListItemTextMod.ListItemTextProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/ListItemText", JSImport.Namespace)
-@js.native
-object listItemTextMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[ListItemTextProps, ComponentState, js.Any] {
-    def this(props: ListItemTextProps) = this()
-    def this(props: ListItemTextProps, context: js.Any) = this()
-  }
+object listItemTextMod {
   
+  @JSImport("@material-ui/core/ListItemText", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[ListItemTextProps]]
+  val ^ : js.Any = js.native
   
+  inline def default[PrimaryTypographyComponent /* <: ElementType */, SecondaryTypographyComponent /* <: ElementType */](props: ListItemTextProps[PrimaryTypographyComponent, SecondaryTypographyComponent]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

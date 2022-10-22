@@ -10,15 +10,15 @@ Checks whether a value is an object
 | ------------------ | :-------------: |
 | Full name          | is-object |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 140 |
-| # downloads        | 110511892 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7895552E7 |
+| # stars            | 19.0 |
 
 ## Links
-- [Homepage](https://github.com/ljharb/is-object)
-- [Bugs](https://github.com/ljharb/is-object/issues)
-- [Repository](https://github.com/ljharb/is-object)
+- [Homepage](https://github.com/inspect-js/is-object)
+- [Bugs](https://github.com/inspect-js/is-object/issues)
+- [Repository](https://github.com/inspect-js/is-object)
 - [Npm](https://www.npmjs.com/package/is-object)
     
 

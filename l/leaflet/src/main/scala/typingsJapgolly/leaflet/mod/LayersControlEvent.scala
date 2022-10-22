@@ -1,26 +1,33 @@
 package typingsJapgolly.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LayersControlEvent extends LayerEvent {
+trait LayersControlEvent
+  extends StObject
+     with LayerEvent {
+  
   var name: String
 }
-
 object LayersControlEvent {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     layer: Layer,
     name: String,
-    propagatedFrom: js.Any,
-    sourceTarget: js.Any,
-    target: js.Any,
+    popup: Any,
+    propagatedFrom: Any,
+    sourceTarget: Any,
+    target: Any,
     `type`: String
   ): LayersControlEvent = {
-    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayersControlEvent]
   }
+  
+  extension [Self <: LayersControlEvent](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

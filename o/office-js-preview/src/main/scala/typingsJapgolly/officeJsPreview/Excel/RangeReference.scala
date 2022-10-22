@@ -1,31 +1,34 @@
 package typingsJapgolly.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a string reference of the form "SheetName!A1:B5", or a global or local named range.
   *
-  * Represents a string reference of the form SheetName!A1:B5, or a global or local named range.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
-trait RangeReference extends js.Object {
+trait RangeReference extends StObject {
+  
   /**
+    * The address of the range, for example "SheetName!A1:B5".
     *
-    * Gets or sets the address of the range; for example 'SheetName!A1:B5'.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var address: String
 }
-
 object RangeReference {
-  @scala.inline
-  def apply(address: String): RangeReference = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
   
+  inline def apply(address: String): RangeReference = {
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeReference]
   }
+  
+  extension [Self <: RangeReference](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+  }
 }
-

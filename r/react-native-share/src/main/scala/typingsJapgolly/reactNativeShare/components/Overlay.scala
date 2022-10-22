@@ -1,40 +1,22 @@
 package typingsJapgolly.reactNativeShare.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent.Default
 import typingsJapgolly.reactNativeShare.overlayMod.OverlayProps
-import typingsJapgolly.reactNativeShare.overlayMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Overlay {
-  def apply(
-    visible: Boolean,
-    onCancel: Callback,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[OverlayProps, default, Unit, OverlayProps] = {
-    val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onCancel")(onCancel.toJsFn)
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeShare.overlayMod.OverlayProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeShare.overlayMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeShare.overlayMod.OverlayProps])(children: _*)
+  inline def apply(onCancel: Callback, visible: Boolean): Default[typingsJapgolly.reactNativeShare.mod.Overlay] = {
+    val __props = js.Dynamic.literal(onCancel = onCancel.toJsFn, visible = visible.asInstanceOf[js.Any])
+    new Default[typingsJapgolly.reactNativeShare.mod.Overlay](js.Array(this.component, __props.asInstanceOf[OverlayProps]))
   }
-  @JSImport("react-native-share/Overlay", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("react-native-share", "Overlay")
+  @js.native
+  val component: js.Object = js.native
+  
+  def withProps(p: OverlayProps): Default[typingsJapgolly.reactNativeShare.mod.Overlay] = new Default[typingsJapgolly.reactNativeShare.mod.Overlay](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

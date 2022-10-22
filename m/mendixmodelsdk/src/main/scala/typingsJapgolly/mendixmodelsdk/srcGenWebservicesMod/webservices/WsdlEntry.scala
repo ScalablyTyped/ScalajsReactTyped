@@ -1,0 +1,74 @@
+package typingsJapgolly.mendixmodelsdk.srcGenWebservicesMod.webservices
+
+import typingsJapgolly.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typingsJapgolly.mendixmodelsdk.srcGenWebservicesMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.Element
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("mendixmodelsdk/src/gen/webservices", "webservices.WsdlEntry")
+@js.native
+open class WsdlEntry protected () extends Element[IModel] {
+  def this(
+    model: AbstractModel,
+    structureTypeName: String,
+    id: String,
+    isPartial: Boolean,
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
+  ) = this()
+  
+  def containerAsWsdlDescription: WsdlDescription = js.native
+  
+  def contents: String = js.native
+  def contents_=(newValue: String): Unit = js.native
+  
+  def localizedContentsFormat: String = js.native
+  def localizedContentsFormat_=(newValue: String): Unit = js.native
+  
+  def localizedLocationFormat: String = js.native
+  def localizedLocationFormat_=(newValue: String): Unit = js.native
+  
+  def location: String = js.native
+  def location_=(newValue: String): Unit = js.native
+}
+object WsdlEntry {
+  
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.WsdlEntry")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Creates and returns a new WsdlEntry instance in the SDK and on the server.
+    * Expects one argument: the IModel object the instance will "live on".
+    * After creation, assign or add this instance to a property that accepts this kind of objects.
+    */
+  /* static member */
+  inline def create(model: IModel): WsdlEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WsdlEntry]
+  
+  /**
+    * Creates and returns a new WsdlEntry instance in the SDK and on the server.
+    * The new WsdlEntry will be automatically stored in the 'wsdlEntries' property
+    * of the parent WsdlDescription element passed as argument.
+    */
+  /* static member */
+  inline def createIn(container: WsdlDescription): WsdlEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WsdlEntry]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.WsdlEntry.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.WsdlEntry.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+}

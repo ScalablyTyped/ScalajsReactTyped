@@ -1,38 +1,30 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RecalculationInterval extends js.Object
-
+sealed trait RecalculationInterval extends StObject
 /**
   * An enumeration representing the possible intervals used in spreadsheet recalculation.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.RecalculationInterval")
 @js.native
-object RecalculationInterval extends js.Object {
-  @js.native
-  sealed trait HOUR extends RecalculationInterval
+object RecalculationInterval extends StObject {
   
   @js.native
-  sealed trait MINUTE extends RecalculationInterval
+  sealed trait HOUR
+    extends StObject
+       with RecalculationInterval
   
   @js.native
-  sealed trait ON_CHANGE extends RecalculationInterval
+  sealed trait MINUTE
+    extends StObject
+       with RecalculationInterval
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RecalculationInterval with Double] = js.native
-  /* 2 */ @js.native
-  object HOUR extends TopLevel[HOUR with Double]
-  
-  /* 1 */ @js.native
-  object MINUTE extends TopLevel[MINUTE with Double]
-  
-  /* 0 */ @js.native
-  object ON_CHANGE extends TopLevel[ON_CHANGE with Double]
-  
+  @js.native
+  sealed trait ON_CHANGE
+    extends StObject
+       with RecalculationInterval
 }
-

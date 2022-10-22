@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.System
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppMemoryUsageLevel extends js.Object
-
+sealed trait AppMemoryUsageLevel extends StObject
 /** An enumeration containing 3 levels of app memory usage: low, medium, and high. */
 @JSGlobal("Windows.System.AppMemoryUsageLevel")
 @js.native
-object AppMemoryUsageLevel extends js.Object {
+object AppMemoryUsageLevel extends StObject {
+  
   /** High app memory usage. */
   @js.native
-  sealed trait high extends AppMemoryUsageLevel
+  sealed trait high
+    extends StObject
+       with AppMemoryUsageLevel
   
   /** Low app memory usage. */
   @js.native
-  sealed trait low extends AppMemoryUsageLevel
+  sealed trait low
+    extends StObject
+       with AppMemoryUsageLevel
   
   /** Medium app memory usage. */
   @js.native
-  sealed trait medium extends AppMemoryUsageLevel
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppMemoryUsageLevel with Double] = js.native
-  /* 2 */ @js.native
-  object high extends TopLevel[high with Double]
-  
-  /* 0 */ @js.native
-  object low extends TopLevel[low with Double]
-  
-  /* 1 */ @js.native
-  object medium extends TopLevel[medium with Double]
-  
+  sealed trait medium
+    extends StObject
+       with AppMemoryUsageLevel
 }
-

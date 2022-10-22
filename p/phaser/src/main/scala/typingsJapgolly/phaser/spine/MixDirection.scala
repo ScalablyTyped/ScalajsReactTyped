@@ -1,29 +1,22 @@
 package typingsJapgolly.phaser.spine
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MixDirection extends js.Object
-
+sealed trait MixDirection extends StObject
 @JSGlobal("spine.MixDirection")
 @js.native
-object MixDirection extends js.Object {
-  @js.native
-  sealed trait mixIn extends MixDirection
+object MixDirection extends StObject {
   
   @js.native
-  sealed trait mixOut extends MixDirection
+  sealed trait mixIn
+    extends StObject
+       with MixDirection
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MixDirection with Double] = js.native
-  /* 0 */ @js.native
-  object mixIn extends TopLevel[mixIn with Double]
-  
-  /* 1 */ @js.native
-  object mixOut extends TopLevel[mixOut with Double]
-  
+  @js.native
+  sealed trait mixOut
+    extends StObject
+       with MixDirection
 }
-

@@ -1,6 +1,7 @@
 
 # Scala.js typings for co-body
 
+Typings are for version 6.1
 
 ## Library description:
 request body parsing for co
@@ -9,10 +10,10 @@ request body parsing for co
 | ------------------ | :-------------: |
 | Full name          | co-body |
 | Keywords           | request, parse, parser, json, co, generators, urlencoded |
-| # releases         | 3 |
-| # dependents       | 236 |
-| # downloads        | 11761632 |
-| # stars            | 17 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3229062.6666666665 |
+| # stars            | 310.0 |
 
 ## Links
 - [Homepage](https://github.com/cojs/co-body#readme)

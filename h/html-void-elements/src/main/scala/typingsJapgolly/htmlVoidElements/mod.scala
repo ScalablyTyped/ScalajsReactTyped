@@ -1,12 +1,12 @@
 package typingsJapgolly.htmlVoidElements
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("html-void-elements", JSImport.Namespace)
-@js.native
-object mod
-  extends TopLevel[js.Array[String]]
-
+object mod {
+  
+  @JSImport("html-void-elements", "htmlVoidElements")
+  @js.native
+  val htmlVoidElements: js.Array[String] = js.native
+}

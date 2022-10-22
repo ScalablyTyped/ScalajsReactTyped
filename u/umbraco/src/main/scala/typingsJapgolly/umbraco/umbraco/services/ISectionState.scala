@@ -1,24 +1,30 @@
 package typingsJapgolly.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Section State
   */
-trait ISectionState extends js.Object {
+trait ISectionState extends StObject {
+  
   //The currently active section
-  var currentSection: js.Any
+  var currentSection: Any
+  
   var showSearchResults: Boolean
 }
-
 object ISectionState {
-  @scala.inline
-  def apply(currentSection: js.Any, showSearchResults: Boolean): ISectionState = {
-    val __obj = js.Dynamic.literal(currentSection = currentSection.asInstanceOf[js.Any], showSearchResults = showSearchResults.asInstanceOf[js.Any])
   
+  inline def apply(currentSection: Any, showSearchResults: Boolean): ISectionState = {
+    val __obj = js.Dynamic.literal(currentSection = currentSection.asInstanceOf[js.Any], showSearchResults = showSearchResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISectionState]
   }
+  
+  extension [Self <: ISectionState](x: Self) {
+    
+    inline def setCurrentSection(value: Any): Self = StObject.set(x, "currentSection", value.asInstanceOf[js.Any])
+    
+    inline def setShowSearchResults(value: Boolean): Self = StObject.set(x, "showSearchResults", value.asInstanceOf[js.Any])
+  }
 }
-

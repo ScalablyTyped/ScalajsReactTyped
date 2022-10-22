@@ -1,7 +1,7 @@
 
 # Scala.js typings for grommet
 
-Typings are for version 2.10.0
+Typings are for version 2.27.0
 
 ## Library description:
 focus on the essential experience
@@ -9,11 +9,11 @@ focus on the essential experience
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | grommet |
-| Keywords           | grommet, grommet.io, grommetux, component, library, design system, framework, react, theming, templates, sticker sheets, design patterns, app templates, atomic design, accessibility, WCAG 2.1, keyboard navigation, screen reader tags, color, type, layout, typography, interaction, ui, user interface, gui, graphical user interface |
-| # releases         | 52 |
-| # dependents       | 57 |
-| # downloads        | 691947 |
-| # stars            | 6 |
+| Keywords           | grommet, grommet.io, grommetux, component, library, design system, framework, react, theme, theming, templates, sticker sheets, design patterns, app templates, atomic design, accessibility, WCAG 2.1, keyboard navigation, screen reader tags, color, type, layout, typography, interaction, ui, user interface, gui, graphical user interface, styled-components |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 121317.33333333333 |
+| # stars            | 8046.0 |
 
 ## Links
 - [Homepage](http://grommet.io)

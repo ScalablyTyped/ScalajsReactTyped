@@ -10,15 +10,15 @@ Is this JS value callable? Works with Functions and GeneratorFunctions, despite 
 | ------------------ | :-------------: |
 | Full name          | is-callable |
 | Keywords           | Function, function, callable, generator, generator function, arrow, arrow function, ES6, toStringTag, @@toStringTag |
-| # releases         | 3 |
-| # dependents       | 60 |
-| # downloads        | 389044504 |
-| # stars            | 1 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1.26894786E8 |
+| # stars            | 35.0 |
 
 ## Links
-- [Homepage](https://github.com/ljharb/is-callable#readme)
-- [Bugs](https://github.com/ljharb/is-callable/issues)
-- [Repository](https://github.com/ljharb/is-callable)
+- [Homepage](https://github.com/inspect-js/is-callable#readme)
+- [Bugs](https://github.com/inspect-js/is-callable/issues)
+- [Repository](https://github.com/inspect-js/is-callable)
 - [Npm](https://www.npmjs.com/package/is-callable)
     
 

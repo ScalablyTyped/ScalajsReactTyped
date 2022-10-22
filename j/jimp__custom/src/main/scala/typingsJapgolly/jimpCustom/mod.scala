@@ -1,22 +1,25 @@
 package typingsJapgolly.jimpCustom
 
-import typingsJapgolly.jimpCore.etcMod.Image
-import typingsJapgolly.jimpCore.jimpMod.Jimp
-import typingsJapgolly.jimpCore.jimpMod.JimpConstructors
-import typingsJapgolly.jimpCore.pluginsMod.JimpPlugin
-import typingsJapgolly.jimpCore.pluginsMod.JimpType
-import typingsJapgolly.jimpCore.utilsMod.FunctionRet
-import typingsJapgolly.jimpCore.utilsMod.GetIntersectionFromPlugins
+import typingsJapgolly.jimpCore.typesEtcMod.Image
+import typingsJapgolly.jimpCore.typesJimpMod.JimpConstructors
+import typingsJapgolly.jimpCore.typesPluginsMod.JimpPlugin
+import typingsJapgolly.jimpCore.typesPluginsMod.JimpType
+import typingsJapgolly.jimpCore.typesUtilsMod.FunctionRet
+import typingsJapgolly.jimpCore.typesUtilsMod.GetIntersectionFromPluginsStatics
+import typingsJapgolly.jimpCustom.anon.Plugins
 import typingsJapgolly.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jimp/custom", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default[TypesFuncArr /* <: js.UndefOr[FunctionRet[JimpType[Image]]] */, PluginFuncArr /* <: js.UndefOr[FunctionRet[JimpPlugin[Image]]] */, J /* <: Jimp */](configuration: AnonPlugins[TypesFuncArr, PluginFuncArr]): JimpInstance[TypesFuncArr, PluginFuncArr, J] = js.native
-  def default[TypesFuncArr /* <: js.UndefOr[FunctionRet[JimpType[Image]]] */, PluginFuncArr /* <: js.UndefOr[FunctionRet[JimpPlugin[Image]]] */, J /* <: Jimp */](configuration: AnonPlugins[TypesFuncArr, PluginFuncArr], jimpInstance: J): JimpInstance[TypesFuncArr, PluginFuncArr, J] = js.native
-  type JimpInstance[TypesFuncArr /* <: js.UndefOr[FunctionRet[JimpType[Image]]] */, PluginFuncArr /* <: js.UndefOr[FunctionRet[JimpPlugin[Image]]] */, J /* <: Jimp */] = (Exclude[J, js.UndefOr[scala.Nothing]]) with (GetIntersectionFromPlugins[Exclude[TypesFuncArr | PluginFuncArr, js.UndefOr[scala.Nothing]]]) with JimpConstructors
+object mod {
+  
+  @JSImport("@jimp/custom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[TypesFuncArr /* <: js.UndefOr[FunctionRet[JimpType[Image]]] */, PluginFuncArr /* <: js.UndefOr[FunctionRet[JimpPlugin[Image]]] */, J /* <: JimpConstructors */](configuration: Plugins[TypesFuncArr, PluginFuncArr]): JimpInstance[TypesFuncArr, PluginFuncArr, J] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(configuration.asInstanceOf[js.Any]).asInstanceOf[JimpInstance[TypesFuncArr, PluginFuncArr, J]]
+  inline def default[TypesFuncArr /* <: js.UndefOr[FunctionRet[JimpType[Image]]] */, PluginFuncArr /* <: js.UndefOr[FunctionRet[JimpPlugin[Image]]] */, J /* <: JimpConstructors */](configuration: Plugins[TypesFuncArr, PluginFuncArr], jimpInstance: J): JimpInstance[TypesFuncArr, PluginFuncArr, J] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(configuration.asInstanceOf[js.Any], jimpInstance.asInstanceOf[js.Any])).asInstanceOf[JimpInstance[TypesFuncArr, PluginFuncArr, J]]
+  
+  type JimpInstance[TypesFuncArr /* <: js.UndefOr[FunctionRet[JimpType[Image]]] */, PluginFuncArr /* <: js.UndefOr[FunctionRet[JimpPlugin[Image]]] */, J /* <: JimpConstructors */] = J & (GetIntersectionFromPluginsStatics[Exclude[TypesFuncArr | PluginFuncArr, Unit]]) & js.Object
 }
-

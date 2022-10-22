@@ -1,19 +1,20 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
-import typingsJapgolly.seleniumWebdriver.loggingMod.Entry
+import typingsJapgolly.seleniumWebdriver.libLoggingMod.Entry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Logs")
 @js.native
-class Logs protected () extends js.Object {
+open class Logs protected () extends StObject {
   // region Constructors
   /**
     * @param {!WebDriver} driver The parent driver.
     * @constructor
     */
   def this(driver: WebDriver) = this()
+  
   // endregion
   // region
   /**
@@ -31,6 +32,7 @@ class Logs protected () extends js.Object {
     *   type.
     */
   def get(`type`: String): js.Promise[js.Array[Entry]] = js.native
+  
   /**
     * Retrieves the log types available to this driver.
     * @return {!Promise.<!Array.<!logging.Type>>} A
@@ -38,4 +40,3 @@ class Logs protected () extends js.Object {
     */
   def getAvailableLogTypes(): js.Promise[js.Array[String]] = js.native
 }
-

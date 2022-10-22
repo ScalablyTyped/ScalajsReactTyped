@@ -2,28 +2,35 @@ package typingsJapgolly.hystrixjs.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CircuitFactory_ extends js.Object {
+trait CircuitFactory_ extends StObject {
+  
   def getCache(): js.Array[CircuitBreaker]
+  
   def getOrCreate(config: CirctuiBreakerConfig): CircuitBreaker
+  
   def resetCache(): Unit
 }
-
 object CircuitFactory_ {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getCache: CallbackTo[js.Array[CircuitBreaker]],
-    getOrCreate: CirctuiBreakerConfig => CallbackTo[CircuitBreaker],
+    getOrCreate: CirctuiBreakerConfig => CircuitBreaker,
     resetCache: Callback
   ): CircuitFactory_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCache")(getCache.toJsFn)
-    __obj.updateDynamic("getOrCreate")(js.Any.fromFunction1((t0: typingsJapgolly.hystrixjs.mod.CirctuiBreakerConfig) => getOrCreate(t0).runNow()))
-    __obj.updateDynamic("resetCache")(resetCache.toJsFn)
+    val __obj = js.Dynamic.literal(getCache = getCache.toJsFn, getOrCreate = js.Any.fromFunction1(getOrCreate), resetCache = resetCache.toJsFn)
     __obj.asInstanceOf[CircuitFactory_]
   }
+  
+  extension [Self <: CircuitFactory_](x: Self) {
+    
+    inline def setGetCache(value: CallbackTo[js.Array[CircuitBreaker]]): Self = StObject.set(x, "getCache", value.toJsFn)
+    
+    inline def setGetOrCreate(value: CirctuiBreakerConfig => CircuitBreaker): Self = StObject.set(x, "getOrCreate", js.Any.fromFunction1(value))
+    
+    inline def setResetCache(value: Callback): Self = StObject.set(x, "resetCache", value.toJsFn)
+  }
 }
-

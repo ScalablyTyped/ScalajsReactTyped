@@ -1,34 +1,26 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`3`
+import typingsJapgolly.activexOffice.activexOfficeInts.`4`
+import typingsJapgolly.activexOffice.activexOfficeInts.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RulerLevels2 extends js.Object {
-  val Application: js.Any = js.native
+trait RulerLevels2 extends StObject {
+  
+  def apply(Index: `1` | `2` | `3` | `4` | `5`): RulerLevel2 = js.native
+  
+  val Application: Any = js.native
+  
   val Count: Double = js.native
+  
   val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  def apply(Index: `1`): RulerLevel2 = js.native
-  def apply(Index: `2`): RulerLevel2 = js.native
-  def apply(Index: `3`): RulerLevel2 = js.native
-  def apply(Index: `4`): RulerLevel2 = js.native
-  def apply(Index: `5`): RulerLevel2 = js.native
-  @JSName("Item")
-  def Item_1(Index: `1`): RulerLevel2 = js.native
-  @JSName("Item")
-  def Item_2(Index: `2`): RulerLevel2 = js.native
-  @JSName("Item")
-  def Item_3(Index: `3`): RulerLevel2 = js.native
-  @JSName("Item")
-  def Item_4(Index: `4`): RulerLevel2 = js.native
-  @JSName("Item")
-  def Item_5(Index: `5`): RulerLevel2 = js.native
+  
+  def Item(Index: `1` | `2` | `3` | `4` | `5`): RulerLevel2 = js.native
+  
+  val Parent: Any = js.native
 }
-

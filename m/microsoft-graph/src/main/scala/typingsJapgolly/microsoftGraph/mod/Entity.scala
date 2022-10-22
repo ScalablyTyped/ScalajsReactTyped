@@ -1,20 +1,24 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Entity extends js.Object {
-  // Read-only.
+trait Entity extends StObject {
+  
   var id: js.UndefOr[String] = js.undefined
 }
-
 object Entity {
-  @scala.inline
-  def apply(id: String = null): Entity = {
+  
+  inline def apply(): Entity = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entity]
   }
+  
+  extension [Self <: Entity](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+  }
 }
-

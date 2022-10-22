@@ -1,23 +1,22 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
-import org.scalajs.dom.raw.Range
-import typingsJapgolly.qlikEngineapi.AnonQAxisData
-import typingsJapgolly.qlikEngineapi.AnonQDataPages
+import org.scalajs.dom.Range
+import typingsJapgolly.qlikEngineapi.anon.QAxisData
+import typingsJapgolly.qlikEngineapi.anon.QDataPages
 import typingsJapgolly.qlikEngineapi.enigmaJS.IGeneratedAPI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class describes all the methods that apply at generic object level.
   * The handle member in the JSON request for all methods listed in this section is the handle of the generic object.
   */
 @js.native
-trait IGenericObject extends IGeneratedAPI {
-  /**
-    * app describes all the methods that apply at app level.
-    */
-  var app: IApp = js.native
+trait IGenericObject
+  extends StObject
+     with IGeneratedAPI {
+  
   /**
     * Aborts the results of a search in a list object.
     * Note: This method applies to list objects (objects with one dimension).
@@ -28,6 +27,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns -
     */
   def abortListObjectSearch(qPath: String): js.Promise[Unit] = js.native
+  
   /**
     * Accept the results of a search in a list object. The search results become selected in the field.
     *
@@ -45,6 +45,12 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def acceptListObjectSearch(qPath: String, qToggleMode: Boolean): js.Promise[Unit] = js.native
   def acceptListObjectSearch(qPath: String, qToggleMode: Boolean, qSoftLock: Boolean): js.Promise[Unit] = js.native
+  
+  /**
+    * app describes all the methods that apply at app level.
+    */
+  var app: IApp = js.native
+  
   /**
     * Applies a patch to the properties of an object. Allows an update to some of the properties.
     * It is possible to apply a patch to the properties of a generic object, that is not persistent.
@@ -65,6 +71,7 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def applyPatches(qPatches: js.Array[INxPatch]): js.Promise[Unit] = js.native
   def applyPatches(qPatches: js.Array[INxPatch], qSoftPatch: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Begins the selection mode. The app enters the modal state. The specified object enters the selection mode and
     * a modal window is opened. The selection mode can apply to only one object in an app at a time.
@@ -86,6 +93,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns -
     */
   def beginSelections(qPaths: js.Array[String]): js.Promise[Unit] = js.native
+  
   /**
     * Clears the selections in a dimension of a visualization.
     * @param qPath - Path to the definition of the visualization.
@@ -97,12 +105,14 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def clearSelections(qPath: String): js.Promise[Unit] = js.native
   def clearSelections(qPath: String, qColIndices: js.Array[Double]): js.Promise[Unit] = js.native
+  
   /**
     * Clears the soft properties of a generic object.
     * For more information on how to add soft properties to a generic object,
     * @returns -
     */
   def clearSoftPatches(): js.Promise[Unit] = js.native
+  
   /**
     * Collapses the left dimensions of a pivot table. This method applies only to pivot tables that are not always fully expanded.
     * In the definition of the hypercube (in HyperCubeDef), the parameter qAlwaysFullyExpanded must be set to false.
@@ -118,6 +128,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns -
     */
   def collapseLeft(qPath: String, qRow: Double, qCol: Double, qAll: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Collapses the top dimensions of a pivot table. This method applies only to pivot tables that are not always fully expanded.
     * In the definition of the hypercube (in HyperCubeDef), the parameter qAlwaysFullyExpanded must be set to false.
@@ -133,6 +144,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns -
     */
   def collapseTop(qPath: String, qRow: Double, qCol: Double, qAll: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Copies the properties of a generic object and its children.
     * The source object is specified by the parameter qFromId and the destination object is referenced by its handle.
@@ -142,6 +154,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns -
     */
   def copyFrom(qFromId: IGenericObjectProperties): js.Promise[Unit] = js.native
+  
   /**
     * Creates a generic object that is a child of another generic object.
     *
@@ -161,6 +174,7 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def createChild(qProp: IGenericObjectProperties): js.Promise[IGenericObject] = js.native
   def createChild(qProp: IGenericObjectProperties, qPropForThis: IGenericObjectProperties): js.Promise[IGenericObject] = js.native
+  
   /**
     * Removes all children and all children to the children on an object.
     * @param qPropForThis - This parameter is optional.
@@ -170,6 +184,7 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def destroyAllChildren(): js.Promise[Unit] = js.native
   def destroyAllChildren(qPropForThis: IGenericObjectProperties): js.Promise[Unit] = js.native
+  
   /**
     * Removes a child object.
     * Note: It is possible to update the properties of the child's parent at the same time that the child is removed.
@@ -186,6 +201,7 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def destroyChild(qid: String): js.Promise[Boolean] = js.native
   def destroyChild(qid: String, qPropForThis: IGenericObjectProperties): js.Promise[Boolean] = js.native
+  
   /**
     * You can use the drillUp method with any object that contains a drill-down group as a dimension.
     * This method allows you to move between different levels of information
@@ -202,6 +218,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns -
     */
   def drillUp(qPath: String, qDimNo: Double, qNbrSteps: Double): js.Promise[Unit] = js.native
+  
   /**
     * Adds a snapshot to a generic object.
     *
@@ -212,6 +229,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns -
     */
   def embedSnapshotObject(qId: String): js.Promise[Unit] = js.native
+  
   /**
     * Ends the selection mode on a visualization. The selections are accepted or aborted when exiting the selection mode,
     * depending on the qAccept parameter value.
@@ -219,6 +237,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns -
     */
   def endSelections(qAccept: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Expands the left dimensions of a pivot table.
     * This method applies only to pivot tables that are not always fully expanded.
@@ -235,6 +254,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns -
     */
   def expandLeft(qPath: String, qRow: Double, qCol: Double, qAll: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Expands the top dimensions of a pivot table.
     * This method applies only to pivot tables that are not always fully expanded.
@@ -251,6 +271,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns -
     */
   def expandTop(qPath: String, qRow: Double, qCol: Double, qAll: Boolean): js.Promise[Unit] = js.native
+  
   /**
     * Exports the data of any generic object to an Excel file or a open XML file.
     * If the object contains excluded values, those excluded values are not exported.
@@ -288,6 +309,8 @@ trait IGenericObject extends IGeneratedAPI {
   def exportData(qFileType: FileType, qPath: String): js.Promise[String] = js.native
   def exportData(qFileType: FileType, qPath: String, qFileName: String): js.Promise[String] = js.native
   def exportData(qFileType: FileType, qPath: String, qFileName: String, qExportState: ExportStateType): js.Promise[String] = js.native
+  def exportData(qFileType: FileType, qPath: String, qFileName: Unit, qExportState: ExportStateType): js.Promise[String] = js.native
+  
   /**
     * Returns the type of the object and the corresponding handle.
     * @param qId - Identifier of the object.
@@ -295,6 +318,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - A Promise of GenericObject
     */
   def getChild(qId: String): js.Promise[IGenericObject] = js.native
+  
   /**
     * Returns the identifier and the type for each child in an app object.
     * If the child contains extra properties in qInfos,these properties are returned.
@@ -303,6 +327,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - A Promise Array of NxInfo
     */
   def getChildInfos(): js.Promise[js.Array[INxInfo]] = js.native
+  
   /**
     * Returns the identifier, the type and the properties of the object.
     * If the object contains some soft properties, the soft properties are returned.
@@ -310,6 +335,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - A Promise of GenericObjectProperties
     */
   def getEffectiveProperties(): js.Promise[IGenericObjectProperties] = js.native
+  
   /**
     * Gets the properties of:
     *       - a generic object
@@ -318,6 +344,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - A Promise  GenericObjectEntry
     */
   def getFullPropertyTree(): js.Promise[IGenericObjectEntry] = js.native
+  
   /**
     * This method supports data binning.
     * When a generic object with two or three measures and one dimension contains a lot of data,
@@ -369,6 +396,7 @@ trait IGenericObject extends IGeneratedAPI {
     qQueryLevel: Double,
     qBinningMethod: Double
   ): js.Promise[js.Array[INxDataPage]] = js.native
+  
   /**
     * Retrieves and packs compressed hypercube and axis data. It is possible to retrieve specific pages of data.
     *
@@ -381,7 +409,8 @@ trait IGenericObject extends IGeneratedAPI {
     * Options.MaxNbrTicks - maximum number of ticks.
     * @returns - A Promise <Boolean> or <Array of NxDataPage> or <Array of NxAxisData>
     */
-  def getHyperCubeContinuousData(qPath: String, qOptions: js.Array[IContinuousDataOptions]): js.Promise[AnonQAxisData] = js.native
+  def getHyperCubeContinuousData(qPath: String, qOptions: js.Array[IContinuousDataOptions]): js.Promise[QAxisData] = js.native
+  
   /**
     * Retrieves the values of a chart, a table, or a scatter plot. It is possible to retrieve specific pages of data.
     * Note: This method does not apply to stacked tables.
@@ -393,6 +422,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - A data set Array of NxDataPage
     */
   def getHyperCubeData(qPath: String, qPages: js.Array[INxPage]): js.Promise[js.Array[INxDataPage]] = js.native
+  
   /**
     * Retrieves the values of a pivot table. It is possible to retrieve specific pages of data.
     * @param qPath - Path to the definition of the object to be selected.
@@ -403,6 +433,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - A data set Array of NxPivotPage
     */
   def getHyperCubePivotData(qPath: String, qPages: js.Array[INxPage]): js.Promise[js.Array[INxPivotPage]] = js.native
+  
   /**
     * Reduces the data of a bar chart, a line chart or a scatter plot chart and retrieves them.
     * The reduction is dependent on the zoom factor (parameter qZoomFactor) and on the reduction mode.
@@ -451,6 +482,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - A data set Array of NxDataPage.
     */
   def getHyperCubeReducedData(qPath: String, qPages: js.Array[INxPage], qZoomFactor: Double, qReductionMode: ReductionModeType): js.Promise[js.Array[INxDataPage]] = js.native
+  
   /**
     * Retrieves the values of a stacked pivot table. It is possible to retrieve specific pages of data.
     * @param qPath - Path to the definition of the object to be selected.
@@ -463,6 +495,7 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def getHyperCubeStackData(qPath: String, qPages: js.Array[INxPage]): js.Promise[js.Array[INxStackPage]] = js.native
   def getHyperCubeStackData(qPath: String, qPages: js.Array[INxPage], qMaxNbrCells: Double): js.Promise[js.Array[INxStackPage]] = js.native
+  
   /**
     * Retrieves the values of a stacked pivot table. It is possible to retrieve specific pages of data.
     * @param qPath - Path to the definition of the object to be selected.
@@ -471,11 +504,13 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - A data set Array of NxTreeNode.
     */
   def getHyperCubeTreeData(qPath: String, qNodeOptions: js.Array[INxTreeDataOption]): js.Promise[INxTreeNode] = js.native
+  
   /**
     * Returns the type and identifier of the object.
     * @returns - A Promise of NxInfo.
     */
   def getInfo(): js.Promise[INxInfo] = js.native
+  
   /* ToCheck!  return value is GenericObjectLayout  */
   /**
     * Evaluates an object and displays its properties including the dynamic properties.
@@ -487,11 +522,13 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - A Promise of GenericBaseLayout.
     */
   def getLayout(): js.Promise[IGenericBaseLayout] = js.native
+  
   /**
     * Lists the linked objects to a generic object, a dimension or a measure.
     * @returns - Array of NxLinkedObjectInfo
     */
   def getLinkedObjects(): js.Promise[js.Array[INxLinkedObjectInfo]] = js.native
+  
   /**
     * GetListObjectContinuousData method
     * @param qPath - Path to the definition of the object.
@@ -501,7 +538,8 @@ trait IGenericObject extends IGeneratedAPI {
     * - Options.MaxNbrTicks - maximum number of ticks.
     * @returns - A data set Array of (NxDataPage) or (NxAxisData)
     */
-  def getListObjectContinuousData(qPath: String, qOptions: IContinuousDataOptions): js.Promise[AnonQDataPages] = js.native
+  def getListObjectContinuousData(qPath: String, qOptions: IContinuousDataOptions): js.Promise[QDataPages] = js.native
+  
   /**
     * Retrieves the values of a list object.
     * @param qPath - Path to the definition of the object to be selected.
@@ -510,6 +548,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - Array of NxDataPage
     */
   def getListObjectData(qPath: String, qPages: js.Array[INxPage]): js.Promise[js.Array[INxDataPage]] = js.native
+  
   /**
     * Returns the identifier, the type and the properties of the object.
     * Because it is not mandatory to set all properties when you define an object,
@@ -523,11 +562,13 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - A Promise of GenericObjectProperties
     */
   def getProperties(): js.Promise[IGenericObjectProperties] = js.native
+  
   /**
     * Returns the type of the object and the corresponding handle.
     * @returns - A Promise of GenericBookmark
     */
   def getSnapshotObject(): js.Promise[IGenericBookmark] = js.native
+  
   /**
     * Locks the selected values of a generic object.
     * @param qPath - Path to the definition of the object.
@@ -538,6 +579,7 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def lock(qPath: String): js.Promise[Unit] = js.native
   def lock(qPath: String, qColIndices: js.Array[Double]): js.Promise[Unit] = js.native
+  
   /**
     * Make range selections in measures.
     *
@@ -576,12 +618,21 @@ trait IGenericObject extends IGeneratedAPI {
     qColumnsToSelect: js.Array[Double],
     qOrMode: Boolean
   ): js.Promise[Boolean] = js.native
+  def multiRangeSelectHyperCubeValues(
+    qPath: String,
+    qRanges: INxMultiRangeSelectInfo,
+    qDeselectOnlyOneSelected: Boolean,
+    qColumnsToSelect: Unit,
+    qOrMode: Boolean
+  ): js.Promise[Boolean] = js.native
+  
   /**
     * Publishes a generic object.
     *
     * Note: This operation is possible only in Qlik Sense Enterprise.
     */
   def publish(): js.Promise[Unit] = js.native
+  
   /**
     * Make range selections in measures.
     * Note: This method applies to hypercubes. For example, bar charts, tables and scatter plots.
@@ -619,10 +670,19 @@ trait IGenericObject extends IGeneratedAPI {
     qColumnsToSelect: js.Array[Double],
     qOrMode: Boolean
   ): js.Promise[Boolean] = js.native
+  def rangeSelectHyperCubeValues(
+    qPath: String,
+    qRanges: js.Array[INxRangeSelectInfo],
+    qDeselectOnlyOneSelected: Boolean,
+    qColumnsToSelect: Unit,
+    qOrMode: Boolean
+  ): js.Promise[Boolean] = js.native
+  
   /**
     * Resets all selections made in selection mode.
     */
   def resetMadeSelections(): js.Promise[Unit] = js.native
+  
   /**
     * Searches for a string in a list object.
     *
@@ -638,6 +698,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - The operation is successful if qSuccess is set to true.
     */
   def searchListObjectFor(qPath: String, qMatch: String): js.Promise[Boolean] = js.native
+  
   /**
     * Makes selections in multiple dimensions and measures.
     *
@@ -671,6 +732,7 @@ trait IGenericObject extends IGeneratedAPI {
     qSoftLock: Boolean,
     qDeselectOnlyOneSelected: Boolean
   ): js.Promise[Boolean] = js.native
+  
   /**
     * SelectHyperCubeContinuousRange method
     * @param qPath - Path to the definition of the object.
@@ -684,6 +746,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - true or false.
     */
   def selectHyperCubeContinuousRange(qPath: String, qRanges: js.Array[INxContinuousRangeSelectInfo], qSoftLock: Boolean): js.Promise[Boolean] = js.native
+  
   /**
     * Selects some values in one dimension.
     * The values are identified by their element numbers.
@@ -703,6 +766,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - true or false.
     */
   def selectHyperCubeValues(qPath: String, qDimNo: Double, qValues: js.Array[Double], qToggleMode: Boolean): js.Promise[Boolean] = js.native
+  
   /**
     * Selects all values of a field.
     *
@@ -717,6 +781,7 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def selectListObjectAll(qPath: String): js.Promise[Boolean] = js.native
   def selectListObjectAll(qPath: String, qSoftLock: Boolean): js.Promise[Boolean] = js.native
+  
   /**
     * Selects all values of a field.
     *
@@ -731,6 +796,7 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def selectListObjectAlternative(qPath: String): js.Promise[Boolean] = js.native
   def selectListObjectAlternative(qPath: String, qSoftLock: Boolean): js.Promise[Boolean] = js.native
+  
   /**
     * @param qPath - Path to the definition of the object to be selected.
     * For example, /qListObjectDef.
@@ -745,6 +811,7 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def selectListObjectContinuousRange(qPath: String, qRanges: js.Array[Range]): js.Promise[Boolean] = js.native
   def selectListObjectContinuousRange(qPath: String, qRanges: js.Array[Range], qSoftLock: Boolean): js.Promise[Boolean] = js.native
+  
   /**
     * Inverts the current selections in a specific field.
     *
@@ -759,6 +826,7 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def selectListObjectExcluded(qPath: String): js.Promise[Boolean] = js.native
   def selectListObjectExcluded(qPath: String, qSoftLock: Boolean): js.Promise[Boolean] = js.native
+  
   /**
     * Selects all possible values of a list object.
     *
@@ -773,6 +841,7 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def selectListObjectPossible(qPath: String): js.Promise[Boolean] = js.native
   def selectListObjectPossible(qPath: String, qSoftLock: Boolean): js.Promise[Boolean] = js.native
+  
   /**
     * Makes single selections in dimensions.
     *
@@ -792,6 +861,7 @@ trait IGenericObject extends IGeneratedAPI {
     */
   def selectListObjectValues(qPath: String, qValues: js.Array[Double], qToggleMode: Boolean): js.Promise[Boolean] = js.native
   def selectListObjectValues(qPath: String, qValues: js.Array[Double], qToggleMode: Boolean, qSoftLock: Boolean): js.Promise[Boolean] = js.native
+  
   /**
     * Note: This method only applies to hypercubes that are not represented as straight tables.
     * The parameter qMode in HyperCubeDef must be set either to P or K.
@@ -823,6 +893,7 @@ trait IGenericObject extends IGeneratedAPI {
     qDeselectOnlyOneSelected: Boolean,
     qSoftLock: Boolean
   ): js.Promise[Boolean] = js.native
+  
   /**
     * Sets the order of the children in a generic object.
     *
@@ -831,6 +902,7 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns -
     */
   def setChildArrayOrder(qIds: js.Array[String]): js.Promise[Unit] = js.native
+  
   /**
     * Sets the properties of:
     *
@@ -843,6 +915,7 @@ trait IGenericObject extends IGeneratedAPI {
     * Note: The type of an object cannot be updated.
     */
   def setFullPropertyTree(qPropEntry: IGenericObjectEntry): js.Promise[Unit] = js.native
+  
   /**
     * Sets some properties for a generic object.
     *
@@ -850,12 +923,14 @@ trait IGenericObject extends IGeneratedAPI {
     * defined in the Generic objects section.
     */
   def setProperties(qProp: IGenericObjectProperties): js.Promise[Unit] = js.native
+  
   /**
     * Unpublishes a generic object.
     *
     * Note: This operation is possible only in Qlik Sense Enterprise.
     */
   def unPublish(): js.Promise[Unit] = js.native
+  
   /**
     * Unlocks the selected values of a generic object if the target (or handle ) is a generic object
     * @param qPath - Path to the definition of the object.
@@ -867,4 +942,3 @@ trait IGenericObject extends IGeneratedAPI {
   def unlock(qPath: String): js.Promise[Unit] = js.native
   def unlock(qPath: String, qColIndices: js.Array[Double]): js.Promise[Unit] = js.native
 }
-

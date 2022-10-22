@@ -1,19 +1,21 @@
 package typingsJapgolly.nodegit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit", "Note")
 @js.native
-class Note ()
+open class Note ()
   extends typingsJapgolly.nodegit.noteMod.Note
-
 /* static members */
-@JSImport("nodegit", "Note")
-@js.native
-object Note extends js.Object {
-  def create(
+object Note {
+  
+  @JSImport("nodegit", "Note")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def create(
     repo: typingsJapgolly.nodegit.repositoryMod.Repository,
     notesRef: String,
     author: typingsJapgolly.nodegit.signatureMod.Signature,
@@ -21,30 +23,34 @@ object Note extends js.Object {
     oid: typingsJapgolly.nodegit.oidMod.Oid,
     note: String,
     force: Double
-  ): js.Promise[typingsJapgolly.nodegit.oidMod.Oid] = js.native
-  def foreach(
+  ): js.Promise[typingsJapgolly.nodegit.oidMod.Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], notesRef.asInstanceOf[js.Any], author.asInstanceOf[js.Any], committer.asInstanceOf[js.Any], oid.asInstanceOf[js.Any], note.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.nodegit.oidMod.Oid]]
+  
+  inline def foreach(
     repo: typingsJapgolly.nodegit.repositoryMod.Repository,
     notesRef: String,
     noteCb: js.Function,
-    payload: js.Any
-  ): js.Promise[Double] = js.native
-  def iteratorNew(repo: typingsJapgolly.nodegit.repositoryMod.Repository, notesRef: String): js.Promise[_] = js.native
-  def next(
+    payload: Any
+  ): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any], notesRef.asInstanceOf[js.Any], noteCb.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  
+  inline def iteratorNew(repo: typingsJapgolly.nodegit.repositoryMod.Repository, notesRef: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("iteratorNew")(repo.asInstanceOf[js.Any], notesRef.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  
+  inline def next(
     noteId: typingsJapgolly.nodegit.oidMod.Oid,
     annotatedId: typingsJapgolly.nodegit.oidMod.Oid,
-    it: js.Any
-  ): Double = js.native
-  def read(
+    it: Any
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(noteId.asInstanceOf[js.Any], annotatedId.asInstanceOf[js.Any], it.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def read(
     repo: typingsJapgolly.nodegit.repositoryMod.Repository,
     notesRef: String,
     oid: typingsJapgolly.nodegit.oidMod.Oid
-  ): js.Promise[typingsJapgolly.nodegit.noteMod.Note] = js.native
-  def remove(
+  ): js.Promise[typingsJapgolly.nodegit.noteMod.Note] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(repo.asInstanceOf[js.Any], notesRef.asInstanceOf[js.Any], oid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.nodegit.noteMod.Note]]
+  
+  inline def remove(
     repo: typingsJapgolly.nodegit.repositoryMod.Repository,
     notesRef: String,
     author: typingsJapgolly.nodegit.signatureMod.Signature,
     committer: typingsJapgolly.nodegit.signatureMod.Signature,
     oid: typingsJapgolly.nodegit.oidMod.Oid
-  ): js.Promise[Double] = js.native
+  ): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(repo.asInstanceOf[js.Any], notesRef.asInstanceOf[js.Any], author.asInstanceOf[js.Any], committer.asInstanceOf[js.Any], oid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
 }
-

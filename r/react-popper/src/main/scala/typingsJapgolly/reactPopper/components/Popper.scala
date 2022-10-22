@@ -1,54 +1,64 @@
 package typingsJapgolly.reactPopper.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.popperJs.mod.Modifiers
-import typingsJapgolly.popperJs.mod.Placement
-import typingsJapgolly.popperJs.mod.ReferenceObject
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.facade.React.Node
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.Ref
+import typingsJapgolly.reactPopper.mod.Modifier
 import typingsJapgolly.reactPopper.mod.PopperChildrenProps
 import typingsJapgolly.reactPopper.mod.PopperProps
+import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Popper {
-  def apply(
-    eventsEnabled: js.UndefOr[Boolean] = js.undefined,
-    innerRef: Ref = null,
-    modifiers: Modifiers = null,
-    placement: Placement = null,
-    positionFixed: js.UndefOr[Boolean] = js.undefined,
-    referenceElement: ReferenceObject = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: PopperChildrenProps => CallbackTo[Node]
-  ): UnmountedWithRoot[PopperProps, typingsJapgolly.reactPopper.mod.Popper, Unit, PopperProps] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("children")(js.Any.fromFunction1((t0: typingsJapgolly.reactPopper.mod.PopperChildrenProps) => children(t0).runNow()))
-    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed.asInstanceOf[js.Any])
-    if (referenceElement != null) __obj.updateDynamic("referenceElement")(referenceElement.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactPopper.mod.PopperProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactPopper.mod.Popper](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactPopper.mod.PopperProps])
+  inline def apply[Modifiers](children: PopperChildrenProps => Node): Builder[Modifiers] = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+    new Builder[Modifiers](js.Array(this.component, __props.asInstanceOf[PopperProps[Modifiers]]))
   }
+  
   @JSImport("react-popper", "Popper")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[Modifiers] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactPopper.mod.Popper[Modifiers]] {
+    
+    inline def innerRef(value: Ref[Any]): this.type = set("innerRef", value.asInstanceOf[js.Any])
+    
+    inline def innerRefFunction1(value: Any | Null => Callback): this.type = set("innerRef", js.Any.fromFunction1((t0: Any | Null) => value(t0).runNow()))
+    
+    inline def innerRefNull: this.type = set("innerRef", null)
+    
+    inline def modifiers(value: js.Array[Modifier[Modifiers, js.Object]]): this.type = set("modifiers", value.asInstanceOf[js.Any])
+    
+    inline def modifiersVarargs(value: (Modifier[Modifiers, js.Object])*): this.type = set("modifiers", js.Array(value*))
+    
+    inline def onFirstUpdate(
+      value: /* state */ Partial[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.State */ Any
+        ] => Callback
+    ): this.type = set("onFirstUpdate", js.Any.fromFunction1((t0: /* state */ Partial[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.State */ Any
+        ]) => value(t0).runNow()))
+    
+    inline def placement(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.Placement */ Any
+    ): this.type = set("placement", value.asInstanceOf[js.Any])
+    
+    inline def referenceElement(
+      value: HTMLElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.VirtualElement */ Any)
+    ): this.type = set("referenceElement", value.asInstanceOf[js.Any])
+    
+    inline def strategy(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PopperJS.PositioningStrategy */ Any
+    ): this.type = set("strategy", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[Modifiers](p: PopperProps[Modifiers]): Builder[Modifiers] = new Builder[Modifiers](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

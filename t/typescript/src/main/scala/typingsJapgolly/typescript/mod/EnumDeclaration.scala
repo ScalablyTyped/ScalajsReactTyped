@@ -1,18 +1,24 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EnumDeclaration
-  extends DeclarationStatement
-     with JSDocContainer
-     with _HasJSDoc {
+  extends StObject
+     with DeclarationStatement
+     with HasJSDoc
+     with HasModifiers {
+  
   @JSName("kind")
-  var kind_EnumDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.EnumDeclaration = js.native
-  var members: NodeArray[EnumMember] = js.native
+  val kind_EnumDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.EnumDeclaration = js.native
+  
+  val members: NodeArray[EnumMember] = js.native
+  
+  @JSName("modifiers")
+  val modifiers_EnumDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
+  
   @JSName("name")
-  var name_EnumDeclaration: Identifier = js.native
+  val name_EnumDeclaration: Identifier = js.native
 }
-

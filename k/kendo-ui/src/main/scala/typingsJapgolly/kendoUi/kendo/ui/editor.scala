@@ -1,16 +1,16 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.editor")
-@js.native
-object editor extends js.Object {
-  @js.native
-  class Toolbar () extends Widget {
-    var window: Window = js.native
-  }
+object editor {
   
+  @js.native
+  trait Toolbar
+    extends StObject
+       with Widget {
+    
+    var tools: js.Array[Any] = js.native
+  }
 }
-

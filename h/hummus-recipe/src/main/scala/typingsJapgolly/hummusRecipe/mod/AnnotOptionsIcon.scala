@@ -1,8 +1,8 @@
 package typingsJapgolly.hummusRecipe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.hummusRecipe.hummusRecipeStrings.Comment
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.hummusRecipe.hummusRecipeStrings.Paragraph
   - typingsJapgolly.hummusRecipe.hummusRecipeStrings.Insert
 */
-trait AnnotOptionsIcon extends js.Object
-
+trait AnnotOptionsIcon extends StObject
 object AnnotOptionsIcon {
-  @scala.inline
-  def Comment: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Comment = this.cast("Comment")
-  @scala.inline
-  def Help: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Help = this.cast("Help")
-  @scala.inline
-  def Insert: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Insert = this.cast("Insert")
-  @scala.inline
-  def Key: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Key = this.cast("Key")
-  @scala.inline
-  def NewParagraph: typingsJapgolly.hummusRecipe.hummusRecipeStrings.NewParagraph = this.cast("NewParagraph")
-  @scala.inline
-  def Note: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Note = this.cast("Note")
-  @scala.inline
-  def Paragraph: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Paragraph = this.cast("Paragraph")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Comment: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Comment = "Comment".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Comment]
+  
+  inline def Help: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Help = "Help".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Help]
+  
+  inline def Insert: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Insert = "Insert".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Insert]
+  
+  inline def Key: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Key = "Key".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Key]
+  
+  inline def NewParagraph: typingsJapgolly.hummusRecipe.hummusRecipeStrings.NewParagraph = "NewParagraph".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.NewParagraph]
+  
+  inline def Note: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Note = "Note".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Note]
+  
+  inline def Paragraph: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Paragraph = "Paragraph".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Paragraph]
 }
-

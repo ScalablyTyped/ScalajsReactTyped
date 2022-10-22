@@ -1,23 +1,36 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointCollectionOption extends js.Object {
+trait PointCollectionOption extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var shape: js.UndefOr[ShapeType] = js.undefined
+  
   var size: js.UndefOr[SizeType] = js.undefined
 }
-
 object PointCollectionOption {
-  @scala.inline
-  def apply(color: String = null, shape: Int | Double = null, size: Int | Double = null): PointCollectionOption = {
+  
+  inline def apply(): PointCollectionOption = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCollectionOption]
   }
+  
+  extension [Self <: PointCollectionOption](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setShape(value: ShapeType): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+  }
 }
-

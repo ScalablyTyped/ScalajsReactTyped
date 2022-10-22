@@ -1,30 +1,42 @@
 package typingsJapgolly.hapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResponseObjectHeaderOptions extends js.Object {
+trait ResponseObjectHeaderOptions extends StObject {
+  
   var append: js.UndefOr[Boolean] = js.undefined
+  
   var duplicate: js.UndefOr[Boolean] = js.undefined
+  
   var `override`: js.UndefOr[Boolean] = js.undefined
+  
   var separator: js.UndefOr[String] = js.undefined
 }
-
 object ResponseObjectHeaderOptions {
-  @scala.inline
-  def apply(
-    append: js.UndefOr[Boolean] = js.undefined,
-    duplicate: js.UndefOr[Boolean] = js.undefined,
-    `override`: js.UndefOr[Boolean] = js.undefined,
-    separator: String = null
-  ): ResponseObjectHeaderOptions = {
+  
+  inline def apply(): ResponseObjectHeaderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
-    if (!js.isUndefined(duplicate)) __obj.updateDynamic("duplicate")(duplicate.asInstanceOf[js.Any])
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseObjectHeaderOptions]
   }
+  
+  extension [Self <: ResponseObjectHeaderOptions](x: Self) {
+    
+    inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+    
+    inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+    
+    inline def setDuplicate(value: Boolean): Self = StObject.set(x, "duplicate", value.asInstanceOf[js.Any])
+    
+    inline def setDuplicateUndefined: Self = StObject.set(x, "duplicate", js.undefined)
+    
+    inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+  }
 }
-

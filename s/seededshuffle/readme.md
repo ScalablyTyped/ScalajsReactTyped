@@ -10,10 +10,10 @@ Shuffle and unshuffle an array by seed/key.
 | ------------------ | :-------------: |
 | Full name          | seededshuffle |
 | Keywords           | shuffle, seed, unshuffle, random, array, seeded |
-| # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 42458 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 18175.333333333332 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/LouisT/SeededShuffle)

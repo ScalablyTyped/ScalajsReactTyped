@@ -1,22 +1,27 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CanvasToTempFilePathRes extends js.Object {
+trait CanvasToTempFilePathRes extends StObject {
+  
   /**
     * 导出生成的图片路径
     */
   var tempFilePath: js.UndefOr[String] = js.undefined
 }
-
 object CanvasToTempFilePathRes {
-  @scala.inline
-  def apply(tempFilePath: String = null): CanvasToTempFilePathRes = {
+  
+  inline def apply(): CanvasToTempFilePathRes = {
     val __obj = js.Dynamic.literal()
-    if (tempFilePath != null) __obj.updateDynamic("tempFilePath")(tempFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasToTempFilePathRes]
   }
+  
+  extension [Self <: CanvasToTempFilePathRes](x: Self) {
+    
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    
+    inline def setTempFilePathUndefined: Self = StObject.set(x, "tempFilePath", js.undefined)
+  }
 }
-

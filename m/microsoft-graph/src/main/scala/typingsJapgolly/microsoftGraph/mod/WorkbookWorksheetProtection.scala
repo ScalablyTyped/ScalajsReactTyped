@@ -1,28 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookWorksheetProtection extends Entity {
+trait WorkbookWorksheetProtection
+  extends StObject
+     with Entity {
+  
   // Sheet protection options. Read-only.
-  var options: js.UndefOr[WorkbookWorksheetProtectionOptions] = js.undefined
+  var options: js.UndefOr[NullableOption[WorkbookWorksheetProtectionOptions]] = js.undefined
+  
   // Indicates if the worksheet is protected. Read-only.
   var `protected`: js.UndefOr[Boolean] = js.undefined
 }
-
 object WorkbookWorksheetProtection {
-  @scala.inline
-  def apply(
-    id: String = null,
-    options: WorkbookWorksheetProtectionOptions = null,
-    `protected`: js.UndefOr[Boolean] = js.undefined
-  ): WorkbookWorksheetProtection = {
+  
+  inline def apply(): WorkbookWorksheetProtection = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookWorksheetProtection]
   }
+  
+  extension [Self <: WorkbookWorksheetProtection](x: Self) {
+    
+    inline def setOptions(value: NullableOption[WorkbookWorksheetProtectionOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsNull: Self = StObject.set(x, "options", null)
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
+    
+    inline def setProtectedUndefined: Self = StObject.set(x, "protected", js.undefined)
+  }
 }
-

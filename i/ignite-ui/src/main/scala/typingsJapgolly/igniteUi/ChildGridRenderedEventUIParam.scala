@@ -1,32 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChildGridRenderedEventUIParam extends js.Object {
+trait ChildGridRenderedEventUIParam extends StObject {
+  
   /**
-  	 * Gets reference to the child grid.
-  	 */
-  var childgrid: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to the child grid.
+    */
+  var childgrid: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets access the hierarchical grid object.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets access the hierarchical grid object.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets access the row element for the row that's about to be populated.
-  	 */
+    * Gets access the row element for the row that's about to be populated.
+    */
   var parentrow: js.UndefOr[String] = js.undefined
 }
-
 object ChildGridRenderedEventUIParam {
-  @scala.inline
-  def apply(childgrid: js.Any = null, owner: js.Any = null, parentrow: String = null): ChildGridRenderedEventUIParam = {
+  
+  inline def apply(): ChildGridRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (childgrid != null) __obj.updateDynamic("childgrid")(childgrid.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (parentrow != null) __obj.updateDynamic("parentrow")(parentrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildGridRenderedEventUIParam]
   }
+  
+  extension [Self <: ChildGridRenderedEventUIParam](x: Self) {
+    
+    inline def setChildgrid(value: Any): Self = StObject.set(x, "childgrid", value.asInstanceOf[js.Any])
+    
+    inline def setChildgridUndefined: Self = StObject.set(x, "childgrid", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setParentrow(value: String): Self = StObject.set(x, "parentrow", value.asInstanceOf[js.Any])
+    
+    inline def setParentrowUndefined: Self = StObject.set(x, "parentrow", js.undefined)
+  }
 }
-

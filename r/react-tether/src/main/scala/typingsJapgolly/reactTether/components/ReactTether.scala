@@ -1,88 +1,74 @@
 package typingsJapgolly.reactTether.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import japgolly.scalajs.react.raw.React.RefHandle
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactTether.mod.ReactTether.Constraints
-import typingsJapgolly.reactTether.mod.ReactTether.TetherComponentProps
-import typingsJapgolly.reactTether.mod.ReactTether.UpdateEventData
+import japgolly.scalajs.react.facade.React.RefHandle
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactTether.anon.Left
+import typingsJapgolly.reactTether.anon.PartialCSSStyleDeclaratio
+import typingsJapgolly.reactTether.mod.ReactTetherProps
 import typingsJapgolly.reactTether.mod.default
+import typingsJapgolly.tether.mod.ITetherConstraint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactTether {
-  def apply(
-    attachment: String,
-    bodyElement: HTMLElement = null,
-    className: String = null,
-    classPrefix: String = null,
-    classes: StringDictionary[Boolean | String] = null,
-    constraints: js.Array[Constraints] = null,
-    element: HTMLElement | String | js.Any = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    offset: String = null,
-    onRepositioned: js.UndefOr[Callback] = js.undefined,
-    onUpdate: /* data */ UpdateEventData => Callback = null,
-    optimizations: js.Any = null,
-    renderElement: /* ref */ RefHandle[Element] => CallbackTo[Node] = null,
-    renderElementTag: String = null,
-    renderElementTo: Element | String = null,
-    renderTarget: /* ref */ RefHandle[Element] => CallbackTo[Node] = null,
-    style: CSSProperties = null,
-    target: HTMLElement | String | js.Any = null,
-    targetAttachment: String = null,
-    targetModifier: String = null,
-    targetOffset: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TetherComponentProps, default, Unit, TetherComponentProps] = {
-    val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any])
   
-      if (bodyElement != null) __obj.updateDynamic("bodyElement")(bodyElement.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (classPrefix != null) __obj.updateDynamic("classPrefix")(classPrefix.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    onRepositioned.foreach(p => __obj.updateDynamic("onRepositioned")(p.toJsFn))
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1((t0: /* data */ typingsJapgolly.reactTether.mod.ReactTether.UpdateEventData) => onUpdate(t0).runNow()))
-    if (optimizations != null) __obj.updateDynamic("optimizations")(optimizations.asInstanceOf[js.Any])
-    if (renderElement != null) __obj.updateDynamic("renderElement")(js.Any.fromFunction1((t0: /* ref */ japgolly.scalajs.react.raw.React.RefHandle[org.scalajs.dom.raw.Element]) => renderElement(t0).runNow()))
-    if (renderElementTag != null) __obj.updateDynamic("renderElementTag")(renderElementTag.asInstanceOf[js.Any])
-    if (renderElementTo != null) __obj.updateDynamic("renderElementTo")(renderElementTo.asInstanceOf[js.Any])
-    if (renderTarget != null) __obj.updateDynamic("renderTarget")(js.Any.fromFunction1((t0: /* ref */ japgolly.scalajs.react.raw.React.RefHandle[org.scalajs.dom.raw.Element]) => renderTarget(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (targetAttachment != null) __obj.updateDynamic("targetAttachment")(targetAttachment.asInstanceOf[js.Any])
-    if (targetModifier != null) __obj.updateDynamic("targetModifier")(targetModifier.asInstanceOf[js.Any])
-    if (targetOffset != null) __obj.updateDynamic("targetOffset")(targetOffset.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactTether.mod.ReactTether.TetherComponentProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactTether.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactTether.mod.ReactTether.TetherComponentProps])(children: _*)
+  inline def apply(attachment: String, renderTarget: RefHandle[Any] => Callback): Builder = {
+    val __props = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], renderTarget = js.Any.fromFunction1((t0: RefHandle[Any]) => renderTarget(t0).runNow()))
+    new Builder(js.Array(this.component, __props.asInstanceOf[ReactTetherProps]))
   }
+  
   @JSImport("react-tether", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def bodyElement(value: HTMLElement): this.type = set("bodyElement", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def classPrefix(value: String): this.type = set("classPrefix", value.asInstanceOf[js.Any])
+    
+    inline def constraints(value: js.Array[ITetherConstraint]): this.type = set("constraints", value.asInstanceOf[js.Any])
+    
+    inline def constraintsVarargs(value: ITetherConstraint*): this.type = set("constraints", js.Array(value*))
+    
+    inline def element(value: HTMLElement | String | Any): this.type = set("element", value.asInstanceOf[js.Any])
+    
+    inline def enabled(value: Boolean): this.type = set("enabled", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def offset(value: String): this.type = set("offset", value.asInstanceOf[js.Any])
+    
+    inline def onRepositioned(value: /* event */ js.UndefOr[Left] => Callback): this.type = set("onRepositioned", js.Any.fromFunction1((t0: /* event */ js.UndefOr[Left]) => value(t0).runNow()))
+    
+    inline def onUpdate(value: /* event */ js.UndefOr[Left] => Callback): this.type = set("onUpdate", js.Any.fromFunction1((t0: /* event */ js.UndefOr[Left]) => value(t0).runNow()))
+    
+    inline def optimizations(value: Any): this.type = set("optimizations", value.asInstanceOf[js.Any])
+    
+    inline def renderElement(value: /* ref */ RefHandle[Any] => Callback): this.type = set("renderElement", js.Any.fromFunction1((t0: /* ref */ RefHandle[Any]) => value(t0).runNow()))
+    
+    inline def renderElementTag(value: String): this.type = set("renderElementTag", value.asInstanceOf[js.Any])
+    
+    inline def renderElementTo(value: String | HTMLElement): this.type = set("renderElementTo", value.asInstanceOf[js.Any])
+    
+    inline def style(value: PartialCSSStyleDeclaratio): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def target(value: HTMLElement | String | Any): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def targetAttachment(value: String): this.type = set("targetAttachment", value.asInstanceOf[js.Any])
+    
+    inline def targetModifier(value: String): this.type = set("targetModifier", value.asInstanceOf[js.Any])
+    
+    inline def targetOffset(value: String): this.type = set("targetOffset", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ReactTetherProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

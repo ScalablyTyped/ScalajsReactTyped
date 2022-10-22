@@ -1,44 +1,39 @@
 package typingsJapgolly.javaApplet
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait JavaAppletStatus extends js.Object
-
+sealed trait JavaAppletStatus extends StObject
+/**
+  * @summary Java applet Status. More details: {@link http://docs.oracle.com/javase/8/docs/technotes/guides/deploy/applet_dev_guide.html#JSDPG719|Applet Status And Event Handlers}
+  */
 @JSGlobal("JavaAppletStatus")
 @js.native
-object JavaAppletStatus extends js.Object {
+object JavaAppletStatus extends StObject {
+  
   /**
     * @summary Error while loading applet.
     */
   @js.native
-  sealed trait Error extends JavaAppletStatus
+  sealed trait Error
+    extends StObject
+       with JavaAppletStatus
   
   /**
     * @summary Applet is loading.
     */
   @js.native
-  sealed trait Loading extends JavaAppletStatus
+  sealed trait Loading
+    extends StObject
+       with JavaAppletStatus
   
   /**
     * @summary Applet has loaded completely and is ready to receive JavaScript calls.
     */
   @js.native
-  sealed trait Ready extends JavaAppletStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[JavaAppletStatus with Double] = js.native
-  /* 3 */ @js.native
-  object Error extends TopLevel[Error with Double]
-  
-  /* 1 */ @js.native
-  object Loading extends TopLevel[Loading with Double]
-  
-  /* 2 */ @js.native
-  object Ready extends TopLevel[Ready with Double]
-  
+  sealed trait Ready
+    extends StObject
+       with JavaAppletStatus
 }
-

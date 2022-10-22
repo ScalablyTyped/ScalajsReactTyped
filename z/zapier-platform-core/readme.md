@@ -1,7 +1,7 @@
 
 # Scala.js typings for zapier-platform-core
 
-Typings are for version 8.4.2
+Typings are for version 12.1.0
 
 ## Library description:
 The core SDK for CLI apps in the Zapier Developer Platform.
@@ -11,14 +11,14 @@ The core SDK for CLI apps in the Zapier Developer Platform.
 | Full name          | zapier-platform-core |
 | Keywords           | - |
 | # releases         | 26 |
-| # dependents       | 2 |
-| # downloads        | 118426 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 29473.0 |
+| # stars            | 190.0 |
 
 ## Links
-- [Homepage](https://zapier.com/)
-- [Bugs](https://github.com/zapier/zapier-platform-core/issues)
-- [Repository](https://github.com/zapier/zapier-platform-core)
+- [Homepage](https://platform.zapier.com/)
+- [Bugs](https://github.com/zapier/zapier-platform/issues)
+- [Repository](https://github.com/zapier/zapier-platform)
 - [Npm](https://www.npmjs.com/package/zapier-platform-core)
     
 

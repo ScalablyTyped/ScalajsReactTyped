@@ -1,29 +1,40 @@
 package typingsJapgolly.amazonConnectStreams.connect
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactType extends js.Object
-
+sealed trait ContactType extends StObject
+/** This enumeration lists all of the contact types supported by Connect Streams. */
 @JSGlobal("connect.ContactType")
 @js.native
-object ContactType extends js.Object {
+object ContactType extends StObject {
+  
+  /** Chat contact. */
   @js.native
-  sealed trait QUEUE_CALLBACK extends ContactType
+  sealed trait CHAT
+    extends StObject
+       with ContactType
   
+  /**
+    * Special outbound voice calls which are routed to agents before being placed.
+    * For more information about how to setup and use queued callbacks, see the Amazon Connect user documentation.
+    */
   @js.native
-  sealed trait VOICE extends ContactType
+  sealed trait QUEUE_CALLBACK
+    extends StObject
+       with ContactType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ContactType with String] = js.native
-  /* "queue_callback" */ @js.native
-  object QUEUE_CALLBACK extends TopLevel[QUEUE_CALLBACK with String]
+  /** Task contact. */
+  @js.native
+  sealed trait TASK
+    extends StObject
+       with ContactType
   
-  /* "voice" */ @js.native
-  object VOICE extends TopLevel[VOICE with String]
-  
+  /** Normal incoming and outgoing voice calls. */
+  @js.native
+  sealed trait VOICE
+    extends StObject
+       with ContactType
 }
-

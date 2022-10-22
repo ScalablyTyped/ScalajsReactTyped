@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__foundation
 
-Typings are for version 7.5.9
+Typings are for version 7.10.15
 
 ## Library description:
 Foundation library for building Fabric components.
@@ -10,15 +10,15 @@ Foundation library for building Fabric components.
 | ------------------ | :-------------: |
 | Full name          | @uifabric/foundation |
 | Keywords           | - |
-| # releases         | 79 |
-| # dependents       | 5 |
-| # downloads        | 1262101 |
-| # stars            | 0 |
+| # releases         | 34 |
+| # dependents       | 0.0 |
+| # downloads        | 192439.33333333334 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/OfficeDev/office-ui-fabric-react#readme)
-- [Bugs](https://github.com/OfficeDev/office-ui-fabric-react/issues)
-- [Repository](https://github.com/OfficeDev/office-ui-fabric-react)
+- [Homepage](https://github.com/microsoft/fluentui#readme)
+- [Bugs](https://github.com/microsoft/fluentui/issues)
+- [Repository](https://github.com/microsoft/fluentui)
 - [Npm](https://www.npmjs.com/package/%40uifabric%2Ffoundation)
     
 

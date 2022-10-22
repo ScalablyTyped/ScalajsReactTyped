@@ -1,29 +1,27 @@
 package typingsJapgolly.reactMdl.mod
 
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
+import typingsJapgolly.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CardTitleProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any] {
+  extends StObject
+     with HTMLProps[Any] {
+  
   var expand: js.UndefOr[Boolean] = js.undefined
 }
-
 object CardTitleProps {
-  @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    expand: js.UndefOr[Boolean] = js.undefined
-  ): CardTitleProps = {
+  
+  inline def apply(): CardTitleProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardTitleProps]
   }
+  
+  extension [Self <: CardTitleProps](x: Self) {
+    
+    inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+  }
 }
-

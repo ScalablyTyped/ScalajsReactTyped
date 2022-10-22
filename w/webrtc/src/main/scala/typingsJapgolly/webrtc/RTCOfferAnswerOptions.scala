@@ -1,20 +1,25 @@
 package typingsJapgolly.webrtc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcofferansweroptions
-trait RTCOfferAnswerOptions extends js.Object {
+trait RTCOfferAnswerOptions extends StObject {
+  
   var voiceActivityDetection: js.UndefOr[Boolean] = js.undefined
 }
-
 object RTCOfferAnswerOptions {
-  @scala.inline
-  def apply(voiceActivityDetection: js.UndefOr[Boolean] = js.undefined): RTCOfferAnswerOptions = {
+  
+  inline def apply(): RTCOfferAnswerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(voiceActivityDetection)) __obj.updateDynamic("voiceActivityDetection")(voiceActivityDetection.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCOfferAnswerOptions]
   }
+  
+  extension [Self <: RTCOfferAnswerOptions](x: Self) {
+    
+    inline def setVoiceActivityDetection(value: Boolean): Self = StObject.set(x, "voiceActivityDetection", value.asInstanceOf[js.Any])
+    
+    inline def setVoiceActivityDetectionUndefined: Self = StObject.set(x, "voiceActivityDetection", js.undefined)
+  }
 }
-

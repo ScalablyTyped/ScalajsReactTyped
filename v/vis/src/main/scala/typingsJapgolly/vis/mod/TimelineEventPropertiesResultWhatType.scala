@@ -1,8 +1,8 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.vis.visStrings.item
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.vis.visStrings.`custom-time`
   - typingsJapgolly.vis.visStrings.`current-time`
 */
-trait TimelineEventPropertiesResultWhatType extends js.Object
-
+trait TimelineEventPropertiesResultWhatType extends StObject
 object TimelineEventPropertiesResultWhatType {
-  @scala.inline
-  def axis: typingsJapgolly.vis.visStrings.axis = this.cast("axis")
-  @scala.inline
-  def background: typingsJapgolly.vis.visStrings.background = this.cast("background")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `current-time`: typingsJapgolly.vis.visStrings.`current-time` = this.cast("current-time")
-  @scala.inline
-  def `custom-time`: typingsJapgolly.vis.visStrings.`custom-time` = this.cast("custom-time")
-  @scala.inline
-  def `group-label`: typingsJapgolly.vis.visStrings.`group-label` = this.cast("group-label")
-  @scala.inline
-  def item: typingsJapgolly.vis.visStrings.item = this.cast("item")
+  
+  inline def axis: typingsJapgolly.vis.visStrings.axis = "axis".asInstanceOf[typingsJapgolly.vis.visStrings.axis]
+  
+  inline def background: typingsJapgolly.vis.visStrings.background = "background".asInstanceOf[typingsJapgolly.vis.visStrings.background]
+  
+  inline def `current-time`: typingsJapgolly.vis.visStrings.`current-time` = "current-time".asInstanceOf[typingsJapgolly.vis.visStrings.`current-time`]
+  
+  inline def `custom-time`: typingsJapgolly.vis.visStrings.`custom-time` = "custom-time".asInstanceOf[typingsJapgolly.vis.visStrings.`custom-time`]
+  
+  inline def `group-label`: typingsJapgolly.vis.visStrings.`group-label` = "group-label".asInstanceOf[typingsJapgolly.vis.visStrings.`group-label`]
+  
+  inline def item: typingsJapgolly.vis.visStrings.item = "item".asInstanceOf[typingsJapgolly.vis.visStrings.item]
 }
-

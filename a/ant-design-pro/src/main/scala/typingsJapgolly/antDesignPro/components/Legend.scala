@@ -1,131 +1,177 @@
 package typingsJapgolly.antDesignPro.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.CanvasRenderingContext2D
-import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.antvG2.mod.Styles.background
-import typingsJapgolly.antvG2.mod.Styles.text
-import typingsJapgolly.bizcharts.bizchartsStrings.multiple
-import typingsJapgolly.bizcharts.bizchartsStrings.single
-import typingsJapgolly.bizcharts.mod.LegendLayoutType
-import typingsJapgolly.bizcharts.mod.LegendPositionType
-import typingsJapgolly.bizcharts.mod.LegendProps
-import typingsJapgolly.bizcharts.mod.MarkerType
-import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antvComponent.libTypesMod.ContinueLegendHandlerCfg
+import typingsJapgolly.antvComponent.libTypesMod.ContinueLegendLabelCfg
+import typingsJapgolly.antvComponent.libTypesMod.ContinueLegendRailCfg
+import typingsJapgolly.antvComponent.libTypesMod.ContinueLegendTrackCfg
+import typingsJapgolly.antvComponent.libTypesMod.LegendBackgroundCfg
+import typingsJapgolly.antvComponent.libTypesMod.LegendItemNameCfg
+import typingsJapgolly.antvComponent.libTypesMod.LegendItemValueCfg
+import typingsJapgolly.antvComponent.libTypesMod.LegendPageNavigatorCfg
+import typingsJapgolly.antvComponent.libTypesMod.LegendRadio
+import typingsJapgolly.antvG2.anon.namestringvaluestringMark
+import typingsJapgolly.antvG2.antvG2Strings.`bottom-left`
+import typingsJapgolly.antvG2.antvG2Strings.`bottom-right`
+import typingsJapgolly.antvG2.antvG2Strings.`left-bottom`
+import typingsJapgolly.antvG2.antvG2Strings.`left-top`
+import typingsJapgolly.antvG2.antvG2Strings.`right-bottom`
+import typingsJapgolly.antvG2.antvG2Strings.`right-top`
+import typingsJapgolly.antvG2.antvG2Strings.`top-left`
+import typingsJapgolly.antvG2.antvG2Strings.`top-right`
+import typingsJapgolly.antvG2.antvG2Strings.bottom
+import typingsJapgolly.antvG2.antvG2Strings.horizontal
+import typingsJapgolly.antvG2.antvG2Strings.left
+import typingsJapgolly.antvG2.antvG2Strings.right
+import typingsJapgolly.antvG2.antvG2Strings.top
+import typingsJapgolly.antvG2.antvG2Strings.vertical
+import typingsJapgolly.antvG2.libInterfaceMod.ComponentAnimateOption
+import typingsJapgolly.antvG2.libInterfaceMod.Datum
+import typingsJapgolly.antvG2.libInterfaceMod.G2LegendTitleCfg
+import typingsJapgolly.antvG2.libInterfaceMod.LegendItem
+import typingsJapgolly.antvG2.libInterfaceMod.MarkerCfg
+import typingsJapgolly.antvGBase.libInterfacesMod.IGroup
+import typingsJapgolly.bizcharts.libComponentsLegendMod.ILegend
+import typingsJapgolly.bizcharts.libInterfaceMod.IEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Legend {
-  def apply(
-    allowAllCanceled: js.UndefOr[Boolean] = js.undefined,
-    background: background = null,
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    container: String = null,
-    containerTpl: String = null,
-    custom: js.UndefOr[Boolean] = js.undefined,
-    `g2-legend`: CSSProperties = null,
-    `g2-legend-item`: CSSProperties = null,
-    `g2-legend-list-item`: CSSProperties = null,
-    `g2-legend-marker`: CSSProperties = null,
-    `g2-legend-text`: CSSProperties = null,
-    height: Int | Double = null,
-    hoverable: js.UndefOr[Boolean] = js.undefined,
-    itemFormatter: /* val */ js.UndefOr[js.Any] => CallbackTo[String | Double] = null,
-    itemGap: Int | Double = null,
-    itemMarginBottom: Int | Double = null,
-    itemTpl: String | (js.Function4[
-      /* value */ js.UndefOr[String], 
-      /* color */ js.UndefOr[String], 
-      /* checked */ js.UndefOr[Boolean], 
-      /* index */ js.UndefOr[Double], 
-      String
-    ]) = null,
-    itemWidth: Int | Double = null,
-    items: js.Array[_] = null,
-    layout: LegendLayoutType = null,
-    marker: String | MarkerType | (js.Function4[
-      /* x */ js.UndefOr[Double], 
-      /* y */ js.UndefOr[Double], 
-      /* r */ js.UndefOr[Double], 
-      /* ctx */ js.UndefOr[CanvasRenderingContext2D], 
-      Unit
-    ]) = null,
-    name: String = null,
-    offsetX: Int | Double = null,
-    offsetY: Int | Double = null,
-    onClick: /* ev */ MouseEvent => Callback = null,
-    onHover: /* ev */ MouseEvent => Callback = null,
-    position: LegendPositionType = null,
-    scroll: js.UndefOr[Boolean] = js.undefined,
-    selectedMode: single | multiple = null,
-    slidable: js.UndefOr[Boolean] = js.undefined,
-    textStyle: text = null,
-    title: js.UndefOr[Boolean] = js.undefined,
-    unChecked: String = null,
-    useHtml: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[LegendProps, typingsJapgolly.antDesignPro.bizchartsMod.Legend, Unit, LegendProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(allowAllCanceled)) __obj.updateDynamic("allowAllCanceled")(allowAllCanceled.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (containerTpl != null) __obj.updateDynamic("containerTpl")(containerTpl.asInstanceOf[js.Any])
-    if (!js.isUndefined(custom)) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (`g2-legend` != null) __obj.updateDynamic("g2-legend")(`g2-legend`.asInstanceOf[js.Any])
-    if (`g2-legend-item` != null) __obj.updateDynamic("g2-legend-item")(`g2-legend-item`.asInstanceOf[js.Any])
-    if (`g2-legend-list-item` != null) __obj.updateDynamic("g2-legend-list-item")(`g2-legend-list-item`.asInstanceOf[js.Any])
-    if (`g2-legend-marker` != null) __obj.updateDynamic("g2-legend-marker")(`g2-legend-marker`.asInstanceOf[js.Any])
-    if (`g2-legend-text` != null) __obj.updateDynamic("g2-legend-text")(`g2-legend-text`.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.asInstanceOf[js.Any])
-    if (itemFormatter != null) __obj.updateDynamic("itemFormatter")(js.Any.fromFunction1((t0: /* val */ js.UndefOr[js.Any]) => itemFormatter(t0).runNow()))
-    if (itemGap != null) __obj.updateDynamic("itemGap")(itemGap.asInstanceOf[js.Any])
-    if (itemMarginBottom != null) __obj.updateDynamic("itemMarginBottom")(itemMarginBottom.asInstanceOf[js.Any])
-    if (itemTpl != null) __obj.updateDynamic("itemTpl")(itemTpl.asInstanceOf[js.Any])
-    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* ev */ org.scalajs.dom.raw.MouseEvent) => onClick(t0).runNow()))
-    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1((t0: /* ev */ org.scalajs.dom.raw.MouseEvent) => onHover(t0).runNow()))
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (selectedMode != null) __obj.updateDynamic("selectedMode")(selectedMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(slidable)) __obj.updateDynamic("slidable")(slidable.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (unChecked != null) __obj.updateDynamic("unChecked")(unChecked.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHtml)) __obj.updateDynamic("useHtml")(useHtml.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.bizcharts.mod.LegendProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignPro.bizchartsMod.Legend](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.bizcharts.mod.LegendProps])(children: _*)
+  inline def apply(container: IGroup): Builder = {
+    val __props = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ILegend]))
   }
+  
   @JSImport("ant-design-pro/lib/Charts/bizcharts", "Legend")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def LocationType(value: String): this.type = set("LocationType", value.asInstanceOf[js.Any])
+    
+    inline def animate(value: Boolean): this.type = set("animate", value.asInstanceOf[js.Any])
+    
+    inline def animateOption(value: ComponentAnimateOption): this.type = set("animateOption", value.asInstanceOf[js.Any])
+    
+    inline def background(value: LegendBackgroundCfg): this.type = set("background", value.asInstanceOf[js.Any])
+    
+    inline def capture(value: Boolean): this.type = set("capture", value.asInstanceOf[js.Any])
+    
+    inline def custom(value: Boolean): this.type = set("custom", value.asInstanceOf[js.Any])
+    
+    inline def defaultCfg(value: js.Object): this.type = set("defaultCfg", value.asInstanceOf[js.Any])
+    
+    inline def events(value: js.Object): this.type = set("events", value.asInstanceOf[js.Any])
+    
+    inline def filter(value: (/* value */ Any, /* datum */ Datum, /* idx */ js.UndefOr[Double]) => Boolean): this.type = set("filter", js.Any.fromFunction3(value))
+    
+    inline def flipNavigation(value: LegendPageNavigatorCfg): this.type = set("flipNavigation", value.asInstanceOf[js.Any])
+    
+    inline def flipPage(value: Boolean): this.type = set("flipPage", value.asInstanceOf[js.Any])
+    
+    inline def group(value: IGroup): this.type = set("group", value.asInstanceOf[js.Any])
+    
+    inline def handler(value: ContinueLegendHandlerCfg): this.type = set("handler", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def itemHeight(value: Double): this.type = set("itemHeight", value.asInstanceOf[js.Any])
+    
+    inline def itemMarginBottom(value: Double): this.type = set("itemMarginBottom", value.asInstanceOf[js.Any])
+    
+    inline def itemName(value: LegendItemNameCfg): this.type = set("itemName", value.asInstanceOf[js.Any])
+    
+    inline def itemSpacing(value: Double): this.type = set("itemSpacing", value.asInstanceOf[js.Any])
+    
+    inline def itemValue(value: LegendItemValueCfg): this.type = set("itemValue", value.asInstanceOf[js.Any])
+    
+    inline def itemWidth(value: Double): this.type = set("itemWidth", value.asInstanceOf[js.Any])
+    
+    inline def items(value: js.Array[LegendItem]): this.type = set("items", value.asInstanceOf[js.Any])
+    
+    inline def itemsVarargs(value: LegendItem*): this.type = set("items", js.Array(value*))
+    
+    inline def label(value: ContinueLegendLabelCfg): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def layout(value: horizontal | vertical): this.type = set("layout", value.asInstanceOf[js.Any])
+    
+    inline def marker(
+      value: MarkerCfg | (js.Function3[/* name */ String, /* index */ Double, /* item */ namestringvaluestringMark, MarkerCfg])
+    ): this.type = set("marker", value.asInstanceOf[js.Any])
+    
+    inline def markerFunction3(value: (/* name */ String, /* index */ Double, /* item */ namestringvaluestringMark) => MarkerCfg): this.type = set("marker", js.Any.fromFunction3(value))
+    
+    inline def max(value: Double): this.type = set("max", value.asInstanceOf[js.Any])
+    
+    inline def maxHeight(value: Double): this.type = set("maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def maxHeightRatio(value: Double): this.type = set("maxHeightRatio", value.asInstanceOf[js.Any])
+    
+    inline def maxItemWidth(value: Double): this.type = set("maxItemWidth", value.asInstanceOf[js.Any])
+    
+    inline def maxRow(value: Double): this.type = set("maxRow", value.asInstanceOf[js.Any])
+    
+    inline def maxWidth(value: Double): this.type = set("maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def maxWidthRatio(value: Double): this.type = set("maxWidthRatio", value.asInstanceOf[js.Any])
+    
+    inline def min(value: Double): this.type = set("min", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def offsetX(value: Double): this.type = set("offsetX", value.asInstanceOf[js.Any])
+    
+    inline def offsetY(value: Double): this.type = set("offsetY", value.asInstanceOf[js.Any])
+    
+    inline def onChange(
+      value: (/* e */ js.UndefOr[IEvent], /* chart */ js.UndefOr[typingsJapgolly.antvG2.libChartMod.Chart]) => Callback
+    ): this.type = set("onChange", js.Any.fromFunction2((t0: /* e */ js.UndefOr[IEvent], t1: /* chart */ js.UndefOr[typingsJapgolly.antvG2.libChartMod.Chart]) => (value(t0, t1)).runNow()))
+    
+    inline def padding(value: js.Array[Double]): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def paddingVarargs(value: Double*): this.type = set("padding", js.Array(value*))
+    
+    inline def pageNavigator(value: LegendPageNavigatorCfg): this.type = set("pageNavigator", value.asInstanceOf[js.Any])
+    
+    inline def position(
+      value: top | `top-left` | `top-right` | right | `right-top` | `right-bottom` | left | `left-top` | `left-bottom` | bottom | `bottom-left` | `bottom-right`
+    ): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def radio(value: LegendRadio): this.type = set("radio", value.asInstanceOf[js.Any])
+    
+    inline def rail(value: ContinueLegendRailCfg): this.type = set("rail", value.asInstanceOf[js.Any])
+    
+    inline def reversed(value: Boolean): this.type = set("reversed", value.asInstanceOf[js.Any])
+    
+    inline def slidable(value: Boolean): this.type = set("slidable", value.asInstanceOf[js.Any])
+    
+    inline def title(value: G2LegendTitleCfg): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def track(value: ContinueLegendTrackCfg): this.type = set("track", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: String): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def updateAutoRender(value: Boolean): this.type = set("updateAutoRender", value.asInstanceOf[js.Any])
+    
+    inline def value(value: js.Array[Double]): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueVarargs(value: Double*): this.type = set("value", js.Array(value*))
+    
+    inline def view(value: Any): this.type = set("view", value.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+    
+    inline def x(value: Double): this.type = set("x", value.asInstanceOf[js.Any])
+    
+    inline def y(value: Double): this.type = set("y", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ILegend): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

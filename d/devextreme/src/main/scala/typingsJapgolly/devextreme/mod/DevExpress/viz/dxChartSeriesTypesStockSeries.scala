@@ -1,115 +1,64 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.AnonColorLevel
-import typingsJapgolly.devextreme.AnonDisplayMode
 import typingsJapgolly.devextreme.devextremeStrings.allArgumentPoints
 import typingsJapgolly.devextreme.devextremeStrings.allSeriesPoints
-import typingsJapgolly.devextreme.devextremeStrings.dash
-import typingsJapgolly.devextreme.devextremeStrings.dot
-import typingsJapgolly.devextreme.devextremeStrings.longDash
 import typingsJapgolly.devextreme.devextremeStrings.none
 import typingsJapgolly.devextreme.devextremeStrings.onlyPoint
-import typingsJapgolly.devextreme.devextremeStrings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Describes settings supported by a series of the stock type. */
-trait dxChartSeriesTypesStockSeries extends dxChartSeriesTypesCommonSeries {
-  /** Configures data aggregation for the series. */
+trait dxChartSeriesTypesStockSeries
+  extends StObject
+     with dxChartSeriesTypesCommonSeries {
+  
+  /**
+    * Configures data aggregation for the series.
+    */
   @JSName("aggregation")
   var aggregation_dxChartSeriesTypesStockSeries: js.UndefOr[dxChartSeriesTypesStockSeriesAggregation] = js.undefined
-  /** Specifies series elements to be highlighted when a user pauses on a series. */
+  
+  /**
+    * Specifies series elements to be highlighted when a user pauses on a series.
+    */
   @JSName("hoverMode")
   var hoverMode_dxChartSeriesTypesStockSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
-  /** Configures point labels. */
+  
+  /**
+    * Configures point labels.
+    */
   @JSName("label")
   var label_dxChartSeriesTypesStockSeries: js.UndefOr[dxChartSeriesTypesStockSeriesLabel] = js.undefined
-  /** Specifies series elements to be highlighted when a user selects a point. */
+  
+  /**
+    * Specifies series elements to be highlighted when a user selects a point.
+    */
   @JSName("selectionMode")
   var selectionMode_dxChartSeriesTypesStockSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
 }
-
 object dxChartSeriesTypesStockSeries {
-  @scala.inline
-  def apply(
-    aggregation: dxChartSeriesTypesStockSeriesAggregation = null,
-    argumentField: String = null,
-    axis: String = null,
-    barOverlapGroup: String = null,
-    barPadding: Int | Double = null,
-    barWidth: Int | Double = null,
-    border: dxChartSeriesTypesCommonSeriesBorder = null,
-    closeValueField: String = null,
-    color: String = null,
-    cornerRadius: Int | Double = null,
-    dashStyle: dash | dot | longDash | solid = null,
-    highValueField: String = null,
-    hoverMode: onlyPoint | allSeriesPoints | allArgumentPoints | none = null,
-    hoverStyle: dxChartSeriesTypesCommonSeriesHoverStyle = null,
-    ignoreEmptyPoints: js.UndefOr[Boolean] = js.undefined,
-    innerColor: String = null,
-    label: dxChartSeriesTypesStockSeriesLabel = null,
-    lowValueField: String = null,
-    maxLabelCount: Int | Double = null,
-    minBarSize: Int | Double = null,
-    opacity: Int | Double = null,
-    openValueField: String = null,
-    pane: String = null,
-    point: dxChartSeriesTypesCommonSeriesPoint = null,
-    rangeValue1Field: String = null,
-    rangeValue2Field: String = null,
-    reduction: AnonColorLevel = null,
-    selectionMode: onlyPoint | allSeriesPoints | allArgumentPoints | none = null,
-    selectionStyle: dxChartSeriesTypesCommonSeriesSelectionStyle = null,
-    showInLegend: js.UndefOr[Boolean] = js.undefined,
-    sizeField: String = null,
-    stack: String = null,
-    tagField: String = null,
-    valueErrorBar: AnonDisplayMode = null,
-    valueField: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
-  ): dxChartSeriesTypesStockSeries = {
+  
+  inline def apply(): dxChartSeriesTypesStockSeries = {
     val __obj = js.Dynamic.literal()
-    if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation.asInstanceOf[js.Any])
-    if (argumentField != null) __obj.updateDynamic("argumentField")(argumentField.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (barOverlapGroup != null) __obj.updateDynamic("barOverlapGroup")(barOverlapGroup.asInstanceOf[js.Any])
-    if (barPadding != null) __obj.updateDynamic("barPadding")(barPadding.asInstanceOf[js.Any])
-    if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (closeValueField != null) __obj.updateDynamic("closeValueField")(closeValueField.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (highValueField != null) __obj.updateDynamic("highValueField")(highValueField.asInstanceOf[js.Any])
-    if (hoverMode != null) __obj.updateDynamic("hoverMode")(hoverMode.asInstanceOf[js.Any])
-    if (hoverStyle != null) __obj.updateDynamic("hoverStyle")(hoverStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEmptyPoints)) __obj.updateDynamic("ignoreEmptyPoints")(ignoreEmptyPoints.asInstanceOf[js.Any])
-    if (innerColor != null) __obj.updateDynamic("innerColor")(innerColor.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lowValueField != null) __obj.updateDynamic("lowValueField")(lowValueField.asInstanceOf[js.Any])
-    if (maxLabelCount != null) __obj.updateDynamic("maxLabelCount")(maxLabelCount.asInstanceOf[js.Any])
-    if (minBarSize != null) __obj.updateDynamic("minBarSize")(minBarSize.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (openValueField != null) __obj.updateDynamic("openValueField")(openValueField.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
-    if (rangeValue1Field != null) __obj.updateDynamic("rangeValue1Field")(rangeValue1Field.asInstanceOf[js.Any])
-    if (rangeValue2Field != null) __obj.updateDynamic("rangeValue2Field")(rangeValue2Field.asInstanceOf[js.Any])
-    if (reduction != null) __obj.updateDynamic("reduction")(reduction.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (selectionStyle != null) __obj.updateDynamic("selectionStyle")(selectionStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (sizeField != null) __obj.updateDynamic("sizeField")(sizeField.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (tagField != null) __obj.updateDynamic("tagField")(tagField.asInstanceOf[js.Any])
-    if (valueErrorBar != null) __obj.updateDynamic("valueErrorBar")(valueErrorBar.asInstanceOf[js.Any])
-    if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartSeriesTypesStockSeries]
   }
+  
+  extension [Self <: dxChartSeriesTypesStockSeries](x: Self) {
+    
+    inline def setAggregation(value: dxChartSeriesTypesStockSeriesAggregation): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
+    
+    inline def setAggregationUndefined: Self = StObject.set(x, "aggregation", js.undefined)
+    
+    inline def setHoverMode(value: onlyPoint | allSeriesPoints | allArgumentPoints | none): Self = StObject.set(x, "hoverMode", value.asInstanceOf[js.Any])
+    
+    inline def setHoverModeUndefined: Self = StObject.set(x, "hoverMode", js.undefined)
+    
+    inline def setLabel(value: dxChartSeriesTypesStockSeriesLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setSelectionMode(value: onlyPoint | allSeriesPoints | allArgumentPoints | none): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+  }
 }
-

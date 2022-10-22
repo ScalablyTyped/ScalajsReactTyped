@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-server-env
 
-Typings are for version 2.4.3
+Typings are for version 4.2.1
 
 ## Library description:
 This package is used internally by Apollo Server and not meant to be consumed directly.
@@ -10,10 +10,10 @@ This package is used internally by Apollo Server and not meant to be consumed di
 | ------------------ | :-------------: |
 | Full name          | apollo-server-env |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 46 |
-| # downloads        | 24123318 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1623504666666666E7 |
+| # stars            | 12821.0 |
 
 ## Links
 - [Homepage](https://github.com/apollographql/apollo-server#readme)

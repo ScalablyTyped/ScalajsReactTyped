@@ -1,14 +1,16 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Background.NetworkOperatorNotificationTrigger")
-@js.native
-class NetworkOperatorNotificationTrigger protected () extends INetworkOperatorNotificationTrigger {
-  def this(networkAccountId: String) = this()
-  /* CompleteClass */
-  override var networkAccountId: String = js.native
+trait NetworkOperatorNotificationTrigger
+  extends StObject
+     with INetworkOperatorNotificationTrigger
+object NetworkOperatorNotificationTrigger {
+  
+  inline def apply(networkAccountId: String): NetworkOperatorNotificationTrigger = {
+    val __obj = js.Dynamic.literal(networkAccountId = networkAccountId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkOperatorNotificationTrigger]
+  }
 }
-

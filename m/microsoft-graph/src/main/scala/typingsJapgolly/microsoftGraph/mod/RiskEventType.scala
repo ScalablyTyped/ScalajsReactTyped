@@ -1,8 +1,9 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unlikelyTravel
@@ -19,42 +20,38 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.mcasSuspiciousInboxManipulationRules
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.investigationsThreatIntelligenceSigninLinked
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.maliciousIPAddressValidCredentialsBlockedIP
-  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
-trait RiskEventType extends js.Object
-
+trait RiskEventType extends StObject
 object RiskEventType {
-  @scala.inline
-  def adminConfirmedUserCompromised: typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedUserCompromised = this.cast("adminConfirmedUserCompromised")
-  @scala.inline
-  def anonymizedIPAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.anonymizedIPAddress = this.cast("anonymizedIPAddress")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def generic: typingsJapgolly.microsoftGraph.microsoftGraphStrings.generic = this.cast("generic")
-  @scala.inline
-  def investigationsThreatIntelligence: typingsJapgolly.microsoftGraph.microsoftGraphStrings.investigationsThreatIntelligence = this.cast("investigationsThreatIntelligence")
-  @scala.inline
-  def investigationsThreatIntelligenceSigninLinked: typingsJapgolly.microsoftGraph.microsoftGraphStrings.investigationsThreatIntelligenceSigninLinked = this.cast("investigationsThreatIntelligenceSigninLinked")
-  @scala.inline
-  def leakedCredentials: typingsJapgolly.microsoftGraph.microsoftGraphStrings.leakedCredentials = this.cast("leakedCredentials")
-  @scala.inline
-  def maliciousIPAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.maliciousIPAddress = this.cast("maliciousIPAddress")
-  @scala.inline
-  def maliciousIPAddressValidCredentialsBlockedIP: typingsJapgolly.microsoftGraph.microsoftGraphStrings.maliciousIPAddressValidCredentialsBlockedIP = this.cast("maliciousIPAddressValidCredentialsBlockedIP")
-  @scala.inline
-  def malwareInfectedIPAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.malwareInfectedIPAddress = this.cast("malwareInfectedIPAddress")
-  @scala.inline
-  def mcasImpossibleTravel: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mcasImpossibleTravel = this.cast("mcasImpossibleTravel")
-  @scala.inline
-  def mcasSuspiciousInboxManipulationRules: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mcasSuspiciousInboxManipulationRules = this.cast("mcasSuspiciousInboxManipulationRules")
-  @scala.inline
-  def suspiciousIPAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.suspiciousIPAddress = this.cast("suspiciousIPAddress")
-  @scala.inline
-  def unfamiliarFeatures: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unfamiliarFeatures = this.cast("unfamiliarFeatures")
-  @scala.inline
-  def unknownFutureValue: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
-  @scala.inline
-  def unlikelyTravel: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unlikelyTravel = this.cast("unlikelyTravel")
+  
+  inline def adminConfirmedUserCompromised: typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedUserCompromised = "adminConfirmedUserCompromised".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedUserCompromised]
+  
+  inline def anonymizedIPAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.anonymizedIPAddress = "anonymizedIPAddress".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.anonymizedIPAddress]
+  
+  inline def generic: typingsJapgolly.microsoftGraph.microsoftGraphStrings.generic = "generic".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.generic]
+  
+  inline def investigationsThreatIntelligence: typingsJapgolly.microsoftGraph.microsoftGraphStrings.investigationsThreatIntelligence = "investigationsThreatIntelligence".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.investigationsThreatIntelligence]
+  
+  inline def investigationsThreatIntelligenceSigninLinked: typingsJapgolly.microsoftGraph.microsoftGraphStrings.investigationsThreatIntelligenceSigninLinked = "investigationsThreatIntelligenceSigninLinked".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.investigationsThreatIntelligenceSigninLinked]
+  
+  inline def leakedCredentials: typingsJapgolly.microsoftGraph.microsoftGraphStrings.leakedCredentials = "leakedCredentials".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.leakedCredentials]
+  
+  inline def maliciousIPAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.maliciousIPAddress = "maliciousIPAddress".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.maliciousIPAddress]
+  
+  inline def maliciousIPAddressValidCredentialsBlockedIP: typingsJapgolly.microsoftGraph.microsoftGraphStrings.maliciousIPAddressValidCredentialsBlockedIP = "maliciousIPAddressValidCredentialsBlockedIP".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.maliciousIPAddressValidCredentialsBlockedIP]
+  
+  inline def malwareInfectedIPAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.malwareInfectedIPAddress = "malwareInfectedIPAddress".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.malwareInfectedIPAddress]
+  
+  inline def mcasImpossibleTravel: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mcasImpossibleTravel = "mcasImpossibleTravel".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.mcasImpossibleTravel]
+  
+  inline def mcasSuspiciousInboxManipulationRules: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mcasSuspiciousInboxManipulationRules = "mcasSuspiciousInboxManipulationRules".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.mcasSuspiciousInboxManipulationRules]
+  
+  inline def suspiciousIPAddress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.suspiciousIPAddress = "suspiciousIPAddress".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.suspiciousIPAddress]
+  
+  inline def unfamiliarFeatures: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unfamiliarFeatures = "unfamiliarFeatures".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.unfamiliarFeatures]
+  
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
+  
+  inline def unlikelyTravel: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unlikelyTravel = "unlikelyTravel".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.unlikelyTravel]
 }
-

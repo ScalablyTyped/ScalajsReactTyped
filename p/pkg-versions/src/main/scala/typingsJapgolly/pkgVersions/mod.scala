@@ -1,46 +1,15 @@
 package typingsJapgolly.pkgVersions
 
 import typingsJapgolly.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pkg-versions", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function pkgVersions(packageName: string): Promise<Set<string>>;
-  // export = pkgVersions;
-  @JSName("default")
-  var default_Original: AnonCall = js.native
-  /**
-  	Get the version numbers of a package from the npm registry.
-  	@returns The version numbers.
-  	@example
-  	```
-  	import pkgVersions = require('pkg-versions');
-  	(async () => {
-  		console.log(await pkgVersions('ava'));
-  		//=> {'0.0.3', '0.0.4', …}
-  	})();
-  	```
-  	*/
-  def apply(packageName: String): js.Promise[Set[String]] = js.native
-  /**
-  	Get the version numbers of a package from the npm registry.
-  	@returns The version numbers.
-  	@example
-  	```
-  	import pkgVersions = require('pkg-versions');
-  	(async () => {
-  		console.log(await pkgVersions('ava'));
-  		//=> {'0.0.3', '0.0.4', …}
-  	})();
-  	```
-  	*/
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function pkgVersions(packageName: string): Promise<Set<string>>;
-  // export = pkgVersions;
-  def default(packageName: String): js.Promise[Set[String]] = js.native
+object mod {
+  
+  @JSImport("pkg-versions", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(packageName: String): js.Promise[Set[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Set[String]]]
 }
-

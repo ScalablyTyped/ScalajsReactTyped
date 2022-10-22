@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartToggleHighlightOptions extends js.Object {
+trait ChartToggleHighlightOptions extends StObject {
+  
   var category: js.UndefOr[String] = js.undefined
+  
   var series: js.UndefOr[String] = js.undefined
 }
-
 object ChartToggleHighlightOptions {
-  @scala.inline
-  def apply(category: String = null, series: String = null): ChartToggleHighlightOptions = {
+  
+  inline def apply(): ChartToggleHighlightOptions = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartToggleHighlightOptions]
   }
+  
+  extension [Self <: ChartToggleHighlightOptions](x: Self) {
+    
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    
+    inline def setSeries(value: String): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+  }
 }
-

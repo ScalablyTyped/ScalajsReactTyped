@@ -1,30 +1,42 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NativeFunctionOptions extends js.Object {
+trait NativeFunctionOptions extends StObject {
+  
   var abi: js.UndefOr[NativeABI] = js.undefined
+  
   var exceptions: js.UndefOr[ExceptionsBehavior] = js.undefined
+  
   var scheduling: js.UndefOr[SchedulingBehavior] = js.undefined
+  
   var traps: js.UndefOr[CodeTraps] = js.undefined
 }
-
 object NativeFunctionOptions {
-  @scala.inline
-  def apply(
-    abi: NativeABI = null,
-    exceptions: ExceptionsBehavior = null,
-    scheduling: SchedulingBehavior = null,
-    traps: CodeTraps = null
-  ): NativeFunctionOptions = {
+  
+  inline def apply(): NativeFunctionOptions = {
     val __obj = js.Dynamic.literal()
-    if (abi != null) __obj.updateDynamic("abi")(abi.asInstanceOf[js.Any])
-    if (exceptions != null) __obj.updateDynamic("exceptions")(exceptions.asInstanceOf[js.Any])
-    if (scheduling != null) __obj.updateDynamic("scheduling")(scheduling.asInstanceOf[js.Any])
-    if (traps != null) __obj.updateDynamic("traps")(traps.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeFunctionOptions]
   }
+  
+  extension [Self <: NativeFunctionOptions](x: Self) {
+    
+    inline def setAbi(value: NativeABI): Self = StObject.set(x, "abi", value.asInstanceOf[js.Any])
+    
+    inline def setAbiUndefined: Self = StObject.set(x, "abi", js.undefined)
+    
+    inline def setExceptions(value: ExceptionsBehavior): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
+    
+    inline def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
+    
+    inline def setScheduling(value: SchedulingBehavior): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
+    
+    inline def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
+    
+    inline def setTraps(value: CodeTraps): Self = StObject.set(x, "traps", value.asInstanceOf[js.Any])
+    
+    inline def setTrapsUndefined: Self = StObject.set(x, "traps", js.undefined)
+  }
 }
-

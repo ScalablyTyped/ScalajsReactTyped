@@ -1,55 +1,89 @@
 package typingsJapgolly.dynamodb
 
+import typingsJapgolly.dynamodb.anon.AttributeNames
 import typingsJapgolly.dynamodb.callbackMod.Callback
 import typingsJapgolly.dynamodb.executeFilterMod.ExecuteFilter
-import typingsJapgolly.node.streamMod.Readable
+import typingsJapgolly.dynamodb.executeFilterMod.PromisedReadable
+import typingsJapgolly.dynamodb.modelMod.Page
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dynamodb/Query", JSImport.Namespace)
-@js.native
-object queryMod extends js.Object {
-  @js.native
-  trait Query extends js.Object {
-    @JSName("exec")
-    var exec_Original: ExecuteFilter = js.native
-    def apply(hashKey: String, table: js.Any, serializer: js.Any): Unit = js.native
-    def addFilterCondition(condition: AnonAttributeNames): Query = js.native
-    def addKeyCondition(condition: AnonAttributeNames): Query = js.native
-    def ascending(): Query = js.native
-    def attributes(attrs: String): Query = js.native
-    def attributes(attrs: js.Array[String]): Query = js.native
-    def beginsWith(args: js.Any*): Query = js.native
-    def between(args: js.Any*): Query = js.native
-    def buildKey(): String = js.native
-    def buildRequest(): js.Any = js.native
-    def consistentRead(read: Boolean): Query = js.native
-    def contains(name: String): Query = js.native
-    def descending(): Query = js.native
-    def eq(args: js.Any*): Query = js.native
-    def equals(args: js.Any*): Query = js.native
-    def exec(): Readable = js.native
-    def exec(callback: Callback): Unit = js.native
-    def expressionAttributeNames(data: js.Any): Query = js.native
-    def expressionAttributeValues(data: js.Any): Query = js.native
-    def filter(keyName: String): Query = js.native
-    def filterExpression(expression: js.Any): Query = js.native
-    def gt(args: js.Any*): Query = js.native
-    def gte(args: js.Any*): Query = js.native
-    def limit(num: Double): Query = js.native
-    def loadAll(): Query = js.native
-    def lt(args: js.Any*): Query = js.native
-    def lte(args: js.Any*): Query = js.native
-    def notContains(name: String): Query = js.native
-    def projectionExpression(data: js.Any): Query = js.native
-    def returnConsumedCapacity(): Query = js.native
-    def returnConsumedCapacity(value: String): Query = js.native
-    def select(value: String): Query = js.native
-    def startKey(hashKey: String, rangeKey: String): Query = js.native
-    def usingIndex(name: String): Query = js.native
-    def where(keyName: String): Query = js.native
-  }
+object queryMod {
   
+  @js.native
+  trait Query[T] extends StObject {
+    
+    def apply(hashKey: String, table: Any, serializer: Any): Unit = js.native
+    
+    def addFilterCondition(condition: AttributeNames): Query[T] = js.native
+    
+    def addKeyCondition(condition: AttributeNames): Query[T] = js.native
+    
+    def ascending(): Query[T] = js.native
+    
+    def attributes(attrs: String): Query[T] = js.native
+    def attributes(attrs: js.Array[String]): Query[T] = js.native
+    
+    def beginsWith(args: Any*): Query[T] = js.native
+    
+    def between(args: Any*): Query[T] = js.native
+    
+    def buildKey(): String = js.native
+    
+    def buildRequest(): Any = js.native
+    
+    def consistentRead(read: Boolean): Query[T] = js.native
+    
+    def contains(name: String): Query[T] = js.native
+    
+    def descending(): Query[T] = js.native
+    
+    def eq(args: Any*): Query[T] = js.native
+    
+    def equals(args: Any*): Query[T] = js.native
+    
+    def exec(): PromisedReadable[Page[T]] = js.native
+    def exec(callback: Callback[Page[T]]): Unit = js.native
+    @JSName("exec")
+    var exec_Original: ExecuteFilter[Page[T]] = js.native
+    
+    def exists(): Query[T] = js.native
+    def exists(exists: Boolean): Query[T] = js.native
+    
+    def expressionAttributeNames(data: Any): Query[T] = js.native
+    
+    def expressionAttributeValues(data: Any): Query[T] = js.native
+    
+    def filter(keyName: String): Query[T] = js.native
+    
+    def filterExpression(expression: Any): Query[T] = js.native
+    
+    def gt(args: Any*): Query[T] = js.native
+    
+    def gte(args: Any*): Query[T] = js.native
+    
+    def limit(num: Double): Query[T] = js.native
+    
+    def loadAll(): Query[T] = js.native
+    
+    def lt(args: Any*): Query[T] = js.native
+    
+    def lte(args: Any*): Query[T] = js.native
+    
+    def notContains(name: String): Query[T] = js.native
+    
+    def projectionExpression(data: Any): Query[T] = js.native
+    
+    def returnConsumedCapacity(): Query[T] = js.native
+    def returnConsumedCapacity(value: String): Query[T] = js.native
+    
+    def select(value: String): Query[T] = js.native
+    
+    def startKey(hashKey: String, rangeKey: String): Query[T] = js.native
+    
+    def usingIndex(name: String): Query[T] = js.native
+    
+    def where(keyName: String): Query[T] = js.native
+  }
 }
-

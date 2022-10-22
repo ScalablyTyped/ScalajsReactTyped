@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Enumeration
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeviceWatcherEventKind extends js.Object
-
+sealed trait DeviceWatcherEventKind extends StObject
 /** The type of event. */
 @JSGlobal("Windows.Devices.Enumeration.DeviceWatcherEventKind")
 @js.native
-object DeviceWatcherEventKind extends js.Object {
+object DeviceWatcherEventKind extends StObject {
+  
   /** The event is an add action. */
   @js.native
-  sealed trait add extends DeviceWatcherEventKind
+  sealed trait add
+    extends StObject
+       with DeviceWatcherEventKind
   
   /** The event is a remove action. */
   @js.native
-  sealed trait remove extends DeviceWatcherEventKind
+  sealed trait remove
+    extends StObject
+       with DeviceWatcherEventKind
   
   /** The event is an update action. */
   @js.native
-  sealed trait update extends DeviceWatcherEventKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DeviceWatcherEventKind with Double] = js.native
-  /* 0 */ @js.native
-  object add extends TopLevel[add with Double]
-  
-  /* 2 */ @js.native
-  object remove extends TopLevel[remove with Double]
-  
-  /* 1 */ @js.native
-  object update extends TopLevel[update with Double]
-  
+  sealed trait update
+    extends StObject
+       with DeviceWatcherEventKind
 }
-

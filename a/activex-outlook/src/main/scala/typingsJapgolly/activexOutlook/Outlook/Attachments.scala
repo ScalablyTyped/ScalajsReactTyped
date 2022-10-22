@@ -1,24 +1,35 @@
 package typingsJapgolly.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Outlook.Attachments")
 @js.native
-class Attachments protected () extends js.Object {
+trait Attachments extends StObject {
+  
+  def Add(Source: Any): Attachment = js.native
+  def Add(Source: Any, Type: Any): Attachment = js.native
+  def Add(Source: Any, Type: Any, Position: Any): Attachment = js.native
+  def Add(Source: Any, Type: Any, Position: Any, DisplayName: Any): Attachment = js.native
+  def Add(Source: Any, Type: Any, Position: Unit, DisplayName: Any): Attachment = js.native
+  def Add(Source: Any, Type: Unit, Position: Any): Attachment = js.native
+  def Add(Source: Any, Type: Unit, Position: Any, DisplayName: Any): Attachment = js.native
+  def Add(Source: Any, Type: Unit, Position: Unit, DisplayName: Any): Attachment = js.native
+  
   val Application: typingsJapgolly.activexOutlook.Outlook.Application = js.native
+  
   val Class: OlObjectClass = js.native
+  
   val Count: Double = js.native
-  @JSName("Outlook.Attachments_typekey")
+  
+  def Item(Index: Any): Attachment = js.native
+  
+  /* private */ @JSName("Outlook.Attachments_typekey")
   var OutlookDotAttachments_typekey: Attachments = js.native
-  val Parent: js.Any = js.native
-  val Session: NameSpace = js.native
-  def Add(Source: js.Any): Attachment = js.native
-  def Add(Source: js.Any, Type: js.Any): Attachment = js.native
-  def Add(Source: js.Any, Type: js.Any, Position: js.Any): Attachment = js.native
-  def Add(Source: js.Any, Type: js.Any, Position: js.Any, DisplayName: js.Any): Attachment = js.native
-  def Item(Index: js.Any): Attachment = js.native
+  
+  val Parent: Any = js.native
+  
   def Remove(Index: Double): Unit = js.native
+  
+  val Session: NameSpace = js.native
 }
-

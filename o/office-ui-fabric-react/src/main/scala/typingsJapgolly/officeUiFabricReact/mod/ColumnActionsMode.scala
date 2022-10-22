@@ -1,18 +1,21 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "ColumnActionsMode")
 @js.native
-object ColumnActionsMode extends js.Object {
-  /* 1 */ val clickable: typingsJapgolly.officeUiFabricReact.detailsListTypesMod.ColumnActionsMode.clickable with Double = js.native
-  /* 0 */ val disabled: typingsJapgolly.officeUiFabricReact.detailsListTypesMod.ColumnActionsMode.disabled with Double = js.native
-  /* 2 */ val hasDropdown: typingsJapgolly.officeUiFabricReact.detailsListTypesMod.ColumnActionsMode.hasDropdown with Double = js.native
+object ColumnActionsMode extends StObject {
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typingsJapgolly.officeUiFabricReact.detailsListTypesMod.ColumnActionsMode with Double
+    typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnActionsMode & Double
   ] = js.native
+  
+  /* 1 */ val clickable: typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnActionsMode.clickable & Double = js.native
+  
+  /* 0 */ val disabled: typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnActionsMode.disabled & Double = js.native
+  
+  /* 2 */ val hasDropdown: typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.ColumnActionsMode.hasDropdown & Double = js.native
 }
-

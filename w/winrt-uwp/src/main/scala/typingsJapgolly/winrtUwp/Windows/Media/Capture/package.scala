@@ -1,18 +1,13 @@
-package typingsJapgolly.winrtUwp.Windows.Media
+package typingsJapgolly.winrtUwp.Windows.Media.Capture
 
+import typingsJapgolly.winrtUwp.Windows.WinRTEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Capture {
-  /** Represents the method that will handle the MediaCapture.Failed event. */
-  type MediaCaptureFailedEventHandler = js.Function1[
-    /* ev */ typingsJapgolly.winrtUwp.Windows.Media.Capture.MediaCaptureFailedEventArgs with typingsJapgolly.winrtUwp.Windows.WinRTEvent[typingsJapgolly.winrtUwp.Windows.Media.Capture.MediaCapture], 
-    scala.Unit
-  ]
-  /** Represents the method that will handle RecordLimitationExceeded and related events. */
-  type RecordLimitationExceededEventHandler = js.Function1[
-    /* ev */ typingsJapgolly.winrtUwp.Windows.WinRTEvent[typingsJapgolly.winrtUwp.Windows.Media.Capture.MediaCapture], 
-    scala.Unit
-  ]
-}
+
+/** Represents the method that will handle the MediaCapture.Failed event. */
+type MediaCaptureFailedEventHandler = js.Function1[/* ev */ MediaCaptureFailedEventArgs & WinRTEvent[MediaCapture], Unit]
+
+/** Represents the method that will handle RecordLimitationExceeded and related events. */
+type RecordLimitationExceededEventHandler = js.Function1[/* ev */ WinRTEvent[MediaCapture], Unit]

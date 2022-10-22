@@ -1,28 +1,32 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.monacoEditor.mod.CancellationToken
 import typingsJapgolly.monacoEditor.mod.Position
 import typingsJapgolly.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectionRangeProvider extends js.Object {
+trait SelectionRangeProvider extends StObject {
+  
   /**
     * Provide ranges that should be selected from the given position.
     */
   def provideSelectionRanges(model: ITextModel, positions: js.Array[Position], token: CancellationToken): ProviderResult[js.Array[js.Array[SelectionRange]]]
 }
-
 object SelectionRangeProvider {
-  @scala.inline
-  def apply(
-    provideSelectionRanges: (ITextModel, js.Array[Position], CancellationToken) => CallbackTo[ProviderResult[js.Array[js.Array[SelectionRange]]]]
+  
+  inline def apply(
+    provideSelectionRanges: (ITextModel, js.Array[Position], CancellationToken) => ProviderResult[js.Array[js.Array[SelectionRange]]]
   ): SelectionRangeProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideSelectionRanges")(js.Any.fromFunction3((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: js.Array[typingsJapgolly.monacoEditor.mod.Position], t2: typingsJapgolly.monacoEditor.mod.CancellationToken) => provideSelectionRanges(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(provideSelectionRanges = js.Any.fromFunction3(provideSelectionRanges))
     __obj.asInstanceOf[SelectionRangeProvider]
   }
+  
+  extension [Self <: SelectionRangeProvider](x: Self) {
+    
+    inline def setProvideSelectionRanges(
+      value: (ITextModel, js.Array[Position], CancellationToken) => ProviderResult[js.Array[js.Array[SelectionRange]]]
+    ): Self = StObject.set(x, "provideSelectionRanges", js.Any.fromFunction3(value))
+  }
 }
-

@@ -1,21 +1,25 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.officeUiFabricReact.sliderTypesMod.ISliderProps
+import typingsJapgolly.officeUiFabricReact.libComponentsSliderSliderDottypesMod.ISliderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "SliderBase")
 @js.native
-class SliderBase protected ()
+open class SliderBase protected ()
   extends typingsJapgolly.officeUiFabricReact.libSliderMod.SliderBase {
   def this(props: ISliderProps) = this()
 }
-
 /* static members */
-@JSImport("office-ui-fabric-react", "SliderBase")
-@js.native
-object SliderBase extends js.Object {
-  var defaultProps: ISliderProps = js.native
+object SliderBase {
+  
+  @JSImport("office-ui-fabric-react", "SliderBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "SliderBase.defaultProps")
+  @js.native
+  def defaultProps: ISliderProps = js.native
+  inline def defaultProps_=(x: ISliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

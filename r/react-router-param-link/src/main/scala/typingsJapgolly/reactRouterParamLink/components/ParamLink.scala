@@ -1,8 +1,6 @@
 package typingsJapgolly.reactRouterParamLink.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactAnimationEventFrom
 import japgolly.scalajs.react.ReactClipboardEventFrom
 import japgolly.scalajs.react.ReactCompositionEventFrom
@@ -16,462 +14,462 @@ import japgolly.scalajs.react.ReactTouchEventFrom
 import japgolly.scalajs.react.ReactTransitionEventFrom
 import japgolly.scalajs.react.ReactUIEventFrom
 import japgolly.scalajs.react.ReactWheelEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLAnchorElement
-import typingsJapgolly.history.mod.Location
-import typingsJapgolly.history.mod.LocationDescriptor
-import typingsJapgolly.history.mod.LocationState
-import typingsJapgolly.react.AnonHtml
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLAnchorElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.anon.Html
+import typingsJapgolly.react.mod.AriaRole
 import typingsJapgolly.react.mod.Booleanish
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.react.mod.ComponentType
-import typingsJapgolly.react.reactStrings.`additions text`
-import typingsJapgolly.react.reactStrings.`inline`
-import typingsJapgolly.react.reactStrings.additions
-import typingsJapgolly.react.reactStrings.all
-import typingsJapgolly.react.reactStrings.ascending
-import typingsJapgolly.react.reactStrings.assertive
-import typingsJapgolly.react.reactStrings.both
-import typingsJapgolly.react.reactStrings.copy
-import typingsJapgolly.react.reactStrings.date
-import typingsJapgolly.react.reactStrings.decimal
-import typingsJapgolly.react.reactStrings.descending
-import typingsJapgolly.react.reactStrings.dialog
-import typingsJapgolly.react.reactStrings.email
-import typingsJapgolly.react.reactStrings.execute
-import typingsJapgolly.react.reactStrings.grammar
-import typingsJapgolly.react.reactStrings.grid
-import typingsJapgolly.react.reactStrings.horizontal
-import typingsJapgolly.react.reactStrings.inherit
-import typingsJapgolly.react.reactStrings.link
-import typingsJapgolly.react.reactStrings.list
-import typingsJapgolly.react.reactStrings.listbox
-import typingsJapgolly.react.reactStrings.location
-import typingsJapgolly.react.reactStrings.menu
-import typingsJapgolly.react.reactStrings.mixed
-import typingsJapgolly.react.reactStrings.move
-import typingsJapgolly.react.reactStrings.no
-import typingsJapgolly.react.reactStrings.none
-import typingsJapgolly.react.reactStrings.numeric
-import typingsJapgolly.react.reactStrings.off
-import typingsJapgolly.react.reactStrings.on
-import typingsJapgolly.react.reactStrings.other
-import typingsJapgolly.react.reactStrings.page
-import typingsJapgolly.react.reactStrings.polite
-import typingsJapgolly.react.reactStrings.popup
-import typingsJapgolly.react.reactStrings.removals
-import typingsJapgolly.react.reactStrings.search
-import typingsJapgolly.react.reactStrings.spelling
-import typingsJapgolly.react.reactStrings.step
-import typingsJapgolly.react.reactStrings.tel
-import typingsJapgolly.react.reactStrings.text
-import typingsJapgolly.react.reactStrings.time
-import typingsJapgolly.react.reactStrings.tree
-import typingsJapgolly.react.reactStrings.url
-import typingsJapgolly.react.reactStrings.vertical
-import typingsJapgolly.react.reactStrings.yes
+import typingsJapgolly.react.mod.HTMLAttributeAnchorTarget
+import typingsJapgolly.react.mod.HTMLAttributeReferrerPolicy
+import typingsJapgolly.reactRouter.distLibContextMod.RelativeRoutingType
 import typingsJapgolly.reactRouterDom.mod.LinkProps
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.`additions removals`
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.`additions text`
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.`inline`
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.`removals additions`
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.`removals text`
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.`text additions`
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.`text removals`
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.additions
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.all
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.ascending
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.assertive
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.both
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.copy
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.date
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.decimal
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.descending
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.dialog
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.email
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.execute
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.grammar
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.grid
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.horizontal
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.inherit
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.link
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.list
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.listbox
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.location
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.menu
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.mixed
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.move
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.no
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.none
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.numeric
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.off
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.on
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.other
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.page
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.polite
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.popup
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.removals
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.search
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.spelling
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.step
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.tel
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.text
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.time
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.tree
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.url
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.vertical
+import typingsJapgolly.reactRouterDom.reactRouterDomStrings.yes
+import typingsJapgolly.remixRunRouter.distHistoryMod.To
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ParamLink {
-  def apply(
-    to: LocationDescriptor[LocationState] | (js.Function1[/* location */ Location[LocationState], LocationDescriptor[LocationState]]),
-    about: String = null,
-    accessKey: String = null,
-    `aria-activedescendant`: String = null,
-    `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
-    `aria-busy`: js.UndefOr[Boolean] = js.undefined,
-    `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
-    `aria-controls`: String = null,
-    `aria-current`: Boolean | page | step | location | date | time = null,
-    `aria-describedby`: String = null,
-    `aria-details`: String = null,
-    `aria-disabled`: js.UndefOr[Boolean] = js.undefined,
-    `aria-dropeffect`: none | copy | execute | link | move | popup = null,
-    `aria-errormessage`: String = null,
-    `aria-expanded`: js.UndefOr[Boolean] = js.undefined,
-    `aria-flowto`: String = null,
-    `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
-    `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
-    `aria-invalid`: Boolean | grammar | spelling = null,
-    `aria-keyshortcuts`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
-    `aria-live`: off | assertive | polite = null,
-    `aria-modal`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined,
-    `aria-orientation`: horizontal | vertical = null,
-    `aria-owns`: String = null,
-    `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
-    `aria-pressed`: Boolean | mixed = null,
-    `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
-    `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
-    `aria-required`: js.UndefOr[Boolean] = js.undefined,
-    `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
-    `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
-    `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
-    `aria-valuetext`: String = null,
-    autoCapitalize: String = null,
-    autoCorrect: String = null,
-    autoSave: String = null,
-    className: String = null,
-    color: String = null,
-    component: ComponentType[_] = null,
-    contentEditable: Booleanish | inherit = null,
-    contextMenu: String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
-    datatype: String = null,
-    defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String | Double | js.Array[String] = null,
-    dir: String = null,
-    download: js.Any = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    href: String = null,
-    hrefLang: String = null,
-    id: String = null,
-    inlist: js.Any = null,
-    innerRef: Ref = null,
-    inputMode: none | text | tel | url | email | numeric | decimal | search = null,
-    is: String = null,
-    itemID: String = null,
-    itemProp: String = null,
-    itemRef: String = null,
-    itemScope: js.UndefOr[Boolean] = js.undefined,
-    itemType: String = null,
-    lang: String = null,
-    media: String = null,
-    onAbort: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onAnimationEnd: ReactAnimationEventFrom[HTMLAnchorElement] => Callback = null,
-    onAnimationIteration: ReactAnimationEventFrom[HTMLAnchorElement] => Callback = null,
-    onAnimationStart: ReactAnimationEventFrom[HTMLAnchorElement] => Callback = null,
-    onAuxClick: ReactMouseEventFrom[HTMLAnchorElement] => Callback = null,
-    onBeforeInput: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onBlur: ReactFocusEventFrom[HTMLAnchorElement] => Callback = null,
-    onCanPlay: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onCanPlayThrough: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onChange: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onClick: ReactMouseEventFrom[HTMLAnchorElement] => Callback = null,
-    onCompositionEnd: ReactCompositionEventFrom[HTMLAnchorElement] => Callback = null,
-    onCompositionStart: ReactCompositionEventFrom[HTMLAnchorElement] => Callback = null,
-    onCompositionUpdate: ReactCompositionEventFrom[HTMLAnchorElement] => Callback = null,
-    onContextMenu: ReactMouseEventFrom[HTMLAnchorElement] => Callback = null,
-    onCopy: ReactClipboardEventFrom[HTMLAnchorElement] => Callback = null,
-    onCut: ReactClipboardEventFrom[HTMLAnchorElement] => Callback = null,
-    onDoubleClick: ReactMouseEventFrom[HTMLAnchorElement] => Callback = null,
-    onDrag: ReactDragEventFrom[HTMLAnchorElement] => Callback = null,
-    onDragEnd: ReactDragEventFrom[HTMLAnchorElement] => Callback = null,
-    onDragEnter: ReactDragEventFrom[HTMLAnchorElement] => Callback = null,
-    onDragExit: ReactDragEventFrom[HTMLAnchorElement] => Callback = null,
-    onDragLeave: ReactDragEventFrom[HTMLAnchorElement] => Callback = null,
-    onDragOver: ReactDragEventFrom[HTMLAnchorElement] => Callback = null,
-    onDragStart: ReactDragEventFrom[HTMLAnchorElement] => Callback = null,
-    onDrop: ReactDragEventFrom[HTMLAnchorElement] => Callback = null,
-    onDurationChange: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onEmptied: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onEncrypted: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onEnded: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onError: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onFocus: ReactFocusEventFrom[HTMLAnchorElement] => Callback = null,
-    onInput: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onInvalid: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onKeyDown: ReactKeyboardEventFrom[HTMLAnchorElement] => Callback = null,
-    onKeyPress: ReactKeyboardEventFrom[HTMLAnchorElement] => Callback = null,
-    onKeyUp: ReactKeyboardEventFrom[HTMLAnchorElement] => Callback = null,
-    onLoad: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onLoadStart: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onLoadedData: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onLoadedMetadata: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onMouseDown: ReactMouseEventFrom[HTMLAnchorElement] => Callback = null,
-    onMouseEnter: ReactMouseEventFrom[HTMLAnchorElement] => Callback = null,
-    onMouseLeave: ReactMouseEventFrom[HTMLAnchorElement] => Callback = null,
-    onMouseMove: ReactMouseEventFrom[HTMLAnchorElement] => Callback = null,
-    onMouseOut: ReactMouseEventFrom[HTMLAnchorElement] => Callback = null,
-    onMouseOver: ReactMouseEventFrom[HTMLAnchorElement] => Callback = null,
-    onMouseUp: ReactMouseEventFrom[HTMLAnchorElement] => Callback = null,
-    onPaste: ReactClipboardEventFrom[HTMLAnchorElement] => Callback = null,
-    onPause: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onPlay: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onPlaying: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onPointerCancel: ReactPointerEventFrom[HTMLAnchorElement] => Callback = null,
-    onPointerDown: ReactPointerEventFrom[HTMLAnchorElement] => Callback = null,
-    onPointerEnter: ReactPointerEventFrom[HTMLAnchorElement] => Callback = null,
-    onPointerLeave: ReactPointerEventFrom[HTMLAnchorElement] => Callback = null,
-    onPointerMove: ReactPointerEventFrom[HTMLAnchorElement] => Callback = null,
-    onPointerOut: ReactPointerEventFrom[HTMLAnchorElement] => Callback = null,
-    onPointerOver: ReactPointerEventFrom[HTMLAnchorElement] => Callback = null,
-    onPointerUp: ReactPointerEventFrom[HTMLAnchorElement] => Callback = null,
-    onProgress: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onRateChange: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onReset: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onScroll: ReactUIEventFrom[HTMLAnchorElement] => Callback = null,
-    onSeeked: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onSeeking: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onSelect: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onStalled: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onSubmit: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onSuspend: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onTimeUpdate: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onTouchCancel: ReactTouchEventFrom[HTMLAnchorElement] => Callback = null,
-    onTouchEnd: ReactTouchEventFrom[HTMLAnchorElement] => Callback = null,
-    onTouchMove: ReactTouchEventFrom[HTMLAnchorElement] => Callback = null,
-    onTouchStart: ReactTouchEventFrom[HTMLAnchorElement] => Callback = null,
-    onTransitionEnd: ReactTransitionEventFrom[HTMLAnchorElement] => Callback = null,
-    onVolumeChange: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onWaiting: ReactEventFrom[HTMLAnchorElement] => Callback = null,
-    onWheel: ReactWheelEventFrom[HTMLAnchorElement] => Callback = null,
-    ping: String = null,
-    placeholder: String = null,
-    prefix: String = null,
-    property: String = null,
-    radioGroup: String = null,
-    referrerPolicy: String = null,
-    rel: String = null,
-    replace: js.UndefOr[Boolean] = js.undefined,
-    resource: String = null,
-    results: Int | Double = null,
-    role: String = null,
-    security: String = null,
-    slot: String = null,
-    spellCheck: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
-    suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
-    target: String = null,
-    title: String = null,
-    translate: yes | no = null,
-    `type`: String = null,
-    typeof: String = null,
-    unselectable: on | off = null,
-    vocab: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    LinkProps[LocationState], 
-    typingsJapgolly.reactRouterParamLink.mod.ParamLink, 
-    Unit, 
-    LinkProps[LocationState]
-  ] = {
-    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
   
-      if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
-    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (hrefLang != null) __obj.updateDynamic("hrefLang")(hrefLang.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
-    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
-    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onAbort(t0).runNow()))
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactAnimationEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onAnimationEnd(t0).runNow()))
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactAnimationEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onAnimationIteration(t0).runNow()))
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactAnimationEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onAnimationStart(t0).runNow()))
-    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onAuxClick(t0).runNow()))
-    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onBeforeInput(t0).runNow()))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onBlur(t0).runNow()))
-    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onCanPlay(t0).runNow()))
-    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onCanPlayThrough(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onChange(t0).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onClick(t0).runNow()))
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onCompositionEnd(t0).runNow()))
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onCompositionStart(t0).runNow()))
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onCompositionUpdate(t0).runNow()))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onContextMenu(t0).runNow()))
-    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactClipboardEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onCopy(t0).runNow()))
-    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactClipboardEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onCut(t0).runNow()))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onDoubleClick(t0).runNow()))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onDrag(t0).runNow()))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onDragEnd(t0).runNow()))
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onDragEnter(t0).runNow()))
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onDragExit(t0).runNow()))
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onDragLeave(t0).runNow()))
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onDragOver(t0).runNow()))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onDragStart(t0).runNow()))
-    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onDrop(t0).runNow()))
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onDurationChange(t0).runNow()))
-    if (onEmptied != null) __obj.updateDynamic("onEmptied")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onEmptied(t0).runNow()))
-    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onEncrypted(t0).runNow()))
-    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onEnded(t0).runNow()))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onError(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onFocus(t0).runNow()))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onInput(t0).runNow()))
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onInvalid(t0).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onKeyDown(t0).runNow()))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onKeyPress(t0).runNow()))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onKeyUp(t0).runNow()))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onLoad(t0).runNow()))
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onLoadStart(t0).runNow()))
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onLoadedData(t0).runNow()))
-    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onLoadedMetadata(t0).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onMouseDown(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onMouseLeave(t0).runNow()))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onMouseMove(t0).runNow()))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onMouseOut(t0).runNow()))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onMouseOver(t0).runNow()))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onMouseUp(t0).runNow()))
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactClipboardEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onPaste(t0).runNow()))
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onPause(t0).runNow()))
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onPlay(t0).runNow()))
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onPlaying(t0).runNow()))
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onPointerCancel(t0).runNow()))
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onPointerDown(t0).runNow()))
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onPointerEnter(t0).runNow()))
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onPointerLeave(t0).runNow()))
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onPointerMove(t0).runNow()))
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onPointerOut(t0).runNow()))
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onPointerOver(t0).runNow()))
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onPointerUp(t0).runNow()))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onProgress(t0).runNow()))
-    if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onRateChange(t0).runNow()))
-    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onReset(t0).runNow()))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactUIEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onScroll(t0).runNow()))
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onSeeked(t0).runNow()))
-    if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onSeeking(t0).runNow()))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onSelect(t0).runNow()))
-    if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onStalled(t0).runNow()))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onSubmit(t0).runNow()))
-    if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onSuspend(t0).runNow()))
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onTimeUpdate(t0).runNow()))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onTouchCancel(t0).runNow()))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onTouchEnd(t0).runNow()))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onTouchMove(t0).runNow()))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onTouchStart(t0).runNow()))
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTransitionEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onTransitionEnd(t0).runNow()))
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onVolumeChange(t0).runNow()))
-    if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onWaiting(t0).runNow()))
-    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactWheelEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onWheel(t0).runNow()))
-    if (ping != null) __obj.updateDynamic("ping")(ping.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
-    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
-    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
-    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
-    if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
-    if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactRouterDom.mod.LinkProps[typingsJapgolly.history.mod.LocationState], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactRouterParamLink.mod.ParamLink](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactRouterDom.mod.LinkProps[typingsJapgolly.history.mod.LocationState]])(children: _*)
+  inline def apply(to: To): Builder = {
+    val __props = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[LinkProps]))
   }
+  
   @JSImport("react-router-param-link", "ParamLink")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactRouterParamLink.mod.ParamLink] {
+    
+    inline def about(value: String): this.type = set("about", value.asInstanceOf[js.Any])
+    
+    inline def accessKey(value: String): this.type = set("accessKey", value.asInstanceOf[js.Any])
+    
+    inline def `aria-activedescendant`(value: String): this.type = set("aria-activedescendant", value.asInstanceOf[js.Any])
+    
+    inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
+    
+    inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+    
+    inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
+    
+    inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+    
+    inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
+    
+    inline def `aria-colindex`(value: Double): this.type = set("aria-colindex", value.asInstanceOf[js.Any])
+    
+    inline def `aria-colspan`(value: Double): this.type = set("aria-colspan", value.asInstanceOf[js.Any])
+    
+    inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
+    
+    inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+    
+    inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
+    
+    inline def `aria-details`(value: String): this.type = set("aria-details", value.asInstanceOf[js.Any])
+    
+    inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
+    
+    inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+    
+    inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
+    
+    inline def `aria-expanded`(value: Booleanish): this.type = set("aria-expanded", value.asInstanceOf[js.Any])
+    
+    inline def `aria-flowto`(value: String): this.type = set("aria-flowto", value.asInstanceOf[js.Any])
+    
+    inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
+    
+    inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+    
+    inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
+    
+    inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+    
+    inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+    
+    inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+    
+    inline def `aria-labelledby`(value: String): this.type = set("aria-labelledby", value.asInstanceOf[js.Any])
+    
+    inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
+    
+    inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+    
+    inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
+    
+    inline def `aria-multiline`(value: Booleanish): this.type = set("aria-multiline", value.asInstanceOf[js.Any])
+    
+    inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
+    
+    inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+    
+    inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
+    
+    inline def `aria-placeholder`(value: String): this.type = set("aria-placeholder", value.asInstanceOf[js.Any])
+    
+    inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
+    
+    inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+    
+    inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
+    
+    inline def `aria-relevant`(
+      value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+    ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
+    
+    inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
+    
+    inline def `aria-roledescription`(value: String): this.type = set("aria-roledescription", value.asInstanceOf[js.Any])
+    
+    inline def `aria-rowcount`(value: Double): this.type = set("aria-rowcount", value.asInstanceOf[js.Any])
+    
+    inline def `aria-rowindex`(value: Double): this.type = set("aria-rowindex", value.asInstanceOf[js.Any])
+    
+    inline def `aria-rowspan`(value: Double): this.type = set("aria-rowspan", value.asInstanceOf[js.Any])
+    
+    inline def `aria-selected`(value: Booleanish): this.type = set("aria-selected", value.asInstanceOf[js.Any])
+    
+    inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
+    
+    inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuemin`(value: Double): this.type = set("aria-valuemin", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuenow`(value: Double): this.type = set("aria-valuenow", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuetext`(value: String): this.type = set("aria-valuetext", value.asInstanceOf[js.Any])
+    
+    inline def autoCapitalize(value: String): this.type = set("autoCapitalize", value.asInstanceOf[js.Any])
+    
+    inline def autoCorrect(value: String): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
+    
+    inline def autoSave(value: String): this.type = set("autoSave", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def contentEditable(value: Booleanish | inherit): this.type = set("contentEditable", value.asInstanceOf[js.Any])
+    
+    inline def contextMenu(value: String): this.type = set("contextMenu", value.asInstanceOf[js.Any])
+    
+    inline def dangerouslySetInnerHTML(value: Html): this.type = set("dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+    
+    inline def datatype(value: String): this.type = set("datatype", value.asInstanceOf[js.Any])
+    
+    inline def defaultChecked(value: Boolean): this.type = set("defaultChecked", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: String | Double | js.Array[String]): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def defaultValueVarargs(value: String*): this.type = set("defaultValue", js.Array(value*))
+    
+    inline def dir(value: String): this.type = set("dir", value.asInstanceOf[js.Any])
+    
+    inline def download(value: Any): this.type = set("download", value.asInstanceOf[js.Any])
+    
+    inline def draggable(value: Booleanish): this.type = set("draggable", value.asInstanceOf[js.Any])
+    
+    inline def hidden(value: Boolean): this.type = set("hidden", value.asInstanceOf[js.Any])
+    
+    inline def hrefLang(value: String): this.type = set("hrefLang", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def inlist(value: Any): this.type = set("inlist", value.asInstanceOf[js.Any])
+    
+    inline def inputMode(value: none | text | tel | url | email | numeric | decimal | search): this.type = set("inputMode", value.asInstanceOf[js.Any])
+    
+    inline def is(value: String): this.type = set("is", value.asInstanceOf[js.Any])
+    
+    inline def itemID(value: String): this.type = set("itemID", value.asInstanceOf[js.Any])
+    
+    inline def itemProp(value: String): this.type = set("itemProp", value.asInstanceOf[js.Any])
+    
+    inline def itemRef(value: String): this.type = set("itemRef", value.asInstanceOf[js.Any])
+    
+    inline def itemScope(value: Boolean): this.type = set("itemScope", value.asInstanceOf[js.Any])
+    
+    inline def itemType(value: String): this.type = set("itemType", value.asInstanceOf[js.Any])
+    
+    inline def lang(value: String): this.type = set("lang", value.asInstanceOf[js.Any])
+    
+    inline def media(value: String): this.type = set("media", value.asInstanceOf[js.Any])
+    
+    inline def onAbort(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onAbort", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onAnimationEnd(value: ReactAnimationEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onAnimationEnd", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onAnimationIteration(value: ReactAnimationEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onAnimationIteration", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onAnimationStart(value: ReactAnimationEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onAnimationStart", js.Any.fromFunction1((t0: ReactAnimationEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onAuxClick(value: ReactMouseEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onAuxClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onBeforeInput(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onBeforeInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onBlur(value: ReactFocusEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onCanPlay(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onCanPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onCanPlayThrough(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onCanPlayThrough", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onChange(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onClick(value: ReactMouseEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onCompositionEnd(value: ReactCompositionEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onCompositionEnd", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onCompositionStart(value: ReactCompositionEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onCompositionStart", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onCompositionUpdate(value: ReactCompositionEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onCompositionUpdate", js.Any.fromFunction1((t0: ReactCompositionEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onContextMenu(value: ReactMouseEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onCopy(value: ReactClipboardEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onCopy", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onCut(value: ReactClipboardEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onCut", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onDoubleClick(value: ReactMouseEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onDoubleClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onDrag(value: ReactDragEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onDrag", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragEnd(value: ReactDragEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onDragEnd", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragEnter(value: ReactDragEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onDragEnter", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragExit(value: ReactDragEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onDragExit", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragLeave(value: ReactDragEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onDragLeave", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragOver(value: ReactDragEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onDragOver", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragStart(value: ReactDragEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onDragStart", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onDrop(value: ReactDragEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onDrop", js.Any.fromFunction1((t0: ReactDragEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onDurationChange(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onDurationChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onEmptied(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onEmptied", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onEncrypted(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onEncrypted", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onEnded(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onEnded", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onError(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onError", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onFocus(value: ReactFocusEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onInput(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onInput", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onInvalid(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onInvalid", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onKeyDown(value: ReactKeyboardEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onKeyPress(value: ReactKeyboardEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onKeyPress", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onKeyUp(value: ReactKeyboardEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onKeyUp", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoad(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onLoad", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoadStart(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onLoadStart", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoadedData(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onLoadedData", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoadedMetadata(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onLoadedMetadata", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseDown(value: ReactMouseEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseEnter(value: ReactMouseEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseLeave(value: ReactMouseEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onMouseLeave", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseMove(value: ReactMouseEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onMouseMove", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseOut(value: ReactMouseEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onMouseOut", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseOver(value: ReactMouseEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onMouseOver", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseUp(value: ReactMouseEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onPaste(value: ReactClipboardEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onPaste", js.Any.fromFunction1((t0: ReactClipboardEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onPause(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onPause", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onPlay(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onPlay", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onPlaying(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onPlaying", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerCancel(value: ReactPointerEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onPointerCancel", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerDown(value: ReactPointerEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onPointerDown", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerEnter(value: ReactPointerEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onPointerEnter", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerLeave(value: ReactPointerEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onPointerLeave", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerMove(value: ReactPointerEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onPointerMove", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerOut(value: ReactPointerEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onPointerOut", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerOver(value: ReactPointerEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onPointerOver", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerUp(value: ReactPointerEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onPointerUp", js.Any.fromFunction1((t0: ReactPointerEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onProgress(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onProgress", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onRateChange(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onRateChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onReset(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onReset", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onScroll(value: ReactUIEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onSeeked(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onSeeking(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onSeeking", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onSelect(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onStalled(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onStalled", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onSubmit(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onSubmit", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onSuspend(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onSuspend", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onTimeUpdate(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onTimeUpdate", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchCancel(value: ReactTouchEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onTouchCancel", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchEnd(value: ReactTouchEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onTouchEnd", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchMove(value: ReactTouchEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onTouchMove", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchStart(value: ReactTouchEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onTouchStart", js.Any.fromFunction1((t0: ReactTouchEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onTransitionEnd(value: ReactTransitionEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onTransitionEnd", js.Any.fromFunction1((t0: ReactTransitionEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onVolumeChange(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onVolumeChange", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onWaiting(value: ReactEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onWaiting", js.Any.fromFunction1((t0: ReactEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def onWheel(value: ReactWheelEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onWheel", js.Any.fromFunction1((t0: ReactWheelEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def ping(value: String): this.type = set("ping", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def prefix(value: String): this.type = set("prefix", value.asInstanceOf[js.Any])
+    
+    inline def preventScrollReset(value: Boolean): this.type = set("preventScrollReset", value.asInstanceOf[js.Any])
+    
+    inline def property(value: String): this.type = set("property", value.asInstanceOf[js.Any])
+    
+    inline def radioGroup(value: String): this.type = set("radioGroup", value.asInstanceOf[js.Any])
+    
+    inline def referrerPolicy(value: HTMLAttributeReferrerPolicy): this.type = set("referrerPolicy", value.asInstanceOf[js.Any])
+    
+    inline def rel(value: String): this.type = set("rel", value.asInstanceOf[js.Any])
+    
+    inline def relative(value: RelativeRoutingType): this.type = set("relative", value.asInstanceOf[js.Any])
+    
+    inline def reloadDocument(value: Boolean): this.type = set("reloadDocument", value.asInstanceOf[js.Any])
+    
+    inline def replace(value: Boolean): this.type = set("replace", value.asInstanceOf[js.Any])
+    
+    inline def resource(value: String): this.type = set("resource", value.asInstanceOf[js.Any])
+    
+    inline def results(value: Double): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def security(value: String): this.type = set("security", value.asInstanceOf[js.Any])
+    
+    inline def slot(value: String): this.type = set("slot", value.asInstanceOf[js.Any])
+    
+    inline def spellCheck(value: Booleanish): this.type = set("spellCheck", value.asInstanceOf[js.Any])
+    
+    inline def state(value: Any): this.type = set("state", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def suppressContentEditableWarning(value: Boolean): this.type = set("suppressContentEditableWarning", value.asInstanceOf[js.Any])
+    
+    inline def suppressHydrationWarning(value: Boolean): this.type = set("suppressHydrationWarning", value.asInstanceOf[js.Any])
+    
+    inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def target(value: HTMLAttributeAnchorTarget): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def translate(value: yes | no): this.type = set("translate", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: String): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def typeof(value: String): this.type = set("typeof", value.asInstanceOf[js.Any])
+    
+    inline def unselectable(value: on | off): this.type = set("unselectable", value.asInstanceOf[js.Any])
+    
+    inline def vocab(value: String): this.type = set("vocab", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: LinkProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

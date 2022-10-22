@@ -1,72 +1,70 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EPlatformType extends js.Object
-
+sealed trait EPlatformType extends StObject
 @JSImport("steam-client", "EPlatformType")
 @js.native
-object EPlatformType extends js.Object {
-   // removed "split to Linux64 and Linux32"
-  @js.native
-  sealed trait Linux extends EPlatformType
-  
-  @js.native
-  sealed trait Linux32 extends EPlatformType
-  
-  @js.native
-  sealed trait Linux64 extends EPlatformType
-  
-  @js.native
-  sealed trait Max extends EPlatformType
-  
-  @js.native
-  sealed trait OSX extends EPlatformType
-  
-  @js.native
-  sealed trait PS3 extends EPlatformType
-  
-  @js.native
-  sealed trait Unknown extends EPlatformType
-  
-  @js.native
-  sealed trait Win32 extends EPlatformType
-  
-  @js.native
-  sealed trait Win64 extends EPlatformType
+object EPlatformType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EPlatformType with Double] = js.native
-  /* 3 */ @js.native
-  object Linux extends TopLevel[Linux with Double]
+  def apply(value: Double): js.UndefOr[EPlatformType & Double] = js.native
   
-  /* 6 */ @js.native
-  object Linux32 extends TopLevel[Linux32 with Double]
+  @js.native
+  sealed trait Linux
+    extends StObject
+       with EPlatformType
+  /* 3 */ val Linux: typingsJapgolly.steamClient.mod.EPlatformType.Linux & Double = js.native
   
-  /* 3 */ @js.native
-  object Linux64 extends TopLevel[Linux64 with Double]
+  @js.native
+  sealed trait Linux32
+    extends StObject
+       with EPlatformType
+  /* 6 */ val Linux32: typingsJapgolly.steamClient.mod.EPlatformType.Linux32 & Double = js.native
   
-  /* 6 */ @js.native
-  object Max extends TopLevel[Max with Double]
+  // removed "split to Linux64 and Linux32"
+  @js.native
+  sealed trait Linux64
+    extends StObject
+       with EPlatformType
+  /* 3 */ val Linux64: typingsJapgolly.steamClient.mod.EPlatformType.Linux64 & Double = js.native
   
-  /* 4 */ @js.native
-  object OSX extends TopLevel[OSX with Double]
+  @js.native
+  sealed trait Max
+    extends StObject
+       with EPlatformType
+  /* 6 */ val Max: typingsJapgolly.steamClient.mod.EPlatformType.Max & Double = js.native
   
-  /* 5 */ @js.native
-  object PS3 extends TopLevel[PS3 with Double]
+  @js.native
+  sealed trait OSX
+    extends StObject
+       with EPlatformType
+  /* 4 */ val OSX: typingsJapgolly.steamClient.mod.EPlatformType.OSX & Double = js.native
   
-  /* 0 */ @js.native
-  object Unknown extends TopLevel[Unknown with Double]
+  @js.native
+  sealed trait PS3
+    extends StObject
+       with EPlatformType
+  /* 5 */ val PS3: typingsJapgolly.steamClient.mod.EPlatformType.PS3 & Double = js.native
   
-  /* 1 */ @js.native
-  object Win32 extends TopLevel[Win32 with Double]
+  @js.native
+  sealed trait Unknown
+    extends StObject
+       with EPlatformType
+  /* 0 */ val Unknown: typingsJapgolly.steamClient.mod.EPlatformType.Unknown & Double = js.native
   
-  /* 2 */ @js.native
-  object Win64 extends TopLevel[Win64 with Double]
+  @js.native
+  sealed trait Win32
+    extends StObject
+       with EPlatformType
+  /* 1 */ val Win32: typingsJapgolly.steamClient.mod.EPlatformType.Win32 & Double = js.native
   
+  @js.native
+  sealed trait Win64
+    extends StObject
+       with EPlatformType
+  /* 2 */ val Win64: typingsJapgolly.steamClient.mod.EPlatformType.Win64 & Double = js.native
 }
-

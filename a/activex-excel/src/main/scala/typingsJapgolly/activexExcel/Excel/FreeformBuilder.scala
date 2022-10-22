@@ -1,20 +1,15 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`0`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`0`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
 import typingsJapgolly.activexOffice.Office.MsoSegmentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Excel.FreeformBuilder")
 @js.native
-class FreeformBuilder protected () extends js.Object {
-  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
-  val Creator: XlCreator = js.native
-  @JSName("Excel.FreeformBuilder_typekey")
-  var ExcelDotFreeformBuilder_typekey: FreeformBuilder = js.native
-  val Parent: js.Any = js.native
+trait FreeformBuilder extends StObject {
+  
   @JSName("AddNodes")
   def AddNodes_0(SegmentType: MsoSegmentType, EditingType: `0`, X1: Double, Y1: Double): Unit = js.native
   @JSName("AddNodes")
@@ -28,6 +23,15 @@ class FreeformBuilder protected () extends js.Object {
     X3: Double,
     Y3: Double
   ): Unit = js.native
+  
+  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
+  
   def ConvertToShape(): Shape = js.native
+  
+  val Creator: XlCreator = js.native
+  
+  /* private */ @JSName("Excel.FreeformBuilder_typekey")
+  var ExcelDotFreeformBuilder_typekey: FreeformBuilder = js.native
+  
+  val Parent: Any = js.native
 }
-

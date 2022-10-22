@@ -1,21 +1,21 @@
 organization := "org.scalablytyped.japgolly"
 name := "blueprintjs__select"
-version := "3.11.2-614a2f"
-scalaVersion := "2.13.1"
+version := "4.8.3-be0d42"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "blueprintjs__core" % "3.23.1-2c0f53",
-  "org.scalablytyped.japgolly" %%% "blueprintjs__icons" % "3.13.0-e10672",
-  "org.scalablytyped.japgolly" %%% "csstype" % "2.6.6-ec7cc3",
-  "org.scalablytyped.japgolly" %%% "popper_dot_js" % "1.16.1-875299",
-  "org.scalablytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-d18e40",
-  "org.scalablytyped.japgolly" %%% "react" % "16.9-dt-20200227Z-a90427",
-  "org.scalablytyped.japgolly" %%% "react-popper" % "1.3.7-21a0be",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "blueprintjs__core" % "4.11.3-9a6061",
+  "org.scalablytyped.japgolly" %%% "blueprintjs__icons" % "4.7.0-5a97e1",
+  "org.scalablytyped.japgolly" %%% "blueprintjs__popover2" % "1.7.3-d2969a",
+  "org.scalablytyped.japgolly" %%% "csstype" % "3.1.1-6f6894",
+  "org.scalablytyped.japgolly" %%% "popper_dot_js" % "1.16.1-b54a2f",
+  "org.scalablytyped.japgolly" %%% "prop-types" % "15.7-dt-20220407Z-2e1de8",
+  "org.scalablytyped.japgolly" %%% "react" % "18.0-dt-20220922Z-c9da7d",
+  "org.scalablytyped.japgolly" %%% "react-popper" % "2.3.0-cd9e54",
+  "org.scalablytyped.japgolly" %%% "scheduler" % "0.16-dt-20211202Z-ea969a",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

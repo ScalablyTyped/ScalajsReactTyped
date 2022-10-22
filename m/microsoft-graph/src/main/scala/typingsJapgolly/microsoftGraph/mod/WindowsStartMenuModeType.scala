@@ -1,24 +1,20 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.fullScreen
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.nonFullScreen
 */
-trait WindowsStartMenuModeType extends js.Object
-
+trait WindowsStartMenuModeType extends StObject
 object WindowsStartMenuModeType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fullScreen: typingsJapgolly.microsoftGraph.microsoftGraphStrings.fullScreen = this.cast("fullScreen")
-  @scala.inline
-  def nonFullScreen: typingsJapgolly.microsoftGraph.microsoftGraphStrings.nonFullScreen = this.cast("nonFullScreen")
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  
+  inline def fullScreen: typingsJapgolly.microsoftGraph.microsoftGraphStrings.fullScreen = "fullScreen".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.fullScreen]
+  
+  inline def nonFullScreen: typingsJapgolly.microsoftGraph.microsoftGraphStrings.nonFullScreen = "nonFullScreen".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.nonFullScreen]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

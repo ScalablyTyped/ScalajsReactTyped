@@ -1,30 +1,42 @@
 package typingsJapgolly.jqueryColorbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColorboxResizeSettings extends js.Object {
+trait ColorboxResizeSettings extends StObject {
+  
   var height: js.UndefOr[Double | String] = js.undefined
+  
   var innerHeight: js.UndefOr[Double | String] = js.undefined
+  
   var innerWidth: js.UndefOr[Double | String] = js.undefined
+  
   var width: js.UndefOr[Double | String] = js.undefined
 }
-
 object ColorboxResizeSettings {
-  @scala.inline
-  def apply(
-    height: Double | String = null,
-    innerHeight: Double | String = null,
-    innerWidth: Double | String = null,
-    width: Double | String = null
-  ): ColorboxResizeSettings = {
+  
+  inline def apply(): ColorboxResizeSettings = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (innerHeight != null) __obj.updateDynamic("innerHeight")(innerHeight.asInstanceOf[js.Any])
-    if (innerWidth != null) __obj.updateDynamic("innerWidth")(innerWidth.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorboxResizeSettings]
   }
+  
+  extension [Self <: ColorboxResizeSettings](x: Self) {
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setInnerHeight(value: Double | String): Self = StObject.set(x, "innerHeight", value.asInstanceOf[js.Any])
+    
+    inline def setInnerHeightUndefined: Self = StObject.set(x, "innerHeight", js.undefined)
+    
+    inline def setInnerWidth(value: Double | String): Self = StObject.set(x, "innerWidth", value.asInstanceOf[js.Any])
+    
+    inline def setInnerWidthUndefined: Self = StObject.set(x, "innerWidth", js.undefined)
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

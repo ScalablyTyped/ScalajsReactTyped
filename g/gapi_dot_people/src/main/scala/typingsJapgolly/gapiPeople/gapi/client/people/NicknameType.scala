@@ -1,8 +1,8 @@
 package typingsJapgolly.gapiPeople.gapi.client.people
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gapiPeople.gapiPeopleStrings.DEFAULT
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gapiPeople.gapiPeopleStrings.GPLUS
   - typingsJapgolly.gapiPeople.gapiPeopleStrings.OTHER_NAME
 */
-trait NicknameType extends js.Object
-
+trait NicknameType extends StObject
 object NicknameType {
-  @scala.inline
-  def DEFAULT: typingsJapgolly.gapiPeople.gapiPeopleStrings.DEFAULT = this.cast("DEFAULT")
-  @scala.inline
-  def GPLUS: typingsJapgolly.gapiPeople.gapiPeopleStrings.GPLUS = this.cast("GPLUS")
-  @scala.inline
-  def INITIALS: typingsJapgolly.gapiPeople.gapiPeopleStrings.INITIALS = this.cast("INITIALS")
-  @scala.inline
-  def MAIDEN_NAME: typingsJapgolly.gapiPeople.gapiPeopleStrings.MAIDEN_NAME = this.cast("MAIDEN_NAME")
-  @scala.inline
-  def OTHER_NAME: typingsJapgolly.gapiPeople.gapiPeopleStrings.OTHER_NAME = this.cast("OTHER_NAME")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def DEFAULT: typingsJapgolly.gapiPeople.gapiPeopleStrings.DEFAULT = "DEFAULT".asInstanceOf[typingsJapgolly.gapiPeople.gapiPeopleStrings.DEFAULT]
+  
+  inline def GPLUS: typingsJapgolly.gapiPeople.gapiPeopleStrings.GPLUS = "GPLUS".asInstanceOf[typingsJapgolly.gapiPeople.gapiPeopleStrings.GPLUS]
+  
+  inline def INITIALS: typingsJapgolly.gapiPeople.gapiPeopleStrings.INITIALS = "INITIALS".asInstanceOf[typingsJapgolly.gapiPeople.gapiPeopleStrings.INITIALS]
+  
+  inline def MAIDEN_NAME: typingsJapgolly.gapiPeople.gapiPeopleStrings.MAIDEN_NAME = "MAIDEN_NAME".asInstanceOf[typingsJapgolly.gapiPeople.gapiPeopleStrings.MAIDEN_NAME]
+  
+  inline def OTHER_NAME: typingsJapgolly.gapiPeople.gapiPeopleStrings.OTHER_NAME = "OTHER_NAME".asInstanceOf[typingsJapgolly.gapiPeople.gapiPeopleStrings.OTHER_NAME]
 }
-

@@ -1,77 +1,39 @@
 package typingsJapgolly.babelTypes.mod
 
-import typingsJapgolly.babelTypes.babelTypesStrings.ClassDeclaration
-import typingsJapgolly.babelTypes.babelTypesStrings.ClassExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.babelTypes.mod.ClassDeclaration_
   - typingsJapgolly.babelTypes.mod.ClassExpression_
 */
-trait Class extends js.Object
-
+trait Class extends StObject
 object Class {
-  @scala.inline
-  def ClassDeclaration_(
+  
+  inline def ClassDeclaration_(
     body: ClassBody_,
     end: Double,
     id: Identifier_,
     loc: SourceLocation,
     start: Double,
-    superClass: Expression,
-    `type`: ClassDeclaration,
-    decorators: js.Array[Decorator_] = null,
-    implements: js.Array[ClassImplements_] = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    mixins: js.Array[_] = null,
-    superTypeParameters: TypeParameterInstantiation_ = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration_ = null
-  ): Class = {
+    superClass: Expression
+  ): typingsJapgolly.babelTypes.mod.ClassDeclaration_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (implements != null) __obj.updateDynamic("implements")(implements.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (superTypeParameters != null) __obj.updateDynamic("superTypeParameters")(superTypeParameters.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Class]
+    __obj.updateDynamic("type")("ClassDeclaration")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ClassDeclaration_]
   }
-  @scala.inline
-  def ClassExpression_(
+  
+  inline def ClassExpression_(
     body: ClassBody_,
     end: Double,
     id: Identifier_,
     loc: SourceLocation,
     start: Double,
-    superClass: Expression,
-    `type`: ClassExpression,
-    decorators: js.Array[Decorator_] = null,
-    implements: js.Array[ClassImplements_] = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    mixins: js.Array[_] = null,
-    superTypeParameters: TypeParameterInstantiation_ = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration_ = null
-  ): Class = {
+    superClass: Expression
+  ): typingsJapgolly.babelTypes.mod.ClassExpression_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], superClass = superClass.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (implements != null) __obj.updateDynamic("implements")(implements.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (superTypeParameters != null) __obj.updateDynamic("superTypeParameters")(superTypeParameters.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Class]
+    __obj.updateDynamic("type")("ClassExpression")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ClassExpression_]
   }
 }
-

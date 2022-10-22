@@ -1,42 +1,44 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgZoombarDefaultZoomWindow
-  extends /**
-	 * Option for IgZoombarDefaultZoomWindow
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * The left component of the zoom window in percentages.
-  	 *
-  	 */
+    * The left component of the zoom window in percentages.
+    *
+    */
   var left: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * The width of the zoom window in percentages.
-  	 *
-  	 */
+    * The width of the zoom window in percentages.
+    *
+    */
   var width: js.UndefOr[String] = js.undefined
 }
-
 object IgZoombarDefaultZoomWindow {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgZoombarDefaultZoomWindow
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    left: Int | Double = null,
-    width: String = null
-  ): IgZoombarDefaultZoomWindow = {
+  
+  inline def apply(): IgZoombarDefaultZoomWindow = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgZoombarDefaultZoomWindow]
   }
+  
+  extension [Self <: IgZoombarDefaultZoomWindow](x: Self) {
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

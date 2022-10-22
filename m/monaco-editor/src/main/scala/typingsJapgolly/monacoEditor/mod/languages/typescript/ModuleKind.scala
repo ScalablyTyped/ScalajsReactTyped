@@ -1,59 +1,57 @@
 package typingsJapgolly.monacoEditor.mod.languages.typescript
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ModuleKind extends js.Object
-
+sealed trait ModuleKind extends StObject
 @JSImport("monaco-editor", "languages.typescript.ModuleKind")
 @js.native
-object ModuleKind extends js.Object {
-  @js.native
-  sealed trait AMD extends ModuleKind
-  
-  @js.native
-  sealed trait CommonJS extends ModuleKind
-  
-  @js.native
-  sealed trait ES2015 extends ModuleKind
-  
-  @js.native
-  sealed trait ESNext extends ModuleKind
-  
-  @js.native
-  sealed trait None extends ModuleKind
-  
-  @js.native
-  sealed trait System extends ModuleKind
-  
-  @js.native
-  sealed trait UMD extends ModuleKind
+object ModuleKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ModuleKind with Double] = js.native
-  /* 2 */ @js.native
-  object AMD extends TopLevel[AMD with Double]
+  def apply(value: Double): js.UndefOr[ModuleKind & Double] = js.native
   
-  /* 1 */ @js.native
-  object CommonJS extends TopLevel[CommonJS with Double]
+  @js.native
+  sealed trait AMD
+    extends StObject
+       with ModuleKind
+  /* 2 */ val AMD: typingsJapgolly.monacoEditor.mod.languages.typescript.ModuleKind.AMD & Double = js.native
   
-  /* 5 */ @js.native
-  object ES2015 extends TopLevel[ES2015 with Double]
+  @js.native
+  sealed trait CommonJS
+    extends StObject
+       with ModuleKind
+  /* 1 */ val CommonJS: typingsJapgolly.monacoEditor.mod.languages.typescript.ModuleKind.CommonJS & Double = js.native
   
-  /* 99 */ @js.native
-  object ESNext extends TopLevel[ESNext with Double]
+  @js.native
+  sealed trait ES2015
+    extends StObject
+       with ModuleKind
+  /* 5 */ val ES2015: typingsJapgolly.monacoEditor.mod.languages.typescript.ModuleKind.ES2015 & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait ESNext
+    extends StObject
+       with ModuleKind
+  /* 99 */ val ESNext: typingsJapgolly.monacoEditor.mod.languages.typescript.ModuleKind.ESNext & Double = js.native
   
-  /* 4 */ @js.native
-  object System extends TopLevel[System with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with ModuleKind
+  /* 0 */ val None: typingsJapgolly.monacoEditor.mod.languages.typescript.ModuleKind.None & Double = js.native
   
-  /* 3 */ @js.native
-  object UMD extends TopLevel[UMD with Double]
+  @js.native
+  sealed trait System
+    extends StObject
+       with ModuleKind
+  /* 4 */ val System: typingsJapgolly.monacoEditor.mod.languages.typescript.ModuleKind.System & Double = js.native
   
+  @js.native
+  sealed trait UMD
+    extends StObject
+       with ModuleKind
+  /* 3 */ val UMD: typingsJapgolly.monacoEditor.mod.languages.typescript.ModuleKind.UMD & Double = js.native
 }
-

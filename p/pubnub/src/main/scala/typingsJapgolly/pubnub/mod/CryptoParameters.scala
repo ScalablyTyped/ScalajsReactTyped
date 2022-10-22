@@ -1,31 +1,43 @@
 package typingsJapgolly.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // encrypt & decrypt
-trait CryptoParameters extends js.Object {
+trait CryptoParameters extends StObject {
+  
   var encryptKey: js.UndefOr[Boolean] = js.undefined
+  
   var keyEncoding: js.UndefOr[String] = js.undefined
+  
   var keyLength: js.UndefOr[Double] = js.undefined
+  
   var mode: js.UndefOr[String] = js.undefined
 }
-
 object CryptoParameters {
-  @scala.inline
-  def apply(
-    encryptKey: js.UndefOr[Boolean] = js.undefined,
-    keyEncoding: String = null,
-    keyLength: Int | Double = null,
-    mode: String = null
-  ): CryptoParameters = {
+  
+  inline def apply(): CryptoParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(encryptKey)) __obj.updateDynamic("encryptKey")(encryptKey.asInstanceOf[js.Any])
-    if (keyEncoding != null) __obj.updateDynamic("keyEncoding")(keyEncoding.asInstanceOf[js.Any])
-    if (keyLength != null) __obj.updateDynamic("keyLength")(keyLength.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptoParameters]
   }
+  
+  extension [Self <: CryptoParameters](x: Self) {
+    
+    inline def setEncryptKey(value: Boolean): Self = StObject.set(x, "encryptKey", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptKeyUndefined: Self = StObject.set(x, "encryptKey", js.undefined)
+    
+    inline def setKeyEncoding(value: String): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
+    
+    inline def setKeyEncodingUndefined: Self = StObject.set(x, "keyEncoding", js.undefined)
+    
+    inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
+    
+    inline def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+  }
 }
-

@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.mediaconvertMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsMediaconvertMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.MediaConvert")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class MediaConvert ()
+open class MediaConvert ()
   extends typingsJapgolly.awsSdk.mod.MediaConvert {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -1,13 +1,20 @@
 package typingsJapgolly.eqJs
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.eqJs.eq.EqjsStatic
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.eqJs.eq_.EqjsStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Support AMD require
-@JSImport("eq.js", JSImport.Namespace)
-@js.native
-object mod extends TopLevel[EqjsStatic]
-
+object mod extends Shortcut {
+  
+  @JSImport("eq.js", JSImport.Namespace)
+  @js.native
+  val ^ : EqjsStatic = js.native
+  
+  type _To = EqjsStatic
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: EqjsStatic = ^
+}

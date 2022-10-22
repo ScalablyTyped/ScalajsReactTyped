@@ -1,15 +1,15 @@
 package typingsJapgolly.xmlbuilder.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a writer which outputs an XML document.
   */
-trait XMLWriter extends js.Object {
+trait XMLWriter extends StObject {
+  
   /** 
     * Writes an attribute. 
     * 
@@ -18,8 +18,9 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var attribute: js.UndefOr[
-    js.Function3[/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
+  
   /** 
     * Writes a CDATA node.
     * 
@@ -28,8 +29,9 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var cdata: js.UndefOr[
-    js.Function3[/* node */ XMLCData, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* node */ XMLCData, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
+  
   /** 
     * Called right before completing writing an attribute. This function 
     * does not produce any output, but can be used to alter the state of 
@@ -42,6 +44,7 @@ trait XMLWriter extends js.Object {
   var closeAttribute: js.UndefOr[
     js.Function3[/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double, Unit]
   ] = js.undefined
+  
   /** 
     * Called right before completing writing a node. This function does not 
     * produce any output, but can be used to alter the state of the writer.
@@ -53,6 +56,7 @@ trait XMLWriter extends js.Object {
   var closeNode: js.UndefOr[
     js.Function3[/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double, Unit]
   ] = js.undefined
+  
   /** 
     * Writes a comment node. 
     * 
@@ -61,8 +65,9 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var comment: js.UndefOr[
-    js.Function3[/* node */ XMLComment, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* node */ XMLComment, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
+  
   /** 
     * Writes the XML declaration (e.g. `<?xml version="1.0"?>`). 
     * 
@@ -71,8 +76,9 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var declaration: js.UndefOr[
-    js.Function3[/* node */ XMLDeclaration, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* node */ XMLDeclaration, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
+  
   /** 
     * Writes the DocType node and its children. 
     * 
@@ -84,8 +90,9 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var docType: js.UndefOr[
-    js.Function3[/* node */ XMLDocType, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* node */ XMLDocType, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
+  
   /** 
     * Writes an attribute node (`!ATTLIST`) inside the DTD. 
     * 
@@ -94,8 +101,9 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var dtdAttList: js.UndefOr[
-    js.Function3[/* node */ XMLDTDAttList, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* node */ XMLDTDAttList, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
+  
   /** 
     * Writes an element node (`!ELEMENT`) inside the DTD. 
     * 
@@ -104,8 +112,9 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var dtdElement: js.UndefOr[
-    js.Function3[/* node */ XMLDTDElement, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* node */ XMLDTDElement, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
+  
   /** 
     * Writes an entity node (`!ENTITY`) inside the DTD. 
     * 
@@ -114,8 +123,9 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var dtdEntity: js.UndefOr[
-    js.Function3[/* node */ XMLDTDEntity, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* node */ XMLDTDEntity, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
+  
   /** 
     * Writes a notation node (`!NOTATION`) inside the DTD. 
     * 
@@ -124,8 +134,9 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var dtdNotation: js.UndefOr[
-    js.Function3[/* node */ XMLDTDNotation, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* node */ XMLDTDNotation, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
+  
   /** 
     * Writes an element node. 
     * 
@@ -139,8 +150,9 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var element: js.UndefOr[
-    js.Function3[/* node */ XMLElement, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* node */ XMLElement, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
+  
   /** 
     * Writes the newline string. 
     * 
@@ -149,8 +161,9 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var endline: js.UndefOr[
-    js.Function3[/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
+  
   /** 
     * Writes the indentation string for the given level. 
     * 
@@ -159,8 +172,9 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var indent: js.UndefOr[
-    js.Function3[/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
+  
   /** 
     * Called right after starting writing an attribute. This function does 
     * not produce any output, but can be used to alter the state of the 
@@ -173,6 +187,7 @@ trait XMLWriter extends js.Object {
   var openAttribute: js.UndefOr[
     js.Function3[/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double, Unit]
   ] = js.undefined
+  
   /** 
     * Called right after starting writing a node. This function does not 
     * produce any output, but can be used to alter the state of the writer. 
@@ -184,6 +199,7 @@ trait XMLWriter extends js.Object {
   var openNode: js.UndefOr[
     js.Function3[/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double, Unit]
   ] = js.undefined
+  
   /** 
     * Writes a processing instruction node. 
     * 
@@ -196,9 +212,10 @@ trait XMLWriter extends js.Object {
       /* node */ XMLProcessingInstruction, 
       /* options */ WriterOptions, 
       /* level */ Double, 
-      _
+      Any
     ]
   ] = js.undefined
+  
   /** 
     * Writes a raw text node. 
     * 
@@ -207,8 +224,9 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var raw: js.UndefOr[
-    js.Function3[/* node */ XMLRaw, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* node */ XMLRaw, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
+  
   /** 
     * Writes a text node. 
     * 
@@ -217,54 +235,94 @@ trait XMLWriter extends js.Object {
     * @param level - current depth of the XML tree
     */
   var text: js.UndefOr[
-    js.Function3[/* node */ XMLText, /* options */ WriterOptions, /* level */ Double, _]
+    js.Function3[/* node */ XMLText, /* options */ WriterOptions, /* level */ Double, Any]
   ] = js.undefined
 }
-
 object XMLWriter {
-  @scala.inline
-  def apply(
-    attribute: (/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    cdata: (/* node */ XMLCData, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    closeAttribute: (/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double) => Callback = null,
-    closeNode: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => Callback = null,
-    comment: (/* node */ XMLComment, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    declaration: (/* node */ XMLDeclaration, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    docType: (/* node */ XMLDocType, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    dtdAttList: (/* node */ XMLDTDAttList, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    dtdElement: (/* node */ XMLDTDElement, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    dtdEntity: (/* node */ XMLDTDEntity, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    dtdNotation: (/* node */ XMLDTDNotation, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    element: (/* node */ XMLElement, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    endline: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    indent: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    openAttribute: (/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double) => Callback = null,
-    openNode: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => Callback = null,
-    processingInstruction: (/* node */ XMLProcessingInstruction, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    raw: (/* node */ XMLRaw, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null,
-    text: (/* node */ XMLText, /* options */ WriterOptions, /* level */ Double) => CallbackTo[js.Any] = null
-  ): XMLWriter = {
+  
+  inline def apply(): XMLWriter = {
     val __obj = js.Dynamic.literal()
-    if (attribute != null) __obj.updateDynamic("attribute")(js.Any.fromFunction3((t0: /* att */ typingsJapgolly.xmlbuilder.mod.XMLAttribute, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => attribute(t0, t1, t2).runNow()))
-    if (cdata != null) __obj.updateDynamic("cdata")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLCData, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => cdata(t0, t1, t2).runNow()))
-    if (closeAttribute != null) __obj.updateDynamic("closeAttribute")(js.Any.fromFunction3((t0: /* att */ typingsJapgolly.xmlbuilder.mod.XMLAttribute, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => closeAttribute(t0, t1, t2).runNow()))
-    if (closeNode != null) __obj.updateDynamic("closeNode")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLNode, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => closeNode(t0, t1, t2).runNow()))
-    if (comment != null) __obj.updateDynamic("comment")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLComment, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => comment(t0, t1, t2).runNow()))
-    if (declaration != null) __obj.updateDynamic("declaration")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLDeclaration, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => declaration(t0, t1, t2).runNow()))
-    if (docType != null) __obj.updateDynamic("docType")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLDocType, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => docType(t0, t1, t2).runNow()))
-    if (dtdAttList != null) __obj.updateDynamic("dtdAttList")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLDTDAttList, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => dtdAttList(t0, t1, t2).runNow()))
-    if (dtdElement != null) __obj.updateDynamic("dtdElement")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLDTDElement, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => dtdElement(t0, t1, t2).runNow()))
-    if (dtdEntity != null) __obj.updateDynamic("dtdEntity")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLDTDEntity, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => dtdEntity(t0, t1, t2).runNow()))
-    if (dtdNotation != null) __obj.updateDynamic("dtdNotation")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLDTDNotation, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => dtdNotation(t0, t1, t2).runNow()))
-    if (element != null) __obj.updateDynamic("element")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLElement, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => element(t0, t1, t2).runNow()))
-    if (endline != null) __obj.updateDynamic("endline")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLNode, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => endline(t0, t1, t2).runNow()))
-    if (indent != null) __obj.updateDynamic("indent")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLNode, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => indent(t0, t1, t2).runNow()))
-    if (openAttribute != null) __obj.updateDynamic("openAttribute")(js.Any.fromFunction3((t0: /* att */ typingsJapgolly.xmlbuilder.mod.XMLAttribute, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => openAttribute(t0, t1, t2).runNow()))
-    if (openNode != null) __obj.updateDynamic("openNode")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLNode, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => openNode(t0, t1, t2).runNow()))
-    if (processingInstruction != null) __obj.updateDynamic("processingInstruction")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLProcessingInstruction, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => processingInstruction(t0, t1, t2).runNow()))
-    if (raw != null) __obj.updateDynamic("raw")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLRaw, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => raw(t0, t1, t2).runNow()))
-    if (text != null) __obj.updateDynamic("text")(js.Any.fromFunction3((t0: /* node */ typingsJapgolly.xmlbuilder.mod.XMLText, t1: /* options */ typingsJapgolly.xmlbuilder.mod.WriterOptions, t2: /* level */ scala.Double) => text(t0, t1, t2).runNow()))
     __obj.asInstanceOf[XMLWriter]
   }
+  
+  extension [Self <: XMLWriter](x: Self) {
+    
+    inline def setAttribute(value: (/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "attribute", js.Any.fromFunction3(value))
+    
+    inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    
+    inline def setCdata(value: (/* node */ XMLCData, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "cdata", js.Any.fromFunction3(value))
+    
+    inline def setCdataUndefined: Self = StObject.set(x, "cdata", js.undefined)
+    
+    inline def setCloseAttribute(value: (/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double) => Callback): Self = StObject.set(x, "closeAttribute", js.Any.fromFunction3((t0: /* att */ XMLAttribute, t1: /* options */ WriterOptions, t2: /* level */ Double) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setCloseAttributeUndefined: Self = StObject.set(x, "closeAttribute", js.undefined)
+    
+    inline def setCloseNode(value: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => Callback): Self = StObject.set(x, "closeNode", js.Any.fromFunction3((t0: /* node */ XMLNode, t1: /* options */ WriterOptions, t2: /* level */ Double) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setCloseNodeUndefined: Self = StObject.set(x, "closeNode", js.undefined)
+    
+    inline def setComment(value: (/* node */ XMLComment, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "comment", js.Any.fromFunction3(value))
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    
+    inline def setDeclaration(value: (/* node */ XMLDeclaration, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "declaration", js.Any.fromFunction3(value))
+    
+    inline def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
+    
+    inline def setDocType(value: (/* node */ XMLDocType, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "docType", js.Any.fromFunction3(value))
+    
+    inline def setDocTypeUndefined: Self = StObject.set(x, "docType", js.undefined)
+    
+    inline def setDtdAttList(value: (/* node */ XMLDTDAttList, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "dtdAttList", js.Any.fromFunction3(value))
+    
+    inline def setDtdAttListUndefined: Self = StObject.set(x, "dtdAttList", js.undefined)
+    
+    inline def setDtdElement(value: (/* node */ XMLDTDElement, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "dtdElement", js.Any.fromFunction3(value))
+    
+    inline def setDtdElementUndefined: Self = StObject.set(x, "dtdElement", js.undefined)
+    
+    inline def setDtdEntity(value: (/* node */ XMLDTDEntity, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "dtdEntity", js.Any.fromFunction3(value))
+    
+    inline def setDtdEntityUndefined: Self = StObject.set(x, "dtdEntity", js.undefined)
+    
+    inline def setDtdNotation(value: (/* node */ XMLDTDNotation, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "dtdNotation", js.Any.fromFunction3(value))
+    
+    inline def setDtdNotationUndefined: Self = StObject.set(x, "dtdNotation", js.undefined)
+    
+    inline def setElement(value: (/* node */ XMLElement, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "element", js.Any.fromFunction3(value))
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setEndline(value: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "endline", js.Any.fromFunction3(value))
+    
+    inline def setEndlineUndefined: Self = StObject.set(x, "endline", js.undefined)
+    
+    inline def setIndent(value: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "indent", js.Any.fromFunction3(value))
+    
+    inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+    
+    inline def setOpenAttribute(value: (/* att */ XMLAttribute, /* options */ WriterOptions, /* level */ Double) => Callback): Self = StObject.set(x, "openAttribute", js.Any.fromFunction3((t0: /* att */ XMLAttribute, t1: /* options */ WriterOptions, t2: /* level */ Double) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOpenAttributeUndefined: Self = StObject.set(x, "openAttribute", js.undefined)
+    
+    inline def setOpenNode(value: (/* node */ XMLNode, /* options */ WriterOptions, /* level */ Double) => Callback): Self = StObject.set(x, "openNode", js.Any.fromFunction3((t0: /* node */ XMLNode, t1: /* options */ WriterOptions, t2: /* level */ Double) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOpenNodeUndefined: Self = StObject.set(x, "openNode", js.undefined)
+    
+    inline def setProcessingInstruction(
+      value: (/* node */ XMLProcessingInstruction, /* options */ WriterOptions, /* level */ Double) => Any
+    ): Self = StObject.set(x, "processingInstruction", js.Any.fromFunction3(value))
+    
+    inline def setProcessingInstructionUndefined: Self = StObject.set(x, "processingInstruction", js.undefined)
+    
+    inline def setRaw(value: (/* node */ XMLRaw, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "raw", js.Any.fromFunction3(value))
+    
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    
+    inline def setText(value: (/* node */ XMLText, /* options */ WriterOptions, /* level */ Double) => Any): Self = StObject.set(x, "text", js.Any.fromFunction3(value))
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

@@ -2,22 +2,38 @@ package typingsJapgolly.reduxBatchedSubscribe
 
 import typingsJapgolly.redux.mod.StoreEnhancer
 import typingsJapgolly.redux.mod.Unsubscribe
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-batched-subscribe", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  trait StoreExtension extends js.Object {
-    @JSName("subscribeImmediate")
-    var subscribeImmediate_Original: js.Function1[/* listener */ js.Function0[Unit], Unsubscribe] = js.native
-    def subscribeImmediate(listener: js.Function0[Unit]): Unsubscribe = js.native
-  }
+object mod {
   
-  def batchedSubscribe(batch: BatchFunction): StoreEnhancer[StoreExtension, js.Object] = js.native
+  @JSImport("redux-batched-subscribe", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def batchedSubscribe(batch: BatchFunction): StoreEnhancer[StoreExtension, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("batchedSubscribe")(batch.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[StoreExtension, js.Object]]
+  
   type BatchFunction = js.Function1[/* notify */ NotifyFunction, Unit]
+  
   type NotifyFunction = js.Function0[Unit]
+  
+  trait StoreExtension extends StObject {
+    
+    def subscribeImmediate(listener: js.Function0[Unit]): Unsubscribe
+    @JSName("subscribeImmediate")
+    var subscribeImmediate_Original: js.Function1[/* listener */ js.Function0[Unit], Unsubscribe]
+  }
+  object StoreExtension {
+    
+    inline def apply(subscribeImmediate: /* listener */ js.Function0[Unit] => Unsubscribe): StoreExtension = {
+      val __obj = js.Dynamic.literal(subscribeImmediate = js.Any.fromFunction1(subscribeImmediate))
+      __obj.asInstanceOf[StoreExtension]
+    }
+    
+    extension [Self <: StoreExtension](x: Self) {
+      
+      inline def setSubscribeImmediate(value: /* listener */ js.Function0[Unit] => Unsubscribe): Self = StObject.set(x, "subscribeImmediate", js.Any.fromFunction1(value))
+    }
+  }
 }
-

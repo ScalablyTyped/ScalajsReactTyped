@@ -1,21 +1,30 @@
 package typingsJapgolly.promiseTimeout
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("promise-timeout", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("promise-timeout", JSImport.Namespace)
   @js.native
-  class TimeoutError () extends Error {
+  val ^ : js.Any = js.native
+  
+  @JSImport("promise-timeout", "TimeoutError")
+  @js.native
+  open class TimeoutError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
   }
   
-  def timeout[T](promise: js.Promise[T], timeoutMillis: Double): js.Promise[T] = js.native
+  inline def timeout[T](promise: js.Promise[T], timeoutMillis: Double): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(promise.asInstanceOf[js.Any], timeoutMillis.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
 }
-

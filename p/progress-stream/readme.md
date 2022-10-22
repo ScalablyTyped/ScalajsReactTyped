@@ -11,9 +11,9 @@ Read the progress of a stream
 | Full name          | progress-stream |
 | Keywords           | stream, progress, percentage, percent, download, upload, file, streaming, request, http |
 | # releases         | 1 |
-| # dependents       | 144 |
-| # downloads        | 12428782 |
-| # stars            | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 1747950.6666666667 |
+| # stars            | 216.0 |
 
 ## Links
 - [Homepage](https://github.com/freeall/progress-stream#readme)

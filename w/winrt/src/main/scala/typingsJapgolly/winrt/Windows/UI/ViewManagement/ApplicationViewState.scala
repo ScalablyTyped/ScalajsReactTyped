@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.UI.ViewManagement
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ApplicationViewState extends js.Object
-
+sealed trait ApplicationViewState extends StObject
 @JSGlobal("Windows.UI.ViewManagement.ApplicationViewState")
 @js.native
-object ApplicationViewState extends js.Object {
-  @js.native
-  sealed trait filled extends ApplicationViewState
+object ApplicationViewState extends StObject {
   
   @js.native
-  sealed trait fullScreenLandscape extends ApplicationViewState
+  sealed trait filled
+    extends StObject
+       with ApplicationViewState
   
   @js.native
-  sealed trait fullScreenPortrait extends ApplicationViewState
+  sealed trait fullScreenLandscape
+    extends StObject
+       with ApplicationViewState
   
   @js.native
-  sealed trait snapped extends ApplicationViewState
+  sealed trait fullScreenPortrait
+    extends StObject
+       with ApplicationViewState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ApplicationViewState with Double] = js.native
-  /* 1 */ @js.native
-  object filled extends TopLevel[filled with Double]
-  
-  /* 0 */ @js.native
-  object fullScreenLandscape extends TopLevel[fullScreenLandscape with Double]
-  
-  /* 3 */ @js.native
-  object fullScreenPortrait extends TopLevel[fullScreenPortrait with Double]
-  
-  /* 2 */ @js.native
-  object snapped extends TopLevel[snapped with Double]
-  
+  @js.native
+  sealed trait snapped
+    extends StObject
+       with ApplicationViewState
 }
-

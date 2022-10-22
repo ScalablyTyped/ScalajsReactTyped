@@ -1,100 +1,178 @@
 package typingsJapgolly.zui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * modal trigger
   */
-trait ModalTriggerOption extends js.Object {
+trait ModalTriggerOption extends StObject {
+  
   var backdrop: js.UndefOr[Boolean] = js.undefined
-  var broken: js.UndefOr[js.Function0[_]] = js.undefined
+  
+  var broken: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var fade: js.UndefOr[Boolean] = js.undefined
+  
   var height: js.UndefOr[String] = js.undefined
-  var hidden: js.UndefOr[js.Function0[_]] = js.undefined
+  
+  var hidden: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var iframe: js.UndefOr[String] = js.undefined
+  
   var keyboard: js.UndefOr[Boolean] = js.undefined
-  var loaded: js.UndefOr[js.Function0[_]] = js.undefined
+  
+  var loaded: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var loadingIcon: js.UndefOr[String] = js.undefined
+  
   var moveable: js.UndefOr[Boolean] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
-  var onHide: js.UndefOr[js.Function0[_]] = js.undefined
-  var onShow: js.UndefOr[js.Function0[_]] = js.undefined
+  
+  var onHide: js.UndefOr[js.Function0[Any]] = js.undefined
+  
+  var onShow: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var postion: js.UndefOr[String] = js.undefined
+  
   var rememberPos: js.UndefOr[Boolean] = js.undefined
+  
   var remote: js.UndefOr[String] = js.undefined
-  var show: js.UndefOr[js.Function0[_]] = js.undefined
+  
+  var show: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var showHeader: js.UndefOr[Boolean] = js.undefined
+  
   var size: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
+  
   var waittime: js.UndefOr[Double] = js.undefined
+  
   var width: js.UndefOr[String] = js.undefined
 }
-
 object ModalTriggerOption {
-  @scala.inline
-  def apply(
-    backdrop: js.UndefOr[Boolean] = js.undefined,
-    broken: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    className: String = null,
-    fade: js.UndefOr[Boolean] = js.undefined,
-    height: String = null,
-    hidden: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    icon: String = null,
-    iframe: String = null,
-    keyboard: js.UndefOr[Boolean] = js.undefined,
-    loaded: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    loadingIcon: String = null,
-    moveable: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    onHide: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onShow: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    postion: String = null,
-    rememberPos: js.UndefOr[Boolean] = js.undefined,
-    remote: String = null,
-    show: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    showHeader: js.UndefOr[Boolean] = js.undefined,
-    size: String = null,
-    title: String = null,
-    `type`: String = null,
-    url: String = null,
-    waittime: Int | Double = null,
-    width: String = null
-  ): ModalTriggerOption = {
+  
+  inline def apply(): ModalTriggerOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
-    broken.foreach(p => __obj.updateDynamic("broken")(p.toJsFn))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    hidden.foreach(p => __obj.updateDynamic("hidden")(p.toJsFn))
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iframe != null) __obj.updateDynamic("iframe")(iframe.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    loaded.foreach(p => __obj.updateDynamic("loaded")(p.toJsFn))
-    if (loadingIcon != null) __obj.updateDynamic("loadingIcon")(loadingIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveable)) __obj.updateDynamic("moveable")(moveable.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    onHide.foreach(p => __obj.updateDynamic("onHide")(p.toJsFn))
-    onShow.foreach(p => __obj.updateDynamic("onShow")(p.toJsFn))
-    if (postion != null) __obj.updateDynamic("postion")(postion.asInstanceOf[js.Any])
-    if (!js.isUndefined(rememberPos)) __obj.updateDynamic("rememberPos")(rememberPos.asInstanceOf[js.Any])
-    if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
-    show.foreach(p => __obj.updateDynamic("show")(p.toJsFn))
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (waittime != null) __obj.updateDynamic("waittime")(waittime.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalTriggerOption]
   }
+  
+  extension [Self <: ModalTriggerOption](x: Self) {
+    
+    inline def setBackdrop(value: Boolean): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+    
+    inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
+    
+    inline def setBroken(value: CallbackTo[Any]): Self = StObject.set(x, "broken", value.toJsFn)
+    
+    inline def setBrokenUndefined: Self = StObject.set(x, "broken", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
+    
+    inline def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
+    
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHidden(value: CallbackTo[Any]): Self = StObject.set(x, "hidden", value.toJsFn)
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setIframe(value: String): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
+    
+    inline def setIframeUndefined: Self = StObject.set(x, "iframe", js.undefined)
+    
+    inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    
+    inline def setLoaded(value: CallbackTo[Any]): Self = StObject.set(x, "loaded", value.toJsFn)
+    
+    inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+    
+    inline def setLoadingIcon(value: String): Self = StObject.set(x, "loadingIcon", value.asInstanceOf[js.Any])
+    
+    inline def setLoadingIconUndefined: Self = StObject.set(x, "loadingIcon", js.undefined)
+    
+    inline def setMoveable(value: Boolean): Self = StObject.set(x, "moveable", value.asInstanceOf[js.Any])
+    
+    inline def setMoveableUndefined: Self = StObject.set(x, "moveable", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOnHide(value: CallbackTo[Any]): Self = StObject.set(x, "onHide", value.toJsFn)
+    
+    inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+    
+    inline def setOnShow(value: CallbackTo[Any]): Self = StObject.set(x, "onShow", value.toJsFn)
+    
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    
+    inline def setPostion(value: String): Self = StObject.set(x, "postion", value.asInstanceOf[js.Any])
+    
+    inline def setPostionUndefined: Self = StObject.set(x, "postion", js.undefined)
+    
+    inline def setRememberPos(value: Boolean): Self = StObject.set(x, "rememberPos", value.asInstanceOf[js.Any])
+    
+    inline def setRememberPosUndefined: Self = StObject.set(x, "rememberPos", js.undefined)
+    
+    inline def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+    
+    inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+    
+    inline def setShow(value: CallbackTo[Any]): Self = StObject.set(x, "show", value.toJsFn)
+    
+    inline def setShowHeader(value: Boolean): Self = StObject.set(x, "showHeader", value.asInstanceOf[js.Any])
+    
+    inline def setShowHeaderUndefined: Self = StObject.set(x, "showHeader", js.undefined)
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setWaittime(value: Double): Self = StObject.set(x, "waittime", value.asInstanceOf[js.Any])
+    
+    inline def setWaittimeUndefined: Self = StObject.set(x, "waittime", js.undefined)
+    
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

@@ -1,21 +1,23 @@
-package typingsJapgolly.browserSync
+package typingsJapgolly.browserSync.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.node.httpMod.IncomingMessage
+import typingsJapgolly.node.httpMod.ServerResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Hash[T] = org.scalablytyped.runtime.StringDictionary[T]
-  type MiddlewareHandler = js.Function3[
-    /* req */ typingsJapgolly.node.httpMod.IncomingMessage, 
-    /* res */ typingsJapgolly.node.httpMod.ServerResponse, 
-    /* next */ js.Function0[scala.Unit], 
-    js.Any
-  ]
-  type ProxyResponseMiddleware = js.Function3[
-    /* proxyRes */ typingsJapgolly.node.httpMod.ServerResponse | typingsJapgolly.node.httpMod.IncomingMessage, 
-    /* res */ typingsJapgolly.node.httpMod.ServerResponse, 
-    /* req */ typingsJapgolly.node.httpMod.IncomingMessage, 
-    scala.Unit
-  ]
-}
+
+type Hash[T] = StringDictionary[T]
+
+type MiddlewareHandler = js.Function3[
+/* req */ IncomingMessage, 
+/* res */ ServerResponse[IncomingMessage], 
+/* next */ js.Function0[Unit], 
+Any]
+
+type ProxyResponseMiddleware = js.Function3[
+/* proxyRes */ ServerResponse[IncomingMessage] | IncomingMessage, 
+/* res */ ServerResponse[IncomingMessage], 
+/* req */ IncomingMessage, 
+Unit]

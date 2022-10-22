@@ -1,13 +1,13 @@
 package typingsJapgolly.betterSqlite3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (message : string, code : string): / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias better-sqlite3.better-sqlite3.SqliteError * / object */ @JSImport("better-sqlite3", "SqliteError")
+- Dropped new (message : string, code : string): any */ @JSImport("better-sqlite3", "SqliteError")
 @js.native
-class SqliteErrorCls protected () extends js.Object {
+open class SqliteErrorCls protected () extends StObject {
   def this(message: String, code: String) = this()
 }
-

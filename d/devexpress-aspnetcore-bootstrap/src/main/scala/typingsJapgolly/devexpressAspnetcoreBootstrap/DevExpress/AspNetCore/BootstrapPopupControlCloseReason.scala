@@ -1,47 +1,37 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BootstrapPopupControlCloseReason extends js.Object
-
+sealed trait BootstrapPopupControlCloseReason extends StObject
 @JSGlobal("DevExpress.AspNetCore.BootstrapPopupControlCloseReason")
 @js.native
-object BootstrapPopupControlCloseReason extends js.Object {
-  @js.native
-  sealed trait API extends BootstrapPopupControlCloseReason
+object BootstrapPopupControlCloseReason extends StObject {
   
   @js.native
-  sealed trait CloseButton extends BootstrapPopupControlCloseReason
+  sealed trait API
+    extends StObject
+       with BootstrapPopupControlCloseReason
   
   @js.native
-  sealed trait Escape extends BootstrapPopupControlCloseReason
+  sealed trait CloseButton
+    extends StObject
+       with BootstrapPopupControlCloseReason
   
   @js.native
-  sealed trait MouseOut extends BootstrapPopupControlCloseReason
+  sealed trait Escape
+    extends StObject
+       with BootstrapPopupControlCloseReason
   
   @js.native
-  sealed trait OuterMouseClick extends BootstrapPopupControlCloseReason
+  sealed trait MouseOut
+    extends StObject
+       with BootstrapPopupControlCloseReason
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[BootstrapPopupControlCloseReason with String] = js.native
-  /* "API" */ @js.native
-  object API extends TopLevel[API with String]
-  
-  /* "CloseButton" */ @js.native
-  object CloseButton extends TopLevel[CloseButton with String]
-  
-  /* "Escape" */ @js.native
-  object Escape extends TopLevel[Escape with String]
-  
-  /* "MouseOut" */ @js.native
-  object MouseOut extends TopLevel[MouseOut with String]
-  
-  /* "OuterMouseClick" */ @js.native
-  object OuterMouseClick extends TopLevel[OuterMouseClick with String]
-  
+  @js.native
+  sealed trait OuterMouseClick
+    extends StObject
+       with BootstrapPopupControlCloseReason
 }
-

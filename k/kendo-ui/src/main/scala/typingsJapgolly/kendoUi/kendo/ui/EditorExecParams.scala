@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorExecParams extends js.Object {
-  var value: js.UndefOr[js.Any] = js.undefined
+trait EditorExecParams extends StObject {
+  
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object EditorExecParams {
-  @scala.inline
-  def apply(value: js.Any = null): EditorExecParams = {
+  
+  inline def apply(): EditorExecParams = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorExecParams]
   }
+  
+  extension [Self <: EditorExecParams](x: Self) {
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

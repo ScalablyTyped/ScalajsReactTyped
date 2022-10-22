@@ -1,18 +1,26 @@
 package typingsJapgolly.isUuid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("is-uuid", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def anyNonNil(value: String): Boolean = js.native
-  def nil(value: String): Boolean = js.native
-  def v1(value: String): Boolean = js.native
-  def v2(value: String): Boolean = js.native
-  def v3(value: String): Boolean = js.native
-  def v4(value: String): Boolean = js.native
-  def v5(value: String): Boolean = js.native
+object mod {
+  
+  @JSImport("is-uuid", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def anyNonNil(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("anyNonNil")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def nil(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nil")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def v1(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def v2(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v2")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def v3(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v3")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def v4(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def v5(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }
-

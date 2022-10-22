@@ -1,43 +1,73 @@
 package typingsJapgolly.hammerjs
 
-import org.scalajs.dom.raw.EventTarget
+import org.scalajs.dom.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HammerOptions extends js.Object {
+trait HammerOptions extends StObject {
+  
   var cssProps: js.UndefOr[CssProps] = js.undefined
+  
   var domEvents: js.UndefOr[Boolean] = js.undefined
+  
   var enable: js.UndefOr[Boolean | (js.Function1[/* manager */ HammerManager, Boolean])] = js.undefined
+  
   var inputClass: js.UndefOr[HammerInput] = js.undefined
+  
   var inputTarget: js.UndefOr[EventTarget] = js.undefined
+  
   var preset: js.UndefOr[js.Array[RecognizerTuple]] = js.undefined
+  
   var recognizers: js.UndefOr[js.Array[RecognizerTuple]] = js.undefined
+  
   var touchAction: js.UndefOr[String] = js.undefined
 }
-
 object HammerOptions {
-  @scala.inline
-  def apply(
-    cssProps: CssProps = null,
-    domEvents: js.UndefOr[Boolean] = js.undefined,
-    enable: Boolean | (js.Function1[/* manager */ HammerManager, Boolean]) = null,
-    inputClass: HammerInput = null,
-    inputTarget: EventTarget = null,
-    preset: js.Array[RecognizerTuple] = null,
-    recognizers: js.Array[RecognizerTuple] = null,
-    touchAction: String = null
-  ): HammerOptions = {
+  
+  inline def apply(): HammerOptions = {
     val __obj = js.Dynamic.literal()
-    if (cssProps != null) __obj.updateDynamic("cssProps")(cssProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(domEvents)) __obj.updateDynamic("domEvents")(domEvents.asInstanceOf[js.Any])
-    if (enable != null) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (inputClass != null) __obj.updateDynamic("inputClass")(inputClass.asInstanceOf[js.Any])
-    if (inputTarget != null) __obj.updateDynamic("inputTarget")(inputTarget.asInstanceOf[js.Any])
-    if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
-    if (recognizers != null) __obj.updateDynamic("recognizers")(recognizers.asInstanceOf[js.Any])
-    if (touchAction != null) __obj.updateDynamic("touchAction")(touchAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[HammerOptions]
   }
+  
+  extension [Self <: HammerOptions](x: Self) {
+    
+    inline def setCssProps(value: CssProps): Self = StObject.set(x, "cssProps", value.asInstanceOf[js.Any])
+    
+    inline def setCssPropsUndefined: Self = StObject.set(x, "cssProps", js.undefined)
+    
+    inline def setDomEvents(value: Boolean): Self = StObject.set(x, "domEvents", value.asInstanceOf[js.Any])
+    
+    inline def setDomEventsUndefined: Self = StObject.set(x, "domEvents", js.undefined)
+    
+    inline def setEnable(value: Boolean | (js.Function1[/* manager */ HammerManager, Boolean])): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    
+    inline def setEnableFunction1(value: /* manager */ HammerManager => Boolean): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
+    
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    
+    inline def setInputClass(value: HammerInput): Self = StObject.set(x, "inputClass", value.asInstanceOf[js.Any])
+    
+    inline def setInputClassUndefined: Self = StObject.set(x, "inputClass", js.undefined)
+    
+    inline def setInputTarget(value: EventTarget): Self = StObject.set(x, "inputTarget", value.asInstanceOf[js.Any])
+    
+    inline def setInputTargetUndefined: Self = StObject.set(x, "inputTarget", js.undefined)
+    
+    inline def setPreset(value: js.Array[RecognizerTuple]): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+    
+    inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+    
+    inline def setPresetVarargs(value: RecognizerTuple*): Self = StObject.set(x, "preset", js.Array(value*))
+    
+    inline def setRecognizers(value: js.Array[RecognizerTuple]): Self = StObject.set(x, "recognizers", value.asInstanceOf[js.Any])
+    
+    inline def setRecognizersUndefined: Self = StObject.set(x, "recognizers", js.undefined)
+    
+    inline def setRecognizersVarargs(value: RecognizerTuple*): Self = StObject.set(x, "recognizers", js.Array(value*))
+    
+    inline def setTouchAction(value: String): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
+    
+    inline def setTouchActionUndefined: Self = StObject.set(x, "touchAction", js.undefined)
+  }
 }
-

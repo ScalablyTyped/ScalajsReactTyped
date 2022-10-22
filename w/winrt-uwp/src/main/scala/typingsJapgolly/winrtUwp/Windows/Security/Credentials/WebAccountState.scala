@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Security.Credentials
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WebAccountState extends js.Object
-
+sealed trait WebAccountState extends StObject
 /** Describes the state of a WebAccount object. */
 @JSGlobal("Windows.Security.Credentials.WebAccountState")
 @js.native
-object WebAccountState extends js.Object {
+object WebAccountState extends StObject {
+  
   /** The account is connected. */
   @js.native
-  sealed trait connected extends WebAccountState
+  sealed trait connected
+    extends StObject
+       with WebAccountState
   
   /** The account was unable to connect. */
   @js.native
-  sealed trait error extends WebAccountState
+  sealed trait error
+    extends StObject
+       with WebAccountState
   
   /** The account is currently not connected. */
   @js.native
-  sealed trait none extends WebAccountState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WebAccountState with Double] = js.native
-  /* 1 */ @js.native
-  object connected extends TopLevel[connected with Double]
-  
-  /* 2 */ @js.native
-  object error extends TopLevel[error with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  sealed trait none
+    extends StObject
+       with WebAccountState
 }
-

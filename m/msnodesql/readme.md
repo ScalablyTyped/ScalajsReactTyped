@@ -11,9 +11,9 @@ Microsoft Driver for Node.js for SQL Server
 | Full name          | msnodesql |
 | Keywords           | sql, database, mssql, azure, sqlserver, tds, microsoft, msnodesql, node-sqlserver |
 | # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 2231 |
-| # stars            | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 94.0 |
+| # stars            | 632.0 |
 
 ## Links
 - [Homepage](https://github.com/WindowsAzure/node-sqlserver)

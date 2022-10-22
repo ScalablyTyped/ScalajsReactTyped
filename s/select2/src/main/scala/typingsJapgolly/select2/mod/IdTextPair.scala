@@ -1,28 +1,34 @@
 package typingsJapgolly.select2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IdTextPair extends js.Object {
-  var element: js.UndefOr[scala.Nothing] = js.undefined
+trait IdTextPair extends StObject {
+  
+  var element: Unit
+  
   var id: String
-  var loading: js.UndefOr[scala.Nothing] = js.undefined
+  
+  var loading: Unit
+  
   var text: String
 }
-
 object IdTextPair {
-  @scala.inline
-  def apply(
-    id: String,
-    text: String,
-    element: js.UndefOr[scala.Nothing] = js.undefined,
-    loading: js.UndefOr[scala.Nothing] = js.undefined
-  ): IdTextPair = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (!js.isUndefined(element)) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+  
+  inline def apply(element: Unit, id: String, loading: Unit, text: String): IdTextPair = {
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdTextPair]
   }
+  
+  extension [Self <: IdTextPair](x: Self) {
+    
+    inline def setElement(value: Unit): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setLoading(value: Unit): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,31 +1,30 @@
 organization := "org.scalablytyped.japgolly"
 name := "web3"
-version := "1.2.6-6e3bb4"
-scalaVersion := "2.13.1"
+version := "1.8.0-91fc03"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "bn_dot_js" % "4.11-dt-20200225Z-f6128f",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "web3-bzz" % "1.2.6-c80e1b",
-  "org.scalablytyped.japgolly" %%% "web3-core" % "1.2.6-9dbdcd",
-  "org.scalablytyped.japgolly" %%% "web3-core-helpers" % "1.2.6-d0c088",
-  "org.scalablytyped.japgolly" %%% "web3-core-method" % "1.2.6-1c6ed7",
-  "org.scalablytyped.japgolly" %%% "web3-core-subscriptions" % "1.2.6-e41e53",
-  "org.scalablytyped.japgolly" %%% "web3-eth" % "1.2.6-4c97c9",
-  "org.scalablytyped.japgolly" %%% "web3-eth-abi" % "1.2.6-2dd1f5",
-  "org.scalablytyped.japgolly" %%% "web3-eth-accounts" % "1.2.6-062a19",
-  "org.scalablytyped.japgolly" %%% "web3-eth-contract" % "1.2.6-e45b4b",
-  "org.scalablytyped.japgolly" %%% "web3-eth-ens" % "1.2.6-23e077",
-  "org.scalablytyped.japgolly" %%% "web3-eth-iban" % "1.2.6-313f79",
-  "org.scalablytyped.japgolly" %%% "web3-eth-personal" % "1.2.6-a7dbc6",
-  "org.scalablytyped.japgolly" %%% "web3-net" % "1.2.6-e5f2ba",
-  "org.scalablytyped.japgolly" %%% "web3-shh" % "1.2.6-7aec9c",
-  "org.scalablytyped.japgolly" %%% "web3-utils" % "1.2.6-8ef6b9")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "bignumber_dot_js" % "9.1.0-442d76",
+  "org.scalablytyped.japgolly" %%% "bn_dot_js" % "5.1-dt-20220829Z-191285",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "web3-bzz" % "1.8.0-782917",
+  "org.scalablytyped.japgolly" %%% "web3-core" % "1.8.0-a86950",
+  "org.scalablytyped.japgolly" %%% "web3-core-helpers" % "1.8.0-febfe4",
+  "org.scalablytyped.japgolly" %%% "web3-core-method" % "1.8.0-c9058b",
+  "org.scalablytyped.japgolly" %%% "web3-core-subscriptions" % "1.8.0-58662b",
+  "org.scalablytyped.japgolly" %%% "web3-eth" % "1.8.0-95d0a1",
+  "org.scalablytyped.japgolly" %%% "web3-eth-abi" % "1.8.0-89ab48",
+  "org.scalablytyped.japgolly" %%% "web3-eth-accounts" % "1.8.0-c0a226",
+  "org.scalablytyped.japgolly" %%% "web3-eth-contract" % "1.8.0-bb7ea3",
+  "org.scalablytyped.japgolly" %%% "web3-eth-ens" % "1.8.0-c83769",
+  "org.scalablytyped.japgolly" %%% "web3-eth-iban" % "1.8.0-ef589d",
+  "org.scalablytyped.japgolly" %%% "web3-eth-personal" % "1.8.0-3acfc0",
+  "org.scalablytyped.japgolly" %%% "web3-net" % "1.8.0-3c34cf",
+  "org.scalablytyped.japgolly" %%% "web3-shh" % "1.8.0-383766",
+  "org.scalablytyped.japgolly" %%% "web3-utils" % "1.8.0-1ac22f")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

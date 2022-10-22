@@ -1,21 +1,30 @@
 package typingsJapgolly.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TokenProvider extends js.Object {
+trait TokenProvider extends StObject {
+  
   var cacheTTLInSeconds: js.UndefOr[Double] = js.undefined
+  
   var enableCache: js.UndefOr[Boolean] = js.undefined
 }
-
 object TokenProvider {
-  @scala.inline
-  def apply(cacheTTLInSeconds: Int | Double = null, enableCache: js.UndefOr[Boolean] = js.undefined): TokenProvider = {
+  
+  inline def apply(): TokenProvider = {
     val __obj = js.Dynamic.literal()
-    if (cacheTTLInSeconds != null) __obj.updateDynamic("cacheTTLInSeconds")(cacheTTLInSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCache)) __obj.updateDynamic("enableCache")(enableCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenProvider]
   }
+  
+  extension [Self <: TokenProvider](x: Self) {
+    
+    inline def setCacheTTLInSeconds(value: Double): Self = StObject.set(x, "cacheTTLInSeconds", value.asInstanceOf[js.Any])
+    
+    inline def setCacheTTLInSecondsUndefined: Self = StObject.set(x, "cacheTTLInSeconds", js.undefined)
+    
+    inline def setEnableCache(value: Boolean): Self = StObject.set(x, "enableCache", value.asInstanceOf[js.Any])
+    
+    inline def setEnableCacheUndefined: Self = StObject.set(x, "enableCache", js.undefined)
+  }
 }
-

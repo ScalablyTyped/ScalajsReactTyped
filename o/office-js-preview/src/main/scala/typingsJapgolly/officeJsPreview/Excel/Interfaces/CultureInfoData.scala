@@ -1,36 +1,55 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `cultureInfo.toJSON()`. */
-trait CultureInfoData extends js.Object {
+trait CultureInfoData extends StObject {
+  
   /**
+    * Defines the culturally appropriate format of displaying date and time. This is based on current system culture settings.
     *
-    * Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on current system settings.
+    * @remarks
+    * [Api set: ExcelApi 1.12]
+    */
+  var datetimeFormat: js.UndefOr[DatetimeFormatInfoData] = js.undefined
+  
+  /**
+    * Gets the culture name in the format languagecode2-country/regioncode2 (e.g., "zh-cn" or "en-us"). This is based on current system settings.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApi 1.11]
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApi 1.11]
     */
-  var numberFormatInfo: js.UndefOr[NumberFormatInfoData] = js.undefined
+  var numberFormat: js.UndefOr[NumberFormatInfoData] = js.undefined
 }
-
 object CultureInfoData {
-  @scala.inline
-  def apply(name: String = null, numberFormatInfo: NumberFormatInfoData = null): CultureInfoData = {
+  
+  inline def apply(): CultureInfoData = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (numberFormatInfo != null) __obj.updateDynamic("numberFormatInfo")(numberFormatInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[CultureInfoData]
   }
+  
+  extension [Self <: CultureInfoData](x: Self) {
+    
+    inline def setDatetimeFormat(value: DatetimeFormatInfoData): Self = StObject.set(x, "datetimeFormat", value.asInstanceOf[js.Any])
+    
+    inline def setDatetimeFormatUndefined: Self = StObject.set(x, "datetimeFormat", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNumberFormat(value: NumberFormatInfoData): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+  }
 }
-

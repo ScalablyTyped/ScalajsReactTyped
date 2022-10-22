@@ -1,14 +1,18 @@
 package typingsJapgolly.prettier
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.prettier.mod.Parser
+import typingsJapgolly.prettier.anon.Typescript
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("prettier/parser-typescript", JSImport.Namespace)
-@js.native
-object parserTypescriptMod extends js.Object {
-  var parsers: StringDictionary[Parser] = js.native
+object parserTypescriptMod {
+  
+  @JSImport("prettier/parser-typescript", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("prettier/parser-typescript", "parsers")
+  @js.native
+  def parsers: Typescript = js.native
+  inline def parsers_=(x: Typescript): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parsers")(x.asInstanceOf[js.Any])
 }
-

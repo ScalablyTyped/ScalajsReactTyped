@@ -1,7 +1,7 @@
 
 # Scala.js typings for rlp
 
-Typings are for version 2.2.3
+Typings are for version 3.0.0
 
 ## Library description:
 Recursive Length Prefix Encoding Module
@@ -10,15 +10,15 @@ Recursive Length Prefix Encoding Module
 | ------------------ | :-------------: |
 | Full name          | rlp |
 | Keywords           | rlp, ethereum |
-| # releases         | 7 |
-| # dependents       | 184 |
-| # downloads        | 3731657 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2438935.3333333335 |
+| # stars            | 1835.0 |
 
 ## Links
-- [Homepage](https://github.com/ethereumjs/rlp#readme)
-- [Bugs](https://github.com/ethereumjs/rlp/issues)
-- [Repository](https://github.com/ethereumjs/rlp)
+- [Homepage](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/rlp#readme)
+- [Bugs](https://github.com/ethereumjs/ethereumjs-monorepo/issues?q=is%3Aissue+label%3A%22package%3A+rlp%22)
+- [Repository](https://github.com/ethereumjs/ethereumjs-monorepo)
 - [Npm](https://www.npmjs.com/package/rlp)
     
 

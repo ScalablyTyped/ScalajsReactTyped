@@ -1,12 +1,18 @@
 package typingsJapgolly.reactNativeSvgCharts.mod
 
-import typingsJapgolly.react.mod.Component
+import typingsJapgolly.react.mod.PureComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg-charts", "AreaChart")
 @js.native
-class AreaChart[T] ()
-  extends Component[AreaChartProps[T], js.Object, js.Any]
-
+open class AreaChart[T] protected ()
+  extends PureComponent[AreaChartProps[T], js.Object, Any] {
+  def this(props: AreaChartProps[T]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: AreaChartProps[T], context: Any) = this()
+}

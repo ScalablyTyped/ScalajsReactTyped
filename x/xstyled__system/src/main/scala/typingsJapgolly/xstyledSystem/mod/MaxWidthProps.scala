@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.MaxWidthProperty
+import typingsJapgolly.csstype.mod.Property.MaxWidth
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MaxWidthProps[TLength] extends js.Object {
-  val maxWidth: js.UndefOr[ResponsiveValue[MaxWidthProperty[TLength]]] = js.undefined
+trait MaxWidthProps[TLength] extends StObject {
+  
+  val maxWidth: js.UndefOr[ResponsiveValue[MaxWidth[TLength]]] = js.undefined
 }
-
 object MaxWidthProps {
-  @scala.inline
-  def apply[TLength](maxWidth: ResponsiveValue[MaxWidthProperty[TLength]] = null): MaxWidthProps[TLength] = {
+  
+  inline def apply[TLength](): MaxWidthProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxWidthProps[TLength]]
   }
+  
+  extension [Self <: MaxWidthProps[?], TLength](x: Self & MaxWidthProps[TLength]) {
+    
+    inline def setMaxWidth(value: ResponsiveValue[MaxWidth[TLength]]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMaxWidthVarargs(value: MaxWidth[TLength]*): Self = StObject.set(x, "maxWidth", js.Array(value*))
+  }
 }
-

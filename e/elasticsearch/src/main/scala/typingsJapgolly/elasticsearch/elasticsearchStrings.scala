@@ -6,268 +6,266 @@ import typingsJapgolly.elasticsearch.mod.DefaultOperator
 import typingsJapgolly.elasticsearch.mod.ExpandWildcards
 import typingsJapgolly.elasticsearch.mod.VersionType
 import typingsJapgolly.elasticsearch.mod._Refresh
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticsearchStrings {
-  @js.native
-  sealed trait AND extends DefaultOperator
   
   @js.native
-  sealed trait OR extends DefaultOperator
+  sealed trait AND
+    extends StObject
+       with DefaultOperator
+  inline def AND: AND = "AND".asInstanceOf[AND]
   
   @js.native
-  sealed trait _empty extends _Refresh
+  sealed trait OR
+    extends StObject
+       with DefaultOperator
+  inline def OR: OR = "OR".asInstanceOf[OR]
   
   @js.native
-  sealed trait abort extends Conflicts
+  sealed trait _empty
+    extends StObject
+       with _Refresh
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait all extends ExpandWildcards
+  sealed trait abort
+    extends StObject
+       with Conflicts
+  inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait all
+    extends StObject
+       with ExpandWildcards
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait b extends CatBytes
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait blocked extends js.Object
+  sealed trait b
+    extends StObject
+       with CatBytes
+  inline def b: b = "b".asInstanceOf[b]
   
   @js.native
-  sealed trait closed extends ExpandWildcards
+  sealed trait blocked extends StObject
+  inline def blocked: blocked = "blocked".asInstanceOf[blocked]
   
   @js.native
-  sealed trait cluster extends js.Object
+  sealed trait closed
+    extends StObject
+       with ExpandWildcards
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait cpu extends js.Object
+  sealed trait cluster extends StObject
+  inline def cluster: cluster = "cluster".asInstanceOf[cluster]
   
   @js.native
-  sealed trait create extends js.Object
+  sealed trait cpu extends StObject
+  inline def cpu: cpu = "cpu".asInstanceOf[cpu]
   
   @js.native
-  sealed trait dfs_query_and_fetch extends js.Object
+  sealed trait create extends StObject
+  inline def create: create = "create".asInstanceOf[create]
   
   @js.native
-  sealed trait dfs_query_then_fetch extends js.Object
+  sealed trait dfs_query_and_fetch extends StObject
+  inline def dfs_query_and_fetch: dfs_query_and_fetch = "dfs_query_and_fetch".asInstanceOf[dfs_query_and_fetch]
   
   @js.native
-  sealed trait external extends VersionType
+  sealed trait dfs_query_then_fetch extends StObject
+  inline def dfs_query_then_fetch: dfs_query_then_fetch = "dfs_query_then_fetch".asInstanceOf[dfs_query_then_fetch]
   
   @js.native
-  sealed trait external_gte extends VersionType
+  sealed trait external
+    extends StObject
+       with VersionType
+  inline def external: external = "external".asInstanceOf[external]
   
   @js.native
-  sealed trait force extends VersionType
+  sealed trait external_gte
+    extends StObject
+       with VersionType
+  inline def external_gte: external_gte = "external_gte".asInstanceOf[external_gte]
   
   @js.native
-  sealed trait g extends CatBytes
+  sealed trait force
+    extends StObject
+       with VersionType
+  inline def force: force = "force".asInstanceOf[force]
   
   @js.native
-  sealed trait gb extends CatBytes
+  sealed trait g
+    extends StObject
+       with CatBytes
+  inline def g: g = "g".asInstanceOf[g]
   
   @js.native
-  sealed trait green extends js.Object
+  sealed trait gb
+    extends StObject
+       with CatBytes
+  inline def gb: gb = "gb".asInstanceOf[gb]
   
   @js.native
-  sealed trait high extends js.Object
+  sealed trait green extends StObject
+  inline def green: green = "green".asInstanceOf[green]
   
   @js.native
-  sealed trait immediate extends js.Object
+  sealed trait high extends StObject
+  inline def high: high = "high".asInstanceOf[high]
   
   @js.native
-  sealed trait index extends js.Object
+  sealed trait immediate extends StObject
+  inline def immediate: immediate = "immediate".asInstanceOf[immediate]
   
   @js.native
-  sealed trait indices extends js.Object
+  sealed trait index extends StObject
+  inline def index: index = "index".asInstanceOf[index]
   
   @js.native
-  sealed trait internal extends VersionType
+  sealed trait indices extends StObject
+  inline def indices: indices = "indices".asInstanceOf[indices]
   
   @js.native
-  sealed trait k extends CatBytes
+  sealed trait internal
+    extends StObject
+       with VersionType
+  inline def internal: internal = "internal".asInstanceOf[internal]
   
   @js.native
-  sealed trait kb extends CatBytes
+  sealed trait k
+    extends StObject
+       with CatBytes
+  inline def k: k = "k".asInstanceOf[k]
   
   @js.native
-  sealed trait languid extends js.Object
+  sealed trait kb
+    extends StObject
+       with CatBytes
+  inline def kb: kb = "kb".asInstanceOf[kb]
   
   @js.native
-  sealed trait low extends js.Object
+  sealed trait languid extends StObject
+  inline def languid: languid = "languid".asInstanceOf[languid]
   
   @js.native
-  sealed trait m extends CatBytes
+  sealed trait low extends StObject
+  inline def low: low = "low".asInstanceOf[low]
   
   @js.native
-  sealed trait mb extends CatBytes
+  sealed trait m
+    extends StObject
+       with CatBytes
+  inline def m: m = "m".asInstanceOf[m]
   
   @js.native
-  sealed trait missing extends js.Object
+  sealed trait mb
+    extends StObject
+       with CatBytes
+  inline def mb: mb = "mb".asInstanceOf[mb]
   
   @js.native
-  sealed trait node extends js.Object
+  sealed trait missing extends StObject
+  inline def missing: missing = "missing".asInstanceOf[missing]
   
   @js.native
-  sealed trait nodes extends js.Object
+  sealed trait node extends StObject
+  inline def node: node = "node".asInstanceOf[node]
   
   @js.native
-  sealed trait none extends ExpandWildcards
+  sealed trait nodes extends StObject
+  inline def nodes: nodes = "nodes".asInstanceOf[nodes]
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait none
+    extends StObject
+       with ExpandWildcards
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait open extends ExpandWildcards
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait p extends CatBytes
+  sealed trait open
+    extends StObject
+       with ExpandWildcards
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait parents extends js.Object
+  sealed trait p
+    extends StObject
+       with CatBytes
+  inline def p: p = "p".asInstanceOf[p]
   
   @js.native
-  sealed trait pb extends CatBytes
+  sealed trait parents extends StObject
+  inline def parents: parents = "parents".asInstanceOf[parents]
   
   @js.native
-  sealed trait popular extends js.Object
+  sealed trait pb
+    extends StObject
+       with CatBytes
+  inline def pb: pb = "pb".asInstanceOf[pb]
   
   @js.native
-  sealed trait proceed extends Conflicts
+  sealed trait popular extends StObject
+  inline def popular: popular = "popular".asInstanceOf[popular]
   
   @js.native
-  sealed trait query_and_fetch extends js.Object
+  sealed trait proceed
+    extends StObject
+       with Conflicts
+  inline def proceed: proceed = "proceed".asInstanceOf[proceed]
   
   @js.native
-  sealed trait query_then_fetch extends js.Object
+  sealed trait query_and_fetch extends StObject
+  inline def query_and_fetch: query_and_fetch = "query_and_fetch".asInstanceOf[query_and_fetch]
   
   @js.native
-  sealed trait red extends js.Object
+  sealed trait query_then_fetch extends StObject
+  inline def query_then_fetch: query_then_fetch = "query_then_fetch".asInstanceOf[query_then_fetch]
   
   @js.native
-  sealed trait shards extends js.Object
+  sealed trait red extends StObject
+  inline def red: red = "red".asInstanceOf[red]
   
   @js.native
-  sealed trait t extends CatBytes
+  sealed trait shards extends StObject
+  inline def shards: shards = "shards".asInstanceOf[shards]
   
   @js.native
-  sealed trait tb extends CatBytes
+  sealed trait t
+    extends StObject
+       with CatBytes
+  inline def t: t = "t".asInstanceOf[t]
   
   @js.native
-  sealed trait urgent extends js.Object
+  sealed trait tb
+    extends StObject
+       with CatBytes
+  inline def tb: tb = "tb".asInstanceOf[tb]
   
   @js.native
-  sealed trait wait extends js.Object
+  sealed trait urgent extends StObject
+  inline def urgent: urgent = "urgent".asInstanceOf[urgent]
   
   @js.native
-  sealed trait wait_for extends _Refresh
+  sealed trait wait extends StObject
   
   @js.native
-  sealed trait yellow extends js.Object
+  sealed trait wait_for
+    extends StObject
+       with _Refresh
+  inline def wait_for: wait_for = "wait_for".asInstanceOf[wait_for]
   
-  @scala.inline
-  def AND: AND = "AND".asInstanceOf[AND]
-  @scala.inline
-  def OR: OR = "OR".asInstanceOf[OR]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def abort: abort = "abort".asInstanceOf[abort]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def b: b = "b".asInstanceOf[b]
-  @scala.inline
-  def blocked: blocked = "blocked".asInstanceOf[blocked]
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
-  @scala.inline
-  def cluster: cluster = "cluster".asInstanceOf[cluster]
-  @scala.inline
-  def cpu: cpu = "cpu".asInstanceOf[cpu]
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
-  @scala.inline
-  def dfs_query_and_fetch: dfs_query_and_fetch = "dfs_query_and_fetch".asInstanceOf[dfs_query_and_fetch]
-  @scala.inline
-  def dfs_query_then_fetch: dfs_query_then_fetch = "dfs_query_then_fetch".asInstanceOf[dfs_query_then_fetch]
-  @scala.inline
-  def external: external = "external".asInstanceOf[external]
-  @scala.inline
-  def external_gte: external_gte = "external_gte".asInstanceOf[external_gte]
-  @scala.inline
-  def force: force = "force".asInstanceOf[force]
-  @scala.inline
-  def g: g = "g".asInstanceOf[g]
-  @scala.inline
-  def gb: gb = "gb".asInstanceOf[gb]
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
-  @scala.inline
-  def high: high = "high".asInstanceOf[high]
-  @scala.inline
-  def immediate: immediate = "immediate".asInstanceOf[immediate]
-  @scala.inline
-  def index: index = "index".asInstanceOf[index]
-  @scala.inline
-  def indices: indices = "indices".asInstanceOf[indices]
-  @scala.inline
-  def internal: internal = "internal".asInstanceOf[internal]
-  @scala.inline
-  def k: k = "k".asInstanceOf[k]
-  @scala.inline
-  def kb: kb = "kb".asInstanceOf[kb]
-  @scala.inline
-  def languid: languid = "languid".asInstanceOf[languid]
-  @scala.inline
-  def low: low = "low".asInstanceOf[low]
-  @scala.inline
-  def m: m = "m".asInstanceOf[m]
-  @scala.inline
-  def mb: mb = "mb".asInstanceOf[mb]
-  @scala.inline
-  def missing: missing = "missing".asInstanceOf[missing]
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
-  @scala.inline
-  def nodes: nodes = "nodes".asInstanceOf[nodes]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def p: p = "p".asInstanceOf[p]
-  @scala.inline
-  def parents: parents = "parents".asInstanceOf[parents]
-  @scala.inline
-  def pb: pb = "pb".asInstanceOf[pb]
-  @scala.inline
-  def popular: popular = "popular".asInstanceOf[popular]
-  @scala.inline
-  def proceed: proceed = "proceed".asInstanceOf[proceed]
-  @scala.inline
-  def query_and_fetch: query_and_fetch = "query_and_fetch".asInstanceOf[query_and_fetch]
-  @scala.inline
-  def query_then_fetch: query_then_fetch = "query_then_fetch".asInstanceOf[query_then_fetch]
-  @scala.inline
-  def red: red = "red".asInstanceOf[red]
-  @scala.inline
-  def shards: shards = "shards".asInstanceOf[shards]
-  @scala.inline
-  def t: t = "t".asInstanceOf[t]
-  @scala.inline
-  def tb: tb = "tb".asInstanceOf[tb]
-  @scala.inline
-  def urgent: urgent = "urgent".asInstanceOf[urgent]
-  @scala.inline
-  def wait_for: wait_for = "wait_for".asInstanceOf[wait_for]
-  @scala.inline
-  def yellow: yellow = "yellow".asInstanceOf[yellow]
+  @js.native
+  sealed trait yellow extends StObject
+  inline def yellow: yellow = "yellow".asInstanceOf[yellow]
 }
-

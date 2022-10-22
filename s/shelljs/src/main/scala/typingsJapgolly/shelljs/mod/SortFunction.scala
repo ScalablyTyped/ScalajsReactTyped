@@ -1,26 +1,26 @@
 package typingsJapgolly.shelljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortFunction extends js.Object {
+trait SortFunction extends StObject {
+  
   def apply(files: String*): ShellString = js.native
   /**
-  	 * Return the contents of the files, sorted line-by-line.
-  	 * Sorting multiple files mixes their content (just as unix sort does).
-  	 */
+    * Return the contents of the files, sorted line-by-line.
+    * Sorting multiple files mixes their content (just as unix sort does).
+    */
   def apply(files: js.Array[String]): ShellString = js.native
   def apply(options: String, files: String*): ShellString = js.native
   /**
-  	 * Return the contents of the files, sorted line-by-line.
-  	 * Sorting multiple files mixes their content (just as unix sort does).
-  	 *
-  	 * @param options Available options:
-  	 *        - `-r`: Reverse the results
-  	 *        - `-n`: Compare according to numerical value
-  	 */
+    * Return the contents of the files, sorted line-by-line.
+    * Sorting multiple files mixes their content (just as unix sort does).
+    *
+    * @param options Available options:
+    *        - `-r`: Reverse the results
+    *        - `-n`: Compare according to numerical value
+    */
   def apply(options: String, files: js.Array[String]): ShellString = js.native
 }
-

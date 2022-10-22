@@ -1,21 +1,58 @@
 package typingsJapgolly.playcanvas.mod
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable2
+import typingsJapgolly.playcanvas.anon.TypeofScriptComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @class
-  * @name pc.ScriptComponentSystem
-  * @augments pc.ComponentSystem
-  * @description Create a new ScriptComponentSystem.
-  * @classdesc Allows scripts to be attached to an Entity and executed.
-  * @param {pc.Application} app - The application.
+  * Allows scripts to be attached to an Entity and executed.
+  *
+  * @augments ComponentSystem
   */
 @JSImport("playcanvas", "ScriptComponentSystem")
 @js.native
-class ScriptComponentSystem protected ()
-  extends typingsJapgolly.playcanvas.pc.ScriptComponentSystem {
-  def this(app: typingsJapgolly.playcanvas.pc.Application) = this()
+open class ScriptComponentSystem protected () extends ComponentSystem {
+  /**
+    * Create a new ComponentSystem instance.
+    *
+    * @param {AppBase} app - The application managing this system.
+    */
+  def this(app: AppBase) = this()
+  
+  var ComponentType: TypeofScriptComponent & (Instantiable2[/* system */ ScriptComponentSystem, /* entity */ Entity, ScriptComponent]) = js.native
+  
+  var DataType: Instantiable0[ScriptComponentData] = js.native
+  
+  def _addComponentToEnabled(component: Any): Unit = js.native
+  
+  def _callComponentMethod(components: Any, name: Any, dt: Any): Unit = js.native
+  
+  var _components: SortedLoopArray = js.native
+  
+  var _enabledComponents: SortedLoopArray = js.native
+  
+  def _onBeforeRemove(entity: Any, component: Any): Unit = js.native
+  
+  def _onInitialize(): Unit = js.native
+  
+  def _onPostInitialize(): Unit = js.native
+  
+  def _onPostUpdate(dt: Any): Unit = js.native
+  
+  def _onUpdate(dt: Any): Unit = js.native
+  
+  def _removeComponentFromEnabled(component: Any): Unit = js.native
+  
+  def _resetExecutionOrder(): Unit = js.native
+  
+  def cloneComponent(entity: Any, clone: Any): Component = js.native
+  
+  var id: String = js.native
+  
+  def initializeComponentData(component: Any, data: Any): Unit = js.native
+  
+  var preloading: Boolean = js.native
 }
-

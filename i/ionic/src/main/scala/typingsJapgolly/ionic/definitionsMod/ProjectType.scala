@@ -1,8 +1,8 @@
 package typingsJapgolly.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.ionic.ionicStrings.angular
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.ionic.ionicStrings.react
   - typingsJapgolly.ionic.ionicStrings.vue
 */
-trait ProjectType extends js.Object
-
+trait ProjectType extends StObject
 object ProjectType {
-  @scala.inline
-  def angular: typingsJapgolly.ionic.ionicStrings.angular = this.cast("angular")
-  @scala.inline
-  def bare: typingsJapgolly.ionic.ionicStrings.bare = this.cast("bare")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def custom: typingsJapgolly.ionic.ionicStrings.custom = this.cast("custom")
-  @scala.inline
-  def `ionic-angular`: typingsJapgolly.ionic.ionicStrings.`ionic-angular` = this.cast("ionic-angular")
-  @scala.inline
-  def ionic1: typingsJapgolly.ionic.ionicStrings.ionic1 = this.cast("ionic1")
-  @scala.inline
-  def react: typingsJapgolly.ionic.ionicStrings.react = this.cast("react")
-  @scala.inline
-  def vue: typingsJapgolly.ionic.ionicStrings.vue = this.cast("vue")
+  
+  inline def angular: typingsJapgolly.ionic.ionicStrings.angular = "angular".asInstanceOf[typingsJapgolly.ionic.ionicStrings.angular]
+  
+  inline def bare: typingsJapgolly.ionic.ionicStrings.bare = "bare".asInstanceOf[typingsJapgolly.ionic.ionicStrings.bare]
+  
+  inline def custom: typingsJapgolly.ionic.ionicStrings.custom = "custom".asInstanceOf[typingsJapgolly.ionic.ionicStrings.custom]
+  
+  inline def `ionic-angular`: typingsJapgolly.ionic.ionicStrings.`ionic-angular` = "ionic-angular".asInstanceOf[typingsJapgolly.ionic.ionicStrings.`ionic-angular`]
+  
+  inline def ionic1: typingsJapgolly.ionic.ionicStrings.ionic1 = "ionic1".asInstanceOf[typingsJapgolly.ionic.ionicStrings.ionic1]
+  
+  inline def react: typingsJapgolly.ionic.ionicStrings.react = "react".asInstanceOf[typingsJapgolly.ionic.ionicStrings.react]
+  
+  inline def vue: typingsJapgolly.ionic.ionicStrings.vue = "vue".asInstanceOf[typingsJapgolly.ionic.ionicStrings.vue]
 }
-

@@ -1,39 +1,39 @@
 package typingsJapgolly.sqlite
 
+import typingsJapgolly.sqlite.buildInterfacesMod.ISqlite.ConfigureOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqliteStrings {
-  @js.native
-  sealed trait busyTimeout extends js.Object
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait busyTimeout
+    extends StObject
+       with ConfigureOption
+  inline def busyTimeout: busyTimeout = "busyTimeout".asInstanceOf[busyTimeout]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait profile extends js.Object
+  sealed trait open extends StObject
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait trace extends js.Object
+  sealed trait profile
+    extends StObject
+       with ConfigureOption
+  inline def profile: profile = "profile".asInstanceOf[profile]
   
-  @scala.inline
-  def busyTimeout: busyTimeout = "busyTimeout".asInstanceOf[busyTimeout]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def profile: profile = "profile".asInstanceOf[profile]
-  @scala.inline
-  def trace: trace = "trace".asInstanceOf[trace]
+  @js.native
+  sealed trait trace
+    extends StObject
+       with ConfigureOption
+  inline def trace: trace = "trace".asInstanceOf[trace]
 }
-

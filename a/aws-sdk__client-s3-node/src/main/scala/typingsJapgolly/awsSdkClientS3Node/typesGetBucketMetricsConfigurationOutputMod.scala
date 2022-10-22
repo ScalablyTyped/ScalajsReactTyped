@@ -1,24 +1,37 @@
 package typingsJapgolly.awsSdkClientS3Node
 
-import typingsJapgolly.awsSdkClientS3Node.outputTypesUnionMod._OutputTypesUnion
 import typingsJapgolly.awsSdkClientS3Node.typesMetricsConfigurationMod.UnmarshalledMetricsConfiguration
-import typingsJapgolly.awsSdkTypes.responseMod.MetadataBearer
+import typingsJapgolly.awsSdkClientS3Node.typesOutputTypesUnionMod._OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/types/GetBucketMetricsConfigurationOutput", JSImport.Namespace)
-@js.native
-object typesGetBucketMetricsConfigurationOutputMod extends js.Object {
-  @js.native
+object typesGetBucketMetricsConfigurationOutputMod {
+  
   trait GetBucketMetricsConfigurationOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
+    
     /**
       * <p>Specifies the metrics configuration.</p>
       */
-    var MetricsConfiguration: js.UndefOr[UnmarshalledMetricsConfiguration] = js.native
+    var MetricsConfiguration: js.UndefOr[UnmarshalledMetricsConfiguration] = js.undefined
   }
-  
+  object GetBucketMetricsConfigurationOutput {
+    
+    inline def apply($metadata: ResponseMetadata): GetBucketMetricsConfigurationOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetBucketMetricsConfigurationOutput]
+    }
+    
+    extension [Self <: GetBucketMetricsConfigurationOutput](x: Self) {
+      
+      inline def setMetricsConfiguration(value: UnmarshalledMetricsConfiguration): Self = StObject.set(x, "MetricsConfiguration", value.asInstanceOf[js.Any])
+      
+      inline def setMetricsConfigurationUndefined: Self = StObject.set(x, "MetricsConfiguration", js.undefined)
+    }
+  }
 }
-

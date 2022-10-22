@@ -1,16 +1,22 @@
 package typingsJapgolly.sourcemapCodec
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sourcemap-codec", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def decode(mappings: String): SourceMapMappings = js.native
-  def encode(decoded: SourceMapMappings): String = js.native
+object mod {
+  
+  @JSImport("sourcemap-codec", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def decode(mappings: String): SourceMapMappings = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(mappings.asInstanceOf[js.Any]).asInstanceOf[SourceMapMappings]
+  
+  inline def encode(decoded: SourceMapMappings): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(decoded.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   type SourceMapLine = js.Array[SourceMapSegment]
+  
   type SourceMapMappings = js.Array[SourceMapLine]
+  
   type SourceMapSegment = js.Array[Double] | (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple5[Double, Double, Double, Double, Double])
 }
-

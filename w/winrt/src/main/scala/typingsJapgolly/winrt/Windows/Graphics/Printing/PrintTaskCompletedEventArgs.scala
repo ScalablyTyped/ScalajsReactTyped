@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Graphics.Printing.PrintTaskCompletedEventArgs")
-@js.native
-class PrintTaskCompletedEventArgs () extends IPrintTaskCompletedEventArgs {
-  /* CompleteClass */
-  override var completion: PrintTaskCompletion = js.native
+trait PrintTaskCompletedEventArgs
+  extends StObject
+     with IPrintTaskCompletedEventArgs
+object PrintTaskCompletedEventArgs {
+  
+  inline def apply(completion: PrintTaskCompletion): PrintTaskCompletedEventArgs = {
+    val __obj = js.Dynamic.literal(completion = completion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrintTaskCompletedEventArgs]
+  }
 }
-

@@ -1,12 +1,15 @@
 package typingsJapgolly.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Work-around for p5.Graphics inheriting from both p5 and p5.Element
 @js.native
-trait _Graphics extends Element {
+trait _Graphics
+  extends StObject
+     with Element {
+  
   /**
     *   Resets certain values such as those modified by
     *   functions in the Transform category and in the
@@ -17,4 +20,3 @@ trait _Graphics extends Element {
     */
   def reset(): Unit = js.native
 }
-

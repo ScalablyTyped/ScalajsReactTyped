@@ -8,34 +8,42 @@ import typingsJapgolly.activexDao.DAO.QueryDef
 import typingsJapgolly.activexDao.DAO.Relation
 import typingsJapgolly.activexDao.DAO.TableDef
 import typingsJapgolly.activexDao.DAO.User
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
+  
   @JSName("DAO.DBEngine")
   var DAODotDBEngine: DBEngine
+  
   @JSName("DAO.Field")
   var DAODotField: Field
+  
   @JSName("DAO.Group")
   var DAODotGroup: Group
+  
   @JSName("DAO.Index")
   var DAODotIndex: Index
+  
   @JSName("DAO.PrivateDBEngine")
   var DAODotPrivateDBEngine: DBEngine
+  
   @JSName("DAO.QueryDef")
   var DAODotQueryDef: QueryDef
+  
   @JSName("DAO.Relation")
   var DAODotRelation: Relation
+  
   @JSName("DAO.TableDef")
   var DAODotTableDef: TableDef
+  
   @JSName("DAO.User")
   var DAODotUser: User
 }
-
 object ActiveXObjectNameMap {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     DAODotDBEngine: DBEngine,
     DAODotField: Field,
     DAODotGroup: Group,
@@ -58,5 +66,25 @@ object ActiveXObjectNameMap {
     __obj.updateDynamic("DAO.User")(DAODotUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
+  
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
+    
+    inline def setDAODotDBEngine(value: DBEngine): Self = StObject.set(x, "DAO.DBEngine", value.asInstanceOf[js.Any])
+    
+    inline def setDAODotField(value: Field): Self = StObject.set(x, "DAO.Field", value.asInstanceOf[js.Any])
+    
+    inline def setDAODotGroup(value: Group): Self = StObject.set(x, "DAO.Group", value.asInstanceOf[js.Any])
+    
+    inline def setDAODotIndex(value: Index): Self = StObject.set(x, "DAO.Index", value.asInstanceOf[js.Any])
+    
+    inline def setDAODotPrivateDBEngine(value: DBEngine): Self = StObject.set(x, "DAO.PrivateDBEngine", value.asInstanceOf[js.Any])
+    
+    inline def setDAODotQueryDef(value: QueryDef): Self = StObject.set(x, "DAO.QueryDef", value.asInstanceOf[js.Any])
+    
+    inline def setDAODotRelation(value: Relation): Self = StObject.set(x, "DAO.Relation", value.asInstanceOf[js.Any])
+    
+    inline def setDAODotTableDef(value: TableDef): Self = StObject.set(x, "DAO.TableDef", value.asInstanceOf[js.Any])
+    
+    inline def setDAODotUser(value: User): Self = StObject.set(x, "DAO.User", value.asInstanceOf[js.Any])
+  }
 }
-

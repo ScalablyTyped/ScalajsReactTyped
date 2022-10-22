@@ -1,45 +1,21 @@
 package typingsJapgolly.materialUiCore.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.materialUiCore.createMuiThemeMod.Theme
-import typingsJapgolly.materialUiCore.muiThemeProviderMod.MuiThemeProviderProps
-import typingsJapgolly.materialUiCore.muiThemeProviderMod.SheetManagerTheme
-import typingsJapgolly.materialUiCore.muiThemeProviderMod.default
-import typingsJapgolly.materialUiCore.withStylesMod.StylesCreator
-import typingsJapgolly.std.Map
+import typingsJapgolly.materialUiStyles.themeProviderThemeProviderMod.ThemeProviderProps
+import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MuiThemeProvider {
-  def apply(
-    theme: Theme | (js.Function1[/* outer */ Theme | Null, Theme]),
-    disableStylesGeneration: js.UndefOr[Boolean] = js.undefined,
-    sheetsManager: Map[StylesCreator, Map[Theme, SheetManagerTheme]] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[MuiThemeProviderProps, default, Unit, MuiThemeProviderProps] = {
-    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(disableStylesGeneration)) __obj.updateDynamic("disableStylesGeneration")(disableStylesGeneration.asInstanceOf[js.Any])
-    if (sheetsManager != null) __obj.updateDynamic("sheetsManager")(sheetsManager.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUiCore.muiThemeProviderMod.MuiThemeProviderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUiCore.muiThemeProviderMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUiCore.muiThemeProviderMod.MuiThemeProviderProps])(children: _*)
+  inline def apply[T](theme: Partial[T] | (js.Function1[T, T])): SharedBuilder_ThemeProviderProps_332645208[T] = {
+    val __props = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    new SharedBuilder_ThemeProviderProps_332645208[T](js.Array(this.component, __props.asInstanceOf[ThemeProviderProps[T]]))
   }
-  @JSImport("@material-ui/core/styles/MuiThemeProvider", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("@material-ui/core", "MuiThemeProvider")
+  @js.native
+  val component: js.Object = js.native
+  
+  def withProps[T](p: ThemeProviderProps[T]): SharedBuilder_ThemeProviderProps_332645208[T] = new SharedBuilder_ThemeProviderProps_332645208[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

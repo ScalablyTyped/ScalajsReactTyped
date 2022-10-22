@@ -1,21 +1,17 @@
 package typingsJapgolly.bootstrapColorpicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.right
   - typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.left
 */
-trait ColorPickerAlignOptions extends js.Object
-
+trait ColorPickerAlignOptions extends StObject
 object ColorPickerAlignOptions {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def left: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.left = this.cast("left")
-  @scala.inline
-  def right: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.right = this.cast("right")
+  
+  inline def left: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.left = "left".asInstanceOf[typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.left]
+  
+  inline def right: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.right = "right".asInstanceOf[typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.right]
 }
-

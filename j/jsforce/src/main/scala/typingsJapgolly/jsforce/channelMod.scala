@@ -1,17 +1,15 @@
 package typingsJapgolly.jsforce
 
 import typingsJapgolly.jsforce.streamingMod.Streaming
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsforce/channel", JSImport.Namespace)
-@js.native
-object channelMod extends js.Object {
+object channelMod {
+  
+  @JSImport("jsforce/channel", "Channel")
   @js.native
-  class Channel protected () extends js.Object {
+  open class Channel protected () extends StObject {
     def this(streaming: Streaming, name: String) = this()
   }
-  
 }
-

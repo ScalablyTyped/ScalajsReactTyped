@@ -1,28 +1,28 @@
 package typingsJapgolly.mendixmodelsdk.mod
 
-import typingsJapgolly.mendixmodelsdk.structuresMod.IStructureClass
-import typingsJapgolly.mendixmodelsdk.unitsMod.IModelUnit
-import typingsJapgolly.mendixmodelsdk.unitsMod.IStructuralUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.IStructureClass
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalUnitsMod.IModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalUnitsMod.IStructuralUnit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "StructuralChildListProperty")
 @js.native
-class StructuralChildListProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
-  extends typingsJapgolly.mendixmodelsdk.propertiesMod.StructuralChildListProperty[T] {
+open class StructuralChildListProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcSdkInternalPropertiesMod.StructuralChildListProperty[T] {
   def this(
     declaredOn: IStructureClass,
-    parent: typingsJapgolly.mendixmodelsdk.unitsMod.StructuralUnit,
+    parent: typingsJapgolly.mendixmodelsdk.srcSdkInternalUnitsMod.StructuralUnit[IAbstractModel],
     name: String,
     value: js.Array[T]
   ) = this()
   def this(
     declaredOn: IStructureClass,
-    parent: typingsJapgolly.mendixmodelsdk.unitsMod.StructuralUnit,
+    parent: typingsJapgolly.mendixmodelsdk.srcSdkInternalUnitsMod.StructuralUnit[IAbstractModel],
     name: String,
     value: js.Array[T],
     targetRefType: String
   ) = this()
 }
-

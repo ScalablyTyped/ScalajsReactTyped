@@ -1,26 +1,40 @@
 package typingsJapgolly.multistream
 
-import typingsJapgolly.node.NodeJS.ReadableStream
+import org.scalajs.dom.ReadableStream
+import typingsJapgolly.node.streamMod.Readable
+import typingsJapgolly.node.streamMod.ReadableOptions
 import typingsJapgolly.node.streamMod.Stream
-import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("multistream", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("multistream", JSImport.Namespace)
   @js.native
-  trait FactoryStreamCallback extends js.Object {
-    def apply(): js.Any = js.native
-    def apply(err: Null, stream: ReadableStream): js.Any = js.native
-    def apply(err: Error): js.Any = js.native
+  open class ^ protected () extends Readable {
+    def this(streams: Streams) = this()
+    def this(streams: Streams, opts: ReadableOptions) = this()
+  }
+  @JSImport("multistream", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def obj(streams: Streams): MultiStream = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(streams.asInstanceOf[js.Any]).asInstanceOf[MultiStream]
+  
+  type FactoryStream = js.Function1[/* cb */ FactoryStreamCallback, Unit]
+  
+  @js.native
+  trait FactoryStreamCallback extends StObject {
+    
+    def apply(): Unit = js.native
+    def apply(err: js.Error): Unit = js.native
+    def apply(err: Null, stream: ReadableStream[Any]): Unit = js.native
   }
   
-  def apply(streams: Streams): ReadableStream = js.native
-  def obj(streams: Streams): ReadableStream = js.native
-  type FactoryStream = js.Function1[/* cb */ FactoryStreamCallback, Unit]
   type LazyStream = js.Function0[Stream]
-  type Streams = (js.Array[LazyStream | ReadableStream]) | FactoryStream
+  
+  type MultiStream = Readable
+  
+  type Streams = (js.Array[LazyStream | Readable]) | FactoryStream
 }
-

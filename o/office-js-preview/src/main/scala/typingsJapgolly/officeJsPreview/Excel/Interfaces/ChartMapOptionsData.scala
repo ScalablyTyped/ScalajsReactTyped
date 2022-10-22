@@ -18,49 +18,60 @@ import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Robinson
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.ShowAll
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.State
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.World
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartMapOptions.toJSON()`. */
-trait ChartMapOptionsData extends js.Object {
+trait ChartMapOptionsData extends StObject {
+  
   /**
+    * Specifies the series map labels strategy of a region map chart.
     *
-    * Returns or sets the series map labels strategy of a region map chart. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var labelStrategy: js.UndefOr[ChartMapLabelStrategy | None | BestFit | ShowAll] = js.undefined
+  
   /**
+    * Specifies the series mapping level of a region map chart.
     *
-    * Returns or sets the series mapping level of a region map chart. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var level: js.UndefOr[
     ChartMapAreaLevel | Automatic | DataOnly | City | County | State | Country | Continent | World
   ] = js.undefined
+  
   /**
+    * Specifies the series projection type of a region map chart.
     *
-    * Returns or sets the series projection type of a region map chart. Read/Write.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var projectionType: js.UndefOr[ChartMapProjectionType | Automatic | Mercator | Miller | Robinson | Albers] = js.undefined
 }
-
 object ChartMapOptionsData {
-  @scala.inline
-  def apply(
-    labelStrategy: ChartMapLabelStrategy | None | BestFit | ShowAll = null,
-    level: ChartMapAreaLevel | Automatic | DataOnly | City | County | State | Country | Continent | World = null,
-    projectionType: ChartMapProjectionType | Automatic | Mercator | Miller | Robinson | Albers = null
-  ): ChartMapOptionsData = {
+  
+  inline def apply(): ChartMapOptionsData = {
     val __obj = js.Dynamic.literal()
-    if (labelStrategy != null) __obj.updateDynamic("labelStrategy")(labelStrategy.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (projectionType != null) __obj.updateDynamic("projectionType")(projectionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartMapOptionsData]
   }
+  
+  extension [Self <: ChartMapOptionsData](x: Self) {
+    
+    inline def setLabelStrategy(value: ChartMapLabelStrategy | None | BestFit | ShowAll): Self = StObject.set(x, "labelStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setLabelStrategyUndefined: Self = StObject.set(x, "labelStrategy", js.undefined)
+    
+    inline def setLevel(
+      value: ChartMapAreaLevel | Automatic | DataOnly | City | County | State | Country | Continent | World
+    ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setProjectionType(value: ChartMapProjectionType | Automatic | Mercator | Miller | Robinson | Albers): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionTypeUndefined: Self = StObject.set(x, "projectionType", js.undefined)
+  }
 }
-

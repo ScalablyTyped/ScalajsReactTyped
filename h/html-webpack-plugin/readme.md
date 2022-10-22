@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-webpack-plugin
 
-Typings are for version 3.2
+Typings are for version 5.5.0
 
 ## Library description:
 Simplifies creation of HTML files to serve your webpack bundles
@@ -10,10 +10,10 @@ Simplifies creation of HTML files to serve your webpack bundles
 | ------------------ | :-------------: |
 | Full name          | html-webpack-plugin |
 | Keywords           | webpack, plugin, html, html-webpack-plugin |
-| # releases         | 25 |
-| # dependents       | 6068 |
-| # downloads        | 195620408 |
-| # stars            | 195 |
+| # releases         | 37 |
+| # dependents       | 0.0 |
+| # downloads        | 5.2036953666666664E7 |
+| # stars            | 10185.0 |
 
 ## Links
 - [Homepage](https://github.com/jantimon/html-webpack-plugin)
@@ -24,7 +24,7 @@ Simplifies creation of HTML files to serve your webpack bundles
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,62 +1,58 @@
 package typingsJapgolly.officeJsPreview.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RecipientType extends js.Object
-
+sealed trait RecipientType extends StObject
 /**
-  * Specifies the type of recipient for an appointment.
-  *
-  * [Api set: Mailbox 1.1]
+  * Specifies the type of recipient of a message or appointment.
   *
   * @remarks
+  * [Api set: Mailbox 1.1]
+  *
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **Important**: A `recipientType` property value isn't returned by the 
+  * {@link https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-preview#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync} 
+  * and {@link https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-preview#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods.
+  * The email sender or appointment organizer is always a user whose email address is on the Exchange server.
   */
 @JSGlobal("Office.MailboxEnums.RecipientType")
 @js.native
-object RecipientType extends js.Object {
-  /**
-    * Specifies that the recipient is a distribution list containing a list of email addresses.
-    */
-  @js.native
-  sealed trait DistributionList extends RecipientType
+object RecipientType extends StObject {
   
   /**
-    * Specifies that the recipient is an SMTP email address that is not on the Exchange server.
+    * Specifies the recipient is a distribution list containing a list of email addresses.
     */
   @js.native
-  sealed trait ExternalUser extends RecipientType
+  sealed trait DistributionList
+    extends StObject
+       with RecipientType
   
   /**
-    * Specifies that the recipient is not one of the other recipient types.
+    * Specifies the recipient is an SMTP email address that isn't on the Exchange server.
     */
   @js.native
-  sealed trait Other extends RecipientType
+  sealed trait ExternalUser
+    extends StObject
+       with RecipientType
   
   /**
-    * Specifies that the recipient is an SMTP email address that is on the Exchange server.
+    * Specifies the recipient isn't one of the other recipient types. It also refers to a recipient that isn't resolved against the Exchange address book,
+    * and is therefore treated as an external SMTP address.
     */
   @js.native
-  sealed trait User extends RecipientType
+  sealed trait Other
+    extends StObject
+       with RecipientType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[RecipientType with String] = js.native
-  /* "distributionList" */ @js.native
-  object DistributionList extends TopLevel[DistributionList with String]
-  
-  /* "externalUser" */ @js.native
-  object ExternalUser extends TopLevel[ExternalUser with String]
-  
-  /* "other" */ @js.native
-  object Other extends TopLevel[Other with String]
-  
-  /* "user" */ @js.native
-  object User extends TopLevel[User with String]
-  
+  /**
+    * Specifies the recipient is an SMTP email address on the Exchange server.
+    */
+  @js.native
+  sealed trait User
+    extends StObject
+       with RecipientType
 }
-

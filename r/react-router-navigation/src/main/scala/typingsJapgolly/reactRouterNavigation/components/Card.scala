@@ -1,80 +1,81 @@
 package typingsJapgolly.reactRouterNavigation.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.ComponentClassP
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.ComponentClassP
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
-import typingsJapgolly.reactRouter.mod.RouterProps
+import typingsJapgolly.reactRouter.distLibComponentsMod.RouterProps
 import typingsJapgolly.reactRouterNavigation.mod.CardProps
 import typingsJapgolly.reactRouterNavigation.mod.CardSubViewProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Card {
-  def apply(
-    backButtonTintColor: String = null,
-    backButtonTitle: String = null,
-    component: ComponentClassP[RouterProps with js.Object] = null,
-    exact: js.UndefOr[Boolean] = js.undefined,
-    hideBackButton: js.UndefOr[Boolean] = js.undefined,
-    hideNavBar: js.UndefOr[Boolean] = js.undefined,
-    navBarStyle: StyleProp[ViewStyle] = null,
-    path: String = null,
-    render: /* props */ RouterProps => CallbackTo[Node] = null,
-    renderLeftButton: /* props */ CardSubViewProps => CallbackTo[Node] = null,
-    renderNavBar: /* props */ CardSubViewProps => CallbackTo[Node] = null,
-    renderRightButton: /* props */ CardSubViewProps => CallbackTo[Node] = null,
-    renderTitle: /* props */ CardSubViewProps => CallbackTo[Node] = null,
-    strict: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    titleStyle: StyleProp[TextStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: (js.Function1[/* props */ RouterProps, Node]) | Node = null
-  ): UnmountedSimple[
-    CardProps, 
-    MountedWithRawType[CardProps, js.Object, RawMounted[CardProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (backButtonTintColor != null) __obj.updateDynamic("backButtonTintColor")(backButtonTintColor.asInstanceOf[js.Any])
-    if (backButtonTitle != null) __obj.updateDynamic("backButtonTitle")(backButtonTitle.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideBackButton)) __obj.updateDynamic("hideBackButton")(hideBackButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideNavBar)) __obj.updateDynamic("hideNavBar")(hideNavBar.asInstanceOf[js.Any])
-    if (navBarStyle != null) __obj.updateDynamic("navBarStyle")(navBarStyle.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactRouter.mod.RouterProps) => render(t0).runNow()))
-    if (renderLeftButton != null) __obj.updateDynamic("renderLeftButton")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactRouterNavigation.mod.CardSubViewProps) => renderLeftButton(t0).runNow()))
-    if (renderNavBar != null) __obj.updateDynamic("renderNavBar")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactRouterNavigation.mod.CardSubViewProps) => renderNavBar(t0).runNow()))
-    if (renderRightButton != null) __obj.updateDynamic("renderRightButton")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactRouterNavigation.mod.CardSubViewProps) => renderRightButton(t0).runNow()))
-    if (renderTitle != null) __obj.updateDynamic("renderTitle")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactRouterNavigation.mod.CardSubViewProps) => renderTitle(t0).runNow()))
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.reactRouterNavigation.mod.CardProps, 
-  japgolly.scalajs.react.Children.None, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactRouterNavigation.mod.CardProps])
-  }
   @JSImport("react-router-navigation", "Card")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def backButtonTintColor(value: String): this.type = set("backButtonTintColor", value.asInstanceOf[js.Any])
+    
+    inline def backButtonTitle(value: String): this.type = set("backButtonTitle", value.asInstanceOf[js.Any])
+    
+    inline def children(value: (js.Function1[/* props */ RouterProps, Node]) | Node): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenFunction1(value: /* props */ RouterProps => Node): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def childrenNull: this.type = set("children", null)
+    
+    inline def childrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def component(value: ComponentClassP[RouterProps & js.Object]): this.type = set("component", value.asInstanceOf[js.Any])
+    
+    inline def exact(value: Boolean): this.type = set("exact", value.asInstanceOf[js.Any])
+    
+    inline def hideBackButton(value: Boolean): this.type = set("hideBackButton", value.asInstanceOf[js.Any])
+    
+    inline def hideNavBar(value: Boolean): this.type = set("hideNavBar", value.asInstanceOf[js.Any])
+    
+    inline def navBarStyle(value: StyleProp[ViewStyle]): this.type = set("navBarStyle", value.asInstanceOf[js.Any])
+    
+    inline def navBarStyleNull: this.type = set("navBarStyle", null)
+    
+    inline def path(value: String): this.type = set("path", value.asInstanceOf[js.Any])
+    
+    inline def render(value: /* props */ RouterProps => Node): this.type = set("render", js.Any.fromFunction1(value))
+    
+    inline def renderLeftButton(value: /* props */ CardSubViewProps => Node): this.type = set("renderLeftButton", js.Any.fromFunction1(value))
+    
+    inline def renderNavBar(value: /* props */ CardSubViewProps => Node): this.type = set("renderNavBar", js.Any.fromFunction1(value))
+    
+    inline def renderRightButton(value: /* props */ CardSubViewProps => Node): this.type = set("renderRightButton", js.Any.fromFunction1(value))
+    
+    inline def renderTitle(value: /* props */ CardSubViewProps => Node): this.type = set("renderTitle", js.Any.fromFunction1(value))
+    
+    inline def strict(value: Boolean): this.type = set("strict", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def titleStyle(value: StyleProp[TextStyle]): this.type = set("titleStyle", value.asInstanceOf[js.Any])
+    
+    inline def titleStyleNull: this.type = set("titleStyle", null)
+  }
+  
+  implicit def make(companion: Card.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CardProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

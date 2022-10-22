@@ -1,14 +1,16 @@
 package typingsJapgolly.whitelistObject
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("whitelist-object", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(`object`: StringDictionary[js.Any], keys: js.Array[String]): StringDictionary[js.Any] = js.native
-  def apply(`object`: StringDictionary[js.Any], keys: js.Array[String], shallow: Boolean): StringDictionary[js.Any] = js.native
+object mod {
+  
+  inline def apply(`object`: StringDictionary[Any], keys: js.Array[String]): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def apply(`object`: StringDictionary[Any], keys: js.Array[String], shallow: Boolean): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], shallow.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  
+  @JSImport("whitelist-object", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

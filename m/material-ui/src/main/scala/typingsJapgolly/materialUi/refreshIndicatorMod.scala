@@ -2,20 +2,18 @@ package typingsJapgolly.materialUi
 
 import typingsJapgolly.materialUi.MaterialUI.RefreshIndicatorProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/RefreshIndicator", JSImport.Namespace)
-@js.native
-object refreshIndicatorMod extends js.Object {
-  @js.native
-  class RefreshIndicator ()
-    extends Component[RefreshIndicatorProps, js.Object, js.Any]
+object refreshIndicatorMod {
   
+  @JSImport("material-ui/RefreshIndicator", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[RefreshIndicatorProps, js.Object, js.Any]
+  open class default () extends RefreshIndicator
   
+  @JSImport("material-ui/RefreshIndicator", "RefreshIndicator")
+  @js.native
+  open class RefreshIndicator ()
+    extends Component[RefreshIndicatorProps, js.Object, Any]
 }
-

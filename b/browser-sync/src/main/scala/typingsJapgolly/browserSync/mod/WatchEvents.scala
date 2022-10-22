@@ -1,8 +1,8 @@
 package typingsJapgolly.browserSync.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.browserSync.browserSyncStrings.add
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.browserSync.browserSyncStrings.addDir
   - typingsJapgolly.browserSync.browserSyncStrings.unlinkDir
 */
-trait WatchEvents extends js.Object
-
+trait WatchEvents extends StObject
 object WatchEvents {
-  @scala.inline
-  def add: typingsJapgolly.browserSync.browserSyncStrings.add = this.cast("add")
-  @scala.inline
-  def addDir: typingsJapgolly.browserSync.browserSyncStrings.addDir = this.cast("addDir")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def change: typingsJapgolly.browserSync.browserSyncStrings.change = this.cast("change")
-  @scala.inline
-  def unlink: typingsJapgolly.browserSync.browserSyncStrings.unlink = this.cast("unlink")
-  @scala.inline
-  def unlinkDir: typingsJapgolly.browserSync.browserSyncStrings.unlinkDir = this.cast("unlinkDir")
+  
+  inline def add: typingsJapgolly.browserSync.browserSyncStrings.add = "add".asInstanceOf[typingsJapgolly.browserSync.browserSyncStrings.add]
+  
+  inline def addDir: typingsJapgolly.browserSync.browserSyncStrings.addDir = "addDir".asInstanceOf[typingsJapgolly.browserSync.browserSyncStrings.addDir]
+  
+  inline def change: typingsJapgolly.browserSync.browserSyncStrings.change = "change".asInstanceOf[typingsJapgolly.browserSync.browserSyncStrings.change]
+  
+  inline def unlink: typingsJapgolly.browserSync.browserSyncStrings.unlink = "unlink".asInstanceOf[typingsJapgolly.browserSync.browserSyncStrings.unlink]
+  
+  inline def unlinkDir: typingsJapgolly.browserSync.browserSyncStrings.unlinkDir = "unlinkDir".asInstanceOf[typingsJapgolly.browserSync.browserSyncStrings.unlinkDir]
 }
-

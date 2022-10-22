@@ -1,71 +1,84 @@
 package typingsJapgolly.dhtmlxscheduler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchedulerSizes extends js.Object {
+trait SchedulerSizes extends StObject {
+  
   /**
-  	* the height of day cells in the month view
-  	*/
+    * the height of day cells in the month view
+    */
   var bar_height: Double
+  
   /**
-  	* the width of the event text input	140	day
-  	*/
+    * the width of the event text input    140    day
+    */
   var editor_width: Double
+  
   /**
-  	* increases the length of the lightbox
-  	*/
+    * increases the length of the lightbox
+    */
   var lightbox_additional_height: Double
+  
   /**
-  	* the width of the date column in the Map view
-  	*/
+    * the width of the date column in the Map view
+    */
   var map_date_width: Double
+  
   /**
-  	* the width of the description column in the Map view
-  	*/
+    * the width of the description column in the Map view
+    */
   var map_description_width: Double
+  
   /**
-  	* the left margin of the main scheduler area
-  	*/
+    * the left margin of the main scheduler area
+    */
   var margin_left: Double
+  
   /**
-  	* the bottom margin of the main scheduler area
-  	*/
+    * the bottom margin of the main scheduler area
+    */
   var margin_top: Double
+  
   /**
-  	* the width of the selection menu
-  	*/
+    * the width of the selection menu
+    */
   var menu_width: Double
+  
   /**
-  	* the minimal height of the event box
-  	*/
+    * the minimal height of the event box
+    */
   var min_event_height: Double
+  
   /**
-  	* the top offset of an event in a cell in the month view
-  	*/
+    * the top offset of an event in a cell in the month view
+    */
   var month_scale_height: Double
+  
   /**
-  	* the height of the navigation bar
-  	*/
+    * the height of the navigation bar
+    */
   var nav_height: Double
+  
   /**
-  	* the height of the X-Axis
-  	*/
+    * the height of the X-Axis
+    */
   var scale_height: Double
+  
   /**
-  	* the width of the Y-Axis
-  	*/
+    * the width of the Y-Axis
+    */
   var scale_width: Double
+  
   /**
-  	* the width of the scrollbar area
-  	*/
+    * the width of the scrollbar area
+    */
   var scroll_width: Double
 }
-
 object SchedulerSizes {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     bar_height: Double,
     editor_width: Double,
     lightbox_additional_height: Double,
@@ -82,8 +95,37 @@ object SchedulerSizes {
     scroll_width: Double
   ): SchedulerSizes = {
     val __obj = js.Dynamic.literal(bar_height = bar_height.asInstanceOf[js.Any], editor_width = editor_width.asInstanceOf[js.Any], lightbox_additional_height = lightbox_additional_height.asInstanceOf[js.Any], map_date_width = map_date_width.asInstanceOf[js.Any], map_description_width = map_description_width.asInstanceOf[js.Any], margin_left = margin_left.asInstanceOf[js.Any], margin_top = margin_top.asInstanceOf[js.Any], menu_width = menu_width.asInstanceOf[js.Any], min_event_height = min_event_height.asInstanceOf[js.Any], month_scale_height = month_scale_height.asInstanceOf[js.Any], nav_height = nav_height.asInstanceOf[js.Any], scale_height = scale_height.asInstanceOf[js.Any], scale_width = scale_width.asInstanceOf[js.Any], scroll_width = scroll_width.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SchedulerSizes]
   }
+  
+  extension [Self <: SchedulerSizes](x: Self) {
+    
+    inline def setBar_height(value: Double): Self = StObject.set(x, "bar_height", value.asInstanceOf[js.Any])
+    
+    inline def setEditor_width(value: Double): Self = StObject.set(x, "editor_width", value.asInstanceOf[js.Any])
+    
+    inline def setLightbox_additional_height(value: Double): Self = StObject.set(x, "lightbox_additional_height", value.asInstanceOf[js.Any])
+    
+    inline def setMap_date_width(value: Double): Self = StObject.set(x, "map_date_width", value.asInstanceOf[js.Any])
+    
+    inline def setMap_description_width(value: Double): Self = StObject.set(x, "map_description_width", value.asInstanceOf[js.Any])
+    
+    inline def setMargin_left(value: Double): Self = StObject.set(x, "margin_left", value.asInstanceOf[js.Any])
+    
+    inline def setMargin_top(value: Double): Self = StObject.set(x, "margin_top", value.asInstanceOf[js.Any])
+    
+    inline def setMenu_width(value: Double): Self = StObject.set(x, "menu_width", value.asInstanceOf[js.Any])
+    
+    inline def setMin_event_height(value: Double): Self = StObject.set(x, "min_event_height", value.asInstanceOf[js.Any])
+    
+    inline def setMonth_scale_height(value: Double): Self = StObject.set(x, "month_scale_height", value.asInstanceOf[js.Any])
+    
+    inline def setNav_height(value: Double): Self = StObject.set(x, "nav_height", value.asInstanceOf[js.Any])
+    
+    inline def setScale_height(value: Double): Self = StObject.set(x, "scale_height", value.asInstanceOf[js.Any])
+    
+    inline def setScale_width(value: Double): Self = StObject.set(x, "scale_width", value.asInstanceOf[js.Any])
+    
+    inline def setScroll_width(value: Double): Self = StObject.set(x, "scroll_width", value.asInstanceOf[js.Any])
+  }
 }
-

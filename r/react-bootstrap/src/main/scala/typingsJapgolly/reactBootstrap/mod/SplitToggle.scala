@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.splitToggleMod.SplitToggleProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "SplitToggle")
 @js.native
-class SplitToggle ()
-  extends Component[SplitToggleProps, js.Object, js.Any]
-
+open class SplitToggle ()
+  extends typingsJapgolly.reactBootstrap.libMod.SplitToggle

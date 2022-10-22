@@ -1,34 +1,42 @@
 package typingsJapgolly.sparqljs.mod
 
 import typingsJapgolly.sparqljs.sparqljsStrings.aggregate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AggregateExpression
-  extends BaseExpression
+  extends StObject
+     with BaseExpression
      with _Expression {
+  
   var aggregation: String
+  
   var expression: Expression
+  
   var separator: js.UndefOr[String] = js.undefined
+  
   @JSName("type")
   var type_AggregateExpression: aggregate
 }
-
 object AggregateExpression {
-  @scala.inline
-  def apply(
-    aggregation: String,
-    expression: Expression,
-    `type`: aggregate,
-    distinct: js.UndefOr[Boolean] = js.undefined,
-    separator: String = null
-  ): AggregateExpression = {
+  
+  inline def apply(aggregation: String, expression: Expression): AggregateExpression = {
     val __obj = js.Dynamic.literal(aggregation = aggregation.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("aggregate")
     __obj.asInstanceOf[AggregateExpression]
   }
+  
+  extension [Self <: AggregateExpression](x: Self) {
+    
+    inline def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
+    
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    
+    inline def setType(value: aggregate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

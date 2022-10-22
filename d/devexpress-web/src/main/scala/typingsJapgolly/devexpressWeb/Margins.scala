@@ -1,30 +1,49 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the margin settings.
   */
-@JSGlobal("Margins")
-@js.native
-class Margins () extends js.Object {
+trait Margins extends StObject {
+  
   /**
     * Gets or sets the bottom margin.
     */
-  var bottom: Double = js.native
+  var bottom: Double
+  
   /**
     * Gets or sets the left margin.
     */
-  var left: Double = js.native
+  var left: Double
+  
   /**
     * Gets or sets the right margin.
     */
-  var right: Double = js.native
+  var right: Double
+  
   /**
     * Gets or sets the top margin.
     */
-  var top: Double = js.native
+  var top: Double
 }
-
+object Margins {
+  
+  inline def apply(bottom: Double, left: Double, right: Double, top: Double): Margins = {
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Margins]
+  }
+  
+  extension [Self <: Margins](x: Self) {
+    
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+  }
+}

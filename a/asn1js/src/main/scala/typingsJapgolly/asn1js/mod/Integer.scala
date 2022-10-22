@@ -1,34 +1,27 @@
 package typingsJapgolly.asn1js.mod
 
-import typingsJapgolly.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "Integer")
 @js.native
-class Integer () extends BaseBlock[LocalIntegerValueBlock] {
-  def this(params: IntegerParams) = this()
+trait Integer
+  extends StObject
+     with BaseBlock[LocalIntegerValueBlock, LocalIntegerValueBlockJson]
+     with _AsnType {
+  
   /**
     * Convert current Integer value from DER to BER format
-    * @returns {Integer}
+    * @returns
     */
   def convertFromDER(): Integer = js.native
-  /**
-    * Convert current Integer value from BER into DER format
-    * 
-    * @returns {Integer}
-    */
+  
   def convertToDER(): Integer = js.native
+  
   /**
-    * Compare two Integer object, or Integer and ArrayBuffer objects
-    * 
-    * @param {(Integer | ArrayBuffer)} otherValue
-    * @returns {boolean}
-    * 
-    * @memberOf Integer
+    * Converts Integer into BigInt
+    * @throws Throws Error if BigInt is not supported
+    * @since 3.0.0
     */
-  def isEqual(otherValue: Integer): scala.Boolean = js.native
-  def isEqual(otherValue: ArrayBuffer): scala.Boolean = js.native
+  def toBigInt(): js.BigInt = js.native
 }
-

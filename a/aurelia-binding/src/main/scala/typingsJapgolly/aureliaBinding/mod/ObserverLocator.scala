@@ -2,32 +2,36 @@ package typingsJapgolly.aureliaBinding.mod
 
 import typingsJapgolly.std.Map
 import typingsJapgolly.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-binding", "ObserverLocator")
 @js.native
-class ObserverLocator () extends js.Object {
+open class ObserverLocator () extends StObject {
+  
   /**
     * Adds a property observation adapter.
     */
   def addAdapter(adapter: ObjectObservationAdapter): Unit = js.native
+  
   /**
     * Gets an observer for array mutation.
     */
-  def getArrayObserver(array: js.Array[_]): InternalCollectionObserver = js.native
+  def getArrayObserver(array: js.Array[Any]): InternalCollectionObserver = js.native
+  
   /**
     * Gets an observer for map mutation.
     */
-  def getMapObserver(map: Map[_, _]): InternalCollectionObserver = js.native
+  def getMapObserver(map: Map[Any, Any]): InternalCollectionObserver = js.native
+  
   /**
     * Gets an observer for property changes.
     */
-  def getObserver(obj: js.Any, propertyName: String): InternalPropertyObserver = js.native
+  def getObserver(obj: Any, propertyName: String): InternalPropertyObserver = js.native
+  
   /**
     * Gets an observer for set mutation.
     */
-  def getSetObserver(set: Set[_]): InternalCollectionObserver = js.native
+  def getSetObserver(set: Set[Any]): InternalCollectionObserver = js.native
 }
-

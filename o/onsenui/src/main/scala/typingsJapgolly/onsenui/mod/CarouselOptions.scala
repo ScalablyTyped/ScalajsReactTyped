@@ -1,23 +1,36 @@
 package typingsJapgolly.onsenui.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CarouselOptions extends js.Object {
+trait CarouselOptions extends StObject {
+  
   var animation: js.UndefOr[String] = js.undefined
+  
   var animationOptions: js.UndefOr[js.Object] = js.undefined
+  
   var callback: js.UndefOr[js.Function] = js.undefined
 }
-
 object CarouselOptions {
-  @scala.inline
-  def apply(animation: String = null, animationOptions: js.Object = null, callback: js.Function = null): CarouselOptions = {
+  
+  inline def apply(): CarouselOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarouselOptions]
   }
+  
+  extension [Self <: CarouselOptions](x: Self) {
+    
+    inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationOptions(value: js.Object): Self = StObject.set(x, "animationOptions", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationOptionsUndefined: Self = StObject.set(x, "animationOptions", js.undefined)
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+  }
 }
-

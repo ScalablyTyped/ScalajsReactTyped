@@ -1,11 +1,11 @@
 package typingsJapgolly.reactNative.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PanResponderStatic extends js.Object {
+trait PanResponderStatic extends StObject {
+  
   /**
     * @param config Enhanced versions of all of the responder callbacks
     * that provide not only the typical `ResponderSyntheticEvent`, but also the
@@ -40,13 +40,15 @@ trait PanResponderStatic extends js.Object {
     */
   def create(config: PanResponderCallbacks): PanResponderInstance
 }
-
 object PanResponderStatic {
-  @scala.inline
-  def apply(create: PanResponderCallbacks => CallbackTo[PanResponderInstance]): PanResponderStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(js.Any.fromFunction1((t0: typingsJapgolly.reactNative.mod.PanResponderCallbacks) => create(t0).runNow()))
+  
+  inline def apply(create: PanResponderCallbacks => PanResponderInstance): PanResponderStatic = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[PanResponderStatic]
   }
+  
+  extension [Self <: PanResponderStatic](x: Self) {
+    
+    inline def setCreate(value: PanResponderCallbacks => PanResponderInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+  }
 }
-

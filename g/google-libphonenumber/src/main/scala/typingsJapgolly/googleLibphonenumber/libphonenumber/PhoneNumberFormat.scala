@@ -1,41 +1,32 @@
 package typingsJapgolly.googleLibphonenumber.libphonenumber
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhoneNumberFormat extends js.Object
-
+sealed trait PhoneNumberFormat extends StObject
 @JSGlobal("libphonenumber.PhoneNumberFormat")
 @js.native
-object PhoneNumberFormat extends js.Object {
-  @js.native
-  sealed trait E164 extends PhoneNumberFormat
+object PhoneNumberFormat extends StObject {
   
   @js.native
-  sealed trait INTERNATIONAL extends PhoneNumberFormat
+  sealed trait E164
+    extends StObject
+       with PhoneNumberFormat
   
   @js.native
-  sealed trait NATIONAL extends PhoneNumberFormat
+  sealed trait INTERNATIONAL
+    extends StObject
+       with PhoneNumberFormat
   
   @js.native
-  sealed trait RFC3966 extends PhoneNumberFormat
+  sealed trait NATIONAL
+    extends StObject
+       with PhoneNumberFormat
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhoneNumberFormat with Double] = js.native
-  /* 0 */ @js.native
-  object E164 extends TopLevel[E164 with Double]
-  
-  /* 1 */ @js.native
-  object INTERNATIONAL extends TopLevel[INTERNATIONAL with Double]
-  
-  /* 2 */ @js.native
-  object NATIONAL extends TopLevel[NATIONAL with Double]
-  
-  /* 3 */ @js.native
-  object RFC3966 extends TopLevel[RFC3966 with Double]
-  
+  @js.native
+  sealed trait RFC3966
+    extends StObject
+       with PhoneNumberFormat
 }
-

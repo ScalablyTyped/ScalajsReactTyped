@@ -1,8 +1,8 @@
 package typingsJapgolly.webix.mod.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.webix.webixStrings.onBeforeBack
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.webix.webixStrings.onViewChange
   - typingsJapgolly.webix.webixStrings.onViewShow
 */
-trait multiviewEventName extends js.Object
-
+trait multiviewEventName extends StObject
 object multiviewEventName {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onBeforeBack: typingsJapgolly.webix.webixStrings.onBeforeBack = this.cast("onBeforeBack")
-  @scala.inline
-  def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
-  @scala.inline
-  def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = this.cast("onDestruct")
-  @scala.inline
-  def onViewChange: typingsJapgolly.webix.webixStrings.onViewChange = this.cast("onViewChange")
-  @scala.inline
-  def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  
+  inline def onBeforeBack: typingsJapgolly.webix.webixStrings.onBeforeBack = "onBeforeBack".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeBack]
+  
+  inline def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typingsJapgolly.webix.webixStrings.onBindRequest]
+  
+  inline def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typingsJapgolly.webix.webixStrings.onDestruct]
+  
+  inline def onViewChange: typingsJapgolly.webix.webixStrings.onViewChange = "onViewChange".asInstanceOf[typingsJapgolly.webix.webixStrings.onViewChange]
+  
+  inline def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typingsJapgolly.webix.webixStrings.onViewShow]
 }
-

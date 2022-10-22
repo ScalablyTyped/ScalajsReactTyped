@@ -1,19 +1,26 @@
 package typingsJapgolly.reactTable.mod
 
-import typingsJapgolly.reactTable.PartialTableToggleAllRows
+import typingsJapgolly.reactTable.anon.PartialTableToggleAllRows
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UseRowSelectInstanceProps[D /* <: js.Object */] extends js.Object {
-  var isAllRowsSelected: Boolean = js.native
-  var selectedFlatRows: js.Array[Row[D]] = js.native
+trait UseRowSelectInstanceProps[D /* <: js.Object */] extends StObject {
+  
+  def getToggleAllPageRowsSelectedProps(): TableToggleAllRowsSelectedProps = js.native
+  def getToggleAllPageRowsSelectedProps(props: PartialTableToggleAllRows): TableToggleAllRowsSelectedProps = js.native
+  
   def getToggleAllRowsSelectedProps(): TableToggleAllRowsSelectedProps = js.native
   def getToggleAllRowsSelectedProps(props: PartialTableToggleAllRows): TableToggleAllRowsSelectedProps = js.native
+  
+  var isAllRowsSelected: Boolean = js.native
+  
+  var selectedFlatRows: js.Array[Row[D]] = js.native
+  
   def toggleAllRowsSelected(): Unit = js.native
-  def toggleAllRowsSelected(set: Boolean): Unit = js.native
+  def toggleAllRowsSelected(value: Boolean): Unit = js.native
+  
   def toggleRowSelected(rowId: IdType[D]): Unit = js.native
   def toggleRowSelected(rowId: IdType[D], set: Boolean): Unit = js.native
 }
-

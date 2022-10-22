@@ -1,12 +1,11 @@
 package typingsJapgolly.protobufjsPool
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@protobufjs/pool", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * A general purpose buffer pool.
     * @memberof util
@@ -16,8 +15,13 @@ object mod extends js.Object {
     * @param {number} [size=8192] Slab size
     * @returns {PoolAllocator} Pooled allocator
     */
-  def apply(alloc: PoolAllocator, slice: PoolSlicer): PoolAllocator = js.native
-  def apply(alloc: PoolAllocator, slice: PoolSlicer, size: Double): PoolAllocator = js.native
+  inline def apply(alloc: PoolAllocator, slice: PoolSlicer): PoolAllocator = (^.asInstanceOf[js.Dynamic].apply(alloc.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[PoolAllocator]
+  inline def apply(alloc: PoolAllocator, slice: PoolSlicer, size: Double): PoolAllocator = (^.asInstanceOf[js.Dynamic].apply(alloc.asInstanceOf[js.Any], slice.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[PoolAllocator]
+  
+  @JSImport("@protobufjs/pool", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * An allocator as used by {@link util.pool}.
     * @typedef PoolAllocator
@@ -25,7 +29,8 @@ object mod extends js.Object {
     * @param {number} size Buffer size
     * @returns {Uint8Array} Buffer
     */
-  type PoolAllocator = js.Function1[/* size */ Double, scala.scalajs.js.typedarray.Uint8Array]
+  type PoolAllocator = js.Function1[/* size */ Double, js.typedarray.Uint8Array]
+  
   /**
     * A slicer as used by {@link util.pool}.
     * @typedef PoolSlicer
@@ -36,10 +41,9 @@ object mod extends js.Object {
     * @this {Uint8Array}
     */
   type PoolSlicer = js.ThisFunction2[
-    /* this */ scala.scalajs.js.typedarray.Uint8Array, 
+    /* this */ js.typedarray.Uint8Array, 
     /* start */ Double, 
     /* end */ Double, 
-    scala.scalajs.js.typedarray.Uint8Array
+    js.typedarray.Uint8Array
   ]
 }
-

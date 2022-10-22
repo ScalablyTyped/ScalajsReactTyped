@@ -1,48 +1,47 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IBorderedMapElementStyle extends IMapElementStyle {
+trait IBorderedMapElementStyle
+  extends StObject
+     with IMapElementStyle {
+  
   /**
     * Secondary/casing line hex color of the border of a filled polygon.
     */
   var borderOutlineColor: js.UndefOr[String] = js.undefined
+  
   /**
     * Primary line hex color of the border of a filled polygon.
     */
   var borderStrokeColor: js.UndefOr[String] = js.undefined
+  
   /**
     * Specifies if a border is visible or not.
     */
   var borderVisible: js.UndefOr[Boolean] = js.undefined
 }
-
 object IBorderedMapElementStyle {
-  @scala.inline
-  def apply(
-    borderOutlineColor: String = null,
-    borderStrokeColor: String = null,
-    borderVisible: js.UndefOr[Boolean] = js.undefined,
-    fillColor: String = null,
-    labelColor: String = null,
-    labelOutlineColor: String = null,
-    labelVisible: js.UndefOr[Boolean] = js.undefined,
-    strokeColor: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): IBorderedMapElementStyle = {
+  
+  inline def apply(): IBorderedMapElementStyle = {
     val __obj = js.Dynamic.literal()
-    if (borderOutlineColor != null) __obj.updateDynamic("borderOutlineColor")(borderOutlineColor.asInstanceOf[js.Any])
-    if (borderStrokeColor != null) __obj.updateDynamic("borderStrokeColor")(borderStrokeColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
-    if (labelOutlineColor != null) __obj.updateDynamic("labelOutlineColor")(labelOutlineColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelVisible)) __obj.updateDynamic("labelVisible")(labelVisible.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBorderedMapElementStyle]
   }
+  
+  extension [Self <: IBorderedMapElementStyle](x: Self) {
+    
+    inline def setBorderOutlineColor(value: String): Self = StObject.set(x, "borderOutlineColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderOutlineColorUndefined: Self = StObject.set(x, "borderOutlineColor", js.undefined)
+    
+    inline def setBorderStrokeColor(value: String): Self = StObject.set(x, "borderStrokeColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderStrokeColorUndefined: Self = StObject.set(x, "borderStrokeColor", js.undefined)
+    
+    inline def setBorderVisible(value: Boolean): Self = StObject.set(x, "borderVisible", value.asInstanceOf[js.Any])
+    
+    inline def setBorderVisibleUndefined: Self = StObject.set(x, "borderVisible", js.undefined)
+  }
 }
-

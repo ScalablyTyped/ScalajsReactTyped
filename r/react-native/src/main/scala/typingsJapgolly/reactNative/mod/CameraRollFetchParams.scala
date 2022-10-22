@@ -1,32 +1,46 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CameraRollFetchParams extends js.Object {
+trait CameraRollFetchParams extends StObject {
+  
   var after: js.UndefOr[String] = js.undefined
+  
   var assetType: js.UndefOr[CameraRollAssetType] = js.undefined
+  
   var first: Double
+  
   var groupName: js.UndefOr[String] = js.undefined
+  
   var groupTypes: js.UndefOr[CameraRollGroupType] = js.undefined
 }
-
 object CameraRollFetchParams {
-  @scala.inline
-  def apply(
-    first: Double,
-    after: String = null,
-    assetType: CameraRollAssetType = null,
-    groupName: String = null,
-    groupTypes: CameraRollGroupType = null
-  ): CameraRollFetchParams = {
+  
+  inline def apply(first: Double): CameraRollFetchParams = {
     val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (assetType != null) __obj.updateDynamic("assetType")(assetType.asInstanceOf[js.Any])
-    if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
-    if (groupTypes != null) __obj.updateDynamic("groupTypes")(groupTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraRollFetchParams]
   }
+  
+  extension [Self <: CameraRollFetchParams](x: Self) {
+    
+    inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    
+    inline def setAssetType(value: CameraRollAssetType): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
+    
+    inline def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
+    
+    inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    
+    inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    
+    inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
+    
+    inline def setGroupTypes(value: CameraRollGroupType): Self = StObject.set(x, "groupTypes", value.asInstanceOf[js.Any])
+    
+    inline def setGroupTypesUndefined: Self = StObject.set(x, "groupTypes", js.undefined)
+  }
 }
-

@@ -1,28 +1,40 @@
 package typingsJapgolly.artyomJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArtyomCommand extends js.Object {
+trait ArtyomCommand extends StObject {
+  
   var action: js.Function
+  
   var description: js.UndefOr[String] = js.undefined
-  var indexes: js.Array[_]
+  
+  var indexes: js.Array[Any]
+  
   var smart: js.UndefOr[Boolean] = js.undefined
 }
-
 object ArtyomCommand {
-  @scala.inline
-  def apply(
-    action: js.Function,
-    indexes: js.Array[_],
-    description: String = null,
-    smart: js.UndefOr[Boolean] = js.undefined
-  ): ArtyomCommand = {
+  
+  inline def apply(action: js.Function, indexes: js.Array[Any]): ArtyomCommand = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], indexes = indexes.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(smart)) __obj.updateDynamic("smart")(smart.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtyomCommand]
   }
+  
+  extension [Self <: ArtyomCommand](x: Self) {
+    
+    inline def setAction(value: js.Function): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setIndexes(value: js.Array[Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    
+    inline def setIndexesVarargs(value: Any*): Self = StObject.set(x, "indexes", js.Array(value*))
+    
+    inline def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
+    
+    inline def setSmartUndefined: Self = StObject.set(x, "smart", js.undefined)
+  }
 }
-

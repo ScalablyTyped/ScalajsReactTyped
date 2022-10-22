@@ -1,22 +1,22 @@
 
 # Scala.js typings for arcgis-js-api
 
-Typings are for version 4.14
+Typings are for version 4.24
 
 ## Library description:
-Minified, unbuilt version of the ArcGIS API for JavaScript
+ArcGIS API for JavaScript: A complete 2D and 3D mapping and data visualization API
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | arcgis-js-api |
-| Keywords           | esrijs, esri, arcgis, gis |
-| # releases         | 37 |
-| # dependents       | 9 |
-| # downloads        | 31744 |
-| # stars            | 2 |
+| Keywords           | ArcGIS, javascript, map, 3D, 2D, visualization, analytics, spatial, data-driven, gis, Esri |
+| # releases         | 555 |
+| # dependents       | 0.0 |
+| # downloads        | 12871.666666666666 |
+| # stars            | 360.0 |
 
 ## Links
-- [Homepage](https://developers.arcgis.com/javascript)
+- [Homepage](https://js.arcgis.com)
 - [Bugs](https://github.com/Esri/arcgis-js-api/issues)
 - [Repository](https://github.com/Esri/arcgis-js-api)
 - [Npm](https://www.npmjs.com/package/arcgis-js-api)

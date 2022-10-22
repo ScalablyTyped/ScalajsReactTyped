@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * One of:
@@ -63,64 +63,60 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.GEO
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.EXT
 */
-trait FunctionGroupType extends js.Object
-
+trait FunctionGroupType extends StObject
 object FunctionGroupType {
-  @scala.inline
-  def AGGR: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.AGGR = this.cast("AGGR")
-  @scala.inline
-  def ALL: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.ALL = this.cast("ALL")
-  @scala.inline
-  def CLR: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CLR = this.cast("CLR")
-  @scala.inline
-  def CND: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CND = this.cast("CND")
-  @scala.inline
-  def COUNT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.COUNT = this.cast("COUNT")
-  @scala.inline
-  def DATE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.DATE = this.cast("DATE")
-  @scala.inline
-  def EXP: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.EXP = this.cast("EXP")
-  @scala.inline
-  def EXT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.EXT = this.cast("EXT")
-  @scala.inline
-  def FILE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FILE = this.cast("FILE")
-  @scala.inline
-  def FIN: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FIN = this.cast("FIN")
-  @scala.inline
-  def FRMT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FRMT = this.cast("FRMT")
-  @scala.inline
-  def GEO: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.GEO = this.cast("GEO")
-  @scala.inline
-  def LOG: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.LOG = this.cast("LOG")
-  @scala.inline
-  def MAPP: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.MAPP = this.cast("MAPP")
-  @scala.inline
-  def MATH: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.MATH = this.cast("MATH")
-  @scala.inline
-  def NONE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NONE = this.cast("NONE")
-  @scala.inline
-  def NULL: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NULL = this.cast("NULL")
-  @scala.inline
-  def NUM: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NUM = this.cast("NUM")
-  @scala.inline
-  def NUMI: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NUMI = this.cast("NUMI")
-  @scala.inline
-  def RCRD: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.RCRD = this.cast("RCRD")
-  @scala.inline
-  def RNG: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.RNG = this.cast("RNG")
-  @scala.inline
-  def RNK: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.RNK = this.cast("RNK")
-  @scala.inline
-  def STR: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.STR = this.cast("STR")
-  @scala.inline
-  def SYS: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.SYS = this.cast("SYS")
-  @scala.inline
-  def TBL: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.TBL = this.cast("TBL")
-  @scala.inline
-  def TRIG: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.TRIG = this.cast("TRIG")
-  @scala.inline
-  def U: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.U = this.cast("U")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def AGGR: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.AGGR = "AGGR".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.AGGR]
+  
+  inline def ALL: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.ALL = "ALL".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.ALL]
+  
+  inline def CLR: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CLR = "CLR".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CLR]
+  
+  inline def CND: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CND = "CND".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CND]
+  
+  inline def COUNT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.COUNT = "COUNT".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.COUNT]
+  
+  inline def DATE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.DATE = "DATE".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.DATE]
+  
+  inline def EXP: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.EXP = "EXP".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.EXP]
+  
+  inline def EXT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.EXT = "EXT".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.EXT]
+  
+  inline def FILE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FILE = "FILE".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FILE]
+  
+  inline def FIN: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FIN = "FIN".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FIN]
+  
+  inline def FRMT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FRMT = "FRMT".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FRMT]
+  
+  inline def GEO: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.GEO = "GEO".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.GEO]
+  
+  inline def LOG: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.LOG = "LOG".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.LOG]
+  
+  inline def MAPP: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.MAPP = "MAPP".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.MAPP]
+  
+  inline def MATH: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.MATH = "MATH".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.MATH]
+  
+  inline def NONE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NONE = "NONE".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NONE]
+  
+  inline def NULL: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NULL = "NULL".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NULL]
+  
+  inline def NUM: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NUM = "NUM".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NUM]
+  
+  inline def NUMI: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NUMI = "NUMI".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NUMI]
+  
+  inline def RCRD: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.RCRD = "RCRD".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.RCRD]
+  
+  inline def RNG: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.RNG = "RNG".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.RNG]
+  
+  inline def RNK: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.RNK = "RNK".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.RNK]
+  
+  inline def STR: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.STR = "STR".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.STR]
+  
+  inline def SYS: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.SYS = "SYS".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.SYS]
+  
+  inline def TBL: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.TBL = "TBL".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.TBL]
+  
+  inline def TRIG: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.TRIG = "TRIG".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.TRIG]
+  
+  inline def U: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.U = "U".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.U]
 }
-

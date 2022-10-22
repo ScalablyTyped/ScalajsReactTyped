@@ -4,11 +4,12 @@ import typingsJapgolly.hapi.hapiBooleans.`false`
 import typingsJapgolly.hapi.hapiStrings.`try`
 import typingsJapgolly.hapi.hapiStrings.optional
 import typingsJapgolly.hapi.hapiStrings.required
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RouteOptionsAccess extends js.Object {
+trait RouteOptionsAccess extends StObject {
+  
   /**
     * Default value: none.
     * An object or array of objects specifying the route access rules. Each rule is evaluated against an incoming request and access is granted if at least one of the rules matches. Each rule object
@@ -16,6 +17,7 @@ trait RouteOptionsAccess extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthaccess)
     */
   var access: js.UndefOr[RouteOptionsAccessObject | js.Array[RouteOptionsAccessObject]] = js.undefined
+  
   /**
     * Default value: 'any'.
     * The required authenticated entity type. If set, must match the entity value of the request authenticated credentials. Available values:
@@ -26,6 +28,7 @@ trait RouteOptionsAccess extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthaccessentity)
     */
   var entity: js.UndefOr[RouteOptionsAccessEntity] = js.undefined
+  
   /**
     * Default value: 'required'.
     * The authentication mode. Available values:
@@ -35,6 +38,7 @@ trait RouteOptionsAccess extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthmode)
     */
   var mode: js.UndefOr[required | optional | `try`] = js.undefined
+  
   /**
     * Default value: false, unless the scheme requires payload authentication.
     * If set, the incoming request payload is authenticated after it is processed. Requires a strategy with payload authentication support (e.g. Hawk). Cannot be set to a value other than 'required'
@@ -45,6 +49,7 @@ trait RouteOptionsAccess extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthpayload)
     */
   var payload: js.UndefOr[`false` | required | optional] = js.undefined
+  
   /**
     * Default value: false (no scope requirements).
     * The application scope required to access the route. Value can be a scope string or an array of scope strings. When authenticated, the credentials object scope property must contain at least
@@ -54,12 +59,14 @@ trait RouteOptionsAccess extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthaccessscope)
     */
   var scope: js.UndefOr[RouteOptionsAccessScope] = js.undefined
+  
   /**
     * Default value: the default strategy set via server.auth.default().
     * An array of string strategy names in the order they should be attempted. Cannot be used together with strategy.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthstrategies)
     */
   var strategies: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * Default value: the default strategy set via server.auth.default().
     * A string strategy names. Cannot be used together with strategies.
@@ -67,27 +74,47 @@ trait RouteOptionsAccess extends js.Object {
     */
   var strategy: js.UndefOr[String] = js.undefined
 }
-
 object RouteOptionsAccess {
-  @scala.inline
-  def apply(
-    access: RouteOptionsAccessObject | js.Array[RouteOptionsAccessObject] = null,
-    entity: RouteOptionsAccessEntity = null,
-    mode: required | optional | `try` = null,
-    payload: `false` | required | optional = null,
-    scope: RouteOptionsAccessScope = null,
-    strategies: js.Array[String] = null,
-    strategy: String = null
-  ): RouteOptionsAccess = {
+  
+  inline def apply(): RouteOptionsAccess = {
     val __obj = js.Dynamic.literal()
-    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (strategies != null) __obj.updateDynamic("strategies")(strategies.asInstanceOf[js.Any])
-    if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptionsAccess]
   }
+  
+  extension [Self <: RouteOptionsAccess](x: Self) {
+    
+    inline def setAccess(value: RouteOptionsAccessObject | js.Array[RouteOptionsAccessObject]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    
+    inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+    
+    inline def setAccessVarargs(value: RouteOptionsAccessObject*): Self = StObject.set(x, "access", js.Array(value*))
+    
+    inline def setEntity(value: RouteOptionsAccessEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    
+    inline def setMode(value: required | optional | `try`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setPayload(value: `false` | required | optional): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    
+    inline def setScope(value: RouteOptionsAccessScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
+    
+    inline def setStrategies(value: js.Array[String]): Self = StObject.set(x, "strategies", value.asInstanceOf[js.Any])
+    
+    inline def setStrategiesUndefined: Self = StObject.set(x, "strategies", js.undefined)
+    
+    inline def setStrategiesVarargs(value: String*): Self = StObject.set(x, "strategies", js.Array(value*))
+    
+    inline def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    
+    inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+  }
 }
-

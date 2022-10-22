@@ -1,27 +1,20 @@
-package typingsJapgolly.spotifyWebPlaybackSdk
+package typingsJapgolly.spotifyWebPlaybackSdk.Spotify
 
+import typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.autoplay_failed
+import typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.not_ready
+import typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.player_state_changed
+import typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.ready
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Spotify {
-  type AddListenerFn = (js.Function2[
-    /* event */ typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.ready | typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.not_ready, 
-    /* cb */ typingsJapgolly.spotifyWebPlaybackSdk.Spotify.PlaybackInstanceListener, 
-    scala.Unit
-  ]) with (js.Function2[
-    typingsJapgolly.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.player_state_changed, 
-    /* cb */ typingsJapgolly.spotifyWebPlaybackSdk.Spotify.PlaybackStateListener, 
-    scala.Unit
-  ]) with (js.Function2[
-    /* event */ typingsJapgolly.spotifyWebPlaybackSdk.Spotify.ErrorTypes, 
-    /* cb */ typingsJapgolly.spotifyWebPlaybackSdk.Spotify.ErrorListener, 
-    scala.Unit
-  ])
-  type ErrorListener = js.Function1[/* err */ typingsJapgolly.spotifyWebPlaybackSdk.Spotify.Error, scala.Unit]
-  type PlaybackInstanceListener = js.Function1[
-    /* inst */ typingsJapgolly.spotifyWebPlaybackSdk.Spotify.WebPlaybackInstance, 
-    scala.Unit
-  ]
-  type PlaybackStateListener = js.Function1[/* s */ typingsJapgolly.spotifyWebPlaybackSdk.Spotify.PlaybackState, scala.Unit]
-}
+
+type AddListenerFn = (js.Function2[/* event */ ready | not_ready, /* cb */ PlaybackInstanceListener, Unit]) & (js.Function2[autoplay_failed, /* cb */ EmptyListener, Unit]) & (js.Function2[player_state_changed, /* cb */ PlaybackStateListener, Unit]) & (js.Function2[/* event */ ErrorTypes, /* cb */ ErrorListener, Unit])
+
+type EmptyListener = js.Function0[Unit]
+
+type ErrorListener = js.Function1[/* err */ Error, Unit]
+
+type PlaybackInstanceListener = js.Function1[/* inst */ WebPlaybackInstance, Unit]
+
+type PlaybackStateListener = js.Function1[/* s */ PlaybackState, Unit]

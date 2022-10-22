@@ -1,21 +1,30 @@
 package typingsJapgolly.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScrollSpyOptions extends js.Object {
+trait ScrollSpyOptions extends StObject {
+  
   var offset: js.UndefOr[Double] = js.undefined
+  
   var target: js.UndefOr[String] = js.undefined
 }
-
 object ScrollSpyOptions {
-  @scala.inline
-  def apply(offset: Int | Double = null, target: String = null): ScrollSpyOptions = {
+  
+  inline def apply(): ScrollSpyOptions = {
     val __obj = js.Dynamic.literal()
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollSpyOptions]
   }
+  
+  extension [Self <: ScrollSpyOptions](x: Self) {
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

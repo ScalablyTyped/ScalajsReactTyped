@@ -1,105 +1,65 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.typescript.mod.AfterFinallyFlow
-  - typingsJapgolly.typescript.mod.PreFinallyFlow
   - typingsJapgolly.typescript.mod.FlowStart
   - typingsJapgolly.typescript.mod.FlowLabel
   - typingsJapgolly.typescript.mod.FlowAssignment
-  - typingsJapgolly.typescript.mod.FlowCall
   - typingsJapgolly.typescript.mod.FlowCondition
   - typingsJapgolly.typescript.mod.FlowSwitchClause
   - typingsJapgolly.typescript.mod.FlowArrayMutation
+  - typingsJapgolly.typescript.mod.FlowCall
+  - typingsJapgolly.typescript.mod.FlowReduceLabel
 */
-trait FlowNode extends js.Object
-
+trait FlowNode extends StObject
 object FlowNode {
-  @scala.inline
-  def FlowLabel(flags: FlowFlags, antecedents: js.Array[FlowNode] = null, id: Int | Double = null): FlowNode = {
+  
+  inline def FlowArrayMutation(antecedent: FlowNode, flags: FlowFlags, node: CallExpression | BinaryExpression): typingsJapgolly.typescript.mod.FlowArrayMutation = {
+    val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.FlowArrayMutation]
+  }
+  
+  inline def FlowAssignment(antecedent: FlowNode, flags: FlowFlags, node: Expression | VariableDeclaration | BindingElement): typingsJapgolly.typescript.mod.FlowAssignment = {
+    val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.FlowAssignment]
+  }
+  
+  inline def FlowCall(antecedent: FlowNode, flags: FlowFlags, node: CallExpression): typingsJapgolly.typescript.mod.FlowCall = {
+    val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.FlowCall]
+  }
+  
+  inline def FlowCondition(antecedent: FlowNode, flags: FlowFlags, node: Expression): typingsJapgolly.typescript.mod.FlowCondition = {
+    val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.FlowCondition]
+  }
+  
+  inline def FlowLabel(flags: FlowFlags): typingsJapgolly.typescript.mod.FlowLabel = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
-    if (antecedents != null) __obj.updateDynamic("antecedents")(antecedents.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowNode]
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.FlowLabel]
   }
-  @scala.inline
-  def FlowArrayMutation(
-    antecedent: FlowNode,
-    flags: FlowFlags,
-    node: CallExpression | BinaryExpression,
-    id: Int | Double = null
-  ): FlowNode = {
-    val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowNode]
+  
+  inline def FlowReduceLabel(antecedent: FlowNode, antecedents: js.Array[FlowNode], flags: FlowFlags, target: FlowLabel): typingsJapgolly.typescript.mod.FlowReduceLabel = {
+    val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], antecedents = antecedents.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.FlowReduceLabel]
   }
-  @scala.inline
-  def FlowCall(antecedent: FlowNode, flags: FlowFlags, node: CallExpression, id: Int | Double = null): FlowNode = {
-    val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowNode]
+  
+  inline def FlowStart(flags: FlowFlags): typingsJapgolly.typescript.mod.FlowStart = {
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.FlowStart]
   }
-  @scala.inline
-  def PreFinallyFlow(antecedent: FlowNode, flags: FlowFlags, lock: FlowLock, id: Int | Double = null): FlowNode = {
-    val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], lock = lock.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowNode]
-  }
-  @scala.inline
-  def FlowCondition(antecedent: FlowNode, flags: FlowFlags, node: Expression, id: Int | Double = null): FlowNode = {
-    val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowNode]
-  }
-  @scala.inline
-  def FlowSwitchClause(
+  
+  inline def FlowSwitchClause(
     antecedent: FlowNode,
     clauseEnd: Double,
     clauseStart: Double,
     flags: FlowFlags,
-    switchStatement: SwitchStatement,
-    id: Int | Double = null
-  ): FlowNode = {
+    switchStatement: SwitchStatement
+  ): typingsJapgolly.typescript.mod.FlowSwitchClause = {
     val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], clauseEnd = clauseEnd.asInstanceOf[js.Any], clauseStart = clauseStart.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], switchStatement = switchStatement.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowNode]
-  }
-  @scala.inline
-  def FlowStart(
-    flags: FlowFlags,
-    id: Int | Double = null,
-    node: FunctionExpression | ArrowFunction | MethodDeclaration = null
-  ): FlowNode = {
-    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowNode]
-  }
-  @scala.inline
-  def AfterFinallyFlow(
-    antecedent: FlowNode,
-    flags: FlowFlags,
-    id: Int | Double = null,
-    locked: js.UndefOr[Boolean] = js.undefined
-  ): FlowNode = {
-    val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowNode]
-  }
-  @scala.inline
-  def FlowAssignment(
-    antecedent: FlowNode,
-    flags: FlowFlags,
-    node: Expression | VariableDeclaration | BindingElement,
-    id: Int | Double = null
-  ): FlowNode = {
-    val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowNode]
+    __obj.asInstanceOf[typingsJapgolly.typescript.mod.FlowSwitchClause]
   }
 }
-

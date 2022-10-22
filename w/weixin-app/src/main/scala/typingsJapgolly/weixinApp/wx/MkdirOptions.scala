@@ -1,32 +1,31 @@
 package typingsJapgolly.weixinApp.wx
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MkdirOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   var dirPath: String
-   // 创建的目录路径
+  
+  // 创建的目录路径
   var recursive: js.UndefOr[Boolean] = js.undefined
 }
-
 object MkdirOptions {
-  @scala.inline
-  def apply(
-    dirPath: String,
-    complete: /* res */ js.Any => Callback = null,
-    fail: js.Any => Callback = null,
-    recursive: js.UndefOr[Boolean] = js.undefined,
-    success: js.Any => Callback = null
-  ): MkdirOptions = {
+  
+  inline def apply(dirPath: String): MkdirOptions = {
     val __obj = js.Dynamic.literal(dirPath = dirPath.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: js.Any) => success(t0).runNow()))
     __obj.asInstanceOf[MkdirOptions]
   }
+  
+  extension [Self <: MkdirOptions](x: Self) {
+    
+    inline def setDirPath(value: String): Self = StObject.set(x, "dirPath", value.asInstanceOf[js.Any])
+    
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+  }
 }
-

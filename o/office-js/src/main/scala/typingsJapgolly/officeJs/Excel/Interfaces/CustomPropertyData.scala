@@ -5,49 +5,60 @@ import typingsJapgolly.officeJs.officeJsStrings.Boolean
 import typingsJapgolly.officeJs.officeJsStrings.Date
 import typingsJapgolly.officeJs.officeJsStrings.Float
 import typingsJapgolly.officeJs.officeJsStrings.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `customProperty.toJSON()`. */
-trait CustomPropertyData extends js.Object {
+trait CustomPropertyData extends StObject {
+  
   /**
+    * The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
     *
-    * Gets the key of the custom property. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var key: js.UndefOr[String] = js.undefined
+  
   /**
+    * The type of the value used for the custom property.
     *
-    * Gets the value type of the custom property. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var `type`: js.UndefOr[
     DocumentPropertyType | Number | Boolean | Date | typingsJapgolly.officeJs.officeJsStrings.String | Float
   ] = js.undefined
+  
   /**
+    * The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
     *
-    * Gets or sets the value of the custom property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object CustomPropertyData {
-  @scala.inline
-  def apply(
-    key: String = null,
-    `type`: DocumentPropertyType | Number | Boolean | Date | typingsJapgolly.officeJs.officeJsStrings.String | Float = null,
-    value: js.Any = null
-  ): CustomPropertyData = {
+  
+  inline def apply(): CustomPropertyData = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPropertyData]
   }
+  
+  extension [Self <: CustomPropertyData](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setType(
+      value: DocumentPropertyType | Number | Boolean | Date | typingsJapgolly.officeJs.officeJsStrings.String | Float
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

@@ -1,27 +1,32 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait kernel extends js.Object {
+/**
+  * Utility for retrieving the current version of the API.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-kernel.html)
+  */
+trait kernel extends StObject {
+  
   /**
     * Current version of the ArcGIS API for JavaScript.
-    * ```js
-    * require([
-    *   "esri/kernel"
-    * ], function(esriNS) {
-    *   console.log(esriNS.version);
-    * });
-    * ```
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-kernel.html#version)
     */
   val version: String
 }
-
-@JSGlobal("__esri.kernel")
-@js.native
-object kernel extends TopLevel[kernel]
-
+object kernel {
+  
+  inline def apply(version: String): kernel = {
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[kernel]
+  }
+  
+  extension [Self <: kernel](x: Self) {
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+  }
+}

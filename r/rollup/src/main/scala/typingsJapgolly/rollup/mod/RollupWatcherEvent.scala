@@ -1,59 +1,41 @@
 package typingsJapgolly.rollup.mod
 
-import typingsJapgolly.rollup.rollupStrings.BUNDLE_END
-import typingsJapgolly.rollup.rollupStrings.BUNDLE_START
-import typingsJapgolly.rollup.rollupStrings.END
-import typingsJapgolly.rollup.rollupStrings.ERROR
-import typingsJapgolly.rollup.rollupStrings.START
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.rollup.Anon0
-  - typingsJapgolly.rollup.AnonInput
-  - typingsJapgolly.rollup.AnonDuration
-  - typingsJapgolly.rollup.Anon1
-  - typingsJapgolly.rollup.AnonError
+  - typingsJapgolly.rollup.anon.`0`
+  - typingsJapgolly.rollup.anon.Input
+  - typingsJapgolly.rollup.anon.Duration
+  - typingsJapgolly.rollup.anon.`1`
+  - typingsJapgolly.rollup.anon.Error
 */
-trait RollupWatcherEvent extends js.Object
-
+trait RollupWatcherEvent extends StObject
 object RollupWatcherEvent {
-  @scala.inline
-  def AnonInput(code: BUNDLE_START, input: InputOption, output: js.Array[String]): RollupWatcherEvent = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[RollupWatcherEvent]
+  inline def `0`(): typingsJapgolly.rollup.anon.`0` = {
+    val __obj = js.Dynamic.literal(code = "START")
+    __obj.asInstanceOf[typingsJapgolly.rollup.anon.`0`]
   }
-  @scala.inline
-  def AnonError(code: ERROR, error: RollupError): RollupWatcherEvent = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[RollupWatcherEvent]
+  inline def `1`(): typingsJapgolly.rollup.anon.`1` = {
+    val __obj = js.Dynamic.literal(code = "END")
+    __obj.asInstanceOf[typingsJapgolly.rollup.anon.`1`]
   }
-  @scala.inline
-  def AnonDuration(
-    code: BUNDLE_END,
-    duration: Double,
-    input: InputOption,
-    output: js.Array[String],
-    result: RollupBuild
-  ): RollupWatcherEvent = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[RollupWatcherEvent]
+  inline def Duration(duration: Double, output: js.Array[String], result: RollupBuild): typingsJapgolly.rollup.anon.Duration = {
+    val __obj = js.Dynamic.literal(code = "BUNDLE_END", duration = duration.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.rollup.anon.Duration]
   }
-  @scala.inline
-  def Anon1(code: END): RollupWatcherEvent = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[RollupWatcherEvent]
+  inline def Error(error: RollupError): typingsJapgolly.rollup.anon.Error = {
+    val __obj = js.Dynamic.literal(code = "ERROR", error = error.asInstanceOf[js.Any], result = null)
+    __obj.asInstanceOf[typingsJapgolly.rollup.anon.Error]
   }
-  @scala.inline
-  def Anon0(code: START): RollupWatcherEvent = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[RollupWatcherEvent]
+  inline def Input(output: js.Array[String]): typingsJapgolly.rollup.anon.Input = {
+    val __obj = js.Dynamic.literal(code = "BUNDLE_START", output = output.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.rollup.anon.Input]
   }
 }
-

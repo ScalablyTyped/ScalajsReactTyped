@@ -1,145 +1,131 @@
 package typingsJapgolly.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.screeps.AnonData
-  - typingsJapgolly.screeps.AnonEvent
-  - typingsJapgolly.screeps.AnonObjectId
-  - typingsJapgolly.screeps.AnonDataEvent
-  - typingsJapgolly.screeps.AnonEventObjectId
-  - typingsJapgolly.screeps.AnonDataEventObjectId
-  - typingsJapgolly.screeps.AnonEventEVENTREPAIR
-  - typingsJapgolly.screeps.AnonEventEVENTRESERVECONTROLLER
-  - typingsJapgolly.screeps.AnonEventEVENTUPGRADECONTROLLER
-  - typingsJapgolly.screeps.AnonEventEVENTEXIT
-  - typingsJapgolly.screeps.AnonEventEVENTPOWER
-  - typingsJapgolly.screeps.AnonEventEVENTTRANSFER
+  - typingsJapgolly.screeps.anon.Data
+  - typingsJapgolly.screeps.anon.Event
+  - typingsJapgolly.screeps.anon.ObjectId
+  - typingsJapgolly.screeps.anon.DataEvent
+  - typingsJapgolly.screeps.anon.EventObjectId
+  - typingsJapgolly.screeps.anon.DataEventObjectId
+  - typingsJapgolly.screeps.anon.EventEVENTREPAIR
+  - typingsJapgolly.screeps.anon.EventEVENTRESERVECONTROLLER
+  - typingsJapgolly.screeps.anon.EventEVENTUPGRADECONTROLLER
+  - typingsJapgolly.screeps.anon.EventEVENTEXIT
+  - typingsJapgolly.screeps.anon.EventEVENTPOWER
+  - typingsJapgolly.screeps.anon.EventEVENTTRANSFER
 */
-trait EventItem extends js.Object
-
+trait EventItem extends StObject
 object EventItem {
-  @scala.inline
-  def AnonEventEVENTEXIT(
-    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_EXIT] */ js.Any,
-    event: EVENT_EXIT,
-    objectId: String
-  ): EventItem = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[EventItem]
-  }
-  @scala.inline
-  def AnonEvent(
-    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_OBJECT_DESTROYED] */ js.Any,
-    event: EVENT_OBJECT_DESTROYED,
-    objectId: String
-  ): EventItem = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[EventItem]
-  }
-  @scala.inline
-  def AnonEventEVENTUPGRADECONTROLLER(
-    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_UPGRADE_CONTROLLER] */ js.Any,
-    event: EVENT_UPGRADE_CONTROLLER,
-    objectId: String
-  ): EventItem = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[EventItem]
-  }
-  @scala.inline
-  def AnonEventEVENTRESERVECONTROLLER(
-    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_RESERVE_CONTROLLER] */ js.Any,
-    event: EVENT_RESERVE_CONTROLLER,
-    objectId: String
-  ): EventItem = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[EventItem]
-  }
-  @scala.inline
-  def AnonEventEVENTREPAIR(
-    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_REPAIR] */ js.Any,
-    event: EVENT_REPAIR,
-    objectId: String
-  ): EventItem = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[EventItem]
-  }
-  @scala.inline
-  def AnonEventObjectId(
-    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_HARVEST] */ js.Any,
-    event: EVENT_HARVEST,
-    objectId: String
-  ): EventItem = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[EventItem]
-  }
-  @scala.inline
-  def AnonDataEvent(
-    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_BUILD] */ js.Any,
-    event: EVENT_BUILD,
-    objectId: String
-  ): EventItem = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[EventItem]
-  }
-  @scala.inline
-  def AnonDataEventObjectId(
-    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_HEAL] */ js.Any,
-    event: EVENT_HEAL,
-    objectId: String
-  ): EventItem = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[EventItem]
-  }
-  @scala.inline
-  def AnonEventEVENTTRANSFER(
-    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_TRANSFER] */ js.Any,
-    event: EVENT_TRANSFER,
-    objectId: String
-  ): EventItem = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[EventItem]
-  }
-  @scala.inline
-  def AnonEventEVENTPOWER(
-    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_POWER] */ js.Any,
-    event: EVENT_POWER,
-    objectId: String
-  ): EventItem = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[EventItem]
-  }
-  @scala.inline
-  def AnonData(
+  inline def Data(
     data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_ATTACK] */ js.Any,
     event: EVENT_ATTACK,
     objectId: String
-  ): EventItem = {
+  ): typingsJapgolly.screeps.anon.Data = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[EventItem]
+    __obj.asInstanceOf[typingsJapgolly.screeps.anon.Data]
   }
-  @scala.inline
-  def AnonObjectId(
+  
+  inline def DataEvent(
+    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_BUILD] */ js.Any,
+    event: EVENT_BUILD,
+    objectId: String
+  ): typingsJapgolly.screeps.anon.DataEvent = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.screeps.anon.DataEvent]
+  }
+  
+  inline def DataEventObjectId(
+    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_HEAL] */ js.Any,
+    event: EVENT_HEAL,
+    objectId: String
+  ): typingsJapgolly.screeps.anon.DataEventObjectId = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.screeps.anon.DataEventObjectId]
+  }
+  
+  inline def Event(
+    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_OBJECT_DESTROYED] */ js.Any,
+    event: EVENT_OBJECT_DESTROYED,
+    objectId: String
+  ): typingsJapgolly.screeps.anon.Event = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.screeps.anon.Event]
+  }
+  
+  inline def EventEVENTEXIT(
+    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_EXIT] */ js.Any,
+    event: EVENT_EXIT,
+    objectId: String
+  ): typingsJapgolly.screeps.anon.EventEVENTEXIT = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.screeps.anon.EventEVENTEXIT]
+  }
+  
+  inline def EventEVENTPOWER(
+    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_POWER] */ js.Any,
+    event: EVENT_POWER,
+    objectId: String
+  ): typingsJapgolly.screeps.anon.EventEVENTPOWER = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.screeps.anon.EventEVENTPOWER]
+  }
+  
+  inline def EventEVENTREPAIR(
+    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_REPAIR] */ js.Any,
+    event: EVENT_REPAIR,
+    objectId: String
+  ): typingsJapgolly.screeps.anon.EventEVENTREPAIR = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.screeps.anon.EventEVENTREPAIR]
+  }
+  
+  inline def EventEVENTRESERVECONTROLLER(
+    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_RESERVE_CONTROLLER] */ js.Any,
+    event: EVENT_RESERVE_CONTROLLER,
+    objectId: String
+  ): typingsJapgolly.screeps.anon.EventEVENTRESERVECONTROLLER = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.screeps.anon.EventEVENTRESERVECONTROLLER]
+  }
+  
+  inline def EventEVENTTRANSFER(
+    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_TRANSFER] */ js.Any,
+    event: EVENT_TRANSFER,
+    objectId: String
+  ): typingsJapgolly.screeps.anon.EventEVENTTRANSFER = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.screeps.anon.EventEVENTTRANSFER]
+  }
+  
+  inline def EventEVENTUPGRADECONTROLLER(
+    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_UPGRADE_CONTROLLER] */ js.Any,
+    event: EVENT_UPGRADE_CONTROLLER,
+    objectId: String
+  ): typingsJapgolly.screeps.anon.EventEVENTUPGRADECONTROLLER = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.screeps.anon.EventEVENTUPGRADECONTROLLER]
+  }
+  
+  inline def EventObjectId(
+    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_HARVEST] */ js.Any,
+    event: EVENT_HARVEST,
+    objectId: String
+  ): typingsJapgolly.screeps.anon.EventObjectId = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.screeps.anon.EventObjectId]
+  }
+  
+  inline def ObjectId(
     data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_ATTACK_CONTROLLER] */ js.Any,
     event: EVENT_ATTACK_CONTROLLER,
     objectId: String
-  ): EventItem = {
+  ): typingsJapgolly.screeps.anon.ObjectId = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[EventItem]
+    __obj.asInstanceOf[typingsJapgolly.screeps.anon.ObjectId]
   }
 }
-

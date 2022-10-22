@@ -1,104 +1,101 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeBooleans.`false`
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.bottom
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.horizontal
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.top
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.vertical
-import typingsJapgolly.antDesignReactNative.styleTabsMod.TabsStyle
-import typingsJapgolly.antDesignReactNative.tabsMod.default
-import typingsJapgolly.antDesignReactNative.tabsPropsTypeMod.TabBarPropsType
-import typingsJapgolly.antDesignReactNative.tabsPropsTypeMod.TabData
-import typingsJapgolly.antDesignReactNative.tabsTabsMod.TabsProps
+import typingsJapgolly.antDesignReactNative.libTabsPropsTypeMod.TabBarPropsType
+import typingsJapgolly.antDesignReactNative.libTabsPropsTypeMod.TabData
+import typingsJapgolly.antDesignReactNative.libTabsStyleTabsMod.TabsStyle
+import typingsJapgolly.antDesignReactNative.libTabsTabsMod.TabsProps
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tabs {
-  def apply(
-    tabs: js.Array[TabData],
-    animated: js.UndefOr[Boolean] = js.undefined,
-    destroyInactiveTab: js.UndefOr[Boolean] = js.undefined,
-    distanceToChangeTab: Int | Double = null,
-    initialPage: Double | String = null,
-    keyboardShouldPersistTaps: js.UndefOr[Boolean] = js.undefined,
-    noRenderContent: js.UndefOr[Boolean] = js.undefined,
-    onChange: (/* tab */ TabData, /* index */ Double) => Callback = null,
-    onTabClick: (/* tab */ TabData, /* index */ Double) => Callback = null,
-    page: Double | String = null,
-    prerenderingSiblingsNumber: Int | Double = null,
-    renderTab: /* tab */ TabData => CallbackTo[Node] = null,
-    renderTabBar: (js.Function1[/* props */ TabBarPropsType, Node]) | `false` = null,
-    renderUnderline: /* style */ js.Any => CallbackTo[Node] = null,
-    style: StyleProp[ViewStyle] = null,
-    styles: Partial[TabsStyle] = null,
-    swipeable: js.UndefOr[Boolean] = js.undefined,
-    tabBarActiveTextColor: String = null,
-    tabBarBackgroundColor: String = null,
-    tabBarInactiveTextColor: String = null,
-    tabBarPosition: top | bottom = null,
-    tabBarTextStyle: StyleProp[TextStyle] = null,
-    tabBarUnderlineStyle: StyleProp[ViewStyle] = null,
-    tabDirection: horizontal | vertical = null,
-    useLeftInsteadTransform: js.UndefOr[Boolean] = js.undefined,
-    useOnPan: js.UndefOr[Boolean] = js.undefined,
-    usePaged: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TabsProps, default, Unit, TabsProps] = {
-    val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyInactiveTab)) __obj.updateDynamic("destroyInactiveTab")(destroyInactiveTab.asInstanceOf[js.Any])
-    if (distanceToChangeTab != null) __obj.updateDynamic("distanceToChangeTab")(distanceToChangeTab.asInstanceOf[js.Any])
-    if (initialPage != null) __obj.updateDynamic("initialPage")(initialPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardShouldPersistTaps)) __obj.updateDynamic("keyboardShouldPersistTaps")(keyboardShouldPersistTaps.asInstanceOf[js.Any])
-    if (!js.isUndefined(noRenderContent)) __obj.updateDynamic("noRenderContent")(noRenderContent.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* tab */ typingsJapgolly.antDesignReactNative.tabsPropsTypeMod.TabData, t1: /* index */ scala.Double) => onChange(t0, t1).runNow()))
-    if (onTabClick != null) __obj.updateDynamic("onTabClick")(js.Any.fromFunction2((t0: /* tab */ typingsJapgolly.antDesignReactNative.tabsPropsTypeMod.TabData, t1: /* index */ scala.Double) => onTabClick(t0, t1).runNow()))
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (prerenderingSiblingsNumber != null) __obj.updateDynamic("prerenderingSiblingsNumber")(prerenderingSiblingsNumber.asInstanceOf[js.Any])
-    if (renderTab != null) __obj.updateDynamic("renderTab")(js.Any.fromFunction1((t0: /* tab */ typingsJapgolly.antDesignReactNative.tabsPropsTypeMod.TabData) => renderTab(t0).runNow()))
-    if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(renderTabBar.asInstanceOf[js.Any])
-    if (renderUnderline != null) __obj.updateDynamic("renderUnderline")(js.Any.fromFunction1((t0: /* style */ js.Any) => renderUnderline(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeable)) __obj.updateDynamic("swipeable")(swipeable.asInstanceOf[js.Any])
-    if (tabBarActiveTextColor != null) __obj.updateDynamic("tabBarActiveTextColor")(tabBarActiveTextColor.asInstanceOf[js.Any])
-    if (tabBarBackgroundColor != null) __obj.updateDynamic("tabBarBackgroundColor")(tabBarBackgroundColor.asInstanceOf[js.Any])
-    if (tabBarInactiveTextColor != null) __obj.updateDynamic("tabBarInactiveTextColor")(tabBarInactiveTextColor.asInstanceOf[js.Any])
-    if (tabBarPosition != null) __obj.updateDynamic("tabBarPosition")(tabBarPosition.asInstanceOf[js.Any])
-    if (tabBarTextStyle != null) __obj.updateDynamic("tabBarTextStyle")(tabBarTextStyle.asInstanceOf[js.Any])
-    if (tabBarUnderlineStyle != null) __obj.updateDynamic("tabBarUnderlineStyle")(tabBarUnderlineStyle.asInstanceOf[js.Any])
-    if (tabDirection != null) __obj.updateDynamic("tabDirection")(tabDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLeftInsteadTransform)) __obj.updateDynamic("useLeftInsteadTransform")(useLeftInsteadTransform.asInstanceOf[js.Any])
-    if (!js.isUndefined(useOnPan)) __obj.updateDynamic("useOnPan")(useOnPan.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePaged)) __obj.updateDynamic("usePaged")(usePaged.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.tabsTabsMod.TabsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.tabsMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.tabsTabsMod.TabsProps])(children: _*)
+  inline def apply(tabs: js.Array[TabData]): Builder = {
+    val __props = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[TabsProps]))
   }
-  @JSImport("@ant-design/react-native/lib/tabs", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("@ant-design/react-native", "Tabs")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.Tabs] {
+    
+    inline def animated(value: Boolean): this.type = set("animated", value.asInstanceOf[js.Any])
+    
+    inline def destroyInactiveTab(value: Boolean): this.type = set("destroyInactiveTab", value.asInstanceOf[js.Any])
+    
+    inline def distanceToChangeTab(value: Double): this.type = set("distanceToChangeTab", value.asInstanceOf[js.Any])
+    
+    inline def initialPage(value: Double | String): this.type = set("initialPage", value.asInstanceOf[js.Any])
+    
+    inline def keyboardShouldPersistTaps(value: Boolean): this.type = set("keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
+    
+    inline def noRenderContent(value: Boolean): this.type = set("noRenderContent", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: (/* tab */ TabData, /* index */ Double) => Callback): this.type = set("onChange", js.Any.fromFunction2((t0: /* tab */ TabData, t1: /* index */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def onTabClick(value: (/* tab */ TabData, /* index */ Double) => Callback): this.type = set("onTabClick", js.Any.fromFunction2((t0: /* tab */ TabData, t1: /* index */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def page(value: Double | String): this.type = set("page", value.asInstanceOf[js.Any])
+    
+    inline def prerenderingSiblingsNumber(value: Double): this.type = set("prerenderingSiblingsNumber", value.asInstanceOf[js.Any])
+    
+    inline def renderTab(value: /* tab */ TabData => Node): this.type = set("renderTab", js.Any.fromFunction1(value))
+    
+    inline def renderTabBar(value: (js.Function1[/* props */ TabBarPropsType, Node]) | `false`): this.type = set("renderTabBar", value.asInstanceOf[js.Any])
+    
+    inline def renderTabBarFunction1(value: /* props */ TabBarPropsType => Node): this.type = set("renderTabBar", js.Any.fromFunction1(value))
+    
+    inline def renderUnderline(value: /* style */ Any => Node): this.type = set("renderUnderline", js.Any.fromFunction1(value))
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: Partial[TabsStyle]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def swipeable(value: Boolean): this.type = set("swipeable", value.asInstanceOf[js.Any])
+    
+    inline def tabBarActiveTextColor(value: String): this.type = set("tabBarActiveTextColor", value.asInstanceOf[js.Any])
+    
+    inline def tabBarBackgroundColor(value: String): this.type = set("tabBarBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def tabBarInactiveTextColor(value: String): this.type = set("tabBarInactiveTextColor", value.asInstanceOf[js.Any])
+    
+    inline def tabBarPosition(value: top | bottom): this.type = set("tabBarPosition", value.asInstanceOf[js.Any])
+    
+    inline def tabBarTextStyle(value: StyleProp[TextStyle]): this.type = set("tabBarTextStyle", value.asInstanceOf[js.Any])
+    
+    inline def tabBarTextStyleNull: this.type = set("tabBarTextStyle", null)
+    
+    inline def tabBarUnderlineStyle(value: StyleProp[ViewStyle]): this.type = set("tabBarUnderlineStyle", value.asInstanceOf[js.Any])
+    
+    inline def tabBarUnderlineStyleNull: this.type = set("tabBarUnderlineStyle", null)
+    
+    inline def tabDirection(value: horizontal | vertical): this.type = set("tabDirection", value.asInstanceOf[js.Any])
+    
+    inline def useLeftInsteadTransform(value: Boolean): this.type = set("useLeftInsteadTransform", value.asInstanceOf[js.Any])
+    
+    inline def useOnPan(value: Boolean): this.type = set("useOnPan", value.asInstanceOf[js.Any])
+    
+    inline def usePaged(value: Boolean): this.type = set("usePaged", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: TabsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

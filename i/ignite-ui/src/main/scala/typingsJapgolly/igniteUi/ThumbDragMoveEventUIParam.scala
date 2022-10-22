@@ -1,42 +1,54 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThumbDragMoveEventUIParam extends js.Object {
+trait ThumbDragMoveEventUIParam extends StObject {
+  
   /**
-  	 * Gets which scrollbar thumb is being used - horizontal(true) or vertical(false).
-  	 */
+    * Gets which scrollbar thumb is being used - horizontal(true) or vertical(false).
+    */
   var horizontal: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets a reference to the igScroll.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the igScroll.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets how much the content will be scrolled horizontally.
-  	 */
+    * Gets how much the content will be scrolled horizontally.
+    */
   var stepX: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets how much the content will be scrolled vertically.
-  	 */
+    * Gets how much the content will be scrolled vertically.
+    */
   var stepY: js.UndefOr[Double] = js.undefined
 }
-
 object ThumbDragMoveEventUIParam {
-  @scala.inline
-  def apply(
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    owner: js.Any = null,
-    stepX: Int | Double = null,
-    stepY: Int | Double = null
-  ): ThumbDragMoveEventUIParam = {
+  
+  inline def apply(): ThumbDragMoveEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (stepX != null) __obj.updateDynamic("stepX")(stepX.asInstanceOf[js.Any])
-    if (stepY != null) __obj.updateDynamic("stepY")(stepY.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbDragMoveEventUIParam]
   }
+  
+  extension [Self <: ThumbDragMoveEventUIParam](x: Self) {
+    
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setStepX(value: Double): Self = StObject.set(x, "stepX", value.asInstanceOf[js.Any])
+    
+    inline def setStepXUndefined: Self = StObject.set(x, "stepX", js.undefined)
+    
+    inline def setStepY(value: Double): Self = StObject.set(x, "stepY", value.asInstanceOf[js.Any])
+    
+    inline def setStepYUndefined: Self = StObject.set(x, "stepY", js.undefined)
+  }
 }
-

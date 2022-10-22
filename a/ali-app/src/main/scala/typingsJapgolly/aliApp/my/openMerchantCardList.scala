@@ -1,17 +1,24 @@
 package typingsJapgolly.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("my.openMerchantCardList")
-@js.native
-object openMerchantCardList extends js.Object {
-  /**
-  	 * 打开支付宝卡列表。
-  	 * 有关支付宝卡包详细功能，见[支付宝卡包产品介绍](https://docs.alipay.com/mini/introduce/voucher)
-  	 * @param options
-  	 */
-  def apply(options: OpenMerchantCardList_): Unit = js.native
+trait OpenMerchantCardList
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
+  var partnerId: String
 }
-
+object OpenMerchantCardList {
+  
+  inline def apply(partnerId: String): OpenMerchantCardList = {
+    val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OpenMerchantCardList]
+  }
+  
+  extension [Self <: OpenMerchantCardList](x: Self) {
+    
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+  }
+}

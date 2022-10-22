@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * One of:
@@ -15,16 +15,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.D
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.R
 */
-trait MTType extends js.Object
-
+trait MTType extends StObject
 object MTType {
-  @scala.inline
-  def D: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.D = this.cast("D")
-  @scala.inline
-  def N: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.N = this.cast("N")
-  @scala.inline
-  def R: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.R = this.cast("R")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def D: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.D = "D".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.D]
+  
+  inline def N: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.N = "N".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.N]
+  
+  inline def R: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.R = "R".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.R]
 }
-

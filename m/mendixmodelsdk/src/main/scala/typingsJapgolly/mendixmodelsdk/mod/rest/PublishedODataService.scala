@@ -1,19 +1,19 @@
 package typingsJapgolly.mendixmodelsdk.mod.rest
 
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.projectsMod.projects.IFolderBase
-import typingsJapgolly.mendixmodelsdk.restMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typingsJapgolly.mendixmodelsdk.srcGenRestMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/published-odata-services relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/published-odata-services relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk", "rest.PublishedODataService")
 @js.native
-class PublishedODataService protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.rest.PublishedODataService {
+open class PublishedODataService protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.rest.PublishedODataService {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -22,17 +22,28 @@ class PublishedODataService protected ()
     container: IFolderBase
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "rest.PublishedODataService")
-@js.native
-object PublishedODataService extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object PublishedODataService {
+  
+  @JSImport("mendixmodelsdk", "rest.PublishedODataService")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new PublishedODataService unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
-  def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.restMod.rest.PublishedODataService = js.native
+  /* static member */
+  inline def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.srcGenRestMod.rest.PublishedODataService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenRestMod.rest.PublishedODataService]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "rest.PublishedODataService.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "rest.PublishedODataService.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

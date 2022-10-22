@@ -1,28 +1,36 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.autofillTypesMod.IAutofillProps
+import typingsJapgolly.officeUiFabricReact.anon.EnableAutofillOnKeyPress
+import typingsJapgolly.officeUiFabricReact.libComponentsAutofillAutofillDottypesMod.IAutofillProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Autofill", JSImport.Namespace)
-@js.native
-object libAutofillMod extends js.Object {
+object libAutofillMod {
+  
+  @JSImport("office-ui-fabric-react/lib/Autofill", "Autofill")
   @js.native
-  class Autofill protected ()
-    extends typingsJapgolly.officeUiFabricReact.autofillMod.Autofill {
+  open class Autofill protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsAutofillMod.Autofill {
     def this(props: IAutofillProps) = this()
   }
-  
-  @js.native
-  class BaseAutoFill ()
-    extends typingsJapgolly.officeUiFabricReact.autofillAutofillMod.Autofill
-  
   /* static members */
-  @js.native
-  object Autofill extends js.Object {
-    var defaultProps: AnonEnableAutofillOnKeyPress = js.native
+  object Autofill {
+    
+    @JSImport("office-ui-fabric-react/lib/Autofill", "Autofill")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/Autofill", "Autofill.defaultProps")
+    @js.native
+    def defaultProps: EnableAutofillOnKeyPress = js.native
+    inline def defaultProps_=(x: EnableAutofillOnKeyPress): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/Autofill", "BaseAutoFill")
+  @js.native
+  open class BaseAutoFill protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsAutofillMod.BaseAutoFill {
+    def this(props: IAutofillProps) = this()
+  }
 }
-

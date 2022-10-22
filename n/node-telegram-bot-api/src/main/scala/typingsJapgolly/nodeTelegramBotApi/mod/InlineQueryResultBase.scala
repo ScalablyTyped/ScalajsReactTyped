@@ -1,20 +1,28 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InlineQueryResultBase extends js.Object {
+trait InlineQueryResultBase extends StObject {
+  
   var id: String
+  
   var reply_markup: js.UndefOr[InlineKeyboardMarkup] = js.undefined
 }
-
 object InlineQueryResultBase {
-  @scala.inline
-  def apply(id: String, reply_markup: InlineKeyboardMarkup = null): InlineQueryResultBase = {
+  
+  inline def apply(id: String): InlineQueryResultBase = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResultBase]
   }
+  
+  extension [Self <: InlineQueryResultBase](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setReply_markup(value: InlineKeyboardMarkup): Self = StObject.set(x, "reply_markup", value.asInstanceOf[js.Any])
+    
+    inline def setReply_markupUndefined: Self = StObject.set(x, "reply_markup", js.undefined)
+  }
 }
-

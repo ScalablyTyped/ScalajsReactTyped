@@ -1,45 +1,79 @@
 package typingsJapgolly.materialUi
 
-import typingsJapgolly.materialUi.MaterialUI.Menus.MenuItem
+import japgolly.scalajs.react.facade.React.Component
+import typingsJapgolly.materialUi.MaterialUI.AutoCompleteProps
+import typingsJapgolly.materialUi.MaterialUI.DividerProps
+import typingsJapgolly.materialUi.MaterialUI.Menus.MenuItemProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/AutoComplete", JSImport.Namespace)
-@js.native
-object autoCompleteMod extends js.Object {
-  @js.native
-  class AutoComplete ()
-    extends typingsJapgolly.materialUi.MaterialUI.AutoComplete
+object autoCompleteMod {
   
+  @JSImport("material-ui/AutoComplete", JSImport.Default)
   @js.native
-  class default () extends AutoComplete
-  
+  open class default () extends AutoComplete
   /* static members */
-  @js.native
-  object AutoComplete extends js.Object {
-    var Divider: typingsJapgolly.materialUi.MaterialUI.Divider = js.native
-    var Item: MenuItem = js.native
-    def caseInsensitiveFilter(searchText: String, key: String): Boolean = js.native
-    def caseSensitiveFilter(searchText: String, key: String): Boolean = js.native
-    def defaultFilter(searchText: String, key: String): Boolean = js.native
-    def fuzzyFilter(searchText: String, key: String): Boolean = js.native
-    def levenshteinDistanceFilter(distanceLessThan: Double): js.Function2[/* searchText */ String, /* key */ String, Boolean] = js.native
-    def noFilter(): Boolean = js.native
+  object default {
+    
+    @JSImport("material-ui/AutoComplete", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("material-ui/AutoComplete", "default.Divider")
+    @js.native
+    def Divider: Component[DividerProps & js.Object, js.Object] = js.native
+    inline def Divider_=(x: Component[DividerProps & js.Object, js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-ui/AutoComplete", "default.Item")
+    @js.native
+    def Item: Component[MenuItemProps & js.Object, js.Object] = js.native
+    inline def Item_=(x: Component[MenuItemProps & js.Object, js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    
+    inline def caseInsensitiveFilter(searchText: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("caseInsensitiveFilter")(searchText.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def caseSensitiveFilter(searchText: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("caseSensitiveFilter")(searchText.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def defaultFilter(searchText: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultFilter")(searchText.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def fuzzyFilter(searchText: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzyFilter")(searchText.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def levenshteinDistanceFilter(distanceLessThan: Double): js.Function2[/* searchText */ String, /* key */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("levenshteinDistanceFilter")(distanceLessThan.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* searchText */ String, /* key */ String, Boolean]]
+    
+    inline def noFilter(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("noFilter")().asInstanceOf[Boolean]
   }
   
-  /* static members */
+  @JSImport("material-ui/AutoComplete", "AutoComplete")
   @js.native
-  object default extends js.Object {
-    var Divider: typingsJapgolly.materialUi.MaterialUI.Divider = js.native
-    var Item: MenuItem = js.native
-    def caseInsensitiveFilter(searchText: String, key: String): Boolean = js.native
-    def caseSensitiveFilter(searchText: String, key: String): Boolean = js.native
-    def defaultFilter(searchText: String, key: String): Boolean = js.native
-    def fuzzyFilter(searchText: String, key: String): Boolean = js.native
-    def levenshteinDistanceFilter(distanceLessThan: Double): js.Function2[/* searchText */ String, /* key */ String, Boolean] = js.native
-    def noFilter(): Boolean = js.native
+  open class AutoComplete ()
+    extends typingsJapgolly.react.mod.Component[AutoCompleteProps[Any], js.Object, Any]
+  /* static members */
+  object AutoComplete {
+    
+    @JSImport("material-ui/AutoComplete", "AutoComplete")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("material-ui/AutoComplete", "AutoComplete.Divider")
+    @js.native
+    def Divider: Component[DividerProps & js.Object, js.Object] = js.native
+    inline def Divider_=(x: Component[DividerProps & js.Object, js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-ui/AutoComplete", "AutoComplete.Item")
+    @js.native
+    def Item: Component[MenuItemProps & js.Object, js.Object] = js.native
+    inline def Item_=(x: Component[MenuItemProps & js.Object, js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    
+    inline def caseInsensitiveFilter(searchText: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("caseInsensitiveFilter")(searchText.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def caseSensitiveFilter(searchText: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("caseSensitiveFilter")(searchText.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def defaultFilter(searchText: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultFilter")(searchText.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def fuzzyFilter(searchText: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzyFilter")(searchText.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def levenshteinDistanceFilter(distanceLessThan: Double): js.Function2[/* searchText */ String, /* key */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("levenshteinDistanceFilter")(distanceLessThan.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* searchText */ String, /* key */ String, Boolean]]
+    
+    inline def noFilter(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("noFilter")().asInstanceOf[Boolean]
   }
-  
 }
-

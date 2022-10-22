@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.map
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExtentOptions extends js.Object {
+trait ExtentOptions extends StObject {
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object ExtentOptions {
-  @scala.inline
-  def apply(name: String = null): ExtentOptions = {
+  
+  inline def apply(): ExtentOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtentOptions]
   }
+  
+  extension [Self <: ExtentOptions](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.reactNativeWebrtc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConfigurationParam extends js.Object {
+trait ConfigurationParam extends StObject {
+  
   var credential: js.UndefOr[String] = js.undefined
+  
   var username: js.UndefOr[String] = js.undefined
 }
-
 object ConfigurationParam {
-  @scala.inline
-  def apply(credential: String = null, username: String = null): ConfigurationParam = {
+  
+  inline def apply(): ConfigurationParam = {
     val __obj = js.Dynamic.literal()
-    if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationParam]
   }
+  
+  extension [Self <: ConfigurationParam](x: Self) {
+    
+    inline def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    
+    inline def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
+    
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+  }
 }
-

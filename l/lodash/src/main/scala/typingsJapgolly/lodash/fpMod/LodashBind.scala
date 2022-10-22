@@ -1,18 +1,36 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.mod.LoDashImplicitWrapper
+import typingsJapgolly.lodash.mod.Collection
+import typingsJapgolly.lodash.mod.Function
+import typingsJapgolly.lodash.mod.Object
+import typingsJapgolly.lodash.mod.Primitive
+import typingsJapgolly.lodash.mod.String
 import typingsJapgolly.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashBind extends js.Object {
+trait LodashBind extends StObject {
+  
+  def apply(func: js.Function1[/* repeated */ Any, Any]): LodashBind1x1 = js.native
+  def apply(func: js.Function1[/* repeated */ Any, Any], thisArg: Any): js.Function1[/* repeated */ Any, Any] = js.native
+  def apply(func: __, thisArg: Any): LodashBind1x2 = js.native
+  
+  def placeholder(): String = js.native
+  def placeholder(value: java.lang.String): String = js.native
+  def placeholder[T /* <: js.UndefOr[Null] */](value: T): Primitive[T] = js.native
+  def placeholder[T](value: typingsJapgolly.lodash.mod.List[T]): Collection[T] = js.native
   @JSName("placeholder")
   var placeholder_Original: __ = js.native
-  def apply(func: js.Function1[/* repeated */ js.Any, _]): LodashBind1x1 = js.native
-  def apply(func: js.Function1[/* repeated */ js.Any, _], thisArg: js.Any): js.Function1[/* repeated */ js.Any, _] = js.native
-  def apply(func: __, thisArg: js.Any): LodashBind1x2 = js.native
+  @JSName("placeholder")
+  def placeholder_T_Collection[T](): Collection[T] = js.native
+  @JSName("placeholder")
+  def placeholder_T_Function[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T] = js.native
+  @JSName("placeholder")
+  def placeholder_T_Object[T /* <: js.Object */](): Object[T] = js.native
+  @JSName("placeholder")
+  def placeholder_T_Object[T /* <: js.Object */](value: T): Object[T] = js.native
   /**
     * Creates a lodash object which wraps value to enable implicit method chain sequences.
     * Methods that operate on and return arrays, collections, and functions can be chained together.
@@ -81,6 +99,6 @@ trait LodashBind extends js.Object {
     * toString, toUpper, trim, trimEnd, trimStart, truncate, unescape, uniqueId, upperCase,
     * upperFirst, value, and words.
     **/
-  def placeholder[T](value: T): LoDashImplicitWrapper[T] = js.native
+  @JSName("placeholder")
+  def placeholder_TrapAny_Intersection[TrapAny /* <: typingsJapgolly.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String = js.native
 }
-

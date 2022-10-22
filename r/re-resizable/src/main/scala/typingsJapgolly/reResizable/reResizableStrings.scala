@@ -1,80 +1,81 @@
 package typingsJapgolly.reResizable
 
-import typingsJapgolly.reResizable.resizerMod.Direction
+import typingsJapgolly.reResizable.libResizerMod.Direction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reResizableStrings {
-  @js.native
-  sealed trait bottom extends Direction
   
   @js.native
-  sealed trait bottomLeft extends Direction
+  sealed trait bottom
+    extends StObject
+       with Direction
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait bottomRight extends Direction
+  sealed trait bottomLeft
+    extends StObject
+       with Direction
+  inline def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
   
   @js.native
-  sealed trait column extends js.Object
+  sealed trait bottomRight
+    extends StObject
+       with Direction
+  inline def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   
   @js.native
-  sealed trait height extends js.Object
+  sealed trait column extends StObject
+  inline def column: column = "column".asInstanceOf[column]
   
   @js.native
-  sealed trait left extends Direction
+  sealed trait height extends StObject
+  inline def height: height = "height".asInstanceOf[height]
   
   @js.native
-  sealed trait parent extends js.Object
+  sealed trait left
+    extends StObject
+       with Direction
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait right extends Direction
+  sealed trait parent extends StObject
+  inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
-  sealed trait row extends js.Object
+  sealed trait right
+    extends StObject
+       with Direction
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait top extends Direction
+  sealed trait row extends StObject
+  inline def row: row = "row".asInstanceOf[row]
   
   @js.native
-  sealed trait topLeft extends Direction
+  sealed trait top
+    extends StObject
+       with Direction
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait topRight extends Direction
+  sealed trait topLeft
+    extends StObject
+       with Direction
+  inline def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
   
   @js.native
-  sealed trait width extends js.Object
+  sealed trait topRight
+    extends StObject
+       with Direction
+  inline def topRight: topRight = "topRight".asInstanceOf[topRight]
   
   @js.native
-  sealed trait window extends js.Object
+  sealed trait width extends StObject
+  inline def width: width = "width".asInstanceOf[width]
   
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
-  @scala.inline
-  def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
-  @scala.inline
-  def column: column = "column".asInstanceOf[column]
-  @scala.inline
-  def height: height = "height".asInstanceOf[height]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def row: row = "row".asInstanceOf[row]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
-  @scala.inline
-  def topRight: topRight = "topRight".asInstanceOf[topRight]
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
+  @js.native
+  sealed trait window extends StObject
+  inline def window: window = "window".asInstanceOf[window]
 }
-

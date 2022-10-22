@@ -1,30 +1,42 @@
 package typingsJapgolly.openapiTypes.mod.OpenAPIV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExampleObject extends js.Object {
+trait ExampleObject extends StObject {
+  
   var description: js.UndefOr[String] = js.undefined
+  
   var externalValue: js.UndefOr[String] = js.undefined
+  
   var summary: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object ExampleObject {
-  @scala.inline
-  def apply(
-    description: String = null,
-    externalValue: String = null,
-    summary: String = null,
-    value: js.Any = null
-  ): ExampleObject = {
+  
+  inline def apply(): ExampleObject = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (externalValue != null) __obj.updateDynamic("externalValue")(externalValue.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExampleObject]
   }
+  
+  extension [Self <: ExampleObject](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setExternalValue(value: String): Self = StObject.set(x, "externalValue", value.asInstanceOf[js.Any])
+    
+    inline def setExternalValueUndefined: Self = StObject.set(x, "externalValue", js.undefined)
+    
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

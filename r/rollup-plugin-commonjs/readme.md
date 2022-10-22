@@ -10,10 +10,10 @@ Convert CommonJS modules to ES2015
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-commonjs |
 | Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 915 |
-| # downloads        | 21887322 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1367478.0 |
+| # stars            | 495.0 |
 
 ## Links
 - [Homepage](https://github.com/rollup/rollup-plugin-commonjs)

@@ -1,45 +1,72 @@
 package typingsJapgolly.node.netMod
 
+import typingsJapgolly.node.eventsMod.Abortable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListenOptions extends js.Object {
+trait ListenOptions
+  extends StObject
+     with Abortable {
+  
   var backlog: js.UndefOr[Double] = js.undefined
+  
   var exclusive: js.UndefOr[Boolean] = js.undefined
+  
   var host: js.UndefOr[String] = js.undefined
+  
   /**
     * @default false
     */
   var ipv6Only: js.UndefOr[Boolean] = js.undefined
+  
   var path: js.UndefOr[String] = js.undefined
+  
   var port: js.UndefOr[Double] = js.undefined
+  
   var readableAll: js.UndefOr[Boolean] = js.undefined
+  
   var writableAll: js.UndefOr[Boolean] = js.undefined
 }
-
 object ListenOptions {
-  @scala.inline
-  def apply(
-    backlog: Int | Double = null,
-    exclusive: js.UndefOr[Boolean] = js.undefined,
-    host: String = null,
-    ipv6Only: js.UndefOr[Boolean] = js.undefined,
-    path: String = null,
-    port: Int | Double = null,
-    readableAll: js.UndefOr[Boolean] = js.undefined,
-    writableAll: js.UndefOr[Boolean] = js.undefined
-  ): ListenOptions = {
+  
+  inline def apply(): ListenOptions = {
     val __obj = js.Dynamic.literal()
-    if (backlog != null) __obj.updateDynamic("backlog")(backlog.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(ipv6Only)) __obj.updateDynamic("ipv6Only")(ipv6Only.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(readableAll)) __obj.updateDynamic("readableAll")(readableAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(writableAll)) __obj.updateDynamic("writableAll")(writableAll.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenOptions]
   }
+  
+  extension [Self <: ListenOptions](x: Self) {
+    
+    inline def setBacklog(value: Double): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
+    
+    inline def setBacklogUndefined: Self = StObject.set(x, "backlog", js.undefined)
+    
+    inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    
+    inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+    
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setIpv6Only(value: Boolean): Self = StObject.set(x, "ipv6Only", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6OnlyUndefined: Self = StObject.set(x, "ipv6Only", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    inline def setReadableAll(value: Boolean): Self = StObject.set(x, "readableAll", value.asInstanceOf[js.Any])
+    
+    inline def setReadableAllUndefined: Self = StObject.set(x, "readableAll", js.undefined)
+    
+    inline def setWritableAll(value: Boolean): Self = StObject.set(x, "writableAll", value.asInstanceOf[js.Any])
+    
+    inline def setWritableAllUndefined: Self = StObject.set(x, "writableAll", js.undefined)
+  }
 }
-

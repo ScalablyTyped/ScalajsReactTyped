@@ -1,20 +1,28 @@
 package typingsJapgolly.aureliaBinding.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OverrideContext extends js.Object {
-  var bindingContext: js.Any
+trait OverrideContext extends StObject {
+  
+  var bindingContext: Any
+  
   var parentOverrideContext: js.UndefOr[OverrideContext] = js.undefined
 }
-
 object OverrideContext {
-  @scala.inline
-  def apply(bindingContext: js.Any, parentOverrideContext: OverrideContext = null): OverrideContext = {
+  
+  inline def apply(bindingContext: Any): OverrideContext = {
     val __obj = js.Dynamic.literal(bindingContext = bindingContext.asInstanceOf[js.Any])
-    if (parentOverrideContext != null) __obj.updateDynamic("parentOverrideContext")(parentOverrideContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverrideContext]
   }
+  
+  extension [Self <: OverrideContext](x: Self) {
+    
+    inline def setBindingContext(value: Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
+    
+    inline def setParentOverrideContext(value: OverrideContext): Self = StObject.set(x, "parentOverrideContext", value.asInstanceOf[js.Any])
+    
+    inline def setParentOverrideContextUndefined: Self = StObject.set(x, "parentOverrideContext", js.undefined)
+  }
 }
-

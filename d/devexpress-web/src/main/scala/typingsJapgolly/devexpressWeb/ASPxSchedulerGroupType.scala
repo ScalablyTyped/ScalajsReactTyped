@@ -1,26 +1,42 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the SchedulerGroupType enumeration.
   */
-@JSGlobal("ASPxSchedulerGroupType")
-@js.native
-class ASPxSchedulerGroupType () extends js.Object {
+trait ASPxSchedulerGroupType extends StObject {
+  
   /**
     * Gets a string representation equivalent of SchedulerGroupType.Date enumeration for use in client scripts.
     */
-  var Date: String = js.native
+  var Date: String
+  
   /**
     * Gets a string representation equivalent of SchedulerGroupType.None enumeration for use in client scripts.
     */
-  var None: String = js.native
+  var None: String
+  
   /**
     * Gets a string representation equivalent of SchedulerGroupType.Resource enumeration for use in client scripts.
     */
-  var Resource: String = js.native
+  var Resource: String
 }
-
+object ASPxSchedulerGroupType {
+  
+  inline def apply(Date: String, None: String, Resource: String): ASPxSchedulerGroupType = {
+    val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], None = None.asInstanceOf[js.Any], Resource = Resource.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxSchedulerGroupType]
+  }
+  
+  extension [Self <: ASPxSchedulerGroupType](x: Self) {
+    
+    inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    
+    inline def setNone(value: String): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
+    
+    inline def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
+  }
+}

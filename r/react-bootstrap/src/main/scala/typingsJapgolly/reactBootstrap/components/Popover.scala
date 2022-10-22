@@ -1,55 +1,54 @@
 package typingsJapgolly.reactBootstrap.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactBootstrap.libPopoverMod.PopoverProps
 import typingsJapgolly.reactBootstrap.mod.Sizes
-import typingsJapgolly.reactBootstrap.popoverMod.PopoverProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Popover {
-  def apply(
-    arrowOffsetLeft: Double | String = null,
-    arrowOffsetTop: Double | String = null,
-    bsClass: String = null,
-    bsSize: Sizes = null,
-    bsStyle: String = null,
-    placement: String = null,
-    positionLeft: Double | String = null,
-    positionTop: Double | String = null,
-    title: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PopoverProps, typingsJapgolly.reactBootstrap.mod.Popover, Unit, PopoverProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (arrowOffsetLeft != null) __obj.updateDynamic("arrowOffsetLeft")(arrowOffsetLeft.asInstanceOf[js.Any])
-    if (arrowOffsetTop != null) __obj.updateDynamic("arrowOffsetTop")(arrowOffsetTop.asInstanceOf[js.Any])
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
-    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (positionLeft != null) __obj.updateDynamic("positionLeft")(positionLeft.asInstanceOf[js.Any])
-    if (positionTop != null) __obj.updateDynamic("positionTop")(positionTop.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBootstrap.popoverMod.PopoverProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactBootstrap.mod.Popover](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBootstrap.popoverMod.PopoverProps])(children: _*)
-  }
   @JSImport("react-bootstrap", "Popover")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactBootstrap.mod.Popover] {
+    
+    inline def arrowOffsetLeft(value: Double | String): this.type = set("arrowOffsetLeft", value.asInstanceOf[js.Any])
+    
+    inline def arrowOffsetTop(value: Double | String): this.type = set("arrowOffsetTop", value.asInstanceOf[js.Any])
+    
+    inline def bsClass(value: String): this.type = set("bsClass", value.asInstanceOf[js.Any])
+    
+    inline def bsSize(value: Sizes): this.type = set("bsSize", value.asInstanceOf[js.Any])
+    
+    inline def bsStyle(value: String): this.type = set("bsStyle", value.asInstanceOf[js.Any])
+    
+    inline def placement(value: String): this.type = set("placement", value.asInstanceOf[js.Any])
+    
+    inline def positionLeft(value: Double | String): this.type = set("positionLeft", value.asInstanceOf[js.Any])
+    
+    inline def positionTop(value: Double | String): this.type = set("positionTop", value.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Popover.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PopoverProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

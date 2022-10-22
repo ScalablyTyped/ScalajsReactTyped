@@ -1,59 +1,57 @@
 package typingsJapgolly.angularCommon.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WeekDay extends js.Object
-
+sealed trait WeekDay extends StObject
 @JSImport("@angular/common", "WeekDay")
 @js.native
-object WeekDay extends js.Object {
-  @js.native
-  sealed trait Friday extends WeekDay
-  
-  @js.native
-  sealed trait Monday extends WeekDay
-  
-  @js.native
-  sealed trait Saturday extends WeekDay
-  
-  @js.native
-  sealed trait Sunday extends WeekDay
-  
-  @js.native
-  sealed trait Thursday extends WeekDay
-  
-  @js.native
-  sealed trait Tuesday extends WeekDay
-  
-  @js.native
-  sealed trait Wednesday extends WeekDay
+object WeekDay extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WeekDay with Double] = js.native
-  /* 5 */ @js.native
-  object Friday extends TopLevel[Friday with Double]
+  def apply(value: Double): js.UndefOr[WeekDay & Double] = js.native
   
-  /* 1 */ @js.native
-  object Monday extends TopLevel[Monday with Double]
+  @js.native
+  sealed trait Friday
+    extends StObject
+       with WeekDay
+  /* 5 */ val Friday: typingsJapgolly.angularCommon.mod.WeekDay.Friday & Double = js.native
   
-  /* 6 */ @js.native
-  object Saturday extends TopLevel[Saturday with Double]
+  @js.native
+  sealed trait Monday
+    extends StObject
+       with WeekDay
+  /* 1 */ val Monday: typingsJapgolly.angularCommon.mod.WeekDay.Monday & Double = js.native
   
-  /* 0 */ @js.native
-  object Sunday extends TopLevel[Sunday with Double]
+  @js.native
+  sealed trait Saturday
+    extends StObject
+       with WeekDay
+  /* 6 */ val Saturday: typingsJapgolly.angularCommon.mod.WeekDay.Saturday & Double = js.native
   
-  /* 4 */ @js.native
-  object Thursday extends TopLevel[Thursday with Double]
+  @js.native
+  sealed trait Sunday
+    extends StObject
+       with WeekDay
+  /* 0 */ val Sunday: typingsJapgolly.angularCommon.mod.WeekDay.Sunday & Double = js.native
   
-  /* 2 */ @js.native
-  object Tuesday extends TopLevel[Tuesday with Double]
+  @js.native
+  sealed trait Thursday
+    extends StObject
+       with WeekDay
+  /* 4 */ val Thursday: typingsJapgolly.angularCommon.mod.WeekDay.Thursday & Double = js.native
   
-  /* 3 */ @js.native
-  object Wednesday extends TopLevel[Wednesday with Double]
+  @js.native
+  sealed trait Tuesday
+    extends StObject
+       with WeekDay
+  /* 2 */ val Tuesday: typingsJapgolly.angularCommon.mod.WeekDay.Tuesday & Double = js.native
   
+  @js.native
+  sealed trait Wednesday
+    extends StObject
+       with WeekDay
+  /* 3 */ val Wednesday: typingsJapgolly.angularCommon.mod.WeekDay.Wednesday & Double = js.native
 }
-

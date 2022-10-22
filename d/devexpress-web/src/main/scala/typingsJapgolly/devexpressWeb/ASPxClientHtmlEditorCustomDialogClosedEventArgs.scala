@@ -1,25 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientHtmlEditor.CustomDialogClosed client event.
   */
-@JSGlobal("ASPxClientHtmlEditorCustomDialogClosedEventArgs")
-@js.native
-class ASPxClientHtmlEditorCustomDialogClosedEventArgs protected () extends ASPxClientHtmlEditorCustomDialogCloseEventArgsBase {
-  /**
-    * Initializes a new instance of the ASPxClientHtmlEditorCustomDialogClosedEventArgs class with the specified settings.
-    * @param name A string value that specifies the custom dialog's name. This value is assigned to the ASPxClientHtmlEditorCustomDialogEventArgs.name property.
-    * @param status An object that specifies a status that is returned to the parent control when the custom dialog is closed. This value is assigned to the ASPxClientHtmlEditorCustomDialogCloseEventArgsBase.status property.
-    * @param data An object that specifies the data that is returned to the parent control when the custom dialog is closed. This value is assigned to the ASPxClientHtmlEditorCustomDialogClosedEventArgs.data property.
-    */
-  def this(name: String, status: js.Any, data: js.Any) = this()
+trait ASPxClientHtmlEditorCustomDialogClosedEventArgs
+  extends StObject
+     with ASPxClientHtmlEditorCustomDialogCloseEventArgsBase {
+  
   /**
     * Gets an object associated with the closed dialog.
     */
-  var data: js.Any = js.native
+  var data: Any
 }
-
+object ASPxClientHtmlEditorCustomDialogClosedEventArgs {
+  
+  inline def apply(data: Any, name: String, status: Any): ASPxClientHtmlEditorCustomDialogClosedEventArgs = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogClosedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientHtmlEditorCustomDialogClosedEventArgs](x: Self) {
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+  }
+}

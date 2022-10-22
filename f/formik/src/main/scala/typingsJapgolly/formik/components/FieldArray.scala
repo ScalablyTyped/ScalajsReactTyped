@@ -1,46 +1,38 @@
 package typingsJapgolly.formik.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.formik.fieldArrayMod.FieldArrayConfig
-import typingsJapgolly.formik.fieldArrayMod.FieldArrayRenderProps
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.formik.distFieldArrayMod.FieldArrayConfig
+import typingsJapgolly.formik.distFieldArrayMod.FieldArrayRenderProps
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FieldArray {
-  def apply(
-    name: String,
-    component: String | (ComponentType[FieldArrayRenderProps | Unit]) = null,
-    render: /* props */ FieldArrayRenderProps => CallbackTo[Node] = null,
-    validateOnChange: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: /* props */ FieldArrayRenderProps => CallbackTo[Node] = null
-  ): UnmountedWithRoot[FieldArrayConfig, typingsJapgolly.formik.mod.FieldArray, Unit, FieldArrayConfig] = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
-      if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.formik.fieldArrayMod.FieldArrayRenderProps) => children(t0).runNow()))
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.formik.fieldArrayMod.FieldArrayRenderProps) => render(t0).runNow()))
-    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.formik.fieldArrayMod.FieldArrayConfig, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.formik.mod.FieldArray](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.formik.fieldArrayMod.FieldArrayConfig])
+  inline def apply(name: String): Builder = {
+    val __props = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[FieldArrayConfig]))
   }
+  
   @JSImport("formik", "FieldArray")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def children(value: FieldArrayRenderProps => Node): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def component(value: String | (ComponentType[FieldArrayRenderProps | Unit])): this.type = set("component", value.asInstanceOf[js.Any])
+    
+    inline def render(value: FieldArrayRenderProps => Node): this.type = set("render", js.Any.fromFunction1(value))
+    
+    inline def validateOnChange(value: Boolean): this.type = set("validateOnChange", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: FieldArrayConfig): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -10,10 +10,10 @@ Detect if a string is a data URL
 | ------------------ | :-------------: |
 | Full name          | valid-data-url |
 | Keywords           | valid, data-uri, data-url, data, uri, url, datauri, dataurl |
-| # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 8254903 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2563770.0 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/killmenot/valid-data-url)

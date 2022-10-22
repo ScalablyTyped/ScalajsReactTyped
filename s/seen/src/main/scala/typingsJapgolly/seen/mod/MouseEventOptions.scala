@@ -1,42 +1,63 @@
 package typingsJapgolly.seen.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Event
 import typingsJapgolly.std.EventListener
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MouseEventOptions extends js.Object {
+trait MouseEventOptions extends StObject {
+  
   var drag: js.UndefOr[EventListener] = js.undefined
+  
   var dragEnd: js.UndefOr[EventListener] = js.undefined
+  
   var dragStart: js.UndefOr[EventListener] = js.undefined
+  
   var mouseDown: js.UndefOr[EventListener] = js.undefined
+  
   var mouseMove: js.UndefOr[EventListener] = js.undefined
+  
   var mouseUp: js.UndefOr[EventListener] = js.undefined
+  
   var mouseWheel: js.UndefOr[EventListener] = js.undefined
 }
-
 object MouseEventOptions {
-  @scala.inline
-  def apply(
-    drag: /* evt */ Event_ => Callback = null,
-    dragEnd: /* evt */ Event_ => Callback = null,
-    dragStart: /* evt */ Event_ => Callback = null,
-    mouseDown: /* evt */ Event_ => Callback = null,
-    mouseMove: /* evt */ Event_ => Callback = null,
-    mouseUp: /* evt */ Event_ => Callback = null,
-    mouseWheel: /* evt */ Event_ => Callback = null
-  ): MouseEventOptions = {
+  
+  inline def apply(): MouseEventOptions = {
     val __obj = js.Dynamic.literal()
-    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1((t0: /* evt */ typingsJapgolly.std.Event_) => drag(t0).runNow()))
-    if (dragEnd != null) __obj.updateDynamic("dragEnd")(js.Any.fromFunction1((t0: /* evt */ typingsJapgolly.std.Event_) => dragEnd(t0).runNow()))
-    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction1((t0: /* evt */ typingsJapgolly.std.Event_) => dragStart(t0).runNow()))
-    if (mouseDown != null) __obj.updateDynamic("mouseDown")(js.Any.fromFunction1((t0: /* evt */ typingsJapgolly.std.Event_) => mouseDown(t0).runNow()))
-    if (mouseMove != null) __obj.updateDynamic("mouseMove")(js.Any.fromFunction1((t0: /* evt */ typingsJapgolly.std.Event_) => mouseMove(t0).runNow()))
-    if (mouseUp != null) __obj.updateDynamic("mouseUp")(js.Any.fromFunction1((t0: /* evt */ typingsJapgolly.std.Event_) => mouseUp(t0).runNow()))
-    if (mouseWheel != null) __obj.updateDynamic("mouseWheel")(js.Any.fromFunction1((t0: /* evt */ typingsJapgolly.std.Event_) => mouseWheel(t0).runNow()))
     __obj.asInstanceOf[MouseEventOptions]
   }
+  
+  extension [Self <: MouseEventOptions](x: Self) {
+    
+    inline def setDrag(value: /* evt */ Event => Callback): Self = StObject.set(x, "drag", js.Any.fromFunction1((t0: /* evt */ Event) => value(t0).runNow()))
+    
+    inline def setDragEnd(value: /* evt */ Event => Callback): Self = StObject.set(x, "dragEnd", js.Any.fromFunction1((t0: /* evt */ Event) => value(t0).runNow()))
+    
+    inline def setDragEndUndefined: Self = StObject.set(x, "dragEnd", js.undefined)
+    
+    inline def setDragStart(value: /* evt */ Event => Callback): Self = StObject.set(x, "dragStart", js.Any.fromFunction1((t0: /* evt */ Event) => value(t0).runNow()))
+    
+    inline def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
+    
+    inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+    
+    inline def setMouseDown(value: /* evt */ Event => Callback): Self = StObject.set(x, "mouseDown", js.Any.fromFunction1((t0: /* evt */ Event) => value(t0).runNow()))
+    
+    inline def setMouseDownUndefined: Self = StObject.set(x, "mouseDown", js.undefined)
+    
+    inline def setMouseMove(value: /* evt */ Event => Callback): Self = StObject.set(x, "mouseMove", js.Any.fromFunction1((t0: /* evt */ Event) => value(t0).runNow()))
+    
+    inline def setMouseMoveUndefined: Self = StObject.set(x, "mouseMove", js.undefined)
+    
+    inline def setMouseUp(value: /* evt */ Event => Callback): Self = StObject.set(x, "mouseUp", js.Any.fromFunction1((t0: /* evt */ Event) => value(t0).runNow()))
+    
+    inline def setMouseUpUndefined: Self = StObject.set(x, "mouseUp", js.undefined)
+    
+    inline def setMouseWheel(value: /* evt */ Event => Callback): Self = StObject.set(x, "mouseWheel", js.Any.fromFunction1((t0: /* evt */ Event) => value(t0).runNow()))
+    
+    inline def setMouseWheelUndefined: Self = StObject.set(x, "mouseWheel", js.undefined)
+  }
 }
-

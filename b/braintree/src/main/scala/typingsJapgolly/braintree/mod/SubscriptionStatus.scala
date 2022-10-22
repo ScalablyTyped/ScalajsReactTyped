@@ -1,30 +1,26 @@
 package typingsJapgolly.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.braintree.braintreeStrings.Active
   - typingsJapgolly.braintree.braintreeStrings.Canceled
   - typingsJapgolly.braintree.braintreeStrings.Expired
-  - typingsJapgolly.braintree.braintreeStrings.PastDue
+  - typingsJapgolly.braintree.braintreeStrings.`Past Due`
   - typingsJapgolly.braintree.braintreeStrings.Pending
 */
-trait SubscriptionStatus extends js.Object
-
+trait SubscriptionStatus extends StObject
 object SubscriptionStatus {
-  @scala.inline
-  def Active: typingsJapgolly.braintree.braintreeStrings.Active = this.cast("Active")
-  @scala.inline
-  def Canceled: typingsJapgolly.braintree.braintreeStrings.Canceled = this.cast("Canceled")
-  @scala.inline
-  def Expired: typingsJapgolly.braintree.braintreeStrings.Expired = this.cast("Expired")
-  @scala.inline
-  def PastDue: typingsJapgolly.braintree.braintreeStrings.PastDue = this.cast("PastDue")
-  @scala.inline
-  def Pending: typingsJapgolly.braintree.braintreeStrings.Pending = this.cast("Pending")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Active: typingsJapgolly.braintree.braintreeStrings.Active = "Active".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.Active]
+  
+  inline def Canceled: typingsJapgolly.braintree.braintreeStrings.Canceled = "Canceled".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.Canceled]
+  
+  inline def Expired: typingsJapgolly.braintree.braintreeStrings.Expired = "Expired".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.Expired]
+  
+  inline def `Past Due`: typingsJapgolly.braintree.braintreeStrings.`Past Due` = ("Past Due").asInstanceOf[typingsJapgolly.braintree.braintreeStrings.`Past Due`]
+  
+  inline def Pending: typingsJapgolly.braintree.braintreeStrings.Pending = "Pending".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.Pending]
 }
-

@@ -1,37 +1,91 @@
 package typingsJapgolly.electron.Electron
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Electron.BrowserView")
-@js.native
-// Docs: http://electronjs.org/docs/api/browser-view
-class BrowserView () extends EventEmitter {
-  def this(options: BrowserViewConstructorOptions) = this()
-  var id: Double = js.native
-  var webContents: WebContents_ = js.native
+trait BrowserView extends StObject {
+  
   /**
-    * Force closing the view, the unload and beforeunload events won't be emitted for
-    * the web page. After you're done with a view, call this function in order to free
-    * memory and other resources as soon as possible.
+    * The `bounds` of this BrowserView instance as `Object`.
+    *
+    * @experimental
     */
-  def destroy(): Unit = js.native
-  def isDestroyed(): Boolean = js.native
-  def setAutoResize(options: AutoResizeOptions): Unit = js.native
-  def setBackgroundColor(color: String): Unit = js.native
+  def getBounds(): Rectangle
+  
+  def setAutoResize(options: AutoResizeOptions): Unit
+  
+  /**
+    * Examples of valid `color` values:
+    *
+    * * Hex
+    *   * #fff (RGB)
+    *   * #ffff (ARGB)
+    *   * #ffffff (RRGGBB)
+    *   * #ffffffff (AARRGGBB)
+    * * RGB
+    *   * rgb(([\d]+),\s*([\d]+),\s*([\d]+))
+    *     * e.g. rgb(255, 255, 255)
+    * * RGBA
+    *   * rgba(([\d]+),\s*([\d]+),\s*([\d]+),\s*([\d.]+))
+    *     * e.g. rgba(255, 255, 255, 1.0)
+    * * HSL
+    *   * hsl((-?[\d.]+),\s*([\d.]+)%,\s*([\d.]+)%)
+    *     * e.g. hsl(200, 20%, 50%)
+    * * HSLA
+    *   * hsla((-?[\d.]+),\s*([\d.]+)%,\s*([\d.]+)%,\s*([\d.]+))
+    *     * e.g. hsla(200, 20%, 50%, 0.5)
+    * * Color name
+    *   * Options are listed in SkParseColor.cpp
+    *   * Similar to CSS Color Module Level 3 keywords, but case-sensitive.
+    *     * e.g. `blueviolet` or `red`
+    *
+    * **Note:** Hex format with alpha takes `AARRGGBB` or `ARGB`, _not_ `RRGGBBA` or
+    * `RGA`.
+    *
+    * @experimental
+    */
+  def setBackgroundColor(color: String): Unit
+  
   /**
     * Resizes and moves the view to the supplied bounds relative to the window.
+    *
+    * @experimental
     */
-  def setBounds(bounds: Rectangle): Unit = js.native
+  def setBounds(bounds: Rectangle): Unit
+  
+  /**
+    * A `WebContents` object owned by this view.
+    *
+    * @experimental
+    */
+  var webContents: WebContents_
 }
-
-/* static members */
-@JSGlobal("Electron.BrowserView")
-@js.native
-object BrowserView extends js.Object {
-  def fromId(id: Double): BrowserView = js.native
-  def fromWebContents(webContents: WebContents_): BrowserView | Null = js.native
-  def getAllViews(): js.Array[BrowserView] = js.native
+object BrowserView {
+  
+  inline def apply(
+    getBounds: CallbackTo[Rectangle],
+    setAutoResize: AutoResizeOptions => Callback,
+    setBackgroundColor: String => Callback,
+    setBounds: Rectangle => Callback,
+    webContents: WebContents_
+  ): BrowserView = {
+    val __obj = js.Dynamic.literal(getBounds = getBounds.toJsFn, setAutoResize = js.Any.fromFunction1((t0: AutoResizeOptions) => setAutoResize(t0).runNow()), setBackgroundColor = js.Any.fromFunction1((t0: String) => setBackgroundColor(t0).runNow()), setBounds = js.Any.fromFunction1((t0: Rectangle) => setBounds(t0).runNow()), webContents = webContents.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BrowserView]
+  }
+  
+  extension [Self <: BrowserView](x: Self) {
+    
+    inline def setGetBounds(value: CallbackTo[Rectangle]): Self = StObject.set(x, "getBounds", value.toJsFn)
+    
+    inline def setSetAutoResize(value: AutoResizeOptions => Callback): Self = StObject.set(x, "setAutoResize", js.Any.fromFunction1((t0: AutoResizeOptions) => value(t0).runNow()))
+    
+    inline def setSetBackgroundColor(value: String => Callback): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setSetBounds(value: Rectangle => Callback): Self = StObject.set(x, "setBounds", js.Any.fromFunction1((t0: Rectangle) => value(t0).runNow()))
+    
+    inline def setWebContents(value: WebContents_): Self = StObject.set(x, "webContents", value.asInstanceOf[js.Any])
+  }
 }
-

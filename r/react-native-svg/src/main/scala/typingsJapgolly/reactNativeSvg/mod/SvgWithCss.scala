@@ -1,21 +1,18 @@
 package typingsJapgolly.reactNativeSvg.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
+import typingsJapgolly.reactNativeSvg.libTypescriptXmlMod.XmlProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg", "SvgWithCss")
 @js.native
-class SvgWithCss protected ()
-  extends Component[XmlProps, XmlState, js.Any] {
+open class SvgWithCss protected ()
+  extends typingsJapgolly.reactNativeSvg.libTypescriptReactNativeSVGMod.SvgWithCss {
   def this(props: XmlProps) = this()
-  def this(props: XmlProps, context: js.Any) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: XmlProps, context: Any) = this()
 }
-
-@JSImport("react-native-svg", "SvgWithCss")
-@js.native
-object SvgWithCss extends TopLevel[ComponentClass[XmlProps, XmlState]]
-

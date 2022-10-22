@@ -1,26 +1,21 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Events providing information related to transitions. */
 @js.native
-trait TransitionEvent extends Event_ {
+trait TransitionEvent
+  extends StObject
+     with Event {
+  
+  /* standard dom */
   val elapsedTime: Double = js.native
+  
+  /* standard dom */
   val propertyName: java.lang.String = js.native
+  
+  /* standard dom */
   val pseudoElement: java.lang.String = js.native
 }
-
-@JSGlobal("TransitionEvent")
-@js.native
-object TransitionEvent
-  extends Instantiable1[/* type */ java.lang.String, TransitionEvent]
-     with Instantiable2[
-      /* type */ java.lang.String, 
-      /* transitionEventInitDict */ TransitionEventInit, 
-      TransitionEvent
-    ]
-

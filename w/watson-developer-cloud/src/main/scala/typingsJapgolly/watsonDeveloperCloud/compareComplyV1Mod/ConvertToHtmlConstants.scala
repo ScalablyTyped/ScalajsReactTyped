@@ -1,101 +1,97 @@
 package typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `convertToHtml` operation. */
-@JSImport("watson-developer-cloud/compare-comply/v1", "ConvertToHtmlConstants")
-@js.native
-object ConvertToHtmlConstants extends js.Object {
-  @js.native
-  sealed trait FileContentType extends js.Object
+object ConvertToHtmlConstants {
   
   @js.native
-  sealed trait Model extends js.Object
-  
+  sealed trait FileContentType extends StObject
   /** The content type of file. */
+  @JSImport("watson-developer-cloud/compare-comply/v1", "ConvertToHtmlConstants.FileContentType")
   @js.native
-  object FileContentType extends js.Object {
-    @js.native
-    sealed trait APPLICATION_MSWORD extends FileContentType
-    
-    @js.native
-    sealed trait APPLICATION_PDF extends FileContentType
-    
-    @js.native
-    sealed trait APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT extends FileContentType
-    
-    @js.native
-    sealed trait IMAGE_BMP extends FileContentType
-    
-    @js.native
-    sealed trait IMAGE_GIF extends FileContentType
-    
-    @js.native
-    sealed trait IMAGE_JPEG extends FileContentType
-    
-    @js.native
-    sealed trait IMAGE_PNG extends FileContentType
-    
-    @js.native
-    sealed trait IMAGE_TIFF extends FileContentType
-    
-    @js.native
-    sealed trait TEXT_PLAIN extends FileContentType
+  object FileContentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[FileContentType with String] = js.native
-    /* "application/msword" */ @js.native
-    object APPLICATION_MSWORD extends TopLevel[APPLICATION_MSWORD with String]
+    def apply(value: String): js.UndefOr[FileContentType & String] = js.native
     
-    /* "application/pdf" */ @js.native
-    object APPLICATION_PDF extends TopLevel[APPLICATION_PDF with String]
+    @js.native
+    sealed trait APPLICATION_MSWORD
+      extends StObject
+         with FileContentType
+    /* "application/msword" */ val APPLICATION_MSWORD: typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod.ConvertToHtmlConstants.FileContentType.APPLICATION_MSWORD & String = js.native
     
-    /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ @js.native
-    object APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT extends TopLevel[
-              APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT with String
-            ]
+    @js.native
+    sealed trait APPLICATION_PDF
+      extends StObject
+         with FileContentType
+    /* "application/pdf" */ val APPLICATION_PDF: typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod.ConvertToHtmlConstants.FileContentType.APPLICATION_PDF & String = js.native
     
-    /* "image/bmp" */ @js.native
-    object IMAGE_BMP extends TopLevel[IMAGE_BMP with String]
+    @js.native
+    sealed trait APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT
+      extends StObject
+         with FileContentType
+    /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ val APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT: typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod.ConvertToHtmlConstants.FileContentType.APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT & String = js.native
     
-    /* "image/gif" */ @js.native
-    object IMAGE_GIF extends TopLevel[IMAGE_GIF with String]
+    @js.native
+    sealed trait IMAGE_BMP
+      extends StObject
+         with FileContentType
+    /* "image/bmp" */ val IMAGE_BMP: typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod.ConvertToHtmlConstants.FileContentType.IMAGE_BMP & String = js.native
     
-    /* "image/jpeg" */ @js.native
-    object IMAGE_JPEG extends TopLevel[IMAGE_JPEG with String]
+    @js.native
+    sealed trait IMAGE_GIF
+      extends StObject
+         with FileContentType
+    /* "image/gif" */ val IMAGE_GIF: typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod.ConvertToHtmlConstants.FileContentType.IMAGE_GIF & String = js.native
     
-    /* "image/png" */ @js.native
-    object IMAGE_PNG extends TopLevel[IMAGE_PNG with String]
+    @js.native
+    sealed trait IMAGE_JPEG
+      extends StObject
+         with FileContentType
+    /* "image/jpeg" */ val IMAGE_JPEG: typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod.ConvertToHtmlConstants.FileContentType.IMAGE_JPEG & String = js.native
     
-    /* "image/tiff" */ @js.native
-    object IMAGE_TIFF extends TopLevel[IMAGE_TIFF with String]
+    @js.native
+    sealed trait IMAGE_PNG
+      extends StObject
+         with FileContentType
+    /* "image/png" */ val IMAGE_PNG: typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod.ConvertToHtmlConstants.FileContentType.IMAGE_PNG & String = js.native
     
-    /* "text/plain" */ @js.native
-    object TEXT_PLAIN extends TopLevel[TEXT_PLAIN with String]
+    @js.native
+    sealed trait IMAGE_TIFF
+      extends StObject
+         with FileContentType
+    /* "image/tiff" */ val IMAGE_TIFF: typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod.ConvertToHtmlConstants.FileContentType.IMAGE_TIFF & String = js.native
     
+    @js.native
+    sealed trait TEXT_PLAIN
+      extends StObject
+         with FileContentType
+    /* "text/plain" */ val TEXT_PLAIN: typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod.ConvertToHtmlConstants.FileContentType.TEXT_PLAIN & String = js.native
   }
   
+  @js.native
+  sealed trait Model extends StObject
   /** The analysis model to be used by the service. For the **Element classification** and **Compare two documents** methods, the default is `contracts`. For the **Extract tables** method, the default is `tables`. These defaults apply to the standalone methods as well as to the methods' use in batch-processing requests. */
+  @JSImport("watson-developer-cloud/compare-comply/v1", "ConvertToHtmlConstants.Model")
   @js.native
-  object Model extends js.Object {
-    @js.native
-    sealed trait CONTRACTS extends Model
-    
-    @js.native
-    sealed trait TABLES extends Model
+  object Model extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Model with String] = js.native
-    /* "contracts" */ @js.native
-    object CONTRACTS extends TopLevel[CONTRACTS with String]
+    def apply(value: String): js.UndefOr[Model & String] = js.native
     
-    /* "tables" */ @js.native
-    object TABLES extends TopLevel[TABLES with String]
+    @js.native
+    sealed trait CONTRACTS
+      extends StObject
+         with Model
+    /* "contracts" */ val CONTRACTS: typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod.ConvertToHtmlConstants.Model.CONTRACTS & String = js.native
     
+    @js.native
+    sealed trait TABLES
+      extends StObject
+         with Model
+    /* "tables" */ val TABLES: typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod.ConvertToHtmlConstants.Model.TABLES & String = js.native
   }
-  
 }
-

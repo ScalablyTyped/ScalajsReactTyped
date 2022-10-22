@@ -1,14 +1,17 @@
 package typingsJapgolly.sharepoint.SP.Taxonomy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.Taxonomy.ChangedTermStore")
 @js.native
-class ChangedTermStore () extends ChangedItem {
+trait ChangedTermStore
+  extends StObject
+     with ChangedItem {
+  
   def get_changedLanguage(): Double = js.native
+  
   def get_isDefaultLanguageChanged(): Boolean = js.native
+  
   def get_isFullFarmRestore(): Boolean = js.native
 }
-

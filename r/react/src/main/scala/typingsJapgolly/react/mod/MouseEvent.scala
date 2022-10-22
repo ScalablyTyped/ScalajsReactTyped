@@ -2,36 +2,53 @@ package typingsJapgolly.react.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.std.EventTarget
+import org.scalajs.dom.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MouseEvent[T, E] extends BaseSyntheticEvent[E, EventTarget with T, EventTarget] {
+trait MouseEvent[T, E]
+  extends StObject
+     with UIEvent[T, E] {
+  
   var altKey: Boolean
+  
   var button: Double
+  
   var buttons: Double
+  
   var clientX: Double
+  
   var clientY: Double
+  
   var ctrlKey: Boolean
-  var metaKey: Boolean
-  var movementX: Double
-  var movementY: Double
-  var pageX: Double
-  var pageY: Double
-  var relatedTarget: org.scalajs.dom.raw.EventTarget | Null
-  var screenX: Double
-  var screenY: Double
-  var shiftKey: Boolean
+  
   /**
     * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
     */
   def getModifierState(key: String): Boolean
+  
+  var metaKey: Boolean
+  
+  var movementX: Double
+  
+  var movementY: Double
+  
+  var pageX: Double
+  
+  var pageY: Double
+  
+  var relatedTarget: EventTarget | Null
+  
+  var screenX: Double
+  
+  var screenY: Double
+  
+  var shiftKey: Boolean
 }
-
 object MouseEvent {
-  @scala.inline
-  def apply[T, E](
+  
+  inline def apply[T, E](
     altKey: Boolean,
     bubbles: Boolean,
     button: Double,
@@ -40,10 +57,11 @@ object MouseEvent {
     clientX: Double,
     clientY: Double,
     ctrlKey: Boolean,
-    currentTarget: org.scalajs.dom.raw.EventTarget with T,
+    currentTarget: EventTarget & T,
     defaultPrevented: Boolean,
+    detail: Double,
     eventPhase: Double,
-    getModifierState: String => CallbackTo[Boolean],
+    getModifierState: String => Boolean,
     isDefaultPrevented: CallbackTo[Boolean],
     isPropagationStopped: CallbackTo[Boolean],
     isTrusted: Boolean,
@@ -59,21 +77,50 @@ object MouseEvent {
     screenY: Double,
     shiftKey: Boolean,
     stopPropagation: Callback,
-    target: org.scalajs.dom.raw.EventTarget,
+    target: EventTarget,
     timeStamp: Double,
     `type`: String,
-    relatedTarget: org.scalajs.dom.raw.EventTarget = null
+    view: AbstractView
   ): MouseEvent[T, E] = {
-    val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("getModifierState")(js.Any.fromFunction1((t0: java.lang.String) => getModifierState(t0).runNow()))
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped.toJsFn)
-    __obj.updateDynamic("persist")(persist.toJsFn)
-    __obj.updateDynamic("preventDefault")(preventDefault.toJsFn)
-    __obj.updateDynamic("stopPropagation")(stopPropagation.toJsFn)
+    val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), isDefaultPrevented = isDefaultPrevented.toJsFn, isPropagationStopped = isPropagationStopped.toJsFn, isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = persist.toJsFn, preventDefault = preventDefault.toJsFn, screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopPropagation = stopPropagation.toJsFn, target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], relatedTarget = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseEvent[T, E]]
   }
+  
+  extension [Self <: MouseEvent[?, ?], T, E](x: Self & (MouseEvent[T, E])) {
+    
+    inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+    
+    inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    
+    inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+    
+    inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+    
+    inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+    
+    inline def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
+    
+    inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+    
+    inline def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
+    
+    inline def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
+    
+    inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+    
+    inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
+    
+    inline def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+    
+    inline def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+    
+    inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+  }
 }
-

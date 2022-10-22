@@ -1,23 +1,36 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PushpinToolOptions extends js.Object {
+trait PushpinToolOptions extends StObject {
+  
   var cursor: js.UndefOr[String] = js.undefined
+  
   var followText: js.UndefOr[String] = js.undefined
+  
   var icon: js.UndefOr[Icon] = js.undefined
 }
-
 object PushpinToolOptions {
-  @scala.inline
-  def apply(cursor: String = null, followText: String = null, icon: Icon = null): PushpinToolOptions = {
+  
+  inline def apply(): PushpinToolOptions = {
     val __obj = js.Dynamic.literal()
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (followText != null) __obj.updateDynamic("followText")(followText.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushpinToolOptions]
   }
+  
+  extension [Self <: PushpinToolOptions](x: Self) {
+    
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    
+    inline def setFollowText(value: String): Self = StObject.set(x, "followText", value.asInstanceOf[js.Any])
+    
+    inline def setFollowTextUndefined: Self = StObject.set(x, "followText", js.undefined)
+    
+    inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+  }
 }
-

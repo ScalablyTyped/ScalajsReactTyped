@@ -10,10 +10,10 @@ Run an array of functions in parallel
 | ------------------ | :-------------: |
 | Full name          | run-parallel |
 | Keywords           | parallel, async, function, callback, asynchronous, run, array, run parallel |
-| # releases         | 4 |
-| # dependents       | 204 |
-| # downloads        | 44763424 |
-| # stars            | 18 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 8.773386E7 |
+| # stars            | 345.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/run-parallel)

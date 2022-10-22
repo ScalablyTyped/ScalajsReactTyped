@@ -3,16 +3,16 @@ package typingsJapgolly.azureArmResource.mod
 import typingsJapgolly.msRest.mod.ServiceClientCredentials
 import typingsJapgolly.msRestAzure.mod.AzureServiceClientOptions
 import typingsJapgolly.msRestAzure.mod.CloudErrorParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource", "FeatureClient")
-@js.native
-object FeatureClient extends js.Object {
+object FeatureClient {
+  
+  @JSImport("azure-arm-resource", "FeatureClient.default")
   @js.native
-  class FeatureClient protected ()
-    extends typingsJapgolly.azureArmResource.featureClientMod.FeatureClient {
+  open class default protected ()
+    extends typingsJapgolly.azureArmResource.libFeatureFeatureClientMod.default {
     /**
       * Initializes a new instance of the FeatureClient class.
       * @constructor
@@ -48,11 +48,18 @@ object FeatureClient extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      subscriptionId: String,
+      baseUri: Unit,
+      options: AzureServiceClientOptions
+    ) = this()
   }
   
+  @JSImport("azure-arm-resource", "FeatureClient.FeatureClient")
   @js.native
-  class default protected ()
-    extends typingsJapgolly.azureArmResource.featureClientMod.default {
+  open class FeatureClient protected ()
+    extends typingsJapgolly.azureArmResource.libFeatureFeatureClientMod.FeatureClient {
     /**
       * Initializes a new instance of the FeatureClient class.
       * @constructor
@@ -88,21 +95,26 @@ object FeatureClient extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      subscriptionId: String,
+      baseUri: Unit,
+      options: AzureServiceClientOptions
+    ) = this()
   }
   
-  @js.native
-  object FeatureModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typingsJapgolly.msRestAzure.mod.BaseResource
+  object FeatureModels {
     
+    @JSImport("azure-arm-resource", "FeatureClient.FeatureModels.BaseResource")
     @js.native
-    class CloudError protected ()
-      extends typingsJapgolly.azureArmResource.featureClientMod.FeatureModels.CloudError {
+    open class BaseResource ()
+      extends typingsJapgolly.azureArmResource.libFeatureFeatureClientMod.FeatureModels.BaseResource
+    
+    @JSImport("azure-arm-resource", "FeatureClient.FeatureModels.CloudError")
+    @js.native
+    open class CloudError protected ()
+      extends typingsJapgolly.azureArmResource.libFeatureFeatureClientMod.FeatureModels.CloudError {
       def this(parameters: CloudErrorParameters) = this()
     }
-    
   }
-  
 }
-

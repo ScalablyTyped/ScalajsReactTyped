@@ -10,10 +10,10 @@ Compiler for idyll
 | ------------------ | :-------------: |
 | Full name          | idyll-compiler |
 | Keywords           | idyll, compiler |
-| # releases         | 42 |
-| # dependents       | 3 |
-| # downloads        | 9560 |
-| # stars            | 0 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 825.0 |
+| # stars            | 1894.0 |
 
 ## Links
 - [Homepage](https://github.com/idyll-lang/idyll#readme)

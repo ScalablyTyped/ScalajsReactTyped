@@ -1,20 +1,25 @@
 package typingsJapgolly.web3CoreHelpers.mod
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransactionError extends Error {
+trait TransactionError
+  extends StObject
+     with Error {
+  
   var receipt: js.Object
 }
-
 object TransactionError {
-  @scala.inline
-  def apply(message: String, name: String, receipt: js.Object, stack: String = null): TransactionError = {
+  
+  inline def apply(message: String, name: String, receipt: js.Object): TransactionError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], receipt = receipt.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionError]
   }
+  
+  extension [Self <: TransactionError](x: Self) {
+    
+    inline def setReceipt(value: js.Object): Self = StObject.set(x, "receipt", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for acorn
 
-Typings are for version 4.0
+Typings are for version 8.8.0
 
 ## Library description:
 ECMAScript parser
@@ -10,10 +10,10 @@ ECMAScript parser
 | ------------------ | :-------------: |
 | Full name          | acorn |
 | Keywords           | - |
-| # releases         | 31 |
-| # dependents       | 1255 |
-| # downloads        | 1117460009 |
-| # stars            | 33 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 3.112566416666667E8 |
+| # stars            | 8530.0 |
 
 ## Links
 - [Homepage](https://github.com/acornjs/acorn)
@@ -24,7 +24,7 @@ ECMAScript parser
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

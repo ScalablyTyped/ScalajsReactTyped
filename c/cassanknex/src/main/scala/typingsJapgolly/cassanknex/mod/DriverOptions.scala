@@ -2,22 +2,31 @@ package typingsJapgolly.cassanknex.mod
 
 import typingsJapgolly.cassandraDriver.mod.Client
 import typingsJapgolly.cassandraDriver.mod.ClientOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DriverOptions extends js.Object {
+trait DriverOptions extends StObject {
+  
   var connection: js.UndefOr[Client | ClientOptions] = js.undefined
+  
   var debug: js.UndefOr[Boolean] = js.undefined
 }
-
 object DriverOptions {
-  @scala.inline
-  def apply(connection: Client | ClientOptions = null, debug: js.UndefOr[Boolean] = js.undefined): DriverOptions = {
+  
+  inline def apply(): DriverOptions = {
     val __obj = js.Dynamic.literal()
-    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriverOptions]
   }
+  
+  extension [Self <: DriverOptions](x: Self) {
+    
+    inline def setConnection(value: Client | ClientOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+  }
 }
-

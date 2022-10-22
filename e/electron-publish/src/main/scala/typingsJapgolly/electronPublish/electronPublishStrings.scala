@@ -1,35 +1,33 @@
 package typingsJapgolly.electronPublish
 
 import typingsJapgolly.electronPublish.mod.PublishPolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object electronPublishStrings {
-  @js.native
-  sealed trait GitHub extends js.Object
   
   @js.native
-  sealed trait always extends PublishPolicy
+  sealed trait always
+    extends StObject
+       with PublishPolicy
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait never extends PublishPolicy
+  sealed trait never
+    extends StObject
+       with PublishPolicy
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
-  sealed trait onTag extends PublishPolicy
+  sealed trait onTag
+    extends StObject
+       with PublishPolicy
+  inline def onTag: onTag = "onTag".asInstanceOf[onTag]
   
   @js.native
-  sealed trait onTagOrDraft extends PublishPolicy
-  
-  @scala.inline
-  def GitHub: GitHub = "GitHub".asInstanceOf[GitHub]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def onTag: onTag = "onTag".asInstanceOf[onTag]
-  @scala.inline
-  def onTagOrDraft: onTagOrDraft = "onTagOrDraft".asInstanceOf[onTagOrDraft]
+  sealed trait onTagOrDraft
+    extends StObject
+       with PublishPolicy
+  inline def onTagOrDraft: onTagOrDraft = "onTagOrDraft".asInstanceOf[onTagOrDraft]
 }
-

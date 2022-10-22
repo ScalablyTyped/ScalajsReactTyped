@@ -1,19 +1,23 @@
 package typingsJapgolly.octokitPluginRequestLog
 
+import typingsJapgolly.octokitCore.mod.Octokit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@octokit/plugin-request-log", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  object requestLog extends js.Object {
-    var VERSION: String = js.native
-    def apply(
-      octokit: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Octokit */ js.Any
-    ): Unit = js.native
-  }
+object mod {
   
+  object requestLog {
+    
+    inline def apply(octokit: Octokit): Unit = ^.asInstanceOf[js.Dynamic].apply(octokit.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @JSImport("@octokit/plugin-request-log", "requestLog")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@octokit/plugin-request-log", "requestLog.VERSION")
+    @js.native
+    def VERSION: String = js.native
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+  }
 }
-

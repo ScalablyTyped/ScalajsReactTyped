@@ -1,10 +1,10 @@
 package typingsJapgolly.umbraco.umbraco.resources
 
 import typingsJapgolly.angular.mod.IPromise
-import typingsJapgolly.umbraco.AnonFilter
+import typingsJapgolly.umbraco.anon.Filter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
   * @description Loads in data for media
   **/
 @js.native
-trait IMediaResource extends js.Object {
+trait IMediaResource extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#addFolder
@@ -35,6 +36,7 @@ trait IMediaResource extends js.Object {
     *
     */
   def addFolder(name: String, parentId: Double): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#deleteById
@@ -56,6 +58,7 @@ trait IMediaResource extends js.Object {
     *
     */
   def deleteById(id: Double): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#emptyRecycleBin
@@ -76,6 +79,7 @@ trait IMediaResource extends js.Object {
     *
     */
   def emptyRecycleBin(): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#getById
@@ -98,6 +102,7 @@ trait IMediaResource extends js.Object {
     *
     */
   def getById(id: Double): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#getByIds
@@ -120,6 +125,7 @@ trait IMediaResource extends js.Object {
     *
     */
   def getByIds(ids: js.Array[Double]): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#getChildren
@@ -148,7 +154,8 @@ trait IMediaResource extends js.Object {
     *
     */
   def getChildren(parentId: Double): IPromise[IResourcePromise] = js.native
-  def getChildren(parentId: Double, options: AnonFilter): IPromise[IResourcePromise] = js.native
+  def getChildren(parentId: Double, options: Filter): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#getScaffold
@@ -182,6 +189,7 @@ trait IMediaResource extends js.Object {
     *
     */
   def getScaffold(parentId: Double, alias: String): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#move
@@ -205,8 +213,10 @@ trait IMediaResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def move(args: js.Any*): IPromise[IResourcePromise] = js.native
-  def rootMedia(): js.Any = js.native
+  def move(args: Any*): IPromise[IResourcePromise] = js.native
+  
+  def rootMedia(): Any = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#save
@@ -235,7 +245,8 @@ trait IMediaResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the saved media item.
     *
     */
-  def save(media: js.Object, isNew: Boolean, files: js.Array[_]): IPromise[IResourcePromise] = js.native
+  def save(media: js.Object, isNew: Boolean, files: js.Array[Any]): IPromise[IResourcePromise] = js.native
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#sort
@@ -258,6 +269,5 @@ trait IMediaResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def sort(args: js.Any*): IPromise[IResourcePromise] = js.native
+  def sort(args: Any*): IPromise[IResourcePromise] = js.native
 }
-

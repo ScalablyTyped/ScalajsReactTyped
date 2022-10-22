@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.Media.PlayTo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.PlayTo.PlaybackRateChangeRequestedEventArgs")
-@js.native
-class PlaybackRateChangeRequestedEventArgs () extends IPlaybackRateChangeRequestedEventArgs {
-  /* CompleteClass */
-  override var rate: Double = js.native
+trait PlaybackRateChangeRequestedEventArgs
+  extends StObject
+     with IPlaybackRateChangeRequestedEventArgs
+object PlaybackRateChangeRequestedEventArgs {
+  
+  inline def apply(rate: Double): PlaybackRateChangeRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlaybackRateChangeRequestedEventArgs]
+  }
 }
-

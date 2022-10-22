@@ -1,23 +1,37 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An XSLTProcessor applies an XSLT stylesheet transformation to an XML document to produce a new XML document as output. It has methods to load the XSLT stylesheet, to manipulate <xsl:param> parameter values, and to apply the transformation to documents. */
-trait XSLTProcessor extends js.Object {
-  def clearParameters(): Unit
-  def getParameter(namespaceURI: java.lang.String, localName: java.lang.String): js.Any
-  def importStylesheet(style: org.scalajs.dom.raw.Node): Unit
-  def removeParameter(namespaceURI: java.lang.String, localName: java.lang.String): Unit
-  def reset(): Unit
-  def setParameter(namespaceURI: java.lang.String, localName: java.lang.String, value: js.Any): Unit
-  def transformToDocument(source: org.scalajs.dom.raw.Node): Document_
-  def transformToFragment(source: org.scalajs.dom.raw.Node, document: Document_): org.scalajs.dom.raw.DocumentFragment
-}
-
-@JSGlobal("XSLTProcessor")
 @js.native
-object XSLTProcessor extends Instantiable0[XSLTProcessor]
-
+trait XSLTProcessor extends StObject {
+  
+  /* standard dom */
+  def clearParameters(): Unit = js.native
+  
+  /* standard dom */
+  def getParameter(namespaceURI: java.lang.String, localName: java.lang.String): Any = js.native
+  def getParameter(namespaceURI: Null, localName: java.lang.String): Any = js.native
+  
+  /* standard dom */
+  def importStylesheet(style: org.scalajs.dom.Node): Unit = js.native
+  
+  /* standard dom */
+  def removeParameter(namespaceURI: java.lang.String, localName: java.lang.String): Unit = js.native
+  def removeParameter(namespaceURI: Null, localName: java.lang.String): Unit = js.native
+  
+  /* standard dom */
+  def reset(): Unit = js.native
+  
+  /* standard dom */
+  def setParameter(namespaceURI: java.lang.String, localName: java.lang.String, value: Any): Unit = js.native
+  def setParameter(namespaceURI: Null, localName: java.lang.String, value: Any): Unit = js.native
+  
+  /* standard dom */
+  def transformToDocument(source: org.scalajs.dom.Node): org.scalajs.dom.Document = js.native
+  
+  /* standard dom */
+  def transformToFragment(source: org.scalajs.dom.Node, output: org.scalajs.dom.Document): org.scalajs.dom.DocumentFragment = js.native
+}

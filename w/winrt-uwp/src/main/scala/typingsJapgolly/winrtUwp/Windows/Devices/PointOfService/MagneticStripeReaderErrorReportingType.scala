@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MagneticStripeReaderErrorReportingType extends js.Object
-
+sealed trait MagneticStripeReaderErrorReportingType extends StObject
 /** Defines the constants that indicates the error reporting type for the device. */
 @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderErrorReportingType")
 @js.native
-object MagneticStripeReaderErrorReportingType extends js.Object {
+object MagneticStripeReaderErrorReportingType extends StObject {
+  
   /** Report errors at the card level. */
   @js.native
-  sealed trait cardLevel extends MagneticStripeReaderErrorReportingType
+  sealed trait cardLevel
+    extends StObject
+       with MagneticStripeReaderErrorReportingType
   
   /** Report errors at the track level. */
   @js.native
-  sealed trait trackLevel extends MagneticStripeReaderErrorReportingType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MagneticStripeReaderErrorReportingType with Double] = js.native
-  /* 0 */ @js.native
-  object cardLevel extends TopLevel[cardLevel with Double]
-  
-  /* 1 */ @js.native
-  object trackLevel extends TopLevel[trackLevel with Double]
-  
+  sealed trait trackLevel
+    extends StObject
+       with MagneticStripeReaderErrorReportingType
 }
-

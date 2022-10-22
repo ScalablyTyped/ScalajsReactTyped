@@ -1,21 +1,26 @@
 package typingsJapgolly.remarkable.libMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.remarkable.libMod._Token because Already inherited */ trait HeadingToken extends TagToken {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.remarkable.libMod._Token because Already inherited */ trait HeadingToken
+  extends StObject
+     with TagToken {
+  
   var hLevel: HeadingValue
 }
-
 object HeadingToken {
-  @scala.inline
-  def apply(hLevel: HeadingValue, level: Double, `type`: String, lines: js.Tuple2[Double, Double] = null): HeadingToken = {
+  
+  inline def apply(hLevel: HeadingValue, level: Double, `type`: String): HeadingToken = {
     val __obj = js.Dynamic.literal(hLevel = hLevel.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadingToken]
   }
+  
+  extension [Self <: HeadingToken](x: Self) {
+    
+    inline def setHLevel(value: HeadingValue): Self = StObject.set(x, "hLevel", value.asInstanceOf[js.Any])
+  }
 }
-

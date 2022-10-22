@@ -1,7 +1,7 @@
 
 # Scala.js typings for tensorflow__tfjs-node
 
-Typings are for version 1.5.2
+Typings are for version 4.0.0
 
 ## Library description:
 This repository provides native TensorFlow execution in backend JavaScript applications under the Node.js runtime, accelerated by the TensorFlow C binary under the hood. It provides the same API as [TensorFlow.js](https://js.tensorflow.org/api/latest/).
@@ -10,10 +10,10 @@ This repository provides native TensorFlow execution in backend JavaScript appli
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs-node |
 | Keywords           | - |
-| # releases         | 52 |
-| # dependents       | 57 |
-| # downloads        | 486436 |
-| # stars            | 0 |
+| # releases         | 37 |
+| # dependents       | 0.0 |
+| # downloads        | 65703.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/tensorflow/tfjs#readme)

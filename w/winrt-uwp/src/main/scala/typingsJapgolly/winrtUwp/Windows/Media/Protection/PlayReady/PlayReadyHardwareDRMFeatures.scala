@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Protection.PlayReady
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PlayReadyHardwareDRMFeatures extends js.Object
-
+sealed trait PlayReadyHardwareDRMFeatures extends StObject
 /** Indicates the valid list of hardware digital rights management (DRM) feature values that can be queried. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyHardwareDRMFeatures")
 @js.native
-object PlayReadyHardwareDRMFeatures extends js.Object {
+object PlayReadyHardwareDRMFeatures extends StObject {
+  
   /** Hardware DRM is supported on the machine. */
   @js.native
-  sealed trait hardwareDRM extends PlayReadyHardwareDRMFeatures
+  sealed trait hardwareDRM
+    extends StObject
+       with PlayReadyHardwareDRMFeatures
   
   /** Indicates the hardware supports High Efficiency Video Coding (HEVC)/H.265 codec. */
   @js.native
-  sealed trait hevc extends PlayReadyHardwareDRMFeatures
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PlayReadyHardwareDRMFeatures with Double] = js.native
-  /* 0 */ @js.native
-  object hardwareDRM extends TopLevel[hardwareDRM with Double]
-  
-  /* 1 */ @js.native
-  object hevc extends TopLevel[hevc with Double]
-  
+  sealed trait hevc
+    extends StObject
+       with PlayReadyHardwareDRMFeatures
 }
-

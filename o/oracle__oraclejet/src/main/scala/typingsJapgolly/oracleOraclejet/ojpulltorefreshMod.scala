@@ -1,15 +1,19 @@
 package typingsJapgolly.oracleOraclejet
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import typingsJapgolly.oracleOraclejet.anon.PrimaryText
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@oracle/oraclejet/ojpulltorefresh", JSImport.Namespace)
-@js.native
-object ojpulltorefreshMod extends js.Object {
-  def setupPullToRefresh(element: Element, refreshFunc: js.Function0[js.Promise[_]]): Unit = js.native
-  def setupPullToRefresh(element: Element, refreshFunc: js.Function0[js.Promise[_]], options: AnonPrimaryText): Unit = js.native
-  def tearDownPullToRefresh(element: Element): Unit = js.native
+object ojpulltorefreshMod {
+  
+  @JSImport("@oracle/oraclejet/ojpulltorefresh", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def setupPullToRefresh(element: Element, refreshFunc: js.Function0[js.Promise[Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupPullToRefresh")(element.asInstanceOf[js.Any], refreshFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setupPullToRefresh(element: Element, refreshFunc: js.Function0[js.Promise[Any]], options: PrimaryText): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupPullToRefresh")(element.asInstanceOf[js.Any], refreshFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def tearDownPullToRefresh(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tearDownPullToRefresh")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

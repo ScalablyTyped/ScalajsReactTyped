@@ -9,47 +9,60 @@ import typingsJapgolly.winrt.Windows.Foundation.Collections.IMapView
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVector
 import typingsJapgolly.winrt.Windows.Foundation.Uri
 import typingsJapgolly.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IDataPackagePropertySet
-  extends IMap[String, js.Any] {
+  extends StObject
+     with IMap[String, Any] {
+  
   var applicationListingUri: Uri
+  
   var applicationName: String
+  
   var description: String
+  
   var fileTypes: IVector[String]
+  
   var thumbnail: IRandomAccessStreamReference
+  
   var title: String
 }
-
 object IDataPackagePropertySet {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     applicationListingUri: Uri,
     applicationName: String,
     clear: Callback,
     description: String,
     fileTypes: IVector[String],
-    first: CallbackTo[IIterator[IKeyValuePair[String, js.Any]]],
-    getView: CallbackTo[IMapView[String, js.Any]],
-    hasKey: String => CallbackTo[Boolean],
-    insert: (String, js.Any) => CallbackTo[Boolean],
-    lookup: String => CallbackTo[js.Any],
+    first: CallbackTo[IIterator[IKeyValuePair[String, Any]]],
+    getView: CallbackTo[IMapView[String, Any]],
+    hasKey: String => Boolean,
+    insert: (String, Any) => Boolean,
+    lookup: String => Any,
     remove: String => Callback,
     size: Double,
     thumbnail: IRandomAccessStreamReference,
     title: String
   ): IDataPackagePropertySet = {
-    val __obj = js.Dynamic.literal(applicationListingUri = applicationListingUri.asInstanceOf[js.Any], applicationName = applicationName.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], fileTypes = fileTypes.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("clear")(clear.toJsFn)
-    __obj.updateDynamic("first")(first.toJsFn)
-    __obj.updateDynamic("getView")(getView.toJsFn)
-    __obj.updateDynamic("hasKey")(js.Any.fromFunction1((t0: java.lang.String) => hasKey(t0).runNow()))
-    __obj.updateDynamic("insert")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Any) => insert(t0, t1).runNow()))
-    __obj.updateDynamic("lookup")(js.Any.fromFunction1((t0: java.lang.String) => lookup(t0).runNow()))
-    __obj.updateDynamic("remove")(js.Any.fromFunction1((t0: java.lang.String) => remove(t0).runNow()))
+    val __obj = js.Dynamic.literal(applicationListingUri = applicationListingUri.asInstanceOf[js.Any], applicationName = applicationName.asInstanceOf[js.Any], clear = clear.toJsFn, description = description.asInstanceOf[js.Any], fileTypes = fileTypes.asInstanceOf[js.Any], first = first.toJsFn, getView = getView.toJsFn, hasKey = js.Any.fromFunction1(hasKey), insert = js.Any.fromFunction2(insert), lookup = js.Any.fromFunction1(lookup), remove = js.Any.fromFunction1((t0: String) => remove(t0).runNow()), size = size.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataPackagePropertySet]
   }
+  
+  extension [Self <: IDataPackagePropertySet](x: Self) {
+    
+    inline def setApplicationListingUri(value: Uri): Self = StObject.set(x, "applicationListingUri", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setFileTypes(value: IVector[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,19 +1,15 @@
 package typingsJapgolly.utilityTypes
 
+import typingsJapgolly.utilityTypes.distAliasesAndGuardsMod._Falsy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilityTypesStrings {
-  @js.native
-  sealed trait $ElementType extends js.Object
   
   @js.native
-  sealed trait _DeepReadonlyObject extends js.Object
-  
-  @scala.inline
-  def $ElementType: $ElementType = "$ElementType".asInstanceOf[$ElementType]
-  @scala.inline
-  def _DeepReadonlyObject: _DeepReadonlyObject = "_DeepReadonlyObject".asInstanceOf[_DeepReadonlyObject]
+  sealed trait _empty
+    extends StObject
+       with _Falsy
+  inline def _empty: _empty = "".asInstanceOf[_empty]
 }
-

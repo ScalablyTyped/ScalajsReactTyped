@@ -1,19 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EventSourceInit extends js.Object {
+trait EventSourceInit extends StObject {
+  
+  /* standard dom */
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object EventSourceInit {
-  @scala.inline
-  def apply(withCredentials: js.UndefOr[scala.Boolean] = js.undefined): EventSourceInit = {
+  
+  inline def apply(): EventSourceInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSourceInit]
   }
+  
+  extension [Self <: EventSourceInit](x: Self) {
+    
+    inline def setWithCredentials(value: scala.Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+  }
 }
-

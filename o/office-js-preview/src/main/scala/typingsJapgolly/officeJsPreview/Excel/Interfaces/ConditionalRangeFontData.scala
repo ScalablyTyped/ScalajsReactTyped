@@ -4,65 +4,80 @@ import typingsJapgolly.officeJsPreview.Excel.ConditionalRangeFontUnderlineStyle
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Double
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.None
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Single
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `conditionalRangeFont.toJSON()`. */
-trait ConditionalRangeFontData extends js.Object {
+trait ConditionalRangeFontData extends StObject {
+  
   /**
+    * Specifies if the font is bold.
     *
-    * Represents the bold status of font.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
-    * HTML color code representation of the text color. E.g. #FF0000 represents Red.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var color: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies if the font is italic.
     *
-    * Represents the italic status of the font.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the strikethrough status of the font.
     *
-    * Represents the strikethrough status of the font.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var strikethrough: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * The type of underline applied to the font. See `Excel.ConditionalRangeFontUnderlineStyle` for details.
     *
-    * Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var underline: js.UndefOr[ConditionalRangeFontUnderlineStyle | None | Single | Double] = js.undefined
 }
-
 object ConditionalRangeFontData {
-  @scala.inline
-  def apply(
-    bold: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    strikethrough: js.UndefOr[Boolean] = js.undefined,
-    underline: ConditionalRangeFontUnderlineStyle | None | Single | Double = null
-  ): ConditionalRangeFontData = {
+  
+  inline def apply(): ConditionalRangeFontData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.asInstanceOf[js.Any])
-    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalRangeFontData]
   }
+  
+  extension [Self <: ConditionalRangeFontData](x: Self) {
+    
+    inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    
+    inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    
+    inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+    
+    inline def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+    
+    inline def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
+    
+    inline def setUnderline(value: ConditionalRangeFontUnderlineStyle | None | Single | Double): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+  }
 }
-

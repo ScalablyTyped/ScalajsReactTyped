@@ -1,30 +1,42 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Rationale extends js.Object {
+trait Rationale extends StObject {
+  
   var buttonNegative: js.UndefOr[String] = js.undefined
+  
   var buttonNeutral: js.UndefOr[String] = js.undefined
+  
   var buttonPositive: String
+  
   var message: String
+  
   var title: String
 }
-
 object Rationale {
-  @scala.inline
-  def apply(
-    buttonPositive: String,
-    message: String,
-    title: String,
-    buttonNegative: String = null,
-    buttonNeutral: String = null
-  ): Rationale = {
+  
+  inline def apply(buttonPositive: String, message: String, title: String): Rationale = {
     val __obj = js.Dynamic.literal(buttonPositive = buttonPositive.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (buttonNegative != null) __obj.updateDynamic("buttonNegative")(buttonNegative.asInstanceOf[js.Any])
-    if (buttonNeutral != null) __obj.updateDynamic("buttonNeutral")(buttonNeutral.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rationale]
   }
+  
+  extension [Self <: Rationale](x: Self) {
+    
+    inline def setButtonNegative(value: String): Self = StObject.set(x, "buttonNegative", value.asInstanceOf[js.Any])
+    
+    inline def setButtonNegativeUndefined: Self = StObject.set(x, "buttonNegative", js.undefined)
+    
+    inline def setButtonNeutral(value: String): Self = StObject.set(x, "buttonNeutral", value.asInstanceOf[js.Any])
+    
+    inline def setButtonNeutralUndefined: Self = StObject.set(x, "buttonNeutral", js.undefined)
+    
+    inline def setButtonPositive(value: String): Self = StObject.set(x, "buttonPositive", value.asInstanceOf[js.Any])
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+  }
 }
-

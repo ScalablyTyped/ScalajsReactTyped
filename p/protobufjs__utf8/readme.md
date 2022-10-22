@@ -10,15 +10,12 @@ A minimal UTF8 implementation for number arrays.
 | ------------------ | :-------------: |
 | Full name          | @protobufjs/utf8 |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 56582427 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7745188666666668E7 |
+| # stars            | 8342.0 |
 
 ## Links
-- [Homepage](https://github.com/dcodeIO/protobuf.js#readme)
-- [Bugs](https://github.com/dcodeIO/protobuf.js/issues)
-- [Repository](https://github.com/dcodeIO/protobuf.js)
 - [Npm](https://www.npmjs.com/package/%40protobufjs%2Futf8)
     
 

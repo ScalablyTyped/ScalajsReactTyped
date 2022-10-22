@@ -1,14 +1,13 @@
 package typingsJapgolly.awsSdkStreamCollectorNode
 
-import typingsJapgolly.awsSdkTypes.unmarshallerMod.StreamCollector
-import typingsJapgolly.node.streamMod.Readable
+import typingsJapgolly.awsSdkTypes.distTypesSerdeMod.StreamCollector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/stream-collector-node", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val streamCollector: StreamCollector[Readable] = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/stream-collector-node", "streamCollector")
+  @js.native
+  val streamCollector: StreamCollector = js.native
 }
-

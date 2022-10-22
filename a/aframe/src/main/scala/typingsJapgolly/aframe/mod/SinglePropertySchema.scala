@@ -1,31 +1,44 @@
 package typingsJapgolly.aframe.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SinglePropertySchema[T] extends js.Object {
+trait SinglePropertySchema[T]
+  extends StObject
+     with Schema_[T] {
+  
   var default: js.UndefOr[T] = js.undefined
+  
   var parse: js.UndefOr[js.Function1[/* value */ String, T]] = js.undefined
+  
   var stringify: js.UndefOr[js.Function1[/* value */ T, String]] = js.undefined
+  
   var `type`: js.UndefOr[PropertyTypes] = js.undefined
 }
-
 object SinglePropertySchema {
-  @scala.inline
-  def apply[T](
-    default: T = null,
-    parse: /* value */ String => CallbackTo[T] = null,
-    stringify: /* value */ T => CallbackTo[String] = null,
-    `type`: PropertyTypes = null
-  ): SinglePropertySchema[T] = {
+  
+  inline def apply[T](): SinglePropertySchema[T] = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction1((t0: /* value */ java.lang.String) => parse(t0).runNow()))
-    if (stringify != null) __obj.updateDynamic("stringify")(js.Any.fromFunction1((t0: /* value */ T) => stringify(t0).runNow()))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SinglePropertySchema[T]]
   }
+  
+  extension [Self <: SinglePropertySchema[?], T](x: Self & SinglePropertySchema[T]) {
+    
+    inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setParse(value: /* value */ String => T): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    
+    inline def setStringify(value: /* value */ T => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+    
+    inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
+    
+    inline def setType(value: PropertyTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

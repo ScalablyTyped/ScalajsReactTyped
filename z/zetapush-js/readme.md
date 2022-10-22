@@ -10,10 +10,10 @@ JavaScript SDK for ZetaPush
 | ------------------ | :-------------: |
 | Full name          | zetapush-js |
 | Keywords           | zetapush, realtime, sdk, websocket, long-polling |
-| # releases         | 13 |
-| # dependents       | 1 |
-| # downloads        | 3803 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 184.66666666666666 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/zetapush/zetapush-js#readme)

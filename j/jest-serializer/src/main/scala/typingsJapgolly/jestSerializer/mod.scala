@@ -1,33 +1,52 @@
 package typingsJapgolly.jestSerializer
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-serializer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def deserialize(buffer: Buffer): js.Any = js.native
-  def readFileSync(filePath: Path): js.Any = js.native
-  def serialize(content: js.Any): Buffer = js.native
-  def writeFileSync(filePath: Path, content: js.Any): Unit = js.native
+object mod {
+  
+  @JSImport("jest-serializer", JSImport.Namespace)
   @js.native
-  object default extends js.Object {
-    @JSName("deserialize")
-    var deserialize_Original: js.Function1[/* buffer */ Buffer, _] = js.native
-    @JSName("readFileSync")
-    var readFileSync_Original: js.Function1[/* filePath */ Path, _] = js.native
-    @JSName("serialize")
-    var serialize_Original: js.Function1[/* content */ js.Any, Buffer] = js.native
-    @JSName("writeFileSync")
-    var writeFileSync_Original: js.Function2[/* filePath */ Path, /* content */ js.Any, Unit] = js.native
-    def deserialize(buffer: Buffer): js.Any = js.native
-    def readFileSync(filePath: Path): js.Any = js.native
-    def serialize(content: js.Any): Buffer = js.native
-    def writeFileSync(filePath: Path, content: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  object default {
+    
+    @JSImport("jest-serializer", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("jest-serializer", "default.deserialize")
+    @js.native
+    def deserialize: js.Function1[/* buffer */ Buffer, Any] = js.native
+    inline def deserialize(buffer: Buffer): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def deserialize_=(x: js.Function1[/* buffer */ Buffer, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deserialize")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jest-serializer", "default.readFileSync")
+    @js.native
+    def readFileSync: js.Function1[/* filePath */ String, Any] = js.native
+    inline def readFileSync(filePath: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(filePath.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def readFileSync_=(x: js.Function1[/* filePath */ String, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readFileSync")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jest-serializer", "default.serialize")
+    @js.native
+    def serialize: js.Function1[/* content */ Any, Buffer] = js.native
+    inline def serialize(content: Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(content.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def serialize_=(x: js.Function1[/* content */ Any, Buffer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
+    
+    @JSImport("jest-serializer", "default.writeFileSync")
+    @js.native
+    def writeFileSync: js.Function2[/* filePath */ String, /* content */ Any, Unit] = js.native
+    inline def writeFileSync(filePath: String, content: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(filePath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def writeFileSync_=(x: js.Function2[/* filePath */ String, /* content */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("writeFileSync")(x.asInstanceOf[js.Any])
   }
   
-  type Path = String
+  inline def deserialize(buffer: Buffer): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def readFileSync(filePath: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(filePath.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def serialize(content: Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(content.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  inline def writeFileSync(filePath: String, content: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(filePath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

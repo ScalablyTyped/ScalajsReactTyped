@@ -1,54 +1,64 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube
-  extends /**
-	 * Option for IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * A caption for the cube.
-  	 */
+    * A caption for the cube.
+    */
   var caption: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * An array of dimension metadata objects.
-  	 */
+    * An array of dimension metadata objects.
+    */
   var dimensions: js.UndefOr[
     js.Array[IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimension]
   ] = js.undefined
+  
   /**
-  	 * An object providing information about the measures' root node.
-  	 */
+    * An object providing information about the measures' root node.
+    */
   var measuresDimension: js.UndefOr[IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension] = js.undefined
+  
   /**
-  	 * Optional="false" A unique name for the cube.
-  	 */
+    * Optional="false" A unique name for the cube.
+    */
   var name: js.UndefOr[String] = js.undefined
 }
-
 object IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    caption: String = null,
-    dimensions: js.Array[IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimension] = null,
-    measuresDimension: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension = null,
-    name: String = null
-  ): IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube = {
+  
+  inline def apply(): IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (measuresDimension != null) __obj.updateDynamic("measuresDimension")(measuresDimension.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube]
   }
+  
+  extension [Self <: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube](x: Self) {
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setDimensions(value: js.Array[IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    
+    inline def setDimensionsVarargs(value: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
+    
+    inline def setMeasuresDimension(value: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension): Self = StObject.set(x, "measuresDimension", value.asInstanceOf[js.Any])
+    
+    inline def setMeasuresDimensionUndefined: Self = StObject.set(x, "measuresDimension", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

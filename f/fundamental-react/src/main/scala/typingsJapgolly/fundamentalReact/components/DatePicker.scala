@@ -1,70 +1,68 @@
 package typingsJapgolly.fundamentalReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.fundamentalReact.AnonDate
-import typingsJapgolly.fundamentalReact.datePickerMod.DatePickerProps
-import typingsJapgolly.fundamentalReact.datePickerMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fundamentalReact.anon.Date
+import typingsJapgolly.fundamentalReact.anon.NextMonth
+import typingsJapgolly.fundamentalReact.anon.State
+import typingsJapgolly.fundamentalReact.libDatePickerDatePickerMod.DatePickerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DatePicker {
-  def apply(
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
-    blockedDates: js.Array[js.Date] = null,
-    buttonProps: StringDictionary[js.Any] = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    customStyles: StringDictionary[js.Any] = null,
-    disableAfterDate: js.Date = null,
-    disableBeforeDate: js.Date = null,
-    disableFutureDates: js.UndefOr[Boolean] = js.undefined,
-    disablePastDates: js.UndefOr[Boolean] = js.undefined,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    disableWeekday: js.Array[String] = null,
-    disableWeekends: js.UndefOr[Boolean] = js.undefined,
-    disabledDates: js.Array[js.Date] = null,
-    enableRangeSelection: js.UndefOr[Boolean] = js.undefined,
-    inputProps: StringDictionary[js.Any] = null,
-    onBlur: /* hasDateFormattedDate */ AnonDate => Callback = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[DatePickerProps, default, Unit, DatePickerProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (blockedDates != null) __obj.updateDynamic("blockedDates")(blockedDates.asInstanceOf[js.Any])
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
-    if (disableAfterDate != null) __obj.updateDynamic("disableAfterDate")(disableAfterDate.asInstanceOf[js.Any])
-    if (disableBeforeDate != null) __obj.updateDynamic("disableBeforeDate")(disableBeforeDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFutureDates)) __obj.updateDynamic("disableFutureDates")(disableFutureDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePastDates)) __obj.updateDynamic("disablePastDates")(disablePastDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (disableWeekday != null) __obj.updateDynamic("disableWeekday")(disableWeekday.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends.asInstanceOf[js.Any])
-    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRangeSelection)) __obj.updateDynamic("enableRangeSelection")(enableRangeSelection.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: /* hasDateFormattedDate */ typingsJapgolly.fundamentalReact.AnonDate) => onBlur(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.fundamentalReact.datePickerMod.DatePickerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.fundamentalReact.datePickerMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.fundamentalReact.datePickerMod.DatePickerProps])(children: _*)
-  }
-  @JSImport("fundamental-react/lib/DatePicker/DatePicker", JSImport.Default)
+  @JSImport("fundamental-react", "DatePicker")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.fundamentalReact.mod.DatePicker] {
+    
+    inline def blockedDates(value: js.Array[js.Date]): this.type = set("blockedDates", value.asInstanceOf[js.Any])
+    
+    inline def blockedDatesVarargs(value: js.Date*): this.type = set("blockedDates", js.Array(value*))
+    
+    inline def buttonLabel(value: String): this.type = set("buttonLabel", value.asInstanceOf[js.Any])
+    
+    inline def compact(value: Boolean): this.type = set("compact", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: String): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def disableAfterDate(value: js.Date): this.type = set("disableAfterDate", value.asInstanceOf[js.Any])
+    
+    inline def disableBeforeDate(value: js.Date): this.type = set("disableBeforeDate", value.asInstanceOf[js.Any])
+    
+    inline def disableFutureDates(value: Boolean): this.type = set("disableFutureDates", value.asInstanceOf[js.Any])
+    
+    inline def disablePastDates(value: Boolean): this.type = set("disablePastDates", value.asInstanceOf[js.Any])
+    
+    inline def disableStyles(value: Boolean): this.type = set("disableStyles", value.asInstanceOf[js.Any])
+    
+    inline def disableWeekday(value: js.Array[String]): this.type = set("disableWeekday", value.asInstanceOf[js.Any])
+    
+    inline def disableWeekdayVarargs(value: String*): this.type = set("disableWeekday", js.Array(value*))
+    
+    inline def disableWeekends(value: Boolean): this.type = set("disableWeekends", value.asInstanceOf[js.Any])
+    
+    inline def disabledDates(value: js.Array[js.Date]): this.type = set("disabledDates", value.asInstanceOf[js.Any])
+    
+    inline def disabledDatesVarargs(value: js.Date*): this.type = set("disabledDates", js.Array(value*))
+    
+    inline def enableRangeSelection(value: Boolean): this.type = set("enableRangeSelection", value.asInstanceOf[js.Any])
+    
+    inline def locale(value: String): this.type = set("locale", value.asInstanceOf[js.Any])
+    
+    inline def localizedText(value: NextMonth): this.type = set("localizedText", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: /* hasDateFormattedDate */ Date => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: /* hasDateFormattedDate */ Date) => value(t0).runNow()))
+    
+    inline def validationState(value: State): this.type = set("validationState", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: DatePicker.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: DatePickerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

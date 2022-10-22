@@ -1,22 +1,27 @@
 package typingsJapgolly.amapJsSdk.AMap
 
-import typingsJapgolly.amapJsSdk.AnonAsDestination
-import typingsJapgolly.std.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("AMap.AdvancedInfoWindow")
 @js.native
-class AdvancedInfoWindow () extends EventBindable {
-  def this(options: AnonAsDestination) = this()
+trait AdvancedInfoWindow
+  extends StObject
+     with EventBindable {
+  
   def close(): Unit = js.native
+  
   def getContent(): String = js.native
+  
   def getIsOpen(): Boolean = js.native
+  
   def getPosition(): LngLat = js.native
+  
   def open(map: Map, pos: LngLat): Unit = js.native
+  
   def setContent(content: String): Unit = js.native
   def setContent(content: HTMLElement): Unit = js.native
+  
   def setPosition(lnglat: LngLat): Unit = js.native
 }
-

@@ -1,20 +1,23 @@
 package typingsJapgolly.coinbase.mod
 
-import typingsJapgolly.coinbase.AnonCurrency
+import typingsJapgolly.coinbase.anon.Currency
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExchangeRate extends js.Object {
-  var data: AnonCurrency
-}
-
-object ExchangeRate {
-  @scala.inline
-  def apply(data: AnonCurrency): ExchangeRate = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+trait ExchangeRate extends StObject {
   
+  var data: Currency
+}
+object ExchangeRate {
+  
+  inline def apply(data: Currency): ExchangeRate = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExchangeRate]
   }
+  
+  extension [Self <: ExchangeRate](x: Self) {
+    
+    inline def setData(value: Currency): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+  }
 }
-

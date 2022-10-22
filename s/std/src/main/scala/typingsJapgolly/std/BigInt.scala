@@ -1,18 +1,20 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.std.Intl.LocalesArgument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BigInt extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
-  val toStringTag: typingsJapgolly.std.stdStrings.BigInt = js.native
+trait BigInt extends StObject {
+  
+  def toLocaleString(locales: Unit, options: BigIntToLocaleStringOptions): java.lang.String = js.native
+  def toLocaleString(locales: LocalesArgument): java.lang.String = js.native
+  def toLocaleString(locales: LocalesArgument, options: BigIntToLocaleStringOptions): java.lang.String = js.native
+  
   def toString(radix: Double): java.lang.String = js.native
+  
+  /* standard es2020.bigint */
+  @JSName(js.Symbol.toStringTag)
+  val toStringTag: typingsJapgolly.std.stdStrings.BigInt = js.native
 }
-
-@JSGlobal("BigInt")
-@js.native
-object BigInt extends TopLevel[BigIntConstructor]
-

@@ -1,13 +1,18 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.popoverMod.UncontrolledPopoverProps
+import typingsJapgolly.reactstrap.typesLibPopoverMod.UncontrolledPopoverProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "UncontrolledPopover")
 @js.native
-class UncontrolledPopover[T] ()
-  extends Component[UncontrolledPopoverProps, js.Object, js.Any]
-
+open class UncontrolledPopover protected ()
+  extends typingsJapgolly.reactstrap.typesLibUncontrolledMod.UncontrolledPopover {
+  def this(props: UncontrolledPopoverProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: UncontrolledPopoverProps, context: Any) = this()
+}

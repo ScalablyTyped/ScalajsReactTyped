@@ -1,10 +1,17 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExportingCsvOptions extends js.Object {
+trait ExportingCsvOptions extends StObject {
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for annotations in the
+    * export-data table.
+    */
+  var annotations: js.UndefOr[ExportingCsvAnnotationsOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Formatter callback for the
     * column headers. Parameters are:
@@ -30,17 +37,20 @@ trait ExportingCsvOptions extends js.Object {
     * Return `false` to use Highcharts' proposed header.
     */
   var columnHeaderFormatter: js.UndefOr[js.Function | Null] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Which date format to use for
     * exported dates on a datetime X axis. See `Highcharts.dateFormat`.
     */
   var dateFormat: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Which decimal point to use for
     * exported CSV. Defaults to the same as the browser locale, typically `.`
     * (English) or `,` (German, French etc).
     */
   var decimalPoint: js.UndefOr[String | Null] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The item delimiter in the
     * exported data. Use `;` for direct exporting to Excel. Defaults to a best
@@ -49,29 +59,50 @@ trait ExportingCsvOptions extends js.Object {
     * defaults to `,`.
     */
   var itemDelimiter: js.UndefOr[String | Null] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The line delimiter in the
     * exported data, defaults to a newline.
     */
   var lineDelimiter: js.UndefOr[String] = js.undefined
 }
-
 object ExportingCsvOptions {
-  @scala.inline
-  def apply(
-    columnHeaderFormatter: js.Function = null,
-    dateFormat: String = null,
-    decimalPoint: String = null,
-    itemDelimiter: String = null,
-    lineDelimiter: String = null
-  ): ExportingCsvOptions = {
+  
+  inline def apply(): ExportingCsvOptions = {
     val __obj = js.Dynamic.literal()
-    if (columnHeaderFormatter != null) __obj.updateDynamic("columnHeaderFormatter")(columnHeaderFormatter.asInstanceOf[js.Any])
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (decimalPoint != null) __obj.updateDynamic("decimalPoint")(decimalPoint.asInstanceOf[js.Any])
-    if (itemDelimiter != null) __obj.updateDynamic("itemDelimiter")(itemDelimiter.asInstanceOf[js.Any])
-    if (lineDelimiter != null) __obj.updateDynamic("lineDelimiter")(lineDelimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportingCsvOptions]
   }
+  
+  extension [Self <: ExportingCsvOptions](x: Self) {
+    
+    inline def setAnnotations(value: ExportingCsvAnnotationsOptions): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    
+    inline def setColumnHeaderFormatter(value: js.Function): Self = StObject.set(x, "columnHeaderFormatter", value.asInstanceOf[js.Any])
+    
+    inline def setColumnHeaderFormatterNull: Self = StObject.set(x, "columnHeaderFormatter", null)
+    
+    inline def setColumnHeaderFormatterUndefined: Self = StObject.set(x, "columnHeaderFormatter", js.undefined)
+    
+    inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    
+    inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+    
+    inline def setDecimalPoint(value: String): Self = StObject.set(x, "decimalPoint", value.asInstanceOf[js.Any])
+    
+    inline def setDecimalPointNull: Self = StObject.set(x, "decimalPoint", null)
+    
+    inline def setDecimalPointUndefined: Self = StObject.set(x, "decimalPoint", js.undefined)
+    
+    inline def setItemDelimiter(value: String): Self = StObject.set(x, "itemDelimiter", value.asInstanceOf[js.Any])
+    
+    inline def setItemDelimiterNull: Self = StObject.set(x, "itemDelimiter", null)
+    
+    inline def setItemDelimiterUndefined: Self = StObject.set(x, "itemDelimiter", js.undefined)
+    
+    inline def setLineDelimiter(value: String): Self = StObject.set(x, "lineDelimiter", value.asInstanceOf[js.Any])
+    
+    inline def setLineDelimiterUndefined: Self = StObject.set(x, "lineDelimiter", js.undefined)
+  }
 }
-

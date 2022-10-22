@@ -1,8 +1,8 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.reg
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.fridaGumStrings.setend
   - typingsJapgolly.fridaGum.fridaGumStrings.sysreg
 */
-trait ArmOperandType extends js.Object
-
+trait ArmOperandType extends StObject
 object ArmOperandType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def cimm: typingsJapgolly.fridaGum.fridaGumStrings.cimm = this.cast("cimm")
-  @scala.inline
-  def fp: typingsJapgolly.fridaGum.fridaGumStrings.fp = this.cast("fp")
-  @scala.inline
-  def imm: typingsJapgolly.fridaGum.fridaGumStrings.imm = this.cast("imm")
-  @scala.inline
-  def mem: typingsJapgolly.fridaGum.fridaGumStrings.mem = this.cast("mem")
-  @scala.inline
-  def pimm: typingsJapgolly.fridaGum.fridaGumStrings.pimm = this.cast("pimm")
-  @scala.inline
-  def reg: typingsJapgolly.fridaGum.fridaGumStrings.reg = this.cast("reg")
-  @scala.inline
-  def setend: typingsJapgolly.fridaGum.fridaGumStrings.setend = this.cast("setend")
-  @scala.inline
-  def sysreg: typingsJapgolly.fridaGum.fridaGumStrings.sysreg = this.cast("sysreg")
+  
+  inline def cimm: typingsJapgolly.fridaGum.fridaGumStrings.cimm = "cimm".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.cimm]
+  
+  inline def fp: typingsJapgolly.fridaGum.fridaGumStrings.fp = "fp".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.fp]
+  
+  inline def imm: typingsJapgolly.fridaGum.fridaGumStrings.imm = "imm".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.imm]
+  
+  inline def mem: typingsJapgolly.fridaGum.fridaGumStrings.mem = "mem".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.mem]
+  
+  inline def pimm: typingsJapgolly.fridaGum.fridaGumStrings.pimm = "pimm".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.pimm]
+  
+  inline def reg: typingsJapgolly.fridaGum.fridaGumStrings.reg = "reg".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.reg]
+  
+  inline def setend: typingsJapgolly.fridaGum.fridaGumStrings.setend = "setend".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.setend]
+  
+  inline def sysreg: typingsJapgolly.fridaGum.fridaGumStrings.sysreg = "sysreg".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.sysreg]
 }
-

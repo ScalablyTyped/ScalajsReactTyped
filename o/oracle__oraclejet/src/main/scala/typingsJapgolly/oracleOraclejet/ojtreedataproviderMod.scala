@@ -1,17 +1,17 @@
 package typingsJapgolly.oracleOraclejet
 
 import typingsJapgolly.oracleOraclejet.ojdataproviderMod.DataProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@oracle/oraclejet/ojtreedataprovider", JSImport.Namespace)
-@js.native
-object ojtreedataproviderMod extends js.Object {
-  @js.native
-  trait TreeDataProvider[K, D] extends DataProvider[K, D] {
-    def getChildDataProvider(parentKey: js.Any): TreeDataProvider[K, D] = js.native
-  }
+object ojtreedataproviderMod {
   
+  @js.native
+  trait TreeDataProvider[K, D]
+    extends StObject
+       with DataProvider[K, D] {
+    
+    def getChildDataProvider(parentKey: Any): TreeDataProvider[K, D] = js.native
+  }
 }
-

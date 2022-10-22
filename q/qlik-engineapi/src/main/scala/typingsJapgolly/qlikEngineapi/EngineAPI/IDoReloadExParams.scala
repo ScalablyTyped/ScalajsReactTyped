@@ -1,13 +1,14 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DoReloadExParams...
   */
-trait IDoReloadExParams extends js.Object {
+trait IDoReloadExParams extends StObject {
+  
   /**
     * Set to true if debug breakpoints are to be honored.
     * The execution of the script will be in debug mode.
@@ -15,6 +16,7 @@ trait IDoReloadExParams extends js.Object {
     * >> The default value is false.
     */
   var qDebug: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Error handling mode
     * One of:
@@ -24,6 +26,7 @@ trait IDoReloadExParams extends js.Object {
     * >> This parameter is optional.
     */
   var qMode: js.UndefOr[Double] = js.undefined
+  
   /**
     * Set to true for partial reload
     * >> This parameter is optional.
@@ -31,19 +34,25 @@ trait IDoReloadExParams extends js.Object {
     */
   var qPartial: js.UndefOr[Boolean] = js.undefined
 }
-
 object IDoReloadExParams {
-  @scala.inline
-  def apply(
-    qDebug: js.UndefOr[Boolean] = js.undefined,
-    qMode: Int | Double = null,
-    qPartial: js.UndefOr[Boolean] = js.undefined
-  ): IDoReloadExParams = {
+  
+  inline def apply(): IDoReloadExParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(qDebug)) __obj.updateDynamic("qDebug")(qDebug.asInstanceOf[js.Any])
-    if (qMode != null) __obj.updateDynamic("qMode")(qMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(qPartial)) __obj.updateDynamic("qPartial")(qPartial.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDoReloadExParams]
   }
+  
+  extension [Self <: IDoReloadExParams](x: Self) {
+    
+    inline def setQDebug(value: Boolean): Self = StObject.set(x, "qDebug", value.asInstanceOf[js.Any])
+    
+    inline def setQDebugUndefined: Self = StObject.set(x, "qDebug", js.undefined)
+    
+    inline def setQMode(value: Double): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
+    
+    inline def setQModeUndefined: Self = StObject.set(x, "qMode", js.undefined)
+    
+    inline def setQPartial(value: Boolean): Self = StObject.set(x, "qPartial", value.asInstanceOf[js.Any])
+    
+    inline def setQPartialUndefined: Self = StObject.set(x, "qPartial", js.undefined)
+  }
 }
-

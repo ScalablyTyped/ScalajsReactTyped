@@ -1,99 +1,95 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-1`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-2`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-3`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-5`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-6`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-7`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-8`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`0`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`10`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`11`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`12`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`6`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`7`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`8`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`9`
+import typingsJapgolly.activexExcel.activexExcelInts.`-1`
+import typingsJapgolly.activexExcel.activexExcelInts.`-2`
+import typingsJapgolly.activexExcel.activexExcelInts.`-3`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4`
+import typingsJapgolly.activexExcel.activexExcelInts.`-5`
+import typingsJapgolly.activexExcel.activexExcelInts.`-6`
+import typingsJapgolly.activexExcel.activexExcelInts.`-7`
+import typingsJapgolly.activexExcel.activexExcelInts.`-8`
+import typingsJapgolly.activexExcel.activexExcelInts.`0`
+import typingsJapgolly.activexExcel.activexExcelInts.`10`
+import typingsJapgolly.activexExcel.activexExcelInts.`11`
+import typingsJapgolly.activexExcel.activexExcelInts.`12`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`3`
+import typingsJapgolly.activexExcel.activexExcelInts.`4`
+import typingsJapgolly.activexExcel.activexExcelInts.`5`
+import typingsJapgolly.activexExcel.activexExcelInts.`6`
+import typingsJapgolly.activexExcel.activexExcelInts.`7`
+import typingsJapgolly.activexExcel.activexExcelInts.`8`
+import typingsJapgolly.activexExcel.activexExcelInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-5`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-2`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-7`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`9`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`8`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`6`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-1`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`7`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`10`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`11`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-6`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`0`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-3`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`12`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-8`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-5`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-7`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`9`
+  - typingsJapgolly.activexExcel.activexExcelInts.`3`
+  - typingsJapgolly.activexExcel.activexExcelInts.`8`
+  - typingsJapgolly.activexExcel.activexExcelInts.`6`
+  - typingsJapgolly.activexExcel.activexExcelInts.`4`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`7`
+  - typingsJapgolly.activexExcel.activexExcelInts.`5`
+  - typingsJapgolly.activexExcel.activexExcelInts.`10`
+  - typingsJapgolly.activexExcel.activexExcelInts.`11`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-6`
+  - typingsJapgolly.activexExcel.activexExcelInts.`0`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-3`
+  - typingsJapgolly.activexExcel.activexExcelInts.`12`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-8`
 */
-trait XlParameterDataType extends js.Object
-
+trait XlParameterDataType extends StObject
 object XlParameterDataType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlParamTypeBigInt: `-5` = this.cast(-5)
-  @scala.inline
-  def xlParamTypeBinary: `-2` = this.cast(-2)
-  @scala.inline
-  def xlParamTypeBit: `-7` = this.cast(-7)
-  @scala.inline
-  def xlParamTypeChar: `1` = this.cast(1)
-  @scala.inline
-  def xlParamTypeDate: `9` = this.cast(9)
-  @scala.inline
-  def xlParamTypeDecimal: `3` = this.cast(3)
-  @scala.inline
-  def xlParamTypeDouble: `8` = this.cast(8)
-  @scala.inline
-  def xlParamTypeFloat: `6` = this.cast(6)
-  @scala.inline
-  def xlParamTypeInteger: `4` = this.cast(4)
-  @scala.inline
-  def xlParamTypeLongVarBinary: `-4` = this.cast(-4)
-  @scala.inline
-  def xlParamTypeLongVarChar: `-1` = this.cast(-1)
-  @scala.inline
-  def xlParamTypeNumeric: `2` = this.cast(2)
-  @scala.inline
-  def xlParamTypeReal: `7` = this.cast(7)
-  @scala.inline
-  def xlParamTypeSmallInt: `5` = this.cast(5)
-  @scala.inline
-  def xlParamTypeTime: `10` = this.cast(10)
-  @scala.inline
-  def xlParamTypeTimestamp: `11` = this.cast(11)
-  @scala.inline
-  def xlParamTypeTinyInt: `-6` = this.cast(-6)
-  @scala.inline
-  def xlParamTypeUnknown: `0` = this.cast(0)
-  @scala.inline
-  def xlParamTypeVarBinary: `-3` = this.cast(-3)
-  @scala.inline
-  def xlParamTypeVarChar: `12` = this.cast(12)
-  @scala.inline
-  def xlParamTypeWChar: `-8` = this.cast(-8)
+  
+  inline def xlParamTypeBigInt: `-5` = -5.asInstanceOf[`-5`]
+  
+  inline def xlParamTypeBinary: `-2` = -2.asInstanceOf[`-2`]
+  
+  inline def xlParamTypeBit: `-7` = -7.asInstanceOf[`-7`]
+  
+  inline def xlParamTypeChar: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlParamTypeDate: `9` = 9.asInstanceOf[`9`]
+  
+  inline def xlParamTypeDecimal: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlParamTypeDouble: `8` = 8.asInstanceOf[`8`]
+  
+  inline def xlParamTypeFloat: `6` = 6.asInstanceOf[`6`]
+  
+  inline def xlParamTypeInteger: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlParamTypeLongVarBinary: `-4` = -4.asInstanceOf[`-4`]
+  
+  inline def xlParamTypeLongVarChar: `-1` = -1.asInstanceOf[`-1`]
+  
+  inline def xlParamTypeNumeric: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlParamTypeReal: `7` = 7.asInstanceOf[`7`]
+  
+  inline def xlParamTypeSmallInt: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlParamTypeTime: `10` = 10.asInstanceOf[`10`]
+  
+  inline def xlParamTypeTimestamp: `11` = 11.asInstanceOf[`11`]
+  
+  inline def xlParamTypeTinyInt: `-6` = -6.asInstanceOf[`-6`]
+  
+  inline def xlParamTypeUnknown: `0` = 0.asInstanceOf[`0`]
+  
+  inline def xlParamTypeVarBinary: `-3` = -3.asInstanceOf[`-3`]
+  
+  inline def xlParamTypeVarChar: `12` = 12.asInstanceOf[`12`]
+  
+  inline def xlParamTypeWChar: `-8` = -8.asInstanceOf[`-8`]
 }
-

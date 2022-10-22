@@ -1,45 +1,50 @@
 package typingsJapgolly.winrtUwp.Windows.Gaming
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Gaming.Preview")
-@js.native
-object Preview extends js.Object {
-  @js.native
-  object GamesEnumeration extends js.Object {
-    @js.native
-    abstract class GameList () extends js.Object
-    
-    @js.native
-    abstract class GameListEntry () extends js.Object {
-      var category: js.Any = js.native
-       /* unmapped type */ var displayInfo: js.Any = js.native
-       /* unmapped type */ var launchAsync: js.Any = js.native
-       /* unmapped type */ var properties: js.Any = js.native
-       /* unmapped type */ var setCategoryAsync: js.Any = js.native
-    }
-    
-    /* static members */
-    @js.native
-    object GameList extends js.Object {
-      var addEventListener: js.Any = js.native
-       /* unmapped type */ var findAllAsync: js.Any = js.native
-       /* unmapped type */ var ongameadded: js.Any = js.native
-       /* unmapped type */ var ongameremoved: js.Any = js.native
-       /* unmapped type */ var ongameupdated: js.Any = js.native
-       /* unmapped type */ var removeEventListener: js.Any = js.native
-    }
-    
-    @js.native
-    object GameListCategory extends js.Object {
-      var candidate: js.Any = js.native
-      var confirmedBySystem: js.Any = js.native
-      var confirmedByUser: js.Any = js.native
-    }
-    
-  }
+object Preview {
   
+  object GamesEnumeration {
+    
+    trait GameList extends StObject
+    
+    trait GameListEntry extends StObject {
+      
+      var category: Any
+      
+      /* unmapped type */
+      var displayInfo: Any
+      
+      /* unmapped type */
+      var launchAsync: Any
+      
+      /* unmapped type */
+      var properties: Any
+      
+      /* unmapped type */
+      var setCategoryAsync: Any
+    }
+    object GameListEntry {
+      
+      inline def apply(category: Any, displayInfo: Any, launchAsync: Any, properties: Any, setCategoryAsync: Any): GameListEntry = {
+        val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], displayInfo = displayInfo.asInstanceOf[js.Any], launchAsync = launchAsync.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], setCategoryAsync = setCategoryAsync.asInstanceOf[js.Any])
+        __obj.asInstanceOf[GameListEntry]
+      }
+      
+      extension [Self <: GameListEntry](x: Self) {
+        
+        inline def setCategory(value: Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+        
+        inline def setDisplayInfo(value: Any): Self = StObject.set(x, "displayInfo", value.asInstanceOf[js.Any])
+        
+        inline def setLaunchAsync(value: Any): Self = StObject.set(x, "launchAsync", value.asInstanceOf[js.Any])
+        
+        inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+        
+        inline def setSetCategoryAsync(value: Any): Self = StObject.set(x, "setCategoryAsync", value.asInstanceOf[js.Any])
+      }
+    }
+  }
 }
-

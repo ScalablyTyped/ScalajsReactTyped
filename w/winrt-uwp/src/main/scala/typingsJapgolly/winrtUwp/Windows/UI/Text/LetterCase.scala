@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LetterCase extends js.Object
-
+sealed trait LetterCase extends StObject
 /** Represents the character case formatting. */
 @JSGlobal("Windows.UI.Text.LetterCase")
 @js.native
-object LetterCase extends js.Object {
+object LetterCase extends StObject {
+  
   /** Lowercase characters. */
   @js.native
-  sealed trait lower extends LetterCase
+  sealed trait lower
+    extends StObject
+       with LetterCase
   
   /** Uppercase characters. */
   @js.native
-  sealed trait upper extends LetterCase
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LetterCase with Double] = js.native
-  /* 0 */ @js.native
-  object lower extends TopLevel[lower with Double]
-  
-  /* 1 */ @js.native
-  object upper extends TopLevel[upper with Double]
-  
+  sealed trait upper
+    extends StObject
+       with LetterCase
 }
-

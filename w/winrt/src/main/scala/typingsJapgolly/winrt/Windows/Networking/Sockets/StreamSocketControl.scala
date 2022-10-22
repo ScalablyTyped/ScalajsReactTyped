@@ -1,21 +1,22 @@
 package typingsJapgolly.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Sockets.StreamSocketControl")
-@js.native
-class StreamSocketControl () extends IStreamSocketControl {
-  /* CompleteClass */
-  override var keepAlive: Boolean = js.native
-  /* CompleteClass */
-  override var noDelay: Boolean = js.native
-  /* CompleteClass */
-  override var outboundBufferSizeInBytes: Double = js.native
-  /* CompleteClass */
-  override var outboundUnicastHopLimit: Double = js.native
-  /* CompleteClass */
-  override var qualityOfService: SocketQualityOfService = js.native
+trait StreamSocketControl
+  extends StObject
+     with IStreamSocketControl
+object StreamSocketControl {
+  
+  inline def apply(
+    keepAlive: Boolean,
+    noDelay: Boolean,
+    outboundBufferSizeInBytes: Double,
+    outboundUnicastHopLimit: Double,
+    qualityOfService: SocketQualityOfService
+  ): StreamSocketControl = {
+    val __obj = js.Dynamic.literal(keepAlive = keepAlive.asInstanceOf[js.Any], noDelay = noDelay.asInstanceOf[js.Any], outboundBufferSizeInBytes = outboundBufferSizeInBytes.asInstanceOf[js.Any], outboundUnicastHopLimit = outboundUnicastHopLimit.asInstanceOf[js.Any], qualityOfService = qualityOfService.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StreamSocketControl]
+  }
 }
-

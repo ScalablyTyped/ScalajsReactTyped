@@ -1,22 +1,19 @@
 package typingsJapgolly.ndnJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ndn-js", "TcpTransport")
 @js.native
-class TcpTransport ()
-  extends typingsJapgolly.ndnJs.transportMod.Transport
-
-@JSImport("ndn-js", "TcpTransport")
-@js.native
-object TcpTransport extends js.Object {
+open class TcpTransport ()
+  extends typingsJapgolly.ndnJs.transportMod.TcpTransport
+object TcpTransport {
+  
+  @JSImport("ndn-js", "TcpTransport.ConnectionInfo")
   @js.native
-  class ConnectionInfo protected ()
+  open class ConnectionInfo protected ()
     extends typingsJapgolly.ndnJs.transportMod.TcpTransport.ConnectionInfo {
     def this(host: String, port: Double) = this()
   }
-  
 }
-

@@ -1,13 +1,12 @@
 package typingsJapgolly.awsSdkEc2ErrorUnmarshaller
 
-import typingsJapgolly.awsSdkTypes.unmarshallerMod.ServiceExceptionParser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/ec2-error-unmarshaller", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val ec2ErrorUnmarshaller: ServiceExceptionParser = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/ec2-error-unmarshaller", "ec2ErrorUnmarshaller")
+  @js.native
+  val ec2ErrorUnmarshaller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceExceptionParser */ Any = js.native
 }
-

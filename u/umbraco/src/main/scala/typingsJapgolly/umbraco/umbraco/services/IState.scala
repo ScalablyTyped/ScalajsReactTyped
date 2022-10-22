@@ -2,13 +2,14 @@ package typingsJapgolly.umbraco.umbraco.services
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*Tracks the parent object for complex editors by exposing it as an object reference via editorState.current.entity
   * it is possible to modify this object, so should be used with care */
-trait IState extends js.Object {
+trait IState extends StObject {
+  
   /**
     * @ngdoc function
     * @name umbraco.services.angularHelper#getCurrent
@@ -24,7 +25,8 @@ trait IState extends js.Object {
     * editorState.current can not be overwritten, you should only read values from it
     * since modifying individual properties should be handled by the property editors
     */
-  def getCurrent(): js.Any
+  def getCurrent(): Any
+  
   /**
     * @ngdoc function
     * @name umbraco.services.angularHelper#reset
@@ -36,6 +38,7 @@ trait IState extends js.Object {
     * only through the reset() method
     */
   def reset(): Unit
+  
   /**
     * @ngdoc function
     * @name umbraco.services.angularHelper#set
@@ -50,15 +53,19 @@ trait IState extends js.Object {
     */
   def set(entity: js.Object): Unit
 }
-
 object IState {
-  @scala.inline
-  def apply(getCurrent: CallbackTo[js.Any], reset: Callback, set: js.Object => Callback): IState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrent")(getCurrent.toJsFn)
-    __obj.updateDynamic("reset")(reset.toJsFn)
-    __obj.updateDynamic("set")(js.Any.fromFunction1((t0: js.Object) => set(t0).runNow()))
+  
+  inline def apply(getCurrent: CallbackTo[Any], reset: Callback, set: js.Object => Callback): IState = {
+    val __obj = js.Dynamic.literal(getCurrent = getCurrent.toJsFn, reset = reset.toJsFn, set = js.Any.fromFunction1((t0: js.Object) => set(t0).runNow()))
     __obj.asInstanceOf[IState]
   }
+  
+  extension [Self <: IState](x: Self) {
+    
+    inline def setGetCurrent(value: CallbackTo[Any]): Self = StObject.set(x, "getCurrent", value.toJsFn)
+    
+    inline def setReset(value: Callback): Self = StObject.set(x, "reset", value.toJsFn)
+    
+    inline def setSet(value: js.Object => Callback): Self = StObject.set(x, "set", js.Any.fromFunction1((t0: js.Object) => value(t0).runNow()))
+  }
 }
-

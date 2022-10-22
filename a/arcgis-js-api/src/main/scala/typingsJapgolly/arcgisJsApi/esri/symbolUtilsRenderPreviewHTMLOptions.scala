@@ -1,91 +1,118 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.tall
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait symbolUtilsRenderPreviewHTMLOptions extends Object {
+trait symbolUtilsRenderPreviewHTMLOptions
+  extends StObject
+     with Object {
+  
   /**
     * Indicates whether to disable upsampling for raster images.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
   var disableUpsampling: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The maximum size of the symbol preview in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
   var maxSize: js.UndefOr[Double] = js.undefined
+  
   /**
     * The parent node to append to the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
   var node: js.UndefOr[HTMLElement] = js.undefined
+  
   /**
     * The opacity of the layer represented by the `symbol`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
   var opacity: js.UndefOr[Double] = js.undefined
+  
   /**
     * The rotation of the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
-  var rotation: js.UndefOr[String] = js.undefined
+  var rotation: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Indicates whether to scale the symbol preview.
+    * When `true` the size of the symbol preview will include the outline in the measurement of the entire symbol.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
   var scale: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The size of the symbol preview in points.
+    * Use a number to set the size (in points) of the symbol preview for any symbol representing a point.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double | symbolUtilsRenderPreviewHTMLOptionsSize] = js.undefined
+  
   /**
-    * For "tall" symbols in portrait view, then the `tall` value should be used here.
+    * Options for setting the shape of a fill symbol preview.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
-  var symbolConfig: js.UndefOr[String] = js.undefined
+  var symbolConfig: js.UndefOr[tall | symbolUtilsRenderPreviewHTMLOptionsSymbolConfig] = js.undefined
 }
-
 object symbolUtilsRenderPreviewHTMLOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    disableUpsampling: js.UndefOr[Boolean] = js.undefined,
-    maxSize: Int | Double = null,
-    node: HTMLElement = null,
-    opacity: Int | Double = null,
-    rotation: String = null,
-    scale: js.UndefOr[Boolean] = js.undefined,
-    size: Int | Double = null,
-    symbolConfig: String = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): symbolUtilsRenderPreviewHTMLOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (!js.isUndefined(disableUpsampling)) __obj.updateDynamic("disableUpsampling")(disableUpsampling.asInstanceOf[js.Any])
-    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (symbolConfig != null) __obj.updateDynamic("symbolConfig")(symbolConfig.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[symbolUtilsRenderPreviewHTMLOptions]
   }
+  
+  extension [Self <: symbolUtilsRenderPreviewHTMLOptions](x: Self) {
+    
+    inline def setDisableUpsampling(value: Boolean): Self = StObject.set(x, "disableUpsampling", value.asInstanceOf[js.Any])
+    
+    inline def setDisableUpsamplingUndefined: Self = StObject.set(x, "disableUpsampling", js.undefined)
+    
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    
+    inline def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    
+    inline def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setSize(value: Double | symbolUtilsRenderPreviewHTMLOptionsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setSymbolConfig(value: tall | symbolUtilsRenderPreviewHTMLOptionsSymbolConfig): Self = StObject.set(x, "symbolConfig", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolConfigUndefined: Self = StObject.set(x, "symbolConfig", js.undefined)
+  }
 }
-

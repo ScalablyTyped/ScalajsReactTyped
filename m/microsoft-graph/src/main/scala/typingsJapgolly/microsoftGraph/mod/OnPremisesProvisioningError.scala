@@ -1,37 +1,57 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnPremisesProvisioningError extends js.Object {
+trait OnPremisesProvisioningError extends StObject {
+  
   /**
     * Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict
     * - indicates a property value is not unique. Other objects contain the same value for the property.
     */
-  var category: js.UndefOr[String] = js.undefined
+  var category: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The date and time at which the error occurred.
-  var occurredDateTime: js.UndefOr[String] = js.undefined
+  var occurredDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Name of the directory property causing the error. Current possible values: UserPrincipalName or ProxyAddress
-  var propertyCausingError: js.UndefOr[String] = js.undefined
+  var propertyCausingError: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Value of the property causing the error.
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object OnPremisesProvisioningError {
-  @scala.inline
-  def apply(
-    category: String = null,
-    occurredDateTime: String = null,
-    propertyCausingError: String = null,
-    value: String = null
-  ): OnPremisesProvisioningError = {
+  
+  inline def apply(): OnPremisesProvisioningError = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (occurredDateTime != null) __obj.updateDynamic("occurredDateTime")(occurredDateTime.asInstanceOf[js.Any])
-    if (propertyCausingError != null) __obj.updateDynamic("propertyCausingError")(propertyCausingError.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnPremisesProvisioningError]
   }
+  
+  extension [Self <: OnPremisesProvisioningError](x: Self) {
+    
+    inline def setCategory(value: NullableOption[String]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryNull: Self = StObject.set(x, "category", null)
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    
+    inline def setOccurredDateTime(value: NullableOption[String]): Self = StObject.set(x, "occurredDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setOccurredDateTimeNull: Self = StObject.set(x, "occurredDateTime", null)
+    
+    inline def setOccurredDateTimeUndefined: Self = StObject.set(x, "occurredDateTime", js.undefined)
+    
+    inline def setPropertyCausingError(value: NullableOption[String]): Self = StObject.set(x, "propertyCausingError", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyCausingErrorNull: Self = StObject.set(x, "propertyCausingError", null)
+    
+    inline def setPropertyCausingErrorUndefined: Self = StObject.set(x, "propertyCausingError", js.undefined)
+    
+    inline def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

@@ -1,19 +1,30 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ForwardMessageOptions extends js.Object {
+trait ForwardMessageOptions extends StObject {
+  
   var disable_notification: js.UndefOr[Boolean] = js.undefined
+  
+  var protect_content: js.UndefOr[Boolean] = js.undefined
 }
-
 object ForwardMessageOptions {
-  @scala.inline
-  def apply(disable_notification: js.UndefOr[Boolean] = js.undefined): ForwardMessageOptions = {
+  
+  inline def apply(): ForwardMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disable_notification)) __obj.updateDynamic("disable_notification")(disable_notification.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardMessageOptions]
   }
+  
+  extension [Self <: ForwardMessageOptions](x: Self) {
+    
+    inline def setDisable_notification(value: Boolean): Self = StObject.set(x, "disable_notification", value.asInstanceOf[js.Any])
+    
+    inline def setDisable_notificationUndefined: Self = StObject.set(x, "disable_notification", js.undefined)
+    
+    inline def setProtect_content(value: Boolean): Self = StObject.set(x, "protect_content", value.asInstanceOf[js.Any])
+    
+    inline def setProtect_contentUndefined: Self = StObject.set(x, "protect_content", js.undefined)
+  }
 }
-

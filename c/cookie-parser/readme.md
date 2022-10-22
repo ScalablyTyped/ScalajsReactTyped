@@ -11,9 +11,9 @@ Parse HTTP request cookies
 | Full name          | cookie-parser |
 | Keywords           | cookie, middleware |
 | # releases         | 2 |
-| # dependents       | 4168 |
-| # downloads        | 60063187 |
-| # stars            | 238 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0377646666666666E7 |
+| # stars            | 1765.0 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/cookie-parser#readme)

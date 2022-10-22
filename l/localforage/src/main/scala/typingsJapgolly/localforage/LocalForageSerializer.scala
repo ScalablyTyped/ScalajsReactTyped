@@ -1,21 +1,23 @@
 package typingsJapgolly.localforage
 
-import org.scalajs.dom.raw.Blob
-import typingsJapgolly.std.ArrayBuffer
+import org.scalajs.dom.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalForageSerializer extends js.Object {
-  def bufferToString(buffer: scala.scalajs.js.typedarray.ArrayBuffer): String = js.native
-  def deserialize[T](value: String): T | scala.scalajs.js.typedarray.ArrayBuffer | Blob = js.native
-  def serialize[T](value: T, callback: js.Function2[/* value */ String, /* error */ js.Any, Unit]): Unit = js.native
-  def serialize[T](value: ArrayBuffer, callback: js.Function2[/* value */ String, /* error */ js.Any, Unit]): Unit = js.native
+trait LocalForageSerializer extends StObject {
+  
+  def bufferToString(buffer: js.typedarray.ArrayBuffer): String = js.native
+  
+  def deserialize[T](value: String): T | js.typedarray.ArrayBuffer | Blob = js.native
+  
+  def serialize[T](value: T, callback: js.Function2[/* value */ String, /* error */ Any, Unit]): Unit = js.native
   def serialize[T](
-    value: typingsJapgolly.std.Blob,
-    callback: js.Function2[/* value */ String, /* error */ js.Any, Unit]
+    value: js.typedarray.ArrayBuffer,
+    callback: js.Function2[/* value */ String, /* error */ Any, Unit]
   ): Unit = js.native
-  def stringToBuffer(serializedString: String): scala.scalajs.js.typedarray.ArrayBuffer = js.native
+  def serialize[T](value: Blob, callback: js.Function2[/* value */ String, /* error */ Any, Unit]): Unit = js.native
+  
+  def stringToBuffer(serializedString: String): js.typedarray.ArrayBuffer = js.native
 }
-

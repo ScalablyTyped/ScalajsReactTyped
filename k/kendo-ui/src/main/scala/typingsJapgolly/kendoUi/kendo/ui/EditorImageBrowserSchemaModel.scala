@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorImageBrowserSchemaModel extends js.Object {
+trait EditorImageBrowserSchemaModel extends StObject {
+  
   var fields: js.UndefOr[EditorImageBrowserSchemaModelFields] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
 }
-
 object EditorImageBrowserSchemaModel {
-  @scala.inline
-  def apply(fields: EditorImageBrowserSchemaModelFields = null, id: String = null): EditorImageBrowserSchemaModel = {
+  
+  inline def apply(): EditorImageBrowserSchemaModel = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorImageBrowserSchemaModel]
   }
+  
+  extension [Self <: EditorImageBrowserSchemaModel](x: Self) {
+    
+    inline def setFields(value: EditorImageBrowserSchemaModelFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+  }
 }
-

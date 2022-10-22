@@ -11,9 +11,9 @@ Flash Messages for your Express Application
 | Full name          | express-flash |
 | Keywords           | express, flash, messages |
 | # releases         | 1 |
-| # dependents       | 88 |
-| # downloads        | 941089 |
-| # stars            | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 110280.0 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/RGBboy/express-flash)

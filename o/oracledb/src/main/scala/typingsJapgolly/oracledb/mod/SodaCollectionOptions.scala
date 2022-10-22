@@ -1,10 +1,11 @@
 package typingsJapgolly.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SodaCollectionOptions extends js.Object {
+trait SodaCollectionOptions extends StObject {
+  
   /**
     * Metadata specifying various details about the collection, such as its database storage, whether it should
     * track version and time stamp document components, how such components are generated, and what document
@@ -17,6 +18,7 @@ trait SodaCollectionOptions extends js.Object {
     * @see https://www.oracle.com/pls/topic/lookup?ctx=dblatest&id=GUID-49EFF3D3-9FAB-4DA6-BDE2-2650383566A3
     */
   var metaData: js.UndefOr[SodaMetadata] = js.undefined
+  
   /**
     * If mode is SODA_COLL_MAP_MODE, the collection will be stored in an externally,
     * previously created table. A future sodaCollection.drop() will not drop the collection table.
@@ -26,14 +28,21 @@ trait SodaCollectionOptions extends js.Object {
     */
   var mode: js.UndefOr[Double] = js.undefined
 }
-
 object SodaCollectionOptions {
-  @scala.inline
-  def apply(metaData: SodaMetadata = null, mode: Int | Double = null): SodaCollectionOptions = {
+  
+  inline def apply(): SodaCollectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (metaData != null) __obj.updateDynamic("metaData")(metaData.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SodaCollectionOptions]
   }
+  
+  extension [Self <: SodaCollectionOptions](x: Self) {
+    
+    inline def setMetaData(value: SodaMetadata): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+    
+    inline def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
+    
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+  }
 }
-

@@ -1,43 +1,35 @@
 package typingsJapgolly.reactNativeSvg.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactNativeSvg.mod.Color
-import typingsJapgolly.reactNativeSvg.mod.NumberProp
-import typingsJapgolly.reactNativeSvg.mod.StopProps
+import japgolly.scalajs.react.facade.React.Component
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNative.mod.ColorValue
+import typingsJapgolly.reactNativeSvg.libTypescriptElementsStopMod.StopProps
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Stop {
-  def apply(
-    offset: NumberProp = null,
-    stopColor: Color = null,
-    stopOpacity: NumberProp = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[StopProps, typingsJapgolly.reactNativeSvg.mod.Stop, Unit, StopProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])
-    if (stopOpacity != null) __obj.updateDynamic("stopOpacity")(stopOpacity.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeSvg.mod.StopProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeSvg.mod.Stop](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeSvg.mod.StopProps])(children: _*)
-  }
   @JSImport("react-native-svg", "Stop")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeSvg.mod.Stop] {
+    
+    inline def offset(value: NumberProp): this.type = set("offset", value.asInstanceOf[js.Any])
+    
+    inline def parent(value: Component[js.Object, js.Object]): this.type = set("parent", value.asInstanceOf[js.Any])
+    
+    inline def stopColor(value: ColorValue): this.type = set("stopColor", value.asInstanceOf[js.Any])
+    
+    inline def stopOpacity(value: NumberProp): this.type = set("stopOpacity", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Stop.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: StopProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

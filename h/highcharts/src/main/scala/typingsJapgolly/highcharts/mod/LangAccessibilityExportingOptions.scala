@@ -1,23 +1,30 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LangAccessibilityExportingOptions extends js.Object {
+trait LangAccessibilityExportingOptions extends StObject {
+  
   var chartMenuLabel: js.UndefOr[String] = js.undefined
-  var exportRegionLabel: js.UndefOr[String] = js.undefined
+  
   var menuButtonLabel: js.UndefOr[String] = js.undefined
 }
-
 object LangAccessibilityExportingOptions {
-  @scala.inline
-  def apply(chartMenuLabel: String = null, exportRegionLabel: String = null, menuButtonLabel: String = null): LangAccessibilityExportingOptions = {
+  
+  inline def apply(): LangAccessibilityExportingOptions = {
     val __obj = js.Dynamic.literal()
-    if (chartMenuLabel != null) __obj.updateDynamic("chartMenuLabel")(chartMenuLabel.asInstanceOf[js.Any])
-    if (exportRegionLabel != null) __obj.updateDynamic("exportRegionLabel")(exportRegionLabel.asInstanceOf[js.Any])
-    if (menuButtonLabel != null) __obj.updateDynamic("menuButtonLabel")(menuButtonLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangAccessibilityExportingOptions]
   }
+  
+  extension [Self <: LangAccessibilityExportingOptions](x: Self) {
+    
+    inline def setChartMenuLabel(value: String): Self = StObject.set(x, "chartMenuLabel", value.asInstanceOf[js.Any])
+    
+    inline def setChartMenuLabelUndefined: Self = StObject.set(x, "chartMenuLabel", js.undefined)
+    
+    inline def setMenuButtonLabel(value: String): Self = StObject.set(x, "menuButtonLabel", value.asInstanceOf[js.Any])
+    
+    inline def setMenuButtonLabelUndefined: Self = StObject.set(x, "menuButtonLabel", js.undefined)
+  }
 }
-

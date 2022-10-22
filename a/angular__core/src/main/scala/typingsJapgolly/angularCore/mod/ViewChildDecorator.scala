@@ -1,20 +1,29 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typingsJapgolly.angularCore.AnonRead
+import typingsJapgolly.angularCore.anon.Read
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewChildDecorator
-  extends Instantiable2[
-      (/* selector */ js.Function) | (/* selector */ String) | (/* selector */ Type[js.Any]), 
-      /* opts */ AnonRead, 
-      ViewChild
+  extends StObject
+     with Instantiable1[
+      (/* selector */ js.Function) | (/* selector */ ProviderToken[Any]) | (/* selector */ String), 
+      typingsJapgolly.angularCore.mod.ViewChild
+    ]
+     with Instantiable2[
+      (/* selector */ js.Function) | (/* selector */ ProviderToken[Any]) | (/* selector */ String), 
+      /* opts */ Read, 
+      typingsJapgolly.angularCore.mod.ViewChild
     ] {
-  def apply(selector: String, opts: AnonRead): js.Any = js.native
-  def apply(selector: js.Function, opts: AnonRead): js.Any = js.native
+  
+  def apply(selector: String): Any = js.native
+  def apply(selector: String, opts: Read): Any = js.native
+  def apply(selector: js.Function): Any = js.native
+  def apply(selector: js.Function, opts: Read): Any = js.native
   /**
     * @description
     * Property decorator that configures a view query.
@@ -27,13 +36,10 @@ trait ViewChildDecorator
     * **Metadata Properties**:
     *
     * * **selector** - The directive type or the name used for querying.
-    * * **read** - True to read a different token from the queried elements.
-    * * **static** - True to resolve query results before change detection runs
+    * * **read** - Used to read a different token from the queried elements.
+    * * **static** - True to resolve query results before change detection runs,
+    * false to resolve after change detection. Defaults to false.
     *
-    * When `static` is not provided, uses query results to determine the timing of query
-    * resolution. If any query results are inside a nested view (such as `*ngIf`), the query is
-    * resolved after change detection runs. Otherwise, it is resolved before change detection
-    * runs.
     *
     * The following selectors are supported.
     *   * Any class with the `@Component` or `@Directive` decorator
@@ -46,6 +52,13 @@ trait ViewChildDecorator
     *   * A `TemplateRef` (e.g. query `<ng-template></ng-template>` with `@ViewChild(TemplateRef)
     * template;`)
     *
+    * The following values are supported by `read`:
+    *   * Any class with the `@Component` or `@Directive` decorator
+    *   * Any provider defined on the injector of the component that is matched by the `selector` of
+    * this query
+    *   * Any provider defined through a string token (e.g. `{provide: 'token', useValue: 'val'}`)
+    *   * `TemplateRef`, `ElementRef`, and `ViewContainerRef`
+    *
     * @usageNotes
     *
     * {@example core/di/ts/viewChild/view_child_example.ts region='Component'}
@@ -56,6 +69,6 @@ trait ViewChildDecorator
     *
     * @Annotation
     */
-  def apply(selector: Type[_], opts: AnonRead): js.Any = js.native
+  def apply(selector: ProviderToken[Any]): Any = js.native
+  def apply(selector: ProviderToken[Any], opts: Read): Any = js.native
 }
-

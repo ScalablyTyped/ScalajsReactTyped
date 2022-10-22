@@ -1,23 +1,7 @@
 package typingsJapgolly.winrt.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.KnownFolders")
-@js.native
-class KnownFolders () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.Storage.KnownFolders")
-@js.native
-object KnownFolders extends js.Object {
-  var documentsLibrary: StorageFolder = js.native
-  var homeGroup: StorageFolder = js.native
-  var mediaServerDevices: StorageFolder = js.native
-  var musicLibrary: StorageFolder = js.native
-  var picturesLibrary: StorageFolder = js.native
-  var removableDevices: StorageFolder = js.native
-  var videosLibrary: StorageFolder = js.native
-}
-
+trait KnownFolders extends StObject

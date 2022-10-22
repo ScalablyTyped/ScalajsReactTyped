@@ -1,61 +1,100 @@
 package typingsJapgolly.hexo.mod
 
-import typingsJapgolly.hexo.AnonArgs
+import typingsJapgolly.hexo.anon.Args
 import typingsJapgolly.hexo.mod.Locals.Category
 import typingsJapgolly.hexo.mod.Locals.Page
 import typingsJapgolly.hexo.mod.Locals.Tag
-import typingsJapgolly.underscore.mod.Dictionary
-import typingsJapgolly.underscore.mod.List
-import typingsJapgolly.underscore.mod.TypeOfDictionary
+import typingsJapgolly.underscore.mod.TypeOfCollection
 import typingsJapgolly.underscore.mod.Underscore
 import typingsJapgolly.underscore.mod.UnderscoreStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TemplateLocals extends js.Object {
-  /**
-    * Underscore object
-    */
-  @JSName("_")
-  var _underscore_Original: UnderscoreStatic = js.native
-  /**
-    * Site settings in `_config.yml`
-    */
-  var config: HexoConfig = js.native
-  var env: AnonArgs = js.native
-  var layout: String = js.native
-  var page: typingsJapgolly.hexo.mod.Locals.Post | Page | Category | Tag | IndexPage | ArchivePage | CategoryPage | TagPage = js.native
-  var path: String = js.native
-  var site: js.Any = js.native
-  var theme: HexoConfig = js.native
-  var url: String = js.native
-  var view_dir: String = js.native
-  /**
-    * Underscore object
-    */
-  @JSName("_")
-  def _underscore[T](value: T): Underscore[T, T] = js.native
-  /**
-    * Underscore object
-    */
-  @JSName("_")
-  def _underscore[T](value: js.Array[T]): Underscore[T, js.Array[T]] = js.native
+trait TemplateLocals extends StObject {
+  
+  /*******
+    * OOP *
+    *******/
   /**
     * Underscore OOP Wrapper, all Underscore functions that take an object
     * as the first parameter can be invoked through this function.
-    * @param key First argument to Underscore object functions.
+    * @param value First argument to Underscore object functions.
+    * @returns An Underscore wrapper around the supplied value.
     **/
   /**
     * Underscore object
     */
   @JSName("_")
-  def _underscore[T](value: List[T]): Underscore[T, List[T]] = js.native
+  def _underscore[V](value: V): Underscore[TypeOfCollection[V, scala.Nothing], V]
   /**
     * Underscore object
     */
   @JSName("_")
-  def _underscore_T_TypeOfDictionaryVV_DictionaryWildcard[T /* <: TypeOfDictionary[V] */, V /* <: Dictionary[_] */](value: V): Underscore[T, V] = js.native
+  var _underscore_Original: UnderscoreStatic
+  
+  /**
+    * Site settings in `_config.yml`
+    */
+  var config: HexoConfig
+  
+  var env: Args
+  
+  var layout: String
+  
+  var page: typingsJapgolly.hexo.mod.Locals.Post | Page | Category | Tag | IndexPage | ArchivePage | CategoryPage | TagPage
+  
+  var path: String
+  
+  var site: Any
+  
+  var theme: HexoConfig
+  
+  var url: String
+  
+  var view_dir: String
 }
-
+object TemplateLocals {
+  
+  inline def apply(
+    _underscore: UnderscoreStatic,
+    config: HexoConfig,
+    env: Args,
+    layout: String,
+    page: typingsJapgolly.hexo.mod.Locals.Post | Page | Category | Tag | IndexPage | ArchivePage | CategoryPage | TagPage,
+    path: String,
+    site: Any,
+    theme: HexoConfig,
+    url: String,
+    view_dir: String
+  ): TemplateLocals = {
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], site = site.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], view_dir = view_dir.asInstanceOf[js.Any])
+    __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TemplateLocals]
+  }
+  
+  extension [Self <: TemplateLocals](x: Self) {
+    
+    inline def setConfig(value: HexoConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    
+    inline def setEnv(value: Args): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setPage(
+      value: typingsJapgolly.hexo.mod.Locals.Post | Page | Category | Tag | IndexPage | ArchivePage | CategoryPage | TagPage
+    ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setSite(value: Any): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+    
+    inline def setTheme(value: HexoConfig): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setView_dir(value: String): Self = StObject.set(x, "view_dir", value.asInstanceOf[js.Any])
+    
+    inline def set_underscore(value: UnderscoreStatic): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+  }
+}

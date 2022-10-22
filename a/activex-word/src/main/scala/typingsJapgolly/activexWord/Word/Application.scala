@@ -18,172 +18,116 @@ import typingsJapgolly.activexOffice.Office.SmartArtLayouts
 import typingsJapgolly.activexOffice.Office.SmartArtQuickStyle
 import typingsJapgolly.activexOffice.Office.SmartArtQuickStyles
 import typingsJapgolly.activexWord.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.Application")
 @js.native
-class Application protected () extends js.Object {
-  val ActiveDocument: Document = js.native
-  val ActiveEncryptionSession: Double = js.native
-  var ActivePrinter: String = js.native
-  val ActiveProtectedViewWindow: ProtectedViewWindow = js.native
-  val ActiveWindow: Window = js.native
-  val AddIns: typingsJapgolly.activexWord.Word.AddIns = js.native
-  val AnswerWizard: typingsJapgolly.activexOffice.Office.AnswerWizard = js.native
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val ArbitraryXMLSupportAvailable: Boolean = js.native
-  val Assistance: IAssistance = js.native
-  val Assistant: typingsJapgolly.activexOffice.Office.Assistant = js.native
-  val AutoCaptions: typingsJapgolly.activexWord.Word.AutoCaptions = js.native
-  val AutoCorrect: typingsJapgolly.activexWord.Word.AutoCorrect = js.native
-  val AutoCorrectEmail: typingsJapgolly.activexWord.Word.AutoCorrect = js.native
-  var AutomationSecurity: MsoAutomationSecurity = js.native
-  val BackgroundPrintingStatus: Double = js.native
-  val BackgroundSavingStatus: Double = js.native
-  val Bibliography: typingsJapgolly.activexWord.Word.Bibliography = js.native
-  var BrowseExtraFileTypes: String = js.native
-  val Browser: typingsJapgolly.activexWord.Word.Browser = js.native
-  val Build: String = js.native
-  val BuildFeatureCrew: String = js.native
-  val BuildFull: String = js.native
-  @JSName("COMAddIns")
-  val COMAddIns_Original: COMAddIns = js.native
-  val CapsLock: Boolean = js.native
-  var Caption: String = js.native
-  val CaptionLabels: typingsJapgolly.activexWord.Word.CaptionLabels = js.native
-  var CheckLanguage: Boolean = js.native
-  @JSName("CommandBars")
-  val CommandBars_Original: CommandBars = js.native
-  val Creator: Double = js.native
-  val CustomDictionaries: Dictionaries = js.native
-  var CustomizationContext: js.Any = js.native
-  var DefaultLegalBlackline: Boolean = js.native
-  var DefaultSaveFormat: String = js.native
-  var DefaultTableSeparator: String = js.native
-  val Dialogs: typingsJapgolly.activexWord.Word.Dialogs = js.native
-  var DisplayAlerts: WdAlertLevel = js.native
-  var DisplayAutoCompleteTips: Boolean = js.native
-  var DisplayDocumentInformationPanel: Boolean = js.native
-  var DisplayRecentFiles: Boolean = js.native
-  var DisplayScreenTips: Boolean = js.native
-  var DisplayScrollBars: Boolean = js.native
-  var DisplayStatusBar: Boolean = js.native
-  val Documents: typingsJapgolly.activexWord.Word.Documents = js.native
-  var DontResetInsertionPointProperties: Boolean = js.native
-  val Dummy1: Boolean = js.native
-  val EmailOptions: typingsJapgolly.activexWord.Word.EmailOptions = js.native
-  var EmailTemplate: String = js.native
-  var EnableCancelKey: WdEnableCancelKey = js.native
-  var FeatureInstall: MsoFeatureInstall = js.native
-  val FileConverters: typingsJapgolly.activexWord.Word.FileConverters = js.native
-  val FileSearch: typingsJapgolly.activexOffice.Office.FileSearch = js.native
-  var FileValidation: MsoFileValidationMode = js.native
-  val FocusInMailHeader: Boolean = js.native
-  val FontNames: typingsJapgolly.activexWord.Word.FontNames = js.native
-  val HangulHanjaDictionaries: HangulHanjaConversionDictionaries = js.native
-  var Height: Double = js.native
-  val IsSandboxed: Boolean = js.native
-  val KeyBindings: typingsJapgolly.activexWord.Word.KeyBindings = js.native
-  val LandscapeFontNames: typingsJapgolly.activexWord.Word.FontNames = js.native
-  val Language: MsoLanguageID = js.native
-  val LanguageSettings: typingsJapgolly.activexOffice.Office.LanguageSettings = js.native
-  val Languages: typingsJapgolly.activexWord.Word.Languages = js.native
-  var Left: Double = js.native
-  val ListGalleries: typingsJapgolly.activexWord.Word.ListGalleries = js.native
-  val MAPIAvailable: Boolean = js.native
-  val MacroContainer: js.Any = js.native
-  val MailMessage: typingsJapgolly.activexWord.Word.MailMessage = js.native
-  val MailSystem: WdMailSystem = js.native
-  val MailingLabel: typingsJapgolly.activexWord.Word.MailingLabel = js.native
-  val MathCoprocessorAvailable: Boolean = js.native
-  val MouseAvailable: Boolean = js.native
-  val Name: String = js.native
-  val NewDocument: NewFile = js.native
-  val NormalTemplate: Template = js.native
-  val NumLock: Boolean = js.native
-  val OMathAutoCorrect: typingsJapgolly.activexWord.Word.OMathAutoCorrect = js.native
-  var OpenAttachmentsInFullScreen: Boolean = js.native
-  val Options: typingsJapgolly.activexWord.Word.Options = js.native
-  val Parent: js.Any = js.native
-  val Path: String = js.native
-  val PathSeparator: String = js.native
-  val PickerDialog: typingsJapgolly.activexOffice.Office.PickerDialog = js.native
-  val PortraitFontNames: typingsJapgolly.activexWord.Word.FontNames = js.native
-  var PrintPreview: Boolean = js.native
-  val ProtectedViewWindows: typingsJapgolly.activexWord.Word.ProtectedViewWindows = js.native
-  val RecentFiles: typingsJapgolly.activexWord.Word.RecentFiles = js.native
-  var RestrictLinkedStyles: Boolean = js.native
-  var ScreenUpdating: Boolean = js.native
-  val Selection: typingsJapgolly.activexWord.Word.Selection = js.native
-  var ShowStartupDialog: Boolean = js.native
-  var ShowStylePreviews: Boolean = js.native
-  var ShowVisualBasicEditor: Boolean = js.native
-  var ShowWindowsInTaskbar: Boolean = js.native
-  @JSName("SmartArtColors")
-  val SmartArtColors_Original: SmartArtColors = js.native
-  @JSName("SmartArtLayouts")
-  val SmartArtLayouts_Original: SmartArtLayouts = js.native
-  @JSName("SmartArtQuickStyles")
-  val SmartArtQuickStyles_Original: SmartArtQuickStyles = js.native
-  val SmartTagRecognizers: typingsJapgolly.activexWord.Word.SmartTagRecognizers = js.native
-  val SmartTagTypes: typingsJapgolly.activexWord.Word.SmartTagTypes = js.native
-  val SpecialMode: Boolean = js.native
-  var StartupPath: String = js.native
-  var StatusBar: String = js.native
-  val System: typingsJapgolly.activexWord.Word.System = js.native
-  val TaskPanes: typingsJapgolly.activexWord.Word.TaskPanes = js.native
-  val Tasks: typingsJapgolly.activexWord.Word.Tasks = js.native
-  val Templates: typingsJapgolly.activexWord.Word.Templates = js.native
-  var Top: Double = js.native
-  val UndoRecord: typingsJapgolly.activexWord.Word.UndoRecord = js.native
-  val UsableHeight: Double = js.native
-  val UsableWidth: Double = js.native
-  var UserAddress: String = js.native
-  val UserControl: Boolean = js.native
-  var UserInitials: String = js.native
-  var UserName: String = js.native
-  val VBE: typingsJapgolly.activexVbide.VBIDE.VBE = js.native
-  val Version: String = js.native
-  var Visible: Boolean = js.native
-  var Width: Double = js.native
-  var WindowState: WdWindowState = js.native
-  val Windows: typingsJapgolly.activexWord.Word.Windows = js.native
-  val WordBasic: js.Any = js.native
-  @JSName("Word.Application_typekey")
-  var WordDotApplication_typekey: typingsJapgolly.activexWord.Word.Application = js.native
-  val XMLNamespaces: typingsJapgolly.activexWord.Word.XMLNamespaces = js.native
+trait Application extends StObject {
+  
   def Activate(): Unit = js.native
+  
+  val ActiveDocument: Document = js.native
+  
+  val ActiveEncryptionSession: Double = js.native
+  
+  var ActivePrinter: String = js.native
+  
+  val ActiveProtectedViewWindow: ProtectedViewWindow = js.native
+  
+  val ActiveWindow: Window = js.native
+  
   def AddAddress(TagID: SafeArray[String], Value: SafeArray[String]): Unit = js.native
+  
+  val AddIns: typingsJapgolly.activexWord.Word.AddIns = js.native
+  
+  val AnswerWizard: typingsJapgolly.activexOffice.Office.AnswerWizard = js.native
+  
+  val Application: typingsJapgolly.activexWord.Word.Application = js.native
+  
+  val ArbitraryXMLSupportAvailable: Boolean = js.native
+  
+  val Assistance: IAssistance = js.native
+  
+  val Assistant: typingsJapgolly.activexOffice.Office.Assistant = js.native
+  
+  val AutoCaptions: typingsJapgolly.activexWord.Word.AutoCaptions = js.native
+  
+  val AutoCorrect: typingsJapgolly.activexWord.Word.AutoCorrect = js.native
+  
+  val AutoCorrectEmail: typingsJapgolly.activexWord.Word.AutoCorrect = js.native
+  
   def AutomaticChange(): Unit = js.native
+  
+  var AutomationSecurity: MsoAutomationSecurity = js.native
+  
+  val BackgroundPrintingStatus: Double = js.native
+  
+  val BackgroundSavingStatus: Double = js.native
+  
+  val Bibliography: typingsJapgolly.activexWord.Word.Bibliography = js.native
+  
+  var BrowseExtraFileTypes: String = js.native
+  
+  val Browser: typingsJapgolly.activexWord.Word.Browser = js.native
+  
+  val Build: String = js.native
+  
+  val BuildFeatureCrew: String = js.native
+  
+  val BuildFull: String = js.native
+  
   def BuildKeyCode(Arg1: WdKey): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Any, Arg3: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Any, Arg3: Any, Arg4: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Any, Arg3: Unit, Arg4: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: Any, Arg4: Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: Unit, Arg4: Any): Double = js.native
+  
   def COMAddIns(Index: String): COMAddIn = js.native
   def COMAddIns(Index: Double): COMAddIn = js.native
+  @JSName("COMAddIns")
+  val COMAddIns_Original: COMAddIns = js.native
+  
+  val CapsLock: Boolean = js.native
+  
+  var Caption: String = js.native
+  
+  val CaptionLabels: typingsJapgolly.activexWord.Word.CaptionLabels = js.native
+  
   def CentimetersToPoints(Centimeters: Double): Double = js.native
+  
   def ChangeFileOpenDirectory(Path: String): Unit = js.native
+  
   def CheckGrammar(String: String): Boolean = js.native
+  
+  var CheckLanguage: Boolean = js.native
+  
   def CheckSpelling(
     Word: String,
-    CustomDictionary: js.UndefOr[js.Any],
-    IgnoreUppercase: js.UndefOr[js.Any],
-    MainDictionary: js.UndefOr[js.Any],
-    CustomDictionary2: js.UndefOr[js.Any],
-    CustomDictionary3: js.UndefOr[js.Any],
-    CustomDictionary4: js.UndefOr[js.Any],
-    CustomDictionary5: js.UndefOr[js.Any],
-    CustomDictionary6: js.UndefOr[js.Any],
-    CustomDictionary7: js.UndefOr[js.Any],
-    CustomDictionary8: js.UndefOr[js.Any],
-    CustomDictionary9: js.UndefOr[js.Any],
-    CustomDictionary10: js.UndefOr[js.Any]
+    CustomDictionary: js.UndefOr[Any],
+    IgnoreUppercase: js.UndefOr[Any],
+    MainDictionary: js.UndefOr[Any],
+    CustomDictionary2: js.UndefOr[Any],
+    CustomDictionary3: js.UndefOr[Any],
+    CustomDictionary4: js.UndefOr[Any],
+    CustomDictionary5: js.UndefOr[Any],
+    CustomDictionary6: js.UndefOr[Any],
+    CustomDictionary7: js.UndefOr[Any],
+    CustomDictionary8: js.UndefOr[Any],
+    CustomDictionary9: js.UndefOr[Any],
+    CustomDictionary10: js.UndefOr[Any]
   ): Boolean = js.native
+  
   def CleanString(String: String): String = js.native
+  
   def CommandBars(Index: String): CommandBar = js.native
   def CommandBars(Index: Double): CommandBar = js.native
+  @JSName("CommandBars")
+  val CommandBars_Original: CommandBars = js.native
+  
   /**
     * @param Word.WdCompareDestination [Destination=2]
     * @param Word.WdGranularity [Granularity=1]
@@ -218,66 +162,182 @@ class Application protected () extends js.Object {
     RevisedAuthor: js.UndefOr[String],
     IgnoreAllComparisonWarnings: js.UndefOr[Boolean]
   ): Document = js.native
+  
+  val Creator: Double = js.native
+  
+  val CustomDictionaries: Dictionaries = js.native
+  
+  var CustomizationContext: Any = js.native
+  
   def DDEExecute(Channel: Double, Command: String): Unit = js.native
+  
   def DDEInitiate(App: String, Topic: String): Double = js.native
+  
   def DDEPoke(Channel: Double, Item: String, Data: String): Unit = js.native
+  
   def DDERequest(Channel: Double, Item: String): String = js.native
+  
   def DDETerminate(Channel: Double): Unit = js.native
+  
   def DDETerminateAll(): Unit = js.native
+  
+  var DefaultLegalBlackline: Boolean = js.native
+  
+  var DefaultSaveFormat: String = js.native
+  
+  var DefaultTableSeparator: String = js.native
+  
   def DefaultWebOptions(): typingsJapgolly.activexWord.Word.DefaultWebOptions = js.native
-  def DiscussionSupport(Range: js.Any, cid: js.Any, piCSE: js.Any): Unit = js.native
+  
+  val Dialogs: typingsJapgolly.activexWord.Word.Dialogs = js.native
+  
+  def DiscussionSupport(Range: Any, cid: Any, piCSE: Any): Unit = js.native
+  
+  var DisplayAlerts: WdAlertLevel = js.native
+  
+  var DisplayAutoCompleteTips: Boolean = js.native
+  
+  var DisplayDocumentInformationPanel: Boolean = js.native
+  
+  var DisplayRecentFiles: Boolean = js.native
+  
+  var DisplayScreenTips: Boolean = js.native
+  
+  var DisplayScrollBars: Boolean = js.native
+  
+  var DisplayStatusBar: Boolean = js.native
+  
+  val Documents: typingsJapgolly.activexWord.Word.Documents = js.native
+  
+  var DontResetInsertionPointProperties: Boolean = js.native
+  
+  val Dummy1: Boolean = js.native
+  
   def Dummy2(): Boolean = js.native
+  
   def Dummy4(): Unit = js.native
+  
+  val EmailOptions: typingsJapgolly.activexWord.Word.EmailOptions = js.native
+  
+  var EmailTemplate: String = js.native
+  
+  var EnableCancelKey: WdEnableCancelKey = js.native
+  
+  var FeatureInstall: MsoFeatureInstall = js.native
+  
+  val FileConverters: typingsJapgolly.activexWord.Word.FileConverters = js.native
+  
   def FileDialog(FileDialogType: MsoFileDialogType): typingsJapgolly.activexOffice.Office.FileDialog = js.native
+  
+  val FileSearch: typingsJapgolly.activexOffice.Office.FileSearch = js.native
+  
+  var FileValidation: MsoFileValidationMode = js.native
+  
   def FindKey(KeyCode: Double): KeyBinding = js.native
-  def FindKey(KeyCode: Double, KeyCode2: js.Any): KeyBinding = js.native
+  def FindKey(KeyCode: Double, KeyCode2: Any): KeyBinding = js.native
+  
+  val FocusInMailHeader: Boolean = js.native
+  
+  val FontNames: typingsJapgolly.activexWord.Word.FontNames = js.native
+  
   def GetAddress(
-    Name: js.UndefOr[js.Any],
-    AddressProperties: js.UndefOr[js.Any],
-    UseAutoText: js.UndefOr[js.Any],
-    DisplaySelectDialog: js.UndefOr[js.Any],
-    SelectDialog: js.UndefOr[js.Any],
-    CheckNamesDialog: js.UndefOr[js.Any],
-    RecentAddressesChoice: js.UndefOr[js.Any],
-    UpdateRecentAddresses: js.UndefOr[js.Any]
+    Name: js.UndefOr[Any],
+    AddressProperties: js.UndefOr[Any],
+    UseAutoText: js.UndefOr[Any],
+    DisplaySelectDialog: js.UndefOr[Any],
+    SelectDialog: js.UndefOr[Any],
+    CheckNamesDialog: js.UndefOr[Any],
+    RecentAddressesChoice: js.UndefOr[Any],
+    UpdateRecentAddresses: js.UndefOr[Any]
   ): String = js.native
+  
   def GetDefaultTheme(DocumentType: WdDocumentMedium): String = js.native
+  
   def GetSpellingSuggestions(
     Word: String,
-    CustomDictionary: js.UndefOr[js.Any],
-    IgnoreUppercase: js.UndefOr[js.Any],
-    MainDictionary: js.UndefOr[js.Any],
-    SuggestionMode: js.UndefOr[js.Any],
-    CustomDictionary2: js.UndefOr[js.Any],
-    CustomDictionary3: js.UndefOr[js.Any],
-    CustomDictionary4: js.UndefOr[js.Any],
-    CustomDictionary5: js.UndefOr[js.Any],
-    CustomDictionary6: js.UndefOr[js.Any],
-    CustomDictionary7: js.UndefOr[js.Any],
-    CustomDictionary8: js.UndefOr[js.Any],
-    CustomDictionary9: js.UndefOr[js.Any],
-    CustomDictionary10: js.UndefOr[js.Any]
+    CustomDictionary: js.UndefOr[Any],
+    IgnoreUppercase: js.UndefOr[Any],
+    MainDictionary: js.UndefOr[Any],
+    SuggestionMode: js.UndefOr[Any],
+    CustomDictionary2: js.UndefOr[Any],
+    CustomDictionary3: js.UndefOr[Any],
+    CustomDictionary4: js.UndefOr[Any],
+    CustomDictionary5: js.UndefOr[Any],
+    CustomDictionary6: js.UndefOr[Any],
+    CustomDictionary7: js.UndefOr[Any],
+    CustomDictionary8: js.UndefOr[Any],
+    CustomDictionary9: js.UndefOr[Any],
+    CustomDictionary10: js.UndefOr[Any]
   ): SpellingSuggestions = js.native
+  
   def GoBack(): Unit = js.native
+  
   def GoForward(): Unit = js.native
-  def Help(HelpType: js.Any): Unit = js.native
+  
+  val HangulHanjaDictionaries: HangulHanjaConversionDictionaries = js.native
+  
+  var Height: Double = js.native
+  
+  def Help(HelpType: Any): Unit = js.native
+  
   def HelpTool(): Unit = js.native
+  
   def InchesToPoints(Inches: Double): Double = js.native
-  def International(Index: WdInternationalIndex): js.Any = js.native
-  def IsObjectValid(Object: js.Any): Boolean = js.native
+  
+  def International(Index: WdInternationalIndex): Any = js.native
+  
+  def IsObjectValid(Object: Any): Boolean = js.native
+  
+  val IsSandboxed: Boolean = js.native
+  
+  val KeyBindings: typingsJapgolly.activexWord.Word.KeyBindings = js.native
+  
   def KeyString(KeyCode: Double): String = js.native
-  def KeyString(KeyCode: Double, KeyCode2: js.Any): String = js.native
+  def KeyString(KeyCode: Double, KeyCode2: Any): String = js.native
+  
   /** @param number [LangId=0] */
   def Keyboard(): Double = js.native
   def Keyboard(LangId: Double): Double = js.native
+  
   def KeyboardBidi(): Unit = js.native
+  
   def KeyboardLatin(): Unit = js.native
+  
   def KeysBoundTo(KeyCategory: WdKeyCategory, Command: String): typingsJapgolly.activexWord.Word.KeysBoundTo = js.native
-  def KeysBoundTo(KeyCategory: WdKeyCategory, Command: String, CommandParameter: js.Any): typingsJapgolly.activexWord.Word.KeysBoundTo = js.native
+  def KeysBoundTo(KeyCategory: WdKeyCategory, Command: String, CommandParameter: Any): typingsJapgolly.activexWord.Word.KeysBoundTo = js.native
+  
+  val LandscapeFontNames: typingsJapgolly.activexWord.Word.FontNames = js.native
+  
+  val Language: MsoLanguageID = js.native
+  
+  val LanguageSettings: typingsJapgolly.activexOffice.Office.LanguageSettings = js.native
+  
+  val Languages: typingsJapgolly.activexWord.Word.Languages = js.native
+  
+  var Left: Double = js.native
+  
   def LinesToPoints(Lines: Double): Double = js.native
+  
   def ListCommands(ListAllCommands: Boolean): Unit = js.native
+  
+  val ListGalleries: typingsJapgolly.activexWord.Word.ListGalleries = js.native
+  
   def LoadMasterList(FileName: String): Unit = js.native
+  
   def LookupNameProperties(Name: String): Unit = js.native
+  
+  val MAPIAvailable: Boolean = js.native
+  
+  val MacroContainer: Any = js.native
+  
+  val MailMessage: typingsJapgolly.activexWord.Word.MailMessage = js.native
+  
+  val MailSystem: WdMailSystem = js.native
+  
+  val MailingLabel: typingsJapgolly.activexWord.Word.MailingLabel = js.native
+  
+  val MathCoprocessorAvailable: Boolean = js.native
+  
   /**
     * @param Word.WdCompareDestination [Destination=2]
     * @param Word.WdGranularity [Granularity=1]
@@ -314,154 +374,299 @@ class Application protected () extends js.Object {
     RevisedAuthor: js.UndefOr[String],
     FormatFrom: js.UndefOr[WdMergeFormatFrom]
   ): Document = js.native
+  
   def MillimetersToPoints(Millimeters: Double): Double = js.native
+  
   def MountVolume(Zone: String, Server: String, Volume: String): Double = js.native
-  def MountVolume(Zone: String, Server: String, Volume: String, User: js.Any): Double = js.native
-  def MountVolume(Zone: String, Server: String, Volume: String, User: js.Any, UserPassword: js.Any): Double = js.native
-  def MountVolume(
-    Zone: String,
-    Server: String,
-    Volume: String,
-    User: js.Any,
-    UserPassword: js.Any,
-    VolumePassword: js.Any
-  ): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Any): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Any, UserPassword: Any): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Any, UserPassword: Any, VolumePassword: Any): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Any, UserPassword: Unit, VolumePassword: Any): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Unit, UserPassword: Any): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Unit, UserPassword: Any, VolumePassword: Any): Double = js.native
+  def MountVolume(Zone: String, Server: String, Volume: String, User: Unit, UserPassword: Unit, VolumePassword: Any): Double = js.native
+  
+  val MouseAvailable: Boolean = js.native
+  
   def Move(Left: Double, Top: Double): Unit = js.native
+  
+  val Name: String = js.native
+  
+  val NewDocument: NewFile = js.native
+  
   def NewWindow(): Window = js.native
+  
   def NextLetter(): Unit = js.native
-  def OnTime(When: js.Any, Name: String): Unit = js.native
-  def OnTime(When: js.Any, Name: String, Tolerance: js.Any): Unit = js.native
+  
+  val NormalTemplate: Template = js.native
+  
+  val NumLock: Boolean = js.native
+  
+  val OMathAutoCorrect: typingsJapgolly.activexWord.Word.OMathAutoCorrect = js.native
+  
+  def OnTime(When: Any, Name: String): Unit = js.native
+  def OnTime(When: Any, Name: String, Tolerance: Any): Unit = js.native
+  
+  var OpenAttachmentsInFullScreen: Boolean = js.native
+  
+  val Options: typingsJapgolly.activexWord.Word.Options = js.native
+  
   def OrganizerCopy(Source: String, Destination: String, Name: String, Object: WdOrganizerObject): Unit = js.native
+  
   def OrganizerDelete(Source: String, Name: String, Object: WdOrganizerObject): Unit = js.native
+  
   def OrganizerRename(Source: String, Name: String, NewName: String, Object: WdOrganizerObject): Unit = js.native
+  
+  val Parent: Any = js.native
+  
+  val Path: String = js.native
+  
+  val PathSeparator: String = js.native
+  
   def PicasToPoints(Picas: Double): Double = js.native
+  
+  val PickerDialog: typingsJapgolly.activexOffice.Office.PickerDialog = js.native
+  
   def PixelsToPoints(Pixels: Double): Double = js.native
-  def PixelsToPoints(Pixels: Double, fVertical: js.Any): Double = js.native
+  def PixelsToPoints(Pixels: Double, fVertical: Any): Double = js.native
+  
   def PointsToCentimeters(Points: Double): Double = js.native
+  
   def PointsToInches(Points: Double): Double = js.native
+  
   def PointsToLines(Points: Double): Double = js.native
+  
   def PointsToMillimeters(Points: Double): Double = js.native
+  
   def PointsToPicas(Points: Double): Double = js.native
+  
   def PointsToPixels(Points: Double): Double = js.native
-  def PointsToPixels(Points: Double, fVertical: js.Any): Double = js.native
+  def PointsToPixels(Points: Double, fVertical: Any): Double = js.native
+  
+  val PortraitFontNames: typingsJapgolly.activexWord.Word.FontNames = js.native
+  
   def PrintOut(
-    Background: js.UndefOr[js.Any],
-    Append: js.UndefOr[js.Any],
-    Range: js.UndefOr[js.Any],
-    OutputFileName: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Item: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Pages: js.UndefOr[js.Any],
-    PageType: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    FileName: js.UndefOr[js.Any],
-    ActivePrinterMacGX: js.UndefOr[js.Any],
-    ManualDuplexPrint: js.UndefOr[js.Any],
-    PrintZoomColumn: js.UndefOr[js.Any],
-    PrintZoomRow: js.UndefOr[js.Any],
-    PrintZoomPaperWidth: js.UndefOr[js.Any],
-    PrintZoomPaperHeight: js.UndefOr[js.Any]
+    Background: js.UndefOr[Any],
+    Append: js.UndefOr[Any],
+    Range: js.UndefOr[Any],
+    OutputFileName: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Item: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Pages: js.UndefOr[Any],
+    PageType: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    FileName: js.UndefOr[Any],
+    ActivePrinterMacGX: js.UndefOr[Any],
+    ManualDuplexPrint: js.UndefOr[Any],
+    PrintZoomColumn: js.UndefOr[Any],
+    PrintZoomRow: js.UndefOr[Any],
+    PrintZoomPaperWidth: js.UndefOr[Any],
+    PrintZoomPaperHeight: js.UndefOr[Any]
   ): Unit = js.native
+  
   def PrintOut2000(
-    Background: js.UndefOr[js.Any],
-    Append: js.UndefOr[js.Any],
-    Range: js.UndefOr[js.Any],
-    OutputFileName: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Item: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Pages: js.UndefOr[js.Any],
-    PageType: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    FileName: js.UndefOr[js.Any],
-    ActivePrinterMacGX: js.UndefOr[js.Any],
-    ManualDuplexPrint: js.UndefOr[js.Any],
-    PrintZoomColumn: js.UndefOr[js.Any],
-    PrintZoomRow: js.UndefOr[js.Any],
-    PrintZoomPaperWidth: js.UndefOr[js.Any],
-    PrintZoomPaperHeight: js.UndefOr[js.Any]
+    Background: js.UndefOr[Any],
+    Append: js.UndefOr[Any],
+    Range: js.UndefOr[Any],
+    OutputFileName: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Item: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Pages: js.UndefOr[Any],
+    PageType: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    FileName: js.UndefOr[Any],
+    ActivePrinterMacGX: js.UndefOr[Any],
+    ManualDuplexPrint: js.UndefOr[Any],
+    PrintZoomColumn: js.UndefOr[Any],
+    PrintZoomRow: js.UndefOr[Any],
+    PrintZoomPaperWidth: js.UndefOr[Any],
+    PrintZoomPaperHeight: js.UndefOr[Any]
   ): Unit = js.native
+  
   def PrintOutOld(
-    Background: js.UndefOr[js.Any],
-    Append: js.UndefOr[js.Any],
-    Range: js.UndefOr[js.Any],
-    OutputFileName: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Item: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Pages: js.UndefOr[js.Any],
-    PageType: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    FileName: js.UndefOr[js.Any],
-    ActivePrinterMacGX: js.UndefOr[js.Any],
-    ManualDuplexPrint: js.UndefOr[js.Any]
+    Background: js.UndefOr[Any],
+    Append: js.UndefOr[Any],
+    Range: js.UndefOr[Any],
+    OutputFileName: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Item: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Pages: js.UndefOr[Any],
+    PageType: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    FileName: js.UndefOr[Any],
+    ActivePrinterMacGX: js.UndefOr[Any],
+    ManualDuplexPrint: js.UndefOr[Any]
   ): Unit = js.native
+  
+  var PrintPreview: Boolean = js.native
+  
   def ProductCode(): String = js.native
+  
+  val ProtectedViewWindows: typingsJapgolly.activexWord.Word.ProtectedViewWindows = js.native
+  
   def PutFocusInMailHeader(): Unit = js.native
+  
   def Quit(): Unit = js.native
-  def Quit(SaveChanges: js.Any): Unit = js.native
-  def Quit(SaveChanges: js.Any, OriginalFormat: js.Any): Unit = js.native
-  def Quit(SaveChanges: js.Any, OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
+  def Quit(SaveChanges: Any): Unit = js.native
+  def Quit(SaveChanges: Any, OriginalFormat: Any): Unit = js.native
+  def Quit(SaveChanges: Any, OriginalFormat: Any, RouteDocument: Any): Unit = js.native
+  def Quit(SaveChanges: Any, OriginalFormat: Unit, RouteDocument: Any): Unit = js.native
+  def Quit(SaveChanges: Unit, OriginalFormat: Any): Unit = js.native
+  def Quit(SaveChanges: Unit, OriginalFormat: Any, RouteDocument: Any): Unit = js.native
+  def Quit(SaveChanges: Unit, OriginalFormat: Unit, RouteDocument: Any): Unit = js.native
+  
+  val RecentFiles: typingsJapgolly.activexWord.Word.RecentFiles = js.native
+  
   def Repeat(): Boolean = js.native
-  def Repeat(Times: js.Any): Boolean = js.native
+  def Repeat(Times: Any): Boolean = js.native
+  
   def ResetIgnoreAll(): Unit = js.native
+  
   def Resize(Width: Double, Height: Double): Unit = js.native
+  
+  var RestrictLinkedStyles: Boolean = js.native
+  
   def Run(
     MacroName: String,
-    varg1: js.UndefOr[js.Any],
-    varg2: js.UndefOr[js.Any],
-    varg3: js.UndefOr[js.Any],
-    varg4: js.UndefOr[js.Any],
-    varg5: js.UndefOr[js.Any],
-    varg6: js.UndefOr[js.Any],
-    varg7: js.UndefOr[js.Any],
-    varg8: js.UndefOr[js.Any],
-    varg9: js.UndefOr[js.Any],
-    varg10: js.UndefOr[js.Any],
-    varg11: js.UndefOr[js.Any],
-    varg12: js.UndefOr[js.Any],
-    varg13: js.UndefOr[js.Any],
-    varg14: js.UndefOr[js.Any],
-    varg15: js.UndefOr[js.Any],
-    varg16: js.UndefOr[js.Any],
-    varg17: js.UndefOr[js.Any],
-    varg18: js.UndefOr[js.Any],
-    varg19: js.UndefOr[js.Any],
-    varg20: js.UndefOr[js.Any],
-    varg21: js.UndefOr[js.Any],
-    varg22: js.UndefOr[js.Any],
-    varg23: js.UndefOr[js.Any],
-    varg24: js.UndefOr[js.Any],
-    varg25: js.UndefOr[js.Any],
-    varg26: js.UndefOr[js.Any],
-    varg27: js.UndefOr[js.Any],
-    varg28: js.UndefOr[js.Any],
-    varg29: js.UndefOr[js.Any],
-    varg30: js.UndefOr[js.Any]
-  ): js.Any = js.native
+    varg1: js.UndefOr[Any],
+    varg2: js.UndefOr[Any],
+    varg3: js.UndefOr[Any],
+    varg4: js.UndefOr[Any],
+    varg5: js.UndefOr[Any],
+    varg6: js.UndefOr[Any],
+    varg7: js.UndefOr[Any],
+    varg8: js.UndefOr[Any],
+    varg9: js.UndefOr[Any],
+    varg10: js.UndefOr[Any],
+    varg11: js.UndefOr[Any],
+    varg12: js.UndefOr[Any],
+    varg13: js.UndefOr[Any],
+    varg14: js.UndefOr[Any],
+    varg15: js.UndefOr[Any],
+    varg16: js.UndefOr[Any],
+    varg17: js.UndefOr[Any],
+    varg18: js.UndefOr[Any],
+    varg19: js.UndefOr[Any],
+    varg20: js.UndefOr[Any],
+    varg21: js.UndefOr[Any],
+    varg22: js.UndefOr[Any],
+    varg23: js.UndefOr[Any],
+    varg24: js.UndefOr[Any],
+    varg25: js.UndefOr[Any],
+    varg26: js.UndefOr[Any],
+    varg27: js.UndefOr[Any],
+    varg28: js.UndefOr[Any],
+    varg29: js.UndefOr[Any],
+    varg30: js.UndefOr[Any]
+  ): Any = js.native
+  
   def RunOld(MacroName: String): Unit = js.native
+  
   def ScreenRefresh(): Unit = js.native
+  
+  var ScreenUpdating: Boolean = js.native
+  
+  val Selection: typingsJapgolly.activexWord.Word.Selection = js.native
+  
   def SendFax(): Unit = js.native
+  
   def SetDefaultTheme(Name: String, DocumentType: WdDocumentMedium): Unit = js.native
+  
   def ShowClipboard(): Unit = js.native
+  
   def ShowMe(): Unit = js.native
+  
+  var ShowStartupDialog: Boolean = js.native
+  
+  var ShowStylePreviews: Boolean = js.native
+  
+  var ShowVisualBasicEditor: Boolean = js.native
+  
+  var ShowWindowsInTaskbar: Boolean = js.native
+  
   def SmartArtColors(Index: String): SmartArtColor = js.native
   def SmartArtColors(Index: Double): SmartArtColor = js.native
+  @JSName("SmartArtColors")
+  val SmartArtColors_Original: SmartArtColors = js.native
+  
   def SmartArtLayouts(Index: String): SmartArtLayout = js.native
   def SmartArtLayouts(Index: Double): SmartArtLayout = js.native
+  @JSName("SmartArtLayouts")
+  val SmartArtLayouts_Original: SmartArtLayouts = js.native
+  
   def SmartArtQuickStyles(Index: String): SmartArtQuickStyle = js.native
   def SmartArtQuickStyles(Index: Double): SmartArtQuickStyle = js.native
+  @JSName("SmartArtQuickStyles")
+  val SmartArtQuickStyles_Original: SmartArtQuickStyles = js.native
+  
+  val SmartTagRecognizers: typingsJapgolly.activexWord.Word.SmartTagRecognizers = js.native
+  
+  val SmartTagTypes: typingsJapgolly.activexWord.Word.SmartTagTypes = js.native
+  
+  val SpecialMode: Boolean = js.native
+  
+  var StartupPath: String = js.native
+  
+  var StatusBar: String = js.native
+  
   def SubstituteFont(UnavailableFont: String, SubstituteFont: String): Unit = js.native
+  
   def SynonymInfo(Word: String): typingsJapgolly.activexWord.Word.SynonymInfo = js.native
-  def SynonymInfo(Word: String, LanguageID: js.Any): typingsJapgolly.activexWord.Word.SynonymInfo = js.native
+  def SynonymInfo(Word: String, LanguageID: Any): typingsJapgolly.activexWord.Word.SynonymInfo = js.native
+  
+  val System: typingsJapgolly.activexWord.Word.System = js.native
+  
+  val TaskPanes: typingsJapgolly.activexWord.Word.TaskPanes = js.native
+  
+  val Tasks: typingsJapgolly.activexWord.Word.Tasks = js.native
+  
+  val Templates: typingsJapgolly.activexWord.Word.Templates = js.native
+  
   def ThreeWayMerge(LocalDocument: Document, ServerDocument: Document, BaseDocument: Document, FavorSource: Boolean): Unit = js.native
+  
   def ToggleKeyboard(): Unit = js.native
+  
+  var Top: Double = js.native
+  
+  val UndoRecord: typingsJapgolly.activexWord.Word.UndoRecord = js.native
+  
+  val UsableHeight: Double = js.native
+  
+  val UsableWidth: Double = js.native
+  
+  var UserAddress: String = js.native
+  
+  val UserControl: Boolean = js.native
+  
+  var UserInitials: String = js.native
+  
+  var UserName: String = js.native
+  
+  val VBE: typingsJapgolly.activexVbide.VBIDE.VBE = js.native
+  
+  val Version: String = js.native
+  
+  var Visible: Boolean = js.native
+  
+  var Width: Double = js.native
+  
+  var WindowState: WdWindowState = js.native
+  
+  val Windows: typingsJapgolly.activexWord.Word.Windows = js.native
+  
+  val WordBasic: Any = js.native
+  
+  /* private */ @JSName("Word.Application_typekey")
+  var WordDotApplication_typekey: typingsJapgolly.activexWord.Word.Application = js.native
+  
+  val XMLNamespaces: typingsJapgolly.activexWord.Word.XMLNamespaces = js.native
 }
-

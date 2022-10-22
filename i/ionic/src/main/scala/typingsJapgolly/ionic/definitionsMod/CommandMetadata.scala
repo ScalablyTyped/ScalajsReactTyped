@@ -3,38 +3,26 @@ package typingsJapgolly.ionic.definitionsMod
 import typingsJapgolly.ionic.ionicStrings.global
 import typingsJapgolly.ionic.ionicStrings.project
 import typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataInput
-import typingsJapgolly.ionicCliFramework.definitionsMod.Footnote
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CommandMetadata
-  extends typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadata[CommandMetadataInput, CommandMetadataOption] {
+  extends StObject
+     with typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadata[CommandMetadataInput, CommandMetadataOption] {
+  
   var `type`: global | project
 }
-
 object CommandMetadata {
-  @scala.inline
-  def apply(
-    name: String,
-    summary: String,
-    `type`: global | project,
-    description: String = null,
-    exampleCommands: js.Array[String] = null,
-    footnotes: js.Array[Footnote] = null,
-    groups: js.Array[String] = null,
-    inputs: js.Array[CommandMetadataInput] = null,
-    options: js.Array[CommandMetadataOption] = null
-  ): CommandMetadata = {
+  
+  inline def apply(name: String, summary: String, `type`: global | project): CommandMetadata = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (exampleCommands != null) __obj.updateDynamic("exampleCommands")(exampleCommands.asInstanceOf[js.Any])
-    if (footnotes != null) __obj.updateDynamic("footnotes")(footnotes.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandMetadata]
   }
+  
+  extension [Self <: CommandMetadata](x: Self) {
+    
+    inline def setType(value: global | project): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

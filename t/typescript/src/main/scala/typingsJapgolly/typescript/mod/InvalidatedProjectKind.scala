@@ -1,35 +1,33 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InvalidatedProjectKind extends js.Object
-
+sealed trait InvalidatedProjectKind extends StObject
 @JSImport("typescript", "InvalidatedProjectKind")
 @js.native
-object InvalidatedProjectKind extends js.Object {
-  @js.native
-  sealed trait Build extends InvalidatedProjectKind
-  
-  @js.native
-  sealed trait UpdateBundle extends InvalidatedProjectKind
-  
-  @js.native
-  sealed trait UpdateOutputFileStamps extends InvalidatedProjectKind
+object InvalidatedProjectKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InvalidatedProjectKind with Double] = js.native
-  /* 0 */ @js.native
-  object Build extends TopLevel[Build with Double]
+  def apply(value: Double): js.UndefOr[InvalidatedProjectKind & Double] = js.native
   
-  /* 1 */ @js.native
-  object UpdateBundle extends TopLevel[UpdateBundle with Double]
+  @js.native
+  sealed trait Build
+    extends StObject
+       with InvalidatedProjectKind
+  /* 0 */ val Build: typingsJapgolly.typescript.mod.InvalidatedProjectKind.Build & Double = js.native
   
-  /* 2 */ @js.native
-  object UpdateOutputFileStamps extends TopLevel[UpdateOutputFileStamps with Double]
+  @js.native
+  sealed trait UpdateBundle
+    extends StObject
+       with InvalidatedProjectKind
+  /* 1 */ val UpdateBundle: typingsJapgolly.typescript.mod.InvalidatedProjectKind.UpdateBundle & Double = js.native
   
+  @js.native
+  sealed trait UpdateOutputFileStamps
+    extends StObject
+       with InvalidatedProjectKind
+  /* 2 */ val UpdateOutputFileStamps: typingsJapgolly.typescript.mod.InvalidatedProjectKind.UpdateOutputFileStamps & Double = js.native
 }
-

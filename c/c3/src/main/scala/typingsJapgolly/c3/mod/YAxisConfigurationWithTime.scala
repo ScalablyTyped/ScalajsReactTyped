@@ -1,44 +1,27 @@
 package typingsJapgolly.c3.mod
 
-import typingsJapgolly.c3.AnonPosition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait YAxisConfigurationWithTime extends YAxisConfiguration {
+trait YAxisConfigurationWithTime
+  extends StObject
+     with YAxisConfiguration {
+  
   @JSName("tick")
   var tick_YAxisConfigurationWithTime: js.UndefOr[YTickConfigurationWithTime] = js.undefined
-  var `type`: js.UndefOr[js.Any] = js.undefined
 }
-
 object YAxisConfigurationWithTime {
-  @scala.inline
-  def apply(
-    center: Int | Double = null,
-    default: js.Tuple2[Double, Double] = null,
-    inner: js.UndefOr[Boolean] = js.undefined,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    label: String | AnonPosition = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    padding: Padding = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    tick: YTickConfigurationWithTime = null,
-    `type`: js.Any = null
-  ): YAxisConfigurationWithTime = {
+  
+  inline def apply(): YAxisConfigurationWithTime = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(inner)) __obj.updateDynamic("inner")(inner.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[YAxisConfigurationWithTime]
   }
+  
+  extension [Self <: YAxisConfigurationWithTime](x: Self) {
+    
+    inline def setTick(value: YTickConfigurationWithTime): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    
+    inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
+  }
 }
-

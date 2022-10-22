@@ -1,8 +1,8 @@
 package typingsJapgolly.spotifyApi.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * External Id object
@@ -10,20 +10,33 @@ import scala.scalajs.js.annotation._
   *
   * Note that there might be other types available, it couldn't be found in the docs.
   */
-trait ExternalIdObject extends js.Object {
+trait ExternalIdObject extends StObject {
+  
   var ean: js.UndefOr[String] = js.undefined
+  
   var isrc: js.UndefOr[String] = js.undefined
+  
   var upc: js.UndefOr[String] = js.undefined
 }
-
 object ExternalIdObject {
-  @scala.inline
-  def apply(ean: String = null, isrc: String = null, upc: String = null): ExternalIdObject = {
+  
+  inline def apply(): ExternalIdObject = {
     val __obj = js.Dynamic.literal()
-    if (ean != null) __obj.updateDynamic("ean")(ean.asInstanceOf[js.Any])
-    if (isrc != null) __obj.updateDynamic("isrc")(isrc.asInstanceOf[js.Any])
-    if (upc != null) __obj.updateDynamic("upc")(upc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalIdObject]
   }
+  
+  extension [Self <: ExternalIdObject](x: Self) {
+    
+    inline def setEan(value: String): Self = StObject.set(x, "ean", value.asInstanceOf[js.Any])
+    
+    inline def setEanUndefined: Self = StObject.set(x, "ean", js.undefined)
+    
+    inline def setIsrc(value: String): Self = StObject.set(x, "isrc", value.asInstanceOf[js.Any])
+    
+    inline def setIsrcUndefined: Self = StObject.set(x, "isrc", js.undefined)
+    
+    inline def setUpc(value: String): Self = StObject.set(x, "upc", value.asInstanceOf[js.Any])
+    
+    inline def setUpcUndefined: Self = StObject.set(x, "upc", js.undefined)
+  }
 }
-

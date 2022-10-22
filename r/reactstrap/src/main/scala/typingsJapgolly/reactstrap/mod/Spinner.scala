@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.spinnerMod.SpinnerProps
+import typingsJapgolly.reactstrap.typesLibSpinnerMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "Spinner")
 @js.native
-class Spinner[T] ()
-  extends Component[SpinnerProps, js.Object, js.Any]
-
+open class Spinner () extends default

@@ -1,35 +1,31 @@
 package typingsJapgolly.activexOutlook.Outlook
 
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`0`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`0`
 */
-trait OlSelectionLocation extends js.Object
-
+trait OlSelectionLocation extends StObject
 object OlSelectionLocation {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def olAttachmentWell: `4` = this.cast(4)
-  @scala.inline
-  def olDailyTaskList: `3` = this.cast(3)
-  @scala.inline
-  def olToDoBarAppointmentList: `2` = this.cast(2)
-  @scala.inline
-  def olToDoBarTaskList: `1` = this.cast(1)
-  @scala.inline
-  def olViewList: `0` = this.cast(0)
+  
+  inline def olAttachmentWell: `4` = 4.asInstanceOf[`4`]
+  
+  inline def olDailyTaskList: `3` = 3.asInstanceOf[`3`]
+  
+  inline def olToDoBarAppointmentList: `2` = 2.asInstanceOf[`2`]
+  
+  inline def olToDoBarTaskList: `1` = 1.asInstanceOf[`1`]
+  
+  inline def olViewList: `0` = 0.asInstanceOf[`0`]
 }
-

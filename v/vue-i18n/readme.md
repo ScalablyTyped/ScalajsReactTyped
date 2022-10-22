@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue-i18n
 
-Typings are for version 8.15.3
+Typings are for version 9.2.2
 
 ## Library description:
 Internationalization plugin for Vue.js
@@ -9,16 +9,16 @@ Internationalization plugin for Vue.js
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | vue-i18n |
-| Keywords           | i18n, internationalization, plugin, vue, vue.js |
-| # releases         | 36 |
-| # dependents       | 603 |
-| # downloads        | 9283657 |
-| # stars            | 15 |
+| Keywords           | i18n, internationalization, intlify, plugin, vue, vue.js |
+| # releases         | 122 |
+| # dependents       | 0.0 |
+| # downloads        | 3499545.0 |
+| # stars            | 996.0 |
 
 ## Links
-- [Homepage](https://github.com/kazupon/vue-i18n#readme)
-- [Bugs](https://github.com/kazupon/vue-i18n/issues)
-- [Repository](https://github.com/kazupon/vue-i18n)
+- [Homepage](https://github.com/intlify/vue-i18n-next/tree/master/packages/vue-i18n#readme)
+- [Bugs](https://github.com/intlify/vue-i18n-next/issues)
+- [Repository](https://github.com/intlify/vue-i18n-next)
 - [Npm](https://www.npmjs.com/package/vue-i18n)
     
 

@@ -1,19 +1,30 @@
 package typingsJapgolly.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PDFParams extends js.Object {
+trait PDFParams extends StObject {
+  
   var page: js.UndefOr[ImgixParamType] = js.undefined
+  
+  var `pdf-annotation`: js.UndefOr[ImgixParamType] = js.undefined
 }
-
 object PDFParams {
-  @scala.inline
-  def apply(page: ImgixParamType = null): PDFParams = {
+  
+  inline def apply(): PDFParams = {
     val __obj = js.Dynamic.literal()
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFParams]
   }
+  
+  extension [Self <: PDFParams](x: Self) {
+    
+    inline def setPage(value: ImgixParamType): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def `setPdf-annotation`(value: ImgixParamType): Self = StObject.set(x, "pdf-annotation", value.asInstanceOf[js.Any])
+    
+    inline def `setPdf-annotationUndefined`: Self = StObject.set(x, "pdf-annotation", js.undefined)
+  }
 }
-

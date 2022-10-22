@@ -1,81 +1,131 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.disabled
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.error
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.loading
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ready
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureViewModel extends Accessor {
+trait FeatureViewModel
+  extends StObject
+     with Accessor {
+  
+  /**
+    * Defines the specific [abilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#Abilities) that the [Feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html) and [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) widgets should use when querying and displaying its content.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#abilities)
+    */
+  var abilities: FeatureViewModelAbilities = js.native
+  
   /**
     * The [content](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content) of the feature.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#content)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#content)
     */
   val content: js.Array[Content_] | Widget_ | HTMLElement | String = js.native
+  
   /**
-    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined. Automatic popup templates are supported for layers that support the `createPopupTemplate` method. (Supported for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html) and [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#defaultPopupTemplateEnabled)
+    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#defaultPopupTemplateEnabled)
     */
   var defaultPopupTemplateEnabled: Boolean = js.native
+  
   /**
-    * The formatted attributes calculated from `fieldInfo` [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) content. They are obtained from the feature's [graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#graphic) attribute values and can be read:
-    *   * globally using the [fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos) property directly at the root level of the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html), or
-    *   * per an individual content element. This element is defined with a [fieldsContent](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html) popup element set on the PopupTemplate content property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#formattedAttributes)
+    * The formatted attributes calculated from `fieldInfo` [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) content.
     *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#formattedAttributes)
     */
   val formattedAttributes: FeatureViewModelFormattedAttributes = js.native
+  
   /**
     * The [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) used to represent the feature.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#graphic)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#graphic)
     */
   var graphic: Graphic = js.native
+  
   /**
-    * A read-only property containing metadata regarding the last edit performed on a feature. This object has the following properties:
+    * A read-only property containing metadata regarding the last edit performed on a feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#lastEditInfo)
     */
   val lastEditInfo: FeatureViewModelLastEditInfo = js.native
+  
   /**
-    * A reference to the [view's](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html). Use this property when needing to get access to the underlying layers within the map. This can then be used within [Arcade](https://developers.arcgis.com/arcade) expressions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#map)
+    * A reference to the [view's](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html).
     *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#map)
     */
   var map: Map = js.native
+  
+  /**
+    * Paginates to the next [media](esri-popup-content-MediaContent.html) info.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#nextMedia)
+    */
+  def nextMedia(contentElementIndex: Double): scala.Unit = js.native
+  
+  /**
+    * Paginates to the previous [media](esri-popup-content-MediaContent.html) info in the specified [media](esri-popup-content-MediaContent.html) content element.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#previousMedia)
+    */
+  def previousMedia(contentElementIndex: Double): scala.Unit = js.native
+  
+  /**
+    * Paginates to a specified [media](esri-popup-content-MediaContent.html) info object.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#setActiveMedia)
+    */
+  def setActiveMedia(contentElementIndex: Double, mediaInfoIndex: Double): scala.Unit = js.native
+  
   /**
     * The spatial reference used for [Arcade](https://developers.arcgis.com/arcade) operations.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#spatialReference)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#spatialReference)
     */
   var spatialReference: SpatialReference = js.native
+  
+  /**
+    * The view model's state.
+    *
+    * @default disabled
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#state)
+    */
+  val state: ready | disabled | error | loading = js.native
+  
   /**
     * The title for the feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#title)
     */
   val title: String = js.native
+  
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#view)
     */
   var view: MapView | SceneView = js.native
+  
   /**
     * Indicates whether the feature is currently waiting for all of its content to finish loading.
     *
@@ -83,8 +133,3 @@ trait FeatureViewModel extends Accessor {
     */
   val waitingForContent: Boolean = js.native
 }
-
-@JSGlobal("__esri.FeatureViewModel")
-@js.native
-object FeatureViewModel extends TopLevel[FeatureViewModelConstructor]
-

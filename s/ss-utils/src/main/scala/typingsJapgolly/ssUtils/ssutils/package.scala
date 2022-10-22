@@ -1,13 +1,16 @@
-package typingsJapgolly.ssUtils
+package typingsJapgolly.ssUtils.ssutils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object ssutils {
-  type ApplyErrorsOptions = typingsJapgolly.ssUtils.ssutils.ValidationOptional
-  type SSEHeartbeat = typingsJapgolly.ssUtils.ssutils.SSECommand
-  type SSEJoin = typingsJapgolly.ssUtils.ssutils.SSECommand
-  type SSELeave = typingsJapgolly.ssUtils.ssutils.SSECommand
-  type SSEUpdate = typingsJapgolly.ssUtils.ssutils.SSECommand
-}
+
+type ApplyErrorsOptions = ValidationOptional
+
+type SSEHeartbeat = SSECommand
+
+type SSEJoin = SSECommand
+
+type SSELeave = SSECommand
+
+type SSEUpdate = SSECommand

@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.svgIconSvgIconMod.SvgIconProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.svg
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import typingsJapgolly.materialUiCore.svgIconSvgIconMod.SvgIconTypeMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/SvgIcon", JSImport.Namespace)
-@js.native
-object svgIconMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[SvgIconProps, ComponentState, js.Any] {
-    def this(props: SvgIconProps) = this()
-    def this(props: SvgIconProps, context: js.Any) = this()
-  }
+object svgIconMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Icons](https://mui.com/components/icons/)
+    * - [Material Icons](https://mui.com/components/material-icons/)
+    *
+    * API:
+    *
+    * - [SvgIcon API](https://mui.com/api/svg-icon/)
+    */
+  @JSImport("@material-ui/core/SvgIcon", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[SvgIconProps]]
+  val default: OverridableComponent[SvgIconTypeMap[js.Object, svg]] = js.native
   
+  type _To = OverridableComponent[SvgIconTypeMap[js.Object, svg]]
+  
+  /* This means you don't have to write `default`, but can instead just say `svgIconMod.foo` */
+  override def _to: OverridableComponent[SvgIconTypeMap[js.Object, svg]] = default
 }
-

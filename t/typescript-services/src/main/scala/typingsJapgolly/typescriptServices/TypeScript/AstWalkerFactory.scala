@@ -1,24 +1,26 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.AstWalkerFactory")
 @js.native
-class AstWalkerFactory () extends js.Object {
-  def simpleWalk(ast: AST, pre: js.Function2[/* ast */ AST, /* state */ js.Any, Unit]): Unit = js.native
+trait AstWalkerFactory extends StObject {
+  
+  def simpleWalk(ast: AST, pre: js.Function2[/* ast */ AST, /* state */ Any, Unit]): Unit = js.native
   def simpleWalk(
     ast: AST,
-    pre: js.Function2[/* ast */ AST, /* state */ js.Any, Unit],
-    post: js.Function2[/* ast */ AST, /* state */ js.Any, Unit]
+    pre: js.Function2[/* ast */ AST, /* state */ Any, Unit],
+    post: js.Function2[/* ast */ AST, /* state */ Any, Unit]
   ): Unit = js.native
   def simpleWalk(
     ast: AST,
-    pre: js.Function2[/* ast */ AST, /* state */ js.Any, Unit],
-    post: js.Function2[/* ast */ AST, /* state */ js.Any, Unit],
-    state: js.Any
+    pre: js.Function2[/* ast */ AST, /* state */ Any, Unit],
+    post: js.Function2[/* ast */ AST, /* state */ Any, Unit],
+    state: Any
   ): Unit = js.native
+  def simpleWalk(ast: AST, pre: js.Function2[/* ast */ AST, /* state */ Any, Unit], post: Unit, state: Any): Unit = js.native
+  
   def walk(ast: AST, pre: js.Function2[/* ast */ AST, /* walker */ IAstWalker, Unit]): Unit = js.native
   def walk(
     ast: AST,
@@ -29,7 +31,7 @@ class AstWalkerFactory () extends js.Object {
     ast: AST,
     pre: js.Function2[/* ast */ AST, /* walker */ IAstWalker, Unit],
     post: js.Function2[/* ast */ AST, /* walker */ IAstWalker, Unit],
-    state: js.Any
+    state: Any
   ): Unit = js.native
+  def walk(ast: AST, pre: js.Function2[/* ast */ AST, /* walker */ IAstWalker, Unit], post: Unit, state: Any): Unit = js.native
 }
-

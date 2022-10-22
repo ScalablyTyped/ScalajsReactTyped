@@ -1,23 +1,29 @@
 package typingsJapgolly.leaflet.mod
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DefaultMapPanes extends js.Object {
+trait DefaultMapPanes extends StObject {
+  
   var mapPane: HTMLElement
+  
   var markerPane: HTMLElement
+  
   var overlayPane: HTMLElement
+  
   var popupPane: HTMLElement
+  
   var shadowPane: HTMLElement
+  
   var tilePane: HTMLElement
+  
   var tooltipPane: HTMLElement
 }
-
 object DefaultMapPanes {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     mapPane: HTMLElement,
     markerPane: HTMLElement,
     overlayPane: HTMLElement,
@@ -27,8 +33,23 @@ object DefaultMapPanes {
     tooltipPane: HTMLElement
   ): DefaultMapPanes = {
     val __obj = js.Dynamic.literal(mapPane = mapPane.asInstanceOf[js.Any], markerPane = markerPane.asInstanceOf[js.Any], overlayPane = overlayPane.asInstanceOf[js.Any], popupPane = popupPane.asInstanceOf[js.Any], shadowPane = shadowPane.asInstanceOf[js.Any], tilePane = tilePane.asInstanceOf[js.Any], tooltipPane = tooltipPane.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[DefaultMapPanes]
   }
+  
+  extension [Self <: DefaultMapPanes](x: Self) {
+    
+    inline def setMapPane(value: HTMLElement): Self = StObject.set(x, "mapPane", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerPane(value: HTMLElement): Self = StObject.set(x, "markerPane", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayPane(value: HTMLElement): Self = StObject.set(x, "overlayPane", value.asInstanceOf[js.Any])
+    
+    inline def setPopupPane(value: HTMLElement): Self = StObject.set(x, "popupPane", value.asInstanceOf[js.Any])
+    
+    inline def setShadowPane(value: HTMLElement): Self = StObject.set(x, "shadowPane", value.asInstanceOf[js.Any])
+    
+    inline def setTilePane(value: HTMLElement): Self = StObject.set(x, "tilePane", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipPane(value: HTMLElement): Self = StObject.set(x, "tooltipPane", value.asInstanceOf[js.Any])
+  }
 }
-

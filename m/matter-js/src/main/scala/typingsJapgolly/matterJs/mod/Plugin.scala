@@ -1,55 +1,64 @@
 package typingsJapgolly.matterJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.matterJs.AnonDict
-import typingsJapgolly.matterJs.AnonIsRange
-import typingsJapgolly.matterJs.AnonName
-import typingsJapgolly.matterJs.AnonUses
+import typingsJapgolly.matterJs.anon.Dict
+import typingsJapgolly.matterJs.anon.IsRange
+import typingsJapgolly.matterJs.anon.Name
+import typingsJapgolly.matterJs.anon.Uses
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Plugin")
 @js.native
-class Plugin () extends js.Object {
+open class Plugin () extends StObject {
+  
   var `for`: js.UndefOr[String] = js.native
-  var name: String = js.native
-  var version: String = js.native
+  
   def install(): Unit = js.native
+  
+  var name: String = js.native
+  
+  var version: String = js.native
 }
-
 /* static members */
-@JSImport("matter-js", "Plugin")
-@js.native
-object Plugin extends js.Object {
+object Plugin {
+  
+  @JSImport("matter-js", "Plugin")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Recursively finds all of a module's dependencies and returns a flat dependency graph.
     * @method dependencies
-    * @param module {} The module.
-    * @return {object} A dependency graph.
+    * @param {Dependency} module The module.
+    * @returns {any} A dependency graph.
     */
-  def dependencies(module: Dependency): js.UndefOr[StringDictionary[js.Array[String]] | String] = js.native
-  def dependencies(module: Dependency, tracked: StringDictionary[js.Array[String]]): js.UndefOr[StringDictionary[js.Array[String]] | String] = js.native
+  inline def dependencies(module: Dependency): js.UndefOr[StringDictionary[js.Array[String]] | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("dependencies")(module.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[StringDictionary[js.Array[String]] | String]]
+  inline def dependencies(module: Dependency, tracked: StringDictionary[js.Array[String]]): js.UndefOr[StringDictionary[js.Array[String]] | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("dependencies")(module.asInstanceOf[js.Any], tracked.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[StringDictionary[js.Array[String]] | String]]
+  
   /**
     * Parses a dependency string into its components.
     * The `dependency` is a string of the format `'module-name'` or `'module-name@version'`.
     * See documentation for `Plugin.versionParse` for a description of the format.
     * This function can also handle dependencies that are already resolved (e.g. a module object).
     * @method dependencyParse
-    * @param dependency {string} The dependency of the format `'module-name'` or `'module-name@version'`.
-    * @return {object} The dependency parsed into its components.
+    * @param {Dependency} dependency The dependency of the format `'module-name'` or `'module-name@version'`.
+    * @returns {any} The dependency parsed into its components.
     */
-  def dependencyParse(dependency: Dependency): AnonName = js.native
+  inline def dependencyParse(dependency: Dependency): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("dependencyParse")(dependency.asInstanceOf[js.Any]).asInstanceOf[Name]
+  
   /**
     * Returns `true` if `plugin.for` is applicable to `module` by comparing against `module.name` and `module.version`.
     * If `plugin.for` is not specified then it is assumed to be applicable.
     * The value of `plugin.for` is a string of the format `'module-name'` or `'module-name@version'`.
     * @method isFor
-    * @param plugin {} The plugin.
-    * @param module {} The module.
-    * @return {boolean} `true` if `plugin.for` is applicable to `module`, otherwise `false`.
+    * @param {} plugin The plugin.
+    * @param {} module The module.
+    * @returns {boolean} `true` if `plugin.for` is applicable to `module`, otherwise `false`.
     */
-  def isFor(plugin: Plugin, module: AnonDict): Boolean = js.native
+  inline def isFor(plugin: Plugin, module: Dict): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFor")(plugin.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   /**
     * Returns `true` if the object meets the minimum standard to be considered a plugin.
     * This means it must define the following properties:
@@ -57,33 +66,37 @@ object Plugin extends js.Object {
     * - `version`
     * - `install`
     * @method isPlugin
-    * @param obj {} The obj to test.
-    * @return {boolean} `true` if the object can be considered a plugin otherwise `false`.
+    * @param {any} obj The obj to test.
+    * @returns {boolean} `true` if the object can be considered a plugin otherwise `false`.
     */
-  def isPlugin(obj: js.Object): Boolean = js.native
+  inline def isPlugin(obj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlugin")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   /**
     * Registers a plugin object so it can be resolved later by name.
     * @method register
-    * @param plugin {} The plugin to register.
-    * @return {object} The plugin.
+    * @param {} plugin The plugin to register.
+    * @returns {any} The plugin.
     */
-  def register(plugin: Plugin): Plugin = js.native
+  inline def register(plugin: Plugin): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(plugin.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  
   /**
     * Resolves a dependency to a plugin object from the registry if it exists.
     * The `dependency` may contain a version, but only the name matters when resolving.
     * @method resolve
-    * @param dependency {string} The dependency.
-    * @return {object} The plugin if resolved, otherwise `undefined`.
+    * @param {string} dependency The dependency.
+    * @returns {any} The plugin if resolved, otherwise `undefined`.
     */
-  def resolve(dependency: String): js.UndefOr[Plugin] = js.native
+  inline def resolve(dependency: String): js.UndefOr[Plugin] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(dependency.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Plugin]]
+  
   /**
     * Returns a pretty printed plugin name and version.
     * @method toString
-    * @param plugin {} The plugin.
-    * @return {string} Pretty printed plugin name and version.
+    * @param {} plugin The plugin.
+    * @returns {string} Pretty printed plugin name and version.
     */
-  def toString(plugin: String): String = js.native
-  def toString(plugin: Plugin): String = js.native
+  inline def toString(plugin: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(plugin.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toString(plugin: Plugin): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(plugin.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   /**
     * Installs the plugins by calling `plugin.install` on each plugin specified in `plugins` if passed, otherwise `module.uses`.
     * For installing plugins on `Matter` see the convenience function `Matter.use`.
@@ -97,10 +110,11 @@ object Plugin extends js.Object {
     * - A red cross ❌ indicates a dependency could not be resolved.
     * Avoid calling this function multiple times on the same module unless you intend to manually control installation order.
     * @method use
-    * @param module {} The module install plugins on.
+    * @param  {} The module install plugins on.
     * @param [plugins=module.uses] {} The plugins to install on module (optional, defaults to `module.uses`).
     */
-  def use(module: AnonUses, plugins: js.Array[Plugin | String]): Unit = js.native
+  inline def use(module: Uses, plugins: js.Array[Plugin | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(module.asInstanceOf[js.Any], plugins.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Parses a version string into its components.
     * Versions are strictly of the format `x.y.z` (as in [semver](http://semver.org/)).
@@ -113,18 +127,18 @@ object Plugin extends js.Object {
     * - Any version `*`
     * @method versionParse
     * @param range {string} The version string.
-    * @return {object} The version range parsed into its components.
+    * @returns {any} The version range parsed into its components.
     */
-  def versionParse(range: String): AnonIsRange = js.native
+  inline def versionParse(range: String): IsRange = ^.asInstanceOf[js.Dynamic].applyDynamic("versionParse")(range.asInstanceOf[js.Any]).asInstanceOf[IsRange]
+  
   /**
     * Returns `true` if `version` satisfies the given `range`.
     * See documentation for `Plugin.versionParse` for a description of the format.
     * If a version or range is not specified, then any version (`*`) is assumed to satisfy.
     * @method versionSatisfies
-    * @param version {string} The version string.
-    * @param range {string} The range string.
-    * @return {boolean} `true` if `version` satisfies `range`, otherwise `false`.
+    * @param {string} version The version string.
+    * @param {string} range The range string.
+    * @returns {boolean} `true` if `version` satisfies `range`, otherwise `false`.
     */
-  def versionSatisfies(version: String, range: String): Boolean = js.native
+  inline def versionSatisfies(version: String, range: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("versionSatisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }
-

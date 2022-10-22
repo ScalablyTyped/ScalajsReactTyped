@@ -1,31 +1,43 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
 import typingsJapgolly.kendoUi.kendo.dataviz.map.Location
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapMarker extends js.Object {
-  var location: js.UndefOr[js.Any | Location] = js.undefined
+trait MapMarker extends StObject {
+  
+  var location: js.UndefOr[Any | Location] = js.undefined
+  
   var shape: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var tooltip: js.UndefOr[MapMarkerTooltip] = js.undefined
 }
-
 object MapMarker {
-  @scala.inline
-  def apply(
-    location: js.Any | Location = null,
-    shape: String = null,
-    title: String = null,
-    tooltip: MapMarkerTooltip = null
-  ): MapMarker = {
+  
+  inline def apply(): MapMarker = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapMarker]
   }
+  
+  extension [Self <: MapMarker](x: Self) {
+    
+    inline def setLocation(value: Any | Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTooltip(value: MapMarkerTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+  }
 }
-

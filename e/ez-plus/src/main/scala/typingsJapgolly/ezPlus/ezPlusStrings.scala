@@ -1,69 +1,56 @@
 package typingsJapgolly.ezPlus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ezPlusStrings {
-  @js.native
-  sealed trait click extends js.Object
   
   @js.native
-  sealed trait crosshair extends js.Object
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait cursor extends js.Object
+  sealed trait click extends StObject
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait crosshair extends StObject
+  inline def crosshair: crosshair = "crosshair".asInstanceOf[crosshair]
   
   @js.native
-  sealed trait height extends js.Object
+  sealed trait cursor extends StObject
+  inline def cursor: cursor = "cursor".asInstanceOf[cursor]
   
   @js.native
-  sealed trait hover extends js.Object
+  sealed trait height extends StObject
+  inline def height: height = "height".asInstanceOf[height]
   
   @js.native
-  sealed trait inner extends js.Object
+  sealed trait hover extends StObject
+  inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
-  sealed trait lens extends js.Object
+  sealed trait inner extends StObject
+  inline def inner: inner = "inner".asInstanceOf[inner]
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait lens extends StObject
+  inline def lens: lens = "lens".asInstanceOf[lens]
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait width extends js.Object
+  sealed trait square extends StObject
+  inline def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait window extends js.Object
+  sealed trait width extends StObject
+  inline def width: width = "width".asInstanceOf[width]
   
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def crosshair: crosshair = "crosshair".asInstanceOf[crosshair]
-  @scala.inline
-  def cursor: cursor = "cursor".asInstanceOf[cursor]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def height: height = "height".asInstanceOf[height]
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
-  @scala.inline
-  def inner: inner = "inner".asInstanceOf[inner]
-  @scala.inline
-  def lens: lens = "lens".asInstanceOf[lens]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
+  @js.native
+  sealed trait window extends StObject
+  inline def window: window = "window".asInstanceOf[window]
 }
-

@@ -1,47 +1,54 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQuery
 import typingsJapgolly.kendoUi.kendo.data.DataSource
 import typingsJapgolly.kendoUi.kendo.data.HierarchicalDataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.DropDownTree")
 @js.native
-class DropDownTree protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: DropDownTreeOptions) = this()
+trait DropDownTree
+  extends StObject
+     with Widget {
+  
+  def close(): Unit = js.native
+  
   var dataSource: DataSource = js.native
+  
+  def enable(enable: Boolean): Unit = js.native
+  
+  def focus(): Unit = js.native
+  
+  def items(): Any = js.native
+  
+  def open(): Unit = js.native
+  
   @JSName("options")
   var options_DropDownTree: DropDownTreeOptions = js.native
+  
   var popup: Popup = js.native
-  var tagList: JQuery = js.native
-  var tree: JQuery = js.native
-  var treeview: TreeView = js.native
-  var wrapper: JQuery = js.native
-  def close(): Unit = js.native
-  def enable(enable: Boolean): Unit = js.native
-  def focus(): Unit = js.native
-  def items(): js.Any = js.native
-  def open(): Unit = js.native
+  
   def readonly(readonly: Boolean): Unit = js.native
+  
   def refresh(): Unit = js.native
+  
   def search(word: String): Unit = js.native
+  
   def setDataSource(dataSource: HierarchicalDataSource): Unit = js.native
+  
+  var tagList: JQuery = js.native
+  
   def toggle(): Unit = js.native
   def toggle(toggle: Boolean): Unit = js.native
-  def value(): js.Any = js.native
+  
+  var tree: JQuery = js.native
+  
+  var treeview: TreeView = js.native
+  
+  def value(): Any = js.native
   def value(value: String): Unit = js.native
-  def value(value: js.Any): Unit = js.native
+  def value(value: Any): Unit = js.native
+  
+  var wrapper: JQuery = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.ui.DropDownTree")
-@js.native
-object DropDownTree extends js.Object {
-  var fn: DropDownTree = js.native
-  def extend(proto: js.Object): DropDownTree = js.native
-}
-

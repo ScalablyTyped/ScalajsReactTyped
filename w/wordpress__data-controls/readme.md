@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__data-controls
 
-Typings are for version 1.0
+Typings are for version 2.2
 
 ## Library description:
 A set of common controls for the @wordpress/data api.
@@ -9,15 +9,16 @@ A set of common controls for the @wordpress/data api.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/data-controls |
-| Keywords           | wordpress, data, controls |
-| # releases         | 12 |
-| # dependents       | 1 |
-| # downloads        | 65675 |
-| # stars            | 0 |
+| Keywords           | wordpress, gutenberg, data, controls |
+| # releases         | 74 |
+| # dependents       | 0.0 |
+| # downloads        | 74087.33333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/data-controls/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/data-controls/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fdata-controls)
     
 

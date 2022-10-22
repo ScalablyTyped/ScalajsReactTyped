@@ -1,102 +1,85 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactFieldType extends js.Object
-
+sealed trait ContactFieldType extends StObject
 /** Defines the type of contact data. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactFieldType")
 @js.native
-object ContactFieldType extends js.Object {
+object ContactFieldType extends StObject {
+  
   /** The contact's address. Supported on Windows Phone. */
   @js.native
-  sealed trait address extends ContactFieldType
+  sealed trait address
+    extends StObject
+       with ContactFieldType
   
   /** The contact's connected service account. */
   @js.native
-  sealed trait connectedServiceAccount extends ContactFieldType
+  sealed trait connectedServiceAccount
+    extends StObject
+       with ContactFieldType
   
   /** Custom may be altered or unavailable for releases after Windows 8.1. Instead, use one of the specific types. */
   @js.native
-  sealed trait custom extends ContactFieldType
+  sealed trait custom
+    extends StObject
+       with ContactFieldType
   
   /** The contact's email address. Supported on Windows Phone. */
   @js.native
-  sealed trait email extends ContactFieldType
+  sealed trait email
+    extends StObject
+       with ContactFieldType
   
   /** The contact's important dates. */
   @js.native
-  sealed trait importantDate extends ContactFieldType
+  sealed trait importantDate
+    extends StObject
+       with ContactFieldType
   
   /** InstantMessage may be altered or unavailable for releases after Windows 8.1. Instead, use ConnectedServiceAccount. */
   @js.native
-  sealed trait instantMessage extends ContactFieldType
+  sealed trait instantMessage
+    extends StObject
+       with ContactFieldType
   
   /** The contact's job info. */
   @js.native
-  sealed trait jobInfo extends ContactFieldType
+  sealed trait jobInfo
+    extends StObject
+       with ContactFieldType
   
   /** Location may be altered or unavailable for releases after Windows 8.1. Instead, use Address. */
   @js.native
-  sealed trait location extends ContactFieldType
+  sealed trait location
+    extends StObject
+       with ContactFieldType
   
   /** The contact's notes. */
   @js.native
-  sealed trait notes extends ContactFieldType
+  sealed trait notes
+    extends StObject
+       with ContactFieldType
   
   /** The contact's phone number. Supported on Windows Phone. */
   @js.native
-  sealed trait phoneNumber extends ContactFieldType
+  sealed trait phoneNumber
+    extends StObject
+       with ContactFieldType
   
   /** The contact's significant other. */
   @js.native
-  sealed trait significantOther extends ContactFieldType
+  sealed trait significantOther
+    extends StObject
+       with ContactFieldType
   
   /** The contact's Web site. */
   @js.native
-  sealed trait website extends ContactFieldType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactFieldType with Double] = js.native
-  /* 7 */ @js.native
-  object address extends TopLevel[address with Double]
-  
-  /* 5 */ @js.native
-  object connectedServiceAccount extends TopLevel[connectedServiceAccount with Double]
-  
-  /* 4 */ @js.native
-  object custom extends TopLevel[custom with Double]
-  
-  /* 0 */ @js.native
-  object email extends TopLevel[email with Double]
-  
-  /* 6 */ @js.native
-  object importantDate extends TopLevel[importantDate with Double]
-  
-  /* 3 */ @js.native
-  object instantMessage extends TopLevel[instantMessage with Double]
-  
-  /* 11 */ @js.native
-  object jobInfo extends TopLevel[jobInfo with Double]
-  
-  /* 2 */ @js.native
-  object location extends TopLevel[location with Double]
-  
-  /* 9 */ @js.native
-  object notes extends TopLevel[notes with Double]
-  
-  /* 1 */ @js.native
-  object phoneNumber extends TopLevel[phoneNumber with Double]
-  
-  /* 8 */ @js.native
-  object significantOther extends TopLevel[significantOther with Double]
-  
-  /* 10 */ @js.native
-  object website extends TopLevel[website with Double]
-  
+  sealed trait website
+    extends StObject
+       with ContactFieldType
 }
-

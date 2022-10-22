@@ -1,166 +1,122 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
+import typingsJapgolly.pixiCore.mod.ISpriteMaskTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This namespace contains WebGL-only display filters that can be applied
-  * to DisplayObjects using the {@link PIXI.DisplayObject#filters filters} property.
-  *
-  * Since PixiJS only had a handful of built-in filters, additional filters
-  * can be downloaded {@link https://github.com/pixijs/pixi-filters here} from the
-  * PixiJS Filters repository.
-  *
-  * All filters must extend {@link PIXI.Filter}.
-  *
-  * @example
-  * // Create a new application
-  * const app = new PIXI.Application();
-  *
-  * // Draw a green rectangle
-  * const rect = new PIXI.Graphics()
-  *     .beginFill(0x00ff00)
-  *     .drawRect(40, 40, 200, 200);
-  *
-  * // Add a blur filter
-  * rect.filters = [new PIXI.filters.BlurFilter()];
-  *
-  * // Display rectangle
-  * app.stage.addChild(rect);
-  * document.body.appendChild(app.view);
-  * @namespace PIXI.filters
-  */
-@JSImport("pixi.js", "filters")
-@js.native
-object filters extends js.Object {
-  /**
-    * Simplest filter - applies alpha.
-    *
-    * Use this instead of Container's alpha property to avoid visual layering of individual elements.
-    * AlphaFilter applies alpha evenly across the entire display object and any opaque elements it contains.
-    * If elements are not opaque, they will blend with each other anyway.
-    *
-    * Very handy if you want to use common features of all filters:
-    *
-    * 1. Assign a blendMode to this filter, blend all elements inside display object with background.
-    *
-    * 2. To use clipping in display coordinates, assign a filterArea to the same container that has this filter.
-    *
-    * @class
-    * @extends PIXI.Filter
-    * @memberof PIXI.filters
-    */
+object filters {
+  
+  @JSImport("pixi.js", "filters")
   @js.native
-  class AlphaFilter ()
-    extends typingsJapgolly.pixiJs.PIXI.filters.AlphaFilter {
-    def this(alpha: Double) = this()
+  val ^ : js.Any = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("pixi.js", "filters.AlphaFilter")
+  @js.native
+  /**
+    * @param alpha - Amount of alpha from 0 to 1, where 0 is transparent
+    */
+  open class AlphaFilter ()
+    extends typingsJapgolly.pixiFilterAlpha.mod.AlphaFilter
+  @JSImport("pixi.js", "filters.AlphaFilter")
+  @js.native
+  def AlphaFilter: Instantiable0[typingsJapgolly.pixiFilterAlpha.mod.AlphaFilter] = js.native
+  inline def AlphaFilter_=(x: Instantiable0[typingsJapgolly.pixiFilterAlpha.mod.AlphaFilter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlphaFilter")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("pixi.js", "filters.BlurFilter")
+  @js.native
+  /**
+    * @param strength - The strength of the blur filter.
+    * @param quality - The quality of the blur filter.
+    * @param [resolution=PIXI.settings.FILTER_RESOLUTION] - The resolution of the blur filter.
+    * @param kernelSize - The kernelSize of the blur filter.Options: 5, 7, 9, 11, 13, 15.
+    */
+  open class BlurFilter ()
+    extends typingsJapgolly.pixiFilterBlur.mod.BlurFilter
+  @JSImport("pixi.js", "filters.BlurFilter")
+  @js.native
+  def BlurFilter: Instantiable0[typingsJapgolly.pixiFilterBlur.mod.BlurFilter] = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("pixi.js", "filters.BlurFilterPass")
+  @js.native
+  open class BlurFilterPass protected ()
+    extends typingsJapgolly.pixiFilterBlur.mod.BlurFilterPass {
+    /**
+      * @param horizontal - Do pass along the x-axis (`true`) or y-axis (`false`).
+      * @param strength - The strength of the blur filter.
+      * @param quality - The quality of the blur filter.
+      * @param resolution - The resolution of the blur filter.
+      * @param kernelSize - The kernelSize of the blur filter.Options: 5, 7, 9, 11, 13, 15.
+      */
+    def this(horizontal: Boolean) = this()
   }
-  
-  /**
-    * The BlurFilter applies a Gaussian blur to an object.
-    *
-    * The strength of the blur can be set for the x-axis and y-axis separately.
-    *
-    * @class
-    * @extends PIXI.Filter
-    * @memberof PIXI.filters
-    */
+  @JSImport("pixi.js", "filters.BlurFilterPass")
   @js.native
-  class BlurFilter ()
-    extends typingsJapgolly.pixiJs.PIXI.filters.BlurFilter {
-    def this(strength: Double) = this()
-    def this(strength: Double, quality: Double) = this()
-    def this(strength: Double, quality: Double, resolution: Double) = this()
-    def this(strength: Double, quality: Double, resolution: Double, kernelSize: Double) = this()
+  def BlurFilterPass: Instantiable1[/* horizontal */ Boolean, typingsJapgolly.pixiFilterBlur.mod.BlurFilterPass] = js.native
+  inline def BlurFilterPass_=(x: Instantiable1[/* horizontal */ Boolean, typingsJapgolly.pixiFilterBlur.mod.BlurFilterPass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BlurFilterPass")(x.asInstanceOf[js.Any])
+  
+  inline def BlurFilter_=(x: Instantiable0[typingsJapgolly.pixiFilterBlur.mod.BlurFilter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BlurFilter")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("pixi.js", "filters.ColorMatrixFilter")
+  @js.native
+  open class ColorMatrixFilter ()
+    extends typingsJapgolly.pixiFilterColorMatrix.mod.ColorMatrixFilter
+  @JSImport("pixi.js", "filters.ColorMatrixFilter")
+  @js.native
+  def ColorMatrixFilter: Instantiable0[typingsJapgolly.pixiFilterColorMatrix.mod.ColorMatrixFilter] = js.native
+  inline def ColorMatrixFilter_=(x: Instantiable0[typingsJapgolly.pixiFilterColorMatrix.mod.ColorMatrixFilter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ColorMatrixFilter")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("pixi.js", "filters.DisplacementFilter")
+  @js.native
+  open class DisplacementFilter protected ()
+    extends typingsJapgolly.pixiFilterDisplacement.mod.DisplacementFilter {
+    /**
+      * @param {PIXI.Sprite} sprite - The sprite used for the displacement map. (make sure its added to the scene!)
+      * @param scale - The scale of the displacement
+      */
+    def this(sprite: ISpriteMaskTarget) = this()
   }
-  
-  /**
-    * The BlurFilterPass applies a horizontal or vertical Gaussian blur to an object.
-    *
-    * @class
-    * @extends PIXI.Filter
-    * @memberof PIXI.filters
-    */
+  @JSImport("pixi.js", "filters.DisplacementFilter")
   @js.native
-  class BlurFilterPass protected ()
-    extends typingsJapgolly.pixiJs.PIXI.filters.BlurFilterPass {
-    def this(horizontal: Boolean, strength: Double, quality: Double, resolution: Double) = this()
-    def this(horizontal: Boolean, strength: Double, quality: Double, resolution: Double, kernelSize: Double) = this()
-  }
+  def DisplacementFilter: Instantiable1[
+    /* sprite */ ISpriteMaskTarget, 
+    typingsJapgolly.pixiFilterDisplacement.mod.DisplacementFilter
+  ] = js.native
+  inline def DisplacementFilter_=(
+    x: Instantiable1[
+      /* sprite */ ISpriteMaskTarget, 
+      typingsJapgolly.pixiFilterDisplacement.mod.DisplacementFilter
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisplacementFilter")(x.asInstanceOf[js.Any])
   
-  /**
-    * The ColorMatrixFilter class lets you apply a 5x4 matrix transformation on the RGBA
-    * color and alpha values of every pixel on your displayObject to produce a result
-    * with a new set of RGBA color and alpha values. It's pretty powerful!
-    *
-    * ```js
-    *  let colorMatrix = new PIXI.filters.ColorMatrixFilter();
-    *  container.filters = [colorMatrix];
-    *  colorMatrix.contrast(2);
-    * ```
-    * @author Clément Chenebault <clement@goodboydigital.com>
-    * @class
-    * @extends PIXI.Filter
-    * @memberof PIXI.filters
-    */
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("pixi.js", "filters.FXAAFilter")
   @js.native
-  class ColorMatrixFilter ()
-    extends typingsJapgolly.pixiJs.PIXI.filters.ColorMatrixFilter
-  
-  /**
-    * The DisplacementFilter class uses the pixel values from the specified texture
-    * (called the displacement map) to perform a displacement of an object.
-    *
-    * You can use this filter to apply all manor of crazy warping effects.
-    * Currently the `r` property of the texture is used to offset the `x`
-    * and the `g` property of the texture is used to offset the `y`.
-    *
-    * The way it works is it uses the values of the displacement map to look up the
-    * correct pixels to output. This means it's not technically moving the original.
-    * Instead, it's starting at the output and asking "which pixel from the original goes here".
-    * For example, if a displacement map pixel has `red = 1` and the filter scale is `20`,
-    * this filter will output the pixel approximately 20 pixels to the right of the original.
-    *
-    * @class
-    * @extends PIXI.Filter
-    * @memberof PIXI.filters
-    */
+  open class FXAAFilter ()
+    extends typingsJapgolly.pixiFilterFxaa.mod.FXAAFilter
+  @JSImport("pixi.js", "filters.FXAAFilter")
   @js.native
-  class DisplacementFilter protected ()
-    extends typingsJapgolly.pixiJs.PIXI.filters.DisplacementFilter {
-    def this(sprite: typingsJapgolly.pixiJs.PIXI.Sprite) = this()
-    def this(sprite: typingsJapgolly.pixiJs.PIXI.Sprite, scale: Double) = this()
-  }
+  def FXAAFilter: Instantiable0[typingsJapgolly.pixiFilterFxaa.mod.FXAAFilter] = js.native
+  inline def FXAAFilter_=(x: Instantiable0[typingsJapgolly.pixiFilterFxaa.mod.FXAAFilter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FXAAFilter")(x.asInstanceOf[js.Any])
   
-  /**
-    * Basic FXAA (Fast Approximate Anti-Aliasing) implementation based on the code on geeks3d.com
-    * with the modification that the texture2DLod stuff was removed since it is unsupported by WebGL.
-    *
-    * @see https://github.com/mitsuhiko/webgl-meincraft
-    *
-    * @class
-    * @extends PIXI.Filter
-    * @memberof PIXI.filters
-    *
-    */
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("pixi.js", "filters.NoiseFilter")
   @js.native
-  class FXAAFilter ()
-    extends typingsJapgolly.pixiJs.PIXI.filters.FXAAFilter
-  
   /**
-    * A Noise effect filter.
-    *
-    * @class
-    * @extends PIXI.Filter
-    * @memberof PIXI.filters
+    * @param {number} [noise=0.5] - The noise intensity, should be a normalized value in the range [0, 1].
+    * @param {number} [seed] - A random seed for the noise generation. Default is `Math.random()`.
     */
+  open class NoiseFilter ()
+    extends typingsJapgolly.pixiFilterNoise.mod.NoiseFilter
+  @JSImport("pixi.js", "filters.NoiseFilter")
   @js.native
-  class NoiseFilter ()
-    extends typingsJapgolly.pixiJs.PIXI.filters.NoiseFilter {
-    def this(noise: Double) = this()
-    def this(noise: Double, seed: Double) = this()
-  }
-  
+  def NoiseFilter: Instantiable0[typingsJapgolly.pixiFilterNoise.mod.NoiseFilter] = js.native
+  inline def NoiseFilter_=(x: Instantiable0[typingsJapgolly.pixiFilterNoise.mod.NoiseFilter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NoiseFilter")(x.asInstanceOf[js.Any])
 }
-

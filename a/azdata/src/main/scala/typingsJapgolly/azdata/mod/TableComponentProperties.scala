@@ -1,65 +1,84 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TableComponentProperties extends ComponentProperties {
+trait TableComponentProperties
+  extends StObject
+     with ComponentProperties {
+  
   var ariaColumnCount: js.UndefOr[Double] = js.undefined
+  
   var ariaRowCount: js.UndefOr[Double] = js.undefined
+  
   var columns: js.Array[String | TableColumn]
-  var data: js.Array[js.Array[_]]
+  
+  var data: js.Array[js.Array[Any]]
+  
   var fontSize: js.UndefOr[Double | String] = js.undefined
+  
   var forceFitColumns: js.UndefOr[ColumnSizingMode] = js.undefined
+  
   var moveFocusOutWithTab: js.UndefOr[Boolean] = js.undefined
+  
   var selectedRows: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var updateCells: js.UndefOr[js.Array[TableCell]] = js.undefined
 }
-
 object TableComponentProperties {
-  @scala.inline
-  def apply(
-    columns: js.Array[String | TableColumn],
-    data: js.Array[js.Array[_]],
-    CSSStyles: StringDictionary[String] = null,
-    ariaColumnCount: Int | Double = null,
-    ariaLabel: String = null,
-    ariaRole: String = null,
-    ariaRowCount: Int | Double = null,
-    ariaSelected: js.UndefOr[Boolean] = js.undefined,
-    display: DisplayType = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    fontSize: Double | String = null,
-    forceFitColumns: ColumnSizingMode = null,
-    height: Double | String = null,
-    moveFocusOutWithTab: js.UndefOr[Boolean] = js.undefined,
-    position: PositionType = null,
-    selectedRows: js.Array[Double] = null,
-    title: String = null,
-    updateCells: js.Array[TableCell] = null,
-    width: Double | String = null
-  ): TableComponentProperties = {
+  
+  inline def apply(columns: js.Array[String | TableColumn], data: js.Array[js.Array[Any]]): TableComponentProperties = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
-    if (CSSStyles != null) __obj.updateDynamic("CSSStyles")(CSSStyles.asInstanceOf[js.Any])
-    if (ariaColumnCount != null) __obj.updateDynamic("ariaColumnCount")(ariaColumnCount.asInstanceOf[js.Any])
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
-    if (ariaRowCount != null) __obj.updateDynamic("ariaRowCount")(ariaRowCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaSelected)) __obj.updateDynamic("ariaSelected")(ariaSelected.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (forceFitColumns != null) __obj.updateDynamic("forceFitColumns")(forceFitColumns.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveFocusOutWithTab)) __obj.updateDynamic("moveFocusOutWithTab")(moveFocusOutWithTab.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (updateCells != null) __obj.updateDynamic("updateCells")(updateCells.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableComponentProperties]
   }
+  
+  extension [Self <: TableComponentProperties](x: Self) {
+    
+    inline def setAriaColumnCount(value: Double): Self = StObject.set(x, "ariaColumnCount", value.asInstanceOf[js.Any])
+    
+    inline def setAriaColumnCountUndefined: Self = StObject.set(x, "ariaColumnCount", js.undefined)
+    
+    inline def setAriaRowCount(value: Double): Self = StObject.set(x, "ariaRowCount", value.asInstanceOf[js.Any])
+    
+    inline def setAriaRowCountUndefined: Self = StObject.set(x, "ariaRowCount", js.undefined)
+    
+    inline def setColumns(value: js.Array[String | TableColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsVarargs(value: (String | TableColumn)*): Self = StObject.set(x, "columns", js.Array(value*))
+    
+    inline def setData(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataVarargs(value: js.Array[Any]*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setFontSize(value: Double | String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setForceFitColumns(value: ColumnSizingMode): Self = StObject.set(x, "forceFitColumns", value.asInstanceOf[js.Any])
+    
+    inline def setForceFitColumnsUndefined: Self = StObject.set(x, "forceFitColumns", js.undefined)
+    
+    inline def setMoveFocusOutWithTab(value: Boolean): Self = StObject.set(x, "moveFocusOutWithTab", value.asInstanceOf[js.Any])
+    
+    inline def setMoveFocusOutWithTabUndefined: Self = StObject.set(x, "moveFocusOutWithTab", js.undefined)
+    
+    inline def setSelectedRows(value: js.Array[Double]): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
+    
+    inline def setSelectedRowsVarargs(value: Double*): Self = StObject.set(x, "selectedRows", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setUpdateCells(value: js.Array[TableCell]): Self = StObject.set(x, "updateCells", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateCellsUndefined: Self = StObject.set(x, "updateCells", js.undefined)
+    
+    inline def setUpdateCellsVarargs(value: TableCell*): Self = StObject.set(x, "updateCells", js.Array(value*))
+  }
 }
-

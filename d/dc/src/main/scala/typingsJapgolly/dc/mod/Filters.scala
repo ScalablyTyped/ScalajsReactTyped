@@ -1,31 +1,39 @@
 package typingsJapgolly.dc.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Filters extends js.Object {
+trait Filters extends StObject {
+  
   def HierarchyFilter(path: String): Filter
+  
   def RangedFilter(low: Double, high: Double): Filter
+  
   def RangedTwoDimensionalFilter(arr: js.Array[js.Array[Double]]): Filter
+  
   def TwoDimensionalFilter(filter: js.Array[Double]): Filter
 }
-
 object Filters {
-  @scala.inline
-  def apply(
-    HierarchyFilter: String => CallbackTo[Filter],
-    RangedFilter: (Double, Double) => CallbackTo[Filter],
-    RangedTwoDimensionalFilter: js.Array[js.Array[Double]] => CallbackTo[Filter],
-    TwoDimensionalFilter: js.Array[Double] => CallbackTo[Filter]
+  
+  inline def apply(
+    HierarchyFilter: String => Filter,
+    RangedFilter: (Double, Double) => Filter,
+    RangedTwoDimensionalFilter: js.Array[js.Array[Double]] => Filter,
+    TwoDimensionalFilter: js.Array[Double] => Filter
   ): Filters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HierarchyFilter")(js.Any.fromFunction1((t0: java.lang.String) => HierarchyFilter(t0).runNow()))
-    __obj.updateDynamic("RangedFilter")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Double) => RangedFilter(t0, t1).runNow()))
-    __obj.updateDynamic("RangedTwoDimensionalFilter")(js.Any.fromFunction1((t0: js.Array[js.Array[scala.Double]]) => RangedTwoDimensionalFilter(t0).runNow()))
-    __obj.updateDynamic("TwoDimensionalFilter")(js.Any.fromFunction1((t0: js.Array[scala.Double]) => TwoDimensionalFilter(t0).runNow()))
+    val __obj = js.Dynamic.literal(HierarchyFilter = js.Any.fromFunction1(HierarchyFilter), RangedFilter = js.Any.fromFunction2(RangedFilter), RangedTwoDimensionalFilter = js.Any.fromFunction1(RangedTwoDimensionalFilter), TwoDimensionalFilter = js.Any.fromFunction1(TwoDimensionalFilter))
     __obj.asInstanceOf[Filters]
   }
+  
+  extension [Self <: Filters](x: Self) {
+    
+    inline def setHierarchyFilter(value: String => Filter): Self = StObject.set(x, "HierarchyFilter", js.Any.fromFunction1(value))
+    
+    inline def setRangedFilter(value: (Double, Double) => Filter): Self = StObject.set(x, "RangedFilter", js.Any.fromFunction2(value))
+    
+    inline def setRangedTwoDimensionalFilter(value: js.Array[js.Array[Double]] => Filter): Self = StObject.set(x, "RangedTwoDimensionalFilter", js.Any.fromFunction1(value))
+    
+    inline def setTwoDimensionalFilter(value: js.Array[Double] => Filter): Self = StObject.set(x, "TwoDimensionalFilter", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,48 +1,56 @@
 package typingsJapgolly.reactBootstrapTypeahead.mod
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.raw.React.Node
-import japgolly.scalajs.react.vdom.VdomNode
-import org.scalajs.dom.raw.HTMLElement
+import japgolly.scalajs.react.facade.React.Node
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OverlayProps extends OverlayTypeaheadProps {
-  var children: js.UndefOr[Node] = js.undefined
+trait OverlayProps
+  extends StObject
+     with OverlayTypeaheadProps {
+  
+  var children: js.UndefOr[js.Function1[/* menuProps */ MenuProps, Node]] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var container: HTMLElement
+  
+  var isMenuShown: js.UndefOr[Boolean] = js.undefined
+  
+  var positionFixed: js.UndefOr[Boolean] = js.undefined
+  
   var referenceElement: js.UndefOr[HTMLElement] = js.undefined
-  var show: js.UndefOr[Boolean] = js.undefined
 }
-
 object OverlayProps {
-  @scala.inline
-  def apply(
-    container: HTMLElement,
-    align: TypeaheadAlign = null,
-    children: VdomNode = null,
-    className: String = null,
-    dropup: js.UndefOr[Boolean] = js.undefined,
-    flip: js.UndefOr[Boolean] = js.undefined,
-    onMenuHide: js.UndefOr[Callback] = js.undefined,
-    onMenuShow: js.UndefOr[Callback] = js.undefined,
-    onMenuToggle: /* show */ Boolean => Callback = null,
-    referenceElement: HTMLElement = null,
-    show: js.UndefOr[Boolean] = js.undefined
-  ): OverlayProps = {
+  
+  inline def apply(container: HTMLElement): OverlayProps = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropup)) __obj.updateDynamic("dropup")(dropup.asInstanceOf[js.Any])
-    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
-    onMenuHide.foreach(p => __obj.updateDynamic("onMenuHide")(p.toJsFn))
-    onMenuShow.foreach(p => __obj.updateDynamic("onMenuShow")(p.toJsFn))
-    if (onMenuToggle != null) __obj.updateDynamic("onMenuToggle")(js.Any.fromFunction1((t0: /* show */ scala.Boolean) => onMenuToggle(t0).runNow()))
-    if (referenceElement != null) __obj.updateDynamic("referenceElement")(referenceElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayProps]
   }
+  
+  extension [Self <: OverlayProps](x: Self) {
+    
+    inline def setChildren(value: /* menuProps */ MenuProps => Node): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setIsMenuShown(value: Boolean): Self = StObject.set(x, "isMenuShown", value.asInstanceOf[js.Any])
+    
+    inline def setIsMenuShownUndefined: Self = StObject.set(x, "isMenuShown", js.undefined)
+    
+    inline def setPositionFixed(value: Boolean): Self = StObject.set(x, "positionFixed", value.asInstanceOf[js.Any])
+    
+    inline def setPositionFixedUndefined: Self = StObject.set(x, "positionFixed", js.undefined)
+    
+    inline def setReferenceElement(value: HTMLElement): Self = StObject.set(x, "referenceElement", value.asInstanceOf[js.Any])
+    
+    inline def setReferenceElementUndefined: Self = StObject.set(x, "referenceElement", js.undefined)
+  }
 }
-

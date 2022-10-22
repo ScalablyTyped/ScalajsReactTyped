@@ -1,33 +1,54 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilterField extends js.Object {
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+trait FilterField extends StObject {
+  
+  var defaultValue: js.UndefOr[Any] = js.undefined
+  
   var editorTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
+  var previewFormat: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object FilterField {
-  @scala.inline
-  def apply(
-    defaultValue: js.Any = null,
-    editorTemplate: String | js.Function = null,
-    label: String = null,
-    name: String = null,
-    `type`: String = null
-  ): FilterField = {
+  
+  inline def apply(): FilterField = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (editorTemplate != null) __obj.updateDynamic("editorTemplate")(editorTemplate.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterField]
   }
+  
+  extension [Self <: FilterField](x: Self) {
+    
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setEditorTemplate(value: String | js.Function): Self = StObject.set(x, "editorTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setEditorTemplateUndefined: Self = StObject.set(x, "editorTemplate", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPreviewFormat(value: String): Self = StObject.set(x, "previewFormat", value.asInstanceOf[js.Any])
+    
+    inline def setPreviewFormatUndefined: Self = StObject.set(x, "previewFormat", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

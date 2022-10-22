@@ -1,100 +1,117 @@
 package typingsJapgolly.officeJsPreview.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EventType extends js.Object
-
+sealed trait EventType extends StObject
 /**
+  * Provides information about the type of a raised event.
   *
-  * Provides information about the type of a raised event. For each object type, please keep the order of: deleted, selection changed, data changed, added.
-  *
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.EventType")
 @js.native
-object EventType extends js.Object {
-  /**
-    *
-    * AnnotationAdded represents the event an annotation has been added to the document.
-    *
-    */
-  @js.native
-  sealed trait annotationAdded extends EventType
+object EventType extends StObject {
   
   /**
-    *
-    * AnnotationAdded represents the event an annotation has been updated in the document.
-    *
+    * Represents that one or more new comments were added to the comment collection.
+    * @remarks
+    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
-  sealed trait annotationChanged extends EventType
+  sealed trait commentAdded
+    extends StObject
+       with EventType
   
   /**
-    *
-    * AnnotationAdded represents the event an annotation has been deleted from the document.
-    *
+    * Represents that a comment or its reply was changed in the comment collection.
+    * @remarks
+    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
-  sealed trait annotationDeleted extends EventType
+  sealed trait commentChanged
+    extends StObject
+       with EventType
   
   /**
-    *
+    * Represents that one or more comments were deleted from the comment collection.
+    * @remarks
+    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  @js.native
+  sealed trait commentDeleted
+    extends StObject
+       with EventType
+  
+  /**
+    * Represents that a comment was deselected in the comment collection.
+    * @remarks
+    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  @js.native
+  sealed trait commentDeselected
+    extends StObject
+       with EventType
+  
+  /**
+    * Represents that a comment was selected in the comment collection.
+    * @remarks
+    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  @js.native
+  sealed trait commentSelected
+    extends StObject
+       with EventType
+  
+  /**
     * ContentControlAdded represents the event a content control has been added to the document.
-    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
-  sealed trait contentControlAdded extends EventType
+  sealed trait contentControlAdded
+    extends StObject
+       with EventType
   
   /**
-    *
     * ContentControlDataChanged represents the event that the data in the content control have been changed.
-    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
-  sealed trait contentControlDataChanged extends EventType
+  sealed trait contentControlDataChanged
+    extends StObject
+       with EventType
   
   /**
-    *
-    * ContentControlDeleted represent the event that the content control has been deleted.
-    *
+    * ContentControlDeleted represents the event that the content control has been deleted.
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
-  sealed trait contentControlDeleted extends EventType
+  sealed trait contentControlDeleted
+    extends StObject
+       with EventType
   
   /**
-    *
     * ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
-    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
-  sealed trait contentControlSelectionChanged extends EventType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[EventType with String] = js.native
-  /* "AnnotationAdded" */ @js.native
-  object annotationAdded extends TopLevel[annotationAdded with String]
-  
-  /* "AnnotationChanged" */ @js.native
-  object annotationChanged extends TopLevel[annotationChanged with String]
-  
-  /* "AnnotationDeleted" */ @js.native
-  object annotationDeleted extends TopLevel[annotationDeleted with String]
-  
-  /* "ContentControlAdded" */ @js.native
-  object contentControlAdded extends TopLevel[contentControlAdded with String]
-  
-  /* "ContentControlDataChanged" */ @js.native
-  object contentControlDataChanged extends TopLevel[contentControlDataChanged with String]
-  
-  /* "ContentControlDeleted" */ @js.native
-  object contentControlDeleted extends TopLevel[contentControlDeleted with String]
-  
-  /* "ContentControlSelectionChanged" */ @js.native
-  object contentControlSelectionChanged extends TopLevel[contentControlSelectionChanged with String]
-  
+  sealed trait contentControlSelectionChanged
+    extends StObject
+       with EventType
 }
-

@@ -1,10 +1,11 @@
 package typingsJapgolly.msRestAzure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MSIOptions extends js.Object {
+trait MSIOptions extends StObject {
+  
   /**
     * @prop {string} [resource] -  The resource uri or token audience for which the token is needed.
     * For e.g. it can be:
@@ -13,13 +14,17 @@ trait MSIOptions extends js.Object {
     */
   var resource: js.UndefOr[String] = js.undefined
 }
-
 object MSIOptions {
-  @scala.inline
-  def apply(resource: String = null): MSIOptions = {
+  
+  inline def apply(): MSIOptions = {
     val __obj = js.Dynamic.literal()
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSIOptions]
   }
+  
+  extension [Self <: MSIOptions](x: Self) {
+    
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+  }
 }
-

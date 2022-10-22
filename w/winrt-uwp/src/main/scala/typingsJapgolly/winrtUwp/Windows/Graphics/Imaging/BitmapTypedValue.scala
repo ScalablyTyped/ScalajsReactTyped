@@ -1,23 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Graphics.Imaging
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.PropertyType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A value along with an enumeration specifying its data type. */
-@JSGlobal("Windows.Graphics.Imaging.BitmapTypedValue")
-@js.native
-class BitmapTypedValue protected () extends js.Object {
-  /**
-    * Creates a new BitmapTypedValue object.
-    * @param value The value to store.
-    * @param type The type of the value parameter.
-    */
-  def this(value: js.Any, `type`: PropertyType) = this()
+trait BitmapTypedValue extends StObject {
+  
   /** Gets the PropertyType of the stored value. */
-  var `type`: PropertyType = js.native
+  var `type`: PropertyType
+  
   /** Gets the stored value. */
-  var value: js.Any = js.native
+  var value: Any
 }
-
+object BitmapTypedValue {
+  
+  inline def apply(`type`: PropertyType, value: Any): BitmapTypedValue = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BitmapTypedValue]
+  }
+  
+  extension [Self <: BitmapTypedValue](x: Self) {
+    
+    inline def setType(value: PropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
+}

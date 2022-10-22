@@ -1,13 +1,12 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Float64Attribute")
 @js.native
-class Float64Attribute protected ()
-  extends typingsJapgolly.three.bufferAttributeMod.Float64Attribute {
-  def this(array: js.Any, itemSize: Double) = this()
+open class Float64Attribute protected ()
+  extends typingsJapgolly.three.srcThreeMod.Float64Attribute {
+  def this(array: Any, itemSize: Double) = this()
 }
-

@@ -1,29 +1,41 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCOfferOptions extends RTCOfferAnswerOptions {
+trait RTCOfferOptions
+  extends StObject
+     with RTCOfferAnswerOptions {
+  
+  /* standard dom */
   var iceRestart: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var offerToReceiveAudio: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var offerToReceiveVideo: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object RTCOfferOptions {
-  @scala.inline
-  def apply(
-    iceRestart: js.UndefOr[scala.Boolean] = js.undefined,
-    offerToReceiveAudio: js.UndefOr[scala.Boolean] = js.undefined,
-    offerToReceiveVideo: js.UndefOr[scala.Boolean] = js.undefined,
-    voiceActivityDetection: js.UndefOr[scala.Boolean] = js.undefined
-  ): RTCOfferOptions = {
+  
+  inline def apply(): RTCOfferOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(iceRestart)) __obj.updateDynamic("iceRestart")(iceRestart.asInstanceOf[js.Any])
-    if (!js.isUndefined(offerToReceiveAudio)) __obj.updateDynamic("offerToReceiveAudio")(offerToReceiveAudio.asInstanceOf[js.Any])
-    if (!js.isUndefined(offerToReceiveVideo)) __obj.updateDynamic("offerToReceiveVideo")(offerToReceiveVideo.asInstanceOf[js.Any])
-    if (!js.isUndefined(voiceActivityDetection)) __obj.updateDynamic("voiceActivityDetection")(voiceActivityDetection.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCOfferOptions]
   }
+  
+  extension [Self <: RTCOfferOptions](x: Self) {
+    
+    inline def setIceRestart(value: scala.Boolean): Self = StObject.set(x, "iceRestart", value.asInstanceOf[js.Any])
+    
+    inline def setIceRestartUndefined: Self = StObject.set(x, "iceRestart", js.undefined)
+    
+    inline def setOfferToReceiveAudio(value: scala.Boolean): Self = StObject.set(x, "offerToReceiveAudio", value.asInstanceOf[js.Any])
+    
+    inline def setOfferToReceiveAudioUndefined: Self = StObject.set(x, "offerToReceiveAudio", js.undefined)
+    
+    inline def setOfferToReceiveVideo(value: scala.Boolean): Self = StObject.set(x, "offerToReceiveVideo", value.asInstanceOf[js.Any])
+    
+    inline def setOfferToReceiveVideoUndefined: Self = StObject.set(x, "offerToReceiveVideo", js.undefined)
+  }
 }
-

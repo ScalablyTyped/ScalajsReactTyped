@@ -1,18 +1,22 @@
 package typingsJapgolly.evernote.mod.Types
 
-import typingsJapgolly.evernote.AnonNoteSizeMax
+import typingsJapgolly.evernote.anon.NoteSizeMax
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Types.NoteLimits")
 @js.native
-class NoteLimits () extends js.Object {
-  def this(args: AnonNoteSizeMax) = this()
+open class NoteLimits () extends StObject {
+  def this(args: NoteSizeMax) = this()
+  
   var noteResourceCountMax: js.UndefOr[Double] = js.native
+  
   var noteSizeMax: js.UndefOr[Double] = js.native
+  
   var resourceSizeMax: js.UndefOr[Double] = js.native
+  
   var uploadLimit: js.UndefOr[Double] = js.native
+  
   var uploaded: js.UndefOr[Double] = js.native
 }
-

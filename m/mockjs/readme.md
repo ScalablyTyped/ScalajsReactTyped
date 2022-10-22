@@ -10,10 +10,10 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | mockjs |
 | Keywords           | mock, mockJSON, mockAjax |
-| # releases         | 2 |
-| # dependents       | 542 |
-| # downloads        | 1284019 |
-| # stars            | 19 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 292958.3333333333 |
+| # stars            | 18116.0 |
 
 ## Links
 - [Homepage](http://mockjs.com/)

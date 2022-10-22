@@ -1,11 +1,9 @@
 package typingsJapgolly.suitescript
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjSearchColumn used for column objects used to define search return columns.
@@ -19,22 +17,8 @@ import scala.scalajs.js.annotation._
   *
   * @since 2007.0
   */
-@JSGlobal("nlobjSearchColumn")
-@js.native
-class nlobjSearchColumn protected ()
-  extends /**
-  *
-  * @param name
-  * @param join
-  * @param summary
-  * @return
-  */
-Instantiable1[/* name */ String, nlobjSearchColumn]
-     with Instantiable2[/* name */ String, /* join */ String, nlobjSearchColumn]
-     with Instantiable3[/* name */ String, /* join */ String, /* summary */ String, nlobjSearchColumn] {
-  def this(name: String) = this()
-  def this(name: String, join: String) = this()
-  def this(name: String, join: String, summary: String) = this()
+trait nlobjSearchColumn extends StObject {
+  
   /**
     * return formula for this search column.
     * @return {string}
@@ -45,7 +29,8 @@ Instantiable1[/* name */ String, nlobjSearchColumn]
     * @since 2009.2
     * @return
     */
-  def getFormula(): String = js.native
+  def getFormula(): String
+  
   /**
     * return the join id for this search column.
     * @return {string}
@@ -55,7 +40,8 @@ Instantiable1[/* name */ String, nlobjSearchColumn]
     * @since 2008.1
     * @return
     */
-  def getJoin(): String = js.native
+  def getJoin(): String
+  
   /**
     * return the label of this search column.
     * @return {string}
@@ -66,7 +52,8 @@ Instantiable1[/* name */ String, nlobjSearchColumn]
     * @since 2009.1
     * @return
     */
-  def getLabel(): String = js.native
+  def getLabel(): String
+  
   /**
     * return the name of this search column.
     * @return {string}
@@ -76,7 +63,8 @@ Instantiable1[/* name */ String, nlobjSearchColumn]
     * @since 2008.1
     * @return
     */
-  def getName(): String = js.native
+  def getName(): String
+  
   /**
     * return the summary type (avg,group,sum,count) of this search column.
     * @return {string}
@@ -86,8 +74,10 @@ Instantiable1[/* name */ String, nlobjSearchColumn]
     * @since 2008.1
     * @return
     */
-  def getSummary(): String = js.native
-  def setLabel(label: String): nlobjSearchColumn = js.native
+  def getSummary(): String
+  
+  def setLabel(label: String): nlobjSearchColumn
+  
   /**
     * return nlobjSearchColumn sorted in either ascending or descending order.
     * @return {nlobjSearchColumn}
@@ -100,6 +90,37 @@ Instantiable1[/* name */ String, nlobjSearchColumn]
     * @param order
     * @return
     */
-  def setSort(order: js.Any): js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit] = js.native
+  def setSort(order: Any): js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]
 }
-
+object nlobjSearchColumn {
+  
+  inline def apply(
+    getFormula: CallbackTo[String],
+    getJoin: CallbackTo[String],
+    getLabel: CallbackTo[String],
+    getName: CallbackTo[String],
+    getSummary: CallbackTo[String],
+    setLabel: String => nlobjSearchColumn,
+    setSort: Any => js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]
+  ): nlobjSearchColumn = {
+    val __obj = js.Dynamic.literal(getFormula = getFormula.toJsFn, getJoin = getJoin.toJsFn, getLabel = getLabel.toJsFn, getName = getName.toJsFn, getSummary = getSummary.toJsFn, setLabel = js.Any.fromFunction1(setLabel), setSort = js.Any.fromFunction1(setSort))
+    __obj.asInstanceOf[nlobjSearchColumn]
+  }
+  
+  extension [Self <: nlobjSearchColumn](x: Self) {
+    
+    inline def setGetFormula(value: CallbackTo[String]): Self = StObject.set(x, "getFormula", value.toJsFn)
+    
+    inline def setGetJoin(value: CallbackTo[String]): Self = StObject.set(x, "getJoin", value.toJsFn)
+    
+    inline def setGetLabel(value: CallbackTo[String]): Self = StObject.set(x, "getLabel", value.toJsFn)
+    
+    inline def setGetName(value: CallbackTo[String]): Self = StObject.set(x, "getName", value.toJsFn)
+    
+    inline def setGetSummary(value: CallbackTo[String]): Self = StObject.set(x, "getSummary", value.toJsFn)
+    
+    inline def setSetLabel(value: String => nlobjSearchColumn): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+    
+    inline def setSetSort(value: Any => js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]): Self = StObject.set(x, "setSort", js.Any.fromFunction1(value))
+  }
+}

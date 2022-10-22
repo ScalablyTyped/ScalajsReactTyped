@@ -1,21 +1,24 @@
 package typingsJapgolly.baiduApp.swan
 
-import typingsJapgolly.baiduApp.AnonX
+import typingsJapgolly.baiduApp.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TouchEvent[T /* <: TouchEventType */] extends BaseEvent[T, AnonX] {
+trait TouchEvent[T /* <: TouchEventType */]
+  extends StObject
+     with BaseEvent[T, X] {
+  
   var changedTouches: js.Array[Touch]
+  
   var touches: js.Array[Touch]
 }
-
 object TouchEvent {
-  @scala.inline
-  def apply[T /* <: TouchEventType */](
+  
+  inline def apply[T /* <: TouchEventType */](
     changedTouches: js.Array[Touch],
     currentTarget: EventTarget,
-    detail: AnonX,
+    detail: X,
     target: EventTarget,
     timeStamp: Double,
     touches: js.Array[Touch],
@@ -25,5 +28,15 @@ object TouchEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchEvent[T]]
   }
+  
+  extension [Self <: TouchEvent[?], T /* <: TouchEventType */](x: Self & TouchEvent[T]) {
+    
+    inline def setChangedTouches(value: js.Array[Touch]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+    
+    inline def setChangedTouchesVarargs(value: Touch*): Self = StObject.set(x, "changedTouches", js.Array(value*))
+    
+    inline def setTouches(value: js.Array[Touch]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+    
+    inline def setTouchesVarargs(value: Touch*): Self = StObject.set(x, "touches", js.Array(value*))
+  }
 }
-

@@ -1,24 +1,30 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RsaHashedKeyGenParams extends RsaKeyGenParams {
+trait RsaHashedKeyGenParams
+  extends StObject
+     with RsaKeyGenParams {
+  
+  /* standard dom */
   var hash: HashAlgorithmIdentifier
 }
-
 object RsaHashedKeyGenParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     hash: HashAlgorithmIdentifier,
     modulusLength: Double,
     name: java.lang.String,
-    publicExponent: scala.scalajs.js.typedarray.Uint8Array
+    publicExponent: js.typedarray.Uint8Array
   ): RsaHashedKeyGenParams = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], modulusLength = modulusLength.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], publicExponent = publicExponent.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[RsaHashedKeyGenParams]
   }
+  
+  extension [Self <: RsaHashedKeyGenParams](x: Self) {
+    
+    inline def setHash(value: HashAlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+  }
 }
-

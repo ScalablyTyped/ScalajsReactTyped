@@ -1,21 +1,36 @@
 package typingsJapgolly.momentMini.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StandaloneFormatSpec extends js.Object {
+trait StandaloneFormatSpec extends StObject {
+  
   var format: js.Array[String]
+  
   var isFormat: js.UndefOr[js.RegExp] = js.undefined
+  
   var standalone: js.Array[String]
 }
-
 object StandaloneFormatSpec {
-  @scala.inline
-  def apply(format: js.Array[String], standalone: js.Array[String], isFormat: js.RegExp = null): StandaloneFormatSpec = {
+  
+  inline def apply(format: js.Array[String], standalone: js.Array[String]): StandaloneFormatSpec = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], standalone = standalone.asInstanceOf[js.Any])
-    if (isFormat != null) __obj.updateDynamic("isFormat")(isFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[StandaloneFormatSpec]
   }
+  
+  extension [Self <: StandaloneFormatSpec](x: Self) {
+    
+    inline def setFormat(value: js.Array[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatVarargs(value: String*): Self = StObject.set(x, "format", js.Array(value*))
+    
+    inline def setIsFormat(value: js.RegExp): Self = StObject.set(x, "isFormat", value.asInstanceOf[js.Any])
+    
+    inline def setIsFormatUndefined: Self = StObject.set(x, "isFormat", js.undefined)
+    
+    inline def setStandalone(value: js.Array[String]): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+    
+    inline def setStandaloneVarargs(value: String*): Self = StObject.set(x, "standalone", js.Array(value*))
+  }
 }
-

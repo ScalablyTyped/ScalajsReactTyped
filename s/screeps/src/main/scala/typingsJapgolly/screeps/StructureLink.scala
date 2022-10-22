@@ -1,36 +1,42 @@
 package typingsJapgolly.screeps
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.screeps.anon.StoreRESOURCEENERGYfalse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Remotely transfers energy to another Link in the same room.
   */
 @js.native
 trait StructureLink
-  extends OwnedStructure[STRUCTURE_LINK]
+  extends StObject
+     with OwnedStructure[STRUCTURE_LINK]
      with AnyOwnedStructure
      with AnyStoreStructure {
+  
   /**
     * The amount of game ticks the link has to wait until the next transfer is possible.
     */
   var cooldown: Double = js.native
+  
   /**
     * The amount of energy containing in the link.
     * @deprecated An alias for .store[RESOURCE_ENERGY].
     */
   var energy: Double = js.native
+  
   /**
     * The total amount of energy the link can contain.
     * @deprecated An alias for .store.getCapacity(RESOURCE_ENERGY).
     */
   var energyCapacity: Double = js.native
+  
   /**
     * A Store object that contains cargo of this structure.
     */
   var store: StoreRESOURCEENERGYfalse = js.native
+  
   /**
     * Transfer energy from the link to another link or a creep.
     *
@@ -47,8 +53,3 @@ trait StructureLink
   def transferEnergy(target: StructureLink): ScreepsReturnCode = js.native
   def transferEnergy(target: StructureLink, amount: Double): ScreepsReturnCode = js.native
 }
-
-@JSGlobal("StructureLink")
-@js.native
-object StructureLink extends TopLevel[StructureLinkConstructor]
-

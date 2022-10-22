@@ -1,8 +1,8 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 购买IAP商品对象
@@ -10,13 +10,15 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
   */
-trait PlusPaymentIAPProductInfo extends js.Object {
+trait PlusPaymentIAPProductInfo extends StObject {
+  
   /**
     * 商品的标识
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   var productIdentifier: js.UndefOr[String] = js.undefined
+  
   /**
     * 商品的数量
     * 
@@ -24,14 +26,21 @@ trait PlusPaymentIAPProductInfo extends js.Object {
     */
   var quantity: js.UndefOr[String] = js.undefined
 }
-
 object PlusPaymentIAPProductInfo {
-  @scala.inline
-  def apply(productIdentifier: String = null, quantity: String = null): PlusPaymentIAPProductInfo = {
+  
+  inline def apply(): PlusPaymentIAPProductInfo = {
     val __obj = js.Dynamic.literal()
-    if (productIdentifier != null) __obj.updateDynamic("productIdentifier")(productIdentifier.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusPaymentIAPProductInfo]
   }
+  
+  extension [Self <: PlusPaymentIAPProductInfo](x: Self) {
+    
+    inline def setProductIdentifier(value: String): Self = StObject.set(x, "productIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setProductIdentifierUndefined: Self = StObject.set(x, "productIdentifier", js.undefined)
+    
+    inline def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+  }
 }
-

@@ -11,9 +11,9 @@ A set of utilities to transform strings
 | Full name          | @ember/string |
 | Keywords           | ember-addon |
 | # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 10700 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 202350.66666666666 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/emberjs/ember-string#readme)

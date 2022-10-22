@@ -2,17 +2,20 @@ package typingsJapgolly.surveyKnockout.mod
 
 import typingsJapgolly.surveyKnockout.surveyKnockoutStrings.`survey-panel`
 import typingsJapgolly.surveyKnockout.surveyKnockoutStrings.`survey-question`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "QuestionRow")
 @js.native
-class QuestionRow protected () extends QuestionRowModel {
-  def this(panel: PanelModelBase) = this()
-  var koElementAfterRender: js.Any = js.native
-  var koGetType: js.Any = js.native
-  def getElementType(el: js.Any): `survey-panel` | `survey-question` = js.native
-  def koAfterRender(el: js.Any, con: js.Any): Unit = js.native
+open class QuestionRow protected () extends QuestionRowModel {
+  def this(panel: Any) = this()
+  
+  def getElementType(el: Any): `survey-panel` | `survey-question` = js.native
+  
+  def koAfterRender(el: Any, con: Any): Unit = js.native
+  
+  var koElementAfterRender: Any = js.native
+  
+  def rowAfterRender(elements: Any, model: QuestionRow): Unit = js.native
 }
-

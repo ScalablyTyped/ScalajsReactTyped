@@ -1,21 +1,26 @@
 package typingsJapgolly.mfiles
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IAccessControlLists extends js.Object {
+trait IAccessControlLists extends StObject {
+  
   val Count: Double
+  
   def Item(Index: Double): IAccessControlList
 }
-
 object IAccessControlLists {
-  @scala.inline
-  def apply(Count: Double, Item: Double => CallbackTo[IAccessControlList]): IAccessControlLists = {
-    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any])
-    __obj.updateDynamic("Item")(js.Any.fromFunction1((t0: scala.Double) => Item(t0).runNow()))
+  
+  inline def apply(Count: Double, Item: Double => IAccessControlList): IAccessControlLists = {
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[IAccessControlLists]
   }
+  
+  extension [Self <: IAccessControlLists](x: Self) {
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    
+    inline def setItem(value: Double => IAccessControlList): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,24 +1,22 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.pan
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.rotate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationToggleViewModelProperties extends js.Object {
+trait NavigationToggleViewModelProperties extends StObject {
+  
   /**
-    * The navigation mode of the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#view). See the table below for a list of possible values.
-    *
-    * Possible Value | Description
-    * ---------------|-------------
-    * pan | The mouse drag gesture pans the view. Right-click + drag allows the user to perform a 3D rotate around the center of the view.
-    * rotate | The mouse drag gesture performs a 3D rotate around the center of the view and the right-click + drag gesture pans the view.
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#navigationMode)
+    * The navigation mode of the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#view).
     *
     * @default pan
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#navigationMode)
     */
-  var navigationMode: js.UndefOr[String] = js.undefined
+  var navigationMode: js.UndefOr[pan | rotate] = js.undefined
+  
   /**
     * The view associated with the widget.
     *
@@ -26,14 +24,21 @@ trait NavigationToggleViewModelProperties extends js.Object {
     */
   var view: js.UndefOr[SceneViewProperties] = js.undefined
 }
-
 object NavigationToggleViewModelProperties {
-  @scala.inline
-  def apply(navigationMode: String = null, view: SceneViewProperties = null): NavigationToggleViewModelProperties = {
+  
+  inline def apply(): NavigationToggleViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (navigationMode != null) __obj.updateDynamic("navigationMode")(navigationMode.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationToggleViewModelProperties]
   }
+  
+  extension [Self <: NavigationToggleViewModelProperties](x: Self) {
+    
+    inline def setNavigationMode(value: pan | rotate): Self = StObject.set(x, "navigationMode", value.asInstanceOf[js.Any])
+    
+    inline def setNavigationModeUndefined: Self = StObject.set(x, "navigationMode", js.undefined)
+    
+    inline def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

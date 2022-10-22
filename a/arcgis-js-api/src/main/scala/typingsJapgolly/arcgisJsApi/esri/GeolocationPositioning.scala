@@ -1,41 +1,45 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeolocationPositioning extends js.Object {
+trait GeolocationPositioning extends StObject {
+  
   /**
-    * The HTML5 Geolocation Position options for locating. Refer to [Geolocation API Specification](http://www.w3.org/TR/geolocation-API/#position-options) for details.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#geolocationOptions)
+    * The HTML5 Geolocation Position options for locating.
     *
     * @default { maximumAge: 0, timeout: 15000, enableHighAccuracy: true }
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#geolocationOptions)
     */
-  var geolocationOptions: js.Any
+  var geolocationOptions: Any
+  
   /**
     * Indicates whether to navigate the view to the position and scale of the geolocated result.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#goToLocationEnabled)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#goToLocationEnabled)
     */
   var goToLocationEnabled: Boolean
+  
   /**
     * The graphic used to show the user's location on the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#graphic)
     */
   var graphic: Graphic
+  
   /**
-    * The scale to set on the view when navigating to the position of the geolocated result. If a scale value is not explicitly set, then the view will navigate to a default scale of `2500`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#scale)
+    * The scale to set on the view when navigating to the position of the geolocated result.
     *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#scale)
     */
   var scale: Double
+  
   /**
     * The view associated with the widget.
     *
@@ -43,8 +47,29 @@ trait GeolocationPositioning extends js.Object {
     */
   var view: MapView | SceneView
 }
-
-@JSGlobal("__esri.GeolocationPositioning")
-@js.native
-object GeolocationPositioning extends TopLevel[GeolocationPositioningConstructor]
-
+object GeolocationPositioning {
+  
+  inline def apply(
+    geolocationOptions: Any,
+    goToLocationEnabled: Boolean,
+    graphic: Graphic,
+    scale: Double,
+    view: MapView | SceneView
+  ): GeolocationPositioning = {
+    val __obj = js.Dynamic.literal(geolocationOptions = geolocationOptions.asInstanceOf[js.Any], goToLocationEnabled = goToLocationEnabled.asInstanceOf[js.Any], graphic = graphic.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeolocationPositioning]
+  }
+  
+  extension [Self <: GeolocationPositioning](x: Self) {
+    
+    inline def setGeolocationOptions(value: Any): Self = StObject.set(x, "geolocationOptions", value.asInstanceOf[js.Any])
+    
+    inline def setGoToLocationEnabled(value: Boolean): Self = StObject.set(x, "goToLocationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
+    
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setView(value: MapView | SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+  }
+}

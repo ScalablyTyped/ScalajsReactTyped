@@ -1,42 +1,38 @@
 package typingsJapgolly.remarkable.libMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.remarkable.remarkableNumbers.`1`
-  - typingsJapgolly.remarkable.remarkableNumbers.`2`
-  - typingsJapgolly.remarkable.remarkableNumbers.`3`
-  - typingsJapgolly.remarkable.remarkableNumbers.`4`
-  - typingsJapgolly.remarkable.remarkableNumbers.`5`
-  - typingsJapgolly.remarkable.remarkableNumbers.`6`
-  - typingsJapgolly.remarkable.remarkableNumbers.`7`
-  - typingsJapgolly.remarkable.remarkableNumbers.`8`
-  - typingsJapgolly.remarkable.remarkableNumbers.`9`
+  - typingsJapgolly.remarkable.remarkableInts.`1`
+  - typingsJapgolly.remarkable.remarkableInts.`2`
+  - typingsJapgolly.remarkable.remarkableInts.`3`
+  - typingsJapgolly.remarkable.remarkableInts.`4`
+  - typingsJapgolly.remarkable.remarkableInts.`5`
+  - typingsJapgolly.remarkable.remarkableInts.`6`
+  - typingsJapgolly.remarkable.remarkableInts.`7`
+  - typingsJapgolly.remarkable.remarkableInts.`8`
+  - typingsJapgolly.remarkable.remarkableInts.`9`
 */
-trait HeadingValue extends js.Object
-
+trait HeadingValue extends StObject
 object HeadingValue {
-  @scala.inline
-  def `1`: typingsJapgolly.remarkable.remarkableNumbers.`1` = this.cast(1)
-  @scala.inline
-  def `2`: typingsJapgolly.remarkable.remarkableNumbers.`2` = this.cast(2)
-  @scala.inline
-  def `3`: typingsJapgolly.remarkable.remarkableNumbers.`3` = this.cast(3)
-  @scala.inline
-  def `4`: typingsJapgolly.remarkable.remarkableNumbers.`4` = this.cast(4)
-  @scala.inline
-  def `5`: typingsJapgolly.remarkable.remarkableNumbers.`5` = this.cast(5)
-  @scala.inline
-  def `6`: typingsJapgolly.remarkable.remarkableNumbers.`6` = this.cast(6)
-  @scala.inline
-  def `7`: typingsJapgolly.remarkable.remarkableNumbers.`7` = this.cast(7)
-  @scala.inline
-  def `8`: typingsJapgolly.remarkable.remarkableNumbers.`8` = this.cast(8)
-  @scala.inline
-  def `9`: typingsJapgolly.remarkable.remarkableNumbers.`9` = this.cast(9)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `1`: typingsJapgolly.remarkable.remarkableInts.`1` = 1.asInstanceOf[typingsJapgolly.remarkable.remarkableInts.`1`]
+  
+  inline def `2`: typingsJapgolly.remarkable.remarkableInts.`2` = 2.asInstanceOf[typingsJapgolly.remarkable.remarkableInts.`2`]
+  
+  inline def `3`: typingsJapgolly.remarkable.remarkableInts.`3` = 3.asInstanceOf[typingsJapgolly.remarkable.remarkableInts.`3`]
+  
+  inline def `4`: typingsJapgolly.remarkable.remarkableInts.`4` = 4.asInstanceOf[typingsJapgolly.remarkable.remarkableInts.`4`]
+  
+  inline def `5`: typingsJapgolly.remarkable.remarkableInts.`5` = 5.asInstanceOf[typingsJapgolly.remarkable.remarkableInts.`5`]
+  
+  inline def `6`: typingsJapgolly.remarkable.remarkableInts.`6` = 6.asInstanceOf[typingsJapgolly.remarkable.remarkableInts.`6`]
+  
+  inline def `7`: typingsJapgolly.remarkable.remarkableInts.`7` = 7.asInstanceOf[typingsJapgolly.remarkable.remarkableInts.`7`]
+  
+  inline def `8`: typingsJapgolly.remarkable.remarkableInts.`8` = 8.asInstanceOf[typingsJapgolly.remarkable.remarkableInts.`8`]
+  
+  inline def `9`: typingsJapgolly.remarkable.remarkableInts.`9` = 9.asInstanceOf[typingsJapgolly.remarkable.remarkableInts.`9`]
 }
-

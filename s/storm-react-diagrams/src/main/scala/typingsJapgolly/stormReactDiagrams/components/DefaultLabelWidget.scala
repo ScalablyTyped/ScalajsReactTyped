@@ -1,48 +1,34 @@
 package typingsJapgolly.stormReactDiagrams.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.stormReactDiagrams.defaultLabelModelMod.DefaultLabelModel
-import typingsJapgolly.stormReactDiagrams.defaultLabelWidgetMod.DefaultLabelWidgetProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.stormReactDiagrams.distSrcDefaultsModelsDefaultLabelModelMod.DefaultLabelModel
+import typingsJapgolly.stormReactDiagrams.distSrcDefaultsWidgetsDefaultLabelWidgetMod.DefaultLabelWidgetProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DefaultLabelWidget {
-  def apply(
-    model: DefaultLabelModel,
-    baseClass: String = null,
-    className: String = null,
-    extraProps: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    DefaultLabelWidgetProps, 
-    typingsJapgolly.stormReactDiagrams.mod.DefaultLabelWidget, 
-    Unit, 
-    DefaultLabelWidgetProps
-  ] = {
-    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
   
-      if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.stormReactDiagrams.defaultLabelWidgetMod.DefaultLabelWidgetProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.stormReactDiagrams.mod.DefaultLabelWidget](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.stormReactDiagrams.defaultLabelWidgetMod.DefaultLabelWidgetProps])(children: _*)
+  inline def apply(model: DefaultLabelModel): Builder = {
+    val __props = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[DefaultLabelWidgetProps]))
   }
+  
   @JSImport("storm-react-diagrams", "DefaultLabelWidget")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.stormReactDiagrams.mod.DefaultLabelWidget] {
+    
+    inline def baseClass(value: String): this.type = set("baseClass", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def extraProps(value: Any): this.type = set("extraProps", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: DefaultLabelWidgetProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

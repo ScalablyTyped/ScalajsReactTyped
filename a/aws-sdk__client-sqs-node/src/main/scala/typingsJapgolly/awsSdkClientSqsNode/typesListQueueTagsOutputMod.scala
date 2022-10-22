@@ -1,27 +1,43 @@
 package typingsJapgolly.awsSdkClientSqsNode
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.awsSdkClientSqsNode.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientSqsNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/types/ListQueueTagsOutput", JSImport.Namespace)
-@js.native
-object typesListQueueTagsOutputMod extends js.Object {
-  @js.native
-  trait ListQueueTagsOutput extends OutputTypesUnion {
+object typesListQueueTagsOutputMod {
+  
+  trait ListQueueTagsOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>The list of all tags added to the specified queue.</p>
       */
-    var Tags: js.UndefOr[StringDictionary[String]] = js.native
+    var Tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
-  
+  object ListQueueTagsOutput {
+    
+    inline def apply($metadata: ResponseMetadata): ListQueueTagsOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ListQueueTagsOutput]
+    }
+    
+    extension [Self <: ListQueueTagsOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      
+      inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    }
+  }
 }
-

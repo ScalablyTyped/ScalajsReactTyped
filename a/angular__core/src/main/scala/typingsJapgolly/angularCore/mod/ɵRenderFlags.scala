@@ -1,23 +1,19 @@
 package typingsJapgolly.angularCore.mod
 
-import typingsJapgolly.angularCore.angularCoreNumbers.`1`
-import typingsJapgolly.angularCore.angularCoreNumbers.`2`
+import typingsJapgolly.angularCore.angularCoreInts.`1`
+import typingsJapgolly.angularCore.angularCoreInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.angularCore.angularCoreNumbers.`1`
-  - typingsJapgolly.angularCore.angularCoreNumbers.`2`
+  - typingsJapgolly.angularCore.angularCoreInts.`1`
+  - typingsJapgolly.angularCore.angularCoreInts.`2`
 */
-trait ɵRenderFlags extends js.Object
-
+trait ɵRenderFlags extends StObject
 object ɵRenderFlags {
-  @scala.inline
-  def Create: `1` = this.cast(1)
-  @scala.inline
-  def Update: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Create: `1` = 1.asInstanceOf[`1`]
+  
+  inline def Update: `2` = 2.asInstanceOf[`2`]
 }
-

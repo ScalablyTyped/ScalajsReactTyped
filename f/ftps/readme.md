@@ -11,9 +11,9 @@ FTP, FTPS and SFTP client for node.js, mainly a lftp wrapper.
 | Full name          | ftps |
 | Keywords           | ftp, ftps, sftp, node-ftp, node-sftp, node-ftps, lftp |
 | # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 177475 |
-| # stars            | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 173626.0 |
+| # stars            | 191.0 |
 
 ## Links
 - [Homepage](https://github.com/Atinux/node-ftps#readme)

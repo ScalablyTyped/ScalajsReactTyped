@@ -1,24 +1,23 @@
 package typingsJapgolly.winrt.Windows.UI.Notifications
 
 import typingsJapgolly.winrt.Windows.Data.Xml.Dom.XmlDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Notifications.ScheduledToastNotification")
-@js.native
-class ScheduledToastNotification protected () extends IScheduledToastNotification {
-  def this(content: XmlDocument, deliveryTime: js.Date) = this()
-  def this(content: XmlDocument, deliveryTime: js.Date, snoozeInterval: Double, maximumSnoozeCount: Double) = this()
-  /* CompleteClass */
-  override var content: XmlDocument = js.native
-  /* CompleteClass */
-  override var deliveryTime: js.Date = js.native
-  /* CompleteClass */
-  override var id: String = js.native
-  /* CompleteClass */
-  override var maximumSnoozeCount: Double = js.native
-  /* CompleteClass */
-  override var snoozeInterval: Double = js.native
+trait ScheduledToastNotification
+  extends StObject
+     with IScheduledToastNotification
+object ScheduledToastNotification {
+  
+  inline def apply(
+    content: XmlDocument,
+    deliveryTime: js.Date,
+    id: String,
+    maximumSnoozeCount: Double,
+    snoozeInterval: Double
+  ): ScheduledToastNotification = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], deliveryTime = deliveryTime.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], maximumSnoozeCount = maximumSnoozeCount.asInstanceOf[js.Any], snoozeInterval = snoozeInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScheduledToastNotification]
+  }
 }
-

@@ -1,11 +1,8 @@
 package typingsJapgolly.esquery.mod
 
-import typingsJapgolly.esquery.esqueryStrings.compound
-import typingsJapgolly.esquery.esqueryStrings.has
-import typingsJapgolly.esquery.esqueryStrings.not
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.esquery.mod.Sequence
@@ -13,44 +10,32 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.esquery.mod.Matches_
   - typingsJapgolly.esquery.mod.Has
 */
-trait MultiSelector extends SubjectSelector
-
+trait MultiSelector
+  extends StObject
+     with SubjectSelector
 object MultiSelector {
-  @scala.inline
-  def Sequence(
-    selectors: js.Array[SubjectSelector],
-    `type`: compound,
-    subject: js.UndefOr[Boolean] = js.undefined
-  ): MultiSelector = {
+  
+  inline def Has(selectors: js.Array[SubjectSelector]): typingsJapgolly.esquery.mod.Has = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MultiSelector]
+    __obj.updateDynamic("type")("has")
+    __obj.asInstanceOf[typingsJapgolly.esquery.mod.Has]
   }
-  @scala.inline
-  def Negation(selectors: js.Array[SubjectSelector], `type`: not, subject: js.UndefOr[Boolean] = js.undefined): MultiSelector = {
+  
+  inline def Matches_(selectors: js.Array[SubjectSelector]): typingsJapgolly.esquery.mod.Matches_ = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MultiSelector]
+    __obj.updateDynamic("type")("matches")
+    __obj.asInstanceOf[typingsJapgolly.esquery.mod.Matches_]
   }
-  @scala.inline
-  def Matches_(
-    selectors: js.Array[SubjectSelector],
-    `type`: typingsJapgolly.esquery.esqueryStrings.matches,
-    subject: js.UndefOr[Boolean] = js.undefined
-  ): MultiSelector = {
+  
+  inline def Negation(selectors: js.Array[SubjectSelector]): typingsJapgolly.esquery.mod.Negation = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MultiSelector]
+    __obj.updateDynamic("type")("not")
+    __obj.asInstanceOf[typingsJapgolly.esquery.mod.Negation]
   }
-  @scala.inline
-  def Has(selectors: js.Array[SubjectSelector], `type`: has, subject: js.UndefOr[Boolean] = js.undefined): MultiSelector = {
+  
+  inline def Sequence(selectors: js.Array[SubjectSelector]): typingsJapgolly.esquery.mod.Sequence = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MultiSelector]
+    __obj.updateDynamic("type")("compound")
+    __obj.asInstanceOf[typingsJapgolly.esquery.mod.Sequence]
   }
 }
-

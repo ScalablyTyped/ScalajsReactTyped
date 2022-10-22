@@ -1,159 +1,127 @@
 package typingsJapgolly.i18next
 
+import typingsJapgolly.i18next.mod.ModuleType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object i18nextStrings {
-  @js.native
-  sealed trait `3rdParty` extends js.Object
   
   @js.native
-  sealed trait added extends js.Object
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait `3rdParty`
+    extends StObject
+       with ModuleType
+  inline def `3rdParty`: `3rdParty` = "3rdParty".asInstanceOf[`3rdParty`]
   
   @js.native
-  sealed trait altKey extends js.Object
+  sealed trait added extends StObject
+  inline def added: added = "added".asInstanceOf[added]
   
   @js.native
-  sealed trait backend extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait ctrlKey extends js.Object
+  sealed trait backend
+    extends StObject
+       with ModuleType
+  inline def backend: backend = "backend".asInstanceOf[backend]
   
   @js.native
-  sealed trait current extends js.Object
+  sealed trait current extends StObject
+  inline def current: current = "current".asInstanceOf[current]
   
   @js.native
-  sealed trait currentOnly extends js.Object
+  sealed trait currentOnly extends StObject
+  inline def currentOnly: currentOnly = "currentOnly".asInstanceOf[currentOnly]
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait failedLoading extends StObject
+  inline def failedLoading: failedLoading = "failedLoading".asInstanceOf[failedLoading]
   
   @js.native
-  sealed trait failedLoading extends js.Object
+  sealed trait fallback extends StObject
+  inline def fallback: fallback = "fallback".asInstanceOf[fallback]
   
   @js.native
-  sealed trait fallback extends js.Object
+  sealed trait formatter
+    extends StObject
+       with ModuleType
+  inline def formatter: formatter = "formatter".asInstanceOf[formatter]
   
   @js.native
-  sealed trait i18nFormat extends js.Object
+  sealed trait i18nFormat
+    extends StObject
+       with ModuleType
+  inline def i18nFormat: i18nFormat = "i18nFormat".asInstanceOf[i18nFormat]
   
   @js.native
-  sealed trait iframe extends js.Object
+  sealed trait initialized extends StObject
+  inline def initialized: initialized = "initialized".asInstanceOf[initialized]
   
   @js.native
-  sealed trait initialized extends js.Object
+  sealed trait languageChanged extends StObject
+  inline def languageChanged: languageChanged = "languageChanged".asInstanceOf[languageChanged]
   
   @js.native
-  sealed trait languageChanged extends js.Object
+  sealed trait languageDetector
+    extends StObject
+       with ModuleType
+  inline def languageDetector: languageDetector = "languageDetector".asInstanceOf[languageDetector]
   
   @js.native
-  sealed trait languageDetector extends js.Object
+  sealed trait languageOnly extends StObject
+  inline def languageOnly: languageOnly = "languageOnly".asInstanceOf[languageOnly]
   
   @js.native
-  sealed trait languageOnly extends js.Object
+  sealed trait loaded extends StObject
+  inline def loaded: loaded = "loaded".asInstanceOf[loaded]
   
   @js.native
-  sealed trait loaded extends js.Object
+  sealed trait logger
+    extends StObject
+       with ModuleType
+  inline def logger: logger = "logger".asInstanceOf[logger]
   
   @js.native
-  sealed trait logger extends js.Object
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait ltr extends js.Object
+  sealed trait missingKey extends StObject
+  inline def missingKey: missingKey = "missingKey".asInstanceOf[missingKey]
   
   @js.native
-  sealed trait metaKey extends js.Object
+  sealed trait postProcessor
+    extends StObject
+       with ModuleType
+  inline def postProcessor: postProcessor = "postProcessor".asInstanceOf[postProcessor]
   
   @js.native
-  sealed trait missingKey extends js.Object
+  sealed trait removed extends StObject
+  inline def removed: removed = "removed".asInstanceOf[removed]
   
   @js.native
-  sealed trait postProcessor extends js.Object
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait removed extends js.Object
+  sealed trait v1 extends StObject
+  inline def v1: v1 = "v1".asInstanceOf[v1]
   
   @js.native
-  sealed trait rtl extends js.Object
+  sealed trait v2 extends StObject
+  inline def v2: v2 = "v2".asInstanceOf[v2]
   
   @js.native
-  sealed trait shiftKey extends js.Object
+  sealed trait v3 extends StObject
+  inline def v3: v3 = "v3".asInstanceOf[v3]
   
   @js.native
-  sealed trait v1 extends js.Object
-  
-  @js.native
-  sealed trait v2 extends js.Object
-  
-  @js.native
-  sealed trait v3 extends js.Object
-  
-  @js.native
-  sealed trait window extends js.Object
-  
-  @scala.inline
-  def `3rdParty`: `3rdParty` = "3rdParty".asInstanceOf[`3rdParty`]
-  @scala.inline
-  def added: added = "added".asInstanceOf[added]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def altKey: altKey = "altKey".asInstanceOf[altKey]
-  @scala.inline
-  def backend: backend = "backend".asInstanceOf[backend]
-  @scala.inline
-  def ctrlKey: ctrlKey = "ctrlKey".asInstanceOf[ctrlKey]
-  @scala.inline
-  def current: current = "current".asInstanceOf[current]
-  @scala.inline
-  def currentOnly: currentOnly = "currentOnly".asInstanceOf[currentOnly]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def failedLoading: failedLoading = "failedLoading".asInstanceOf[failedLoading]
-  @scala.inline
-  def fallback: fallback = "fallback".asInstanceOf[fallback]
-  @scala.inline
-  def i18nFormat: i18nFormat = "i18nFormat".asInstanceOf[i18nFormat]
-  @scala.inline
-  def iframe: iframe = "iframe".asInstanceOf[iframe]
-  @scala.inline
-  def initialized: initialized = "initialized".asInstanceOf[initialized]
-  @scala.inline
-  def languageChanged: languageChanged = "languageChanged".asInstanceOf[languageChanged]
-  @scala.inline
-  def languageDetector: languageDetector = "languageDetector".asInstanceOf[languageDetector]
-  @scala.inline
-  def languageOnly: languageOnly = "languageOnly".asInstanceOf[languageOnly]
-  @scala.inline
-  def loaded: loaded = "loaded".asInstanceOf[loaded]
-  @scala.inline
-  def logger: logger = "logger".asInstanceOf[logger]
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
-  @scala.inline
-  def metaKey: metaKey = "metaKey".asInstanceOf[metaKey]
-  @scala.inline
-  def missingKey: missingKey = "missingKey".asInstanceOf[missingKey]
-  @scala.inline
-  def postProcessor: postProcessor = "postProcessor".asInstanceOf[postProcessor]
-  @scala.inline
-  def removed: removed = "removed".asInstanceOf[removed]
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
-  @scala.inline
-  def shiftKey: shiftKey = "shiftKey".asInstanceOf[shiftKey]
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
-  @scala.inline
-  def v2: v2 = "v2".asInstanceOf[v2]
-  @scala.inline
-  def v3: v3 = "v3".asInstanceOf[v3]
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
+  sealed trait v4 extends StObject
+  inline def v4: v4 = "v4".asInstanceOf[v4]
 }
-

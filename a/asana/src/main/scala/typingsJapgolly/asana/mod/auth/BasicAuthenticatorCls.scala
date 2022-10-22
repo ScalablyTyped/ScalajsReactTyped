@@ -1,16 +1,20 @@
 package typingsJapgolly.asana.mod.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("asana", "auth.BasicAuthenticator")
 @js.native
-class BasicAuthenticatorCls protected () extends BasicAuthenticator {
+open class BasicAuthenticatorCls protected ()
+  extends StObject
+     with BasicAuthenticator {
   /**
     * @param apiKey
     */
   def this(apiKey: String) = this()
+  
   /**
     * @param {Object} request The request to modify, for the `request` library.
     * @return {Object} The `request` parameter, modified to include authentication
@@ -20,6 +24,7 @@ class BasicAuthenticatorCls protected () extends BasicAuthenticator {
     */
   /* CompleteClass */
   override def authenticateRequest(request: BasicAuthenticatorRequest): BasicAuthenticatorRequest = js.native
+  
   /**
     * Establishes credentials.
     *
@@ -29,6 +34,7 @@ class BasicAuthenticatorCls protected () extends BasicAuthenticator {
     */
   /* CompleteClass */
   override def establishCredentials(): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Attempts to refresh credentials, if possible, given the current credentials.
     *
@@ -40,4 +46,3 @@ class BasicAuthenticatorCls protected () extends BasicAuthenticator {
   /* CompleteClass */
   override def refreshCredentials(): typingsJapgolly.bluebird.mod.^[Boolean] = js.native
 }
-

@@ -1,167 +1,138 @@
 package typingsJapgolly.mongodb.mod
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.mongodb.mongodbInts.`-1`
+import typingsJapgolly.mongodb.mongodbInts.`10`
+import typingsJapgolly.mongodb.mongodbInts.`11`
+import typingsJapgolly.mongodb.mongodbInts.`127`
+import typingsJapgolly.mongodb.mongodbInts.`12`
+import typingsJapgolly.mongodb.mongodbInts.`13`
+import typingsJapgolly.mongodb.mongodbInts.`14`
+import typingsJapgolly.mongodb.mongodbInts.`15`
+import typingsJapgolly.mongodb.mongodbInts.`16`
+import typingsJapgolly.mongodb.mongodbInts.`17`
+import typingsJapgolly.mongodb.mongodbInts.`18`
+import typingsJapgolly.mongodb.mongodbInts.`19`
+import typingsJapgolly.mongodb.mongodbInts.`1`
+import typingsJapgolly.mongodb.mongodbInts.`2`
+import typingsJapgolly.mongodb.mongodbInts.`3`
+import typingsJapgolly.mongodb.mongodbInts.`4`
+import typingsJapgolly.mongodb.mongodbInts.`5`
+import typingsJapgolly.mongodb.mongodbInts.`6`
+import typingsJapgolly.mongodb.mongodbInts.`7`
+import typingsJapgolly.mongodb.mongodbInts.`8`
+import typingsJapgolly.mongodb.mongodbInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait BSONType extends js.Object
-
-@JSImport("mongodb", "BSONType")
-@js.native
-object BSONType extends js.Object {
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.mongodb.mongodbInts.`19`
+  - typingsJapgolly.mongodb.mongodbInts.`16`
+  - typingsJapgolly.mongodb.mongodbInts.`3`
+  - typingsJapgolly.mongodb.mongodbInts.`127`
+  - typingsJapgolly.mongodb.mongodbInts.`13`
+  - typingsJapgolly.mongodb.mongodbInts.`2`
+  - typingsJapgolly.mongodb.mongodbInts.`17`
+  - typingsJapgolly.mongodb.mongodbInts.`4`
+  - typingsJapgolly.mongodb.mongodbInts.`7`
+  - typingsJapgolly.mongodb.mongodbInts.`5`
+  - typingsJapgolly.mongodb.mongodbInts.`15`
+  - typingsJapgolly.mongodb.mongodbInts.`12`
+  - typingsJapgolly.mongodb.mongodbInts.`11`
+  - typingsJapgolly.mongodb.mongodbInts.`6`
+  - typingsJapgolly.mongodb.mongodbInts.`10`
+  - typingsJapgolly.mongodb.mongodbInts.`9`
+  - typingsJapgolly.mongodb.mongodbInts.`8`
+  - typingsJapgolly.mongodb.mongodbInts.`1`
+  - typingsJapgolly.mongodb.mongodbInts.`-1`
+  - typingsJapgolly.mongodb.mongodbInts.`14`
+  - typingsJapgolly.mongodb.mongodbInts.`18`
+*/
+trait BSONType extends StObject
+/* Inlined std.Readonly<{ readonly double :1,  readonly string :2,  readonly object :3,  readonly array :4,  readonly binData :5,  readonly undefined :6,  readonly objectId :7,  readonly bool :8,  readonly date :9,  readonly null :10,  readonly regex :11,  readonly dbPointer :12,  readonly javascript :13,  readonly symbol :14,  readonly javascriptWithScope :15,  readonly int :16,  readonly timestamp :17,  readonly long :18,  readonly decimal :19,  readonly minKey :-1,  readonly maxKey :127}> */
+object BSONType {
+  
+  @JSImport("mongodb", "BSONType.array")
   @js.native
-  sealed trait Array extends BSONType
+  val array: `4` = js.native
   
+  @JSImport("mongodb", "BSONType.binData")
   @js.native
-  sealed trait BinData extends BSONType
+  val binData: `5` = js.native
   
+  @JSImport("mongodb", "BSONType.bool")
   @js.native
-  sealed trait Boolean extends BSONType
+  val bool: `8` = js.native
   
-  /** @deprecated */
+  @JSImport("mongodb", "BSONType.date")
   @js.native
-  sealed trait DBPointer extends BSONType
+  val date: `9` = js.native
   
+  @JSImport("mongodb", "BSONType.dbPointer")
   @js.native
-  sealed trait Date extends BSONType
+  val dbPointer: `12` = js.native
   
+  @JSImport("mongodb", "BSONType.decimal")
   @js.native
-  sealed trait Decimal extends BSONType
+  val decimal: `19` = js.native
   
+  @JSImport("mongodb", "BSONType.double")
   @js.native
-  sealed trait Double extends BSONType
+  val double: `1` = js.native
   
+  @JSImport("mongodb", "BSONType.int")
   @js.native
-  sealed trait Int extends BSONType
+  val int: `16` = js.native
   
+  @JSImport("mongodb", "BSONType.javascript")
   @js.native
-  sealed trait JavaScript extends BSONType
+  val javascript: `13` = js.native
   
+  @JSImport("mongodb", "BSONType.javascriptWithScope")
   @js.native
-  sealed trait JavaScriptWithScope extends BSONType
+  val javascriptWithScope: `15` = js.native
   
+  @JSImport("mongodb", "BSONType.long")
   @js.native
-  sealed trait Long extends BSONType
+  val long: `18` = js.native
   
+  @JSImport("mongodb", "BSONType.maxKey")
   @js.native
-  sealed trait MaxKey extends BSONType
+  val maxKey: `127` = js.native
   
+  @JSImport("mongodb", "BSONType.minKey")
   @js.native
-  sealed trait MinKey extends BSONType
+  val minKey: `-1` = js.native
   
+  @JSImport("mongodb", "BSONType.null")
   @js.native
-  sealed trait Null extends BSONType
+  val `null`: `10` = js.native
   
+  @JSImport("mongodb", "BSONType.object")
   @js.native
-  sealed trait Object extends BSONType
+  val `object`: `3` = js.native
   
+  @JSImport("mongodb", "BSONType.objectId")
   @js.native
-  sealed trait ObjectId extends BSONType
+  val objectId: `7` = js.native
   
+  @JSImport("mongodb", "BSONType.regex")
   @js.native
-  sealed trait Regex extends BSONType
+  val regex: `11` = js.native
   
+  @JSImport("mongodb", "BSONType.string")
   @js.native
-  sealed trait String extends BSONType
+  val string: `2` = js.native
   
-  /** @deprecated */
+  @JSImport("mongodb", "BSONType.symbol")
   @js.native
-  sealed trait Symbol extends BSONType
+  val symbol: `14` = js.native
   
+  @JSImport("mongodb", "BSONType.timestamp")
   @js.native
-  sealed trait Timestamp extends BSONType
+  val timestamp: `17` = js.native
   
-  /** @deprecated */
+  @JSImport("mongodb", "BSONType.undefined")
   @js.native
-  sealed trait Undefined extends BSONType
-  
-  @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[BSONType with scala.Double] = js.native
-  /* 2 */ @js.native
-  object Array
-    extends TopLevel[Array with scala.Double]
-  
-  /* 3 */ @js.native
-  object BinData
-    extends TopLevel[BinData with scala.Double]
-  
-  /* 6 */ @js.native
-  object Boolean
-    extends TopLevel[Boolean with scala.Double]
-  
-  /* 10 */ @js.native
-  object DBPointer
-    extends TopLevel[DBPointer with scala.Double]
-  
-  /* 7 */ @js.native
-  object Date
-    extends TopLevel[Date with scala.Double]
-  
-  /* 17 */ @js.native
-  object Decimal
-    extends TopLevel[Decimal with scala.Double]
-  
-  /* 1 */ @js.native
-  object Double
-    extends TopLevel[typingsJapgolly.mongodb.mod.BSONType.Double with scala.Double]
-  
-  /* 14 */ @js.native
-  object Int
-    extends TopLevel[Int with scala.Double]
-  
-  /* 11 */ @js.native
-  object JavaScript
-    extends TopLevel[JavaScript with scala.Double]
-  
-  /* 13 */ @js.native
-  object JavaScriptWithScope
-    extends TopLevel[JavaScriptWithScope with scala.Double]
-  
-  /* 16 */ @js.native
-  object Long
-    extends TopLevel[typingsJapgolly.mongodb.mod.BSONType.Long with scala.Double]
-  
-  /* 127 */ @js.native
-  object MaxKey
-    extends TopLevel[typingsJapgolly.mongodb.mod.BSONType.MaxKey with scala.Double]
-  
-  /* -1 */ @js.native
-  object MinKey
-    extends TopLevel[typingsJapgolly.mongodb.mod.BSONType.MinKey with scala.Double]
-  
-  /* 8 */ @js.native
-  object Null
-    extends TopLevel[Null with scala.Double]
-  
-  /* 1 */ @js.native
-  object Object
-    extends TopLevel[Object with scala.Double]
-  
-  /* 5 */ @js.native
-  object ObjectId
-    extends TopLevel[typingsJapgolly.mongodb.mod.BSONType.ObjectId with scala.Double]
-  
-  /* 9 */ @js.native
-  object Regex
-    extends TopLevel[Regex with scala.Double]
-  
-  /* 0 */ @js.native
-  object String
-    extends TopLevel[String with scala.Double]
-  
-  /* 12 */ @js.native
-  object Symbol
-    extends TopLevel[Symbol with scala.Double]
-  
-  /* 15 */ @js.native
-  object Timestamp
-    extends TopLevel[typingsJapgolly.mongodb.mod.BSONType.Timestamp with scala.Double]
-  
-  /* 4 */ @js.native
-  object Undefined
-    extends TopLevel[Undefined with scala.Double]
-  
+  val undefined: `6` = js.native
 }
-

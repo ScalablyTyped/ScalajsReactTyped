@@ -1,48 +1,38 @@
 package typingsJapgolly.tampermonkey.Tampermonkey
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReadyState extends js.Object
-
+sealed trait ReadyState extends StObject
 // Response
 @JSGlobal("Tampermonkey.ReadyState")
 @js.native
-object ReadyState extends js.Object {
-  @js.native
-  sealed trait Done extends ReadyState
+object ReadyState extends StObject {
   
   @js.native
-  sealed trait HeadersReceived extends ReadyState
+  sealed trait Done
+    extends StObject
+       with ReadyState
   
   @js.native
-  sealed trait Loading extends ReadyState
+  sealed trait HeadersReceived
+    extends StObject
+       with ReadyState
   
   @js.native
-  sealed trait Opened extends ReadyState
+  sealed trait Loading
+    extends StObject
+       with ReadyState
   
   @js.native
-  sealed trait Unsent extends ReadyState
+  sealed trait Opened
+    extends StObject
+       with ReadyState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ReadyState with Double] = js.native
-  /* 4 */ @js.native
-  object Done extends TopLevel[Done with Double]
-  
-  /* 2 */ @js.native
-  object HeadersReceived extends TopLevel[HeadersReceived with Double]
-  
-  /* 3 */ @js.native
-  object Loading extends TopLevel[Loading with Double]
-  
-  /* 1 */ @js.native
-  object Opened extends TopLevel[Opened with Double]
-  
-  /* 0 */ @js.native
-  object Unsent extends TopLevel[Unsent with Double]
-  
+  @js.native
+  sealed trait Unsent
+    extends StObject
+       with ReadyState
 }
-

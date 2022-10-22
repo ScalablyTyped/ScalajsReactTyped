@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for an event that occurs before a spelling check is started. Represents the client-side equivalent of the BeforeCheckEventArgs class.
   */
-@JSGlobal("ASPxClientSpellCheckerBeforeCheckEventArgs")
-@js.native
-class ASPxClientSpellCheckerBeforeCheckEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientSpellCheckerBeforeCheckEventArgs class with specified settings.
-    * @param controlId A string, containing the control's programmatic identifier.
-    */
-  def this(controlId: String) = this()
+trait ASPxClientSpellCheckerBeforeCheckEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
     * Gets the programmatic identifier assigned to the control which is going to be checked.
     */
-  var controlId: String = js.native
+  var controlId: String
 }
-
+object ASPxClientSpellCheckerBeforeCheckEventArgs {
+  
+  inline def apply(cancel: Boolean, controlId: String): ASPxClientSpellCheckerBeforeCheckEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], controlId = controlId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientSpellCheckerBeforeCheckEventArgs]
+  }
+  
+  extension [Self <: ASPxClientSpellCheckerBeforeCheckEventArgs](x: Self) {
+    
+    inline def setControlId(value: String): Self = StObject.set(x, "controlId", value.asInstanceOf[js.Any])
+  }
+}

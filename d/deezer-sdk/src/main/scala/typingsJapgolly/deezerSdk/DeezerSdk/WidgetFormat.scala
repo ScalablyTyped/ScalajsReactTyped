@@ -1,8 +1,8 @@
 package typingsJapgolly.deezerSdk.DeezerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}
@@ -11,14 +11,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.deezerSdk.deezerSdkStrings.square
   - typingsJapgolly.deezerSdk.deezerSdkStrings.classic
 */
-trait WidgetFormat extends js.Object
-
+trait WidgetFormat extends StObject
 object WidgetFormat {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def classic: typingsJapgolly.deezerSdk.deezerSdkStrings.classic = this.cast("classic")
-  @scala.inline
-  def square: typingsJapgolly.deezerSdk.deezerSdkStrings.square = this.cast("square")
+  
+  inline def classic: typingsJapgolly.deezerSdk.deezerSdkStrings.classic = "classic".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.classic]
+  
+  inline def square: typingsJapgolly.deezerSdk.deezerSdkStrings.square = "square".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.square]
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.dplayer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.dplayer.dplayerStrings.none
   - typingsJapgolly.dplayer.dplayerStrings.metadata
   - typingsJapgolly.dplayer.dplayerStrings.auto
 */
-trait Preload extends js.Object
-
+trait Preload extends StObject
 object Preload {
-  @scala.inline
-  def auto: typingsJapgolly.dplayer.dplayerStrings.auto = this.cast("auto")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def metadata: typingsJapgolly.dplayer.dplayerStrings.metadata = this.cast("metadata")
-  @scala.inline
-  def none: typingsJapgolly.dplayer.dplayerStrings.none = this.cast("none")
+  
+  inline def auto: typingsJapgolly.dplayer.dplayerStrings.auto = "auto".asInstanceOf[typingsJapgolly.dplayer.dplayerStrings.auto]
+  
+  inline def metadata: typingsJapgolly.dplayer.dplayerStrings.metadata = "metadata".asInstanceOf[typingsJapgolly.dplayer.dplayerStrings.metadata]
+  
+  inline def none: typingsJapgolly.dplayer.dplayerStrings.none = "none".asInstanceOf[typingsJapgolly.dplayer.dplayerStrings.none]
 }
-

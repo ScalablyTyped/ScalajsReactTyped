@@ -1,25 +1,19 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Background
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LocationTriggerType extends js.Object
-
+sealed trait LocationTriggerType extends StObject
 /** Indicates a type of location event for a location background task trigger. */
 @JSGlobal("Windows.ApplicationModel.Background.LocationTriggerType")
 @js.native
-object LocationTriggerType extends js.Object {
+object LocationTriggerType extends StObject {
+  
   /** Indicates a geofence location trigger. */
   @js.native
-  sealed trait geofence extends LocationTriggerType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LocationTriggerType with Double] = js.native
-  /* 0 */ @js.native
-  object geofence extends TopLevel[geofence with Double]
-  
+  sealed trait geofence
+    extends StObject
+       with LocationTriggerType
 }
-

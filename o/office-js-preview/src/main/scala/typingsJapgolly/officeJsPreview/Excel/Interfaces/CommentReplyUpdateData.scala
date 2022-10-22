@@ -1,26 +1,31 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`. */
-trait CommentReplyUpdateData extends js.Object {
+trait CommentReplyUpdateData extends StObject {
+  
   /**
+    * The comment reply's content. The string is plain text.
     *
-    * Gets or sets the comment reply's content. The string is plain text.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var content: js.UndefOr[String] = js.undefined
 }
-
 object CommentReplyUpdateData {
-  @scala.inline
-  def apply(content: String = null): CommentReplyUpdateData = {
+  
+  inline def apply(): CommentReplyUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentReplyUpdateData]
   }
+  
+  extension [Self <: CommentReplyUpdateData](x: Self) {
+    
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+  }
 }
-

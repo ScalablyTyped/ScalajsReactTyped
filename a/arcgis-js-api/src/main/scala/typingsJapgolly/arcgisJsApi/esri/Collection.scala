@@ -1,7 +1,5 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.Instantiable1
-import typingsJapgolly.arcgisJsApi.AnonItems
 import typingsJapgolly.arcgisJsApi.IHandle
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`after-add`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`after-changes`
@@ -10,41 +8,64 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`before-add`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`before-changes`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`before-remove`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.change
+import typingsJapgolly.arcgisJsApi.esriImplementsIteration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("__esri.Collection")
 @js.native
-class Collection[T] ()
-  extends Accessor
-     with Evented {
-  def this(values: js.Array[_]) = this()
-  def this(values: Collection[_]) = this()
-  val length: Double = js.native
-  def add(item: T): Unit = js.native
-  def add(item: T, index: Double): Unit = js.native
-  def addMany(items: js.Array[T]): Unit = js.native
-  def addMany(items: js.Array[T], index: Double): Unit = js.native
-  def addMany(items: Collection[T]): Unit = js.native
-  def addMany(items: Collection[T], index: Double): Unit = js.native
+trait Collection[T]
+  extends StObject
+     with Accessor
+     with Evented
+     with esriImplementsIteration[T] {
+  
+  def add(item: T): scala.Unit = js.native
+  def add(item: T, index: Double): scala.Unit = js.native
+  
+  def addMany(items: js.Array[T]): scala.Unit = js.native
+  def addMany(items: js.Array[T], index: Double): scala.Unit = js.native
+  def addMany(items: Collection[T]): scala.Unit = js.native
+  def addMany(items: Collection[T], index: Double): scala.Unit = js.native
+  
+  def at(index: Double): T = js.native
+  
   def concat(value: js.Array[T]): Collection[T] = js.native
   def concat(value: Collection[T]): Collection[T] = js.native
+  
   def every(callback: ItemTestCallback[T]): Boolean = js.native
+  
   def filter(callback: ItemTestCallback[T]): Collection[T] = js.native
+  @JSName("filter")
+  def filter_S[S /* <: T */](callback: js.Function2[/* item */ T, /* index */ Double, /* is S */ Boolean]): Collection[S] = js.native
+  
   def find(callback: ItemTestCallback[T]): T = js.native
+  
   def findIndex(callback: ItemTestCallback[T]): Double = js.native
-  def flatten(callback: ItemCallback[T]): Collection[T] = js.native
-  def forEach(callback: ItemCallback[T]): Unit = js.native
+  
+  def flatten(callback: js.Function2[/* item */ T, /* index */ Double, js.Array[T] | Collection[T]]): Collection[T] = js.native
+  @JSName("flatten")
+  def flatten_U[U](callback: js.Function2[/* item */ U, /* index */ Double, js.Array[U] | Collection[U]]): Collection[U] = js.native
+  
+  def forEach(callback: ItemCallback[T]): scala.Unit = js.native
+  
   def getItemAt(index: Double): T = js.native
+  
   def includes(searchElement: T): Boolean = js.native
+  
   def indexOf(searchElement: T): Double = js.native
   def indexOf(searchElement: T, fromIndex: Double): Double = js.native
+  
   def join(): String = js.native
   def join(separator: String): String = js.native
+  
   def lastIndexOf(searchElement: T): Double = js.native
   def lastIndexOf(searchElement: T, fromIndex: Double): Double = js.native
+  
+  val length: Double = js.native
+  
   def map[R](callback: ItemMapCallback[T, R]): Collection[R] = js.native
+  
   @JSName("on")
   def on_afteradd(`type`: `after-add`, listener: CollectionAfterAddEventHandler[T]): IHandle = js.native
   @JSName("on")
@@ -59,38 +80,45 @@ class Collection[T] ()
   def on_beforeremove(`type`: `before-remove`, listener: CollectionBeforeRemoveEventHandler[T]): IHandle = js.native
   @JSName("on")
   def on_change(`type`: change, listener: CollectionChangeEventHandler[T]): IHandle = js.native
+  
   def pop(): T = js.native
+  
   def push(item: T): Double = js.native
+  
   def reduce[R](callback: ItemReduceCallback[T, R]): R = js.native
   def reduce[R](callback: ItemReduceCallback[T, R], initialValue: R): R = js.native
+  
   def reduceRight[R](callback: ItemReduceCallback[T, R]): R = js.native
   def reduceRight[R](callback: ItemReduceCallback[T, R], initialValue: R): R = js.native
-  def remove(item: T): Unit = js.native
-  def removeAll(): Unit = js.native
-  def removeAt(index: Double): js.Any = js.native
+  
+  def remove(item: T): scala.Unit = js.native
+  
+  def removeAll(): scala.Unit = js.native
+  
+  def removeAt(index: Double): Any = js.native
+  
   def removeMany(items: js.Array[T]): js.Array[T] = js.native
   def removeMany(items: Collection[T]): js.Array[T] = js.native
+  
   def reorder(item: T, index: Double): T = js.native
+  
   def reverse(): Collection[T] = js.native
+  
   def shift(): T = js.native
+  
   def slice(): Collection[T] = js.native
   def slice(begin: Double): Collection[T] = js.native
   def slice(begin: Double, end: Double): Collection[T] = js.native
+  def slice(begin: scala.Unit, end: Double): Collection[T] = js.native
+  
   def some(callback: ItemCallback[T]): Boolean = js.native
-  def sort(): Unit = js.native
-  def sort(compareFunction: ItemCompareCallback[T]): Unit = js.native
+  
+  def sort(): scala.Unit = js.native
+  def sort(compareFunction: ItemCompareCallback[T]): scala.Unit = js.native
+  
   def splice(start: Double, deleteCount: Double, items: T*): js.Array[T] = js.native
+  
   def toArray(): js.Array[T] = js.native
+  
   def unshift(items: T*): Double = js.native
 }
-
-/* static members */
-@JSGlobal("__esri.Collection")
-@js.native
-object Collection extends js.Object {
-  def isCollection[T](value: js.Any): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = js.native
-  def isCollection[T](value: Collection[T]): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = js.native
-  def ofType[T /* <: Base */, Base](`type`: Constructor[T]): Instantiable1[js.UndefOr[js.Array[T] | Collection[T] | AnonItems[T]], Collection[T]] = js.native
-  def ofType[T /* <: Base */, Base](`type`: Types[T, Base]): Instantiable1[js.UndefOr[js.Array[T] | Collection[T] | AnonItems[T]], Collection[T]] = js.native
-}
-

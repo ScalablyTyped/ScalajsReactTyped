@@ -1,71 +1,81 @@
 package typingsJapgolly.reactNativeCheckBox.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
 import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.reactNativeCheckBox.mod.CheckBoxProps
 import typingsJapgolly.reactNativeCheckBox.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactNativeCheckBox {
-  def apply(
-    isChecked: Boolean,
-    onClick: Callback,
-    checkBoxColor: String = null,
-    checkedCheckBoxColor: String = null,
-    checkedImage: VdomElement = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    leftText: String = null,
-    leftTextStyle: StyleProp[TextStyle] = null,
-    leftTextView: VdomNode = null,
-    rightText: String = null,
-    rightTextStyle: StyleProp[TextStyle] = null,
-    rightTextView: VdomNode = null,
-    style: StyleProp[ViewStyle] = null,
-    unCheckedImage: VdomElement = null,
-    uncheckedCheckBoxColor: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CheckBoxProps, default, Unit, CheckBoxProps] = {
-    val __obj = js.Dynamic.literal(isChecked = isChecked.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onClick")(onClick.toJsFn)
-    if (checkBoxColor != null) __obj.updateDynamic("checkBoxColor")(checkBoxColor.asInstanceOf[js.Any])
-    if (checkedCheckBoxColor != null) __obj.updateDynamic("checkedCheckBoxColor")(checkedCheckBoxColor.asInstanceOf[js.Any])
-    if (checkedImage != null) __obj.updateDynamic("checkedImage")(checkedImage.rawElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (leftText != null) __obj.updateDynamic("leftText")(leftText.asInstanceOf[js.Any])
-    if (leftTextStyle != null) __obj.updateDynamic("leftTextStyle")(leftTextStyle.asInstanceOf[js.Any])
-    if (leftTextView != null) __obj.updateDynamic("leftTextView")(leftTextView.rawNode.asInstanceOf[js.Any])
-    if (rightText != null) __obj.updateDynamic("rightText")(rightText.asInstanceOf[js.Any])
-    if (rightTextStyle != null) __obj.updateDynamic("rightTextStyle")(rightTextStyle.asInstanceOf[js.Any])
-    if (rightTextView != null) __obj.updateDynamic("rightTextView")(rightTextView.rawNode.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (unCheckedImage != null) __obj.updateDynamic("unCheckedImage")(unCheckedImage.rawElement.asInstanceOf[js.Any])
-    if (uncheckedCheckBoxColor != null) __obj.updateDynamic("uncheckedCheckBoxColor")(uncheckedCheckBoxColor.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeCheckBox.mod.CheckBoxProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeCheckBox.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeCheckBox.mod.CheckBoxProps])(children: _*)
+  inline def apply(isChecked: Boolean, onClick: Callback): Builder = {
+    val __props = js.Dynamic.literal(isChecked = isChecked.asInstanceOf[js.Any], onClick = onClick.toJsFn)
+    new Builder(js.Array(this.component, __props.asInstanceOf[CheckBoxProps]))
   }
+  
   @JSImport("react-native-check-box", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def checkBoxColor(value: String): this.type = set("checkBoxColor", value.asInstanceOf[js.Any])
+    
+    inline def checkedCheckBoxColor(value: String): this.type = set("checkedCheckBoxColor", value.asInstanceOf[js.Any])
+    
+    inline def checkedImage(value: VdomElement): this.type = set("checkedImage", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def leftText(value: String): this.type = set("leftText", value.asInstanceOf[js.Any])
+    
+    inline def leftTextStyle(value: StyleProp[TextStyle]): this.type = set("leftTextStyle", value.asInstanceOf[js.Any])
+    
+    inline def leftTextStyleNull: this.type = set("leftTextStyle", null)
+    
+    inline def leftTextView(value: VdomNode): this.type = set("leftTextView", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def leftTextViewNull: this.type = set("leftTextView", null)
+    
+    inline def leftTextViewVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("leftTextView", js.Array(value*))
+    
+    inline def leftTextViewVdomElement(value: VdomElement): this.type = set("leftTextView", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def rightText(value: String): this.type = set("rightText", value.asInstanceOf[js.Any])
+    
+    inline def rightTextStyle(value: StyleProp[TextStyle]): this.type = set("rightTextStyle", value.asInstanceOf[js.Any])
+    
+    inline def rightTextStyleNull: this.type = set("rightTextStyle", null)
+    
+    inline def rightTextView(value: VdomNode): this.type = set("rightTextView", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def rightTextViewNull: this.type = set("rightTextView", null)
+    
+    inline def rightTextViewVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("rightTextView", js.Array(value*))
+    
+    inline def rightTextViewVdomElement(value: VdomElement): this.type = set("rightTextView", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def unCheckedImage(value: VdomElement): this.type = set("unCheckedImage", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def uncheckedCheckBoxColor(value: String): this.type = set("uncheckedCheckBoxColor", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: CheckBoxProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,21 +1,34 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartViewWindow extends js.Object {
+trait ChartViewWindow extends StObject {
+  
   var max: js.UndefOr[Double | js.Date | js.Array[Double]] = js.undefined
+  
   var min: js.UndefOr[Double | js.Date | js.Array[Double]] = js.undefined
 }
-
 object ChartViewWindow {
-  @scala.inline
-  def apply(max: Double | js.Date | js.Array[Double] = null, min: Double | js.Date | js.Array[Double] = null): ChartViewWindow = {
+  
+  inline def apply(): ChartViewWindow = {
     val __obj = js.Dynamic.literal()
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartViewWindow]
   }
+  
+  extension [Self <: ChartViewWindow](x: Self) {
+    
+    inline def setMax(value: Double | js.Date | js.Array[Double]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMaxVarargs(value: Double*): Self = StObject.set(x, "max", js.Array(value*))
+    
+    inline def setMin(value: Double | js.Date | js.Array[Double]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setMinVarargs(value: Double*): Self = StObject.set(x, "min", js.Array(value*))
+  }
 }
-

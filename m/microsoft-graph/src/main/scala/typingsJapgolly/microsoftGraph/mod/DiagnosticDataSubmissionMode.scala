@@ -1,9 +1,9 @@
 package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
@@ -12,20 +12,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.enhanced
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.full
 */
-trait DiagnosticDataSubmissionMode extends js.Object
-
+trait DiagnosticDataSubmissionMode extends StObject
 object DiagnosticDataSubmissionMode {
-  @scala.inline
-  def basic: typingsJapgolly.microsoftGraph.microsoftGraphStrings.basic = this.cast("basic")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def enhanced: typingsJapgolly.microsoftGraph.microsoftGraphStrings.enhanced = this.cast("enhanced")
-  @scala.inline
-  def full: typingsJapgolly.microsoftGraph.microsoftGraphStrings.full = this.cast("full")
-  @scala.inline
-  def none: none_ = this.cast("none")
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  
+  inline def basic: typingsJapgolly.microsoftGraph.microsoftGraphStrings.basic = "basic".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.basic]
+  
+  inline def enhanced: typingsJapgolly.microsoftGraph.microsoftGraphStrings.enhanced = "enhanced".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.enhanced]
+  
+  inline def full: typingsJapgolly.microsoftGraph.microsoftGraphStrings.full = "full".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.full]
+  
+  inline def none: none_ = "none".asInstanceOf[none_]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

@@ -2,29 +2,24 @@ package typingsJapgolly.yandexMaps.mod
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.yandexMaps.mod.data.Manager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IPanoramaConnectionMarker
-  extends IPanoramaConnection
+  extends StObject
+     with IPanoramaConnection
      with IPanoramaMarker
-
 object IPanoramaConnectionMarker {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getConnectedPanorama: CallbackTo[js.Promise[IPanorama]],
     getIconSet: CallbackTo[js.Promise[IPanoramaMarkerIconSet]],
     getPanorama: CallbackTo[IPanorama],
     getPosition: CallbackTo[js.Array[Double]],
     properties: Manager
   ): IPanoramaConnectionMarker = {
-    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("getConnectedPanorama")(getConnectedPanorama.toJsFn)
-    __obj.updateDynamic("getIconSet")(getIconSet.toJsFn)
-    __obj.updateDynamic("getPanorama")(getPanorama.toJsFn)
-    __obj.updateDynamic("getPosition")(getPosition.toJsFn)
+    val __obj = js.Dynamic.literal(getConnectedPanorama = getConnectedPanorama.toJsFn, getIconSet = getIconSet.toJsFn, getPanorama = getPanorama.toJsFn, getPosition = getPosition.toJsFn, properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanoramaConnectionMarker]
   }
 }
-

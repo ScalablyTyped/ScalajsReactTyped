@@ -1,79 +1,63 @@
 package typingsJapgolly.reactInputCalendar.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import japgolly.scalajs.react.facade.React.Component
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactInputCalendar.mod.^
 import typingsJapgolly.reactInputCalendar.reactInputCalendar.ReactInputCalendarProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactInputCalendar {
-  def apply(
-    closeOnSelect: js.UndefOr[Boolean] = js.undefined,
-    computableFormat: String = null,
-    date: String | js.Date = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
-    inputFieldClass: String = null,
-    inputFieldId: String = null,
-    maxDate: String | js.Date = null,
-    minDate: String | js.Date = null,
-    minView: Int | Double = null,
-    onBlur: (/* event */ ReactEventFrom[
-      typingsJapgolly.reactInputCalendar.reactInputCalendar.ReactInputCalendar with Element
-    ], /* computableDate */ String) => Callback = null,
-    onChange: /* computableDate */ String => Callback = null,
-    onFocus: /* event */ ReactEventFrom[
-      typingsJapgolly.reactInputCalendar.reactInputCalendar.ReactInputCalendar with Element
-    ] => Callback = null,
-    openOnInputFocus: js.UndefOr[Boolean] = js.undefined,
-    placeholder: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ReactInputCalendarProps, 
-    typingsJapgolly.reactInputCalendar.reactInputCalendar.ReactInputCalendar, 
-    Unit, 
-    ReactInputCalendarProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect.asInstanceOf[js.Any])
-    if (computableFormat != null) __obj.updateDynamic("computableFormat")(computableFormat.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (inputFieldClass != null) __obj.updateDynamic("inputFieldClass")(inputFieldClass.asInstanceOf[js.Any])
-    if (inputFieldId != null) __obj.updateDynamic("inputFieldId")(inputFieldId.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minView != null) __obj.updateDynamic("minView")(minView.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.reactInputCalendar.reactInputCalendar.ReactInputCalendar with org.scalajs.dom.raw.Element], t1: /* computableDate */ java.lang.String) => onBlur(t0, t1).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* computableDate */ java.lang.String) => onChange(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[
-  typingsJapgolly.reactInputCalendar.reactInputCalendar.ReactInputCalendar with org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
-    if (!js.isUndefined(openOnInputFocus)) __obj.updateDynamic("openOnInputFocus")(openOnInputFocus.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactInputCalendar.reactInputCalendar.ReactInputCalendarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactInputCalendar.reactInputCalendar.ReactInputCalendar](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactInputCalendar.reactInputCalendar.ReactInputCalendarProps])(children: _*)
-  }
-  @JSGlobal("reactInputCalendar.ReactInputCalendar")
+  @JSImport("react-input-calendar", JSImport.Namespace)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[^] {
+    
+    inline def closeOnSelect(value: Boolean): this.type = set("closeOnSelect", value.asInstanceOf[js.Any])
+    
+    inline def computableFormat(value: String): this.type = set("computableFormat", value.asInstanceOf[js.Any])
+    
+    inline def date(value: String | js.Date): this.type = set("date", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def format(value: String): this.type = set("format", value.asInstanceOf[js.Any])
+    
+    inline def inputFieldClass(value: String): this.type = set("inputFieldClass", value.asInstanceOf[js.Any])
+    
+    inline def inputFieldId(value: String): this.type = set("inputFieldId", value.asInstanceOf[js.Any])
+    
+    inline def maxDate(value: String | js.Date): this.type = set("maxDate", value.asInstanceOf[js.Any])
+    
+    inline def minDate(value: String | js.Date): this.type = set("minDate", value.asInstanceOf[js.Any])
+    
+    inline def minView(value: Double): this.type = set("minView", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(
+      value: (/* event */ ReactEventFrom[(Component[ReactInputCalendarProps & js.Object, js.Object]) & Element], /* computableDate */ String) => Callback
+    ): this.type = set("onBlur", js.Any.fromFunction2((t0: /* event */ ReactEventFrom[(Component[ReactInputCalendarProps & js.Object, js.Object]) & Element], t1: /* computableDate */ String) => (value(t0, t1)).runNow()))
+    
+    inline def onChange(value: /* computableDate */ String => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* computableDate */ String) => value(t0).runNow()))
+    
+    inline def onFocus(
+      value: /* event */ ReactEventFrom[(Component[ReactInputCalendarProps & js.Object, js.Object]) & Element] => Callback
+    ): this.type = set("onFocus", js.Any.fromFunction1((t0: /* event */ ReactEventFrom[(Component[ReactInputCalendarProps & js.Object, js.Object]) & Element]) => value(t0).runNow()))
+    
+    inline def openOnInputFocus(value: Boolean): this.type = set("openOnInputFocus", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactInputCalendar.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ReactInputCalendarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

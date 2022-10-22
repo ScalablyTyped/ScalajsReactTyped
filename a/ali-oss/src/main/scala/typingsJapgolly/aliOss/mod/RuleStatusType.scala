@@ -1,21 +1,17 @@
 package typingsJapgolly.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.aliOss.aliOssStrings.Enabled
   - typingsJapgolly.aliOss.aliOssStrings.Disabled
 */
-trait RuleStatusType extends js.Object
-
+trait RuleStatusType extends StObject
 object RuleStatusType {
-  @scala.inline
-  def Disabled: typingsJapgolly.aliOss.aliOssStrings.Disabled = this.cast("Disabled")
-  @scala.inline
-  def Enabled: typingsJapgolly.aliOss.aliOssStrings.Enabled = this.cast("Enabled")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Disabled: typingsJapgolly.aliOss.aliOssStrings.Disabled = "Disabled".asInstanceOf[typingsJapgolly.aliOss.aliOssStrings.Disabled]
+  
+  inline def Enabled: typingsJapgolly.aliOss.aliOssStrings.Enabled = "Enabled".asInstanceOf[typingsJapgolly.aliOss.aliOssStrings.Enabled]
 }
-

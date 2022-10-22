@@ -1,36 +1,43 @@
 package typingsJapgolly.dragTimetable
 
-import org.scalajs.dom.raw.HTMLDivElement
-import typingsJapgolly.std.HTMLElement
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("drag-timetable", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("drag-timetable", JSImport.Namespace)
   @js.native
-  class TimetableInstance protected () extends js.Object {
-    def this(contextObj: js.Any) = this()
-    def addTask(task: js.Any, isAddingToTimetable: Boolean): HTMLDivElement = js.native
-    def getTask(taskId: js.Any): js.Any = js.native
-    def removeTask(taskId: js.Any): Unit = js.native
-    def setClickCallback(clickCallback: js.Function1[/* task */ js.Any, Unit]): Unit = js.native
-    def setMoveCallback(moveCallback: js.Function1[/* task */ js.Any, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("drag-timetable", "TimetableInstance")
+  @js.native
+  open class TimetableInstance protected () extends StObject {
+    def this(contextObj: Any) = this()
+    
+    def addTask(task: Any, isAddingToTimetable: Boolean): HTMLDivElement = js.native
+    
+    def getTask(taskId: Any): Any = js.native
+    
+    def removeTask(taskId: Any): Unit = js.native
+    
+    def setClickCallback(clickCallback: js.Function1[/* task */ Any, Unit]): Unit = js.native
+    
+    def setMoveCallback(moveCallback: js.Function1[/* task */ Any, Unit]): Unit = js.native
   }
   
+  @JSImport("drag-timetable", "TimetableTask")
   @js.native
-  class TimetableTask protected () extends js.Object {
-    def this(task: js.Any, taskAreaSize: js.Any) = this()
+  open class TimetableTask protected () extends StObject {
+    def this(task: Any, taskAreaSize: Any) = this()
+    
     def getTimeElement(): HTMLDivElement = js.native
+    
     def updateTaskUI(): Unit = js.native
   }
   
-  @js.native
-  object create extends js.Object {
-    def apply(container: Null, options: js.Any): TimetableInstance = js.native
-    def apply(container: HTMLElement, options: js.Any): TimetableInstance = js.native
-  }
-  
+  inline def create(container: HTMLElement, options: Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
+  inline def create(container: Null, options: Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
 }
-

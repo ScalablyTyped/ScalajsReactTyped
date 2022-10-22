@@ -1,21 +1,30 @@
 package typingsJapgolly.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UpdateRoleData extends js.Object {
+trait UpdateRoleData extends StObject {
+  
   var description: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object UpdateRoleData {
-  @scala.inline
-  def apply(description: String = null, name: String = null): UpdateRoleData = {
+  
+  inline def apply(): UpdateRoleData = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRoleData]
   }
+  
+  extension [Self <: UpdateRoleData](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

@@ -1,23 +1,45 @@
 package typingsJapgolly.plottable.mod
 
 import typingsJapgolly.d3Time.mod.CountableTimeInterval
-import typingsJapgolly.plottable.tickGeneratorsMod.ITickGenerator
+import typingsJapgolly.plottable.buildSrcScalesTickGeneratorsMod.ITickGenerator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable", "Scales")
-@js.native
-object Scales extends js.Object {
+object Scales {
+  
+  @JSImport("plottable", "Scales")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("plottable", "Scales.Category")
   @js.native
   /**
     * A Category Scale maps strings to numbers.
     *
     * @constructor
     */
-  class Category ()
-    extends typingsJapgolly.plottable.scalesMod.Category
+  open class Category ()
+    extends typingsJapgolly.plottable.buildSrcScalesMod.Category
+  /* static members */
+  object Category {
+    
+    @JSImport("plottable", "Scales.Category")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable", "Scales.Category._convertToPlottableInnerPadding")
+    @js.native
+    def _convertToPlottableInnerPadding: Any = js.native
+    inline def _convertToPlottableInnerPadding_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_convertToPlottableInnerPadding")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Scales.Category._convertToPlottableOuterPadding")
+    @js.native
+    def _convertToPlottableOuterPadding: Any = js.native
+    inline def _convertToPlottableOuterPadding_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_convertToPlottableOuterPadding")(x.asInstanceOf[js.Any])
+  }
   
+  @JSImport("plottable", "Scales.Color")
   @js.native
   /**
     * A Color Scale maps string values to color hex values expressed as a string.
@@ -27,38 +49,93 @@ object Scales extends js.Object {
     *   (see https://github.com/mbostock/d3/wiki/Ordinal-Scales#categorical-colors)
     *   If not supplied, reads the colors defined using CSS -- see plottable.css.
     */
-  class Color ()
-    extends typingsJapgolly.plottable.scalesMod.Color {
+  open class Color ()
+    extends typingsJapgolly.plottable.buildSrcScalesMod.Color {
     def this(scaleType: String) = this()
   }
+  /* static members */
+  object Color {
+    
+    @JSImport("plottable", "Scales.Color")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable", "Scales.Color._LOOP_LIGHTEN_FACTOR")
+    @js.native
+    def _LOOP_LIGHTEN_FACTOR: Any = js.native
+    inline def _LOOP_LIGHTEN_FACTOR_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LOOP_LIGHTEN_FACTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Scales.Color._MAXIMUM_COLORS_FROM_CSS")
+    @js.native
+    def _MAXIMUM_COLORS_FROM_CSS: Any = js.native
+    inline def _MAXIMUM_COLORS_FROM_CSS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAXIMUM_COLORS_FROM_CSS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Scales.Color._getPlottableColors")
+    @js.native
+    def _getPlottableColors: Any = js.native
+    inline def _getPlottableColors_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getPlottableColors")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Scales.Color._plottableColorCache")
+    @js.native
+    def _plottableColorCache: Any = js.native
+    inline def _plottableColorCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_plottableColorCache")(x.asInstanceOf[js.Any])
+    
+    inline def invalidateColorCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidateColorCache")().asInstanceOf[Unit]
+  }
   
+  @JSImport("plottable", "Scales.InterpolatedColor")
   @js.native
   /**
     * An InterpolatedColor Scale maps numbers to color hex values, expressed as strings.
     *
     * @param {string} [scaleType="linear"] One of "linear"/"log"/"sqrt"/"pow".
     */
-  class InterpolatedColor ()
-    extends typingsJapgolly.plottable.scalesMod.InterpolatedColor {
+  open class InterpolatedColor ()
+    extends typingsJapgolly.plottable.buildSrcScalesMod.InterpolatedColor {
     def this(scaleType: String) = this()
   }
+  /* static members */
+  object InterpolatedColor {
+    
+    @JSImport("plottable", "Scales.InterpolatedColor")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable", "Scales.InterpolatedColor.BLUES")
+    @js.native
+    def BLUES: js.Array[String] = js.native
+    inline def BLUES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUES")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Scales.InterpolatedColor.POSNEG")
+    @js.native
+    def POSNEG: js.Array[String] = js.native
+    inline def POSNEG_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSNEG")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Scales.InterpolatedColor.REDS")
+    @js.native
+    def REDS: js.Array[String] = js.native
+    inline def REDS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REDS")(x.asInstanceOf[js.Any])
+  }
   
+  @JSImport("plottable", "Scales.Linear")
   @js.native
   /**
     * @constructor
     */
-  class Linear ()
-    extends typingsJapgolly.plottable.scalesMod.Linear
+  open class Linear ()
+    extends typingsJapgolly.plottable.buildSrcScalesMod.Linear
   
+  @JSImport("plottable", "Scales.Log")
   @js.native
   /**
     * @constructor
     */
-  class Log ()
-    extends typingsJapgolly.plottable.scalesMod.Log {
+  open class Log ()
+    extends typingsJapgolly.plottable.buildSrcScalesMod.Log {
     def this(base: Double) = this()
   }
   
+  @JSImport("plottable", "Scales.ModifiedLog")
   @js.native
   /**
     * A ModifiedLog Scale acts as a regular log scale for large numbers.
@@ -88,61 +165,44 @@ object Scales extends js.Object {
     *        The base of the log. Must be > 1.
     *
     */
-  class ModifiedLog ()
-    extends typingsJapgolly.plottable.scalesMod.ModifiedLog {
+  open class ModifiedLog ()
+    extends typingsJapgolly.plottable.buildSrcScalesMod.ModifiedLog {
     def this(base: Double) = this()
   }
   
+  object TickGenerators {
+    
+    @JSImport("plottable", "Scales.TickGenerators")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def integerTickGenerator(): ITickGenerator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("integerTickGenerator")().asInstanceOf[ITickGenerator[Double]]
+    
+    inline def intervalTickGenerator(interval: Double): ITickGenerator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("intervalTickGenerator")(interval.asInstanceOf[js.Any]).asInstanceOf[ITickGenerator[Double]]
+  }
+  
+  @JSImport("plottable", "Scales.Time")
   @js.native
   /**
     * A Time Scale maps Date objects to numbers.
     *
     * @constructor
     */
-  class Time ()
-    extends typingsJapgolly.plottable.scalesMod.Time
-  
-  def isTransformable(scale: js.Any): /* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean = js.native
+  open class Time ()
+    extends typingsJapgolly.plottable.buildSrcScalesMod.Time
   /* static members */
-  @js.native
-  object Category extends js.Object {
-    /* private */ def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = js.native
-    /* private */ def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Color extends js.Object {
-    var _LOOP_LIGHTEN_FACTOR: js.Any = js.native
-    var _MAXIMUM_COLORS_FROM_CSS: js.Any = js.native
-    var _plottableColorCache: js.Any = js.native
-    /* private */ def _getPlottableColors(): js.Any = js.native
-    def invalidateColorCache(): Unit = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object InterpolatedColor extends js.Object {
-    var BLUES: js.Array[String] = js.native
-    var POSNEG: js.Array[String] = js.native
-    var REDS: js.Array[String] = js.native
-  }
-  
-  @js.native
-  object TickGenerators extends js.Object {
-    def integerTickGenerator(): ITickGenerator[Double] = js.native
-    def intervalTickGenerator(interval: Double): ITickGenerator[Double] = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Time extends js.Object {
+  object Time {
+    
+    @JSImport("plottable", "Scales.Time")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Transforms the Plottable TimeInterval string into a d3 time interval equivalent.
       * If the provided TimeInterval is incorrect, the default is d3.timeYear
       */
-    def timeIntervalToD3Time(timeInterval: String, useUTC: Boolean): CountableTimeInterval = js.native
+    inline def timeIntervalToD3Time(timeInterval: String, useUTC: Boolean): CountableTimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("timeIntervalToD3Time")(timeInterval.asInstanceOf[js.Any], useUTC.asInstanceOf[js.Any])).asInstanceOf[CountableTimeInterval]
   }
   
+  inline def isTransformable(scale: Any): /* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransformable")(scale.asInstanceOf[js.Any]).asInstanceOf[/* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean]
 }
-

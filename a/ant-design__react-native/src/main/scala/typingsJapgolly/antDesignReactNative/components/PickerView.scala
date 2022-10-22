@@ -1,58 +1,55 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.pickerPropsTypeMod.PickerData
-import typingsJapgolly.antDesignReactNative.pickerViewMod.default
-import typingsJapgolly.antDesignReactNative.pickerViewPickerViewMod.PickerViewProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignReactNative.libPickerPropsTypeMod.PickerData
+import typingsJapgolly.antDesignReactNative.libPickerViewPickerViewMod.PickerViewProps
 import typingsJapgolly.reactNative.mod.StyleProp
+import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PickerView {
-  def apply(
-    cascade: js.UndefOr[Boolean] = js.undefined,
-    cols: Int | Double = null,
-    data: js.Array[js.Array[PickerData] | PickerData] = null,
-    indicatorStyle: StyleProp[ViewStyle] = null,
-    itemStyle: StyleProp[ViewStyle] = null,
-    onChange: /* value */ js.UndefOr[js.Any] => Callback = null,
-    onScrollChange: /* value */ js.UndefOr[js.Any] => Callback = null,
-    styles: js.Any = null,
-    value: js.Array[_] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PickerViewProps, default, Unit, PickerViewProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[js.Any]) => onChange(t0).runNow()))
-    if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[js.Any]) => onScrollChange(t0).runNow()))
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.pickerViewPickerViewMod.PickerViewProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.pickerViewMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.pickerViewPickerViewMod.PickerViewProps])(children: _*)
-  }
-  @JSImport("@ant-design/react-native/lib/picker-view", JSImport.Default)
+  @JSImport("@ant-design/react-native", "PickerView")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.PickerView] {
+    
+    inline def cascade(value: Boolean): this.type = set("cascade", value.asInstanceOf[js.Any])
+    
+    inline def cols(value: Double): this.type = set("cols", value.asInstanceOf[js.Any])
+    
+    inline def data(value: js.Array[js.Array[PickerData] | PickerData]): this.type = set("data", value.asInstanceOf[js.Any])
+    
+    inline def dataVarargs(value: (js.Array[PickerData] | PickerData)*): this.type = set("data", js.Array(value*))
+    
+    inline def indicatorStyle(value: StyleProp[ViewStyle]): this.type = set("indicatorStyle", value.asInstanceOf[js.Any])
+    
+    inline def indicatorStyleNull: this.type = set("indicatorStyle", null)
+    
+    inline def itemStyle(value: StyleProp[TextStyle]): this.type = set("itemStyle", value.asInstanceOf[js.Any])
+    
+    inline def itemStyleNull: this.type = set("itemStyle", null)
+    
+    inline def onChange(value: /* value */ js.UndefOr[Any] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* value */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def onScrollChange(value: /* value */ js.UndefOr[Any] => Callback): this.type = set("onScrollChange", js.Any.fromFunction1((t0: /* value */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def styles(value: Any): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def value(value: js.Array[Any]): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueVarargs(value: Any*): this.type = set("value", js.Array(value*))
+  }
+  
+  implicit def make(companion: PickerView.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PickerViewProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

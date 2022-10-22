@@ -1,19 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCRtpHeaderExtensionCapability extends js.Object {
+trait RTCRtpHeaderExtensionCapability extends StObject {
+  
+  /* standard dom */
   var uri: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object RTCRtpHeaderExtensionCapability {
-  @scala.inline
-  def apply(uri: java.lang.String = null): RTCRtpHeaderExtensionCapability = {
+  
+  inline def apply(): RTCRtpHeaderExtensionCapability = {
     val __obj = js.Dynamic.literal()
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpHeaderExtensionCapability]
   }
+  
+  extension [Self <: RTCRtpHeaderExtensionCapability](x: Self) {
+    
+    inline def setUri(value: java.lang.String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+  }
 }
-

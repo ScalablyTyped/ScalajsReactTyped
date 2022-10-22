@@ -1,23 +1,43 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SettingSource extends js.Object {
+trait SettingSource extends StObject {
+  
   // Not yet documented
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Not yet documented
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // Not yet documented. Possible values are: deviceConfiguration, deviceIntent.
+  var sourceType: js.UndefOr[SettingSourceType] = js.undefined
 }
-
 object SettingSource {
-  @scala.inline
-  def apply(displayName: String = null, id: String = null): SettingSource = {
+  
+  inline def apply(): SettingSource = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingSource]
   }
+  
+  extension [Self <: SettingSource](x: Self) {
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setSourceType(value: SettingSourceType): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+  }
 }
-

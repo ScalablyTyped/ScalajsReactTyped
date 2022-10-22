@@ -1,11 +1,12 @@
 package typingsJapgolly.flipsnap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlipsnapStatic extends js.Object {
+trait FlipsnapStatic extends StObject {
+  
   /**
     * @param element The element
     */
@@ -17,4 +18,3 @@ trait FlipsnapStatic extends js.Object {
   def apply(selector: String): IFlipsnap = js.native
   def apply(selector: String, opts: FlipsnapOptions): IFlipsnap = js.native
 }
-

@@ -1,77 +1,86 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.CallbackTo
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.modalMod.default
-import typingsJapgolly.antDesignReactNative.modalModalMod.ModalProps
-import typingsJapgolly.antDesignReactNative.modalPropsTypeMod.Action
-import typingsJapgolly.antDesignReactNative.modalStyleMod.ModalStyle
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignReactNative.libModalModalMod.ModalProps
+import typingsJapgolly.antDesignReactNative.libModalPropsTypeMod.Action
+import typingsJapgolly.antDesignReactNative.libModalStyleMod.ModalStyle
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Modal {
-  def apply(
-    visible: Boolean,
-    animateAppear: js.UndefOr[Boolean] = js.undefined,
-    animated: js.UndefOr[Boolean] = js.undefined,
-    animationType: js.Any = null,
-    bodyStyle: StyleProp[ViewStyle] = null,
-    closable: js.UndefOr[Boolean] = js.undefined,
-    footer: js.Array[Action[TextStyle]] = null,
-    locale: js.Object = null,
-    maskClosable: js.UndefOr[Boolean] = js.undefined,
-    onAnimationEnd: /* visible */ Boolean => Callback = null,
-    onClose: js.UndefOr[Callback] = js.undefined,
-    operation: js.UndefOr[Boolean] = js.undefined,
-    popup: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
-    styles: Partial[ModalStyle] = null,
-    title: VdomNode = null,
-    transparent: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ModalProps, default, Unit, ModalProps] = {
-    val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(animateAppear)) __obj.updateDynamic("animateAppear")(animateAppear.asInstanceOf[js.Any])
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
-    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.asInstanceOf[js.Any])
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1((t0: /* visible */ scala.Boolean) => onAnimationEnd(t0).runNow()))
-    onClose.foreach(p => __obj.updateDynamic("onClose")(p.toJsFn))
-    if (!js.isUndefined(operation)) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
-    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.modalModalMod.ModalProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.modalMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.modalModalMod.ModalProps])(children: _*)
+  inline def apply(visible: Boolean): Builder = {
+    val __props = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ModalProps]))
   }
-  @JSImport("@ant-design/react-native/lib/modal", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("@ant-design/react-native", "Modal")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.Modal] {
+    
+    inline def animateAppear(value: Boolean): this.type = set("animateAppear", value.asInstanceOf[js.Any])
+    
+    inline def animated(value: Boolean): this.type = set("animated", value.asInstanceOf[js.Any])
+    
+    inline def animationType(value: Any): this.type = set("animationType", value.asInstanceOf[js.Any])
+    
+    inline def bodyStyle(value: StyleProp[ViewStyle]): this.type = set("bodyStyle", value.asInstanceOf[js.Any])
+    
+    inline def bodyStyleNull: this.type = set("bodyStyle", null)
+    
+    inline def closable(value: Boolean): this.type = set("closable", value.asInstanceOf[js.Any])
+    
+    inline def footer(value: js.Array[Action[TextStyle]]): this.type = set("footer", value.asInstanceOf[js.Any])
+    
+    inline def footerVarargs(value: Action[TextStyle]*): this.type = set("footer", js.Array(value*))
+    
+    inline def locale(value: js.Object): this.type = set("locale", value.asInstanceOf[js.Any])
+    
+    inline def maskClosable(value: Boolean): this.type = set("maskClosable", value.asInstanceOf[js.Any])
+    
+    inline def onAnimationEnd(value: /* visible */ Boolean => Callback): this.type = set("onAnimationEnd", js.Any.fromFunction1((t0: /* visible */ Boolean) => value(t0).runNow()))
+    
+    inline def onClose(value: Callback): this.type = set("onClose", value.toJsFn)
+    
+    inline def onRequestClose(value: CallbackTo[Boolean]): this.type = set("onRequestClose", value.toJsFn)
+    
+    inline def operation(value: Boolean): this.type = set("operation", value.asInstanceOf[js.Any])
+    
+    inline def popup(value: Boolean): this.type = set("popup", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: Partial[ModalStyle]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def transparent(value: Boolean): this.type = set("transparent", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ModalProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

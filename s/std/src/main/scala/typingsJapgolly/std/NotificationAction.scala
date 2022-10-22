@@ -1,21 +1,35 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NotificationAction extends js.Object {
+trait NotificationAction extends StObject {
+  
+  /* standard dom */
   var action: java.lang.String
+  
+  /* standard dom */
   var icon: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var title: java.lang.String
 }
-
 object NotificationAction {
-  @scala.inline
-  def apply(action: java.lang.String, title: java.lang.String, icon: java.lang.String = null): NotificationAction = {
+  
+  inline def apply(action: java.lang.String, title: java.lang.String): NotificationAction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationAction]
   }
+  
+  extension [Self <: NotificationAction](x: Self) {
+    
+    inline def setAction(value: java.lang.String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setIcon(value: java.lang.String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+  }
 }
-

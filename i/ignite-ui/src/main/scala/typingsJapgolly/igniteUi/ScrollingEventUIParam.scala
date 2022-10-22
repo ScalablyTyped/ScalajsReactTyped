@@ -1,54 +1,72 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScrollingEventUIParam extends js.Object {
+trait ScrollingEventUIParam extends StObject {
+  
   /**
-  	 * Gets if the content is scrolled by the scrollbar track areas. 0 - none used, -1 - Scrolled Up/Left, 1 - Scrolled Down/Right.
-  	 */
+    * Gets if the content is scrolled by the scrollbar track areas. 0 - none used, -1 - Scrolled Up/Left, 1 - Scrolled Down/Right.
+    */
   var bigIncrement: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets which axis is being used to scroll - horizontal(true) or vertical(false).
-  	 */
+    * Gets which axis is being used to scroll - horizontal(true) or vertical(false).
+    */
   var horizontal: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets a reference to the igScroll.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the igScroll.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets if the content is scrolled by the arrows. 0 - none used, -1 - Arrow Up/Left, 1 - Arrow Down/Right.
-  	 */
+    * Gets if the content is scrolled by the arrows. 0 - none used, -1 - Arrow Up/Left, 1 - Arrow Down/Right.
+    */
   var smallIncrement: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets how much the content will be scrolled horizontally.
-  	 */
+    * Gets how much the content will be scrolled horizontally.
+    */
   var stepX: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets how much the content will be scrolled vertically.
-  	 */
+    * Gets how much the content will be scrolled vertically.
+    */
   var stepY: js.UndefOr[Double] = js.undefined
 }
-
 object ScrollingEventUIParam {
-  @scala.inline
-  def apply(
-    bigIncrement: Int | Double = null,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    owner: js.Any = null,
-    smallIncrement: Int | Double = null,
-    stepX: Int | Double = null,
-    stepY: Int | Double = null
-  ): ScrollingEventUIParam = {
+  
+  inline def apply(): ScrollingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (bigIncrement != null) __obj.updateDynamic("bigIncrement")(bigIncrement.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (smallIncrement != null) __obj.updateDynamic("smallIncrement")(smallIncrement.asInstanceOf[js.Any])
-    if (stepX != null) __obj.updateDynamic("stepX")(stepX.asInstanceOf[js.Any])
-    if (stepY != null) __obj.updateDynamic("stepY")(stepY.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollingEventUIParam]
   }
+  
+  extension [Self <: ScrollingEventUIParam](x: Self) {
+    
+    inline def setBigIncrement(value: Double): Self = StObject.set(x, "bigIncrement", value.asInstanceOf[js.Any])
+    
+    inline def setBigIncrementUndefined: Self = StObject.set(x, "bigIncrement", js.undefined)
+    
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setSmallIncrement(value: Double): Self = StObject.set(x, "smallIncrement", value.asInstanceOf[js.Any])
+    
+    inline def setSmallIncrementUndefined: Self = StObject.set(x, "smallIncrement", js.undefined)
+    
+    inline def setStepX(value: Double): Self = StObject.set(x, "stepX", value.asInstanceOf[js.Any])
+    
+    inline def setStepXUndefined: Self = StObject.set(x, "stepX", js.undefined)
+    
+    inline def setStepY(value: Double): Self = StObject.set(x, "stepY", value.asInstanceOf[js.Any])
+    
+    inline def setStepYUndefined: Self = StObject.set(x, "stepY", js.undefined)
+  }
 }
-

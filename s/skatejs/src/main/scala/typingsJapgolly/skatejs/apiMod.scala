@@ -1,5 +1,8 @@
 package typingsJapgolly.skatejs
 
+import org.scalajs.dom.EventTarget
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.skatejs.anon.TypeofWithComponent
 import typingsJapgolly.skatejs.typesMod.ComposedCustomEvent
 import typingsJapgolly.skatejs.typesMod.Constructor
 import typingsJapgolly.skatejs.typesMod.CustomElement
@@ -12,61 +15,81 @@ import typingsJapgolly.skatejs.typesMod.WithContext
 import typingsJapgolly.skatejs.typesMod.WithLifecycle
 import typingsJapgolly.skatejs.typesMod.WithRenderer
 import typingsJapgolly.skatejs.typesMod.WithUpdate
-import typingsJapgolly.std.EventTarget
-import typingsJapgolly.std.HTMLElement
 import typingsJapgolly.std.PropertyDecorator
 import typingsJapgolly.std.ShadowRoot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("skatejs/api", JSImport.Namespace)
-@js.native
-object apiMod extends js.Object {
-  def define[T /* <: HTMLElementClass */](ctor: T): T = js.native
-  def emit(elem: HTMLElementClass, eventName: String): Boolean = js.native
-  def emit(elem: HTMLElementClass, eventName: String, eventOptions: EventOptions): Boolean = js.native
-  def emit(elem: EventTarget, eventName: String): Boolean = js.native
-  def emit(elem: EventTarget, eventName: String, eventOptions: EventOptions): Boolean = js.native
-  def link(elem: CustomElement): js.Function1[/* e */ ComposedCustomEvent, Unit] = js.native
-  def link(elem: CustomElement, target: String): js.Function1[/* e */ ComposedCustomEvent, Unit] = js.native
-  def name(): String = js.native
-  def name(componentName: String): String = js.native
-  def prop(): PropertyDecorator with PropOptions[_] = js.native
-  def prop(ops: PropOptions[_]): PropertyDecorator with PropOptions[_] = js.native
-  def shadow(elem: CustomElement): ShadowRoot = js.native
-  def shadow(elem: HTMLElement): ShadowRoot = js.native
-  def withChildren[T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](): Constructor[WithChildren] with T = js.native
-  def withChildren[T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](Base: T): Constructor[WithChildren] with T = js.native
-  def withComponent[T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](): TypeofWithComponent = js.native
-  def withComponent[T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](Base: T): TypeofWithComponent = js.native
-  @JSName("withComponent")
-  def withComponent_PSCT_ConstructorHTMLElement_Intersection[P, S, C, T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](): (Constructor[WithComponent[P, S, C]]) with T = js.native
-  @JSName("withComponent")
-  def withComponent_PSCT_ConstructorHTMLElement_Intersection[P, S, C, T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](Base: T): (Constructor[WithComponent[P, S, C]]) with T = js.native
-  def withContext[C, T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](): Constructor[WithContext[C]] with T = js.native
-  def withContext[C, T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](Base: T): Constructor[WithContext[C]] with T = js.native
-  def withLifecycle[T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](): Constructor[WithLifecycle] with T = js.native
-  def withLifecycle[T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](Base: T): Constructor[WithLifecycle] with T = js.native
-  def withRenderer[O, T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](): Constructor[WithRenderer[O]] with T = js.native
-  def withRenderer[O, T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](Base: T): Constructor[WithRenderer[O]] with T = js.native
-  def withUpdate[P, S, T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](): (Constructor[WithUpdate[P, S]]) with T = js.native
-  def withUpdate[P, S, T /* <: Constructor[org.scalajs.dom.raw.HTMLElement] */](Base: T): (Constructor[WithUpdate[P, S]]) with T = js.native
+object apiMod {
+  
+  @JSImport("skatejs/api", JSImport.Namespace)
   @js.native
-  object props extends js.Object {
-    def any(target: js.Object, propertyKey: String): Unit = js.native
-    def any(target: js.Object, propertyKey: js.Symbol): Unit = js.native
-    def array(target: js.Object, propertyKey: String): Unit = js.native
-    def array(target: js.Object, propertyKey: js.Symbol): Unit = js.native
-    def boolean(target: js.Object, propertyKey: String): Unit = js.native
-    def boolean(target: js.Object, propertyKey: js.Symbol): Unit = js.native
-    def number(target: js.Object, propertyKey: String): Unit = js.native
-    def number(target: js.Object, propertyKey: js.Symbol): Unit = js.native
-    def `object`(target: js.Object, propertyKey: String): Unit = js.native
-    def `object`(target: js.Object, propertyKey: js.Symbol): Unit = js.native
-    def string(target: js.Object, propertyKey: String): Unit = js.native
-    def string(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  inline def define[T /* <: HTMLElementClass */](ctor: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(ctor.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  inline def emit(elem: EventTarget, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(elem.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def emit(elem: EventTarget, eventName: String, eventOptions: EventOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(elem.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def emit(elem: HTMLElementClass, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(elem.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def emit(elem: HTMLElementClass, eventName: String, eventOptions: EventOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(elem.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def link(elem: CustomElement): js.Function1[/* e */ ComposedCustomEvent, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(elem.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* e */ ComposedCustomEvent, Unit]]
+  inline def link(elem: CustomElement, target: String): js.Function1[/* e */ ComposedCustomEvent, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(elem.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* e */ ComposedCustomEvent, Unit]]
+  
+  inline def name(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")().asInstanceOf[String]
+  inline def name(componentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(componentName.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def prop(): PropertyDecorator & PropOptions[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")().asInstanceOf[PropertyDecorator & PropOptions[Any]]
+  inline def prop(ops: PropOptions[Any]): PropertyDecorator & PropOptions[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(ops.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator & PropOptions[Any]]
+  
+  /* Inlined std.Readonly<{  any :skatejs.skatejs/types.PropOptions<any> & std.PropertyDecorator,   array :skatejs.skatejs/types.PropOptions<std.Array<any>> & std.PropertyDecorator,   boolean :skatejs.skatejs/types.PropOptions<boolean> & std.PropertyDecorator,   number :skatejs.skatejs/types.PropOptions<number> & std.PropertyDecorator,   object :skatejs.skatejs/types.PropOptions<object> & std.PropertyDecorator,   string :skatejs.skatejs/types.PropOptions<string> & std.PropertyDecorator}> */
+  object props {
+    
+    @JSImport("skatejs/api", "props")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def any(target: js.Object, propertyKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def any(target: js.Object, propertyKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def array(target: js.Object, propertyKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def array(target: js.Object, propertyKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def boolean(target: js.Object, propertyKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def boolean(target: js.Object, propertyKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def number(target: js.Object, propertyKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def number(target: js.Object, propertyKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def `object`(target: js.Object, propertyKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def `object`(target: js.Object, propertyKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def string(target: js.Object, propertyKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("string")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def string(target: js.Object, propertyKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("string")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
+  inline def shadow(elem: HTMLElement): ShadowRoot = ^.asInstanceOf[js.Dynamic].applyDynamic("shadow")(elem.asInstanceOf[js.Any]).asInstanceOf[ShadowRoot]
+  inline def shadow(elem: CustomElement): ShadowRoot = ^.asInstanceOf[js.Dynamic].applyDynamic("shadow")(elem.asInstanceOf[js.Any]).asInstanceOf[ShadowRoot]
+  
+  inline def withChildren[T /* <: Constructor[HTMLElement] */](): Constructor[WithChildren] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withChildren")().asInstanceOf[Constructor[WithChildren] & T]
+  inline def withChildren[T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithChildren] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withChildren")(Base.asInstanceOf[js.Any]).asInstanceOf[Constructor[WithChildren] & T]
+  
+  inline def withComponent[T /* <: Constructor[HTMLElement] */](): TypeofWithComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")().asInstanceOf[TypeofWithComponent]
+  inline def withComponent[T /* <: Constructor[HTMLElement] */](Base: T): TypeofWithComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(Base.asInstanceOf[js.Any]).asInstanceOf[TypeofWithComponent]
+  
+  inline def withComponent_PSCT_Intersection[P, S, C, T /* <: Constructor[HTMLElement] */](): (Constructor[WithComponent[P, S, C]]) & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")().asInstanceOf[(Constructor[WithComponent[P, S, C]]) & T]
+  inline def withComponent_PSCT_Intersection[P, S, C, T /* <: Constructor[HTMLElement] */](Base: T): (Constructor[WithComponent[P, S, C]]) & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(Base.asInstanceOf[js.Any]).asInstanceOf[(Constructor[WithComponent[P, S, C]]) & T]
+  
+  inline def withContext[C, T /* <: Constructor[HTMLElement] */](): Constructor[WithContext[C]] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withContext")().asInstanceOf[Constructor[WithContext[C]] & T]
+  inline def withContext[C, T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithContext[C]] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withContext")(Base.asInstanceOf[js.Any]).asInstanceOf[Constructor[WithContext[C]] & T]
+  
+  inline def withLifecycle[T /* <: Constructor[HTMLElement] */](): Constructor[WithLifecycle] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withLifecycle")().asInstanceOf[Constructor[WithLifecycle] & T]
+  inline def withLifecycle[T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithLifecycle] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withLifecycle")(Base.asInstanceOf[js.Any]).asInstanceOf[Constructor[WithLifecycle] & T]
+  
+  inline def withRenderer[O, T /* <: Constructor[HTMLElement] */](): Constructor[WithRenderer[O]] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withRenderer")().asInstanceOf[Constructor[WithRenderer[O]] & T]
+  inline def withRenderer[O, T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithRenderer[O]] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withRenderer")(Base.asInstanceOf[js.Any]).asInstanceOf[Constructor[WithRenderer[O]] & T]
+  
+  inline def withUpdate[P, S, T /* <: Constructor[HTMLElement] */](): (Constructor[WithUpdate[P, S]]) & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withUpdate")().asInstanceOf[(Constructor[WithUpdate[P, S]]) & T]
+  inline def withUpdate[P, S, T /* <: Constructor[HTMLElement] */](Base: T): (Constructor[WithUpdate[P, S]]) & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withUpdate")(Base.asInstanceOf[js.Any]).asInstanceOf[(Constructor[WithUpdate[P, S]]) & T]
 }
-

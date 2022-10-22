@@ -1,22 +1,23 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import typingsJapgolly.dateFns.anon.WeekStartsOn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/setDay", JSImport.Namespace)
-@js.native
-object esmSetDayMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(date: Double, day: Double): js.Date = js.native
-    def apply(date: Double, day: Double, options: AnonLocale): js.Date = js.native
-    def apply(date: Double, day: Double, options: AnonWeekStartsOn): js.Date = js.native
-    def apply(date: Date, day: Double): js.Date = js.native
-    def apply(date: Date, day: Double, options: AnonLocale): js.Date = js.native
-    def apply(date: Date, day: Double, options: AnonWeekStartsOn): js.Date = js.native
-  }
+object esmSetDayMod {
   
+  object default {
+    
+    inline def apply(date: js.Date, day: Double): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    inline def apply(date: js.Date, day: Double, options: typingsJapgolly.dateFns.anon.Locale): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    inline def apply(date: js.Date, day: Double, options: WeekStartsOn): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    inline def apply(date: Double, day: Double): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    inline def apply(date: Double, day: Double, options: typingsJapgolly.dateFns.anon.Locale): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    inline def apply(date: Double, day: Double, options: WeekStartsOn): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], day.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    
+    @JSImport("date-fns/esm/setDay", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

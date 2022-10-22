@@ -1,20 +1,28 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.AnonOnSelect
-import typingsJapgolly.antdMobileRn.popoverIndexNativeMod.default
+import typingsJapgolly.antdMobileRn.anon.OnSelect
+import typingsJapgolly.antdMobileRn.libPopoverIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "Popover")
 @js.native
-class Popover () extends default
-
+open class Popover () extends default
 /* static members */
-@JSImport("antd-mobile-rn", "Popover")
-@js.native
-object Popover extends js.Object {
-  var Item: js.Any = js.native
-  var defaultProps: AnonOnSelect = js.native
+object Popover {
+  
+  @JSImport("antd-mobile-rn", "Popover")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "Popover.Item")
+  @js.native
+  def Item: Any = js.native
+  inline def Item_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile-rn", "Popover.defaultProps")
+  @js.native
+  def defaultProps: OnSelect = js.native
+  inline def defaultProps_=(x: OnSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

@@ -1,30 +1,41 @@
 package typingsJapgolly.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Database
-trait DatabaseUser extends js.Object {
+trait DatabaseUser extends StObject {
+  
   var active: js.UndefOr[Boolean] = js.undefined
+  
   var extra: js.UndefOr[js.Object] = js.undefined
+  
   var passwd: js.UndefOr[String] = js.undefined
+  
   var username: String
 }
-
 object DatabaseUser {
-  @scala.inline
-  def apply(
-    username: String,
-    active: js.UndefOr[Boolean] = js.undefined,
-    extra: js.Object = null,
-    passwd: String = null
-  ): DatabaseUser = {
+  
+  inline def apply(username: String): DatabaseUser = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (passwd != null) __obj.updateDynamic("passwd")(passwd.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseUser]
   }
+  
+  extension [Self <: DatabaseUser](x: Self) {
+    
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    
+    inline def setExtra(value: js.Object): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+    
+    inline def setPasswd(value: String): Self = StObject.set(x, "passwd", value.asInstanceOf[js.Any])
+    
+    inline def setPasswdUndefined: Self = StObject.set(x, "passwd", js.undefined)
+    
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+  }
 }
-

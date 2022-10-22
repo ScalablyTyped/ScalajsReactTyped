@@ -1,20 +1,26 @@
 package typingsJapgolly.videoJs.mod.videojs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CloseButtonOptions extends ComponentOptions {
+trait CloseButtonOptions
+  extends StObject
+     with ComponentOptions {
+  
   var controlText: js.UndefOr[String] = js.undefined
 }
-
 object CloseButtonOptions {
-  @scala.inline
-  def apply(children: js.Array[Child] = null, controlText: String = null): CloseButtonOptions = {
+  
+  inline def apply(): CloseButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (controlText != null) __obj.updateDynamic("controlText")(controlText.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseButtonOptions]
   }
+  
+  extension [Self <: CloseButtonOptions](x: Self) {
+    
+    inline def setControlText(value: String): Self = StObject.set(x, "controlText", value.asInstanceOf[js.Any])
+    
+    inline def setControlTextUndefined: Self = StObject.set(x, "controlText", js.undefined)
+  }
 }
-

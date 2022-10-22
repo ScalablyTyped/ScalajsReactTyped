@@ -1,56 +1,50 @@
 package typingsJapgolly.reactBreadcrumbs.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.ComponentClassP
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.ComponentClassP
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.react.mod.StatelessComponent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.FunctionComponent
+import typingsJapgolly.react.mod.PropsWithChildren
 import typingsJapgolly.reactBreadcrumbs.mod.BreadcrumbsProps
 import typingsJapgolly.reactBreadcrumbs.mod.Crumbs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Breadcrumbs {
-  def apply(
-    className: String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    separator: VdomNode = null,
-    setCrumbs: /* crumbs */ Crumbs => CallbackTo[Node] = null,
-    wrapper: StatelessComponent[js.Object] | ComponentClassP[js.Object] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    BreadcrumbsProps, 
-    typingsJapgolly.reactBreadcrumbs.mod.Breadcrumbs, 
-    Unit, 
-    BreadcrumbsProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.rawNode.asInstanceOf[js.Any])
-    if (setCrumbs != null) __obj.updateDynamic("setCrumbs")(js.Any.fromFunction1((t0: /* crumbs */ typingsJapgolly.reactBreadcrumbs.mod.Crumbs) => setCrumbs(t0).runNow()))
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBreadcrumbs.mod.BreadcrumbsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactBreadcrumbs.mod.Breadcrumbs](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBreadcrumbs.mod.BreadcrumbsProps])(children: _*)
-  }
   @JSImport("react-breadcrumbs", "Breadcrumbs")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactBreadcrumbs.mod.Breadcrumbs] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def hidden(value: Boolean): this.type = set("hidden", value.asInstanceOf[js.Any])
+    
+    inline def separator(value: VdomNode): this.type = set("separator", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def separatorNull: this.type = set("separator", null)
+    
+    inline def separatorVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("separator", js.Array(value*))
+    
+    inline def separatorVdomElement(value: VdomElement): this.type = set("separator", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setCrumbs(value: /* crumbs */ Crumbs => Node): this.type = set("setCrumbs", js.Any.fromFunction1(value))
+    
+    inline def wrapper(value: FunctionComponent[js.Object] | ComponentClassP[js.Object]): this.type = set("wrapper", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Breadcrumbs.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PropsWithChildren[BreadcrumbsProps]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

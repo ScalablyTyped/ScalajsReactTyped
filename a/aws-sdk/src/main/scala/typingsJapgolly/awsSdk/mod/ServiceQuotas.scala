@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.servicequotasMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsServicequotasMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "ServiceQuotas")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ServiceQuotas ()
-  extends typingsJapgolly.awsSdk.allMod.ServiceQuotas {
+open class ServiceQuotas ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.ServiceQuotas {
   def this(options: ClientConfiguration) = this()
 }
-

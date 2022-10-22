@@ -1,54 +1,72 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Beacon extends js.Object {
+trait Beacon extends StObject {
+  
   /**
     * iBeacon 设备的距离
     */
   var accuracy: js.UndefOr[Double] = js.undefined
+  
   /**
     * iBeacon 设备的主 id
     */
   var major: js.UndefOr[String] = js.undefined
+  
   /**
     * iBeacon 设备的次 id
     */
   var minor: js.UndefOr[String] = js.undefined
+  
   /**
     * 表示设备距离的枚举值
     */
   var proximity: js.UndefOr[Double] = js.undefined
+  
   /**
     * 表示设备的信号强度
     */
   var rssi: js.UndefOr[Double] = js.undefined
+  
   /**
     * iBeacon 设备广播的 uuid
     */
   var uuid: js.UndefOr[String] = js.undefined
 }
-
 object Beacon {
-  @scala.inline
-  def apply(
-    accuracy: Int | Double = null,
-    major: String = null,
-    minor: String = null,
-    proximity: Int | Double = null,
-    rssi: Int | Double = null,
-    uuid: String = null
-  ): Beacon = {
+  
+  inline def apply(): Beacon = {
     val __obj = js.Dynamic.literal()
-    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
-    if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
-    if (minor != null) __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
-    if (proximity != null) __obj.updateDynamic("proximity")(proximity.asInstanceOf[js.Any])
-    if (rssi != null) __obj.updateDynamic("rssi")(rssi.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Beacon]
   }
+  
+  extension [Self <: Beacon](x: Self) {
+    
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    
+    inline def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
+    
+    inline def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    
+    inline def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
+    
+    inline def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    
+    inline def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
+    
+    inline def setProximity(value: Double): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
+    
+    inline def setProximityUndefined: Self = StObject.set(x, "proximity", js.undefined)
+    
+    inline def setRssi(value: Double): Self = StObject.set(x, "rssi", value.asInstanceOf[js.Any])
+    
+    inline def setRssiUndefined: Self = StObject.set(x, "rssi", js.undefined)
+    
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+  }
 }
-

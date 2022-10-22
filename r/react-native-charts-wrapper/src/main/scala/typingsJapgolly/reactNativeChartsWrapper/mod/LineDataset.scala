@@ -1,26 +1,34 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LineDataset extends Dataset {
+trait LineDataset
+  extends StObject
+     with Dataset {
+  
   var config: js.UndefOr[LineDatasetConfig] = js.undefined
+  
   var values: js.UndefOr[js.Array[Double | LineValue]] = js.undefined
 }
-
 object LineDataset {
-  @scala.inline
-  def apply(
-    config: LineDatasetConfig = null,
-    label: String = null,
-    values: js.Array[Double | LineValue] = null
-  ): LineDataset = {
+  
+  inline def apply(): LineDataset = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineDataset]
   }
+  
+  extension [Self <: LineDataset](x: Self) {
+    
+    inline def setConfig(value: LineDatasetConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    
+    inline def setValues(value: js.Array[Double | LineValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: (Double | LineValue)*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

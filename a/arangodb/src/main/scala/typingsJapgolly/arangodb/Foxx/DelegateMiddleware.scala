@@ -1,20 +1,22 @@
 package typingsJapgolly.arangodb.Foxx
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DelegateMiddleware extends js.Object {
+trait DelegateMiddleware extends StObject {
+  
   def register(endpoint: Endpoint): SimpleMiddleware
 }
-
 object DelegateMiddleware {
-  @scala.inline
-  def apply(register: Endpoint => CallbackTo[SimpleMiddleware]): DelegateMiddleware = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("register")(js.Any.fromFunction1((t0: typingsJapgolly.arangodb.Foxx.Endpoint) => register(t0).runNow()))
+  
+  inline def apply(register: Endpoint => SimpleMiddleware): DelegateMiddleware = {
+    val __obj = js.Dynamic.literal(register = js.Any.fromFunction1(register))
     __obj.asInstanceOf[DelegateMiddleware]
   }
+  
+  extension [Self <: DelegateMiddleware](x: Self) {
+    
+    inline def setRegister(value: Endpoint => SimpleMiddleware): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+  }
 }
-

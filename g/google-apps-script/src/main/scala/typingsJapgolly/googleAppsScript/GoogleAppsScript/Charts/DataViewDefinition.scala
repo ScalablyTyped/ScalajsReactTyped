@@ -1,8 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A data view definition for visualizing chart data.
@@ -14,5 +14,4 @@ import scala.scalajs.js.annotation._
   * to define and use a DataViewDefinition.
   */
 // tslint:disable-next-line: no-empty-interface
-trait DataViewDefinition extends js.Object
-
+trait DataViewDefinition extends StObject

@@ -1,17 +1,43 @@
 package typingsJapgolly.googlePicker.google.picker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
+sealed trait Type extends StObject
 @JSGlobal("google.picker.Type")
 @js.native
-object Type extends js.Object {
-  var ALBUM: String = js.native
-  var DOCUMENT: String = js.native
-  var LOCATION: String = js.native
-  var PHOTO: String = js.native
-  var URL: String = js.native
-  var VIDEO: String = js.native
+object Type extends StObject {
+  
+  /** @deprecated */
+  @js.native
+  sealed trait ALBUM
+    extends StObject
+       with Type
+  
+  @js.native
+  sealed trait DOCUMENT
+    extends StObject
+       with Type
+  
+  @js.native
+  sealed trait LOCATION
+    extends StObject
+       with Type
+  
+  @js.native
+  sealed trait PHOTO
+    extends StObject
+       with Type
+  
+  @js.native
+  sealed trait URL
+    extends StObject
+       with Type
+  
+  @js.native
+  sealed trait VIDEO
+    extends StObject
+       with Type
 }
-

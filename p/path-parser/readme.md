@@ -1,7 +1,7 @@
 
 # Scala.js typings for path-parser
 
-Typings are for version 4.2.0
+Typings are for version 6.1.0
 
 ## Library description:
 A small utility to parse, match and generate paths
@@ -10,10 +10,10 @@ A small utility to parse, match and generate paths
 | ------------------ | :-------------: |
 | Full name          | path-parser |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 30 |
-| # downloads        | 1115393 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 333902.0 |
+| # stars            | 135.0 |
 
 ## Links
 - [Homepage](https://github.com/troch/path-parser)

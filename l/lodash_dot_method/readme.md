@@ -10,10 +10,10 @@ The lodash method `_.method` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.method |
 | Keywords           | lodash-modularized, method |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1411 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 162.66666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

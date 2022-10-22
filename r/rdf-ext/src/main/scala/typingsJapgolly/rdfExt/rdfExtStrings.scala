@@ -1,54 +1,48 @@
 package typingsJapgolly.rdfExt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rdfExtStrings {
-  @js.native
-  sealed trait graph extends js.Object
   
   @js.native
-  sealed trait has extends js.Object
+  sealed trait Quad extends StObject
+  inline def Quad: Quad = "Quad".asInstanceOf[Quad]
   
   @js.native
-  sealed trait language extends js.Object
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait graph extends StObject
+  inline def graph: graph = "graph".asInstanceOf[graph]
   
   @js.native
-  sealed trait predicate extends js.Object
+  sealed trait language extends StObject
+  inline def language: language = "language".asInstanceOf[language]
   
   @js.native
-  sealed trait subject extends js.Object
+  sealed trait `object` extends StObject
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait termType extends js.Object
+  sealed trait predicate extends StObject
+  inline def predicate: predicate = "predicate".asInstanceOf[predicate]
   
   @js.native
-  sealed trait toJSON extends js.Object
+  sealed trait subject extends StObject
+  inline def subject: subject = "subject".asInstanceOf[subject]
   
   @js.native
-  sealed trait value extends js.Object
+  sealed trait termType extends StObject
+  inline def termType: termType = "termType".asInstanceOf[termType]
   
-  @scala.inline
-  def graph: graph = "graph".asInstanceOf[graph]
-  @scala.inline
-  def has: has = "has".asInstanceOf[has]
-  @scala.inline
-  def language: language = "language".asInstanceOf[language]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def predicate: predicate = "predicate".asInstanceOf[predicate]
-  @scala.inline
-  def subject: subject = "subject".asInstanceOf[subject]
-  @scala.inline
-  def termType: termType = "termType".asInstanceOf[termType]
-  @scala.inline
-  def toJSON: toJSON = "toJSON".asInstanceOf[toJSON]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
+  @js.native
+  sealed trait toJSON extends StObject
+  inline def toJSON: toJSON = "toJSON".asInstanceOf[toJSON]
+  
+  @js.native
+  sealed trait value extends StObject
+  inline def value: value = "value".asInstanceOf[value]
 }
-

@@ -1,30 +1,38 @@
 package typingsJapgolly.openlayers.mod.olx.interaction
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.openlayers.mod.EventsConditionType
 import typingsJapgolly.openlayers.mod.MapBrowserEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KeyboardPanOptions extends js.Object {
+trait KeyboardPanOptions extends StObject {
+  
   var condition: js.UndefOr[EventsConditionType] = js.undefined
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
   var pixelDelta: js.UndefOr[Double] = js.undefined
 }
-
 object KeyboardPanOptions {
-  @scala.inline
-  def apply(
-    condition: /* event */ MapBrowserEvent => CallbackTo[Boolean] = null,
-    duration: Int | Double = null,
-    pixelDelta: Int | Double = null
-  ): KeyboardPanOptions = {
+  
+  inline def apply(): KeyboardPanOptions = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.openlayers.mod.MapBrowserEvent) => condition(t0).runNow()))
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (pixelDelta != null) __obj.updateDynamic("pixelDelta")(pixelDelta.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardPanOptions]
   }
+  
+  extension [Self <: KeyboardPanOptions](x: Self) {
+    
+    inline def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
+    
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setPixelDelta(value: Double): Self = StObject.set(x, "pixelDelta", value.asInstanceOf[js.Any])
+    
+    inline def setPixelDeltaUndefined: Self = StObject.set(x, "pixelDelta", js.undefined)
+  }
 }
-

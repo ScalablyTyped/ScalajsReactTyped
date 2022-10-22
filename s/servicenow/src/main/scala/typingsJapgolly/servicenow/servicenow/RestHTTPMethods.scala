@@ -1,8 +1,8 @@
 package typingsJapgolly.servicenow.servicenow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.servicenow.servicenowStrings.get
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.servicenow.servicenowStrings.head
   - typingsJapgolly.servicenow.servicenowStrings.options
 */
-trait RestHTTPMethods extends js.Object
-
+trait RestHTTPMethods extends StObject
 object RestHTTPMethods {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def delete: typingsJapgolly.servicenow.servicenowStrings.delete = this.cast("delete")
-  @scala.inline
-  def get: typingsJapgolly.servicenow.servicenowStrings.get = this.cast("get")
-  @scala.inline
-  def head: typingsJapgolly.servicenow.servicenowStrings.head = this.cast("head")
-  @scala.inline
-  def options: typingsJapgolly.servicenow.servicenowStrings.options = this.cast("options")
-  @scala.inline
-  def patch: typingsJapgolly.servicenow.servicenowStrings.patch = this.cast("patch")
-  @scala.inline
-  def post: typingsJapgolly.servicenow.servicenowStrings.post = this.cast("post")
-  @scala.inline
-  def put: typingsJapgolly.servicenow.servicenowStrings.put = this.cast("put")
+  
+  inline def delete: typingsJapgolly.servicenow.servicenowStrings.delete = "delete".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.delete]
+  
+  inline def get: typingsJapgolly.servicenow.servicenowStrings.get = "get".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.get]
+  
+  inline def head: typingsJapgolly.servicenow.servicenowStrings.head = "head".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.head]
+  
+  inline def options: typingsJapgolly.servicenow.servicenowStrings.options = "options".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.options]
+  
+  inline def patch: typingsJapgolly.servicenow.servicenowStrings.patch = "patch".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.patch]
+  
+  inline def post: typingsJapgolly.servicenow.servicenowStrings.post = "post".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.post]
+  
+  inline def put: typingsJapgolly.servicenow.servicenowStrings.put = "put".asInstanceOf[typingsJapgolly.servicenow.servicenowStrings.put]
 }
-

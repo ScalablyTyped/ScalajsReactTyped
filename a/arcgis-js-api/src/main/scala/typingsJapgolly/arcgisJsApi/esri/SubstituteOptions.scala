@@ -1,14 +1,16 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.arcgisJsApi.HashMap
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SubstituteOptions extends Object {
+trait SubstituteOptions
+  extends StObject
+     with Object {
+  
   /**
     * A hashmap of string keys to formatting options.
     *
@@ -16,19 +18,20 @@ trait SubstituteOptions extends Object {
     */
   var format: HashMap[SubstituteDateTimeFormatOptions | SubstituteNumberFormatOptions]
 }
-
 object SubstituteOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     format: HashMap[SubstituteDateTimeFormatOptions | SubstituteNumberFormatOptions],
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean]
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): SubstituteOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[SubstituteOptions]
   }
+  
+  extension [Self <: SubstituteOptions](x: Self) {
+    
+    inline def setFormat(value: HashMap[SubstituteDateTimeFormatOptions | SubstituteNumberFormatOptions]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+  }
 }
-

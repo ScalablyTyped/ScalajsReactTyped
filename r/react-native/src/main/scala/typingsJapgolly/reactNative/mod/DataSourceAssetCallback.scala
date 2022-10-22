@@ -1,33 +1,44 @@
 package typingsJapgolly.reactNative.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSourceAssetCallback extends js.Object {
+trait DataSourceAssetCallback extends StObject {
+  
   var getRowData: js.UndefOr[
-    js.Function3[/* dataBlob */ js.Any, /* sectionID */ Double | String, /* rowID */ Double | String, _]
+    js.Function3[/* dataBlob */ Any, /* sectionID */ Double | String, /* rowID */ Double | String, Any]
   ] = js.undefined
-  var getSectionHeaderData: js.UndefOr[js.Function2[/* dataBlob */ js.Any, /* sectionID */ Double | String, _]] = js.undefined
-  var rowHasChanged: js.UndefOr[js.Function2[/* r1 */ js.Any, /* r2 */ js.Any, Boolean]] = js.undefined
-  var sectionHeaderHasChanged: js.UndefOr[js.Function2[/* h1 */ js.Any, /* h2 */ js.Any, Boolean]] = js.undefined
+  
+  var getSectionHeaderData: js.UndefOr[js.Function2[/* dataBlob */ Any, /* sectionID */ Double | String, Any]] = js.undefined
+  
+  var rowHasChanged: js.UndefOr[js.Function2[/* r1 */ Any, /* r2 */ Any, Boolean]] = js.undefined
+  
+  var sectionHeaderHasChanged: js.UndefOr[js.Function2[/* h1 */ Any, /* h2 */ Any, Boolean]] = js.undefined
 }
-
 object DataSourceAssetCallback {
-  @scala.inline
-  def apply(
-    getRowData: (/* dataBlob */ js.Any, /* sectionID */ Double | String, /* rowID */ Double | String) => CallbackTo[js.Any] = null,
-    getSectionHeaderData: (/* dataBlob */ js.Any, /* sectionID */ Double | String) => CallbackTo[js.Any] = null,
-    rowHasChanged: (/* r1 */ js.Any, /* r2 */ js.Any) => CallbackTo[Boolean] = null,
-    sectionHeaderHasChanged: (/* h1 */ js.Any, /* h2 */ js.Any) => CallbackTo[Boolean] = null
-  ): DataSourceAssetCallback = {
+  
+  inline def apply(): DataSourceAssetCallback = {
     val __obj = js.Dynamic.literal()
-    if (getRowData != null) __obj.updateDynamic("getRowData")(js.Any.fromFunction3((t0: /* dataBlob */ js.Any, t1: /* sectionID */ scala.Double | java.lang.String, t2: /* rowID */ scala.Double | java.lang.String) => getRowData(t0, t1, t2).runNow()))
-    if (getSectionHeaderData != null) __obj.updateDynamic("getSectionHeaderData")(js.Any.fromFunction2((t0: /* dataBlob */ js.Any, t1: /* sectionID */ scala.Double | java.lang.String) => getSectionHeaderData(t0, t1).runNow()))
-    if (rowHasChanged != null) __obj.updateDynamic("rowHasChanged")(js.Any.fromFunction2((t0: /* r1 */ js.Any, t1: /* r2 */ js.Any) => rowHasChanged(t0, t1).runNow()))
-    if (sectionHeaderHasChanged != null) __obj.updateDynamic("sectionHeaderHasChanged")(js.Any.fromFunction2((t0: /* h1 */ js.Any, t1: /* h2 */ js.Any) => sectionHeaderHasChanged(t0, t1).runNow()))
     __obj.asInstanceOf[DataSourceAssetCallback]
   }
+  
+  extension [Self <: DataSourceAssetCallback](x: Self) {
+    
+    inline def setGetRowData(value: (/* dataBlob */ Any, /* sectionID */ Double | String, /* rowID */ Double | String) => Any): Self = StObject.set(x, "getRowData", js.Any.fromFunction3(value))
+    
+    inline def setGetRowDataUndefined: Self = StObject.set(x, "getRowData", js.undefined)
+    
+    inline def setGetSectionHeaderData(value: (/* dataBlob */ Any, /* sectionID */ Double | String) => Any): Self = StObject.set(x, "getSectionHeaderData", js.Any.fromFunction2(value))
+    
+    inline def setGetSectionHeaderDataUndefined: Self = StObject.set(x, "getSectionHeaderData", js.undefined)
+    
+    inline def setRowHasChanged(value: (/* r1 */ Any, /* r2 */ Any) => Boolean): Self = StObject.set(x, "rowHasChanged", js.Any.fromFunction2(value))
+    
+    inline def setRowHasChangedUndefined: Self = StObject.set(x, "rowHasChanged", js.undefined)
+    
+    inline def setSectionHeaderHasChanged(value: (/* h1 */ Any, /* h2 */ Any) => Boolean): Self = StObject.set(x, "sectionHeaderHasChanged", js.Any.fromFunction2(value))
+    
+    inline def setSectionHeaderHasChangedUndefined: Self = StObject.set(x, "sectionHeaderHasChanged", js.undefined)
+  }
 }
-

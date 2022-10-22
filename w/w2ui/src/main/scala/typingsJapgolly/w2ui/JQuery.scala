@@ -1,47 +1,61 @@
 package typingsJapgolly.w2ui
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.w2ui.W2UI_.W2Form
-import typingsJapgolly.w2ui.W2UI_.W2Grid
-import typingsJapgolly.w2ui.W2UI_.W2Layout
-import typingsJapgolly.w2ui.W2UI_.W2Popup
-import typingsJapgolly.w2ui.W2UI_.W2Sidebar
-import typingsJapgolly.w2ui.W2UI_.W2Tabs
-import typingsJapgolly.w2ui.W2UI_.W2Toolbar
+import typingsJapgolly.w2ui.W2UI.W2Form
+import typingsJapgolly.w2ui.W2UI.W2Grid
+import typingsJapgolly.w2ui.W2UI.W2Layout
+import typingsJapgolly.w2ui.W2UI.W2Popup
+import typingsJapgolly.w2ui.W2UI.W2Sidebar
+import typingsJapgolly.w2ui.W2UI.W2Tabs
+import typingsJapgolly.w2ui.W2UI.W2Toolbar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   def w2form(options: js.Object): W2Form
+  
   def w2grid(options: js.Object): W2Grid
+  
   def w2layout(options: js.Object): W2Layout
+  
   def w2popup(options: js.Object): W2Popup
+  
   def w2sidebar(options: js.Object): W2Sidebar
+  
   def w2tabs(options: js.Object): W2Tabs
+  
   def w2toolbar(options: js.Object): W2Toolbar
 }
-
 object JQuery {
-  @scala.inline
-  def apply(
-    w2form: js.Object => CallbackTo[W2Form],
-    w2grid: js.Object => CallbackTo[W2Grid],
-    w2layout: js.Object => CallbackTo[W2Layout],
-    w2popup: js.Object => CallbackTo[W2Popup],
-    w2sidebar: js.Object => CallbackTo[W2Sidebar],
-    w2tabs: js.Object => CallbackTo[W2Tabs],
-    w2toolbar: js.Object => CallbackTo[W2Toolbar]
+  
+  inline def apply(
+    w2form: js.Object => W2Form,
+    w2grid: js.Object => W2Grid,
+    w2layout: js.Object => W2Layout,
+    w2popup: js.Object => W2Popup,
+    w2sidebar: js.Object => W2Sidebar,
+    w2tabs: js.Object => W2Tabs,
+    w2toolbar: js.Object => W2Toolbar
   ): JQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("w2form")(js.Any.fromFunction1((t0: js.Object) => w2form(t0).runNow()))
-    __obj.updateDynamic("w2grid")(js.Any.fromFunction1((t0: js.Object) => w2grid(t0).runNow()))
-    __obj.updateDynamic("w2layout")(js.Any.fromFunction1((t0: js.Object) => w2layout(t0).runNow()))
-    __obj.updateDynamic("w2popup")(js.Any.fromFunction1((t0: js.Object) => w2popup(t0).runNow()))
-    __obj.updateDynamic("w2sidebar")(js.Any.fromFunction1((t0: js.Object) => w2sidebar(t0).runNow()))
-    __obj.updateDynamic("w2tabs")(js.Any.fromFunction1((t0: js.Object) => w2tabs(t0).runNow()))
-    __obj.updateDynamic("w2toolbar")(js.Any.fromFunction1((t0: js.Object) => w2toolbar(t0).runNow()))
+    val __obj = js.Dynamic.literal(w2form = js.Any.fromFunction1(w2form), w2grid = js.Any.fromFunction1(w2grid), w2layout = js.Any.fromFunction1(w2layout), w2popup = js.Any.fromFunction1(w2popup), w2sidebar = js.Any.fromFunction1(w2sidebar), w2tabs = js.Any.fromFunction1(w2tabs), w2toolbar = js.Any.fromFunction1(w2toolbar))
     __obj.asInstanceOf[JQuery]
   }
+  
+  extension [Self <: JQuery](x: Self) {
+    
+    inline def setW2form(value: js.Object => W2Form): Self = StObject.set(x, "w2form", js.Any.fromFunction1(value))
+    
+    inline def setW2grid(value: js.Object => W2Grid): Self = StObject.set(x, "w2grid", js.Any.fromFunction1(value))
+    
+    inline def setW2layout(value: js.Object => W2Layout): Self = StObject.set(x, "w2layout", js.Any.fromFunction1(value))
+    
+    inline def setW2popup(value: js.Object => W2Popup): Self = StObject.set(x, "w2popup", js.Any.fromFunction1(value))
+    
+    inline def setW2sidebar(value: js.Object => W2Sidebar): Self = StObject.set(x, "w2sidebar", js.Any.fromFunction1(value))
+    
+    inline def setW2tabs(value: js.Object => W2Tabs): Self = StObject.set(x, "w2tabs", js.Any.fromFunction1(value))
+    
+    inline def setW2toolbar(value: js.Object => W2Toolbar): Self = StObject.set(x, "w2toolbar", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,14 +1,23 @@
 package typingsJapgolly.sinonChrome.mod
 
 import typingsJapgolly.sinonChrome.mod.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-chrome", "pushMessaging")
-@js.native
-object pushMessaging extends js.Object {
-  var getChannelId: SinonChromeStub = js.native
-  var onMessage: Event = js.native
+object pushMessaging {
+  
+  @JSImport("sinon-chrome", "pushMessaging")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("sinon-chrome", "pushMessaging.getChannelId")
+  @js.native
+  def getChannelId: SinonChromeStub = js.native
+  inline def getChannelId_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getChannelId")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "pushMessaging.onMessage")
+  @js.native
+  def onMessage: Event = js.native
+  inline def onMessage_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onMessage")(x.asInstanceOf[js.Any])
 }
-

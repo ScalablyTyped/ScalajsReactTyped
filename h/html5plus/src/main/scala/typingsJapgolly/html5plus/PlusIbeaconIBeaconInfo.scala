@@ -1,45 +1,51 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * iBeacon设备信息
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
   */
-trait PlusIbeaconIBeaconInfo extends js.Object {
+trait PlusIbeaconIBeaconInfo extends StObject {
+  
   /**
     * iBeacon设备的距离精度信息
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
   var accuracy: js.UndefOr[Double] = js.undefined
+  
   /**
     * iBeacon设备的主id
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
   var major: js.UndefOr[String] = js.undefined
+  
   /**
     * iBeacon设备的次id
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
   var minor: js.UndefOr[String] = js.undefined
+  
   /**
     * iBeacon设备的距离
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
   var proximity: js.UndefOr[Double] = js.undefined
+  
   /**
     * iBeacon设备的信号强度
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/ibeacon.html](http://www.html5plus.org/doc/zh_cn/ibeacon.html)
     */
   var rssi: js.UndefOr[String] = js.undefined
+  
   /**
     * iBeacon设备广播的uuid
     * 
@@ -47,25 +53,37 @@ trait PlusIbeaconIBeaconInfo extends js.Object {
     */
   var uuid: js.UndefOr[String] = js.undefined
 }
-
 object PlusIbeaconIBeaconInfo {
-  @scala.inline
-  def apply(
-    accuracy: Int | Double = null,
-    major: String = null,
-    minor: String = null,
-    proximity: Int | Double = null,
-    rssi: String = null,
-    uuid: String = null
-  ): PlusIbeaconIBeaconInfo = {
+  
+  inline def apply(): PlusIbeaconIBeaconInfo = {
     val __obj = js.Dynamic.literal()
-    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
-    if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
-    if (minor != null) __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
-    if (proximity != null) __obj.updateDynamic("proximity")(proximity.asInstanceOf[js.Any])
-    if (rssi != null) __obj.updateDynamic("rssi")(rssi.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusIbeaconIBeaconInfo]
   }
+  
+  extension [Self <: PlusIbeaconIBeaconInfo](x: Self) {
+    
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    
+    inline def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
+    
+    inline def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    
+    inline def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
+    
+    inline def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    
+    inline def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
+    
+    inline def setProximity(value: Double): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
+    
+    inline def setProximityUndefined: Self = StObject.set(x, "proximity", js.undefined)
+    
+    inline def setRssi(value: String): Self = StObject.set(x, "rssi", value.asInstanceOf[js.Any])
+    
+    inline def setRssiUndefined: Self = StObject.set(x, "rssi", js.undefined)
+    
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+  }
 }
-

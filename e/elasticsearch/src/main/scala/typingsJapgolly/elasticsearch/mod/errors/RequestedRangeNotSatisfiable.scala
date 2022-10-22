@@ -1,16 +1,9 @@
 package typingsJapgolly.elasticsearch.mod.errors
 
-import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticsearch", "errors.RequestedRangeNotSatisfiable")
 @js.native
-class RequestedRangeNotSatisfiable () extends Error {
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-}
-
+open class RequestedRangeNotSatisfiable () extends Abstract

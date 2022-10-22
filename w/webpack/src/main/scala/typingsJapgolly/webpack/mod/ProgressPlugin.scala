@@ -1,19 +1,37 @@
 package typingsJapgolly.webpack.mod
 
+import typingsJapgolly.webpack.webpackStrings.dependencies
+import typingsJapgolly.webpack.webpackStrings.entries
+import typingsJapgolly.webpack.webpackStrings.modules
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack", "ProgressPlugin")
 @js.native
-class ProgressPlugin () extends Plugin {
-  def this(options: js.Function5[
-        /* percentage */ Double, 
-        /* msg */ String, 
-        /* moduleProgress */ js.UndefOr[String], 
-        /* activeModules */ js.UndefOr[String], 
-        /* moduleName */ js.UndefOr[String], 
-        Unit
-      ]) = this()
+trait ProgressPlugin extends StObject {
+  
+  @JSName("apply")
+  def apply(compiler: Compiler): Unit = js.native
+  @JSName("apply")
+  def apply(compiler: MultiCompiler): Unit = js.native
+  
+  var dependenciesCount: js.UndefOr[Double] = js.native
+  
+  var handler: js.UndefOr[
+    js.Function3[/* percentage */ Double, /* msg */ String, /* repeated */ String, Unit]
+  ] = js.native
+  
+  var modulesCount: js.UndefOr[Double] = js.native
+  
+  var percentBy: js.UndefOr[Null | modules | dependencies | entries] = js.native
+  
+  var profile: js.UndefOr[Null | Boolean] = js.native
+  
+  var showActiveModules: js.UndefOr[Boolean] = js.native
+  
+  var showDependencies: js.UndefOr[Boolean] = js.native
+  
+  var showEntries: js.UndefOr[Boolean] = js.native
+  
+  var showModules: js.UndefOr[Boolean] = js.native
 }
-

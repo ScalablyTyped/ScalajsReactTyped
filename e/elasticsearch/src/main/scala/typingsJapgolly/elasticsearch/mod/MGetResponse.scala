@@ -1,19 +1,26 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MGetResponse[T] extends js.Object {
+trait MGetResponse[T] extends StObject {
+  
   var docs: js.UndefOr[js.Array[GetResponse[T]]] = js.undefined
 }
-
 object MGetResponse {
-  @scala.inline
-  def apply[T](docs: js.Array[GetResponse[T]] = null): MGetResponse[T] = {
+  
+  inline def apply[T](): MGetResponse[T] = {
     val __obj = js.Dynamic.literal()
-    if (docs != null) __obj.updateDynamic("docs")(docs.asInstanceOf[js.Any])
     __obj.asInstanceOf[MGetResponse[T]]
   }
+  
+  extension [Self <: MGetResponse[?], T](x: Self & MGetResponse[T]) {
+    
+    inline def setDocs(value: js.Array[GetResponse[T]]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
+    
+    inline def setDocsUndefined: Self = StObject.set(x, "docs", js.undefined)
+    
+    inline def setDocsVarargs(value: GetResponse[T]*): Self = StObject.set(x, "docs", js.Array(value*))
+  }
 }
-

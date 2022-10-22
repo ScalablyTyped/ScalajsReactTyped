@@ -1,41 +1,32 @@
 package typingsJapgolly.jsClipper.ClipperLib
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Protects extends js.Object
-
+sealed trait Protects extends StObject
 @JSGlobal("ClipperLib.Protects")
 @js.native
-object Protects extends js.Object {
-  @js.native
-  sealed trait ipBoth extends Protects
+object Protects extends StObject {
   
   @js.native
-  sealed trait ipLeft extends Protects
+  sealed trait ipBoth
+    extends StObject
+       with Protects
   
   @js.native
-  sealed trait ipNone extends Protects
+  sealed trait ipLeft
+    extends StObject
+       with Protects
   
   @js.native
-  sealed trait ipRight extends Protects
+  sealed trait ipNone
+    extends StObject
+       with Protects
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Protects with Double] = js.native
-  /* 3 */ @js.native
-  object ipBoth extends TopLevel[ipBoth with Double]
-  
-  /* 1 */ @js.native
-  object ipLeft extends TopLevel[ipLeft with Double]
-  
-  /* 0 */ @js.native
-  object ipNone extends TopLevel[ipNone with Double]
-  
-  /* 2 */ @js.native
-  object ipRight extends TopLevel[ipRight with Double]
-  
+  @js.native
+  sealed trait ipRight
+    extends StObject
+       with Protects
 }
-

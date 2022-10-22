@@ -1,13 +1,7 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Boolean extends js.Object
-
-@JSGlobal("Boolean")
-@js.native
-object Boolean extends TopLevel[BooleanConstructor]
-
+trait Boolean extends StObject

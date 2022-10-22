@@ -1,26 +1,29 @@
 package typingsJapgolly.slugify
 
 import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.slugify.anon.Locale
 import typingsJapgolly.slugify.mod.slugify.ExtendArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("slugify", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(string: String): String = js.native
-    def apply(string: String, options: String): String = js.native
-    def apply(string: String, options: AnonLower): String = js.native
-    def extend(args: ExtendArgs): Unit = js.native
+object mod {
+  
+  object default {
+    
+    inline def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(string: String, options: String): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(string: String, options: Locale): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @JSImport("slugify", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def extend(args: ExtendArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
-  object slugify extends js.Object {
-    type ExtendArgs = StringDictionary[js.Any]
+  object slugify {
+    
+    type ExtendArgs = StringDictionary[Any]
   }
-  
 }
-

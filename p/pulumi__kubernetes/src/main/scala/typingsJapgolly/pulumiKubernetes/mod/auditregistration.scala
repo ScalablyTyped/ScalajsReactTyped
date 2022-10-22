@@ -1,105 +1,143 @@
 package typingsJapgolly.pulumiKubernetes.mod
 
+import typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkListMod.AuditSinkList
+import typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkListMod.AuditSinkListArgs
+import typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkMod.AuditSink
+import typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkMod.AuditSinkArgs
+import typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkPatchMod.AuditSinkPatch
+import typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkPatchMod.AuditSinkPatchArgs
 import typingsJapgolly.pulumiPulumi.outputMod.Input
 import typingsJapgolly.pulumiPulumi.resourceMod.CustomResourceOptions
 import typingsJapgolly.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes", "auditregistration")
-@js.native
-object auditregistration extends js.Object {
-  @js.native
-  object v1alpha1 extends js.Object {
-    @js.native
-    class AuditSink protected ()
-      extends typingsJapgolly.pulumiKubernetes.auditregistrationMod.v1alpha1.AuditSink {
-      /**
-        * Create a auditregistration.v1alpha1.AuditSink resource with the given unique name, arguments, and options.
-        *
-        * @param name The _unique_ name of the resource.
-        * @param args The arguments to use to populate this resource's properties.
-        * @param opts A bag of options that control this resource's behavior.
-        */
-      def this(name: String) = this()
-      def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.auditregistration.v1alpha1.AuditSink) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.auditregistration.v1alpha1.AuditSink,
-        opts: CustomResourceOptions
-      ) = this()
-    }
+object auditregistration {
+  
+  object v1alpha1 {
     
-    @js.native
-    class AuditSinkList protected ()
-      extends typingsJapgolly.pulumiKubernetes.auditregistrationMod.v1alpha1.AuditSinkList {
+    object AuditSink {
+      
+      @JSImport("@pulumi/kubernetes", "auditregistration.v1alpha1.AuditSink")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
-        * Create a auditregistration.v1alpha1.AuditSinkList resource with the given unique name, arguments, and options.
+        * Get an existing AuditSink resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * @param name The _unique_ name of the resource.
-        * @param args The arguments to use to populate this resource's properties.
-        * @param opts A bag of options that control this resource's behavior.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      def this(name: String) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.auditregistration.v1alpha1.AuditSinkList
-      ) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.auditregistration.v1alpha1.AuditSinkList,
-        opts: CustomResourceOptions
-      ) = this()
-    }
-    
-    /* static members */
-    @js.native
-    object AuditSink extends js.Object {
-      /**
-        * Get the state of an existing `AuditSink` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
-        *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
-        */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.auditSinkMod.AuditSink = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.auditSinkMod.AuditSink = js.native
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkMod.AuditSink = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkMod.AuditSink]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkMod.AuditSink = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkMod.AuditSink]
+      
       /**
         * Returns true if the given object is an instance of AuditSink.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/AuditSink.AuditSink */ Boolean = js.native
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSink.AuditSink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSink.AuditSink */ Boolean]
     }
     
-    /* static members */
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes", "auditregistration.v1alpha1.AuditSink")
     @js.native
-    object AuditSinkList extends js.Object {
+    open class AuditSinkCls protected () extends AuditSink {
       /**
-        * Get the state of an existing `AuditSinkList` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Create a AuditSink resource with the given unique name, arguments, and options.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resource.
+        * @param args The arguments to use to populate this resource's properties.
+        * @param opts A bag of options that control this resource's behavior.
         */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.auditSinkListMod.AuditSinkList = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.auditSinkListMod.AuditSinkList = js.native
+      def this(name: String) = this()
+      def this(name: String, args: AuditSinkArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: AuditSinkArgs, opts: CustomResourceOptions) = this()
+    }
+    
+    object AuditSinkList {
+      
+      @JSImport("@pulumi/kubernetes", "auditregistration.v1alpha1.AuditSinkList")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Get an existing AuditSinkList resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
+        *
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
+        */
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkListMod.AuditSinkList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkListMod.AuditSinkList]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkListMod.AuditSinkList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkListMod.AuditSinkList]
+      
       /**
         * Returns true if the given object is an instance of AuditSinkList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/AuditSinkList.AuditSinkList */ Boolean = js.native
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSinkList.AuditSinkList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSinkList.AuditSinkList */ Boolean]
     }
     
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes", "auditregistration.v1alpha1.AuditSinkList")
+    @js.native
+    open class AuditSinkListCls protected () extends AuditSinkList {
+      /**
+        * Create a AuditSinkList resource with the given unique name, arguments, and options.
+        *
+        * @param name The _unique_ name of the resource.
+        * @param args The arguments to use to populate this resource's properties.
+        * @param opts A bag of options that control this resource's behavior.
+        */
+      def this(name: String) = this()
+      def this(name: String, args: AuditSinkListArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: AuditSinkListArgs, opts: CustomResourceOptions) = this()
+    }
+    
+    object AuditSinkPatch {
+      
+      @JSImport("@pulumi/kubernetes", "auditregistration.v1alpha1.AuditSinkPatch")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Get an existing AuditSinkPatch resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
+        *
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
+        */
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkPatchMod.AuditSinkPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkPatchMod.AuditSinkPatch]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkPatchMod.AuditSinkPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.auditregistrationV1alpha1AuditSinkPatchMod.AuditSinkPatch]
+      
+      /**
+        * Returns true if the given object is an instance of AuditSinkPatch.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSinkPatch.AuditSinkPatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSinkPatch.AuditSinkPatch */ Boolean]
+    }
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes", "auditregistration.v1alpha1.AuditSinkPatch")
+    @js.native
+    open class AuditSinkPatchCls protected () extends AuditSinkPatch {
+      /**
+        * Create a AuditSinkPatch resource with the given unique name, arguments, and options.
+        *
+        * @param name The _unique_ name of the resource.
+        * @param args The arguments to use to populate this resource's properties.
+        * @param opts A bag of options that control this resource's behavior.
+        */
+      def this(name: String) = this()
+      def this(name: String, args: AuditSinkPatchArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: AuditSinkPatchArgs, opts: CustomResourceOptions) = this()
+    }
   }
-  
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.xdomain
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xdomainStrings {
-  @js.native
-  sealed trait log extends js.Object
   
   @js.native
-  sealed trait timeout extends js.Object
+  sealed trait log extends StObject
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait timeout extends StObject
+  inline def timeout: timeout = "timeout".asInstanceOf[timeout]
   
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
-  @scala.inline
-  def timeout: timeout = "timeout".asInstanceOf[timeout]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  @js.native
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }
-

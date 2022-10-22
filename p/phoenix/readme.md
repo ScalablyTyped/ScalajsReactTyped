@@ -1,7 +1,7 @@
 
 # Scala.js typings for phoenix
 
-Typings are for version 1.4
+Typings are for version 1.5
 
 ## Library description:
 The official JavaScript client for the Phoenix web framework.
@@ -10,10 +10,10 @@ The official JavaScript client for the Phoenix web framework.
 | ------------------ | :-------------: |
 | Full name          | phoenix |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 46 |
-| # downloads        | 1342279 |
-| # stars            | 3 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 452659.3333333333 |
+| # stars            | 18665.0 |
 
 ## Links
 - [Homepage](https://github.com/phoenixframework/phoenix#readme)

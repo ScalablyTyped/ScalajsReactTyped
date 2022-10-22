@@ -10,10 +10,10 @@ Utility to parse a string bytes to bytes and vice-versa
 | ------------------ | :-------------: |
 | Full name          | bytes |
 | Keywords           | byte, bytes, utility, parse, parser, convert, converter |
-| # releases         | 2 |
-| # dependents       | 635 |
-| # downloads        | 636838542 |
-| # stars            | 25 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.86788363E8 |
+| # stars            | 405.0 |
 
 ## Links
 - [Homepage](https://github.com/visionmedia/bytes.js#readme)

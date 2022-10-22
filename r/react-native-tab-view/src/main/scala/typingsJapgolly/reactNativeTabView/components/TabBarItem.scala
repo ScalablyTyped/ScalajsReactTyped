@@ -1,82 +1,74 @@
 package typingsJapgolly.reactNativeTabView.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNative.mod.Animated.AnimatedInterpolation
 import typingsJapgolly.reactNative.mod.LayoutChangeEvent
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
-import typingsJapgolly.reactNativeTabView.AnonFocused
-import typingsJapgolly.reactNativeTabView.tabBarItemMod.Props
-import typingsJapgolly.reactNativeTabView.tabBarItemMod.default
-import typingsJapgolly.reactNativeTabView.typesMod.NavigationState
-import typingsJapgolly.reactNativeTabView.typesMod.Route
-import typingsJapgolly.reactNativeTabView.typesMod.Scene
+import typingsJapgolly.reactNativeTabView.anon.Focused
+import typingsJapgolly.reactNativeTabView.libTypescriptTabBarItemMod.Props
+import typingsJapgolly.reactNativeTabView.libTypescriptTypesMod.NavigationState
+import typingsJapgolly.reactNativeTabView.libTypescriptTypesMod.Route
+import typingsJapgolly.reactNativeTabView.libTypescriptTypesMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TabBarItem {
-  def apply[T /* <: Route */](
+  
+  inline def apply[T /* <: Route */](
+    getAccessibilityLabel: Scene[T] => js.UndefOr[String],
+    getAccessible: Scene[T] => js.UndefOr[Boolean],
+    getLabelText: Scene[T] => js.UndefOr[String],
+    getTestID: Scene[T] => js.UndefOr[String],
     navigationState: NavigationState[T],
-    position: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any,
-    route: T,
-    getAccessibilityLabel: Scene[T] => CallbackTo[js.UndefOr[String]],
-    getAccessible: Scene[T] => CallbackTo[js.UndefOr[Boolean]],
-    getLabelText: Scene[T] => CallbackTo[js.UndefOr[String]],
-    getTestID: Scene[T] => CallbackTo[js.UndefOr[String]],
     onLongPress: Callback,
     onPress: Callback,
-    activeColor: String = null,
-    inactiveColor: String = null,
-    labelStyle: StyleProp[TextStyle] = null,
-    onLayout: /* event */ LayoutChangeEvent => Callback = null,
-    pressColor: String = null,
-    pressOpacity: Int | Double = null,
-    renderBadge: /* scene */ Scene[T] => CallbackTo[Node] = null,
-    renderIcon: /* scene */ AnonFocused[T] => CallbackTo[Node] = null,
-    renderLabel: /* scene */ AnonFocused[T] => CallbackTo[Node] = null,
-    style: StyleProp[ViewStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props[T], default[T], Unit, Props[T]] = {
-    val __obj = js.Dynamic.literal(navigationState = navigationState.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("getAccessibilityLabel")(js.Any.fromFunction1((t0: typingsJapgolly.reactNativeTabView.typesMod.Scene[T]) => getAccessibilityLabel(t0).runNow()))
-    __obj.updateDynamic("getAccessible")(js.Any.fromFunction1((t0: typingsJapgolly.reactNativeTabView.typesMod.Scene[T]) => getAccessible(t0).runNow()))
-    __obj.updateDynamic("getLabelText")(js.Any.fromFunction1((t0: typingsJapgolly.reactNativeTabView.typesMod.Scene[T]) => getLabelText(t0).runNow()))
-    __obj.updateDynamic("getTestID")(js.Any.fromFunction1((t0: typingsJapgolly.reactNativeTabView.typesMod.Scene[T]) => getTestID(t0).runNow()))
-    __obj.updateDynamic("onLongPress")(onLongPress.toJsFn)
-    __obj.updateDynamic("onPress")(onPress.toJsFn)
-    if (activeColor != null) __obj.updateDynamic("activeColor")(activeColor.asInstanceOf[js.Any])
-    if (inactiveColor != null) __obj.updateDynamic("inactiveColor")(inactiveColor.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactNative.mod.LayoutChangeEvent) => onLayout(t0).runNow()))
-    if (pressColor != null) __obj.updateDynamic("pressColor")(pressColor.asInstanceOf[js.Any])
-    if (pressOpacity != null) __obj.updateDynamic("pressOpacity")(pressOpacity.asInstanceOf[js.Any])
-    if (renderBadge != null) __obj.updateDynamic("renderBadge")(js.Any.fromFunction1((t0: /* scene */ typingsJapgolly.reactNativeTabView.typesMod.Scene[T]) => renderBadge(t0).runNow()))
-    if (renderIcon != null) __obj.updateDynamic("renderIcon")(js.Any.fromFunction1((t0: /* scene */ typingsJapgolly.reactNativeTabView.AnonFocused[T]) => renderIcon(t0).runNow()))
-    if (renderLabel != null) __obj.updateDynamic("renderLabel")(js.Any.fromFunction1((t0: /* scene */ typingsJapgolly.reactNativeTabView.AnonFocused[T]) => renderLabel(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeTabView.tabBarItemMod.Props[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeTabView.tabBarItemMod.default[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeTabView.tabBarItemMod.Props[T]])(children: _*)
+    position: AnimatedInterpolation[Double | String],
+    route: T
+  ): Builder[T] = {
+    val __props = js.Dynamic.literal(getAccessibilityLabel = js.Any.fromFunction1(getAccessibilityLabel), getAccessible = js.Any.fromFunction1(getAccessible), getLabelText = js.Any.fromFunction1(getLabelText), getTestID = js.Any.fromFunction1(getTestID), navigationState = navigationState.asInstanceOf[js.Any], onLongPress = onLongPress.toJsFn, onPress = onPress.toJsFn, position = position.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[Props[T]]))
   }
-  @JSImport("react-native-tab-view/lib/typescript/src/TabBarItem", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("react-native-tab-view", "TabBarItem")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder[T /* <: Route */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def activeColor(value: String): this.type = set("activeColor", value.asInstanceOf[js.Any])
+    
+    inline def defaultTabWidth(value: Double): this.type = set("defaultTabWidth", value.asInstanceOf[js.Any])
+    
+    inline def inactiveColor(value: String): this.type = set("inactiveColor", value.asInstanceOf[js.Any])
+    
+    inline def labelStyle(value: StyleProp[TextStyle]): this.type = set("labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def labelStyleNull: this.type = set("labelStyle", null)
+    
+    inline def onLayout(value: /* event */ LayoutChangeEvent => Callback): this.type = set("onLayout", js.Any.fromFunction1((t0: /* event */ LayoutChangeEvent) => value(t0).runNow()))
+    
+    inline def pressColor(value: String): this.type = set("pressColor", value.asInstanceOf[js.Any])
+    
+    inline def pressOpacity(value: Double): this.type = set("pressOpacity", value.asInstanceOf[js.Any])
+    
+    inline def renderBadge(value: /* scene */ Scene[T] => Node): this.type = set("renderBadge", js.Any.fromFunction1(value))
+    
+    inline def renderIcon(value: /* scene */ Focused[T] => Node): this.type = set("renderIcon", js.Any.fromFunction1(value))
+    
+    inline def renderLabel(value: /* scene */ Focused[T] => Node): this.type = set("renderLabel", js.Any.fromFunction1(value))
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+  }
+  
+  def withProps[T /* <: Route */](p: Props[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

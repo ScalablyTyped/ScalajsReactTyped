@@ -1,31 +1,54 @@
 package typingsJapgolly.awsSdkClientCognitoIdentityBrowser
 
-import typingsJapgolly.awsSdkClientCognitoIdentityBrowser.outputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientCognitoIdentityBrowser.typesIdentityPoolShortDescriptionMod.UnmarshalledIdentityPoolShortDescription
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientCognitoIdentityBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity-browser/types/ListIdentityPoolsOutput", JSImport.Namespace)
-@js.native
-object typesListIdentityPoolsOutputMod extends js.Object {
-  @js.native
-  trait ListIdentityPoolsOutput extends OutputTypesUnion {
+object typesListIdentityPoolsOutputMod {
+  
+  trait ListIdentityPoolsOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>The identity pools returned by the ListIdentityPools action.</p>
       */
-    var IdentityPools: js.UndefOr[js.Array[UnmarshalledIdentityPoolShortDescription]] = js.native
+    var IdentityPools: js.UndefOr[js.Array[UnmarshalledIdentityPoolShortDescription]] = js.undefined
+    
     /**
       * <p>A pagination token.</p>
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
   }
-  
+  object ListIdentityPoolsOutput {
+    
+    inline def apply($metadata: ResponseMetadata): ListIdentityPoolsOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ListIdentityPoolsOutput]
+    }
+    
+    extension [Self <: ListIdentityPoolsOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setIdentityPools(value: js.Array[UnmarshalledIdentityPoolShortDescription]): Self = StObject.set(x, "IdentityPools", value.asInstanceOf[js.Any])
+      
+      inline def setIdentityPoolsUndefined: Self = StObject.set(x, "IdentityPools", js.undefined)
+      
+      inline def setIdentityPoolsVarargs(value: UnmarshalledIdentityPoolShortDescription*): Self = StObject.set(x, "IdentityPools", js.Array(value*))
+      
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    }
+  }
 }
-

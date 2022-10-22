@@ -1,21 +1,30 @@
 package typingsJapgolly.reactNativeMaterialKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CardContentStyle extends js.Object {
+trait CardContentStyle extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var padding: js.UndefOr[Double] = js.undefined
 }
-
 object CardContentStyle {
-  @scala.inline
-  def apply(color: String = null, padding: Int | Double = null): CardContentStyle = {
+  
+  inline def apply(): CardContentStyle = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardContentStyle]
   }
+  
+  extension [Self <: CardContentStyle](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+  }
 }
-

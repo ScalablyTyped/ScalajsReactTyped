@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wordpress/jest-console" : "6.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wordpress/jest-console" : "6.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

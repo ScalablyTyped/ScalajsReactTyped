@@ -1,19 +1,19 @@
 
 # Scala.js typings for theme-ui
 
-Typings are for version 0.3
+Typings are for version 0.15.1
 
 ## Library description:
-Build consistent, themeable React UIs based on design system constraints
+The Design Graph Framework
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | theme-ui |
 | Keywords           | theme-ui, emotion, mdx, css, styles, css-in-js |
-| # releases         | 77 |
-| # dependents       | 326 |
-| # downloads        | 419735 |
-| # stars            | 0 |
+| # releases         | 389 |
+| # dependents       | 0.0 |
+| # downloads        | 513182.6666666667 |
+| # stars            | 4696.0 |
 
 ## Links
 - [Homepage](https://github.com/system-ui/theme-ui#readme)
@@ -24,7 +24,7 @@ Build consistent, themeable React UIs based on design system constraints
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

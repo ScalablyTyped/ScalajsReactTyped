@@ -1,56 +1,69 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCOutboundRTPStreamStats extends RTCRTPStreamStats {
-  var bytesSent: js.UndefOr[Double] = js.undefined
-  var packetsSent: js.UndefOr[Double] = js.undefined
-  var roundTripTime: js.UndefOr[Double] = js.undefined
-  var targetBitrate: js.UndefOr[Double] = js.undefined
+trait RTCOutboundRtpStreamStats
+  extends StObject
+     with RTCSentRtpStreamStats {
+  
+  /* standard dom */
+  var firCount: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var framesEncoded: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var nackCount: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var pliCount: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var qpSum: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var remoteId: js.UndefOr[java.lang.String] = js.undefined
 }
-
-object RTCOutboundRTPStreamStats {
-  @scala.inline
-  def apply(
+object RTCOutboundRtpStreamStats {
+  
+  inline def apply(
     id: java.lang.String,
-    timestamp: Double,
-    `type`: org.scalajs.dom.experimental.webrtc.RTCStatsType,
-    associateStatsId: java.lang.String = null,
-    bytesSent: Int | Double = null,
-    codecId: java.lang.String = null,
-    firCount: Int | Double = null,
-    isRemote: js.UndefOr[scala.Boolean] = js.undefined,
-    mediaTrackId: java.lang.String = null,
-    mediaType: java.lang.String = null,
-    nackCount: Int | Double = null,
-    packetsSent: Int | Double = null,
-    pliCount: Int | Double = null,
-    roundTripTime: Int | Double = null,
-    sliCount: Int | Double = null,
-    ssrc: java.lang.String = null,
-    targetBitrate: Int | Double = null,
-    transportId: java.lang.String = null
-  ): RTCOutboundRTPStreamStats = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    kind: java.lang.String,
+    ssrc: Double,
+    timestamp: DOMHighResTimeStamp,
+    `type`: org.scalajs.dom.RTCStatsType
+  ): RTCOutboundRtpStreamStats = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], ssrc = ssrc.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (associateStatsId != null) __obj.updateDynamic("associateStatsId")(associateStatsId.asInstanceOf[js.Any])
-    if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent.asInstanceOf[js.Any])
-    if (codecId != null) __obj.updateDynamic("codecId")(codecId.asInstanceOf[js.Any])
-    if (firCount != null) __obj.updateDynamic("firCount")(firCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRemote)) __obj.updateDynamic("isRemote")(isRemote.asInstanceOf[js.Any])
-    if (mediaTrackId != null) __obj.updateDynamic("mediaTrackId")(mediaTrackId.asInstanceOf[js.Any])
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
-    if (nackCount != null) __obj.updateDynamic("nackCount")(nackCount.asInstanceOf[js.Any])
-    if (packetsSent != null) __obj.updateDynamic("packetsSent")(packetsSent.asInstanceOf[js.Any])
-    if (pliCount != null) __obj.updateDynamic("pliCount")(pliCount.asInstanceOf[js.Any])
-    if (roundTripTime != null) __obj.updateDynamic("roundTripTime")(roundTripTime.asInstanceOf[js.Any])
-    if (sliCount != null) __obj.updateDynamic("sliCount")(sliCount.asInstanceOf[js.Any])
-    if (ssrc != null) __obj.updateDynamic("ssrc")(ssrc.asInstanceOf[js.Any])
-    if (targetBitrate != null) __obj.updateDynamic("targetBitrate")(targetBitrate.asInstanceOf[js.Any])
-    if (transportId != null) __obj.updateDynamic("transportId")(transportId.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RTCOutboundRTPStreamStats]
+    __obj.asInstanceOf[RTCOutboundRtpStreamStats]
+  }
+  
+  extension [Self <: RTCOutboundRtpStreamStats](x: Self) {
+    
+    inline def setFirCount(value: Double): Self = StObject.set(x, "firCount", value.asInstanceOf[js.Any])
+    
+    inline def setFirCountUndefined: Self = StObject.set(x, "firCount", js.undefined)
+    
+    inline def setFramesEncoded(value: Double): Self = StObject.set(x, "framesEncoded", value.asInstanceOf[js.Any])
+    
+    inline def setFramesEncodedUndefined: Self = StObject.set(x, "framesEncoded", js.undefined)
+    
+    inline def setNackCount(value: Double): Self = StObject.set(x, "nackCount", value.asInstanceOf[js.Any])
+    
+    inline def setNackCountUndefined: Self = StObject.set(x, "nackCount", js.undefined)
+    
+    inline def setPliCount(value: Double): Self = StObject.set(x, "pliCount", value.asInstanceOf[js.Any])
+    
+    inline def setPliCountUndefined: Self = StObject.set(x, "pliCount", js.undefined)
+    
+    inline def setQpSum(value: Double): Self = StObject.set(x, "qpSum", value.asInstanceOf[js.Any])
+    
+    inline def setQpSumUndefined: Self = StObject.set(x, "qpSum", js.undefined)
+    
+    inline def setRemoteId(value: java.lang.String): Self = StObject.set(x, "remoteId", value.asInstanceOf[js.Any])
+    
+    inline def setRemoteIdUndefined: Self = StObject.set(x, "remoteId", js.undefined)
   }
 }
-

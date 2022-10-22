@@ -2,22 +2,33 @@ package typingsJapgolly.protonNative.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("proton-native", "Menu")
 @js.native
-class Menu ()
-  extends Component[MenuProps, js.Object, js.Any]
-
+open class Menu protected ()
+  extends Component[MenuProps, js.Object, Any] {
+  def this(props: MenuProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: MenuProps, context: Any) = this()
+}
 /* static members */
-@JSImport("proton-native", "Menu")
-@js.native
-object Menu extends js.Object {
+object Menu {
+  
+  @JSImport("proton-native", "Menu")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * A single item in a Menu.
     */
-  var Item: Instantiable0[MenuItem] = js.native
+  @JSImport("proton-native", "Menu.Item")
+  @js.native
+  def Item: Instantiable0[MenuItem] = js.native
+  inline def Item_=(x: Instantiable0[MenuItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }
-

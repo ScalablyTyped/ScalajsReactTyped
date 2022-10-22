@@ -1,71 +1,57 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CoreAcceleratorKeyEventType extends js.Object
-
+sealed trait CoreAcceleratorKeyEventType extends StObject
 @JSGlobal("Windows.UI.Core.CoreAcceleratorKeyEventType")
 @js.native
-object CoreAcceleratorKeyEventType extends js.Object {
-  @js.native
-  sealed trait character extends CoreAcceleratorKeyEventType
+object CoreAcceleratorKeyEventType extends StObject {
   
   @js.native
-  sealed trait deadCharacter extends CoreAcceleratorKeyEventType
+  sealed trait character
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait keyDown extends CoreAcceleratorKeyEventType
+  sealed trait deadCharacter
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait keyUp extends CoreAcceleratorKeyEventType
+  sealed trait keyDown
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait systemCharacter extends CoreAcceleratorKeyEventType
+  sealed trait keyUp
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait systemDeadCharacter extends CoreAcceleratorKeyEventType
+  sealed trait systemCharacter
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait systemKeyDown extends CoreAcceleratorKeyEventType
+  sealed trait systemDeadCharacter
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait systemKeyUp extends CoreAcceleratorKeyEventType
+  sealed trait systemKeyDown
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait unicodeCharacter extends CoreAcceleratorKeyEventType
+  sealed trait systemKeyUp
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CoreAcceleratorKeyEventType with Double] = js.native
-  /* 0 */ @js.native
-  object character extends TopLevel[character with Double]
-  
-  /* 1 */ @js.native
-  object deadCharacter extends TopLevel[deadCharacter with Double]
-  
-  /* 2 */ @js.native
-  object keyDown extends TopLevel[keyDown with Double]
-  
-  /* 3 */ @js.native
-  object keyUp extends TopLevel[keyUp with Double]
-  
-  /* 4 */ @js.native
-  object systemCharacter extends TopLevel[systemCharacter with Double]
-  
-  /* 5 */ @js.native
-  object systemDeadCharacter extends TopLevel[systemDeadCharacter with Double]
-  
-  /* 6 */ @js.native
-  object systemKeyDown extends TopLevel[systemKeyDown with Double]
-  
-  /* 7 */ @js.native
-  object systemKeyUp extends TopLevel[systemKeyUp with Double]
-  
-  /* 8 */ @js.native
-  object unicodeCharacter extends TopLevel[unicodeCharacter with Double]
-  
+  @js.native
+  sealed trait unicodeCharacter
+    extends StObject
+       with CoreAcceleratorKeyEventType
 }
-

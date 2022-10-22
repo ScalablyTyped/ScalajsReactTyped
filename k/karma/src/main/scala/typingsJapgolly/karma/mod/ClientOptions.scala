@@ -1,10 +1,11 @@
 package typingsJapgolly.karma.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClientOptions extends js.Object {
+trait ClientOptions extends StObject {
+  
   /**
     * @default undefined
     * @description When karma run is passed additional arguments on the command-line, they
@@ -14,11 +15,13 @@ trait ClientOptions extends js.Object {
     * documentation to see how (and if) it uses this value.
     */
   var args: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * @default true
     * @description Capture all console output and pipe it to the terminal.
     */
   var captureConsole: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * @default true
     * @description Clear the context window
@@ -27,6 +30,7 @@ trait ClientOptions extends js.Object {
     * Setting this to false is useful when embedding a Jasmine Spec Runner Template.
     */
   var clearContext: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * @default false
     * @description Set style display none on client elements.
@@ -34,11 +38,13 @@ trait ClientOptions extends js.Object {
     * Useful when using karma on component tests with screenshots
     */
   var clientDisplayNone: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * @default false
     * @description Run the tests on the same window as the client, without using iframe or a new window
     */
   var runInParent: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * @default true
     * @description Run the tests inside an iFrame or a new window
@@ -47,25 +53,39 @@ trait ClientOptions extends js.Object {
     */
   var useIframe: js.UndefOr[Boolean] = js.undefined
 }
-
 object ClientOptions {
-  @scala.inline
-  def apply(
-    args: js.Array[String] = null,
-    captureConsole: js.UndefOr[Boolean] = js.undefined,
-    clearContext: js.UndefOr[Boolean] = js.undefined,
-    clientDisplayNone: js.UndefOr[Boolean] = js.undefined,
-    runInParent: js.UndefOr[Boolean] = js.undefined,
-    useIframe: js.UndefOr[Boolean] = js.undefined
-  ): ClientOptions = {
+  
+  inline def apply(): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureConsole)) __obj.updateDynamic("captureConsole")(captureConsole.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearContext)) __obj.updateDynamic("clearContext")(clearContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientDisplayNone)) __obj.updateDynamic("clientDisplayNone")(clientDisplayNone.asInstanceOf[js.Any])
-    if (!js.isUndefined(runInParent)) __obj.updateDynamic("runInParent")(runInParent.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIframe)) __obj.updateDynamic("useIframe")(useIframe.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
+  
+  extension [Self <: ClientOptions](x: Self) {
+    
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
+    
+    inline def setCaptureConsole(value: Boolean): Self = StObject.set(x, "captureConsole", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureConsoleUndefined: Self = StObject.set(x, "captureConsole", js.undefined)
+    
+    inline def setClearContext(value: Boolean): Self = StObject.set(x, "clearContext", value.asInstanceOf[js.Any])
+    
+    inline def setClearContextUndefined: Self = StObject.set(x, "clearContext", js.undefined)
+    
+    inline def setClientDisplayNone(value: Boolean): Self = StObject.set(x, "clientDisplayNone", value.asInstanceOf[js.Any])
+    
+    inline def setClientDisplayNoneUndefined: Self = StObject.set(x, "clientDisplayNone", js.undefined)
+    
+    inline def setRunInParent(value: Boolean): Self = StObject.set(x, "runInParent", value.asInstanceOf[js.Any])
+    
+    inline def setRunInParentUndefined: Self = StObject.set(x, "runInParent", js.undefined)
+    
+    inline def setUseIframe(value: Boolean): Self = StObject.set(x, "useIframe", value.asInstanceOf[js.Any])
+    
+    inline def setUseIframeUndefined: Self = StObject.set(x, "useIframe", js.undefined)
+  }
 }
-

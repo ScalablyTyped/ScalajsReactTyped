@@ -1,34 +1,28 @@
 package typingsJapgolly.podcast
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object podcastStrings {
-  @js.native
-  sealed trait bonus extends js.Object
   
   @js.native
-  sealed trait episodic extends js.Object
+  sealed trait bonus extends StObject
+  inline def bonus: bonus = "bonus".asInstanceOf[bonus]
   
   @js.native
-  sealed trait full extends js.Object
+  sealed trait episodic extends StObject
+  inline def episodic: episodic = "episodic".asInstanceOf[episodic]
   
   @js.native
-  sealed trait serial extends js.Object
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait trailer extends js.Object
+  sealed trait serial extends StObject
+  inline def serial: serial = "serial".asInstanceOf[serial]
   
-  @scala.inline
-  def bonus: bonus = "bonus".asInstanceOf[bonus]
-  @scala.inline
-  def episodic: episodic = "episodic".asInstanceOf[episodic]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
-  @scala.inline
-  def serial: serial = "serial".asInstanceOf[serial]
-  @scala.inline
-  def trailer: trailer = "trailer".asInstanceOf[trailer]
+  @js.native
+  sealed trait trailer extends StObject
+  inline def trailer: trailer = "trailer".asInstanceOf[trailer]
 }
-

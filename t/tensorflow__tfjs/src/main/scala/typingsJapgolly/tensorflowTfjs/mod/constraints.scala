@@ -1,19 +1,24 @@
 package typingsJapgolly.tensorflowTfjs.mod
 
-import typingsJapgolly.tensorflowTfjsLayers.constraintsMod.Constraint
-import typingsJapgolly.tensorflowTfjsLayers.constraintsMod.MaxNormArgs
-import typingsJapgolly.tensorflowTfjsLayers.constraintsMod.MinMaxNormArgs
-import typingsJapgolly.tensorflowTfjsLayers.constraintsMod.UnitNormArgs
+import typingsJapgolly.tensorflowTfjsLayers.distConstraintsMod.Constraint
+import typingsJapgolly.tensorflowTfjsLayers.distConstraintsMod.MaxNormArgs
+import typingsJapgolly.tensorflowTfjsLayers.distConstraintsMod.MinMaxNormArgs
+import typingsJapgolly.tensorflowTfjsLayers.distConstraintsMod.UnitNormArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs", "constraints")
-@js.native
-object constraints extends js.Object {
-  def maxNorm(args: MaxNormArgs): Constraint = js.native
-  def minMaxNorm(config: MinMaxNormArgs): Constraint = js.native
-  def nonNeg(): Constraint = js.native
-  def unitNorm(args: UnitNormArgs): Constraint = js.native
+object constraints {
+  
+  @JSImport("@tensorflow/tfjs", "constraints")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def maxNorm(args: MaxNormArgs): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("maxNorm")(args.asInstanceOf[js.Any]).asInstanceOf[Constraint]
+  
+  inline def minMaxNorm(config: MinMaxNormArgs): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("minMaxNorm")(config.asInstanceOf[js.Any]).asInstanceOf[Constraint]
+  
+  inline def nonNeg(): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("nonNeg")().asInstanceOf[Constraint]
+  
+  inline def unitNorm(args: UnitNormArgs): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("unitNorm")(args.asInstanceOf[js.Any]).asInstanceOf[Constraint]
 }
-

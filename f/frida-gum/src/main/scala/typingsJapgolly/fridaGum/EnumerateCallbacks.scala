@@ -1,23 +1,27 @@
 package typingsJapgolly.fridaGum
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EnumerateCallbacks[T] extends js.Object {
+trait EnumerateCallbacks[T] extends StObject {
+  
   def onComplete(): Unit
+  
   def onMatch(item: T): Unit | EnumerateAction
 }
-
 object EnumerateCallbacks {
-  @scala.inline
-  def apply[T](onComplete: Callback, onMatch: T => CallbackTo[Unit | EnumerateAction]): EnumerateCallbacks[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onComplete")(onComplete.toJsFn)
-    __obj.updateDynamic("onMatch")(js.Any.fromFunction1((t0: T) => onMatch(t0).runNow()))
+  
+  inline def apply[T](onComplete: Callback, onMatch: T => Unit | EnumerateAction): EnumerateCallbacks[T] = {
+    val __obj = js.Dynamic.literal(onComplete = onComplete.toJsFn, onMatch = js.Any.fromFunction1(onMatch))
     __obj.asInstanceOf[EnumerateCallbacks[T]]
   }
+  
+  extension [Self <: EnumerateCallbacks[?], T](x: Self & EnumerateCallbacks[T]) {
+    
+    inline def setOnComplete(value: Callback): Self = StObject.set(x, "onComplete", value.toJsFn)
+    
+    inline def setOnMatch(value: T => Unit | EnumerateAction): Self = StObject.set(x, "onMatch", js.Any.fromFunction1(value))
+  }
 }
-

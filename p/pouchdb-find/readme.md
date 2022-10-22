@@ -1,7 +1,7 @@
 
 # Scala.js typings for pouchdb-find
 
-Typings are for version 6.3
+Typings are for version 7.3
 
 ## Library description:
 Easy-to-use query language for PouchDB
@@ -10,10 +10,10 @@ Easy-to-use query language for PouchDB
 | ------------------ | :-------------: |
 | Full name          | pouchdb-find |
 | Keywords           | pouch, pouchdb, plugin, find, mango, query, couch, couchdb |
-| # releases         | 6 |
-| # dependents       | 125 |
-| # downloads        | 776299 |
-| # stars            | 6 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 215244.66666666666 |
+| # stars            | 15073.0 |
 
 ## Links
 - [Homepage](https://github.com/pouchdb/pouchdb#readme)

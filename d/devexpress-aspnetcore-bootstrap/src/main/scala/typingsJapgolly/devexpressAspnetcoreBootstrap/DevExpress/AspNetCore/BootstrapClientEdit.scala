@@ -4,21 +4,39 @@ import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstr
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.lostFocus
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.validation
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.valueChanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapClientEdit")
 @js.native
-class BootstrapClientEdit () extends Control {
+trait BootstrapClientEdit
+  extends StObject
+     with Control {
+  
   def focus(): Unit = js.native
+  
   def getCaption(): String = js.native
+  
   def getEnabled(): Boolean = js.native
+  
   def getErrorText(): String = js.native
-  def getInputElement(): js.Any = js.native
+  
+  def getInputElement(): Any = js.native
+  
   def getIsValid(): Boolean = js.native
+  
   def getReadOnly(): Boolean = js.native
-  def getValue(): js.Any = js.native
+  
+  def getValue(): Any = js.native
+  
+  def off(
+    eventName: Unit,
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[EditValidationEventArgs | EventArgs | ProcessingModeEventArgs], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_gotFocus(eventName: gotFocus): this.type = js.native
   @JSName("off")
@@ -47,6 +65,7 @@ class BootstrapClientEdit () extends Control {
     eventName: valueChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[ProcessingModeEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_gotFocus(
     eventName: gotFocus,
@@ -67,6 +86,7 @@ class BootstrapClientEdit () extends Control {
     eventName: valueChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[ProcessingModeEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_gotFocus(
     eventName: gotFocus,
@@ -87,12 +107,18 @@ class BootstrapClientEdit () extends Control {
     eventName: valueChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[ProcessingModeEventArgs], Unit]
   ): this.type = js.native
+  
   def setCaption(caption: String): Unit = js.native
+  
   def setEnabled(value: Boolean): Unit = js.native
+  
   def setErrorText(errorText: String): Unit = js.native
+  
   def setIsValid(isValid: Boolean): Unit = js.native
+  
   def setReadOnly(readOnly: Boolean): Unit = js.native
-  def setValue(value: js.Any): Unit = js.native
+  
+  def setValue(value: Any): Unit = js.native
+  
   def validate(): Unit = js.native
 }
-

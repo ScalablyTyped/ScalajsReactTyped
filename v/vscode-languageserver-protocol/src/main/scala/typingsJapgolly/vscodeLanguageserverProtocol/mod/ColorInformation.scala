@@ -1,22 +1,25 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "ColorInformation")
-@js.native
-object ColorInformation extends js.Object {
+object ColorInformation {
+  
+  @JSImport("vscode-languageserver-protocol", "ColorInformation")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ColorInformation literal.
     */
-  def create(
+  inline def create(
     range: typingsJapgolly.vscodeLanguageserverTypes.mod.Range,
     color: typingsJapgolly.vscodeLanguageserverTypes.mod.Color
-  ): typingsJapgolly.vscodeLanguageserverTypes.mod.ColorInformation = js.native
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.ColorInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.ColorInformation]
+  
   /**
     * Checks whether the given literal conforms to the [ColorInformation](#ColorInformation) interface.
     */
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean = js.native
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean]
 }
-

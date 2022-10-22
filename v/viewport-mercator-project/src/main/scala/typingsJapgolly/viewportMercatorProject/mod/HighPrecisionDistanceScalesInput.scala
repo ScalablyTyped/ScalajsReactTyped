@@ -1,28 +1,23 @@
 package typingsJapgolly.viewportMercatorProject.mod
 
-import typingsJapgolly.viewportMercatorProject.viewportMercatorProjectBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.viewportMercatorProject.BaseHighPrecisionDistance
-  - typingsJapgolly.viewportMercatorProject.BaseHighPrecisionDistanceHighPrecision
+  - typingsJapgolly.viewportMercatorProject.anon.BaseHighPrecisionDistance
+  - typingsJapgolly.viewportMercatorProject.anon.BaseHighPrecisionDistanceHighPrecision
 */
-trait HighPrecisionDistanceScalesInput extends js.Object
-
+trait HighPrecisionDistanceScalesInput extends StObject
 object HighPrecisionDistanceScalesInput {
-  @scala.inline
-  def BaseHighPrecisionDistance(highPrecision: `true`, latitude: Double, longitude: Double, zoom: Double): HighPrecisionDistanceScalesInput = {
-    val __obj = js.Dynamic.literal(highPrecision = highPrecision.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[HighPrecisionDistanceScalesInput]
+  inline def BaseHighPrecisionDistance(latitude: Double, longitude: Double, zoom: Double): typingsJapgolly.viewportMercatorProject.anon.BaseHighPrecisionDistance = {
+    val __obj = js.Dynamic.literal(highPrecision = true, latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.viewportMercatorProject.anon.BaseHighPrecisionDistance]
   }
-  @scala.inline
-  def BaseHighPrecisionDistanceHighPrecision(highPrecision: `true`, latitude: Double, longitude: Double, scale: Double): HighPrecisionDistanceScalesInput = {
-    val __obj = js.Dynamic.literal(highPrecision = highPrecision.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[HighPrecisionDistanceScalesInput]
+  inline def BaseHighPrecisionDistanceHighPrecision(latitude: Double, longitude: Double, scale: Double): typingsJapgolly.viewportMercatorProject.anon.BaseHighPrecisionDistanceHighPrecision = {
+    val __obj = js.Dynamic.literal(highPrecision = true, latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.viewportMercatorProject.anon.BaseHighPrecisionDistanceHighPrecision]
   }
 }
-

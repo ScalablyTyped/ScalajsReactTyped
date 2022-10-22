@@ -2,80 +2,79 @@ package typingsJapgolly.walk
 
 import typingsJapgolly.walk.mod.WalkStatArrayEvent
 import typingsJapgolly.walk.mod.WalkStatEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object walkStrings {
-  @js.native
-  sealed trait FIFO extends js.Object
   
   @js.native
-  sealed trait blockDevice extends js.Object
+  sealed trait FIFO extends StObject
+  inline def FIFO: FIFO = "FIFO".asInstanceOf[FIFO]
   
   @js.native
-  sealed trait characterDevice extends js.Object
+  sealed trait blockDevice extends StObject
+  inline def blockDevice: blockDevice = "blockDevice".asInstanceOf[blockDevice]
   
   @js.native
-  sealed trait directories extends WalkStatArrayEvent
+  sealed trait characterDevice extends StObject
+  inline def characterDevice: characterDevice = "characterDevice".asInstanceOf[characterDevice]
   
   @js.native
-  sealed trait directory extends WalkStatEvent
+  sealed trait directories
+    extends StObject
+       with WalkStatArrayEvent
+  inline def directories: directories = "directories".asInstanceOf[directories]
   
   @js.native
-  sealed trait directoryError extends WalkStatArrayEvent
+  sealed trait directory
+    extends StObject
+       with WalkStatEvent
+  inline def directory: directory = "directory".asInstanceOf[directory]
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait directoryError
+    extends StObject
+       with WalkStatArrayEvent
+  inline def directoryError: directoryError = "directoryError".asInstanceOf[directoryError]
   
   @js.native
-  sealed trait errors extends WalkStatArrayEvent
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait file extends WalkStatEvent
+  sealed trait errors
+    extends StObject
+       with WalkStatArrayEvent
+  inline def errors: errors = "errors".asInstanceOf[errors]
   
   @js.native
-  sealed trait files extends WalkStatArrayEvent
+  sealed trait file
+    extends StObject
+       with WalkStatEvent
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait names extends js.Object
+  sealed trait files
+    extends StObject
+       with WalkStatArrayEvent
+  inline def files: files = "files".asInstanceOf[files]
   
   @js.native
-  sealed trait nodeError extends WalkStatArrayEvent
+  sealed trait names extends StObject
+  inline def names: names = "names".asInstanceOf[names]
   
   @js.native
-  sealed trait socket extends js.Object
+  sealed trait nodeError
+    extends StObject
+       with WalkStatArrayEvent
+  inline def nodeError: nodeError = "nodeError".asInstanceOf[nodeError]
   
   @js.native
-  sealed trait symbolicLink extends js.Object
+  sealed trait socket extends StObject
+  inline def socket: socket = "socket".asInstanceOf[socket]
   
-  @scala.inline
-  def FIFO: FIFO = "FIFO".asInstanceOf[FIFO]
-  @scala.inline
-  def blockDevice: blockDevice = "blockDevice".asInstanceOf[blockDevice]
-  @scala.inline
-  def characterDevice: characterDevice = "characterDevice".asInstanceOf[characterDevice]
-  @scala.inline
-  def directories: directories = "directories".asInstanceOf[directories]
-  @scala.inline
-  def directory: directory = "directory".asInstanceOf[directory]
-  @scala.inline
-  def directoryError: directoryError = "directoryError".asInstanceOf[directoryError]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def errors: errors = "errors".asInstanceOf[errors]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def files: files = "files".asInstanceOf[files]
-  @scala.inline
-  def names: names = "names".asInstanceOf[names]
-  @scala.inline
-  def nodeError: nodeError = "nodeError".asInstanceOf[nodeError]
-  @scala.inline
-  def socket: socket = "socket".asInstanceOf[socket]
-  @scala.inline
-  def symbolicLink: symbolicLink = "symbolicLink".asInstanceOf[symbolicLink]
+  @js.native
+  sealed trait symbolicLink extends StObject
+  inline def symbolicLink: symbolicLink = "symbolicLink".asInstanceOf[symbolicLink]
 }
-

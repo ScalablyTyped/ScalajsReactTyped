@@ -1,45 +1,21 @@
 package typingsJapgolly.reactNavigation.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-navigation", "Themed")
-@js.native
-object Themed extends js.Object {
-  @js.native
-  class StatusBar protected ()
-    extends Component[ThemedStatusBarProps, ComponentState, js.Any] {
-    def this(props: ThemedStatusBarProps) = this()
-    def this(props: ThemedStatusBarProps, context: js.Any) = this()
-  }
+object Themed {
   
+  @JSImport("react-navigation", "Themed.StatusBar")
   @js.native
-  class Text protected ()
-    extends Component[ThemedTextProps, ComponentState, js.Any] {
-    def this(props: ThemedTextProps) = this()
-    def this(props: ThemedTextProps, context: js.Any) = this()
-  }
+  val StatusBar: ComponentType[ThemedStatusBarProps] = js.native
   
+  @JSImport("react-navigation", "Themed.Text")
   @js.native
-  class TextInput protected ()
-    extends Component[ThemedTextInputProps, ComponentState, js.Any] {
-    def this(props: ThemedTextInputProps) = this()
-    def this(props: ThemedTextInputProps, context: js.Any) = this()
-  }
+  val Text: ComponentType[ThemedTextProps] = js.native
   
+  @JSImport("react-navigation", "Themed.TextInput")
   @js.native
-  object StatusBar extends TopLevel[ComponentType[ThemedStatusBarProps]]
-  
-  @js.native
-  object Text extends TopLevel[ComponentType[ThemedTextProps]]
-  
-  @js.native
-  object TextInput extends TopLevel[ComponentType[ThemedTextInputProps]]
-  
+  val TextInput: ComponentType[ThemedTextInputProps] = js.native
 }
-

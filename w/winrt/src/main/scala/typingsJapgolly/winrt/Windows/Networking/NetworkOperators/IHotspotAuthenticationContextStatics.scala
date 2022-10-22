@@ -1,21 +1,23 @@
 package typingsJapgolly.winrt.Windows.Networking.NetworkOperators
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.winrt.AnonContext
+import typingsJapgolly.winrt.anon.Context
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IHotspotAuthenticationContextStatics extends js.Object {
-  def tryGetAuthenticationContext(evenToken: String): AnonContext
+trait IHotspotAuthenticationContextStatics extends StObject {
+  
+  def tryGetAuthenticationContext(evenToken: String): Context
 }
-
 object IHotspotAuthenticationContextStatics {
-  @scala.inline
-  def apply(tryGetAuthenticationContext: String => CallbackTo[AnonContext]): IHotspotAuthenticationContextStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tryGetAuthenticationContext")(js.Any.fromFunction1((t0: java.lang.String) => tryGetAuthenticationContext(t0).runNow()))
+  
+  inline def apply(tryGetAuthenticationContext: String => Context): IHotspotAuthenticationContextStatics = {
+    val __obj = js.Dynamic.literal(tryGetAuthenticationContext = js.Any.fromFunction1(tryGetAuthenticationContext))
     __obj.asInstanceOf[IHotspotAuthenticationContextStatics]
   }
+  
+  extension [Self <: IHotspotAuthenticationContextStatics](x: Self) {
+    
+    inline def setTryGetAuthenticationContext(value: String => Context): Self = StObject.set(x, "tryGetAuthenticationContext", js.Any.fromFunction1(value))
+  }
 }
-

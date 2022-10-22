@@ -10,10 +10,10 @@ strftime support for Moment.js
 | ------------------ | :-------------: |
 | Full name          | moment-strftime2 |
 | Keywords           | moment, strftime, date, time, datetime |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 1135 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 47.333333333333336 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/ShogunPanda/moment-strftime2)

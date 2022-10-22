@@ -1,26 +1,40 @@
 package typingsJapgolly.awsSdkClientCodecommitNode
 
-import typingsJapgolly.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientCodecommitNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/types/GetBlobOutput", JSImport.Namespace)
-@js.native
-object typesGetBlobOutputMod extends js.Object {
-  @js.native
-  trait GetBlobOutput extends OutputTypesUnion {
+object typesGetBlobOutputMod {
+  
+  trait GetBlobOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>The content of the blob, usually a file.</p>
       */
-    var content: scala.scalajs.js.typedarray.Uint8Array = js.native
+    var content: js.typedarray.Uint8Array
   }
-  
+  object GetBlobOutput {
+    
+    inline def apply($metadata: ResponseMetadata, content: js.typedarray.Uint8Array): GetBlobOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetBlobOutput]
+    }
+    
+    extension [Self <: GetBlobOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setContent(value: js.typedarray.Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

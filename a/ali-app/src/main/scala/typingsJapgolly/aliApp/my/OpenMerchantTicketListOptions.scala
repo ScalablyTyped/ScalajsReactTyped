@@ -1,28 +1,24 @@
 package typingsJapgolly.aliApp.my
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OpenMerchantTicketListOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   var partnerId: String
 }
-
 object OpenMerchantTicketListOptions {
-  @scala.inline
-  def apply(
-    partnerId: String,
-    complete: /* res */ js.Any => Callback = null,
-    fail: js.Any => Callback = null,
-    success: js.Any => Callback = null
-  ): OpenMerchantTicketListOptions = {
+  
+  inline def apply(partnerId: String): OpenMerchantTicketListOptions = {
     val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: js.Any) => success(t0).runNow()))
     __obj.asInstanceOf[OpenMerchantTicketListOptions]
   }
+  
+  extension [Self <: OpenMerchantTicketListOptions](x: Self) {
+    
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+  }
 }
-

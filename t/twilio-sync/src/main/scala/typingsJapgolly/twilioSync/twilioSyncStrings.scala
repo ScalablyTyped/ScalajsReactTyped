@@ -1,77 +1,84 @@
 package typingsJapgolly.twilioSync
 
-import typingsJapgolly.twilioSync.clientMod.ConnectionState
-import typingsJapgolly.twilioSync.clientMod.OpenMode
-import typingsJapgolly.twilioSync.entityMod.SubscriptionState
+import typingsJapgolly.twilioSync.mod.OpenMode
+import typingsJapgolly.twilioSync.mod.SubscriptionState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object twilioSyncStrings {
-  @js.native
-  sealed trait connected extends ConnectionState
   
   @js.native
-  sealed trait connecting extends ConnectionState
+  sealed trait asc extends StObject
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
-  sealed trait create_new extends OpenMode
+  sealed trait create_new
+    extends StObject
+       with OpenMode
+  inline def create_new: create_new = "create_new".asInstanceOf[create_new]
   
   @js.native
-  sealed trait denied extends ConnectionState
+  sealed trait debug extends StObject
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait disconnected extends ConnectionState
+  sealed trait desc extends StObject
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait disconnecting extends ConnectionState
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait error extends ConnectionState
+  sealed trait established
+    extends StObject
+       with SubscriptionState
+  inline def established: established = "established".asInstanceOf[established]
   
   @js.native
-  sealed trait established extends SubscriptionState
+  sealed trait info extends StObject
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait none extends SubscriptionState
+  sealed trait none
+    extends StObject
+       with SubscriptionState
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait open_existing extends OpenMode
+  sealed trait open_existing
+    extends StObject
+       with OpenMode
+  inline def open_existing: open_existing = "open_existing".asInstanceOf[open_existing]
   
   @js.native
-  sealed trait open_or_create extends OpenMode
+  sealed trait open_or_create
+    extends StObject
+       with OpenMode
+  inline def open_or_create: open_or_create = "open_or_create".asInstanceOf[open_or_create]
   
   @js.native
-  sealed trait request_in_flight extends SubscriptionState
+  sealed trait request_in_flight
+    extends StObject
+       with SubscriptionState
+  inline def request_in_flight: request_in_flight = "request_in_flight".asInstanceOf[request_in_flight]
   
   @js.native
-  sealed trait response_in_flight extends SubscriptionState
+  sealed trait response_in_flight
+    extends StObject
+       with SubscriptionState
+  inline def response_in_flight: response_in_flight = "response_in_flight".asInstanceOf[response_in_flight]
   
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
-  @scala.inline
-  def connecting: connecting = "connecting".asInstanceOf[connecting]
-  @scala.inline
-  def create_new: create_new = "create_new".asInstanceOf[create_new]
-  @scala.inline
-  def denied: denied = "denied".asInstanceOf[denied]
-  @scala.inline
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
-  @scala.inline
-  def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def established: established = "established".asInstanceOf[established]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def open_existing: open_existing = "open_existing".asInstanceOf[open_existing]
-  @scala.inline
-  def open_or_create: open_or_create = "open_or_create".asInstanceOf[open_or_create]
-  @scala.inline
-  def request_in_flight: request_in_flight = "request_in_flight".asInstanceOf[request_in_flight]
-  @scala.inline
-  def response_in_flight: response_in_flight = "response_in_flight".asInstanceOf[response_in_flight]
+  @js.native
+  sealed trait silent extends StObject
+  inline def silent: silent = "silent".asInstanceOf[silent]
+  
+  @js.native
+  sealed trait trace extends StObject
+  inline def trace: trace = "trace".asInstanceOf[trace]
+  
+  @js.native
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }
-

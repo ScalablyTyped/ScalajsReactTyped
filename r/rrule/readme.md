@@ -1,7 +1,7 @@
 
 # Scala.js typings for rrule
 
-Typings are for version 2.6.4
+Typings are for version 2.7.1
 
 ## Library description:
 JavaScript library for working with recurrence rules for calendar dates.
@@ -10,10 +10,10 @@ JavaScript library for working with recurrence rules for calendar dates.
 | ------------------ | :-------------: |
 | Full name          | rrule |
 | Keywords           | dates, recurrences, calendar, icalendar, rfc |
-| # releases         | 24 |
-| # dependents       | 66 |
-| # downloads        | 2116175 |
-| # stars            | 9 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1540506.3333333333 |
+| # stars            | 2426.0 |
 
 ## Links
 - [Homepage](http://jakubroztocil.github.io/rrule/)

@@ -1,45 +1,79 @@
 package typingsJapgolly.typedoc.mod
 
-import typingsJapgolly.typedoc.defaultThemeMod.TemplateMapping
-import typingsJapgolly.typedoc.reflectionGroupMod.ReflectionGroup
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "DefaultTheme")
 @js.native
-class DefaultTheme protected ()
-  extends typingsJapgolly.typedoc.defaultThemeMod.DefaultTheme {
-  def this(renderer: typingsJapgolly.typedoc.rendererMod.Renderer, basePath: String) = this()
+open class DefaultTheme protected ()
+  extends typingsJapgolly.typedoc.distLibOutputMod.DefaultTheme {
+  /**
+    * Create a new DefaultTheme instance.
+    *
+    * @param renderer  The renderer this theme is attached to.
+    * @param basePath  The base path of this theme.
+    */
+  def this(renderer: typingsJapgolly.typedoc.distLibOutputRendererMod.Renderer) = this()
 }
-
 /* static members */
-@JSImport("typedoc", "DefaultTheme")
-@js.native
-object DefaultTheme extends js.Object {
-  var MAPPINGS: js.Array[TemplateMapping] = js.native
-  var URL_PREFIX: js.RegExp = js.native
-  def applyAnchorUrl(
-    reflection: typingsJapgolly.typedoc.reflectionsMod.Reflection,
-    container: typingsJapgolly.typedoc.reflectionsMod.Reflection
-  ): Unit = js.native
-  def applyGroupClasses(group: ReflectionGroup): Unit = js.native
-  def applyReflectionClasses(reflection: typingsJapgolly.typedoc.reflectionsMod.DeclarationReflection): Unit = js.native
-  def buildUrls(
-    reflection: typingsJapgolly.typedoc.reflectionsMod.DeclarationReflection,
-    urls: js.Array[typingsJapgolly.typedoc.urlMappingMod.UrlMapping]
-  ): js.Array[typingsJapgolly.typedoc.urlMappingMod.UrlMapping] = js.native
-  def getMapping(reflection: typingsJapgolly.typedoc.reflectionsMod.DeclarationReflection): js.UndefOr[TemplateMapping] = js.native
-  def getUrl(reflection: typingsJapgolly.typedoc.reflectionsMod.Reflection): String = js.native
-  def getUrl(
-    reflection: typingsJapgolly.typedoc.reflectionsMod.Reflection,
-    relative: typingsJapgolly.typedoc.reflectionsMod.Reflection
-  ): String = js.native
-  def getUrl(
-    reflection: typingsJapgolly.typedoc.reflectionsMod.Reflection,
-    relative: typingsJapgolly.typedoc.reflectionsMod.Reflection,
+object DefaultTheme {
+  
+  @JSImport("typedoc", "DefaultTheme")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("typedoc", "DefaultTheme.URL_PREFIX")
+  @js.native
+  def URL_PREFIX: js.RegExp = js.native
+  inline def URL_PREFIX_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL_PREFIX")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Generate an anchor url for the given reflection and all of its children.
+    *
+    * @param reflection  The reflection an anchor url should be created for.
+    * @param container   The nearest reflection having an own document.
+    */
+  inline def applyAnchorUrl(
+    reflection: typingsJapgolly.typedoc.distLibModelsMod.Reflection,
+    container: typingsJapgolly.typedoc.distLibModelsMod.Reflection
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAnchorUrl")(reflection.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Generate the css classes for the given reflection and apply them to the
+    * {@link DeclarationReflection.cssClasses} property.
+    *
+    * @param reflection  The reflection whose cssClasses property should be generated.
+    */
+  inline def applyReflectionClasses(
+    reflection: typingsJapgolly.typedoc.distLibModelsMod.DeclarationReflection,
+    filters: Record[String, Boolean]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyReflectionClasses")(reflection.asInstanceOf[js.Any], filters.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Return a url for the given reflection.
+    *
+    * @param reflection  The reflection the url should be generated for.
+    * @param relative    The parent reflection the url generation should stop on.
+    * @param separator   The separator used to generate the url.
+    * @returns           The generated url.
+    */
+  inline def getUrl(reflection: typingsJapgolly.typedoc.distLibModelsMod.Reflection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getUrl(reflection: typingsJapgolly.typedoc.distLibModelsMod.Reflection, relative: Unit, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getUrl(
+    reflection: typingsJapgolly.typedoc.distLibModelsMod.Reflection,
+    relative: typingsJapgolly.typedoc.distLibModelsMod.Reflection
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getUrl(
+    reflection: typingsJapgolly.typedoc.distLibModelsMod.Reflection,
+    relative: typingsJapgolly.typedoc.distLibModelsMod.Reflection,
     separator: String
-  ): String = js.native
-  def toStyleClass(str: String): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /**
+    * Transform a space separated string into a string suitable to be used as a
+    * css class, e.g. "constructor method" > "constructor-method".
+    */
+  inline def toStyleClass(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStyleClass")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

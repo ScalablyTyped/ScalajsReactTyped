@@ -1,24 +1,25 @@
-package typingsJapgolly.wampy
+package typingsJapgolly.wampy.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Callback = js.Function0[scala.Unit]
-  type ChallengeCallback = js.Function2[
-    /* auth_method */ java.lang.String, 
-    /* extra */ typingsJapgolly.wampy.mod.Dict, 
-    java.lang.String
-  ]
-  type Dict = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type ErrorCallback = js.Function1[/* args */ typingsJapgolly.wampy.mod.ErrorArgs, scala.Unit]
-  type EventCallback = js.Function1[/* args */ typingsJapgolly.wampy.mod.DataArgs, scala.Unit]
-  type Payload = typingsJapgolly.wampy.mod.Args | typingsJapgolly.wampy.mod.Dict | java.lang.String | scala.Double | scala.Boolean | js.Array[js.Any] | scala.Null
-  type RPCCallback = js.Function1[
-    /* args */ typingsJapgolly.wampy.mod.DataArgs, 
-    typingsJapgolly.wampy.mod.RPCResult | scala.Unit
-  ]
-  type SuccessCallback = js.Function1[/* args */ typingsJapgolly.wampy.mod.DataArgs, scala.Unit]
-  type UnsubscibeCallbacksHash = typingsJapgolly.wampy.mod.SubscribeCallbacksHash
-}
+
+type Callback = js.Function0[Unit]
+
+type ChallengeCallback = js.Function2[/* auth_method */ String, /* extra */ Dict, String]
+
+type Dict = StringDictionary[Any]
+
+type ErrorCallback = js.Function1[/* args */ ErrorArgs, Unit]
+
+type EventCallback = js.Function1[/* args */ DataArgs, Unit]
+
+type Payload = Args | Dict | String | Double | Boolean | js.Array[Any] | Null
+
+type RPCCallback = js.Function1[/* args */ DataArgs, RPCResult | Unit]
+
+type SuccessCallback = js.Function1[/* args */ DataArgs, Unit]
+
+type UnsubscibeCallbacksHash = SubscribeCallbacksHash

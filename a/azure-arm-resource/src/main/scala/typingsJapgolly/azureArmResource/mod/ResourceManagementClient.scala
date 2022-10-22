@@ -3,16 +3,16 @@ package typingsJapgolly.azureArmResource.mod
 import typingsJapgolly.msRest.mod.ServiceClientCredentials
 import typingsJapgolly.msRestAzure.mod.AzureServiceClientOptions
 import typingsJapgolly.msRestAzure.mod.CloudErrorParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource", "ResourceManagementClient")
-@js.native
-object ResourceManagementClient extends js.Object {
+object ResourceManagementClient {
+  
+  @JSImport("azure-arm-resource", "ResourceManagementClient.default")
   @js.native
-  class ResourceManagementClient protected ()
-    extends typingsJapgolly.azureArmResource.resourceManagementClientMod.ResourceManagementClient {
+  open class default protected ()
+    extends typingsJapgolly.azureArmResource.libResourceResourceManagementClientMod.default {
     /**
       * Initializes a new instance of the ResourceManagementClient class.
       * @constructor
@@ -48,11 +48,18 @@ object ResourceManagementClient extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      subscriptionId: String,
+      baseUri: Unit,
+      options: AzureServiceClientOptions
+    ) = this()
   }
   
+  @JSImport("azure-arm-resource", "ResourceManagementClient.ResourceManagementClient")
   @js.native
-  class default protected ()
-    extends typingsJapgolly.azureArmResource.resourceManagementClientMod.default {
+  open class ResourceManagementClient protected ()
+    extends typingsJapgolly.azureArmResource.libResourceResourceManagementClientMod.ResourceManagementClient {
     /**
       * Initializes a new instance of the ResourceManagementClient class.
       * @constructor
@@ -88,21 +95,26 @@ object ResourceManagementClient extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      subscriptionId: String,
+      baseUri: Unit,
+      options: AzureServiceClientOptions
+    ) = this()
   }
   
-  @js.native
-  object ResourceManagementModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typingsJapgolly.msRestAzure.mod.BaseResource
+  object ResourceManagementModels {
     
+    @JSImport("azure-arm-resource", "ResourceManagementClient.ResourceManagementModels.BaseResource")
     @js.native
-    class CloudError protected ()
-      extends typingsJapgolly.azureArmResource.resourceManagementClientMod.ResourceManagementModels.CloudError {
+    open class BaseResource ()
+      extends typingsJapgolly.azureArmResource.libResourceResourceManagementClientMod.ResourceManagementModels.BaseResource
+    
+    @JSImport("azure-arm-resource", "ResourceManagementClient.ResourceManagementModels.CloudError")
+    @js.native
+    open class CloudError protected ()
+      extends typingsJapgolly.azureArmResource.libResourceResourceManagementClientMod.ResourceManagementModels.CloudError {
       def this(parameters: CloudErrorParameters) = this()
     }
-    
   }
-  
 }
-

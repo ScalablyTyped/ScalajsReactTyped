@@ -1,21 +1,25 @@
 package typingsJapgolly.stormReactDiagrams.mod
 
-import typingsJapgolly.stormReactDiagrams.defaultLinkWidgetMod.DefaultLinkProps
+import typingsJapgolly.stormReactDiagrams.distSrcDefaultsWidgetsDefaultLinkWidgetMod.DefaultLinkProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("storm-react-diagrams", "DefaultLinkWidget")
 @js.native
-class DefaultLinkWidget protected ()
-  extends typingsJapgolly.stormReactDiagrams.defaultLinkWidgetMod.DefaultLinkWidget {
+open class DefaultLinkWidget protected ()
+  extends typingsJapgolly.stormReactDiagrams.distSrcDefaultsWidgetsDefaultLinkWidgetMod.DefaultLinkWidget {
   def this(props: DefaultLinkProps) = this()
 }
-
 /* static members */
-@JSImport("storm-react-diagrams", "DefaultLinkWidget")
-@js.native
-object DefaultLinkWidget extends js.Object {
-  var defaultProps: DefaultLinkProps = js.native
+object DefaultLinkWidget {
+  
+  @JSImport("storm-react-diagrams", "DefaultLinkWidget")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("storm-react-diagrams", "DefaultLinkWidget.defaultProps")
+  @js.native
+  def defaultProps: DefaultLinkProps = js.native
+  inline def defaultProps_=(x: DefaultLinkProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

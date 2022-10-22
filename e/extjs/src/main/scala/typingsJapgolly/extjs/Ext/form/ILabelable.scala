@@ -4,285 +4,407 @@ import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.extjs.Ext.Array
 import typingsJapgolly.extjs.Ext.IBase
-import typingsJapgolly.extjs.Ext.IClass
 import typingsJapgolly.extjs.Ext.IElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ILabelable extends IBase {
+trait ILabelable
+  extends StObject
+     with IBase {
+  
   /** [Config Option] (String) */
   var activeError: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String/String[]/Ext.XTemplate) */
-  var activeErrorsTpl: js.UndefOr[js.Any] = js.undefined
+  var activeErrorsTpl: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterBodyEl: js.UndefOr[js.Any] = js.undefined
+  var afterBodyEl: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterLabelTextTpl: js.UndefOr[js.Any] = js.undefined
+  var afterLabelTextTpl: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterLabelTpl: js.UndefOr[js.Any] = js.undefined
+  var afterLabelTpl: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterSubTpl: js.UndefOr[js.Any] = js.undefined
+  var afterSubTpl: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var autoFitErrors: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (String) */
   var baseBodyCls: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeBodyEl: js.UndefOr[js.Any] = js.undefined
+  var beforeBodyEl: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeLabelTextTpl: js.UndefOr[js.Any] = js.undefined
+  var beforeLabelTextTpl: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeLabelTpl: js.UndefOr[js.Any] = js.undefined
+  var beforeLabelTpl: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeSubTpl: js.UndefOr[js.Any] = js.undefined
+  var beforeSubTpl: js.UndefOr[Any] = js.undefined
+  
   /** [Property] (Ext.Element) */
   var bodyEl: js.UndefOr[IElement] = js.undefined
+  
   /** [Config Option] (String) */
   var clearCls: js.UndefOr[String] = js.undefined
+  
   /** [Property] (Ext.Element) */
   var errorEl: js.UndefOr[IElement] = js.undefined
+  
   /** [Config Option] (String) */
   var errorMsgCls: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var fieldBodyCls: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var fieldLabel: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var formItemCls: js.UndefOr[String] = js.undefined
+  
   /** [Method] Gets the active error message for this component if any
-  		* @returns String The active error message on the component; if there is no error, an empty string is returned.
-  		*/
+    * @returns String The active error message on the component; if there is no error, an empty string is returned.
+    */
   var getActiveError: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Gets an Array of any active error messages currently applied to the field
-  		* @returns String[] The active error messages on the component; if there are no errors, an empty Array is returned.
-  		*/
+    * @returns String[] The active error messages on the component; if there are no errors, an empty Array is returned.
+    */
   var getActiveErrors: js.UndefOr[js.Function0[Array]] = js.undefined
+  
   /** [Method] Returns the label for the field
-  		* @returns String The configured field label, or empty string if not defined
-  		*/
+    * @returns String The configured field label, or empty string if not defined
+    */
   var getFieldLabel: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Get the input id if any for this component
-  		* @returns String The input id
-  		*/
+    * @returns String The input id
+    */
   var getInputId: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Gets the width of the label if visible
-  		* @returns Number The label width
-  		*/
+    * @returns Number The label width
+    */
   var getLabelWidth: js.UndefOr[js.Function0[Double]] = js.undefined
+  
   /** [Method] Generates the arguments for the field decorations rendering template
-  		* @returns Object The template arguments
-  		*/
-  var getLabelableRenderData: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object The template arguments
+    */
+  var getLabelableRenderData: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Gets the markup to be inserted into the outer template s bodyEl
-  		* @returns String The markup to be inserted
-  		*/
+    * @returns String The markup to be inserted
+    */
   var getSubTplMarkup: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Tells whether the field currently has an active error message
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var hasActiveError: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Checks if the field has a visible label
-  		* @returns Boolean True if the field has a visible label
-  		*/
+    * @returns Boolean True if the field has a visible label
+    */
   var hasVisibleLabel: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var hideEmptyLabel: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var hideLabel: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Performs initialization of this mixin  */
   var initLabelable: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Config Option] (String) */
   var invalidCls: js.UndefOr[String] = js.undefined
+  
   /** [Property] (Boolean) */
   var isFieldLabelable: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (String) */
   var labelAlign: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var labelAttrTpl: js.UndefOr[js.Any] = js.undefined
+  var labelAttrTpl: js.UndefOr[Any] = js.undefined
+  
   /** [Property] (Ext.Element) */
   var labelCell: js.UndefOr[IElement] = js.undefined
+  
   /** [Config Option] (String) */
   var labelCls: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var labelClsExtra: js.UndefOr[String] = js.undefined
+  
   /** [Property] (Ext.Element) */
   var labelEl: js.UndefOr[IElement] = js.undefined
+  
   /** [Config Option] (Number) */
   var labelPad: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (String) */
   var labelSeparator: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var labelStyle: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Number) */
   var labelWidth: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (String) */
   var msgTarget: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var preventMark: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Sets the active error message to the given string
-  		* @param msg String The error message
-  		*/
+    * @param msg String The error message
+    */
   var setActiveError: js.UndefOr[js.Function1[/* msg */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Set the active error message to an Array of error messages
-  		* @param errors String[] The error messages
-  		*/
+    * @param errors String[] The error messages
+    */
   var setActiveErrors: js.UndefOr[js.Function1[/* errors */ js.UndefOr[Array], Unit]] = js.undefined
+  
   /** [Method] Applies a set of default configuration values to this Labelable instance
-  		* @param defaults Object The defaults to apply to the object.
-  		*/
-  var setFieldDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param defaults Object The defaults to apply to the object.
+    */
+  var setFieldDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Set the label of this field
-  		* @param label String The new label. The labelSeparator will be automatically appended to the label string.
-  		*/
+    * @param label String The new label. The labelSeparator will be automatically appended to the label string.
+    */
   var setFieldLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Returns the trimmed label by slicing off the label separator character
-  		* @returns String The trimmed field label, or empty string if not defined
-  		*/
+    * @returns String The trimmed field label, or empty string if not defined
+    */
   var trimLabelSeparator: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Clears the active error message s */
   var unsetActiveError: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
-
 object ILabelable {
-  @scala.inline
-  def apply(
-    activeError: String = null,
-    activeErrorsTpl: js.Any = null,
-    afterBodyEl: js.Any = null,
-    afterLabelTextTpl: js.Any = null,
-    afterLabelTpl: js.Any = null,
-    afterSubTpl: js.Any = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    autoFitErrors: js.UndefOr[Boolean] = js.undefined,
-    baseBodyCls: String = null,
-    beforeBodyEl: js.Any = null,
-    beforeLabelTextTpl: js.Any = null,
-    beforeLabelTpl: js.Any = null,
-    beforeSubTpl: js.Any = null,
-    bodyEl: IElement = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callParent: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    clearCls: String = null,
-    config: js.Any = null,
-    errorEl: IElement = null,
-    errorMsgCls: String = null,
-    extend: String = null,
-    fieldBodyCls: String = null,
-    fieldLabel: String = null,
-    formItemCls: String = null,
-    getActiveError: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getActiveErrors: js.UndefOr[CallbackTo[Array]] = js.undefined,
-    getFieldLabel: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getInitialConfig: /* name */ js.UndefOr[String] => CallbackTo[js.Any] = null,
-    getInputId: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getLabelWidth: js.UndefOr[CallbackTo[Double]] = js.undefined,
-    getLabelableRenderData: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getSubTplMarkup: js.UndefOr[CallbackTo[String]] = js.undefined,
-    hasActiveError: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    hasVisibleLabel: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    hideEmptyLabel: js.UndefOr[Boolean] = js.undefined,
-    hideLabel: js.UndefOr[Boolean] = js.undefined,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => CallbackTo[ILabelable] = null,
-    initLabelable: js.UndefOr[Callback] = js.undefined,
-    invalidCls: String = null,
-    isFieldLabelable: js.UndefOr[Boolean] = js.undefined,
-    labelAlign: String = null,
-    labelAttrTpl: js.Any = null,
-    labelCell: IElement = null,
-    labelCls: String = null,
-    labelClsExtra: String = null,
-    labelEl: IElement = null,
-    labelPad: Int | Double = null,
-    labelSeparator: String = null,
-    labelStyle: String = null,
-    labelWidth: Int | Double = null,
-    mixins: js.Any = null,
-    msgTarget: String = null,
-    preventMark: js.UndefOr[Boolean] = js.undefined,
-    requires: Array = null,
-    self: IClass = null,
-    setActiveError: /* msg */ js.UndefOr[String] => Callback = null,
-    setActiveErrors: /* errors */ js.UndefOr[Array] => Callback = null,
-    setFieldDefaults: /* defaults */ js.UndefOr[js.Any] => Callback = null,
-    setFieldLabel: /* label */ js.UndefOr[String] => Callback = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    trimLabelSeparator: js.UndefOr[CallbackTo[String]] = js.undefined,
-    unsetActiveError: js.UndefOr[Callback] = js.undefined,
-    uses: Array = null
-  ): ILabelable = {
+  
+  inline def apply(): ILabelable = {
     val __obj = js.Dynamic.literal()
-    if (activeError != null) __obj.updateDynamic("activeError")(activeError.asInstanceOf[js.Any])
-    if (activeErrorsTpl != null) __obj.updateDynamic("activeErrorsTpl")(activeErrorsTpl.asInstanceOf[js.Any])
-    if (afterBodyEl != null) __obj.updateDynamic("afterBodyEl")(afterBodyEl.asInstanceOf[js.Any])
-    if (afterLabelTextTpl != null) __obj.updateDynamic("afterLabelTextTpl")(afterLabelTextTpl.asInstanceOf[js.Any])
-    if (afterLabelTpl != null) __obj.updateDynamic("afterLabelTpl")(afterLabelTpl.asInstanceOf[js.Any])
-    if (afterSubTpl != null) __obj.updateDynamic("afterSubTpl")(afterSubTpl.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFitErrors)) __obj.updateDynamic("autoFitErrors")(autoFitErrors.asInstanceOf[js.Any])
-    if (baseBodyCls != null) __obj.updateDynamic("baseBodyCls")(baseBodyCls.asInstanceOf[js.Any])
-    if (beforeBodyEl != null) __obj.updateDynamic("beforeBodyEl")(beforeBodyEl.asInstanceOf[js.Any])
-    if (beforeLabelTextTpl != null) __obj.updateDynamic("beforeLabelTextTpl")(beforeLabelTextTpl.asInstanceOf[js.Any])
-    if (beforeLabelTpl != null) __obj.updateDynamic("beforeLabelTpl")(beforeLabelTpl.asInstanceOf[js.Any])
-    if (beforeSubTpl != null) __obj.updateDynamic("beforeSubTpl")(beforeSubTpl.asInstanceOf[js.Any])
-    if (bodyEl != null) __obj.updateDynamic("bodyEl")(bodyEl.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callOverridden(t0).runNow()))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callParent(t0).runNow()))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callSuper(t0).runNow()))
-    if (clearCls != null) __obj.updateDynamic("clearCls")(clearCls.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (errorEl != null) __obj.updateDynamic("errorEl")(errorEl.asInstanceOf[js.Any])
-    if (errorMsgCls != null) __obj.updateDynamic("errorMsgCls")(errorMsgCls.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (fieldBodyCls != null) __obj.updateDynamic("fieldBodyCls")(fieldBodyCls.asInstanceOf[js.Any])
-    if (fieldLabel != null) __obj.updateDynamic("fieldLabel")(fieldLabel.asInstanceOf[js.Any])
-    if (formItemCls != null) __obj.updateDynamic("formItemCls")(formItemCls.asInstanceOf[js.Any])
-    getActiveError.foreach(p => __obj.updateDynamic("getActiveError")(p.toJsFn))
-    getActiveErrors.foreach(p => __obj.updateDynamic("getActiveErrors")(p.toJsFn))
-    getFieldLabel.foreach(p => __obj.updateDynamic("getFieldLabel")(p.toJsFn))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1((t0: /* name */ js.UndefOr[java.lang.String]) => getInitialConfig(t0).runNow()))
-    getInputId.foreach(p => __obj.updateDynamic("getInputId")(p.toJsFn))
-    getLabelWidth.foreach(p => __obj.updateDynamic("getLabelWidth")(p.toJsFn))
-    getLabelableRenderData.foreach(p => __obj.updateDynamic("getLabelableRenderData")(p.toJsFn))
-    getSubTplMarkup.foreach(p => __obj.updateDynamic("getSubTplMarkup")(p.toJsFn))
-    hasActiveError.foreach(p => __obj.updateDynamic("hasActiveError")(p.toJsFn))
-    hasVisibleLabel.foreach(p => __obj.updateDynamic("hasVisibleLabel")(p.toJsFn))
-    if (!js.isUndefined(hideEmptyLabel)) __obj.updateDynamic("hideEmptyLabel")(hideEmptyLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideLabel)) __obj.updateDynamic("hideLabel")(hideLabel.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1((t0: /* config */ js.UndefOr[js.Any]) => initConfig(t0).runNow()))
-    initLabelable.foreach(p => __obj.updateDynamic("initLabelable")(p.toJsFn))
-    if (invalidCls != null) __obj.updateDynamic("invalidCls")(invalidCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFieldLabelable)) __obj.updateDynamic("isFieldLabelable")(isFieldLabelable.asInstanceOf[js.Any])
-    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
-    if (labelAttrTpl != null) __obj.updateDynamic("labelAttrTpl")(labelAttrTpl.asInstanceOf[js.Any])
-    if (labelCell != null) __obj.updateDynamic("labelCell")(labelCell.asInstanceOf[js.Any])
-    if (labelCls != null) __obj.updateDynamic("labelCls")(labelCls.asInstanceOf[js.Any])
-    if (labelClsExtra != null) __obj.updateDynamic("labelClsExtra")(labelClsExtra.asInstanceOf[js.Any])
-    if (labelEl != null) __obj.updateDynamic("labelEl")(labelEl.asInstanceOf[js.Any])
-    if (labelPad != null) __obj.updateDynamic("labelPad")(labelPad.asInstanceOf[js.Any])
-    if (labelSeparator != null) __obj.updateDynamic("labelSeparator")(labelSeparator.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (labelWidth != null) __obj.updateDynamic("labelWidth")(labelWidth.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (msgTarget != null) __obj.updateDynamic("msgTarget")(msgTarget.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventMark)) __obj.updateDynamic("preventMark")(preventMark.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setActiveError != null) __obj.updateDynamic("setActiveError")(js.Any.fromFunction1((t0: /* msg */ js.UndefOr[java.lang.String]) => setActiveError(t0).runNow()))
-    if (setActiveErrors != null) __obj.updateDynamic("setActiveErrors")(js.Any.fromFunction1((t0: /* errors */ js.UndefOr[typingsJapgolly.extjs.Ext.Array]) => setActiveErrors(t0).runNow()))
-    if (setFieldDefaults != null) __obj.updateDynamic("setFieldDefaults")(js.Any.fromFunction1((t0: /* defaults */ js.UndefOr[js.Any]) => setFieldDefaults(t0).runNow()))
-    if (setFieldLabel != null) __obj.updateDynamic("setFieldLabel")(js.Any.fromFunction1((t0: /* label */ js.UndefOr[java.lang.String]) => setFieldLabel(t0).runNow()))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    trimLabelSeparator.foreach(p => __obj.updateDynamic("trimLabelSeparator")(p.toJsFn))
-    unsetActiveError.foreach(p => __obj.updateDynamic("unsetActiveError")(p.toJsFn))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILabelable]
   }
+  
+  extension [Self <: ILabelable](x: Self) {
+    
+    inline def setActiveError(value: String): Self = StObject.set(x, "activeError", value.asInstanceOf[js.Any])
+    
+    inline def setActiveErrorUndefined: Self = StObject.set(x, "activeError", js.undefined)
+    
+    inline def setActiveErrorsTpl(value: Any): Self = StObject.set(x, "activeErrorsTpl", value.asInstanceOf[js.Any])
+    
+    inline def setActiveErrorsTplUndefined: Self = StObject.set(x, "activeErrorsTpl", js.undefined)
+    
+    inline def setAfterBodyEl(value: Any): Self = StObject.set(x, "afterBodyEl", value.asInstanceOf[js.Any])
+    
+    inline def setAfterBodyElUndefined: Self = StObject.set(x, "afterBodyEl", js.undefined)
+    
+    inline def setAfterLabelTextTpl(value: Any): Self = StObject.set(x, "afterLabelTextTpl", value.asInstanceOf[js.Any])
+    
+    inline def setAfterLabelTextTplUndefined: Self = StObject.set(x, "afterLabelTextTpl", js.undefined)
+    
+    inline def setAfterLabelTpl(value: Any): Self = StObject.set(x, "afterLabelTpl", value.asInstanceOf[js.Any])
+    
+    inline def setAfterLabelTplUndefined: Self = StObject.set(x, "afterLabelTpl", js.undefined)
+    
+    inline def setAfterSubTpl(value: Any): Self = StObject.set(x, "afterSubTpl", value.asInstanceOf[js.Any])
+    
+    inline def setAfterSubTplUndefined: Self = StObject.set(x, "afterSubTpl", js.undefined)
+    
+    inline def setAutoFitErrors(value: Boolean): Self = StObject.set(x, "autoFitErrors", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFitErrorsUndefined: Self = StObject.set(x, "autoFitErrors", js.undefined)
+    
+    inline def setBaseBodyCls(value: String): Self = StObject.set(x, "baseBodyCls", value.asInstanceOf[js.Any])
+    
+    inline def setBaseBodyClsUndefined: Self = StObject.set(x, "baseBodyCls", js.undefined)
+    
+    inline def setBeforeBodyEl(value: Any): Self = StObject.set(x, "beforeBodyEl", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeBodyElUndefined: Self = StObject.set(x, "beforeBodyEl", js.undefined)
+    
+    inline def setBeforeLabelTextTpl(value: Any): Self = StObject.set(x, "beforeLabelTextTpl", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeLabelTextTplUndefined: Self = StObject.set(x, "beforeLabelTextTpl", js.undefined)
+    
+    inline def setBeforeLabelTpl(value: Any): Self = StObject.set(x, "beforeLabelTpl", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeLabelTplUndefined: Self = StObject.set(x, "beforeLabelTpl", js.undefined)
+    
+    inline def setBeforeSubTpl(value: Any): Self = StObject.set(x, "beforeSubTpl", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeSubTplUndefined: Self = StObject.set(x, "beforeSubTpl", js.undefined)
+    
+    inline def setBodyEl(value: IElement): Self = StObject.set(x, "bodyEl", value.asInstanceOf[js.Any])
+    
+    inline def setBodyElUndefined: Self = StObject.set(x, "bodyEl", js.undefined)
+    
+    inline def setClearCls(value: String): Self = StObject.set(x, "clearCls", value.asInstanceOf[js.Any])
+    
+    inline def setClearClsUndefined: Self = StObject.set(x, "clearCls", js.undefined)
+    
+    inline def setErrorEl(value: IElement): Self = StObject.set(x, "errorEl", value.asInstanceOf[js.Any])
+    
+    inline def setErrorElUndefined: Self = StObject.set(x, "errorEl", js.undefined)
+    
+    inline def setErrorMsgCls(value: String): Self = StObject.set(x, "errorMsgCls", value.asInstanceOf[js.Any])
+    
+    inline def setErrorMsgClsUndefined: Self = StObject.set(x, "errorMsgCls", js.undefined)
+    
+    inline def setFieldBodyCls(value: String): Self = StObject.set(x, "fieldBodyCls", value.asInstanceOf[js.Any])
+    
+    inline def setFieldBodyClsUndefined: Self = StObject.set(x, "fieldBodyCls", js.undefined)
+    
+    inline def setFieldLabel(value: String): Self = StObject.set(x, "fieldLabel", value.asInstanceOf[js.Any])
+    
+    inline def setFieldLabelUndefined: Self = StObject.set(x, "fieldLabel", js.undefined)
+    
+    inline def setFormItemCls(value: String): Self = StObject.set(x, "formItemCls", value.asInstanceOf[js.Any])
+    
+    inline def setFormItemClsUndefined: Self = StObject.set(x, "formItemCls", js.undefined)
+    
+    inline def setGetActiveError(value: CallbackTo[String]): Self = StObject.set(x, "getActiveError", value.toJsFn)
+    
+    inline def setGetActiveErrorUndefined: Self = StObject.set(x, "getActiveError", js.undefined)
+    
+    inline def setGetActiveErrors(value: CallbackTo[Array]): Self = StObject.set(x, "getActiveErrors", value.toJsFn)
+    
+    inline def setGetActiveErrorsUndefined: Self = StObject.set(x, "getActiveErrors", js.undefined)
+    
+    inline def setGetFieldLabel(value: CallbackTo[String]): Self = StObject.set(x, "getFieldLabel", value.toJsFn)
+    
+    inline def setGetFieldLabelUndefined: Self = StObject.set(x, "getFieldLabel", js.undefined)
+    
+    inline def setGetInputId(value: CallbackTo[String]): Self = StObject.set(x, "getInputId", value.toJsFn)
+    
+    inline def setGetInputIdUndefined: Self = StObject.set(x, "getInputId", js.undefined)
+    
+    inline def setGetLabelWidth(value: CallbackTo[Double]): Self = StObject.set(x, "getLabelWidth", value.toJsFn)
+    
+    inline def setGetLabelWidthUndefined: Self = StObject.set(x, "getLabelWidth", js.undefined)
+    
+    inline def setGetLabelableRenderData(value: CallbackTo[Any]): Self = StObject.set(x, "getLabelableRenderData", value.toJsFn)
+    
+    inline def setGetLabelableRenderDataUndefined: Self = StObject.set(x, "getLabelableRenderData", js.undefined)
+    
+    inline def setGetSubTplMarkup(value: CallbackTo[String]): Self = StObject.set(x, "getSubTplMarkup", value.toJsFn)
+    
+    inline def setGetSubTplMarkupUndefined: Self = StObject.set(x, "getSubTplMarkup", js.undefined)
+    
+    inline def setHasActiveError(value: CallbackTo[Boolean]): Self = StObject.set(x, "hasActiveError", value.toJsFn)
+    
+    inline def setHasActiveErrorUndefined: Self = StObject.set(x, "hasActiveError", js.undefined)
+    
+    inline def setHasVisibleLabel(value: CallbackTo[Boolean]): Self = StObject.set(x, "hasVisibleLabel", value.toJsFn)
+    
+    inline def setHasVisibleLabelUndefined: Self = StObject.set(x, "hasVisibleLabel", js.undefined)
+    
+    inline def setHideEmptyLabel(value: Boolean): Self = StObject.set(x, "hideEmptyLabel", value.asInstanceOf[js.Any])
+    
+    inline def setHideEmptyLabelUndefined: Self = StObject.set(x, "hideEmptyLabel", js.undefined)
+    
+    inline def setHideLabel(value: Boolean): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
+    
+    inline def setHideLabelUndefined: Self = StObject.set(x, "hideLabel", js.undefined)
+    
+    inline def setInitLabelable(value: Callback): Self = StObject.set(x, "initLabelable", value.toJsFn)
+    
+    inline def setInitLabelableUndefined: Self = StObject.set(x, "initLabelable", js.undefined)
+    
+    inline def setInvalidCls(value: String): Self = StObject.set(x, "invalidCls", value.asInstanceOf[js.Any])
+    
+    inline def setInvalidClsUndefined: Self = StObject.set(x, "invalidCls", js.undefined)
+    
+    inline def setIsFieldLabelable(value: Boolean): Self = StObject.set(x, "isFieldLabelable", value.asInstanceOf[js.Any])
+    
+    inline def setIsFieldLabelableUndefined: Self = StObject.set(x, "isFieldLabelable", js.undefined)
+    
+    inline def setLabelAlign(value: String): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
+    
+    inline def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
+    
+    inline def setLabelAttrTpl(value: Any): Self = StObject.set(x, "labelAttrTpl", value.asInstanceOf[js.Any])
+    
+    inline def setLabelAttrTplUndefined: Self = StObject.set(x, "labelAttrTpl", js.undefined)
+    
+    inline def setLabelCell(value: IElement): Self = StObject.set(x, "labelCell", value.asInstanceOf[js.Any])
+    
+    inline def setLabelCellUndefined: Self = StObject.set(x, "labelCell", js.undefined)
+    
+    inline def setLabelCls(value: String): Self = StObject.set(x, "labelCls", value.asInstanceOf[js.Any])
+    
+    inline def setLabelClsExtra(value: String): Self = StObject.set(x, "labelClsExtra", value.asInstanceOf[js.Any])
+    
+    inline def setLabelClsExtraUndefined: Self = StObject.set(x, "labelClsExtra", js.undefined)
+    
+    inline def setLabelClsUndefined: Self = StObject.set(x, "labelCls", js.undefined)
+    
+    inline def setLabelEl(value: IElement): Self = StObject.set(x, "labelEl", value.asInstanceOf[js.Any])
+    
+    inline def setLabelElUndefined: Self = StObject.set(x, "labelEl", js.undefined)
+    
+    inline def setLabelPad(value: Double): Self = StObject.set(x, "labelPad", value.asInstanceOf[js.Any])
+    
+    inline def setLabelPadUndefined: Self = StObject.set(x, "labelPad", js.undefined)
+    
+    inline def setLabelSeparator(value: String): Self = StObject.set(x, "labelSeparator", value.asInstanceOf[js.Any])
+    
+    inline def setLabelSeparatorUndefined: Self = StObject.set(x, "labelSeparator", js.undefined)
+    
+    inline def setLabelStyle(value: String): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    
+    inline def setLabelWidth(value: Double): Self = StObject.set(x, "labelWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLabelWidthUndefined: Self = StObject.set(x, "labelWidth", js.undefined)
+    
+    inline def setMsgTarget(value: String): Self = StObject.set(x, "msgTarget", value.asInstanceOf[js.Any])
+    
+    inline def setMsgTargetUndefined: Self = StObject.set(x, "msgTarget", js.undefined)
+    
+    inline def setPreventMark(value: Boolean): Self = StObject.set(x, "preventMark", value.asInstanceOf[js.Any])
+    
+    inline def setPreventMarkUndefined: Self = StObject.set(x, "preventMark", js.undefined)
+    
+    inline def setSetActiveError(value: /* msg */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setActiveError", js.Any.fromFunction1((t0: /* msg */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetActiveErrorUndefined: Self = StObject.set(x, "setActiveError", js.undefined)
+    
+    inline def setSetActiveErrors(value: /* errors */ js.UndefOr[Array] => Callback): Self = StObject.set(x, "setActiveErrors", js.Any.fromFunction1((t0: /* errors */ js.UndefOr[Array]) => value(t0).runNow()))
+    
+    inline def setSetActiveErrorsUndefined: Self = StObject.set(x, "setActiveErrors", js.undefined)
+    
+    inline def setSetFieldDefaults(value: /* defaults */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setFieldDefaults", js.Any.fromFunction1((t0: /* defaults */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetFieldDefaultsUndefined: Self = StObject.set(x, "setFieldDefaults", js.undefined)
+    
+    inline def setSetFieldLabel(value: /* label */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setFieldLabel", js.Any.fromFunction1((t0: /* label */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetFieldLabelUndefined: Self = StObject.set(x, "setFieldLabel", js.undefined)
+    
+    inline def setTrimLabelSeparator(value: CallbackTo[String]): Self = StObject.set(x, "trimLabelSeparator", value.toJsFn)
+    
+    inline def setTrimLabelSeparatorUndefined: Self = StObject.set(x, "trimLabelSeparator", js.undefined)
+    
+    inline def setUnsetActiveError(value: Callback): Self = StObject.set(x, "unsetActiveError", value.toJsFn)
+    
+    inline def setUnsetActiveErrorUndefined: Self = StObject.set(x, "unsetActiveError", js.undefined)
+  }
 }
-

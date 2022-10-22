@@ -1,21 +1,42 @@
-package typingsJapgolly.youtube
+package typingsJapgolly.youtube.YT
 
+import typingsJapgolly.youtube.youtubeStrings.default
+import typingsJapgolly.youtube.youtubeStrings.hd1080
+import typingsJapgolly.youtube.youtubeStrings.hd720
+import typingsJapgolly.youtube.youtubeStrings.highres
+import typingsJapgolly.youtube.youtubeStrings.large
+import typingsJapgolly.youtube.youtubeStrings.medium
+import typingsJapgolly.youtube.youtubeStrings.playlist
+import typingsJapgolly.youtube.youtubeStrings.search
+import typingsJapgolly.youtube.youtubeStrings.small
+import typingsJapgolly.youtube.youtubeStrings.user_uploads
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object YT {
-  type ListType = typingsJapgolly.youtube.YT.ListTypePlayer | typingsJapgolly.youtube.YT.ListTypeSearch | typingsJapgolly.youtube.YT.ListTypeUserUploads
-  type ListTypePlayer = typingsJapgolly.youtube.youtubeStrings.player
-  type ListTypeSearch = typingsJapgolly.youtube.youtubeStrings.search
-  type ListTypeUserUploads = typingsJapgolly.youtube.youtubeStrings.user_uploads
-  type PlayerEventHandler[TEvent /* <: typingsJapgolly.youtube.YT.PlayerEvent */] = js.Function1[/* event */ TEvent, scala.Unit]
-  type SuggestedVideoQuality = typingsJapgolly.youtube.YT.VideoQualityDefault | typingsJapgolly.youtube.YT.VideoQualitySmall | typingsJapgolly.youtube.YT.VideoQualityMedium | typingsJapgolly.youtube.YT.VideoQualityLarge | typingsJapgolly.youtube.YT.VideoQualityHD720 | typingsJapgolly.youtube.YT.VideoQualityHD1080 | typingsJapgolly.youtube.YT.VideoQualityHighRes
-  type VideoQualityDefault = typingsJapgolly.youtube.youtubeStrings.default
-  type VideoQualityHD1080 = typingsJapgolly.youtube.youtubeStrings.hd1080
-  type VideoQualityHD720 = typingsJapgolly.youtube.youtubeStrings.hd720
-  type VideoQualityHighRes = typingsJapgolly.youtube.youtubeStrings.highres
-  type VideoQualityLarge = typingsJapgolly.youtube.youtubeStrings.large
-  type VideoQualityMedium = typingsJapgolly.youtube.youtubeStrings.medium
-  type VideoQualitySmall = typingsJapgolly.youtube.youtubeStrings.small
-}
+
+type ListType = ListTypeSearch | ListTypeUserUploads | ListTypePlaylist
+
+type ListTypePlaylist = playlist
+
+type ListTypeSearch = search
+
+type ListTypeUserUploads = user_uploads
+
+type PlayerEventHandler[TEvent /* <: PlayerEvent */] = js.Function1[/* event */ TEvent, Unit]
+
+type SuggestedVideoQuality = VideoQualityDefault | VideoQualitySmall | VideoQualityMedium | VideoQualityLarge | VideoQualityHD720 | VideoQualityHD1080 | VideoQualityHighRes
+
+type VideoQualityDefault = default
+
+type VideoQualityHD1080 = hd1080
+
+type VideoQualityHD720 = hd720
+
+type VideoQualityHighRes = highres
+
+type VideoQualityLarge = large
+
+type VideoQualityMedium = medium
+
+type VideoQualitySmall = small

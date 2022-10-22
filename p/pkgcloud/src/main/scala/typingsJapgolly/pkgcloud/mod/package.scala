@@ -1,11 +1,13 @@
-package typingsJapgolly.pkgcloud
+package typingsJapgolly.pkgcloud.mod
 
+import typingsJapgolly.pkgcloud.mod.^
+import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ProviderOptions = typingsJapgolly.pkgcloud.mod.BaseProviderOptions with (typingsJapgolly.std.Partial[
-    typingsJapgolly.pkgcloud.mod.AmazonProviderOptions | typingsJapgolly.pkgcloud.mod.AzureProviderOptions | typingsJapgolly.pkgcloud.mod.GoogleProviderOptions | typingsJapgolly.pkgcloud.mod.OpenstackProviderOptions | typingsJapgolly.pkgcloud.mod.RackspaceProviderOptions
-  ])
-}
+
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
+
+type ProviderOptions = BaseProviderOptions & (Partial[
+AmazonProviderOptions | AzureProviderOptions | GoogleProviderOptions | OpenstackProviderOptions | RackspaceProviderOptions])

@@ -1,7 +1,7 @@
 
 # Scala.js typings for bootstrap
 
-Typings are for version 4.3
+Typings are for version 5.2
 
 ## Library description:
 The most popular front-end framework for developing responsive, mobile first projects on the web.
@@ -10,10 +10,10 @@ The most popular front-end framework for developing responsive, mobile first pro
 | ------------------ | :-------------: |
 | Full name          | bootstrap |
 | Keywords           | css, sass, mobile-first, responsive, front-end, framework, web |
-| # releases         | 14 |
-| # dependents       | 5086 |
-| # downloads        | 95410154 |
-| # stars            | 311 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7948354666666668E7 |
+| # stars            | 159933.0 |
 
 ## Links
 - [Homepage](https://getbootstrap.com/)

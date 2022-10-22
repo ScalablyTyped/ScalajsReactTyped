@@ -1,26 +1,31 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.avatarAvatarMod.AvatarProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.avatarAvatarMod.AvatarTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.div
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Avatar", JSImport.Namespace)
-@js.native
-object avatarMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[AvatarProps, ComponentState, js.Any] {
-    def this(props: AvatarProps) = this()
-    def this(props: AvatarProps, context: js.Any) = this()
-  }
+object avatarMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Avatars](https://mui.com/components/avatars/)
+    *
+    * API:
+    *
+    * - [Avatar API](https://mui.com/api/avatar/)
+    */
+  @JSImport("@material-ui/core/Avatar", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[AvatarProps]]
+  val default: OverridableComponent[AvatarTypeMap[js.Object, div]] = js.native
   
+  type _To = OverridableComponent[AvatarTypeMap[js.Object, div]]
+  
+  /* This means you don't have to write `default`, but can instead just say `avatarMod.foo` */
+  override def _to: OverridableComponent[AvatarTypeMap[js.Object, div]] = default
 }
-

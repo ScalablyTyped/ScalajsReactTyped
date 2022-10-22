@@ -11,9 +11,9 @@ An async/await WebSocket client for browsers
 | Full name          | websocket-async |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1033 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 144.66666666666666 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/jcao219/websocket-async#readme)

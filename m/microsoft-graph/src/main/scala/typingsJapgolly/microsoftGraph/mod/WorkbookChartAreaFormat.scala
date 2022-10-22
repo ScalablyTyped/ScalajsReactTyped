@@ -1,24 +1,38 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookChartAreaFormat extends Entity {
+trait WorkbookChartAreaFormat
+  extends StObject
+     with Entity {
+  
   // Represents the fill format of an object, which includes background formatting information. Read-only.
-  var fill: js.UndefOr[WorkbookChartFill] = js.undefined
+  var fill: js.UndefOr[NullableOption[WorkbookChartFill]] = js.undefined
+  
   // Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
-  var font: js.UndefOr[WorkbookChartFont] = js.undefined
+  var font: js.UndefOr[NullableOption[WorkbookChartFont]] = js.undefined
 }
-
 object WorkbookChartAreaFormat {
-  @scala.inline
-  def apply(fill: WorkbookChartFill = null, font: WorkbookChartFont = null, id: String = null): WorkbookChartAreaFormat = {
+  
+  inline def apply(): WorkbookChartAreaFormat = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartAreaFormat]
   }
+  
+  extension [Self <: WorkbookChartAreaFormat](x: Self) {
+    
+    inline def setFill(value: NullableOption[WorkbookChartFill]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillNull: Self = StObject.set(x, "fill", null)
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setFont(value: NullableOption[WorkbookChartFont]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontNull: Self = StObject.set(x, "font", null)
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+  }
 }
-

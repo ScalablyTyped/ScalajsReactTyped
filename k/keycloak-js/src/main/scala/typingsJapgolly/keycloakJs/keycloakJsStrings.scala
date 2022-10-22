@@ -4,101 +4,105 @@ import typingsJapgolly.keycloakJs.mod.KeycloakFlow
 import typingsJapgolly.keycloakJs.mod.KeycloakOnLoad
 import typingsJapgolly.keycloakJs.mod.KeycloakResponseMode
 import typingsJapgolly.keycloakJs.mod.KeycloakResponseType
-import typingsJapgolly.keycloakJs.mod._KeycloakAdapterName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keycloakJsStrings {
-  @js.native
-  sealed trait S256 extends js.Object
   
   @js.native
-  sealed trait `check-sso` extends KeycloakOnLoad
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait code extends KeycloakResponseType
+  sealed trait S256 extends StObject
+  inline def S256: S256 = "S256".asInstanceOf[S256]
   
   @js.native
-  sealed trait `code id_token token` extends KeycloakResponseType
+  sealed trait cancelled extends StObject
+  inline def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
   
   @js.native
-  sealed trait cordova extends _KeycloakAdapterName
+  sealed trait `check-sso`
+    extends StObject
+       with KeycloakOnLoad
+  inline def `check-sso`: `check-sso` = "check-sso".asInstanceOf[`check-sso`]
   
   @js.native
-  sealed trait `cordova-native` extends _KeycloakAdapterName
+  sealed trait code
+    extends StObject
+       with KeycloakResponseType
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
-  sealed trait default extends _KeycloakAdapterName
+  sealed trait `code id_token token`
+    extends StObject
+       with KeycloakResponseType
+  inline def `code id_token token`: `code id_token token` = ("code id_token token").asInstanceOf[`code id_token token`]
   
   @js.native
-  sealed trait fragment extends KeycloakResponseMode
+  sealed trait cordova extends StObject
+  inline def cordova: cordova = "cordova".asInstanceOf[cordova]
   
   @js.native
-  sealed trait hybrid extends KeycloakFlow
+  sealed trait `cordova-native` extends StObject
+  inline def `cordova-native`: `cordova-native` = "cordova-native".asInstanceOf[`cordova-native`]
   
   @js.native
-  sealed trait `id_token token` extends KeycloakResponseType
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait `implicit` extends KeycloakFlow
+  sealed trait fragment
+    extends StObject
+       with KeycloakResponseMode
+  inline def fragment: fragment = "fragment".asInstanceOf[fragment]
   
   @js.native
-  sealed trait login extends js.Object
+  sealed trait hybrid
+    extends StObject
+       with KeycloakFlow
+  inline def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   
   @js.native
-  sealed trait `login-required` extends KeycloakOnLoad
+  sealed trait `id_token token`
+    extends StObject
+       with KeycloakResponseType
+  inline def `id_token token`: `id_token token` = ("id_token token").asInstanceOf[`id_token token`]
   
   @js.native
-  sealed trait native extends js.Object
+  sealed trait `implicit`
+    extends StObject
+       with KeycloakFlow
+  inline def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait login extends StObject
+  inline def login: login = "login".asInstanceOf[login]
   
   @js.native
-  sealed trait query extends KeycloakResponseMode
+  sealed trait `login-required`
+    extends StObject
+       with KeycloakOnLoad
+  inline def `login-required`: `login-required` = "login-required".asInstanceOf[`login-required`]
   
   @js.native
-  sealed trait register extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait standard extends KeycloakFlow
+  sealed trait query
+    extends StObject
+       with KeycloakResponseMode
+  inline def query: query = "query".asInstanceOf[query]
   
-  @scala.inline
-  def S256: S256 = "S256".asInstanceOf[S256]
-  @scala.inline
-  def `check-sso`: `check-sso` = "check-sso".asInstanceOf[`check-sso`]
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def `code id_token token`: `code id_token token` = "code id_token token".asInstanceOf[`code id_token token`]
-  @scala.inline
-  def cordova: cordova = "cordova".asInstanceOf[cordova]
-  @scala.inline
-  def `cordova-native`: `cordova-native` = "cordova-native".asInstanceOf[`cordova-native`]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def fragment: fragment = "fragment".asInstanceOf[fragment]
-  @scala.inline
-  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
-  @scala.inline
-  def `id_token token`: `id_token token` = "id_token token".asInstanceOf[`id_token token`]
-  @scala.inline
-  def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
-  @scala.inline
-  def login: login = "login".asInstanceOf[login]
-  @scala.inline
-  def `login-required`: `login-required` = "login-required".asInstanceOf[`login-required`]
-  @scala.inline
-  def native: native = "native".asInstanceOf[native]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
-  @scala.inline
-  def register: register = "register".asInstanceOf[register]
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
+  @js.native
+  sealed trait standard
+    extends StObject
+       with KeycloakFlow
+  inline def standard: standard = "standard".asInstanceOf[standard]
+  
+  @js.native
+  sealed trait success extends StObject
+  inline def success: success = "success".asInstanceOf[success]
 }
-

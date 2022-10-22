@@ -1,14 +1,17 @@
 package typingsJapgolly.marko
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("marko/node-require", JSImport.Namespace)
-@js.native
-object nodeRequireMod extends js.Object {
-  def getExtensions(): js.Any = js.native
-  def install(): Unit = js.native
-  def install(options: js.Any): Unit = js.native
+object nodeRequireMod {
+  
+  @JSImport("marko/node-require", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getExtensions(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtensions")().asInstanceOf[Any]
+  
+  inline def install(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[Unit]
+  inline def install(options: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

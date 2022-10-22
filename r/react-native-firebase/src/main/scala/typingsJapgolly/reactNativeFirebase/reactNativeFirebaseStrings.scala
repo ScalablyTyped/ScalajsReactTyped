@@ -6,470 +6,491 @@ import typingsJapgolly.reactNativeFirebase.mod.RNFirebase.firestore.Types.QueryO
 import typingsJapgolly.reactNativeFirebase.mod.RNFirebase.functions.FunctionsErrorCode
 import typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Category
 import typingsJapgolly.reactNativeFirebase.mod.RNFirebase.perf.HttpMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeFirebaseStrings {
-  @js.native
-  sealed trait ASC extends QueryDirection
   
   @js.native
-  sealed trait CONNECT extends HttpMethod
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait DELETE extends HttpMethod
+  sealed trait ASC
+    extends StObject
+       with QueryDirection
+  inline def ASC: ASC = "ASC".asInstanceOf[ASC]
   
   @js.native
-  sealed trait DESC extends QueryDirection
+  sealed trait CONNECT
+    extends StObject
+       with HttpMethod
+  inline def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
   
   @js.native
-  sealed trait EMAIL_SIGNIN extends js.Object
+  sealed trait DELETE
+    extends StObject
+       with HttpMethod
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait ERROR extends js.Object
+  sealed trait DESC
+    extends StObject
+       with QueryDirection
+  inline def DESC: DESC = "DESC".asInstanceOf[DESC]
   
   @js.native
-  sealed trait Equalssign extends QueryOperator
+  sealed trait EMAIL_SIGNIN extends StObject
+  inline def EMAIL_SIGNIN: EMAIL_SIGNIN = "EMAIL_SIGNIN".asInstanceOf[EMAIL_SIGNIN]
   
   @js.native
-  sealed trait EqualssignEqualssign extends QueryOperator
+  sealed trait ERROR extends StObject
+  inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
-  sealed trait GET extends HttpMethod
+  sealed trait Equalssign
+    extends StObject
+       with QueryOperator
+  inline def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait Greaterthansign extends QueryOperator
+  sealed trait EqualssignEqualssign
+    extends StObject
+       with QueryOperator
+  inline def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends QueryOperator
+  sealed trait GET
+    extends StObject
+       with HttpMethod
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait HEAD extends HttpMethod
+  sealed trait Greaterthansign
+    extends StObject
+       with QueryOperator
+  inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait Lessthansign extends QueryOperator
+  sealed trait GreaterthansignEqualssign
+    extends StObject
+       with QueryOperator
+  inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait LessthansignEqualssign extends QueryOperator
+  sealed trait HEAD
+    extends StObject
+       with HttpMethod
+  inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
-  sealed trait OPTIONS extends HttpMethod
+  sealed trait Lessthansign
+    extends StObject
+       with QueryOperator
+  inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait PASSWORD_RESET extends js.Object
+  sealed trait LessthansignEqualssign
+    extends StObject
+       with QueryOperator
+  inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
-  sealed trait PATCH extends HttpMethod
+  sealed trait OPTIONS
+    extends StObject
+       with HttpMethod
+  inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
-  sealed trait POST extends HttpMethod
+  sealed trait PASSWORD_RESET extends StObject
+  inline def PASSWORD_RESET: PASSWORD_RESET = "PASSWORD_RESET".asInstanceOf[PASSWORD_RESET]
   
   @js.native
-  sealed trait PUT extends HttpMethod
+  sealed trait PATCH
+    extends StObject
+       with HttpMethod
+  inline def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
-  sealed trait RECOVER_EMAIL extends js.Object
+  sealed trait POST
+    extends StObject
+       with HttpMethod
+  inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait SHORT extends js.Object
+  sealed trait PUT
+    extends StObject
+       with HttpMethod
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait TRACE extends HttpMethod
+  sealed trait RECOVER_EMAIL extends StObject
+  inline def RECOVER_EMAIL: RECOVER_EMAIL = "RECOVER_EMAIL".asInstanceOf[RECOVER_EMAIL]
   
   @js.native
-  sealed trait UNGUESSABLE extends js.Object
+  sealed trait SHORT extends StObject
+  inline def SHORT: SHORT = "SHORT".asInstanceOf[SHORT]
   
   @js.native
-  sealed trait VERIFY_EMAIL extends js.Object
+  sealed trait TRACE
+    extends StObject
+       with HttpMethod
+  inline def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
   @js.native
-  sealed trait aborted extends FunctionsErrorCode
+  sealed trait UNGUESSABLE extends StObject
+  inline def UNGUESSABLE: UNGUESSABLE = "UNGUESSABLE".asInstanceOf[UNGUESSABLE]
   
   @js.native
-  sealed trait added extends js.Object
+  sealed trait VERIFY_EMAIL extends StObject
+  inline def VERIFY_EMAIL: VERIFY_EMAIL = "VERIFY_EMAIL".asInstanceOf[VERIFY_EMAIL]
   
   @js.native
-  sealed trait alarm extends Category
+  sealed trait aborted
+    extends StObject
+       with FunctionsErrorCode
+  inline def aborted: aborted = "aborted".asInstanceOf[aborted]
   
   @js.native
-  sealed trait `already-exists` extends FunctionsErrorCode
+  sealed trait added extends StObject
+  inline def added: added = "added".asInstanceOf[added]
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait alarm
+    extends StObject
+       with Category
+  inline def alarm: alarm = "alarm".asInstanceOf[alarm]
   
   @js.native
-  sealed trait `array-contains` extends QueryOperator
+  sealed trait `already-exists`
+    extends StObject
+       with FunctionsErrorCode
+  inline def `already-exists`: `already-exists` = "already-exists".asInstanceOf[`already-exists`]
   
   @js.native
-  sealed trait asc_ extends QueryDirection
+  sealed trait array extends StObject
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait `array-contains`
+    extends StObject
+       with QueryOperator
+  inline def `array-contains`: `array-contains` = "array-contains".asInstanceOf[`array-contains`]
   
   @js.native
-  sealed trait cache extends js.Object
+  sealed trait asc_
+    extends StObject
+       with QueryDirection
+  inline def asc_ : asc_ = "asc".asInstanceOf[asc_]
   
   @js.native
-  sealed trait call extends Category
+  sealed trait boolean extends StObject
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait cancelled extends FunctionsErrorCode
+  sealed trait cache extends StObject
+  inline def cache: cache = "cache".asInstanceOf[cache]
   
   @js.native
-  sealed trait child_added extends QueryEventType
+  sealed trait call
+    extends StObject
+       with Category
+  inline def call: call = "call".asInstanceOf[call]
   
   @js.native
-  sealed trait child_changed extends QueryEventType
+  sealed trait cancelled
+    extends StObject
+       with FunctionsErrorCode
+  inline def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
   
   @js.native
-  sealed trait child_moved extends QueryEventType
+  sealed trait child_added
+    extends StObject
+       with QueryEventType
+  inline def child_added: child_added = "child_added".asInstanceOf[child_added]
   
   @js.native
-  sealed trait child_removed extends QueryEventType
+  sealed trait child_changed
+    extends StObject
+       with QueryEventType
+  inline def child_changed: child_changed = "child_changed".asInstanceOf[child_changed]
   
   @js.native
-  sealed trait `data-loss` extends FunctionsErrorCode
+  sealed trait child_moved
+    extends StObject
+       with QueryEventType
+  inline def child_moved: child_moved = "child_moved".asInstanceOf[child_moved]
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait child_removed
+    extends StObject
+       with QueryEventType
+  inline def child_removed: child_removed = "child_removed".asInstanceOf[child_removed]
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait `data-loss`
+    extends StObject
+       with FunctionsErrorCode
+  inline def `data-loss`: `data-loss` = "data-loss".asInstanceOf[`data-loss`]
   
   @js.native
-  sealed trait `deadline-exceeded` extends FunctionsErrorCode
+  sealed trait date extends StObject
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait day extends StObject
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait `deadline-exceeded`
+    extends StObject
+       with FunctionsErrorCode
+  inline def `deadline-exceeded`: `deadline-exceeded` = "deadline-exceeded".asInstanceOf[`deadline-exceeded`]
   
   @js.native
-  sealed trait desc_ extends QueryDirection
+  sealed trait debug extends StObject
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait documentid extends js.Object
+  sealed trait desc_
+    extends StObject
+       with QueryDirection
+  inline def desc_ : desc_ = "desc".asInstanceOf[desc_]
   
   @js.native
-  sealed trait email extends Category
+  sealed trait documentid extends StObject
+  inline def documentid: documentid = "documentid".asInstanceOf[documentid]
   
   @js.native
-  sealed trait err extends Category
+  sealed trait email
+    extends StObject
+       with Category
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait error_ extends js.Object
+  sealed trait err
+    extends StObject
+       with Category
+  inline def err: err = "err".asInstanceOf[err]
   
   @js.native
-  sealed trait event extends Category
+  sealed trait error_ extends StObject
+  inline def error_ : error_ = "error".asInstanceOf[error_]
   
   @js.native
-  sealed trait `failed-precondition` extends FunctionsErrorCode
+  sealed trait event
+    extends StObject
+       with Category
+  inline def event: event = "event".asInstanceOf[event]
   
   @js.native
-  sealed trait fieldpath extends js.Object
+  sealed trait `failed-precondition`
+    extends StObject
+       with FunctionsErrorCode
+  inline def `failed-precondition`: `failed-precondition` = "failed-precondition".asInstanceOf[`failed-precondition`]
   
   @js.native
-  sealed trait fieldvalue extends js.Object
+  sealed trait fieldpath extends StObject
+  inline def fieldpath: fieldpath = "fieldpath".asInstanceOf[fieldpath]
   
   @js.native
-  sealed trait geopoint extends js.Object
+  sealed trait fieldvalue extends StObject
+  inline def fieldvalue: fieldvalue = "fieldvalue".asInstanceOf[fieldvalue]
   
   @js.native
-  sealed trait hour extends js.Object
+  sealed trait geopoint extends StObject
+  inline def geopoint: geopoint = "geopoint".asInstanceOf[geopoint]
   
   @js.native
-  sealed trait internal extends FunctionsErrorCode
+  sealed trait hour extends StObject
+  inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
-  sealed trait `invalid-argument` extends FunctionsErrorCode
+  sealed trait internal
+    extends StObject
+       with FunctionsErrorCode
+  inline def internal: internal = "internal".asInstanceOf[internal]
   
   @js.native
-  sealed trait minute extends js.Object
+  sealed trait `invalid-argument`
+    extends StObject
+       with FunctionsErrorCode
+  inline def `invalid-argument`: `invalid-argument` = "invalid-argument".asInstanceOf[`invalid-argument`]
   
   @js.native
-  sealed trait modified extends js.Object
+  sealed trait minute extends StObject
+  inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
-  sealed trait msg extends Category
+  sealed trait modified extends StObject
+  inline def modified: modified = "modified".asInstanceOf[modified]
   
   @js.native
-  sealed trait `not-found` extends FunctionsErrorCode
+  sealed trait msg
+    extends StObject
+       with Category
+  inline def msg: msg = "msg".asInstanceOf[msg]
   
   @js.native
-  sealed trait `null` extends js.Object
+  sealed trait `not-found`
+    extends StObject
+       with FunctionsErrorCode
+  inline def `not-found`: `not-found` = "not-found".asInstanceOf[`not-found`]
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait `null` extends StObject
+  inline def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait number extends StObject
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait ok extends FunctionsErrorCode
+  sealed trait `object` extends StObject
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait `out-of-range` extends FunctionsErrorCode
+  sealed trait ok
+    extends StObject
+       with FunctionsErrorCode
+  inline def ok: ok = "ok".asInstanceOf[ok]
   
   @js.native
-  sealed trait `permission-denied` extends FunctionsErrorCode
+  sealed trait `out-of-range`
+    extends StObject
+       with FunctionsErrorCode
+  inline def `out-of-range`: `out-of-range` = "out-of-range".asInstanceOf[`out-of-range`]
   
   @js.native
-  sealed trait progress extends Category
+  sealed trait `permission-denied`
+    extends StObject
+       with FunctionsErrorCode
+  inline def `permission-denied`: `permission-denied` = "permission-denied".asInstanceOf[`permission-denied`]
   
   @js.native
-  sealed trait promo extends Category
+  sealed trait progress
+    extends StObject
+       with Category
+  inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait recommendation extends Category
+  sealed trait promo
+    extends StObject
+       with Category
+  inline def promo: promo = "promo".asInstanceOf[promo]
   
   @js.native
-  sealed trait reference extends js.Object
+  sealed trait recommendation
+    extends StObject
+       with Category
+  inline def recommendation: recommendation = "recommendation".asInstanceOf[recommendation]
   
   @js.native
-  sealed trait reminder extends Category
+  sealed trait reference extends StObject
+  inline def reference: reference = "reference".asInstanceOf[reference]
   
   @js.native
-  sealed trait removed extends js.Object
+  sealed trait reminder
+    extends StObject
+       with Category
+  inline def reminder: reminder = "reminder".asInstanceOf[reminder]
   
   @js.native
-  sealed trait `resource-exhausted` extends FunctionsErrorCode
+  sealed trait removed extends StObject
+  inline def removed: removed = "removed".asInstanceOf[removed]
   
   @js.native
-  sealed trait sent extends js.Object
+  sealed trait `resource-exhausted`
+    extends StObject
+       with FunctionsErrorCode
+  inline def `resource-exhausted`: `resource-exhausted` = "resource-exhausted".asInstanceOf[`resource-exhausted`]
   
   @js.native
-  sealed trait server extends js.Object
+  sealed trait sent extends StObject
+  inline def sent: sent = "sent".asInstanceOf[sent]
   
   @js.native
-  sealed trait service extends Category
+  sealed trait server extends StObject
+  inline def server: server = "server".asInstanceOf[server]
   
   @js.native
-  sealed trait silent extends js.Object
+  sealed trait service
+    extends StObject
+       with Category
+  inline def service: service = "service".asInstanceOf[service]
   
   @js.native
-  sealed trait social extends Category
+  sealed trait silent extends StObject
+  inline def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
-  sealed trait status extends Category
+  sealed trait social
+    extends StObject
+       with Category
+  inline def social: social = "social".asInstanceOf[social]
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait status
+    extends StObject
+       with Category
+  inline def status: status = "status".asInstanceOf[status]
   
   @js.native
-  sealed trait system extends Category
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait timeout extends js.Object
+  sealed trait system
+    extends StObject
+       with Category
+  inline def system: system = "system".asInstanceOf[system]
   
   @js.native
-  sealed trait transport extends Category
+  sealed trait timeout extends StObject
+  inline def timeout: timeout = "timeout".asInstanceOf[timeout]
   
   @js.native
-  sealed trait unauthenticated extends FunctionsErrorCode
+  sealed trait transport
+    extends StObject
+       with Category
+  inline def transport: transport = "transport".asInstanceOf[transport]
   
   @js.native
-  sealed trait unavailable extends FunctionsErrorCode
+  sealed trait unauthenticated
+    extends StObject
+       with FunctionsErrorCode
+  inline def unauthenticated: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
   
   @js.native
-  sealed trait unimplemented extends FunctionsErrorCode
+  sealed trait unavailable
+    extends StObject
+       with FunctionsErrorCode
+  inline def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
   
   @js.native
-  sealed trait unknown extends FunctionsErrorCode
+  sealed trait unimplemented
+    extends StObject
+       with FunctionsErrorCode
+  inline def unimplemented: unimplemented = "unimplemented".asInstanceOf[unimplemented]
   
   @js.native
-  sealed trait value extends QueryEventType
+  sealed trait unknown
+    extends StObject
+       with FunctionsErrorCode
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
-  sealed trait verified extends js.Object
+  sealed trait value
+    extends StObject
+       with QueryEventType
+  inline def value: value = "value".asInstanceOf[value]
   
   @js.native
-  sealed trait week extends js.Object
+  sealed trait verified extends StObject
+  inline def verified: verified = "verified".asInstanceOf[verified]
   
-  @scala.inline
-  def ASC: ASC = "ASC".asInstanceOf[ASC]
-  @scala.inline
-  def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def DESC: DESC = "DESC".asInstanceOf[DESC]
-  @scala.inline
-  def EMAIL_SIGNIN: EMAIL_SIGNIN = "EMAIL_SIGNIN".asInstanceOf[EMAIL_SIGNIN]
-  @scala.inline
-  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
-  @scala.inline
-  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
-  @scala.inline
-  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
-  @scala.inline
-  def PASSWORD_RESET: PASSWORD_RESET = "PASSWORD_RESET".asInstanceOf[PASSWORD_RESET]
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def RECOVER_EMAIL: RECOVER_EMAIL = "RECOVER_EMAIL".asInstanceOf[RECOVER_EMAIL]
-  @scala.inline
-  def SHORT: SHORT = "SHORT".asInstanceOf[SHORT]
-  @scala.inline
-  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
-  @scala.inline
-  def UNGUESSABLE: UNGUESSABLE = "UNGUESSABLE".asInstanceOf[UNGUESSABLE]
-  @scala.inline
-  def VERIFY_EMAIL: VERIFY_EMAIL = "VERIFY_EMAIL".asInstanceOf[VERIFY_EMAIL]
-  @scala.inline
-  def aborted: aborted = "aborted".asInstanceOf[aborted]
-  @scala.inline
-  def added: added = "added".asInstanceOf[added]
-  @scala.inline
-  def alarm: alarm = "alarm".asInstanceOf[alarm]
-  @scala.inline
-  def `already-exists`: `already-exists` = "already-exists".asInstanceOf[`already-exists`]
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def `array-contains`: `array-contains` = "array-contains".asInstanceOf[`array-contains`]
-  @scala.inline
-  def asc_ : asc_ = "asc".asInstanceOf[asc_]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def cache: cache = "cache".asInstanceOf[cache]
-  @scala.inline
-  def call: call = "call".asInstanceOf[call]
-  @scala.inline
-  def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
-  @scala.inline
-  def child_added: child_added = "child_added".asInstanceOf[child_added]
-  @scala.inline
-  def child_changed: child_changed = "child_changed".asInstanceOf[child_changed]
-  @scala.inline
-  def child_moved: child_moved = "child_moved".asInstanceOf[child_moved]
-  @scala.inline
-  def child_removed: child_removed = "child_removed".asInstanceOf[child_removed]
-  @scala.inline
-  def `data-loss`: `data-loss` = "data-loss".asInstanceOf[`data-loss`]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
-  @scala.inline
-  def `deadline-exceeded`: `deadline-exceeded` = "deadline-exceeded".asInstanceOf[`deadline-exceeded`]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def desc_ : desc_ = "desc".asInstanceOf[desc_]
-  @scala.inline
-  def documentid: documentid = "documentid".asInstanceOf[documentid]
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
-  def err: err = "err".asInstanceOf[err]
-  @scala.inline
-  def error_ : error_ = "error".asInstanceOf[error_]
-  @scala.inline
-  def event: event = "event".asInstanceOf[event]
-  @scala.inline
-  def `failed-precondition`: `failed-precondition` = "failed-precondition".asInstanceOf[`failed-precondition`]
-  @scala.inline
-  def fieldpath: fieldpath = "fieldpath".asInstanceOf[fieldpath]
-  @scala.inline
-  def fieldvalue: fieldvalue = "fieldvalue".asInstanceOf[fieldvalue]
-  @scala.inline
-  def geopoint: geopoint = "geopoint".asInstanceOf[geopoint]
-  @scala.inline
-  def hour: hour = "hour".asInstanceOf[hour]
-  @scala.inline
-  def internal: internal = "internal".asInstanceOf[internal]
-  @scala.inline
-  def `invalid-argument`: `invalid-argument` = "invalid-argument".asInstanceOf[`invalid-argument`]
-  @scala.inline
-  def minute: minute = "minute".asInstanceOf[minute]
-  @scala.inline
-  def modified: modified = "modified".asInstanceOf[modified]
-  @scala.inline
-  def msg: msg = "msg".asInstanceOf[msg]
-  @scala.inline
-  def `not-found`: `not-found` = "not-found".asInstanceOf[`not-found`]
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def ok: ok = "ok".asInstanceOf[ok]
-  @scala.inline
-  def `out-of-range`: `out-of-range` = "out-of-range".asInstanceOf[`out-of-range`]
-  @scala.inline
-  def `permission-denied`: `permission-denied` = "permission-denied".asInstanceOf[`permission-denied`]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def promo: promo = "promo".asInstanceOf[promo]
-  @scala.inline
-  def recommendation: recommendation = "recommendation".asInstanceOf[recommendation]
-  @scala.inline
-  def reference: reference = "reference".asInstanceOf[reference]
-  @scala.inline
-  def reminder: reminder = "reminder".asInstanceOf[reminder]
-  @scala.inline
-  def removed: removed = "removed".asInstanceOf[removed]
-  @scala.inline
-  def `resource-exhausted`: `resource-exhausted` = "resource-exhausted".asInstanceOf[`resource-exhausted`]
-  @scala.inline
-  def sent: sent = "sent".asInstanceOf[sent]
-  @scala.inline
-  def server: server = "server".asInstanceOf[server]
-  @scala.inline
-  def service: service = "service".asInstanceOf[service]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def social: social = "social".asInstanceOf[social]
-  @scala.inline
-  def status: status = "status".asInstanceOf[status]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def system: system = "system".asInstanceOf[system]
-  @scala.inline
-  def timeout: timeout = "timeout".asInstanceOf[timeout]
-  @scala.inline
-  def transport: transport = "transport".asInstanceOf[transport]
-  @scala.inline
-  def unauthenticated: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
-  @scala.inline
-  def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
-  @scala.inline
-  def unimplemented: unimplemented = "unimplemented".asInstanceOf[unimplemented]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
-  @scala.inline
-  def verified: verified = "verified".asInstanceOf[verified]
-  @scala.inline
-  def week: week = "week".asInstanceOf[week]
+  @js.native
+  sealed trait week extends StObject
+  inline def week: week = "week".asInstanceOf[week]
 }
-

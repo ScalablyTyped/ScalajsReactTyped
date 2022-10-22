@@ -1,22 +1,21 @@
 package typingsJapgolly.oracleOraclejet.ojchartMod
 
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.oracleOraclejet.AnonAlignTickMarks
-import typingsJapgolly.oracleOraclejet.AnonAnimationDownColor
-import typingsJapgolly.oracleOraclejet.AnonAxisLine
-import typingsJapgolly.oracleOraclejet.AnonBackgroundColor
-import typingsJapgolly.oracleOraclejet.AnonBaselineScaling
-import typingsJapgolly.oracleOraclejet.AnonBorderWidth
-import typingsJapgolly.oracleOraclejet.AnonClose
-import typingsJapgolly.oracleOraclejet.AnonComponentName
-import typingsJapgolly.oracleOraclejet.AnonContent
-import typingsJapgolly.oracleOraclejet.AnonConverter
-import typingsJapgolly.oracleOraclejet.AnonDrag
-import typingsJapgolly.oracleOraclejet.AnonInsert
-import typingsJapgolly.oracleOraclejet.AnonPreventDefault
-import typingsJapgolly.oracleOraclejet.AnonRenderer
-import typingsJapgolly.oracleOraclejet.AnonX
+import typingsJapgolly.oracleOraclejet.anon.AlignTickMarks
+import typingsJapgolly.oracleOraclejet.anon.AnimationDownColor
+import typingsJapgolly.oracleOraclejet.anon.AxisLine
+import typingsJapgolly.oracleOraclejet.anon.BackgroundColor
+import typingsJapgolly.oracleOraclejet.anon.BaselineScaling
+import typingsJapgolly.oracleOraclejet.anon.BorderWidth
+import typingsJapgolly.oracleOraclejet.anon.Close
+import typingsJapgolly.oracleOraclejet.anon.ComponentName
+import typingsJapgolly.oracleOraclejet.anon.Content
+import typingsJapgolly.oracleOraclejet.anon.Converter
+import typingsJapgolly.oracleOraclejet.anon.Drag
+import typingsJapgolly.oracleOraclejet.anon.Insert
+import typingsJapgolly.oracleOraclejet.anon.PreventDefault
+import typingsJapgolly.oracleOraclejet.anon.Renderer
+import typingsJapgolly.oracleOraclejet.anon.X
 import typingsJapgolly.oracleOraclejet.ojchartMod.ojChart.DataLabelContext
 import typingsJapgolly.oracleOraclejet.ojdataproviderMod.DataProvider
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.all
@@ -74,166 +73,320 @@ import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.withoutRescale
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.x
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.y
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.zoom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojchart.ojChartSettableProperties<K, D>> */
 trait ojChartSettablePropertiesLenient[K, D]
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var animationOnDataChange: js.UndefOr[auto | slideToLeft | slideToRight | none] = js.undefined
+  
   var animationOnDisplay: js.UndefOr[auto | alphaFade | zoom | none] = js.undefined
+  
   var as: js.UndefOr[String] = js.undefined
+  
   var coordinateSystem: js.UndefOr[polar | cartesian] = js.undefined
-  var data: js.UndefOr[DataProvider[K, D]] = js.undefined
+  
+  var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.undefined
+  
   var dataCursor: js.UndefOr[off | on | auto] = js.undefined
+  
   var dataCursorBehavior: js.UndefOr[smooth | snap | auto] = js.undefined
-  var dataCursorPosition: js.UndefOr[AnonX] = js.undefined
-  var dataLabel: js.UndefOr[js.Function1[/* context */ DataLabelContext, AnonInsert | AnonPreventDefault]] = js.undefined
-  var dnd: js.UndefOr[AnonDrag] = js.undefined
+  
+  var dataCursorPosition: js.UndefOr[X] = js.undefined
+  
+  var dataLabel: js.UndefOr[js.Function1[/* context */ DataLabelContext, Insert | PreventDefault]] = js.undefined
+  
+  var dnd: js.UndefOr[Drag] = js.undefined
+  
   var dragMode: js.UndefOr[pan | zoom | select | off | user] = js.undefined
+  
   var drilling: js.UndefOr[on | seriesOnly | groupsOnly | off] = js.undefined
-  var groupComparator: js.UndefOr[js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]] = js.undefined
+  
+  var groupComparator: js.UndefOr[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null] = js.undefined
+  
   var hiddenCategories: js.UndefOr[js.Array[String]] = js.undefined
+  
   var hideAndShowBehavior: js.UndefOr[withRescale | withoutRescale | none] = js.undefined
+  
   var highlightMatch: js.UndefOr[any | all] = js.undefined
+  
   var highlightedCategories: js.UndefOr[js.Array[String]] = js.undefined
+  
   var hoverBehavior: js.UndefOr[dim | none] = js.undefined
+  
   var initialZooming: js.UndefOr[first | last | none] = js.undefined
-  var legend: js.UndefOr[AnonBackgroundColor] = js.undefined
+  
+  var legend: js.UndefOr[BackgroundColor] = js.undefined
+  
   var orientation: js.UndefOr[horizontal | vertical] = js.undefined
+  
   var otherThreshold: js.UndefOr[Double] = js.undefined
-  var overview: js.UndefOr[AnonContent] = js.undefined
-  var pieCenter: js.UndefOr[AnonConverter] = js.undefined
-  var plotArea: js.UndefOr[AnonBorderWidth] = js.undefined
+  
+  var overview: js.UndefOr[Content] = js.undefined
+  
+  var pieCenter: js.UndefOr[Converter] = js.undefined
+  
+  var plotArea: js.UndefOr[BorderWidth] = js.undefined
+  
   var polarGridShape: js.UndefOr[polygon | circle] = js.undefined
+  
   var selection: js.UndefOr[js.Array[K]] = js.undefined
+  
   var selectionMode: js.UndefOr[single | multiple | none] = js.undefined
-  var seriesComparator: js.UndefOr[js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]] = js.undefined
+  
+  var seriesComparator: js.UndefOr[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null] = js.undefined
+  
   var sorting: js.UndefOr[ascending | descending | off] = js.undefined
+  
   var splitDualY: js.UndefOr[on | off | auto] = js.undefined
+  
   var splitterPosition: js.UndefOr[Double] = js.undefined
+  
   var stack: js.UndefOr[on | off] = js.undefined
+  
   var stackLabel: js.UndefOr[on | off] = js.undefined
-  var styleDefaults: js.UndefOr[AnonAnimationDownColor] = js.undefined
+  
+  var styleDefaults: js.UndefOr[AnimationDownColor] = js.undefined
+  
   var timeAxisType: js.UndefOr[enabled | mixedFrequency | skipGaps | disabled | auto] = js.undefined
-  var tooltip: js.UndefOr[AnonRenderer] = js.undefined
+  
+  var tooltip: js.UndefOr[Renderer] = js.undefined
+  
   var touchResponse: js.UndefOr[touchStart | auto] = js.undefined
+  
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[AnonComponentName] = js.undefined
+  
+  var translations: js.UndefOr[ComponentName] = js.undefined
+  
   var `type`: js.UndefOr[
     line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
   ] = js.undefined
-  var valueFormats: js.UndefOr[AnonClose] = js.undefined
-  var xAxis: js.UndefOr[AnonAxisLine] = js.undefined
-  var y2Axis: js.UndefOr[AnonAlignTickMarks] = js.undefined
-  var yAxis: js.UndefOr[AnonBaselineScaling] = js.undefined
+  
+  var valueFormats: js.UndefOr[Close] = js.undefined
+  
+  var xAxis: js.UndefOr[AxisLine] = js.undefined
+  
+  var y2Axis: js.UndefOr[AlignTickMarks] = js.undefined
+  
+  var yAxis: js.UndefOr[BaselineScaling] = js.undefined
+  
   var zoomAndScroll: js.UndefOr[delayedScrollOnly | liveScrollOnly | delayed | live | off] = js.undefined
+  
   var zoomDirection: js.UndefOr[x | y | auto] = js.undefined
 }
-
 object ojChartSettablePropertiesLenient {
-  @scala.inline
-  def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    animationOnDataChange: auto | slideToLeft | slideToRight | none = null,
-    animationOnDisplay: auto | alphaFade | zoom | none = null,
-    as: String = null,
-    coordinateSystem: polar | cartesian = null,
-    data: DataProvider[K, D] = null,
-    dataCursor: off | on | auto = null,
-    dataCursorBehavior: smooth | snap | auto = null,
-    dataCursorPosition: AnonX = null,
-    dataLabel: /* context */ DataLabelContext => CallbackTo[AnonInsert | AnonPreventDefault] = null,
-    dnd: AnonDrag = null,
-    dragMode: pan | zoom | select | off | user = null,
-    drilling: on | seriesOnly | groupsOnly | off = null,
-    groupComparator: (/* param0 */ js.Object, /* param1 */ js.Object) => CallbackTo[Double] = null,
-    hiddenCategories: js.Array[String] = null,
-    hideAndShowBehavior: withRescale | withoutRescale | none = null,
-    highlightMatch: any | all = null,
-    highlightedCategories: js.Array[String] = null,
-    hoverBehavior: dim | none = null,
-    initialZooming: first | last | none = null,
-    legend: AnonBackgroundColor = null,
-    orientation: horizontal | vertical = null,
-    otherThreshold: Int | Double = null,
-    overview: AnonContent = null,
-    pieCenter: AnonConverter = null,
-    plotArea: AnonBorderWidth = null,
-    polarGridShape: polygon | circle = null,
-    selection: js.Array[K] = null,
-    selectionMode: single | multiple | none = null,
-    seriesComparator: (/* param0 */ js.Object, /* param1 */ js.Object) => CallbackTo[Double] = null,
-    sorting: ascending | descending | off = null,
-    splitDualY: on | off | auto = null,
-    splitterPosition: Int | Double = null,
-    stack: on | off = null,
-    stackLabel: on | off = null,
-    styleDefaults: AnonAnimationDownColor = null,
-    timeAxisType: enabled | mixedFrequency | skipGaps | disabled | auto = null,
-    tooltip: AnonRenderer = null,
-    touchResponse: touchStart | auto = null,
-    trackResize: on | off = null,
-    translations: AnonComponentName = null,
-    `type`: line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar = null,
-    valueFormats: AnonClose = null,
-    xAxis: AnonAxisLine = null,
-    y2Axis: AnonAlignTickMarks = null,
-    yAxis: AnonBaselineScaling = null,
-    zoomAndScroll: delayedScrollOnly | liveScrollOnly | delayed | live | off = null,
-    zoomDirection: x | y | auto = null
-  ): ojChartSettablePropertiesLenient[K, D] = {
+  
+  inline def apply[K, D](): ojChartSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (animationOnDataChange != null) __obj.updateDynamic("animationOnDataChange")(animationOnDataChange.asInstanceOf[js.Any])
-    if (animationOnDisplay != null) __obj.updateDynamic("animationOnDisplay")(animationOnDisplay.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataCursor != null) __obj.updateDynamic("dataCursor")(dataCursor.asInstanceOf[js.Any])
-    if (dataCursorBehavior != null) __obj.updateDynamic("dataCursorBehavior")(dataCursorBehavior.asInstanceOf[js.Any])
-    if (dataCursorPosition != null) __obj.updateDynamic("dataCursorPosition")(dataCursorPosition.asInstanceOf[js.Any])
-    if (dataLabel != null) __obj.updateDynamic("dataLabel")(js.Any.fromFunction1((t0: /* context */ typingsJapgolly.oracleOraclejet.ojchartMod.ojChart.DataLabelContext) => dataLabel(t0).runNow()))
-    if (dnd != null) __obj.updateDynamic("dnd")(dnd.asInstanceOf[js.Any])
-    if (dragMode != null) __obj.updateDynamic("dragMode")(dragMode.asInstanceOf[js.Any])
-    if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
-    if (groupComparator != null) __obj.updateDynamic("groupComparator")(js.Any.fromFunction2((t0: /* param0 */ js.Object, t1: /* param1 */ js.Object) => groupComparator(t0, t1).runNow()))
-    if (hiddenCategories != null) __obj.updateDynamic("hiddenCategories")(hiddenCategories.asInstanceOf[js.Any])
-    if (hideAndShowBehavior != null) __obj.updateDynamic("hideAndShowBehavior")(hideAndShowBehavior.asInstanceOf[js.Any])
-    if (highlightMatch != null) __obj.updateDynamic("highlightMatch")(highlightMatch.asInstanceOf[js.Any])
-    if (highlightedCategories != null) __obj.updateDynamic("highlightedCategories")(highlightedCategories.asInstanceOf[js.Any])
-    if (hoverBehavior != null) __obj.updateDynamic("hoverBehavior")(hoverBehavior.asInstanceOf[js.Any])
-    if (initialZooming != null) __obj.updateDynamic("initialZooming")(initialZooming.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (otherThreshold != null) __obj.updateDynamic("otherThreshold")(otherThreshold.asInstanceOf[js.Any])
-    if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
-    if (pieCenter != null) __obj.updateDynamic("pieCenter")(pieCenter.asInstanceOf[js.Any])
-    if (plotArea != null) __obj.updateDynamic("plotArea")(plotArea.asInstanceOf[js.Any])
-    if (polarGridShape != null) __obj.updateDynamic("polarGridShape")(polarGridShape.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (seriesComparator != null) __obj.updateDynamic("seriesComparator")(js.Any.fromFunction2((t0: /* param0 */ js.Object, t1: /* param1 */ js.Object) => seriesComparator(t0, t1).runNow()))
-    if (sorting != null) __obj.updateDynamic("sorting")(sorting.asInstanceOf[js.Any])
-    if (splitDualY != null) __obj.updateDynamic("splitDualY")(splitDualY.asInstanceOf[js.Any])
-    if (splitterPosition != null) __obj.updateDynamic("splitterPosition")(splitterPosition.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (stackLabel != null) __obj.updateDynamic("stackLabel")(stackLabel.asInstanceOf[js.Any])
-    if (styleDefaults != null) __obj.updateDynamic("styleDefaults")(styleDefaults.asInstanceOf[js.Any])
-    if (timeAxisType != null) __obj.updateDynamic("timeAxisType")(timeAxisType.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (touchResponse != null) __obj.updateDynamic("touchResponse")(touchResponse.asInstanceOf[js.Any])
-    if (trackResize != null) __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (valueFormats != null) __obj.updateDynamic("valueFormats")(valueFormats.asInstanceOf[js.Any])
-    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
-    if (y2Axis != null) __obj.updateDynamic("y2Axis")(y2Axis.asInstanceOf[js.Any])
-    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
-    if (zoomAndScroll != null) __obj.updateDynamic("zoomAndScroll")(zoomAndScroll.asInstanceOf[js.Any])
-    if (zoomDirection != null) __obj.updateDynamic("zoomDirection")(zoomDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojChartSettablePropertiesLenient[K, D]]
   }
+  
+  extension [Self <: ojChartSettablePropertiesLenient[?, ?], K, D](x: Self & (ojChartSettablePropertiesLenient[K, D])) {
+    
+    inline def setAnimationOnDataChange(value: auto | slideToLeft | slideToRight | none): Self = StObject.set(x, "animationOnDataChange", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationOnDataChangeUndefined: Self = StObject.set(x, "animationOnDataChange", js.undefined)
+    
+    inline def setAnimationOnDisplay(value: auto | alphaFade | zoom | none): Self = StObject.set(x, "animationOnDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationOnDisplayUndefined: Self = StObject.set(x, "animationOnDisplay", js.undefined)
+    
+    inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    
+    inline def setCoordinateSystem(value: polar | cartesian): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
+    
+    inline def setCoordinateSystemUndefined: Self = StObject.set(x, "coordinateSystem", js.undefined)
+    
+    inline def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataCursor(value: off | on | auto): Self = StObject.set(x, "dataCursor", value.asInstanceOf[js.Any])
+    
+    inline def setDataCursorBehavior(value: smooth | snap | auto): Self = StObject.set(x, "dataCursorBehavior", value.asInstanceOf[js.Any])
+    
+    inline def setDataCursorBehaviorUndefined: Self = StObject.set(x, "dataCursorBehavior", js.undefined)
+    
+    inline def setDataCursorPosition(value: X): Self = StObject.set(x, "dataCursorPosition", value.asInstanceOf[js.Any])
+    
+    inline def setDataCursorPositionUndefined: Self = StObject.set(x, "dataCursorPosition", js.undefined)
+    
+    inline def setDataCursorUndefined: Self = StObject.set(x, "dataCursor", js.undefined)
+    
+    inline def setDataLabel(value: /* context */ DataLabelContext => Insert | PreventDefault): Self = StObject.set(x, "dataLabel", js.Any.fromFunction1(value))
+    
+    inline def setDataLabelUndefined: Self = StObject.set(x, "dataLabel", js.undefined)
+    
+    inline def setDataNull: Self = StObject.set(x, "data", null)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDnd(value: Drag): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
+    
+    inline def setDndUndefined: Self = StObject.set(x, "dnd", js.undefined)
+    
+    inline def setDragMode(value: pan | zoom | select | off | user): Self = StObject.set(x, "dragMode", value.asInstanceOf[js.Any])
+    
+    inline def setDragModeUndefined: Self = StObject.set(x, "dragMode", js.undefined)
+    
+    inline def setDrilling(value: on | seriesOnly | groupsOnly | off): Self = StObject.set(x, "drilling", value.asInstanceOf[js.Any])
+    
+    inline def setDrillingUndefined: Self = StObject.set(x, "drilling", js.undefined)
+    
+    inline def setGroupComparator(value: (/* param0 */ js.Object, /* param1 */ js.Object) => Double): Self = StObject.set(x, "groupComparator", js.Any.fromFunction2(value))
+    
+    inline def setGroupComparatorNull: Self = StObject.set(x, "groupComparator", null)
+    
+    inline def setGroupComparatorUndefined: Self = StObject.set(x, "groupComparator", js.undefined)
+    
+    inline def setHiddenCategories(value: js.Array[String]): Self = StObject.set(x, "hiddenCategories", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenCategoriesUndefined: Self = StObject.set(x, "hiddenCategories", js.undefined)
+    
+    inline def setHiddenCategoriesVarargs(value: String*): Self = StObject.set(x, "hiddenCategories", js.Array(value*))
+    
+    inline def setHideAndShowBehavior(value: withRescale | withoutRescale | none): Self = StObject.set(x, "hideAndShowBehavior", value.asInstanceOf[js.Any])
+    
+    inline def setHideAndShowBehaviorUndefined: Self = StObject.set(x, "hideAndShowBehavior", js.undefined)
+    
+    inline def setHighlightMatch(value: any | all): Self = StObject.set(x, "highlightMatch", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightMatchUndefined: Self = StObject.set(x, "highlightMatch", js.undefined)
+    
+    inline def setHighlightedCategories(value: js.Array[String]): Self = StObject.set(x, "highlightedCategories", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightedCategoriesUndefined: Self = StObject.set(x, "highlightedCategories", js.undefined)
+    
+    inline def setHighlightedCategoriesVarargs(value: String*): Self = StObject.set(x, "highlightedCategories", js.Array(value*))
+    
+    inline def setHoverBehavior(value: dim | none): Self = StObject.set(x, "hoverBehavior", value.asInstanceOf[js.Any])
+    
+    inline def setHoverBehaviorUndefined: Self = StObject.set(x, "hoverBehavior", js.undefined)
+    
+    inline def setInitialZooming(value: first | last | none): Self = StObject.set(x, "initialZooming", value.asInstanceOf[js.Any])
+    
+    inline def setInitialZoomingUndefined: Self = StObject.set(x, "initialZooming", js.undefined)
+    
+    inline def setLegend(value: BackgroundColor): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    
+    inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setOtherThreshold(value: Double): Self = StObject.set(x, "otherThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setOtherThresholdUndefined: Self = StObject.set(x, "otherThreshold", js.undefined)
+    
+    inline def setOverview(value: Content): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
+    
+    inline def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
+    
+    inline def setPieCenter(value: Converter): Self = StObject.set(x, "pieCenter", value.asInstanceOf[js.Any])
+    
+    inline def setPieCenterUndefined: Self = StObject.set(x, "pieCenter", js.undefined)
+    
+    inline def setPlotArea(value: BorderWidth): Self = StObject.set(x, "plotArea", value.asInstanceOf[js.Any])
+    
+    inline def setPlotAreaUndefined: Self = StObject.set(x, "plotArea", js.undefined)
+    
+    inline def setPolarGridShape(value: polygon | circle): Self = StObject.set(x, "polarGridShape", value.asInstanceOf[js.Any])
+    
+    inline def setPolarGridShapeUndefined: Self = StObject.set(x, "polarGridShape", js.undefined)
+    
+    inline def setSelection(value: js.Array[K]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionMode(value: single | multiple | none): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+    
+    inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+    
+    inline def setSelectionVarargs(value: K*): Self = StObject.set(x, "selection", js.Array(value*))
+    
+    inline def setSeriesComparator(value: (/* param0 */ js.Object, /* param1 */ js.Object) => Double): Self = StObject.set(x, "seriesComparator", js.Any.fromFunction2(value))
+    
+    inline def setSeriesComparatorNull: Self = StObject.set(x, "seriesComparator", null)
+    
+    inline def setSeriesComparatorUndefined: Self = StObject.set(x, "seriesComparator", js.undefined)
+    
+    inline def setSorting(value: ascending | descending | off): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
+    
+    inline def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
+    
+    inline def setSplitDualY(value: on | off | auto): Self = StObject.set(x, "splitDualY", value.asInstanceOf[js.Any])
+    
+    inline def setSplitDualYUndefined: Self = StObject.set(x, "splitDualY", js.undefined)
+    
+    inline def setSplitterPosition(value: Double): Self = StObject.set(x, "splitterPosition", value.asInstanceOf[js.Any])
+    
+    inline def setSplitterPositionUndefined: Self = StObject.set(x, "splitterPosition", js.undefined)
+    
+    inline def setStack(value: on | off): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    
+    inline def setStackLabel(value: on | off): Self = StObject.set(x, "stackLabel", value.asInstanceOf[js.Any])
+    
+    inline def setStackLabelUndefined: Self = StObject.set(x, "stackLabel", js.undefined)
+    
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    
+    inline def setStyleDefaults(value: AnimationDownColor): Self = StObject.set(x, "styleDefaults", value.asInstanceOf[js.Any])
+    
+    inline def setStyleDefaultsUndefined: Self = StObject.set(x, "styleDefaults", js.undefined)
+    
+    inline def setTimeAxisType(value: enabled | mixedFrequency | skipGaps | disabled | auto): Self = StObject.set(x, "timeAxisType", value.asInstanceOf[js.Any])
+    
+    inline def setTimeAxisTypeUndefined: Self = StObject.set(x, "timeAxisType", js.undefined)
+    
+    inline def setTooltip(value: Renderer): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setTouchResponse(value: touchStart | auto): Self = StObject.set(x, "touchResponse", value.asInstanceOf[js.Any])
+    
+    inline def setTouchResponseUndefined: Self = StObject.set(x, "touchResponse", js.undefined)
+    
+    inline def setTrackResize(value: on | off): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
+    
+    inline def setTrackResizeUndefined: Self = StObject.set(x, "trackResize", js.undefined)
+    
+    inline def setTranslations(value: ComponentName): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+    
+    inline def setType(
+      value: line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setValueFormats(value: Close): Self = StObject.set(x, "valueFormats", value.asInstanceOf[js.Any])
+    
+    inline def setValueFormatsUndefined: Self = StObject.set(x, "valueFormats", js.undefined)
+    
+    inline def setXAxis(value: AxisLine): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    
+    inline def setY2Axis(value: AlignTickMarks): Self = StObject.set(x, "y2Axis", value.asInstanceOf[js.Any])
+    
+    inline def setY2AxisUndefined: Self = StObject.set(x, "y2Axis", js.undefined)
+    
+    inline def setYAxis(value: BaselineScaling): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
+    
+    inline def setZoomAndScroll(value: delayedScrollOnly | liveScrollOnly | delayed | live | off): Self = StObject.set(x, "zoomAndScroll", value.asInstanceOf[js.Any])
+    
+    inline def setZoomAndScrollUndefined: Self = StObject.set(x, "zoomAndScroll", js.undefined)
+    
+    inline def setZoomDirection(value: typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.x | y | auto): Self = StObject.set(x, "zoomDirection", value.asInstanceOf[js.Any])
+    
+    inline def setZoomDirectionUndefined: Self = StObject.set(x, "zoomDirection", js.undefined)
+  }
 }
-

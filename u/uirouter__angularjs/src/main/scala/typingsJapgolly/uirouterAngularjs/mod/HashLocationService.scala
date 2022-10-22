@@ -1,13 +1,12 @@
 package typingsJapgolly.uirouterAngularjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "HashLocationService")
 @js.native
-class HashLocationService protected ()
+open class HashLocationService protected ()
   extends typingsJapgolly.uirouterCore.mod.HashLocationService {
-  def this(router: typingsJapgolly.uirouterCore.routerMod.UIRouter) = this()
+  def this(router: typingsJapgolly.uirouterCore.libRouterMod.UIRouter) = this()
 }
-

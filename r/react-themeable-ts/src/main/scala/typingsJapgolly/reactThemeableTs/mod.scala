@@ -2,29 +2,53 @@ package typingsJapgolly.reactThemeableTs
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.react.mod.Validator
-import typingsJapgolly.reactThemeableTs.hocMod.IThemeDecoratorArgs
-import typingsJapgolly.reactThemeableTs.hocMod.TDecComponent
-import typingsJapgolly.reactThemeableTs.themeableMod.IStaticFn
+import typingsJapgolly.reactThemeableTs.buildEs5HocMod.IThemeDecoratorArgs
+import typingsJapgolly.reactThemeableTs.buildEs5HocMod.TDecComponent
+import typingsJapgolly.reactThemeableTs.buildEs5ThemeProviderMod.IThemeProviderProps
+import typingsJapgolly.reactThemeableTs.buildEs5ThemeableMod.IStaticFn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-themeable-ts", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class ThemeProvider ()
-    extends typingsJapgolly.reactThemeableTs.themeProviderMod.ThemeProvider
+object mod {
   
-  val themeable: IStaticFn = js.native
-  def themeDecorator[P /* <: IThemeDecoratorArgs */](): js.Function1[/* WrappedComponent */ TDecComponent[P], _] = js.native
-  def themeDecorator[P /* <: IThemeDecoratorArgs */](hasThemeKeyThemePropMemoizeeOptsContextPath: IThemeDecoratorArgs): js.Function1[/* WrappedComponent */ TDecComponent[P], _] = js.native
-  /* static members */
+  @JSImport("react-themeable-ts", JSImport.Namespace)
   @js.native
-  object ThemeProvider extends js.Object {
-    var childContextTypes: StringDictionary[Validator[_]] = js.native
-    var defaultProps: StringDictionary[js.Object] = js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-themeable-ts", "ThemeProvider")
+  @js.native
+  open class ThemeProvider protected ()
+    extends typingsJapgolly.reactThemeableTs.buildEs5ThemeProviderMod.ThemeProvider {
+    def this(props: IThemeProviderProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: IThemeProviderProps, context: Any) = this()
+  }
+  /* static members */
+  object ThemeProvider {
+    
+    @JSImport("react-themeable-ts", "ThemeProvider")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-themeable-ts", "ThemeProvider.childContextTypes")
+    @js.native
+    def childContextTypes: StringDictionary[Validator[Any]] = js.native
+    inline def childContextTypes_=(x: StringDictionary[Validator[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-themeable-ts", "ThemeProvider.defaultProps")
+    @js.native
+    def defaultProps: StringDictionary[js.Object] = js.native
+    inline def defaultProps_=(x: StringDictionary[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  inline def themeDecorator[P /* <: IThemeDecoratorArgs */](): js.Function1[/* WrappedComponent */ TDecComponent[P], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")().asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], Any]]
+  inline def themeDecorator[P /* <: IThemeDecoratorArgs */](hasThemeKeyThemePropMemoizeeOptsContextPath: IThemeDecoratorArgs): js.Function1[/* WrappedComponent */ TDecComponent[P], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")(hasThemeKeyThemePropMemoizeeOptsContextPath.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], Any]]
+  
+  @JSImport("react-themeable-ts", "themeable")
+  @js.native
+  val themeable: IStaticFn = js.native
 }
-

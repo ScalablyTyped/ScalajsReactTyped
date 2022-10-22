@@ -1,34 +1,49 @@
 package typingsJapgolly.betterSqlite3.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Options extends js.Object {
+trait Options extends StObject {
+  
   var fileMustExist: js.UndefOr[Boolean] = js.undefined
-  var memory: js.UndefOr[Boolean] = js.undefined
+  
+  var nativeBinding: js.UndefOr[String] = js.undefined
+  
   var readonly: js.UndefOr[Boolean] = js.undefined
+  
   var timeout: js.UndefOr[Double] = js.undefined
-  var verbose: js.UndefOr[js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]] = js.undefined
+  
+  var verbose: js.UndefOr[js.Function2[/* message */ js.UndefOr[Any], /* repeated */ Any, Unit]] = js.undefined
 }
-
 object Options {
-  @scala.inline
-  def apply(
-    fileMustExist: js.UndefOr[Boolean] = js.undefined,
-    memory: js.UndefOr[Boolean] = js.undefined,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
-    verbose: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Callback = null
-  ): Options = {
+  
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fileMustExist)) __obj.updateDynamic("fileMustExist")(fileMustExist.asInstanceOf[js.Any])
-    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (verbose != null) __obj.updateDynamic("verbose")(js.Any.fromFunction2((t0: /* message */ js.UndefOr[js.Any], t1: /* repeated */ js.Any) => verbose(t0, t1).runNow()))
     __obj.asInstanceOf[Options]
   }
+  
+  extension [Self <: Options](x: Self) {
+    
+    inline def setFileMustExist(value: Boolean): Self = StObject.set(x, "fileMustExist", value.asInstanceOf[js.Any])
+    
+    inline def setFileMustExistUndefined: Self = StObject.set(x, "fileMustExist", js.undefined)
+    
+    inline def setNativeBinding(value: String): Self = StObject.set(x, "nativeBinding", value.asInstanceOf[js.Any])
+    
+    inline def setNativeBindingUndefined: Self = StObject.set(x, "nativeBinding", js.undefined)
+    
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    
+    inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setVerbose(value: (/* message */ js.UndefOr[Any], /* repeated */ Any) => Callback): Self = StObject.set(x, "verbose", js.Any.fromFunction2((t0: /* message */ js.UndefOr[Any], t1: /* repeated */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+  }
 }
-

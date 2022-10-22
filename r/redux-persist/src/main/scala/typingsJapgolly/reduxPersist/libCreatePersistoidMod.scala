@@ -1,14 +1,16 @@
 package typingsJapgolly.reduxPersist
 
-import typingsJapgolly.reduxPersist.typesMod.PersistConfig
-import typingsJapgolly.reduxPersist.typesMod.Persistoid
+import typingsJapgolly.reduxPersist.esTypesMod.PersistConfig
+import typingsJapgolly.reduxPersist.esTypesMod.Persistoid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-persist/lib/createPersistoid", JSImport.Namespace)
-@js.native
-object libCreatePersistoidMod extends js.Object {
-  def default(config: PersistConfig[_, _, _, _]): Persistoid = js.native
+object libCreatePersistoidMod {
+  
+  @JSImport("redux-persist/lib/createPersistoid", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(config: PersistConfig[Any, Any, Any, Any]): Persistoid = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Persistoid]
 }
-

@@ -11,9 +11,9 @@ rawStream.pipe(JSONStream.parse()).pipe(streamOfObjects)
 | Full name          | jsonstream |
 | Keywords           | json, stream, streaming, parser, async, parsing |
 | # releases         | 1 |
-| # dependents       | 11 |
-| # downloads        | 42288 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 16981.0 |
+| # stars            | 1860.0 |
 
 ## Links
 - [Homepage](http://github.com/dominictarr/JSONStream)

@@ -1,21 +1,7 @@
 package typingsJapgolly.winrt.Windows.UI.Notifications
 
-import typingsJapgolly.winrt.Windows.Data.Xml.Dom.XmlDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Notifications.TileUpdateManager")
-@js.native
-class TileUpdateManager () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.UI.Notifications.TileUpdateManager")
-@js.native
-object TileUpdateManager extends js.Object {
-  def createTileUpdaterForApplication(): TileUpdater = js.native
-  def createTileUpdaterForApplication(applicationId: String): TileUpdater = js.native
-  def createTileUpdaterForSecondaryTile(tileId: String): TileUpdater = js.native
-  def getTemplateContent(`type`: TileTemplateType): XmlDocument = js.native
-}
-
+trait TileUpdateManager extends StObject

@@ -1,21 +1,17 @@
 package typingsJapgolly.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.bpmnModdle.bpmnModdleStrings.Physical
   - typingsJapgolly.bpmnModdle.bpmnModdleStrings.Information
 */
-trait ItemKind extends js.Object
-
+trait ItemKind extends StObject
 object ItemKind {
-  @scala.inline
-  def Information: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Information = this.cast("Information")
-  @scala.inline
-  def Physical: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Physical = this.cast("Physical")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Information: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Information = "Information".asInstanceOf[typingsJapgolly.bpmnModdle.bpmnModdleStrings.Information]
+  
+  inline def Physical: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Physical = "Physical".asInstanceOf[typingsJapgolly.bpmnModdle.bpmnModdleStrings.Physical]
 }
-

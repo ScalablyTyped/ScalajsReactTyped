@@ -1,23 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ItemActionStat extends js.Object {
+trait ItemActionStat extends StObject {
+  
   // The number of times the action took place. Read-only.
-  var actionCount: js.UndefOr[Double] = js.undefined
+  var actionCount: js.UndefOr[NullableOption[Double]] = js.undefined
+  
   // The number of distinct actors that performed the action. Read-only.
-  var actorCount: js.UndefOr[Double] = js.undefined
+  var actorCount: js.UndefOr[NullableOption[Double]] = js.undefined
 }
-
 object ItemActionStat {
-  @scala.inline
-  def apply(actionCount: Int | Double = null, actorCount: Int | Double = null): ItemActionStat = {
+  
+  inline def apply(): ItemActionStat = {
     val __obj = js.Dynamic.literal()
-    if (actionCount != null) __obj.updateDynamic("actionCount")(actionCount.asInstanceOf[js.Any])
-    if (actorCount != null) __obj.updateDynamic("actorCount")(actorCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemActionStat]
   }
+  
+  extension [Self <: ItemActionStat](x: Self) {
+    
+    inline def setActionCount(value: NullableOption[Double]): Self = StObject.set(x, "actionCount", value.asInstanceOf[js.Any])
+    
+    inline def setActionCountNull: Self = StObject.set(x, "actionCount", null)
+    
+    inline def setActionCountUndefined: Self = StObject.set(x, "actionCount", js.undefined)
+    
+    inline def setActorCount(value: NullableOption[Double]): Self = StObject.set(x, "actorCount", value.asInstanceOf[js.Any])
+    
+    inline def setActorCountNull: Self = StObject.set(x, "actorCount", null)
+    
+    inline def setActorCountUndefined: Self = StObject.set(x, "actorCount", js.undefined)
+  }
 }
-

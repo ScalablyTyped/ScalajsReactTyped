@@ -1,13 +1,13 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
-import typingsJapgolly.vscodeJsonrpc.mod.LogTraceParams
+import typingsJapgolly.vscodeJsonrpc.libCommonConnectionMod.LogTraceParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "LogTraceNotification")
-@js.native
-object LogTraceNotification extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.messagesMod.NotificationType[LogTraceParams, Unit] = js.native
+object LogTraceNotification {
+  
+  @JSImport("vscode-languageserver-protocol", "LogTraceNotification.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeJsonrpc.libCommonMessagesMod.NotificationType[LogTraceParams] = js.native
 }
-

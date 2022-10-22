@@ -1,47 +1,62 @@
 package typingsJapgolly.camljs.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITextFieldExpression extends js.Object {
+trait ITextFieldExpression extends StObject {
+  
   /** Checks whether the value of the field begins with the specified substring */
   def BeginsWith(value: String): IExpression
+  
   /** Checks whether the value of the field contains the specified substring */
   def Contains(value: String): IExpression
+  
   /** Checks whether the value of the field is equal to the specified value */
   def EqualTo(value: String): IExpression
+  
   /** Checks whether the value of the field is equal to one of the specified values */
   def In(arrayOfValues: js.Array[String]): IExpression
+  
   /** Checks whether the value of the field was not specified by user */
   def IsNotNull(): IExpression
+  
   /** Checks whether the value of the field was specified by user */
   def IsNull(): IExpression
+  
   /** Checks whether the value of the field is not equal to the specified value */
   def NotEqualTo(value: String): IExpression
 }
-
 object ITextFieldExpression {
-  @scala.inline
-  def apply(
-    BeginsWith: String => CallbackTo[IExpression],
-    Contains: String => CallbackTo[IExpression],
-    EqualTo: String => CallbackTo[IExpression],
-    In: js.Array[String] => CallbackTo[IExpression],
+  
+  inline def apply(
+    BeginsWith: String => IExpression,
+    Contains: String => IExpression,
+    EqualTo: String => IExpression,
+    In: js.Array[String] => IExpression,
     IsNotNull: CallbackTo[IExpression],
     IsNull: CallbackTo[IExpression],
-    NotEqualTo: String => CallbackTo[IExpression]
+    NotEqualTo: String => IExpression
   ): ITextFieldExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BeginsWith")(js.Any.fromFunction1((t0: java.lang.String) => BeginsWith(t0).runNow()))
-    __obj.updateDynamic("Contains")(js.Any.fromFunction1((t0: java.lang.String) => Contains(t0).runNow()))
-    __obj.updateDynamic("EqualTo")(js.Any.fromFunction1((t0: java.lang.String) => EqualTo(t0).runNow()))
-    __obj.updateDynamic("In")(js.Any.fromFunction1((t0: js.Array[java.lang.String]) => In(t0).runNow()))
-    __obj.updateDynamic("IsNotNull")(IsNotNull.toJsFn)
-    __obj.updateDynamic("IsNull")(IsNull.toJsFn)
-    __obj.updateDynamic("NotEqualTo")(js.Any.fromFunction1((t0: java.lang.String) => NotEqualTo(t0).runNow()))
+    val __obj = js.Dynamic.literal(BeginsWith = js.Any.fromFunction1(BeginsWith), Contains = js.Any.fromFunction1(Contains), EqualTo = js.Any.fromFunction1(EqualTo), In = js.Any.fromFunction1(In), IsNotNull = IsNotNull.toJsFn, IsNull = IsNull.toJsFn, NotEqualTo = js.Any.fromFunction1(NotEqualTo))
     __obj.asInstanceOf[ITextFieldExpression]
   }
+  
+  extension [Self <: ITextFieldExpression](x: Self) {
+    
+    inline def setBeginsWith(value: String => IExpression): Self = StObject.set(x, "BeginsWith", js.Any.fromFunction1(value))
+    
+    inline def setContains(value: String => IExpression): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
+    
+    inline def setEqualTo(value: String => IExpression): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
+    
+    inline def setIn(value: js.Array[String] => IExpression): Self = StObject.set(x, "In", js.Any.fromFunction1(value))
+    
+    inline def setIsNotNull(value: CallbackTo[IExpression]): Self = StObject.set(x, "IsNotNull", value.toJsFn)
+    
+    inline def setIsNull(value: CallbackTo[IExpression]): Self = StObject.set(x, "IsNull", value.toJsFn)
+    
+    inline def setNotEqualTo(value: String => IExpression): Self = StObject.set(x, "NotEqualTo", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,72 +1,85 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DataSourceSettingsSummaries
-  extends /**
-	 * Option for DataSourceSettingsSummaries
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * A list of column settings that specifies custom summaries options per column basis
-  	 *
-  	 */
-  var columnSettings: js.UndefOr[js.Array[_]] = js.undefined
+    * A list of column settings that specifies custom summaries options per column basis
+    *
+    */
+  var columnSettings: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Key for retrieving data from the summaries response - used only when summaries are remote
-  	 *
-  	 */
+    * Key for retrieving data from the summaries response - used only when summaries are remote
+    *
+    */
   var summariesResponseKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Determines when the summary values are calculated
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "priortofilteringandpaging"
-  	 * "afterfilteringbeforepaging"
-  	 * "afterfilteringandpaging"
-  	 */
+    * Determines when the summary values are calculated
+    *
+    *
+    * Valid values:
+    * "priortofilteringandpaging"
+    * "afterfilteringbeforepaging"
+    * "afterfilteringandpaging"
+    */
   var summaryExecution: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Url key for retrieving data from response - used only when summaries are remote
-  	 *
-  	 */
+    * Url key for retrieving data from response - used only when summaries are remote
+    *
+    */
   var summaryExprUrlKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies whether summaries will be applied locally or remotely (via a remote request)
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "remote" A remote request is done and URL params encoded
-  	 * "local" Data is paged client-side.
-  	 */
+    * Specifies whether summaries will be applied locally or remotely (via a remote request)
+    *
+    *
+    * Valid values:
+    * "remote" A remote request is done and URL params encoded
+    * "local" Data is paged client-side.
+    */
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object DataSourceSettingsSummaries {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for DataSourceSettingsSummaries
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    columnSettings: js.Array[_] = null,
-    summariesResponseKey: String = null,
-    summaryExecution: String = null,
-    summaryExprUrlKey: String = null,
-    `type`: String = null
-  ): DataSourceSettingsSummaries = {
+  
+  inline def apply(): DataSourceSettingsSummaries = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings.asInstanceOf[js.Any])
-    if (summariesResponseKey != null) __obj.updateDynamic("summariesResponseKey")(summariesResponseKey.asInstanceOf[js.Any])
-    if (summaryExecution != null) __obj.updateDynamic("summaryExecution")(summaryExecution.asInstanceOf[js.Any])
-    if (summaryExprUrlKey != null) __obj.updateDynamic("summaryExprUrlKey")(summaryExprUrlKey.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSettingsSummaries]
   }
+  
+  extension [Self <: DataSourceSettingsSummaries](x: Self) {
+    
+    inline def setColumnSettings(value: js.Array[Any]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
+    
+    inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
+    
+    inline def setColumnSettingsVarargs(value: Any*): Self = StObject.set(x, "columnSettings", js.Array(value*))
+    
+    inline def setSummariesResponseKey(value: String): Self = StObject.set(x, "summariesResponseKey", value.asInstanceOf[js.Any])
+    
+    inline def setSummariesResponseKeyUndefined: Self = StObject.set(x, "summariesResponseKey", js.undefined)
+    
+    inline def setSummaryExecution(value: String): Self = StObject.set(x, "summaryExecution", value.asInstanceOf[js.Any])
+    
+    inline def setSummaryExecutionUndefined: Self = StObject.set(x, "summaryExecution", js.undefined)
+    
+    inline def setSummaryExprUrlKey(value: String): Self = StObject.set(x, "summaryExprUrlKey", value.asInstanceOf[js.Any])
+    
+    inline def setSummaryExprUrlKeyUndefined: Self = StObject.set(x, "summaryExprUrlKey", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

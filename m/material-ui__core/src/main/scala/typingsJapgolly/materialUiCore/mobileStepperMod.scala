@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.mobileStepperMobileStepperMod.MobileStepperProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/MobileStepper", JSImport.Namespace)
-@js.native
-object mobileStepperMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[MobileStepperProps, ComponentState, js.Any] {
-    def this(props: MobileStepperProps) = this()
-    def this(props: MobileStepperProps, context: js.Any) = this()
-  }
+object mobileStepperMod {
   
+  @JSImport("@material-ui/core/MobileStepper", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[MobileStepperProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: MobileStepperProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

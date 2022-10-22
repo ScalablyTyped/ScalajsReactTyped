@@ -1,9 +1,9 @@
 package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
@@ -13,22 +13,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingTenativelyAccepted
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingDeclined
 */
-trait MeetingMessageType extends js.Object
-
+trait MeetingMessageType extends StObject
 object MeetingMessageType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def meetingAccepted: typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingAccepted = this.cast("meetingAccepted")
-  @scala.inline
-  def meetingCancelled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingCancelled = this.cast("meetingCancelled")
-  @scala.inline
-  def meetingDeclined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingDeclined = this.cast("meetingDeclined")
-  @scala.inline
-  def meetingRequest: typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingRequest = this.cast("meetingRequest")
-  @scala.inline
-  def meetingTenativelyAccepted: typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingTenativelyAccepted = this.cast("meetingTenativelyAccepted")
-  @scala.inline
-  def none: none_ = this.cast("none")
+  
+  inline def meetingAccepted: typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingAccepted = "meetingAccepted".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingAccepted]
+  
+  inline def meetingCancelled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingCancelled = "meetingCancelled".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingCancelled]
+  
+  inline def meetingDeclined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingDeclined = "meetingDeclined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingDeclined]
+  
+  inline def meetingRequest: typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingRequest = "meetingRequest".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingRequest]
+  
+  inline def meetingTenativelyAccepted: typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingTenativelyAccepted = "meetingTenativelyAccepted".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.meetingTenativelyAccepted]
+  
+  inline def none: none_ = "none".asInstanceOf[none_]
 }
-

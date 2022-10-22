@@ -1,25 +1,35 @@
 package typingsJapgolly.fridaGum
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeFunction extends NativePointer {
-  def apply(args: NativeArgumentValue*): NativeReturnValue = js.native
+trait NativeFunction[RetType /* <: NativeFunctionReturnValue */, ArgTypes /* <: js.Array[Any | NativeFunctionArgumentValue] */]
+  extends StObject
+     with NativePointer {
+  
+  def apply(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ArgTypes is not an array type */ args: ArgTypes
+  ): RetType = js.native
+  
   @JSName("apply")
-  def apply(thisArg: js.UndefOr[scala.Nothing], args: js.Array[NativeArgumentValue]): NativeReturnValue = js.native
+  def apply(thisArg: Null, args: ArgTypes): RetType = js.native
   @JSName("apply")
-  def apply(thisArg: Null, args: js.Array[NativeArgumentValue]): NativeReturnValue = js.native
+  def apply(thisArg: Unit, args: ArgTypes): RetType = js.native
   @JSName("apply")
-  def apply(thisArg: NativePointerValue, args: js.Array[NativeArgumentValue]): NativeReturnValue = js.native
-  def call(): NativeReturnValue = js.native
-  def call(args: NativeArgumentValue*): NativeReturnValue = js.native
-  def call(thisArg: NativePointerValue, args: NativeArgumentValue*): NativeReturnValue = js.native
+  def apply(thisArg: NativePointerValue, args: ArgTypes): RetType = js.native
+  
+  def call(
+    thisArg: Null,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ArgTypes is not an array type */ args: ArgTypes
+  ): RetType = js.native
+  def call(
+    thisArg: Unit,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ArgTypes is not an array type */ args: ArgTypes
+  ): RetType = js.native
+  def call(
+    thisArg: NativePointerValue,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ArgTypes is not an array type */ args: ArgTypes
+  ): RetType = js.native
 }
-
-@JSGlobal("NativeFunction")
-@js.native
-object NativeFunction extends TopLevel[NativeFunctionConstructor]
-

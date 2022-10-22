@@ -1,29 +1,26 @@
-package typingsJapgolly.restify
+package typingsJapgolly.restify.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.node.bufferMod.global.Buffer
+import typingsJapgolly.restify.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type FindRouteCallback = js.Function3[
-    /* err */ js.Error, 
-    /* route */ js.UndefOr[typingsJapgolly.restify.mod.Route], 
-    /* params */ js.UndefOr[js.Any], 
-    scala.Unit
-  ]
-  type Formatter = js.Function3[
-    /* req */ typingsJapgolly.restify.mod.Request, 
-    /* res */ typingsJapgolly.restify.mod.Response, 
-    /* body */ js.Any, 
-    java.lang.String | typingsJapgolly.node.Buffer | scala.Null
-  ]
-  type Formatters_ = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.restify.mod.Formatter]
-  type Next = js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]
-  type RequestHandler = js.Function3[
-    /* req */ typingsJapgolly.restify.mod.Request, 
-    /* res */ typingsJapgolly.restify.mod.Response, 
-    /* next */ typingsJapgolly.restify.mod.Next, 
-    js.Any
-  ]
-  type RequestHandlerType = typingsJapgolly.restify.mod.RequestHandler | js.Array[typingsJapgolly.restify.mod.RequestHandler]
-}
+
+inline def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
+inline def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+
+inline def formatters: Formatters_ = ^.asInstanceOf[js.Dynamic].selectDynamic("formatters").asInstanceOf[Formatters_]
+
+type FindRouteCallback = js.Function3[/* err */ js.Error, /* route */ js.UndefOr[Route], /* params */ js.UndefOr[Any], Unit]
+
+type Formatter = js.Function3[/* req */ Request, /* res */ Response, /* body */ Any, String | Buffer | Null]
+
+type Formatters_ = StringDictionary[Formatter]
+
+type Next = js.Function1[/* err */ js.UndefOr[Any], Unit]
+
+type RequestHandler = js.Function3[/* req */ Request, /* res */ Response, /* next */ Next, Any]
+
+type RequestHandlerType = RequestHandler | js.Array[RequestHandler]

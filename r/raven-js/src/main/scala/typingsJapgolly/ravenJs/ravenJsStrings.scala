@@ -2,60 +2,69 @@ package typingsJapgolly.ravenJs
 
 import typingsJapgolly.ravenJs.mod.BreadcrumbType
 import typingsJapgolly.ravenJs.mod.LogLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ravenJsStrings {
-  @js.native
-  sealed trait critical extends LogLevel
   
   @js.native
-  sealed trait debug extends LogLevel
+  sealed trait critical
+    extends StObject
+       with LogLevel
+  inline def critical: critical = "critical".asInstanceOf[critical]
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait debug
+    extends StObject
+       with LogLevel
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait fatal extends LogLevel
+  sealed trait error
+    extends StObject
+       with LogLevel
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait http extends BreadcrumbType
+  sealed trait fatal
+    extends StObject
+       with LogLevel
+  inline def fatal: fatal = "fatal".asInstanceOf[fatal]
   
   @js.native
-  sealed trait info extends LogLevel
+  sealed trait http
+    extends StObject
+       with BreadcrumbType
+  inline def http: http = "http".asInstanceOf[http]
   
   @js.native
-  sealed trait log extends LogLevel
+  sealed trait info
+    extends StObject
+       with LogLevel
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait navigation extends BreadcrumbType
+  sealed trait log
+    extends StObject
+       with LogLevel
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
-  sealed trait warn extends LogLevel
+  sealed trait navigation
+    extends StObject
+       with BreadcrumbType
+  inline def navigation: navigation = "navigation".asInstanceOf[navigation]
   
   @js.native
-  sealed trait warning extends LogLevel
+  sealed trait warn
+    extends StObject
+       with LogLevel
+  inline def warn: warn = "warn".asInstanceOf[warn]
   
-  @scala.inline
-  def critical: critical = "critical".asInstanceOf[critical]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fatal: fatal = "fatal".asInstanceOf[fatal]
-  @scala.inline
-  def http: http = "http".asInstanceOf[http]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
-  @scala.inline
-  def navigation: navigation = "navigation".asInstanceOf[navigation]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  @js.native
+  sealed trait warning
+    extends StObject
+       with LogLevel
+  inline def warning: warning = "warning".asInstanceOf[warning]
 }
-

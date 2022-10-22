@@ -1,43 +1,67 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeListFilterableOperatorsNumber extends js.Object {
+trait TreeListFilterableOperatorsNumber extends StObject {
+  
   @JSName("eq")
   var eq_FTreeListFilterableOperatorsNumber: js.UndefOr[String] = js.undefined
+  
   var gt: js.UndefOr[String] = js.undefined
+  
   var gte: js.UndefOr[String] = js.undefined
+  
   var isnotnull: js.UndefOr[String] = js.undefined
+  
   var isnull: js.UndefOr[String] = js.undefined
+  
   var lt: js.UndefOr[String] = js.undefined
+  
   var lte: js.UndefOr[String] = js.undefined
+  
   var neq: js.UndefOr[String] = js.undefined
 }
-
 object TreeListFilterableOperatorsNumber {
-  @scala.inline
-  def apply(
-    eq: String = null,
-    gt: String = null,
-    gte: String = null,
-    isnotnull: String = null,
-    isnull: String = null,
-    lt: String = null,
-    lte: String = null,
-    neq: String = null
-  ): TreeListFilterableOperatorsNumber = {
+  
+  inline def apply(): TreeListFilterableOperatorsNumber = {
     val __obj = js.Dynamic.literal()
-    if (eq != null) __obj.updateDynamic("eq")(eq.asInstanceOf[js.Any])
-    if (gt != null) __obj.updateDynamic("gt")(gt.asInstanceOf[js.Any])
-    if (gte != null) __obj.updateDynamic("gte")(gte.asInstanceOf[js.Any])
-    if (isnotnull != null) __obj.updateDynamic("isnotnull")(isnotnull.asInstanceOf[js.Any])
-    if (isnull != null) __obj.updateDynamic("isnull")(isnull.asInstanceOf[js.Any])
-    if (lt != null) __obj.updateDynamic("lt")(lt.asInstanceOf[js.Any])
-    if (lte != null) __obj.updateDynamic("lte")(lte.asInstanceOf[js.Any])
-    if (neq != null) __obj.updateDynamic("neq")(neq.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListFilterableOperatorsNumber]
   }
+  
+  extension [Self <: TreeListFilterableOperatorsNumber](x: Self) {
+    
+    inline def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
+    
+    inline def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
+    
+    inline def setGt(value: String): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
+    
+    inline def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
+    
+    inline def setGte(value: String): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
+    
+    inline def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
+    
+    inline def setIsnotnull(value: String): Self = StObject.set(x, "isnotnull", value.asInstanceOf[js.Any])
+    
+    inline def setIsnotnullUndefined: Self = StObject.set(x, "isnotnull", js.undefined)
+    
+    inline def setIsnull(value: String): Self = StObject.set(x, "isnull", value.asInstanceOf[js.Any])
+    
+    inline def setIsnullUndefined: Self = StObject.set(x, "isnull", js.undefined)
+    
+    inline def setLt(value: String): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
+    
+    inline def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
+    
+    inline def setLte(value: String): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
+    
+    inline def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
+    
+    inline def setNeq(value: String): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
+    
+    inline def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
+  }
 }
-

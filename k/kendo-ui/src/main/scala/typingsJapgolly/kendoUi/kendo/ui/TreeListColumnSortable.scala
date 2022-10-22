@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeListColumnSortable extends js.Object {
+trait TreeListColumnSortable extends StObject {
+  
   var compare: js.UndefOr[js.Function] = js.undefined
 }
-
 object TreeListColumnSortable {
-  @scala.inline
-  def apply(compare: js.Function = null): TreeListColumnSortable = {
+  
+  inline def apply(): TreeListColumnSortable = {
     val __obj = js.Dynamic.literal()
-    if (compare != null) __obj.updateDynamic("compare")(compare.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListColumnSortable]
   }
+  
+  extension [Self <: TreeListColumnSortable](x: Self) {
+    
+    inline def setCompare(value: js.Function): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    
+    inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
+  }
 }
-

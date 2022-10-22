@@ -1,143 +1,161 @@
 package typingsJapgolly.winrtUwp.Windows.Networking
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.winrtUwp.Windows.Foundation.EventHandler
-import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typingsJapgolly.winrtUwp.Windows.Foundation.TypedEventHandler
 import typingsJapgolly.winrtUwp.Windows.UI.Notifications.BadgeNotification
 import typingsJapgolly.winrtUwp.Windows.UI.Notifications.TileNotification
 import typingsJapgolly.winrtUwp.Windows.UI.Notifications.ToastNotification
 import typingsJapgolly.winrtUwp.Windows.WinRTEvent
 import typingsJapgolly.winrtUwp.winrtUwpStrings.pushnotificationreceived
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains classes and interfaces that encapsulate push notifications. */
-@JSGlobal("Windows.Networking.PushNotifications")
-@js.native
-object PushNotifications extends js.Object {
+object PushNotifications {
+  
+  @js.native
+  sealed trait PushNotificationType extends StObject
+  /** The type of push notification that has been received from the app server. Used by the NotificationType property. */
+  @JSGlobal("Windows.Networking.PushNotifications.PushNotificationType")
+  @js.native
+  object PushNotificationType extends StObject {
+    
+    /** A push notification to update a tile's badge overlay. */
+    @js.native
+    sealed trait badge
+      extends StObject
+         with PushNotificationType
+    
+    /** A push notification to perform an update to a tile that does not involve UI. */
+    @js.native
+    sealed trait raw
+      extends StObject
+         with PushNotificationType
+    
+    /** A push notification to update one or more elements of a tile. */
+    @js.native
+    sealed trait tile
+      extends StObject
+         with PushNotificationType
+    
+    /** A push notification to update an app's tile flyout. */
+    @js.native
+    sealed trait tileFlyout
+      extends StObject
+         with PushNotificationType
+    
+    /** A push notification to display as toast. */
+    @js.native
+    sealed trait toast
+      extends StObject
+         with PushNotificationType
+  }
+  
   /** Represents a delivery vehicle and addressing mechanism for push notifications. The channel Uniform Resource Identifier (URI) represented by this interface is used by a third-party application server to communicate with the Windows Push Notification Services (WNS). The push notification channel is used by the client to intercept notifications. */
   @js.native
-  abstract class PushNotificationChannel () extends js.Object {
-    /** Gets the time at which the channel expires. Notifications sent to this channel after this time are rejected. */
-    var expirationTime: js.Date = js.native
-    /** Fires when a push notification has arrived on this channel. */
-    @JSName("onpushnotificationreceived")
-    var onpushnotificationreceived_Original: TypedEventHandler[PushNotificationChannel, PushNotificationReceivedEventArgs] = js.native
-    /** Gets the Uniform Resource Identifier (URI) to which an app server sends a push notification intended for an application or secondary tile bound to this channel. This URI is transmitted to and stored by the third-party app server. */
-    var uri: String = js.native
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  trait PushNotificationChannel extends StObject {
+    
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_pushnotificationreceived(
       `type`: pushnotificationreceived,
       listener: TypedEventHandler[PushNotificationChannel, PushNotificationReceivedEventArgs]
     ): Unit = js.native
+    
     /** Explicitly invalidates this channel. Any notifications pushed to this channel after this method is called are not delivered. */
     def close(): Unit = js.native
+    
+    /** Gets the time at which the channel expires. Notifications sent to this channel after this time are rejected. */
+    var expirationTime: js.Date = js.native
+    
     /** Fires when a push notification has arrived on this channel. */
-    def onpushnotificationreceived(ev: PushNotificationReceivedEventArgs with WinRTEvent[PushNotificationChannel]): Unit = js.native
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def onpushnotificationreceived(ev: PushNotificationReceivedEventArgs & WinRTEvent[PushNotificationChannel]): Unit = js.native
+    /** Fires when a push notification has arrived on this channel. */
+    @JSName("onpushnotificationreceived")
+    var onpushnotificationreceived_Original: TypedEventHandler[PushNotificationChannel, PushNotificationReceivedEventArgs] = js.native
+    
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_pushnotificationreceived(
       `type`: pushnotificationreceived,
       listener: TypedEventHandler[PushNotificationChannel, PushNotificationReceivedEventArgs]
     ): Unit = js.native
+    
+    /** Gets the Uniform Resource Identifier (URI) to which an app server sends a push notification intended for an application or secondary tile bound to this channel. This URI is transmitted to and stored by the third-party app server. */
+    var uri: String = js.native
   }
   
   /** Creates objects that you use to retrieve push notification channels from the Windows Push Notification Services (WNS). These channels are bound to an app or secondary tile . */
-  @js.native
-  abstract class PushNotificationChannelManager () extends js.Object
+  trait PushNotificationChannelManager extends StObject
   
   /** Encapsulates a push notification that has been received from the app server, identifying the type and supplying the content of the notification. Windows passes this information in the PushNotificationReceived event. */
-  @js.native
-  abstract class PushNotificationReceivedEventArgs () extends js.Object {
+  trait PushNotificationReceivedEventArgs extends StObject {
+    
     /** Gets the content of a badge update to perform in response to this push notification. */
-    var badgeNotification: BadgeNotification = js.native
+    var badgeNotification: BadgeNotification
+    
     /** Gets or sets whether Windows should perform its default handling of the notification. */
-    var cancel: Boolean = js.native
+    var cancel: Boolean
+    
     /** Gets the type of push notification that has been received from the app server. */
-    var notificationType: PushNotificationType = js.native
-    var rawNotification: js.Any = js.native
-     /* unmapped type */ /** Gets the content of a tile update to perform in response to this push notification. */
-    var tileNotification: TileNotification = js.native
+    var notificationType: PushNotificationType
+    
+    var rawNotification: Any
+    
+    /* unmapped type */
+    /** Gets the content of a tile update to perform in response to this push notification. */
+    var tileNotification: TileNotification
+    
     /** Gets the content of a toast to display in response to this push notification. */
-    var toastNotification: ToastNotification = js.native
+    var toastNotification: ToastNotification
   }
-  
-  @js.native
-  sealed trait PushNotificationType extends js.Object
+  object PushNotificationReceivedEventArgs {
+    
+    inline def apply(
+      badgeNotification: BadgeNotification,
+      cancel: Boolean,
+      notificationType: PushNotificationType,
+      rawNotification: Any,
+      tileNotification: TileNotification,
+      toastNotification: ToastNotification
+    ): PushNotificationReceivedEventArgs = {
+      val __obj = js.Dynamic.literal(badgeNotification = badgeNotification.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], notificationType = notificationType.asInstanceOf[js.Any], rawNotification = rawNotification.asInstanceOf[js.Any], tileNotification = tileNotification.asInstanceOf[js.Any], toastNotification = toastNotification.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PushNotificationReceivedEventArgs]
+    }
+    
+    extension [Self <: PushNotificationReceivedEventArgs](x: Self) {
+      
+      inline def setBadgeNotification(value: BadgeNotification): Self = StObject.set(x, "badgeNotification", value.asInstanceOf[js.Any])
+      
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      
+      inline def setNotificationType(value: PushNotificationType): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
+      
+      inline def setRawNotification(value: Any): Self = StObject.set(x, "rawNotification", value.asInstanceOf[js.Any])
+      
+      inline def setTileNotification(value: TileNotification): Self = StObject.set(x, "tileNotification", value.asInstanceOf[js.Any])
+      
+      inline def setToastNotification(value: ToastNotification): Self = StObject.set(x, "toastNotification", value.asInstanceOf[js.Any])
+    }
+  }
   
   /** Encapsulates the app-defined content of a raw notification (a push notification that does not involve UI). Its contents can be used in an app's background task, if the app has that capability, or otherwise consumed by the app and acted on as needed. */
-  @js.native
-  abstract class RawNotification () extends js.Object {
+  trait RawNotification extends StObject {
+    
     /** Gets the content of the raw notification as a string. This string specifies a background task associated with the app. */
-    var content: String = js.native
+    var content: String
   }
-  
-  /* static members */
-  @js.native
-  object PushNotificationChannelManager extends js.Object {
-    /**
-      * Creates an object, bound to the calling app, through which you retrieve a push notification channel from Windows Push Notification Services (WNS).
-      * @return The object, bound to the calling app, that is used to request a PushNotificationChannel from the WNS.
-      */
-    def createPushNotificationChannelForApplicationAsync(): IPromiseWithIAsyncOperation[PushNotificationChannel] = js.native
-    /**
-      * Creates an object, bound to a specified app, through which you retrieve a push notification channel from Windows Push Notification Services (WNS). The specified app must be in the same package as the calling app.
-      * @param applicationId The Package Relative Application ID (PRAID) of the app to bind to the push notification channel.
-      * @return The object, bound to the app specified in applicationId, that is used to request a PushNotificationChannel from the WNS.
-      */
-    def createPushNotificationChannelForApplicationAsync(applicationId: String): IPromiseWithIAsyncOperation[PushNotificationChannel] = js.native
-    /**
-      * Creates an object, bound to a secondary tile , through which you retrieve a push notification channel from Windows Push Notification Services (WNS). The tile can be a secondary tile of the calling app or any other app in the same package.
-      * @param tileId The ID of the secondary tile to bind to the push notification channel.
-      * @return The object, bound to the secondary tile, that is used to request a PushNotificationChannel from the WNS.
-      */
-    def createPushNotificationChannelForSecondaryTileAsync(tileId: String): IPromiseWithIAsyncOperation[PushNotificationChannel] = js.native
+  object RawNotification {
+    
+    inline def apply(content: String): RawNotification = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RawNotification]
+    }
+    
+    extension [Self <: RawNotification](x: Self) {
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    }
   }
-  
-  /** The type of push notification that has been received from the app server. Used by the NotificationType property. */
-  @js.native
-  object PushNotificationType extends js.Object {
-    /** A push notification to update a tile's badge overlay. */
-    @js.native
-    sealed trait badge extends PushNotificationType
-    
-    /** A push notification to perform an update to a tile that does not involve UI. */
-    @js.native
-    sealed trait raw extends PushNotificationType
-    
-    /** A push notification to update one or more elements of a tile. */
-    @js.native
-    sealed trait tile extends PushNotificationType
-    
-    /** A push notification to update an app's tile flyout. */
-    @js.native
-    sealed trait tileFlyout extends PushNotificationType
-    
-    /** A push notification to display as toast. */
-    @js.native
-    sealed trait toast extends PushNotificationType
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PushNotificationType with Double] = js.native
-    /* 2 */ @js.native
-    object badge extends TopLevel[badge with Double]
-    
-    /* 3 */ @js.native
-    object raw extends TopLevel[raw with Double]
-    
-    /* 1 */ @js.native
-    object tile extends TopLevel[tile with Double]
-    
-    /* 4 */ @js.native
-    object tileFlyout extends TopLevel[tileFlyout with Double]
-    
-    /* 0 */ @js.native
-    object toast extends TopLevel[toast with Double]
-    
-  }
-  
 }
-

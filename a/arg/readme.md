@@ -1,24 +1,24 @@
 
 # Scala.js typings for arg
 
-Typings are for version 4.1.3
+Typings are for version 5.0.2
 
 ## Library description:
-Another simple argument parser
+Unopinionated, no-frills CLI argument parser
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | arg |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 415 |
-| # downloads        | 56951991 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 7.899676533333333E7 |
+| # stars            | 1084.0 |
 
 ## Links
-- [Homepage](https://github.com/zeit/arg#readme)
-- [Bugs](https://github.com/zeit/arg/issues)
-- [Repository](https://github.com/zeit/arg)
+- [Homepage](https://github.com/vercel/arg#readme)
+- [Bugs](https://github.com/vercel/arg/issues)
+- [Repository](https://github.com/vercel/arg)
 - [Npm](https://www.npmjs.com/package/arg)
     
 

@@ -1,184 +1,353 @@
 package typingsJapgolly.zui
 
 import japgolly.scalajs.react.Callback
+import typingsJapgolly.zui.anon.Crop
+import typingsJapgolly.zui.anon.Error
+import typingsJapgolly.zui.anon.Height
+import typingsJapgolly.zui.anon.Id
+import typingsJapgolly.zui.anon.Maxfilesize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * uploader
   */
-trait UploaderOption extends js.Object {
+trait UploaderOption extends StObject {
+  
   var autoUpload: js.UndefOr[Boolean] = js.undefined
+  
   var browseByClickList: js.UndefOr[Boolean] = js.undefined
+  
   var browse_button: js.UndefOr[String] = js.undefined
+  
   var chunk_size: js.UndefOr[String] = js.undefined
+  
   var deleteActionOnDone: js.UndefOr[Boolean] = js.undefined
+  
   var deleteConfirm: js.UndefOr[Boolean | String] = js.undefined
+  
   var dropPlaceholder: js.UndefOr[Boolean] = js.undefined
+  
   var drop_element: js.UndefOr[String] = js.undefined
+  
   var fileFormater: js.UndefOr[js.Function3[/* $file */ JQuery, /* file */ FileObj, /* status */ STATUS, Unit]] = js.undefined
+  
   var fileIconCreator: js.UndefOr[
     js.Function3[/* fileType */ String, /* file */ FileObj, /* uploader */ Uploader, Unit]
   ] = js.undefined
+  
   var fileList: js.UndefOr[String] = js.undefined
+  
   var fileTemplate: js.UndefOr[String] = js.undefined
+  
   var file_data_name: js.UndefOr[String] = js.undefined
-  var filters: js.UndefOr[AnonMaxfilesize] = js.undefined
+  
+  var filters: js.UndefOr[Maxfilesize] = js.undefined
+  
   var flash_swf_url: js.UndefOr[String] = js.undefined
+  
   var headers: js.UndefOr[js.Object] = js.undefined
+  
   var lang: js.UndefOr[String] = js.undefined
+  
   var limitFilesCount: js.UndefOr[Boolean | Double] = js.undefined
+  
   var max_retries: js.UndefOr[Double] = js.undefined
+  
   var multi_selection: js.UndefOr[Boolean] = js.undefined
+  
   var multipart: js.UndefOr[Boolean] = js.undefined
+  
   var multipart_params: js.UndefOr[js.Object | CallBack] = js.undefined
+  
   var onBeforeUpload: js.UndefOr[js.Function1[/* file */ FileObj, Unit]] = js.undefined
+  
   var onChunkUploaded: js.UndefOr[js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, Unit]] = js.undefined
-  var onError: js.UndefOr[js.Function1[/* error */ AnonError, Unit]] = js.undefined
+  
+  var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+  
   var onFileUploaded: js.UndefOr[js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, Unit]] = js.undefined
+  
   var onFilesAdded: js.UndefOr[js.Function1[/* fiels */ js.Array[FileObj], Unit]] = js.undefined
+  
   var onFilesRemoved: js.UndefOr[js.Function1[/* files */ js.Array[FileObj], Unit]] = js.undefined
+  
   var onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var onQueueChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var onStateChanged: js.UndefOr[js.Function1[/* status */ STATUS, Unit]] = js.undefined
+  
   var onUploadComplete: js.UndefOr[js.Function1[/* files */ js.Array[FileObj], Unit]] = js.undefined
+  
   var onUploadFile: js.UndefOr[js.Function1[/* file */ FileObj, Unit]] = js.undefined
+  
   var onUploadProgress: js.UndefOr[js.Function1[/* file */ FileObj, Unit]] = js.undefined
+  
   var previewImageIcon: js.UndefOr[Boolean] = js.undefined
-  var previewImageSize: js.UndefOr[AnonHeight] = js.undefined
+  
+  var previewImageSize: js.UndefOr[Height] = js.undefined
+  
   var qiniu: js.UndefOr[js.Object] = js.undefined
+  
   var removeUploaded: js.UndefOr[Boolean] = js.undefined
+  
   var rename: js.UndefOr[Boolean] = js.undefined
+  
   var renameActionOnDone: js.UndefOr[Boolean] = js.undefined
+  
   var renameByClick: js.UndefOr[Boolean] = js.undefined
+  
   var renameExtension: js.UndefOr[Boolean] = js.undefined
-  var resize: js.UndefOr[AnonCrop] = js.undefined
+  
+  var resize: js.UndefOr[Crop] = js.undefined
+  
   var responseHandler: js.UndefOr[Boolean | CallBack] = js.undefined
+  
   var runtimes: js.UndefOr[String] = js.undefined
+  
   var sendFileId: js.UndefOr[Boolean] = js.undefined
+  
   var sendFileName: js.UndefOr[Boolean] = js.undefined
+  
   var silverlight_xap_url: js.UndefOr[String] = js.undefined
-  var staticFiles: js.UndefOr[js.Array[AnonId]] = js.undefined
+  
+  var staticFiles: js.UndefOr[js.Array[Id]] = js.undefined
+  
   var statusCreator: js.UndefOr[
     js.Function3[/* total */ UploadProgress, /* state */ STATUS, /* uploader */ Uploader, Unit]
   ] = js.undefined
+  
   var unique_names: js.UndefOr[Boolean] = js.undefined
+  
   var uploadedMessage: js.UndefOr[Boolean] = js.undefined
+  
   var url: String
 }
-
 object UploaderOption {
-  @scala.inline
-  def apply(
-    url: String,
-    autoUpload: js.UndefOr[Boolean] = js.undefined,
-    browseByClickList: js.UndefOr[Boolean] = js.undefined,
-    browse_button: String = null,
-    chunk_size: String = null,
-    deleteActionOnDone: js.UndefOr[Boolean] = js.undefined,
-    deleteConfirm: Boolean | String = null,
-    dropPlaceholder: js.UndefOr[Boolean] = js.undefined,
-    drop_element: String = null,
-    fileFormater: (/* $file */ JQuery, /* file */ FileObj, /* status */ STATUS) => Callback = null,
-    fileIconCreator: (/* fileType */ String, /* file */ FileObj, /* uploader */ Uploader) => Callback = null,
-    fileList: String = null,
-    fileTemplate: String = null,
-    file_data_name: String = null,
-    filters: AnonMaxfilesize = null,
-    flash_swf_url: String = null,
-    headers: js.Object = null,
-    lang: String = null,
-    limitFilesCount: Boolean | Double = null,
-    max_retries: Int | Double = null,
-    multi_selection: js.UndefOr[Boolean] = js.undefined,
-    multipart: js.UndefOr[Boolean] = js.undefined,
-    multipart_params: js.Object | CallBack = null,
-    onBeforeUpload: /* file */ FileObj => Callback = null,
-    onChunkUploaded: (/* file */ FileObj, /* responseObject */ ResponseObject) => Callback = null,
-    onError: /* error */ AnonError => Callback = null,
-    onFileUploaded: (/* file */ FileObj, /* responseObject */ ResponseObject) => Callback = null,
-    onFilesAdded: /* fiels */ js.Array[FileObj] => Callback = null,
-    onFilesRemoved: /* files */ js.Array[FileObj] => Callback = null,
-    onInit: js.UndefOr[Callback] = js.undefined,
-    onQueueChanged: js.UndefOr[Callback] = js.undefined,
-    onStateChanged: /* status */ STATUS => Callback = null,
-    onUploadComplete: /* files */ js.Array[FileObj] => Callback = null,
-    onUploadFile: /* file */ FileObj => Callback = null,
-    onUploadProgress: /* file */ FileObj => Callback = null,
-    previewImageIcon: js.UndefOr[Boolean] = js.undefined,
-    previewImageSize: AnonHeight = null,
-    qiniu: js.Object = null,
-    removeUploaded: js.UndefOr[Boolean] = js.undefined,
-    rename: js.UndefOr[Boolean] = js.undefined,
-    renameActionOnDone: js.UndefOr[Boolean] = js.undefined,
-    renameByClick: js.UndefOr[Boolean] = js.undefined,
-    renameExtension: js.UndefOr[Boolean] = js.undefined,
-    resize: AnonCrop = null,
-    responseHandler: Boolean | CallBack = null,
-    runtimes: String = null,
-    sendFileId: js.UndefOr[Boolean] = js.undefined,
-    sendFileName: js.UndefOr[Boolean] = js.undefined,
-    silverlight_xap_url: String = null,
-    staticFiles: js.Array[AnonId] = null,
-    statusCreator: (/* total */ UploadProgress, /* state */ STATUS, /* uploader */ Uploader) => Callback = null,
-    unique_names: js.UndefOr[Boolean] = js.undefined,
-    uploadedMessage: js.UndefOr[Boolean] = js.undefined
-  ): UploaderOption = {
+  
+  inline def apply(url: String): UploaderOption = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoUpload)) __obj.updateDynamic("autoUpload")(autoUpload.asInstanceOf[js.Any])
-    if (!js.isUndefined(browseByClickList)) __obj.updateDynamic("browseByClickList")(browseByClickList.asInstanceOf[js.Any])
-    if (browse_button != null) __obj.updateDynamic("browse_button")(browse_button.asInstanceOf[js.Any])
-    if (chunk_size != null) __obj.updateDynamic("chunk_size")(chunk_size.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteActionOnDone)) __obj.updateDynamic("deleteActionOnDone")(deleteActionOnDone.asInstanceOf[js.Any])
-    if (deleteConfirm != null) __obj.updateDynamic("deleteConfirm")(deleteConfirm.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropPlaceholder)) __obj.updateDynamic("dropPlaceholder")(dropPlaceholder.asInstanceOf[js.Any])
-    if (drop_element != null) __obj.updateDynamic("drop_element")(drop_element.asInstanceOf[js.Any])
-    if (fileFormater != null) __obj.updateDynamic("fileFormater")(js.Any.fromFunction3((t0: /* $file */ typingsJapgolly.zui.JQuery, t1: /* file */ typingsJapgolly.zui.FileObj, t2: /* status */ typingsJapgolly.zui.STATUS) => fileFormater(t0, t1, t2).runNow()))
-    if (fileIconCreator != null) __obj.updateDynamic("fileIconCreator")(js.Any.fromFunction3((t0: /* fileType */ java.lang.String, t1: /* file */ typingsJapgolly.zui.FileObj, t2: /* uploader */ typingsJapgolly.zui.Uploader) => fileIconCreator(t0, t1, t2).runNow()))
-    if (fileList != null) __obj.updateDynamic("fileList")(fileList.asInstanceOf[js.Any])
-    if (fileTemplate != null) __obj.updateDynamic("fileTemplate")(fileTemplate.asInstanceOf[js.Any])
-    if (file_data_name != null) __obj.updateDynamic("file_data_name")(file_data_name.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (flash_swf_url != null) __obj.updateDynamic("flash_swf_url")(flash_swf_url.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (limitFilesCount != null) __obj.updateDynamic("limitFilesCount")(limitFilesCount.asInstanceOf[js.Any])
-    if (max_retries != null) __obj.updateDynamic("max_retries")(max_retries.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi_selection)) __obj.updateDynamic("multi_selection")(multi_selection.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipart)) __obj.updateDynamic("multipart")(multipart.asInstanceOf[js.Any])
-    if (multipart_params != null) __obj.updateDynamic("multipart_params")(multipart_params.asInstanceOf[js.Any])
-    if (onBeforeUpload != null) __obj.updateDynamic("onBeforeUpload")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.zui.FileObj) => onBeforeUpload(t0).runNow()))
-    if (onChunkUploaded != null) __obj.updateDynamic("onChunkUploaded")(js.Any.fromFunction2((t0: /* file */ typingsJapgolly.zui.FileObj, t1: /* responseObject */ typingsJapgolly.zui.ResponseObject) => onChunkUploaded(t0, t1).runNow()))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: /* error */ typingsJapgolly.zui.AnonError) => onError(t0).runNow()))
-    if (onFileUploaded != null) __obj.updateDynamic("onFileUploaded")(js.Any.fromFunction2((t0: /* file */ typingsJapgolly.zui.FileObj, t1: /* responseObject */ typingsJapgolly.zui.ResponseObject) => onFileUploaded(t0, t1).runNow()))
-    if (onFilesAdded != null) __obj.updateDynamic("onFilesAdded")(js.Any.fromFunction1((t0: /* fiels */ js.Array[typingsJapgolly.zui.FileObj]) => onFilesAdded(t0).runNow()))
-    if (onFilesRemoved != null) __obj.updateDynamic("onFilesRemoved")(js.Any.fromFunction1((t0: /* files */ js.Array[typingsJapgolly.zui.FileObj]) => onFilesRemoved(t0).runNow()))
-    onInit.foreach(p => __obj.updateDynamic("onInit")(p.toJsFn))
-    onQueueChanged.foreach(p => __obj.updateDynamic("onQueueChanged")(p.toJsFn))
-    if (onStateChanged != null) __obj.updateDynamic("onStateChanged")(js.Any.fromFunction1((t0: /* status */ typingsJapgolly.zui.STATUS) => onStateChanged(t0).runNow()))
-    if (onUploadComplete != null) __obj.updateDynamic("onUploadComplete")(js.Any.fromFunction1((t0: /* files */ js.Array[typingsJapgolly.zui.FileObj]) => onUploadComplete(t0).runNow()))
-    if (onUploadFile != null) __obj.updateDynamic("onUploadFile")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.zui.FileObj) => onUploadFile(t0).runNow()))
-    if (onUploadProgress != null) __obj.updateDynamic("onUploadProgress")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.zui.FileObj) => onUploadProgress(t0).runNow()))
-    if (!js.isUndefined(previewImageIcon)) __obj.updateDynamic("previewImageIcon")(previewImageIcon.asInstanceOf[js.Any])
-    if (previewImageSize != null) __obj.updateDynamic("previewImageSize")(previewImageSize.asInstanceOf[js.Any])
-    if (qiniu != null) __obj.updateDynamic("qiniu")(qiniu.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeUploaded)) __obj.updateDynamic("removeUploaded")(removeUploaded.asInstanceOf[js.Any])
-    if (!js.isUndefined(rename)) __obj.updateDynamic("rename")(rename.asInstanceOf[js.Any])
-    if (!js.isUndefined(renameActionOnDone)) __obj.updateDynamic("renameActionOnDone")(renameActionOnDone.asInstanceOf[js.Any])
-    if (!js.isUndefined(renameByClick)) __obj.updateDynamic("renameByClick")(renameByClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(renameExtension)) __obj.updateDynamic("renameExtension")(renameExtension.asInstanceOf[js.Any])
-    if (resize != null) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
-    if (responseHandler != null) __obj.updateDynamic("responseHandler")(responseHandler.asInstanceOf[js.Any])
-    if (runtimes != null) __obj.updateDynamic("runtimes")(runtimes.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendFileId)) __obj.updateDynamic("sendFileId")(sendFileId.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendFileName)) __obj.updateDynamic("sendFileName")(sendFileName.asInstanceOf[js.Any])
-    if (silverlight_xap_url != null) __obj.updateDynamic("silverlight_xap_url")(silverlight_xap_url.asInstanceOf[js.Any])
-    if (staticFiles != null) __obj.updateDynamic("staticFiles")(staticFiles.asInstanceOf[js.Any])
-    if (statusCreator != null) __obj.updateDynamic("statusCreator")(js.Any.fromFunction3((t0: /* total */ typingsJapgolly.zui.UploadProgress, t1: /* state */ typingsJapgolly.zui.STATUS, t2: /* uploader */ typingsJapgolly.zui.Uploader) => statusCreator(t0, t1, t2).runNow()))
-    if (!js.isUndefined(unique_names)) __obj.updateDynamic("unique_names")(unique_names.asInstanceOf[js.Any])
-    if (!js.isUndefined(uploadedMessage)) __obj.updateDynamic("uploadedMessage")(uploadedMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploaderOption]
   }
+  
+  extension [Self <: UploaderOption](x: Self) {
+    
+    inline def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
+    
+    inline def setAutoUploadUndefined: Self = StObject.set(x, "autoUpload", js.undefined)
+    
+    inline def setBrowseByClickList(value: Boolean): Self = StObject.set(x, "browseByClickList", value.asInstanceOf[js.Any])
+    
+    inline def setBrowseByClickListUndefined: Self = StObject.set(x, "browseByClickList", js.undefined)
+    
+    inline def setBrowse_button(value: String): Self = StObject.set(x, "browse_button", value.asInstanceOf[js.Any])
+    
+    inline def setBrowse_buttonUndefined: Self = StObject.set(x, "browse_button", js.undefined)
+    
+    inline def setChunk_size(value: String): Self = StObject.set(x, "chunk_size", value.asInstanceOf[js.Any])
+    
+    inline def setChunk_sizeUndefined: Self = StObject.set(x, "chunk_size", js.undefined)
+    
+    inline def setDeleteActionOnDone(value: Boolean): Self = StObject.set(x, "deleteActionOnDone", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteActionOnDoneUndefined: Self = StObject.set(x, "deleteActionOnDone", js.undefined)
+    
+    inline def setDeleteConfirm(value: Boolean | String): Self = StObject.set(x, "deleteConfirm", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteConfirmUndefined: Self = StObject.set(x, "deleteConfirm", js.undefined)
+    
+    inline def setDropPlaceholder(value: Boolean): Self = StObject.set(x, "dropPlaceholder", value.asInstanceOf[js.Any])
+    
+    inline def setDropPlaceholderUndefined: Self = StObject.set(x, "dropPlaceholder", js.undefined)
+    
+    inline def setDrop_element(value: String): Self = StObject.set(x, "drop_element", value.asInstanceOf[js.Any])
+    
+    inline def setDrop_elementUndefined: Self = StObject.set(x, "drop_element", js.undefined)
+    
+    inline def setFileFormater(value: (/* $file */ JQuery, /* file */ FileObj, /* status */ STATUS) => Callback): Self = StObject.set(x, "fileFormater", js.Any.fromFunction3((t0: /* $file */ JQuery, t1: /* file */ FileObj, t2: /* status */ STATUS) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setFileFormaterUndefined: Self = StObject.set(x, "fileFormater", js.undefined)
+    
+    inline def setFileIconCreator(value: (/* fileType */ String, /* file */ FileObj, /* uploader */ Uploader) => Callback): Self = StObject.set(x, "fileIconCreator", js.Any.fromFunction3((t0: /* fileType */ String, t1: /* file */ FileObj, t2: /* uploader */ Uploader) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setFileIconCreatorUndefined: Self = StObject.set(x, "fileIconCreator", js.undefined)
+    
+    inline def setFileList(value: String): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+    
+    inline def setFileListUndefined: Self = StObject.set(x, "fileList", js.undefined)
+    
+    inline def setFileTemplate(value: String): Self = StObject.set(x, "fileTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setFileTemplateUndefined: Self = StObject.set(x, "fileTemplate", js.undefined)
+    
+    inline def setFile_data_name(value: String): Self = StObject.set(x, "file_data_name", value.asInstanceOf[js.Any])
+    
+    inline def setFile_data_nameUndefined: Self = StObject.set(x, "file_data_name", js.undefined)
+    
+    inline def setFilters(value: Maxfilesize): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    
+    inline def setFlash_swf_url(value: String): Self = StObject.set(x, "flash_swf_url", value.asInstanceOf[js.Any])
+    
+    inline def setFlash_swf_urlUndefined: Self = StObject.set(x, "flash_swf_url", js.undefined)
+    
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    
+    inline def setLimitFilesCount(value: Boolean | Double): Self = StObject.set(x, "limitFilesCount", value.asInstanceOf[js.Any])
+    
+    inline def setLimitFilesCountUndefined: Self = StObject.set(x, "limitFilesCount", js.undefined)
+    
+    inline def setMax_retries(value: Double): Self = StObject.set(x, "max_retries", value.asInstanceOf[js.Any])
+    
+    inline def setMax_retriesUndefined: Self = StObject.set(x, "max_retries", js.undefined)
+    
+    inline def setMulti_selection(value: Boolean): Self = StObject.set(x, "multi_selection", value.asInstanceOf[js.Any])
+    
+    inline def setMulti_selectionUndefined: Self = StObject.set(x, "multi_selection", js.undefined)
+    
+    inline def setMultipart(value: Boolean): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
+    
+    inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
+    
+    inline def setMultipart_params(value: js.Object | CallBack): Self = StObject.set(x, "multipart_params", value.asInstanceOf[js.Any])
+    
+    inline def setMultipart_paramsCallback(value: Callback): Self = StObject.set(x, "multipart_params", value.toJsFn)
+    
+    inline def setMultipart_paramsUndefined: Self = StObject.set(x, "multipart_params", js.undefined)
+    
+    inline def setOnBeforeUpload(value: /* file */ FileObj => Callback): Self = StObject.set(x, "onBeforeUpload", js.Any.fromFunction1((t0: /* file */ FileObj) => value(t0).runNow()))
+    
+    inline def setOnBeforeUploadUndefined: Self = StObject.set(x, "onBeforeUpload", js.undefined)
+    
+    inline def setOnChunkUploaded(value: (/* file */ FileObj, /* responseObject */ ResponseObject) => Callback): Self = StObject.set(x, "onChunkUploaded", js.Any.fromFunction2((t0: /* file */ FileObj, t1: /* responseObject */ ResponseObject) => (value(t0, t1)).runNow()))
+    
+    inline def setOnChunkUploadedUndefined: Self = StObject.set(x, "onChunkUploaded", js.undefined)
+    
+    inline def setOnError(value: /* error */ Error => Callback): Self = StObject.set(x, "onError", js.Any.fromFunction1((t0: /* error */ Error) => value(t0).runNow()))
+    
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    
+    inline def setOnFileUploaded(value: (/* file */ FileObj, /* responseObject */ ResponseObject) => Callback): Self = StObject.set(x, "onFileUploaded", js.Any.fromFunction2((t0: /* file */ FileObj, t1: /* responseObject */ ResponseObject) => (value(t0, t1)).runNow()))
+    
+    inline def setOnFileUploadedUndefined: Self = StObject.set(x, "onFileUploaded", js.undefined)
+    
+    inline def setOnFilesAdded(value: /* fiels */ js.Array[FileObj] => Callback): Self = StObject.set(x, "onFilesAdded", js.Any.fromFunction1((t0: /* fiels */ js.Array[FileObj]) => value(t0).runNow()))
+    
+    inline def setOnFilesAddedUndefined: Self = StObject.set(x, "onFilesAdded", js.undefined)
+    
+    inline def setOnFilesRemoved(value: /* files */ js.Array[FileObj] => Callback): Self = StObject.set(x, "onFilesRemoved", js.Any.fromFunction1((t0: /* files */ js.Array[FileObj]) => value(t0).runNow()))
+    
+    inline def setOnFilesRemovedUndefined: Self = StObject.set(x, "onFilesRemoved", js.undefined)
+    
+    inline def setOnInit(value: Callback): Self = StObject.set(x, "onInit", value.toJsFn)
+    
+    inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
+    
+    inline def setOnQueueChanged(value: Callback): Self = StObject.set(x, "onQueueChanged", value.toJsFn)
+    
+    inline def setOnQueueChangedUndefined: Self = StObject.set(x, "onQueueChanged", js.undefined)
+    
+    inline def setOnStateChanged(value: /* status */ STATUS => Callback): Self = StObject.set(x, "onStateChanged", js.Any.fromFunction1((t0: /* status */ STATUS) => value(t0).runNow()))
+    
+    inline def setOnStateChangedUndefined: Self = StObject.set(x, "onStateChanged", js.undefined)
+    
+    inline def setOnUploadComplete(value: /* files */ js.Array[FileObj] => Callback): Self = StObject.set(x, "onUploadComplete", js.Any.fromFunction1((t0: /* files */ js.Array[FileObj]) => value(t0).runNow()))
+    
+    inline def setOnUploadCompleteUndefined: Self = StObject.set(x, "onUploadComplete", js.undefined)
+    
+    inline def setOnUploadFile(value: /* file */ FileObj => Callback): Self = StObject.set(x, "onUploadFile", js.Any.fromFunction1((t0: /* file */ FileObj) => value(t0).runNow()))
+    
+    inline def setOnUploadFileUndefined: Self = StObject.set(x, "onUploadFile", js.undefined)
+    
+    inline def setOnUploadProgress(value: /* file */ FileObj => Callback): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1((t0: /* file */ FileObj) => value(t0).runNow()))
+    
+    inline def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
+    
+    inline def setPreviewImageIcon(value: Boolean): Self = StObject.set(x, "previewImageIcon", value.asInstanceOf[js.Any])
+    
+    inline def setPreviewImageIconUndefined: Self = StObject.set(x, "previewImageIcon", js.undefined)
+    
+    inline def setPreviewImageSize(value: Height): Self = StObject.set(x, "previewImageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPreviewImageSizeUndefined: Self = StObject.set(x, "previewImageSize", js.undefined)
+    
+    inline def setQiniu(value: js.Object): Self = StObject.set(x, "qiniu", value.asInstanceOf[js.Any])
+    
+    inline def setQiniuUndefined: Self = StObject.set(x, "qiniu", js.undefined)
+    
+    inline def setRemoveUploaded(value: Boolean): Self = StObject.set(x, "removeUploaded", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveUploadedUndefined: Self = StObject.set(x, "removeUploaded", js.undefined)
+    
+    inline def setRename(value: Boolean): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+    
+    inline def setRenameActionOnDone(value: Boolean): Self = StObject.set(x, "renameActionOnDone", value.asInstanceOf[js.Any])
+    
+    inline def setRenameActionOnDoneUndefined: Self = StObject.set(x, "renameActionOnDone", js.undefined)
+    
+    inline def setRenameByClick(value: Boolean): Self = StObject.set(x, "renameByClick", value.asInstanceOf[js.Any])
+    
+    inline def setRenameByClickUndefined: Self = StObject.set(x, "renameByClick", js.undefined)
+    
+    inline def setRenameExtension(value: Boolean): Self = StObject.set(x, "renameExtension", value.asInstanceOf[js.Any])
+    
+    inline def setRenameExtensionUndefined: Self = StObject.set(x, "renameExtension", js.undefined)
+    
+    inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
+    
+    inline def setResize(value: Crop): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    
+    inline def setResponseHandler(value: Boolean | CallBack): Self = StObject.set(x, "responseHandler", value.asInstanceOf[js.Any])
+    
+    inline def setResponseHandlerCallback(value: Callback): Self = StObject.set(x, "responseHandler", value.toJsFn)
+    
+    inline def setResponseHandlerUndefined: Self = StObject.set(x, "responseHandler", js.undefined)
+    
+    inline def setRuntimes(value: String): Self = StObject.set(x, "runtimes", value.asInstanceOf[js.Any])
+    
+    inline def setRuntimesUndefined: Self = StObject.set(x, "runtimes", js.undefined)
+    
+    inline def setSendFileId(value: Boolean): Self = StObject.set(x, "sendFileId", value.asInstanceOf[js.Any])
+    
+    inline def setSendFileIdUndefined: Self = StObject.set(x, "sendFileId", js.undefined)
+    
+    inline def setSendFileName(value: Boolean): Self = StObject.set(x, "sendFileName", value.asInstanceOf[js.Any])
+    
+    inline def setSendFileNameUndefined: Self = StObject.set(x, "sendFileName", js.undefined)
+    
+    inline def setSilverlight_xap_url(value: String): Self = StObject.set(x, "silverlight_xap_url", value.asInstanceOf[js.Any])
+    
+    inline def setSilverlight_xap_urlUndefined: Self = StObject.set(x, "silverlight_xap_url", js.undefined)
+    
+    inline def setStaticFiles(value: js.Array[Id]): Self = StObject.set(x, "staticFiles", value.asInstanceOf[js.Any])
+    
+    inline def setStaticFilesUndefined: Self = StObject.set(x, "staticFiles", js.undefined)
+    
+    inline def setStaticFilesVarargs(value: Id*): Self = StObject.set(x, "staticFiles", js.Array(value*))
+    
+    inline def setStatusCreator(value: (/* total */ UploadProgress, /* state */ STATUS, /* uploader */ Uploader) => Callback): Self = StObject.set(x, "statusCreator", js.Any.fromFunction3((t0: /* total */ UploadProgress, t1: /* state */ STATUS, t2: /* uploader */ Uploader) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setStatusCreatorUndefined: Self = StObject.set(x, "statusCreator", js.undefined)
+    
+    inline def setUnique_names(value: Boolean): Self = StObject.set(x, "unique_names", value.asInstanceOf[js.Any])
+    
+    inline def setUnique_namesUndefined: Self = StObject.set(x, "unique_names", js.undefined)
+    
+    inline def setUploadedMessage(value: Boolean): Self = StObject.set(x, "uploadedMessage", value.asInstanceOf[js.Any])
+    
+    inline def setUploadedMessageUndefined: Self = StObject.set(x, "uploadedMessage", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

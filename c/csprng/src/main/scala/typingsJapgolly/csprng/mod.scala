@@ -1,12 +1,14 @@
 package typingsJapgolly.csprng
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("csprng", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(bits: Double, radix: Double): String = js.native
+object mod {
+  
+  inline def apply(bits: Double, radix: Double): String = (^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @JSImport("csprng", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

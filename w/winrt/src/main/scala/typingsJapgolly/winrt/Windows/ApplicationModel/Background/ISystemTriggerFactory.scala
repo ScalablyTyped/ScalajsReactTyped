@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Background
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISystemTriggerFactory extends js.Object {
+trait ISystemTriggerFactory extends StObject {
+  
   def create(triggerType: SystemTriggerType, oneShot: Boolean): SystemTrigger
 }
-
 object ISystemTriggerFactory {
-  @scala.inline
-  def apply(create: (SystemTriggerType, Boolean) => CallbackTo[SystemTrigger]): ISystemTriggerFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(js.Any.fromFunction2((t0: typingsJapgolly.winrt.Windows.ApplicationModel.Background.SystemTriggerType, t1: scala.Boolean) => create(t0, t1).runNow()))
+  
+  inline def apply(create: (SystemTriggerType, Boolean) => SystemTrigger): ISystemTriggerFactory = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
     __obj.asInstanceOf[ISystemTriggerFactory]
   }
+  
+  extension [Self <: ISystemTriggerFactory](x: Self) {
+    
+    inline def setCreate(value: (SystemTriggerType, Boolean) => SystemTrigger): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+  }
 }
-

@@ -1,22 +1,27 @@
 package typingsJapgolly.reduxFirstRouter.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Payload
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var query: js.UndefOr[Query] = js.undefined
 }
-
 object Payload {
-  @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, query: Query = null): Payload = {
+  
+  inline def apply(): Payload = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payload]
   }
+  
+  extension [Self <: Payload](x: Self) {
+    
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+  }
 }
-

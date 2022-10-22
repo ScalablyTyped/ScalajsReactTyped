@@ -1,40 +1,61 @@
 package typingsJapgolly.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
-trait SjclCipherParams extends js.Object {
+trait SjclCipherParams extends StObject {
+  
   var adata: js.UndefOr[String] = js.undefined
+  
   var cipher: js.UndefOr[String] = js.undefined
+  
   var iter: js.UndefOr[Double] = js.undefined
+  
   var ks: js.UndefOr[Double] = js.undefined
+  
   var mode: js.UndefOr[String] = js.undefined
+  
   var ts: js.UndefOr[Double] = js.undefined
+  
   var v: js.UndefOr[Double] = js.undefined
 }
-
 object SjclCipherParams {
-  @scala.inline
-  def apply(
-    adata: String = null,
-    cipher: String = null,
-    iter: Int | Double = null,
-    ks: Int | Double = null,
-    mode: String = null,
-    ts: Int | Double = null,
-    v: Int | Double = null
-  ): SjclCipherParams = {
+  
+  inline def apply(): SjclCipherParams = {
     val __obj = js.Dynamic.literal()
-    if (adata != null) __obj.updateDynamic("adata")(adata.asInstanceOf[js.Any])
-    if (cipher != null) __obj.updateDynamic("cipher")(cipher.asInstanceOf[js.Any])
-    if (iter != null) __obj.updateDynamic("iter")(iter.asInstanceOf[js.Any])
-    if (ks != null) __obj.updateDynamic("ks")(ks.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (ts != null) __obj.updateDynamic("ts")(ts.asInstanceOf[js.Any])
-    if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[SjclCipherParams]
   }
+  
+  extension [Self <: SjclCipherParams](x: Self) {
+    
+    inline def setAdata(value: String): Self = StObject.set(x, "adata", value.asInstanceOf[js.Any])
+    
+    inline def setAdataUndefined: Self = StObject.set(x, "adata", js.undefined)
+    
+    inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
+    
+    inline def setCipherUndefined: Self = StObject.set(x, "cipher", js.undefined)
+    
+    inline def setIter(value: Double): Self = StObject.set(x, "iter", value.asInstanceOf[js.Any])
+    
+    inline def setIterUndefined: Self = StObject.set(x, "iter", js.undefined)
+    
+    inline def setKs(value: Double): Self = StObject.set(x, "ks", value.asInstanceOf[js.Any])
+    
+    inline def setKsUndefined: Self = StObject.set(x, "ks", js.undefined)
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
+    
+    inline def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
+    
+    inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+  }
 }
-

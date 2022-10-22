@@ -1,5 +1,6 @@
 package typingsJapgolly.phaser.Phaser.GameObjects
 
+import typingsJapgolly.phaser.Phaser.Cameras.Scene2D.Camera
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.Alpha
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.BlendMode
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.Depth
@@ -11,15 +12,12 @@ import typingsJapgolly.phaser.Phaser.GameObjects.Components.Texture
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.Tint
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.Transform
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.Visible
-import typingsJapgolly.phaser.Phaser.Scene
-import typingsJapgolly.phaser.Phaser.Textures.Frame
 import typingsJapgolly.phaser.Phaser.Types.GameObjects.BitmapText.BitmapFontData
+import typingsJapgolly.phaser.Phaser.Types.GameObjects.BitmapText.BitmapTextCharacter
 import typingsJapgolly.phaser.Phaser.Types.GameObjects.BitmapText.BitmapTextSize
-import typingsJapgolly.phaser.integer
-import typingsJapgolly.std.XMLDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * BitmapText objects work by taking a texture file and an XML or JSON file that describes the font structure.
@@ -42,10 +40,10 @@ import scala.scalajs.js.annotation._
   * For most use cases it is recommended to use XML. If you wish to use JSON, the formatting should be equal to the result of
   * converting a valid XML file through the popular X2JS library. An online tool for conversion can be found here: {@link http://codebeautify.org/xmltojson|http://codebeautify.org/xmltojson}
   */
-@JSGlobal("Phaser.GameObjects.BitmapText")
 @js.native
-class BitmapText protected ()
-  extends GameObject
+trait BitmapText
+  extends StObject
+     with GameObject
      with Alpha
      with BlendMode
      with Depth
@@ -57,31 +55,7 @@ class BitmapText protected ()
      with Tint
      with Transform
      with Visible {
-  /**
-    * 
-    * @param scene The Scene to which this Game Object belongs. It can only belong to one Scene at any given time.
-    * @param x The x coordinate of this Game Object in world space.
-    * @param y The y coordinate of this Game Object in world space.
-    * @param font The key of the font to use from the Bitmap Font cache.
-    * @param text The string, or array of strings, to be set as the content of this Bitmap Text.
-    * @param size The font size of this Bitmap Text.
-    * @param align The alignment of the text in a multi-line BitmapText object. Default 0.
-    */
-  def this(scene: Scene, x: Double, y: Double, font: String) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: String) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: js.Array[String]) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: js.Array[String], size: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double, align: integer) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    font: String,
-    text: js.Array[String],
-    size: Double,
-    align: integer
-  ) = this()
+  
   /**
     * Controls the alignment of each line of text in this BitmapText object.
     * 
@@ -96,80 +70,80 @@ class BitmapText protected ()
     * 
     * The alignment position is based on the longest line of text.
     */
-  var align: integer = js.native
+  var align: Double = js.native
+  
   /**
-    * The depth of this Game Object within the Scene.
+    * The alpha value of the drop shadow.
     * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
-    * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
-    * 
-    * Setting the depth will queue a depth sort event within the Scene.
+    * You can set this directly, or use `Phaser.GameObjects.BitmapText#setDropShadow`.
     */
-  /* CompleteClass */
-  override var depth: Double = js.native
+  var dropShadowAlpha: Double = js.native
+  
+  /**
+    * The color of the drop shadow.
+    * 
+    * You can set this directly, or use `Phaser.GameObjects.BitmapText#setDropShadow`.
+    */
+  var dropShadowColor: Double = js.native
+  
+  /**
+    * The horizontal offset of the drop shadow.
+    * 
+    * You can set this directly, or use `Phaser.GameObjects.BitmapText#setDropShadow`.
+    */
+  var dropShadowX: Double = js.native
+  
+  /**
+    * The vertical offset of the drop shadow.
+    * 
+    * You can set this directly, or use `Phaser.GameObjects.BitmapText#setDropShadow`.
+    */
+  var dropShadowY: Double = js.native
+  
   /**
     * The key of the Bitmap Font used by this Bitmap Text.
     * To change the font after creation please use `setFont`.
     */
   val font: String = js.native
+  
   /**
     * The data of the Bitmap Font used by this Bitmap Text.
     */
   val fontData: BitmapFontData = js.native
+  
   /**
     * The font size of this Bitmap Text.
     * 
     * You can also use the method `setFontSize` if you want a chainable way to change the font size.
     */
   var fontSize: Double = js.native
+  
   /**
-    * The height of this bitmap text.
+    * Indicates whether the font texture is from an atlas or not.
     */
-  val height: Double = js.native
+  val fromAtlas: Boolean = js.native
+  
   /**
-    * Adds / Removes spacing between characters.
+    * Gets the character located at the given x/y coordinate within this Bitmap Text.
     * 
-    * Can be a negative or positive number.
+    * The coordinates you pass in are translated into the local space of the
+    * Bitmap Text, however, it is up to you to first translate the input coordinates to world space.
     * 
-    * You can also use the method `setLetterSpacing` if you want a chainable way to change the letter spacing.
+    * If you wish to use this in combination with an input event, be sure
+    * to pass in `Pointer.worldX` and `worldY` so they are in world space.
+    * 
+    * In some cases, based on kerning, characters can overlap. When this happens,
+    * the first character in the word is returned.
+    * 
+    * Note that this does not work for DynamicBitmapText if you have changed the
+    * character positions during render. It will only scan characters in their un-translated state.
+    * @param x The x position to check.
+    * @param y The y position to check.
+    * @param camera The Camera which is being tested against. If not given will use the Scene default camera.
     */
-  var letterSpacing: Double = js.native
-  /**
-    * The maximum display width of this BitmapText in pixels.
-    * 
-    * If BitmapText.text is longer than maxWidth then the lines will be automatically wrapped
-    * based on the last whitespace character found in the line.
-    * 
-    * If no whitespace was found then no wrapping will take place and consequently the maxWidth value will not be honored.
-    * 
-    * Disable maxWidth by setting the value to 0.
-    */
-  var maxWidth: Double = js.native
-  /**
-    * The text that this Bitmap Text object displays.
-    * 
-    * You can also use the method `setText` if you want a chainable way to change the text content.
-    */
-  var text: String = js.native
-  /**
-    * The visible state of the Game Object.
-    * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    */
-  /* CompleteClass */
-  override var visible: Boolean = js.native
-  /**
-    * The width of this Bitmap Text.
-    */
-  val width: Double = js.native
-  /**
-    * The character code used to detect for word wrapping.
-    * Defaults to 32 (a space character).
-    */
-  var wordWrapCharCode: Double = js.native
+  def getCharacterAt(x: Double, y: Double): BitmapTextCharacter = js.native
+  def getCharacterAt(x: Double, y: Double, camera: Camera): BitmapTextCharacter = js.native
+  
   /**
     * Calculate the bounds of this Bitmap Text.
     * 
@@ -181,29 +155,124 @@ class BitmapText protected ()
     * Global size takes into account the Game Object's scale, world position and display origin.
     * 
     * Also in the object is data regarding the length of each line, should this be a multi-line BitmapText.
-    * @param round Whether to round the results to the nearest integer.
+    * @param round Whether to round the results up to the nearest integer. Default false.
     */
   def getTextBounds(): BitmapTextSize = js.native
   def getTextBounds(round: Boolean): BitmapTextSize = js.native
+  
+  /**
+    * The height of this bitmap text.
+    */
+  val height: Double = js.native
+  
+  /**
+    * Adds / Removes spacing between characters.
+    * 
+    * Can be a negative or positive number.
+    * 
+    * You can also use the method `setLetterSpacing` if you want a chainable way to change the letter spacing.
+    */
+  var letterSpacing: Double = js.native
+  
+  /**
+    * The maximum display width of this BitmapText in pixels.
+    * 
+    * If BitmapText.text is longer than maxWidth then the lines will be automatically wrapped
+    * based on the last whitespace character found in the line.
+    * 
+    * If no whitespace was found then no wrapping will take place and consequently the maxWidth value will not be honored.
+    * 
+    * Disable maxWidth by setting the value to 0.
+    */
+  var maxWidth: Double = js.native
+  
+  /**
+    * Internal destroy handler, called as part of the destroy process.
+    */
+  /* protected */ def preDestroy(): Unit = js.native
+  
   /**
     * Set the lines of text in this BitmapText to be center-aligned.
     * This only has any effect if this BitmapText contains more than one line of text.
     */
   def setCenterAlign(): this.type = js.native
+  
   /**
-    * The depth of this Game Object within the Scene.
+    * Sets a tint on a range of characters in this Bitmap Text, starting from the `start` parameter index
+    * and running for `length` quantity of characters.
     * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
+    * The `start` parameter can be negative. In this case, it starts at the end of the text and counts
+    * backwards `start` places.
     * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
+    * You can also pass in -1 as the `length` and it will tint all characters from `start`
+    * up until the end of the string.
+    * Remember that spaces and punctuation count as characters.
     * 
-    * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
+    * This is a WebGL only feature and only works with Static Bitmap Text, not Dynamic.
+    * 
+    * The tint works by taking the pixel color values from the Bitmap Text texture, and then
+    * multiplying it by the color value of the tint. You can provide either one color value,
+    * in which case the whole character will be tinted in that color. Or you can provide a color
+    * per corner. The colors are blended together across the extent of the character range.
+    * 
+    * To swap this from being an additive tint to a fill based tint, set the `tintFill` parameter to `true`.
+    * 
+    * To modify the tint color once set, call this method again with new color values.
+    * 
+    * Using `setWordTint` can override tints set by this function, and vice versa.
+    * 
+    * To remove a tint call this method with just the `start`, and optionally, the `length` parameters defined.
+    * @param start The starting character to begin the tint at. If negative, it counts back from the end of the text. Default 0.
+    * @param length The number of characters to tint. Remember that spaces count as a character too. Pass -1 to tint all characters from `start` onwards. Default 1.
+    * @param tintFill Use a fill-based tint (true), or an additive tint (false) Default false.
+    * @param topLeft The tint being applied to the top-left of the character. If not other values are given this value is applied evenly, tinting the whole character. Default 0xffffff.
+    * @param topRight The tint being applied to the top-right of the character.
+    * @param bottomLeft The tint being applied to the bottom-left of the character.
+    * @param bottomRight The tint being applied to the bottom-right of the character.
     */
-  /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  def setCharacterTint(
+    start: js.UndefOr[Double],
+    length: js.UndefOr[Double],
+    tintFill: js.UndefOr[Boolean],
+    topLeft: js.UndefOr[Double],
+    topRight: js.UndefOr[Double],
+    bottomLeft: js.UndefOr[Double],
+    bottomRight: js.UndefOr[Double]
+  ): this.type = js.native
+  
+  /**
+    * Sets a drop shadow effect on this Bitmap Text.
+    * 
+    * This is a WebGL only feature and only works with Static Bitmap Text, not Dynamic.
+    * 
+    * You can set the vertical and horizontal offset of the shadow, as well as the color and alpha.
+    * 
+    * Once a shadow has been enabled you can modify the `dropShadowX` and `dropShadowY` properties of this
+    * Bitmap Text directly to adjust the position of the shadow in real-time.
+    * 
+    * If you wish to clear the shadow, call this method with no parameters specified.
+    * @param x The horizontal offset of the drop shadow. Default 0.
+    * @param y The vertical offset of the drop shadow. Default 0.
+    * @param color The color of the drop shadow, given as a hex value, i.e. `0x000000` for black. Default 0x000000.
+    * @param alpha The alpha of the drop shadow, given as a float between 0 and 1. This is combined with the Bitmap Text alpha as well. Default 0.5.
+    */
+  def setDropShadow(): this.type = js.native
+  def setDropShadow(x: Double): this.type = js.native
+  def setDropShadow(x: Double, y: Double): this.type = js.native
+  def setDropShadow(x: Double, y: Double, color: Double): this.type = js.native
+  def setDropShadow(x: Double, y: Double, color: Double, alpha: Double): this.type = js.native
+  def setDropShadow(x: Double, y: Double, color: Unit, alpha: Double): this.type = js.native
+  def setDropShadow(x: Double, y: Unit, color: Double): this.type = js.native
+  def setDropShadow(x: Double, y: Unit, color: Double, alpha: Double): this.type = js.native
+  def setDropShadow(x: Double, y: Unit, color: Unit, alpha: Double): this.type = js.native
+  def setDropShadow(x: Unit, y: Double): this.type = js.native
+  def setDropShadow(x: Unit, y: Double, color: Double): this.type = js.native
+  def setDropShadow(x: Unit, y: Double, color: Double, alpha: Double): this.type = js.native
+  def setDropShadow(x: Unit, y: Double, color: Unit, alpha: Double): this.type = js.native
+  def setDropShadow(x: Unit, y: Unit, color: Double): this.type = js.native
+  def setDropShadow(x: Unit, y: Unit, color: Double, alpha: Double): this.type = js.native
+  def setDropShadow(x: Unit, y: Unit, color: Unit, alpha: Double): this.type = js.native
+  
   /**
     * Changes the font this BitmapText is using to render.
     * 
@@ -215,17 +284,21 @@ class BitmapText protected ()
     */
   def setFont(font: String): this.type = js.native
   def setFont(font: String, size: Double): this.type = js.native
-  def setFont(font: String, size: Double, align: integer): this.type = js.native
+  def setFont(font: String, size: Double, align: Double): this.type = js.native
+  def setFont(font: String, size: Unit, align: Double): this.type = js.native
+  
   /**
     * Set the font size of this Bitmap Text.
     * @param size The font size to set.
     */
   def setFontSize(size: Double): this.type = js.native
+  
   /**
     * Set the lines of text in this BitmapText to be left-aligned.
     * This only has any effect if this BitmapText contains more than one line of text.
     */
   def setLeftAlign(): this.type = js.native
+  
   /**
     * Sets the letter spacing between each character of this Bitmap Text.
     * Can be a positive value to increase the space, or negative to reduce it.
@@ -234,6 +307,7 @@ class BitmapText protected ()
     */
   def setLetterSpacing(): this.type = js.native
   def setLetterSpacing(spacing: Double): this.type = js.native
+  
   /**
     * Sets the maximum display width of this BitmapText in pixels.
     * 
@@ -250,11 +324,13 @@ class BitmapText protected ()
     */
   def setMaxWidth(value: Double): this.type = js.native
   def setMaxWidth(value: Double, wordWrapCharCode: Double): this.type = js.native
+  
   /**
     * Set the lines of text in this BitmapText to be right-aligned.
     * This only has any effect if this BitmapText contains more than one line of text.
     */
   def setRightAlign(): this.type = js.native
+  
   /**
     * Set the textual content of this BitmapText.
     * 
@@ -263,72 +339,66 @@ class BitmapText protected ()
     */
   def setText(value: String): this.type = js.native
   def setText(value: js.Array[String]): this.type = js.native
+  
   /**
-    * Sets the visibility of this Game Object.
+    * Sets a tint on a matching word within this Bitmap Text.
     * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    * @param value The visible state of the Game Object.
-    */
-  /* CompleteClass */
-  override def setVisible(value: Boolean): this.type = js.native
-}
-
-/* static members */
-@JSGlobal("Phaser.GameObjects.BitmapText")
-@js.native
-object BitmapText extends js.Object {
-  /**
-    * Center align the text characters in a multi-line BitmapText object.
-    */
-  var ALIGN_CENTER: integer = js.native
-  /**
-    * Left align the text characters in a multi-line BitmapText object.
-    */
-  var ALIGN_LEFT: integer = js.native
-  /**
-    * Right align the text characters in a multi-line BitmapText object.
-    */
-  var ALIGN_RIGHT: integer = js.native
-  /**
-    * Parse an XML Bitmap Font from an Atlas.
+    * The `word` parameter can be either a string or a number.
     * 
-    * Adds the parsed Bitmap Font data to the cache with the `fontName` key.
-    * @param scene The Scene to parse the Bitmap Font for.
-    * @param fontName The key of the font to add to the Bitmap Font cache.
-    * @param textureKey The key of the BitmapFont's texture.
-    * @param frameKey The key of the BitmapFont texture's frame.
-    * @param xmlKey The key of the XML data of the font to parse.
-    * @param xSpacing The x-axis spacing to add between each letter.
-    * @param ySpacing The y-axis spacing to add to the line height.
+    * If a string, it will run a string comparison against the text contents, and if matching,
+    * it will tint the whole word.
+    * 
+    * If a number, if till that word, based on its offset within the text contents.
+    * 
+    * The `count` parameter controls how many words are replaced. Pass in -1 to replace them all.
+    * 
+    * This parameter is ignored if you pass a number as the `word` to be searched for.
+    * 
+    * This is a WebGL only feature and only works with Static Bitmap Text, not Dynamic.
+    * 
+    * The tint works by taking the pixel color values from the Bitmap Text texture, and then
+    * multiplying it by the color value of the tint. You can provide either one color value,
+    * in which case the whole character will be tinted in that color. Or you can provide a color
+    * per corner. The colors are blended together across the extent of the character range.
+    * 
+    * To swap this from being an additive tint to a fill based tint, set the `tintFill` parameter to `true`.
+    * 
+    * To modify the tint color once set, call this method again with new color values.
+    * 
+    * Using `setCharacterTint` can override tints set by this function, and vice versa.
+    * @param word The word to search for. Either a string, or an index of the word in the words array.
+    * @param count The number of matching words to tint. Pass -1 to tint all matching words. Default 1.
+    * @param tintFill Use a fill-based tint (true), or an additive tint (false) Default false.
+    * @param topLeft The tint being applied to the top-left of the word. If not other values are given this value is applied evenly, tinting the whole word. Default 0xffffff.
+    * @param topRight The tint being applied to the top-right of the word.
+    * @param bottomLeft The tint being applied to the bottom-left of the word.
+    * @param bottomRight The tint being applied to the bottom-right of the word.
     */
-  def ParseFromAtlas(scene: Scene, fontName: String, textureKey: String, frameKey: String, xmlKey: String): Boolean = js.native
-  def ParseFromAtlas(
-    scene: Scene,
-    fontName: String,
-    textureKey: String,
-    frameKey: String,
-    xmlKey: String,
-    xSpacing: integer
-  ): Boolean = js.native
-  def ParseFromAtlas(
-    scene: Scene,
-    fontName: String,
-    textureKey: String,
-    frameKey: String,
-    xmlKey: String,
-    xSpacing: integer,
-    ySpacing: integer
-  ): Boolean = js.native
+  def setWordTint(
+    word: String | Double,
+    count: js.UndefOr[Double],
+    tintFill: js.UndefOr[Boolean],
+    topLeft: js.UndefOr[Double],
+    topRight: js.UndefOr[Double],
+    bottomLeft: js.UndefOr[Double],
+    bottomRight: js.UndefOr[Double]
+  ): this.type = js.native
+  
   /**
-    * Parse an XML font to Bitmap Font data for the Bitmap Font cache.
-    * @param xml The XML Document to parse the font from.
-    * @param xSpacing The x-axis spacing to add between each letter. Default 0.
-    * @param ySpacing The y-axis spacing to add to the line height. Default 0.
-    * @param frame The texture frame to take into account while parsing.
+    * The text that this Bitmap Text object displays.
+    * 
+    * You can also use the method `setText` if you want a chainable way to change the text content.
     */
-  def ParseXMLBitmapFont(xml: XMLDocument): BitmapFontData = js.native
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer): BitmapFontData = js.native
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer): BitmapFontData = js.native
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer, frame: Frame): BitmapFontData = js.native
+  var text: String = js.native
+  
+  /**
+    * The width of this Bitmap Text.
+    */
+  val width: Double = js.native
+  
+  /**
+    * The character code used to detect for word wrapping.
+    * Defaults to 32 (a space character).
+    */
+  var wordWrapCharCode: Double = js.native
 }
-

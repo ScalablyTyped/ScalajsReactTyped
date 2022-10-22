@@ -1,15 +1,15 @@
 package typingsJapgolly.sipJs.mod.Core
 
-import typingsJapgolly.sipJs.coreTransportMod.Transport
-import typingsJapgolly.sipJs.transactionUserMod.ServerTransactionUser
+import typingsJapgolly.sipJs.libCoreTransactionsTransactionUserMod.ServerTransactionUser
+import typingsJapgolly.sipJs.libCoreTransportMod.Transport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.InviteServerTransaction")
 @js.native
-class InviteServerTransaction protected ()
-  extends typingsJapgolly.sipJs.coreMod.InviteServerTransaction {
+open class InviteServerTransaction protected ()
+  extends typingsJapgolly.sipJs.libCoreMod.InviteServerTransaction {
   /**
     * Constructor.
     * Upon construction, a "100 Trying" reply will be immediately sent.
@@ -21,9 +21,8 @@ class InviteServerTransaction protected ()
     * @param user - The transaction user.
     */
   def this(
-    request: typingsJapgolly.sipJs.messagesMod.IncomingRequestMessage,
+    request: typingsJapgolly.sipJs.libCoreMessagesMod.IncomingRequestMessage,
     transport: Transport,
     user: ServerTransactionUser
   ) = this()
 }
-

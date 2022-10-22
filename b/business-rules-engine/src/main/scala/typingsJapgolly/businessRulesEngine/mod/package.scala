@@ -1,15 +1,15 @@
-package typingsJapgolly.businessRulesEngine
+package typingsJapgolly.businessRulesEngine.mod
 
+import typingsJapgolly.q.mod.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type IAsyncValidate = js.Function1[
-    /* args */ typingsJapgolly.businessRulesEngine.mod.IError, 
-    typingsJapgolly.q.mod.Promise[js.Any]
-  ]
-  type IErrorCustomMessage = js.Function2[/* config */ js.Any, /* args */ js.Any, java.lang.String]
-  type IOptional = js.Function0[scala.Boolean]
-  type IValidate = js.Function1[/* args */ typingsJapgolly.businessRulesEngine.mod.IError, scala.Unit]
-}
+
+type IAsyncValidate = js.Function1[/* args */ IError, Promise[Any]]
+
+type IErrorCustomMessage = js.Function2[/* config */ Any, /* args */ Any, String]
+
+type IOptional = js.Function0[Boolean]
+
+type IValidate = js.Function1[/* args */ IError, Unit]

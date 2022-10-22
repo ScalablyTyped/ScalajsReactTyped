@@ -1,28 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookChartGridlines extends Entity {
+trait WorkbookChartGridlines
+  extends StObject
+     with Entity {
+  
   // Represents the formatting of chart gridlines. Read-only.
-  var format: js.UndefOr[WorkbookChartGridlinesFormat] = js.undefined
+  var format: js.UndefOr[NullableOption[WorkbookChartGridlinesFormat]] = js.undefined
+  
   // Boolean value representing if the axis gridlines are visible or not.
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object WorkbookChartGridlines {
-  @scala.inline
-  def apply(
-    format: WorkbookChartGridlinesFormat = null,
-    id: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): WorkbookChartGridlines = {
+  
+  inline def apply(): WorkbookChartGridlines = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartGridlines]
   }
+  
+  extension [Self <: WorkbookChartGridlines](x: Self) {
+    
+    inline def setFormat(value: NullableOption[WorkbookChartGridlinesFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatNull: Self = StObject.set(x, "format", null)
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

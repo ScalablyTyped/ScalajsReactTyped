@@ -1,11 +1,10 @@
 package typingsJapgolly.xmldsigjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs", "RsaPssWithoutParamsSha1")
 @js.native
-class RsaPssWithoutParamsSha1 ()
-  extends typingsJapgolly.xmldsigjs.algorithmsMod.RsaPssWithoutParamsSha1
-
+open class RsaPssWithoutParamsSha1 ()
+  extends typingsJapgolly.xmldsigjs.buildTypesAlgorithmsMod.RsaPssWithoutParamsSha1

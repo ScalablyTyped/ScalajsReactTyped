@@ -1,43 +1,37 @@
 package typingsJapgolly.googleMapsReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.googleMapsReact.mod.InfoWindowProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.googleMapsReact.mod.IInfoWindowProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This component has complicated props, you'll have to assemble `props` yourself using js.Dynamic.literal(...) or similar. */
 object InfoWindow {
-  def apply[P /* <: InfoWindowProps */, S](
-    props: P with js.Object,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    P with js.Object, 
-    typingsJapgolly.googleMapsReact.mod.InfoWindow[P, S], 
-    Unit, 
-    P with js.Object
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      js.Dynamic.global.Object.assign(__obj, props)
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  P with js.Object, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.googleMapsReact.mod.InfoWindow[P, S]](this.componentImport)
-    f(__obj.asInstanceOf[P with js.Object])(children: _*)
+  inline def apply(
+    google: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google */ Any,
+    map: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any,
+    marker: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Marker */ Any
+  ): Builder = {
+    val __props = js.Dynamic.literal(google = google.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IInfoWindowProps]))
   }
+  
   @JSImport("google-maps-react", "InfoWindow")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.googleMapsReact.mod.InfoWindow] {
+    
+    inline def mapCenter(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLng */ Any
+    ): this.type = set("mapCenter", value.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IInfoWindowProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

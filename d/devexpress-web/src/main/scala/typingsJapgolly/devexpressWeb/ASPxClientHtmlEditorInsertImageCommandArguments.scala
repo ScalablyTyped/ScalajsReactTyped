@@ -1,40 +1,65 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings related to the ASPxClientCommandConsts.INSERTIMAGE_COMMAND command parameter.
   */
-@JSGlobal("ASPxClientHtmlEditorInsertImageCommandArguments")
-@js.native
-class ASPxClientHtmlEditorInsertImageCommandArguments protected () extends ASPxClientHtmlEditorCommandArguments {
-  /**
-    * Initializes a new instance of the ASPxClientHtmlEditorInsertImageCommandArguments class.
-    * @param htmlEditor An HTML editor in which you want to insert an element.
-    * @param elementToReplace An object containing the currently selected element in the HTML editor. This element will be replaced with the inserted image.
-    */
-  def this(htmlEditor: ASPxClientHtmlEditor, elementToReplace: js.Any) = this()
+trait ASPxClientHtmlEditorInsertImageCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorCommandArguments {
+  
   /**
     * Determines the position of the target image.
     */
-  var align: String = js.native
+  var align: String
+  
   /**
     * Creates an alternate text for the target image.
     */
-  var alt: String = js.native
+  var alt: String
+  
   /**
     * Specifies the source of the target image.
     */
-  var src: String = js.native
+  var src: String
+  
   /**
     * Contains the style settings specifying the appearance of the target image.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
+  
   /**
     * Determines if the target image is wrapped with text.
     */
-  var useFloat: Boolean = js.native
+  var useFloat: Boolean
 }
-
+object ASPxClientHtmlEditorInsertImageCommandArguments {
+  
+  inline def apply(
+    align: String,
+    alt: String,
+    selectedElement: Any,
+    src: String,
+    styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
+    useFloat: Boolean
+  ): ASPxClientHtmlEditorInsertImageCommandArguments = {
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], alt = alt.asInstanceOf[js.Any], selectedElement = selectedElement.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], styleSettings = styleSettings.asInstanceOf[js.Any], useFloat = useFloat.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientHtmlEditorInsertImageCommandArguments]
+  }
+  
+  extension [Self <: ASPxClientHtmlEditorInsertImageCommandArguments](x: Self) {
+    
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    
+    inline def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
+    
+    inline def setUseFloat(value: Boolean): Self = StObject.set(x, "useFloat", value.asInstanceOf[js.Any])
+  }
+}

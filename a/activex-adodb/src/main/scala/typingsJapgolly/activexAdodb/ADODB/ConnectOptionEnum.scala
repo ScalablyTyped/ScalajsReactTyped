@@ -1,23 +1,19 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`16`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`16`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`16`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`16`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
 */
-trait ConnectOptionEnum extends js.Object
-
+trait ConnectOptionEnum extends StObject
 object ConnectOptionEnum {
-  @scala.inline
-  def adAsyncConnect: `16` = this.cast(16)
-  @scala.inline
-  def adConnectUnspecified: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adAsyncConnect: `16` = 16.asInstanceOf[`16`]
+  
+  inline def adConnectUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }
-

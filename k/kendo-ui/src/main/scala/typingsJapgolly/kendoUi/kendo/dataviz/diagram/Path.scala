@@ -1,19 +1,22 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.diagram
 
-import typingsJapgolly.kendoUi.kendo.Observable_
+import typingsJapgolly.kendoUi.kendo.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.dataviz.diagram.Path")
 @js.native
-class Path () extends Observable_ {
-  def this(options: PathOptions) = this()
-  var drawingElement: typingsJapgolly.kendoUi.kendo.drawing.Path = js.native
-  var options: PathOptions = js.native
+trait Path
+  extends StObject
+     with Observable {
+  
   def data(): String = js.native
   def data(path: String): Unit = js.native
+  
+  var drawingElement: typingsJapgolly.kendoUi.kendo.drawing.Path = js.native
+  
+  var options: PathOptions = js.native
+  
   def visible(): Boolean = js.native
   def visible(visible: Boolean): Unit = js.native
 }
-

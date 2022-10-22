@@ -1,29 +1,27 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ActionOnCellCheckboxCheck extends js.Object
-
+sealed trait ActionOnCellCheckboxCheck extends StObject
 @JSImport("azdata", "ActionOnCellCheckboxCheck")
 @js.native
-object ActionOnCellCheckboxCheck extends js.Object {
-  @js.native
-  sealed trait customAction extends ActionOnCellCheckboxCheck
-  
-  @js.native
-  sealed trait selectRow extends ActionOnCellCheckboxCheck
+object ActionOnCellCheckboxCheck extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ActionOnCellCheckboxCheck with Double] = js.native
-  /* 1 */ @js.native
-  object customAction extends TopLevel[customAction with Double]
+  def apply(value: Double): js.UndefOr[ActionOnCellCheckboxCheck & Double] = js.native
   
-  /* 0 */ @js.native
-  object selectRow extends TopLevel[selectRow with Double]
+  @js.native
+  sealed trait customAction
+    extends StObject
+       with ActionOnCellCheckboxCheck
+  /* 1 */ val customAction: typingsJapgolly.azdata.mod.ActionOnCellCheckboxCheck.customAction & Double = js.native
   
+  @js.native
+  sealed trait selectRow
+    extends StObject
+       with ActionOnCellCheckboxCheck
+  /* 0 */ val selectRow: typingsJapgolly.azdata.mod.ActionOnCellCheckboxCheck.selectRow & Double = js.native
 }
-

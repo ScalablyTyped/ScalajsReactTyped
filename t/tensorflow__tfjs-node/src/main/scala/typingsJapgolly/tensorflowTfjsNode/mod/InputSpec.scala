@@ -1,14 +1,13 @@
 package typingsJapgolly.tensorflowTfjsNode.mod
 
-import typingsJapgolly.tensorflowTfjsLayers.topologyMod.InputSpecArgs
+import typingsJapgolly.tensorflowTfjsLayers.distEngineTopologyMod.InputSpecArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node", "InputSpec")
 @js.native
-class InputSpec protected ()
+open class InputSpec protected ()
   extends typingsJapgolly.tensorflowTfjs.mod.InputSpec {
   def this(args: InputSpecArgs) = this()
 }
-

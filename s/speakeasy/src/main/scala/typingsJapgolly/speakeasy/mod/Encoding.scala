@@ -1,8 +1,8 @@
 package typingsJapgolly.speakeasy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.speakeasy.speakeasyStrings.ascii
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.speakeasy.speakeasyStrings.base32
   - typingsJapgolly.speakeasy.speakeasyStrings.base64
 */
-trait Encoding extends js.Object
-
+trait Encoding extends StObject
 object Encoding {
-  @scala.inline
-  def ascii: typingsJapgolly.speakeasy.speakeasyStrings.ascii = this.cast("ascii")
-  @scala.inline
-  def base32: typingsJapgolly.speakeasy.speakeasyStrings.base32 = this.cast("base32")
-  @scala.inline
-  def base64: typingsJapgolly.speakeasy.speakeasyStrings.base64 = this.cast("base64")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def hex: typingsJapgolly.speakeasy.speakeasyStrings.hex = this.cast("hex")
+  
+  inline def ascii: typingsJapgolly.speakeasy.speakeasyStrings.ascii = "ascii".asInstanceOf[typingsJapgolly.speakeasy.speakeasyStrings.ascii]
+  
+  inline def base32: typingsJapgolly.speakeasy.speakeasyStrings.base32 = "base32".asInstanceOf[typingsJapgolly.speakeasy.speakeasyStrings.base32]
+  
+  inline def base64: typingsJapgolly.speakeasy.speakeasyStrings.base64 = "base64".asInstanceOf[typingsJapgolly.speakeasy.speakeasyStrings.base64]
+  
+  inline def hex: typingsJapgolly.speakeasy.speakeasyStrings.hex = "hex".asInstanceOf[typingsJapgolly.speakeasy.speakeasyStrings.hex]
 }
-

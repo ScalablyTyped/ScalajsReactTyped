@@ -1,98 +1,133 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartMarkerStyle extends js.Object
-
+sealed trait ChartMarkerStyle extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartMarkerStyle")
 @js.native
-object ChartMarkerStyle extends js.Object {
+object ChartMarkerStyle extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait automatic extends ChartMarkerStyle
+  sealed trait automatic
+    extends StObject
+       with ChartMarkerStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait circle extends ChartMarkerStyle
+  sealed trait circle
+    extends StObject
+       with ChartMarkerStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait dash extends ChartMarkerStyle
+  sealed trait dash
+    extends StObject
+       with ChartMarkerStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait diamond extends ChartMarkerStyle
+  sealed trait diamond
+    extends StObject
+       with ChartMarkerStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait dot extends ChartMarkerStyle
+  sealed trait dot
+    extends StObject
+       with ChartMarkerStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait invalid extends ChartMarkerStyle
+  sealed trait invalid
+    extends StObject
+       with ChartMarkerStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait none extends ChartMarkerStyle
+  sealed trait none
+    extends StObject
+       with ChartMarkerStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait picture extends ChartMarkerStyle
+  sealed trait picture
+    extends StObject
+       with ChartMarkerStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait plus extends ChartMarkerStyle
+  sealed trait plus
+    extends StObject
+       with ChartMarkerStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait square extends ChartMarkerStyle
+  sealed trait square
+    extends StObject
+       with ChartMarkerStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait star extends ChartMarkerStyle
+  sealed trait star
+    extends StObject
+       with ChartMarkerStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait triangle extends ChartMarkerStyle
+  sealed trait triangle
+    extends StObject
+       with ChartMarkerStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait x extends ChartMarkerStyle
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartMarkerStyle with String] = js.native
-  /* "Automatic" */ @js.native
-  object automatic extends TopLevel[automatic with String]
-  
-  /* "Circle" */ @js.native
-  object circle extends TopLevel[circle with String]
-  
-  /* "Dash" */ @js.native
-  object dash extends TopLevel[dash with String]
-  
-  /* "Diamond" */ @js.native
-  object diamond extends TopLevel[diamond with String]
-  
-  /* "Dot" */ @js.native
-  object dot extends TopLevel[dot with String]
-  
-  /* "Invalid" */ @js.native
-  object invalid extends TopLevel[invalid with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "Picture" */ @js.native
-  object picture extends TopLevel[picture with String]
-  
-  /* "Plus" */ @js.native
-  object plus extends TopLevel[plus with String]
-  
-  /* "Square" */ @js.native
-  object square extends TopLevel[square with String]
-  
-  /* "Star" */ @js.native
-  object star extends TopLevel[star with String]
-  
-  /* "Triangle" */ @js.native
-  object triangle extends TopLevel[triangle with String]
-  
-  /* "X" */ @js.native
-  object x extends TopLevel[x with String]
-  
+  sealed trait x
+    extends StObject
+       with ChartMarkerStyle
 }
-

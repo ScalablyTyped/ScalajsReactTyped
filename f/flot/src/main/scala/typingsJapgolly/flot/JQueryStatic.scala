@@ -1,19 +1,30 @@
 package typingsJapgolly.flot
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.flot.jquery.flot.dataSeries
 import typingsJapgolly.flot.jquery.flot.plotOptions
 import typingsJapgolly.flot.jquery.flot.plotStatic
-import typingsJapgolly.jquery.JQuery_
+import typingsJapgolly.jquery.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
+  
+  def plot(placeholder: JQuery[HTMLElement], data: js.Array[Any | dataSeries]): typingsJapgolly.flot.jquery.flot.plot
+  def plot(placeholder: JQuery[HTMLElement], data: js.Array[Any | dataSeries], options: plotOptions): typingsJapgolly.flot.jquery.flot.plot
   @JSName("plot")
-  var plot_Original: plotStatic = js.native
-  def plot(placeholder: JQuery_[HTMLElement], data: js.Array[_ | dataSeries]): typingsJapgolly.flot.jquery.flot.plot = js.native
-  def plot(placeholder: JQuery_[HTMLElement], data: js.Array[_ | dataSeries], options: plotOptions): typingsJapgolly.flot.jquery.flot.plot = js.native
+  var plot_Original: plotStatic
 }
-
+object JQueryStatic {
+  
+  inline def apply(plot: plotStatic): JQueryStatic = {
+    val __obj = js.Dynamic.literal(plot = plot.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQueryStatic]
+  }
+  
+  extension [Self <: JQueryStatic](x: Self) {
+    
+    inline def setPlot(value: plotStatic): Self = StObject.set(x, "plot", value.asInstanceOf[js.Any])
+  }
+}

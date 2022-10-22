@@ -1,16 +1,23 @@
 package typingsJapgolly.awsSdkMiddlewareOperationLogging
 
-import typingsJapgolly.awsSdkTypes.middlewareMod.Handler
-import typingsJapgolly.awsSdkTypes.middlewareMod.HandlerArguments
-import typingsJapgolly.awsSdkTypes.middlewareMod.HandlerExecutionContext
-import typingsJapgolly.awsSdkTypes.responseMod.MetadataBearer
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.Handler
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.HandlerExecutionContext
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/middleware-operation-logging", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def logOperationInfoMiddleware[Input /* <: js.Object */, Output /* <: MetadataBearer */](next: Handler[Input, Output], hasLoggerModel: HandlerExecutionContext): js.Function1[/* args */ HandlerArguments[Input], js.Promise[Output]] = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/middleware-operation-logging", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def logOperationInfoMiddleware[Input /* <: js.Object */, Output /* <: MetadataBearer */](next: Handler[Input, Output], hasLoggerModel: HandlerExecutionContext): js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HandlerArguments<Input> */ /* args */ Any, 
+    js.Promise[Output]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("logOperationInfoMiddleware")(next.asInstanceOf[js.Any], hasLoggerModel.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HandlerArguments<Input> */ /* args */ Any, 
+    js.Promise[Output]
+  ]]
 }
-

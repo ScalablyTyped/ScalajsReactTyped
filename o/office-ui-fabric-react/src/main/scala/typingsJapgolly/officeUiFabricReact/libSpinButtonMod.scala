@@ -1,36 +1,45 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.spinButtonSpinButtonMod.DefaultProps
-import typingsJapgolly.officeUiFabricReact.spinButtonTypesMod.ISpinButtonProps
+import typingsJapgolly.officeUiFabricReact.libComponentsSpinButtonSpinButtonDottypesMod.ISpinButtonProps
+import typingsJapgolly.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.DefaultProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/SpinButton", JSImport.Namespace)
-@js.native
-object libSpinButtonMod extends js.Object {
-  @js.native
-  class SpinButton protected ()
-    extends typingsJapgolly.officeUiFabricReact.spinButtonMod.SpinButton {
-    def this(props: ISpinButtonProps) = this()
-  }
+object libSpinButtonMod {
   
+  @JSImport("office-ui-fabric-react/lib/SpinButton", "KeyboardSpinDirection")
   @js.native
-  object KeyboardSpinDirection extends js.Object {
-    /* -1 */ val down: typingsJapgolly.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.down with Double = js.native
-    /* 0 */ val notSpinning: typingsJapgolly.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.notSpinning with Double = js.native
-    /* 1 */ val up: typingsJapgolly.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.up with Double = js.native
+  object KeyboardSpinDirection extends StObject {
+    
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typingsJapgolly.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection with Double
+        typingsJapgolly.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection & Double
       ] = js.native
+    
+    /* -1 */ val down: typingsJapgolly.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection.down & Double = js.native
+    
+    /* 0 */ val notSpinning: typingsJapgolly.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection.notSpinning & Double = js.native
+    
+    /* 1 */ val up: typingsJapgolly.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.KeyboardSpinDirection.up & Double = js.native
   }
   
-  /* static members */
+  @JSImport("office-ui-fabric-react/lib/SpinButton", "SpinButton")
   @js.native
-  object SpinButton extends js.Object {
-    var defaultProps: DefaultProps = js.native
+  open class SpinButton protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsSpinButtonMod.SpinButton {
+    def this(props: ISpinButtonProps) = this()
   }
-  
+  /* static members */
+  object SpinButton {
+    
+    @JSImport("office-ui-fabric-react/lib/SpinButton", "SpinButton")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/SpinButton", "SpinButton.defaultProps")
+    @js.native
+    def defaultProps: DefaultProps = js.native
+    inline def defaultProps_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
 }
-

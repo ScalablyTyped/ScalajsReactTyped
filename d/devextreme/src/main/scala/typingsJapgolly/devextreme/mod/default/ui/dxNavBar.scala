@@ -1,19 +1,13 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxNavBar.ItemLike
 import typingsJapgolly.devextreme.mod.DevExpress.ui.dxNavBarOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxNavBar")
+@JSImport("devextreme", "default.ui.dxNavBar")
 @js.native
-class dxNavBar protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxNavBarOptions) = this()
-  def this(element: Element, options: dxNavBarOptions) = this()
-}
-
+open class dxNavBar[TItem /* <: ItemLike */, TKey] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget[dxNavBarOptions[TItem, TKey], TItem, TKey]

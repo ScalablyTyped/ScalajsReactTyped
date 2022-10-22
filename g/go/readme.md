@@ -10,10 +10,10 @@ Create and use boilerplates with ease
 | ------------------ | :-------------: |
 | Full name          | go |
 | Keywords           | boilerplate, automation, template, generator, scaffold, cli |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 7726 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1532.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/gocli/go#readme)

@@ -1,20 +1,44 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides error information. */
-@JSGlobal("Windows.Devices.PointOfService.UnifiedPosErrorData")
-@js.native
-abstract class UnifiedPosErrorData () extends js.Object {
+trait UnifiedPosErrorData extends StObject {
+  
   /** Gets the vendor specific error information. */
-  var extendedReason: Double = js.native
+  var extendedReason: Double
+  
   /** Gets the error message. */
-  var message: String = js.native
+  var message: String
+  
   /** Gets the cause of the error. */
-  var reason: UnifiedPosErrorReason = js.native
+  var reason: UnifiedPosErrorReason
+  
   /** Gets the error severity. */
-  var severity: UnifiedPosErrorSeverity = js.native
+  var severity: UnifiedPosErrorSeverity
 }
-
+object UnifiedPosErrorData {
+  
+  inline def apply(
+    extendedReason: Double,
+    message: String,
+    reason: UnifiedPosErrorReason,
+    severity: UnifiedPosErrorSeverity
+  ): UnifiedPosErrorData = {
+    val __obj = js.Dynamic.literal(extendedReason = extendedReason.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UnifiedPosErrorData]
+  }
+  
+  extension [Self <: UnifiedPosErrorData](x: Self) {
+    
+    inline def setExtendedReason(value: Double): Self = StObject.set(x, "extendedReason", value.asInstanceOf[js.Any])
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setReason(value: UnifiedPosErrorReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setSeverity(value: UnifiedPosErrorSeverity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+  }
+}

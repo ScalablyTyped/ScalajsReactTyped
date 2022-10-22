@@ -1,18 +1,17 @@
 organization := "org.scalablytyped.japgolly"
 name := "tensorflow__tfjs"
-version := "1.5.2-ffb8a9"
-scalaVersion := "2.13.1"
+version := "4.0.0-ecbb23"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "tensorflow__tfjs-converter" % "1.5.2-eed3fb",
-  "org.scalablytyped.japgolly" %%% "tensorflow__tfjs-core" % "1.5.2-cd6954",
-  "org.scalablytyped.japgolly" %%% "tensorflow__tfjs-data" % "1.5.2-ba6aa0",
-  "org.scalablytyped.japgolly" %%% "tensorflow__tfjs-layers" % "1.5.2-29660e")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "tensorflow__tfjs-converter" % "4.0.0-0a57ca",
+  "org.scalablytyped.japgolly" %%% "tensorflow__tfjs-core" % "4.0.0-0b22e8",
+  "org.scalablytyped.japgolly" %%% "tensorflow__tfjs-data" % "4.0.0-116ea6",
+  "org.scalablytyped.japgolly" %%% "tensorflow__tfjs-layers" % "4.0.0-9fd875",
+  "org.scalablytyped.japgolly" %%% "webgpu__types" % "0.1.22-626028")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

@@ -1,23 +1,36 @@
 package typingsJapgolly.cssSelectorTokenizer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseNode extends js.Object {
+trait BaseNode extends StObject {
+  
   var after: js.UndefOr[String] = js.undefined
+  
   var before: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object BaseNode {
-  @scala.inline
-  def apply(after: String = null, before: String = null, name: String = null): BaseNode = {
+  
+  inline def apply(): BaseNode = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseNode]
   }
+  
+  extension [Self <: BaseNode](x: Self) {
+    
+    inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    
+    inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

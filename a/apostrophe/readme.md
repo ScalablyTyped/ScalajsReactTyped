@@ -9,11 +9,11 @@ The Apostrophe Content Management System.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | apostrophe |
-| Keywords           | apostrophe, apostrophe-cms, apostrophecms, cms, content management, content management system, punkave |
-| # releases         | 104 |
-| # dependents       | 3 |
-| # downloads        | 131675 |
-| # stars            | 5 |
+| Keywords           | apostrophe, apostrophe-cms, apostrophecms, cms, node cms, headless cms, content management system |
+| # releases         | 107 |
+| # dependents       | 0.0 |
+| # downloads        | 12693.666666666666 |
+| # stars            | 3906.0 |
 
 ## Links
 - [Homepage](https://github.com/apostrophecms/apostrophe#readme)

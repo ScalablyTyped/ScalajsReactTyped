@@ -1,40 +1,93 @@
 package typingsJapgolly.openapiTypes.mod.OpenAPIV3
 
+import typingsJapgolly.openapiTypes.mod.OpenAPI._Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Document
-  extends typingsJapgolly.openapiTypes.mod.OpenAPI.Document {
+trait Document[T /* <: js.Object */]
+  extends StObject
+     with _Document[T] {
+  
   var components: js.UndefOr[ComponentsObject] = js.undefined
+  
   var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.undefined
+  
   var info: InfoObject
+  
   var openapi: String
-  var paths: PathsObject
+  
+  var paths: PathsObject[T, js.Object]
+  
   var security: js.UndefOr[js.Array[SecurityRequirementObject]] = js.undefined
+  
   var servers: js.UndefOr[js.Array[ServerObject]] = js.undefined
+  
   var tags: js.UndefOr[js.Array[TagObject]] = js.undefined
+  
+  var `x-express-openapi-additional-middleware`: js.UndefOr[
+    js.Array[
+      js.Function3[/* request */ Any, /* response */ Any, /* next */ Any, js.Promise[Unit] | Unit]
+    ]
+  ] = js.undefined
+  
+  var `x-express-openapi-validation-strict`: js.UndefOr[Boolean] = js.undefined
 }
-
 object Document {
-  @scala.inline
-  def apply(
-    info: InfoObject,
-    openapi: String,
-    paths: PathsObject,
-    components: ComponentsObject = null,
-    externalDocs: ExternalDocumentationObject = null,
-    security: js.Array[SecurityRequirementObject] = null,
-    servers: js.Array[ServerObject] = null,
-    tags: js.Array[TagObject] = null
-  ): Document = {
+  
+  inline def apply[T /* <: js.Object */](info: InfoObject, openapi: String, paths: PathsObject[T, js.Object]): Document[T] = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], openapi = openapi.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (externalDocs != null) __obj.updateDynamic("externalDocs")(externalDocs.asInstanceOf[js.Any])
-    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
-    if (servers != null) __obj.updateDynamic("servers")(servers.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Document]
+    __obj.asInstanceOf[Document[T]]
+  }
+  
+  extension [Self <: Document[?], T /* <: js.Object */](x: Self & Document[T]) {
+    
+    inline def setComponents(value: ComponentsObject): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    
+    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    
+    inline def setExternalDocs(value: ExternalDocumentationObject): Self = StObject.set(x, "externalDocs", value.asInstanceOf[js.Any])
+    
+    inline def setExternalDocsUndefined: Self = StObject.set(x, "externalDocs", js.undefined)
+    
+    inline def setInfo(value: InfoObject): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    
+    inline def setOpenapi(value: String): Self = StObject.set(x, "openapi", value.asInstanceOf[js.Any])
+    
+    inline def setPaths(value: PathsObject[T, js.Object]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    
+    inline def setSecurity(value: js.Array[SecurityRequirementObject]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+    
+    inline def setSecurityVarargs(value: SecurityRequirementObject*): Self = StObject.set(x, "security", js.Array(value*))
+    
+    inline def setServers(value: js.Array[ServerObject]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
+    
+    inline def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
+    
+    inline def setServersVarargs(value: ServerObject*): Self = StObject.set(x, "servers", js.Array(value*))
+    
+    inline def setTags(value: js.Array[TagObject]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: TagObject*): Self = StObject.set(x, "tags", js.Array(value*))
+    
+    inline def `setX-express-openapi-additional-middleware`(
+      value: js.Array[
+          js.Function3[/* request */ Any, /* response */ Any, /* next */ Any, js.Promise[Unit] | Unit]
+        ]
+    ): Self = StObject.set(x, "x-express-openapi-additional-middleware", value.asInstanceOf[js.Any])
+    
+    inline def `setX-express-openapi-additional-middlewareUndefined`: Self = StObject.set(x, "x-express-openapi-additional-middleware", js.undefined)
+    
+    inline def `setX-express-openapi-additional-middlewareVarargs`(
+      value: (js.Function3[/* request */ Any, /* response */ Any, /* next */ Any, js.Promise[Unit] | Unit])*
+    ): Self = StObject.set(x, "x-express-openapi-additional-middleware", js.Array(value*))
+    
+    inline def `setX-express-openapi-validation-strict`(value: Boolean): Self = StObject.set(x, "x-express-openapi-validation-strict", value.asInstanceOf[js.Any])
+    
+    inline def `setX-express-openapi-validation-strictUndefined`: Self = StObject.set(x, "x-express-openapi-validation-strict", js.undefined)
   }
 }
-

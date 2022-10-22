@@ -1,20 +1,28 @@
 package typingsJapgolly.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShiftRegisterOption extends js.Object {
+trait ShiftRegisterOption extends StObject {
+  
   var isAnode: js.UndefOr[Boolean] = js.undefined
-  var pins: js.Any
+  
+  var pins: Any
 }
-
 object ShiftRegisterOption {
-  @scala.inline
-  def apply(pins: js.Any, isAnode: js.UndefOr[Boolean] = js.undefined): ShiftRegisterOption = {
+  
+  inline def apply(pins: Any): ShiftRegisterOption = {
     val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAnode)) __obj.updateDynamic("isAnode")(isAnode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShiftRegisterOption]
   }
+  
+  extension [Self <: ShiftRegisterOption](x: Self) {
+    
+    inline def setIsAnode(value: Boolean): Self = StObject.set(x, "isAnode", value.asInstanceOf[js.Any])
+    
+    inline def setIsAnodeUndefined: Self = StObject.set(x, "isAnode", js.undefined)
+    
+    inline def setPins(value: Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+  }
 }
-

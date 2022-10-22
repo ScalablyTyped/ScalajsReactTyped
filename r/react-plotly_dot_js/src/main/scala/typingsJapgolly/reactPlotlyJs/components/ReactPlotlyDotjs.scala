@@ -1,137 +1,131 @@
 package typingsJapgolly.reactPlotlyJs.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.plotlyJs.mod.ButtonClickEvent
 import typingsJapgolly.plotlyJs.mod.Data
 import typingsJapgolly.plotlyJs.mod.Frame
 import typingsJapgolly.plotlyJs.mod.PlotRestyleEvent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactPlotlyJs.PartialConfig
-import typingsJapgolly.reactPlotlyJs.PartialLayout
-import typingsJapgolly.reactPlotlyJs.ReadonlyClickAnnotationEv
-import typingsJapgolly.reactPlotlyJs.ReadonlyError
-import typingsJapgolly.reactPlotlyJs.ReadonlyFigure
-import typingsJapgolly.reactPlotlyJs.ReadonlyFrameAnimationEve
-import typingsJapgolly.reactPlotlyJs.ReadonlyHTMLElement
-import typingsJapgolly.reactPlotlyJs.ReadonlyLegendClickEvent
-import typingsJapgolly.reactPlotlyJs.ReadonlyPlotMouseEvent
-import typingsJapgolly.reactPlotlyJs.ReadonlyPlotRelayoutEvent
-import typingsJapgolly.reactPlotlyJs.ReadonlyPlotSelectionEven
-import typingsJapgolly.reactPlotlyJs.ReadonlySliderChangeEvent
-import typingsJapgolly.reactPlotlyJs.ReadonlySliderEndEvent
-import typingsJapgolly.reactPlotlyJs.ReadonlySliderStartEvent
+import typingsJapgolly.reactPlotlyJs.anon.PartialConfig
+import typingsJapgolly.reactPlotlyJs.anon.PartialLayout
+import typingsJapgolly.reactPlotlyJs.anon.ReadonlyClickAnnotationEv
+import typingsJapgolly.reactPlotlyJs.anon.ReadonlyError
+import typingsJapgolly.reactPlotlyJs.anon.ReadonlyFigure
+import typingsJapgolly.reactPlotlyJs.anon.ReadonlyFrameAnimationEve
+import typingsJapgolly.reactPlotlyJs.anon.ReadonlyHTMLElement
+import typingsJapgolly.reactPlotlyJs.anon.ReadonlyLegendClickEvent
+import typingsJapgolly.reactPlotlyJs.anon.ReadonlyPlotHoverEvent
+import typingsJapgolly.reactPlotlyJs.anon.ReadonlyPlotMouseEvent
+import typingsJapgolly.reactPlotlyJs.anon.ReadonlyPlotRelayoutEvent
+import typingsJapgolly.reactPlotlyJs.anon.ReadonlyPlotSelectionEven
+import typingsJapgolly.reactPlotlyJs.anon.ReadonlySliderChangeEvent
+import typingsJapgolly.reactPlotlyJs.anon.ReadonlySliderEndEvent
+import typingsJapgolly.reactPlotlyJs.anon.ReadonlySliderStartEvent
 import typingsJapgolly.reactPlotlyJs.mod.PlotParams
 import typingsJapgolly.reactPlotlyJs.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactPlotlyDotjs {
-  def apply(
-    data: js.Array[Data],
-    layout: PartialLayout,
-    className: String = null,
-    config: PartialConfig = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    divId: String = null,
-    frames: js.Array[Frame] = null,
-    onAfterExport: js.UndefOr[Callback] = js.undefined,
-    onAfterPlot: js.UndefOr[Callback] = js.undefined,
-    onAnimated: js.UndefOr[Callback] = js.undefined,
-    onAnimatingFrame: /* event */ ReadonlyFrameAnimationEve => Callback = null,
-    onAnimationInterrupted: js.UndefOr[Callback] = js.undefined,
-    onAutoSize: js.UndefOr[Callback] = js.undefined,
-    onBeforeExport: js.UndefOr[Callback] = js.undefined,
-    onButtonClicked: /* event */ ButtonClickEvent => Callback = null,
-    onClick: /* event */ ReadonlyPlotMouseEvent => Callback = null,
-    onClickAnnotation: /* event */ ReadonlyClickAnnotationEv => Callback = null,
-    onDeselect: js.UndefOr[Callback] = js.undefined,
-    onDoubleClick: js.UndefOr[Callback] = js.undefined,
-    onError: /* err */ ReadonlyError => Callback = null,
-    onFramework: js.UndefOr[Callback] = js.undefined,
-    onHover: /* event */ ReadonlyPlotMouseEvent => Callback = null,
-    onInitialized: (/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement) => Callback = null,
-    onLegendClick: /* event */ ReadonlyLegendClickEvent => CallbackTo[Boolean] = null,
-    onLegendDoubleClick: /* event */ ReadonlyLegendClickEvent => CallbackTo[Boolean] = null,
-    onPurge: (/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement) => Callback = null,
-    onRedraw: js.UndefOr[Callback] = js.undefined,
-    onRelayout: /* event */ ReadonlyPlotRelayoutEvent => Callback = null,
-    onRestyle: /* event */ PlotRestyleEvent => Callback = null,
-    onSelected: /* event */ ReadonlyPlotSelectionEven => Callback = null,
-    onSelecting: /* event */ ReadonlyPlotSelectionEven => Callback = null,
-    onSliderChange: /* event */ ReadonlySliderChangeEvent => Callback = null,
-    onSliderEnd: /* event */ ReadonlySliderEndEvent => Callback = null,
-    onSliderStart: /* event */ ReadonlySliderStartEvent => Callback = null,
-    onTransitionInterrupted: js.UndefOr[Callback] = js.undefined,
-    onTransitioning: js.UndefOr[Callback] = js.undefined,
-    onUnhover: /* event */ ReadonlyPlotMouseEvent => Callback = null,
-    onUpdate: (/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement) => Callback = null,
-    revision: Int | Double = null,
-    style: CSSProperties = null,
-    useResizeHandler: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PlotParams, default, Unit, PlotParams] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (divId != null) __obj.updateDynamic("divId")(divId.asInstanceOf[js.Any])
-    if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
-    onAfterExport.foreach(p => __obj.updateDynamic("onAfterExport")(p.toJsFn))
-    onAfterPlot.foreach(p => __obj.updateDynamic("onAfterPlot")(p.toJsFn))
-    onAnimated.foreach(p => __obj.updateDynamic("onAnimated")(p.toJsFn))
-    if (onAnimatingFrame != null) __obj.updateDynamic("onAnimatingFrame")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactPlotlyJs.ReadonlyFrameAnimationEve) => onAnimatingFrame(t0).runNow()))
-    onAnimationInterrupted.foreach(p => __obj.updateDynamic("onAnimationInterrupted")(p.toJsFn))
-    onAutoSize.foreach(p => __obj.updateDynamic("onAutoSize")(p.toJsFn))
-    onBeforeExport.foreach(p => __obj.updateDynamic("onBeforeExport")(p.toJsFn))
-    if (onButtonClicked != null) __obj.updateDynamic("onButtonClicked")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.plotlyJs.mod.ButtonClickEvent) => onButtonClicked(t0).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactPlotlyJs.ReadonlyPlotMouseEvent) => onClick(t0).runNow()))
-    if (onClickAnnotation != null) __obj.updateDynamic("onClickAnnotation")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactPlotlyJs.ReadonlyClickAnnotationEv) => onClickAnnotation(t0).runNow()))
-    onDeselect.foreach(p => __obj.updateDynamic("onDeselect")(p.toJsFn))
-    onDoubleClick.foreach(p => __obj.updateDynamic("onDoubleClick")(p.toJsFn))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: /* err */ typingsJapgolly.reactPlotlyJs.ReadonlyError) => onError(t0).runNow()))
-    onFramework.foreach(p => __obj.updateDynamic("onFramework")(p.toJsFn))
-    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactPlotlyJs.ReadonlyPlotMouseEvent) => onHover(t0).runNow()))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction2((t0: /* figure */ typingsJapgolly.reactPlotlyJs.ReadonlyFigure, t1: /* graphDiv */ typingsJapgolly.reactPlotlyJs.ReadonlyHTMLElement) => onInitialized(t0, t1).runNow()))
-    if (onLegendClick != null) __obj.updateDynamic("onLegendClick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactPlotlyJs.ReadonlyLegendClickEvent) => onLegendClick(t0).runNow()))
-    if (onLegendDoubleClick != null) __obj.updateDynamic("onLegendDoubleClick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactPlotlyJs.ReadonlyLegendClickEvent) => onLegendDoubleClick(t0).runNow()))
-    if (onPurge != null) __obj.updateDynamic("onPurge")(js.Any.fromFunction2((t0: /* figure */ typingsJapgolly.reactPlotlyJs.ReadonlyFigure, t1: /* graphDiv */ typingsJapgolly.reactPlotlyJs.ReadonlyHTMLElement) => onPurge(t0, t1).runNow()))
-    onRedraw.foreach(p => __obj.updateDynamic("onRedraw")(p.toJsFn))
-    if (onRelayout != null) __obj.updateDynamic("onRelayout")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactPlotlyJs.ReadonlyPlotRelayoutEvent) => onRelayout(t0).runNow()))
-    if (onRestyle != null) __obj.updateDynamic("onRestyle")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.plotlyJs.mod.PlotRestyleEvent) => onRestyle(t0).runNow()))
-    if (onSelected != null) __obj.updateDynamic("onSelected")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactPlotlyJs.ReadonlyPlotSelectionEven) => onSelected(t0).runNow()))
-    if (onSelecting != null) __obj.updateDynamic("onSelecting")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactPlotlyJs.ReadonlyPlotSelectionEven) => onSelecting(t0).runNow()))
-    if (onSliderChange != null) __obj.updateDynamic("onSliderChange")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactPlotlyJs.ReadonlySliderChangeEvent) => onSliderChange(t0).runNow()))
-    if (onSliderEnd != null) __obj.updateDynamic("onSliderEnd")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactPlotlyJs.ReadonlySliderEndEvent) => onSliderEnd(t0).runNow()))
-    if (onSliderStart != null) __obj.updateDynamic("onSliderStart")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactPlotlyJs.ReadonlySliderStartEvent) => onSliderStart(t0).runNow()))
-    onTransitionInterrupted.foreach(p => __obj.updateDynamic("onTransitionInterrupted")(p.toJsFn))
-    onTransitioning.foreach(p => __obj.updateDynamic("onTransitioning")(p.toJsFn))
-    if (onUnhover != null) __obj.updateDynamic("onUnhover")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactPlotlyJs.ReadonlyPlotMouseEvent) => onUnhover(t0).runNow()))
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction2((t0: /* figure */ typingsJapgolly.reactPlotlyJs.ReadonlyFigure, t1: /* graphDiv */ typingsJapgolly.reactPlotlyJs.ReadonlyHTMLElement) => onUpdate(t0, t1).runNow()))
-    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(useResizeHandler)) __obj.updateDynamic("useResizeHandler")(useResizeHandler.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactPlotlyJs.mod.PlotParams, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactPlotlyJs.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactPlotlyJs.mod.PlotParams])(children: _*)
+  inline def apply(data: js.Array[Data], layout: PartialLayout): Builder = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[PlotParams]))
   }
+  
   @JSImport("react-plotly.js", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def config(value: PartialConfig): this.type = set("config", value.asInstanceOf[js.Any])
+    
+    inline def debug(value: Boolean): this.type = set("debug", value.asInstanceOf[js.Any])
+    
+    inline def divId(value: String): this.type = set("divId", value.asInstanceOf[js.Any])
+    
+    inline def frames(value: js.Array[Frame]): this.type = set("frames", value.asInstanceOf[js.Any])
+    
+    inline def framesVarargs(value: Frame*): this.type = set("frames", js.Array(value*))
+    
+    inline def onAfterExport(value: Callback): this.type = set("onAfterExport", value.toJsFn)
+    
+    inline def onAfterPlot(value: Callback): this.type = set("onAfterPlot", value.toJsFn)
+    
+    inline def onAnimated(value: Callback): this.type = set("onAnimated", value.toJsFn)
+    
+    inline def onAnimatingFrame(value: /* event */ ReadonlyFrameAnimationEve => Callback): this.type = set("onAnimatingFrame", js.Any.fromFunction1((t0: /* event */ ReadonlyFrameAnimationEve) => value(t0).runNow()))
+    
+    inline def onAnimationInterrupted(value: Callback): this.type = set("onAnimationInterrupted", value.toJsFn)
+    
+    inline def onAutoSize(value: Callback): this.type = set("onAutoSize", value.toJsFn)
+    
+    inline def onBeforeExport(value: Callback): this.type = set("onBeforeExport", value.toJsFn)
+    
+    inline def onBeforeHover(value: /* event */ ReadonlyPlotMouseEvent => Boolean): this.type = set("onBeforeHover", js.Any.fromFunction1(value))
+    
+    inline def onButtonClicked(value: /* event */ ButtonClickEvent => Callback): this.type = set("onButtonClicked", js.Any.fromFunction1((t0: /* event */ ButtonClickEvent) => value(t0).runNow()))
+    
+    inline def onClick(value: /* event */ ReadonlyPlotMouseEvent => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: /* event */ ReadonlyPlotMouseEvent) => value(t0).runNow()))
+    
+    inline def onClickAnnotation(value: /* event */ ReadonlyClickAnnotationEv => Callback): this.type = set("onClickAnnotation", js.Any.fromFunction1((t0: /* event */ ReadonlyClickAnnotationEv) => value(t0).runNow()))
+    
+    inline def onDeselect(value: Callback): this.type = set("onDeselect", value.toJsFn)
+    
+    inline def onDoubleClick(value: Callback): this.type = set("onDoubleClick", value.toJsFn)
+    
+    inline def onError(value: /* err */ ReadonlyError => Callback): this.type = set("onError", js.Any.fromFunction1((t0: /* err */ ReadonlyError) => value(t0).runNow()))
+    
+    inline def onFramework(value: Callback): this.type = set("onFramework", value.toJsFn)
+    
+    inline def onHover(value: /* event */ ReadonlyPlotHoverEvent => Callback): this.type = set("onHover", js.Any.fromFunction1((t0: /* event */ ReadonlyPlotHoverEvent) => value(t0).runNow()))
+    
+    inline def onInitialized(value: (/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement) => Callback): this.type = set("onInitialized", js.Any.fromFunction2((t0: /* figure */ ReadonlyFigure, t1: /* graphDiv */ ReadonlyHTMLElement) => (value(t0, t1)).runNow()))
+    
+    inline def onLegendClick(value: /* event */ ReadonlyLegendClickEvent => Boolean): this.type = set("onLegendClick", js.Any.fromFunction1(value))
+    
+    inline def onLegendDoubleClick(value: /* event */ ReadonlyLegendClickEvent => Boolean): this.type = set("onLegendDoubleClick", js.Any.fromFunction1(value))
+    
+    inline def onPurge(value: (/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement) => Callback): this.type = set("onPurge", js.Any.fromFunction2((t0: /* figure */ ReadonlyFigure, t1: /* graphDiv */ ReadonlyHTMLElement) => (value(t0, t1)).runNow()))
+    
+    inline def onRedraw(value: Callback): this.type = set("onRedraw", value.toJsFn)
+    
+    inline def onRelayout(value: /* event */ ReadonlyPlotRelayoutEvent => Callback): this.type = set("onRelayout", js.Any.fromFunction1((t0: /* event */ ReadonlyPlotRelayoutEvent) => value(t0).runNow()))
+    
+    inline def onRestyle(value: /* event */ PlotRestyleEvent => Callback): this.type = set("onRestyle", js.Any.fromFunction1((t0: /* event */ PlotRestyleEvent) => value(t0).runNow()))
+    
+    inline def onSelected(value: /* event */ ReadonlyPlotSelectionEven => Callback): this.type = set("onSelected", js.Any.fromFunction1((t0: /* event */ ReadonlyPlotSelectionEven) => value(t0).runNow()))
+    
+    inline def onSelecting(value: /* event */ ReadonlyPlotSelectionEven => Callback): this.type = set("onSelecting", js.Any.fromFunction1((t0: /* event */ ReadonlyPlotSelectionEven) => value(t0).runNow()))
+    
+    inline def onSliderChange(value: /* event */ ReadonlySliderChangeEvent => Callback): this.type = set("onSliderChange", js.Any.fromFunction1((t0: /* event */ ReadonlySliderChangeEvent) => value(t0).runNow()))
+    
+    inline def onSliderEnd(value: /* event */ ReadonlySliderEndEvent => Callback): this.type = set("onSliderEnd", js.Any.fromFunction1((t0: /* event */ ReadonlySliderEndEvent) => value(t0).runNow()))
+    
+    inline def onSliderStart(value: /* event */ ReadonlySliderStartEvent => Callback): this.type = set("onSliderStart", js.Any.fromFunction1((t0: /* event */ ReadonlySliderStartEvent) => value(t0).runNow()))
+    
+    inline def onTransitionInterrupted(value: Callback): this.type = set("onTransitionInterrupted", value.toJsFn)
+    
+    inline def onTransitioning(value: Callback): this.type = set("onTransitioning", value.toJsFn)
+    
+    inline def onUnhover(value: /* event */ ReadonlyPlotMouseEvent => Callback): this.type = set("onUnhover", js.Any.fromFunction1((t0: /* event */ ReadonlyPlotMouseEvent) => value(t0).runNow()))
+    
+    inline def onUpdate(value: (/* figure */ ReadonlyFigure, /* graphDiv */ ReadonlyHTMLElement) => Callback): this.type = set("onUpdate", js.Any.fromFunction2((t0: /* figure */ ReadonlyFigure, t1: /* graphDiv */ ReadonlyHTMLElement) => (value(t0, t1)).runNow()))
+    
+    inline def revision(value: Double): this.type = set("revision", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def useResizeHandler(value: Boolean): this.type = set("useResizeHandler", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: PlotParams): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

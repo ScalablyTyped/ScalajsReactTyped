@@ -1,16 +1,17 @@
 package typingsJapgolly.yandexMaps.mod
 
-import typingsJapgolly.yandexMaps.AnonResults
-import typingsJapgolly.yandexMaps.AnonStrictBounds
+import typingsJapgolly.yandexMaps.anon.BoundedBy
+import typingsJapgolly.yandexMaps.anon.Results
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGeocodeProvider extends js.Object {
+trait IGeocodeProvider extends StObject {
+  
   def geocode(request: String): js.Promise[js.Object] = js.native
-  def geocode(request: String, options: AnonResults): js.Promise[js.Object] = js.native
+  def geocode(request: String, options: BoundedBy): js.Promise[js.Object] = js.native
+  
   def suggest(request: String): js.Promise[js.Object] = js.native
-  def suggest(request: String, options: AnonStrictBounds): js.Promise[js.Object] = js.native
+  def suggest(request: String, options: Results): js.Promise[js.Object] = js.native
 }
-

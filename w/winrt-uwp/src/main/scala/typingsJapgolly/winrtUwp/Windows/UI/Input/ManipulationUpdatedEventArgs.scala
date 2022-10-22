@@ -2,23 +2,51 @@ package typingsJapgolly.winrtUwp.Windows.UI.Input
 
 import typingsJapgolly.winrtUwp.Windows.Devices.Input.PointerDeviceType
 import typingsJapgolly.winrtUwp.Windows.Foundation.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the ManipulationUpdated event. */
-@JSGlobal("Windows.UI.Input.ManipulationUpdatedEventArgs")
-@js.native
-abstract class ManipulationUpdatedEventArgs () extends js.Object {
+trait ManipulationUpdatedEventArgs extends StObject {
+  
   /** Gets values that indicate the accumulated transformation deltas (translation, rotation, scale) for a manipulation from the beginning of the interaction to the ManipulationUpdated event. */
-  var cumulative: ManipulationDelta = js.native
+  var cumulative: ManipulationDelta
+  
   /** Gets values that indicate the changes in the transformation deltas (translation, rotation, scale) of a manipulation since the last manipulation event. */
-  var delta: ManipulationDelta = js.native
+  var delta: ManipulationDelta
+  
   /** Gets the device type of the input source. */
-  var pointerDeviceType: PointerDeviceType = js.native
+  var pointerDeviceType: PointerDeviceType
+  
   /** Gets the location of the pointer associated with the manipulation for the last manipulation event. */
-  var position: Point = js.native
+  var position: Point
+  
   /** Gets values that indicate the velocities of the transformation deltas (translation, rotation, scale) for a manipulation at the ManipulationUpdated event. */
-  var velocities: ManipulationVelocities = js.native
+  var velocities: ManipulationVelocities
 }
-
+object ManipulationUpdatedEventArgs {
+  
+  inline def apply(
+    cumulative: ManipulationDelta,
+    delta: ManipulationDelta,
+    pointerDeviceType: PointerDeviceType,
+    position: Point,
+    velocities: ManipulationVelocities
+  ): ManipulationUpdatedEventArgs = {
+    val __obj = js.Dynamic.literal(cumulative = cumulative.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], velocities = velocities.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ManipulationUpdatedEventArgs]
+  }
+  
+  extension [Self <: ManipulationUpdatedEventArgs](x: Self) {
+    
+    inline def setCumulative(value: ManipulationDelta): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    
+    inline def setDelta(value: ManipulationDelta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    
+    inline def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setVelocities(value: ManipulationVelocities): Self = StObject.set(x, "velocities", value.asInstanceOf[js.Any])
+  }
+}

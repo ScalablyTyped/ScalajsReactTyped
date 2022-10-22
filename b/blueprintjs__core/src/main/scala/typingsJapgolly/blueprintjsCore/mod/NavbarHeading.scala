@@ -1,18 +1,26 @@
 package typingsJapgolly.blueprintjsCore.mod
 
+import typingsJapgolly.blueprintjsCore.libEsmComponentsNavbarNavbarHeadingMod.NavbarHeadingProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "NavbarHeading")
 @js.native
-class NavbarHeading ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.NavbarHeading
-
-/* static members */
-@JSImport("@blueprintjs/core", "NavbarHeading")
-@js.native
-object NavbarHeading extends js.Object {
-  var displayName: String = js.native
+open class NavbarHeading protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.NavbarHeading {
+  def this(props: NavbarHeadingProps) = this()
+  def this(props: NavbarHeadingProps, context: Any) = this()
 }
-
+/* static members */
+object NavbarHeading {
+  
+  @JSImport("@blueprintjs/core", "NavbarHeading")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "NavbarHeading.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

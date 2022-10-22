@@ -1,110 +1,107 @@
 package typingsJapgolly.reactNativeVectorIcons
 
 import typingsJapgolly.reactNativeVectorIcons.fontAwesome5Mod.FontAwesome5IconVariants
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeVectorIconsStrings {
-  @js.native
-  sealed trait assertive extends js.Object
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait balanced extends js.Object
+  sealed trait assertive extends StObject
+  inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait brand extends FontAwesome5IconVariants
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait balanced extends StObject
+  inline def balanced: balanced = "balanced".asInstanceOf[balanced]
   
   @js.native
-  sealed trait clip extends js.Object
+  sealed trait brand
+    extends StObject
+       with FontAwesome5IconVariants
+  inline def brand: brand = "brand".asInstanceOf[brand]
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait clip extends StObject
+  inline def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
-  sealed trait highQuality extends js.Object
+  sealed trait email extends StObject
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait light extends FontAwesome5IconVariants
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait head extends StObject
+  inline def head: head = "head".asInstanceOf[head]
   
   @js.native
-  sealed trait no extends js.Object
+  sealed trait highQuality extends StObject
+  inline def highQuality: highQuality = "highQuality".asInstanceOf[highQuality]
   
   @js.native
-  sealed trait `no-hide-descendants` extends js.Object
+  sealed trait light
+    extends StObject
+       with FontAwesome5IconVariants
+  inline def light: light = "light".asInstanceOf[light]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait link extends StObject
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait polite extends js.Object
+  sealed trait middle extends StObject
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait radiobutton_checked extends js.Object
+  sealed trait no extends StObject
+  inline def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait radiobutton_unchecked extends js.Object
+  sealed trait `no-hide-descendants` extends StObject
+  inline def `no-hide-descendants`: `no-hide-descendants` = "no-hide-descendants".asInstanceOf[`no-hide-descendants`]
   
   @js.native
-  sealed trait simple extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait solid extends FontAwesome5IconVariants
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait tail extends js.Object
+  sealed trait phoneNumber extends StObject
+  inline def phoneNumber: phoneNumber = "phoneNumber".asInstanceOf[phoneNumber]
   
   @js.native
-  sealed trait yes extends js.Object
+  sealed trait polite extends StObject
+  inline def polite: polite = "polite".asInstanceOf[polite]
   
-  @scala.inline
-  def assertive: assertive = "assertive".asInstanceOf[assertive]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def balanced: balanced = "balanced".asInstanceOf[balanced]
-  @scala.inline
-  def brand: brand = "brand".asInstanceOf[brand]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def clip: clip = "clip".asInstanceOf[clip]
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
-  @scala.inline
-  def highQuality: highQuality = "highQuality".asInstanceOf[highQuality]
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def no: no = "no".asInstanceOf[no]
-  @scala.inline
-  def `no-hide-descendants`: `no-hide-descendants` = "no-hide-descendants".asInstanceOf[`no-hide-descendants`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def polite: polite = "polite".asInstanceOf[polite]
-  @scala.inline
-  def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
-  @scala.inline
-  def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
-  @scala.inline
-  def simple: simple = "simple".asInstanceOf[simple]
-  @scala.inline
-  def solid: solid = "solid".asInstanceOf[solid]
-  @scala.inline
-  def tail: tail = "tail".asInstanceOf[tail]
-  @scala.inline
-  def yes: yes = "yes".asInstanceOf[yes]
+  @js.native
+  sealed trait simple extends StObject
+  inline def simple: simple = "simple".asInstanceOf[simple]
+  
+  @js.native
+  sealed trait solid
+    extends StObject
+       with FontAwesome5IconVariants
+  inline def solid: solid = "solid".asInstanceOf[solid]
+  
+  @js.native
+  sealed trait tail extends StObject
+  inline def tail: tail = "tail".asInstanceOf[tail]
+  
+  @js.native
+  sealed trait yes extends StObject
+  inline def yes: yes = "yes".asInstanceOf[yes]
 }
-

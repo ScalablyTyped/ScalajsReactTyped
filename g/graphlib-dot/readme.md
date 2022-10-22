@@ -10,10 +10,10 @@ A DOT language parser / writer for graphlib
 | ------------------ | :-------------: |
 | Full name          | graphlib-dot |
 | Keywords           | graph, dot, parse |
-| # releases         | 2 |
-| # dependents       | 19 |
-| # downloads        | 105874 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17535.333333333332 |
+| # stars            | 211.0 |
 
 ## Links
 - [Homepage](https://github.com/dagrejs/graphlib-dot#readme)

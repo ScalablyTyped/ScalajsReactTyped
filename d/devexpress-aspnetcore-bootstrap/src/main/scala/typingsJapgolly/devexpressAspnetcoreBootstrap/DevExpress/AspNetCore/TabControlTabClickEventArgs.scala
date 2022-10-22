@@ -1,17 +1,20 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TabControlTabClickEventArgs extends TabControlTabCancelEventArgs {
+trait TabControlTabClickEventArgs
+  extends StObject
+     with TabControlTabCancelEventArgs {
+  
   val htmlElement: js.Object
+  
   val htmlEvent: js.Object
 }
-
 object TabControlTabClickEventArgs {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     cancel: Boolean,
     htmlElement: js.Object,
     htmlEvent: js.Object,
@@ -21,8 +24,13 @@ object TabControlTabClickEventArgs {
     tab: BootstrapTab
   ): TabControlTabClickEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], reloadContentOnCallback = reloadContentOnCallback.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TabControlTabClickEventArgs]
   }
+  
+  extension [Self <: TabControlTabClickEventArgs](x: Self) {
+    
+    inline def setHtmlElement(value: js.Object): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlEvent(value: js.Object): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+  }
 }
-

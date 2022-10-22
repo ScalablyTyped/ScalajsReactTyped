@@ -1,17 +1,7 @@
 package typingsJapgolly.winrt.Windows.Web
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Web.WebError")
-@js.native
-class WebError () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.Web.WebError")
-@js.native
-object WebError extends js.Object {
-  def getStatus(hresult: Double): WebErrorStatus = js.native
-}
-
+trait WebError extends StObject

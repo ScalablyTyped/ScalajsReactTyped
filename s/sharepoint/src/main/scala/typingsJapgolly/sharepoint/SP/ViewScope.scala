@@ -1,41 +1,32 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ViewScope extends js.Object
-
+sealed trait ViewScope extends StObject
 @JSGlobal("SP.ViewScope")
 @js.native
-object ViewScope extends js.Object {
-  @js.native
-  sealed trait defaultValue extends ViewScope
+object ViewScope extends StObject {
   
   @js.native
-  sealed trait filesOnly extends ViewScope
+  sealed trait defaultValue
+    extends StObject
+       with ViewScope
   
   @js.native
-  sealed trait recursive extends ViewScope
+  sealed trait filesOnly
+    extends StObject
+       with ViewScope
   
   @js.native
-  sealed trait recursiveAll extends ViewScope
+  sealed trait recursive
+    extends StObject
+       with ViewScope
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ViewScope with Double] = js.native
-  /* 0 */ @js.native
-  object defaultValue extends TopLevel[defaultValue with Double]
-  
-  /* 3 */ @js.native
-  object filesOnly extends TopLevel[filesOnly with Double]
-  
-  /* 1 */ @js.native
-  object recursive extends TopLevel[recursive with Double]
-  
-  /* 2 */ @js.native
-  object recursiveAll extends TopLevel[recursiveAll with Double]
-  
+  @js.native
+  sealed trait recursiveAll
+    extends StObject
+       with ViewScope
 }
-

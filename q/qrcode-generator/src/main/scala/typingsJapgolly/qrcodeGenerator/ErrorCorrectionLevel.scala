@@ -1,8 +1,8 @@
 package typingsJapgolly.qrcodeGenerator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.L
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.Q
   - typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.H
 */
-trait ErrorCorrectionLevel extends js.Object
-
+trait ErrorCorrectionLevel extends StObject
 object ErrorCorrectionLevel {
-  @scala.inline
-  def H: typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.H = this.cast("H")
-  @scala.inline
-  def L: typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.L = this.cast("L")
-  @scala.inline
-  def M: typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.M = this.cast("M")
-  @scala.inline
-  def Q: typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.Q = this.cast("Q")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def H: typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.H = "H".asInstanceOf[typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.H]
+  
+  inline def L: typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.L = "L".asInstanceOf[typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.L]
+  
+  inline def M: typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.M = "M".asInstanceOf[typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.M]
+  
+  inline def Q: typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.Q = "Q".asInstanceOf[typingsJapgolly.qrcodeGenerator.qrcodeGeneratorStrings.Q]
 }
-

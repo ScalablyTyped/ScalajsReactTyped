@@ -1,143 +1,198 @@
 package typingsJapgolly.materialUi.MaterialUI
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.ReactFocusEventFrom
-import japgolly.scalajs.react.ReactKeyboardEventFrom
 import japgolly.scalajs.react.ReactMouseEventFrom
 import japgolly.scalajs.react.ReactTouchEventFrom
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Component
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.materialUi.materialUiStrings.after
 import typingsJapgolly.materialUi.materialUiStrings.before
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.mod.MouseEventHandler
 import typingsJapgolly.react.mod.TouchEventHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RaisedButtonProps extends SharedEnhancedButtonProps[RaisedButton] {
+trait RaisedButtonProps
+  extends StObject
+     with SharedEnhancedButtonProps[Component[RaisedButtonProps & js.Object, js.Object]] {
+  
   // <EnhancedButton/> is the element that get the 'other' properties
   var backgroundColor: js.UndefOr[String] = js.undefined
+  
   var buttonStyle: js.UndefOr[CSSProperties] = js.undefined
+  
+  var children: js.UndefOr[Node] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var disabledBackgroundColor: js.UndefOr[String] = js.undefined
+  
   var disabledLabelColor: js.UndefOr[String] = js.undefined
+  
   var fullWidth: js.UndefOr[Boolean] = js.undefined
+  
   var icon: js.UndefOr[Node] = js.undefined
+  
   var label: js.UndefOr[Node] = js.undefined
+  
   var labelColor: js.UndefOr[String] = js.undefined
+  
   var labelPosition: js.UndefOr[before | after] = js.undefined
+  
   var labelStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var linkButton: js.UndefOr[Boolean] = js.undefined
+  
   var onMouseDown: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
+  
   var onMouseEnter: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
+  
   var onMouseLeave: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
+  
   var onMouseUp: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
+  
   var onTouchEnd: js.UndefOr[TouchEventHandler[js.Object]] = js.undefined
+  
   var onTouchStart: js.UndefOr[TouchEventHandler[js.Object]] = js.undefined
+  
   var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var primary: js.UndefOr[Boolean] = js.undefined
+  
   var rippleStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var secondary: js.UndefOr[Boolean] = js.undefined
 }
-
 object RaisedButtonProps {
-  @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    buttonStyle: CSSProperties = null,
-    centerRipple: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    containerElement: Node | String = null,
-    disableFocusRipple: js.UndefOr[Boolean] = js.undefined,
-    disableKeyboardFocus: js.UndefOr[Boolean] = js.undefined,
-    disableTouchRipple: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledBackgroundColor: String = null,
-    disabledLabelColor: String = null,
-    focusRippleColor: String = null,
-    focusRippleOpacity: Int | Double = null,
-    fullWidth: js.UndefOr[Boolean] = js.undefined,
-    href: String = null,
-    icon: VdomNode = null,
-    keyboardFocused: js.UndefOr[Boolean] = js.undefined,
-    label: VdomNode = null,
-    labelColor: String = null,
-    labelPosition: before | after = null,
-    labelStyle: CSSProperties = null,
-    linkButton: js.UndefOr[Boolean] = js.undefined,
-    onBlur: ReactFocusEventFrom[js.Object with Element] => Callback = null,
-    onClick: ReactMouseEventFrom[js.Object with Element] => Callback = null,
-    onFocus: ReactFocusEventFrom[js.Object with Element] => Callback = null,
-    onKeyDown: ReactKeyboardEventFrom[js.Object with Element] => Callback = null,
-    onKeyUp: ReactKeyboardEventFrom[js.Object with Element] => Callback = null,
-    onKeyboardFocus: (/* e */ ReactFocusEventFrom[js.Object with Element], /* isKeyboardFocused */ Boolean) => Callback = null,
-    onMouseDown: ReactMouseEventFrom[js.Object with Element] => Callback = null,
-    onMouseEnter: ReactMouseEventFrom[js.Object with Element] => Callback = null,
-    onMouseLeave: ReactMouseEventFrom[js.Object with Element] => Callback = null,
-    onMouseUp: ReactMouseEventFrom[js.Object with Element] => Callback = null,
-    onTouchEnd: ReactTouchEventFrom[js.Object with Element] => Callback = null,
-    onTouchStart: ReactTouchEventFrom[js.Object with Element] => Callback = null,
-    overlayStyle: CSSProperties = null,
-    primary: js.UndefOr[Boolean] = js.undefined,
-    rippleStyle: CSSProperties = null,
-    secondary: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    tabIndex: Int | Double = null,
-    target: String = null,
-    touchRippleColor: String = null,
-    touchRippleOpacity: Int | Double = null,
-    `type`: String = null
-  ): RaisedButtonProps = {
+  
+  inline def apply(): RaisedButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerRipple)) __obj.updateDynamic("centerRipple")(centerRipple.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (containerElement != null) __obj.updateDynamic("containerElement")(containerElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFocusRipple)) __obj.updateDynamic("disableFocusRipple")(disableFocusRipple.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableKeyboardFocus)) __obj.updateDynamic("disableKeyboardFocus")(disableKeyboardFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableTouchRipple)) __obj.updateDynamic("disableTouchRipple")(disableTouchRipple.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (disabledBackgroundColor != null) __obj.updateDynamic("disabledBackgroundColor")(disabledBackgroundColor.asInstanceOf[js.Any])
-    if (disabledLabelColor != null) __obj.updateDynamic("disabledLabelColor")(disabledLabelColor.asInstanceOf[js.Any])
-    if (focusRippleColor != null) __obj.updateDynamic("focusRippleColor")(focusRippleColor.asInstanceOf[js.Any])
-    if (focusRippleOpacity != null) __obj.updateDynamic("focusRippleOpacity")(focusRippleOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardFocused)) __obj.updateDynamic("keyboardFocused")(keyboardFocused.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.rawNode.asInstanceOf[js.Any])
-    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
-    if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkButton)) __obj.updateDynamic("linkButton")(linkButton.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onBlur(t0).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onClick(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onKeyDown(t0).runNow()))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onKeyUp(t0).runNow()))
-    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(js.Any.fromFunction2((t0: /* e */ japgolly.scalajs.react.ReactFocusEventFrom[js.Object with org.scalajs.dom.raw.Element], t1: /* isKeyboardFocused */ scala.Boolean) => onKeyboardFocus(t0, t1).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onMouseDown(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onMouseLeave(t0).runNow()))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onMouseUp(t0).runNow()))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onTouchEnd(t0).runNow()))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onTouchStart(t0).runNow()))
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (rippleStyle != null) __obj.updateDynamic("rippleStyle")(rippleStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (touchRippleColor != null) __obj.updateDynamic("touchRippleColor")(touchRippleColor.asInstanceOf[js.Any])
-    if (touchRippleOpacity != null) __obj.updateDynamic("touchRippleOpacity")(touchRippleOpacity.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaisedButtonProps]
   }
+  
+  extension [Self <: RaisedButtonProps](x: Self) {
+    
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setButtonStyle(value: CSSProperties): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
+    
+    inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledBackgroundColor(value: String): Self = StObject.set(x, "disabledBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledBackgroundColorUndefined: Self = StObject.set(x, "disabledBackgroundColor", js.undefined)
+    
+    inline def setDisabledLabelColor(value: String): Self = StObject.set(x, "disabledLabelColor", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledLabelColorUndefined: Self = StObject.set(x, "disabledLabelColor", js.undefined)
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+    
+    inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+    
+    inline def setIcon(value: VdomNode): Self = StObject.set(x, "icon", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setIconNull: Self = StObject.set(x, "icon", null)
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setIconVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "icon", js.Array(value*))
+    
+    inline def setIconVdomElement(value: VdomElement): Self = StObject.set(x, "icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setLabel(value: VdomNode): Self = StObject.set(x, "label", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
+    
+    inline def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
+    
+    inline def setLabelNull: Self = StObject.set(x, "label", null)
+    
+    inline def setLabelPosition(value: before | after): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+    
+    inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
+    
+    inline def setLabelStyle(value: CSSProperties): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLabelVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "label", js.Array(value*))
+    
+    inline def setLabelVdomElement(value: VdomElement): Self = StObject.set(x, "label", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setLinkButton(value: Boolean): Self = StObject.set(x, "linkButton", value.asInstanceOf[js.Any])
+    
+    inline def setLinkButtonUndefined: Self = StObject.set(x, "linkButton", js.undefined)
+    
+    inline def setOnMouseDown(value: ReactMouseEventFrom[js.Object & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[js.Object & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+    
+    inline def setOnMouseEnter(value: ReactMouseEventFrom[js.Object & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[js.Object & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+    
+    inline def setOnMouseLeave(value: ReactMouseEventFrom[js.Object & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1((t0: ReactMouseEventFrom[js.Object & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+    
+    inline def setOnMouseUp(value: ReactMouseEventFrom[js.Object & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[js.Object & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
+    
+    inline def setOnTouchEnd(value: ReactTouchEventFrom[js.Object & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1((t0: ReactTouchEventFrom[js.Object & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+    
+    inline def setOnTouchStart(value: ReactTouchEventFrom[js.Object & org.scalajs.dom.Element] => Callback): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1((t0: ReactTouchEventFrom[js.Object & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+    
+    inline def setOverlayStyle(value: CSSProperties): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
+    
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    
+    inline def setRippleStyle(value: CSSProperties): Self = StObject.set(x, "rippleStyle", value.asInstanceOf[js.Any])
+    
+    inline def setRippleStyleUndefined: Self = StObject.set(x, "rippleStyle", js.undefined)
+    
+    inline def setSecondary(value: Boolean): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+  }
 }
-

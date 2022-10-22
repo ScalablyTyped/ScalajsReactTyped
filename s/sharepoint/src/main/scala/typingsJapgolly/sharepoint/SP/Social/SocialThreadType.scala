@@ -1,47 +1,37 @@
 package typingsJapgolly.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocialThreadType extends js.Object
-
+sealed trait SocialThreadType extends StObject
 @JSGlobal("SP.Social.SocialThreadType")
 @js.native
-object SocialThreadType extends js.Object {
-  @js.native
-  sealed trait likeReference extends SocialThreadType
+object SocialThreadType extends StObject {
   
   @js.native
-  sealed trait mentionReference extends SocialThreadType
+  sealed trait likeReference
+    extends StObject
+       with SocialThreadType
   
   @js.native
-  sealed trait normal extends SocialThreadType
+  sealed trait mentionReference
+    extends StObject
+       with SocialThreadType
   
   @js.native
-  sealed trait replyReference extends SocialThreadType
+  sealed trait normal
+    extends StObject
+       with SocialThreadType
   
   @js.native
-  sealed trait tagReference extends SocialThreadType
+  sealed trait replyReference
+    extends StObject
+       with SocialThreadType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialThreadType with Double] = js.native
-  /* 1 */ @js.native
-  object likeReference extends TopLevel[likeReference with Double]
-  
-  /* 3 */ @js.native
-  object mentionReference extends TopLevel[mentionReference with Double]
-  
-  /* 0 */ @js.native
-  object normal extends TopLevel[normal with Double]
-  
-  /* 2 */ @js.native
-  object replyReference extends TopLevel[replyReference with Double]
-  
-  /* 4 */ @js.native
-  object tagReference extends TopLevel[tagReference with Double]
-  
+  @js.native
+  sealed trait tagReference
+    extends StObject
+       with SocialThreadType
 }
-

@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Security.Cryptography.Core
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CryptographicPublicKeyBlobType extends js.Object
-
+sealed trait CryptographicPublicKeyBlobType extends StObject
 @JSGlobal("Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType")
 @js.native
-object CryptographicPublicKeyBlobType extends js.Object {
-  @js.native
-  sealed trait bCryptPublicKey extends CryptographicPublicKeyBlobType
+object CryptographicPublicKeyBlobType extends StObject {
   
   @js.native
-  sealed trait capi1PublicKey extends CryptographicPublicKeyBlobType
+  sealed trait bCryptPublicKey
+    extends StObject
+       with CryptographicPublicKeyBlobType
   
   @js.native
-  sealed trait pkcs1RsaPublicKey extends CryptographicPublicKeyBlobType
+  sealed trait capi1PublicKey
+    extends StObject
+       with CryptographicPublicKeyBlobType
   
   @js.native
-  sealed trait x509SubjectPublicKeyInfo extends CryptographicPublicKeyBlobType
+  sealed trait pkcs1RsaPublicKey
+    extends StObject
+       with CryptographicPublicKeyBlobType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CryptographicPublicKeyBlobType with Double] = js.native
-  /* 2 */ @js.native
-  object bCryptPublicKey extends TopLevel[bCryptPublicKey with Double]
-  
-  /* 3 */ @js.native
-  object capi1PublicKey extends TopLevel[capi1PublicKey with Double]
-  
-  /* 1 */ @js.native
-  object pkcs1RsaPublicKey extends TopLevel[pkcs1RsaPublicKey with Double]
-  
-  /* 0 */ @js.native
-  object x509SubjectPublicKeyInfo extends TopLevel[x509SubjectPublicKeyInfo with Double]
-  
+  @js.native
+  sealed trait x509SubjectPublicKeyInfo
+    extends StObject
+       with CryptographicPublicKeyBlobType
 }
-

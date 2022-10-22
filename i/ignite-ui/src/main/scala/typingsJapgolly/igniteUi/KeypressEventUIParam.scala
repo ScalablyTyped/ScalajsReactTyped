@@ -1,48 +1,63 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KeypressEventUIParam extends js.Object {
+trait KeypressEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the editor input field.
-  	 */
-  var editorInput: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the editor input field.
+    */
+  var editorInput: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the event target.
-  	 */
-  var element: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the event target.
+    */
+  var element: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the value of the keyCode.
-  	 */
-  var key: js.UndefOr[js.Any] = js.undefined
+    * Gets the value of the keyCode.
+    */
+  var key: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the event object of the browser.
-  	 */
-  var originalEvent: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the event object of the browser.
+    */
+  var originalEvent: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the editor.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the editor.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object KeypressEventUIParam {
-  @scala.inline
-  def apply(
-    editorInput: js.Any = null,
-    element: js.Any = null,
-    key: js.Any = null,
-    originalEvent: js.Any = null,
-    owner: js.Any = null
-  ): KeypressEventUIParam = {
+  
+  inline def apply(): KeypressEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (editorInput != null) __obj.updateDynamic("editorInput")(editorInput.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeypressEventUIParam]
   }
+  
+  extension [Self <: KeypressEventUIParam](x: Self) {
+    
+    inline def setEditorInput(value: Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
+    
+    inline def setEditorInputUndefined: Self = StObject.set(x, "editorInput", js.undefined)
+    
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

@@ -1,90 +1,176 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.sliderMod.SliderMarks
-import typingsJapgolly.antd.sliderMod.SliderProps
-import typingsJapgolly.antd.sliderMod.SliderValue
-import typingsJapgolly.antd.sliderMod.default
-import typingsJapgolly.antd.tooltipMod.TooltipPlacement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.antdBooleans.`false`
+import typingsJapgolly.antd.antdBooleans.`true`
+import typingsJapgolly.antd.libSliderMod.SliderMarks
+import typingsJapgolly.antd.libSliderMod.SliderRange
+import typingsJapgolly.antd.libSliderMod.SliderRangeProps
+import typingsJapgolly.antd.libSliderMod.SliderSingleProps
+import typingsJapgolly.antd.libSliderMod.SliderTooltipProps
+import typingsJapgolly.antd.libTooltipMod.TooltipPlacement
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.RefAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Slider {
-  def apply(
-    className: String = null,
-    defaultValue: SliderValue = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    dots: js.UndefOr[Boolean] = js.undefined,
-    getTooltipPopupContainer: /* triggerNode */ HTMLElement => CallbackTo[HTMLElement] = null,
-    id: String = null,
-    included: js.UndefOr[Boolean] = js.undefined,
-    marks: SliderMarks = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    onAfterChange: /* value */ SliderValue => Callback = null,
-    onChange: /* value */ SliderValue => Callback = null,
-    prefixCls: String = null,
-    range: js.UndefOr[Boolean] = js.undefined,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    step: Int | Double = null,
-    style: CSSProperties = null,
-    tipFormatter: /* value */ Double => CallbackTo[Node] = null,
-    tooltipPlacement: TooltipPlacement = null,
-    tooltipPrefixCls: String = null,
-    tooltipVisible: js.UndefOr[Boolean] = js.undefined,
-    value: SliderValue = null,
-    vertical: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SliderProps, default, Unit, SliderProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
-    if (getTooltipPopupContainer != null) __obj.updateDynamic("getTooltipPopupContainer")(js.Any.fromFunction1((t0: /* triggerNode */ org.scalajs.dom.raw.HTMLElement) => getTooltipPopupContainer(t0).runNow()))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(included)) __obj.updateDynamic("included")(included.asInstanceOf[js.Any])
-    if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onAfterChange != null) __obj.updateDynamic("onAfterChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.antd.sliderMod.SliderValue) => onAfterChange(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.antd.sliderMod.SliderValue) => onChange(t0).runNow()))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tipFormatter != null) __obj.updateDynamic("tipFormatter")(js.Any.fromFunction1((t0: /* value */ scala.Double) => tipFormatter(t0).runNow()))
-    if (tooltipPlacement != null) __obj.updateDynamic("tooltipPlacement")(tooltipPlacement.asInstanceOf[js.Any])
-    if (tooltipPrefixCls != null) __obj.updateDynamic("tooltipPrefixCls")(tooltipPrefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipVisible)) __obj.updateDynamic("tooltipVisible")(tooltipVisible.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.sliderMod.SliderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.sliderMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.sliderMod.SliderProps])(children: _*)
+  object SliderRangePropsRefAttributes {
+    
+    inline def apply(range: `true` | SliderRange): Builder = {
+      val __props = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
+      new Builder(js.Array(this.component, __props.asInstanceOf[SliderRangeProps & RefAttributes[Any]]))
+    }
+    
+    @JSImport("antd", "Slider")
+    @js.native
+    val component: js.Object = js.native
+    
+    @scala.inline
+    open class Builder (val args: js.Array[Any])
+      extends AnyVal
+         with StBuildingComponent[js.Object] {
+      
+      inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+      
+      inline def defaultValue(value: js.Tuple2[Double, Double]): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+      
+      inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+      
+      inline def dots(value: Boolean): this.type = set("dots", value.asInstanceOf[js.Any])
+      
+      inline def getTooltipPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): this.type = set("getTooltipPopupContainer", js.Any.fromFunction1(value))
+      
+      inline def handleStyle(value: js.Array[CSSProperties]): this.type = set("handleStyle", value.asInstanceOf[js.Any])
+      
+      inline def handleStyleVarargs(value: CSSProperties*): this.type = set("handleStyle", js.Array(value*))
+      
+      inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+      
+      inline def included(value: Boolean): this.type = set("included", value.asInstanceOf[js.Any])
+      
+      inline def marks(value: SliderMarks): this.type = set("marks", value.asInstanceOf[js.Any])
+      
+      inline def max(value: Double): this.type = set("max", value.asInstanceOf[js.Any])
+      
+      inline def min(value: Double): this.type = set("min", value.asInstanceOf[js.Any])
+      
+      inline def onAfterChange(value: /* value */ js.Tuple2[Double, Double] => Callback): this.type = set("onAfterChange", js.Any.fromFunction1((t0: /* value */ js.Tuple2[Double, Double]) => value(t0).runNow()))
+      
+      inline def onChange(value: /* value */ js.Tuple2[Double, Double] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* value */ js.Tuple2[Double, Double]) => value(t0).runNow()))
+      
+      inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+      
+      inline def reverse(value: Boolean): this.type = set("reverse", value.asInstanceOf[js.Any])
+      
+      inline def step(value: Double): this.type = set("step", value.asInstanceOf[js.Any])
+      
+      inline def stepNull: this.type = set("step", null)
+      
+      inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+      
+      inline def tipFormatter(value: /* value */ js.UndefOr[Double] => japgolly.scalajs.react.facade.React.Node): this.type = set("tipFormatter", js.Any.fromFunction1(value))
+      
+      inline def tipFormatterNull: this.type = set("tipFormatter", null)
+      
+      inline def tooltip(value: SliderTooltipProps): this.type = set("tooltip", value.asInstanceOf[js.Any])
+      
+      inline def tooltipPlacement(value: TooltipPlacement): this.type = set("tooltipPlacement", value.asInstanceOf[js.Any])
+      
+      inline def tooltipPrefixCls(value: String): this.type = set("tooltipPrefixCls", value.asInstanceOf[js.Any])
+      
+      inline def tooltipVisible(value: Boolean): this.type = set("tooltipVisible", value.asInstanceOf[js.Any])
+      
+      inline def trackStyle(value: js.Array[CSSProperties]): this.type = set("trackStyle", value.asInstanceOf[js.Any])
+      
+      inline def trackStyleVarargs(value: CSSProperties*): this.type = set("trackStyle", js.Array(value*))
+      
+      inline def value(value: js.Tuple2[Double, Double]): this.type = set("value", value.asInstanceOf[js.Any])
+      
+      inline def vertical(value: Boolean): this.type = set("vertical", value.asInstanceOf[js.Any])
+    }
+    
+    def withProps(p: SliderRangeProps & RefAttributes[Any]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("antd/lib/slider", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object SliderSinglePropsRefAttributes {
+    
+    @JSImport("antd", "Slider")
+    @js.native
+    val component: js.Object = js.native
+    
+    @scala.inline
+    open class Builder (val args: js.Array[Any])
+      extends AnyVal
+         with StBuildingComponent[js.Object] {
+      
+      inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+      
+      inline def defaultValue(value: Double): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+      
+      inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+      
+      inline def dots(value: Boolean): this.type = set("dots", value.asInstanceOf[js.Any])
+      
+      inline def getTooltipPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): this.type = set("getTooltipPopupContainer", js.Any.fromFunction1(value))
+      
+      inline def handleStyle(value: CSSProperties): this.type = set("handleStyle", value.asInstanceOf[js.Any])
+      
+      inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+      
+      inline def included(value: Boolean): this.type = set("included", value.asInstanceOf[js.Any])
+      
+      inline def marks(value: SliderMarks): this.type = set("marks", value.asInstanceOf[js.Any])
+      
+      inline def max(value: Double): this.type = set("max", value.asInstanceOf[js.Any])
+      
+      inline def min(value: Double): this.type = set("min", value.asInstanceOf[js.Any])
+      
+      inline def onAfterChange(value: /* value */ Double => Callback): this.type = set("onAfterChange", js.Any.fromFunction1((t0: /* value */ Double) => value(t0).runNow()))
+      
+      inline def onChange(value: /* value */ Double => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* value */ Double) => value(t0).runNow()))
+      
+      inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+      
+      inline def range(value: `false`): this.type = set("range", value.asInstanceOf[js.Any])
+      
+      inline def reverse(value: Boolean): this.type = set("reverse", value.asInstanceOf[js.Any])
+      
+      inline def step(value: Double): this.type = set("step", value.asInstanceOf[js.Any])
+      
+      inline def stepNull: this.type = set("step", null)
+      
+      inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+      
+      inline def tipFormatter(value: /* value */ js.UndefOr[Double] => japgolly.scalajs.react.facade.React.Node): this.type = set("tipFormatter", js.Any.fromFunction1(value))
+      
+      inline def tipFormatterNull: this.type = set("tipFormatter", null)
+      
+      inline def tooltip(value: SliderTooltipProps): this.type = set("tooltip", value.asInstanceOf[js.Any])
+      
+      inline def tooltipPlacement(value: TooltipPlacement): this.type = set("tooltipPlacement", value.asInstanceOf[js.Any])
+      
+      inline def tooltipPrefixCls(value: String): this.type = set("tooltipPrefixCls", value.asInstanceOf[js.Any])
+      
+      inline def tooltipVisible(value: Boolean): this.type = set("tooltipVisible", value.asInstanceOf[js.Any])
+      
+      inline def trackStyle(value: CSSProperties): this.type = set("trackStyle", value.asInstanceOf[js.Any])
+      
+      inline def value(value: Double): this.type = set("value", value.asInstanceOf[js.Any])
+      
+      inline def vertical(value: Boolean): this.type = set("vertical", value.asInstanceOf[js.Any])
+    }
+    
+    implicit def make(companion: SliderSinglePropsRefAttributes.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: SliderSingleProps & RefAttributes[Any]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
 }
-

@@ -1,13 +1,7 @@
 package typingsJapgolly.winrt.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Foundation.Metadata.ActivatableAttribute")
-@js.native
-class ActivatableAttribute protected () extends js.Object {
-  def this(version: Double) = this()
-  def this(`type`: String, version: Double) = this()
-}
-
+trait ActivatableAttribute extends StObject

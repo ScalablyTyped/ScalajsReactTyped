@@ -1,48 +1,38 @@
 package typingsJapgolly.three.mod
 
-import org.scalajs.dom.raw.HTMLCanvasElement
-import org.scalajs.dom.raw.HTMLImageElement
-import org.scalajs.dom.raw.HTMLVideoElement
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.HTMLImageElement
+import org.scalajs.dom.HTMLVideoElement
+import typingsJapgolly.std.ImageBitmap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "CanvasTexture")
 @js.native
-class CanvasTexture protected ()
-  extends typingsJapgolly.three.canvasTextureMod.CanvasTexture {
+open class CanvasTexture protected ()
+  extends typingsJapgolly.three.srcThreeMod.CanvasTexture {
+  /**
+    * @param canvas
+    * @param [format=THREE.RGBAFormat]
+    * @param [type=THREE.UnsignedByteType]
+    * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+    * @param [wrapS=THREE.ClampToEdgeWrapping]
+    * @param [wrapT=THREE.ClampToEdgeWrapping]
+    * @param [magFilter=THREE.LinearFilter]
+    * @param [minFilter=THREE.LinearMipmapLinearFilter]
+    * @param [anisotropy=1]
+    * @param [encoding=THREE.LinearEncoding]
+    */
   def this(
-    canvas: HTMLCanvasElement,
-    mapping: js.UndefOr[typingsJapgolly.three.constantsMod.Mapping],
-    wrapS: js.UndefOr[typingsJapgolly.three.constantsMod.Wrapping],
-    wrapT: js.UndefOr[typingsJapgolly.three.constantsMod.Wrapping],
-    magFilter: js.UndefOr[typingsJapgolly.three.constantsMod.TextureFilter],
-    minFilter: js.UndefOr[typingsJapgolly.three.constantsMod.TextureFilter],
-    format: js.UndefOr[typingsJapgolly.three.constantsMod.PixelFormat],
-    `type`: js.UndefOr[typingsJapgolly.three.constantsMod.TextureDataType],
-    anisotropy: js.UndefOr[Double]
-  ) = this()
-  def this(
-    canvas: HTMLImageElement,
-    mapping: js.UndefOr[typingsJapgolly.three.constantsMod.Mapping],
-    wrapS: js.UndefOr[typingsJapgolly.three.constantsMod.Wrapping],
-    wrapT: js.UndefOr[typingsJapgolly.three.constantsMod.Wrapping],
-    magFilter: js.UndefOr[typingsJapgolly.three.constantsMod.TextureFilter],
-    minFilter: js.UndefOr[typingsJapgolly.three.constantsMod.TextureFilter],
-    format: js.UndefOr[typingsJapgolly.three.constantsMod.PixelFormat],
-    `type`: js.UndefOr[typingsJapgolly.three.constantsMod.TextureDataType],
-    anisotropy: js.UndefOr[Double]
-  ) = this()
-  def this(
-    canvas: HTMLVideoElement,
-    mapping: js.UndefOr[typingsJapgolly.three.constantsMod.Mapping],
-    wrapS: js.UndefOr[typingsJapgolly.three.constantsMod.Wrapping],
-    wrapT: js.UndefOr[typingsJapgolly.three.constantsMod.Wrapping],
-    magFilter: js.UndefOr[typingsJapgolly.three.constantsMod.TextureFilter],
-    minFilter: js.UndefOr[typingsJapgolly.three.constantsMod.TextureFilter],
-    format: js.UndefOr[typingsJapgolly.three.constantsMod.PixelFormat],
-    `type`: js.UndefOr[typingsJapgolly.three.constantsMod.TextureDataType],
+    canvas: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap,
+    mapping: js.UndefOr[typingsJapgolly.three.srcConstantsMod.Mapping],
+    wrapS: js.UndefOr[typingsJapgolly.three.srcConstantsMod.Wrapping],
+    wrapT: js.UndefOr[typingsJapgolly.three.srcConstantsMod.Wrapping],
+    magFilter: js.UndefOr[typingsJapgolly.three.srcConstantsMod.TextureFilter],
+    minFilter: js.UndefOr[typingsJapgolly.three.srcConstantsMod.TextureFilter],
+    format: js.UndefOr[typingsJapgolly.three.srcConstantsMod.PixelFormat],
+    `type`: js.UndefOr[typingsJapgolly.three.srcConstantsMod.TextureDataType],
     anisotropy: js.UndefOr[Double]
   ) = this()
 }
-

@@ -10,10 +10,10 @@ A standalone AWS Signature V4 request signer targeting all JS environments
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/signature-v4-universal |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 0 |
-| # downloads        | 738 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 99.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fsignature-v4-universal)

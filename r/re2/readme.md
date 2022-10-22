@@ -1,7 +1,7 @@
 
 # Scala.js typings for re2
 
-Typings are for version 1.10.5
+Typings are for version 1.17.7
 
 ## Library description:
 Bindings for RE2: fast, safe alternative to backtracking regular expression engines.
@@ -10,14 +10,14 @@ Bindings for RE2: fast, safe alternative to backtracking regular expression engi
 | ------------------ | :-------------: |
 | Full name          | re2 |
 | Keywords           | RegExp, RegEx, text processing, PCRE alternative |
-| # releases         | 16 |
-| # dependents       | 8 |
-| # downloads        | 163852 |
-| # stars            | 4 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 2145164.0 |
+| # stars            | 366.0 |
 
 ## Links
-- [Homepage](http://github.com/uhop/node-re2)
-- [Bugs](http://github.com/uhop/node-re2/issues)
+- [Homepage](https://github.com/uhop/node-re2)
+- [Bugs](https://github.com/uhop/node-re2/issues)
 - [Repository](https://github.com/uhop/node-re2)
 - [Npm](https://www.npmjs.com/package/re2)
     

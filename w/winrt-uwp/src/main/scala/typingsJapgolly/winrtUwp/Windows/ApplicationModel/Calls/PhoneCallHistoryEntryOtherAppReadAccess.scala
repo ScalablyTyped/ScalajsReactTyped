@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Calls
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhoneCallHistoryEntryOtherAppReadAccess extends js.Object
-
+sealed trait PhoneCallHistoryEntryOtherAppReadAccess extends StObject
 /** The level of read access provided to other applications. */
 @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryEntryOtherAppReadAccess")
 @js.native
-object PhoneCallHistoryEntryOtherAppReadAccess extends js.Object {
+object PhoneCallHistoryEntryOtherAppReadAccess extends StObject {
+  
   /** Other applications have full read access to this PhoneCallHistoryEntry object. */
   @js.native
-  sealed trait full extends PhoneCallHistoryEntryOtherAppReadAccess
+  sealed trait full
+    extends StObject
+       with PhoneCallHistoryEntryOtherAppReadAccess
   
   /** Other applications can only read system-level information. */
   @js.native
-  sealed trait systemOnly extends PhoneCallHistoryEntryOtherAppReadAccess
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhoneCallHistoryEntryOtherAppReadAccess with Double] = js.native
-  /* 0 */ @js.native
-  object full extends TopLevel[full with Double]
-  
-  /* 1 */ @js.native
-  object systemOnly extends TopLevel[systemOnly with Double]
-  
+  sealed trait systemOnly
+    extends StObject
+       with PhoneCallHistoryEntryOtherAppReadAccess
 }
-

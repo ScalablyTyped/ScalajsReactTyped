@@ -10,10 +10,10 @@ Compute SHA256 of bytes or strings.
 | ------------------ | :-------------: |
 | Full name          | sha256 |
 | Keywords           | string, strings, sha256, bytes, cryptography |
-| # releases         | 1 |
-| # dependents       | 213 |
-| # downloads        | 854539 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 237213.66666666666 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/cryptocoinjs/sha256)

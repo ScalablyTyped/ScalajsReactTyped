@@ -1,31 +1,32 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ExpressionStatement
-  extends SimpleStatement
+  extends StObject
      with BaseASTNode
-     with ASTNode {
+     with ASTNode
+     with SimpleStatement {
+  
   var expression: Expression
+  
   @JSName("type")
   var type_ExpressionStatement: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ExpressionStatement
 }
-
 object ExpressionStatement {
-  @scala.inline
-  def apply(
-    expression: Expression,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ExpressionStatement,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ExpressionStatement = {
+  
+  inline def apply(expression: Expression): ExpressionStatement = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ExpressionStatement")
     __obj.asInstanceOf[ExpressionStatement]
   }
+  
+  extension [Self <: ExpressionStatement](x: Self) {
+    
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ExpressionStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

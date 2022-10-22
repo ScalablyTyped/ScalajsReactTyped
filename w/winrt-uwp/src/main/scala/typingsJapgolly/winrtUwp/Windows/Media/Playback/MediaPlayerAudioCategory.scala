@@ -1,88 +1,73 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Playback
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaPlayerAudioCategory extends js.Object
-
+sealed trait MediaPlayerAudioCategory extends StObject
 /** Specifies the types of audio that can be played by a media player. */
 @JSGlobal("Windows.Media.Playback.MediaPlayerAudioCategory")
 @js.native
-object MediaPlayerAudioCategory extends js.Object {
+object MediaPlayerAudioCategory extends StObject {
+  
   /** The audio is used for alerts. */
   @js.native
-  sealed trait alerts extends MediaPlayerAudioCategory
+  sealed trait alerts
+    extends StObject
+       with MediaPlayerAudioCategory
   
   /** The audio is used for communications. */
   @js.native
-  sealed trait communications extends MediaPlayerAudioCategory
+  sealed trait communications
+    extends StObject
+       with MediaPlayerAudioCategory
   
   /** The audio is used for game chat. */
   @js.native
-  sealed trait gameChat extends MediaPlayerAudioCategory
+  sealed trait gameChat
+    extends StObject
+       with MediaPlayerAudioCategory
   
   /** The audio is a game effect. */
   @js.native
-  sealed trait gameEffects extends MediaPlayerAudioCategory
+  sealed trait gameEffects
+    extends StObject
+       with MediaPlayerAudioCategory
   
   /** The audio is game media, such as background music. */
   @js.native
-  sealed trait gameMedia extends MediaPlayerAudioCategory
+  sealed trait gameMedia
+    extends StObject
+       with MediaPlayerAudioCategory
   
   /** The audio is for media playback. */
   @js.native
-  sealed trait media extends MediaPlayerAudioCategory
+  sealed trait media
+    extends StObject
+       with MediaPlayerAudioCategory
   
   /** The audio is for movie playback. */
   @js.native
-  sealed trait movie extends MediaPlayerAudioCategory
+  sealed trait movie
+    extends StObject
+       with MediaPlayerAudioCategory
   
   /** The audio type is not one of the provided enumeration values. */
   @js.native
-  sealed trait other extends MediaPlayerAudioCategory
+  sealed trait other
+    extends StObject
+       with MediaPlayerAudioCategory
   
   /** The audio is a sound effect. */
   @js.native
-  sealed trait soundEffects extends MediaPlayerAudioCategory
+  sealed trait soundEffects
+    extends StObject
+       with MediaPlayerAudioCategory
   
   /** The audio is used for speech. */
   @js.native
-  sealed trait speech extends MediaPlayerAudioCategory
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaPlayerAudioCategory with Double] = js.native
-  /* 2 */ @js.native
-  object alerts extends TopLevel[alerts with Double]
-  
-  /* 1 */ @js.native
-  object communications extends TopLevel[communications with Double]
-  
-  /* 6 */ @js.native
-  object gameChat extends TopLevel[gameChat with Double]
-  
-  /* 4 */ @js.native
-  object gameEffects extends TopLevel[gameEffects with Double]
-  
-  /* 5 */ @js.native
-  object gameMedia extends TopLevel[gameMedia with Double]
-  
-  /* 9 */ @js.native
-  object media extends TopLevel[media with Double]
-  
-  /* 8 */ @js.native
-  object movie extends TopLevel[movie with Double]
-  
-  /* 0 */ @js.native
-  object other extends TopLevel[other with Double]
-  
-  /* 3 */ @js.native
-  object soundEffects extends TopLevel[soundEffects with Double]
-  
-  /* 7 */ @js.native
-  object speech extends TopLevel[speech with Double]
-  
+  sealed trait speech
+    extends StObject
+       with MediaPlayerAudioCategory
 }
-

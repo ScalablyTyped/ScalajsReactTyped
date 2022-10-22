@@ -1,38 +1,39 @@
 package typingsJapgolly.reactMdl.mod
 
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
+import typingsJapgolly.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MenuProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any]
+  extends StObject
+     with HTMLProps[Any]
      with RippleComponent {
+  
   var align: js.UndefOr[String] = js.undefined
+  
   @JSName("target")
   var target_MenuProps: String
+  
   var valign: js.UndefOr[String] = js.undefined
 }
-
 object MenuProps {
-  @scala.inline
-  def apply(
-    target: String,
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    RippleComponent: RippleComponent = null,
-    align: String = null,
-    valign: String = null
-  ): MenuProps = {
+  
+  inline def apply(target: String): MenuProps = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (RippleComponent != null) js.Dynamic.global.Object.assign(__obj, RippleComponent)
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuProps]
   }
+  
+  extension [Self <: MenuProps](x: Self) {
+    
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setValign(value: String): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
+    
+    inline def setValignUndefined: Self = StObject.set(x, "valign", js.undefined)
+  }
 }
-

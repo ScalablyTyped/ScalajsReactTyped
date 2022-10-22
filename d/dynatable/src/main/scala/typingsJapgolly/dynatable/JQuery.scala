@@ -2,17 +2,12 @@ package typingsJapgolly.dynatable
 
 import typingsJapgolly.dynatable.JQueryDynatable.Dynatable
 import typingsJapgolly.dynatable.JQueryDynatable.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JQuery extends js.Object {
-  /**
-    * @constructor
-    */
-  @JSName("dynatable")
-  var dynatable_Original: Dynatable = js.native
+trait JQuery extends StObject {
+  
   /**
     * Initialize Dynatable plugin
     *
@@ -21,7 +16,23 @@ trait JQuery extends js.Object {
   /**
     * @constructor
     */
-  def dynatable(): JQuery = js.native
-  def dynatable(options: Options): JQuery = js.native
+  def dynatable(): JQuery
+  def dynatable(options: Options): JQuery
+  /**
+    * @constructor
+    */
+  @JSName("dynatable")
+  var dynatable_Original: Dynatable
 }
-
+object JQuery {
+  
+  inline def apply(dynatable: Dynatable): JQuery = {
+    val __obj = js.Dynamic.literal(dynatable = dynatable.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  extension [Self <: JQuery](x: Self) {
+    
+    inline def setDynatable(value: Dynatable): Self = StObject.set(x, "dynatable", value.asInstanceOf[js.Any])
+  }
+}

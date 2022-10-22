@@ -1,27 +1,23 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`16`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`16`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`16`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
+  - typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`16`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
 */
-trait HTMLDlgEdge extends js.Object
-
+trait HTMLDlgEdge extends StObject
 object HTMLDlgEdge {
-  @scala.inline
-  def HTMLDlgEdgeRaised: `16` = this.cast(16)
-  @scala.inline
-  def HTMLDlgEdgeSunken: `0` = this.cast(0)
-  @scala.inline
-  def HTMLDlgEdge_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def HTMLDlgEdgeRaised: `16` = 16.asInstanceOf[`16`]
+  
+  inline def HTMLDlgEdgeSunken: `0` = 0.asInstanceOf[`0`]
+  
+  inline def HTMLDlgEdge_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }
-

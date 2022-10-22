@@ -1,34 +1,40 @@
 package typingsJapgolly.materialUi.MaterialUI
 
-import typingsJapgolly.react.mod.Key
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.facade.React.Component
 import typingsJapgolly.react.mod.LegacyRef
 import typingsJapgolly.react.mod.SVGAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.react.mod.Props because var conflicts: children. Inlined key, ref */ trait SvgIconProps
-  extends SVGAttributes[js.Object] {
+trait SvgIconProps
+  extends StObject
+     with SVGAttributes[js.Object] {
+  
   var hoverColor: js.UndefOr[String] = js.undefined
-  var key: js.UndefOr[Key] = js.undefined
-  var ref: js.UndefOr[LegacyRef[SvgIcon]] = js.undefined
+  
+  var ref: js.UndefOr[LegacyRef[Component[SvgIconProps & js.Object, js.Object]]] = js.undefined
 }
-
 object SvgIconProps {
-  @scala.inline
-  def apply(
-    SVGAttributes: SVGAttributes[js.Object] = null,
-    hoverColor: String = null,
-    key: Key = null,
-    ref: LegacyRef[SvgIcon] = null
-  ): SvgIconProps = {
+  
+  inline def apply(): SvgIconProps = {
     val __obj = js.Dynamic.literal()
-    if (SVGAttributes != null) js.Dynamic.global.Object.assign(__obj, SVGAttributes)
-    if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvgIconProps]
   }
+  
+  extension [Self <: SvgIconProps](x: Self) {
+    
+    inline def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
+    
+    inline def setHoverColorUndefined: Self = StObject.set(x, "hoverColor", js.undefined)
+    
+    inline def setRef(value: LegacyRef[Component[SvgIconProps & js.Object, js.Object]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefFunction1(value: (Component[SvgIconProps & js.Object, js.Object]) | Null => Callback): Self = StObject.set(x, "ref", js.Any.fromFunction1((t0: (Component[SvgIconProps & js.Object, js.Object]) | Null) => value(t0).runNow()))
+    
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+  }
 }
-

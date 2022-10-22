@@ -1,12 +1,13 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("google.visualization.ChartBaseClearable")
 @js.native
-abstract class ChartBaseClearable () extends ChartBase {
+trait ChartBaseClearable
+  extends StObject
+     with ChartBase {
+  
   def clearChart(): Unit = js.native
 }
-

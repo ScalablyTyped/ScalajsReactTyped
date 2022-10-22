@@ -1,19 +1,24 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "TextDocumentEdit")
-@js.native
-object TextDocumentEdit extends js.Object {
+object TextDocumentEdit {
+  
+  @JSImport("vscode-languageclient", "TextDocumentEdit")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new `TextDocumentEdit`
     */
-  def create(
-    textDocument: typingsJapgolly.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier,
-    edits: js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.TextEdit]
-  ): typingsJapgolly.vscodeLanguageserverTypes.mod.TextDocumentEdit = js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentEdit */ Boolean = js.native
+  inline def create(
+    textDocument: typingsJapgolly.vscodeLanguageserverTypes.mod.OptionalVersionedTextDocumentIdentifier,
+    edits: js.Array[
+      typingsJapgolly.vscodeLanguageserverTypes.mod.TextEdit | typingsJapgolly.vscodeLanguageserverTypes.mod.AnnotatedTextEdit
+    ]
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.TextDocumentEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(textDocument.asInstanceOf[js.Any], edits.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.TextDocumentEdit]
+  
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentEdit */ Boolean]
 }
-

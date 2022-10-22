@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular-sanitize
 
-Typings are for version 1.7
+Typings are for version 1.8
 
 ## Library description:
 AngularJS module for sanitizing HTML
@@ -10,10 +10,10 @@ AngularJS module for sanitizing HTML
 | ------------------ | :-------------: |
 | Full name          | angular-sanitize |
 | Keywords           | angular, framework, browser, html, client-side |
-| # releases         | 14 |
-| # dependents       | 320 |
-| # downloads        | 10633664 |
-| # stars            | 7 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1149207.3333333333 |
+| # stars            | 59430.0 |
 
 ## Links
 - [Homepage](http://angularjs.org)

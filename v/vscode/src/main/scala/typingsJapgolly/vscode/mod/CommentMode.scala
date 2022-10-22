@@ -1,35 +1,33 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CommentMode extends js.Object
-
+sealed trait CommentMode extends StObject
 @JSImport("vscode", "CommentMode")
 @js.native
-object CommentMode extends js.Object {
-  /**
-  		 * Displays the comment editor
-  		 */
-  @js.native
-  sealed trait Editing extends CommentMode
-  
-  /**
-  		 * Displays the preview of the comment
-  		 */
-  @js.native
-  sealed trait Preview extends CommentMode
+object CommentMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CommentMode with Double] = js.native
-  /* 0 */ @js.native
-  object Editing extends TopLevel[Editing with Double]
+  def apply(value: Double): js.UndefOr[CommentMode & Double] = js.native
   
-  /* 1 */ @js.native
-  object Preview extends TopLevel[Preview with Double]
+  /**
+    * Displays the comment editor
+    */
+  @js.native
+  sealed trait Editing
+    extends StObject
+       with CommentMode
+  /* 0 */ val Editing: typingsJapgolly.vscode.mod.CommentMode.Editing & Double = js.native
   
+  /**
+    * Displays the preview of the comment
+    */
+  @js.native
+  sealed trait Preview
+    extends StObject
+       with CommentMode
+  /* 1 */ val Preview: typingsJapgolly.vscode.mod.CommentMode.Preview & Double = js.native
 }
-

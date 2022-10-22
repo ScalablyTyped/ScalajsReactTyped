@@ -1,36 +1,54 @@
 package typingsJapgolly.gijgo.Types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridParamNames extends js.Object {
+trait GridParamNames extends StObject {
+  
   var direction: js.UndefOr[String] = js.undefined
+  
   var groupBy: js.UndefOr[String] = js.undefined
+  
   var groupByDirection: js.UndefOr[String] = js.undefined
+  
   var limit: js.UndefOr[String] = js.undefined
+  
   var page: js.UndefOr[String] = js.undefined
+  
   var sortBy: js.UndefOr[String] = js.undefined
 }
-
 object GridParamNames {
-  @scala.inline
-  def apply(
-    direction: String = null,
-    groupBy: String = null,
-    groupByDirection: String = null,
-    limit: String = null,
-    page: String = null,
-    sortBy: String = null
-  ): GridParamNames = {
+  
+  inline def apply(): GridParamNames = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
-    if (groupByDirection != null) __obj.updateDynamic("groupByDirection")(groupByDirection.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridParamNames]
   }
+  
+  extension [Self <: GridParamNames](x: Self) {
+    
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+    
+    inline def setGroupByDirection(value: String): Self = StObject.set(x, "groupByDirection", value.asInstanceOf[js.Any])
+    
+    inline def setGroupByDirectionUndefined: Self = StObject.set(x, "groupByDirection", js.undefined)
+    
+    inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
+    
+    inline def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+  }
 }
-

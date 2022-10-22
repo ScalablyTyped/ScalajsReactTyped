@@ -1,56 +1,96 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.Column")
 @js.native
-class Column protected () extends js.Object {
+trait Column extends StObject {
+  
   val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  var Borders: typingsJapgolly.activexWord.Word.Borders = js.native
-  val Cells: typingsJapgolly.activexWord.Word.Cells = js.native
-  val Creator: Double = js.native
-  val Index: Double = js.native
-  val IsFirst: Boolean = js.native
-  val IsLast: Boolean = js.native
-  val NestingLevel: Double = js.native
-  val Next: Column = js.native
-  val Parent: js.Any = js.native
-  var PreferredWidth: Double = js.native
-  var PreferredWidthType: WdPreferredWidthType = js.native
-  val Previous: Column = js.native
-  val Shading: typingsJapgolly.activexWord.Word.Shading = js.native
-  var Width: Double = js.native
-  @JSName("Word.Column_typekey")
-  var WordDotColumn_typekey: Column = js.native
+  
   def AutoFit(): Unit = js.native
+  
+  var Borders: typingsJapgolly.activexWord.Word.Borders = js.native
+  
+  val Cells: typingsJapgolly.activexWord.Word.Cells = js.native
+  
+  val Creator: Double = js.native
+  
   def Delete(): Unit = js.native
+  
+  val Index: Double = js.native
+  
+  val IsFirst: Boolean = js.native
+  
+  val IsLast: Boolean = js.native
+  
+  val NestingLevel: Double = js.native
+  
+  val Next: Column = js.native
+  
+  val Parent: Any = js.native
+  
+  var PreferredWidth: Double = js.native
+  
+  var PreferredWidthType: WdPreferredWidthType = js.native
+  
+  val Previous: Column = js.native
+  
   def Select(): Unit = js.native
+  
   def SetWidth(ColumnWidth: Double, RulerStyle: WdRulerStyle): Unit = js.native
+  
+  val Shading: typingsJapgolly.activexWord.Word.Shading = js.native
+  
   def Sort(
-    ExcludeHeader: js.UndefOr[js.Any],
-    SortFieldType: js.UndefOr[js.Any],
-    SortOrder: js.UndefOr[js.Any],
-    CaseSensitive: js.UndefOr[js.Any],
-    BidiSort: js.UndefOr[js.Any],
-    IgnoreThe: js.UndefOr[js.Any],
-    IgnoreKashida: js.UndefOr[js.Any],
-    IgnoreDiacritics: js.UndefOr[js.Any],
-    IgnoreHe: js.UndefOr[js.Any],
-    LanguageID: js.UndefOr[js.Any]
+    ExcludeHeader: js.UndefOr[Any],
+    SortFieldType: js.UndefOr[Any],
+    SortOrder: js.UndefOr[Any],
+    CaseSensitive: js.UndefOr[Any],
+    BidiSort: js.UndefOr[Any],
+    IgnoreThe: js.UndefOr[Any],
+    IgnoreKashida: js.UndefOr[Any],
+    IgnoreDiacritics: js.UndefOr[Any],
+    IgnoreHe: js.UndefOr[Any],
+    LanguageID: js.UndefOr[Any]
   ): Unit = js.native
+  
   def SortOld(): Unit = js.native
-  def SortOld(ExcludeHeader: js.Any): Unit = js.native
-  def SortOld(ExcludeHeader: js.Any, SortFieldType: js.Any): Unit = js.native
-  def SortOld(ExcludeHeader: js.Any, SortFieldType: js.Any, SortOrder: js.Any): Unit = js.native
-  def SortOld(ExcludeHeader: js.Any, SortFieldType: js.Any, SortOrder: js.Any, CaseSensitive: js.Any): Unit = js.native
-  def SortOld(
-    ExcludeHeader: js.Any,
-    SortFieldType: js.Any,
-    SortOrder: js.Any,
-    CaseSensitive: js.Any,
-    LanguageID: js.Any
-  ): Unit = js.native
+  def SortOld(ExcludeHeader: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Any, SortOrder: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Any, SortOrder: Any, CaseSensitive: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Any, SortOrder: Any, CaseSensitive: Any, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Any, SortOrder: Any, CaseSensitive: Unit, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Any, SortOrder: Unit, CaseSensitive: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Any, SortOrder: Unit, CaseSensitive: Any, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Any, SortOrder: Unit, CaseSensitive: Unit, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Unit, SortOrder: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Unit, SortOrder: Any, CaseSensitive: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Unit, SortOrder: Any, CaseSensitive: Any, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Unit, SortOrder: Any, CaseSensitive: Unit, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Unit, SortOrder: Unit, CaseSensitive: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Unit, SortOrder: Unit, CaseSensitive: Any, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Any, SortFieldType: Unit, SortOrder: Unit, CaseSensitive: Unit, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Any, SortOrder: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Any, SortOrder: Any, CaseSensitive: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Any, SortOrder: Any, CaseSensitive: Any, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Any, SortOrder: Any, CaseSensitive: Unit, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Any, SortOrder: Unit, CaseSensitive: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Any, SortOrder: Unit, CaseSensitive: Any, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Any, SortOrder: Unit, CaseSensitive: Unit, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Unit, SortOrder: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Unit, SortOrder: Any, CaseSensitive: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Unit, SortOrder: Any, CaseSensitive: Any, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Unit, SortOrder: Any, CaseSensitive: Unit, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Unit, SortOrder: Unit, CaseSensitive: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Unit, SortOrder: Unit, CaseSensitive: Any, LanguageID: Any): Unit = js.native
+  def SortOld(ExcludeHeader: Unit, SortFieldType: Unit, SortOrder: Unit, CaseSensitive: Unit, LanguageID: Any): Unit = js.native
+  
+  var Width: Double = js.native
+  
+  /* private */ @JSName("Word.Column_typekey")
+  var WordDotColumn_typekey: Column = js.native
 }
-

@@ -2,25 +2,34 @@ package typingsJapgolly.hapiJoi.mod
 
 import typingsJapgolly.hapiJoi.hapiJoiStrings.ascending
 import typingsJapgolly.hapiJoi.hapiJoiStrings.descending
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArraySortOptions extends js.Object {
+trait ArraySortOptions extends StObject {
+  
   var by: js.UndefOr[String | Reference] = js.undefined
+  
   /**
     * @default 'ascending'
     */
   var order: js.UndefOr[ascending | descending] = js.undefined
 }
-
 object ArraySortOptions {
-  @scala.inline
-  def apply(by: String | Reference = null, order: ascending | descending = null): ArraySortOptions = {
+  
+  inline def apply(): ArraySortOptions = {
     val __obj = js.Dynamic.literal()
-    if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArraySortOptions]
   }
+  
+  extension [Self <: ArraySortOptions](x: Self) {
+    
+    inline def setBy(value: String | Reference): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
+    
+    inline def setByUndefined: Self = StObject.set(x, "by", js.undefined)
+    
+    inline def setOrder(value: ascending | descending): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+  }
 }
-

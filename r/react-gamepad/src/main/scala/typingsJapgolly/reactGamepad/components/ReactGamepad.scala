@@ -1,88 +1,81 @@
 package typingsJapgolly.reactGamepad.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactGamepad.mod.Axis
 import typingsJapgolly.reactGamepad.mod.Button
 import typingsJapgolly.reactGamepad.mod.Layout
 import typingsJapgolly.reactGamepad.mod.Props
 import typingsJapgolly.reactGamepad.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactGamepad {
-  def apply(
-    deadZone: Int | Double = null,
-    gamepadIndex: Int | Double = null,
-    layout: Layout = null,
-    onA: js.UndefOr[Callback] = js.undefined,
-    onAxisChange: (/* axisName */ Axis, /* value */ Double, /* previousValue */ Double) => Callback = null,
-    onB: js.UndefOr[Callback] = js.undefined,
-    onButtonChange: (/* buttonName */ Button, /* pressed */ Boolean) => Callback = null,
-    onButtonDown: /* buttonName */ Button => Callback = null,
-    onButtonUp: /* buttonName */ Button => Callback = null,
-    onConnect: /* gamepadIndex */ Double => Callback = null,
-    onDisconnect: /* gamepadIndex */ Double => Callback = null,
-    onDown: js.UndefOr[Callback] = js.undefined,
-    onLB: js.UndefOr[Callback] = js.undefined,
-    onLS: js.UndefOr[Callback] = js.undefined,
-    onLT: js.UndefOr[Callback] = js.undefined,
-    onLeft: js.UndefOr[Callback] = js.undefined,
-    onRB: js.UndefOr[Callback] = js.undefined,
-    onRS: js.UndefOr[Callback] = js.undefined,
-    onRT: js.UndefOr[Callback] = js.undefined,
-    onRight: js.UndefOr[Callback] = js.undefined,
-    onUp: js.UndefOr[Callback] = js.undefined,
-    onX: js.UndefOr[Callback] = js.undefined,
-    onY: js.UndefOr[Callback] = js.undefined,
-    stickThreshold: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, default, Unit, Props] = {
-    val __obj = js.Dynamic.literal()
   
-      if (deadZone != null) __obj.updateDynamic("deadZone")(deadZone.asInstanceOf[js.Any])
-    if (gamepadIndex != null) __obj.updateDynamic("gamepadIndex")(gamepadIndex.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    onA.foreach(p => __obj.updateDynamic("onA")(p.toJsFn))
-    if (onAxisChange != null) __obj.updateDynamic("onAxisChange")(js.Any.fromFunction3((t0: /* axisName */ typingsJapgolly.reactGamepad.mod.Axis, t1: /* value */ scala.Double, t2: /* previousValue */ scala.Double) => onAxisChange(t0, t1, t2).runNow()))
-    onB.foreach(p => __obj.updateDynamic("onB")(p.toJsFn))
-    if (onButtonChange != null) __obj.updateDynamic("onButtonChange")(js.Any.fromFunction2((t0: /* buttonName */ typingsJapgolly.reactGamepad.mod.Button, t1: /* pressed */ scala.Boolean) => onButtonChange(t0, t1).runNow()))
-    if (onButtonDown != null) __obj.updateDynamic("onButtonDown")(js.Any.fromFunction1((t0: /* buttonName */ typingsJapgolly.reactGamepad.mod.Button) => onButtonDown(t0).runNow()))
-    if (onButtonUp != null) __obj.updateDynamic("onButtonUp")(js.Any.fromFunction1((t0: /* buttonName */ typingsJapgolly.reactGamepad.mod.Button) => onButtonUp(t0).runNow()))
-    if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction1((t0: /* gamepadIndex */ scala.Double) => onConnect(t0).runNow()))
-    if (onDisconnect != null) __obj.updateDynamic("onDisconnect")(js.Any.fromFunction1((t0: /* gamepadIndex */ scala.Double) => onDisconnect(t0).runNow()))
-    onDown.foreach(p => __obj.updateDynamic("onDown")(p.toJsFn))
-    onLB.foreach(p => __obj.updateDynamic("onLB")(p.toJsFn))
-    onLS.foreach(p => __obj.updateDynamic("onLS")(p.toJsFn))
-    onLT.foreach(p => __obj.updateDynamic("onLT")(p.toJsFn))
-    onLeft.foreach(p => __obj.updateDynamic("onLeft")(p.toJsFn))
-    onRB.foreach(p => __obj.updateDynamic("onRB")(p.toJsFn))
-    onRS.foreach(p => __obj.updateDynamic("onRS")(p.toJsFn))
-    onRT.foreach(p => __obj.updateDynamic("onRT")(p.toJsFn))
-    onRight.foreach(p => __obj.updateDynamic("onRight")(p.toJsFn))
-    onUp.foreach(p => __obj.updateDynamic("onUp")(p.toJsFn))
-    onX.foreach(p => __obj.updateDynamic("onX")(p.toJsFn))
-    onY.foreach(p => __obj.updateDynamic("onY")(p.toJsFn))
-    if (stickThreshold != null) __obj.updateDynamic("stickThreshold")(stickThreshold.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactGamepad.mod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactGamepad.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactGamepad.mod.Props])(children: _*)
-  }
   @JSImport("react-gamepad", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def deadZone(value: Double): this.type = set("deadZone", value.asInstanceOf[js.Any])
+    
+    inline def gamepadIndex(value: Double): this.type = set("gamepadIndex", value.asInstanceOf[js.Any])
+    
+    inline def layout(value: Layout): this.type = set("layout", value.asInstanceOf[js.Any])
+    
+    inline def onA(value: Callback): this.type = set("onA", value.toJsFn)
+    
+    inline def onAxisChange(value: (/* axisName */ Axis, /* value */ Double, /* previousValue */ Double) => Callback): this.type = set("onAxisChange", js.Any.fromFunction3((t0: /* axisName */ Axis, t1: /* value */ Double, t2: /* previousValue */ Double) => (value(t0, t1, t2)).runNow()))
+    
+    inline def onB(value: Callback): this.type = set("onB", value.toJsFn)
+    
+    inline def onBack(value: Callback): this.type = set("onBack", value.toJsFn)
+    
+    inline def onButtonChange(value: (/* buttonName */ Button, /* pressed */ Boolean) => Callback): this.type = set("onButtonChange", js.Any.fromFunction2((t0: /* buttonName */ Button, t1: /* pressed */ Boolean) => (value(t0, t1)).runNow()))
+    
+    inline def onButtonDown(value: /* buttonName */ Button => Callback): this.type = set("onButtonDown", js.Any.fromFunction1((t0: /* buttonName */ Button) => value(t0).runNow()))
+    
+    inline def onButtonUp(value: /* buttonName */ Button => Callback): this.type = set("onButtonUp", js.Any.fromFunction1((t0: /* buttonName */ Button) => value(t0).runNow()))
+    
+    inline def onConnect(value: /* gamepadIndex */ Double => Callback): this.type = set("onConnect", js.Any.fromFunction1((t0: /* gamepadIndex */ Double) => value(t0).runNow()))
+    
+    inline def onDisconnect(value: /* gamepadIndex */ Double => Callback): this.type = set("onDisconnect", js.Any.fromFunction1((t0: /* gamepadIndex */ Double) => value(t0).runNow()))
+    
+    inline def onDown(value: Callback): this.type = set("onDown", value.toJsFn)
+    
+    inline def onLB(value: Callback): this.type = set("onLB", value.toJsFn)
+    
+    inline def onLS(value: Callback): this.type = set("onLS", value.toJsFn)
+    
+    inline def onLT(value: Callback): this.type = set("onLT", value.toJsFn)
+    
+    inline def onLeft(value: Callback): this.type = set("onLeft", value.toJsFn)
+    
+    inline def onRB(value: Callback): this.type = set("onRB", value.toJsFn)
+    
+    inline def onRS(value: Callback): this.type = set("onRS", value.toJsFn)
+    
+    inline def onRT(value: Callback): this.type = set("onRT", value.toJsFn)
+    
+    inline def onRight(value: Callback): this.type = set("onRight", value.toJsFn)
+    
+    inline def onStart(value: Callback): this.type = set("onStart", value.toJsFn)
+    
+    inline def onUp(value: Callback): this.type = set("onUp", value.toJsFn)
+    
+    inline def onX(value: Callback): this.type = set("onX", value.toJsFn)
+    
+    inline def onY(value: Callback): this.type = set("onY", value.toJsFn)
+    
+    inline def stickThreshold(value: Double): this.type = set("stickThreshold", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactGamepad.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 检索策略类型
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
-trait PlusMapsSearchPolicy extends js.Object {
+trait PlusMapsSearchPolicy extends StObject {
+  
   /**
     * 最短距离优先
     * 检索策略类型常量，用于驾车检索策略
@@ -18,6 +19,7 @@ trait PlusMapsSearchPolicy extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var DRIVING_DIS_FIRST: js.UndefOr[Double] = js.undefined
+  
   /**
     * 最少费用优先
     * 检索策略类型常量，用于驾车检索策略
@@ -25,6 +27,7 @@ trait PlusMapsSearchPolicy extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var DRIVING_FEE_FIRST: js.UndefOr[Double] = js.undefined
+  
   /**
     * 无高速公路线路
     * 检索策略类型常量，用于驾车检索策略
@@ -32,6 +35,7 @@ trait PlusMapsSearchPolicy extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var DRIVING_NO_EXPRESSWAY: js.UndefOr[Double] = js.undefined
+  
   /**
     * 选择车票花销最少优先
     * 检索策略类型常量，用于公交检索策略
@@ -39,6 +43,7 @@ trait PlusMapsSearchPolicy extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var TRANSIT_FEE_FIRST: js.UndefOr[Double] = js.undefined
+  
   /**
     * 时间优先
     * 检索策略类型常量，用于公交检索策略
@@ -46,6 +51,7 @@ trait PlusMapsSearchPolicy extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var TRANSIT_TIME_FIRST: js.UndefOr[Double] = js.undefined
+  
   /**
     * 最少换乘优先
     * 检索策略类型常量，用于公交检索策略
@@ -53,6 +59,7 @@ trait PlusMapsSearchPolicy extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var TRANSIT_TRANSFER_FIRST: js.UndefOr[Double] = js.undefined
+  
   /**
     * 最少步行距离优先
     * 检索策略类型常量，用于公交检索策略
@@ -61,27 +68,41 @@ trait PlusMapsSearchPolicy extends js.Object {
     */
   var TRANSIT_WALK_FIRST: js.UndefOr[Double] = js.undefined
 }
-
 object PlusMapsSearchPolicy {
-  @scala.inline
-  def apply(
-    DRIVING_DIS_FIRST: Int | Double = null,
-    DRIVING_FEE_FIRST: Int | Double = null,
-    DRIVING_NO_EXPRESSWAY: Int | Double = null,
-    TRANSIT_FEE_FIRST: Int | Double = null,
-    TRANSIT_TIME_FIRST: Int | Double = null,
-    TRANSIT_TRANSFER_FIRST: Int | Double = null,
-    TRANSIT_WALK_FIRST: Int | Double = null
-  ): PlusMapsSearchPolicy = {
+  
+  inline def apply(): PlusMapsSearchPolicy = {
     val __obj = js.Dynamic.literal()
-    if (DRIVING_DIS_FIRST != null) __obj.updateDynamic("DRIVING_DIS_FIRST")(DRIVING_DIS_FIRST.asInstanceOf[js.Any])
-    if (DRIVING_FEE_FIRST != null) __obj.updateDynamic("DRIVING_FEE_FIRST")(DRIVING_FEE_FIRST.asInstanceOf[js.Any])
-    if (DRIVING_NO_EXPRESSWAY != null) __obj.updateDynamic("DRIVING_NO_EXPRESSWAY")(DRIVING_NO_EXPRESSWAY.asInstanceOf[js.Any])
-    if (TRANSIT_FEE_FIRST != null) __obj.updateDynamic("TRANSIT_FEE_FIRST")(TRANSIT_FEE_FIRST.asInstanceOf[js.Any])
-    if (TRANSIT_TIME_FIRST != null) __obj.updateDynamic("TRANSIT_TIME_FIRST")(TRANSIT_TIME_FIRST.asInstanceOf[js.Any])
-    if (TRANSIT_TRANSFER_FIRST != null) __obj.updateDynamic("TRANSIT_TRANSFER_FIRST")(TRANSIT_TRANSFER_FIRST.asInstanceOf[js.Any])
-    if (TRANSIT_WALK_FIRST != null) __obj.updateDynamic("TRANSIT_WALK_FIRST")(TRANSIT_WALK_FIRST.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMapsSearchPolicy]
   }
+  
+  extension [Self <: PlusMapsSearchPolicy](x: Self) {
+    
+    inline def setDRIVING_DIS_FIRST(value: Double): Self = StObject.set(x, "DRIVING_DIS_FIRST", value.asInstanceOf[js.Any])
+    
+    inline def setDRIVING_DIS_FIRSTUndefined: Self = StObject.set(x, "DRIVING_DIS_FIRST", js.undefined)
+    
+    inline def setDRIVING_FEE_FIRST(value: Double): Self = StObject.set(x, "DRIVING_FEE_FIRST", value.asInstanceOf[js.Any])
+    
+    inline def setDRIVING_FEE_FIRSTUndefined: Self = StObject.set(x, "DRIVING_FEE_FIRST", js.undefined)
+    
+    inline def setDRIVING_NO_EXPRESSWAY(value: Double): Self = StObject.set(x, "DRIVING_NO_EXPRESSWAY", value.asInstanceOf[js.Any])
+    
+    inline def setDRIVING_NO_EXPRESSWAYUndefined: Self = StObject.set(x, "DRIVING_NO_EXPRESSWAY", js.undefined)
+    
+    inline def setTRANSIT_FEE_FIRST(value: Double): Self = StObject.set(x, "TRANSIT_FEE_FIRST", value.asInstanceOf[js.Any])
+    
+    inline def setTRANSIT_FEE_FIRSTUndefined: Self = StObject.set(x, "TRANSIT_FEE_FIRST", js.undefined)
+    
+    inline def setTRANSIT_TIME_FIRST(value: Double): Self = StObject.set(x, "TRANSIT_TIME_FIRST", value.asInstanceOf[js.Any])
+    
+    inline def setTRANSIT_TIME_FIRSTUndefined: Self = StObject.set(x, "TRANSIT_TIME_FIRST", js.undefined)
+    
+    inline def setTRANSIT_TRANSFER_FIRST(value: Double): Self = StObject.set(x, "TRANSIT_TRANSFER_FIRST", value.asInstanceOf[js.Any])
+    
+    inline def setTRANSIT_TRANSFER_FIRSTUndefined: Self = StObject.set(x, "TRANSIT_TRANSFER_FIRST", js.undefined)
+    
+    inline def setTRANSIT_WALK_FIRST(value: Double): Self = StObject.set(x, "TRANSIT_WALK_FIRST", value.asInstanceOf[js.Any])
+    
+    inline def setTRANSIT_WALK_FIRSTUndefined: Self = StObject.set(x, "TRANSIT_WALK_FIRST", js.undefined)
+  }
 }
-

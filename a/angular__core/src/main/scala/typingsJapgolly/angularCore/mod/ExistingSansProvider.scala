@@ -1,22 +1,27 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExistingSansProvider extends InjectableProvider {
+trait ExistingSansProvider
+  extends StObject
+     with InjectableProvider {
+  
   /**
     * Existing `token` to return. (Equivalent to `injector.get(useExisting)`)
     */
-  var useExisting: js.Any
+  var useExisting: Any
 }
-
 object ExistingSansProvider {
-  @scala.inline
-  def apply(useExisting: js.Any): ExistingSansProvider = {
-    val __obj = js.Dynamic.literal(useExisting = useExisting.asInstanceOf[js.Any])
   
+  inline def apply(useExisting: Any): ExistingSansProvider = {
+    val __obj = js.Dynamic.literal(useExisting = useExisting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExistingSansProvider]
   }
+  
+  extension [Self <: ExistingSansProvider](x: Self) {
+    
+    inline def setUseExisting(value: Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,31 +1,35 @@
 package typingsJapgolly.oracleOraclejet
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@oracle/oraclejet/ojattributegrouphandler", JSImport.Namespace)
-@js.native
-object ojattributegrouphandlerMod extends js.Object {
+object ojattributegrouphandlerMod {
+  
+  @JSImport("@oracle/oraclejet/ojattributegrouphandler", "AttributeGroupHandler")
   @js.native
-  class AttributeGroupHandler () extends js.Object {
-    def this(matchRules: StringDictionary[js.Any]) = this()
-    def addMatchRule(category: String, attributeValue: js.Any): Unit = js.native
-    def getCategoryAssignments(): js.Array[StringDictionary[_]] = js.native
-    def getValue(category: String): js.Any = js.native
-    def getValueRamp(): js.Array[_] = js.native
+  open class AttributeGroupHandler () extends StObject {
+    def this(matchRules: StringDictionary[Any]) = this()
+    
+    def addMatchRule(category: String, attributeValue: Any): Unit = js.native
+    
+    def getCategoryAssignments(): js.Array[StringDictionary[Any]] = js.native
+    
+    def getValue(category: String): Any = js.native
+    
+    def getValueRamp(): js.Array[Any] = js.native
   }
   
+  @JSImport("@oracle/oraclejet/ojattributegrouphandler", "ColorAttributeGroupHandler")
   @js.native
-  class ColorAttributeGroupHandler () extends AttributeGroupHandler {
-    def this(matchRules: StringDictionary[js.Any]) = this()
+  open class ColorAttributeGroupHandler () extends AttributeGroupHandler {
+    def this(matchRules: StringDictionary[Any]) = this()
   }
   
+  @JSImport("@oracle/oraclejet/ojattributegrouphandler", "ShapeAttributeGroupHandler")
   @js.native
-  class ShapeAttributeGroupHandler () extends AttributeGroupHandler {
-    def this(matchRules: StringDictionary[js.Any]) = this()
+  open class ShapeAttributeGroupHandler () extends AttributeGroupHandler {
+    def this(matchRules: StringDictionary[Any]) = this()
   }
-  
 }
-

@@ -1,163 +1,221 @@
 package typingsJapgolly.slickgrid.Slick
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Column[T /* <: SlickData */] extends js.Object {
+trait Column[T /* <: SlickData */] extends StObject {
+  
   /**
-  		* This accepts a function of the form function(cellNode, row, dataContext, colDef) and is used to post-process the cell's DOM node / nodes
-  		* @param cellNode
-  		* @param row
-  		* @param dataContext
-  		* @param colDef
-  		* @return
-  		**/
+    * This accepts a function of the form function(cellNode, row, dataContext, colDef) and is used to post-process the cell's DOM node / nodes
+    * @param cellNode
+    * @param row
+    * @param dataContext
+    * @param colDef
+    * @return
+    **/
   var asyncPostRender: js.UndefOr[
-    js.Function4[
-      /* cellNode */ js.Any, 
-      /* row */ js.Any, 
-      /* dataContext */ js.Any, 
-      /* colDef */ js.Any, 
-      Unit
-    ]
+    js.Function4[/* cellNode */ Any, /* row */ Any, /* dataContext */ Any, /* colDef */ Any, Unit]
   ] = js.undefined
+  
   /**
-  		* Used by the the slick.rowMoveManager.js plugin for moving rows. Has no effect without the plugin installed.
-  		**/
-  var behavior: js.UndefOr[js.Any] = js.undefined
+    * Used by the the slick.rowMoveManager.js plugin for moving rows. Has no effect without the plugin installed.
+    **/
+  var behavior: js.UndefOr[Any] = js.undefined
+  
   /**
-  		* In the "Add New" row, determines whether clicking cells in this column can trigger row addition. If true, clicking on the cell in this column in the "Add New" row will not trigger row addition.
-  		**/
+    * In the "Add New" row, determines whether clicking cells in this column can trigger row addition. If true, clicking on the cell in this column in the "Add New" row will not trigger row addition.
+    **/
   var cannotTriggerInsert: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* Accepts a string as a class name, applies that class to every row cell in the column.
-  		**/
+    * Accepts a string as a class name, applies that class to every row cell in the column.
+    **/
   var cssClass: js.UndefOr[String] = js.undefined
+  
   /**
-  		* When set to true, the first user click on the header will do a descending sort. When set to false, the first user click on the header will do an ascending sort.
-  		**/
+    * When set to true, the first user click on the header will do a descending sort. When set to false, the first user click on the header will do an ascending sort.
+    **/
   var defaultSortAsc: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* The editor for cell edits {TextEditor, IntegerEditor, DateEditor...} See slick.editors.js
-  		**/
-  var editor: js.UndefOr[js.Any] = js.undefined
-   // typeof Editors.Editor<T>;
+    * The editor for cell edits {TextEditor, IntegerEditor, DateEditor...} See slick.editors.js
+    **/
+  var editor: js.UndefOr[Any] = js.undefined
+  
+  // typeof Editors.Editor<T>;
   /**
-  		* The property name in the data object to pull content from. (This is assumed to be on the root of the data object.)
-  		**/
+    * The property name in the data object to pull content from. (This is assumed to be on the root of the data object.)
+    **/
   var field: js.UndefOr[String] = js.undefined
+  
   /**
-  		* When set to false, clicking on a cell in this column will not select the row for that cell. The cells in this column will also be skipped during tab navigation.
-  		**/
+    * When set to false, clicking on a cell in this column will not select the row for that cell. The cells in this column will also be skipped during tab navigation.
+    **/
   var focusable: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* This accepts a function of the form function(row, cell, value, columnDef, dataContext) and returns a formatted version of the data in each cell of this column. For example, setting formatter to function(r, c, v, cd, dc) { return "Hello!"; } would overwrite every value in the column with "Hello!" See defaultFormatter in slick.grid.js for an example formatter.
-  		* @param row
-  		* @param cell
-  		* @param value
-  		* @param columnDef
-  		* @param dataContext
-  		* @return
-  		**/
+    * This accepts a function of the form function(row, cell, value, columnDef, dataContext) and returns a formatted version of the data in each cell of this column. For example, setting formatter to function(r, c, v, cd, dc) { return "Hello!"; } would overwrite every value in the column with "Hello!" See defaultFormatter in slick.grid.js for an example formatter.
+    * @param row
+    * @param cell
+    * @param value
+    * @param columnDef
+    * @param dataContext
+    * @return
+    **/
   var formatter: js.UndefOr[Formatter[T]] = js.undefined
+  
   var header: js.UndefOr[Header] = js.undefined
+  
   /**
-  		* Accepts a string as a class name, applies that class to the cell for the column header.
-  		**/
+    * Accepts a string as a class name, applies that class to the cell for the column header.
+    **/
   var headerCssClass: js.UndefOr[String] = js.undefined
+  
   /**
-  		* A unique identifier for the column within the grid.
-  		**/
+    * A unique identifier for the column within the grid.
+    **/
   var id: js.UndefOr[String] = js.undefined
+  
   /**
-  		* Set the maximum allowable width of this column, in pixels.
-  		**/
+    * Set the maximum allowable width of this column, in pixels.
+    **/
   var maxWidth: js.UndefOr[Double] = js.undefined
+  
   /**
-  		*  Set the minimum allowable width of this column, in pixels.
-  		**/
+    *  Set the minimum allowable width of this column, in pixels.
+    **/
   var minWidth: js.UndefOr[Double] = js.undefined
+  
   /**
-  		* The text to display on the column heading.
-  		**/
+    * The text to display on the column heading.
+    **/
   var name: js.UndefOr[String] = js.undefined
+  
   /**
-  		* If set to true, whenever this column is resized, the entire table view will rerender.
-  		**/
+    * If set to true, whenever this column is resized, the entire table view will rerender.
+    **/
   var rerenderOnResize: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* If false, column can no longer be resized.
-  		**/
+    * If false, column can no longer be resized.
+    **/
   var resizable: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* If false, when a row is selected, the CSS class for selected cells ("selected" by default) is not applied to the cell in this column.
-  		**/
+    * If false, when a row is selected, the CSS class for selected cells ("selected" by default) is not applied to the cell in this column.
+    **/
   var selectable: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* If true, the column will be sortable by clicking on the header.
-  		**/
+    * If true, the column will be sortable by clicking on the header.
+    **/
   var sortable: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* If set to a non-empty string, a tooltip will appear on hover containing the string.
-  		**/
+    * If set to a non-empty string, a tooltip will appear on hover containing the string.
+    **/
   var toolTip: js.UndefOr[String] = js.undefined
+  
   /**
-  		* Width of the column in pixels. (May often be overridden by things like minWidth, maxWidth, forceFitColumns, etc.)
-  		**/
+    * Width of the column in pixels. (May often be overridden by things like minWidth, maxWidth, forceFitColumns, etc.)
+    **/
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object Column {
-  @scala.inline
-  def apply[T /* <: SlickData */](
-    asyncPostRender: (/* cellNode */ js.Any, /* row */ js.Any, /* dataContext */ js.Any, /* colDef */ js.Any) => Callback = null,
-    behavior: js.Any = null,
-    cannotTriggerInsert: js.UndefOr[Boolean] = js.undefined,
-    cssClass: String = null,
-    defaultSortAsc: js.UndefOr[Boolean] = js.undefined,
-    editor: js.Any = null,
-    field: String = null,
-    focusable: js.UndefOr[Boolean] = js.undefined,
-    formatter: (/* row */ Double, /* cell */ Double, /* value */ js.Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => CallbackTo[String] = null,
-    header: Header = null,
-    headerCssClass: String = null,
-    id: String = null,
-    maxWidth: Int | Double = null,
-    minWidth: Int | Double = null,
-    name: String = null,
-    rerenderOnResize: js.UndefOr[Boolean] = js.undefined,
-    resizable: js.UndefOr[Boolean] = js.undefined,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    sortable: js.UndefOr[Boolean] = js.undefined,
-    toolTip: String = null,
-    width: Int | Double = null
-  ): Column[T] = {
+  
+  inline def apply[T /* <: SlickData */](): Column[T] = {
     val __obj = js.Dynamic.literal()
-    if (asyncPostRender != null) __obj.updateDynamic("asyncPostRender")(js.Any.fromFunction4((t0: /* cellNode */ js.Any, t1: /* row */ js.Any, t2: /* dataContext */ js.Any, t3: /* colDef */ js.Any) => asyncPostRender(t0, t1, t2, t3).runNow()))
-    if (behavior != null) __obj.updateDynamic("behavior")(behavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(cannotTriggerInsert)) __obj.updateDynamic("cannotTriggerInsert")(cannotTriggerInsert.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultSortAsc)) __obj.updateDynamic("defaultSortAsc")(defaultSortAsc.asInstanceOf[js.Any])
-    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction5((t0: /* row */ scala.Double, t1: /* cell */ scala.Double, t2: /* value */ js.Any, t3: /* columnDef */ typingsJapgolly.slickgrid.Slick.Column[T], t4: /* dataContext */ typingsJapgolly.slickgrid.Slick.SlickData) => formatter(t0, t1, t2, t3, t4).runNow()))
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (headerCssClass != null) __obj.updateDynamic("headerCssClass")(headerCssClass.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(rerenderOnResize)) __obj.updateDynamic("rerenderOnResize")(rerenderOnResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
-    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column[T]]
   }
+  
+  extension [Self <: Column[?], T /* <: SlickData */](x: Self & Column[T]) {
+    
+    inline def setAsyncPostRender(value: (/* cellNode */ Any, /* row */ Any, /* dataContext */ Any, /* colDef */ Any) => Callback): Self = StObject.set(x, "asyncPostRender", js.Any.fromFunction4((t0: /* cellNode */ Any, t1: /* row */ Any, t2: /* dataContext */ Any, t3: /* colDef */ Any) => (value(t0, t1, t2, t3)).runNow()))
+    
+    inline def setAsyncPostRenderUndefined: Self = StObject.set(x, "asyncPostRender", js.undefined)
+    
+    inline def setBehavior(value: Any): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    
+    inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+    
+    inline def setCannotTriggerInsert(value: Boolean): Self = StObject.set(x, "cannotTriggerInsert", value.asInstanceOf[js.Any])
+    
+    inline def setCannotTriggerInsertUndefined: Self = StObject.set(x, "cannotTriggerInsert", js.undefined)
+    
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    
+    inline def setDefaultSortAsc(value: Boolean): Self = StObject.set(x, "defaultSortAsc", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultSortAscUndefined: Self = StObject.set(x, "defaultSortAsc", js.undefined)
+    
+    inline def setEditor(value: Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    
+    inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+    
+    inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
+    
+    inline def setFormatter(
+      value: (/* row */ Double, /* cell */ Double, /* value */ Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => String
+    ): Self = StObject.set(x, "formatter", js.Any.fromFunction5(value))
+    
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    
+    inline def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderCssClass(value: String): Self = StObject.set(x, "headerCssClass", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderCssClassUndefined: Self = StObject.set(x, "headerCssClass", js.undefined)
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRerenderOnResize(value: Boolean): Self = StObject.set(x, "rerenderOnResize", value.asInstanceOf[js.Any])
+    
+    inline def setRerenderOnResizeUndefined: Self = StObject.set(x, "rerenderOnResize", js.undefined)
+    
+    inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+    
+    inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+    
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    
+    inline def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+    
+    inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+    
+    inline def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
+    
+    inline def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

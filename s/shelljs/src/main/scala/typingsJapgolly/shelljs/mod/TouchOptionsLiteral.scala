@@ -1,8 +1,8 @@
 package typingsJapgolly.shelljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.shelljs.shelljsStrings.`-a`
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.shelljs.shelljsStrings.`-d`
   - typingsJapgolly.shelljs.shelljsStrings.`-r`
 */
-trait TouchOptionsLiteral extends js.Object
-
+trait TouchOptionsLiteral extends StObject
 object TouchOptionsLiteral {
-  @scala.inline
-  def `-a`: typingsJapgolly.shelljs.shelljsStrings.`-a` = this.cast("-a")
-  @scala.inline
-  def `-c`: typingsJapgolly.shelljs.shelljsStrings.`-c` = this.cast("-c")
-  @scala.inline
-  def `-d`: typingsJapgolly.shelljs.shelljsStrings.`-d` = this.cast("-d")
-  @scala.inline
-  def `-m`: typingsJapgolly.shelljs.shelljsStrings.`-m` = this.cast("-m")
-  @scala.inline
-  def `-r`: typingsJapgolly.shelljs.shelljsStrings.`-r` = this.cast("-r")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `-a`: typingsJapgolly.shelljs.shelljsStrings.`-a` = "-a".asInstanceOf[typingsJapgolly.shelljs.shelljsStrings.`-a`]
+  
+  inline def `-c`: typingsJapgolly.shelljs.shelljsStrings.`-c` = "-c".asInstanceOf[typingsJapgolly.shelljs.shelljsStrings.`-c`]
+  
+  inline def `-d`: typingsJapgolly.shelljs.shelljsStrings.`-d` = "-d".asInstanceOf[typingsJapgolly.shelljs.shelljsStrings.`-d`]
+  
+  inline def `-m`: typingsJapgolly.shelljs.shelljsStrings.`-m` = "-m".asInstanceOf[typingsJapgolly.shelljs.shelljsStrings.`-m`]
+  
+  inline def `-r`: typingsJapgolly.shelljs.shelljsStrings.`-r` = "-r".asInstanceOf[typingsJapgolly.shelljs.shelljsStrings.`-r`]
 }
-

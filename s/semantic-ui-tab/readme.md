@@ -10,10 +10,10 @@ Single component release of tab
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-tab |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 21434 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1449.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

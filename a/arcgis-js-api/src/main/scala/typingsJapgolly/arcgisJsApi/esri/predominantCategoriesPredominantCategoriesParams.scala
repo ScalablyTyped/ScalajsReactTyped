@@ -1,25 +1,37 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.AbortSignal
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait predominantCategoriesPredominantCategoriesParams extends Object {
+trait predominantCategoriesPredominantCategoriesParams
+  extends StObject
+     with Object {
+  
   /**
-    * An array of numeric fields from which to determine predominant categories. The fields must all be number fields and they must be competing or complementary (e.g. population totals by language spoken at home, or harvested acres by crop type, or the results of an election by candidate or party).
+    * An array of numeric fields from which to determine predominant categories.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-predominantCategories.html#predominantCategories)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#predominantCategories)
     */
   var fields: js.Array[String]
+  
   /**
     * The layer from which to generate predominant categories for the given set of `fields`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-predominantCategories.html#predominantCategories)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#predominantCategories)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  
+  /**
+    * Allows for cancelable requests.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#predominantCategories)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  
   /**
     * The view in which features will be rendered.
     *
@@ -27,22 +39,33 @@ trait predominantCategoriesPredominantCategoriesParams extends Object {
     */
   var view: js.UndefOr[MapView | SceneView] = js.undefined
 }
-
 object predominantCategoriesPredominantCategoriesParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     fields: js.Array[String],
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    view: MapView | SceneView = null
+    hasOwnProperty: PropertyKey => Boolean,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): predominantCategoriesPredominantCategoriesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[predominantCategoriesPredominantCategoriesParams]
   }
+  
+  extension [Self <: predominantCategoriesPredominantCategoriesParams](x: Self) {
+    
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    
+    inline def setView(value: MapView | SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

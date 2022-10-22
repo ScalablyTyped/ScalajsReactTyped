@@ -1,83 +1,150 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.AnonArgumentFormat
-import typingsJapgolly.devextreme.AnonColorDashStyle
-import typingsJapgolly.devextreme.AnonGroupName
-import typingsJapgolly.devextreme.AnonHatching
-import typingsJapgolly.devextreme.devextremeStrings.datetime
-import typingsJapgolly.devextreme.devextremeStrings.none
-import typingsJapgolly.devextreme.devextremeStrings.numeric
-import typingsJapgolly.devextreme.devextremeStrings.onlyPoint
-import typingsJapgolly.devextreme.devextremeStrings.string_
+import typingsJapgolly.devextreme.anon.ArgumentFormat
+import typingsJapgolly.devextreme.anon.BorderColor
+import typingsJapgolly.devextreme.anon.ColorDashStyle
+import typingsJapgolly.devextreme.anon.GroupName
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.ChartsDataType
+import typingsJapgolly.devextreme.mod.DevExpress.viz.dxPieChart.PieChartSeriesInteractionMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPieChartSeriesTypesCommonPieChartSeries extends js.Object {
-  /** Specifies the data source field that provides arguments for series points. */
+trait dxPieChartSeriesTypesCommonPieChartSeries extends StObject {
+  
+  /**
+    * Specifies the data source field that provides arguments for series points.
+    */
   var argumentField: js.UndefOr[String] = js.undefined
-  /** Specifies the required type for series arguments. */
-  var argumentType: js.UndefOr[datetime | numeric | string_] = js.undefined
-  /** An object defining the series border configuration options. */
-  var border: js.UndefOr[AnonColorDashStyle] = js.undefined
-  /** Specifies a series color. */
+  
+  /**
+    * Specifies the required type for series arguments.
+    */
+  var argumentType: js.UndefOr[ChartsDataType] = js.undefined
+  
+  /**
+    * An object defining the series border configuration properties.
+    */
+  var border: js.UndefOr[ColorDashStyle] = js.undefined
+  
+  /**
+    * Specifies a series color.
+    */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies the chart elements to highlight when a series is hovered over. */
-  var hoverMode: js.UndefOr[none | onlyPoint] = js.undefined
-  /** An object defining configuration options for a hovered series. */
-  var hoverStyle: js.UndefOr[AnonHatching] = js.undefined
-  /** An object defining the label configuration options. */
-  var label: js.UndefOr[AnonArgumentFormat] = js.undefined
-  /** Specifies how many points are acceptable to be in a series to display all labels for these points. Otherwise, the labels will not be displayed. */
+  
+  /**
+    * Specifies the chart elements to highlight when a series is hovered over.
+    */
+  var hoverMode: js.UndefOr[PieChartSeriesInteractionMode] = js.undefined
+  
+  /**
+    * An object defining configuration properties for a hovered series.
+    */
+  var hoverStyle: js.UndefOr[BorderColor] = js.undefined
+  
+  /**
+    * An object defining the label configuration properties.
+    */
+  var label: js.UndefOr[ArgumentFormat] = js.undefined
+  
+  /**
+    * Specifies how many points are acceptable to be in a series to display all labels for these points. Otherwise, the labels will not be displayed.
+    */
   var maxLabelCount: js.UndefOr[Double] = js.undefined
-  /** Specifies a minimal size of a displayed pie segment. */
+  
+  /**
+    * Specifies a minimal size of a displayed pie segment.
+    */
   var minSegmentSize: js.UndefOr[Double] = js.undefined
-  /** Specifies the chart elements to highlight when the series is selected. */
-  var selectionMode: js.UndefOr[none | onlyPoint] = js.undefined
-  /** An object defining configuration options for the series when it is selected. */
-  var selectionStyle: js.UndefOr[AnonHatching] = js.undefined
-  /** Specifies chart segment grouping options. */
-  var smallValuesGrouping: js.UndefOr[AnonGroupName] = js.undefined
-  /** Specifies the name of the data source field that provides data about a point. */
+  
+  /**
+    * Specifies the chart elements to highlight when the series is selected.
+    */
+  var selectionMode: js.UndefOr[PieChartSeriesInteractionMode] = js.undefined
+  
+  /**
+    * An object defining configuration properties for the series when it is selected.
+    */
+  var selectionStyle: js.UndefOr[BorderColor] = js.undefined
+  
+  /**
+    * Specifies chart segment grouping properties.
+    */
+  var smallValuesGrouping: js.UndefOr[GroupName] = js.undefined
+  
+  /**
+    * Specifies the name of the data source field that provides data about a point.
+    */
   var tagField: js.UndefOr[String] = js.undefined
-  /** Specifies the data source field that provides values for series points. */
+  
+  /**
+    * Specifies the data source field that provides values for series points.
+    */
   var valueField: js.UndefOr[String] = js.undefined
 }
-
 object dxPieChartSeriesTypesCommonPieChartSeries {
-  @scala.inline
-  def apply(
-    argumentField: String = null,
-    argumentType: datetime | numeric | string_ = null,
-    border: AnonColorDashStyle = null,
-    color: String = null,
-    hoverMode: none | onlyPoint = null,
-    hoverStyle: AnonHatching = null,
-    label: AnonArgumentFormat = null,
-    maxLabelCount: Int | Double = null,
-    minSegmentSize: Int | Double = null,
-    selectionMode: none | onlyPoint = null,
-    selectionStyle: AnonHatching = null,
-    smallValuesGrouping: AnonGroupName = null,
-    tagField: String = null,
-    valueField: String = null
-  ): dxPieChartSeriesTypesCommonPieChartSeries = {
+  
+  inline def apply(): dxPieChartSeriesTypesCommonPieChartSeries = {
     val __obj = js.Dynamic.literal()
-    if (argumentField != null) __obj.updateDynamic("argumentField")(argumentField.asInstanceOf[js.Any])
-    if (argumentType != null) __obj.updateDynamic("argumentType")(argumentType.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (hoverMode != null) __obj.updateDynamic("hoverMode")(hoverMode.asInstanceOf[js.Any])
-    if (hoverStyle != null) __obj.updateDynamic("hoverStyle")(hoverStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (maxLabelCount != null) __obj.updateDynamic("maxLabelCount")(maxLabelCount.asInstanceOf[js.Any])
-    if (minSegmentSize != null) __obj.updateDynamic("minSegmentSize")(minSegmentSize.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (selectionStyle != null) __obj.updateDynamic("selectionStyle")(selectionStyle.asInstanceOf[js.Any])
-    if (smallValuesGrouping != null) __obj.updateDynamic("smallValuesGrouping")(smallValuesGrouping.asInstanceOf[js.Any])
-    if (tagField != null) __obj.updateDynamic("tagField")(tagField.asInstanceOf[js.Any])
-    if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPieChartSeriesTypesCommonPieChartSeries]
   }
+  
+  extension [Self <: dxPieChartSeriesTypesCommonPieChartSeries](x: Self) {
+    
+    inline def setArgumentField(value: String): Self = StObject.set(x, "argumentField", value.asInstanceOf[js.Any])
+    
+    inline def setArgumentFieldUndefined: Self = StObject.set(x, "argumentField", js.undefined)
+    
+    inline def setArgumentType(value: ChartsDataType): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
+    
+    inline def setArgumentTypeUndefined: Self = StObject.set(x, "argumentType", js.undefined)
+    
+    inline def setBorder(value: ColorDashStyle): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setHoverMode(value: PieChartSeriesInteractionMode): Self = StObject.set(x, "hoverMode", value.asInstanceOf[js.Any])
+    
+    inline def setHoverModeUndefined: Self = StObject.set(x, "hoverMode", js.undefined)
+    
+    inline def setHoverStyle(value: BorderColor): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
+    
+    inline def setHoverStyleUndefined: Self = StObject.set(x, "hoverStyle", js.undefined)
+    
+    inline def setLabel(value: ArgumentFormat): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setMaxLabelCount(value: Double): Self = StObject.set(x, "maxLabelCount", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLabelCountUndefined: Self = StObject.set(x, "maxLabelCount", js.undefined)
+    
+    inline def setMinSegmentSize(value: Double): Self = StObject.set(x, "minSegmentSize", value.asInstanceOf[js.Any])
+    
+    inline def setMinSegmentSizeUndefined: Self = StObject.set(x, "minSegmentSize", js.undefined)
+    
+    inline def setSelectionMode(value: PieChartSeriesInteractionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+    
+    inline def setSelectionStyle(value: BorderColor): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionStyleUndefined: Self = StObject.set(x, "selectionStyle", js.undefined)
+    
+    inline def setSmallValuesGrouping(value: GroupName): Self = StObject.set(x, "smallValuesGrouping", value.asInstanceOf[js.Any])
+    
+    inline def setSmallValuesGroupingUndefined: Self = StObject.set(x, "smallValuesGrouping", js.undefined)
+    
+    inline def setTagField(value: String): Self = StObject.set(x, "tagField", value.asInstanceOf[js.Any])
+    
+    inline def setTagFieldUndefined: Self = StObject.set(x, "tagField", js.undefined)
+    
+    inline def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
+    
+    inline def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
+  }
 }
-

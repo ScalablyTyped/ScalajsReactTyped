@@ -1,21 +1,17 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.rtcp
   - typingsJapgolly.std.stdStrings.rtp
 */
-trait RTCIceComponent extends js.Object
-
+trait RTCIceComponent extends StObject
 object RTCIceComponent {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def rtcp: typingsJapgolly.std.stdStrings.rtcp = this.cast("rtcp")
-  @scala.inline
-  def rtp: typingsJapgolly.std.stdStrings.rtp = this.cast("rtp")
+  
+  inline def rtcp: typingsJapgolly.std.stdStrings.rtcp = "rtcp".asInstanceOf[typingsJapgolly.std.stdStrings.rtcp]
+  
+  inline def rtp: typingsJapgolly.std.stdStrings.rtp = "rtp".asInstanceOf[typingsJapgolly.std.stdStrings.rtp]
 }
-

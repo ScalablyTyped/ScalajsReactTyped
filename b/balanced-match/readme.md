@@ -10,10 +10,10 @@ Match balanced character pairs, like "{" and "}"
 | ------------------ | :-------------: |
 | Full name          | balanced-match |
 | Keywords           | match, regexp, test, balanced, parse |
-| # releases         | 0 |
-| # dependents       | 167 |
-| # downloads        | 679874275 |
-| # stars            | 5 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6195254E8 |
+| # stars            | 104.0 |
 
 ## Links
 - [Homepage](https://github.com/juliangruber/balanced-match)

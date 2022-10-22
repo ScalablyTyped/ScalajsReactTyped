@@ -1,13 +1,13 @@
 package typingsJapgolly.vis.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.vis.visStrings.Array
 import typingsJapgolly.vis.visStrings.Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSelectionOptions[T] extends js.Object {
+trait DataSelectionOptions[T] extends StObject {
+  
   /**
     * An array with field names, or an object with current field name
     * and new field name that the field is returned as.
@@ -15,7 +15,8 @@ trait DataSelectionOptions[T] extends js.Object {
     * When fields is defined, only the properties whose name is specified
     * in fields will be included in the returned items.
     */
-  var fields: js.UndefOr[js.Array[String] | js.Any] = js.undefined
+  var fields: js.UndefOr[js.Array[String] | Any] = js.undefined
+  
   /**
     * Items can be filtered on specific properties by providing a filter function.
     * A filter function is executed for each of the items in the DataSet,
@@ -25,10 +26,12 @@ trait DataSelectionOptions[T] extends js.Object {
     * See section Data Filtering.
     */
   var filter: js.UndefOr[js.Function1[/* item */ T, Boolean]] = js.undefined
+  
   /**
     * Order the items by a field name or custom sort function.
     */
   var order: js.UndefOr[String | (js.Function2[/* a */ T, /* b */ T, Double])] = js.undefined
+  
   /**
     * Determine the type of output of the get function.
     * Allowed values are 'Array' | 'Object'.
@@ -36,6 +39,7 @@ trait DataSelectionOptions[T] extends js.Object {
     * The Object type will return a JSON object with the ID's as keys.
     */
   var returnType: js.UndefOr[Array | Object] = js.undefined
+  
   /**
     * An object containing field names as key, and data types as value.
     * By default, the type of the properties of an item are left unchanged.
@@ -43,25 +47,39 @@ trait DataSelectionOptions[T] extends js.Object {
     * This can be used for example to convert ISO strings containing a date to a JavaScript Date object,
     * or convert strings to numbers or vice versa. The available data types are listed in section Data Types.
     */
-  var `type`: js.UndefOr[js.Any] = js.undefined
+  var `type`: js.UndefOr[Any] = js.undefined
 }
-
 object DataSelectionOptions {
-  @scala.inline
-  def apply[T](
-    fields: js.Array[String] | js.Any = null,
-    filter: /* item */ T => CallbackTo[Boolean] = null,
-    order: String | (js.Function2[/* a */ T, /* b */ T, Double]) = null,
-    returnType: Array | Object = null,
-    `type`: js.Any = null
-  ): DataSelectionOptions[T] = {
+  
+  inline def apply[T](): DataSelectionOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1((t0: /* item */ T) => filter(t0).runNow()))
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSelectionOptions[T]]
   }
+  
+  extension [Self <: DataSelectionOptions[?], T](x: Self & DataSelectionOptions[T]) {
+    
+    inline def setFields(value: js.Array[String] | Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setFilter(value: /* item */ T => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setOrder(value: String | (js.Function2[/* a */ T, /* b */ T, Double])): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setOrderFunction2(value: (/* a */ T, /* b */ T) => Double): Self = StObject.set(x, "order", js.Any.fromFunction2(value))
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    
+    inline def setReturnType(value: Array | Object): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    
+    inline def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
+    
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

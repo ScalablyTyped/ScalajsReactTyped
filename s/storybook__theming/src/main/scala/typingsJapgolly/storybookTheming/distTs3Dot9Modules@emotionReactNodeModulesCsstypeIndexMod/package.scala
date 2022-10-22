@@ -1,0 +1,155 @@
+package typingsJapgolly.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModulesCsstypeIndexMod`
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+
+/* Rewritten from type alias, can be one of: 
+  - / * :-moz-any() * / java.lang.String
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-moz-dir`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.ColonColoncue
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColoncue-region`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.ColonColonpart
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.ColonColonslotted
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colondir
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonhas
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonhost
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonhost-context`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonis
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonlang
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonnot
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonnth-child`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonnth-last-child`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonnth-last-of-type`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonnth-of-type`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonwhere
+*/
+type AdvancedPseudos = _AdvancedPseudos | (/* :-moz-any() */ String)
+
+/* Rewritten from type alias, can be one of: 
+  - / * :-moz-any() * / java.lang.String
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-moz-dir`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.ColonColoncue
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColoncue-region`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.ColonColonpart
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.ColonColonslotted
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colondir
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonhas
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonhost
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonhost-context`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonis
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonlang
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonnot
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonnth-child`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonnth-last-child`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonnth-last-of-type`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonnth-of-type`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonwhere
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-khtml-any-link`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-moz-any-link`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-moz-focusring`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-moz-full-screen`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-moz-placeholder`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-moz-read-only`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-moz-read-write`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-moz-ui-invalid`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-moz-ui-valid`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-ms-fullscreen`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-ms-input-placeholder`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-webkit-any-link`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colon-webkit-full-screen`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-moz-placeholder`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-moz-progress-bar`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-moz-range-progress`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-moz-range-thumb`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-moz-range-track`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-moz-selection`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-backdrop`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-browse`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-check`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-clear`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-fill`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-fill-lower`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-fill-upper`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-input-placeholder`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-reveal`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-thumb`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-ticks-after`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-ticks-before`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-tooltip`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-track`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-ms-value`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-webkit-backdrop`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-webkit-input-placeholder`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-webkit-progress-bar`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-webkit-progress-inner-value`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-webkit-progress-value`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-webkit-slider-runnable-track`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColon-webkit-slider-thumb`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.ColonColonafter
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.ColonColonbackdrop
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.ColonColonbefore
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColonfirst-letter`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColonfirst-line`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColongrammar-error`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.ColonColonmarker
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.ColonColonplaceholder
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.ColonColonselection
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColonspelling-error`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`ColonColontarget-text`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonactive
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonafter
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonany-link`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonbefore
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonblank
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonchecked
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Coloncurrent
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colondefault
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colondefined
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colondisabled
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonempty
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonenabled
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonfirst
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonfirst-child`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonfirst-letter`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonfirst-line`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonfirst-of-type`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonfocus
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonfocus-visible`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonfocus-within`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonfullscreen
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonfuture
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonhover
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonin-range`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonindeterminate
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Coloninvalid
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonlast-child`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonlast-of-type`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonleft
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonlink
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonlocal-link`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonnth-col`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonnth-last-col`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colononly-child`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colononly-of-type`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonoptional
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonout-of-range`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonpast
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonpaused
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonpicture-in-picture`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonplaceholder-shown`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonread-only`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonread-write`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonrequired
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonright
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonroot
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonscope
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colontarget
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colontarget-within`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonuser-invalid`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.`Colonuser-valid`
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonvalid
+  - typingsJapgolly.storybookTheming.storybookThemingStrings.Colonvisited
+*/
+type Pseudos = _Pseudos | (/* :-moz-any() */ String)

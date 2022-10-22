@@ -1,14 +1,16 @@
 package typingsJapgolly.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxAccounts Class */
 @js.native
-trait FaxAccounts extends js.Object {
+trait FaxAccounts extends StObject {
+  
+  def apply(vIndex: Any): FaxAccount = js.native
+  
   val Count: Double = js.native
-  def apply(vIndex: js.Any): FaxAccount = js.native
-  def Item(vIndex: js.Any): FaxAccount = js.native
+  
+  def Item(vIndex: Any): FaxAccount = js.native
 }
-

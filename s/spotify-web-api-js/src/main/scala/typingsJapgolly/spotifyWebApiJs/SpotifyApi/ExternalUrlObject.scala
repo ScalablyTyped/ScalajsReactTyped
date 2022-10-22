@@ -1,8 +1,8 @@
 package typingsJapgolly.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * External Url Object
@@ -10,16 +10,19 @@ import scala.scalajs.js.annotation._
   *
   * Note that there might be other types available, it couldn't be found in the docs.
   */
-trait ExternalUrlObject extends js.Object {
+trait ExternalUrlObject extends StObject {
+  
   var spotify: String
 }
-
 object ExternalUrlObject {
-  @scala.inline
-  def apply(spotify: String): ExternalUrlObject = {
-    val __obj = js.Dynamic.literal(spotify = spotify.asInstanceOf[js.Any])
   
+  inline def apply(spotify: String): ExternalUrlObject = {
+    val __obj = js.Dynamic.literal(spotify = spotify.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalUrlObject]
   }
+  
+  extension [Self <: ExternalUrlObject](x: Self) {
+    
+    inline def setSpotify(value: String): Self = StObject.set(x, "spotify", value.asInstanceOf[js.Any])
+  }
 }
-

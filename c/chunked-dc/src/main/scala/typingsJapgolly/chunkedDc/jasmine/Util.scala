@@ -1,34 +1,44 @@
 package typingsJapgolly.chunkedDc.jasmine
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Util extends js.Object {
-  def argsToArray(args: js.Any): js.Any
-  def extend(destination: js.Any, source: js.Any): js.Any
-  def formatException(e: js.Any): js.Any
+trait Util extends StObject {
+  
+  def argsToArray(args: scala.Any): scala.Any
+  
+  def extend(destination: scala.Any, source: scala.Any): scala.Any
+  
+  def formatException(e: scala.Any): scala.Any
+  
   def htmlEscape(str: String): String
-  def inherit(childClass: js.Function, parentClass: js.Function): js.Any
+  
+  def inherit(childClass: js.Function, parentClass: js.Function): scala.Any
 }
-
 object Util {
-  @scala.inline
-  def apply(
-    argsToArray: js.Any => CallbackTo[js.Any],
-    extend: (js.Any, js.Any) => CallbackTo[js.Any],
-    formatException: js.Any => CallbackTo[js.Any],
-    htmlEscape: String => CallbackTo[String],
-    inherit: (js.Function, js.Function) => CallbackTo[js.Any]
+  
+  inline def apply(
+    argsToArray: scala.Any => scala.Any,
+    extend: (scala.Any, scala.Any) => scala.Any,
+    formatException: scala.Any => scala.Any,
+    htmlEscape: String => String,
+    inherit: (js.Function, js.Function) => scala.Any
   ): Util = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argsToArray")(js.Any.fromFunction1((t0: js.Any) => argsToArray(t0).runNow()))
-    __obj.updateDynamic("extend")(js.Any.fromFunction2((t0: js.Any, t1: js.Any) => extend(t0, t1).runNow()))
-    __obj.updateDynamic("formatException")(js.Any.fromFunction1((t0: js.Any) => formatException(t0).runNow()))
-    __obj.updateDynamic("htmlEscape")(js.Any.fromFunction1((t0: java.lang.String) => htmlEscape(t0).runNow()))
-    __obj.updateDynamic("inherit")(js.Any.fromFunction2((t0: js.Function, t1: js.Function) => inherit(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(argsToArray = js.Any.fromFunction1(argsToArray), extend = js.Any.fromFunction2(extend), formatException = js.Any.fromFunction1(formatException), htmlEscape = js.Any.fromFunction1(htmlEscape), inherit = js.Any.fromFunction2(inherit))
     __obj.asInstanceOf[Util]
   }
+  
+  extension [Self <: Util](x: Self) {
+    
+    inline def setArgsToArray(value: scala.Any => scala.Any): Self = StObject.set(x, "argsToArray", js.Any.fromFunction1(value))
+    
+    inline def setExtend(value: (scala.Any, scala.Any) => scala.Any): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
+    
+    inline def setFormatException(value: scala.Any => scala.Any): Self = StObject.set(x, "formatException", js.Any.fromFunction1(value))
+    
+    inline def setHtmlEscape(value: String => String): Self = StObject.set(x, "htmlEscape", js.Any.fromFunction1(value))
+    
+    inline def setInherit(value: (js.Function, js.Function) => scala.Any): Self = StObject.set(x, "inherit", js.Any.fromFunction2(value))
+  }
 }
-

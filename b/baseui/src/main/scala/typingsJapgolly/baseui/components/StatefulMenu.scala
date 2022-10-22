@@ -1,81 +1,85 @@
 package typingsJapgolly.baseui.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.AnonEmptyState
-import typingsJapgolly.baseui.AnonItem
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.anon.PartialStatefulContainerS
+import typingsJapgolly.baseui.anon.`14`
+import typingsJapgolly.baseui.baseuiStrings.character
 import typingsJapgolly.baseui.baseuiStrings.click
+import typingsJapgolly.baseui.baseuiStrings.enter_
 import typingsJapgolly.baseui.baseuiStrings.focus
 import typingsJapgolly.baseui.baseuiStrings.mouseEnter
+import typingsJapgolly.baseui.baseuiStrings.mouseLeave
 import typingsJapgolly.baseui.baseuiStrings.moveDown
 import typingsJapgolly.baseui.baseuiStrings.moveUp
 import typingsJapgolly.baseui.baseuiStrings.reset
-import typingsJapgolly.baseui.menuMod.ItemsT
-import typingsJapgolly.baseui.menuMod.RenderItemProps
-import typingsJapgolly.baseui.menuMod.RenderProps
-import typingsJapgolly.baseui.menuMod.StatefulContainerState
-import typingsJapgolly.baseui.menuMod.StatefulMenuProps
+import typingsJapgolly.baseui.menuTypesMod.InitialState
+import typingsJapgolly.baseui.menuTypesMod.Items
+import typingsJapgolly.baseui.menuTypesMod.MenuOverrides
+import typingsJapgolly.baseui.menuTypesMod.RenderItemProps
+import typingsJapgolly.baseui.menuTypesMod.RenderProps
+import typingsJapgolly.baseui.menuTypesMod.RootRef
+import typingsJapgolly.baseui.menuTypesMod.StatefulContainerState
+import typingsJapgolly.baseui.menuTypesMod.StatefulMenuProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StatefulMenu {
-  def apply(
-    items: ItemsT,
-    addMenuToNesting: /* ref */ Ref => Callback = null,
-    getChildMenu: /* ref */ Ref => Callback = null,
-    getParentMenu: /* ref */ Ref => Callback = null,
-    getRequiredItemProps: (/* item */ js.Any, /* index */ Double) => CallbackTo[RenderItemProps] = null,
-    initialState: StatefulContainerState = null,
-    onItemSelect: /* args */ AnonItem => CallbackTo[js.Any] = null,
-    overrides: AnonEmptyState = null,
-    removeMenuFromNesting: /* ref */ Ref => Callback = null,
-    renderAll: js.UndefOr[Boolean] = js.undefined,
-    rootRef: Ref = null,
-    size: String = null,
-    stateReducer: (/* changeType */ moveDown | moveUp | reset | click | focus | mouseEnter, /* changes */ StatefulContainerState, /* currentState */ StatefulContainerState) => CallbackTo[StatefulContainerState] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: /* args */ RenderProps => CallbackTo[Node] = null
-  ): UnmountedWithRoot[
-    StatefulMenuProps, 
-    typingsJapgolly.baseui.menuMod.StatefulMenu, 
-    Unit, 
-    StatefulMenuProps
-  ] = {
-    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
   
-      if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.baseui.menuMod.RenderProps) => children(t0).runNow()))
-    if (addMenuToNesting != null) __obj.updateDynamic("addMenuToNesting")(js.Any.fromFunction1((t0: /* ref */ japgolly.scalajs.react.raw.React.Ref) => addMenuToNesting(t0).runNow()))
-    if (getChildMenu != null) __obj.updateDynamic("getChildMenu")(js.Any.fromFunction1((t0: /* ref */ japgolly.scalajs.react.raw.React.Ref) => getChildMenu(t0).runNow()))
-    if (getParentMenu != null) __obj.updateDynamic("getParentMenu")(js.Any.fromFunction1((t0: /* ref */ japgolly.scalajs.react.raw.React.Ref) => getParentMenu(t0).runNow()))
-    if (getRequiredItemProps != null) __obj.updateDynamic("getRequiredItemProps")(js.Any.fromFunction2((t0: /* item */ js.Any, t1: /* index */ scala.Double) => getRequiredItemProps(t0, t1).runNow()))
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (onItemSelect != null) __obj.updateDynamic("onItemSelect")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.baseui.AnonItem) => onItemSelect(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (removeMenuFromNesting != null) __obj.updateDynamic("removeMenuFromNesting")(js.Any.fromFunction1((t0: /* ref */ japgolly.scalajs.react.raw.React.Ref) => removeMenuFromNesting(t0).runNow()))
-    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.asInstanceOf[js.Any])
-    if (rootRef != null) __obj.updateDynamic("rootRef")(rootRef.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction3((t0: /* changeType */ typingsJapgolly.baseui.baseuiStrings.moveDown | typingsJapgolly.baseui.baseuiStrings.moveUp | typingsJapgolly.baseui.baseuiStrings.reset | typingsJapgolly.baseui.baseuiStrings.click | typingsJapgolly.baseui.baseuiStrings.focus | typingsJapgolly.baseui.baseuiStrings.mouseEnter, t1: /* changes */ typingsJapgolly.baseui.menuMod.StatefulContainerState, t2: /* currentState */ typingsJapgolly.baseui.menuMod.StatefulContainerState) => stateReducer(t0, t1, t2).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.menuMod.StatefulMenuProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.baseui.menuMod.StatefulMenu](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.menuMod.StatefulMenuProps])
+  inline def apply(items: Items): Builder = {
+    val __props = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[StatefulMenuProps]))
   }
+  
   @JSImport("baseui/menu", "StatefulMenu")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.menuMod.StatefulMenu] {
+    
+    inline def addMenuToNesting(value: /* ref */ `14` => Callback): this.type = set("addMenuToNesting", js.Any.fromFunction1((t0: /* ref */ `14`) => value(t0).runNow()))
+    
+    inline def children(value: /* a */ RenderProps => Node): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def getChildMenu(value: /* ref */ `14` => js.UndefOr[`14` | Null]): this.type = set("getChildMenu", js.Any.fromFunction1(value))
+    
+    inline def getParentMenu(value: /* ref */ `14` => js.UndefOr[`14` | Null]): this.type = set("getParentMenu", js.Any.fromFunction1(value))
+    
+    inline def getRequiredItemProps(
+      value: (/* item */ typingsJapgolly.baseui.menuTypesMod.Item, /* index */ Double) => RenderItemProps
+    ): this.type = set("getRequiredItemProps", js.Any.fromFunction2(value))
+    
+    inline def initialState(value: InitialState): this.type = set("initialState", value.asInstanceOf[js.Any])
+    
+    inline def isNestedMenuVisible(value: /* ref */ `14` => Boolean): this.type = set("isNestedMenuVisible", js.Any.fromFunction1(value))
+    
+    inline def nestedMenuHoverIndex(value: Double): this.type = set("nestedMenuHoverIndex", value.asInstanceOf[js.Any])
+    
+    inline def onActiveDescendantChange(value: /* id */ js.UndefOr[String] => Any): this.type = set("onActiveDescendantChange", js.Any.fromFunction1(value))
+    
+    inline def onItemSelect(value: /* a */ typingsJapgolly.baseui.anon.Item => Any): this.type = set("onItemSelect", js.Any.fromFunction1(value))
+    
+    inline def overrides(value: MenuOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def removeMenuFromNesting(value: /* ref */ `14` => Callback): this.type = set("removeMenuFromNesting", js.Any.fromFunction1((t0: /* ref */ `14`) => value(t0).runNow()))
+    
+    inline def renderAll(value: Boolean): this.type = set("renderAll", value.asInstanceOf[js.Any])
+    
+    inline def rootRef(value: RootRef): this.type = set("rootRef", value.asInstanceOf[js.Any])
+    
+    inline def stateReducer(
+      value: (/* changeType */ js.UndefOr[
+          click | moveUp | moveDown | mouseEnter | mouseLeave | focus | reset | character | enter_ | Null
+        ], /* changes */ PartialStatefulContainerS, /* currentState */ StatefulContainerState) => StatefulContainerState
+    ): this.type = set("stateReducer", js.Any.fromFunction3(value))
+    
+    inline def typeAhead(value: Boolean): this.type = set("typeAhead", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: StatefulMenuProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

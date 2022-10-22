@@ -1,14 +1,13 @@
 package typingsJapgolly.awsSdkStreamCollectorBrowser
 
-import org.scalajs.dom.raw.Blob
-import typingsJapgolly.awsSdkTypes.unmarshallerMod.StreamCollector
+import typingsJapgolly.awsSdkTypes.distTypesSerdeMod.StreamCollector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/stream-collector-browser", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val streamCollector: StreamCollector[Blob] = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/stream-collector-browser", "streamCollector")
+  @js.native
+  val streamCollector: StreamCollector = js.native
 }
-

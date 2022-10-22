@@ -1,18 +1,19 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the FileManagerFolder object.
   */
-@JSGlobal("ASPxClientFileManagerFolder")
 @js.native
-class ASPxClientFileManagerFolder () extends ASPxClientFileManagerItem {
+trait ASPxClientFileManagerFolder
+  extends StObject
+     with ASPxClientFileManagerItem {
+  
   /**
     * Gets a value specifying whether an item is a parent folder.
     */
   var isParentFolder: Boolean = js.native
 }
-

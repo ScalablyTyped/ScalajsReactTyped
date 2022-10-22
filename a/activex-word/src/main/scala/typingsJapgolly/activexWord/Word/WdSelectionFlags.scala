@@ -1,35 +1,31 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`16`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
-import typingsJapgolly.activexWord.activexWordNumbers.`8`
+import typingsJapgolly.activexWord.activexWordInts.`16`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import typingsJapgolly.activexWord.activexWordInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`8`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`16`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`8`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`16`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
 */
-trait WdSelectionFlags extends js.Object
-
+trait WdSelectionFlags extends StObject
 object WdSelectionFlags {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdSelActive: `8` = this.cast(8)
-  @scala.inline
-  def wdSelAtEOL: `2` = this.cast(2)
-  @scala.inline
-  def wdSelOvertype: `4` = this.cast(4)
-  @scala.inline
-  def wdSelReplace: `16` = this.cast(16)
-  @scala.inline
-  def wdSelStartActive: `1` = this.cast(1)
+  
+  inline def wdSelActive: `8` = 8.asInstanceOf[`8`]
+  
+  inline def wdSelAtEOL: `2` = 2.asInstanceOf[`2`]
+  
+  inline def wdSelOvertype: `4` = 4.asInstanceOf[`4`]
+  
+  inline def wdSelReplace: `16` = 16.asInstanceOf[`16`]
+  
+  inline def wdSelStartActive: `1` = 1.asInstanceOf[`1`]
 }
-

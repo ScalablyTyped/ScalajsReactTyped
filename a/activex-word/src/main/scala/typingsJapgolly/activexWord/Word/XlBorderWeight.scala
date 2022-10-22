@@ -1,31 +1,27 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`-4138`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
+import typingsJapgolly.activexWord.activexWordInts.`-4138`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`-4138`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`-4138`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
 */
-trait XlBorderWeight extends js.Object
-
+trait XlBorderWeight extends StObject
 object XlBorderWeight {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlHairline: `1` = this.cast(1)
-  @scala.inline
-  def xlMedium: `-4138` = this.cast(-4138)
-  @scala.inline
-  def xlThick: `4` = this.cast(4)
-  @scala.inline
-  def xlThin: `2` = this.cast(2)
+  
+  inline def xlHairline: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlMedium: `-4138` = -4138.asInstanceOf[`-4138`]
+  
+  inline def xlThick: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlThin: `2` = 2.asInstanceOf[`2`]
 }
-

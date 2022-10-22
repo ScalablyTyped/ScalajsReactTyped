@@ -1,27 +1,23 @@
 package typingsJapgolly.pulumiCloud.serviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.pulumiCloud.serviceMod.SharedVolume
   - typingsJapgolly.pulumiCloud.serviceMod.HostPathVolume
 */
-trait Volume extends js.Object
-
+trait Volume extends StObject
 object Volume {
-  @scala.inline
-  def SharedVolume(kind: typingsJapgolly.pulumiCloud.pulumiCloudStrings.SharedVolume, name: String): Volume = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[Volume]
+  inline def HostPathVolume(path: String): typingsJapgolly.pulumiCloud.serviceMod.HostPathVolume = {
+    val __obj = js.Dynamic.literal(kind = "HostPathVolume", path = path.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.pulumiCloud.serviceMod.HostPathVolume]
   }
-  @scala.inline
-  def HostPathVolume(kind: typingsJapgolly.pulumiCloud.pulumiCloudStrings.HostPathVolume, path: String): Volume = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[Volume]
+  inline def SharedVolume(name: String): typingsJapgolly.pulumiCloud.serviceMod.SharedVolume = {
+    val __obj = js.Dynamic.literal(kind = "SharedVolume", name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.pulumiCloud.serviceMod.SharedVolume]
   }
 }
-

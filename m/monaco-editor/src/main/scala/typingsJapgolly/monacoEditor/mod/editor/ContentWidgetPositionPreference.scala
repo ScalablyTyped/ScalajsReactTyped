@@ -1,44 +1,42 @@
 package typingsJapgolly.monacoEditor.mod.editor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContentWidgetPositionPreference extends js.Object
-
+sealed trait ContentWidgetPositionPreference extends StObject
 @JSImport("monaco-editor", "editor.ContentWidgetPositionPreference")
 @js.native
-object ContentWidgetPositionPreference extends js.Object {
+object ContentWidgetPositionPreference extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[ContentWidgetPositionPreference & Double] = js.native
+  
   /**
     * Place the content widget above a position
     */
   @js.native
-  sealed trait ABOVE extends ContentWidgetPositionPreference
+  sealed trait ABOVE
+    extends StObject
+       with ContentWidgetPositionPreference
+  /* 1 */ val ABOVE: typingsJapgolly.monacoEditor.mod.editor.ContentWidgetPositionPreference.ABOVE & Double = js.native
   
   /**
     * Place the content widget below a position
     */
   @js.native
-  sealed trait BELOW extends ContentWidgetPositionPreference
+  sealed trait BELOW
+    extends StObject
+       with ContentWidgetPositionPreference
+  /* 2 */ val BELOW: typingsJapgolly.monacoEditor.mod.editor.ContentWidgetPositionPreference.BELOW & Double = js.native
   
   /**
     * Place the content widget exactly at a position
     */
   @js.native
-  sealed trait EXACT extends ContentWidgetPositionPreference
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContentWidgetPositionPreference with Double] = js.native
-  /* 1 */ @js.native
-  object ABOVE extends TopLevel[ABOVE with Double]
-  
-  /* 2 */ @js.native
-  object BELOW extends TopLevel[BELOW with Double]
-  
-  /* 0 */ @js.native
-  object EXACT extends TopLevel[EXACT with Double]
-  
+  sealed trait EXACT
+    extends StObject
+       with ContentWidgetPositionPreference
+  /* 0 */ val EXACT: typingsJapgolly.monacoEditor.mod.editor.ContentWidgetPositionPreference.EXACT & Double = js.native
 }
-

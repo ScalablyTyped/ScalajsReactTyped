@@ -1,91 +1,87 @@
 package typingsJapgolly.activexOutlook.Outlook
 
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`10`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`11`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`12`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`13`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`14`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`15`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`16`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`17`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`18`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`5`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`6`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`7`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`8`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`9`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`0`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`10`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`11`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`12`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`13`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`14`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`15`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`16`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`17`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`18`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`5`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`6`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`7`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`8`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`5`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`6`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`7`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`8`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`9`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`10`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`11`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`12`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`13`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`14`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`15`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`16`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`17`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`18`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`0`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`5`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`6`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`7`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`8`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`9`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`10`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`11`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`12`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`13`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`14`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`15`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`16`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`17`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`18`
 */
-trait OlContactPhoneNumber extends js.Object
-
+trait OlContactPhoneNumber extends StObject
 object OlContactPhoneNumber {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def olContactPhoneAssistant: `0` = this.cast(0)
-  @scala.inline
-  def olContactPhoneBusiness: `1` = this.cast(1)
-  @scala.inline
-  def olContactPhoneBusiness2: `2` = this.cast(2)
-  @scala.inline
-  def olContactPhoneBusinessFax: `3` = this.cast(3)
-  @scala.inline
-  def olContactPhoneCallback: `4` = this.cast(4)
-  @scala.inline
-  def olContactPhoneCar: `5` = this.cast(5)
-  @scala.inline
-  def olContactPhoneCompany: `6` = this.cast(6)
-  @scala.inline
-  def olContactPhoneHome: `7` = this.cast(7)
-  @scala.inline
-  def olContactPhoneHome2: `8` = this.cast(8)
-  @scala.inline
-  def olContactPhoneHomeFax: `9` = this.cast(9)
-  @scala.inline
-  def olContactPhoneISDN: `10` = this.cast(10)
-  @scala.inline
-  def olContactPhoneMobile: `11` = this.cast(11)
-  @scala.inline
-  def olContactPhoneOther: `12` = this.cast(12)
-  @scala.inline
-  def olContactPhoneOtherFax: `13` = this.cast(13)
-  @scala.inline
-  def olContactPhonePager: `14` = this.cast(14)
-  @scala.inline
-  def olContactPhonePrimary: `15` = this.cast(15)
-  @scala.inline
-  def olContactPhoneRadio: `16` = this.cast(16)
-  @scala.inline
-  def olContactPhoneTTYTTD: `18` = this.cast(18)
-  @scala.inline
-  def olContactPhoneTelex: `17` = this.cast(17)
+  
+  inline def olContactPhoneAssistant: `0` = 0.asInstanceOf[`0`]
+  
+  inline def olContactPhoneBusiness: `1` = 1.asInstanceOf[`1`]
+  
+  inline def olContactPhoneBusiness2: `2` = 2.asInstanceOf[`2`]
+  
+  inline def olContactPhoneBusinessFax: `3` = 3.asInstanceOf[`3`]
+  
+  inline def olContactPhoneCallback: `4` = 4.asInstanceOf[`4`]
+  
+  inline def olContactPhoneCar: `5` = 5.asInstanceOf[`5`]
+  
+  inline def olContactPhoneCompany: `6` = 6.asInstanceOf[`6`]
+  
+  inline def olContactPhoneHome: `7` = 7.asInstanceOf[`7`]
+  
+  inline def olContactPhoneHome2: `8` = 8.asInstanceOf[`8`]
+  
+  inline def olContactPhoneHomeFax: `9` = 9.asInstanceOf[`9`]
+  
+  inline def olContactPhoneISDN: `10` = 10.asInstanceOf[`10`]
+  
+  inline def olContactPhoneMobile: `11` = 11.asInstanceOf[`11`]
+  
+  inline def olContactPhoneOther: `12` = 12.asInstanceOf[`12`]
+  
+  inline def olContactPhoneOtherFax: `13` = 13.asInstanceOf[`13`]
+  
+  inline def olContactPhonePager: `14` = 14.asInstanceOf[`14`]
+  
+  inline def olContactPhonePrimary: `15` = 15.asInstanceOf[`15`]
+  
+  inline def olContactPhoneRadio: `16` = 16.asInstanceOf[`16`]
+  
+  inline def olContactPhoneTTYTTD: `18` = 18.asInstanceOf[`18`]
+  
+  inline def olContactPhoneTelex: `17` = 17.asInstanceOf[`17`]
 }
-

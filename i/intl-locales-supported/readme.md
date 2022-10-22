@@ -1,7 +1,7 @@
 
 # Scala.js typings for intl-locales-supported
 
-Typings are for version 1.8.4
+Typings are for version 1.8.12
 
 ## Library description:
 Utility to help you polyfill the Node.js runtime when the Intl APIs are missing, or if the built-in Intl is missing locale data that you need.
@@ -10,10 +10,10 @@ Utility to help you polyfill the Node.js runtime when the Intl APIs are missing,
 | ------------------ | :-------------: |
 | Full name          | intl-locales-supported |
 | Keywords           | i18n, intl, internationalization, localization, globalization |
-| # releases         | 34 |
-| # dependents       | 34 |
-| # downloads        | 3154399 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 368627.6666666667 |
+| # stars            | 13242.0 |
 
 ## Links
 - [Homepage](https://github.com/formatjs/formatjs)

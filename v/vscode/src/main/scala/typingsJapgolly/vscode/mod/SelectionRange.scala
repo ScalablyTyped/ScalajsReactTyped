@@ -1,27 +1,28 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "SelectionRange")
 @js.native
-class SelectionRange protected () extends js.Object {
+open class SelectionRange protected () extends StObject {
   /**
-  		 * Creates a new selection range.
-  		 *
-  		 * @param range The range of the selection range.
-  		 * @param parent The parent of the selection range.
-  		 */
+    * Creates a new selection range.
+    *
+    * @param range The range of the selection range.
+    * @param parent The parent of the selection range.
+    */
   def this(range: Range) = this()
   def this(range: Range, parent: SelectionRange) = this()
+  
   /**
-  		 * The parent selection range containing this range.
-  		 */
+    * The parent selection range containing this range.
+    */
   var parent: js.UndefOr[SelectionRange] = js.native
+  
   /**
-  		 * The [range](#Range) of this selection range.
-  		 */
+    * The {@link Range} of this selection range.
+    */
   var range: Range = js.native
 }
-

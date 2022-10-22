@@ -1,34 +1,37 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DotDensityRendererLegendOptions extends Object {
+trait DotDensityRendererLegendOptions
+  extends StObject
+     with Object {
+  
   /**
-    * Indicates the unit of the data being visualized. this will display next to the dot value in the title of the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
+    * Indicates the unit of the data being visualized.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#legendOptions)
     */
   var unit: js.UndefOr[String] = js.undefined
 }
-
 object DotDensityRendererLegendOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    unit: String = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): DotDensityRendererLegendOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[DotDensityRendererLegendOptions]
   }
+  
+  extension [Self <: DotDensityRendererLegendOptions](x: Self) {
+    
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+  }
 }
-

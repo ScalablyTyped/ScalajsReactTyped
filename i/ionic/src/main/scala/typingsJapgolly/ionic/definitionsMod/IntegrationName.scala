@@ -1,24 +1,20 @@
 package typingsJapgolly.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.ionic.ionicStrings.capacitor
   - typingsJapgolly.ionic.ionicStrings.cordova
   - typingsJapgolly.ionic.ionicStrings.enterprise
 */
-trait IntegrationName extends js.Object
-
+trait IntegrationName extends StObject
 object IntegrationName {
-  @scala.inline
-  def capacitor: typingsJapgolly.ionic.ionicStrings.capacitor = this.cast("capacitor")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def cordova: typingsJapgolly.ionic.ionicStrings.cordova = this.cast("cordova")
-  @scala.inline
-  def enterprise: typingsJapgolly.ionic.ionicStrings.enterprise = this.cast("enterprise")
+  
+  inline def capacitor: typingsJapgolly.ionic.ionicStrings.capacitor = "capacitor".asInstanceOf[typingsJapgolly.ionic.ionicStrings.capacitor]
+  
+  inline def cordova: typingsJapgolly.ionic.ionicStrings.cordova = "cordova".asInstanceOf[typingsJapgolly.ionic.ionicStrings.cordova]
+  
+  inline def enterprise: typingsJapgolly.ionic.ionicStrings.enterprise = "enterprise".asInstanceOf[typingsJapgolly.ionic.ionicStrings.enterprise]
 }
-

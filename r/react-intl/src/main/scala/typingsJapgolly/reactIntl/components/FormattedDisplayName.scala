@@ -1,12 +1,7 @@
 package typingsJapgolly.reactIntl.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactIntl.DisplayNamesOptionsvalues
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactIntl.anon.DisplayNamesOptionsvalues
 import typingsJapgolly.reactIntl.reactIntlStrings.`best fit`
 import typingsJapgolly.reactIntl.reactIntlStrings.code
 import typingsJapgolly.reactIntl.reactIntlStrings.currency
@@ -18,47 +13,34 @@ import typingsJapgolly.reactIntl.reactIntlStrings.none
 import typingsJapgolly.reactIntl.reactIntlStrings.region
 import typingsJapgolly.reactIntl.reactIntlStrings.script
 import typingsJapgolly.reactIntl.reactIntlStrings.short
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FormattedDisplayName {
-  def apply(
-    value: String | Double | js.Object,
-    fallback: code | none = null,
-    localeMatcher: lookup | (`best fit`) = null,
-    style: narrow | short | long = null,
-    `type`: language | region | script | currency = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    DisplayNamesOptionsvalues, 
-    MountedWithRawType[
-      DisplayNamesOptionsvalues, 
-      js.Object, 
-      RawMounted[DisplayNamesOptionsvalues, js.Object]
-    ]
-  ] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
-      if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
-    if (localeMatcher != null) __obj.updateDynamic("localeMatcher")(localeMatcher.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.reactIntl.DisplayNamesOptionsvalues, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactIntl.DisplayNamesOptionsvalues])(children: _*)
+  inline def apply(`type`: language | region | script | currency, value: String | Double | (Record[String, Any])): Builder = {
+    val __props = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __props.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[DisplayNamesOptionsvalues]))
   }
+  
   @JSImport("react-intl", "FormattedDisplayName")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def fallback(value: code | none): this.type = set("fallback", value.asInstanceOf[js.Any])
+    
+    inline def localeMatcher(value: lookup | (`best fit`)): this.type = set("localeMatcher", value.asInstanceOf[js.Any])
+    
+    inline def style(value: narrow | short | long): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: DisplayNamesOptionsvalues): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

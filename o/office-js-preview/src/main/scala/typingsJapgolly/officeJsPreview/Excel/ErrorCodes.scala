@@ -1,125 +1,167 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ErrorCodes extends js.Object
-
+sealed trait ErrorCodes extends StObject
 @JSGlobal("Excel.ErrorCodes")
 @js.native
-object ErrorCodes extends js.Object {
-  @js.native
-  sealed trait accessDenied extends ErrorCodes
+object ErrorCodes extends StObject {
   
   @js.native
-  sealed trait apiNotFound extends ErrorCodes
+  sealed trait accessDenied
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait conflict extends ErrorCodes
+  sealed trait apiNotFound
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait generalException extends ErrorCodes
+  sealed trait conflict
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait insertDeleteConflict extends ErrorCodes
+  sealed trait emptyChartSeries
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait invalidArgument extends ErrorCodes
+  sealed trait filteredRangeConflict
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait invalidBinding extends ErrorCodes
+  sealed trait formulaLengthExceedsLimit
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait invalidOperation extends ErrorCodes
+  sealed trait generalException
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait invalidOperationInCellEditMode extends ErrorCodes
+  sealed trait inactiveWorkbook
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait invalidReference extends ErrorCodes
+  sealed trait insertDeleteConflict
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait invalidSelection extends ErrorCodes
+  sealed trait invalidArgument
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait itemAlreadyExists extends ErrorCodes
+  sealed trait invalidBinding
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait itemNotFound extends ErrorCodes
+  sealed trait invalidOperation
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait nonBlankCellOffSheet extends ErrorCodes
+  sealed trait invalidOperationInCellEditMode
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait notImplemented extends ErrorCodes
+  sealed trait invalidReference
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait rangeExceedsLimit extends ErrorCodes
+  sealed trait invalidSelection
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait requestAborted extends ErrorCodes
+  sealed trait itemAlreadyExists
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait unsupportedOperation extends ErrorCodes
+  sealed trait itemNotFound
+    extends StObject
+       with ErrorCodes
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ErrorCodes with String] = js.native
-  /* "AccessDenied" */ @js.native
-  object accessDenied extends TopLevel[accessDenied with String]
+  @js.native
+  sealed trait mergedRangeConflict
+    extends StObject
+       with ErrorCodes
   
-  /* "ApiNotFound" */ @js.native
-  object apiNotFound extends TopLevel[apiNotFound with String]
+  @js.native
+  sealed trait nonBlankCellOffSheet
+    extends StObject
+       with ErrorCodes
   
-  /* "Conflict" */ @js.native
-  object conflict extends TopLevel[conflict with String]
+  @js.native
+  sealed trait notImplemented
+    extends StObject
+       with ErrorCodes
   
-  /* "GeneralException" */ @js.native
-  object generalException extends TopLevel[generalException with String]
+  @js.native
+  sealed trait openWorkbookLinksBlocked
+    extends StObject
+       with ErrorCodes
   
-  /* "InsertDeleteConflict" */ @js.native
-  object insertDeleteConflict extends TopLevel[insertDeleteConflict with String]
+  @js.native
+  sealed trait operationCellsExceedLimit
+    extends StObject
+       with ErrorCodes
   
-  /* "InvalidArgument" */ @js.native
-  object invalidArgument extends TopLevel[invalidArgument with String]
+  @js.native
+  sealed trait pivotTableRangeConflict
+    extends StObject
+       with ErrorCodes
   
-  /* "InvalidBinding" */ @js.native
-  object invalidBinding extends TopLevel[invalidBinding with String]
+  @js.native
+  sealed trait rangeExceedsLimit
+    extends StObject
+       with ErrorCodes
   
-  /* "InvalidOperation" */ @js.native
-  object invalidOperation extends TopLevel[invalidOperation with String]
+  @js.native
+  sealed trait refreshWorkbookLinksBlocked
+    extends StObject
+       with ErrorCodes
   
-  /* "InvalidOperationInCellEditMode" */ @js.native
-  object invalidOperationInCellEditMode extends TopLevel[invalidOperationInCellEditMode with String]
+  @js.native
+  sealed trait requestAborted
+    extends StObject
+       with ErrorCodes
   
-  /* "InvalidReference" */ @js.native
-  object invalidReference extends TopLevel[invalidReference with String]
+  @js.native
+  sealed trait responsePayloadSizeLimitExceeded
+    extends StObject
+       with ErrorCodes
   
-  /* "InvalidSelection" */ @js.native
-  object invalidSelection extends TopLevel[invalidSelection with String]
+  @js.native
+  sealed trait unsupportedFeature
+    extends StObject
+       with ErrorCodes
   
-  /* "ItemAlreadyExists" */ @js.native
-  object itemAlreadyExists extends TopLevel[itemAlreadyExists with String]
+  @js.native
+  sealed trait unsupportedFillType
+    extends StObject
+       with ErrorCodes
   
-  /* "ItemNotFound" */ @js.native
-  object itemNotFound extends TopLevel[itemNotFound with String]
+  @js.native
+  sealed trait unsupportedOperation
+    extends StObject
+       with ErrorCodes
   
-  /* "NonBlankCellOffSheet" */ @js.native
-  object nonBlankCellOffSheet extends TopLevel[nonBlankCellOffSheet with String]
-  
-  /* "NotImplemented" */ @js.native
-  object notImplemented extends TopLevel[notImplemented with String]
-  
-  /* "RangeExceedsLimit" */ @js.native
-  object rangeExceedsLimit extends TopLevel[rangeExceedsLimit with String]
-  
-  /* "RequestAborted" */ @js.native
-  object requestAborted extends TopLevel[requestAborted with String]
-  
-  /* "UnsupportedOperation" */ @js.native
-  object unsupportedOperation extends TopLevel[unsupportedOperation with String]
-  
+  @js.native
+  sealed trait unsupportedSheet
+    extends StObject
+       with ErrorCodes
 }
-

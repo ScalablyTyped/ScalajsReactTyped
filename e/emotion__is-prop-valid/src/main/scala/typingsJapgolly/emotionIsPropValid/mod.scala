@@ -1,12 +1,14 @@
 package typingsJapgolly.emotionIsPropValid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@emotion/is-prop-valid", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(string: String): Boolean = js.native
+object mod {
+  
+  @JSImport("@emotion/is-prop-valid", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(prop: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(prop.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }
-

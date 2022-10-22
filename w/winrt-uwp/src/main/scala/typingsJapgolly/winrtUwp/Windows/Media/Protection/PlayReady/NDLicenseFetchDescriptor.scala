@@ -1,29 +1,34 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Retrieves and sets properties used for fetching a PlayReady-ND license. */
-@JSGlobal("Windows.Media.Protection.PlayReady.NDLicenseFetchDescriptor")
-@js.native
-class NDLicenseFetchDescriptor protected () extends js.Object {
-  /**
-    * Creates a new instance of the NDLicenseFetchDescriptor class.
-    * @param contentIDType The type of the content identifier.
-    * @param contentIDBytes The content identifier.
-    * @param licenseFetchChallengeCustomData The license fetch challenge custom data.
-    */
-  def this(
-    contentIDType: NDContentIDType,
-    contentIDBytes: js.Array[Double],
-    licenseFetchChallengeCustomData: INDCustomData
-  ) = this()
+trait NDLicenseFetchDescriptor extends StObject {
+  
   /** Gets the content identifer. */
-  var contentID: Double = js.native
+  var contentID: Double
+  
   /** Gets the type of the content identifier. */
-  var contentIDType: NDContentIDType = js.native
+  var contentIDType: NDContentIDType
+  
   /** Gets or sets custom data for a license fetch challenge. */
-  var licenseFetchChallengeCustomData: INDCustomData = js.native
+  var licenseFetchChallengeCustomData: INDCustomData
 }
-
+object NDLicenseFetchDescriptor {
+  
+  inline def apply(contentID: Double, contentIDType: NDContentIDType, licenseFetchChallengeCustomData: INDCustomData): NDLicenseFetchDescriptor = {
+    val __obj = js.Dynamic.literal(contentID = contentID.asInstanceOf[js.Any], contentIDType = contentIDType.asInstanceOf[js.Any], licenseFetchChallengeCustomData = licenseFetchChallengeCustomData.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NDLicenseFetchDescriptor]
+  }
+  
+  extension [Self <: NDLicenseFetchDescriptor](x: Self) {
+    
+    inline def setContentID(value: Double): Self = StObject.set(x, "contentID", value.asInstanceOf[js.Any])
+    
+    inline def setContentIDType(value: NDContentIDType): Self = StObject.set(x, "contentIDType", value.asInstanceOf[js.Any])
+    
+    inline def setLicenseFetchChallengeCustomData(value: INDCustomData): Self = StObject.set(x, "licenseFetchChallengeCustomData", value.asInstanceOf[js.Any])
+  }
+}

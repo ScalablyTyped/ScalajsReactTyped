@@ -1,47 +1,32 @@
 package typingsJapgolly.reactRouterRedux.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.history.mod.History
-import typingsJapgolly.history.mod.LocationState
 import typingsJapgolly.reactRouterRedux.mod.ConnectedRouterProps
 import typingsJapgolly.redux.mod.AnyAction
 import typingsJapgolly.redux.mod.Store
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ConnectedRouter {
-  def apply[State](
-    history: History[LocationState],
-    store: Store[State, AnyAction] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ConnectedRouterProps[State], 
-    typingsJapgolly.reactRouterRedux.mod.ConnectedRouter[State], 
-    Unit, 
-    ConnectedRouterProps[State]
-  ] = {
-    val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
   
-      if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactRouterRedux.mod.ConnectedRouterProps[State], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactRouterRedux.mod.ConnectedRouter[State]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactRouterRedux.mod.ConnectedRouterProps[State]])(children: _*)
+  inline def apply[State](history: History): Builder[State] = {
+    val __props = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
+    new Builder[State](js.Array(this.component, __props.asInstanceOf[ConnectedRouterProps[State]]))
   }
+  
   @JSImport("react-router-redux", "ConnectedRouter")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[State] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactRouterRedux.mod.ConnectedRouter[State]] {
+    
+    inline def store(value: Store[State, AnyAction]): this.type = set("store", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[State](p: ConnectedRouterProps[State]): Builder[State] = new Builder[State](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

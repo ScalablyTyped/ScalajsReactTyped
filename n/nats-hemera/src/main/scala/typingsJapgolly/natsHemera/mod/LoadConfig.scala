@@ -1,30 +1,42 @@
 package typingsJapgolly.natsHemera.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoadConfig extends js.Object {
+trait LoadConfig extends StObject {
+  
   var checkPolicy: js.UndefOr[Boolean] = js.undefined
+  
   var policy: js.UndefOr[LoadPolicyConfig] = js.undefined
+  
   var process: js.UndefOr[LoadProcessConfig] = js.undefined
+  
   var shouldCrash: js.UndefOr[Boolean] = js.undefined
 }
-
 object LoadConfig {
-  @scala.inline
-  def apply(
-    checkPolicy: js.UndefOr[Boolean] = js.undefined,
-    policy: LoadPolicyConfig = null,
-    process: LoadProcessConfig = null,
-    shouldCrash: js.UndefOr[Boolean] = js.undefined
-  ): LoadConfig = {
+  
+  inline def apply(): LoadConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkPolicy)) __obj.updateDynamic("checkPolicy")(checkPolicy.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (process != null) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldCrash)) __obj.updateDynamic("shouldCrash")(shouldCrash.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadConfig]
   }
+  
+  extension [Self <: LoadConfig](x: Self) {
+    
+    inline def setCheckPolicy(value: Boolean): Self = StObject.set(x, "checkPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setCheckPolicyUndefined: Self = StObject.set(x, "checkPolicy", js.undefined)
+    
+    inline def setPolicy(value: LoadPolicyConfig): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    
+    inline def setProcess(value: LoadProcessConfig): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    
+    inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+    
+    inline def setShouldCrash(value: Boolean): Self = StObject.set(x, "shouldCrash", value.asInstanceOf[js.Any])
+    
+    inline def setShouldCrashUndefined: Self = StObject.set(x, "shouldCrash", js.undefined)
+  }
 }
-

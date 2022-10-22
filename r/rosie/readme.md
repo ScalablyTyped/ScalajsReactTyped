@@ -9,10 +9,10 @@ factory for building JavaScript objects, mostly useful for setting up test data.
 | ------------------ | :-------------: |
 | Full name          | rosie |
 | Keywords           | factory, rosie, test |
-| # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 2310311 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 391793.6666666667 |
+| # stars            | 996.0 |
 
 ## Links
 - [Homepage](https://github.com/rosiejs/rosie#readme)

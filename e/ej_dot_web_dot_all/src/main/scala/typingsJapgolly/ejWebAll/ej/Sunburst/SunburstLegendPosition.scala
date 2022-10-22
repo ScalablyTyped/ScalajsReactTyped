@@ -1,45 +1,36 @@
 package typingsJapgolly.ejWebAll.ej.Sunburst
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SunburstLegendPosition extends js.Object
-
+sealed trait SunburstLegendPosition extends StObject
 @JSGlobal("ej.Sunburst.SunburstLegendPosition")
 @js.native
-object SunburstLegendPosition extends js.Object {
-  //string
-  @js.native
-  sealed trait Bottom extends SunburstLegendPosition
+object SunburstLegendPosition extends StObject {
   
   //string
   @js.native
-  sealed trait Left extends SunburstLegendPosition
+  sealed trait Bottom
+    extends StObject
+       with SunburstLegendPosition
   
   //string
   @js.native
-  sealed trait Right extends SunburstLegendPosition
+  sealed trait Left
+    extends StObject
+       with SunburstLegendPosition
   
   //string
   @js.native
-  sealed trait Top extends SunburstLegendPosition
+  sealed trait Right
+    extends StObject
+       with SunburstLegendPosition
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SunburstLegendPosition with Double] = js.native
-  /* 3 */ @js.native
-  object Bottom extends TopLevel[Bottom with Double]
-  
-  /* 0 */ @js.native
-  object Left extends TopLevel[Left with Double]
-  
-  /* 1 */ @js.native
-  object Right extends TopLevel[Right with Double]
-  
-  /* 2 */ @js.native
-  object Top extends TopLevel[Top with Double]
-  
+  //string
+  @js.native
+  sealed trait Top
+    extends StObject
+       with SunburstLegendPosition
 }
-

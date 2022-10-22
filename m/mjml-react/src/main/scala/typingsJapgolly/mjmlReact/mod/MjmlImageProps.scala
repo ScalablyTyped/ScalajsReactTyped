@@ -1,53 +1,104 @@
 package typingsJapgolly.mjmlReact.mod
 
-import typingsJapgolly.csstype.mod.BackgroundColorProperty
-import typingsJapgolly.csstype.mod.BorderProperty
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import typingsJapgolly.csstype.mod.Property.BackgroundColor
+import typingsJapgolly.csstype.mod.Property.Border
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MjmlImageProps extends js.Object {
+trait MjmlImageProps extends StObject {
+  
   var align: js.UndefOr[String] = js.undefined
+  
   var alt: js.UndefOr[String] = js.undefined
-  var border: js.UndefOr[BorderProperty[String | Double]] = js.undefined
+  
+  var border: js.UndefOr[Border[String | Double]] = js.undefined
+  
   var borderRadius: js.UndefOr[String | Double] = js.undefined
-  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
+  
+  var children: js.UndefOr[Node] = js.undefined
+  
+  var containerBackgroundColor: js.UndefOr[BackgroundColor] = js.undefined
+  
   var fluidOnMobile: js.UndefOr[String] = js.undefined
+  
   var height: js.UndefOr[String | Double] = js.undefined
+  
   var src: js.UndefOr[String] = js.undefined
+  
   var srcset: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[String | Double] = js.undefined
 }
-
 object MjmlImageProps {
-  @scala.inline
-  def apply(
-    align: String = null,
-    alt: String = null,
-    border: BorderProperty[String | Double] = null,
-    borderRadius: String | Double = null,
-    containerBackgroundColor: BackgroundColorProperty = null,
-    fluidOnMobile: String = null,
-    height: String | Double = null,
-    src: String = null,
-    srcset: String = null,
-    title: String = null,
-    width: String | Double = null
-  ): MjmlImageProps = {
+  
+  inline def apply(): MjmlImageProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (containerBackgroundColor != null) __obj.updateDynamic("containerBackgroundColor")(containerBackgroundColor.asInstanceOf[js.Any])
-    if (fluidOnMobile != null) __obj.updateDynamic("fluidOnMobile")(fluidOnMobile.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (srcset != null) __obj.updateDynamic("srcset")(srcset.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MjmlImageProps]
   }
+  
+  extension [Self <: MjmlImageProps](x: Self) {
+    
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setBorder(value: Border[String | Double]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadius(value: String | Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setContainerBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setContainerBackgroundColorUndefined: Self = StObject.set(x, "containerBackgroundColor", js.undefined)
+    
+    inline def setFluidOnMobile(value: String): Self = StObject.set(x, "fluidOnMobile", value.asInstanceOf[js.Any])
+    
+    inline def setFluidOnMobileUndefined: Self = StObject.set(x, "fluidOnMobile", js.undefined)
+    
+    inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    
+    inline def setSrcset(value: String): Self = StObject.set(x, "srcset", value.asInstanceOf[js.Any])
+    
+    inline def setSrcsetUndefined: Self = StObject.set(x, "srcset", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

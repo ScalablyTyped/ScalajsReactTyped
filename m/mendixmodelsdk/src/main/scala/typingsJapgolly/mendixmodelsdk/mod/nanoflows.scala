@@ -1,45 +1,49 @@
 package typingsJapgolly.mendixmodelsdk.mod
 
-import typingsJapgolly.mendixmodelsdk.baseModelMod.IModel
-import typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.JavaActionParameterMapping
-import typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.JavaScriptActionParameterMapping
+import typingsJapgolly.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.JavaActionParameterMapping
+import typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.JavaScriptActionParameterMapping
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "nanoflows")
-@js.native
-object nanoflows extends js.Object {
+object nanoflows {
+  
   /**
     * Interfaces and instance classes for types from the Mendix sub meta model `Nanoflows`.
     */
   /**
     * In version 8.4.0: introduced
     */
+  @JSImport("mendixmodelsdk", "nanoflows.NanoflowParameterValue")
   @js.native
-  class NanoflowParameterValue protected ()
-    extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.nanoflows.NanoflowParameterValue {
+  open class NanoflowParameterValue protected ()
+    extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.nanoflows.NanoflowParameterValue {
     def this(
-      model: typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel,
+      model: typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit,
-      container: typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
+      unit: typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
-  
-  /* static members */
-  @js.native
-  object NanoflowParameterValue extends js.Object {
-    var structureTypeName: String = js.native
-    var versionInfo: typingsJapgolly.mendixmodelsdk.nanoflowsMod.StructureVersionInfo = js.native
+  object NanoflowParameterValue {
+    
+    @JSImport("mendixmodelsdk", "nanoflows.NanoflowParameterValue")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates and returns a new NanoflowParameterValue instance in the SDK and on the server.
       * Expects one argument: the IModel object the instance will "live on".
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
-    def create(model: IModel): typingsJapgolly.mendixmodelsdk.nanoflowsMod.nanoflows.NanoflowParameterValue = js.native
+    /* static member */
+    inline def create(model: IModel): typingsJapgolly.mendixmodelsdk.srcGenNanoflowsMod.nanoflows.NanoflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenNanoflowsMod.nanoflows.NanoflowParameterValue]
+    
     /**
       * Creates and returns a new NanoflowParameterValue instance in the SDK and on the server.
       * The new NanoflowParameterValue will be automatically stored in the 'parameterValue' property
@@ -48,7 +52,9 @@ object nanoflows extends js.Object {
       * Warning! Can only be used on models with the following Mendix meta model versions:
       *  8.4.0 and higher
       */
-    def createInJavaActionParameterMappingUnderParameterValue(container: JavaActionParameterMapping): typingsJapgolly.mendixmodelsdk.nanoflowsMod.nanoflows.NanoflowParameterValue = js.native
+    /* static member */
+    inline def createInJavaActionParameterMappingUnderParameterValue(container: JavaActionParameterMapping): typingsJapgolly.mendixmodelsdk.srcGenNanoflowsMod.nanoflows.NanoflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenNanoflowsMod.nanoflows.NanoflowParameterValue]
+    
     /**
       * Creates and returns a new NanoflowParameterValue instance in the SDK and on the server.
       * The new NanoflowParameterValue will be automatically stored in the 'parameterValue' property
@@ -57,8 +63,19 @@ object nanoflows extends js.Object {
       * Warning! Can only be used on models with the following Mendix meta model versions:
       *  8.4.0 and higher
       */
-    def createInJavaScriptActionParameterMappingUnderParameterValue(container: JavaScriptActionParameterMapping): typingsJapgolly.mendixmodelsdk.nanoflowsMod.nanoflows.NanoflowParameterValue = js.native
+    /* static member */
+    inline def createInJavaScriptActionParameterMappingUnderParameterValue(container: JavaScriptActionParameterMapping): typingsJapgolly.mendixmodelsdk.srcGenNanoflowsMod.nanoflows.NanoflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaScriptActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenNanoflowsMod.nanoflows.NanoflowParameterValue]
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "nanoflows.NanoflowParameterValue.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "nanoflows.NanoflowParameterValue.versionInfo")
+    @js.native
+    def versionInfo: typingsJapgolly.mendixmodelsdk.srcGenNanoflowsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typingsJapgolly.mendixmodelsdk.srcGenNanoflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
-  
 }
-

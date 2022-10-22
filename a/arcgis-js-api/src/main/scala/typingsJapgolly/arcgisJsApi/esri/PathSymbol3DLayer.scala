@@ -1,117 +1,98 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.all
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.bevel
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.bottom
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.butt
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.center
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.bevel_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.bottom_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.butt_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.center_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.circle
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.heading
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.miter
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.none
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.miter_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.none_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.path
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.quad
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.round
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.square
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.top
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.round_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.square_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.top_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PathSymbol3DLayer
-  extends Symbol3DLayer
+  extends StObject
+     with Symbol3DLayer
      with typingsJapgolly.arcgisJsApi.esri.symbols.Symbol3DLayer
      with symbolsSymbol3DLayer {
+  
   /**
     * Defines offset of the path cross section relative to the [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometry.
     *
-    * Possible Value | Example
-    * ---------------|---------
-    * center | ![anchor-center](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/anchor-center.png)
-    * bottom | ![anchor-bottom](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/anchor-bottom.png)
-    * top | ![anchor-top](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/anchor-top.png)
-    *
+    * @default "center"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#anchor)
-    *
-    * @default "center"
     */
-  var anchor: center | bottom | top = js.native
+  var anchor: center_ | bottom_ | top_ = js.native
+  
   /**
-    * Controls the shape at the start and end point of the path. `none` will not render the faces that close the path. See the table below for possible values.
-    *
-    * Possible Value | Example
-    * ---------------|---------
-    * butt | ![line3d-cap-butt](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/line3d-cap-butt.png)
-    * round | ![line3d-cap-round](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/line3d-cap-round.png)
-    * square | ![line3d-cap-square](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/line3d-cap-square.png)
-    * none | ![line3d-cap-square](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/line3d-cap-none.png)
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#cap)
+    * Controls the shape at the start and end point of the path.
     *
     * @default "butt"
-    */
-  var cap: none | butt | square | round = js.native
-  /**
-    * Indicates whether the symbol layer geometry casts shadows in the scene. Setting this property to `false` will disable shadows for the symbol layer even if direct shadows are enabled in [SceneView.environment](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#castShadows)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#cap)
+    */
+  var cap: none_ | butt_ | square_ | round_ = js.native
+  
+  /**
+    * Indicates whether the symbol layer geometry casts shadows in the scene.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#castShadows)
     */
   var castShadows: Boolean = js.native
+  
   /**
-    * The vertical dimension of the cross-section of the path in meters. If only the [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#width) is set, then the height is set to the same value as the width. If neither width nor height are set, then the path is not displayed.
+    * The vertical dimension of the cross-section of the path in meters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#height)
     */
   var height: Double = js.native
+  
   /**
-    * Controls the shape of the connection between two segments of the path. See the table below for possible values.
-    *
-    * Possible Value | Example
-    * ---------------|---------
-    * bevel | ![line3d-join-bevel](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/line3d-join-bevel.png)
-    * miter | ![line3d-join-miter](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/line3d-join-miter.png)
-    * round | ![line3d-join-round](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/line3d-join-round.png)
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#join)
+    * Controls the shape of the connection between two segments of the path.
     *
     * @default "miter"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#join)
     */
-  var join: miter | bevel | round = js.native
+  var join: miter_ | bevel_ | round_ = js.native
+  
   /**
-    * The material used to shade the path. This property defines the paths's color.
+    * The material used to shade the path.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#material)
     */
   var material: PathSymbol3DLayerMaterial = js.native
+  
   /**
-    * Cross-section profile of the path geometry. Setting it to `circle` creates a path with a pipe shape and setting it to `quad` gives the path a rectangular shape.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profile)
+    * Cross-section profile of the path geometry.
     *
     * @default "circle"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profile)
     */
   var profile: circle | quad = js.native
+  
   /**
-    * Defines how the [profile](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profile) is rotated as it is extruded along the [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometry. The rotation axes (heading, tilt, roll) can be limited to constrain the orientation of the profile in the scene. Setting `profileRotation` to `all` minimizes the twist along the line and ensures that the diameter of the resulting visualization corresponds to [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#width) and [height](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#height). Setting `profileRotation` to `"heading"` ensures that the profile stays upright (no tilt or twist).  Typically, `all` is used for `circle` profiles and `heading` is used for `quad` profiles.  As an example, when setting `heading` on a path with a `quad` profile the path is oriented upright:  ![profileRotation-heading](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/profileRotation-heading.png)  The same path with `profileRotation` set to `all` will rotate in all three degrees of freedom:  ![profileRotation-all](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/profileRotation-all.png)
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profileRotation)
+    * Defines how the [profile](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profile) is rotated as it is extruded along the [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometry.
     *
     * @default "all"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profileRotation)
     */
   var profileRotation: heading | all = js.native
-  /**
-    * Sets the width and height of the path in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#size)
-    */
-  var size: Double = js.native
+  
   /**
     * The symbol type.
     *
@@ -119,15 +100,11 @@ trait PathSymbol3DLayer
     */
   @JSName("type")
   val type_PathSymbol3DLayer: path = js.native
+  
   /**
-    * The horizontal dimension of the cross-section of the path in meters. If only the [height](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#height) is set, then the width is set to the same value as the height. If neither width nor height are set, then the path is not displayed.
+    * The horizontal dimension of the cross-section of the path in meters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#width)
     */
   var width: Double = js.native
 }
-
-@JSGlobal("__esri.PathSymbol3DLayer")
-@js.native
-object PathSymbol3DLayer extends TopLevel[PathSymbol3DLayerConstructor]
-

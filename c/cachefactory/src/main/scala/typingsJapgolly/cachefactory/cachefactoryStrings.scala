@@ -2,40 +2,45 @@ package typingsJapgolly.cachefactory
 
 import typingsJapgolly.cachefactory.mod.DeleteOnExpire
 import typingsJapgolly.cachefactory.mod.StorageMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cachefactoryStrings {
-  @js.native
-  sealed trait aggressive extends DeleteOnExpire
   
   @js.native
-  sealed trait localStorage extends StorageMode
+  sealed trait aggressive
+    extends StObject
+       with DeleteOnExpire
+  inline def aggressive: aggressive = "aggressive".asInstanceOf[aggressive]
   
   @js.native
-  sealed trait memory extends StorageMode
+  sealed trait localStorage
+    extends StObject
+       with StorageMode
+  inline def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
   
   @js.native
-  sealed trait none extends DeleteOnExpire
+  sealed trait memory
+    extends StObject
+       with StorageMode
+  inline def memory: memory = "memory".asInstanceOf[memory]
   
   @js.native
-  sealed trait passive extends DeleteOnExpire
+  sealed trait none
+    extends StObject
+       with DeleteOnExpire
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait sessionStorage extends StorageMode
+  sealed trait passive
+    extends StObject
+       with DeleteOnExpire
+  inline def passive: passive = "passive".asInstanceOf[passive]
   
-  @scala.inline
-  def aggressive: aggressive = "aggressive".asInstanceOf[aggressive]
-  @scala.inline
-  def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
-  @scala.inline
-  def memory: memory = "memory".asInstanceOf[memory]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def passive: passive = "passive".asInstanceOf[passive]
-  @scala.inline
-  def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
+  @js.native
+  sealed trait sessionStorage
+    extends StObject
+       with StorageMode
+  inline def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
 }
-

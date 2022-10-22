@@ -1,22 +1,27 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnSocketOpenCallbackResult extends js.Object {
+trait OnSocketOpenCallbackResult extends StObject {
+  
   /**
     * 连接成功的 HTTP 响应 Header
     */
-  var header: js.UndefOr[js.Any] = js.undefined
+  var header: js.UndefOr[Any] = js.undefined
 }
-
 object OnSocketOpenCallbackResult {
-  @scala.inline
-  def apply(header: js.Any = null): OnSocketOpenCallbackResult = {
+  
+  inline def apply(): OnSocketOpenCallbackResult = {
     val __obj = js.Dynamic.literal()
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnSocketOpenCallbackResult]
   }
+  
+  extension [Self <: OnSocketOpenCallbackResult](x: Self) {
+    
+    inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+  }
 }
-

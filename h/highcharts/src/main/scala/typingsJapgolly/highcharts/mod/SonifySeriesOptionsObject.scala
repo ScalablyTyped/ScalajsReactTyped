@@ -1,13 +1,14 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for sonifying a series.
   */
-trait SonifySeriesOptionsObject extends js.Object {
+trait SonifySeriesOptionsObject extends StObject {
+  
   /**
     * Optionally provide the minimum/maximum data values for the points. If
     * this is not supplied, it is calculated from all points in the chart
@@ -15,39 +16,46 @@ trait SonifySeriesOptionsObject extends js.Object {
     * of point data properties to objects with min/max values: (see online
     * documentation for example)
     */
-  var dataExtremes: js.UndefOr[js.Object] = js.undefined
+  var dataExtremes: js.UndefOr[Dictionary[RangeObject]] = js.undefined
+  
   /**
     * The duration for playing the points. Note that points might continue
     * to play after the duration has passed, but no new points will start
     * playing.
     */
   var duration: Double
+  
   /**
     * Earcons to add to the series.
     */
   var earcons: js.UndefOr[
     js.Array[
-      typingsJapgolly.highcharts.sonificationMod.highchartsAugmentingMod.EarconConfiguration
+      typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconConfiguration
     ]
   ] = js.undefined
+  
   /**
     * The instrument definitions for the points in this series.
     */
   var instruments: js.Array[
-    typingsJapgolly.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject
+    typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject
   ]
+  
   /**
     * Callback after the series has played.
     */
   var onEnd: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * Callback after a point has finished playing.
     */
   var onPointEnd: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * Callback before a point is played.
     */
   var onPointStart: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * The axis to use for when to play the points. Can be a string with a
     * data property (e.g. `x`), or a function. If it is a function, this
@@ -58,30 +66,61 @@ trait SonifySeriesOptionsObject extends js.Object {
     */
   var pointPlayTime: String | js.Function
 }
-
 object SonifySeriesOptionsObject {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     duration: Double,
     instruments: js.Array[
-      typingsJapgolly.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject
+      typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject
     ],
-    pointPlayTime: String | js.Function,
-    dataExtremes: js.Object = null,
-    earcons: js.Array[
-      typingsJapgolly.highcharts.sonificationMod.highchartsAugmentingMod.EarconConfiguration
-    ] = null,
-    onEnd: js.Function = null,
-    onPointEnd: js.Function = null,
-    onPointStart: js.Function = null
+    pointPlayTime: String | js.Function
   ): SonifySeriesOptionsObject = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], instruments = instruments.asInstanceOf[js.Any], pointPlayTime = pointPlayTime.asInstanceOf[js.Any])
-    if (dataExtremes != null) __obj.updateDynamic("dataExtremes")(dataExtremes.asInstanceOf[js.Any])
-    if (earcons != null) __obj.updateDynamic("earcons")(earcons.asInstanceOf[js.Any])
-    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd.asInstanceOf[js.Any])
-    if (onPointEnd != null) __obj.updateDynamic("onPointEnd")(onPointEnd.asInstanceOf[js.Any])
-    if (onPointStart != null) __obj.updateDynamic("onPointStart")(onPointStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[SonifySeriesOptionsObject]
   }
+  
+  extension [Self <: SonifySeriesOptionsObject](x: Self) {
+    
+    inline def setDataExtremes(value: Dictionary[RangeObject]): Self = StObject.set(x, "dataExtremes", value.asInstanceOf[js.Any])
+    
+    inline def setDataExtremesUndefined: Self = StObject.set(x, "dataExtremes", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setEarcons(
+      value: js.Array[
+          typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconConfiguration
+        ]
+    ): Self = StObject.set(x, "earcons", value.asInstanceOf[js.Any])
+    
+    inline def setEarconsUndefined: Self = StObject.set(x, "earcons", js.undefined)
+    
+    inline def setEarconsVarargs(
+      value: typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconConfiguration*
+    ): Self = StObject.set(x, "earcons", js.Array(value*))
+    
+    inline def setInstruments(
+      value: js.Array[
+          typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject
+        ]
+    ): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
+    
+    inline def setInstrumentsVarargs(
+      value: typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject*
+    ): Self = StObject.set(x, "instruments", js.Array(value*))
+    
+    inline def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
+    
+    inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+    
+    inline def setOnPointEnd(value: js.Function): Self = StObject.set(x, "onPointEnd", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointEndUndefined: Self = StObject.set(x, "onPointEnd", js.undefined)
+    
+    inline def setOnPointStart(value: js.Function): Self = StObject.set(x, "onPointStart", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointStartUndefined: Self = StObject.set(x, "onPointStart", js.undefined)
+    
+    inline def setPointPlayTime(value: String | js.Function): Self = StObject.set(x, "pointPlayTime", value.asInstanceOf[js.Any])
+  }
 }
-

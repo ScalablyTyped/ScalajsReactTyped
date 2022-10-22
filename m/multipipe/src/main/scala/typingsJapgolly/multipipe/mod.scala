@@ -6,14 +6,12 @@ import typingsJapgolly.node.streamMod.PassThrough
 import typingsJapgolly.node.streamMod.Readable
 import typingsJapgolly.node.streamMod.Stream
 import typingsJapgolly.node.streamMod.Writable
-import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("multipipe", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Pass a variable number of streams and each will be piped to the next one.
     *
@@ -23,73 +21,84 @@ object mod extends js.Object {
     *
     * Pass a function as last argument to be called on error or finish of the last stream.
     */
-  def apply(): PassThrough = js.native
-  def apply(callback: js.Function1[/* err */ js.UndefOr[Error], _]): PassThrough = js.native
-  def apply(options: DuplexOptions): PassThrough = js.native
-  def apply(options: DuplexOptions, callback: js.Function1[/* err */ js.UndefOr[Error], _]): PassThrough = js.native
-  def apply(source: Readable, destination: Writable): Duplex = js.native
-  def apply(source: Readable, destination: Writable, callback: js.Function1[/* err */ js.UndefOr[Error], _]): Duplex = js.native
-  def apply(source: Readable, destination: Writable, options: DuplexOptions): Duplex = js.native
-  def apply(
+  inline def apply(): PassThrough = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[PassThrough]
+  inline def apply(callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]): PassThrough = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[PassThrough]
+  inline def apply(options: Unit, callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]): PassThrough = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[PassThrough]
+  inline def apply(options: DuplexOptions): PassThrough = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[PassThrough]
+  inline def apply(options: DuplexOptions, callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]): PassThrough = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[PassThrough]
+  inline def apply(source: Readable, destination: Writable): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
+    source: Readable,
+    destination: Writable,
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
+    source: Readable,
+    destination: Writable,
+    options: Unit,
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(source: Readable, destination: Writable, options: DuplexOptions): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     destination: Writable,
     options: DuplexOptions,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(source: Readable, t1: Duplex, t2: Duplex, destination: Writable): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(source: Readable, t1: Duplex, t2: Duplex, destination: Writable): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
     destination: Writable,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(source: Readable, t1: Duplex, t2: Duplex, destination: Writable, options: DuplexOptions): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(source: Readable, t1: Duplex, t2: Duplex, destination: Writable, options: DuplexOptions): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
     destination: Writable,
     options: DuplexOptions,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(source: Readable, t1: Duplex, t2: Duplex, t3: Duplex, destination: Writable): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(source: Readable, t1: Duplex, t2: Duplex, t3: Duplex, destination: Writable): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
     t3: Duplex,
     destination: Writable,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
     t3: Duplex,
     destination: Writable,
     options: DuplexOptions
-  ): Duplex = js.native
-  def apply(
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
     t3: Duplex,
     destination: Writable,
     options: DuplexOptions,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(source: Readable, t1: Duplex, t2: Duplex, t3: Duplex, t4: Duplex, destination: Writable): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(source: Readable, t1: Duplex, t2: Duplex, t3: Duplex, t4: Duplex, destination: Writable): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
     t3: Duplex,
     t4: Duplex,
     destination: Writable,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -97,8 +106,8 @@ object mod extends js.Object {
     t4: Duplex,
     destination: Writable,
     options: DuplexOptions
-  ): Duplex = js.native
-  def apply(
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -106,9 +115,9 @@ object mod extends js.Object {
     t4: Duplex,
     destination: Writable,
     options: DuplexOptions,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -116,8 +125,8 @@ object mod extends js.Object {
     t4: Duplex,
     t5: Duplex,
     destination: Writable
-  ): Duplex = js.native
-  def apply(
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -125,9 +134,9 @@ object mod extends js.Object {
     t4: Duplex,
     t5: Duplex,
     destination: Writable,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -136,8 +145,8 @@ object mod extends js.Object {
     t5: Duplex,
     destination: Writable,
     options: DuplexOptions
-  ): Duplex = js.native
-  def apply(
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -146,9 +155,9 @@ object mod extends js.Object {
     t5: Duplex,
     destination: Writable,
     options: DuplexOptions,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -157,8 +166,8 @@ object mod extends js.Object {
     t5: Duplex,
     t6: Duplex,
     destination: Writable
-  ): Duplex = js.native
-  def apply(
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], t6.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -167,9 +176,9 @@ object mod extends js.Object {
     t5: Duplex,
     t6: Duplex,
     destination: Writable,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], t6.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -179,8 +188,8 @@ object mod extends js.Object {
     t6: Duplex,
     destination: Writable,
     options: DuplexOptions
-  ): Duplex = js.native
-  def apply(
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], t6.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -190,9 +199,9 @@ object mod extends js.Object {
     t6: Duplex,
     destination: Writable,
     options: DuplexOptions,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], t6.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -202,8 +211,8 @@ object mod extends js.Object {
     t6: Duplex,
     t7: Duplex,
     destination: Writable
-  ): Duplex = js.native
-  def apply(
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], t6.asInstanceOf[js.Any], t7.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -213,9 +222,9 @@ object mod extends js.Object {
     t6: Duplex,
     t7: Duplex,
     destination: Writable,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], t6.asInstanceOf[js.Any], t7.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -226,8 +235,8 @@ object mod extends js.Object {
     t7: Duplex,
     destination: Writable,
     options: DuplexOptions
-  ): Duplex = js.native
-  def apply(
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], t6.asInstanceOf[js.Any], t7.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     t1: Duplex,
     t2: Duplex,
@@ -238,34 +247,47 @@ object mod extends js.Object {
     t7: Duplex,
     destination: Writable,
     options: DuplexOptions,
-    callback: js.Function1[/* err */ js.UndefOr[js.Error], _]
-  ): Duplex = js.native
-  def apply(source: Readable, transform: Duplex, destination: Writable): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], t6.asInstanceOf[js.Any], t7.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(source: Readable, transform: Duplex, destination: Writable): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     transform: Duplex,
     destination: Writable,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(source: Readable, transform: Duplex, destination: Writable, options: DuplexOptions): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(source: Readable, transform: Duplex, destination: Writable, options: DuplexOptions): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     source: Readable,
     transform: Duplex,
     destination: Writable,
     options: DuplexOptions,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(stream: js.Array[Stream]): Duplex = js.native
-  def apply(stream: js.Array[Stream], callback: js.Function1[/* err */ js.UndefOr[Error], _]): Duplex = js.native
-  def apply(stream: js.Array[Stream], options: DuplexOptions): Duplex = js.native
-  def apply(
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(stream: js.Array[Stream]): Duplex = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Duplex]
+  inline def apply(stream: js.Array[Stream], callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]): Duplex = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
+    stream: js.Array[Stream],
+    options: Unit,
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(stream: js.Array[Stream], options: DuplexOptions): Duplex = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
     stream: js.Array[Stream],
     options: DuplexOptions,
-    callback: js.Function1[/* err */ js.UndefOr[Error], _]
-  ): Duplex = js.native
-  def apply(stream: Duplex): Duplex = js.native
-  def apply(stream: Duplex, callback: js.Function1[/* err */ js.UndefOr[Error], _]): Duplex = js.native
-  def apply(stream: Duplex, options: DuplexOptions): Duplex = js.native
-  def apply(stream: Duplex, options: DuplexOptions, callback: js.Function1[/* err */ js.UndefOr[Error], _]): Duplex = js.native
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(stream: Duplex): Duplex = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Duplex]
+  inline def apply(stream: Duplex, callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]): Duplex = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(stream: Duplex, options: Unit, callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]): Duplex = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(stream: Duplex, options: DuplexOptions): Duplex = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def apply(
+    stream: Duplex,
+    options: DuplexOptions,
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Any]
+  ): Duplex = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  
+  @JSImport("multipipe", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

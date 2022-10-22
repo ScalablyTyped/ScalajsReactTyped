@@ -1,43 +1,97 @@
 package typingsJapgolly.playcanvas.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @class
-  * @name pc.ElementMouseEvent
-  * @augments pc.ElementInputEvent
-  * @classdesc Represents a Mouse event fired on a {@link pc.ElementComponent}.
-  * @description Create an instance of a pc.ElementMouseEvent.
-  * @param {MouseEvent} event - The MouseEvent that was originally raised.
-  * @param {pc.ElementComponent} element - The ElementComponent that this event was originally raised on.
-  * @param {pc.CameraComponent} camera - The CameraComponent that this event was originally raised via.
-  * @param {number} x - The x coordinate.
-  * @param {number} y - The y coordinate.
-  * @param {number} lastX - The last x coordinate.
-  * @param {number} lastY - The last y coordinate.
-  * @property {boolean} ctrlKey Whether the ctrl key was pressed.
-  * @property {boolean} altKey Whether the alt key was pressed.
-  * @property {boolean} shiftKey Whether the shift key was pressed.
-  * @property {boolean} metaKey Whether the meta key was pressed.
-  * @property {number} button The mouse button.
-  * @property {number} dx The amount of horizontal movement of the cursor.
-  * @property {number} dy The amount of vertical movement of the cursor.
-  * @property {number} wheelDelta The amount of the wheel movement.
+  * Represents a Mouse event fired on a {@link ElementComponent}.
+  *
+  * @augments ElementInputEvent
   */
 @JSImport("playcanvas", "ElementMouseEvent")
 @js.native
-class ElementMouseEvent protected ()
-  extends typingsJapgolly.playcanvas.pc.ElementMouseEvent {
+open class ElementMouseEvent protected () extends ElementInputEvent {
+  /**
+    * Create an instance of an ElementMouseEvent.
+    *
+    * @param {MouseEvent} event - The MouseEvent that was originally raised.
+    * @param {ElementComponent} element - The ElementComponent that this event was originally
+    * raised on.
+    * @param {CameraComponent} camera - The CameraComponent that this event was originally raised
+    * via.
+    * @param {number} x - The x coordinate.
+    * @param {number} y - The y coordinate.
+    * @param {number} lastX - The last x coordinate.
+    * @param {number} lastY - The last y coordinate.
+    */
   def this(
-    event: typingsJapgolly.playcanvas.pc.MouseEvent,
-    element: typingsJapgolly.playcanvas.pc.ElementComponent,
-    camera: typingsJapgolly.playcanvas.pc.CameraComponent,
+    event: org.scalajs.dom.MouseEvent,
+    element: ElementComponent,
+    camera: CameraComponent,
     x: Double,
     y: Double,
     lastX: Double,
     lastY: Double
   ) = this()
+  
+  /**
+    * Whether the alt key was pressed.
+    *
+    * @type {boolean}
+    */
+  var altKey: Boolean = js.native
+  
+  /**
+    * The mouse button.
+    *
+    * @type {number}
+    */
+  var button: Double = js.native
+  
+  /**
+    * Whether the ctrl key was pressed.
+    *
+    * @type {boolean}
+    */
+  var ctrlKey: Boolean = js.native
+  
+  /**
+    * The amount of horizontal movement of the cursor.
+    *
+    * @type {number}
+    */
+  var dx: Double = js.native
+  
+  /**
+    * The amount of vertical movement of the cursor.
+    *
+    * @type {number}
+    */
+  var dy: Double = js.native
+  
+  /**
+    * Whether the meta key was pressed.
+    *
+    * @type {boolean}
+    */
+  var metaKey: Boolean = js.native
+  
+  /**
+    * Whether the shift key was pressed.
+    *
+    * @type {boolean}
+    */
+  var shiftKey: Boolean = js.native
+  
+  /**
+    * The amount of the wheel movement.
+    *
+    * @type {number}
+    */
+  var wheelDelta: Double = js.native
+  
+  var x: Double = js.native
+  
+  var y: Double = js.native
 }
-

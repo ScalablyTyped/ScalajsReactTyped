@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Media.MediaProperties
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaMirroringOptions extends js.Object
-
+sealed trait MediaMirroringOptions extends StObject
 /** Defines the direction in of a mirror transform. */
 @JSGlobal("Windows.Media.MediaProperties.MediaMirroringOptions")
 @js.native
-object MediaMirroringOptions extends js.Object {
+object MediaMirroringOptions extends StObject {
+  
   /** Mirror horizontally. */
   @js.native
-  sealed trait horizontal extends MediaMirroringOptions
+  sealed trait horizontal
+    extends StObject
+       with MediaMirroringOptions
   
   /** No mirroring. */
   @js.native
-  sealed trait none extends MediaMirroringOptions
+  sealed trait none
+    extends StObject
+       with MediaMirroringOptions
   
   /** Mirror vertically. */
   @js.native
-  sealed trait vertical extends MediaMirroringOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaMirroringOptions with Double] = js.native
-  /* 1 */ @js.native
-  object horizontal extends TopLevel[horizontal with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object vertical extends TopLevel[vertical with Double]
-  
+  sealed trait vertical
+    extends StObject
+       with MediaMirroringOptions
 }
-

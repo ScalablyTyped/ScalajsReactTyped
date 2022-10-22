@@ -1,17 +1,19 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SearchObjectOptions...
   */
-trait ISearchObjectOptions extends js.Object {
+trait ISearchObjectOptions extends StObject {
+  
   /**
     * This array is either empty or contains qProperty.
     */
   var qAttributes: js.Array[String]
+  
   /* add new member  */
   /**
     * Encoding used to compute qRanges of type SearchCharRange.
@@ -23,13 +25,19 @@ trait ISearchObjectOptions extends js.Object {
     */
   var qCharEncoding: String
 }
-
 object ISearchObjectOptions {
-  @scala.inline
-  def apply(qAttributes: js.Array[String], qCharEncoding: String): ISearchObjectOptions = {
-    val __obj = js.Dynamic.literal(qAttributes = qAttributes.asInstanceOf[js.Any], qCharEncoding = qCharEncoding.asInstanceOf[js.Any])
   
+  inline def apply(qAttributes: js.Array[String], qCharEncoding: String): ISearchObjectOptions = {
+    val __obj = js.Dynamic.literal(qAttributes = qAttributes.asInstanceOf[js.Any], qCharEncoding = qCharEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchObjectOptions]
   }
+  
+  extension [Self <: ISearchObjectOptions](x: Self) {
+    
+    inline def setQAttributes(value: js.Array[String]): Self = StObject.set(x, "qAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setQAttributesVarargs(value: String*): Self = StObject.set(x, "qAttributes", js.Array(value*))
+    
+    inline def setQCharEncoding(value: String): Self = StObject.set(x, "qCharEncoding", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,33 +1,48 @@
 package typingsJapgolly.reactNativeMaterialKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CheckboxStyle extends js.Object {
+trait CheckboxStyle extends StObject {
+  
   var borderOffColor: js.UndefOr[String] = js.undefined
+  
   var borderOnColor: js.UndefOr[String] = js.undefined
+  
   var fillColor: js.UndefOr[String] = js.undefined
+  
   var inset: js.UndefOr[Double] = js.undefined
+  
   var rippleColor: js.UndefOr[String] = js.undefined
 }
-
 object CheckboxStyle {
-  @scala.inline
-  def apply(
-    borderOffColor: String = null,
-    borderOnColor: String = null,
-    fillColor: String = null,
-    inset: Int | Double = null,
-    rippleColor: String = null
-  ): CheckboxStyle = {
+  
+  inline def apply(): CheckboxStyle = {
     val __obj = js.Dynamic.literal()
-    if (borderOffColor != null) __obj.updateDynamic("borderOffColor")(borderOffColor.asInstanceOf[js.Any])
-    if (borderOnColor != null) __obj.updateDynamic("borderOnColor")(borderOnColor.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
-    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxStyle]
   }
+  
+  extension [Self <: CheckboxStyle](x: Self) {
+    
+    inline def setBorderOffColor(value: String): Self = StObject.set(x, "borderOffColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderOffColorUndefined: Self = StObject.set(x, "borderOffColor", js.undefined)
+    
+    inline def setBorderOnColor(value: String): Self = StObject.set(x, "borderOnColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderOnColorUndefined: Self = StObject.set(x, "borderOnColor", js.undefined)
+    
+    inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    
+    inline def setInset(value: Double): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    
+    inline def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
+    
+    inline def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
+  }
 }
-

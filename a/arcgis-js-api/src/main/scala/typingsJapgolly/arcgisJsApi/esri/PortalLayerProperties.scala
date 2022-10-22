@@ -1,24 +1,29 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PortalLayerProperties extends js.Object {
+trait PortalLayerProperties extends StObject {
+  
   /**
-    * The portal item from which the layer is loaded. If the portal item references a Feature Service or Scene Service, then you can specify a single layer to load with the [layerId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#layerId) property.
+    * The portal item from which the layer is loaded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
     */
   var portalItem: js.UndefOr[PortalItemProperties] = js.undefined
 }
-
 object PortalLayerProperties {
-  @scala.inline
-  def apply(portalItem: PortalItemProperties = null): PortalLayerProperties = {
+  
+  inline def apply(): PortalLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalLayerProperties]
   }
+  
+  extension [Self <: PortalLayerProperties](x: Self) {
+    
+    inline def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
+    
+    inline def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
+  }
 }
-

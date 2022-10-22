@@ -1,7 +1,7 @@
 
 # Scala.js typings for decompress-response
 
-Typings are for version 4.2.1
+Typings are for version 8.0.0
 
 ## Library description:
 Decompress a HTTP response if needed
@@ -10,10 +10,10 @@ Decompress a HTTP response if needed
 | ------------------ | :-------------: |
 | Full name          | decompress-response |
 | Keywords           | decompress, response, http, https, zlib, gzip, zip, deflate, unzip, ungzip, incoming, message, stream, compressed, brotli |
-| # releases         | 6 |
-| # dependents       | 21 |
-| # downloads        | 116287229 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8.349194033333333E7 |
+| # stars            | 61.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/decompress-response#readme)

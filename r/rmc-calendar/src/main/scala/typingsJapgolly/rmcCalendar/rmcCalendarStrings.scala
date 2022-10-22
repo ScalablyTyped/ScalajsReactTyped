@@ -1,39 +1,32 @@
 package typingsJapgolly.rmcCalendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rmcCalendarStrings {
-  @js.native
-  sealed trait horizontal extends js.Object
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait horizontal extends StObject
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait one extends js.Object
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait range extends js.Object
+  sealed trait one extends StObject
+  inline def one: one = "one".asInstanceOf[one]
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait range extends StObject
+  inline def range: range = "range".asInstanceOf[range]
   
   @js.native
-  sealed trait xl extends js.Object
+  sealed trait vertical extends StObject
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def one: one = "one".asInstanceOf[one]
-  @scala.inline
-  def range: range = "range".asInstanceOf[range]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def xl: xl = "xl".asInstanceOf[xl]
+  @js.native
+  sealed trait xl extends StObject
+  inline def xl: xl = "xl".asInstanceOf[xl]
 }
-

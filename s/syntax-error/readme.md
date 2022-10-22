@@ -10,10 +10,10 @@ detect and report syntax errors in source code strings
 | ------------------ | :-------------: |
 | Full name          | syntax-error |
 | Keywords           | syntax, error, esprima, stack, line, column |
-| # releases         | 2 |
-| # dependents       | 103 |
-| # downloads        | 26337060 |
-| # stars            | 8 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5778634.666666667 |
+| # stars            | 80.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/node-syntax-error)

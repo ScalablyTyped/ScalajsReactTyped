@@ -1,14 +1,15 @@
 package typingsJapgolly.ractive.mod
 
 import typingsJapgolly.std.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ArrayPopPromise
-  extends Promise[js.Any] {
+  extends StObject
+     with Promise[Any] {
+  
   /** The value removed for the target array. */
-  var result: js.Any = js.native
+  var result: Any = js.native
 }
-

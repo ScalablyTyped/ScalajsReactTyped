@@ -4,26 +4,40 @@ import japgolly.scalajs.react.Callback
 import typingsJapgolly.sharepoint.SP.Guid
 import typingsJapgolly.sharepoint.SP.UrlZone
 import typingsJapgolly.sharepoint.SP.Utilities.PrincipalSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line: interface-name
-trait ISPClientPeoplePickerSchema extends js.Object {
+trait ISPClientPeoplePickerSchema extends StObject {
+  
   var AllUrlZones: js.UndefOr[Boolean] = js.undefined
+  
   var AllowEmailAddresses: js.UndefOr[Boolean] = js.undefined
+  
   var AllowMultipleValues: js.UndefOr[Boolean] = js.undefined
+  
   var AutoFillElementId: js.UndefOr[String] = js.undefined
+  
   var AutoFillEnabled: js.UndefOr[Boolean] = js.undefined
+  
   var EditorElementId: js.UndefOr[String] = js.undefined
+  
   var EnabledClaimProvider: js.UndefOr[String] = js.undefined
+  
   var ErrorMessage: js.UndefOr[String] = js.undefined
+  
   var ForceClaims: js.UndefOr[Boolean] = js.undefined
+  
   var HiddenInputId: js.UndefOr[String] = js.undefined
+  
   var InitialHelpText: js.UndefOr[String] = js.undefined
+  
   var InitialHelpTextElementId: js.UndefOr[String] = js.undefined
+  
   var InitialSuggestions: js.UndefOr[js.Array[ISPClientPeoplePickerEntity]] = js.undefined
+  
   var MaximumEntitySuggestions: js.UndefOr[Double] = js.undefined
+  
   var OnUserResolvedClientScript: js.UndefOr[
     js.Function2[
       /* pickerElementId */ String, 
@@ -31,6 +45,7 @@ trait ISPClientPeoplePickerSchema extends js.Object {
       Unit
     ]
   ] = js.undefined
+  
   var OnValueChangedClientScript: js.UndefOr[
     js.Function2[
       /* pickerElementId */ String, 
@@ -38,93 +53,176 @@ trait ISPClientPeoplePickerSchema extends js.Object {
       Unit
     ]
   ] = js.undefined
+  
   /** Specify User, DL, SecGroup or SPGroup*/
   var PrincipalAccountType: js.UndefOr[String] = js.undefined
+  
   var Required: js.UndefOr[Boolean] = js.undefined
+  
   var ResolvePrincipalSource: js.UndefOr[PrincipalSource] = js.undefined
+  
   var ResolvedListElementId: js.UndefOr[String] = js.undefined
+  
   var Rows: js.UndefOr[Double] = js.undefined
+  
   var SearchPrincipalSource: js.UndefOr[PrincipalSource] = js.undefined
+  
   var SharePointGroupID: js.UndefOr[Double] = js.undefined
+  
   var TopLevelElementId: js.UndefOr[String] = js.undefined
+  
   var UrlZone: js.UndefOr[typingsJapgolly.sharepoint.SP.UrlZone] = js.undefined
+  
   var UseLocalSuggestionCache: js.UndefOr[Boolean] = js.undefined
+  
   var UserNoQueryPermission: js.UndefOr[Boolean] = js.undefined
+  
   var VisibleSuggestions: js.UndefOr[Double] = js.undefined
+  
   var WaitImageId: js.UndefOr[String] = js.undefined
+  
   var WebApplicationID: js.UndefOr[Guid] = js.undefined
+  
   /** Number or '100%'*/
-  var Width: js.UndefOr[js.Any] = js.undefined
+  var Width: js.UndefOr[Any] = js.undefined
 }
-
 object ISPClientPeoplePickerSchema {
-  @scala.inline
-  def apply(
-    AllUrlZones: js.UndefOr[Boolean] = js.undefined,
-    AllowEmailAddresses: js.UndefOr[Boolean] = js.undefined,
-    AllowMultipleValues: js.UndefOr[Boolean] = js.undefined,
-    AutoFillElementId: String = null,
-    AutoFillEnabled: js.UndefOr[Boolean] = js.undefined,
-    EditorElementId: String = null,
-    EnabledClaimProvider: String = null,
-    ErrorMessage: String = null,
-    ForceClaims: js.UndefOr[Boolean] = js.undefined,
-    HiddenInputId: String = null,
-    InitialHelpText: String = null,
-    InitialHelpTextElementId: String = null,
-    InitialSuggestions: js.Array[ISPClientPeoplePickerEntity] = null,
-    MaximumEntitySuggestions: Int | Double = null,
-    OnUserResolvedClientScript: (/* pickerElementId */ String, /* users */ js.Array[ISPClientPeoplePickerEntity]) => Callback = null,
-    OnValueChangedClientScript: (/* pickerElementId */ String, /* users */ js.Array[ISPClientPeoplePickerEntity]) => Callback = null,
-    PrincipalAccountType: String = null,
-    Required: js.UndefOr[Boolean] = js.undefined,
-    ResolvePrincipalSource: PrincipalSource = null,
-    ResolvedListElementId: String = null,
-    Rows: Int | Double = null,
-    SearchPrincipalSource: PrincipalSource = null,
-    SharePointGroupID: Int | Double = null,
-    TopLevelElementId: String = null,
-    UrlZone: UrlZone = null,
-    UseLocalSuggestionCache: js.UndefOr[Boolean] = js.undefined,
-    UserNoQueryPermission: js.UndefOr[Boolean] = js.undefined,
-    VisibleSuggestions: Int | Double = null,
-    WaitImageId: String = null,
-    WebApplicationID: Guid = null,
-    Width: js.Any = null
-  ): ISPClientPeoplePickerSchema = {
+  
+  inline def apply(): ISPClientPeoplePickerSchema = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllUrlZones)) __obj.updateDynamic("AllUrlZones")(AllUrlZones.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowEmailAddresses)) __obj.updateDynamic("AllowEmailAddresses")(AllowEmailAddresses.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowMultipleValues)) __obj.updateDynamic("AllowMultipleValues")(AllowMultipleValues.asInstanceOf[js.Any])
-    if (AutoFillElementId != null) __obj.updateDynamic("AutoFillElementId")(AutoFillElementId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoFillEnabled)) __obj.updateDynamic("AutoFillEnabled")(AutoFillEnabled.asInstanceOf[js.Any])
-    if (EditorElementId != null) __obj.updateDynamic("EditorElementId")(EditorElementId.asInstanceOf[js.Any])
-    if (EnabledClaimProvider != null) __obj.updateDynamic("EnabledClaimProvider")(EnabledClaimProvider.asInstanceOf[js.Any])
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForceClaims)) __obj.updateDynamic("ForceClaims")(ForceClaims.asInstanceOf[js.Any])
-    if (HiddenInputId != null) __obj.updateDynamic("HiddenInputId")(HiddenInputId.asInstanceOf[js.Any])
-    if (InitialHelpText != null) __obj.updateDynamic("InitialHelpText")(InitialHelpText.asInstanceOf[js.Any])
-    if (InitialHelpTextElementId != null) __obj.updateDynamic("InitialHelpTextElementId")(InitialHelpTextElementId.asInstanceOf[js.Any])
-    if (InitialSuggestions != null) __obj.updateDynamic("InitialSuggestions")(InitialSuggestions.asInstanceOf[js.Any])
-    if (MaximumEntitySuggestions != null) __obj.updateDynamic("MaximumEntitySuggestions")(MaximumEntitySuggestions.asInstanceOf[js.Any])
-    if (OnUserResolvedClientScript != null) __obj.updateDynamic("OnUserResolvedClientScript")(js.Any.fromFunction2((t0: /* pickerElementId */ java.lang.String, t1: /* users */ js.Array[typingsJapgolly.sharepoint.ISPClientPeoplePickerEntity]) => OnUserResolvedClientScript(t0, t1).runNow()))
-    if (OnValueChangedClientScript != null) __obj.updateDynamic("OnValueChangedClientScript")(js.Any.fromFunction2((t0: /* pickerElementId */ java.lang.String, t1: /* users */ js.Array[typingsJapgolly.sharepoint.ISPClientPeoplePickerEntity]) => OnValueChangedClientScript(t0, t1).runNow()))
-    if (PrincipalAccountType != null) __obj.updateDynamic("PrincipalAccountType")(PrincipalAccountType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Required)) __obj.updateDynamic("Required")(Required.asInstanceOf[js.Any])
-    if (ResolvePrincipalSource != null) __obj.updateDynamic("ResolvePrincipalSource")(ResolvePrincipalSource.asInstanceOf[js.Any])
-    if (ResolvedListElementId != null) __obj.updateDynamic("ResolvedListElementId")(ResolvedListElementId.asInstanceOf[js.Any])
-    if (Rows != null) __obj.updateDynamic("Rows")(Rows.asInstanceOf[js.Any])
-    if (SearchPrincipalSource != null) __obj.updateDynamic("SearchPrincipalSource")(SearchPrincipalSource.asInstanceOf[js.Any])
-    if (SharePointGroupID != null) __obj.updateDynamic("SharePointGroupID")(SharePointGroupID.asInstanceOf[js.Any])
-    if (TopLevelElementId != null) __obj.updateDynamic("TopLevelElementId")(TopLevelElementId.asInstanceOf[js.Any])
-    if (UrlZone != null) __obj.updateDynamic("UrlZone")(UrlZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseLocalSuggestionCache)) __obj.updateDynamic("UseLocalSuggestionCache")(UseLocalSuggestionCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(UserNoQueryPermission)) __obj.updateDynamic("UserNoQueryPermission")(UserNoQueryPermission.asInstanceOf[js.Any])
-    if (VisibleSuggestions != null) __obj.updateDynamic("VisibleSuggestions")(VisibleSuggestions.asInstanceOf[js.Any])
-    if (WaitImageId != null) __obj.updateDynamic("WaitImageId")(WaitImageId.asInstanceOf[js.Any])
-    if (WebApplicationID != null) __obj.updateDynamic("WebApplicationID")(WebApplicationID.asInstanceOf[js.Any])
-    if (Width != null) __obj.updateDynamic("Width")(Width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISPClientPeoplePickerSchema]
   }
+  
+  extension [Self <: ISPClientPeoplePickerSchema](x: Self) {
+    
+    inline def setAllUrlZones(value: Boolean): Self = StObject.set(x, "AllUrlZones", value.asInstanceOf[js.Any])
+    
+    inline def setAllUrlZonesUndefined: Self = StObject.set(x, "AllUrlZones", js.undefined)
+    
+    inline def setAllowEmailAddresses(value: Boolean): Self = StObject.set(x, "AllowEmailAddresses", value.asInstanceOf[js.Any])
+    
+    inline def setAllowEmailAddressesUndefined: Self = StObject.set(x, "AllowEmailAddresses", js.undefined)
+    
+    inline def setAllowMultipleValues(value: Boolean): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
+    
+    inline def setAllowMultipleValuesUndefined: Self = StObject.set(x, "AllowMultipleValues", js.undefined)
+    
+    inline def setAutoFillElementId(value: String): Self = StObject.set(x, "AutoFillElementId", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFillElementIdUndefined: Self = StObject.set(x, "AutoFillElementId", js.undefined)
+    
+    inline def setAutoFillEnabled(value: Boolean): Self = StObject.set(x, "AutoFillEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFillEnabledUndefined: Self = StObject.set(x, "AutoFillEnabled", js.undefined)
+    
+    inline def setEditorElementId(value: String): Self = StObject.set(x, "EditorElementId", value.asInstanceOf[js.Any])
+    
+    inline def setEditorElementIdUndefined: Self = StObject.set(x, "EditorElementId", js.undefined)
+    
+    inline def setEnabledClaimProvider(value: String): Self = StObject.set(x, "EnabledClaimProvider", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledClaimProviderUndefined: Self = StObject.set(x, "EnabledClaimProvider", js.undefined)
+    
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    
+    inline def setForceClaims(value: Boolean): Self = StObject.set(x, "ForceClaims", value.asInstanceOf[js.Any])
+    
+    inline def setForceClaimsUndefined: Self = StObject.set(x, "ForceClaims", js.undefined)
+    
+    inline def setHiddenInputId(value: String): Self = StObject.set(x, "HiddenInputId", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenInputIdUndefined: Self = StObject.set(x, "HiddenInputId", js.undefined)
+    
+    inline def setInitialHelpText(value: String): Self = StObject.set(x, "InitialHelpText", value.asInstanceOf[js.Any])
+    
+    inline def setInitialHelpTextElementId(value: String): Self = StObject.set(x, "InitialHelpTextElementId", value.asInstanceOf[js.Any])
+    
+    inline def setInitialHelpTextElementIdUndefined: Self = StObject.set(x, "InitialHelpTextElementId", js.undefined)
+    
+    inline def setInitialHelpTextUndefined: Self = StObject.set(x, "InitialHelpText", js.undefined)
+    
+    inline def setInitialSuggestions(value: js.Array[ISPClientPeoplePickerEntity]): Self = StObject.set(x, "InitialSuggestions", value.asInstanceOf[js.Any])
+    
+    inline def setInitialSuggestionsUndefined: Self = StObject.set(x, "InitialSuggestions", js.undefined)
+    
+    inline def setInitialSuggestionsVarargs(value: ISPClientPeoplePickerEntity*): Self = StObject.set(x, "InitialSuggestions", js.Array(value*))
+    
+    inline def setMaximumEntitySuggestions(value: Double): Self = StObject.set(x, "MaximumEntitySuggestions", value.asInstanceOf[js.Any])
+    
+    inline def setMaximumEntitySuggestionsUndefined: Self = StObject.set(x, "MaximumEntitySuggestions", js.undefined)
+    
+    inline def setOnUserResolvedClientScript(
+      value: (/* pickerElementId */ String, /* users */ js.Array[ISPClientPeoplePickerEntity]) => Callback
+    ): Self = StObject.set(x, "OnUserResolvedClientScript", js.Any.fromFunction2((t0: /* pickerElementId */ String, t1: /* users */ js.Array[ISPClientPeoplePickerEntity]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnUserResolvedClientScriptUndefined: Self = StObject.set(x, "OnUserResolvedClientScript", js.undefined)
+    
+    inline def setOnValueChangedClientScript(
+      value: (/* pickerElementId */ String, /* users */ js.Array[ISPClientPeoplePickerEntity]) => Callback
+    ): Self = StObject.set(x, "OnValueChangedClientScript", js.Any.fromFunction2((t0: /* pickerElementId */ String, t1: /* users */ js.Array[ISPClientPeoplePickerEntity]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnValueChangedClientScriptUndefined: Self = StObject.set(x, "OnValueChangedClientScript", js.undefined)
+    
+    inline def setPrincipalAccountType(value: String): Self = StObject.set(x, "PrincipalAccountType", value.asInstanceOf[js.Any])
+    
+    inline def setPrincipalAccountTypeUndefined: Self = StObject.set(x, "PrincipalAccountType", js.undefined)
+    
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "Required", value.asInstanceOf[js.Any])
+    
+    inline def setRequiredUndefined: Self = StObject.set(x, "Required", js.undefined)
+    
+    inline def setResolvePrincipalSource(value: PrincipalSource): Self = StObject.set(x, "ResolvePrincipalSource", value.asInstanceOf[js.Any])
+    
+    inline def setResolvePrincipalSourceUndefined: Self = StObject.set(x, "ResolvePrincipalSource", js.undefined)
+    
+    inline def setResolvedListElementId(value: String): Self = StObject.set(x, "ResolvedListElementId", value.asInstanceOf[js.Any])
+    
+    inline def setResolvedListElementIdUndefined: Self = StObject.set(x, "ResolvedListElementId", js.undefined)
+    
+    inline def setRows(value: Double): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "Rows", js.undefined)
+    
+    inline def setSearchPrincipalSource(value: PrincipalSource): Self = StObject.set(x, "SearchPrincipalSource", value.asInstanceOf[js.Any])
+    
+    inline def setSearchPrincipalSourceUndefined: Self = StObject.set(x, "SearchPrincipalSource", js.undefined)
+    
+    inline def setSharePointGroupID(value: Double): Self = StObject.set(x, "SharePointGroupID", value.asInstanceOf[js.Any])
+    
+    inline def setSharePointGroupIDUndefined: Self = StObject.set(x, "SharePointGroupID", js.undefined)
+    
+    inline def setTopLevelElementId(value: String): Self = StObject.set(x, "TopLevelElementId", value.asInstanceOf[js.Any])
+    
+    inline def setTopLevelElementIdUndefined: Self = StObject.set(x, "TopLevelElementId", js.undefined)
+    
+    inline def setUrlZone(value: UrlZone): Self = StObject.set(x, "UrlZone", value.asInstanceOf[js.Any])
+    
+    inline def setUrlZoneUndefined: Self = StObject.set(x, "UrlZone", js.undefined)
+    
+    inline def setUseLocalSuggestionCache(value: Boolean): Self = StObject.set(x, "UseLocalSuggestionCache", value.asInstanceOf[js.Any])
+    
+    inline def setUseLocalSuggestionCacheUndefined: Self = StObject.set(x, "UseLocalSuggestionCache", js.undefined)
+    
+    inline def setUserNoQueryPermission(value: Boolean): Self = StObject.set(x, "UserNoQueryPermission", value.asInstanceOf[js.Any])
+    
+    inline def setUserNoQueryPermissionUndefined: Self = StObject.set(x, "UserNoQueryPermission", js.undefined)
+    
+    inline def setVisibleSuggestions(value: Double): Self = StObject.set(x, "VisibleSuggestions", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleSuggestionsUndefined: Self = StObject.set(x, "VisibleSuggestions", js.undefined)
+    
+    inline def setWaitImageId(value: String): Self = StObject.set(x, "WaitImageId", value.asInstanceOf[js.Any])
+    
+    inline def setWaitImageIdUndefined: Self = StObject.set(x, "WaitImageId", js.undefined)
+    
+    inline def setWebApplicationID(value: Guid): Self = StObject.set(x, "WebApplicationID", value.asInstanceOf[js.Any])
+    
+    inline def setWebApplicationIDUndefined: Self = StObject.set(x, "WebApplicationID", js.undefined)
+    
+    inline def setWidth(value: Any): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
+  }
 }
-

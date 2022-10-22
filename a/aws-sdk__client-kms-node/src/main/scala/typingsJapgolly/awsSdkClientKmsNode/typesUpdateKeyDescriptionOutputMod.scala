@@ -1,22 +1,33 @@
 package typingsJapgolly.awsSdkClientKmsNode
 
-import typingsJapgolly.awsSdkClientKmsNode.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientKmsNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/types/UpdateKeyDescriptionOutput", JSImport.Namespace)
-@js.native
-object typesUpdateKeyDescriptionOutputMod extends js.Object {
-  @js.native
-  trait UpdateKeyDescriptionOutput extends OutputTypesUnion {
+object typesUpdateKeyDescriptionOutputMod {
+  
+  trait UpdateKeyDescriptionOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
   }
-  
+  object UpdateKeyDescriptionOutput {
+    
+    inline def apply($metadata: ResponseMetadata): UpdateKeyDescriptionOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UpdateKeyDescriptionOutput]
+    }
+    
+    extension [Self <: UpdateKeyDescriptionOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

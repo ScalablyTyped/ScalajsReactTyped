@@ -1,22 +1,54 @@
 package typingsJapgolly.webpack.mod
 
-import japgolly.scalajs.react.Callback
+import typingsJapgolly.webpack.anon.AggregateTimeout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Watching extends js.Object {
-  def close(callback: js.Function0[Unit]): Unit
-  def invalidate(): Unit
+/* note: abstract class */ @JSImport("webpack", "Watching")
+@js.native
+open class Watching () extends StObject {
+  
+  var blocked: Boolean = js.native
+  
+  var callbacks: js.Array[CallbackFunction[Unit]] = js.native
+  
+  def close(callback: CallbackFunction[Unit]): Unit = js.native
+  
+  var closed: Boolean = js.native
+  
+  var compiler: Compiler = js.native
+  
+  def handler(): Any = js.native
+  def handler(err: js.Error): Any = js.native
+  def handler(err: js.Error, result: Stats): Any = js.native
+  def handler(err: Null, result: Stats): Any = js.native
+  def handler(err: Unit, result: Stats): Any = js.native
+  @JSName("handler")
+  var handler_Original: CallbackFunction[Stats] = js.native
+  
+  var invalid: Boolean = js.native
+  
+  def invalidate(): Unit = js.native
+  def invalidate(callback: CallbackFunction[Unit]): Unit = js.native
+  
+  var lastWatcherStartTime: js.UndefOr[Double] = js.native
+  
+  var pausedWatcher: js.UndefOr[Null | Watcher] = js.native
+  
+  def resume(): Unit = js.native
+  
+  var running: Boolean = js.native
+  
+  var startTime: Null | Double = js.native
+  
+  def suspend(): Unit = js.native
+  
+  var suspended: Boolean = js.native
+  
+  def watch(files: js.Iterable[String], dirs: js.Iterable[String], missing: js.Iterable[String]): Unit = js.native
+  
+  var watchOptions: AggregateTimeout = js.native
+  
+  var watcher: js.UndefOr[Null | Watcher] = js.native
 }
-
-object Watching {
-  @scala.inline
-  def apply(close: js.Function0[Unit] => Callback, invalidate: Callback): Watching = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(js.Any.fromFunction1((t0: js.Function0[scala.Unit]) => close(t0).runNow()))
-    __obj.updateDynamic("invalidate")(invalidate.toJsFn)
-    __obj.asInstanceOf[Watching]
-  }
-}
-

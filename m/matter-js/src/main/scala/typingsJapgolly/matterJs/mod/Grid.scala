@@ -1,39 +1,62 @@
 package typingsJapgolly.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Grid")
 @js.native
-class Grid () extends js.Object
-
+open class Grid () extends StObject {
+  
+  /**
+    * The height of a single grid bucket.
+    * @deprecated replaced by Matter.Detector
+    * @property type
+    * @type {number}
+    */
+  var bucketHeight: Double = js.native
+  
+  /**
+    * The width of a single grid bucket.
+    * @deprecated replaced by Matter.Detector
+    * @property type
+    * @type {number}
+    */
+  var bucketWidth: Double = js.native
+}
 /* static members */
-@JSImport("matter-js", "Grid")
-@js.native
-object Grid extends js.Object {
+object Grid {
+  
+  @JSImport("matter-js", "Grid")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Clears the grid.
+    * @deprecated replaced by Matter.Detector
     * @method clear
     * @param {grid} grid
     */
-  def clear(grid: Grid): Unit = js.native
+  inline def clear(grid: Grid): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(grid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /**
     * Creates a new grid.
+    * @deprecated replaced by Matter.Detector
     * @method create
     * @param {} options
-    * @return {grid} A new grid
+    * @returns {grid} A new grid
     */
-  def create(): Grid = js.native
-  def create(options: IGridDefinition): Grid = js.native
+  inline def create(): Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Grid]
+  inline def create(options: IGridDefinition): Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Grid]
+  
   /**
     * Updates the grid.
     * @method update
+    * @deprecated replaced by Matter.Detector
     * @param {grid} grid
-    * @param {body[]} bodies
+    * @param {Body[]} bodies
     * @param {engine} engine
     * @param {boolean} forceUpdate
     */
-  def update(grid: Grid, bodies: js.Array[Body], engine: Engine, forceUpdate: Boolean): Unit = js.native
+  inline def update(grid: Grid, bodies: js.Array[Body], engine: Engine, forceUpdate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(grid.asInstanceOf[js.Any], bodies.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], forceUpdate.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

@@ -1,24 +1,37 @@
 package typingsJapgolly.reactNativeMaterialKit.mod
 
-import typingsJapgolly.reactNativeMaterialKit.AnonColor
+import typingsJapgolly.reactNativeMaterialKit.anon.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextFieldStyle extends js.Object {
+trait TextFieldStyle extends StObject {
+  
   var highlightColor: js.UndefOr[String] = js.undefined
-  var textInputStyle: js.UndefOr[AnonColor] = js.undefined
+  
+  var textInputStyle: js.UndefOr[Color] = js.undefined
+  
   var tintColor: js.UndefOr[String] = js.undefined
 }
-
 object TextFieldStyle {
-  @scala.inline
-  def apply(highlightColor: String = null, textInputStyle: AnonColor = null, tintColor: String = null): TextFieldStyle = {
+  
+  inline def apply(): TextFieldStyle = {
     val __obj = js.Dynamic.literal()
-    if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor.asInstanceOf[js.Any])
-    if (textInputStyle != null) __obj.updateDynamic("textInputStyle")(textInputStyle.asInstanceOf[js.Any])
-    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextFieldStyle]
   }
+  
+  extension [Self <: TextFieldStyle](x: Self) {
+    
+    inline def setHighlightColor(value: String): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
+    
+    inline def setTextInputStyle(value: Color): Self = StObject.set(x, "textInputStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTextInputStyleUndefined: Self = StObject.set(x, "textInputStyle", js.undefined)
+    
+    inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+    
+    inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+  }
 }
-

@@ -9,15 +9,16 @@ Block library for the WordPress editor.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/block-library |
-| Keywords           | wordpress, blocks |
-| # releases         | 54 |
-| # dependents       | 7 |
-| # downloads        | 87692 |
-| # stars            | 0 |
+| Keywords           | wordpress, gutenberg, blocks |
+| # releases         | 160 |
+| # dependents       | 0.0 |
+| # downloads        | 66897.0 |
+| # stars            | 8191.0 |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/block-library/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/block-library/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fblock-library)
     
 

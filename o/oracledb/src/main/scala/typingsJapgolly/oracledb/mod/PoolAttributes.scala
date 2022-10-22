@@ -1,26 +1,24 @@
 package typingsJapgolly.oracledb.mod
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides connection credentials and pool-specific configuration properties.
   * The properties provided override the default pooling properties of the Oracledb object.
   * If an attribute is not set, or is null, the value of the related Oracledb property will be used.
   */
-trait PoolAttributes extends js.Object {
-  /**
-    * Further statistics can be enabled by setting the createPool() poolAttrs parameter _enableStats to true.
-    * Statistics can be output to the console by calling the pool._logStats() method.
-    */
-  var _enableStats: js.UndefOr[Boolean] = js.undefined
+trait PoolAttributes extends StObject {
+  
   /**
     * An alias of connectionString. Only one of the properties should be used.
     * The Oracle database instance used by connections in the pool.
     * The string can be an Easy Connect string, or a Net Service Name from a tnsnames.ora file, or the name of a local Oracle database instance.
     */
   var connectString: js.UndefOr[String] = js.undefined
+  
   /**
     * An alias of connectString. Only one of the properties should be used.
     * The Oracle database instance used by connections in the pool.
@@ -29,6 +27,7 @@ trait PoolAttributes extends js.Object {
     * @since 2.1
     */
   var connectionString: js.UndefOr[String] = js.undefined
+  
   /**
     * Sets the name used for Edition-Based Redefinition by connections in the pool.
     * This optional property overrides the oracledb.edition property.
@@ -36,6 +35,13 @@ trait PoolAttributes extends js.Object {
     * @since 2.2
     */
   var edition: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Further statistics can be enabled by setting the createPool() poolAttrs parameter _enableStats to true.
+    * Statistics can be output to the console by calling the pool.logStatistics() method.
+    */
+  var enableStatistics: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Indicate whether Oracle Call Interface events mode should be enabled for this pool.
     * This optional property overrides the oracledb.events property.
@@ -44,6 +50,7 @@ trait PoolAttributes extends js.Object {
     * @since 2.2
     */
   var events: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Indicate whether pooled connections should be established using External Authentication.
     * This optional property overrides the oracledb.externalAuth property.
@@ -53,6 +60,7 @@ trait PoolAttributes extends js.Object {
     * @since 0.5
     */
   var externalAuth: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Indicate whether connections in the pool all have the same credentials (a ‘homogeneous’ pool), or whether different credentials can be used (a ‘heterogeneous’ pool).
     * When set to false, the user name and password can be omitted from the connection.createPool() call, but will need to be given for subsequent pool.getConnection() calls.
@@ -64,11 +72,13 @@ trait PoolAttributes extends js.Object {
     * @since 2.3
     */
   var homogeneous: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The password of the database user used by connections in the pool. A password is also necessary if a proxy user is specified at pool creation.
     * If homogeneous is false, then the password may be omitted at pool creation but given in subsequent pool.getConnection() calls.
     */
   var password: js.UndefOr[String] = js.undefined
+  
   /**
     * The poolAlias is an optional property that is used to explicitly add pools to the connection pool cache.
     * If a pool alias is provided, then the new pool will be added to the connection pool cache and the poolAlias value can then be used with methods that utilize the connection pool cache, such as oracledb.getPool() and oracledb.getConnection().
@@ -76,6 +86,7 @@ trait PoolAttributes extends js.Object {
     * @since 1.11
     */
   var poolAlias: js.UndefOr[String] = js.undefined
+  
   /**
     * The number of connections that are opened whenever a connection request exceeds the number of currently open connections.
     * This optional property overrides the oracledb.poolIncrement property.
@@ -83,6 +94,7 @@ trait PoolAttributes extends js.Object {
     * @default 1
     */
   var poolIncrement: js.UndefOr[Double] = js.undefined
+  
   /**
     * The maximum number of connections to which a connection pool can grow.
     * This optional property overrides the oracledb.poolMax property.
@@ -91,13 +103,15 @@ trait PoolAttributes extends js.Object {
     * @default 4
     */
   var poolMax: js.UndefOr[Double] = js.undefined
+  
   /**
     * The maximum number of connections per shard for connection pools. This ensures that the pool is balanced towards each shard.
     * This optional property overrides the oracledb.poolMaxPerShard property.
-    * 
+    *
     * @since 4.1
     */
   var poolMaxPerShard: js.UndefOr[Double] = js.undefined
+  
   /**
     * The minimum number of connections a connection pool maintains, even when there is no activity to the target database.
     * This optional property overrides the oracledb.poolMin property.
@@ -105,6 +119,7 @@ trait PoolAttributes extends js.Object {
     * @default 0
     */
   var poolMin: js.UndefOr[Double] = js.undefined
+  
   /**
     * When a pool getConnection() is called and the connection has been idle in the pool for
     * at least poolPingInterval seconds, an internal “ping” will be performed first to check the aliveness of the connection.
@@ -113,6 +128,7 @@ trait PoolAttributes extends js.Object {
     * @default 60
     */
   var poolPingInterval: js.UndefOr[Double] = js.undefined
+  
   /**
     * The number of seconds after which idle connections (unused in the pool) may be terminated.
     * Idle connections are terminated only when the pool is accessed.
@@ -121,6 +137,29 @@ trait PoolAttributes extends js.Object {
     * @default 60
     */
   var poolTimeout: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The maximum number of pending pool.getConnection() calls that can be queued.
+    *
+    * When the number of pool.getConnection() calls that have been queued waiting for an available connection reaches queueMax,
+    * then any future pool.getConnection() calls will immediately return an error and will not be queued.
+    *
+    * If queueMax is -1, then the queue length is not limited.
+    *
+    * This property may be overridden when creating a connection pool.
+    *
+    * @default 500
+    */
+  var queueMax: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * This property was removed in node-oracledb 3.0 and queuing was always enabled.
+    * In node-oracledb 5.0, set queueMax to 0 to disable queuing.
+    *
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#connpoolqueue
+    */
+  var queueRequests: js.UndefOr[Double] = js.undefined
+  
   /**
     * The number of milliseconds after which connection requests waiting in the connection request queue are terminated.
     * If queueTimeout is set to 0, then queued connection requests are never terminated.
@@ -129,6 +168,7 @@ trait PoolAttributes extends js.Object {
     * @default 60000
     */
   var queueTimeout: js.UndefOr[Double] = js.undefined
+  
   /**
     * When sessionCallback is a Node.js function, it will be invoked for each pool.getConnection() call that will return a newly created connection in the pool.
     * It will also be called if pool.getConnection() requests a connection from the pool with a given tag, and that tag value does not match the connection’s current actual tag.
@@ -158,67 +198,121 @@ trait PoolAttributes extends js.Object {
       Unit
     ])
   ] = js.undefined
+  
   /**
     * The number of statements to be cached in the statement cache of each connection in the pool.
     * This optional property overrides the oracledb.stmtCacheSize property.
     */
   var stmtCacheSize: js.UndefOr[Double] = js.undefined
+  
   /**
     * The database user name for connections in the pool. Can be a simple user name or a proxy of the form alison[fred].
     * If homogeneous is false, then the pool user name and password need to be specified only if the application wants that user to proxy the users supplied in subsequent pool.getConnection() calls.
     */
   var user: js.UndefOr[String] = js.undefined
 }
-
 object PoolAttributes {
-  @scala.inline
-  def apply(
-    _enableStats: js.UndefOr[Boolean] = js.undefined,
-    connectString: String = null,
-    connectionString: String = null,
-    edition: String = null,
-    events: js.UndefOr[Boolean] = js.undefined,
-    externalAuth: js.UndefOr[Boolean] = js.undefined,
-    homogeneous: js.UndefOr[Boolean] = js.undefined,
-    password: String = null,
-    poolAlias: String = null,
-    poolIncrement: Int | Double = null,
-    poolMax: Int | Double = null,
-    poolMaxPerShard: Int | Double = null,
-    poolMin: Int | Double = null,
-    poolPingInterval: Int | Double = null,
-    poolTimeout: Int | Double = null,
-    queueTimeout: Int | Double = null,
-    sessionCallback: String | (js.Function3[
-      /* connection */ Connection, 
-      /* requestedTag */ String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[DBError], Unit], 
-      Unit
-    ]) = null,
-    stmtCacheSize: Int | Double = null,
-    user: String = null
-  ): PoolAttributes = {
+  
+  inline def apply(): PoolAttributes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_enableStats)) __obj.updateDynamic("_enableStats")(_enableStats.asInstanceOf[js.Any])
-    if (connectString != null) __obj.updateDynamic("connectString")(connectString.asInstanceOf[js.Any])
-    if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString.asInstanceOf[js.Any])
-    if (edition != null) __obj.updateDynamic("edition")(edition.asInstanceOf[js.Any])
-    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalAuth)) __obj.updateDynamic("externalAuth")(externalAuth.asInstanceOf[js.Any])
-    if (!js.isUndefined(homogeneous)) __obj.updateDynamic("homogeneous")(homogeneous.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (poolAlias != null) __obj.updateDynamic("poolAlias")(poolAlias.asInstanceOf[js.Any])
-    if (poolIncrement != null) __obj.updateDynamic("poolIncrement")(poolIncrement.asInstanceOf[js.Any])
-    if (poolMax != null) __obj.updateDynamic("poolMax")(poolMax.asInstanceOf[js.Any])
-    if (poolMaxPerShard != null) __obj.updateDynamic("poolMaxPerShard")(poolMaxPerShard.asInstanceOf[js.Any])
-    if (poolMin != null) __obj.updateDynamic("poolMin")(poolMin.asInstanceOf[js.Any])
-    if (poolPingInterval != null) __obj.updateDynamic("poolPingInterval")(poolPingInterval.asInstanceOf[js.Any])
-    if (poolTimeout != null) __obj.updateDynamic("poolTimeout")(poolTimeout.asInstanceOf[js.Any])
-    if (queueTimeout != null) __obj.updateDynamic("queueTimeout")(queueTimeout.asInstanceOf[js.Any])
-    if (sessionCallback != null) __obj.updateDynamic("sessionCallback")(sessionCallback.asInstanceOf[js.Any])
-    if (stmtCacheSize != null) __obj.updateDynamic("stmtCacheSize")(stmtCacheSize.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoolAttributes]
   }
+  
+  extension [Self <: PoolAttributes](x: Self) {
+    
+    inline def setConnectString(value: String): Self = StObject.set(x, "connectString", value.asInstanceOf[js.Any])
+    
+    inline def setConnectStringUndefined: Self = StObject.set(x, "connectString", js.undefined)
+    
+    inline def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionStringUndefined: Self = StObject.set(x, "connectionString", js.undefined)
+    
+    inline def setEdition(value: String): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
+    
+    inline def setEditionUndefined: Self = StObject.set(x, "edition", js.undefined)
+    
+    inline def setEnableStatistics(value: Boolean): Self = StObject.set(x, "enableStatistics", value.asInstanceOf[js.Any])
+    
+    inline def setEnableStatisticsUndefined: Self = StObject.set(x, "enableStatistics", js.undefined)
+    
+    inline def setEvents(value: Boolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def setExternalAuth(value: Boolean): Self = StObject.set(x, "externalAuth", value.asInstanceOf[js.Any])
+    
+    inline def setExternalAuthUndefined: Self = StObject.set(x, "externalAuth", js.undefined)
+    
+    inline def setHomogeneous(value: Boolean): Self = StObject.set(x, "homogeneous", value.asInstanceOf[js.Any])
+    
+    inline def setHomogeneousUndefined: Self = StObject.set(x, "homogeneous", js.undefined)
+    
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    
+    inline def setPoolAlias(value: String): Self = StObject.set(x, "poolAlias", value.asInstanceOf[js.Any])
+    
+    inline def setPoolAliasUndefined: Self = StObject.set(x, "poolAlias", js.undefined)
+    
+    inline def setPoolIncrement(value: Double): Self = StObject.set(x, "poolIncrement", value.asInstanceOf[js.Any])
+    
+    inline def setPoolIncrementUndefined: Self = StObject.set(x, "poolIncrement", js.undefined)
+    
+    inline def setPoolMax(value: Double): Self = StObject.set(x, "poolMax", value.asInstanceOf[js.Any])
+    
+    inline def setPoolMaxPerShard(value: Double): Self = StObject.set(x, "poolMaxPerShard", value.asInstanceOf[js.Any])
+    
+    inline def setPoolMaxPerShardUndefined: Self = StObject.set(x, "poolMaxPerShard", js.undefined)
+    
+    inline def setPoolMaxUndefined: Self = StObject.set(x, "poolMax", js.undefined)
+    
+    inline def setPoolMin(value: Double): Self = StObject.set(x, "poolMin", value.asInstanceOf[js.Any])
+    
+    inline def setPoolMinUndefined: Self = StObject.set(x, "poolMin", js.undefined)
+    
+    inline def setPoolPingInterval(value: Double): Self = StObject.set(x, "poolPingInterval", value.asInstanceOf[js.Any])
+    
+    inline def setPoolPingIntervalUndefined: Self = StObject.set(x, "poolPingInterval", js.undefined)
+    
+    inline def setPoolTimeout(value: Double): Self = StObject.set(x, "poolTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setPoolTimeoutUndefined: Self = StObject.set(x, "poolTimeout", js.undefined)
+    
+    inline def setQueueMax(value: Double): Self = StObject.set(x, "queueMax", value.asInstanceOf[js.Any])
+    
+    inline def setQueueMaxUndefined: Self = StObject.set(x, "queueMax", js.undefined)
+    
+    inline def setQueueRequests(value: Double): Self = StObject.set(x, "queueRequests", value.asInstanceOf[js.Any])
+    
+    inline def setQueueRequestsUndefined: Self = StObject.set(x, "queueRequests", js.undefined)
+    
+    inline def setQueueTimeout(value: Double): Self = StObject.set(x, "queueTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setQueueTimeoutUndefined: Self = StObject.set(x, "queueTimeout", js.undefined)
+    
+    inline def setSessionCallback(
+      value: String | (js.Function3[
+          /* connection */ Connection, 
+          /* requestedTag */ String, 
+          /* callback */ js.Function1[/* error */ js.UndefOr[DBError], Unit], 
+          Unit
+        ])
+    ): Self = StObject.set(x, "sessionCallback", value.asInstanceOf[js.Any])
+    
+    inline def setSessionCallbackFunction3(
+      value: (/* connection */ Connection, /* requestedTag */ String, /* callback */ js.Function1[/* error */ js.UndefOr[DBError], Unit]) => Callback
+    ): Self = StObject.set(x, "sessionCallback", js.Any.fromFunction3((t0: /* connection */ Connection, t1: /* requestedTag */ String, t2: /* callback */ js.Function1[/* error */ js.UndefOr[DBError], Unit]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setSessionCallbackUndefined: Self = StObject.set(x, "sessionCallback", js.undefined)
+    
+    inline def setStmtCacheSize(value: Double): Self = StObject.set(x, "stmtCacheSize", value.asInstanceOf[js.Any])
+    
+    inline def setStmtCacheSizeUndefined: Self = StObject.set(x, "stmtCacheSize", js.undefined)
+    
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+  }
 }
-

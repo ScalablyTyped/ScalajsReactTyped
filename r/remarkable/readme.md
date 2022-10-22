@@ -1,7 +1,7 @@
 
 # Scala.js typings for remarkable
 
-Typings are for version 1.7
+Typings are for version 2.0
 
 ## Library description:
 Markdown parser, done right. 100% Commonmark support, extensions, syntax plugins, high speed - all in one.
@@ -10,10 +10,10 @@ Markdown parser, done right. 100% Commonmark support, extensions, syntax plugins
 | ------------------ | :-------------: |
 | Full name          | remarkable |
 | Keywords           | commonmark, markdown, md, parse, parser, process, remarkable, render, renderer, text |
-| # releases         | 5 |
-| # dependents       | 249 |
-| # downloads        | 10066657 |
-| # stars            | 22 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2369549.6666666665 |
+| # stars            | 5361.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/remarkable)

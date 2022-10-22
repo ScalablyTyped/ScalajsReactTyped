@@ -1,23 +1,36 @@
 package typingsJapgolly.nivoCore.mod
 
-import typingsJapgolly.nivoCore.AnonDictkey
-import typingsJapgolly.nivoCore.AnonId
+import typingsJapgolly.nivoCore.anon.Dictkey
+import typingsJapgolly.nivoCore.anon.Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SvgDefsAndFill[T] extends js.Object {
-  var defs: js.UndefOr[js.Array[AnonDictkey]] = js.undefined
-  var fill: js.UndefOr[js.Array[AnonId[T]]] = js.undefined
+trait SvgDefsAndFill[T] extends StObject {
+  
+  var defs: js.UndefOr[js.Array[Dictkey]] = js.undefined
+  
+  var fill: js.UndefOr[js.Array[Id[T]]] = js.undefined
 }
-
 object SvgDefsAndFill {
-  @scala.inline
-  def apply[T](defs: js.Array[AnonDictkey] = null, fill: js.Array[AnonId[T]] = null): SvgDefsAndFill[T] = {
+  
+  inline def apply[T](): SvgDefsAndFill[T] = {
     val __obj = js.Dynamic.literal()
-    if (defs != null) __obj.updateDynamic("defs")(defs.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvgDefsAndFill[T]]
   }
+  
+  extension [Self <: SvgDefsAndFill[?], T](x: Self & SvgDefsAndFill[T]) {
+    
+    inline def setDefs(value: js.Array[Dictkey]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
+    
+    inline def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
+    
+    inline def setDefsVarargs(value: Dictkey*): Self = StObject.set(x, "defs", js.Array(value*))
+    
+    inline def setFill(value: js.Array[Id[T]]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setFillVarargs(value: Id[T]*): Self = StObject.set(x, "fill", js.Array(value*))
+  }
 }
-

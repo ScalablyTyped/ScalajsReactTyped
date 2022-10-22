@@ -2,22 +2,30 @@ package typingsJapgolly.htmlValidator.mod
 
 import typingsJapgolly.htmlValidator.htmlValidatorStrings.info
 import typingsJapgolly.htmlValidator.htmlValidatorStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ValidationMessageBasicInfoObject extends js.Object {
+trait ValidationMessageBasicInfoObject extends StObject {
+  
   var subType: js.UndefOr[warning] = js.undefined
+  
   var `type`: info
 }
-
 object ValidationMessageBasicInfoObject {
-  @scala.inline
-  def apply(`type`: info, subType: warning = null): ValidationMessageBasicInfoObject = {
+  
+  inline def apply(): ValidationMessageBasicInfoObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (subType != null) __obj.updateDynamic("subType")(subType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("info")
     __obj.asInstanceOf[ValidationMessageBasicInfoObject]
   }
+  
+  extension [Self <: ValidationMessageBasicInfoObject](x: Self) {
+    
+    inline def setSubType(value: warning): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
+    
+    inline def setSubTypeUndefined: Self = StObject.set(x, "subType", js.undefined)
+    
+    inline def setType(value: info): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

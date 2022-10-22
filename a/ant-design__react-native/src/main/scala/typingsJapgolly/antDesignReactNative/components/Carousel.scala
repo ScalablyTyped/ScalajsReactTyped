@@ -1,80 +1,361 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.antDesignReactNative.carouselMod.CarouselProps
-import typingsJapgolly.antDesignReactNative.carouselMod.CarouselState
-import typingsJapgolly.antDesignReactNative.carouselMod.PaginationProps
-import typingsJapgolly.antDesignReactNative.carouselMod.default
-import typingsJapgolly.antDesignReactNative.carouselStyleMod.CarouselStyle
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignReactNative.libCarouselMod.CarouselProps
+import typingsJapgolly.antDesignReactNative.libCarouselMod.PaginationProps
+import typingsJapgolly.antDesignReactNative.libCarouselStyleMod.CarouselStyle
+import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.reactNative.anon.AutoscrollToTopThreshold
+import typingsJapgolly.reactNative.mod.AccessibilityActionInfo
+import typingsJapgolly.reactNative.mod.AccessibilityRole
+import typingsJapgolly.reactNative.mod.AccessibilityState
+import typingsJapgolly.reactNative.mod.AccessibilityValue
+import typingsJapgolly.reactNative.mod.ColorValue
+import typingsJapgolly.reactNative.mod.Insets
 import typingsJapgolly.reactNative.mod.NodeHandle
+import typingsJapgolly.reactNative.mod.PointProp
 import typingsJapgolly.reactNative.mod.StyleProp
+import typingsJapgolly.reactNative.mod.TVParallaxProperties
 import typingsJapgolly.reactNative.mod.ViewStyle
+import typingsJapgolly.reactNative.reactNativeStrings.`box-none`
+import typingsJapgolly.reactNative.reactNativeStrings.`box-only`
+import typingsJapgolly.reactNative.reactNativeStrings.`no-hide-descendants`
+import typingsJapgolly.reactNative.reactNativeStrings.`on-drag`
+import typingsJapgolly.reactNative.reactNativeStrings.always
+import typingsJapgolly.reactNative.reactNativeStrings.assertive
+import typingsJapgolly.reactNative.reactNativeStrings.auto
+import typingsJapgolly.reactNative.reactNativeStrings.automatic
+import typingsJapgolly.reactNative.reactNativeStrings.black
+import typingsJapgolly.reactNative.reactNativeStrings.center
+import typingsJapgolly.reactNative.reactNativeStrings.default
+import typingsJapgolly.reactNative.reactNativeStrings.end
+import typingsJapgolly.reactNative.reactNativeStrings.fast
+import typingsJapgolly.reactNative.reactNativeStrings.handled
+import typingsJapgolly.reactNative.reactNativeStrings.interactive
+import typingsJapgolly.reactNative.reactNativeStrings.never
+import typingsJapgolly.reactNative.reactNativeStrings.no
+import typingsJapgolly.reactNative.reactNativeStrings.none
+import typingsJapgolly.reactNative.reactNativeStrings.normal_
+import typingsJapgolly.reactNative.reactNativeStrings.polite
+import typingsJapgolly.reactNative.reactNativeStrings.scrollableAxes
+import typingsJapgolly.reactNative.reactNativeStrings.start
+import typingsJapgolly.reactNative.reactNativeStrings.white
+import typingsJapgolly.reactNative.reactNativeStrings.yes
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Carousel {
-  def apply(
-    afterChange: /* index */ Double => Callback = null,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    autoplayInterval: Int | Double = null,
-    bounces: js.UndefOr[Boolean] = js.undefined,
-    dotActiveStyle: StyleProp[ViewStyle] = null,
-    dotStyle: StyleProp[ViewStyle] = null,
-    dots: js.UndefOr[Boolean] = js.undefined,
-    infinite: js.UndefOr[Boolean] = js.undefined,
-    initialSlideWidth: Int | Double = null,
-    onMomentumScrollEnd: (ReactEventFrom[NodeHandle with Element], /* state */ CarouselState, /* carousel */ typingsJapgolly.antDesignReactNative.carouselMod.Carousel) => Callback = null,
-    onScrollBeginDrag: (ReactEventFrom[NodeHandle with Element], /* state */ CarouselState, /* carousel */ typingsJapgolly.antDesignReactNative.carouselMod.Carousel) => Callback = null,
-    pagination: /* props */ PaginationProps => CallbackTo[Node] = null,
-    selectedIndex: Int | Double = null,
-    style: StyleProp[ViewStyle] = null,
-    styles: Partial[CarouselStyle] = null,
-    vertical: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CarouselProps, default, Unit, CarouselProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (afterChange != null) __obj.updateDynamic("afterChange")(js.Any.fromFunction1((t0: /* index */ scala.Double) => afterChange(t0).runNow()))
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (autoplayInterval != null) __obj.updateDynamic("autoplayInterval")(autoplayInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(bounces)) __obj.updateDynamic("bounces")(bounces.asInstanceOf[js.Any])
-    if (dotActiveStyle != null) __obj.updateDynamic("dotActiveStyle")(dotActiveStyle.asInstanceOf[js.Any])
-    if (dotStyle != null) __obj.updateDynamic("dotStyle")(dotStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
-    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite.asInstanceOf[js.Any])
-    if (initialSlideWidth != null) __obj.updateDynamic("initialSlideWidth")(initialSlideWidth.asInstanceOf[js.Any])
-    if (onMomentumScrollEnd != null) __obj.updateDynamic("onMomentumScrollEnd")(js.Any.fromFunction3((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* state */ typingsJapgolly.antDesignReactNative.carouselMod.CarouselState, t2: /* carousel */ typingsJapgolly.antDesignReactNative.carouselMod.Carousel) => onMomentumScrollEnd(t0, t1, t2).runNow()))
-    if (onScrollBeginDrag != null) __obj.updateDynamic("onScrollBeginDrag")(js.Any.fromFunction3((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element], t1: /* state */ typingsJapgolly.antDesignReactNative.carouselMod.CarouselState, t2: /* carousel */ typingsJapgolly.antDesignReactNative.carouselMod.Carousel) => onScrollBeginDrag(t0, t1, t2).runNow()))
-    if (pagination != null) __obj.updateDynamic("pagination")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.antDesignReactNative.carouselMod.PaginationProps) => pagination(t0).runNow()))
-    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.carouselMod.CarouselProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.carouselMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.carouselMod.CarouselProps])(children: _*)
-  }
-  @JSImport("@ant-design/react-native/lib/carousel", JSImport.Default)
+  @JSImport("@ant-design/react-native", "Carousel")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.Carousel] {
+    
+    inline def StickyHeaderComponent(value: ComponentType[Any]): this.type = set("StickyHeaderComponent", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityActions(value: js.Array[AccessibilityActionInfo]): this.type = set("accessibilityActions", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityActionsVarargs(value: AccessibilityActionInfo*): this.type = set("accessibilityActions", js.Array(value*))
+    
+    inline def accessibilityElementsHidden(value: Boolean): this.type = set("accessibilityElementsHidden", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityHint(value: String): this.type = set("accessibilityHint", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityIgnoresInvertColors(value: Boolean): this.type = set("accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLabel(value: String): this.type = set("accessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLabelledBy(value: String | js.Array[String]): this.type = set("accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLabelledByVarargs(value: String*): this.type = set("accessibilityLabelledBy", js.Array(value*))
+    
+    inline def accessibilityLanguage(value: String): this.type = set("accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLiveRegion(value: none | polite | assertive): this.type = set("accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityRole(value: AccessibilityRole): this.type = set("accessibilityRole", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityState(value: AccessibilityState): this.type = set("accessibilityState", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityValue(value: AccessibilityValue): this.type = set("accessibilityValue", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityViewIsModal(value: Boolean): this.type = set("accessibilityViewIsModal", value.asInstanceOf[js.Any])
+    
+    inline def accessible(value: Boolean): this.type = set("accessible", value.asInstanceOf[js.Any])
+    
+    inline def afterChange(value: /* index */ Double => Callback): this.type = set("afterChange", js.Any.fromFunction1((t0: /* index */ Double) => value(t0).runNow()))
+    
+    inline def alwaysBounceHorizontal(value: Boolean): this.type = set("alwaysBounceHorizontal", value.asInstanceOf[js.Any])
+    
+    inline def alwaysBounceVertical(value: Boolean): this.type = set("alwaysBounceVertical", value.asInstanceOf[js.Any])
+    
+    inline def automaticallyAdjustContentInsets(value: Boolean): this.type = set("automaticallyAdjustContentInsets", value.asInstanceOf[js.Any])
+    
+    inline def automaticallyAdjustKeyboardInsets(value: Boolean): this.type = set("automaticallyAdjustKeyboardInsets", value.asInstanceOf[js.Any])
+    
+    inline def automaticallyAdjustsScrollIndicatorInsets(value: Boolean): this.type = set("automaticallyAdjustsScrollIndicatorInsets", value.asInstanceOf[js.Any])
+    
+    inline def autoplay(value: Boolean): this.type = set("autoplay", value.asInstanceOf[js.Any])
+    
+    inline def autoplayInterval(value: Double): this.type = set("autoplayInterval", value.asInstanceOf[js.Any])
+    
+    inline def bounces(value: Boolean): this.type = set("bounces", value.asInstanceOf[js.Any])
+    
+    inline def bouncesZoom(value: Boolean): this.type = set("bouncesZoom", value.asInstanceOf[js.Any])
+    
+    inline def canCancelContentTouches(value: Boolean): this.type = set("canCancelContentTouches", value.asInstanceOf[js.Any])
+    
+    inline def centerContent(value: Boolean): this.type = set("centerContent", value.asInstanceOf[js.Any])
+    
+    inline def collapsable(value: Boolean): this.type = set("collapsable", value.asInstanceOf[js.Any])
+    
+    inline def contentContainerStyle(value: StyleProp[ViewStyle]): this.type = set("contentContainerStyle", value.asInstanceOf[js.Any])
+    
+    inline def contentContainerStyleNull: this.type = set("contentContainerStyle", null)
+    
+    inline def contentInset(value: Insets): this.type = set("contentInset", value.asInstanceOf[js.Any])
+    
+    inline def contentInsetAdjustmentBehavior(value: automatic | scrollableAxes | never | always): this.type = set("contentInsetAdjustmentBehavior", value.asInstanceOf[js.Any])
+    
+    inline def contentOffset(value: PointProp): this.type = set("contentOffset", value.asInstanceOf[js.Any])
+    
+    inline def decelerationRate(value: fast | normal_ | Double): this.type = set("decelerationRate", value.asInstanceOf[js.Any])
+    
+    inline def directionalLockEnabled(value: Boolean): this.type = set("directionalLockEnabled", value.asInstanceOf[js.Any])
+    
+    inline def disableIntervalMomentum(value: Boolean): this.type = set("disableIntervalMomentum", value.asInstanceOf[js.Any])
+    
+    inline def disableScrollViewPanResponder(value: Boolean): this.type = set("disableScrollViewPanResponder", value.asInstanceOf[js.Any])
+    
+    inline def dotActiveStyle(value: StyleProp[ViewStyle]): this.type = set("dotActiveStyle", value.asInstanceOf[js.Any])
+    
+    inline def dotActiveStyleNull: this.type = set("dotActiveStyle", null)
+    
+    inline def dotStyle(value: StyleProp[ViewStyle]): this.type = set("dotStyle", value.asInstanceOf[js.Any])
+    
+    inline def dotStyleNull: this.type = set("dotStyle", null)
+    
+    inline def dots(value: Boolean): this.type = set("dots", value.asInstanceOf[js.Any])
+    
+    inline def endFillColor(value: ColorValue): this.type = set("endFillColor", value.asInstanceOf[js.Any])
+    
+    inline def fadingEdgeLength(value: Double): this.type = set("fadingEdgeLength", value.asInstanceOf[js.Any])
+    
+    inline def focusable(value: Boolean): this.type = set("focusable", value.asInstanceOf[js.Any])
+    
+    inline def hasTVPreferredFocus(value: Boolean): this.type = set("hasTVPreferredFocus", value.asInstanceOf[js.Any])
+    
+    inline def hitSlop(value: Insets): this.type = set("hitSlop", value.asInstanceOf[js.Any])
+    
+    inline def horizontal(value: Boolean): this.type = set("horizontal", value.asInstanceOf[js.Any])
+    
+    inline def horizontalNull: this.type = set("horizontal", null)
+    
+    inline def importantForAccessibility(value: auto | yes | no | `no-hide-descendants`): this.type = set("importantForAccessibility", value.asInstanceOf[js.Any])
+    
+    inline def indicatorStyle(value: default | black | white): this.type = set("indicatorStyle", value.asInstanceOf[js.Any])
+    
+    inline def infinite(value: Boolean): this.type = set("infinite", value.asInstanceOf[js.Any])
+    
+    inline def invertStickyHeaders(value: Boolean): this.type = set("invertStickyHeaders", value.asInstanceOf[js.Any])
+    
+    inline def isTVSelectable(value: Boolean): this.type = set("isTVSelectable", value.asInstanceOf[js.Any])
+    
+    inline def keyboardDismissMode(value: none | interactive | `on-drag`): this.type = set("keyboardDismissMode", value.asInstanceOf[js.Any])
+    
+    inline def keyboardShouldPersistTaps(value: Boolean | always | never | handled): this.type = set("keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
+    
+    inline def maintainVisibleContentPosition(value: AutoscrollToTopThreshold): this.type = set("maintainVisibleContentPosition", value.asInstanceOf[js.Any])
+    
+    inline def maintainVisibleContentPositionNull: this.type = set("maintainVisibleContentPosition", null)
+    
+    inline def maximumZoomScale(value: Double): this.type = set("maximumZoomScale", value.asInstanceOf[js.Any])
+    
+    inline def minimumZoomScale(value: Double): this.type = set("minimumZoomScale", value.asInstanceOf[js.Any])
+    
+    inline def nativeID(value: String): this.type = set("nativeID", value.asInstanceOf[js.Any])
+    
+    inline def needsOffscreenAlphaCompositing(value: Boolean): this.type = set("needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
+    
+    inline def nestedScrollEnabled(value: Boolean): this.type = set("nestedScrollEnabled", value.asInstanceOf[js.Any])
+    
+    inline def onAccessibilityAction(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onAccessibilityAction", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onAccessibilityEscape(value: Callback): this.type = set("onAccessibilityEscape", value.toJsFn)
+    
+    inline def onAccessibilityTap(value: Callback): this.type = set("onAccessibilityTap", value.toJsFn)
+    
+    inline def onContentSizeChange(value: (/* w */ Double, /* h */ Double) => Callback): this.type = set("onContentSizeChange", js.Any.fromFunction2((t0: /* w */ Double, t1: /* h */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def onLayout(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onLayout", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onMagicTap(value: Callback): this.type = set("onMagicTap", value.toJsFn)
+    
+    inline def onMomentumScrollBegin(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onMomentumScrollBegin", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onMomentumScrollEnd(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onMomentumScrollEnd", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onMoveShouldSetResponder(value: ReactEventFrom[NodeHandle & Element] => Boolean): this.type = set("onMoveShouldSetResponder", js.Any.fromFunction1(value))
+    
+    inline def onMoveShouldSetResponderCapture(value: ReactEventFrom[NodeHandle & Element] => Boolean): this.type = set("onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
+    
+    inline def onPointerCancel(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPointerCancel", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPointerCancelCapture(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPointerCancelCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPointerDown(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPointerDown", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPointerDownCapture(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPointerDownCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPointerEnter(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPointerEnter", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPointerEnterCapture(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPointerEnterCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPointerLeave(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPointerLeave", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPointerLeaveCapture(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPointerLeaveCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPointerMove(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPointerMove", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPointerMoveCapture(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPointerMoveCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPointerUp(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPointerUp", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPointerUpCapture(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPointerUpCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderEnd(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderEnd", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderGrant(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderGrant", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderMove(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderMove", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderReject(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderReject", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderRelease(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderRelease", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderStart(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderStart", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderTerminate(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderTerminate", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderTerminationRequest(value: ReactEventFrom[NodeHandle & Element] => Boolean): this.type = set("onResponderTerminationRequest", js.Any.fromFunction1(value))
+    
+    inline def onScroll(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onScrollAnimationEnd(value: Callback): this.type = set("onScrollAnimationEnd", value.toJsFn)
+    
+    inline def onScrollBeginDrag(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onScrollBeginDrag", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onScrollEndDrag(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onScrollEndDrag", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onScrollToTop(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onScrollToTop", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onStartShouldSetResponder(value: ReactEventFrom[NodeHandle & Element] => Boolean): this.type = set("onStartShouldSetResponder", js.Any.fromFunction1(value))
+    
+    inline def onStartShouldSetResponderCapture(value: ReactEventFrom[NodeHandle & Element] => Boolean): this.type = set("onStartShouldSetResponderCapture", js.Any.fromFunction1(value))
+    
+    inline def onTouchCancel(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onTouchCancel", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onTouchEnd(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onTouchEnd", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onTouchEndCapture(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onTouchEndCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onTouchMove(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onTouchMove", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onTouchStart(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onTouchStart", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def overScrollMode(value: auto | always | never): this.type = set("overScrollMode", value.asInstanceOf[js.Any])
+    
+    inline def pageStyle(value: ViewStyle): this.type = set("pageStyle", value.asInstanceOf[js.Any])
+    
+    inline def pagination(value: /* props */ PaginationProps => Node): this.type = set("pagination", js.Any.fromFunction1(value))
+    
+    inline def pagingEnabled(value: Boolean): this.type = set("pagingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def persistentScrollbar(value: Boolean): this.type = set("persistentScrollbar", value.asInstanceOf[js.Any])
+    
+    inline def pinchGestureEnabled(value: Boolean): this.type = set("pinchGestureEnabled", value.asInstanceOf[js.Any])
+    
+    inline def pointerEvents(value: `box-none` | none | `box-only` | auto): this.type = set("pointerEvents", value.asInstanceOf[js.Any])
+    
+    inline def refreshControl(value: VdomElement): this.type = set("refreshControl", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def removeClippedSubviews(value: Boolean): this.type = set("removeClippedSubviews", value.asInstanceOf[js.Any])
+    
+    inline def renderToHardwareTextureAndroid(value: Boolean): this.type = set("renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
+    
+    inline def scrollEnabled(value: Boolean): this.type = set("scrollEnabled", value.asInstanceOf[js.Any])
+    
+    inline def scrollEventThrottle(value: Double): this.type = set("scrollEventThrottle", value.asInstanceOf[js.Any])
+    
+    inline def scrollIndicatorInsets(value: Insets): this.type = set("scrollIndicatorInsets", value.asInstanceOf[js.Any])
+    
+    inline def scrollPerfTag(value: String): this.type = set("scrollPerfTag", value.asInstanceOf[js.Any])
+    
+    inline def scrollToOverflowEnabled(value: Boolean): this.type = set("scrollToOverflowEnabled", value.asInstanceOf[js.Any])
+    
+    inline def scrollsToTop(value: Boolean): this.type = set("scrollsToTop", value.asInstanceOf[js.Any])
+    
+    inline def selectedIndex(value: Double): this.type = set("selectedIndex", value.asInstanceOf[js.Any])
+    
+    inline def shouldRasterizeIOS(value: Boolean): this.type = set("shouldRasterizeIOS", value.asInstanceOf[js.Any])
+    
+    inline def showsHorizontalScrollIndicator(value: Boolean): this.type = set("showsHorizontalScrollIndicator", value.asInstanceOf[js.Any])
+    
+    inline def showsVerticalScrollIndicator(value: Boolean): this.type = set("showsVerticalScrollIndicator", value.asInstanceOf[js.Any])
+    
+    inline def snapToAlignment(value: start | center | end): this.type = set("snapToAlignment", value.asInstanceOf[js.Any])
+    
+    inline def snapToEnd(value: Boolean): this.type = set("snapToEnd", value.asInstanceOf[js.Any])
+    
+    inline def snapToInterval(value: Double): this.type = set("snapToInterval", value.asInstanceOf[js.Any])
+    
+    inline def snapToOffsets(value: js.Array[Double]): this.type = set("snapToOffsets", value.asInstanceOf[js.Any])
+    
+    inline def snapToOffsetsVarargs(value: Double*): this.type = set("snapToOffsets", js.Array(value*))
+    
+    inline def snapToStart(value: Boolean): this.type = set("snapToStart", value.asInstanceOf[js.Any])
+    
+    inline def stickyHeaderHiddenOnScroll(value: Boolean): this.type = set("stickyHeaderHiddenOnScroll", value.asInstanceOf[js.Any])
+    
+    inline def stickyHeaderIndices(value: js.Array[Double]): this.type = set("stickyHeaderIndices", value.asInstanceOf[js.Any])
+    
+    inline def stickyHeaderIndicesVarargs(value: Double*): this.type = set("stickyHeaderIndices", js.Array(value*))
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: Partial[CarouselStyle]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def testID(value: String): this.type = set("testID", value.asInstanceOf[js.Any])
+    
+    inline def tvParallaxMagnification(value: Double): this.type = set("tvParallaxMagnification", value.asInstanceOf[js.Any])
+    
+    inline def tvParallaxProperties(value: TVParallaxProperties): this.type = set("tvParallaxProperties", value.asInstanceOf[js.Any])
+    
+    inline def tvParallaxShiftDistanceX(value: Double): this.type = set("tvParallaxShiftDistanceX", value.asInstanceOf[js.Any])
+    
+    inline def tvParallaxShiftDistanceY(value: Double): this.type = set("tvParallaxShiftDistanceY", value.asInstanceOf[js.Any])
+    
+    inline def tvParallaxTiltAngle(value: Double): this.type = set("tvParallaxTiltAngle", value.asInstanceOf[js.Any])
+    
+    inline def vertical(value: Boolean): this.type = set("vertical", value.asInstanceOf[js.Any])
+    
+    inline def zoomScale(value: Double): this.type = set("zoomScale", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Carousel.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CarouselProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

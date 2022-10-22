@@ -1,21 +1,26 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimeZoneResponse extends js.Object {
+trait TimeZoneResponse extends StObject {
+  
   /**
     * the offset for daylight-savings time in seconds.
     * This will be zero if the time zone is not in Daylight Savings Time during the specified `timestamp`.
     */
   var dstOffset: Double
+  
   /** more detailed information about the reasons behind the given status code, if other than `OK`. */
   var errorMessage: String
+  
   /** the offset from UTC (in seconds) for the given location. This does not take into effect daylight savings. */
   var rawOffset: Double
+  
   /** a string indicating the status of the response. */
   var status: TimeZoneResponseStatus
+  
   /**
     * a string containing the ID of the time zone, such as "America/Los_Angeles" or "Australia/Sydney".
     * These IDs are defined by [Unicode Common Locale Data Repository (CLDR) project](http://cldr.unicode.org/),
@@ -24,6 +29,7 @@ trait TimeZoneResponse extends js.Object {
     * For example, "Asia/Calcutta" is returned, not "Asia/Kolkata".
     */
   var timeZoneId: String
+  
   /**
     * a string containing the long form name of the time zone.
     * This field will be localized if the `language` parameter is set.
@@ -31,10 +37,9 @@ trait TimeZoneResponse extends js.Object {
     */
   var timeZoneName: String
 }
-
 object TimeZoneResponse {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     dstOffset: Double,
     errorMessage: String,
     rawOffset: Double,
@@ -43,8 +48,21 @@ object TimeZoneResponse {
     timeZoneName: String
   ): TimeZoneResponse = {
     val __obj = js.Dynamic.literal(dstOffset = dstOffset.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], rawOffset = rawOffset.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timeZoneId = timeZoneId.asInstanceOf[js.Any], timeZoneName = timeZoneName.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TimeZoneResponse]
   }
+  
+  extension [Self <: TimeZoneResponse](x: Self) {
+    
+    inline def setDstOffset(value: Double): Self = StObject.set(x, "dstOffset", value.asInstanceOf[js.Any])
+    
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    
+    inline def setRawOffset(value: Double): Self = StObject.set(x, "rawOffset", value.asInstanceOf[js.Any])
+    
+    inline def setStatus(value: TimeZoneResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setTimeZoneId(value: String): Self = StObject.set(x, "timeZoneId", value.asInstanceOf[js.Any])
+    
+    inline def setTimeZoneName(value: String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+  }
 }
-

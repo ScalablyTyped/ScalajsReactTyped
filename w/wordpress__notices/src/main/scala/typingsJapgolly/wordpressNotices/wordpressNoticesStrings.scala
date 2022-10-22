@@ -1,45 +1,50 @@
 package typingsJapgolly.wordpressNotices
 
+import typingsJapgolly.wordpressNotices.mod.NoticeType
 import typingsJapgolly.wordpressNotices.mod.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wordpressNoticesStrings {
-  @js.native
-  sealed trait coreSlashnotices extends js.Object
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends StObject
+       with NoticeType
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait error extends Status
+  sealed trait coreSlashnotices extends StObject
+  inline def coreSlashnotices: coreSlashnotices = "core/notices".asInstanceOf[coreSlashnotices]
   
   @js.native
-  sealed trait info extends Status
+  sealed trait error
+    extends StObject
+       with Status
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait snackbar extends js.Object
+  sealed trait info
+    extends StObject
+       with Status
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait success extends Status
+  sealed trait snackbar
+    extends StObject
+       with NoticeType
+  inline def snackbar: snackbar = "snackbar".asInstanceOf[snackbar]
   
   @js.native
-  sealed trait warning extends Status
+  sealed trait success
+    extends StObject
+       with Status
+  inline def success: success = "success".asInstanceOf[success]
   
-  @scala.inline
-  def coreSlashnotices: coreSlashnotices = "core/notices".asInstanceOf[coreSlashnotices]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def snackbar: snackbar = "snackbar".asInstanceOf[snackbar]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  @js.native
+  sealed trait warning
+    extends StObject
+       with Status
+  inline def warning: warning = "warning".asInstanceOf[warning]
 }
-

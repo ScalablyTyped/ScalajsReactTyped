@@ -1,28 +1,26 @@
 package typingsJapgolly.aliApp.my
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GetBluetoothAdapterStateOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   @JSName("success")
   def success_MGetBluetoothAdapterStateOptions(res: BluetoothAdapterStateData): Unit
 }
-
 object GetBluetoothAdapterStateOptions {
-  @scala.inline
-  def apply(
-    success: BluetoothAdapterStateData => Callback,
-    complete: /* res */ js.Any => Callback = null,
-    fail: js.Any => Callback = null
-  ): GetBluetoothAdapterStateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("success")(js.Any.fromFunction1((t0: typingsJapgolly.aliApp.my.BluetoothAdapterStateData) => success(t0).runNow()))
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
+  
+  inline def apply(success: BluetoothAdapterStateData => Callback): GetBluetoothAdapterStateOptions = {
+    val __obj = js.Dynamic.literal(success = js.Any.fromFunction1((t0: BluetoothAdapterStateData) => success(t0).runNow()))
     __obj.asInstanceOf[GetBluetoothAdapterStateOptions]
   }
+  
+  extension [Self <: GetBluetoothAdapterStateOptions](x: Self) {
+    
+    inline def setSuccess(value: BluetoothAdapterStateData => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: BluetoothAdapterStateData) => value(t0).runNow()))
+  }
 }
-

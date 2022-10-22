@@ -1,52 +1,42 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ButtonSize extends js.Object
-
+sealed trait ButtonSize extends StObject
 @JSGlobal("ej.ButtonSize")
 @js.native
-object ButtonSize extends js.Object {
+object ButtonSize extends StObject {
+  
   //Creates button with Built-in large size height, width specified
   @js.native
-  sealed trait Large extends ButtonSize
+  sealed trait Large
+    extends StObject
+       with ButtonSize
   
   //Creates button with Built-in medium size height, width specified
   @js.native
-  sealed trait Medium extends ButtonSize
+  sealed trait Medium
+    extends StObject
+       with ButtonSize
   
   //Creates button with Built-in mini size height, width specified
   @js.native
-  sealed trait Mini extends ButtonSize
+  sealed trait Mini
+    extends StObject
+       with ButtonSize
   
   //Creates button with Built-in default size height, width specified
   @js.native
-  sealed trait Normal extends ButtonSize
+  sealed trait Normal
+    extends StObject
+       with ButtonSize
   
   //Creates button with Built-in small size height, width specified
   @js.native
-  sealed trait Small extends ButtonSize
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ButtonSize with Double] = js.native
-  /* 4 */ @js.native
-  object Large extends TopLevel[Large with Double]
-  
-  /* 3 */ @js.native
-  object Medium extends TopLevel[Medium with Double]
-  
-  /* 1 */ @js.native
-  object Mini extends TopLevel[Mini with Double]
-  
-  /* 0 */ @js.native
-  object Normal extends TopLevel[Normal with Double]
-  
-  /* 2 */ @js.native
-  object Small extends TopLevel[Small with Double]
-  
+  sealed trait Small
+    extends StObject
+       with ButtonSize
 }
-

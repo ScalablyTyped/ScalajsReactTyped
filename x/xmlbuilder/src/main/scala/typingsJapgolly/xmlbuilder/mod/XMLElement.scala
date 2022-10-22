@@ -1,24 +1,27 @@
 package typingsJapgolly.xmlbuilder.mod
 
-import typingsJapgolly.xmlbuilder.AnonString
+import typingsJapgolly.xmlbuilder.anon.String
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an element node.
   */
 @JSImport("xmlbuilder", "XMLElement")
 @js.native
-class XMLElement () extends XMLNode {
+open class XMLElement () extends XMLNode {
+  
   /**
     * Element attributes
     */
-  var attribs: AnonString = js.native
+  var attribs: String = js.native
+  
   /**
     * Element node name
     */
-  var name: String = js.native
+  var name: java.lang.String = js.native
+  
   /**
     * Removes an attribute.
     * 
@@ -26,8 +29,8 @@ class XMLElement () extends XMLNode {
     * 
     * @returns the parent element node
     */
-  def removeAttribute(name: String): XMLElement = js.native
-  def removeAttribute(name: js.Array[String]): XMLElement = js.native
-  def toString(options: XMLToStringOptions): String = js.native
+  def removeAttribute(name: java.lang.String): XMLElement = js.native
+  def removeAttribute(name: js.Array[java.lang.String]): XMLElement = js.native
+  
+  def toString(options: XMLToStringOptions): java.lang.String = js.native
 }
-

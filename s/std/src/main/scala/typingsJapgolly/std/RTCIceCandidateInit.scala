@@ -1,30 +1,52 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCIceCandidateInit extends js.Object {
+trait RTCIceCandidateInit extends StObject {
+  
+  /* standard dom */
   var candidate: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var sdpMLineIndex: js.UndefOr[Double | Null] = js.undefined
+  
+  /* standard dom */
   var sdpMid: js.UndefOr[java.lang.String | Null] = js.undefined
+  
+  /* standard dom */
   var usernameFragment: js.UndefOr[java.lang.String | Null] = js.undefined
 }
-
 object RTCIceCandidateInit {
-  @scala.inline
-  def apply(
-    candidate: java.lang.String = null,
-    sdpMLineIndex: Int | Double = null,
-    sdpMid: java.lang.String = null,
-    usernameFragment: java.lang.String = null
-  ): RTCIceCandidateInit = {
+  
+  inline def apply(): RTCIceCandidateInit = {
     val __obj = js.Dynamic.literal()
-    if (candidate != null) __obj.updateDynamic("candidate")(candidate.asInstanceOf[js.Any])
-    if (sdpMLineIndex != null) __obj.updateDynamic("sdpMLineIndex")(sdpMLineIndex.asInstanceOf[js.Any])
-    if (sdpMid != null) __obj.updateDynamic("sdpMid")(sdpMid.asInstanceOf[js.Any])
-    if (usernameFragment != null) __obj.updateDynamic("usernameFragment")(usernameFragment.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceCandidateInit]
   }
+  
+  extension [Self <: RTCIceCandidateInit](x: Self) {
+    
+    inline def setCandidate(value: java.lang.String): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
+    
+    inline def setCandidateUndefined: Self = StObject.set(x, "candidate", js.undefined)
+    
+    inline def setSdpMLineIndex(value: Double): Self = StObject.set(x, "sdpMLineIndex", value.asInstanceOf[js.Any])
+    
+    inline def setSdpMLineIndexNull: Self = StObject.set(x, "sdpMLineIndex", null)
+    
+    inline def setSdpMLineIndexUndefined: Self = StObject.set(x, "sdpMLineIndex", js.undefined)
+    
+    inline def setSdpMid(value: java.lang.String): Self = StObject.set(x, "sdpMid", value.asInstanceOf[js.Any])
+    
+    inline def setSdpMidNull: Self = StObject.set(x, "sdpMid", null)
+    
+    inline def setSdpMidUndefined: Self = StObject.set(x, "sdpMid", js.undefined)
+    
+    inline def setUsernameFragment(value: java.lang.String): Self = StObject.set(x, "usernameFragment", value.asInstanceOf[js.Any])
+    
+    inline def setUsernameFragmentNull: Self = StObject.set(x, "usernameFragment", null)
+    
+    inline def setUsernameFragmentUndefined: Self = StObject.set(x, "usernameFragment", js.undefined)
+  }
 }
-

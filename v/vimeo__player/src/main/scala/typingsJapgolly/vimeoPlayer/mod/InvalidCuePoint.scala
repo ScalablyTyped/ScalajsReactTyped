@@ -1,24 +1,25 @@
 package typingsJapgolly.vimeoPlayer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InvalidCuePoint extends Error {
+trait InvalidCuePoint
+  extends StObject
+     with Error {
+  
   @JSName("name")
   var name_InvalidCuePoint: typingsJapgolly.vimeoPlayer.vimeoPlayerStrings.InvalidCuePoint
 }
-
 object InvalidCuePoint {
-  @scala.inline
-  def apply(
-    message: String,
-    method: String,
-    name: typingsJapgolly.vimeoPlayer.vimeoPlayerStrings.InvalidCuePoint
-  ): InvalidCuePoint = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
+  inline def apply(message: String, method: String): InvalidCuePoint = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = "InvalidCuePoint")
     __obj.asInstanceOf[InvalidCuePoint]
   }
+  
+  extension [Self <: InvalidCuePoint](x: Self) {
+    
+    inline def setName(value: typingsJapgolly.vimeoPlayer.vimeoPlayerStrings.InvalidCuePoint): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

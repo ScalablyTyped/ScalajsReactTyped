@@ -1,10 +1,20 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DrawActionProperties extends js.Object {
+trait DrawActionProperties extends StObject {
+  
+  /**
+    * Controls whether the created geometry will have z coordinates or not.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html#hasZ)
+    */
+  var hasZ: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
     *
@@ -12,13 +22,21 @@ trait DrawActionProperties extends js.Object {
     */
   var view: js.UndefOr[MapViewProperties] = js.undefined
 }
-
 object DrawActionProperties {
-  @scala.inline
-  def apply(view: MapViewProperties = null): DrawActionProperties = {
+  
+  inline def apply(): DrawActionProperties = {
     val __obj = js.Dynamic.literal()
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawActionProperties]
   }
+  
+  extension [Self <: DrawActionProperties](x: Self) {
+    
+    inline def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
+    
+    inline def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
+    
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

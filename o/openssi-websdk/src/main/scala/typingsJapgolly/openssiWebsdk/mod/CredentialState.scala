@@ -1,8 +1,8 @@
 package typingsJapgolly.openssiWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.outbound_request
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.issued
   - typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.stored
 */
-trait CredentialState extends js.Object
-
+trait CredentialState extends StObject
 object CredentialState {
-  @scala.inline
-  def accepted: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.accepted = this.cast("accepted")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def inbound_offer: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.inbound_offer = this.cast("inbound_offer")
-  @scala.inline
-  def inbound_request: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.inbound_request = this.cast("inbound_request")
-  @scala.inline
-  def issued: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.issued = this.cast("issued")
-  @scala.inline
-  def outbound_offer: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.outbound_offer = this.cast("outbound_offer")
-  @scala.inline
-  def outbound_request: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.outbound_request = this.cast("outbound_request")
-  @scala.inline
-  def rejected: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.rejected = this.cast("rejected")
-  @scala.inline
-  def stored: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.stored = this.cast("stored")
+  
+  inline def accepted: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.accepted = "accepted".asInstanceOf[typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.accepted]
+  
+  inline def inbound_offer: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.inbound_offer = "inbound_offer".asInstanceOf[typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.inbound_offer]
+  
+  inline def inbound_request: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.inbound_request = "inbound_request".asInstanceOf[typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.inbound_request]
+  
+  inline def issued: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.issued = "issued".asInstanceOf[typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.issued]
+  
+  inline def outbound_offer: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.outbound_offer = "outbound_offer".asInstanceOf[typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.outbound_offer]
+  
+  inline def outbound_request: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.outbound_request = "outbound_request".asInstanceOf[typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.outbound_request]
+  
+  inline def rejected: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.rejected = "rejected".asInstanceOf[typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.rejected]
+  
+  inline def stored: typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.stored = "stored".asInstanceOf[typingsJapgolly.openssiWebsdk.openssiWebsdkStrings.stored]
 }
-

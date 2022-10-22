@@ -1,20 +1,22 @@
 package typingsJapgolly.jqueryTruncateHtml
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
+  
   def truncate(html: String, options: TruncateOptions): String
 }
-
 object JQueryStatic {
-  @scala.inline
-  def apply(truncate: (String, TruncateOptions) => CallbackTo[String]): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("truncate")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.jqueryTruncateHtml.TruncateOptions) => truncate(t0, t1).runNow()))
+  
+  inline def apply(truncate: (String, TruncateOptions) => String): JQueryStatic = {
+    val __obj = js.Dynamic.literal(truncate = js.Any.fromFunction2(truncate))
     __obj.asInstanceOf[JQueryStatic]
   }
+  
+  extension [Self <: JQueryStatic](x: Self) {
+    
+    inline def setTruncate(value: (String, TruncateOptions) => String): Self = StObject.set(x, "truncate", js.Any.fromFunction2(value))
+  }
 }
-

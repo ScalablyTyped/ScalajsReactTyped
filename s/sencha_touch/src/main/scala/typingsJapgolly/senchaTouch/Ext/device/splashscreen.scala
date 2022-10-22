@@ -1,16 +1,17 @@
 package typingsJapgolly.senchaTouch.Ext.device
 
 import typingsJapgolly.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Ext.device.splashscreen")
-@js.native
-object splashscreen extends js.Object {
+object splashscreen {
+  
   type IAbstract = IBase
+  
   type ICordova = IAbstract
+  
   type IPhoneGap = IAbstract
+  
   type ISimulator = IAbstract
 }
-

@@ -11,9 +11,9 @@ Template string (ES6) builder for SQL.
 | Full name          | sql-template |
 | Keywords           | pg, pgsql, sql, sql-string, sql-builder, query-builder, sql query, ES6 template string, prepared statement, Let's have a beer and talk in Paris |
 | # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 4750 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 635.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/131/sql-template#readme)

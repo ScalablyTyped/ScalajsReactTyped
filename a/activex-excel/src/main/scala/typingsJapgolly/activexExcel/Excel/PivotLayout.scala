@@ -1,42 +1,67 @@
 package typingsJapgolly.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Excel.PivotLayout")
 @js.native
-class PivotLayout protected () extends js.Object {
-  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
-  val Creator: XlCreator = js.native
-  @JSName("CubeFields")
-  val CubeFields_Original: CubeFields = js.native
-  @JSName("Excel.PivotLayout_typekey")
-  var ExcelDotPivotLayout_typekey: PivotLayout = js.native
-  var InnerDetail: String = js.native
-  val Parent: js.Any = js.native
-  val PivotCache: typingsJapgolly.activexExcel.Excel.PivotCache = js.native
-  val PivotTable: typingsJapgolly.activexExcel.Excel.PivotTable = js.native
+trait PivotLayout extends StObject {
+  
   def AddFields(): Unit = js.native
-  def AddFields(RowFields: js.Any): Unit = js.native
-  def AddFields(RowFields: js.Any, ColumnFields: js.Any): Unit = js.native
-  def AddFields(RowFields: js.Any, ColumnFields: js.Any, PageFields: js.Any): Unit = js.native
-  def AddFields(RowFields: js.Any, ColumnFields: js.Any, PageFields: js.Any, AppendField: js.Any): Unit = js.native
-  def ColumnFields(): js.Any = js.native
-  def ColumnFields(Index: js.Any): js.Any = js.native
+  def AddFields(RowFields: Any): Unit = js.native
+  def AddFields(RowFields: Any, ColumnFields: Any): Unit = js.native
+  def AddFields(RowFields: Any, ColumnFields: Any, PageFields: Any): Unit = js.native
+  def AddFields(RowFields: Any, ColumnFields: Any, PageFields: Any, AppendField: Any): Unit = js.native
+  def AddFields(RowFields: Any, ColumnFields: Any, PageFields: Unit, AppendField: Any): Unit = js.native
+  def AddFields(RowFields: Any, ColumnFields: Unit, PageFields: Any): Unit = js.native
+  def AddFields(RowFields: Any, ColumnFields: Unit, PageFields: Any, AppendField: Any): Unit = js.native
+  def AddFields(RowFields: Any, ColumnFields: Unit, PageFields: Unit, AppendField: Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: Any, PageFields: Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: Any, PageFields: Any, AppendField: Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: Any, PageFields: Unit, AppendField: Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: Unit, PageFields: Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: Unit, PageFields: Any, AppendField: Any): Unit = js.native
+  def AddFields(RowFields: Unit, ColumnFields: Unit, PageFields: Unit, AppendField: Any): Unit = js.native
+  
+  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
+  
+  def ColumnFields(): Any = js.native
+  def ColumnFields(Index: Any): Any = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def CubeFields(Index: String): CubeField = js.native
   def CubeFields(Index: Double): CubeField = js.native
-  def DataFields(): js.Any = js.native
-  def DataFields(Index: js.Any): js.Any = js.native
-  def HiddenFields(): js.Any = js.native
-  def HiddenFields(Index: js.Any): js.Any = js.native
-  def PageFields(): js.Any = js.native
-  def PageFields(Index: js.Any): js.Any = js.native
-  def PivotFields(): js.Any = js.native
-  def PivotFields(Index: js.Any): js.Any = js.native
-  def RowFields(): js.Any = js.native
-  def RowFields(Index: js.Any): js.Any = js.native
-  def VisibleFields(): js.Any = js.native
-  def VisibleFields(Index: js.Any): js.Any = js.native
+  @JSName("CubeFields")
+  val CubeFields_Original: CubeFields = js.native
+  
+  def DataFields(): Any = js.native
+  def DataFields(Index: Any): Any = js.native
+  
+  /* private */ @JSName("Excel.PivotLayout_typekey")
+  var ExcelDotPivotLayout_typekey: PivotLayout = js.native
+  
+  def HiddenFields(): Any = js.native
+  def HiddenFields(Index: Any): Any = js.native
+  
+  var InnerDetail: String = js.native
+  
+  def PageFields(): Any = js.native
+  def PageFields(Index: Any): Any = js.native
+  
+  val Parent: Any = js.native
+  
+  val PivotCache: typingsJapgolly.activexExcel.Excel.PivotCache = js.native
+  
+  def PivotFields(): Any = js.native
+  def PivotFields(Index: Any): Any = js.native
+  
+  val PivotTable: typingsJapgolly.activexExcel.Excel.PivotTable = js.native
+  
+  def RowFields(): Any = js.native
+  def RowFields(Index: Any): Any = js.native
+  
+  def VisibleFields(): Any = js.native
+  def VisibleFields(Index: Any): Any = js.native
 }
-

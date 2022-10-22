@@ -10,10 +10,10 @@ Numerical analysis in javascript
 | ------------------ | :-------------: |
 | Full name          | numeric |
 | Keywords           | numeric, analysis, math |
-| # releases         | 0 |
-| # dependents       | 86 |
-| # downloads        | 2238489 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 429767.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/sloisel/numeric#readme)

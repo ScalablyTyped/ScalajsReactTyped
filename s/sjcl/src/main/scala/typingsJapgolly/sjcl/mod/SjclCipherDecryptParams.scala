@@ -1,38 +1,36 @@
 package typingsJapgolly.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SjclCipherDecryptParams extends SjclCipherParams {
+trait SjclCipherDecryptParams
+  extends StObject
+     with SjclCipherParams {
+  
   var iv: js.UndefOr[BitArray_] = js.undefined
+  
   var salt: js.UndefOr[BitArray_] = js.undefined
 }
-
 object SjclCipherDecryptParams {
-  @scala.inline
-  def apply(
-    adata: String = null,
-    cipher: String = null,
-    iter: Int | Double = null,
-    iv: BitArray_ = null,
-    ks: Int | Double = null,
-    mode: String = null,
-    salt: BitArray_ = null,
-    ts: Int | Double = null,
-    v: Int | Double = null
-  ): SjclCipherDecryptParams = {
+  
+  inline def apply(): SjclCipherDecryptParams = {
     val __obj = js.Dynamic.literal()
-    if (adata != null) __obj.updateDynamic("adata")(adata.asInstanceOf[js.Any])
-    if (cipher != null) __obj.updateDynamic("cipher")(cipher.asInstanceOf[js.Any])
-    if (iter != null) __obj.updateDynamic("iter")(iter.asInstanceOf[js.Any])
-    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
-    if (ks != null) __obj.updateDynamic("ks")(ks.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
-    if (ts != null) __obj.updateDynamic("ts")(ts.asInstanceOf[js.Any])
-    if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[SjclCipherDecryptParams]
   }
+  
+  extension [Self <: SjclCipherDecryptParams](x: Self) {
+    
+    inline def setIv(value: BitArray_): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    
+    inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+    
+    inline def setIvVarargs(value: Double*): Self = StObject.set(x, "iv", js.Array(value*))
+    
+    inline def setSalt(value: BitArray_): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+    
+    inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
+    
+    inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value*))
+  }
 }
-

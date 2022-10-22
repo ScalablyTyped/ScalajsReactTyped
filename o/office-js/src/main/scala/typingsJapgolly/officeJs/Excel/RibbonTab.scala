@@ -1,92 +1,124 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RibbonTab extends js.Object
-
+sealed trait RibbonTab extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.RibbonTab")
 @js.native
-object RibbonTab extends js.Object {
+object RibbonTab extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait addIns extends RibbonTab
+  sealed trait addIns
+    extends StObject
+       with RibbonTab
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait data extends RibbonTab
+  sealed trait data
+    extends StObject
+       with RibbonTab
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait developer extends RibbonTab
+  sealed trait developer
+    extends StObject
+       with RibbonTab
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait draw extends RibbonTab
+  sealed trait draw
+    extends StObject
+       with RibbonTab
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait formulas extends RibbonTab
+  sealed trait formulas
+    extends StObject
+       with RibbonTab
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait help extends RibbonTab
+  sealed trait help
+    extends StObject
+       with RibbonTab
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait home extends RibbonTab
+  sealed trait home
+    extends StObject
+       with RibbonTab
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait insert extends RibbonTab
+  sealed trait insert
+    extends StObject
+       with RibbonTab
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait others extends RibbonTab
+  sealed trait others
+    extends StObject
+       with RibbonTab
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait pageLayout extends RibbonTab
+  sealed trait pageLayout
+    extends StObject
+       with RibbonTab
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait review extends RibbonTab
+  sealed trait review
+    extends StObject
+       with RibbonTab
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait view extends RibbonTab
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[RibbonTab with String] = js.native
-  /* "AddIns" */ @js.native
-  object addIns extends TopLevel[addIns with String]
-  
-  /* "Data" */ @js.native
-  object data extends TopLevel[data with String]
-  
-  /* "Developer" */ @js.native
-  object developer extends TopLevel[developer with String]
-  
-  /* "Draw" */ @js.native
-  object draw extends TopLevel[draw with String]
-  
-  /* "Formulas" */ @js.native
-  object formulas extends TopLevel[formulas with String]
-  
-  /* "Help" */ @js.native
-  object help extends TopLevel[help with String]
-  
-  /* "Home" */ @js.native
-  object home extends TopLevel[home with String]
-  
-  /* "Insert" */ @js.native
-  object insert extends TopLevel[insert with String]
-  
-  /* "Others" */ @js.native
-  object others extends TopLevel[others with String]
-  
-  /* "PageLayout" */ @js.native
-  object pageLayout extends TopLevel[pageLayout with String]
-  
-  /* "Review" */ @js.native
-  object review extends TopLevel[review with String]
-  
-  /* "View" */ @js.native
-  object view extends TopLevel[view with String]
-  
+  sealed trait view
+    extends StObject
+       with RibbonTab
 }
-

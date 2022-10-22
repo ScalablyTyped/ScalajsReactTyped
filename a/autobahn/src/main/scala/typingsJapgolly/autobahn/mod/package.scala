@@ -1,31 +1,44 @@
-package typingsJapgolly.autobahn
+package typingsJapgolly.autobahn.mod
 
+import typingsJapgolly.autobahn.mod.^
+import typingsJapgolly.when.When.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  // Workaround to get intellisense on type unions of 'literals' | string. 
-  // See https://github.com/Microsoft/TypeScript/issues/29729
-  type CustomTransportType = java.lang.String with js.Object
-  type DeferFactory = js.Function0[typingsJapgolly.when.When.Promise_[js.Any]]
-  type OnChallengeHandler = js.Function3[
-    /* session */ typingsJapgolly.autobahn.mod.Session, 
-    /* method */ java.lang.String, 
-    /* extra */ js.Any, 
-    java.lang.String | typingsJapgolly.when.When.Promise_[java.lang.String]
-  ]
-  type RegisterEndpoint = js.Function3[
-    /* args */ js.UndefOr[js.Array[js.Any]], 
-    /* kwargs */ js.UndefOr[js.Any], 
-    /* details */ js.UndefOr[typingsJapgolly.autobahn.mod.IInvocation], 
-    scala.Unit
-  ]
-  type SubscribeHandler = js.Function3[
-    /* args */ js.UndefOr[js.Array[js.Any] | js.Any], 
-    /* kwargs */ js.UndefOr[js.Any], 
-    /* details */ js.UndefOr[typingsJapgolly.autobahn.mod.IEvent], 
-    scala.Unit
-  ]
-  type TransportType = typingsJapgolly.autobahn.mod.DefaultTransportType | typingsJapgolly.autobahn.mod.CustomTransportType
-}
+
+inline def authCra: IAuthCra = ^.asInstanceOf[js.Dynamic].selectDynamic("auth_cra").asInstanceOf[IAuthCra]
+inline def authCra_=(x: IAuthCra): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auth_cra")(x.asInstanceOf[js.Any])
+
+inline def log: ILog = ^.asInstanceOf[js.Dynamic].selectDynamic("log").asInstanceOf[ILog]
+inline def log_=(x: ILog): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
+
+inline def transports: ITransports = ^.asInstanceOf[js.Dynamic].selectDynamic("transports").asInstanceOf[ITransports]
+inline def transports_=(x: ITransports): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transports")(x.asInstanceOf[js.Any])
+
+inline def util: IUtil = ^.asInstanceOf[js.Dynamic].selectDynamic("util").asInstanceOf[IUtil]
+inline def util_=(x: IUtil): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("util")(x.asInstanceOf[js.Any])
+
+type DeferFactory = js.Function0[Promise[Any]]
+
+type OnChallengeHandler = js.Function3[
+/* session */ Session, 
+/* method */ String, 
+/* extra */ Any, 
+String | (js.Tuple2[String, Any]) | (Promise[String | (js.Tuple2[String, Any])])]
+
+type OnInternalErrorHandler = js.Function2[/* error */ js.Object | Error, /* error_message */ js.UndefOr[String], Unit]
+
+type OnUserErrorHandler = js.Function2[/* error */ js.Object | Error, /* error_message */ js.UndefOr[String], Unit]
+
+type RegisterEndpoint[TResult, TArgs, TKWArgs] = js.Function3[
+/* args */ js.UndefOr[TArgs], 
+/* kwargs */ js.UndefOr[TKWArgs], 
+/* details */ js.UndefOr[IInvocation], 
+TResult]
+
+type SubscribeHandler[TArgs, TKWArgs, TName] = js.Function3[
+/* args */ js.UndefOr[TArgs], 
+/* kwargs */ js.UndefOr[TKWArgs], 
+/* details */ js.UndefOr[IEvent[TName]], 
+Unit]

@@ -2,175 +2,165 @@ package typingsJapgolly.swaggerSchemaOfficial
 
 import typingsJapgolly.swaggerSchemaOfficial.mod.ParameterCollectionFormat
 import typingsJapgolly.swaggerSchemaOfficial.mod.ParameterType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swaggerSchemaOfficialStrings {
-  @js.native
-  sealed trait _empty extends js.Object
   
   @js.native
-  sealed trait accessCode extends js.Object
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait apiKey extends js.Object
+  sealed trait accessCode extends StObject
+  inline def accessCode: accessCode = "accessCode".asInstanceOf[accessCode]
   
   @js.native
-  sealed trait application extends js.Object
+  sealed trait apiKey extends StObject
+  inline def apiKey: apiKey = "apiKey".asInstanceOf[apiKey]
   
   @js.native
-  sealed trait array extends ParameterType
+  sealed trait application extends StObject
+  inline def application: application = "application".asInstanceOf[application]
   
   @js.native
-  sealed trait basic extends js.Object
+  sealed trait array
+    extends StObject
+       with ParameterType
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait binary extends js.Object
+  sealed trait basic extends StObject
+  inline def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
-  sealed trait body extends js.Object
+  sealed trait binary extends StObject
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
-  sealed trait boolean extends ParameterType
+  sealed trait body extends StObject
+  inline def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait byte extends js.Object
+  sealed trait boolean
+    extends StObject
+       with ParameterType
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait csv extends ParameterCollectionFormat
+  sealed trait byte extends StObject
+  inline def byte: byte = "byte".asInstanceOf[byte]
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait csv
+    extends StObject
+       with ParameterCollectionFormat
+  inline def csv: csv = "csv".asInstanceOf[csv]
   
   @js.native
-  sealed trait `date-time` extends js.Object
+  sealed trait date extends StObject
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait double extends js.Object
+  sealed trait `date-time` extends StObject
+  inline def `date-time`: `date-time` = "date-time".asInstanceOf[`date-time`]
   
   @js.native
-  sealed trait file extends ParameterType
+  sealed trait double extends StObject
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
-  sealed trait float extends js.Object
+  sealed trait file
+    extends StObject
+       with ParameterType
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait formData extends js.Object
+  sealed trait float extends StObject
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
-  sealed trait header extends js.Object
+  sealed trait formData extends StObject
+  inline def formData: formData = "formData".asInstanceOf[formData]
   
   @js.native
-  sealed trait `implicit` extends js.Object
+  sealed trait header extends StObject
+  inline def header: header = "header".asInstanceOf[header]
   
   @js.native
-  sealed trait int32 extends js.Object
+  sealed trait `implicit` extends StObject
+  inline def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   
   @js.native
-  sealed trait int64 extends js.Object
+  sealed trait int32 extends StObject
+  inline def int32: int32 = "int32".asInstanceOf[int32]
   
   @js.native
-  sealed trait integer extends ParameterType
+  sealed trait int64 extends StObject
+  inline def int64: int64 = "int64".asInstanceOf[int64]
   
   @js.native
-  sealed trait multi extends ParameterCollectionFormat
+  sealed trait integer
+    extends StObject
+       with ParameterType
+  inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
-  sealed trait number extends ParameterType
+  sealed trait multi
+    extends StObject
+       with ParameterCollectionFormat
+  inline def multi: multi = "multi".asInstanceOf[multi]
   
   @js.native
-  sealed trait oauth2 extends js.Object
+  sealed trait number
+    extends StObject
+       with ParameterType
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait `object` extends ParameterType
+  sealed trait oauth2 extends StObject
+  inline def oauth2: oauth2 = "oauth2".asInstanceOf[oauth2]
   
   @js.native
-  sealed trait password extends js.Object
+  sealed trait `object`
+    extends StObject
+       with ParameterType
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait path extends js.Object
+  sealed trait password extends StObject
+  inline def password: password = "password".asInstanceOf[password]
   
   @js.native
-  sealed trait pipes extends ParameterCollectionFormat
+  sealed trait path extends StObject
+  inline def path: path = "path".asInstanceOf[path]
   
   @js.native
-  sealed trait query extends js.Object
+  sealed trait pipes
+    extends StObject
+       with ParameterCollectionFormat
+  inline def pipes: pipes = "pipes".asInstanceOf[pipes]
   
   @js.native
-  sealed trait ssv extends ParameterCollectionFormat
+  sealed trait query extends StObject
+  inline def query: query = "query".asInstanceOf[query]
   
   @js.native
-  sealed trait string extends ParameterType
+  sealed trait ssv
+    extends StObject
+       with ParameterCollectionFormat
+  inline def ssv: ssv = "ssv".asInstanceOf[ssv]
   
   @js.native
-  sealed trait tsv extends ParameterCollectionFormat
+  sealed trait string
+    extends StObject
+       with ParameterType
+  inline def string: string = "string".asInstanceOf[string]
   
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def accessCode: accessCode = "accessCode".asInstanceOf[accessCode]
-  @scala.inline
-  def apiKey: apiKey = "apiKey".asInstanceOf[apiKey]
-  @scala.inline
-  def application: application = "application".asInstanceOf[application]
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def byte: byte = "byte".asInstanceOf[byte]
-  @scala.inline
-  def csv: csv = "csv".asInstanceOf[csv]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def `date-time`: `date-time` = "date-time".asInstanceOf[`date-time`]
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
-  @scala.inline
-  def formData: formData = "formData".asInstanceOf[formData]
-  @scala.inline
-  def header: header = "header".asInstanceOf[header]
-  @scala.inline
-  def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
-  @scala.inline
-  def int32: int32 = "int32".asInstanceOf[int32]
-  @scala.inline
-  def int64: int64 = "int64".asInstanceOf[int64]
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
-  @scala.inline
-  def multi: multi = "multi".asInstanceOf[multi]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def oauth2: oauth2 = "oauth2".asInstanceOf[oauth2]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def password: password = "password".asInstanceOf[password]
-  @scala.inline
-  def path: path = "path".asInstanceOf[path]
-  @scala.inline
-  def pipes: pipes = "pipes".asInstanceOf[pipes]
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
-  @scala.inline
-  def ssv: ssv = "ssv".asInstanceOf[ssv]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def tsv: tsv = "tsv".asInstanceOf[tsv]
+  @js.native
+  sealed trait tsv
+    extends StObject
+       with ParameterCollectionFormat
+  inline def tsv: tsv = "tsv".asInstanceOf[tsv]
 }
-

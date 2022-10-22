@@ -1,32 +1,45 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnnotationsMeasureTypeBackgroundOptions extends js.Object {
+trait AnnotationsMeasureTypeBackgroundOptions extends StObject {
+  
   /**
     * (Highstock) The color of the rectangle.
     */
   var fill: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) The color of border.
     */
-  var stroke: js.UndefOr[js.Any] = js.undefined
+  var stroke: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) The width of border.
     */
   var strokeWidth: js.UndefOr[Double] = js.undefined
 }
-
 object AnnotationsMeasureTypeBackgroundOptions {
-  @scala.inline
-  def apply(fill: String = null, stroke: js.Any = null, strokeWidth: Int | Double = null): AnnotationsMeasureTypeBackgroundOptions = {
+  
+  inline def apply(): AnnotationsMeasureTypeBackgroundOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsMeasureTypeBackgroundOptions]
   }
+  
+  extension [Self <: AnnotationsMeasureTypeBackgroundOptions](x: Self) {
+    
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+  }
 }
-

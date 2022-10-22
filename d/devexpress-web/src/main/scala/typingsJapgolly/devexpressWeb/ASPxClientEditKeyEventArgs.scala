@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client events involved with a key being pressed or released.
   */
-@JSGlobal("ASPxClientEditKeyEventArgs")
-@js.native
-class ASPxClientEditKeyEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientEditKeyEventArgs object.
-    * @param htmlEvent A DHTML event object that relates to the processed event.
-    */
-  def this(htmlEvent: js.Any) = this()
+trait ASPxClientEditKeyEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any
 }
-
+object ASPxClientEditKeyEventArgs {
+  
+  inline def apply(htmlEvent: Any): ASPxClientEditKeyEventArgs = {
+    val __obj = js.Dynamic.literal(htmlEvent = htmlEvent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientEditKeyEventArgs]
+  }
+  
+  extension [Self <: ASPxClientEditKeyEventArgs](x: Self) {
+    
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+  }
+}

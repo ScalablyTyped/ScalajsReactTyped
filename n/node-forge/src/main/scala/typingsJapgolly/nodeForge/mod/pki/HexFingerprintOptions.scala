@@ -1,33 +1,28 @@
 package typingsJapgolly.nodeForge.mod.pki
 
-import typingsJapgolly.nodeForge.mod.md.MessageDigest
-import typingsJapgolly.nodeForge.nodeForgeStrings.RSAPublicKey
-import typingsJapgolly.nodeForge.nodeForgeStrings.SubjectPublicKeyInfo
 import typingsJapgolly.nodeForge.nodeForgeStrings.hex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HexFingerprintOptions extends ByteBufferFingerprintOptions {
+trait HexFingerprintOptions
+  extends StObject
+     with ByteBufferFingerprintOptions {
+  
   /**
     * @description if not specified, the function will return `ByteStringBuffer`
     */
   var encoding: hex
 }
-
 object HexFingerprintOptions {
-  @scala.inline
-  def apply(
-    encoding: hex,
-    delimiter: String = null,
-    md: MessageDigest = null,
-    `type`: SubjectPublicKeyInfo | RSAPublicKey = null
-  ): HexFingerprintOptions = {
-    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  
+  inline def apply(): HexFingerprintOptions = {
+    val __obj = js.Dynamic.literal(encoding = "hex")
     __obj.asInstanceOf[HexFingerprintOptions]
   }
+  
+  extension [Self <: HexFingerprintOptions](x: Self) {
+    
+    inline def setEncoding(value: hex): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+  }
 }
-

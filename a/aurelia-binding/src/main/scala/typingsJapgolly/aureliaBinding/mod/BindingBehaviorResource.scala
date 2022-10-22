@@ -1,22 +1,25 @@
 package typingsJapgolly.aureliaBinding.mod
 
 import typingsJapgolly.aureliaDependencyInjection.mod.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-binding", "BindingBehaviorResource")
 @js.native
-class BindingBehaviorResource protected () extends js.Object {
+open class BindingBehaviorResource protected () extends StObject {
   def this(name: String) = this()
-  def initialize(container: Container, target: js.Any): Unit = js.native
-  def register(registry: js.Any, name: String): Unit = js.native
+  
+  def initialize(container: Container, target: Any): Unit = js.native
+  
+  def register(registry: Any, name: String): Unit = js.native
 }
-
 /* static members */
-@JSImport("aurelia-binding", "BindingBehaviorResource")
-@js.native
-object BindingBehaviorResource extends js.Object {
-  def convention(name: String): BindingBehaviorResource = js.native
+object BindingBehaviorResource {
+  
+  @JSImport("aurelia-binding", "BindingBehaviorResource")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def convention(name: String): BindingBehaviorResource = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any]).asInstanceOf[BindingBehaviorResource]
 }
-

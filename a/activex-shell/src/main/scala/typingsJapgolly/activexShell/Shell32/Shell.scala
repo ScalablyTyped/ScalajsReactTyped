@@ -9,25 +9,23 @@ import typingsJapgolly.activexShell.activexShellStrings.PhysicalMemoryInstalled
 import typingsJapgolly.activexShell.activexShellStrings.ProcessorArchitecture
 import typingsJapgolly.activexShell.activexShellStrings.ProcessorLevel
 import typingsJapgolly.activexShell.activexShellStrings.ProcessorSpeed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Shell Object Type Information */
-@JSGlobal("Shell32.Shell")
 @js.native
-class Shell protected () extends js.Object {
-  /** Get Application object */
-  val Application: js.Any = js.native
-  /** Get Parent object */
-  val Parent: js.Any = js.native
-  @JSName("Shell32.Shell_typekey")
-  var Shell32DotShell_typekey: Shell = js.native
-  def AddToRecent(): Unit = js.native
+trait Shell extends StObject {
+  
   /** Add an object to the Recent Docuements */
+  def AddToRecent(): Unit = js.native
   def AddToRecent(varFile: String): Unit = js.native
   def AddToRecent(varFile: String, bstrCategory: String): Unit = js.native
   def AddToRecent(varFile: Null, bstrCategory: String): Unit = js.native
+  
+  /** Get Application object */
+  val Application: Any = js.native
+  
   /** Browse the name space for a Folder */
   def BrowseForFolder(Hwnd: Double, Title: String, Options: Double): Folder3 = js.native
   def BrowseForFolder(Hwnd: Double, Title: String, Options: Double, RootFolder: String): Folder3 = js.native
@@ -35,10 +33,13 @@ class Shell protected () extends js.Object {
   def BrowseForFolder(Hwnd: Double, Title: String, Options: BrowseInfoFlags): Folder3 = js.native
   def BrowseForFolder(Hwnd: Double, Title: String, Options: BrowseInfoFlags, RootFolder: String): Folder3 = js.native
   def BrowseForFolder(Hwnd: Double, Title: String, Options: BrowseInfoFlags, RootFolder: ShellSpecialFolderConstants): Folder3 = js.native
+  
   /** Determine if the current user can start/stop the named service. */
   def CanStartStopService(ServiceName: String): Boolean = js.native
+  
   /** Cascade Windows */
   def CascadeWindows(): Unit = js.native
+  
   /*
     * Runs the specified Control Panel (*.cpl) application. If the application is already open, it will activate the running instance.
     *
@@ -48,43 +49,45 @@ class Shell protected () extends js.Object {
     *     `control.exe /name Microsoft.Personalization`
     */
   def ControlPanelItem(bstrDir: String): Unit = js.native
+  
   /** Eject the pc */
   def EjectPC(): Unit = js.native
+  
   /** Explore a folder */
   def Explore(vDir: String): Unit = js.native
   def Explore(vDir: ShellSpecialFolderConstants): Unit = js.native
+  
   /**
     * Return explorer policy value
     *
     * The specified value name must be within the **HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer** subkey.
     * If the value name does not exist then the method returns null.
     */
-  def ExplorerPolicy(bstrPolicyName: String): js.Any = js.native
+  def ExplorerPolicy(bstrPolicyName: String): Any = js.native
+  
   /** Bring up the file run dialog box */
   def FileRun(): Unit = js.native
+  
   /** Find a computer */
   def FindComputer(): Unit = js.native
+  
   /** Find Files */
   def FindFiles(): Unit = js.native
+  
   /** Find a Printer in the Directory Service */
   def FindPrinter(): Unit = js.native
   def FindPrinter(Name: String): Unit = js.native
   def FindPrinter(Name: String, location: String): Unit = js.native
   def FindPrinter(Name: String, location: String, model: String): Unit = js.native
+  def FindPrinter(Name: String, location: Unit, model: String): Unit = js.native
+  def FindPrinter(Name: Unit, location: String): Unit = js.native
+  def FindPrinter(Name: Unit, location: String, model: String): Unit = js.native
+  def FindPrinter(Name: Unit, location: Unit, model: String): Unit = js.native
+  
   /** Return shell global setting */
   def GetSetting(lSetting: Double): Boolean = js.native
   def GetSetting(lSetting: SettingKey): Boolean = js.native
-  /**
-    * `DirectoryServiceAvailable` -- Returns **true** if the directory service is available
-    *
-    * `IsOS_DomainMember` -- Returns **true** if the computer is a member of a domain (_Windows XP and later_)
-    *
-    * `IsOS_Personal` -- Returns **true** if the operating system is Windows XP Home Edition (_Windows XP only_)
-    *
-    * `IsOS_Professional` -- Returns **true** if the operating system is Windows XP Professional Edition (_Windows XP only_)
-    */
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_DirectoryServiceAvailable(Name: DirectoryServiceAvailable): Boolean = js.native
+  
   /**
     * `DoubleClickTime` -- The double-click time, in milliseconds
     *
@@ -97,40 +100,50 @@ class Shell protected () extends js.Object {
     *
     * `ProcessorSpeed` -- The processor speed, in megahertz (MHz)
     */
+  def GetSystemInformation(
+    Name: DoubleClickTime | PhysicalMemoryInstalled | ProcessorArchitecture | ProcessorLevel | ProcessorSpeed
+  ): Double = js.native
+  /**
+    * `DirectoryServiceAvailable` -- Returns **true** if the directory service is available
+    *
+    * `IsOS_DomainMember` -- Returns **true** if the computer is a member of a domain (_Windows XP and later_)
+    *
+    * `IsOS_Personal` -- Returns **true** if the operating system is Windows XP Home Edition (_Windows XP only_)
+    *
+    * `IsOS_Professional` -- Returns **true** if the operating system is Windows XP Professional Edition (_Windows XP only_)
+    */
   @JSName("GetSystemInformation")
-  def GetSystemInformation_DoubleClickTime(Name: DoubleClickTime): Double = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_IsOSDomainMember(Name: IsOS_DomainMember): Boolean = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_IsOSPersonal(Name: IsOS_Personal): Boolean = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_IsOSProfessional(Name: IsOS_Professional): Boolean = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_PhysicalMemoryInstalled(Name: PhysicalMemoryInstalled): Double = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_ProcessorArchitecture(Name: ProcessorArchitecture): Double = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_ProcessorLevel(Name: ProcessorLevel): Double = js.native
-  @JSName("GetSystemInformation")
-  def GetSystemInformation_ProcessorSpeed(Name: ProcessorSpeed): Double = js.native
+  def GetSystemInformation_Boolean(Name: DirectoryServiceAvailable | IsOS_DomainMember | IsOS_Personal | IsOS_Professional): Boolean = js.native
+  
   /** Display shell help */
   def Help(): Unit = js.native
+  
   /** get restriction settings */
   def IsRestricted(Group: String, Restriction: String): Double = js.native
+  
   /** Determine if a service is running by name. */
-  def IsServiceRunning(ServiceName: String): js.Any = js.native
+  def IsServiceRunning(ServiceName: String): Any = js.native
+  
   /** Minimize all windows */
   def MinimizeAll(): Unit = js.native
+  
   /** Get special folder from ShellSpecialFolderConstants */
   def NameSpace(vDir: String): Folder3 | Null = js.native
   def NameSpace(vDir: ShellSpecialFolderConstants): Folder3 | Null = js.native
+  
   /** Open a folder */
   def Open(vDir: String): Unit = js.native
   def Open(vDir: ShellSpecialFolderConstants): Unit = js.native
+  
+  /** Get Parent object */
+  val Parent: Any = js.native
+  
   /** Refresh the menu */
   def RefreshMenu(): Unit = js.native
+  
   /** Immersive Search */
   def SearchCommand(): Unit = js.native
+  
   /**
     * Start a service by name, and optionally set it to autostart.
     *
@@ -139,6 +152,7 @@ class Shell protected () extends js.Object {
     */
   def ServiceStart(ServiceName: String): Boolean = js.native
   def ServiceStart(ServiceName: String, Persistent: Boolean): Boolean = js.native
+  
   /**
     * Stop a service by name, and optionally disable autostart.
     *
@@ -147,8 +161,13 @@ class Shell protected () extends js.Object {
     */
   def ServiceStop(ServiceName: String): Boolean = js.native
   def ServiceStop(ServiceName: String, Persistent: Boolean): Boolean = js.native
+  
   /** Displays the **Date and Time Properties** dialog box. */
   def SetTime(): Unit = js.native
+  
+  /* private */ @JSName("Shell32.Shell_typekey")
+  var Shell32DotShell_typekey: Shell = js.native
+  
   /**
     * Execute generic command
     * @param sFile A string that contains the name of the file on which `ShellExecute` will perform the action specified by `vOperation`.
@@ -163,25 +182,45 @@ class Shell protected () extends js.Object {
   def ShellExecute(File: String, vArgs: String, vDir: String): Unit = js.native
   def ShellExecute(File: String, vArgs: String, vDir: String, vOperation: String): Unit = js.native
   def ShellExecute(File: String, vArgs: String, vDir: String, vOperation: String, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: String, vDir: String, vOperation: Unit, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: String, vDir: Unit, vOperation: String): Unit = js.native
+  def ShellExecute(File: String, vArgs: String, vDir: Unit, vOperation: String, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: String, vDir: Unit, vOperation: Unit, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: String): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: String, vOperation: String): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: String, vOperation: String, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: String, vOperation: Unit, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: Unit, vOperation: String): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: Unit, vOperation: String, vShow: ShellExecuteShow): Unit = js.native
+  def ShellExecute(File: String, vArgs: Unit, vDir: Unit, vOperation: Unit, vShow: ShellExecuteShow): Unit = js.native
+  
   /** Show/Hide browser bar. */
-  def ShowBrowserBar(bstrClsid: ExplorerBarCLSID, bShow: Boolean): js.Any = js.native
+  def ShowBrowserBar(bstrClsid: ExplorerBarCLSID, bShow: Boolean): Any = js.native
+  
   /** Exit Windows */
   def ShutdownWindows(): Unit = js.native
+  
   /** Tile windows horizontally */
   def TileHorizontally(): Unit = js.native
+  
   /** Tile windows vertically */
   def TileVertically(): Unit = js.native
+  
   /** Raise/lower the desktop */
   def ToggleDesktop(): Unit = js.native
+  
   /** Displays the **Taskbar and Start Menu Properties** dialog box. */
   def TrayProperties(): Unit = js.native
+  
   /** Undo Minimize All */
   def UndoMinimizeALL(): Unit = js.native
+  
   /** Displays your open windows in a 3D stack that you can flip through. */
   def WindowSwitcher(): Unit = js.native
+  
   /** The collection of open folder windows */
   def Windows(): ShellWindows = js.native
+  
   /** Displays the **Windows Security** dialog box. */
   def WindowsSecurity(): Unit = js.native
 }
-

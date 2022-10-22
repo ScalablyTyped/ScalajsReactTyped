@@ -1,13 +1,12 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "ImageLoader")
 @js.native
-class ImageLoader ()
-  extends typingsJapgolly.three.imageLoaderMod.ImageLoader {
-  def this(manager: typingsJapgolly.three.loadingManagerMod.LoadingManager) = this()
+open class ImageLoader ()
+  extends typingsJapgolly.three.srcThreeMod.ImageLoader {
+  def this(manager: typingsJapgolly.three.srcLoadersLoadingManagerMod.LoadingManager) = this()
 }
-

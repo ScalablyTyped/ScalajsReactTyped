@@ -1,47 +1,45 @@
 package typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EntityAvailabilityStatus extends js.Object
-
+sealed trait EntityAvailabilityStatus extends StObject
 @JSImport("azure-sb", "Azure.ServiceBus.Results.Models.EntityAvailabilityStatus")
 @js.native
-object EntityAvailabilityStatus extends js.Object {
-  @js.native
-  sealed trait Available extends EntityAvailabilityStatus
-  
-  @js.native
-  sealed trait Limited extends EntityAvailabilityStatus
-  
-  @js.native
-  sealed trait Renaming extends EntityAvailabilityStatus
-  
-  @js.native
-  sealed trait Restoring extends EntityAvailabilityStatus
-  
-  @js.native
-  sealed trait Unknown extends EntityAvailabilityStatus
+object EntityAvailabilityStatus extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[EntityAvailabilityStatus with String] = js.native
-  /* "Available" */ @js.native
-  object Available extends TopLevel[Available with String]
+  def apply(value: String): js.UndefOr[EntityAvailabilityStatus & String] = js.native
   
-  /* "Limited" */ @js.native
-  object Limited extends TopLevel[Limited with String]
+  @js.native
+  sealed trait Available
+    extends StObject
+       with EntityAvailabilityStatus
+  /* "Available" */ val Available: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityAvailabilityStatus.Available & String = js.native
   
-  /* "Renaming" */ @js.native
-  object Renaming extends TopLevel[Renaming with String]
+  @js.native
+  sealed trait Limited
+    extends StObject
+       with EntityAvailabilityStatus
+  /* "Limited" */ val Limited: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityAvailabilityStatus.Limited & String = js.native
   
-  /* "Restoring" */ @js.native
-  object Restoring extends TopLevel[Restoring with String]
+  @js.native
+  sealed trait Renaming
+    extends StObject
+       with EntityAvailabilityStatus
+  /* "Renaming" */ val Renaming: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityAvailabilityStatus.Renaming & String = js.native
   
-  /* "Unknown" */ @js.native
-  object Unknown extends TopLevel[Unknown with String]
+  @js.native
+  sealed trait Restoring
+    extends StObject
+       with EntityAvailabilityStatus
+  /* "Restoring" */ val Restoring: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityAvailabilityStatus.Restoring & String = js.native
   
+  @js.native
+  sealed trait Unknown
+    extends StObject
+       with EntityAvailabilityStatus
+  /* "Unknown" */ val Unknown: typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.EntityAvailabilityStatus.Unknown & String = js.native
 }
-

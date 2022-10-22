@@ -1,21 +1,25 @@
 package typingsJapgolly.cloner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cloner", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  object deep extends js.Object {
+object mod {
+  
+  object deep {
+    
+    @JSImport("cloner", "deep")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Will loop over all own keys and deeply copy (copy by value) them to a new object.
       *
       * Preserves inheritance and is recursion aware, meaning it shouldn't fail with recursive properties.
       * @param [obj] The object to copy.
       */
-    def copy[T](obj: T): T = js.native
+    inline def copy[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
+    
     /**
       * Preserves what's already in the target and merges all own keys found in one or more passed sources.
       *
@@ -23,18 +27,23 @@ object mod extends js.Object {
       * @param [target] Destination object for merged properties.
       * @param [sources] Source object(s) for properties to merge.
       */
-    def merge(target: js.Any, sources: js.Any*): js.Any = js.native
+    inline def merge(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   }
   
-  @js.native
-  object shallow extends js.Object {
+  object shallow {
+    
+    @JSImport("cloner", "shallow")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Will loop over all own keys and shallow copy (copy by reference) them to a new object.
       *
       * Preserves inheritance and is recursion aware, meaning it shouldn't fail with recursive properties.
       * @param [obj] The object to copy.
       */
-    def copy[T](obj: T): T = js.native
+    inline def copy[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
+    
     /**
       * Preserves what's already in the target and merges all own keys found in one or more passed sources.
       *
@@ -42,8 +51,6 @@ object mod extends js.Object {
       * @param [target] Destination object for merged properties.
       * @param [sources] Source object(s) for properties to merge.
       */
-    def merge(target: js.Any, sources: js.Any*): js.Any = js.native
+    inline def merge(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   }
-  
 }
-

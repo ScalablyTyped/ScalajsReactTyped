@@ -1,23 +1,19 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4132`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4133`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4132`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4133`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4132`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4133`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4132`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4133`
 */
-trait XlScaleType extends js.Object
-
+trait XlScaleType extends StObject
 object XlScaleType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlScaleLinear: `-4132` = this.cast(-4132)
-  @scala.inline
-  def xlScaleLogarithmic: `-4133` = this.cast(-4133)
+  
+  inline def xlScaleLinear: `-4132` = -4132.asInstanceOf[`-4132`]
+  
+  inline def xlScaleLogarithmic: `-4133` = -4133.asInstanceOf[`-4133`]
 }
-

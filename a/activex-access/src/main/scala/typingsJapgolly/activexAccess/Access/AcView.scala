@@ -1,43 +1,39 @@
 package typingsJapgolly.activexAccess.Access
 
-import typingsJapgolly.activexAccess.activexAccessNumbers.`0`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`1`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`2`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`3`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`4`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`5`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`6`
+import typingsJapgolly.activexAccess.activexAccessInts.`0`
+import typingsJapgolly.activexAccess.activexAccessInts.`1`
+import typingsJapgolly.activexAccess.activexAccessInts.`2`
+import typingsJapgolly.activexAccess.activexAccessInts.`3`
+import typingsJapgolly.activexAccess.activexAccessInts.`4`
+import typingsJapgolly.activexAccess.activexAccessInts.`5`
+import typingsJapgolly.activexAccess.activexAccessInts.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`1`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`6`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`0`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`4`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`3`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`2`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`5`
+  - typingsJapgolly.activexAccess.activexAccessInts.`1`
+  - typingsJapgolly.activexAccess.activexAccessInts.`6`
+  - typingsJapgolly.activexAccess.activexAccessInts.`0`
+  - typingsJapgolly.activexAccess.activexAccessInts.`4`
+  - typingsJapgolly.activexAccess.activexAccessInts.`3`
+  - typingsJapgolly.activexAccess.activexAccessInts.`2`
+  - typingsJapgolly.activexAccess.activexAccessInts.`5`
 */
-trait AcView extends js.Object
-
+trait AcView extends StObject
 object AcView {
-  @scala.inline
-  def acViewDesign: `1` = this.cast(1)
-  @scala.inline
-  def acViewLayout: `6` = this.cast(6)
-  @scala.inline
-  def acViewNormal: `0` = this.cast(0)
-  @scala.inline
-  def acViewPivotChart: `4` = this.cast(4)
-  @scala.inline
-  def acViewPivotTable: `3` = this.cast(3)
-  @scala.inline
-  def acViewPreview: `2` = this.cast(2)
-  @scala.inline
-  def acViewReport: `5` = this.cast(5)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def acViewDesign: `1` = 1.asInstanceOf[`1`]
+  
+  inline def acViewLayout: `6` = 6.asInstanceOf[`6`]
+  
+  inline def acViewNormal: `0` = 0.asInstanceOf[`0`]
+  
+  inline def acViewPivotChart: `4` = 4.asInstanceOf[`4`]
+  
+  inline def acViewPivotTable: `3` = 3.asInstanceOf[`3`]
+  
+  inline def acViewPreview: `2` = 2.asInstanceOf[`2`]
+  
+  inline def acViewReport: `5` = 5.asInstanceOf[`5`]
 }
-

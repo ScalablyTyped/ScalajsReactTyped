@@ -1,33 +1,48 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockChartSeriesItemHighlight extends js.Object {
+trait StockChartSeriesItemHighlight extends StObject {
+  
   var border: js.UndefOr[StockChartSeriesItemHighlightBorder] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var line: js.UndefOr[StockChartSeriesItemHighlightLine] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object StockChartSeriesItemHighlight {
-  @scala.inline
-  def apply(
-    border: StockChartSeriesItemHighlightBorder = null,
-    color: String = null,
-    line: StockChartSeriesItemHighlightLine = null,
-    opacity: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): StockChartSeriesItemHighlight = {
+  
+  inline def apply(): StockChartSeriesItemHighlight = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartSeriesItemHighlight]
   }
+  
+  extension [Self <: StockChartSeriesItemHighlight](x: Self) {
+    
+    inline def setBorder(value: StockChartSeriesItemHighlightBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setLine(value: StockChartSeriesItemHighlightLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

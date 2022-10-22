@@ -1,63 +1,102 @@
 package typingsJapgolly.materialDataTable
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalajs.dom.Event
 import typingsJapgolly.materialBase.foundationMod.MDCFoundation
 import typingsJapgolly.materialDataTable.adapterMod.MDCDataTableAdapter
-import typingsJapgolly.std.Event_
+import typingsJapgolly.materialDataTable.anon.PartialMDCDataTableAdapte
+import typingsJapgolly.materialDataTable.typesMod.RowClickEventData
+import typingsJapgolly.materialDataTable.typesMod.SortActionEventData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/data-table/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
+  
+  @JSImport("@material/data-table/foundation", "MDCDataTableFoundation")
   @js.native
-  class MDCDataTableFoundation () extends MDCFoundation[MDCDataTableAdapter] {
+  open class MDCDataTableFoundation () extends MDCFoundation[MDCDataTableAdapter] {
     def this(adapter: PartialMDCDataTableAdapte) = this()
-    // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
-    /* CompleteClass */
-    override def destroy(): Unit = js.native
+    
+    /**
+      * @return Array of header cell elements.
+      */
+    def getHeaderCells(): js.Array[Element] = js.native
+    
+    /**
+      * @return Returns array of all row ids.
+      */
+    def getRowIds(): js.Array[String | Null] = js.native
+    
     /**
       * @return Returns array of row elements.
       */
     def getRows(): js.Array[Element] = js.native
+    
     /**
       * @return Returns array of selected row ids.
       */
     def getSelectedRowIds(): js.Array[String | Null] = js.native
+    
     /**
       * Handles header row checkbox change event.
       */
     def handleHeaderRowCheckboxChange(): Unit = js.native
+    
     /**
       * Handles change event originated from row checkboxes.
       */
-    def handleRowCheckboxChange(event: Event_): Unit = js.native
-    // Subclasses should override this method to perform initialization routines (registering events, etc.)
-    /* CompleteClass */
-    override def init(): Unit = js.native
+    def handleRowCheckboxChange(event: Event): Unit = js.native
+    
     /**
-      * Re-initializes header row checkbox and row checkboxes when selectable rows are added or removed from table.
-      * Use this if registering checkbox is synchronous.
+      * Handles data table row click event.
+      */
+    def handleRowClick(hasRowIdRow: RowClickEventData): Unit = js.native
+    
+    /**
+      * Handles sort action on sortable header cell.
+      */
+    def handleSortAction(eventData: SortActionEventData): Unit = js.native
+    
+    /**
+      * Hides progress indicator when data table is finished loading.
+      */
+    def hideProgress(): Unit = js.native
+    
+    /**
+      * Re-initializes header row checkbox and row checkboxes when selectable rows
+      * are added or removed from table. Use this if registering checkbox is
+      * synchronous.
       */
     def layout(): Unit = js.native
+    
     /**
-      * Re-initializes header row checkbox and row checkboxes when selectable rows are added or removed from table.
-      * Use this if registering checkbox is asynchronous.
+      * Re-initializes header row checkbox and row checkboxes when selectable rows
+      * are added or removed from table. Use this if registering checkbox is
+      * asynchronous.
       */
     def layoutAsync(): js.Promise[Unit] = js.native
+    
+    /**
+      * Sets the attributes of row element based on selection state.
+      */
+    /* private */ var selectRowAtIndex: Any = js.native
+    
+    /**
+      * Updates header row checkbox state based on number of rows selected.
+      */
+    /* private */ var setHeaderRowCheckboxState: Any = js.native
+    
     /**
       * Sets selected row ids. Overwrites previously selected rows.
       * @param rowIds Array of row ids that needs to be selected.
       */
     def setSelectedRowIds(rowIds: js.Array[String]): Unit = js.native
+    
+    /**
+      * Shows progress indicator blocking only the table body content when in
+      * loading state.
+      */
+    def showProgress(): Unit = js.native
   }
-  
-  /* static members */
-  @js.native
-  object MDCDataTableFoundation extends js.Object {
-    val defaultAdapter: MDCDataTableAdapter = js.native
-  }
-  
 }
-

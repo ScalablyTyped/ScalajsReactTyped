@@ -1,23 +1,36 @@
 package typingsJapgolly.semanticUiReactEventStack
 
+import typingsJapgolly.semanticUiReactEventStack.anon.Name
+import typingsJapgolly.semanticUiReactEventStack.anon.Pool
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@semantic-ui-react/event-stack", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class default ()
-    extends typingsJapgolly.semanticUiReactEventStack.typesEventStackMod.default
+object mod {
   
-  val instance: typingsJapgolly.semanticUiReactEventStack.eventStackMod.default = js.native
-  /* static members */
+  @JSImport("@semantic-ui-react/event-stack", JSImport.Default)
   @js.native
-  object default extends js.Object {
-    var defaultProps: AnonPool = js.native
-    var propTypes: AnonName = js.native
+  open class default ()
+    extends typingsJapgolly.semanticUiReactEventStack.libTypesEventStackMod.default
+  /* static members */
+  object default {
+    
+    @JSImport("@semantic-ui-react/event-stack", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@semantic-ui-react/event-stack", "default.defaultProps")
+    @js.native
+    def defaultProps: Pool = js.native
+    inline def defaultProps_=(x: Pool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@semantic-ui-react/event-stack", "default.propTypes")
+    @js.native
+    def propTypes: Name = js.native
+    inline def propTypes_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@semantic-ui-react/event-stack", "instance")
+  @js.native
+  val instance: typingsJapgolly.semanticUiReactEventStack.libTypesLibEventStackMod.default = js.native
 }
-

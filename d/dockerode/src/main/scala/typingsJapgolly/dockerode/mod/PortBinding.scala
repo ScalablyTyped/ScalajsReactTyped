@@ -1,21 +1,30 @@
 package typingsJapgolly.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PortBinding extends js.Object {
+trait PortBinding extends StObject {
+  
   var HostIp: js.UndefOr[String] = js.undefined
+  
   var HostPort: js.UndefOr[String] = js.undefined
 }
-
 object PortBinding {
-  @scala.inline
-  def apply(HostIp: String = null, HostPort: String = null): PortBinding = {
+  
+  inline def apply(): PortBinding = {
     val __obj = js.Dynamic.literal()
-    if (HostIp != null) __obj.updateDynamic("HostIp")(HostIp.asInstanceOf[js.Any])
-    if (HostPort != null) __obj.updateDynamic("HostPort")(HostPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortBinding]
   }
+  
+  extension [Self <: PortBinding](x: Self) {
+    
+    inline def setHostIp(value: String): Self = StObject.set(x, "HostIp", value.asInstanceOf[js.Any])
+    
+    inline def setHostIpUndefined: Self = StObject.set(x, "HostIp", js.undefined)
+    
+    inline def setHostPort(value: String): Self = StObject.set(x, "HostPort", value.asInstanceOf[js.Any])
+    
+    inline def setHostPortUndefined: Self = StObject.set(x, "HostPort", js.undefined)
+  }
 }
-

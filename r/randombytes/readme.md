@@ -10,10 +10,10 @@ random bytes from browserify stand alone
 | ------------------ | :-------------: |
 | Full name          | randombytes |
 | Keywords           | crypto, random |
-| # releases         | 3 |
-| # dependents       | 428 |
-| # downloads        | 297476004 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7.719353366666667E7 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/crypto-browserify/randombytes)

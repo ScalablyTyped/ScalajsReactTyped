@@ -1,47 +1,37 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BootstrapSchedulerRecurrenceType extends js.Object
-
+sealed trait BootstrapSchedulerRecurrenceType extends StObject
 @JSGlobal("DevExpress.AspNetCore.BootstrapSchedulerRecurrenceType")
 @js.native
-object BootstrapSchedulerRecurrenceType extends js.Object {
-  @js.native
-  sealed trait Daily extends BootstrapSchedulerRecurrenceType
+object BootstrapSchedulerRecurrenceType extends StObject {
   
   @js.native
-  sealed trait Hourly extends BootstrapSchedulerRecurrenceType
+  sealed trait Daily
+    extends StObject
+       with BootstrapSchedulerRecurrenceType
   
   @js.native
-  sealed trait Monthly extends BootstrapSchedulerRecurrenceType
+  sealed trait Hourly
+    extends StObject
+       with BootstrapSchedulerRecurrenceType
   
   @js.native
-  sealed trait Weekly extends BootstrapSchedulerRecurrenceType
+  sealed trait Monthly
+    extends StObject
+       with BootstrapSchedulerRecurrenceType
   
   @js.native
-  sealed trait Yearly extends BootstrapSchedulerRecurrenceType
+  sealed trait Weekly
+    extends StObject
+       with BootstrapSchedulerRecurrenceType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[BootstrapSchedulerRecurrenceType with String] = js.native
-  /* "Daily" */ @js.native
-  object Daily extends TopLevel[Daily with String]
-  
-  /* "Hourly" */ @js.native
-  object Hourly extends TopLevel[Hourly with String]
-  
-  /* "Monthly" */ @js.native
-  object Monthly extends TopLevel[Monthly with String]
-  
-  /* "Weekly" */ @js.native
-  object Weekly extends TopLevel[Weekly with String]
-  
-  /* "Yearly" */ @js.native
-  object Yearly extends TopLevel[Yearly with String]
-  
+  @js.native
+  sealed trait Yearly
+    extends StObject
+       with BootstrapSchedulerRecurrenceType
 }
-

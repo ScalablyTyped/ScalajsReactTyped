@@ -1,24 +1,38 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TeamsAppInstallation extends Entity {
+trait TeamsAppInstallation
+  extends StObject
+     with Entity {
+  
   // The app that is installed.
-  var teamsApp: js.UndefOr[TeamsApp] = js.undefined
+  var teamsApp: js.UndefOr[NullableOption[TeamsApp]] = js.undefined
+  
   // The details of this version of the app.
-  var teamsAppDefinition: js.UndefOr[TeamsAppDefinition] = js.undefined
+  var teamsAppDefinition: js.UndefOr[NullableOption[TeamsAppDefinition]] = js.undefined
 }
-
 object TeamsAppInstallation {
-  @scala.inline
-  def apply(id: String = null, teamsApp: TeamsApp = null, teamsAppDefinition: TeamsAppDefinition = null): TeamsAppInstallation = {
+  
+  inline def apply(): TeamsAppInstallation = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (teamsApp != null) __obj.updateDynamic("teamsApp")(teamsApp.asInstanceOf[js.Any])
-    if (teamsAppDefinition != null) __obj.updateDynamic("teamsAppDefinition")(teamsAppDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAppInstallation]
   }
+  
+  extension [Self <: TeamsAppInstallation](x: Self) {
+    
+    inline def setTeamsApp(value: NullableOption[TeamsApp]): Self = StObject.set(x, "teamsApp", value.asInstanceOf[js.Any])
+    
+    inline def setTeamsAppDefinition(value: NullableOption[TeamsAppDefinition]): Self = StObject.set(x, "teamsAppDefinition", value.asInstanceOf[js.Any])
+    
+    inline def setTeamsAppDefinitionNull: Self = StObject.set(x, "teamsAppDefinition", null)
+    
+    inline def setTeamsAppDefinitionUndefined: Self = StObject.set(x, "teamsAppDefinition", js.undefined)
+    
+    inline def setTeamsAppNull: Self = StObject.set(x, "teamsApp", null)
+    
+    inline def setTeamsAppUndefined: Self = StObject.set(x, "teamsApp", js.undefined)
+  }
 }
-

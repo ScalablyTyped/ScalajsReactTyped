@@ -1,59 +1,51 @@
 package typingsJapgolly.reactOnsenui.components
 
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameDataSource
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactOnsenui.anon.DataSource
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object List {
-  def apply(
-    className: String = null,
-    dataSource: js.Array[_] = null,
-    id: String = null,
-    modifier: String = null,
-    renderFooter: js.UndefOr[CallbackTo[js.UndefOr[Element]]] = js.undefined,
-    renderHeader: js.UndefOr[CallbackTo[js.UndefOr[Element]]] = js.undefined,
-    renderRow: (/* row */ js.Any, /* index */ js.UndefOr[Double]) => CallbackTo[js.UndefOr[Element]] = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    HTMLAttributesidclassNameDataSource, 
-    typingsJapgolly.reactOnsenui.mod.List, 
-    Unit, 
-    HTMLAttributesidclassNameDataSource
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
-    renderFooter.foreach(p => __obj.updateDynamic("renderFooter")(p.toJsFn))
-    renderHeader.foreach(p => __obj.updateDynamic("renderHeader")(p.toJsFn))
-    if (renderRow != null) __obj.updateDynamic("renderRow")(js.Any.fromFunction2((t0: /* row */ js.Any, t1: /* index */ js.UndefOr[scala.Double]) => renderRow(t0, t1).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameDataSource, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactOnsenui.mod.List](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameDataSource])(children: _*)
+  inline def apply[T](): Builder[T] = {
+    val __props = js.Dynamic.literal()
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[HTMLAttributesidclassName & DataSource[T]]))
   }
+  
   @JSImport("react-onsenui", "List")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactOnsenui.mod.List[T]] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def dataSource(value: js.Array[T]): this.type = set("dataSource", value.asInstanceOf[js.Any])
+    
+    inline def dataSourceVarargs(value: T*): this.type = set("dataSource", js.Array(value*))
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def modifier(value: String): this.type = set("modifier", value.asInstanceOf[js.Any])
+    
+    inline def renderFooter(value: CallbackTo[js.UndefOr[Element]]): this.type = set("renderFooter", value.toJsFn)
+    
+    inline def renderHeader(value: CallbackTo[js.UndefOr[Element]]): this.type = set("renderHeader", value.toJsFn)
+    
+    inline def renderRow(value: (T, /* index */ js.UndefOr[Double]) => js.UndefOr[Element]): this.type = set("renderRow", js.Any.fromFunction2(value))
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make[T](companion: List.type): Builder[T] = new Builder[T](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps[T](p: HTMLAttributesidclassName & DataSource[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

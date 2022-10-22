@@ -1,49 +1,68 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ComputedEffectTiming extends EffectTiming {
-  var activeDuration: js.UndefOr[Double] = js.undefined
+trait ComputedEffectTiming
+  extends StObject
+     with EffectTiming {
+  
+  /* standard dom */
+  var activeDuration: js.UndefOr[CSSNumberish] = js.undefined
+  
+  /* standard dom */
   var currentIteration: js.UndefOr[Double | Null] = js.undefined
-  var endTime: js.UndefOr[Double] = js.undefined
-  var localTime: js.UndefOr[Double | Null] = js.undefined
+  
+  /* standard dom */
+  var endTime: js.UndefOr[CSSNumberish] = js.undefined
+  
+  /* standard dom */
+  var localTime: js.UndefOr[CSSNumberish | Null] = js.undefined
+  
+  /* standard dom */
   var progress: js.UndefOr[Double | Null] = js.undefined
+  
+  /* standard dom */
+  var startTime: js.UndefOr[CSSNumberish] = js.undefined
 }
-
 object ComputedEffectTiming {
-  @scala.inline
-  def apply(
-    activeDuration: Int | Double = null,
-    currentIteration: Int | Double = null,
-    delay: Int | Double = null,
-    direction: PlaybackDirection = null,
-    duration: Double | java.lang.String = null,
-    easing: java.lang.String = null,
-    endDelay: Int | Double = null,
-    endTime: Int | Double = null,
-    fill: FillMode = null,
-    iterationStart: Int | Double = null,
-    iterations: Int | Double = null,
-    localTime: Int | Double = null,
-    progress: Int | Double = null
-  ): ComputedEffectTiming = {
+  
+  inline def apply(): ComputedEffectTiming = {
     val __obj = js.Dynamic.literal()
-    if (activeDuration != null) __obj.updateDynamic("activeDuration")(activeDuration.asInstanceOf[js.Any])
-    if (currentIteration != null) __obj.updateDynamic("currentIteration")(currentIteration.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (endDelay != null) __obj.updateDynamic("endDelay")(endDelay.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (iterationStart != null) __obj.updateDynamic("iterationStart")(iterationStart.asInstanceOf[js.Any])
-    if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (localTime != null) __obj.updateDynamic("localTime")(localTime.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputedEffectTiming]
   }
+  
+  extension [Self <: ComputedEffectTiming](x: Self) {
+    
+    inline def setActiveDuration(value: CSSNumberish): Self = StObject.set(x, "activeDuration", value.asInstanceOf[js.Any])
+    
+    inline def setActiveDurationUndefined: Self = StObject.set(x, "activeDuration", js.undefined)
+    
+    inline def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentIterationNull: Self = StObject.set(x, "currentIteration", null)
+    
+    inline def setCurrentIterationUndefined: Self = StObject.set(x, "currentIteration", js.undefined)
+    
+    inline def setEndTime(value: CSSNumberish): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    
+    inline def setLocalTime(value: CSSNumberish): Self = StObject.set(x, "localTime", value.asInstanceOf[js.Any])
+    
+    inline def setLocalTimeNull: Self = StObject.set(x, "localTime", null)
+    
+    inline def setLocalTimeUndefined: Self = StObject.set(x, "localTime", js.undefined)
+    
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    
+    inline def setProgressNull: Self = StObject.set(x, "progress", null)
+    
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    
+    inline def setStartTime(value: CSSNumberish): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+  }
 }
-

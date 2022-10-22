@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AlertOptions extends js.Object {
+trait AlertOptions extends StObject {
+  
   var messages: js.UndefOr[AlertMessages] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object AlertOptions {
-  @scala.inline
-  def apply(messages: AlertMessages = null, name: String = null): AlertOptions = {
+  
+  inline def apply(): AlertOptions = {
     val __obj = js.Dynamic.literal()
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertOptions]
   }
+  
+  extension [Self <: AlertOptions](x: Self) {
+    
+    inline def setMessages(value: AlertMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

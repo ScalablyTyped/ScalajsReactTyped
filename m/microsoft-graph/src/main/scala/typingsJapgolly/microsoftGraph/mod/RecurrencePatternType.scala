@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.daily
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.absoluteYearly
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.relativeYearly
 */
-trait RecurrencePatternType extends js.Object
-
+trait RecurrencePatternType extends StObject
 object RecurrencePatternType {
-  @scala.inline
-  def absoluteMonthly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.absoluteMonthly = this.cast("absoluteMonthly")
-  @scala.inline
-  def absoluteYearly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.absoluteYearly = this.cast("absoluteYearly")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def daily: typingsJapgolly.microsoftGraph.microsoftGraphStrings.daily = this.cast("daily")
-  @scala.inline
-  def relativeMonthly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.relativeMonthly = this.cast("relativeMonthly")
-  @scala.inline
-  def relativeYearly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.relativeYearly = this.cast("relativeYearly")
-  @scala.inline
-  def weekly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.weekly = this.cast("weekly")
+  
+  inline def absoluteMonthly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.absoluteMonthly = "absoluteMonthly".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.absoluteMonthly]
+  
+  inline def absoluteYearly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.absoluteYearly = "absoluteYearly".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.absoluteYearly]
+  
+  inline def daily: typingsJapgolly.microsoftGraph.microsoftGraphStrings.daily = "daily".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.daily]
+  
+  inline def relativeMonthly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.relativeMonthly = "relativeMonthly".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.relativeMonthly]
+  
+  inline def relativeYearly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.relativeYearly = "relativeYearly".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.relativeYearly]
+  
+  inline def weekly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.weekly = "weekly".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.weekly]
 }
-

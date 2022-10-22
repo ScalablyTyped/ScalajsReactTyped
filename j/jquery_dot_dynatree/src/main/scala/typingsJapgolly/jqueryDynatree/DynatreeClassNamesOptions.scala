@@ -1,90 +1,162 @@
 package typingsJapgolly.jqueryDynatree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DynatreeClassNamesOptions extends js.Object {
+trait DynatreeClassNamesOptions extends StObject {
+  
   var active: js.UndefOr[String] = js.undefined
+  
   var checkbox: js.UndefOr[String] = js.undefined
+  
   var combinedExpanderPrefix: js.UndefOr[String] = js.undefined
+  
   var combinedIconPrefix: js.UndefOr[String] = js.undefined
+  
   var connector: js.UndefOr[String] = js.undefined
+  
   var container: js.UndefOr[String] = js.undefined
+  
   var empty: js.UndefOr[String] = js.undefined
+  
   var expanded: js.UndefOr[String] = js.undefined
+  
   var expander: js.UndefOr[String] = js.undefined
+  
   var focused: js.UndefOr[String] = js.undefined
+  
   var folder: js.UndefOr[String] = js.undefined
+  
   var hasChildren: js.UndefOr[String] = js.undefined
+  
   var hidden: js.UndefOr[String] = js.undefined
+  
   var lastsib: js.UndefOr[String] = js.undefined
+  
   var `lazy`: js.UndefOr[String] = js.undefined
+  
   var noConnector: js.UndefOr[String] = js.undefined
+  
   var node: js.UndefOr[String] = js.undefined
+  
   var nodeError: js.UndefOr[String] = js.undefined
+  
   var nodeIcon: js.UndefOr[String] = js.undefined
+  
   var nodeWait: js.UndefOr[String] = js.undefined
+  
   var partsel: js.UndefOr[String] = js.undefined
+  
   var selected: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var vline: js.UndefOr[String] = js.undefined
 }
-
 object DynatreeClassNamesOptions {
-  @scala.inline
-  def apply(
-    active: String = null,
-    checkbox: String = null,
-    combinedExpanderPrefix: String = null,
-    combinedIconPrefix: String = null,
-    connector: String = null,
-    container: String = null,
-    empty: String = null,
-    expanded: String = null,
-    expander: String = null,
-    focused: String = null,
-    folder: String = null,
-    hasChildren: String = null,
-    hidden: String = null,
-    lastsib: String = null,
-    `lazy`: String = null,
-    noConnector: String = null,
-    node: String = null,
-    nodeError: String = null,
-    nodeIcon: String = null,
-    nodeWait: String = null,
-    partsel: String = null,
-    selected: String = null,
-    title: String = null,
-    vline: String = null
-  ): DynatreeClassNamesOptions = {
+  
+  inline def apply(): DynatreeClassNamesOptions = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (checkbox != null) __obj.updateDynamic("checkbox")(checkbox.asInstanceOf[js.Any])
-    if (combinedExpanderPrefix != null) __obj.updateDynamic("combinedExpanderPrefix")(combinedExpanderPrefix.asInstanceOf[js.Any])
-    if (combinedIconPrefix != null) __obj.updateDynamic("combinedIconPrefix")(combinedIconPrefix.asInstanceOf[js.Any])
-    if (connector != null) __obj.updateDynamic("connector")(connector.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (expander != null) __obj.updateDynamic("expander")(expander.asInstanceOf[js.Any])
-    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
-    if (hasChildren != null) __obj.updateDynamic("hasChildren")(hasChildren.asInstanceOf[js.Any])
-    if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (lastsib != null) __obj.updateDynamic("lastsib")(lastsib.asInstanceOf[js.Any])
-    if (`lazy` != null) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
-    if (noConnector != null) __obj.updateDynamic("noConnector")(noConnector.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (nodeError != null) __obj.updateDynamic("nodeError")(nodeError.asInstanceOf[js.Any])
-    if (nodeIcon != null) __obj.updateDynamic("nodeIcon")(nodeIcon.asInstanceOf[js.Any])
-    if (nodeWait != null) __obj.updateDynamic("nodeWait")(nodeWait.asInstanceOf[js.Any])
-    if (partsel != null) __obj.updateDynamic("partsel")(partsel.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (vline != null) __obj.updateDynamic("vline")(vline.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynatreeClassNamesOptions]
   }
+  
+  extension [Self <: DynatreeClassNamesOptions](x: Self) {
+    
+    inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    
+    inline def setCheckbox(value: String): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+    
+    inline def setCheckboxUndefined: Self = StObject.set(x, "checkbox", js.undefined)
+    
+    inline def setCombinedExpanderPrefix(value: String): Self = StObject.set(x, "combinedExpanderPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setCombinedExpanderPrefixUndefined: Self = StObject.set(x, "combinedExpanderPrefix", js.undefined)
+    
+    inline def setCombinedIconPrefix(value: String): Self = StObject.set(x, "combinedIconPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setCombinedIconPrefixUndefined: Self = StObject.set(x, "combinedIconPrefix", js.undefined)
+    
+    inline def setConnector(value: String): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
+    
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    
+    inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+    
+    inline def setExpanded(value: String): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    
+    inline def setExpander(value: String): Self = StObject.set(x, "expander", value.asInstanceOf[js.Any])
+    
+    inline def setExpanderUndefined: Self = StObject.set(x, "expander", js.undefined)
+    
+    inline def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+    
+    inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
+    
+    inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    
+    inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+    
+    inline def setHasChildren(value: String): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
+    
+    inline def setHasChildrenUndefined: Self = StObject.set(x, "hasChildren", js.undefined)
+    
+    inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setLastsib(value: String): Self = StObject.set(x, "lastsib", value.asInstanceOf[js.Any])
+    
+    inline def setLastsibUndefined: Self = StObject.set(x, "lastsib", js.undefined)
+    
+    inline def setLazy(value: String): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+    
+    inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+    
+    inline def setNoConnector(value: String): Self = StObject.set(x, "noConnector", value.asInstanceOf[js.Any])
+    
+    inline def setNoConnectorUndefined: Self = StObject.set(x, "noConnector", js.undefined)
+    
+    inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    
+    inline def setNodeError(value: String): Self = StObject.set(x, "nodeError", value.asInstanceOf[js.Any])
+    
+    inline def setNodeErrorUndefined: Self = StObject.set(x, "nodeError", js.undefined)
+    
+    inline def setNodeIcon(value: String): Self = StObject.set(x, "nodeIcon", value.asInstanceOf[js.Any])
+    
+    inline def setNodeIconUndefined: Self = StObject.set(x, "nodeIcon", js.undefined)
+    
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    
+    inline def setNodeWait(value: String): Self = StObject.set(x, "nodeWait", value.asInstanceOf[js.Any])
+    
+    inline def setNodeWaitUndefined: Self = StObject.set(x, "nodeWait", js.undefined)
+    
+    inline def setPartsel(value: String): Self = StObject.set(x, "partsel", value.asInstanceOf[js.Any])
+    
+    inline def setPartselUndefined: Self = StObject.set(x, "partsel", js.undefined)
+    
+    inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setVline(value: String): Self = StObject.set(x, "vline", value.asInstanceOf[js.Any])
+    
+    inline def setVlineUndefined: Self = StObject.set(x, "vline", js.undefined)
+  }
 }
-

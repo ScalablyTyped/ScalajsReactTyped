@@ -1,0 +1,23 @@
+package typingsJapgolly.officeJs.global.Excel
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/**
+  * Specifies the save behavior for `Workbook.save`.
+  *
+  * @remarks
+  * [Api set: ExcelApi 1.9]
+  */
+@JSGlobal("Excel.SaveBehavior")
+@js.native
+object SaveBehavior extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[typingsJapgolly.officeJs.Excel.SaveBehavior & String] = js.native
+  
+  /* "Prompt" */ val prompt: typingsJapgolly.officeJs.Excel.SaveBehavior.prompt & String = js.native
+  
+  /* "Save" */ val save: typingsJapgolly.officeJs.Excel.SaveBehavior.save & String = js.native
+}

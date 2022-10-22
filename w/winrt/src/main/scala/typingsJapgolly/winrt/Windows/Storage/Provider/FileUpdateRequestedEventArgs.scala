@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.Storage.Provider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.Provider.FileUpdateRequestedEventArgs")
-@js.native
-class FileUpdateRequestedEventArgs () extends IFileUpdateRequestedEventArgs {
-  /* CompleteClass */
-  override var request: FileUpdateRequest = js.native
+trait FileUpdateRequestedEventArgs
+  extends StObject
+     with IFileUpdateRequestedEventArgs
+object FileUpdateRequestedEventArgs {
+  
+  inline def apply(request: FileUpdateRequest): FileUpdateRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileUpdateRequestedEventArgs]
+  }
 }
-

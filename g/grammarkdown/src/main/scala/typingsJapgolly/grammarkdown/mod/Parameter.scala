@@ -1,13 +1,12 @@
 package typingsJapgolly.grammarkdown.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Parameter")
 @js.native
-class Parameter protected ()
-  extends typingsJapgolly.grammarkdown.nodesMod.Parameter {
-  def this(name: typingsJapgolly.grammarkdown.nodesMod.Identifier) = this()
+open class Parameter protected ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.Parameter {
+  def this(name: typingsJapgolly.grammarkdown.distNodesMod.Identifier) = this()
 }
-

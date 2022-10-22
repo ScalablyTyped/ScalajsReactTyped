@@ -1,49 +1,82 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel PivotField.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
-@js.native
-trait PivotFieldLoadOptions extends js.Object {
+trait PivotFieldLoadOptions extends StObject {
+  
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * ID of the PivotField.
     *
-    * Id of the PivotField.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Name of the PivotField.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Determines whether to show all items of the PivotField.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
-  var showAllItems: js.UndefOr[Boolean] = js.native
+  var showAllItems: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Subtotals of the PivotField.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
-  var subtotals: js.UndefOr[Boolean] = js.native
+  var subtotals: js.UndefOr[Boolean] = js.undefined
 }
-
+object PivotFieldLoadOptions {
+  
+  inline def apply(): PivotFieldLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[PivotFieldLoadOptions]
+  }
+  
+  extension [Self <: PivotFieldLoadOptions](x: Self) {
+    
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setShowAllItems(value: Boolean): Self = StObject.set(x, "showAllItems", value.asInstanceOf[js.Any])
+    
+    inline def setShowAllItemsUndefined: Self = StObject.set(x, "showAllItems", js.undefined)
+    
+    inline def setSubtotals(value: Boolean): Self = StObject.set(x, "subtotals", value.asInstanceOf[js.Any])
+    
+    inline def setSubtotalsUndefined: Self = StObject.set(x, "subtotals", js.undefined)
+  }
+}

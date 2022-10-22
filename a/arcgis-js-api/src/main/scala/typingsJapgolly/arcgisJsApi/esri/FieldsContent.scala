@@ -1,35 +1,46 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.fields
 import typingsJapgolly.arcgisJsApi.esri.content.Content
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FieldsContent
-  extends Content_
+  extends StObject
+     with Content_
      with Content
      with contentContent {
+  
   /**
-    * Array of [fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html). If the `fieldInfos` property is not provided directly within the content, the popup will display whatever is set in the [PopupTemplate.fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos).
+    * Describes the field's content in detail.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#description)
+    */
+  var description: String = js.native
+  
+  /**
+    * Array of [fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#fieldInfos)
     */
   var fieldInfos: js.Array[FieldInfo] = js.native
+  
+  /**
+    * Heading indicating what the field's content represents.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#title)
+    */
+  var title: String = js.native
+  
   /**
     * The type of popup element displayed.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#type)
-    *
     * @default fields
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#type)
     */
   @JSName("type")
   val type_FieldsContent: fields = js.native
 }
-
-@JSGlobal("__esri.FieldsContent")
-@js.native
-object FieldsContent extends TopLevel[FieldsContentConstructor]
-

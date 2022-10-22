@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactFieldCategory extends js.Object
-
+sealed trait ContactFieldCategory extends StObject
 /** Defines the categories that contact data can belong to. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactFieldCategory")
 @js.native
-object ContactFieldCategory extends js.Object {
+object ContactFieldCategory extends StObject {
+  
   /** The Home category. */
   @js.native
-  sealed trait home extends ContactFieldCategory
+  sealed trait home
+    extends StObject
+       with ContactFieldCategory
   
   /** The Mobile category. */
   @js.native
-  sealed trait mobile extends ContactFieldCategory
+  sealed trait mobile
+    extends StObject
+       with ContactFieldCategory
   
   /** The data doesn't belong to a category */
   @js.native
-  sealed trait none extends ContactFieldCategory
+  sealed trait none
+    extends StObject
+       with ContactFieldCategory
   
   /** The Other category. */
   @js.native
-  sealed trait other extends ContactFieldCategory
+  sealed trait other
+    extends StObject
+       with ContactFieldCategory
   
   /** The Work category. */
   @js.native
-  sealed trait work extends ContactFieldCategory
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactFieldCategory with Double] = js.native
-  /* 1 */ @js.native
-  object home extends TopLevel[home with Double]
-  
-  /* 3 */ @js.native
-  object mobile extends TopLevel[mobile with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 4 */ @js.native
-  object other extends TopLevel[other with Double]
-  
-  /* 2 */ @js.native
-  object work extends TopLevel[work with Double]
-  
+  sealed trait work
+    extends StObject
+       with ContactFieldCategory
 }
-

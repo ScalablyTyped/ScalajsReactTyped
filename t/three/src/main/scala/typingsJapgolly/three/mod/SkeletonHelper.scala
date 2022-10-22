@@ -1,13 +1,13 @@
 package typingsJapgolly.three.mod
 
+import typingsJapgolly.three.srcCoreEventDispatcherMod.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "SkeletonHelper")
 @js.native
-class SkeletonHelper protected ()
-  extends typingsJapgolly.three.skeletonHelperMod.SkeletonHelper {
-  def this(bone: typingsJapgolly.three.object3DMod.Object3D) = this()
+open class SkeletonHelper protected ()
+  extends typingsJapgolly.three.srcThreeMod.SkeletonHelper {
+  def this(`object`: typingsJapgolly.three.srcCoreObject3DMod.Object3D[Event]) = this()
 }
-

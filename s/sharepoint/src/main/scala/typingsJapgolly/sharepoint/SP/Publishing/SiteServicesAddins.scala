@@ -1,24 +1,7 @@
 package typingsJapgolly.sharepoint.SP.Publishing
 
-import typingsJapgolly.sharepoint.SP.ClientContext
-import typingsJapgolly.sharepoint.SP.Guid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.Publishing.SiteServicesAddins")
-@js.native
-class SiteServicesAddins () extends js.Object
-
-/* static members */
-@JSGlobal("SP.Publishing.SiteServicesAddins")
-@js.native
-object SiteServicesAddins extends js.Object {
-  def deletePlugin(context: ClientContext, pluginName: String): Unit = js.native
-  def deleteSettings(context: ClientContext, addinId: Guid): Unit = js.native
-  def getPlugin(context: ClientContext, pluginName: String): AddinPlugin = js.native
-  def getSettings(context: ClientContext, addinId: Guid): AddinSettings = js.native
-  def setPlugin(context: ClientContext, addin: AddinPlugin): Unit = js.native
-  def setSettings(context: ClientContext, addin: AddinSettings): Unit = js.native
-}
-
+trait SiteServicesAddins extends StObject

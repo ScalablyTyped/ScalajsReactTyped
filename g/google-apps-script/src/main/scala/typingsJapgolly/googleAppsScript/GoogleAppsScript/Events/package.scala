@@ -1,10 +1,9 @@
-package typingsJapgolly.googleAppsScript.GoogleAppsScript
+package typingsJapgolly.googleAppsScript.GoogleAppsScript.Events
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Events {
-  // tslint:disable-next-line: no-empty-interface
-  type DoGet = typingsJapgolly.googleAppsScript.GoogleAppsScript.Events.AppsScriptHttpRequestEvent
-}
+
+// tslint:disable-next-line: no-empty-interface
+type DoGet = AppsScriptHttpRequestEvent

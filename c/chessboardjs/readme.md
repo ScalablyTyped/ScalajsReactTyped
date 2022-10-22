@@ -10,10 +10,10 @@ JavaScript Chess Board http://chessboardjs.com
 | ------------------ | :-------------: |
 | Full name          | chessboardjs |
 | Keywords           | chess, chessboard |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1929 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 211.66666666666666 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/deanius/chessboardjs#readme)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cosmiconfig-typescript-loader" : "4.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cosmiconfig-typescript-loader" : "4.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

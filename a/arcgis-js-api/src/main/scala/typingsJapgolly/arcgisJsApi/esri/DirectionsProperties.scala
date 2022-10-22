@@ -1,102 +1,167 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.Callback
-import org.scalajs.dom.raw.HTMLElement
+import typingsJapgolly.arcgisJsApi.anon.MapViewPropertiestype2d
+import typingsJapgolly.arcgisJsApi.anon.SceneViewPropertiestype3d
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DirectionsProperties
-  extends WidgetProperties
+  extends StObject
+     with WidgetProperties
      with GoToProperties {
+  
+  /**
+    * An authorization string used to access a resource or service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#apiKey)
+    */
+  var apiKey: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Indicates the heading level to use for the origin and destination addresses (i.e.
+    *
+    * @default 2
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#headingLevel)
+    */
+  var headingLevel: js.UndefOr[Double] = js.undefined
+  
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#iconClass)
     */
   var iconClass: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html) associated with the Directions widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#layer)
+    */
+  var layer: js.UndefOr[RouteLayerProperties] = js.undefined
+  
   /**
     * The maximum number of stops allowed for routing.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#maxStops)
-    *
     * @default 50
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#maxStops)
     */
   var maxStops: js.UndefOr[Double] = js.undefined
+  
   /**
     * The URL of the REST endpoint of the Route service.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#routeServiceUrl)
+    * @deprecated since version 4.24. Use {@link module:esri/layers/RouteLayer#url url} from [layer](#layer) instead.
     *
-    * @default "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World"
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#routeServiceUrl)
     */
   var routeServiceUrl: js.UndefOr[String] = js.undefined
+  
   /**
     * Defines the symbol used to draw the route on the map.
+    *
+    * @deprecated since version 4.24. Use {@link module:esri/layers/support/RouteSymbols#directionLines directionLines} from [layer](#layer) instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#routeSymbol)
     */
   var routeSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
+  
   /**
-    * Controls the default properties used when [searching](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html). Note that the default `searchProperties` differ slightly from the [Search widget](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#searchProperties)
+    * Controls the default properties used when [searching](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html).
     *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#searchProperties)
     */
   var searchProperties: js.UndefOr[DirectionsSearchProperties] = js.undefined
+  
   /**
     * The default stop symbols used to display locations between the origin and final destination.
+    *
+    * @deprecated since version 4.24. Use {@link module:esri/layers/support/RouteStopSymbols} from [layer](#layer) instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#stopSymbols)
     */
   var stopSymbols: js.UndefOr[DirectionsStopSymbols] = js.undefined
+  
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
+  
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [DirectionsViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#viewModel)
     */
   var viewModel: js.UndefOr[DirectionsViewModelProperties] = js.undefined
+  
+  /**
+    * The visible elements that are displayed within the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#visibleElements)
+    */
+  var visibleElements: js.UndefOr[DirectionsVisibleElements] = js.undefined
 }
-
 object DirectionsProperties {
-  @scala.inline
-  def apply(
-    container: String | HTMLElement = null,
-    destroyed: js.UndefOr[Boolean] = js.undefined,
-    goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Callback = null,
-    iconClass: String = null,
-    id: String = null,
-    label: String = null,
-    maxStops: Int | Double = null,
-    routeServiceUrl: String = null,
-    routeSymbol: SimpleLineSymbolProperties = null,
-    searchProperties: DirectionsSearchProperties = null,
-    stopSymbols: DirectionsStopSymbols = null,
-    view: MapViewProperties | SceneViewProperties = null,
-    viewModel: DirectionsViewModelProperties = null
-  ): DirectionsProperties = {
+  
+  inline def apply(): DirectionsProperties = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
-    if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2((t0: /* view */ typingsJapgolly.arcgisJsApi.esri.MapView | typingsJapgolly.arcgisJsApi.esri.SceneView, t1: /* goToParameters */ js.Any) => goToOverride(t0, t1).runNow()))
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (maxStops != null) __obj.updateDynamic("maxStops")(maxStops.asInstanceOf[js.Any])
-    if (routeServiceUrl != null) __obj.updateDynamic("routeServiceUrl")(routeServiceUrl.asInstanceOf[js.Any])
-    if (routeSymbol != null) __obj.updateDynamic("routeSymbol")(routeSymbol.asInstanceOf[js.Any])
-    if (searchProperties != null) __obj.updateDynamic("searchProperties")(searchProperties.asInstanceOf[js.Any])
-    if (stopSymbols != null) __obj.updateDynamic("stopSymbols")(stopSymbols.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsProperties]
   }
+  
+  extension [Self <: DirectionsProperties](x: Self) {
+    
+    inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+    
+    inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+    
+    inline def setHeadingLevel(value: Double): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
+    
+    inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
+    
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    
+    inline def setLayer(value: RouteLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    
+    inline def setMaxStops(value: Double): Self = StObject.set(x, "maxStops", value.asInstanceOf[js.Any])
+    
+    inline def setMaxStopsUndefined: Self = StObject.set(x, "maxStops", js.undefined)
+    
+    inline def setRouteServiceUrl(value: String): Self = StObject.set(x, "routeServiceUrl", value.asInstanceOf[js.Any])
+    
+    inline def setRouteServiceUrlUndefined: Self = StObject.set(x, "routeServiceUrl", js.undefined)
+    
+    inline def setRouteSymbol(value: SimpleLineSymbolProperties): Self = StObject.set(x, "routeSymbol", value.asInstanceOf[js.Any])
+    
+    inline def setRouteSymbolUndefined: Self = StObject.set(x, "routeSymbol", js.undefined)
+    
+    inline def setSearchProperties(value: DirectionsSearchProperties): Self = StObject.set(x, "searchProperties", value.asInstanceOf[js.Any])
+    
+    inline def setSearchPropertiesUndefined: Self = StObject.set(x, "searchProperties", js.undefined)
+    
+    inline def setStopSymbols(value: DirectionsStopSymbols): Self = StObject.set(x, "stopSymbols", value.asInstanceOf[js.Any])
+    
+    inline def setStopSymbolsUndefined: Self = StObject.set(x, "stopSymbols", js.undefined)
+    
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewModel(value: DirectionsViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setVisibleElements(value: DirectionsVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
+  }
 }
-

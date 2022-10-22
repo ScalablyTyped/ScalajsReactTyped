@@ -1,54 +1,65 @@
 package typingsJapgolly.reactWindow.mod
 
-import japgolly.scalajs.react.raw.React.Ref
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.Ref
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommonProps extends js.Object {
+trait CommonProps[T] extends StObject {
+  
   /**
     * Optional CSS class to attach to outermost <div> element.
     */
   var className: js.UndefOr[String] = js.undefined
+  
   /**
     * Tag name passed to document.createElement to create the inner container element. This is an advanced property; in most cases, the default ("div") should be used.
     */
   var innerElementType: js.UndefOr[ReactElementType] = js.undefined
+  
   /**
     * Ref to attach to the inner container element. This is an advanced property.
     */
-  var innerRef: js.UndefOr[Ref] = js.undefined
+  var innerRef: js.UndefOr[Ref[Any]] = js.undefined
+  
   /**
     * Tag name passed to document.createElement to create the inner container element. This is an advanced property; in most cases, the default ("div") should be used.
     *
     * @deprecated since 1.4.0
     */
   var innerTagName: js.UndefOr[String] = js.undefined
+  
   /**
     * Contextual data to be passed to the item renderer as a data prop. This is a light-weight alternative to React's built-in context API.
     *
     * Item data is useful for item renderers that are class components.
     */
-  var itemData: js.UndefOr[js.Any] = js.undefined
+  var itemData: js.UndefOr[T] = js.undefined
+  
   /**
     * Tag name passed to document.createElement to create the outer container element. This is an advanced property; in most cases, the default ("div") should be used.
     */
   var outerElementType: js.UndefOr[ReactElementType] = js.undefined
+  
   /**
     * Ref to attach to the outer container element. This is an advanced property.
     */
-  var outerRef: js.UndefOr[Ref] = js.undefined
+  var outerRef: js.UndefOr[Ref[Any]] = js.undefined
+  
   /**
     * Tag name passed to document.createElement to create the outer container element. This is an advanced property; in most cases, the default ("div") should be used.
     *
     * @deprecated since 1.4.0
     */
   var outerTagName: js.UndefOr[String] = js.undefined
+  
   /**
     * Optional inline style to attach to outermost <div> element.
     */
   var style: js.UndefOr[CSSProperties] = js.undefined
+  
   /**
     * Adds an additional isScrolling parameter to the children render function. This parameter can be used to show a placeholder row or column while the list is being scrolled.
     *
@@ -56,33 +67,61 @@ trait CommonProps extends js.Object {
     */
   var useIsScrolling: js.UndefOr[Boolean] = js.undefined
 }
-
 object CommonProps {
-  @scala.inline
-  def apply(
-    className: String = null,
-    innerElementType: ReactElementType = null,
-    innerRef: Ref = null,
-    innerTagName: String = null,
-    itemData: js.Any = null,
-    outerElementType: ReactElementType = null,
-    outerRef: Ref = null,
-    outerTagName: String = null,
-    style: CSSProperties = null,
-    useIsScrolling: js.UndefOr[Boolean] = js.undefined
-  ): CommonProps = {
+  
+  inline def apply[T](): CommonProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (innerElementType != null) __obj.updateDynamic("innerElementType")(innerElementType.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (innerTagName != null) __obj.updateDynamic("innerTagName")(innerTagName.asInstanceOf[js.Any])
-    if (itemData != null) __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
-    if (outerElementType != null) __obj.updateDynamic("outerElementType")(outerElementType.asInstanceOf[js.Any])
-    if (outerRef != null) __obj.updateDynamic("outerRef")(outerRef.asInstanceOf[js.Any])
-    if (outerTagName != null) __obj.updateDynamic("outerTagName")(outerTagName.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIsScrolling)) __obj.updateDynamic("useIsScrolling")(useIsScrolling.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CommonProps]
+    __obj.asInstanceOf[CommonProps[T]]
+  }
+  
+  extension [Self <: CommonProps[?], T](x: Self & CommonProps[T]) {
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setInnerElementType(value: ReactElementType): Self = StObject.set(x, "innerElementType", value.asInstanceOf[js.Any])
+    
+    inline def setInnerElementTypeUndefined: Self = StObject.set(x, "innerElementType", js.undefined)
+    
+    inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+    
+    inline def setInnerRefFunction1(value: Any | Null => Callback): Self = StObject.set(x, "innerRef", js.Any.fromFunction1((t0: Any | Null) => value(t0).runNow()))
+    
+    inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+    
+    inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+    
+    inline def setInnerTagName(value: String): Self = StObject.set(x, "innerTagName", value.asInstanceOf[js.Any])
+    
+    inline def setInnerTagNameUndefined: Self = StObject.set(x, "innerTagName", js.undefined)
+    
+    inline def setItemData(value: T): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+    
+    inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
+    
+    inline def setOuterElementType(value: ReactElementType): Self = StObject.set(x, "outerElementType", value.asInstanceOf[js.Any])
+    
+    inline def setOuterElementTypeUndefined: Self = StObject.set(x, "outerElementType", js.undefined)
+    
+    inline def setOuterRef(value: Ref[Any]): Self = StObject.set(x, "outerRef", value.asInstanceOf[js.Any])
+    
+    inline def setOuterRefFunction1(value: Any | Null => Callback): Self = StObject.set(x, "outerRef", js.Any.fromFunction1((t0: Any | Null) => value(t0).runNow()))
+    
+    inline def setOuterRefNull: Self = StObject.set(x, "outerRef", null)
+    
+    inline def setOuterRefUndefined: Self = StObject.set(x, "outerRef", js.undefined)
+    
+    inline def setOuterTagName(value: String): Self = StObject.set(x, "outerTagName", value.asInstanceOf[js.Any])
+    
+    inline def setOuterTagNameUndefined: Self = StObject.set(x, "outerTagName", js.undefined)
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setUseIsScrolling(value: Boolean): Self = StObject.set(x, "useIsScrolling", value.asInstanceOf[js.Any])
+    
+    inline def setUseIsScrollingUndefined: Self = StObject.set(x, "useIsScrolling", js.undefined)
   }
 }
-

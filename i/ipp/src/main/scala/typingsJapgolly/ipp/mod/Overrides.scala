@@ -1,0 +1,98 @@
+package typingsJapgolly.ipp.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.ipp.ippStrings.`chamber-humidity`
+  - typingsJapgolly.ipp.ippStrings.`chamber-temperature`
+  - typingsJapgolly.ipp.ippStrings.`confirmation-sheet-print`
+  - typingsJapgolly.ipp.ippStrings.copies
+  - typingsJapgolly.ipp.ippStrings.`cover-back`
+  - typingsJapgolly.ipp.ippStrings.`cover-front`
+  - typingsJapgolly.ipp.ippStrings.`cover-sheet-info`
+  - typingsJapgolly.ipp.ippStrings.`destination-uris`
+  - typingsJapgolly.ipp.ippStrings.finishings
+  - typingsJapgolly.ipp.ippStrings.`finishings-col`
+  - typingsJapgolly.ipp.ippStrings.`font-name-requested`
+  - typingsJapgolly.ipp.ippStrings.`font-size-requested`
+  - typingsJapgolly.ipp.ippStrings.`force-front-side`
+  - typingsJapgolly.ipp.ippStrings.`imposition-template`
+  - typingsJapgolly.ipp.ippStrings.`insert-sheet`
+  - typingsJapgolly.ipp.ippStrings.`job-account-id`
+  - typingsJapgolly.ipp.ippStrings.`job-account-type`
+  - typingsJapgolly.ipp.ippStrings.`job-accounting-sheets`
+  - typingsJapgolly.ipp.ippStrings.`job-accounting-user-id`
+  - typingsJapgolly.ipp.ippStrings.`job-cancel-after`
+  - typingsJapgolly.ipp.ippStrings.`job-copies`
+  - typingsJapgolly.ipp.ippStrings.`job-cover-back`
+  - typingsJapgolly.ipp.ippStrings.`job-cover-front`
+  - typingsJapgolly.ipp.ippStrings.`job-delay-output-until`
+  - typingsJapgolly.ipp.ippStrings.`job-delay-output-until-time`
+  - typingsJapgolly.ipp.ippStrings.`job-error-action`
+  - typingsJapgolly.ipp.ippStrings.`job-error-sheet`
+  - typingsJapgolly.ipp.ippStrings.`job-finishings`
+  - typingsJapgolly.ipp.ippStrings.`job-finishings-col`
+  - typingsJapgolly.ipp.ippStrings.`job-hold-until`
+  - typingsJapgolly.ipp.ippStrings.`job-hold-until-time`
+  - typingsJapgolly.ipp.ippStrings.`job-message-to-operator`
+  - typingsJapgolly.ipp.ippStrings.`job-pages-per-set`
+  - typingsJapgolly.ipp.ippStrings.`job-phone-number`
+  - typingsJapgolly.ipp.ippStrings.`job-priority`
+  - typingsJapgolly.ipp.ippStrings.`job-recipient-name`
+  - typingsJapgolly.ipp.ippStrings.`job-retain-until`
+  - typingsJapgolly.ipp.ippStrings.`job-retain-until-interval`
+  - typingsJapgolly.ipp.ippStrings.`job-retain-until-time`
+  - typingsJapgolly.ipp.ippStrings.`job-save-disposition`
+  - typingsJapgolly.ipp.ippStrings.`job-sheet-message`
+  - typingsJapgolly.ipp.ippStrings.`job-sheets`
+  - typingsJapgolly.ipp.ippStrings.`job-sheets-col`
+  - typingsJapgolly.ipp.ippStrings.`materials-col`
+  - typingsJapgolly.ipp.ippStrings.media
+  - typingsJapgolly.ipp.ippStrings.`media-col`
+  - typingsJapgolly.ipp.ippStrings.`media-input-tray-check`
+  - typingsJapgolly.ipp.ippStrings.`multiple-document-handling`
+  - typingsJapgolly.ipp.ippStrings.`multiple-object-handling`
+  - typingsJapgolly.ipp.ippStrings.`number-of-retries`
+  - typingsJapgolly.ipp.ippStrings.`number-up`
+  - typingsJapgolly.ipp.ippStrings.`orientation-requested`
+  - typingsJapgolly.ipp.ippStrings.`output-bin`
+  - typingsJapgolly.ipp.ippStrings.`output-device`
+  - typingsJapgolly.ipp.ippStrings.overrides
+  - typingsJapgolly.ipp.ippStrings.`page-delivery`
+  - typingsJapgolly.ipp.ippStrings.`page-order-received`
+  - typingsJapgolly.ipp.ippStrings.`page-ranges`
+  - typingsJapgolly.ipp.ippStrings.`pages-per-subset`
+  - typingsJapgolly.ipp.ippStrings.`pclm-source-resolution`
+  - typingsJapgolly.ipp.ippStrings.`pdl-init-file`
+  - typingsJapgolly.ipp.ippStrings.`platform-temperature`
+  - typingsJapgolly.ipp.ippStrings.`presentation-direction-number-up`
+  - typingsJapgolly.ipp.ippStrings.`print-accuracy`
+  - typingsJapgolly.ipp.ippStrings.`print-base`
+  - typingsJapgolly.ipp.ippStrings.`print-color-mode`
+  - typingsJapgolly.ipp.ippStrings.`print-content-optimize`
+  - typingsJapgolly.ipp.ippStrings.`print-objects`
+  - typingsJapgolly.ipp.ippStrings.`print-quality`
+  - typingsJapgolly.ipp.ippStrings.`print-rendering-intent`
+  - typingsJapgolly.ipp.ippStrings.`print-scaling`
+  - typingsJapgolly.ipp.ippStrings.`print-supports`
+  - typingsJapgolly.ipp.ippStrings.`printer-resolution`
+  - typingsJapgolly.ipp.ippStrings.`proof-print`
+  - typingsJapgolly.ipp.ippStrings.`retry-interval`
+  - typingsJapgolly.ipp.ippStrings.`retry-time-out`
+  - typingsJapgolly.ipp.ippStrings.`separator-sheets`
+  - typingsJapgolly.ipp.ippStrings.sides
+  - typingsJapgolly.ipp.ippStrings.`x-image-position`
+  - typingsJapgolly.ipp.ippStrings.`x-image-shift`
+  - typingsJapgolly.ipp.ippStrings.`x-side1-image-shift`
+  - typingsJapgolly.ipp.ippStrings.`x-side2-image-shift`
+  - typingsJapgolly.ipp.ippStrings.`y-image-position`
+  - typingsJapgolly.ipp.ippStrings.`y-image-shift`
+  - typingsJapgolly.ipp.ippStrings.`y-side1-image-shift`
+  - typingsJapgolly.ipp.ippStrings.`y-side2-image-shift`
+  - typingsJapgolly.ipp.ippStrings.`document-copies`
+  - typingsJapgolly.ipp.ippStrings.`document-numbers`
+  - typingsJapgolly.ipp.ippStrings.pages
+*/
+trait Overrides extends StObject

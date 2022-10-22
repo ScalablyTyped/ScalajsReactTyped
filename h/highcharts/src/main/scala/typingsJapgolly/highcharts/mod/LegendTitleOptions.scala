@@ -1,29 +1,38 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LegendTitleOptions extends js.Object {
+trait LegendTitleOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Generic CSS styles for the
     * legend title.
     */
   var style: js.UndefOr[CSSObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A text or HTML string for the
     * title.
     */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object LegendTitleOptions {
-  @scala.inline
-  def apply(style: CSSObject = null, text: String = null): LegendTitleOptions = {
+  
+  inline def apply(): LegendTitleOptions = {
     val __obj = js.Dynamic.literal()
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendTitleOptions]
   }
+  
+  extension [Self <: LegendTitleOptions](x: Self) {
+    
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

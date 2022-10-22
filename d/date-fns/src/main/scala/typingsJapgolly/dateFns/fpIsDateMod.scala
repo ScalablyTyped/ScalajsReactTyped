@@ -1,16 +1,21 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/fp/isDate", JSImport.Namespace)
-@js.native
-object fpIsDateMod extends js.Object {
-  @js.native
-  object default
-    extends TopLevel[CurriedFn1[js.Any, Boolean]]
+object fpIsDateMod {
   
+  object default extends Shortcut {
+    
+    @JSImport("date-fns/fp/isDate", JSImport.Default)
+    @js.native
+    val ^ : CurriedFn1[Any, Boolean] = js.native
+    
+    type _To = CurriedFn1[Any, Boolean]
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: CurriedFn1[Any, Boolean] = ^
+  }
 }
-

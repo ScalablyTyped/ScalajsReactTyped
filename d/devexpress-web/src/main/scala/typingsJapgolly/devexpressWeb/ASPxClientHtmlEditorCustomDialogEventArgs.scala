@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for client events that relate to custom dialog operations.
   */
-@JSGlobal("ASPxClientHtmlEditorCustomDialogEventArgs")
-@js.native
-class ASPxClientHtmlEditorCustomDialogEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientHtmlEditorCustomDialogEventArgs class.
-    * @param name A string value that specifies the custom dialog's name. Initializes the ASPxClientHtmlEditorCustomDialogEventArgs.name property.
-    */
-  def this(name: String) = this()
+trait ASPxClientHtmlEditorCustomDialogEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the name that uniquely identifies the processed custom dialog.
     */
-  var name: String = js.native
+  var name: String
 }
-
+object ASPxClientHtmlEditorCustomDialogEventArgs {
+  
+  inline def apply(name: String): ASPxClientHtmlEditorCustomDialogEventArgs = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogEventArgs]
+  }
+  
+  extension [Self <: ASPxClientHtmlEditorCustomDialogEventArgs](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
+}

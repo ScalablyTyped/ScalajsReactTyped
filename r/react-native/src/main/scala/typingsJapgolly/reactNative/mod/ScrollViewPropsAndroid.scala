@@ -3,11 +3,12 @@ package typingsJapgolly.reactNative.mod
 import typingsJapgolly.reactNative.reactNativeStrings.always
 import typingsJapgolly.reactNative.reactNativeStrings.auto
 import typingsJapgolly.reactNative.reactNativeStrings.never
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScrollViewPropsAndroid extends js.Object {
+trait ScrollViewPropsAndroid extends StObject {
+  
   /**
     * Sometimes a scrollview takes up more space than its content fills.
     * When this is the case, this prop will fill the rest of the
@@ -15,11 +16,25 @@ trait ScrollViewPropsAndroid extends js.Object {
     * unnecessary overdraw. This is an advanced optimization that is not
     * needed in the general case.
     */
-  var endFillColor: js.UndefOr[String] = js.undefined
+  var endFillColor: js.UndefOr[ColorValue] = js.undefined
+  
+  /**
+    * Fades out the edges of the the scroll content.
+    *
+    * If the value is greater than 0, the fading edges will be set accordingly
+    * to the current scroll direction and position,
+    * indicating if there is more content to show.
+    *
+    * The default value is 0.
+    * @platform android
+    */
+  var fadingEdgeLength: js.UndefOr[Double] = js.undefined
+  
   /**
     * Enables nested scrolling for Android API level 21+. Nested scrolling is supported by default on iOS.
     */
   var nestedScrollEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Used to override default value of overScroll mode.
     * Possible values:
@@ -28,6 +43,12 @@ trait ScrollViewPropsAndroid extends js.Object {
     *   - 'never' - Never allow a user to over-scroll this view.
     */
   var overScrollMode: js.UndefOr[auto | always | never] = js.undefined
+  
+  /**
+    * Causes the scrollbars not to turn transparent when they are not in use. The default value is false.
+    */
+  var persistentScrollbar: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Tag used to log scroll performance on this scroll view. Will force
     * momentum events to be turned on (see sendMomentumEvents). This doesn't do
@@ -37,21 +58,37 @@ trait ScrollViewPropsAndroid extends js.Object {
     */
   var scrollPerfTag: js.UndefOr[String] = js.undefined
 }
-
 object ScrollViewPropsAndroid {
-  @scala.inline
-  def apply(
-    endFillColor: String = null,
-    nestedScrollEnabled: js.UndefOr[Boolean] = js.undefined,
-    overScrollMode: auto | always | never = null,
-    scrollPerfTag: String = null
-  ): ScrollViewPropsAndroid = {
+  
+  inline def apply(): ScrollViewPropsAndroid = {
     val __obj = js.Dynamic.literal()
-    if (endFillColor != null) __obj.updateDynamic("endFillColor")(endFillColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(nestedScrollEnabled)) __obj.updateDynamic("nestedScrollEnabled")(nestedScrollEnabled.asInstanceOf[js.Any])
-    if (overScrollMode != null) __obj.updateDynamic("overScrollMode")(overScrollMode.asInstanceOf[js.Any])
-    if (scrollPerfTag != null) __obj.updateDynamic("scrollPerfTag")(scrollPerfTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewPropsAndroid]
   }
+  
+  extension [Self <: ScrollViewPropsAndroid](x: Self) {
+    
+    inline def setEndFillColor(value: ColorValue): Self = StObject.set(x, "endFillColor", value.asInstanceOf[js.Any])
+    
+    inline def setEndFillColorUndefined: Self = StObject.set(x, "endFillColor", js.undefined)
+    
+    inline def setFadingEdgeLength(value: Double): Self = StObject.set(x, "fadingEdgeLength", value.asInstanceOf[js.Any])
+    
+    inline def setFadingEdgeLengthUndefined: Self = StObject.set(x, "fadingEdgeLength", js.undefined)
+    
+    inline def setNestedScrollEnabled(value: Boolean): Self = StObject.set(x, "nestedScrollEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setNestedScrollEnabledUndefined: Self = StObject.set(x, "nestedScrollEnabled", js.undefined)
+    
+    inline def setOverScrollMode(value: auto | always | never): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
+    
+    inline def setOverScrollModeUndefined: Self = StObject.set(x, "overScrollMode", js.undefined)
+    
+    inline def setPersistentScrollbar(value: Boolean): Self = StObject.set(x, "persistentScrollbar", value.asInstanceOf[js.Any])
+    
+    inline def setPersistentScrollbarUndefined: Self = StObject.set(x, "persistentScrollbar", js.undefined)
+    
+    inline def setScrollPerfTag(value: String): Self = StObject.set(x, "scrollPerfTag", value.asInstanceOf[js.Any])
+    
+    inline def setScrollPerfTagUndefined: Self = StObject.set(x, "scrollPerfTag", js.undefined)
+  }
 }
-

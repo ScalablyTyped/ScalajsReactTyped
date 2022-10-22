@@ -1,45 +1,75 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScheduleItem extends js.Object {
+trait ScheduleItem extends StObject {
+  
   // The date, time, and time zone that the corresponding event ends.
-  var end: js.UndefOr[DateTimeTimeZone] = js.undefined
+  var end: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
+  
   // The sensitivity of the corresponding event. True if the event is marked private, false otherwise. Optional.
-  var isPrivate: js.UndefOr[Boolean] = js.undefined
+  var isPrivate: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // The location where the corresponding event is held or attended from. Optional.
-  var location: js.UndefOr[String] = js.undefined
+  var location: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The date, time, and time zone that the corresponding event starts.
-  var start: js.UndefOr[DateTimeTimeZone] = js.undefined
+  var start: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
+  
   /**
     * The availability status of the user or resource during the corresponding event. The possible values are: free,
     * tentative, busy, oof, workingElsewhere, unknown.
     */
-  var status: js.UndefOr[FreeBusyStatus] = js.undefined
+  var status: js.UndefOr[NullableOption[FreeBusyStatus]] = js.undefined
+  
   // The corresponding event's subject line. Optional.
-  var subject: js.UndefOr[String] = js.undefined
+  var subject: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ScheduleItem {
-  @scala.inline
-  def apply(
-    end: DateTimeTimeZone = null,
-    isPrivate: js.UndefOr[Boolean] = js.undefined,
-    location: String = null,
-    start: DateTimeTimeZone = null,
-    status: FreeBusyStatus = null,
-    subject: String = null
-  ): ScheduleItem = {
+  
+  inline def apply(): ScheduleItem = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPrivate)) __obj.updateDynamic("isPrivate")(isPrivate.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleItem]
   }
+  
+  extension [Self <: ScheduleItem](x: Self) {
+    
+    inline def setEnd(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndNull: Self = StObject.set(x, "end", null)
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setIsPrivate(value: NullableOption[Boolean]): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
+    
+    inline def setIsPrivateNull: Self = StObject.set(x, "isPrivate", null)
+    
+    inline def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
+    
+    inline def setLocation(value: NullableOption[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setStart(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartNull: Self = StObject.set(x, "start", null)
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setStatus(value: NullableOption[FreeBusyStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setSubject(value: NullableOption[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    
+    inline def setSubjectNull: Self = StObject.set(x, "subject", null)
+    
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+  }
 }
-

@@ -1,20 +1,27 @@
 package typingsJapgolly.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the ParagraphCollection object, for use in "paragraphCollection.set({ ... })". */
-trait ParagraphCollectionUpdateData extends js.Object {
+/** An interface for updating data on the ParagraphCollection object, for use in `paragraphCollection.set({ ... })`. */
+trait ParagraphCollectionUpdateData extends StObject {
+  
   var items: js.UndefOr[js.Array[ParagraphData]] = js.undefined
 }
-
 object ParagraphCollectionUpdateData {
-  @scala.inline
-  def apply(items: js.Array[ParagraphData] = null): ParagraphCollectionUpdateData = {
+  
+  inline def apply(): ParagraphCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphCollectionUpdateData]
   }
+  
+  extension [Self <: ParagraphCollectionUpdateData](x: Self) {
+    
+    inline def setItems(value: js.Array[ParagraphData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: ParagraphData*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

@@ -1,20 +1,25 @@
 package typingsJapgolly.musicmatch.mod
 
-import typingsJapgolly.musicmatch.AnonMusicgenre
+import typingsJapgolly.musicmatch.anon.Musicgenre
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PrimaryGenres extends js.Object {
-  var music_genre_list: js.Array[AnonMusicgenre]
-}
-
-object PrimaryGenres {
-  @scala.inline
-  def apply(music_genre_list: js.Array[AnonMusicgenre]): PrimaryGenres = {
-    val __obj = js.Dynamic.literal(music_genre_list = music_genre_list.asInstanceOf[js.Any])
+trait PrimaryGenres extends StObject {
   
+  var music_genre_list: js.Array[Musicgenre]
+}
+object PrimaryGenres {
+  
+  inline def apply(music_genre_list: js.Array[Musicgenre]): PrimaryGenres = {
+    val __obj = js.Dynamic.literal(music_genre_list = music_genre_list.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimaryGenres]
   }
+  
+  extension [Self <: PrimaryGenres](x: Self) {
+    
+    inline def setMusic_genre_list(value: js.Array[Musicgenre]): Self = StObject.set(x, "music_genre_list", value.asInstanceOf[js.Any])
+    
+    inline def setMusic_genre_listVarargs(value: Musicgenre*): Self = StObject.set(x, "music_genre_list", js.Array(value*))
+  }
 }
-

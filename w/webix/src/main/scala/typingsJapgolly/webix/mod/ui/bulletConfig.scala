@@ -1,119 +1,220 @@
 package typingsJapgolly.webix.mod.ui
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.webix.mod.WebixCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait bulletConfig extends js.Object {
-  var animate: js.UndefOr[js.Any] = js.undefined
-  var bands: js.UndefOr[js.Array[_]] = js.undefined
+trait bulletConfig extends StObject {
+  
+  var animate: js.UndefOr[Any] = js.undefined
+  
+  var bands: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var barWidth: js.UndefOr[Double] = js.undefined
+  
   var borderless: js.UndefOr[Boolean] = js.undefined
+  
   var color: js.UndefOr[String | WebixCallback] = js.undefined
+  
   var container: js.UndefOr[String | HTMLElement] = js.undefined
-  var css: js.UndefOr[js.Any] = js.undefined
+  
+  var css: js.UndefOr[Any] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var flowTime: js.UndefOr[Double] = js.undefined
+  
   var gravity: js.UndefOr[Double] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
   var id: js.UndefOr[String | Double] = js.undefined
+  
   var keyPressTimeout: js.UndefOr[Double] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var labelHeight: js.UndefOr[Double] = js.undefined
+  
   var labelWidth: js.UndefOr[Double] = js.undefined
+  
   var layout: js.UndefOr[String] = js.undefined
+  
   var marker: js.UndefOr[Double | Boolean] = js.undefined
+  
   var maxHeight: js.UndefOr[Double] = js.undefined
+  
   var maxRange: js.UndefOr[Double] = js.undefined
+  
   var maxWidth: js.UndefOr[Double] = js.undefined
+  
   var minHeight: js.UndefOr[Double] = js.undefined
+  
   var minRange: js.UndefOr[Double] = js.undefined
+  
   var minWidth: js.UndefOr[Double] = js.undefined
-  var placeholder: js.UndefOr[js.Any] = js.undefined
-  var scale: js.UndefOr[js.Any] = js.undefined
+  
+  var placeholder: js.UndefOr[Any] = js.undefined
+  
+  var scale: js.UndefOr[Any] = js.undefined
+  
   var smoothFlow: js.UndefOr[Boolean] = js.undefined
+  
   var stroke: js.UndefOr[Double] = js.undefined
+  
   var tickSize: js.UndefOr[Double] = js.undefined
+  
   var value: js.UndefOr[Double] = js.undefined
+  
   var view: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object bulletConfig {
-  @scala.inline
-  def apply(
-    animate: js.Any = null,
-    bands: js.Array[_] = null,
-    barWidth: Int | Double = null,
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    color: String | WebixCallback = null,
-    container: String | HTMLElement = null,
-    css: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    flowTime: Int | Double = null,
-    gravity: Int | Double = null,
-    height: Int | Double = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    id: String | Double = null,
-    keyPressTimeout: Int | Double = null,
-    label: String = null,
-    labelHeight: Int | Double = null,
-    labelWidth: Int | Double = null,
-    layout: String = null,
-    marker: Double | Boolean = null,
-    maxHeight: Int | Double = null,
-    maxRange: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minRange: Int | Double = null,
-    minWidth: Int | Double = null,
-    placeholder: js.Any = null,
-    scale: js.Any = null,
-    smoothFlow: js.UndefOr[Boolean] = js.undefined,
-    stroke: Int | Double = null,
-    tickSize: Int | Double = null,
-    value: Int | Double = null,
-    view: String = null,
-    width: Int | Double = null
-  ): bulletConfig = {
+  
+  inline def apply(): bulletConfig = {
     val __obj = js.Dynamic.literal()
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (bands != null) __obj.updateDynamic("bands")(bands.asInstanceOf[js.Any])
-    if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (flowTime != null) __obj.updateDynamic("flowTime")(flowTime.asInstanceOf[js.Any])
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (keyPressTimeout != null) __obj.updateDynamic("keyPressTimeout")(keyPressTimeout.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelHeight != null) __obj.updateDynamic("labelHeight")(labelHeight.asInstanceOf[js.Any])
-    if (labelWidth != null) __obj.updateDynamic("labelWidth")(labelWidth.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxRange != null) __obj.updateDynamic("maxRange")(maxRange.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minRange != null) __obj.updateDynamic("minRange")(minRange.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothFlow)) __obj.updateDynamic("smoothFlow")(smoothFlow.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (tickSize != null) __obj.updateDynamic("tickSize")(tickSize.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[bulletConfig]
   }
+  
+  extension [Self <: bulletConfig](x: Self) {
+    
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setBands(value: js.Array[Any]): Self = StObject.set(x, "bands", value.asInstanceOf[js.Any])
+    
+    inline def setBandsUndefined: Self = StObject.set(x, "bands", js.undefined)
+    
+    inline def setBandsVarargs(value: Any*): Self = StObject.set(x, "bands", js.Array(value*))
+    
+    inline def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
+    
+    inline def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
+    
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    
+    inline def setColor(value: String | WebixCallback): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setFlowTime(value: Double): Self = StObject.set(x, "flowTime", value.asInstanceOf[js.Any])
+    
+    inline def setFlowTimeUndefined: Self = StObject.set(x, "flowTime", js.undefined)
+    
+    inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setKeyPressTimeout(value: Double): Self = StObject.set(x, "keyPressTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setKeyPressTimeoutUndefined: Self = StObject.set(x, "keyPressTimeout", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelHeight(value: Double): Self = StObject.set(x, "labelHeight", value.asInstanceOf[js.Any])
+    
+    inline def setLabelHeightUndefined: Self = StObject.set(x, "labelHeight", js.undefined)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLabelWidth(value: Double): Self = StObject.set(x, "labelWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLabelWidthUndefined: Self = StObject.set(x, "labelWidth", js.undefined)
+    
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setMarker(value: Double | Boolean): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxRange(value: Double): Self = StObject.set(x, "maxRange", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRangeUndefined: Self = StObject.set(x, "maxRange", js.undefined)
+    
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinRange(value: Double): Self = StObject.set(x, "minRange", value.asInstanceOf[js.Any])
+    
+    inline def setMinRangeUndefined: Self = StObject.set(x, "minRange", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setPlaceholder(value: Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    
+    inline def setScale(value: Any): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setSmoothFlow(value: Boolean): Self = StObject.set(x, "smoothFlow", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothFlowUndefined: Self = StObject.set(x, "smoothFlow", js.undefined)
+    
+    inline def setStroke(value: Double): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setTickSize(value: Double): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
+    
+    inline def setTickSizeUndefined: Self = StObject.set(x, "tickSize", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

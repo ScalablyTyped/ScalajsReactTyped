@@ -1,67 +1,97 @@
 package typingsJapgolly.reactInteractive
 
-import typingsJapgolly.reactInteractive.mod.ClickType
-import typingsJapgolly.reactInteractive.mod.Focus
-import typingsJapgolly.reactInteractive.mod.IState
+import typingsJapgolly.reactInteractive.mod.ActiveState
+import typingsJapgolly.reactInteractive.mod.FocusState
+import typingsJapgolly.reactInteractive.mod.InteractiveStateKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactInteractiveStrings {
-  @js.native
-  sealed trait hover extends IState
   
   @js.native
-  sealed trait hoverActive extends IState
+  sealed trait a extends StObject
+  inline def a: a = "a".asInstanceOf[a]
   
   @js.native
-  sealed trait keyActive extends IState
+  sealed trait active
+    extends StObject
+       with InteractiveStateKey
+  inline def active: active = "active".asInstanceOf[active]
   
   @js.native
-  sealed trait keyClick extends ClickType
+  sealed trait as extends StObject
+  inline def as: as = "as".asInstanceOf[as]
   
   @js.native
-  sealed trait mouse extends Focus
+  sealed trait button extends StObject
+  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait mouseClick extends ClickType
+  sealed trait div extends StObject
+  inline def div: div = "div".asInstanceOf[div]
   
   @js.native
-  sealed trait normal extends IState
+  sealed trait focus
+    extends StObject
+       with InteractiveStateKey
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait tab extends Focus
+  sealed trait focusFromKey
+    extends StObject
+       with FocusState
+  inline def focusFromKey: focusFromKey = "focusFromKey".asInstanceOf[focusFromKey]
   
   @js.native
-  sealed trait tapClick extends ClickType
+  sealed trait focusFromMouse
+    extends StObject
+       with FocusState
+  inline def focusFromMouse: focusFromMouse = "focusFromMouse".asInstanceOf[focusFromMouse]
   
   @js.native
-  sealed trait touch extends Focus
+  sealed trait focusFromTouch
+    extends StObject
+       with FocusState
+  inline def focusFromTouch: focusFromTouch = "focusFromTouch".asInstanceOf[focusFromTouch]
   
   @js.native
-  sealed trait touchActive extends IState
+  sealed trait hover
+    extends StObject
+       with InteractiveStateKey
+  inline def hover: hover = "hover".asInstanceOf[hover]
   
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
-  @scala.inline
-  def hoverActive: hoverActive = "hoverActive".asInstanceOf[hoverActive]
-  @scala.inline
-  def keyActive: keyActive = "keyActive".asInstanceOf[keyActive]
-  @scala.inline
-  def keyClick: keyClick = "keyClick".asInstanceOf[keyClick]
-  @scala.inline
-  def mouse: mouse = "mouse".asInstanceOf[mouse]
-  @scala.inline
-  def mouseClick: mouseClick = "mouseClick".asInstanceOf[mouseClick]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def tab: tab = "tab".asInstanceOf[tab]
-  @scala.inline
-  def tapClick: tapClick = "tapClick".asInstanceOf[tapClick]
-  @scala.inline
-  def touch: touch = "touch".asInstanceOf[touch]
-  @scala.inline
-  def touchActive: touchActive = "touchActive".asInstanceOf[touchActive]
+  @js.native
+  sealed trait input extends StObject
+  inline def input: input = "input".asInstanceOf[input]
+  
+  @js.native
+  sealed trait keyActive
+    extends StObject
+       with ActiveState
+  inline def keyActive: keyActive = "keyActive".asInstanceOf[keyActive]
+  
+  @js.native
+  sealed trait mouseActive
+    extends StObject
+       with ActiveState
+  inline def mouseActive: mouseActive = "mouseActive".asInstanceOf[mouseActive]
+  
+  @js.native
+  sealed trait ref extends StObject
+  inline def ref: ref = "ref".asInstanceOf[ref]
+  
+  @js.native
+  sealed trait select extends StObject
+  inline def select: select = "select".asInstanceOf[select]
+  
+  @js.native
+  sealed trait span extends StObject
+  inline def span: span = "span".asInstanceOf[span]
+  
+  @js.native
+  sealed trait touchActive
+    extends StObject
+       with ActiveState
+  inline def touchActive: touchActive = "touchActive".asInstanceOf[touchActive]
 }
-

@@ -10,10 +10,10 @@ Generic React component for displaying static maps using Yahoo, Google or Bing a
 | ------------------ | :-------------: |
 | Full name          | react-cartographer |
 | Keywords           | react, react-component, isomorphic, map, maps, visualization, yahoo maps, google maps, gmaps, bing maps |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 13766 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 634.6666666666666 |
+| # stars            | 82.0 |
 
 ## Links
 - [Homepage](https://github.com/yahoo/react-cartographer#readme)

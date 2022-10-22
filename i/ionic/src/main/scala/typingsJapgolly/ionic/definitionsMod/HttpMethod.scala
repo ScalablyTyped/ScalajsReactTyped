@@ -1,8 +1,8 @@
 package typingsJapgolly.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.ionic.ionicStrings.GET
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.ionic.ionicStrings.HEAD
   - typingsJapgolly.ionic.ionicStrings.OPTIONS
 */
-trait HttpMethod extends js.Object
-
+trait HttpMethod extends StObject
 object HttpMethod {
-  @scala.inline
-  def DELETE: typingsJapgolly.ionic.ionicStrings.DELETE = this.cast("DELETE")
-  @scala.inline
-  def GET: typingsJapgolly.ionic.ionicStrings.GET = this.cast("GET")
-  @scala.inline
-  def HEAD: typingsJapgolly.ionic.ionicStrings.HEAD = this.cast("HEAD")
-  @scala.inline
-  def OPTIONS: typingsJapgolly.ionic.ionicStrings.OPTIONS = this.cast("OPTIONS")
-  @scala.inline
-  def PATCH: typingsJapgolly.ionic.ionicStrings.PATCH = this.cast("PATCH")
-  @scala.inline
-  def POST: typingsJapgolly.ionic.ionicStrings.POST = this.cast("POST")
-  @scala.inline
-  def PURGE: typingsJapgolly.ionic.ionicStrings.PURGE = this.cast("PURGE")
-  @scala.inline
-  def PUT: typingsJapgolly.ionic.ionicStrings.PUT = this.cast("PUT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def DELETE: typingsJapgolly.ionic.ionicStrings.DELETE = "DELETE".asInstanceOf[typingsJapgolly.ionic.ionicStrings.DELETE]
+  
+  inline def GET: typingsJapgolly.ionic.ionicStrings.GET = "GET".asInstanceOf[typingsJapgolly.ionic.ionicStrings.GET]
+  
+  inline def HEAD: typingsJapgolly.ionic.ionicStrings.HEAD = "HEAD".asInstanceOf[typingsJapgolly.ionic.ionicStrings.HEAD]
+  
+  inline def OPTIONS: typingsJapgolly.ionic.ionicStrings.OPTIONS = "OPTIONS".asInstanceOf[typingsJapgolly.ionic.ionicStrings.OPTIONS]
+  
+  inline def PATCH: typingsJapgolly.ionic.ionicStrings.PATCH = "PATCH".asInstanceOf[typingsJapgolly.ionic.ionicStrings.PATCH]
+  
+  inline def POST: typingsJapgolly.ionic.ionicStrings.POST = "POST".asInstanceOf[typingsJapgolly.ionic.ionicStrings.POST]
+  
+  inline def PURGE: typingsJapgolly.ionic.ionicStrings.PURGE = "PURGE".asInstanceOf[typingsJapgolly.ionic.ionicStrings.PURGE]
+  
+  inline def PUT: typingsJapgolly.ionic.ionicStrings.PUT = "PUT".asInstanceOf[typingsJapgolly.ionic.ionicStrings.PUT]
 }
-

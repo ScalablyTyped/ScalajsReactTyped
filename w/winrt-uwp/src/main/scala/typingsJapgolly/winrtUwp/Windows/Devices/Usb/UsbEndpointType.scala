@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Usb
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UsbEndpointType extends js.Object
-
+sealed trait UsbEndpointType extends StObject
 /** Defines constants that indicate the type of USB endpoint: control, bulk, isochronous, or interrupt. */
 @JSGlobal("Windows.Devices.Usb.UsbEndpointType")
 @js.native
-object UsbEndpointType extends js.Object {
+object UsbEndpointType extends StObject {
+  
   /** Indicates a USB bulk endpoint. */
   @js.native
-  sealed trait bulk extends UsbEndpointType
+  sealed trait bulk
+    extends StObject
+       with UsbEndpointType
   
   /** Indicates a USB control endpoint (Endpoint 0). */
   @js.native
-  sealed trait control extends UsbEndpointType
+  sealed trait control
+    extends StObject
+       with UsbEndpointType
   
   /** Indicates a USB interrupt endpoint. */
   @js.native
-  sealed trait interrupt extends UsbEndpointType
+  sealed trait interrupt
+    extends StObject
+       with UsbEndpointType
   
   /** Indicates a USB isochronous endpoint. */
   @js.native
-  sealed trait isochronous extends UsbEndpointType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UsbEndpointType with Double] = js.native
-  /* 2 */ @js.native
-  object bulk extends TopLevel[bulk with Double]
-  
-  /* 0 */ @js.native
-  object control extends TopLevel[control with Double]
-  
-  /* 3 */ @js.native
-  object interrupt extends TopLevel[interrupt with Double]
-  
-  /* 1 */ @js.native
-  object isochronous extends TopLevel[isochronous with Double]
-  
+  sealed trait isochronous
+    extends StObject
+       with UsbEndpointType
 }
-

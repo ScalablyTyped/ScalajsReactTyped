@@ -1,27 +1,44 @@
 package typingsJapgolly.k6
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/metrics", JSImport.Namespace)
-@js.native
-object metricsMod extends js.Object {
-  @js.native
-  class Counter () extends Metric
+object metricsMod {
   
+  @JSImport("k6/metrics", "Counter")
   @js.native
-  class Gauge () extends Metric
-  
-  @js.native
-  abstract class Metric protected () extends js.Object {
+  open class Counter protected () extends Metric {
     /**
       * @param name - Metric name.
       * @param isTime - Whether values are time values.
       */
     def this(name: String) = this()
     def this(name: String, isTime: Boolean) = this()
+  }
+  
+  @JSImport("k6/metrics", "Gauge")
+  @js.native
+  open class Gauge protected () extends Metric {
+    /**
+      * @param name - Metric name.
+      * @param isTime - Whether values are time values.
+      */
+    def this(name: String) = this()
+    def this(name: String, isTime: Boolean) = this()
+  }
+  
+  /* note: abstract class */ @JSImport("k6/metrics", "Metric")
+  @js.native
+  open class Metric protected () extends StObject {
+    /**
+      * @param name - Metric name.
+      * @param isTime - Whether values are time values.
+      */
+    def this(name: String) = this()
+    def this(name: String, isTime: Boolean) = this()
+    
     def add(value: Boolean): Unit = js.native
     def add(value: Boolean, tags: StringDictionary[String]): Unit = js.native
     /**
@@ -31,13 +48,30 @@ object metricsMod extends js.Object {
       */
     def add(value: Double): Unit = js.native
     def add(value: Double, tags: StringDictionary[String]): Unit = js.native
+    
+    /** The name of the custom metric. */
+    var name: String = js.native
   }
   
+  @JSImport("k6/metrics", "Rate")
   @js.native
-  class Rate () extends Metric
+  open class Rate protected () extends Metric {
+    /**
+      * @param name - Metric name.
+      * @param isTime - Whether values are time values.
+      */
+    def this(name: String) = this()
+    def this(name: String, isTime: Boolean) = this()
+  }
   
+  @JSImport("k6/metrics", "Trend")
   @js.native
-  class Trend () extends Metric
-  
+  open class Trend protected () extends Metric {
+    /**
+      * @param name - Metric name.
+      * @param isTime - Whether values are time values.
+      */
+    def this(name: String) = this()
+    def this(name: String, isTime: Boolean) = this()
+  }
 }
-

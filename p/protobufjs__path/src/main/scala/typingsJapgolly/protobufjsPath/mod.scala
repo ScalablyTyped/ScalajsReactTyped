@@ -1,15 +1,19 @@
 package typingsJapgolly.protobufjsPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@protobufjs/path", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def isAbsolute(path: String): Boolean = js.native
-  def normalize(path: String): String = js.native
-  def resolve(originPath: String, includePath: String): String = js.native
-  def resolve(originPath: String, includePath: String, alreadyNormalized: Boolean): String = js.native
+object mod {
+  
+  @JSImport("@protobufjs/path", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def isAbsolute(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def normalize(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def resolve(originPath: String, includePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(originPath.asInstanceOf[js.Any], includePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolve(originPath: String, includePath: String, alreadyNormalized: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(originPath.asInstanceOf[js.Any], includePath.asInstanceOf[js.Any], alreadyNormalized.asInstanceOf[js.Any])).asInstanceOf[String]
 }
-

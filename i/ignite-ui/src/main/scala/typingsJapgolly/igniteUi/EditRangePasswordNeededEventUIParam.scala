@@ -1,32 +1,47 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditRangePasswordNeededEventUIParam extends js.Object {
+trait EditRangePasswordNeededEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the spreadsheet widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the spreadsheet widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Get an array of [protected range](ig.excel.WorksheetProtectedRange) objects that should be unlocked.
-  	 */
-  var ranges: js.UndefOr[js.Array[_]] = js.undefined
+    * Get an array of [protected range](ig.excel.WorksheetProtectedRange) objects that should be unlocked.
+    */
+  var ranges: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Get a parameterless function that may be invoked to unlock the associated ranges.
-  	 */
-  var unprotect: js.UndefOr[js.Any] = js.undefined
+    * Get a parameterless function that may be invoked to unlock the associated ranges.
+    */
+  var unprotect: js.UndefOr[Any] = js.undefined
 }
-
 object EditRangePasswordNeededEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null, ranges: js.Array[_] = null, unprotect: js.Any = null): EditRangePasswordNeededEventUIParam = {
+  
+  inline def apply(): EditRangePasswordNeededEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
-    if (unprotect != null) __obj.updateDynamic("unprotect")(unprotect.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditRangePasswordNeededEventUIParam]
   }
+  
+  extension [Self <: EditRangePasswordNeededEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setRanges(value: js.Array[Any]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    
+    inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+    
+    inline def setRangesVarargs(value: Any*): Self = StObject.set(x, "ranges", js.Array(value*))
+    
+    inline def setUnprotect(value: Any): Self = StObject.set(x, "unprotect", value.asInstanceOf[js.Any])
+    
+    inline def setUnprotectUndefined: Self = StObject.set(x, "unprotect", js.undefined)
+  }
 }
-

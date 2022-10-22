@@ -1,7 +1,7 @@
 
 # Scala.js typings for phenomnomnominal__tsquery
 
-Typings are for version 3.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Query TypeScript ASTs with the esquery API!
@@ -10,10 +10,10 @@ Query TypeScript ASTs with the esquery API!
 | ------------------ | :-------------: |
 | Full name          | @phenomnomnominal/tsquery |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 40 |
-| # downloads        | 2470261 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2521463.3333333335 |
+| # stars            | 743.0 |
 
 ## Links
 - [Homepage](https://github.com/phenomnomnominal/tsquery#readme)

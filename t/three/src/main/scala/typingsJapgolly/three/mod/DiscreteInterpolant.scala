@@ -1,14 +1,13 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "DiscreteInterpolant")
 @js.native
-class DiscreteInterpolant protected ()
-  extends typingsJapgolly.three.discreteInterpolantMod.DiscreteInterpolant {
-  def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: Double) = this()
-  def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: Double, resultBuffer: js.Any) = this()
+open class DiscreteInterpolant protected ()
+  extends typingsJapgolly.three.srcThreeMod.DiscreteInterpolant {
+  def this(parameterPositions: Any, samplesValues: Any, sampleSize: Double) = this()
+  def this(parameterPositions: Any, samplesValues: Any, sampleSize: Double, resultBuffer: Any) = this()
 }
-

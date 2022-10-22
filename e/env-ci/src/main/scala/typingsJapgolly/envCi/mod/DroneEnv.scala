@@ -1,49 +1,73 @@
 package typingsJapgolly.envCi.mod
 
-import typingsJapgolly.envCi.envCiBooleans.`true`
 import typingsJapgolly.envCi.envCiStrings.Drone
 import typingsJapgolly.envCi.envCiStrings.drone_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DroneEnv
-  extends KnownCiEnv
-     with CiEnvBase {
+  extends StObject
+     with CiEnvBase
+     with KnownCiEnv {
+  
   var branch: String
+  
   var build: String
+  
   var commit: String
+  
   var isPr: Boolean
+  
   var job: String
+  
   var name: Drone
+  
   var pr: js.UndefOr[String] = js.undefined
+  
   var prBranch: js.UndefOr[String] = js.undefined
+  
   var service: drone_
+  
   var slug: String
+  
   var tag: js.UndefOr[String] = js.undefined
 }
-
 object DroneEnv {
-  @scala.inline
-  def apply(
-    branch: String,
-    build: String,
-    commit: String,
-    isCi: `true`,
-    isPr: Boolean,
-    job: String,
-    name: Drone,
-    service: drone_,
-    slug: String,
-    pr: String = null,
-    prBranch: String = null,
-    tag: String = null
-  ): DroneEnv = {
-    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
-    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+  
+  inline def apply(branch: String, build: String, commit: String, isPr: Boolean, job: String, slug: String): DroneEnv = {
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], name = "Drone", service = "drone", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroneEnv]
   }
+  
+  extension [Self <: DroneEnv](x: Self) {
+    
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    
+    inline def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    
+    inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    
+    inline def setIsPr(value: Boolean): Self = StObject.set(x, "isPr", value.asInstanceOf[js.Any])
+    
+    inline def setJob(value: String): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: Drone): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setPr(value: String): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+    
+    inline def setPrBranch(value: String): Self = StObject.set(x, "prBranch", value.asInstanceOf[js.Any])
+    
+    inline def setPrBranchUndefined: Self = StObject.set(x, "prBranch", js.undefined)
+    
+    inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
+    
+    inline def setService(value: drone_): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+  }
 }
-

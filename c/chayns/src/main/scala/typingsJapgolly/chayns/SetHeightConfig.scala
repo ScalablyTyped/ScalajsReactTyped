@@ -1,30 +1,41 @@
 package typingsJapgolly.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.setHeight()
-trait SetHeightConfig extends js.Object {
+trait SetHeightConfig extends StObject {
+  
   var full: js.UndefOr[Boolean] = js.undefined
+  
   var fullViewport: js.UndefOr[Boolean] = js.undefined
+  
   var growOnly: js.UndefOr[Boolean] = js.undefined
+  
   var height: Double
 }
-
 object SetHeightConfig {
-  @scala.inline
-  def apply(
-    height: Double,
-    full: js.UndefOr[Boolean] = js.undefined,
-    fullViewport: js.UndefOr[Boolean] = js.undefined,
-    growOnly: js.UndefOr[Boolean] = js.undefined
-  ): SetHeightConfig = {
+  
+  inline def apply(height: Double): SetHeightConfig = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullViewport)) __obj.updateDynamic("fullViewport")(fullViewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(growOnly)) __obj.updateDynamic("growOnly")(growOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetHeightConfig]
   }
+  
+  extension [Self <: SetHeightConfig](x: Self) {
+    
+    inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    
+    inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+    
+    inline def setFullViewport(value: Boolean): Self = StObject.set(x, "fullViewport", value.asInstanceOf[js.Any])
+    
+    inline def setFullViewportUndefined: Self = StObject.set(x, "fullViewport", js.undefined)
+    
+    inline def setGrowOnly(value: Boolean): Self = StObject.set(x, "growOnly", value.asInstanceOf[js.Any])
+    
+    inline def setGrowOnlyUndefined: Self = StObject.set(x, "growOnly", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+  }
 }
-

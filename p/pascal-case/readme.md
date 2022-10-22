@@ -1,7 +1,7 @@
 
 # Scala.js typings for pascal-case
 
-Typings are for version 2.0.1
+Typings are for version 3.1.2
 
 ## Library description:
 Transform into a string of capitalized words without separators
@@ -10,10 +10,10 @@ Transform into a string of capitalized words without separators
 | ------------------ | :-------------: |
 | Full name          | pascal-case |
 | Keywords           | pascal, case, camel, capital, convert, transform, identifier, class |
-| # releases         | 5 |
-| # dependents       | 211 |
-| # downloads        | 45575476 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4.7358259666666664E7 |
+| # stars            | 1779.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/pascal-case#readme)

@@ -2,23 +2,35 @@ package typingsJapgolly.monacoEditor.mod.languages
 
 import typingsJapgolly.monacoEditor.mod.IRange
 import typingsJapgolly.monacoEditor.mod.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ILink extends js.Object {
+trait ILink extends StObject {
+  
   var range: IRange
+  
   var tooltip: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[Uri | String] = js.undefined
 }
-
 object ILink {
-  @scala.inline
-  def apply(range: IRange, tooltip: String = null, url: Uri | String = null): ILink = {
+  
+  inline def apply(range: IRange): ILink = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILink]
   }
+  
+  extension [Self <: ILink](x: Self) {
+    
+    inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setUrl(value: Uri | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

@@ -1,0 +1,35 @@
+organization := "org.scalablytyped.japgolly"
+name := "angular__cli"
+version := "14.2.3-acac26"
+scalaVersion := "3.1.2"
+enablePlugins(ScalaJSPlugin)
+libraryDependencies ++= Seq(
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "ajv" % "8.11.0-e04284",
+  "org.scalablytyped.japgolly" %%% "angular-devkit__architect" % "0.1402.3-4de9c6",
+  "org.scalablytyped.japgolly" %%% "angular-devkit__core" % "14.2.3-c5d746",
+  "org.scalablytyped.japgolly" %%% "angular-devkit__schematics" % "14.2.3-0bd34c",
+  "org.scalablytyped.japgolly" %%% "ansi-colors" % "4.1.3-88caf4",
+  "org.scalablytyped.japgolly" %%% "formdata-polyfill" % "4.0.10-5be100",
+  "org.scalablytyped.japgolly" %%% "inquirer" % "9.0-dt-20220928Z-55772e",
+  "org.scalablytyped.japgolly" %%% "jsonc-parser" % "3.2.0-b0d53a",
+  "org.scalablytyped.japgolly" %%% "magic-string" % "0.26.7-a42afe",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "node-fetch" % "3.2.10-78ad93",
+  "org.scalablytyped.japgolly" %%% "npm-package-arg" % "6.1-dt-20211202Z-57658f",
+  "org.scalablytyped.japgolly" %%% "npm-registry-fetch" % "8.0-dt-20220214Z-b5e754",
+  "org.scalablytyped.japgolly" %%% "npmlog" % "4.1-dt-20211223Z-15c049",
+  "org.scalablytyped.japgolly" %%% "pacote" % "11.1-dt-20220616Z-e269b8",
+  "org.scalablytyped.japgolly" %%% "re2" % "1.17.7-1eb746",
+  "org.scalablytyped.japgolly" %%% "rxjs" % "7.5.7-c83f26",
+  "org.scalablytyped.japgolly" %%% "source-map" % "0.7.4-4daf59",
+  "org.scalablytyped.japgolly" %%% "ssri" % "7.1-dt-20211202Z-541c8a",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "through" % "0.0-unknown-dt-20220818Z-00ddf3",
+  "org.scalablytyped.japgolly" %%% "uri-js" % "4.4.1-ea7df5",
+  "org.scalablytyped.japgolly" %%% "yargs" % "17.0-dt-20220923Z-5c6d88",
+  "org.scalablytyped.japgolly" %%% "yargs-parser" % "21.0-dt-20220624Z-532e39")
+publishArtifact in packageDoc := false
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

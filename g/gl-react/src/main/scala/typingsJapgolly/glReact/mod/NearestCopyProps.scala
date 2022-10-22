@@ -1,19 +1,24 @@
 package typingsJapgolly.glReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NearestCopyProps extends js.Object {
-  var children: js.UndefOr[js.Any] = js.undefined
+trait NearestCopyProps extends StObject {
+  
+  var children: js.UndefOr[Any] = js.undefined
 }
-
 object NearestCopyProps {
-  @scala.inline
-  def apply(children: js.Any = null): NearestCopyProps = {
+  
+  inline def apply(): NearestCopyProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[NearestCopyProps]
   }
+  
+  extension [Self <: NearestCopyProps](x: Self) {
+    
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+  }
 }
-

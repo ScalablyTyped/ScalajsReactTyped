@@ -1,22 +1,22 @@
 
 # Scala.js typings for nightwatch
 
-Typings are for version 1.1
+Typings are for version 2.3
 
 ## Library description:
-Easy to use Node.js based End-to-End testing solution for browser based apps and websites, using the W3C WebDriver API.
+Easy to use Node.js based end-to-end testing solution for web applications using the W3C WebDriver API.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | nightwatch |
-| Keywords           | - |
-| # releases         | 42 |
-| # dependents       | 108 |
-| # downloads        | 8278513 |
-| # stars            | 25 |
+| Keywords           | nightwatch, nightwatchjs, selenium, testing, webdriver, browserstack, end-to-end, automated-testing, e2e |
+| # releases         | 95 |
+| # dependents       | 0.0 |
+| # downloads        | 749744.6666666666 |
+| # stars            | 11196.0 |
 
 ## Links
-- [Homepage](http://nightwatchjs.org)
+- [Homepage](https://nightwatchjs.org)
 - [Bugs](https://github.com/nightwatchjs/nightwatch/issues)
 - [Repository](https://github.com/nightwatchjs/nightwatch)
 - [Npm](https://www.npmjs.com/package/nightwatch)

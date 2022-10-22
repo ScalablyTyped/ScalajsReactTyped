@@ -1,19 +1,24 @@
 package typingsJapgolly.wampy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RPCOptions extends js.Object {
+trait RPCOptions extends StObject {
+  
   var process: js.UndefOr[Boolean] = js.undefined
 }
-
 object RPCOptions {
-  @scala.inline
-  def apply(process: js.UndefOr[Boolean] = js.undefined): RPCOptions = {
+  
+  inline def apply(): RPCOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(process)) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
     __obj.asInstanceOf[RPCOptions]
   }
+  
+  extension [Self <: RPCOptions](x: Self) {
+    
+    inline def setProcess(value: Boolean): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    
+    inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+  }
 }
-

@@ -1,88 +1,76 @@
 package typingsJapgolly.steamid.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TypeChars extends js.Object
-
+sealed trait TypeChars extends StObject
 // Type chars
 @JSImport("steamid", "TypeChars")
 @js.native
-object TypeChars extends js.Object {
-  @js.native
-  sealed trait A extends TypeChars
-  
-  @js.native
-  sealed trait C extends TypeChars
-  
-  @js.native
-  sealed trait G extends TypeChars
-  
-  @js.native
-  sealed trait I extends TypeChars
-  
-  @js.native
-  sealed trait M extends TypeChars
-  
-  @js.native
-  sealed trait P extends TypeChars
-  
-  @js.native
-  sealed trait T extends TypeChars
-  
-  @js.native
-  sealed trait U extends TypeChars
-  
-  @js.native
-  sealed trait a extends TypeChars
-  
-  @js.native
-  sealed trait g extends TypeChars
+object TypeChars extends StObject {
   
   @JSBracketAccess
-  def apply(value: scala.Nothing): js.UndefOr[TypeChars with scala.Nothing] = js.native
-  /* Type.ANON_GAMESERVER */ @js.native
-  object A
-    extends TopLevel[A with scala.Nothing]
+  def apply(value: scala.Nothing): js.UndefOr[TypeChars & scala.Nothing] = js.native
   
-  /* Type.CONTENT_SERVER */ @js.native
-  object C
-    extends TopLevel[C with scala.Nothing]
+  @js.native
+  sealed trait A
+    extends StObject
+       with TypeChars
+  /* Type.ANON_GAMESERVER */ val A: typingsJapgolly.steamid.mod.TypeChars.A & scala.Nothing = js.native
   
-  /* Type.GAMESERVER */ @js.native
-  object G
-    extends TopLevel[G with scala.Nothing]
+  @js.native
+  sealed trait C
+    extends StObject
+       with TypeChars
+  /* Type.CONTENT_SERVER */ val C: typingsJapgolly.steamid.mod.TypeChars.C & scala.Nothing = js.native
   
-  /* Type.INVALID */ @js.native
-  object I
-    extends TopLevel[I with scala.Nothing]
+  @js.native
+  sealed trait G
+    extends StObject
+       with TypeChars
+  /* Type.GAMESERVER */ val G: typingsJapgolly.steamid.mod.TypeChars.G & scala.Nothing = js.native
   
-  /* Type.MULTISEAT */ @js.native
-  object M
-    extends TopLevel[M with scala.Nothing]
+  @js.native
+  sealed trait I
+    extends StObject
+       with TypeChars
+  /* Type.INVALID */ val I: typingsJapgolly.steamid.mod.TypeChars.I & scala.Nothing = js.native
   
-  /* Type.PENDING */ @js.native
-  object P
-    extends TopLevel[P with scala.Nothing]
+  @js.native
+  sealed trait M
+    extends StObject
+       with TypeChars
+  /* Type.MULTISEAT */ val M: typingsJapgolly.steamid.mod.TypeChars.M & scala.Nothing = js.native
   
-  /* Type.CHAT */ @js.native
-  object T
-    extends TopLevel[T with scala.Nothing]
+  @js.native
+  sealed trait P
+    extends StObject
+       with TypeChars
+  /* Type.PENDING */ val P: typingsJapgolly.steamid.mod.TypeChars.P & scala.Nothing = js.native
   
-  /* Type.INDIVIDUAL */ @js.native
-  object U
-    extends TopLevel[U with scala.Nothing]
+  @js.native
+  sealed trait T
+    extends StObject
+       with TypeChars
+  /* Type.CHAT */ val T: typingsJapgolly.steamid.mod.TypeChars.T & scala.Nothing = js.native
   
-  /* Type.ANON_USER */ @js.native
-  object a
-    extends TopLevel[a with scala.Nothing]
+  @js.native
+  sealed trait U
+    extends StObject
+       with TypeChars
+  /* Type.INDIVIDUAL */ val U: typingsJapgolly.steamid.mod.TypeChars.U & scala.Nothing = js.native
   
-  /* Type.CLAN */ @js.native
-  object g
-    extends TopLevel[g with scala.Nothing]
+  @js.native
+  sealed trait a
+    extends StObject
+       with TypeChars
+  /* Type.ANON_USER */ val a: typingsJapgolly.steamid.mod.TypeChars.a & scala.Nothing = js.native
   
+  @js.native
+  sealed trait g
+    extends StObject
+       with TypeChars
+  /* Type.CLAN */ val g: typingsJapgolly.steamid.mod.TypeChars.g & scala.Nothing = js.native
 }
-

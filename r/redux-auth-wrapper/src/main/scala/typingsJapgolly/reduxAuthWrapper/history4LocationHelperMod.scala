@@ -1,14 +1,16 @@
 package typingsJapgolly.reduxAuthWrapper
 
-import typingsJapgolly.reduxAuthWrapper.locationHelperMod.LocationHelper
-import typingsJapgolly.reduxAuthWrapper.locationHelperMod.LocationHelperConfig
+import typingsJapgolly.reduxAuthWrapper.history3LocationHelperMod.LocationHelper
+import typingsJapgolly.reduxAuthWrapper.history3LocationHelperMod.LocationHelperConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-auth-wrapper/history4/locationHelper", JSImport.Namespace)
-@js.native
-object history4LocationHelperMod extends js.Object {
-  def default[Props](config: LocationHelperConfig[Props]): LocationHelper[Props] = js.native
+object history4LocationHelperMod {
+  
+  @JSImport("redux-auth-wrapper/history4/locationHelper", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[Props](config: LocationHelperConfig[Props]): LocationHelper[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[LocationHelper[Props]]
 }
-

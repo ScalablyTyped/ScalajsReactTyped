@@ -1,14 +1,15 @@
 package typingsJapgolly.reactCalendarTimeline.mod
 
-import typingsJapgolly.reactCalendarTimeline.AnonStyle
+import typingsJapgolly.reactCalendarTimeline.anon.Style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SidebarHeaderChildrenFnProps[Data] extends js.Object {
+trait SidebarHeaderChildrenFnProps[Data] extends StObject {
+  
   var data: Data = js.native
-  def getRootProps(): AnonStyle = js.native
-  def getRootProps(propsToOverride: AnonStyle): AnonStyle = js.native
+  
+  def getRootProps(): Style = js.native
+  def getRootProps(propsToOverride: Style): Style = js.native
 }
-

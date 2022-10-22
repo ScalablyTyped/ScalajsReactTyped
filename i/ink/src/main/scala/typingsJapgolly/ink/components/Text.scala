@@ -1,48 +1,61 @@
 package typingsJapgolly.ink.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.ink.mod.TextProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.ink.buildComponentsTextMod.Props
+import typingsJapgolly.ink.inkStrings.`truncate-end`
+import typingsJapgolly.ink.inkStrings.`truncate-middle`
+import typingsJapgolly.ink.inkStrings.`truncate-start`
+import typingsJapgolly.ink.inkStrings.end
+import typingsJapgolly.ink.inkStrings.middle
+import typingsJapgolly.ink.inkStrings.truncate
+import typingsJapgolly.typeFest.sourceLiteralUnionMod.LiteralUnion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Text {
-  def apply(
-    bold: js.UndefOr[Boolean] = js.undefined,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    strikethrough: js.UndefOr[Boolean] = js.undefined,
-    underline: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    TextProps, 
-    MountedWithRawType[TextProps, js.Object, RawMounted[TextProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.ink.mod.TextProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.ink.mod.TextProps])(children: _*)
-  }
   @JSImport("ink", "Text")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def backgroundColor(
+      value: LiteralUnion[
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
+          String
+        ]
+    ): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def bold(value: Boolean): this.type = set("bold", value.asInstanceOf[js.Any])
+    
+    inline def color(
+      value: LiteralUnion[
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
+          String
+        ]
+    ): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def dimColor(value: Boolean): this.type = set("dimColor", value.asInstanceOf[js.Any])
+    
+    inline def inverse(value: Boolean): this.type = set("inverse", value.asInstanceOf[js.Any])
+    
+    inline def italic(value: Boolean): this.type = set("italic", value.asInstanceOf[js.Any])
+    
+    inline def strikethrough(value: Boolean): this.type = set("strikethrough", value.asInstanceOf[js.Any])
+    
+    inline def underline(value: Boolean): this.type = set("underline", value.asInstanceOf[js.Any])
+    
+    inline def wrap(
+      value: typingsJapgolly.ink.inkStrings.wrap | end | middle | `truncate-end` | truncate | `truncate-middle` | `truncate-start`
+    ): this.type = set("wrap", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Text.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

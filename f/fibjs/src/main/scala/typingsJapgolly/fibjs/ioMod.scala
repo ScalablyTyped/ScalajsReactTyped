@@ -1,25 +1,34 @@
 package typingsJapgolly.fibjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
 /**
-	* @brief 输入输出处理模块
-	* @detail 使用方法：,```JavaScript,var io = require('io');,```
-	*/
-@JSImport("io", JSImport.Namespace)
-@js.native
-object ioMod extends js.Object {
-  @js.native
-  class BufferedStream () extends ClassBufferedStream
+  * @brief 输入输出处理模块
+  * @detail 使用方法：,```JavaScript,var io = require('io');,```
+  */
+object ioMod {
   
+  @JSImport("io", JSImport.Namespace)
   @js.native
-  class MemoryStream () extends ClassMemoryStream
+  val ^ : js.Any = js.native
   
-  def bridge(stm1: ClassStream, stm2: ClassStream): Unit = js.native
-  def copyStream(from: ClassStream, to: ClassStream): Double = js.native
-  def copyStream(from: ClassStream, to: ClassStream, bytes: Double): Double = js.native
+  @JSImport("io", "BufferedStream")
+  @js.native
+  open class BufferedStream ()
+    extends StObject
+       with ClassBufferedStream
+  
+  @JSImport("io", "MemoryStream")
+  @js.native
+  open class MemoryStream ()
+    extends StObject
+       with ClassMemoryStream
+  
+  inline def bridge(stm1: ClassStream, stm2: ClassStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bridge")(stm1.asInstanceOf[js.Any], stm2.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def copyStream(from: ClassStream, to: ClassStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("copyStream")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def copyStream(from: ClassStream, to: ClassStream, bytes: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("copyStream")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], bytes.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

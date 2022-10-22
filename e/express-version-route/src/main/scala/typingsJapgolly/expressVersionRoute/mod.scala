@@ -2,13 +2,15 @@ package typingsJapgolly.expressVersionRoute
 
 import typingsJapgolly.express.mod.Handler
 import typingsJapgolly.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("express-version-route", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def route(versionsMap: Map[String, Handler]): Handler = js.native
+object mod {
+  
+  @JSImport("express-version-route", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def route(versionsMap: Map[String, Handler]): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("route")(versionsMap.asInstanceOf[js.Any]).asInstanceOf[Handler]
 }
-

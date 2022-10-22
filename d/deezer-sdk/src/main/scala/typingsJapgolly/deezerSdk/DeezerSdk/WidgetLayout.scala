@@ -1,8 +1,8 @@
 package typingsJapgolly.deezerSdk.DeezerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}
@@ -11,14 +11,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.deezerSdk.deezerSdkStrings.light
   - typingsJapgolly.deezerSdk.deezerSdkStrings.dark
 */
-trait WidgetLayout extends js.Object
-
+trait WidgetLayout extends StObject
 object WidgetLayout {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dark: typingsJapgolly.deezerSdk.deezerSdkStrings.dark = this.cast("dark")
-  @scala.inline
-  def light: typingsJapgolly.deezerSdk.deezerSdkStrings.light = this.cast("light")
+  
+  inline def dark: typingsJapgolly.deezerSdk.deezerSdkStrings.dark = "dark".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.dark]
+  
+  inline def light: typingsJapgolly.deezerSdk.deezerSdkStrings.light = "light".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.light]
 }
-

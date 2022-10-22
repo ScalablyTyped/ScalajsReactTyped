@@ -1,8 +1,8 @@
 package typingsJapgolly.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gm.gmStrings.Assign
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gm.gmStrings.Tint
   - typingsJapgolly.gm.gmStrings.XOR
 */
-trait HighlightStyle extends js.Object
-
+trait HighlightStyle extends StObject
 object HighlightStyle {
-  @scala.inline
-  def Assign: typingsJapgolly.gm.gmStrings.Assign = this.cast("Assign")
-  @scala.inline
-  def Threshold: typingsJapgolly.gm.gmStrings.Threshold = this.cast("Threshold")
-  @scala.inline
-  def Tint: typingsJapgolly.gm.gmStrings.Tint = this.cast("Tint")
-  @scala.inline
-  def XOR: typingsJapgolly.gm.gmStrings.XOR = this.cast("XOR")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Assign: typingsJapgolly.gm.gmStrings.Assign = "Assign".asInstanceOf[typingsJapgolly.gm.gmStrings.Assign]
+  
+  inline def Threshold: typingsJapgolly.gm.gmStrings.Threshold = "Threshold".asInstanceOf[typingsJapgolly.gm.gmStrings.Threshold]
+  
+  inline def Tint: typingsJapgolly.gm.gmStrings.Tint = "Tint".asInstanceOf[typingsJapgolly.gm.gmStrings.Tint]
+  
+  inline def XOR: typingsJapgolly.gm.gmStrings.XOR = "XOR".asInstanceOf[typingsJapgolly.gm.gmStrings.XOR]
 }
-

@@ -1,21 +1,33 @@
 package typingsJapgolly.zui
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AffixOptions extends js.Object {
+trait AffixOptions extends StObject {
+  
   var offset: js.UndefOr[Double | CallBack | js.Object] = js.undefined
-  var target: js.UndefOr[js.Any] = js.undefined
+  
+  var target: js.UndefOr[Any] = js.undefined
 }
-
 object AffixOptions {
-  @scala.inline
-  def apply(offset: Double | CallBack | js.Object = null, target: js.Any = null): AffixOptions = {
+  
+  inline def apply(): AffixOptions = {
     val __obj = js.Dynamic.literal()
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[AffixOptions]
   }
+  
+  extension [Self <: AffixOptions](x: Self) {
+    
+    inline def setOffset(value: Double | CallBack | js.Object): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetCallback(value: Callback): Self = StObject.set(x, "offset", value.toJsFn)
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

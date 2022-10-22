@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.Globalization.DateTimeFormatting
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SecondFormat extends js.Object
-
+sealed trait SecondFormat extends StObject
 @JSGlobal("Windows.Globalization.DateTimeFormatting.SecondFormat")
 @js.native
-object SecondFormat extends js.Object {
-  @js.native
-  sealed trait default extends SecondFormat
+object SecondFormat extends StObject {
   
   @js.native
-  sealed trait none extends SecondFormat
+  sealed trait default
+    extends StObject
+       with SecondFormat
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SecondFormat with Double] = js.native
-  /* 1 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  @js.native
+  sealed trait none
+    extends StObject
+       with SecondFormat
 }
-

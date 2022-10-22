@@ -1,83 +1,79 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`10`
-import typingsJapgolly.mfiles.mfilesNumbers.`11`
-import typingsJapgolly.mfiles.mfilesNumbers.`12`
-import typingsJapgolly.mfiles.mfilesNumbers.`13`
-import typingsJapgolly.mfiles.mfilesNumbers.`14`
-import typingsJapgolly.mfiles.mfilesNumbers.`15`
-import typingsJapgolly.mfiles.mfilesNumbers.`16`
-import typingsJapgolly.mfiles.mfilesNumbers.`17`
-import typingsJapgolly.mfiles.mfilesNumbers.`1`
-import typingsJapgolly.mfiles.mfilesNumbers.`2`
-import typingsJapgolly.mfiles.mfilesNumbers.`3`
-import typingsJapgolly.mfiles.mfilesNumbers.`4`
-import typingsJapgolly.mfiles.mfilesNumbers.`5`
-import typingsJapgolly.mfiles.mfilesNumbers.`6`
-import typingsJapgolly.mfiles.mfilesNumbers.`7`
-import typingsJapgolly.mfiles.mfilesNumbers.`8`
-import typingsJapgolly.mfiles.mfilesNumbers.`9`
+import typingsJapgolly.mfiles.mfilesInts.`10`
+import typingsJapgolly.mfiles.mfilesInts.`11`
+import typingsJapgolly.mfiles.mfilesInts.`12`
+import typingsJapgolly.mfiles.mfilesInts.`13`
+import typingsJapgolly.mfiles.mfilesInts.`14`
+import typingsJapgolly.mfiles.mfilesInts.`15`
+import typingsJapgolly.mfiles.mfilesInts.`16`
+import typingsJapgolly.mfiles.mfilesInts.`17`
+import typingsJapgolly.mfiles.mfilesInts.`1`
+import typingsJapgolly.mfiles.mfilesInts.`2`
+import typingsJapgolly.mfiles.mfilesInts.`3`
+import typingsJapgolly.mfiles.mfilesInts.`4`
+import typingsJapgolly.mfiles.mfilesInts.`5`
+import typingsJapgolly.mfiles.mfilesInts.`6`
+import typingsJapgolly.mfiles.mfilesInts.`7`
+import typingsJapgolly.mfiles.mfilesInts.`8`
+import typingsJapgolly.mfiles.mfilesInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.mfiles.mfilesNumbers.`1`
-  - typingsJapgolly.mfiles.mfilesNumbers.`2`
-  - typingsJapgolly.mfiles.mfilesNumbers.`3`
-  - typingsJapgolly.mfiles.mfilesNumbers.`4`
-  - typingsJapgolly.mfiles.mfilesNumbers.`5`
-  - typingsJapgolly.mfiles.mfilesNumbers.`6`
-  - typingsJapgolly.mfiles.mfilesNumbers.`7`
-  - typingsJapgolly.mfiles.mfilesNumbers.`8`
-  - typingsJapgolly.mfiles.mfilesNumbers.`9`
-  - typingsJapgolly.mfiles.mfilesNumbers.`10`
-  - typingsJapgolly.mfiles.mfilesNumbers.`11`
-  - typingsJapgolly.mfiles.mfilesNumbers.`12`
-  - typingsJapgolly.mfiles.mfilesNumbers.`13`
-  - typingsJapgolly.mfiles.mfilesNumbers.`14`
-  - typingsJapgolly.mfiles.mfilesNumbers.`15`
-  - typingsJapgolly.mfiles.mfilesNumbers.`16`
-  - typingsJapgolly.mfiles.mfilesNumbers.`17`
+  - typingsJapgolly.mfiles.mfilesInts.`1`
+  - typingsJapgolly.mfiles.mfilesInts.`2`
+  - typingsJapgolly.mfiles.mfilesInts.`3`
+  - typingsJapgolly.mfiles.mfilesInts.`4`
+  - typingsJapgolly.mfiles.mfilesInts.`5`
+  - typingsJapgolly.mfiles.mfilesInts.`6`
+  - typingsJapgolly.mfiles.mfilesInts.`7`
+  - typingsJapgolly.mfiles.mfilesInts.`8`
+  - typingsJapgolly.mfiles.mfilesInts.`9`
+  - typingsJapgolly.mfiles.mfilesInts.`10`
+  - typingsJapgolly.mfiles.mfilesInts.`11`
+  - typingsJapgolly.mfiles.mfilesInts.`12`
+  - typingsJapgolly.mfiles.mfilesInts.`13`
+  - typingsJapgolly.mfiles.mfilesInts.`14`
+  - typingsJapgolly.mfiles.mfilesInts.`15`
+  - typingsJapgolly.mfiles.mfilesInts.`16`
+  - typingsJapgolly.mfiles.mfilesInts.`17`
 */
-trait MFConditionType extends js.Object
-
+trait MFConditionType extends StObject
 object MFConditionType {
-  @scala.inline
-  def Contains: `7` = this.cast(7)
-  @scala.inline
-  def ContainsAnyBitwise: `16` = this.cast(16)
-  @scala.inline
-  def DoesNotContain: `8` = this.cast(8)
-  @scala.inline
-  def DoesNotContainAnyBitwise: `17` = this.cast(17)
-  @scala.inline
-  def DoesNotMatchWildcardPattern: `12` = this.cast(12)
-  @scala.inline
-  def DoesNotStartWith: `10` = this.cast(10)
-  @scala.inline
-  def Equal: `1` = this.cast(1)
-  @scala.inline
-  def GreaterThan: `3` = this.cast(3)
-  @scala.inline
-  def GreaterThanOrEqual: `5` = this.cast(5)
-  @scala.inline
-  def IsMissing: `13` = this.cast(13)
-  @scala.inline
-  def IsNotMissing: `14` = this.cast(14)
-  @scala.inline
-  def LessThan: `4` = this.cast(4)
-  @scala.inline
-  def LessThanOrEqual: `6` = this.cast(6)
-  @scala.inline
-  def MatchesWildcardPattern: `11` = this.cast(11)
-  @scala.inline
-  def NotEqual: `2` = this.cast(2)
-  @scala.inline
-  def StartsWith: `9` = this.cast(9)
-  @scala.inline
-  def StartsWithAtWordBoundary: `15` = this.cast(15)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Contains: `7` = 7.asInstanceOf[`7`]
+  
+  inline def ContainsAnyBitwise: `16` = 16.asInstanceOf[`16`]
+  
+  inline def DoesNotContain: `8` = 8.asInstanceOf[`8`]
+  
+  inline def DoesNotContainAnyBitwise: `17` = 17.asInstanceOf[`17`]
+  
+  inline def DoesNotMatchWildcardPattern: `12` = 12.asInstanceOf[`12`]
+  
+  inline def DoesNotStartWith: `10` = 10.asInstanceOf[`10`]
+  
+  inline def Equal: `1` = 1.asInstanceOf[`1`]
+  
+  inline def GreaterThan: `3` = 3.asInstanceOf[`3`]
+  
+  inline def GreaterThanOrEqual: `5` = 5.asInstanceOf[`5`]
+  
+  inline def IsMissing: `13` = 13.asInstanceOf[`13`]
+  
+  inline def IsNotMissing: `14` = 14.asInstanceOf[`14`]
+  
+  inline def LessThan: `4` = 4.asInstanceOf[`4`]
+  
+  inline def LessThanOrEqual: `6` = 6.asInstanceOf[`6`]
+  
+  inline def MatchesWildcardPattern: `11` = 11.asInstanceOf[`11`]
+  
+  inline def NotEqual: `2` = 2.asInstanceOf[`2`]
+  
+  inline def StartsWith: `9` = 9.asInstanceOf[`9`]
+  
+  inline def StartsWithAtWordBoundary: `15` = 15.asInstanceOf[`15`]
 }
-

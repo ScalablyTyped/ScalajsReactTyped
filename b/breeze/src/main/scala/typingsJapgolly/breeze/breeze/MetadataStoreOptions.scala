@@ -1,24 +1,30 @@
 package typingsJapgolly.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MetadataStoreOptions extends js.Object {
+trait MetadataStoreOptions extends StObject {
+  
   var localQueryComparisonOptions: js.UndefOr[LocalQueryComparisonOptions] = js.undefined
+  
   var namingConvention: js.UndefOr[NamingConvention] = js.undefined
 }
-
 object MetadataStoreOptions {
-  @scala.inline
-  def apply(
-    localQueryComparisonOptions: LocalQueryComparisonOptions = null,
-    namingConvention: NamingConvention = null
-  ): MetadataStoreOptions = {
+  
+  inline def apply(): MetadataStoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (localQueryComparisonOptions != null) __obj.updateDynamic("localQueryComparisonOptions")(localQueryComparisonOptions.asInstanceOf[js.Any])
-    if (namingConvention != null) __obj.updateDynamic("namingConvention")(namingConvention.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataStoreOptions]
   }
+  
+  extension [Self <: MetadataStoreOptions](x: Self) {
+    
+    inline def setLocalQueryComparisonOptions(value: LocalQueryComparisonOptions): Self = StObject.set(x, "localQueryComparisonOptions", value.asInstanceOf[js.Any])
+    
+    inline def setLocalQueryComparisonOptionsUndefined: Self = StObject.set(x, "localQueryComparisonOptions", js.undefined)
+    
+    inline def setNamingConvention(value: NamingConvention): Self = StObject.set(x, "namingConvention", value.asInstanceOf[js.Any])
+    
+    inline def setNamingConventionUndefined: Self = StObject.set(x, "namingConvention", js.undefined)
+  }
 }
-

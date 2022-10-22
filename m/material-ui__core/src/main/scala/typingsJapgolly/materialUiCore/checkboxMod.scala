@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.checkboxCheckboxMod.CheckboxProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Checkbox", JSImport.Namespace)
-@js.native
-object checkboxMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[CheckboxProps, ComponentState, js.Any] {
-    def this(props: CheckboxProps) = this()
-    def this(props: CheckboxProps, context: js.Any) = this()
-  }
+object checkboxMod {
   
+  @JSImport("@material-ui/core/Checkbox", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[CheckboxProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: CheckboxProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

@@ -10,10 +10,10 @@ React wrapper for highcharts
 | ------------------ | :-------------: |
 | Full name          | react-highcharts |
 | Keywords           | chart, react, highcharts, graph |
-| # releases         | 5 |
-| # dependents       | 73 |
-| # downloads        | 2160338 |
-| # stars            | 17 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 159392.0 |
+| # stars            | 1249.0 |
 
 ## Links
 - [Homepage](https://github.com/kirjs/react-highcharts#readme)

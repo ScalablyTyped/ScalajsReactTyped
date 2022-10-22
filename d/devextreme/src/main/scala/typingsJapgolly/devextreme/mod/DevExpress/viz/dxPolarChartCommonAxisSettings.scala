@@ -1,81 +1,155 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.AnonColorOpacity
-import typingsJapgolly.devextreme.devextremeStrings.betweenLabels
-import typingsJapgolly.devextreme.devextremeStrings.crossLabels
+import typingsJapgolly.devextreme.anon.ColorOpacity
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.DiscreteAxisDivisionMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPolarChartCommonAxisSettings extends js.Object {
-  /** Specifies whether to allow decimal values on the axis. When false, the axis contains integer values only. */
+trait dxPolarChartCommonAxisSettings extends StObject {
+  
+  /**
+    * Specifies whether to allow decimal values on the axis. When false, the axis contains integer values only.
+    */
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the color of the line that represents an axis. */
+  
+  /**
+    * Specifies the color of the line that represents an axis.
+    */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies the appearance of all the widget's constant lines. */
+  
+  /**
+    * Specifies the appearance of all the UI component&apos;s constant lines.
+    */
   var constantLineStyle: js.UndefOr[dxPolarChartCommonAxisSettingsConstantLineStyle] = js.undefined
-  /** Specifies whether ticks/grid lines of a discrete axis are located between labels or cross the labels. */
-  var discreteAxisDivisionMode: js.UndefOr[betweenLabels | crossLabels] = js.undefined
-  /** Specifies whether to force the axis to start and end on ticks. */
+  
+  /**
+    * Specifies whether ticks/grid lines of a discrete axis are located between labels or cross the labels.
+    */
+  var discreteAxisDivisionMode: js.UndefOr[DiscreteAxisDivisionMode] = js.undefined
+  
+  /**
+    * Specifies whether to force the axis to start and end on ticks.
+    */
   var endOnTick: js.UndefOr[Boolean] = js.undefined
-  /** An object defining the configuration options for the grid lines of an axis in the PolarChart widget. */
-  var grid: js.UndefOr[AnonColorOpacity] = js.undefined
-  /** Indicates whether or not an axis is inverted. */
+  
+  /**
+    * An object defining the configuration properties for the grid lines of an axis in the PolarChart UI component.
+    */
+  var grid: js.UndefOr[ColorOpacity] = js.undefined
+  
+  /**
+    * Indicates whether or not an axis is inverted.
+    */
   var inverted: js.UndefOr[Boolean] = js.undefined
-  /** An object defining the label configuration options that are common for all axes in the PolarChart widget. */
+  
+  /**
+    * An object defining the label configuration properties that are common for all axes in the PolarChart UI component.
+    */
   var label: js.UndefOr[dxPolarChartCommonAxisSettingsLabel] = js.undefined
-  /** Specifies the options of the minor grid. */
-  var minorGrid: js.UndefOr[AnonColorOpacity] = js.undefined
-  /** Specifies the options of the minor ticks. */
+  
+  /**
+    * Specifies the properties of the minor grid.
+    */
+  var minorGrid: js.UndefOr[ColorOpacity] = js.undefined
+  
+  /**
+    * Specifies the properties of the minor ticks.
+    */
   var minorTick: js.UndefOr[dxPolarChartCommonAxisSettingsMinorTick] = js.undefined
-  /** Specifies the opacity of the line that represents an axis. */
+  
+  /**
+    * Specifies the opacity of the line that represents an axis.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** An object defining configuration options for strip style. */
+  
+  /**
+    * An object defining configuration properties for strip style.
+    */
   var stripStyle: js.UndefOr[dxPolarChartCommonAxisSettingsStripStyle] = js.undefined
-  /** An object defining the configuration options for axis ticks. */
+  
+  /**
+    * An object defining the configuration properties for axis ticks.
+    */
   var tick: js.UndefOr[dxPolarChartCommonAxisSettingsTick] = js.undefined
-  /** Indicates whether or not the line that represents an axis in a chart is visible. */
+  
+  /**
+    * Indicates whether or not the line that represents an axis in a chart is visible.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the width of the line that represents an axis in the chart. */
+  
+  /**
+    * Specifies the width of the line that represents an axis in the chart.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object dxPolarChartCommonAxisSettings {
-  @scala.inline
-  def apply(
-    allowDecimals: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    constantLineStyle: dxPolarChartCommonAxisSettingsConstantLineStyle = null,
-    discreteAxisDivisionMode: betweenLabels | crossLabels = null,
-    endOnTick: js.UndefOr[Boolean] = js.undefined,
-    grid: AnonColorOpacity = null,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    label: dxPolarChartCommonAxisSettingsLabel = null,
-    minorGrid: AnonColorOpacity = null,
-    minorTick: dxPolarChartCommonAxisSettingsMinorTick = null,
-    opacity: Int | Double = null,
-    stripStyle: dxPolarChartCommonAxisSettingsStripStyle = null,
-    tick: dxPolarChartCommonAxisSettingsTick = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
-  ): dxPolarChartCommonAxisSettings = {
+  
+  inline def apply(): dxPolarChartCommonAxisSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (constantLineStyle != null) __obj.updateDynamic("constantLineStyle")(constantLineStyle.asInstanceOf[js.Any])
-    if (discreteAxisDivisionMode != null) __obj.updateDynamic("discreteAxisDivisionMode")(discreteAxisDivisionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(endOnTick)) __obj.updateDynamic("endOnTick")(endOnTick.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (minorGrid != null) __obj.updateDynamic("minorGrid")(minorGrid.asInstanceOf[js.Any])
-    if (minorTick != null) __obj.updateDynamic("minorTick")(minorTick.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (stripStyle != null) __obj.updateDynamic("stripStyle")(stripStyle.asInstanceOf[js.Any])
-    if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartCommonAxisSettings]
   }
+  
+  extension [Self <: dxPolarChartCommonAxisSettings](x: Self) {
+    
+    inline def setAllowDecimals(value: Boolean): Self = StObject.set(x, "allowDecimals", value.asInstanceOf[js.Any])
+    
+    inline def setAllowDecimalsUndefined: Self = StObject.set(x, "allowDecimals", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setConstantLineStyle(value: dxPolarChartCommonAxisSettingsConstantLineStyle): Self = StObject.set(x, "constantLineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setConstantLineStyleUndefined: Self = StObject.set(x, "constantLineStyle", js.undefined)
+    
+    inline def setDiscreteAxisDivisionMode(value: DiscreteAxisDivisionMode): Self = StObject.set(x, "discreteAxisDivisionMode", value.asInstanceOf[js.Any])
+    
+    inline def setDiscreteAxisDivisionModeUndefined: Self = StObject.set(x, "discreteAxisDivisionMode", js.undefined)
+    
+    inline def setEndOnTick(value: Boolean): Self = StObject.set(x, "endOnTick", value.asInstanceOf[js.Any])
+    
+    inline def setEndOnTickUndefined: Self = StObject.set(x, "endOnTick", js.undefined)
+    
+    inline def setGrid(value: ColorOpacity): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    
+    inline def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+    
+    inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
+    
+    inline def setLabel(value: dxPolarChartCommonAxisSettingsLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setMinorGrid(value: ColorOpacity): Self = StObject.set(x, "minorGrid", value.asInstanceOf[js.Any])
+    
+    inline def setMinorGridUndefined: Self = StObject.set(x, "minorGrid", js.undefined)
+    
+    inline def setMinorTick(value: dxPolarChartCommonAxisSettingsMinorTick): Self = StObject.set(x, "minorTick", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTickUndefined: Self = StObject.set(x, "minorTick", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setStripStyle(value: dxPolarChartCommonAxisSettingsStripStyle): Self = StObject.set(x, "stripStyle", value.asInstanceOf[js.Any])
+    
+    inline def setStripStyleUndefined: Self = StObject.set(x, "stripStyle", js.undefined)
+    
+    inline def setTick(value: dxPolarChartCommonAxisSettingsTick): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    
+    inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

@@ -1,19 +1,24 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigatorStorage extends js.Object {
+/** Available only in secure contexts. */
+trait NavigatorStorage extends StObject {
+  
+  /* standard dom */
   val storage: StorageManager
 }
-
 object NavigatorStorage {
-  @scala.inline
-  def apply(storage: StorageManager): NavigatorStorage = {
-    val __obj = js.Dynamic.literal(storage = storage.asInstanceOf[js.Any])
   
+  inline def apply(storage: StorageManager): NavigatorStorage = {
+    val __obj = js.Dynamic.literal(storage = storage.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorStorage]
   }
+  
+  extension [Self <: NavigatorStorage](x: Self) {
+    
+    inline def setStorage(value: StorageManager): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+  }
 }
-

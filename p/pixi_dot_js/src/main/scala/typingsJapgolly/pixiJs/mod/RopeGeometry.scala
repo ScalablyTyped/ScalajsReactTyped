@@ -1,30 +1,25 @@
 package typingsJapgolly.pixiJs.mod
 
+import typingsJapgolly.pixiMath.mod.IPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * RopeGeometry allows you to draw a geometry across several points and then manipulate these points.
-  *
-  * ```js
-  * for (let i = 0; i < 20; i++) {
-  *     points.push(new PIXI.Point(i * 50, 0));
-  * };
-  * const rope = new PIXI.RopeGeometry(100, points);
-  * ```
-  *
-  * @class
-  * @extends PIXI.MeshGeometry
-  * @memberof PIXI
-  *
-  */
 @JSImport("pixi.js", "RopeGeometry")
 @js.native
-class RopeGeometry ()
-  extends typingsJapgolly.pixiJs.PIXI.RopeGeometry {
-  def this(width: Double) = this()
-  def this(width: Double, points: js.Array[typingsJapgolly.pixiJs.PIXI.Point]) = this()
-  def this(width: Double, points: js.Array[typingsJapgolly.pixiJs.PIXI.Point], textureScale: Double) = this()
+open class RopeGeometry protected ()
+  extends typingsJapgolly.pixiMeshExtras.mod.RopeGeometry {
+  /**
+    * @param width - The width (i.e., thickness) of the rope.
+    * @param points - An array of {@link PIXI.Point} objects to construct this rope.
+    * @param textureScale - By default the rope texture will be stretched to match
+    *     rope length. If textureScale is positive this value will be treated as a scaling
+    *     factor and the texture will preserve its aspect ratio instead. To create a tiling rope
+    *     set baseTexture.wrapMode to {@link PIXI.WRAP_MODES.REPEAT} and use a power of two texture,
+    *     then set textureScale=1 to keep the original texture pixel size.
+    *     In order to reduce alpha channel artifacts provide a larger texture and downsample -
+    *     i.e. set textureScale=0.5 to scale it down twice.
+    */
+  def this(width: Double, points: js.Array[IPoint]) = this()
+  def this(width: Double, points: js.Array[IPoint], textureScale: Double) = this()
 }
-

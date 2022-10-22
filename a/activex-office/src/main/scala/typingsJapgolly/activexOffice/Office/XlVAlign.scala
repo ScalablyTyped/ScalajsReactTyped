@@ -1,35 +1,31 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-4107`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-4108`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-4117`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-4130`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-4160`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-4107`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-4108`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-4117`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-4130`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-4160`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-4107`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-4108`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-4117`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-4130`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-4160`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-4107`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-4108`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-4117`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-4130`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-4160`
 */
-trait XlVAlign extends js.Object
-
+trait XlVAlign extends StObject
 object XlVAlign {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlVAlignBottom: `-4107` = this.cast(-4107)
-  @scala.inline
-  def xlVAlignCenter: `-4108` = this.cast(-4108)
-  @scala.inline
-  def xlVAlignDistributed: `-4117` = this.cast(-4117)
-  @scala.inline
-  def xlVAlignJustify: `-4130` = this.cast(-4130)
-  @scala.inline
-  def xlVAlignTop: `-4160` = this.cast(-4160)
+  
+  inline def xlVAlignBottom: `-4107` = -4107.asInstanceOf[`-4107`]
+  
+  inline def xlVAlignCenter: `-4108` = -4108.asInstanceOf[`-4108`]
+  
+  inline def xlVAlignDistributed: `-4117` = -4117.asInstanceOf[`-4117`]
+  
+  inline def xlVAlignJustify: `-4130` = -4130.asInstanceOf[`-4130`]
+  
+  inline def xlVAlignTop: `-4160` = -4160.asInstanceOf[`-4160`]
 }
-

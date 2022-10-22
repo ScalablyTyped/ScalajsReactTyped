@@ -1,56 +1,44 @@
 package typingsJapgolly.antdMobileRn.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.imagePickerIndexNativeMod.ImagePickerNativeProps
-import typingsJapgolly.antdMobileRn.imagePickerStyleIndexNativeMod.IImagePickerStyle
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.libImagePickerIndexDotnativeMod.ImagePickerNativeProps
+import typingsJapgolly.antdMobileRn.libImagePickerStyleIndexDotnativeMod.IImagePickerStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ImagePicker {
-  def apply(
-    files: js.Array[js.Object] = null,
-    onAddImageClick: js.UndefOr[Callback] = js.undefined,
-    onChange: (/* files */ js.Array[js.Object], /* operationType */ String, /* index */ js.UndefOr[Double]) => Callback = null,
-    onFail: /* msg */ String => Callback = null,
-    onImageClick: (/* index */ js.UndefOr[Double], /* files */ js.UndefOr[js.Array[js.Object]]) => Callback = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    styles: IImagePickerStyle = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ImagePickerNativeProps, 
-    typingsJapgolly.antdMobileRn.mod.ImagePicker, 
-    Unit, 
-    ImagePickerNativeProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    onAddImageClick.foreach(p => __obj.updateDynamic("onAddImageClick")(p.toJsFn))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3((t0: /* files */ js.Array[js.Object], t1: /* operationType */ java.lang.String, t2: /* index */ js.UndefOr[scala.Double]) => onChange(t0, t1, t2).runNow()))
-    if (onFail != null) __obj.updateDynamic("onFail")(js.Any.fromFunction1((t0: /* msg */ java.lang.String) => onFail(t0).runNow()))
-    if (onImageClick != null) __obj.updateDynamic("onImageClick")(js.Any.fromFunction2((t0: /* index */ js.UndefOr[scala.Double], t1: /* files */ js.UndefOr[js.Array[js.Object]]) => onImageClick(t0, t1).runNow()))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.imagePickerIndexNativeMod.ImagePickerNativeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.mod.ImagePicker](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.imagePickerIndexNativeMod.ImagePickerNativeProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn", "ImagePicker")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antdMobileRn.mod.ImagePicker] {
+    
+    inline def files(value: js.Array[js.Object]): this.type = set("files", value.asInstanceOf[js.Any])
+    
+    inline def filesVarargs(value: js.Object*): this.type = set("files", js.Array(value*))
+    
+    inline def onAddImageClick(value: Callback): this.type = set("onAddImageClick", value.toJsFn)
+    
+    inline def onChange(
+      value: (/* files */ js.Array[js.Object], /* operationType */ String, /* index */ js.UndefOr[Double]) => Callback
+    ): this.type = set("onChange", js.Any.fromFunction3((t0: /* files */ js.Array[js.Object], t1: /* operationType */ String, t2: /* index */ js.UndefOr[Double]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def onFail(value: /* msg */ String => Callback): this.type = set("onFail", js.Any.fromFunction1((t0: /* msg */ String) => value(t0).runNow()))
+    
+    inline def onImageClick(value: (/* index */ js.UndefOr[Double], /* files */ js.UndefOr[js.Array[js.Object]]) => Callback): this.type = set("onImageClick", js.Any.fromFunction2((t0: /* index */ js.UndefOr[Double], t1: /* files */ js.UndefOr[js.Array[js.Object]]) => (value(t0, t1)).runNow()))
+    
+    inline def selectable(value: Boolean): this.type = set("selectable", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IImagePickerStyle): this.type = set("styles", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ImagePicker.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ImagePickerNativeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

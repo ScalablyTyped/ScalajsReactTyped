@@ -1,41 +1,32 @@
 package typingsJapgolly.sharepoint.SP.UserProfiles
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FollowedItemType extends js.Object
-
+sealed trait FollowedItemType extends StObject
 @JSGlobal("SP.UserProfiles.FollowedItemType")
 @js.native
-object FollowedItemType extends js.Object {
-  @js.native
-  sealed trait all extends FollowedItemType
+object FollowedItemType extends StObject {
   
   @js.native
-  sealed trait document extends FollowedItemType
+  sealed trait all
+    extends StObject
+       with FollowedItemType
   
   @js.native
-  sealed trait site extends FollowedItemType
+  sealed trait document
+    extends StObject
+       with FollowedItemType
   
   @js.native
-  sealed trait unknown extends FollowedItemType
+  sealed trait site
+    extends StObject
+       with FollowedItemType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FollowedItemType with Double] = js.native
-  /* 3 */ @js.native
-  object all extends TopLevel[all with Double]
-  
-  /* 1 */ @js.native
-  object document extends TopLevel[document with Double]
-  
-  /* 2 */ @js.native
-  object site extends TopLevel[site with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  @js.native
+  sealed trait unknown
+    extends StObject
+       with FollowedItemType
 }
-

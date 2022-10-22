@@ -1,27 +1,66 @@
 package typingsJapgolly.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IAccordionOptions extends js.Object {
+trait IAccordionOptions extends StObject {
+  
   var allowAllClosed: js.UndefOr[Boolean] = js.undefined
+  
+  var deepLink: js.UndefOr[Boolean] = js.undefined
+  
+  var deepLinkSmudge: js.UndefOr[Boolean] = js.undefined
+  
+  var deepLinkSmudgeDelay: js.UndefOr[Double] = js.undefined
+  
+  var deepLinkSmudgeOffset: js.UndefOr[Double] = js.undefined
+  
   var multiExpand: js.UndefOr[Boolean] = js.undefined
+  
   var slideSpeed: js.UndefOr[Double] = js.undefined
+  
+  var updateHistory: js.UndefOr[Boolean] = js.undefined
 }
-
 object IAccordionOptions {
-  @scala.inline
-  def apply(
-    allowAllClosed: js.UndefOr[Boolean] = js.undefined,
-    multiExpand: js.UndefOr[Boolean] = js.undefined,
-    slideSpeed: Int | Double = null
-  ): IAccordionOptions = {
+  
+  inline def apply(): IAccordionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAllClosed)) __obj.updateDynamic("allowAllClosed")(allowAllClosed.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiExpand)) __obj.updateDynamic("multiExpand")(multiExpand.asInstanceOf[js.Any])
-    if (slideSpeed != null) __obj.updateDynamic("slideSpeed")(slideSpeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAccordionOptions]
   }
+  
+  extension [Self <: IAccordionOptions](x: Self) {
+    
+    inline def setAllowAllClosed(value: Boolean): Self = StObject.set(x, "allowAllClosed", value.asInstanceOf[js.Any])
+    
+    inline def setAllowAllClosedUndefined: Self = StObject.set(x, "allowAllClosed", js.undefined)
+    
+    inline def setDeepLink(value: Boolean): Self = StObject.set(x, "deepLink", value.asInstanceOf[js.Any])
+    
+    inline def setDeepLinkSmudge(value: Boolean): Self = StObject.set(x, "deepLinkSmudge", value.asInstanceOf[js.Any])
+    
+    inline def setDeepLinkSmudgeDelay(value: Double): Self = StObject.set(x, "deepLinkSmudgeDelay", value.asInstanceOf[js.Any])
+    
+    inline def setDeepLinkSmudgeDelayUndefined: Self = StObject.set(x, "deepLinkSmudgeDelay", js.undefined)
+    
+    inline def setDeepLinkSmudgeOffset(value: Double): Self = StObject.set(x, "deepLinkSmudgeOffset", value.asInstanceOf[js.Any])
+    
+    inline def setDeepLinkSmudgeOffsetUndefined: Self = StObject.set(x, "deepLinkSmudgeOffset", js.undefined)
+    
+    inline def setDeepLinkSmudgeUndefined: Self = StObject.set(x, "deepLinkSmudge", js.undefined)
+    
+    inline def setDeepLinkUndefined: Self = StObject.set(x, "deepLink", js.undefined)
+    
+    inline def setMultiExpand(value: Boolean): Self = StObject.set(x, "multiExpand", value.asInstanceOf[js.Any])
+    
+    inline def setMultiExpandUndefined: Self = StObject.set(x, "multiExpand", js.undefined)
+    
+    inline def setSlideSpeed(value: Double): Self = StObject.set(x, "slideSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setSlideSpeedUndefined: Self = StObject.set(x, "slideSpeed", js.undefined)
+    
+    inline def setUpdateHistory(value: Boolean): Self = StObject.set(x, "updateHistory", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateHistoryUndefined: Self = StObject.set(x, "updateHistory", js.undefined)
+  }
 }
-

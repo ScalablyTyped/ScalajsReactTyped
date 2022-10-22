@@ -1,23 +1,36 @@
 package typingsJapgolly.reactImgix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FaceDetectionParams extends js.Object {
+trait FaceDetectionParams extends StObject {
+  
   var faceindex: js.UndefOr[ImgixParamType] = js.undefined
+  
   var facepad: js.UndefOr[ImgixParamType] = js.undefined
+  
   var faces: js.UndefOr[ImgixParamType] = js.undefined
 }
-
 object FaceDetectionParams {
-  @scala.inline
-  def apply(faceindex: ImgixParamType = null, facepad: ImgixParamType = null, faces: ImgixParamType = null): FaceDetectionParams = {
+  
+  inline def apply(): FaceDetectionParams = {
     val __obj = js.Dynamic.literal()
-    if (faceindex != null) __obj.updateDynamic("faceindex")(faceindex.asInstanceOf[js.Any])
-    if (facepad != null) __obj.updateDynamic("facepad")(facepad.asInstanceOf[js.Any])
-    if (faces != null) __obj.updateDynamic("faces")(faces.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaceDetectionParams]
   }
+  
+  extension [Self <: FaceDetectionParams](x: Self) {
+    
+    inline def setFaceindex(value: ImgixParamType): Self = StObject.set(x, "faceindex", value.asInstanceOf[js.Any])
+    
+    inline def setFaceindexUndefined: Self = StObject.set(x, "faceindex", js.undefined)
+    
+    inline def setFacepad(value: ImgixParamType): Self = StObject.set(x, "facepad", value.asInstanceOf[js.Any])
+    
+    inline def setFacepadUndefined: Self = StObject.set(x, "facepad", js.undefined)
+    
+    inline def setFaces(value: ImgixParamType): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
+    
+    inline def setFacesUndefined: Self = StObject.set(x, "faces", js.undefined)
+  }
 }
-

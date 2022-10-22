@@ -1,8 +1,8 @@
 package typingsJapgolly.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Display States for setDisplayState() on {@link Controls.ProcessControl.setDisplayState Processes} and {@link Controls.Tab.setDisplayState Tabs}.
@@ -12,14 +12,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.collapsed
   - typingsJapgolly.xrm.xrmStrings.expanded
 */
-trait DisplayState extends js.Object
-
+trait DisplayState extends StObject
 object DisplayState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def collapsed: typingsJapgolly.xrm.xrmStrings.collapsed = this.cast("collapsed")
-  @scala.inline
-  def expanded: typingsJapgolly.xrm.xrmStrings.expanded = this.cast("expanded")
+  
+  inline def collapsed: typingsJapgolly.xrm.xrmStrings.collapsed = "collapsed".asInstanceOf[typingsJapgolly.xrm.xrmStrings.collapsed]
+  
+  inline def expanded: typingsJapgolly.xrm.xrmStrings.expanded = "expanded".asInstanceOf[typingsJapgolly.xrm.xrmStrings.expanded]
 }
-

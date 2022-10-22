@@ -1,20 +1,20 @@
 package typingsJapgolly.jasmine.jasmine
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("jasmine.errors")
-@js.native
-object errors extends js.Object {
-  @js.native
-  class ExpectationFailed () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+object errors {
   
+  trait ExpectationFailed
+    extends StObject
+       with Error
+  object ExpectationFailed {
+    
+    inline def apply(message: String, name: String): ExpectationFailed = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ExpectationFailed]
+    }
+  }
 }
-

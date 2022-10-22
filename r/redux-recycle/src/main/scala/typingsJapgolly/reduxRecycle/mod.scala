@@ -2,15 +2,17 @@ package typingsJapgolly.reduxRecycle
 
 import typingsJapgolly.redux.mod.AnyAction
 import typingsJapgolly.redux.mod.Reducer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-recycle", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default[A](reducer: Reducer[A, AnyAction], actions: js.Array[String]): Reducer[A, AnyAction] = js.native
-  def default[A](reducer: Reducer[A, AnyAction], actions: js.Array[String], initialState: A): Reducer[A, AnyAction] = js.native
-  def default[A](reducer: Reducer[A, AnyAction], actions: js.Array[String], initialState: Reducer[A, AnyAction]): Reducer[A, AnyAction] = js.native
+object mod {
+  
+  @JSImport("redux-recycle", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[A](reducer: Reducer[A, AnyAction], actions: js.Array[String]): Reducer[A, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducer.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Reducer[A, AnyAction]]
+  inline def default[A](reducer: Reducer[A, AnyAction], actions: js.Array[String], initialState: A): Reducer[A, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducer.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[Reducer[A, AnyAction]]
+  inline def default[A](reducer: Reducer[A, AnyAction], actions: js.Array[String], initialState: Reducer[A, AnyAction]): Reducer[A, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducer.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[Reducer[A, AnyAction]]
 }
-

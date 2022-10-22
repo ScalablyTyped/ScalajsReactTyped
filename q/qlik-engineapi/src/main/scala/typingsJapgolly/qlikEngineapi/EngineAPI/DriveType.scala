@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Type of the drive. Can be:
@@ -21,22 +21,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.RAM
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.UNKNOWN_TYPE
 */
-trait DriveType extends js.Object
-
+trait DriveType extends StObject
 object DriveType {
-  @scala.inline
-  def CD_ROM: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CD_ROM = this.cast("CD_ROM")
-  @scala.inline
-  def FIXED: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FIXED = this.cast("FIXED")
-  @scala.inline
-  def NETWORK: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NETWORK = this.cast("NETWORK")
-  @scala.inline
-  def RAM: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.RAM = this.cast("RAM")
-  @scala.inline
-  def REMOVABLE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.REMOVABLE = this.cast("REMOVABLE")
-  @scala.inline
-  def UNKNOWN_TYPE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.UNKNOWN_TYPE = this.cast("UNKNOWN_TYPE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CD_ROM: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CD_ROM = "CD_ROM".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CD_ROM]
+  
+  inline def FIXED: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FIXED = "FIXED".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FIXED]
+  
+  inline def NETWORK: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NETWORK = "NETWORK".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NETWORK]
+  
+  inline def RAM: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.RAM = "RAM".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.RAM]
+  
+  inline def REMOVABLE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.REMOVABLE = "REMOVABLE".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.REMOVABLE]
+  
+  inline def UNKNOWN_TYPE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.UNKNOWN_TYPE = "UNKNOWN_TYPE".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.UNKNOWN_TYPE]
 }
-

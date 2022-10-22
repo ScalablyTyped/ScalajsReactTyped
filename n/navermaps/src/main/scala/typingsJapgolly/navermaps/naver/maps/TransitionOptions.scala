@@ -1,21 +1,30 @@
 package typingsJapgolly.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransitionOptions extends js.Object {
+trait TransitionOptions extends StObject {
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
   var easing: js.UndefOr[String] = js.undefined
 }
-
 object TransitionOptions {
-  @scala.inline
-  def apply(duration: Int | Double = null, easing: String = null): TransitionOptions = {
+  
+  inline def apply(): TransitionOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionOptions]
   }
+  
+  extension [Self <: TransitionOptions](x: Self) {
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+  }
 }
-

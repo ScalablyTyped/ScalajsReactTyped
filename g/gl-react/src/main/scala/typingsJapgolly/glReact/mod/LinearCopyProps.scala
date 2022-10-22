@@ -1,19 +1,24 @@
 package typingsJapgolly.glReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LinearCopyProps extends js.Object {
-  var children: js.UndefOr[js.Any] = js.undefined
+trait LinearCopyProps extends StObject {
+  
+  var children: js.UndefOr[Any] = js.undefined
 }
-
 object LinearCopyProps {
-  @scala.inline
-  def apply(children: js.Any = null): LinearCopyProps = {
+  
+  inline def apply(): LinearCopyProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinearCopyProps]
   }
+  
+  extension [Self <: LinearCopyProps](x: Self) {
+    
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+  }
 }
-

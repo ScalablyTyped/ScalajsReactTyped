@@ -1,133 +1,179 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`create-features`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.create
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Editor extends Widget_ {
+trait Editor
+  extends StObject
+     with Widget_ {
+  
   /**
     * A property indicating the current active workflow.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#activeWorkflow)
     */
-  val activeWorkflow: Workflow = js.native
+  val activeWorkflow: CreateWorkflow | CreateFeaturesWorkflow | UpdateWorkflow = js.native
+  
   /**
-    * An array of string values which specifies what end users are allowed to edit. For example, a feature layer with full editing privileges may be available. But you may only want the end user to have the ability to update existing features. Set the `allowedWorkflows` to only `update`.
-    *
-    * Possible Value | Description | Example
-    * ---------------|------------|----------
-    * create | Indicated in the widget via the `Add feature` option. This allows the end user to create new features in the feature service. | ![combinedcreate](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/editor_combined_create.png)
-    * update | Indicated in the widget via the `Edit feature` option. This allows the end user to update and/or delete features in the feature service. | ![combinedupdate](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/editor_combined_update.png)
-    *
-    * > These workflows are only enabled if the feature service allows these operations. For example, if a feature service is only enabled to allow updates, `Add features` is not enabled.
+    * An array of string values which specifies what end users are allowed to edit.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#allowedWorkflows)
     */
-  var allowedWorkflows: js.Array[String] = js.native
+  var allowedWorkflows: `create-features` | create | update = js.native
+  
+  /**
+    * Cancels any active workflow.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#cancelWorkflow)
+    */
+  def cancelWorkflow(): js.Promise[scala.Unit] = js.native
+  
+  /**
+    * This is applicable if there is an active [UpdateWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflow.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#deleteFeatureFromWorkflow)
+    */
+  def deleteFeatureFromWorkflow(): js.Promise[scala.Unit] = js.native
+  
+  /**
+    * Indicates the heading level to use for title of the widget.
+    *
+    * @default 4
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#headingLevel)
+    */
+  var headingLevel: Double = js.native
+  
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#iconClass)
     */
   val iconClass: String = js.native
+  
   /**
-    * An array of editing configurations for individual layers.  If you have an editable feature layer but do not want the end user to do any type of editing, you can limit this by setting the `enabled` property to `false`.
+    * Options to configure the labels shown next to each segment of the geometry being created or updated.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#labelOptions)
+    */
+  var labelOptions: SketchLabelOptions = js.native
+  
+  /**
+    * An array of editing configurations for individual layers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#layerInfos)
     */
   var layerInfos: js.Array[LayerInfo] = js.native
+  
   /**
-    * This property allows customization of supporting Editor widgets and their default behavior. These widgets include [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html), [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html), and [Sketch](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html).
-    * > This property is useful for basic overrides of the default widgets. There may be some limitations to what the Editor can do with these overridden properties. For example, the Editor will always disable the `multipleSelectionEnabled` property in [Sketch.defaultUpdateOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions) no matter what is set within this property.
+    * The [SnappingOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html) for editing.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#snappingOptions)
+    */
+  var snappingOptions: SnappingOptions = js.native
+  
+  /**
+    * Initiates the [CreateFeaturesWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateFeaturesWorkflow.html) by displaying the panel where feature(s) creation begins.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startCreateFeaturesWorkflowAtFeatureCreation)
+    */
+  def startCreateFeaturesWorkflowAtFeatureCreation(creationInfo: CreationInfo): js.Promise[scala.Unit] = js.native
+  
+  /**
+    * Initiates the [CreateFeaturesWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateFeaturesWorkflow.html) by displaying the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) panel.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startCreateFeaturesWorkflowAtFeatureTypeSelection)
+    */
+  def startCreateFeaturesWorkflowAtFeatureTypeSelection(): js.Promise[scala.Unit] = js.native
+  
+  /**
+    * Initiates the [CreateFeaturesWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateFeaturesWorkflow.html) by displaying the panel where feature creation begins.
+    *
+    * @deprecated since version 4.23. Instead use [startCreateFeaturesWorkflowAtFeatureCreation](#startCreateFeaturesWorkflowAtFeatureCreation)
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startCreateWorkflowAtFeatureCreation)
+    */
+  def startCreateWorkflowAtFeatureCreation(creationInfo: CreationInfo): js.Promise[scala.Unit] = js.native
+  
+  /**
+    * This method starts the [CreateWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateWorkflow.html) where it waits for the feature to be selected.
+    *
+    * @deprecated since 4.23
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startCreateWorkflowAtFeatureEdit)
+    */
+  def startCreateWorkflowAtFeatureEdit(feature: Graphic): js.Promise[scala.Unit] = js.native
+  
+  /**
+    * Initiates the [CreateWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateWorkflow.html) by displaying the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) panel.
+    *
+    * @deprecated since version 4.23. Instead use [startCreateFeaturesWorkflowAtFeatureTypeSelection](#startCreateFeaturesWorkflowAtFeatureTypeSelection) instead.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startCreateWorkflowAtFeatureTypeSelection)
+    */
+  def startCreateWorkflowAtFeatureTypeSelection(): js.Promise[scala.Unit] = js.native
+  
+  /**
+    * Starts the [UpdateWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflow.html) at the attribute editing panel.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startUpdateWorkflowAtFeatureEdit)
+    */
+  def startUpdateWorkflowAtFeatureEdit(feature: Graphic): js.Promise[scala.Unit] = js.native
+  
+  /**
+    * Starts the [UpdateWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflow.html) using the current selected feature.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startUpdateWorkflowAtFeatureSelection)
+    */
+  def startUpdateWorkflowAtFeatureSelection(): js.Promise[scala.Unit] = js.native
+  
+  /**
+    * This method starts the [UpdateWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflow.html) where it waits for multiple features to be selected.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startUpdateWorkflowAtMultipleFeatureSelection)
+    */
+  def startUpdateWorkflowAtMultipleFeatureSelection(candidates: js.Array[Graphic]): js.Promise[scala.Unit] = js.native
+  
+  /**
+    * This property allows customization of supporting Editor widgets and their default behavior.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#supportingWidgetDefaults)
     */
   var supportingWidgetDefaults: SupportingWidgetDefaults = js.native
+  
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html). This view provides the editable layers for the Editor widget.
+    * Options to configure the tooltip shown next to the cursor when creating or updating graphics.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#tooltipOptions)
+    */
+  var tooltipOptions: SketchTooltipOptions = js.native
+  
+  /**
+    * Indicates whether the Editor should default to use the deprecated [CreateWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateWorkflow.html).
+    *
+    * @default false
+    * @deprecated since version 4.23. Although new at 4.23, this property was introduced to help migrate from the legacy {@link module:esri/widgets/Editor/CreateWorkflow} to the updated {@link module:esri/widgets/Editor/CreateFeaturesWorkflow}. Once {@link module:esri/widgets/Editor/CreateWorkflow} is fully removed, this property will no longer be necessary.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#useDeprecatedCreateWorkflow)
+    */
+  var useDeprecatedCreateWorkflow: Boolean = js.native
+  
+  /**
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#view)
     */
-  var view: MapView = js.native
+  var view: MapView | SceneView = js.native
+  
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [EditorViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#viewModel)
     */
   var viewModel: EditorViewModel = js.native
-  /**
-    * Cancels any active workflow.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#cancelWorkflow)
-    *
-    *
-    */
-  def cancelWorkflow(): Unit = js.native
-  /**
-    * This is applicable if there is an active update workflow. If so, this method deletes the workflow feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#deleteFeatureFromWorkflow)
-    *
-    *
-    */
-  def deleteFeatureFromWorkflow(): Unit = js.native
-  /**
-    * Initiates the `create` workflow by displaying the panel where feature creation begins. This method takes a [CreationInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#CreationInfo) object containing the layer(s) and template(s) to use.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startCreateWorkflowAtFeatureCreation)
-    *
-    * @param creationInfo An object containing information needed to create a new feature using the Editor widget. This object provides the feature template and layer for creating a new feature.
-    *
-    */
-  def startCreateWorkflowAtFeatureCreation(creationInfo: CreationInfo): Unit = js.native
-  /**
-    * This method starts the Editor workflow where it waits for the feature to be selected.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startCreateWorkflowAtFeatureEdit)
-    *
-    * @param feature The feature to be edited.
-    *
-    */
-  def startCreateWorkflowAtFeatureEdit(feature: Graphic): Unit = js.native
-  /**
-    * Initiates the `create` workflow by displaying the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) panel.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startCreateWorkflowAtFeatureTypeSelection)
-    *
-    *
-    */
-  def startCreateWorkflowAtFeatureTypeSelection(): Unit = js.native
-  /**
-    * Starts the `update` workflow at the feature geometry and attribute editing panel.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startUpdateWorkflowAtFeatureEdit)
-    *
-    * @param feature The feature to be updated.
-    *
-    */
-  def startUpdateWorkflowAtFeatureEdit(feature: Graphic): Unit = js.native
-  /**
-    * Starts the `update` workflow using the current selected feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startUpdateWorkflowAtFeatureSelection)
-    *
-    *
-    */
-  def startUpdateWorkflowAtFeatureSelection(): Unit = js.native
-  /**
-    * This method starts the Editor workflow where it waits for multiple features to be selected.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#startUpdateWorkflowAtMultipleFeatureSelection)
-    *
-    * @param _candidates An array of features to be updated. This is only relevant when there are multiple candidates to update.
-    *
-    */
-  def startUpdateWorkflowAtMultipleFeatureSelection(_candidates: js.Array[Graphic]): Unit = js.native
 }
-
-@JSGlobal("__esri.Editor")
-@js.native
-object Editor extends TopLevel[EditorConstructor]
-

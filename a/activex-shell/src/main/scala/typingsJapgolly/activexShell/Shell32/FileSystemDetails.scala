@@ -1,40 +1,36 @@
 package typingsJapgolly.activexShell.Shell32
 
-import typingsJapgolly.activexShell.activexShellNumbers.`-1`
-import typingsJapgolly.activexShell.activexShellNumbers.`0`
-import typingsJapgolly.activexShell.activexShellNumbers.`1`
-import typingsJapgolly.activexShell.activexShellNumbers.`2`
-import typingsJapgolly.activexShell.activexShellNumbers.`3`
-import typingsJapgolly.activexShell.activexShellNumbers.`4`
+import typingsJapgolly.activexShell.activexShellInts.`-1`
+import typingsJapgolly.activexShell.activexShellInts.`0`
+import typingsJapgolly.activexShell.activexShellInts.`1`
+import typingsJapgolly.activexShell.activexShellInts.`2`
+import typingsJapgolly.activexShell.activexShellInts.`3`
+import typingsJapgolly.activexShell.activexShellInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line no-const-enum
+// eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexShell.activexShellNumbers.`0`
-  - typingsJapgolly.activexShell.activexShellNumbers.`1`
-  - typingsJapgolly.activexShell.activexShellNumbers.`2`
-  - typingsJapgolly.activexShell.activexShellNumbers.`3`
-  - typingsJapgolly.activexShell.activexShellNumbers.`4`
-  - typingsJapgolly.activexShell.activexShellNumbers.`-1`
+  - typingsJapgolly.activexShell.activexShellInts.`0`
+  - typingsJapgolly.activexShell.activexShellInts.`1`
+  - typingsJapgolly.activexShell.activexShellInts.`2`
+  - typingsJapgolly.activexShell.activexShellInts.`3`
+  - typingsJapgolly.activexShell.activexShellInts.`4`
+  - typingsJapgolly.activexShell.activexShellInts.`-1`
 */
-trait FileSystemDetails extends js.Object
-
+trait FileSystemDetails extends StObject
 object FileSystemDetails {
-  @scala.inline
-  def Attributes: `4` = this.cast(4)
-  @scala.inline
-  def InfoTip: `-1` = this.cast(-1)
-  @scala.inline
-  def LastModified: `3` = this.cast(3)
-  @scala.inline
-  def Name: `0` = this.cast(0)
-  @scala.inline
-  def Size: `1` = this.cast(1)
-  @scala.inline
-  def Type: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Attributes: `4` = 4.asInstanceOf[`4`]
+  
+  inline def InfoTip: `-1` = -1.asInstanceOf[`-1`]
+  
+  inline def LastModified: `3` = 3.asInstanceOf[`3`]
+  
+  inline def Name: `0` = 0.asInstanceOf[`0`]
+  
+  inline def Size: `1` = 1.asInstanceOf[`1`]
+  
+  inline def Type: `2` = 2.asInstanceOf[`2`]
 }
-

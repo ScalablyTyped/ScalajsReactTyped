@@ -1,45 +1,59 @@
 package typingsJapgolly.cassandraDriver.mod
 
-import typingsJapgolly.cassandraDriver.mappingMod.mapping.MappingOptions
-import typingsJapgolly.cassandraDriver.mappingMod.mapping.q.QueryOperator
+import typingsJapgolly.cassandraDriver.libMappingMod.mapping.MappingOptions
+import typingsJapgolly.cassandraDriver.libMappingMod.mapping.q.QueryOperator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cassandra-driver", "mapping")
-@js.native
-object mapping extends js.Object {
-  @js.native
-  class DefaultTableMappings ()
-    extends typingsJapgolly.cassandraDriver.mappingMod.mapping.DefaultTableMappings
+object mapping {
   
+  @JSImport("cassandra-driver", "mapping.DefaultTableMappings")
   @js.native
-  class Mapper protected ()
-    extends typingsJapgolly.cassandraDriver.mappingMod.mapping.Mapper {
+  open class DefaultTableMappings ()
+    extends typingsJapgolly.cassandraDriver.libMappingMod.mapping.DefaultTableMappings
+  
+  @JSImport("cassandra-driver", "mapping.Mapper")
+  @js.native
+  open class Mapper protected ()
+    extends typingsJapgolly.cassandraDriver.libMappingMod.mapping.Mapper {
     def this(client: Client) = this()
     def this(client: Client, options: MappingOptions) = this()
   }
   
+  @JSImport("cassandra-driver", "mapping.UnderscoreCqlToCamelCaseMappings")
   @js.native
-  class UnderscoreCqlToCamelCaseMappings ()
-    extends typingsJapgolly.cassandraDriver.mappingMod.mapping.UnderscoreCqlToCamelCaseMappings
+  open class UnderscoreCqlToCamelCaseMappings ()
+    extends typingsJapgolly.cassandraDriver.libMappingMod.mapping.UnderscoreCqlToCamelCaseMappings
   
-  @js.native
-  object q extends js.Object {
-    def and(condition1: js.Any, condition2: js.Any): QueryOperator = js.native
-    def append(value: js.Any): QueryOperator = js.native
-    def decr(value: js.Any): QueryOperator = js.native
-    def gt(value: js.Any): QueryOperator = js.native
-    def gte(value: js.Any): QueryOperator = js.native
-    @JSName("in_")
-    def in(arr: js.Any): QueryOperator = js.native
-    def incr(value: js.Any): QueryOperator = js.native
-    def lt(value: js.Any): QueryOperator = js.native
-    def lte(value: js.Any): QueryOperator = js.native
-    def notEq(value: js.Any): QueryOperator = js.native
-    def prepend(value: js.Any): QueryOperator = js.native
-    def remove(value: js.Any): QueryOperator = js.native
+  object q {
+    
+    @JSImport("cassandra-driver", "mapping.q")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def and(condition1: Any, condition2: Any): QueryOperator = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(condition1.asInstanceOf[js.Any], condition2.asInstanceOf[js.Any])).asInstanceOf[QueryOperator]
+    
+    inline def append(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("append")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+    
+    inline def decr(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("decr")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+    
+    inline def gt(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("gt")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+    
+    inline def gte(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("gte")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+    
+    inline def in(arr: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("in_")(arr.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+    
+    inline def incr(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("incr")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+    
+    inline def lt(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("lt")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+    
+    inline def lte(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("lte")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+    
+    inline def notEq(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("notEq")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+    
+    inline def prepend(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+    
+    inline def remove(value: Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
   }
-  
 }
-

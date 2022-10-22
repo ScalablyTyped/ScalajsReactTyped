@@ -10,10 +10,10 @@ A lightweight library that provides tools for organizing asynchronous code
 | ------------------ | :-------------: |
 | Full name          | es6-promise |
 | Keywords           | futures, polyfill, promise, promises |
-| # releases         | 7 |
-| # dependents       | 3352 |
-| # downloads        | 431994246 |
-| # stars            | 91 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.9885807333333336E7 |
+| # stars            | 7282.0 |
 
 ## Links
 - [Homepage](https://github.com/stefanpenner/es6-promise)

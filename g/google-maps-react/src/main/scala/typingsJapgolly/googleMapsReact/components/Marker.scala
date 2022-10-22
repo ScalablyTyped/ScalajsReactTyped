@@ -1,43 +1,40 @@
 package typingsJapgolly.googleMapsReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.googleMapsReact.mod.MarkerProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.googleMapsReact.mod.IMarkerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This component has complicated props, you'll have to assemble `props` yourself using js.Dynamic.literal(...) or similar. */
 object Marker {
-  def apply[P /* <: MarkerProps */, S](
-    props: P with js.Object,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    P with js.Object, 
-    typingsJapgolly.googleMapsReact.mod.Marker[P, S], 
-    Unit, 
-    P with js.Object
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      js.Dynamic.global.Object.assign(__obj, props)
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  P with js.Object, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.googleMapsReact.mod.Marker[P, S]](this.componentImport)
-    f(__obj.asInstanceOf[P with js.Object])(children: _*)
-  }
   @JSImport("google-maps-react", "Marker")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.googleMapsReact.mod.Marker] {
+    
+    inline def mapCenter(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLng */ Any
+    ): this.type = set("mapCenter", value.asInstanceOf[js.Any])
+    
+    inline def onClick(
+      value: (/* props */ js.UndefOr[IMarkerProps], /* marker */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Marker */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onClick", js.Any.fromFunction3(value))
+    
+    inline def onMouseover(
+      value: (/* props */ js.UndefOr[IMarkerProps], /* marker */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Marker */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onMouseover", js.Any.fromFunction3(value))
+  }
+  
+  implicit def make(companion: Marker.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IMarkerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -3,26 +3,37 @@ package typingsJapgolly.oracleOraclejet.ojthematicmapMod
 import typingsJapgolly.oracleOraclejet.mod.JetSettableProperties
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.auto
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.off
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ojThematicMapAreaSettableProperties extends JetSettableProperties {
+trait ojThematicMapAreaSettableProperties
+  extends StObject
+     with JetSettableProperties {
+  
   var categories: js.Array[String]
+  
   var color: String
+  
   var label: String
+  
   var labelStyle: js.Object
+  
   var location: String
+  
   var opacity: Double
+  
   var selectable: auto | off
+  
   var shortDesc: String
+  
   var svgClassName: String
+  
   var svgStyle: js.Object
 }
-
 object ojThematicMapAreaSettableProperties {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     categories: js.Array[String],
     color: String,
     label: String,
@@ -35,8 +46,31 @@ object ojThematicMapAreaSettableProperties {
     svgStyle: js.Object
   ): ojThematicMapAreaSettableProperties = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelStyle = labelStyle.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], selectable = selectable.asInstanceOf[js.Any], shortDesc = shortDesc.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ojThematicMapAreaSettableProperties]
   }
+  
+  extension [Self <: ojThematicMapAreaSettableProperties](x: Self) {
+    
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setSelectable(value: auto | off): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
+    
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+  }
 }
-

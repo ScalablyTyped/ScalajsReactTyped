@@ -1,36 +1,31 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.typescriptBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReferenceEntry extends DocumentSpan {
-  var isDefinition: Boolean
+trait ReferenceEntry
+  extends StObject
+     with DocumentSpan {
+  
   var isInString: js.UndefOr[`true`] = js.undefined
+  
   var isWriteAccess: Boolean
 }
-
 object ReferenceEntry {
-  @scala.inline
-  def apply(
-    fileName: java.lang.String,
-    isDefinition: Boolean,
-    isWriteAccess: Boolean,
-    textSpan: TextSpan,
-    contextSpan: TextSpan = null,
-    isInString: `true` = null,
-    originalContextSpan: TextSpan = null,
-    originalFileName: java.lang.String = null,
-    originalTextSpan: TextSpan = null
-  ): ReferenceEntry = {
-    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], isDefinition = isDefinition.asInstanceOf[js.Any], isWriteAccess = isWriteAccess.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
-    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan.asInstanceOf[js.Any])
-    if (isInString != null) __obj.updateDynamic("isInString")(isInString.asInstanceOf[js.Any])
-    if (originalContextSpan != null) __obj.updateDynamic("originalContextSpan")(originalContextSpan.asInstanceOf[js.Any])
-    if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName.asInstanceOf[js.Any])
-    if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan.asInstanceOf[js.Any])
+  
+  inline def apply(fileName: java.lang.String, isWriteAccess: Boolean, textSpan: TextSpan): ReferenceEntry = {
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], isWriteAccess = isWriteAccess.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceEntry]
   }
+  
+  extension [Self <: ReferenceEntry](x: Self) {
+    
+    inline def setIsInString(value: `true`): Self = StObject.set(x, "isInString", value.asInstanceOf[js.Any])
+    
+    inline def setIsInStringUndefined: Self = StObject.set(x, "isInString", js.undefined)
+    
+    inline def setIsWriteAccess(value: Boolean): Self = StObject.set(x, "isWriteAccess", value.asInstanceOf[js.Any])
+  }
 }
-

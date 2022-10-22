@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.inactive
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.receiveOnly
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.sendReceive
 */
-trait MediaDirection extends js.Object
-
+trait MediaDirection extends StObject
 object MediaDirection {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def inactive: typingsJapgolly.microsoftGraph.microsoftGraphStrings.inactive = this.cast("inactive")
-  @scala.inline
-  def receiveOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.receiveOnly = this.cast("receiveOnly")
-  @scala.inline
-  def sendOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.sendOnly = this.cast("sendOnly")
-  @scala.inline
-  def sendReceive: typingsJapgolly.microsoftGraph.microsoftGraphStrings.sendReceive = this.cast("sendReceive")
+  
+  inline def inactive: typingsJapgolly.microsoftGraph.microsoftGraphStrings.inactive = "inactive".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.inactive]
+  
+  inline def receiveOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.receiveOnly = "receiveOnly".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.receiveOnly]
+  
+  inline def sendOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.sendOnly = "sendOnly".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.sendOnly]
+  
+  inline def sendReceive: typingsJapgolly.microsoftGraph.microsoftGraphStrings.sendReceive = "sendReceive".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.sendReceive]
 }
-

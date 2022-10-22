@@ -1,13 +1,10 @@
 package typingsJapgolly.fundamentalReact.mod
 
-import typingsJapgolly.fundamentalReact.paginationMod.PaginationProps
-import typingsJapgolly.react.mod.Component
+import typingsJapgolly.fundamentalReact.libPaginationPaginationMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fundamental-react", "Pagination")
 @js.native
-class Pagination ()
-  extends Component[PaginationProps, js.Object, js.Any]
-
+open class Pagination () extends default

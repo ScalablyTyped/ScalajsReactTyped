@@ -1,56 +1,80 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TileInfoCreateOptions extends Object {
+trait TileInfoCreateOptions
+  extends StObject
+     with Object {
+  
   /**
-    * An array of scale values to use for the TileInfo. If none are specified, the scales from the [ArcGIS Online basemaps](https://www.arcgis.com/home/group.html?id=702026e41f6641fb85da88efe79dc166#overview) are used from level 0 through 24.
+    * Total number of LODs to create.
+    *
+    * @default 24
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#create)
+    */
+  var numLODs: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * An array of scale values to use for the TileInfo.
     *
     * @default The scales provided by ArcGIS Online basemaps
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#create)
     */
   var scales: js.UndefOr[js.Array[Double]] = js.undefined
+  
   /**
     * The size of each tile in pixels.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#create)
-    *
     * @default 256
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#create)
     */
   var size: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The spatial reference for the new TileInfo instance. If the spatial reference is not WGS84 nor WebMercator, the origin of the TileInfo is `0.0`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#create)
+    * The spatial reference for the new TileInfo instance.
     *
     * @default WebMercator
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#create)
     */
   var spatialReference: js.UndefOr[SpatialReference] = js.undefined
 }
-
 object TileInfoCreateOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    scales: js.Array[Double] = null,
-    size: Int | Double = null,
-    spatialReference: SpatialReference = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): TileInfoCreateOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (scales != null) __obj.updateDynamic("scales")(scales.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[TileInfoCreateOptions]
   }
+  
+  extension [Self <: TileInfoCreateOptions](x: Self) {
+    
+    inline def setNumLODs(value: Double): Self = StObject.set(x, "numLODs", value.asInstanceOf[js.Any])
+    
+    inline def setNumLODsUndefined: Self = StObject.set(x, "numLODs", js.undefined)
+    
+    inline def setScales(value: js.Array[Double]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+    
+    inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
+    
+    inline def setScalesVarargs(value: Double*): Self = StObject.set(x, "scales", js.Array(value*))
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+  }
 }
-

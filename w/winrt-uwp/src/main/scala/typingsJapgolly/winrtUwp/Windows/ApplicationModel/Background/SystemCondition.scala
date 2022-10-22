@@ -1,19 +1,24 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a system condition that must be in effect for a background task to run. */
-@JSGlobal("Windows.ApplicationModel.Background.SystemCondition")
-@js.native
-class SystemCondition protected () extends js.Object {
-  /**
-    * Initializes a new instance of a system condition.
-    * @param conditionType Specifies the condition type.
-    */
-  def this(conditionType: SystemConditionType) = this()
+trait SystemCondition extends StObject {
+  
   /** Gets the condition type of a system condition. */
-  var conditionType: SystemConditionType = js.native
+  var conditionType: SystemConditionType
 }
-
+object SystemCondition {
+  
+  inline def apply(conditionType: SystemConditionType): SystemCondition = {
+    val __obj = js.Dynamic.literal(conditionType = conditionType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SystemCondition]
+  }
+  
+  extension [Self <: SystemCondition](x: Self) {
+    
+    inline def setConditionType(value: SystemConditionType): Self = StObject.set(x, "conditionType", value.asInstanceOf[js.Any])
+  }
+}

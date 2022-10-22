@@ -2,35 +2,62 @@ package typingsJapgolly.reactNative.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactEventFrom
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import typingsJapgolly.reactNative.anon.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Touchable extends js.Object {
-  var onTouchCancel: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
-  var onTouchEnd: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
-  var onTouchEndCapture: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
-  var onTouchMove: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
-  var onTouchStart: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
+trait Touchable extends StObject {
+  
+  var onTouchCancel: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle & Element], Unit]] = js.undefined
+  
+  var onTouchEnd: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle & Element], Unit]] = js.undefined
+  
+  var onTouchEndCapture: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle & Element], Unit]] = js.undefined
+  
+  var onTouchMove: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle & Element], Unit]] = js.undefined
+  
+  var onTouchStart: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle & Element], Unit]] = js.undefined
 }
-
 object Touchable {
-  @scala.inline
-  def apply(
-    onTouchCancel: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchEnd: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchEndCapture: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchMove: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchStart: ReactEventFrom[NodeHandle with Element] => Callback = null
-  ): Touchable = {
+  
+  inline def apply(): Touchable = {
     val __obj = js.Dynamic.literal()
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchCancel(t0).runNow()))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchEnd(t0).runNow()))
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchEndCapture(t0).runNow()))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchMove(t0).runNow()))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchStart(t0).runNow()))
     __obj.asInstanceOf[Touchable]
   }
+  
+  @JSImport("react-native", "Touchable")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native", "Touchable.TOUCH_TARGET_DEBUG")
+  @js.native
+  def TOUCH_TARGET_DEBUG: Boolean = js.native
+  inline def TOUCH_TARGET_DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_TARGET_DEBUG")(x.asInstanceOf[js.Any])
+  
+  inline def renderDebugView(config: Color): japgolly.scalajs.react.facade.React.Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("renderDebugView")(config.asInstanceOf[js.Any]).asInstanceOf[japgolly.scalajs.react.facade.React.Element | Null]
+  
+  extension [Self <: Touchable](x: Self) {
+    
+    inline def setOnTouchCancel(value: ReactEventFrom[NodeHandle & Element] => Callback): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
+    
+    inline def setOnTouchEnd(value: ReactEventFrom[NodeHandle & Element] => Callback): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def setOnTouchEndCapture(value: ReactEventFrom[NodeHandle & Element] => Callback): Self = StObject.set(x, "onTouchEndCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def setOnTouchEndCaptureUndefined: Self = StObject.set(x, "onTouchEndCapture", js.undefined)
+    
+    inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+    
+    inline def setOnTouchMove(value: ReactEventFrom[NodeHandle & Element] => Callback): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+    
+    inline def setOnTouchStart(value: ReactEventFrom[NodeHandle & Element] => Callback): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+  }
 }
-

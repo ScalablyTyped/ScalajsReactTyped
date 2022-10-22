@@ -1,23 +1,27 @@
 package typingsJapgolly.mergeStream
 
+import typingsJapgolly.node.NodeJS.ReadWriteStream
 import typingsJapgolly.node.NodeJS.ReadableStream
-import typingsJapgolly.node.NodeJS.WritableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("merge-stream", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  inline def apply[T /* <: ReadableStream */](streams: (T | js.Array[T])*): MergedStream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[Seq[js.Any]]*).asInstanceOf[MergedStream]
+  
+  @JSImport("merge-stream", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   trait MergedStream
-    extends ReadableStream
-       with WritableStream {
+    extends StObject
+       with ReadWriteStream {
+    
     def add(source: js.Array[ReadableStream]): MergedStream = js.native
     def add(source: ReadableStream): MergedStream = js.native
+    
     def isEmpty(): Boolean = js.native
   }
-  
-  def apply[T /* <: ReadableStream */](streams: (T | js.Array[T])*): MergedStream = js.native
 }
-

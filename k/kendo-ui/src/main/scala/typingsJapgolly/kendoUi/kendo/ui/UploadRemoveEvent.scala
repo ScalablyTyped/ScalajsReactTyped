@@ -1,32 +1,41 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UploadRemoveEvent extends UploadEvent {
-  var data: js.UndefOr[js.Any] = js.undefined
-  var files: js.UndefOr[js.Array[_]] = js.undefined
-  var headers: js.UndefOr[js.Any] = js.undefined
+trait UploadRemoveEvent
+  extends StObject
+     with UploadEvent {
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
+  var files: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var headers: js.UndefOr[Any] = js.undefined
 }
-
 object UploadRemoveEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Upload,
-    data: js.Any = null,
-    files: js.Array[_] = null,
-    headers: js.Any = null
-  ): UploadRemoveEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Upload): UploadRemoveEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadRemoveEvent]
   }
+  
+  extension [Self <: UploadRemoveEvent](x: Self) {
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setFiles(value: js.Array[Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    
+    inline def setFilesVarargs(value: Any*): Self = StObject.set(x, "files", js.Array(value*))
+    
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+  }
 }
-

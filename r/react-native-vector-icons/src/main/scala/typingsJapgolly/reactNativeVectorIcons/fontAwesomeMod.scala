@@ -1,49 +1,92 @@
 package typingsJapgolly.reactNativeVectorIcons
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.react.mod.Component
+import typingsJapgolly.reactNative.mod.ColorValue
 import typingsJapgolly.reactNativeVectorIcons.iconMod.Icon
 import typingsJapgolly.reactNativeVectorIcons.iconMod.IconButtonProps
+import typingsJapgolly.reactNativeVectorIcons.iconMod.IconProps
 import typingsJapgolly.reactNativeVectorIcons.iconMod.ImageSource
 import typingsJapgolly.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
-import typingsJapgolly.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-vector-icons/FontAwesome", JSImport.Namespace)
-@js.native
-object fontAwesomeMod extends js.Object {
-  @js.native
-  class default () extends Icon
+object fontAwesomeMod {
   
-  /* static members */
+  @JSImport("react-native-vector-icons/FontAwesome", JSImport.Default)
   @js.native
-  object default extends js.Object {
-    @js.native
-    class Button ()
-      extends Component[IconButtonProps, js.Any, js.Any]
-    
-    @js.native
-    class TabBarItem ()
-      extends Component[TabBarItemIOSProps, js.Any, js.Any]
-    
-    @js.native
-    class TabBarItemIOS ()
-      extends Component[TabBarItemIOSProps, js.Any, js.Any]
-    
-    @js.native
-    class ToolbarAndroid ()
-      extends Component[ToolbarAndroidProps, js.Any, js.Any]
-    
-    def getImageSource(name: String): js.Promise[ImageSource] = js.native
-    def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
-    def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native
-    def getRawGlyphMap(): StringDictionary[Double] = js.native
-    def hasIcon(name: String): Boolean = js.native
-    def loadFont(): js.Promise[Unit] = js.native
-    def loadFont(file: String): js.Promise[Unit] = js.native
+  open class default protected () extends Icon {
+    def this(props: IconProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: IconProps, context: Any) = this()
   }
-  
+  /* static members */
+  object default {
+    
+    @JSImport("react-native-vector-icons/FontAwesome", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-native-vector-icons/FontAwesome", "default.Button")
+    @js.native
+    open class Button protected ()
+      extends typingsJapgolly.reactNativeVectorIcons.iconMod.Icon.Button {
+      def this(props: IconButtonProps) = this()
+      /**
+        * @deprecated
+        * @see https://reactjs.org/docs/legacy-context.html
+        */
+      def this(props: IconButtonProps, context: Any) = this()
+    }
+    
+    @JSImport("react-native-vector-icons/FontAwesome", "default.TabBarItem")
+    @js.native
+    open class TabBarItem protected ()
+      extends typingsJapgolly.reactNativeVectorIcons.iconMod.Icon.TabBarItem {
+      def this(props: TabBarItemIOSProps) = this()
+      /**
+        * @deprecated
+        * @see https://reactjs.org/docs/legacy-context.html
+        */
+      def this(props: TabBarItemIOSProps, context: Any) = this()
+    }
+    
+    @JSImport("react-native-vector-icons/FontAwesome", "default.TabBarItemIOS")
+    @js.native
+    open class TabBarItemIOS protected ()
+      extends typingsJapgolly.reactNativeVectorIcons.iconMod.Icon.TabBarItemIOS {
+      def this(props: TabBarItemIOSProps) = this()
+      /**
+        * @deprecated
+        * @see https://reactjs.org/docs/legacy-context.html
+        */
+      def this(props: TabBarItemIOSProps, context: Any) = this()
+    }
+    
+    inline def getFontFamily(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontFamily")().asInstanceOf[String]
+    
+    inline def getImageSource(name: String): js.Promise[ImageSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageSource]]
+    inline def getImageSource(name: String, size: Double): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    inline def getImageSource(name: String, size: Double, color: Double): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    inline def getImageSource(name: String, size: Double, color: ColorValue): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    inline def getImageSource(name: String, size: Unit, color: Double): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    inline def getImageSource(name: String, size: Unit, color: ColorValue): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    
+    inline def getImageSourceSync(name: String): ImageSource = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any]).asInstanceOf[ImageSource]
+    inline def getImageSourceSync(name: String, size: Double): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    inline def getImageSourceSync(name: String, size: Double, color: Double): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    inline def getImageSourceSync(name: String, size: Double, color: ColorValue): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    inline def getImageSourceSync(name: String, size: Unit, color: Double): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    inline def getImageSourceSync(name: String, size: Unit, color: ColorValue): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    
+    inline def getRawGlyphMap(): StringDictionary[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawGlyphMap")().asInstanceOf[StringDictionary[Double]]
+    
+    inline def hasIcon(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasIcon")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def loadFont(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")().asInstanceOf[js.Promise[Unit]]
+    inline def loadFont(file: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  }
 }
-

@@ -1,0 +1,14 @@
+organization := "org.scalablytyped.japgolly"
+name := "date-io__date-fns"
+version := "2.16.0-c4dd74"
+scalaVersion := "3.1.2"
+enablePlugins(ScalaJSPlugin)
+libraryDependencies ++= Seq(
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "date-fns" % "2.29.3-3c1548",
+  "org.scalablytyped.japgolly" %%% "date-io__core" % "2.16.0-5d2579",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
+publishArtifact in packageDoc := false
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

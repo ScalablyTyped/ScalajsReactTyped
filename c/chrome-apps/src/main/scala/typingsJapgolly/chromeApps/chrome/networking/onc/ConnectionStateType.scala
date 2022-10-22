@@ -1,24 +1,22 @@
 package typingsJapgolly.chromeApps.chrome.networking.onc
 
+import typingsJapgolly.chromeApps.chromeAppsStrings.Connected_
+import typingsJapgolly.chromeApps.chromeAppsStrings.Connecting_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.chromeApps.chromeAppsStrings.Connected
-  - typingsJapgolly.chromeApps.chromeAppsStrings.Connecting
+  - typingsJapgolly.chromeApps.chromeAppsStrings.Connected_
+  - typingsJapgolly.chromeApps.chromeAppsStrings.Connecting_
   - typingsJapgolly.chromeApps.chromeAppsStrings.NotConnected
 */
-trait ConnectionStateType extends js.Object
-
+trait ConnectionStateType extends StObject
 object ConnectionStateType {
-  @scala.inline
-  def Connected: typingsJapgolly.chromeApps.chromeAppsStrings.Connected = this.cast("Connected")
-  @scala.inline
-  def Connecting: typingsJapgolly.chromeApps.chromeAppsStrings.Connecting = this.cast("Connecting")
-  @scala.inline
-  def NotConnected: typingsJapgolly.chromeApps.chromeAppsStrings.NotConnected = this.cast("NotConnected")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Connected: Connected_ = "Connected".asInstanceOf[Connected_]
+  
+  inline def Connecting: Connecting_ = "Connecting".asInstanceOf[Connecting_]
+  
+  inline def NotConnected: typingsJapgolly.chromeApps.chromeAppsStrings.NotConnected = "NotConnected".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.NotConnected]
 }
-

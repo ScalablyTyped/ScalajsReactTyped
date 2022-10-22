@@ -1,26 +1,30 @@
 package typingsJapgolly.winrt.Windows.Networking.NetworkOperators
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IProvisioningAgent extends js.Object {
+trait IProvisioningAgent extends StObject {
+  
   def getProvisionedProfile(mediaType: ProfileMediaType, profileName: String): ProvisionedProfile
+  
   def provisionFromXmlDocumentAsync(provisioningXmlDocument: String): IAsyncOperation[ProvisionFromXmlDocumentResults]
 }
-
 object IProvisioningAgent {
-  @scala.inline
-  def apply(
-    getProvisionedProfile: (ProfileMediaType, String) => CallbackTo[ProvisionedProfile],
-    provisionFromXmlDocumentAsync: String => CallbackTo[IAsyncOperation[ProvisionFromXmlDocumentResults]]
+  
+  inline def apply(
+    getProvisionedProfile: (ProfileMediaType, String) => ProvisionedProfile,
+    provisionFromXmlDocumentAsync: String => IAsyncOperation[ProvisionFromXmlDocumentResults]
   ): IProvisioningAgent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getProvisionedProfile")(js.Any.fromFunction2((t0: typingsJapgolly.winrt.Windows.Networking.NetworkOperators.ProfileMediaType, t1: java.lang.String) => getProvisionedProfile(t0, t1).runNow()))
-    __obj.updateDynamic("provisionFromXmlDocumentAsync")(js.Any.fromFunction1((t0: java.lang.String) => provisionFromXmlDocumentAsync(t0).runNow()))
+    val __obj = js.Dynamic.literal(getProvisionedProfile = js.Any.fromFunction2(getProvisionedProfile), provisionFromXmlDocumentAsync = js.Any.fromFunction1(provisionFromXmlDocumentAsync))
     __obj.asInstanceOf[IProvisioningAgent]
   }
+  
+  extension [Self <: IProvisioningAgent](x: Self) {
+    
+    inline def setGetProvisionedProfile(value: (ProfileMediaType, String) => ProvisionedProfile): Self = StObject.set(x, "getProvisionedProfile", js.Any.fromFunction2(value))
+    
+    inline def setProvisionFromXmlDocumentAsync(value: String => IAsyncOperation[ProvisionFromXmlDocumentResults]): Self = StObject.set(x, "provisionFromXmlDocumentAsync", js.Any.fromFunction1(value))
+  }
 }
-

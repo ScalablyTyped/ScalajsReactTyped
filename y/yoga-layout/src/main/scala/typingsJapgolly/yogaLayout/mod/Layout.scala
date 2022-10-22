@@ -1,17 +1,14 @@
 package typingsJapgolly.yogaLayout.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Layout extends js.Object {
+trait Layout extends StObject {
+  
   val bottom: Double
-  val height: Double
-  val left: Double
-  val right: Double
-  val top: Double
-  val width: Double
+  
   def fromJs(
     expose: js.Function6[
       /* left */ Double, 
@@ -20,14 +17,23 @@ trait Layout extends js.Object {
       /* bottom */ Double, 
       /* width */ Double, 
       /* height */ Double, 
-      _
+      Any
     ]
   ): Unit
+  
+  val height: Double
+  
+  val left: Double
+  
+  val right: Double
+  
+  val top: Double
+  
+  val width: Double
 }
-
 object Layout {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     bottom: Double,
     fromJs: js.Function6[
       /* left */ Double, 
@@ -36,7 +42,7 @@ object Layout {
       /* bottom */ Double, 
       /* width */ Double, 
       /* height */ Double, 
-      js.Any
+      Any
     ] => Callback,
     height: Double,
     left: Double,
@@ -44,16 +50,50 @@ object Layout {
     top: Double,
     width: Double
   ): Layout = {
-    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    __obj.updateDynamic("fromJs")(js.Any.fromFunction1((t0: js.Function6[
-  /* left */ scala.Double, 
-  /* right */ scala.Double, 
-  /* top */ scala.Double, 
-  /* bottom */ scala.Double, 
-  /* width */ scala.Double, 
-  /* height */ scala.Double, 
-  js.Any]) => fromJs(t0).runNow()))
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], fromJs = js.Any.fromFunction1((t0: js.Function6[
+      /* left */ Double, 
+      /* right */ Double, 
+      /* top */ Double, 
+      /* bottom */ Double, 
+      /* width */ Double, 
+      /* height */ Double, 
+      Any
+    ]) => fromJs(t0).runNow()), height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
+  
+  extension [Self <: Layout](x: Self) {
+    
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    
+    inline def setFromJs(
+      value: js.Function6[
+          /* left */ Double, 
+          /* right */ Double, 
+          /* top */ Double, 
+          /* bottom */ Double, 
+          /* width */ Double, 
+          /* height */ Double, 
+          Any
+        ] => Callback
+    ): Self = StObject.set(x, "fromJs", js.Any.fromFunction1((t0: js.Function6[
+          /* left */ Double, 
+          /* right */ Double, 
+          /* top */ Double, 
+          /* bottom */ Double, 
+          /* width */ Double, 
+          /* height */ Double, 
+          Any
+        ]) => value(t0).runNow()))
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
 }
-

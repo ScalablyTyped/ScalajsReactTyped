@@ -1,8 +1,8 @@
 package typingsJapgolly.gapiCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // The attendee's response status. Possible values are:
 /* Rewritten from type alias, can be one of: 
@@ -11,18 +11,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gapiCalendar.gapiCalendarStrings.tentative
   - typingsJapgolly.gapiCalendar.gapiCalendarStrings.accepted
 */
-trait AttendeeResponseStatus extends js.Object
-
+trait AttendeeResponseStatus extends StObject
 object AttendeeResponseStatus {
-  @scala.inline
-  def accepted: typingsJapgolly.gapiCalendar.gapiCalendarStrings.accepted = this.cast("accepted")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def declined: typingsJapgolly.gapiCalendar.gapiCalendarStrings.declined = this.cast("declined")
-  @scala.inline
-  def needsAction: typingsJapgolly.gapiCalendar.gapiCalendarStrings.needsAction = this.cast("needsAction")
-  @scala.inline
-  def tentative: typingsJapgolly.gapiCalendar.gapiCalendarStrings.tentative = this.cast("tentative")
+  
+  inline def accepted: typingsJapgolly.gapiCalendar.gapiCalendarStrings.accepted = "accepted".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.accepted]
+  
+  inline def declined: typingsJapgolly.gapiCalendar.gapiCalendarStrings.declined = "declined".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.declined]
+  
+  inline def needsAction: typingsJapgolly.gapiCalendar.gapiCalendarStrings.needsAction = "needsAction".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.needsAction]
+  
+  inline def tentative: typingsJapgolly.gapiCalendar.gapiCalendarStrings.tentative = "tentative".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.tentative]
 }
-

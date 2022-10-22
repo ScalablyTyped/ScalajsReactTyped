@@ -1,14 +1,18 @@
 package typingsJapgolly.aframe.mod.THREE
 
-import typingsJapgolly.three.object3DMod.Object3D
+import typingsJapgolly.three.srcCoreEventDispatcherMod.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.BoxHelper")
 @js.native
-class BoxHelper protected ()
+open class BoxHelper protected ()
   extends typingsJapgolly.three.mod.BoxHelper {
-  def this(`object`: Object3D) = this()
+  /**
+    * @param object
+    * @param [color=0xffff00]
+    */
+  def this(`object`: typingsJapgolly.three.srcCoreObject3DMod.Object3D[Event]) = this()
 }
-

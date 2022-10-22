@@ -1,19 +1,21 @@
 package typingsJapgolly.facebookInstantGames.FBInstant
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents information about the player along with a signature to verify that it indeed comes from Facebook.
   */
-trait SignedPlayerInfo extends js.Object {
+trait SignedPlayerInfo extends StObject {
+  
   /**
     * Get the id of the player.
     * @returns The ID of the player
     */
   def getPlayerID(): String
+  
   /**
     * A signature to verify this object indeed comes from Facebook. The string is base64url encoded and signed with an HMAC version of your App Secret,
     * based on the OAuth 2.0 spec.
@@ -40,14 +42,17 @@ trait SignedPlayerInfo extends js.Object {
     */
   def getSignature(): String
 }
-
 object SignedPlayerInfo {
-  @scala.inline
-  def apply(getPlayerID: CallbackTo[String], getSignature: CallbackTo[String]): SignedPlayerInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPlayerID")(getPlayerID.toJsFn)
-    __obj.updateDynamic("getSignature")(getSignature.toJsFn)
+  
+  inline def apply(getPlayerID: CallbackTo[String], getSignature: CallbackTo[String]): SignedPlayerInfo = {
+    val __obj = js.Dynamic.literal(getPlayerID = getPlayerID.toJsFn, getSignature = getSignature.toJsFn)
     __obj.asInstanceOf[SignedPlayerInfo]
   }
+  
+  extension [Self <: SignedPlayerInfo](x: Self) {
+    
+    inline def setGetPlayerID(value: CallbackTo[String]): Self = StObject.set(x, "getPlayerID", value.toJsFn)
+    
+    inline def setGetSignature(value: CallbackTo[String]): Self = StObject.set(x, "getSignature", value.toJsFn)
+  }
 }
-

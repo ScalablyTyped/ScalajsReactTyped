@@ -1,26 +1,31 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.chipChipMod.ChipProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.chipChipMod.ChipTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.div
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Chip", JSImport.Namespace)
-@js.native
-object chipMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[ChipProps, ComponentState, js.Any] {
-    def this(props: ChipProps) = this()
-    def this(props: ChipProps, context: js.Any) = this()
-  }
+object chipMod extends Shortcut {
   
+  /**
+    * Chips represent complex entities in small blocks, such as a contact.
+    * Demos:
+    *
+    * - [Chips](https://mui.com/components/chips/)
+    *
+    * API:
+    *
+    * - [Chip API](https://mui.com/api/chip/)
+    */
+  @JSImport("@material-ui/core/Chip", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[ChipProps]]
+  val default: OverridableComponent[ChipTypeMap[js.Object, div]] = js.native
   
+  type _To = OverridableComponent[ChipTypeMap[js.Object, div]]
+  
+  /* This means you don't have to write `default`, but can instead just say `chipMod.foo` */
+  override def _to: OverridableComponent[ChipTypeMap[js.Object, div]] = default
 }
-

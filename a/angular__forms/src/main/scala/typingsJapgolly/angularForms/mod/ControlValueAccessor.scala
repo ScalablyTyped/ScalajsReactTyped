@@ -1,29 +1,12 @@
 package typingsJapgolly.angularForms.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ControlValueAccessor extends js.Object {
-  /**
-    * @description
-    * Function that is called by the forms API when the control status changes to
-    * or from 'DISABLED'. Depending on the status, it enables or disables the
-    * appropriate DOM element.
-    *
-    * @usageNotes
-    * The following is an example of writing the disabled property to a native DOM element:
-    *
-    * ```ts
-    * setDisabledState(isDisabled: boolean): void {
-    *   this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
-    * }
-    * ```
-    *
-    * @param isDisabled The disabled status to set on the element
-    */
-  var setDisabledState: js.UndefOr[js.Function1[/* isDisabled */ Boolean, Unit]] = js.undefined
+trait ControlValueAccessor extends StObject {
+  
   /**
     * @description
     * Registers a callback function that is called when the control's value
@@ -57,10 +40,11 @@ trait ControlValueAccessor extends js.Object {
     *
     * @param fn The callback function to register
     */
-  def registerOnChange(fn: js.Any): Unit
+  def registerOnChange(fn: Any): Unit
+  
   /**
     * @description
-    * Registers a callback function is called by the forms API on initialization
+    * Registers a callback function that is called by the forms API on initialization
     * to update the form model on blur.
     *
     * When implementing `registerOnTouched` in your own value accessor, save the given
@@ -89,7 +73,27 @@ trait ControlValueAccessor extends js.Object {
     *
     * @param fn The callback function to register
     */
-  def registerOnTouched(fn: js.Any): Unit
+  def registerOnTouched(fn: Any): Unit
+  
+  /**
+    * @description
+    * Function that is called by the forms API when the control status changes to
+    * or from 'DISABLED'. Depending on the status, it enables or disables the
+    * appropriate DOM element.
+    *
+    * @usageNotes
+    * The following is an example of writing the disabled property to a native DOM element:
+    *
+    * ```ts
+    * setDisabledState(isDisabled: boolean): void {
+    *   this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    * }
+    * ```
+    *
+    * @param isDisabled The disabled status to set on the element
+    */
+  var setDisabledState: js.UndefOr[js.Function1[/* isDisabled */ Boolean, Unit]] = js.undefined
+  
   /**
     * @description
     * Writes a new value to the element.
@@ -110,23 +114,25 @@ trait ControlValueAccessor extends js.Object {
     *
     * @param obj The new value for the element
     */
-  def writeValue(obj: js.Any): Unit
+  def writeValue(obj: Any): Unit
 }
-
 object ControlValueAccessor {
-  @scala.inline
-  def apply(
-    registerOnChange: js.Any => Callback,
-    registerOnTouched: js.Any => Callback,
-    writeValue: js.Any => Callback,
-    setDisabledState: /* isDisabled */ Boolean => Callback = null
-  ): ControlValueAccessor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registerOnChange")(js.Any.fromFunction1((t0: js.Any) => registerOnChange(t0).runNow()))
-    __obj.updateDynamic("registerOnTouched")(js.Any.fromFunction1((t0: js.Any) => registerOnTouched(t0).runNow()))
-    __obj.updateDynamic("writeValue")(js.Any.fromFunction1((t0: js.Any) => writeValue(t0).runNow()))
-    if (setDisabledState != null) __obj.updateDynamic("setDisabledState")(js.Any.fromFunction1((t0: /* isDisabled */ scala.Boolean) => setDisabledState(t0).runNow()))
+  
+  inline def apply(registerOnChange: Any => Callback, registerOnTouched: Any => Callback, writeValue: Any => Callback): ControlValueAccessor = {
+    val __obj = js.Dynamic.literal(registerOnChange = js.Any.fromFunction1((t0: Any) => registerOnChange(t0).runNow()), registerOnTouched = js.Any.fromFunction1((t0: Any) => registerOnTouched(t0).runNow()), writeValue = js.Any.fromFunction1((t0: Any) => writeValue(t0).runNow()))
     __obj.asInstanceOf[ControlValueAccessor]
   }
+  
+  extension [Self <: ControlValueAccessor](x: Self) {
+    
+    inline def setRegisterOnChange(value: Any => Callback): Self = StObject.set(x, "registerOnChange", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+    
+    inline def setRegisterOnTouched(value: Any => Callback): Self = StObject.set(x, "registerOnTouched", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+    
+    inline def setSetDisabledState(value: /* isDisabled */ Boolean => Callback): Self = StObject.set(x, "setDisabledState", js.Any.fromFunction1((t0: /* isDisabled */ Boolean) => value(t0).runNow()))
+    
+    inline def setSetDisabledStateUndefined: Self = StObject.set(x, "setDisabledState", js.undefined)
+    
+    inline def setWriteValue(value: Any => Callback): Self = StObject.set(x, "writeValue", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+  }
 }
-

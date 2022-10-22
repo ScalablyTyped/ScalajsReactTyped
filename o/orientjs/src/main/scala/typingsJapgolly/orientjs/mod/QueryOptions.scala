@@ -5,40 +5,61 @@ import typingsJapgolly.orientjs.orientjsStrings.SQL
 import typingsJapgolly.orientjs.orientjsStrings.a
 import typingsJapgolly.orientjs.orientjsStrings.l
 import typingsJapgolly.orientjs.orientjsStrings.s
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QueryOptions extends js.Object {
+trait QueryOptions extends StObject {
+  
   var `class`: js.UndefOr[String] = js.undefined
-  var fetchPlan: js.UndefOr[js.Any] = js.undefined
+  
+  var fetchPlan: js.UndefOr[Any] = js.undefined
+  
   var language: js.UndefOr[SQL | Javascript] = js.undefined
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var mode: js.UndefOr[s | a | l] = js.undefined
-  var params: js.UndefOr[js.Any] = js.undefined
-  var token: js.UndefOr[js.Any] = js.undefined
+  
+  var params: js.UndefOr[Any] = js.undefined
+  
+  var token: js.UndefOr[Any] = js.undefined
 }
-
 object QueryOptions {
-  @scala.inline
-  def apply(
-    `class`: String = null,
-    fetchPlan: js.Any = null,
-    language: SQL | Javascript = null,
-    limit: Int | Double = null,
-    mode: s | a | l = null,
-    params: js.Any = null,
-    token: js.Any = null
-  ): QueryOptions = {
+  
+  inline def apply(): QueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (fetchPlan != null) __obj.updateDynamic("fetchPlan")(fetchPlan.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
+  
+  extension [Self <: QueryOptions](x: Self) {
+    
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    
+    inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    
+    inline def setFetchPlan(value: Any): Self = StObject.set(x, "fetchPlan", value.asInstanceOf[js.Any])
+    
+    inline def setFetchPlanUndefined: Self = StObject.set(x, "fetchPlan", js.undefined)
+    
+    inline def setLanguage(value: SQL | Javascript): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setMode(value: s | a | l): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
+    inline def setToken(value: Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+  }
 }
-

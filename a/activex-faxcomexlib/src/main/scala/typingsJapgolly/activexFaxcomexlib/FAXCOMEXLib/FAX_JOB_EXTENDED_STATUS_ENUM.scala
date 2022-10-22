@@ -1,100 +1,96 @@
 package typingsJapgolly.activexFaxcomexlib.FAXCOMEXLib
 
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`10`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`11`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`12`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`13`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`14`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`15`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`16777216`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`16`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`17`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`18`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`19`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`3`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`5`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`6`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`7`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`8`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`9`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`0`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`10`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`11`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`12`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`13`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`14`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`15`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`16777216`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`16`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`17`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`18`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`19`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`3`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`4`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`5`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`6`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`7`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`8`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line:no-const-enum
+// eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`5`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`10`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`8`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`19`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`14`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`18`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`13`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`3`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`12`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`17`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`7`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`9`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`11`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`15`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`16`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`16777216`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`6`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`5`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`10`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`8`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`19`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`14`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`18`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`13`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`3`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`12`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`17`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`7`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`9`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`11`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`0`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`15`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`16`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`16777216`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`6`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`4`
 */
-trait FAX_JOB_EXTENDED_STATUS_ENUM extends js.Object
-
+trait FAX_JOB_EXTENDED_STATUS_ENUM extends StObject
 object FAX_JOB_EXTENDED_STATUS_ENUM {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fjesANSWERED: `5` = this.cast(5)
-  @scala.inline
-  def fjesBAD_ADDRESS: `10` = this.cast(10)
-  @scala.inline
-  def fjesBUSY: `8` = this.cast(8)
-  @scala.inline
-  def fjesCALL_ABORTED: `19` = this.cast(19)
-  @scala.inline
-  def fjesCALL_BLACKLISTED: `14` = this.cast(14)
-  @scala.inline
-  def fjesCALL_COMPLETED: `18` = this.cast(18)
-  @scala.inline
-  def fjesCALL_DELAYED: `13` = this.cast(13)
-  @scala.inline
-  def fjesDIALING: `3` = this.cast(3)
-  @scala.inline
-  def fjesDISCONNECTED: `1` = this.cast(1)
-  @scala.inline
-  def fjesFATAL_ERROR: `12` = this.cast(12)
-  @scala.inline
-  def fjesHANDLED: `17` = this.cast(17)
-  @scala.inline
-  def fjesINITIALIZING: `2` = this.cast(2)
-  @scala.inline
-  def fjesLINE_UNAVAILABLE: `7` = this.cast(7)
-  @scala.inline
-  def fjesNONE: `0` = this.cast(0)
-  @scala.inline
-  def fjesNOT_FAX_CALL: `15` = this.cast(15)
-  @scala.inline
-  def fjesNO_ANSWER: `9` = this.cast(9)
-  @scala.inline
-  def fjesNO_DIAL_TONE: `11` = this.cast(11)
-  @scala.inline
-  def fjesPARTIALLY_RECEIVED: `16` = this.cast(16)
-  @scala.inline
-  def fjesPROPRIETARY: `16777216` = this.cast(16777216)
-  @scala.inline
-  def fjesRECEIVING: `6` = this.cast(6)
-  @scala.inline
-  def fjesTRANSMITTING: `4` = this.cast(4)
+  
+  inline def fjesANSWERED: `5` = 5.asInstanceOf[`5`]
+  
+  inline def fjesBAD_ADDRESS: `10` = 10.asInstanceOf[`10`]
+  
+  inline def fjesBUSY: `8` = 8.asInstanceOf[`8`]
+  
+  inline def fjesCALL_ABORTED: `19` = 19.asInstanceOf[`19`]
+  
+  inline def fjesCALL_BLACKLISTED: `14` = 14.asInstanceOf[`14`]
+  
+  inline def fjesCALL_COMPLETED: `18` = 18.asInstanceOf[`18`]
+  
+  inline def fjesCALL_DELAYED: `13` = 13.asInstanceOf[`13`]
+  
+  inline def fjesDIALING: `3` = 3.asInstanceOf[`3`]
+  
+  inline def fjesDISCONNECTED: `1` = 1.asInstanceOf[`1`]
+  
+  inline def fjesFATAL_ERROR: `12` = 12.asInstanceOf[`12`]
+  
+  inline def fjesHANDLED: `17` = 17.asInstanceOf[`17`]
+  
+  inline def fjesINITIALIZING: `2` = 2.asInstanceOf[`2`]
+  
+  inline def fjesLINE_UNAVAILABLE: `7` = 7.asInstanceOf[`7`]
+  
+  inline def fjesNONE: `0` = 0.asInstanceOf[`0`]
+  
+  inline def fjesNOT_FAX_CALL: `15` = 15.asInstanceOf[`15`]
+  
+  inline def fjesNO_ANSWER: `9` = 9.asInstanceOf[`9`]
+  
+  inline def fjesNO_DIAL_TONE: `11` = 11.asInstanceOf[`11`]
+  
+  inline def fjesPARTIALLY_RECEIVED: `16` = 16.asInstanceOf[`16`]
+  
+  inline def fjesPROPRIETARY: `16777216` = 16777216.asInstanceOf[`16777216`]
+  
+  inline def fjesRECEIVING: `6` = 6.asInstanceOf[`6`]
+  
+  inline def fjesTRANSMITTING: `4` = 4.asInstanceOf[`4`]
 }
-

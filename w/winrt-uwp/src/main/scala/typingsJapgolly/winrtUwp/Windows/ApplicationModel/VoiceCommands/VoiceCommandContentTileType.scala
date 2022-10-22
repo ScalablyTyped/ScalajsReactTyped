@@ -1,74 +1,61 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.VoiceCommands
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VoiceCommandContentTileType extends js.Object
-
+sealed trait VoiceCommandContentTileType extends StObject
 /** The layout template used to display a content tile on the Cortana canvas. */
 @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType")
 @js.native
-object VoiceCommandContentTileType extends js.Object {
+object VoiceCommandContentTileType extends StObject {
+  
   /** Only item title. */
   @js.native
-  sealed trait titleOnly extends VoiceCommandContentTileType
+  sealed trait titleOnly
+    extends StObject
+       with VoiceCommandContentTileType
   
   /** Item title with wide image. */
   @js.native
-  sealed trait titleWith280x140Icon extends VoiceCommandContentTileType
+  sealed trait titleWith280x140Icon
+    extends StObject
+       with VoiceCommandContentTileType
   
   /** Item title, up to two lines of text, and wide image. */
   @js.native
-  sealed trait titleWith280x140IconAndText extends VoiceCommandContentTileType
+  sealed trait titleWith280x140IconAndText
+    extends StObject
+       with VoiceCommandContentTileType
   
   /** Item title with small, square image. */
   @js.native
-  sealed trait titleWith68x68Icon extends VoiceCommandContentTileType
+  sealed trait titleWith68x68Icon
+    extends StObject
+       with VoiceCommandContentTileType
   
   /** Item title, up to three lines of text, and small square image. */
   @js.native
-  sealed trait titleWith68x68IconAndText extends VoiceCommandContentTileType
+  sealed trait titleWith68x68IconAndText
+    extends StObject
+       with VoiceCommandContentTileType
   
   /** Item title with tall image. */
   @js.native
-  sealed trait titleWith68x92Icon extends VoiceCommandContentTileType
+  sealed trait titleWith68x92Icon
+    extends StObject
+       with VoiceCommandContentTileType
   
   /** Item title, up to three lines of text, and tall image. */
   @js.native
-  sealed trait titleWith68x92IconAndText extends VoiceCommandContentTileType
+  sealed trait titleWith68x92IconAndText
+    extends StObject
+       with VoiceCommandContentTileType
   
   /** Item title with up to three lines of text. */
   @js.native
-  sealed trait titleWithText extends VoiceCommandContentTileType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VoiceCommandContentTileType with Double] = js.native
-  /* 0 */ @js.native
-  object titleOnly extends TopLevel[titleOnly with Double]
-  
-  /* 6 */ @js.native
-  object titleWith280x140Icon extends TopLevel[titleWith280x140Icon with Double]
-  
-  /* 7 */ @js.native
-  object titleWith280x140IconAndText extends TopLevel[titleWith280x140IconAndText with Double]
-  
-  /* 2 */ @js.native
-  object titleWith68x68Icon extends TopLevel[titleWith68x68Icon with Double]
-  
-  /* 3 */ @js.native
-  object titleWith68x68IconAndText extends TopLevel[titleWith68x68IconAndText with Double]
-  
-  /* 4 */ @js.native
-  object titleWith68x92Icon extends TopLevel[titleWith68x92Icon with Double]
-  
-  /* 5 */ @js.native
-  object titleWith68x92IconAndText extends TopLevel[titleWith68x92IconAndText with Double]
-  
-  /* 1 */ @js.native
-  object titleWithText extends TopLevel[titleWithText with Double]
-  
+  sealed trait titleWithText
+    extends StObject
+       with VoiceCommandContentTileType
 }
-

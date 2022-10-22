@@ -9,10 +9,10 @@ Override HTTP verbs
 | ------------------ | :-------------: |
 | Full name          | method-override |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 871 |
-| # downloads        | 21610174 |
-| # stars            | 93 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2479668.0 |
+| # stars            | 584.0 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/method-override#readme)

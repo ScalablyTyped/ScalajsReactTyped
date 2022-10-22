@@ -1,19 +1,22 @@
 package typingsJapgolly.cordovaPluginNativeKeyboard
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Window extends js.Object {
+trait Window extends StObject {
+  
   var NativeKeyboard: typingsJapgolly.cordovaPluginNativeKeyboard.NativeKeyboard
 }
-
 object Window {
-  @scala.inline
-  def apply(NativeKeyboard: NativeKeyboard): Window = {
-    val __obj = js.Dynamic.literal(NativeKeyboard = NativeKeyboard.asInstanceOf[js.Any])
   
+  inline def apply(NativeKeyboard: NativeKeyboard): Window = {
+    val __obj = js.Dynamic.literal(NativeKeyboard = NativeKeyboard.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
+  
+  extension [Self <: Window](x: Self) {
+    
+    inline def setNativeKeyboard(value: NativeKeyboard): Self = StObject.set(x, "NativeKeyboard", value.asInstanceOf[js.Any])
+  }
 }
-

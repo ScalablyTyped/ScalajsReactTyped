@@ -1,35 +1,42 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KeyboardEventModifier extends js.Object
-
+sealed trait KeyboardEventModifier extends StObject
 @JSImport("cesium", "KeyboardEventModifier")
 @js.native
-object KeyboardEventModifier extends js.Object {
-  @js.native
-  sealed trait ALT extends KeyboardEventModifier
-  
-  @js.native
-  sealed trait CTRL extends KeyboardEventModifier
-  
-  @js.native
-  sealed trait SHIFT extends KeyboardEventModifier
+object KeyboardEventModifier extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KeyboardEventModifier with Double] = js.native
-  /* 2 */ @js.native
-  object ALT extends TopLevel[ALT with Double]
+  def apply(value: Double): js.UndefOr[KeyboardEventModifier & Double] = js.native
   
-  /* 1 */ @js.native
-  object CTRL extends TopLevel[CTRL with Double]
+  /**
+    * Represents the alt key being held down.
+    */
+  @js.native
+  sealed trait ALT
+    extends StObject
+       with KeyboardEventModifier
+  /* 2 */ val ALT: typingsJapgolly.cesium.mod.KeyboardEventModifier.ALT & Double = js.native
   
-  /* 0 */ @js.native
-  object SHIFT extends TopLevel[SHIFT with Double]
+  /**
+    * Represents the control key being held down.
+    */
+  @js.native
+  sealed trait CTRL
+    extends StObject
+       with KeyboardEventModifier
+  /* 1 */ val CTRL: typingsJapgolly.cesium.mod.KeyboardEventModifier.CTRL & Double = js.native
   
+  /**
+    * Represents the shift key being held down.
+    */
+  @js.native
+  sealed trait SHIFT
+    extends StObject
+       with KeyboardEventModifier
+  /* 0 */ val SHIFT: typingsJapgolly.cesium.mod.KeyboardEventModifier.SHIFT & Double = js.native
 }
-

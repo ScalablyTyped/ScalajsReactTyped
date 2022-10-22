@@ -1,46 +1,87 @@
 package typingsJapgolly.awsSdkClientGlacierNode
 
-import typingsJapgolly.awsSdkClientGlacierNode.outputTypesUnionMod._OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientGlacierNode.typesOutputTypesUnionMod._OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/types/DescribeVaultOutput", JSImport.Namespace)
-@js.native
-object typesDescribeVaultOutputMod extends js.Object {
-  @js.native
-  trait DescribeVaultOutput extends _OutputTypesUnion {
+object typesDescribeVaultOutputMod {
+  
+  trait DescribeVaultOutput
+    extends StObject
+       with _OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>The Universal Coordinated Time (UTC) date when the vault was created. This value should be a string in the ISO 8601 date format, for example <code>2012-03-20T17:03:43.221Z</code>.</p>
       */
-    var CreationDate: js.UndefOr[String] = js.native
+    var CreationDate: js.UndefOr[String] = js.undefined
+    
     /**
       * <p>The Universal Coordinated Time (UTC) date when Amazon Glacier completed the last vault inventory. This value should be a string in the ISO 8601 date format, for example <code>2012-03-20T17:03:43.221Z</code>.</p>
       */
-    var LastInventoryDate: js.UndefOr[String] = js.native
+    var LastInventoryDate: js.UndefOr[String] = js.undefined
+    
     /**
       * <p>The number of archives in the vault as of the last inventory date. This field will return <code>null</code> if an inventory has not yet run on the vault, for example if you just created the vault.</p>
       */
-    var NumberOfArchives: js.UndefOr[Double] = js.native
+    var NumberOfArchives: js.UndefOr[Double] = js.undefined
+    
     /**
       * <p>Total size, in bytes, of the archives in the vault as of the last inventory date. This field will return null if an inventory has not yet run on the vault, for example if you just created the vault.</p>
       */
-    var SizeInBytes: js.UndefOr[Double] = js.native
+    var SizeInBytes: js.UndefOr[Double] = js.undefined
+    
     /**
       * <p>The Amazon Resource Name (ARN) of the vault.</p>
       */
-    var VaultARN: js.UndefOr[String] = js.native
+    var VaultARN: js.UndefOr[String] = js.undefined
+    
     /**
       * <p>The name of the vault.</p>
       */
-    var VaultName: js.UndefOr[String] = js.native
+    var VaultName: js.UndefOr[String] = js.undefined
   }
-  
+  object DescribeVaultOutput {
+    
+    inline def apply($metadata: ResponseMetadata): DescribeVaultOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DescribeVaultOutput]
+    }
+    
+    extension [Self <: DescribeVaultOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      
+      inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+      
+      inline def setLastInventoryDate(value: String): Self = StObject.set(x, "LastInventoryDate", value.asInstanceOf[js.Any])
+      
+      inline def setLastInventoryDateUndefined: Self = StObject.set(x, "LastInventoryDate", js.undefined)
+      
+      inline def setNumberOfArchives(value: Double): Self = StObject.set(x, "NumberOfArchives", value.asInstanceOf[js.Any])
+      
+      inline def setNumberOfArchivesUndefined: Self = StObject.set(x, "NumberOfArchives", js.undefined)
+      
+      inline def setSizeInBytes(value: Double): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
+      
+      inline def setSizeInBytesUndefined: Self = StObject.set(x, "SizeInBytes", js.undefined)
+      
+      inline def setVaultARN(value: String): Self = StObject.set(x, "VaultARN", value.asInstanceOf[js.Any])
+      
+      inline def setVaultARNUndefined: Self = StObject.set(x, "VaultARN", js.undefined)
+      
+      inline def setVaultName(value: String): Self = StObject.set(x, "VaultName", value.asInstanceOf[js.Any])
+      
+      inline def setVaultNameUndefined: Self = StObject.set(x, "VaultName", js.undefined)
+    }
+  }
 }
-

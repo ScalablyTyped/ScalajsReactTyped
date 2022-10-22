@@ -1,45 +1,28 @@
 package typingsJapgolly.calidation.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.calidation.mod.Dictionary
-import typingsJapgolly.calidation.mod.SimpleValidatorConfig
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.calidation.mod.CustomValidatorFunction
 import typingsJapgolly.calidation.mod.ValidatorsProviderProps
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ValidatorsProvider {
-  def apply(
-    validators: Dictionary[
-      js.Function1[/* config */ SimpleValidatorConfig, js.Function1[/* value */ _, String | Null]]
-    ],
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ValidatorsProviderProps, 
-    typingsJapgolly.calidation.mod.ValidatorsProvider, 
-    Unit, 
-    ValidatorsProviderProps
-  ] = {
-    val __obj = js.Dynamic.literal(validators = validators.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.calidation.mod.ValidatorsProviderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.calidation.mod.ValidatorsProvider](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.calidation.mod.ValidatorsProviderProps])(children: _*)
+  inline def apply[T /* <: js.Object */](validators: Record[String, CustomValidatorFunction[T]]): Builder[T] = {
+    val __props = js.Dynamic.literal(validators = validators.asInstanceOf[js.Any])
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[ValidatorsProviderProps[T]]))
   }
+  
   @JSImport("calidation", "ValidatorsProvider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T /* <: js.Object */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.calidation.mod.ValidatorsProvider[T]]
+  
+  def withProps[T /* <: js.Object */](p: ValidatorsProviderProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

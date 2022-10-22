@@ -1,21 +1,23 @@
 package typingsJapgolly.agoraRtcSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Video statistics of the remote stream.
   *
   * If {@link getRemoteVideoStats} is called successfully, the {@link RemoteVideoStatsMap} interface provides the UID and {@link RemoteVideoStats} of each remote user.
   */
-trait RemoteVideoStats extends js.Object {
+trait RemoteVideoStats extends StObject {
+  
   /**
     * End-to-end delay in ms.
     *
     * Delay from capturing to playing the video.
     */
   val End2EndDelay: js.UndefOr[String] = js.undefined
+  
   /**
     * Whether the video is muted or not.
     *
@@ -23,24 +25,34 @@ trait RemoteVideoStats extends js.Object {
     * - "0": Unmuted.
     */
   val MuteState: js.UndefOr[String] = js.undefined
+  
   /** Packet loss rate (%) of the remote video. */
   val PacketLossRate: js.UndefOr[String] = js.undefined
+  
   /** Bitrate of the received video, in Kbps. */
   val RecvBitrate: js.UndefOr[String] = js.undefined
+  
   /** Resolution height of the received video, in pixels. */
   val RecvResolutionHeight: js.UndefOr[String] = js.undefined
+  
   /** Resolution width of the received video, in pixels. */
   val RecvResolutionWidth: js.UndefOr[String] = js.undefined
+  
   /** Rendering frame rate of the decoded video, in fps. */
   val RenderFrameRate: js.UndefOr[String] = js.undefined
+  
   /** Height (pixels) of the rendered video */
   val RenderResolutionHeight: js.UndefOr[String] = js.undefined
+  
   /** Width (pixels) of the rendered video */
   val RenderResolutionWidth: js.UndefOr[String] = js.undefined
+  
   /** Total freeze time of the received video. */
   val TotalFreezeTime: js.UndefOr[String] = js.undefined
+  
   /** Total playing duration of the received video. */
   val TotalPlayDuration: js.UndefOr[String] = js.undefined
+  
   /**
     * Transport delay in ms.
     *
@@ -48,37 +60,61 @@ trait RemoteVideoStats extends js.Object {
     */
   val TransportDelay: js.UndefOr[String] = js.undefined
 }
-
 object RemoteVideoStats {
-  @scala.inline
-  def apply(
-    End2EndDelay: String = null,
-    MuteState: String = null,
-    PacketLossRate: String = null,
-    RecvBitrate: String = null,
-    RecvResolutionHeight: String = null,
-    RecvResolutionWidth: String = null,
-    RenderFrameRate: String = null,
-    RenderResolutionHeight: String = null,
-    RenderResolutionWidth: String = null,
-    TotalFreezeTime: String = null,
-    TotalPlayDuration: String = null,
-    TransportDelay: String = null
-  ): RemoteVideoStats = {
+  
+  inline def apply(): RemoteVideoStats = {
     val __obj = js.Dynamic.literal()
-    if (End2EndDelay != null) __obj.updateDynamic("End2EndDelay")(End2EndDelay.asInstanceOf[js.Any])
-    if (MuteState != null) __obj.updateDynamic("MuteState")(MuteState.asInstanceOf[js.Any])
-    if (PacketLossRate != null) __obj.updateDynamic("PacketLossRate")(PacketLossRate.asInstanceOf[js.Any])
-    if (RecvBitrate != null) __obj.updateDynamic("RecvBitrate")(RecvBitrate.asInstanceOf[js.Any])
-    if (RecvResolutionHeight != null) __obj.updateDynamic("RecvResolutionHeight")(RecvResolutionHeight.asInstanceOf[js.Any])
-    if (RecvResolutionWidth != null) __obj.updateDynamic("RecvResolutionWidth")(RecvResolutionWidth.asInstanceOf[js.Any])
-    if (RenderFrameRate != null) __obj.updateDynamic("RenderFrameRate")(RenderFrameRate.asInstanceOf[js.Any])
-    if (RenderResolutionHeight != null) __obj.updateDynamic("RenderResolutionHeight")(RenderResolutionHeight.asInstanceOf[js.Any])
-    if (RenderResolutionWidth != null) __obj.updateDynamic("RenderResolutionWidth")(RenderResolutionWidth.asInstanceOf[js.Any])
-    if (TotalFreezeTime != null) __obj.updateDynamic("TotalFreezeTime")(TotalFreezeTime.asInstanceOf[js.Any])
-    if (TotalPlayDuration != null) __obj.updateDynamic("TotalPlayDuration")(TotalPlayDuration.asInstanceOf[js.Any])
-    if (TransportDelay != null) __obj.updateDynamic("TransportDelay")(TransportDelay.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteVideoStats]
   }
+  
+  extension [Self <: RemoteVideoStats](x: Self) {
+    
+    inline def setEnd2EndDelay(value: String): Self = StObject.set(x, "End2EndDelay", value.asInstanceOf[js.Any])
+    
+    inline def setEnd2EndDelayUndefined: Self = StObject.set(x, "End2EndDelay", js.undefined)
+    
+    inline def setMuteState(value: String): Self = StObject.set(x, "MuteState", value.asInstanceOf[js.Any])
+    
+    inline def setMuteStateUndefined: Self = StObject.set(x, "MuteState", js.undefined)
+    
+    inline def setPacketLossRate(value: String): Self = StObject.set(x, "PacketLossRate", value.asInstanceOf[js.Any])
+    
+    inline def setPacketLossRateUndefined: Self = StObject.set(x, "PacketLossRate", js.undefined)
+    
+    inline def setRecvBitrate(value: String): Self = StObject.set(x, "RecvBitrate", value.asInstanceOf[js.Any])
+    
+    inline def setRecvBitrateUndefined: Self = StObject.set(x, "RecvBitrate", js.undefined)
+    
+    inline def setRecvResolutionHeight(value: String): Self = StObject.set(x, "RecvResolutionHeight", value.asInstanceOf[js.Any])
+    
+    inline def setRecvResolutionHeightUndefined: Self = StObject.set(x, "RecvResolutionHeight", js.undefined)
+    
+    inline def setRecvResolutionWidth(value: String): Self = StObject.set(x, "RecvResolutionWidth", value.asInstanceOf[js.Any])
+    
+    inline def setRecvResolutionWidthUndefined: Self = StObject.set(x, "RecvResolutionWidth", js.undefined)
+    
+    inline def setRenderFrameRate(value: String): Self = StObject.set(x, "RenderFrameRate", value.asInstanceOf[js.Any])
+    
+    inline def setRenderFrameRateUndefined: Self = StObject.set(x, "RenderFrameRate", js.undefined)
+    
+    inline def setRenderResolutionHeight(value: String): Self = StObject.set(x, "RenderResolutionHeight", value.asInstanceOf[js.Any])
+    
+    inline def setRenderResolutionHeightUndefined: Self = StObject.set(x, "RenderResolutionHeight", js.undefined)
+    
+    inline def setRenderResolutionWidth(value: String): Self = StObject.set(x, "RenderResolutionWidth", value.asInstanceOf[js.Any])
+    
+    inline def setRenderResolutionWidthUndefined: Self = StObject.set(x, "RenderResolutionWidth", js.undefined)
+    
+    inline def setTotalFreezeTime(value: String): Self = StObject.set(x, "TotalFreezeTime", value.asInstanceOf[js.Any])
+    
+    inline def setTotalFreezeTimeUndefined: Self = StObject.set(x, "TotalFreezeTime", js.undefined)
+    
+    inline def setTotalPlayDuration(value: String): Self = StObject.set(x, "TotalPlayDuration", value.asInstanceOf[js.Any])
+    
+    inline def setTotalPlayDurationUndefined: Self = StObject.set(x, "TotalPlayDuration", js.undefined)
+    
+    inline def setTransportDelay(value: String): Self = StObject.set(x, "TransportDelay", value.asInstanceOf[js.Any])
+    
+    inline def setTransportDelayUndefined: Self = StObject.set(x, "TransportDelay", js.undefined)
+  }
 }
-

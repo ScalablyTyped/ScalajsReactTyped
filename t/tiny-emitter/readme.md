@@ -10,10 +10,10 @@ A tiny (less than 1k) event emitter library
 | ------------------ | :-------------: |
 | Full name          | tiny-emitter |
 | Keywords           | event, emitter, pubsub, tiny, events, bind |
-| # releases         | 2 |
-| # dependents       | 181 |
-| # downloads        | 73297355 |
-| # stars            | 11 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2549921E7 |
+| # stars            | 761.0 |
 
 ## Links
 - [Homepage](https://github.com/scottcorgan/tiny-emitter#readme)

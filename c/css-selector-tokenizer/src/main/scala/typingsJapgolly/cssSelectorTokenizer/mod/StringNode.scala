@@ -1,34 +1,35 @@
 package typingsJapgolly.cssSelectorTokenizer.mod
 
 import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait StringNode
-  extends ValueNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with ValueNodeType {
+  
   var stringType: String
+  
   var `type`: string
+  
   var value: String
 }
-
 object StringNode {
-  @scala.inline
-  def apply(
-    stringType: String,
-    `type`: string,
-    value: String,
-    after: String = null,
-    before: String = null,
-    name: String = null
-  ): StringNode = {
+  
+  inline def apply(stringType: String, value: String): StringNode = {
     val __obj = js.Dynamic.literal(stringType = stringType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[StringNode]
   }
+  
+  extension [Self <: StringNode](x: Self) {
+    
+    inline def setStringType(value: String): Self = StObject.set(x, "stringType", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

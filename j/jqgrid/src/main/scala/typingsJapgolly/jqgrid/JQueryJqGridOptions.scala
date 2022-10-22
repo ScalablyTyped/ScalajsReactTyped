@@ -1,6 +1,7 @@
 package typingsJapgolly.jqgrid
 
 import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Event
 import typingsJapgolly.jqgrid.jqgridStrings.GET
 import typingsJapgolly.jqgrid.jqgridStrings.POST
 import typingsJapgolly.jqgrid.jqgridStrings.asc
@@ -14,41 +15,47 @@ import typingsJapgolly.jqgrid.jqgridStrings.jsonstring
 import typingsJapgolly.jqgrid.jqgridStrings.local
 import typingsJapgolly.jqgrid.jqgridStrings.xml
 import typingsJapgolly.jqgrid.jqgridStrings.xmlstring
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQueryJqGridOptions extends js.Object {
+trait JQueryJqGridOptions extends StObject {
+  
   /**
     * When set to true, the grid width is recalculated automatically to the width of the parent element.
     * This is done only initially when the grid is created.
     * In order to resize the grid when the parent element changes width you should apply custom code and use the setGridWidth method for this purpose
     */
   var autoWidth: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * When set to true encodes (html encode) the incoming (from server) and posted data (from editing modules).
     */
   var autoencode: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Defines the caption for the grid. This caption appears in the caption layer, which is above the header layer
     */
   var caption: js.UndefOr[String] = js.undefined
+  
   /**
     * Array which describes the parameters of the columns. This is the most important part of the grid.
     */
   var colModel: js.UndefOr[js.Array[JQueryJqGridColumn]] = js.undefined
+  
   /**
     * An array in which we place the names of the columns.
     * This is the text that appears in the head of the grid (header layer). The names are separated with commas.
     * Note that the number of elements in this array should be equal of the number elements in the colModel array.
     */
   var colNames: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * An array that stores the local data passed to the grid. You can directly point to this variable in case you want to load an array data.
     * It can replace the addRowData method which is slow on relative big data
     */
-  var data: js.UndefOr[js.Array[_]] = js.undefined
+  var data: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
     * Defines in what format to expect the data that fills the grid.
     * Valid options are xml (we expect data in xml format), xmlstring (we expect xml data as string), json (we expect data in JSON format),
@@ -59,12 +66,14 @@ trait JQueryJqGridOptions extends js.Object {
   var datatype: js.UndefOr[
     xml | xmlstring | json | jsonstring | local | javascript | js.Function | clientSide
   ] = js.undefined
+  
   /**
     * If set to true, and a column's width is changed, the adjacent column (to the right) will resize so that the overall grid width is maintained
     * (e.g., reducing the width of column 2 by 30px will increase the size of column 3 by 30px). In this case there is no horizontal scrollbar.
     * Note: This option is not compatible with shrinkToFit option - i.e if shrinkToFit is set to false, forceFit is ignored.
     */
   var forceFit: js.UndefOr[Boolean] = js.undefined
+  
   // events
   /**
     * This fires after all the data is loaded into the grid and all other processes are complete.
@@ -72,6 +81,7 @@ trait JQueryJqGridOptions extends js.Object {
     * @returns {} 
     */
   var gridComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * What will be the result if we insert all the data at once?
     * Yes, this can be done with a help of gridview option (set it to true).
@@ -80,25 +90,30 @@ trait JQueryJqGridOptions extends js.Object {
     * If you do not use these three options in the grid you can set this option to true and enjoy the speed.
     */
   var gridview: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The height of the grid.
     * Can be set as number (in this case we mean pixels) or as percentage (only 100% is accepted) or value of auto is acceptable.
     */
   var height: js.UndefOr[Double | String | auto] = js.undefined
+  
   /**
     * An array which describes the structure of the expected json data.
     */
   var jsonReader: js.UndefOr[IJqGridJsonReader] = js.undefined
+  
   /**
     * If this flag is set to true, the grid loads the data from the server only once (using the appropriate datatype).
     * After the first request, the datatype parameter is automatically changed to local and all further manipulations are done on the client side.
     * The functions of the pager (if present) are disabled.
     */
   var loadonce: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Defines the type of request to make ("POST" or "GET")
     */
   var mtype: js.UndefOr[GET | POST] = js.undefined
+  
   /**
     * This option works only when the multiselect option is set to true.
     * When multiselect is set to true, clicking anywhere on a row selects that row;
@@ -106,11 +121,13 @@ trait JQueryJqGridOptions extends js.Object {
     * Clicking in any other row (suppose the checkbox is not clicked) deselects all rows and selects the current row.
     */
   var multiboxonly: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If this flag is set to true a multi selection of rows is enabled. A new column at left side containing checkboxes is added.
     * Can be used with any datatype option
     */
   var multiselect: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Raised immediately after row was right clicked
     * @param rowid is the id of the row
@@ -120,8 +137,9 @@ trait JQueryJqGridOptions extends js.Object {
     * @returns {} 
     */
   var onRightClickRow: js.UndefOr[
-    js.Function4[/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event_, Unit]
+    js.Function4[/* rowid */ Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event, Unit]
   ] = js.undefined
+  
   /**
     * Raised immediately after row was clicked.
     * @param id  is the id of the row
@@ -129,7 +147,8 @@ trait JQueryJqGridOptions extends js.Object {
     * @param e  is the event object. Can be used when multiselect is set to true. true if the row is selected, false if the row is deselected.
     * @returns {} 
     */
-  var onSelectRow: js.UndefOr[js.Function3[/* id */ String, /* status */ js.Any, /* e */ Event_, Unit]] = js.undefined
+  var onSelectRow: js.UndefOr[js.Function3[/* id */ String, /* status */ Any, /* e */ Event, Unit]] = js.undefined
+  
   /**
     * Defines that we want to use a pager bar to navigate through the records.
     * This must be a valid HTML element; in our example we gave the div the id of "pager", but any name is acceptable.
@@ -139,6 +158,7 @@ trait JQueryJqGridOptions extends js.Object {
     * I recommend to use the second one - #pager
     */
   var pager: js.UndefOr[String] = js.undefined
+  
   /**
     * An array to construct a select box element in the pager in which we can change the number of the visible rows.
     * When changed during the execution, this parameter replaces the rowNum parameter that is passed to the url.
@@ -146,11 +166,13 @@ trait JQueryJqGridOptions extends js.Object {
     * If the rowNum parameter is set to 30 then the selected value in the select box is 30
     */
   var rowList: js.UndefOr[js.Array[Double]] = js.undefined
+  
   /**
     * Sets how many records we want to view in the grid. This parameter is passed to the url for use by the server routine retrieving the data.
     * Note that if you set this parameter to 10 (i.e. retrieve 10 records) and your server return 15 then only 10 records will be loaded
     */
   var rowNum: js.UndefOr[Double] = js.undefined
+  
   /**
     * This option, if set, defines how the the width of the columns of the grid should be re-calculated, taking into consideration the width of the grid.
     * If this value is true, and the width of the columns is also set, then every column is scaled in proportion to its width.
@@ -165,6 +187,7 @@ trait JQueryJqGridOptions extends js.Object {
     * If the value of shrinkToFit is an integer, the width is calculated according to it.
     */
   var shrinkToFit: js.UndefOr[Boolean | Double] = js.undefined
+  
   /**
     * The column according to which the data is to be sorted when it is initially loaded from the server
     * (note that you will have to use datatypes xml or json to load remote data). This parameter is appended to the url.
@@ -173,88 +196,154 @@ trait JQueryJqGridOptions extends js.Object {
     * This icon also indicates the sorting order - descending or ascending (see the parameter sortorder). Also see prmNames
     */
   var sortname: js.UndefOr[String] = js.undefined
+  
   /**
     * The initial sorting order (ascending or descending) when we fetch data from the server using datatypes xml or json.
     * This parameter is appended to the url - see prnNames. The two allowed values are - asc or desc.
     */
   var sortorder: js.UndefOr[asc | desc] = js.undefined
+  
   /**
     * The url of the file that returns the data needed to populate the grid. May be set to clientArray to manualy post data to server
     */
   var url: js.UndefOr[String | clientArray] = js.undefined
+  
   /**
     * If true, jqGrid displays the beginning and ending record number in the grid, out of the total number of records in the query.
     * This information is shown in the pager bar (bottom right by default)in this format: "View X to Y out of Z".
     * If this value is true, there are other parameters that can be adjusted, including emptyrecords and recordtext.
     */
   var viewrecords: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If this option is not set, the width of the grid is the sum of the widths of the columns defined in the colModel (in pixels).
     * If this option is set, the initial width of each column is set according to the value of the shrinkToFit option.
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object JQueryJqGridOptions {
-  @scala.inline
-  def apply(
-    autoWidth: js.UndefOr[Boolean] = js.undefined,
-    autoencode: js.UndefOr[Boolean] = js.undefined,
-    caption: String = null,
-    colModel: js.Array[JQueryJqGridColumn] = null,
-    colNames: js.Array[String] = null,
-    data: js.Array[_] = null,
-    datatype: xml | xmlstring | json | jsonstring | local | javascript | js.Function | clientSide = null,
-    forceFit: js.UndefOr[Boolean] = js.undefined,
-    gridComplete: js.UndefOr[Callback] = js.undefined,
-    gridview: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String | auto = null,
-    jsonReader: IJqGridJsonReader = null,
-    loadonce: js.UndefOr[Boolean] = js.undefined,
-    mtype: GET | POST = null,
-    multiboxonly: js.UndefOr[Boolean] = js.undefined,
-    multiselect: js.UndefOr[Boolean] = js.undefined,
-    onRightClickRow: (/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event_) => Callback = null,
-    onSelectRow: (/* id */ String, /* status */ js.Any, /* e */ Event_) => Callback = null,
-    pager: String = null,
-    rowList: js.Array[Double] = null,
-    rowNum: Int | Double = null,
-    shrinkToFit: Boolean | Double = null,
-    sortname: String = null,
-    sortorder: asc | desc = null,
-    url: String | clientArray = null,
-    viewrecords: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
-  ): JQueryJqGridOptions = {
+  
+  inline def apply(): JQueryJqGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoencode)) __obj.updateDynamic("autoencode")(autoencode.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (colModel != null) __obj.updateDynamic("colModel")(colModel.asInstanceOf[js.Any])
-    if (colNames != null) __obj.updateDynamic("colNames")(colNames.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFit)) __obj.updateDynamic("forceFit")(forceFit.asInstanceOf[js.Any])
-    gridComplete.foreach(p => __obj.updateDynamic("gridComplete")(p.toJsFn))
-    if (!js.isUndefined(gridview)) __obj.updateDynamic("gridview")(gridview.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (jsonReader != null) __obj.updateDynamic("jsonReader")(jsonReader.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadonce)) __obj.updateDynamic("loadonce")(loadonce.asInstanceOf[js.Any])
-    if (mtype != null) __obj.updateDynamic("mtype")(mtype.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiboxonly)) __obj.updateDynamic("multiboxonly")(multiboxonly.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
-    if (onRightClickRow != null) __obj.updateDynamic("onRightClickRow")(js.Any.fromFunction4((t0: /* rowid */ js.Any, t1: /* iRow */ scala.Double, t2: /* iCol */ scala.Double, t3: /* e */ typingsJapgolly.std.Event_) => onRightClickRow(t0, t1, t2, t3).runNow()))
-    if (onSelectRow != null) __obj.updateDynamic("onSelectRow")(js.Any.fromFunction3((t0: /* id */ java.lang.String, t1: /* status */ js.Any, t2: /* e */ typingsJapgolly.std.Event_) => onSelectRow(t0, t1, t2).runNow()))
-    if (pager != null) __obj.updateDynamic("pager")(pager.asInstanceOf[js.Any])
-    if (rowList != null) __obj.updateDynamic("rowList")(rowList.asInstanceOf[js.Any])
-    if (rowNum != null) __obj.updateDynamic("rowNum")(rowNum.asInstanceOf[js.Any])
-    if (shrinkToFit != null) __obj.updateDynamic("shrinkToFit")(shrinkToFit.asInstanceOf[js.Any])
-    if (sortname != null) __obj.updateDynamic("sortname")(sortname.asInstanceOf[js.Any])
-    if (sortorder != null) __obj.updateDynamic("sortorder")(sortorder.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewrecords)) __obj.updateDynamic("viewrecords")(viewrecords.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryJqGridOptions]
   }
+  
+  extension [Self <: JQueryJqGridOptions](x: Self) {
+    
+    inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
+    
+    inline def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
+    
+    inline def setAutoencode(value: Boolean): Self = StObject.set(x, "autoencode", value.asInstanceOf[js.Any])
+    
+    inline def setAutoencodeUndefined: Self = StObject.set(x, "autoencode", js.undefined)
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setColModel(value: js.Array[JQueryJqGridColumn]): Self = StObject.set(x, "colModel", value.asInstanceOf[js.Any])
+    
+    inline def setColModelUndefined: Self = StObject.set(x, "colModel", js.undefined)
+    
+    inline def setColModelVarargs(value: JQueryJqGridColumn*): Self = StObject.set(x, "colModel", js.Array(value*))
+    
+    inline def setColNames(value: js.Array[String]): Self = StObject.set(x, "colNames", value.asInstanceOf[js.Any])
+    
+    inline def setColNamesUndefined: Self = StObject.set(x, "colNames", js.undefined)
+    
+    inline def setColNamesVarargs(value: String*): Self = StObject.set(x, "colNames", js.Array(value*))
+    
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setDatatype(value: xml | xmlstring | json | jsonstring | local | javascript | js.Function | clientSide): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+    
+    inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+    
+    inline def setForceFit(value: Boolean): Self = StObject.set(x, "forceFit", value.asInstanceOf[js.Any])
+    
+    inline def setForceFitUndefined: Self = StObject.set(x, "forceFit", js.undefined)
+    
+    inline def setGridComplete(value: Callback): Self = StObject.set(x, "gridComplete", value.toJsFn)
+    
+    inline def setGridCompleteUndefined: Self = StObject.set(x, "gridComplete", js.undefined)
+    
+    inline def setGridview(value: Boolean): Self = StObject.set(x, "gridview", value.asInstanceOf[js.Any])
+    
+    inline def setGridviewUndefined: Self = StObject.set(x, "gridview", js.undefined)
+    
+    inline def setHeight(value: Double | String | auto): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setJsonReader(value: IJqGridJsonReader): Self = StObject.set(x, "jsonReader", value.asInstanceOf[js.Any])
+    
+    inline def setJsonReaderUndefined: Self = StObject.set(x, "jsonReader", js.undefined)
+    
+    inline def setLoadonce(value: Boolean): Self = StObject.set(x, "loadonce", value.asInstanceOf[js.Any])
+    
+    inline def setLoadonceUndefined: Self = StObject.set(x, "loadonce", js.undefined)
+    
+    inline def setMtype(value: GET | POST): Self = StObject.set(x, "mtype", value.asInstanceOf[js.Any])
+    
+    inline def setMtypeUndefined: Self = StObject.set(x, "mtype", js.undefined)
+    
+    inline def setMultiboxonly(value: Boolean): Self = StObject.set(x, "multiboxonly", value.asInstanceOf[js.Any])
+    
+    inline def setMultiboxonlyUndefined: Self = StObject.set(x, "multiboxonly", js.undefined)
+    
+    inline def setMultiselect(value: Boolean): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
+    
+    inline def setMultiselectUndefined: Self = StObject.set(x, "multiselect", js.undefined)
+    
+    inline def setOnRightClickRow(value: (/* rowid */ Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event) => Callback): Self = StObject.set(x, "onRightClickRow", js.Any.fromFunction4((t0: /* rowid */ Any, t1: /* iRow */ Double, t2: /* iCol */ Double, t3: /* e */ Event) => (value(t0, t1, t2, t3)).runNow()))
+    
+    inline def setOnRightClickRowUndefined: Self = StObject.set(x, "onRightClickRow", js.undefined)
+    
+    inline def setOnSelectRow(value: (/* id */ String, /* status */ Any, /* e */ Event) => Callback): Self = StObject.set(x, "onSelectRow", js.Any.fromFunction3((t0: /* id */ String, t1: /* status */ Any, t2: /* e */ Event) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnSelectRowUndefined: Self = StObject.set(x, "onSelectRow", js.undefined)
+    
+    inline def setPager(value: String): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+    
+    inline def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
+    
+    inline def setRowList(value: js.Array[Double]): Self = StObject.set(x, "rowList", value.asInstanceOf[js.Any])
+    
+    inline def setRowListUndefined: Self = StObject.set(x, "rowList", js.undefined)
+    
+    inline def setRowListVarargs(value: Double*): Self = StObject.set(x, "rowList", js.Array(value*))
+    
+    inline def setRowNum(value: Double): Self = StObject.set(x, "rowNum", value.asInstanceOf[js.Any])
+    
+    inline def setRowNumUndefined: Self = StObject.set(x, "rowNum", js.undefined)
+    
+    inline def setShrinkToFit(value: Boolean | Double): Self = StObject.set(x, "shrinkToFit", value.asInstanceOf[js.Any])
+    
+    inline def setShrinkToFitUndefined: Self = StObject.set(x, "shrinkToFit", js.undefined)
+    
+    inline def setSortname(value: String): Self = StObject.set(x, "sortname", value.asInstanceOf[js.Any])
+    
+    inline def setSortnameUndefined: Self = StObject.set(x, "sortname", js.undefined)
+    
+    inline def setSortorder(value: asc | desc): Self = StObject.set(x, "sortorder", value.asInstanceOf[js.Any])
+    
+    inline def setSortorderUndefined: Self = StObject.set(x, "sortorder", js.undefined)
+    
+    inline def setUrl(value: String | clientArray): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setViewrecords(value: Boolean): Self = StObject.set(x, "viewrecords", value.asInstanceOf[js.Any])
+    
+    inline def setViewrecordsUndefined: Self = StObject.set(x, "viewrecords", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

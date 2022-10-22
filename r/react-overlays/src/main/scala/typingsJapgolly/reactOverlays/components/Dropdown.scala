@@ -1,51 +1,83 @@
 package typingsJapgolly.reactOverlays.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.reactOverlays.dropdownMod.Directions
-import typingsJapgolly.reactOverlays.dropdownMod.DropdownProps
-import typingsJapgolly.reactOverlays.dropdownMod.DropdownRenderProps
+import japgolly.scalajs.react.facade.React.Node
+import org.scalajs.dom.Element
+import org.scalajs.dom.Event
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.reactOverlays.esmDropdownContextMod.DropDirection
+import typingsJapgolly.reactOverlays.esmDropdownMenuMod.DropdownMenuProps
+import typingsJapgolly.reactOverlays.esmDropdownMenuMod.UseDropdownMenuMetadata
+import typingsJapgolly.reactOverlays.esmDropdownMenuMod.UserDropdownMenuProps
+import typingsJapgolly.reactOverlays.esmDropdownMod.DropdownProps
+import typingsJapgolly.reactOverlays.esmDropdownToggleMod.DropdownToggleProps
+import typingsJapgolly.reactOverlays.esmDropdownToggleMod.UseDropdownToggleMetadata
+import typingsJapgolly.reactOverlays.esmDropdownToggleMod.UseDropdownToggleProps
+import typingsJapgolly.reactOverlays.reactOverlaysBooleans.`false`
+import typingsJapgolly.reactOverlays.reactOverlaysBooleans.`true`
+import typingsJapgolly.reactOverlays.reactOverlaysStrings.keyboard
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Dropdown {
-  def apply(
-    alignEnd: js.UndefOr[Boolean] = js.undefined,
-    drop: Directions = null,
-    itemSelector: String = null,
-    onToggle: (/* isOpen */ Boolean, /* event */ ReactEventFrom[Element]) => Callback = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: DropdownRenderProps => CallbackTo[japgolly.scalajs.react.raw.React.Element]
-  ): UnmountedWithRoot[DropdownProps, typingsJapgolly.reactOverlays.mod.Dropdown, Unit, DropdownProps] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("children")(js.Any.fromFunction1((t0: typingsJapgolly.reactOverlays.dropdownMod.DropdownRenderProps) => children(t0).runNow()))
-    if (!js.isUndefined(alignEnd)) __obj.updateDynamic("alignEnd")(alignEnd.asInstanceOf[js.Any])
-    if (drop != null) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
-    if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector.asInstanceOf[js.Any])
-    if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction2((t0: /* isOpen */ scala.Boolean, t1: /* event */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.Element]) => onToggle(t0, t1).runNow()))
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactOverlays.dropdownMod.DropdownProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactOverlays.mod.Dropdown](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactOverlays.dropdownMod.DropdownProps])
+  inline def apply(onToggle: (Boolean, js.UndefOr[Event | ReactEventFrom[Element]]) => Callback): Builder = {
+    val __props = js.Dynamic.literal(onToggle = js.Any.fromFunction2((t0: Boolean, t1: js.UndefOr[Event | ReactEventFrom[Element]]) => (onToggle(t0, t1)).runNow()))
+    new Builder(js.Array(this.component, __props.asInstanceOf[DropdownProps]))
   }
-  @JSImport("react-overlays", "Dropdown")
-  @js.native
-  object componentImport extends js.Object
   
+  object Menu {
+    
+    inline def apply(children: (UserDropdownMenuProps, UseDropdownMenuMetadata) => Node): SharedBuilder_DropdownMenuProps_1918268347 = {
+      val __props = js.Dynamic.literal(children = js.Any.fromFunction2(children))
+      new SharedBuilder_DropdownMenuProps_1918268347(js.Array(this.component, __props.asInstanceOf[DropdownMenuProps]))
+    }
+    
+    @JSImport("react-overlays/esm", "Dropdown.Menu")
+    @js.native
+    val component: js.Object = js.native
+    
+    def withProps(p: DropdownMenuProps): SharedBuilder_DropdownMenuProps_1918268347 = new SharedBuilder_DropdownMenuProps_1918268347(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object Toggle {
+    
+    inline def apply(children: (UseDropdownToggleProps, UseDropdownToggleMetadata) => Node): Default[js.Object] = {
+      val __props = js.Dynamic.literal(children = js.Any.fromFunction2(children))
+      new Default[js.Object](js.Array(this.component, __props.asInstanceOf[DropdownToggleProps]))
+    }
+    
+    @JSImport("react-overlays/esm", "Dropdown.Toggle")
+    @js.native
+    val component: js.Object = js.native
+    
+    def withProps(p: DropdownToggleProps): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  @JSImport("react-overlays/esm", "Dropdown")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def alignEnd(value: Boolean): this.type = set("alignEnd", value.asInstanceOf[js.Any])
+    
+    inline def defaultShow(value: Boolean): this.type = set("defaultShow", value.asInstanceOf[js.Any])
+    
+    inline def drop(value: DropDirection): this.type = set("drop", value.asInstanceOf[js.Any])
+    
+    inline def focusFirstItemOnShow(value: `false` | `true` | keyboard): this.type = set("focusFirstItemOnShow", value.asInstanceOf[js.Any])
+    
+    inline def itemSelector(value: String): this.type = set("itemSelector", value.asInstanceOf[js.Any])
+    
+    inline def show(value: Boolean): this.type = set("show", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: DropdownProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

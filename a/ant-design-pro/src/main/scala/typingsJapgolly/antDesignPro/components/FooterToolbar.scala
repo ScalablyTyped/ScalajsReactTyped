@@ -1,44 +1,42 @@
 package typingsJapgolly.antDesignPro.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignPro.footerToolbarMod.FooterToolbarProps
-import typingsJapgolly.antDesignPro.footerToolbarMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignPro.libFooterToolbarMod.FooterToolbarProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FooterToolbar {
-  def apply(
-    className: String = null,
-    extra: VdomNode = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[FooterToolbarProps, default, Unit, FooterToolbarProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.rawNode.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignPro.footerToolbarMod.FooterToolbarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignPro.footerToolbarMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignPro.footerToolbarMod.FooterToolbarProps])(children: _*)
-  }
-  @JSImport("ant-design-pro/lib/FooterToolbar", JSImport.Default)
+  @JSImport("ant-design-pro", "FooterToolbar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignPro.mod.FooterToolbar] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def extra(value: VdomNode): this.type = set("extra", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def extraNull: this.type = set("extra", null)
+    
+    inline def extraVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("extra", js.Array(value*))
+    
+    inline def extraVdomElement(value: VdomElement): this.type = set("extra", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: FooterToolbar.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: FooterToolbarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

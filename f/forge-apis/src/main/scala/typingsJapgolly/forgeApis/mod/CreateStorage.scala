@@ -1,21 +1,30 @@
 package typingsJapgolly.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateStorage extends js.Object {
+trait CreateStorage extends StObject {
+  
   var data: js.UndefOr[CreateStorageData] = js.undefined
+  
   var jsonapi: js.UndefOr[JsonApiVersionJsonapi] = js.undefined
 }
-
 object CreateStorage {
-  @scala.inline
-  def apply(data: CreateStorageData = null, jsonapi: JsonApiVersionJsonapi = null): CreateStorage = {
+  
+  inline def apply(): CreateStorage = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (jsonapi != null) __obj.updateDynamic("jsonapi")(jsonapi.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStorage]
   }
+  
+  extension [Self <: CreateStorage](x: Self) {
+    
+    inline def setData(value: CreateStorageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
+    
+    inline def setJsonapiUndefined: Self = StObject.set(x, "jsonapi", js.undefined)
+  }
 }
-

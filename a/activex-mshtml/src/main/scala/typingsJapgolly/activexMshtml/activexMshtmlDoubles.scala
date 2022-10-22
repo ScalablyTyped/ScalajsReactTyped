@@ -1,0 +1,545 @@
+package typingsJapgolly.activexMshtml
+
+import typingsJapgolly.activexMshtml.MSHTML.BoolValue
+import typingsJapgolly.activexMshtml.MSHTML.DomConstructor
+import typingsJapgolly.activexMshtml.MSHTML.HTMLAppFlag
+import typingsJapgolly.activexMshtml.MSHTML.HTMLBorder
+import typingsJapgolly.activexMshtml.MSHTML.HTMLBorderStyle
+import typingsJapgolly.activexMshtml.MSHTML.HTMLCaptionFlag
+import typingsJapgolly.activexMshtml.MSHTML.HTMLDlgBorder
+import typingsJapgolly.activexMshtml.MSHTML.HTMLDlgCenter
+import typingsJapgolly.activexMshtml.MSHTML.HTMLDlgEdge
+import typingsJapgolly.activexMshtml.MSHTML.HTMLDlgFlag
+import typingsJapgolly.activexMshtml.MSHTML.HTMLMaximizeFlag
+import typingsJapgolly.activexMshtml.MSHTML.HTMLMinimizeFlag
+import typingsJapgolly.activexMshtml.MSHTML.HTMLSysMenuFlag
+import typingsJapgolly.activexMshtml.MSHTML.HTMLWindowState
+import typingsJapgolly.activexMshtml.MSHTML._BEHAVIOR_EVENT
+import typingsJapgolly.activexMshtml.MSHTML._BEHAVIOR_EVENT_FLAGS
+import typingsJapgolly.activexMshtml.MSHTML._BEHAVIOR_LAYOUT_INFO
+import typingsJapgolly.activexMshtml.MSHTML._BEHAVIOR_LAYOUT_MODE
+import typingsJapgolly.activexMshtml.MSHTML._BEHAVIOR_RELATION
+import typingsJapgolly.activexMshtml.MSHTML._BEHAVIOR_RENDER_INFO
+import typingsJapgolly.activexMshtml.MSHTML._CARET_DIRECTION
+import typingsJapgolly.activexMshtml.MSHTML._COORD_SYSTEM
+import typingsJapgolly.activexMshtml.MSHTML._DEV_CONSOLE_MESSAGE_LEVEL
+import typingsJapgolly.activexMshtml.MSHTML._DISPLAY_BREAK
+import typingsJapgolly.activexMshtml.MSHTML._DISPLAY_GRAVITY
+import typingsJapgolly.activexMshtml.MSHTML._DISPLAY_MOVEUNIT
+import typingsJapgolly.activexMshtml.MSHTML._DOM_EVENT_PHASE
+import typingsJapgolly.activexMshtml.MSHTML._ELEMENTDESCRIPTOR_FLAGS
+import typingsJapgolly.activexMshtml.MSHTML._ELEMENTNAMESPACE_FLAGS
+import typingsJapgolly.activexMshtml.MSHTML._ELEMENT_ADJACENCY
+import typingsJapgolly.activexMshtml.MSHTML._ELEMENT_CORNER
+import typingsJapgolly.activexMshtml.MSHTML._ELEMENT_TAG_ID
+import typingsJapgolly.activexMshtml.MSHTML._FINDTEXT_FLAGS
+import typingsJapgolly.activexMshtml.MSHTML._HTML_PAINTER
+import typingsJapgolly.activexMshtml.MSHTML._HTML_PAINT_DRAW_FLAGS
+import typingsJapgolly.activexMshtml.MSHTML._HTML_PAINT_DRAW_INFO_FLAGS
+import typingsJapgolly.activexMshtml.MSHTML._HTML_PAINT_EVENT_FLAGS
+import typingsJapgolly.activexMshtml.MSHTML._HTML_PAINT_ZORDER
+import typingsJapgolly.activexMshtml.MSHTML._HT_OPTIONS
+import typingsJapgolly.activexMshtml.MSHTML._HT_RESULTS
+import typingsJapgolly.activexMshtml.MSHTML._LINE_DIRECTION
+import typingsJapgolly.activexMshtml.MSHTML._MARKUP_CONTEXT_TYPE
+import typingsJapgolly.activexMshtml.MSHTML._MOVEUNIT_ACTION
+import typingsJapgolly.activexMshtml.MSHTML._PARSE_FLAGS
+import typingsJapgolly.activexMshtml.MSHTML._POINTER_GRAVITY
+import typingsJapgolly.activexMshtml.MSHTML._SAVE_SEGMENTS_FLAGS
+import typingsJapgolly.activexMshtml.MSHTML._SCRIPT_TIMER_TYPE
+import typingsJapgolly.activexMshtml.MSHTML._SECUREURLHOSTVALIDATE_FLAGS
+import typingsJapgolly.activexMshtml.MSHTML._SELECTION_TYPE
+import typingsJapgolly.activexMshtml.MSHTML._VIEW_OBJECT_ALPHA_MODE
+import typingsJapgolly.activexMshtml.MSHTML._VIEW_OBJECT_COMPOSITION_MODE
+import typingsJapgolly.activexMshtml.MSHTML.bodyScroll
+import typingsJapgolly.activexMshtml.MSHTML.frameScrolling
+import typingsJapgolly.activexMshtml.MSHTML.htmlAdjacency
+import typingsJapgolly.activexMshtml.MSHTML.htmlApplyLocation
+import typingsJapgolly.activexMshtml.MSHTML.htmlBlockAlign
+import typingsJapgolly.activexMshtml.MSHTML.htmlCaptionAlign
+import typingsJapgolly.activexMshtml.MSHTML.htmlCaptionVAlign
+import typingsJapgolly.activexMshtml.MSHTML.htmlCellAlign
+import typingsJapgolly.activexMshtml.MSHTML.htmlCellVAlign
+import typingsJapgolly.activexMshtml.MSHTML.htmlClear
+import typingsJapgolly.activexMshtml.MSHTML.htmlCompatMode
+import typingsJapgolly.activexMshtml.MSHTML.htmlComponent
+import typingsJapgolly.activexMshtml.MSHTML.htmlControlAlign
+import typingsJapgolly.activexMshtml.MSHTML.htmlDesignMode
+import typingsJapgolly.activexMshtml.MSHTML.htmlDir
+import typingsJapgolly.activexMshtml.MSHTML.htmlDirection
+import typingsJapgolly.activexMshtml.MSHTML.htmlDraggable
+import typingsJapgolly.activexMshtml.MSHTML.htmlDropEffect
+import typingsJapgolly.activexMshtml.MSHTML.htmlEditable
+import typingsJapgolly.activexMshtml.MSHTML.htmlEffectAllowed
+import typingsJapgolly.activexMshtml.MSHTML.htmlEncoding
+import typingsJapgolly.activexMshtml.MSHTML.htmlEndPoints
+import typingsJapgolly.activexMshtml.MSHTML.htmlFrame
+import typingsJapgolly.activexMshtml.MSHTML.htmlGlyphMode
+import typingsJapgolly.activexMshtml.MSHTML.htmlInput
+import typingsJapgolly.activexMshtml.MSHTML.htmlListType
+import typingsJapgolly.activexMshtml.MSHTML.htmlLoop
+import typingsJapgolly.activexMshtml.MSHTML.htmlMarqueeBehavior
+import typingsJapgolly.activexMshtml.MSHTML.htmlMarqueeDirection
+import typingsJapgolly.activexMshtml.MSHTML.htmlMediaErr
+import typingsJapgolly.activexMshtml.MSHTML.htmlMediaNetworkState
+import typingsJapgolly.activexMshtml.MSHTML.htmlMediaReadyState
+import typingsJapgolly.activexMshtml.MSHTML.htmlMethod
+import typingsJapgolly.activexMshtml.MSHTML.htmlPersistState
+import typingsJapgolly.activexMshtml.MSHTML.htmlReadyState
+import typingsJapgolly.activexMshtml.MSHTML.htmlRules
+import typingsJapgolly.activexMshtml.MSHTML.htmlSelectExFlag
+import typingsJapgolly.activexMshtml.MSHTML.htmlSelectType
+import typingsJapgolly.activexMshtml.MSHTML.htmlSelection
+import typingsJapgolly.activexMshtml.MSHTML.htmlSpellCheck
+import typingsJapgolly.activexMshtml.MSHTML.htmlStart
+import typingsJapgolly.activexMshtml.MSHTML.htmlTabIndex
+import typingsJapgolly.activexMshtml.MSHTML.htmlUnit
+import typingsJapgolly.activexMshtml.MSHTML.htmlWrap
+import typingsJapgolly.activexMshtml.MSHTML.htmlZOrder
+import typingsJapgolly.activexMshtml.MSHTML.lengthAdjust
+import typingsJapgolly.activexMshtml.MSHTML.mediaType
+import typingsJapgolly.activexMshtml.MSHTML.sandboxAllow
+import typingsJapgolly.activexMshtml.MSHTML.styleAccelerator
+import typingsJapgolly.activexMshtml.MSHTML.styleAlignContent
+import typingsJapgolly.activexMshtml.MSHTML.styleAlignItems
+import typingsJapgolly.activexMshtml.MSHTML.styleAlignSelf
+import typingsJapgolly.activexMshtml.MSHTML.styleAlignmentBaseline
+import typingsJapgolly.activexMshtml.MSHTML.styleAttrType
+import typingsJapgolly.activexMshtml.MSHTML.styleAuto
+import typingsJapgolly.activexMshtml.MSHTML.styleBackfaceVisibility
+import typingsJapgolly.activexMshtml.MSHTML.styleBackgroundAttachment
+import typingsJapgolly.activexMshtml.MSHTML.styleBackgroundAttachment3
+import typingsJapgolly.activexMshtml.MSHTML.styleBackgroundClip
+import typingsJapgolly.activexMshtml.MSHTML.styleBackgroundOrigin
+import typingsJapgolly.activexMshtml.MSHTML.styleBackgroundRepeat
+import typingsJapgolly.activexMshtml.MSHTML.styleBaselineShift
+import typingsJapgolly.activexMshtml.MSHTML.styleBidi
+import typingsJapgolly.activexMshtml.MSHTML.styleBlockProgression
+import typingsJapgolly.activexMshtml.MSHTML.styleBool
+import typingsJapgolly.activexMshtml.MSHTML.styleBorderCollapse
+import typingsJapgolly.activexMshtml.MSHTML.styleBorderImageRepeat
+import typingsJapgolly.activexMshtml.MSHTML.styleBorderImageSliceFill
+import typingsJapgolly.activexMshtml.MSHTML.styleBorderStyle
+import typingsJapgolly.activexMshtml.MSHTML.styleBorderWidth
+import typingsJapgolly.activexMshtml.MSHTML.styleBoxSizing
+import typingsJapgolly.activexMshtml.MSHTML.styleBreak
+import typingsJapgolly.activexMshtml.MSHTML.styleBreakInside
+import typingsJapgolly.activexMshtml.MSHTML.styleCaptionSide
+import typingsJapgolly.activexMshtml.MSHTML.styleClipRule
+import typingsJapgolly.activexMshtml.MSHTML.styleColorInterpolationFilters
+import typingsJapgolly.activexMshtml.MSHTML.styleColumnFill
+import typingsJapgolly.activexMshtml.MSHTML.styleColumnSpan
+import typingsJapgolly.activexMshtml.MSHTML.styleCursor
+import typingsJapgolly.activexMshtml.MSHTML.styleDataRepeat
+import typingsJapgolly.activexMshtml.MSHTML.styleDefaultTextSelection
+import typingsJapgolly.activexMshtml.MSHTML.styleDir
+import typingsJapgolly.activexMshtml.MSHTML.styleDisplay
+import typingsJapgolly.activexMshtml.MSHTML.styleDominantBaseline
+import typingsJapgolly.activexMshtml.MSHTML.styleEmptyCells
+import typingsJapgolly.activexMshtml.MSHTML.styleEnableBackground
+import typingsJapgolly.activexMshtml.MSHTML.styleFillRule
+import typingsJapgolly.activexMshtml.MSHTML.styleFlex
+import typingsJapgolly.activexMshtml.MSHTML.styleFlexBasis
+import typingsJapgolly.activexMshtml.MSHTML.styleFlexDirection
+import typingsJapgolly.activexMshtml.MSHTML.styleFlexWrap
+import typingsJapgolly.activexMshtml.MSHTML.styleFontSize
+import typingsJapgolly.activexMshtml.MSHTML.styleFontStretch
+import typingsJapgolly.activexMshtml.MSHTML.styleFontStyle
+import typingsJapgolly.activexMshtml.MSHTML.styleFontVariant
+import typingsJapgolly.activexMshtml.MSHTML.styleFontWeight
+import typingsJapgolly.activexMshtml.MSHTML.styleGridColumn
+import typingsJapgolly.activexMshtml.MSHTML.styleGridColumnAlign
+import typingsJapgolly.activexMshtml.MSHTML.styleGridColumnSpan
+import typingsJapgolly.activexMshtml.MSHTML.styleGridRow
+import typingsJapgolly.activexMshtml.MSHTML.styleGridRowAlign
+import typingsJapgolly.activexMshtml.MSHTML.styleGridRowSpan
+import typingsJapgolly.activexMshtml.MSHTML.styleHyphenateLimitLines
+import typingsJapgolly.activexMshtml.MSHTML.styleHyphens
+import typingsJapgolly.activexMshtml.MSHTML.styleImeMode
+import typingsJapgolly.activexMshtml.MSHTML.styleInitialColor
+import typingsJapgolly.activexMshtml.MSHTML.styleInitialString
+import typingsJapgolly.activexMshtml.MSHTML.styleInterpolation
+import typingsJapgolly.activexMshtml.MSHTML.styleJustifyContent
+import typingsJapgolly.activexMshtml.MSHTML.styleLayoutFlow
+import typingsJapgolly.activexMshtml.MSHTML.styleLayoutGridChar
+import typingsJapgolly.activexMshtml.MSHTML.styleLayoutGridLine
+import typingsJapgolly.activexMshtml.MSHTML.styleLayoutGridMode
+import typingsJapgolly.activexMshtml.MSHTML.styleLayoutGridType
+import typingsJapgolly.activexMshtml.MSHTML.styleLineBreak
+import typingsJapgolly.activexMshtml.MSHTML.styleListStylePosition
+import typingsJapgolly.activexMshtml.MSHTML.styleListStyleType
+import typingsJapgolly.activexMshtml.MSHTML.styleMsAnimationDirection
+import typingsJapgolly.activexMshtml.MSHTML.styleMsAnimationFillMode
+import typingsJapgolly.activexMshtml.MSHTML.styleMsAnimationPlayState
+import typingsJapgolly.activexMshtml.MSHTML.styleMsContentZoomChaining
+import typingsJapgolly.activexMshtml.MSHTML.styleMsContentZoomSnapType
+import typingsJapgolly.activexMshtml.MSHTML.styleMsContentZooming
+import typingsJapgolly.activexMshtml.MSHTML.styleMsFlexAlign
+import typingsJapgolly.activexMshtml.MSHTML.styleMsFlexItemAlign
+import typingsJapgolly.activexMshtml.MSHTML.styleMsFlexLinePack
+import typingsJapgolly.activexMshtml.MSHTML.styleMsFlexPack
+import typingsJapgolly.activexMshtml.MSHTML.styleMsHighContrastAdjust
+import typingsJapgolly.activexMshtml.MSHTML.styleMsImeAlign
+import typingsJapgolly.activexMshtml.MSHTML.styleMsOverflowStyle
+import typingsJapgolly.activexMshtml.MSHTML.styleMsScrollChaining
+import typingsJapgolly.activexMshtml.MSHTML.styleMsScrollRails
+import typingsJapgolly.activexMshtml.MSHTML.styleMsScrollSnapType
+import typingsJapgolly.activexMshtml.MSHTML.styleMsScrollTranslation
+import typingsJapgolly.activexMshtml.MSHTML.styleMsTextCombineHorizontal
+import typingsJapgolly.activexMshtml.MSHTML.styleMsTouchAction
+import typingsJapgolly.activexMshtml.MSHTML.styleMsTouchSelect
+import typingsJapgolly.activexMshtml.MSHTML.styleMsUserSelect
+import typingsJapgolly.activexMshtml.MSHTML.styleNone
+import typingsJapgolly.activexMshtml.MSHTML.styleNormal
+import typingsJapgolly.activexMshtml.MSHTML.styleOutlineStyle
+import typingsJapgolly.activexMshtml.MSHTML.styleOverflow
+import typingsJapgolly.activexMshtml.MSHTML.stylePageBreak
+import typingsJapgolly.activexMshtml.MSHTML.stylePageBreakInside
+import typingsJapgolly.activexMshtml.MSHTML.stylePerspectiveOriginX
+import typingsJapgolly.activexMshtml.MSHTML.stylePerspectiveOriginY
+import typingsJapgolly.activexMshtml.MSHTML.stylePointerEvents
+import typingsJapgolly.activexMshtml.MSHTML.stylePosition
+import typingsJapgolly.activexMshtml.MSHTML.styleRubyAlign
+import typingsJapgolly.activexMshtml.MSHTML.styleRubyOverhang
+import typingsJapgolly.activexMshtml.MSHTML.styleRubyPosition
+import typingsJapgolly.activexMshtml.MSHTML.styleStrokeLinecap
+import typingsJapgolly.activexMshtml.MSHTML.styleStrokeLinejoin
+import typingsJapgolly.activexMshtml.MSHTML.styleStyleFloat
+import typingsJapgolly.activexMshtml.MSHTML.styleTableLayout
+import typingsJapgolly.activexMshtml.MSHTML.styleTextAlignLast
+import typingsJapgolly.activexMshtml.MSHTML.styleTextAnchor
+import typingsJapgolly.activexMshtml.MSHTML.styleTextDecoration
+import typingsJapgolly.activexMshtml.MSHTML.styleTextEffect
+import typingsJapgolly.activexMshtml.MSHTML.styleTextJustify
+import typingsJapgolly.activexMshtml.MSHTML.styleTextJustifyTrim
+import typingsJapgolly.activexMshtml.MSHTML.styleTextLineThroughStyle
+import typingsJapgolly.activexMshtml.MSHTML.styleTextOverflow
+import typingsJapgolly.activexMshtml.MSHTML.styleTextSizeAdjust
+import typingsJapgolly.activexMshtml.MSHTML.styleTextTransform
+import typingsJapgolly.activexMshtml.MSHTML.styleTextUnderlinePosition
+import typingsJapgolly.activexMshtml.MSHTML.styleTextUnderlineStyle
+import typingsJapgolly.activexMshtml.MSHTML.styleTransformOriginX
+import typingsJapgolly.activexMshtml.MSHTML.styleTransformOriginY
+import typingsJapgolly.activexMshtml.MSHTML.styleTransformStyle
+import typingsJapgolly.activexMshtml.MSHTML.styleUserZoom
+import typingsJapgolly.activexMshtml.MSHTML.styleVerticalAlign
+import typingsJapgolly.activexMshtml.MSHTML.styleViewportSize
+import typingsJapgolly.activexMshtml.MSHTML.styleVisibility
+import typingsJapgolly.activexMshtml.MSHTML.styleWebkitAppearance
+import typingsJapgolly.activexMshtml.MSHTML.styleWebkitBoxDirection
+import typingsJapgolly.activexMshtml.MSHTML.styleWebkitBoxOrient
+import typingsJapgolly.activexMshtml.MSHTML.styleWebkitBoxPack
+import typingsJapgolly.activexMshtml.MSHTML.styleWhiteSpace
+import typingsJapgolly.activexMshtml.MSHTML.styleWidowsOrphans
+import typingsJapgolly.activexMshtml.MSHTML.styleWordBreak
+import typingsJapgolly.activexMshtml.MSHTML.styleWordWrap
+import typingsJapgolly.activexMshtml.MSHTML.styleWrapFlow
+import typingsJapgolly.activexMshtml.MSHTML.styleWrapThrough
+import typingsJapgolly.activexMshtml.MSHTML.styleWritingMode
+import typingsJapgolly.activexMshtml.MSHTML.styleZIndex
+import typingsJapgolly.activexMshtml.MSHTML.svgAngleType
+import typingsJapgolly.activexMshtml.MSHTML.svgChannel
+import typingsJapgolly.activexMshtml.MSHTML.svgEdgemode
+import typingsJapgolly.activexMshtml.MSHTML.svgExternalResourcesRequired
+import typingsJapgolly.activexMshtml.MSHTML.svgFeblendMode
+import typingsJapgolly.activexMshtml.MSHTML.svgFecolormatrixType
+import typingsJapgolly.activexMshtml.MSHTML.svgFecomponenttransferType
+import typingsJapgolly.activexMshtml.MSHTML.svgFecompositeOperator
+import typingsJapgolly.activexMshtml.MSHTML.svgFocusable
+import typingsJapgolly.activexMshtml.MSHTML.svgLengthType
+import typingsJapgolly.activexMshtml.MSHTML.svgMarkerOrient
+import typingsJapgolly.activexMshtml.MSHTML.svgMarkerOrientAttribute
+import typingsJapgolly.activexMshtml.MSHTML.svgMarkerUnits
+import typingsJapgolly.activexMshtml.MSHTML.svgMorphologyOperator
+import typingsJapgolly.activexMshtml.MSHTML.svgPathSegType
+import typingsJapgolly.activexMshtml.MSHTML.svgPreserveAlpha
+import typingsJapgolly.activexMshtml.MSHTML.svgPreserveAspectMeetOrSliceType
+import typingsJapgolly.activexMshtml.MSHTML.svgPreserveAspectRatioAlignType
+import typingsJapgolly.activexMshtml.MSHTML.svgSpreadMethod
+import typingsJapgolly.activexMshtml.MSHTML.svgStitchtype
+import typingsJapgolly.activexMshtml.MSHTML.svgTransformType
+import typingsJapgolly.activexMshtml.MSHTML.svgTurbulenceType
+import typingsJapgolly.activexMshtml.MSHTML.svgUnitTypes
+import typingsJapgolly.activexMshtml.MSHTML.textDecoration
+import typingsJapgolly.activexMshtml.MSHTML.textpathMethodtype
+import typingsJapgolly.activexMshtml.MSHTML.textpathSpacingtype
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object activexMshtmlDoubles {
+  
+  @js.native
+  sealed trait `-2147483648`
+    extends StObject
+       with _FINDTEXT_FLAGS
+  inline def `-2147483648`: `-2147483648` = -2147483648d.asInstanceOf[`-2147483648`]
+  
+  @js.native
+  sealed trait `2147483647`
+    extends StObject
+       with BoolValue
+       with DomConstructor
+       with HTMLAppFlag
+       with HTMLBorder
+       with HTMLBorderStyle
+       with HTMLCaptionFlag
+       with HTMLDlgBorder
+       with HTMLDlgCenter
+       with HTMLDlgEdge
+       with HTMLDlgFlag
+       with HTMLMaximizeFlag
+       with HTMLMinimizeFlag
+       with HTMLSysMenuFlag
+       with HTMLWindowState
+       with _BEHAVIOR_EVENT
+       with _BEHAVIOR_EVENT_FLAGS
+       with _BEHAVIOR_LAYOUT_INFO
+       with _BEHAVIOR_LAYOUT_MODE
+       with _BEHAVIOR_RELATION
+       with _BEHAVIOR_RENDER_INFO
+       with _CARET_DIRECTION
+       with _COORD_SYSTEM
+       with _DEV_CONSOLE_MESSAGE_LEVEL
+       with _DISPLAY_BREAK
+       with _DISPLAY_GRAVITY
+       with _DISPLAY_MOVEUNIT
+       with _DOM_EVENT_PHASE
+       with _ELEMENTDESCRIPTOR_FLAGS
+       with _ELEMENTNAMESPACE_FLAGS
+       with _ELEMENT_ADJACENCY
+       with _ELEMENT_CORNER
+       with _ELEMENT_TAG_ID
+       with _FINDTEXT_FLAGS
+       with _HTML_PAINTER
+       with _HTML_PAINT_DRAW_FLAGS
+       with _HTML_PAINT_DRAW_INFO_FLAGS
+       with _HTML_PAINT_EVENT_FLAGS
+       with _HTML_PAINT_ZORDER
+       with _HT_OPTIONS
+       with _HT_RESULTS
+       with _LINE_DIRECTION
+       with _MARKUP_CONTEXT_TYPE
+       with _MOVEUNIT_ACTION
+       with _PARSE_FLAGS
+       with _POINTER_GRAVITY
+       with _SAVE_SEGMENTS_FLAGS
+       with _SCRIPT_TIMER_TYPE
+       with _SECUREURLHOSTVALIDATE_FLAGS
+       with _SELECTION_TYPE
+       with _VIEW_OBJECT_ALPHA_MODE
+       with _VIEW_OBJECT_COMPOSITION_MODE
+       with bodyScroll
+       with frameScrolling
+       with htmlAdjacency
+       with htmlApplyLocation
+       with htmlBlockAlign
+       with htmlCaptionAlign
+       with htmlCaptionVAlign
+       with htmlCellAlign
+       with htmlCellVAlign
+       with htmlClear
+       with htmlCompatMode
+       with htmlComponent
+       with htmlControlAlign
+       with htmlDesignMode
+       with htmlDir
+       with htmlDirection
+       with htmlDraggable
+       with htmlDropEffect
+       with htmlEditable
+       with htmlEffectAllowed
+       with htmlEncoding
+       with htmlEndPoints
+       with htmlFrame
+       with htmlGlyphMode
+       with htmlInput
+       with htmlListType
+       with htmlLoop
+       with htmlMarqueeBehavior
+       with htmlMarqueeDirection
+       with htmlMediaErr
+       with htmlMediaNetworkState
+       with htmlMediaReadyState
+       with htmlMethod
+       with htmlPersistState
+       with htmlReadyState
+       with htmlRules
+       with htmlSelectExFlag
+       with htmlSelectType
+       with htmlSelection
+       with htmlSpellCheck
+       with htmlStart
+       with htmlTabIndex
+       with htmlUnit
+       with htmlWrap
+       with htmlZOrder
+       with lengthAdjust
+       with mediaType
+       with sandboxAllow
+       with styleAccelerator
+       with styleAlignContent
+       with styleAlignItems
+       with styleAlignSelf
+       with styleAlignmentBaseline
+       with styleAttrType
+       with styleAuto
+       with styleBackfaceVisibility
+       with styleBackgroundAttachment
+       with styleBackgroundAttachment3
+       with styleBackgroundClip
+       with styleBackgroundOrigin
+       with styleBackgroundRepeat
+       with styleBaselineShift
+       with styleBidi
+       with styleBlockProgression
+       with styleBool
+       with styleBorderCollapse
+       with styleBorderImageRepeat
+       with styleBorderImageSliceFill
+       with styleBorderStyle
+       with styleBorderWidth
+       with styleBoxSizing
+       with styleBreak
+       with styleBreakInside
+       with styleCaptionSide
+       with styleClipRule
+       with styleColorInterpolationFilters
+       with styleColumnFill
+       with styleColumnSpan
+       with styleCursor
+       with styleDataRepeat
+       with styleDefaultTextSelection
+       with styleDir
+       with styleDisplay
+       with styleDominantBaseline
+       with styleEmptyCells
+       with styleEnableBackground
+       with styleFillRule
+       with styleFlex
+       with styleFlexBasis
+       with styleFlexDirection
+       with styleFlexWrap
+       with styleFontSize
+       with styleFontStretch
+       with styleFontStyle
+       with styleFontVariant
+       with styleFontWeight
+       with styleGridColumn
+       with styleGridColumnAlign
+       with styleGridColumnSpan
+       with styleGridRow
+       with styleGridRowAlign
+       with styleGridRowSpan
+       with styleHyphenateLimitLines
+       with styleHyphens
+       with styleImeMode
+       with styleInitialColor
+       with styleInitialString
+       with styleInterpolation
+       with styleJustifyContent
+       with styleLayoutFlow
+       with styleLayoutGridChar
+       with styleLayoutGridLine
+       with styleLayoutGridMode
+       with styleLayoutGridType
+       with styleLineBreak
+       with styleListStylePosition
+       with styleListStyleType
+       with styleMsAnimationDirection
+       with styleMsAnimationFillMode
+       with styleMsAnimationPlayState
+       with styleMsContentZoomChaining
+       with styleMsContentZoomSnapType
+       with styleMsContentZooming
+       with styleMsFlexAlign
+       with styleMsFlexItemAlign
+       with styleMsFlexLinePack
+       with styleMsFlexPack
+       with styleMsHighContrastAdjust
+       with styleMsImeAlign
+       with styleMsOverflowStyle
+       with styleMsScrollChaining
+       with styleMsScrollRails
+       with styleMsScrollSnapType
+       with styleMsScrollTranslation
+       with styleMsTextCombineHorizontal
+       with styleMsTouchAction
+       with styleMsTouchSelect
+       with styleMsUserSelect
+       with styleNone
+       with styleNormal
+       with styleOutlineStyle
+       with styleOverflow
+       with stylePageBreak
+       with stylePageBreakInside
+       with stylePerspectiveOriginX
+       with stylePerspectiveOriginY
+       with stylePointerEvents
+       with stylePosition
+       with styleRubyAlign
+       with styleRubyOverhang
+       with styleRubyPosition
+       with styleStrokeLinecap
+       with styleStrokeLinejoin
+       with styleStyleFloat
+       with styleTableLayout
+       with styleTextAlignLast
+       with styleTextAnchor
+       with styleTextDecoration
+       with styleTextEffect
+       with styleTextJustify
+       with styleTextJustifyTrim
+       with styleTextLineThroughStyle
+       with styleTextOverflow
+       with styleTextSizeAdjust
+       with styleTextTransform
+       with styleTextUnderlinePosition
+       with styleTextUnderlineStyle
+       with styleTransformOriginX
+       with styleTransformOriginY
+       with styleTransformStyle
+       with styleUserZoom
+       with styleVerticalAlign
+       with styleViewportSize
+       with styleVisibility
+       with styleWebkitAppearance
+       with styleWebkitBoxDirection
+       with styleWebkitBoxOrient
+       with styleWebkitBoxPack
+       with styleWhiteSpace
+       with styleWidowsOrphans
+       with styleWordBreak
+       with styleWordWrap
+       with styleWrapFlow
+       with styleWrapThrough
+       with styleWritingMode
+       with styleZIndex
+       with svgAngleType
+       with svgChannel
+       with svgEdgemode
+       with svgExternalResourcesRequired
+       with svgFeblendMode
+       with svgFecolormatrixType
+       with svgFecomponenttransferType
+       with svgFecompositeOperator
+       with svgFocusable
+       with svgLengthType
+       with svgMarkerOrient
+       with svgMarkerOrientAttribute
+       with svgMarkerUnits
+       with svgMorphologyOperator
+       with svgPathSegType
+       with svgPreserveAlpha
+       with svgPreserveAspectMeetOrSliceType
+       with svgPreserveAspectRatioAlignType
+       with svgSpreadMethod
+       with svgStitchtype
+       with svgTransformType
+       with svgTurbulenceType
+       with svgUnitTypes
+       with textDecoration
+       with textpathMethodtype
+       with textpathSpacingtype
+  inline def `2147483647`: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
+}

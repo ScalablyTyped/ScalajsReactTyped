@@ -1,33 +1,52 @@
 package typingsJapgolly.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClearStorageDataOptions extends js.Object {
+trait ClearStorageDataOptions extends StObject {
+  
   /**
-    * Should follow window.location.origin’s representation scheme://host:port.
+    * Should follow `window.location.origin`’s representation `scheme://host:port`.
     */
   var origin: js.UndefOr[String] = js.undefined
+  
   /**
-    * The types of quotas to clear, can contain: temporary, persistent, syncable.
+    * The types of quotas to clear, can contain: `temporary`, `persistent`,
+    * `syncable`. If not specified, clear all quotas.
     */
   var quotas: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * The types of storages to clear, can contain: appcache, cookies, filesystem,
-    * indexdb, localstorage, shadercache, websql, serviceworkers, cachestorage.
+    * The types of storages to clear, can contain: `appcache`, `cookies`,
+    * `filesystem`, `indexdb`, `localstorage`, `shadercache`, `websql`,
+    * `serviceworkers`, `cachestorage`. If not specified, clear all storage types.
     */
   var storages: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object ClearStorageDataOptions {
-  @scala.inline
-  def apply(origin: String = null, quotas: js.Array[String] = null, storages: js.Array[String] = null): ClearStorageDataOptions = {
+  
+  inline def apply(): ClearStorageDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (quotas != null) __obj.updateDynamic("quotas")(quotas.asInstanceOf[js.Any])
-    if (storages != null) __obj.updateDynamic("storages")(storages.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearStorageDataOptions]
   }
+  
+  extension [Self <: ClearStorageDataOptions](x: Self) {
+    
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    
+    inline def setQuotas(value: js.Array[String]): Self = StObject.set(x, "quotas", value.asInstanceOf[js.Any])
+    
+    inline def setQuotasUndefined: Self = StObject.set(x, "quotas", js.undefined)
+    
+    inline def setQuotasVarargs(value: String*): Self = StObject.set(x, "quotas", js.Array(value*))
+    
+    inline def setStorages(value: js.Array[String]): Self = StObject.set(x, "storages", value.asInstanceOf[js.Any])
+    
+    inline def setStoragesUndefined: Self = StObject.set(x, "storages", js.undefined)
+    
+    inline def setStoragesVarargs(value: String*): Self = StObject.set(x, "storages", js.Array(value*))
+  }
 }
-

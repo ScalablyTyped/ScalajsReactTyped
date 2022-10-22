@@ -6,75 +6,100 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.meters_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.miles_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BufferParametersProperties extends js.Object {
+trait BufferParametersProperties extends StObject {
+  
   /**
-    * The spatial reference in which the geometries are buffered.  If `bufferSpatialReference` is not specified, the geometries are buffered in the spatial reference specified by `outSpatialReference`. If `outSpatialReference` is also not specified, they are buffered in the spatial reference of the features.
+    * The spatial reference in which the geometries are buffered.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#bufferSpatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#bufferSpatialReference)
     */
   var bufferSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  
   /**
-    * The distances the input features are buffered. The distance units are specified by `unit`.
+    * The distances the input features are buffered.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#distances)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#distances)
     */
   var distances: js.UndefOr[js.Array[Double]] = js.undefined
+  
   /**
-    * If the input geometries are in a geographic coordinate system, set geodesic to `true` to generate a buffer polygon using a geodesic distance. The `bufferSpatialReference` property is ignored when geodesic is set to `true`. Requires ArcGIS Server 10.1 or greater geometry service. For more information, see the ArcGIS REST API documentation on the GeometryService buffer operation and the geodesic property.
+    * If the input geometries are in a geographic coordinate system, set geodesic to `true` to generate a buffer polygon using a geodesic distance.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#geodesic)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#geodesic)
     */
   var geodesic: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The input geometries to buffer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#geometries)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#geometries)
     */
   var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
+  
   /**
-    * The spatial reference for the returned geometries.  If `outSpatialReference` is not specified, the output geometries are in the spatial reference specified by `bufferSpatialReference`. If `bufferSpatialReference` also is not specified, they are in the spatial reference of the features.
+    * The spatial reference for the returned geometries.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#outSpatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#outSpatialReference)
     */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  
   /**
     * If `true`, all geometries buffered at a given distance are unioned into a single (possibly multipart) polygon, and the unioned geometry is placed in the output array.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#unionResults)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#unionResults)
     */
   var unionResults: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The units for calculating each buffer distance. If `unit` is not specified, the units are derived from `bufferSpatialReference`. If `bufferSpatialReference` is not specified, the units are derived from the features.  For a list of valid units, see [esriSRUnitType Constants](http://resources.arcgis.com/en/help/arcobjects-cpp/componenthelp/index.html#/esriSRUnitType_Constants/000w00000042000000/) and [esriSRUnit2Type Constants](http://resources.arcgis.com/en/help/arcobjects-cpp/componenthelp/index.html#/esriSRUnit2Type_Constants/000w00000041000000/).
+    * The units for calculating each buffer distance.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html#unit)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#unit)
     */
   var unit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
 }
-
 object BufferParametersProperties {
-  @scala.inline
-  def apply(
-    bufferSpatialReference: SpatialReferenceProperties = null,
-    distances: js.Array[Double] = null,
-    geodesic: js.UndefOr[Boolean] = js.undefined,
-    geometries: js.Array[GeometryProperties] = null,
-    outSpatialReference: SpatialReferenceProperties = null,
-    unionResults: js.UndefOr[Boolean] = js.undefined,
-    unit: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards = null
-  ): BufferParametersProperties = {
+  
+  inline def apply(): BufferParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (bufferSpatialReference != null) __obj.updateDynamic("bufferSpatialReference")(bufferSpatialReference.asInstanceOf[js.Any])
-    if (distances != null) __obj.updateDynamic("distances")(distances.asInstanceOf[js.Any])
-    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.asInstanceOf[js.Any])
-    if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
-    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
-    if (!js.isUndefined(unionResults)) __obj.updateDynamic("unionResults")(unionResults.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferParametersProperties]
   }
+  
+  extension [Self <: BufferParametersProperties](x: Self) {
+    
+    inline def setBufferSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "bufferSpatialReference", value.asInstanceOf[js.Any])
+    
+    inline def setBufferSpatialReferenceUndefined: Self = StObject.set(x, "bufferSpatialReference", js.undefined)
+    
+    inline def setDistances(value: js.Array[Double]): Self = StObject.set(x, "distances", value.asInstanceOf[js.Any])
+    
+    inline def setDistancesUndefined: Self = StObject.set(x, "distances", js.undefined)
+    
+    inline def setDistancesVarargs(value: Double*): Self = StObject.set(x, "distances", js.Array(value*))
+    
+    inline def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
+    
+    inline def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
+    
+    inline def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    
+    inline def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
+    
+    inline def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value*))
+    
+    inline def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
+    
+    inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
+    
+    inline def setUnionResults(value: Boolean): Self = StObject.set(x, "unionResults", value.asInstanceOf[js.Any])
+    
+    inline def setUnionResultsUndefined: Self = StObject.set(x, "unionResults", js.undefined)
+    
+    inline def setUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+  }
 }
-

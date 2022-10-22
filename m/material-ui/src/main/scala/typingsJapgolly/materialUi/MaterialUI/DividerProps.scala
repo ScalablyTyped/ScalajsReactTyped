@@ -1,24 +1,37 @@
 package typingsJapgolly.materialUi.MaterialUI
 
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DividerProps extends js.Object {
+trait DividerProps extends StObject {
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var inset: js.UndefOr[Boolean] = js.undefined
+  
   var style: js.UndefOr[CSSProperties] = js.undefined
 }
-
 object DividerProps {
-  @scala.inline
-  def apply(className: String = null, inset: js.UndefOr[Boolean] = js.undefined, style: CSSProperties = null): DividerProps = {
+  
+  inline def apply(): DividerProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DividerProps]
   }
+  
+  extension [Self <: DividerProps](x: Self) {
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

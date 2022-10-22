@@ -1,35 +1,27 @@
 package typingsJapgolly.jqueryFancytree.Fancytree
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FancytreeSelectMode extends js.Object
-
+sealed trait FancytreeSelectMode extends StObject
 @JSGlobal("Fancytree.FancytreeSelectMode")
 @js.native
-object FancytreeSelectMode extends js.Object {
-  @js.native
-  sealed trait multi extends FancytreeSelectMode
+object FancytreeSelectMode extends StObject {
   
   @js.native
-  sealed trait mutlti_hier extends FancytreeSelectMode
+  sealed trait multi
+    extends StObject
+       with FancytreeSelectMode
   
   @js.native
-  sealed trait single extends FancytreeSelectMode
+  sealed trait mutlti_hier
+    extends StObject
+       with FancytreeSelectMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FancytreeSelectMode with Double] = js.native
-  /* 2 */ @js.native
-  object multi extends TopLevel[multi with Double]
-  
-  /* 3 */ @js.native
-  object mutlti_hier extends TopLevel[mutlti_hier with Double]
-  
-  /* 1 */ @js.native
-  object single extends TopLevel[single with Double]
-  
+  @js.native
+  sealed trait single
+    extends StObject
+       with FancytreeSelectMode
 }
-

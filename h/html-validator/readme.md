@@ -4,16 +4,16 @@
 Typings are for version 5.0
 
 ## Library description:
-Validate html using validator.w3.org/nu
+Validate html using validator.w3.org/nu og html-validate
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | html-validator |
-| Keywords           | html-validator, validation |
-| # releases         | 20 |
-| # dependents       | 24 |
-| # downloads        | 304704 |
-| # stars            | 3 |
+| Keywords           | html-validator, html-validate, validation, validator.w3.org |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 95596.0 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/zrrrzzt/html-validator#readme)

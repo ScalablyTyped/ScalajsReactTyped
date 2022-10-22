@@ -1,20 +1,27 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `tableScopedCollection.toJSON()`. */
-trait TableScopedCollectionData extends js.Object {
+trait TableScopedCollectionData extends StObject {
+  
   var items: js.UndefOr[js.Array[TableData]] = js.undefined
 }
-
 object TableScopedCollectionData {
-  @scala.inline
-  def apply(items: js.Array[TableData] = null): TableScopedCollectionData = {
+  
+  inline def apply(): TableScopedCollectionData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableScopedCollectionData]
   }
+  
+  extension [Self <: TableScopedCollectionData](x: Self) {
+    
+    inline def setItems(value: js.Array[TableData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: TableData*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

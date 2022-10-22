@@ -1,21 +1,23 @@
 package typingsJapgolly.winrt.Windows.Web.Syndication
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISyndicationItemFactory extends js.Object {
+trait ISyndicationItemFactory extends StObject {
+  
   def createSyndicationItem(title: String, content: SyndicationContent, uri: Uri): SyndicationItem
 }
-
 object ISyndicationItemFactory {
-  @scala.inline
-  def apply(createSyndicationItem: (String, SyndicationContent, Uri) => CallbackTo[SyndicationItem]): ISyndicationItemFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createSyndicationItem")(js.Any.fromFunction3((t0: java.lang.String, t1: typingsJapgolly.winrt.Windows.Web.Syndication.SyndicationContent, t2: typingsJapgolly.winrt.Windows.Foundation.Uri) => createSyndicationItem(t0, t1, t2).runNow()))
+  
+  inline def apply(createSyndicationItem: (String, SyndicationContent, Uri) => SyndicationItem): ISyndicationItemFactory = {
+    val __obj = js.Dynamic.literal(createSyndicationItem = js.Any.fromFunction3(createSyndicationItem))
     __obj.asInstanceOf[ISyndicationItemFactory]
   }
+  
+  extension [Self <: ISyndicationItemFactory](x: Self) {
+    
+    inline def setCreateSyndicationItem(value: (String, SyndicationContent, Uri) => SyndicationItem): Self = StObject.set(x, "createSyndicationItem", js.Any.fromFunction3(value))
+  }
 }
-

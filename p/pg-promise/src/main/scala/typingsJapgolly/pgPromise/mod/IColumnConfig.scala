@@ -1,42 +1,64 @@
 package typingsJapgolly.pgPromise.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IColumnConfig extends js.Object {
+trait IColumnConfig[T] extends StObject {
+  
   var cast: js.UndefOr[String] = js.undefined
+  
   var cnd: js.UndefOr[Boolean] = js.undefined
-  var `def`: js.UndefOr[js.Any] = js.undefined
-  var init: js.UndefOr[js.Function1[/* col */ IColumnDescriptor, _]] = js.undefined
+  
+  var `def`: js.UndefOr[Any] = js.undefined
+  
+  var init: js.UndefOr[js.Function1[/* col */ IColumnDescriptor[T], Any]] = js.undefined
+  
   var mod: js.UndefOr[FormattingFilter] = js.undefined
+  
   var name: String
+  
   var prop: js.UndefOr[String] = js.undefined
-  var skip: js.UndefOr[js.Function1[/* col */ IColumnDescriptor, Boolean]] = js.undefined
+  
+  var skip: js.UndefOr[js.Function1[/* col */ IColumnDescriptor[T], Boolean]] = js.undefined
 }
-
 object IColumnConfig {
-  @scala.inline
-  def apply(
-    name: String,
-    cast: String = null,
-    cnd: js.UndefOr[Boolean] = js.undefined,
-    `def`: js.Any = null,
-    init: /* col */ IColumnDescriptor => CallbackTo[js.Any] = null,
-    mod: FormattingFilter = null,
-    prop: String = null,
-    skip: /* col */ IColumnDescriptor => CallbackTo[Boolean] = null
-  ): IColumnConfig = {
+  
+  inline def apply[T](name: String): IColumnConfig[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (cast != null) __obj.updateDynamic("cast")(cast.asInstanceOf[js.Any])
-    if (!js.isUndefined(cnd)) __obj.updateDynamic("cnd")(cnd.asInstanceOf[js.Any])
-    if (`def` != null) __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1((t0: /* col */ typingsJapgolly.pgPromise.mod.IColumnDescriptor) => init(t0).runNow()))
-    if (mod != null) __obj.updateDynamic("mod")(mod.asInstanceOf[js.Any])
-    if (prop != null) __obj.updateDynamic("prop")(prop.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction1((t0: /* col */ typingsJapgolly.pgPromise.mod.IColumnDescriptor) => skip(t0).runNow()))
-    __obj.asInstanceOf[IColumnConfig]
+    __obj.asInstanceOf[IColumnConfig[T]]
+  }
+  
+  extension [Self <: IColumnConfig[?], T](x: Self & IColumnConfig[T]) {
+    
+    inline def setCast(value: String): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
+    
+    inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
+    
+    inline def setCnd(value: Boolean): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
+    
+    inline def setCndUndefined: Self = StObject.set(x, "cnd", js.undefined)
+    
+    inline def setDef(value: Any): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
+    
+    inline def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
+    
+    inline def setInit(value: /* col */ IColumnDescriptor[T] => Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    
+    inline def setMod(value: FormattingFilter): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
+    
+    inline def setModUndefined: Self = StObject.set(x, "mod", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+    
+    inline def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
+    
+    inline def setSkip(value: /* col */ IColumnDescriptor[T] => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
+    
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
   }
 }
-

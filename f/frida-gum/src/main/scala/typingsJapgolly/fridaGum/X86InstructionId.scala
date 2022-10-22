@@ -1,8 +1,8 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.jo
@@ -25,49 +25,44 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.fridaGumStrings.jecxz
   - typingsJapgolly.fridaGum.fridaGumStrings.jrcxz
 */
-trait X86InstructionId extends js.Object
-
+trait X86InstructionId extends StObject
 object X86InstructionId {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ja: typingsJapgolly.fridaGum.fridaGumStrings.ja = this.cast("ja")
-  @scala.inline
-  def jae: typingsJapgolly.fridaGum.fridaGumStrings.jae = this.cast("jae")
-  @scala.inline
-  def jb: typingsJapgolly.fridaGum.fridaGumStrings.jb = this.cast("jb")
-  @scala.inline
-  def jbe: typingsJapgolly.fridaGum.fridaGumStrings.jbe = this.cast("jbe")
-  @scala.inline
-  def jcxz: typingsJapgolly.fridaGum.fridaGumStrings.jcxz = this.cast("jcxz")
-  @scala.inline
-  def je: typingsJapgolly.fridaGum.fridaGumStrings.je = this.cast("je")
-  @scala.inline
-  def jecxz: typingsJapgolly.fridaGum.fridaGumStrings.jecxz = this.cast("jecxz")
-  @scala.inline
-  def jg: typingsJapgolly.fridaGum.fridaGumStrings.jg = this.cast("jg")
-  @scala.inline
-  def jge: typingsJapgolly.fridaGum.fridaGumStrings.jge = this.cast("jge")
-  @scala.inline
-  def jl: typingsJapgolly.fridaGum.fridaGumStrings.jl = this.cast("jl")
-  @scala.inline
-  def jle: typingsJapgolly.fridaGum.fridaGumStrings.jle = this.cast("jle")
-  @scala.inline
-  def jne: typingsJapgolly.fridaGum.fridaGumStrings.jne = this.cast("jne")
-  @scala.inline
-  def jno: typingsJapgolly.fridaGum.fridaGumStrings.jno = this.cast("jno")
-  @scala.inline
-  def jnp: typingsJapgolly.fridaGum.fridaGumStrings.jnp = this.cast("jnp")
-  @scala.inline
-  def jns: typingsJapgolly.fridaGum.fridaGumStrings.jns = this.cast("jns")
-  @scala.inline
-  def jo: typingsJapgolly.fridaGum.fridaGumStrings.jo = this.cast("jo")
-  @scala.inline
-  def jp: typingsJapgolly.fridaGum.fridaGumStrings.jp = this.cast("jp")
-  @scala.inline
-  def jrcxz: typingsJapgolly.fridaGum.fridaGumStrings.jrcxz = this.cast("jrcxz")
-  @JSName("js")
-  @scala.inline
-  def js_ : typingsJapgolly.fridaGum.fridaGumStrings.js_ = this.cast("js")
+  
+  inline def ja: typingsJapgolly.fridaGum.fridaGumStrings.ja = "ja".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.ja]
+  
+  inline def jae: typingsJapgolly.fridaGum.fridaGumStrings.jae = "jae".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jae]
+  
+  inline def jb: typingsJapgolly.fridaGum.fridaGumStrings.jb = "jb".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jb]
+  
+  inline def jbe: typingsJapgolly.fridaGum.fridaGumStrings.jbe = "jbe".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jbe]
+  
+  inline def jcxz: typingsJapgolly.fridaGum.fridaGumStrings.jcxz = "jcxz".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jcxz]
+  
+  inline def je: typingsJapgolly.fridaGum.fridaGumStrings.je = "je".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.je]
+  
+  inline def jecxz: typingsJapgolly.fridaGum.fridaGumStrings.jecxz = "jecxz".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jecxz]
+  
+  inline def jg: typingsJapgolly.fridaGum.fridaGumStrings.jg = "jg".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jg]
+  
+  inline def jge: typingsJapgolly.fridaGum.fridaGumStrings.jge = "jge".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jge]
+  
+  inline def jl: typingsJapgolly.fridaGum.fridaGumStrings.jl = "jl".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jl]
+  
+  inline def jle: typingsJapgolly.fridaGum.fridaGumStrings.jle = "jle".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jle]
+  
+  inline def jne: typingsJapgolly.fridaGum.fridaGumStrings.jne = "jne".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jne]
+  
+  inline def jno: typingsJapgolly.fridaGum.fridaGumStrings.jno = "jno".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jno]
+  
+  inline def jnp: typingsJapgolly.fridaGum.fridaGumStrings.jnp = "jnp".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jnp]
+  
+  inline def jns: typingsJapgolly.fridaGum.fridaGumStrings.jns = "jns".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jns]
+  
+  inline def jo: typingsJapgolly.fridaGum.fridaGumStrings.jo = "jo".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jo]
+  
+  inline def jp: typingsJapgolly.fridaGum.fridaGumStrings.jp = "jp".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jp]
+  
+  inline def jrcxz: typingsJapgolly.fridaGum.fridaGumStrings.jrcxz = "jrcxz".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.jrcxz]
+  
+  inline def js_ : typingsJapgolly.fridaGum.fridaGumStrings.js_ = "js".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.js_]
 }
-

@@ -1,35 +1,31 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`0`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`1024`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`512`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`0`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`1024`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`512`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`0`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`512`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`1024`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`0`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`512`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`1024`
 */
-trait PropertyAttributesEnum extends js.Object
-
+trait PropertyAttributesEnum extends StObject
 object PropertyAttributesEnum {
-  @scala.inline
-  def adPropNotSupported: `0` = this.cast(0)
-  @scala.inline
-  def adPropOptional: `2` = this.cast(2)
-  @scala.inline
-  def adPropRead: `512` = this.cast(512)
-  @scala.inline
-  def adPropRequired: `1` = this.cast(1)
-  @scala.inline
-  def adPropWrite: `1024` = this.cast(1024)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adPropNotSupported: `0` = 0.asInstanceOf[`0`]
+  
+  inline def adPropOptional: `2` = 2.asInstanceOf[`2`]
+  
+  inline def adPropRead: `512` = 512.asInstanceOf[`512`]
+  
+  inline def adPropRequired: `1` = 1.asInstanceOf[`1`]
+  
+  inline def adPropWrite: `1024` = 1024.asInstanceOf[`1024`]
 }
-

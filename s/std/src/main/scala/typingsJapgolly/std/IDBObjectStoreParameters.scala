@@ -1,24 +1,36 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDBObjectStoreParameters extends js.Object {
+trait IDBObjectStoreParameters extends StObject {
+  
+  /* standard dom */
   var autoIncrement: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var keyPath: js.UndefOr[java.lang.String | js.Array[java.lang.String] | Null] = js.undefined
 }
-
 object IDBObjectStoreParameters {
-  @scala.inline
-  def apply(
-    autoIncrement: js.UndefOr[scala.Boolean] = js.undefined,
-    keyPath: java.lang.String | js.Array[java.lang.String] = null
-  ): IDBObjectStoreParameters = {
+  
+  inline def apply(): IDBObjectStoreParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.asInstanceOf[js.Any])
-    if (keyPath != null) __obj.updateDynamic("keyPath")(keyPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDBObjectStoreParameters]
   }
+  
+  extension [Self <: IDBObjectStoreParameters](x: Self) {
+    
+    inline def setAutoIncrement(value: scala.Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
+    
+    inline def setAutoIncrementUndefined: Self = StObject.set(x, "autoIncrement", js.undefined)
+    
+    inline def setKeyPath(value: java.lang.String | js.Array[java.lang.String]): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
+    
+    inline def setKeyPathNull: Self = StObject.set(x, "keyPath", null)
+    
+    inline def setKeyPathUndefined: Self = StObject.set(x, "keyPath", js.undefined)
+    
+    inline def setKeyPathVarargs(value: java.lang.String*): Self = StObject.set(x, "keyPath", js.Array(value*))
+  }
 }
-

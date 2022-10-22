@@ -1,17 +1,7 @@
 package typingsJapgolly.winrt.Windows.Web.Syndication
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Web.Syndication.SyndicationError")
-@js.native
-class SyndicationError () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.Web.Syndication.SyndicationError")
-@js.native
-object SyndicationError extends js.Object {
-  def getStatus(hresult: Double): SyndicationErrorStatus = js.native
-}
-
+trait SyndicationError extends StObject

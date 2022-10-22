@@ -1,52 +1,60 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.TSInterfaceDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait TSInterfaceDeclaration_
-  extends Declaration
+  extends StObject
      with BaseNode
-     with Statement {
+     with Declaration
+     with Statement
+     with TypeScript {
+  
   var body: TSInterfaceBody_
+  
   var declare: Boolean | Null
+  
   var `extends`: js.Array[TSExpressionWithTypeArguments_] | Null
+  
   var id: Identifier_
+  
   var typeParameters: TSTypeParameterDeclaration_ | Null
+  
   @JSName("type")
   var type_TSInterfaceDeclaration_ : TSInterfaceDeclaration
 }
-
 object TSInterfaceDeclaration_ {
-  @scala.inline
-  def apply(
-    body: TSInterfaceBody_,
-    id: Identifier_,
-    `type`: TSInterfaceDeclaration,
-    declare: js.UndefOr[Boolean] = js.undefined,
-    end: Int | Double = null,
-    `extends`: js.Array[TSExpressionWithTypeArguments_] = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TSTypeParameterDeclaration_ = null
-  ): TSInterfaceDeclaration_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
+  
+  inline def apply(body: TSInterfaceBody_, id: Identifier_): TSInterfaceDeclaration_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], declare = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSInterfaceDeclaration")
+    __obj.updateDynamic("extends")(null)
     __obj.asInstanceOf[TSInterfaceDeclaration_]
   }
+  
+  extension [Self <: TSInterfaceDeclaration_](x: Self) {
+    
+    inline def setBody(value: TSInterfaceBody_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
+    
+    inline def setDeclareNull: Self = StObject.set(x, "declare", null)
+    
+    inline def setExtends(value: js.Array[TSExpressionWithTypeArguments_]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+    
+    inline def setExtendsNull: Self = StObject.set(x, "extends", null)
+    
+    inline def setExtendsVarargs(value: TSExpressionWithTypeArguments_ *): Self = StObject.set(x, "extends", js.Array(value*))
+    
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: TSInterfaceDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeParameters(value: TSTypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    
+    inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
+  }
 }
-

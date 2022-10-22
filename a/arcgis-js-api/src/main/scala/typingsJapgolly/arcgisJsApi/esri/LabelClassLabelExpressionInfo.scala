@@ -1,19 +1,29 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LabelClassLabelExpressionInfo extends Object {
+trait LabelClassLabelExpressionInfo
+  extends StObject
+     with Object {
+  
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that evaluates to a string used to label features in the layer. The most simple expressions return field values. For example, to label a layer of cities with their names, simply reference the field value with the global variable: `$feature.CITY_NAME`. Expressions can be more sophisticated and use logical functions. This may be useful if you want to use classed labels. For example, the following expression appends `city` to the end of the label if the feature's population field contains a number greater than 10,000. Otherwise, `town` is appended to the end of the label. Additionally, you can use `TextFormatting.NewLine` to add a new line to the label.  `IIF($feature.POPULATION > 10000, $feature.NAME + ' city', $feature.NAME + ' town')`
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Labeling Profile](https://developers.arcgis.com/javascript/latest/arcade/#labeling).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpressionInfo)
     */
   var expression: String
+  
+  /**
+    * The title of the label expression.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpressionInfo)
+    */
+  var title: js.UndefOr[String] = js.undefined
+  
   /**
     * The SQL expression defining the content of the label text.
     *
@@ -21,21 +31,28 @@ trait LabelClassLabelExpressionInfo extends Object {
     */
   var value: js.UndefOr[String] = js.undefined
 }
-
 object LabelClassLabelExpressionInfo {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     expression: String,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    value: String = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): LabelClassLabelExpressionInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[LabelClassLabelExpressionInfo]
   }
+  
+  extension [Self <: LabelClassLabelExpressionInfo](x: Self) {
+    
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

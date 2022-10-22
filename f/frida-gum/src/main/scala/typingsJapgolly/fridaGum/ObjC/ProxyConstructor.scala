@@ -3,9 +3,9 @@ package typingsJapgolly.fridaGum.ObjC
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typingsJapgolly.fridaGum.NativePointer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constructor for instantiating a proxy object.
@@ -15,10 +15,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ProxyConstructor
-  extends Instantiable1[(/* target */ NativePointer) | (/* target */ Object), ProxyInstance]
+  extends StObject
+     with Instantiable1[(/* target */ NativePointer) | (/* target */ Object), ProxyInstance]
      with Instantiable2[
       (/* target */ NativePointer) | (/* target */ Object), 
       /* data */ InstanceData, 
       ProxyInstance
     ]
-

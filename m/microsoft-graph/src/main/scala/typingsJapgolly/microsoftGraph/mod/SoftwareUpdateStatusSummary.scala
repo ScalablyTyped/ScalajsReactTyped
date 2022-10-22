@@ -1,80 +1,127 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SoftwareUpdateStatusSummary extends Entity {
+trait SoftwareUpdateStatusSummary
+  extends StObject
+     with Entity {
+  
   // Number of compliant devices.
   var compliantDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Number of compliant users.
   var compliantUserCount: js.UndefOr[Double] = js.undefined
+  
   // Number of conflict devices.
   var conflictDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Number of conflict users.
   var conflictUserCount: js.UndefOr[Double] = js.undefined
+  
   // The name of the policy.
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Number of devices had error.
   var errorDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Number of users had error.
   var errorUserCount: js.UndefOr[Double] = js.undefined
+  
   // Number of non compliant devices.
   var nonCompliantDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Number of non compliant users.
   var nonCompliantUserCount: js.UndefOr[Double] = js.undefined
+  
   // Number of not applicable devices.
   var notApplicableDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Number of not applicable users.
   var notApplicableUserCount: js.UndefOr[Double] = js.undefined
+  
   // Number of remediated devices.
   var remediatedDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Number of remediated users.
   var remediatedUserCount: js.UndefOr[Double] = js.undefined
+  
   // Number of unknown devices.
   var unknownDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Number of unknown users.
   var unknownUserCount: js.UndefOr[Double] = js.undefined
 }
-
 object SoftwareUpdateStatusSummary {
-  @scala.inline
-  def apply(
-    compliantDeviceCount: Int | Double = null,
-    compliantUserCount: Int | Double = null,
-    conflictDeviceCount: Int | Double = null,
-    conflictUserCount: Int | Double = null,
-    displayName: String = null,
-    errorDeviceCount: Int | Double = null,
-    errorUserCount: Int | Double = null,
-    id: String = null,
-    nonCompliantDeviceCount: Int | Double = null,
-    nonCompliantUserCount: Int | Double = null,
-    notApplicableDeviceCount: Int | Double = null,
-    notApplicableUserCount: Int | Double = null,
-    remediatedDeviceCount: Int | Double = null,
-    remediatedUserCount: Int | Double = null,
-    unknownDeviceCount: Int | Double = null,
-    unknownUserCount: Int | Double = null
-  ): SoftwareUpdateStatusSummary = {
+  
+  inline def apply(): SoftwareUpdateStatusSummary = {
     val __obj = js.Dynamic.literal()
-    if (compliantDeviceCount != null) __obj.updateDynamic("compliantDeviceCount")(compliantDeviceCount.asInstanceOf[js.Any])
-    if (compliantUserCount != null) __obj.updateDynamic("compliantUserCount")(compliantUserCount.asInstanceOf[js.Any])
-    if (conflictDeviceCount != null) __obj.updateDynamic("conflictDeviceCount")(conflictDeviceCount.asInstanceOf[js.Any])
-    if (conflictUserCount != null) __obj.updateDynamic("conflictUserCount")(conflictUserCount.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (errorDeviceCount != null) __obj.updateDynamic("errorDeviceCount")(errorDeviceCount.asInstanceOf[js.Any])
-    if (errorUserCount != null) __obj.updateDynamic("errorUserCount")(errorUserCount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (nonCompliantDeviceCount != null) __obj.updateDynamic("nonCompliantDeviceCount")(nonCompliantDeviceCount.asInstanceOf[js.Any])
-    if (nonCompliantUserCount != null) __obj.updateDynamic("nonCompliantUserCount")(nonCompliantUserCount.asInstanceOf[js.Any])
-    if (notApplicableDeviceCount != null) __obj.updateDynamic("notApplicableDeviceCount")(notApplicableDeviceCount.asInstanceOf[js.Any])
-    if (notApplicableUserCount != null) __obj.updateDynamic("notApplicableUserCount")(notApplicableUserCount.asInstanceOf[js.Any])
-    if (remediatedDeviceCount != null) __obj.updateDynamic("remediatedDeviceCount")(remediatedDeviceCount.asInstanceOf[js.Any])
-    if (remediatedUserCount != null) __obj.updateDynamic("remediatedUserCount")(remediatedUserCount.asInstanceOf[js.Any])
-    if (unknownDeviceCount != null) __obj.updateDynamic("unknownDeviceCount")(unknownDeviceCount.asInstanceOf[js.Any])
-    if (unknownUserCount != null) __obj.updateDynamic("unknownUserCount")(unknownUserCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoftwareUpdateStatusSummary]
   }
+  
+  extension [Self <: SoftwareUpdateStatusSummary](x: Self) {
+    
+    inline def setCompliantDeviceCount(value: Double): Self = StObject.set(x, "compliantDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setCompliantDeviceCountUndefined: Self = StObject.set(x, "compliantDeviceCount", js.undefined)
+    
+    inline def setCompliantUserCount(value: Double): Self = StObject.set(x, "compliantUserCount", value.asInstanceOf[js.Any])
+    
+    inline def setCompliantUserCountUndefined: Self = StObject.set(x, "compliantUserCount", js.undefined)
+    
+    inline def setConflictDeviceCount(value: Double): Self = StObject.set(x, "conflictDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setConflictDeviceCountUndefined: Self = StObject.set(x, "conflictDeviceCount", js.undefined)
+    
+    inline def setConflictUserCount(value: Double): Self = StObject.set(x, "conflictUserCount", value.asInstanceOf[js.Any])
+    
+    inline def setConflictUserCountUndefined: Self = StObject.set(x, "conflictUserCount", js.undefined)
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setErrorDeviceCount(value: Double): Self = StObject.set(x, "errorDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setErrorDeviceCountUndefined: Self = StObject.set(x, "errorDeviceCount", js.undefined)
+    
+    inline def setErrorUserCount(value: Double): Self = StObject.set(x, "errorUserCount", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUserCountUndefined: Self = StObject.set(x, "errorUserCount", js.undefined)
+    
+    inline def setNonCompliantDeviceCount(value: Double): Self = StObject.set(x, "nonCompliantDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setNonCompliantDeviceCountUndefined: Self = StObject.set(x, "nonCompliantDeviceCount", js.undefined)
+    
+    inline def setNonCompliantUserCount(value: Double): Self = StObject.set(x, "nonCompliantUserCount", value.asInstanceOf[js.Any])
+    
+    inline def setNonCompliantUserCountUndefined: Self = StObject.set(x, "nonCompliantUserCount", js.undefined)
+    
+    inline def setNotApplicableDeviceCount(value: Double): Self = StObject.set(x, "notApplicableDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setNotApplicableDeviceCountUndefined: Self = StObject.set(x, "notApplicableDeviceCount", js.undefined)
+    
+    inline def setNotApplicableUserCount(value: Double): Self = StObject.set(x, "notApplicableUserCount", value.asInstanceOf[js.Any])
+    
+    inline def setNotApplicableUserCountUndefined: Self = StObject.set(x, "notApplicableUserCount", js.undefined)
+    
+    inline def setRemediatedDeviceCount(value: Double): Self = StObject.set(x, "remediatedDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setRemediatedDeviceCountUndefined: Self = StObject.set(x, "remediatedDeviceCount", js.undefined)
+    
+    inline def setRemediatedUserCount(value: Double): Self = StObject.set(x, "remediatedUserCount", value.asInstanceOf[js.Any])
+    
+    inline def setRemediatedUserCountUndefined: Self = StObject.set(x, "remediatedUserCount", js.undefined)
+    
+    inline def setUnknownDeviceCount(value: Double): Self = StObject.set(x, "unknownDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setUnknownDeviceCountUndefined: Self = StObject.set(x, "unknownDeviceCount", js.undefined)
+    
+    inline def setUnknownUserCount(value: Double): Self = StObject.set(x, "unknownUserCount", value.asInstanceOf[js.Any])
+    
+    inline def setUnknownUserCountUndefined: Self = StObject.set(x, "unknownUserCount", js.undefined)
+  }
 }
-

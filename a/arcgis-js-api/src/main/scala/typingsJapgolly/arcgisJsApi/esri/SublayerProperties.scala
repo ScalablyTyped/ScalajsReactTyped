@@ -1,177 +1,259 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import typingsJapgolly.arcgisJsApi.anon.DynamicDataLayertypedatal
+import typingsJapgolly.arcgisJsApi.anon.DynamicMapLayertypemaplay
+import typingsJapgolly.arcgisJsApi.anon.MapImageLayerPropertiesty
+import typingsJapgolly.arcgisJsApi.anon.TileLayerPropertiestypeti
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`hide-children`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.hide
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.show
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SublayerProperties extends js.Object {
+trait SublayerProperties
+  extends StObject
+     with LoadableProperties {
+  
   /**
-    * A SQL where clause used to filter features in the image. Only the features that satisfy the definition expression are displayed in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html). Definition expressions may be set when a sublayer is constructed prior to it loading in the view or after it has been added to the MapImageLayer. To see if you can use this property, check the `supportsSublayerDefinitionExpression` property of [MapImageLayer.capabilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#capabilities).
+    * A SQL where clause used to filter features in the image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#definitionExpression)
     */
   var definitionExpression: js.UndefOr[String] = js.undefined
+  
   /**
-    * The sublayer's layer ID. When a [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#source) is not defined on the layer, this value represents the id of the sublayer defined by the map service. If creating a [DynamicDataLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicDataLayer) or a [MapDataLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#MapDataLayer) and adding it to the [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#source) property of the sublayer, the value of this property can be anything set by the developer.
+    * If a map image layer contains a sublayer which is meant to be floor-aware, then that sublayer must have a floorInfo property, containing a [LayerFloorInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LayerFloorInfo.html) object which has a string property to represent the floorField.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#floorInfo)
+    */
+  var floorInfo: js.UndefOr[LayerFloorInfoProperties] = js.undefined
+  
+  /**
+    * The sublayer's layer ID.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#id)
     */
   var id: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) objects. Use this property to specify labeling properties for the layer such as label expression, placement, and size.
+    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) objects.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#labelingInfo)
     */
   var labelingInfo: js.UndefOr[js.Array[LabelClassProperties]] = js.undefined
+  
   /**
     * Indicates if labels for the sublayer will be visible in the view.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#labelsVisible)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#labelsVisible)
     */
   var labelsVisible: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html) or [TileLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html) to which the sublayer belongs.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#layer)
     */
-  var layer: js.UndefOr[MapImageLayerProperties | TileLayerProperties] = js.undefined
+  var layer: js.UndefOr[MapImageLayerPropertiesty | TileLayerPropertiestypeti] = js.undefined
+  
   /**
-    * Indicates whether the layer will be included in the legend. When `false`, the layer will be excluded from the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#legendEnabled)
+    * Indicates whether the layer will be included in the legend.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#legendEnabled)
     */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget. The possible values are listed below.
-    *
-    * Value | Description
-    * ------|------------
-    *  show | The layer is visible in the table of contents.
-    *  hide | The layer is hidden in the table of contents.
-    *  hide-children | Hide the children layers from the table of contents.
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#listMode)
+    * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
     *
     * @default show
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#listMode)
     */
   var listMode: js.UndefOr[show | hide | `hide-children`] = js.undefined
+  
   /**
-    * The maximum scale (most zoomed in) at which the layer is visible in the view. If the map is zoomed in beyond this scale, the layer will not be visible. A value of `0` means the layer does not have a maximum scale. The maxScale value should always be smaller than the [minScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#minScale) value, and greater than or equal to the service specification.
+    * The maximum scale (most zoomed in) at which the layer is visible in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#maxScale)
     */
   var maxScale: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The minimum scale (most zoomed out) at which the layer is visible in the view. If the map is zoomed out beyond this scale, the layer will not be visible. A value of `0` means the layer does not have a minimum scale. The minScale value should always be larger than the [maxScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#maxScale) value, and lesser than or equal to the service specification.
+    * The minimum scale (most zoomed out) at which the layer is visible in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#minScale)
     */
   var minScale: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The level of opacity to set on the sublayer on a scale from 0.0 - 1.0 where `0` is fully transparent and `1.0` is fully opaque. If the [MapImageLayer.opacity](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#opacity) is set, the actual opacity value of the sublayer will be the value of [MapImageLayer.opacity](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#opacity) multiplied by the sublayer's opacity.
+    * The level of opacity to set on the sublayer on a scale from 0.0 - 1.0 where `0` is fully transparent and `1.0` is fully opaque.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#opacity)
     */
   var opacity: js.UndefOr[Double] = js.undefined
+  
   /**
     * Indicates whether to display popups when features in the layer are clicked.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#popupEnabled)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#popupEnabled)
     */
   var popupEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The popup template for the sublayer. When set, the `popupTemplate` allows users to access attributes and display their values in the [view's popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#popup) when the user clicks the image.  Sublayers with a [RasterDataSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#RasterDataSource) cannot be queried and therefore do not support [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
-    * > **Known Limitations**
-    *   * [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions are not supported in PopupTemplates set on MapImageLayer sublayers or TileLayer sublayers unless they reference ArcGIS Enterprise 10.6 map services (or later) created from ArcGIS Pro.
+    * The popup template for the sublayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#popupTemplate)
     */
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
+  
   /**
-    * The renderer to apply to the sublayer. This value overrides the renderer read from the map service. To see if you can use this property, check the `supportsDynamicLayers` property of [MapImageLayer.capabilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#capabilities).
-    * > **Known Limitations**
-    *   * [3D symbols](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html) are not currently supported in renderers set on sublayers.
-    *   * [Visual variables](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#visualVariables) and [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions are not supported in renderers set on MapImageLayer sublayers unless they reference ArcGIS Enterprise 10.6 map services (or later) created from ArcGIS Pro.
+    * The renderer to apply to the sublayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#renderer)
     */
   var renderer: js.UndefOr[RendererProperties] = js.undefined
+  
   /**
-    * An object that allows you to create a dynamic layer with data either from the map service sublayers or data from a registered workspace. See [DynamicMapLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicMapLayer) for creating dynamic layers from map service layers for on the fly rendering, labeling, and filtering (definition expressions). To create dynamic layers from other sources in registered workspaces such as tables and table joins, see [DynamicDataLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicDataLayer).
+    * An object that allows you to create a dynamic layer with data either from the map service sublayers or data from a registered workspace.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#source)
     */
-  var source: js.UndefOr[DynamicMapLayer | DynamicDataLayer] = js.undefined
+  var source: js.UndefOr[DynamicMapLayertypemaplay | DynamicDataLayertypedatal] = js.undefined
+  
+  /**
+    * The [map service's metadata JSON](https://developers.arcgis.com/rest/services-reference/map-service.htm) exposed by the ArcGIS REST API.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#sourceJSON)
+    */
+  var sourceJSON: js.UndefOr[Any] = js.undefined
+  
   /**
     * If a sublayer contains sublayers, this property is a [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [Sublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) objects belonging to the given sublayer with sublayers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#sublayers)
     */
   var sublayers: js.UndefOr[CollectionProperties[SublayerProperties]] = js.undefined
+  
   /**
-    * The title of the sublayer used to identify it in places such as the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) and [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widgets. This value can be defined in the map service or programmatically by the developer. It can also be useful for finding a specific sublayer.
+    * The title of the sublayer used to identify it in places such as the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) and [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widgets.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#title)
     */
   var title: js.UndefOr[String] = js.undefined
+  
   /**
-    * Indicates if the layer is visible in the view. To see if you can use this property, check the `supportsSublayerVisibility` property of [MapImageLayer.capabilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#capabilities).
+    * The URL to the REST endpoint of the sublayer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#url)
+    */
+  var url: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Indicates if the layer is visible in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#visible)
     */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object SublayerProperties {
-  @scala.inline
-  def apply(
-    definitionExpression: String = null,
-    id: Int | Double = null,
-    labelingInfo: js.Array[LabelClassProperties] = null,
-    labelsVisible: js.UndefOr[Boolean] = js.undefined,
-    layer: MapImageLayerProperties | TileLayerProperties = null,
-    legendEnabled: js.UndefOr[Boolean] = js.undefined,
-    listMode: show | hide | `hide-children` = null,
-    maxScale: Int | Double = null,
-    minScale: Int | Double = null,
-    opacity: Int | Double = null,
-    popupEnabled: js.UndefOr[Boolean] = js.undefined,
-    popupTemplate: PopupTemplateProperties = null,
-    renderer: RendererProperties = null,
-    source: DynamicMapLayer | DynamicDataLayer = null,
-    sublayers: CollectionProperties[SublayerProperties] = null,
-    title: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): SublayerProperties = {
+  
+  inline def apply(): SublayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (labelingInfo != null) __obj.updateDynamic("labelingInfo")(labelingInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled.asInstanceOf[js.Any])
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
-    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
-    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled.asInstanceOf[js.Any])
-    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (sublayers != null) __obj.updateDynamic("sublayers")(sublayers.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SublayerProperties]
   }
+  
+  extension [Self <: SublayerProperties](x: Self) {
+    
+    inline def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
+    
+    inline def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
+    
+    inline def setFloorInfo(value: LayerFloorInfoProperties): Self = StObject.set(x, "floorInfo", value.asInstanceOf[js.Any])
+    
+    inline def setFloorInfoUndefined: Self = StObject.set(x, "floorInfo", js.undefined)
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
+    
+    inline def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
+    
+    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value*))
+    
+    inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
+    
+    inline def setLayer(value: MapImageLayerPropertiesty | TileLayerPropertiestypeti): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    
+    inline def setListMode(value: show | hide | `hide-children`): Self = StObject.set(x, "listMode", value.asInstanceOf[js.Any])
+    
+    inline def setListModeUndefined: Self = StObject.set(x, "listMode", js.undefined)
+    
+    inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+    
+    inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
+    
+    inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+    
+    inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
+    
+    inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    
+    inline def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    
+    inline def setSource(value: DynamicMapLayertypemaplay | DynamicDataLayertypedatal): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceJSON(value: Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    
+    inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setSublayers(value: CollectionProperties[SublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
+    
+    inline def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
+    
+    inline def setSublayersVarargs(value: SublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

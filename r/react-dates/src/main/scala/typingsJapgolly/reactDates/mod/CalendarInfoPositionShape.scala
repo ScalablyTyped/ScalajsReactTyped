@@ -1,28 +1,23 @@
 package typingsJapgolly.reactDates.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// shapes/CalendarInfoPositionShape.js
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactDates.reactDatesStrings.top
   - typingsJapgolly.reactDates.reactDatesStrings.bottom
   - typingsJapgolly.reactDates.reactDatesStrings.before
   - typingsJapgolly.reactDates.reactDatesStrings.after
 */
-trait CalendarInfoPositionShape extends js.Object
-
+trait CalendarInfoPositionShape extends StObject
 object CalendarInfoPositionShape {
-  @scala.inline
-  def after: typingsJapgolly.reactDates.reactDatesStrings.after = this.cast("after")
-  @scala.inline
-  def before: typingsJapgolly.reactDates.reactDatesStrings.before = this.cast("before")
-  @scala.inline
-  def bottom: typingsJapgolly.reactDates.reactDatesStrings.bottom = this.cast("bottom")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def top: typingsJapgolly.reactDates.reactDatesStrings.top = this.cast("top")
+  
+  inline def after: typingsJapgolly.reactDates.reactDatesStrings.after = "after".asInstanceOf[typingsJapgolly.reactDates.reactDatesStrings.after]
+  
+  inline def before: typingsJapgolly.reactDates.reactDatesStrings.before = "before".asInstanceOf[typingsJapgolly.reactDates.reactDatesStrings.before]
+  
+  inline def bottom: typingsJapgolly.reactDates.reactDatesStrings.bottom = "bottom".asInstanceOf[typingsJapgolly.reactDates.reactDatesStrings.bottom]
+  
+  inline def top: typingsJapgolly.reactDates.reactDatesStrings.top = "top".asInstanceOf[typingsJapgolly.reactDates.reactDatesStrings.top]
 }
-

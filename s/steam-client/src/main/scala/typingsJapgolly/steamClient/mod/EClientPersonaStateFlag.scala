@@ -1,90 +1,88 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EClientPersonaStateFlag extends js.Object
-
+sealed trait EClientPersonaStateFlag extends StObject
 @JSImport("steam-client", "EClientPersonaStateFlag")
 @js.native
-object EClientPersonaStateFlag extends js.Object {
-  @js.native
-  sealed trait ClanInfo extends EClientPersonaStateFlag
-  
-  @js.native
-  sealed trait ClanTag extends EClientPersonaStateFlag
-  
-  @js.native
-  sealed trait Facebook extends EClientPersonaStateFlag
-  
-  @js.native
-  sealed trait GameDataBlob extends EClientPersonaStateFlag
-  
-  @js.native
-  sealed trait GameExtraInfo extends EClientPersonaStateFlag
-  
-  @js.native
-  sealed trait LastSeen extends EClientPersonaStateFlag
-  
-   // removed
-  @js.native
-  sealed trait Metadata extends EClientPersonaStateFlag
-  
-  @js.native
-  sealed trait PlayerName extends EClientPersonaStateFlag
-  
-  @js.native
-  sealed trait Presence extends EClientPersonaStateFlag
-  
-  @js.native
-  sealed trait QueryPort extends EClientPersonaStateFlag
-  
-  @js.native
-  sealed trait SourceID extends EClientPersonaStateFlag
-  
-  @js.native
-  sealed trait Status extends EClientPersonaStateFlag
+object EClientPersonaStateFlag extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EClientPersonaStateFlag with Double] = js.native
-  /* 128 */ @js.native
-  object ClanInfo extends TopLevel[ClanInfo with Double]
+  def apply(value: Double): js.UndefOr[EClientPersonaStateFlag & Double] = js.native
   
-  /* 1024 */ @js.native
-  object ClanTag extends TopLevel[ClanTag with Double]
+  @js.native
+  sealed trait ClanInfo
+    extends StObject
+       with EClientPersonaStateFlag
+  /* 128 */ val ClanInfo: typingsJapgolly.steamClient.mod.EClientPersonaStateFlag.ClanInfo & Double = js.native
   
-  /* 2048 */ @js.native
-  object Facebook extends TopLevel[Facebook with Double]
+  @js.native
+  sealed trait ClanTag
+    extends StObject
+       with EClientPersonaStateFlag
+  /* 1024 */ val ClanTag: typingsJapgolly.steamClient.mod.EClientPersonaStateFlag.ClanTag & Double = js.native
   
-  /* 512 */ @js.native
-  object GameDataBlob extends TopLevel[GameDataBlob with Double]
+  @js.native
+  sealed trait Facebook
+    extends StObject
+       with EClientPersonaStateFlag
+  /* 2048 */ val Facebook: typingsJapgolly.steamClient.mod.EClientPersonaStateFlag.Facebook & Double = js.native
   
-  /* 256 */ @js.native
-  object GameExtraInfo extends TopLevel[GameExtraInfo with Double]
+  @js.native
+  sealed trait GameDataBlob
+    extends StObject
+       with EClientPersonaStateFlag
+  /* 512 */ val GameDataBlob: typingsJapgolly.steamClient.mod.EClientPersonaStateFlag.GameDataBlob & Double = js.native
   
-  /* 64 */ @js.native
-  object LastSeen extends TopLevel[LastSeen with Double]
+  @js.native
+  sealed trait GameExtraInfo
+    extends StObject
+       with EClientPersonaStateFlag
+  /* 256 */ val GameExtraInfo: typingsJapgolly.steamClient.mod.EClientPersonaStateFlag.GameExtraInfo & Double = js.native
   
-  /* 32 */ @js.native
-  object Metadata extends TopLevel[Metadata with Double]
+  // removed
+  @js.native
+  sealed trait LastSeen
+    extends StObject
+       with EClientPersonaStateFlag
+  /* 64 */ val LastSeen: typingsJapgolly.steamClient.mod.EClientPersonaStateFlag.LastSeen & Double = js.native
   
-  /* 2 */ @js.native
-  object PlayerName extends TopLevel[PlayerName with Double]
+  @js.native
+  sealed trait Metadata
+    extends StObject
+       with EClientPersonaStateFlag
+  /* 32 */ val Metadata: typingsJapgolly.steamClient.mod.EClientPersonaStateFlag.Metadata & Double = js.native
   
-  /* 16 */ @js.native
-  object Presence extends TopLevel[Presence with Double]
+  @js.native
+  sealed trait PlayerName
+    extends StObject
+       with EClientPersonaStateFlag
+  /* 2 */ val PlayerName: typingsJapgolly.steamClient.mod.EClientPersonaStateFlag.PlayerName & Double = js.native
   
-  /* 4 */ @js.native
-  object QueryPort extends TopLevel[QueryPort with Double]
+  @js.native
+  sealed trait Presence
+    extends StObject
+       with EClientPersonaStateFlag
+  /* 16 */ val Presence: typingsJapgolly.steamClient.mod.EClientPersonaStateFlag.Presence & Double = js.native
   
-  /* 8 */ @js.native
-  object SourceID extends TopLevel[SourceID with Double]
+  @js.native
+  sealed trait QueryPort
+    extends StObject
+       with EClientPersonaStateFlag
+  /* 4 */ val QueryPort: typingsJapgolly.steamClient.mod.EClientPersonaStateFlag.QueryPort & Double = js.native
   
-  /* 1 */ @js.native
-  object Status extends TopLevel[Status with Double]
+  @js.native
+  sealed trait SourceID
+    extends StObject
+       with EClientPersonaStateFlag
+  /* 8 */ val SourceID: typingsJapgolly.steamClient.mod.EClientPersonaStateFlag.SourceID & Double = js.native
   
+  @js.native
+  sealed trait Status
+    extends StObject
+       with EClientPersonaStateFlag
+  /* 1 */ val Status: typingsJapgolly.steamClient.mod.EClientPersonaStateFlag.Status & Double = js.native
 }
-

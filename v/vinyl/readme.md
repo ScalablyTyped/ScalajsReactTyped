@@ -11,9 +11,9 @@ Virtual file format.
 | Full name          | vinyl |
 | Keywords           | virtual, filesystem, file, directory, stat, path |
 | # releases         | 2 |
-| # dependents       | 1279 |
-| # downloads        | 253557304 |
-| # stars            | 43 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9828116666666668E7 |
+| # stars            | 1225.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/vinyl#readme)

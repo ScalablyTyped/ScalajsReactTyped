@@ -1,15 +1,17 @@
 package typingsJapgolly.jstree
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSTreeStaticDefaults extends js.Object {
+trait JSTreeStaticDefaults extends StObject {
+  
   /**
     * stores all defaults for the checkbox plugin
     */
   var checkbox: js.UndefOr[JSTreeStaticDefaultsCheckbox] = js.undefined
+  
   /**
     * a callback (function) which is invoked in the instance's scope and receives two arguments
     * - the node and the event that triggered the `close_node` call.
@@ -19,6 +21,7 @@ trait JSTreeStaticDefaults extends js.Object {
     * @plugin conditionalclose
     */
   var conditionalclose: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /**
     * a callback (function) which is invoked in the instance's scope and receives two arguments
     * - the node and the event that triggered the `activate_node` call.
@@ -28,23 +31,28 @@ trait JSTreeStaticDefaults extends js.Object {
     * @plugin conditionalselect
     */
   var conditionalselect: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /**
     * stores all defaults for the contextmenu plugin
     */
   var contextmenu: js.UndefOr[JSTreeStaticDefaultsContextMenu] = js.undefined
+  
   /**
     * stores all defaults for the core
     * @name $.jstree.defaults.core
     */
   var core: JSTreeStaticDefaultsCore
+  
   /**
     * stores all defaults for the drag'n'drop plugin
     */
   var dnd: js.UndefOr[JSTreeStaticDefaultsDragNDrop] = js.undefined
+  
   /**
     * Adds massload functionality to jsTree, so that multiple nodes can be loaded in a single request (only useful with lazy loading).
     */
   var massload: js.UndefOr[JSTreeStaticDefaultsMassload] = js.undefined
+  
   /**
     * configure which plugins will be active on an instance.
     * Should be an array of strings, where each element is a plugin name.
@@ -52,21 +60,25 @@ trait JSTreeStaticDefaults extends js.Object {
     * @name $.jstree.defaults.plugins
     */
   var plugins: js.Array[String]
+  
   /**
     * stores all defaults for the search plugin
     */
   var search: js.UndefOr[JSTreeStaticDefaultsSearch] = js.undefined
+  
   /**
     * the settings function used to sort the nodes.
     * It is executed in the tree's context, accepts two nodes as arguments and should return `1` or `-1`.
     * @name $.jstree.defaults.sort
     * @plugin sort
     */
-  var sort: js.UndefOr[js.Function2[/* x */ js.Any, /* y */ js.Any, Double]] = js.undefined
+  var sort: js.UndefOr[js.Function2[/* x */ Any, /* y */ Any, Double]] = js.undefined
+  
   /**
     * stores all defaults for the state plugin
     */
   var state: js.UndefOr[JSTreeStaticDefaultsState] = js.undefined
+  
   /**
     * An object storing all types as key value pairs,
     * where the key is the type name and the value is an object
@@ -85,7 +97,8 @@ trait JSTreeStaticDefaults extends js.Object {
     * # represents the root of the tree, for example max_children would control the maximum number of root nodes.
     * default represents the default node - any settings here will be applied to all nodes that do not have a type specified.
     */
-  var types: js.UndefOr[js.Any] = js.undefined
+  var types: js.UndefOr[Any] = js.undefined
+  
   /**
     * stores all defaults for the unique plugin
     * @name $.jstree.defaults.unique
@@ -93,37 +106,63 @@ trait JSTreeStaticDefaults extends js.Object {
     */
   var unique: js.UndefOr[JSTreeStaticDefaultsUnique] = js.undefined
 }
-
 object JSTreeStaticDefaults {
-  @scala.inline
-  def apply(
-    core: JSTreeStaticDefaultsCore,
-    plugins: js.Array[String],
-    checkbox: JSTreeStaticDefaultsCheckbox = null,
-    conditionalclose: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    conditionalselect: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    contextmenu: JSTreeStaticDefaultsContextMenu = null,
-    dnd: JSTreeStaticDefaultsDragNDrop = null,
-    massload: JSTreeStaticDefaultsMassload = null,
-    search: JSTreeStaticDefaultsSearch = null,
-    sort: (/* x */ js.Any, /* y */ js.Any) => CallbackTo[Double] = null,
-    state: JSTreeStaticDefaultsState = null,
-    types: js.Any = null,
-    unique: JSTreeStaticDefaultsUnique = null
-  ): JSTreeStaticDefaults = {
+  
+  inline def apply(core: JSTreeStaticDefaultsCore, plugins: js.Array[String]): JSTreeStaticDefaults = {
     val __obj = js.Dynamic.literal(core = core.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any])
-    if (checkbox != null) __obj.updateDynamic("checkbox")(checkbox.asInstanceOf[js.Any])
-    conditionalclose.foreach(p => __obj.updateDynamic("conditionalclose")(p.toJsFn))
-    conditionalselect.foreach(p => __obj.updateDynamic("conditionalselect")(p.toJsFn))
-    if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu.asInstanceOf[js.Any])
-    if (dnd != null) __obj.updateDynamic("dnd")(dnd.asInstanceOf[js.Any])
-    if (massload != null) __obj.updateDynamic("massload")(massload.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2((t0: /* x */ js.Any, t1: /* y */ js.Any) => sort(t0, t1).runNow()))
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
-    if (unique != null) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaults]
   }
+  
+  extension [Self <: JSTreeStaticDefaults](x: Self) {
+    
+    inline def setCheckbox(value: JSTreeStaticDefaultsCheckbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+    
+    inline def setCheckboxUndefined: Self = StObject.set(x, "checkbox", js.undefined)
+    
+    inline def setConditionalclose(value: CallbackTo[Boolean]): Self = StObject.set(x, "conditionalclose", value.toJsFn)
+    
+    inline def setConditionalcloseUndefined: Self = StObject.set(x, "conditionalclose", js.undefined)
+    
+    inline def setConditionalselect(value: CallbackTo[Boolean]): Self = StObject.set(x, "conditionalselect", value.toJsFn)
+    
+    inline def setConditionalselectUndefined: Self = StObject.set(x, "conditionalselect", js.undefined)
+    
+    inline def setContextmenu(value: JSTreeStaticDefaultsContextMenu): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
+    
+    inline def setContextmenuUndefined: Self = StObject.set(x, "contextmenu", js.undefined)
+    
+    inline def setCore(value: JSTreeStaticDefaultsCore): Self = StObject.set(x, "core", value.asInstanceOf[js.Any])
+    
+    inline def setDnd(value: JSTreeStaticDefaultsDragNDrop): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
+    
+    inline def setDndUndefined: Self = StObject.set(x, "dnd", js.undefined)
+    
+    inline def setMassload(value: JSTreeStaticDefaultsMassload): Self = StObject.set(x, "massload", value.asInstanceOf[js.Any])
+    
+    inline def setMassloadUndefined: Self = StObject.set(x, "massload", js.undefined)
+    
+    inline def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    
+    inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value*))
+    
+    inline def setSearch(value: JSTreeStaticDefaultsSearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    
+    inline def setSort(value: (/* x */ Any, /* y */ Any) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setState(value: JSTreeStaticDefaultsState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setTypes(value: Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    
+    inline def setUnique(value: JSTreeStaticDefaultsUnique): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+  }
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.navermaps.navermapsStrings.miter
-  - typingsJapgolly.navermaps.navermapsStrings.`round `
+  - typingsJapgolly.navermaps.navermapsStrings.round
   - typingsJapgolly.navermaps.navermapsStrings.bevel
 */
-trait strokeLineJoinType extends js.Object
-
+trait strokeLineJoinType extends StObject
 object strokeLineJoinType {
-  @scala.inline
-  def bevel: typingsJapgolly.navermaps.navermapsStrings.bevel = this.cast("bevel")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def miter: typingsJapgolly.navermaps.navermapsStrings.miter = this.cast("miter")
-  @scala.inline
-  def `round `: typingsJapgolly.navermaps.navermapsStrings.`round ` = this.cast("round ")
+  
+  inline def bevel: typingsJapgolly.navermaps.navermapsStrings.bevel = "bevel".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.bevel]
+  
+  inline def miter: typingsJapgolly.navermaps.navermapsStrings.miter = "miter".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.miter]
+  
+  inline def round: typingsJapgolly.navermaps.navermapsStrings.round = "round".asInstanceOf[typingsJapgolly.navermaps.navermapsStrings.round]
 }
-

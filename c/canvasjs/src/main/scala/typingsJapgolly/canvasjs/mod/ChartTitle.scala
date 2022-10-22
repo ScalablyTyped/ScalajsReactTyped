@@ -1,25 +1,31 @@
 package typingsJapgolly.canvasjs.mod
 
-import typingsJapgolly.canvasjs.AnonX1
+import typingsJapgolly.canvasjs.anon.X1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartTitle extends ChartTitleOptions {
+trait ChartTitle
+  extends StObject
+     with ChartTitleOptions {
+  
   /**
     * Can be accessed via get method or dot notation.
     */
-  val bounds: AnonX1 = js.native
+  val bounds: X1 = js.native
+  
   /**
     * Returns the specified property of title.
     * @param propertyName Name of the property.
     */
   def get(propertyName: String): String | Double | Boolean = js.native
+  
   /**
     * Removes title of the chart.
     */
   def remove(): Unit = js.native
+  
   /**
     * Sets the specified property of Title.
     * @param propertyName Name of the property.
@@ -30,4 +36,3 @@ trait ChartTitle extends ChartTitleOptions {
   def set(propertyName: String, value: Boolean, updateChart: Boolean): Unit = js.native
   def set(propertyName: String, value: Double, updateChart: Boolean): Unit = js.native
 }
-

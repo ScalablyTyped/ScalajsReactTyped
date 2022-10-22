@@ -1,50 +1,18 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "SkinnedMesh")
 @js.native
-class SkinnedMesh ()
-  extends typingsJapgolly.three.skinnedMeshMod.SkinnedMesh {
-  def this(geometry: typingsJapgolly.three.bufferGeometryMod.BufferGeometry) = this()
-  def this(geometry: typingsJapgolly.three.geometryMod.Geometry) = this()
-  def this(
-    geometry: typingsJapgolly.three.bufferGeometryMod.BufferGeometry,
-    material: js.Array[typingsJapgolly.three.materialMod.Material]
-  ) = this()
-  def this(
-    geometry: typingsJapgolly.three.bufferGeometryMod.BufferGeometry,
-    material: typingsJapgolly.three.materialMod.Material
-  ) = this()
-  def this(
-    geometry: typingsJapgolly.three.geometryMod.Geometry,
-    material: js.Array[typingsJapgolly.three.materialMod.Material]
-  ) = this()
-  def this(
-    geometry: typingsJapgolly.three.geometryMod.Geometry,
-    material: typingsJapgolly.three.materialMod.Material
-  ) = this()
-  def this(
-    geometry: typingsJapgolly.three.bufferGeometryMod.BufferGeometry,
-    material: js.Array[typingsJapgolly.three.materialMod.Material],
-    useVertexTexture: Boolean
-  ) = this()
-  def this(
-    geometry: typingsJapgolly.three.bufferGeometryMod.BufferGeometry,
-    material: typingsJapgolly.three.materialMod.Material,
-    useVertexTexture: Boolean
-  ) = this()
-  def this(
-    geometry: typingsJapgolly.three.geometryMod.Geometry,
-    material: js.Array[typingsJapgolly.three.materialMod.Material],
-    useVertexTexture: Boolean
-  ) = this()
-  def this(
-    geometry: typingsJapgolly.three.geometryMod.Geometry,
-    material: typingsJapgolly.three.materialMod.Material,
-    useVertexTexture: Boolean
-  ) = this()
+open class SkinnedMesh[TGeometry /* <: typingsJapgolly.three.srcCoreBufferGeometryMod.BufferGeometry */, TMaterial /* <: typingsJapgolly.three.srcMaterialsMaterialMod.Material | js.Array[typingsJapgolly.three.srcMaterialsMaterialMod.Material] */] ()
+  extends typingsJapgolly.three.srcThreeMod.SkinnedMesh[TGeometry, TMaterial] {
+  def this(geometry: TGeometry) = this()
+  def this(geometry: TGeometry, material: TMaterial) = this()
+  def this(geometry: Unit, material: TMaterial) = this()
+  def this(geometry: TGeometry, material: TMaterial, useVertexTexture: Boolean) = this()
+  def this(geometry: TGeometry, material: Unit, useVertexTexture: Boolean) = this()
+  def this(geometry: Unit, material: TMaterial, useVertexTexture: Boolean) = this()
+  def this(geometry: Unit, material: Unit, useVertexTexture: Boolean) = this()
 }
-

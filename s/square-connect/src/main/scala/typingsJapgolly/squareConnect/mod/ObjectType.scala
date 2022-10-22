@@ -1,8 +1,8 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.squareConnect.squareConnectStrings.ITEM
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.squareConnect.squareConnectStrings.MODIFIER_LIST
   - typingsJapgolly.squareConnect.squareConnectStrings.MODIFIER
 */
-trait ObjectType extends js.Object
-
+trait ObjectType extends StObject
 object ObjectType {
-  @scala.inline
-  def CATEGORY: typingsJapgolly.squareConnect.squareConnectStrings.CATEGORY = this.cast("CATEGORY")
-  @scala.inline
-  def DISCOUNT: typingsJapgolly.squareConnect.squareConnectStrings.DISCOUNT = this.cast("DISCOUNT")
-  @scala.inline
-  def IMAGE: typingsJapgolly.squareConnect.squareConnectStrings.IMAGE = this.cast("IMAGE")
-  @scala.inline
-  def ITEM: typingsJapgolly.squareConnect.squareConnectStrings.ITEM = this.cast("ITEM")
-  @scala.inline
-  def ITEM_VARIATION: typingsJapgolly.squareConnect.squareConnectStrings.ITEM_VARIATION = this.cast("ITEM_VARIATION")
-  @scala.inline
-  def MODIFIER: typingsJapgolly.squareConnect.squareConnectStrings.MODIFIER = this.cast("MODIFIER")
-  @scala.inline
-  def MODIFIER_LIST: typingsJapgolly.squareConnect.squareConnectStrings.MODIFIER_LIST = this.cast("MODIFIER_LIST")
-  @scala.inline
-  def TAX: typingsJapgolly.squareConnect.squareConnectStrings.TAX = this.cast("TAX")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CATEGORY: typingsJapgolly.squareConnect.squareConnectStrings.CATEGORY = "CATEGORY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CATEGORY]
+  
+  inline def DISCOUNT: typingsJapgolly.squareConnect.squareConnectStrings.DISCOUNT = "DISCOUNT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DISCOUNT]
+  
+  inline def IMAGE: typingsJapgolly.squareConnect.squareConnectStrings.IMAGE = "IMAGE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IMAGE]
+  
+  inline def ITEM: typingsJapgolly.squareConnect.squareConnectStrings.ITEM = "ITEM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ITEM]
+  
+  inline def ITEM_VARIATION: typingsJapgolly.squareConnect.squareConnectStrings.ITEM_VARIATION = "ITEM_VARIATION".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ITEM_VARIATION]
+  
+  inline def MODIFIER: typingsJapgolly.squareConnect.squareConnectStrings.MODIFIER = "MODIFIER".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MODIFIER]
+  
+  inline def MODIFIER_LIST: typingsJapgolly.squareConnect.squareConnectStrings.MODIFIER_LIST = "MODIFIER_LIST".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MODIFIER_LIST]
+  
+  inline def TAX: typingsJapgolly.squareConnect.squareConnectStrings.TAX = "TAX".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TAX]
 }
-

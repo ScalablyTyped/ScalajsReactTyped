@@ -1,20 +1,21 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.personaTypesMod.IPersonaPresenceProps
+import typingsJapgolly.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.IPersonaPresenceProps
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/PersonaPresence", JSImport.Namespace)
-@js.native
-object libPersonaPresenceMod extends js.Object {
+object libPersonaPresenceMod {
+  
+  @JSImport("office-ui-fabric-react/lib/PersonaPresence", "PersonaPresence")
   @js.native
-  class PersonaPresenceBase protected ()
-    extends typingsJapgolly.officeUiFabricReact.personaPresenceMod.PersonaPresenceBase {
+  val PersonaPresence: FunctionComponent[IPersonaPresenceProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/PersonaPresence", "PersonaPresenceBase")
+  @js.native
+  open class PersonaPresenceBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsPersonaPersonaPresenceMod.PersonaPresenceBase {
     def this(props: IPersonaPresenceProps) = this()
   }
-  
-  val PersonaPresence: FunctionComponent[IPersonaPresenceProps] = js.native
 }
-

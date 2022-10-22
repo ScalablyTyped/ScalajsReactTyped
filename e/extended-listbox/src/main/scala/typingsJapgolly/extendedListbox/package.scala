@@ -1,10 +1,10 @@
-package typingsJapgolly
+package typingsJapgolly.extendedListbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object extendedListbox {
-  type MultiSelectListBox = typingsJapgolly.extendedListbox.BaseListBox
-  type SingleSelectListBox = typingsJapgolly.extendedListbox.BaseListBox
-}
+
+type MultiSelectListBox = BaseListBox
+
+type SingleSelectListBox = BaseListBox

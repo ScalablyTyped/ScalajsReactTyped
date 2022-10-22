@@ -1,36 +1,65 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxTreeList.ToolbarItemClick event.
   */
-@JSGlobal("ASPxClientTreeListToolbarItemClickEventArgs")
-@js.native
-class ASPxClientTreeListToolbarItemClickEventArgs protected () extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientTreeListToolbarItemClickEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
+  
   /**
-    * Initializes a new instance of the ASPxClientTreeListToolbarItemClickEventArgs class.
-    * @param item An ASPxClientMenu object that should be clicked to fire the event.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
+    * Specifies whether the toolbar item click is handled manually, so no default processing is required.
     */
-  def this(item: ASPxClientMenuItem, processOnServer: Boolean) = this()
+  var handled: Boolean
+  
   /**
     * Gets the clicked menu item
     */
-  var item: ASPxClientMenuItem = js.native
+  var item: ASPxClientMenuItem
+  
   /**
     * Gets the toolbar index related to the event.
     */
-  var toolbarIndex: Double = js.native
+  var toolbarIndex: Double
+  
   /**
     * Gets the toolbar name.
     */
-  var toolbarName: String = js.native
+  var toolbarName: String
+  
   /**
     * Specifies whether a postback or a callback is used to finally process the event on the server side.
     */
-  var usePostBack: Boolean = js.native
+  var usePostBack: Boolean
 }
-
+object ASPxClientTreeListToolbarItemClickEventArgs {
+  
+  inline def apply(
+    handled: Boolean,
+    item: ASPxClientMenuItem,
+    processOnServer: Boolean,
+    toolbarIndex: Double,
+    toolbarName: String,
+    usePostBack: Boolean
+  ): ASPxClientTreeListToolbarItemClickEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], toolbarIndex = toolbarIndex.asInstanceOf[js.Any], toolbarName = toolbarName.asInstanceOf[js.Any], usePostBack = usePostBack.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientTreeListToolbarItemClickEventArgs]
+  }
+  
+  extension [Self <: ASPxClientTreeListToolbarItemClickEventArgs](x: Self) {
+    
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    
+    inline def setItem(value: ASPxClientMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    
+    inline def setToolbarIndex(value: Double): Self = StObject.set(x, "toolbarIndex", value.asInstanceOf[js.Any])
+    
+    inline def setToolbarName(value: String): Self = StObject.set(x, "toolbarName", value.asInstanceOf[js.Any])
+    
+    inline def setUsePostBack(value: Boolean): Self = StObject.set(x, "usePostBack", value.asInstanceOf[js.Any])
+  }
+}

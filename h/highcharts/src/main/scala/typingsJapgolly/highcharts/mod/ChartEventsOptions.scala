@@ -1,12 +1,13 @@
 package typingsJapgolly.highcharts.mod
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartEventsOptions extends js.Object {
+trait ChartEventsOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires when a series is added to
     * the chart after load time, using the `addSeries` method. One parameter,
@@ -16,16 +17,19 @@ trait ChartEventsOptions extends js.Object {
     * from being added.
     */
   var addSeries: js.UndefOr[ChartAddSeriesCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires after a chart is printed
     * through the context menu item or the `Chart.print` method.
     */
   var afterPrint: js.UndefOr[ExportingAfterPrintCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires before a chart is printed
     * through the context menu item or the `Chart.print` method.
     */
   var beforePrint: js.UndefOr[ExportingBeforePrintCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires when clicking on the plot
     * background. One parameter, `event`, is passed to the function, containing
@@ -35,11 +39,11 @@ trait ChartEventsOptions extends js.Object {
     * `event.yAxis`, which are arrays containing the axes of each dimension and
     * each axis' value at the clicked spot. The primary axes are
     * `event.xAxis[0]` and `event.yAxis[0]`. Remember the unit of a datetime
-    * axis is milliseconds since 1970-01-01 00:00:00.
-    *
-    *  (see online documentation for example)
+    * axis is milliseconds since 1970-01-01 00:00:00. (see online documentation
+    * for example)
     */
   var click: js.UndefOr[ChartClickCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Fires when a drilldown point is clicked, before
     * the new series is added. This event is also utilized for async drilldown,
@@ -49,7 +53,7 @@ trait ChartEventsOptions extends js.Object {
     *
     * Event arguments:
     *
-    * - `category`: If a category label was clicked, which index.</dd>
+    * - `category`: If a category label was clicked, which index.
     *
     * - `originalEvent`: The original browser event (usually click) that
     * triggered the drilldown.
@@ -57,26 +61,44 @@ trait ChartEventsOptions extends js.Object {
     * - `point`: The originating point.
     *
     * - `points`: If a category label was clicked, this array holds all points
-    * corresponing to the category.</dd>
+    * corresponding to the category.
     *
     * - `seriesOptions`: Options for the new series.
     */
   var drilldown: js.UndefOr[DrilldownCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Fires when drilling up from a drilldown series.
     */
   var drillup: js.UndefOr[DrillupCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) In a chart with multiple drilldown series, this
     * event fires after all the series have been drilled up.
     */
   var drillupall: js.UndefOr[DrillupAllCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback that fires while
     * exporting data. This allows the modification of data rows before
     * processed into the final format.
     */
   var exportData: js.UndefOr[ExportDataCallbackFunction] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Fires when a fullscreen is
+    * closed through the context menu item, or a fullscreen is closed on the
+    * `Escape` button click, or the `Chart.fullscreen.close` method.
+    */
+  var fullscreenClose: js.UndefOr[FullScreenfullscreenCloseCallbackFunction] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Fires when a fullscreen is
+    * opened through the context menu item, or the `Chart.fullscreen.open`
+    * method.
+    */
+  var fullscreenOpen: js.UndefOr[FullScreenfullscreenOpenCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires when the chart is finished
     * loading. Since v4.2.2, it also waits for images to be loaded, for example
@@ -87,6 +109,7 @@ trait ChartEventsOptions extends js.Object {
     * callback function can be passed to be executed on chart.load.
     */
   var load: js.UndefOr[ChartLoadCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires when the chart is redrawn,
     * either after a call to `chart.redraw()` or after an axis, series or point
@@ -94,12 +117,14 @@ trait ChartEventsOptions extends js.Object {
     * `event`, is passed to the function, containing common event information.
     */
   var redraw: js.UndefOr[ChartRedrawCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires after initial load of the
     * chart (directly after the `load` event), and after each redraw (directly
     * after the `redraw` event).
     */
   var render: js.UndefOr[ChartRenderCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires when an area of the chart
     * has been selected. Selection is enabled by setting the chart's zoomType.
@@ -112,43 +137,73 @@ trait ChartEventsOptions extends js.Object {
     * `event.yAxis`, which are arrays containing the axes of each dimension and
     * each axis' min and max values. The primary axes are `event.xAxis[0]` and
     * `event.yAxis[0]`. Remember the unit of a datetime axis is milliseconds
-    * since 1970-01-01 00:00:00.
-    *
-    *  (see online documentation for example)
+    * since 1970-01-01 00:00:00. (see online documentation for example)
     */
   var selection: js.UndefOr[ChartSelectionCallbackFunction] = js.undefined
 }
-
 object ChartEventsOptions {
-  @scala.inline
-  def apply(
-    addSeries: ChartAddSeriesCallbackFunction = null,
-    afterPrint: (/* chart */ Chart_, /* event */ Event_) => Callback = null,
-    beforePrint: (/* chart */ Chart_, /* event */ Event_) => Callback = null,
-    click: ChartClickCallbackFunction = null,
-    drilldown: DrilldownCallbackFunction = null,
-    drillup: DrillupCallbackFunction = null,
-    drillupall: DrillupAllCallbackFunction = null,
-    exportData: ExportDataCallbackFunction = null,
-    load: ChartLoadCallbackFunction = null,
-    redraw: ChartRedrawCallbackFunction = null,
-    render: ChartRenderCallbackFunction = null,
-    selection: ChartSelectionCallbackFunction = null
-  ): ChartEventsOptions = {
+  
+  inline def apply(): ChartEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (addSeries != null) __obj.updateDynamic("addSeries")(addSeries.asInstanceOf[js.Any])
-    if (afterPrint != null) __obj.updateDynamic("afterPrint")(js.Any.fromFunction2((t0: /* chart */ typingsJapgolly.highcharts.mod.Chart_, t1: /* event */ typingsJapgolly.std.Event_) => afterPrint(t0, t1).runNow()))
-    if (beforePrint != null) __obj.updateDynamic("beforePrint")(js.Any.fromFunction2((t0: /* chart */ typingsJapgolly.highcharts.mod.Chart_, t1: /* event */ typingsJapgolly.std.Event_) => beforePrint(t0, t1).runNow()))
-    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
-    if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown.asInstanceOf[js.Any])
-    if (drillup != null) __obj.updateDynamic("drillup")(drillup.asInstanceOf[js.Any])
-    if (drillupall != null) __obj.updateDynamic("drillupall")(drillupall.asInstanceOf[js.Any])
-    if (exportData != null) __obj.updateDynamic("exportData")(exportData.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
-    if (redraw != null) __obj.updateDynamic("redraw")(redraw.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartEventsOptions]
   }
+  
+  extension [Self <: ChartEventsOptions](x: Self) {
+    
+    inline def setAddSeries(value: ChartAddSeriesCallbackFunction): Self = StObject.set(x, "addSeries", value.asInstanceOf[js.Any])
+    
+    inline def setAddSeriesUndefined: Self = StObject.set(x, "addSeries", js.undefined)
+    
+    inline def setAfterPrint(value: (/* chart */ Chart_, /* event */ Event) => Callback): Self = StObject.set(x, "afterPrint", js.Any.fromFunction2((t0: /* chart */ Chart_, t1: /* event */ Event) => (value(t0, t1)).runNow()))
+    
+    inline def setAfterPrintUndefined: Self = StObject.set(x, "afterPrint", js.undefined)
+    
+    inline def setBeforePrint(value: (/* chart */ Chart_, /* event */ Event) => Callback): Self = StObject.set(x, "beforePrint", js.Any.fromFunction2((t0: /* chart */ Chart_, t1: /* event */ Event) => (value(t0, t1)).runNow()))
+    
+    inline def setBeforePrintUndefined: Self = StObject.set(x, "beforePrint", js.undefined)
+    
+    inline def setClick(value: ChartClickCallbackFunction): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    
+    inline def setDrilldown(value: DrilldownCallbackFunction): Self = StObject.set(x, "drilldown", value.asInstanceOf[js.Any])
+    
+    inline def setDrilldownUndefined: Self = StObject.set(x, "drilldown", js.undefined)
+    
+    inline def setDrillup(value: DrillupCallbackFunction): Self = StObject.set(x, "drillup", value.asInstanceOf[js.Any])
+    
+    inline def setDrillupUndefined: Self = StObject.set(x, "drillup", js.undefined)
+    
+    inline def setDrillupall(value: DrillupAllCallbackFunction): Self = StObject.set(x, "drillupall", value.asInstanceOf[js.Any])
+    
+    inline def setDrillupallUndefined: Self = StObject.set(x, "drillupall", js.undefined)
+    
+    inline def setExportData(value: ExportDataCallbackFunction): Self = StObject.set(x, "exportData", value.asInstanceOf[js.Any])
+    
+    inline def setExportDataUndefined: Self = StObject.set(x, "exportData", js.undefined)
+    
+    inline def setFullscreenClose(value: (/* chart */ Chart_, /* event */ Event) => Callback): Self = StObject.set(x, "fullscreenClose", js.Any.fromFunction2((t0: /* chart */ Chart_, t1: /* event */ Event) => (value(t0, t1)).runNow()))
+    
+    inline def setFullscreenCloseUndefined: Self = StObject.set(x, "fullscreenClose", js.undefined)
+    
+    inline def setFullscreenOpen(value: (/* chart */ Chart_, /* event */ Event) => Callback): Self = StObject.set(x, "fullscreenOpen", js.Any.fromFunction2((t0: /* chart */ Chart_, t1: /* event */ Event) => (value(t0, t1)).runNow()))
+    
+    inline def setFullscreenOpenUndefined: Self = StObject.set(x, "fullscreenOpen", js.undefined)
+    
+    inline def setLoad(value: ChartLoadCallbackFunction): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    
+    inline def setRedraw(value: ChartRedrawCallbackFunction): Self = StObject.set(x, "redraw", value.asInstanceOf[js.Any])
+    
+    inline def setRedrawUndefined: Self = StObject.set(x, "redraw", js.undefined)
+    
+    inline def setRender(value: ChartRenderCallbackFunction): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    
+    inline def setSelection(value: ChartSelectionCallbackFunction): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+  }
 }
-

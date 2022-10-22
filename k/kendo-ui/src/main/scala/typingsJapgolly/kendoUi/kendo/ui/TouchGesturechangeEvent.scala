@@ -3,35 +3,45 @@ package typingsJapgolly.kendoUi.kendo.ui
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.kendoUi.JQueryEventObject
 import typingsJapgolly.kendoUi.kendo.mobile.ui.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TouchGesturechangeEvent extends TouchEvent {
+trait TouchGesturechangeEvent
+  extends StObject
+     with TouchEvent {
+  
   var center: js.UndefOr[Point] = js.undefined
+  
   var distance: js.UndefOr[Double] = js.undefined
+  
   var event: js.UndefOr[JQueryEventObject] = js.undefined
-  var touches: js.UndefOr[js.Any] = js.undefined
+  
+  var touches: js.UndefOr[Any] = js.undefined
 }
-
 object TouchGesturechangeEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Touch,
-    center: Point = null,
-    distance: Int | Double = null,
-    event: JQueryEventObject = null,
-    touches: js.Any = null
-  ): TouchGesturechangeEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (touches != null) __obj.updateDynamic("touches")(touches.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Touch): TouchGesturechangeEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchGesturechangeEvent]
   }
+  
+  extension [Self <: TouchGesturechangeEvent](x: Self) {
+    
+    inline def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    
+    inline def setEvent(value: JQueryEventObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    
+    inline def setTouches(value: Any): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+    
+    inline def setTouchesUndefined: Self = StObject.set(x, "touches", js.undefined)
+  }
 }
-

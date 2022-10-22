@@ -1,32 +1,25 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Script
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AuthorizationStatus extends js.Object
-
+sealed trait AuthorizationStatus extends StObject
 /**
   * An enumeration denoting the authorization status of a script.
   */
 @JSGlobal("GoogleAppsScript.Script.AuthorizationStatus")
 @js.native
-object AuthorizationStatus extends js.Object {
-  @js.native
-  sealed trait NOT_REQUIRED extends AuthorizationStatus
+object AuthorizationStatus extends StObject {
   
   @js.native
-  sealed trait REQUIRED extends AuthorizationStatus
+  sealed trait NOT_REQUIRED
+    extends StObject
+       with AuthorizationStatus
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AuthorizationStatus with Double] = js.native
-  /* 1 */ @js.native
-  object NOT_REQUIRED extends TopLevel[NOT_REQUIRED with Double]
-  
-  /* 0 */ @js.native
-  object REQUIRED extends TopLevel[REQUIRED with Double]
-  
+  @js.native
+  sealed trait REQUIRED
+    extends StObject
+       with AuthorizationStatus
 }
-

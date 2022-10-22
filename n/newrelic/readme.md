@@ -1,7 +1,7 @@
 
 # Scala.js typings for newrelic
 
-Typings are for version 6.4
+Typings are for version 7.0
 
 ## Library description:
 New Relic agent
@@ -10,13 +10,13 @@ New Relic agent
 | ------------------ | :-------------: |
 | Full name          | newrelic |
 | Keywords           | apm, performance, monitoring, instrumentation, debugging, profiling |
-| # releases         | 57 |
-| # dependents       | 160 |
-| # downloads        | 16604937 |
-| # stars            | 51 |
+| # releases         | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 3010940.0 |
+| # stars            | 887.0 |
 
 ## Links
-- [Homepage](http://github.com/newrelic/node-newrelic)
+- [Homepage](https://github.com/newrelic/node-newrelic)
 - [Bugs](https://github.com/newrelic/node-newrelic/issues)
 - [Repository](https://github.com/newrelic/node-newrelic)
 - [Npm](https://www.npmjs.com/package/newrelic)

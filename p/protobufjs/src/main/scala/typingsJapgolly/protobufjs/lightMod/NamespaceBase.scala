@@ -1,11 +1,10 @@
 package typingsJapgolly.protobufjs.lightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protobufjs/light", "NamespaceBase")
+/* note: abstract class */ @JSImport("protobufjs/light", "NamespaceBase")
 @js.native
-abstract class NamespaceBase ()
+open class NamespaceBase ()
   extends typingsJapgolly.protobufjs.mod.NamespaceBase
-

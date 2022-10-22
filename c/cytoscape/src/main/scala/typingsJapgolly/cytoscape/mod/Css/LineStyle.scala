@@ -1,8 +1,8 @@
 package typingsJapgolly.cytoscape.mod.Css
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The line style; may be solid, dotted, dashed, or double
@@ -13,18 +13,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.cytoscape.cytoscapeStrings.dashed
   - typingsJapgolly.cytoscape.cytoscapeStrings.double
 */
-trait LineStyle extends js.Object
-
+trait LineStyle extends StObject
 object LineStyle {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dashed: typingsJapgolly.cytoscape.cytoscapeStrings.dashed = this.cast("dashed")
-  @scala.inline
-  def dotted: typingsJapgolly.cytoscape.cytoscapeStrings.dotted = this.cast("dotted")
-  @scala.inline
-  def double: typingsJapgolly.cytoscape.cytoscapeStrings.double = this.cast("double")
-  @scala.inline
-  def solid: typingsJapgolly.cytoscape.cytoscapeStrings.solid = this.cast("solid")
+  
+  inline def dashed: typingsJapgolly.cytoscape.cytoscapeStrings.dashed = "dashed".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.dashed]
+  
+  inline def dotted: typingsJapgolly.cytoscape.cytoscapeStrings.dotted = "dotted".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.dotted]
+  
+  inline def double: typingsJapgolly.cytoscape.cytoscapeStrings.double = "double".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.double]
+  
+  inline def solid: typingsJapgolly.cytoscape.cytoscapeStrings.solid = "solid".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.solid]
 }
-

@@ -11,9 +11,9 @@ Align the text in a string.
 | Full name          | align-text |
 | Keywords           | align, align-center, alignment, center, center-align, indent, pad, padding, right, right-align, text, typography |
 | # releases         | 1 |
-| # dependents       | 48 |
-| # downloads        | 162786867 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8838205.333333334 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/align-text)

@@ -1,14 +1,20 @@
 package typingsJapgolly.mjmlReact.components
 
+import typingsJapgolly.mjmlReact.anon.Children
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object MjmlYahooStyle
-  extends SharedApply_AnonChildren985513731[typingsJapgolly.mjmlReact.extensionsMod.MjmlYahooStyle] {
+object MjmlYahooStyle {
+  
+  inline def apply(children: String): SharedBuilder_Children_1291238532[typingsJapgolly.mjmlReact.extensionsMod.MjmlYahooStyle] = {
+    val __props = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    new SharedBuilder_Children_1291238532[typingsJapgolly.mjmlReact.extensionsMod.MjmlYahooStyle](js.Array(this.component, __props.asInstanceOf[Children]))
+  }
+  
   @JSImport("mjml-react/extensions", "MjmlYahooStyle")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: Children): SharedBuilder_Children_1291238532[typingsJapgolly.mjmlReact.extensionsMod.MjmlYahooStyle] = new SharedBuilder_Children_1291238532[typingsJapgolly.mjmlReact.extensionsMod.MjmlYahooStyle](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -11,14 +11,11 @@ Tree View for Twitter Bootstrap
 | Full name          | bootstrap-treeview |
 | Keywords           | twitter, bootstrap, tree, treeview, tree-view, navigation, javascript, jquery, jquery-plugin |
 | # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 21082 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2873.6666666666665 |
+| # stars            | 3268.0 |
 
 ## Links
-- [Homepage](https://github.com/jonmiles/bootstrap-treeview)
-- [Bugs](https://github.com/jonmiles/bootstrap-treeview/issues)
-- [Repository](https://github.com/jonmiles/bootstrap-treeview)
 - [Npm](https://www.npmjs.com/package/bootstrap-treeview)
     
 

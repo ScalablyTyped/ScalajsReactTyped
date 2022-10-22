@@ -1,28 +1,36 @@
 package typingsJapgolly.amapJsSdk.AMap
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 地物对象的像素尺寸
   */
-@JSGlobal("AMap.Size")
-@js.native
-class Size protected () extends js.Object {
-  /**
-    * 构造尺寸对象
-    * @param width 宽度，单位：像素
-    * @param height 高度，单位：像素
-    */
-  def this(width: Double, height: Double) = this()
+trait Size extends StObject {
+  
   /**
     * 获得高度
     */
-  def getHeight(): Double = js.native
+  def getHeight(): Double
+  
   /**
     * 获得宽度
     */
-  def getWidth(): Double = js.native
+  def getWidth(): Double
 }
-
+object Size {
+  
+  inline def apply(getHeight: CallbackTo[Double], getWidth: CallbackTo[Double]): Size = {
+    val __obj = js.Dynamic.literal(getHeight = getHeight.toJsFn, getWidth = getWidth.toJsFn)
+    __obj.asInstanceOf[Size]
+  }
+  
+  extension [Self <: Size](x: Self) {
+    
+    inline def setGetHeight(value: CallbackTo[Double]): Self = StObject.set(x, "getHeight", value.toJsFn)
+    
+    inline def setGetWidth(value: CallbackTo[Double]): Self = StObject.set(x, "getWidth", value.toJsFn)
+  }
+}

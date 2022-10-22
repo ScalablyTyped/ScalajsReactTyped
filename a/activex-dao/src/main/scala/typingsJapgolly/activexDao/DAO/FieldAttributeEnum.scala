@@ -1,41 +1,37 @@
 package typingsJapgolly.activexDao.DAO
 
-import typingsJapgolly.activexDao.activexDaoNumbers.`16`
-import typingsJapgolly.activexDao.activexDaoNumbers.`1`
-import typingsJapgolly.activexDao.activexDaoNumbers.`2`
-import typingsJapgolly.activexDao.activexDaoNumbers.`32768`
-import typingsJapgolly.activexDao.activexDaoNumbers.`32`
-import typingsJapgolly.activexDao.activexDaoNumbers.`8192`
+import typingsJapgolly.activexDao.activexDaoInts.`16`
+import typingsJapgolly.activexDao.activexDaoInts.`1`
+import typingsJapgolly.activexDao.activexDaoInts.`2`
+import typingsJapgolly.activexDao.activexDaoInts.`32768`
+import typingsJapgolly.activexDao.activexDaoInts.`32`
+import typingsJapgolly.activexDao.activexDaoInts.`8192`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexDao.activexDaoNumbers.`16`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`1`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`32768`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`8192`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`32`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`2`
+  - typingsJapgolly.activexDao.activexDaoInts.`16`
+  - typingsJapgolly.activexDao.activexDaoInts.`1`
+  - typingsJapgolly.activexDao.activexDaoInts.`32768`
+  - typingsJapgolly.activexDao.activexDaoInts.`8192`
+  - typingsJapgolly.activexDao.activexDaoInts.`32`
+  - typingsJapgolly.activexDao.activexDaoInts.`2`
 */
-trait FieldAttributeEnum extends js.Object
-
+trait FieldAttributeEnum extends StObject
 object FieldAttributeEnum {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dbAutoIncrField: `16` = this.cast(16)
-  @scala.inline
-  def dbDescending: `1` = this.cast(1)
-  @scala.inline
-  def dbFixedField: `1` = this.cast(1)
-  @scala.inline
-  def dbHyperlinkField: `32768` = this.cast(32768)
-  @scala.inline
-  def dbSystemField: `8192` = this.cast(8192)
-  @scala.inline
-  def dbUpdatableField: `32` = this.cast(32)
-  @scala.inline
-  def dbVariableField: `2` = this.cast(2)
+  
+  inline def dbAutoIncrField: `16` = 16.asInstanceOf[`16`]
+  
+  inline def dbDescending: `1` = 1.asInstanceOf[`1`]
+  
+  inline def dbFixedField: `1` = 1.asInstanceOf[`1`]
+  
+  inline def dbHyperlinkField: `32768` = 32768.asInstanceOf[`32768`]
+  
+  inline def dbSystemField: `8192` = 8192.asInstanceOf[`8192`]
+  
+  inline def dbUpdatableField: `32` = 32.asInstanceOf[`32`]
+  
+  inline def dbVariableField: `2` = 2.asInstanceOf[`2`]
 }
-

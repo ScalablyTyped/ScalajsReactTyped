@@ -1,10 +1,11 @@
 package typingsJapgolly.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AppendFileFailCallbackResult extends js.Object {
+trait AppendFileFailCallbackResult extends StObject {
+  
   /** 错误信息
     *
     * 可选值：
@@ -14,13 +15,15 @@ trait AppendFileFailCallbackResult extends js.Object {
     * - 'fail sdcard not mounted ': 指定的 filePath 是一个已经存在的目录; */
   var errMsg: String
 }
-
 object AppendFileFailCallbackResult {
-  @scala.inline
-  def apply(errMsg: String): AppendFileFailCallbackResult = {
-    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
   
+  inline def apply(errMsg: String): AppendFileFailCallbackResult = {
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppendFileFailCallbackResult]
   }
+  
+  extension [Self <: AppendFileFailCallbackResult](x: Self) {
+    
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+  }
 }
-

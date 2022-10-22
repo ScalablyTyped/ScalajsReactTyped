@@ -1,50 +1,40 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PointStyle extends js.Object
-
+sealed trait PointStyle extends StObject
 /**
   * An enumeration of the styles of points in a line.
   */
 @JSGlobal("GoogleAppsScript.Charts.PointStyle")
 @js.native
-object PointStyle extends js.Object {
-  @js.native
-  sealed trait HUGE extends PointStyle
+object PointStyle extends StObject {
   
   @js.native
-  sealed trait LARGE extends PointStyle
+  sealed trait HUGE
+    extends StObject
+       with PointStyle
   
   @js.native
-  sealed trait MEDIUM extends PointStyle
+  sealed trait LARGE
+    extends StObject
+       with PointStyle
   
   @js.native
-  sealed trait NONE extends PointStyle
+  sealed trait MEDIUM
+    extends StObject
+       with PointStyle
   
   @js.native
-  sealed trait TINY extends PointStyle
+  sealed trait NONE
+    extends StObject
+       with PointStyle
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PointStyle with Double] = js.native
-  /* 4 */ @js.native
-  object HUGE extends TopLevel[HUGE with Double]
-  
-  /* 3 */ @js.native
-  object LARGE extends TopLevel[LARGE with Double]
-  
-  /* 2 */ @js.native
-  object MEDIUM extends TopLevel[MEDIUM with Double]
-  
-  /* 0 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 1 */ @js.native
-  object TINY extends TopLevel[TINY with Double]
-  
+  @js.native
+  sealed trait TINY
+    extends StObject
+       with PointStyle
 }
-

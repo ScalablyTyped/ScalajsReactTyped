@@ -1,18 +1,21 @@
 package typingsJapgolly.winrt.Windows.UI.Core.AnimationMetrics
 
 import typingsJapgolly.winrt.Windows.Foundation.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IOpacityAnimation extends IPropertyAnimation {
+trait IOpacityAnimation
+  extends StObject
+     with IPropertyAnimation {
+  
   var finalOpacity: Double
+  
   var initialOpacity: Double
 }
-
 object IOpacityAnimation {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     control1: Point,
     control2: Point,
     delay: Double,
@@ -25,5 +28,11 @@ object IOpacityAnimation {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpacityAnimation]
   }
+  
+  extension [Self <: IOpacityAnimation](x: Self) {
+    
+    inline def setFinalOpacity(value: Double): Self = StObject.set(x, "finalOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setInitialOpacity(value: Double): Self = StObject.set(x, "initialOpacity", value.asInstanceOf[js.Any])
+  }
 }
-

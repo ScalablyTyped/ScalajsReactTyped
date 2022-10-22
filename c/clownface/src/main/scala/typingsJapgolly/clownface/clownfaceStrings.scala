@@ -1,24 +1,20 @@
 package typingsJapgolly.clownface
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clownfaceStrings {
-  @js.native
-  sealed trait BlankNode extends js.Object
   
   @js.native
-  sealed trait Literal extends js.Object
+  sealed trait BlankNode extends StObject
+  inline def BlankNode: BlankNode = "BlankNode".asInstanceOf[BlankNode]
   
   @js.native
-  sealed trait NamedNode extends js.Object
+  sealed trait Literal extends StObject
+  inline def Literal: Literal = "Literal".asInstanceOf[Literal]
   
-  @scala.inline
-  def BlankNode: BlankNode = "BlankNode".asInstanceOf[BlankNode]
-  @scala.inline
-  def Literal: Literal = "Literal".asInstanceOf[Literal]
-  @scala.inline
-  def NamedNode: NamedNode = "NamedNode".asInstanceOf[NamedNode]
+  @js.native
+  sealed trait NamedNode extends StObject
+  inline def NamedNode: NamedNode = "NamedNode".asInstanceOf[NamedNode]
 }
-

@@ -1,39 +1,31 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Script
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InstallationSource extends js.Object
-
+sealed trait InstallationSource extends StObject
 /**
   * An enumeration that indicates how the script came to be installed as an add-on for the current
   * user.
   */
 @JSGlobal("GoogleAppsScript.Script.InstallationSource")
 @js.native
-object InstallationSource extends js.Object {
-  @js.native
-  sealed trait APPS_MARKETPLACE_DOMAIN_ADD_ON extends InstallationSource
+object InstallationSource extends StObject {
   
   @js.native
-  sealed trait NONE extends InstallationSource
+  sealed trait APPS_MARKETPLACE_DOMAIN_ADD_ON
+    extends StObject
+       with InstallationSource
   
   @js.native
-  sealed trait WEB_STORE_ADD_ON extends InstallationSource
+  sealed trait NONE
+    extends StObject
+       with InstallationSource
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InstallationSource with Double] = js.native
-  /* 0 */ @js.native
-  object APPS_MARKETPLACE_DOMAIN_ADD_ON extends TopLevel[APPS_MARKETPLACE_DOMAIN_ADD_ON with Double]
-  
-  /* 1 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 2 */ @js.native
-  object WEB_STORE_ADD_ON extends TopLevel[WEB_STORE_ADD_ON with Double]
-  
+  @js.native
+  sealed trait WEB_STORE_ADD_ON
+    extends StObject
+       with InstallationSource
 }
-

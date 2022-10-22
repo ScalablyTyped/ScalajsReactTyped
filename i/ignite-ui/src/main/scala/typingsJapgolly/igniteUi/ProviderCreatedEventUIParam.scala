@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProviderCreatedEventUIParam extends js.Object {
+trait ProviderCreatedEventUIParam extends StObject {
+  
   /**
-  	 * Gets reference to the igZoombar.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to the igZoombar.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the created provider.
-  	 */
-  var provider: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the created provider.
+    */
+  var provider: js.UndefOr[Any] = js.undefined
 }
-
 object ProviderCreatedEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null, provider: js.Any = null): ProviderCreatedEventUIParam = {
+  
+  inline def apply(): ProviderCreatedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderCreatedEventUIParam]
   }
+  
+  extension [Self <: ProviderCreatedEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setProvider(value: Any): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+  }
 }
-

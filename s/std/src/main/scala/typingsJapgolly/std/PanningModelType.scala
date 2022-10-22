@@ -1,21 +1,17 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.HRTF
   - typingsJapgolly.std.stdStrings.equalpower
 */
-trait PanningModelType extends js.Object
-
+trait PanningModelType extends StObject
 object PanningModelType {
-  @scala.inline
-  def HRTF: typingsJapgolly.std.stdStrings.HRTF = this.cast("HRTF")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def equalpower: typingsJapgolly.std.stdStrings.equalpower = this.cast("equalpower")
+  
+  inline def HRTF: typingsJapgolly.std.stdStrings.HRTF = "HRTF".asInstanceOf[typingsJapgolly.std.stdStrings.HRTF]
+  
+  inline def equalpower: typingsJapgolly.std.stdStrings.equalpower = "equalpower".asInstanceOf[typingsJapgolly.std.stdStrings.equalpower]
 }
-

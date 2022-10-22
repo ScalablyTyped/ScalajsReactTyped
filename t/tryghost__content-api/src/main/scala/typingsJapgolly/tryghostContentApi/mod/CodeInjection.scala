@@ -1,21 +1,34 @@
 package typingsJapgolly.tryghostContentApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CodeInjection extends js.Object {
+trait CodeInjection extends StObject {
+  
   var codeinjection_foot: js.UndefOr[Nullable[String]] = js.undefined
+  
   var codeinjection_head: js.UndefOr[Nullable[String]] = js.undefined
 }
-
 object CodeInjection {
-  @scala.inline
-  def apply(codeinjection_foot: Nullable[String] = null, codeinjection_head: Nullable[String] = null): CodeInjection = {
+  
+  inline def apply(): CodeInjection = {
     val __obj = js.Dynamic.literal()
-    if (codeinjection_foot != null) __obj.updateDynamic("codeinjection_foot")(codeinjection_foot.asInstanceOf[js.Any])
-    if (codeinjection_head != null) __obj.updateDynamic("codeinjection_head")(codeinjection_head.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeInjection]
   }
+  
+  extension [Self <: CodeInjection](x: Self) {
+    
+    inline def setCodeinjection_foot(value: Nullable[String]): Self = StObject.set(x, "codeinjection_foot", value.asInstanceOf[js.Any])
+    
+    inline def setCodeinjection_footNull: Self = StObject.set(x, "codeinjection_foot", null)
+    
+    inline def setCodeinjection_footUndefined: Self = StObject.set(x, "codeinjection_foot", js.undefined)
+    
+    inline def setCodeinjection_head(value: Nullable[String]): Self = StObject.set(x, "codeinjection_head", value.asInstanceOf[js.Any])
+    
+    inline def setCodeinjection_headNull: Self = StObject.set(x, "codeinjection_head", null)
+    
+    inline def setCodeinjection_headUndefined: Self = StObject.set(x, "codeinjection_head", js.undefined)
+  }
 }
-

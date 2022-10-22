@@ -1,19 +1,24 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResolvedModuleWithFailedLookupLocations extends js.Object {
+trait ResolvedModuleWithFailedLookupLocations extends StObject {
+  
   val resolvedModule: js.UndefOr[ResolvedModuleFull] = js.undefined
 }
-
 object ResolvedModuleWithFailedLookupLocations {
-  @scala.inline
-  def apply(resolvedModule: ResolvedModuleFull = null): ResolvedModuleWithFailedLookupLocations = {
+  
+  inline def apply(): ResolvedModuleWithFailedLookupLocations = {
     val __obj = js.Dynamic.literal()
-    if (resolvedModule != null) __obj.updateDynamic("resolvedModule")(resolvedModule.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedModuleWithFailedLookupLocations]
   }
+  
+  extension [Self <: ResolvedModuleWithFailedLookupLocations](x: Self) {
+    
+    inline def setResolvedModule(value: ResolvedModuleFull): Self = StObject.set(x, "resolvedModule", value.asInstanceOf[js.Any])
+    
+    inline def setResolvedModuleUndefined: Self = StObject.set(x, "resolvedModule", js.undefined)
+  }
 }
-

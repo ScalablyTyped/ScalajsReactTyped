@@ -1,53 +1,44 @@
 package typingsJapgolly.playerframework.PlayerFramework
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkState extends js.Object
-
+sealed trait NetworkState extends StObject
 @JSGlobal("PlayerFramework.NetworkState")
 @js.native
-object NetworkState extends js.Object {
-  /**
-  		* The player has not yet initialized any audio/video.
-  		**/
-  @js.native
-  sealed trait empty extends NetworkState
+object NetworkState extends StObject {
   
   /**
-  		* The player has active audio/video and has selected a resource, but is not using the network.
-  		**/
+    * The player has not yet initialized any audio/video.
+    **/
   @js.native
-  sealed trait idle extends NetworkState
+  sealed trait empty
+    extends StObject
+       with NetworkState
   
   /**
-  		* The player is downloading data.
-  		**/
+    * The player has active audio/video and has selected a resource, but is not using the network.
+    **/
   @js.native
-  sealed trait loading extends NetworkState
+  sealed trait idle
+    extends StObject
+       with NetworkState
   
   /**
-  		* The player has no audio/video source.
-  		**/
+    * The player is downloading data.
+    **/
   @js.native
-  sealed trait noSource extends NetworkState
+  sealed trait loading
+    extends StObject
+       with NetworkState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NetworkState with Double] = js.native
-  /* 0 */ @js.native
-  object empty extends TopLevel[empty with Double]
-  
-  /* 1 */ @js.native
-  object idle extends TopLevel[idle with Double]
-  
-  /* 2 */ @js.native
-  object loading extends TopLevel[loading with Double]
-  
-  /* 3 */ @js.native
-  object noSource extends TopLevel[noSource with Double]
-  
+  /**
+    * The player has no audio/video source.
+    **/
+  @js.native
+  sealed trait noSource
+    extends StObject
+       with NetworkState
 }
-

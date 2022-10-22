@@ -1,21 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookChartGridlinesFormat extends Entity {
+trait WorkbookChartGridlinesFormat
+  extends StObject
+     with Entity {
+  
   // Represents chart line formatting. Read-only.
-  var line: js.UndefOr[WorkbookChartLineFormat] = js.undefined
+  var line: js.UndefOr[NullableOption[WorkbookChartLineFormat]] = js.undefined
 }
-
 object WorkbookChartGridlinesFormat {
-  @scala.inline
-  def apply(id: String = null, line: WorkbookChartLineFormat = null): WorkbookChartGridlinesFormat = {
+  
+  inline def apply(): WorkbookChartGridlinesFormat = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartGridlinesFormat]
   }
+  
+  extension [Self <: WorkbookChartGridlinesFormat](x: Self) {
+    
+    inline def setLine(value: NullableOption[WorkbookChartLineFormat]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineNull: Self = StObject.set(x, "line", null)
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+  }
 }
-

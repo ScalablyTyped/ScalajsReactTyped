@@ -1,15 +1,27 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
+sealed trait ParseErrorLevel extends StObject
 @JSImport("@angular/compiler", "ParseErrorLevel")
 @js.native
-object ParseErrorLevel extends js.Object {
-  /* 1 */ val ERROR: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseErrorLevel.ERROR with Double = js.native
-  /* 0 */ val WARNING: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseErrorLevel.WARNING with Double = js.native
+object ParseErrorLevel extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.angularCompiler.srcParseUtilMod.ParseErrorLevel with Double] = js.native
+  def apply(value: Double): js.UndefOr[ParseErrorLevel & Double] = js.native
+  
+  @js.native
+  sealed trait ERROR
+    extends StObject
+       with ParseErrorLevel
+  /* 1 */ val ERROR: typingsJapgolly.angularCompiler.mod.ParseErrorLevel.ERROR & Double = js.native
+  
+  @js.native
+  sealed trait WARNING
+    extends StObject
+       with ParseErrorLevel
+  /* 0 */ val WARNING: typingsJapgolly.angularCompiler.mod.ParseErrorLevel.WARNING & Double = js.native
 }
-

@@ -1,21 +1,27 @@
 package typingsJapgolly.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UploadFileResponse extends js.Object {
+trait UploadFileResponse extends StObject {
+  
   var data: String
-   // 开发者服务器返回的数据
+  
+  // 开发者服务器返回的数据
   var statusCode: Double
 }
-
 object UploadFileResponse {
-  @scala.inline
-  def apply(data: String, statusCode: Double): UploadFileResponse = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
   
+  inline def apply(data: String, statusCode: Double): UploadFileResponse = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadFileResponse]
   }
+  
+  extension [Self <: UploadFileResponse](x: Self) {
+    
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+  }
 }
-

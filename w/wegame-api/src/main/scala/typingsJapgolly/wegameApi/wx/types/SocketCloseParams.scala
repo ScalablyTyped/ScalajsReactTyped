@@ -1,40 +1,55 @@
 package typingsJapgolly.wegameApi.wx.types
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SocketCloseParams extends js.Object {
+trait SocketCloseParams extends StObject {
+  
   /**
     * 一个数字值表示关闭连接的状态号，表示连接被关闭的原因。如果这个参数没有被指定，默认的取值是1000 （表示正常连接关闭）
     */
   var code: js.UndefOr[Double] = js.undefined
+  
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 一个可读的字符串，表示连接被关闭的原因。这个字符串必须是不长于123字节的UTF-8 文本（不是字符）
     */
   var reason: js.UndefOr[String] = js.undefined
+  
   var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
-
 object SocketCloseParams {
-  @scala.inline
-  def apply(
-    code: Int | Double = null,
-    complete: js.UndefOr[Callback] = js.undefined,
-    fail: js.UndefOr[Callback] = js.undefined,
-    reason: String = null,
-    success: js.UndefOr[Callback] = js.undefined
-  ): SocketCloseParams = {
+  
+  inline def apply(): SocketCloseParams = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    complete.foreach(p => __obj.updateDynamic("complete")(p.toJsFn))
-    fail.foreach(p => __obj.updateDynamic("fail")(p.toJsFn))
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    success.foreach(p => __obj.updateDynamic("success")(p.toJsFn))
     __obj.asInstanceOf[SocketCloseParams]
   }
+  
+  extension [Self <: SocketCloseParams](x: Self) {
+    
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setFail(value: Callback): Self = StObject.set(x, "fail", value.toJsFn)
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    
+    inline def setSuccess(value: Callback): Self = StObject.set(x, "success", value.toJsFn)
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

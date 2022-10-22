@@ -1,28 +1,37 @@
 package typingsJapgolly.ddTrace.mod.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
-trait Integration extends js.Object {
+trait Integration extends StObject {
+  
   /** Whether to enable the plugin.
     * @default true
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The service name to be used for this plugin.
     */
-  var service: js.UndefOr[String] = js.undefined
+  var service: js.UndefOr[String | Any] = js.undefined
 }
-
 object Integration {
-  @scala.inline
-  def apply(enabled: js.UndefOr[Boolean] = js.undefined, service: String = null): Integration = {
+  
+  inline def apply(): Integration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[Integration]
   }
+  
+  extension [Self <: Integration](x: Self) {
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setService(value: String | Any): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+  }
 }
-

@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Networking
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IHostNameStatics extends js.Object {
+trait IHostNameStatics extends StObject {
+  
   def compare(value1: String, value2: String): Double
 }
-
 object IHostNameStatics {
-  @scala.inline
-  def apply(compare: (String, String) => CallbackTo[Double]): IHostNameStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compare")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => compare(t0, t1).runNow()))
+  
+  inline def apply(compare: (String, String) => Double): IHostNameStatics = {
+    val __obj = js.Dynamic.literal(compare = js.Any.fromFunction2(compare))
     __obj.asInstanceOf[IHostNameStatics]
   }
+  
+  extension [Self <: IHostNameStatics](x: Self) {
+    
+    inline def setCompare(value: (String, String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+  }
 }
-

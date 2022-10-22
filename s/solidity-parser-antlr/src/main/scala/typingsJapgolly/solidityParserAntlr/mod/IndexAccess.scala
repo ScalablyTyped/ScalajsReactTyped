@@ -1,33 +1,36 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.solidityParserAntlr.mod.ASTNode because Already inherited */ trait IndexAccess
-  extends Expression
-     with BaseASTNode {
+trait IndexAccess
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with Expression {
+  
   var base: Expression
+  
   var index: Expression
+  
   @JSName("type")
   var type_IndexAccess: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess
 }
-
 object IndexAccess {
-  @scala.inline
-  def apply(
-    base: Expression,
-    index: Expression,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): IndexAccess = {
+  
+  inline def apply(base: Expression, index: Expression): IndexAccess = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IndexAccess")
     __obj.asInstanceOf[IndexAccess]
   }
+  
+  extension [Self <: IndexAccess](x: Self) {
+    
+    inline def setBase(value: Expression): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    
+    inline def setIndex(value: Expression): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.IndexAccess): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

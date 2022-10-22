@@ -10,35 +10,39 @@ import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.szabo
 import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.weeks
 import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.wei
 import typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.years
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NumberLiteral
-  extends PrimaryExpression
+  extends StObject
      with BaseASTNode
-     with AssemblyItem {
+     with AssemblyItem
+     with PrimaryExpression {
+  
   var number: String
+  
   var subdenomination: Null | wei | szabo | finney | ether | seconds | minutes | hours | days | weeks | years
+  
   @JSName("type")
   var type_NumberLiteral: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral
 }
-
 object NumberLiteral {
-  @scala.inline
-  def apply(
-    number: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null,
-    subdenomination: wei | szabo | finney | ether | seconds | minutes | hours | days | weeks | years = null
-  ): NumberLiteral = {
-    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (subdenomination != null) __obj.updateDynamic("subdenomination")(subdenomination.asInstanceOf[js.Any])
+  
+  inline def apply(number: String): NumberLiteral = {
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], subdenomination = null)
+    __obj.updateDynamic("type")("NumberLiteral")
     __obj.asInstanceOf[NumberLiteral]
   }
+  
+  extension [Self <: NumberLiteral](x: Self) {
+    
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    
+    inline def setSubdenomination(value: wei | szabo | finney | ether | seconds | minutes | hours | days | weeks | years): Self = StObject.set(x, "subdenomination", value.asInstanceOf[js.Any])
+    
+    inline def setSubdenominationNull: Self = StObject.set(x, "subdenomination", null)
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

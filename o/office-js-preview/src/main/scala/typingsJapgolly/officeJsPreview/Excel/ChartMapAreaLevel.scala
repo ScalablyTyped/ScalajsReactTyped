@@ -1,71 +1,90 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartMapAreaLevel extends js.Object
-
+sealed trait ChartMapAreaLevel extends StObject
 /**
-  *
   * Represents the mapping level of a chart series. This only applies to region map charts.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartMapAreaLevel")
 @js.native
-object ChartMapAreaLevel extends js.Object {
+object ChartMapAreaLevel extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait automatic extends ChartMapAreaLevel
+  sealed trait automatic
+    extends StObject
+       with ChartMapAreaLevel
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait city extends ChartMapAreaLevel
+  sealed trait city
+    extends StObject
+       with ChartMapAreaLevel
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait continent extends ChartMapAreaLevel
+  sealed trait continent
+    extends StObject
+       with ChartMapAreaLevel
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait country extends ChartMapAreaLevel
+  sealed trait country
+    extends StObject
+       with ChartMapAreaLevel
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait county extends ChartMapAreaLevel
+  sealed trait county
+    extends StObject
+       with ChartMapAreaLevel
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dataOnly extends ChartMapAreaLevel
+  sealed trait dataOnly
+    extends StObject
+       with ChartMapAreaLevel
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait state extends ChartMapAreaLevel
+  sealed trait state
+    extends StObject
+       with ChartMapAreaLevel
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait world extends ChartMapAreaLevel
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartMapAreaLevel with String] = js.native
-  /* "Automatic" */ @js.native
-  object automatic extends TopLevel[automatic with String]
-  
-  /* "City" */ @js.native
-  object city extends TopLevel[city with String]
-  
-  /* "Continent" */ @js.native
-  object continent extends TopLevel[continent with String]
-  
-  /* "Country" */ @js.native
-  object country extends TopLevel[country with String]
-  
-  /* "County" */ @js.native
-  object county extends TopLevel[county with String]
-  
-  /* "DataOnly" */ @js.native
-  object dataOnly extends TopLevel[dataOnly with String]
-  
-  /* "State" */ @js.native
-  object state extends TopLevel[state with String]
-  
-  /* "World" */ @js.native
-  object world extends TopLevel[world with String]
-  
+  sealed trait world
+    extends StObject
+       with ChartMapAreaLevel
 }
-

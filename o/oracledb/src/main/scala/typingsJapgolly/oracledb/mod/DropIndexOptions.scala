@@ -1,13 +1,14 @@
 package typingsJapgolly.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options which may be passed to SODA collection.dropIndex().
   */
-trait DropIndexOptions extends js.Object {
+trait DropIndexOptions extends StObject {
+  
   /**
     * Setting force to true forces dropping of a JSON Search index or Spatial index if the
     * underlying Oracle Database domain index does not permit normal dropping.
@@ -16,13 +17,17 @@ trait DropIndexOptions extends js.Object {
     */
   var force: js.UndefOr[Boolean] = js.undefined
 }
-
 object DropIndexOptions {
-  @scala.inline
-  def apply(force: js.UndefOr[Boolean] = js.undefined): DropIndexOptions = {
+  
+  inline def apply(): DropIndexOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropIndexOptions]
   }
+  
+  extension [Self <: DropIndexOptions](x: Self) {
+    
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+  }
 }
-

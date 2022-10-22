@@ -10,10 +10,10 @@ Single function that return the sha1sum. Installing this is just a little bit qu
 | ------------------ | :-------------: |
 | Full name          | shasum |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 88 |
-| # downloads        | 24950138 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5060069.666666667 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/dominictarr/shasum)

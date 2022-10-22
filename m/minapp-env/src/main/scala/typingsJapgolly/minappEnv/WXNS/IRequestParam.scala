@@ -1,43 +1,55 @@
 package typingsJapgolly.minappEnv.WXNS
 
-import japgolly.scalajs.react.Callback
 import typingsJapgolly.minappEnv.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IRequestParam extends IAPIParam[IRequestSuccessResult] {
+trait IRequestParam
+  extends StObject
+     with IAPIParam[IRequestSuccessResult] {
+  
   var data: js.UndefOr[AnyObject | String | ArrayBuffer] = js.undefined
+  
   var dataType: js.UndefOr[String] = js.undefined
+  
   var header: js.UndefOr[AnyObject] = js.undefined
+  
   var method: js.UndefOr[String] = js.undefined
+  
   var responseType: js.UndefOr[String] = js.undefined
+  
   var url: String
 }
-
 object IRequestParam {
-  @scala.inline
-  def apply(
-    url: String,
-    complete: /* val */ IRequestSuccessResult | IAPIError => Callback = null,
-    data: AnyObject | String | ArrayBuffer = null,
-    dataType: String = null,
-    fail: /* err */ IAPIError => Callback = null,
-    header: AnyObject = null,
-    method: String = null,
-    responseType: String = null,
-    success: IRequestSuccessResult => Callback = null
-  ): IRequestParam = {
+  
+  inline def apply(url: String): IRequestParam = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* val */ typingsJapgolly.minappEnv.WXNS.IRequestSuccessResult | typingsJapgolly.minappEnv.WXNS.IAPIError) => complete(t0).runNow()))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* err */ typingsJapgolly.minappEnv.WXNS.IAPIError) => fail(t0).runNow()))
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: typingsJapgolly.minappEnv.WXNS.IRequestSuccessResult) => success(t0).runNow()))
     __obj.asInstanceOf[IRequestParam]
   }
+  
+  extension [Self <: IRequestParam](x: Self) {
+    
+    inline def setData(value: AnyObject | String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setHeader(value: AnyObject): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

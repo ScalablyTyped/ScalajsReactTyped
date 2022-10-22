@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.OverflowProperty
+import typingsJapgolly.csstype.mod.Property.Overflow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OverflowProps extends js.Object {
-  val overflow: js.UndefOr[ResponsiveValue[OverflowProperty]] = js.undefined
+trait OverflowProps extends StObject {
+  
+  val overflow: js.UndefOr[ResponsiveValue[Overflow]] = js.undefined
 }
-
 object OverflowProps {
-  @scala.inline
-  def apply(overflow: ResponsiveValue[OverflowProperty] = null): OverflowProps = {
+  
+  inline def apply(): OverflowProps = {
     val __obj = js.Dynamic.literal()
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverflowProps]
   }
+  
+  extension [Self <: OverflowProps](x: Self) {
+    
+    inline def setOverflow(value: ResponsiveValue[Overflow]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    
+    inline def setOverflowVarargs(value: Overflow*): Self = StObject.set(x, "overflow", js.Array(value*))
+  }
 }
-

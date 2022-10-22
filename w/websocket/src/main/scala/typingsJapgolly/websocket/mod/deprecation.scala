@@ -1,15 +1,19 @@
 package typingsJapgolly.websocket.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("websocket", "deprecation")
-@js.native
-object deprecation extends js.Object {
-  var deprecationWarningMap: StringDictionary[String] = js.native
-  var disableWarnings: Boolean = js.native
-  def warn(deprecationName: String): Unit = js.native
+object deprecation {
+  
+  @JSImport("websocket", "deprecation")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("websocket", "deprecation.disableWarnings")
+  @js.native
+  def disableWarnings: Boolean = js.native
+  inline def disableWarnings_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableWarnings")(x.asInstanceOf[js.Any])
+  
+  inline def warn(deprecationName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(deprecationName.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

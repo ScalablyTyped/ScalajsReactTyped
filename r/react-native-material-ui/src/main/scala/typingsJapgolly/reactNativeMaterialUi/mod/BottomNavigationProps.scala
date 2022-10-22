@@ -1,31 +1,47 @@
 package typingsJapgolly.reactNativeMaterialUi.mod
 
-import japgolly.scalajs.react.raw.React.Element
-import typingsJapgolly.reactNativeMaterialUi.AnonContainerViewStyle
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactNativeMaterialUi.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BottomNavigationProps extends js.Object {
+trait BottomNavigationProps extends StObject {
+  
   var active: js.UndefOr[String] = js.undefined
+  
   var children: Element | js.Array[Element]
+  
   var hidden: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[AnonContainerViewStyle] = js.undefined
+  
+  var style: js.UndefOr[`0`] = js.undefined
 }
-
 object BottomNavigationProps {
-  @scala.inline
-  def apply(
-    children: Element | js.Array[Element],
-    active: String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    style: AnonContainerViewStyle = null
-  ): BottomNavigationProps = {
+  
+  inline def apply(children: Element | js.Array[Element]): BottomNavigationProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[BottomNavigationProps]
   }
+  
+  extension [Self <: BottomNavigationProps](x: Self) {
+    
+    inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    
+    inline def setChildren(value: Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setStyle(value: `0`): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

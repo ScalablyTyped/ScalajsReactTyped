@@ -10,10 +10,10 @@ Passport middleware for Koa
 | ------------------ | :-------------: |
 | Full name          | koa-passport |
 | Keywords           | koa, passport, auth, authentication, authorization |
-| # releases         | 5 |
-| # dependents       | 100 |
-| # downloads        | 833039 |
-| # stars            | 15 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 583045.6666666666 |
+| # stars            | 768.0 |
 
 ## Links
 - [Homepage](https://github.com/rkusa/koa-passport)

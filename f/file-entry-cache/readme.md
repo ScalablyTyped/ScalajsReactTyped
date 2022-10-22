@@ -10,10 +10,10 @@ Super simple cache for file metadata, useful for process that work o a given ser
 | ------------------ | :-------------: |
 | Full name          | file-entry-cache |
 | Keywords           | file cache, task cache files, file cache, key par, key value, cache |
-| # releases         | 4 |
-| # dependents       | 56 |
-| # downloads        | 360415140 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 9.644080466666667E7 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/royriojas/file-entry-cache#readme)

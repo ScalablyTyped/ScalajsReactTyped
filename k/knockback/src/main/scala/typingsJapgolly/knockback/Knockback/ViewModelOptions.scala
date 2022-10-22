@@ -1,46 +1,59 @@
 package typingsJapgolly.knockback.Knockback
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ViewModelOptions extends OptionsBase {
-                // the path to the value (used to create related observables from the factory).
-  var factories: js.UndefOr[js.Any] = js.undefined
+trait ViewModelOptions
+  extends StObject
+     with OptionsBase {
+  
+  // the path to the value (used to create related observables from the factory).
+  var factories: js.UndefOr[Any] = js.undefined
+  
+  // restricts the keys used on a model. Useful for reducing the number of kb.Observables created from a limited set of Backbone.Model attributes
+  def `if`(objOrArray: Any): Any
+  
   var internals: js.UndefOr[js.Array[String]] = js.undefined
-          // an array of atttributes that will have kb.Observables created even if they do not exist on the Backbone.Model. Useful for binding Views that require specific observables to exist
+  
+  // an array of atttributes that will have kb.Observables created even if they do not exist on the Backbone.Model. Useful for binding Views that require specific observables to exist
   var keys: js.UndefOr[js.Array[String]] = js.undefined
-         // an array of atttributes that should be scoped with an underscore, eg. name -> _name
+  
+  // an array of atttributes that should be scoped with an underscore, eg. name -> _name
   var requires: js.UndefOr[js.Array[String]] = js.undefined
-              // restricts the keys used on a model. Useful for reducing the number of kb.Observables created from a limited set of Backbone.Model attributes
-  def `if`(objOrArray: js.Any): js.Any
 }
-
 object ViewModelOptions {
-  @scala.inline
-  def apply(
-    `if`: js.Any => CallbackTo[js.Any],
-    factories: js.Any = null,
-    factory: Factory = null,
-    internals: js.Array[String] = null,
-    keys: js.Array[String] = null,
-    options: js.Any = null,
-    path: String = null,
-    requires: js.Array[String] = null,
-    store: Store = null
-  ): ViewModelOptions = {
+  
+  inline def apply(`if`: Any => Any): ViewModelOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("if")(js.Any.fromFunction1((t0: js.Any) => `if`(t0).runNow()))
-    if (factories != null) __obj.updateDynamic("factories")(factories.asInstanceOf[js.Any])
-    if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
-    if (internals != null) __obj.updateDynamic("internals")(internals.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    __obj.updateDynamic("if")(js.Any.fromFunction1(`if`))
     __obj.asInstanceOf[ViewModelOptions]
   }
+  
+  extension [Self <: ViewModelOptions](x: Self) {
+    
+    inline def setFactories(value: Any): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
+    
+    inline def setFactoriesUndefined: Self = StObject.set(x, "factories", js.undefined)
+    
+    inline def setIf(value: Any => Any): Self = StObject.set(x, "if", js.Any.fromFunction1(value))
+    
+    inline def setInternals(value: js.Array[String]): Self = StObject.set(x, "internals", value.asInstanceOf[js.Any])
+    
+    inline def setInternalsUndefined: Self = StObject.set(x, "internals", js.undefined)
+    
+    inline def setInternalsVarargs(value: String*): Self = StObject.set(x, "internals", js.Array(value*))
+    
+    inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
+    
+    inline def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+    
+    inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
+    
+    inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value*))
+  }
 }
-

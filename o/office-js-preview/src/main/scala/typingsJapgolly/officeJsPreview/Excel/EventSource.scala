@@ -1,42 +1,36 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EventSource extends js.Object
-
+sealed trait EventSource extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.EventSource")
 @js.native
-object EventSource extends js.Object {
-  /**
-    *
-    * Local means event comes from local user session.
-    *
-    */
-  @js.native
-  sealed trait local extends EventSource
+object EventSource extends StObject {
   
   /**
-    *
-    * Remote means event comes from remote user session.
-    *
+    * Local means the event comes from a local user session.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait remote extends EventSource
+  sealed trait local
+    extends StObject
+       with EventSource
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[EventSource with String] = js.native
-  /* "Local" */ @js.native
-  object local extends TopLevel[local with String]
-  
-  /* "Remote" */ @js.native
-  object remote extends TopLevel[remote with String]
-  
+  /**
+    * Remote means the event comes from a remote user session.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait remote
+    extends StObject
+       with EventSource
 }
-

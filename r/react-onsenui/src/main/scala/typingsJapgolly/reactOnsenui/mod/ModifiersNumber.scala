@@ -1,21 +1,30 @@
 package typingsJapgolly.reactOnsenui.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModifiersNumber extends js.Object {
+trait ModifiersNumber extends StObject {
+  
   var default: js.UndefOr[Double] = js.undefined
+  
   var material: js.UndefOr[Double] = js.undefined
 }
-
 object ModifiersNumber {
-  @scala.inline
-  def apply(default: Int | Double = null, material: Int | Double = null): ModifiersNumber = {
+  
+  inline def apply(): ModifiersNumber = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifiersNumber]
   }
+  
+  extension [Self <: ModifiersNumber](x: Self) {
+    
+    inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setMaterial(value: Double): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+  }
 }
-

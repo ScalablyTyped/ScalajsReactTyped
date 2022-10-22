@@ -1,22 +1,33 @@
 package typingsJapgolly.std
 
 import typingsJapgolly.std.stdBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IteratorYieldResult[TYield]
-  extends IteratorResult[TYield, js.Any] {
+  extends StObject
+     with IteratorResult[TYield, Any] {
+  
+  /* standard es2015.iterable */
   var done: js.UndefOr[`false`] = js.undefined
+  
+  /* standard es2015.iterable */
   var value: TYield
 }
-
 object IteratorYieldResult {
-  @scala.inline
-  def apply[TYield](value: TYield, done: `false` = null): IteratorYieldResult[TYield] = {
+  
+  inline def apply[TYield](value: TYield): IteratorYieldResult[TYield] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (done != null) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
     __obj.asInstanceOf[IteratorYieldResult[TYield]]
   }
+  
+  extension [Self <: IteratorYieldResult[?], TYield](x: Self & IteratorYieldResult[TYield]) {
+    
+    inline def setDone(value: `false`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    
+    inline def setValue(value: TYield): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

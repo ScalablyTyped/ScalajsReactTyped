@@ -1,19 +1,26 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookRangeReference extends js.Object {
-  var address: js.UndefOr[String] = js.undefined
+trait WorkbookRangeReference extends StObject {
+  
+  var address: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object WorkbookRangeReference {
-  @scala.inline
-  def apply(address: String = null): WorkbookRangeReference = {
+  
+  inline def apply(): WorkbookRangeReference = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookRangeReference]
   }
+  
+  extension [Self <: WorkbookRangeReference](x: Self) {
+    
+    inline def setAddress(value: NullableOption[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressNull: Self = StObject.set(x, "address", null)
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+  }
 }
-

@@ -1,27 +1,36 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapContextGetRegionResult extends js.Object {
+trait MapContextGetRegionResult extends StObject {
+  
   /**
     * 东北角的经纬度
     */
   var northeast: js.UndefOr[LocationObject] = js.undefined
+  
   /**
     * 西南角的经纬度
     */
   var southwest: js.UndefOr[LocationObject] = js.undefined
 }
-
 object MapContextGetRegionResult {
-  @scala.inline
-  def apply(northeast: LocationObject = null, southwest: LocationObject = null): MapContextGetRegionResult = {
+  
+  inline def apply(): MapContextGetRegionResult = {
     val __obj = js.Dynamic.literal()
-    if (northeast != null) __obj.updateDynamic("northeast")(northeast.asInstanceOf[js.Any])
-    if (southwest != null) __obj.updateDynamic("southwest")(southwest.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapContextGetRegionResult]
   }
+  
+  extension [Self <: MapContextGetRegionResult](x: Self) {
+    
+    inline def setNortheast(value: LocationObject): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
+    
+    inline def setNortheastUndefined: Self = StObject.set(x, "northeast", js.undefined)
+    
+    inline def setSouthwest(value: LocationObject): Self = StObject.set(x, "southwest", value.asInstanceOf[js.Any])
+    
+    inline def setSouthwestUndefined: Self = StObject.set(x, "southwest", js.undefined)
+  }
 }
-

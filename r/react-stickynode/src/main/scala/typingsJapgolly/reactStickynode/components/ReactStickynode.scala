@@ -2,57 +2,66 @@ package typingsJapgolly.reactStickynode.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactStickynode.mod.Props
 import typingsJapgolly.reactStickynode.mod.Status
 import typingsJapgolly.reactStickynode.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactStickynode {
-  def apply(
-    activeClass: String = null,
-    bottomBoundary: Double | String = null,
-    enableTransforms: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    innerZ: Double | String = null,
-    onStateChange: /* status */ Status => Callback = null,
-    releasedClass: String = null,
-    shouldFreeze: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    top: Double | String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: Node | (js.Function1[/* status */ Status, Node]) = null
-  ): UnmountedWithRoot[Props, ^, Unit, Props] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
-    if (bottomBoundary != null) __obj.updateDynamic("bottomBoundary")(bottomBoundary.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTransforms)) __obj.updateDynamic("enableTransforms")(enableTransforms.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (innerZ != null) __obj.updateDynamic("innerZ")(innerZ.asInstanceOf[js.Any])
-    if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1((t0: /* status */ typingsJapgolly.reactStickynode.mod.Status) => onStateChange(t0).runNow()))
-    if (releasedClass != null) __obj.updateDynamic("releasedClass")(releasedClass.asInstanceOf[js.Any])
-    shouldFreeze.foreach(p => __obj.updateDynamic("shouldFreeze")(p.toJsFn))
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactStickynode.mod.Props, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactStickynode.mod.^](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactStickynode.mod.Props])
-  }
   @JSImport("react-stickynode", JSImport.Namespace)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[^] {
+    
+    inline def activeClass(value: String): this.type = set("activeClass", value.asInstanceOf[js.Any])
+    
+    inline def bottomBoundary(value: Double | String): this.type = set("bottomBoundary", value.asInstanceOf[js.Any])
+    
+    inline def children(value: Node | (js.Function1[/* status */ Status, Node])): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenFunction1(value: /* status */ Status => Node): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def childrenNull: this.type = set("children", null)
+    
+    inline def childrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def enableTransforms(value: Boolean): this.type = set("enableTransforms", value.asInstanceOf[js.Any])
+    
+    inline def enabled(value: Boolean): this.type = set("enabled", value.asInstanceOf[js.Any])
+    
+    inline def innerActiveClass(value: String): this.type = set("innerActiveClass", value.asInstanceOf[js.Any])
+    
+    inline def innerClass(value: String): this.type = set("innerClass", value.asInstanceOf[js.Any])
+    
+    inline def innerZ(value: Double | String): this.type = set("innerZ", value.asInstanceOf[js.Any])
+    
+    inline def onStateChange(value: /* status */ Status => Callback): this.type = set("onStateChange", js.Any.fromFunction1((t0: /* status */ Status) => value(t0).runNow()))
+    
+    inline def releasedClass(value: String): this.type = set("releasedClass", value.asInstanceOf[js.Any])
+    
+    inline def shouldFreeze(value: CallbackTo[Boolean]): this.type = set("shouldFreeze", value.toJsFn)
+    
+    inline def top(value: Double | String): this.type = set("top", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactStickynode.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

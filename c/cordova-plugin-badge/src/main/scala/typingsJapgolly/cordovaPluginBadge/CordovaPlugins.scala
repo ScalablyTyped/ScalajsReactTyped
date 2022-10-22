@@ -1,19 +1,23 @@
 package typingsJapgolly.cordovaPluginBadge
 
+import typingsJapgolly.cordovaPluginBadge.anon.Badge
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CordovaPlugins extends js.Object {
-  var notification: AnonBadge
-}
-
-object CordovaPlugins {
-  @scala.inline
-  def apply(notification: AnonBadge): CordovaPlugins = {
-    val __obj = js.Dynamic.literal(notification = notification.asInstanceOf[js.Any])
+trait CordovaPlugins extends StObject {
   
+  var notification: Badge
+}
+object CordovaPlugins {
+  
+  inline def apply(notification: Badge): CordovaPlugins = {
+    val __obj = js.Dynamic.literal(notification = notification.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPlugins]
   }
+  
+  extension [Self <: CordovaPlugins](x: Self) {
+    
+    inline def setNotification(value: Badge): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+  }
 }
-

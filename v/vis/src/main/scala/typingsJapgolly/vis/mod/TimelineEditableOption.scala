@@ -1,33 +1,48 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimelineEditableOption extends js.Object {
+trait TimelineEditableOption extends StObject {
+  
   var add: js.UndefOr[Boolean] = js.undefined
+  
   var overrideItems: js.UndefOr[Boolean] = js.undefined
+  
   var remove: js.UndefOr[Boolean] = js.undefined
+  
   var updateGroup: js.UndefOr[Boolean] = js.undefined
+  
   var updateTime: js.UndefOr[Boolean] = js.undefined
 }
-
 object TimelineEditableOption {
-  @scala.inline
-  def apply(
-    add: js.UndefOr[Boolean] = js.undefined,
-    overrideItems: js.UndefOr[Boolean] = js.undefined,
-    remove: js.UndefOr[Boolean] = js.undefined,
-    updateGroup: js.UndefOr[Boolean] = js.undefined,
-    updateTime: js.UndefOr[Boolean] = js.undefined
-  ): TimelineEditableOption = {
+  
+  inline def apply(): TimelineEditableOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideItems)) __obj.updateDynamic("overrideItems")(overrideItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateGroup)) __obj.updateDynamic("updateGroup")(updateGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateTime)) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineEditableOption]
   }
+  
+  extension [Self <: TimelineEditableOption](x: Self) {
+    
+    inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    
+    inline def setOverrideItems(value: Boolean): Self = StObject.set(x, "overrideItems", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideItemsUndefined: Self = StObject.set(x, "overrideItems", js.undefined)
+    
+    inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    
+    inline def setUpdateGroup(value: Boolean): Self = StObject.set(x, "updateGroup", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateGroupUndefined: Self = StObject.set(x, "updateGroup", js.undefined)
+    
+    inline def setUpdateTime(value: Boolean): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+  }
 }
-

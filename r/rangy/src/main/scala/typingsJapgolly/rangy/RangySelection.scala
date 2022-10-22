@@ -1,33 +1,51 @@
 package typingsJapgolly.rangy
 
-import org.scalajs.dom.raw.Node
+import org.scalajs.dom.Node
 import typingsJapgolly.std.Selection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RangySelection extends Selection {
-  var nativeSelection: org.scalajs.dom.raw.Selection = js.native
-  def detach(): js.Any = js.native
+trait RangySelection
+  extends StObject
+     with Selection {
+  
+  def detach(): Any = js.native
+  
   def getAllRanges(): js.Array[RangyRange] = js.native
-  def getBookmark(containerNode: Node): js.Any = js.native
-  def getNativeTextRange(): js.Any = js.native
+  
+  def getBookmark(containerNode: Node): Any = js.native
+  
+  def getNativeTextRange(): Any = js.native
+  
   def inspect(): String = js.native
+  
   def isBackwards(): Boolean = js.native
+  
   def move(units: String, count: Double): Double = js.native
-  def move(units: String, count: Double, opts: js.Any): Double = js.native
-  def moveToBookmark(bookmark: js.Object): js.Any = js.native
-  def refresh(): js.Any = js.native
-  def refresh(checkForChanges: Boolean): js.Any = js.native
-  def restoreCharacterRanges(containerNode: Node, characterRanges: js.Object): js.Any = js.native
-  def restoreCharacterRanges(containerNode: Node, characterRanges: js.Object, opts: js.Any): js.Any = js.native
-  def restoreRanges(saved: js.Object): js.Any = js.native
+  def move(units: String, count: Double, opts: Any): Double = js.native
+  
+  def moveToBookmark(bookmark: js.Object): Any = js.native
+  
+  var nativeSelection: org.scalajs.dom.Selection = js.native
+  
+  def refresh(): Any = js.native
+  def refresh(checkForChanges: Boolean): Any = js.native
+  
+  def restoreCharacterRanges(containerNode: Node, characterRanges: js.Object): Any = js.native
+  def restoreCharacterRanges(containerNode: Node, characterRanges: js.Object, opts: Any): Any = js.native
+  
+  def restoreRanges(saved: js.Object): Any = js.native
+  
   def saveCharacterRanges(containerNode: Node): js.Object = js.native
-  def saveCharacterRanges(containerNode: Node, opts: js.Any): js.Object = js.native
+  def saveCharacterRanges(containerNode: Node, opts: Any): js.Object = js.native
+  
   def saveRanges(): js.Object = js.native
-  def setRanges(ranges: js.Array[RangyRange]): js.Any = js.native
-  def setSingleRange(range: RangyRange): js.Any = js.native
+  
+  def setRanges(ranges: js.Array[RangyRange]): Any = js.native
+  
+  def setSingleRange(range: RangyRange): Any = js.native
+  
   def toHtml(): String = js.native
 }
-

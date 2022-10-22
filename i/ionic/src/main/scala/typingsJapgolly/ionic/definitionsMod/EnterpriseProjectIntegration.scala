@@ -1,37 +1,52 @@
 package typingsJapgolly.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EnterpriseProjectIntegration extends ProjectIntegration {
+trait EnterpriseProjectIntegration
+  extends StObject
+     with ProjectIntegration {
+  
   var appId: js.UndefOr[String] = js.undefined
+  
   var keyId: js.UndefOr[Double] = js.undefined
+  
   var orgId: js.UndefOr[String] = js.undefined
+  
   var productKey: js.UndefOr[String] = js.undefined
+  
   var registries: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object EnterpriseProjectIntegration {
-  @scala.inline
-  def apply(
-    appId: String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    keyId: Int | Double = null,
-    orgId: String = null,
-    productKey: String = null,
-    registries: js.Array[String] = null,
-    root: String = null
-  ): EnterpriseProjectIntegration = {
+  
+  inline def apply(): EnterpriseProjectIntegration = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
-    if (orgId != null) __obj.updateDynamic("orgId")(orgId.asInstanceOf[js.Any])
-    if (productKey != null) __obj.updateDynamic("productKey")(productKey.asInstanceOf[js.Any])
-    if (registries != null) __obj.updateDynamic("registries")(registries.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseProjectIntegration]
   }
+  
+  extension [Self <: EnterpriseProjectIntegration](x: Self) {
+    
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    
+    inline def setKeyId(value: Double): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    
+    inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+    
+    inline def setOrgId(value: String): Self = StObject.set(x, "orgId", value.asInstanceOf[js.Any])
+    
+    inline def setOrgIdUndefined: Self = StObject.set(x, "orgId", js.undefined)
+    
+    inline def setProductKey(value: String): Self = StObject.set(x, "productKey", value.asInstanceOf[js.Any])
+    
+    inline def setProductKeyUndefined: Self = StObject.set(x, "productKey", js.undefined)
+    
+    inline def setRegistries(value: js.Array[String]): Self = StObject.set(x, "registries", value.asInstanceOf[js.Any])
+    
+    inline def setRegistriesUndefined: Self = StObject.set(x, "registries", js.undefined)
+    
+    inline def setRegistriesVarargs(value: String*): Self = StObject.set(x, "registries", js.Array(value*))
+  }
 }
-

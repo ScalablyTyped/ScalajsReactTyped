@@ -1,54 +1,70 @@
 package typingsJapgolly.facebookJsSdk.facebook
 
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.async
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.iframe
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.page
 import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.pay
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.popup
 import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.purchaseitem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PayDialogParams extends DialogParams {
+trait PayDialogParams
+  extends StObject
+     with DialogParams {
+  
   var action: purchaseitem
+  
   var method: pay
+  
   var pricepoint_id: js.UndefOr[String] = js.undefined
+  
   var product: String
+  
   var quantity: js.UndefOr[Double] = js.undefined
+  
   var quantity_max: js.UndefOr[Double] = js.undefined
+  
   var quantity_min: js.UndefOr[Double] = js.undefined
+  
   var request_id: js.UndefOr[String] = js.undefined
+  
   var test_currency: js.UndefOr[String] = js.undefined
 }
-
 object PayDialogParams {
-  @scala.inline
-  def apply(
-    action: purchaseitem,
-    method: pay,
-    product: String,
-    app_id: String = null,
-    display: page | iframe | async | popup = null,
-    pricepoint_id: String = null,
-    quantity: Int | Double = null,
-    quantity_max: Int | Double = null,
-    quantity_min: Int | Double = null,
-    redirect_uri: String = null,
-    request_id: String = null,
-    test_currency: String = null
-  ): PayDialogParams = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any])
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (pricepoint_id != null) __obj.updateDynamic("pricepoint_id")(pricepoint_id.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (quantity_max != null) __obj.updateDynamic("quantity_max")(quantity_max.asInstanceOf[js.Any])
-    if (quantity_min != null) __obj.updateDynamic("quantity_min")(quantity_min.asInstanceOf[js.Any])
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
-    if (request_id != null) __obj.updateDynamic("request_id")(request_id.asInstanceOf[js.Any])
-    if (test_currency != null) __obj.updateDynamic("test_currency")(test_currency.asInstanceOf[js.Any])
+  
+  inline def apply(product: String): PayDialogParams = {
+    val __obj = js.Dynamic.literal(action = "purchaseitem", method = "pay", product = product.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayDialogParams]
   }
+  
+  extension [Self <: PayDialogParams](x: Self) {
+    
+    inline def setAction(value: purchaseitem): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setMethod(value: pay): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setPricepoint_id(value: String): Self = StObject.set(x, "pricepoint_id", value.asInstanceOf[js.Any])
+    
+    inline def setPricepoint_idUndefined: Self = StObject.set(x, "pricepoint_id", js.undefined)
+    
+    inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    
+    inline def setQuantity_max(value: Double): Self = StObject.set(x, "quantity_max", value.asInstanceOf[js.Any])
+    
+    inline def setQuantity_maxUndefined: Self = StObject.set(x, "quantity_max", js.undefined)
+    
+    inline def setQuantity_min(value: Double): Self = StObject.set(x, "quantity_min", value.asInstanceOf[js.Any])
+    
+    inline def setQuantity_minUndefined: Self = StObject.set(x, "quantity_min", js.undefined)
+    
+    inline def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
+    
+    inline def setRequest_idUndefined: Self = StObject.set(x, "request_id", js.undefined)
+    
+    inline def setTest_currency(value: String): Self = StObject.set(x, "test_currency", value.asInstanceOf[js.Any])
+    
+    inline def setTest_currencyUndefined: Self = StObject.set(x, "test_currency", js.undefined)
+  }
 }
-

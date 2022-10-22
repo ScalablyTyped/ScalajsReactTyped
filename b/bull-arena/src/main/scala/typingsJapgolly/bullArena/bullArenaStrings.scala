@@ -1,24 +1,24 @@
 package typingsJapgolly.bullArena
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bullArenaStrings {
-  @js.native
-  sealed trait bee extends js.Object
   
   @js.native
-  sealed trait bq extends js.Object
+  sealed trait bee extends StObject
+  inline def bee: bee = "bee".asInstanceOf[bee]
   
   @js.native
-  sealed trait bull extends js.Object
+  sealed trait bq extends StObject
+  inline def bq: bq = "bq".asInstanceOf[bq]
   
-  @scala.inline
-  def bee: bee = "bee".asInstanceOf[bee]
-  @scala.inline
-  def bq: bq = "bq".asInstanceOf[bq]
-  @scala.inline
-  def bull: bull = "bull".asInstanceOf[bull]
+  @js.native
+  sealed trait bull extends StObject
+  inline def bull: bull = "bull".asInstanceOf[bull]
+  
+  @js.native
+  sealed trait bullmq extends StObject
+  inline def bullmq: bullmq = "bullmq".asInstanceOf[bullmq]
 }
-

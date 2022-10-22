@@ -1,51 +1,89 @@
 package typingsJapgolly.blueprintjsTimezone
 
+import typingsJapgolly.blueprintjsTimezone.anon.PartialTimezonePickerProp
 import typingsJapgolly.blueprintjsTimezone.blueprintjsTimezoneStrings.abbreviation
 import typingsJapgolly.blueprintjsTimezone.blueprintjsTimezoneStrings.composite
 import typingsJapgolly.blueprintjsTimezone.blueprintjsTimezoneStrings.name
 import typingsJapgolly.blueprintjsTimezone.blueprintjsTimezoneStrings.offset
-import typingsJapgolly.blueprintjsTimezone.timezoneMetadataMod.ITimezoneMetadata
-import typingsJapgolly.blueprintjsTimezone.timezonePickerMod.ITimezonePickerProps
+import typingsJapgolly.blueprintjsTimezone.libEsmComponentsTimezonePickerTimezoneMetadataMod.ITimezoneMetadata
+import typingsJapgolly.blueprintjsTimezone.libEsmComponentsTimezonePickerTimezonePickerMod.TimezonePickerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/timezone", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class TimezonePicker protected ()
-    extends typingsJapgolly.blueprintjsTimezone.componentsMod.TimezonePicker {
-    def this(props: ITimezonePickerProps) = this()
-    def this(props: ITimezonePickerProps, context: js.Any) = this()
-  }
+object mod {
   
-  def getTimezoneMetadata(timezone: String): ITimezoneMetadata = js.native
-  def getTimezoneMetadata(timezone: String, date: js.Date): ITimezoneMetadata = js.native
+  @JSImport("@blueprintjs/timezone", JSImport.Namespace)
   @js.native
-  object Classes extends js.Object {
+  val ^ : js.Any = js.native
+  
+  object Classes {
+    
+    @JSImport("@blueprintjs/timezone", "Classes.TIMEZONE_PICKER")
+    @js.native
     val TIMEZONE_PICKER: String = js.native
+    
+    @JSImport("@blueprintjs/timezone", "Classes.TIMEZONE_PICKER_POPOVER")
+    @js.native
     val TIMEZONE_PICKER_POPOVER: String = js.native
   }
   
-  @js.native
-  object TimezoneDisplayFormat extends js.Object {
+  object TimezoneDisplayFormat {
+    
+    @JSImport("@blueprintjs/timezone", "TimezoneDisplayFormat")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /** Abbreviation format: `"HST"` */
-    var ABBREVIATION: abbreviation = js.native
+    @JSImport("@blueprintjs/timezone", "TimezoneDisplayFormat.ABBREVIATION")
+    @js.native
+    def ABBREVIATION: abbreviation = js.native
+    inline def ABBREVIATION_=(x: abbreviation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABBREVIATION")(x.asInstanceOf[js.Any])
+    
     /** Composite format: `"Pacific/Honolulu (HST) -10:00"` */
-    var COMPOSITE: composite = js.native
+    @JSImport("@blueprintjs/timezone", "TimezoneDisplayFormat.COMPOSITE")
+    @js.native
+    def COMPOSITE: composite = js.native
+    inline def COMPOSITE_=(x: composite): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPOSITE")(x.asInstanceOf[js.Any])
+    
     /** Name format: `"Pacific/Honolulu"` */
-    var NAME: name = js.native
+    @JSImport("@blueprintjs/timezone", "TimezoneDisplayFormat.NAME")
+    @js.native
+    def NAME: name = js.native
+    inline def NAME_=(x: name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
+    
     /** Offset format: `"-10:00"` */
-    var OFFSET: offset = js.native
+    @JSImport("@blueprintjs/timezone", "TimezoneDisplayFormat.OFFSET")
+    @js.native
+    def OFFSET: offset = js.native
+    inline def OFFSET_=(x: offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFFSET")(x.asInstanceOf[js.Any])
   }
   
-  /* static members */
+  @JSImport("@blueprintjs/timezone", "TimezonePicker")
   @js.native
-  object TimezonePicker extends js.Object {
-    var defaultProps: PartialITimezonePickerPro = js.native
-    var displayName: String = js.native
+  open class TimezonePicker protected ()
+    extends typingsJapgolly.blueprintjsTimezone.libEsmComponentsMod.TimezonePicker {
+    def this(props: TimezonePickerProps) = this()
+    def this(props: TimezonePickerProps, context: Any) = this()
+  }
+  /* static members */
+  object TimezonePicker {
+    
+    @JSImport("@blueprintjs/timezone", "TimezonePicker")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@blueprintjs/timezone", "TimezonePicker.defaultProps")
+    @js.native
+    def defaultProps: PartialTimezonePickerProp = js.native
+    inline def defaultProps_=(x: PartialTimezonePickerProp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/timezone", "TimezonePicker.displayName")
+    @js.native
+    def displayName: String = js.native
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
+  inline def getTimezoneMetadata(timezone: String): ITimezoneMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimezoneMetadata")(timezone.asInstanceOf[js.Any]).asInstanceOf[ITimezoneMetadata]
+  inline def getTimezoneMetadata(timezone: String, date: js.Date): ITimezoneMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimezoneMetadata")(timezone.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[ITimezoneMetadata]
 }
-

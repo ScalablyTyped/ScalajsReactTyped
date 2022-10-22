@@ -1,40 +1,45 @@
 package typingsJapgolly.pluralsCldr
 
 import typingsJapgolly.pluralsCldr.mod.Form
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluralsCldrStrings {
-  @js.native
-  sealed trait few extends Form
   
   @js.native
-  sealed trait many extends Form
+  sealed trait few
+    extends StObject
+       with Form
+  inline def few: few = "few".asInstanceOf[few]
   
   @js.native
-  sealed trait one extends Form
+  sealed trait many
+    extends StObject
+       with Form
+  inline def many: many = "many".asInstanceOf[many]
   
   @js.native
-  sealed trait other extends Form
+  sealed trait one
+    extends StObject
+       with Form
+  inline def one: one = "one".asInstanceOf[one]
   
   @js.native
-  sealed trait two extends Form
+  sealed trait other
+    extends StObject
+       with Form
+  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait zero extends Form
+  sealed trait two
+    extends StObject
+       with Form
+  inline def two: two = "two".asInstanceOf[two]
   
-  @scala.inline
-  def few: few = "few".asInstanceOf[few]
-  @scala.inline
-  def many: many = "many".asInstanceOf[many]
-  @scala.inline
-  def one: one = "one".asInstanceOf[one]
-  @scala.inline
-  def other: other = "other".asInstanceOf[other]
-  @scala.inline
-  def two: two = "two".asInstanceOf[two]
-  @scala.inline
-  def zero: zero = "zero".asInstanceOf[zero]
+  @js.native
+  sealed trait zero
+    extends StObject
+       with Form
+  inline def zero: zero = "zero".asInstanceOf[zero]
 }
-

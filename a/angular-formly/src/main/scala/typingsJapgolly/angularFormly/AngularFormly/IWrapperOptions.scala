@@ -1,50 +1,82 @@
 package typingsJapgolly.angularFormly.AngularFormly
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IWrapperOptions extends js.Object {
+trait IWrapperOptions extends StObject {
+  
   var apiCheck: js.UndefOr[StringDictionary[js.Function]] = js.undefined
+  
   var apiCheckFunction: js.UndefOr[String] = js.undefined
-   //'throw' or 'warn
-  var apiCheckInstance: js.UndefOr[js.Any] = js.undefined
+  
+  //'throw' or 'warn
+  var apiCheckInstance: js.UndefOr[Any] = js.undefined
+  
   var apiCheckOptions: js.UndefOr[js.Object] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var overwriteOk: js.UndefOr[Boolean] = js.undefined
+  
   var template: js.UndefOr[String] = js.undefined
+  
   var templateUrl: js.UndefOr[String] = js.undefined
+  
   var types: js.UndefOr[js.Array[String]] = js.undefined
+  
   var validateOptions: js.UndefOr[js.Function] = js.undefined
 }
-
 object IWrapperOptions {
-  @scala.inline
-  def apply(
-    apiCheck: StringDictionary[js.Function] = null,
-    apiCheckFunction: String = null,
-    apiCheckInstance: js.Any = null,
-    apiCheckOptions: js.Object = null,
-    name: String = null,
-    overwriteOk: js.UndefOr[Boolean] = js.undefined,
-    template: String = null,
-    templateUrl: String = null,
-    types: js.Array[String] = null,
-    validateOptions: js.Function = null
-  ): IWrapperOptions = {
+  
+  inline def apply(): IWrapperOptions = {
     val __obj = js.Dynamic.literal()
-    if (apiCheck != null) __obj.updateDynamic("apiCheck")(apiCheck.asInstanceOf[js.Any])
-    if (apiCheckFunction != null) __obj.updateDynamic("apiCheckFunction")(apiCheckFunction.asInstanceOf[js.Any])
-    if (apiCheckInstance != null) __obj.updateDynamic("apiCheckInstance")(apiCheckInstance.asInstanceOf[js.Any])
-    if (apiCheckOptions != null) __obj.updateDynamic("apiCheckOptions")(apiCheckOptions.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwriteOk)) __obj.updateDynamic("overwriteOk")(overwriteOk.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
-    if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWrapperOptions]
   }
+  
+  extension [Self <: IWrapperOptions](x: Self) {
+    
+    inline def setApiCheck(value: StringDictionary[js.Function]): Self = StObject.set(x, "apiCheck", value.asInstanceOf[js.Any])
+    
+    inline def setApiCheckFunction(value: String): Self = StObject.set(x, "apiCheckFunction", value.asInstanceOf[js.Any])
+    
+    inline def setApiCheckFunctionUndefined: Self = StObject.set(x, "apiCheckFunction", js.undefined)
+    
+    inline def setApiCheckInstance(value: Any): Self = StObject.set(x, "apiCheckInstance", value.asInstanceOf[js.Any])
+    
+    inline def setApiCheckInstanceUndefined: Self = StObject.set(x, "apiCheckInstance", js.undefined)
+    
+    inline def setApiCheckOptions(value: js.Object): Self = StObject.set(x, "apiCheckOptions", value.asInstanceOf[js.Any])
+    
+    inline def setApiCheckOptionsUndefined: Self = StObject.set(x, "apiCheckOptions", js.undefined)
+    
+    inline def setApiCheckUndefined: Self = StObject.set(x, "apiCheck", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOverwriteOk(value: Boolean): Self = StObject.set(x, "overwriteOk", value.asInstanceOf[js.Any])
+    
+    inline def setOverwriteOkUndefined: Self = StObject.set(x, "overwriteOk", js.undefined)
+    
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+    
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
+    
+    inline def setValidateOptions(value: js.Function): Self = StObject.set(x, "validateOptions", value.asInstanceOf[js.Any])
+    
+    inline def setValidateOptionsUndefined: Self = StObject.set(x, "validateOptions", js.undefined)
+  }
 }
-

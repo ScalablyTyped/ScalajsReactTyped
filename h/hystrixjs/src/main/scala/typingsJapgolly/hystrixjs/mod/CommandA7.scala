@@ -1,20 +1,23 @@
 package typingsJapgolly.hystrixjs.mod
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommandA7[R, T, U, V, W, X, Y, Z] extends js.Object {
-  def execute(t: T, u: U, v: V, w: W, x: X, y: Y, z: Z): js.Thenable[R]
+trait CommandA7[R, T, U, V, W, X, Y, Z] extends StObject {
+  
+  def execute(t: T, u: U, v: V, w: W, x: X, y: Y, z: Z): PromiseLike[R]
 }
-
 object CommandA7 {
-  @scala.inline
-  def apply[R, T, U, V, W, X, Y, Z](execute: (T, U, V, W, X, Y, Z) => CallbackTo[js.Thenable[R]]): CommandA7[R, T, U, V, W, X, Y, Z] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(js.Any.fromFunction7((t0: T, t1: U, t2: V, t3: W, t4: X, t5: Y, t6: Z) => execute(t0, t1, t2, t3, t4, t5, t6).runNow()))
+  
+  inline def apply[R, T, U, V, W, X, Y, Z](execute: (T, U, V, W, X, Y, Z) => PromiseLike[R]): CommandA7[R, T, U, V, W, X, Y, Z] = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction7(execute))
     __obj.asInstanceOf[CommandA7[R, T, U, V, W, X, Y, Z]]
   }
+  
+  extension [Self <: CommandA7[?, ?, ?, ?, ?, ?, ?, ?], R, T, U, V, W, X, Y, Z](x: Self & (CommandA7[R, T, U, V, W, X, Y, Z])) {
+    
+    inline def setExecute(value: (T, U, V, W, X, Y, Z) => PromiseLike[R]): Self = StObject.set(x, "execute", js.Any.fromFunction7(value))
+  }
 }
-

@@ -1,39 +1,60 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListBoxMessagesTools extends js.Object {
+trait ListBoxMessagesTools extends StObject {
+  
   var moveDown: js.UndefOr[String] = js.undefined
+  
   var moveUp: js.UndefOr[String] = js.undefined
+  
   var remove: js.UndefOr[String] = js.undefined
+  
   var transferAllFrom: js.UndefOr[String] = js.undefined
+  
   var transferAllTo: js.UndefOr[String] = js.undefined
+  
   var transferFrom: js.UndefOr[String] = js.undefined
+  
   var transferTo: js.UndefOr[String] = js.undefined
 }
-
 object ListBoxMessagesTools {
-  @scala.inline
-  def apply(
-    moveDown: String = null,
-    moveUp: String = null,
-    remove: String = null,
-    transferAllFrom: String = null,
-    transferAllTo: String = null,
-    transferFrom: String = null,
-    transferTo: String = null
-  ): ListBoxMessagesTools = {
+  
+  inline def apply(): ListBoxMessagesTools = {
     val __obj = js.Dynamic.literal()
-    if (moveDown != null) __obj.updateDynamic("moveDown")(moveDown.asInstanceOf[js.Any])
-    if (moveUp != null) __obj.updateDynamic("moveUp")(moveUp.asInstanceOf[js.Any])
-    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
-    if (transferAllFrom != null) __obj.updateDynamic("transferAllFrom")(transferAllFrom.asInstanceOf[js.Any])
-    if (transferAllTo != null) __obj.updateDynamic("transferAllTo")(transferAllTo.asInstanceOf[js.Any])
-    if (transferFrom != null) __obj.updateDynamic("transferFrom")(transferFrom.asInstanceOf[js.Any])
-    if (transferTo != null) __obj.updateDynamic("transferTo")(transferTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxMessagesTools]
   }
+  
+  extension [Self <: ListBoxMessagesTools](x: Self) {
+    
+    inline def setMoveDown(value: String): Self = StObject.set(x, "moveDown", value.asInstanceOf[js.Any])
+    
+    inline def setMoveDownUndefined: Self = StObject.set(x, "moveDown", js.undefined)
+    
+    inline def setMoveUp(value: String): Self = StObject.set(x, "moveUp", value.asInstanceOf[js.Any])
+    
+    inline def setMoveUpUndefined: Self = StObject.set(x, "moveUp", js.undefined)
+    
+    inline def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    
+    inline def setTransferAllFrom(value: String): Self = StObject.set(x, "transferAllFrom", value.asInstanceOf[js.Any])
+    
+    inline def setTransferAllFromUndefined: Self = StObject.set(x, "transferAllFrom", js.undefined)
+    
+    inline def setTransferAllTo(value: String): Self = StObject.set(x, "transferAllTo", value.asInstanceOf[js.Any])
+    
+    inline def setTransferAllToUndefined: Self = StObject.set(x, "transferAllTo", js.undefined)
+    
+    inline def setTransferFrom(value: String): Self = StObject.set(x, "transferFrom", value.asInstanceOf[js.Any])
+    
+    inline def setTransferFromUndefined: Self = StObject.set(x, "transferFrom", js.undefined)
+    
+    inline def setTransferTo(value: String): Self = StObject.set(x, "transferTo", value.asInstanceOf[js.Any])
+    
+    inline def setTransferToUndefined: Self = StObject.set(x, "transferTo", js.undefined)
+  }
 }
-

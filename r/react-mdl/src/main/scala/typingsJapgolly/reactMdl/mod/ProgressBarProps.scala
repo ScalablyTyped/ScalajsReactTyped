@@ -1,35 +1,39 @@
 package typingsJapgolly.reactMdl.mod
 
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
+import typingsJapgolly.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ProgressBarProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any] {
+  extends StObject
+     with HTMLProps[Any] {
+  
   var buffer: js.UndefOr[Double] = js.undefined
+  
   var indeterminate: js.UndefOr[Boolean] = js.undefined
+  
   var progress: js.UndefOr[Double] = js.undefined
 }
-
 object ProgressBarProps {
-  @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    buffer: Int | Double = null,
-    indeterminate: js.UndefOr[Boolean] = js.undefined,
-    progress: Int | Double = null
-  ): ProgressBarProps = {
+  
+  inline def apply(): ProgressBarProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressBarProps]
   }
+  
+  extension [Self <: ProgressBarProps](x: Self) {
+    
+    inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    
+    inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+    
+    inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
+    
+    inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
+    
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+  }
 }
-

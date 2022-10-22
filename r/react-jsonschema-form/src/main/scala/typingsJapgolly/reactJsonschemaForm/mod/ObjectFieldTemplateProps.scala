@@ -1,46 +1,81 @@
 package typingsJapgolly.reactJsonschemaForm.mod
 
 import typingsJapgolly.jsonSchema.mod.JSONSchema6
-import typingsJapgolly.react.mod.StatelessComponent
-import typingsJapgolly.reactJsonschemaForm.AnonContent
-import typingsJapgolly.reactJsonschemaForm.AnonDescription
-import typingsJapgolly.reactJsonschemaForm.AnonId
+import typingsJapgolly.react.mod.FunctionComponent
+import typingsJapgolly.reactJsonschemaForm.anon.Content
+import typingsJapgolly.reactJsonschemaForm.anon.Description
+import typingsJapgolly.reactJsonschemaForm.anon.Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObjectFieldTemplateProps[T] extends js.Object {
-  var DescriptionField: StatelessComponent[AnonDescription]
-  var TitleField: StatelessComponent[AnonId]
+trait ObjectFieldTemplateProps[T] extends StObject {
+  
+  var DescriptionField: FunctionComponent[Description]
+  
+  var TitleField: FunctionComponent[Id]
+  
   var description: String
-  var formContext: js.Any
+  
+  var formContext: Any
+  
   var formData: T
-  var idSchema: IdSchema[_]
-  var properties: js.Array[AnonContent]
+  
+  var idSchema: IdSchema[Any]
+  
+  var properties: js.Array[Content]
+  
   var required: Boolean
+  
   var schema: JSONSchema6
+  
   var title: String
+  
   var uiSchema: UiSchema
 }
-
 object ObjectFieldTemplateProps {
-  @scala.inline
-  def apply[T](
-    DescriptionField: StatelessComponent[AnonDescription],
-    TitleField: StatelessComponent[AnonId],
+  
+  inline def apply[T](
+    DescriptionField: FunctionComponent[Description],
+    TitleField: FunctionComponent[Id],
     description: String,
-    formContext: js.Any,
+    formContext: Any,
     formData: T,
-    idSchema: IdSchema[_],
-    properties: js.Array[AnonContent],
+    idSchema: IdSchema[Any],
+    properties: js.Array[Content],
     required: Boolean,
     schema: JSONSchema6,
     title: String,
     uiSchema: UiSchema
   ): ObjectFieldTemplateProps[T] = {
     val __obj = js.Dynamic.literal(DescriptionField = DescriptionField.asInstanceOf[js.Any], TitleField = TitleField.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], formContext = formContext.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], idSchema = idSchema.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], uiSchema = uiSchema.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ObjectFieldTemplateProps[T]]
   }
+  
+  extension [Self <: ObjectFieldTemplateProps[?], T](x: Self & ObjectFieldTemplateProps[T]) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionField(value: FunctionComponent[Description]): Self = StObject.set(x, "DescriptionField", value.asInstanceOf[js.Any])
+    
+    inline def setFormContext(value: Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
+    
+    inline def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    
+    inline def setIdSchema(value: IdSchema[Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: js.Array[Content]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesVarargs(value: Content*): Self = StObject.set(x, "properties", js.Array(value*))
+    
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    
+    inline def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleField(value: FunctionComponent[Id]): Self = StObject.set(x, "TitleField", value.asInstanceOf[js.Any])
+    
+    inline def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
+  }
 }
-

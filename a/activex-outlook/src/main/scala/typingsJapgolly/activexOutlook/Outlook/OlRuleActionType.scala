@@ -1,139 +1,135 @@
 package typingsJapgolly.activexOutlook.Outlook
 
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`10`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`11`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`12`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`13`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`14`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`15`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`16`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`17`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`18`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`19`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`20`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`21`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`22`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`23`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`24`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`25`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`26`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`27`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`28`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`29`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`30`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`5`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`6`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`7`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`8`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`9`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`0`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`10`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`11`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`12`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`13`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`14`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`15`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`16`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`17`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`18`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`19`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`20`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`21`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`22`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`23`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`24`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`25`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`26`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`27`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`28`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`29`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`30`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`5`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`6`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`7`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`8`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`27`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`30`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`5`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`22`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`28`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`24`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`13`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`12`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`11`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`6`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`7`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`14`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`29`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`19`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`23`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`26`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`25`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`17`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`16`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`8`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`20`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`15`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`9`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`18`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`21`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`10`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`27`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`30`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`5`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`22`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`28`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`24`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`13`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`12`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`11`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`6`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`7`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`14`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`29`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`19`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`23`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`26`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`25`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`17`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`16`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`8`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`20`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`15`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`9`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`18`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`21`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`10`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`0`
 */
-trait OlRuleActionType extends js.Object
-
+trait OlRuleActionType extends StObject
 object OlRuleActionType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def olRuleActionAssignToCategory: `2` = this.cast(2)
-  @scala.inline
-  def olRuleActionCcMessage: `27` = this.cast(27)
-  @scala.inline
-  def olRuleActionClearCategories: `30` = this.cast(30)
-  @scala.inline
-  def olRuleActionCopyToFolder: `5` = this.cast(5)
-  @scala.inline
-  def olRuleActionCustomAction: `22` = this.cast(22)
-  @scala.inline
-  def olRuleActionDefer: `28` = this.cast(28)
-  @scala.inline
-  def olRuleActionDelete: `3` = this.cast(3)
-  @scala.inline
-  def olRuleActionDeletePermanently: `4` = this.cast(4)
-  @scala.inline
-  def olRuleActionDesktopAlert: `24` = this.cast(24)
-  @scala.inline
-  def olRuleActionFlagClear: `13` = this.cast(13)
-  @scala.inline
-  def olRuleActionFlagColor: `12` = this.cast(12)
-  @scala.inline
-  def olRuleActionFlagForActionInDays: `11` = this.cast(11)
-  @scala.inline
-  def olRuleActionForward: `6` = this.cast(6)
-  @scala.inline
-  def olRuleActionForwardAsAttachment: `7` = this.cast(7)
-  @scala.inline
-  def olRuleActionImportance: `14` = this.cast(14)
-  @scala.inline
-  def olRuleActionMarkAsTask: `29` = this.cast(29)
-  @scala.inline
-  def olRuleActionMarkRead: `19` = this.cast(19)
-  @scala.inline
-  def olRuleActionMoveToFolder: `1` = this.cast(1)
-  @scala.inline
-  def olRuleActionNewItemAlert: `23` = this.cast(23)
-  @scala.inline
-  def olRuleActionNotifyDelivery: `26` = this.cast(26)
-  @scala.inline
-  def olRuleActionNotifyRead: `25` = this.cast(25)
-  @scala.inline
-  def olRuleActionPlaySound: `17` = this.cast(17)
-  @scala.inline
-  def olRuleActionPrint: `16` = this.cast(16)
-  @scala.inline
-  def olRuleActionRedirect: `8` = this.cast(8)
-  @scala.inline
-  def olRuleActionRunScript: `20` = this.cast(20)
-  @scala.inline
-  def olRuleActionSensitivity: `15` = this.cast(15)
-  @scala.inline
-  def olRuleActionServerReply: `9` = this.cast(9)
-  @scala.inline
-  def olRuleActionStartApplication: `18` = this.cast(18)
-  @scala.inline
-  def olRuleActionStop: `21` = this.cast(21)
-  @scala.inline
-  def olRuleActionTemplate: `10` = this.cast(10)
-  @scala.inline
-  def olRuleActionUnknown: `0` = this.cast(0)
+  
+  inline def olRuleActionAssignToCategory: `2` = 2.asInstanceOf[`2`]
+  
+  inline def olRuleActionCcMessage: `27` = 27.asInstanceOf[`27`]
+  
+  inline def olRuleActionClearCategories: `30` = 30.asInstanceOf[`30`]
+  
+  inline def olRuleActionCopyToFolder: `5` = 5.asInstanceOf[`5`]
+  
+  inline def olRuleActionCustomAction: `22` = 22.asInstanceOf[`22`]
+  
+  inline def olRuleActionDefer: `28` = 28.asInstanceOf[`28`]
+  
+  inline def olRuleActionDelete: `3` = 3.asInstanceOf[`3`]
+  
+  inline def olRuleActionDeletePermanently: `4` = 4.asInstanceOf[`4`]
+  
+  inline def olRuleActionDesktopAlert: `24` = 24.asInstanceOf[`24`]
+  
+  inline def olRuleActionFlagClear: `13` = 13.asInstanceOf[`13`]
+  
+  inline def olRuleActionFlagColor: `12` = 12.asInstanceOf[`12`]
+  
+  inline def olRuleActionFlagForActionInDays: `11` = 11.asInstanceOf[`11`]
+  
+  inline def olRuleActionForward: `6` = 6.asInstanceOf[`6`]
+  
+  inline def olRuleActionForwardAsAttachment: `7` = 7.asInstanceOf[`7`]
+  
+  inline def olRuleActionImportance: `14` = 14.asInstanceOf[`14`]
+  
+  inline def olRuleActionMarkAsTask: `29` = 29.asInstanceOf[`29`]
+  
+  inline def olRuleActionMarkRead: `19` = 19.asInstanceOf[`19`]
+  
+  inline def olRuleActionMoveToFolder: `1` = 1.asInstanceOf[`1`]
+  
+  inline def olRuleActionNewItemAlert: `23` = 23.asInstanceOf[`23`]
+  
+  inline def olRuleActionNotifyDelivery: `26` = 26.asInstanceOf[`26`]
+  
+  inline def olRuleActionNotifyRead: `25` = 25.asInstanceOf[`25`]
+  
+  inline def olRuleActionPlaySound: `17` = 17.asInstanceOf[`17`]
+  
+  inline def olRuleActionPrint: `16` = 16.asInstanceOf[`16`]
+  
+  inline def olRuleActionRedirect: `8` = 8.asInstanceOf[`8`]
+  
+  inline def olRuleActionRunScript: `20` = 20.asInstanceOf[`20`]
+  
+  inline def olRuleActionSensitivity: `15` = 15.asInstanceOf[`15`]
+  
+  inline def olRuleActionServerReply: `9` = 9.asInstanceOf[`9`]
+  
+  inline def olRuleActionStartApplication: `18` = 18.asInstanceOf[`18`]
+  
+  inline def olRuleActionStop: `21` = 21.asInstanceOf[`21`]
+  
+  inline def olRuleActionTemplate: `10` = 10.asInstanceOf[`10`]
+  
+  inline def olRuleActionUnknown: `0` = 0.asInstanceOf[`0`]
 }
-

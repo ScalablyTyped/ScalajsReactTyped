@@ -1,50 +1,47 @@
 package typingsJapgolly.pusherChatkitClient
 
 import typingsJapgolly.pusherChatkitClient.userMod.PusherUserPresence
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pusherChatkitClientStrings {
-  @js.native
-  sealed trait attachment extends js.Object
   
   @js.native
-  sealed trait `inline` extends js.Object
+  sealed trait attachment extends StObject
+  inline def attachment: attachment = "attachment".asInstanceOf[attachment]
   
   @js.native
-  sealed trait newer extends js.Object
+  sealed trait `inline` extends StObject
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait offline extends PusherUserPresence
+  sealed trait newer extends StObject
+  inline def newer: newer = "newer".asInstanceOf[newer]
   
   @js.native
-  sealed trait older extends js.Object
+  sealed trait offline
+    extends StObject
+       with PusherUserPresence
+  inline def offline: offline = "offline".asInstanceOf[offline]
   
   @js.native
-  sealed trait online extends PusherUserPresence
+  sealed trait older extends StObject
+  inline def older: older = "older".asInstanceOf[older]
   
   @js.native
-  sealed trait unknown extends PusherUserPresence
+  sealed trait online
+    extends StObject
+       with PusherUserPresence
+  inline def online: online = "online".asInstanceOf[online]
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait unknown
+    extends StObject
+       with PusherUserPresence
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
-  @scala.inline
-  def attachment: attachment = "attachment".asInstanceOf[attachment]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def newer: newer = "newer".asInstanceOf[newer]
-  @scala.inline
-  def offline: offline = "offline".asInstanceOf[offline]
-  @scala.inline
-  def older: older = "older".asInstanceOf[older]
-  @scala.inline
-  def online: online = "online".asInstanceOf[online]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  @js.native
+  sealed trait url extends StObject
+  inline def url: url = "url".asInstanceOf[url]
 }
-

@@ -1,12 +1,14 @@
 package typingsJapgolly.asyncNexttick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("async.nexttick", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def nextTick(callback: js.Function0[Unit], args: js.Any*): Unit = js.native
+object mod {
+  
+  @JSImport("async.nexttick", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def nextTick(callback: js.Function0[Unit], args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(scala.List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 }
-

@@ -1,13 +1,13 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.officeUiFabricReact.extendedPeoplePickerMod.IExtendedPeoplePickerProps
-import typingsJapgolly.officeUiFabricReact.personaTypesMod.IPersonaProps
+import typingsJapgolly.officeUiFabricReact.libComponentsExtendedPickerPeoplePickerExtendedPeoplePickerMod.IExtendedPeoplePickerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "ExtendedPeoplePicker")
 @js.native
-class ExtendedPeoplePicker ()
-  extends typingsJapgolly.officeUiFabricReact.baseExtendedPickerMod.BaseExtendedPicker[IPersonaProps, IExtendedPeoplePickerProps]
-
+open class ExtendedPeoplePicker protected ()
+  extends typingsJapgolly.officeUiFabricReact.libExtendedPickerMod.ExtendedPeoplePicker {
+  def this(basePickerProps: IExtendedPeoplePickerProps) = this()
+}

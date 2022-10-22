@@ -12,52 +12,88 @@ import typingsJapgolly.lokijs.lokijsStrings.simplesort
 import typingsJapgolly.lokijs.lokijsStrings.sort
 import typingsJapgolly.lokijs.lokijsStrings.update
 import typingsJapgolly.lokijs.lokijsStrings.where
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Transform extends js.Object {
-  var dataOptions: js.UndefOr[js.Any] = js.undefined
+trait Transform extends StObject {
+  
+  var dataOptions: js.UndefOr[Any] = js.undefined
+  
   var desc: js.UndefOr[Boolean] = js.undefined
-  var joinData: js.UndefOr[js.Any] = js.undefined
-  var leftJoinKey: js.UndefOr[js.Any] = js.undefined
-  var mapFun: js.UndefOr[js.Any] = js.undefined
-  var mapFunction: js.UndefOr[js.Any] = js.undefined
+  
+  var joinData: js.UndefOr[Any] = js.undefined
+  
+  var leftJoinKey: js.UndefOr[Any] = js.undefined
+  
+  var mapFun: js.UndefOr[Any] = js.undefined
+  
+  var mapFunction: js.UndefOr[Any] = js.undefined
+  
   var property: js.UndefOr[String] = js.undefined
-  var reduceFunction: js.UndefOr[js.Any] = js.undefined
-  var rightJoinKey: js.UndefOr[js.Any] = js.undefined
+  
+  var reduceFunction: js.UndefOr[Any] = js.undefined
+  
+  var rightJoinKey: js.UndefOr[Any] = js.undefined
+  
   var `type`: find | where | simplesort | compoundsort | sort | limit | offset | map | eqJoin | mapReduce | update | remove
-  var value: js.UndefOr[js.Any] = js.undefined
+  
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object Transform {
-  @scala.inline
-  def apply(
-    `type`: find | where | simplesort | compoundsort | sort | limit | offset | map | eqJoin | mapReduce | update | remove,
-    dataOptions: js.Any = null,
-    desc: js.UndefOr[Boolean] = js.undefined,
-    joinData: js.Any = null,
-    leftJoinKey: js.Any = null,
-    mapFun: js.Any = null,
-    mapFunction: js.Any = null,
-    property: String = null,
-    reduceFunction: js.Any = null,
-    rightJoinKey: js.Any = null,
-    value: js.Any = null
+  
+  inline def apply(
+    `type`: find | where | simplesort | compoundsort | sort | limit | offset | map | eqJoin | mapReduce | update | remove
   ): Transform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (dataOptions != null) __obj.updateDynamic("dataOptions")(dataOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(desc)) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (joinData != null) __obj.updateDynamic("joinData")(joinData.asInstanceOf[js.Any])
-    if (leftJoinKey != null) __obj.updateDynamic("leftJoinKey")(leftJoinKey.asInstanceOf[js.Any])
-    if (mapFun != null) __obj.updateDynamic("mapFun")(mapFun.asInstanceOf[js.Any])
-    if (mapFunction != null) __obj.updateDynamic("mapFunction")(mapFunction.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (reduceFunction != null) __obj.updateDynamic("reduceFunction")(reduceFunction.asInstanceOf[js.Any])
-    if (rightJoinKey != null) __obj.updateDynamic("rightJoinKey")(rightJoinKey.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transform]
   }
+  
+  extension [Self <: Transform](x: Self) {
+    
+    inline def setDataOptions(value: Any): Self = StObject.set(x, "dataOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDataOptionsUndefined: Self = StObject.set(x, "dataOptions", js.undefined)
+    
+    inline def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    
+    inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+    
+    inline def setJoinData(value: Any): Self = StObject.set(x, "joinData", value.asInstanceOf[js.Any])
+    
+    inline def setJoinDataUndefined: Self = StObject.set(x, "joinData", js.undefined)
+    
+    inline def setLeftJoinKey(value: Any): Self = StObject.set(x, "leftJoinKey", value.asInstanceOf[js.Any])
+    
+    inline def setLeftJoinKeyUndefined: Self = StObject.set(x, "leftJoinKey", js.undefined)
+    
+    inline def setMapFun(value: Any): Self = StObject.set(x, "mapFun", value.asInstanceOf[js.Any])
+    
+    inline def setMapFunUndefined: Self = StObject.set(x, "mapFun", js.undefined)
+    
+    inline def setMapFunction(value: Any): Self = StObject.set(x, "mapFunction", value.asInstanceOf[js.Any])
+    
+    inline def setMapFunctionUndefined: Self = StObject.set(x, "mapFunction", js.undefined)
+    
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    
+    inline def setReduceFunction(value: Any): Self = StObject.set(x, "reduceFunction", value.asInstanceOf[js.Any])
+    
+    inline def setReduceFunctionUndefined: Self = StObject.set(x, "reduceFunction", js.undefined)
+    
+    inline def setRightJoinKey(value: Any): Self = StObject.set(x, "rightJoinKey", value.asInstanceOf[js.Any])
+    
+    inline def setRightJoinKeyUndefined: Self = StObject.set(x, "rightJoinKey", js.undefined)
+    
+    inline def setType(
+      value: find | where | simplesort | compoundsort | sort | limit | offset | map | eqJoin | mapReduce | update | remove
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

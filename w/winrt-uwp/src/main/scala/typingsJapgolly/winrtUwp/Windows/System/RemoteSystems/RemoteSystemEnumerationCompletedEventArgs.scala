@@ -1,11 +1,8 @@
 package typingsJapgolly.winrtUwp.Windows.System.RemoteSystems
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is the argument class for the **RemoteSystemWatcher.EnumerationCompleted** event. */
-@JSGlobal("Windows.System.RemoteSystems.RemoteSystemEnumerationCompletedEventArgs")
-@js.native
-abstract class RemoteSystemEnumerationCompletedEventArgs () extends js.Object
-
+trait RemoteSystemEnumerationCompletedEventArgs extends StObject

@@ -1,11 +1,10 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Matrix4")
 @js.native
-class Matrix4 ()
-  extends typingsJapgolly.three.matrix4Mod.Matrix4
-
+open class Matrix4 ()
+  extends typingsJapgolly.three.srcThreeMod.Matrix4

@@ -1,35 +1,27 @@
 package typingsJapgolly.chrome.chrome.cast.media
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StreamType extends js.Object
-
+sealed trait StreamType extends StObject
 @JSGlobal("chrome.cast.media.StreamType")
 @js.native
-object StreamType extends js.Object {
-  @js.native
-  sealed trait BUFFERED extends StreamType
+object StreamType extends StObject {
   
   @js.native
-  sealed trait LIVE extends StreamType
+  sealed trait BUFFERED
+    extends StObject
+       with StreamType
   
   @js.native
-  sealed trait OTHER extends StreamType
+  sealed trait LIVE
+    extends StObject
+       with StreamType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[StreamType with String] = js.native
-  /* "BUFFERED" */ @js.native
-  object BUFFERED extends TopLevel[BUFFERED with String]
-  
-  /* "LIVE" */ @js.native
-  object LIVE extends TopLevel[LIVE with String]
-  
-  /* "OTHER" */ @js.native
-  object OTHER extends TopLevel[OTHER with String]
-  
+  @js.native
+  sealed trait OTHER
+    extends StObject
+       with StreamType
 }
-

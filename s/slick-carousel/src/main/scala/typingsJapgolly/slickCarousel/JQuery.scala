@@ -1,5 +1,6 @@
 package typingsJapgolly.slickCarousel
 
+import org.scalajs.dom.Element
 import typingsJapgolly.slickCarousel.slickCarouselStrings.getSlick
 import typingsJapgolly.slickCarousel.slickCarouselStrings.slickAdd
 import typingsJapgolly.slickCarousel.slickCarouselStrings.slickCurrentSlide
@@ -14,13 +15,13 @@ import typingsJapgolly.slickCarousel.slickCarouselStrings.slickRemove
 import typingsJapgolly.slickCarousel.slickCarouselStrings.slickSetOption
 import typingsJapgolly.slickCarousel.slickCarouselStrings.slickUnfilter
 import typingsJapgolly.slickCarousel.slickCarouselStrings.unslick
-import typingsJapgolly.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   /**
     * Create slick component
     */
@@ -30,7 +31,7 @@ trait JQuery extends js.Object {
     * @param methodName
     * @param arg
     */
-  def slick(methodName: String, arg: js.Any*): js.Any = js.native
+  def slick(methodName: String, arg: Any*): Any = js.native
   def slick(options: JQuerySlickOptions): JQuery = js.native
   /**
     * Get Slick Object
@@ -53,11 +54,15 @@ trait JQuery extends js.Object {
   @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: String, index: Double, addBefore: Double): JQuery = js.native
   @JSName("slick")
+  def slick_slickAdd(methodName: slickAdd, html: String, index: Unit, addBefore: Double): JQuery = js.native
+  @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: js.Object): JQuery = js.native
   @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: js.Object, index: Double): JQuery = js.native
   @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: js.Object, index: Double, addBefore: Double): JQuery = js.native
+  @JSName("slick")
+  def slick_slickAdd(methodName: slickAdd, html: js.Object, index: Unit, addBefore: Double): JQuery = js.native
   /**
     * Returns the current slide index
     * @param methodName The name of the method
@@ -70,7 +75,7 @@ trait JQuery extends js.Object {
     * @param func
     */
   @JSName("slick")
-  def slick_slickFilter(methodName: slickFilter, func: js.Function2[/* index */ Double, /* element */ Element, _]): JQuery = js.native
+  def slick_slickFilter(methodName: slickFilter, func: js.Function2[/* index */ Double, /* element */ Element, Any]): JQuery = js.native
   /**
     * Filters slides using jQuery .filter()
     * @param methodName The name of the method
@@ -84,17 +89,17 @@ trait JQuery extends js.Object {
     * @param option The option name
     */
   @JSName("slick")
-  def slick_slickGetOption(methodName: slickGetOption, option: js.Any): JQuerySlickOptions = js.native
+  def slick_slickGetOption(methodName: slickGetOption, option: Any): JQuerySlickOptions = js.native
   /**
     * Navigates to a slide by index
     * @param methodName The name of the method
     * @param slide
-    * @param animate
+    * @param dontAnimate
     */
   @JSName("slick")
   def slick_slickGoTo(methodName: slickGoTo, slide: Double): JQuery = js.native
   @JSName("slick")
-  def slick_slickGoTo(methodName: slickGoTo, slide: Double, animate: Boolean): JQuery = js.native
+  def slick_slickGoTo(methodName: slickGoTo, slide: Double, dontAnimate: Boolean): JQuery = js.native
   /**
     * Navigates to the next slide
     * @param methodName The name of the method
@@ -155,4 +160,3 @@ trait JQuery extends js.Object {
   @JSName("slick")
   def slick_unslick(methodName: unslick): JQuery = js.native
 }
-

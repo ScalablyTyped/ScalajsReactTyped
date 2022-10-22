@@ -4,16 +4,16 @@
 Typings are for version 2.4
 
 ## Library description:
-> Automatic sandbox setup and teardown for SinonJS
+<a href="CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" alt="Contributor Covenant" /></a>
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sinon-test |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 1127310 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 139526.0 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/sinonjs/sinon-test#readme)

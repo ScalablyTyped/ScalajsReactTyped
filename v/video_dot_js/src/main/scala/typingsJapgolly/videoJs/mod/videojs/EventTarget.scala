@@ -1,13 +1,12 @@
 package typingsJapgolly.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.Event
 import typingsJapgolly.std.CustomEvent
-import typingsJapgolly.std.Event_
-import typingsJapgolly.videoJs.mod.videojs.EventTarget.Event
 import typingsJapgolly.videoJs.mod.videojs.EventTarget.EventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `EventTarget` is a class that can have the same API as the DOM `EventTarget`. It
@@ -17,7 +16,8 @@ import scala.scalajs.js.annotation._
   * @see [EventTarget Spec]{@link https://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-EventTarget}
   */
 @js.native
-trait EventTarget extends js.Object {
+trait EventTarget extends StObject {
+  
   /**
     * An alias of {@link EventTarget#on}. Allows `EventTarget` to mimic
     * the standard DOM API.
@@ -32,6 +32,7 @@ trait EventTarget extends js.Object {
     */
   def addEventListener(`type`: String, fn: EventListener): Unit = js.native
   def addEventListener(`type`: js.Array[String], fn: EventListener): Unit = js.native
+  
   /**
     * An alias of {@link EventTarget#trigger}. Allows `EventTarget` to mimic
     * the standard DOM API.
@@ -43,7 +44,8 @@ trait EventTarget extends js.Object {
     * @see {@link EventTarget#trigger}
     */
   def dispatchEvent(event: String): Unit = js.native
-  def dispatchEvent(event: Event_): Unit = js.native
+  def dispatchEvent(event: Event): Unit = js.native
+  
   /**
     * Removes an `event listener` for a specific event from an instance of `EventTarget`.
     * This makes it so that the `event listener` will no longer get called when the
@@ -57,6 +59,7 @@ trait EventTarget extends js.Object {
     */
   def off(`type`: String, fn: EventListener): Unit = js.native
   def off(`type`: js.Array[String], fn: EventListener): Unit = js.native
+  
   /**
     * Adds an `event listener` to an instance of an `EventTarget`. An `event listener` is a
     * function that will get called when an event with a certain name gets triggered.
@@ -69,6 +72,7 @@ trait EventTarget extends js.Object {
     */
   def on(`type`: String, fn: EventListener): Unit = js.native
   def on(`type`: js.Array[String], fn: EventListener): Unit = js.native
+  
   /**
     * This function will add an `event listener` that gets triggered only once. After the
     * first trigger it will get removed. This is like adding an `event listener`
@@ -82,6 +86,7 @@ trait EventTarget extends js.Object {
     */
   def one(`type`: String, fn: EventListener): Unit = js.native
   def one(`type`: js.Array[String], fn: EventListener): Unit = js.native
+  
   /**
     * An alias of {@link EventTarget#off}. Allows `EventTarget` to mimic
     * the standard DOM API.
@@ -96,6 +101,7 @@ trait EventTarget extends js.Object {
     */
   def removeEventListener(`type`: String, fn: EventListener): Unit = js.native
   def removeEventListener(`type`: js.Array[String], fn: EventListener): Unit = js.native
+  
   /**
     * This function causes an event to happen. This will then cause any `event listeners`
     * that are waiting for that event, to get called. If there are no `event listeners`
@@ -113,20 +119,19 @@ trait EventTarget extends js.Object {
     *        an event name.
     */
   def trigger(event: String): Unit = js.native
-  def trigger(event: Event): Unit = js.native
+  def trigger(event: typingsJapgolly.videoJs.mod.videojs.EventTarget.Event): Unit = js.native
 }
-
-@JSImport("video.js", "videojs.EventTarget")
-@js.native
-object EventTarget extends js.Object {
+object EventTarget {
+  
   /**
     * A Custom DOM event.
     * @see [Properties]{@link https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent}
     */
   @js.native
   trait Event
-    extends CustomEvent[js.Any]
-       with /* key */ StringDictionary[js.Any]
+    extends StObject
+       with CustomEvent[Any]
+       with /* key */ StringDictionary[Any]
   
   /**
     * All event listeners should follow the following format.
@@ -137,6 +142,9 @@ object EventTarget extends js.Object {
     * @param [hash]
     *        hash of data sent during the event
     */
-  type EventListener = js.Function2[/* e */ Event, /* data */ js.UndefOr[js.Any], Unit]
+  type EventListener = js.Function2[
+    /* e */ typingsJapgolly.videoJs.mod.videojs.EventTarget.Event, 
+    /* data */ js.UndefOr[Any], 
+    Unit
+  ]
 }
-

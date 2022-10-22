@@ -1,55 +1,63 @@
 package typingsJapgolly.dompurify
 
 import typingsJapgolly.dompurify.mod.HookName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dompurifyStrings {
-  @js.native
-  sealed trait afterSanitizeAttributes extends HookName
   
   @js.native
-  sealed trait afterSanitizeElements extends HookName
+  sealed trait afterSanitizeAttributes
+    extends StObject
+       with HookName
+  inline def afterSanitizeAttributes: afterSanitizeAttributes = "afterSanitizeAttributes".asInstanceOf[afterSanitizeAttributes]
   
   @js.native
-  sealed trait afterSanitizeShadowDOM extends HookName
+  sealed trait afterSanitizeElements
+    extends StObject
+       with HookName
+  inline def afterSanitizeElements: afterSanitizeElements = "afterSanitizeElements".asInstanceOf[afterSanitizeElements]
   
   @js.native
-  sealed trait beforeSanitizeAttributes extends HookName
+  sealed trait afterSanitizeShadowDOM
+    extends StObject
+       with HookName
+  inline def afterSanitizeShadowDOM: afterSanitizeShadowDOM = "afterSanitizeShadowDOM".asInstanceOf[afterSanitizeShadowDOM]
   
   @js.native
-  sealed trait beforeSanitizeElements extends HookName
+  sealed trait beforeSanitizeAttributes
+    extends StObject
+       with HookName
+  inline def beforeSanitizeAttributes: beforeSanitizeAttributes = "beforeSanitizeAttributes".asInstanceOf[beforeSanitizeAttributes]
   
   @js.native
-  sealed trait beforeSanitizeShadowDOM extends HookName
+  sealed trait beforeSanitizeElements
+    extends StObject
+       with HookName
+  inline def beforeSanitizeElements: beforeSanitizeElements = "beforeSanitizeElements".asInstanceOf[beforeSanitizeElements]
   
   @js.native
-  sealed trait uponSanitizeAttribute extends HookName
+  sealed trait beforeSanitizeShadowDOM
+    extends StObject
+       with HookName
+  inline def beforeSanitizeShadowDOM: beforeSanitizeShadowDOM = "beforeSanitizeShadowDOM".asInstanceOf[beforeSanitizeShadowDOM]
   
   @js.native
-  sealed trait uponSanitizeElement extends HookName
+  sealed trait uponSanitizeAttribute
+    extends StObject
+       with HookName
+  inline def uponSanitizeAttribute: uponSanitizeAttribute = "uponSanitizeAttribute".asInstanceOf[uponSanitizeAttribute]
   
   @js.native
-  sealed trait uponSanitizeShadowNode extends HookName
+  sealed trait uponSanitizeElement
+    extends StObject
+       with HookName
+  inline def uponSanitizeElement: uponSanitizeElement = "uponSanitizeElement".asInstanceOf[uponSanitizeElement]
   
-  @scala.inline
-  def afterSanitizeAttributes: afterSanitizeAttributes = "afterSanitizeAttributes".asInstanceOf[afterSanitizeAttributes]
-  @scala.inline
-  def afterSanitizeElements: afterSanitizeElements = "afterSanitizeElements".asInstanceOf[afterSanitizeElements]
-  @scala.inline
-  def afterSanitizeShadowDOM: afterSanitizeShadowDOM = "afterSanitizeShadowDOM".asInstanceOf[afterSanitizeShadowDOM]
-  @scala.inline
-  def beforeSanitizeAttributes: beforeSanitizeAttributes = "beforeSanitizeAttributes".asInstanceOf[beforeSanitizeAttributes]
-  @scala.inline
-  def beforeSanitizeElements: beforeSanitizeElements = "beforeSanitizeElements".asInstanceOf[beforeSanitizeElements]
-  @scala.inline
-  def beforeSanitizeShadowDOM: beforeSanitizeShadowDOM = "beforeSanitizeShadowDOM".asInstanceOf[beforeSanitizeShadowDOM]
-  @scala.inline
-  def uponSanitizeAttribute: uponSanitizeAttribute = "uponSanitizeAttribute".asInstanceOf[uponSanitizeAttribute]
-  @scala.inline
-  def uponSanitizeElement: uponSanitizeElement = "uponSanitizeElement".asInstanceOf[uponSanitizeElement]
-  @scala.inline
-  def uponSanitizeShadowNode: uponSanitizeShadowNode = "uponSanitizeShadowNode".asInstanceOf[uponSanitizeShadowNode]
+  @js.native
+  sealed trait uponSanitizeShadowNode
+    extends StObject
+       with HookName
+  inline def uponSanitizeShadowNode: uponSanitizeShadowNode = "uponSanitizeShadowNode".asInstanceOf[uponSanitizeShadowNode]
 }
-

@@ -1,39 +1,60 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PDFViewerMessagesToolbarPager extends js.Object {
+trait PDFViewerMessagesToolbarPager extends StObject {
+  
   var first: js.UndefOr[String] = js.undefined
+  
   var last: js.UndefOr[String] = js.undefined
+  
   var next: js.UndefOr[String] = js.undefined
+  
   var of: js.UndefOr[String] = js.undefined
+  
   var page: js.UndefOr[String] = js.undefined
+  
   var pages: js.UndefOr[String] = js.undefined
+  
   var previous: js.UndefOr[String] = js.undefined
 }
-
 object PDFViewerMessagesToolbarPager {
-  @scala.inline
-  def apply(
-    first: String = null,
-    last: String = null,
-    next: String = null,
-    of: String = null,
-    page: String = null,
-    pages: String = null,
-    previous: String = null
-  ): PDFViewerMessagesToolbarPager = {
+  
+  inline def apply(): PDFViewerMessagesToolbarPager = {
     val __obj = js.Dynamic.literal()
-    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
-    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (of != null) __obj.updateDynamic("of")(of.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
-    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerMessagesToolbarPager]
   }
+  
+  extension [Self <: PDFViewerMessagesToolbarPager](x: Self) {
+    
+    inline def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    
+    inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+    
+    inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    
+    inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    
+    inline def setOf(value: String): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+    
+    inline def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
+    
+    inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPages(value: String): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    
+    inline def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+  }
 }
-

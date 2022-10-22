@@ -1,58 +1,77 @@
 package typingsJapgolly.blueprintjsCore.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.blueprintjsCore.formGroupMod.IFormGroupProps
-import typingsJapgolly.blueprintjsCore.intentMod.Intent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsCore.libEsmCommonIntentMod.Intent
+import typingsJapgolly.blueprintjsCore.libEsmComponentsFormsFormGroupMod.IFormGroupProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FormGroup {
-  def apply(
-    className: String = null,
-    contentClassName: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    helperText: VdomNode = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    intent: Intent = null,
-    label: VdomNode = null,
-    labelFor: String = null,
-    labelInfo: VdomNode = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[IFormGroupProps, typingsJapgolly.blueprintjsCore.mod.FormGroup, Unit, IFormGroupProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (helperText != null) __obj.updateDynamic("helperText")(helperText.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.rawNode.asInstanceOf[js.Any])
-    if (labelFor != null) __obj.updateDynamic("labelFor")(labelFor.asInstanceOf[js.Any])
-    if (labelInfo != null) __obj.updateDynamic("labelInfo")(labelInfo.rawNode.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsCore.formGroupMod.IFormGroupProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsCore.mod.FormGroup](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsCore.formGroupMod.IFormGroupProps])(children: _*)
-  }
   @JSImport("@blueprintjs/core", "FormGroup")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsCore.mod.FormGroup] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def contentClassName(value: String): this.type = set("contentClassName", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def helperText(value: VdomNode): this.type = set("helperText", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def helperTextNull: this.type = set("helperText", null)
+    
+    inline def helperTextVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("helperText", js.Array(value*))
+    
+    inline def helperTextVdomElement(value: VdomElement): this.type = set("helperText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def `inline`(value: Boolean): this.type = set("inline", value.asInstanceOf[js.Any])
+    
+    inline def intent(value: Intent): this.type = set("intent", value.asInstanceOf[js.Any])
+    
+    inline def label(value: VdomNode): this.type = set("label", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def labelFor(value: String): this.type = set("labelFor", value.asInstanceOf[js.Any])
+    
+    inline def labelInfo(value: VdomNode): this.type = set("labelInfo", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def labelInfoNull: this.type = set("labelInfo", null)
+    
+    inline def labelInfoVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("labelInfo", js.Array(value*))
+    
+    inline def labelInfoVdomElement(value: VdomElement): this.type = set("labelInfo", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def labelNull: this.type = set("label", null)
+    
+    inline def labelVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("label", js.Array(value*))
+    
+    inline def labelVdomElement(value: VdomElement): this.type = set("label", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def subLabel(value: VdomNode): this.type = set("subLabel", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def subLabelNull: this.type = set("subLabel", null)
+    
+    inline def subLabelVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("subLabel", js.Array(value*))
+    
+    inline def subLabelVdomElement(value: VdomElement): this.type = set("subLabel", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: FormGroup.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IFormGroupProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

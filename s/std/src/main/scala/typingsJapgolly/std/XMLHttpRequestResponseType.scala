@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings._empty
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.json
   - typingsJapgolly.std.stdStrings.text
 */
-trait XMLHttpRequestResponseType extends js.Object
-
+trait XMLHttpRequestResponseType extends StObject
 object XMLHttpRequestResponseType {
-  @scala.inline
-  def _empty: typingsJapgolly.std.stdStrings._empty = this.cast("")
-  @scala.inline
-  def arraybuffer: typingsJapgolly.std.stdStrings.arraybuffer = this.cast("arraybuffer")
-  @scala.inline
-  def blob: typingsJapgolly.std.stdStrings.blob = this.cast("blob")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def document: typingsJapgolly.std.stdStrings.document = this.cast("document")
-  @scala.inline
-  def json: typingsJapgolly.std.stdStrings.json = this.cast("json")
-  @scala.inline
-  def text: typingsJapgolly.std.stdStrings.text = this.cast("text")
+  
+  inline def _empty: typingsJapgolly.std.stdStrings._empty = "".asInstanceOf[typingsJapgolly.std.stdStrings._empty]
+  
+  inline def arraybuffer: typingsJapgolly.std.stdStrings.arraybuffer = "arraybuffer".asInstanceOf[typingsJapgolly.std.stdStrings.arraybuffer]
+  
+  inline def blob: typingsJapgolly.std.stdStrings.blob = "blob".asInstanceOf[typingsJapgolly.std.stdStrings.blob]
+  
+  inline def document: typingsJapgolly.std.stdStrings.document = "document".asInstanceOf[typingsJapgolly.std.stdStrings.document]
+  
+  inline def json: typingsJapgolly.std.stdStrings.json = "json".asInstanceOf[typingsJapgolly.std.stdStrings.json]
+  
+  inline def text: typingsJapgolly.std.stdStrings.text = "text".asInstanceOf[typingsJapgolly.std.stdStrings.text]
 }
-

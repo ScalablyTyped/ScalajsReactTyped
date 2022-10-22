@@ -1,65 +1,63 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EPersonaState extends js.Object
-
+sealed trait EPersonaState extends StObject
 @JSImport("steam-client", "EPersonaState")
 @js.native
-object EPersonaState extends js.Object {
-  @js.native
-  sealed trait Away extends EPersonaState
-  
-  @js.native
-  sealed trait Busy extends EPersonaState
-  
-  @js.native
-  sealed trait LookingToPlay extends EPersonaState
-  
-  @js.native
-  sealed trait LookingToTrade extends EPersonaState
-  
-  @js.native
-  sealed trait Max extends EPersonaState
-  
-  @js.native
-  sealed trait Offline extends EPersonaState
-  
-  @js.native
-  sealed trait Online extends EPersonaState
-  
-  @js.native
-  sealed trait Snooze extends EPersonaState
+object EPersonaState extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EPersonaState with Double] = js.native
-  /* 3 */ @js.native
-  object Away extends TopLevel[Away with Double]
+  def apply(value: Double): js.UndefOr[EPersonaState & Double] = js.native
   
-  /* 2 */ @js.native
-  object Busy extends TopLevel[Busy with Double]
+  @js.native
+  sealed trait Away
+    extends StObject
+       with EPersonaState
+  /* 3 */ val Away: typingsJapgolly.steamClient.mod.EPersonaState.Away & Double = js.native
   
-  /* 6 */ @js.native
-  object LookingToPlay extends TopLevel[LookingToPlay with Double]
+  @js.native
+  sealed trait Busy
+    extends StObject
+       with EPersonaState
+  /* 2 */ val Busy: typingsJapgolly.steamClient.mod.EPersonaState.Busy & Double = js.native
   
-  /* 5 */ @js.native
-  object LookingToTrade extends TopLevel[LookingToTrade with Double]
+  @js.native
+  sealed trait LookingToPlay
+    extends StObject
+       with EPersonaState
+  /* 6 */ val LookingToPlay: typingsJapgolly.steamClient.mod.EPersonaState.LookingToPlay & Double = js.native
   
-  /* 7 */ @js.native
-  object Max extends TopLevel[Max with Double]
+  @js.native
+  sealed trait LookingToTrade
+    extends StObject
+       with EPersonaState
+  /* 5 */ val LookingToTrade: typingsJapgolly.steamClient.mod.EPersonaState.LookingToTrade & Double = js.native
   
-  /* 0 */ @js.native
-  object Offline extends TopLevel[Offline with Double]
+  @js.native
+  sealed trait Max
+    extends StObject
+       with EPersonaState
+  /* 7 */ val Max: typingsJapgolly.steamClient.mod.EPersonaState.Max & Double = js.native
   
-  /* 1 */ @js.native
-  object Online extends TopLevel[Online with Double]
+  @js.native
+  sealed trait Offline
+    extends StObject
+       with EPersonaState
+  /* 0 */ val Offline: typingsJapgolly.steamClient.mod.EPersonaState.Offline & Double = js.native
   
-  /* 4 */ @js.native
-  object Snooze extends TopLevel[Snooze with Double]
+  @js.native
+  sealed trait Online
+    extends StObject
+       with EPersonaState
+  /* 1 */ val Online: typingsJapgolly.steamClient.mod.EPersonaState.Online & Double = js.native
   
+  @js.native
+  sealed trait Snooze
+    extends StObject
+       with EPersonaState
+  /* 4 */ val Snooze: typingsJapgolly.steamClient.mod.EPersonaState.Snooze & Double = js.native
 }
-

@@ -1,14 +1,19 @@
 package typingsJapgolly.rdfDatasetExt
 
-import typingsJapgolly.rdfJs.mod.BaseQuad
-import typingsJapgolly.rdfJs.mod.DatasetCore
+import typingsJapgolly.rdfjsTypes.dataModelMod.BaseQuad
+import typingsJapgolly.rdfjsTypes.datasetMod.DatasetCore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rdf-dataset-ext/toCanonical", JSImport.Namespace)
-@js.native
-object toCanonicalMod extends js.Object {
-  def apply(dataset: DatasetCore[BaseQuad, BaseQuad]): String = js.native
+object toCanonicalMod {
+  
+  /**
+    * Returns the canonical representation of the dataset as string.
+    */
+  inline def apply(dataset: DatasetCore[BaseQuad, BaseQuad]): String = ^.asInstanceOf[js.Dynamic].apply(dataset.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("rdf-dataset-ext/toCanonical", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

@@ -1,155 +1,153 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EDRMBlobDownloadErrorDetail extends js.Object
-
+sealed trait EDRMBlobDownloadErrorDetail extends StObject
 @JSImport("steam-client", "EDRMBlobDownloadErrorDetail")
 @js.native
-object EDRMBlobDownloadErrorDetail extends js.Object {
-  @js.native
-  sealed trait AppIdMismatch extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait AppIdUnexpected extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait AppliedSignatureCorrupt extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait ApplyMergeGuid extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait ApplySignature extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait ApplyStrips extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait ApplyValveSignatureHeader extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait DownloadFailed extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait NextBase extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait None extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait OpenZip extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait PathManipulationError extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait ReadZipDirectory extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait TargetLocked extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait TargetLocked_Base extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait TargetLocked_Max extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait UnexpectedZipEntry extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait UnknownBlobType extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait UnzipFullFile extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait UnzipMergeGuid extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait UnzipSignature extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait UnzipStrips extends EDRMBlobDownloadErrorDetail
-  
-  @js.native
-  sealed trait UnzipValveSignatureHeader extends EDRMBlobDownloadErrorDetail
+object EDRMBlobDownloadErrorDetail extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EDRMBlobDownloadErrorDetail with Double] = js.native
-  /* 14 */ @js.native
-  object AppIdMismatch extends TopLevel[AppIdMismatch with Double]
+  def apply(value: Double): js.UndefOr[EDRMBlobDownloadErrorDetail & Double] = js.native
   
-  /* 15 */ @js.native
-  object AppIdUnexpected extends TopLevel[AppIdUnexpected with Double]
+  @js.native
+  sealed trait AppIdMismatch
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 14 */ val AppIdMismatch: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.AppIdMismatch & Double = js.native
   
-  /* 16 */ @js.native
-  object AppliedSignatureCorrupt extends TopLevel[AppliedSignatureCorrupt with Double]
+  @js.native
+  sealed trait AppIdUnexpected
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 15 */ val AppIdUnexpected: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.AppIdUnexpected & Double = js.native
   
-  /* 12 */ @js.native
-  object ApplyMergeGuid extends TopLevel[ApplyMergeGuid with Double]
+  @js.native
+  sealed trait AppliedSignatureCorrupt
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 16 */ val AppliedSignatureCorrupt: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.AppliedSignatureCorrupt & Double = js.native
   
-  /* 13 */ @js.native
-  object ApplySignature extends TopLevel[ApplySignature with Double]
+  @js.native
+  sealed trait ApplyMergeGuid
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 12 */ val ApplyMergeGuid: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.ApplyMergeGuid & Double = js.native
   
-  /* 11 */ @js.native
-  object ApplyStrips extends TopLevel[ApplyStrips with Double]
+  @js.native
+  sealed trait ApplySignature
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 13 */ val ApplySignature: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.ApplySignature & Double = js.native
   
-  /* 17 */ @js.native
-  object ApplyValveSignatureHeader extends TopLevel[ApplyValveSignatureHeader with Double]
+  @js.native
+  sealed trait ApplyStrips
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 11 */ val ApplyStrips: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.ApplyStrips & Double = js.native
   
-  /* 1 */ @js.native
-  object DownloadFailed extends TopLevel[DownloadFailed with Double]
+  @js.native
+  sealed trait ApplyValveSignatureHeader
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 17 */ val ApplyValveSignatureHeader: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.ApplyValveSignatureHeader & Double = js.native
   
-  /* 131072 */ @js.native
-  object NextBase extends TopLevel[NextBase with Double]
+  @js.native
+  sealed trait DownloadFailed
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 1 */ val DownloadFailed: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.DownloadFailed & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait NextBase
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 131072 */ val NextBase: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.NextBase & Double = js.native
   
-  /* 3 */ @js.native
-  object OpenZip extends TopLevel[OpenZip with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 0 */ val None: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.None & Double = js.native
   
-  /* 19 */ @js.native
-  object PathManipulationError extends TopLevel[PathManipulationError with Double]
+  @js.native
+  sealed trait OpenZip
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 3 */ val OpenZip: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.OpenZip & Double = js.native
   
-  /* 4 */ @js.native
-  object ReadZipDirectory extends TopLevel[ReadZipDirectory with Double]
+  @js.native
+  sealed trait PathManipulationError
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 19 */ val PathManipulationError: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.PathManipulationError & Double = js.native
   
-  /* 2 */ @js.native
-  object TargetLocked extends TopLevel[TargetLocked with Double]
+  @js.native
+  sealed trait ReadZipDirectory
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 4 */ val ReadZipDirectory: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.ReadZipDirectory & Double = js.native
   
-  /* 65536 */ @js.native
-  object TargetLocked_Base extends TopLevel[TargetLocked_Base with Double]
+  @js.native
+  sealed trait TargetLocked
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 2 */ val TargetLocked: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.TargetLocked & Double = js.native
   
-  /* 131071 */ @js.native
-  object TargetLocked_Max extends TopLevel[TargetLocked_Max with Double]
+  @js.native
+  sealed trait TargetLocked_Base
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 65536 */ val TargetLocked_Base: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.TargetLocked_Base & Double = js.native
   
-  /* 5 */ @js.native
-  object UnexpectedZipEntry extends TopLevel[UnexpectedZipEntry with Double]
+  @js.native
+  sealed trait TargetLocked_Max
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 131071 */ val TargetLocked_Max: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.TargetLocked_Max & Double = js.native
   
-  /* 7 */ @js.native
-  object UnknownBlobType extends TopLevel[UnknownBlobType with Double]
+  @js.native
+  sealed trait UnexpectedZipEntry
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 5 */ val UnexpectedZipEntry: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.UnexpectedZipEntry & Double = js.native
   
-  /* 6 */ @js.native
-  object UnzipFullFile extends TopLevel[UnzipFullFile with Double]
+  @js.native
+  sealed trait UnknownBlobType
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 7 */ val UnknownBlobType: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.UnknownBlobType & Double = js.native
   
-  /* 9 */ @js.native
-  object UnzipMergeGuid extends TopLevel[UnzipMergeGuid with Double]
+  @js.native
+  sealed trait UnzipFullFile
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 6 */ val UnzipFullFile: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.UnzipFullFile & Double = js.native
   
-  /* 10 */ @js.native
-  object UnzipSignature extends TopLevel[UnzipSignature with Double]
+  @js.native
+  sealed trait UnzipMergeGuid
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 9 */ val UnzipMergeGuid: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.UnzipMergeGuid & Double = js.native
   
-  /* 8 */ @js.native
-  object UnzipStrips extends TopLevel[UnzipStrips with Double]
+  @js.native
+  sealed trait UnzipSignature
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 10 */ val UnzipSignature: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.UnzipSignature & Double = js.native
   
-  /* 18 */ @js.native
-  object UnzipValveSignatureHeader extends TopLevel[UnzipValveSignatureHeader with Double]
+  @js.native
+  sealed trait UnzipStrips
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 8 */ val UnzipStrips: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.UnzipStrips & Double = js.native
   
+  @js.native
+  sealed trait UnzipValveSignatureHeader
+    extends StObject
+       with EDRMBlobDownloadErrorDetail
+  /* 18 */ val UnzipValveSignatureHeader: typingsJapgolly.steamClient.mod.EDRMBlobDownloadErrorDetail.UnzipValveSignatureHeader & Double = js.native
 }
-

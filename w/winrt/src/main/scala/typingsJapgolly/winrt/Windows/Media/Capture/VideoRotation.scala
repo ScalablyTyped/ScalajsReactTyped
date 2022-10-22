@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Media.Capture
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VideoRotation extends js.Object
-
+sealed trait VideoRotation extends StObject
 @JSGlobal("Windows.Media.Capture.VideoRotation")
 @js.native
-object VideoRotation extends js.Object {
-  @js.native
-  sealed trait clockwise180Degrees extends VideoRotation
+object VideoRotation extends StObject {
   
   @js.native
-  sealed trait clockwise270Degrees extends VideoRotation
+  sealed trait clockwise180Degrees
+    extends StObject
+       with VideoRotation
   
   @js.native
-  sealed trait clockwise90Degrees extends VideoRotation
+  sealed trait clockwise270Degrees
+    extends StObject
+       with VideoRotation
   
   @js.native
-  sealed trait none extends VideoRotation
+  sealed trait clockwise90Degrees
+    extends StObject
+       with VideoRotation
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VideoRotation with Double] = js.native
-  /* 2 */ @js.native
-  object clockwise180Degrees extends TopLevel[clockwise180Degrees with Double]
-  
-  /* 3 */ @js.native
-  object clockwise270Degrees extends TopLevel[clockwise270Degrees with Double]
-  
-  /* 1 */ @js.native
-  object clockwise90Degrees extends TopLevel[clockwise90Degrees with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  @js.native
+  sealed trait none
+    extends StObject
+       with VideoRotation
 }
-

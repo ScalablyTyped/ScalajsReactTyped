@@ -1,9 +1,9 @@
 package typingsJapgolly.tensorflowTfjs.mod
 
-import typingsJapgolly.tensorflowTfjsLayers.baseCallbacksMod.BaseCallback
+import typingsJapgolly.tensorflowTfjsLayers.distBaseCallbacksMod.BaseCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs", "CallbackList")
 @js.native
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
   * @param queueLength Queue length for keeping running statistics over
   *   callback execution time.
   */
-class CallbackList ()
+open class CallbackList ()
   extends typingsJapgolly.tensorflowTfjsLayers.mod.CallbackList {
   def this(callbacks: js.Array[BaseCallback]) = this()
   def this(callbacks: js.Array[BaseCallback], queueLength: Double) = this()
+  def this(callbacks: Unit, queueLength: Double) = this()
 }
-

@@ -10,10 +10,10 @@ A simple React component capable of building HTML forms out of a JSON schema.
 | ------------------ | :-------------: |
 | Full name          | react-jsonschema-form |
 | Keywords           | react, form, json-schema |
-| # releases         | 22 |
-| # dependents       | 121 |
-| # downloads        | 2247884 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 220436.33333333334 |
+| # stars            | 11850.0 |
 
 ## Links
 - [Homepage](https://github.com/mozilla-services/react-jsonschema-form#readme)

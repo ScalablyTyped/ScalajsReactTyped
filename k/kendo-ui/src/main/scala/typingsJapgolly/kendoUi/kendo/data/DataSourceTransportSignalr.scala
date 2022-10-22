@@ -1,30 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSourceTransportSignalr extends js.Object {
+trait DataSourceTransportSignalr extends StObject {
+  
   var client: js.UndefOr[DataSourceTransportSignalrClient] = js.undefined
-  var hub: js.UndefOr[js.Any] = js.undefined
-  var promise: js.UndefOr[js.Any] = js.undefined
+  
+  var hub: js.UndefOr[Any] = js.undefined
+  
+  var promise: js.UndefOr[Any] = js.undefined
+  
   var server: js.UndefOr[DataSourceTransportSignalrServer] = js.undefined
 }
-
 object DataSourceTransportSignalr {
-  @scala.inline
-  def apply(
-    client: DataSourceTransportSignalrClient = null,
-    hub: js.Any = null,
-    promise: js.Any = null,
-    server: DataSourceTransportSignalrServer = null
-  ): DataSourceTransportSignalr = {
+  
+  inline def apply(): DataSourceTransportSignalr = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (hub != null) __obj.updateDynamic("hub")(hub.asInstanceOf[js.Any])
-    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
-    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceTransportSignalr]
   }
+  
+  extension [Self <: DataSourceTransportSignalr](x: Self) {
+    
+    inline def setClient(value: DataSourceTransportSignalrClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    
+    inline def setHub(value: Any): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
+    
+    inline def setHubUndefined: Self = StObject.set(x, "hub", js.undefined)
+    
+    inline def setPromise(value: Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    
+    inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+    
+    inline def setServer(value: DataSourceTransportSignalrServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+  }
 }
-

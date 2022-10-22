@@ -1,47 +1,45 @@
 package typingsJapgolly.riotjsDomBindings.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BindingType extends js.Object
-
+sealed trait BindingType extends StObject
 @JSImport("@riotjs/dom-bindings", "BindingType")
 @js.native
-object BindingType extends js.Object {
-  @js.native
-  sealed trait EACH extends BindingType
-  
-  @js.native
-  sealed trait IF extends BindingType
-  
-  @js.native
-  sealed trait SIMPLE extends BindingType
-  
-  @js.native
-  sealed trait SLOT extends BindingType
-  
-  @js.native
-  sealed trait TAG extends BindingType
+object BindingType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BindingType with Double] = js.native
-  /* 0 */ @js.native
-  object EACH extends TopLevel[EACH with Double]
+  def apply(value: Double): js.UndefOr[BindingType & Double] = js.native
   
-  /* 1 */ @js.native
-  object IF extends TopLevel[IF with Double]
+  @js.native
+  sealed trait EACH
+    extends StObject
+       with BindingType
+  /* 0 */ val EACH: typingsJapgolly.riotjsDomBindings.mod.BindingType.EACH & Double = js.native
   
-  /* 2 */ @js.native
-  object SIMPLE extends TopLevel[SIMPLE with Double]
+  @js.native
+  sealed trait IF
+    extends StObject
+       with BindingType
+  /* 1 */ val IF: typingsJapgolly.riotjsDomBindings.mod.BindingType.IF & Double = js.native
   
-  /* 4 */ @js.native
-  object SLOT extends TopLevel[SLOT with Double]
+  @js.native
+  sealed trait SIMPLE
+    extends StObject
+       with BindingType
+  /* 2 */ val SIMPLE: typingsJapgolly.riotjsDomBindings.mod.BindingType.SIMPLE & Double = js.native
   
-  /* 3 */ @js.native
-  object TAG extends TopLevel[TAG with Double]
+  @js.native
+  sealed trait SLOT
+    extends StObject
+       with BindingType
+  /* 4 */ val SLOT: typingsJapgolly.riotjsDomBindings.mod.BindingType.SLOT & Double = js.native
   
+  @js.native
+  sealed trait TAG
+    extends StObject
+       with BindingType
+  /* 3 */ val TAG: typingsJapgolly.riotjsDomBindings.mod.BindingType.TAG & Double = js.native
 }
-

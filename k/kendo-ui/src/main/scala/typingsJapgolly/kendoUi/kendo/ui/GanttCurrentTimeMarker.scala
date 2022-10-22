@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GanttCurrentTimeMarker extends js.Object {
+trait GanttCurrentTimeMarker extends StObject {
+  
   var updateInterval: js.UndefOr[Double] = js.undefined
 }
-
 object GanttCurrentTimeMarker {
-  @scala.inline
-  def apply(updateInterval: Int | Double = null): GanttCurrentTimeMarker = {
+  
+  inline def apply(): GanttCurrentTimeMarker = {
     val __obj = js.Dynamic.literal()
-    if (updateInterval != null) __obj.updateDynamic("updateInterval")(updateInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttCurrentTimeMarker]
   }
+  
+  extension [Self <: GanttCurrentTimeMarker](x: Self) {
+    
+    inline def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateIntervalUndefined: Self = StObject.set(x, "updateInterval", js.undefined)
+  }
 }
-

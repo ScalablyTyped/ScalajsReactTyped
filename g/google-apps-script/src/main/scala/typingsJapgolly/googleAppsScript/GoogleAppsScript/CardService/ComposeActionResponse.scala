@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response object that may be returned from a callback method for compose action in a Gmail add-on.
@@ -17,16 +17,19 @@ import scala.scalajs.js.annotation._
   *         .setGmailDraft(GmailApp.createDraft("recipient", "subject", "body"))
   *         .build();
   */
-trait ComposeActionResponse extends js.Object {
+trait ComposeActionResponse extends StObject {
+  
   def printJson(): String
 }
-
 object ComposeActionResponse {
-  @scala.inline
-  def apply(printJson: CallbackTo[String]): ComposeActionResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("printJson")(printJson.toJsFn)
+  
+  inline def apply(printJson: CallbackTo[String]): ComposeActionResponse = {
+    val __obj = js.Dynamic.literal(printJson = printJson.toJsFn)
     __obj.asInstanceOf[ComposeActionResponse]
   }
+  
+  extension [Self <: ComposeActionResponse](x: Self) {
+    
+    inline def setPrintJson(value: CallbackTo[String]): Self = StObject.set(x, "printJson", value.toJsFn)
+  }
 }
-

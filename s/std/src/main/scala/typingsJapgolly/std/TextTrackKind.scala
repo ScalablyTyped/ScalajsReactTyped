@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.captions
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.metadata
   - typingsJapgolly.std.stdStrings.subtitles
 */
-trait TextTrackKind extends js.Object
-
+trait TextTrackKind extends StObject
 object TextTrackKind {
-  @scala.inline
-  def captions: typingsJapgolly.std.stdStrings.captions = this.cast("captions")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def chapters: typingsJapgolly.std.stdStrings.chapters = this.cast("chapters")
-  @scala.inline
-  def descriptions: typingsJapgolly.std.stdStrings.descriptions = this.cast("descriptions")
-  @scala.inline
-  def metadata: typingsJapgolly.std.stdStrings.metadata = this.cast("metadata")
-  @scala.inline
-  def subtitles: typingsJapgolly.std.stdStrings.subtitles = this.cast("subtitles")
+  
+  inline def captions: typingsJapgolly.std.stdStrings.captions = "captions".asInstanceOf[typingsJapgolly.std.stdStrings.captions]
+  
+  inline def chapters: typingsJapgolly.std.stdStrings.chapters = "chapters".asInstanceOf[typingsJapgolly.std.stdStrings.chapters]
+  
+  inline def descriptions: typingsJapgolly.std.stdStrings.descriptions = "descriptions".asInstanceOf[typingsJapgolly.std.stdStrings.descriptions]
+  
+  inline def metadata: typingsJapgolly.std.stdStrings.metadata = "metadata".asInstanceOf[typingsJapgolly.std.stdStrings.metadata]
+  
+  inline def subtitles: typingsJapgolly.std.stdStrings.subtitles = "subtitles".asInstanceOf[typingsJapgolly.std.stdStrings.subtitles]
 }
-

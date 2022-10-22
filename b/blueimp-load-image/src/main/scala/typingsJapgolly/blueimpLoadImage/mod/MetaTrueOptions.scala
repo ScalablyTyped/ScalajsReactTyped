@@ -1,21 +1,33 @@
 package typingsJapgolly.blueimpLoadImage.mod
 
 import typingsJapgolly.blueimpLoadImage.blueimpLoadImageBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MetaTrueOptions extends MetaOptions {
+// Setting 'orientation' automatically sets 'meta' to true
+// so setting it to false is not valid in that case
+trait MetaTrueOptions
+  extends StObject
+     with MetaOptions {
+  
   var meta: js.UndefOr[`true`] = js.undefined
+  
   var orientation: Orientation
 }
-
 object MetaTrueOptions {
-  @scala.inline
-  def apply(orientation: Orientation, meta: `true` = null): MetaTrueOptions = {
+  
+  inline def apply(orientation: Orientation): MetaTrueOptions = {
     val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaTrueOptions]
   }
+  
+  extension [Self <: MetaTrueOptions](x: Self) {
+    
+    inline def setMeta(value: `true`): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    
+    inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+  }
 }
-

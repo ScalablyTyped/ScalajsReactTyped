@@ -1,13 +1,15 @@
 package typingsJapgolly.vinylSourceStream
 
 import typingsJapgolly.node.NodeJS.ReadWriteStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vinyl-source-stream", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(filename: String): ReadWriteStream = js.native
+object mod {
+  
+  inline def apply(filename: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  
+  @JSImport("vinyl-source-stream", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

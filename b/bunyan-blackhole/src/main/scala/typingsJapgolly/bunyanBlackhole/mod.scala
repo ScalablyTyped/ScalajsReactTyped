@@ -1,18 +1,19 @@
 package typingsJapgolly.bunyanBlackhole
 
-import typingsJapgolly.bunyan.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bunyan-blackhole", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Constructor.
     * @param name name of the blackhole Logger
     * @return A bunyan logger .
     */
-  def apply(name: String): ^ = js.native
+  inline def apply(name: String): typingsJapgolly.bunyan.mod.^ = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.bunyan.mod.^]
+  
+  @JSImport("bunyan-blackhole", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

@@ -1,33 +1,48 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartXAxisItemLabelsDateFormats extends js.Object {
+trait ChartXAxisItemLabelsDateFormats extends StObject {
+  
   var days: js.UndefOr[String] = js.undefined
+  
   var hours: js.UndefOr[String] = js.undefined
+  
   var months: js.UndefOr[String] = js.undefined
+  
   var weeks: js.UndefOr[String] = js.undefined
+  
   var years: js.UndefOr[String] = js.undefined
 }
-
 object ChartXAxisItemLabelsDateFormats {
-  @scala.inline
-  def apply(
-    days: String = null,
-    hours: String = null,
-    months: String = null,
-    weeks: String = null,
-    years: String = null
-  ): ChartXAxisItemLabelsDateFormats = {
+  
+  inline def apply(): ChartXAxisItemLabelsDateFormats = {
     val __obj = js.Dynamic.literal()
-    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
-    if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
-    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
-    if (weeks != null) __obj.updateDynamic("weeks")(weeks.asInstanceOf[js.Any])
-    if (years != null) __obj.updateDynamic("years")(years.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartXAxisItemLabelsDateFormats]
   }
+  
+  extension [Self <: ChartXAxisItemLabelsDateFormats](x: Self) {
+    
+    inline def setDays(value: String): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+    
+    inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
+    
+    inline def setHours(value: String): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+    
+    inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
+    
+    inline def setMonths(value: String): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+    
+    inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
+    
+    inline def setWeeks(value: String): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
+    
+    inline def setWeeksUndefined: Self = StObject.set(x, "weeks", js.undefined)
+    
+    inline def setYears(value: String): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
+    
+    inline def setYearsUndefined: Self = StObject.set(x, "years", js.undefined)
+  }
 }
-

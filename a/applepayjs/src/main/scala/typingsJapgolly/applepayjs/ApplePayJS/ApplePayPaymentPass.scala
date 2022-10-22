@@ -1,48 +1,64 @@
 package typingsJapgolly.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a provisioned payment card for Apple Pay payments.
   */
-trait ApplePayPaymentPass extends js.Object {
+trait ApplePayPaymentPass extends StObject {
+  
   /**
     * The activation state of the pass.
     */
   var activationState: ApplePayPaymentPassActivationState
+  
   /**
     * The unique identifier for the device-specific account number.
     */
   var deviceAccountIdentifier: js.UndefOr[String] = js.undefined
+  
   /**
     * A version of the device account number suitable for display in your UI.
     */
   var deviceAccountNumberSuffix: js.UndefOr[String] = js.undefined
+  
   /**
     * The unique identifier for the primary account number for the payment card.
     */
   var primaryAccountIdentifier: String
+  
   /**
     * A version of the primary account number suitable for display in your UI.
     */
   var primaryAccountNumberSuffix: String
 }
-
 object ApplePayPaymentPass {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     activationState: ApplePayPaymentPassActivationState,
     primaryAccountIdentifier: String,
-    primaryAccountNumberSuffix: String,
-    deviceAccountIdentifier: String = null,
-    deviceAccountNumberSuffix: String = null
+    primaryAccountNumberSuffix: String
   ): ApplePayPaymentPass = {
     val __obj = js.Dynamic.literal(activationState = activationState.asInstanceOf[js.Any], primaryAccountIdentifier = primaryAccountIdentifier.asInstanceOf[js.Any], primaryAccountNumberSuffix = primaryAccountNumberSuffix.asInstanceOf[js.Any])
-    if (deviceAccountIdentifier != null) __obj.updateDynamic("deviceAccountIdentifier")(deviceAccountIdentifier.asInstanceOf[js.Any])
-    if (deviceAccountNumberSuffix != null) __obj.updateDynamic("deviceAccountNumberSuffix")(deviceAccountNumberSuffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayPaymentPass]
   }
+  
+  extension [Self <: ApplePayPaymentPass](x: Self) {
+    
+    inline def setActivationState(value: ApplePayPaymentPassActivationState): Self = StObject.set(x, "activationState", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceAccountIdentifier(value: String): Self = StObject.set(x, "deviceAccountIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceAccountIdentifierUndefined: Self = StObject.set(x, "deviceAccountIdentifier", js.undefined)
+    
+    inline def setDeviceAccountNumberSuffix(value: String): Self = StObject.set(x, "deviceAccountNumberSuffix", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceAccountNumberSuffixUndefined: Self = StObject.set(x, "deviceAccountNumberSuffix", js.undefined)
+    
+    inline def setPrimaryAccountIdentifier(value: String): Self = StObject.set(x, "primaryAccountIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryAccountNumberSuffix(value: String): Self = StObject.set(x, "primaryAccountNumberSuffix", value.asInstanceOf[js.Any])
+  }
 }
-

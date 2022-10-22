@@ -1,17 +1,20 @@
-package typingsJapgolly.jsoneditor
+package typingsJapgolly.jsoneditor.mod
 
+import typingsJapgolly.jsoneditor.anon.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type AutoCompleteCompletion = scala.Null | js.Array[java.lang.String] | typingsJapgolly.jsoneditor.AnonOptions
-  type AutoCompleteOptionsGetter = js.Function4[
-    /* text */ java.lang.String, 
-    /* path */ typingsJapgolly.jsoneditor.mod.JSONPath, 
-    /* input */ java.lang.String, 
-    /* editor */ typingsJapgolly.jsoneditor.mod.JSONEditor, 
-    typingsJapgolly.jsoneditor.mod.AutoCompleteCompletion | js.Promise[typingsJapgolly.jsoneditor.mod.AutoCompleteCompletion]
-  ]
-  type JSONPath = js.Array[java.lang.String | scala.Double]
-}
+
+type AutoCompleteCompletion = Null | js.Array[String] | Options
+
+type AutoCompleteGetOptions = js.Function4[
+/* text */ String, 
+/* path */ JSONPath, 
+/* input */ AutoCompleteElementType, 
+/* editor */ JSONEditor, 
+AutoCompleteCompletion | js.Promise[AutoCompleteCompletion]]
+
+type JSONPath = js.Array[String | Double]
+
+type NodeValue = String | Boolean | Double | Null

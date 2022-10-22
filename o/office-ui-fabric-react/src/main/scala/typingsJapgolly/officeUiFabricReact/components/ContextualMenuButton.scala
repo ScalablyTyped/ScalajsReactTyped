@@ -1,16 +1,36 @@
 package typingsJapgolly.officeUiFabricReact.components
 
+import typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDotclassNamesMod.IMenuItemClassNames
+import typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.IContextualMenuItem
+import typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuItemWrapperContextualMenuItemWrapperDottypesMod.IContextualMenuItemWrapperProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object ContextualMenuButton
-  extends SharedApply_IContextualMenuItemWrapperProps_70999115[
-      typingsJapgolly.officeUiFabricReact.contextualMenuItemWrapperMod.ContextualMenuButton
-    ] {
+object ContextualMenuButton {
+  
+  inline def apply(
+    classNames: IMenuItemClassNames,
+    focusableElementIndex: Double,
+    index: Double,
+    item: IContextualMenuItem,
+    totalItemCount: Double
+  ): SharedBuilder_IContextualMenuItemWrapperProps_1138345542[
+    typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuItemWrapperMod.ContextualMenuButton
+  ] = {
+    val __props = js.Dynamic.literal(classNames = classNames.asInstanceOf[js.Any], focusableElementIndex = focusableElementIndex.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], totalItemCount = totalItemCount.asInstanceOf[js.Any])
+    new SharedBuilder_IContextualMenuItemWrapperProps_1138345542[
+    typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuItemWrapperMod.ContextualMenuButton
+  ](js.Array(this.component, __props.asInstanceOf[IContextualMenuItemWrapperProps]))
+  }
+  
   @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenuItemWrapper", "ContextualMenuButton")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: IContextualMenuItemWrapperProps): SharedBuilder_IContextualMenuItemWrapperProps_1138345542[
+    typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuItemWrapperMod.ContextualMenuButton
+  ] = new SharedBuilder_IContextualMenuItemWrapperProps_1138345542[
+    typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuItemWrapperMod.ContextualMenuButton
+  ](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

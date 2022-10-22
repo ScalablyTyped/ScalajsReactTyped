@@ -1,8 +1,8 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.alias
@@ -42,80 +42,76 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.highcharts.highchartsStrings.`zoom-in`
   - typingsJapgolly.highcharts.highchartsStrings.`zoom-out`
 */
-trait CursorValue extends js.Object
-
+trait CursorValue extends StObject
 object CursorValue {
-  @scala.inline
-  def alias: typingsJapgolly.highcharts.highchartsStrings.alias = this.cast("alias")
-  @scala.inline
-  def `all-scroll`: typingsJapgolly.highcharts.highchartsStrings.`all-scroll` = this.cast("all-scroll")
-  @scala.inline
-  def auto: typingsJapgolly.highcharts.highchartsStrings.auto = this.cast("auto")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def cell: typingsJapgolly.highcharts.highchartsStrings.cell = this.cast("cell")
-  @scala.inline
-  def `col-resize`: typingsJapgolly.highcharts.highchartsStrings.`col-resize` = this.cast("col-resize")
-  @scala.inline
-  def `context-menu`: typingsJapgolly.highcharts.highchartsStrings.`context-menu` = this.cast("context-menu")
-  @scala.inline
-  def copy: typingsJapgolly.highcharts.highchartsStrings.copy = this.cast("copy")
-  @scala.inline
-  def crosshair: typingsJapgolly.highcharts.highchartsStrings.crosshair = this.cast("crosshair")
-  @scala.inline
-  def default: typingsJapgolly.highcharts.highchartsStrings.default = this.cast("default")
-  @scala.inline
-  def `e-resize`: typingsJapgolly.highcharts.highchartsStrings.`e-resize` = this.cast("e-resize")
-  @scala.inline
-  def `ew-resize`: typingsJapgolly.highcharts.highchartsStrings.`ew-resize` = this.cast("ew-resize")
-  @scala.inline
-  def grab: typingsJapgolly.highcharts.highchartsStrings.grab = this.cast("grab")
-  @scala.inline
-  def grabbing: typingsJapgolly.highcharts.highchartsStrings.grabbing = this.cast("grabbing")
-  @scala.inline
-  def help: typingsJapgolly.highcharts.highchartsStrings.help = this.cast("help")
-  @scala.inline
-  def move: typingsJapgolly.highcharts.highchartsStrings.move = this.cast("move")
-  @scala.inline
-  def `n-resize`: typingsJapgolly.highcharts.highchartsStrings.`n-resize` = this.cast("n-resize")
-  @scala.inline
-  def `ne-resize`: typingsJapgolly.highcharts.highchartsStrings.`ne-resize` = this.cast("ne-resize")
-  @scala.inline
-  def `nesw-resize`: typingsJapgolly.highcharts.highchartsStrings.`nesw-resize` = this.cast("nesw-resize")
-  @scala.inline
-  def `no-drop`: typingsJapgolly.highcharts.highchartsStrings.`no-drop` = this.cast("no-drop")
-  @scala.inline
-  def none: typingsJapgolly.highcharts.highchartsStrings.none = this.cast("none")
-  @scala.inline
-  def `not-allowed`: typingsJapgolly.highcharts.highchartsStrings.`not-allowed` = this.cast("not-allowed")
-  @scala.inline
-  def `ns-resize`: typingsJapgolly.highcharts.highchartsStrings.`ns-resize` = this.cast("ns-resize")
-  @scala.inline
-  def `nw-resize`: typingsJapgolly.highcharts.highchartsStrings.`nw-resize` = this.cast("nw-resize")
-  @scala.inline
-  def `nwse-resize`: typingsJapgolly.highcharts.highchartsStrings.`nwse-resize` = this.cast("nwse-resize")
-  @scala.inline
-  def pointer: typingsJapgolly.highcharts.highchartsStrings.pointer = this.cast("pointer")
-  @scala.inline
-  def progress: typingsJapgolly.highcharts.highchartsStrings.progress = this.cast("progress")
-  @scala.inline
-  def `row-resize`: typingsJapgolly.highcharts.highchartsStrings.`row-resize` = this.cast("row-resize")
-  @scala.inline
-  def `s-resize`: typingsJapgolly.highcharts.highchartsStrings.`s-resize` = this.cast("s-resize")
-  @scala.inline
-  def `se-resize`: typingsJapgolly.highcharts.highchartsStrings.`se-resize` = this.cast("se-resize")
-  @scala.inline
-  def `sw-resize`: typingsJapgolly.highcharts.highchartsStrings.`sw-resize` = this.cast("sw-resize")
-  @scala.inline
-  def text: typingsJapgolly.highcharts.highchartsStrings.text = this.cast("text")
-  @scala.inline
-  def `vertical-text`: typingsJapgolly.highcharts.highchartsStrings.`vertical-text` = this.cast("vertical-text")
-  @scala.inline
-  def `w-resize`: typingsJapgolly.highcharts.highchartsStrings.`w-resize` = this.cast("w-resize")
-  @scala.inline
-  def `zoom-in`: typingsJapgolly.highcharts.highchartsStrings.`zoom-in` = this.cast("zoom-in")
-  @scala.inline
-  def `zoom-out`: typingsJapgolly.highcharts.highchartsStrings.`zoom-out` = this.cast("zoom-out")
+  
+  inline def default: typingsJapgolly.highcharts.highchartsStrings.default = "default".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.default]
+  
+  inline def alias: typingsJapgolly.highcharts.highchartsStrings.alias = "alias".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.alias]
+  
+  inline def `all-scroll`: typingsJapgolly.highcharts.highchartsStrings.`all-scroll` = "all-scroll".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`all-scroll`]
+  
+  inline def auto: typingsJapgolly.highcharts.highchartsStrings.auto = "auto".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.auto]
+  
+  inline def cell: typingsJapgolly.highcharts.highchartsStrings.cell = "cell".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.cell]
+  
+  inline def `col-resize`: typingsJapgolly.highcharts.highchartsStrings.`col-resize` = "col-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`col-resize`]
+  
+  inline def `context-menu`: typingsJapgolly.highcharts.highchartsStrings.`context-menu` = "context-menu".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`context-menu`]
+  
+  inline def copy: typingsJapgolly.highcharts.highchartsStrings.copy = "copy".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.copy]
+  
+  inline def crosshair: typingsJapgolly.highcharts.highchartsStrings.crosshair = "crosshair".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.crosshair]
+  
+  inline def `e-resize`: typingsJapgolly.highcharts.highchartsStrings.`e-resize` = "e-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`e-resize`]
+  
+  inline def `ew-resize`: typingsJapgolly.highcharts.highchartsStrings.`ew-resize` = "ew-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`ew-resize`]
+  
+  inline def grab: typingsJapgolly.highcharts.highchartsStrings.grab = "grab".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.grab]
+  
+  inline def grabbing: typingsJapgolly.highcharts.highchartsStrings.grabbing = "grabbing".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.grabbing]
+  
+  inline def help: typingsJapgolly.highcharts.highchartsStrings.help = "help".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.help]
+  
+  inline def move: typingsJapgolly.highcharts.highchartsStrings.move = "move".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.move]
+  
+  inline def `n-resize`: typingsJapgolly.highcharts.highchartsStrings.`n-resize` = "n-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`n-resize`]
+  
+  inline def `ne-resize`: typingsJapgolly.highcharts.highchartsStrings.`ne-resize` = "ne-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`ne-resize`]
+  
+  inline def `nesw-resize`: typingsJapgolly.highcharts.highchartsStrings.`nesw-resize` = "nesw-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`nesw-resize`]
+  
+  inline def `no-drop`: typingsJapgolly.highcharts.highchartsStrings.`no-drop` = "no-drop".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`no-drop`]
+  
+  inline def none: typingsJapgolly.highcharts.highchartsStrings.none = "none".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.none]
+  
+  inline def `not-allowed`: typingsJapgolly.highcharts.highchartsStrings.`not-allowed` = "not-allowed".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`not-allowed`]
+  
+  inline def `ns-resize`: typingsJapgolly.highcharts.highchartsStrings.`ns-resize` = "ns-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`ns-resize`]
+  
+  inline def `nw-resize`: typingsJapgolly.highcharts.highchartsStrings.`nw-resize` = "nw-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`nw-resize`]
+  
+  inline def `nwse-resize`: typingsJapgolly.highcharts.highchartsStrings.`nwse-resize` = "nwse-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`nwse-resize`]
+  
+  inline def pointer: typingsJapgolly.highcharts.highchartsStrings.pointer = "pointer".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.pointer]
+  
+  inline def progress: typingsJapgolly.highcharts.highchartsStrings.progress = "progress".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.progress]
+  
+  inline def `row-resize`: typingsJapgolly.highcharts.highchartsStrings.`row-resize` = "row-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`row-resize`]
+  
+  inline def `s-resize`: typingsJapgolly.highcharts.highchartsStrings.`s-resize` = "s-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`s-resize`]
+  
+  inline def `se-resize`: typingsJapgolly.highcharts.highchartsStrings.`se-resize` = "se-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`se-resize`]
+  
+  inline def `sw-resize`: typingsJapgolly.highcharts.highchartsStrings.`sw-resize` = "sw-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`sw-resize`]
+  
+  inline def text: typingsJapgolly.highcharts.highchartsStrings.text = "text".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.text]
+  
+  inline def `vertical-text`: typingsJapgolly.highcharts.highchartsStrings.`vertical-text` = "vertical-text".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`vertical-text`]
+  
+  inline def `w-resize`: typingsJapgolly.highcharts.highchartsStrings.`w-resize` = "w-resize".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`w-resize`]
+  
+  inline def `zoom-in`: typingsJapgolly.highcharts.highchartsStrings.`zoom-in` = "zoom-in".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`zoom-in`]
+  
+  inline def `zoom-out`: typingsJapgolly.highcharts.highchartsStrings.`zoom-out` = "zoom-out".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`zoom-out`]
 }
-

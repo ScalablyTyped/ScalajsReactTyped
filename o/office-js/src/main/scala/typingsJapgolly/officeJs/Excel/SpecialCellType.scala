@@ -1,108 +1,96 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SpecialCellType extends js.Object
-
+sealed trait SpecialCellType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.SpecialCellType")
 @js.native
-object SpecialCellType extends js.Object {
+object SpecialCellType extends StObject {
+  
   /**
-    *
     * Cells with no content.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait blanks extends SpecialCellType
+  sealed trait blanks
+    extends StObject
+       with SpecialCellType
   
   /**
-    *
-    * All cells with conditional formats
-    *
+    * All cells with conditional formats.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait conditionalFormats extends SpecialCellType
+  sealed trait conditionalFormats
+    extends StObject
+       with SpecialCellType
   
   /**
-    *
     * Cells containing constants.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait constants extends SpecialCellType
+  sealed trait constants
+    extends StObject
+       with SpecialCellType
   
   /**
-    *
-    * Cells having validation criteria.
-    *
+    * Cells with validation criteria.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait dataValidations extends SpecialCellType
+  sealed trait dataValidations
+    extends StObject
+       with SpecialCellType
   
   /**
-    *
     * Cells containing formulas.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait formulas extends SpecialCellType
+  sealed trait formulas
+    extends StObject
+       with SpecialCellType
   
   /**
-    *
-    * Cells having the same conditional format as the first cell in the range.
-    *
+    * Cells with the same conditional format as the first cell in the range.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait sameConditionalFormat extends SpecialCellType
+  sealed trait sameConditionalFormat
+    extends StObject
+       with SpecialCellType
   
   /**
-    *
-    * Cells having the same data validation criteria as the first cell in the range.
-    *
+    * Cells with the same data validation criteria as the first cell in the range.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait sameDataValidation extends SpecialCellType
+  sealed trait sameDataValidation
+    extends StObject
+       with SpecialCellType
   
   /**
-    *
     * Cells that are visible.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait visible extends SpecialCellType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SpecialCellType with String] = js.native
-  /* "Blanks" */ @js.native
-  object blanks extends TopLevel[blanks with String]
-  
-  /* "ConditionalFormats" */ @js.native
-  object conditionalFormats extends TopLevel[conditionalFormats with String]
-  
-  /* "Constants" */ @js.native
-  object constants extends TopLevel[constants with String]
-  
-  /* "DataValidations" */ @js.native
-  object dataValidations extends TopLevel[dataValidations with String]
-  
-  /* "Formulas" */ @js.native
-  object formulas extends TopLevel[formulas with String]
-  
-  /* "SameConditionalFormat" */ @js.native
-  object sameConditionalFormat extends TopLevel[sameConditionalFormat with String]
-  
-  /* "SameDataValidation" */ @js.native
-  object sameDataValidation extends TopLevel[sameDataValidation with String]
-  
-  /* "Visible" */ @js.native
-  object visible extends TopLevel[visible with String]
-  
+  sealed trait visible
+    extends StObject
+       with SpecialCellType
 }
-

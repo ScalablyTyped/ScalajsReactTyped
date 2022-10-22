@@ -1,360 +1,218 @@
 package typingsJapgolly.bootstrap
 
-import typingsJapgolly.bootstrap.mod.AlertEvent
-import typingsJapgolly.bootstrap.mod.CarouselEvent
-import typingsJapgolly.bootstrap.mod.CollapseEvent
-import typingsJapgolly.bootstrap.mod.DropdownEvent
-import typingsJapgolly.bootstrap.mod.ModalEvent
-import typingsJapgolly.bootstrap.mod.Placement
-import typingsJapgolly.bootstrap.mod.PopoverEvent
-import typingsJapgolly.bootstrap.mod.TapEvent
-import typingsJapgolly.bootstrap.mod.ToastEvent
-import typingsJapgolly.bootstrap.mod.TooltipEvent
-import typingsJapgolly.bootstrap.mod.Trigger
+import typingsJapgolly.bootstrap.jsDistCarouselMod.Carousel.Direction
+import typingsJapgolly.bootstrap.jsDistTooltipMod.Tooltip.PopoverPlacement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bootstrapStrings {
-  @js.native
-  sealed trait activateDotbsDotscrollspy extends js.Object
-  
-  @js.native
-  sealed trait auto extends Placement
-  
-  @js.native
-  sealed trait bottom extends Placement
-  
-  @js.native
-  sealed trait click extends Trigger
-  
-  @js.native
-  sealed trait `click focus` extends Trigger
-  
-  @js.native
-  sealed trait `click hover` extends Trigger
-  
-  @js.native
-  sealed trait `click hover focus` extends Trigger
-  
-  @js.native
-  sealed trait close extends js.Object
-  
-  @js.native
-  sealed trait closeDotbsDotalert extends AlertEvent
-  
-  @js.native
-  sealed trait closedDotbsDotalert extends AlertEvent
   
   @js.native
-  sealed trait cycle extends js.Object
+  sealed trait alert extends StObject
+  inline def alert: alert = "alert".asInstanceOf[alert]
   
   @js.native
-  sealed trait disable extends js.Object
+  sealed trait auto
+    extends StObject
+       with PopoverPlacement
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait dispose extends js.Object
+  sealed trait bottom
+    extends StObject
+       with PopoverPlacement
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait dynamic extends js.Object
+  sealed trait carousel extends StObject
+  inline def carousel: carousel = "carousel".asInstanceOf[carousel]
   
   @js.native
-  sealed trait enable extends js.Object
+  sealed trait click extends StObject
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait focus extends Trigger
+  sealed trait `click focus` extends StObject
+  inline def `click focus`: `click focus` = ("click focus").asInstanceOf[`click focus`]
   
   @js.native
-  sealed trait handleUpdate extends js.Object
+  sealed trait `click hover` extends StObject
+  inline def `click hover`: `click hover` = ("click hover").asInstanceOf[`click hover`]
   
   @js.native
-  sealed trait hiddenDotbsDotcollapse extends CollapseEvent
+  sealed trait `click hover focus` extends StObject
+  inline def `click hover focus`: `click hover focus` = ("click hover focus").asInstanceOf[`click hover focus`]
   
   @js.native
-  sealed trait hiddenDotbsDotdropdown extends DropdownEvent
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait hiddenDotbsDotmodal extends ModalEvent
+  sealed trait cycle extends StObject
+  inline def cycle: cycle = "cycle".asInstanceOf[cycle]
   
   @js.native
-  sealed trait hiddenDotbsDotpopover extends PopoverEvent
+  sealed trait disable extends StObject
+  inline def disable: disable = "disable".asInstanceOf[disable]
   
   @js.native
-  sealed trait hiddenDotbsDottab extends TapEvent
+  sealed trait dispose extends StObject
+  inline def dispose: dispose = "dispose".asInstanceOf[dispose]
   
   @js.native
-  sealed trait hiddenDotbsDottoast extends ToastEvent
+  sealed trait dynamic extends StObject
+  inline def dynamic: dynamic = "dynamic".asInstanceOf[dynamic]
   
   @js.native
-  sealed trait hiddenDotbsDottooltip extends TooltipEvent
+  sealed trait enable extends StObject
+  inline def enable: enable = "enable".asInstanceOf[enable]
   
   @js.native
-  sealed trait hide extends js.Object
+  sealed trait focus extends StObject
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait hideDotbsDotcollapse extends CollapseEvent
+  sealed trait handleUpdate extends StObject
+  inline def handleUpdate: handleUpdate = "handleUpdate".asInstanceOf[handleUpdate]
   
   @js.native
-  sealed trait hideDotbsDotdropdown extends DropdownEvent
+  sealed trait hiddenDotbsDotmodal extends StObject
+  inline def hiddenDotbsDotmodal: hiddenDotbsDotmodal = "hidden.bs.modal".asInstanceOf[hiddenDotbsDotmodal]
   
   @js.native
-  sealed trait hideDotbsDotmodal extends ModalEvent
+  sealed trait hide extends StObject
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
-  sealed trait hideDotbsDotpopover extends PopoverEvent
+  sealed trait hideDotbsDotmodal extends StObject
+  inline def hideDotbsDotmodal: hideDotbsDotmodal = "hide.bs.modal".asInstanceOf[hideDotbsDotmodal]
   
   @js.native
-  sealed trait hideDotbsDottab extends TapEvent
+  sealed trait hidePreventedDotbsDotmodal extends StObject
+  inline def hidePreventedDotbsDotmodal: hidePreventedDotbsDotmodal = "hidePrevented.bs.modal".asInstanceOf[hidePreventedDotbsDotmodal]
   
   @js.native
-  sealed trait hideDotbsDottoast extends ToastEvent
+  sealed trait hover extends StObject
+  inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
-  sealed trait hideDotbsDottooltip extends TooltipEvent
+  sealed trait `hover focus` extends StObject
+  inline def `hover focus`: `hover focus` = ("hover focus").asInstanceOf[`hover focus`]
   
   @js.native
-  sealed trait hover extends Trigger
+  sealed trait inside extends StObject
+  inline def inside: inside = "inside".asInstanceOf[inside]
   
   @js.native
-  sealed trait `hover focus` extends Trigger
+  sealed trait left
+    extends StObject
+       with Direction
+       with PopoverPlacement
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait insertedDotbsDotpopover extends PopoverEvent
+  sealed trait manual extends StObject
+  inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
-  sealed trait insertedDotbsDottooltip extends TooltipEvent
+  sealed trait next extends StObject
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait left extends Placement
+  sealed trait nextWhenVisible extends StObject
+  inline def nextWhenVisible: nextWhenVisible = "nextWhenVisible".asInstanceOf[nextWhenVisible]
   
   @js.native
-  sealed trait manual extends Trigger
+  sealed trait offset extends StObject
+  inline def offset: offset = "offset".asInstanceOf[offset]
   
   @js.native
-  sealed trait next extends js.Object
+  sealed trait outside extends StObject
+  inline def outside: outside = "outside".asInstanceOf[outside]
   
   @js.native
-  sealed trait offset extends js.Object
+  sealed trait parent extends StObject
+  inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
-  sealed trait parent extends js.Object
+  sealed trait pause extends StObject
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait pause extends js.Object
+  sealed trait popover extends StObject
+  inline def popover: popover = "popover".asInstanceOf[popover]
   
   @js.native
-  sealed trait position extends js.Object
+  sealed trait position extends StObject
+  inline def position: position = "position".asInstanceOf[position]
   
   @js.native
-  sealed trait prev extends js.Object
+  sealed trait prev extends StObject
+  inline def prev: prev = "prev".asInstanceOf[prev]
   
   @js.native
-  sealed trait refresh extends js.Object
+  sealed trait refresh extends StObject
+  inline def refresh: refresh = "refresh".asInstanceOf[refresh]
   
   @js.native
-  sealed trait right extends Placement
+  sealed trait right
+    extends StObject
+       with Direction
+       with PopoverPlacement
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait show extends js.Object
+  sealed trait setContent extends StObject
+  inline def setContent: setContent = "setContent".asInstanceOf[setContent]
   
   @js.native
-  sealed trait showDotbsDotcollapse extends CollapseEvent
+  sealed trait show extends StObject
+  inline def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait showDotbsDotdropdown extends DropdownEvent
+  sealed trait showDotbsDotmodal extends StObject
+  inline def showDotbsDotmodal: showDotbsDotmodal = "show.bs.modal".asInstanceOf[showDotbsDotmodal]
   
   @js.native
-  sealed trait showDotbsDotmodal extends ModalEvent
+  sealed trait shownDotbsDotmodal extends StObject
+  inline def shownDotbsDotmodal: shownDotbsDotmodal = "shown.bs.modal".asInstanceOf[shownDotbsDotmodal]
   
   @js.native
-  sealed trait showDotbsDotpopover extends PopoverEvent
+  sealed trait slidDotbsDotcarousel extends StObject
+  inline def slidDotbsDotcarousel: slidDotbsDotcarousel = "slid.bs.carousel".asInstanceOf[slidDotbsDotcarousel]
   
   @js.native
-  sealed trait showDotbsDottab extends TapEvent
+  sealed trait slideDotbsDotcarousel extends StObject
+  inline def slideDotbsDotcarousel: slideDotbsDotcarousel = "slide.bs.carousel".asInstanceOf[slideDotbsDotcarousel]
   
   @js.native
-  sealed trait showDotbsDottoast extends ToastEvent
+  sealed trait static extends StObject
+  inline def static: static = "static".asInstanceOf[static]
   
   @js.native
-  sealed trait showDotbsDottooltip extends TooltipEvent
+  sealed trait to extends StObject
+  inline def to: to = "to".asInstanceOf[to]
   
   @js.native
-  sealed trait shownDotbsDotcollapse extends CollapseEvent
+  sealed trait toggle extends StObject
+  inline def toggle: toggle = "toggle".asInstanceOf[toggle]
   
   @js.native
-  sealed trait shownDotbsDotdropdown extends DropdownEvent
+  sealed trait toggleEnabled extends StObject
+  inline def toggleEnabled: toggleEnabled = "toggleEnabled".asInstanceOf[toggleEnabled]
   
   @js.native
-  sealed trait shownDotbsDotmodal extends ModalEvent
+  sealed trait tooltip extends StObject
+  inline def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   
   @js.native
-  sealed trait shownDotbsDotpopover extends PopoverEvent
+  sealed trait top
+    extends StObject
+       with PopoverPlacement
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait shownDotbsDottab extends TapEvent
-  
-  @js.native
-  sealed trait shownDotbsDottoast extends ToastEvent
-  
-  @js.native
-  sealed trait shownDotbsDottooltip extends TooltipEvent
-  
-  @js.native
-  sealed trait slidDotbsDotcarousel extends CarouselEvent
-  
-  @js.native
-  sealed trait slideDotbsDotcarousel extends CarouselEvent
-  
-  @js.native
-  sealed trait static extends js.Object
-  
-  @js.native
-  sealed trait toggle extends js.Object
-  
-  @js.native
-  sealed trait toggleEnabled extends js.Object
-  
-  @js.native
-  sealed trait top extends Placement
-  
-  @js.native
-  sealed trait update extends js.Object
-  
-  @scala.inline
-  def activateDotbsDotscrollspy: activateDotbsDotscrollspy = "activate.bs.scrollspy".asInstanceOf[activateDotbsDotscrollspy]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def `click focus`: `click focus` = "click focus".asInstanceOf[`click focus`]
-  @scala.inline
-  def `click hover`: `click hover` = "click hover".asInstanceOf[`click hover`]
-  @scala.inline
-  def `click hover focus`: `click hover focus` = "click hover focus".asInstanceOf[`click hover focus`]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def closeDotbsDotalert: closeDotbsDotalert = "close.bs.alert".asInstanceOf[closeDotbsDotalert]
-  @scala.inline
-  def closedDotbsDotalert: closedDotbsDotalert = "closed.bs.alert".asInstanceOf[closedDotbsDotalert]
-  @scala.inline
-  def cycle: cycle = "cycle".asInstanceOf[cycle]
-  @scala.inline
-  def disable: disable = "disable".asInstanceOf[disable]
-  @scala.inline
-  def dispose: dispose = "dispose".asInstanceOf[dispose]
-  @scala.inline
-  def dynamic: dynamic = "dynamic".asInstanceOf[dynamic]
-  @scala.inline
-  def enable: enable = "enable".asInstanceOf[enable]
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
-  @scala.inline
-  def handleUpdate: handleUpdate = "handleUpdate".asInstanceOf[handleUpdate]
-  @scala.inline
-  def hiddenDotbsDotcollapse: hiddenDotbsDotcollapse = "hidden.bs.collapse".asInstanceOf[hiddenDotbsDotcollapse]
-  @scala.inline
-  def hiddenDotbsDotdropdown: hiddenDotbsDotdropdown = "hidden.bs.dropdown".asInstanceOf[hiddenDotbsDotdropdown]
-  @scala.inline
-  def hiddenDotbsDotmodal: hiddenDotbsDotmodal = "hidden.bs.modal".asInstanceOf[hiddenDotbsDotmodal]
-  @scala.inline
-  def hiddenDotbsDotpopover: hiddenDotbsDotpopover = "hidden.bs.popover".asInstanceOf[hiddenDotbsDotpopover]
-  @scala.inline
-  def hiddenDotbsDottab: hiddenDotbsDottab = "hidden.bs.tab".asInstanceOf[hiddenDotbsDottab]
-  @scala.inline
-  def hiddenDotbsDottoast: hiddenDotbsDottoast = "hidden.bs.toast".asInstanceOf[hiddenDotbsDottoast]
-  @scala.inline
-  def hiddenDotbsDottooltip: hiddenDotbsDottooltip = "hidden.bs.tooltip".asInstanceOf[hiddenDotbsDottooltip]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def hideDotbsDotcollapse: hideDotbsDotcollapse = "hide.bs.collapse".asInstanceOf[hideDotbsDotcollapse]
-  @scala.inline
-  def hideDotbsDotdropdown: hideDotbsDotdropdown = "hide.bs.dropdown".asInstanceOf[hideDotbsDotdropdown]
-  @scala.inline
-  def hideDotbsDotmodal: hideDotbsDotmodal = "hide.bs.modal".asInstanceOf[hideDotbsDotmodal]
-  @scala.inline
-  def hideDotbsDotpopover: hideDotbsDotpopover = "hide.bs.popover".asInstanceOf[hideDotbsDotpopover]
-  @scala.inline
-  def hideDotbsDottab: hideDotbsDottab = "hide.bs.tab".asInstanceOf[hideDotbsDottab]
-  @scala.inline
-  def hideDotbsDottoast: hideDotbsDottoast = "hide.bs.toast".asInstanceOf[hideDotbsDottoast]
-  @scala.inline
-  def hideDotbsDottooltip: hideDotbsDottooltip = "hide.bs.tooltip".asInstanceOf[hideDotbsDottooltip]
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
-  @scala.inline
-  def `hover focus`: `hover focus` = "hover focus".asInstanceOf[`hover focus`]
-  @scala.inline
-  def insertedDotbsDotpopover: insertedDotbsDotpopover = "inserted.bs.popover".asInstanceOf[insertedDotbsDotpopover]
-  @scala.inline
-  def insertedDotbsDottooltip: insertedDotbsDottooltip = "inserted.bs.tooltip".asInstanceOf[insertedDotbsDottooltip]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
-  @scala.inline
-  def offset: offset = "offset".asInstanceOf[offset]
-  @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def position: position = "position".asInstanceOf[position]
-  @scala.inline
-  def prev: prev = "prev".asInstanceOf[prev]
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
-  @scala.inline
-  def showDotbsDotcollapse: showDotbsDotcollapse = "show.bs.collapse".asInstanceOf[showDotbsDotcollapse]
-  @scala.inline
-  def showDotbsDotdropdown: showDotbsDotdropdown = "show.bs.dropdown".asInstanceOf[showDotbsDotdropdown]
-  @scala.inline
-  def showDotbsDotmodal: showDotbsDotmodal = "show.bs.modal".asInstanceOf[showDotbsDotmodal]
-  @scala.inline
-  def showDotbsDotpopover: showDotbsDotpopover = "show.bs.popover".asInstanceOf[showDotbsDotpopover]
-  @scala.inline
-  def showDotbsDottab: showDotbsDottab = "show.bs.tab".asInstanceOf[showDotbsDottab]
-  @scala.inline
-  def showDotbsDottoast: showDotbsDottoast = "show.bs.toast".asInstanceOf[showDotbsDottoast]
-  @scala.inline
-  def showDotbsDottooltip: showDotbsDottooltip = "show.bs.tooltip".asInstanceOf[showDotbsDottooltip]
-  @scala.inline
-  def shownDotbsDotcollapse: shownDotbsDotcollapse = "shown.bs.collapse".asInstanceOf[shownDotbsDotcollapse]
-  @scala.inline
-  def shownDotbsDotdropdown: shownDotbsDotdropdown = "shown.bs.dropdown".asInstanceOf[shownDotbsDotdropdown]
-  @scala.inline
-  def shownDotbsDotmodal: shownDotbsDotmodal = "shown.bs.modal".asInstanceOf[shownDotbsDotmodal]
-  @scala.inline
-  def shownDotbsDotpopover: shownDotbsDotpopover = "shown.bs.popover".asInstanceOf[shownDotbsDotpopover]
-  @scala.inline
-  def shownDotbsDottab: shownDotbsDottab = "shown.bs.tab".asInstanceOf[shownDotbsDottab]
-  @scala.inline
-  def shownDotbsDottoast: shownDotbsDottoast = "shown.bs.toast".asInstanceOf[shownDotbsDottoast]
-  @scala.inline
-  def shownDotbsDottooltip: shownDotbsDottooltip = "shown.bs.tooltip".asInstanceOf[shownDotbsDottooltip]
-  @scala.inline
-  def slidDotbsDotcarousel: slidDotbsDotcarousel = "slid.bs.carousel".asInstanceOf[slidDotbsDotcarousel]
-  @scala.inline
-  def slideDotbsDotcarousel: slideDotbsDotcarousel = "slide.bs.carousel".asInstanceOf[slideDotbsDotcarousel]
-  @scala.inline
-  def static: static = "static".asInstanceOf[static]
-  @scala.inline
-  def toggle: toggle = "toggle".asInstanceOf[toggle]
-  @scala.inline
-  def toggleEnabled: toggleEnabled = "toggleEnabled".asInstanceOf[toggleEnabled]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  sealed trait update extends StObject
+  inline def update: update = "update".asInstanceOf[update]
 }
-

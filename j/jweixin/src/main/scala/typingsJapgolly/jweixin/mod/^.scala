@@ -1,12 +1,9 @@
 package typingsJapgolly.jweixin.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jweixin", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  def apply(): Unit = js.native
-}
-
+object ^ extends StObject

@@ -1,22 +1,27 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilterDialogClosedEventUIParam extends js.Object {
+trait FilterDialogClosedEventUIParam extends StObject {
+  
   /**
-  	 * Gets reference to GridFiltering.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to GridFiltering.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object FilterDialogClosedEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null): FilterDialogClosedEventUIParam = {
+  
+  inline def apply(): FilterDialogClosedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterDialogClosedEventUIParam]
   }
+  
+  extension [Self <: FilterDialogClosedEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

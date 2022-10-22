@@ -1,83 +1,67 @@
 package typingsJapgolly.sharepoint.CUI
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CommandType extends js.Object
-
+sealed trait CommandType extends StObject
 @JSGlobal("CUI.CommandType")
 @js.native
-object CommandType extends js.Object {
-  @js.native
-  sealed trait general extends CommandType
+object CommandType extends StObject {
   
   @js.native
-  sealed trait ignoredByMenu extends CommandType
+  sealed trait general
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait menuClose extends CommandType
+  sealed trait ignoredByMenu
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait menuCreation extends CommandType
+  sealed trait menuClose
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait optionPreview extends CommandType
+  sealed trait menuCreation
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait optionPreviewRevert extends CommandType
+  sealed trait optionPreview
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait optionSelection extends CommandType
+  sealed trait optionPreviewRevert
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait preview extends CommandType
+  sealed trait optionSelection
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait previewRevert extends CommandType
+  sealed trait preview
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait rootEvent extends CommandType
+  sealed trait previewRevert
+    extends StObject
+       with CommandType
   
   @js.native
-  sealed trait tabSelection extends CommandType
+  sealed trait rootEvent
+    extends StObject
+       with CommandType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CommandType with Double] = js.native
-  /* 0 */ @js.native
-  object general extends TopLevel[general with Double]
-  
-  /* 8 */ @js.native
-  object ignoredByMenu extends TopLevel[ignoredByMenu with Double]
-  
-  /* 9 */ @js.native
-  object menuClose extends TopLevel[menuClose with Double]
-  
-  /* 3 */ @js.native
-  object menuCreation extends TopLevel[menuCreation with Double]
-  
-  /* 6 */ @js.native
-  object optionPreview extends TopLevel[optionPreview with Double]
-  
-  /* 7 */ @js.native
-  object optionPreviewRevert extends TopLevel[optionPreviewRevert with Double]
-  
-  /* 2 */ @js.native
-  object optionSelection extends TopLevel[optionSelection with Double]
-  
-  /* 4 */ @js.native
-  object preview extends TopLevel[preview with Double]
-  
-  /* 5 */ @js.native
-  object previewRevert extends TopLevel[previewRevert with Double]
-  
-  /* 10 */ @js.native
-  object rootEvent extends TopLevel[rootEvent with Double]
-  
-  /* 1 */ @js.native
-  object tabSelection extends TopLevel[tabSelection with Double]
-  
+  @js.native
+  sealed trait tabSelection
+    extends StObject
+       with CommandType
 }
-

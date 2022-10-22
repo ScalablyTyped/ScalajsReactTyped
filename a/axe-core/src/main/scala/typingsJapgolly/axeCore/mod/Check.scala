@@ -1,34 +1,52 @@
 package typingsJapgolly.axeCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Check extends js.Object {
+trait Check extends StObject {
+  
   var after: js.UndefOr[js.Function | String] = js.undefined
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
-  var evaluate: js.Function | String
+  
+  var evaluate: js.UndefOr[js.Function | String] = js.undefined
+  
   var id: String
+  
   var matches: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[js.Any] = js.undefined
+  
+  var options: js.UndefOr[Any] = js.undefined
 }
-
 object Check {
-  @scala.inline
-  def apply(
-    evaluate: js.Function | String,
-    id: String,
-    after: js.Function | String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    matches: String = null,
-    options: js.Any = null
-  ): Check = {
-    val __obj = js.Dynamic.literal(evaluate = evaluate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+  
+  inline def apply(id: String): Check = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Check]
   }
+  
+  extension [Self <: Check](x: Self) {
+    
+    inline def setAfter(value: js.Function | String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setEvaluate(value: js.Function | String): Self = StObject.set(x, "evaluate", value.asInstanceOf[js.Any])
+    
+    inline def setEvaluateUndefined: Self = StObject.set(x, "evaluate", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setMatches(value: String): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    
+    inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+    
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+  }
 }
-

@@ -1,29 +1,16 @@
 package typingsJapgolly.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Url
-  extends CssNodeCommon
-     with CssNode
-     with CssNodePlain {
-  @JSName("type")
-  var type_Url: typingsJapgolly.cssTree.cssTreeStrings.Url
-  var value: StringNode | Raw
+object url {
+  
+  @JSImport("css-tree", "url")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def decode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-
-object Url {
-  @scala.inline
-  def apply(
-    `type`: typingsJapgolly.cssTree.cssTreeStrings.Url,
-    value: StringNode | Raw,
-    loc: CssLocation = null
-  ): Url = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Url]
-  }
-}
-

@@ -1,35 +1,37 @@
 package typingsJapgolly.css.mod
 
-import typingsJapgolly.css.AnonContent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Supports
-  extends Node
+  extends StObject
+     with Node
      with AtRule {
+  
   /** Array of nodes with the types rule, comment and any of the at-rule types. */
   var rules: js.UndefOr[js.Array[Rule | Comment | AtRule]] = js.undefined
+  
   /** The part following @supports. */
   var supports: js.UndefOr[String] = js.undefined
 }
-
 object Supports {
-  @scala.inline
-  def apply(
-    parent: Node = null,
-    position: AnonContent = null,
-    rules: js.Array[Rule | Comment | AtRule] = null,
-    supports: String = null,
-    `type`: String = null
-  ): Supports = {
+  
+  inline def apply(): Supports = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (supports != null) __obj.updateDynamic("supports")(supports.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Supports]
   }
+  
+  extension [Self <: Supports](x: Self) {
+    
+    inline def setRules(value: js.Array[Rule | Comment | AtRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    
+    inline def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value*))
+    
+    inline def setSupports(value: String): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
+  }
 }
-

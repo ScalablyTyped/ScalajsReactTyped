@@ -1,78 +1,142 @@
 package typingsJapgolly.swaggerSchemaOfficial.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseSchema extends js.Object {
-  var default: js.UndefOr[js.Any] = js.undefined
+trait BaseSchema extends StObject {
+  
+  var default: js.UndefOr[Any] = js.undefined
+  
   var description: js.UndefOr[String] = js.undefined
-  var enum: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var `enum`: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var exclusiveMaximum: js.UndefOr[Boolean] = js.undefined
+  
   var exclusiveMinimum: js.UndefOr[Boolean] = js.undefined
+  
   var format: js.UndefOr[String] = js.undefined
+  
   var items: js.UndefOr[Schema | js.Array[Schema]] = js.undefined
+  
   var maxItems: js.UndefOr[Double] = js.undefined
+  
   var maxLength: js.UndefOr[Double] = js.undefined
+  
   var maxProperties: js.UndefOr[Double] = js.undefined
+  
   var maximum: js.UndefOr[Double] = js.undefined
+  
   var minItems: js.UndefOr[Double] = js.undefined
+  
   var minLength: js.UndefOr[Double] = js.undefined
+  
   var minProperties: js.UndefOr[Double] = js.undefined
+  
   var minimum: js.UndefOr[Double] = js.undefined
+  
   var multipleOf: js.UndefOr[Double] = js.undefined
+  
   var pattern: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[ParameterType] = js.undefined
+  
   var uniqueItems: js.UndefOr[Boolean] = js.undefined
 }
-
 object BaseSchema {
-  @scala.inline
-  def apply(
-    default: js.Any = null,
-    description: String = null,
-    enum: js.Array[_] = null,
-    exclusiveMaximum: js.UndefOr[Boolean] = js.undefined,
-    exclusiveMinimum: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
-    items: Schema | js.Array[Schema] = null,
-    maxItems: Int | Double = null,
-    maxLength: Int | Double = null,
-    maxProperties: Int | Double = null,
-    maximum: Int | Double = null,
-    minItems: Int | Double = null,
-    minLength: Int | Double = null,
-    minProperties: Int | Double = null,
-    minimum: Int | Double = null,
-    multipleOf: Int | Double = null,
-    pattern: String = null,
-    title: String = null,
-    `type`: ParameterType = null,
-    uniqueItems: js.UndefOr[Boolean] = js.undefined
-  ): BaseSchema = {
+  
+  inline def apply(): BaseSchema = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMaximum)) __obj.updateDynamic("exclusiveMaximum")(exclusiveMaximum.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMinimum)) __obj.updateDynamic("exclusiveMinimum")(exclusiveMinimum.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (maxItems != null) __obj.updateDynamic("maxItems")(maxItems.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (maxProperties != null) __obj.updateDynamic("maxProperties")(maxProperties.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minItems != null) __obj.updateDynamic("minItems")(minItems.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (minProperties != null) __obj.updateDynamic("minProperties")(minProperties.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (multipleOf != null) __obj.updateDynamic("multipleOf")(multipleOf.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(uniqueItems)) __obj.updateDynamic("uniqueItems")(uniqueItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseSchema]
   }
+  
+  extension [Self <: BaseSchema](x: Self) {
+    
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setEnum(value: js.Array[Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    
+    inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+    
+    inline def setEnumVarargs(value: Any*): Self = StObject.set(x, "enum", js.Array(value*))
+    
+    inline def setExclusiveMaximum(value: Boolean): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
+    
+    inline def setExclusiveMaximumUndefined: Self = StObject.set(x, "exclusiveMaximum", js.undefined)
+    
+    inline def setExclusiveMinimum(value: Boolean): Self = StObject.set(x, "exclusiveMinimum", value.asInstanceOf[js.Any])
+    
+    inline def setExclusiveMinimumUndefined: Self = StObject.set(x, "exclusiveMinimum", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setItems(value: Schema | js.Array[Schema]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: Schema*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
+    
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "maxItems", js.undefined)
+    
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    
+    inline def setMaxProperties(value: Double): Self = StObject.set(x, "maxProperties", value.asInstanceOf[js.Any])
+    
+    inline def setMaxPropertiesUndefined: Self = StObject.set(x, "maxProperties", js.undefined)
+    
+    inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    
+    inline def setMinItems(value: Double): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
+    
+    inline def setMinItemsUndefined: Self = StObject.set(x, "minItems", js.undefined)
+    
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    
+    inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+    
+    inline def setMinProperties(value: Double): Self = StObject.set(x, "minProperties", value.asInstanceOf[js.Any])
+    
+    inline def setMinPropertiesUndefined: Self = StObject.set(x, "minProperties", js.undefined)
+    
+    inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    
+    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+    
+    inline def setMultipleOf(value: Double): Self = StObject.set(x, "multipleOf", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleOfUndefined: Self = StObject.set(x, "multipleOf", js.undefined)
+    
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setType(value: ParameterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueItemsUndefined: Self = StObject.set(x, "uniqueItems", js.undefined)
+  }
 }
-

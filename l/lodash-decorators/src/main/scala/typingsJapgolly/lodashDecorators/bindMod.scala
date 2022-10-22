@@ -1,16 +1,27 @@
 package typingsJapgolly.lodashDecorators
 
-import typingsJapgolly.lodashDecorators.commonMod.BiTypedMethodDecorator1
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.lodashDecorators.factoryCommonMod.BiTypedMethodDecorator1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-decorators/bind", JSImport.Namespace)
-@js.native
-object bindMod extends js.Object {
-  @JSName("Bind")
-  val Bind_ : BiTypedMethodDecorator1[js.Any] = js.native
-  val bind: BiTypedMethodDecorator1[js.Any] = js.native
-  val default: BiTypedMethodDecorator1[js.Any] = js.native
+object bindMod extends Shortcut {
+  
+  @JSImport("lodash-decorators/bind", JSImport.Default)
+  @js.native
+  val default: BiTypedMethodDecorator1[Any] = js.native
+  
+  @JSImport("lodash-decorators/bind", "Bind")
+  @js.native
+  val Bind_ : BiTypedMethodDecorator1[Any] = js.native
+  
+  @JSImport("lodash-decorators/bind", "bind")
+  @js.native
+  val bind: BiTypedMethodDecorator1[Any] = js.native
+  
+  type _To = BiTypedMethodDecorator1[Any]
+  
+  /* This means you don't have to write `default`, but can instead just say `bindMod.foo` */
+  override def _to: BiTypedMethodDecorator1[Any] = default
 }
-

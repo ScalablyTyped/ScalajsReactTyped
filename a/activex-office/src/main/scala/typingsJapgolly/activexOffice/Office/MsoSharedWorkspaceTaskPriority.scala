@@ -1,27 +1,23 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`3`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`2`
 */
-trait MsoSharedWorkspaceTaskPriority extends js.Object
-
+trait MsoSharedWorkspaceTaskPriority extends StObject
 object MsoSharedWorkspaceTaskPriority {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoSharedWorkspaceTaskPriorityHigh: `1` = this.cast(1)
-  @scala.inline
-  def msoSharedWorkspaceTaskPriorityLow: `3` = this.cast(3)
-  @scala.inline
-  def msoSharedWorkspaceTaskPriorityNormal: `2` = this.cast(2)
+  
+  inline def msoSharedWorkspaceTaskPriorityHigh: `1` = 1.asInstanceOf[`1`]
+  
+  inline def msoSharedWorkspaceTaskPriorityLow: `3` = 3.asInstanceOf[`3`]
+  
+  inline def msoSharedWorkspaceTaskPriorityNormal: `2` = 2.asInstanceOf[`2`]
 }
-

@@ -1,345 +1,494 @@
 package typingsJapgolly.monacoEditor
 
 import typingsJapgolly.monacoEditor.mod.editor.BuiltinTheme
-import typingsJapgolly.monacoEditor.mod.editor.EditorAutoClosingOvertypeStrategy
+import typingsJapgolly.monacoEditor.mod.editor.EditorAutoClosingEditStrategy
 import typingsJapgolly.monacoEditor.mod.editor.EditorAutoClosingStrategy
 import typingsJapgolly.monacoEditor.mod.editor.EditorAutoSurroundStrategy
+import typingsJapgolly.monacoEditor.mod.editor.GoToLocationValues
+import typingsJapgolly.monacoEditor.mod.editor.QuickSuggestionsValue
+import typingsJapgolly.monacoEditor.mod.editor._LineNumbersType
+import typingsJapgolly.monacoEditor.mod.languages.css.EntryStatus
+import typingsJapgolly.monacoEditor.mod.languages.html.MarkupKind
+import typingsJapgolly.monacoEditor.mod.languages.json.SeverityLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object monacoEditorStrings {
-  @js.native
-  sealed trait `100` extends js.Object
   
   @js.native
-  sealed trait `200` extends js.Object
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait `300` extends js.Object
+  sealed trait _os extends StObject
+  inline def _os: _os = "_os".asInstanceOf[_os]
   
   @js.native
-  sealed trait `400` extends js.Object
+  sealed trait _vscode extends StObject
+  inline def _vscode: _vscode = "_vscode".asInstanceOf[_vscode]
   
   @js.native
-  sealed trait `500` extends js.Object
+  sealed trait active extends StObject
+  inline def active: active = "active".asInstanceOf[active]
   
   @js.native
-  sealed trait `600` extends js.Object
+  sealed trait advanced extends StObject
+  inline def advanced: advanced = "advanced".asInstanceOf[advanced]
   
   @js.native
-  sealed trait `700` extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait `800` extends js.Object
+  sealed trait alt extends StObject
+  inline def alt: alt = "alt".asInstanceOf[alt]
   
   @js.native
-  sealed trait `900` extends js.Object
-  
-  @js.native
-  sealed trait all extends js.Object
-  
-  @js.native
-  sealed trait alt extends js.Object
-  
-  @js.native
-  sealed trait altKey extends js.Object
+  sealed trait altKey extends StObject
+  inline def altKey: altKey = "altKey".asInstanceOf[altKey]
   
   @js.native
   sealed trait always
-    extends EditorAutoClosingOvertypeStrategy
+    extends StObject
+       with EditorAutoClosingEditStrategy
        with EditorAutoClosingStrategy
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait auto extends EditorAutoClosingOvertypeStrategy
+  sealed trait auto
+    extends StObject
+       with EditorAutoClosingEditStrategy
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait beforeWhitespace extends EditorAutoClosingStrategy
+  sealed trait beforeWhitespace
+    extends StObject
+       with EditorAutoClosingStrategy
+  inline def beforeWhitespace: beforeWhitespace = "beforeWhitespace".asInstanceOf[beforeWhitespace]
   
   @js.native
-  sealed trait bold extends js.Object
+  sealed trait blink extends StObject
+  inline def blink: blink = "blink".asInstanceOf[blink]
   
   @js.native
-  sealed trait bolder extends js.Object
+  sealed trait block extends StObject
+  inline def block: block = "block".asInstanceOf[block]
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait `block-outline` extends StObject
+  inline def `block-outline`: `block-outline` = "block-outline".asInstanceOf[`block-outline`]
   
   @js.native
-  sealed trait boundary extends js.Object
+  sealed trait bottom extends StObject
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait bounded extends js.Object
+  sealed trait boundary extends StObject
+  inline def boundary: boundary = "boundary".asInstanceOf[boundary]
   
   @js.native
-  sealed trait brackets extends EditorAutoSurroundStrategy
+  sealed trait bounded extends StObject
+  inline def bounded: bounded = "bounded".asInstanceOf[bounded]
   
   @js.native
-  sealed trait ctrlCmd extends js.Object
+  sealed trait brackets
+    extends StObject
+       with EditorAutoSurroundStrategy
+  inline def brackets: brackets = "brackets".asInstanceOf[brackets]
   
   @js.native
-  sealed trait ctrlKey extends js.Object
+  sealed trait collapse extends StObject
+  inline def collapse: collapse = "collapse".asInstanceOf[collapse]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait configuredByTheme extends StObject
+  inline def configuredByTheme: configuredByTheme = "configuredByTheme".asInstanceOf[configuredByTheme]
   
   @js.native
-  sealed trait first extends js.Object
+  sealed trait copy extends StObject
+  inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait force extends js.Object
+  sealed trait ctrlCmd extends StObject
+  inline def ctrlCmd: ctrlCmd = "ctrlCmd".asInstanceOf[ctrlCmd]
   
   @js.native
-  sealed trait `force-aligned` extends js.Object
+  sealed trait ctrlKey extends StObject
+  inline def ctrlKey: ctrlKey = "ctrlKey".asInstanceOf[ctrlKey]
   
   @js.native
-  sealed trait `force-expand-multiline` extends js.Object
+  sealed trait deepIndent extends StObject
+  inline def deepIndent: deepIndent = "deepIndent".asInstanceOf[deepIndent]
   
   @js.native
-  sealed trait goto extends js.Object
+  sealed trait editable extends StObject
+  inline def editable: editable = "editable".asInstanceOf[editable]
   
   @js.native
-  sealed trait gotoAndPeek extends js.Object
+  sealed trait editor extends StObject
+  inline def editor: editor = "editor".asInstanceOf[editor]
   
   @js.native
-  sealed trait gutter extends js.Object
+  sealed trait error
+    extends StObject
+       with SeverityLevel
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait `hc-black` extends BuiltinTheme
+  sealed trait expand extends StObject
+  inline def expand: expand = "expand".asInstanceOf[expand]
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait experimental
+    extends StObject
+       with EntryStatus
+  inline def experimental: experimental = "experimental".asInstanceOf[experimental]
   
   @js.native
-  sealed trait ignore extends js.Object
+  sealed trait fill extends StObject
+  inline def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
-  sealed trait indentation extends js.Object
+  sealed trait first extends StObject
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
-  sealed trait inherit extends js.Object
+  sealed trait fit extends StObject
+  inline def fit: fit = "fit".asInstanceOf[fit]
   
   @js.native
-  sealed trait initial extends js.Object
+  sealed trait force extends StObject
+  inline def force: force = "force".asInstanceOf[force]
   
   @js.native
-  sealed trait `inline` extends js.Object
+  sealed trait `force-aligned` extends StObject
+  inline def `force-aligned`: `force-aligned` = "force-aligned".asInstanceOf[`force-aligned`]
   
   @js.native
-  sealed trait interval extends js.Object
+  sealed trait `force-expand-multiline` extends StObject
+  inline def `force-expand-multiline`: `force-expand-multiline` = "force-expand-multiline".asInstanceOf[`force-expand-multiline`]
+  
+  @js.native
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
+  
+  @js.native
+  sealed trait goto
+    extends StObject
+       with GoToLocationValues
+  inline def goto: goto = "goto".asInstanceOf[goto]
+  
+  @js.native
+  sealed trait gotoAndPeek
+    extends StObject
+       with GoToLocationValues
+  inline def gotoAndPeek: gotoAndPeek = "gotoAndPeek".asInstanceOf[gotoAndPeek]
+  
+  @js.native
+  sealed trait gutter extends StObject
+  inline def gutter: gutter = "gutter".asInstanceOf[gutter]
+  
+  @js.native
+  sealed trait `hc-black`
+    extends StObject
+       with BuiltinTheme
+  inline def `hc-black`: `hc-black` = "hc-black".asInstanceOf[`hc-black`]
+  
+  @js.native
+  sealed trait `hc-light`
+    extends StObject
+       with BuiltinTheme
+  inline def `hc-light`: `hc-light` = "hc-light".asInstanceOf[`hc-light`]
+  
+  @js.native
+  sealed trait hidden extends StObject
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @js.native
+  sealed trait ignore
+    extends StObject
+       with SeverityLevel
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
+  
+  @js.native
+  sealed trait inUntrustedWorkspace extends StObject
+  inline def inUntrustedWorkspace: inUntrustedWorkspace = "inUntrustedWorkspace".asInstanceOf[inUntrustedWorkspace]
+  
+  @js.native
+  sealed trait indent extends StObject
+  inline def indent: indent = "indent".asInstanceOf[indent]
+  
+  @js.native
+  sealed trait indentation extends StObject
+  inline def indentation: indentation = "indentation".asInstanceOf[indentation]
+  
+  @js.native
+  sealed trait inherit extends StObject
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
+  
+  @js.native
+  sealed trait `inline`
+    extends StObject
+       with QuickSuggestionsValue
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @js.native
+  sealed trait insert extends StObject
+  inline def insert: insert = "insert".asInstanceOf[insert]
+  
+  @js.native
+  sealed trait interval
+    extends StObject
+       with _LineNumbersType
+  inline def interval: interval = "interval".asInstanceOf[interval]
+  
+  @js.native
+  sealed trait keep extends StObject
+  inline def keep: keep = "keep".asInstanceOf[keep]
   
   @js.native
   sealed trait languageDefined
-    extends EditorAutoClosingStrategy
+    extends StObject
+       with EditorAutoClosingStrategy
        with EditorAutoSurroundStrategy
+  inline def languageDefined: languageDefined = "languageDefined".asInstanceOf[languageDefined]
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait lighter extends js.Object
+  sealed trait line extends StObject
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait `line-thin` extends StObject
+  inline def `line-thin`: `line-thin` = "line-thin".asInstanceOf[`line-thin`]
   
   @js.native
-  sealed trait metaKey extends js.Object
+  sealed trait literals extends StObject
+  inline def literals: literals = "literals".asInstanceOf[literals]
   
   @js.native
-  sealed trait mouseover extends js.Object
+  sealed trait markdown
+    extends StObject
+       with MarkupKind
+       with typingsJapgolly.monacoEditor.mod.languages.css.MarkupKind
+  inline def markdown: markdown = "markdown".asInstanceOf[markdown]
+  
+  @js.native
+  sealed trait metaKey extends StObject
+  inline def metaKey: metaKey = "metaKey".asInstanceOf[metaKey]
+  
+  @js.native
+  sealed trait mouseover extends StObject
+  inline def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
+  
+  @js.native
+  sealed trait multiline extends StObject
+  inline def multiline: multiline = "multiline".asInstanceOf[multiline]
+  
+  @js.native
+  sealed trait near extends StObject
+  inline def near: near = "near".asInstanceOf[near]
   
   @js.native
   sealed trait never
-    extends EditorAutoClosingOvertypeStrategy
+    extends StObject
+       with EditorAutoClosingEditStrategy
        with EditorAutoClosingStrategy
        with EditorAutoSurroundStrategy
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait nonstandard
+    extends StObject
+       with EntryStatus
+  inline def nonstandard: nonstandard = "nonstandard".asInstanceOf[nonstandard]
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait obsolete
+    extends StObject
+       with EntryStatus
+  inline def obsolete: obsolete = "obsolete".asInstanceOf[obsolete]
   
   @js.native
-  sealed trait on extends js.Object
+  sealed trait off
+    extends StObject
+       with QuickSuggestionsValue
+       with _LineNumbersType
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait onlySnippets extends js.Object
+  sealed trait offUnlessPressed extends StObject
+  inline def offUnlessPressed: offUnlessPressed = "offUnlessPressed".asInstanceOf[offUnlessPressed]
   
   @js.native
-  sealed trait peek extends js.Object
+  sealed trait on
+    extends StObject
+       with QuickSuggestionsValue
+       with _LineNumbersType
+  inline def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait quotes extends EditorAutoSurroundStrategy
+  sealed trait onUnlessPressed extends StObject
+  inline def onUnlessPressed: onUnlessPressed = "onUnlessPressed".asInstanceOf[onUnlessPressed]
   
   @js.native
-  sealed trait recentlyUsed extends js.Object
+  sealed trait onlySnippets extends StObject
+  inline def onlySnippets: onlySnippets = "onlySnippets".asInstanceOf[onlySnippets]
   
   @js.native
-  sealed trait recentlyUsedByPrefix extends js.Object
+  sealed trait peek
+    extends StObject
+       with GoToLocationValues
+  inline def peek: peek = "peek".asInstanceOf[peek]
   
   @js.native
-  sealed trait relative extends js.Object
+  sealed trait phase extends StObject
+  inline def phase: phase = "phase".asInstanceOf[phase]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait plaintext
+    extends StObject
+       with MarkupKind
+       with typingsJapgolly.monacoEditor.mod.languages.css.MarkupKind
+  inline def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
   
   @js.native
-  sealed trait selection extends js.Object
+  sealed trait prefix extends StObject
+  inline def prefix: prefix = "prefix".asInstanceOf[prefix]
   
   @js.native
-  sealed trait smart extends js.Object
+  sealed trait prompt extends StObject
+  inline def prompt: prompt = "prompt".asInstanceOf[prompt]
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait proportional extends StObject
+  inline def proportional: proportional = "proportional".asInstanceOf[proportional]
   
   @js.native
-  sealed trait visible extends js.Object
+  sealed trait quotes
+    extends StObject
+       with EditorAutoSurroundStrategy
+  inline def quotes: quotes = "quotes".asInstanceOf[quotes]
   
   @js.native
-  sealed trait vs extends BuiltinTheme
+  sealed trait recentlyUsed extends StObject
+  inline def recentlyUsed: recentlyUsed = "recentlyUsed".asInstanceOf[recentlyUsed]
   
   @js.native
-  sealed trait `vs-dark` extends BuiltinTheme
+  sealed trait recentlyUsedByPrefix extends StObject
+  inline def recentlyUsedByPrefix: recentlyUsedByPrefix = "recentlyUsedByPrefix".asInstanceOf[recentlyUsedByPrefix]
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait relative
+    extends StObject
+       with _LineNumbersType
+  inline def relative: relative = "relative".asInstanceOf[relative]
   
   @js.native
-  sealed trait wordWrapColumn extends js.Object
+  sealed trait replace extends StObject
+  inline def replace: replace = "replace".asInstanceOf[replace]
   
-  @scala.inline
-  def `100`: `100` = "100".asInstanceOf[`100`]
-  @scala.inline
-  def `200`: `200` = "200".asInstanceOf[`200`]
-  @scala.inline
-  def `300`: `300` = "300".asInstanceOf[`300`]
-  @scala.inline
-  def `400`: `400` = "400".asInstanceOf[`400`]
-  @scala.inline
-  def `500`: `500` = "500".asInstanceOf[`500`]
-  @scala.inline
-  def `600`: `600` = "600".asInstanceOf[`600`]
-  @scala.inline
-  def `700`: `700` = "700".asInstanceOf[`700`]
-  @scala.inline
-  def `800`: `800` = "800".asInstanceOf[`800`]
-  @scala.inline
-  def `900`: `900` = "900".asInstanceOf[`900`]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def alt: alt = "alt".asInstanceOf[alt]
-  @scala.inline
-  def altKey: altKey = "altKey".asInstanceOf[altKey]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def beforeWhitespace: beforeWhitespace = "beforeWhitespace".asInstanceOf[beforeWhitespace]
-  @scala.inline
-  def bold: bold = "bold".asInstanceOf[bold]
-  @scala.inline
-  def bolder: bolder = "bolder".asInstanceOf[bolder]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def boundary: boundary = "boundary".asInstanceOf[boundary]
-  @scala.inline
-  def bounded: bounded = "bounded".asInstanceOf[bounded]
-  @scala.inline
-  def brackets: brackets = "brackets".asInstanceOf[brackets]
-  @scala.inline
-  def ctrlCmd: ctrlCmd = "ctrlCmd".asInstanceOf[ctrlCmd]
-  @scala.inline
-  def ctrlKey: ctrlKey = "ctrlKey".asInstanceOf[ctrlKey]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
-  @scala.inline
-  def force: force = "force".asInstanceOf[force]
-  @scala.inline
-  def `force-aligned`: `force-aligned` = "force-aligned".asInstanceOf[`force-aligned`]
-  @scala.inline
-  def `force-expand-multiline`: `force-expand-multiline` = "force-expand-multiline".asInstanceOf[`force-expand-multiline`]
-  @scala.inline
-  def goto: goto = "goto".asInstanceOf[goto]
-  @scala.inline
-  def gotoAndPeek: gotoAndPeek = "gotoAndPeek".asInstanceOf[gotoAndPeek]
-  @scala.inline
-  def gutter: gutter = "gutter".asInstanceOf[gutter]
-  @scala.inline
-  def `hc-black`: `hc-black` = "hc-black".asInstanceOf[`hc-black`]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
-  @scala.inline
-  def indentation: indentation = "indentation".asInstanceOf[indentation]
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def interval: interval = "interval".asInstanceOf[interval]
-  @scala.inline
-  def languageDefined: languageDefined = "languageDefined".asInstanceOf[languageDefined]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def lighter: lighter = "lighter".asInstanceOf[lighter]
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
-  @scala.inline
-  def metaKey: metaKey = "metaKey".asInstanceOf[metaKey]
-  @scala.inline
-  def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def on: on = "on".asInstanceOf[on]
-  @scala.inline
-  def onlySnippets: onlySnippets = "onlySnippets".asInstanceOf[onlySnippets]
-  @scala.inline
-  def peek: peek = "peek".asInstanceOf[peek]
-  @scala.inline
-  def quotes: quotes = "quotes".asInstanceOf[quotes]
-  @scala.inline
-  def recentlyUsed: recentlyUsed = "recentlyUsed".asInstanceOf[recentlyUsed]
-  @scala.inline
-  def recentlyUsedByPrefix: recentlyUsedByPrefix = "recentlyUsedByPrefix".asInstanceOf[recentlyUsedByPrefix]
-  @scala.inline
-  def relative: relative = "relative".asInstanceOf[relative]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def selection: selection = "selection".asInstanceOf[selection]
-  @scala.inline
-  def smart: smart = "smart".asInstanceOf[smart]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
-  @scala.inline
-  def vs: vs = "vs".asInstanceOf[vs]
-  @scala.inline
-  def `vs-dark`: `vs-dark` = "vs-dark".asInstanceOf[`vs-dark`]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
-  @scala.inline
-  def wordWrapColumn: wordWrapColumn = "wordWrapColumn".asInstanceOf[wordWrapColumn]
+  @js.native
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
+  sealed trait same extends StObject
+  inline def same: same = "same".asInstanceOf[same]
+  
+  @js.native
+  sealed trait selection extends StObject
+  inline def selection: selection = "selection".asInstanceOf[selection]
+  
+  @js.native
+  sealed trait simple extends StObject
+  inline def simple: simple = "simple".asInstanceOf[simple]
+  
+  @js.native
+  sealed trait smart extends StObject
+  inline def smart: smart = "smart".asInstanceOf[smart]
+  
+  @js.native
+  sealed trait smooth extends StObject
+  inline def smooth: smooth = "smooth".asInstanceOf[smooth]
+  
+  @js.native
+  sealed trait solid extends StObject
+  inline def solid: solid = "solid".asInstanceOf[solid]
+  
+  @js.native
+  sealed trait spread extends StObject
+  inline def spread: spread = "spread".asInstanceOf[spread]
+  
+  @js.native
+  sealed trait standard
+    extends StObject
+       with EntryStatus
+  inline def standard: standard = "standard".asInstanceOf[standard]
+  
+  @js.native
+  sealed trait subword extends StObject
+  inline def subword: subword = "subword".asInstanceOf[subword]
+  
+  @js.native
+  sealed trait subwordSmart extends StObject
+  inline def subwordSmart: subwordSmart = "subwordSmart".asInstanceOf[subwordSmart]
+  
+  @js.native
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
+  
+  @js.native
+  sealed trait trailing extends StObject
+  inline def trailing: trailing = "trailing".asInstanceOf[trailing]
+  
+  @js.native
+  sealed trait tree extends StObject
+  inline def tree: tree = "tree".asInstanceOf[tree]
+  
+  @js.native
+  sealed trait underline extends StObject
+  inline def underline: underline = "underline".asInstanceOf[underline]
+  
+  @js.native
+  sealed trait `underline-thin` extends StObject
+  inline def `underline-thin`: `underline-thin` = "underline-thin".asInstanceOf[`underline-thin`]
+  
+  @js.native
+  sealed trait visible extends StObject
+  inline def visible: visible = "visible".asInstanceOf[visible]
+  
+  @js.native
+  sealed trait vs
+    extends StObject
+       with BuiltinTheme
+  inline def vs: vs = "vs".asInstanceOf[vs]
+  
+  @js.native
+  sealed trait `vs-dark`
+    extends StObject
+       with BuiltinTheme
+  inline def `vs-dark`: `vs-dark` = "vs-dark".asInstanceOf[`vs-dark`]
+  
+  @js.native
+  sealed trait warning
+    extends StObject
+       with SeverityLevel
+  inline def warning: warning = "warning".asInstanceOf[warning]
+  
+  @js.native
+  sealed trait wordWrapColumn extends StObject
+  inline def wordWrapColumn: wordWrapColumn = "wordWrapColumn".asInstanceOf[wordWrapColumn]
 }
-

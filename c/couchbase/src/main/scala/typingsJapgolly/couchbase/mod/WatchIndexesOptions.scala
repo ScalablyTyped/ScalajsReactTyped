@@ -1,22 +1,27 @@
 package typingsJapgolly.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WatchIndexesOptions extends js.Object {
+trait WatchIndexesOptions extends StObject {
+  
   /**
     * Timeout for the operation in milliseconds.
     */
   var timeout: js.UndefOr[Double] = js.undefined
 }
-
 object WatchIndexesOptions {
-  @scala.inline
-  def apply(timeout: Int | Double = null): WatchIndexesOptions = {
+  
+  inline def apply(): WatchIndexesOptions = {
     val __obj = js.Dynamic.literal()
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchIndexesOptions]
   }
+  
+  extension [Self <: WatchIndexesOptions](x: Self) {
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

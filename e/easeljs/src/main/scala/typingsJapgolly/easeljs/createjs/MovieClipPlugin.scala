@@ -1,20 +1,20 @@
 package typingsJapgolly.easeljs.createjs
 
 import typingsJapgolly.tweenjs.createjs.Tween
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("createjs.MovieClipPlugin")
 @js.native
-class MovieClipPlugin () extends js.Object {
+trait MovieClipPlugin extends StObject {
+  
   // methods
   def tween(
     tween: Tween,
     prop: String,
     value: String,
-    startValues: js.Array[_],
-    endValues: js.Array[_],
+    startValues: js.Array[Any],
+    endValues: js.Array[Any],
     ratio: Double,
     wait: js.Object,
     end: js.Object
@@ -23,8 +23,8 @@ class MovieClipPlugin () extends js.Object {
     tween: Tween,
     prop: String,
     value: Boolean,
-    startValues: js.Array[_],
-    endValues: js.Array[_],
+    startValues: js.Array[Any],
+    endValues: js.Array[Any],
     ratio: Double,
     wait: js.Object,
     end: js.Object
@@ -33,11 +33,10 @@ class MovieClipPlugin () extends js.Object {
     tween: Tween,
     prop: String,
     value: Double,
-    startValues: js.Array[_],
-    endValues: js.Array[_],
+    startValues: js.Array[Any],
+    endValues: js.Array[Any],
     ratio: Double,
     wait: js.Object,
     end: js.Object
   ): Unit = js.native
 }
-

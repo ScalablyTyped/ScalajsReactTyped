@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Effects
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaEffectClosedReason extends js.Object
-
+sealed trait MediaEffectClosedReason extends StObject
 /** Specifies the reason why a media effect was closed. */
 @JSGlobal("Windows.Media.Effects.MediaEffectClosedReason")
 @js.native
-object MediaEffectClosedReason extends js.Object {
+object MediaEffectClosedReason extends StObject {
+  
   /** The operation is complete. */
   @js.native
-  sealed trait done extends MediaEffectClosedReason
+  sealed trait done
+    extends StObject
+       with MediaEffectClosedReason
   
   /** The effect has been unloaded. */
   @js.native
-  sealed trait effectCurrentlyUnloaded extends MediaEffectClosedReason
+  sealed trait effectCurrentlyUnloaded
+    extends StObject
+       with MediaEffectClosedReason
   
   /** An unknown error has occurred. */
   @js.native
-  sealed trait unknownError extends MediaEffectClosedReason
+  sealed trait unknownError
+    extends StObject
+       with MediaEffectClosedReason
   
   /** The media effect does not support the required encoding format. */
   @js.native
-  sealed trait unsupportedEncodingFormat extends MediaEffectClosedReason
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaEffectClosedReason with Double] = js.native
-  /* 0 */ @js.native
-  object done extends TopLevel[done with Double]
-  
-  /* 3 */ @js.native
-  object effectCurrentlyUnloaded extends TopLevel[effectCurrentlyUnloaded with Double]
-  
-  /* 1 */ @js.native
-  object unknownError extends TopLevel[unknownError with Double]
-  
-  /* 2 */ @js.native
-  object unsupportedEncodingFormat extends TopLevel[unsupportedEncodingFormat with Double]
-  
+  sealed trait unsupportedEncodingFormat
+    extends StObject
+       with MediaEffectClosedReason
 }
-

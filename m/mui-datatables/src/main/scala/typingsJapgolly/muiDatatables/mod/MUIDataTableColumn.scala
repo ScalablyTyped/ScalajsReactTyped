@@ -1,22 +1,34 @@
 package typingsJapgolly.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MUIDataTableColumn extends js.Object {
+trait MUIDataTableColumn extends StObject {
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var name: String
+  
   var options: js.UndefOr[MUIDataTableColumnOptions] = js.undefined
 }
-
 object MUIDataTableColumn {
-  @scala.inline
-  def apply(name: String, label: String = null, options: MUIDataTableColumnOptions = null): MUIDataTableColumn = {
+  
+  inline def apply(name: String): MUIDataTableColumn = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableColumn]
   }
+  
+  extension [Self <: MUIDataTableColumn](x: Self) {
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setOptions(value: MUIDataTableColumnOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+  }
 }
-

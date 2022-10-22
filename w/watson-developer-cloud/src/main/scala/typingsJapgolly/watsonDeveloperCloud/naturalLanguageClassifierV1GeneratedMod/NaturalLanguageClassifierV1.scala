@@ -1,15 +1,16 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
 import typingsJapgolly.ibmCloudSdkCore.mod.BaseService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IBM Watson&trade; Natural Language Classifier uses machine learning algorithms to return the top matching predefined classes for short text input. You create and train a classifier to connect predefined classes to example texts so that the service can apply those classes to new inputs.
   */
 @js.native
 trait NaturalLanguageClassifierV1 extends BaseService {
+  
   /*************************
     * classifyText
     ************************/
@@ -26,8 +27,9 @@ trait NaturalLanguageClassifierV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def classify(params: ClassifyParams): js.Promise[_] | Unit = js.native
-  def classify(params: ClassifyParams, callback: Callback[Classification]): js.Promise[_] | Unit = js.native
+  def classify(params: ClassifyParams): js.Promise[Any] | Unit = js.native
+  def classify(params: ClassifyParams, callback: Callback[Classification]): js.Promise[Any] | Unit = js.native
+  
   /**
     * Classify multiple phrases.
     *
@@ -43,8 +45,9 @@ trait NaturalLanguageClassifierV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def classifyCollection(params: ClassifyCollectionParams): js.Promise[_] | Unit = js.native
-  def classifyCollection(params: ClassifyCollectionParams, callback: Callback[ClassificationCollection]): js.Promise[_] | Unit = js.native
+  def classifyCollection(params: ClassifyCollectionParams): js.Promise[Any] | Unit = js.native
+  def classifyCollection(params: ClassifyCollectionParams, callback: Callback[ClassificationCollection]): js.Promise[Any] | Unit = js.native
+  
   /*************************
     * manageClassifiers
     ************************/
@@ -67,8 +70,9 @@ trait NaturalLanguageClassifierV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createClassifier(params: CreateClassifierParams): js.Promise[_] | Unit = js.native
-  def createClassifier(params: CreateClassifierParams, callback: Callback[Classifier]): js.Promise[_] | Unit = js.native
+  def createClassifier(params: CreateClassifierParams): js.Promise[Any] | Unit = js.native
+  def createClassifier(params: CreateClassifierParams, callback: Callback[Classifier]): js.Promise[Any] | Unit = js.native
+  
   /**
     * Delete classifier.
     *
@@ -78,8 +82,9 @@ trait NaturalLanguageClassifierV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteClassifier(params: DeleteClassifierParams): js.Promise[_] | Unit = js.native
-  def deleteClassifier(params: DeleteClassifierParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteClassifier(params: DeleteClassifierParams): js.Promise[Any] | Unit = js.native
+  def deleteClassifier(params: DeleteClassifierParams, callback: Callback[Empty]): js.Promise[Any] | Unit = js.native
+  
   /**
     * Get information about a classifier.
     *
@@ -91,8 +96,9 @@ trait NaturalLanguageClassifierV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getClassifier(params: GetClassifierParams): js.Promise[_] | Unit = js.native
-  def getClassifier(params: GetClassifierParams, callback: Callback[Classifier]): js.Promise[_] | Unit = js.native
+  def getClassifier(params: GetClassifierParams): js.Promise[Any] | Unit = js.native
+  def getClassifier(params: GetClassifierParams, callback: Callback[Classifier]): js.Promise[Any] | Unit = js.native
+  
   /**
     * List classifiers.
     *
@@ -103,8 +109,12 @@ trait NaturalLanguageClassifierV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listClassifiers(): js.Promise[_] | Unit = js.native
-  def listClassifiers(params: ListClassifiersParams): js.Promise[_] | Unit = js.native
-  def listClassifiers(params: ListClassifiersParams, callback: Callback[ClassifierList]): js.Promise[_] | Unit = js.native
+  def listClassifiers(): js.Promise[Any] | Unit = js.native
+  def listClassifiers(params: Unit, callback: Callback[ClassifierList]): js.Promise[Any] | Unit = js.native
+  def listClassifiers(params: ListClassifiersParams): js.Promise[Any] | Unit = js.native
+  def listClassifiers(params: ListClassifiersParams, callback: Callback[ClassifierList]): js.Promise[Any] | Unit = js.native
+  
+  var name: String = js.native
+  
+  var serviceVersion: String = js.native
 }
-

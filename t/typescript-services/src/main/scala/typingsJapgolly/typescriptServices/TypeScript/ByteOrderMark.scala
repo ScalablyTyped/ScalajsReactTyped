@@ -1,41 +1,32 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ByteOrderMark extends js.Object
-
+sealed trait ByteOrderMark extends StObject
 @JSGlobal("TypeScript.ByteOrderMark")
 @js.native
-object ByteOrderMark extends js.Object {
-  @js.native
-  sealed trait None extends ByteOrderMark
+object ByteOrderMark extends StObject {
   
   @js.native
-  sealed trait Utf16BigEndian extends ByteOrderMark
+  sealed trait None
+    extends StObject
+       with ByteOrderMark
   
   @js.native
-  sealed trait Utf16LittleEndian extends ByteOrderMark
+  sealed trait Utf16BigEndian
+    extends StObject
+       with ByteOrderMark
   
   @js.native
-  sealed trait Utf8 extends ByteOrderMark
+  sealed trait Utf16LittleEndian
+    extends StObject
+       with ByteOrderMark
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ByteOrderMark with Double] = js.native
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 2 */ @js.native
-  object Utf16BigEndian extends TopLevel[Utf16BigEndian with Double]
-  
-  /* 3 */ @js.native
-  object Utf16LittleEndian extends TopLevel[Utf16LittleEndian with Double]
-  
-  /* 1 */ @js.native
-  object Utf8 extends TopLevel[Utf8 with Double]
-  
+  @js.native
+  sealed trait Utf8
+    extends StObject
+       with ByteOrderMark
 }
-

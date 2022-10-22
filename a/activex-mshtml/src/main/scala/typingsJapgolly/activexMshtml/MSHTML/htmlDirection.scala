@@ -1,27 +1,23 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`-99999`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`99999`
+import typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`-99999`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`99999`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`-99999`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`99999`
+  - typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`-99999`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`99999`
 */
-trait htmlDirection extends js.Object
-
+trait htmlDirection extends StObject
 object htmlDirection {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def htmlDirectionBackward: `-99999` = this.cast(-99999)
-  @scala.inline
-  def htmlDirectionForward: `99999` = this.cast(99999)
-  @scala.inline
-  def htmlDirection_Max: `2147483647` = this.cast(2147483647)
+  
+  inline def htmlDirectionBackward: `-99999` = -99999.asInstanceOf[`-99999`]
+  
+  inline def htmlDirectionForward: `99999` = 99999.asInstanceOf[`99999`]
+  
+  inline def htmlDirection_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }
-

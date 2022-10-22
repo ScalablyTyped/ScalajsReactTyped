@@ -1,48 +1,53 @@
 package typingsJapgolly.stripeV3.stripe
 
-import typingsJapgolly.stripeV3.AnonBillingdetailsCard
+import typingsJapgolly.stripeV3.anon.BillingdetailsCard
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HandleCardPaymentWithoutElementsOptions extends HandleCardPaymentOptions {
+trait HandleCardPaymentWithoutElementsOptions
+  extends StObject
+     with HandleCardPaymentOptions {
+  
   /**
     * Only one of payment_method_data and payment_method is required.
     * Use payment_method to specify an existing PaymentMethod to use
     * for this payment.
     */
   var payment_method: js.UndefOr[String] = js.undefined
+  
   /**
     * Use this parameter to supply additional data relevant to
     * the payment method, such as billing details
     */
   @JSName("payment_method_data")
-  var payment_method_data_HandleCardPaymentWithoutElementsOptions: js.UndefOr[AnonBillingdetailsCard] = js.undefined
+  var payment_method_data_HandleCardPaymentWithoutElementsOptions: js.UndefOr[BillingdetailsCard] = js.undefined
+  
   /**
     * Instead of payment_method, the ID of a Source may be passed in.
     * (Note that this is undocumented as of August 2019).
     */
   var source: js.UndefOr[String] = js.undefined
 }
-
 object HandleCardPaymentWithoutElementsOptions {
-  @scala.inline
-  def apply(
-    payment_method: String = null,
-    payment_method_data: AnonBillingdetailsCard = null,
-    receipt_email: String = null,
-    save_payment_method: js.UndefOr[Boolean] = js.undefined,
-    shipping: ShippingDetails = null,
-    source: String = null
-  ): HandleCardPaymentWithoutElementsOptions = {
+  
+  inline def apply(): HandleCardPaymentWithoutElementsOptions = {
     val __obj = js.Dynamic.literal()
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
-    if (payment_method_data != null) __obj.updateDynamic("payment_method_data")(payment_method_data.asInstanceOf[js.Any])
-    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
-    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.asInstanceOf[js.Any])
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleCardPaymentWithoutElementsOptions]
   }
+  
+  extension [Self <: HandleCardPaymentWithoutElementsOptions](x: Self) {
+    
+    inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+    
+    inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+    
+    inline def setPayment_method_data(value: BillingdetailsCard): Self = StObject.set(x, "payment_method_data", value.asInstanceOf[js.Any])
+    
+    inline def setPayment_method_dataUndefined: Self = StObject.set(x, "payment_method_data", js.undefined)
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+  }
 }
-

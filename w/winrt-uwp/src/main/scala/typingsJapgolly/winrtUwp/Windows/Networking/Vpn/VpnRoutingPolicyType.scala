@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VpnRoutingPolicyType extends js.Object
-
+sealed trait VpnRoutingPolicyType extends StObject
 /** Specifies the routing policy type. */
 @JSGlobal("Windows.Networking.Vpn.VpnRoutingPolicyType")
 @js.native
-object VpnRoutingPolicyType extends js.Object {
+object VpnRoutingPolicyType extends StObject {
+  
   /** Apps are force tunneled through the VPN interface. */
   @js.native
-  sealed trait forceAllTrafficOverVpn extends VpnRoutingPolicyType
+  sealed trait forceAllTrafficOverVpn
+    extends StObject
+       with VpnRoutingPolicyType
   
   /** Apps are split tunneled and allowed to talk through other interfaces. */
   @js.native
-  sealed trait splitRouting extends VpnRoutingPolicyType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnRoutingPolicyType with Double] = js.native
-  /* 1 */ @js.native
-  object forceAllTrafficOverVpn extends TopLevel[forceAllTrafficOverVpn with Double]
-  
-  /* 0 */ @js.native
-  object splitRouting extends TopLevel[splitRouting with Double]
-  
+  sealed trait splitRouting
+    extends StObject
+       with VpnRoutingPolicyType
 }
-

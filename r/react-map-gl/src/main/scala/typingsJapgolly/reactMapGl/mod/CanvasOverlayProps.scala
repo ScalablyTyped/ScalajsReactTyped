@@ -1,30 +1,25 @@
 package typingsJapgolly.reactMapGl.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CanvasOverlayProps extends BaseControlProps {
+trait CanvasOverlayProps
+  extends StObject
+     with BaseControlProps {
+  
   def redraw(opts: CanvasRedrawOptions): Unit
 }
-
 object CanvasOverlayProps {
-  @scala.inline
-  def apply(
-    redraw: CanvasRedrawOptions => Callback,
-    captureClick: js.UndefOr[Boolean] = js.undefined,
-    captureDoubleClick: js.UndefOr[Boolean] = js.undefined,
-    captureDrag: js.UndefOr[Boolean] = js.undefined,
-    captureScroll: js.UndefOr[Boolean] = js.undefined
-  ): CanvasOverlayProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("redraw")(js.Any.fromFunction1((t0: typingsJapgolly.reactMapGl.mod.CanvasRedrawOptions) => redraw(t0).runNow()))
-    if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDoubleClick)) __obj.updateDynamic("captureDoubleClick")(captureDoubleClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDrag)) __obj.updateDynamic("captureDrag")(captureDrag.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureScroll)) __obj.updateDynamic("captureScroll")(captureScroll.asInstanceOf[js.Any])
+  
+  inline def apply(redraw: CanvasRedrawOptions => Callback): CanvasOverlayProps = {
+    val __obj = js.Dynamic.literal(redraw = js.Any.fromFunction1((t0: CanvasRedrawOptions) => redraw(t0).runNow()))
     __obj.asInstanceOf[CanvasOverlayProps]
   }
+  
+  extension [Self <: CanvasOverlayProps](x: Self) {
+    
+    inline def setRedraw(value: CanvasRedrawOptions => Callback): Self = StObject.set(x, "redraw", js.Any.fromFunction1((t0: CanvasRedrawOptions) => value(t0).runNow()))
+  }
 }
-

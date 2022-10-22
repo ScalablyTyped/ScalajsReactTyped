@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICoreWindowDialogFactory extends js.Object {
+trait ICoreWindowDialogFactory extends StObject {
+  
   def createWithTitle(title: String): CoreWindowDialog
 }
-
 object ICoreWindowDialogFactory {
-  @scala.inline
-  def apply(createWithTitle: String => CallbackTo[CoreWindowDialog]): ICoreWindowDialogFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createWithTitle")(js.Any.fromFunction1((t0: java.lang.String) => createWithTitle(t0).runNow()))
+  
+  inline def apply(createWithTitle: String => CoreWindowDialog): ICoreWindowDialogFactory = {
+    val __obj = js.Dynamic.literal(createWithTitle = js.Any.fromFunction1(createWithTitle))
     __obj.asInstanceOf[ICoreWindowDialogFactory]
   }
+  
+  extension [Self <: ICoreWindowDialogFactory](x: Self) {
+    
+    inline def setCreateWithTitle(value: String => CoreWindowDialog): Self = StObject.set(x, "createWithTitle", js.Any.fromFunction1(value))
+  }
 }
-

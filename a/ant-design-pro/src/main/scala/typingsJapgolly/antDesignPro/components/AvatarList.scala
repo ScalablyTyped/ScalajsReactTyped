@@ -1,49 +1,41 @@
 package typingsJapgolly.antDesignPro.components
 
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.React.Element
 import japgolly.scalajs.react.vdom.VdomElement
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignPro.avatarItemMod.SizeType
-import typingsJapgolly.antDesignPro.avatarListMod.AvatarListProps
-import typingsJapgolly.antDesignPro.avatarListMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignPro.libAvatarListAvatarItemMod.SizeType
+import typingsJapgolly.antDesignPro.libAvatarListMod.AvatarListProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AvatarList {
-  def apply(
-    Item: VdomElement = null,
-    excessItemsStyle: CSSProperties = null,
-    maxLength: Int | Double = null,
-    size: SizeType = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: Element | js.Array[Element]
-  ): UnmountedWithRoot[AvatarListProps, default, Unit, AvatarListProps] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
   
-      if (Item != null) __obj.updateDynamic("Item")(Item.rawElement.asInstanceOf[js.Any])
-    if (excessItemsStyle != null) __obj.updateDynamic("excessItemsStyle")(excessItemsStyle.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignPro.avatarListMod.AvatarListProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.antDesignPro.avatarListMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignPro.avatarListMod.AvatarListProps])
+  inline def apply(children: Element | js.Array[Element]): Builder = {
+    val __props = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[AvatarListProps]))
   }
-  @JSImport("ant-design-pro/lib/AvatarList", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("ant-design-pro", "AvatarList")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignPro.mod.AvatarList] {
+    
+    inline def Item(value: VdomElement): this.type = set("Item", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def excessItemsStyle(value: CSSProperties): this.type = set("excessItemsStyle", value.asInstanceOf[js.Any])
+    
+    inline def maxLength(value: Double): this.type = set("maxLength", value.asInstanceOf[js.Any])
+    
+    inline def size(value: SizeType): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: AvatarListProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectedItemChangedEventUIParam extends js.Object {
+trait SelectedItemChangedEventUIParam extends StObject {
+  
   /**
-  	 * Used to get a reference to the current selected data item.
-  	 */
-  var newItem: js.UndefOr[js.Any] = js.undefined
+    * Used to get a reference to the current selected data item.
+    */
+  var newItem: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to get a reference to the previous selected data item.
-  	 */
-  var oldItem: js.UndefOr[js.Any] = js.undefined
+    * Used to get a reference to the previous selected data item.
+    */
+  var oldItem: js.UndefOr[Any] = js.undefined
 }
-
 object SelectedItemChangedEventUIParam {
-  @scala.inline
-  def apply(newItem: js.Any = null, oldItem: js.Any = null): SelectedItemChangedEventUIParam = {
+  
+  inline def apply(): SelectedItemChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (newItem != null) __obj.updateDynamic("newItem")(newItem.asInstanceOf[js.Any])
-    if (oldItem != null) __obj.updateDynamic("oldItem")(oldItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectedItemChangedEventUIParam]
   }
+  
+  extension [Self <: SelectedItemChangedEventUIParam](x: Self) {
+    
+    inline def setNewItem(value: Any): Self = StObject.set(x, "newItem", value.asInstanceOf[js.Any])
+    
+    inline def setNewItemUndefined: Self = StObject.set(x, "newItem", js.undefined)
+    
+    inline def setOldItem(value: Any): Self = StObject.set(x, "oldItem", value.asInstanceOf[js.Any])
+    
+    inline def setOldItemUndefined: Self = StObject.set(x, "oldItem", js.undefined)
+  }
 }
-

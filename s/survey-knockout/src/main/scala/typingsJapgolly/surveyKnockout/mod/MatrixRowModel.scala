@@ -1,19 +1,30 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "MatrixRowModel")
 @js.native
-class MatrixRowModel protected () extends js.Object {
-  def this(item: ItemValue, fullName: String, data: IMatrixData, value: js.Any) = this()
+open class MatrixRowModel protected () extends Base {
+  def this(item: ItemValue, fullName: String, data: IMatrixData, value: Any) = this()
+  
+  var cellClick: Any = js.native
+  
+  var data: IMatrixData = js.native
+  
   var fullName: String = js.native
-  val locText: LocalizableString = js.native
-  val name: String = js.native
-  var rowValue: js.Any = js.native
-  val text: String = js.native
-  var value: js.Any = js.native
-  /* protected */ def onValueChanged(): Unit = js.native
+  
+  var item: ItemValue = js.native
+  
+  def locText: LocalizableString = js.native
+  
+  def name: String = js.native
+  
+  def rowClasses: String = js.native
+  
+  def text: String = js.native
+  
+  def value: Any = js.native
+  def value_=(`val`: Any): Unit = js.native
 }
-

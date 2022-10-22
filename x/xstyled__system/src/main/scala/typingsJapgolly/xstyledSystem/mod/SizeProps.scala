@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.HeightProperty
+import typingsJapgolly.csstype.mod.Property.Height
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SizeProps[TLength] extends js.Object {
-  val size: js.UndefOr[ResponsiveValue[HeightProperty[TLength]]] = js.undefined
+trait SizeProps[TLength] extends StObject {
+  
+  val size: js.UndefOr[ResponsiveValue[Height[TLength]]] = js.undefined
 }
-
 object SizeProps {
-  @scala.inline
-  def apply[TLength](size: ResponsiveValue[HeightProperty[TLength]] = null): SizeProps[TLength] = {
+  
+  inline def apply[TLength](): SizeProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeProps[TLength]]
   }
+  
+  extension [Self <: SizeProps[?], TLength](x: Self & SizeProps[TLength]) {
+    
+    inline def setSize(value: ResponsiveValue[Height[TLength]]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setSizeVarargs(value: Height[TLength]*): Self = StObject.set(x, "size", js.Array(value*))
+  }
 }
-

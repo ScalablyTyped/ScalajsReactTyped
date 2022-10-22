@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Sms
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CellularClass extends js.Object
-
+sealed trait CellularClass extends StObject
 /** This enumerated type defines the type of radio standard in a device. */
 @JSGlobal("Windows.Devices.Sms.CellularClass")
 @js.native
-object CellularClass extends js.Object {
+object CellularClass extends StObject {
+  
   /** The device type is CDMA cellular class. */
   @js.native
-  sealed trait cdma extends CellularClass
+  sealed trait cdma
+    extends StObject
+       with CellularClass
   
   /** The device type is GSM cellular class. */
   @js.native
-  sealed trait gsm extends CellularClass
+  sealed trait gsm
+    extends StObject
+       with CellularClass
   
   /** The device type corresponds to no cellular class. */
   @js.native
-  sealed trait none extends CellularClass
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CellularClass with Double] = js.native
-  /* 2 */ @js.native
-  object cdma extends TopLevel[cdma with Double]
-  
-  /* 1 */ @js.native
-  object gsm extends TopLevel[gsm with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  sealed trait none
+    extends StObject
+       with CellularClass
 }
-

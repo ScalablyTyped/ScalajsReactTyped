@@ -1,21 +1,30 @@
 package typingsJapgolly.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AngleLockEquationOptions extends js.Object {
+trait AngleLockEquationOptions extends StObject {
+  
   var angle: js.UndefOr[Double] = js.undefined
+  
   var ratio: js.UndefOr[Double] = js.undefined
 }
-
 object AngleLockEquationOptions {
-  @scala.inline
-  def apply(angle: Int | Double = null, ratio: Int | Double = null): AngleLockEquationOptions = {
+  
+  inline def apply(): AngleLockEquationOptions = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
     __obj.asInstanceOf[AngleLockEquationOptions]
   }
+  
+  extension [Self <: AngleLockEquationOptions](x: Self) {
+    
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+  }
 }
-

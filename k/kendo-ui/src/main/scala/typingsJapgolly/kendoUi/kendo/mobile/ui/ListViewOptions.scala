@@ -2,79 +2,139 @@ package typingsJapgolly.kendoUi.kendo.mobile.ui
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListViewOptions extends js.Object {
+trait ListViewOptions extends StObject {
+  
   var appendOnRefresh: js.UndefOr[Boolean] = js.undefined
+  
   var autoBind: js.UndefOr[Boolean] = js.undefined
+  
   var click: js.UndefOr[js.Function1[/* e */ ListViewClickEvent, Unit]] = js.undefined
+  
   var dataBinding: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
+  
   var dataBound: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
-  var dataSource: js.UndefOr[DataSource | js.Any] = js.undefined
+  
+  var dataSource: js.UndefOr[DataSource | Any] = js.undefined
+  
   var endlessScroll: js.UndefOr[Boolean] = js.undefined
+  
   var filterable: js.UndefOr[Boolean | ListViewFilterable] = js.undefined
+  
   var fixedHeaders: js.UndefOr[Boolean] = js.undefined
+  
   var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var itemChange: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
+  
   var loadMore: js.UndefOr[Boolean] = js.undefined
+  
   var messages: js.UndefOr[ListViewMessages] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var pullParameters: js.UndefOr[js.Function] = js.undefined
+  
   var pullToRefresh: js.UndefOr[Boolean] = js.undefined
+  
   var style: js.UndefOr[String] = js.undefined
+  
   var template: js.UndefOr[String | js.Function] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
+  
   var virtualViewSize: js.UndefOr[Double] = js.undefined
 }
-
 object ListViewOptions {
-  @scala.inline
-  def apply(
-    appendOnRefresh: js.UndefOr[Boolean] = js.undefined,
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    click: /* e */ ListViewClickEvent => Callback = null,
-    dataBinding: /* e */ ListViewEvent => Callback = null,
-    dataBound: /* e */ ListViewEvent => Callback = null,
-    dataSource: DataSource | js.Any = null,
-    endlessScroll: js.UndefOr[Boolean] = js.undefined,
-    filterable: Boolean | ListViewFilterable = null,
-    fixedHeaders: js.UndefOr[Boolean] = js.undefined,
-    headerTemplate: String | js.Function = null,
-    itemChange: /* e */ ListViewEvent => Callback = null,
-    loadMore: js.UndefOr[Boolean] = js.undefined,
-    messages: ListViewMessages = null,
-    name: String = null,
-    pullParameters: js.Function = null,
-    pullToRefresh: js.UndefOr[Boolean] = js.undefined,
-    style: String = null,
-    template: String | js.Function = null,
-    `type`: String = null,
-    virtualViewSize: Int | Double = null
-  ): ListViewOptions = {
+  
+  inline def apply(): ListViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appendOnRefresh)) __obj.updateDynamic("appendOnRefresh")(appendOnRefresh.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.mobile.ui.ListViewClickEvent) => click(t0).runNow()))
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.mobile.ui.ListViewEvent) => dataBinding(t0).runNow()))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.mobile.ui.ListViewEvent) => dataBound(t0).runNow()))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(endlessScroll)) __obj.updateDynamic("endlessScroll")(endlessScroll.asInstanceOf[js.Any])
-    if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeaders)) __obj.updateDynamic("fixedHeaders")(fixedHeaders.asInstanceOf[js.Any])
-    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
-    if (itemChange != null) __obj.updateDynamic("itemChange")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.mobile.ui.ListViewEvent) => itemChange(t0).runNow()))
-    if (!js.isUndefined(loadMore)) __obj.updateDynamic("loadMore")(loadMore.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pullParameters != null) __obj.updateDynamic("pullParameters")(pullParameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(pullToRefresh)) __obj.updateDynamic("pullToRefresh")(pullToRefresh.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (virtualViewSize != null) __obj.updateDynamic("virtualViewSize")(virtualViewSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViewOptions]
   }
+  
+  extension [Self <: ListViewOptions](x: Self) {
+    
+    inline def setAppendOnRefresh(value: Boolean): Self = StObject.set(x, "appendOnRefresh", value.asInstanceOf[js.Any])
+    
+    inline def setAppendOnRefreshUndefined: Self = StObject.set(x, "appendOnRefresh", js.undefined)
+    
+    inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
+    
+    inline def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
+    
+    inline def setClick(value: /* e */ ListViewClickEvent => Callback): Self = StObject.set(x, "click", js.Any.fromFunction1((t0: /* e */ ListViewClickEvent) => value(t0).runNow()))
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    
+    inline def setDataBinding(value: /* e */ ListViewEvent => Callback): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1((t0: /* e */ ListViewEvent) => value(t0).runNow()))
+    
+    inline def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
+    
+    inline def setDataBound(value: /* e */ ListViewEvent => Callback): Self = StObject.set(x, "dataBound", js.Any.fromFunction1((t0: /* e */ ListViewEvent) => value(t0).runNow()))
+    
+    inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
+    
+    inline def setDataSource(value: DataSource | Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setEndlessScroll(value: Boolean): Self = StObject.set(x, "endlessScroll", value.asInstanceOf[js.Any])
+    
+    inline def setEndlessScrollUndefined: Self = StObject.set(x, "endlessScroll", js.undefined)
+    
+    inline def setFilterable(value: Boolean | ListViewFilterable): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+    
+    inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
+    
+    inline def setFixedHeaders(value: Boolean): Self = StObject.set(x, "fixedHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setFixedHeadersUndefined: Self = StObject.set(x, "fixedHeaders", js.undefined)
+    
+    inline def setHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
+    
+    inline def setItemChange(value: /* e */ ListViewEvent => Callback): Self = StObject.set(x, "itemChange", js.Any.fromFunction1((t0: /* e */ ListViewEvent) => value(t0).runNow()))
+    
+    inline def setItemChangeUndefined: Self = StObject.set(x, "itemChange", js.undefined)
+    
+    inline def setLoadMore(value: Boolean): Self = StObject.set(x, "loadMore", value.asInstanceOf[js.Any])
+    
+    inline def setLoadMoreUndefined: Self = StObject.set(x, "loadMore", js.undefined)
+    
+    inline def setMessages(value: ListViewMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPullParameters(value: js.Function): Self = StObject.set(x, "pullParameters", value.asInstanceOf[js.Any])
+    
+    inline def setPullParametersUndefined: Self = StObject.set(x, "pullParameters", js.undefined)
+    
+    inline def setPullToRefresh(value: Boolean): Self = StObject.set(x, "pullToRefresh", value.asInstanceOf[js.Any])
+    
+    inline def setPullToRefreshUndefined: Self = StObject.set(x, "pullToRefresh", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setVirtualViewSize(value: Double): Self = StObject.set(x, "virtualViewSize", value.asInstanceOf[js.Any])
+    
+    inline def setVirtualViewSizeUndefined: Self = StObject.set(x, "virtualViewSize", js.undefined)
+  }
 }
-

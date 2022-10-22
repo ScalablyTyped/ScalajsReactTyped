@@ -1,27 +1,32 @@
-package typingsJapgolly.web3Core
+package typingsJapgolly.web3Core.mod
 
+import typingsJapgolly.bignumberJs.mod.default
+import typingsJapgolly.bnJs.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - scala.Double
-    - typingsJapgolly.bnJs.mod.^
-    - / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BigNumber * / js.Any
-    - typingsJapgolly.web3Core.web3CoreStrings.latest
-    - typingsJapgolly.web3Core.web3CoreStrings.pending
-    - typingsJapgolly.web3Core.web3CoreStrings.earliest
-    - typingsJapgolly.web3Core.web3CoreStrings.genesis
-  */
-  type BlockNumber = typingsJapgolly.web3Core.mod._BlockNumber | java.lang.String | scala.Double | typingsJapgolly.bnJs.mod.^  | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BigNumber */ js.Any)
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.web3Core.mod.HttpProvider
-    - typingsJapgolly.web3Core.mod.IpcProvider
-    - typingsJapgolly.web3Core.mod.WebsocketProvider
-    - java.lang.String
-    - scala.Null
-  */
-  type provider = typingsJapgolly.web3Core.mod._provider | java.lang.String | scala.Null
-}
+
+/* Rewritten from type alias, can be one of: 
+  - java.lang.String
+  - scala.Double
+  - typingsJapgolly.bnJs.mod.^
+  - typingsJapgolly.bignumberJs.mod.default
+  - typingsJapgolly.web3Core.web3CoreStrings.latest
+  - typingsJapgolly.web3Core.web3CoreStrings.pending
+  - typingsJapgolly.web3Core.web3CoreStrings.earliest
+  - typingsJapgolly.web3Core.web3CoreStrings.genesis
+  - typingsJapgolly.web3Core.web3CoreStrings.finalized
+  - typingsJapgolly.web3Core.web3CoreStrings.safe
+*/
+type BlockNumber = _BlockNumber | String | Double | ^ | default
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.web3Core.mod.HttpProvider
+  - typingsJapgolly.web3Core.mod.IpcProvider
+  - typingsJapgolly.web3Core.mod.WebsocketProvider
+  - typingsJapgolly.web3Core.mod.AbstractProvider
+  - java.lang.String
+  - scala.Null
+*/
+type provider = _provider | String | Null

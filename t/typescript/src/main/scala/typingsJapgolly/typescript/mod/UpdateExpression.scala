@@ -1,11 +1,13 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateExpression extends UnaryExpression {
-  var _updateExpressionBrand: js.Any = js.native
+trait UpdateExpression
+  extends StObject
+     with UnaryExpression {
+  
+  var _updateExpressionBrand: Any = js.native
 }
-

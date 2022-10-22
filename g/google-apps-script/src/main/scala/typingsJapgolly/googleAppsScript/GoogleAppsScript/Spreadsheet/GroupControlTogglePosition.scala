@@ -1,32 +1,25 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GroupControlTogglePosition extends js.Object
-
+sealed trait GroupControlTogglePosition extends StObject
 /**
   * An enumeration representing the possible positions that a group control toggle can have.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.GroupControlTogglePosition")
 @js.native
-object GroupControlTogglePosition extends js.Object {
-  @js.native
-  sealed trait AFTER extends GroupControlTogglePosition
+object GroupControlTogglePosition extends StObject {
   
   @js.native
-  sealed trait BEFORE extends GroupControlTogglePosition
+  sealed trait AFTER
+    extends StObject
+       with GroupControlTogglePosition
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GroupControlTogglePosition with Double] = js.native
-  /* 1 */ @js.native
-  object AFTER extends TopLevel[AFTER with Double]
-  
-  /* 0 */ @js.native
-  object BEFORE extends TopLevel[BEFORE with Double]
-  
+  @js.native
+  sealed trait BEFORE
+    extends StObject
+       with GroupControlTogglePosition
 }
-

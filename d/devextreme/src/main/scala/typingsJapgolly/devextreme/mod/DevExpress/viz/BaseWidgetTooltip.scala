@@ -1,76 +1,142 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.AnonBlur
-import typingsJapgolly.devextreme.AnonDashStyleOpacity
-import typingsJapgolly.devextreme.mod.DevExpress.ui.format
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalajs.dom.Element
+import typingsJapgolly.devextreme.anon.Blur
+import typingsJapgolly.devextreme.anon.DashStyle
+import typingsJapgolly.devextreme.mod.DevExpress.core.UserDefinedElement
+import typingsJapgolly.devextreme.mod.DevExpress.ui.Format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Configures tooltips - small pop-up rectangles that display information about a data-visualizing widget element being pressed or hovered over with the mouse pointer. */
-trait BaseWidgetTooltip extends js.Object {
-  /** Specifies the length of a tooltip's arrow in pixels. */
+trait BaseWidgetTooltip extends StObject {
+  
+  /**
+    * Specifies the length of a tooltip&apos;s arrow in pixels.
+    */
   var arrowLength: js.UndefOr[Double] = js.undefined
-  /** Configures a tooltip's border. */
-  var border: js.UndefOr[AnonDashStyleOpacity] = js.undefined
-  /** Colors all tooltips. */
+  
+  /**
+    * Configures a tooltip&apos;s border.
+    */
+  var border: js.UndefOr[DashStyle] = js.undefined
+  
+  /**
+    * Colors all tooltips.
+    */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies the container in which to draw tooltips. The default container is the HTML DOM `` element. */
-  var container: js.UndefOr[String | Element | JQuery] = js.undefined
-  /** Makes all the tooltip's corners rounded. */
+  
+  /**
+    * Specifies the container in which to draw tooltips. The default container is the HTML DOM `` element.
+    */
+  var container: js.UndefOr[String | UserDefinedElement[Element]] = js.undefined
+  
+  /**
+    * Makes all the tooltip&apos;s corners rounded.
+    */
   var cornerRadius: js.UndefOr[Double] = js.undefined
-  /** Enables tooltips. */
+  
+  /**
+    * Enables tooltips.
+    */
   var enabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies tooltips' font options. */
+  
+  /**
+    * Specifies tooltips&apos; font properties.
+    */
   var font: js.UndefOr[Font] = js.undefined
-  /** Formats a value before it is displayed it in a tooltip. */
-  var format: js.UndefOr[typingsJapgolly.devextreme.mod.DevExpress.ui.format] = js.undefined
-  /** Specifies tooltips' transparency. */
+  
+  /**
+    * Formats a value before it is displayed it in a tooltip.
+    */
+  var format: js.UndefOr[Format] = js.undefined
+  
+  /**
+    * Specifies tooltips&apos; transparency.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** Generates an empty space, measured in pixels, between a tooltip's left/right border and its text. */
+  
+  /**
+    * Generates an empty space, measured in pixels, between a tooltip&apos;s left/right border and its text.
+    */
   var paddingLeftRight: js.UndefOr[Double] = js.undefined
-  /** Generates an empty space, measured in pixels, between a tooltip's top/bottom border and its text. */
+  
+  /**
+    * Generates an empty space, measured in pixels, between a tooltip&apos;s top/bottom border and its text.
+    */
   var paddingTopBottom: js.UndefOr[Double] = js.undefined
-  /** Configures a tooltip's shadow. */
-  var shadow: js.UndefOr[AnonBlur] = js.undefined
-  /** Specifies a tooltip's z-index. */
+  
+  /**
+    * Configures a tooltip&apos;s shadow.
+    */
+  var shadow: js.UndefOr[Blur] = js.undefined
+  
+  /**
+    * Specifies a tooltip&apos;s z-index.
+    */
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object BaseWidgetTooltip {
-  @scala.inline
-  def apply(
-    arrowLength: Int | Double = null,
-    border: AnonDashStyleOpacity = null,
-    color: String = null,
-    container: String | Element | JQuery = null,
-    cornerRadius: Int | Double = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    font: Font = null,
-    format: format = null,
-    opacity: Int | Double = null,
-    paddingLeftRight: Int | Double = null,
-    paddingTopBottom: Int | Double = null,
-    shadow: AnonBlur = null,
-    zIndex: Int | Double = null
-  ): BaseWidgetTooltip = {
+  
+  inline def apply(): BaseWidgetTooltip = {
     val __obj = js.Dynamic.literal()
-    if (arrowLength != null) __obj.updateDynamic("arrowLength")(arrowLength.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (paddingLeftRight != null) __obj.updateDynamic("paddingLeftRight")(paddingLeftRight.asInstanceOf[js.Any])
-    if (paddingTopBottom != null) __obj.updateDynamic("paddingTopBottom")(paddingTopBottom.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseWidgetTooltip]
   }
+  
+  extension [Self <: BaseWidgetTooltip](x: Self) {
+    
+    inline def setArrowLength(value: Double): Self = StObject.set(x, "arrowLength", value.asInstanceOf[js.Any])
+    
+    inline def setArrowLengthUndefined: Self = StObject.set(x, "arrowLength", js.undefined)
+    
+    inline def setBorder(value: DashStyle): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setContainer(value: String | UserDefinedElement[Element]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+    
+    inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatFunction1(value: js.Date | Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setPaddingLeftRight(value: Double): Self = StObject.set(x, "paddingLeftRight", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingLeftRightUndefined: Self = StObject.set(x, "paddingLeftRight", js.undefined)
+    
+    inline def setPaddingTopBottom(value: Double): Self = StObject.set(x, "paddingTopBottom", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingTopBottomUndefined: Self = StObject.set(x, "paddingTopBottom", js.undefined)
+    
+    inline def setShadow(value: Blur): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

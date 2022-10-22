@@ -10,10 +10,10 @@ Utilities supporting authorization, request logging and other often reused parts
 | ------------------ | :-------------: |
 | Full name          | microservice-utilities |
 | Keywords           | microservice, authorizer, loggger, client |
-| # releases         | 32 |
-| # dependents       | 0 |
-| # downloads        | 19138 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 3409.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/Cimpress-MCP/microservice-utilities.js#readme)

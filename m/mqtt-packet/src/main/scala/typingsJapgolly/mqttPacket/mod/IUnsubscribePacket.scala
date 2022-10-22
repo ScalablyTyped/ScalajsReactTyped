@@ -1,34 +1,39 @@
 package typingsJapgolly.mqttPacket.mod
 
-import typingsJapgolly.mqttPacket.AnonReasonString
 import typingsJapgolly.mqttPacket.mqttPacketStrings.unsubscribe
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IUnsubscribePacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
+  
   @JSName("cmd")
   var cmd_IUnsubscribePacket: unsubscribe
-  var properties: js.UndefOr[AnonReasonString] = js.undefined
+  
+  var properties: js.UndefOr[typingsJapgolly.mqttPacket.anon.UserProperties] = js.undefined
+  
   var unsubscriptions: js.Array[String]
 }
-
 object IUnsubscribePacket {
-  @scala.inline
-  def apply(
-    cmd: unsubscribe,
-    unsubscriptions: js.Array[String],
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonReasonString = null
-  ): IUnsubscribePacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], unsubscriptions = unsubscriptions.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+  
+  inline def apply(unsubscriptions: js.Array[String]): IUnsubscribePacket = {
+    val __obj = js.Dynamic.literal(cmd = "unsubscribe", unsubscriptions = unsubscriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUnsubscribePacket]
   }
+  
+  extension [Self <: IUnsubscribePacket](x: Self) {
+    
+    inline def setCmd(value: unsubscribe): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: typingsJapgolly.mqttPacket.anon.UserProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setUnsubscriptions(value: js.Array[String]): Self = StObject.set(x, "unsubscriptions", value.asInstanceOf[js.Any])
+    
+    inline def setUnsubscriptionsVarargs(value: String*): Self = StObject.set(x, "unsubscriptions", js.Array(value*))
+  }
 }
-

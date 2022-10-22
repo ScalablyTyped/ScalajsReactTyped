@@ -1,28 +1,25 @@
 package typingsJapgolly.weappApi.mod.wx
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigateBackOptions extends CommonCallbackOptions {
+trait NavigateBackOptions
+  extends StObject
+     with CommonCallbackOptions {
+  
   //  返回的页面数，如果 delta 大于现有页面数，则返回到首页。
   var delta: Double
 }
-
 object NavigateBackOptions {
-  @scala.inline
-  def apply(
-    delta: Double,
-    complete: /* res */ js.Any => Callback = null,
-    fail: /* res */ js.Any => Callback = null,
-    success: /* res */ js.Any => Callback = null
-  ): NavigateBackOptions = {
+  
+  inline def apply(delta: Double): NavigateBackOptions = {
     val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* res */ js.Any) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ js.Any) => success(t0).runNow()))
     __obj.asInstanceOf[NavigateBackOptions]
   }
+  
+  extension [Self <: NavigateBackOptions](x: Self) {
+    
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+  }
 }
-

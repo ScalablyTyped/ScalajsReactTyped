@@ -1,8 +1,8 @@
 package typingsJapgolly.osrm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Each Waypoint object has the following additional properties,
@@ -12,14 +12,17 @@ import scala.scalajs.js.annotation._
   *
   * https://github.com/Project-OSRM/node-osrm/blob/master/docs/api.md#trip
   */
-trait TripWaypoint extends Waypoint {
+trait TripWaypoint
+  extends StObject
+     with Waypoint {
+  
   var trips_index: Double
+  
   var waypoint_index: Double
 }
-
 object TripWaypoint {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     distance: Double,
     hint: String,
     location: Coordinate,
@@ -28,8 +31,13 @@ object TripWaypoint {
     waypoint_index: Double
   ): TripWaypoint = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], hint = hint.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], trips_index = trips_index.asInstanceOf[js.Any], waypoint_index = waypoint_index.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[TripWaypoint]
   }
+  
+  extension [Self <: TripWaypoint](x: Self) {
+    
+    inline def setTrips_index(value: Double): Self = StObject.set(x, "trips_index", value.asInstanceOf[js.Any])
+    
+    inline def setWaypoint_index(value: Double): Self = StObject.set(x, "waypoint_index", value.asInstanceOf[js.Any])
+  }
 }
-

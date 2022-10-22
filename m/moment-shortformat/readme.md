@@ -11,9 +11,9 @@ An extension to moment.js that formats dates in a short format like it's used on
 | Full name          | moment-shortformat |
 | Keywords           | momentjs, moment, date, short, researchgate |
 | # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 37215 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3854.3333333333335 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/researchgate/moment-shortformat#readme)

@@ -1,25 +1,11 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDropDownListOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxDropDownList")
+@JSImport("devextreme", "default.ui.dxDropDownList")
 @js.native
-class dxDropDownList protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.dxDropDownList {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(
-    element: JQuery,
-    options: dxDropDownListOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxDropDownList]
-  ) = this()
-  def this(
-    element: Element,
-    options: dxDropDownListOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxDropDownList]
-  ) = this()
-}
-
+open class dxDropDownList[TProperties] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxDropDownList[TProperties]

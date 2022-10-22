@@ -1,22 +1,25 @@
 package typingsJapgolly.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.HTMLElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.webix.mod.^
 import typingsJapgolly.webix.webix.ui.baseview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomScroll extends js.Object {
-  var scrollStep: Double = js.native
+trait CustomScroll extends StObject {
+  
   def enable(html_node: HTMLElement): Unit = js.native
   def enable(html_node: baseview): Unit = js.native
+  
   def init(): Unit = js.native
+  
   def resize(): Unit = js.native
+  
+  var scrollStep: Double = js.native
 }
-
-@JSImport("webix", "CustomScroll")
-@js.native
-object CustomScroll extends TopLevel[CustomScroll]
-
+object CustomScroll {
+  
+  inline def apply: CustomScroll = ^.asInstanceOf[js.Dynamic].selectDynamic("CustomScroll").asInstanceOf[CustomScroll]
+}

@@ -1,21 +1,27 @@
 package typingsJapgolly.dynogels.mod.AWS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dynogels", "AWS.EventListeners")
-@js.native
-object EventListeners extends js.Object {
-  @js.native
-  object Core extends js.Object {
-    def HTTP_DATA(): Unit = js.native
-    def SEND(): Unit = js.native
-    def VALIDATE_CREDENTIALS(): Unit = js.native
-    def VALIDATE_PARAMETERS(): Unit = js.native
-    def VALIDATE_REGION(): Unit = js.native
-    def removeListener(eventName: String, eventListener: js.Function): Unit = js.native
-  }
+object EventListeners {
   
+  object Core {
+    
+    @JSImport("dynogels", "AWS.EventListeners.Core")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def HTTP_DATA(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HTTP_DATA")().asInstanceOf[Unit]
+    
+    inline def SEND(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SEND")().asInstanceOf[Unit]
+    
+    inline def VALIDATE_CREDENTIALS(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("VALIDATE_CREDENTIALS")().asInstanceOf[Unit]
+    
+    inline def VALIDATE_PARAMETERS(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("VALIDATE_PARAMETERS")().asInstanceOf[Unit]
+    
+    inline def VALIDATE_REGION(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("VALIDATE_REGION")().asInstanceOf[Unit]
+    
+    inline def removeListener(eventName: String, eventListener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(eventName.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  }
 }
-

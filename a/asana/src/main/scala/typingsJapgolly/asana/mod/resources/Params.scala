@@ -1,21 +1,30 @@
 package typingsJapgolly.asana.mod.resources
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Params extends js.Object {
+trait Params extends StObject {
+  
   var opt_expand: js.UndefOr[String] = js.undefined
+  
   var opt_fields: js.UndefOr[String] = js.undefined
 }
-
 object Params {
-  @scala.inline
-  def apply(opt_expand: String = null, opt_fields: String = null): Params = {
+  
+  inline def apply(): Params = {
     val __obj = js.Dynamic.literal()
-    if (opt_expand != null) __obj.updateDynamic("opt_expand")(opt_expand.asInstanceOf[js.Any])
-    if (opt_fields != null) __obj.updateDynamic("opt_fields")(opt_fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
+  
+  extension [Self <: Params](x: Self) {
+    
+    inline def setOpt_expand(value: String): Self = StObject.set(x, "opt_expand", value.asInstanceOf[js.Any])
+    
+    inline def setOpt_expandUndefined: Self = StObject.set(x, "opt_expand", js.undefined)
+    
+    inline def setOpt_fields(value: String): Self = StObject.set(x, "opt_fields", value.asInstanceOf[js.Any])
+    
+    inline def setOpt_fieldsUndefined: Self = StObject.set(x, "opt_fields", js.undefined)
+  }
 }
-

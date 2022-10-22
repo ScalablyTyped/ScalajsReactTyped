@@ -1,17 +1,92 @@
 package typingsJapgolly.roads
 
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.roads.requestMod.default
-import typingsJapgolly.std.Window_
+import org.scalajs.dom.Document
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.Window
+import typingsJapgolly.node.bufferMod.global.Buffer
+import typingsJapgolly.roads.anon.CacheMaxAge
+import typingsJapgolly.roads.typesCoreResponseMod.OutgoingHeaders
+import typingsJapgolly.roads.typesCoreRoadMod.Context
+import typingsJapgolly.roads.typesCoreRoadMod.Middleware
+import typingsJapgolly.roads.typesCoreRoadMod.default
+import typingsJapgolly.roads.typesMiddlewareCookieMiddlewareMod.CookieContext
+import typingsJapgolly.roads.typesMiddlewareModifiedSinceMod.ModifiedSinceContext
+import typingsJapgolly.roads.typesMiddlewareStoreValsMod.StoreValsContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("roads", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  object ApplyToContextMiddleware {
+    
+    @JSImport("roads", "ApplyToContextMiddleware")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def build(key: String, `val`: Any): Middleware[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Middleware[Context]]
+  }
+  
+  object BasicRouterMiddleware {
+    
+    @JSImport("roads", "BasicRouterMiddleware.BasicRouter")
+    @js.native
+    /**
+      * @param {Road} [road] - The road that will receive the BasicRouter middleware
+      */
+    open class BasicRouter ()
+      extends typingsJapgolly.roads.typesMiddlewareBasicRouterMod.BasicRouter {
+      def this(road: default) = this()
+    }
+  }
+  
+  object CookieMiddleware {
+    
+    @JSImport("roads", "CookieMiddleware")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def buildClientMiddleware(pageDocument: Document): Middleware[CookieContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClientMiddleware")(pageDocument.asInstanceOf[js.Any]).asInstanceOf[Middleware[CookieContext]]
+    
+    @JSImport("roads", "CookieMiddleware.serverMiddleware")
+    @js.native
+    val serverMiddleware: Middleware[CookieContext] = js.native
+  }
+  
+  object CorsMiddleware {
+    
+    @JSImport("roads", "CorsMiddleware")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def build(options: CacheMaxAge): Middleware[Context] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[Context]]
+  }
+  
+  object ModifiedSinceMiddleware {
+    
+    @JSImport("roads", "ModifiedSinceMiddleware.middleware")
+    @js.native
+    val middleware: Middleware[ModifiedSinceContext] = js.native
+  }
+  
+  object ParseBodyMiddleware {
+    
+    @JSImport("roads", "ParseBodyMiddleware.middleware")
+    @js.native
+    val middleware: Middleware[Context] = js.native
+  }
+  
+  object RemoveTrailingSlashMiddleware {
+    
+    @JSImport("roads", "RemoveTrailingSlashMiddleware.middleware")
+    @js.native
+    val middleware: Middleware[Context] = js.native
+  }
+  
+  @JSImport("roads", "Request")
   @js.native
-  class Request protected () extends default {
+  open class Request protected ()
+    extends typingsJapgolly.roads.typesClientRequestMod.default {
     /**
       * @todo: port should just be part of the host
       *
@@ -22,42 +97,65 @@ object mod extends js.Object {
     def this(secure: Boolean, host: String, port: Double) = this()
   }
   
+  object RerouteMiddleware {
+    
+    @JSImport("roads", "RerouteMiddleware")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def build(key: String, road: default): Middleware[Context] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(key.asInstanceOf[js.Any], road.asInstanceOf[js.Any])).asInstanceOf[Middleware[Context]]
+  }
+  
+  @JSImport("roads", "Response")
   @js.native
-  class Response protected ()
-    extends typingsJapgolly.roads.responseMod.default {
+  open class Response protected ()
+    extends typingsJapgolly.roads.typesCoreResponseMod.default {
     /**
       * Creates a new Response object.
       *
-      * @param {string} body - Your response body
+      * @param {string | Buffer} body - Your response body
       * @param {number} [status] - Your response status
       * @param {object} [headers] - Your response headers
       */
     def this(body: String) = this()
+    def this(body: Buffer) = this()
     def this(body: String, status: Double) = this()
-    def this(body: String, status: Double, headers: js.Object) = this()
+    def this(body: Buffer, status: Double) = this()
+    def this(body: String, status: Double, headers: OutgoingHeaders) = this()
+    def this(body: String, status: Unit, headers: OutgoingHeaders) = this()
+    def this(body: Buffer, status: Double, headers: OutgoingHeaders) = this()
+    def this(body: Buffer, status: Unit, headers: OutgoingHeaders) = this()
   }
   
+  @JSImport("roads", "Road")
   @js.native
   /**
     * Road Constructor
     *
-    * Creates a new Road class. This function does not accept any parameters!
+    * Creates a new Road object
     */
-  class Road ()
-    extends typingsJapgolly.roads.roadMod.default
+  open class Road () extends default
   
+  @JSImport("roads", "RoadsPJAX")
   @js.native
-  class RoadsPJAX protected ()
-    extends typingsJapgolly.roads.pjaxMod.default {
+  open class RoadsPJAX protected ()
+    extends typingsJapgolly.roads.typesClientPjaxMod.default {
     /**
-      * Creates a new RoadsPjax instance. The road provided to this constructor will be the backbone of your PJAX requests.
+      * Creates a new RoadsPjax instance. PJAX looks in the containerElement at each
+      * anchor tag with the  `data-roads-pjax="link"` attribute and changes it from a
+      * normal link into a link that uses the road.
       *
-      * @param {Road} road - The road that will turn your pjax requests into HTML
-      * @param {HTMLElement} container_element - The element that will be filled with your roads output
-      * @param {Window} window - The pages window object to help set page title and other items
+      * @param {Road} road - The road that will be used when clicking links
+      * @param {HTMLElement} containerElement - The element that will be filled with your roads output
+      * @param {Window} window - The page's window object to help set page title url
       */
-    def this(road: typingsJapgolly.roads.roadMod.default, container_element: HTMLElement, window: Window_) = this()
+    def this(road: default, containerElement: HTMLElement, window: Window) = this()
   }
   
+  object StoreValsMiddleware {
+    
+    @JSImport("roads", "StoreValsMiddleware.middleware")
+    @js.native
+    val middleware: Middleware[StoreValsContext] = js.native
+  }
 }
-

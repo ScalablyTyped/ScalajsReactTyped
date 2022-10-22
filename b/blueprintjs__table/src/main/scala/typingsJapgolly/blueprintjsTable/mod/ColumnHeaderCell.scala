@@ -1,23 +1,41 @@
 package typingsJapgolly.blueprintjsTable.mod
 
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.blueprintjsTable.ValidationMapIColumnInter
-import typingsJapgolly.blueprintjsTable.columnHeaderCellMod.IColumnHeaderCellProps
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.blueprintjsTable.anon.ValidationMapColumnIntera
+import typingsJapgolly.blueprintjsTable.libEsmHeadersColumnHeaderCellMod.IColumnHeaderCellProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/table", "ColumnHeaderCell")
 @js.native
-class ColumnHeaderCell ()
-  extends typingsJapgolly.blueprintjsTable.columnHeaderCellMod.ColumnHeaderCell
-
+open class ColumnHeaderCell protected ()
+  extends typingsJapgolly.blueprintjsTable.libEsmHeadersColumnHeaderCellMod.ColumnHeaderCell {
+  def this(props: IColumnHeaderCellProps) = this()
+  def this(props: IColumnHeaderCellProps, context: Any) = this()
+}
 /* static members */
-@JSImport("@blueprintjs/table", "ColumnHeaderCell")
-@js.native
-object ColumnHeaderCell extends js.Object {
-  var contextTypes: ValidationMapIColumnInter = js.native
-  var defaultProps: IColumnHeaderCellProps = js.native
+object ColumnHeaderCell {
+  
+  @JSImport("@blueprintjs/table", "ColumnHeaderCell")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/table", "ColumnHeaderCell.contextTypes")
+  @js.native
+  def contextTypes: ValidationMapColumnIntera = js.native
+  inline def contextTypes_=(x: ValidationMapColumnIntera): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/table", "ColumnHeaderCell.defaultProps")
+  @js.native
+  def defaultProps: IColumnHeaderCellProps = js.native
+  inline def defaultProps_=(x: IColumnHeaderCellProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/table", "ColumnHeaderCell.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  
   /**
     * This method determines if a `MouseEvent` was triggered on a target that
     * should be used as the header click/drag target. This enables users of
@@ -25,6 +43,5 @@ object ColumnHeaderCell extends js.Object {
     * cells without worry of selection or resize operations from capturing
     * their mouse events.
     */
-  def isHeaderMouseTarget(target: HTMLElement): Boolean = js.native
+  inline def isHeaderMouseTarget(target: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHeaderMouseTarget")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }
-

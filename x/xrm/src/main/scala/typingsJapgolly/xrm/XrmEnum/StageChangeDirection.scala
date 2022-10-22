@@ -1,8 +1,8 @@
 package typingsJapgolly.xrm.XrmEnum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Direction types for a process stage change event
@@ -12,14 +12,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.Next
   - typingsJapgolly.xrm.xrmStrings.Previous
 */
-trait StageChangeDirection extends js.Object
-
+trait StageChangeDirection extends StObject
 object StageChangeDirection {
-  @scala.inline
-  def Next: typingsJapgolly.xrm.xrmStrings.Next = this.cast("Next")
-  @scala.inline
-  def Previous: typingsJapgolly.xrm.xrmStrings.Previous = this.cast("Previous")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Next: typingsJapgolly.xrm.xrmStrings.Next = "Next".asInstanceOf[typingsJapgolly.xrm.xrmStrings.Next]
+  
+  inline def Previous: typingsJapgolly.xrm.xrmStrings.Previous = "Previous".asInstanceOf[typingsJapgolly.xrm.xrmStrings.Previous]
 }
-

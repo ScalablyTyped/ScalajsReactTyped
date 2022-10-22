@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.Storage.FileProperties
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ThumbnailType extends js.Object
-
+sealed trait ThumbnailType extends StObject
 @JSGlobal("Windows.Storage.FileProperties.ThumbnailType")
 @js.native
-object ThumbnailType extends js.Object {
-  @js.native
-  sealed trait icon extends ThumbnailType
+object ThumbnailType extends StObject {
   
   @js.native
-  sealed trait image extends ThumbnailType
+  sealed trait icon
+    extends StObject
+       with ThumbnailType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ThumbnailType with Double] = js.native
-  /* 1 */ @js.native
-  object icon extends TopLevel[icon with Double]
-  
-  /* 0 */ @js.native
-  object image extends TopLevel[image with Double]
-  
+  @js.native
+  sealed trait image
+    extends StObject
+       with ThumbnailType
 }
-

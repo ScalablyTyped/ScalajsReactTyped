@@ -1,34 +1,35 @@
 package typingsJapgolly.sarif.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PropertyBag
-  extends /**
+  extends StObject
+     with /**
   * Additional Properties
   */
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
+  
   /**
     * A set of distinct strings that provide additional information.
     */
   var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object PropertyBag {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-    * Additional Properties
-    */
-  /* key */ StringDictionary[js.Any] = null,
-    tags: js.Array[String] = null
-  ): PropertyBag = {
+  
+  inline def apply(): PropertyBag = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyBag]
   }
+  
+  extension [Self <: PropertyBag](x: Self) {
+    
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
+  }
 }
-

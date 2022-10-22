@@ -1,41 +1,32 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GenerativeTypeClassification extends js.Object
-
+sealed trait GenerativeTypeClassification extends StObject
 @JSGlobal("TypeScript.GenerativeTypeClassification")
 @js.native
-object GenerativeTypeClassification extends js.Object {
-  @js.native
-  sealed trait Closed extends GenerativeTypeClassification
+object GenerativeTypeClassification extends StObject {
   
   @js.native
-  sealed trait InfinitelyExpanding extends GenerativeTypeClassification
+  sealed trait Closed
+    extends StObject
+       with GenerativeTypeClassification
   
   @js.native
-  sealed trait Open extends GenerativeTypeClassification
+  sealed trait InfinitelyExpanding
+    extends StObject
+       with GenerativeTypeClassification
   
   @js.native
-  sealed trait Unknown extends GenerativeTypeClassification
+  sealed trait Open
+    extends StObject
+       with GenerativeTypeClassification
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GenerativeTypeClassification with Double] = js.native
-  /* 2 */ @js.native
-  object Closed extends TopLevel[Closed with Double]
-  
-  /* 3 */ @js.native
-  object InfinitelyExpanding extends TopLevel[InfinitelyExpanding with Double]
-  
-  /* 1 */ @js.native
-  object Open extends TopLevel[Open with Double]
-  
-  /* 0 */ @js.native
-  object Unknown extends TopLevel[Unknown with Double]
-  
+  @js.native
+  sealed trait Unknown
+    extends StObject
+       with GenerativeTypeClassification
 }
-

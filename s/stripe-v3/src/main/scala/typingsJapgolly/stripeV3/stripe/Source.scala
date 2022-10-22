@@ -1,47 +1,72 @@
 package typingsJapgolly.stripeV3.stripe
 
-import typingsJapgolly.stripeV3.AnonAddress
-import typingsJapgolly.stripeV3.AnonAuthenticated
-import typingsJapgolly.stripeV3.AnonBankcode
-import typingsJapgolly.stripeV3.AnonStatus
+import typingsJapgolly.stripeV3.anon.Address
+import typingsJapgolly.stripeV3.anon.Authenticated
+import typingsJapgolly.stripeV3.anon.Bankcode
+import typingsJapgolly.stripeV3.anon.Status
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Source extends js.Object {
+trait Source extends StObject {
+  
   var card: js.UndefOr[Card] = js.undefined
+  
   var client_secret: String
+  
   var created: Double
+  
   var currency: String
+  
   var id: String
-  var owner: AnonAddress
-  var redirect: js.UndefOr[AnonStatus] = js.undefined
-  var sepa_debit: js.UndefOr[AnonBankcode] = js.undefined
+  
+  var owner: Address
+  
+  var redirect: js.UndefOr[Status] = js.undefined
+  
+  var sepa_debit: js.UndefOr[Bankcode] = js.undefined
+  
   var status: js.UndefOr[String] = js.undefined
-  var three_d_secure: js.UndefOr[AnonAuthenticated] = js.undefined
+  
+  var three_d_secure: js.UndefOr[Authenticated] = js.undefined
 }
-
 object Source {
-  @scala.inline
-  def apply(
-    client_secret: String,
-    created: Double,
-    currency: String,
-    id: String,
-    owner: AnonAddress,
-    card: Card = null,
-    redirect: AnonStatus = null,
-    sepa_debit: AnonBankcode = null,
-    status: String = null,
-    three_d_secure: AnonAuthenticated = null
-  ): Source = {
+  
+  inline def apply(client_secret: String, created: Double, currency: String, id: String, owner: Address): Source = {
     val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any])
-    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
-    if (sepa_debit != null) __obj.updateDynamic("sepa_debit")(sepa_debit.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (three_d_secure != null) __obj.updateDynamic("three_d_secure")(three_d_secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
+  
+  extension [Self <: Source](x: Self) {
+    
+    inline def setCard(value: Card): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    
+    inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+    
+    inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
+    
+    inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setOwner(value: Address): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setRedirect(value: Status): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    
+    inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+    
+    inline def setSepa_debit(value: Bankcode): Self = StObject.set(x, "sepa_debit", value.asInstanceOf[js.Any])
+    
+    inline def setSepa_debitUndefined: Self = StObject.set(x, "sepa_debit", js.undefined)
+    
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setThree_d_secure(value: Authenticated): Self = StObject.set(x, "three_d_secure", value.asInstanceOf[js.Any])
+    
+    inline def setThree_d_secureUndefined: Self = StObject.set(x, "three_d_secure", js.undefined)
+  }
 }
-

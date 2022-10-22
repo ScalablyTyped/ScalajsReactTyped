@@ -1,13 +1,13 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client BootstrapCardView.
   */
-@JSGlobal("BootstrapClientCardView")
 @js.native
-class BootstrapClientCardView () extends ASPxClientCardView
-
+trait BootstrapClientCardView
+  extends StObject
+     with ASPxClientCardView

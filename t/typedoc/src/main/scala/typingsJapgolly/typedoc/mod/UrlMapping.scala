@@ -1,13 +1,17 @@
 package typingsJapgolly.typedoc.mod
 
+import typingsJapgolly.typedoc.distLibOutputModelsUrlMappingMod.RenderTemplate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "UrlMapping")
 @js.native
-class UrlMapping protected ()
-  extends typingsJapgolly.typedoc.urlMappingMod.UrlMapping {
-  def this(url: String, model: js.Any, template: String) = this()
+open class UrlMapping[Model] protected ()
+  extends typingsJapgolly.typedoc.distLibOutputMod.UrlMapping[Model] {
+  def this(
+    url: String,
+    model: Model,
+    template: RenderTemplate[typingsJapgolly.typedoc.distLibOutputEventsMod.PageEvent[Model]]
+  ) = this()
 }
-

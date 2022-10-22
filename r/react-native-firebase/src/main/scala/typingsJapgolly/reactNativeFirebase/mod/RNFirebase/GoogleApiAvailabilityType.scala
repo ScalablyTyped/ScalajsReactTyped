@@ -1,28 +1,38 @@
 package typingsJapgolly.reactNativeFirebase.mod.RNFirebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GoogleApiAvailabilityType extends js.Object {
+trait GoogleApiAvailabilityType extends StObject {
+  
   var error: js.UndefOr[String] = js.undefined
+  
   var isAvailable: Boolean
+  
   var isUserResolvableError: js.UndefOr[Boolean] = js.undefined
+  
   var status: Double
 }
-
 object GoogleApiAvailabilityType {
-  @scala.inline
-  def apply(
-    isAvailable: Boolean,
-    status: Double,
-    error: String = null,
-    isUserResolvableError: js.UndefOr[Boolean] = js.undefined
-  ): GoogleApiAvailabilityType = {
+  
+  inline def apply(isAvailable: Boolean, status: Double): GoogleApiAvailabilityType = {
     val __obj = js.Dynamic.literal(isAvailable = isAvailable.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUserResolvableError)) __obj.updateDynamic("isUserResolvableError")(isUserResolvableError.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiAvailabilityType]
   }
+  
+  extension [Self <: GoogleApiAvailabilityType](x: Self) {
+    
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
+    
+    inline def setIsUserResolvableError(value: Boolean): Self = StObject.set(x, "isUserResolvableError", value.asInstanceOf[js.Any])
+    
+    inline def setIsUserResolvableErrorUndefined: Self = StObject.set(x, "isUserResolvableError", js.undefined)
+    
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+  }
 }
-

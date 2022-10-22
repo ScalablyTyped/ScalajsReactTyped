@@ -1,73 +1,52 @@
 package typingsJapgolly.extjs.Ext.chart
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.extjs.Ext.Array
 import typingsJapgolly.extjs.Ext.IBase
-import typingsJapgolly.extjs.Ext.IClass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IHighlight extends IBase {
+trait IHighlight
+  extends StObject
+     with IBase {
+  
   /** [Config Option] (Boolean/Object) */
-  var highlight: js.UndefOr[js.Any] = js.undefined
+  var highlight: js.UndefOr[Any] = js.undefined
+  
   /** [Property] (Object) */
-  var highlightCfg: js.UndefOr[js.Any] = js.undefined
+  var highlightCfg: js.UndefOr[Any] = js.undefined
+  
   /** [Method] Highlight the given series item
-  		* @param item Object Info about the item; same format as returned by #getItemForPoint.
-  		*/
-  var highlightItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param item Object Info about the item; same format as returned by #getItemForPoint.
+    */
+  var highlightItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Un highlight any existing highlights */
   var unHighlightItem: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
-
 object IHighlight {
-  @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callParent: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    config: js.Any = null,
-    extend: String = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => CallbackTo[js.Any] = null,
-    highlight: js.Any = null,
-    highlightCfg: js.Any = null,
-    highlightItem: /* item */ js.UndefOr[js.Any] => Callback = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => CallbackTo[IHighlight] = null,
-    mixins: js.Any = null,
-    requires: Array = null,
-    self: IClass = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    unHighlightItem: js.UndefOr[Callback] = js.undefined,
-    uses: Array = null
-  ): IHighlight = {
+  
+  inline def apply(): IHighlight = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callOverridden(t0).runNow()))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callParent(t0).runNow()))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callSuper(t0).runNow()))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1((t0: /* name */ js.UndefOr[java.lang.String]) => getInitialConfig(t0).runNow()))
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (highlightCfg != null) __obj.updateDynamic("highlightCfg")(highlightCfg.asInstanceOf[js.Any])
-    if (highlightItem != null) __obj.updateDynamic("highlightItem")(js.Any.fromFunction1((t0: /* item */ js.UndefOr[js.Any]) => highlightItem(t0).runNow()))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1((t0: /* config */ js.UndefOr[js.Any]) => initConfig(t0).runNow()))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    unHighlightItem.foreach(p => __obj.updateDynamic("unHighlightItem")(p.toJsFn))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHighlight]
   }
+  
+  extension [Self <: IHighlight](x: Self) {
+    
+    inline def setHighlight(value: Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightCfg(value: Any): Self = StObject.set(x, "highlightCfg", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightCfgUndefined: Self = StObject.set(x, "highlightCfg", js.undefined)
+    
+    inline def setHighlightItem(value: /* item */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1((t0: /* item */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
+    
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    
+    inline def setUnHighlightItem(value: Callback): Self = StObject.set(x, "unHighlightItem", value.toJsFn)
+    
+    inline def setUnHighlightItemUndefined: Self = StObject.set(x, "unHighlightItem", js.undefined)
+  }
 }
-

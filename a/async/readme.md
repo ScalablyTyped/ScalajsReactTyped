@@ -1,7 +1,7 @@
 
 # Scala.js typings for async
 
-Typings are for version 3.0
+Typings are for version 3.2
 
 ## Library description:
 Higher-order functions and common patterns for asynchronous code
@@ -10,10 +10,10 @@ Higher-order functions and common patterns for asynchronous code
 | ------------------ | :-------------: |
 | Full name          | async |
 | Keywords           | async, callback, module, utility |
-| # releases         | 8 |
-| # dependents       | 22788 |
-| # downloads        | 1184598848 |
-| # stars            | 1213 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.99251249E8 |
+| # stars            | 27632.0 |
 
 ## Links
 - [Homepage](https://caolan.github.io/async/)

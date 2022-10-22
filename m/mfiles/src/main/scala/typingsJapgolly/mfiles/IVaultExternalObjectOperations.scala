@@ -1,12 +1,12 @@
 package typingsJapgolly.mfiles
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.mfiles.MFiles.MFACLEnforcingMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IVaultExternalObjectOperations extends js.Object {
+trait IVaultExternalObjectOperations extends StObject {
+  
   def PromoteObject(
     ObjVer: IObjVer,
     PropertyValues: IPropertyValues,
@@ -14,15 +14,19 @@ trait IVaultExternalObjectOperations extends js.Object {
     pACLProvidedCBN: IAccessControlList
   ): IObjectVersionAndProperties
 }
-
 object IVaultExternalObjectOperations {
-  @scala.inline
-  def apply(
-    PromoteObject: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList) => CallbackTo[IObjectVersionAndProperties]
+  
+  inline def apply(
+    PromoteObject: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList) => IObjectVersionAndProperties
   ): IVaultExternalObjectOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PromoteObject")(js.Any.fromFunction4((t0: typingsJapgolly.mfiles.IObjVer, t1: typingsJapgolly.mfiles.IPropertyValues, t2: typingsJapgolly.mfiles.MFiles.MFACLEnforcingMode, t3: typingsJapgolly.mfiles.IAccessControlList) => PromoteObject(t0, t1, t2, t3).runNow()))
+    val __obj = js.Dynamic.literal(PromoteObject = js.Any.fromFunction4(PromoteObject))
     __obj.asInstanceOf[IVaultExternalObjectOperations]
   }
+  
+  extension [Self <: IVaultExternalObjectOperations](x: Self) {
+    
+    inline def setPromoteObject(
+      value: (IObjVer, IPropertyValues, MFACLEnforcingMode, IAccessControlList) => IObjectVersionAndProperties
+    ): Self = StObject.set(x, "PromoteObject", js.Any.fromFunction4(value))
+  }
 }
-

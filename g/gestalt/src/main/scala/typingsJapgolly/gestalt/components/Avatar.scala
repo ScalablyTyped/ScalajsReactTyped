@@ -1,47 +1,43 @@
 package typingsJapgolly.gestalt.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.gestalt.gestaltStrings.fit
 import typingsJapgolly.gestalt.gestaltStrings.lg
 import typingsJapgolly.gestalt.gestaltStrings.md
 import typingsJapgolly.gestalt.gestaltStrings.sm
+import typingsJapgolly.gestalt.gestaltStrings.xl
+import typingsJapgolly.gestalt.gestaltStrings.xs
 import typingsJapgolly.gestalt.mod.AvatarProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Avatar {
-  def apply(
-    name: String,
-    outline: js.UndefOr[Boolean] = js.undefined,
-    size: sm | md | lg = null,
-    src: String = null,
-    verified: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[AvatarProps, typingsJapgolly.gestalt.mod.Avatar, Unit, AvatarProps] = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.gestalt.mod.AvatarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.gestalt.mod.Avatar](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.gestalt.mod.AvatarProps])(children: _*)
+  inline def apply(name: String): Builder = {
+    val __props = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[AvatarProps]))
   }
+  
   @JSImport("gestalt", "Avatar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def accessibilityLabel(value: String): this.type = set("accessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def outline(value: Boolean): this.type = set("outline", value.asInstanceOf[js.Any])
+    
+    inline def size(value: xs | sm | md | lg | xl | fit): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def src(value: String): this.type = set("src", value.asInstanceOf[js.Any])
+    
+    inline def verified(value: Boolean): this.type = set("verified", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: AvatarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

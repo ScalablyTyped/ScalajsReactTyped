@@ -1,16 +1,16 @@
 package typingsJapgolly.postmark.mod.Models
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Models.TemplatedMessage")
 @js.native
-class TemplatedMessage protected ()
-  extends typingsJapgolly.postmark.modelsMod.TemplatedMessage {
+open class TemplatedMessage protected ()
+  extends typingsJapgolly.postmark.distClientModelsMod.TemplatedMessage {
   def this(
     from: String,
-    templateIdOrAlias: String,
+    templateIdOrAlias: Double | String,
     templateModel: js.Object,
     to: js.UndefOr[String],
     cc: js.UndefOr[String],
@@ -18,23 +18,14 @@ class TemplatedMessage protected ()
     replyTo: js.UndefOr[String],
     tag: js.UndefOr[String],
     trackOpens: js.UndefOr[Boolean],
-    trackLinks: js.UndefOr[typingsJapgolly.postmark.messageSupportingTypesMod.LinkTrackingOptions],
-    headers: js.UndefOr[js.Array[typingsJapgolly.postmark.messageSupportingTypesMod.Header]],
-    attachments: js.UndefOr[js.Array[typingsJapgolly.postmark.messageSupportingTypesMod.Attachment]]
-  ) = this()
-  def this(
-    from: String,
-    templateIdOrAlias: Double,
-    templateModel: js.Object,
-    to: js.UndefOr[String],
-    cc: js.UndefOr[String],
-    bcc: js.UndefOr[String],
-    replyTo: js.UndefOr[String],
-    tag: js.UndefOr[String],
-    trackOpens: js.UndefOr[Boolean],
-    trackLinks: js.UndefOr[typingsJapgolly.postmark.messageSupportingTypesMod.LinkTrackingOptions],
-    headers: js.UndefOr[js.Array[typingsJapgolly.postmark.messageSupportingTypesMod.Header]],
-    attachments: js.UndefOr[js.Array[typingsJapgolly.postmark.messageSupportingTypesMod.Attachment]]
+    trackLinks: js.UndefOr[
+        typingsJapgolly.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions
+      ],
+    headers: js.UndefOr[
+        js.Array[typingsJapgolly.postmark.distClientModelsMessageSupportingTypesMod.Header]
+      ],
+    attachments: js.UndefOr[
+        js.Array[typingsJapgolly.postmark.distClientModelsMessageSupportingTypesMod.Attachment]
+      ]
   ) = this()
 }
-

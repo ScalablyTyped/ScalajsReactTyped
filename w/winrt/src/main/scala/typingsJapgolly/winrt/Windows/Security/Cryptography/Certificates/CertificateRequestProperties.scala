@@ -1,29 +1,26 @@
 package typingsJapgolly.winrt.Windows.Security.Cryptography.Certificates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Security.Cryptography.Certificates.CertificateRequestProperties")
-@js.native
-class CertificateRequestProperties () extends ICertificateRequestProperties {
-  /* CompleteClass */
-  override var exportable: ExportOption = js.native
-  /* CompleteClass */
-  override var friendlyName: String = js.native
-  /* CompleteClass */
-  override var hashAlgorithmName: String = js.native
-  /* CompleteClass */
-  override var keyAlgorithmName: String = js.native
-  /* CompleteClass */
-  override var keyProtectionLevel: KeyProtectionLevel = js.native
-  /* CompleteClass */
-  override var keySize: Double = js.native
-  /* CompleteClass */
-  override var keyStorageProviderName: String = js.native
-  /* CompleteClass */
-  override var keyUsages: EnrollKeyUsages = js.native
-  /* CompleteClass */
-  override var subject: String = js.native
+trait CertificateRequestProperties
+  extends StObject
+     with ICertificateRequestProperties
+object CertificateRequestProperties {
+  
+  inline def apply(
+    exportable: ExportOption,
+    friendlyName: String,
+    hashAlgorithmName: String,
+    keyAlgorithmName: String,
+    keyProtectionLevel: KeyProtectionLevel,
+    keySize: Double,
+    keyStorageProviderName: String,
+    keyUsages: EnrollKeyUsages,
+    subject: String
+  ): CertificateRequestProperties = {
+    val __obj = js.Dynamic.literal(exportable = exportable.asInstanceOf[js.Any], friendlyName = friendlyName.asInstanceOf[js.Any], hashAlgorithmName = hashAlgorithmName.asInstanceOf[js.Any], keyAlgorithmName = keyAlgorithmName.asInstanceOf[js.Any], keyProtectionLevel = keyProtectionLevel.asInstanceOf[js.Any], keySize = keySize.asInstanceOf[js.Any], keyStorageProviderName = keyStorageProviderName.asInstanceOf[js.Any], keyUsages = keyUsages.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CertificateRequestProperties]
+  }
 }
-

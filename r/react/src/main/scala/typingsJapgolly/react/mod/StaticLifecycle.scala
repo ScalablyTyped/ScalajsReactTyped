@@ -1,27 +1,32 @@
 package typingsJapgolly.react.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Unfortunately, we have no way of declaring that the component constructor must implement this
-trait StaticLifecycle[P, S] extends js.Object {
+trait StaticLifecycle[P, S] extends StObject {
+  
   var getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[P, S]] = js.undefined
+  
   var getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[P, S]] = js.undefined
 }
-
 object StaticLifecycle {
-  @scala.inline
-  def apply[P, S](
-    getDerivedStateFromError: /* error */ js.Any => CallbackTo[Partial[S] | Null] = null,
-    getDerivedStateFromProps: (P, S) => CallbackTo[Partial[S] | Null] = null
-  ): StaticLifecycle[P, S] = {
+  
+  inline def apply[P, S](): StaticLifecycle[P, S] = {
     val __obj = js.Dynamic.literal()
-    if (getDerivedStateFromError != null) __obj.updateDynamic("getDerivedStateFromError")(js.Any.fromFunction1((t0: /* error */ js.Any) => getDerivedStateFromError(t0).runNow()))
-    if (getDerivedStateFromProps != null) __obj.updateDynamic("getDerivedStateFromProps")(js.Any.fromFunction2((t0: P, t1: S) => getDerivedStateFromProps(t0, t1).runNow()))
     __obj.asInstanceOf[StaticLifecycle[P, S]]
   }
+  
+  extension [Self <: StaticLifecycle[?, ?], P, S](x: Self & (StaticLifecycle[P, S])) {
+    
+    inline def setGetDerivedStateFromError(value: /* error */ Any => Partial[S] | Null): Self = StObject.set(x, "getDerivedStateFromError", js.Any.fromFunction1(value))
+    
+    inline def setGetDerivedStateFromErrorUndefined: Self = StObject.set(x, "getDerivedStateFromError", js.undefined)
+    
+    inline def setGetDerivedStateFromProps(value: (P, S) => Partial[S] | Null): Self = StObject.set(x, "getDerivedStateFromProps", js.Any.fromFunction2(value))
+    
+    inline def setGetDerivedStateFromPropsUndefined: Self = StObject.set(x, "getDerivedStateFromProps", js.undefined)
+  }
 }
-

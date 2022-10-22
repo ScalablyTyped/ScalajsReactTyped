@@ -1,11 +1,12 @@
 package typingsJapgolly.angularCore.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IterableDiffer[V] extends js.Object {
+@js.native
+trait IterableDiffer[V] extends StObject {
+  
   /**
     * Compute a difference between the previous state and the new `object` state.
     *
@@ -13,15 +14,6 @@ trait IterableDiffer[V] extends js.Object {
     * @returns an object describing the difference. The return value is only valid until the next
     * `diff()` invocation.
     */
-  def diff(`object`: NgIterable[V]): IterableChanges[V] | Null
+  def diff(): IterableChanges[V] | Null = js.native
+  def diff(`object`: NgIterable[V]): IterableChanges[V] | Null = js.native
 }
-
-object IterableDiffer {
-  @scala.inline
-  def apply[V](diff: NgIterable[V] => CallbackTo[IterableChanges[V] | Null]): IterableDiffer[V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diff")(js.Any.fromFunction1((t0: typingsJapgolly.angularCore.mod.NgIterable[V]) => diff(t0).runNow()))
-    __obj.asInstanceOf[IterableDiffer[V]]
-  }
-}
-

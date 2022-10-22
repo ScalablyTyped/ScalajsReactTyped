@@ -1,7 +1,7 @@
 
 # Scala.js typings for timm
 
-Typings are for version 1.6.2
+Typings are for version 1.7.1
 
 ## Library description:
 Immutability helpers with fast reads and acceptable writes
@@ -10,15 +10,13 @@ Immutability helpers with fast reads and acceptable writes
 | ------------------ | :-------------: |
 | Full name          | timm |
 | Keywords           | immutability |
-| # releases         | 6 |
-| # dependents       | 35 |
-| # downloads        | 12978469 |
-| # stars            | 5 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4866072.333333333 |
+| # stars            | 260.0 |
 
 ## Links
 - [Homepage](http://guigrpa.github.io/timm/)
-- [Bugs](https://github.com/guigrpa/timm/issues)
-- [Repository](https://github.com/guigrpa/timm)
 - [Npm](https://www.npmjs.com/package/timm)
     
 

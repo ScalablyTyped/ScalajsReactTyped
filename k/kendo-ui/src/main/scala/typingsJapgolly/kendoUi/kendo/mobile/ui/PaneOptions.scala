@@ -1,46 +1,73 @@
 package typingsJapgolly.kendoUi.kendo.mobile.ui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaneOptions extends js.Object {
+trait PaneOptions extends StObject {
+  
   var collapsible: js.UndefOr[Boolean] = js.undefined
+  
   var initial: js.UndefOr[String] = js.undefined
+  
   var layout: js.UndefOr[String] = js.undefined
+  
   var loading: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var navigate: js.UndefOr[js.Function1[/* e */ PaneNavigateEvent, Unit]] = js.undefined
+  
   var portraitWidth: js.UndefOr[Double] = js.undefined
+  
   var transition: js.UndefOr[String] = js.undefined
+  
   var viewShow: js.UndefOr[js.Function1[/* e */ PaneViewShowEvent, Unit]] = js.undefined
 }
-
 object PaneOptions {
-  @scala.inline
-  def apply(
-    collapsible: js.UndefOr[Boolean] = js.undefined,
-    initial: String = null,
-    layout: String = null,
-    loading: String = null,
-    name: String = null,
-    navigate: /* e */ PaneNavigateEvent => Callback = null,
-    portraitWidth: Int | Double = null,
-    transition: String = null,
-    viewShow: /* e */ PaneViewShowEvent => Callback = null
-  ): PaneOptions = {
+  
+  inline def apply(): PaneOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
-    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.mobile.ui.PaneNavigateEvent) => navigate(t0).runNow()))
-    if (portraitWidth != null) __obj.updateDynamic("portraitWidth")(portraitWidth.asInstanceOf[js.Any])
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    if (viewShow != null) __obj.updateDynamic("viewShow")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.mobile.ui.PaneViewShowEvent) => viewShow(t0).runNow()))
     __obj.asInstanceOf[PaneOptions]
   }
+  
+  extension [Self <: PaneOptions](x: Self) {
+    
+    inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+    
+    inline def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+    
+    inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+    
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNavigate(value: /* e */ PaneNavigateEvent => Callback): Self = StObject.set(x, "navigate", js.Any.fromFunction1((t0: /* e */ PaneNavigateEvent) => value(t0).runNow()))
+    
+    inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
+    
+    inline def setPortraitWidth(value: Double): Self = StObject.set(x, "portraitWidth", value.asInstanceOf[js.Any])
+    
+    inline def setPortraitWidthUndefined: Self = StObject.set(x, "portraitWidth", js.undefined)
+    
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    
+    inline def setViewShow(value: /* e */ PaneViewShowEvent => Callback): Self = StObject.set(x, "viewShow", js.Any.fromFunction1((t0: /* e */ PaneViewShowEvent) => value(t0).runNow()))
+    
+    inline def setViewShowUndefined: Self = StObject.set(x, "viewShow", js.undefined)
+  }
 }
-

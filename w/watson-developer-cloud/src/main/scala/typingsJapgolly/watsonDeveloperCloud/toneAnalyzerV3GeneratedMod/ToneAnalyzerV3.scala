@@ -1,15 +1,20 @@
 package typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
 import typingsJapgolly.ibmCloudSdkCore.mod.BaseService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The IBM Watson&trade; Tone Analyzer service uses linguistic analysis to detect emotional and language tones in written text. The service can analyze tone at both the document and sentence levels. You can use the service to understand how your written communications are perceived and then to improve the tone of your communications. Businesses can use the service to learn the tone of their customers' communications and to respond to each customer appropriately, or to understand and improve their customer conversations.  **Note:** Request logging is disabled for the Tone Analyzer service. Regardless of whether you set the `X-Watson-Learning-Opt-Out` request header, the service does not log or retain data from requests and responses.
   */
 @js.native
 trait ToneAnalyzerV3 extends BaseService {
+  
+  var name: String = js.native
+  
+  var serviceVersion: String = js.native
+  
   /*************************
     * methods
     ************************/
@@ -60,8 +65,9 @@ trait ToneAnalyzerV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def tone(params: ToneParams): js.Promise[_] | Unit = js.native
-  def tone(params: ToneParams, callback: Callback[ToneAnalysis]): js.Promise[_] | Unit = js.native
+  def tone(params: ToneParams): js.Promise[Any] | Unit = js.native
+  def tone(params: ToneParams, callback: Callback[ToneAnalysis]): js.Promise[Any] | Unit = js.native
+  
   /**
     * Analyze customer engagement tone.
     *
@@ -94,7 +100,6 @@ trait ToneAnalyzerV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def toneChat(params: ToneChatParams): js.Promise[_] | Unit = js.native
-  def toneChat(params: ToneChatParams, callback: Callback[UtteranceAnalyses]): js.Promise[_] | Unit = js.native
+  def toneChat(params: ToneChatParams): js.Promise[Any] | Unit = js.native
+  def toneChat(params: ToneChatParams, callback: Callback[UtteranceAnalyses]): js.Promise[Any] | Unit = js.native
 }
-

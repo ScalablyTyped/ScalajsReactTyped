@@ -10,9 +10,9 @@ Get v8 stack traces as an array of CallSite objects.
 | Full name          | stack-trace |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 480 |
-| # downloads        | 188204616 |
-| # stars            | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 3.9893633E7 |
+| # stars            | 414.0 |
 
 ## Links
 - [Homepage](https://github.com/felixge/node-stack-trace)

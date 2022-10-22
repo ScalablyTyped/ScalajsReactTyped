@@ -1,10 +1,11 @@
 package typingsJapgolly.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RmdirFailCallbackResult extends js.Object {
+trait RmdirFailCallbackResult extends StObject {
+  
   /** 错误信息
     *
     * 可选值：
@@ -13,13 +14,15 @@ trait RmdirFailCallbackResult extends js.Object {
     * - 'fail permission denied, open ${dirPath}': 指定的 dirPath 路径没有写权限; */
   var errMsg: String
 }
-
 object RmdirFailCallbackResult {
-  @scala.inline
-  def apply(errMsg: String): RmdirFailCallbackResult = {
-    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
   
+  inline def apply(errMsg: String): RmdirFailCallbackResult = {
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[RmdirFailCallbackResult]
   }
+  
+  extension [Self <: RmdirFailCallbackResult](x: Self) {
+    
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+  }
 }
-

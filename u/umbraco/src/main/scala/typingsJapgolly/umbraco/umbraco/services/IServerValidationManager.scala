@@ -1,10 +1,9 @@
 package typingsJapgolly.umbraco.umbraco.services
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation._
   * is for user defined properties (called Properties) and the other is for field properties which are attached to the native
   * model objects (not user defined). The methods below are named according to these rules: Properties vs Fields.
   */
-trait IServerValidationManager extends js.Object {
+trait IServerValidationManager extends StObject {
+  
   /**
     * @ngdoc function
     * @name addFieldError
@@ -27,6 +27,7 @@ trait IServerValidationManager extends js.Object {
     * Adds an error message for a native content item field (not a user defined property, for Example, 'Name')
     */
   def addFieldError(fieldName: String, errorMsg: String): Unit
+  
   /**
     * @ngdoc function
     * @name addPropertyError
@@ -37,6 +38,7 @@ trait IServerValidationManager extends js.Object {
     * Adds an error message for the content property
     */
   def addPropertyError(propertyAlias: String, fieldName: String, errorMsg: String): Unit
+  
   /**
     * @ngdoc function
     * @name clear
@@ -47,6 +49,7 @@ trait IServerValidationManager extends js.Object {
     * Clears all errors
     */
   def clear(): Unit
+  
   /**
     * @ngdoc function
     * @name umbraco.services.serverValidationManager#subscribe
@@ -63,6 +66,7 @@ trait IServerValidationManager extends js.Object {
     *   colleciton so that if another route change occurs, the previously persisted validation errors are not re-bound to the new item.
     */
   def executeAndClearAllSubscriptions(): Unit
+  
   /**
     * @ngdoc function
     * @name getFieldCallbacks
@@ -72,7 +76,8 @@ trait IServerValidationManager extends js.Object {
     * @description
     * Gets all callbacks that has been registered using the subscribe method for the field.
     */
-  def getFieldCallbacks(fieldName: String): js.Any
+  def getFieldCallbacks(fieldName: String): Any
+  
   /**
     * @ngdoc function
     * @name getFieldError
@@ -83,6 +88,7 @@ trait IServerValidationManager extends js.Object {
     * Gets the error message for a content field
     */
   def getFieldError(fieldName: String): String
+  
   /**
     * @ngdoc function
     * @name getPropertyCallbacks
@@ -95,6 +101,7 @@ trait IServerValidationManager extends js.Object {
     * explicit field name set.
     */
   def getPropertyCallbacks(propertyAlias: String, fieldName: String): Unit
+  
   /**
     * @ngdoc function
     * @name getPropertyError
@@ -105,6 +112,7 @@ trait IServerValidationManager extends js.Object {
     * Gets the error message for the content property
     */
   def getPropertyError(propertyAlias: String, fieldName: String): String
+  
   /**
     * @ngdoc function
     * @name hasFieldError
@@ -115,6 +123,7 @@ trait IServerValidationManager extends js.Object {
     * Checks if a content field has an error
     */
   def hasFieldError(fieldName: String): Boolean
+  
   /**
     * @ngdoc function
     * @name hasPropertyError
@@ -125,6 +134,7 @@ trait IServerValidationManager extends js.Object {
     * Checks if the content property + field name combo has an error
     */
   def hasPropertyError(propertyAlias: String, fieldName: String): Boolean
+  
   /**
     * @ngdoc function
     * @name removePropertyError
@@ -135,6 +145,7 @@ trait IServerValidationManager extends js.Object {
     * Removes an error message for the content property
     */
   def removePropertyError(propertyAlias: String, fieldName: String): Unit
+  
   /**
     * @ngdoc function
     * @name reset
@@ -145,6 +156,7 @@ trait IServerValidationManager extends js.Object {
     * Clears all errors and notifies all callbacks that all server errros are now valid - used when submitting a form
     */
   def reset(): Unit
+  
   /**
     * @ngdoc function
     * @name umbraco.services.serverValidationManager#subscribe
@@ -161,39 +173,53 @@ trait IServerValidationManager extends js.Object {
     */
   def subscribe(propertyAlias: String, fieldName: String, callback: js.Function): Unit
 }
-
 object IServerValidationManager {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     addFieldError: (String, String) => Callback,
     addPropertyError: (String, String, String) => Callback,
     clear: Callback,
     executeAndClearAllSubscriptions: Callback,
-    getFieldCallbacks: String => CallbackTo[js.Any],
-    getFieldError: String => CallbackTo[String],
+    getFieldCallbacks: String => Any,
+    getFieldError: String => String,
     getPropertyCallbacks: (String, String) => Callback,
-    getPropertyError: (String, String) => CallbackTo[String],
-    hasFieldError: String => CallbackTo[Boolean],
-    hasPropertyError: (String, String) => CallbackTo[Boolean],
+    getPropertyError: (String, String) => String,
+    hasFieldError: String => Boolean,
+    hasPropertyError: (String, String) => Boolean,
     removePropertyError: (String, String) => Callback,
     reset: Callback,
     subscribe: (String, String, js.Function) => Callback
   ): IServerValidationManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addFieldError")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => addFieldError(t0, t1).runNow()))
-    __obj.updateDynamic("addPropertyError")(js.Any.fromFunction3((t0: java.lang.String, t1: java.lang.String, t2: java.lang.String) => addPropertyError(t0, t1, t2).runNow()))
-    __obj.updateDynamic("clear")(clear.toJsFn)
-    __obj.updateDynamic("executeAndClearAllSubscriptions")(executeAndClearAllSubscriptions.toJsFn)
-    __obj.updateDynamic("getFieldCallbacks")(js.Any.fromFunction1((t0: java.lang.String) => getFieldCallbacks(t0).runNow()))
-    __obj.updateDynamic("getFieldError")(js.Any.fromFunction1((t0: java.lang.String) => getFieldError(t0).runNow()))
-    __obj.updateDynamic("getPropertyCallbacks")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => getPropertyCallbacks(t0, t1).runNow()))
-    __obj.updateDynamic("getPropertyError")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => getPropertyError(t0, t1).runNow()))
-    __obj.updateDynamic("hasFieldError")(js.Any.fromFunction1((t0: java.lang.String) => hasFieldError(t0).runNow()))
-    __obj.updateDynamic("hasPropertyError")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => hasPropertyError(t0, t1).runNow()))
-    __obj.updateDynamic("removePropertyError")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => removePropertyError(t0, t1).runNow()))
-    __obj.updateDynamic("reset")(reset.toJsFn)
-    __obj.updateDynamic("subscribe")(js.Any.fromFunction3((t0: java.lang.String, t1: java.lang.String, t2: js.Function) => subscribe(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(addFieldError = js.Any.fromFunction2((t0: String, t1: String) => (addFieldError(t0, t1)).runNow()), addPropertyError = js.Any.fromFunction3((t0: String, t1: String, t2: String) => (addPropertyError(t0, t1, t2)).runNow()), clear = clear.toJsFn, executeAndClearAllSubscriptions = executeAndClearAllSubscriptions.toJsFn, getFieldCallbacks = js.Any.fromFunction1(getFieldCallbacks), getFieldError = js.Any.fromFunction1(getFieldError), getPropertyCallbacks = js.Any.fromFunction2((t0: String, t1: String) => (getPropertyCallbacks(t0, t1)).runNow()), getPropertyError = js.Any.fromFunction2(getPropertyError), hasFieldError = js.Any.fromFunction1(hasFieldError), hasPropertyError = js.Any.fromFunction2(hasPropertyError), removePropertyError = js.Any.fromFunction2((t0: String, t1: String) => (removePropertyError(t0, t1)).runNow()), reset = reset.toJsFn, subscribe = js.Any.fromFunction3((t0: String, t1: String, t2: js.Function) => (subscribe(t0, t1, t2)).runNow()))
     __obj.asInstanceOf[IServerValidationManager]
   }
+  
+  extension [Self <: IServerValidationManager](x: Self) {
+    
+    inline def setAddFieldError(value: (String, String) => Callback): Self = StObject.set(x, "addFieldError", js.Any.fromFunction2((t0: String, t1: String) => (value(t0, t1)).runNow()))
+    
+    inline def setAddPropertyError(value: (String, String, String) => Callback): Self = StObject.set(x, "addPropertyError", js.Any.fromFunction3((t0: String, t1: String, t2: String) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setClear(value: Callback): Self = StObject.set(x, "clear", value.toJsFn)
+    
+    inline def setExecuteAndClearAllSubscriptions(value: Callback): Self = StObject.set(x, "executeAndClearAllSubscriptions", value.toJsFn)
+    
+    inline def setGetFieldCallbacks(value: String => Any): Self = StObject.set(x, "getFieldCallbacks", js.Any.fromFunction1(value))
+    
+    inline def setGetFieldError(value: String => String): Self = StObject.set(x, "getFieldError", js.Any.fromFunction1(value))
+    
+    inline def setGetPropertyCallbacks(value: (String, String) => Callback): Self = StObject.set(x, "getPropertyCallbacks", js.Any.fromFunction2((t0: String, t1: String) => (value(t0, t1)).runNow()))
+    
+    inline def setGetPropertyError(value: (String, String) => String): Self = StObject.set(x, "getPropertyError", js.Any.fromFunction2(value))
+    
+    inline def setHasFieldError(value: String => Boolean): Self = StObject.set(x, "hasFieldError", js.Any.fromFunction1(value))
+    
+    inline def setHasPropertyError(value: (String, String) => Boolean): Self = StObject.set(x, "hasPropertyError", js.Any.fromFunction2(value))
+    
+    inline def setRemovePropertyError(value: (String, String) => Callback): Self = StObject.set(x, "removePropertyError", js.Any.fromFunction2((t0: String, t1: String) => (value(t0, t1)).runNow()))
+    
+    inline def setReset(value: Callback): Self = StObject.set(x, "reset", value.toJsFn)
+    
+    inline def setSubscribe(value: (String, String, js.Function) => Callback): Self = StObject.set(x, "subscribe", js.Any.fromFunction3((t0: String, t1: String, t2: js.Function) => (value(t0, t1, t2)).runNow()))
+  }
 }
-

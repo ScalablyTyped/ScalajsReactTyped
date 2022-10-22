@@ -1,41 +1,32 @@
 package typingsJapgolly.sharepoint.SP.UserProfiles
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocialDataStoreExceptionCode extends js.Object
-
+sealed trait SocialDataStoreExceptionCode extends StObject
 @JSGlobal("SP.UserProfiles.SocialDataStoreExceptionCode")
 @js.native
-object SocialDataStoreExceptionCode extends js.Object {
-  @js.native
-  sealed trait cannotCreatePersonalSite extends SocialDataStoreExceptionCode
+object SocialDataStoreExceptionCode extends StObject {
   
   @js.native
-  sealed trait noSocialFeatures extends SocialDataStoreExceptionCode
+  sealed trait cannotCreatePersonalSite
+    extends StObject
+       with SocialDataStoreExceptionCode
   
   @js.native
-  sealed trait personalSiteNotFound extends SocialDataStoreExceptionCode
+  sealed trait noSocialFeatures
+    extends StObject
+       with SocialDataStoreExceptionCode
   
   @js.native
-  sealed trait socialListNotFound extends SocialDataStoreExceptionCode
+  sealed trait personalSiteNotFound
+    extends StObject
+       with SocialDataStoreExceptionCode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialDataStoreExceptionCode with Double] = js.native
-  /* 2 */ @js.native
-  object cannotCreatePersonalSite extends TopLevel[cannotCreatePersonalSite with Double]
-  
-  /* 3 */ @js.native
-  object noSocialFeatures extends TopLevel[noSocialFeatures with Double]
-  
-  /* 1 */ @js.native
-  object personalSiteNotFound extends TopLevel[personalSiteNotFound with Double]
-  
-  /* 0 */ @js.native
-  object socialListNotFound extends TopLevel[socialListNotFound with Double]
-  
+  @js.native
+  sealed trait socialListNotFound
+    extends StObject
+       with SocialDataStoreExceptionCode
 }
-

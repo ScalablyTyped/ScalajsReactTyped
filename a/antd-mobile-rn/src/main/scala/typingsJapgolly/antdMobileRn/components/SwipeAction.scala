@@ -1,58 +1,53 @@
 package typingsJapgolly.antdMobileRn.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.AnonClassName
-import typingsJapgolly.antdMobileRn.swipeActionIndexNativeMod.SwipeActionProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.anon.ClassName
+import typingsJapgolly.antdMobileRn.libSwipeActionIndexDotnativeMod.SwipeActionProps
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SwipeAction {
-  def apply(
-    autoClose: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    left: js.Array[AnonClassName[TextStyle]] = null,
-    onClose: js.UndefOr[Callback] = js.undefined,
-    onOpen: js.UndefOr[Callback] = js.undefined,
-    right: js.Array[AnonClassName[TextStyle]] = null,
-    style: StyleProp[ViewStyle] = null,
-    styles: js.Any = null,
-    title: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SwipeActionProps, typingsJapgolly.antdMobileRn.mod.SwipeAction, Unit, SwipeActionProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    onClose.foreach(p => __obj.updateDynamic("onClose")(p.toJsFn))
-    onOpen.foreach(p => __obj.updateDynamic("onOpen")(p.toJsFn))
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.swipeActionIndexNativeMod.SwipeActionProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.mod.SwipeAction](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.swipeActionIndexNativeMod.SwipeActionProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn", "SwipeAction")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antdMobileRn.mod.SwipeAction] {
+    
+    inline def autoClose(value: Boolean): this.type = set("autoClose", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def left(value: js.Array[ClassName[TextStyle]]): this.type = set("left", value.asInstanceOf[js.Any])
+    
+    inline def leftVarargs(value: ClassName[TextStyle]*): this.type = set("left", js.Array(value*))
+    
+    inline def onClose(value: Callback): this.type = set("onClose", value.toJsFn)
+    
+    inline def onOpen(value: Callback): this.type = set("onOpen", value.toJsFn)
+    
+    inline def right(value: js.Array[ClassName[TextStyle]]): this.type = set("right", value.asInstanceOf[js.Any])
+    
+    inline def rightVarargs(value: ClassName[TextStyle]*): this.type = set("right", js.Array(value*))
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: Any): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: SwipeAction.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SwipeActionProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

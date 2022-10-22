@@ -1,24 +1,33 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MultipartColorRampProperties extends ColorRampProperties {
+trait MultipartColorRampProperties
+  extends StObject
+     with ColorRampProperties {
+  
   /**
     * Define an array of algorithmic color ramps used to generate the multi part ramp.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-MultipartColorRamp.html#colorRamps)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-MultipartColorRamp.html#colorRamps)
     */
   var colorRamps: js.UndefOr[js.Array[AlgorithmicColorRampProperties]] = js.undefined
 }
-
 object MultipartColorRampProperties {
-  @scala.inline
-  def apply(colorRamps: js.Array[AlgorithmicColorRampProperties] = null): MultipartColorRampProperties = {
+  
+  inline def apply(): MultipartColorRampProperties = {
     val __obj = js.Dynamic.literal()
-    if (colorRamps != null) __obj.updateDynamic("colorRamps")(colorRamps.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipartColorRampProperties]
   }
+  
+  extension [Self <: MultipartColorRampProperties](x: Self) {
+    
+    inline def setColorRamps(value: js.Array[AlgorithmicColorRampProperties]): Self = StObject.set(x, "colorRamps", value.asInstanceOf[js.Any])
+    
+    inline def setColorRampsUndefined: Self = StObject.set(x, "colorRamps", js.undefined)
+    
+    inline def setColorRampsVarargs(value: AlgorithmicColorRampProperties*): Self = StObject.set(x, "colorRamps", js.Array(value*))
+  }
 }
-

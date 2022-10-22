@@ -1,0 +1,69 @@
+package typingsJapgolly.typescript.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.typescript.mod.SyntaxKind.OpenBraceToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.CloseBraceToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.OpenParenToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.CloseParenToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.OpenBracketToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.CloseBracketToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.DotToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.DotDotDotToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.SemicolonToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.CommaToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.QuestionDotToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.LessThanToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.LessThanSlashToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.GreaterThanToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.LessThanEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.GreaterThanEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.EqualsEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.ExclamationEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.EqualsEqualsEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.ExclamationEqualsEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.EqualsGreaterThanToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.PlusToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.MinusToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.AsteriskToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.AsteriskAsteriskToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.SlashToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.PercentToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.PlusPlusToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.MinusMinusToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.LessThanLessThanToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.GreaterThanGreaterThanToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.GreaterThanGreaterThanGreaterThanToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.AmpersandToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.BarToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.CaretToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.ExclamationToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.TildeToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.AmpersandAmpersandToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.BarBarToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.QuestionQuestionToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.QuestionToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.ColonToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.AtToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.BacktickToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.HashToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.EqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.PlusEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.MinusEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.AsteriskEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.AsteriskAsteriskEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.SlashEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.PercentEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.LessThanLessThanEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.GreaterThanGreaterThanEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.GreaterThanGreaterThanGreaterThanEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.AmpersandEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.BarEqualsToken
+  - typingsJapgolly.typescript.mod.SyntaxKind.CaretEqualsToken
+*/
+trait PunctuationSyntaxKind
+  extends StObject
+     with TokenSyntaxKind

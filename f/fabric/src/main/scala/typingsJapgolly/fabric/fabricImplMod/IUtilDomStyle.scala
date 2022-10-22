@@ -1,24 +1,26 @@
 package typingsJapgolly.fabric.fabricImplMod
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IUtilDomStyle extends js.Object {
+trait IUtilDomStyle extends StObject {
+  
   /**
-  	 * Cross-browser wrapper for setting element's style
-  	 */
-  def setStyle(element: HTMLElement, styles: js.Any): HTMLElement
+    * Cross-browser wrapper for setting element's style
+    */
+  def setStyle(element: HTMLElement, styles: Any): HTMLElement
 }
-
 object IUtilDomStyle {
-  @scala.inline
-  def apply(setStyle: (HTMLElement, js.Any) => CallbackTo[HTMLElement]): IUtilDomStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setStyle")(js.Any.fromFunction2((t0: org.scalajs.dom.raw.HTMLElement, t1: js.Any) => setStyle(t0, t1).runNow()))
+  
+  inline def apply(setStyle: (HTMLElement, Any) => HTMLElement): IUtilDomStyle = {
+    val __obj = js.Dynamic.literal(setStyle = js.Any.fromFunction2(setStyle))
     __obj.asInstanceOf[IUtilDomStyle]
   }
+  
+  extension [Self <: IUtilDomStyle](x: Self) {
+    
+    inline def setSetStyle(value: (HTMLElement, Any) => HTMLElement): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
+  }
 }
-

@@ -10,10 +10,10 @@ Sticky session balancer based on a `cluster` module
 | ------------------ | :-------------: |
 | Full name          | sticky-session |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 52 |
-| # downloads        | 129108 |
-| # stars            | 16 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 18863.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/sticky-session)

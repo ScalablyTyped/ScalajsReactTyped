@@ -1,10 +1,10 @@
-package typingsJapgolly.limeJs
+package typingsJapgolly.limeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ISessionListener = js.Function1[/* session */ typingsJapgolly.limeJs.mod.Session, scala.Unit]
-  type ITransportEnvelopeListener = js.Function1[/* envelope */ typingsJapgolly.limeJs.mod.Envelope, scala.Unit]
-}
+
+type ISessionListener = js.Function1[/* session */ Session, Unit]
+
+type ITransportEnvelopeListener = js.Function1[/* envelope */ Envelope, Unit]

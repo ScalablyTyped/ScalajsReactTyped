@@ -1,50 +1,47 @@
 package typingsJapgolly.enigmaJs
 
 import typingsJapgolly.enigmaJs.enigmaJS._MixinType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enigmaJsStrings {
-  @js.native
-  sealed trait Doc extends _MixinType
   
   @js.native
-  sealed trait GenericBookmark extends _MixinType
+  sealed trait Doc
+    extends StObject
+       with _MixinType
+  inline def Doc: Doc = "Doc".asInstanceOf[Doc]
   
   @js.native
-  sealed trait GenericObject extends _MixinType
+  sealed trait GenericBookmark
+    extends StObject
+       with _MixinType
+  inline def GenericBookmark: GenericBookmark = "GenericBookmark".asInstanceOf[GenericBookmark]
   
   @js.native
-  sealed trait changed extends js.Object
+  sealed trait GenericObject
+    extends StObject
+       with _MixinType
+  inline def GenericObject: GenericObject = "GenericObject".asInstanceOf[GenericObject]
   
   @js.native
-  sealed trait closed extends js.Object
+  sealed trait changed extends StObject
+  inline def changed: changed = "changed".asInstanceOf[changed]
   
   @js.native
-  sealed trait opened extends js.Object
+  sealed trait closed extends StObject
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait resumed extends js.Object
+  sealed trait opened extends StObject
+  inline def opened: opened = "opened".asInstanceOf[opened]
   
   @js.native
-  sealed trait suspended extends js.Object
+  sealed trait resumed extends StObject
+  inline def resumed: resumed = "resumed".asInstanceOf[resumed]
   
-  @scala.inline
-  def Doc: Doc = "Doc".asInstanceOf[Doc]
-  @scala.inline
-  def GenericBookmark: GenericBookmark = "GenericBookmark".asInstanceOf[GenericBookmark]
-  @scala.inline
-  def GenericObject: GenericObject = "GenericObject".asInstanceOf[GenericObject]
-  @scala.inline
-  def changed: changed = "changed".asInstanceOf[changed]
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
-  @scala.inline
-  def opened: opened = "opened".asInstanceOf[opened]
-  @scala.inline
-  def resumed: resumed = "resumed".asInstanceOf[resumed]
-  @scala.inline
-  def suspended: suspended = "suspended".asInstanceOf[suspended]
+  @js.native
+  sealed trait suspended extends StObject
+  inline def suspended: suspended = "suspended".asInstanceOf[suspended]
 }
-

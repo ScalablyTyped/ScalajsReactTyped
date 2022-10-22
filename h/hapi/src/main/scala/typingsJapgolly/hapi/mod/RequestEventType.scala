@@ -1,24 +1,20 @@
 package typingsJapgolly.hapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.hapi.hapiStrings.peek
   - typingsJapgolly.hapi.hapiStrings.finish
   - typingsJapgolly.hapi.hapiStrings.disconnect
 */
-trait RequestEventType extends js.Object
-
+trait RequestEventType extends StObject
 object RequestEventType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def disconnect: typingsJapgolly.hapi.hapiStrings.disconnect = this.cast("disconnect")
-  @scala.inline
-  def finish: typingsJapgolly.hapi.hapiStrings.finish = this.cast("finish")
-  @scala.inline
-  def peek: typingsJapgolly.hapi.hapiStrings.peek = this.cast("peek")
+  
+  inline def disconnect: typingsJapgolly.hapi.hapiStrings.disconnect = "disconnect".asInstanceOf[typingsJapgolly.hapi.hapiStrings.disconnect]
+  
+  inline def finish: typingsJapgolly.hapi.hapiStrings.finish = "finish".asInstanceOf[typingsJapgolly.hapi.hapiStrings.finish]
+  
+  inline def peek: typingsJapgolly.hapi.hapiStrings.peek = "peek".asInstanceOf[typingsJapgolly.hapi.hapiStrings.peek]
 }
-

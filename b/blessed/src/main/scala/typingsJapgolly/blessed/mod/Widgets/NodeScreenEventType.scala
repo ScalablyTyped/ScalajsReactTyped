@@ -1,8 +1,8 @@
 package typingsJapgolly.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.blessed.blessedStrings.focus
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.blessed.blessedStrings.`element mouseout`
   - typingsJapgolly.blessed.blessedStrings.`element mouseup`
 */
-trait NodeScreenEventType extends js.Object
-
+trait NodeScreenEventType extends StObject
 object NodeScreenEventType {
-  @scala.inline
-  def blur: typingsJapgolly.blessed.blessedStrings.blur = this.cast("blur")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def click: typingsJapgolly.blessed.blessedStrings.click = this.cast("click")
-  @scala.inline
-  def `element click`: typingsJapgolly.blessed.blessedStrings.`element click` = this.cast("element click")
-  @scala.inline
-  def `element mouseout`: typingsJapgolly.blessed.blessedStrings.`element mouseout` = this.cast("element mouseout")
-  @scala.inline
-  def `element mouseover`: typingsJapgolly.blessed.blessedStrings.`element mouseover` = this.cast("element mouseover")
-  @scala.inline
-  def `element mouseup`: typingsJapgolly.blessed.blessedStrings.`element mouseup` = this.cast("element mouseup")
-  @scala.inline
-  def focus: typingsJapgolly.blessed.blessedStrings.focus = this.cast("focus")
+  
+  inline def blur: typingsJapgolly.blessed.blessedStrings.blur = "blur".asInstanceOf[typingsJapgolly.blessed.blessedStrings.blur]
+  
+  inline def click: typingsJapgolly.blessed.blessedStrings.click = "click".asInstanceOf[typingsJapgolly.blessed.blessedStrings.click]
+  
+  inline def `element click`: typingsJapgolly.blessed.blessedStrings.`element click` = ("element click").asInstanceOf[typingsJapgolly.blessed.blessedStrings.`element click`]
+  
+  inline def `element mouseout`: typingsJapgolly.blessed.blessedStrings.`element mouseout` = ("element mouseout").asInstanceOf[typingsJapgolly.blessed.blessedStrings.`element mouseout`]
+  
+  inline def `element mouseover`: typingsJapgolly.blessed.blessedStrings.`element mouseover` = ("element mouseover").asInstanceOf[typingsJapgolly.blessed.blessedStrings.`element mouseover`]
+  
+  inline def `element mouseup`: typingsJapgolly.blessed.blessedStrings.`element mouseup` = ("element mouseup").asInstanceOf[typingsJapgolly.blessed.blessedStrings.`element mouseup`]
+  
+  inline def focus: typingsJapgolly.blessed.blessedStrings.focus = "focus".asInstanceOf[typingsJapgolly.blessed.blessedStrings.focus]
 }
-

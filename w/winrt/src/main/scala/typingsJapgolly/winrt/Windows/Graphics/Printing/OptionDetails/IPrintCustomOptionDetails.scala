@@ -1,28 +1,32 @@
 package typingsJapgolly.winrt.Windows.Graphics.Printing.OptionDetails
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPrintCustomOptionDetails extends IPrintOptionDetails {
+trait IPrintCustomOptionDetails
+  extends StObject
+     with IPrintOptionDetails {
+  
   var displayName: String
 }
-
 object IPrintCustomOptionDetails {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     displayName: String,
     errorText: String,
     optionId: String,
     optionType: PrintOptionType,
     state: PrintOptionStates,
-    trySetValue: js.Any => CallbackTo[Boolean],
-    value: js.Any
+    trySetValue: Any => Boolean,
+    value: Any
   ): IPrintCustomOptionDetails = {
-    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], optionId = optionId.asInstanceOf[js.Any], optionType = optionType.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("trySetValue")(js.Any.fromFunction1((t0: js.Any) => trySetValue(t0).runNow()))
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], optionId = optionId.asInstanceOf[js.Any], optionType = optionType.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], trySetValue = js.Any.fromFunction1(trySetValue), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPrintCustomOptionDetails]
   }
+  
+  extension [Self <: IPrintCustomOptionDetails](x: Self) {
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+  }
 }
-

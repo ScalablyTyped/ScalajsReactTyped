@@ -1,8 +1,8 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.vis.visStrings.click
@@ -18,6 +18,8 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.vis.visStrings.dragStart
   - typingsJapgolly.vis.visStrings.dragging
   - typingsJapgolly.vis.visStrings.dragEnd
+  - typingsJapgolly.vis.visStrings.controlNodeDragging
+  - typingsJapgolly.vis.visStrings.controlNodeDragEnd
   - typingsJapgolly.vis.visStrings.hoverNode
   - typingsJapgolly.vis.visStrings.blurNode
   - typingsJapgolly.vis.visStrings.hoverEdge
@@ -36,70 +38,70 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.vis.visStrings.animationFinished
   - typingsJapgolly.vis.visStrings.configChange
 */
-trait NetworkEvents extends js.Object
-
+trait NetworkEvents extends StObject
 object NetworkEvents {
-  @scala.inline
-  def afterDrawing: typingsJapgolly.vis.visStrings.afterDrawing = this.cast("afterDrawing")
-  @scala.inline
-  def animationFinished: typingsJapgolly.vis.visStrings.animationFinished = this.cast("animationFinished")
-  @scala.inline
-  def beforeDrawing: typingsJapgolly.vis.visStrings.beforeDrawing = this.cast("beforeDrawing")
-  @scala.inline
-  def blurEdge: typingsJapgolly.vis.visStrings.blurEdge = this.cast("blurEdge")
-  @scala.inline
-  def blurNode: typingsJapgolly.vis.visStrings.blurNode = this.cast("blurNode")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def click: typingsJapgolly.vis.visStrings.click = this.cast("click")
-  @scala.inline
-  def configChange: typingsJapgolly.vis.visStrings.configChange = this.cast("configChange")
-  @scala.inline
-  def deselectEdge: typingsJapgolly.vis.visStrings.deselectEdge = this.cast("deselectEdge")
-  @scala.inline
-  def deselectNode: typingsJapgolly.vis.visStrings.deselectNode = this.cast("deselectNode")
-  @scala.inline
-  def doubleClick: typingsJapgolly.vis.visStrings.doubleClick = this.cast("doubleClick")
-  @scala.inline
-  def dragEnd: typingsJapgolly.vis.visStrings.dragEnd = this.cast("dragEnd")
-  @scala.inline
-  def dragStart: typingsJapgolly.vis.visStrings.dragStart = this.cast("dragStart")
-  @scala.inline
-  def dragging: typingsJapgolly.vis.visStrings.dragging = this.cast("dragging")
-  @scala.inline
-  def hidePopup: typingsJapgolly.vis.visStrings.hidePopup = this.cast("hidePopup")
-  @scala.inline
-  def hold: typingsJapgolly.vis.visStrings.hold = this.cast("hold")
-  @scala.inline
-  def hoverEdge: typingsJapgolly.vis.visStrings.hoverEdge = this.cast("hoverEdge")
-  @scala.inline
-  def hoverNode: typingsJapgolly.vis.visStrings.hoverNode = this.cast("hoverNode")
-  @scala.inline
-  def initRedraw: typingsJapgolly.vis.visStrings.initRedraw = this.cast("initRedraw")
-  @scala.inline
-  def oncontext: typingsJapgolly.vis.visStrings.oncontext = this.cast("oncontext")
-  @scala.inline
-  def release: typingsJapgolly.vis.visStrings.release = this.cast("release")
-  @scala.inline
-  def resize: typingsJapgolly.vis.visStrings.resize = this.cast("resize")
-  @scala.inline
-  def select: typingsJapgolly.vis.visStrings.select = this.cast("select")
-  @scala.inline
-  def selectEdge: typingsJapgolly.vis.visStrings.selectEdge = this.cast("selectEdge")
-  @scala.inline
-  def selectNode: typingsJapgolly.vis.visStrings.selectNode = this.cast("selectNode")
-  @scala.inline
-  def showPopup: typingsJapgolly.vis.visStrings.showPopup = this.cast("showPopup")
-  @scala.inline
-  def stabilizationIterationsDone: typingsJapgolly.vis.visStrings.stabilizationIterationsDone = this.cast("stabilizationIterationsDone")
-  @scala.inline
-  def stabilizationProgress: typingsJapgolly.vis.visStrings.stabilizationProgress = this.cast("stabilizationProgress")
-  @scala.inline
-  def stabilized: typingsJapgolly.vis.visStrings.stabilized = this.cast("stabilized")
-  @scala.inline
-  def startStabilizing: typingsJapgolly.vis.visStrings.startStabilizing = this.cast("startStabilizing")
-  @scala.inline
-  def zoom: typingsJapgolly.vis.visStrings.zoom = this.cast("zoom")
+  
+  inline def afterDrawing: typingsJapgolly.vis.visStrings.afterDrawing = "afterDrawing".asInstanceOf[typingsJapgolly.vis.visStrings.afterDrawing]
+  
+  inline def animationFinished: typingsJapgolly.vis.visStrings.animationFinished = "animationFinished".asInstanceOf[typingsJapgolly.vis.visStrings.animationFinished]
+  
+  inline def beforeDrawing: typingsJapgolly.vis.visStrings.beforeDrawing = "beforeDrawing".asInstanceOf[typingsJapgolly.vis.visStrings.beforeDrawing]
+  
+  inline def blurEdge: typingsJapgolly.vis.visStrings.blurEdge = "blurEdge".asInstanceOf[typingsJapgolly.vis.visStrings.blurEdge]
+  
+  inline def blurNode: typingsJapgolly.vis.visStrings.blurNode = "blurNode".asInstanceOf[typingsJapgolly.vis.visStrings.blurNode]
+  
+  inline def click: typingsJapgolly.vis.visStrings.click = "click".asInstanceOf[typingsJapgolly.vis.visStrings.click]
+  
+  inline def configChange: typingsJapgolly.vis.visStrings.configChange = "configChange".asInstanceOf[typingsJapgolly.vis.visStrings.configChange]
+  
+  inline def controlNodeDragEnd: typingsJapgolly.vis.visStrings.controlNodeDragEnd = "controlNodeDragEnd".asInstanceOf[typingsJapgolly.vis.visStrings.controlNodeDragEnd]
+  
+  inline def controlNodeDragging: typingsJapgolly.vis.visStrings.controlNodeDragging = "controlNodeDragging".asInstanceOf[typingsJapgolly.vis.visStrings.controlNodeDragging]
+  
+  inline def deselectEdge: typingsJapgolly.vis.visStrings.deselectEdge = "deselectEdge".asInstanceOf[typingsJapgolly.vis.visStrings.deselectEdge]
+  
+  inline def deselectNode: typingsJapgolly.vis.visStrings.deselectNode = "deselectNode".asInstanceOf[typingsJapgolly.vis.visStrings.deselectNode]
+  
+  inline def doubleClick: typingsJapgolly.vis.visStrings.doubleClick = "doubleClick".asInstanceOf[typingsJapgolly.vis.visStrings.doubleClick]
+  
+  inline def dragEnd: typingsJapgolly.vis.visStrings.dragEnd = "dragEnd".asInstanceOf[typingsJapgolly.vis.visStrings.dragEnd]
+  
+  inline def dragStart: typingsJapgolly.vis.visStrings.dragStart = "dragStart".asInstanceOf[typingsJapgolly.vis.visStrings.dragStart]
+  
+  inline def dragging: typingsJapgolly.vis.visStrings.dragging = "dragging".asInstanceOf[typingsJapgolly.vis.visStrings.dragging]
+  
+  inline def hidePopup: typingsJapgolly.vis.visStrings.hidePopup = "hidePopup".asInstanceOf[typingsJapgolly.vis.visStrings.hidePopup]
+  
+  inline def hold: typingsJapgolly.vis.visStrings.hold = "hold".asInstanceOf[typingsJapgolly.vis.visStrings.hold]
+  
+  inline def hoverEdge: typingsJapgolly.vis.visStrings.hoverEdge = "hoverEdge".asInstanceOf[typingsJapgolly.vis.visStrings.hoverEdge]
+  
+  inline def hoverNode: typingsJapgolly.vis.visStrings.hoverNode = "hoverNode".asInstanceOf[typingsJapgolly.vis.visStrings.hoverNode]
+  
+  inline def initRedraw: typingsJapgolly.vis.visStrings.initRedraw = "initRedraw".asInstanceOf[typingsJapgolly.vis.visStrings.initRedraw]
+  
+  inline def oncontext: typingsJapgolly.vis.visStrings.oncontext = "oncontext".asInstanceOf[typingsJapgolly.vis.visStrings.oncontext]
+  
+  inline def release: typingsJapgolly.vis.visStrings.release = "release".asInstanceOf[typingsJapgolly.vis.visStrings.release]
+  
+  inline def resize: typingsJapgolly.vis.visStrings.resize = "resize".asInstanceOf[typingsJapgolly.vis.visStrings.resize]
+  
+  inline def select: typingsJapgolly.vis.visStrings.select = "select".asInstanceOf[typingsJapgolly.vis.visStrings.select]
+  
+  inline def selectEdge: typingsJapgolly.vis.visStrings.selectEdge = "selectEdge".asInstanceOf[typingsJapgolly.vis.visStrings.selectEdge]
+  
+  inline def selectNode: typingsJapgolly.vis.visStrings.selectNode = "selectNode".asInstanceOf[typingsJapgolly.vis.visStrings.selectNode]
+  
+  inline def showPopup: typingsJapgolly.vis.visStrings.showPopup = "showPopup".asInstanceOf[typingsJapgolly.vis.visStrings.showPopup]
+  
+  inline def stabilizationIterationsDone: typingsJapgolly.vis.visStrings.stabilizationIterationsDone = "stabilizationIterationsDone".asInstanceOf[typingsJapgolly.vis.visStrings.stabilizationIterationsDone]
+  
+  inline def stabilizationProgress: typingsJapgolly.vis.visStrings.stabilizationProgress = "stabilizationProgress".asInstanceOf[typingsJapgolly.vis.visStrings.stabilizationProgress]
+  
+  inline def stabilized: typingsJapgolly.vis.visStrings.stabilized = "stabilized".asInstanceOf[typingsJapgolly.vis.visStrings.stabilized]
+  
+  inline def startStabilizing: typingsJapgolly.vis.visStrings.startStabilizing = "startStabilizing".asInstanceOf[typingsJapgolly.vis.visStrings.startStabilizing]
+  
+  inline def zoom: typingsJapgolly.vis.visStrings.zoom = "zoom".asInstanceOf[typingsJapgolly.vis.visStrings.zoom]
 }
-

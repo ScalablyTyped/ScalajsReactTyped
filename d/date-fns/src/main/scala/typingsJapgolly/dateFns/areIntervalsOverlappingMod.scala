@@ -1,24 +1,26 @@
 package typingsJapgolly.dateFns
 
+import typingsJapgolly.dateFns.anon.Inclusive
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/areIntervalsOverlapping", JSImport.Namespace)
-@js.native
-object areIntervalsOverlappingMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(
+object areIntervalsOverlappingMod {
+  
+  object default {
+    
+    inline def apply(
       intervalLeft: typingsJapgolly.dateFns.mod.Interval,
       intervalRight: typingsJapgolly.dateFns.mod.Interval
-    ): Boolean = js.native
-    def apply(
+    ): Boolean = (^.asInstanceOf[js.Dynamic].apply(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(
       intervalLeft: typingsJapgolly.dateFns.mod.Interval,
       intervalRight: typingsJapgolly.dateFns.mod.Interval,
-      options: AnonInclusive
-    ): Boolean = js.native
+      options: Inclusive
+    ): Boolean = (^.asInstanceOf[js.Dynamic].apply(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @JSImport("date-fns/areIntervalsOverlapping", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
   }
-  
 }
-

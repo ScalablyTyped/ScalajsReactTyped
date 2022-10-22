@@ -2,38 +2,54 @@ package typingsJapgolly.voximplantWebsdk.mod.IMEventTypes
 
 import typingsJapgolly.voximplantWebsdk.mod.UserStatuses
 import typingsJapgolly.voximplantWebsdk.mod.VoxImplantIMEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-		*	Event dispatched when self presence updated
-		*/
-trait PresenceUpdate extends VoxImplantIMEvent {
+  *    Event dispatched when self presence updated
+  */
+trait PresenceUpdate
+  extends StObject
+     with VoxImplantIMEvent {
+  
   /**
-  			* User id
-  			*/
+    * User id
+    */
   var id: String
+  
   /**
-  			*	Status message
-  			*/
+    *    Status message
+    */
   var message: String
+  
   /**
-  			*	Current presence status
-  			*/
+    *    Current presence status
+    */
   var presence: UserStatuses
+  
   /**
-  			*	Resource name
-  			*/
+    *    Resource name
+    */
   var resource: js.UndefOr[String] = js.undefined
 }
-
 object PresenceUpdate {
-  @scala.inline
-  def apply(id: String, message: String, presence: UserStatuses, resource: String = null): PresenceUpdate = {
+  
+  inline def apply(id: String, message: String, presence: UserStatuses): PresenceUpdate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], presence = presence.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresenceUpdate]
   }
+  
+  extension [Self <: PresenceUpdate](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setPresence(value: UserStatuses): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
+    
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+  }
 }
-

@@ -1,35 +1,44 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScaleRangeLayerProperties extends js.Object {
+trait ScaleRangeLayerProperties extends StObject {
+  
   /**
-    * The maximum scale (most zoomed in) at which the layer is visible in the view. If the map is zoomed in beyond this scale, the layer will not be visible. A value of `0` means the layer does not have a maximum scale. The maxScale value should always be smaller than the [minScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale) value, and greater than or equal to the service specification.
+    * The maximum scale (most zoomed in) at which the layer is visible in the view.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
-    *
-    * @default 0
     */
   var maxScale: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The minimum scale (most zoomed out) at which the layer is visible in the view. If the map is zoomed out beyond this scale, the layer will not be visible. A value of `0` means the layer does not have a minimum scale. The minScale value should always be larger than the [maxScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale) value, and lesser than or equal to the service specification.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
+    * The minimum scale (most zoomed out) at which the layer is visible in the view.
     *
     * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
     */
   var minScale: js.UndefOr[Double] = js.undefined
 }
-
 object ScaleRangeLayerProperties {
-  @scala.inline
-  def apply(maxScale: Int | Double = null, minScale: Int | Double = null): ScaleRangeLayerProperties = {
+  
+  inline def apply(): ScaleRangeLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
-    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleRangeLayerProperties]
   }
+  
+  extension [Self <: ScaleRangeLayerProperties](x: Self) {
+    
+    inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+    
+    inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
+    
+    inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+    
+    inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
+  }
 }
-

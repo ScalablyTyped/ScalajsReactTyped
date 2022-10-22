@@ -1,13 +1,17 @@
 package typingsJapgolly.logrocketReact
 
+import typingsJapgolly.logrocket.mod.LR.LogRocket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("logrocket-react", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(logRocket: LR): Unit = js.native
-  type LR = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LogRocket */ js.Any
+object mod {
+  
+  inline def apply(logRocket: LR): Unit = ^.asInstanceOf[js.Dynamic].apply(logRocket.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("logrocket-react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  type LR = LogRocket
 }
-

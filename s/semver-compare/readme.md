@@ -11,14 +11,11 @@ compare two semver version strings, returning -1, 0, or 1
 | Full name          | semver-compare |
 | Keywords           | semver, compare, cmp, comparison, sort |
 | # releases         | 1 |
-| # dependents       | 115 |
-| # downloads        | 86977737 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5381400666666668E7 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/semver-compare)
-- [Bugs](https://github.com/substack/semver-compare/issues)
-- [Repository](https://github.com/substack/semver-compare)
 - [Npm](https://www.npmjs.com/package/semver-compare)
     
 

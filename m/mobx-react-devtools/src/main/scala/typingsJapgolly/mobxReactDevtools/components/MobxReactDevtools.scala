@@ -1,10 +1,7 @@
 package typingsJapgolly.mobxReactDevtools.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.mobxReactDevtools.AnonBottom
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.mobxReactDevtools.anon.Bottom
 import typingsJapgolly.mobxReactDevtools.mobxReactDevtoolsStrings.bottomLeft
 import typingsJapgolly.mobxReactDevtools.mobxReactDevtoolsStrings.bottomRight
 import typingsJapgolly.mobxReactDevtools.mobxReactDevtoolsStrings.topLeft
@@ -12,41 +9,33 @@ import typingsJapgolly.mobxReactDevtools.mobxReactDevtoolsStrings.topRight
 import typingsJapgolly.mobxReactDevtools.mod.IDevToolProps
 import typingsJapgolly.mobxReactDevtools.mod.default
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MobxReactDevtools {
-  def apply(
-    className: String = null,
-    highlightTimeout: Int | Double = null,
-    noPanel: js.UndefOr[Boolean] = js.undefined,
-    position: topRight | bottomRight | bottomLeft | topLeft | AnonBottom = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[IDevToolProps, default, Unit, IDevToolProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (highlightTimeout != null) __obj.updateDynamic("highlightTimeout")(highlightTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(noPanel)) __obj.updateDynamic("noPanel")(noPanel.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.mobxReactDevtools.mod.IDevToolProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.mobxReactDevtools.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.mobxReactDevtools.mod.IDevToolProps])(children: _*)
-  }
   @JSImport("mobx-react-devtools", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def highlightTimeout(value: Double): this.type = set("highlightTimeout", value.asInstanceOf[js.Any])
+    
+    inline def noPanel(value: Boolean): this.type = set("noPanel", value.asInstanceOf[js.Any])
+    
+    inline def position(value: topRight | bottomRight | bottomLeft | topLeft | Bottom): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: MobxReactDevtools.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IDevToolProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,106 +1,149 @@
 package typingsJapgolly.nivoRadar.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.nivoColors.mod.InheritedColorProp
-import typingsJapgolly.nivoColors.mod.OrdinalColorsInstruction
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
+import typingsJapgolly.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
+import typingsJapgolly.nivoCore.anon.Dictkey
+import typingsJapgolly.nivoCore.anon.Id
 import typingsJapgolly.nivoCore.mod.Box
+import typingsJapgolly.nivoCore.mod.ClosedCurveFactoryId
 import typingsJapgolly.nivoCore.mod.CssMixBlendMode
-import typingsJapgolly.nivoLegends.mod.LegendProps
-import typingsJapgolly.nivoRadar.mod.CustomDotLabel
-import typingsJapgolly.nivoRadar.mod.CustomFormatter
-import typingsJapgolly.nivoRadar.mod.IndexByCustomFunctiono
-import typingsJapgolly.nivoRadar.mod.RadarProps
+import typingsJapgolly.nivoCore.mod.DotsItemSymbolComponent
+import typingsJapgolly.nivoCore.mod.PropertyAccessor
+import typingsJapgolly.nivoCore.mod.Theme
+import typingsJapgolly.nivoCore.mod.ValueFormat
+import typingsJapgolly.nivoLegends.distTypesTypesMod.LegendProps
+import typingsJapgolly.nivoRadar.anon.Color
+import typingsJapgolly.nivoRadar.anon.Index
+import typingsJapgolly.nivoRadar.distTypesTypesMod.GridLabelComponent
+import typingsJapgolly.nivoRadar.distTypesTypesMod.PointData
+import typingsJapgolly.nivoRadar.distTypesTypesMod.RadarCustomLayer
+import typingsJapgolly.nivoRadar.distTypesTypesMod.RadarLayerId
+import typingsJapgolly.nivoRadar.distTypesTypesMod.RadarSliceTooltipComponent
+import typingsJapgolly.nivoRadar.distTypesTypesMod.RadarSvgFillMatcherDatum
+import typingsJapgolly.nivoRadar.distTypesTypesMod.RadarSvgProps
 import typingsJapgolly.nivoRadar.nivoRadarStrings.auto
 import typingsJapgolly.nivoRadar.nivoRadarStrings.circular
 import typingsJapgolly.nivoRadar.nivoRadarStrings.linear
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ResponsiveRadar {
-  def apply(
-    data: js.Array[js.Object],
-    indexBy: Double | String | IndexByCustomFunctiono[_],
-    keys: js.Array[String | Double],
-    legends: js.Array[LegendProps],
-    animate: js.UndefOr[Boolean] = js.undefined,
-    blendMode: CssMixBlendMode = null,
-    borderColor: InheritedColorProp[_] = null,
-    borderWidth: Int | Double = null,
-    colors: OrdinalColorsInstruction[_] = null,
-    curve: String = null,
-    dotBorderColor: InheritedColorProp[_] = null,
-    dotBorderWidth: Int | Double = null,
-    dotColor: InheritedColorProp[_] = null,
-    dotLabel: String | CustomDotLabel = null,
-    dotLabelFormat: String | CustomFormatter = null,
-    dotLabelYOffset: Int | Double = null,
-    dotSize: Int | Double = null,
-    dotSymbol: /* repeated */ js.Any => CallbackTo[Node] = null,
-    enableDotLabel: js.UndefOr[Boolean] = js.undefined,
-    enableDots: js.UndefOr[Boolean] = js.undefined,
-    fillOpacity: Int | Double = null,
-    gridLabel: /* repeated */ js.Any => CallbackTo[String] = null,
-    gridLabelOffset: Int | Double = null,
-    gridLevels: Int | Double = null,
-    gridShape: circular | linear = null,
-    isInteractive: js.UndefOr[Boolean] = js.undefined,
-    margin: Box = null,
-    maxValue: auto | Double = null,
-    motionDamping: Int | Double = null,
-    motionStiffness: Int | Double = null,
-    tooltipFormat: String | CustomFormatter = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[RadarProps, typingsJapgolly.nivoRadar.mod.ResponsiveRadar, Unit, RadarProps] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], indexBy = indexBy.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], legends = legends.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (blendMode != null) __obj.updateDynamic("blendMode")(blendMode.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
-    if (dotBorderColor != null) __obj.updateDynamic("dotBorderColor")(dotBorderColor.asInstanceOf[js.Any])
-    if (dotBorderWidth != null) __obj.updateDynamic("dotBorderWidth")(dotBorderWidth.asInstanceOf[js.Any])
-    if (dotColor != null) __obj.updateDynamic("dotColor")(dotColor.asInstanceOf[js.Any])
-    if (dotLabel != null) __obj.updateDynamic("dotLabel")(dotLabel.asInstanceOf[js.Any])
-    if (dotLabelFormat != null) __obj.updateDynamic("dotLabelFormat")(dotLabelFormat.asInstanceOf[js.Any])
-    if (dotLabelYOffset != null) __obj.updateDynamic("dotLabelYOffset")(dotLabelYOffset.asInstanceOf[js.Any])
-    if (dotSize != null) __obj.updateDynamic("dotSize")(dotSize.asInstanceOf[js.Any])
-    if (dotSymbol != null) __obj.updateDynamic("dotSymbol")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => dotSymbol(t0).runNow()))
-    if (!js.isUndefined(enableDotLabel)) __obj.updateDynamic("enableDotLabel")(enableDotLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDots)) __obj.updateDynamic("enableDots")(enableDots.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (gridLabel != null) __obj.updateDynamic("gridLabel")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => gridLabel(t0).runNow()))
-    if (gridLabelOffset != null) __obj.updateDynamic("gridLabelOffset")(gridLabelOffset.asInstanceOf[js.Any])
-    if (gridLevels != null) __obj.updateDynamic("gridLevels")(gridLevels.asInstanceOf[js.Any])
-    if (gridShape != null) __obj.updateDynamic("gridShape")(gridShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
-    if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
-    if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.nivoRadar.mod.RadarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.nivoRadar.mod.ResponsiveRadar](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.nivoRadar.mod.RadarProps])(children: _*)
+  inline def apply[D /* <: Record[String, Any] */](
+    data: js.Array[D],
+    height: Double,
+    indexBy: PropertyAccessor[D, String],
+    keys: js.Array[String],
+    width: Double
+  ): Builder[D] = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], indexBy = indexBy.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    new Builder[D](js.Array(this.component, __props.asInstanceOf[RadarSvgProps[D]]))
   }
+  
   @JSImport("@nivo/radar", "ResponsiveRadar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[D /* <: Record[String, Any] */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def animate(value: Boolean): this.type = set("animate", value.asInstanceOf[js.Any])
+    
+    inline def ariaDescribedBy(value: String): this.type = set("ariaDescribedBy", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabel(value: String): this.type = set("ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabelledBy(value: String): this.type = set("ariaLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def blendMode(value: CssMixBlendMode): this.type = set("blendMode", value.asInstanceOf[js.Any])
+    
+    inline def borderColor(value: InheritedColorConfig[Color]): this.type = set("borderColor", value.asInstanceOf[js.Any])
+    
+    inline def borderWidth(value: Double): this.type = set("borderWidth", value.asInstanceOf[js.Any])
+    
+    inline def colors(value: OrdinalColorScaleConfig[Index]): this.type = set("colors", value.asInstanceOf[js.Any])
+    
+    inline def colorsFunction1(value: Index => String): this.type = set("colors", js.Any.fromFunction1(value))
+    
+    inline def colorsVarargs(value: String*): this.type = set("colors", js.Array(value*))
+    
+    inline def curve(value: ClosedCurveFactoryId): this.type = set("curve", value.asInstanceOf[js.Any])
+    
+    inline def defs(value: js.Array[Dictkey]): this.type = set("defs", value.asInstanceOf[js.Any])
+    
+    inline def defsVarargs(value: Dictkey*): this.type = set("defs", js.Array(value*))
+    
+    inline def dotBorderColor(value: InheritedColorConfig[PointData]): this.type = set("dotBorderColor", value.asInstanceOf[js.Any])
+    
+    inline def dotBorderWidth(value: Double): this.type = set("dotBorderWidth", value.asInstanceOf[js.Any])
+    
+    inline def dotColor(value: InheritedColorConfig[PointData]): this.type = set("dotColor", value.asInstanceOf[js.Any])
+    
+    inline def dotLabel(value: PropertyAccessor[PointData, String | Double]): this.type = set("dotLabel", value.asInstanceOf[js.Any])
+    
+    inline def dotLabelFormat(value: ValueFormat[Double, Unit]): this.type = set("dotLabelFormat", value.asInstanceOf[js.Any])
+    
+    inline def dotLabelFunction1(value: PointData => String | Double): this.type = set("dotLabel", js.Any.fromFunction1(value))
+    
+    inline def dotLabelYOffset(value: Double): this.type = set("dotLabelYOffset", value.asInstanceOf[js.Any])
+    
+    inline def dotSize(value: Double): this.type = set("dotSize", value.asInstanceOf[js.Any])
+    
+    inline def dotSymbol(value: DotsItemSymbolComponent): this.type = set("dotSymbol", value.asInstanceOf[js.Any])
+    
+    inline def enableDotLabel(value: Boolean): this.type = set("enableDotLabel", value.asInstanceOf[js.Any])
+    
+    inline def enableDots(value: Boolean): this.type = set("enableDots", value.asInstanceOf[js.Any])
+    
+    inline def fill(value: js.Array[Id[RadarSvgFillMatcherDatum[D]]]): this.type = set("fill", value.asInstanceOf[js.Any])
+    
+    inline def fillOpacity(value: Double): this.type = set("fillOpacity", value.asInstanceOf[js.Any])
+    
+    inline def fillVarargs(value: Id[RadarSvgFillMatcherDatum[D]]*): this.type = set("fill", js.Array(value*))
+    
+    inline def gridLabel(value: GridLabelComponent): this.type = set("gridLabel", value.asInstanceOf[js.Any])
+    
+    inline def gridLabelOffset(value: Double): this.type = set("gridLabelOffset", value.asInstanceOf[js.Any])
+    
+    inline def gridLevels(value: Double): this.type = set("gridLevels", value.asInstanceOf[js.Any])
+    
+    inline def gridShape(value: circular | linear): this.type = set("gridShape", value.asInstanceOf[js.Any])
+    
+    inline def isInteractive(value: Boolean): this.type = set("isInteractive", value.asInstanceOf[js.Any])
+    
+    inline def layers(value: js.Array[RadarLayerId | RadarCustomLayer[D]]): this.type = set("layers", value.asInstanceOf[js.Any])
+    
+    inline def layersVarargs(value: (RadarLayerId | RadarCustomLayer[D])*): this.type = set("layers", js.Array(value*))
+    
+    inline def legends(value: js.Array[LegendProps]): this.type = set("legends", value.asInstanceOf[js.Any])
+    
+    inline def legendsVarargs(value: LegendProps*): this.type = set("legends", js.Array(value*))
+    
+    inline def margin(value: Box): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def maxValue(value: Double | auto): this.type = set("maxValue", value.asInstanceOf[js.Any])
+    
+    inline def motionConfig(
+      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
+    ): this.type = set("motionConfig", value.asInstanceOf[js.Any])
+    
+    inline def renderWrapper(value: Boolean): this.type = set("renderWrapper", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def rotation(value: Double): this.type = set("rotation", value.asInstanceOf[js.Any])
+    
+    inline def sliceTooltip(value: RadarSliceTooltipComponent): this.type = set("sliceTooltip", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: Theme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def valueFormat(value: ValueFormat[Double, String]): this.type = set("valueFormat", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[D /* <: Record[String, Any] */](p: RadarSvgProps[D]): Builder[D] = new Builder[D](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

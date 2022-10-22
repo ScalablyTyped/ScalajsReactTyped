@@ -1,48 +1,78 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarkerOptions extends js.Object {
+trait MarkerOptions extends StObject {
+  
   var draggingCursor: js.UndefOr[String] = js.undefined
+  
   var enableClicking: js.UndefOr[Boolean] = js.undefined
+  
   var enableDragging: js.UndefOr[Boolean] = js.undefined
+  
   var enableMassClear: js.UndefOr[Boolean] = js.undefined
+  
   var icon: js.UndefOr[Icon] = js.undefined
+  
   var offset: js.UndefOr[Size] = js.undefined
+  
   var raiseOnDrag: js.UndefOr[Boolean] = js.undefined
+  
   var rotation: js.UndefOr[Double] = js.undefined
+  
   var shadow: js.UndefOr[Icon] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
 }
-
 object MarkerOptions {
-  @scala.inline
-  def apply(
-    draggingCursor: String = null,
-    enableClicking: js.UndefOr[Boolean] = js.undefined,
-    enableDragging: js.UndefOr[Boolean] = js.undefined,
-    enableMassClear: js.UndefOr[Boolean] = js.undefined,
-    icon: Icon = null,
-    offset: Size = null,
-    raiseOnDrag: js.UndefOr[Boolean] = js.undefined,
-    rotation: Int | Double = null,
-    shadow: Icon = null,
-    title: String = null
-  ): MarkerOptions = {
+  
+  inline def apply(): MarkerOptions = {
     val __obj = js.Dynamic.literal()
-    if (draggingCursor != null) __obj.updateDynamic("draggingCursor")(draggingCursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableClicking)) __obj.updateDynamic("enableClicking")(enableClicking.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDragging)) __obj.updateDynamic("enableDragging")(enableDragging.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMassClear)) __obj.updateDynamic("enableMassClear")(enableMassClear.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(raiseOnDrag)) __obj.updateDynamic("raiseOnDrag")(raiseOnDrag.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }
+  
+  extension [Self <: MarkerOptions](x: Self) {
+    
+    inline def setDraggingCursor(value: String): Self = StObject.set(x, "draggingCursor", value.asInstanceOf[js.Any])
+    
+    inline def setDraggingCursorUndefined: Self = StObject.set(x, "draggingCursor", js.undefined)
+    
+    inline def setEnableClicking(value: Boolean): Self = StObject.set(x, "enableClicking", value.asInstanceOf[js.Any])
+    
+    inline def setEnableClickingUndefined: Self = StObject.set(x, "enableClicking", js.undefined)
+    
+    inline def setEnableDragging(value: Boolean): Self = StObject.set(x, "enableDragging", value.asInstanceOf[js.Any])
+    
+    inline def setEnableDraggingUndefined: Self = StObject.set(x, "enableDragging", js.undefined)
+    
+    inline def setEnableMassClear(value: Boolean): Self = StObject.set(x, "enableMassClear", value.asInstanceOf[js.Any])
+    
+    inline def setEnableMassClearUndefined: Self = StObject.set(x, "enableMassClear", js.undefined)
+    
+    inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setRaiseOnDrag(value: Boolean): Self = StObject.set(x, "raiseOnDrag", value.asInstanceOf[js.Any])
+    
+    inline def setRaiseOnDragUndefined: Self = StObject.set(x, "raiseOnDrag", js.undefined)
+    
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    
+    inline def setShadow(value: Icon): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

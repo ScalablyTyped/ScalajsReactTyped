@@ -1,22 +1,27 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotSeriesPointOptions extends js.Object {
+trait PlotSeriesPointOptions extends StObject {
+  
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Events for each single point.
+    * (Highstock) Events for each single point.
     */
-  var events: js.UndefOr[PlotSeriesPointEventsOptions] = js.undefined
+  var events: js.UndefOr[PointEventsOptionsObject] = js.undefined
 }
-
 object PlotSeriesPointOptions {
-  @scala.inline
-  def apply(events: PlotSeriesPointEventsOptions = null): PlotSeriesPointOptions = {
+  
+  inline def apply(): PlotSeriesPointOptions = {
     val __obj = js.Dynamic.literal()
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSeriesPointOptions]
   }
+  
+  extension [Self <: PlotSeriesPointOptions](x: Self) {
+    
+    inline def setEvents(value: PointEventsOptionsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+  }
 }
-

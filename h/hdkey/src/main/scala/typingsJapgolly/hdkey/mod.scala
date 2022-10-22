@@ -1,0 +1,126 @@
+package typingsJapgolly.hdkey
+
+import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.hdkey.anon.Private
+import typingsJapgolly.hdkey.anon.Xpriv
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object mod {
+  
+  @JSImport("hdkey", JSImport.Namespace)
+  @js.native
+  open class ^ ()
+    extends StObject
+       with HDNode {
+    
+    /* CompleteClass */
+    var chainCode: Buffer = js.native
+    
+    /* CompleteClass */
+    override def derive(path: String): HDNode = js.native
+    
+    /* CompleteClass */
+    var privateExtendedKey: String = js.native
+    
+    /* CompleteClass */
+    var privateKey: Buffer = js.native
+    
+    /* CompleteClass */
+    var publicExtendedKey: String = js.native
+    
+    /* CompleteClass */
+    var publicKey: Buffer = js.native
+    
+    /* CompleteClass */
+    override def sign(hash: Buffer): Buffer = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): Xpriv = js.native
+    
+    /* CompleteClass */
+    override def verify(hash: Buffer, signature: Buffer): Boolean = js.native
+    
+    /* CompleteClass */
+    override def wipePrivateData(): HDNode = js.native
+  }
+  @JSImport("hdkey", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def fromExtendedKey(xpriv: String): HDNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(xpriv.asInstanceOf[js.Any]).asInstanceOf[HDNode]
+  
+  /* static member */
+  inline def fromJSON(obj: Xpriv): HDNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[HDNode]
+  
+  /* static member */
+  inline def fromMasterSeed(seed: Buffer): HDNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[HDNode]
+  inline def fromMasterSeed(seed: Buffer, versions: Private): HDNode = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seed.asInstanceOf[js.Any], versions.asInstanceOf[js.Any])).asInstanceOf[HDNode]
+  
+  trait HDNode extends StObject {
+    
+    var chainCode: Buffer
+    
+    def derive(path: String): HDNode
+    
+    var privateExtendedKey: String
+    
+    var privateKey: Buffer
+    
+    var publicExtendedKey: String
+    
+    var publicKey: Buffer
+    
+    def sign(hash: Buffer): Buffer
+    
+    def toJSON(): Xpriv
+    
+    def verify(hash: Buffer, signature: Buffer): Boolean
+    
+    def wipePrivateData(): HDNode
+  }
+  object HDNode {
+    
+    inline def apply(
+      chainCode: Buffer,
+      derive: String => HDNode,
+      privateExtendedKey: String,
+      privateKey: Buffer,
+      publicExtendedKey: String,
+      publicKey: Buffer,
+      sign: Buffer => Buffer,
+      toJSON: CallbackTo[Xpriv],
+      verify: (Buffer, Buffer) => Boolean,
+      wipePrivateData: CallbackTo[HDNode]
+    ): HDNode = {
+      val __obj = js.Dynamic.literal(chainCode = chainCode.asInstanceOf[js.Any], derive = js.Any.fromFunction1(derive), privateExtendedKey = privateExtendedKey.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any], publicExtendedKey = publicExtendedKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any], sign = js.Any.fromFunction1(sign), toJSON = toJSON.toJsFn, verify = js.Any.fromFunction2(verify), wipePrivateData = wipePrivateData.toJsFn)
+      __obj.asInstanceOf[HDNode]
+    }
+    
+    extension [Self <: HDNode](x: Self) {
+      
+      inline def setChainCode(value: Buffer): Self = StObject.set(x, "chainCode", value.asInstanceOf[js.Any])
+      
+      inline def setDerive(value: String => HDNode): Self = StObject.set(x, "derive", js.Any.fromFunction1(value))
+      
+      inline def setPrivateExtendedKey(value: String): Self = StObject.set(x, "privateExtendedKey", value.asInstanceOf[js.Any])
+      
+      inline def setPrivateKey(value: Buffer): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      
+      inline def setPublicExtendedKey(value: String): Self = StObject.set(x, "publicExtendedKey", value.asInstanceOf[js.Any])
+      
+      inline def setPublicKey(value: Buffer): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      
+      inline def setSign(value: Buffer => Buffer): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
+      
+      inline def setToJSON(value: CallbackTo[Xpriv]): Self = StObject.set(x, "toJSON", value.toJsFn)
+      
+      inline def setVerify(value: (Buffer, Buffer) => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
+      
+      inline def setWipePrivateData(value: CallbackTo[HDNode]): Self = StObject.set(x, "wipePrivateData", value.toJsFn)
+    }
+  }
+}

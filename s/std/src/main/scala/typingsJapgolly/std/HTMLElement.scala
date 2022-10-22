@@ -1,35 +1,27 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Any HTML element. Some elements directly implement this interface, while others implement it via an interface that inherits it. */
 @js.native
 trait HTMLElement
-  extends Element
+  extends StObject
+     with Element
      with DocumentAndElementEventHandlers
      with ElementCSSInlineStyle
      with ElementContentEditable
      with GlobalEventHandlers
      with HTMLOrSVGElement {
+  
+  /* standard dom */
   var accessKey: java.lang.String = js.native
+  
+  /* standard dom */
   val accessKeyLabel: java.lang.String = js.native
-  var autocapitalize: java.lang.String = js.native
-  var dir: java.lang.String = js.native
-  var draggable: scala.Boolean = js.native
-  var hidden: scala.Boolean = js.native
-  var innerText: java.lang.String = js.native
-  var lang: java.lang.String = js.native
-  val offsetHeight: Double = js.native
-  val offsetLeft: Double = js.native
-  val offsetParent: org.scalajs.dom.raw.Element | Null = js.native
-  val offsetTop: Double = js.native
-  val offsetWidth: Double = js.native
-  var spellcheck: scala.Boolean = js.native
-  var title: java.lang.String = js.native
-  var translate: scala.Boolean = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -40,20 +32,70 @@ trait HTMLElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  /* standard dom */
+  def attachInternals(): ElementInternals = js.native
+  
+  /* standard dom */
+  var autocapitalize: java.lang.String = js.native
+  
+  /* standard dom */
   def click(): Unit = js.native
+  
+  /* standard dom */
+  var dir: java.lang.String = js.native
+  
+  /* standard dom */
+  var draggable: scala.Boolean = js.native
+  
+  /* standard dom */
+  var hidden: scala.Boolean = js.native
+  
+  /* standard dom */
+  var inert: scala.Boolean = js.native
+  
+  /* standard dom */
+  var innerText: java.lang.String = js.native
+  
+  /* standard dom */
+  var lang: java.lang.String = js.native
+  
+  /* standard dom */
+  val offsetHeight: Double = js.native
+  
+  /* standard dom */
+  val offsetLeft: Double = js.native
+  
+  /* standard dom */
+  val offsetParent: org.scalajs.dom.Element | Null = js.native
+  
+  /* standard dom */
+  val offsetTop: Double = js.native
+  
+  /* standard dom */
+  val offsetWidth: Double = js.native
+  
+  /* standard dom */
+  var outerText: java.lang.String = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,
     listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
+    options: org.scalajs.dom.EventListenerOptions
   ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  
+  /* standard dom */
+  var spellcheck: scala.Boolean = js.native
+  
+  /* standard dom */
+  var title: java.lang.String = js.native
+  
+  /* standard dom */
+  var translate: scala.Boolean = js.native
 }
-
-@JSGlobal("HTMLElement")
-@js.native
-object HTMLElement extends Instantiable0[HTMLElement]
-

@@ -1,35 +1,57 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPolarChartArgumentAxisStrips extends dxPolarChartCommonAxisSettingsStripStyle {
-  /** Specifies a color for a strip. */
+trait dxPolarChartArgumentAxisStrips
+  extends StObject
+     with dxPolarChartCommonAxisSettingsStripStyle {
+  
+  /**
+    * Specifies a color for a strip.
+    */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies an end value for a strip. */
+  
+  /**
+    * Specifies an end value for a strip.
+    */
   var endValue: js.UndefOr[Double | js.Date | String] = js.undefined
-  /** An object that defines the label configuration options of a strip. */
+  
+  /**
+    * An object that defines the label configuration properties of a strip.
+    */
   @JSName("label")
   var label_dxPolarChartArgumentAxisStrips: js.UndefOr[dxPolarChartArgumentAxisStripsLabel] = js.undefined
-  /** Specifies a start value for a strip. */
+  
+  /**
+    * Specifies a start value for a strip.
+    */
   var startValue: js.UndefOr[Double | js.Date | String] = js.undefined
 }
-
 object dxPolarChartArgumentAxisStrips {
-  @scala.inline
-  def apply(
-    color: String = null,
-    endValue: Double | js.Date | String = null,
-    label: dxPolarChartArgumentAxisStripsLabel = null,
-    startValue: Double | js.Date | String = null
-  ): dxPolarChartArgumentAxisStrips = {
+  
+  inline def apply(): dxPolarChartArgumentAxisStrips = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartArgumentAxisStrips]
   }
+  
+  extension [Self <: dxPolarChartArgumentAxisStrips](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setEndValue(value: Double | js.Date | String): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+    
+    inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
+    
+    inline def setLabel(value: dxPolarChartArgumentAxisStripsLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setStartValue(value: Double | js.Date | String): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+    
+    inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
+  }
 }
-

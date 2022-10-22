@@ -1,16 +1,18 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NamespaceDeclaration
-  extends ModuleDeclaration
+  extends StObject
+     with ModuleDeclaration
      with NamespaceBody {
+  
   @JSName("body")
-  var body_NamespaceDeclaration: NamespaceBody = js.native
+  val body_NamespaceDeclaration: NamespaceBody = js.native
+  
   @JSName("name")
-  var name_NamespaceDeclaration: Identifier = js.native
+  val name_NamespaceDeclaration: Identifier = js.native
 }
-

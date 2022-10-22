@@ -3,37 +3,49 @@ package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access and modify pivot tables.
   */
-trait PivotTable extends js.Object {
+trait PivotTable extends StObject {
+  
   def addCalculatedPivotValue(name: String, formula: String): PivotValue
+  
   def addColumnGroup(sourceDataColumn: Integer): PivotGroup
+  
   def addFilter(sourceDataColumn: Integer, filterCriteria: FilterCriteria): PivotFilter
+  
   def addPivotValue(sourceDataColumn: Integer, summarizeFunction: PivotTableSummarizeFunction): PivotValue
+  
   def addRowGroup(sourceDataColumn: Integer): PivotGroup
+  
   def getAnchorCell(): Range
+  
   def getColumnGroups(): js.Array[PivotGroup]
+  
   def getFilters(): js.Array[PivotFilter]
+  
   def getPivotValues(): js.Array[PivotValue]
+  
   def getRowGroups(): js.Array[PivotGroup]
+  
   def getValuesDisplayOrientation(): Dimension
+  
   def remove(): Unit
+  
   def setValuesDisplayOrientation(dimension: Dimension): PivotTable
 }
-
 object PivotTable {
-  @scala.inline
-  def apply(
-    addCalculatedPivotValue: (String, String) => CallbackTo[PivotValue],
-    addColumnGroup: Integer => CallbackTo[PivotGroup],
-    addFilter: (Integer, FilterCriteria) => CallbackTo[PivotFilter],
-    addPivotValue: (Integer, PivotTableSummarizeFunction) => CallbackTo[PivotValue],
-    addRowGroup: Integer => CallbackTo[PivotGroup],
+  
+  inline def apply(
+    addCalculatedPivotValue: (String, String) => PivotValue,
+    addColumnGroup: Integer => PivotGroup,
+    addFilter: (Integer, FilterCriteria) => PivotFilter,
+    addPivotValue: (Integer, PivotTableSummarizeFunction) => PivotValue,
+    addRowGroup: Integer => PivotGroup,
     getAnchorCell: CallbackTo[Range],
     getColumnGroups: CallbackTo[js.Array[PivotGroup]],
     getFilters: CallbackTo[js.Array[PivotFilter]],
@@ -41,23 +53,38 @@ object PivotTable {
     getRowGroups: CallbackTo[js.Array[PivotGroup]],
     getValuesDisplayOrientation: CallbackTo[Dimension],
     remove: Callback,
-    setValuesDisplayOrientation: Dimension => CallbackTo[PivotTable]
+    setValuesDisplayOrientation: Dimension => PivotTable
   ): PivotTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addCalculatedPivotValue")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => addCalculatedPivotValue(t0, t1).runNow()))
-    __obj.updateDynamic("addColumnGroup")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => addColumnGroup(t0).runNow()))
-    __obj.updateDynamic("addFilter")(js.Any.fromFunction2((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer, t1: typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet.FilterCriteria) => addFilter(t0, t1).runNow()))
-    __obj.updateDynamic("addPivotValue")(js.Any.fromFunction2((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer, t1: typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction) => addPivotValue(t0, t1).runNow()))
-    __obj.updateDynamic("addRowGroup")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => addRowGroup(t0).runNow()))
-    __obj.updateDynamic("getAnchorCell")(getAnchorCell.toJsFn)
-    __obj.updateDynamic("getColumnGroups")(getColumnGroups.toJsFn)
-    __obj.updateDynamic("getFilters")(getFilters.toJsFn)
-    __obj.updateDynamic("getPivotValues")(getPivotValues.toJsFn)
-    __obj.updateDynamic("getRowGroups")(getRowGroups.toJsFn)
-    __obj.updateDynamic("getValuesDisplayOrientation")(getValuesDisplayOrientation.toJsFn)
-    __obj.updateDynamic("remove")(remove.toJsFn)
-    __obj.updateDynamic("setValuesDisplayOrientation")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet.Dimension) => setValuesDisplayOrientation(t0).runNow()))
+    val __obj = js.Dynamic.literal(addCalculatedPivotValue = js.Any.fromFunction2(addCalculatedPivotValue), addColumnGroup = js.Any.fromFunction1(addColumnGroup), addFilter = js.Any.fromFunction2(addFilter), addPivotValue = js.Any.fromFunction2(addPivotValue), addRowGroup = js.Any.fromFunction1(addRowGroup), getAnchorCell = getAnchorCell.toJsFn, getColumnGroups = getColumnGroups.toJsFn, getFilters = getFilters.toJsFn, getPivotValues = getPivotValues.toJsFn, getRowGroups = getRowGroups.toJsFn, getValuesDisplayOrientation = getValuesDisplayOrientation.toJsFn, remove = remove.toJsFn, setValuesDisplayOrientation = js.Any.fromFunction1(setValuesDisplayOrientation))
     __obj.asInstanceOf[PivotTable]
   }
+  
+  extension [Self <: PivotTable](x: Self) {
+    
+    inline def setAddCalculatedPivotValue(value: (String, String) => PivotValue): Self = StObject.set(x, "addCalculatedPivotValue", js.Any.fromFunction2(value))
+    
+    inline def setAddColumnGroup(value: Integer => PivotGroup): Self = StObject.set(x, "addColumnGroup", js.Any.fromFunction1(value))
+    
+    inline def setAddFilter(value: (Integer, FilterCriteria) => PivotFilter): Self = StObject.set(x, "addFilter", js.Any.fromFunction2(value))
+    
+    inline def setAddPivotValue(value: (Integer, PivotTableSummarizeFunction) => PivotValue): Self = StObject.set(x, "addPivotValue", js.Any.fromFunction2(value))
+    
+    inline def setAddRowGroup(value: Integer => PivotGroup): Self = StObject.set(x, "addRowGroup", js.Any.fromFunction1(value))
+    
+    inline def setGetAnchorCell(value: CallbackTo[Range]): Self = StObject.set(x, "getAnchorCell", value.toJsFn)
+    
+    inline def setGetColumnGroups(value: CallbackTo[js.Array[PivotGroup]]): Self = StObject.set(x, "getColumnGroups", value.toJsFn)
+    
+    inline def setGetFilters(value: CallbackTo[js.Array[PivotFilter]]): Self = StObject.set(x, "getFilters", value.toJsFn)
+    
+    inline def setGetPivotValues(value: CallbackTo[js.Array[PivotValue]]): Self = StObject.set(x, "getPivotValues", value.toJsFn)
+    
+    inline def setGetRowGroups(value: CallbackTo[js.Array[PivotGroup]]): Self = StObject.set(x, "getRowGroups", value.toJsFn)
+    
+    inline def setGetValuesDisplayOrientation(value: CallbackTo[Dimension]): Self = StObject.set(x, "getValuesDisplayOrientation", value.toJsFn)
+    
+    inline def setRemove(value: Callback): Self = StObject.set(x, "remove", value.toJsFn)
+    
+    inline def setSetValuesDisplayOrientation(value: Dimension => PivotTable): Self = StObject.set(x, "setValuesDisplayOrientation", js.Any.fromFunction1(value))
+  }
 }
-

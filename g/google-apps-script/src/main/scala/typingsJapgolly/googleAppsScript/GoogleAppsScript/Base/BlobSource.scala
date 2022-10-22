@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Base
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for objects that can export their data as a Blob.
@@ -45,18 +45,23 @@ import scala.scalajs.js.annotation._
   *
   * StaticMapAllows for the creation and decoration of static map images.
   */
-trait BlobSource extends js.Object {
+trait BlobSource extends StObject {
+  
   def getAs(contentType: String): Blob
+  
   def getBlob(): Blob
 }
-
 object BlobSource {
-  @scala.inline
-  def apply(getAs: String => CallbackTo[Blob], getBlob: CallbackTo[Blob]): BlobSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAs")(js.Any.fromFunction1((t0: java.lang.String) => getAs(t0).runNow()))
-    __obj.updateDynamic("getBlob")(getBlob.toJsFn)
+  
+  inline def apply(getAs: String => Blob, getBlob: CallbackTo[Blob]): BlobSource = {
+    val __obj = js.Dynamic.literal(getAs = js.Any.fromFunction1(getAs), getBlob = getBlob.toJsFn)
     __obj.asInstanceOf[BlobSource]
   }
+  
+  extension [Self <: BlobSource](x: Self) {
+    
+    inline def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
+    
+    inline def setGetBlob(value: CallbackTo[Blob]): Self = StObject.set(x, "getBlob", value.toJsFn)
+  }
 }
-

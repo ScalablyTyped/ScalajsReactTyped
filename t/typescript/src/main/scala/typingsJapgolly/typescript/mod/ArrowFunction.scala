@@ -1,24 +1,27 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.typescript.mod.TextRange because Already inherited
-- typingsJapgolly.typescript.mod.Node because Already inherited
-- typingsJapgolly.typescript.mod.Expression because var conflicts: decorators, end, flags, kind, modifiers, parent, pos. Inlined _expressionBrand */ @js.native
+@js.native
 trait ArrowFunction
-  extends FunctionLikeDeclarationBase
+  extends StObject
+     with Expression
+     with FunctionLikeDeclarationBase
      with FunctionLikeDeclaration
-     with SignatureDeclaration
-     with _HasJSDoc
-     with ForInitializer {
-  var _expressionBrand: js.Any = js.native
+     with HasJSDoc
+     with HasModifiers
+     with SignatureDeclaration {
+  
   @JSName("body")
-  var body_ArrowFunction: ConciseBody = js.native
-  var equalsGreaterThanToken: EqualsGreaterThanToken = js.native
+  val body_ArrowFunction: ConciseBody = js.native
+  
+  val equalsGreaterThanToken: EqualsGreaterThanToken = js.native
+  
   @JSName("kind")
-  var kind_ArrowFunction: typingsJapgolly.typescript.mod.SyntaxKind.ArrowFunction = js.native
+  val kind_ArrowFunction: typingsJapgolly.typescript.mod.SyntaxKind.ArrowFunction = js.native
+  
+  @JSName("modifiers")
+  val modifiers_ArrowFunction: js.UndefOr[NodeArray[Modifier]] = js.native
 }
-

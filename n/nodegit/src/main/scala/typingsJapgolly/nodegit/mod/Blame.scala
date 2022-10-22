@@ -1,18 +1,20 @@
 package typingsJapgolly.nodegit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit", "Blame")
 @js.native
-class Blame ()
+open class Blame ()
   extends typingsJapgolly.nodegit.blameMod.Blame
-
 /* static members */
-@JSImport("nodegit", "Blame")
-@js.native
-object Blame extends js.Object {
+object Blame {
+  
+  @JSImport("nodegit", "Blame")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Retrieve the blame of a file
     *
@@ -20,16 +22,16 @@ object Blame extends js.Object {
     * @param path - to the file to get the blame of
     * @param [options] - Options for the blame
     */
-  def file(repo: typingsJapgolly.nodegit.repositoryMod.Repository, path: String): typingsJapgolly.nodegit.blameMod.Blame = js.native
-  def file(
+  inline def file(repo: typingsJapgolly.nodegit.repositoryMod.Repository, path: String): js.Promise[typingsJapgolly.nodegit.blameMod.Blame] = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.nodegit.blameMod.Blame]]
+  inline def file(
     repo: typingsJapgolly.nodegit.repositoryMod.Repository,
     path: String,
     options: typingsJapgolly.nodegit.blameOptionsMod.BlameOptions
-  ): typingsJapgolly.nodegit.blameMod.Blame = js.native
+  ): js.Promise[typingsJapgolly.nodegit.blameMod.Blame] = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.nodegit.blameMod.Blame]]
+  
   /**
     * @param opts - The git_blame_options struct to initialize
     * @param version - Version of struct; pass GIT_BLAME_OPTIONS_VERSION
     */
-  def initOptions(opts: typingsJapgolly.nodegit.blameOptionsMod.BlameOptions, version: Double): Double = js.native
+  inline def initOptions(opts: typingsJapgolly.nodegit.blameOptionsMod.BlameOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

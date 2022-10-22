@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-global
 
-Typings are for version 10.0.4
+Typings are for version 10.9.2
 
 ## Library description:
 Global styles for JSS
@@ -10,10 +10,10 @@ Global styles for JSS
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-global |
 | Keywords           | cssinjs, css-in-js, css in js, jss, plugin, global, unscoped |
-| # releases         | 32 |
-| # dependents       | 14 |
-| # downloads        | 11537145 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 9990917.0 |
+| # stars            | 6773.0 |
 
 ## Links
 - [Homepage](https://github.com/cssinjs/jss#readme)

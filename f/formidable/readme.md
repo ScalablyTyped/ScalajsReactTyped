@@ -1,7 +1,7 @@
 
 # Scala.js typings for formidable
 
-Typings are for version 1.0.16
+Typings are for version 2.0
 
 ## Library description:
 A node.js module for parsing form data, especially file uploads.
@@ -9,16 +9,16 @@ A node.js module for parsing form data, especially file uploads.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | formidable |
-| Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 861 |
-| # downloads        | 121106375 |
-| # stars            | 244 |
+| Keywords           | multipart, form, data, querystring, www, json, ulpoad, file |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 3.2285635333333332E7 |
+| # stars            | 6368.0 |
 
 ## Links
-- [Homepage](https://github.com/felixge/node-formidable)
-- [Bugs](http://github.com/felixge/node-formidable/issues)
-- [Repository](https://github.com/felixge/node-formidable)
+- [Homepage](https://github.com/node-formidable/formidable)
+- [Bugs](https://github.com/node-formidable/formidable/issues)
+- [Repository](https://github.com/node-formidable/formidable)
 - [Npm](https://www.npmjs.com/package/formidable)
     
 

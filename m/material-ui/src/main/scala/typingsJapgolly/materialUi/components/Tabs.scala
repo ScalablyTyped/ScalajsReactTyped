@@ -1,63 +1,55 @@
 package typingsJapgolly.materialUi.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.ComponentClassP
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import japgolly.scalajs.react.facade.React.Component
+import japgolly.scalajs.react.facade.React.ComponentClassP
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.materialUi.MaterialUI.Tabs.TabProps
 import typingsJapgolly.materialUi.MaterialUI.Tabs.TabsProps
-import typingsJapgolly.materialUi.tabsMod.default
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tabs {
-  def apply(
-    className: String = null,
-    contentContainerClassName: String = null,
-    contentContainerStyle: CSSProperties = null,
-    initialSelectedIndex: Int | Double = null,
-    inkBarStyle: CSSProperties = null,
-    onChange: (/* value */ js.Any, /* e */ ReactEventFrom[js.Object with Element], /* tab */ typingsJapgolly.materialUi.MaterialUI.Tabs.Tab) => Callback = null,
-    style: CSSProperties = null,
-    tabItemContainerStyle: CSSProperties = null,
-    tabTemplate: ComponentClassP[js.Object] = null,
-    tabTemplateStyle: CSSProperties = null,
-    value: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TabsProps, default, Unit, TabsProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (contentContainerClassName != null) __obj.updateDynamic("contentContainerClassName")(contentContainerClassName.asInstanceOf[js.Any])
-    if (contentContainerStyle != null) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
-    if (initialSelectedIndex != null) __obj.updateDynamic("initialSelectedIndex")(initialSelectedIndex.asInstanceOf[js.Any])
-    if (inkBarStyle != null) __obj.updateDynamic("inkBarStyle")(inkBarStyle.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3((t0: /* value */ js.Any, t1: /* e */ japgolly.scalajs.react.ReactEventFrom[js.Object with org.scalajs.dom.raw.Element], t2: /* tab */ typingsJapgolly.materialUi.MaterialUI.Tabs.Tab) => onChange(t0, t1, t2).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabItemContainerStyle != null) __obj.updateDynamic("tabItemContainerStyle")(tabItemContainerStyle.asInstanceOf[js.Any])
-    if (tabTemplate != null) __obj.updateDynamic("tabTemplate")(tabTemplate.asInstanceOf[js.Any])
-    if (tabTemplateStyle != null) __obj.updateDynamic("tabTemplateStyle")(tabTemplateStyle.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUi.MaterialUI.Tabs.TabsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUi.tabsMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUi.MaterialUI.Tabs.TabsProps])(children: _*)
-  }
-  @JSImport("material-ui/Tabs", JSImport.Default)
+  @JSImport("material-ui", "Tabs")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.materialUi.mod.Tabs] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def contentContainerClassName(value: String): this.type = set("contentContainerClassName", value.asInstanceOf[js.Any])
+    
+    inline def contentContainerStyle(value: CSSProperties): this.type = set("contentContainerStyle", value.asInstanceOf[js.Any])
+    
+    inline def initialSelectedIndex(value: Double): this.type = set("initialSelectedIndex", value.asInstanceOf[js.Any])
+    
+    inline def inkBarStyle(value: CSSProperties): this.type = set("inkBarStyle", value.asInstanceOf[js.Any])
+    
+    inline def onChange(
+      value: (/* value */ Any, /* e */ ReactEventFrom[js.Object & Element], Component[TabProps & js.Object, js.Object]) => Callback
+    ): this.type = set("onChange", js.Any.fromFunction3((t0: /* value */ Any, t1: /* e */ ReactEventFrom[js.Object & Element], t2: Component[TabProps & js.Object, js.Object]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def tabItemContainerStyle(value: CSSProperties): this.type = set("tabItemContainerStyle", value.asInstanceOf[js.Any])
+    
+    inline def tabTemplate(value: ComponentClassP[Any & js.Object]): this.type = set("tabTemplate", value.asInstanceOf[js.Any])
+    
+    inline def tabTemplateStyle(value: CSSProperties): this.type = set("tabTemplateStyle", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Any): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Tabs.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TabsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -2,70 +2,81 @@ package typingsJapgolly.reactResizable
 
 import typingsJapgolly.reactResizable.mod.Axis
 import typingsJapgolly.reactResizable.mod.ResizeHandle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactResizableStrings {
-  @js.native
-  sealed trait both extends Axis
   
   @js.native
-  sealed trait e extends ResizeHandle
+  sealed trait both
+    extends StObject
+       with Axis
+  inline def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait n extends ResizeHandle
+  sealed trait e
+    extends StObject
+       with ResizeHandle
+  inline def e: e = "e".asInstanceOf[e]
   
   @js.native
-  sealed trait ne extends ResizeHandle
+  sealed trait n
+    extends StObject
+       with ResizeHandle
+  inline def n: n = "n".asInstanceOf[n]
   
   @js.native
-  sealed trait none extends Axis
+  sealed trait ne
+    extends StObject
+       with ResizeHandle
+  inline def ne: ne = "ne".asInstanceOf[ne]
   
   @js.native
-  sealed trait nw extends ResizeHandle
+  sealed trait none
+    extends StObject
+       with Axis
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait s extends ResizeHandle
+  sealed trait nw
+    extends StObject
+       with ResizeHandle
+  inline def nw: nw = "nw".asInstanceOf[nw]
   
   @js.native
-  sealed trait se extends ResizeHandle
+  sealed trait s
+    extends StObject
+       with ResizeHandle
+  inline def s: s = "s".asInstanceOf[s]
   
   @js.native
-  sealed trait sw extends ResizeHandle
+  sealed trait se
+    extends StObject
+       with ResizeHandle
+  inline def se: se = "se".asInstanceOf[se]
   
   @js.native
-  sealed trait w extends ResizeHandle
+  sealed trait sw
+    extends StObject
+       with ResizeHandle
+  inline def sw: sw = "sw".asInstanceOf[sw]
   
   @js.native
-  sealed trait x extends Axis
+  sealed trait w
+    extends StObject
+       with ResizeHandle
+  inline def w: w = "w".asInstanceOf[w]
   
   @js.native
-  sealed trait y extends Axis
+  sealed trait x
+    extends StObject
+       with Axis
+  inline def x: x = "x".asInstanceOf[x]
   
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def e: e = "e".asInstanceOf[e]
-  @scala.inline
-  def n: n = "n".asInstanceOf[n]
-  @scala.inline
-  def ne: ne = "ne".asInstanceOf[ne]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def nw: nw = "nw".asInstanceOf[nw]
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
-  @scala.inline
-  def se: se = "se".asInstanceOf[se]
-  @scala.inline
-  def sw: sw = "sw".asInstanceOf[sw]
-  @scala.inline
-  def w: w = "w".asInstanceOf[w]
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
+  @js.native
+  sealed trait y
+    extends StObject
+       with Axis
+  inline def y: y = "y".asInstanceOf[y]
 }
-

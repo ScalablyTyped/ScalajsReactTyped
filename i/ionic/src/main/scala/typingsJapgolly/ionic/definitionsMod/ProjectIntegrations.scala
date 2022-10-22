@@ -1,27 +1,36 @@
 package typingsJapgolly.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProjectIntegrations extends js.Object {
+trait ProjectIntegrations extends StObject {
+  
   var capacitor: js.UndefOr[ProjectIntegration] = js.undefined
+  
   var cordova: js.UndefOr[ProjectIntegration] = js.undefined
+  
   var enterprise: js.UndefOr[EnterpriseProjectIntegration] = js.undefined
 }
-
 object ProjectIntegrations {
-  @scala.inline
-  def apply(
-    capacitor: ProjectIntegration = null,
-    cordova: ProjectIntegration = null,
-    enterprise: EnterpriseProjectIntegration = null
-  ): ProjectIntegrations = {
+  
+  inline def apply(): ProjectIntegrations = {
     val __obj = js.Dynamic.literal()
-    if (capacitor != null) __obj.updateDynamic("capacitor")(capacitor.asInstanceOf[js.Any])
-    if (cordova != null) __obj.updateDynamic("cordova")(cordova.asInstanceOf[js.Any])
-    if (enterprise != null) __obj.updateDynamic("enterprise")(enterprise.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectIntegrations]
   }
+  
+  extension [Self <: ProjectIntegrations](x: Self) {
+    
+    inline def setCapacitor(value: ProjectIntegration): Self = StObject.set(x, "capacitor", value.asInstanceOf[js.Any])
+    
+    inline def setCapacitorUndefined: Self = StObject.set(x, "capacitor", js.undefined)
+    
+    inline def setCordova(value: ProjectIntegration): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
+    
+    inline def setCordovaUndefined: Self = StObject.set(x, "cordova", js.undefined)
+    
+    inline def setEnterprise(value: EnterpriseProjectIntegration): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    
+    inline def setEnterpriseUndefined: Self = StObject.set(x, "enterprise", js.undefined)
+  }
 }
-

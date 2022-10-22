@@ -1,31 +1,35 @@
 package typingsJapgolly.joi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.joi.mod._SchemaLike because Already inherited
-- typingsJapgolly.joi.mod._Schema because Already inherited */ @js.native
-trait FunctionSchema extends AnySchema {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.joi.mod.Schema because Already inherited */ @js.native
+trait FunctionSchema[TSchema]
+  extends StObject
+     with ObjectSchema[TSchema] {
+  
   /**
     * Specifies the arity of the function where:
     * @param n - the arity expected.
     */
   def arity(n: Double): this.type = js.native
+  
+  /**
+    * Requires the function to be a class.
+    */
+  def `class`(): this.type = js.native
+  
   /**
     * Specifies the minimal arity of the function where:
     * @param n - the minimal arity expected.
     */
   def maxArity(n: Double): this.type = js.native
+  
   /**
     * Specifies the minimal arity of the function where:
     * @param n - the minimal arity expected.
     */
   def minArity(n: Double): this.type = js.native
-  /**
-    * Requires the function to be a Joi reference.
-    */
-  def ref(): this.type = js.native
 }
-

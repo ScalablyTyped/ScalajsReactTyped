@@ -2,18 +2,13 @@ package typingsJapgolly.activexWord.Word
 
 import typingsJapgolly.activexOffice.Office.MsoEditingType
 import typingsJapgolly.activexOffice.Office.MsoSegmentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.FreeformBuilder")
 @js.native
-class FreeformBuilder protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.FreeformBuilder_typekey")
-  var WordDotFreeformBuilder_typekey: FreeformBuilder = js.native
+trait FreeformBuilder extends StObject {
+  
   /**
     * @param number [X2=0]
     * @param number [Y2=0]
@@ -49,7 +44,121 @@ class FreeformBuilder protected () extends js.Object {
     X3: Double,
     Y3: Double
   ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: Double,
+    X3: Unit,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: Unit,
+    X3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: Unit,
+    X3: Double,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: Unit,
+    X3: Unit,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Double,
+    X3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Double,
+    X3: Double,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Double,
+    X3: Unit,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Unit,
+    X3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Unit,
+    X3: Double,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Unit,
+    Y2: Unit,
+    X3: Unit,
+    Y3: Double
+  ): Unit = js.native
+  
+  val Application: typingsJapgolly.activexWord.Word.Application = js.native
+  
   def ConvertToShape(): Shape = js.native
-  def ConvertToShape(Anchor: js.Any): Shape = js.native
+  def ConvertToShape(Anchor: Any): Shape = js.native
+  
+  val Creator: Double = js.native
+  
+  val Parent: Any = js.native
+  
+  /* private */ @JSName("Word.FreeformBuilder_typekey")
+  var WordDotFreeformBuilder_typekey: FreeformBuilder = js.native
 }
-

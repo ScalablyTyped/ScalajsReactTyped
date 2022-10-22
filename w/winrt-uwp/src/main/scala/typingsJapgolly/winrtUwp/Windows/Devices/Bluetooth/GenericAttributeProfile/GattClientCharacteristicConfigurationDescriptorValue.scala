@@ -1,38 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GattClientCharacteristicConfigurationDescriptorValue extends js.Object
-
+sealed trait GattClientCharacteristicConfigurationDescriptorValue extends StObject
 /** Represents the value of the GATT ClientCharacteristicConfigurationDescriptor. */
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattClientCharacteristicConfigurationDescriptorValue")
 @js.native
-object GattClientCharacteristicConfigurationDescriptorValue extends js.Object {
+object GattClientCharacteristicConfigurationDescriptorValue extends StObject {
+  
   /** Characteristic indications are enabled. */
   @js.native
-  sealed trait indicate extends GattClientCharacteristicConfigurationDescriptorValue
+  sealed trait indicate
+    extends StObject
+       with GattClientCharacteristicConfigurationDescriptorValue
   
   /** Neither notification nor indications are enabled. */
   @js.native
-  sealed trait none extends GattClientCharacteristicConfigurationDescriptorValue
+  sealed trait none
+    extends StObject
+       with GattClientCharacteristicConfigurationDescriptorValue
   
   /** Characteristic notifications are enabled. */
   @js.native
-  sealed trait notify extends GattClientCharacteristicConfigurationDescriptorValue
-  
-  /* 1 */ @JSName("notify")
-  val notify_ : notify with Double = js.native
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GattClientCharacteristicConfigurationDescriptorValue with Double] = js.native
-  /* 2 */ @js.native
-  object indicate extends TopLevel[indicate with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  sealed trait notify
+    extends StObject
+       with GattClientCharacteristicConfigurationDescriptorValue
 }
-

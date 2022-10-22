@@ -1,12 +1,14 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeocodedWaypoint extends js.Object {
+trait GeocodedWaypoint extends StObject {
+  
   /** indicates the status code resulting from the geocoding operation. */
   var geocoder_status: GeocodedWaypointStatus
+  
   /**
     * indicates that the geocoder did not return an exact match for the original request, though it was able to match part of the
     * requested address. You may wish to examine the original request for misspellings and/or an incomplete address.
@@ -18,8 +20,10 @@ trait GeocodedWaypoint extends js.Object {
     * Suggestions triggered in this way will also be marked as a partial match.
     */
   var partial_match: Boolean
+  
   /** unique identifier that can be used with other Google APIs. */
   var place_id: String
+  
   /**
     * indicates the *address type* of the geocoding result used for calculating directions.
     *
@@ -27,18 +31,28 @@ trait GeocodedWaypoint extends js.Object {
     */
   var types: js.Array[AddressType]
 }
-
 object GeocodedWaypoint {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     geocoder_status: GeocodedWaypointStatus,
     partial_match: Boolean,
     place_id: String,
     types: js.Array[AddressType]
   ): GeocodedWaypoint = {
     val __obj = js.Dynamic.literal(geocoder_status = geocoder_status.asInstanceOf[js.Any], partial_match = partial_match.asInstanceOf[js.Any], place_id = place_id.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeocodedWaypoint]
   }
+  
+  extension [Self <: GeocodedWaypoint](x: Self) {
+    
+    inline def setGeocoder_status(value: GeocodedWaypointStatus): Self = StObject.set(x, "geocoder_status", value.asInstanceOf[js.Any])
+    
+    inline def setPartial_match(value: Boolean): Self = StObject.set(x, "partial_match", value.asInstanceOf[js.Any])
+    
+    inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
+    
+    inline def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    
+    inline def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value*))
+  }
 }
-

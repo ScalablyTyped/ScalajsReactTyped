@@ -1,58 +1,94 @@
 package typingsJapgolly.egg.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.egg.eggStrings.app
 import typingsJapgolly.egg.eggStrings.ctx
-import typingsJapgolly.eggCore.AnonPath
+import typingsJapgolly.eggCore.anon.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent egg.egg.RemoveSpecProp<egg-core.egg-core.FileLoaderOption, 'inject' | 'target'> */
-trait CustomLoaderConfig extends js.Object {
+trait CustomLoaderConfig extends StObject {
+  
   var call: js.UndefOr[Boolean] = js.undefined
+  
   var caseStyle: js.UndefOr[String | (js.Function1[/* str */ String, js.Array[String]])] = js.undefined
+  
   var directory: String | js.Array[String]
+  
   var filter: js.UndefOr[js.Function1[/* obj */ js.Object, Boolean]] = js.undefined
+  
   var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
-  var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ AnonPath, _]] = js.undefined
+  
+  var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, Any]] = js.undefined
+  
   /**
     * an object you wanner load to, value can only be 'ctx' or 'app'. default to app
     */
   var inject: js.UndefOr[ctx | app] = js.undefined
+  
   /**
     * whether need to load files in plugins or framework, default to false
     */
   var loadunit: js.UndefOr[Boolean] = js.undefined
+  
   var `match`: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var `override`: js.UndefOr[Boolean] = js.undefined
 }
-
 object CustomLoaderConfig {
-  @scala.inline
-  def apply(
-    directory: String | js.Array[String],
-    call: js.UndefOr[Boolean] = js.undefined,
-    caseStyle: String | (js.Function1[/* str */ String, js.Array[String]]) = null,
-    filter: /* obj */ js.Object => CallbackTo[Boolean] = null,
-    ignore: String | js.Array[String] = null,
-    initializer: (/* obj */ js.Object, /* options */ AnonPath) => CallbackTo[js.Any] = null,
-    inject: ctx | app = null,
-    loadunit: js.UndefOr[Boolean] = js.undefined,
-    `match`: String | js.Array[String] = null,
-    `override`: js.UndefOr[Boolean] = js.undefined
-  ): CustomLoaderConfig = {
+  
+  inline def apply(directory: String | js.Array[String]): CustomLoaderConfig = {
     val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any])
-    if (!js.isUndefined(call)) __obj.updateDynamic("call")(call.asInstanceOf[js.Any])
-    if (caseStyle != null) __obj.updateDynamic("caseStyle")(caseStyle.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1((t0: /* obj */ js.Object) => filter(t0).runNow()))
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (initializer != null) __obj.updateDynamic("initializer")(js.Any.fromFunction2((t0: /* obj */ js.Object, t1: /* options */ typingsJapgolly.eggCore.AnonPath) => initializer(t0, t1).runNow()))
-    if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadunit)) __obj.updateDynamic("loadunit")(loadunit.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomLoaderConfig]
   }
+  
+  extension [Self <: CustomLoaderConfig](x: Self) {
+    
+    inline def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+    
+    inline def setCallUndefined: Self = StObject.set(x, "call", js.undefined)
+    
+    inline def setCaseStyle(value: String | (js.Function1[/* str */ String, js.Array[String]])): Self = StObject.set(x, "caseStyle", value.asInstanceOf[js.Any])
+    
+    inline def setCaseStyleFunction1(value: /* str */ String => js.Array[String]): Self = StObject.set(x, "caseStyle", js.Any.fromFunction1(value))
+    
+    inline def setCaseStyleUndefined: Self = StObject.set(x, "caseStyle", js.undefined)
+    
+    inline def setDirectory(value: String | js.Array[String]): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+    
+    inline def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value*))
+    
+    inline def setFilter(value: /* obj */ js.Object => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+    
+    inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
+    
+    inline def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
+    
+    inline def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
+    
+    inline def setInject(value: ctx | app): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+    
+    inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
+    
+    inline def setLoadunit(value: Boolean): Self = StObject.set(x, "loadunit", value.asInstanceOf[js.Any])
+    
+    inline def setLoadunitUndefined: Self = StObject.set(x, "loadunit", js.undefined)
+    
+    inline def setMatch(value: String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    
+    inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value*))
+    
+    inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+  }
 }
-

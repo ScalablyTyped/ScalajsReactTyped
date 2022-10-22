@@ -1,14 +1,17 @@
 package typingsJapgolly.materialUi.components
 
+import typingsJapgolly.materialUi.MaterialUI.SvgIconProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object NotificationSmsFailed
-  extends SharedApply_SvgIconProps_1100155871[typingsJapgolly.materialUi.svgIconsMod.NotificationSmsFailed] {
+object NotificationSmsFailed {
+  
   @JSImport("material-ui/svg-icons", "NotificationSmsFailed")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: NotificationSmsFailed.type): SharedBuilder_SvgIconProps_115160895[typingsJapgolly.materialUi.svgIconsMod.NotificationSmsFailed] = new SharedBuilder_SvgIconProps_115160895[typingsJapgolly.materialUi.svgIconsMod.NotificationSmsFailed](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SvgIconProps): SharedBuilder_SvgIconProps_115160895[typingsJapgolly.materialUi.svgIconsMod.NotificationSmsFailed] = new SharedBuilder_SvgIconProps_115160895[typingsJapgolly.materialUi.svgIconsMod.NotificationSmsFailed](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

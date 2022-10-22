@@ -1,33 +1,66 @@
 package typingsJapgolly.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.std.Event_
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Event
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DragOrder extends js.Object {
-  @JSName("$dragDestroy")
-  var $dragDestroy: Unit = js.native
-  @JSName("$dragMark")
-  var $dragMark: Boolean = js.native
-  @JSName("$dragPos")
-  var $dragPos_Original: WebixCallback = js.native
+trait DragOrder extends StObject {
+  
   @JSName("$drag")
-  def $drag(source: HTMLElement, ev: Event_): String = js.native
+  def $drag(source: HTMLElement, ev: Event): String
+  
+  @JSName("$dragDestroy")
+  var $dragDestroy: Unit
+  
   @JSName("$dragIn")
-  def $dragIn(source: HTMLElement, target: HTMLElement, ev: Event_): HTMLElement = js.native
+  def $dragIn(source: HTMLElement, target: HTMLElement, ev: Event): HTMLElement
+  
+  @JSName("$dragMark")
+  var $dragMark: Boolean
+  
   @JSName("$dragOut")
-  def $dragOut(source: HTMLElement, target: HTMLElement, drop: HTMLElement): Unit = js.native
+  def $dragOut(source: HTMLElement, target: HTMLElement, drop: HTMLElement): Unit
+  
   @JSName("$dragPos")
-  def $dragPos(args: js.Any*): js.Any = js.native
+  def $dragPos(args: Any*): Any
+  @JSName("$dragPos")
+  var $dragPos_Original: WebixCallback
+  
   @JSName("$drop")
-  def $drop(source: HTMLElement, target: HTMLElement, ev: Event_): Unit = js.native
+  def $drop(source: HTMLElement, target: HTMLElement, ev: Event): Unit
 }
-
-@JSGlobal("webix.DragOrder")
-@js.native
-object DragOrder extends TopLevel[DragOrder]
-
+object DragOrder {
+  
+  inline def apply(
+    $drag: (HTMLElement, Event) => String,
+    $dragDestroy: Unit,
+    $dragIn: (HTMLElement, HTMLElement, Event) => HTMLElement,
+    $dragMark: Boolean,
+    $dragOut: (HTMLElement, HTMLElement, HTMLElement) => Callback,
+    $dragPos: WebixCallback,
+    $drop: (HTMLElement, HTMLElement, Event) => Callback
+  ): DragOrder = {
+    val __obj = js.Dynamic.literal($drag = js.Any.fromFunction2($drag), $dragDestroy = $dragDestroy.asInstanceOf[js.Any], $dragIn = js.Any.fromFunction3($dragIn), $dragMark = $dragMark.asInstanceOf[js.Any], $dragOut = js.Any.fromFunction3((t0: HTMLElement, t1: HTMLElement, t2: HTMLElement) => ($dragOut(t0, t1, t2)).runNow()), $dragPos = $dragPos.asInstanceOf[js.Any], $drop = js.Any.fromFunction3((t0: HTMLElement, t1: HTMLElement, t2: Event) => ($drop(t0, t1, t2)).runNow()))
+    __obj.asInstanceOf[DragOrder]
+  }
+  
+  extension [Self <: DragOrder](x: Self) {
+    
+    inline def set$drag(value: (HTMLElement, Event) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction2(value))
+    
+    inline def set$dragDestroy(value: Unit): Self = StObject.set(x, "$dragDestroy", value.asInstanceOf[js.Any])
+    
+    inline def set$dragIn(value: (HTMLElement, HTMLElement, Event) => HTMLElement): Self = StObject.set(x, "$dragIn", js.Any.fromFunction3(value))
+    
+    inline def set$dragMark(value: Boolean): Self = StObject.set(x, "$dragMark", value.asInstanceOf[js.Any])
+    
+    inline def set$dragOut(value: (HTMLElement, HTMLElement, HTMLElement) => Callback): Self = StObject.set(x, "$dragOut", js.Any.fromFunction3((t0: HTMLElement, t1: HTMLElement, t2: HTMLElement) => (value(t0, t1, t2)).runNow()))
+    
+    inline def set$dragPos(value: WebixCallback): Self = StObject.set(x, "$dragPos", value.asInstanceOf[js.Any])
+    
+    inline def set$drop(value: (HTMLElement, HTMLElement, Event) => Callback): Self = StObject.set(x, "$drop", js.Any.fromFunction3((t0: HTMLElement, t1: HTMLElement, t2: Event) => (value(t0, t1, t2)).runNow()))
+  }
+}

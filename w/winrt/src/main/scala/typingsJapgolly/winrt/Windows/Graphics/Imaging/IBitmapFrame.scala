@@ -1,21 +1,23 @@
 package typingsJapgolly.winrt.Windows.Graphics.Imaging
 
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBitmapFrame extends js.Object {
+trait IBitmapFrame extends StObject {
+  
   var bitmapAlphaMode: BitmapAlphaMode = js.native
+  
   var bitmapPixelFormat: BitmapPixelFormat = js.native
+  
   var bitmapProperties: BitmapPropertiesView = js.native
+  
   var dpiX: Double = js.native
+  
   var dpiY: Double = js.native
-  var orientedPixelHeight: Double = js.native
-  var orientedPixelWidth: Double = js.native
-  var pixelHeight: Double = js.native
-  var pixelWidth: Double = js.native
+  
   def getPixelDataAsync(): IAsyncOperation[PixelDataProvider] = js.native
   def getPixelDataAsync(
     pixelFormat: BitmapPixelFormat,
@@ -24,6 +26,14 @@ trait IBitmapFrame extends js.Object {
     exifOrientationMode: ExifOrientationMode,
     colorManagementMode: ColorManagementMode
   ): IAsyncOperation[PixelDataProvider] = js.native
+  
   def getThumbnailAsync(): IAsyncOperation[ImageStream] = js.native
+  
+  var orientedPixelHeight: Double = js.native
+  
+  var orientedPixelWidth: Double = js.native
+  
+  var pixelHeight: Double = js.native
+  
+  var pixelWidth: Double = js.native
 }
-

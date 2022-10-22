@@ -1,27 +1,28 @@
 package typingsJapgolly.arrayPrototypeFlat
 
-import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`0`
-import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`1`
-import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`2`
-import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`3`
-import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`4`
-import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`5`
-import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`6`
-import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`7`
+import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatInts.`0`
+import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatInts.`1`
+import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatInts.`2`
+import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatInts.`3`
+import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatInts.`4`
+import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatInts.`5`
+import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatInts.`6`
+import typingsJapgolly.arrayPrototypeFlat.arrayPrototypeFlatInts.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Array[T] extends js.Object {
+trait Array[T] extends StObject {
+  
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth. If no depth is provided, flat method defaults to the depth of 1.
     *
     * @param depth The maximum recursion depth
     */
-  def flat(): Array[_] = js.native
-  def flat(depth: Double): Array[_] = js.native
+  def flat(): Array[Any] = js.native
+  def flat(depth: Double): Array[Any] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.
@@ -89,4 +90,3 @@ trait Array[T] extends js.Object {
   @JSName("flat")
   def flat_U[U](): Array[U] = js.native
 }
-

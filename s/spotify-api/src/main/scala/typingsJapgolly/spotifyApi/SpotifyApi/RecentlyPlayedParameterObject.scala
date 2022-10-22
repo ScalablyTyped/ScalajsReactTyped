@@ -1,23 +1,36 @@
 package typingsJapgolly.spotifyApi.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RecentlyPlayedParameterObject extends js.Object {
+trait RecentlyPlayedParameterObject extends StObject {
+  
   var after: js.UndefOr[Double] = js.undefined
+  
   var before: js.UndefOr[Double] = js.undefined
+  
   var limit: js.UndefOr[Double] = js.undefined
 }
-
 object RecentlyPlayedParameterObject {
-  @scala.inline
-  def apply(after: Int | Double = null, before: Int | Double = null, limit: Int | Double = null): RecentlyPlayedParameterObject = {
+  
+  inline def apply(): RecentlyPlayedParameterObject = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecentlyPlayedParameterObject]
   }
+  
+  extension [Self <: RecentlyPlayedParameterObject](x: Self) {
+    
+    inline def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    
+    inline def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+  }
 }
-

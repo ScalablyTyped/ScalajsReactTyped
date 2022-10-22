@@ -1,18 +1,19 @@
 package typingsJapgolly.nodegit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit", "Revwalk")
 @js.native
-class Revwalk ()
+open class Revwalk ()
   extends typingsJapgolly.nodegit.revWalkMod.Revwalk
-
 /* static members */
-@JSImport("nodegit", "Revwalk")
-@js.native
-object Revwalk extends js.Object {
-  def create(repo: typingsJapgolly.nodegit.repositoryMod.Repository): typingsJapgolly.nodegit.revWalkMod.Revwalk = js.native
+object Revwalk {
+  
+  @JSImport("nodegit", "Revwalk")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def create(repo: typingsJapgolly.nodegit.repositoryMod.Repository): typingsJapgolly.nodegit.revWalkMod.Revwalk = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.nodegit.revWalkMod.Revwalk]
 }
-

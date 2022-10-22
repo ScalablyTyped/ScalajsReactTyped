@@ -4,19 +4,19 @@
 Typings are for version 14.0
 
 ## Library description:
-SocketCluster - A Highly parallelized WebSocket server cluster to make the most of multi-core machines/instances.
+Highly scalable realtime framework with support for async/await
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | socketcluster |
-| Keywords           | websocket, server, realtime, cluster, scalable |
-| # releases         | 56 |
-| # dependents       | 32 |
-| # downloads        | 966996 |
-| # stars            | 15 |
+| Keywords           | socketcluster, async, await, realtime |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 38659.0 |
+| # stars            | 5960.0 |
 
 ## Links
-- [Homepage](http://socketcluster.io)
+- [Homepage](https://socketcluster.io/)
 - [Bugs](https://github.com/SocketCluster/socketcluster/issues)
 - [Repository](https://github.com/SocketCluster/socketcluster)
 - [Npm](https://www.npmjs.com/package/socketcluster)

@@ -1,25 +1,30 @@
 package typingsJapgolly.angularAnimations.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnimationTransitionMetadata extends AnimationMetadata {
+trait AnimationTransitionMetadata
+  extends StObject
+     with AnimationMetadata {
+  
   /**
     * One or more animation objects to which this transition applies.
     */
   var animation: AnimationMetadata | js.Array[AnimationMetadata]
+  
   /**
     * An expression that describes a state change.
     */
   var expr: String | (js.Function4[
     /* fromState */ String, 
     /* toState */ String, 
-    /* element */ js.UndefOr[js.Any], 
-    /* params */ js.UndefOr[StringDictionary[js.Any]], 
+    /* element */ js.UndefOr[Any], 
+    /* params */ js.UndefOr[StringDictionary[Any]], 
     Boolean
   ])
+  
   /**
     * An options object containing a delay and
     * developer-defined parameters that provide styling defaults and
@@ -27,25 +32,46 @@ trait AnimationTransitionMetadata extends AnimationMetadata {
     */
   var options: AnimationOptions | Null
 }
-
 object AnimationTransitionMetadata {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     animation: AnimationMetadata | js.Array[AnimationMetadata],
     expr: String | (js.Function4[
       /* fromState */ String, 
       /* toState */ String, 
-      /* element */ js.UndefOr[js.Any], 
-      /* params */ js.UndefOr[StringDictionary[js.Any]], 
+      /* element */ js.UndefOr[Any], 
+      /* params */ js.UndefOr[StringDictionary[Any]], 
       Boolean
     ]),
-    `type`: AnimationMetadataType,
-    options: AnimationOptions = null
+    `type`: AnimationMetadataType
   ): AnimationTransitionMetadata = {
-    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any], options = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationTransitionMetadata]
   }
+  
+  extension [Self <: AnimationTransitionMetadata](x: Self) {
+    
+    inline def setAnimation(value: AnimationMetadata | js.Array[AnimationMetadata]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationVarargs(value: AnimationMetadata*): Self = StObject.set(x, "animation", js.Array(value*))
+    
+    inline def setExpr(
+      value: String | (js.Function4[
+          /* fromState */ String, 
+          /* toState */ String, 
+          /* element */ js.UndefOr[Any], 
+          /* params */ js.UndefOr[StringDictionary[Any]], 
+          Boolean
+        ])
+    ): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    
+    inline def setExprFunction4(
+      value: (/* fromState */ String, /* toState */ String, /* element */ js.UndefOr[Any], /* params */ js.UndefOr[StringDictionary[Any]]) => Boolean
+    ): Self = StObject.set(x, "expr", js.Any.fromFunction4(value))
+    
+    inline def setOptions(value: AnimationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsNull: Self = StObject.set(x, "options", null)
+  }
 }
-

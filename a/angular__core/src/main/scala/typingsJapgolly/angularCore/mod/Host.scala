@@ -1,13 +1,12 @@
 package typingsJapgolly.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.angularCore.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Host extends js.Object
-
-@JSImport("@angular/core", "Host")
-@js.native
-object Host extends TopLevel[HostDecorator]
-
+trait Host extends StObject
+object Host {
+  
+  inline def apply: HostDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("Host").asInstanceOf[HostDecorator]
+}

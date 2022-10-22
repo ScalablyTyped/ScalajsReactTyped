@@ -1,149 +1,202 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.AnonScrollToFirstRowOnChange
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.anon.ScrollToFirstRowOnChange
+import typingsJapgolly.antd.anon.`3`
 import typingsJapgolly.antd.antdBooleans.`false`
-import typingsJapgolly.antd.paginationPaginationMod.PaginationConfig
-import typingsJapgolly.antd.sizeContextMod.SizeType
-import typingsJapgolly.antd.spinMod.SpinProps
-import typingsJapgolly.antd.tableInterfaceMod.ColumnsType
-import typingsJapgolly.antd.tableInterfaceMod.SortOrder
-import typingsJapgolly.antd.tableInterfaceMod.SorterResult
-import typingsJapgolly.antd.tableInterfaceMod.TableCurrentDataSource
-import typingsJapgolly.antd.tableInterfaceMod.TableLocale
-import typingsJapgolly.antd.tableInterfaceMod.TablePaginationConfig
-import typingsJapgolly.antd.tableInterfaceMod.TableRowSelection
-import typingsJapgolly.antd.tableTableMod.TableProps
-import typingsJapgolly.rcTable.AnonX
-import typingsJapgolly.rcTable.interfaceMod.ColumnType
-import typingsJapgolly.rcTable.interfaceMod.ExpandableConfig
-import typingsJapgolly.rcTable.interfaceMod.GetRowKey
-import typingsJapgolly.rcTable.interfaceMod.Key
-import typingsJapgolly.rcTable.interfaceMod.RenderExpandIconProps
-import typingsJapgolly.rcTable.interfaceMod.RowClassName
-import typingsJapgolly.rcTable.interfaceMod.TableComponents
-import typingsJapgolly.rcTable.interfaceMod.TableLayout
+import typingsJapgolly.antd.antdStrings.ltr
+import typingsJapgolly.antd.antdStrings.rtl
+import typingsJapgolly.antd.libConfigProviderSizeContextMod.SizeType
+import typingsJapgolly.antd.libSpinMod.SpinProps
+import typingsJapgolly.antd.libTableInterfaceMod.ColumnGroupType
+import typingsJapgolly.antd.libTableInterfaceMod.ColumnType
+import typingsJapgolly.antd.libTableInterfaceMod.ColumnsType
+import typingsJapgolly.antd.libTableInterfaceMod.FilterValue
+import typingsJapgolly.antd.libTableInterfaceMod.SortOrder
+import typingsJapgolly.antd.libTableInterfaceMod.SorterResult
+import typingsJapgolly.antd.libTableInterfaceMod.TableCurrentDataSource
+import typingsJapgolly.antd.libTableInterfaceMod.TableLocale
+import typingsJapgolly.antd.libTableInterfaceMod.TablePaginationConfig
+import typingsJapgolly.antd.libTableInterfaceMod.TableRowSelection
+import typingsJapgolly.antd.libTableTableMod.TableProps
+import typingsJapgolly.antd.libTooltipMod.TooltipProps
+import typingsJapgolly.rcTable.anon.X
+import typingsJapgolly.rcTable.libFooterSummaryMod.SummaryProps
+import typingsJapgolly.rcTable.libInterfaceMod.ExpandableConfig
+import typingsJapgolly.rcTable.libInterfaceMod.GetRowKey
+import typingsJapgolly.rcTable.libInterfaceMod.Key
+import typingsJapgolly.rcTable.libInterfaceMod.RenderExpandIconProps
+import typingsJapgolly.rcTable.libInterfaceMod.RowClassName
+import typingsJapgolly.rcTable.libInterfaceMod.TableComponents
+import typingsJapgolly.rcTable.libInterfaceMod.TableLayout
+import typingsJapgolly.rcTable.libInterfaceMod.TableSticky
+import typingsJapgolly.rcTable.rcTableStrings.bottom
+import typingsJapgolly.rcTable.rcTableStrings.top
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.mod.HTMLAttributes
+import typingsJapgolly.react.mod.TdHTMLAttributes
 import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Table {
-  def apply[RecordType /* <: js.Object */](
-    bordered: js.UndefOr[Boolean] = js.undefined,
-    childrenColumnName: String = null,
-    className: String = null,
-    columns: ColumnsType[RecordType] = null,
-    components: TableComponents[RecordType] = null,
-    dataSource: js.Array[RecordType] = null,
-    defaultExpandAllRows: js.UndefOr[Boolean] = js.undefined,
-    defaultExpandedRowKeys: js.Array[Key] = null,
-    dropdownPrefixCls: String = null,
-    emptyText: Node | js.Function0[Node] = null,
-    expandIcon: /* props */ RenderExpandIconProps[RecordType] => CallbackTo[Node] = null,
-    expandRowByClick: js.UndefOr[Boolean] = js.undefined,
-    expandable: ExpandableConfig[RecordType] = null,
-    expandedRowClassName: (RecordType, /* index */ Double, /* indent */ Double) => CallbackTo[String] = null,
-    expandedRowKeys: js.Array[Key] = null,
-    expandedRowRender: (RecordType, /* index */ Double, /* indent */ Double, /* expanded */ Boolean) => CallbackTo[Node] = null,
-    footer: /* data */ js.Array[RecordType] => CallbackTo[Node] = null,
-    getPopupContainer: /* triggerNode */ HTMLElement => CallbackTo[HTMLElement] = null,
-    id: String = null,
-    indentSize: Int | Double = null,
-    loading: Boolean | SpinProps = null,
-    locale: TableLocale = null,
-    onChange: (/* pagination */ PaginationConfig, /* filters */ Record[String, js.Array[typingsJapgolly.antd.tableInterfaceMod.Key] | Null], /* sorter */ SorterResult[RecordType] | js.Array[SorterResult[RecordType]], /* extra */ TableCurrentDataSource[RecordType]) => Callback = null,
-    onExpand: (/* expanded */ Boolean, RecordType) => Callback = null,
-    onExpandedRowsChange: /* expandedKeys */ js.Array[Key] => Callback = null,
-    onHeaderRow: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => CallbackTo[HTMLAttributes[HTMLElement]] = null,
-    onRow: (RecordType, /* index */ js.UndefOr[Double]) => CallbackTo[HTMLAttributes[HTMLElement]] = null,
-    pagination: `false` | TablePaginationConfig = null,
-    prefixCls: String = null,
-    rowClassName: String | RowClassName[RecordType] = null,
-    rowKey: String | GetRowKey[RecordType] = null,
-    rowSelection: TableRowSelection[RecordType] = null,
-    scroll: js.UndefOr[AnonX] with AnonScrollToFirstRowOnChange = null,
-    showHeader: js.UndefOr[Boolean] = js.undefined,
-    size: SizeType = null,
-    sortDirections: js.Array[SortOrder] = null,
-    style: CSSProperties = null,
-    summary: /* data */ js.Array[RecordType] => CallbackTo[Node] = null,
-    tableLayout: TableLayout = null,
-    title: /* data */ js.Array[RecordType] => CallbackTo[Node] = null,
-    key: js.UndefOr[japgolly.scalajs.react.Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    TableProps[RecordType], 
-    MountedWithRawType[TableProps[RecordType], js.Object, RawMounted[TableProps[RecordType], js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
-    if (childrenColumnName != null) __obj.updateDynamic("childrenColumnName")(childrenColumnName.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultExpandAllRows)) __obj.updateDynamic("defaultExpandAllRows")(defaultExpandAllRows.asInstanceOf[js.Any])
-    if (defaultExpandedRowKeys != null) __obj.updateDynamic("defaultExpandedRowKeys")(defaultExpandedRowKeys.asInstanceOf[js.Any])
-    if (dropdownPrefixCls != null) __obj.updateDynamic("dropdownPrefixCls")(dropdownPrefixCls.asInstanceOf[js.Any])
-    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
-    if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.rcTable.interfaceMod.RenderExpandIconProps[RecordType]) => expandIcon(t0).runNow()))
-    if (!js.isUndefined(expandRowByClick)) __obj.updateDynamic("expandRowByClick")(expandRowByClick.asInstanceOf[js.Any])
-    if (expandable != null) __obj.updateDynamic("expandable")(expandable.asInstanceOf[js.Any])
-    if (expandedRowClassName != null) __obj.updateDynamic("expandedRowClassName")(js.Any.fromFunction3((t0: RecordType, t1: /* index */ scala.Double, t2: /* indent */ scala.Double) => expandedRowClassName(t0, t1, t2).runNow()))
-    if (expandedRowKeys != null) __obj.updateDynamic("expandedRowKeys")(expandedRowKeys.asInstanceOf[js.Any])
-    if (expandedRowRender != null) __obj.updateDynamic("expandedRowRender")(js.Any.fromFunction4((t0: RecordType, t1: /* index */ scala.Double, t2: /* indent */ scala.Double, t3: /* expanded */ scala.Boolean) => expandedRowRender(t0, t1, t2, t3).runNow()))
-    if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction1((t0: /* data */ js.Array[RecordType]) => footer(t0).runNow()))
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1((t0: /* triggerNode */ org.scalajs.dom.raw.HTMLElement) => getPopupContainer(t0).runNow()))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (indentSize != null) __obj.updateDynamic("indentSize")(indentSize.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction4((t0: /* pagination */ typingsJapgolly.antd.paginationPaginationMod.PaginationConfig, t1: /* filters */ typingsJapgolly.std.Record[
-  java.lang.String, 
-  js.Array[typingsJapgolly.antd.tableInterfaceMod.Key] | scala.Null], t2: /* sorter */ typingsJapgolly.antd.tableInterfaceMod.SorterResult[RecordType] | js.Array[typingsJapgolly.antd.tableInterfaceMod.SorterResult[RecordType]], t3: /* extra */ typingsJapgolly.antd.tableInterfaceMod.TableCurrentDataSource[RecordType]) => onChange(t0, t1, t2, t3).runNow()))
-    if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2((t0: /* expanded */ scala.Boolean, t1: RecordType) => onExpand(t0, t1).runNow()))
-    if (onExpandedRowsChange != null) __obj.updateDynamic("onExpandedRowsChange")(js.Any.fromFunction1((t0: /* expandedKeys */ js.Array[typingsJapgolly.rcTable.interfaceMod.Key]) => onExpandedRowsChange(t0).runNow()))
-    if (onHeaderRow != null) __obj.updateDynamic("onHeaderRow")(js.Any.fromFunction2((t0: js.Array[typingsJapgolly.rcTable.interfaceMod.ColumnType[RecordType]], t1: /* index */ js.UndefOr[scala.Double]) => onHeaderRow(t0, t1).runNow()))
-    if (onRow != null) __obj.updateDynamic("onRow")(js.Any.fromFunction2((t0: RecordType, t1: /* index */ js.UndefOr[scala.Double]) => onRow(t0, t1).runNow()))
-    if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (rowClassName != null) __obj.updateDynamic("rowClassName")(rowClassName.asInstanceOf[js.Any])
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
-    if (rowSelection != null) __obj.updateDynamic("rowSelection")(rowSelection.asInstanceOf[js.Any])
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(js.Any.fromFunction1((t0: /* data */ js.Array[RecordType]) => summary(t0).runNow()))
-    if (tableLayout != null) __obj.updateDynamic("tableLayout")(tableLayout.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(js.Any.fromFunction1((t0: /* data */ js.Array[RecordType]) => title(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.tableTableMod.TableProps[RecordType], 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.tableTableMod.TableProps[RecordType]])(children: _*)
+  inline def apply[RecordType /* <: js.Object */](): Builder[RecordType] = {
+    val __props = js.Dynamic.literal()
+    new Builder[RecordType](js.Array(this.component, __props.asInstanceOf[`3` & TableProps[RecordType]]))
   }
-  @JSImport("antd/lib/table", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object Table {
+    
+    @JSImport("antd", "Table.Summary")
+    @js.native
+    val component: js.Object = js.native
+    
+    @scala.inline
+    open class Builder (val args: js.Array[Any])
+      extends AnyVal
+         with StBuildingComponent[js.Object] {
+      
+      inline def fixed(value: Boolean | top | bottom): this.type = set("fixed", value.asInstanceOf[js.Any])
+    }
+    
+    implicit def make(companion: Table.type): typingsJapgolly.antd.components.Table.Table.Builder = new typingsJapgolly.antd.components.Table.Table.Builder(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: SummaryProps): typingsJapgolly.antd.components.Table.Table.Builder = new typingsJapgolly.antd.components.Table.Table.Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  @JSImport("antd", "Table")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder[RecordType /* <: js.Object */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[HTMLDivElement] {
+    
+    inline def bordered(value: Boolean): this.type = set("bordered", value.asInstanceOf[js.Any])
+    
+    inline def caption(value: String | japgolly.scalajs.react.facade.React.Node): this.type = set("caption", value.asInstanceOf[js.Any])
+    
+    inline def captionNull: this.type = set("caption", null)
+    
+    inline def captionVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("caption", js.Array(value*))
+    
+    inline def captionVdomElement(value: VdomElement): this.type = set("caption", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def childrenColumnName(value: String): this.type = set("childrenColumnName", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def columns(value: ColumnsType[RecordType]): this.type = set("columns", value.asInstanceOf[js.Any])
+    
+    inline def columnsVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): this.type = set("columns", js.Array(value*))
+    
+    inline def components(value: TableComponents[RecordType]): this.type = set("components", value.asInstanceOf[js.Any])
+    
+    inline def dataSource(value: js.Array[RecordType]): this.type = set("dataSource", value.asInstanceOf[js.Any])
+    
+    inline def dataSourceVarargs(value: RecordType*): this.type = set("dataSource", js.Array(value*))
+    
+    inline def defaultExpandAllRows(value: Boolean): this.type = set("defaultExpandAllRows", value.asInstanceOf[js.Any])
+    
+    inline def defaultExpandedRowKeys(value: js.Array[Key]): this.type = set("defaultExpandedRowKeys", value.asInstanceOf[js.Any])
+    
+    inline def defaultExpandedRowKeysVarargs(value: Key*): this.type = set("defaultExpandedRowKeys", js.Array(value*))
+    
+    inline def direction(value: ltr | rtl): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def dropdownPrefixCls(value: String): this.type = set("dropdownPrefixCls", value.asInstanceOf[js.Any])
+    
+    inline def expandIcon(value: /* props */ RenderExpandIconProps[RecordType] => japgolly.scalajs.react.facade.React.Node): this.type = set("expandIcon", js.Any.fromFunction1(value))
+    
+    inline def expandIconColumnIndex(value: Double): this.type = set("expandIconColumnIndex", value.asInstanceOf[js.Any])
+    
+    inline def expandRowByClick(value: Boolean): this.type = set("expandRowByClick", value.asInstanceOf[js.Any])
+    
+    inline def expandable(value: ExpandableConfig[RecordType]): this.type = set("expandable", value.asInstanceOf[js.Any])
+    
+    inline def expandedRowClassName(value: (RecordType, /* index */ Double, /* indent */ Double) => String): this.type = set("expandedRowClassName", js.Any.fromFunction3(value))
+    
+    inline def expandedRowKeys(value: js.Array[Key]): this.type = set("expandedRowKeys", value.asInstanceOf[js.Any])
+    
+    inline def expandedRowKeysVarargs(value: Key*): this.type = set("expandedRowKeys", js.Array(value*))
+    
+    inline def expandedRowRender(
+      value: (RecordType, /* index */ Double, /* indent */ Double, /* expanded */ Boolean) => japgolly.scalajs.react.facade.React.Node
+    ): this.type = set("expandedRowRender", js.Any.fromFunction4(value))
+    
+    inline def footer(value: /* data */ js.Array[RecordType] => japgolly.scalajs.react.facade.React.Node): this.type = set("footer", js.Any.fromFunction1(value))
+    
+    inline def getPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): this.type = set("getPopupContainer", js.Any.fromFunction1(value))
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def indentSize(value: Double): this.type = set("indentSize", value.asInstanceOf[js.Any])
+    
+    inline def loading(value: Boolean | SpinProps): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def locale(value: TableLocale): this.type = set("locale", value.asInstanceOf[js.Any])
+    
+    inline def onChange(
+      value: (/* pagination */ TablePaginationConfig, /* filters */ Record[String, FilterValue | Null], /* sorter */ SorterResult[RecordType] | js.Array[SorterResult[RecordType]], /* extra */ TableCurrentDataSource[RecordType]) => Callback
+    ): this.type = set("onChange", js.Any.fromFunction4((t0: /* pagination */ TablePaginationConfig, t1: /* filters */ Record[String, FilterValue | Null], t2: /* sorter */ SorterResult[RecordType] | js.Array[SorterResult[RecordType]], t3: /* extra */ TableCurrentDataSource[RecordType]) => (value(t0, t1, t2, t3)).runNow()))
+    
+    inline def onExpand(value: (/* expanded */ Boolean, RecordType) => Callback): this.type = set("onExpand", js.Any.fromFunction2((t0: /* expanded */ Boolean, t1: RecordType) => (value(t0, t1)).runNow()))
+    
+    inline def onExpandedRowsChange(value: /* expandedKeys */ js.Array[Key] => Callback): this.type = set("onExpandedRowsChange", js.Any.fromFunction1((t0: /* expandedKeys */ js.Array[Key]) => value(t0).runNow()))
+    
+    inline def onHeaderRow(
+      value: (js.Array[typingsJapgolly.rcTable.libInterfaceMod.ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any]
+    ): this.type = set("onHeaderRow", js.Any.fromFunction2(value))
+    
+    inline def onRow(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any]): this.type = set("onRow", js.Any.fromFunction2(value))
+    
+    inline def pagination(value: `false` | TablePaginationConfig): this.type = set("pagination", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def rowClassName(value: String | RowClassName[RecordType]): this.type = set("rowClassName", value.asInstanceOf[js.Any])
+    
+    inline def rowClassNameFunction3(value: (RecordType, /* index */ Double, /* indent */ Double) => String): this.type = set("rowClassName", js.Any.fromFunction3(value))
+    
+    inline def rowKey(value: String | GetRowKey[RecordType]): this.type = set("rowKey", value.asInstanceOf[js.Any])
+    
+    inline def rowKeyFunction2(value: (RecordType, /* index */ js.UndefOr[Double]) => Key): this.type = set("rowKey", js.Any.fromFunction2(value))
+    
+    inline def rowSelection(value: TableRowSelection[RecordType]): this.type = set("rowSelection", value.asInstanceOf[js.Any])
+    
+    inline def scroll(value: js.UndefOr[X] & ScrollToFirstRowOnChange): this.type = set("scroll", value.asInstanceOf[js.Any])
+    
+    inline def showHeader(value: Boolean): this.type = set("showHeader", value.asInstanceOf[js.Any])
+    
+    inline def showSorterTooltip(value: Boolean | TooltipProps): this.type = set("showSorterTooltip", value.asInstanceOf[js.Any])
+    
+    inline def size(value: SizeType): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def sortDirections(value: js.Array[SortOrder]): this.type = set("sortDirections", value.asInstanceOf[js.Any])
+    
+    inline def sortDirectionsVarargs(value: SortOrder*): this.type = set("sortDirections", js.Array(value*))
+    
+    inline def sticky(value: Boolean | TableSticky): this.type = set("sticky", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def summary(value: /* data */ js.Array[RecordType] => japgolly.scalajs.react.facade.React.Node): this.type = set("summary", js.Any.fromFunction1(value))
+    
+    inline def tableLayout(value: TableLayout): this.type = set("tableLayout", value.asInstanceOf[js.Any])
+    
+    inline def title(value: /* data */ js.Array[RecordType] => japgolly.scalajs.react.facade.React.Node): this.type = set("title", js.Any.fromFunction1(value))
+  }
+  
+  implicit def make[RecordType /* <: js.Object */](companion: Table.type): Builder[RecordType] = new Builder[RecordType](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps[RecordType /* <: js.Object */](p: `3` & TableProps[RecordType]): Builder[RecordType] = new Builder[RecordType](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

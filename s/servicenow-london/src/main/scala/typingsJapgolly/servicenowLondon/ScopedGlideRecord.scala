@@ -2,13 +2,14 @@ package typingsJapgolly.servicenowLondon
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScopedGlideRecord
-  extends /* fieldName */ StringDictionary[js.Any]
+  extends StObject
+     with /* fieldName */ StringDictionary[Any]
      with /**
   * Creates an instance of the GlideRecord class for the specified table.
   *
@@ -18,13 +19,7 @@ trait ScopedGlideRecord
   * var gr = new GlideRecord('incident');
   */
 Instantiable1[/* tableName */ String, ScopedGlideRecord] {
-  val sys_created_by: String with ScopedGlideElement = js.native
-  val sys_created_on: GlideDateTime with ScopedGlideElement = js.native
-  val sys_id: String with ScopedGlideElement = js.native
-  val sys_mod_count: Double with ScopedGlideElement = js.native
-  val sys_updated_by: String with ScopedGlideElement = js.native
-  val sys_updated_on: GlideDateTime with ScopedGlideElement = js.native
-  var variables: StringDictionary[js.Any] = js.native
+  
   /**
     * Moves to the next record in the GlideRecord. Provides the same functionality as next(), it is
     * intended to be used in cases where the GlideRecord has a column named next.
@@ -39,6 +34,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def _next(): Boolean = js.native
+  
   /**
     * Identical to query(). This method is intended to be used on tables where there is a column
     * named query, which would interfere with using the query() method.
@@ -55,7 +51,9 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     */
   def _query(): Unit = js.native
   def _query(name: String): Unit = js.native
-  def _query(name: String, value: js.Any): Unit = js.native
+  def _query(name: String, value: Any): Unit = js.native
+  def _query(name: Unit, value: Any): Unit = js.native
+  
   /**
     * Adds a filter to return active records.
     *
@@ -67,6 +65,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * inc.query();
     */
   def addActiveQuery(): ScopedQueryCondition = js.native
+  
   /**
     * Adds an encoded query to other queries that may have been set.
     *
@@ -82,6 +81,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def addEncodedQuery(query: String): Unit = js.native
+  
   /**
     * Applies a pre-defined GlideDBFunctionBuilder object to a record.
     *
@@ -104,6 +104,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     *
     */
   def addFunction(fun: String): Unit = js.native
+  
   /**
     * Adds a filter to return records based on a relationship in a related table.
     *
@@ -142,6 +143,8 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
   def addJoinQuery(joinTable: String): ScopedQueryCondition = js.native
   def addJoinQuery(joinTable: String, primaryField: String): ScopedQueryCondition = js.native
   def addJoinQuery(joinTable: String, primaryField: String, joinTableField: String): ScopedQueryCondition = js.native
+  def addJoinQuery(joinTable: String, primaryField: Unit, joinTableField: String): ScopedQueryCondition = js.native
+  
   /**
     * A filter that specifies records where the value of the field passed in the parameter is not
     * null.
@@ -160,6 +163,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def addNotNullQuery(fieldName: String): ScopedQueryCondition = js.native
+  
   /**
     * Adds a filter to return records where the value of the specified field is null.
     *
@@ -176,6 +180,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def addNullQuery(fieldName: String): ScopedQueryCondition = js.native
+  
   /**
     * Provides the ability to build a request, which when executed, returns the rows from the
     * specified table, that match the request.
@@ -226,7 +231,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     *   //do something....
     * }
     */
-  def addQuery(name: String, operator: QueryOperator, value: js.Any): ScopedQueryCondition = js.native
+  def addQuery(name: String, operator: QueryOperator, value: Any): ScopedQueryCondition = js.native
   /**
     * Provides the ability to build a request, which when executed, returns the rows from the
     * specified table, that match the request.
@@ -245,7 +250,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     *   rec.update();
     * }
     */
-  def addQuery(name: String, value: js.Any): ScopedQueryCondition = js.native
+  def addQuery(name: String, value: Any): ScopedQueryCondition = js.native
   /**
     * Adds a filter to return records using an encoded query string.
     *
@@ -263,6 +268,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def addQuery(query: String): ScopedQueryCondition = js.native
+  
   /**
     * Determines if the Access Control Rules, which include the user's roles, permit
     * inserting new records in this table.
@@ -275,6 +281,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(gr.canCreate());
     */
   def canCreate(): Boolean = js.native
+  
   /**
     * Determines if the Access Control Rules, which include the user's roles, permit deleting
     * records in this table.
@@ -286,6 +293,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(att.canDelete());
     */
   def canDelete(): Boolean = js.native
+  
   /**
     * Determines if the Access Control Rules, which include the user's roles, permit reading
     * records in this table.
@@ -297,6 +305,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(gr.canRead());
     */
   def canRead(): Boolean = js.native
+  
   /**
     * Determines if the Access Control Rules, which include the user's roles, permit editing
     * records in this table.
@@ -308,6 +317,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(gr.canWrite());
     */
   def canWrite(): Boolean = js.native
+  
   /**
     * Sets a range of rows to be returned by subsequent queries.
     *
@@ -327,6 +337,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     */
   def chooseWindow(firstRow: Double, lastRow: Double): Unit = js.native
   def chooseWindow(firstRow: Double, lastRow: Double, forceCount: Boolean): Unit = js.native
+  
   /**
     * Returns the number of milliseconds since January 1, 1970, 00:00:00 GMT for a duration field.
     * Does not require the creation of a GlideDateTime object because the duration field is already a
@@ -340,6 +351,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(inc.calendar_duration.dateNumericValue());
     */
   def dateNumericValue(): Double = js.native
+  
   /**
     * Deletes multiple records that satisfy the query condition.
     *
@@ -350,6 +362,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gr.deleteMultiple();
     */
   def deleteMultiple(): Unit = js.native
+  
   /**
     * Deletes the current record.
     *
@@ -363,6 +376,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gr.deleteRecord();
     */
   def deleteRecord(): Boolean = js.native
+  
   /**
     * Defines a GlideRecord based on the specified expression of 'name = value'.
     *
@@ -380,6 +394,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     */
   def get(name: String): Boolean = js.native
   def get(name: String, value: String): Boolean = js.native
+  
   /**
     * Returns the dictionary attributes for the specified field.
     *
@@ -398,12 +413,14 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def getAttribute(fieldName: String): String = js.native
+  
   /**
     * Returns the table's label.
     *
     * @returns Table's label
     */
   def getClassDisplayValue(): String = js.native
+  
   /**
     * Retrieves the display value for the current record.
     *
@@ -416,6 +433,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     */
   def getDisplayValue(): String = js.native
   def getDisplayValue(field: String): String = js.native
+  
   /**
     * Returns the element's descriptor.
     *
@@ -428,6 +446,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * // Incident
     */
   def getED(): ScopedElementDescriptor = js.native
+  
   /**
     * Retrieves the GlideElement object for the specified field.
     *
@@ -443,12 +462,14 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(gr.getElement('short_description'));
     */
   def getElement(columnName: String): ScopedGlideElement = js.native
+  
   /**
     * Returns an array of GlideElements for the current record.
     *
     * @returns The array of GlideElements for the current record.
     */
   def getElements(): js.Array[ScopedGlideElement] = js.native
+  
   /**
     * Retrieves the query condition of the current result set as an encoded query string.
     *
@@ -463,6 +484,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(encodedQuery);
     */
   def getEncodedQuery(): String = js.native
+  
   /**
     * Returns the field's label.
     *
@@ -474,6 +496,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * // Incident
     */
   def getLabel(): String = js.native
+  
   /**
     * Retrieves the last error message. If there is no last error message, null is returned.
     *
@@ -487,6 +510,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(errormessage);
     */
   def getLastErrorMessage(): String = js.native
+  
   /**
     * Retrieves a link to the current record.
     *
@@ -503,6 +527,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(gs.getProperty('glide.servlet.uri') + gr.getLink(false));
     */
   def getLink(noStack: Boolean): String = js.native
+  
   /**
     * Retrieves the class name for the current record.
     *
@@ -514,6 +539,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(recordClassName);
     */
   def getRecordClassName(): String = js.native
+  
   /**
     * Retrieves the number of rows in the query result.
     *
@@ -525,6 +551,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info("Records in incident table: " + gr.getRowCount());
     */
   def getRowCount(): Double = js.native
+  
   /**
     * Retrieves the name of the table associated with the GlideRecord.
     *
@@ -535,6 +562,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(gr.getTableName());
     */
   def getTableName(): String = js.native
+  
   /**
     * Gets the primary key of the record, which is usually the sys_id unless otherwise
     * specified.
@@ -549,6 +577,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(uniqueid);
     */
   def getUniqueValue(): String = js.native
+  
   /**
     * Retrieves the string value of an underlying element in a field.
     *
@@ -563,6 +592,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(gr.getValue('number'));
     */
   def getValue(name: String): String = js.native
+  
   /**
     * Determines if there are any more records in the GlideRecord object.
     *
@@ -576,6 +606,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def hasNext(): Boolean = js.native
+  
   /**
     * Creates an empty record suitable for population before an insert.
     *
@@ -588,6 +619,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gr.insert();
     */
   def initialize(): Unit = js.native
+  
   /**
     * Inserts a new record using the field values that have been set for the current record.
     *
@@ -601,6 +633,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gr.insert();
     */
   def insert(): String = js.native
+  
   /**
     * Checks to see if the current database action is to be aborted.
     *
@@ -611,6 +644,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(gr.isActionAborted());
     */
   def isActionAborted(): Boolean = js.native
+  
   /**
     * Checks if the current record is a new record that has not yet been inserted into the database.
     *
@@ -622,6 +656,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(gr.isNewRecord());
     */
   def isNewRecord(): Boolean = js.native
+  
   /**
     * Determines if the table exists.
     *
@@ -635,6 +670,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(anotherGr.isValid());
     */
   def isValid(): Boolean = js.native
+  
   /**
     * Determines if the specified field is defined in the current table.
     *
@@ -647,6 +683,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(gr.isValidField("short_description"));
     */
   def isValidField(columnName: String): Boolean = js.native
+  
   /**
     * Determines if current record is a valid record.
     *
@@ -661,6 +698,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(rec.isValidRecord());
     */
   def isValidRecord(): Boolean = js.native
+  
   /**
     * Creates a new GlideRecord record, sets the default values for the fields, and assigns a unique
     * ID to the record.
@@ -672,6 +710,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(gr.isNewRecord());
     */
   def newRecord(): Unit = js.native
+  
   /**
     * Moves to the next record in the GlideRecord object.
     *
@@ -686,6 +725,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def next(): Boolean = js.native
+  
   /**
     * Retrieves the current operation being performed, such as insert, update, or delete.
     *
@@ -696,6 +736,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info("current operation " + current.operation());
     */
   def operation(): GlideRecordOperation = js.native
+  
   /**
     * Specifies an orderBy column.
     *
@@ -712,6 +753,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def orderBy(name: String): Unit = js.native
+  
   /**
     * Specifies a decending orderBy column.
     *
@@ -728,6 +770,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def orderByDesc(name: String): Unit = js.native
+  
   /**
     * Runs the query against the table based on the filters specified by addQuery, addEncodedQuery,
     * etc.
@@ -748,7 +791,9 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     */
   def query(): Unit = js.native
   def query(field: String): Unit = js.native
-  def query(field: String, value: js.Any): Unit = js.native
+  def query(field: String, value: Any): Unit = js.native
+  def query(field: Unit, value: Any): Unit = js.native
+  
   /**
     * Sets a flag to indicate if the next database action (insert, update, delete) is to be aborted.
     * This is often used in business rules.
@@ -762,6 +807,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def setAbortAction(b: Boolean): Unit = js.native
+  
   /**
     * Scoped API docs include `setDateNumericValue` but it is not a valid method.
     * When called, it throws:
@@ -781,6 +827,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gr.query(); // this retrieves latest 10 incident records created
     */
   def setLimit(maxNumRecords: Double): Unit = js.native
+  
   /**
     * Sets sys_id value for the current record.
     *
@@ -794,6 +841,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gs.info(gr.sys_id);
     */
   def setNewGuidValue(guid: String): Unit = js.native
+  
   /**
     * Sets the value of the field with the specified name to the specified value.
     *
@@ -807,7 +855,8 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gr.setValue(elementName, "My DB is not working");
     * gr.insert();
     */
-  def setValue(name: String, value: js.Any): Unit = js.native
+  def setValue(name: String, value: Any): Unit = js.native
+  
   /**
     * Enables or disables the running of business rules, script engines, and audit.
     *
@@ -820,6 +869,19 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gr.setWorkflow(true);
     */
   def setWorkflow(enable: Boolean): Unit = js.native
+  
+  val sys_created_by: String & ScopedGlideElement = js.native
+  
+  val sys_created_on: GlideDateTime & ScopedGlideElement = js.native
+  
+  val sys_id: String & ScopedGlideElement = js.native
+  
+  val sys_mod_count: Double & ScopedGlideElement = js.native
+  
+  val sys_updated_by: String & ScopedGlideElement = js.native
+  
+  val sys_updated_on: GlideDateTime & ScopedGlideElement = js.native
+  
   /**
     * Updates the GlideRecord with any changes that have been made. If the record does not already
     * exist, it is inserted.
@@ -836,6 +898,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     */
   def update(): String = js.native
   def update(reason: String): String = js.native
+  
   /**
     * Updates each GlideRecord in the list with any changes that have been made.
     *
@@ -849,5 +912,6 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gr.updateMultiple();
     */
   def updateMultiple(): Unit = js.native
+  
+  var variables: StringDictionary[Any] = js.native
 }
-

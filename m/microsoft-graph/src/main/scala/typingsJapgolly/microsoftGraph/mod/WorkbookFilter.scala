@@ -1,21 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookFilter extends Entity {
+trait WorkbookFilter
+  extends StObject
+     with Entity {
+  
   // The currently applied filter on the given column. Read-only.
-  var criteria: js.UndefOr[WorkbookFilterCriteria] = js.undefined
+  var criteria: js.UndefOr[NullableOption[WorkbookFilterCriteria]] = js.undefined
 }
-
 object WorkbookFilter {
-  @scala.inline
-  def apply(criteria: WorkbookFilterCriteria = null, id: String = null): WorkbookFilter = {
+  
+  inline def apply(): WorkbookFilter = {
     val __obj = js.Dynamic.literal()
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookFilter]
   }
+  
+  extension [Self <: WorkbookFilter](x: Self) {
+    
+    inline def setCriteria(value: NullableOption[WorkbookFilterCriteria]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    
+    inline def setCriteriaNull: Self = StObject.set(x, "criteria", null)
+    
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+  }
 }
-

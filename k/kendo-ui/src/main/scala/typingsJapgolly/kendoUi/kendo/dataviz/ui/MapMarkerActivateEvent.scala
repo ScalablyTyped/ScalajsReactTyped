@@ -2,29 +2,33 @@ package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.kendoUi.kendo.dataviz.map.Marker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapMarkerActivateEvent extends MapEvent {
+trait MapMarkerActivateEvent
+  extends StObject
+     with MapEvent {
+  
   var layer: js.UndefOr[Marker] = js.undefined
+  
   var marker: js.UndefOr[Marker] = js.undefined
 }
-
 object MapMarkerActivateEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Map,
-    layer: Marker = null,
-    marker: Marker = null
-  ): MapMarkerActivateEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Map): MapMarkerActivateEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapMarkerActivateEvent]
   }
+  
+  extension [Self <: MapMarkerActivateEvent](x: Self) {
+    
+    inline def setLayer(value: Marker): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    
+    inline def setMarker(value: Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+  }
 }
-

@@ -1,30 +1,21 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
-import typingsJapgolly.std.stdStrings.orientationchange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides special properties (beyond those inherited from the regular HTMLElement interface) for manipulating <body> elements. */
 @js.native
 trait HTMLBodyElement
-  extends HTMLElement
+  extends StObject
+     with HTMLElement
      with WindowEventHandlers {
+  
   /** @deprecated */
+  /* standard dom */
   var aLink: java.lang.String = js.native
-  /** @deprecated */
-  var background: java.lang.String = js.native
-  /** @deprecated */
-  var bgColor: java.lang.String = js.native
-  /** @deprecated */
-  var link: java.lang.String = js.native
-  /** @deprecated */
-  var onorientationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  /** @deprecated */
-  var text: java.lang.String = js.native
-  /** @deprecated */
-  var vLink: java.lang.String = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -35,47 +26,36 @@ trait HTMLBodyElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_orientationchange(`type`: orientationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_orientationchange(
-    `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_orientationchange(
-    `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
+  
+  /** @deprecated */
+  /* standard dom */
+  var background: java.lang.String = js.native
+  
+  /** @deprecated */
+  /* standard dom */
+  var bgColor: java.lang.String = js.native
+  
+  /** @deprecated */
+  /* standard dom */
+  var link: java.lang.String = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,
     listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
+    options: org.scalajs.dom.EventListenerOptions
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_orientationchange(`type`: orientationchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_orientationchange(
-    `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_orientationchange(
-    `type`: orientationchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: EventListenerOptions
-  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  
+  /** @deprecated */
+  /* standard dom */
+  var text: java.lang.String = js.native
+  
+  /** @deprecated */
+  /* standard dom */
+  var vLink: java.lang.String = js.native
 }
-
-@JSGlobal("HTMLBodyElement")
-@js.native
-object HTMLBodyElement extends Instantiable0[HTMLBodyElement]
-

@@ -10,10 +10,10 @@ ES6 template string helper for deindentation
 | ------------------ | :-------------: |
 | Full name          | deindent |
 | Keywords           | es6, template, strings, indendation, dedent |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 170658 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 23165.0 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/deanlandolt/deindent)

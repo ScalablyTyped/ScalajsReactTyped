@@ -1,8 +1,8 @@
 package typingsJapgolly.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.yandexMaps.yandexMapsStrings.smallMapDefaultSet
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.yandexMaps.yandexMapsStrings.largeMapDefaultSet
   - typingsJapgolly.yandexMaps.yandexMapsStrings.default
 */
-trait ControlSetKey extends js.Object
-
+trait ControlSetKey extends StObject
 object ControlSetKey {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def default: typingsJapgolly.yandexMaps.yandexMapsStrings.default = this.cast("default")
-  @scala.inline
-  def largeMapDefaultSet: typingsJapgolly.yandexMaps.yandexMapsStrings.largeMapDefaultSet = this.cast("largeMapDefaultSet")
-  @scala.inline
-  def mediumMapDefaultSet: typingsJapgolly.yandexMaps.yandexMapsStrings.mediumMapDefaultSet = this.cast("mediumMapDefaultSet")
-  @scala.inline
-  def smallMapDefaultSet: typingsJapgolly.yandexMaps.yandexMapsStrings.smallMapDefaultSet = this.cast("smallMapDefaultSet")
+  
+  inline def default: typingsJapgolly.yandexMaps.yandexMapsStrings.default = "default".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.default]
+  
+  inline def largeMapDefaultSet: typingsJapgolly.yandexMaps.yandexMapsStrings.largeMapDefaultSet = "largeMapDefaultSet".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.largeMapDefaultSet]
+  
+  inline def mediumMapDefaultSet: typingsJapgolly.yandexMaps.yandexMapsStrings.mediumMapDefaultSet = "mediumMapDefaultSet".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.mediumMapDefaultSet]
+  
+  inline def smallMapDefaultSet: typingsJapgolly.yandexMaps.yandexMapsStrings.smallMapDefaultSet = "smallMapDefaultSet".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.smallMapDefaultSet]
 }
-

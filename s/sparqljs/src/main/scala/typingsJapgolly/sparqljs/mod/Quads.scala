@@ -1,29 +1,25 @@
 package typingsJapgolly.sparqljs.mod
 
-import typingsJapgolly.sparqljs.sparqljsStrings.bgp
-import typingsJapgolly.sparqljs.sparqljsStrings.graph
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.sparqljs.mod.BgpPattern
   - typingsJapgolly.sparqljs.mod.GraphQuads
 */
-trait Quads extends js.Object
-
+trait Quads extends StObject
 object Quads {
-  @scala.inline
-  def BgpPattern(triples: js.Array[Triple], `type`: bgp): Quads = {
+  
+  inline def BgpPattern(triples: js.Array[Triple]): typingsJapgolly.sparqljs.mod.BgpPattern = {
     val __obj = js.Dynamic.literal(triples = triples.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Quads]
+    __obj.updateDynamic("type")("bgp")
+    __obj.asInstanceOf[typingsJapgolly.sparqljs.mod.BgpPattern]
   }
-  @scala.inline
-  def GraphQuads(name: Term, triples: js.Array[Triple], `type`: graph): Quads = {
+  
+  inline def GraphQuads(name: IriTerm, triples: js.Array[Triple]): typingsJapgolly.sparqljs.mod.GraphQuads = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], triples = triples.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Quads]
+    __obj.updateDynamic("type")("graph")
+    __obj.asInstanceOf[typingsJapgolly.sparqljs.mod.GraphQuads]
   }
 }
-

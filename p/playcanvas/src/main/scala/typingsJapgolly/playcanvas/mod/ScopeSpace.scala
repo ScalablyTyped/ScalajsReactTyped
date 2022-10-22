@@ -1,20 +1,45 @@
 package typingsJapgolly.playcanvas.mod
 
+import typingsJapgolly.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @class
-  * @name pc.ScopeSpace
-  * @classdesc The scope for variables and subspaces.
-  * @param {string} name - The scope name.
-  * @property {string} name The scope name.
+  * The scope for variables.
   */
 @JSImport("playcanvas", "ScopeSpace")
 @js.native
-class ScopeSpace protected ()
-  extends typingsJapgolly.playcanvas.pc.ScopeSpace {
+open class ScopeSpace protected () extends StObject {
+  /**
+    * Create a new ScopeSpace instance.
+    *
+    * @param {string} name - The scope name.
+    */
   def this(name: String) = this()
+  
+  /**
+    * The scope name.
+    *
+    * @type {string}
+    */
+  var name: String = js.native
+  
+  /**
+    * Clears value for any uniform with matching value (used to remove deleted textures).
+    *
+    * @param {*} value - The value to clear.
+    * @ignore
+    */
+  def removeValue(value: Any): Unit = js.native
+  
+  /**
+    * Get (or create, if it doesn't already exist) a variable in the scope.
+    *
+    * @param {string} name - The variable name.
+    * @returns {ScopeId} The variable instance.
+    */
+  def resolve(name: String): ScopeId = js.native
+  
+  var variables: Map[Any, Any] = js.native
 }
-

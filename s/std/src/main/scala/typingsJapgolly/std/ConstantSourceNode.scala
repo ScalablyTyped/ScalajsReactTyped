@@ -1,23 +1,14 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConstantSourceNode extends AudioScheduledSourceNode {
-  val offset: org.scalajs.dom.raw.AudioParam = js.native
+trait ConstantSourceNode
+  extends StObject
+     with AudioScheduledSourceNode {
+  
+  /* standard dom */
+  val offset: org.scalajs.dom.AudioParam = js.native
 }
-
-@JSGlobal("ConstantSourceNode")
-@js.native
-object ConstantSourceNode
-  extends Instantiable1[/* context */ BaseAudioContext, ConstantSourceNode]
-     with Instantiable2[
-      /* context */ BaseAudioContext, 
-      /* options */ ConstantSourceOptions, 
-      ConstantSourceNode
-    ]
-

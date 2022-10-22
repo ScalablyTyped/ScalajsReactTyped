@@ -1,26 +1,22 @@
 package typingsJapgolly.easeljs.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("createjs.BitmapText")
 @js.native
-class BitmapText () extends DisplayObject {
-  def this(text: String) = this()
-  def this(text: String, spriteSheet: SpriteSheet) = this()
+trait BitmapText
+  extends StObject
+     with DisplayObject {
+  
   // properties
   var letterSpacing: Double = js.native
+  
   var lineHeight: Double = js.native
+  
   var spaceWidth: Double = js.native
+  
   var spriteSheet: SpriteSheet = js.native
+  
   var text: String = js.native
 }
-
-/* static members */
-@JSGlobal("createjs.BitmapText")
-@js.native
-object BitmapText extends js.Object {
-  var maxPoolSize: Double = js.native
-}
-

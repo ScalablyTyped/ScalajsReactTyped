@@ -10,10 +10,10 @@ like `chmod -R`
 | ------------------ | :-------------: |
 | Full name          | chmodr |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 38 |
-| # downloads        | 4346470 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 225958.0 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/chmodr#readme)

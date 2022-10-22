@@ -9,11 +9,11 @@ Tiny javascript library for creating accessible modal dialogs
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | micromodal |
-| Keywords           | a11y, modal, accesible |
-| # releases         | 7 |
-| # dependents       | 6 |
-| # downloads        | 221255 |
-| # stars            | 1 |
+| Keywords           | a11y, modal, accessible |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 138498.33333333334 |
+| # stars            | 3160.0 |
 
 ## Links
 - [Homepage](https://github.com/ghosh/micromodal#readme)

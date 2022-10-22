@@ -1,8 +1,8 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.vis.visStrings.linear
@@ -19,36 +19,32 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.vis.visStrings.easeOutQuint
   - typingsJapgolly.vis.visStrings.easeInOutQuint
 */
-trait EasingFunction extends js.Object
-
+trait EasingFunction extends StObject
 object EasingFunction {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def easeInCubic: typingsJapgolly.vis.visStrings.easeInCubic = this.cast("easeInCubic")
-  @scala.inline
-  def easeInOutCubic: typingsJapgolly.vis.visStrings.easeInOutCubic = this.cast("easeInOutCubic")
-  @scala.inline
-  def easeInOutQuad: typingsJapgolly.vis.visStrings.easeInOutQuad = this.cast("easeInOutQuad")
-  @scala.inline
-  def easeInOutQuart: typingsJapgolly.vis.visStrings.easeInOutQuart = this.cast("easeInOutQuart")
-  @scala.inline
-  def easeInOutQuint: typingsJapgolly.vis.visStrings.easeInOutQuint = this.cast("easeInOutQuint")
-  @scala.inline
-  def easeInQuad: typingsJapgolly.vis.visStrings.easeInQuad = this.cast("easeInQuad")
-  @scala.inline
-  def easeInQuart: typingsJapgolly.vis.visStrings.easeInQuart = this.cast("easeInQuart")
-  @scala.inline
-  def easeInQuint: typingsJapgolly.vis.visStrings.easeInQuint = this.cast("easeInQuint")
-  @scala.inline
-  def easeOutCubic: typingsJapgolly.vis.visStrings.easeOutCubic = this.cast("easeOutCubic")
-  @scala.inline
-  def easeOutQuad: typingsJapgolly.vis.visStrings.easeOutQuad = this.cast("easeOutQuad")
-  @scala.inline
-  def easeOutQuart: typingsJapgolly.vis.visStrings.easeOutQuart = this.cast("easeOutQuart")
-  @scala.inline
-  def easeOutQuint: typingsJapgolly.vis.visStrings.easeOutQuint = this.cast("easeOutQuint")
-  @scala.inline
-  def linear: typingsJapgolly.vis.visStrings.linear = this.cast("linear")
+  
+  inline def easeInCubic: typingsJapgolly.vis.visStrings.easeInCubic = "easeInCubic".asInstanceOf[typingsJapgolly.vis.visStrings.easeInCubic]
+  
+  inline def easeInOutCubic: typingsJapgolly.vis.visStrings.easeInOutCubic = "easeInOutCubic".asInstanceOf[typingsJapgolly.vis.visStrings.easeInOutCubic]
+  
+  inline def easeInOutQuad: typingsJapgolly.vis.visStrings.easeInOutQuad = "easeInOutQuad".asInstanceOf[typingsJapgolly.vis.visStrings.easeInOutQuad]
+  
+  inline def easeInOutQuart: typingsJapgolly.vis.visStrings.easeInOutQuart = "easeInOutQuart".asInstanceOf[typingsJapgolly.vis.visStrings.easeInOutQuart]
+  
+  inline def easeInOutQuint: typingsJapgolly.vis.visStrings.easeInOutQuint = "easeInOutQuint".asInstanceOf[typingsJapgolly.vis.visStrings.easeInOutQuint]
+  
+  inline def easeInQuad: typingsJapgolly.vis.visStrings.easeInQuad = "easeInQuad".asInstanceOf[typingsJapgolly.vis.visStrings.easeInQuad]
+  
+  inline def easeInQuart: typingsJapgolly.vis.visStrings.easeInQuart = "easeInQuart".asInstanceOf[typingsJapgolly.vis.visStrings.easeInQuart]
+  
+  inline def easeInQuint: typingsJapgolly.vis.visStrings.easeInQuint = "easeInQuint".asInstanceOf[typingsJapgolly.vis.visStrings.easeInQuint]
+  
+  inline def easeOutCubic: typingsJapgolly.vis.visStrings.easeOutCubic = "easeOutCubic".asInstanceOf[typingsJapgolly.vis.visStrings.easeOutCubic]
+  
+  inline def easeOutQuad: typingsJapgolly.vis.visStrings.easeOutQuad = "easeOutQuad".asInstanceOf[typingsJapgolly.vis.visStrings.easeOutQuad]
+  
+  inline def easeOutQuart: typingsJapgolly.vis.visStrings.easeOutQuart = "easeOutQuart".asInstanceOf[typingsJapgolly.vis.visStrings.easeOutQuart]
+  
+  inline def easeOutQuint: typingsJapgolly.vis.visStrings.easeOutQuint = "easeOutQuint".asInstanceOf[typingsJapgolly.vis.visStrings.easeOutQuint]
+  
+  inline def linear: typingsJapgolly.vis.visStrings.linear = "linear".asInstanceOf[typingsJapgolly.vis.visStrings.linear]
 }
-

@@ -1,31 +1,27 @@
 package typingsJapgolly.activexAccess.Access
 
-import typingsJapgolly.activexAccess.activexAccessNumbers.`0`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`1`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`2`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`3`
+import typingsJapgolly.activexAccess.activexAccessInts.`0`
+import typingsJapgolly.activexAccess.activexAccessInts.`1`
+import typingsJapgolly.activexAccess.activexAccessInts.`2`
+import typingsJapgolly.activexAccess.activexAccessInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`3`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`0`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`2`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`1`
+  - typingsJapgolly.activexAccess.activexAccessInts.`3`
+  - typingsJapgolly.activexAccess.activexAccessInts.`0`
+  - typingsJapgolly.activexAccess.activexAccessInts.`2`
+  - typingsJapgolly.activexAccess.activexAccessInts.`1`
 */
-trait AcWebUserDisplay extends js.Object
-
+trait AcWebUserDisplay extends StObject
 object AcWebUserDisplay {
-  @scala.inline
-  def acWebUserEmail: `3` = this.cast(3)
-  @scala.inline
-  def acWebUserID: `0` = this.cast(0)
-  @scala.inline
-  def acWebUserLoginName: `2` = this.cast(2)
-  @scala.inline
-  def acWebUserName: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def acWebUserEmail: `3` = 3.asInstanceOf[`3`]
+  
+  inline def acWebUserID: `0` = 0.asInstanceOf[`0`]
+  
+  inline def acWebUserLoginName: `2` = 2.asInstanceOf[`2`]
+  
+  inline def acWebUserName: `1` = 1.asInstanceOf[`1`]
 }
-

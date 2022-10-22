@@ -1,22 +1,31 @@
 package typingsJapgolly.imgurRestApi.ImgurRestApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Response[T] extends js.Object {
-  var data: js.Any
-   //T|Error;
+trait Response[T] extends StObject {
+  
+  var data: Any
+  
+  //T|Error;
   var status: Double
+  
   var success: Boolean
 }
-
 object Response {
-  @scala.inline
-  def apply[T](data: js.Any, status: Double, success: Boolean): Response[T] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
+  inline def apply[T](data: Any, status: Double, success: Boolean): Response[T] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response[T]]
   }
+  
+  extension [Self <: Response[?], T](x: Self & Response[T]) {
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+  }
 }
-

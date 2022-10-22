@@ -1,27 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockChartSeriesItemTarget extends js.Object {
+trait StockChartSeriesItemTarget extends StObject {
+  
   var border: js.UndefOr[js.Function | StockChartSeriesItemTargetBorder] = js.undefined
+  
   var color: js.UndefOr[String | js.Function] = js.undefined
+  
   var line: js.UndefOr[StockChartSeriesItemTargetLine] = js.undefined
 }
-
 object StockChartSeriesItemTarget {
-  @scala.inline
-  def apply(
-    border: js.Function | StockChartSeriesItemTargetBorder = null,
-    color: String | js.Function = null,
-    line: StockChartSeriesItemTargetLine = null
-  ): StockChartSeriesItemTarget = {
+  
+  inline def apply(): StockChartSeriesItemTarget = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartSeriesItemTarget]
   }
+  
+  extension [Self <: StockChartSeriesItemTarget](x: Self) {
+    
+    inline def setBorder(value: js.Function | StockChartSeriesItemTargetBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setColor(value: String | js.Function): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setLine(value: StockChartSeriesItemTargetLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+  }
 }
-

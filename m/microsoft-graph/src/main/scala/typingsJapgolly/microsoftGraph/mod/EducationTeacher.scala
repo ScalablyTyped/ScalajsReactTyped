@@ -1,23 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EducationTeacher extends js.Object {
+trait EducationTeacher extends StObject {
+  
   // ID of the teacher in the source system.
-  var externalId: js.UndefOr[String] = js.undefined
+  var externalId: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Teacher number.
-  var teacherNumber: js.UndefOr[String] = js.undefined
+  var teacherNumber: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object EducationTeacher {
-  @scala.inline
-  def apply(externalId: String = null, teacherNumber: String = null): EducationTeacher = {
+  
+  inline def apply(): EducationTeacher = {
     val __obj = js.Dynamic.literal()
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
-    if (teacherNumber != null) __obj.updateDynamic("teacherNumber")(teacherNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[EducationTeacher]
   }
+  
+  extension [Self <: EducationTeacher](x: Self) {
+    
+    inline def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    
+    inline def setExternalIdNull: Self = StObject.set(x, "externalId", null)
+    
+    inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
+    
+    inline def setTeacherNumber(value: NullableOption[String]): Self = StObject.set(x, "teacherNumber", value.asInstanceOf[js.Any])
+    
+    inline def setTeacherNumberNull: Self = StObject.set(x, "teacherNumber", null)
+    
+    inline def setTeacherNumberUndefined: Self = StObject.set(x, "teacherNumber", js.undefined)
+  }
 }
-

@@ -1,38 +1,29 @@
 package typingsJapgolly.materializeCss.M
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materializeCss.MElements
-import typingsJapgolly.materializeCss.PartialPushpinOptions
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("M.Pushpin")
-@js.native
-class Pushpin () extends Component[PushpinOptions] {
+trait Pushpin
+  extends StObject
+     with Component[PushpinOptions] {
+  
   /**
     * Original offsetTop of element
     */
-  var originalOffset: Double = js.native
+  var originalOffset: Double
 }
-
-/* static members */
-@JSGlobal("M.Pushpin")
-@js.native
-object Pushpin extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): Pushpin = js.native
-  /**
-    * Init Pushpins
-    */
-  def init(els: MElements): js.Array[Pushpin] = js.native
-  def init(els: MElements, options: PartialPushpinOptions): js.Array[Pushpin] = js.native
-  /**
-    * Init Pushpin
-    */
-  def init(els: typingsJapgolly.std.Element): Pushpin = js.native
-  def init(els: typingsJapgolly.std.Element, options: PartialPushpinOptions): Pushpin = js.native
+object Pushpin {
+  
+  inline def apply(destroy: Callback, el: Element, options: PushpinOptions, originalOffset: Double): Pushpin = {
+    val __obj = js.Dynamic.literal(destroy = destroy.toJsFn, el = el.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], originalOffset = originalOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Pushpin]
+  }
+  
+  extension [Self <: Pushpin](x: Self) {
+    
+    inline def setOriginalOffset(value: Double): Self = StObject.set(x, "originalOffset", value.asInstanceOf[js.Any])
+  }
 }
-

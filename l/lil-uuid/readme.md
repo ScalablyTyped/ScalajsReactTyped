@@ -11,9 +11,9 @@ UUID v4 generator and validator (RFC4122 compliant)
 | Full name          | lil-uuid |
 | Keywords           | lil, tiny, micro, uuid, generator, v4, validator, unique, identifier, user |
 | # releases         | 1 |
-| # dependents       | 7 |
-| # downloads        | 2041923 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 438198.0 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/lil-js/uuid)

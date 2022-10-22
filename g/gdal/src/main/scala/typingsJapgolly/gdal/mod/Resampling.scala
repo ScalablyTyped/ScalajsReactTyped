@@ -1,8 +1,8 @@
 package typingsJapgolly.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gdal.gdalStrings.NEAREST
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gdal.gdalStrings.AVERAGE_MAGPHASE
   - typingsJapgolly.gdal.gdalStrings.NONE
 */
-trait Resampling extends js.Object
-
+trait Resampling extends StObject
 object Resampling {
-  @scala.inline
-  def AVERAGE: typingsJapgolly.gdal.gdalStrings.AVERAGE = this.cast("AVERAGE")
-  @scala.inline
-  def AVERAGE_MAGPHASE: typingsJapgolly.gdal.gdalStrings.AVERAGE_MAGPHASE = this.cast("AVERAGE_MAGPHASE")
-  @scala.inline
-  def CUBIC: typingsJapgolly.gdal.gdalStrings.CUBIC = this.cast("CUBIC")
-  @scala.inline
-  def GAUSS: typingsJapgolly.gdal.gdalStrings.GAUSS = this.cast("GAUSS")
-  @scala.inline
-  def MODE: typingsJapgolly.gdal.gdalStrings.MODE = this.cast("MODE")
-  @scala.inline
-  def NEAREST: typingsJapgolly.gdal.gdalStrings.NEAREST = this.cast("NEAREST")
-  @scala.inline
-  def NONE: typingsJapgolly.gdal.gdalStrings.NONE = this.cast("NONE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def AVERAGE: typingsJapgolly.gdal.gdalStrings.AVERAGE = "AVERAGE".asInstanceOf[typingsJapgolly.gdal.gdalStrings.AVERAGE]
+  
+  inline def AVERAGE_MAGPHASE: typingsJapgolly.gdal.gdalStrings.AVERAGE_MAGPHASE = "AVERAGE_MAGPHASE".asInstanceOf[typingsJapgolly.gdal.gdalStrings.AVERAGE_MAGPHASE]
+  
+  inline def CUBIC: typingsJapgolly.gdal.gdalStrings.CUBIC = "CUBIC".asInstanceOf[typingsJapgolly.gdal.gdalStrings.CUBIC]
+  
+  inline def GAUSS: typingsJapgolly.gdal.gdalStrings.GAUSS = "GAUSS".asInstanceOf[typingsJapgolly.gdal.gdalStrings.GAUSS]
+  
+  inline def MODE: typingsJapgolly.gdal.gdalStrings.MODE = "MODE".asInstanceOf[typingsJapgolly.gdal.gdalStrings.MODE]
+  
+  inline def NEAREST: typingsJapgolly.gdal.gdalStrings.NEAREST = "NEAREST".asInstanceOf[typingsJapgolly.gdal.gdalStrings.NEAREST]
+  
+  inline def NONE: typingsJapgolly.gdal.gdalStrings.NONE = "NONE".asInstanceOf[typingsJapgolly.gdal.gdalStrings.NONE]
 }
-

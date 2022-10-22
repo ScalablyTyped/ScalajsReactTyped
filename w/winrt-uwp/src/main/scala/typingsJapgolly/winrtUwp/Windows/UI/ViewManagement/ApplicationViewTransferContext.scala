@@ -1,19 +1,23 @@
 package typingsJapgolly.winrtUwp.Windows.UI.ViewManagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.ViewManagement.ApplicationViewTransferContext")
-@js.native
-abstract class ApplicationViewTransferContext () extends js.Object {
-   /* unmapped type */ var viewId: js.Any = js.native
+trait ApplicationViewTransferContext extends StObject {
+  
+  /* unmapped type */
+  var viewId: Any
 }
-
-/* static members */
-@JSGlobal("Windows.UI.ViewManagement.ApplicationViewTransferContext")
-@js.native
-object ApplicationViewTransferContext extends js.Object {
-  var dataPackageFormatId: js.Any = js.native
+object ApplicationViewTransferContext {
+  
+  inline def apply(viewId: Any): ApplicationViewTransferContext = {
+    val __obj = js.Dynamic.literal(viewId = viewId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApplicationViewTransferContext]
+  }
+  
+  extension [Self <: ApplicationViewTransferContext](x: Self) {
+    
+    inline def setViewId(value: Any): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
+  }
 }
-

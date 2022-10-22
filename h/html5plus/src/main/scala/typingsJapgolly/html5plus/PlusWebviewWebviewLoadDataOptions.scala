@@ -1,21 +1,23 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 创建加载HTML数据参数
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-trait PlusWebviewWebviewLoadDataOptions extends js.Object {
+trait PlusWebviewWebviewLoadDataOptions extends StObject {
+  
   /**
     * 页面的Base URL
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var baseURL: js.UndefOr[String] = js.undefined
+  
   /**
     * HTML数据的编码类型
     * 默认值为"utf-8"。
@@ -23,6 +25,7 @@ trait PlusWebviewWebviewLoadDataOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var encoding: js.UndefOr[String] = js.undefined
+  
   /**
     * HTML数据的数据类型
     * 默认值为"text/html"。
@@ -31,15 +34,25 @@ trait PlusWebviewWebviewLoadDataOptions extends js.Object {
     */
   var mimeType: js.UndefOr[String] = js.undefined
 }
-
 object PlusWebviewWebviewLoadDataOptions {
-  @scala.inline
-  def apply(baseURL: String = null, encoding: String = null, mimeType: String = null): PlusWebviewWebviewLoadDataOptions = {
+  
+  inline def apply(): PlusWebviewWebviewLoadDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewLoadDataOptions]
   }
+  
+  extension [Self <: PlusWebviewWebviewLoadDataOptions](x: Self) {
+    
+    inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
+    
+    inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
+    
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+  }
 }
-

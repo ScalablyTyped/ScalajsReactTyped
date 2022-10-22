@@ -1,15 +1,18 @@
 package typingsJapgolly.semanticUiReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.semanticUiReact.genericMod.HtmlLabelProps
-import typingsJapgolly.semanticUiReact.genericMod.SemanticCOLORS
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandContent
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandItem
-import typingsJapgolly.semanticUiReact.progressMod.default
-import typingsJapgolly.semanticUiReact.progressProgressMod.ProgressProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.ElementType
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.ReactNodeArray
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.HtmlLabelProps
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
+import typingsJapgolly.semanticUiReact.distCommonjsModulesProgressProgressMod.ProgressProps
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.big
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.bottom
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.large
@@ -20,73 +23,79 @@ import typingsJapgolly.semanticUiReact.semanticUiReactStrings.small
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.tiny
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.top
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Progress {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    as: js.Any = null,
-    attached: top | bottom = null,
-    autoSuccess: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    color: SemanticCOLORS = null,
-    content: SemanticShorthandContent = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    error: js.UndefOr[Boolean] = js.undefined,
-    indicating: js.UndefOr[Boolean] = js.undefined,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    label: SemanticShorthandItem[HtmlLabelProps] = null,
-    percent: Double | String = null,
-    precision: Int | Double = null,
-    progress: Boolean | percent | ratio | value = null,
-    size: tiny | small | medium | large | big = null,
-    success: js.UndefOr[Boolean] = js.undefined,
-    total: Double | String = null,
-    value: Double | String = null,
-    warning: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ProgressProps, default, Unit, ProgressProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (attached != null) __obj.updateDynamic("attached")(attached.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoSuccess)) __obj.updateDynamic("autoSuccess")(autoSuccess.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(indicating)) __obj.updateDynamic("indicating")(indicating.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.progressProgressMod.ProgressProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.progressMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.progressProgressMod.ProgressProps])(children: _*)
-  }
-  @JSImport("semantic-ui-react/dist/commonjs/modules/Progress", JSImport.Default)
+  @JSImport("semantic-ui-react", "Progress")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.semanticUiReact.mod.Progress] {
+    
+    inline def active(value: Boolean): this.type = set("active", value.asInstanceOf[js.Any])
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def attached(value: top | bottom): this.type = set("attached", value.asInstanceOf[js.Any])
+    
+    inline def autoSuccess(value: Boolean): this.type = set("autoSuccess", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def color(value: SemanticCOLORS): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: SemanticShorthandContent): this.type = set("content", value.asInstanceOf[js.Any])
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def error(value: Boolean): this.type = set("error", value.asInstanceOf[js.Any])
+    
+    inline def indicating(value: Boolean): this.type = set("indicating", value.asInstanceOf[js.Any])
+    
+    inline def inverted(value: Boolean): this.type = set("inverted", value.asInstanceOf[js.Any])
+    
+    inline def label(value: SemanticShorthandItem[HtmlLabelProps]): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def labelFunction3(
+      value: (/* component */ ElementType, HtmlLabelProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("label", js.Any.fromFunction3(value))
+    
+    inline def labelNull: this.type = set("label", null)
+    
+    inline def labelVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("label", js.Array(value*))
+    
+    inline def labelVdomElement(value: VdomElement): this.type = set("label", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def percent(value: Double | String): this.type = set("percent", value.asInstanceOf[js.Any])
+    
+    inline def precision(value: Double): this.type = set("precision", value.asInstanceOf[js.Any])
+    
+    inline def progress(value: Boolean | percent | ratio | value): this.type = set("progress", value.asInstanceOf[js.Any])
+    
+    inline def size(value: tiny | small | medium | large | big): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def success(value: Boolean): this.type = set("success", value.asInstanceOf[js.Any])
+    
+    inline def total(value: Double | String): this.type = set("total", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Double | String): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def warning(value: Boolean): this.type = set("warning", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Progress.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ProgressProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

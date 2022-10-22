@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events which concern manipulations on groups.
   */
-@JSGlobal("ASPxClientNavBarGroupEventArgs")
-@js.native
-class ASPxClientNavBarGroupEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new object of the ASPxClientNavBarGroupEventArgs type with the specified value.
-    * @param group An ASPxClientNavBarGroup object representing the group related to the event.
-    */
-  def this(group: ASPxClientNavBarGroup) = this()
+trait ASPxClientNavBarGroupEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the group object related to the event.
     */
-  var group: ASPxClientNavBarGroup = js.native
+  var group: ASPxClientNavBarGroup
 }
-
+object ASPxClientNavBarGroupEventArgs {
+  
+  inline def apply(group: ASPxClientNavBarGroup): ASPxClientNavBarGroupEventArgs = {
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientNavBarGroupEventArgs]
+  }
+  
+  extension [Self <: ASPxClientNavBarGroupEventArgs](x: Self) {
+    
+    inline def setGroup(value: ASPxClientNavBarGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+  }
+}

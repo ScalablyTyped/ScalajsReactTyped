@@ -1,18 +1,17 @@
 package typingsJapgolly.autolinker
 
-import typingsJapgolly.autolinker.autolinkerMod.HashtagConfig
-import typingsJapgolly.autolinker.autolinkerMod.MentionConfig
+import typingsJapgolly.autolinker.distCommonjsAutolinkerMod.HashtagConfig
+import typingsJapgolly.autolinker.distCommonjsAutolinkerMod.MentionConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autolinkerBooleans {
+  
   @js.native
   sealed trait `false`
-    extends HashtagConfig
+    extends StObject
+       with HashtagConfig
        with MentionConfig
-  
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }
-

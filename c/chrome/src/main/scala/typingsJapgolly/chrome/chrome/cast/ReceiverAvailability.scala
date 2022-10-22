@@ -1,29 +1,22 @@
 package typingsJapgolly.chrome.chrome.cast
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReceiverAvailability extends js.Object
-
+sealed trait ReceiverAvailability extends StObject
 @JSGlobal("chrome.cast.ReceiverAvailability")
 @js.native
-object ReceiverAvailability extends js.Object {
-  @js.native
-  sealed trait AVAILABLE extends ReceiverAvailability
+object ReceiverAvailability extends StObject {
   
   @js.native
-  sealed trait UNAVAILABLE extends ReceiverAvailability
+  sealed trait AVAILABLE
+    extends StObject
+       with ReceiverAvailability
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ReceiverAvailability with String] = js.native
-  /* "available" */ @js.native
-  object AVAILABLE extends TopLevel[AVAILABLE with String]
-  
-  /* "unavailable" */ @js.native
-  object UNAVAILABLE extends TopLevel[UNAVAILABLE with String]
-  
+  @js.native
+  sealed trait UNAVAILABLE
+    extends StObject
+       with ReceiverAvailability
 }
-

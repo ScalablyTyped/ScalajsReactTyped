@@ -11,9 +11,9 @@ A tool for respawning node binaries when special flags are present.
 | Full name          | flagged-respawn |
 | Keywords           | respawn, flags |
 | # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 83832355 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0695801666666666E7 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/flagged-respawn#readme)

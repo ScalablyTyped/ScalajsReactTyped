@@ -1,25 +1,35 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.MarginLeftProperty
+import typingsJapgolly.csstype.mod.Property.MarginLeft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarginLeftProps[TLength] extends js.Object {
-  val marginLeft: js.UndefOr[ResponsiveValue[MarginLeftProperty[TLength]]] = js.undefined
-  val ml: js.UndefOr[ResponsiveValue[MarginLeftProperty[TLength]]] = js.undefined
+trait MarginLeftProps[TLength] extends StObject {
+  
+  val marginLeft: js.UndefOr[ResponsiveValue[MarginLeft[TLength]]] = js.undefined
+  
+  val ml: js.UndefOr[ResponsiveValue[MarginLeft[TLength]]] = js.undefined
 }
-
 object MarginLeftProps {
-  @scala.inline
-  def apply[TLength](
-    marginLeft: ResponsiveValue[MarginLeftProperty[TLength]] = null,
-    ml: ResponsiveValue[MarginLeftProperty[TLength]] = null
-  ): MarginLeftProps[TLength] = {
+  
+  inline def apply[TLength](): MarginLeftProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (ml != null) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginLeftProps[TLength]]
   }
+  
+  extension [Self <: MarginLeftProps[?], TLength](x: Self & MarginLeftProps[TLength]) {
+    
+    inline def setMarginLeft(value: ResponsiveValue[MarginLeft[TLength]]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    
+    inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+    
+    inline def setMarginLeftVarargs(value: MarginLeft[TLength]*): Self = StObject.set(x, "marginLeft", js.Array(value*))
+    
+    inline def setMl(value: ResponsiveValue[MarginLeft[TLength]]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+    
+    inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
+    
+    inline def setMlVarargs(value: MarginLeft[TLength]*): Self = StObject.set(x, "ml", js.Array(value*))
+  }
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.squareConnect.squareConnectStrings.ORDER
   - typingsJapgolly.squareConnect.squareConnectStrings.LINE_ITEM
   - typingsJapgolly.squareConnect.squareConnectStrings.OTHER_TAX_SCOPE
 */
-trait TaxApplicationScopeType extends js.Object
-
+trait TaxApplicationScopeType extends StObject
 object TaxApplicationScopeType {
-  @scala.inline
-  def LINE_ITEM: typingsJapgolly.squareConnect.squareConnectStrings.LINE_ITEM = this.cast("LINE_ITEM")
-  @scala.inline
-  def ORDER: typingsJapgolly.squareConnect.squareConnectStrings.ORDER = this.cast("ORDER")
-  @scala.inline
-  def OTHER_TAX_SCOPE: typingsJapgolly.squareConnect.squareConnectStrings.OTHER_TAX_SCOPE = this.cast("OTHER_TAX_SCOPE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def LINE_ITEM: typingsJapgolly.squareConnect.squareConnectStrings.LINE_ITEM = "LINE_ITEM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LINE_ITEM]
+  
+  inline def ORDER: typingsJapgolly.squareConnect.squareConnectStrings.ORDER = "ORDER".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ORDER]
+  
+  inline def OTHER_TAX_SCOPE: typingsJapgolly.squareConnect.squareConnectStrings.OTHER_TAX_SCOPE = "OTHER_TAX_SCOPE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.OTHER_TAX_SCOPE]
 }
-

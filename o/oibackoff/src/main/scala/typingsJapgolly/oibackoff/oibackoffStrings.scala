@@ -1,24 +1,20 @@
 package typingsJapgolly.oibackoff
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oibackoffStrings {
-  @js.native
-  sealed trait exponential extends js.Object
   
   @js.native
-  sealed trait fibonacci extends js.Object
+  sealed trait exponential extends StObject
+  inline def exponential: exponential = "exponential".asInstanceOf[exponential]
   
   @js.native
-  sealed trait incremental extends js.Object
+  sealed trait fibonacci extends StObject
+  inline def fibonacci: fibonacci = "fibonacci".asInstanceOf[fibonacci]
   
-  @scala.inline
-  def exponential: exponential = "exponential".asInstanceOf[exponential]
-  @scala.inline
-  def fibonacci: fibonacci = "fibonacci".asInstanceOf[fibonacci]
-  @scala.inline
-  def incremental: incremental = "incremental".asInstanceOf[incremental]
+  @js.native
+  sealed trait incremental extends StObject
+  inline def incremental: incremental = "incremental".asInstanceOf[incremental]
 }
-

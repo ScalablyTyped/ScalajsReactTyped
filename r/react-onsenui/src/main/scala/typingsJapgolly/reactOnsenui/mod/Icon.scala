@@ -1,12 +1,18 @@
 package typingsJapgolly.reactOnsenui.mod
 
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameFixedWidth
+import typingsJapgolly.reactOnsenui.anon.FixedWidth
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "Icon")
 @js.native
-class Icon ()
-  extends typingsJapgolly.react.mod.Component[HTMLAttributesidclassNameFixedWidth, js.Any, js.Any]
-
+open class Icon protected () extends Component[FixedWidth, Any] {
+  def this(props: HTMLAttributesidclassName & FixedWidth) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HTMLAttributesidclassName & FixedWidth, context: Any) = this()
+}

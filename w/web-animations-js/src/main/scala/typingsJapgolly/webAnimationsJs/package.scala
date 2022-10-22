@@ -1,13 +1,13 @@
-package typingsJapgolly
+package typingsJapgolly.webAnimationsJs
 
+import typingsJapgolly.std.KeyframeEffect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object webAnimationsJs {
-  type AnimationEventListener = (js.ThisFunction1[
-    /* this */ typingsJapgolly.webAnimationsJs.Animation, 
-    /* evt */ typingsJapgolly.webAnimationsJs.AnimationPlaybackEvent, 
-    js.Any
-  ]) | scala.Null
-}
+
+type AnimationEventListener = (js.ThisFunction1[/* this */ Animation, /* evt */ AnimationPlaybackEvent, Any]) | Null
+
+type GroupEffect = KeyframeEffect
+
+type SequenceEffect = KeyframeEffect

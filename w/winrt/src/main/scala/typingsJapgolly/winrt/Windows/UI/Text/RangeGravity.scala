@@ -1,47 +1,37 @@
 package typingsJapgolly.winrt.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RangeGravity extends js.Object
-
+sealed trait RangeGravity extends StObject
 @JSGlobal("Windows.UI.Text.RangeGravity")
 @js.native
-object RangeGravity extends js.Object {
-  @js.native
-  sealed trait backward extends RangeGravity
+object RangeGravity extends StObject {
   
   @js.native
-  sealed trait forward extends RangeGravity
+  sealed trait backward
+    extends StObject
+       with RangeGravity
   
   @js.native
-  sealed trait inward extends RangeGravity
+  sealed trait forward
+    extends StObject
+       with RangeGravity
   
   @js.native
-  sealed trait outward extends RangeGravity
+  sealed trait inward
+    extends StObject
+       with RangeGravity
   
   @js.native
-  sealed trait uIBehavior extends RangeGravity
+  sealed trait outward
+    extends StObject
+       with RangeGravity
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RangeGravity with Double] = js.native
-  /* 1 */ @js.native
-  object backward extends TopLevel[backward with Double]
-  
-  /* 2 */ @js.native
-  object forward extends TopLevel[forward with Double]
-  
-  /* 3 */ @js.native
-  object inward extends TopLevel[inward with Double]
-  
-  /* 4 */ @js.native
-  object outward extends TopLevel[outward with Double]
-  
-  /* 0 */ @js.native
-  object uIBehavior extends TopLevel[uIBehavior with Double]
-  
+  @js.native
+  sealed trait uIBehavior
+    extends StObject
+       with RangeGravity
 }
-

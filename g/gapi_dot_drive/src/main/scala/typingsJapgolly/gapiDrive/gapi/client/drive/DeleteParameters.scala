@@ -1,20 +1,28 @@
 package typingsJapgolly.gapiDrive.gapi.client.drive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeleteParameters extends js.Object {
+trait DeleteParameters extends StObject {
+  
   var fileId: String
+  
   var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
 }
-
 object DeleteParameters {
-  @scala.inline
-  def apply(fileId: String, supportsTeamDrives: js.UndefOr[Boolean] = js.undefined): DeleteParameters = {
+  
+  inline def apply(fileId: String): DeleteParameters = {
     val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParameters]
   }
+  
+  extension [Self <: DeleteParameters](x: Self) {
+    
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
+  }
 }
-

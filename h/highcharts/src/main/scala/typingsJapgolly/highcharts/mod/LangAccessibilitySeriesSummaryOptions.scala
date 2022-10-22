@@ -1,90 +1,162 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LangAccessibilitySeriesSummaryOptions extends js.Object {
-  var bar: js.UndefOr[String] = js.undefined
-  var barCombination: js.UndefOr[String] = js.undefined
-  var boxplot: js.UndefOr[String] = js.undefined
-  var boxplotCombination: js.UndefOr[String] = js.undefined
-  var bubble: js.UndefOr[String] = js.undefined
-  var bubbleCombination: js.UndefOr[String] = js.undefined
-  var column: js.UndefOr[String] = js.undefined
-  var columnCombination: js.UndefOr[String] = js.undefined
+trait LangAccessibilitySeriesSummaryOptions extends StObject {
+  
   var default: js.UndefOr[String] = js.undefined
+  
+  var bar: js.UndefOr[String] = js.undefined
+  
+  var barCombination: js.UndefOr[String] = js.undefined
+  
+  var boxplot: js.UndefOr[String] = js.undefined
+  
+  var boxplotCombination: js.UndefOr[String] = js.undefined
+  
+  var bubble: js.UndefOr[String] = js.undefined
+  
+  var bubbleCombination: js.UndefOr[String] = js.undefined
+  
+  var column: js.UndefOr[String] = js.undefined
+  
+  var columnCombination: js.UndefOr[String] = js.undefined
+  
   var defaultCombination: js.UndefOr[String] = js.undefined
+  
   var line: js.UndefOr[String] = js.undefined
+  
   var lineCombination: js.UndefOr[String] = js.undefined
+  
   var map: js.UndefOr[String] = js.undefined
+  
   var mapCombination: js.UndefOr[String] = js.undefined
+  
   var mapbubble: js.UndefOr[String] = js.undefined
+  
   var mapbubbleCombination: js.UndefOr[String] = js.undefined
+  
   var mapline: js.UndefOr[String] = js.undefined
+  
   var maplineCombination: js.UndefOr[String] = js.undefined
+  
   var pie: js.UndefOr[String] = js.undefined
+  
   var pieCombination: js.UndefOr[String] = js.undefined
+  
   var scatter: js.UndefOr[String] = js.undefined
+  
   var scatterCombination: js.UndefOr[String] = js.undefined
+  
   var spline: js.UndefOr[String] = js.undefined
+  
   var splineCombination: js.UndefOr[String] = js.undefined
 }
-
 object LangAccessibilitySeriesSummaryOptions {
-  @scala.inline
-  def apply(
-    bar: String = null,
-    barCombination: String = null,
-    boxplot: String = null,
-    boxplotCombination: String = null,
-    bubble: String = null,
-    bubbleCombination: String = null,
-    column: String = null,
-    columnCombination: String = null,
-    default: String = null,
-    defaultCombination: String = null,
-    line: String = null,
-    lineCombination: String = null,
-    map: String = null,
-    mapCombination: String = null,
-    mapbubble: String = null,
-    mapbubbleCombination: String = null,
-    mapline: String = null,
-    maplineCombination: String = null,
-    pie: String = null,
-    pieCombination: String = null,
-    scatter: String = null,
-    scatterCombination: String = null,
-    spline: String = null,
-    splineCombination: String = null
-  ): LangAccessibilitySeriesSummaryOptions = {
+  
+  inline def apply(): LangAccessibilitySeriesSummaryOptions = {
     val __obj = js.Dynamic.literal()
-    if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
-    if (barCombination != null) __obj.updateDynamic("barCombination")(barCombination.asInstanceOf[js.Any])
-    if (boxplot != null) __obj.updateDynamic("boxplot")(boxplot.asInstanceOf[js.Any])
-    if (boxplotCombination != null) __obj.updateDynamic("boxplotCombination")(boxplotCombination.asInstanceOf[js.Any])
-    if (bubble != null) __obj.updateDynamic("bubble")(bubble.asInstanceOf[js.Any])
-    if (bubbleCombination != null) __obj.updateDynamic("bubbleCombination")(bubbleCombination.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (columnCombination != null) __obj.updateDynamic("columnCombination")(columnCombination.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (defaultCombination != null) __obj.updateDynamic("defaultCombination")(defaultCombination.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (lineCombination != null) __obj.updateDynamic("lineCombination")(lineCombination.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (mapCombination != null) __obj.updateDynamic("mapCombination")(mapCombination.asInstanceOf[js.Any])
-    if (mapbubble != null) __obj.updateDynamic("mapbubble")(mapbubble.asInstanceOf[js.Any])
-    if (mapbubbleCombination != null) __obj.updateDynamic("mapbubbleCombination")(mapbubbleCombination.asInstanceOf[js.Any])
-    if (mapline != null) __obj.updateDynamic("mapline")(mapline.asInstanceOf[js.Any])
-    if (maplineCombination != null) __obj.updateDynamic("maplineCombination")(maplineCombination.asInstanceOf[js.Any])
-    if (pie != null) __obj.updateDynamic("pie")(pie.asInstanceOf[js.Any])
-    if (pieCombination != null) __obj.updateDynamic("pieCombination")(pieCombination.asInstanceOf[js.Any])
-    if (scatter != null) __obj.updateDynamic("scatter")(scatter.asInstanceOf[js.Any])
-    if (scatterCombination != null) __obj.updateDynamic("scatterCombination")(scatterCombination.asInstanceOf[js.Any])
-    if (spline != null) __obj.updateDynamic("spline")(spline.asInstanceOf[js.Any])
-    if (splineCombination != null) __obj.updateDynamic("splineCombination")(splineCombination.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangAccessibilitySeriesSummaryOptions]
   }
+  
+  extension [Self <: LangAccessibilitySeriesSummaryOptions](x: Self) {
+    
+    inline def setBar(value: String): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    
+    inline def setBarCombination(value: String): Self = StObject.set(x, "barCombination", value.asInstanceOf[js.Any])
+    
+    inline def setBarCombinationUndefined: Self = StObject.set(x, "barCombination", js.undefined)
+    
+    inline def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
+    
+    inline def setBoxplot(value: String): Self = StObject.set(x, "boxplot", value.asInstanceOf[js.Any])
+    
+    inline def setBoxplotCombination(value: String): Self = StObject.set(x, "boxplotCombination", value.asInstanceOf[js.Any])
+    
+    inline def setBoxplotCombinationUndefined: Self = StObject.set(x, "boxplotCombination", js.undefined)
+    
+    inline def setBoxplotUndefined: Self = StObject.set(x, "boxplot", js.undefined)
+    
+    inline def setBubble(value: String): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
+    
+    inline def setBubbleCombination(value: String): Self = StObject.set(x, "bubbleCombination", value.asInstanceOf[js.Any])
+    
+    inline def setBubbleCombinationUndefined: Self = StObject.set(x, "bubbleCombination", js.undefined)
+    
+    inline def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
+    
+    inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    
+    inline def setColumnCombination(value: String): Self = StObject.set(x, "columnCombination", value.asInstanceOf[js.Any])
+    
+    inline def setColumnCombinationUndefined: Self = StObject.set(x, "columnCombination", js.undefined)
+    
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultCombination(value: String): Self = StObject.set(x, "defaultCombination", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultCombinationUndefined: Self = StObject.set(x, "defaultCombination", js.undefined)
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineCombination(value: String): Self = StObject.set(x, "lineCombination", value.asInstanceOf[js.Any])
+    
+    inline def setLineCombinationUndefined: Self = StObject.set(x, "lineCombination", js.undefined)
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    
+    inline def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMapCombination(value: String): Self = StObject.set(x, "mapCombination", value.asInstanceOf[js.Any])
+    
+    inline def setMapCombinationUndefined: Self = StObject.set(x, "mapCombination", js.undefined)
+    
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    
+    inline def setMapbubble(value: String): Self = StObject.set(x, "mapbubble", value.asInstanceOf[js.Any])
+    
+    inline def setMapbubbleCombination(value: String): Self = StObject.set(x, "mapbubbleCombination", value.asInstanceOf[js.Any])
+    
+    inline def setMapbubbleCombinationUndefined: Self = StObject.set(x, "mapbubbleCombination", js.undefined)
+    
+    inline def setMapbubbleUndefined: Self = StObject.set(x, "mapbubble", js.undefined)
+    
+    inline def setMapline(value: String): Self = StObject.set(x, "mapline", value.asInstanceOf[js.Any])
+    
+    inline def setMaplineCombination(value: String): Self = StObject.set(x, "maplineCombination", value.asInstanceOf[js.Any])
+    
+    inline def setMaplineCombinationUndefined: Self = StObject.set(x, "maplineCombination", js.undefined)
+    
+    inline def setMaplineUndefined: Self = StObject.set(x, "mapline", js.undefined)
+    
+    inline def setPie(value: String): Self = StObject.set(x, "pie", value.asInstanceOf[js.Any])
+    
+    inline def setPieCombination(value: String): Self = StObject.set(x, "pieCombination", value.asInstanceOf[js.Any])
+    
+    inline def setPieCombinationUndefined: Self = StObject.set(x, "pieCombination", js.undefined)
+    
+    inline def setPieUndefined: Self = StObject.set(x, "pie", js.undefined)
+    
+    inline def setScatter(value: String): Self = StObject.set(x, "scatter", value.asInstanceOf[js.Any])
+    
+    inline def setScatterCombination(value: String): Self = StObject.set(x, "scatterCombination", value.asInstanceOf[js.Any])
+    
+    inline def setScatterCombinationUndefined: Self = StObject.set(x, "scatterCombination", js.undefined)
+    
+    inline def setScatterUndefined: Self = StObject.set(x, "scatter", js.undefined)
+    
+    inline def setSpline(value: String): Self = StObject.set(x, "spline", value.asInstanceOf[js.Any])
+    
+    inline def setSplineCombination(value: String): Self = StObject.set(x, "splineCombination", value.asInstanceOf[js.Any])
+    
+    inline def setSplineCombinationUndefined: Self = StObject.set(x, "splineCombination", js.undefined)
+    
+    inline def setSplineUndefined: Self = StObject.set(x, "spline", js.undefined)
+  }
 }
-

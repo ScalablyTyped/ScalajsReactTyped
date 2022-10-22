@@ -1,39 +1,60 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartSeriesItemErrorBars extends js.Object {
+trait ChartSeriesItemErrorBars extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var endCaps: js.UndefOr[Boolean] = js.undefined
+  
   var line: js.UndefOr[ChartSeriesItemErrorBarsLine] = js.undefined
-  var value: js.UndefOr[String | Double | js.Any | js.Function] = js.undefined
+  
+  var value: js.UndefOr[String | Double | Any | js.Function] = js.undefined
+  
   var visual: js.UndefOr[js.Function] = js.undefined
-  var xValue: js.UndefOr[String | Double | js.Any | js.Function] = js.undefined
-  var yValue: js.UndefOr[String | Double | js.Any | js.Function] = js.undefined
+  
+  var xValue: js.UndefOr[String | Double | Any | js.Function] = js.undefined
+  
+  var yValue: js.UndefOr[String | Double | Any | js.Function] = js.undefined
 }
-
 object ChartSeriesItemErrorBars {
-  @scala.inline
-  def apply(
-    color: String = null,
-    endCaps: js.UndefOr[Boolean] = js.undefined,
-    line: ChartSeriesItemErrorBarsLine = null,
-    value: String | Double | js.Any | js.Function = null,
-    visual: js.Function = null,
-    xValue: String | Double | js.Any | js.Function = null,
-    yValue: String | Double | js.Any | js.Function = null
-  ): ChartSeriesItemErrorBars = {
+  
+  inline def apply(): ChartSeriesItemErrorBars = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(endCaps)) __obj.updateDynamic("endCaps")(endCaps.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
-    if (xValue != null) __obj.updateDynamic("xValue")(xValue.asInstanceOf[js.Any])
-    if (yValue != null) __obj.updateDynamic("yValue")(yValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesItemErrorBars]
   }
+  
+  extension [Self <: ChartSeriesItemErrorBars](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setEndCaps(value: Boolean): Self = StObject.set(x, "endCaps", value.asInstanceOf[js.Any])
+    
+    inline def setEndCapsUndefined: Self = StObject.set(x, "endCaps", js.undefined)
+    
+    inline def setLine(value: ChartSeriesItemErrorBarsLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    
+    inline def setValue(value: String | Double | Any | js.Function): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setVisual(value: js.Function): Self = StObject.set(x, "visual", value.asInstanceOf[js.Any])
+    
+    inline def setVisualUndefined: Self = StObject.set(x, "visual", js.undefined)
+    
+    inline def setXValue(value: String | Double | Any | js.Function): Self = StObject.set(x, "xValue", value.asInstanceOf[js.Any])
+    
+    inline def setXValueUndefined: Self = StObject.set(x, "xValue", js.undefined)
+    
+    inline def setYValue(value: String | Double | Any | js.Function): Self = StObject.set(x, "yValue", value.asInstanceOf[js.Any])
+    
+    inline def setYValueUndefined: Self = StObject.set(x, "yValue", js.undefined)
+  }
 }
-

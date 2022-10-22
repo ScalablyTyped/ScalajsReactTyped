@@ -1,21 +1,26 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Delete model results. */
-trait DeleteModelResults extends js.Object {
+trait DeleteModelResults extends StObject {
+  
   /** model_id of the deleted model. */
   var deleted: js.UndefOr[String] = js.undefined
 }
-
 object DeleteModelResults {
-  @scala.inline
-  def apply(deleted: String = null): DeleteModelResults = {
+  
+  inline def apply(): DeleteModelResults = {
     val __obj = js.Dynamic.literal()
-    if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteModelResults]
   }
+  
+  extension [Self <: DeleteModelResults](x: Self) {
+    
+    inline def setDeleted(value: String): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+  }
 }
-

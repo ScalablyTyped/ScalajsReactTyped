@@ -1,51 +1,46 @@
 package typingsJapgolly.pixiJs.mod
 
+import typingsJapgolly.pixiCore.mod.IAutoDetectOptions
+import typingsJapgolly.pixiSpritesheet.mod.ISpritesheetData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Utility class for maintaining reference to a collection
-  * of Textures on a single Spritesheet.
-  *
-  * To access a sprite sheet from your code pass its JSON data file to Pixi's loader:
-  *
-  * ```js
-  * PIXI.Loader.shared.add("images/spritesheet.json").load(setup);
-  *
-  * function setup() {
-  *   let sheet = PIXI.Loader.shared.resources["images/spritesheet.json"].spritesheet;
-  *   ...
-  * }
-  * ```
-  * With the `sheet.textures` you can create Sprite objects,`sheet.animations` can be used to create an AnimatedSprite.
-  *
-  * Sprite sheets can be packed using tools like {@link https://codeandweb.com/texturepacker|TexturePacker},
-  * {@link https://renderhjs.net/shoebox/|Shoebox} or {@link https://github.com/krzysztof-o/spritesheet.js|Spritesheet.js}.
-  * Default anchor points (see {@link PIXI.Texture#defaultAnchor}) and grouping of animation sprites are currently only
-  * supported by TexturePacker.
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "Spritesheet")
 @js.native
-class Spritesheet protected ()
-  extends typingsJapgolly.pixiJs.PIXI.Spritesheet {
-  def this(baseTexture: typingsJapgolly.pixiJs.PIXI.BaseTexture, data: js.Any) = this()
-  def this(baseTexture: typingsJapgolly.pixiJs.PIXI.BaseTexture, data: js.Any, resolutionFilename: String) = this()
-}
-
-/* static members */
-@JSImport("pixi.js", "Spritesheet")
-@js.native
-object Spritesheet extends js.Object {
+open class Spritesheet protected ()
+  extends typingsJapgolly.pixiSpritesheet.mod.Spritesheet {
   /**
-    * The maximum number of Textures to build per process.
-    *
-    * @type {number}
-    * @default 1000
+    * @param texture - Reference to the source BaseTexture object.
+    * @param {object} data - Spritesheet image data.
+    * @param resolutionFilename - The filename to consider when determining
+    *        the resolution of the spritesheet. If not provided, the imageUrl will
+    *        be used on the BaseTexture.
     */
-  var BATCH_SIZE: Double = js.native
+  def this(
+    texture: typingsJapgolly.pixiCore.mod.BaseTexture[typingsJapgolly.pixiCore.mod.Resource, IAutoDetectOptions],
+    data: ISpritesheetData
+  ) = this()
+  def this(
+    texture: typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.Resource],
+    data: ISpritesheetData
+  ) = this()
+  def this(
+    texture: typingsJapgolly.pixiCore.mod.BaseTexture[typingsJapgolly.pixiCore.mod.Resource, IAutoDetectOptions],
+    data: ISpritesheetData,
+    resolutionFilename: String
+  ) = this()
+  def this(
+    texture: typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.Resource],
+    data: ISpritesheetData,
+    resolutionFilename: String
+  ) = this()
 }
-
+/* static members */
+object Spritesheet {
+  
+  /** The maximum number of Textures to build per process. */
+  @JSImport("pixi.js", "Spritesheet.BATCH_SIZE")
+  @js.native
+  val BATCH_SIZE: /* 1000 */ Double = js.native
+}

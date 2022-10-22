@@ -1,13 +1,15 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorViewModelFailures extends Object {
+trait EditorViewModelFailures
+  extends StObject
+     with Object {
+  
   /**
     * The readonly error message.
     *
@@ -15,19 +17,20 @@ trait EditorViewModelFailures extends Object {
     */
   var error: Error
 }
-
 object EditorViewModelFailures {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     error: Error,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean]
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): EditorViewModelFailures = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[EditorViewModelFailures]
   }
+  
+  extension [Self <: EditorViewModelFailures](x: Self) {
+    
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+  }
 }
-

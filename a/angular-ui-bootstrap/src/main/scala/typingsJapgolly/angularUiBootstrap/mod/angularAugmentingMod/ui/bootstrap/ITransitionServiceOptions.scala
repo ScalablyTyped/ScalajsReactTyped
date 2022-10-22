@@ -1,19 +1,24 @@
 package typingsJapgolly.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITransitionServiceOptions extends js.Object {
+trait ITransitionServiceOptions extends StObject {
+  
   var animation: js.UndefOr[Boolean] = js.undefined
 }
-
 object ITransitionServiceOptions {
-  @scala.inline
-  def apply(animation: js.UndefOr[Boolean] = js.undefined): ITransitionServiceOptions = {
+  
+  inline def apply(): ITransitionServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransitionServiceOptions]
   }
+  
+  extension [Self <: ITransitionServiceOptions](x: Self) {
+    
+    inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+  }
 }
-

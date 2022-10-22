@@ -1,10 +1,12 @@
-package typingsJapgolly.activexAdodb
+package typingsJapgolly.activexAdodb.ADODB
 
+import typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object ADODB {
-  type GetRowsOptionEnum = typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
-  type StringFormatEnum = typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-}
+
+type GetRowsOptionEnum = `-1`
+
+type StringFormatEnum = `2`

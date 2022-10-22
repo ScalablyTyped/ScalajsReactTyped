@@ -1,47 +1,37 @@
 package typingsJapgolly.winrt.Windows.Data.Json
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait JsonErrorStatus extends js.Object
-
+sealed trait JsonErrorStatus extends StObject
 @JSGlobal("Windows.Data.Json.JsonErrorStatus")
 @js.native
-object JsonErrorStatus extends js.Object {
-  @js.native
-  sealed trait implementationLimit extends JsonErrorStatus
+object JsonErrorStatus extends StObject {
   
   @js.native
-  sealed trait invalidJsonNumber extends JsonErrorStatus
+  sealed trait implementationLimit
+    extends StObject
+       with JsonErrorStatus
   
   @js.native
-  sealed trait invalidJsonString extends JsonErrorStatus
+  sealed trait invalidJsonNumber
+    extends StObject
+       with JsonErrorStatus
   
   @js.native
-  sealed trait jsonValueNotFound extends JsonErrorStatus
+  sealed trait invalidJsonString
+    extends StObject
+       with JsonErrorStatus
   
   @js.native
-  sealed trait unknown extends JsonErrorStatus
+  sealed trait jsonValueNotFound
+    extends StObject
+       with JsonErrorStatus
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[JsonErrorStatus with Double] = js.native
-  /* 4 */ @js.native
-  object implementationLimit extends TopLevel[implementationLimit with Double]
-  
-  /* 2 */ @js.native
-  object invalidJsonNumber extends TopLevel[invalidJsonNumber with Double]
-  
-  /* 1 */ @js.native
-  object invalidJsonString extends TopLevel[invalidJsonString with Double]
-  
-  /* 3 */ @js.native
-  object jsonValueNotFound extends TopLevel[jsonValueNotFound with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  @js.native
+  sealed trait unknown
+    extends StObject
+       with JsonErrorStatus
 }
-

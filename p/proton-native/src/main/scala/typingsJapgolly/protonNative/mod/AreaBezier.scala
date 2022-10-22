@@ -1,12 +1,18 @@
 package typingsJapgolly.protonNative.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("proton-native", "AreaBezier")
 @js.native
-class AreaBezier ()
-  extends Component[AreaBezierProps, js.Object, js.Any]
-
+open class AreaBezier protected ()
+  extends Component[AreaBezierProps, js.Object, Any] {
+  def this(props: AreaBezierProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: AreaBezierProps, context: Any) = this()
+}

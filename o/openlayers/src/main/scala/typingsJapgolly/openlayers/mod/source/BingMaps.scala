@@ -2,9 +2,9 @@ package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.Attribution
 import typingsJapgolly.openlayers.mod.olx.source.BingMapsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.BingMaps")
 @js.native
-class BingMaps protected () extends TileImage {
+open class BingMaps protected () extends TileImage {
   /**
     * @classdesc
     * Layer source for Bing Maps tile data.
@@ -25,17 +25,21 @@ class BingMaps protected () extends TileImage {
     */
   def this(options: BingMapsOptions) = this()
 }
-
-/* static members */
-@JSImport("openlayers", "source.BingMaps")
-@js.native
-object BingMaps extends js.Object {
+object BingMaps {
+  
+  @JSImport("openlayers", "source.BingMaps")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * The attribution containing a link to the Microsoft® Bing™ Maps Platform APIs’
     * Terms Of Use.
     * @const
     * @api
     */
-  var TOS_ATTRIBUTION: Attribution = js.native
+  /* static member */
+  @JSImport("openlayers", "source.BingMaps.TOS_ATTRIBUTION")
+  @js.native
+  def TOS_ATTRIBUTION: Attribution = js.native
+  inline def TOS_ATTRIBUTION_=(x: Attribution): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOS_ATTRIBUTION")(x.asInstanceOf[js.Any])
 }
-

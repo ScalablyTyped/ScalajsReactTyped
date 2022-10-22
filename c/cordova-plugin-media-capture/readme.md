@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-media-capture
 
-Typings are for version 3.0.3
+Typings are for version 4.0.0
 
 ## Library description:
 Cordova Media Capture Plugin
@@ -11,9 +11,9 @@ Cordova Media Capture Plugin
 | Full name          | cordova-plugin-media-capture |
 | Keywords           | cordova, media, capture, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows |
 | # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 308930 |
-| # stars            | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 22933.0 |
+| # stars            | 287.0 |
 
 ## Links
 - [Homepage](https://github.com/apache/cordova-plugin-media-capture#readme)

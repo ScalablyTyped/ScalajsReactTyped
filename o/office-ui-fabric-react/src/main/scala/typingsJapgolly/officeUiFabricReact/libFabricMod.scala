@@ -1,20 +1,31 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.fabricTypesMod.IFabricProps
-import typingsJapgolly.react.mod.FunctionComponent
+import typingsJapgolly.officeUiFabricReact.libComponentsFabricFabricDottypesMod.IFabricProps
+import typingsJapgolly.react.mod.ForwardRefExoticComponent
+import typingsJapgolly.react.mod.RefAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Fabric", JSImport.Namespace)
-@js.native
-object libFabricMod extends js.Object {
-  @js.native
-  class FabricBase protected ()
-    extends typingsJapgolly.officeUiFabricReact.fabricMod.FabricBase {
-    def this(props: IFabricProps) = this()
-  }
+object libFabricMod {
   
-  val Fabric: FunctionComponent[IFabricProps] = js.native
+  @JSImport("office-ui-fabric-react/lib/Fabric", "Fabric")
+  @js.native
+  val Fabric: ForwardRefExoticComponent[
+    IFabricProps & (RefAttributes[
+      typingsJapgolly.officeUiFabricReact.libComponentsFabricFabricDotbaseMod.FabricBase
+    ])
+  ] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Fabric", "FabricBase")
+  @js.native
+  open class FabricBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsFabricMod.FabricBase {
+    def this(props: IFabricProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: IFabricProps, context: Any) = this()
+  }
 }
-

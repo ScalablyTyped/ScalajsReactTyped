@@ -1,24 +1,29 @@
 package typingsJapgolly.slonik.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TypeParserType[T] extends js.Object {
+trait TypeParserType[T] extends StObject {
+  
   /**
     * Value of "pg_type"."typname" (e.g. "int8", "timestamp", "timestamptz")
     */
   var name: String
+  
   def parse(value: String): T
 }
-
 object TypeParserType {
-  @scala.inline
-  def apply[T](name: String, parse: String => CallbackTo[T]): TypeParserType[T] = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("parse")(js.Any.fromFunction1((t0: java.lang.String) => parse(t0).runNow()))
+  
+  inline def apply[T](name: String, parse: String => T): TypeParserType[T] = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse))
     __obj.asInstanceOf[TypeParserType[T]]
   }
+  
+  extension [Self <: TypeParserType[?], T](x: Self & TypeParserType[T]) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setParse(value: String => T): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+  }
 }
-

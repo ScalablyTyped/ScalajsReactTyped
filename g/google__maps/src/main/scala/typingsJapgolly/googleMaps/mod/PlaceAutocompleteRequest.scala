@@ -1,10 +1,11 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlaceAutocompleteRequest extends js.Object {
+trait PlaceAutocompleteRequest extends StObject {
+  
   /**
     * A grouping of places to which you would like to restrict your results.
     * Currently, you can use `components` to filter by up to 5 countries.
@@ -15,11 +16,13 @@ trait PlaceAutocompleteRequest extends js.Object {
     * to places within the United States and its unincorporated organized territories.
     */
   var components: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * The text string on which to search. The Place Autocomplete service will return candidate matches
     * based on this string and order results based on their perceived relevance.
     */
   var input: String
+  
   /**
     * The language code, indicating in which language the results should be returned, if possible.
     * Searches are also biased to the selected language; results in the selected language may be given a higher ranking.
@@ -29,8 +32,10 @@ trait PlaceAutocompleteRequest extends js.Object {
     * of the domain from which the request is sent.
     */
   var language: js.UndefOr[String] = js.undefined
+  
   /** The point around which you wish to retrieve place information. */
   var location: js.UndefOr[LatLng] = js.undefined
+  
   /**
     * The position, in the input term, of the last character that the service uses to match predictions.
     * For example, if the input is 'Google' and the `offset` is 3, the service will match on 'Goo'.
@@ -40,50 +45,73 @@ trait PlaceAutocompleteRequest extends js.Object {
     * The `offset` should generally be set to the position of the text caret.
     */
   var offset: js.UndefOr[Double] = js.undefined
+  
   /**
     * The distance (in meters) within which to return place results. Note that setting a radius biases results to the indicated area,
     * but may not fully restrict results to the specified area.
     */
   var radius: js.UndefOr[Double] = js.undefined
+  
   /**
     * A random string which identifies an autocomplete
     * [session](https://developers.google.com/places/web-service/autocomplete#session_tokens) for billing purposes.
     * If this parameter is omitted from an autocomplete request, the request is billed independently
     */
   var sessiontoken: js.UndefOr[String] = js.undefined
+  
   /**
     * Returns only those places that are strictly within the region defined by `location` and `radius`.
     * This is a restriction, rather than a bias, meaning that results outside this region
     * will not be returned even if they match the user input.
     */
   var strictbounds: js.UndefOr[Boolean] = js.undefined
+  
   /** The types of place results to return. */
   var types: js.UndefOr[PlaceAutocompleteType] = js.undefined
 }
-
 object PlaceAutocompleteRequest {
-  @scala.inline
-  def apply(
-    input: String,
-    components: js.Array[String] = null,
-    language: String = null,
-    location: LatLng = null,
-    offset: Int | Double = null,
-    radius: Int | Double = null,
-    sessiontoken: String = null,
-    strictbounds: js.UndefOr[Boolean] = js.undefined,
-    types: PlaceAutocompleteType = null
-  ): PlaceAutocompleteRequest = {
+  
+  inline def apply(input: String): PlaceAutocompleteRequest = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (sessiontoken != null) __obj.updateDynamic("sessiontoken")(sessiontoken.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictbounds)) __obj.updateDynamic("strictbounds")(strictbounds.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceAutocompleteRequest]
   }
+  
+  extension [Self <: PlaceAutocompleteRequest](x: Self) {
+    
+    inline def setComponents(value: js.Array[String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    
+    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    
+    inline def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value*))
+    
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    
+    inline def setSessiontoken(value: String): Self = StObject.set(x, "sessiontoken", value.asInstanceOf[js.Any])
+    
+    inline def setSessiontokenUndefined: Self = StObject.set(x, "sessiontoken", js.undefined)
+    
+    inline def setStrictbounds(value: Boolean): Self = StObject.set(x, "strictbounds", value.asInstanceOf[js.Any])
+    
+    inline def setStrictboundsUndefined: Self = StObject.set(x, "strictbounds", js.undefined)
+    
+    inline def setTypes(value: PlaceAutocompleteType): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+  }
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PanoramaLink extends js.Object {
+trait PanoramaLink extends StObject {
+  
   var description: String
+  
   var heading: String
+  
   var id: String
 }
-
 object PanoramaLink {
-  @scala.inline
-  def apply(description: String, heading: String, id: String): PanoramaLink = {
-    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
+  inline def apply(description: String, heading: String, id: String): PanoramaLink = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanoramaLink]
   }
+  
+  extension [Self <: PanoramaLink](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+  }
 }
-

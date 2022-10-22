@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramPannable extends js.Object {
+trait DiagramPannable extends StObject {
+  
   var key: js.UndefOr[String] = js.undefined
 }
-
 object DiagramPannable {
-  @scala.inline
-  def apply(key: String = null): DiagramPannable = {
+  
+  inline def apply(): DiagramPannable = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramPannable]
   }
+  
+  extension [Self <: DiagramPannable](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+  }
 }
-

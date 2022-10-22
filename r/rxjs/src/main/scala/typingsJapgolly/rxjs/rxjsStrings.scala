@@ -1,50 +1,79 @@
 package typingsJapgolly.rxjs
 
-import typingsJapgolly.rxjs.ajaxObservableMod.AjaxErrorNames
+import typingsJapgolly.rxjs.distTypesInternalAjaxTypesMod.AjaxDirection
+import typingsJapgolly.rxjs.distTypesInternalAjaxTypesMod.ProgressEventType
+import typingsJapgolly.rxjs.distTypesInternalTypesMod._Falsy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rxjsStrings {
-  @js.native
-  sealed trait AjaxError extends AjaxErrorNames
   
   @js.native
-  sealed trait AjaxTimeoutError extends AjaxErrorNames
+  sealed trait C extends StObject
+  inline def C: C = "C".asInstanceOf[C]
   
   @js.native
-  sealed trait C extends js.Object
+  sealed trait E extends StObject
+  inline def E: E = "E".asInstanceOf[E]
   
   @js.native
-  sealed trait E extends js.Object
+  sealed trait N extends StObject
+  inline def N: N = "N".asInstanceOf[N]
   
   @js.native
-  sealed trait N extends js.Object
+  sealed trait _empty
+    extends StObject
+       with _Falsy
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait arraybuffer extends js.Object
+  sealed trait arraybuffer extends StObject
+  inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
-  sealed trait blob extends js.Object
+  sealed trait blob extends StObject
+  inline def blob: blob = "blob".asInstanceOf[blob]
   
   @js.native
-  sealed trait forkJoin extends js.Object
+  sealed trait download
+    extends StObject
+       with AjaxDirection
+  inline def download: download = "download".asInstanceOf[download]
   
-  @scala.inline
-  def AjaxError: AjaxError = "AjaxError".asInstanceOf[AjaxError]
-  @scala.inline
-  def AjaxTimeoutError: AjaxTimeoutError = "AjaxTimeoutError".asInstanceOf[AjaxTimeoutError]
-  @scala.inline
-  def C: C = "C".asInstanceOf[C]
-  @scala.inline
-  def E: E = "E".asInstanceOf[E]
-  @scala.inline
-  def N: N = "N".asInstanceOf[N]
-  @scala.inline
-  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
-  @scala.inline
-  def forkJoin: forkJoin = "forkJoin".asInstanceOf[forkJoin]
+  @js.native
+  sealed trait index extends StObject
+  inline def index: index = "index".asInstanceOf[index]
+  
+  @js.native
+  sealed trait load
+    extends StObject
+       with ProgressEventType
+  inline def load: load = "load".asInstanceOf[load]
+  
+  @js.native
+  sealed trait loadstart
+    extends StObject
+       with ProgressEventType
+  inline def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
+  
+  @js.native
+  sealed trait progress
+    extends StObject
+       with ProgressEventType
+  inline def progress: progress = "progress".asInstanceOf[progress]
+  
+  @js.native
+  sealed trait upload
+    extends StObject
+       with AjaxDirection
+  inline def upload: upload = "upload".asInstanceOf[upload]
+  
+  @js.native
+  sealed trait value extends StObject
+  inline def value: value = "value".asInstanceOf[value]
+  
+  @js.native
+  sealed trait `with` extends StObject
+  inline def `with`: `with` = "with".asInstanceOf[`with`]
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.reactBootstrapTypeahead.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.hintText
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onAdd
   - typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selectHintOnEnter
 */
-trait HintedInputContextKeys extends js.Object
-
+trait HintedInputContextKeys extends StObject
 object HintedInputContextKeys {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def hintText: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.hintText = this.cast("hintText")
-  @scala.inline
-  def initialItem: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.initialItem = this.cast("initialItem")
-  @scala.inline
-  def onAdd: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onAdd = this.cast("onAdd")
-  @scala.inline
-  def selectHintOnEnter: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selectHintOnEnter = this.cast("selectHintOnEnter")
+  
+  inline def hintText: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.hintText = "hintText".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.hintText]
+  
+  inline def initialItem: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.initialItem = "initialItem".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.initialItem]
+  
+  inline def onAdd: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onAdd = "onAdd".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onAdd]
+  
+  inline def selectHintOnEnter: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selectHintOnEnter = "selectHintOnEnter".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selectHintOnEnter]
 }
-

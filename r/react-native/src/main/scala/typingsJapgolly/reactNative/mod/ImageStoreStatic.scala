@@ -1,11 +1,12 @@
 package typingsJapgolly.reactNative.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageStoreStatic extends js.Object {
+trait ImageStoreStatic extends StObject {
+  
   /**
     * Stores a base64-encoded image in the ImageStore, and returns a URI that
     * can be used to access or display the image later. Images are stored in
@@ -20,8 +21,9 @@ trait ImageStoreStatic extends js.Object {
   def addImageFromBase64(
     base64ImageData: String,
     success: js.Function1[/* uri */ String, Unit],
-    failure: js.Function1[/* error */ js.Any, Unit]
+    failure: js.Function1[/* error */ Any, Unit]
   ): Unit
+  
   /**
     * Retrieves the base64-encoded data for an image in the ImageStore. If the
     * specified URI does not match an image in the store, the failure callback
@@ -36,13 +38,15 @@ trait ImageStoreStatic extends js.Object {
   def getBase64ForTag(
     uri: String,
     success: js.Function1[/* base64ImageData */ String, Unit],
-    failure: js.Function1[/* error */ js.Any, Unit]
+    failure: js.Function1[/* error */ Any, Unit]
   ): Unit
+  
   /**
     * Check if the ImageStore contains image data for the specified URI.
     * @platform ios
     */
   def hasImageForTag(uri: String, callback: js.Function1[/* hasImage */ Boolean, Unit]): Unit
+  
   /**
     * Delete an image from the ImageStore. Images are stored in memory and
     * must be manually removed when you are finished with them, otherwise they
@@ -53,21 +57,30 @@ trait ImageStoreStatic extends js.Object {
     */
   def removeImageForTag(uri: String): Unit
 }
-
 object ImageStoreStatic {
-  @scala.inline
-  def apply(
-    addImageFromBase64: (String, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ js.Any, Unit]) => Callback,
-    getBase64ForTag: (String, js.Function1[/* base64ImageData */ String, Unit], js.Function1[/* error */ js.Any, Unit]) => Callback,
+  
+  inline def apply(
+    addImageFromBase64: (String, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ Any, Unit]) => Callback,
+    getBase64ForTag: (String, js.Function1[/* base64ImageData */ String, Unit], js.Function1[/* error */ Any, Unit]) => Callback,
     hasImageForTag: (String, js.Function1[/* hasImage */ Boolean, Unit]) => Callback,
     removeImageForTag: String => Callback
   ): ImageStoreStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addImageFromBase64")(js.Any.fromFunction3((t0: java.lang.String, t1: js.Function1[/* uri */ java.lang.String, scala.Unit], t2: js.Function1[/* error */ js.Any, scala.Unit]) => addImageFromBase64(t0, t1, t2).runNow()))
-    __obj.updateDynamic("getBase64ForTag")(js.Any.fromFunction3((t0: java.lang.String, t1: js.Function1[/* base64ImageData */ java.lang.String, scala.Unit], t2: js.Function1[/* error */ js.Any, scala.Unit]) => getBase64ForTag(t0, t1, t2).runNow()))
-    __obj.updateDynamic("hasImageForTag")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Function1[/* hasImage */ scala.Boolean, scala.Unit]) => hasImageForTag(t0, t1).runNow()))
-    __obj.updateDynamic("removeImageForTag")(js.Any.fromFunction1((t0: java.lang.String) => removeImageForTag(t0).runNow()))
+    val __obj = js.Dynamic.literal(addImageFromBase64 = js.Any.fromFunction3((t0: String, t1: js.Function1[/* uri */ String, Unit], t2: js.Function1[/* error */ Any, Unit]) => (addImageFromBase64(t0, t1, t2)).runNow()), getBase64ForTag = js.Any.fromFunction3((t0: String, t1: js.Function1[/* base64ImageData */ String, Unit], t2: js.Function1[/* error */ Any, Unit]) => (getBase64ForTag(t0, t1, t2)).runNow()), hasImageForTag = js.Any.fromFunction2((t0: String, t1: js.Function1[/* hasImage */ Boolean, Unit]) => (hasImageForTag(t0, t1)).runNow()), removeImageForTag = js.Any.fromFunction1((t0: String) => removeImageForTag(t0).runNow()))
     __obj.asInstanceOf[ImageStoreStatic]
   }
+  
+  extension [Self <: ImageStoreStatic](x: Self) {
+    
+    inline def setAddImageFromBase64(
+      value: (String, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ Any, Unit]) => Callback
+    ): Self = StObject.set(x, "addImageFromBase64", js.Any.fromFunction3((t0: String, t1: js.Function1[/* uri */ String, Unit], t2: js.Function1[/* error */ Any, Unit]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setGetBase64ForTag(
+      value: (String, js.Function1[/* base64ImageData */ String, Unit], js.Function1[/* error */ Any, Unit]) => Callback
+    ): Self = StObject.set(x, "getBase64ForTag", js.Any.fromFunction3((t0: String, t1: js.Function1[/* base64ImageData */ String, Unit], t2: js.Function1[/* error */ Any, Unit]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setHasImageForTag(value: (String, js.Function1[/* hasImage */ Boolean, Unit]) => Callback): Self = StObject.set(x, "hasImageForTag", js.Any.fromFunction2((t0: String, t1: js.Function1[/* hasImage */ Boolean, Unit]) => (value(t0, t1)).runNow()))
+    
+    inline def setRemoveImageForTag(value: String => Callback): Self = StObject.set(x, "removeImageForTag", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+  }
 }
-

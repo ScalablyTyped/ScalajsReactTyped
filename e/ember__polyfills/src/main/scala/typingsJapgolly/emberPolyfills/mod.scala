@@ -3,18 +3,19 @@ package typingsJapgolly.emberPolyfills
 import typingsJapgolly.emberPolyfills.typesMod.Mix
 import typingsJapgolly.emberPolyfills.typesMod.Mix3
 import typingsJapgolly.emberPolyfills.typesMod.Mix4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/polyfills", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def assign(target: js.Object): scala.Nothing = js.native
-  def assign(target: js.Object, sources: js.Object*): js.Any = js.native
-  def assign[T /* <: js.Object */, U /* <: js.Object */](target: T, source: U): Mix[T, U] = js.native
-  def assign[T /* <: js.Object */, U /* <: js.Object */, V /* <: js.Object */](target: T, source1: U, source2: V): Mix3[T, U, V] = js.native
-  def assign[T /* <: js.Object */, U /* <: js.Object */, V /* <: js.Object */, W /* <: js.Object */](target: T, source1: U, source2: V, source3: W): Mix4[T, U, V, W] = js.native
-  def merge[T /* <: js.Object */, U /* <: js.Object */](original: T, updates: U): Mix[T, U] = js.native
+object mod {
+  
+  @JSImport("@ember/polyfills", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def assign(target: js.Object): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def assign(target: js.Object, sources: js.Object*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def assign[T /* <: js.Object */, U /* <: js.Object */](target: T, source: U): Mix[T, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Mix[T, U]]
+  inline def assign[T /* <: js.Object */, U /* <: js.Object */, V /* <: js.Object */](target: T, source1: U, source2: V): Mix3[T, U, V] = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[Mix3[T, U, V]]
+  inline def assign[T /* <: js.Object */, U /* <: js.Object */, V /* <: js.Object */, W /* <: js.Object */](target: T, source1: U, source2: V, source3: W): Mix4[T, U, V, W] = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[Mix4[T, U, V, W]]
 }
-

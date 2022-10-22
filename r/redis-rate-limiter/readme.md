@@ -10,10 +10,10 @@ Rate-limit any operation, backed by Redis
 | ------------------ | :-------------: |
 | Full name          | redis-rate-limiter |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 169553 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7159.666666666667 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/Tabcorp/redis-rate-limiter#readme)

@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Foundation
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AsyncStatus extends js.Object
-
+sealed trait AsyncStatus extends StObject
 @JSGlobal("Windows.Foundation.AsyncStatus")
 @js.native
-object AsyncStatus extends js.Object {
-  @js.native
-  sealed trait canceled extends AsyncStatus
+object AsyncStatus extends StObject {
   
   @js.native
-  sealed trait completed extends AsyncStatus
+  sealed trait canceled
+    extends StObject
+       with AsyncStatus
   
   @js.native
-  sealed trait error extends AsyncStatus
+  sealed trait completed
+    extends StObject
+       with AsyncStatus
   
   @js.native
-  sealed trait started extends AsyncStatus
+  sealed trait error
+    extends StObject
+       with AsyncStatus
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AsyncStatus with Double] = js.native
-  /* 0 */ @js.native
-  object canceled extends TopLevel[canceled with Double]
-  
-  /* 1 */ @js.native
-  object completed extends TopLevel[completed with Double]
-  
-  /* 2 */ @js.native
-  object error extends TopLevel[error with Double]
-  
-  /* 3 */ @js.native
-  object started extends TopLevel[started with Double]
-  
+  @js.native
+  sealed trait started
+    extends StObject
+       with AsyncStatus
 }
-

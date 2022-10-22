@@ -1,31 +1,39 @@
 package typingsJapgolly.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("couchbase", "SearchFacet")
 @js.native
-class SearchFacet () extends js.Object
-
-@JSImport("couchbase", "SearchFacet")
-@js.native
-object SearchFacet extends js.Object {
+open class SearchFacet () extends StObject
+object SearchFacet {
+  
+  @JSImport("couchbase", "SearchFacet")
   @js.native
-  class DateFacet () extends SearchFacet {
+  val ^ : js.Any = js.native
+  
+  @JSImport("couchbase", "SearchFacet.DateFacet")
+  @js.native
+  open class DateFacet () extends SearchFacet {
+    
     def addRange(name: String, start: String, end: String): this.type = js.native
   }
   
+  @JSImport("couchbase", "SearchFacet.NumericFacet")
   @js.native
-  class NumericFacet () extends SearchFacet {
+  open class NumericFacet () extends SearchFacet {
+    
     def addRange(name: String, min: Double, max: Double): this.type = js.native
   }
   
+  @JSImport("couchbase", "SearchFacet.TermFacet")
   @js.native
-  class TermFacet () extends SearchFacet
+  open class TermFacet () extends SearchFacet
   
-  def date(field: String, size: Double): DateFacet = js.native
-  def numeric(field: String, size: Double): NumericFacet = js.native
-  def term(field: String, size: Double): TermFacet = js.native
+  inline def date(field: String, size: Double): DateFacet = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(field.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[DateFacet]
+  
+  inline def numeric(field: String, size: Double): NumericFacet = (^.asInstanceOf[js.Dynamic].applyDynamic("numeric")(field.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[NumericFacet]
+  
+  inline def term(field: String, size: Double): TermFacet = (^.asInstanceOf[js.Dynamic].applyDynamic("term")(field.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[TermFacet]
 }
-

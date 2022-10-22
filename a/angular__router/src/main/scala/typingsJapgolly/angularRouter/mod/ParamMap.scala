@@ -1,13 +1,11 @@
 package typingsJapgolly.angularRouter.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParamMap extends js.Object {
-  /** Names of the parameters in the map. */
-  val keys: js.Array[String]
+trait ParamMap extends StObject {
+  
   /**
     * Retrieves a single value for a parameter.
     * @param name The parameter name.
@@ -16,6 +14,7 @@ trait ParamMap extends js.Object {
     * or `null` when there is no such parameter.
     */
   def get(name: String): String | Null
+  
   /**
     * Retrieves multiple values for a parameter.
     * @param name The parameter name.
@@ -24,27 +23,39 @@ trait ParamMap extends js.Object {
     *
     */
   def getAll(name: String): js.Array[String]
+  
   /**
     * Reports whether the map contains a given parameter.
     * @param name The parameter name.
     * @returns True if the map contains the given parameter, false otherwise.
     */
   def has(name: String): Boolean
+  
+  /** Names of the parameters in the map. */
+  val keys: js.Array[String]
 }
-
 object ParamMap {
-  @scala.inline
-  def apply(
-    get: String => CallbackTo[String | Null],
-    getAll: String => CallbackTo[js.Array[String]],
-    has: String => CallbackTo[Boolean],
+  
+  inline def apply(
+    get: String => String | Null,
+    getAll: String => js.Array[String],
+    has: String => Boolean,
     keys: js.Array[String]
   ): ParamMap = {
-    val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
-    __obj.updateDynamic("get")(js.Any.fromFunction1((t0: java.lang.String) => get(t0).runNow()))
-    __obj.updateDynamic("getAll")(js.Any.fromFunction1((t0: java.lang.String) => getAll(t0).runNow()))
-    __obj.updateDynamic("has")(js.Any.fromFunction1((t0: java.lang.String) => has(t0).runNow()))
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getAll = js.Any.fromFunction1(getAll), has = js.Any.fromFunction1(has), keys = keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamMap]
   }
+  
+  extension [Self <: ParamMap](x: Self) {
+    
+    inline def setGet(value: String => String | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    
+    inline def setGetAll(value: String => js.Array[String]): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
+    
+    inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    
+    inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
+  }
 }
-

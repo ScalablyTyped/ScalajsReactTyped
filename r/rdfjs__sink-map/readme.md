@@ -4,16 +4,16 @@
 Typings are for version 1.0
 
 ## Library description:
-Map for RDFJS Sinks including shortcut methods
+Map for RDF/JS Sinks including shortcut methods
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/sink-map |
 | Keywords           | map, rdf, rdfjs, sink |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 3471 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 24720.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/sink-map)

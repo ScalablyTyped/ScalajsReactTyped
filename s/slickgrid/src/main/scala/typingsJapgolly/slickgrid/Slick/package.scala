@@ -1,29 +1,44 @@
-package typingsJapgolly.slickgrid
+package typingsJapgolly.slickgrid.Slick
 
+import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Slick {
-  type CellCssStylesHash = org.scalablytyped.runtime.NumberDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
-  type Formatter[T /* <: typingsJapgolly.slickgrid.Slick.SlickData */] = js.Function5[
-    /* row */ scala.Double, 
-    /* cell */ scala.Double, 
-    /* value */ js.Any, 
-    /* columnDef */ typingsJapgolly.slickgrid.Slick.Column[T], 
-    /* dataContext */ typingsJapgolly.slickgrid.Slick.SlickData, 
-    java.lang.String
-  ]
-  type OnActiveCellPositionChangedEventArgs[T /* <: typingsJapgolly.slickgrid.Slick.SlickData */] = typingsJapgolly.slickgrid.Slick.GridEventArgs[T]
-  type OnBeforeDestroyEventArgs[T /* <: typingsJapgolly.slickgrid.Slick.SlickData */] = typingsJapgolly.slickgrid.Slick.GridEventArgs[T]
-  type OnColumnsReorderedEventArgs[T /* <: typingsJapgolly.slickgrid.Slick.SlickData */] = typingsJapgolly.slickgrid.Slick.GridEventArgs[T]
-  type OnColumnsResizedEventArgs[T /* <: typingsJapgolly.slickgrid.Slick.SlickData */] = typingsJapgolly.slickgrid.Slick.GridEventArgs[T]
-  type OnContextMenuEventArgs[T /* <: typingsJapgolly.slickgrid.Slick.SlickData */] = typingsJapgolly.slickgrid.Slick.GridEventArgs[T]
-  type OnDragEndEventArgs[T /* <: typingsJapgolly.slickgrid.Slick.SlickData */] = typingsJapgolly.slickgrid.Slick.GridEventArgs[T]
-  type OnDragEventArgs[T /* <: typingsJapgolly.slickgrid.Slick.SlickData */] = typingsJapgolly.slickgrid.Slick.GridEventArgs[T]
-  type OnDragInitEventArgs[T /* <: typingsJapgolly.slickgrid.Slick.SlickData */] = typingsJapgolly.slickgrid.Slick.GridEventArgs[T]
-  type OnDragStartEventArgs[T /* <: typingsJapgolly.slickgrid.Slick.SlickData */] = typingsJapgolly.slickgrid.Slick.GridEventArgs[T]
-  type OnMouseEnterEventArgs[T /* <: typingsJapgolly.slickgrid.Slick.SlickData */] = typingsJapgolly.slickgrid.Slick.GridEventArgs[T]
-  type OnMouseLeaveEventArgs[T /* <: typingsJapgolly.slickgrid.Slick.SlickData */] = typingsJapgolly.slickgrid.Slick.GridEventArgs[T]
-  type OnViewportChangedEventArgs[T /* <: typingsJapgolly.slickgrid.Slick.SlickData */] = typingsJapgolly.slickgrid.Slick.GridEventArgs[T]
-}
+
+type AutoTooltips = Plugin[SlickData]
+
+type CellCssStylesHash = NumberDictionary[StringDictionary[String]]
+
+type Formatter[T /* <: SlickData */] = js.Function5[
+/* row */ Double, 
+/* cell */ Double, 
+/* value */ Any, 
+/* columnDef */ Column[T], 
+/* dataContext */ SlickData, 
+String]
+
+type OnActiveCellPositionChangedEventArgs[T /* <: SlickData */] = GridEventArgs[T]
+
+type OnBeforeDestroyEventArgs[T /* <: SlickData */] = GridEventArgs[T]
+
+type OnColumnsReorderedEventArgs[T /* <: SlickData */] = GridEventArgs[T]
+
+type OnColumnsResizedEventArgs[T /* <: SlickData */] = GridEventArgs[T]
+
+type OnContextMenuEventArgs[T /* <: SlickData */] = GridEventArgs[T]
+
+type OnDragEndEventArgs[T /* <: SlickData */] = GridEventArgs[T]
+
+type OnDragEventArgs[T /* <: SlickData */] = GridEventArgs[T]
+
+type OnDragInitEventArgs[T /* <: SlickData */] = GridEventArgs[T]
+
+type OnDragStartEventArgs[T /* <: SlickData */] = GridEventArgs[T]
+
+type OnMouseEnterEventArgs[T /* <: SlickData */] = GridEventArgs[T]
+
+type OnMouseLeaveEventArgs[T /* <: SlickData */] = GridEventArgs[T]
+
+type OnViewportChangedEventArgs[T /* <: SlickData */] = GridEventArgs[T]

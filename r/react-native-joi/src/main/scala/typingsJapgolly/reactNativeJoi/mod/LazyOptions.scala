@@ -1,22 +1,27 @@
 package typingsJapgolly.reactNativeJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LazyOptions extends js.Object {
+trait LazyOptions extends StObject {
+  
   /**
     * If true the schema generator will only be called once and the result will be cached.
     */
   var once: js.UndefOr[Boolean] = js.undefined
 }
-
 object LazyOptions {
-  @scala.inline
-  def apply(once: js.UndefOr[Boolean] = js.undefined): LazyOptions = {
+  
+  inline def apply(): LazyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
     __obj.asInstanceOf[LazyOptions]
   }
+  
+  extension [Self <: LazyOptions](x: Self) {
+    
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+  }
 }
-

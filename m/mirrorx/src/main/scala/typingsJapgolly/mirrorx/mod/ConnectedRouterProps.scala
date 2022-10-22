@@ -1,23 +1,31 @@
 package typingsJapgolly.mirrorx.mod
 
 import typingsJapgolly.history.mod.History
-import typingsJapgolly.history.mod.LocationState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConnectedRouterProps[State] extends js.Object {
-  var history: js.UndefOr[History[LocationState]] = js.undefined
-  var store: js.UndefOr[js.Any] = js.undefined
+trait ConnectedRouterProps[State] extends StObject {
+  
+  var history: js.UndefOr[History] = js.undefined
+  
+  var store: js.UndefOr[Any] = js.undefined
 }
-
 object ConnectedRouterProps {
-  @scala.inline
-  def apply[State](history: History[LocationState] = null, store: js.Any = null): ConnectedRouterProps[State] = {
+  
+  inline def apply[State](): ConnectedRouterProps[State] = {
     val __obj = js.Dynamic.literal()
-    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectedRouterProps[State]]
   }
+  
+  extension [Self <: ConnectedRouterProps[?], State](x: Self & ConnectedRouterProps[State]) {
+    
+    inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    
+    inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    
+    inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+  }
 }
-

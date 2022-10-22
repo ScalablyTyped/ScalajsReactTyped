@@ -1,31 +1,32 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EmitStatement
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode
      with Statement {
+  
   var eventCall: FunctionCall
+  
   @JSName("type")
   var type_EmitStatement: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EmitStatement
 }
-
 object EmitStatement {
-  @scala.inline
-  def apply(
-    eventCall: FunctionCall,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EmitStatement,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): EmitStatement = {
+  
+  inline def apply(eventCall: FunctionCall): EmitStatement = {
     val __obj = js.Dynamic.literal(eventCall = eventCall.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EmitStatement")
     __obj.asInstanceOf[EmitStatement]
   }
+  
+  extension [Self <: EmitStatement](x: Self) {
+    
+    inline def setEventCall(value: FunctionCall): Self = StObject.set(x, "eventCall", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EmitStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

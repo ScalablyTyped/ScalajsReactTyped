@@ -1,24 +1,12 @@
 package typingsJapgolly.baconjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baconjsStrings {
-  @js.native
-  sealed trait `Lessthansignno-moreGreaterthansign` extends js.Object
   
   @js.native
-  sealed trait LessthansignversionGreaterthansign extends js.Object
-  
-  @js.native
-  sealed trait ObjectTemplate extends js.Object
-  
-  @scala.inline
-  def `Lessthansignno-moreGreaterthansign`: `Lessthansignno-moreGreaterthansign` = "<no-more>".asInstanceOf[`Lessthansignno-moreGreaterthansign`]
-  @scala.inline
-  def LessthansignversionGreaterthansign: LessthansignversionGreaterthansign = "<version>".asInstanceOf[LessthansignversionGreaterthansign]
-  @scala.inline
-  def ObjectTemplate: ObjectTemplate = "ObjectTemplate".asInstanceOf[ObjectTemplate]
+  sealed trait `Lessthansignno-moreGreaterthansign` extends StObject
+  inline def `Lessthansignno-moreGreaterthansign`: `Lessthansignno-moreGreaterthansign` = "<no-more>".asInstanceOf[`Lessthansignno-moreGreaterthansign`]
 }
-

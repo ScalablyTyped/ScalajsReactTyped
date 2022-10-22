@@ -1,30 +1,35 @@
 package typingsJapgolly.kafkaNode.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomPartitionAssignmentProtocol extends js.Object {
+trait CustomPartitionAssignmentProtocol extends StObject {
+  
+  def assign(topicPattern: Any, groupMembers: Any, cb: js.Function2[/* error */ Any, /* result */ Any, Unit]): Unit
+  
   var name: String
+  
   var version: Double
-  def assign(
-    topicPattern: js.Any,
-    groupMembers: js.Any,
-    cb: js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]
-  ): Unit
 }
-
 object CustomPartitionAssignmentProtocol {
-  @scala.inline
-  def apply(
-    assign: (js.Any, js.Any, js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]) => Callback,
+  
+  inline def apply(
+    assign: (Any, Any, js.Function2[/* error */ Any, /* result */ Any, Unit]) => Callback,
     name: String,
     version: Double
   ): CustomPartitionAssignmentProtocol = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    __obj.updateDynamic("assign")(js.Any.fromFunction3((t0: js.Any, t1: js.Any, t2: js.Function2[/* error */ js.Any, /* result */ js.Any, scala.Unit]) => assign(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(assign = js.Any.fromFunction3((t0: Any, t1: Any, t2: js.Function2[/* error */ Any, /* result */ Any, Unit]) => (assign(t0, t1, t2)).runNow()), name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPartitionAssignmentProtocol]
   }
+  
+  extension [Self <: CustomPartitionAssignmentProtocol](x: Self) {
+    
+    inline def setAssign(value: (Any, Any, js.Function2[/* error */ Any, /* result */ Any, Unit]) => Callback): Self = StObject.set(x, "assign", js.Any.fromFunction3((t0: Any, t1: Any, t2: js.Function2[/* error */ Any, /* result */ Any, Unit]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+  }
 }
-

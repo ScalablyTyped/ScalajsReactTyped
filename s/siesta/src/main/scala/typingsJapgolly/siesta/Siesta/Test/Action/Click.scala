@@ -2,35 +2,31 @@ package typingsJapgolly.siesta.Siesta.Test.Action
 
 import typingsJapgolly.siesta.Siesta.Test.Action.Role.IHasTarget
 import typingsJapgolly.siesta.Siesta.Test.IAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
   */
 trait Click
-  extends IAction
+  extends StObject
+     with IAction
      with IHasTarget {
-  var options: js.UndefOr[js.Any] = js.undefined
+  
+  var options: js.UndefOr[Any] = js.undefined
 }
-
 object Click {
-  @scala.inline
-  def apply(
-    desc: String = null,
-    el: js.Any = null,
-    options: js.Any = null,
-    passTargetToNext: js.UndefOr[Boolean] = js.undefined,
-    target: js.Any = null
-  ): Click = {
+  
+  inline def apply(): Click = {
     val __obj = js.Dynamic.literal()
-    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(passTargetToNext)) __obj.updateDynamic("passTargetToNext")(passTargetToNext.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Click]
   }
+  
+  extension [Self <: Click](x: Self) {
+    
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+  }
 }
-

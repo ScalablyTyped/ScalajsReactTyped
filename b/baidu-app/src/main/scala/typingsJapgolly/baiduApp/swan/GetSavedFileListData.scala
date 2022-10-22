@@ -1,22 +1,27 @@
 package typingsJapgolly.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetSavedFileListData extends js.Object {
+trait GetSavedFileListData extends StObject {
+  
   /**
-  		 * 文件列表
-  		 */
+    * 文件列表
+    */
   var fileList: js.Array[File]
 }
-
 object GetSavedFileListData {
-  @scala.inline
-  def apply(fileList: js.Array[File]): GetSavedFileListData = {
-    val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
   
+  inline def apply(fileList: js.Array[File]): GetSavedFileListData = {
+    val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavedFileListData]
   }
+  
+  extension [Self <: GetSavedFileListData](x: Self) {
+    
+    inline def setFileList(value: js.Array[File]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+    
+    inline def setFileListVarargs(value: File*): Self = StObject.set(x, "fileList", js.Array(value*))
+  }
 }
-

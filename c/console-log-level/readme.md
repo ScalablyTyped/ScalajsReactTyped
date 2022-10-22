@@ -10,10 +10,10 @@ The most simple logger imaginable
 | ------------------ | :-------------: |
 | Full name          | console-log-level |
 | Keywords           | log, logging, logger, console, console.log, stdout, stderr |
-| # releases         | 2 |
-| # dependents       | 38 |
-| # downloads        | 6037479 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1696422.6666666667 |
+| # stars            | 93.0 |
 
 ## Links
 - [Homepage](https://github.com/watson/console-log-level)

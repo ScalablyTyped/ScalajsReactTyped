@@ -1,38 +1,56 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DirectoryObjectPartnerReference extends DirectoryObject {
+trait DirectoryObjectPartnerReference
+  extends StObject
+     with DirectoryObject {
+  
   // Description of the object returned. Read-only.
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Name of directory object being returned, like group or application. Read-only.
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The tenant identifier for the partner tenant. Read-only.
-  var externalPartnerTenantId: js.UndefOr[String] = js.undefined
+  var externalPartnerTenantId: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The type of the referenced object in the partner tenant. Read-only.
-  var objectType: js.UndefOr[String] = js.undefined
+  var objectType: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object DirectoryObjectPartnerReference {
-  @scala.inline
-  def apply(
-    deletedDateTime: String = null,
-    description: String = null,
-    displayName: String = null,
-    externalPartnerTenantId: String = null,
-    id: String = null,
-    objectType: String = null
-  ): DirectoryObjectPartnerReference = {
+  
+  inline def apply(): DirectoryObjectPartnerReference = {
     val __obj = js.Dynamic.literal()
-    if (deletedDateTime != null) __obj.updateDynamic("deletedDateTime")(deletedDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (externalPartnerTenantId != null) __obj.updateDynamic("externalPartnerTenantId")(externalPartnerTenantId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryObjectPartnerReference]
   }
+  
+  extension [Self <: DirectoryObjectPartnerReference](x: Self) {
+    
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setExternalPartnerTenantId(value: NullableOption[String]): Self = StObject.set(x, "externalPartnerTenantId", value.asInstanceOf[js.Any])
+    
+    inline def setExternalPartnerTenantIdNull: Self = StObject.set(x, "externalPartnerTenantId", null)
+    
+    inline def setExternalPartnerTenantIdUndefined: Self = StObject.set(x, "externalPartnerTenantId", js.undefined)
+    
+    inline def setObjectType(value: NullableOption[String]): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    
+    inline def setObjectTypeNull: Self = StObject.set(x, "objectType", null)
+    
+    inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
+  }
 }
-

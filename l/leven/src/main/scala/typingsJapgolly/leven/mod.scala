@@ -1,39 +1,14 @@
 package typingsJapgolly.leven
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("leven", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function leven(left: string, right: string): number;
-  // export = leven;
-  @JSName("default")
-  var default_Original: AnonCall = js.native
-  /**
-  	Measure the difference between two strings.
-  	@example
-  	```
-  	import leven = require('leven');
-  	leven('cat', 'cow');
-  	//=> 2
-  	```
-  	*/
-  def apply(left: String, right: String): Double = js.native
-  /**
-  	Measure the difference between two strings.
-  	@example
-  	```
-  	import leven = require('leven');
-  	leven('cat', 'cow');
-  	//=> 2
-  	```
-  	*/
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function leven(left: string, right: string): number;
-  // export = leven;
-  def default(left: String, right: String): Double = js.native
+object mod {
+  
+  @JSImport("leven", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(first: String, second: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

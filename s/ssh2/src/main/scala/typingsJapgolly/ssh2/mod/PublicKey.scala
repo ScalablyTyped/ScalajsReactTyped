@@ -1,23 +1,29 @@
 package typingsJapgolly.ssh2.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PublicKey extends js.Object {
+trait PublicKey extends StObject {
+  
   /** The name of the key algorithm. */
   var algo: String
+  
   /** The actual key data. */
   var data: Buffer
 }
-
 object PublicKey {
-  @scala.inline
-  def apply(algo: String, data: Buffer): PublicKey = {
-    val __obj = js.Dynamic.literal(algo = algo.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
   
+  inline def apply(algo: String, data: Buffer): PublicKey = {
+    val __obj = js.Dynamic.literal(algo = algo.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKey]
   }
+  
+  extension [Self <: PublicKey](x: Self) {
+    
+    inline def setAlgo(value: String): Self = StObject.set(x, "algo", value.asInstanceOf[js.Any])
+    
+    inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+  }
 }
-

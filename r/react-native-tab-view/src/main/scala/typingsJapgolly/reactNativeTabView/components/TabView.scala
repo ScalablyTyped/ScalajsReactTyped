@@ -1,100 +1,108 @@
 package typingsJapgolly.reactNativeTabView.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.react.mod.ComponentProps
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNative.mod.GestureResponderEvent
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
-import typingsJapgolly.reactNativeGestureHandler.mod.PanGestureHandler
-import typingsJapgolly.reactNativeTabView.AnonDamping
-import typingsJapgolly.reactNativeTabView.AnonDuration
-import typingsJapgolly.reactNativeTabView.AnonHeight
-import typingsJapgolly.reactNativeTabView.AnonNavigationState
-import typingsJapgolly.reactNativeTabView.AnonRoute
-import typingsJapgolly.reactNativeTabView.pagerMod.Props
+import typingsJapgolly.reactNativePagerView.libTypescriptTypesMod.Orientation
+import typingsJapgolly.reactNativePagerView.libTypescriptTypesMod.OverScrollMode
+import typingsJapgolly.reactNativeTabView.anon.PartialLayout
+import typingsJapgolly.reactNativeTabView.libTypescriptTabViewMod.Props
+import typingsJapgolly.reactNativeTabView.libTypescriptTypesMod.NavigationState
+import typingsJapgolly.reactNativeTabView.libTypescriptTypesMod.Route
+import typingsJapgolly.reactNativeTabView.libTypescriptTypesMod.SceneRendererProps
 import typingsJapgolly.reactNativeTabView.reactNativeTabViewStrings.`on-drag`
 import typingsJapgolly.reactNativeTabView.reactNativeTabViewStrings.auto
 import typingsJapgolly.reactNativeTabView.reactNativeTabViewStrings.bottom
+import typingsJapgolly.reactNativeTabView.reactNativeTabViewStrings.locale
+import typingsJapgolly.reactNativeTabView.reactNativeTabViewStrings.ltr
 import typingsJapgolly.reactNativeTabView.reactNativeTabViewStrings.none
+import typingsJapgolly.reactNativeTabView.reactNativeTabViewStrings.rtl
 import typingsJapgolly.reactNativeTabView.reactNativeTabViewStrings.top
-import typingsJapgolly.reactNativeTabView.tabViewMod.default
-import typingsJapgolly.reactNativeTabView.typesMod.NavigationState
-import typingsJapgolly.reactNativeTabView.typesMod.Route
-import typingsJapgolly.reactNativeTabView.typesMod.SceneRendererProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TabView {
-  def apply[T /* <: Route */](
-    gestureHandlerProps: ComponentProps[Instantiable0[PanGestureHandler]],
-    keyboardDismissMode: none | `on-drag` | auto,
-    lazyPreloadDistance: Double,
+  
+  inline def apply[T /* <: Route */](
     navigationState: NavigationState[T],
-    springConfig: AnonDamping,
-    swipeEnabled: Boolean,
-    tabBarPosition: top | bottom,
-    timingConfig: AnonDuration,
-    `lazy`: Boolean,
     onIndexChange: Double => Callback,
-    renderLazyPlaceholder: AnonRoute[T] => CallbackTo[Node],
-    renderPager: Props[T] => CallbackTo[Node],
-    renderScene: SceneRendererProps with AnonRoute[T] => CallbackTo[Node],
-    renderTabBar: SceneRendererProps with AnonNavigationState[T] => CallbackTo[Node],
-    initialLayout: AnonHeight = null,
-    onSwipeEnd: js.UndefOr[Callback] = js.undefined,
-    onSwipeStart: js.UndefOr[Callback] = js.undefined,
-    position: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Value<number> */ js.Any = null,
-    removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
-    sceneContainerStyle: StyleProp[ViewStyle] = null,
-    springVelocityScale: Int | Double = null,
-    style: StyleProp[ViewStyle] = null,
-    swipeVelocityImpact: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    typingsJapgolly.reactNativeTabView.tabViewMod.Props[T], 
-    default[T], 
-    Unit, 
-    typingsJapgolly.reactNativeTabView.tabViewMod.Props[T]
-  ] = {
-    val __obj = js.Dynamic.literal(gestureHandlerProps = gestureHandlerProps.asInstanceOf[js.Any], keyboardDismissMode = keyboardDismissMode.asInstanceOf[js.Any], lazyPreloadDistance = lazyPreloadDistance.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any], springConfig = springConfig.asInstanceOf[js.Any], swipeEnabled = swipeEnabled.asInstanceOf[js.Any], tabBarPosition = tabBarPosition.asInstanceOf[js.Any], timingConfig = timingConfig.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
-    __obj.updateDynamic("onIndexChange")(js.Any.fromFunction1((t0: scala.Double) => onIndexChange(t0).runNow()))
-    __obj.updateDynamic("renderLazyPlaceholder")(js.Any.fromFunction1((t0: typingsJapgolly.reactNativeTabView.AnonRoute[T]) => renderLazyPlaceholder(t0).runNow()))
-    __obj.updateDynamic("renderPager")(js.Any.fromFunction1((t0: typingsJapgolly.reactNativeTabView.pagerMod.Props[T]) => renderPager(t0).runNow()))
-    __obj.updateDynamic("renderScene")(js.Any.fromFunction1((t0: typingsJapgolly.reactNativeTabView.typesMod.SceneRendererProps with typingsJapgolly.reactNativeTabView.AnonRoute[T]) => renderScene(t0).runNow()))
-    __obj.updateDynamic("renderTabBar")(js.Any.fromFunction1((t0: typingsJapgolly.reactNativeTabView.typesMod.SceneRendererProps with typingsJapgolly.reactNativeTabView.AnonNavigationState[T]) => renderTabBar(t0).runNow()))
-    if (initialLayout != null) __obj.updateDynamic("initialLayout")(initialLayout.asInstanceOf[js.Any])
-    onSwipeEnd.foreach(p => __obj.updateDynamic("onSwipeEnd")(p.toJsFn))
-    onSwipeStart.foreach(p => __obj.updateDynamic("onSwipeStart")(p.toJsFn))
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.asInstanceOf[js.Any])
-    if (sceneContainerStyle != null) __obj.updateDynamic("sceneContainerStyle")(sceneContainerStyle.asInstanceOf[js.Any])
-    if (springVelocityScale != null) __obj.updateDynamic("springVelocityScale")(springVelocityScale.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (swipeVelocityImpact != null) __obj.updateDynamic("swipeVelocityImpact")(swipeVelocityImpact.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeTabView.tabViewMod.Props[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeTabView.tabViewMod.default[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeTabView.tabViewMod.Props[T]])(children: _*)
+    renderScene: SceneRendererProps & typingsJapgolly.reactNativeTabView.anon.Route[T] => Node
+  ): Builder[T] = {
+    val __props = js.Dynamic.literal(navigationState = navigationState.asInstanceOf[js.Any], onIndexChange = js.Any.fromFunction1((t0: Double) => onIndexChange(t0).runNow()), renderScene = js.Any.fromFunction1(renderScene))
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[Props[T]]))
   }
-  @JSImport("react-native-tab-view/lib/typescript/src/TabView", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("react-native-tab-view", "TabView")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder[T /* <: Route */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def animationEnabled(value: Boolean): this.type = set("animationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def initialLayout(value: PartialLayout): this.type = set("initialLayout", value.asInstanceOf[js.Any])
+    
+    inline def keyboardDismissMode(value: none | `on-drag` | auto): this.type = set("keyboardDismissMode", value.asInstanceOf[js.Any])
+    
+    inline def layoutDirection(value: rtl | ltr | locale): this.type = set("layoutDirection", value.asInstanceOf[js.Any])
+    
+    inline def `lazy`(
+      value: (js.Function1[/* props */ typingsJapgolly.reactNativeTabView.anon.Route[T], Boolean]) | Boolean
+    ): this.type = set("lazy", value.asInstanceOf[js.Any])
+    
+    inline def lazyFunction1(value: /* props */ typingsJapgolly.reactNativeTabView.anon.Route[T] => Boolean): this.type = set("lazy", js.Any.fromFunction1(value))
+    
+    inline def lazyPreloadDistance(value: Double): this.type = set("lazyPreloadDistance", value.asInstanceOf[js.Any])
+    
+    inline def offscreenPageLimit(value: Double): this.type = set("offscreenPageLimit", value.asInstanceOf[js.Any])
+    
+    inline def onMoveShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): this.type = set("onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
+    
+    inline def onStartShouldSetResponder(value: /* event */ GestureResponderEvent => Boolean): this.type = set("onStartShouldSetResponder", js.Any.fromFunction1(value))
+    
+    inline def onSwipeEnd(value: Callback): this.type = set("onSwipeEnd", value.toJsFn)
+    
+    inline def onSwipeStart(value: Callback): this.type = set("onSwipeStart", value.toJsFn)
+    
+    inline def orientation(value: Orientation): this.type = set("orientation", value.asInstanceOf[js.Any])
+    
+    inline def overScrollMode(value: OverScrollMode): this.type = set("overScrollMode", value.asInstanceOf[js.Any])
+    
+    inline def overdrag(value: Boolean): this.type = set("overdrag", value.asInstanceOf[js.Any])
+    
+    inline def pageMargin(value: Double): this.type = set("pageMargin", value.asInstanceOf[js.Any])
+    
+    inline def pagerStyle(value: StyleProp[ViewStyle]): this.type = set("pagerStyle", value.asInstanceOf[js.Any])
+    
+    inline def pagerStyleNull: this.type = set("pagerStyle", null)
+    
+    inline def renderLazyPlaceholder(value: /* props */ typingsJapgolly.reactNativeTabView.anon.Route[T] => Node): this.type = set("renderLazyPlaceholder", js.Any.fromFunction1(value))
+    
+    inline def renderTabBar(
+      value: /* props */ SceneRendererProps & typingsJapgolly.reactNativeTabView.anon.NavigationState[T] => Node
+    ): this.type = set("renderTabBar", js.Any.fromFunction1(value))
+    
+    inline def sceneContainerStyle(value: StyleProp[ViewStyle]): this.type = set("sceneContainerStyle", value.asInstanceOf[js.Any])
+    
+    inline def sceneContainerStyleNull: this.type = set("sceneContainerStyle", null)
+    
+    inline def showPageIndicator(value: Boolean): this.type = set("showPageIndicator", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def swipeEnabled(value: Boolean): this.type = set("swipeEnabled", value.asInstanceOf[js.Any])
+    
+    inline def tabBarPosition(value: top | bottom): this.type = set("tabBarPosition", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[T /* <: Route */](p: Props[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

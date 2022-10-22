@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.listItemAvatarListItemAvatarMod.ListItemAvatarProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/ListItemAvatar", JSImport.Namespace)
-@js.native
-object listItemAvatarMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[ListItemAvatarProps, ComponentState, js.Any] {
-    def this(props: ListItemAvatarProps) = this()
-    def this(props: ListItemAvatarProps, context: js.Any) = this()
-  }
+object listItemAvatarMod {
   
+  @JSImport("@material-ui/core/ListItemAvatar", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[ListItemAvatarProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: ListItemAvatarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

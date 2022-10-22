@@ -1,10 +1,11 @@
 package typingsJapgolly.cordovaPluginDeviceOrientation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Navigator extends js.Object {
+trait Navigator extends StObject {
+  
   /** 
     * This plugin provides access to the device's compass. The compass is a sensor that detects
     * the direction or heading that the device is pointed, typically from the top of the device.
@@ -12,13 +13,15 @@ trait Navigator extends js.Object {
     */
   var compass: Compass
 }
-
 object Navigator {
-  @scala.inline
-  def apply(compass: Compass): Navigator = {
-    val __obj = js.Dynamic.literal(compass = compass.asInstanceOf[js.Any])
   
+  inline def apply(compass: Compass): Navigator = {
+    val __obj = js.Dynamic.literal(compass = compass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigator]
   }
+  
+  extension [Self <: Navigator](x: Self) {
+    
+    inline def setCompass(value: Compass): Self = StObject.set(x, "compass", value.asInstanceOf[js.Any])
+  }
 }
-

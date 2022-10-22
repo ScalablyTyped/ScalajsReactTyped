@@ -1,7 +1,7 @@
 
 # Scala.js typings for whatwg-url
 
-Typings are for version 6.4
+Typings are for version 11.0
 
 ## Library description:
 An implementation of the WHATWG URL Standard's URL API and parsing machinery
@@ -10,10 +10,10 @@ An implementation of the WHATWG URL Standard's URL API and parsing machinery
 | ------------------ | :-------------: |
 | Full name          | whatwg-url |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 148 |
-| # downloads        | 429230600 |
-| # stars            | 8 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9618768233333334E8 |
+| # stars            | 301.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdom/whatwg-url#readme)

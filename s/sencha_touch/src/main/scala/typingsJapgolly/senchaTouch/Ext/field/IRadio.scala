@@ -1,42 +1,51 @@
 package typingsJapgolly.senchaTouch.Ext.field
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IRadio extends ICheckbox {
+trait IRadio
+  extends StObject
+     with ICheckbox {
+  
   /** [Method] Returns the selected value if this radio is part of a group other radio fields with the same name in the same FormP
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getGroupValue: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Set the matched radio field s status that has the same value as the given string to checked
-  		* @param value String The value of the radio field to check.
-  		* @returns Ext.field.Radio The field that is checked.
-  		*/
+    * @param value String The value of the radio field to check.
+    * @returns Ext.field.Radio The field that is checked.
+    */
   var setGroupValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], this.type]] = js.undefined
+  
   /** [Method] Sets the value of value
-  		* @param value Object
-  		* @returns Ext.field.Radio this
-  		*/
+    * @param value Object
+    * @returns Ext.field.Radio this
+    */
   @JSName("setValue")
-  var setValue_IRadio: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var setValue_IRadio: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], this.type]] = js.undefined
 }
-
 object IRadio {
-  @scala.inline
-  def apply(
-    ICheckbox: ICheckbox = null,
-    getGroupValue: js.UndefOr[CallbackTo[String]] = js.undefined,
-    setGroupValue: /* value */ js.UndefOr[String] => CallbackTo[IRadio] = null,
-    setValue: /* value */ js.UndefOr[js.Any] => CallbackTo[IRadio] = null
-  ): IRadio = {
+  
+  inline def apply(): IRadio = {
     val __obj = js.Dynamic.literal()
-    if (ICheckbox != null) js.Dynamic.global.Object.assign(__obj, ICheckbox)
-    getGroupValue.foreach(p => __obj.updateDynamic("getGroupValue")(p.toJsFn))
-    if (setGroupValue != null) __obj.updateDynamic("setGroupValue")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[java.lang.String]) => setGroupValue(t0).runNow()))
-    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[js.Any]) => setValue(t0).runNow()))
     __obj.asInstanceOf[IRadio]
   }
+  
+  extension [Self <: IRadio](x: Self) {
+    
+    inline def setGetGroupValue(value: CallbackTo[String]): Self = StObject.set(x, "getGroupValue", value.toJsFn)
+    
+    inline def setGetGroupValueUndefined: Self = StObject.set(x, "getGroupValue", js.undefined)
+    
+    inline def setSetGroupValue(value: /* value */ js.UndefOr[String] => IRadio): Self = StObject.set(x, "setGroupValue", js.Any.fromFunction1(value))
+    
+    inline def setSetGroupValueUndefined: Self = StObject.set(x, "setGroupValue", js.undefined)
+    
+    inline def setSetValue(value: /* value */ js.UndefOr[Any] => IRadio): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+  }
 }
-

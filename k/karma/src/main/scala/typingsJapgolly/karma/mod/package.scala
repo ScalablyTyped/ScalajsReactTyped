@@ -1,18 +1,37 @@
-package typingsJapgolly.karma
+package typingsJapgolly.karma.mod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.karma.karmaStrings.`type`
+import typingsJapgolly.karma.karmaStrings.factory
+import typingsJapgolly.karma.karmaStrings.value
+import typingsJapgolly.karma.mod.^
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ConstructorFn = js.Function | (org.scalablytyped.runtime.Instantiable1[/* params (repeated) */ js.Any, js.Any])
-  type ConstructorFnType = js.Tuple2[typingsJapgolly.karma.karmaStrings.`type`, typingsJapgolly.karma.mod.ConstructorFn]
-  type FactoryFn = js.Function1[/* repeated */ js.Any, js.Any]
-  type FactoryFnType = js.Tuple2[typingsJapgolly.karma.karmaStrings.factory, typingsJapgolly.karma.mod.FactoryFn]
-  type InlinePluginDef = typingsJapgolly.std.Record[typingsJapgolly.karma.mod.PluginName, typingsJapgolly.karma.mod.InlinePluginType]
-  type InlinePluginType = typingsJapgolly.karma.mod.FactoryFnType | typingsJapgolly.karma.mod.ConstructorFnType | typingsJapgolly.karma.mod.ValueType
-  type PathProxyPairs = org.scalablytyped.runtime.StringDictionary[java.lang.String | typingsJapgolly.karma.mod.ProxyOptions]
-  type PluginName = java.lang.String
-  type ServerCallback = js.Function1[/* exitCode */ scala.Double, scala.Unit]
-  type ValueType = js.Tuple2[typingsJapgolly.karma.karmaStrings.value, js.Any]
-}
+
+inline def VERSION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[String]
+
+inline def runner: Runner_ = ^.asInstanceOf[js.Dynamic].selectDynamic("runner").asInstanceOf[Runner_]
+
+inline def stopper: Stopper_ = ^.asInstanceOf[js.Dynamic].selectDynamic("stopper").asInstanceOf[Stopper_]
+
+type ConstructorFn = js.Function | (Instantiable1[/* params (repeated) */ Any, Any])
+
+type ConstructorFnType = js.Tuple2[`type`, ConstructorFn]
+
+type FactoryFnType = js.Tuple2[factory, FactoryFn]
+
+type InlinePluginDef = Record[PluginName, InlinePluginType]
+
+type InlinePluginType = FactoryFnType | ConstructorFnType | ValueType
+
+type PathProxyPairs = StringDictionary[String | ProxyOptions]
+
+type PluginName = String
+
+type ServerCallback = js.Function1[/* exitCode */ Double, Unit]
+
+type ValueType = js.Tuple2[value, Any]

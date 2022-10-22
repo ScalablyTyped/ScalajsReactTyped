@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client-side events which concern clicking within editors.
   */
-@JSGlobal("ASPxClientEditClickEventArgs")
-@js.native
-class ASPxClientEditClickEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new object of the ASPxClientEditClickEventArgs type with the specified settings.
-    * @param htmlElement An HTML object.
-    * @param htmlEvent A DHTML event object that relates to the processed event.
-    */
-  def this(htmlElement: js.Any, htmlEvent: js.Any) = this()
+trait ASPxClientEditClickEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the HTML element related to the event.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any
+  
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any
 }
-
+object ASPxClientEditClickEventArgs {
+  
+  inline def apply(htmlElement: Any, htmlEvent: Any): ASPxClientEditClickEventArgs = {
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientEditClickEventArgs]
+  }
+  
+  extension [Self <: ASPxClientEditClickEventArgs](x: Self) {
+    
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+  }
+}

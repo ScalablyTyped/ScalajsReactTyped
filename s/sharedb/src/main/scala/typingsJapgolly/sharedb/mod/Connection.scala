@@ -1,27 +1,33 @@
 package typingsJapgolly.sharedb.mod
 
-import org.scalajs.dom.raw.WebSocket
-import typingsJapgolly.sharedb.AnonResults
+import typingsJapgolly.sharedb.anon.Results
+import typingsJapgolly.sharedb.libSharedbMod.Socket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * @deprecated Use the `Connection` type from 'sharedb/lib/client' instead, as that's where it
+  *   lives in the actual source code.
+  */
 @JSImport("sharedb", "Connection")
 @js.native
-class Connection protected () extends js.Object {
-  def this(ws: WebSocket) = this()
+open class Connection protected () extends StObject {
+  def this(socket: Socket) = this()
+  
   def createFetchQuery(
     collectionName: String,
     query: String,
-    options: AnonResults,
-    callback: js.Function2[/* err */ Error, /* results */ js.Any, _]
-  ): typingsJapgolly.sharedb.sharedbMod.Query = js.native
+    options: Results,
+    callback: js.Function2[/* err */ Error, /* results */ Any, Any]
+  ): typingsJapgolly.sharedb.libSharedbMod.Query[Any] = js.native
+  
   def createSubscribeQuery(
     collectionName: String,
     query: String,
-    options: AnonResults,
-    callback: js.Function2[/* err */ Error, /* results */ js.Any, _]
-  ): typingsJapgolly.sharedb.sharedbMod.Query = js.native
-  def get(collectionName: String, documentID: String): typingsJapgolly.sharedb.sharedbMod.Doc = js.native
+    options: Results,
+    callback: js.Function2[/* err */ Error, /* results */ Any, Any]
+  ): typingsJapgolly.sharedb.libSharedbMod.Query[Any] = js.native
+  
+  def get(collectionName: String, documentID: String): typingsJapgolly.sharedb.libSharedbMod.Doc[Any] = js.native
 }
-

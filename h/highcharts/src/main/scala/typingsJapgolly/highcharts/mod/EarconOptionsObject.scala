@@ -1,32 +1,37 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for an Earcon.
   */
-trait EarconOptionsObject extends js.Object {
+trait EarconOptionsObject extends StObject {
+  
   /**
     * The unique ID of the Earcon. Generated if not supplied.
     */
   var id: js.UndefOr[String] = js.undefined
+  
   /**
     * The instruments and their options defining this earcon.
     */
   var instruments: js.Array[
-    typingsJapgolly.highcharts.sonificationMod.highchartsAugmentingMod.EarconInstrument
+    typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconInstrument
   ]
+  
   /**
     * Callback function to call when earcon has finished playing.
     */
   var onEnd: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * Global panning of all instruments. Overrides all panning on
     * individual instruments. Can be a number between -1 and 1.
     */
   var pan: js.UndefOr[Double] = js.undefined
+  
   /**
     * Master volume for all instruments. Volume settings on individual
     * instruments can still be used for relative volume between the
@@ -36,24 +41,41 @@ trait EarconOptionsObject extends js.Object {
     */
   var volume: js.UndefOr[Double] = js.undefined
 }
-
 object EarconOptionsObject {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     instruments: js.Array[
-      typingsJapgolly.highcharts.sonificationMod.highchartsAugmentingMod.EarconInstrument
-    ],
-    id: String = null,
-    onEnd: js.Function = null,
-    pan: Int | Double = null,
-    volume: Int | Double = null
+      typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconInstrument
+    ]
   ): EarconOptionsObject = {
     val __obj = js.Dynamic.literal(instruments = instruments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd.asInstanceOf[js.Any])
-    if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[EarconOptionsObject]
   }
+  
+  extension [Self <: EarconOptionsObject](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setInstruments(
+      value: js.Array[
+          typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconInstrument
+        ]
+    ): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
+    
+    inline def setInstrumentsVarargs(value: typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconInstrument*): Self = StObject.set(x, "instruments", js.Array(value*))
+    
+    inline def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
+    
+    inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+    
+    inline def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+    
+    inline def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
+    
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+  }
 }
-

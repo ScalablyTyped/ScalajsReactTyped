@@ -1,12 +1,8 @@
 package typingsJapgolly.esquery.mod
 
-import typingsJapgolly.esquery.esqueryStrings.adjacent
-import typingsJapgolly.esquery.esqueryStrings.child
-import typingsJapgolly.esquery.esqueryStrings.descendant
-import typingsJapgolly.esquery.esqueryStrings.sibling
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.esquery.mod.Descendant
@@ -14,56 +10,32 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.esquery.mod.Sibling
   - typingsJapgolly.esquery.mod.Adjacent
 */
-trait BinarySelector extends SubjectSelector
-
+trait BinarySelector
+  extends StObject
+     with SubjectSelector
 object BinarySelector {
-  @scala.inline
-  def Descendant(
-    left: SubjectSelector,
-    right: SubjectSelector,
-    `type`: descendant,
-    subject: js.UndefOr[Boolean] = js.undefined
-  ): BinarySelector = {
+  
+  inline def Adjacent(left: SubjectSelector, right: SubjectSelector): typingsJapgolly.esquery.mod.Adjacent = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BinarySelector]
+    __obj.updateDynamic("type")("adjacent")
+    __obj.asInstanceOf[typingsJapgolly.esquery.mod.Adjacent]
   }
-  @scala.inline
-  def Child(
-    left: SubjectSelector,
-    right: SubjectSelector,
-    `type`: child,
-    subject: js.UndefOr[Boolean] = js.undefined
-  ): BinarySelector = {
+  
+  inline def Child(left: SubjectSelector, right: SubjectSelector): typingsJapgolly.esquery.mod.Child = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BinarySelector]
+    __obj.updateDynamic("type")("child")
+    __obj.asInstanceOf[typingsJapgolly.esquery.mod.Child]
   }
-  @scala.inline
-  def Sibling(
-    left: SubjectSelector,
-    right: SubjectSelector,
-    `type`: sibling,
-    subject: js.UndefOr[Boolean] = js.undefined
-  ): BinarySelector = {
+  
+  inline def Descendant(left: SubjectSelector, right: SubjectSelector): typingsJapgolly.esquery.mod.Descendant = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BinarySelector]
+    __obj.updateDynamic("type")("descendant")
+    __obj.asInstanceOf[typingsJapgolly.esquery.mod.Descendant]
   }
-  @scala.inline
-  def Adjacent(
-    left: SubjectSelector,
-    right: SubjectSelector,
-    `type`: adjacent,
-    subject: js.UndefOr[Boolean] = js.undefined
-  ): BinarySelector = {
+  
+  inline def Sibling(left: SubjectSelector, right: SubjectSelector): typingsJapgolly.esquery.mod.Sibling = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BinarySelector]
+    __obj.updateDynamic("type")("sibling")
+    __obj.asInstanceOf[typingsJapgolly.esquery.mod.Sibling]
   }
 }
-

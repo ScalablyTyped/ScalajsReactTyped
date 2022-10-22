@@ -1,39 +1,45 @@
 package typingsJapgolly.gulpInsert
 
-import org.scalajs.dom.raw.File
+import org.scalajs.dom.File
 import typingsJapgolly.node.NodeJS.ReadWriteStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gulp-insert", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("gulp-insert", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Appends a string onto the contents
     * @param {string} content
     * @returns {NodeJS.ReadWriteStream}
     */
-  def append(content: String): ReadWriteStream = js.native
+  inline def append(content: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("append")(content.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  
   /**
     * Prepends a string onto the contents
     * @param {string} content
     * @returns {NodeJS.ReadWriteStream}
     */
-  def prepend(content: String): ReadWriteStream = js.native
+  inline def prepend(content: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(content.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  
   /**
     * Calls a function with the contents of the file
     * @param {Transformer} transformer
     * @returns {NodeJS.ReadWriteStream}
     */
-  def transform(transformer: Transformer): ReadWriteStream = js.native
+  inline def transform(transformer: Transformer): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transformer.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  
   /**
     * Wraps the contents with two strings
     * @param {string} prepend
     * @param {string} append
     * @returns {NodeJS.ReadWriteStream}
     */
-  def wrap(prepend: String, append: String): ReadWriteStream = js.native
+  inline def wrap(prepend: String, append: String): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(prepend.asInstanceOf[js.Any], append.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  
   type Transformer = js.Function2[/* contents */ String, /* file */ File, String]
 }
-

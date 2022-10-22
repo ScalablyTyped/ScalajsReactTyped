@@ -1,18 +1,17 @@
 package typingsJapgolly.umbraco.umbraco.services
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * Application-wide service for handling modals, overlays and dialogs By default it
   * injects the passed template url into a div to body of the document And renders it,
   * but does also support rendering items in an iframe, incase serverside processing is needed, or its a non-angular page
   */
-trait IDialogService extends js.Object {
-  var dialogs: js.UndefOr[js.Array[_]] = js.undefined
+trait IDialogService extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#close
@@ -23,7 +22,8 @@ trait IDialogService extends js.Object {
     * @param {Object} dialog the dialog object to close
     * @param {Object} args if specified this object will be sent to any callbacks registered on the dialogs.
     */
-  def close(dialog: IDialog, args: js.Any*): Unit
+  def close(dialog: IDialog, args: Any*): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#closeAll
@@ -33,9 +33,11 @@ trait IDialogService extends js.Object {
     * Closes all dialogs
     * @param {Object} args if specified this object will be sent to any callbacks registered on the dialogs.
     */
-  def closeAll(args: js.Any*): Unit
+  def closeAll(args: Any*): Unit
+  
   /** Internal method that closes the dialog properly and cleans up resources */
   def closeDialog(dialog: IDialog): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#contentPicker
@@ -49,6 +51,9 @@ trait IDialogService extends js.Object {
     * @returns {Object} modal object
     */
   def contentPicker(options: IContentPickerOptions): IModal
+  
+  var dialogs: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#ysodDialog
@@ -56,7 +61,8 @@ trait IDialogService extends js.Object {
     * @description
     * Opens a dialog to an embed dialog
     */
-  def embedDialog(options: js.Any): Unit
+  def embedDialog(options: Any): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#iconPicker
@@ -69,6 +75,7 @@ trait IDialogService extends js.Object {
     * @returns {Object} modal object
     */
   def iconPicker(options: IIconPickerOptions): IModal
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#linkPicker
@@ -81,6 +88,7 @@ trait IDialogService extends js.Object {
     * @returns {Object} modal object
     */
   def linkPicker(options: ILinkPickerOptions): IModal
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#macroPicker
@@ -93,6 +101,7 @@ trait IDialogService extends js.Object {
     * @returns {Object} modal object
     */
   def macroPicker(options: IMacroPickerOptions): IModal
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#mediaPicker
@@ -106,6 +115,7 @@ trait IDialogService extends js.Object {
     * @returns {Object} modal object
     */
   def mediaPicker(options: IMediaPickerOptions): IModal
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#memberGroupPicker
@@ -119,6 +129,7 @@ trait IDialogService extends js.Object {
     * @returns {Object} modal object
     */
   def memberGroupPicker(options: IMemberGroupPickerOptions): IModal
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#memberPicker
@@ -132,6 +143,7 @@ trait IDialogService extends js.Object {
     * @returns {Object} modal object
     */
   def memberPicker(options: IMemberPickerOptions): IModal
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#open
@@ -153,8 +165,10 @@ trait IDialogService extends js.Object {
     * @returns {Object} modal object
     */
   def open(options: IDialogRenderingOptions): IModal
+  
   /** Internal method that handles opening all dialogs */
   def openDialog(options: IDialogRenderingOptions): IModal
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#propertyDialog
@@ -169,8 +183,10 @@ trait IDialogService extends js.Object {
     * @returns {Object} modal object
     */
   def propertyDialog(options: IPropertyDialogOptions): IModal
+  
   /** Internal method that removes all dialogs */
-  def removeAllDialogs(args: js.Any*): Unit
+  def removeAllDialogs(args: Any*): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#treePicker
@@ -186,6 +202,7 @@ trait IDialogService extends js.Object {
     * @returns {Object} modal object
     */
   def treePicker(options: ITreePickerOptions): IModal
+  
   /**
     * @ngdoc method
     * @name umbraco.services.dialogService#ysodDialog
@@ -194,51 +211,73 @@ trait IDialogService extends js.Object {
     * @description
     * Opens a dialog to show a custom YSOD
     */
-  def ysodDialog(ysodError: js.Any): Unit
+  def ysodDialog(ysodError: Any): Unit
 }
-
 object IDialogService {
-  @scala.inline
-  def apply(
-    close: (IDialog, /* repeated */ js.Any) => Callback,
-    closeAll: /* repeated */ js.Any => Callback,
+  
+  inline def apply(
+    close: (IDialog, /* repeated */ Any) => Callback,
+    closeAll: /* repeated */ Any => Callback,
     closeDialog: IDialog => Callback,
-    contentPicker: IContentPickerOptions => CallbackTo[IModal],
-    embedDialog: js.Any => Callback,
-    iconPicker: IIconPickerOptions => CallbackTo[IModal],
-    linkPicker: ILinkPickerOptions => CallbackTo[IModal],
-    macroPicker: IMacroPickerOptions => CallbackTo[IModal],
-    mediaPicker: IMediaPickerOptions => CallbackTo[IModal],
-    memberGroupPicker: IMemberGroupPickerOptions => CallbackTo[IModal],
-    memberPicker: IMemberPickerOptions => CallbackTo[IModal],
-    open: IDialogRenderingOptions => CallbackTo[IModal],
-    openDialog: IDialogRenderingOptions => CallbackTo[IModal],
-    propertyDialog: IPropertyDialogOptions => CallbackTo[IModal],
-    removeAllDialogs: /* repeated */ js.Any => Callback,
-    treePicker: ITreePickerOptions => CallbackTo[IModal],
-    ysodDialog: js.Any => Callback,
-    dialogs: js.Array[_] = null
+    contentPicker: IContentPickerOptions => IModal,
+    embedDialog: Any => Callback,
+    iconPicker: IIconPickerOptions => IModal,
+    linkPicker: ILinkPickerOptions => IModal,
+    macroPicker: IMacroPickerOptions => IModal,
+    mediaPicker: IMediaPickerOptions => IModal,
+    memberGroupPicker: IMemberGroupPickerOptions => IModal,
+    memberPicker: IMemberPickerOptions => IModal,
+    open: IDialogRenderingOptions => IModal,
+    openDialog: IDialogRenderingOptions => IModal,
+    propertyDialog: IPropertyDialogOptions => IModal,
+    removeAllDialogs: /* repeated */ Any => Callback,
+    treePicker: ITreePickerOptions => IModal,
+    ysodDialog: Any => Callback
   ): IDialogService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(js.Any.fromFunction2((t0: typingsJapgolly.umbraco.umbraco.services.IDialog, t1: /* repeated */ js.Any) => close(t0, t1).runNow()))
-    __obj.updateDynamic("closeAll")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => closeAll(t0).runNow()))
-    __obj.updateDynamic("closeDialog")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.IDialog) => closeDialog(t0).runNow()))
-    __obj.updateDynamic("contentPicker")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.IContentPickerOptions) => contentPicker(t0).runNow()))
-    __obj.updateDynamic("embedDialog")(js.Any.fromFunction1((t0: js.Any) => embedDialog(t0).runNow()))
-    __obj.updateDynamic("iconPicker")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.IIconPickerOptions) => iconPicker(t0).runNow()))
-    __obj.updateDynamic("linkPicker")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.ILinkPickerOptions) => linkPicker(t0).runNow()))
-    __obj.updateDynamic("macroPicker")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.IMacroPickerOptions) => macroPicker(t0).runNow()))
-    __obj.updateDynamic("mediaPicker")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.IMediaPickerOptions) => mediaPicker(t0).runNow()))
-    __obj.updateDynamic("memberGroupPicker")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.IMemberGroupPickerOptions) => memberGroupPicker(t0).runNow()))
-    __obj.updateDynamic("memberPicker")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.IMemberPickerOptions) => memberPicker(t0).runNow()))
-    __obj.updateDynamic("open")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.IDialogRenderingOptions) => open(t0).runNow()))
-    __obj.updateDynamic("openDialog")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.IDialogRenderingOptions) => openDialog(t0).runNow()))
-    __obj.updateDynamic("propertyDialog")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.IPropertyDialogOptions) => propertyDialog(t0).runNow()))
-    __obj.updateDynamic("removeAllDialogs")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => removeAllDialogs(t0).runNow()))
-    __obj.updateDynamic("treePicker")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.ITreePickerOptions) => treePicker(t0).runNow()))
-    __obj.updateDynamic("ysodDialog")(js.Any.fromFunction1((t0: js.Any) => ysodDialog(t0).runNow()))
-    if (dialogs != null) __obj.updateDynamic("dialogs")(dialogs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction2((t0: IDialog, t1: /* repeated */ Any) => (close(t0, t1)).runNow()), closeAll = js.Any.fromFunction1((t0: /* repeated */ Any) => closeAll(t0).runNow()), closeDialog = js.Any.fromFunction1((t0: IDialog) => closeDialog(t0).runNow()), contentPicker = js.Any.fromFunction1(contentPicker), embedDialog = js.Any.fromFunction1((t0: Any) => embedDialog(t0).runNow()), iconPicker = js.Any.fromFunction1(iconPicker), linkPicker = js.Any.fromFunction1(linkPicker), macroPicker = js.Any.fromFunction1(macroPicker), mediaPicker = js.Any.fromFunction1(mediaPicker), memberGroupPicker = js.Any.fromFunction1(memberGroupPicker), memberPicker = js.Any.fromFunction1(memberPicker), open = js.Any.fromFunction1(open), openDialog = js.Any.fromFunction1(openDialog), propertyDialog = js.Any.fromFunction1(propertyDialog), removeAllDialogs = js.Any.fromFunction1((t0: /* repeated */ Any) => removeAllDialogs(t0).runNow()), treePicker = js.Any.fromFunction1(treePicker), ysodDialog = js.Any.fromFunction1((t0: Any) => ysodDialog(t0).runNow()))
     __obj.asInstanceOf[IDialogService]
   }
+  
+  extension [Self <: IDialogService](x: Self) {
+    
+    inline def setClose(value: (IDialog, /* repeated */ Any) => Callback): Self = StObject.set(x, "close", js.Any.fromFunction2((t0: IDialog, t1: /* repeated */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setCloseAll(value: /* repeated */ Any => Callback): Self = StObject.set(x, "closeAll", js.Any.fromFunction1((t0: /* repeated */ Any) => value(t0).runNow()))
+    
+    inline def setCloseDialog(value: IDialog => Callback): Self = StObject.set(x, "closeDialog", js.Any.fromFunction1((t0: IDialog) => value(t0).runNow()))
+    
+    inline def setContentPicker(value: IContentPickerOptions => IModal): Self = StObject.set(x, "contentPicker", js.Any.fromFunction1(value))
+    
+    inline def setDialogs(value: js.Array[Any]): Self = StObject.set(x, "dialogs", value.asInstanceOf[js.Any])
+    
+    inline def setDialogsUndefined: Self = StObject.set(x, "dialogs", js.undefined)
+    
+    inline def setDialogsVarargs(value: Any*): Self = StObject.set(x, "dialogs", js.Array(value*))
+    
+    inline def setEmbedDialog(value: Any => Callback): Self = StObject.set(x, "embedDialog", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+    
+    inline def setIconPicker(value: IIconPickerOptions => IModal): Self = StObject.set(x, "iconPicker", js.Any.fromFunction1(value))
+    
+    inline def setLinkPicker(value: ILinkPickerOptions => IModal): Self = StObject.set(x, "linkPicker", js.Any.fromFunction1(value))
+    
+    inline def setMacroPicker(value: IMacroPickerOptions => IModal): Self = StObject.set(x, "macroPicker", js.Any.fromFunction1(value))
+    
+    inline def setMediaPicker(value: IMediaPickerOptions => IModal): Self = StObject.set(x, "mediaPicker", js.Any.fromFunction1(value))
+    
+    inline def setMemberGroupPicker(value: IMemberGroupPickerOptions => IModal): Self = StObject.set(x, "memberGroupPicker", js.Any.fromFunction1(value))
+    
+    inline def setMemberPicker(value: IMemberPickerOptions => IModal): Self = StObject.set(x, "memberPicker", js.Any.fromFunction1(value))
+    
+    inline def setOpen(value: IDialogRenderingOptions => IModal): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    
+    inline def setOpenDialog(value: IDialogRenderingOptions => IModal): Self = StObject.set(x, "openDialog", js.Any.fromFunction1(value))
+    
+    inline def setPropertyDialog(value: IPropertyDialogOptions => IModal): Self = StObject.set(x, "propertyDialog", js.Any.fromFunction1(value))
+    
+    inline def setRemoveAllDialogs(value: /* repeated */ Any => Callback): Self = StObject.set(x, "removeAllDialogs", js.Any.fromFunction1((t0: /* repeated */ Any) => value(t0).runNow()))
+    
+    inline def setTreePicker(value: ITreePickerOptions => IModal): Self = StObject.set(x, "treePicker", js.Any.fromFunction1(value))
+    
+    inline def setYsodDialog(value: Any => Callback): Self = StObject.set(x, "ysodDialog", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+  }
 }
-

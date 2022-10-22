@@ -1,56 +1,68 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in `conditionalDataBarNegativeFormat.set({ ... })`. */
-trait ConditionalDataBarNegativeFormatUpdateData extends js.Object {
+trait ConditionalDataBarNegativeFormatUpdateData extends StObject {
+  
   /**
+    * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+    Value is "" (an empty string) if no border is present or set.
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-    "Empty String" if no border is present or set.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var borderColor: js.UndefOr[String] = js.undefined
+  
   /**
+    * HTML color code representing the fill color, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
-    * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var fillColor: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies if the negative data bar has the same border color as the positive data bar.
     *
-    * Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var matchPositiveBorderColor: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the negative data bar has the same fill color as the positive data bar.
     *
-    * Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var matchPositiveFillColor: js.UndefOr[Boolean] = js.undefined
 }
-
 object ConditionalDataBarNegativeFormatUpdateData {
-  @scala.inline
-  def apply(
-    borderColor: String = null,
-    fillColor: String = null,
-    matchPositiveBorderColor: js.UndefOr[Boolean] = js.undefined,
-    matchPositiveFillColor: js.UndefOr[Boolean] = js.undefined
-  ): ConditionalDataBarNegativeFormatUpdateData = {
+  
+  inline def apply(): ConditionalDataBarNegativeFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchPositiveBorderColor)) __obj.updateDynamic("matchPositiveBorderColor")(matchPositiveBorderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchPositiveFillColor)) __obj.updateDynamic("matchPositiveFillColor")(matchPositiveFillColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalDataBarNegativeFormatUpdateData]
   }
+  
+  extension [Self <: ConditionalDataBarNegativeFormatUpdateData](x: Self) {
+    
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    
+    inline def setMatchPositiveBorderColor(value: Boolean): Self = StObject.set(x, "matchPositiveBorderColor", value.asInstanceOf[js.Any])
+    
+    inline def setMatchPositiveBorderColorUndefined: Self = StObject.set(x, "matchPositiveBorderColor", js.undefined)
+    
+    inline def setMatchPositiveFillColor(value: Boolean): Self = StObject.set(x, "matchPositiveFillColor", value.asInstanceOf[js.Any])
+    
+    inline def setMatchPositiveFillColorUndefined: Self = StObject.set(x, "matchPositiveFillColor", js.undefined)
+  }
 }
-

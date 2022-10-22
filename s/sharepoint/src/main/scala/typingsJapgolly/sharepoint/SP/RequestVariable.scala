@@ -1,22 +1,17 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.RequestVariable")
 @js.native
-class RequestVariable protected () extends ClientObject {
-  def this(context: ClientRuntimeContext) = this()
+trait RequestVariable
+  extends StObject
+     with ClientObject {
+  
   def append(value: String): Unit = js.native
+  
   def get_value(): String = js.native
+  
   def set(value: String): Unit = js.native
 }
-
-/* static members */
-@JSGlobal("SP.RequestVariable")
-@js.native
-object RequestVariable extends js.Object {
-  def newObject(context: ClientRuntimeContext): RequestVariable = js.native
-}
-

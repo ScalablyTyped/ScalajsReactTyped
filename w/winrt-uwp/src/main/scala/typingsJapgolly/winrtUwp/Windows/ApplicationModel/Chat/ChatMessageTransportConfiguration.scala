@@ -2,23 +2,51 @@ package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Chat
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IMapView
 import typingsJapgolly.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents data about the chat message transport. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageTransportConfiguration")
-@js.native
-abstract class ChatMessageTransportConfiguration () extends js.Object {
+trait ChatMessageTransportConfiguration extends StObject {
+  
   /** Gets the extended properties of the transport. */
-  var extendedProperties: IMapView[String, _] = js.native
+  var extendedProperties: IMapView[String, Any]
+  
   /** Gets the maximum attachment limit for a message on the transport. */
-  var maxAttachmentCount: Double = js.native
+  var maxAttachmentCount: Double
+  
   /** Gets the maximum size of an attachment for the transport. */
-  var maxMessageSizeInKilobytes: Double = js.native
+  var maxMessageSizeInKilobytes: Double
+  
   /** Gets the maximum number of recipients for the transport. */
-  var maxRecipientCount: Double = js.native
+  var maxRecipientCount: Double
+  
   /** Gets the supported video encoding format for the transport. */
-  var supportedVideoFormat: MediaEncodingProfile = js.native
+  var supportedVideoFormat: MediaEncodingProfile
 }
-
+object ChatMessageTransportConfiguration {
+  
+  inline def apply(
+    extendedProperties: IMapView[String, Any],
+    maxAttachmentCount: Double,
+    maxMessageSizeInKilobytes: Double,
+    maxRecipientCount: Double,
+    supportedVideoFormat: MediaEncodingProfile
+  ): ChatMessageTransportConfiguration = {
+    val __obj = js.Dynamic.literal(extendedProperties = extendedProperties.asInstanceOf[js.Any], maxAttachmentCount = maxAttachmentCount.asInstanceOf[js.Any], maxMessageSizeInKilobytes = maxMessageSizeInKilobytes.asInstanceOf[js.Any], maxRecipientCount = maxRecipientCount.asInstanceOf[js.Any], supportedVideoFormat = supportedVideoFormat.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChatMessageTransportConfiguration]
+  }
+  
+  extension [Self <: ChatMessageTransportConfiguration](x: Self) {
+    
+    inline def setExtendedProperties(value: IMapView[String, Any]): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
+    
+    inline def setMaxAttachmentCount(value: Double): Self = StObject.set(x, "maxAttachmentCount", value.asInstanceOf[js.Any])
+    
+    inline def setMaxMessageSizeInKilobytes(value: Double): Self = StObject.set(x, "maxMessageSizeInKilobytes", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRecipientCount(value: Double): Self = StObject.set(x, "maxRecipientCount", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedVideoFormat(value: MediaEncodingProfile): Self = StObject.set(x, "supportedVideoFormat", value.asInstanceOf[js.Any])
+  }
+}

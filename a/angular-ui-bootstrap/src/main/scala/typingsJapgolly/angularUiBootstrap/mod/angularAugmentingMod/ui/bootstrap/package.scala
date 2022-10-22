@@ -1,16 +1,13 @@
-package typingsJapgolly.angularUiBootstrap.mod.angularAugmentingMod.ui
+package typingsJapgolly.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object bootstrap {
-  type DatepickerCallback[T] = js.Function1[
-    /* args */ typingsJapgolly.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap.IDatepickerCellArgs, 
-    T
-  ]
-  /**
-    * @deprecated use IModalInstanceService instead.
-    */
-  type IModalServiceInstance = typingsJapgolly.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap.IModalInstanceService
-}
+
+type DatepickerCallback[T] = js.Function1[/* args */ IDatepickerCellArgs, T]
+
+/**
+  * @deprecated use IModalInstanceService instead.
+  */
+type IModalServiceInstance = IModalInstanceService

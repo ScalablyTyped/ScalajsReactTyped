@@ -1,58 +1,47 @@
 package typingsJapgolly.protonNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.protonNative.AnonW
-import typingsJapgolly.protonNative.AnonY
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.protonNative.anon.W
+import typingsJapgolly.protonNative.anon.Y
 import typingsJapgolly.protonNative.mod.WindowProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Window {
-  def apply(
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    closed: js.UndefOr[Boolean] = js.undefined,
-    fullscreen: js.UndefOr[Boolean] = js.undefined,
-    lastWindow: js.UndefOr[Boolean] = js.undefined,
-    margined: js.UndefOr[Boolean] = js.undefined,
-    menuBar: js.UndefOr[Boolean] = js.undefined,
-    onClose: js.UndefOr[Callback] = js.undefined,
-    onContentSizeChange: /* size */ AnonY => Callback = null,
-    size: AnonW = null,
-    title: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[WindowProps, typingsJapgolly.protonNative.mod.Window, Unit, WindowProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastWindow)) __obj.updateDynamic("lastWindow")(lastWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(margined)) __obj.updateDynamic("margined")(margined.asInstanceOf[js.Any])
-    if (!js.isUndefined(menuBar)) __obj.updateDynamic("menuBar")(menuBar.asInstanceOf[js.Any])
-    onClose.foreach(p => __obj.updateDynamic("onClose")(p.toJsFn))
-    if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(js.Any.fromFunction1((t0: /* size */ typingsJapgolly.protonNative.AnonY) => onContentSizeChange(t0).runNow()))
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.protonNative.mod.WindowProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.protonNative.mod.Window](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.protonNative.mod.WindowProps])(children: _*)
-  }
   @JSImport("proton-native", "Window")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.protonNative.mod.Window] {
+    
+    inline def borderless(value: Boolean): this.type = set("borderless", value.asInstanceOf[js.Any])
+    
+    inline def closed(value: Boolean): this.type = set("closed", value.asInstanceOf[js.Any])
+    
+    inline def fullscreen(value: Boolean): this.type = set("fullscreen", value.asInstanceOf[js.Any])
+    
+    inline def lastWindow(value: Boolean): this.type = set("lastWindow", value.asInstanceOf[js.Any])
+    
+    inline def margined(value: Boolean): this.type = set("margined", value.asInstanceOf[js.Any])
+    
+    inline def menuBar(value: Boolean): this.type = set("menuBar", value.asInstanceOf[js.Any])
+    
+    inline def onClose(value: Callback): this.type = set("onClose", value.toJsFn)
+    
+    inline def onContentSizeChange(value: /* size */ Y => Callback): this.type = set("onContentSizeChange", js.Any.fromFunction1((t0: /* size */ Y) => value(t0).runNow()))
+    
+    inline def size(value: W): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Window.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: WindowProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

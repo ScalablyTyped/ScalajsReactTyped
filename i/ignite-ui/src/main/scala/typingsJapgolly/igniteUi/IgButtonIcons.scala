@@ -1,34 +1,36 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgButtonIcons
-  extends /**
-	 * Option for IgButtonIcons
-	 */
-/* optionName */ StringDictionary[js.Any] {
-  var primary: js.UndefOr[js.Any] = js.undefined
-  var secondary: js.UndefOr[js.Any] = js.undefined
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
+  var primary: js.UndefOr[Any] = js.undefined
+  
+  var secondary: js.UndefOr[Any] = js.undefined
 }
-
 object IgButtonIcons {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgButtonIcons
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    primary: js.Any = null,
-    secondary: js.Any = null
-  ): IgButtonIcons = {
+  
+  inline def apply(): IgButtonIcons = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgButtonIcons]
   }
+  
+  extension [Self <: IgButtonIcons](x: Self) {
+    
+    inline def setPrimary(value: Any): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    
+    inline def setSecondary(value: Any): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+  }
 }
-

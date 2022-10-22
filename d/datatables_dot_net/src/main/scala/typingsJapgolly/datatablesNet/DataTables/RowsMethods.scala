@@ -1,21 +1,29 @@
 package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RowsMethods
-  extends CoreMethods
+  extends StObject
+     with CoreMethods
      with CommonRowMethod {
+  
   /**
     * Get / Set the data for the selected row
     *
     * @param d Data to use for the row.
     */
   def data(): Api = js.native
-  def data(d: js.Array[_]): Api = js.native
+  def data(d: js.Array[Any]): Api = js.native
   def data(d: js.Object): Api = js.native
+  
+  /**
+    * Deselects the given rows.
+    */
+  def deselect(): Api = js.native
+  
   /**
     * Iterate over each selected row, with the function context set to be the row in question. Since: DataTables 1.10.6
     *
@@ -30,6 +38,7 @@ trait RowsMethods
       Unit
     ]
   ): Api = js.native
+  
   /**
     * Get the ids of the selected rows. Since: 1.10.8
     *
@@ -39,17 +48,24 @@ trait RowsMethods
     */
   def ids(): Api = js.native
   def ids(hash: Boolean): Api = js.native
+  
   /**
     * Get the row indexes of the selected rows.
     */
   def indexes(): Api = js.native
+  
   /**
     * Obtain the tr nodes for the selected rows
     */
   def nodes(): Api = js.native
+  
   /**
     * Delete the selected rows from the DataTable.
     */
   def remove(): Api = js.native
+  
+  /**
+    * Selects the given rows.
+    */
+  def select(): Api = js.native
 }
-

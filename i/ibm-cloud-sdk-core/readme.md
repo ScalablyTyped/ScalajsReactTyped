@@ -1,19 +1,19 @@
 
 # Scala.js typings for ibm-cloud-sdk-core
 
-Typings are for version 0.1.2
+Typings are for version 3.1.0
 
 ## Library description:
-Core functionality to support SDKs generated with IBM's OpenAPI 3 SDK Generator.
+Core functionality to support SDKs generated with IBM's OpenAPI SDK Generator.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ibm-cloud-sdk-core |
 | Keywords           | ibm, sdk, openapi, core |
-| # releases         | 38 |
-| # dependents       | 3 |
-| # downloads        | 524114 |
-| # stars            | 0 |
+| # releases         | 50 |
+| # dependents       | 0.0 |
+| # downloads        | 169656.66666666666 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/IBM/node-sdk-core#readme)

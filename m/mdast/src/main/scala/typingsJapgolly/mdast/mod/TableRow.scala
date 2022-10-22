@@ -1,27 +1,34 @@
 package typingsJapgolly.mdast.mod
 
 import typingsJapgolly.mdast.mdastStrings.tableRow
-import typingsJapgolly.unist.mod.Data
-import typingsJapgolly.unist.mod.Position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TableRow extends Parent {
+trait TableRow
+  extends StObject
+     with Parent {
+  
   @JSName("children")
   var children_TableRow: js.Array[RowContent]
+  
   @JSName("type")
   var type_TableRow: tableRow
 }
-
 object TableRow {
-  @scala.inline
-  def apply(children: js.Array[RowContent], `type`: tableRow, data: Data = null, position: Position = null): TableRow = {
+  
+  inline def apply(children: js.Array[RowContent]): TableRow = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("tableRow")
     __obj.asInstanceOf[TableRow]
   }
+  
+  extension [Self <: TableRow](x: Self) {
+    
+    inline def setChildren(value: js.Array[RowContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenVarargs(value: RowContent*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setType(value: tableRow): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

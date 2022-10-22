@@ -1,65 +1,63 @@
 package typingsJapgolly.nyaapi.mod.pantsu
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SortType extends js.Object
-
+sealed trait SortType extends StObject
 @JSImport("nyaapi", "pantsu.SortType")
 @js.native
-object SortType extends js.Object {
-  @js.native
-  sealed trait completed extends SortType
-  
-  @js.native
-  sealed trait date extends SortType
-  
-  @js.native
-  sealed trait downloads extends SortType
-  
-  @js.native
-  sealed trait id extends SortType
-  
-  @js.native
-  sealed trait leechers extends SortType
-  
-  @js.native
-  sealed trait name extends SortType
-  
-  @js.native
-  sealed trait seeders extends SortType
-  
-  @js.native
-  sealed trait size extends SortType
+object SortType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SortType with Double] = js.native
-  /* 7 */ @js.native
-  object completed extends TopLevel[completed with Double]
+  def apply(value: Double): js.UndefOr[SortType & Double] = js.native
   
-  /* 2 */ @js.native
-  object date extends TopLevel[date with Double]
+  @js.native
+  sealed trait completed
+    extends StObject
+       with SortType
+  /* 7 */ val completed: typingsJapgolly.nyaapi.mod.pantsu.SortType.completed & Double = js.native
   
-  /* 3 */ @js.native
-  object downloads extends TopLevel[downloads with Double]
+  @js.native
+  sealed trait date
+    extends StObject
+       with SortType
+  /* 2 */ val date: typingsJapgolly.nyaapi.mod.pantsu.SortType.date & Double = js.native
   
-  /* 0 */ @js.native
-  object id extends TopLevel[id with Double]
+  @js.native
+  sealed trait downloads
+    extends StObject
+       with SortType
+  /* 3 */ val downloads: typingsJapgolly.nyaapi.mod.pantsu.SortType.downloads & Double = js.native
   
-  /* 6 */ @js.native
-  object leechers extends TopLevel[leechers with Double]
+  @js.native
+  sealed trait id
+    extends StObject
+       with SortType
+  /* 0 */ val id: typingsJapgolly.nyaapi.mod.pantsu.SortType.id & Double = js.native
   
-  /* 1 */ @js.native
-  object name extends TopLevel[name with Double]
+  @js.native
+  sealed trait leechers
+    extends StObject
+       with SortType
+  /* 6 */ val leechers: typingsJapgolly.nyaapi.mod.pantsu.SortType.leechers & Double = js.native
   
-  /* 5 */ @js.native
-  object seeders extends TopLevel[seeders with Double]
+  @js.native
+  sealed trait name
+    extends StObject
+       with SortType
+  /* 1 */ val name: typingsJapgolly.nyaapi.mod.pantsu.SortType.name & Double = js.native
   
-  /* 4 */ @js.native
-  object size extends TopLevel[size with Double]
+  @js.native
+  sealed trait seeders
+    extends StObject
+       with SortType
+  /* 5 */ val seeders: typingsJapgolly.nyaapi.mod.pantsu.SortType.seeders & Double = js.native
   
+  @js.native
+  sealed trait size
+    extends StObject
+       with SortType
+  /* 4 */ val size: typingsJapgolly.nyaapi.mod.pantsu.SortType.size & Double = js.native
 }
-

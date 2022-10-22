@@ -1,18 +1,18 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This Gamepad API interface contains references to gamepads connected to the system, which is what the gamepad events Window.gamepadconnected and Window.gamepaddisconnected are fired in response to. */
+/**
+  * This Gamepad API interface contains references to gamepads connected to the system, which is what the gamepad events Window.gamepadconnected and Window.gamepaddisconnected are fired in response to.
+  * Available only in secure contexts.
+  */
 @js.native
-trait GamepadEvent extends Event_ {
-  val gamepad: org.scalajs.dom.experimental.gamepad.Gamepad = js.native
+trait GamepadEvent
+  extends StObject
+     with Event {
+  
+  /* standard dom */
+  val gamepad: org.scalajs.dom.Gamepad = js.native
 }
-
-@JSGlobal("GamepadEvent")
-@js.native
-object GamepadEvent
-  extends Instantiable2[/* type */ java.lang.String, /* eventInitDict */ GamepadEventInit, GamepadEvent]
-

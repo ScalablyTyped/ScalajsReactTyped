@@ -1,12 +1,15 @@
 package typingsJapgolly.dva
 
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dva/dynamic", JSImport.Namespace)
-@js.native
-object dynamicMod extends js.Object {
-  def default(resolve: js.Function1[/* value */ js.UndefOr[js.Thenable[_]], Unit]): Unit = js.native
+object dynamicMod {
+  
+  @JSImport("dva/dynamic", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(resolve: js.Function1[/* value */ js.UndefOr[PromiseLike[Any]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(resolve.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

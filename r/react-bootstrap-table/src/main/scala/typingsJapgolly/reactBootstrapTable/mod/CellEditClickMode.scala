@@ -1,24 +1,20 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.none
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.click
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.dbclick
 */
-trait CellEditClickMode extends js.Object
-
+trait CellEditClickMode extends StObject
 object CellEditClickMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def click: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.click = this.cast("click")
-  @scala.inline
-  def dbclick: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.dbclick = this.cast("dbclick")
-  @scala.inline
-  def none: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.none = this.cast("none")
+  
+  inline def click: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.click = "click".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.click]
+  
+  inline def dbclick: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.dbclick = "dbclick".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.dbclick]
+  
+  inline def none: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.none = "none".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.none]
 }
-

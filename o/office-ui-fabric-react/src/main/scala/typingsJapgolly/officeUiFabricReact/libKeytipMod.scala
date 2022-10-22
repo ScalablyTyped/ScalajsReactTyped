@@ -1,15 +1,21 @@
 package typingsJapgolly.officeUiFabricReact
 
+import typingsJapgolly.officeUiFabricReact.libComponentsKeytipKeytipDottypesMod.IKeytipProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Keytip", JSImport.Namespace)
-@js.native
-object libKeytipMod extends js.Object {
-  @js.native
-  class Keytip ()
-    extends typingsJapgolly.officeUiFabricReact.keytipKeytipMod.Keytip
+object libKeytipMod {
   
+  @JSImport("office-ui-fabric-react/lib/Keytip", "Keytip")
+  @js.native
+  open class Keytip protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsKeytipMod.Keytip {
+    def this(props: IKeytipProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: IKeytipProps, context: Any) = this()
+  }
 }
-

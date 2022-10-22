@@ -1,24 +1,40 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DialogShowHideOptions extends js.Object {
+trait DialogShowHideOptions extends StObject {
+  
   var delay: js.UndefOr[Double] = js.undefined
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
   var easing: js.UndefOr[String] = js.undefined
+  
   var effect: String
 }
-
 object DialogShowHideOptions {
-  @scala.inline
-  def apply(effect: String, delay: Int | Double = null, duration: Int | Double = null, easing: String = null): DialogShowHideOptions = {
+  
+  inline def apply(effect: String): DialogShowHideOptions = {
     val __obj = js.Dynamic.literal(effect = effect.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogShowHideOptions]
   }
+  
+  extension [Self <: DialogShowHideOptions](x: Self) {
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    
+    inline def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+  }
 }
-

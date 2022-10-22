@@ -1,24 +1,26 @@
 package typingsJapgolly.pathfinding.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JumpPointFinderBaseOptions extends Heuristic {
+trait JumpPointFinderBaseOptions
+  extends StObject
+     with Heuristic {
+  
   var trackJumpRecursion: js.UndefOr[Boolean] = js.undefined
 }
-
 object JumpPointFinderBaseOptions {
-  @scala.inline
-  def apply(
-    heuristic: (/* dx */ Double, /* dy */ Double) => CallbackTo[Double] = null,
-    trackJumpRecursion: js.UndefOr[Boolean] = js.undefined
-  ): JumpPointFinderBaseOptions = {
+  
+  inline def apply(): JumpPointFinderBaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (heuristic != null) __obj.updateDynamic("heuristic")(js.Any.fromFunction2((t0: /* dx */ scala.Double, t1: /* dy */ scala.Double) => heuristic(t0, t1).runNow()))
-    if (!js.isUndefined(trackJumpRecursion)) __obj.updateDynamic("trackJumpRecursion")(trackJumpRecursion.asInstanceOf[js.Any])
     __obj.asInstanceOf[JumpPointFinderBaseOptions]
   }
+  
+  extension [Self <: JumpPointFinderBaseOptions](x: Self) {
+    
+    inline def setTrackJumpRecursion(value: Boolean): Self = StObject.set(x, "trackJumpRecursion", value.asInstanceOf[js.Any])
+    
+    inline def setTrackJumpRecursionUndefined: Self = StObject.set(x, "trackJumpRecursion", js.undefined)
+  }
 }
-

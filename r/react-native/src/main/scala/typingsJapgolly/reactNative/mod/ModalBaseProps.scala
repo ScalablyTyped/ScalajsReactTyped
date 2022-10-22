@@ -2,19 +2,21 @@ package typingsJapgolly.reactNative.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactEventFrom
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
 import typingsJapgolly.reactNative.reactNativeStrings.fade
 import typingsJapgolly.reactNative.reactNativeStrings.none
 import typingsJapgolly.reactNative.reactNativeStrings.slide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModalBaseProps extends js.Object {
+trait ModalBaseProps extends StObject {
+  
   /**
     * @deprecated Use animationType instead
     */
   var animated: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The `animationType` prop controls how the modal animates.
     *
@@ -23,44 +25,61 @@ trait ModalBaseProps extends js.Object {
     * - `none` appears without an animation
     */
   var animationType: js.UndefOr[none | slide | fade] = js.undefined
+  
   /**
-    * The `onRequestClose` prop allows passing a function that will be called once the modal has been dismissed.
-    * _On the Android platform, this is a required function._
+    * The `onRequestClose` callback is called when the user taps the hardware back button on Android or the menu button on Apple TV.
+    *
+    * This is required on Apple TV and Android.
     */
-  var onRequestClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onRequestClose: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle & Element], Unit]] = js.undefined
+  
   /**
     * The `onShow` prop allows passing a function that will be called once the modal has been shown.
     */
-  var onShow: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
+  var onShow: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle & Element], Unit]] = js.undefined
+  
   /**
     * The `transparent` prop determines whether your modal will fill the entire view.
     * Setting this to `true` will render the modal over a transparent background.
     */
   var transparent: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The `visible` prop determines whether your modal is visible.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object ModalBaseProps {
-  @scala.inline
-  def apply(
-    animated: js.UndefOr[Boolean] = js.undefined,
-    animationType: none | slide | fade = null,
-    onRequestClose: js.UndefOr[Callback] = js.undefined,
-    onShow: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    transparent: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): ModalBaseProps = {
+  
+  inline def apply(): ModalBaseProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
-    onRequestClose.foreach(p => __obj.updateDynamic("onRequestClose")(p.toJsFn))
-    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onShow(t0).runNow()))
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalBaseProps]
   }
+  
+  extension [Self <: ModalBaseProps](x: Self) {
+    
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    
+    inline def setAnimationType(value: none | slide | fade): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
+    
+    inline def setOnRequestClose(value: ReactEventFrom[NodeHandle & Element] => Callback): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def setOnRequestCloseUndefined: Self = StObject.set(x, "onRequestClose", js.undefined)
+    
+    inline def setOnShow(value: ReactEventFrom[NodeHandle & Element] => Callback): Self = StObject.set(x, "onShow", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    
+    inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

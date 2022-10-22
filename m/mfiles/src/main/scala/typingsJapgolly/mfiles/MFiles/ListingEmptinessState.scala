@@ -1,27 +1,23 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`1`
-import typingsJapgolly.mfiles.mfilesNumbers.`2`
-import typingsJapgolly.mfiles.mfilesNumbers.`3`
+import typingsJapgolly.mfiles.mfilesInts.`1`
+import typingsJapgolly.mfiles.mfilesInts.`2`
+import typingsJapgolly.mfiles.mfilesInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.mfiles.mfilesNumbers.`1`
-  - typingsJapgolly.mfiles.mfilesNumbers.`2`
-  - typingsJapgolly.mfiles.mfilesNumbers.`3`
+  - typingsJapgolly.mfiles.mfilesInts.`1`
+  - typingsJapgolly.mfiles.mfilesInts.`2`
+  - typingsJapgolly.mfiles.mfilesInts.`3`
 */
-trait ListingEmptinessState extends js.Object
-
+trait ListingEmptinessState extends StObject
 object ListingEmptinessState {
-  @scala.inline
-  def Empty: `3` = this.cast(3)
-  @scala.inline
-  def NotEmpty: `2` = this.cast(2)
-  @scala.inline
-  def NotYetKnown: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Empty: `3` = 3.asInstanceOf[`3`]
+  
+  inline def NotEmpty: `2` = 2.asInstanceOf[`2`]
+  
+  inline def NotYetKnown: `1` = 1.asInstanceOf[`1`]
 }
-

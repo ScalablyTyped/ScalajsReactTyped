@@ -1,21 +1,48 @@
 package typingsJapgolly.mjmlReact.mod
 
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MjmlFontProps extends js.Object {
+trait MjmlFontProps extends StObject {
+  
+  var children: js.UndefOr[Node] = js.undefined
+  
   var href: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object MjmlFontProps {
-  @scala.inline
-  def apply(href: String = null, name: String = null): MjmlFontProps = {
+  
+  inline def apply(): MjmlFontProps = {
     val __obj = js.Dynamic.literal()
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MjmlFontProps]
   }
+  
+  extension [Self <: MjmlFontProps](x: Self) {
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

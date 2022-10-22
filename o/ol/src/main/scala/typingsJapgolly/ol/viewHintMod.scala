@@ -1,32 +1,37 @@
 package typingsJapgolly.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/ViewHint", JSImport.Namespace)
-@js.native
-object viewHintMod extends js.Object {
-  @js.native
-  sealed trait ViewHint extends js.Object
+object viewHintMod {
   
+  @JSImport("ol/ViewHint", JSImport.Default)
   @js.native
-  object ViewHint extends js.Object {
-    @js.native
-    sealed trait ANIMATING extends ViewHint
+  object default extends StObject {
     
-    @js.native
-    sealed trait INTERACTING extends ViewHint
-    
-  }
-  
-  @js.native
-  object default extends js.Object {
-    /* 0 */ val ANIMATING: typingsJapgolly.ol.viewHintMod.ViewHint.ANIMATING with Double = js.native
-    /* 1 */ val INTERACTING: typingsJapgolly.ol.viewHintMod.ViewHint.INTERACTING with Double = js.native
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ViewHint with Double] = js.native
+    def apply(value: Double): js.UndefOr[ViewHint & Double] = js.native
+    
+    /* 0 */ val ANIMATING: typingsJapgolly.ol.viewHintMod.ViewHint.ANIMATING & Double = js.native
+    
+    /* 1 */ val INTERACTING: typingsJapgolly.ol.viewHintMod.ViewHint.INTERACTING & Double = js.native
   }
   
+  @js.native
+  sealed trait ViewHint extends StObject
+  @JSImport("ol/ViewHint", "ViewHint")
+  @js.native
+  object ViewHint extends StObject {
+    
+    @js.native
+    sealed trait ANIMATING
+      extends StObject
+         with ViewHint
+    
+    @js.native
+    sealed trait INTERACTING
+      extends StObject
+         with ViewHint
+  }
 }
-

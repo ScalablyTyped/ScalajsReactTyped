@@ -1,27 +1,62 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InvitationParticipantInfo extends ParticipantInfo {
-  var replacesCallId: js.UndefOr[String] = js.undefined
+trait InvitationParticipantInfo extends StObject {
+  
+  var hidden: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  // The identitySet associated with this invitation.
+  var identity: js.UndefOr[IdentitySet] = js.undefined
+  
+  // Optional. The ID of the target participant.
+  var participantId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var removeFromDefaultAudioRoutingGroup: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  /**
+    * Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped
+    * once the participant is added successfully.
+    */
+  var replacesCallId: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object InvitationParticipantInfo {
-  @scala.inline
-  def apply(
-    identity: IdentitySet = null,
-    languageId: String = null,
-    region: String = null,
-    replacesCallId: String = null
-  ): InvitationParticipantInfo = {
+  
+  inline def apply(): InvitationParticipantInfo = {
     val __obj = js.Dynamic.literal()
-    if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
-    if (languageId != null) __obj.updateDynamic("languageId")(languageId.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (replacesCallId != null) __obj.updateDynamic("replacesCallId")(replacesCallId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvitationParticipantInfo]
   }
+  
+  extension [Self <: InvitationParticipantInfo](x: Self) {
+    
+    inline def setHidden(value: NullableOption[Boolean]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenNull: Self = StObject.set(x, "hidden", null)
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setIdentity(value: IdentitySet): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    
+    inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+    
+    inline def setParticipantId(value: NullableOption[String]): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
+    
+    inline def setParticipantIdNull: Self = StObject.set(x, "participantId", null)
+    
+    inline def setParticipantIdUndefined: Self = StObject.set(x, "participantId", js.undefined)
+    
+    inline def setRemoveFromDefaultAudioRoutingGroup(value: NullableOption[Boolean]): Self = StObject.set(x, "removeFromDefaultAudioRoutingGroup", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveFromDefaultAudioRoutingGroupNull: Self = StObject.set(x, "removeFromDefaultAudioRoutingGroup", null)
+    
+    inline def setRemoveFromDefaultAudioRoutingGroupUndefined: Self = StObject.set(x, "removeFromDefaultAudioRoutingGroup", js.undefined)
+    
+    inline def setReplacesCallId(value: NullableOption[String]): Self = StObject.set(x, "replacesCallId", value.asInstanceOf[js.Any])
+    
+    inline def setReplacesCallIdNull: Self = StObject.set(x, "replacesCallId", null)
+    
+    inline def setReplacesCallIdUndefined: Self = StObject.set(x, "replacesCallId", js.undefined)
+  }
 }
-

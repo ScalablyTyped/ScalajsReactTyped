@@ -1,60 +1,48 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BaseType extends js.Object
-
+sealed trait BaseType extends StObject
 /** Specifies the base type for a list. */
 @JSGlobal("SP.BaseType")
 @js.native
-object BaseType extends js.Object {
-  @js.native
-  sealed trait discussionBoard extends BaseType
+object BaseType extends StObject {
   
   @js.native
-  sealed trait documentLibrary extends BaseType
+  sealed trait discussionBoard
+    extends StObject
+       with BaseType
   
   @js.native
-  sealed trait genericList extends BaseType
+  sealed trait documentLibrary
+    extends StObject
+       with BaseType
   
   @js.native
-  sealed trait issue extends BaseType
+  sealed trait genericList
+    extends StObject
+       with BaseType
   
   @js.native
-  sealed trait none extends BaseType
+  sealed trait issue
+    extends StObject
+       with BaseType
   
   @js.native
-  sealed trait survey extends BaseType
+  sealed trait none
+    extends StObject
+       with BaseType
   
   @js.native
-  sealed trait unused extends BaseType
+  sealed trait survey
+    extends StObject
+       with BaseType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BaseType with Double] = js.native
-  /* 4 */ @js.native
-  object discussionBoard extends TopLevel[discussionBoard with Double]
-  
-  /* 2 */ @js.native
-  object documentLibrary extends TopLevel[documentLibrary with Double]
-  
-  /* 1 */ @js.native
-  object genericList extends TopLevel[genericList with Double]
-  
-  /* 6 */ @js.native
-  object issue extends TopLevel[issue with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 5 */ @js.native
-  object survey extends TopLevel[survey with Double]
-  
-  /* 3 */ @js.native
-  object unused extends TopLevel[unused with Double]
-  
+  @js.native
+  sealed trait unused
+    extends StObject
+       with BaseType
 }
-

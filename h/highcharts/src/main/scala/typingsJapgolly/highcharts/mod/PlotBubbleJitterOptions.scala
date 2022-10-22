@@ -1,29 +1,38 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotBubbleJitterOptions extends js.Object {
+trait PlotBubbleJitterOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock) The maximal X offset for the random jitter
     * effect.
     */
   var x: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock) The maximal Y offset for the random jitter
     * effect.
     */
   var y: js.UndefOr[Double] = js.undefined
 }
-
 object PlotBubbleJitterOptions {
-  @scala.inline
-  def apply(x: Int | Double = null, y: Int | Double = null): PlotBubbleJitterOptions = {
+  
+  inline def apply(): PlotBubbleJitterOptions = {
     val __obj = js.Dynamic.literal()
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotBubbleJitterOptions]
   }
+  
+  extension [Self <: PlotBubbleJitterOptions](x: Self) {
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

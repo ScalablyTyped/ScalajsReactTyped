@@ -1,27 +1,25 @@
 package typingsJapgolly.w3cGenericSensor
 
 import typingsJapgolly.std.EventInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SensorErrorEventInit extends EventInit {
+trait SensorErrorEventInit
+  extends StObject
+     with EventInit {
+  
   var error: js.Error
 }
-
 object SensorErrorEventInit {
-  @scala.inline
-  def apply(
-    error: js.Error,
-    bubbles: js.UndefOr[Boolean] = js.undefined,
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    composed: js.UndefOr[Boolean] = js.undefined
-  ): SensorErrorEventInit = {
+  
+  inline def apply(error: js.Error): SensorErrorEventInit = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
     __obj.asInstanceOf[SensorErrorEventInit]
   }
+  
+  extension [Self <: SensorErrorEventInit](x: Self) {
+    
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+  }
 }
-

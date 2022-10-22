@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-lazylog
 
-Typings are for version 4.4
+Typings are for version 4.5
 
 ## Library description:
 React Lazy Logviewer
@@ -10,10 +10,10 @@ React Lazy Logviewer
 | ------------------ | :-------------: |
 | Full name          | react-lazylog |
 | Keywords           | react, log, viewer, logviewer, lazy, lazylog |
-| # releases         | 29 |
-| # dependents       | 0 |
-| # downloads        | 76017 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 52976.666666666664 |
+| # stars            | 256.0 |
 
 ## Links
 - [Homepage](https://github.com/mozilla-frontend-infra/react-lazylog#readme)

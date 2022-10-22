@@ -1,44 +1,39 @@
 package typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Defaults extends js.Object
-
+sealed trait Defaults extends StObject
 @JSImport("react-native-firebase", "RNFirebase.notifications.Android.Defaults")
 @js.native
-object Defaults extends js.Object {
-  @js.native
-  sealed trait All extends Defaults
-  
-  @js.native
-  sealed trait Lights extends Defaults
-  
-  @js.native
-  sealed trait Sound extends Defaults
-  
-  @js.native
-  sealed trait Vibrate extends Defaults
+object Defaults extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Defaults with Double] = js.native
-  /* -1 */ @js.native
-  object All extends TopLevel[All with Double]
+  def apply(value: Double): js.UndefOr[Defaults & Double] = js.native
   
-  /* 4 */ @js.native
-  object Lights
-    extends TopLevel[
-          typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Defaults.Lights with Double
-        ]
+  @js.native
+  sealed trait All
+    extends StObject
+       with Defaults
+  /* -1 */ val All: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Defaults.All & Double = js.native
   
-  /* 1 */ @js.native
-  object Sound extends TopLevel[Sound with Double]
+  @js.native
+  sealed trait Lights
+    extends StObject
+       with Defaults
+  /* 4 */ val Lights: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Defaults.Lights & Double = js.native
   
-  /* 2 */ @js.native
-  object Vibrate extends TopLevel[Vibrate with Double]
+  @js.native
+  sealed trait Sound
+    extends StObject
+       with Defaults
+  /* 1 */ val Sound: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Defaults.Sound & Double = js.native
   
+  @js.native
+  sealed trait Vibrate
+    extends StObject
+       with Defaults
+  /* 2 */ val Vibrate: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Defaults.Vibrate & Double = js.native
 }
-

@@ -1,46 +1,52 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.auto
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.manual
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneViewConstraintsTiltProperties extends Object {
+trait SceneViewConstraintsTiltProperties
+  extends StObject
+     with Object {
+  
   /**
     * Specifies the maximum amount of tilt (in degrees) allowed in the view and may range from 0.5 to 179.5 degrees.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
   var max: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Specifies the mode of the constraint. There are two possible values: `auto` or `manual`. In `auto` mode, the maximum tilt value is automatically determined based on the altitude of the view camera. In `manual` mode, the maximum tilt value is a user defined, constant value. **Note:** The mode automatically changes to `manual` whenever the `max` property is set.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
+    * Specifies the mode of the constraint.
     *
     * @default auto
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
   var mode: js.UndefOr[auto | manual] = js.undefined
 }
-
 object SceneViewConstraintsTiltProperties {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    max: Int | Double = null,
-    mode: auto | manual = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): SceneViewConstraintsTiltProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[SceneViewConstraintsTiltProperties]
   }
+  
+  extension [Self <: SceneViewConstraintsTiltProperties](x: Self) {
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMode(value: auto | manual): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+  }
 }
-

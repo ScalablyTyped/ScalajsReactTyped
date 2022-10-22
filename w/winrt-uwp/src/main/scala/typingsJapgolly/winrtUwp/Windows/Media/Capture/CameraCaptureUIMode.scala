@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Capture
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CameraCaptureUIMode extends js.Object
-
+sealed trait CameraCaptureUIMode extends StObject
 /** Determines whether the user interface for capturing from the attached camera allows capture of photos, videos, or both photos and videos. */
 @JSGlobal("Windows.Media.Capture.CameraCaptureUIMode")
 @js.native
-object CameraCaptureUIMode extends js.Object {
+object CameraCaptureUIMode extends StObject {
+  
   /** The user can only capture a photo. */
   @js.native
-  sealed trait photo extends CameraCaptureUIMode
+  sealed trait photo
+    extends StObject
+       with CameraCaptureUIMode
   
   /** Either a photo or video can be captured. */
   @js.native
-  sealed trait photoOrVideo extends CameraCaptureUIMode
+  sealed trait photoOrVideo
+    extends StObject
+       with CameraCaptureUIMode
   
   /** The user can only capture a video. */
   @js.native
-  sealed trait video extends CameraCaptureUIMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CameraCaptureUIMode with Double] = js.native
-  /* 1 */ @js.native
-  object photo extends TopLevel[photo with Double]
-  
-  /* 0 */ @js.native
-  object photoOrVideo extends TopLevel[photoOrVideo with Double]
-  
-  /* 2 */ @js.native
-  object video extends TopLevel[video with Double]
-  
+  sealed trait video
+    extends StObject
+       with CameraCaptureUIMode
 }
-

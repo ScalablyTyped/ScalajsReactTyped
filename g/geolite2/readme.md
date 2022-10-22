@@ -10,10 +10,10 @@ Maxmind's GeoLite2 Free Databases
 | ------------------ | :-------------: |
 | Full name          | geolite2 |
 | Keywords           | maxmind, mmdb, geo, geoip, geoip2, geobase, geo lookup |
-| # releases         | 7 |
-| # dependents       | 6 |
-| # downloads        | 186804 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 40166.0 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://github.com/runk/node-geolite2#readme)

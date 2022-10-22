@@ -1,20 +1,23 @@
 package typingsJapgolly.qlik.mod
 
-import typingsJapgolly.qlik.AnonQIsNum
+import typingsJapgolly.qlik.anon.QIsNum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Variable extends js.Object {
-  var qContent: AnonQIsNum
-}
-
-object Variable {
-  @scala.inline
-  def apply(qContent: AnonQIsNum): Variable = {
-    val __obj = js.Dynamic.literal(qContent = qContent.asInstanceOf[js.Any])
+trait Variable extends StObject {
   
+  var qContent: QIsNum
+}
+object Variable {
+  
+  inline def apply(qContent: QIsNum): Variable = {
+    val __obj = js.Dynamic.literal(qContent = qContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Variable]
   }
+  
+  extension [Self <: Variable](x: Self) {
+    
+    inline def setQContent(value: QIsNum): Self = StObject.set(x, "qContent", value.asInstanceOf[js.Any])
+  }
 }
-

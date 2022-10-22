@@ -1,28 +1,43 @@
 package typingsJapgolly.ejWebAll.ej
 
-import typingsJapgolly.ejWebAll.AnonCount
+import typingsJapgolly.ejWebAll.anon.Count
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ej.ODataAdaptor")
 @js.native
-class ODataAdaptor () extends UrlAdaptor {
+trait ODataAdaptor
+  extends StObject
+     with UrlAdaptor {
+  
+  def generateDeleteRequest(arr: js.Array[Any], e: Any): String = js.native
+  
+  def generateInsertRequest(arr: js.Array[Any], e: Any): String = js.native
+  
+  def generateUpdateRequest(arr: js.Array[Any], e: Any): String = js.native
+  
+  def onComplexPredicate(pred: Predicate, requiresCast: Boolean): String = js.native
+  
+  def onCount(e: Any): String = js.native
+  
+  def onEachSearch(e: Any): Unit = js.native
+  
+  def onEachSort(e: Any): String = js.native
+  
+  def onEachWhere(filter: Any, requiresCast: Boolean): Any = js.native
+  
+  def onPredicate(pred: Predicate, query: Query, requiresCast: Boolean): String = js.native
+  
+  def onSearch(e: Any): String = js.native
+  
+  def onSelect(e: Any): String = js.native
+  
+  def onSortBy(e: Any): String = js.native
+  
+  def onWhere(filters: js.Array[String]): String = js.native
+  
   @JSName("options")
   var options_ODataAdaptor: UrlAdaptorOptions = js.native
-  def generateDeleteRequest(arr: js.Array[_], e: js.Any): String = js.native
-  def generateInsertRequest(arr: js.Array[_], e: js.Any): String = js.native
-  def generateUpdateRequest(arr: js.Array[_], e: js.Any): String = js.native
-  def onComplexPredicate(pred: Predicate, requiresCast: Boolean): String = js.native
-  def onCount(e: js.Any): String = js.native
-  def onEachSearch(e: js.Any): Unit = js.native
-  def onEachSort(e: js.Any): String = js.native
-  def onEachWhere(filter: js.Any, requiresCast: Boolean): js.Any = js.native
-  def onPredicate(pred: Predicate, query: Query, requiresCast: Boolean): String = js.native
-  def onSearch(e: js.Any): String = js.native
-  def onSelect(e: js.Any): String = js.native
-  def onSortBy(e: js.Any): String = js.native
-  def onWhere(filters: js.Array[String]): String = js.native
-  def processResponse(data: js.Any, ds: js.Any, query: Query, xhr: js.Any, request: js.Any, changes: Changes): AnonCount = js.native
+  
+  def processResponse(data: Any, ds: Any, query: Query, xhr: Any, request: Any, changes: Changes): Count = js.native
 }
-

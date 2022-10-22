@@ -1,27 +1,42 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.monacoEditor.mod.CancellationToken
+import typingsJapgolly.monacoEditor.mod.IDisposable
+import typingsJapgolly.monacoEditor.mod.IEvent
 import typingsJapgolly.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FoldingRangeProvider extends js.Object {
+trait FoldingRangeProvider extends StObject {
+  
   /**
-    * Provides the color ranges for a specific model.
+    * An optional event to signal that the folding ranges from this provider have changed.
+    */
+  var onDidChange: js.UndefOr[IEvent[this.type]] = js.undefined
+  
+  /**
+    * Provides the folding ranges for a specific model.
     */
   def provideFoldingRanges(model: ITextModel, context: FoldingContext, token: CancellationToken): ProviderResult[js.Array[FoldingRange]]
 }
-
 object FoldingRangeProvider {
-  @scala.inline
-  def apply(
-    provideFoldingRanges: (ITextModel, FoldingContext, CancellationToken) => CallbackTo[ProviderResult[js.Array[FoldingRange]]]
+  
+  inline def apply(
+    provideFoldingRanges: (ITextModel, FoldingContext, CancellationToken) => ProviderResult[js.Array[FoldingRange]]
   ): FoldingRangeProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideFoldingRanges")(js.Any.fromFunction3((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.languages.FoldingContext, t2: typingsJapgolly.monacoEditor.mod.CancellationToken) => provideFoldingRanges(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(provideFoldingRanges = js.Any.fromFunction3(provideFoldingRanges))
     __obj.asInstanceOf[FoldingRangeProvider]
   }
+  
+  extension [Self <: FoldingRangeProvider](x: Self) {
+    
+    inline def setOnDidChange(
+      value: (/* listener */ js.Function1[FoldingRangeProvider, Any], /* thisArg */ js.UndefOr[Any]) => IDisposable
+    ): Self = StObject.set(x, "onDidChange", js.Any.fromFunction2(value))
+    
+    inline def setOnDidChangeUndefined: Self = StObject.set(x, "onDidChange", js.undefined)
+    
+    inline def setProvideFoldingRanges(value: (ITextModel, FoldingContext, CancellationToken) => ProviderResult[js.Array[FoldingRange]]): Self = StObject.set(x, "provideFoldingRanges", js.Any.fromFunction3(value))
+  }
 }
-

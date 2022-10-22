@@ -1,21 +1,30 @@
 package typingsJapgolly.facebookJsSdk.facebook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DialogResponse extends js.Object {
+trait DialogResponse extends StObject {
+  
   var error_code: js.UndefOr[Double] = js.undefined
+  
   var error_message: js.UndefOr[String] = js.undefined
 }
-
 object DialogResponse {
-  @scala.inline
-  def apply(error_code: Int | Double = null, error_message: String = null): DialogResponse = {
+  
+  inline def apply(): DialogResponse = {
     val __obj = js.Dynamic.literal()
-    if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
-    if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogResponse]
   }
+  
+  extension [Self <: DialogResponse](x: Self) {
+    
+    inline def setError_code(value: Double): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
+    
+    inline def setError_codeUndefined: Self = StObject.set(x, "error_code", js.undefined)
+    
+    inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
+    
+    inline def setError_messageUndefined: Self = StObject.set(x, "error_message", js.undefined)
+  }
 }
-

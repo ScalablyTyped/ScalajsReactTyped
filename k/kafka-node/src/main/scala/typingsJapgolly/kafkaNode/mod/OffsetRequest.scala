@@ -1,29 +1,40 @@
 package typingsJapgolly.kafkaNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OffsetRequest extends js.Object {
+trait OffsetRequest extends StObject {
+  
   var maxNum: js.UndefOr[Double] = js.undefined
+  
   var partition: js.UndefOr[Double] = js.undefined
+  
   var time: js.UndefOr[Double] = js.undefined
+  
   var topic: String
 }
-
 object OffsetRequest {
-  @scala.inline
-  def apply(
-    topic: String,
-    maxNum: Int | Double = null,
-    partition: Int | Double = null,
-    time: Int | Double = null
-  ): OffsetRequest = {
+  
+  inline def apply(topic: String): OffsetRequest = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
-    if (maxNum != null) __obj.updateDynamic("maxNum")(maxNum.asInstanceOf[js.Any])
-    if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetRequest]
   }
+  
+  extension [Self <: OffsetRequest](x: Self) {
+    
+    inline def setMaxNum(value: Double): Self = StObject.set(x, "maxNum", value.asInstanceOf[js.Any])
+    
+    inline def setMaxNumUndefined: Self = StObject.set(x, "maxNum", js.undefined)
+    
+    inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+    
+    inline def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
+    
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+  }
 }
-

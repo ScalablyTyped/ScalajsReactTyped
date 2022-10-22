@@ -1,12 +1,14 @@
 package typingsJapgolly.arrDiff
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("arr-diff", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[T](first: js.Array[T], args: js.Array[_]*): js.Array[T] = js.native
+object mod {
+  
+  inline def apply[T](first: js.Array[T], args: js.Array[Any]*): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(scala.List(first.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[T]]
+  
+  @JSImport("arr-diff", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

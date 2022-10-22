@@ -1,7 +1,7 @@
 
 # Scala.js typings for showdown
 
-Typings are for version 1.9.0
+Typings are for version 2.0
 
 ## Library description:
 A Markdown to HTML converter written in Javascript
@@ -10,10 +10,10 @@ A Markdown to HTML converter written in Javascript
 | ------------------ | :-------------: |
 | Full name          | showdown |
 | Keywords           | markdown, converter |
-| # releases         | 4 |
-| # dependents       | 496 |
-| # downloads        | 6643860 |
-| # stars            | 30 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2028820.6666666667 |
+| # stars            | 12575.0 |
 
 ## Links
 - [Homepage](http://showdownjs.com/)

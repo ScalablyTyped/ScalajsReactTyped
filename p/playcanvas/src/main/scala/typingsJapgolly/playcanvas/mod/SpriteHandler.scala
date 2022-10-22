@@ -1,24 +1,48 @@
 package typingsJapgolly.playcanvas.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @class
-  * @name pc.SpriteHandler
-  * @implements {pc.ResourceHandler}
-  * @classdesc Resource handler used for loading {@link pc.Sprite} resources.
-  * @param {pc.AssetRegistry} assets - The asset registry.
-  * @param {pc.GraphicsDevice} device - The graphics device.
+  * Resource handler used for loading {@link Sprite} resources.
+  *
+  * @implements {ResourceHandler}
   */
 @JSImport("playcanvas", "SpriteHandler")
 @js.native
-class SpriteHandler protected ()
-  extends typingsJapgolly.playcanvas.pc.SpriteHandler {
-  def this(
-    assets: typingsJapgolly.playcanvas.pc.AssetRegistry,
-    device: typingsJapgolly.playcanvas.pc.GraphicsDevice
-  ) = this()
+open class SpriteHandler protected ()
+  extends StObject
+     with ResourceHandler {
+  /**
+    * Create a new SpriteHandler instance.
+    *
+    * @param {AppBase} app - The running {@link AppBase}.
+    * @hideconstructor
+    */
+  def this(app: AppBase) = this()
+  
+  var _assets: AssetRegistry = js.native
+  
+  var _device: GraphicsDevice = js.native
+  
+  def _onAssetChange(asset: Any, attribute: Any, value: Any, oldValue: Any): Unit = js.native
+  
+  def _updateAtlas(asset: Any): Unit = js.native
+  
+  /**
+    * Type of the resource the handler handles.
+    *
+    * @type {string}
+    */
+  var handlerType: String = js.native
+  
+  def load(url: Any, callback: Any): Unit = js.native
+  
+  var maxRetries: Double = js.native
+  
+  def open(url: Any, data: Any): Sprite = js.native
+  
+  @JSName("patch")
+  def patch_MSpriteHandler(asset: Any, assets: Any): Unit = js.native
 }
-

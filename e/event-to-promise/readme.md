@@ -10,10 +10,10 @@ Create a promise waiting for an event
 | ------------------ | :-------------: |
 | Full name          | event-to-promise |
 | Keywords           | event, promise |
-| # releases         | 0 |
-| # dependents       | 55 |
-| # downloads        | 732370 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 500245.0 |
+| # stars            | 37.0 |
 
 ## Links
 - [Homepage](https://github.com/JsCommunity/event-to-promise)

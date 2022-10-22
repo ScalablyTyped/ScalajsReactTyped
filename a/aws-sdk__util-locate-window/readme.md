@@ -1,20 +1,24 @@
 
 # Scala.js typings for aws-sdk__util-locate-window
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 3.188.0
 
-
+## Library description:
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/util-locate-window/latest.svg)](https://www.npmjs.com/package/@aws-sdk/util-locate-window) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/util-locate-window.svg)](https://www.npmjs.com/packag
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-locate-window |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 5 |
-| # downloads        | 5656 |
-| # stars            | 0 |
+| # releases         | 34 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0259842E7 |
+| # stars            | 1888.0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-locate-window)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Futil-locate-window)
     
 

@@ -1,29 +1,23 @@
 package typingsJapgolly.reactNative.mod
 
-import typingsJapgolly.reactNative.reactNativeStrings.dismissedAction
-import typingsJapgolly.reactNative.reactNativeStrings.sharedAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNative.mod.ShareSharedAction
   - typingsJapgolly.reactNative.mod.ShareDismissedAction
 */
-trait ShareAction extends js.Object
-
+trait ShareAction extends StObject
 object ShareAction {
-  @scala.inline
-  def ShareSharedAction(action: sharedAction, activityType: String = null): ShareAction = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-    if (activityType != null) __obj.updateDynamic("activityType")(activityType.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ShareAction]
-  }
-  @scala.inline
-  def ShareDismissedAction(action: dismissedAction): ShareAction = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[ShareAction]
+  inline def ShareDismissedAction(): typingsJapgolly.reactNative.mod.ShareDismissedAction = {
+    val __obj = js.Dynamic.literal(action = "dismissedAction")
+    __obj.asInstanceOf[typingsJapgolly.reactNative.mod.ShareDismissedAction]
+  }
+  
+  inline def ShareSharedAction(): typingsJapgolly.reactNative.mod.ShareSharedAction = {
+    val __obj = js.Dynamic.literal(action = "sharedAction")
+    __obj.asInstanceOf[typingsJapgolly.reactNative.mod.ShareSharedAction]
   }
 }
-

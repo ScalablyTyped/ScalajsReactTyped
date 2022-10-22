@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Background
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BackgroundAccessStatus extends js.Object
-
+sealed trait BackgroundAccessStatus extends StObject
 @JSGlobal("Windows.ApplicationModel.Background.BackgroundAccessStatus")
 @js.native
-object BackgroundAccessStatus extends js.Object {
-  @js.native
-  sealed trait allowedMayUseActiveRealTimeConnectivity extends BackgroundAccessStatus
+object BackgroundAccessStatus extends StObject {
   
   @js.native
-  sealed trait allowedWithAlwaysOnRealTimeConnectivity extends BackgroundAccessStatus
+  sealed trait allowedMayUseActiveRealTimeConnectivity
+    extends StObject
+       with BackgroundAccessStatus
   
   @js.native
-  sealed trait denied extends BackgroundAccessStatus
+  sealed trait allowedWithAlwaysOnRealTimeConnectivity
+    extends StObject
+       with BackgroundAccessStatus
   
   @js.native
-  sealed trait unspecified extends BackgroundAccessStatus
+  sealed trait denied
+    extends StObject
+       with BackgroundAccessStatus
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BackgroundAccessStatus with Double] = js.native
-  /* 2 */ @js.native
-  object allowedMayUseActiveRealTimeConnectivity extends TopLevel[allowedMayUseActiveRealTimeConnectivity with Double]
-  
-  /* 1 */ @js.native
-  object allowedWithAlwaysOnRealTimeConnectivity extends TopLevel[allowedWithAlwaysOnRealTimeConnectivity with Double]
-  
-  /* 3 */ @js.native
-  object denied extends TopLevel[denied with Double]
-  
-  /* 0 */ @js.native
-  object unspecified extends TopLevel[unspecified with Double]
-  
+  @js.native
+  sealed trait unspecified
+    extends StObject
+       with BackgroundAccessStatus
 }
-

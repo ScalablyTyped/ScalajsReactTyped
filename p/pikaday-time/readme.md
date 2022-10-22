@@ -10,13 +10,13 @@ Time support added to pikaday
 | ------------------ | :-------------: |
 | Full name          | pikaday-time |
 | Keywords           | datepicker, calendar, date, time, datetime |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 131445 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8815.333333333334 |
+| # stars            | 153.0 |
 
 ## Links
-- [Homepage](http://dbushell.github.io/Pikaday/)
+- [Homepage](https://github.com/owenmead/Pikaday#readme)
 - [Bugs](https://github.com/owenmead/Pikaday/issues)
 - [Repository](https://github.com/owenmead/Pikaday)
 - [Npm](https://www.npmjs.com/package/pikaday-time)

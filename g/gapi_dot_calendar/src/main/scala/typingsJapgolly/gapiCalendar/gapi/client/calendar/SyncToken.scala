@@ -1,8 +1,8 @@
 package typingsJapgolly.gapiCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Token obtained from the nextSyncToken field returned on the last page of results from the previous list request.
 // It makes the result of this list request contain only entries that have changed since then.
@@ -19,26 +19,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gapiCalendar.gapiCalendarStrings.timeMax
   - typingsJapgolly.gapiCalendar.gapiCalendarStrings.updatedMin
 */
-trait SyncToken extends js.Object
-
+trait SyncToken extends StObject
 object SyncToken {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def iCalUID: typingsJapgolly.gapiCalendar.gapiCalendarStrings.iCalUID = this.cast("iCalUID")
-  @scala.inline
-  def orderBy: typingsJapgolly.gapiCalendar.gapiCalendarStrings.orderBy = this.cast("orderBy")
-  @scala.inline
-  def privateExtendedProperty: typingsJapgolly.gapiCalendar.gapiCalendarStrings.privateExtendedProperty = this.cast("privateExtendedProperty")
-  @scala.inline
-  def q: typingsJapgolly.gapiCalendar.gapiCalendarStrings.q = this.cast("q")
-  @scala.inline
-  def sharedExtendedProperty: typingsJapgolly.gapiCalendar.gapiCalendarStrings.sharedExtendedProperty = this.cast("sharedExtendedProperty")
-  @scala.inline
-  def timeMax: typingsJapgolly.gapiCalendar.gapiCalendarStrings.timeMax = this.cast("timeMax")
-  @scala.inline
-  def timeMin: typingsJapgolly.gapiCalendar.gapiCalendarStrings.timeMin = this.cast("timeMin")
-  @scala.inline
-  def updatedMin: typingsJapgolly.gapiCalendar.gapiCalendarStrings.updatedMin = this.cast("updatedMin")
+  
+  inline def iCalUID: typingsJapgolly.gapiCalendar.gapiCalendarStrings.iCalUID = "iCalUID".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.iCalUID]
+  
+  inline def orderBy: typingsJapgolly.gapiCalendar.gapiCalendarStrings.orderBy = "orderBy".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.orderBy]
+  
+  inline def privateExtendedProperty: typingsJapgolly.gapiCalendar.gapiCalendarStrings.privateExtendedProperty = "privateExtendedProperty".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.privateExtendedProperty]
+  
+  inline def q: typingsJapgolly.gapiCalendar.gapiCalendarStrings.q = "q".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.q]
+  
+  inline def sharedExtendedProperty: typingsJapgolly.gapiCalendar.gapiCalendarStrings.sharedExtendedProperty = "sharedExtendedProperty".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.sharedExtendedProperty]
+  
+  inline def timeMax: typingsJapgolly.gapiCalendar.gapiCalendarStrings.timeMax = "timeMax".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.timeMax]
+  
+  inline def timeMin: typingsJapgolly.gapiCalendar.gapiCalendarStrings.timeMin = "timeMin".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.timeMin]
+  
+  inline def updatedMin: typingsJapgolly.gapiCalendar.gapiCalendarStrings.updatedMin = "updatedMin".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.updatedMin]
 }
-

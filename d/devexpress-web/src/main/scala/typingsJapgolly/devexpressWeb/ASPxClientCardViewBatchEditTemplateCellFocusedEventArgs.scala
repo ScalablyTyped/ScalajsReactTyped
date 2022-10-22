@@ -1,27 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.BatchEditTemplateCellFocused event.
   */
-@JSGlobal("ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs")
-@js.native
-class ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs class with the specified column.
-    * @param column An ASPxClientCardViewColumn object that is the processed CardView column. This value is assigned to the ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs.column property.
-    */
-  def this(column: ASPxClientCardViewColumn) = this()
+trait ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the currently processed column.
     */
-  var column: ASPxClientCardViewColumn = js.native
+  var column: ASPxClientCardViewColumn
+  
   /**
     * Gets or sets a value specifying whether the event was handled.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
 }
-
+object ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs {
+  
+  inline def apply(column: ASPxClientCardViewColumn, handled: Boolean): ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs = {
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs](x: Self) {
+    
+    inline def setColumn(value: ASPxClientCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+  }
+}

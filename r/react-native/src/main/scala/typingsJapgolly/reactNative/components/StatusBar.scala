@@ -1,52 +1,47 @@
 package typingsJapgolly.reactNative.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNative.mod.ColorValue
 import typingsJapgolly.reactNative.mod.StatusBarProps
 import typingsJapgolly.reactNative.mod.StatusBarStyle
 import typingsJapgolly.reactNative.reactNativeStrings.fade
+import typingsJapgolly.reactNative.reactNativeStrings.none
 import typingsJapgolly.reactNative.reactNativeStrings.slide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StatusBar {
-  def apply(
-    animated: js.UndefOr[Boolean] = js.undefined,
-    backgroundColor: String = null,
-    barStyle: StatusBarStyle = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    networkActivityIndicatorVisible: js.UndefOr[Boolean] = js.undefined,
-    showHideTransition: fade | slide = null,
-    translucent: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[StatusBarProps, typingsJapgolly.reactNative.mod.StatusBar, Unit, StatusBarProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkActivityIndicatorVisible)) __obj.updateDynamic("networkActivityIndicatorVisible")(networkActivityIndicatorVisible.asInstanceOf[js.Any])
-    if (showHideTransition != null) __obj.updateDynamic("showHideTransition")(showHideTransition.asInstanceOf[js.Any])
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNative.mod.StatusBarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNative.mod.StatusBar](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNative.mod.StatusBarProps])(children: _*)
-  }
   @JSImport("react-native", "StatusBar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNative.mod.StatusBar] {
+    
+    inline def animated(value: Boolean): this.type = set("animated", value.asInstanceOf[js.Any])
+    
+    inline def backgroundColor(value: ColorValue): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def barStyle(value: StatusBarStyle): this.type = set("barStyle", value.asInstanceOf[js.Any])
+    
+    inline def barStyleNull: this.type = set("barStyle", null)
+    
+    inline def hidden(value: Boolean): this.type = set("hidden", value.asInstanceOf[js.Any])
+    
+    inline def networkActivityIndicatorVisible(value: Boolean): this.type = set("networkActivityIndicatorVisible", value.asInstanceOf[js.Any])
+    
+    inline def showHideTransition(value: fade | slide | none): this.type = set("showHideTransition", value.asInstanceOf[js.Any])
+    
+    inline def showHideTransitionNull: this.type = set("showHideTransition", null)
+    
+    inline def translucent(value: Boolean): this.type = set("translucent", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: StatusBar.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: StatusBarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

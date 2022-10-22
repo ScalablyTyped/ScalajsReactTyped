@@ -3,87 +3,123 @@ package typingsJapgolly.extjs.Ext
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.extjs.Ext.tab.IBar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ITabPanel
-  extends typingsJapgolly.extjs.Ext.panel.IPanel {
+  extends StObject
+     with typingsJapgolly.extjs.Ext.panel.IPanel {
+  
   /** [Config Option] (String/Number/Ext.Component) */
-  var activeTab: js.UndefOr[js.Any] = js.undefined
+  var activeTab: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var deferredRender: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Returns the item that is currently active inside this TabPanel
-  		* @returns Ext.Component The currently active item.
-  		*/
+    * @returns Ext.Component The currently active item.
+    */
   var getActiveTab: js.UndefOr[js.Function0[IComponent]] = js.undefined
+  
   /** [Method] Returns the Ext tab Bar currently used in this TabPanel
-  		* @returns Ext.tab.Bar The TabBar
-  		*/
+    * @returns Ext.tab.Bar The TabBar
+    */
   var getTabBar: js.UndefOr[js.Function0[IBar]] = js.undefined
+  
   /** [Config Option] (String) */
   var itemCls: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (Number) */
   var maxTabWidth: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (Number) */
   var minTabWidth: js.UndefOr[Double] = js.undefined
+  
   /** [Method] Makes sure we have a Tab for each item added to the TabPanel
-  		* @param item Object
-  		* @param index Object
-  		*/
+    * @param item Object
+    * @param index Object
+    */
   @JSName("onAdd")
-  var onAdd_ITabPanel: js.UndefOr[
-    js.Function2[/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var onAdd_ITabPanel: js.UndefOr[js.Function2[/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var plain: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var removePanelHeader: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Makes the given card active
-  		* @param card String/Number/Ext.Component The card to make active. Either an ID, index or the component itself.
-  		* @returns Ext.Component The resulting active child Component. The call may have been vetoed, or otherwise modified by an event listener.
-  		*/
-  var setActiveTab: js.UndefOr[js.Function1[/* card */ js.UndefOr[js.Any], IComponent]] = js.undefined
+    * @param card String/Number/Ext.Component The card to make active. Either an ID, index or the component itself.
+    * @returns Ext.Component The resulting active child Component. The call may have been vetoed, or otherwise modified by an event listener.
+    */
+  var setActiveTab: js.UndefOr[js.Function1[/* card */ js.UndefOr[Any], IComponent]] = js.undefined
+  
   /** [Config Option] (Object) */
-  var tabBar: js.UndefOr[js.Any] = js.undefined
+  var tabBar: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] ("top"/"bottom"/"left"/"right") */
-  var tabPosition: js.UndefOr[js.Any] = js.undefined
+  var tabPosition: js.UndefOr[Any] = js.undefined
 }
-
 object ITabPanel {
-  @scala.inline
-  def apply(
-    IPanel: typingsJapgolly.extjs.Ext.panel.IPanel = null,
-    activeTab: js.Any = null,
-    deferredRender: js.UndefOr[Boolean] = js.undefined,
-    getActiveTab: js.UndefOr[CallbackTo[IComponent]] = js.undefined,
-    getTabBar: js.UndefOr[CallbackTo[IBar]] = js.undefined,
-    itemCls: java.lang.String = null,
-    maxTabWidth: Int | Double = null,
-    minTabWidth: Int | Double = null,
-    onAdd: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any]) => Callback = null,
-    plain: js.UndefOr[Boolean] = js.undefined,
-    removePanelHeader: js.UndefOr[Boolean] = js.undefined,
-    setActiveTab: /* card */ js.UndefOr[js.Any] => CallbackTo[IComponent] = null,
-    tabBar: js.Any = null,
-    tabPosition: js.Any = null
-  ): ITabPanel = {
+  
+  inline def apply(): ITabPanel = {
     val __obj = js.Dynamic.literal()
-    if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)
-    if (activeTab != null) __obj.updateDynamic("activeTab")(activeTab.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferredRender)) __obj.updateDynamic("deferredRender")(deferredRender.asInstanceOf[js.Any])
-    getActiveTab.foreach(p => __obj.updateDynamic("getActiveTab")(p.toJsFn))
-    getTabBar.foreach(p => __obj.updateDynamic("getTabBar")(p.toJsFn))
-    if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls.asInstanceOf[js.Any])
-    if (maxTabWidth != null) __obj.updateDynamic("maxTabWidth")(maxTabWidth.asInstanceOf[js.Any])
-    if (minTabWidth != null) __obj.updateDynamic("minTabWidth")(minTabWidth.asInstanceOf[js.Any])
-    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction2((t0: /* item */ js.UndefOr[js.Any], t1: /* index */ js.UndefOr[js.Any]) => onAdd(t0, t1).runNow()))
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
-    if (!js.isUndefined(removePanelHeader)) __obj.updateDynamic("removePanelHeader")(removePanelHeader.asInstanceOf[js.Any])
-    if (setActiveTab != null) __obj.updateDynamic("setActiveTab")(js.Any.fromFunction1((t0: /* card */ js.UndefOr[js.Any]) => setActiveTab(t0).runNow()))
-    if (tabBar != null) __obj.updateDynamic("tabBar")(tabBar.asInstanceOf[js.Any])
-    if (tabPosition != null) __obj.updateDynamic("tabPosition")(tabPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITabPanel]
   }
+  
+  extension [Self <: ITabPanel](x: Self) {
+    
+    inline def setActiveTab(value: Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+    
+    inline def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
+    
+    inline def setDeferredRender(value: Boolean): Self = StObject.set(x, "deferredRender", value.asInstanceOf[js.Any])
+    
+    inline def setDeferredRenderUndefined: Self = StObject.set(x, "deferredRender", js.undefined)
+    
+    inline def setGetActiveTab(value: CallbackTo[IComponent]): Self = StObject.set(x, "getActiveTab", value.toJsFn)
+    
+    inline def setGetActiveTabUndefined: Self = StObject.set(x, "getActiveTab", js.undefined)
+    
+    inline def setGetTabBar(value: CallbackTo[IBar]): Self = StObject.set(x, "getTabBar", value.toJsFn)
+    
+    inline def setGetTabBarUndefined: Self = StObject.set(x, "getTabBar", js.undefined)
+    
+    inline def setItemCls(value: java.lang.String): Self = StObject.set(x, "itemCls", value.asInstanceOf[js.Any])
+    
+    inline def setItemClsUndefined: Self = StObject.set(x, "itemCls", js.undefined)
+    
+    inline def setMaxTabWidth(value: Double): Self = StObject.set(x, "maxTabWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxTabWidthUndefined: Self = StObject.set(x, "maxTabWidth", js.undefined)
+    
+    inline def setMinTabWidth(value: Double): Self = StObject.set(x, "minTabWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinTabWidthUndefined: Self = StObject.set(x, "minTabWidth", js.undefined)
+    
+    inline def setOnAdd(value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Any]) => Callback): Self = StObject.set(x, "onAdd", js.Any.fromFunction2((t0: /* item */ js.UndefOr[Any], t1: /* index */ js.UndefOr[Any]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+    
+    inline def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+    
+    inline def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
+    
+    inline def setRemovePanelHeader(value: Boolean): Self = StObject.set(x, "removePanelHeader", value.asInstanceOf[js.Any])
+    
+    inline def setRemovePanelHeaderUndefined: Self = StObject.set(x, "removePanelHeader", js.undefined)
+    
+    inline def setSetActiveTab(value: /* card */ js.UndefOr[Any] => IComponent): Self = StObject.set(x, "setActiveTab", js.Any.fromFunction1(value))
+    
+    inline def setSetActiveTabUndefined: Self = StObject.set(x, "setActiveTab", js.undefined)
+    
+    inline def setTabBar(value: Any): Self = StObject.set(x, "tabBar", value.asInstanceOf[js.Any])
+    
+    inline def setTabBarUndefined: Self = StObject.set(x, "tabBar", js.undefined)
+    
+    inline def setTabPosition(value: Any): Self = StObject.set(x, "tabPosition", value.asInstanceOf[js.Any])
+    
+    inline def setTabPositionUndefined: Self = StObject.set(x, "tabPosition", js.undefined)
+  }
 }
-

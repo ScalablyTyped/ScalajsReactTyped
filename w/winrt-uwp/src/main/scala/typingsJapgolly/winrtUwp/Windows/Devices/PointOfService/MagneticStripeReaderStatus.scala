@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MagneticStripeReaderStatus extends js.Object
-
+sealed trait MagneticStripeReaderStatus extends StObject
 /** Defines the constants that indicates the device authentication status. */
 @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderStatus")
 @js.native
-object MagneticStripeReaderStatus extends js.Object {
+object MagneticStripeReaderStatus extends StObject {
+  
   /** An authenticated device. */
   @js.native
-  sealed trait authenticated extends MagneticStripeReaderStatus
+  sealed trait authenticated
+    extends StObject
+       with MagneticStripeReaderStatus
   
   /** Vendor specific status. */
   @js.native
-  sealed trait extended extends MagneticStripeReaderStatus
+  sealed trait extended
+    extends StObject
+       with MagneticStripeReaderStatus
   
   /** A device not authenticated. */
   @js.native
-  sealed trait unauthenticated extends MagneticStripeReaderStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MagneticStripeReaderStatus with Double] = js.native
-  /* 1 */ @js.native
-  object authenticated extends TopLevel[authenticated with Double]
-  
-  /* 2 */ @js.native
-  object extended extends TopLevel[extended with Double]
-  
-  /* 0 */ @js.native
-  object unauthenticated extends TopLevel[unauthenticated with Double]
-  
+  sealed trait unauthenticated
+    extends StObject
+       with MagneticStripeReaderStatus
 }
-

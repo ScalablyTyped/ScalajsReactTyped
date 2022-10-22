@@ -1,18 +1,15 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`open-street-map`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenStreetMapLayer extends WebTileLayer {
+trait OpenStreetMapLayer
+  extends StObject
+     with WebTileLayer {
+  
   @JSName("type")
   val type_OpenStreetMapLayer: `open-street-map` = js.native
 }
-
-@JSGlobal("__esri.OpenStreetMapLayer")
-@js.native
-object OpenStreetMapLayer extends TopLevel[OpenStreetMapLayerConstructor]
-

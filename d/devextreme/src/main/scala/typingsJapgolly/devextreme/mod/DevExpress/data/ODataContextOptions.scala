@@ -1,57 +1,102 @@
 package typingsJapgolly.devextreme.mod.DevExpress.data
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.devextreme.AnonAsync
-import typingsJapgolly.devextreme.AnonErrorDetails
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.devextreme.anon.Async
+import typingsJapgolly.devextreme.anon.ErrorDetails
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ODataContextOptions extends js.Object {
-  /** Specifies a function that customizes the request before it is sent to the server. */
-  var beforeSend: js.UndefOr[js.Function1[/* options */ AnonAsync, _]] = js.undefined
-  /** Specifies whether stores in the ODataContext serialize/parse date-time values. */
+trait ODataContextOptions extends StObject {
+  
+  /**
+    * Specifies a function that customizes the request before it is sent to the server.
+    */
+  var beforeSend: js.UndefOr[js.Function1[/* options */ Async, Unit]] = js.undefined
+  
+  /**
+    * Specifies whether stores in the ODataContext serialize/parse date-time values.
+    */
   var deserializeDates: js.UndefOr[Boolean] = js.undefined
-  /** Specifies entity collections to be accessed. */
-  var entities: js.UndefOr[js.Any] = js.undefined
-  /** Specifies a function that is executed when the ODataContext throws an error. */
-  var errorHandler: js.UndefOr[js.Function1[/* e */ AnonErrorDetails, _]] = js.undefined
-  /** Specifies whether to convert string values to lowercase in filter and search requests. Applies to the following operations: "startswith", "endswith", "contains", and "notcontains". */
+  
+  /**
+    * Specifies entity collections to be accessed.
+    */
+  var entities: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * Specifies a function that is executed when the ODataContext throws an error.
+    */
+  var errorHandler: js.UndefOr[js.Function1[/* e */ ErrorDetails, Unit]] = js.undefined
+  
+  /**
+    * Specifies whether to convert string values to lowercase in filter and search requests. Applies to the following operations: &apos;startswith&apos;, &apos;endswith&apos;, &apos;contains&apos;, and &apos;notcontains&apos;.
+    */
   var filterToLower: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether data should be sent using JSONP. */
+  
+  /**
+    * Specifies whether data should be sent using JSONP.
+    */
   var jsonp: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the URL of an OData service. */
+  
+  /**
+    * Specifies the URL of an OData service.
+    */
   var url: js.UndefOr[String] = js.undefined
-  /** Specifies the OData version. */
+  
+  /**
+    * Specifies the OData version.
+    */
   var version: js.UndefOr[Double] = js.undefined
-  /** Specifies whether to send cookies, authorization headers, and client certificates in a cross-origin request. */
+  
+  /**
+    * Specifies whether to send cookies, authorization headers, and client certificates in a cross-origin request.
+    */
   var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
-
 object ODataContextOptions {
-  @scala.inline
-  def apply(
-    beforeSend: /* options */ AnonAsync => CallbackTo[js.Any] = null,
-    deserializeDates: js.UndefOr[Boolean] = js.undefined,
-    entities: js.Any = null,
-    errorHandler: /* e */ AnonErrorDetails => CallbackTo[js.Any] = null,
-    filterToLower: js.UndefOr[Boolean] = js.undefined,
-    jsonp: js.UndefOr[Boolean] = js.undefined,
-    url: String = null,
-    version: Int | Double = null,
-    withCredentials: js.UndefOr[Boolean] = js.undefined
-  ): ODataContextOptions = {
+  
+  inline def apply(): ODataContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.devextreme.AnonAsync) => beforeSend(t0).runNow()))
-    if (!js.isUndefined(deserializeDates)) __obj.updateDynamic("deserializeDates")(deserializeDates.asInstanceOf[js.Any])
-    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
-    if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonErrorDetails) => errorHandler(t0).runNow()))
-    if (!js.isUndefined(filterToLower)) __obj.updateDynamic("filterToLower")(filterToLower.asInstanceOf[js.Any])
-    if (!js.isUndefined(jsonp)) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[ODataContextOptions]
   }
+  
+  extension [Self <: ODataContextOptions](x: Self) {
+    
+    inline def setBeforeSend(value: /* options */ Async => Callback): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1((t0: /* options */ Async) => value(t0).runNow()))
+    
+    inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
+    
+    inline def setDeserializeDates(value: Boolean): Self = StObject.set(x, "deserializeDates", value.asInstanceOf[js.Any])
+    
+    inline def setDeserializeDatesUndefined: Self = StObject.set(x, "deserializeDates", js.undefined)
+    
+    inline def setEntities(value: Any): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    
+    inline def setErrorHandler(value: /* e */ ErrorDetails => Callback): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1((t0: /* e */ ErrorDetails) => value(t0).runNow()))
+    
+    inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+    
+    inline def setFilterToLower(value: Boolean): Self = StObject.set(x, "filterToLower", value.asInstanceOf[js.Any])
+    
+    inline def setFilterToLowerUndefined: Self = StObject.set(x, "filterToLower", js.undefined)
+    
+    inline def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+    
+    inline def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+  }
 }
-

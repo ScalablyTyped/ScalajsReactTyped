@@ -1,0 +1,349 @@
+package typingsJapgolly.shippo.mod.Shippo
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.shippo.shippoStrings.US
+  - typingsJapgolly.shippo.shippoStrings.AF
+  - typingsJapgolly.shippo.shippoStrings.AX
+  - typingsJapgolly.shippo.shippoStrings.AL
+  - typingsJapgolly.shippo.shippoStrings.DZ
+  - typingsJapgolly.shippo.shippoStrings.AS
+  - typingsJapgolly.shippo.shippoStrings.AD
+  - typingsJapgolly.shippo.shippoStrings.AO
+  - typingsJapgolly.shippo.shippoStrings.AI
+  - typingsJapgolly.shippo.shippoStrings.AQ
+  - typingsJapgolly.shippo.shippoStrings.AG
+  - typingsJapgolly.shippo.shippoStrings.AR
+  - typingsJapgolly.shippo.shippoStrings.AM
+  - typingsJapgolly.shippo.shippoStrings.AW
+  - typingsJapgolly.shippo.shippoStrings.AU
+  - typingsJapgolly.shippo.shippoStrings.AT
+  - typingsJapgolly.shippo.shippoStrings.AZ
+  - typingsJapgolly.shippo.shippoStrings.BS
+  - typingsJapgolly.shippo.shippoStrings.BH
+  - typingsJapgolly.shippo.shippoStrings.BD
+  - typingsJapgolly.shippo.shippoStrings.BB
+  - typingsJapgolly.shippo.shippoStrings.BY
+  - typingsJapgolly.shippo.shippoStrings.BE
+  - typingsJapgolly.shippo.shippoStrings.BZ
+  - typingsJapgolly.shippo.shippoStrings.BJ
+  - typingsJapgolly.shippo.shippoStrings.BM
+  - typingsJapgolly.shippo.shippoStrings.BT
+  - typingsJapgolly.shippo.shippoStrings.BO
+  - typingsJapgolly.shippo.shippoStrings.BQ
+  - typingsJapgolly.shippo.shippoStrings.BA
+  - typingsJapgolly.shippo.shippoStrings.BW
+  - typingsJapgolly.shippo.shippoStrings.BV
+  - typingsJapgolly.shippo.shippoStrings.BR
+  - typingsJapgolly.shippo.shippoStrings.IO
+  - typingsJapgolly.shippo.shippoStrings.BN
+  - typingsJapgolly.shippo.shippoStrings.BG
+  - typingsJapgolly.shippo.shippoStrings.BF
+  - typingsJapgolly.shippo.shippoStrings.BI
+  - typingsJapgolly.shippo.shippoStrings.KH
+  - typingsJapgolly.shippo.shippoStrings.CM
+  - typingsJapgolly.shippo.shippoStrings.CA
+  - typingsJapgolly.shippo.shippoStrings.CV
+  - typingsJapgolly.shippo.shippoStrings.KY
+  - typingsJapgolly.shippo.shippoStrings.CF
+  - typingsJapgolly.shippo.shippoStrings.TD
+  - typingsJapgolly.shippo.shippoStrings.CL
+  - typingsJapgolly.shippo.shippoStrings.CN
+  - typingsJapgolly.shippo.shippoStrings.CX
+  - typingsJapgolly.shippo.shippoStrings.CC
+  - typingsJapgolly.shippo.shippoStrings.CO
+  - typingsJapgolly.shippo.shippoStrings.KM
+  - typingsJapgolly.shippo.shippoStrings.CG
+  - typingsJapgolly.shippo.shippoStrings.CD
+  - typingsJapgolly.shippo.shippoStrings.CK
+  - typingsJapgolly.shippo.shippoStrings.CR
+  - typingsJapgolly.shippo.shippoStrings.CI
+  - typingsJapgolly.shippo.shippoStrings.HR
+  - typingsJapgolly.shippo.shippoStrings.CU
+  - typingsJapgolly.shippo.shippoStrings.CW
+  - typingsJapgolly.shippo.shippoStrings.CY
+  - typingsJapgolly.shippo.shippoStrings.CZ
+  - typingsJapgolly.shippo.shippoStrings.DK
+  - typingsJapgolly.shippo.shippoStrings.DJ
+  - typingsJapgolly.shippo.shippoStrings.DM
+  - typingsJapgolly.shippo.shippoStrings.DO
+  - typingsJapgolly.shippo.shippoStrings.EC
+  - typingsJapgolly.shippo.shippoStrings.EG
+  - typingsJapgolly.shippo.shippoStrings.SV
+  - typingsJapgolly.shippo.shippoStrings.GQ
+  - typingsJapgolly.shippo.shippoStrings.ER
+  - typingsJapgolly.shippo.shippoStrings.EE
+  - typingsJapgolly.shippo.shippoStrings.ET
+  - typingsJapgolly.shippo.shippoStrings.FK
+  - typingsJapgolly.shippo.shippoStrings.FO
+  - typingsJapgolly.shippo.shippoStrings.FJ
+  - typingsJapgolly.shippo.shippoStrings.FI
+  - typingsJapgolly.shippo.shippoStrings.FR
+  - typingsJapgolly.shippo.shippoStrings.GF
+  - typingsJapgolly.shippo.shippoStrings.PF
+  - typingsJapgolly.shippo.shippoStrings.TF
+  - typingsJapgolly.shippo.shippoStrings.GA
+  - typingsJapgolly.shippo.shippoStrings.GM
+  - typingsJapgolly.shippo.shippoStrings.GE
+  - typingsJapgolly.shippo.shippoStrings.DE
+  - typingsJapgolly.shippo.shippoStrings.GH
+  - typingsJapgolly.shippo.shippoStrings.GI
+  - typingsJapgolly.shippo.shippoStrings.GR
+  - typingsJapgolly.shippo.shippoStrings.GL
+  - typingsJapgolly.shippo.shippoStrings.GD
+  - typingsJapgolly.shippo.shippoStrings.GP
+  - typingsJapgolly.shippo.shippoStrings.GU
+  - typingsJapgolly.shippo.shippoStrings.GT
+  - typingsJapgolly.shippo.shippoStrings.GG
+  - typingsJapgolly.shippo.shippoStrings.GN
+  - typingsJapgolly.shippo.shippoStrings.GW
+  - typingsJapgolly.shippo.shippoStrings.GY
+  - typingsJapgolly.shippo.shippoStrings.HT
+  - typingsJapgolly.shippo.shippoStrings.HM
+  - typingsJapgolly.shippo.shippoStrings.VA
+  - typingsJapgolly.shippo.shippoStrings.HN
+  - typingsJapgolly.shippo.shippoStrings.HK
+  - typingsJapgolly.shippo.shippoStrings.HU
+  - typingsJapgolly.shippo.shippoStrings.IS
+  - typingsJapgolly.shippo.shippoStrings.IN
+  - typingsJapgolly.shippo.shippoStrings.ID
+  - typingsJapgolly.shippo.shippoStrings.IR
+  - typingsJapgolly.shippo.shippoStrings.IQ
+  - typingsJapgolly.shippo.shippoStrings.IE
+  - typingsJapgolly.shippo.shippoStrings.IM
+  - typingsJapgolly.shippo.shippoStrings.IL
+  - typingsJapgolly.shippo.shippoStrings.IT
+  - typingsJapgolly.shippo.shippoStrings.JM
+  - typingsJapgolly.shippo.shippoStrings.JP
+  - typingsJapgolly.shippo.shippoStrings.JE
+  - typingsJapgolly.shippo.shippoStrings.JO
+  - typingsJapgolly.shippo.shippoStrings.KZ
+  - typingsJapgolly.shippo.shippoStrings.KE
+  - typingsJapgolly.shippo.shippoStrings.KI
+  - typingsJapgolly.shippo.shippoStrings.KR
+  - typingsJapgolly.shippo.shippoStrings.KP
+  - typingsJapgolly.shippo.shippoStrings.KW
+  - typingsJapgolly.shippo.shippoStrings.KG
+  - typingsJapgolly.shippo.shippoStrings.LA
+  - typingsJapgolly.shippo.shippoStrings.LV
+  - typingsJapgolly.shippo.shippoStrings.LB
+  - typingsJapgolly.shippo.shippoStrings.LS
+  - typingsJapgolly.shippo.shippoStrings.LR
+  - typingsJapgolly.shippo.shippoStrings.LY
+  - typingsJapgolly.shippo.shippoStrings.LI
+  - typingsJapgolly.shippo.shippoStrings.LT
+  - typingsJapgolly.shippo.shippoStrings.LU
+  - typingsJapgolly.shippo.shippoStrings.MO
+  - typingsJapgolly.shippo.shippoStrings.MK
+  - typingsJapgolly.shippo.shippoStrings.MG
+  - typingsJapgolly.shippo.shippoStrings.MW
+  - typingsJapgolly.shippo.shippoStrings.MY
+  - typingsJapgolly.shippo.shippoStrings.MV
+  - typingsJapgolly.shippo.shippoStrings.ML
+  - typingsJapgolly.shippo.shippoStrings.MT
+  - typingsJapgolly.shippo.shippoStrings.MH
+  - typingsJapgolly.shippo.shippoStrings.MQ
+  - typingsJapgolly.shippo.shippoStrings.MR
+  - typingsJapgolly.shippo.shippoStrings.MU
+  - typingsJapgolly.shippo.shippoStrings.YT
+  - typingsJapgolly.shippo.shippoStrings.MX
+  - typingsJapgolly.shippo.shippoStrings.FM
+  - typingsJapgolly.shippo.shippoStrings.MD
+  - typingsJapgolly.shippo.shippoStrings.MC
+  - typingsJapgolly.shippo.shippoStrings.MN
+  - typingsJapgolly.shippo.shippoStrings.ME
+  - typingsJapgolly.shippo.shippoStrings.MS
+  - typingsJapgolly.shippo.shippoStrings.MA
+  - typingsJapgolly.shippo.shippoStrings.MZ
+  - typingsJapgolly.shippo.shippoStrings.MM
+  - typingsJapgolly.shippo.shippoStrings.NA
+  - typingsJapgolly.shippo.shippoStrings.NR
+  - typingsJapgolly.shippo.shippoStrings.NP
+  - typingsJapgolly.shippo.shippoStrings.NL
+  - typingsJapgolly.shippo.shippoStrings.NC
+  - typingsJapgolly.shippo.shippoStrings.NZ
+  - typingsJapgolly.shippo.shippoStrings.NI
+  - typingsJapgolly.shippo.shippoStrings.NE
+  - typingsJapgolly.shippo.shippoStrings.NG
+  - typingsJapgolly.shippo.shippoStrings.NU
+  - typingsJapgolly.shippo.shippoStrings.NF
+  - typingsJapgolly.shippo.shippoStrings.MP
+  - typingsJapgolly.shippo.shippoStrings.NO
+  - typingsJapgolly.shippo.shippoStrings.OM
+  - typingsJapgolly.shippo.shippoStrings.PK
+  - typingsJapgolly.shippo.shippoStrings.PW
+  - typingsJapgolly.shippo.shippoStrings.PS
+  - typingsJapgolly.shippo.shippoStrings.PA
+  - typingsJapgolly.shippo.shippoStrings.PG
+  - typingsJapgolly.shippo.shippoStrings.PY
+  - typingsJapgolly.shippo.shippoStrings.PE
+  - typingsJapgolly.shippo.shippoStrings.PH
+  - typingsJapgolly.shippo.shippoStrings.PN
+  - typingsJapgolly.shippo.shippoStrings.PL
+  - typingsJapgolly.shippo.shippoStrings.PT
+  - typingsJapgolly.shippo.shippoStrings.PR
+  - typingsJapgolly.shippo.shippoStrings.QA
+  - typingsJapgolly.shippo.shippoStrings.RE
+  - typingsJapgolly.shippo.shippoStrings.RO
+  - typingsJapgolly.shippo.shippoStrings.RU
+  - typingsJapgolly.shippo.shippoStrings.RW
+  - typingsJapgolly.shippo.shippoStrings.BL
+  - typingsJapgolly.shippo.shippoStrings.SH
+  - typingsJapgolly.shippo.shippoStrings.KN
+  - typingsJapgolly.shippo.shippoStrings.LC
+  - typingsJapgolly.shippo.shippoStrings.MF
+  - typingsJapgolly.shippo.shippoStrings.PM
+  - typingsJapgolly.shippo.shippoStrings.VC
+  - typingsJapgolly.shippo.shippoStrings.WS
+  - typingsJapgolly.shippo.shippoStrings.SM
+  - typingsJapgolly.shippo.shippoStrings.ST
+  - typingsJapgolly.shippo.shippoStrings.SA
+  - typingsJapgolly.shippo.shippoStrings.SN
+  - typingsJapgolly.shippo.shippoStrings.RS
+  - typingsJapgolly.shippo.shippoStrings.SC
+  - typingsJapgolly.shippo.shippoStrings.SL
+  - typingsJapgolly.shippo.shippoStrings.SG
+  - typingsJapgolly.shippo.shippoStrings.SX
+  - typingsJapgolly.shippo.shippoStrings.SK
+  - typingsJapgolly.shippo.shippoStrings.SI
+  - typingsJapgolly.shippo.shippoStrings.SB
+  - typingsJapgolly.shippo.shippoStrings.SO
+  - typingsJapgolly.shippo.shippoStrings.ZA
+  - typingsJapgolly.shippo.shippoStrings.GS
+  - typingsJapgolly.shippo.shippoStrings.SS
+  - typingsJapgolly.shippo.shippoStrings.ES
+  - typingsJapgolly.shippo.shippoStrings.LK
+  - typingsJapgolly.shippo.shippoStrings.SD
+  - typingsJapgolly.shippo.shippoStrings.SR
+  - typingsJapgolly.shippo.shippoStrings.SJ
+  - typingsJapgolly.shippo.shippoStrings.SZ
+  - typingsJapgolly.shippo.shippoStrings.SE
+  - typingsJapgolly.shippo.shippoStrings.CH
+  - typingsJapgolly.shippo.shippoStrings.SY
+  - typingsJapgolly.shippo.shippoStrings.TW
+  - typingsJapgolly.shippo.shippoStrings.TJ
+  - typingsJapgolly.shippo.shippoStrings.TZ
+  - typingsJapgolly.shippo.shippoStrings.TH
+  - typingsJapgolly.shippo.shippoStrings.TL
+  - typingsJapgolly.shippo.shippoStrings.TG
+  - typingsJapgolly.shippo.shippoStrings.TK
+  - typingsJapgolly.shippo.shippoStrings.TO
+  - typingsJapgolly.shippo.shippoStrings.TT
+  - typingsJapgolly.shippo.shippoStrings.TN
+  - typingsJapgolly.shippo.shippoStrings.TR
+  - typingsJapgolly.shippo.shippoStrings.TM
+  - typingsJapgolly.shippo.shippoStrings.TC
+  - typingsJapgolly.shippo.shippoStrings.TV
+  - typingsJapgolly.shippo.shippoStrings.UG
+  - typingsJapgolly.shippo.shippoStrings.UA
+  - typingsJapgolly.shippo.shippoStrings.AE
+  - typingsJapgolly.shippo.shippoStrings.GB
+  - typingsJapgolly.shippo.shippoStrings.UM
+  - typingsJapgolly.shippo.shippoStrings.UY
+  - typingsJapgolly.shippo.shippoStrings.UZ
+  - typingsJapgolly.shippo.shippoStrings.VU
+  - typingsJapgolly.shippo.shippoStrings.VE
+  - typingsJapgolly.shippo.shippoStrings.VN
+  - typingsJapgolly.shippo.shippoStrings.VG
+  - typingsJapgolly.shippo.shippoStrings.VI
+  - typingsJapgolly.shippo.shippoStrings.WF
+  - typingsJapgolly.shippo.shippoStrings.EH
+  - typingsJapgolly.shippo.shippoStrings.YE
+  - typingsJapgolly.shippo.shippoStrings.ZM
+  - typingsJapgolly.shippo.shippoStrings.ZW
+  - java.lang.String
+*/
+type Country = _Country | String
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.shippo.shippoStrings.cm_
+  - typingsJapgolly.shippo.shippoStrings.in_
+  - typingsJapgolly.shippo.shippoStrings.ft
+  - typingsJapgolly.shippo.shippoStrings.mm_
+  - typingsJapgolly.shippo.shippoStrings.m
+  - typingsJapgolly.shippo.shippoStrings.yd
+  - java.lang.String
+*/
+type DistanceUnit = _DistanceUnit | String
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.shippo.shippoStrings.fedex_ground
+  - typingsJapgolly.shippo.shippoStrings.fedex_home_delivery
+  - typingsJapgolly.shippo.shippoStrings.fedex_smart_post
+  - typingsJapgolly.shippo.shippoStrings.fedex_2_day
+  - typingsJapgolly.shippo.shippoStrings.fedex_2_day_am
+  - typingsJapgolly.shippo.shippoStrings.fedex_express_saver
+  - typingsJapgolly.shippo.shippoStrings.fedex_standard_overnight
+  - typingsJapgolly.shippo.shippoStrings.fedex_priority_overnight
+  - typingsJapgolly.shippo.shippoStrings.fedex_first_overnight
+  - typingsJapgolly.shippo.shippoStrings.fedex_freight_priority
+  - typingsJapgolly.shippo.shippoStrings.fedex_next_day_freight
+  - typingsJapgolly.shippo.shippoStrings.fedex_freight_economy
+  - typingsJapgolly.shippo.shippoStrings.fedex_first_freight
+  - typingsJapgolly.shippo.shippoStrings.fedex_international_economy
+  - typingsJapgolly.shippo.shippoStrings.fedex_international_priority
+  - typingsJapgolly.shippo.shippoStrings.fedex_international_first
+  - typingsJapgolly.shippo.shippoStrings.fedex_europe_first_international_priority
+  - typingsJapgolly.shippo.shippoStrings.international_economy_freight
+  - typingsJapgolly.shippo.shippoStrings.international_priority_freight
+  - java.lang.String
+*/
+type FEDEXServiceLevel = _FEDEXServiceLevel | String
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.shippo.shippoStrings.g
+  - typingsJapgolly.shippo.shippoStrings.oz
+  - typingsJapgolly.shippo.shippoStrings.lb_
+  - typingsJapgolly.shippo.shippoStrings.kg_
+  - java.lang.String
+*/
+type MassUnit = _MassUnit | String
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.shippo.mod.Shippo.USPSServiceLevel
+  - typingsJapgolly.shippo.mod.Shippo.UPSServiceLevel
+  - typingsJapgolly.shippo.mod.Shippo.FEDEXServiceLevel
+*/
+type ServiceLevels = _ServiceLevels | String
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.shippo.shippoStrings.ups_standard
+  - typingsJapgolly.shippo.shippoStrings.ups_ground
+  - typingsJapgolly.shippo.shippoStrings.ups_saver
+  - typingsJapgolly.shippo.shippoStrings.ups_3_day_select
+  - typingsJapgolly.shippo.shippoStrings.ups_second_day_air
+  - typingsJapgolly.shippo.shippoStrings.ups_second_day_air_am
+  - typingsJapgolly.shippo.shippoStrings.ups_next_day_air
+  - typingsJapgolly.shippo.shippoStrings.ups_next_day_air_saver
+  - typingsJapgolly.shippo.shippoStrings.ups_next_day_air_early_am
+  - typingsJapgolly.shippo.shippoStrings.ups_mail_innovations_domestic
+  - typingsJapgolly.shippo.shippoStrings.ups_surepost
+  - typingsJapgolly.shippo.shippoStrings.ups_surepost_bound_printed_matter
+  - typingsJapgolly.shippo.shippoStrings.ups_surepost_lightweight
+  - typingsJapgolly.shippo.shippoStrings.ups_surepost_media
+  - typingsJapgolly.shippo.shippoStrings.ups_express
+  - typingsJapgolly.shippo.shippoStrings.ups_express_1200
+  - typingsJapgolly.shippo.shippoStrings.ups_express_plus
+  - typingsJapgolly.shippo.shippoStrings.ups_expedited
+  - typingsJapgolly.shippo.shippoStrings.ups_express_early
+  - typingsJapgolly.shippo.shippoStrings.ups_access_point_economy
+  - java.lang.String
+*/
+type UPSServiceLevel = _UPSServiceLevel | String
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.shippo.shippoStrings.usps_priority
+  - typingsJapgolly.shippo.shippoStrings.usps_priority_express
+  - typingsJapgolly.shippo.shippoStrings.usps_first
+  - typingsJapgolly.shippo.shippoStrings.usps_parcel_select
+  - typingsJapgolly.shippo.shippoStrings.usps_media_mail
+  - typingsJapgolly.shippo.shippoStrings.usps_priority_mail_international
+  - typingsJapgolly.shippo.shippoStrings.usps_priority_mail_express_international
+  - typingsJapgolly.shippo.shippoStrings.usps_first_class_package_international_service
+  - java.lang.String
+*/
+type USPSServiceLevel = _USPSServiceLevel | String

@@ -1,49 +1,43 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OutliningSpanKind extends js.Object
-
+sealed trait OutliningSpanKind extends StObject
 @JSImport("typescript", "OutliningSpanKind")
 @js.native
-object OutliningSpanKind extends js.Object {
+object OutliningSpanKind extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: java.lang.String): js.UndefOr[OutliningSpanKind & java.lang.String] = js.native
+  
   /** Declarations and expressions */
   @js.native
-  sealed trait Code extends OutliningSpanKind
+  sealed trait Code
+    extends StObject
+       with OutliningSpanKind
+  /* "code" */ val Code: typingsJapgolly.typescript.mod.OutliningSpanKind.Code & java.lang.String = js.native
   
   /** Single or multi-line comments */
   @js.native
-  sealed trait Comment extends OutliningSpanKind
+  sealed trait Comment
+    extends StObject
+       with OutliningSpanKind
+  /* "comment" */ val Comment: typingsJapgolly.typescript.mod.OutliningSpanKind.Comment & java.lang.String = js.native
   
   /** Contiguous blocks of import declarations */
   @js.native
-  sealed trait Imports extends OutliningSpanKind
+  sealed trait Imports
+    extends StObject
+       with OutliningSpanKind
+  /* "imports" */ val Imports: typingsJapgolly.typescript.mod.OutliningSpanKind.Imports & java.lang.String = js.native
   
   /** Sections marked by '// #region' and '// #endregion' comments */
   @js.native
-  sealed trait Region extends OutliningSpanKind
-  
-  @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[OutliningSpanKind with java.lang.String] = js.native
-  /* "code" */ @js.native
-  object Code
-    extends TopLevel[Code with java.lang.String]
-  
-  /* "comment" */ @js.native
-  object Comment
-    extends TopLevel[Comment with java.lang.String]
-  
-  /* "imports" */ @js.native
-  object Imports
-    extends TopLevel[Imports with java.lang.String]
-  
-  /* "region" */ @js.native
-  object Region
-    extends TopLevel[Region with java.lang.String]
-  
+  sealed trait Region
+    extends StObject
+       with OutliningSpanKind
+  /* "region" */ val Region: typingsJapgolly.typescript.mod.OutliningSpanKind.Region & java.lang.String = js.native
 }
-

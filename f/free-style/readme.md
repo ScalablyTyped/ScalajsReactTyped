@@ -1,7 +1,7 @@
 
 # Scala.js typings for free-style
 
-Typings are for version 2.6.1
+Typings are for version 4.1.0
 
 ## Library description:
 Make CSS easier and more maintainable by using JavaScript
@@ -10,10 +10,10 @@ Make CSS easier and more maintainable by using JavaScript
 | ------------------ | :-------------: |
 | Full name          | free-style |
 | Keywords           | inline, css, style, js, hash, server |
-| # releases         | 7 |
-| # dependents       | 15 |
-| # downloads        | 1475146 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 287234.6666666667 |
+| # stars            | 697.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/free-style)

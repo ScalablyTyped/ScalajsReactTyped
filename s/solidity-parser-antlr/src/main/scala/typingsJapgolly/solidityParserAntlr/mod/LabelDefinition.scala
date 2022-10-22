@@ -1,29 +1,28 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.solidityParserAntlr.mod.ASTNode because Already inherited */ trait LabelDefinition
-  extends AssemblyItem
-     with BaseASTNode {
+trait LabelDefinition
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with AssemblyItem {
+  
   @JSName("type")
   var type_LabelDefinition: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.LabelDefinition
 }
-
 object LabelDefinition {
-  @scala.inline
-  def apply(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.LabelDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): LabelDefinition = {
+  
+  inline def apply(): LabelDefinition = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LabelDefinition")
     __obj.asInstanceOf[LabelDefinition]
   }
+  
+  extension [Self <: LabelDefinition](x: Self) {
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.LabelDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

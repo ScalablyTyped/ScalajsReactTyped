@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__set-version
 
-Typings are for version 7.0.5
+Typings are for version 7.0.24
 
 ## Library description:
 Non-Fabric-specific package version setter
@@ -10,15 +10,15 @@ Non-Fabric-specific package version setter
 | ------------------ | :-------------: |
 | Full name          | @uifabric/set-version |
 | Keywords           | - |
-| # releases         | 37 |
-| # dependents       | 25 |
-| # downloads        | 1283798 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 347054.3333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/OfficeDev/office-ui-fabric-react#readme)
-- [Bugs](https://github.com/OfficeDev/office-ui-fabric-react/issues)
-- [Repository](https://github.com/OfficeDev/office-ui-fabric-react)
+- [Homepage](https://github.com/microsoft/fluentui#readme)
+- [Bugs](https://github.com/microsoft/fluentui/issues)
+- [Repository](https://github.com/microsoft/fluentui)
 - [Npm](https://www.npmjs.com/package/%40uifabric%2Fset-version)
     
 

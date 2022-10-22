@@ -1,7 +1,7 @@
 
 # Scala.js typings for wry__equality
 
-Typings are for version 0.1.9
+Typings are for version 0.5.3
 
 ## Library description:
 Structural equality checking for JavaScript values
@@ -10,10 +10,10 @@ Structural equality checking for JavaScript values
 | ------------------ | :-------------: |
 | Full name          | @wry/equality |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 8 |
-| # downloads        | 24983738 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7847257333333332E7 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/benjamn/wryware)

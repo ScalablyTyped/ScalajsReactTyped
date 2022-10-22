@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PosPrinterBarcodeTextPosition extends js.Object
-
+sealed trait PosPrinterBarcodeTextPosition extends StObject
 /** Describes the possible vertical positions in which a point-of-service printer prints the barcode text relative to the barcode. */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterBarcodeTextPosition")
 @js.native
-object PosPrinterBarcodeTextPosition extends js.Object {
+object PosPrinterBarcodeTextPosition extends StObject {
+  
   /** The barcode text is above the barcode. */
   @js.native
-  sealed trait above extends PosPrinterBarcodeTextPosition
+  sealed trait above
+    extends StObject
+       with PosPrinterBarcodeTextPosition
   
   /** The barcode text is below the barcode. */
   @js.native
-  sealed trait below extends PosPrinterBarcodeTextPosition
+  sealed trait below
+    extends StObject
+       with PosPrinterBarcodeTextPosition
   
   /** There is no barcode text. */
   @js.native
-  sealed trait none extends PosPrinterBarcodeTextPosition
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PosPrinterBarcodeTextPosition with Double] = js.native
-  /* 1 */ @js.native
-  object above extends TopLevel[above with Double]
-  
-  /* 2 */ @js.native
-  object below extends TopLevel[below with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  sealed trait none
+    extends StObject
+       with PosPrinterBarcodeTextPosition
 }
-

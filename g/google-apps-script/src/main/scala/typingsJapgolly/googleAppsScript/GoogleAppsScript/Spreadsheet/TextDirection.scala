@@ -1,32 +1,25 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextDirection extends js.Object
-
+sealed trait TextDirection extends StObject
 /**
   * An enumerations of text directions.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.TextDirection")
 @js.native
-object TextDirection extends js.Object {
-  @js.native
-  sealed trait LEFT_TO_RIGHT extends TextDirection
+object TextDirection extends StObject {
   
   @js.native
-  sealed trait RIGHT_TO_LEFT extends TextDirection
+  sealed trait LEFT_TO_RIGHT
+    extends StObject
+       with TextDirection
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextDirection with Double] = js.native
-  /* 0 */ @js.native
-  object LEFT_TO_RIGHT extends TopLevel[LEFT_TO_RIGHT with Double]
-  
-  /* 1 */ @js.native
-  object RIGHT_TO_LEFT extends TopLevel[RIGHT_TO_LEFT with Double]
-  
+  @js.native
+  sealed trait RIGHT_TO_LEFT
+    extends StObject
+       with TextDirection
 }
-

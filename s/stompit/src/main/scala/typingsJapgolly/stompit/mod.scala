@@ -2,87 +2,85 @@ package typingsJapgolly.stompit
 
 import typingsJapgolly.node.streamMod.Duplex
 import typingsJapgolly.node.streamMod.TransformOptions
-import typingsJapgolly.std.Error
-import typingsJapgolly.stompit.channelMod.ChannelOptions
-import typingsJapgolly.stompit.channelMod.^
-import typingsJapgolly.stompit.channelPoolMod.ChannelPoolOptions
-import typingsJapgolly.stompit.connectFailoverMod.ConnectFailoverOptions
-import typingsJapgolly.stompit.connectMod.ConnectOptions
-import typingsJapgolly.stompit.socketMod.SocketOptions
+import typingsJapgolly.stompit.libChannelMod.ChannelOptions
+import typingsJapgolly.stompit.libChannelPoolMod.ChannelPoolOptions
+import typingsJapgolly.stompit.libConnectFailoverMod.ConnectFailoverOptions
+import typingsJapgolly.stompit.libConnectMod.ConnectOptions
+import typingsJapgolly.stompit.libConnectMod.ConnectionListener
+import typingsJapgolly.stompit.libSocketMod.SocketOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stompit", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("stompit", JSImport.Namespace)
   @js.native
-  class Channel protected () extends ^ {
-    def this(connectFailover: typingsJapgolly.stompit.connectFailoverMod.^) = this()
-    def this(connectFailover: typingsJapgolly.stompit.connectFailoverMod.^, options: ChannelOptions) = this()
+  val ^ : js.Any = js.native
+  
+  @JSImport("stompit", "Channel")
+  @js.native
+  open class Channel protected ()
+    extends typingsJapgolly.stompit.libChannelMod.^ {
+    def this(connectFailover: typingsJapgolly.stompit.libConnectFailoverMod.^) = this()
+    def this(connectFailover: typingsJapgolly.stompit.libConnectFailoverMod.^, options: ChannelOptions) = this()
   }
   
+  @JSImport("stompit", "ChannelFactory")
   @js.native
-  class ChannelFactory protected ()
-    extends typingsJapgolly.stompit.channelFactoryMod.^ {
-    def this(connectFailover: typingsJapgolly.stompit.connectFailoverMod.^) = this()
+  open class ChannelFactory protected ()
+    extends typingsJapgolly.stompit.libChannelFactoryMod.^ {
+    def this(connectFailover: typingsJapgolly.stompit.libConnectFailoverMod.^) = this()
   }
   
+  @JSImport("stompit", "ChannelPool")
   @js.native
-  class ChannelPool protected ()
-    extends typingsJapgolly.stompit.channelPoolMod.^ {
-    def this(connectFailover: typingsJapgolly.stompit.connectFailoverMod.^) = this()
-    def this(connectFailover: typingsJapgolly.stompit.connectFailoverMod.^, options: ChannelPoolOptions) = this()
+  open class ChannelPool protected ()
+    extends typingsJapgolly.stompit.libChannelPoolMod.^ {
+    def this(connectFailover: typingsJapgolly.stompit.libConnectFailoverMod.^) = this()
+    def this(connectFailover: typingsJapgolly.stompit.libConnectFailoverMod.^, options: ChannelPoolOptions) = this()
   }
   
+  @JSImport("stompit", "Client")
   @js.native
-  class Client protected ()
-    extends typingsJapgolly.stompit.clientMod.^ {
+  open class Client protected ()
+    extends typingsJapgolly.stompit.libClientMod.^ {
     def this(transportSocket: Duplex) = this()
     def this(transportSocket: Duplex, options: SocketOptions) = this()
   }
   
+  @JSImport("stompit", "ConnectFailover")
   @js.native
-  class ConnectFailover ()
-    extends typingsJapgolly.stompit.connectFailoverMod.^ {
+  open class ConnectFailover ()
+    extends typingsJapgolly.stompit.libConnectFailoverMod.^ {
     def this(servers: String) = this()
     def this(servers: js.Array[ConnectOptions]) = this()
     def this(servers: String, options: ConnectFailoverOptions) = this()
     def this(servers: js.Array[ConnectOptions], options: ConnectFailoverOptions) = this()
+    def this(servers: Unit, options: ConnectFailoverOptions) = this()
   }
   
+  @JSImport("stompit", "IncomingFrameStream")
   @js.native
-  class IncomingFrameStream ()
-    extends typingsJapgolly.stompit.incomingFrameStreamMod.^ {
+  open class IncomingFrameStream ()
+    extends typingsJapgolly.stompit.libIncomingFrameStreamMod.^ {
     def this(opts: TransformOptions) = this()
   }
   
+  @JSImport("stompit", "OutgoingFrameStream")
   @js.native
-  class OutgoingFrameStream protected ()
-    extends typingsJapgolly.stompit.outgoingFrameStreamMod.^ {
+  open class OutgoingFrameStream protected ()
+    extends typingsJapgolly.stompit.libOutgoingFrameStreamMod.^ {
     def this(destination: Duplex) = this()
   }
   
-  @js.native
-  object connect extends js.Object {
-    def apply(optionsOrPath: String): typingsJapgolly.stompit.clientMod.^ = js.native
-    def apply(
-      optionsOrPath: String,
-      connectionListener: js.Function2[/* err */ Error | Null, /* client */ typingsJapgolly.stompit.clientMod.^, Unit]
-    ): typingsJapgolly.stompit.clientMod.^ = js.native
-    def apply(optionsOrPath: ConnectOptions): typingsJapgolly.stompit.clientMod.^ = js.native
-    def apply(
-      optionsOrPath: ConnectOptions,
-      connectionListener: js.Function2[/* err */ Error | Null, /* client */ typingsJapgolly.stompit.clientMod.^, Unit]
-    ): typingsJapgolly.stompit.clientMod.^ = js.native
-    def apply(port: Double): typingsJapgolly.stompit.clientMod.^ = js.native
-    def apply(port: Double, host: String): typingsJapgolly.stompit.clientMod.^ = js.native
-    def apply(
-      port: Double,
-      host: String,
-      connectionListener: js.Function2[/* err */ js.Error | Null, /* client */ typingsJapgolly.stompit.clientMod.^, Unit]
-    ): typingsJapgolly.stompit.clientMod.^ = js.native
-  }
-  
+  inline def connect(optionsOrPathOrPort: String): typingsJapgolly.stompit.libClientMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(optionsOrPathOrPort.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.stompit.libClientMod.^]
+  inline def connect(optionsOrPathOrPort: String, connectionListener: ConnectionListener): typingsJapgolly.stompit.libClientMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(optionsOrPathOrPort.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.stompit.libClientMod.^]
+  inline def connect(optionsOrPathOrPort: Double): typingsJapgolly.stompit.libClientMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(optionsOrPathOrPort.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.stompit.libClientMod.^]
+  inline def connect(optionsOrPathOrPort: Double, connectionListener: ConnectionListener): typingsJapgolly.stompit.libClientMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(optionsOrPathOrPort.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.stompit.libClientMod.^]
+  inline def connect(optionsOrPathOrPort: ConnectOptions): typingsJapgolly.stompit.libClientMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(optionsOrPathOrPort.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.stompit.libClientMod.^]
+  inline def connect(optionsOrPathOrPort: ConnectOptions, connectionListener: ConnectionListener): typingsJapgolly.stompit.libClientMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(optionsOrPathOrPort.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.stompit.libClientMod.^]
+  inline def connect(port: Double, host: String): typingsJapgolly.stompit.libClientMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.stompit.libClientMod.^]
+  inline def connect(port: Double, host: String, connectionListener: ConnectionListener): typingsJapgolly.stompit.libClientMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.stompit.libClientMod.^]
+  inline def connect(port: Double, host: Unit, connectionListener: ConnectionListener): typingsJapgolly.stompit.libClientMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.stompit.libClientMod.^]
 }
-

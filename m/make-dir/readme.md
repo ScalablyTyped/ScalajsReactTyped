@@ -1,7 +1,7 @@
 
 # Scala.js typings for make-dir
 
-Typings are for version 3.0.2
+Typings are for version 3.1.0
 
 ## Library description:
 Make a directory and its parents if needed - Think `mkdir -p`
@@ -10,10 +10,10 @@ Make a directory and its parents if needed - Think `mkdir -p`
 | ------------------ | :-------------: |
 | Full name          | make-dir |
 | Keywords           | mkdir, mkdirp, make, directories, dir, dirs, folders, directory, folder, path, parent, parents, intermediate, recursively, recursive, create, fs, filesystem, file-system |
-| # releases         | 6 |
-| # dependents       | 588 |
-| # downloads        | 605627200 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0904302066666666E8 |
+| # stars            | 453.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/make-dir#readme)

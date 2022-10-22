@@ -1,47 +1,55 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.RestElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait RestElement_
-  extends LVal
+  extends StObject
      with BaseNode
-     with PatternLike {
+     with LVal
+     with PatternLike
+     with Standardized {
+  
   var argument: LVal
+  
   var decorators: js.Array[Decorator_] | Null
+  
+  var optional: Boolean | Null
+  
   var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
+  
   @JSName("type")
   var type_RestElement_ : RestElement
 }
-
 object RestElement_ {
-  @scala.inline
-  def apply(
-    argument: LVal,
-    `type`: RestElement,
-    decorators: js.Array[Decorator_] = null,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ = null
-  ): RestElement_ = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+  
+  inline def apply(argument: LVal): RestElement_ = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("RestElement")
     __obj.asInstanceOf[RestElement_]
   }
+  
+  extension [Self <: RestElement_](x: Self) {
+    
+    inline def setArgument(value: LVal): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    
+    inline def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    
+    inline def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
+    
+    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
+    
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalNull: Self = StObject.set(x, "optional", null)
+    
+    inline def setType(value: RestElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
+  }
 }
-

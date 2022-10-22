@@ -1,25 +1,35 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaymentItem extends js.Object {
+trait PaymentItem extends StObject {
+  
+  /* standard dom */
   var amount: PaymentCurrencyAmount
+  
+  /* standard dom */
   var label: java.lang.String
+  
+  /* standard dom */
   var pending: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object PaymentItem {
-  @scala.inline
-  def apply(
-    amount: PaymentCurrencyAmount,
-    label: java.lang.String,
-    pending: js.UndefOr[scala.Boolean] = js.undefined
-  ): PaymentItem = {
+  
+  inline def apply(amount: PaymentCurrencyAmount, label: java.lang.String): PaymentItem = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentItem]
   }
+  
+  extension [Self <: PaymentItem](x: Self) {
+    
+    inline def setAmount(value: PaymentCurrencyAmount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    
+    inline def setLabel(value: java.lang.String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setPending(value: scala.Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    
+    inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+  }
 }
-

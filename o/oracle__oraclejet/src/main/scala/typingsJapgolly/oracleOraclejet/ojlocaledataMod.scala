@@ -3,31 +3,29 @@ package typingsJapgolly.oracleOraclejet
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.abbreviated
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.narrow
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.wide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@oracle/oraclejet/ojlocaledata", JSImport.Namespace)
-@js.native
-object ojlocaledataMod extends js.Object {
-  def getDayNames(): js.Array[String] = js.native
-  @JSName("getDayNames")
-  def getDayNames_abbreviated(`type`: abbreviated): js.Array[String] = js.native
-  @JSName("getDayNames")
-  def getDayNames_narrow(`type`: narrow): js.Array[String] = js.native
-  @JSName("getDayNames")
-  def getDayNames_wide(`type`: wide): js.Array[String] = js.native
-  def getFirstDayOfWeek(): Double = js.native
-  def getMonthNames(): js.Array[String] = js.native
-  @JSName("getMonthNames")
-  def getMonthNames_abbreviated(`type`: abbreviated): js.Array[String] = js.native
-  @JSName("getMonthNames")
-  def getMonthNames_narrow(`type`: narrow): js.Array[String] = js.native
-  @JSName("getMonthNames")
-  def getMonthNames_wide(`type`: wide): js.Array[String] = js.native
-  def getWeekendEnd(): Double = js.native
-  def getWeekendStart(): Double = js.native
-  def isMonthPriorToYear(): Boolean = js.native
-  def setBundle(bundle: js.Object): Unit = js.native
+object ojlocaledataMod {
+  
+  @JSImport("@oracle/oraclejet/ojlocaledata", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getDayNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDayNames")().asInstanceOf[js.Array[String]]
+  inline def getDayNames(`type`: abbreviated | narrow | wide): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDayNames")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  inline def getFirstDayOfWeek(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstDayOfWeek")().asInstanceOf[Double]
+  
+  inline def getMonthNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthNames")().asInstanceOf[js.Array[String]]
+  inline def getMonthNames(`type`: abbreviated | narrow | wide): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthNames")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  inline def getWeekendEnd(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeekendEnd")().asInstanceOf[Double]
+  
+  inline def getWeekendStart(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeekendStart")().asInstanceOf[Double]
+  
+  inline def isMonthPriorToYear(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMonthPriorToYear")().asInstanceOf[Boolean]
+  
+  inline def setBundle(bundle: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBundle")(bundle.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

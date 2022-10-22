@@ -1,20 +1,26 @@
 package typingsJapgolly.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IWebSocketClosedEventArgs extends js.Object {
+trait IWebSocketClosedEventArgs extends StObject {
+  
   var code: Double
+  
   var reason: String
 }
-
 object IWebSocketClosedEventArgs {
-  @scala.inline
-  def apply(code: Double, reason: String): IWebSocketClosedEventArgs = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
   
+  inline def apply(code: Double, reason: String): IWebSocketClosedEventArgs = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebSocketClosedEventArgs]
   }
+  
+  extension [Self <: IWebSocketClosedEventArgs](x: Self) {
+    
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,27 +1,42 @@
 package typingsJapgolly.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClassOptions extends js.Object {
+trait ClassOptions extends StObject {
+  
   var appPath: js.UndefOr[String] = js.undefined
+  
   var imageMagick: js.UndefOr[Boolean] = js.undefined
+  
   var nativeAutoOrient: js.UndefOr[Boolean] = js.undefined
+  
+  var timeout: js.UndefOr[String | Double] = js.undefined
 }
-
 object ClassOptions {
-  @scala.inline
-  def apply(
-    appPath: String = null,
-    imageMagick: js.UndefOr[Boolean] = js.undefined,
-    nativeAutoOrient: js.UndefOr[Boolean] = js.undefined
-  ): ClassOptions = {
+  
+  inline def apply(): ClassOptions = {
     val __obj = js.Dynamic.literal()
-    if (appPath != null) __obj.updateDynamic("appPath")(appPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageMagick)) __obj.updateDynamic("imageMagick")(imageMagick.asInstanceOf[js.Any])
-    if (!js.isUndefined(nativeAutoOrient)) __obj.updateDynamic("nativeAutoOrient")(nativeAutoOrient.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassOptions]
   }
+  
+  extension [Self <: ClassOptions](x: Self) {
+    
+    inline def setAppPath(value: String): Self = StObject.set(x, "appPath", value.asInstanceOf[js.Any])
+    
+    inline def setAppPathUndefined: Self = StObject.set(x, "appPath", js.undefined)
+    
+    inline def setImageMagick(value: Boolean): Self = StObject.set(x, "imageMagick", value.asInstanceOf[js.Any])
+    
+    inline def setImageMagickUndefined: Self = StObject.set(x, "imageMagick", js.undefined)
+    
+    inline def setNativeAutoOrient(value: Boolean): Self = StObject.set(x, "nativeAutoOrient", value.asInstanceOf[js.Any])
+    
+    inline def setNativeAutoOrientUndefined: Self = StObject.set(x, "nativeAutoOrient", js.undefined)
+    
+    inline def setTimeout(value: String | Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

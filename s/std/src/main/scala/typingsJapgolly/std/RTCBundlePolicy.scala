@@ -1,24 +1,20 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.balanced
   - typingsJapgolly.std.stdStrings.`max-bundle`
   - typingsJapgolly.std.stdStrings.`max-compat`
 */
-trait RTCBundlePolicy extends js.Object
-
+trait RTCBundlePolicy extends StObject
 object RTCBundlePolicy {
-  @scala.inline
-  def balanced: typingsJapgolly.std.stdStrings.balanced = this.cast("balanced")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `max-bundle`: typingsJapgolly.std.stdStrings.`max-bundle` = this.cast("max-bundle")
-  @scala.inline
-  def `max-compat`: typingsJapgolly.std.stdStrings.`max-compat` = this.cast("max-compat")
+  
+  inline def balanced: typingsJapgolly.std.stdStrings.balanced = "balanced".asInstanceOf[typingsJapgolly.std.stdStrings.balanced]
+  
+  inline def `max-bundle`: typingsJapgolly.std.stdStrings.`max-bundle` = "max-bundle".asInstanceOf[typingsJapgolly.std.stdStrings.`max-bundle`]
+  
+  inline def `max-compat`: typingsJapgolly.std.stdStrings.`max-compat` = "max-compat".asInstanceOf[typingsJapgolly.std.stdStrings.`max-compat`]
 }
-

@@ -1,53 +1,42 @@
 package typingsJapgolly.winrt.Windows.Storage.FileProperties
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PropertyPrefetchOptions extends js.Object
-
+sealed trait PropertyPrefetchOptions extends StObject
 @JSGlobal("Windows.Storage.FileProperties.PropertyPrefetchOptions")
 @js.native
-object PropertyPrefetchOptions extends js.Object {
-  @js.native
-  sealed trait basicProperties extends PropertyPrefetchOptions
+object PropertyPrefetchOptions extends StObject {
   
   @js.native
-  sealed trait documentProperties extends PropertyPrefetchOptions
+  sealed trait basicProperties
+    extends StObject
+       with PropertyPrefetchOptions
   
   @js.native
-  sealed trait imageProperties extends PropertyPrefetchOptions
+  sealed trait documentProperties
+    extends StObject
+       with PropertyPrefetchOptions
   
   @js.native
-  sealed trait musicProperties extends PropertyPrefetchOptions
+  sealed trait imageProperties
+    extends StObject
+       with PropertyPrefetchOptions
   
   @js.native
-  sealed trait none extends PropertyPrefetchOptions
+  sealed trait musicProperties
+    extends StObject
+       with PropertyPrefetchOptions
   
   @js.native
-  sealed trait videoProperties extends PropertyPrefetchOptions
+  sealed trait none
+    extends StObject
+       with PropertyPrefetchOptions
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PropertyPrefetchOptions with Double] = js.native
-  /* 5 */ @js.native
-  object basicProperties extends TopLevel[basicProperties with Double]
-  
-  /* 4 */ @js.native
-  object documentProperties extends TopLevel[documentProperties with Double]
-  
-  /* 3 */ @js.native
-  object imageProperties extends TopLevel[imageProperties with Double]
-  
-  /* 1 */ @js.native
-  object musicProperties extends TopLevel[musicProperties with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object videoProperties extends TopLevel[videoProperties with Double]
-  
+  @js.native
+  sealed trait videoProperties
+    extends StObject
+       with PropertyPrefetchOptions
 }
-

@@ -1,33 +1,39 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("PowerPoint.MediaFormat")
 @js.native
-class MediaFormat protected () extends js.Object {
+trait MediaFormat extends StObject {
+  
   val Application: typingsJapgolly.activexPowerpoint.PowerPoint.Application = js.native
+  
   val AudioCompressionType: String = js.native
+  
   val AudioSamplingRate: Double = js.native
+  
   var EndPoint: Double = js.native
+  
   var FadeInDuration: Double = js.native
+  
   var FadeOutDuration: Double = js.native
+  
   val IsEmbedded: Boolean = js.native
+  
   val IsLinked: Boolean = js.native
+  
   val Length: Double = js.native
+  
   val MediaBookmarks: typingsJapgolly.activexPowerpoint.PowerPoint.MediaBookmarks = js.native
+  
   var Muted: Boolean = js.native
-  val Parent: js.Any = js.native
-  @JSName("PowerPoint.MediaFormat_typekey")
+  
+  val Parent: Any = js.native
+  
+  /* private */ @JSName("PowerPoint.MediaFormat_typekey")
   var PowerPointDotMediaFormat_typekey: MediaFormat = js.native
-  val ResamplingStatus: PpMediaTaskStatus = js.native
-  val SampleHeight: Double = js.native
-  val SampleWidth: Double = js.native
-  var StartPoint: Double = js.native
-  val VideoCompressionType: String = js.native
-  val VideoFrameRate: Double = js.native
-  var Volume: Double = js.native
+  
   /**
     * @param boolean [Trim=false]
     * @param number [SampleHeight=768]
@@ -44,10 +50,26 @@ class MediaFormat protected () extends js.Object {
     AudioSamplingRate: js.UndefOr[Double],
     VideoBitRate: js.UndefOr[Double]
   ): Unit = js.native
+  
   /** @param PowerPoint.PpResampleMediaProfile [profile=2] */
   def ResampleFromProfile(): Unit = js.native
   def ResampleFromProfile(profile: PpResampleMediaProfile): Unit = js.native
+  
+  val ResamplingStatus: PpMediaTaskStatus = js.native
+  
+  val SampleHeight: Double = js.native
+  
+  val SampleWidth: Double = js.native
+  
   def SetDisplayPicture(Position: Double): Unit = js.native
+  
   def SetDisplayPictureFromFile(FilePath: String): Unit = js.native
+  
+  var StartPoint: Double = js.native
+  
+  val VideoCompressionType: String = js.native
+  
+  val VideoFrameRate: Double = js.native
+  
+  var Volume: Double = js.native
 }
-

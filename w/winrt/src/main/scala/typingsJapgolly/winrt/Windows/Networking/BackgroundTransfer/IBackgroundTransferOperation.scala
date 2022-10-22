@@ -3,35 +3,55 @@ package typingsJapgolly.winrt.Windows.Networking.BackgroundTransfer
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Uri
 import typingsJapgolly.winrt.Windows.Storage.Streams.IInputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IBackgroundTransferOperation extends js.Object {
+trait IBackgroundTransferOperation extends StObject {
+  
   var costPolicy: BackgroundTransferCostPolicy
-  var group: String
-  var guid: String
-  var method: String
-  var requestedUri: Uri
+  
   def getResponseInformation(): ResponseInformation
+  
   def getResultStreamAt(position: Double): IInputStream
+  
+  var group: String
+  
+  var guid: String
+  
+  var method: String
+  
+  var requestedUri: Uri
 }
-
 object IBackgroundTransferOperation {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     costPolicy: BackgroundTransferCostPolicy,
     getResponseInformation: CallbackTo[ResponseInformation],
-    getResultStreamAt: Double => CallbackTo[IInputStream],
+    getResultStreamAt: Double => IInputStream,
     group: String,
     guid: String,
     method: String,
     requestedUri: Uri
   ): IBackgroundTransferOperation = {
-    val __obj = js.Dynamic.literal(costPolicy = costPolicy.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], requestedUri = requestedUri.asInstanceOf[js.Any])
-    __obj.updateDynamic("getResponseInformation")(getResponseInformation.toJsFn)
-    __obj.updateDynamic("getResultStreamAt")(js.Any.fromFunction1((t0: scala.Double) => getResultStreamAt(t0).runNow()))
+    val __obj = js.Dynamic.literal(costPolicy = costPolicy.asInstanceOf[js.Any], getResponseInformation = getResponseInformation.toJsFn, getResultStreamAt = js.Any.fromFunction1(getResultStreamAt), group = group.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], requestedUri = requestedUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBackgroundTransferOperation]
   }
+  
+  extension [Self <: IBackgroundTransferOperation](x: Self) {
+    
+    inline def setCostPolicy(value: BackgroundTransferCostPolicy): Self = StObject.set(x, "costPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setGetResponseInformation(value: CallbackTo[ResponseInformation]): Self = StObject.set(x, "getResponseInformation", value.toJsFn)
+    
+    inline def setGetResultStreamAt(value: Double => IInputStream): Self = StObject.set(x, "getResultStreamAt", js.Any.fromFunction1(value))
+    
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setRequestedUri(value: Uri): Self = StObject.set(x, "requestedUri", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -10,10 +10,10 @@ Simple id generation and caching
 | ------------------ | :-------------: |
 | Full name          | ids |
 | Keywords           | id, ids, id-generator |
-| # releases         | 4 |
-| # dependents       | 41 |
-| # downloads        | 487129 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 170558.33333333334 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/bpmn-io/ids#readme)

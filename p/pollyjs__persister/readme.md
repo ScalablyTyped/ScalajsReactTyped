@@ -1,7 +1,7 @@
 
 # Scala.js typings for pollyjs__persister
 
-Typings are for version 2.0
+Typings are for version 4.3
 
 ## Library description:
 Extendable base persister class used by @pollyjs
@@ -10,15 +10,15 @@ Extendable base persister class used by @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/persister |
 | Keywords           | polly, pollyjs, persister |
-| # releases         | 21 |
-| # dependents       | 3 |
-| # downloads        | 360436 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 309348.0 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
+- [Homepage](https://github.com/netflix/pollyjs/tree/master#readme)
 - [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
+- [Repository](https://github.com/netflix/pollyjs/tree/master)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Fpersister)
     
 

@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.dividerDividerMod.DividerProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.dividerDividerMod.DividerTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.hr
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Divider", JSImport.Namespace)
-@js.native
-object dividerMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[DividerProps, ComponentState, js.Any] {
-    def this(props: DividerProps) = this()
-    def this(props: DividerProps, context: js.Any) = this()
-  }
+object dividerMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Dividers](https://mui.com/components/dividers/)
+    * - [Lists](https://mui.com/components/lists/)
+    *
+    * API:
+    *
+    * - [Divider API](https://mui.com/api/divider/)
+    */
+  @JSImport("@material-ui/core/Divider", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[DividerProps]]
+  val default: OverridableComponent[DividerTypeMap[js.Object, hr]] = js.native
   
+  type _To = OverridableComponent[DividerTypeMap[js.Object, hr]]
+  
+  /* This means you don't have to write `default`, but can instead just say `dividerMod.foo` */
+  override def _to: OverridableComponent[DividerTypeMap[js.Object, hr]] = default
 }
-

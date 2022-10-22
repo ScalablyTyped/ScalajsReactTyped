@@ -1,16 +1,16 @@
 package typingsJapgolly.tensorflowTfjsNode.mod
 
 import typingsJapgolly.tensorflowTfjsCore.distTypesMod.DataType
+import typingsJapgolly.tensorflowTfjsLayers.distEngineTopologyMod.Layer
+import typingsJapgolly.tensorflowTfjsLayers.distKerasFormatCommonMod.Shape
 import typingsJapgolly.tensorflowTfjsLayers.distTypesMod.Kwargs
-import typingsJapgolly.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
-import typingsJapgolly.tensorflowTfjsLayers.topologyMod.Layer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node", "SymbolicTensor")
 @js.native
-class SymbolicTensor protected ()
+open class SymbolicTensor protected ()
   extends typingsJapgolly.tensorflowTfjs.mod.SymbolicTensor {
   /**
     *
@@ -29,14 +29,14 @@ class SymbolicTensor protected ()
     dtype: DataType,
     shape: Shape,
     sourceLayer: Layer,
-    inputs: js.Array[typingsJapgolly.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
+    inputs: js.Array[typingsJapgolly.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor],
     callArgs: Kwargs
   ) = this()
   def this(
     dtype: DataType,
     shape: Shape,
     sourceLayer: Layer,
-    inputs: js.Array[typingsJapgolly.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
+    inputs: js.Array[typingsJapgolly.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor],
     callArgs: Kwargs,
     name: String
   ) = this()
@@ -44,10 +44,18 @@ class SymbolicTensor protected ()
     dtype: DataType,
     shape: Shape,
     sourceLayer: Layer,
-    inputs: js.Array[typingsJapgolly.tensorflowTfjsLayers.topologyMod.SymbolicTensor],
+    inputs: js.Array[typingsJapgolly.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor],
     callArgs: Kwargs,
     name: String,
     outputTensorIndex: Double
   ) = this()
+  def this(
+    dtype: DataType,
+    shape: Shape,
+    sourceLayer: Layer,
+    inputs: js.Array[typingsJapgolly.tensorflowTfjsLayers.distEngineTopologyMod.SymbolicTensor],
+    callArgs: Kwargs,
+    name: Unit,
+    outputTensorIndex: Double
+  ) = this()
 }
-

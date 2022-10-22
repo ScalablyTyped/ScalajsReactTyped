@@ -1,33 +1,48 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HitTestResult extends Object {
+trait HitTestResult
+  extends StObject
+     with Object {
+  
   /**
-    * An array of result objects returned from the [hitTest()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hitTest). Results are returned when the location of the input screen coordinates intersect a [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) in the view. See the table below for the specification of each object in this array.
+    * An array of result objects returned from the [hitTest()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hitTest).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#HitTestResult)
     */
-  var results: js.Array[HitTestResultResults]
+  var results: js.Array[ViewHit]
+  
+  /**
+    * The screen coordinates (or native mouse event) of the click on the view.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#HitTestResult)
+    */
+  var screenPoint: MapViewScreenPoint
 }
-
 object HitTestResult {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    results: js.Array[HitTestResultResults]
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
+    results: js.Array[ViewHit],
+    screenPoint: MapViewScreenPoint
   ): HitTestResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), results = results.asInstanceOf[js.Any], screenPoint = screenPoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[HitTestResult]
   }
+  
+  extension [Self <: HitTestResult](x: Self) {
+    
+    inline def setResults(value: js.Array[ViewHit]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    
+    inline def setResultsVarargs(value: ViewHit*): Self = StObject.set(x, "results", js.Array(value*))
+    
+    inline def setScreenPoint(value: MapViewScreenPoint): Self = StObject.set(x, "screenPoint", value.asInstanceOf[js.Any])
+  }
 }
-

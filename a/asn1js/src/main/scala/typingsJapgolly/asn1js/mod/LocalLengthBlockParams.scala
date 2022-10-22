@@ -1,20 +1,25 @@
 package typingsJapgolly.asn1js.mod
 
-import typingsJapgolly.asn1js.AnonIsIndefiniteForm
+import typingsJapgolly.asn1js.anon.PartialILocalLengthBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LocalLengthBlockParams extends js.Object {
-  var lenBlock: js.UndefOr[AnonIsIndefiniteForm] = js.undefined
+trait LocalLengthBlockParams extends StObject {
+  
+  var lenBlock: js.UndefOr[PartialILocalLengthBlock] = js.undefined
 }
-
 object LocalLengthBlockParams {
-  @scala.inline
-  def apply(lenBlock: AnonIsIndefiniteForm = null): LocalLengthBlockParams = {
+  
+  inline def apply(): LocalLengthBlockParams = {
     val __obj = js.Dynamic.literal()
-    if (lenBlock != null) __obj.updateDynamic("lenBlock")(lenBlock.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalLengthBlockParams]
   }
+  
+  extension [Self <: LocalLengthBlockParams](x: Self) {
+    
+    inline def setLenBlock(value: PartialILocalLengthBlock): Self = StObject.set(x, "lenBlock", value.asInstanceOf[js.Any])
+    
+    inline def setLenBlockUndefined: Self = StObject.set(x, "lenBlock", js.undefined)
+  }
 }
-

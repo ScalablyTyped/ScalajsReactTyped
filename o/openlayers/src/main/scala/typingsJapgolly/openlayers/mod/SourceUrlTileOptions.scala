@@ -1,29 +1,111 @@
 package typingsJapgolly.openlayers.mod
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.openlayers.mod.olx.LogoOptions
+import typingsJapgolly.openlayers.mod.proj.Projection
 import typingsJapgolly.openlayers.mod.source.State
 import typingsJapgolly.openlayers.mod.tilegrid.TileGrid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SourceUrlTileOptions extends js.Object {
-  var attributions: js.UndefOr[AttributionLike] = js.native
-  var cacheSize: js.UndefOr[Double] = js.native
-  var extent: js.UndefOr[Extent_] = js.native
-  var logo: js.UndefOr[String | LogoOptions] = js.native
-  var opaque: js.UndefOr[Boolean] = js.native
-  var projection: ProjectionLike = js.native
-  var state: js.UndefOr[State] = js.native
-  var tileGrid: js.UndefOr[TileGrid] = js.native
+trait SourceUrlTileOptions extends StObject {
+  
+  var attributions: js.UndefOr[AttributionLike] = js.undefined
+  
+  var cacheSize: js.UndefOr[Double] = js.undefined
+  
+  var extent: js.UndefOr[Extent_] = js.undefined
+  
+  var logo: js.UndefOr[String | LogoOptions] = js.undefined
+  
+  var opaque: js.UndefOr[Boolean] = js.undefined
+  
+  var projection: ProjectionLike
+  
+  var state: js.UndefOr[State] = js.undefined
+  
+  var tileGrid: js.UndefOr[TileGrid] = js.undefined
+  
+  def tileLoadFunction(tile: Tile, url: String): Unit
   @JSName("tileLoadFunction")
-  var tileLoadFunction_Original: TileLoadFunctionType = js.native
-  var tilePixelRatio: js.UndefOr[Double] = js.native
-  var tileUrlFunction: js.UndefOr[TileUrlFunctionType] = js.native
-  var url: js.UndefOr[String] = js.native
-  var urls: js.UndefOr[js.Array[String]] = js.native
-  var wrapX: js.UndefOr[Boolean] = js.native
-  def tileLoadFunction(tile: Tile, url: String): Unit = js.native
+  var tileLoadFunction_Original: TileLoadFunctionType
+  
+  var tilePixelRatio: js.UndefOr[Double] = js.undefined
+  
+  var tileUrlFunction: js.UndefOr[TileUrlFunctionType] = js.undefined
+  
+  var url: js.UndefOr[String] = js.undefined
+  
+  var urls: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var wrapX: js.UndefOr[Boolean] = js.undefined
 }
-
+object SourceUrlTileOptions {
+  
+  inline def apply(tileLoadFunction: (/* tile */ Tile, /* url */ String) => Callback): SourceUrlTileOptions = {
+    val __obj = js.Dynamic.literal(tileLoadFunction = js.Any.fromFunction2((t0: /* tile */ Tile, t1: /* url */ String) => (tileLoadFunction(t0, t1)).runNow()))
+    __obj.asInstanceOf[SourceUrlTileOptions]
+  }
+  
+  extension [Self <: SourceUrlTileOptions](x: Self) {
+    
+    inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
+    
+    inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
+    
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
+    
+    inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
+    
+    inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
+    
+    inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    
+    inline def setLogo(value: String | LogoOptions): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    
+    inline def setOpaque(value: Boolean): Self = StObject.set(x, "opaque", value.asInstanceOf[js.Any])
+    
+    inline def setOpaqueUndefined: Self = StObject.set(x, "opaque", js.undefined)
+    
+    inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setTileGrid(value: TileGrid): Self = StObject.set(x, "tileGrid", value.asInstanceOf[js.Any])
+    
+    inline def setTileGridUndefined: Self = StObject.set(x, "tileGrid", js.undefined)
+    
+    inline def setTileLoadFunction(value: (/* tile */ Tile, /* url */ String) => Callback): Self = StObject.set(x, "tileLoadFunction", js.Any.fromFunction2((t0: /* tile */ Tile, t1: /* url */ String) => (value(t0, t1)).runNow()))
+    
+    inline def setTilePixelRatio(value: Double): Self = StObject.set(x, "tilePixelRatio", value.asInstanceOf[js.Any])
+    
+    inline def setTilePixelRatioUndefined: Self = StObject.set(x, "tilePixelRatio", js.undefined)
+    
+    inline def setTileUrlFunction(value: (/* coords */ TileCoord, /* pixelRatio */ Double, /* proj */ Projection) => String): Self = StObject.set(x, "tileUrlFunction", js.Any.fromFunction3(value))
+    
+    inline def setTileUrlFunctionUndefined: Self = StObject.set(x, "tileUrlFunction", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
+    
+    inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+    
+    inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+  }
+}

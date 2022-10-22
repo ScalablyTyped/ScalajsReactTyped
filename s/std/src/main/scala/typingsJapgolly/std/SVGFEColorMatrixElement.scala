@@ -1,23 +1,32 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <feColorMatrix> element. */
 @js.native
 trait SVGFEColorMatrixElement
-  extends SVGElement
+  extends StObject
+     with SVGElement
      with SVGFilterPrimitiveStandardAttributes {
+  
+  /* standard dom */
   val SVG_FECOLORMATRIX_TYPE_HUEROTATE: Double = js.native
+  
+  /* standard dom */
   val SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA: Double = js.native
+  
+  /* standard dom */
   val SVG_FECOLORMATRIX_TYPE_MATRIX: Double = js.native
+  
+  /* standard dom */
   val SVG_FECOLORMATRIX_TYPE_SATURATE: Double = js.native
+  
+  /* standard dom */
   val SVG_FECOLORMATRIX_TYPE_UNKNOWN: Double = js.native
-  val in1: org.scalajs.dom.raw.SVGAnimatedString = js.native
-  val `type`: org.scalajs.dom.raw.SVGAnimatedEnumeration = js.native
-  val values: org.scalajs.dom.raw.SVGAnimatedNumberList = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -28,25 +37,25 @@ trait SVGFEColorMatrixElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  /* standard dom */
+  val in1: org.scalajs.dom.SVGAnimatedString = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,
     listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
+    options: org.scalajs.dom.EventListenerOptions
   ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  
+  /* standard dom */
+  val `type`: org.scalajs.dom.SVGAnimatedEnumeration = js.native
+  
+  /* standard dom */
+  val values: org.scalajs.dom.SVGAnimatedNumberList = js.native
 }
-
-@JSGlobal("SVGFEColorMatrixElement")
-@js.native
-object SVGFEColorMatrixElement extends Instantiable0[SVGFEColorMatrixElement] {
-  val SVG_FECOLORMATRIX_TYPE_HUEROTATE: Double = js.native
-  val SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA: Double = js.native
-  val SVG_FECOLORMATRIX_TYPE_MATRIX: Double = js.native
-  val SVG_FECOLORMATRIX_TYPE_SATURATE: Double = js.native
-  val SVG_FECOLORMATRIX_TYPE_UNKNOWN: Double = js.native
-}
-

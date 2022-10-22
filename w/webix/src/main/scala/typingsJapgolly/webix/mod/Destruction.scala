@@ -1,15 +1,22 @@
 package typingsJapgolly.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Destruction extends js.Object {
+trait Destruction extends StObject {
+  
   def destructor(): Unit
 }
-
-@JSImport("webix", "Destruction")
-@js.native
-object Destruction extends TopLevel[Destruction]
-
+object Destruction {
+  
+  @JSImport("webix", "Destruction")
+  @js.native
+  val ^ : Destruction = js.native
+  
+  extension [Self <: Destruction](x: Self) {
+    
+    inline def setDestructor(value: Callback): Self = StObject.set(x, "destructor", value.toJsFn)
+  }
+}

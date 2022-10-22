@@ -1,20 +1,23 @@
 package typingsJapgolly.fridaGum.ObjC
 
 import typingsJapgolly.fridaGum.NativePointer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProxyInstance extends js.Object {
+trait ProxyInstance extends StObject {
+  
   var handle: NativePointer
 }
-
 object ProxyInstance {
-  @scala.inline
-  def apply(handle: NativePointer): ProxyInstance = {
-    val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any])
   
+  inline def apply(handle: NativePointer): ProxyInstance = {
+    val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyInstance]
   }
+  
+  extension [Self <: ProxyInstance](x: Self) {
+    
+    inline def setHandle(value: NativePointer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,41 +1,39 @@
 package typingsJapgolly.ethereumProtocol.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AbiType extends js.Object
-
+sealed trait AbiType extends StObject
 @JSImport("ethereum-protocol", "AbiType")
 @js.native
-object AbiType extends js.Object {
-  @js.native
-  sealed trait Constructor extends AbiType
-  
-  @js.native
-  sealed trait Event extends AbiType
-  
-  @js.native
-  sealed trait Fallback extends AbiType
-  
-  @js.native
-  sealed trait Function extends AbiType
+object AbiType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[AbiType with String] = js.native
-  /* "constructor" */ @js.native
-  object Constructor extends TopLevel[Constructor with String]
+  def apply(value: String): js.UndefOr[AbiType & String] = js.native
   
-  /* "event" */ @js.native
-  object Event extends TopLevel[Event with String]
+  @js.native
+  sealed trait Constructor
+    extends StObject
+       with AbiType
+  /* "constructor" */ val Constructor: typingsJapgolly.ethereumProtocol.mod.AbiType.Constructor & String = js.native
   
-  /* "fallback" */ @js.native
-  object Fallback extends TopLevel[Fallback with String]
+  @js.native
+  sealed trait Event
+    extends StObject
+       with AbiType
+  /* "event" */ val Event: typingsJapgolly.ethereumProtocol.mod.AbiType.Event & String = js.native
   
-  /* "function" */ @js.native
-  object Function extends TopLevel[Function with String]
+  @js.native
+  sealed trait Fallback
+    extends StObject
+       with AbiType
+  /* "fallback" */ val Fallback: typingsJapgolly.ethereumProtocol.mod.AbiType.Fallback & String = js.native
   
+  @js.native
+  sealed trait Function
+    extends StObject
+       with AbiType
+  /* "function" */ val Function: typingsJapgolly.ethereumProtocol.mod.AbiType.Function & String = js.native
 }
-

@@ -1,54 +1,46 @@
 package typingsJapgolly.antd.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.vdom.VdomElement
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.scrollNumberMod.ScrollNumberProps
-import typingsJapgolly.antd.scrollNumberMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.libBadgeScrollNumberMod.ScrollNumberProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ScrollNumber {
-  def apply(
-    className: String = null,
-    component: String = null,
-    count: String | Double = null,
-    displayComponent: VdomElement = null,
-    onAnimated: js.Function = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    title: String | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ScrollNumberProps, default, Unit, ScrollNumberProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (displayComponent != null) __obj.updateDynamic("displayComponent")(displayComponent.rawElement.asInstanceOf[js.Any])
-    if (onAnimated != null) __obj.updateDynamic("onAnimated")(onAnimated.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.scrollNumberMod.ScrollNumberProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.scrollNumberMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.scrollNumberMod.ScrollNumberProps])(children: _*)
+  inline def apply(show: Boolean): Builder = {
+    val __props = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ScrollNumberProps]))
   }
+  
   @JSImport("antd/lib/badge/ScrollNumber", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def component(value: String): this.type = set("component", value.asInstanceOf[js.Any])
+    
+    inline def count(value: String | Double): this.type = set("count", value.asInstanceOf[js.Any])
+    
+    inline def countNull: this.type = set("count", null)
+    
+    inline def motionClassName(value: String): this.type = set("motionClassName", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String | Double): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+  }
+  
+  def withProps(p: ScrollNumberProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

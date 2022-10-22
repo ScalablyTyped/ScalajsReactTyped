@@ -1,20 +1,21 @@
 package typingsJapgolly.spotifyNodeApplescript
 
 import typingsJapgolly.spotifyNodeApplescript.mod.SpotifyPlayingState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spotifyNodeApplescriptStrings {
-  @js.native
-  sealed trait paused extends SpotifyPlayingState
   
   @js.native
-  sealed trait playing extends SpotifyPlayingState
+  sealed trait paused
+    extends StObject
+       with SpotifyPlayingState
+  inline def paused: paused = "paused".asInstanceOf[paused]
   
-  @scala.inline
-  def paused: paused = "paused".asInstanceOf[paused]
-  @scala.inline
-  def playing: playing = "playing".asInstanceOf[playing]
+  @js.native
+  sealed trait playing
+    extends StObject
+       with SpotifyPlayingState
+  inline def playing: playing = "playing".asInstanceOf[playing]
 }
-

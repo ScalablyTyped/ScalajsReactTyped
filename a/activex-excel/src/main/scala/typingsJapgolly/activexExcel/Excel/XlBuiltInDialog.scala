@@ -1,1049 +1,1045 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`103`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`108`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1107`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1108`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1109`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`110`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`111`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1133`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1134`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1135`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1153`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1179`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1182`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1183`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1184`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`119`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1208`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`127`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`128`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`129`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`12`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`130`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`132`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`133`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`134`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`137`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`13`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`142`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`145`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`147`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`14`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`150`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`154`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`159`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`161`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`166`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`170`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`171`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`17`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`185`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`186`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`188`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`189`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`190`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`191`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`192`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`193`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`194`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`195`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`196`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`197`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`198`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`199`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`200`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`201`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`202`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`203`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`204`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`207`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`208`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`212`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`213`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`214`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`217`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`218`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`220`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`222`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`223`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`225`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`226`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`228`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`229`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`23`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`249`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`251`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`256`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`259`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`261`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`262`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`269`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`26`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`272`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`273`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`276`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`27`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`281`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`282`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`283`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`284`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`285`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`288`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`28`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`293`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`300`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`301`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`302`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`305`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`307`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`308`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`311`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`312`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`313`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`318`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`319`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`320`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`321`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`322`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`323`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`325`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`328`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`32`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`330`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`336`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`339`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`342`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`344`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`350`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`354`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`355`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`356`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`35`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`36`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`370`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`378`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`379`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`380`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`381`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`382`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`384`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`386`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`388`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`390`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`392`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`394`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`398`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`39`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`40`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`415`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`417`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`41`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`420`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`421`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`422`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`423`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`42`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`433`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`434`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`435`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`436`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`437`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`438`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`43`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`441`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`445`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`447`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`44`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`450`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`456`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`458`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`45`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`460`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`461`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`462`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`463`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`464`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`465`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`466`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`46`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`470`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`472`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`473`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`474`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`475`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`476`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`478`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`47`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`481`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`485`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`493`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`496`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`504`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`505`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`506`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`509`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`525`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`526`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`527`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`52`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`530`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`538`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`53`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`540`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`541`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`54`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`557`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`55`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`567`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`568`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`570`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`572`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`583`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`58`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`596`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`61`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`620`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`62`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`63`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`647`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`64`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`653`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`656`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`666`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`667`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`67`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`683`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`684`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`685`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`686`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`687`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`689`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`68`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`69`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`6`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`709`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`70`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`71`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`723`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`724`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`72`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`731`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`732`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`73`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`754`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`76`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`773`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`78`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`796`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`7`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`80`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`832`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`834`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`84`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`85`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`862`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`86`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`87`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`88`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`89`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`8`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`91`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`94`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`95`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`977`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`978`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`9`
+import typingsJapgolly.activexExcel.activexExcelInts.`103`
+import typingsJapgolly.activexExcel.activexExcelInts.`108`
+import typingsJapgolly.activexExcel.activexExcelInts.`1107`
+import typingsJapgolly.activexExcel.activexExcelInts.`1108`
+import typingsJapgolly.activexExcel.activexExcelInts.`1109`
+import typingsJapgolly.activexExcel.activexExcelInts.`110`
+import typingsJapgolly.activexExcel.activexExcelInts.`111`
+import typingsJapgolly.activexExcel.activexExcelInts.`1133`
+import typingsJapgolly.activexExcel.activexExcelInts.`1134`
+import typingsJapgolly.activexExcel.activexExcelInts.`1135`
+import typingsJapgolly.activexExcel.activexExcelInts.`1153`
+import typingsJapgolly.activexExcel.activexExcelInts.`1179`
+import typingsJapgolly.activexExcel.activexExcelInts.`1182`
+import typingsJapgolly.activexExcel.activexExcelInts.`1183`
+import typingsJapgolly.activexExcel.activexExcelInts.`1184`
+import typingsJapgolly.activexExcel.activexExcelInts.`119`
+import typingsJapgolly.activexExcel.activexExcelInts.`1208`
+import typingsJapgolly.activexExcel.activexExcelInts.`127`
+import typingsJapgolly.activexExcel.activexExcelInts.`128`
+import typingsJapgolly.activexExcel.activexExcelInts.`129`
+import typingsJapgolly.activexExcel.activexExcelInts.`12`
+import typingsJapgolly.activexExcel.activexExcelInts.`130`
+import typingsJapgolly.activexExcel.activexExcelInts.`132`
+import typingsJapgolly.activexExcel.activexExcelInts.`133`
+import typingsJapgolly.activexExcel.activexExcelInts.`134`
+import typingsJapgolly.activexExcel.activexExcelInts.`137`
+import typingsJapgolly.activexExcel.activexExcelInts.`13`
+import typingsJapgolly.activexExcel.activexExcelInts.`142`
+import typingsJapgolly.activexExcel.activexExcelInts.`145`
+import typingsJapgolly.activexExcel.activexExcelInts.`147`
+import typingsJapgolly.activexExcel.activexExcelInts.`14`
+import typingsJapgolly.activexExcel.activexExcelInts.`150`
+import typingsJapgolly.activexExcel.activexExcelInts.`154`
+import typingsJapgolly.activexExcel.activexExcelInts.`159`
+import typingsJapgolly.activexExcel.activexExcelInts.`161`
+import typingsJapgolly.activexExcel.activexExcelInts.`166`
+import typingsJapgolly.activexExcel.activexExcelInts.`170`
+import typingsJapgolly.activexExcel.activexExcelInts.`171`
+import typingsJapgolly.activexExcel.activexExcelInts.`17`
+import typingsJapgolly.activexExcel.activexExcelInts.`185`
+import typingsJapgolly.activexExcel.activexExcelInts.`186`
+import typingsJapgolly.activexExcel.activexExcelInts.`188`
+import typingsJapgolly.activexExcel.activexExcelInts.`189`
+import typingsJapgolly.activexExcel.activexExcelInts.`190`
+import typingsJapgolly.activexExcel.activexExcelInts.`191`
+import typingsJapgolly.activexExcel.activexExcelInts.`192`
+import typingsJapgolly.activexExcel.activexExcelInts.`193`
+import typingsJapgolly.activexExcel.activexExcelInts.`194`
+import typingsJapgolly.activexExcel.activexExcelInts.`195`
+import typingsJapgolly.activexExcel.activexExcelInts.`196`
+import typingsJapgolly.activexExcel.activexExcelInts.`197`
+import typingsJapgolly.activexExcel.activexExcelInts.`198`
+import typingsJapgolly.activexExcel.activexExcelInts.`199`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`200`
+import typingsJapgolly.activexExcel.activexExcelInts.`201`
+import typingsJapgolly.activexExcel.activexExcelInts.`202`
+import typingsJapgolly.activexExcel.activexExcelInts.`203`
+import typingsJapgolly.activexExcel.activexExcelInts.`204`
+import typingsJapgolly.activexExcel.activexExcelInts.`207`
+import typingsJapgolly.activexExcel.activexExcelInts.`208`
+import typingsJapgolly.activexExcel.activexExcelInts.`212`
+import typingsJapgolly.activexExcel.activexExcelInts.`213`
+import typingsJapgolly.activexExcel.activexExcelInts.`214`
+import typingsJapgolly.activexExcel.activexExcelInts.`217`
+import typingsJapgolly.activexExcel.activexExcelInts.`218`
+import typingsJapgolly.activexExcel.activexExcelInts.`220`
+import typingsJapgolly.activexExcel.activexExcelInts.`222`
+import typingsJapgolly.activexExcel.activexExcelInts.`223`
+import typingsJapgolly.activexExcel.activexExcelInts.`225`
+import typingsJapgolly.activexExcel.activexExcelInts.`226`
+import typingsJapgolly.activexExcel.activexExcelInts.`228`
+import typingsJapgolly.activexExcel.activexExcelInts.`229`
+import typingsJapgolly.activexExcel.activexExcelInts.`23`
+import typingsJapgolly.activexExcel.activexExcelInts.`249`
+import typingsJapgolly.activexExcel.activexExcelInts.`251`
+import typingsJapgolly.activexExcel.activexExcelInts.`256`
+import typingsJapgolly.activexExcel.activexExcelInts.`259`
+import typingsJapgolly.activexExcel.activexExcelInts.`261`
+import typingsJapgolly.activexExcel.activexExcelInts.`262`
+import typingsJapgolly.activexExcel.activexExcelInts.`269`
+import typingsJapgolly.activexExcel.activexExcelInts.`26`
+import typingsJapgolly.activexExcel.activexExcelInts.`272`
+import typingsJapgolly.activexExcel.activexExcelInts.`273`
+import typingsJapgolly.activexExcel.activexExcelInts.`276`
+import typingsJapgolly.activexExcel.activexExcelInts.`27`
+import typingsJapgolly.activexExcel.activexExcelInts.`281`
+import typingsJapgolly.activexExcel.activexExcelInts.`282`
+import typingsJapgolly.activexExcel.activexExcelInts.`283`
+import typingsJapgolly.activexExcel.activexExcelInts.`284`
+import typingsJapgolly.activexExcel.activexExcelInts.`285`
+import typingsJapgolly.activexExcel.activexExcelInts.`288`
+import typingsJapgolly.activexExcel.activexExcelInts.`28`
+import typingsJapgolly.activexExcel.activexExcelInts.`293`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`300`
+import typingsJapgolly.activexExcel.activexExcelInts.`301`
+import typingsJapgolly.activexExcel.activexExcelInts.`302`
+import typingsJapgolly.activexExcel.activexExcelInts.`305`
+import typingsJapgolly.activexExcel.activexExcelInts.`307`
+import typingsJapgolly.activexExcel.activexExcelInts.`308`
+import typingsJapgolly.activexExcel.activexExcelInts.`311`
+import typingsJapgolly.activexExcel.activexExcelInts.`312`
+import typingsJapgolly.activexExcel.activexExcelInts.`313`
+import typingsJapgolly.activexExcel.activexExcelInts.`318`
+import typingsJapgolly.activexExcel.activexExcelInts.`319`
+import typingsJapgolly.activexExcel.activexExcelInts.`320`
+import typingsJapgolly.activexExcel.activexExcelInts.`321`
+import typingsJapgolly.activexExcel.activexExcelInts.`322`
+import typingsJapgolly.activexExcel.activexExcelInts.`323`
+import typingsJapgolly.activexExcel.activexExcelInts.`325`
+import typingsJapgolly.activexExcel.activexExcelInts.`328`
+import typingsJapgolly.activexExcel.activexExcelInts.`32`
+import typingsJapgolly.activexExcel.activexExcelInts.`330`
+import typingsJapgolly.activexExcel.activexExcelInts.`336`
+import typingsJapgolly.activexExcel.activexExcelInts.`339`
+import typingsJapgolly.activexExcel.activexExcelInts.`342`
+import typingsJapgolly.activexExcel.activexExcelInts.`344`
+import typingsJapgolly.activexExcel.activexExcelInts.`350`
+import typingsJapgolly.activexExcel.activexExcelInts.`354`
+import typingsJapgolly.activexExcel.activexExcelInts.`355`
+import typingsJapgolly.activexExcel.activexExcelInts.`356`
+import typingsJapgolly.activexExcel.activexExcelInts.`35`
+import typingsJapgolly.activexExcel.activexExcelInts.`36`
+import typingsJapgolly.activexExcel.activexExcelInts.`370`
+import typingsJapgolly.activexExcel.activexExcelInts.`378`
+import typingsJapgolly.activexExcel.activexExcelInts.`379`
+import typingsJapgolly.activexExcel.activexExcelInts.`380`
+import typingsJapgolly.activexExcel.activexExcelInts.`381`
+import typingsJapgolly.activexExcel.activexExcelInts.`382`
+import typingsJapgolly.activexExcel.activexExcelInts.`384`
+import typingsJapgolly.activexExcel.activexExcelInts.`386`
+import typingsJapgolly.activexExcel.activexExcelInts.`388`
+import typingsJapgolly.activexExcel.activexExcelInts.`390`
+import typingsJapgolly.activexExcel.activexExcelInts.`392`
+import typingsJapgolly.activexExcel.activexExcelInts.`394`
+import typingsJapgolly.activexExcel.activexExcelInts.`398`
+import typingsJapgolly.activexExcel.activexExcelInts.`39`
+import typingsJapgolly.activexExcel.activexExcelInts.`40`
+import typingsJapgolly.activexExcel.activexExcelInts.`415`
+import typingsJapgolly.activexExcel.activexExcelInts.`417`
+import typingsJapgolly.activexExcel.activexExcelInts.`41`
+import typingsJapgolly.activexExcel.activexExcelInts.`420`
+import typingsJapgolly.activexExcel.activexExcelInts.`421`
+import typingsJapgolly.activexExcel.activexExcelInts.`422`
+import typingsJapgolly.activexExcel.activexExcelInts.`423`
+import typingsJapgolly.activexExcel.activexExcelInts.`42`
+import typingsJapgolly.activexExcel.activexExcelInts.`433`
+import typingsJapgolly.activexExcel.activexExcelInts.`434`
+import typingsJapgolly.activexExcel.activexExcelInts.`435`
+import typingsJapgolly.activexExcel.activexExcelInts.`436`
+import typingsJapgolly.activexExcel.activexExcelInts.`437`
+import typingsJapgolly.activexExcel.activexExcelInts.`438`
+import typingsJapgolly.activexExcel.activexExcelInts.`43`
+import typingsJapgolly.activexExcel.activexExcelInts.`441`
+import typingsJapgolly.activexExcel.activexExcelInts.`445`
+import typingsJapgolly.activexExcel.activexExcelInts.`447`
+import typingsJapgolly.activexExcel.activexExcelInts.`44`
+import typingsJapgolly.activexExcel.activexExcelInts.`450`
+import typingsJapgolly.activexExcel.activexExcelInts.`456`
+import typingsJapgolly.activexExcel.activexExcelInts.`458`
+import typingsJapgolly.activexExcel.activexExcelInts.`45`
+import typingsJapgolly.activexExcel.activexExcelInts.`460`
+import typingsJapgolly.activexExcel.activexExcelInts.`461`
+import typingsJapgolly.activexExcel.activexExcelInts.`462`
+import typingsJapgolly.activexExcel.activexExcelInts.`463`
+import typingsJapgolly.activexExcel.activexExcelInts.`464`
+import typingsJapgolly.activexExcel.activexExcelInts.`465`
+import typingsJapgolly.activexExcel.activexExcelInts.`466`
+import typingsJapgolly.activexExcel.activexExcelInts.`46`
+import typingsJapgolly.activexExcel.activexExcelInts.`470`
+import typingsJapgolly.activexExcel.activexExcelInts.`472`
+import typingsJapgolly.activexExcel.activexExcelInts.`473`
+import typingsJapgolly.activexExcel.activexExcelInts.`474`
+import typingsJapgolly.activexExcel.activexExcelInts.`475`
+import typingsJapgolly.activexExcel.activexExcelInts.`476`
+import typingsJapgolly.activexExcel.activexExcelInts.`478`
+import typingsJapgolly.activexExcel.activexExcelInts.`47`
+import typingsJapgolly.activexExcel.activexExcelInts.`481`
+import typingsJapgolly.activexExcel.activexExcelInts.`485`
+import typingsJapgolly.activexExcel.activexExcelInts.`493`
+import typingsJapgolly.activexExcel.activexExcelInts.`496`
+import typingsJapgolly.activexExcel.activexExcelInts.`504`
+import typingsJapgolly.activexExcel.activexExcelInts.`505`
+import typingsJapgolly.activexExcel.activexExcelInts.`506`
+import typingsJapgolly.activexExcel.activexExcelInts.`509`
+import typingsJapgolly.activexExcel.activexExcelInts.`525`
+import typingsJapgolly.activexExcel.activexExcelInts.`526`
+import typingsJapgolly.activexExcel.activexExcelInts.`527`
+import typingsJapgolly.activexExcel.activexExcelInts.`52`
+import typingsJapgolly.activexExcel.activexExcelInts.`530`
+import typingsJapgolly.activexExcel.activexExcelInts.`538`
+import typingsJapgolly.activexExcel.activexExcelInts.`53`
+import typingsJapgolly.activexExcel.activexExcelInts.`540`
+import typingsJapgolly.activexExcel.activexExcelInts.`541`
+import typingsJapgolly.activexExcel.activexExcelInts.`54`
+import typingsJapgolly.activexExcel.activexExcelInts.`557`
+import typingsJapgolly.activexExcel.activexExcelInts.`55`
+import typingsJapgolly.activexExcel.activexExcelInts.`567`
+import typingsJapgolly.activexExcel.activexExcelInts.`568`
+import typingsJapgolly.activexExcel.activexExcelInts.`570`
+import typingsJapgolly.activexExcel.activexExcelInts.`572`
+import typingsJapgolly.activexExcel.activexExcelInts.`583`
+import typingsJapgolly.activexExcel.activexExcelInts.`58`
+import typingsJapgolly.activexExcel.activexExcelInts.`596`
+import typingsJapgolly.activexExcel.activexExcelInts.`5`
+import typingsJapgolly.activexExcel.activexExcelInts.`61`
+import typingsJapgolly.activexExcel.activexExcelInts.`620`
+import typingsJapgolly.activexExcel.activexExcelInts.`62`
+import typingsJapgolly.activexExcel.activexExcelInts.`63`
+import typingsJapgolly.activexExcel.activexExcelInts.`647`
+import typingsJapgolly.activexExcel.activexExcelInts.`64`
+import typingsJapgolly.activexExcel.activexExcelInts.`653`
+import typingsJapgolly.activexExcel.activexExcelInts.`656`
+import typingsJapgolly.activexExcel.activexExcelInts.`666`
+import typingsJapgolly.activexExcel.activexExcelInts.`667`
+import typingsJapgolly.activexExcel.activexExcelInts.`67`
+import typingsJapgolly.activexExcel.activexExcelInts.`683`
+import typingsJapgolly.activexExcel.activexExcelInts.`684`
+import typingsJapgolly.activexExcel.activexExcelInts.`685`
+import typingsJapgolly.activexExcel.activexExcelInts.`686`
+import typingsJapgolly.activexExcel.activexExcelInts.`687`
+import typingsJapgolly.activexExcel.activexExcelInts.`689`
+import typingsJapgolly.activexExcel.activexExcelInts.`68`
+import typingsJapgolly.activexExcel.activexExcelInts.`69`
+import typingsJapgolly.activexExcel.activexExcelInts.`6`
+import typingsJapgolly.activexExcel.activexExcelInts.`709`
+import typingsJapgolly.activexExcel.activexExcelInts.`70`
+import typingsJapgolly.activexExcel.activexExcelInts.`71`
+import typingsJapgolly.activexExcel.activexExcelInts.`723`
+import typingsJapgolly.activexExcel.activexExcelInts.`724`
+import typingsJapgolly.activexExcel.activexExcelInts.`72`
+import typingsJapgolly.activexExcel.activexExcelInts.`731`
+import typingsJapgolly.activexExcel.activexExcelInts.`732`
+import typingsJapgolly.activexExcel.activexExcelInts.`73`
+import typingsJapgolly.activexExcel.activexExcelInts.`754`
+import typingsJapgolly.activexExcel.activexExcelInts.`76`
+import typingsJapgolly.activexExcel.activexExcelInts.`773`
+import typingsJapgolly.activexExcel.activexExcelInts.`78`
+import typingsJapgolly.activexExcel.activexExcelInts.`796`
+import typingsJapgolly.activexExcel.activexExcelInts.`7`
+import typingsJapgolly.activexExcel.activexExcelInts.`80`
+import typingsJapgolly.activexExcel.activexExcelInts.`832`
+import typingsJapgolly.activexExcel.activexExcelInts.`834`
+import typingsJapgolly.activexExcel.activexExcelInts.`84`
+import typingsJapgolly.activexExcel.activexExcelInts.`85`
+import typingsJapgolly.activexExcel.activexExcelInts.`862`
+import typingsJapgolly.activexExcel.activexExcelInts.`86`
+import typingsJapgolly.activexExcel.activexExcelInts.`87`
+import typingsJapgolly.activexExcel.activexExcelInts.`88`
+import typingsJapgolly.activexExcel.activexExcelInts.`89`
+import typingsJapgolly.activexExcel.activexExcelInts.`8`
+import typingsJapgolly.activexExcel.activexExcelInts.`91`
+import typingsJapgolly.activexExcel.activexExcelInts.`94`
+import typingsJapgolly.activexExcel.activexExcelInts.`95`
+import typingsJapgolly.activexExcel.activexExcelInts.`977`
+import typingsJapgolly.activexExcel.activexExcelInts.`978`
+import typingsJapgolly.activexExcel.activexExcelInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`541`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`538`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`103`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`476`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`390`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`321`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`43`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`133`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`212`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`170`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`171`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`12`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`213`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`293`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`80`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`323`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`485`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`78`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`45`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`32`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`46`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`166`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`392`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`527`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`724`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`505`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`506`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`540`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`350`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`526`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`288`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`435`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`52`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`161`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`47`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`73`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`583`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`191`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`147`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`108`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`796`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`62`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`217`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`276`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`493`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`36`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`379`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`723`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`40`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`525`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`61`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`229`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`111`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`110`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`203`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`27`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`862`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`438`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`223`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`54`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`251`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`228`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`463`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`464`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`732`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`709`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`530`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`35`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`6`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`481`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`200`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`301`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`447`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`370`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`475`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`26`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`381`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`269`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`465`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`423`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`150`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`88`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`225`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`128`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`42`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`226`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`129`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`89`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`64`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`63`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`130`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`450`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`193`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`272`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`194`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`195`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`196`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`273`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`67`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`68`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`69`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`388`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`344`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`70`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`71`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`249`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`72`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`198`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`76`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`666`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`55`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`596`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`496`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`259`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`342`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`380`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`436`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`437`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`382`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`470`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`339`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`378`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`85`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`185`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`322`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`262`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`834`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`977`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`119`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`978`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`667`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`154`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`207`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`214`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`188`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`441`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`318`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`325`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`319`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`356`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`458`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`647`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`355`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`320`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`142`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`86`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`186`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`7`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`91`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`58`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`53`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`84`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`832`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`656`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`570`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`572`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`689`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`433`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`313`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`434`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`421`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`568`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`567`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1183`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1153`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`312`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`300`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`8`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`9`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`222`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`202`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`474`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`754`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`28`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`620`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`653`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`445`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`134`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`336`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`127`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`17`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`456`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`208`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`145`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`285`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`87`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`307`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`305`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`308`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`473`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`311`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`420`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`731`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`132`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`189`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`460`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`557`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`466`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`504`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`461`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`462`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`509`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1109`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1208`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`23`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1108`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1107`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`159`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`204`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`220`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`261`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1182`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1184`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1179`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`39`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`192`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1134`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1133`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1135`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`137`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`190`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`472`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`44`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`218`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`398`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`41`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`394`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`422`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`94`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`201`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`328`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`478`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`330`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`197`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`773`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`686`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`684`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`687`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`683`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`685`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`14`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`13`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`281`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`283`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`354`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`282`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`386`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`302`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`284`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`417`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`415`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`384`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`199`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`95`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`256`
+  - typingsJapgolly.activexExcel.activexExcelInts.`541`
+  - typingsJapgolly.activexExcel.activexExcelInts.`538`
+  - typingsJapgolly.activexExcel.activexExcelInts.`103`
+  - typingsJapgolly.activexExcel.activexExcelInts.`476`
+  - typingsJapgolly.activexExcel.activexExcelInts.`390`
+  - typingsJapgolly.activexExcel.activexExcelInts.`321`
+  - typingsJapgolly.activexExcel.activexExcelInts.`43`
+  - typingsJapgolly.activexExcel.activexExcelInts.`133`
+  - typingsJapgolly.activexExcel.activexExcelInts.`212`
+  - typingsJapgolly.activexExcel.activexExcelInts.`170`
+  - typingsJapgolly.activexExcel.activexExcelInts.`171`
+  - typingsJapgolly.activexExcel.activexExcelInts.`12`
+  - typingsJapgolly.activexExcel.activexExcelInts.`213`
+  - typingsJapgolly.activexExcel.activexExcelInts.`293`
+  - typingsJapgolly.activexExcel.activexExcelInts.`80`
+  - typingsJapgolly.activexExcel.activexExcelInts.`323`
+  - typingsJapgolly.activexExcel.activexExcelInts.`485`
+  - typingsJapgolly.activexExcel.activexExcelInts.`78`
+  - typingsJapgolly.activexExcel.activexExcelInts.`45`
+  - typingsJapgolly.activexExcel.activexExcelInts.`32`
+  - typingsJapgolly.activexExcel.activexExcelInts.`46`
+  - typingsJapgolly.activexExcel.activexExcelInts.`166`
+  - typingsJapgolly.activexExcel.activexExcelInts.`392`
+  - typingsJapgolly.activexExcel.activexExcelInts.`527`
+  - typingsJapgolly.activexExcel.activexExcelInts.`724`
+  - typingsJapgolly.activexExcel.activexExcelInts.`505`
+  - typingsJapgolly.activexExcel.activexExcelInts.`506`
+  - typingsJapgolly.activexExcel.activexExcelInts.`540`
+  - typingsJapgolly.activexExcel.activexExcelInts.`350`
+  - typingsJapgolly.activexExcel.activexExcelInts.`526`
+  - typingsJapgolly.activexExcel.activexExcelInts.`288`
+  - typingsJapgolly.activexExcel.activexExcelInts.`435`
+  - typingsJapgolly.activexExcel.activexExcelInts.`52`
+  - typingsJapgolly.activexExcel.activexExcelInts.`161`
+  - typingsJapgolly.activexExcel.activexExcelInts.`47`
+  - typingsJapgolly.activexExcel.activexExcelInts.`73`
+  - typingsJapgolly.activexExcel.activexExcelInts.`583`
+  - typingsJapgolly.activexExcel.activexExcelInts.`191`
+  - typingsJapgolly.activexExcel.activexExcelInts.`147`
+  - typingsJapgolly.activexExcel.activexExcelInts.`108`
+  - typingsJapgolly.activexExcel.activexExcelInts.`796`
+  - typingsJapgolly.activexExcel.activexExcelInts.`62`
+  - typingsJapgolly.activexExcel.activexExcelInts.`217`
+  - typingsJapgolly.activexExcel.activexExcelInts.`276`
+  - typingsJapgolly.activexExcel.activexExcelInts.`493`
+  - typingsJapgolly.activexExcel.activexExcelInts.`36`
+  - typingsJapgolly.activexExcel.activexExcelInts.`379`
+  - typingsJapgolly.activexExcel.activexExcelInts.`723`
+  - typingsJapgolly.activexExcel.activexExcelInts.`40`
+  - typingsJapgolly.activexExcel.activexExcelInts.`525`
+  - typingsJapgolly.activexExcel.activexExcelInts.`61`
+  - typingsJapgolly.activexExcel.activexExcelInts.`229`
+  - typingsJapgolly.activexExcel.activexExcelInts.`111`
+  - typingsJapgolly.activexExcel.activexExcelInts.`110`
+  - typingsJapgolly.activexExcel.activexExcelInts.`203`
+  - typingsJapgolly.activexExcel.activexExcelInts.`27`
+  - typingsJapgolly.activexExcel.activexExcelInts.`862`
+  - typingsJapgolly.activexExcel.activexExcelInts.`438`
+  - typingsJapgolly.activexExcel.activexExcelInts.`223`
+  - typingsJapgolly.activexExcel.activexExcelInts.`54`
+  - typingsJapgolly.activexExcel.activexExcelInts.`251`
+  - typingsJapgolly.activexExcel.activexExcelInts.`228`
+  - typingsJapgolly.activexExcel.activexExcelInts.`463`
+  - typingsJapgolly.activexExcel.activexExcelInts.`464`
+  - typingsJapgolly.activexExcel.activexExcelInts.`732`
+  - typingsJapgolly.activexExcel.activexExcelInts.`709`
+  - typingsJapgolly.activexExcel.activexExcelInts.`530`
+  - typingsJapgolly.activexExcel.activexExcelInts.`35`
+  - typingsJapgolly.activexExcel.activexExcelInts.`6`
+  - typingsJapgolly.activexExcel.activexExcelInts.`481`
+  - typingsJapgolly.activexExcel.activexExcelInts.`200`
+  - typingsJapgolly.activexExcel.activexExcelInts.`301`
+  - typingsJapgolly.activexExcel.activexExcelInts.`447`
+  - typingsJapgolly.activexExcel.activexExcelInts.`370`
+  - typingsJapgolly.activexExcel.activexExcelInts.`475`
+  - typingsJapgolly.activexExcel.activexExcelInts.`26`
+  - typingsJapgolly.activexExcel.activexExcelInts.`381`
+  - typingsJapgolly.activexExcel.activexExcelInts.`269`
+  - typingsJapgolly.activexExcel.activexExcelInts.`465`
+  - typingsJapgolly.activexExcel.activexExcelInts.`423`
+  - typingsJapgolly.activexExcel.activexExcelInts.`150`
+  - typingsJapgolly.activexExcel.activexExcelInts.`88`
+  - typingsJapgolly.activexExcel.activexExcelInts.`225`
+  - typingsJapgolly.activexExcel.activexExcelInts.`128`
+  - typingsJapgolly.activexExcel.activexExcelInts.`42`
+  - typingsJapgolly.activexExcel.activexExcelInts.`226`
+  - typingsJapgolly.activexExcel.activexExcelInts.`129`
+  - typingsJapgolly.activexExcel.activexExcelInts.`89`
+  - typingsJapgolly.activexExcel.activexExcelInts.`64`
+  - typingsJapgolly.activexExcel.activexExcelInts.`63`
+  - typingsJapgolly.activexExcel.activexExcelInts.`130`
+  - typingsJapgolly.activexExcel.activexExcelInts.`450`
+  - typingsJapgolly.activexExcel.activexExcelInts.`193`
+  - typingsJapgolly.activexExcel.activexExcelInts.`272`
+  - typingsJapgolly.activexExcel.activexExcelInts.`194`
+  - typingsJapgolly.activexExcel.activexExcelInts.`195`
+  - typingsJapgolly.activexExcel.activexExcelInts.`196`
+  - typingsJapgolly.activexExcel.activexExcelInts.`273`
+  - typingsJapgolly.activexExcel.activexExcelInts.`67`
+  - typingsJapgolly.activexExcel.activexExcelInts.`68`
+  - typingsJapgolly.activexExcel.activexExcelInts.`69`
+  - typingsJapgolly.activexExcel.activexExcelInts.`388`
+  - typingsJapgolly.activexExcel.activexExcelInts.`344`
+  - typingsJapgolly.activexExcel.activexExcelInts.`70`
+  - typingsJapgolly.activexExcel.activexExcelInts.`71`
+  - typingsJapgolly.activexExcel.activexExcelInts.`249`
+  - typingsJapgolly.activexExcel.activexExcelInts.`72`
+  - typingsJapgolly.activexExcel.activexExcelInts.`198`
+  - typingsJapgolly.activexExcel.activexExcelInts.`76`
+  - typingsJapgolly.activexExcel.activexExcelInts.`666`
+  - typingsJapgolly.activexExcel.activexExcelInts.`55`
+  - typingsJapgolly.activexExcel.activexExcelInts.`596`
+  - typingsJapgolly.activexExcel.activexExcelInts.`496`
+  - typingsJapgolly.activexExcel.activexExcelInts.`259`
+  - typingsJapgolly.activexExcel.activexExcelInts.`342`
+  - typingsJapgolly.activexExcel.activexExcelInts.`380`
+  - typingsJapgolly.activexExcel.activexExcelInts.`436`
+  - typingsJapgolly.activexExcel.activexExcelInts.`437`
+  - typingsJapgolly.activexExcel.activexExcelInts.`382`
+  - typingsJapgolly.activexExcel.activexExcelInts.`470`
+  - typingsJapgolly.activexExcel.activexExcelInts.`339`
+  - typingsJapgolly.activexExcel.activexExcelInts.`378`
+  - typingsJapgolly.activexExcel.activexExcelInts.`85`
+  - typingsJapgolly.activexExcel.activexExcelInts.`185`
+  - typingsJapgolly.activexExcel.activexExcelInts.`322`
+  - typingsJapgolly.activexExcel.activexExcelInts.`262`
+  - typingsJapgolly.activexExcel.activexExcelInts.`834`
+  - typingsJapgolly.activexExcel.activexExcelInts.`977`
+  - typingsJapgolly.activexExcel.activexExcelInts.`119`
+  - typingsJapgolly.activexExcel.activexExcelInts.`978`
+  - typingsJapgolly.activexExcel.activexExcelInts.`667`
+  - typingsJapgolly.activexExcel.activexExcelInts.`154`
+  - typingsJapgolly.activexExcel.activexExcelInts.`207`
+  - typingsJapgolly.activexExcel.activexExcelInts.`214`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`188`
+  - typingsJapgolly.activexExcel.activexExcelInts.`441`
+  - typingsJapgolly.activexExcel.activexExcelInts.`318`
+  - typingsJapgolly.activexExcel.activexExcelInts.`325`
+  - typingsJapgolly.activexExcel.activexExcelInts.`319`
+  - typingsJapgolly.activexExcel.activexExcelInts.`356`
+  - typingsJapgolly.activexExcel.activexExcelInts.`458`
+  - typingsJapgolly.activexExcel.activexExcelInts.`647`
+  - typingsJapgolly.activexExcel.activexExcelInts.`355`
+  - typingsJapgolly.activexExcel.activexExcelInts.`320`
+  - typingsJapgolly.activexExcel.activexExcelInts.`142`
+  - typingsJapgolly.activexExcel.activexExcelInts.`86`
+  - typingsJapgolly.activexExcel.activexExcelInts.`186`
+  - typingsJapgolly.activexExcel.activexExcelInts.`7`
+  - typingsJapgolly.activexExcel.activexExcelInts.`91`
+  - typingsJapgolly.activexExcel.activexExcelInts.`58`
+  - typingsJapgolly.activexExcel.activexExcelInts.`53`
+  - typingsJapgolly.activexExcel.activexExcelInts.`84`
+  - typingsJapgolly.activexExcel.activexExcelInts.`832`
+  - typingsJapgolly.activexExcel.activexExcelInts.`656`
+  - typingsJapgolly.activexExcel.activexExcelInts.`570`
+  - typingsJapgolly.activexExcel.activexExcelInts.`572`
+  - typingsJapgolly.activexExcel.activexExcelInts.`689`
+  - typingsJapgolly.activexExcel.activexExcelInts.`433`
+  - typingsJapgolly.activexExcel.activexExcelInts.`313`
+  - typingsJapgolly.activexExcel.activexExcelInts.`434`
+  - typingsJapgolly.activexExcel.activexExcelInts.`421`
+  - typingsJapgolly.activexExcel.activexExcelInts.`568`
+  - typingsJapgolly.activexExcel.activexExcelInts.`567`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1183`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1153`
+  - typingsJapgolly.activexExcel.activexExcelInts.`312`
+  - typingsJapgolly.activexExcel.activexExcelInts.`300`
+  - typingsJapgolly.activexExcel.activexExcelInts.`8`
+  - typingsJapgolly.activexExcel.activexExcelInts.`9`
+  - typingsJapgolly.activexExcel.activexExcelInts.`222`
+  - typingsJapgolly.activexExcel.activexExcelInts.`202`
+  - typingsJapgolly.activexExcel.activexExcelInts.`474`
+  - typingsJapgolly.activexExcel.activexExcelInts.`754`
+  - typingsJapgolly.activexExcel.activexExcelInts.`28`
+  - typingsJapgolly.activexExcel.activexExcelInts.`620`
+  - typingsJapgolly.activexExcel.activexExcelInts.`653`
+  - typingsJapgolly.activexExcel.activexExcelInts.`445`
+  - typingsJapgolly.activexExcel.activexExcelInts.`134`
+  - typingsJapgolly.activexExcel.activexExcelInts.`336`
+  - typingsJapgolly.activexExcel.activexExcelInts.`127`
+  - typingsJapgolly.activexExcel.activexExcelInts.`17`
+  - typingsJapgolly.activexExcel.activexExcelInts.`5`
+  - typingsJapgolly.activexExcel.activexExcelInts.`456`
+  - typingsJapgolly.activexExcel.activexExcelInts.`208`
+  - typingsJapgolly.activexExcel.activexExcelInts.`145`
+  - typingsJapgolly.activexExcel.activexExcelInts.`285`
+  - typingsJapgolly.activexExcel.activexExcelInts.`87`
+  - typingsJapgolly.activexExcel.activexExcelInts.`307`
+  - typingsJapgolly.activexExcel.activexExcelInts.`305`
+  - typingsJapgolly.activexExcel.activexExcelInts.`308`
+  - typingsJapgolly.activexExcel.activexExcelInts.`473`
+  - typingsJapgolly.activexExcel.activexExcelInts.`311`
+  - typingsJapgolly.activexExcel.activexExcelInts.`420`
+  - typingsJapgolly.activexExcel.activexExcelInts.`731`
+  - typingsJapgolly.activexExcel.activexExcelInts.`132`
+  - typingsJapgolly.activexExcel.activexExcelInts.`189`
+  - typingsJapgolly.activexExcel.activexExcelInts.`460`
+  - typingsJapgolly.activexExcel.activexExcelInts.`557`
+  - typingsJapgolly.activexExcel.activexExcelInts.`466`
+  - typingsJapgolly.activexExcel.activexExcelInts.`504`
+  - typingsJapgolly.activexExcel.activexExcelInts.`461`
+  - typingsJapgolly.activexExcel.activexExcelInts.`462`
+  - typingsJapgolly.activexExcel.activexExcelInts.`509`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1109`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1208`
+  - typingsJapgolly.activexExcel.activexExcelInts.`23`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1108`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1107`
+  - typingsJapgolly.activexExcel.activexExcelInts.`159`
+  - typingsJapgolly.activexExcel.activexExcelInts.`204`
+  - typingsJapgolly.activexExcel.activexExcelInts.`220`
+  - typingsJapgolly.activexExcel.activexExcelInts.`261`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1182`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1184`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1179`
+  - typingsJapgolly.activexExcel.activexExcelInts.`39`
+  - typingsJapgolly.activexExcel.activexExcelInts.`192`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1134`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1133`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1135`
+  - typingsJapgolly.activexExcel.activexExcelInts.`137`
+  - typingsJapgolly.activexExcel.activexExcelInts.`190`
+  - typingsJapgolly.activexExcel.activexExcelInts.`472`
+  - typingsJapgolly.activexExcel.activexExcelInts.`44`
+  - typingsJapgolly.activexExcel.activexExcelInts.`218`
+  - typingsJapgolly.activexExcel.activexExcelInts.`398`
+  - typingsJapgolly.activexExcel.activexExcelInts.`41`
+  - typingsJapgolly.activexExcel.activexExcelInts.`394`
+  - typingsJapgolly.activexExcel.activexExcelInts.`422`
+  - typingsJapgolly.activexExcel.activexExcelInts.`94`
+  - typingsJapgolly.activexExcel.activexExcelInts.`201`
+  - typingsJapgolly.activexExcel.activexExcelInts.`328`
+  - typingsJapgolly.activexExcel.activexExcelInts.`478`
+  - typingsJapgolly.activexExcel.activexExcelInts.`330`
+  - typingsJapgolly.activexExcel.activexExcelInts.`197`
+  - typingsJapgolly.activexExcel.activexExcelInts.`773`
+  - typingsJapgolly.activexExcel.activexExcelInts.`686`
+  - typingsJapgolly.activexExcel.activexExcelInts.`684`
+  - typingsJapgolly.activexExcel.activexExcelInts.`687`
+  - typingsJapgolly.activexExcel.activexExcelInts.`683`
+  - typingsJapgolly.activexExcel.activexExcelInts.`685`
+  - typingsJapgolly.activexExcel.activexExcelInts.`14`
+  - typingsJapgolly.activexExcel.activexExcelInts.`13`
+  - typingsJapgolly.activexExcel.activexExcelInts.`281`
+  - typingsJapgolly.activexExcel.activexExcelInts.`283`
+  - typingsJapgolly.activexExcel.activexExcelInts.`354`
+  - typingsJapgolly.activexExcel.activexExcelInts.`282`
+  - typingsJapgolly.activexExcel.activexExcelInts.`386`
+  - typingsJapgolly.activexExcel.activexExcelInts.`302`
+  - typingsJapgolly.activexExcel.activexExcelInts.`284`
+  - typingsJapgolly.activexExcel.activexExcelInts.`417`
+  - typingsJapgolly.activexExcel.activexExcelInts.`415`
+  - typingsJapgolly.activexExcel.activexExcelInts.`384`
+  - typingsJapgolly.activexExcel.activexExcelInts.`199`
+  - typingsJapgolly.activexExcel.activexExcelInts.`95`
+  - typingsJapgolly.activexExcel.activexExcelInts.`256`
 */
-trait XlBuiltInDialog extends js.Object
-
+trait XlBuiltInDialog extends StObject
 object XlBuiltInDialog {
-  @scala.inline
-  def _xlDialogChartSourceData: `541` = this.cast(541)
-  @scala.inline
-  def _xlDialogPhonetic: `538` = this.cast(538)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlDialogActivate: `103` = this.cast(103)
-  @scala.inline
-  def xlDialogActiveCellFont: `476` = this.cast(476)
-  @scala.inline
-  def xlDialogAddChartAutoformat: `390` = this.cast(390)
-  @scala.inline
-  def xlDialogAddinManager: `321` = this.cast(321)
-  @scala.inline
-  def xlDialogAlignment: `43` = this.cast(43)
-  @scala.inline
-  def xlDialogAppMove: `170` = this.cast(170)
-  @scala.inline
-  def xlDialogAppSize: `171` = this.cast(171)
-  @scala.inline
-  def xlDialogApplyNames: `133` = this.cast(133)
-  @scala.inline
-  def xlDialogApplyStyle: `212` = this.cast(212)
-  @scala.inline
-  def xlDialogArrangeAll: `12` = this.cast(12)
-  @scala.inline
-  def xlDialogAssignToObject: `213` = this.cast(213)
-  @scala.inline
-  def xlDialogAssignToTool: `293` = this.cast(293)
-  @scala.inline
-  def xlDialogAttachText: `80` = this.cast(80)
-  @scala.inline
-  def xlDialogAttachToolbars: `323` = this.cast(323)
-  @scala.inline
-  def xlDialogAutoCorrect: `485` = this.cast(485)
-  @scala.inline
-  def xlDialogAxes: `78` = this.cast(78)
-  @scala.inline
-  def xlDialogBorder: `45` = this.cast(45)
-  @scala.inline
-  def xlDialogCalculation: `32` = this.cast(32)
-  @scala.inline
-  def xlDialogCellProtection: `46` = this.cast(46)
-  @scala.inline
-  def xlDialogChangeLink: `166` = this.cast(166)
-  @scala.inline
-  def xlDialogChartAddData: `392` = this.cast(392)
-  @scala.inline
-  def xlDialogChartLocation: `527` = this.cast(527)
-  @scala.inline
-  def xlDialogChartOptionsDataLabelMultiple: `724` = this.cast(724)
-  @scala.inline
-  def xlDialogChartOptionsDataLabels: `505` = this.cast(505)
-  @scala.inline
-  def xlDialogChartOptionsDataTable: `506` = this.cast(506)
-  @scala.inline
-  def xlDialogChartSourceData: `540` = this.cast(540)
-  @scala.inline
-  def xlDialogChartTrend: `350` = this.cast(350)
-  @scala.inline
-  def xlDialogChartType: `526` = this.cast(526)
-  @scala.inline
-  def xlDialogChartWizard: `288` = this.cast(288)
-  @scala.inline
-  def xlDialogCheckboxProperties: `435` = this.cast(435)
-  @scala.inline
-  def xlDialogClear: `52` = this.cast(52)
-  @scala.inline
-  def xlDialogColorPalette: `161` = this.cast(161)
-  @scala.inline
-  def xlDialogColumnWidth: `47` = this.cast(47)
-  @scala.inline
-  def xlDialogCombination: `73` = this.cast(73)
-  @scala.inline
-  def xlDialogConditionalFormatting: `583` = this.cast(583)
-  @scala.inline
-  def xlDialogConsolidate: `191` = this.cast(191)
-  @scala.inline
-  def xlDialogCopyChart: `147` = this.cast(147)
-  @scala.inline
-  def xlDialogCopyPicture: `108` = this.cast(108)
-  @scala.inline
-  def xlDialogCreateList: `796` = this.cast(796)
-  @scala.inline
-  def xlDialogCreateNames: `62` = this.cast(62)
-  @scala.inline
-  def xlDialogCreatePublisher: `217` = this.cast(217)
-  @scala.inline
-  def xlDialogCustomViews: `493` = this.cast(493)
-  @scala.inline
-  def xlDialogCustomizeToolbar: `276` = this.cast(276)
-  @scala.inline
-  def xlDialogDataDelete: `36` = this.cast(36)
-  @scala.inline
-  def xlDialogDataLabel: `379` = this.cast(379)
-  @scala.inline
-  def xlDialogDataLabelMultiple: `723` = this.cast(723)
-  @scala.inline
-  def xlDialogDataSeries: `40` = this.cast(40)
-  @scala.inline
-  def xlDialogDataValidation: `525` = this.cast(525)
-  @scala.inline
-  def xlDialogDefineName: `61` = this.cast(61)
-  @scala.inline
-  def xlDialogDefineStyle: `229` = this.cast(229)
-  @scala.inline
-  def xlDialogDeleteFormat: `111` = this.cast(111)
-  @scala.inline
-  def xlDialogDeleteName: `110` = this.cast(110)
-  @scala.inline
-  def xlDialogDemote: `203` = this.cast(203)
-  @scala.inline
-  def xlDialogDisplay: `27` = this.cast(27)
-  @scala.inline
-  def xlDialogDocumentInspector: `862` = this.cast(862)
-  @scala.inline
-  def xlDialogEditColor: `223` = this.cast(223)
-  @scala.inline
-  def xlDialogEditDelete: `54` = this.cast(54)
-  @scala.inline
-  def xlDialogEditSeries: `228` = this.cast(228)
-  @scala.inline
-  def xlDialogEditboxProperties: `438` = this.cast(438)
-  @scala.inline
-  def xlDialogEditionOptions: `251` = this.cast(251)
-  @scala.inline
-  def xlDialogErrorChecking: `732` = this.cast(732)
-  @scala.inline
-  def xlDialogErrorbarX: `463` = this.cast(463)
-  @scala.inline
-  def xlDialogErrorbarY: `464` = this.cast(464)
-  @scala.inline
-  def xlDialogEvaluateFormula: `709` = this.cast(709)
-  @scala.inline
-  def xlDialogExternalDataProperties: `530` = this.cast(530)
-  @scala.inline
-  def xlDialogExtract: `35` = this.cast(35)
-  @scala.inline
-  def xlDialogFileDelete: `6` = this.cast(6)
-  @scala.inline
-  def xlDialogFileSharing: `481` = this.cast(481)
-  @scala.inline
-  def xlDialogFillGroup: `200` = this.cast(200)
-  @scala.inline
-  def xlDialogFillWorkgroup: `301` = this.cast(301)
-  @scala.inline
-  def xlDialogFilter: `447` = this.cast(447)
-  @scala.inline
-  def xlDialogFilterAdvanced: `370` = this.cast(370)
-  @scala.inline
-  def xlDialogFindFile: `475` = this.cast(475)
-  @scala.inline
-  def xlDialogFont: `26` = this.cast(26)
-  @scala.inline
-  def xlDialogFontProperties: `381` = this.cast(381)
-  @scala.inline
-  def xlDialogFormatAuto: `269` = this.cast(269)
-  @scala.inline
-  def xlDialogFormatChart: `465` = this.cast(465)
-  @scala.inline
-  def xlDialogFormatCharttype: `423` = this.cast(423)
-  @scala.inline
-  def xlDialogFormatFont: `150` = this.cast(150)
-  @scala.inline
-  def xlDialogFormatLegend: `88` = this.cast(88)
-  @scala.inline
-  def xlDialogFormatMain: `225` = this.cast(225)
-  @scala.inline
-  def xlDialogFormatMove: `128` = this.cast(128)
-  @scala.inline
-  def xlDialogFormatNumber: `42` = this.cast(42)
-  @scala.inline
-  def xlDialogFormatOverlay: `226` = this.cast(226)
-  @scala.inline
-  def xlDialogFormatSize: `129` = this.cast(129)
-  @scala.inline
-  def xlDialogFormatText: `89` = this.cast(89)
-  @scala.inline
-  def xlDialogFormulaFind: `64` = this.cast(64)
-  @scala.inline
-  def xlDialogFormulaGoto: `63` = this.cast(63)
-  @scala.inline
-  def xlDialogFormulaReplace: `130` = this.cast(130)
-  @scala.inline
-  def xlDialogFunctionWizard: `450` = this.cast(450)
-  @scala.inline
-  def xlDialogGallery3dArea: `193` = this.cast(193)
-  @scala.inline
-  def xlDialogGallery3dBar: `272` = this.cast(272)
-  @scala.inline
-  def xlDialogGallery3dColumn: `194` = this.cast(194)
-  @scala.inline
-  def xlDialogGallery3dLine: `195` = this.cast(195)
-  @scala.inline
-  def xlDialogGallery3dPie: `196` = this.cast(196)
-  @scala.inline
-  def xlDialogGallery3dSurface: `273` = this.cast(273)
-  @scala.inline
-  def xlDialogGalleryArea: `67` = this.cast(67)
-  @scala.inline
-  def xlDialogGalleryBar: `68` = this.cast(68)
-  @scala.inline
-  def xlDialogGalleryColumn: `69` = this.cast(69)
-  @scala.inline
-  def xlDialogGalleryCustom: `388` = this.cast(388)
-  @scala.inline
-  def xlDialogGalleryDoughnut: `344` = this.cast(344)
-  @scala.inline
-  def xlDialogGalleryLine: `70` = this.cast(70)
-  @scala.inline
-  def xlDialogGalleryPie: `71` = this.cast(71)
-  @scala.inline
-  def xlDialogGalleryRadar: `249` = this.cast(249)
-  @scala.inline
-  def xlDialogGalleryScatter: `72` = this.cast(72)
-  @scala.inline
-  def xlDialogGoalSeek: `198` = this.cast(198)
-  @scala.inline
-  def xlDialogGridlines: `76` = this.cast(76)
-  @scala.inline
-  def xlDialogImportTextFile: `666` = this.cast(666)
-  @scala.inline
-  def xlDialogInsert: `55` = this.cast(55)
-  @scala.inline
-  def xlDialogInsertHyperlink: `596` = this.cast(596)
-  @scala.inline
-  def xlDialogInsertNameLabel: `496` = this.cast(496)
-  @scala.inline
-  def xlDialogInsertObject: `259` = this.cast(259)
-  @scala.inline
-  def xlDialogInsertPicture: `342` = this.cast(342)
-  @scala.inline
-  def xlDialogInsertTitle: `380` = this.cast(380)
-  @scala.inline
-  def xlDialogLabelProperties: `436` = this.cast(436)
-  @scala.inline
-  def xlDialogListboxProperties: `437` = this.cast(437)
-  @scala.inline
-  def xlDialogMacroOptions: `382` = this.cast(382)
-  @scala.inline
-  def xlDialogMailEditMailer: `470` = this.cast(470)
-  @scala.inline
-  def xlDialogMailLogon: `339` = this.cast(339)
-  @scala.inline
-  def xlDialogMailNextLetter: `378` = this.cast(378)
-  @scala.inline
-  def xlDialogMainChart: `85` = this.cast(85)
-  @scala.inline
-  def xlDialogMainChartType: `185` = this.cast(185)
-  @scala.inline
-  def xlDialogMenuEditor: `322` = this.cast(322)
-  @scala.inline
-  def xlDialogMove: `262` = this.cast(262)
-  @scala.inline
-  def xlDialogMyPermission: `834` = this.cast(834)
-  @scala.inline
-  def xlDialogNameManager: `977` = this.cast(977)
-  @scala.inline
-  def xlDialogNew: `119` = this.cast(119)
-  @scala.inline
-  def xlDialogNewName: `978` = this.cast(978)
-  @scala.inline
-  def xlDialogNewWebQuery: `667` = this.cast(667)
-  @scala.inline
-  def xlDialogNote: `154` = this.cast(154)
-  @scala.inline
-  def xlDialogObjectProperties: `207` = this.cast(207)
-  @scala.inline
-  def xlDialogObjectProtection: `214` = this.cast(214)
-  @scala.inline
-  def xlDialogOpen: `1` = this.cast(1)
-  @scala.inline
-  def xlDialogOpenLinks: `2` = this.cast(2)
-  @scala.inline
-  def xlDialogOpenMail: `188` = this.cast(188)
-  @scala.inline
-  def xlDialogOpenText: `441` = this.cast(441)
-  @scala.inline
-  def xlDialogOptionsCalculation: `318` = this.cast(318)
-  @scala.inline
-  def xlDialogOptionsChart: `325` = this.cast(325)
-  @scala.inline
-  def xlDialogOptionsEdit: `319` = this.cast(319)
-  @scala.inline
-  def xlDialogOptionsGeneral: `356` = this.cast(356)
-  @scala.inline
-  def xlDialogOptionsListsAdd: `458` = this.cast(458)
-  @scala.inline
-  def xlDialogOptionsME: `647` = this.cast(647)
-  @scala.inline
-  def xlDialogOptionsTransition: `355` = this.cast(355)
-  @scala.inline
-  def xlDialogOptionsView: `320` = this.cast(320)
-  @scala.inline
-  def xlDialogOutline: `142` = this.cast(142)
-  @scala.inline
-  def xlDialogOverlay: `86` = this.cast(86)
-  @scala.inline
-  def xlDialogOverlayChartType: `186` = this.cast(186)
-  @scala.inline
-  def xlDialogPageSetup: `7` = this.cast(7)
-  @scala.inline
-  def xlDialogParse: `91` = this.cast(91)
-  @scala.inline
-  def xlDialogPasteNames: `58` = this.cast(58)
-  @scala.inline
-  def xlDialogPasteSpecial: `53` = this.cast(53)
-  @scala.inline
-  def xlDialogPatterns: `84` = this.cast(84)
-  @scala.inline
-  def xlDialogPermission: `832` = this.cast(832)
-  @scala.inline
-  def xlDialogPhonetic: `656` = this.cast(656)
-  @scala.inline
-  def xlDialogPivotCalculatedField: `570` = this.cast(570)
-  @scala.inline
-  def xlDialogPivotCalculatedItem: `572` = this.cast(572)
-  @scala.inline
-  def xlDialogPivotClientServerSet: `689` = this.cast(689)
-  @scala.inline
-  def xlDialogPivotFieldGroup: `433` = this.cast(433)
-  @scala.inline
-  def xlDialogPivotFieldProperties: `313` = this.cast(313)
-  @scala.inline
-  def xlDialogPivotFieldUngroup: `434` = this.cast(434)
-  @scala.inline
-  def xlDialogPivotShowPages: `421` = this.cast(421)
-  @scala.inline
-  def xlDialogPivotSolveOrder: `568` = this.cast(568)
-  @scala.inline
-  def xlDialogPivotTableOptions: `567` = this.cast(567)
-  @scala.inline
-  def xlDialogPivotTableSlicerConnections: `1183` = this.cast(1183)
-  @scala.inline
-  def xlDialogPivotTableWhatIfAnalysisSettings: `1153` = this.cast(1153)
-  @scala.inline
-  def xlDialogPivotTableWizard: `312` = this.cast(312)
-  @scala.inline
-  def xlDialogPlacement: `300` = this.cast(300)
-  @scala.inline
-  def xlDialogPrint: `8` = this.cast(8)
-  @scala.inline
-  def xlDialogPrintPreview: `222` = this.cast(222)
-  @scala.inline
-  def xlDialogPrinterSetup: `9` = this.cast(9)
-  @scala.inline
-  def xlDialogPromote: `202` = this.cast(202)
-  @scala.inline
-  def xlDialogProperties: `474` = this.cast(474)
-  @scala.inline
-  def xlDialogPropertyFields: `754` = this.cast(754)
-  @scala.inline
-  def xlDialogProtectDocument: `28` = this.cast(28)
-  @scala.inline
-  def xlDialogProtectSharing: `620` = this.cast(620)
-  @scala.inline
-  def xlDialogPublishAsWebPage: `653` = this.cast(653)
-  @scala.inline
-  def xlDialogPushbuttonProperties: `445` = this.cast(445)
-  @scala.inline
-  def xlDialogReplaceFont: `134` = this.cast(134)
-  @scala.inline
-  def xlDialogRoutingSlip: `336` = this.cast(336)
-  @scala.inline
-  def xlDialogRowHeight: `127` = this.cast(127)
-  @scala.inline
-  def xlDialogRun: `17` = this.cast(17)
-  @scala.inline
-  def xlDialogSaveAs: `5` = this.cast(5)
-  @scala.inline
-  def xlDialogSaveCopyAs: `456` = this.cast(456)
-  @scala.inline
-  def xlDialogSaveNewObject: `208` = this.cast(208)
-  @scala.inline
-  def xlDialogSaveWorkbook: `145` = this.cast(145)
-  @scala.inline
-  def xlDialogSaveWorkspace: `285` = this.cast(285)
-  @scala.inline
-  def xlDialogScale: `87` = this.cast(87)
-  @scala.inline
-  def xlDialogScenarioAdd: `307` = this.cast(307)
-  @scala.inline
-  def xlDialogScenarioCells: `305` = this.cast(305)
-  @scala.inline
-  def xlDialogScenarioEdit: `308` = this.cast(308)
-  @scala.inline
-  def xlDialogScenarioMerge: `473` = this.cast(473)
-  @scala.inline
-  def xlDialogScenarioSummary: `311` = this.cast(311)
-  @scala.inline
-  def xlDialogScrollbarProperties: `420` = this.cast(420)
-  @scala.inline
-  def xlDialogSearch: `731` = this.cast(731)
-  @scala.inline
-  def xlDialogSelectSpecial: `132` = this.cast(132)
-  @scala.inline
-  def xlDialogSendMail: `189` = this.cast(189)
-  @scala.inline
-  def xlDialogSeriesAxes: `460` = this.cast(460)
-  @scala.inline
-  def xlDialogSeriesOptions: `557` = this.cast(557)
-  @scala.inline
-  def xlDialogSeriesOrder: `466` = this.cast(466)
-  @scala.inline
-  def xlDialogSeriesShape: `504` = this.cast(504)
-  @scala.inline
-  def xlDialogSeriesX: `461` = this.cast(461)
-  @scala.inline
-  def xlDialogSeriesY: `462` = this.cast(462)
-  @scala.inline
-  def xlDialogSetBackgroundPicture: `509` = this.cast(509)
-  @scala.inline
-  def xlDialogSetMDXEditor: `1208` = this.cast(1208)
-  @scala.inline
-  def xlDialogSetManager: `1109` = this.cast(1109)
-  @scala.inline
-  def xlDialogSetPrintTitles: `23` = this.cast(23)
-  @scala.inline
-  def xlDialogSetTupleEditorOnColumns: `1108` = this.cast(1108)
-  @scala.inline
-  def xlDialogSetTupleEditorOnRows: `1107` = this.cast(1107)
-  @scala.inline
-  def xlDialogSetUpdateStatus: `159` = this.cast(159)
-  @scala.inline
-  def xlDialogShowDetail: `204` = this.cast(204)
-  @scala.inline
-  def xlDialogShowToolbar: `220` = this.cast(220)
-  @scala.inline
-  def xlDialogSize: `261` = this.cast(261)
-  @scala.inline
-  def xlDialogSlicerCreation: `1182` = this.cast(1182)
-  @scala.inline
-  def xlDialogSlicerPivotTableConnections: `1184` = this.cast(1184)
-  @scala.inline
-  def xlDialogSlicerSettings: `1179` = this.cast(1179)
-  @scala.inline
-  def xlDialogSort: `39` = this.cast(39)
-  @scala.inline
-  def xlDialogSortSpecial: `192` = this.cast(192)
-  @scala.inline
-  def xlDialogSparklineInsertColumn: `1134` = this.cast(1134)
-  @scala.inline
-  def xlDialogSparklineInsertLine: `1133` = this.cast(1133)
-  @scala.inline
-  def xlDialogSparklineInsertWinLoss: `1135` = this.cast(1135)
-  @scala.inline
-  def xlDialogSplit: `137` = this.cast(137)
-  @scala.inline
-  def xlDialogStandardFont: `190` = this.cast(190)
-  @scala.inline
-  def xlDialogStandardWidth: `472` = this.cast(472)
-  @scala.inline
-  def xlDialogStyle: `44` = this.cast(44)
-  @scala.inline
-  def xlDialogSubscribeTo: `218` = this.cast(218)
-  @scala.inline
-  def xlDialogSubtotalCreate: `398` = this.cast(398)
-  @scala.inline
-  def xlDialogSummaryInfo: `474` = this.cast(474)
-  @scala.inline
-  def xlDialogTabOrder: `394` = this.cast(394)
-  @scala.inline
-  def xlDialogTable: `41` = this.cast(41)
-  @scala.inline
-  def xlDialogTextToColumns: `422` = this.cast(422)
-  @scala.inline
-  def xlDialogUnhide: `94` = this.cast(94)
-  @scala.inline
-  def xlDialogUpdateLink: `201` = this.cast(201)
-  @scala.inline
-  def xlDialogVbaInsertFile: `328` = this.cast(328)
-  @scala.inline
-  def xlDialogVbaMakeAddin: `478` = this.cast(478)
-  @scala.inline
-  def xlDialogVbaProcedureDefinition: `330` = this.cast(330)
-  @scala.inline
-  def xlDialogView3d: `197` = this.cast(197)
-  @scala.inline
-  def xlDialogWebOptionsBrowsers: `773` = this.cast(773)
-  @scala.inline
-  def xlDialogWebOptionsEncoding: `686` = this.cast(686)
-  @scala.inline
-  def xlDialogWebOptionsFiles: `684` = this.cast(684)
-  @scala.inline
-  def xlDialogWebOptionsFonts: `687` = this.cast(687)
-  @scala.inline
-  def xlDialogWebOptionsGeneral: `683` = this.cast(683)
-  @scala.inline
-  def xlDialogWebOptionsPictures: `685` = this.cast(685)
-  @scala.inline
-  def xlDialogWindowMove: `14` = this.cast(14)
-  @scala.inline
-  def xlDialogWindowSize: `13` = this.cast(13)
-  @scala.inline
-  def xlDialogWorkbookAdd: `281` = this.cast(281)
-  @scala.inline
-  def xlDialogWorkbookCopy: `283` = this.cast(283)
-  @scala.inline
-  def xlDialogWorkbookInsert: `354` = this.cast(354)
-  @scala.inline
-  def xlDialogWorkbookMove: `282` = this.cast(282)
-  @scala.inline
-  def xlDialogWorkbookName: `386` = this.cast(386)
-  @scala.inline
-  def xlDialogWorkbookNew: `302` = this.cast(302)
-  @scala.inline
-  def xlDialogWorkbookOptions: `284` = this.cast(284)
-  @scala.inline
-  def xlDialogWorkbookProtect: `417` = this.cast(417)
-  @scala.inline
-  def xlDialogWorkbookTabSplit: `415` = this.cast(415)
-  @scala.inline
-  def xlDialogWorkbookUnhide: `384` = this.cast(384)
-  @scala.inline
-  def xlDialogWorkgroup: `199` = this.cast(199)
-  @scala.inline
-  def xlDialogWorkspace: `95` = this.cast(95)
-  @scala.inline
-  def xlDialogZoom: `256` = this.cast(256)
+  
+  inline def _xlDialogChartSourceData: `541` = 541.asInstanceOf[`541`]
+  
+  inline def _xlDialogPhonetic: `538` = 538.asInstanceOf[`538`]
+  
+  inline def xlDialogActivate: `103` = 103.asInstanceOf[`103`]
+  
+  inline def xlDialogActiveCellFont: `476` = 476.asInstanceOf[`476`]
+  
+  inline def xlDialogAddChartAutoformat: `390` = 390.asInstanceOf[`390`]
+  
+  inline def xlDialogAddinManager: `321` = 321.asInstanceOf[`321`]
+  
+  inline def xlDialogAlignment: `43` = 43.asInstanceOf[`43`]
+  
+  inline def xlDialogAppMove: `170` = 170.asInstanceOf[`170`]
+  
+  inline def xlDialogAppSize: `171` = 171.asInstanceOf[`171`]
+  
+  inline def xlDialogApplyNames: `133` = 133.asInstanceOf[`133`]
+  
+  inline def xlDialogApplyStyle: `212` = 212.asInstanceOf[`212`]
+  
+  inline def xlDialogArrangeAll: `12` = 12.asInstanceOf[`12`]
+  
+  inline def xlDialogAssignToObject: `213` = 213.asInstanceOf[`213`]
+  
+  inline def xlDialogAssignToTool: `293` = 293.asInstanceOf[`293`]
+  
+  inline def xlDialogAttachText: `80` = 80.asInstanceOf[`80`]
+  
+  inline def xlDialogAttachToolbars: `323` = 323.asInstanceOf[`323`]
+  
+  inline def xlDialogAutoCorrect: `485` = 485.asInstanceOf[`485`]
+  
+  inline def xlDialogAxes: `78` = 78.asInstanceOf[`78`]
+  
+  inline def xlDialogBorder: `45` = 45.asInstanceOf[`45`]
+  
+  inline def xlDialogCalculation: `32` = 32.asInstanceOf[`32`]
+  
+  inline def xlDialogCellProtection: `46` = 46.asInstanceOf[`46`]
+  
+  inline def xlDialogChangeLink: `166` = 166.asInstanceOf[`166`]
+  
+  inline def xlDialogChartAddData: `392` = 392.asInstanceOf[`392`]
+  
+  inline def xlDialogChartLocation: `527` = 527.asInstanceOf[`527`]
+  
+  inline def xlDialogChartOptionsDataLabelMultiple: `724` = 724.asInstanceOf[`724`]
+  
+  inline def xlDialogChartOptionsDataLabels: `505` = 505.asInstanceOf[`505`]
+  
+  inline def xlDialogChartOptionsDataTable: `506` = 506.asInstanceOf[`506`]
+  
+  inline def xlDialogChartSourceData: `540` = 540.asInstanceOf[`540`]
+  
+  inline def xlDialogChartTrend: `350` = 350.asInstanceOf[`350`]
+  
+  inline def xlDialogChartType: `526` = 526.asInstanceOf[`526`]
+  
+  inline def xlDialogChartWizard: `288` = 288.asInstanceOf[`288`]
+  
+  inline def xlDialogCheckboxProperties: `435` = 435.asInstanceOf[`435`]
+  
+  inline def xlDialogClear: `52` = 52.asInstanceOf[`52`]
+  
+  inline def xlDialogColorPalette: `161` = 161.asInstanceOf[`161`]
+  
+  inline def xlDialogColumnWidth: `47` = 47.asInstanceOf[`47`]
+  
+  inline def xlDialogCombination: `73` = 73.asInstanceOf[`73`]
+  
+  inline def xlDialogConditionalFormatting: `583` = 583.asInstanceOf[`583`]
+  
+  inline def xlDialogConsolidate: `191` = 191.asInstanceOf[`191`]
+  
+  inline def xlDialogCopyChart: `147` = 147.asInstanceOf[`147`]
+  
+  inline def xlDialogCopyPicture: `108` = 108.asInstanceOf[`108`]
+  
+  inline def xlDialogCreateList: `796` = 796.asInstanceOf[`796`]
+  
+  inline def xlDialogCreateNames: `62` = 62.asInstanceOf[`62`]
+  
+  inline def xlDialogCreatePublisher: `217` = 217.asInstanceOf[`217`]
+  
+  inline def xlDialogCustomViews: `493` = 493.asInstanceOf[`493`]
+  
+  inline def xlDialogCustomizeToolbar: `276` = 276.asInstanceOf[`276`]
+  
+  inline def xlDialogDataDelete: `36` = 36.asInstanceOf[`36`]
+  
+  inline def xlDialogDataLabel: `379` = 379.asInstanceOf[`379`]
+  
+  inline def xlDialogDataLabelMultiple: `723` = 723.asInstanceOf[`723`]
+  
+  inline def xlDialogDataSeries: `40` = 40.asInstanceOf[`40`]
+  
+  inline def xlDialogDataValidation: `525` = 525.asInstanceOf[`525`]
+  
+  inline def xlDialogDefineName: `61` = 61.asInstanceOf[`61`]
+  
+  inline def xlDialogDefineStyle: `229` = 229.asInstanceOf[`229`]
+  
+  inline def xlDialogDeleteFormat: `111` = 111.asInstanceOf[`111`]
+  
+  inline def xlDialogDeleteName: `110` = 110.asInstanceOf[`110`]
+  
+  inline def xlDialogDemote: `203` = 203.asInstanceOf[`203`]
+  
+  inline def xlDialogDisplay: `27` = 27.asInstanceOf[`27`]
+  
+  inline def xlDialogDocumentInspector: `862` = 862.asInstanceOf[`862`]
+  
+  inline def xlDialogEditColor: `223` = 223.asInstanceOf[`223`]
+  
+  inline def xlDialogEditDelete: `54` = 54.asInstanceOf[`54`]
+  
+  inline def xlDialogEditSeries: `228` = 228.asInstanceOf[`228`]
+  
+  inline def xlDialogEditboxProperties: `438` = 438.asInstanceOf[`438`]
+  
+  inline def xlDialogEditionOptions: `251` = 251.asInstanceOf[`251`]
+  
+  inline def xlDialogErrorChecking: `732` = 732.asInstanceOf[`732`]
+  
+  inline def xlDialogErrorbarX: `463` = 463.asInstanceOf[`463`]
+  
+  inline def xlDialogErrorbarY: `464` = 464.asInstanceOf[`464`]
+  
+  inline def xlDialogEvaluateFormula: `709` = 709.asInstanceOf[`709`]
+  
+  inline def xlDialogExternalDataProperties: `530` = 530.asInstanceOf[`530`]
+  
+  inline def xlDialogExtract: `35` = 35.asInstanceOf[`35`]
+  
+  inline def xlDialogFileDelete: `6` = 6.asInstanceOf[`6`]
+  
+  inline def xlDialogFileSharing: `481` = 481.asInstanceOf[`481`]
+  
+  inline def xlDialogFillGroup: `200` = 200.asInstanceOf[`200`]
+  
+  inline def xlDialogFillWorkgroup: `301` = 301.asInstanceOf[`301`]
+  
+  inline def xlDialogFilter: `447` = 447.asInstanceOf[`447`]
+  
+  inline def xlDialogFilterAdvanced: `370` = 370.asInstanceOf[`370`]
+  
+  inline def xlDialogFindFile: `475` = 475.asInstanceOf[`475`]
+  
+  inline def xlDialogFont: `26` = 26.asInstanceOf[`26`]
+  
+  inline def xlDialogFontProperties: `381` = 381.asInstanceOf[`381`]
+  
+  inline def xlDialogFormatAuto: `269` = 269.asInstanceOf[`269`]
+  
+  inline def xlDialogFormatChart: `465` = 465.asInstanceOf[`465`]
+  
+  inline def xlDialogFormatCharttype: `423` = 423.asInstanceOf[`423`]
+  
+  inline def xlDialogFormatFont: `150` = 150.asInstanceOf[`150`]
+  
+  inline def xlDialogFormatLegend: `88` = 88.asInstanceOf[`88`]
+  
+  inline def xlDialogFormatMain: `225` = 225.asInstanceOf[`225`]
+  
+  inline def xlDialogFormatMove: `128` = 128.asInstanceOf[`128`]
+  
+  inline def xlDialogFormatNumber: `42` = 42.asInstanceOf[`42`]
+  
+  inline def xlDialogFormatOverlay: `226` = 226.asInstanceOf[`226`]
+  
+  inline def xlDialogFormatSize: `129` = 129.asInstanceOf[`129`]
+  
+  inline def xlDialogFormatText: `89` = 89.asInstanceOf[`89`]
+  
+  inline def xlDialogFormulaFind: `64` = 64.asInstanceOf[`64`]
+  
+  inline def xlDialogFormulaGoto: `63` = 63.asInstanceOf[`63`]
+  
+  inline def xlDialogFormulaReplace: `130` = 130.asInstanceOf[`130`]
+  
+  inline def xlDialogFunctionWizard: `450` = 450.asInstanceOf[`450`]
+  
+  inline def xlDialogGallery3dArea: `193` = 193.asInstanceOf[`193`]
+  
+  inline def xlDialogGallery3dBar: `272` = 272.asInstanceOf[`272`]
+  
+  inline def xlDialogGallery3dColumn: `194` = 194.asInstanceOf[`194`]
+  
+  inline def xlDialogGallery3dLine: `195` = 195.asInstanceOf[`195`]
+  
+  inline def xlDialogGallery3dPie: `196` = 196.asInstanceOf[`196`]
+  
+  inline def xlDialogGallery3dSurface: `273` = 273.asInstanceOf[`273`]
+  
+  inline def xlDialogGalleryArea: `67` = 67.asInstanceOf[`67`]
+  
+  inline def xlDialogGalleryBar: `68` = 68.asInstanceOf[`68`]
+  
+  inline def xlDialogGalleryColumn: `69` = 69.asInstanceOf[`69`]
+  
+  inline def xlDialogGalleryCustom: `388` = 388.asInstanceOf[`388`]
+  
+  inline def xlDialogGalleryDoughnut: `344` = 344.asInstanceOf[`344`]
+  
+  inline def xlDialogGalleryLine: `70` = 70.asInstanceOf[`70`]
+  
+  inline def xlDialogGalleryPie: `71` = 71.asInstanceOf[`71`]
+  
+  inline def xlDialogGalleryRadar: `249` = 249.asInstanceOf[`249`]
+  
+  inline def xlDialogGalleryScatter: `72` = 72.asInstanceOf[`72`]
+  
+  inline def xlDialogGoalSeek: `198` = 198.asInstanceOf[`198`]
+  
+  inline def xlDialogGridlines: `76` = 76.asInstanceOf[`76`]
+  
+  inline def xlDialogImportTextFile: `666` = 666.asInstanceOf[`666`]
+  
+  inline def xlDialogInsert: `55` = 55.asInstanceOf[`55`]
+  
+  inline def xlDialogInsertHyperlink: `596` = 596.asInstanceOf[`596`]
+  
+  inline def xlDialogInsertNameLabel: `496` = 496.asInstanceOf[`496`]
+  
+  inline def xlDialogInsertObject: `259` = 259.asInstanceOf[`259`]
+  
+  inline def xlDialogInsertPicture: `342` = 342.asInstanceOf[`342`]
+  
+  inline def xlDialogInsertTitle: `380` = 380.asInstanceOf[`380`]
+  
+  inline def xlDialogLabelProperties: `436` = 436.asInstanceOf[`436`]
+  
+  inline def xlDialogListboxProperties: `437` = 437.asInstanceOf[`437`]
+  
+  inline def xlDialogMacroOptions: `382` = 382.asInstanceOf[`382`]
+  
+  inline def xlDialogMailEditMailer: `470` = 470.asInstanceOf[`470`]
+  
+  inline def xlDialogMailLogon: `339` = 339.asInstanceOf[`339`]
+  
+  inline def xlDialogMailNextLetter: `378` = 378.asInstanceOf[`378`]
+  
+  inline def xlDialogMainChart: `85` = 85.asInstanceOf[`85`]
+  
+  inline def xlDialogMainChartType: `185` = 185.asInstanceOf[`185`]
+  
+  inline def xlDialogMenuEditor: `322` = 322.asInstanceOf[`322`]
+  
+  inline def xlDialogMove: `262` = 262.asInstanceOf[`262`]
+  
+  inline def xlDialogMyPermission: `834` = 834.asInstanceOf[`834`]
+  
+  inline def xlDialogNameManager: `977` = 977.asInstanceOf[`977`]
+  
+  inline def xlDialogNew: `119` = 119.asInstanceOf[`119`]
+  
+  inline def xlDialogNewName: `978` = 978.asInstanceOf[`978`]
+  
+  inline def xlDialogNewWebQuery: `667` = 667.asInstanceOf[`667`]
+  
+  inline def xlDialogNote: `154` = 154.asInstanceOf[`154`]
+  
+  inline def xlDialogObjectProperties: `207` = 207.asInstanceOf[`207`]
+  
+  inline def xlDialogObjectProtection: `214` = 214.asInstanceOf[`214`]
+  
+  inline def xlDialogOpen: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlDialogOpenLinks: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlDialogOpenMail: `188` = 188.asInstanceOf[`188`]
+  
+  inline def xlDialogOpenText: `441` = 441.asInstanceOf[`441`]
+  
+  inline def xlDialogOptionsCalculation: `318` = 318.asInstanceOf[`318`]
+  
+  inline def xlDialogOptionsChart: `325` = 325.asInstanceOf[`325`]
+  
+  inline def xlDialogOptionsEdit: `319` = 319.asInstanceOf[`319`]
+  
+  inline def xlDialogOptionsGeneral: `356` = 356.asInstanceOf[`356`]
+  
+  inline def xlDialogOptionsListsAdd: `458` = 458.asInstanceOf[`458`]
+  
+  inline def xlDialogOptionsME: `647` = 647.asInstanceOf[`647`]
+  
+  inline def xlDialogOptionsTransition: `355` = 355.asInstanceOf[`355`]
+  
+  inline def xlDialogOptionsView: `320` = 320.asInstanceOf[`320`]
+  
+  inline def xlDialogOutline: `142` = 142.asInstanceOf[`142`]
+  
+  inline def xlDialogOverlay: `86` = 86.asInstanceOf[`86`]
+  
+  inline def xlDialogOverlayChartType: `186` = 186.asInstanceOf[`186`]
+  
+  inline def xlDialogPageSetup: `7` = 7.asInstanceOf[`7`]
+  
+  inline def xlDialogParse: `91` = 91.asInstanceOf[`91`]
+  
+  inline def xlDialogPasteNames: `58` = 58.asInstanceOf[`58`]
+  
+  inline def xlDialogPasteSpecial: `53` = 53.asInstanceOf[`53`]
+  
+  inline def xlDialogPatterns: `84` = 84.asInstanceOf[`84`]
+  
+  inline def xlDialogPermission: `832` = 832.asInstanceOf[`832`]
+  
+  inline def xlDialogPhonetic: `656` = 656.asInstanceOf[`656`]
+  
+  inline def xlDialogPivotCalculatedField: `570` = 570.asInstanceOf[`570`]
+  
+  inline def xlDialogPivotCalculatedItem: `572` = 572.asInstanceOf[`572`]
+  
+  inline def xlDialogPivotClientServerSet: `689` = 689.asInstanceOf[`689`]
+  
+  inline def xlDialogPivotFieldGroup: `433` = 433.asInstanceOf[`433`]
+  
+  inline def xlDialogPivotFieldProperties: `313` = 313.asInstanceOf[`313`]
+  
+  inline def xlDialogPivotFieldUngroup: `434` = 434.asInstanceOf[`434`]
+  
+  inline def xlDialogPivotShowPages: `421` = 421.asInstanceOf[`421`]
+  
+  inline def xlDialogPivotSolveOrder: `568` = 568.asInstanceOf[`568`]
+  
+  inline def xlDialogPivotTableOptions: `567` = 567.asInstanceOf[`567`]
+  
+  inline def xlDialogPivotTableSlicerConnections: `1183` = 1183.asInstanceOf[`1183`]
+  
+  inline def xlDialogPivotTableWhatIfAnalysisSettings: `1153` = 1153.asInstanceOf[`1153`]
+  
+  inline def xlDialogPivotTableWizard: `312` = 312.asInstanceOf[`312`]
+  
+  inline def xlDialogPlacement: `300` = 300.asInstanceOf[`300`]
+  
+  inline def xlDialogPrint: `8` = 8.asInstanceOf[`8`]
+  
+  inline def xlDialogPrintPreview: `222` = 222.asInstanceOf[`222`]
+  
+  inline def xlDialogPrinterSetup: `9` = 9.asInstanceOf[`9`]
+  
+  inline def xlDialogPromote: `202` = 202.asInstanceOf[`202`]
+  
+  inline def xlDialogProperties: `474` = 474.asInstanceOf[`474`]
+  
+  inline def xlDialogPropertyFields: `754` = 754.asInstanceOf[`754`]
+  
+  inline def xlDialogProtectDocument: `28` = 28.asInstanceOf[`28`]
+  
+  inline def xlDialogProtectSharing: `620` = 620.asInstanceOf[`620`]
+  
+  inline def xlDialogPublishAsWebPage: `653` = 653.asInstanceOf[`653`]
+  
+  inline def xlDialogPushbuttonProperties: `445` = 445.asInstanceOf[`445`]
+  
+  inline def xlDialogReplaceFont: `134` = 134.asInstanceOf[`134`]
+  
+  inline def xlDialogRoutingSlip: `336` = 336.asInstanceOf[`336`]
+  
+  inline def xlDialogRowHeight: `127` = 127.asInstanceOf[`127`]
+  
+  inline def xlDialogRun: `17` = 17.asInstanceOf[`17`]
+  
+  inline def xlDialogSaveAs: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlDialogSaveCopyAs: `456` = 456.asInstanceOf[`456`]
+  
+  inline def xlDialogSaveNewObject: `208` = 208.asInstanceOf[`208`]
+  
+  inline def xlDialogSaveWorkbook: `145` = 145.asInstanceOf[`145`]
+  
+  inline def xlDialogSaveWorkspace: `285` = 285.asInstanceOf[`285`]
+  
+  inline def xlDialogScale: `87` = 87.asInstanceOf[`87`]
+  
+  inline def xlDialogScenarioAdd: `307` = 307.asInstanceOf[`307`]
+  
+  inline def xlDialogScenarioCells: `305` = 305.asInstanceOf[`305`]
+  
+  inline def xlDialogScenarioEdit: `308` = 308.asInstanceOf[`308`]
+  
+  inline def xlDialogScenarioMerge: `473` = 473.asInstanceOf[`473`]
+  
+  inline def xlDialogScenarioSummary: `311` = 311.asInstanceOf[`311`]
+  
+  inline def xlDialogScrollbarProperties: `420` = 420.asInstanceOf[`420`]
+  
+  inline def xlDialogSearch: `731` = 731.asInstanceOf[`731`]
+  
+  inline def xlDialogSelectSpecial: `132` = 132.asInstanceOf[`132`]
+  
+  inline def xlDialogSendMail: `189` = 189.asInstanceOf[`189`]
+  
+  inline def xlDialogSeriesAxes: `460` = 460.asInstanceOf[`460`]
+  
+  inline def xlDialogSeriesOptions: `557` = 557.asInstanceOf[`557`]
+  
+  inline def xlDialogSeriesOrder: `466` = 466.asInstanceOf[`466`]
+  
+  inline def xlDialogSeriesShape: `504` = 504.asInstanceOf[`504`]
+  
+  inline def xlDialogSeriesX: `461` = 461.asInstanceOf[`461`]
+  
+  inline def xlDialogSeriesY: `462` = 462.asInstanceOf[`462`]
+  
+  inline def xlDialogSetBackgroundPicture: `509` = 509.asInstanceOf[`509`]
+  
+  inline def xlDialogSetMDXEditor: `1208` = 1208.asInstanceOf[`1208`]
+  
+  inline def xlDialogSetManager: `1109` = 1109.asInstanceOf[`1109`]
+  
+  inline def xlDialogSetPrintTitles: `23` = 23.asInstanceOf[`23`]
+  
+  inline def xlDialogSetTupleEditorOnColumns: `1108` = 1108.asInstanceOf[`1108`]
+  
+  inline def xlDialogSetTupleEditorOnRows: `1107` = 1107.asInstanceOf[`1107`]
+  
+  inline def xlDialogSetUpdateStatus: `159` = 159.asInstanceOf[`159`]
+  
+  inline def xlDialogShowDetail: `204` = 204.asInstanceOf[`204`]
+  
+  inline def xlDialogShowToolbar: `220` = 220.asInstanceOf[`220`]
+  
+  inline def xlDialogSize: `261` = 261.asInstanceOf[`261`]
+  
+  inline def xlDialogSlicerCreation: `1182` = 1182.asInstanceOf[`1182`]
+  
+  inline def xlDialogSlicerPivotTableConnections: `1184` = 1184.asInstanceOf[`1184`]
+  
+  inline def xlDialogSlicerSettings: `1179` = 1179.asInstanceOf[`1179`]
+  
+  inline def xlDialogSort: `39` = 39.asInstanceOf[`39`]
+  
+  inline def xlDialogSortSpecial: `192` = 192.asInstanceOf[`192`]
+  
+  inline def xlDialogSparklineInsertColumn: `1134` = 1134.asInstanceOf[`1134`]
+  
+  inline def xlDialogSparklineInsertLine: `1133` = 1133.asInstanceOf[`1133`]
+  
+  inline def xlDialogSparklineInsertWinLoss: `1135` = 1135.asInstanceOf[`1135`]
+  
+  inline def xlDialogSplit: `137` = 137.asInstanceOf[`137`]
+  
+  inline def xlDialogStandardFont: `190` = 190.asInstanceOf[`190`]
+  
+  inline def xlDialogStandardWidth: `472` = 472.asInstanceOf[`472`]
+  
+  inline def xlDialogStyle: `44` = 44.asInstanceOf[`44`]
+  
+  inline def xlDialogSubscribeTo: `218` = 218.asInstanceOf[`218`]
+  
+  inline def xlDialogSubtotalCreate: `398` = 398.asInstanceOf[`398`]
+  
+  inline def xlDialogSummaryInfo: `474` = 474.asInstanceOf[`474`]
+  
+  inline def xlDialogTabOrder: `394` = 394.asInstanceOf[`394`]
+  
+  inline def xlDialogTable: `41` = 41.asInstanceOf[`41`]
+  
+  inline def xlDialogTextToColumns: `422` = 422.asInstanceOf[`422`]
+  
+  inline def xlDialogUnhide: `94` = 94.asInstanceOf[`94`]
+  
+  inline def xlDialogUpdateLink: `201` = 201.asInstanceOf[`201`]
+  
+  inline def xlDialogVbaInsertFile: `328` = 328.asInstanceOf[`328`]
+  
+  inline def xlDialogVbaMakeAddin: `478` = 478.asInstanceOf[`478`]
+  
+  inline def xlDialogVbaProcedureDefinition: `330` = 330.asInstanceOf[`330`]
+  
+  inline def xlDialogView3d: `197` = 197.asInstanceOf[`197`]
+  
+  inline def xlDialogWebOptionsBrowsers: `773` = 773.asInstanceOf[`773`]
+  
+  inline def xlDialogWebOptionsEncoding: `686` = 686.asInstanceOf[`686`]
+  
+  inline def xlDialogWebOptionsFiles: `684` = 684.asInstanceOf[`684`]
+  
+  inline def xlDialogWebOptionsFonts: `687` = 687.asInstanceOf[`687`]
+  
+  inline def xlDialogWebOptionsGeneral: `683` = 683.asInstanceOf[`683`]
+  
+  inline def xlDialogWebOptionsPictures: `685` = 685.asInstanceOf[`685`]
+  
+  inline def xlDialogWindowMove: `14` = 14.asInstanceOf[`14`]
+  
+  inline def xlDialogWindowSize: `13` = 13.asInstanceOf[`13`]
+  
+  inline def xlDialogWorkbookAdd: `281` = 281.asInstanceOf[`281`]
+  
+  inline def xlDialogWorkbookCopy: `283` = 283.asInstanceOf[`283`]
+  
+  inline def xlDialogWorkbookInsert: `354` = 354.asInstanceOf[`354`]
+  
+  inline def xlDialogWorkbookMove: `282` = 282.asInstanceOf[`282`]
+  
+  inline def xlDialogWorkbookName: `386` = 386.asInstanceOf[`386`]
+  
+  inline def xlDialogWorkbookNew: `302` = 302.asInstanceOf[`302`]
+  
+  inline def xlDialogWorkbookOptions: `284` = 284.asInstanceOf[`284`]
+  
+  inline def xlDialogWorkbookProtect: `417` = 417.asInstanceOf[`417`]
+  
+  inline def xlDialogWorkbookTabSplit: `415` = 415.asInstanceOf[`415`]
+  
+  inline def xlDialogWorkbookUnhide: `384` = 384.asInstanceOf[`384`]
+  
+  inline def xlDialogWorkgroup: `199` = 199.asInstanceOf[`199`]
+  
+  inline def xlDialogWorkspace: `95` = 95.asInstanceOf[`95`]
+  
+  inline def xlDialogZoom: `256` = 256.asInstanceOf[`256`]
 }
-

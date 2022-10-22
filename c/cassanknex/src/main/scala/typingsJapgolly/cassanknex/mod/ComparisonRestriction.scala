@@ -1,8 +1,8 @@
 package typingsJapgolly.cassanknex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.cassanknex.cassanknexStrings.Equalssign
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.cassanknex.cassanknexStrings.LessthansignEqualssign
   - typingsJapgolly.cassanknex.cassanknexStrings.GreaterthansignEqualssign
 */
-trait ComparisonRestriction extends js.Object
-
+trait ComparisonRestriction extends StObject
 object ComparisonRestriction {
-  @scala.inline
-  def Equalssign: typingsJapgolly.cassanknex.cassanknexStrings.Equalssign = this.cast("=")
-  @scala.inline
-  def Greaterthansign: typingsJapgolly.cassanknex.cassanknexStrings.Greaterthansign = this.cast(">")
-  @scala.inline
-  def GreaterthansignEqualssign: typingsJapgolly.cassanknex.cassanknexStrings.GreaterthansignEqualssign = this.cast(">=")
-  @scala.inline
-  def Lessthansign: typingsJapgolly.cassanknex.cassanknexStrings.Lessthansign = this.cast("<")
-  @scala.inline
-  def LessthansignEqualssign: typingsJapgolly.cassanknex.cassanknexStrings.LessthansignEqualssign = this.cast("<=")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Equalssign: typingsJapgolly.cassanknex.cassanknexStrings.Equalssign = "=".asInstanceOf[typingsJapgolly.cassanknex.cassanknexStrings.Equalssign]
+  
+  inline def Greaterthansign: typingsJapgolly.cassanknex.cassanknexStrings.Greaterthansign = ">".asInstanceOf[typingsJapgolly.cassanknex.cassanknexStrings.Greaterthansign]
+  
+  inline def GreaterthansignEqualssign: typingsJapgolly.cassanknex.cassanknexStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typingsJapgolly.cassanknex.cassanknexStrings.GreaterthansignEqualssign]
+  
+  inline def Lessthansign: typingsJapgolly.cassanknex.cassanknexStrings.Lessthansign = "<".asInstanceOf[typingsJapgolly.cassanknex.cassanknexStrings.Lessthansign]
+  
+  inline def LessthansignEqualssign: typingsJapgolly.cassanknex.cassanknexStrings.LessthansignEqualssign = "<=".asInstanceOf[typingsJapgolly.cassanknex.cassanknexStrings.LessthansignEqualssign]
 }
-

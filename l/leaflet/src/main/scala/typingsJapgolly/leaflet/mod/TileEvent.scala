@@ -1,29 +1,39 @@
 package typingsJapgolly.leaflet.mod
 
-import org.scalajs.dom.raw.HTMLImageElement
+import org.scalajs.dom.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TileEvent extends LeafletEvent {
-  var coords: Point_
+trait TileEvent
+  extends StObject
+     with LeafletEvent {
+  
+  var coords: Coords
+  
   var tile: HTMLImageElement
 }
-
 object TileEvent {
-  @scala.inline
-  def apply(
-    coords: Point_,
-    layer: js.Any,
-    propagatedFrom: js.Any,
-    sourceTarget: js.Any,
-    target: js.Any,
+  
+  inline def apply(
+    coords: Coords,
+    layer: Any,
+    popup: Any,
+    propagatedFrom: Any,
+    sourceTarget: Any,
+    target: Any,
     tile: HTMLImageElement,
     `type`: String
   ): TileEvent = {
-    val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], tile = tile.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], tile = tile.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileEvent]
   }
+  
+  extension [Self <: TileEvent](x: Self) {
+    
+    inline def setCoords(value: Coords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    
+    inline def setTile(value: HTMLImageElement): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+  }
 }
-

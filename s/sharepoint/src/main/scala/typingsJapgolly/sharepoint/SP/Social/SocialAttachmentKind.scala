@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocialAttachmentKind extends js.Object
-
+sealed trait SocialAttachmentKind extends StObject
 @JSGlobal("SP.Social.SocialAttachmentKind")
 @js.native
-object SocialAttachmentKind extends js.Object {
-  @js.native
-  sealed trait document extends SocialAttachmentKind
+object SocialAttachmentKind extends StObject {
   
   @js.native
-  sealed trait image extends SocialAttachmentKind
+  sealed trait document
+    extends StObject
+       with SocialAttachmentKind
   
   @js.native
-  sealed trait video extends SocialAttachmentKind
+  sealed trait image
+    extends StObject
+       with SocialAttachmentKind
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialAttachmentKind with Double] = js.native
-  /* 2 */ @js.native
-  object document extends TopLevel[document with Double]
-  
-  /* 0 */ @js.native
-  object image extends TopLevel[image with Double]
-  
-  /* 1 */ @js.native
-  object video extends TopLevel[video with Double]
-  
+  @js.native
+  sealed trait video
+    extends StObject
+       with SocialAttachmentKind
 }
-

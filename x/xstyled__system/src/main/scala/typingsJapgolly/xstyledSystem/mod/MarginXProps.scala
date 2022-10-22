@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.MarginLeftProperty
+import typingsJapgolly.csstype.mod.Property.MarginLeft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarginXProps[TLength] extends js.Object {
-  val mx: js.UndefOr[ResponsiveValue[MarginLeftProperty[TLength]]] = js.undefined
+trait MarginXProps[TLength] extends StObject {
+  
+  val mx: js.UndefOr[ResponsiveValue[MarginLeft[TLength]]] = js.undefined
 }
-
 object MarginXProps {
-  @scala.inline
-  def apply[TLength](mx: ResponsiveValue[MarginLeftProperty[TLength]] = null): MarginXProps[TLength] = {
+  
+  inline def apply[TLength](): MarginXProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (mx != null) __obj.updateDynamic("mx")(mx.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginXProps[TLength]]
   }
+  
+  extension [Self <: MarginXProps[?], TLength](x: Self & MarginXProps[TLength]) {
+    
+    inline def setMx(value: ResponsiveValue[MarginLeft[TLength]]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+    
+    inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
+    
+    inline def setMxVarargs(value: MarginLeft[TLength]*): Self = StObject.set(x, "mx", js.Array(value*))
+  }
 }
-

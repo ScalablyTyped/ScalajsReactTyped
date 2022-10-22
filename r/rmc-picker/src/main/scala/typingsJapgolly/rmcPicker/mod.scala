@@ -1,30 +1,30 @@
 package typingsJapgolly.rmcPicker
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import typingsJapgolly.rmcPicker.pickerMixinMod.IItemProps
-import typingsJapgolly.rmcPicker.pickerTypesMod.IPickerProps
+import typingsJapgolly.rmcPicker.anon.ComponentDidUpdate
+import typingsJapgolly.rmcPicker.libPickerMixinMod.IItemProps
+import typingsJapgolly.rmcPicker.libPickerTypesMod.IPickerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rmc-picker", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("rmc-picker", JSImport.Default)
   @js.native
-  class default () extends AnonComponentDidUpdate {
+  open class default ()
+    extends StObject
+       with ComponentDidUpdate {
     def this(props: IPickerProps) = this()
-    def this(props: IPickerProps, context: js.Any) = this()
+    def this(props: Unit, context: Any) = this()
+    def this(props: IPickerProps, context: Any) = this()
   }
-  
-  @js.native
-  object default
-    extends Instantiable0[AnonComponentDidUpdate]
-       with Instantiable1[/* props */ IPickerProps, AnonComponentDidUpdate]
-       with Instantiable2[/* props */ IPickerProps, /* context */ js.Any, AnonComponentDidUpdate] {
-    def Item(_props: IItemProps): js.Any = js.native
+  object default {
+    
+    @JSImport("rmc-picker", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def Item(_props: IItemProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(_props.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
-  
 }
-

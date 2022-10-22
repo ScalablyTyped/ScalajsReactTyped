@@ -1,27 +1,29 @@
 package typingsJapgolly.diff.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArrayOptions[TLeft, TRight] extends BaseOptions {
+trait ArrayOptions[TLeft, TRight]
+  extends StObject
+     with BaseOptions {
+  
   /**
     * Comparator for custom equality checks.
     */
   var comparator: js.UndefOr[js.Function2[/* left */ TLeft, /* right */ TRight, Boolean]] = js.undefined
 }
-
 object ArrayOptions {
-  @scala.inline
-  def apply[TLeft, TRight](
-    comparator: (/* left */ TLeft, /* right */ TRight) => CallbackTo[Boolean] = null,
-    ignoreCase: js.UndefOr[Boolean] = js.undefined
-  ): ArrayOptions[TLeft, TRight] = {
+  
+  inline def apply[TLeft, TRight](): ArrayOptions[TLeft, TRight] = {
     val __obj = js.Dynamic.literal()
-    if (comparator != null) __obj.updateDynamic("comparator")(js.Any.fromFunction2((t0: /* left */ TLeft, t1: /* right */ TRight) => comparator(t0, t1).runNow()))
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayOptions[TLeft, TRight]]
   }
+  
+  extension [Self <: ArrayOptions[?, ?], TLeft, TRight](x: Self & (ArrayOptions[TLeft, TRight])) {
+    
+    inline def setComparator(value: (/* left */ TLeft, /* right */ TRight) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
+    
+    inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+  }
 }
-

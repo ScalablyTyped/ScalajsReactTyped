@@ -1,21 +1,30 @@
 package typingsJapgolly.kiiCloudSdk.KiiCloud
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KiiSocialAccountInfo extends js.Object {
+trait KiiSocialAccountInfo extends StObject {
+  
   var createdAt: Double
+  
   var provider: KiiSocialNetworkName
+  
   var socialAccountId: String
 }
-
 object KiiSocialAccountInfo {
-  @scala.inline
-  def apply(createdAt: Double, provider: KiiSocialNetworkName, socialAccountId: String): KiiSocialAccountInfo = {
-    val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], socialAccountId = socialAccountId.asInstanceOf[js.Any])
   
+  inline def apply(createdAt: Double, provider: KiiSocialNetworkName, socialAccountId: String): KiiSocialAccountInfo = {
+    val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], socialAccountId = socialAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[KiiSocialAccountInfo]
   }
+  
+  extension [Self <: KiiSocialAccountInfo](x: Self) {
+    
+    inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    
+    inline def setProvider(value: KiiSocialNetworkName): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    
+    inline def setSocialAccountId(value: String): Self = StObject.set(x, "socialAccountId", value.asInstanceOf[js.Any])
+  }
 }
-

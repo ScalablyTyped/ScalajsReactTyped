@@ -1,24 +1,20 @@
 package typingsJapgolly.roxReactNative
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object roxReactNativeStrings {
-  @js.native
-  sealed trait `false` extends js.Object
   
   @js.native
-  sealed trait `true` extends js.Object
+  sealed trait `false` extends StObject
+  inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
-  sealed trait verbose extends js.Object
+  sealed trait `true` extends StObject
+  inline def `true`: `true` = "true".asInstanceOf[`true`]
   
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = "true".asInstanceOf[`true`]
-  @scala.inline
-  def verbose: verbose = "verbose".asInstanceOf[verbose]
+  @js.native
+  sealed trait verbose extends StObject
+  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
 }
-

@@ -1,16 +1,22 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditionUpgradeConfiguration extends DeviceConfiguration {
+trait EditionUpgradeConfiguration
+  extends StObject
+     with DeviceConfiguration {
+  
   // Edition Upgrade License File Content.
-  var license: js.UndefOr[String] = js.undefined
+  var license: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Edition Upgrade License Type. Possible values are: productKey, licenseFile.
   var licenseType: js.UndefOr[EditionUpgradeLicenseType] = js.undefined
+  
   // Edition Upgrade Product Key.
-  var productKey: js.UndefOr[String] = js.undefined
+  var productKey: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * Edition Upgrade Target Edition. Possible values are: windows10Enterprise, windows10EnterpriseN, windows10Education,
     * windows10EducationN, windows10MobileEnterprise, windows10HolographicEnterprise, windows10Professional,
@@ -19,45 +25,33 @@ trait EditionUpgradeConfiguration extends DeviceConfiguration {
     */
   var targetEdition: js.UndefOr[Windows10EditionType] = js.undefined
 }
-
 object EditionUpgradeConfiguration {
-  @scala.inline
-  def apply(
-    assignments: js.Array[DeviceConfigurationAssignment] = null,
-    createdDateTime: String = null,
-    description: String = null,
-    deviceSettingStateSummaries: js.Array[SettingStateDeviceSummary] = null,
-    deviceStatusOverview: DeviceConfigurationDeviceOverview = null,
-    deviceStatuses: js.Array[DeviceConfigurationDeviceStatus] = null,
-    displayName: String = null,
-    id: String = null,
-    lastModifiedDateTime: String = null,
-    license: String = null,
-    licenseType: EditionUpgradeLicenseType = null,
-    productKey: String = null,
-    targetEdition: Windows10EditionType = null,
-    userStatusOverview: DeviceConfigurationUserOverview = null,
-    userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null
-  ): EditionUpgradeConfiguration = {
+  
+  inline def apply(): EditionUpgradeConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
-    if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
-    if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
-    if (licenseType != null) __obj.updateDynamic("licenseType")(licenseType.asInstanceOf[js.Any])
-    if (productKey != null) __obj.updateDynamic("productKey")(productKey.asInstanceOf[js.Any])
-    if (targetEdition != null) __obj.updateDynamic("targetEdition")(targetEdition.asInstanceOf[js.Any])
-    if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
-    if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditionUpgradeConfiguration]
   }
+  
+  extension [Self <: EditionUpgradeConfiguration](x: Self) {
+    
+    inline def setLicense(value: NullableOption[String]): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    
+    inline def setLicenseNull: Self = StObject.set(x, "license", null)
+    
+    inline def setLicenseType(value: EditionUpgradeLicenseType): Self = StObject.set(x, "licenseType", value.asInstanceOf[js.Any])
+    
+    inline def setLicenseTypeUndefined: Self = StObject.set(x, "licenseType", js.undefined)
+    
+    inline def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
+    
+    inline def setProductKey(value: NullableOption[String]): Self = StObject.set(x, "productKey", value.asInstanceOf[js.Any])
+    
+    inline def setProductKeyNull: Self = StObject.set(x, "productKey", null)
+    
+    inline def setProductKeyUndefined: Self = StObject.set(x, "productKey", js.undefined)
+    
+    inline def setTargetEdition(value: Windows10EditionType): Self = StObject.set(x, "targetEdition", value.asInstanceOf[js.Any])
+    
+    inline def setTargetEditionUndefined: Self = StObject.set(x, "targetEdition", js.undefined)
+  }
 }
-

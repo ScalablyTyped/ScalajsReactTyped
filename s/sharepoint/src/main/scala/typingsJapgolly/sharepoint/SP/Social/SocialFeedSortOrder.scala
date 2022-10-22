@@ -1,30 +1,23 @@
 package typingsJapgolly.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocialFeedSortOrder extends js.Object
-
+sealed trait SocialFeedSortOrder extends StObject
 /** Specifies whether the sort order is by creation time or modification time. */
 @JSGlobal("SP.Social.SocialFeedSortOrder")
 @js.native
-object SocialFeedSortOrder extends js.Object {
-  @js.native
-  sealed trait byCreatedTime extends SocialFeedSortOrder
+object SocialFeedSortOrder extends StObject {
   
   @js.native
-  sealed trait byModifiedTime extends SocialFeedSortOrder
+  sealed trait byCreatedTime
+    extends StObject
+       with SocialFeedSortOrder
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialFeedSortOrder with Double] = js.native
-  /* 1 */ @js.native
-  object byCreatedTime extends TopLevel[byCreatedTime with Double]
-  
-  /* 0 */ @js.native
-  object byModifiedTime extends TopLevel[byModifiedTime with Double]
-  
+  @js.native
+  sealed trait byModifiedTime
+    extends StObject
+       with SocialFeedSortOrder
 }
-

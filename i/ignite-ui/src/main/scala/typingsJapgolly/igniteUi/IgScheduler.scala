@@ -2,299 +2,414 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgScheduler
-  extends /**
-	 * Option for igScheduler
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Fired after agenda view range is changed when using previous and next buttons (fired only in Agenda View)
-  	 */
+    * Fired after agenda view range is changed when using previous and next buttons (fired only in Agenda View)
+    */
   var agendaRangeChanged: js.UndefOr[AgendaRangeChangedEvent] = js.undefined
+  
   /**
-  	 * Fired before agenda view range is changed when using previous and next buttons (fired only in Agenda View)
-  	 */
+    * Fired before agenda view range is changed when using previous and next buttons (fired only in Agenda View)
+    */
   var agendaRangeChanging: js.UndefOr[AgendaRangeChangingEvent] = js.undefined
+  
   /**
-  	 * Gets/Sets AgendaView settings.
-  	 *
-  	 */
+    * Gets/Sets AgendaView settings.
+    *
+    */
   var agendaViewSettings: js.UndefOr[IgSchedulerAgendaViewSettings] = js.undefined
+  
   /**
-  	 * Fired after an appointment is created.
-  	 */
+    * Fired after an appointment is created.
+    */
   var appointmentCreated: js.UndefOr[AppointmentCreatedEvent] = js.undefined
+  
   /**
-  	 * Fired before an appointment is created.
-  	 */
+    * Fired before an appointment is created.
+    */
   var appointmentCreating: js.UndefOr[AppointmentCreatingEvent] = js.undefined
+  
   /**
-  	 * Fired after an appointment is deleted.
-  	 */
+    * Fired after an appointment is deleted.
+    */
   var appointmentDeleted: js.UndefOr[AppointmentDeletedEvent] = js.undefined
+  
   /**
-  	 * Fired before an appointment is deleted.
-  	 */
+    * Fired before an appointment is deleted.
+    */
   var appointmentDeleting: js.UndefOr[AppointmentDeletingEvent] = js.undefined
+  
   /**
-  	 * Fired after closing the dialog window for adding/editing appointment.
-  	 */
+    * Fired after closing the dialog window for adding/editing appointment.
+    */
   var appointmentDialogClosed: js.UndefOr[AppointmentDialogClosedEvent] = js.undefined
+  
   /**
-  	 * Fired before closing the dialog for adding/editing appointment.
-  	 */
+    * Fired before closing the dialog for adding/editing appointment.
+    */
   var appointmentDialogClosing: js.UndefOr[AppointmentDialogClosingEvent] = js.undefined
+  
   /**
-  	 * Fired after opening the dialog for creating/editing appointment.
-  	 */
+    * Fired after opening the dialog for creating/editing appointment.
+    */
   var appointmentDialogOpened: js.UndefOr[AppointmentDialogOpenedEvent] = js.undefined
+  
   /**
-  	 * Fired before opening the dialog for creating/editing appointment.
-  	 */
+    * Fired before opening the dialog for creating/editing appointment.
+    */
   var appointmentDialogOpening: js.UndefOr[AppointmentDialogOpeningEvent] = js.undefined
+  
   /**
-  	 * Gets/Sets whether the appointment dialog and the related day and appointment popups should be shown.
-  	 *
-  	 */
+    * Gets/Sets whether the appointment dialog and the related day and appointment popups should be shown.
+    *
+    */
   var appointmentDialogSuppress: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Fired after an appointment is edited.
-  	 */
+    * Fired after an appointment is edited.
+    */
   var appointmentEdited: js.UndefOr[AppointmentEditedEvent] = js.undefined
+  
   /**
-  	 * Fired before an appointment is edited.
-  	 */
+    * Fired before an appointment is edited.
+    */
   var appointmentEditing: js.UndefOr[AppointmentEditingEvent] = js.undefined
+  
   /**
-  	 * Gets/Sets dataSource of type $.ig.scheduler.ScheduleListDataSource.
-  	 *
-  	 */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+    * Gets/Sets dataSource of type $.ig.scheduler.ScheduleListDataSource.
+    *
+    */
+  var dataSource: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Fired after day is changed when using previous and next buttons (fired only in Day View)
-  	 */
+    * Fired after day is changed when using previous and next buttons (fired only in Day View)
+    */
   var dayChanged: js.UndefOr[DayChangedEvent] = js.undefined
+  
   /**
-  	 * Fired before changing the day begins, when using previous and next buttons (fired only in Day View)
-  	 */
+    * Fired before changing the day begins, when using previous and next buttons (fired only in Day View)
+    */
   var dayChanging: js.UndefOr[DayChangingEvent] = js.undefined
+  
   /**
-  	 * Fired when a day is selected from the datepicker calendar.
-  	 */
+    * Fired when a day is selected from the datepicker calendar.
+    */
   var daySelected: js.UndefOr[DaySelectedEvent] = js.undefined
+  
   /**
-  	 * Gets/Sets DayView settings.
-  	 *
-  	 */
+    * Gets/Sets DayView settings.
+    *
+    */
   var dayViewSettings: js.UndefOr[IgSchedulerDayViewSettings] = js.undefined
+  
   /**
-  	 * Enables/Disables today button.
-  	 *
-  	 */
+    * Enables/Disables today button.
+    *
+    */
   var enableTodayButton: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets the height of the control.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "null" will fit the editor inside its parent container, if no other heights are defined.
-  	 */
+    * Gets/Sets the height of the control.
+    *
+    *
+    * Valid values:
+    * "null" will fit the editor inside its parent container, if no other heights are defined.
+    */
   var height: js.UndefOr[String | Double] = js.undefined
+  
   /**
-  	 * Set/Get the locale language setting for the widget.
-  	 *
-  	 */
+    * Set/Get the locale language setting for the widget.
+    *
+    */
   var language: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Set/Get the locale setting for the widget.
-  	 *
-  	 */
-  var locale: js.UndefOr[js.Any] = js.undefined
+    * Set/Get the locale setting for the widget.
+    *
+    */
+  var locale: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Fired after month is changed when using previous and next buttons (fired only in Month View)
-  	 */
+    * Fired after month is changed when using previous and next buttons (fired only in Month View)
+    */
   var monthChanged: js.UndefOr[MonthChangedEvent] = js.undefined
+  
   /**
-  	 * Fired before changing the month begins, when using previous and next buttons (fired only in Month View)
-  	 */
+    * Fired before changing the month begins, when using previous and next buttons (fired only in Month View)
+    */
   var monthChanging: js.UndefOr[MonthChangingEvent] = js.undefined
+  
   /**
-  	 * Gets/Sets MonthView settings.
-  	 *
-  	 */
+    * Gets/Sets MonthView settings.
+    *
+    */
   var monthViewSettings: js.UndefOr[IgSchedulerMonthViewSettings] = js.undefined
+  
   /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 */
+    * Set/Get the regional setting for the widget.
+    *
+    */
   var regional: js.UndefOr[String | js.Object] = js.undefined
+  
   /**
-  	 * Fired after rendering of the scheduler has finished.
-  	 */
+    * Fired after rendering of the scheduler has finished.
+    */
   var rendered: js.UndefOr[RenderedEvent] = js.undefined
+  
   /**
-  	 * Fired before rendering of the scheduler begins.
-  	 */
+    * Fired before rendering of the scheduler begins.
+    */
   var rendering: js.UndefOr[RenderingEvent] = js.undefined
+  
   /**
-  	 * Gets the resources collection that holds the activities` owners
-  	 *
-  	 * //Initialize
-  	 * var resources = [
-  	 * { id: 1, displayName: "Trina Friesen" },
-  	 * { id: 2, displayName: "Mack Koch" }];
-  	 * $(".selector").%%WidgetName%%({
-  	 * resources: resources
-  	 * });
-  	 *
-  	 * // Get
-  	 * var resources = $(".selector").%%WidgetName%%("option", "resources");
-  	 */
-  var resources: js.UndefOr[js.Any] = js.undefined
+    * Gets the resources collection that holds the activities` owners
+    *
+    * //Initialize
+    * var resources = [
+    * { id: 1, displayName: "Trina Friesen" },
+    * { id: 2, displayName: "Mack Koch" }];
+    * $(".selector").%%WidgetName%%({
+    * resources: resources
+    * });
+    *
+    * // Get
+    * var resources = $(".selector").%%WidgetName%%("option", "resources");
+    */
+  var resources: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets/Sets selected date in the Scheduler.
-  	 *
-  	 */
+    * Gets/Sets selected date in the Scheduler.
+    *
+    */
   var selectedDate: js.UndefOr[js.Date] = js.undefined
+  
   /**
-  	 * Fired after the view is changed, when using the menu buttons.
-  	 */
+    * Fired after the view is changed, when using the menu buttons.
+    */
   var viewChanged: js.UndefOr[ViewChangedEvent] = js.undefined
+  
   /**
-  	 * Fired before the view is changed, when using the menu buttons.
-  	 */
+    * Fired before the view is changed, when using the menu buttons.
+    */
   var viewChanging: js.UndefOr[ViewChangingEvent] = js.undefined
+  
   /**
-  	 * Gets/Sets current view mode in the Scheduler. If this options is not defined, then the first defined view in the views property is taken.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "monthView" Enables MonthView in the Scheduler.
-  	 * "agendaView" Enables AgendaView in the Scheduler.
-  	 */
+    * Gets/Sets current view mode in the Scheduler. If this options is not defined, then the first defined view in the views property is taken.
+    *
+    *
+    * Valid values:
+    * "monthView" Enables MonthView in the Scheduler.
+    * "agendaView" Enables AgendaView in the Scheduler.
+    */
   var viewMode: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Lists of all the views, rendered in the Scheduler.
-  	 *
-  	 */
-  var views: js.UndefOr[js.Array[_]] = js.undefined
+    * Lists of all the views, rendered in the Scheduler.
+    *
+    */
+  var views: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Fired after week is changed when using previous and next buttons (fired only in Week View)
-  	 */
+    * Fired after week is changed when using previous and next buttons (fired only in Week View)
+    */
   var weekChanged: js.UndefOr[WeekChangedEvent] = js.undefined
+  
   /**
-  	 * Fired before changing the week begins, when using previous and next buttons (fired only in Week View)
-  	 */
+    * Fired before changing the week begins, when using previous and next buttons (fired only in Week View)
+    */
   var weekChanging: js.UndefOr[WeekChangingEvent] = js.undefined
+  
   /**
-  	 * Gets/Sets WeekView settings.
-  	 *
-  	 */
+    * Gets/Sets WeekView settings.
+    *
+    */
   var weekViewSettings: js.UndefOr[IgSchedulerWeekViewSettings] = js.undefined
+  
   /**
-  	 * Gets/Sets the width of the control.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "null" will stretch to fit data, if no other widths are defined.
-  	 */
+    * Gets/Sets the width of the control.
+    *
+    *
+    * Valid values:
+    * "null" will stretch to fit data, if no other widths are defined.
+    */
   var width: js.UndefOr[String | Double] = js.undefined
 }
-
 object IgScheduler {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igScheduler
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    agendaRangeChanged: (/* event */ Event_, /* ui */ AgendaRangeChangedEventUIParam) => Callback = null,
-    agendaRangeChanging: (/* event */ Event_, /* ui */ AgendaRangeChangingEventUIParam) => Callback = null,
-    agendaViewSettings: IgSchedulerAgendaViewSettings = null,
-    appointmentCreated: (/* event */ Event_, /* ui */ AppointmentCreatedEventUIParam) => Callback = null,
-    appointmentCreating: (/* event */ Event_, /* ui */ AppointmentCreatingEventUIParam) => Callback = null,
-    appointmentDeleted: (/* event */ Event_, /* ui */ AppointmentDeletedEventUIParam) => Callback = null,
-    appointmentDeleting: (/* event */ Event_, /* ui */ AppointmentDeletingEventUIParam) => Callback = null,
-    appointmentDialogClosed: (/* event */ Event_, /* ui */ AppointmentDialogClosedEventUIParam) => Callback = null,
-    appointmentDialogClosing: (/* event */ Event_, /* ui */ AppointmentDialogClosingEventUIParam) => Callback = null,
-    appointmentDialogOpened: (/* event */ Event_, /* ui */ AppointmentDialogOpenedEventUIParam) => Callback = null,
-    appointmentDialogOpening: (/* event */ Event_, /* ui */ AppointmentDialogOpeningEventUIParam) => Callback = null,
-    appointmentDialogSuppress: js.UndefOr[Boolean] = js.undefined,
-    appointmentEdited: (/* event */ Event_, /* ui */ AppointmentEditedEventUIParam) => Callback = null,
-    appointmentEditing: (/* event */ Event_, /* ui */ AppointmentEditingEventUIParam) => Callback = null,
-    dataSource: js.Any = null,
-    dayChanged: (/* event */ Event_, /* ui */ DayChangedEventUIParam) => Callback = null,
-    dayChanging: (/* event */ Event_, /* ui */ DayChangingEventUIParam) => Callback = null,
-    daySelected: (/* event */ Event_, /* ui */ DaySelectedEventUIParam) => Callback = null,
-    dayViewSettings: IgSchedulerDayViewSettings = null,
-    enableTodayButton: js.UndefOr[Boolean] = js.undefined,
-    height: String | Double = null,
-    language: String = null,
-    locale: js.Any = null,
-    monthChanged: (/* event */ Event_, /* ui */ MonthChangedEventUIParam) => Callback = null,
-    monthChanging: (/* event */ Event_, /* ui */ MonthChangingEventUIParam) => Callback = null,
-    monthViewSettings: IgSchedulerMonthViewSettings = null,
-    regional: String | js.Object = null,
-    rendered: (/* event */ Event_, /* ui */ RenderedEventUIParam) => Callback = null,
-    rendering: (/* event */ Event_, /* ui */ RenderingEventUIParam) => Callback = null,
-    resources: js.Any = null,
-    selectedDate: js.Date = null,
-    viewChanged: (/* event */ Event_, /* ui */ ViewChangedEventUIParam) => Callback = null,
-    viewChanging: (/* event */ Event_, /* ui */ ViewChangingEventUIParam) => Callback = null,
-    viewMode: String = null,
-    views: js.Array[_] = null,
-    weekChanged: (/* event */ Event_, /* ui */ WeekChangedEventUIParam) => Callback = null,
-    weekChanging: (/* event */ Event_, /* ui */ WeekChangingEventUIParam) => Callback = null,
-    weekViewSettings: IgSchedulerWeekViewSettings = null,
-    width: String | Double = null
-  ): IgScheduler = {
+  
+  inline def apply(): IgScheduler = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (agendaRangeChanged != null) __obj.updateDynamic("agendaRangeChanged")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.AgendaRangeChangedEventUIParam) => agendaRangeChanged(t0, t1).runNow()))
-    if (agendaRangeChanging != null) __obj.updateDynamic("agendaRangeChanging")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.AgendaRangeChangingEventUIParam) => agendaRangeChanging(t0, t1).runNow()))
-    if (agendaViewSettings != null) __obj.updateDynamic("agendaViewSettings")(agendaViewSettings.asInstanceOf[js.Any])
-    if (appointmentCreated != null) __obj.updateDynamic("appointmentCreated")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.AppointmentCreatedEventUIParam) => appointmentCreated(t0, t1).runNow()))
-    if (appointmentCreating != null) __obj.updateDynamic("appointmentCreating")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.AppointmentCreatingEventUIParam) => appointmentCreating(t0, t1).runNow()))
-    if (appointmentDeleted != null) __obj.updateDynamic("appointmentDeleted")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.AppointmentDeletedEventUIParam) => appointmentDeleted(t0, t1).runNow()))
-    if (appointmentDeleting != null) __obj.updateDynamic("appointmentDeleting")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.AppointmentDeletingEventUIParam) => appointmentDeleting(t0, t1).runNow()))
-    if (appointmentDialogClosed != null) __obj.updateDynamic("appointmentDialogClosed")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.AppointmentDialogClosedEventUIParam) => appointmentDialogClosed(t0, t1).runNow()))
-    if (appointmentDialogClosing != null) __obj.updateDynamic("appointmentDialogClosing")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.AppointmentDialogClosingEventUIParam) => appointmentDialogClosing(t0, t1).runNow()))
-    if (appointmentDialogOpened != null) __obj.updateDynamic("appointmentDialogOpened")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.AppointmentDialogOpenedEventUIParam) => appointmentDialogOpened(t0, t1).runNow()))
-    if (appointmentDialogOpening != null) __obj.updateDynamic("appointmentDialogOpening")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.AppointmentDialogOpeningEventUIParam) => appointmentDialogOpening(t0, t1).runNow()))
-    if (!js.isUndefined(appointmentDialogSuppress)) __obj.updateDynamic("appointmentDialogSuppress")(appointmentDialogSuppress.asInstanceOf[js.Any])
-    if (appointmentEdited != null) __obj.updateDynamic("appointmentEdited")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.AppointmentEditedEventUIParam) => appointmentEdited(t0, t1).runNow()))
-    if (appointmentEditing != null) __obj.updateDynamic("appointmentEditing")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.AppointmentEditingEventUIParam) => appointmentEditing(t0, t1).runNow()))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dayChanged != null) __obj.updateDynamic("dayChanged")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.DayChangedEventUIParam) => dayChanged(t0, t1).runNow()))
-    if (dayChanging != null) __obj.updateDynamic("dayChanging")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.DayChangingEventUIParam) => dayChanging(t0, t1).runNow()))
-    if (daySelected != null) __obj.updateDynamic("daySelected")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.DaySelectedEventUIParam) => daySelected(t0, t1).runNow()))
-    if (dayViewSettings != null) __obj.updateDynamic("dayViewSettings")(dayViewSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTodayButton)) __obj.updateDynamic("enableTodayButton")(enableTodayButton.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (monthChanged != null) __obj.updateDynamic("monthChanged")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.MonthChangedEventUIParam) => monthChanged(t0, t1).runNow()))
-    if (monthChanging != null) __obj.updateDynamic("monthChanging")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.MonthChangingEventUIParam) => monthChanging(t0, t1).runNow()))
-    if (monthViewSettings != null) __obj.updateDynamic("monthViewSettings")(monthViewSettings.asInstanceOf[js.Any])
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RenderedEventUIParam) => rendered(t0, t1).runNow()))
-    if (rendering != null) __obj.updateDynamic("rendering")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RenderingEventUIParam) => rendering(t0, t1).runNow()))
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (selectedDate != null) __obj.updateDynamic("selectedDate")(selectedDate.asInstanceOf[js.Any])
-    if (viewChanged != null) __obj.updateDynamic("viewChanged")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ViewChangedEventUIParam) => viewChanged(t0, t1).runNow()))
-    if (viewChanging != null) __obj.updateDynamic("viewChanging")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ViewChangingEventUIParam) => viewChanging(t0, t1).runNow()))
-    if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode.asInstanceOf[js.Any])
-    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
-    if (weekChanged != null) __obj.updateDynamic("weekChanged")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.WeekChangedEventUIParam) => weekChanged(t0, t1).runNow()))
-    if (weekChanging != null) __obj.updateDynamic("weekChanging")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.WeekChangingEventUIParam) => weekChanging(t0, t1).runNow()))
-    if (weekViewSettings != null) __obj.updateDynamic("weekViewSettings")(weekViewSettings.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgScheduler]
   }
+  
+  extension [Self <: IgScheduler](x: Self) {
+    
+    inline def setAgendaRangeChanged(value: (/* event */ Event, /* ui */ AgendaRangeChangedEventUIParam) => Callback): Self = StObject.set(x, "agendaRangeChanged", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ AgendaRangeChangedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setAgendaRangeChangedUndefined: Self = StObject.set(x, "agendaRangeChanged", js.undefined)
+    
+    inline def setAgendaRangeChanging(value: (/* event */ Event, /* ui */ AgendaRangeChangingEventUIParam) => Callback): Self = StObject.set(x, "agendaRangeChanging", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ AgendaRangeChangingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setAgendaRangeChangingUndefined: Self = StObject.set(x, "agendaRangeChanging", js.undefined)
+    
+    inline def setAgendaViewSettings(value: IgSchedulerAgendaViewSettings): Self = StObject.set(x, "agendaViewSettings", value.asInstanceOf[js.Any])
+    
+    inline def setAgendaViewSettingsUndefined: Self = StObject.set(x, "agendaViewSettings", js.undefined)
+    
+    inline def setAppointmentCreated(value: (/* event */ Event, /* ui */ AppointmentCreatedEventUIParam) => Callback): Self = StObject.set(x, "appointmentCreated", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ AppointmentCreatedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setAppointmentCreatedUndefined: Self = StObject.set(x, "appointmentCreated", js.undefined)
+    
+    inline def setAppointmentCreating(value: (/* event */ Event, /* ui */ AppointmentCreatingEventUIParam) => Callback): Self = StObject.set(x, "appointmentCreating", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ AppointmentCreatingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setAppointmentCreatingUndefined: Self = StObject.set(x, "appointmentCreating", js.undefined)
+    
+    inline def setAppointmentDeleted(value: (/* event */ Event, /* ui */ AppointmentDeletedEventUIParam) => Callback): Self = StObject.set(x, "appointmentDeleted", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ AppointmentDeletedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setAppointmentDeletedUndefined: Self = StObject.set(x, "appointmentDeleted", js.undefined)
+    
+    inline def setAppointmentDeleting(value: (/* event */ Event, /* ui */ AppointmentDeletingEventUIParam) => Callback): Self = StObject.set(x, "appointmentDeleting", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ AppointmentDeletingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setAppointmentDeletingUndefined: Self = StObject.set(x, "appointmentDeleting", js.undefined)
+    
+    inline def setAppointmentDialogClosed(value: (/* event */ Event, /* ui */ AppointmentDialogClosedEventUIParam) => Callback): Self = StObject.set(x, "appointmentDialogClosed", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ AppointmentDialogClosedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setAppointmentDialogClosedUndefined: Self = StObject.set(x, "appointmentDialogClosed", js.undefined)
+    
+    inline def setAppointmentDialogClosing(value: (/* event */ Event, /* ui */ AppointmentDialogClosingEventUIParam) => Callback): Self = StObject.set(x, "appointmentDialogClosing", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ AppointmentDialogClosingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setAppointmentDialogClosingUndefined: Self = StObject.set(x, "appointmentDialogClosing", js.undefined)
+    
+    inline def setAppointmentDialogOpened(value: (/* event */ Event, /* ui */ AppointmentDialogOpenedEventUIParam) => Callback): Self = StObject.set(x, "appointmentDialogOpened", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ AppointmentDialogOpenedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setAppointmentDialogOpenedUndefined: Self = StObject.set(x, "appointmentDialogOpened", js.undefined)
+    
+    inline def setAppointmentDialogOpening(value: (/* event */ Event, /* ui */ AppointmentDialogOpeningEventUIParam) => Callback): Self = StObject.set(x, "appointmentDialogOpening", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ AppointmentDialogOpeningEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setAppointmentDialogOpeningUndefined: Self = StObject.set(x, "appointmentDialogOpening", js.undefined)
+    
+    inline def setAppointmentDialogSuppress(value: Boolean): Self = StObject.set(x, "appointmentDialogSuppress", value.asInstanceOf[js.Any])
+    
+    inline def setAppointmentDialogSuppressUndefined: Self = StObject.set(x, "appointmentDialogSuppress", js.undefined)
+    
+    inline def setAppointmentEdited(value: (/* event */ Event, /* ui */ AppointmentEditedEventUIParam) => Callback): Self = StObject.set(x, "appointmentEdited", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ AppointmentEditedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setAppointmentEditedUndefined: Self = StObject.set(x, "appointmentEdited", js.undefined)
+    
+    inline def setAppointmentEditing(value: (/* event */ Event, /* ui */ AppointmentEditingEventUIParam) => Callback): Self = StObject.set(x, "appointmentEditing", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ AppointmentEditingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setAppointmentEditingUndefined: Self = StObject.set(x, "appointmentEditing", js.undefined)
+    
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDayChanged(value: (/* event */ Event, /* ui */ DayChangedEventUIParam) => Callback): Self = StObject.set(x, "dayChanged", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ DayChangedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setDayChangedUndefined: Self = StObject.set(x, "dayChanged", js.undefined)
+    
+    inline def setDayChanging(value: (/* event */ Event, /* ui */ DayChangingEventUIParam) => Callback): Self = StObject.set(x, "dayChanging", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ DayChangingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setDayChangingUndefined: Self = StObject.set(x, "dayChanging", js.undefined)
+    
+    inline def setDaySelected(value: (/* event */ Event, /* ui */ DaySelectedEventUIParam) => Callback): Self = StObject.set(x, "daySelected", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ DaySelectedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setDaySelectedUndefined: Self = StObject.set(x, "daySelected", js.undefined)
+    
+    inline def setDayViewSettings(value: IgSchedulerDayViewSettings): Self = StObject.set(x, "dayViewSettings", value.asInstanceOf[js.Any])
+    
+    inline def setDayViewSettingsUndefined: Self = StObject.set(x, "dayViewSettings", js.undefined)
+    
+    inline def setEnableTodayButton(value: Boolean): Self = StObject.set(x, "enableTodayButton", value.asInstanceOf[js.Any])
+    
+    inline def setEnableTodayButtonUndefined: Self = StObject.set(x, "enableTodayButton", js.undefined)
+    
+    inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setMonthChanged(value: (/* event */ Event, /* ui */ MonthChangedEventUIParam) => Callback): Self = StObject.set(x, "monthChanged", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ MonthChangedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setMonthChangedUndefined: Self = StObject.set(x, "monthChanged", js.undefined)
+    
+    inline def setMonthChanging(value: (/* event */ Event, /* ui */ MonthChangingEventUIParam) => Callback): Self = StObject.set(x, "monthChanging", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ MonthChangingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setMonthChangingUndefined: Self = StObject.set(x, "monthChanging", js.undefined)
+    
+    inline def setMonthViewSettings(value: IgSchedulerMonthViewSettings): Self = StObject.set(x, "monthViewSettings", value.asInstanceOf[js.Any])
+    
+    inline def setMonthViewSettingsUndefined: Self = StObject.set(x, "monthViewSettings", js.undefined)
+    
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    
+    inline def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Callback): Self = StObject.set(x, "rendered", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RenderedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
+    
+    inline def setRendering(value: (/* event */ Event, /* ui */ RenderingEventUIParam) => Callback): Self = StObject.set(x, "rendering", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RenderingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRenderingUndefined: Self = StObject.set(x, "rendering", js.undefined)
+    
+    inline def setResources(value: Any): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    
+    inline def setSelectedDate(value: js.Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedDateUndefined: Self = StObject.set(x, "selectedDate", js.undefined)
+    
+    inline def setViewChanged(value: (/* event */ Event, /* ui */ ViewChangedEventUIParam) => Callback): Self = StObject.set(x, "viewChanged", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ViewChangedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setViewChangedUndefined: Self = StObject.set(x, "viewChanged", js.undefined)
+    
+    inline def setViewChanging(value: (/* event */ Event, /* ui */ ViewChangingEventUIParam) => Callback): Self = StObject.set(x, "viewChanging", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ViewChangingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setViewChangingUndefined: Self = StObject.set(x, "viewChanging", js.undefined)
+    
+    inline def setViewMode(value: String): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    
+    inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
+    
+    inline def setViews(value: js.Array[Any]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    
+    inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+    
+    inline def setViewsVarargs(value: Any*): Self = StObject.set(x, "views", js.Array(value*))
+    
+    inline def setWeekChanged(value: (/* event */ Event, /* ui */ WeekChangedEventUIParam) => Callback): Self = StObject.set(x, "weekChanged", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ WeekChangedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setWeekChangedUndefined: Self = StObject.set(x, "weekChanged", js.undefined)
+    
+    inline def setWeekChanging(value: (/* event */ Event, /* ui */ WeekChangingEventUIParam) => Callback): Self = StObject.set(x, "weekChanging", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ WeekChangingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setWeekChangingUndefined: Self = StObject.set(x, "weekChanging", js.undefined)
+    
+    inline def setWeekViewSettings(value: IgSchedulerWeekViewSettings): Self = StObject.set(x, "weekViewSettings", value.asInstanceOf[js.Any])
+    
+    inline def setWeekViewSettingsUndefined: Self = StObject.set(x, "weekViewSettings", js.undefined)
+    
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

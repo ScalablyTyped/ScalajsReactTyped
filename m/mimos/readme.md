@@ -10,10 +10,10 @@ Mime database interface
 | ------------------ | :-------------: |
 | Full name          | mimos |
 | Keywords           | mime, database, content-type |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 9838890 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 380819.0 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/mimos#readme)

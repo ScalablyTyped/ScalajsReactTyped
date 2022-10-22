@@ -1,8 +1,8 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.squarified
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.highcharts.highchartsStrings.stripes
   - typingsJapgolly.highcharts.highchartsStrings.sliceAndDice
 */
-trait OptionsLayoutAlgorithmValue extends js.Object
-
+trait OptionsLayoutAlgorithmValue extends StObject
 object OptionsLayoutAlgorithmValue {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def sliceAndDice: typingsJapgolly.highcharts.highchartsStrings.sliceAndDice = this.cast("sliceAndDice")
-  @scala.inline
-  def squarified: typingsJapgolly.highcharts.highchartsStrings.squarified = this.cast("squarified")
-  @scala.inline
-  def strip: typingsJapgolly.highcharts.highchartsStrings.strip = this.cast("strip")
-  @scala.inline
-  def stripes: typingsJapgolly.highcharts.highchartsStrings.stripes = this.cast("stripes")
+  
+  inline def sliceAndDice: typingsJapgolly.highcharts.highchartsStrings.sliceAndDice = "sliceAndDice".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.sliceAndDice]
+  
+  inline def squarified: typingsJapgolly.highcharts.highchartsStrings.squarified = "squarified".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.squarified]
+  
+  inline def strip: typingsJapgolly.highcharts.highchartsStrings.strip = "strip".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.strip]
+  
+  inline def stripes: typingsJapgolly.highcharts.highchartsStrings.stripes = "stripes".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.stripes]
 }
-

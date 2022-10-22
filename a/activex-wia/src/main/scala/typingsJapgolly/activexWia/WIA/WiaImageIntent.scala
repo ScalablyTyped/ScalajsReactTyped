@@ -1,32 +1,28 @@
 package typingsJapgolly.activexWia.WIA
 
-import typingsJapgolly.activexWia.activexWiaNumbers.`0`
-import typingsJapgolly.activexWia.activexWiaNumbers.`1`
-import typingsJapgolly.activexWia.activexWiaNumbers.`2`
-import typingsJapgolly.activexWia.activexWiaNumbers.`4`
+import typingsJapgolly.activexWia.activexWiaInts.`0`
+import typingsJapgolly.activexWia.activexWiaInts.`1`
+import typingsJapgolly.activexWia.activexWiaInts.`2`
+import typingsJapgolly.activexWia.activexWiaInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The WiaImageIntent enumeration helps specify what type of data the image is intended to represent. */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWia.activexWiaNumbers.`1`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`2`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`4`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`0`
+  - typingsJapgolly.activexWia.activexWiaInts.`1`
+  - typingsJapgolly.activexWia.activexWiaInts.`2`
+  - typingsJapgolly.activexWia.activexWiaInts.`4`
+  - typingsJapgolly.activexWia.activexWiaInts.`0`
 */
-trait WiaImageIntent extends js.Object
-
+trait WiaImageIntent extends StObject
 object WiaImageIntent {
-  @scala.inline
-  def ColorIntent: `1` = this.cast(1)
-  @scala.inline
-  def GrayscaleIntent: `2` = this.cast(2)
-  @scala.inline
-  def TextIntent: `4` = this.cast(4)
-  @scala.inline
-  def UnspecifiedIntent: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ColorIntent: `1` = 1.asInstanceOf[`1`]
+  
+  inline def GrayscaleIntent: `2` = 2.asInstanceOf[`2`]
+  
+  inline def TextIntent: `4` = 4.asInstanceOf[`4`]
+  
+  inline def UnspecifiedIntent: `0` = 0.asInstanceOf[`0`]
 }
-

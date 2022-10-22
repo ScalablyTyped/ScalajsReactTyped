@@ -1,74 +1,132 @@
 package typingsJapgolly.arangodb.Foxx
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.arangodb.AnonType
+import typingsJapgolly.arangodb.anon.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Manifest extends js.Object {
+trait Manifest extends StObject {
+  
   var author: String
+  
   var configuration: js.UndefOr[StringDictionary[ConfigurationDefinition]] = js.undefined
-  var contributors: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var contributors: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var defaultDocument: js.UndefOr[String] = js.undefined
+  
   var dependencies: js.UndefOr[StringDictionary[DependencyDefinition]] = js.undefined
+  
   var description: String
+  
   var engines: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
+  
   var files: js.UndefOr[StringDictionary[AssetDefinition]] = js.undefined
+  
   var keywords: js.UndefOr[String] = js.undefined
+  
   var lib: String
+  
   var license: js.UndefOr[String] = js.undefined
+  
   var main: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var provides: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
-  var repository: js.UndefOr[AnonType] = js.undefined
+  
+  var repository: js.UndefOr[Type] = js.undefined
+  
   var scripts: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
+  
   var tests: js.UndefOr[js.Array[String]] = js.undefined
+  
   var thumbnail: js.UndefOr[String] = js.undefined
+  
   var version: js.UndefOr[String] = js.undefined
 }
-
 object Manifest {
-  @scala.inline
-  def apply(
-    author: String,
-    description: String,
-    lib: String,
-    configuration: StringDictionary[ConfigurationDefinition] = null,
-    contributors: js.Array[_] = null,
-    defaultDocument: String = null,
-    dependencies: StringDictionary[DependencyDefinition] = null,
-    engines: StringDictionary[js.UndefOr[String]] = null,
-    files: StringDictionary[AssetDefinition] = null,
-    keywords: String = null,
-    license: String = null,
-    main: String = null,
-    name: String = null,
-    provides: StringDictionary[js.UndefOr[String]] = null,
-    repository: AnonType = null,
-    scripts: StringDictionary[js.UndefOr[String]] = null,
-    tests: js.Array[String] = null,
-    thumbnail: String = null,
-    version: String = null
-  ): Manifest = {
+  
+  inline def apply(author: String, description: String, lib: String): Manifest = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], lib = lib.asInstanceOf[js.Any])
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (contributors != null) __obj.updateDynamic("contributors")(contributors.asInstanceOf[js.Any])
-    if (defaultDocument != null) __obj.updateDynamic("defaultDocument")(defaultDocument.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (engines != null) __obj.updateDynamic("engines")(engines.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
-    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (provides != null) __obj.updateDynamic("provides")(provides.asInstanceOf[js.Any])
-    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
-    if (tests != null) __obj.updateDynamic("tests")(tests.asInstanceOf[js.Any])
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Manifest]
   }
+  
+  extension [Self <: Manifest](x: Self) {
+    
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    
+    inline def setConfiguration(value: StringDictionary[ConfigurationDefinition]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    
+    inline def setContributors(value: js.Array[Any]): Self = StObject.set(x, "contributors", value.asInstanceOf[js.Any])
+    
+    inline def setContributorsUndefined: Self = StObject.set(x, "contributors", js.undefined)
+    
+    inline def setContributorsVarargs(value: Any*): Self = StObject.set(x, "contributors", js.Array(value*))
+    
+    inline def setDefaultDocument(value: String): Self = StObject.set(x, "defaultDocument", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultDocumentUndefined: Self = StObject.set(x, "defaultDocument", js.undefined)
+    
+    inline def setDependencies(value: StringDictionary[DependencyDefinition]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    
+    inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setEngines(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "engines", value.asInstanceOf[js.Any])
+    
+    inline def setEnginesUndefined: Self = StObject.set(x, "engines", js.undefined)
+    
+    inline def setFiles(value: StringDictionary[AssetDefinition]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    
+    inline def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    
+    inline def setLib(value: String): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
+    
+    inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    
+    inline def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
+    
+    inline def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+    
+    inline def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setProvides(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "provides", value.asInstanceOf[js.Any])
+    
+    inline def setProvidesUndefined: Self = StObject.set(x, "provides", js.undefined)
+    
+    inline def setRepository(value: Type): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    
+    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    
+    inline def setScripts(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+    
+    inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+    
+    inline def setTests(value: js.Array[String]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
+    
+    inline def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
+    
+    inline def setTestsVarargs(value: String*): Self = StObject.set(x, "tests", js.Array(value*))
+    
+    inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

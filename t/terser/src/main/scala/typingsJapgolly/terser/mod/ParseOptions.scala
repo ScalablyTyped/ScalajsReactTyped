@@ -1,30 +1,43 @@
 package typingsJapgolly.terser.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParseOptions extends js.Object {
+trait ParseOptions extends StObject {
+  
   var bare_returns: js.UndefOr[Boolean] = js.undefined
+  
+  /** @deprecated legacy option. Currently, all supported EcmaScript is valid to parse. */
   var ecma: js.UndefOr[ECMA] = js.undefined
+  
   var html5_comments: js.UndefOr[Boolean] = js.undefined
+  
   var shebang: js.UndefOr[Boolean] = js.undefined
 }
-
 object ParseOptions {
-  @scala.inline
-  def apply(
-    bare_returns: js.UndefOr[Boolean] = js.undefined,
-    ecma: ECMA = null,
-    html5_comments: js.UndefOr[Boolean] = js.undefined,
-    shebang: js.UndefOr[Boolean] = js.undefined
-  ): ParseOptions = {
+  
+  inline def apply(): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bare_returns)) __obj.updateDynamic("bare_returns")(bare_returns.asInstanceOf[js.Any])
-    if (ecma != null) __obj.updateDynamic("ecma")(ecma.asInstanceOf[js.Any])
-    if (!js.isUndefined(html5_comments)) __obj.updateDynamic("html5_comments")(html5_comments.asInstanceOf[js.Any])
-    if (!js.isUndefined(shebang)) __obj.updateDynamic("shebang")(shebang.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
+  
+  extension [Self <: ParseOptions](x: Self) {
+    
+    inline def setBare_returns(value: Boolean): Self = StObject.set(x, "bare_returns", value.asInstanceOf[js.Any])
+    
+    inline def setBare_returnsUndefined: Self = StObject.set(x, "bare_returns", js.undefined)
+    
+    inline def setEcma(value: ECMA): Self = StObject.set(x, "ecma", value.asInstanceOf[js.Any])
+    
+    inline def setEcmaUndefined: Self = StObject.set(x, "ecma", js.undefined)
+    
+    inline def setHtml5_comments(value: Boolean): Self = StObject.set(x, "html5_comments", value.asInstanceOf[js.Any])
+    
+    inline def setHtml5_commentsUndefined: Self = StObject.set(x, "html5_comments", js.undefined)
+    
+    inline def setShebang(value: Boolean): Self = StObject.set(x, "shebang", value.asInstanceOf[js.Any])
+    
+    inline def setShebangUndefined: Self = StObject.set(x, "shebang", js.undefined)
+  }
 }
-

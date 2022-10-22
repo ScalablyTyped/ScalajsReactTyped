@@ -1,21 +1,29 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.Anon0
-import typingsJapgolly.antdMobileRn.TypeofItem
-import typingsJapgolly.antdMobileRn.listIndexNativeMod.default
+import typingsJapgolly.antdMobileRn.anon.Styles
+import typingsJapgolly.antdMobileRn.anon.TypeofItem
+import typingsJapgolly.antdMobileRn.libListIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "List")
 @js.native
-class List () extends default
-
+open class List () extends default
 /* static members */
-@JSImport("antd-mobile-rn", "List")
-@js.native
-object List extends js.Object {
-  var Item: TypeofItem = js.native
-  var defaultProps: Anon0 = js.native
+object List {
+  
+  @JSImport("antd-mobile-rn", "List")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "List.Item")
+  @js.native
+  def Item: TypeofItem = js.native
+  inline def Item_=(x: TypeofItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile-rn", "List.defaultProps")
+  @js.native
+  def defaultProps: Styles = js.native
+  inline def defaultProps_=(x: Styles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

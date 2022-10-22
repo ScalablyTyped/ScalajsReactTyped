@@ -1,32 +1,26 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClearScrollParams extends GenericParams {
+trait ClearScrollParams
+  extends StObject
+     with GenericParams {
+  
   var scrollId: NameList
 }
-
 object ClearScrollParams {
-  @scala.inline
-  def apply(
-    scrollId: NameList,
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    requestTimeout: Int | Double = null
-  ): ClearScrollParams = {
+  
+  inline def apply(scrollId: NameList): ClearScrollParams = {
     val __obj = js.Dynamic.literal(scrollId = scrollId.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearScrollParams]
   }
+  
+  extension [Self <: ClearScrollParams](x: Self) {
+    
+    inline def setScrollId(value: NameList): Self = StObject.set(x, "scrollId", value.asInstanceOf[js.Any])
+    
+    inline def setScrollIdVarargs(value: String*): Self = StObject.set(x, "scrollId", js.Array(value*))
+  }
 }
-

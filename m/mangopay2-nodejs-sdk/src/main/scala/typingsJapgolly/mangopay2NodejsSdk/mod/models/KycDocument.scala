@@ -1,55 +1,69 @@
 package typingsJapgolly.mangopay2NodejsSdk.mod.models
 
-import typingsJapgolly.mangopay2NodejsSdk.PartialKycDocumentData
-import typingsJapgolly.mangopay2NodejsSdk.mod.Timestamp
-import typingsJapgolly.mangopay2NodejsSdk.mod.kycDocument.DocumentStatus
-import typingsJapgolly.mangopay2NodejsSdk.mod.kycDocument.KYCDocumentRefusedReasonType
-import typingsJapgolly.mangopay2NodejsSdk.mod.kycDocument.KycDocumentData
+import typingsJapgolly.mangopay2NodejsSdk.anon.PartialKycDocumentData
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.DocumentStatus
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.KYCDocumentRefusedReasonType
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.KycDocumentData
+import typingsJapgolly.mangopay2NodejsSdk.typingsTypesMod.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.KycDocument")
 @js.native
-class KycDocument protected ()
+open class KycDocument protected ()
   extends EntityBase[KycDocumentData]
      with KycDocumentData {
   def this(data: PartialKycDocumentData) = this()
+  
   /* CompleteClass */
-  override var CreationDate: Double = js.native
+  var CreationDate: Double = js.native
+  
+  /**
+    * More information regarding why the document has been rejected
+    */
   /* CompleteClass */
-  override var Id: String = js.native
+  var Flags: js.Array[String] = js.native
+  
+  /* CompleteClass */
+  var Id: String = js.native
+  
   /**
     * The date when the document was processed by MANGOPAY
     */
   /* CompleteClass */
-  override var ProcessedDate: Timestamp = js.native
+  var ProcessedDate: Timestamp = js.native
+  
   /**
     * The message accompanying a refusal
     */
   /* CompleteClass */
-  override var RefusedReasonMessage: String = js.native
+  var RefusedReasonMessage: String = js.native
+  
   /**
     * The type of reason for refusal
     */
   /* CompleteClass */
-  override var RefusedReasonType: KYCDocumentRefusedReasonType = js.native
+  var RefusedReasonType: KYCDocumentRefusedReasonType = js.native
+  
   /**
     * The status of this KYC/Dispute document
     */
   /* CompleteClass */
-  override var Status: DocumentStatus = js.native
+  var Status: DocumentStatus = js.native
+  
   /* CompleteClass */
-  override var Tag: String = js.native
+  var Tag: String = js.native
+  
   /**
     * Gives the type of the KYC document
     */
   /* CompleteClass */
-  override var Type: typingsJapgolly.mangopay2NodejsSdk.mod.kycDocument.KycDocumentType = js.native
+  var Type: typingsJapgolly.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.KycDocumentType = js.native
+  
   /**
     * The object owner's UserId
     */
   /* CompleteClass */
-  override var UserId: String = js.native
+  var UserId: String = js.native
 }
-

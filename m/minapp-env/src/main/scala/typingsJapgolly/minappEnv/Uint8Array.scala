@@ -1,42 +1,40 @@
 package typingsJapgolly.minappEnv
 
 import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.minappEnv.minappEnvStrings.UInt8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A typed array of 8-bit unsigned integer values. The contents are initialized to 0. If the
   * requested number of bytes could not be allocated an exception is raised.
   */
 @js.native
-trait Uint8Array extends /* index */ NumberDictionary[Double] {
+trait Uint8Array
+  extends StObject
+     with /* index */ NumberDictionary[Double] {
+  
   /**
     * The size in bytes of each element in the array.
     */
   val BYTES_PER_ELEMENT: Double = js.native
+  
   /**
     * The ArrayBuffer instance referenced by the array.
     */
   val buffer: ArrayBufferLike = js.native
+  
   /**
     * The length in bytes of the array.
     */
   val byteLength: Double = js.native
+  
   /**
     * The offset in bytes of the array.
     */
   val byteOffset: Double = js.native
-  @JSName(scala.scalajs.js.Symbol.iterator)
-  var iterator: js.Function0[IterableIterator[Double]] = js.native
-  /**
-    * The length of the array.
-    */
-  val length: Double = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
-  val toStringTag: UInt8Array = js.native
+  
   /**
     * Returns the this object after copying a section of the array identified by start and end
     * to the same array starting at position target
@@ -48,10 +46,12 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
     */
   def copyWithin(target: Double, start: Double): this.type = js.native
   def copyWithin(target: Double, start: Double, end: Double): this.type = js.native
+  
   /**
     * Returns an array of key, value pairs for every entry in the array
     */
   def entries(): IterableIterator[js.Tuple2[Double, Double]] = js.native
+  
   /**
     * Determines whether all the members of an array satisfy the specified test.
     * @param callbackfn A function that accepts up to three arguments. The every method calls
@@ -65,8 +65,9 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
   ): scala.Boolean = js.native
   def every(
     callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): scala.Boolean = js.native
+  
   /**
     * Returns the this object after filling the section identified by start and end with value
     * @param value value to fill array section with
@@ -78,6 +79,8 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
   def fill(value: Double): this.type = js.native
   def fill(value: Double, start: Double): this.type = js.native
   def fill(value: Double, start: Double, end: Double): this.type = js.native
+  def fill(value: Double, start: Unit, end: Double): this.type = js.native
+  
   /**
     * Returns the elements of an array that meet the condition specified in a callback function.
     * @param callbackfn A function that accepts up to three arguments. The filter method calls
@@ -85,11 +88,12 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
     * @param thisArg An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
     */
-  def filter(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, _]): Uint8Array = js.native
+  def filter(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any]): Uint8Array = js.native
   def filter(
-    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, _],
-    thisArg: js.Any
+    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any],
+    thisArg: Any
   ): Uint8Array = js.native
+  
   /**
     * Returns the value of the first element in the array where predicate is true, and undefined
     * otherwise.
@@ -104,8 +108,9 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
   ): js.UndefOr[Double] = js.native
   def find(
     predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): js.UndefOr[Double] = js.native
+  
   /**
     * Returns the index of the first element in the array where predicate is true, and -1
     * otherwise.
@@ -120,8 +125,9 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
   ): Double = js.native
   def findIndex(
     predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Double = js.native
+  
   /**
     * Performs the specified action for each element in an array.
     * @param callbackfn  A function that accepts up to three arguments. forEach calls the
@@ -132,8 +138,9 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
   def forEach(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Unit]): Unit = js.native
   def forEach(
     callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Unit],
-    thisArg: js.Any
+    thisArg: Any
   ): Unit = js.native
+  
   /**
     * Returns the index of the first occurrence of a value in an array.
     * @param searchElement The value to locate in the array.
@@ -142,6 +149,10 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
     */
   def indexOf(searchElement: Double): Double = js.native
   def indexOf(searchElement: Double, fromIndex: Double): Double = js.native
+  
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[Double]] = js.native
+  
   /**
     * Adds all the elements of an array separated by the specified separator string.
     * @param separator A string used to separate one element of an array from the next in the
@@ -149,10 +160,12 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
     */
   def join(): java.lang.String = js.native
   def join(separator: java.lang.String): java.lang.String = js.native
+  
   /**
     * Returns an list of keys in the array
     */
   def keys(): IterableIterator[Double] = js.native
+  
   /**
     * Returns the index of the last occurrence of a value in an array.
     * @param searchElement The value to locate in the array.
@@ -161,6 +174,12 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
     */
   def lastIndexOf(searchElement: Double): Double = js.native
   def lastIndexOf(searchElement: Double, fromIndex: Double): Double = js.native
+  
+  /**
+    * The length of the array.
+    */
+  val length: Double = js.native
+  
   /**
     * Calls a defined callback function on each element of an array, and returns an array that
     * contains the results.
@@ -172,8 +191,9 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
   def map(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double]): Uint8Array = js.native
   def map(
     callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double],
-    thisArg: js.Any
+    thisArg: Any
   ): Uint8Array = js.native
+  
   /**
     * Calls the specified callback function for all the elements in an array. The return value of
     * the callback function is the accumulated result, and is provided as an argument in the next
@@ -223,6 +243,7 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
     ],
     initialValue: U
   ): U = js.native
+  
   /**
     * Calls the specified callback function for all the elements in an array, in descending order.
     * The return value of the callback function is the accumulated result, and is provided as an
@@ -272,10 +293,12 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
     ],
     initialValue: U
   ): U = js.native
+  
   /**
     * Reverses the elements in an Array.
     */
   def reverse(): Uint8Array = js.native
+  
   /**
     * Sets a value or an array of values.
     * @param array A typed or untyped array of values to set.
@@ -283,6 +306,7 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
     */
   def set(array: ArrayLike[Double]): Unit = js.native
   def set(array: ArrayLike[Double], offset: Double): Unit = js.native
+  
   /**
     * Returns a section of an array.
     * @param start The beginning of the specified portion of the array.
@@ -291,6 +315,8 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
   def slice(): Uint8Array = js.native
   def slice(start: Double): Uint8Array = js.native
   def slice(start: Double, end: Double): Uint8Array = js.native
+  def slice(start: Unit, end: Double): Uint8Array = js.native
+  
   /**
     * Determines whether the specified callback function returns true for any element of an array.
     * @param callbackfn A function that accepts up to three arguments. The some method calls the
@@ -304,8 +330,9 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
   ): scala.Boolean = js.native
   def some(
     callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): scala.Boolean = js.native
+  
   /**
     * Sorts an array.
     * @param compareFn The name of the function used to determine the order of the elements. If
@@ -313,6 +340,7 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
     */
   def sort(): this.type = js.native
   def sort(compareFn: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
+  
   /**
     * Gets a new Uint8Array view of the ArrayBuffer store for this array, referencing the elements
     * at begin, inclusive, up to end, exclusive.
@@ -321,13 +349,12 @@ trait Uint8Array extends /* index */ NumberDictionary[Double] {
     */
   def subarray(begin: Double): Uint8Array = js.native
   def subarray(begin: Double, end: Double): Uint8Array = js.native
+  
+  @JSName(js.Symbol.toStringTag)
+  val toStringTag: UInt8Array = js.native
+  
   /**
     * Returns an list of values in the array
     */
   def values(): IterableIterator[Double] = js.native
 }
-
-@JSGlobal("Uint8Array")
-@js.native
-object Uint8Array extends TopLevel[Uint8ArrayConstructor]
-

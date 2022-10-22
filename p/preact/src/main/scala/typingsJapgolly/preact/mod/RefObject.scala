@@ -1,19 +1,24 @@
 package typingsJapgolly.preact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RefObject[T] extends js.Object {
-  var current: js.UndefOr[T | Null] = js.undefined
+trait RefObject[T] extends StObject {
+  
+  var current: T | Null
 }
-
 object RefObject {
-  @scala.inline
-  def apply[T](current: T = null): RefObject[T] = {
-    val __obj = js.Dynamic.literal()
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+  
+  inline def apply[T](): RefObject[T] = {
+    val __obj = js.Dynamic.literal(current = null)
     __obj.asInstanceOf[RefObject[T]]
   }
+  
+  extension [Self <: RefObject[?], T](x: Self & RefObject[T]) {
+    
+    inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentNull: Self = StObject.set(x, "current", null)
+  }
 }
-

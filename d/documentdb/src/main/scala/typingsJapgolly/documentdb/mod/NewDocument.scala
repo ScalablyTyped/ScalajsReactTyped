@@ -1,30 +1,30 @@
 package typingsJapgolly.documentdb.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NewDocument
-  extends UniqueId
+  extends StObject
+     with UniqueId
      with /** Custom properties */
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
+  
   /** The time to live in seconds of the document. */
   var ttl: js.UndefOr[Double] = js.undefined
 }
-
 object NewDocument {
-  @scala.inline
-  def apply(
-    id: String,
-    StringDictionary: /** Custom properties */
-  /* key */ StringDictionary[js.Any] = null,
-    ttl: Int | Double = null
-  ): NewDocument = {
+  
+  inline def apply(id: String): NewDocument = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewDocument]
   }
+  
+  extension [Self <: NewDocument](x: Self) {
+    
+    inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+  }
 }
-

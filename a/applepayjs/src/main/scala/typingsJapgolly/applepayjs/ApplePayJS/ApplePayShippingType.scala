@@ -1,8 +1,8 @@
 package typingsJapgolly.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A type that indicates how purchased items are to be shipped.
@@ -13,18 +13,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.applepayjs.applepayjsStrings.storePickup
   - typingsJapgolly.applepayjs.applepayjsStrings.servicePickup
 */
-trait ApplePayShippingType extends js.Object
-
+trait ApplePayShippingType extends StObject
 object ApplePayShippingType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def delivery: typingsJapgolly.applepayjs.applepayjsStrings.delivery = this.cast("delivery")
-  @scala.inline
-  def servicePickup: typingsJapgolly.applepayjs.applepayjsStrings.servicePickup = this.cast("servicePickup")
-  @scala.inline
-  def shipping: typingsJapgolly.applepayjs.applepayjsStrings.shipping = this.cast("shipping")
-  @scala.inline
-  def storePickup: typingsJapgolly.applepayjs.applepayjsStrings.storePickup = this.cast("storePickup")
+  
+  inline def delivery: typingsJapgolly.applepayjs.applepayjsStrings.delivery = "delivery".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.delivery]
+  
+  inline def servicePickup: typingsJapgolly.applepayjs.applepayjsStrings.servicePickup = "servicePickup".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.servicePickup]
+  
+  inline def shipping: typingsJapgolly.applepayjs.applepayjsStrings.shipping = "shipping".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.shipping]
+  
+  inline def storePickup: typingsJapgolly.applepayjs.applepayjsStrings.storePickup = "storePickup".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.storePickup]
 }
-

@@ -1,21 +1,36 @@
 package typingsJapgolly.materialUi
 
-import typingsJapgolly.materialUi.MaterialUI.SvgIconProps
+import japgolly.scalajs.react.facade.React.ComponentClassP
+import typingsJapgolly.materialUi.MaterialUI.List.ListItemProps
+import typingsJapgolly.materialUi.MaterialUI.List.ListProps
+import typingsJapgolly.materialUi.MaterialUI.List.SelectableProps
+import typingsJapgolly.materialUi.materialUiStrings.onChange
 import typingsJapgolly.react.mod.Component
+import typingsJapgolly.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/action/list", JSImport.Namespace)
-@js.native
-object listMod extends js.Object {
-  @js.native
-  class ActionList ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+object listMod {
   
+  @JSImport("material-ui/List", JSImport.Namespace)
   @js.native
-  class default ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  val ^ : js.Any = js.native
   
+  @JSImport("material-ui/List", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typingsJapgolly.materialUi.listMod.List
+  
+  @JSImport("material-ui/List", "List")
+  @js.native
+  open class List ()
+    extends Component[ListProps, js.Object, Any]
+  
+  @JSImport("material-ui/List", "ListItem")
+  @js.native
+  open class ListItem ()
+    extends Component[ListItemProps, js.Object, Any]
+  
+  inline def makeSelectable[P /* <: js.Object */](component: ComponentClassP[P & js.Object]): ComponentClassP[(Omit[P, onChange]) & SelectableProps & js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSelectable")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClassP[(Omit[P, onChange]) & SelectableProps & js.Object]]
 }
-

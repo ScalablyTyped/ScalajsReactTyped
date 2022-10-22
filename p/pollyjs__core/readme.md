@@ -1,7 +1,7 @@
 
 # Scala.js typings for pollyjs__core
 
-Typings are for version 4.0
+Typings are for version 4.3
 
 ## Library description:
 Record, replay, and stub HTTP Interactions
@@ -10,15 +10,12 @@ Record, replay, and stub HTTP Interactions
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/core |
 | Keywords           | polly, pollyjs, vcr, record, replay, recorder, test, mock |
-| # releases         | 32 |
-| # dependents       | 8 |
-| # downloads        | 479975 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 334032.3333333333 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
-- [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Fcore)
     
 

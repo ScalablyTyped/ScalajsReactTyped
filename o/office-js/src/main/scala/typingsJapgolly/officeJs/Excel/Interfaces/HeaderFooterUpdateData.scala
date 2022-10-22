@@ -1,79 +1,97 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the HeaderFooter object, for use in `headerFooter.set({ ... })`. */
-trait HeaderFooterUpdateData extends js.Object {
+trait HeaderFooterUpdateData extends StObject {
+  
   /**
+    * The center footer of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
-    * Gets or sets the center footer of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var centerFooter: js.UndefOr[String] = js.undefined
+  
   /**
+    * The center header of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
-    * Gets or sets the center header of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var centerHeader: js.UndefOr[String] = js.undefined
+  
   /**
+    * The left footer of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
-    * Gets or sets the left footer of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var leftFooter: js.UndefOr[String] = js.undefined
+  
   /**
+    * The left header of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
-    * Gets or sets the left header of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var leftHeader: js.UndefOr[String] = js.undefined
+  
   /**
+    * The right footer of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
-    * Gets or sets the right footer of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var rightFooter: js.UndefOr[String] = js.undefined
+  
   /**
+    * The right header of the worksheet.
+    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     *
-    * Gets or sets the right header of the worksheet.
-    To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var rightHeader: js.UndefOr[String] = js.undefined
 }
-
 object HeaderFooterUpdateData {
-  @scala.inline
-  def apply(
-    centerFooter: String = null,
-    centerHeader: String = null,
-    leftFooter: String = null,
-    leftHeader: String = null,
-    rightFooter: String = null,
-    rightHeader: String = null
-  ): HeaderFooterUpdateData = {
+  
+  inline def apply(): HeaderFooterUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (centerFooter != null) __obj.updateDynamic("centerFooter")(centerFooter.asInstanceOf[js.Any])
-    if (centerHeader != null) __obj.updateDynamic("centerHeader")(centerHeader.asInstanceOf[js.Any])
-    if (leftFooter != null) __obj.updateDynamic("leftFooter")(leftFooter.asInstanceOf[js.Any])
-    if (leftHeader != null) __obj.updateDynamic("leftHeader")(leftHeader.asInstanceOf[js.Any])
-    if (rightFooter != null) __obj.updateDynamic("rightFooter")(rightFooter.asInstanceOf[js.Any])
-    if (rightHeader != null) __obj.updateDynamic("rightHeader")(rightHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderFooterUpdateData]
   }
+  
+  extension [Self <: HeaderFooterUpdateData](x: Self) {
+    
+    inline def setCenterFooter(value: String): Self = StObject.set(x, "centerFooter", value.asInstanceOf[js.Any])
+    
+    inline def setCenterFooterUndefined: Self = StObject.set(x, "centerFooter", js.undefined)
+    
+    inline def setCenterHeader(value: String): Self = StObject.set(x, "centerHeader", value.asInstanceOf[js.Any])
+    
+    inline def setCenterHeaderUndefined: Self = StObject.set(x, "centerHeader", js.undefined)
+    
+    inline def setLeftFooter(value: String): Self = StObject.set(x, "leftFooter", value.asInstanceOf[js.Any])
+    
+    inline def setLeftFooterUndefined: Self = StObject.set(x, "leftFooter", js.undefined)
+    
+    inline def setLeftHeader(value: String): Self = StObject.set(x, "leftHeader", value.asInstanceOf[js.Any])
+    
+    inline def setLeftHeaderUndefined: Self = StObject.set(x, "leftHeader", js.undefined)
+    
+    inline def setRightFooter(value: String): Self = StObject.set(x, "rightFooter", value.asInstanceOf[js.Any])
+    
+    inline def setRightFooterUndefined: Self = StObject.set(x, "rightFooter", js.undefined)
+    
+    inline def setRightHeader(value: String): Self = StObject.set(x, "rightHeader", value.asInstanceOf[js.Any])
+    
+    inline def setRightHeaderUndefined: Self = StObject.set(x, "rightHeader", js.undefined)
+  }
 }
-

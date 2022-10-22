@@ -1,47 +1,45 @@
 package typingsJapgolly.instabugReactnative.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait invocationEvent extends js.Object
-
+sealed trait invocationEvent extends StObject
 @JSImport("instabug-reactnative", "invocationEvent")
 @js.native
-object invocationEvent extends js.Object {
-  @js.native
-  sealed trait floatingButton extends invocationEvent
-  
-  @js.native
-  sealed trait none extends invocationEvent
-  
-  @js.native
-  sealed trait screenshot extends invocationEvent
-  
-  @js.native
-  sealed trait shake extends invocationEvent
-  
-  @js.native
-  sealed trait twoFingersSwipe extends invocationEvent
+object invocationEvent extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[invocationEvent with Double] = js.native
-  /* 4 */ @js.native
-  object floatingButton extends TopLevel[floatingButton with Double]
+  def apply(value: Double): js.UndefOr[invocationEvent & Double] = js.native
   
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
+  @js.native
+  sealed trait floatingButton
+    extends StObject
+       with invocationEvent
+  /* 4 */ val floatingButton: typingsJapgolly.instabugReactnative.mod.invocationEvent.floatingButton & Double = js.native
   
-  /* 2 */ @js.native
-  object screenshot extends TopLevel[screenshot with Double]
+  @js.native
+  sealed trait none
+    extends StObject
+       with invocationEvent
+  /* 0 */ val none: typingsJapgolly.instabugReactnative.mod.invocationEvent.none & Double = js.native
   
-  /* 1 */ @js.native
-  object shake extends TopLevel[shake with Double]
+  @js.native
+  sealed trait screenshot
+    extends StObject
+       with invocationEvent
+  /* 2 */ val screenshot: typingsJapgolly.instabugReactnative.mod.invocationEvent.screenshot & Double = js.native
   
-  /* 3 */ @js.native
-  object twoFingersSwipe extends TopLevel[twoFingersSwipe with Double]
+  @js.native
+  sealed trait shake
+    extends StObject
+       with invocationEvent
+  /* 1 */ val shake: typingsJapgolly.instabugReactnative.mod.invocationEvent.shake & Double = js.native
   
+  @js.native
+  sealed trait twoFingersSwipe
+    extends StObject
+       with invocationEvent
+  /* 3 */ val twoFingersSwipe: typingsJapgolly.instabugReactnative.mod.invocationEvent.twoFingersSwipe & Double = js.native
 }
-

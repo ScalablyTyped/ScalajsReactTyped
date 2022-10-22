@@ -1,22 +1,26 @@
 package typingsJapgolly.googleAdwordsScripts
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait hasTrackingTemplateBuilder[B] extends js.Object {
+trait hasTrackingTemplateBuilder[B] extends StObject {
+  
   def withCustomParameters(customParameters: js.Object): B
+  
   def withTrackingTemplate(trackingTemplate: String): B
 }
-
 object hasTrackingTemplateBuilder {
-  @scala.inline
-  def apply[B](withCustomParameters: js.Object => CallbackTo[B], withTrackingTemplate: String => CallbackTo[B]): hasTrackingTemplateBuilder[B] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withCustomParameters")(js.Any.fromFunction1((t0: js.Object) => withCustomParameters(t0).runNow()))
-    __obj.updateDynamic("withTrackingTemplate")(js.Any.fromFunction1((t0: java.lang.String) => withTrackingTemplate(t0).runNow()))
+  
+  inline def apply[B](withCustomParameters: js.Object => B, withTrackingTemplate: String => B): hasTrackingTemplateBuilder[B] = {
+    val __obj = js.Dynamic.literal(withCustomParameters = js.Any.fromFunction1(withCustomParameters), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
     __obj.asInstanceOf[hasTrackingTemplateBuilder[B]]
   }
+  
+  extension [Self <: hasTrackingTemplateBuilder[?], B](x: Self & hasTrackingTemplateBuilder[B]) {
+    
+    inline def setWithCustomParameters(value: js.Object => B): Self = StObject.set(x, "withCustomParameters", js.Any.fromFunction1(value))
+    
+    inline def setWithTrackingTemplate(value: String => B): Self = StObject.set(x, "withTrackingTemplate", js.Any.fromFunction1(value))
+  }
 }
-

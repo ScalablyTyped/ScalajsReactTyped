@@ -1,38 +1,44 @@
 package typingsJapgolly.reactBootstrapTypeahead.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadProps<any>, 'align' | 'dropup' | 'flip' | 'onMenuHide' | 'onMenuShow' | 'onMenuToggle'> */
-trait OverlayTypeaheadProps extends js.Object {
+/* Inlined std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadProps<any>, 'align' | 'dropup' | 'flip' | 'onMenuToggle'> */
+trait OverlayTypeaheadProps extends StObject {
+  
   var align: js.UndefOr[TypeaheadAlign] = js.undefined
+  
   var dropup: js.UndefOr[Boolean] = js.undefined
+  
   var flip: js.UndefOr[Boolean] = js.undefined
-  var onMenuHide: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onMenuShow: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var onMenuToggle: js.UndefOr[js.Function1[/* show */ Boolean, Unit]] = js.undefined
 }
-
 object OverlayTypeaheadProps {
-  @scala.inline
-  def apply(
-    align: TypeaheadAlign = null,
-    dropup: js.UndefOr[Boolean] = js.undefined,
-    flip: js.UndefOr[Boolean] = js.undefined,
-    onMenuHide: js.UndefOr[Callback] = js.undefined,
-    onMenuShow: js.UndefOr[Callback] = js.undefined,
-    onMenuToggle: /* show */ Boolean => Callback = null
-  ): OverlayTypeaheadProps = {
+  
+  inline def apply(): OverlayTypeaheadProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropup)) __obj.updateDynamic("dropup")(dropup.asInstanceOf[js.Any])
-    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
-    onMenuHide.foreach(p => __obj.updateDynamic("onMenuHide")(p.toJsFn))
-    onMenuShow.foreach(p => __obj.updateDynamic("onMenuShow")(p.toJsFn))
-    if (onMenuToggle != null) __obj.updateDynamic("onMenuToggle")(js.Any.fromFunction1((t0: /* show */ scala.Boolean) => onMenuToggle(t0).runNow()))
     __obj.asInstanceOf[OverlayTypeaheadProps]
   }
+  
+  extension [Self <: OverlayTypeaheadProps](x: Self) {
+    
+    inline def setAlign(value: TypeaheadAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setDropup(value: Boolean): Self = StObject.set(x, "dropup", value.asInstanceOf[js.Any])
+    
+    inline def setDropupUndefined: Self = StObject.set(x, "dropup", js.undefined)
+    
+    inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+    
+    inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+    
+    inline def setOnMenuToggle(value: /* show */ Boolean => Callback): Self = StObject.set(x, "onMenuToggle", js.Any.fromFunction1((t0: /* show */ Boolean) => value(t0).runNow()))
+    
+    inline def setOnMenuToggleUndefined: Self = StObject.set(x, "onMenuToggle", js.undefined)
+  }
 }
-

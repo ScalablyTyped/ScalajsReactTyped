@@ -1,8 +1,8 @@
 package typingsJapgolly.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DEPRECATED - Use Box with the scrollable and alwaysScroll options instead.
@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("blessed", "Widgets.ScrollableTextElement")
 @js.native
-class ScrollableTextElement () extends ScrollableBoxElement
-
+open class ScrollableTextElement protected () extends ScrollableBoxElement {
+  def this(opts: ElementOptions) = this()
+}

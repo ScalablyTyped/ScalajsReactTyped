@@ -1,17 +1,23 @@
 package typingsJapgolly.reactWindow.mod
 
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactWindow.AnonAlign
-import typingsJapgolly.reactWindow.AnonRowIndex
-import typingsJapgolly.reactWindow.AnonScrollLeft
+import typingsJapgolly.reactWindow.anon.RowIndex
+import typingsJapgolly.reactWindow.anon.ScrollLeft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-window", "VariableSizeGrid")
 @js.native
-class VariableSizeGrid ()
-  extends Component[VariableSizeGridProps, js.Object, js.Any] {
+open class VariableSizeGrid[T] protected ()
+  extends Component[VariableSizeGridProps[T], js.Object, Any] {
+  def this(props: VariableSizeGridProps[T]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: VariableSizeGridProps[T], context: Any) = this()
+  
   /**
     * VariableSizeGrid caches offsets and measurements for each column index for performance purposes.
     * This method clears that cached data for all columns after (and including) the specified index.
@@ -23,6 +29,7 @@ class VariableSizeGrid ()
     */
   def resetAfterColumnIndex(index: Double): Unit = js.native
   def resetAfterColumnIndex(index: Double, shouldForceUpdate: Boolean): Unit = js.native
+  
   /**
     * VariableSizeGrid caches offsets and measurements for each item for performance purposes.
     * This method clears that cached data for all items after (and including) the specified indices.
@@ -32,7 +39,8 @@ class VariableSizeGrid ()
     * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
     * specify a value of false for the optional shouldForceUpdate parameter.
     */
-  def resetAfterIndices(params: AnonRowIndex): Unit = js.native
+  def resetAfterIndices(params: RowIndex): Unit = js.native
+  
   /**
     * VariableSizeGrid caches offsets and measurements for each row index for performance purposes.
     * This method clears that cached data for all rows after (and including) the specified index.
@@ -44,10 +52,12 @@ class VariableSizeGrid ()
     */
   def resetAfterRowIndex(index: Double): Unit = js.native
   def resetAfterRowIndex(index: Double, shouldForceUpdate: Boolean): Unit = js.native
+  
   /**
     * Scroll to the specified offsets.
     */
-  def scrollTo(params: AnonScrollLeft): Unit = js.native
+  def scrollTo(params: ScrollLeft): Unit = js.native
+  
   /**
     * Scroll to the specified item.
     *
@@ -65,6 +75,5 @@ class VariableSizeGrid ()
     *
     * If either `columnIndex` or `rowIndex` are omitted, `scrollLeft` or `scrollTop` will be unchanged (respectively).
     */
-  def scrollToItem(params: AnonAlign): Unit = js.native
+  def scrollToItem(params: typingsJapgolly.reactWindow.anon.Align): Unit = js.native
 }
-

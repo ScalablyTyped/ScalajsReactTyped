@@ -10,10 +10,10 @@ Low-level native bindings to PostgreSQL libpq
 | ------------------ | :-------------: |
 | Full name          | libpq |
 | Keywords           | postgres, libpq |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 1298474 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 294696.0 |
+| # stars            | 95.0 |
 
 ## Links
 - [Homepage](https://github.com/brianc/node-libpq#readme)

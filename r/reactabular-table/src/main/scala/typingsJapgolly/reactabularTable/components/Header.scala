@@ -1,43 +1,34 @@
 package typingsJapgolly.reactabularTable.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactabularTable.PartialCSSStyleDeclaratio
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactabularTable.anon.PartialCSSStyleDeclaratio
 import typingsJapgolly.reactabularTable.mod.Column
 import typingsJapgolly.reactabularTable.mod.HeaderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Header {
-  def apply(
-    className: String = null,
-    headerRows: js.Array[Column] = null,
-    style: PartialCSSStyleDeclaratio = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[HeaderProps, typingsJapgolly.reactabularTable.mod.Header, Unit, HeaderProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (headerRows != null) __obj.updateDynamic("headerRows")(headerRows.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactabularTable.mod.HeaderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactabularTable.mod.Header](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactabularTable.mod.HeaderProps])(children: _*)
-  }
   @JSImport("reactabular-table", "Header")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactabularTable.mod.Header] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def headerRows(value: js.Array[Column]): this.type = set("headerRows", value.asInstanceOf[js.Any])
+    
+    inline def headerRowsVarargs(value: Column*): this.type = set("headerRows", js.Array(value*))
+    
+    inline def style(value: PartialCSSStyleDeclaratio): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Header.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: HeaderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

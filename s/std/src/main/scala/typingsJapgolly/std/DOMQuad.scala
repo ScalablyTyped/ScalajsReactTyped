@@ -1,40 +1,56 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.Instantiable4
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DOMQuad extends js.Object {
+trait DOMQuad extends StObject {
+  
+  /* standard dom */
+  def getBounds(): org.scalajs.dom.DOMRect
+  
+  /* standard dom */
   val p1: DOMPoint
+  
+  /* standard dom */
   val p2: DOMPoint
+  
+  /* standard dom */
   val p3: DOMPoint
+  
+  /* standard dom */
   val p4: DOMPoint
-  def getBounds(): DOMRect
-  def toJSON(): js.Any
+  
+  /* standard dom */
+  def toJSON(): Any
 }
-
-@JSGlobal("DOMQuad")
-@js.native
-object DOMQuad
-  extends Instantiable0[DOMQuad]
-     with Instantiable1[/* p1 */ DOMPointInit, DOMQuad]
-     with Instantiable2[/* p1 */ DOMPointInit, /* p2 */ DOMPointInit, DOMQuad]
-     with Instantiable3[/* p1 */ DOMPointInit, /* p2 */ DOMPointInit, /* p3 */ DOMPointInit, DOMQuad]
-     with Instantiable4[
-      /* p1 */ DOMPointInit, 
-      /* p2 */ DOMPointInit, 
-      /* p3 */ DOMPointInit, 
-      /* p4 */ DOMPointInit, 
-      DOMQuad
-    ] {
-  def fromQuad(): DOMQuad = js.native
-  def fromQuad(other: DOMQuadInit): DOMQuad = js.native
-  def fromRect(): DOMQuad = js.native
-  def fromRect(other: DOMRectInit): DOMQuad = js.native
+object DOMQuad {
+  
+  inline def apply(
+    getBounds: CallbackTo[org.scalajs.dom.DOMRect],
+    p1: DOMPoint,
+    p2: DOMPoint,
+    p3: DOMPoint,
+    p4: DOMPoint,
+    toJSON: CallbackTo[Any]
+  ): DOMQuad = {
+    val __obj = js.Dynamic.literal(getBounds = getBounds.toJsFn, p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any], p3 = p3.asInstanceOf[js.Any], p4 = p4.asInstanceOf[js.Any], toJSON = toJSON.toJsFn)
+    __obj.asInstanceOf[DOMQuad]
+  }
+  
+  extension [Self <: DOMQuad](x: Self) {
+    
+    inline def setGetBounds(value: CallbackTo[org.scalajs.dom.DOMRect]): Self = StObject.set(x, "getBounds", value.toJsFn)
+    
+    inline def setP1(value: DOMPoint): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+    
+    inline def setP2(value: DOMPoint): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+    
+    inline def setP3(value: DOMPoint): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
+    
+    inline def setP4(value: DOMPoint): Self = StObject.set(x, "p4", value.asInstanceOf[js.Any])
+    
+    inline def setToJSON(value: CallbackTo[Any]): Self = StObject.set(x, "toJSON", value.toJsFn)
+  }
 }
-

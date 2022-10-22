@@ -10,10 +10,10 @@ The lodash method `_.lowerFirst` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.lowerfirst |
 | Keywords           | lodash-modularized, lowerfirst |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 1477333 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1142685.3333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

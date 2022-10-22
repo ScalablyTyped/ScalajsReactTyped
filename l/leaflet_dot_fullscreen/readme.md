@@ -1,7 +1,7 @@
 
 # Scala.js typings for leaflet_dot_fullscreen
 
-Typings are for version 1.3
+Typings are for version 1.6
 
 ## Library description:
 Simple plugin for Leaflet that adds fullscreen button to your maps.
@@ -10,10 +10,10 @@ Simple plugin for Leaflet that adds fullscreen button to your maps.
 | ------------------ | :-------------: |
 | Full name          | leaflet.fullscreen |
 | Keywords           | leaflet, plugins, maps, fullscreen |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 113628 |
-| # stars            | 3 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 42001.666666666664 |
+| # stars            | 279.0 |
 
 ## Links
 - [Homepage](https://github.com/brunob/leaflet.fullscreen#readme)

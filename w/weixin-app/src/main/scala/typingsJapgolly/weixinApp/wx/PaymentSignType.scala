@@ -1,22 +1,18 @@
 package typingsJapgolly.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 开放接口-----微信支付
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.weixinApp.weixinAppStrings.MD5
   - typingsJapgolly.weixinApp.weixinAppStrings.`HMAC-SHA256`
 */
-trait PaymentSignType extends js.Object
-
+trait PaymentSignType extends StObject
 object PaymentSignType {
-  @scala.inline
-  def `HMAC-SHA256`: typingsJapgolly.weixinApp.weixinAppStrings.`HMAC-SHA256` = this.cast("HMAC-SHA256")
-  @scala.inline
-  def MD5: typingsJapgolly.weixinApp.weixinAppStrings.MD5 = this.cast("MD5")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `HMAC-SHA256`: typingsJapgolly.weixinApp.weixinAppStrings.`HMAC-SHA256` = "HMAC-SHA256".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.`HMAC-SHA256`]
+  
+  inline def MD5: typingsJapgolly.weixinApp.weixinAppStrings.MD5 = "MD5".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.MD5]
 }
-

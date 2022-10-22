@@ -1,47 +1,52 @@
 package typingsJapgolly.materializeCss.M
 
 import japgolly.scalajs.react.Callback
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MaterialboxOptions extends js.Object {
+trait MaterialboxOptions extends StObject {
+  
   /**
     * Transition in duration in milliseconds
     * @default 275
     */
   var inDuration: Double
-  /**
-    * Transition out duration in milliseconds
-    * @default 200
-    */
-  var outDuration: Double
+  
   /**
     * Callback function called after materialbox is closed
     * @default null
     */
   def onCloseEnd(el: Element): Unit
+  
   /**
     * Callback function called before materialbox is closed
     * @default null
     */
   def onCloseStart(el: Element): Unit
+  
   /**
     * Callback function called after materialbox is opened
     * @default null
     */
   def onOpenEnd(el: Element): Unit
+  
   /**
     * Callback function called before materialbox is opened
     * @default null
     */
   def onOpenStart(el: Element): Unit
+  
+  /**
+    * Transition out duration in milliseconds
+    * @default 200
+    */
+  var outDuration: Double
 }
-
 object MaterialboxOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     inDuration: Double,
     onCloseEnd: Element => Callback,
     onCloseStart: Element => Callback,
@@ -49,12 +54,22 @@ object MaterialboxOptions {
     onOpenStart: Element => Callback,
     outDuration: Double
   ): MaterialboxOptions = {
-    val __obj = js.Dynamic.literal(inDuration = inDuration.asInstanceOf[js.Any], outDuration = outDuration.asInstanceOf[js.Any])
-    __obj.updateDynamic("onCloseEnd")(js.Any.fromFunction1((t0: org.scalajs.dom.raw.Element) => onCloseEnd(t0).runNow()))
-    __obj.updateDynamic("onCloseStart")(js.Any.fromFunction1((t0: org.scalajs.dom.raw.Element) => onCloseStart(t0).runNow()))
-    __obj.updateDynamic("onOpenEnd")(js.Any.fromFunction1((t0: org.scalajs.dom.raw.Element) => onOpenEnd(t0).runNow()))
-    __obj.updateDynamic("onOpenStart")(js.Any.fromFunction1((t0: org.scalajs.dom.raw.Element) => onOpenStart(t0).runNow()))
+    val __obj = js.Dynamic.literal(inDuration = inDuration.asInstanceOf[js.Any], onCloseEnd = js.Any.fromFunction1((t0: Element) => onCloseEnd(t0).runNow()), onCloseStart = js.Any.fromFunction1((t0: Element) => onCloseStart(t0).runNow()), onOpenEnd = js.Any.fromFunction1((t0: Element) => onOpenEnd(t0).runNow()), onOpenStart = js.Any.fromFunction1((t0: Element) => onOpenStart(t0).runNow()), outDuration = outDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaterialboxOptions]
   }
+  
+  extension [Self <: MaterialboxOptions](x: Self) {
+    
+    inline def setInDuration(value: Double): Self = StObject.set(x, "inDuration", value.asInstanceOf[js.Any])
+    
+    inline def setOnCloseEnd(value: Element => Callback): Self = StObject.set(x, "onCloseEnd", js.Any.fromFunction1((t0: Element) => value(t0).runNow()))
+    
+    inline def setOnCloseStart(value: Element => Callback): Self = StObject.set(x, "onCloseStart", js.Any.fromFunction1((t0: Element) => value(t0).runNow()))
+    
+    inline def setOnOpenEnd(value: Element => Callback): Self = StObject.set(x, "onOpenEnd", js.Any.fromFunction1((t0: Element) => value(t0).runNow()))
+    
+    inline def setOnOpenStart(value: Element => Callback): Self = StObject.set(x, "onOpenStart", js.Any.fromFunction1((t0: Element) => value(t0).runNow()))
+    
+    inline def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
+  }
 }
-

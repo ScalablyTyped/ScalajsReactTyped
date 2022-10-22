@@ -1,39 +1,62 @@
 package typingsJapgolly.pako.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Header extends js.Object {
+trait Header extends StObject {
+  
   var comment: js.UndefOr[String] = js.undefined
+  
   var extra: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var hcrc: js.UndefOr[Boolean] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var os: js.UndefOr[Double] = js.undefined
+  
   var text: js.UndefOr[Boolean] = js.undefined
+  
   var time: js.UndefOr[Double] = js.undefined
 }
-
 object Header {
-  @scala.inline
-  def apply(
-    comment: String = null,
-    extra: js.Array[Double] = null,
-    hcrc: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    os: Int | Double = null,
-    text: js.UndefOr[Boolean] = js.undefined,
-    time: Int | Double = null
-  ): Header = {
+  
+  inline def apply(): Header = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (!js.isUndefined(hcrc)) __obj.updateDynamic("hcrc")(hcrc.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
+  
+  extension [Self <: Header](x: Self) {
+    
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    
+    inline def setExtra(value: js.Array[Double]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+    
+    inline def setExtraVarargs(value: Double*): Self = StObject.set(x, "extra", js.Array(value*))
+    
+    inline def setHcrc(value: Boolean): Self = StObject.set(x, "hcrc", value.asInstanceOf[js.Any])
+    
+    inline def setHcrcUndefined: Self = StObject.set(x, "hcrc", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOs(value: Double): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    
+    inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
+    
+    inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+  }
 }
-

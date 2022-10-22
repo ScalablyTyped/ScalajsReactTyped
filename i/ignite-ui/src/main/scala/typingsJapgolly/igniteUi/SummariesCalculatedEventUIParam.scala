@@ -1,27 +1,38 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SummariesCalculatedEventUIParam extends js.Object {
+trait SummariesCalculatedEventUIParam extends StObject {
+  
   /**
-  	 * Gets the data for calculated summaries.
-  	 */
-  var data: js.UndefOr[js.Array[_]] = js.undefined
+    * Gets the data for calculated summaries.
+    */
+  var data: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Gets the igGridSummaries widget object.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets the igGridSummaries widget object.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object SummariesCalculatedEventUIParam {
-  @scala.inline
-  def apply(data: js.Array[_] = null, owner: js.Any = null): SummariesCalculatedEventUIParam = {
+  
+  inline def apply(): SummariesCalculatedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummariesCalculatedEventUIParam]
   }
+  
+  extension [Self <: SummariesCalculatedEventUIParam](x: Self) {
+    
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

@@ -1,12 +1,20 @@
 package typingsJapgolly.cordovaPluginGlobalization
 
+import typingsJapgolly.cordovaPluginGlobalization.anon.Dst
+import typingsJapgolly.cordovaPluginGlobalization.anon.FormatLength
+import typingsJapgolly.cordovaPluginGlobalization.anon.Item
+import typingsJapgolly.cordovaPluginGlobalization.anon.Type
+import typingsJapgolly.cordovaPluginGlobalization.anon.Value
+import typingsJapgolly.cordovaPluginGlobalization.anon.ValueArray
+import typingsJapgolly.cordovaPluginGlobalization.anon.ValueNumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This plugin obtains information and performs operations specific to the user's locale and timezone. */
 @js.native
-trait Globalization extends js.Object {
+trait Globalization extends StObject {
+  
   /**
     * Returns a date formatted as a string according to the client's locale and timezone.
     * @param date      Date to format.
@@ -20,15 +28,16 @@ trait Globalization extends js.Object {
     */
   def dateToString(
     date: js.Date,
-    onSuccess: js.Function1[/* date */ AnonValue, Unit],
+    onSuccess: js.Function1[/* date */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   def dateToString(
     date: js.Date,
-    onSuccess: js.Function1[/* date */ AnonValue, Unit],
+    onSuccess: js.Function1[/* date */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    options: AnonFormatLength
+    options: FormatLength
   ): Unit = js.native
+  
   /**
     * Returns a pattern string to format and parse currency values according to the client's user preferences and ISO 4217 currency code.
     * @param currencyCode Should be a String of one of the ISO 4217 currency codes, for example 'USD'.
@@ -42,6 +51,7 @@ trait Globalization extends js.Object {
     onSuccess: js.Function1[/* result */ GlobalizationCurrencyPattern, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
+  
   /**
     * Returns an array of the names of the months or days of the week, depending on the client's user preferences and calendar.
     * @param onSuccess Called on success getting names with a properties object,
@@ -51,14 +61,15 @@ trait Globalization extends js.Object {
     * @param options   Optional parameters. Default: {type:'wide', item:'months'}
     */
   def getDateNames(
-    onSuccess: js.Function1[/* names */ AnonValueArray, Unit],
+    onSuccess: js.Function1[/* names */ ValueArray, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   def getDateNames(
-    onSuccess: js.Function1[/* names */ AnonValueArray, Unit],
+    onSuccess: js.Function1[/* names */ ValueArray, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    options: AnonItem
+    options: Item
   ): Unit = js.native
+  
   /**
     * Returns a pattern string to format and parse dates according to the client's user preferences.
     * @param onSuccess Called on success getting pattern with a GlobalizationDatePattern object
@@ -73,8 +84,9 @@ trait Globalization extends js.Object {
   def getDatePattern(
     onSuccess: js.Function1[/* datePattern */ GlobalizationDatePattern, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    options: AnonItem
+    options: Item
   ): Unit = js.native
+  
   /**
     * Returns the first day of the week according to the client's user preferences and calendar.
     * @param onSuccess Called on success with a day object,
@@ -83,9 +95,10 @@ trait Globalization extends js.Object {
     *                  The error's expected code is GlobalizationError.UNKNOWN_ERROR.
     */
   def getFirstDayOfWeek(
-    onSuccess: js.Function1[/* day */ AnonValueNumber, Unit],
+    onSuccess: js.Function1[/* day */ ValueNumber, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
+  
   /**
     * Get the string identifier for the client's current locale setting.
     * @param onSuccess Called on success getting the locale identifier with a properties object,
@@ -94,9 +107,10 @@ trait Globalization extends js.Object {
     *                  The error's expected code is GlobalizationError.UNKNOWN\_ERROR.
     */
   def getLocaleName(
-    onSuccess: js.Function1[/* locale */ AnonValue, Unit],
+    onSuccess: js.Function1[/* locale */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
+  
   /**
     * Returns a pattern string to format and parse numbers according to the client's user preferences.
     * @param onSuccess Called on success getting pattern with a GlobalizationNumberPattern object
@@ -111,8 +125,9 @@ trait Globalization extends js.Object {
   def getNumberPattern(
     onSuccess: js.Function1[/* result */ GlobalizationNumberPattern, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    format: AnonType
+    format: Type
   ): Unit = js.native
+  
   /**
     * Get the string identifier for the client's current language.
     * @param onSuccess Called on success getting the language with a properties object,
@@ -121,9 +136,10 @@ trait Globalization extends js.Object {
     *                  The error's expected code is GlobalizationError.UNKNOWN_ERROR.
     */
   def getPreferredLanguage(
-    onSuccess: js.Function1[/* language */ AnonValue, Unit],
+    onSuccess: js.Function1[/* language */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
+  
   /**
     * Indicates whether daylight savings time is in effect for a given date using the client's time zone and calendar.
     * @param {Date}                   date Date to check
@@ -134,9 +150,10 @@ trait Globalization extends js.Object {
     */
   def isDaylightSavingsTime(
     date: js.Date,
-    onSuccess: js.Function1[/* result */ AnonDst, Unit],
+    onSuccess: js.Function1[/* result */ Dst, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
+  
   /**
     * Returns a number formatted as a string according to the client's user preferences.
     * @param value     Number to format
@@ -148,15 +165,16 @@ trait Globalization extends js.Object {
     */
   def nubmerToString(
     value: Double,
-    onSuccess: js.Function1[/* result */ AnonValue, Unit],
+    onSuccess: js.Function1[/* result */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   def nubmerToString(
     value: Double,
-    onSuccess: js.Function1[/* result */ AnonValue, Unit],
+    onSuccess: js.Function1[/* result */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    format: AnonType
+    format: Type
   ): Unit = js.native
+  
   /**
     * Parses a date formatted as a string, according to the client's user preferences
     * and calendar using the time zone of the client, and returns the corresponding date object.
@@ -175,8 +193,9 @@ trait Globalization extends js.Object {
     dateString: String,
     onSuccess: js.Function1[/* date */ GlobalizationDate, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    options: AnonItem
+    options: Item
   ): Unit = js.native
+  
   /**
     * Parses a number formatted as a string according to the client's user preferences and returns the corresponding number.
     * @param value     String to parse
@@ -188,14 +207,13 @@ trait Globalization extends js.Object {
     */
   def stringToNumber(
     value: String,
-    onSuccess: js.Function1[/* result */ AnonValueNumber, Unit],
+    onSuccess: js.Function1[/* result */ ValueNumber, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   def stringToNumber(
     value: String,
-    onSuccess: js.Function1[/* result */ AnonValueNumber, Unit],
+    onSuccess: js.Function1[/* result */ ValueNumber, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
-    format: AnonType
+    format: Type
   ): Unit = js.native
 }
-

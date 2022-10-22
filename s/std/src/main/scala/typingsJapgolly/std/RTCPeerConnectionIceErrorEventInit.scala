@@ -1,35 +1,57 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCPeerConnectionIceErrorEventInit extends EventInit {
+trait RTCPeerConnectionIceErrorEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
+  var address: js.UndefOr[java.lang.String | Null] = js.undefined
+  
+  /* standard dom */
   var errorCode: Double
-  var hostCandidate: js.UndefOr[java.lang.String] = js.undefined
-  var statusText: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var errorText: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var port: js.UndefOr[Double | Null] = js.undefined
+  
+  /* standard dom */
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object RTCPeerConnectionIceErrorEventInit {
-  @scala.inline
-  def apply(
-    errorCode: Double,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    hostCandidate: java.lang.String = null,
-    statusText: java.lang.String = null,
-    url: java.lang.String = null
-  ): RTCPeerConnectionIceErrorEventInit = {
+  
+  inline def apply(errorCode: Double): RTCPeerConnectionIceErrorEventInit = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (hostCandidate != null) __obj.updateDynamic("hostCandidate")(hostCandidate.asInstanceOf[js.Any])
-    if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCPeerConnectionIceErrorEventInit]
   }
+  
+  extension [Self <: RTCPeerConnectionIceErrorEventInit](x: Self) {
+    
+    inline def setAddress(value: java.lang.String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressNull: Self = StObject.set(x, "address", null)
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    
+    inline def setErrorText(value: java.lang.String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
+    
+    inline def setErrorTextUndefined: Self = StObject.set(x, "errorText", js.undefined)
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortNull: Self = StObject.set(x, "port", null)
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    inline def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

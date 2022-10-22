@@ -1,0 +1,20 @@
+package typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.location
+  - typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.stationary
+  - typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.activity
+*/
+trait HeadlessTaskEventName extends StObject
+object HeadlessTaskEventName {
+  
+  inline def activity: typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.activity = "activity".asInstanceOf[typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.activity]
+  
+  inline def location: typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.location = "location".asInstanceOf[typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.location]
+  
+  inline def stationary: typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.stationary = "stationary".asInstanceOf[typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.stationary]
+}

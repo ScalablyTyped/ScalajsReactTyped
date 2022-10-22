@@ -1,26 +1,31 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * NxMeta...
   */
-trait INxMeta extends js.Object {
+trait INxMeta extends StObject {
+  
   /**
     * Name.
     * >> This property is optional.
     */
   var qName: js.UndefOr[String] = js.undefined
 }
-
 object INxMeta {
-  @scala.inline
-  def apply(qName: String = null): INxMeta = {
+  
+  inline def apply(): INxMeta = {
     val __obj = js.Dynamic.literal()
-    if (qName != null) __obj.updateDynamic("qName")(qName.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxMeta]
   }
+  
+  extension [Self <: INxMeta](x: Self) {
+    
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    
+    inline def setQNameUndefined: Self = StObject.set(x, "qName", js.undefined)
+  }
 }
-

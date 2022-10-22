@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.cardDeckMod.CardDeckProps
+import typingsJapgolly.reactstrap.typesLibCardDeckMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "CardDeck")
 @js.native
-class CardDeck[T] ()
-  extends Component[CardDeckProps, js.Object, js.Any]
-
+open class CardDeck () extends default

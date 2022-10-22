@@ -10,10 +10,10 @@ test framework agnostic BDD-style assertions
 | ------------------ | :-------------: |
 | Full name          | should |
 | Keywords           | test, bdd, assert, should |
-| # releases         | 3 |
-| # dependents       | 949 |
-| # downloads        | 17540070 |
-| # stars            | 132 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3492699.6666666665 |
+| # stars            | 1911.0 |
 
 ## Links
 - [Homepage](https://github.com/shouldjs/should.js)

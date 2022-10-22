@@ -1,17 +1,16 @@
 package typingsJapgolly.easeljs.createjs
 
-import org.scalajs.dom.raw.HTMLCanvasElement
-import org.scalajs.dom.raw.HTMLImageElement
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("createjs.AlphaMapFilter")
 @js.native
-class AlphaMapFilter protected () extends Filter {
-  def this(alphaMap: HTMLCanvasElement) = this()
-  def this(alphaMap: HTMLImageElement) = this()
+trait AlphaMapFilter
+  extends StObject
+     with Filter {
+  
   // properties
   var alphaMap: HTMLImageElement | HTMLCanvasElement = js.native
 }
-

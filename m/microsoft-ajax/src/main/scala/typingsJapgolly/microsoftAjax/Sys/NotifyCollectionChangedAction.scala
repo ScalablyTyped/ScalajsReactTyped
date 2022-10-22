@@ -1,13 +1,11 @@
 package typingsJapgolly.microsoftAjax.Sys
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NotifyCollectionChangedAction extends js.Object
-
+sealed trait NotifyCollectionChangedAction extends StObject
 //#endregion
 //#region Enumerations
 /**
@@ -16,35 +14,29 @@ sealed trait NotifyCollectionChangedAction extends js.Object
   */
 @JSGlobal("Sys.NotifyCollectionChangedAction")
 @js.native
-object NotifyCollectionChangedAction extends js.Object {
+object NotifyCollectionChangedAction extends StObject {
+  
   /**
     * The integer 0, indicating the changed action to the collection is add.
     */
   @js.native
-  sealed trait add extends NotifyCollectionChangedAction
+  sealed trait add
+    extends StObject
+       with NotifyCollectionChangedAction
   
   /**
     * The integer 1, indicating the changed action to the collection is remove.
     */
   @js.native
-  sealed trait remove extends NotifyCollectionChangedAction
+  sealed trait remove
+    extends StObject
+       with NotifyCollectionChangedAction
   
   /**
     * The integer 2, indicating the changed action to the collection is reset.
     */
   @js.native
-  sealed trait reset extends NotifyCollectionChangedAction
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NotifyCollectionChangedAction with Double] = js.native
-  /* 0 */ @js.native
-  object add extends TopLevel[add with Double]
-  
-  /* 1 */ @js.native
-  object remove extends TopLevel[remove with Double]
-  
-  /* 2 */ @js.native
-  object reset extends TopLevel[reset with Double]
-  
+  sealed trait reset
+    extends StObject
+       with NotifyCollectionChangedAction
 }
-

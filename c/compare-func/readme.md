@@ -10,10 +10,10 @@ Get a compare function for array to sort
 | ------------------ | :-------------: |
 | Full name          | compare-func |
 | Keywords           | compare-func, arr, array, by, compare, dot, get, obj, object, prop, property, sort, sorting |
-| # releases         | 0 |
-| # dependents       | 92 |
-| # downloads        | 39359836 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5308337666666666E7 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/stevemao/compare-func)

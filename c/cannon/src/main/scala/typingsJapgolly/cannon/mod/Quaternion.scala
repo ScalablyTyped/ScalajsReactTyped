@@ -1,16 +1,27 @@
 package typingsJapgolly.cannon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cannon", "Quaternion")
 @js.native
-class Quaternion ()
-  extends typingsJapgolly.cannon.CANNON.Quaternion {
+open class Quaternion ()
+  extends StObject
+     with typingsJapgolly.cannon.CANNON.Quaternion {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
+  def this(x: Unit, y: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
+  def this(x: Double, y: Unit, z: Double) = this()
+  def this(x: Unit, y: Double, z: Double) = this()
+  def this(x: Unit, y: Unit, z: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
+  def this(x: Double, y: Double, z: Unit, w: Double) = this()
+  def this(x: Double, y: Unit, z: Double, w: Double) = this()
+  def this(x: Double, y: Unit, z: Unit, w: Double) = this()
+  def this(x: Unit, y: Double, z: Double, w: Double) = this()
+  def this(x: Unit, y: Double, z: Unit, w: Double) = this()
+  def this(x: Unit, y: Unit, z: Double, w: Double) = this()
+  def this(x: Unit, y: Unit, z: Unit, w: Double) = this()
 }
-

@@ -1,31 +1,27 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4142`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4142`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4142`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4142`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
 */
-trait XlTickMark extends js.Object
-
+trait XlTickMark extends StObject
 object XlTickMark {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlTickMarkCross: `4` = this.cast(4)
-  @scala.inline
-  def xlTickMarkInside: `2` = this.cast(2)
-  @scala.inline
-  def xlTickMarkNone: `-4142` = this.cast(-4142)
-  @scala.inline
-  def xlTickMarkOutside: `3` = this.cast(3)
+  
+  inline def xlTickMarkCross: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlTickMarkInside: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlTickMarkNone: `-4142` = -4142.asInstanceOf[`-4142`]
+  
+  inline def xlTickMarkOutside: `3` = 3.asInstanceOf[`3`]
 }
-

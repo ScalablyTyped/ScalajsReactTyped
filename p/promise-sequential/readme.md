@@ -11,9 +11,9 @@ Simple like Promise.all(), but sequentially!
 | Full name          | promise-sequential |
 | Keywords           | promise, queue, seq, sequence, sequential |
 | # releases         | 1 |
-| # dependents       | 37 |
-| # downloads        | 358504 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 183365.66666666666 |
+| # stars            | 192.0 |
 
 ## Links
 - [Homepage](https://github.com/russiann/promise-sequential#readme)

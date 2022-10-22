@@ -1,7 +1,7 @@
 
 # Scala.js typings for enhanced-resolve
 
-Typings are for version v3.0.0
+Typings are for version 5.10.0
 
 ## Library description:
 Offers a async require.resolve function. It's highly configurable.
@@ -10,10 +10,10 @@ Offers a async require.resolve function. It's highly configurable.
 | ------------------ | :-------------: |
 | Full name          | enhanced-resolve |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 256 |
-| # downloads        | 355855966 |
-| # stars            | 2 |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0552645733333333E8 |
+| # stars            | 761.0 |
 
 ## Links
 - [Homepage](http://github.com/webpack/enhanced-resolve)
@@ -24,7 +24,7 @@ Offers a async require.resolve function. It's highly configurable.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

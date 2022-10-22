@@ -1,12 +1,47 @@
-package typingsJapgolly.wxServerSdk
+package typingsJapgolly.wxServerSdk.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.wxServerSdk.anon.APPID
+import typingsJapgolly.wxServerSdk.anon.CloudPath
+import typingsJapgolly.wxServerSdk.anon.FileIDString
+import typingsJapgolly.wxServerSdk.anon.FileList
+import typingsJapgolly.wxServerSdk.anon.Name
+import typingsJapgolly.wxServerSdk.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type CrosFieldCommand = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.wxServerSdk.mod.Command | scala.Boolean]
-  type DBRegExp = js.RegExp
-  type PointCoordinates = js.Tuple2[scala.Double, scala.Double]
-  type ServerDate = js.Date
-}
+
+// 云函数
+inline def callFunction(options: Name): js.Promise[CallFunctionSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("callFunction")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CallFunctionSuccess]]
+
+// 数据库 API
+inline def database(): Database_ = ^.asInstanceOf[js.Dynamic].applyDynamic("database")().asInstanceOf[Database_]
+inline def database(options: DatabaseOptions): Database_ = ^.asInstanceOf[js.Dynamic].applyDynamic("database")(options.asInstanceOf[js.Any]).asInstanceOf[Database_]
+
+inline def deleteFile(options: FileList): js.Promise[DeleteFileSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteFile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DeleteFileSuccess]]
+
+inline def downloadFile(options: FileIDString): js.Promise[DownloadFileSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadFile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DownloadFileSuccess]]
+
+inline def getTempFileURL(options: FileList): js.Promise[TetTempFileURLSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTempFileURL")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TetTempFileURLSuccess]]
+
+// 云函数
+inline def getVoIPSign(options: GetVoIPSignOptions): js.Promise[GetVoIPSignSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVoIPSign")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVoIPSignSuccess]]
+
+inline def getWXContext(): APPID = ^.asInstanceOf[js.Dynamic].applyDynamic("getWXContext")().asInstanceOf[APPID]
+
+inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+inline def init(options: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def updateConfig(options: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateConfig")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+// 存储 API
+inline def uploadFile(options: CloudPath): js.Promise[UploadFileSuccess] = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadFile")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UploadFileSuccess]]
+
+type CrosFieldCommand = StringDictionary[Command | Boolean]
+
+type DBRegExp = js.RegExp
+
+type PointCoordinates = js.Tuple2[Double, Double]
+
+type ServerDate = js.Date

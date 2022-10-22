@@ -1,23 +1,39 @@
 package typingsJapgolly.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DatabaseCreateParams extends js.Object {
+/** 
+  * Database creation options
+  * @see Docs: {@link https://docs.couchdb.org/en/stable/api/database/common.html#put--db} */
+trait DatabaseCreateParams extends StObject {
+  
   var n: js.UndefOr[Double] = js.undefined
+  
   var partitioned: js.UndefOr[Boolean] = js.undefined
+  
   var q: js.UndefOr[Double] = js.undefined
 }
-
 object DatabaseCreateParams {
-  @scala.inline
-  def apply(n: Int | Double = null, partitioned: js.UndefOr[Boolean] = js.undefined, q: Int | Double = null): DatabaseCreateParams = {
+  
+  inline def apply(): DatabaseCreateParams = {
     val __obj = js.Dynamic.literal()
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
-    if (!js.isUndefined(partitioned)) __obj.updateDynamic("partitioned")(partitioned.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseCreateParams]
   }
+  
+  extension [Self <: DatabaseCreateParams](x: Self) {
+    
+    inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    
+    inline def setNUndefined: Self = StObject.set(x, "n", js.undefined)
+    
+    inline def setPartitioned(value: Boolean): Self = StObject.set(x, "partitioned", value.asInstanceOf[js.Any])
+    
+    inline def setPartitionedUndefined: Self = StObject.set(x, "partitioned", js.undefined)
+    
+    inline def setQ(value: Double): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+  }
 }
-

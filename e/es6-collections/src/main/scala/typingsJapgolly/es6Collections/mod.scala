@@ -1,56 +1,76 @@
 package typingsJapgolly.es6Collections
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("es6-collections", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("es6-collections", JSImport.Namespace)
   @js.native
-  class Map[K, V] ()
-    extends typingsJapgolly.es6Collections.Map[K, V] {
+  val ^ : js.Any = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("es6-collections", "Map")
+  @js.native
+  open class Map[K, V] ()
+    extends StObject
+       with typingsJapgolly.es6Collections.Map[K, V] {
     def this(iterable: ForEachable[js.Tuple2[K, V]]) = this()
   }
-  
+  @JSImport("es6-collections", "Map")
   @js.native
-  class Set[T] ()
-    extends typingsJapgolly.es6Collections.Set[T] {
+  def Map: MapConstructor = js.native
+  inline def Map_=(x: MapConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Map")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("es6-collections", "Set")
+  @js.native
+  open class Set[T] ()
+    extends StObject
+       with typingsJapgolly.es6Collections.Set[T] {
     def this(iterable: ForEachable[T]) = this()
   }
-  
+  @JSImport("es6-collections", "Set")
   @js.native
-  class WeakMap[K /* <: js.Object */, V] ()
-    extends typingsJapgolly.es6Collections.WeakMap[K, V] {
+  def Set: SetConstructor = js.native
+  inline def Set_=(x: SetConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Set")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("es6-collections", "WeakMap")
+  @js.native
+  open class WeakMap[K /* <: js.Object */, V] ()
+    extends StObject
+       with typingsJapgolly.es6Collections.WeakMap[K, V] {
     def this(iterable: ForEachable[js.Tuple2[K, V]]) = this()
   }
-  
+  @JSImport("es6-collections", "WeakMap")
   @js.native
-  class WeakSet[T] ()
-    extends typingsJapgolly.es6Collections.WeakSet[T] {
+  def WeakMap: WeakMapConstructor = js.native
+  inline def WeakMap_=(x: WeakMapConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WeakMap")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("es6-collections", "WeakSet")
+  @js.native
+  open class WeakSet[T] ()
+    extends StObject
+       with typingsJapgolly.es6Collections.WeakSet[T] {
     def this(iterable: ForEachable[T]) = this()
+    
     /* CompleteClass */
     override def add(value: T): typingsJapgolly.es6Collections.WeakSet[T] = js.native
+    
     /* CompleteClass */
     override def clear(): Unit = js.native
+    
     /* CompleteClass */
     override def delete(value: T): Boolean = js.native
+    
     /* CompleteClass */
     override def has(value: T): Boolean = js.native
   }
-  
+  @JSImport("es6-collections", "WeakSet")
   @js.native
-  object Map extends TopLevel[MapConstructor]
-  
-  @js.native
-  object Set extends TopLevel[SetConstructor]
-  
-  @js.native
-  object WeakMap extends TopLevel[WeakMapConstructor]
-  
-  @js.native
-  object WeakSet extends TopLevel[WeakSetConstructor]
-  
+  def WeakSet: WeakSetConstructor = js.native
+  inline def WeakSet_=(x: WeakSetConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WeakSet")(x.asInstanceOf[js.Any])
 }
-

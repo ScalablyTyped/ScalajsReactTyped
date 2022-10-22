@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListBoxToolbar extends js.Object {
+trait ListBoxToolbar extends StObject {
+  
   var position: js.UndefOr[String] = js.undefined
-  var tools: js.UndefOr[js.Any] = js.undefined
+  
+  var tools: js.UndefOr[Any] = js.undefined
 }
-
 object ListBoxToolbar {
-  @scala.inline
-  def apply(position: String = null, tools: js.Any = null): ListBoxToolbar = {
+  
+  inline def apply(): ListBoxToolbar = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxToolbar]
   }
+  
+  extension [Self <: ListBoxToolbar](x: Self) {
+    
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setTools(value: Any): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
+    
+    inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
+  }
 }
-

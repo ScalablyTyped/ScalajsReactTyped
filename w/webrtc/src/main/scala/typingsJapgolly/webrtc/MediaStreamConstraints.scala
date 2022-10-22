@@ -1,21 +1,30 @@
 package typingsJapgolly.webrtc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaStreamConstraints extends js.Object {
+trait MediaStreamConstraints extends StObject {
+  
   var audio: js.UndefOr[Boolean | MediaTrackConstraints] = js.undefined
+  
   var video: js.UndefOr[Boolean | MediaTrackConstraints] = js.undefined
 }
-
 object MediaStreamConstraints {
-  @scala.inline
-  def apply(audio: Boolean | MediaTrackConstraints = null, video: Boolean | MediaTrackConstraints = null): MediaStreamConstraints = {
+  
+  inline def apply(): MediaStreamConstraints = {
     val __obj = js.Dynamic.literal()
-    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamConstraints]
   }
+  
+  extension [Self <: MediaStreamConstraints](x: Self) {
+    
+    inline def setAudio(value: Boolean | MediaTrackConstraints): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    
+    inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+    
+    inline def setVideo(value: Boolean | MediaTrackConstraints): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.hummusRecipe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.hummusRecipe.hummusRecipeStrings.Text
@@ -22,42 +22,38 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.hummusRecipe.hummusRecipeStrings.FileAttachment
   - typingsJapgolly.hummusRecipe.hummusRecipeStrings.Sound
 */
-trait AnnotSubtype extends js.Object
-
+trait AnnotSubtype extends StObject
 object AnnotSubtype {
-  @scala.inline
-  def Caret: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Caret = this.cast("Caret")
-  @scala.inline
-  def Circle: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Circle = this.cast("Circle")
-  @scala.inline
-  def FileAttachment: typingsJapgolly.hummusRecipe.hummusRecipeStrings.FileAttachment = this.cast("FileAttachment")
-  @scala.inline
-  def FreeText: typingsJapgolly.hummusRecipe.hummusRecipeStrings.FreeText = this.cast("FreeText")
-  @scala.inline
-  def Highlight: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Highlight = this.cast("Highlight")
-  @scala.inline
-  def Ink: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Ink = this.cast("Ink")
-  @scala.inline
-  def Line: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Line = this.cast("Line")
-  @scala.inline
-  def PolyLine: typingsJapgolly.hummusRecipe.hummusRecipeStrings.PolyLine = this.cast("PolyLine")
-  @scala.inline
-  def Polygon: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Polygon = this.cast("Polygon")
-  @scala.inline
-  def Sound: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Sound = this.cast("Sound")
-  @scala.inline
-  def Square: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Square = this.cast("Square")
-  @scala.inline
-  def Squiggly: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Squiggly = this.cast("Squiggly")
-  @scala.inline
-  def Stamp: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Stamp = this.cast("Stamp")
-  @scala.inline
-  def StrikeOut: typingsJapgolly.hummusRecipe.hummusRecipeStrings.StrikeOut = this.cast("StrikeOut")
-  @scala.inline
-  def Text: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Text = this.cast("Text")
-  @scala.inline
-  def Underline: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Underline = this.cast("Underline")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Caret: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Caret = "Caret".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Caret]
+  
+  inline def Circle: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Circle = "Circle".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Circle]
+  
+  inline def FileAttachment: typingsJapgolly.hummusRecipe.hummusRecipeStrings.FileAttachment = "FileAttachment".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.FileAttachment]
+  
+  inline def FreeText: typingsJapgolly.hummusRecipe.hummusRecipeStrings.FreeText = "FreeText".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.FreeText]
+  
+  inline def Highlight: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Highlight = "Highlight".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Highlight]
+  
+  inline def Ink: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Ink = "Ink".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Ink]
+  
+  inline def Line: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Line = "Line".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Line]
+  
+  inline def PolyLine: typingsJapgolly.hummusRecipe.hummusRecipeStrings.PolyLine = "PolyLine".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.PolyLine]
+  
+  inline def Polygon: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Polygon = "Polygon".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Polygon]
+  
+  inline def Sound: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Sound = "Sound".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Sound]
+  
+  inline def Square: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Square = "Square".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Square]
+  
+  inline def Squiggly: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Squiggly = "Squiggly".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Squiggly]
+  
+  inline def Stamp: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Stamp = "Stamp".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Stamp]
+  
+  inline def StrikeOut: typingsJapgolly.hummusRecipe.hummusRecipeStrings.StrikeOut = "StrikeOut".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.StrikeOut]
+  
+  inline def Text: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Text = "Text".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Text]
+  
+  inline def Underline: typingsJapgolly.hummusRecipe.hummusRecipeStrings.Underline = "Underline".asInstanceOf[typingsJapgolly.hummusRecipe.hummusRecipeStrings.Underline]
 }
-

@@ -1,26 +1,39 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The extracted action from the sentence. */
-trait SemanticRolesResultAction extends js.Object {
+trait SemanticRolesResultAction extends StObject {
+  
   /** normalized version of the action. */
   var normalized: js.UndefOr[String] = js.undefined
+  
   /** Analyzed text that corresponds to the action. */
   var text: js.UndefOr[String] = js.undefined
+  
   var verb: js.UndefOr[SemanticRolesVerb] = js.undefined
 }
-
 object SemanticRolesResultAction {
-  @scala.inline
-  def apply(normalized: String = null, text: String = null, verb: SemanticRolesVerb = null): SemanticRolesResultAction = {
+  
+  inline def apply(): SemanticRolesResultAction = {
     val __obj = js.Dynamic.literal()
-    if (normalized != null) __obj.updateDynamic("normalized")(normalized.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (verb != null) __obj.updateDynamic("verb")(verb.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticRolesResultAction]
   }
+  
+  extension [Self <: SemanticRolesResultAction](x: Self) {
+    
+    inline def setNormalized(value: String): Self = StObject.set(x, "normalized", value.asInstanceOf[js.Any])
+    
+    inline def setNormalizedUndefined: Self = StObject.set(x, "normalized", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setVerb(value: SemanticRolesVerb): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+    
+    inline def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
+  }
 }
-

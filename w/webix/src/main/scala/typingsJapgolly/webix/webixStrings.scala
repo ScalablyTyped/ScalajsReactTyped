@@ -16,10 +16,12 @@ import typingsJapgolly.webix.mod.ui.buttonEventName
 import typingsJapgolly.webix.mod.ui.calendarEventName
 import typingsJapgolly.webix.mod.ui.carouselEventName
 import typingsJapgolly.webix.mod.ui.chartEventName
+import typingsJapgolly.webix.mod.ui.chatEventName
 import typingsJapgolly.webix.mod.ui.checkboxEventName
 import typingsJapgolly.webix.mod.ui.checksuggestEventName
 import typingsJapgolly.webix.mod.ui.colorboardEventName
 import typingsJapgolly.webix.mod.ui.colorpickerEventName
+import typingsJapgolly.webix.mod.ui.colorselectEventName
 import typingsJapgolly.webix.mod.ui.comboEventName
 import typingsJapgolly.webix.mod.ui.commentsEventName
 import typingsJapgolly.webix.mod.ui.contextEventName
@@ -35,12 +37,15 @@ import typingsJapgolly.webix.mod.ui.daterangeEventName
 import typingsJapgolly.webix.mod.ui.daterangepickerEventName
 import typingsJapgolly.webix.mod.ui.daterangesuggestEventName
 import typingsJapgolly.webix.mod.ui.dbllistEventName
+import typingsJapgolly.webix.mod.ui.docmanagerEventName
 import typingsJapgolly.webix.mod.ui.excelviewerEventName
 import typingsJapgolly.webix.mod.ui.fieldsetEventName
 import typingsJapgolly.webix.mod.ui.filemanagerEventName
+import typingsJapgolly.webix.mod.ui.filterEventName
 import typingsJapgolly.webix.mod.ui.formEventName
 import typingsJapgolly.webix.mod.ui.forminputEventName
 import typingsJapgolly.webix.mod.ui.gageEventName
+import typingsJapgolly.webix.mod.ui.ganttEventName
 import typingsJapgolly.webix.mod.ui.geochartEventName
 import typingsJapgolly.webix.mod.ui.googleMapEventName
 import typingsJapgolly.webix.mod.ui.gridlayoutEventName
@@ -51,17 +56,18 @@ import typingsJapgolly.webix.mod.ui.hintEventName
 import typingsJapgolly.webix.mod.ui.htmlformEventName
 import typingsJapgolly.webix.mod.ui.iconEventName
 import typingsJapgolly.webix.mod.ui.iframeEventName
+import typingsJapgolly.webix.mod.ui.jetappEventName
 import typingsJapgolly.webix.mod.ui.kanbanEventName
 import typingsJapgolly.webix.mod.ui.labelEventName
 import typingsJapgolly.webix.mod.ui.layoutEventName
 import typingsJapgolly.webix.mod.ui.listEventName
+import typingsJapgolly.webix.mod.ui.mentionsuggestEventName
 import typingsJapgolly.webix.mod.ui.menuEventName
 import typingsJapgolly.webix.mod.ui.multicomboEventName
 import typingsJapgolly.webix.mod.ui.multiselectEventName
 import typingsJapgolly.webix.mod.ui.multisuggestEventName
 import typingsJapgolly.webix.mod.ui.multitextEventName
 import typingsJapgolly.webix.mod.ui.multiviewEventName
-import typingsJapgolly.webix.mod.ui.organogramEventName
 import typingsJapgolly.webix.mod.ui.pagerEventName
 import typingsJapgolly.webix.mod.ui.panelEventName
 import typingsJapgolly.webix.mod.ui.pdfviewerEventName
@@ -71,13 +77,15 @@ import typingsJapgolly.webix.mod.ui.portletEventName
 import typingsJapgolly.webix.mod.ui.propertyEventName
 import typingsJapgolly.webix.mod.ui.protoEventName
 import typingsJapgolly.webix.mod.ui.proxyEventName
-import typingsJapgolly.webix.mod.ui.querybuilderEventName
+import typingsJapgolly.webix.mod.ui.queryEventName
 import typingsJapgolly.webix.mod.ui.radioEventName
 import typingsJapgolly.webix.mod.ui.rangechartEventName
 import typingsJapgolly.webix.mod.ui.rangesliderEventName
+import typingsJapgolly.webix.mod.ui.reportsEventName
 import typingsJapgolly.webix.mod.ui.resizeareaEventName
 import typingsJapgolly.webix.mod.ui.richselectEventName
 import typingsJapgolly.webix.mod.ui.richtextEventName
+import typingsJapgolly.webix.mod.ui.schedulerEventName
 import typingsJapgolly.webix.mod.ui.scrollviewEventName
 import typingsJapgolly.webix.mod.ui.searchEventName
 import typingsJapgolly.webix.mod.ui.segmentedEventName
@@ -95,6 +103,8 @@ import typingsJapgolly.webix.mod.ui.tabviewEventName
 import typingsJapgolly.webix.mod.ui.templateEventName
 import typingsJapgolly.webix.mod.ui.textEventName
 import typingsJapgolly.webix.mod.ui.textareaEventName
+import typingsJapgolly.webix.mod.ui.texthighlightEventName
+import typingsJapgolly.webix.mod.ui.timeboardEventName
 import typingsJapgolly.webix.mod.ui.timelineEventName
 import typingsJapgolly.webix.mod.ui.toggleEventName
 import typingsJapgolly.webix.mod.ui.toolbarEventName
@@ -104,17 +114,20 @@ import typingsJapgolly.webix.mod.ui.treemapEventName
 import typingsJapgolly.webix.mod.ui.treetableEventName
 import typingsJapgolly.webix.mod.ui.unitlistEventName
 import typingsJapgolly.webix.mod.ui.uploaderEventName
+import typingsJapgolly.webix.mod.ui.usermanagerEventName
 import typingsJapgolly.webix.mod.ui.videoEventName
 import typingsJapgolly.webix.mod.ui.viewEventName
 import typingsJapgolly.webix.mod.ui.windowEventName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webixStrings {
+  
   @js.native
   sealed trait onAfterAdd
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
@@ -132,8 +145,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -146,8 +157,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
        with protoEventName
@@ -168,43 +177,44 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onAfterAdd: onAfterAdd = "onAfterAdd".asInstanceOf[onAfterAdd]
   
   @js.native
   sealed trait onAfterAreaAdd
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onAfterAreaAdd: onAfterAreaAdd = "onAfterAreaAdd".asInstanceOf[onAfterAreaAdd]
   
   @js.native
   sealed trait onAfterAreaRemove
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
-  
-  @js.native
-  sealed trait onAfterBack
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onAfterAreaRemove: onAfterAreaRemove = "onAfterAreaRemove".asInstanceOf[onAfterAreaRemove]
   
   @js.native
   sealed trait onAfterBlockSelect
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onAfterBlockSelect: onAfterBlockSelect = "onAfterBlockSelect".asInstanceOf[onAfterBlockSelect]
   
   @js.native
   sealed trait onAfterClose
-    extends organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
+    extends StObject
        with sidebarEventName
        with typingsJapgolly.webix.webix.ui.sidebarEventName
        with treeEventName
@@ -213,60 +223,74 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treemapEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onAfterClose: onAfterClose = "onAfterClose".asInstanceOf[onAfterClose]
   
   @js.native
   sealed trait onAfterCollapse
-    extends accordionEventName
+    extends StObject
+       with accordionEventName
        with typingsJapgolly.webix.webix.ui.accordionEventName
        with headerlayoutEventName
        with typingsJapgolly.webix.webix.ui.headerlayoutEventName
        with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onAfterCollapse: onAfterCollapse = "onAfterCollapse".asInstanceOf[onAfterCollapse]
   
   @js.native
   sealed trait onAfterColumnDrop
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onAfterColumnDrop: onAfterColumnDrop = "onAfterColumnDrop".asInstanceOf[onAfterColumnDrop]
   
   @js.native
   sealed trait onAfterColumnDropOrder
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onAfterColumnDropOrder: onAfterColumnDropOrder = "onAfterColumnDropOrder".asInstanceOf[onAfterColumnDropOrder]
   
   @js.native
   sealed trait onAfterColumnHide
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onAfterColumnHide: onAfterColumnHide = "onAfterColumnHide".asInstanceOf[onAfterColumnHide]
   
   @js.native
   sealed trait onAfterColumnShow
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onAfterColumnShow: onAfterColumnShow = "onAfterColumnShow".asInstanceOf[onAfterColumnShow]
   
   @js.native
   sealed trait onAfterConditionSet
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onAfterConditionSet: onAfterConditionSet = "onAfterConditionSet".asInstanceOf[onAfterConditionSet]
   
   @js.native
   sealed trait onAfterContextMenu
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
@@ -286,8 +310,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -308,34 +330,37 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onAfterContextMenu: onAfterContextMenu = "onAfterContextMenu".asInstanceOf[onAfterContextMenu]
   
   @js.native
   sealed trait onAfterCopy
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
-  
-  @js.native
-  sealed trait onAfterCreateFolder
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onAfterCopy: onAfterCopy = "onAfterCopy".asInstanceOf[onAfterCopy]
   
   @js.native
   sealed trait onAfterCursorChange
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
+  inline def onAfterCursorChange: onAfterCursorChange = "onAfterCursorChange".asInstanceOf[onAfterCursorChange]
   
   @js.native
   sealed trait onAfterDateSelect
-    extends calendarEventName
+    extends StObject
+       with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
        with daterangeEventName
        with typingsJapgolly.webix.webix.ui.daterangeEventName
+  inline def onAfterDateSelect: onAfterDateSelect = "onAfterDateSelect".asInstanceOf[onAfterDateSelect]
   
   @js.native
   sealed trait onAfterDelete
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
@@ -353,8 +378,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -367,8 +390,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
        with protoEventName
@@ -389,15 +410,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
-  
-  @js.native
-  sealed trait onAfterDeleteFile
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onAfterDelete: onAfterDelete = "onAfterDelete".asInstanceOf[onAfterDelete]
   
   @js.native
   sealed trait onAfterDrop
-    extends contextmenuEventName
+    extends StObject
+       with contextmenuEventName
        with typingsJapgolly.webix.webix.ui.contextmenuEventName
        with dashboardEventName
        with typingsJapgolly.webix.webix.ui.dashboardEventName
@@ -407,8 +425,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with grouplistEventName
        with typingsJapgolly.webix.webix.ui.grouplistEventName
        with listEventName
@@ -425,20 +441,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
-  
-  @js.native
-  sealed trait onAfterDynParse
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onAfterEditFile
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onAfterDrop: onAfterDrop = "onAfterDrop".asInstanceOf[onAfterDrop]
   
   @js.native
   sealed trait onAfterEditStart
-    extends commentsEventName
+    extends StObject
+       with commentsEventName
        with typingsJapgolly.webix.webix.ui.commentsEventName
        with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
@@ -448,71 +456,61 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.propertyEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onAfterEditStart: onAfterEditStart = "onAfterEditStart".asInstanceOf[onAfterEditStart]
   
   @js.native
   sealed trait onAfterEditStop
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with propertyEventName
        with typingsJapgolly.webix.webix.ui.propertyEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onAfterEditStop: onAfterEditStop = "onAfterEditStop".asInstanceOf[onAfterEditStop]
   
   @js.native
   sealed trait onAfterEditorShow
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onAfterEditorShow: onAfterEditorShow = "onAfterEditorShow".asInstanceOf[onAfterEditorShow]
   
   @js.native
   sealed trait onAfterExpand
-    extends accordionEventName
+    extends StObject
+       with accordionEventName
        with typingsJapgolly.webix.webix.ui.accordionEventName
        with headerlayoutEventName
        with typingsJapgolly.webix.webix.ui.headerlayoutEventName
        with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onAfterExpand: onAfterExpand = "onAfterExpand".asInstanceOf[onAfterExpand]
   
   @js.native
   sealed trait onAfterFileAdd
-    extends uploaderEventName
+    extends StObject
+       with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
-  
-  @js.native
-  sealed trait onAfterFileUpload
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onAfterFileAdd: onAfterFileAdd = "onAfterFileAdd".asInstanceOf[onAfterFileAdd]
   
   @js.native
   sealed trait onAfterFilter
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
-  
-  @js.native
-  sealed trait onAfterHideTree
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onAfterLevelDown
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onAfterLevelUp
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onAfterFilter: onAfterFilter = "onAfterFilter".asInstanceOf[onAfterFilter]
   
   @js.native
   sealed trait onAfterLoad
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with DataRecordEventName
        with typingsJapgolly.webix.webix.DataRecordEventName
@@ -534,8 +532,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dbllistEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+       with filterEventName
+       with typingsJapgolly.webix.webix.ui.filterEventName
        with formEventName
        with typingsJapgolly.webix.webix.ui.formEventName
        with geochartEventName
@@ -554,8 +552,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pdfviewerEventName
        with typingsJapgolly.webix.webix.ui.pdfviewerEventName
        with pivotEventName
@@ -586,36 +582,18 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
-  
-  @js.native
-  sealed trait onAfterMarkCopy
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onAfterMarkCut
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onAfterMenu
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onAfterModeChange
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onAfterLoad: onAfterLoad = "onAfterLoad".asInstanceOf[onAfterLoad]
   
   @js.native
   sealed trait onAfterMonthChange
-    extends calendarEventName
+    extends StObject
+       with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
+  inline def onAfterMonthChange: onAfterMonthChange = "onAfterMonthChange".asInstanceOf[onAfterMonthChange]
   
   @js.native
   sealed trait onAfterOpen
-    extends organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
+    extends StObject
        with sidebarEventName
        with typingsJapgolly.webix.webix.ui.sidebarEventName
        with treeEventName
@@ -624,40 +602,40 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treemapEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onAfterOpen: onAfterOpen = "onAfterOpen".asInstanceOf[onAfterOpen]
   
   @js.native
   sealed trait onAfterPageChange
-    extends pagerEventName
+    extends StObject
+       with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
-  
-  @js.native
-  sealed trait onAfterPasteFile
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onAfterPathClick
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onAfterPageChange: onAfterPageChange = "onAfterPageChange".asInstanceOf[onAfterPageChange]
   
   @js.native
   sealed trait onAfterPortletMove
-    extends portletEventName
+    extends StObject
+       with portletEventName
        with typingsJapgolly.webix.webix.ui.portletEventName
+  inline def onAfterPortletMove: onAfterPortletMove = "onAfterPortletMove".asInstanceOf[onAfterPortletMove]
   
   @js.native
   sealed trait onAfterRangeChange
-    extends rangechartEventName
+    extends StObject
+       with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
+  inline def onAfterRangeChange: onAfterRangeChange = "onAfterRangeChange".asInstanceOf[onAfterRangeChange]
   
   @js.native
   sealed trait onAfterRangeSet
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onAfterRangeSet: onAfterRangeSet = "onAfterRangeSet".asInstanceOf[onAfterRangeSet]
   
   @js.native
   sealed trait onAfterRender
-    extends buttonEventName
+    extends StObject
+       with buttonEventName
        with typingsJapgolly.webix.webix.ui.buttonEventName
        with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
@@ -669,6 +647,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextmenuEventName
@@ -703,8 +683,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multiselectEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -741,6 +719,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with timelineEventName
        with typingsJapgolly.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -757,15 +737,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
-  
-  @js.native
-  sealed trait onAfterRun
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onAfterRender: onAfterRender = "onAfterRender".asInstanceOf[onAfterRender]
   
   @js.native
   sealed trait onAfterScroll
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with alignEventName
        with typingsJapgolly.webix.webix.ui.alignEventName
@@ -781,6 +758,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -789,6 +768,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextEventName
@@ -809,16 +790,22 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with formEventName
        with typingsJapgolly.webix.webix.ui.formEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -835,10 +822,14 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.iconEventName
        with iframeEventName
        with typingsJapgolly.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
        with labelEventName
        with typingsJapgolly.webix.webix.ui.labelEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -849,8 +840,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -863,14 +852,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -901,6 +896,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with timelineEventName
        with typingsJapgolly.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -919,21 +916,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typingsJapgolly.webix.webix.ui.videoEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
-  
-  @js.native
-  sealed trait onAfterSearch
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onAfterScroll: onAfterScroll = "onAfterScroll".asInstanceOf[onAfterScroll]
   
   @js.native
   sealed trait onAfterSelect
-    extends contextmenuEventName
+    extends StObject
+       with contextmenuEventName
        with typingsJapgolly.webix.webix.ui.contextmenuEventName
        with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
@@ -947,8 +943,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with sidebarEventName
        with typingsJapgolly.webix.webix.ui.sidebarEventName
        with spreadsheetEventName
@@ -963,20 +957,19 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onAfterSelect: onAfterSelect = "onAfterSelect".asInstanceOf[onAfterSelect]
   
   @js.native
   sealed trait onAfterSheetShow
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
-  
-  @js.native
-  sealed trait onAfterShowTree
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onAfterSheetShow: onAfterSheetShow = "onAfterSheetShow".asInstanceOf[onAfterSheetShow]
   
   @js.native
   sealed trait onAfterSort
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
@@ -992,8 +985,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -1006,8 +997,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
        with protoEventName
@@ -1028,77 +1017,94 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onAfterSort: onAfterSort = "onAfterSort".asInstanceOf[onAfterSort]
   
   @js.native
   sealed trait onAfterSpan
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onAfterSpan: onAfterSpan = "onAfterSpan".asInstanceOf[onAfterSpan]
   
   @js.native
   sealed trait onAfterSplit
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onAfterSplit: onAfterSplit = "onAfterSplit".asInstanceOf[onAfterSplit]
   
   @js.native
   sealed trait onAfterStart
-    extends hintEventName
+    extends StObject
+       with hintEventName
        with typingsJapgolly.webix.webix.ui.hintEventName
+  inline def onAfterStart: onAfterStart = "onAfterStart".asInstanceOf[onAfterStart]
   
   @js.native
   sealed trait onAfterStatusChange
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onAfterStatusChange: onAfterStatusChange = "onAfterStatusChange".asInstanceOf[onAfterStatusChange]
   
   @js.native
   sealed trait onAfterTabClick
-    extends segmentedEventName
+    extends StObject
+       with segmentedEventName
        with typingsJapgolly.webix.webix.ui.segmentedEventName
        with tabbarEventName
        with typingsJapgolly.webix.webix.ui.tabbarEventName
+  inline def onAfterTabClick: onAfterTabClick = "onAfterTabClick".asInstanceOf[onAfterTabClick]
   
   @js.native
   sealed trait onAfterUnSelect
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
-  
-  @js.native
-  sealed trait onAfterUploadDialog
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onAfterUnSelect: onAfterUnSelect = "onAfterUnSelect".asInstanceOf[onAfterUnSelect]
   
   @js.native
   sealed trait onAfterValidation
-    extends formEventName
+    extends StObject
+       with formEventName
        with typingsJapgolly.webix.webix.ui.formEventName
        with toolbarEventName
        with typingsJapgolly.webix.webix.ui.toolbarEventName
+  inline def onAfterValidation: onAfterValidation = "onAfterValidation".asInstanceOf[onAfterValidation]
   
   @js.native
   sealed trait onAfterZoom
-    extends calendarEventName
+    extends StObject
+       with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
+  inline def onAfterZoom: onAfterZoom = "onAfterZoom".asInstanceOf[onAfterZoom]
   
   @js.native
   sealed trait onAreaDrag
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onAreaDrag: onAreaDrag = "onAreaDrag".asInstanceOf[onAreaDrag]
   
   @js.native
   sealed trait onAvatarClick
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onAvatarClick: onAvatarClick = "onAvatarClick".asInstanceOf[onAvatarClick]
   
   @js.native
   sealed trait onBeforeAdd
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
@@ -1116,8 +1122,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -1130,8 +1134,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
        with protoEventName
@@ -1152,55 +1154,65 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onBeforeAdd: onBeforeAdd = "onBeforeAdd".asInstanceOf[onBeforeAdd]
   
   @js.native
   sealed trait onBeforeApply
-    extends pivotEventName
+    extends StObject
+       with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
+  inline def onBeforeApply: onBeforeApply = "onBeforeApply".asInstanceOf[onBeforeApply]
   
   @js.native
   sealed trait onBeforeAreaAdd
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onBeforeAreaAdd: onBeforeAreaAdd = "onBeforeAreaAdd".asInstanceOf[onBeforeAreaAdd]
   
   @js.native
   sealed trait onBeforeAreaRemove
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onBeforeAreaRemove: onBeforeAreaRemove = "onBeforeAreaRemove".asInstanceOf[onBeforeAreaRemove]
   
   @js.native
   sealed trait onBeforeBack
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+    extends StObject
        with multiviewEventName
        with typingsJapgolly.webix.webix.ui.multiviewEventName
+  inline def onBeforeBack: onBeforeBack = "onBeforeBack".asInstanceOf[onBeforeBack]
   
   @js.native
   sealed trait onBeforeBlockSelect
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onBeforeBlockSelect: onBeforeBlockSelect = "onBeforeBlockSelect".asInstanceOf[onBeforeBlockSelect]
   
   @js.native
   sealed trait onBeforeCancel
-    extends pivotEventName
+    extends StObject
+       with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
+  inline def onBeforeCancel: onBeforeCancel = "onBeforeCancel".asInstanceOf[onBeforeCancel]
   
   @js.native
   sealed trait onBeforeClose
-    extends organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
+    extends StObject
        with sidebarEventName
        with typingsJapgolly.webix.webix.ui.sidebarEventName
        with treeEventName
@@ -1209,60 +1221,74 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treemapEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onBeforeClose: onBeforeClose = "onBeforeClose".asInstanceOf[onBeforeClose]
   
   @js.native
   sealed trait onBeforeColumnDrag
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onBeforeColumnDrag: onBeforeColumnDrag = "onBeforeColumnDrag".asInstanceOf[onBeforeColumnDrag]
   
   @js.native
   sealed trait onBeforeColumnDrop
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onBeforeColumnDrop: onBeforeColumnDrop = "onBeforeColumnDrop".asInstanceOf[onBeforeColumnDrop]
   
   @js.native
   sealed trait onBeforeColumnDropOrder
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onBeforeColumnDropOrder: onBeforeColumnDropOrder = "onBeforeColumnDropOrder".asInstanceOf[onBeforeColumnDropOrder]
   
   @js.native
   sealed trait onBeforeColumnHide
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onBeforeColumnHide: onBeforeColumnHide = "onBeforeColumnHide".asInstanceOf[onBeforeColumnHide]
   
   @js.native
   sealed trait onBeforeColumnShow
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onBeforeColumnShow: onBeforeColumnShow = "onBeforeColumnShow".asInstanceOf[onBeforeColumnShow]
   
   @js.native
   sealed trait onBeforeCommentShow
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onBeforeCommentShow: onBeforeCommentShow = "onBeforeCommentShow".asInstanceOf[onBeforeCommentShow]
   
   @js.native
   sealed trait onBeforeContextMenu
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
@@ -1282,8 +1308,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -1304,34 +1328,37 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onBeforeContextMenu: onBeforeContextMenu = "onBeforeContextMenu".asInstanceOf[onBeforeContextMenu]
   
   @js.native
   sealed trait onBeforeCopy
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
-  
-  @js.native
-  sealed trait onBeforeCreateFolder
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onBeforeCopy: onBeforeCopy = "onBeforeCopy".asInstanceOf[onBeforeCopy]
   
   @js.native
   sealed trait onBeforeCursorChange
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
+  inline def onBeforeCursorChange: onBeforeCursorChange = "onBeforeCursorChange".asInstanceOf[onBeforeCursorChange]
   
   @js.native
   sealed trait onBeforeDateSelect
-    extends calendarEventName
+    extends StObject
+       with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
        with daterangeEventName
        with typingsJapgolly.webix.webix.ui.daterangeEventName
+  inline def onBeforeDateSelect: onBeforeDateSelect = "onBeforeDateSelect".asInstanceOf[onBeforeDateSelect]
   
   @js.native
   sealed trait onBeforeDelete
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
@@ -1349,8 +1376,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -1363,8 +1388,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
        with protoEventName
@@ -1385,15 +1408,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
-  
-  @js.native
-  sealed trait onBeforeDeleteFile
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onBeforeDelete: onBeforeDelete = "onBeforeDelete".asInstanceOf[onBeforeDelete]
   
   @js.native
   sealed trait onBeforeDrag
-    extends contextmenuEventName
+    extends StObject
+       with contextmenuEventName
        with typingsJapgolly.webix.webix.ui.contextmenuEventName
        with dashboardEventName
        with typingsJapgolly.webix.webix.ui.dashboardEventName
@@ -1403,8 +1423,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with grouplistEventName
        with typingsJapgolly.webix.webix.ui.grouplistEventName
        with listEventName
@@ -1421,10 +1439,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onBeforeDrag: onBeforeDrag = "onBeforeDrag".asInstanceOf[onBeforeDrag]
   
   @js.native
   sealed trait onBeforeDragIn
-    extends contextmenuEventName
+    extends StObject
+       with contextmenuEventName
        with typingsJapgolly.webix.webix.ui.contextmenuEventName
        with dashboardEventName
        with typingsJapgolly.webix.webix.ui.dashboardEventName
@@ -1434,8 +1454,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with grouplistEventName
        with typingsJapgolly.webix.webix.ui.grouplistEventName
        with listEventName
@@ -1452,10 +1470,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onBeforeDragIn: onBeforeDragIn = "onBeforeDragIn".asInstanceOf[onBeforeDragIn]
   
   @js.native
   sealed trait onBeforeDrop
-    extends contextmenuEventName
+    extends StObject
+       with contextmenuEventName
        with typingsJapgolly.webix.webix.ui.contextmenuEventName
        with dashboardEventName
        with typingsJapgolly.webix.webix.ui.dashboardEventName
@@ -1465,8 +1485,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with grouplistEventName
        with typingsJapgolly.webix.webix.ui.grouplistEventName
        with listEventName
@@ -1483,10 +1501,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onBeforeDrop: onBeforeDrop = "onBeforeDrop".asInstanceOf[onBeforeDrop]
   
   @js.native
   sealed trait onBeforeDropOut
-    extends contextmenuEventName
+    extends StObject
+       with contextmenuEventName
        with typingsJapgolly.webix.webix.ui.contextmenuEventName
        with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
@@ -1510,25 +1530,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
-  
-  @js.native
-  sealed trait onBeforeDynLoad
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onBeforeDynParse
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onBeforeEditFile
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onBeforeDropOut: onBeforeDropOut = "onBeforeDropOut".asInstanceOf[onBeforeDropOut]
   
   @js.native
   sealed trait onBeforeEditStart
-    extends commentsEventName
+    extends StObject
+       with commentsEventName
        with typingsJapgolly.webix.webix.ui.commentsEventName
        with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
@@ -1538,67 +1545,57 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.propertyEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onBeforeEditStart: onBeforeEditStart = "onBeforeEditStart".asInstanceOf[onBeforeEditStart]
   
   @js.native
   sealed trait onBeforeEditStop
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with propertyEventName
        with typingsJapgolly.webix.webix.ui.propertyEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onBeforeEditStop: onBeforeEditStop = "onBeforeEditStop".asInstanceOf[onBeforeEditStop]
   
   @js.native
   sealed trait onBeforeEditorAction
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onBeforeEditorAction: onBeforeEditorAction = "onBeforeEditorAction".asInstanceOf[onBeforeEditorAction]
   
   @js.native
   sealed trait onBeforeEditorShow
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onBeforeEditorShow: onBeforeEditorShow = "onBeforeEditorShow".asInstanceOf[onBeforeEditorShow]
   
   @js.native
   sealed trait onBeforeFileAdd
-    extends uploaderEventName
+    extends StObject
+       with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
-  
-  @js.native
-  sealed trait onBeforeFileUpload
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onBeforeFileAdd: onBeforeFileAdd = "onBeforeFileAdd".asInstanceOf[onBeforeFileAdd]
   
   @js.native
   sealed trait onBeforeFilter
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
-  
-  @js.native
-  sealed trait onBeforeHideTree
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onBeforeLevelDown
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onBeforeLevelUp
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onBeforeFilter: onBeforeFilter = "onBeforeFilter".asInstanceOf[onBeforeFilter]
   
   @js.native
   sealed trait onBeforeLoad
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with DataRecordEventName
        with typingsJapgolly.webix.webix.DataRecordEventName
@@ -1620,8 +1617,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dbllistEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+       with filterEventName
+       with typingsJapgolly.webix.webix.ui.filterEventName
        with formEventName
        with typingsJapgolly.webix.webix.ui.formEventName
        with geochartEventName
@@ -1640,8 +1637,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pdfviewerEventName
        with typingsJapgolly.webix.webix.ui.pdfviewerEventName
        with pivotEventName
@@ -1672,41 +1667,25 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
-  
-  @js.native
-  sealed trait onBeforeMarkCopy
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onBeforeMarkCut
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onBeforeMenu
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onBeforeLoad: onBeforeLoad = "onBeforeLoad".asInstanceOf[onBeforeLoad]
   
   @js.native
   sealed trait onBeforeMenuAction
-    extends commentsEventName
+    extends StObject
+       with commentsEventName
        with typingsJapgolly.webix.webix.ui.commentsEventName
-  
-  @js.native
-  sealed trait onBeforeModeChange
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onBeforeMenuAction: onBeforeMenuAction = "onBeforeMenuAction".asInstanceOf[onBeforeMenuAction]
   
   @js.native
   sealed trait onBeforeMonthChange
-    extends calendarEventName
+    extends StObject
+       with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
+  inline def onBeforeMonthChange: onBeforeMonthChange = "onBeforeMonthChange".asInstanceOf[onBeforeMonthChange]
   
   @js.native
   sealed trait onBeforeOpen
-    extends organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
+    extends StObject
        with sidebarEventName
        with typingsJapgolly.webix.webix.ui.sidebarEventName
        with treeEventName
@@ -1715,25 +1694,26 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treemapEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onBeforeOpen: onBeforeOpen = "onBeforeOpen".asInstanceOf[onBeforeOpen]
   
   @js.native
   sealed trait onBeforePageChange
-    extends pagerEventName
+    extends StObject
+       with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
-  
-  @js.native
-  sealed trait onBeforePasteFile
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onBeforePageChange: onBeforePageChange = "onBeforePageChange".asInstanceOf[onBeforePageChange]
   
   @js.native
   sealed trait onBeforePortletMove
-    extends portletEventName
+    extends StObject
+       with portletEventName
        with typingsJapgolly.webix.webix.ui.portletEventName
+  inline def onBeforePortletMove: onBeforePortletMove = "onBeforePortletMove".asInstanceOf[onBeforePortletMove]
   
   @js.native
   sealed trait onBeforeRender
-    extends buttonEventName
+    extends StObject
+       with buttonEventName
        with typingsJapgolly.webix.webix.ui.buttonEventName
        with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
@@ -1745,6 +1725,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextmenuEventName
@@ -1779,8 +1761,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multiselectEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pivotEventName
@@ -1819,6 +1799,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with timelineEventName
        with typingsJapgolly.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -1835,30 +1817,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
-  
-  @js.native
-  sealed trait onBeforeRequest
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onBeforeRun
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onBeforeSearch
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onBeforeSearchRequest
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onBeforeRender: onBeforeRender = "onBeforeRender".asInstanceOf[onBeforeRender]
   
   @js.native
   sealed trait onBeforeSelect
-    extends contextmenuEventName
+    extends StObject
+       with contextmenuEventName
        with typingsJapgolly.webix.webix.ui.contextmenuEventName
        with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
@@ -1872,8 +1836,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with sidebarEventName
        with typingsJapgolly.webix.webix.ui.sidebarEventName
        with submenuEventName
@@ -1886,15 +1848,19 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onBeforeSelect: onBeforeSelect = "onBeforeSelect".asInstanceOf[onBeforeSelect]
   
   @js.native
   sealed trait onBeforeSheetShow
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onBeforeSheetShow: onBeforeSheetShow = "onBeforeSheetShow".asInstanceOf[onBeforeSheetShow]
   
   @js.native
   sealed trait onBeforeShow
-    extends checksuggestEventName
+    extends StObject
+       with checksuggestEventName
        with typingsJapgolly.webix.webix.ui.checksuggestEventName
        with contextEventName
        with typingsJapgolly.webix.webix.ui.contextEventName
@@ -1906,6 +1872,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
        with typingsJapgolly.webix.webix.ui.gridsuggestEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with multisuggestEventName
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with popupEventName
@@ -1918,15 +1886,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.suggestEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
-  
-  @js.native
-  sealed trait onBeforeShowTree
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onBeforeShow: onBeforeShow = "onBeforeShow".asInstanceOf[onBeforeShow]
   
   @js.native
   sealed trait onBeforeSort
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
@@ -1942,8 +1907,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -1956,8 +1919,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
        with protoEventName
@@ -1978,73 +1939,90 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onBeforeSort: onBeforeSort = "onBeforeSort".asInstanceOf[onBeforeSort]
   
   @js.native
   sealed trait onBeforeSpan
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onBeforeSpan: onBeforeSpan = "onBeforeSpan".asInstanceOf[onBeforeSpan]
   
   @js.native
   sealed trait onBeforeSplit
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onBeforeSplit: onBeforeSplit = "onBeforeSplit".asInstanceOf[onBeforeSplit]
   
   @js.native
   sealed trait onBeforeStart
-    extends hintEventName
+    extends StObject
+       with hintEventName
        with typingsJapgolly.webix.webix.ui.hintEventName
+  inline def onBeforeStart: onBeforeStart = "onBeforeStart".asInstanceOf[onBeforeStart]
   
   @js.native
   sealed trait onBeforeStatusChange
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onBeforeStatusChange: onBeforeStatusChange = "onBeforeStatusChange".asInstanceOf[onBeforeStatusChange]
   
   @js.native
   sealed trait onBeforeTabClick
-    extends segmentedEventName
+    extends StObject
+       with segmentedEventName
        with typingsJapgolly.webix.webix.ui.segmentedEventName
        with tabbarEventName
        with typingsJapgolly.webix.webix.ui.tabbarEventName
+  inline def onBeforeTabClick: onBeforeTabClick = "onBeforeTabClick".asInstanceOf[onBeforeTabClick]
   
   @js.native
   sealed trait onBeforeTabClose
-    extends tabbarEventName
+    extends StObject
+       with tabbarEventName
        with typingsJapgolly.webix.webix.ui.tabbarEventName
+  inline def onBeforeTabClose: onBeforeTabClose = "onBeforeTabClose".asInstanceOf[onBeforeTabClose]
   
   @js.native
   sealed trait onBeforeUnSelect
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
-  
-  @js.native
-  sealed trait onBeforeUploadDialog
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onBeforeUnSelect: onBeforeUnSelect = "onBeforeUnSelect".asInstanceOf[onBeforeUnSelect]
   
   @js.native
   sealed trait onBeforeValidate
-    extends formEventName
+    extends StObject
+       with formEventName
        with typingsJapgolly.webix.webix.ui.formEventName
        with toolbarEventName
        with typingsJapgolly.webix.webix.ui.toolbarEventName
+  inline def onBeforeValidate: onBeforeValidate = "onBeforeValidate".asInstanceOf[onBeforeValidate]
   
   @js.native
   sealed trait onBeforeValueChange
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onBeforeValueChange: onBeforeValueChange = "onBeforeValueChange".asInstanceOf[onBeforeValueChange]
   
   @js.native
   sealed trait onBeforeZoom
-    extends calendarEventName
+    extends StObject
+       with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
+  inline def onBeforeZoom: onBeforeZoom = "onBeforeZoom".asInstanceOf[onBeforeZoom]
   
   @js.native
   sealed trait onBindRequest
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with DataRecordEventName
        with typingsJapgolly.webix.webix.DataRecordEventName
@@ -2076,6 +2054,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -2084,6 +2064,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with commentsEventName
@@ -2118,14 +2100,16 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+       with filterEventName
+       with typingsJapgolly.webix.webix.ui.filterEventName
        with formEventName
        with typingsJapgolly.webix.webix.ui.formEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -2154,6 +2138,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.layoutEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -2166,8 +2152,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multitextEventName
        with multiviewEventName
        with typingsJapgolly.webix.webix.ui.multiviewEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with panelEventName
@@ -2186,18 +2170,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
-       with querybuilderEventName
-       with typingsJapgolly.webix.webix.ui.querybuilderEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
        with richtextEventName
        with typingsJapgolly.webix.webix.ui.richtextEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -2232,6 +2218,10 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
+       with timeboardEventName
+       with typingsJapgolly.webix.webix.ui.timeboardEventName
        with timelineEventName
        with typingsJapgolly.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -2256,17 +2246,21 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onBindRequest: onBindRequest = "onBindRequest".asInstanceOf[onBindRequest]
   
   @js.native
   sealed trait onBindUpdate
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
+  inline def onBindUpdate: onBindUpdate = "onBindUpdate".asInstanceOf[onBindUpdate]
   
   @js.native
   sealed trait onBlur
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with alignEventName
        with typingsJapgolly.webix.webix.ui.alignEventName
@@ -2282,6 +2276,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -2290,6 +2286,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextEventName
@@ -2310,14 +2308,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -2334,10 +2338,14 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.iconEventName
        with iframeEventName
        with typingsJapgolly.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
        with labelEventName
        with typingsJapgolly.webix.webix.ui.labelEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -2348,8 +2356,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -2362,14 +2368,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -2400,6 +2412,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typingsJapgolly.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -2414,26 +2428,34 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typingsJapgolly.webix.webix.ui.videoEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
   
   @js.native
   sealed trait onCancel
-    extends pivotEventName
+    extends StObject
+       with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
+  inline def onCancel: onCancel = "onCancel".asInstanceOf[onCancel]
   
   @js.native
   sealed trait onCellChange
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onCellChange: onCellChange = "onCellChange".asInstanceOf[onCellChange]
   
   @js.native
   sealed trait onChange
-    extends DataRecordEventName
+    extends StObject
+       with DataRecordEventName
        with typingsJapgolly.webix.webix.DataRecordEventName
        with DataValueEventName
        with typingsJapgolly.webix.webix.DataValueEventName
@@ -2445,6 +2467,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with counterEventName
@@ -2459,6 +2483,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangepickerEventName
        with dbllistEventName
        with typingsJapgolly.webix.webix.ui.dbllistEventName
+       with filterEventName
+       with typingsJapgolly.webix.webix.ui.filterEventName
        with formEventName
        with typingsJapgolly.webix.webix.ui.formEventName
        with gridlayoutEventName
@@ -2475,6 +2501,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multiselectEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangesliderEventName
@@ -2483,6 +2511,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.richselectEventName
        with richtextEventName
        with typingsJapgolly.webix.webix.ui.richtextEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with searchEventName
        with typingsJapgolly.webix.webix.ui.searchEventName
        with segmentedEventName
@@ -2501,14 +2531,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
+       with timeboardEventName
+       with typingsJapgolly.webix.webix.ui.timeboardEventName
        with toggleEventName
        with typingsJapgolly.webix.webix.ui.toggleEventName
        with toolbarEventName
        with typingsJapgolly.webix.webix.ui.toolbarEventName
+  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
   
   @js.native
   sealed trait onCheck
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
@@ -2516,57 +2552,71 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.propertyEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onCheck: onCheck = "onCheck".asInstanceOf[onCheck]
   
   @js.native
   sealed trait onCollectValues
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onCollectValues: onCollectValues = "onCollectValues".asInstanceOf[onCollectValues]
+  
+  @js.native
+  sealed trait onColorSelect
+    extends StObject
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
+  inline def onColorSelect: onColorSelect = "onColorSelect".asInstanceOf[onColorSelect]
   
   @js.native
   sealed trait onColumnGroupCollapse
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onColumnGroupCollapse: onColumnGroupCollapse = "onColumnGroupCollapse".asInstanceOf[onColumnGroupCollapse]
   
   @js.native
   sealed trait onColumnResize
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onColumnResize: onColumnResize = "onColumnResize".asInstanceOf[onColumnResize]
   
   @js.native
   sealed trait onCommentHide
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onCommentHide: onCommentHide = "onCommentHide".asInstanceOf[onCommentHide]
   
   @js.native
   sealed trait onComponentInit
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+    extends StObject
        with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
-  
-  @js.native
-  sealed trait onCopyError
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onComponentInit: onComponentInit = "onComponentInit".asInstanceOf[onComponentInit]
   
   @js.native
   sealed trait onDataParse
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onDataParse: onDataParse = "onDataParse".asInstanceOf[onDataParse]
   
   @js.native
   sealed trait onDataRequest
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
@@ -2582,8 +2632,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -2596,8 +2644,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
        with protoEventName
@@ -2618,15 +2664,19 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onDataRequest: onDataRequest = "onDataRequest".asInstanceOf[onDataRequest]
   
   @js.native
   sealed trait onDataSerialize
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onDataSerialize: onDataSerialize = "onDataSerialize".asInstanceOf[onDataSerialize]
   
   @js.native
   sealed trait onDataUpdate
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
@@ -2642,8 +2692,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -2656,8 +2704,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
        with protoEventName
@@ -2678,22 +2724,21 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onDataUpdate: onDataUpdate = "onDataUpdate".asInstanceOf[onDataUpdate]
   
   @js.native
   sealed trait onDateClear
-    extends calendarEventName
+    extends StObject
+       with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
        with daterangeEventName
        with typingsJapgolly.webix.webix.ui.daterangeEventName
-  
-  @js.native
-  sealed trait onDateSelect
-    extends calendarEventName
-       with typingsJapgolly.webix.webix.ui.calendarEventName
+  inline def onDateClear: onDateClear = "onDateClear".asInstanceOf[onDateClear]
   
   @js.native
   sealed trait onDestruct
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
@@ -2721,6 +2766,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -2729,6 +2776,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with commentsEventName
@@ -2759,18 +2808,24 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
        with dbllistEventName
        with typingsJapgolly.webix.webix.ui.dbllistEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
        with filemanagerEventName
        with typingsJapgolly.webix.webix.ui.filemanagerEventName
+       with filterEventName
+       with typingsJapgolly.webix.webix.ui.filterEventName
        with formEventName
        with typingsJapgolly.webix.webix.ui.formEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -2791,6 +2846,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.iconEventName
        with iframeEventName
        with typingsJapgolly.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
        with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
        with labelEventName
@@ -2799,6 +2856,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.layoutEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -2811,8 +2870,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multitextEventName
        with multiviewEventName
        with typingsJapgolly.webix.webix.ui.multiviewEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with panelEventName
@@ -2831,18 +2888,22 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
-       with querybuilderEventName
-       with typingsJapgolly.webix.webix.ui.querybuilderEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
        with richtextEventName
        with typingsJapgolly.webix.webix.ui.richtextEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -2877,6 +2938,10 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
+       with timeboardEventName
+       with typingsJapgolly.webix.webix.ui.timeboardEventName
        with timelineEventName
        with typingsJapgolly.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -2895,21 +2960,27 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typingsJapgolly.webix.webix.ui.videoEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onDestruct: onDestruct = "onDestruct".asInstanceOf[onDestruct]
   
   @js.native
   sealed trait onDocumentReady
-    extends pdfviewerEventName
+    extends StObject
+       with pdfviewerEventName
        with typingsJapgolly.webix.webix.ui.pdfviewerEventName
+  inline def onDocumentReady: onDocumentReady = "onDocumentReady".asInstanceOf[onDocumentReady]
   
   @js.native
   sealed trait onDragOut
-    extends contextmenuEventName
+    extends StObject
+       with contextmenuEventName
        with typingsJapgolly.webix.webix.ui.contextmenuEventName
        with dashboardEventName
        with typingsJapgolly.webix.webix.ui.dashboardEventName
@@ -2935,29 +3006,30 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
-  
-  @js.native
-  sealed trait onDynLoadError
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onDragOut: onDragOut = "onDragOut".asInstanceOf[onDragOut]
   
   @js.native
   sealed trait onEditorChange
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onEditorChange: onEditorChange = "onEditorChange".asInstanceOf[onEditorChange]
   
   @js.native
   sealed trait onEnd
-    extends hintEventName
+    extends StObject
+       with hintEventName
        with typingsJapgolly.webix.webix.ui.hintEventName
+  inline def onEnd: onEnd = "onEnd".asInstanceOf[onEnd]
   
   @js.native
   sealed trait onEnter
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with alignEventName
        with typingsJapgolly.webix.webix.ui.alignEventName
@@ -2973,6 +3045,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -2981,6 +3055,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextEventName
@@ -3001,14 +3077,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -3025,10 +3107,14 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.iconEventName
        with iframeEventName
        with typingsJapgolly.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
        with labelEventName
        with typingsJapgolly.webix.webix.ui.labelEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -3039,8 +3125,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -3053,14 +3137,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -3091,6 +3181,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typingsJapgolly.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -3105,41 +3197,48 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typingsJapgolly.webix.webix.ui.videoEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
-  
-  @js.native
-  sealed trait onErrorResponse
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onEnter: onEnter = "onEnter".asInstanceOf[onEnter]
   
   @js.native
   sealed trait onFileUpload
-    extends uploaderEventName
+    extends StObject
+       with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+  inline def onFileUpload: onFileUpload = "onFileUpload".asInstanceOf[onFileUpload]
   
   @js.native
   sealed trait onFileUploadError
-    extends uploaderEventName
+    extends StObject
+       with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+  inline def onFileUploadError: onFileUploadError = "onFileUploadError".asInstanceOf[onFileUploadError]
   
   @js.native
   sealed trait onFilterChange
-    extends pivotEventName
+    extends StObject
+       with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
+  inline def onFilterChange: onFilterChange = "onFilterChange".asInstanceOf[onFilterChange]
   
   @js.native
   sealed trait onFilterCreate
-    extends pivotEventName
+    extends StObject
+       with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
+  inline def onFilterCreate: onFilterCreate = "onFilterCreate".asInstanceOf[onFilterCreate]
   
   @js.native
   sealed trait onFocus
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with alignEventName
        with typingsJapgolly.webix.webix.ui.alignEventName
@@ -3155,6 +3254,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -3163,6 +3264,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextEventName
@@ -3183,14 +3286,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -3207,10 +3316,14 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.iconEventName
        with iframeEventName
        with typingsJapgolly.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
        with labelEventName
        with typingsJapgolly.webix.webix.ui.labelEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -3221,8 +3334,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -3235,14 +3346,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -3273,6 +3390,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typingsJapgolly.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -3287,40 +3406,45 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typingsJapgolly.webix.webix.ui.videoEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
-  
-  @js.native
-  sealed trait onFolderSelect
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
   
   @js.native
   sealed trait onHeaderClick
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onHeaderClick: onHeaderClick = "onHeaderClick".asInstanceOf[onHeaderClick]
   
   @js.native
   sealed trait onHeaderInit
-    extends pivotEventName
+    extends StObject
+       with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
+  inline def onHeaderInit: onHeaderInit = "onHeaderInit".asInstanceOf[onHeaderInit]
   
   @js.native
   sealed trait onHeatMapRender
-    extends googleMapEventName
+    extends StObject
+       with googleMapEventName
        with typingsJapgolly.webix.webix.ui.googleMapEventName
+  inline def onHeatMapRender: onHeatMapRender = "onHeatMapRender".asInstanceOf[onHeatMapRender]
   
   @js.native
   sealed trait onHide
-    extends checksuggestEventName
+    extends StObject
+       with checksuggestEventName
        with typingsJapgolly.webix.webix.ui.checksuggestEventName
        with contextEventName
        with typingsJapgolly.webix.webix.ui.contextEventName
@@ -3332,6 +3456,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
        with typingsJapgolly.webix.webix.ui.gridsuggestEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with multisuggestEventName
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with popupEventName
@@ -3344,21 +3470,34 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.suggestEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onHide: onHide = "onHide".asInstanceOf[onHide]
   
   @js.native
-  sealed trait onHideSearchResults
-    extends filemanagerEventName
+  sealed trait onInit
+    extends StObject
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
+       with filemanagerEventName
        with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onHistoryChange
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
+  inline def onInit: onInit = "onInit".asInstanceOf[onInit]
   
   @js.native
   sealed trait onItemCheck
-    extends organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
+    extends StObject
        with sidebarEventName
        with typingsJapgolly.webix.webix.ui.sidebarEventName
        with treeEventName
@@ -3367,10 +3506,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treemapEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onItemCheck: onItemCheck = "onItemCheck".asInstanceOf[onItemCheck]
   
   @js.native
   sealed trait onItemClick
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with buttonEventName
        with typingsJapgolly.webix.webix.ui.buttonEventName
@@ -3416,8 +3557,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multiselectEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pivotEventName
@@ -3452,6 +3591,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with timelineEventName
        with typingsJapgolly.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -3466,10 +3607,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+  inline def onItemClick: onItemClick = "onItemClick".asInstanceOf[onItemClick]
   
   @js.native
   sealed trait onItemDblClick
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
@@ -3489,8 +3632,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -3511,15 +3652,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
-  
-  @js.native
-  sealed trait onItemRename
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onItemDblClick: onItemDblClick = "onItemDblClick".asInstanceOf[onItemDblClick]
   
   @js.native
   sealed trait onItemRender
-    extends contextmenuEventName
+    extends StObject
+       with contextmenuEventName
        with typingsJapgolly.webix.webix.ui.contextmenuEventName
        with dataviewEventName
        with typingsJapgolly.webix.webix.ui.dataviewEventName
@@ -3529,8 +3667,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with protoEventName
        with typingsJapgolly.webix.webix.ui.protoEventName
        with sidebarEventName
@@ -3545,15 +3681,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treemapEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
-  
-  @js.native
-  sealed trait onItemSelect
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onItemRender: onItemRender = "onItemRender".asInstanceOf[onItemRender]
   
   @js.native
   sealed trait onKeyPress
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with alignEventName
        with typingsJapgolly.webix.webix.ui.alignEventName
@@ -3569,6 +3702,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -3577,6 +3712,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextEventName
@@ -3605,6 +3742,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -3625,6 +3764,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.labelEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -3635,8 +3776,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -3655,8 +3794,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -3687,6 +3830,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typingsJapgolly.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -3707,77 +3852,98 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
-  
-  @js.native
-  sealed trait onKeySelect
-    extends querybuilderEventName
-       with typingsJapgolly.webix.webix.ui.querybuilderEventName
+  inline def onKeyPress: onKeyPress = "onKeyPress".asInstanceOf[onKeyPress]
   
   @js.native
   sealed trait onLegendClick
-    extends chartEventName
+    extends StObject
+       with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
+  inline def onLegendClick: onLegendClick = "onLegendClick".asInstanceOf[onLegendClick]
   
   @js.native
   sealed trait onListAfterContextMenu
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onListAfterContextMenu: onListAfterContextMenu = "onListAfterContextMenu".asInstanceOf[onListAfterContextMenu]
   
   @js.native
   sealed trait onListAfterDrop
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onListAfterDrop: onListAfterDrop = "onListAfterDrop".asInstanceOf[onListAfterDrop]
   
   @js.native
   sealed trait onListAfterSelect
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onListAfterSelect: onListAfterSelect = "onListAfterSelect".asInstanceOf[onListAfterSelect]
   
   @js.native
   sealed trait onListBeforeContextMenu
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onListBeforeContextMenu: onListBeforeContextMenu = "onListBeforeContextMenu".asInstanceOf[onListBeforeContextMenu]
   
   @js.native
   sealed trait onListBeforeDrag
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onListBeforeDrag: onListBeforeDrag = "onListBeforeDrag".asInstanceOf[onListBeforeDrag]
   
   @js.native
   sealed trait onListBeforeDragIn
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onListBeforeDragIn: onListBeforeDragIn = "onListBeforeDragIn".asInstanceOf[onListBeforeDragIn]
   
   @js.native
   sealed trait onListBeforeDrop
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onListBeforeDrop: onListBeforeDrop = "onListBeforeDrop".asInstanceOf[onListBeforeDrop]
   
   @js.native
   sealed trait onListBeforeSelect
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onListBeforeSelect: onListBeforeSelect = "onListBeforeSelect".asInstanceOf[onListBeforeSelect]
   
   @js.native
   sealed trait onListIconClick
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onListIconClick: onListIconClick = "onListIconClick".asInstanceOf[onListIconClick]
   
   @js.native
   sealed trait onListItemClick
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onListItemClick: onListItemClick = "onListItemClick".asInstanceOf[onListItemClick]
   
   @js.native
   sealed trait onListItemDblClick
-    extends kanbanEventName
+    extends StObject
+       with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
+  inline def onListItemDblClick: onListItemDblClick = "onListItemDblClick".asInstanceOf[onListItemDblClick]
   
   @js.native
   sealed trait onLiveEdit
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
@@ -3785,10 +3951,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.propertyEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onLiveEdit: onLiveEdit = "onLiveEdit".asInstanceOf[onLiveEdit]
   
   @js.native
   sealed trait onLoadError
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with DataRecordEventName
        with typingsJapgolly.webix.webix.DataRecordEventName
@@ -3810,8 +3978,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dbllistEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+       with filterEventName
+       with typingsJapgolly.webix.webix.ui.filterEventName
        with formEventName
        with typingsJapgolly.webix.webix.ui.formEventName
        with geochartEventName
@@ -3828,8 +3996,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pdfviewerEventName
        with typingsJapgolly.webix.webix.ui.pdfviewerEventName
        with pivotEventName
@@ -3860,10 +4026,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onLoadError: onLoadError = "onLoadError".asInstanceOf[onLoadError]
   
   @js.native
   sealed trait onLongTouch
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with alignEventName
        with typingsJapgolly.webix.webix.ui.alignEventName
@@ -3879,6 +4047,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -3887,6 +4057,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextEventName
@@ -3907,14 +4079,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -3931,10 +4109,14 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.iconEventName
        with iframeEventName
        with typingsJapgolly.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
        with labelEventName
        with typingsJapgolly.webix.webix.ui.labelEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -3945,8 +4127,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -3959,14 +4139,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -3997,6 +4183,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typingsJapgolly.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -4011,40 +4199,52 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typingsJapgolly.webix.webix.ui.videoEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onLongTouch: onLongTouch = "onLongTouch".asInstanceOf[onLongTouch]
   
   @js.native
   sealed trait onMapError
-    extends geochartEventName
+    extends StObject
+       with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
+  inline def onMapError: onMapError = "onMapError".asInstanceOf[onMapError]
   
   @js.native
   sealed trait onMapReady
-    extends geochartEventName
+    extends StObject
+       with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
+  inline def onMapReady: onMapReady = "onMapReady".asInstanceOf[onMapReady]
   
   @js.native
   sealed trait onMathRefresh
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onMathRefresh: onMathRefresh = "onMathRefresh".asInstanceOf[onMathRefresh]
   
   @js.native
   sealed trait onMenuItemClick
-    extends contextmenuEventName
+    extends StObject
+       with contextmenuEventName
        with typingsJapgolly.webix.webix.ui.contextmenuEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with submenuEventName
        with typingsJapgolly.webix.webix.ui.submenuEventName
+  inline def onMenuItemClick: onMenuItemClick = "onMenuItemClick".asInstanceOf[onMenuItemClick]
   
   @js.native
   sealed trait onMouseMove
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
@@ -4064,8 +4264,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -4086,10 +4284,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onMouseMove: onMouseMove = "onMouseMove".asInstanceOf[onMouseMove]
   
   @js.native
   sealed trait onMouseMoving
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
@@ -4109,8 +4309,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -4131,10 +4329,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onMouseMoving: onMouseMoving = "onMouseMoving".asInstanceOf[onMouseMoving]
   
   @js.native
   sealed trait onMouseOut
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
@@ -4154,8 +4354,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -4176,52 +4374,59 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
-  
-  @js.native
-  sealed trait onMoveError
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onMouseOut: onMouseOut = "onMouseOut".asInstanceOf[onMouseOut]
   
   @js.native
   sealed trait onNext
-    extends hintEventName
+    extends StObject
+       with hintEventName
        with typingsJapgolly.webix.webix.ui.hintEventName
+  inline def onNext: onNext = "onNext".asInstanceOf[onNext]
   
   @js.native
   sealed trait onOptionAdd
-    extends radioEventName
+    extends StObject
+       with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with segmentedEventName
        with typingsJapgolly.webix.webix.ui.segmentedEventName
        with tabbarEventName
        with typingsJapgolly.webix.webix.ui.tabbarEventName
+  inline def onOptionAdd: onOptionAdd = "onOptionAdd".asInstanceOf[onOptionAdd]
   
   @js.native
   sealed trait onOptionRemove
-    extends radioEventName
+    extends StObject
+       with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with segmentedEventName
        with typingsJapgolly.webix.webix.ui.segmentedEventName
        with tabbarEventName
        with typingsJapgolly.webix.webix.ui.tabbarEventName
+  inline def onOptionRemove: onOptionRemove = "onOptionRemove".asInstanceOf[onOptionRemove]
   
   @js.native
   sealed trait onPageRender
-    extends pdfviewerEventName
+    extends StObject
+       with pdfviewerEventName
        with typingsJapgolly.webix.webix.ui.pdfviewerEventName
+  inline def onPageRender: onPageRender = "onPageRender".asInstanceOf[onPageRender]
   
   @js.native
   sealed trait onPartialRender
-    extends sidebarEventName
+    extends StObject
+       with sidebarEventName
        with typingsJapgolly.webix.webix.ui.sidebarEventName
        with treeEventName
        with typingsJapgolly.webix.webix.ui.treeEventName
        with treemapEventName
        with typingsJapgolly.webix.webix.ui.treemapEventName
+  inline def onPartialRender: onPartialRender = "onPartialRender".asInstanceOf[onPartialRender]
   
   @js.native
   sealed trait onPaste
-    extends contextmenuEventName
+    extends StObject
+       with contextmenuEventName
        with typingsJapgolly.webix.webix.ui.contextmenuEventName
        with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
@@ -4245,40 +4450,40 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
-  
-  @js.native
-  sealed trait onPathComplete
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
-  
-  @js.native
-  sealed trait onPathLevel
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onPaste: onPaste = "onPaste".asInstanceOf[onPaste]
   
   @js.native
   sealed trait onPopup
-    extends pivotEventName
+    extends StObject
+       with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
+  inline def onPopup: onPopup = "onPopup".asInstanceOf[onPopup]
   
   @js.native
   sealed trait onPrevious
-    extends hintEventName
+    extends StObject
+       with hintEventName
        with typingsJapgolly.webix.webix.ui.hintEventName
+  inline def onPrevious: onPrevious = "onPrevious".asInstanceOf[onPrevious]
   
   @js.native
   sealed trait onRegionClick
-    extends geochartEventName
+    extends StObject
+       with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
+  inline def onRegionClick: onRegionClick = "onRegionClick".asInstanceOf[onRegionClick]
   
   @js.native
   sealed trait onReset
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onReset: onReset = "onReset".asInstanceOf[onReset]
   
   @js.native
   sealed trait onResize
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
@@ -4286,70 +4491,91 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.resizeareaEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onResize: onResize = "onResize".asInstanceOf[onResize]
   
   @js.native
   sealed trait onResizeEnd
-    extends resizeareaEventName
+    extends StObject
+       with resizeareaEventName
        with typingsJapgolly.webix.webix.ui.resizeareaEventName
+  inline def onResizeEnd: onResizeEnd = "onResizeEnd".asInstanceOf[onResizeEnd]
   
   @js.native
   sealed trait onRowResize
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onRowResize: onRowResize = "onRowResize".asInstanceOf[onRowResize]
   
   @js.native
   sealed trait onScaleChange
-    extends pdfviewerEventName
+    extends StObject
+       with pdfviewerEventName
        with typingsJapgolly.webix.webix.ui.pdfviewerEventName
+  inline def onScaleChange: onScaleChange = "onScaleChange".asInstanceOf[onScaleChange]
   
   @js.native
-  sealed trait onScroll extends js.Object
+  sealed trait onScroll extends StObject
+  inline def onScroll: onScroll = "onScroll".asInstanceOf[onScroll]
   
   @js.native
   sealed trait onScrollX
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onScrollX: onScrollX = "onScrollX".asInstanceOf[onScrollX]
   
   @js.native
   sealed trait onScrollY
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onScrollY: onScrollY = "onScrollY".asInstanceOf[onScrollY]
   
   @js.native
   sealed trait onSearchIconClick
-    extends searchEventName
+    extends StObject
+       with searchEventName
        with typingsJapgolly.webix.webix.ui.searchEventName
+  inline def onSearchIconClick: onSearchIconClick = "onSearchIconClick".asInstanceOf[onSearchIconClick]
   
   @js.native
   sealed trait onSectionAdd
-    extends multitextEventName
+    extends StObject
+       with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
+  inline def onSectionAdd: onSectionAdd = "onSectionAdd".asInstanceOf[onSectionAdd]
   
   @js.native
   sealed trait onSectionRemove
-    extends multitextEventName
+    extends StObject
+       with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
+  inline def onSectionRemove: onSectionRemove = "onSectionRemove".asInstanceOf[onSectionRemove]
   
   @js.native
   sealed trait onSelect
-    extends colorboardEventName
+    extends StObject
+       with colorboardEventName
        with typingsJapgolly.webix.webix.ui.colorboardEventName
+  inline def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
   
   @js.native
   sealed trait onSelectChange
-    extends contextmenuEventName
+    extends StObject
+       with contextmenuEventName
        with typingsJapgolly.webix.webix.ui.contextmenuEventName
        with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
@@ -4363,8 +4589,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.listEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with sidebarEventName
        with typingsJapgolly.webix.webix.ui.sidebarEventName
        with submenuEventName
@@ -4377,25 +4601,33 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onSelectChange: onSelectChange = "onSelectChange".asInstanceOf[onSelectChange]
   
   @js.native
   sealed trait onSheetAdd
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onSheetAdd: onSheetAdd = "onSheetAdd".asInstanceOf[onSheetAdd]
   
   @js.native
   sealed trait onSheetRemove
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onSheetRemove: onSheetRemove = "onSheetRemove".asInstanceOf[onSheetRemove]
   
   @js.native
   sealed trait onSheetRename
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onSheetRename: onSheetRename = "onSheetRename".asInstanceOf[onSheetRename]
   
   @js.native
   sealed trait onShow
-    extends carouselEventName
+    extends StObject
+       with carouselEventName
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with checksuggestEventName
        with typingsJapgolly.webix.webix.ui.checksuggestEventName
@@ -4409,6 +4641,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
        with typingsJapgolly.webix.webix.ui.gridsuggestEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with multisuggestEventName
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with popupEventName
@@ -4421,96 +4655,108 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.suggestEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
-  
-  @js.native
-  sealed trait onShowSearchResults
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onShow: onShow = "onShow".asInstanceOf[onShow]
   
   @js.native
   sealed trait onSkip
-    extends hintEventName
+    extends StObject
+       with hintEventName
        with typingsJapgolly.webix.webix.ui.hintEventName
+  inline def onSkip: onSkip = "onSkip".asInstanceOf[onSkip]
   
   @js.native
   sealed trait onSliderDrag
-    extends rangesliderEventName
+    extends StObject
+       with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
        with sliderEventName
        with typingsJapgolly.webix.webix.ui.sliderEventName
+  inline def onSliderDrag: onSliderDrag = "onSliderDrag".asInstanceOf[onSliderDrag]
   
   @js.native
   sealed trait onStructureLoad
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onStructureLoad: onStructureLoad = "onStructureLoad".asInstanceOf[onStructureLoad]
   
   @js.native
   sealed trait onStructureUpdate
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onStructureUpdate: onStructureUpdate = "onStructureUpdate".asInstanceOf[onStructureUpdate]
   
   @js.native
   sealed trait onStyleSet
-    extends spreadsheetEventName
+    extends StObject
+       with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onStyleSet: onStyleSet = "onStyleSet".asInstanceOf[onStyleSet]
   
   @js.native
   sealed trait onSubViewClose
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onSubViewClose: onSubViewClose = "onSubViewClose".asInstanceOf[onSubViewClose]
   
   @js.native
   sealed trait onSubViewCreate
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onSubViewCreate: onSubViewCreate = "onSubViewCreate".asInstanceOf[onSubViewCreate]
   
   @js.native
   sealed trait onSubViewOpen
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onSubViewOpen: onSubViewOpen = "onSubViewOpen".asInstanceOf[onSubViewOpen]
   
   @js.native
   sealed trait onSubViewRender
-    extends datatableEventName
+    extends StObject
+       with datatableEventName
        with typingsJapgolly.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with treetableEventName
        with typingsJapgolly.webix.webix.ui.treetableEventName
+  inline def onSubViewRender: onSubViewRender = "onSubViewRender".asInstanceOf[onSubViewRender]
   
   @js.native
   sealed trait onSubmit
-    extends formEventName
+    extends StObject
+       with formEventName
        with typingsJapgolly.webix.webix.ui.formEventName
-  
-  @js.native
-  sealed trait onSuccessResponse
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+  inline def onSubmit: onSubmit = "onSubmit".asInstanceOf[onSubmit]
   
   @js.native
   sealed trait onSwipeX
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with alignEventName
        with typingsJapgolly.webix.webix.ui.alignEventName
@@ -4526,6 +4772,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -4534,6 +4782,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextEventName
@@ -4554,14 +4804,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -4578,10 +4834,14 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.iconEventName
        with iframeEventName
        with typingsJapgolly.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
        with labelEventName
        with typingsJapgolly.webix.webix.ui.labelEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -4592,8 +4852,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -4606,14 +4864,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -4644,6 +4908,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typingsJapgolly.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -4658,16 +4924,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typingsJapgolly.webix.webix.ui.videoEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onSwipeX: onSwipeX = "onSwipeX".asInstanceOf[onSwipeX]
   
   @js.native
   sealed trait onSwipeY
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with alignEventName
        with typingsJapgolly.webix.webix.ui.alignEventName
@@ -4683,6 +4953,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -4691,6 +4963,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextEventName
@@ -4711,14 +4985,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -4735,10 +5015,14 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.iconEventName
        with iframeEventName
        with typingsJapgolly.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
        with labelEventName
        with typingsJapgolly.webix.webix.ui.labelEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -4749,8 +5033,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -4763,14 +5045,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -4801,6 +5089,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typingsJapgolly.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -4815,17 +5105,25 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typingsJapgolly.webix.webix.ui.videoEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onSwipeY: onSwipeY = "onSwipeY".asInstanceOf[onSwipeY]
   
   @js.native
   sealed trait onTabFocus
-    extends chartEventName
+    extends StObject
+       with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with contextmenuEventName
        with typingsJapgolly.webix.webix.ui.contextmenuEventName
        with datatableEventName
@@ -4834,6 +5132,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -4842,20 +5142,26 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.grouplistEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with protoEventName
        with typingsJapgolly.webix.webix.ui.protoEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with sidebarEventName
        with typingsJapgolly.webix.webix.ui.sidebarEventName
        with sidemenuEventName
        with typingsJapgolly.webix.webix.ui.sidemenuEventName
        with submenuEventName
        with typingsJapgolly.webix.webix.ui.submenuEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with treeEventName
        with typingsJapgolly.webix.webix.ui.treeEventName
        with treemapEventName
@@ -4866,10 +5172,19 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
+  inline def onTabFocus: onTabFocus = "onTabFocus".asInstanceOf[onTabFocus]
+  
+  @js.native
+  sealed trait onTimeSelect
+    extends StObject
+       with timeboardEventName
+       with typingsJapgolly.webix.webix.ui.timeboardEventName
+  inline def onTimeSelect: onTimeSelect = "onTimeSelect".asInstanceOf[onTimeSelect]
   
   @js.native
   sealed trait onTimedKeyPress
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with alignEventName
        with typingsJapgolly.webix.webix.ui.alignEventName
@@ -4885,6 +5200,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -4893,6 +5210,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextEventName
@@ -4921,6 +5240,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -4941,6 +5262,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.labelEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -4951,8 +5274,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -4971,8 +5292,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -5003,6 +5328,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typingsJapgolly.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -5023,17 +5350,21 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onTimedKeyPress: onTimedKeyPress = "onTimedKeyPress".asInstanceOf[onTimedKeyPress]
   
   @js.native
   sealed trait onTodaySet
-    extends calendarEventName
+    extends StObject
+       with calendarEventName
        with typingsJapgolly.webix.webix.ui.calendarEventName
        with daterangeEventName
        with typingsJapgolly.webix.webix.ui.daterangeEventName
+  inline def onTodaySet: onTodaySet = "onTodaySet".asInstanceOf[onTodaySet]
   
   @js.native
   sealed trait onTouchEnd
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with alignEventName
        with typingsJapgolly.webix.webix.ui.alignEventName
@@ -5049,6 +5380,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -5057,6 +5390,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextEventName
@@ -5077,14 +5412,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -5101,10 +5442,14 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.iconEventName
        with iframeEventName
        with typingsJapgolly.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
        with labelEventName
        with typingsJapgolly.webix.webix.ui.labelEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -5115,8 +5460,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -5129,14 +5472,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -5167,6 +5516,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typingsJapgolly.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -5181,16 +5532,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typingsJapgolly.webix.webix.ui.videoEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onTouchEnd: onTouchEnd = "onTouchEnd".asInstanceOf[onTouchEnd]
   
   @js.native
   sealed trait onTouchMove
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with alignEventName
        with typingsJapgolly.webix.webix.ui.alignEventName
@@ -5206,6 +5561,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -5214,6 +5571,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextEventName
@@ -5234,14 +5593,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -5258,10 +5623,14 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.iconEventName
        with iframeEventName
        with typingsJapgolly.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
        with labelEventName
        with typingsJapgolly.webix.webix.ui.labelEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -5272,8 +5641,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -5286,14 +5653,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -5324,6 +5697,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typingsJapgolly.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -5338,16 +5713,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typingsJapgolly.webix.webix.ui.videoEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onTouchMove: onTouchMove = "onTouchMove".asInstanceOf[onTouchMove]
   
   @js.native
   sealed trait onTouchStart
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with alignEventName
        with typingsJapgolly.webix.webix.ui.alignEventName
@@ -5363,6 +5742,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -5371,6 +5752,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextEventName
@@ -5391,14 +5774,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -5415,10 +5804,14 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.iconEventName
        with iframeEventName
        with typingsJapgolly.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
        with labelEventName
        with typingsJapgolly.webix.webix.ui.labelEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -5429,8 +5822,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -5443,14 +5834,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -5481,6 +5878,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typingsJapgolly.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -5495,26 +5894,55 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typingsJapgolly.webix.webix.ui.videoEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
+  
+  @js.native
+  sealed trait onUIEditStart
+    extends StObject
+       with spreadsheetEventName
+       with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onUIEditStart: onUIEditStart = "onUIEditStart".asInstanceOf[onUIEditStart]
+  
+  @js.native
+  sealed trait onUIEditStop
+    extends StObject
+       with spreadsheetEventName
+       with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onUIEditStop: onUIEditStop = "onUIEditStop".asInstanceOf[onUIEditStop]
+  
+  @js.native
+  sealed trait onUnits
+    extends StObject
+       with unitlistEventName
+       with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onUnits: onUnits = "onUnits".asInstanceOf[onUnits]
   
   @js.native
   sealed trait onUploadComplete
-    extends uploaderEventName
+    extends StObject
+       with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+  inline def onUploadComplete: onUploadComplete = "onUploadComplete".asInstanceOf[onUploadComplete]
   
   @js.native
   sealed trait onUserMentioned
-    extends commentsEventName
+    extends StObject
+       with commentsEventName
        with typingsJapgolly.webix.webix.ui.commentsEventName
+  inline def onUserMentioned: onUserMentioned = "onUserMentioned".asInstanceOf[onUserMentioned]
   
   @js.native
   sealed trait onValidationError
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
@@ -5550,10 +5978,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onValidationError: onValidationError = "onValidationError".asInstanceOf[onValidationError]
   
   @js.native
   sealed trait onValidationSuccess
-    extends DataCollectionEventName
+    extends StObject
+       with DataCollectionEventName
        with typingsJapgolly.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
        with typingsJapgolly.webix.webix.TreeCollectionEventName
@@ -5589,10 +6019,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.treetableEventName
        with unitlistEventName
        with typingsJapgolly.webix.webix.ui.unitlistEventName
+  inline def onValidationSuccess: onValidationSuccess = "onValidationSuccess".asInstanceOf[onValidationSuccess]
   
   @js.native
   sealed trait onValueSuggest
-    extends checksuggestEventName
+    extends StObject
+       with checksuggestEventName
        with typingsJapgolly.webix.webix.ui.checksuggestEventName
        with datasuggestEventName
        with typingsJapgolly.webix.webix.ui.datasuggestEventName
@@ -5600,37 +6032,45 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
        with typingsJapgolly.webix.webix.ui.gridsuggestEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with multisuggestEventName
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with suggestEventName
        with typingsJapgolly.webix.webix.ui.suggestEventName
+  inline def onValueSuggest: onValueSuggest = "onValueSuggest".asInstanceOf[onValueSuggest]
   
   @js.native
   sealed trait onValues
-    extends formEventName
+    extends StObject
+       with formEventName
        with typingsJapgolly.webix.webix.ui.formEventName
        with htmlformEventName
        with typingsJapgolly.webix.webix.ui.htmlformEventName
        with toolbarEventName
        with typingsJapgolly.webix.webix.ui.toolbarEventName
+  inline def onValues: onValues = "onValues".asInstanceOf[onValues]
   
   @js.native
   sealed trait onViewChange
-    extends multiviewEventName
+    extends StObject
+       with multiviewEventName
        with typingsJapgolly.webix.webix.ui.multiviewEventName
+  inline def onViewChange: onViewChange = "onViewChange".asInstanceOf[onViewChange]
   
   @js.native
   sealed trait onViewInit
-    extends filemanagerEventName
-       with typingsJapgolly.webix.webix.ui.filemanagerEventName
+    extends StObject
        with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
        with spreadsheetEventName
        with typingsJapgolly.webix.webix.ui.spreadsheetEventName
+  inline def onViewInit: onViewInit = "onViewInit".asInstanceOf[onViewInit]
   
   @js.native
   sealed trait onViewMove
-    extends checksuggestEventName
+    extends StObject
+       with checksuggestEventName
        with typingsJapgolly.webix.webix.ui.checksuggestEventName
        with contextEventName
        with typingsJapgolly.webix.webix.ui.contextEventName
@@ -5642,6 +6082,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
        with typingsJapgolly.webix.webix.ui.gridsuggestEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with multisuggestEventName
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with popupEventName
@@ -5654,10 +6096,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.suggestEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onViewMove: onViewMove = "onViewMove".asInstanceOf[onViewMove]
   
   @js.native
   sealed trait onViewMoveEnd
-    extends checksuggestEventName
+    extends StObject
+       with checksuggestEventName
        with typingsJapgolly.webix.webix.ui.checksuggestEventName
        with contextEventName
        with typingsJapgolly.webix.webix.ui.contextEventName
@@ -5669,6 +6113,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
        with typingsJapgolly.webix.webix.ui.gridsuggestEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with multisuggestEventName
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with popupEventName
@@ -5681,10 +6127,12 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.suggestEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onViewMoveEnd: onViewMoveEnd = "onViewMoveEnd".asInstanceOf[onViewMoveEnd]
   
   @js.native
   sealed trait onViewResize
-    extends accordionitemEventName
+    extends StObject
+       with accordionitemEventName
        with typingsJapgolly.webix.webix.ui.accordionitemEventName
        with alignEventName
        with typingsJapgolly.webix.webix.ui.alignEventName
@@ -5700,6 +6148,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -5708,6 +6158,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with contextEventName
@@ -5728,14 +6180,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typingsJapgolly.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -5752,10 +6210,14 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.iconEventName
        with iframeEventName
        with typingsJapgolly.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
        with labelEventName
        with typingsJapgolly.webix.webix.ui.labelEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -5766,8 +6228,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typingsJapgolly.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with panelEventName
@@ -5782,14 +6242,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -5820,6 +6286,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typingsJapgolly.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -5834,16 +6302,20 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typingsJapgolly.webix.webix.ui.videoEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onViewResize: onViewResize = "onViewResize".asInstanceOf[onViewResize]
   
   @js.native
   sealed trait onViewShow
-    extends abslayoutEventName
+    extends StObject
+       with abslayoutEventName
        with typingsJapgolly.webix.webix.ui.abslayoutEventName
        with accordionEventName
        with typingsJapgolly.webix.webix.ui.accordionEventName
@@ -5867,6 +6339,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.carouselEventName
        with chartEventName
        with typingsJapgolly.webix.webix.ui.chartEventName
+       with chatEventName
+       with typingsJapgolly.webix.webix.ui.chatEventName
        with checkboxEventName
        with typingsJapgolly.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -5875,6 +6349,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typingsJapgolly.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typingsJapgolly.webix.webix.ui.colorselectEventName
        with comboEventName
        with typingsJapgolly.webix.webix.ui.comboEventName
        with commentsEventName
@@ -5905,18 +6381,24 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.daterangesuggestEventName
        with dbllistEventName
        with typingsJapgolly.webix.webix.ui.dbllistEventName
+       with docmanagerEventName
+       with typingsJapgolly.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typingsJapgolly.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typingsJapgolly.webix.webix.ui.fieldsetEventName
        with filemanagerEventName
        with typingsJapgolly.webix.webix.ui.filemanagerEventName
+       with filterEventName
+       with typingsJapgolly.webix.webix.ui.filterEventName
        with formEventName
        with typingsJapgolly.webix.webix.ui.formEventName
        with forminputEventName
        with typingsJapgolly.webix.webix.ui.forminputEventName
        with gageEventName
        with typingsJapgolly.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typingsJapgolly.webix.webix.ui.ganttEventName
        with geochartEventName
        with typingsJapgolly.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -5937,6 +6419,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.iconEventName
        with iframeEventName
        with typingsJapgolly.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typingsJapgolly.webix.webix.ui.jetappEventName
        with kanbanEventName
        with typingsJapgolly.webix.webix.ui.kanbanEventName
        with labelEventName
@@ -5945,6 +6429,8 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.layoutEventName
        with listEventName
        with typingsJapgolly.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typingsJapgolly.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typingsJapgolly.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -5957,8 +6443,6 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.multitextEventName
        with multiviewEventName
        with typingsJapgolly.webix.webix.ui.multiviewEventName
-       with organogramEventName
-       with typingsJapgolly.webix.webix.ui.organogramEventName
        with pagerEventName
        with typingsJapgolly.webix.webix.ui.pagerEventName
        with panelEventName
@@ -5977,18 +6461,22 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.protoEventName
        with proxyEventName
        with typingsJapgolly.webix.webix.ui.proxyEventName
-       with querybuilderEventName
-       with typingsJapgolly.webix.webix.ui.querybuilderEventName
+       with queryEventName
+       with typingsJapgolly.webix.webix.ui.queryEventName
        with radioEventName
        with typingsJapgolly.webix.webix.ui.radioEventName
        with rangechartEventName
        with typingsJapgolly.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typingsJapgolly.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typingsJapgolly.webix.webix.ui.reportsEventName
        with richselectEventName
        with typingsJapgolly.webix.webix.ui.richselectEventName
        with richtextEventName
        with typingsJapgolly.webix.webix.ui.richtextEventName
+       with schedulerEventName
+       with typingsJapgolly.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typingsJapgolly.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -6023,6 +6511,10 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.textEventName
        with textareaEventName
        with typingsJapgolly.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typingsJapgolly.webix.webix.ui.texthighlightEventName
+       with timeboardEventName
+       with typingsJapgolly.webix.webix.ui.timeboardEventName
        with timelineEventName
        with typingsJapgolly.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -6041,554 +6533,27 @@ object webixStrings {
        with typingsJapgolly.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typingsJapgolly.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typingsJapgolly.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typingsJapgolly.webix.webix.ui.videoEventName
        with viewEventName
        with typingsJapgolly.webix.webix.ui.viewEventName
        with windowEventName
        with typingsJapgolly.webix.webix.ui.windowEventName
+  inline def onViewShow: onViewShow = "onViewShow".asInstanceOf[onViewShow]
   
   @js.native
   sealed trait onWebWorkerEnd
-    extends pivotEventName
+    extends StObject
+       with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
+  inline def onWebWorkerEnd: onWebWorkerEnd = "onWebWorkerEnd".asInstanceOf[onWebWorkerEnd]
   
   @js.native
   sealed trait onWebWorkerStart
-    extends pivotEventName
+    extends StObject
+       with pivotEventName
        with typingsJapgolly.webix.webix.ui.pivotEventName
-  
-  @scala.inline
-  def onAfterAdd: onAfterAdd = "onAfterAdd".asInstanceOf[onAfterAdd]
-  @scala.inline
-  def onAfterAreaAdd: onAfterAreaAdd = "onAfterAreaAdd".asInstanceOf[onAfterAreaAdd]
-  @scala.inline
-  def onAfterAreaRemove: onAfterAreaRemove = "onAfterAreaRemove".asInstanceOf[onAfterAreaRemove]
-  @scala.inline
-  def onAfterBack: onAfterBack = "onAfterBack".asInstanceOf[onAfterBack]
-  @scala.inline
-  def onAfterBlockSelect: onAfterBlockSelect = "onAfterBlockSelect".asInstanceOf[onAfterBlockSelect]
-  @scala.inline
-  def onAfterClose: onAfterClose = "onAfterClose".asInstanceOf[onAfterClose]
-  @scala.inline
-  def onAfterCollapse: onAfterCollapse = "onAfterCollapse".asInstanceOf[onAfterCollapse]
-  @scala.inline
-  def onAfterColumnDrop: onAfterColumnDrop = "onAfterColumnDrop".asInstanceOf[onAfterColumnDrop]
-  @scala.inline
-  def onAfterColumnDropOrder: onAfterColumnDropOrder = "onAfterColumnDropOrder".asInstanceOf[onAfterColumnDropOrder]
-  @scala.inline
-  def onAfterColumnHide: onAfterColumnHide = "onAfterColumnHide".asInstanceOf[onAfterColumnHide]
-  @scala.inline
-  def onAfterColumnShow: onAfterColumnShow = "onAfterColumnShow".asInstanceOf[onAfterColumnShow]
-  @scala.inline
-  def onAfterConditionSet: onAfterConditionSet = "onAfterConditionSet".asInstanceOf[onAfterConditionSet]
-  @scala.inline
-  def onAfterContextMenu: onAfterContextMenu = "onAfterContextMenu".asInstanceOf[onAfterContextMenu]
-  @scala.inline
-  def onAfterCopy: onAfterCopy = "onAfterCopy".asInstanceOf[onAfterCopy]
-  @scala.inline
-  def onAfterCreateFolder: onAfterCreateFolder = "onAfterCreateFolder".asInstanceOf[onAfterCreateFolder]
-  @scala.inline
-  def onAfterCursorChange: onAfterCursorChange = "onAfterCursorChange".asInstanceOf[onAfterCursorChange]
-  @scala.inline
-  def onAfterDateSelect: onAfterDateSelect = "onAfterDateSelect".asInstanceOf[onAfterDateSelect]
-  @scala.inline
-  def onAfterDelete: onAfterDelete = "onAfterDelete".asInstanceOf[onAfterDelete]
-  @scala.inline
-  def onAfterDeleteFile: onAfterDeleteFile = "onAfterDeleteFile".asInstanceOf[onAfterDeleteFile]
-  @scala.inline
-  def onAfterDrop: onAfterDrop = "onAfterDrop".asInstanceOf[onAfterDrop]
-  @scala.inline
-  def onAfterDynParse: onAfterDynParse = "onAfterDynParse".asInstanceOf[onAfterDynParse]
-  @scala.inline
-  def onAfterEditFile: onAfterEditFile = "onAfterEditFile".asInstanceOf[onAfterEditFile]
-  @scala.inline
-  def onAfterEditStart: onAfterEditStart = "onAfterEditStart".asInstanceOf[onAfterEditStart]
-  @scala.inline
-  def onAfterEditStop: onAfterEditStop = "onAfterEditStop".asInstanceOf[onAfterEditStop]
-  @scala.inline
-  def onAfterEditorShow: onAfterEditorShow = "onAfterEditorShow".asInstanceOf[onAfterEditorShow]
-  @scala.inline
-  def onAfterExpand: onAfterExpand = "onAfterExpand".asInstanceOf[onAfterExpand]
-  @scala.inline
-  def onAfterFileAdd: onAfterFileAdd = "onAfterFileAdd".asInstanceOf[onAfterFileAdd]
-  @scala.inline
-  def onAfterFileUpload: onAfterFileUpload = "onAfterFileUpload".asInstanceOf[onAfterFileUpload]
-  @scala.inline
-  def onAfterFilter: onAfterFilter = "onAfterFilter".asInstanceOf[onAfterFilter]
-  @scala.inline
-  def onAfterHideTree: onAfterHideTree = "onAfterHideTree".asInstanceOf[onAfterHideTree]
-  @scala.inline
-  def onAfterLevelDown: onAfterLevelDown = "onAfterLevelDown".asInstanceOf[onAfterLevelDown]
-  @scala.inline
-  def onAfterLevelUp: onAfterLevelUp = "onAfterLevelUp".asInstanceOf[onAfterLevelUp]
-  @scala.inline
-  def onAfterLoad: onAfterLoad = "onAfterLoad".asInstanceOf[onAfterLoad]
-  @scala.inline
-  def onAfterMarkCopy: onAfterMarkCopy = "onAfterMarkCopy".asInstanceOf[onAfterMarkCopy]
-  @scala.inline
-  def onAfterMarkCut: onAfterMarkCut = "onAfterMarkCut".asInstanceOf[onAfterMarkCut]
-  @scala.inline
-  def onAfterMenu: onAfterMenu = "onAfterMenu".asInstanceOf[onAfterMenu]
-  @scala.inline
-  def onAfterModeChange: onAfterModeChange = "onAfterModeChange".asInstanceOf[onAfterModeChange]
-  @scala.inline
-  def onAfterMonthChange: onAfterMonthChange = "onAfterMonthChange".asInstanceOf[onAfterMonthChange]
-  @scala.inline
-  def onAfterOpen: onAfterOpen = "onAfterOpen".asInstanceOf[onAfterOpen]
-  @scala.inline
-  def onAfterPageChange: onAfterPageChange = "onAfterPageChange".asInstanceOf[onAfterPageChange]
-  @scala.inline
-  def onAfterPasteFile: onAfterPasteFile = "onAfterPasteFile".asInstanceOf[onAfterPasteFile]
-  @scala.inline
-  def onAfterPathClick: onAfterPathClick = "onAfterPathClick".asInstanceOf[onAfterPathClick]
-  @scala.inline
-  def onAfterPortletMove: onAfterPortletMove = "onAfterPortletMove".asInstanceOf[onAfterPortletMove]
-  @scala.inline
-  def onAfterRangeChange: onAfterRangeChange = "onAfterRangeChange".asInstanceOf[onAfterRangeChange]
-  @scala.inline
-  def onAfterRangeSet: onAfterRangeSet = "onAfterRangeSet".asInstanceOf[onAfterRangeSet]
-  @scala.inline
-  def onAfterRender: onAfterRender = "onAfterRender".asInstanceOf[onAfterRender]
-  @scala.inline
-  def onAfterRun: onAfterRun = "onAfterRun".asInstanceOf[onAfterRun]
-  @scala.inline
-  def onAfterScroll: onAfterScroll = "onAfterScroll".asInstanceOf[onAfterScroll]
-  @scala.inline
-  def onAfterSearch: onAfterSearch = "onAfterSearch".asInstanceOf[onAfterSearch]
-  @scala.inline
-  def onAfterSelect: onAfterSelect = "onAfterSelect".asInstanceOf[onAfterSelect]
-  @scala.inline
-  def onAfterSheetShow: onAfterSheetShow = "onAfterSheetShow".asInstanceOf[onAfterSheetShow]
-  @scala.inline
-  def onAfterShowTree: onAfterShowTree = "onAfterShowTree".asInstanceOf[onAfterShowTree]
-  @scala.inline
-  def onAfterSort: onAfterSort = "onAfterSort".asInstanceOf[onAfterSort]
-  @scala.inline
-  def onAfterSpan: onAfterSpan = "onAfterSpan".asInstanceOf[onAfterSpan]
-  @scala.inline
-  def onAfterSplit: onAfterSplit = "onAfterSplit".asInstanceOf[onAfterSplit]
-  @scala.inline
-  def onAfterStart: onAfterStart = "onAfterStart".asInstanceOf[onAfterStart]
-  @scala.inline
-  def onAfterStatusChange: onAfterStatusChange = "onAfterStatusChange".asInstanceOf[onAfterStatusChange]
-  @scala.inline
-  def onAfterTabClick: onAfterTabClick = "onAfterTabClick".asInstanceOf[onAfterTabClick]
-  @scala.inline
-  def onAfterUnSelect: onAfterUnSelect = "onAfterUnSelect".asInstanceOf[onAfterUnSelect]
-  @scala.inline
-  def onAfterUploadDialog: onAfterUploadDialog = "onAfterUploadDialog".asInstanceOf[onAfterUploadDialog]
-  @scala.inline
-  def onAfterValidation: onAfterValidation = "onAfterValidation".asInstanceOf[onAfterValidation]
-  @scala.inline
-  def onAfterZoom: onAfterZoom = "onAfterZoom".asInstanceOf[onAfterZoom]
-  @scala.inline
-  def onAreaDrag: onAreaDrag = "onAreaDrag".asInstanceOf[onAreaDrag]
-  @scala.inline
-  def onAvatarClick: onAvatarClick = "onAvatarClick".asInstanceOf[onAvatarClick]
-  @scala.inline
-  def onBeforeAdd: onBeforeAdd = "onBeforeAdd".asInstanceOf[onBeforeAdd]
-  @scala.inline
-  def onBeforeApply: onBeforeApply = "onBeforeApply".asInstanceOf[onBeforeApply]
-  @scala.inline
-  def onBeforeAreaAdd: onBeforeAreaAdd = "onBeforeAreaAdd".asInstanceOf[onBeforeAreaAdd]
-  @scala.inline
-  def onBeforeAreaRemove: onBeforeAreaRemove = "onBeforeAreaRemove".asInstanceOf[onBeforeAreaRemove]
-  @scala.inline
-  def onBeforeBack: onBeforeBack = "onBeforeBack".asInstanceOf[onBeforeBack]
-  @scala.inline
-  def onBeforeBlockSelect: onBeforeBlockSelect = "onBeforeBlockSelect".asInstanceOf[onBeforeBlockSelect]
-  @scala.inline
-  def onBeforeCancel: onBeforeCancel = "onBeforeCancel".asInstanceOf[onBeforeCancel]
-  @scala.inline
-  def onBeforeClose: onBeforeClose = "onBeforeClose".asInstanceOf[onBeforeClose]
-  @scala.inline
-  def onBeforeColumnDrag: onBeforeColumnDrag = "onBeforeColumnDrag".asInstanceOf[onBeforeColumnDrag]
-  @scala.inline
-  def onBeforeColumnDrop: onBeforeColumnDrop = "onBeforeColumnDrop".asInstanceOf[onBeforeColumnDrop]
-  @scala.inline
-  def onBeforeColumnDropOrder: onBeforeColumnDropOrder = "onBeforeColumnDropOrder".asInstanceOf[onBeforeColumnDropOrder]
-  @scala.inline
-  def onBeforeColumnHide: onBeforeColumnHide = "onBeforeColumnHide".asInstanceOf[onBeforeColumnHide]
-  @scala.inline
-  def onBeforeColumnShow: onBeforeColumnShow = "onBeforeColumnShow".asInstanceOf[onBeforeColumnShow]
-  @scala.inline
-  def onBeforeCommentShow: onBeforeCommentShow = "onBeforeCommentShow".asInstanceOf[onBeforeCommentShow]
-  @scala.inline
-  def onBeforeContextMenu: onBeforeContextMenu = "onBeforeContextMenu".asInstanceOf[onBeforeContextMenu]
-  @scala.inline
-  def onBeforeCopy: onBeforeCopy = "onBeforeCopy".asInstanceOf[onBeforeCopy]
-  @scala.inline
-  def onBeforeCreateFolder: onBeforeCreateFolder = "onBeforeCreateFolder".asInstanceOf[onBeforeCreateFolder]
-  @scala.inline
-  def onBeforeCursorChange: onBeforeCursorChange = "onBeforeCursorChange".asInstanceOf[onBeforeCursorChange]
-  @scala.inline
-  def onBeforeDateSelect: onBeforeDateSelect = "onBeforeDateSelect".asInstanceOf[onBeforeDateSelect]
-  @scala.inline
-  def onBeforeDelete: onBeforeDelete = "onBeforeDelete".asInstanceOf[onBeforeDelete]
-  @scala.inline
-  def onBeforeDeleteFile: onBeforeDeleteFile = "onBeforeDeleteFile".asInstanceOf[onBeforeDeleteFile]
-  @scala.inline
-  def onBeforeDrag: onBeforeDrag = "onBeforeDrag".asInstanceOf[onBeforeDrag]
-  @scala.inline
-  def onBeforeDragIn: onBeforeDragIn = "onBeforeDragIn".asInstanceOf[onBeforeDragIn]
-  @scala.inline
-  def onBeforeDrop: onBeforeDrop = "onBeforeDrop".asInstanceOf[onBeforeDrop]
-  @scala.inline
-  def onBeforeDropOut: onBeforeDropOut = "onBeforeDropOut".asInstanceOf[onBeforeDropOut]
-  @scala.inline
-  def onBeforeDynLoad: onBeforeDynLoad = "onBeforeDynLoad".asInstanceOf[onBeforeDynLoad]
-  @scala.inline
-  def onBeforeDynParse: onBeforeDynParse = "onBeforeDynParse".asInstanceOf[onBeforeDynParse]
-  @scala.inline
-  def onBeforeEditFile: onBeforeEditFile = "onBeforeEditFile".asInstanceOf[onBeforeEditFile]
-  @scala.inline
-  def onBeforeEditStart: onBeforeEditStart = "onBeforeEditStart".asInstanceOf[onBeforeEditStart]
-  @scala.inline
-  def onBeforeEditStop: onBeforeEditStop = "onBeforeEditStop".asInstanceOf[onBeforeEditStop]
-  @scala.inline
-  def onBeforeEditorAction: onBeforeEditorAction = "onBeforeEditorAction".asInstanceOf[onBeforeEditorAction]
-  @scala.inline
-  def onBeforeEditorShow: onBeforeEditorShow = "onBeforeEditorShow".asInstanceOf[onBeforeEditorShow]
-  @scala.inline
-  def onBeforeFileAdd: onBeforeFileAdd = "onBeforeFileAdd".asInstanceOf[onBeforeFileAdd]
-  @scala.inline
-  def onBeforeFileUpload: onBeforeFileUpload = "onBeforeFileUpload".asInstanceOf[onBeforeFileUpload]
-  @scala.inline
-  def onBeforeFilter: onBeforeFilter = "onBeforeFilter".asInstanceOf[onBeforeFilter]
-  @scala.inline
-  def onBeforeHideTree: onBeforeHideTree = "onBeforeHideTree".asInstanceOf[onBeforeHideTree]
-  @scala.inline
-  def onBeforeLevelDown: onBeforeLevelDown = "onBeforeLevelDown".asInstanceOf[onBeforeLevelDown]
-  @scala.inline
-  def onBeforeLevelUp: onBeforeLevelUp = "onBeforeLevelUp".asInstanceOf[onBeforeLevelUp]
-  @scala.inline
-  def onBeforeLoad: onBeforeLoad = "onBeforeLoad".asInstanceOf[onBeforeLoad]
-  @scala.inline
-  def onBeforeMarkCopy: onBeforeMarkCopy = "onBeforeMarkCopy".asInstanceOf[onBeforeMarkCopy]
-  @scala.inline
-  def onBeforeMarkCut: onBeforeMarkCut = "onBeforeMarkCut".asInstanceOf[onBeforeMarkCut]
-  @scala.inline
-  def onBeforeMenu: onBeforeMenu = "onBeforeMenu".asInstanceOf[onBeforeMenu]
-  @scala.inline
-  def onBeforeMenuAction: onBeforeMenuAction = "onBeforeMenuAction".asInstanceOf[onBeforeMenuAction]
-  @scala.inline
-  def onBeforeModeChange: onBeforeModeChange = "onBeforeModeChange".asInstanceOf[onBeforeModeChange]
-  @scala.inline
-  def onBeforeMonthChange: onBeforeMonthChange = "onBeforeMonthChange".asInstanceOf[onBeforeMonthChange]
-  @scala.inline
-  def onBeforeOpen: onBeforeOpen = "onBeforeOpen".asInstanceOf[onBeforeOpen]
-  @scala.inline
-  def onBeforePageChange: onBeforePageChange = "onBeforePageChange".asInstanceOf[onBeforePageChange]
-  @scala.inline
-  def onBeforePasteFile: onBeforePasteFile = "onBeforePasteFile".asInstanceOf[onBeforePasteFile]
-  @scala.inline
-  def onBeforePortletMove: onBeforePortletMove = "onBeforePortletMove".asInstanceOf[onBeforePortletMove]
-  @scala.inline
-  def onBeforeRender: onBeforeRender = "onBeforeRender".asInstanceOf[onBeforeRender]
-  @scala.inline
-  def onBeforeRequest: onBeforeRequest = "onBeforeRequest".asInstanceOf[onBeforeRequest]
-  @scala.inline
-  def onBeforeRun: onBeforeRun = "onBeforeRun".asInstanceOf[onBeforeRun]
-  @scala.inline
-  def onBeforeSearch: onBeforeSearch = "onBeforeSearch".asInstanceOf[onBeforeSearch]
-  @scala.inline
-  def onBeforeSearchRequest: onBeforeSearchRequest = "onBeforeSearchRequest".asInstanceOf[onBeforeSearchRequest]
-  @scala.inline
-  def onBeforeSelect: onBeforeSelect = "onBeforeSelect".asInstanceOf[onBeforeSelect]
-  @scala.inline
-  def onBeforeSheetShow: onBeforeSheetShow = "onBeforeSheetShow".asInstanceOf[onBeforeSheetShow]
-  @scala.inline
-  def onBeforeShow: onBeforeShow = "onBeforeShow".asInstanceOf[onBeforeShow]
-  @scala.inline
-  def onBeforeShowTree: onBeforeShowTree = "onBeforeShowTree".asInstanceOf[onBeforeShowTree]
-  @scala.inline
-  def onBeforeSort: onBeforeSort = "onBeforeSort".asInstanceOf[onBeforeSort]
-  @scala.inline
-  def onBeforeSpan: onBeforeSpan = "onBeforeSpan".asInstanceOf[onBeforeSpan]
-  @scala.inline
-  def onBeforeSplit: onBeforeSplit = "onBeforeSplit".asInstanceOf[onBeforeSplit]
-  @scala.inline
-  def onBeforeStart: onBeforeStart = "onBeforeStart".asInstanceOf[onBeforeStart]
-  @scala.inline
-  def onBeforeStatusChange: onBeforeStatusChange = "onBeforeStatusChange".asInstanceOf[onBeforeStatusChange]
-  @scala.inline
-  def onBeforeTabClick: onBeforeTabClick = "onBeforeTabClick".asInstanceOf[onBeforeTabClick]
-  @scala.inline
-  def onBeforeTabClose: onBeforeTabClose = "onBeforeTabClose".asInstanceOf[onBeforeTabClose]
-  @scala.inline
-  def onBeforeUnSelect: onBeforeUnSelect = "onBeforeUnSelect".asInstanceOf[onBeforeUnSelect]
-  @scala.inline
-  def onBeforeUploadDialog: onBeforeUploadDialog = "onBeforeUploadDialog".asInstanceOf[onBeforeUploadDialog]
-  @scala.inline
-  def onBeforeValidate: onBeforeValidate = "onBeforeValidate".asInstanceOf[onBeforeValidate]
-  @scala.inline
-  def onBeforeValueChange: onBeforeValueChange = "onBeforeValueChange".asInstanceOf[onBeforeValueChange]
-  @scala.inline
-  def onBeforeZoom: onBeforeZoom = "onBeforeZoom".asInstanceOf[onBeforeZoom]
-  @scala.inline
-  def onBindRequest: onBindRequest = "onBindRequest".asInstanceOf[onBindRequest]
-  @scala.inline
-  def onBindUpdate: onBindUpdate = "onBindUpdate".asInstanceOf[onBindUpdate]
-  @scala.inline
-  def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
-  @scala.inline
-  def onCancel: onCancel = "onCancel".asInstanceOf[onCancel]
-  @scala.inline
-  def onCellChange: onCellChange = "onCellChange".asInstanceOf[onCellChange]
-  @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
-  @scala.inline
-  def onCheck: onCheck = "onCheck".asInstanceOf[onCheck]
-  @scala.inline
-  def onCollectValues: onCollectValues = "onCollectValues".asInstanceOf[onCollectValues]
-  @scala.inline
-  def onColumnGroupCollapse: onColumnGroupCollapse = "onColumnGroupCollapse".asInstanceOf[onColumnGroupCollapse]
-  @scala.inline
-  def onColumnResize: onColumnResize = "onColumnResize".asInstanceOf[onColumnResize]
-  @scala.inline
-  def onCommentHide: onCommentHide = "onCommentHide".asInstanceOf[onCommentHide]
-  @scala.inline
-  def onComponentInit: onComponentInit = "onComponentInit".asInstanceOf[onComponentInit]
-  @scala.inline
-  def onCopyError: onCopyError = "onCopyError".asInstanceOf[onCopyError]
-  @scala.inline
-  def onDataParse: onDataParse = "onDataParse".asInstanceOf[onDataParse]
-  @scala.inline
-  def onDataRequest: onDataRequest = "onDataRequest".asInstanceOf[onDataRequest]
-  @scala.inline
-  def onDataSerialize: onDataSerialize = "onDataSerialize".asInstanceOf[onDataSerialize]
-  @scala.inline
-  def onDataUpdate: onDataUpdate = "onDataUpdate".asInstanceOf[onDataUpdate]
-  @scala.inline
-  def onDateClear: onDateClear = "onDateClear".asInstanceOf[onDateClear]
-  @scala.inline
-  def onDateSelect: onDateSelect = "onDateSelect".asInstanceOf[onDateSelect]
-  @scala.inline
-  def onDestruct: onDestruct = "onDestruct".asInstanceOf[onDestruct]
-  @scala.inline
-  def onDocumentReady: onDocumentReady = "onDocumentReady".asInstanceOf[onDocumentReady]
-  @scala.inline
-  def onDragOut: onDragOut = "onDragOut".asInstanceOf[onDragOut]
-  @scala.inline
-  def onDynLoadError: onDynLoadError = "onDynLoadError".asInstanceOf[onDynLoadError]
-  @scala.inline
-  def onEditorChange: onEditorChange = "onEditorChange".asInstanceOf[onEditorChange]
-  @scala.inline
-  def onEnd: onEnd = "onEnd".asInstanceOf[onEnd]
-  @scala.inline
-  def onEnter: onEnter = "onEnter".asInstanceOf[onEnter]
-  @scala.inline
-  def onErrorResponse: onErrorResponse = "onErrorResponse".asInstanceOf[onErrorResponse]
-  @scala.inline
-  def onFileUpload: onFileUpload = "onFileUpload".asInstanceOf[onFileUpload]
-  @scala.inline
-  def onFileUploadError: onFileUploadError = "onFileUploadError".asInstanceOf[onFileUploadError]
-  @scala.inline
-  def onFilterChange: onFilterChange = "onFilterChange".asInstanceOf[onFilterChange]
-  @scala.inline
-  def onFilterCreate: onFilterCreate = "onFilterCreate".asInstanceOf[onFilterCreate]
-  @scala.inline
-  def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
-  @scala.inline
-  def onFolderSelect: onFolderSelect = "onFolderSelect".asInstanceOf[onFolderSelect]
-  @scala.inline
-  def onHeaderClick: onHeaderClick = "onHeaderClick".asInstanceOf[onHeaderClick]
-  @scala.inline
-  def onHeaderInit: onHeaderInit = "onHeaderInit".asInstanceOf[onHeaderInit]
-  @scala.inline
-  def onHeatMapRender: onHeatMapRender = "onHeatMapRender".asInstanceOf[onHeatMapRender]
-  @scala.inline
-  def onHide: onHide = "onHide".asInstanceOf[onHide]
-  @scala.inline
-  def onHideSearchResults: onHideSearchResults = "onHideSearchResults".asInstanceOf[onHideSearchResults]
-  @scala.inline
-  def onHistoryChange: onHistoryChange = "onHistoryChange".asInstanceOf[onHistoryChange]
-  @scala.inline
-  def onItemCheck: onItemCheck = "onItemCheck".asInstanceOf[onItemCheck]
-  @scala.inline
-  def onItemClick: onItemClick = "onItemClick".asInstanceOf[onItemClick]
-  @scala.inline
-  def onItemDblClick: onItemDblClick = "onItemDblClick".asInstanceOf[onItemDblClick]
-  @scala.inline
-  def onItemRename: onItemRename = "onItemRename".asInstanceOf[onItemRename]
-  @scala.inline
-  def onItemRender: onItemRender = "onItemRender".asInstanceOf[onItemRender]
-  @scala.inline
-  def onItemSelect: onItemSelect = "onItemSelect".asInstanceOf[onItemSelect]
-  @scala.inline
-  def onKeyPress: onKeyPress = "onKeyPress".asInstanceOf[onKeyPress]
-  @scala.inline
-  def onKeySelect: onKeySelect = "onKeySelect".asInstanceOf[onKeySelect]
-  @scala.inline
-  def onLegendClick: onLegendClick = "onLegendClick".asInstanceOf[onLegendClick]
-  @scala.inline
-  def onListAfterContextMenu: onListAfterContextMenu = "onListAfterContextMenu".asInstanceOf[onListAfterContextMenu]
-  @scala.inline
-  def onListAfterDrop: onListAfterDrop = "onListAfterDrop".asInstanceOf[onListAfterDrop]
-  @scala.inline
-  def onListAfterSelect: onListAfterSelect = "onListAfterSelect".asInstanceOf[onListAfterSelect]
-  @scala.inline
-  def onListBeforeContextMenu: onListBeforeContextMenu = "onListBeforeContextMenu".asInstanceOf[onListBeforeContextMenu]
-  @scala.inline
-  def onListBeforeDrag: onListBeforeDrag = "onListBeforeDrag".asInstanceOf[onListBeforeDrag]
-  @scala.inline
-  def onListBeforeDragIn: onListBeforeDragIn = "onListBeforeDragIn".asInstanceOf[onListBeforeDragIn]
-  @scala.inline
-  def onListBeforeDrop: onListBeforeDrop = "onListBeforeDrop".asInstanceOf[onListBeforeDrop]
-  @scala.inline
-  def onListBeforeSelect: onListBeforeSelect = "onListBeforeSelect".asInstanceOf[onListBeforeSelect]
-  @scala.inline
-  def onListIconClick: onListIconClick = "onListIconClick".asInstanceOf[onListIconClick]
-  @scala.inline
-  def onListItemClick: onListItemClick = "onListItemClick".asInstanceOf[onListItemClick]
-  @scala.inline
-  def onListItemDblClick: onListItemDblClick = "onListItemDblClick".asInstanceOf[onListItemDblClick]
-  @scala.inline
-  def onLiveEdit: onLiveEdit = "onLiveEdit".asInstanceOf[onLiveEdit]
-  @scala.inline
-  def onLoadError: onLoadError = "onLoadError".asInstanceOf[onLoadError]
-  @scala.inline
-  def onLongTouch: onLongTouch = "onLongTouch".asInstanceOf[onLongTouch]
-  @scala.inline
-  def onMapError: onMapError = "onMapError".asInstanceOf[onMapError]
-  @scala.inline
-  def onMapReady: onMapReady = "onMapReady".asInstanceOf[onMapReady]
-  @scala.inline
-  def onMathRefresh: onMathRefresh = "onMathRefresh".asInstanceOf[onMathRefresh]
-  @scala.inline
-  def onMenuItemClick: onMenuItemClick = "onMenuItemClick".asInstanceOf[onMenuItemClick]
-  @scala.inline
-  def onMouseMove: onMouseMove = "onMouseMove".asInstanceOf[onMouseMove]
-  @scala.inline
-  def onMouseMoving: onMouseMoving = "onMouseMoving".asInstanceOf[onMouseMoving]
-  @scala.inline
-  def onMouseOut: onMouseOut = "onMouseOut".asInstanceOf[onMouseOut]
-  @scala.inline
-  def onMoveError: onMoveError = "onMoveError".asInstanceOf[onMoveError]
-  @scala.inline
-  def onNext: onNext = "onNext".asInstanceOf[onNext]
-  @scala.inline
-  def onOptionAdd: onOptionAdd = "onOptionAdd".asInstanceOf[onOptionAdd]
-  @scala.inline
-  def onOptionRemove: onOptionRemove = "onOptionRemove".asInstanceOf[onOptionRemove]
-  @scala.inline
-  def onPageRender: onPageRender = "onPageRender".asInstanceOf[onPageRender]
-  @scala.inline
-  def onPartialRender: onPartialRender = "onPartialRender".asInstanceOf[onPartialRender]
-  @scala.inline
-  def onPaste: onPaste = "onPaste".asInstanceOf[onPaste]
-  @scala.inline
-  def onPathComplete: onPathComplete = "onPathComplete".asInstanceOf[onPathComplete]
-  @scala.inline
-  def onPathLevel: onPathLevel = "onPathLevel".asInstanceOf[onPathLevel]
-  @scala.inline
-  def onPopup: onPopup = "onPopup".asInstanceOf[onPopup]
-  @scala.inline
-  def onPrevious: onPrevious = "onPrevious".asInstanceOf[onPrevious]
-  @scala.inline
-  def onRegionClick: onRegionClick = "onRegionClick".asInstanceOf[onRegionClick]
-  @scala.inline
-  def onReset: onReset = "onReset".asInstanceOf[onReset]
-  @scala.inline
-  def onResize: onResize = "onResize".asInstanceOf[onResize]
-  @scala.inline
-  def onResizeEnd: onResizeEnd = "onResizeEnd".asInstanceOf[onResizeEnd]
-  @scala.inline
-  def onRowResize: onRowResize = "onRowResize".asInstanceOf[onRowResize]
-  @scala.inline
-  def onScaleChange: onScaleChange = "onScaleChange".asInstanceOf[onScaleChange]
-  @scala.inline
-  def onScroll: onScroll = "onScroll".asInstanceOf[onScroll]
-  @scala.inline
-  def onScrollX: onScrollX = "onScrollX".asInstanceOf[onScrollX]
-  @scala.inline
-  def onScrollY: onScrollY = "onScrollY".asInstanceOf[onScrollY]
-  @scala.inline
-  def onSearchIconClick: onSearchIconClick = "onSearchIconClick".asInstanceOf[onSearchIconClick]
-  @scala.inline
-  def onSectionAdd: onSectionAdd = "onSectionAdd".asInstanceOf[onSectionAdd]
-  @scala.inline
-  def onSectionRemove: onSectionRemove = "onSectionRemove".asInstanceOf[onSectionRemove]
-  @scala.inline
-  def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
-  @scala.inline
-  def onSelectChange: onSelectChange = "onSelectChange".asInstanceOf[onSelectChange]
-  @scala.inline
-  def onSheetAdd: onSheetAdd = "onSheetAdd".asInstanceOf[onSheetAdd]
-  @scala.inline
-  def onSheetRemove: onSheetRemove = "onSheetRemove".asInstanceOf[onSheetRemove]
-  @scala.inline
-  def onSheetRename: onSheetRename = "onSheetRename".asInstanceOf[onSheetRename]
-  @scala.inline
-  def onShow: onShow = "onShow".asInstanceOf[onShow]
-  @scala.inline
-  def onShowSearchResults: onShowSearchResults = "onShowSearchResults".asInstanceOf[onShowSearchResults]
-  @scala.inline
-  def onSkip: onSkip = "onSkip".asInstanceOf[onSkip]
-  @scala.inline
-  def onSliderDrag: onSliderDrag = "onSliderDrag".asInstanceOf[onSliderDrag]
-  @scala.inline
-  def onStructureLoad: onStructureLoad = "onStructureLoad".asInstanceOf[onStructureLoad]
-  @scala.inline
-  def onStructureUpdate: onStructureUpdate = "onStructureUpdate".asInstanceOf[onStructureUpdate]
-  @scala.inline
-  def onStyleSet: onStyleSet = "onStyleSet".asInstanceOf[onStyleSet]
-  @scala.inline
-  def onSubViewClose: onSubViewClose = "onSubViewClose".asInstanceOf[onSubViewClose]
-  @scala.inline
-  def onSubViewCreate: onSubViewCreate = "onSubViewCreate".asInstanceOf[onSubViewCreate]
-  @scala.inline
-  def onSubViewOpen: onSubViewOpen = "onSubViewOpen".asInstanceOf[onSubViewOpen]
-  @scala.inline
-  def onSubViewRender: onSubViewRender = "onSubViewRender".asInstanceOf[onSubViewRender]
-  @scala.inline
-  def onSubmit: onSubmit = "onSubmit".asInstanceOf[onSubmit]
-  @scala.inline
-  def onSuccessResponse: onSuccessResponse = "onSuccessResponse".asInstanceOf[onSuccessResponse]
-  @scala.inline
-  def onSwipeX: onSwipeX = "onSwipeX".asInstanceOf[onSwipeX]
-  @scala.inline
-  def onSwipeY: onSwipeY = "onSwipeY".asInstanceOf[onSwipeY]
-  @scala.inline
-  def onTabFocus: onTabFocus = "onTabFocus".asInstanceOf[onTabFocus]
-  @scala.inline
-  def onTimedKeyPress: onTimedKeyPress = "onTimedKeyPress".asInstanceOf[onTimedKeyPress]
-  @scala.inline
-  def onTodaySet: onTodaySet = "onTodaySet".asInstanceOf[onTodaySet]
-  @scala.inline
-  def onTouchEnd: onTouchEnd = "onTouchEnd".asInstanceOf[onTouchEnd]
-  @scala.inline
-  def onTouchMove: onTouchMove = "onTouchMove".asInstanceOf[onTouchMove]
-  @scala.inline
-  def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
-  @scala.inline
-  def onUploadComplete: onUploadComplete = "onUploadComplete".asInstanceOf[onUploadComplete]
-  @scala.inline
-  def onUserMentioned: onUserMentioned = "onUserMentioned".asInstanceOf[onUserMentioned]
-  @scala.inline
-  def onValidationError: onValidationError = "onValidationError".asInstanceOf[onValidationError]
-  @scala.inline
-  def onValidationSuccess: onValidationSuccess = "onValidationSuccess".asInstanceOf[onValidationSuccess]
-  @scala.inline
-  def onValueSuggest: onValueSuggest = "onValueSuggest".asInstanceOf[onValueSuggest]
-  @scala.inline
-  def onValues: onValues = "onValues".asInstanceOf[onValues]
-  @scala.inline
-  def onViewChange: onViewChange = "onViewChange".asInstanceOf[onViewChange]
-  @scala.inline
-  def onViewInit: onViewInit = "onViewInit".asInstanceOf[onViewInit]
-  @scala.inline
-  def onViewMove: onViewMove = "onViewMove".asInstanceOf[onViewMove]
-  @scala.inline
-  def onViewMoveEnd: onViewMoveEnd = "onViewMoveEnd".asInstanceOf[onViewMoveEnd]
-  @scala.inline
-  def onViewResize: onViewResize = "onViewResize".asInstanceOf[onViewResize]
-  @scala.inline
-  def onViewShow: onViewShow = "onViewShow".asInstanceOf[onViewShow]
-  @scala.inline
-  def onWebWorkerEnd: onWebWorkerEnd = "onWebWorkerEnd".asInstanceOf[onWebWorkerEnd]
-  @scala.inline
-  def onWebWorkerStart: onWebWorkerStart = "onWebWorkerStart".asInstanceOf[onWebWorkerStart]
+  inline def onWebWorkerStart: onWebWorkerStart = "onWebWorkerStart".asInstanceOf[onWebWorkerStart]
 }
-

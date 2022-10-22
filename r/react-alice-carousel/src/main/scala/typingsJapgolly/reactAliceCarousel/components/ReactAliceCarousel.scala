@@ -1,100 +1,136 @@
 package typingsJapgolly.reactAliceCarousel.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactAliceCarousel.mod.EventObject
-import typingsJapgolly.reactAliceCarousel.mod.Props
-import typingsJapgolly.reactAliceCarousel.reactAliceCarouselStrings.default
+import org.scalajs.dom.Event
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactAliceCarousel.anon.IsDisabled
+import typingsJapgolly.reactAliceCarousel.anon.IsPlaying
+import typingsJapgolly.reactAliceCarousel.libTypesMod.AnimationType
+import typingsJapgolly.reactAliceCarousel.libTypesMod.AutoPlayStrategy
+import typingsJapgolly.reactAliceCarousel.libTypesMod.AutoplayDirection
+import typingsJapgolly.reactAliceCarousel.libTypesMod.ControlsStrategy
+import typingsJapgolly.reactAliceCarousel.libTypesMod.DotsItem
+import typingsJapgolly.reactAliceCarousel.libTypesMod.EventObject
+import typingsJapgolly.reactAliceCarousel.libTypesMod.Props
+import typingsJapgolly.reactAliceCarousel.libTypesMod.Responsive
+import typingsJapgolly.reactAliceCarousel.libTypesMod.RootElement
+import typingsJapgolly.reactAliceCarousel.mod.default
+import typingsJapgolly.reactAliceCarousel.reactAliceCarouselStrings.action
+import typingsJapgolly.reactAliceCarousel.reactAliceCarouselStrings.all
+import typingsJapgolly.reactAliceCarousel.reactAliceCarouselStrings.alternate
+import typingsJapgolly.reactAliceCarousel.reactAliceCarouselStrings.fadeout
+import typingsJapgolly.reactAliceCarousel.reactAliceCarouselStrings.ltr
+import typingsJapgolly.reactAliceCarousel.reactAliceCarouselStrings.none
 import typingsJapgolly.reactAliceCarousel.reactAliceCarouselStrings.responsive
+import typingsJapgolly.reactAliceCarousel.reactAliceCarouselStrings.rtl
+import typingsJapgolly.reactAliceCarousel.reactAliceCarouselStrings.slide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactAliceCarousel {
-  def apply(
-    autoHeight: js.UndefOr[Boolean] = js.undefined,
-    autoPlay: js.UndefOr[Boolean] = js.undefined,
-    autoPlayActionDisabled: js.UndefOr[Boolean] = js.undefined,
-    autoPlayDirection: String = null,
-    autoPlayInterval: Int | Double = null,
-    buttonsDisabled: js.UndefOr[Boolean] = js.undefined,
-    controlsStrategy: default | responsive = null,
-    disableAutoPlayOnAction: js.UndefOr[Boolean] = js.undefined,
-    dotsDisabled: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
-    fadeOutAnimation: js.UndefOr[Boolean] = js.undefined,
-    infinite: js.UndefOr[Boolean] = js.undefined,
-    items: js.Array[js.Object] = null,
-    keysControlDisabled: js.UndefOr[Boolean] = js.undefined,
-    mouseTrackingEnabled: js.UndefOr[Boolean] = js.undefined,
-    onInitialized: /* e */ EventObject => Callback = null,
-    onResized: /* e */ EventObject => Callback = null,
-    onSlideChange: /* e */ EventObject => Callback = null,
-    onSlideChanged: /* e */ EventObject => Callback = null,
-    playButtonEnabled: js.UndefOr[Boolean] = js.undefined,
-    preventEventOnTouchMove: js.UndefOr[Boolean] = js.undefined,
-    responsive: js.Object = null,
-    shouldHandleResizeEvent: /* e */ js.Any => CallbackTo[Boolean] = null,
-    showSlideInfo: js.UndefOr[Boolean] = js.undefined,
-    slideToIndex: Int | Double = null,
-    stagePadding: js.Object = null,
-    startIndex: Int | Double = null,
-    stopAutoPlayOnHover: js.UndefOr[Boolean] = js.undefined,
-    swipeDisabled: js.UndefOr[Boolean] = js.undefined,
-    touchTrackingEnabled: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, typingsJapgolly.reactAliceCarousel.mod.default, Unit, Props] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlayActionDisabled)) __obj.updateDynamic("autoPlayActionDisabled")(autoPlayActionDisabled.asInstanceOf[js.Any])
-    if (autoPlayDirection != null) __obj.updateDynamic("autoPlayDirection")(autoPlayDirection.asInstanceOf[js.Any])
-    if (autoPlayInterval != null) __obj.updateDynamic("autoPlayInterval")(autoPlayInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonsDisabled)) __obj.updateDynamic("buttonsDisabled")(buttonsDisabled.asInstanceOf[js.Any])
-    if (controlsStrategy != null) __obj.updateDynamic("controlsStrategy")(controlsStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAutoPlayOnAction)) __obj.updateDynamic("disableAutoPlayOnAction")(disableAutoPlayOnAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(dotsDisabled)) __obj.updateDynamic("dotsDisabled")(dotsDisabled.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeOutAnimation)) __obj.updateDynamic("fadeOutAnimation")(fadeOutAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(keysControlDisabled)) __obj.updateDynamic("keysControlDisabled")(keysControlDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseTrackingEnabled)) __obj.updateDynamic("mouseTrackingEnabled")(mouseTrackingEnabled.asInstanceOf[js.Any])
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.reactAliceCarousel.mod.EventObject) => onInitialized(t0).runNow()))
-    if (onResized != null) __obj.updateDynamic("onResized")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.reactAliceCarousel.mod.EventObject) => onResized(t0).runNow()))
-    if (onSlideChange != null) __obj.updateDynamic("onSlideChange")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.reactAliceCarousel.mod.EventObject) => onSlideChange(t0).runNow()))
-    if (onSlideChanged != null) __obj.updateDynamic("onSlideChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.reactAliceCarousel.mod.EventObject) => onSlideChanged(t0).runNow()))
-    if (!js.isUndefined(playButtonEnabled)) __obj.updateDynamic("playButtonEnabled")(playButtonEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventEventOnTouchMove)) __obj.updateDynamic("preventEventOnTouchMove")(preventEventOnTouchMove.asInstanceOf[js.Any])
-    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (shouldHandleResizeEvent != null) __obj.updateDynamic("shouldHandleResizeEvent")(js.Any.fromFunction1((t0: /* e */ js.Any) => shouldHandleResizeEvent(t0).runNow()))
-    if (!js.isUndefined(showSlideInfo)) __obj.updateDynamic("showSlideInfo")(showSlideInfo.asInstanceOf[js.Any])
-    if (slideToIndex != null) __obj.updateDynamic("slideToIndex")(slideToIndex.asInstanceOf[js.Any])
-    if (stagePadding != null) __obj.updateDynamic("stagePadding")(stagePadding.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopAutoPlayOnHover)) __obj.updateDynamic("stopAutoPlayOnHover")(stopAutoPlayOnHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeDisabled)) __obj.updateDynamic("swipeDisabled")(swipeDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchTrackingEnabled)) __obj.updateDynamic("touchTrackingEnabled")(touchTrackingEnabled.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactAliceCarousel.mod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactAliceCarousel.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactAliceCarousel.mod.Props])(children: _*)
-  }
   @JSImport("react-alice-carousel", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def activeIndex(value: Double): this.type = set("activeIndex", value.asInstanceOf[js.Any])
+    
+    inline def animationDuration(value: Double): this.type = set("animationDuration", value.asInstanceOf[js.Any])
+    
+    inline def animationEasingFunction(value: String): this.type = set("animationEasingFunction", value.asInstanceOf[js.Any])
+    
+    inline def animationType(value: slide | fadeout | AnimationType): this.type = set("animationType", value.asInstanceOf[js.Any])
+    
+    inline def autoHeight(value: Boolean): this.type = set("autoHeight", value.asInstanceOf[js.Any])
+    
+    inline def autoPlay(value: Boolean): this.type = set("autoPlay", value.asInstanceOf[js.Any])
+    
+    inline def autoPlayControls(value: Boolean): this.type = set("autoPlayControls", value.asInstanceOf[js.Any])
+    
+    inline def autoPlayDirection(value: rtl | ltr | AutoplayDirection): this.type = set("autoPlayDirection", value.asInstanceOf[js.Any])
+    
+    inline def autoPlayInterval(value: Double): this.type = set("autoPlayInterval", value.asInstanceOf[js.Any])
+    
+    inline def autoPlayStrategy(
+      value: typingsJapgolly.reactAliceCarousel.reactAliceCarouselStrings.default | all | action | none | AutoPlayStrategy
+    ): this.type = set("autoPlayStrategy", value.asInstanceOf[js.Any])
+    
+    inline def autoWidth(value: Boolean): this.type = set("autoWidth", value.asInstanceOf[js.Any])
+    
+    inline def children(value: Any): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def controlsStrategy(
+      value: typingsJapgolly.reactAliceCarousel.reactAliceCarouselStrings.default | responsive | alternate | String | ControlsStrategy
+    ): this.type = set("controlsStrategy", value.asInstanceOf[js.Any])
+    
+    inline def disableButtonsControls(value: Boolean): this.type = set("disableButtonsControls", value.asInstanceOf[js.Any])
+    
+    inline def disableDotsControls(value: Boolean): this.type = set("disableDotsControls", value.asInstanceOf[js.Any])
+    
+    inline def disableSlideInfo(value: Boolean): this.type = set("disableSlideInfo", value.asInstanceOf[js.Any])
+    
+    inline def infinite(value: Boolean): this.type = set("infinite", value.asInstanceOf[js.Any])
+    
+    inline def innerWidth(value: Double): this.type = set("innerWidth", value.asInstanceOf[js.Any])
+    
+    inline def items(value: js.Array[Any]): this.type = set("items", value.asInstanceOf[js.Any])
+    
+    inline def itemsVarargs(value: Any*): this.type = set("items", js.Array(value*))
+    
+    inline def keyboardNavigation(value: Boolean): this.type = set("keyboardNavigation", value.asInstanceOf[js.Any])
+    
+    inline def mouseTracking(value: Boolean): this.type = set("mouseTracking", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onInitialized(value: /* e */ EventObject => Callback): this.type = set("onInitialized", js.Any.fromFunction1((t0: /* e */ EventObject) => value(t0).runNow()))
+    
+    inline def onResizeEvent(value: (/* e */ Event, /* prevProps */ RootElement, /* nextProps */ RootElement) => Boolean): this.type = set("onResizeEvent", js.Any.fromFunction3(value))
+    
+    inline def onResized(value: /* e */ EventObject => Callback): this.type = set("onResized", js.Any.fromFunction1((t0: /* e */ EventObject) => value(t0).runNow()))
+    
+    inline def onSlideChange(value: /* e */ EventObject => Callback): this.type = set("onSlideChange", js.Any.fromFunction1((t0: /* e */ EventObject) => value(t0).runNow()))
+    
+    inline def onSlideChanged(value: /* e */ EventObject => Callback): this.type = set("onSlideChanged", js.Any.fromFunction1((t0: /* e */ EventObject) => value(t0).runNow()))
+    
+    inline def paddingLeft(value: Double): this.type = set("paddingLeft", value.asInstanceOf[js.Any])
+    
+    inline def paddingRight(value: Double): this.type = set("paddingRight", value.asInstanceOf[js.Any])
+    
+    inline def preservePosition(value: Boolean): this.type = set("preservePosition", value.asInstanceOf[js.Any])
+    
+    inline def renderDotsItem(value: /* e */ DotsItem => Any): this.type = set("renderDotsItem", js.Any.fromFunction1(value))
+    
+    inline def renderKey(value: Double): this.type = set("renderKey", value.asInstanceOf[js.Any])
+    
+    inline def renderNextButton(value: /* hasIsDisabled */ IsDisabled => Any): this.type = set("renderNextButton", js.Any.fromFunction1(value))
+    
+    inline def renderPlayPauseButton(value: /* hasIsPlaying */ IsPlaying => Any): this.type = set("renderPlayPauseButton", js.Any.fromFunction1(value))
+    
+    inline def renderPrevButton(value: /* hasIsDisabled */ IsDisabled => Any): this.type = set("renderPrevButton", js.Any.fromFunction1(value))
+    
+    inline def renderSlideInfo(value: /* e */ typingsJapgolly.reactAliceCarousel.libTypesMod.SlideInfo => Any): this.type = set("renderSlideInfo", js.Any.fromFunction1(value))
+    
+    inline def responsive(value: Responsive): this.type = set("responsive", value.asInstanceOf[js.Any])
+    
+    inline def ssrSilentMode(value: Boolean): this.type = set("ssrSilentMode", value.asInstanceOf[js.Any])
+    
+    inline def swipeDelta(value: Double): this.type = set("swipeDelta", value.asInstanceOf[js.Any])
+    
+    inline def swipeExtraPadding(value: Double): this.type = set("swipeExtraPadding", value.asInstanceOf[js.Any])
+    
+    inline def touchMoveDefaultEvents(value: Boolean): this.type = set("touchMoveDefaultEvents", value.asInstanceOf[js.Any])
+    
+    inline def touchTracking(value: Boolean): this.type = set("touchTracking", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactAliceCarousel.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

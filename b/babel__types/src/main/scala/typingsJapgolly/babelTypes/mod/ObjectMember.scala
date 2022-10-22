@@ -1,79 +1,43 @@
 package typingsJapgolly.babelTypes.mod
 
-import typingsJapgolly.babelTypes.babelTypesStrings.ObjectMethod
-import typingsJapgolly.babelTypes.babelTypesStrings.ObjectProperty
 import typingsJapgolly.babelTypes.babelTypesStrings.get
-import typingsJapgolly.babelTypes.babelTypesStrings.method
+import typingsJapgolly.babelTypes.babelTypesStrings.method_
 import typingsJapgolly.babelTypes.babelTypesStrings.set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.babelTypes.mod.ObjectMethod_
   - typingsJapgolly.babelTypes.mod.ObjectProperty_
 */
-trait ObjectMember extends _Node
-
+trait ObjectMember
+  extends StObject
+     with _Node
 object ObjectMember {
-  @scala.inline
-  def ObjectMethod_(
+  
+  inline def ObjectMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
     generator: Boolean,
-    key: js.Any,
-    kind: method | get | set,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-    `type`: ObjectMethod,
-    decorators: js.Array[Decorator_] = null,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    returnType: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ = null
-  ): ObjectMember = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ObjectMember]
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_,
+    kind: method_ | get | set,
+    params: js.Array[Identifier_ | Pattern | RestElement_]
+  ): typingsJapgolly.babelTypes.mod.ObjectMethod_ = {
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("ObjectMethod")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ObjectMethod_]
   }
-  @scala.inline
-  def ObjectProperty_(
+  
+  inline def ObjectProperty_(
     computed: Boolean,
-    key: js.Any,
-    shorthand: js.Any,
-    `type`: ObjectProperty,
-    value: Expression | PatternLike,
-    decorators: js.Array[Decorator_] = null,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): ObjectMember = {
-    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ObjectMember]
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | DecimalLiteral_ | PrivateName_,
+    shorthand: Boolean,
+    value: Expression | PatternLike
+  ): typingsJapgolly.babelTypes.mod.ObjectProperty_ = {
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ObjectProperty")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ObjectProperty_]
   }
 }
-

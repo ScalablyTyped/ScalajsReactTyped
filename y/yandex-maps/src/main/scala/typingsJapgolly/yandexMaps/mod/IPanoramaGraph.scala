@@ -1,28 +1,35 @@
 package typingsJapgolly.yandexMaps.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPanoramaGraph extends js.Object {
+trait IPanoramaGraph extends StObject {
+  
   def getEdges(): js.Array[IPanoramaGraphEdge]
+  
   def getNodes(): js.Array[IPanoramaGraphEdge]
+  
   def getPanorama(): IPanorama
 }
-
 object IPanoramaGraph {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getEdges: CallbackTo[js.Array[IPanoramaGraphEdge]],
     getNodes: CallbackTo[js.Array[IPanoramaGraphEdge]],
     getPanorama: CallbackTo[IPanorama]
   ): IPanoramaGraph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getEdges")(getEdges.toJsFn)
-    __obj.updateDynamic("getNodes")(getNodes.toJsFn)
-    __obj.updateDynamic("getPanorama")(getPanorama.toJsFn)
+    val __obj = js.Dynamic.literal(getEdges = getEdges.toJsFn, getNodes = getNodes.toJsFn, getPanorama = getPanorama.toJsFn)
     __obj.asInstanceOf[IPanoramaGraph]
   }
+  
+  extension [Self <: IPanoramaGraph](x: Self) {
+    
+    inline def setGetEdges(value: CallbackTo[js.Array[IPanoramaGraphEdge]]): Self = StObject.set(x, "getEdges", value.toJsFn)
+    
+    inline def setGetNodes(value: CallbackTo[js.Array[IPanoramaGraphEdge]]): Self = StObject.set(x, "getNodes", value.toJsFn)
+    
+    inline def setGetPanorama(value: CallbackTo[IPanorama]): Self = StObject.set(x, "getPanorama", value.toJsFn)
+  }
 }
-

@@ -1,17 +1,23 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.FieldDateTime")
 @js.native
-class FieldDateTime () extends Field {
+trait FieldDateTime
+  extends StObject
+     with Field {
+  
   def get_dateTimeCalendarType(): CalendarType = js.native
+  
   def get_displayFormat(): DateTimeFieldFormatType = js.native
+  
   def get_friendlyDisplayFormat(): DateTimeFieldFriendlyFormatType = js.native
+  
   def set_dateTimeCalendarType(value: CalendarType): Unit = js.native
+  
   def set_displayFormat(value: DateTimeFieldFormatType): Unit = js.native
+  
   def set_friendlyDisplayFormat(value: DateTimeFieldFriendlyFormatType): Unit = js.native
 }
-

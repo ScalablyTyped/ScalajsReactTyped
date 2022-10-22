@@ -10,10 +10,10 @@ A tiny utility that merges JavaScript objects by bundling clashing property valu
 | ------------------ | :-------------: |
 | Full name          | object-joiner |
 | Keywords           | javascript, object, merge, join, combine |
-| # releases         | 11 |
-| # dependents       | 0 |
-| # downloads        | 858 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 71.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/sarukuku/object-joiner#readme)

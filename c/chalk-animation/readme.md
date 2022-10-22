@@ -10,15 +10,12 @@ Colorful animations in terminal output
 | ------------------ | :-------------: |
 | Full name          | chalk-animation |
 | Keywords           | animation, chalk, cli, color, colors, colour, command-line, console, formatting, gradient, log, logging, rainbow, shell, string, style, styles, terminal |
-| # releases         | 6 |
-| # dependents       | 58 |
-| # downloads        | 42171 |
-| # stars            | 10 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 32630.0 |
+| # stars            | 1884.0 |
 
 ## Links
-- [Homepage](https://github.com/bokub/chalk-animation)
-- [Bugs](https://github.com/bokub/chalk-animation/issues)
-- [Repository](https://github.com/bokub/chalk-animation)
 - [Npm](https://www.npmjs.com/package/chalk-animation)
     
 

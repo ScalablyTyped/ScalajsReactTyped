@@ -10,10 +10,10 @@ A Karma plugin to read environment variables and make them available inside your
 | ------------------ | :-------------: |
 | Full name          | karma-env-preprocessor |
 | Keywords           | karma-plugin, karma-preprocessor, environment-variables |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 424487 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 113362.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/jsok/karma-env-preprocessor)

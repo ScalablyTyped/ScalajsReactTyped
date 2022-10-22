@@ -1,94 +1,106 @@
 package typingsJapgolly.w3cWebUsb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object w3cWebUsbStrings {
-  @js.native
-  sealed trait babble extends USBTransferStatus
   
   @js.native
-  sealed trait bulk extends USBEndpointType
+  sealed trait babble
+    extends StObject
+       with USBTransferStatus
+  inline def babble: babble = "babble".asInstanceOf[babble]
   
   @js.native
-  sealed trait `class` extends USBRequestType
+  sealed trait bulk
+    extends StObject
+       with USBEndpointType
+  inline def bulk: bulk = "bulk".asInstanceOf[bulk]
   
   @js.native
-  sealed trait connect extends js.Object
+  sealed trait `class`
+    extends StObject
+       with USBRequestType
+  inline def `class`: `class` = "class".asInstanceOf[`class`]
   
   @js.native
-  sealed trait device extends USBRecipient
+  sealed trait connect extends StObject
+  inline def connect: connect = "connect".asInstanceOf[connect]
   
   @js.native
-  sealed trait disconnect extends js.Object
+  sealed trait device
+    extends StObject
+       with USBRecipient
+  inline def device: device = "device".asInstanceOf[device]
   
   @js.native
-  sealed trait endpoint extends USBRecipient
+  sealed trait disconnect extends StObject
+  inline def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
   
   @js.native
-  sealed trait in extends USBDirection
+  sealed trait endpoint
+    extends StObject
+       with USBRecipient
+  inline def endpoint: endpoint = "endpoint".asInstanceOf[endpoint]
   
   @js.native
-  sealed trait interface extends USBRecipient
+  sealed trait in
+    extends StObject
+       with USBDirection
+  inline def in: in = "in".asInstanceOf[in]
   
   @js.native
-  sealed trait interrupt extends USBEndpointType
+  sealed trait interface
+    extends StObject
+       with USBRecipient
+  inline def interface: interface = "interface".asInstanceOf[interface]
   
   @js.native
-  sealed trait isochronous extends USBEndpointType
+  sealed trait interrupt
+    extends StObject
+       with USBEndpointType
+  inline def interrupt: interrupt = "interrupt".asInstanceOf[interrupt]
   
   @js.native
-  sealed trait ok extends USBTransferStatus
+  sealed trait isochronous
+    extends StObject
+       with USBEndpointType
+  inline def isochronous: isochronous = "isochronous".asInstanceOf[isochronous]
   
   @js.native
-  sealed trait other extends USBRecipient
+  sealed trait ok
+    extends StObject
+       with USBTransferStatus
+  inline def ok: ok = "ok".asInstanceOf[ok]
   
   @js.native
-  sealed trait out extends USBDirection
+  sealed trait other
+    extends StObject
+       with USBRecipient
+  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait stall extends USBTransferStatus
+  sealed trait out
+    extends StObject
+       with USBDirection
+  inline def out: out = "out".asInstanceOf[out]
   
   @js.native
-  sealed trait standard extends USBRequestType
+  sealed trait stall
+    extends StObject
+       with USBTransferStatus
+  inline def stall: stall = "stall".asInstanceOf[stall]
   
   @js.native
-  sealed trait vendor extends USBRequestType
+  sealed trait standard
+    extends StObject
+       with USBRequestType
+  inline def standard: standard = "standard".asInstanceOf[standard]
   
-  @scala.inline
-  def babble: babble = "babble".asInstanceOf[babble]
-  @scala.inline
-  def bulk: bulk = "bulk".asInstanceOf[bulk]
-  @scala.inline
-  def `class`: `class` = "class".asInstanceOf[`class`]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def device: device = "device".asInstanceOf[device]
-  @scala.inline
-  def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
-  @scala.inline
-  def endpoint: endpoint = "endpoint".asInstanceOf[endpoint]
-  @scala.inline
-  def in: in = "in".asInstanceOf[in]
-  @scala.inline
-  def interface: interface = "interface".asInstanceOf[interface]
-  @scala.inline
-  def interrupt: interrupt = "interrupt".asInstanceOf[interrupt]
-  @scala.inline
-  def isochronous: isochronous = "isochronous".asInstanceOf[isochronous]
-  @scala.inline
-  def ok: ok = "ok".asInstanceOf[ok]
-  @scala.inline
-  def other: other = "other".asInstanceOf[other]
-  @scala.inline
-  def out: out = "out".asInstanceOf[out]
-  @scala.inline
-  def stall: stall = "stall".asInstanceOf[stall]
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
-  @scala.inline
-  def vendor: vendor = "vendor".asInstanceOf[vendor]
+  @js.native
+  sealed trait vendor
+    extends StObject
+       with USBRequestType
+  inline def vendor: vendor = "vendor".asInstanceOf[vendor]
 }
-

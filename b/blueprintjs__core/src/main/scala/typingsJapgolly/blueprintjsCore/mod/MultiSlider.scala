@@ -1,28 +1,52 @@
 package typingsJapgolly.blueprintjsCore.mod
 
-import typingsJapgolly.blueprintjsCore.AnonLabelPrecision
-import typingsJapgolly.blueprintjsCore.handlePropsMod.IHandleProps
-import typingsJapgolly.blueprintjsCore.multiSliderMod.IMultiSliderProps
-import typingsJapgolly.blueprintjsCore.multiSliderMod.ISliderBaseProps
-import typingsJapgolly.react.mod.FunctionComponent
+import typingsJapgolly.blueprintjsCore.anon.LabelPrecision
+import typingsJapgolly.blueprintjsCore.libEsmComponentsSliderHandlePropsMod.IHandleProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsSliderMultiSliderMod.ISliderBaseProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsSliderMultiSliderMod.MultiSliderProps
+import typingsJapgolly.react.mod.FC
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "MultiSlider")
 @js.native
-class MultiSlider ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.MultiSlider
-
-/* static members */
-@JSImport("@blueprintjs/core", "MultiSlider")
-@js.native
-object MultiSlider extends js.Object {
-  var Handle: FunctionComponent[IHandleProps] = js.native
-  var defaultProps: IMultiSliderProps = js.native
-  var defaultSliderProps: ISliderBaseProps = js.native
-  var displayName: String = js.native
-  var getLabelPrecision: js.Any = js.native
-  def getDerivedStateFromProps(props: IMultiSliderProps): AnonLabelPrecision = js.native
+open class MultiSlider protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.MultiSlider {
+  def this(props: MultiSliderProps) = this()
+  def this(props: MultiSliderProps, context: Any) = this()
 }
-
+/* static members */
+object MultiSlider {
+  
+  @JSImport("@blueprintjs/core", "MultiSlider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "MultiSlider.Handle")
+  @js.native
+  def Handle: FC[IHandleProps] = js.native
+  inline def Handle_=(x: FC[IHandleProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Handle")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/core", "MultiSlider.defaultProps")
+  @js.native
+  def defaultProps: MultiSliderProps = js.native
+  inline def defaultProps_=(x: MultiSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/core", "MultiSlider.defaultSliderProps")
+  @js.native
+  def defaultSliderProps: ISliderBaseProps = js.native
+  inline def defaultSliderProps_=(x: ISliderBaseProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSliderProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/core", "MultiSlider.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  
+  inline def getDerivedStateFromProps(props: MultiSliderProps): LabelPrecision = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any]).asInstanceOf[LabelPrecision]
+  
+  @JSImport("@blueprintjs/core", "MultiSlider.getLabelPrecision")
+  @js.native
+  def getLabelPrecision: Any = js.native
+  inline def getLabelPrecision_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getLabelPrecision")(x.asInstanceOf[js.Any])
+}

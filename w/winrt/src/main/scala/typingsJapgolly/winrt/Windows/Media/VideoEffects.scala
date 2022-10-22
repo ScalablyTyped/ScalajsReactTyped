@@ -1,17 +1,7 @@
 package typingsJapgolly.winrt.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.VideoEffects")
-@js.native
-class VideoEffects () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.Media.VideoEffects")
-@js.native
-object VideoEffects extends js.Object {
-  var videoStabilization: String = js.native
-}
-
+trait VideoEffects extends StObject

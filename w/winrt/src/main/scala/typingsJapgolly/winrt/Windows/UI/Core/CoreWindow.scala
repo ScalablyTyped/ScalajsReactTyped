@@ -1,86 +1,54 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IPropertySet
 import typingsJapgolly.winrt.Windows.Foundation.Point
 import typingsJapgolly.winrt.Windows.Foundation.Rect
 import typingsJapgolly.winrt.Windows.System.VirtualKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Core.CoreWindow")
-@js.native
-class CoreWindow () extends ICoreWindow {
-  /* CompleteClass */
-  override var automationHostProvider: js.Any = js.native
-  /* CompleteClass */
-  override var bounds: Rect = js.native
-  /* CompleteClass */
-  override var customProperties: IPropertySet = js.native
-  /* CompleteClass */
-  override var dispatcher: CoreDispatcher = js.native
-  /* CompleteClass */
-  override var flowDirection: CoreWindowFlowDirection = js.native
-  /* CompleteClass */
-  override var isInputEnabled: Boolean = js.native
-  /* CompleteClass */
-  override var onactivated: js.Any = js.native
-  /* CompleteClass */
-  override var onautomationproviderrequested: js.Any = js.native
-  /* CompleteClass */
-  override var oncharacterreceived: js.Any = js.native
-  /* CompleteClass */
-  override var onclosed: js.Any = js.native
-  /* CompleteClass */
-  override var oninputenabled: js.Any = js.native
-  /* CompleteClass */
-  override var onkeydown: js.Any = js.native
-  /* CompleteClass */
-  override var onkeyup: js.Any = js.native
-  /* CompleteClass */
-  override var onpointercapturelost: js.Any = js.native
-  /* CompleteClass */
-  override var onpointerentered: js.Any = js.native
-  /* CompleteClass */
-  override var onpointerexited: js.Any = js.native
-  /* CompleteClass */
-  override var onpointermoved: js.Any = js.native
-  /* CompleteClass */
-  override var onpointerpressed: js.Any = js.native
-  /* CompleteClass */
-  override var onpointerreleased: js.Any = js.native
-  /* CompleteClass */
-  override var onpointerwheelchanged: js.Any = js.native
-  /* CompleteClass */
-  override var onsizechanged: js.Any = js.native
-  /* CompleteClass */
-  override var ontouchhittesting: js.Any = js.native
-  /* CompleteClass */
-  override var onvisibilitychanged: js.Any = js.native
-  /* CompleteClass */
-  override var pointerCursor: CoreCursor = js.native
-  /* CompleteClass */
-  override var pointerPosition: Point = js.native
-  /* CompleteClass */
-  override var visible: Boolean = js.native
-  /* CompleteClass */
-  override def activate(): Unit = js.native
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /* CompleteClass */
-  override def getAsyncKeyState(virtualKey: VirtualKey): CoreVirtualKeyStates = js.native
-  /* CompleteClass */
-  override def getKeyState(virtualKey: VirtualKey): CoreVirtualKeyStates = js.native
-  /* CompleteClass */
-  override def releasePointerCapture(): Unit = js.native
-  /* CompleteClass */
-  override def setPointerCapture(): Unit = js.native
+trait CoreWindow
+  extends StObject
+     with ICoreWindow
+object CoreWindow {
+  
+  inline def apply(
+    activate: Callback,
+    automationHostProvider: Any,
+    bounds: Rect,
+    close: Callback,
+    customProperties: IPropertySet,
+    dispatcher: CoreDispatcher,
+    flowDirection: CoreWindowFlowDirection,
+    getAsyncKeyState: VirtualKey => CoreVirtualKeyStates,
+    getKeyState: VirtualKey => CoreVirtualKeyStates,
+    isInputEnabled: Boolean,
+    onactivated: Any,
+    onautomationproviderrequested: Any,
+    oncharacterreceived: Any,
+    onclosed: Any,
+    oninputenabled: Any,
+    onkeydown: Any,
+    onkeyup: Any,
+    onpointercapturelost: Any,
+    onpointerentered: Any,
+    onpointerexited: Any,
+    onpointermoved: Any,
+    onpointerpressed: Any,
+    onpointerreleased: Any,
+    onpointerwheelchanged: Any,
+    onsizechanged: Any,
+    ontouchhittesting: Any,
+    onvisibilitychanged: Any,
+    pointerCursor: CoreCursor,
+    pointerPosition: Point,
+    releasePointerCapture: Callback,
+    setPointerCapture: Callback,
+    visible: Boolean
+  ): CoreWindow = {
+    val __obj = js.Dynamic.literal(activate = activate.toJsFn, automationHostProvider = automationHostProvider.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], close = close.toJsFn, customProperties = customProperties.asInstanceOf[js.Any], dispatcher = dispatcher.asInstanceOf[js.Any], flowDirection = flowDirection.asInstanceOf[js.Any], getAsyncKeyState = js.Any.fromFunction1(getAsyncKeyState), getKeyState = js.Any.fromFunction1(getKeyState), isInputEnabled = isInputEnabled.asInstanceOf[js.Any], onactivated = onactivated.asInstanceOf[js.Any], onautomationproviderrequested = onautomationproviderrequested.asInstanceOf[js.Any], oncharacterreceived = oncharacterreceived.asInstanceOf[js.Any], onclosed = onclosed.asInstanceOf[js.Any], oninputenabled = oninputenabled.asInstanceOf[js.Any], onkeydown = onkeydown.asInstanceOf[js.Any], onkeyup = onkeyup.asInstanceOf[js.Any], onpointercapturelost = onpointercapturelost.asInstanceOf[js.Any], onpointerentered = onpointerentered.asInstanceOf[js.Any], onpointerexited = onpointerexited.asInstanceOf[js.Any], onpointermoved = onpointermoved.asInstanceOf[js.Any], onpointerpressed = onpointerpressed.asInstanceOf[js.Any], onpointerreleased = onpointerreleased.asInstanceOf[js.Any], onpointerwheelchanged = onpointerwheelchanged.asInstanceOf[js.Any], onsizechanged = onsizechanged.asInstanceOf[js.Any], ontouchhittesting = ontouchhittesting.asInstanceOf[js.Any], onvisibilitychanged = onvisibilitychanged.asInstanceOf[js.Any], pointerCursor = pointerCursor.asInstanceOf[js.Any], pointerPosition = pointerPosition.asInstanceOf[js.Any], releasePointerCapture = releasePointerCapture.toJsFn, setPointerCapture = setPointerCapture.toJsFn, visible = visible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CoreWindow]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.UI.Core.CoreWindow")
-@js.native
-object CoreWindow extends js.Object {
-  def getForCurrentThread(): CoreWindow = js.native
-}
-

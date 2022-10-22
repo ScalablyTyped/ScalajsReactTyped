@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Document
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ParagraphHeading extends js.Object
-
+sealed trait ParagraphHeading extends StObject
 /**
   * An enumeration of the standard paragraph headings.
   *
@@ -29,62 +27,50 @@ sealed trait ParagraphHeading extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Document.ParagraphHeading")
 @js.native
-object ParagraphHeading extends js.Object {
-  @js.native
-  sealed trait HEADING1 extends ParagraphHeading
+object ParagraphHeading extends StObject {
   
   @js.native
-  sealed trait HEADING2 extends ParagraphHeading
+  sealed trait HEADING1
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait HEADING3 extends ParagraphHeading
+  sealed trait HEADING2
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait HEADING4 extends ParagraphHeading
+  sealed trait HEADING3
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait HEADING5 extends ParagraphHeading
+  sealed trait HEADING4
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait HEADING6 extends ParagraphHeading
+  sealed trait HEADING5
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait NORMAL extends ParagraphHeading
+  sealed trait HEADING6
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait SUBTITLE extends ParagraphHeading
+  sealed trait NORMAL
+    extends StObject
+       with ParagraphHeading
   
   @js.native
-  sealed trait TITLE extends ParagraphHeading
+  sealed trait SUBTITLE
+    extends StObject
+       with ParagraphHeading
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ParagraphHeading with Double] = js.native
-  /* 1 */ @js.native
-  object HEADING1 extends TopLevel[HEADING1 with Double]
-  
-  /* 2 */ @js.native
-  object HEADING2 extends TopLevel[HEADING2 with Double]
-  
-  /* 3 */ @js.native
-  object HEADING3 extends TopLevel[HEADING3 with Double]
-  
-  /* 4 */ @js.native
-  object HEADING4 extends TopLevel[HEADING4 with Double]
-  
-  /* 5 */ @js.native
-  object HEADING5 extends TopLevel[HEADING5 with Double]
-  
-  /* 6 */ @js.native
-  object HEADING6 extends TopLevel[HEADING6 with Double]
-  
-  /* 0 */ @js.native
-  object NORMAL extends TopLevel[NORMAL with Double]
-  
-  /* 8 */ @js.native
-  object SUBTITLE extends TopLevel[SUBTITLE with Double]
-  
-  /* 7 */ @js.native
-  object TITLE extends TopLevel[TITLE with Double]
-  
+  @js.native
+  sealed trait TITLE
+    extends StObject
+       with ParagraphHeading
 }
-

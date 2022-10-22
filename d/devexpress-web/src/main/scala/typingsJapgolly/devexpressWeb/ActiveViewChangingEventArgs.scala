@@ -1,32 +1,44 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client-side ASPxClientScheduler.ActiveViewChanging event.
   */
-@JSGlobal("ActiveViewChangingEventArgs")
-@js.native
-class ActiveViewChangingEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Provides data for the client-side ActiveViewChanging event.
-    * @param oldView Represents the new View used by the Scheduler to show its data.
-    * @param newView Represents the previous View used by the Scheduler to show its data.
-    */
-  def this(oldView: ASPxSchedulerViewType, newView: ASPxSchedulerViewType) = this()
+trait ActiveViewChangingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets or sets whether the change of active view should be canceled.
     */
-  var cancel: Boolean = js.native
+  var cancel: Boolean
+  
   /**
     * Gets the new value of the ASPxScheduler.ActiveView property.
     */
-  var newView: ASPxSchedulerViewType = js.native
+  var newView: ASPxSchedulerViewType
+  
   /**
     * Gets the value of the ASPxScheduler.ActiveView property before modification.
     */
-  var oldView: ASPxSchedulerViewType = js.native
+  var oldView: ASPxSchedulerViewType
 }
-
+object ActiveViewChangingEventArgs {
+  
+  inline def apply(cancel: Boolean, newView: ASPxSchedulerViewType, oldView: ASPxSchedulerViewType): ActiveViewChangingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], newView = newView.asInstanceOf[js.Any], oldView = oldView.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActiveViewChangingEventArgs]
+  }
+  
+  extension [Self <: ActiveViewChangingEventArgs](x: Self) {
+    
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setNewView(value: ASPxSchedulerViewType): Self = StObject.set(x, "newView", value.asInstanceOf[js.Any])
+    
+    inline def setOldView(value: ASPxSchedulerViewType): Self = StObject.set(x, "oldView", value.asInstanceOf[js.Any])
+  }
+}

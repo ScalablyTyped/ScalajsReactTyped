@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PivotTransportConnection extends js.Object {
+trait PivotTransportConnection extends StObject {
+  
   var catalog: js.UndefOr[String] = js.undefined
+  
   var cube: js.UndefOr[String] = js.undefined
 }
-
 object PivotTransportConnection {
-  @scala.inline
-  def apply(catalog: String = null, cube: String = null): PivotTransportConnection = {
+  
+  inline def apply(): PivotTransportConnection = {
     val __obj = js.Dynamic.literal()
-    if (catalog != null) __obj.updateDynamic("catalog")(catalog.asInstanceOf[js.Any])
-    if (cube != null) __obj.updateDynamic("cube")(cube.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTransportConnection]
   }
+  
+  extension [Self <: PivotTransportConnection](x: Self) {
+    
+    inline def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
+    
+    inline def setCatalogUndefined: Self = StObject.set(x, "catalog", js.undefined)
+    
+    inline def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
+    
+    inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
+  }
 }
-

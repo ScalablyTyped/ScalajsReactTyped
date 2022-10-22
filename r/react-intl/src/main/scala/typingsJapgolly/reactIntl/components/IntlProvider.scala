@@ -1,59 +1,45 @@
 package typingsJapgolly.reactIntl.components
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.intlMessageformatParser.mod.MessageFormatElement
-import typingsJapgolly.reactIntl.mod.CustomFormats
-import typingsJapgolly.reactIntl.mod.OptionalIntlConfig
-import typingsJapgolly.std.Record
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.PropsWithChildren
+import typingsJapgolly.reactIntl.srcTypesMod.IntlConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object IntlProvider {
-  def apply(
-    locale: String,
-    defaultFormats: CustomFormats = null,
-    defaultLocale: String = null,
-    formats: CustomFormats = null,
-    messages: Record[String, js.Array[MessageFormatElement] | String] = null,
-    onError: /* err */ String => Callback = null,
-    textComponent: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any = null,
-    timeZone: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    OptionalIntlConfig, 
-    typingsJapgolly.reactIntl.mod.IntlProvider, 
-    Unit, 
-    OptionalIntlConfig
-  ] = {
-    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
   
-      if (defaultFormats != null) __obj.updateDynamic("defaultFormats")(defaultFormats.asInstanceOf[js.Any])
-    if (defaultLocale != null) __obj.updateDynamic("defaultLocale")(defaultLocale.asInstanceOf[js.Any])
-    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: /* err */ java.lang.String) => onError(t0).runNow()))
-    if (textComponent != null) __obj.updateDynamic("textComponent")(textComponent.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactIntl.mod.OptionalIntlConfig, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactIntl.mod.IntlProvider](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactIntl.mod.OptionalIntlConfig])(children: _*)
-  }
   @JSImport("react-intl", "IntlProvider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactIntl.mod.IntlProvider] {
+    
+    inline def defaultFormats(value: Any): this.type = set("defaultFormats", value.asInstanceOf[js.Any])
+    
+    inline def defaultLocale(value: Any): this.type = set("defaultLocale", value.asInstanceOf[js.Any])
+    
+    inline def fallbackOnEmptyString(value: Any): this.type = set("fallbackOnEmptyString", value.asInstanceOf[js.Any])
+    
+    inline def formats(value: Any): this.type = set("formats", value.asInstanceOf[js.Any])
+    
+    inline def messages(value: Any): this.type = set("messages", value.asInstanceOf[js.Any])
+    
+    inline def onError(value: Any): this.type = set("onError", value.asInstanceOf[js.Any])
+    
+    inline def textComponent(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typingsJapgolly.react.mod.ComponentType[js.Object], typingsJapgolly.reactIntl.reactIntlStrings.a, typingsJapgolly.reactIntl.reactIntlStrings.abbr */ Any
+    ): this.type = set("textComponent", value.asInstanceOf[js.Any])
+    
+    inline def timeZone(value: Any): this.type = set("timeZone", value.asInstanceOf[js.Any])
+    
+    inline def wrapRichTextChunksInFragment(value: Boolean): this.type = set("wrapRichTextChunksInFragment", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: IntlProvider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PropsWithChildren[IntlConfig]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

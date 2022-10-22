@@ -1,13 +1,13 @@
 package typingsJapgolly.angularCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.angularCore.angularCoreBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Directive extends js.Object {
+trait Directive extends StObject {
+  
   /**
     * Defines the name that can be used in the template to assign this directive to a variable.
     *
@@ -31,6 +31,7 @@ trait Directive extends js.Object {
     *
     */
   var exportAs: js.UndefOr[String] = js.undefined
+  
   /**
     * Maps class properties to host element bindings for properties,
     * attributes, and events, using a set of key-value pairs.
@@ -54,6 +55,7 @@ trait Directive extends js.Object {
     *
     */
   var host: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   /**
     * Enumerates the set of data-bound input properties for a directive
     *
@@ -82,18 +84,20 @@ trait Directive extends js.Object {
     * class BankAccount {
     *   bankName: string;
     *   id: string;
-    *
+    * }
     * ```
     *
     */
   var inputs: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * If true, this directive/component will be skipped by the AOT compiler and so will always be
-    * compiled using JIT.
-    *
-    * This exists to support future Ivy work and has no effect currently.
+    * When present, this directive/component is ignored by the AOT compiler.
+    * It remains in distributed code, and the JIT compiler attempts to compile it
+    * at run time, in the browser.
+    * To ensure the correct behavior, the app must import `@angular/compiler`.
     */
   var jit: js.UndefOr[`true`] = js.undefined
+  
   /**
     * Enumerates the set of event-bound output properties.
     *
@@ -135,12 +139,14 @@ trait Directive extends js.Object {
     *
     */
   var outputs: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * Configures the [injector](guide/glossary#injector) of this
     * directive or component with a [token](guide/glossary#di-token)
     * that maps to a [provider](guide/glossary#provider) of a dependency.
     */
   var providers: js.UndefOr[js.Array[Provider]] = js.undefined
+  
   /**
     * Configures the queries that will be injected into the directive.
     *
@@ -177,7 +183,8 @@ trait Directive extends js.Object {
     *
     * @Annotation
     */
-  var queries: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var queries: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
   /**
     * The CSS selector that identifies this directive in a template
     * and triggers instantiation of the directive.
@@ -206,9 +213,67 @@ trait Directive extends js.Object {
     *
     */
   var selector: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Angular directives marked as `standalone` do not need to be declared in an NgModule. Such
+    * directives don't depend on any "intermediate context" of an NgModule (ex. configured
+    * providers).
+    *
+    * More information about standalone components, directives, and pipes can be found in [this
+    * guide](guide/standalone-components).
+    *
+    * @developerPreview
+    */
+  var standalone: js.UndefOr[Boolean] = js.undefined
 }
-
-@JSImport("@angular/core", "Directive")
-@js.native
-object Directive extends TopLevel[DirectiveDecorator]
-
+object Directive {
+  
+  @JSImport("@angular/core", "Directive")
+  @js.native
+  val ^ : DirectiveDecorator = js.native
+  
+  extension [Self <: Directive](x: Self) {
+    
+    inline def setExportAs(value: String): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
+    
+    inline def setExportAsUndefined: Self = StObject.set(x, "exportAs", js.undefined)
+    
+    inline def setHost(value: StringDictionary[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setInputs(value: js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    
+    inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    
+    inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value*))
+    
+    inline def setJit(value: `true`): Self = StObject.set(x, "jit", value.asInstanceOf[js.Any])
+    
+    inline def setJitUndefined: Self = StObject.set(x, "jit", js.undefined)
+    
+    inline def setOutputs(value: js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    
+    inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+    
+    inline def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value*))
+    
+    inline def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    
+    inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+    
+    inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value*))
+    
+    inline def setQueries(value: StringDictionary[Any]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    
+    inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
+    
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    
+    inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+    
+    inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
+  }
+}

@@ -1,21 +1,30 @@
 package typingsJapgolly.jsoneditoronline
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSONEditorNodeUpdateDomOptions extends js.Object {
+trait JSONEditorNodeUpdateDomOptions extends StObject {
+  
   var recurse: js.UndefOr[Boolean] = js.undefined
+  
   var updateIndexes: js.UndefOr[Boolean] = js.undefined
 }
-
 object JSONEditorNodeUpdateDomOptions {
-  @scala.inline
-  def apply(recurse: js.UndefOr[Boolean] = js.undefined, updateIndexes: js.UndefOr[Boolean] = js.undefined): JSONEditorNodeUpdateDomOptions = {
+  
+  inline def apply(): JSONEditorNodeUpdateDomOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateIndexes)) __obj.updateDynamic("updateIndexes")(updateIndexes.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorNodeUpdateDomOptions]
   }
+  
+  extension [Self <: JSONEditorNodeUpdateDomOptions](x: Self) {
+    
+    inline def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
+    
+    inline def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
+    
+    inline def setUpdateIndexes(value: Boolean): Self = StObject.set(x, "updateIndexes", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateIndexesUndefined: Self = StObject.set(x, "updateIndexes", js.undefined)
+  }
 }
-

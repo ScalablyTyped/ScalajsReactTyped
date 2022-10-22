@@ -1,34 +1,49 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
-import typingsJapgolly.reactNativeChartsWrapper.AnonAngle
+import typingsJapgolly.reactNativeChartsWrapper.anon.Angle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LineRadarConfig extends js.Object {
+trait LineRadarConfig extends StObject {
+  
   var drawFilled: js.UndefOr[Boolean] = js.undefined
+  
   var fillAlpha: js.UndefOr[Double] = js.undefined
+  
   var fillColor: js.UndefOr[Color] = js.undefined
-  var fillGradient: js.UndefOr[AnonAngle] = js.undefined
+  
+  var fillGradient: js.UndefOr[Angle] = js.undefined
+  
   var lineWidth: js.UndefOr[Double] = js.undefined
 }
-
 object LineRadarConfig {
-  @scala.inline
-  def apply(
-    drawFilled: js.UndefOr[Boolean] = js.undefined,
-    fillAlpha: Int | Double = null,
-    fillColor: Int | Double = null,
-    fillGradient: AnonAngle = null,
-    lineWidth: Int | Double = null
-  ): LineRadarConfig = {
+  
+  inline def apply(): LineRadarConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drawFilled)) __obj.updateDynamic("drawFilled")(drawFilled.asInstanceOf[js.Any])
-    if (fillAlpha != null) __obj.updateDynamic("fillAlpha")(fillAlpha.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (fillGradient != null) __obj.updateDynamic("fillGradient")(fillGradient.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineRadarConfig]
   }
+  
+  extension [Self <: LineRadarConfig](x: Self) {
+    
+    inline def setDrawFilled(value: Boolean): Self = StObject.set(x, "drawFilled", value.asInstanceOf[js.Any])
+    
+    inline def setDrawFilledUndefined: Self = StObject.set(x, "drawFilled", js.undefined)
+    
+    inline def setFillAlpha(value: Double): Self = StObject.set(x, "fillAlpha", value.asInstanceOf[js.Any])
+    
+    inline def setFillAlphaUndefined: Self = StObject.set(x, "fillAlpha", js.undefined)
+    
+    inline def setFillColor(value: Color): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    
+    inline def setFillGradient(value: Angle): Self = StObject.set(x, "fillGradient", value.asInstanceOf[js.Any])
+    
+    inline def setFillGradientUndefined: Self = StObject.set(x, "fillGradient", js.undefined)
+    
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+  }
 }
-

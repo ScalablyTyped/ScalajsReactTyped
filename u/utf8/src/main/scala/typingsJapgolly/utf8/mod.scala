@@ -1,27 +1,20 @@
 package typingsJapgolly.utf8
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("utf8", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  /**
-    * A string representing the semantic version number.
-    */
-  var version: String = js.native
-  /**
-    * Decodes any given UTF-8-encoded string (byteString) as UTF-8, and returns the UTF-8-decoded version of the string.
-    * It throws an error when malformed UTF-8 is detected.
-    * @param {string} byteString
-    */
-  def decode(byteString: String): String = js.native
-  /**
-    * Encodes any given JavaScript string (string) as UTF-8, and returns the UTF-8-encoded version of the string.
-    * It throws an error if the input string contains a non-scalar value, i.e. a lone surrogate.
-    * @param {string} inputString
-    */
-  def encode(inputString: String): String = js.native
+object mod {
+  
+  @JSImport("utf8", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def decode(byteString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(byteString.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def encode(inputString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(inputString.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("utf8", "version")
+  @js.native
+  val version: String = js.native
 }
-

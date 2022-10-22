@@ -1,15 +1,16 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BMap.PanoramaService")
 @js.native
-class PanoramaService () extends js.Object {
+trait PanoramaService extends StObject {
+  
   def getPanoramaById(id: String, callback: js.Function1[/* data */ PanoramaData, Unit]): Unit = js.native
+  
   def getPanoramaByLocation(point: Point): Unit = js.native
   def getPanoramaByLocation(point: Point, radius: Double): Unit = js.native
   def getPanoramaByLocation(point: Point, radius: Double, callback: js.Function1[/* data */ PanoramaData, Unit]): Unit = js.native
+  def getPanoramaByLocation(point: Point, radius: Unit, callback: js.Function1[/* data */ PanoramaData, Unit]): Unit = js.native
 }
-

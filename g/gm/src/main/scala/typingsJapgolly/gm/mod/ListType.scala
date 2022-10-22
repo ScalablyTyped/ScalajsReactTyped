@@ -1,8 +1,8 @@
 package typingsJapgolly.gm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gm.gmStrings.Color
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gm.gmStrings.Resource
   - typingsJapgolly.gm.gmStrings.Type
 */
-trait ListType extends js.Object
-
+trait ListType extends StObject
 object ListType {
-  @scala.inline
-  def Color: typingsJapgolly.gm.gmStrings.Color = this.cast("Color")
-  @scala.inline
-  def Delegate: typingsJapgolly.gm.gmStrings.Delegate = this.cast("Delegate")
-  @scala.inline
-  def Format: typingsJapgolly.gm.gmStrings.Format = this.cast("Format")
-  @scala.inline
-  def Magic: typingsJapgolly.gm.gmStrings.Magic = this.cast("Magic")
-  @scala.inline
-  def Module: typingsJapgolly.gm.gmStrings.Module = this.cast("Module")
-  @scala.inline
-  def Resource: typingsJapgolly.gm.gmStrings.Resource = this.cast("Resource")
-  @scala.inline
-  def Type: typingsJapgolly.gm.gmStrings.Type = this.cast("Type")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Color: typingsJapgolly.gm.gmStrings.Color = "Color".asInstanceOf[typingsJapgolly.gm.gmStrings.Color]
+  
+  inline def Delegate: typingsJapgolly.gm.gmStrings.Delegate = "Delegate".asInstanceOf[typingsJapgolly.gm.gmStrings.Delegate]
+  
+  inline def Format: typingsJapgolly.gm.gmStrings.Format = "Format".asInstanceOf[typingsJapgolly.gm.gmStrings.Format]
+  
+  inline def Magic: typingsJapgolly.gm.gmStrings.Magic = "Magic".asInstanceOf[typingsJapgolly.gm.gmStrings.Magic]
+  
+  inline def Module: typingsJapgolly.gm.gmStrings.Module = "Module".asInstanceOf[typingsJapgolly.gm.gmStrings.Module]
+  
+  inline def Resource: typingsJapgolly.gm.gmStrings.Resource = "Resource".asInstanceOf[typingsJapgolly.gm.gmStrings.Resource]
+  
+  inline def Type: typingsJapgolly.gm.gmStrings.Type = "Type".asInstanceOf[typingsJapgolly.gm.gmStrings.Type]
 }
-

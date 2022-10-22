@@ -1,7 +1,7 @@
 
 # Scala.js typings for cypress-cucumber-preprocessor
 
-Typings are for version 1.14
+Typings are for version 4.0
 
 ## Library description:
 Run gherkin-syntaxed specs with cypress.io
@@ -10,10 +10,10 @@ Run gherkin-syntaxed specs with cypress.io
 | ------------------ | :-------------: |
 | Full name          | cypress-cucumber-preprocessor |
 | Keywords           | cucumber, gherkin, cypress, testing |
-| # releases         | 44 |
-| # dependents       | 5 |
-| # downloads        | 1069285 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 1500035.0 |
+| # stars            | 1038.0 |
 
 ## Links
 - [Homepage](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor#readme)

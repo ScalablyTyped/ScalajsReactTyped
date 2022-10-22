@@ -1,8 +1,8 @@
 package typingsJapgolly.reactBigCalendar.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.PREV
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.TODAY
   - typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.DATE
 */
-trait NavigateAction extends js.Object
-
+trait NavigateAction extends StObject
 object NavigateAction {
-  @scala.inline
-  def DATE: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.DATE = this.cast("DATE")
-  @scala.inline
-  def NEXT: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.NEXT = this.cast("NEXT")
-  @scala.inline
-  def PREV: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.PREV = this.cast("PREV")
-  @scala.inline
-  def TODAY: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.TODAY = this.cast("TODAY")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def DATE: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.DATE = "DATE".asInstanceOf[typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.DATE]
+  
+  inline def NEXT: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.NEXT = "NEXT".asInstanceOf[typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.NEXT]
+  
+  inline def PREV: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.PREV = "PREV".asInstanceOf[typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.PREV]
+  
+  inline def TODAY: typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.TODAY = "TODAY".asInstanceOf[typingsJapgolly.reactBigCalendar.reactBigCalendarStrings.TODAY]
 }
-

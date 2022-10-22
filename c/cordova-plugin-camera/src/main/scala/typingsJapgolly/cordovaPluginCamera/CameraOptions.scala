@@ -1,12 +1,14 @@
 package typingsJapgolly.cordovaPluginCamera
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CameraOptions extends js.Object {
+trait CameraOptions extends StObject {
+  
   /** Allow simple editing of image before selection. */
   var allowEdit: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Choose the camera to use (front- or back-facing).
     * Defined in navigator.camera.Direction. Default is BACK.
@@ -14,17 +16,18 @@ trait CameraOptions extends js.Object {
     *      BACK: 1
     */
   var cameraDirection: js.UndefOr[Double] = js.undefined
+  
   /** Rotate the image to correct for the orientation of the device during capture. */
   var correctOrientation: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Choose the format of the return value.
     * Defined in navigator.camera.DestinationType. Default is FILE_URI.
     *      DATA_URL : 0,   Return image as base64-encoded string
     *      FILE_URI : 1,   Return image file URI
-    *      NATIVE_URI : 2  Return image native URI
-    *          (e.g., assets-library:// on iOS or content:// on Android)
     */
   var destinationType: js.UndefOr[Double] = js.undefined
+  
   /**
     * Choose the returned image file's encoding.
     * Defined in navigator.camera.EncodingType. Default is JPEG
@@ -32,6 +35,7 @@ trait CameraOptions extends js.Object {
     *      PNG : 1     Return PNG encoded image
     */
   var encodingType: js.UndefOr[Double] = js.undefined
+  
   /**
     * Set the type of media to select from. Only works when PictureSourceType
     * is PHOTOLIBRARY or SAVEDPHOTOALBUM. Defined in nagivator.camera.MediaType
@@ -41,12 +45,16 @@ trait CameraOptions extends js.Object {
     *      ALLMEDIA : 2    allow selection from all media types
     */
   var mediaType: js.UndefOr[Double] = js.undefined
+  
   /** iOS-only options that specify popover location in iPad. Defined in CameraPopoverOptions. */
   var popoverOptions: js.UndefOr[CameraPopoverOptions] = js.undefined
+  
   /** Picture quality in range 0-100. Default is 50 */
   var quality: js.UndefOr[Double] = js.undefined
+  
   /** Save the image to the photo album on the device after capture. */
   var saveToPhotoAlbum: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Set the source of the picture.
     * Defined in navigator.camera.PictureSourceType. Default is CAMERA.
@@ -55,48 +63,74 @@ trait CameraOptions extends js.Object {
     *      SAVEDPHOTOALBUM : 2
     */
   var sourceType: js.UndefOr[Double] = js.undefined
+  
   /**
     * Height in pixels to scale image. Must be used with targetWidth.
     * Aspect ratio remains constant.
     */
   var targetHeight: js.UndefOr[Double] = js.undefined
+  
   /**
     * Width in pixels to scale image. Must be used with targetHeight.
     * Aspect ratio remains constant.
     */
   var targetWidth: js.UndefOr[Double] = js.undefined
 }
-
 object CameraOptions {
-  @scala.inline
-  def apply(
-    allowEdit: js.UndefOr[Boolean] = js.undefined,
-    cameraDirection: Int | Double = null,
-    correctOrientation: js.UndefOr[Boolean] = js.undefined,
-    destinationType: Int | Double = null,
-    encodingType: Int | Double = null,
-    mediaType: Int | Double = null,
-    popoverOptions: CameraPopoverOptions = null,
-    quality: Int | Double = null,
-    saveToPhotoAlbum: js.UndefOr[Boolean] = js.undefined,
-    sourceType: Int | Double = null,
-    targetHeight: Int | Double = null,
-    targetWidth: Int | Double = null
-  ): CameraOptions = {
+  
+  inline def apply(): CameraOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEdit)) __obj.updateDynamic("allowEdit")(allowEdit.asInstanceOf[js.Any])
-    if (cameraDirection != null) __obj.updateDynamic("cameraDirection")(cameraDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(correctOrientation)) __obj.updateDynamic("correctOrientation")(correctOrientation.asInstanceOf[js.Any])
-    if (destinationType != null) __obj.updateDynamic("destinationType")(destinationType.asInstanceOf[js.Any])
-    if (encodingType != null) __obj.updateDynamic("encodingType")(encodingType.asInstanceOf[js.Any])
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
-    if (popoverOptions != null) __obj.updateDynamic("popoverOptions")(popoverOptions.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (!js.isUndefined(saveToPhotoAlbum)) __obj.updateDynamic("saveToPhotoAlbum")(saveToPhotoAlbum.asInstanceOf[js.Any])
-    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
-    if (targetHeight != null) __obj.updateDynamic("targetHeight")(targetHeight.asInstanceOf[js.Any])
-    if (targetWidth != null) __obj.updateDynamic("targetWidth")(targetWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraOptions]
   }
+  
+  extension [Self <: CameraOptions](x: Self) {
+    
+    inline def setAllowEdit(value: Boolean): Self = StObject.set(x, "allowEdit", value.asInstanceOf[js.Any])
+    
+    inline def setAllowEditUndefined: Self = StObject.set(x, "allowEdit", js.undefined)
+    
+    inline def setCameraDirection(value: Double): Self = StObject.set(x, "cameraDirection", value.asInstanceOf[js.Any])
+    
+    inline def setCameraDirectionUndefined: Self = StObject.set(x, "cameraDirection", js.undefined)
+    
+    inline def setCorrectOrientation(value: Boolean): Self = StObject.set(x, "correctOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setCorrectOrientationUndefined: Self = StObject.set(x, "correctOrientation", js.undefined)
+    
+    inline def setDestinationType(value: Double): Self = StObject.set(x, "destinationType", value.asInstanceOf[js.Any])
+    
+    inline def setDestinationTypeUndefined: Self = StObject.set(x, "destinationType", js.undefined)
+    
+    inline def setEncodingType(value: Double): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
+    
+    inline def setMediaType(value: Double): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+    
+    inline def setPopoverOptions(value: CameraPopoverOptions): Self = StObject.set(x, "popoverOptions", value.asInstanceOf[js.Any])
+    
+    inline def setPopoverOptionsUndefined: Self = StObject.set(x, "popoverOptions", js.undefined)
+    
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    
+    inline def setSaveToPhotoAlbum(value: Boolean): Self = StObject.set(x, "saveToPhotoAlbum", value.asInstanceOf[js.Any])
+    
+    inline def setSaveToPhotoAlbumUndefined: Self = StObject.set(x, "saveToPhotoAlbum", js.undefined)
+    
+    inline def setSourceType(value: Double): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+    
+    inline def setTargetHeight(value: Double): Self = StObject.set(x, "targetHeight", value.asInstanceOf[js.Any])
+    
+    inline def setTargetHeightUndefined: Self = StObject.set(x, "targetHeight", js.undefined)
+    
+    inline def setTargetWidth(value: Double): Self = StObject.set(x, "targetWidth", value.asInstanceOf[js.Any])
+    
+    inline def setTargetWidthUndefined: Self = StObject.set(x, "targetWidth", js.undefined)
+  }
 }
-

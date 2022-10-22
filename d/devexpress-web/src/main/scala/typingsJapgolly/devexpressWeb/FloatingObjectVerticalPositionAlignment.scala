@@ -1,74 +1,63 @@
 package typingsJapgolly.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FloatingObjectVerticalPositionAlignment extends js.Object
-
+sealed trait FloatingObjectVerticalPositionAlignment extends StObject
 /**
   * Lists values specifying how a floating object is vertically aligned relative to the specified element.
   */
 @JSGlobal("FloatingObjectVerticalPositionAlignment")
 @js.native
-object FloatingObjectVerticalPositionAlignment extends js.Object {
+object FloatingObjectVerticalPositionAlignment extends StObject {
+  
   /**
     * The shape is aligned to the bottom relative to its FloatingObjectAlignmentPositionSettings.verticalPositionType.
     */
   @js.native
-  sealed trait Bottom extends FloatingObjectVerticalPositionAlignment
+  sealed trait Bottom
+    extends StObject
+       with FloatingObjectVerticalPositionAlignment
   
   /**
     * The shape is centered relative to its FloatingObjectAlignmentPositionSettings.verticalPositionType.
     */
   @js.native
-  sealed trait Center extends FloatingObjectVerticalPositionAlignment
+  sealed trait Center
+    extends StObject
+       with FloatingObjectVerticalPositionAlignment
   
   /**
     * The shape is aligned inside relative to its FloatingObjectAlignmentPositionSettings.verticalPositionType.
     */
   @js.native
-  sealed trait Inside extends FloatingObjectVerticalPositionAlignment
+  sealed trait Inside
+    extends StObject
+       with FloatingObjectVerticalPositionAlignment
   
   /**
     * The shape is not vertically aligned.
     */
   @js.native
-  sealed trait None extends FloatingObjectVerticalPositionAlignment
+  sealed trait None
+    extends StObject
+       with FloatingObjectVerticalPositionAlignment
   
   /**
     * The shape is aligned outside relative to its FloatingObjectAlignmentPositionSettings.verticalPositionType.
     */
   @js.native
-  sealed trait Outside extends FloatingObjectVerticalPositionAlignment
+  sealed trait Outside
+    extends StObject
+       with FloatingObjectVerticalPositionAlignment
   
   /**
     * The shape is top aligned relative to its FloatingObjectAlignmentPositionSettings.verticalPositionType.
     */
   @js.native
-  sealed trait Top extends FloatingObjectVerticalPositionAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FloatingObjectVerticalPositionAlignment with Double] = js.native
-  /* 3 */ @js.native
-  object Bottom extends TopLevel[Bottom with Double]
-  
-  /* 2 */ @js.native
-  object Center extends TopLevel[Center with Double]
-  
-  /* 4 */ @js.native
-  object Inside extends TopLevel[Inside with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 5 */ @js.native
-  object Outside extends TopLevel[Outside with Double]
-  
-  /* 1 */ @js.native
-  object Top extends TopLevel[Top with Double]
-  
+  sealed trait Top
+    extends StObject
+       with FloatingObjectVerticalPositionAlignment
 }
-

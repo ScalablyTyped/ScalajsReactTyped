@@ -1,77 +1,73 @@
 package typingsJapgolly.officeUiFabricReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactKeyboardEventFrom
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.officeUiFabricReact.colorSliderTypesMod.IColorSlider
-import typingsJapgolly.officeUiFabricReact.colorSliderTypesMod.IColorSliderProps
-import typingsJapgolly.officeUiFabricReact.colorSliderTypesMod.IColorSliderStyleProps
-import typingsJapgolly.officeUiFabricReact.colorSliderTypesMod.IColorSliderStyles
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsColorPickerColorSliderColorSliderDottypesMod.IColorSlider
+import typingsJapgolly.officeUiFabricReact.libComponentsColorPickerColorSliderColorSliderDottypesMod.IColorSliderProps
+import typingsJapgolly.officeUiFabricReact.libComponentsColorPickerColorSliderColorSliderDottypesMod.IColorSliderStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsColorPickerColorSliderColorSliderDottypesMod.IColorSliderStyles
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.alpha
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.hue
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.transparency
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ColorSlider {
-  def apply(
-    ariaLabel: String = null,
-    className: String = null,
-    componentRef: IRefObject[IColorSlider] = null,
-    isAlpha: js.UndefOr[Boolean] = js.undefined,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null,
-    onChange: (/* event */ ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element], /* newValue */ js.UndefOr[Double]) => Callback = null,
-    overlayColor: String = null,
-    overlayStyle: CSSProperties = null,
-    styles: IStyleFunctionOrObject[IColorSliderStyleProps, IColorSliderStyles] = null,
-    theme: ITheme = null,
-    thumbColor: String = null,
-    value: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    IColorSliderProps, 
-    MountedWithRawType[IColorSliderProps, js.Object, RawMounted[IColorSliderProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAlpha)) __obj.updateDynamic("isAlpha")(isAlpha.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.Element] | japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.Element], t1: /* newValue */ js.UndefOr[scala.Double]) => onChange(t0, t1).runNow()))
-    if (overlayColor != null) __obj.updateDynamic("overlayColor")(overlayColor.asInstanceOf[js.Any])
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (thumbColor != null) __obj.updateDynamic("thumbColor")(thumbColor.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.officeUiFabricReact.colorSliderTypesMod.IColorSliderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.colorSliderTypesMod.IColorSliderProps])(children: _*)
-  }
   @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorSlider/ColorSlider", "ColorSlider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def ariaLabel(value: String): this.type = set("ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[IColorSlider]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ IColorSlider | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ IColorSlider | Null) => value(t0).runNow()))
+    
+    inline def isAlpha(value: Boolean): this.type = set("isAlpha", value.asInstanceOf[js.Any])
+    
+    inline def maxValue(value: Double): this.type = set("maxValue", value.asInstanceOf[js.Any])
+    
+    inline def minValue(value: Double): this.type = set("minValue", value.asInstanceOf[js.Any])
+    
+    inline def onChange(
+      value: (/* event */ ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element], /* newValue */ js.UndefOr[Double]) => Callback
+    ): this.type = set("onChange", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element], t1: /* newValue */ js.UndefOr[Double]) => (value(t0, t1)).runNow()))
+    
+    inline def overlayColor(value: String): this.type = set("overlayColor", value.asInstanceOf[js.Any])
+    
+    inline def overlayStyle(value: CSSProperties): this.type = set("overlayStyle", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IStyleFunctionOrObject[IColorSliderStyleProps, IColorSliderStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IColorSliderStyleProps => DeepPartial[IColorSliderStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def thumbColor(value: String): this.type = set("thumbColor", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: hue | alpha | transparency): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Double): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ColorSlider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IColorSliderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

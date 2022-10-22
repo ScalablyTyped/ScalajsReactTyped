@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Storage.Streams
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDataReaderFactory extends js.Object {
+trait IDataReaderFactory extends StObject {
+  
   def createDataReader(inputStream: IInputStream): DataReader
 }
-
 object IDataReaderFactory {
-  @scala.inline
-  def apply(createDataReader: IInputStream => CallbackTo[DataReader]): IDataReaderFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createDataReader")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Storage.Streams.IInputStream) => createDataReader(t0).runNow()))
+  
+  inline def apply(createDataReader: IInputStream => DataReader): IDataReaderFactory = {
+    val __obj = js.Dynamic.literal(createDataReader = js.Any.fromFunction1(createDataReader))
     __obj.asInstanceOf[IDataReaderFactory]
   }
+  
+  extension [Self <: IDataReaderFactory](x: Self) {
+    
+    inline def setCreateDataReader(value: IInputStream => DataReader): Self = StObject.set(x, "createDataReader", js.Any.fromFunction1(value))
+  }
 }
-

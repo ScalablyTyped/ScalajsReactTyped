@@ -2,72 +2,112 @@ package typingsJapgolly.aliOss
 
 import typingsJapgolly.aliOss.mod.ACLType
 import typingsJapgolly.aliOss.mod.HTTPMethods
+import typingsJapgolly.aliOss.mod.RedundancyType
 import typingsJapgolly.aliOss.mod.RuleStatusType
 import typingsJapgolly.aliOss.mod.StorageType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aliOssStrings {
-  @js.native
-  sealed trait Archive extends StorageType
   
   @js.native
-  sealed trait DELETE extends HTTPMethods
+  sealed trait Allow extends StObject
+  inline def Allow: Allow = "Allow".asInstanceOf[Allow]
   
   @js.native
-  sealed trait Disabled extends RuleStatusType
+  sealed trait Archive
+    extends StObject
+       with StorageType
+  inline def Archive: Archive = "Archive".asInstanceOf[Archive]
   
   @js.native
-  sealed trait Enabled extends RuleStatusType
+  sealed trait DELETE
+    extends StObject
+       with HTTPMethods
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait GET extends HTTPMethods
+  sealed trait Deny extends StObject
+  inline def Deny: Deny = "Deny".asInstanceOf[Deny]
   
   @js.native
-  sealed trait IA extends StorageType
+  sealed trait Disabled
+    extends StObject
+       with RuleStatusType
+  inline def Disabled: Disabled = "Disabled".asInstanceOf[Disabled]
   
   @js.native
-  sealed trait POST extends HTTPMethods
+  sealed trait Enabled
+    extends StObject
+       with RuleStatusType
+  inline def Enabled: Enabled = "Enabled".asInstanceOf[Enabled]
   
   @js.native
-  sealed trait PUT extends HTTPMethods
+  sealed trait GET
+    extends StObject
+       with HTTPMethods
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait Standard extends StorageType
+  sealed trait IA
+    extends StObject
+       with StorageType
+  inline def IA: IA = "IA".asInstanceOf[IA]
   
   @js.native
-  sealed trait `private` extends ACLType
+  sealed trait LRS
+    extends StObject
+       with RedundancyType
+  inline def LRS: LRS = "LRS".asInstanceOf[LRS]
   
   @js.native
-  sealed trait `public-read` extends ACLType
+  sealed trait POST
+    extends StObject
+       with HTTPMethods
+  inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait `public-read-write` extends ACLType
+  sealed trait PUT
+    extends StObject
+       with HTTPMethods
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
-  @scala.inline
-  def Archive: Archive = "Archive".asInstanceOf[Archive]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def Disabled: Disabled = "Disabled".asInstanceOf[Disabled]
-  @scala.inline
-  def Enabled: Enabled = "Enabled".asInstanceOf[Enabled]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def IA: IA = "IA".asInstanceOf[IA]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def Standard: Standard = "Standard".asInstanceOf[Standard]
-  @scala.inline
-  def `private`: `private` = "private".asInstanceOf[`private`]
-  @scala.inline
-  def `public-read`: `public-read` = "public-read".asInstanceOf[`public-read`]
-  @scala.inline
-  def `public-read-write`: `public-read-write` = "public-read-write".asInstanceOf[`public-read-write`]
+  @js.native
+  sealed trait Standard
+    extends StObject
+       with StorageType
+  inline def Standard: Standard = "Standard".asInstanceOf[Standard]
+  
+  @js.native
+  sealed trait ZRS
+    extends StObject
+       with RedundancyType
+  inline def ZRS: ZRS = "ZRS".asInstanceOf[ZRS]
+  
+  @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
+  sealed trait `private`
+    extends StObject
+       with ACLType
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
+  
+  @js.native
+  sealed trait `public-read`
+    extends StObject
+       with ACLType
+  inline def `public-read`: `public-read` = "public-read".asInstanceOf[`public-read`]
+  
+  @js.native
+  sealed trait `public-read-write`
+    extends StObject
+       with ACLType
+  inline def `public-read-write`: `public-read-write` = "public-read-write".asInstanceOf[`public-read-write`]
+  
+  @js.native
+  sealed trait url extends StObject
+  inline def url: url = "url".asInstanceOf[url]
 }
-

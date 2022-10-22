@@ -1,19 +1,22 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RotateZTransform extends js.Object {
+trait RotateZTransform extends StObject {
+  
   var rotateZ: String
 }
-
 object RotateZTransform {
-  @scala.inline
-  def apply(rotateZ: String): RotateZTransform = {
-    val __obj = js.Dynamic.literal(rotateZ = rotateZ.asInstanceOf[js.Any])
   
+  inline def apply(rotateZ: String): RotateZTransform = {
+    val __obj = js.Dynamic.literal(rotateZ = rotateZ.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotateZTransform]
   }
+  
+  extension [Self <: RotateZTransform](x: Self) {
+    
+    inline def setRotateZ(value: String): Self = StObject.set(x, "rotateZ", value.asInstanceOf[js.Any])
+  }
 }
-

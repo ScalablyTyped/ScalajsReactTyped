@@ -1,29 +1,40 @@
 package typingsJapgolly.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AltimeterOption extends js.Object {
+trait AltimeterOption extends StObject {
+  
   var address: js.UndefOr[Double] = js.undefined
+  
   var controller: String
+  
   var elevation: js.UndefOr[Double] = js.undefined
+  
   var freq: js.UndefOr[Double] = js.undefined
 }
-
 object AltimeterOption {
-  @scala.inline
-  def apply(
-    controller: String,
-    address: Int | Double = null,
-    elevation: Int | Double = null,
-    freq: Int | Double = null
-  ): AltimeterOption = {
+  
+  inline def apply(controller: String): AltimeterOption = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any])
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltimeterOption]
   }
+  
+  extension [Self <: AltimeterOption](x: Self) {
+    
+    inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    
+    inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+    
+    inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
+    
+    inline def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
+    
+    inline def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
+  }
 }
-

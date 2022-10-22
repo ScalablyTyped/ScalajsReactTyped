@@ -1,44 +1,52 @@
 package typingsJapgolly.officeJsPreview.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VerticalAlignment extends js.Object
-
+sealed trait VerticalAlignment extends StObject
 /**
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.VerticalAlignment")
 @js.native
-object VerticalAlignment extends js.Object {
+object VerticalAlignment extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait bottom extends VerticalAlignment
+  sealed trait bottom
+    extends StObject
+       with VerticalAlignment
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait center extends VerticalAlignment
+  sealed trait center
+    extends StObject
+       with VerticalAlignment
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait mixed extends VerticalAlignment
+  sealed trait mixed
+    extends StObject
+       with VerticalAlignment
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait top extends VerticalAlignment
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[VerticalAlignment with String] = js.native
-  /* "Bottom" */ @js.native
-  object bottom extends TopLevel[bottom with String]
-  
-  /* "Center" */ @js.native
-  object center extends TopLevel[center with String]
-  
-  /* "Mixed" */ @js.native
-  object mixed extends TopLevel[mixed with String]
-  
-  /* "Top" */ @js.native
-  object top extends TopLevel[top with String]
-  
+  sealed trait top
+    extends StObject
+       with VerticalAlignment
 }
-

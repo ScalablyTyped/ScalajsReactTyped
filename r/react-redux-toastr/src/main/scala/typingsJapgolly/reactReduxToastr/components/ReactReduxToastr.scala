@@ -1,65 +1,54 @@
 package typingsJapgolly.reactReduxToastr.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactReduxToastr.AnonCancelText
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactReduxToastr.anon.CancelText
 import typingsJapgolly.reactReduxToastr.mod.ReduxToastrProps
 import typingsJapgolly.reactReduxToastr.mod.ToastrState
 import typingsJapgolly.reactReduxToastr.mod.default
 import typingsJapgolly.reactReduxToastr.mod.positionType
 import typingsJapgolly.reactReduxToastr.mod.transitionInType
 import typingsJapgolly.reactReduxToastr.mod.transitionOutType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactReduxToastr {
-  def apply(
-    className: String = null,
-    closeOnToastrClick: js.UndefOr[Boolean] = js.undefined,
-    confirmOptions: AnonCancelText = null,
-    newestOnTop: js.UndefOr[Boolean] = js.undefined,
-    options: js.Any = null,
-    position: positionType = null,
-    preventDuplicates: js.UndefOr[Boolean] = js.undefined,
-    progressBar: js.UndefOr[Boolean] = js.undefined,
-    timeOut: Int | Double = null,
-    toastr: ToastrState = null,
-    transitionIn: transitionInType = null,
-    transitionOut: transitionOutType = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ReduxToastrProps, default, Unit, ReduxToastrProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnToastrClick)) __obj.updateDynamic("closeOnToastrClick")(closeOnToastrClick.asInstanceOf[js.Any])
-    if (confirmOptions != null) __obj.updateDynamic("confirmOptions")(confirmOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(newestOnTop)) __obj.updateDynamic("newestOnTop")(newestOnTop.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventDuplicates)) __obj.updateDynamic("preventDuplicates")(preventDuplicates.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar.asInstanceOf[js.Any])
-    if (timeOut != null) __obj.updateDynamic("timeOut")(timeOut.asInstanceOf[js.Any])
-    if (toastr != null) __obj.updateDynamic("toastr")(toastr.asInstanceOf[js.Any])
-    if (transitionIn != null) __obj.updateDynamic("transitionIn")(transitionIn.asInstanceOf[js.Any])
-    if (transitionOut != null) __obj.updateDynamic("transitionOut")(transitionOut.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactReduxToastr.mod.ReduxToastrProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactReduxToastr.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactReduxToastr.mod.ReduxToastrProps])(children: _*)
-  }
   @JSImport("react-redux-toastr", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def closeOnToastrClick(value: Boolean): this.type = set("closeOnToastrClick", value.asInstanceOf[js.Any])
+    
+    inline def confirmOptions(value: CancelText): this.type = set("confirmOptions", value.asInstanceOf[js.Any])
+    
+    inline def newestOnTop(value: Boolean): this.type = set("newestOnTop", value.asInstanceOf[js.Any])
+    
+    inline def options(value: Any): this.type = set("options", value.asInstanceOf[js.Any])
+    
+    inline def position(value: positionType): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def preventDuplicates(value: Boolean): this.type = set("preventDuplicates", value.asInstanceOf[js.Any])
+    
+    inline def progressBar(value: Boolean): this.type = set("progressBar", value.asInstanceOf[js.Any])
+    
+    inline def timeOut(value: Double): this.type = set("timeOut", value.asInstanceOf[js.Any])
+    
+    inline def toastr(value: ToastrState): this.type = set("toastr", value.asInstanceOf[js.Any])
+    
+    inline def transitionIn(value: transitionInType): this.type = set("transitionIn", value.asInstanceOf[js.Any])
+    
+    inline def transitionOut(value: transitionOutType): this.type = set("transitionOut", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactReduxToastr.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ReduxToastrProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

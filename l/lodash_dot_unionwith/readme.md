@@ -10,10 +10,10 @@ The lodash method `_.unionWith` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.unionwith |
 | Keywords           | lodash-modularized, unionwith |
-| # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 1416781 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 647823.3333333334 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

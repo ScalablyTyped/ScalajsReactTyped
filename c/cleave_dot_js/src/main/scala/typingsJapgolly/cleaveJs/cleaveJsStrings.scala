@@ -1,96 +1,112 @@
 package typingsJapgolly.cleaveJs
 
-import typingsJapgolly.cleaveJs.creditCardMod.CreditCardType
+import typingsJapgolly.cleaveJs.optionsCreditCardMod.CreditCardType
 import typingsJapgolly.cleaveJs.optionsMod.NumeralThousandsGroupStyleType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cleaveJsStrings {
-  @js.native
-  sealed trait amex extends CreditCardType
   
   @js.native
-  sealed trait dankort extends CreditCardType
+  sealed trait amex
+    extends StObject
+       with CreditCardType
+  inline def amex: amex = "amex".asInstanceOf[amex]
   
   @js.native
-  sealed trait diners extends CreditCardType
+  sealed trait dankort
+    extends StObject
+       with CreditCardType
+  inline def dankort: dankort = "dankort".asInstanceOf[dankort]
   
   @js.native
-  sealed trait discover extends CreditCardType
+  sealed trait diners
+    extends StObject
+       with CreditCardType
+  inline def diners: diners = "diners".asInstanceOf[diners]
   
   @js.native
-  sealed trait instapayment extends CreditCardType
+  sealed trait discover
+    extends StObject
+       with CreditCardType
+  inline def discover: discover = "discover".asInstanceOf[discover]
   
   @js.native
-  sealed trait jcb extends CreditCardType
+  sealed trait instapayment
+    extends StObject
+       with CreditCardType
+  inline def instapayment: instapayment = "instapayment".asInstanceOf[instapayment]
   
   @js.native
-  sealed trait lakh extends NumeralThousandsGroupStyleType
+  sealed trait jcb
+    extends StObject
+       with CreditCardType
+  inline def jcb: jcb = "jcb".asInstanceOf[jcb]
   
   @js.native
-  sealed trait maestro extends CreditCardType
+  sealed trait lakh
+    extends StObject
+       with NumeralThousandsGroupStyleType
+  inline def lakh: lakh = "lakh".asInstanceOf[lakh]
   
   @js.native
-  sealed trait mastercard extends CreditCardType
+  sealed trait maestro
+    extends StObject
+       with CreditCardType
+  inline def maestro: maestro = "maestro".asInstanceOf[maestro]
   
   @js.native
-  sealed trait mir extends CreditCardType
+  sealed trait mastercard
+    extends StObject
+       with CreditCardType
+  inline def mastercard: mastercard = "mastercard".asInstanceOf[mastercard]
   
   @js.native
-  sealed trait none extends NumeralThousandsGroupStyleType
+  sealed trait mir
+    extends StObject
+       with CreditCardType
+  inline def mir: mir = "mir".asInstanceOf[mir]
   
   @js.native
-  sealed trait thousand extends NumeralThousandsGroupStyleType
+  sealed trait none
+    extends StObject
+       with NumeralThousandsGroupStyleType
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait uatp extends CreditCardType
+  sealed trait thousand
+    extends StObject
+       with NumeralThousandsGroupStyleType
+  inline def thousand: thousand = "thousand".asInstanceOf[thousand]
   
   @js.native
-  sealed trait unionPay extends CreditCardType
+  sealed trait uatp
+    extends StObject
+       with CreditCardType
+  inline def uatp: uatp = "uatp".asInstanceOf[uatp]
   
   @js.native
-  sealed trait unknown extends CreditCardType
+  sealed trait unionPay
+    extends StObject
+       with CreditCardType
+  inline def unionPay: unionPay = "unionPay".asInstanceOf[unionPay]
   
   @js.native
-  sealed trait visa extends CreditCardType
+  sealed trait unknown
+    extends StObject
+       with CreditCardType
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
-  sealed trait wan extends NumeralThousandsGroupStyleType
+  sealed trait visa
+    extends StObject
+       with CreditCardType
+  inline def visa: visa = "visa".asInstanceOf[visa]
   
-  @scala.inline
-  def amex: amex = "amex".asInstanceOf[amex]
-  @scala.inline
-  def dankort: dankort = "dankort".asInstanceOf[dankort]
-  @scala.inline
-  def diners: diners = "diners".asInstanceOf[diners]
-  @scala.inline
-  def discover: discover = "discover".asInstanceOf[discover]
-  @scala.inline
-  def instapayment: instapayment = "instapayment".asInstanceOf[instapayment]
-  @scala.inline
-  def jcb: jcb = "jcb".asInstanceOf[jcb]
-  @scala.inline
-  def lakh: lakh = "lakh".asInstanceOf[lakh]
-  @scala.inline
-  def maestro: maestro = "maestro".asInstanceOf[maestro]
-  @scala.inline
-  def mastercard: mastercard = "mastercard".asInstanceOf[mastercard]
-  @scala.inline
-  def mir: mir = "mir".asInstanceOf[mir]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def thousand: thousand = "thousand".asInstanceOf[thousand]
-  @scala.inline
-  def uatp: uatp = "uatp".asInstanceOf[uatp]
-  @scala.inline
-  def unionPay: unionPay = "unionPay".asInstanceOf[unionPay]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
-  def visa: visa = "visa".asInstanceOf[visa]
-  @scala.inline
-  def wan: wan = "wan".asInstanceOf[wan]
+  @js.native
+  sealed trait wan
+    extends StObject
+       with NumeralThousandsGroupStyleType
+  inline def wan: wan = "wan".asInstanceOf[wan]
 }
-

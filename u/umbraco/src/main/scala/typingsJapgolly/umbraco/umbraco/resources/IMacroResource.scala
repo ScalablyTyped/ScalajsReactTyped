@@ -1,9 +1,8 @@
 package typingsJapgolly.umbraco.umbraco.resources
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation._
   * @description Deals with data for macros
   *
   **/
-trait IMacroResource extends js.Object {
+trait IMacroResource extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.macroResource#getMacroParameters
@@ -23,7 +23,8 @@ trait IMacroResource extends js.Object {
     * @param {int} macroId The macro id to get parameters for
     *
     */
-  def getMacroParameters(macroId: Double): js.Any
+  def getMacroParameters(macroId: Double): Any
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.macroResource#getMacroResult
@@ -37,19 +38,22 @@ trait IMacroResource extends js.Object {
     * @param {Array} macroParamDictionary A dictionary of macro parameters
     *
     */
-  def getMacroResultAsHtmlForEditor(macroId: Double, pageId: Double, macroParamDictionary: js.Array[_]): js.Any
+  def getMacroResultAsHtmlForEditor(macroId: Double, pageId: Double, macroParamDictionary: js.Array[Any]): Any
 }
-
 object IMacroResource {
-  @scala.inline
-  def apply(
-    getMacroParameters: Double => CallbackTo[js.Any],
-    getMacroResultAsHtmlForEditor: (Double, Double, js.Array[js.Any]) => CallbackTo[js.Any]
+  
+  inline def apply(
+    getMacroParameters: Double => Any,
+    getMacroResultAsHtmlForEditor: (Double, Double, js.Array[Any]) => Any
   ): IMacroResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getMacroParameters")(js.Any.fromFunction1((t0: scala.Double) => getMacroParameters(t0).runNow()))
-    __obj.updateDynamic("getMacroResultAsHtmlForEditor")(js.Any.fromFunction3((t0: scala.Double, t1: scala.Double, t2: js.Array[js.Any]) => getMacroResultAsHtmlForEditor(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(getMacroParameters = js.Any.fromFunction1(getMacroParameters), getMacroResultAsHtmlForEditor = js.Any.fromFunction3(getMacroResultAsHtmlForEditor))
     __obj.asInstanceOf[IMacroResource]
   }
+  
+  extension [Self <: IMacroResource](x: Self) {
+    
+    inline def setGetMacroParameters(value: Double => Any): Self = StObject.set(x, "getMacroParameters", js.Any.fromFunction1(value))
+    
+    inline def setGetMacroResultAsHtmlForEditor(value: (Double, Double, js.Array[Any]) => Any): Self = StObject.set(x, "getMacroResultAsHtmlForEditor", js.Any.fromFunction3(value))
+  }
 }
-

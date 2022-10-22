@@ -1,9 +1,10 @@
 package typingsJapgolly.jweixin.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// 查看公众号（未添加）
 // 传播类
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonappMessage
@@ -14,24 +15,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonfacebook
   - typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonQZone
 */
-trait menuShare extends js.Object
-
+trait menuShare extends StObject
 object menuShare {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def menuItemColonfavorite: typingsJapgolly.jweixin.jweixinStrings.menuItemColonfavorite = this.cast("menuItem:favorite")
-  @scala.inline
-  def menuItemColonshareColonQZone: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonQZone = this.cast("menuItem:share:QZone")
-  @scala.inline
-  def menuItemColonshareColonappMessage: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonappMessage = this.cast("menuItem:share:appMessage")
-  @scala.inline
-  def menuItemColonshareColonfacebook: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonfacebook = this.cast("menuItem:share:facebook")
-  @scala.inline
-  def menuItemColonshareColonqq: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonqq = this.cast("menuItem:share:qq")
-  @scala.inline
-  def menuItemColonshareColontimeline: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColontimeline = this.cast("menuItem:share:timeline")
-  @scala.inline
-  def menuItemColonshareColonweiboApp: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonweiboApp = this.cast("menuItem:share:weiboApp")
+  
+  inline def menuItemColonfavorite: typingsJapgolly.jweixin.jweixinStrings.menuItemColonfavorite = "menuItem:favorite".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColonfavorite]
+  
+  inline def menuItemColonshareColonQZone: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonQZone = "menuItem:share:QZone".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonQZone]
+  
+  inline def menuItemColonshareColonappMessage: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonappMessage = "menuItem:share:appMessage".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonappMessage]
+  
+  inline def menuItemColonshareColonfacebook: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonfacebook = "menuItem:share:facebook".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonfacebook]
+  
+  inline def menuItemColonshareColonqq: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonqq = "menuItem:share:qq".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonqq]
+  
+  inline def menuItemColonshareColontimeline: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColontimeline = "menuItem:share:timeline".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColontimeline]
+  
+  inline def menuItemColonshareColonweiboApp: typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonweiboApp = "menuItem:share:weiboApp".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.menuItemColonshareColonweiboApp]
 }
-

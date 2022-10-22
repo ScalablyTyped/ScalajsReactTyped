@@ -1,17 +1,19 @@
 package typingsJapgolly.node.tlsMod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SecureContextOptions extends js.Object {
+trait SecureContextOptions extends StObject {
+  
   /**
     * Optionally override the trusted CA certificates. Default is to trust
     * the well-known CAs curated by Mozilla. Mozilla's CAs are completely
     * replaced when CAs are explicitly specified using this option.
     */
   var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
+  
   /**
     *  Cert chains in PEM format. One cert chain should be provided per
     *  private key. Each cert chain should consist of the PEM formatted
@@ -24,6 +26,7 @@ trait SecureContextOptions extends js.Object {
     *  able to validate the certificate, and the handshake will fail.
     */
   var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
+  
   /**
     * Cipher suite specification, replacing the default. For more
     * information, see modifying the default cipher suite. Permitted
@@ -31,14 +34,17 @@ trait SecureContextOptions extends js.Object {
     * uppercased in order for OpenSSL to accept them.
     */
   var ciphers: js.UndefOr[String] = js.undefined
+  
   /**
     * Name of an OpenSSL engine which can provide the client certificate.
     */
   var clientCertEngine: js.UndefOr[String] = js.undefined
+  
   /**
     * PEM formatted CRLs (Certificate Revocation Lists).
     */
   var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
+  
   /**
     * Diffie Hellman parameters, required for Perfect Forward Secrecy. Use
     * openssl dhparam to create the parameters. The key length must be
@@ -48,6 +54,7 @@ trait SecureContextOptions extends js.Object {
     * silently discarded and DHE ciphers will not be available.
     */
   var dhparam: js.UndefOr[String | Buffer] = js.undefined
+  
   /**
     * A string describing a named curve or a colon separated list of curve
     * NIDs or names, for example P-521:P-384:P-256, to use for ECDH key
@@ -58,12 +65,14 @@ trait SecureContextOptions extends js.Object {
     * tls.DEFAULT_ECDH_CURVE.
     */
   var ecdhCurve: js.UndefOr[String] = js.undefined
+  
   /**
     * Attempt to use the server's cipher suite preferences instead of the
     * client's. When true, causes SSL_OP_CIPHER_SERVER_PREFERENCE to be
     * set in secureOptions
     */
   var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Private keys in PEM format. PEM allows the option of private keys
     * being encrypted. Encrypted keys will be decrypted with
@@ -74,7 +83,8 @@ trait SecureContextOptions extends js.Object {
     * object.passphrase is optional. Encrypted keys will be decrypted with
     * object.passphrase if provided, or options.passphrase if it is not.
     */
-  var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.undefined
+  var key: js.UndefOr[String | Buffer | (js.Array[String | Buffer | KeyObject])] = js.undefined
+  
   /**
     * Optionally set the maximum TLS version to allow. One
     * of `'TLSv1.3'`, `'TLSv1.2'`, `'TLSv1.1'`, or `'TLSv1'`. Cannot be specified along with the
@@ -84,6 +94,7 @@ trait SecureContextOptions extends js.Object {
     * `'TLSv1.3'`. If multiple of the options are provided, the highest maximum is used.
     */
   var maxVersion: js.UndefOr[SecureVersion] = js.undefined
+  
   /**
     * Optionally set the minimum TLS version to allow. One
     * of `'TLSv1.3'`, `'TLSv1.2'`, `'TLSv1.1'`, or `'TLSv1'`. Cannot be specified along with the
@@ -95,10 +106,12 @@ trait SecureContextOptions extends js.Object {
     * 'TLSv1.3'. If multiple of the options are provided, the lowest minimum is used.
     */
   var minVersion: js.UndefOr[SecureVersion] = js.undefined
+  
   /**
     * Shared passphrase used for a single private key and/or a PFX.
     */
   var passphrase: js.UndefOr[String] = js.undefined
+  
   /**
     * PFX or PKCS12 encoded private key and certificate chain. pfx is an
     * alternative to providing key and cert individually. PFX is usually
@@ -110,24 +123,28 @@ trait SecureContextOptions extends js.Object {
     * object.passphrase if provided, or options.passphrase if it is not.
     */
   var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.undefined
+  
   /**
     * Name of an OpenSSL engine to get private key from. Should be used
     * together with privateKeyIdentifier.
     */
   var privateKeyEngine: js.UndefOr[String] = js.undefined
+  
   /**
     * Identifier of a private key managed by an OpenSSL engine. Should be
     * used together with privateKeyEngine. Should not be set together with
     * key, because both options define a private key in different ways.
     */
   var privateKeyIdentifier: js.UndefOr[String] = js.undefined
+  
   /**
     * Optionally affect the OpenSSL protocol behavior, which is not
     * usually necessary. This should be used carefully if at all! Value is
     * a numeric bitmask of the SSL_OP_* options from OpenSSL Options
     */
   var secureOptions: js.UndefOr[Double] = js.undefined
-   // Value is a numeric bitmask of the `SSL_OP_*` options
+  
+  // Value is a numeric bitmask of the `SSL_OP_*` options
   /**
     * Legacy mechanism to select the TLS protocol version to use, it does
     * not support independent control of the minimum and maximum version,
@@ -140,11 +157,20 @@ trait SecureContextOptions extends js.Object {
     * interoperability. Default: none, see minVersion.
     */
   var secureProtocol: js.UndefOr[String] = js.undefined
+  
   /**
     * Opaque identifier used by servers to ensure session state is not
     * shared between applications. Unused by clients.
     */
   var sessionIdContext: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The number of seconds after which a TLS session created by the
+    * server will no longer be resumable. See Session Resumption for more
+    * information. Default: 300.
+    */
+  var sessionTimeout: js.UndefOr[Double] = js.undefined
+  
   /**
     *  Colon-separated list of supported signature algorithms. The list
     *  can contain digest algorithms (SHA256, MD5 etc.), public key
@@ -152,52 +178,114 @@ trait SecureContextOptions extends js.Object {
     *  'RSA+SHA384') or TLS v1.3 scheme names (e.g. rsa_pss_pss_sha512).
     */
   var sigalgs: js.UndefOr[String] = js.undefined
+  
+  /**
+    * 48-bytes of cryptographically strong pseudo-random data.
+    * See Session Resumption for more information.
+    */
+  var ticketKeys: js.UndefOr[Buffer] = js.undefined
 }
-
 object SecureContextOptions {
-  @scala.inline
-  def apply(
-    ca: String | Buffer | (js.Array[String | Buffer]) = null,
-    cert: String | Buffer | (js.Array[String | Buffer]) = null,
-    ciphers: String = null,
-    clientCertEngine: String = null,
-    crl: String | Buffer | (js.Array[String | Buffer]) = null,
-    dhparam: String | Buffer = null,
-    ecdhCurve: String = null,
-    honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
-    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
-    maxVersion: SecureVersion = null,
-    minVersion: SecureVersion = null,
-    passphrase: String = null,
-    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
-    privateKeyEngine: String = null,
-    privateKeyIdentifier: String = null,
-    secureOptions: Int | Double = null,
-    secureProtocol: String = null,
-    sessionIdContext: String = null,
-    sigalgs: String = null
-  ): SecureContextOptions = {
+  
+  inline def apply(): SecureContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
-    if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine.asInstanceOf[js.Any])
-    if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
-    if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
-    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve.asInstanceOf[js.Any])
-    if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
-    if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
-    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
-    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
-    if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions.asInstanceOf[js.Any])
-    if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol.asInstanceOf[js.Any])
-    if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
-    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecureContextOptions]
   }
+  
+  extension [Self <: SecureContextOptions](x: Self) {
+    
+    inline def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+    
+    inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
+    
+    inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value*))
+    
+    inline def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    
+    inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+    
+    inline def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value*))
+    
+    inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
+    
+    inline def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
+    
+    inline def setClientCertEngine(value: String): Self = StObject.set(x, "clientCertEngine", value.asInstanceOf[js.Any])
+    
+    inline def setClientCertEngineUndefined: Self = StObject.set(x, "clientCertEngine", js.undefined)
+    
+    inline def setCrl(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
+    
+    inline def setCrlUndefined: Self = StObject.set(x, "crl", js.undefined)
+    
+    inline def setCrlVarargs(value: (String | Buffer)*): Self = StObject.set(x, "crl", js.Array(value*))
+    
+    inline def setDhparam(value: String | Buffer): Self = StObject.set(x, "dhparam", value.asInstanceOf[js.Any])
+    
+    inline def setDhparamUndefined: Self = StObject.set(x, "dhparam", js.undefined)
+    
+    inline def setEcdhCurve(value: String): Self = StObject.set(x, "ecdhCurve", value.asInstanceOf[js.Any])
+    
+    inline def setEcdhCurveUndefined: Self = StObject.set(x, "ecdhCurve", js.undefined)
+    
+    inline def setHonorCipherOrder(value: Boolean): Self = StObject.set(x, "honorCipherOrder", value.asInstanceOf[js.Any])
+    
+    inline def setHonorCipherOrderUndefined: Self = StObject.set(x, "honorCipherOrder", js.undefined)
+    
+    inline def setKey(value: String | Buffer | (js.Array[String | Buffer | KeyObject])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setKeyVarargs(value: (String | Buffer | KeyObject)*): Self = StObject.set(x, "key", js.Array(value*))
+    
+    inline def setMaxVersion(value: SecureVersion): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
+    
+    inline def setMaxVersionUndefined: Self = StObject.set(x, "maxVersion", js.undefined)
+    
+    inline def setMinVersion(value: SecureVersion): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
+    
+    inline def setMinVersionUndefined: Self = StObject.set(x, "minVersion", js.undefined)
+    
+    inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+    
+    inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+    
+    inline def setPfx(value: String | Buffer | (js.Array[String | Buffer | PxfObject])): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+    
+    inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
+    
+    inline def setPfxVarargs(value: (String | Buffer | PxfObject)*): Self = StObject.set(x, "pfx", js.Array(value*))
+    
+    inline def setPrivateKeyEngine(value: String): Self = StObject.set(x, "privateKeyEngine", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateKeyEngineUndefined: Self = StObject.set(x, "privateKeyEngine", js.undefined)
+    
+    inline def setPrivateKeyIdentifier(value: String): Self = StObject.set(x, "privateKeyIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateKeyIdentifierUndefined: Self = StObject.set(x, "privateKeyIdentifier", js.undefined)
+    
+    inline def setSecureOptions(value: Double): Self = StObject.set(x, "secureOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSecureOptionsUndefined: Self = StObject.set(x, "secureOptions", js.undefined)
+    
+    inline def setSecureProtocol(value: String): Self = StObject.set(x, "secureProtocol", value.asInstanceOf[js.Any])
+    
+    inline def setSecureProtocolUndefined: Self = StObject.set(x, "secureProtocol", js.undefined)
+    
+    inline def setSessionIdContext(value: String): Self = StObject.set(x, "sessionIdContext", value.asInstanceOf[js.Any])
+    
+    inline def setSessionIdContextUndefined: Self = StObject.set(x, "sessionIdContext", js.undefined)
+    
+    inline def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
+    
+    inline def setSigalgs(value: String): Self = StObject.set(x, "sigalgs", value.asInstanceOf[js.Any])
+    
+    inline def setSigalgsUndefined: Self = StObject.set(x, "sigalgs", js.undefined)
+    
+    inline def setTicketKeys(value: Buffer): Self = StObject.set(x, "ticketKeys", value.asInstanceOf[js.Any])
+    
+    inline def setTicketKeysUndefined: Self = StObject.set(x, "ticketKeys", js.undefined)
+  }
 }
-

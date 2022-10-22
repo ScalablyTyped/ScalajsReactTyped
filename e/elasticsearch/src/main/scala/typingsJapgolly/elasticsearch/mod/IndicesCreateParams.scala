@@ -1,44 +1,54 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IndicesCreateParams extends GenericParams {
+trait IndicesCreateParams
+  extends StObject
+     with GenericParams {
+  
+  var includeTypeName: js.UndefOr[Boolean] = js.undefined
+  
   var index: String
+  
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
+  
   var timeout: js.UndefOr[TimeSpan] = js.undefined
+  
   var updateAllTypes: js.UndefOr[Boolean] = js.undefined
+  
   var waitForActiveShards: js.UndefOr[String] = js.undefined
 }
-
 object IndicesCreateParams {
-  @scala.inline
-  def apply(
-    index: String,
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    masterTimeout: TimeSpan = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    requestTimeout: Int | Double = null,
-    timeout: TimeSpan = null,
-    updateAllTypes: js.UndefOr[Boolean] = js.undefined,
-    waitForActiveShards: String = null
-  ): IndicesCreateParams = {
+  
+  inline def apply(index: String): IndicesCreateParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateAllTypes)) __obj.updateDynamic("updateAllTypes")(updateAllTypes.asInstanceOf[js.Any])
-    if (waitForActiveShards != null) __obj.updateDynamic("waitForActiveShards")(waitForActiveShards.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesCreateParams]
   }
+  
+  extension [Self <: IndicesCreateParams](x: Self) {
+    
+    inline def setIncludeTypeName(value: Boolean): Self = StObject.set(x, "includeTypeName", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeTypeNameUndefined: Self = StObject.set(x, "includeTypeName", js.undefined)
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    
+    inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setUpdateAllTypes(value: Boolean): Self = StObject.set(x, "updateAllTypes", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateAllTypesUndefined: Self = StObject.set(x, "updateAllTypes", js.undefined)
+    
+    inline def setWaitForActiveShards(value: String): Self = StObject.set(x, "waitForActiveShards", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForActiveShardsUndefined: Self = StObject.set(x, "waitForActiveShards", js.undefined)
+  }
 }
-

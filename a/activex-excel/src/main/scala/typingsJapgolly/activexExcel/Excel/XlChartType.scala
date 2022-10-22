@@ -1,307 +1,303 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4098`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4100`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4101`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4102`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4120`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4151`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4169`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`100`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`101`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`102`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`103`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`104`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`105`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`106`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`107`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`108`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`109`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`110`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`111`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`112`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`15`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`51`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`52`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`53`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`54`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`55`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`56`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`57`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`58`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`59`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`60`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`61`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`62`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`63`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`64`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`65`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`66`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`67`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`68`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`69`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`70`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`71`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`72`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`73`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`74`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`75`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`76`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`77`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`78`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`79`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`80`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`81`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`82`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`83`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`84`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`85`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`86`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`87`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`88`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`89`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`90`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`91`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`92`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`93`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`94`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`95`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`96`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`97`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`98`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`99`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4098`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4100`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4101`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4102`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4120`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4151`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4169`
+import typingsJapgolly.activexExcel.activexExcelInts.`100`
+import typingsJapgolly.activexExcel.activexExcelInts.`101`
+import typingsJapgolly.activexExcel.activexExcelInts.`102`
+import typingsJapgolly.activexExcel.activexExcelInts.`103`
+import typingsJapgolly.activexExcel.activexExcelInts.`104`
+import typingsJapgolly.activexExcel.activexExcelInts.`105`
+import typingsJapgolly.activexExcel.activexExcelInts.`106`
+import typingsJapgolly.activexExcel.activexExcelInts.`107`
+import typingsJapgolly.activexExcel.activexExcelInts.`108`
+import typingsJapgolly.activexExcel.activexExcelInts.`109`
+import typingsJapgolly.activexExcel.activexExcelInts.`110`
+import typingsJapgolly.activexExcel.activexExcelInts.`111`
+import typingsJapgolly.activexExcel.activexExcelInts.`112`
+import typingsJapgolly.activexExcel.activexExcelInts.`15`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`4`
+import typingsJapgolly.activexExcel.activexExcelInts.`51`
+import typingsJapgolly.activexExcel.activexExcelInts.`52`
+import typingsJapgolly.activexExcel.activexExcelInts.`53`
+import typingsJapgolly.activexExcel.activexExcelInts.`54`
+import typingsJapgolly.activexExcel.activexExcelInts.`55`
+import typingsJapgolly.activexExcel.activexExcelInts.`56`
+import typingsJapgolly.activexExcel.activexExcelInts.`57`
+import typingsJapgolly.activexExcel.activexExcelInts.`58`
+import typingsJapgolly.activexExcel.activexExcelInts.`59`
+import typingsJapgolly.activexExcel.activexExcelInts.`5`
+import typingsJapgolly.activexExcel.activexExcelInts.`60`
+import typingsJapgolly.activexExcel.activexExcelInts.`61`
+import typingsJapgolly.activexExcel.activexExcelInts.`62`
+import typingsJapgolly.activexExcel.activexExcelInts.`63`
+import typingsJapgolly.activexExcel.activexExcelInts.`64`
+import typingsJapgolly.activexExcel.activexExcelInts.`65`
+import typingsJapgolly.activexExcel.activexExcelInts.`66`
+import typingsJapgolly.activexExcel.activexExcelInts.`67`
+import typingsJapgolly.activexExcel.activexExcelInts.`68`
+import typingsJapgolly.activexExcel.activexExcelInts.`69`
+import typingsJapgolly.activexExcel.activexExcelInts.`70`
+import typingsJapgolly.activexExcel.activexExcelInts.`71`
+import typingsJapgolly.activexExcel.activexExcelInts.`72`
+import typingsJapgolly.activexExcel.activexExcelInts.`73`
+import typingsJapgolly.activexExcel.activexExcelInts.`74`
+import typingsJapgolly.activexExcel.activexExcelInts.`75`
+import typingsJapgolly.activexExcel.activexExcelInts.`76`
+import typingsJapgolly.activexExcel.activexExcelInts.`77`
+import typingsJapgolly.activexExcel.activexExcelInts.`78`
+import typingsJapgolly.activexExcel.activexExcelInts.`79`
+import typingsJapgolly.activexExcel.activexExcelInts.`80`
+import typingsJapgolly.activexExcel.activexExcelInts.`81`
+import typingsJapgolly.activexExcel.activexExcelInts.`82`
+import typingsJapgolly.activexExcel.activexExcelInts.`83`
+import typingsJapgolly.activexExcel.activexExcelInts.`84`
+import typingsJapgolly.activexExcel.activexExcelInts.`85`
+import typingsJapgolly.activexExcel.activexExcelInts.`86`
+import typingsJapgolly.activexExcel.activexExcelInts.`87`
+import typingsJapgolly.activexExcel.activexExcelInts.`88`
+import typingsJapgolly.activexExcel.activexExcelInts.`89`
+import typingsJapgolly.activexExcel.activexExcelInts.`90`
+import typingsJapgolly.activexExcel.activexExcelInts.`91`
+import typingsJapgolly.activexExcel.activexExcelInts.`92`
+import typingsJapgolly.activexExcel.activexExcelInts.`93`
+import typingsJapgolly.activexExcel.activexExcelInts.`94`
+import typingsJapgolly.activexExcel.activexExcelInts.`95`
+import typingsJapgolly.activexExcel.activexExcelInts.`96`
+import typingsJapgolly.activexExcel.activexExcelInts.`97`
+import typingsJapgolly.activexExcel.activexExcelInts.`98`
+import typingsJapgolly.activexExcel.activexExcelInts.`99`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4098`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`78`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`79`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`60`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`61`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`62`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4100`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`54`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`55`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`56`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4101`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4102`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`70`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`76`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`77`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`57`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`71`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`58`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`59`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`15`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`87`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`51`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`52`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`53`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`102`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`103`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`104`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`105`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`99`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`100`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`101`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`95`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`96`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`97`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`98`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`92`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`93`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`94`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4120`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`80`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`65`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`66`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`67`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`63`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`64`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`69`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`68`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`109`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`110`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`111`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`112`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`106`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`107`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`108`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4151`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`82`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`81`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`88`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`89`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`90`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`91`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`83`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`85`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`86`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`84`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4169`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`74`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`75`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`72`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`73`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4098`
+  - typingsJapgolly.activexExcel.activexExcelInts.`78`
+  - typingsJapgolly.activexExcel.activexExcelInts.`79`
+  - typingsJapgolly.activexExcel.activexExcelInts.`60`
+  - typingsJapgolly.activexExcel.activexExcelInts.`61`
+  - typingsJapgolly.activexExcel.activexExcelInts.`62`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4100`
+  - typingsJapgolly.activexExcel.activexExcelInts.`54`
+  - typingsJapgolly.activexExcel.activexExcelInts.`55`
+  - typingsJapgolly.activexExcel.activexExcelInts.`56`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4101`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4102`
+  - typingsJapgolly.activexExcel.activexExcelInts.`70`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`76`
+  - typingsJapgolly.activexExcel.activexExcelInts.`77`
+  - typingsJapgolly.activexExcel.activexExcelInts.`57`
+  - typingsJapgolly.activexExcel.activexExcelInts.`71`
+  - typingsJapgolly.activexExcel.activexExcelInts.`58`
+  - typingsJapgolly.activexExcel.activexExcelInts.`59`
+  - typingsJapgolly.activexExcel.activexExcelInts.`15`
+  - typingsJapgolly.activexExcel.activexExcelInts.`87`
+  - typingsJapgolly.activexExcel.activexExcelInts.`51`
+  - typingsJapgolly.activexExcel.activexExcelInts.`52`
+  - typingsJapgolly.activexExcel.activexExcelInts.`53`
+  - typingsJapgolly.activexExcel.activexExcelInts.`102`
+  - typingsJapgolly.activexExcel.activexExcelInts.`103`
+  - typingsJapgolly.activexExcel.activexExcelInts.`104`
+  - typingsJapgolly.activexExcel.activexExcelInts.`105`
+  - typingsJapgolly.activexExcel.activexExcelInts.`99`
+  - typingsJapgolly.activexExcel.activexExcelInts.`100`
+  - typingsJapgolly.activexExcel.activexExcelInts.`101`
+  - typingsJapgolly.activexExcel.activexExcelInts.`95`
+  - typingsJapgolly.activexExcel.activexExcelInts.`96`
+  - typingsJapgolly.activexExcel.activexExcelInts.`97`
+  - typingsJapgolly.activexExcel.activexExcelInts.`98`
+  - typingsJapgolly.activexExcel.activexExcelInts.`92`
+  - typingsJapgolly.activexExcel.activexExcelInts.`93`
+  - typingsJapgolly.activexExcel.activexExcelInts.`94`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4120`
+  - typingsJapgolly.activexExcel.activexExcelInts.`80`
+  - typingsJapgolly.activexExcel.activexExcelInts.`4`
+  - typingsJapgolly.activexExcel.activexExcelInts.`65`
+  - typingsJapgolly.activexExcel.activexExcelInts.`66`
+  - typingsJapgolly.activexExcel.activexExcelInts.`67`
+  - typingsJapgolly.activexExcel.activexExcelInts.`63`
+  - typingsJapgolly.activexExcel.activexExcelInts.`64`
+  - typingsJapgolly.activexExcel.activexExcelInts.`5`
+  - typingsJapgolly.activexExcel.activexExcelInts.`69`
+  - typingsJapgolly.activexExcel.activexExcelInts.`68`
+  - typingsJapgolly.activexExcel.activexExcelInts.`109`
+  - typingsJapgolly.activexExcel.activexExcelInts.`110`
+  - typingsJapgolly.activexExcel.activexExcelInts.`111`
+  - typingsJapgolly.activexExcel.activexExcelInts.`112`
+  - typingsJapgolly.activexExcel.activexExcelInts.`106`
+  - typingsJapgolly.activexExcel.activexExcelInts.`107`
+  - typingsJapgolly.activexExcel.activexExcelInts.`108`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4151`
+  - typingsJapgolly.activexExcel.activexExcelInts.`82`
+  - typingsJapgolly.activexExcel.activexExcelInts.`81`
+  - typingsJapgolly.activexExcel.activexExcelInts.`88`
+  - typingsJapgolly.activexExcel.activexExcelInts.`89`
+  - typingsJapgolly.activexExcel.activexExcelInts.`90`
+  - typingsJapgolly.activexExcel.activexExcelInts.`91`
+  - typingsJapgolly.activexExcel.activexExcelInts.`83`
+  - typingsJapgolly.activexExcel.activexExcelInts.`85`
+  - typingsJapgolly.activexExcel.activexExcelInts.`86`
+  - typingsJapgolly.activexExcel.activexExcelInts.`84`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4169`
+  - typingsJapgolly.activexExcel.activexExcelInts.`74`
+  - typingsJapgolly.activexExcel.activexExcelInts.`75`
+  - typingsJapgolly.activexExcel.activexExcelInts.`72`
+  - typingsJapgolly.activexExcel.activexExcelInts.`73`
 */
-trait XlChartType extends js.Object
-
+trait XlChartType extends StObject
 object XlChartType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xl3DArea: `-4098` = this.cast(-4098)
-  @scala.inline
-  def xl3DAreaStacked: `78` = this.cast(78)
-  @scala.inline
-  def xl3DAreaStacked100: `79` = this.cast(79)
-  @scala.inline
-  def xl3DBarClustered: `60` = this.cast(60)
-  @scala.inline
-  def xl3DBarStacked: `61` = this.cast(61)
-  @scala.inline
-  def xl3DBarStacked100: `62` = this.cast(62)
-  @scala.inline
-  def xl3DColumn: `-4100` = this.cast(-4100)
-  @scala.inline
-  def xl3DColumnClustered: `54` = this.cast(54)
-  @scala.inline
-  def xl3DColumnStacked: `55` = this.cast(55)
-  @scala.inline
-  def xl3DColumnStacked100: `56` = this.cast(56)
-  @scala.inline
-  def xl3DLine: `-4101` = this.cast(-4101)
-  @scala.inline
-  def xl3DPie: `-4102` = this.cast(-4102)
-  @scala.inline
-  def xl3DPieExploded: `70` = this.cast(70)
-  @scala.inline
-  def xlArea: `1` = this.cast(1)
-  @scala.inline
-  def xlAreaStacked: `76` = this.cast(76)
-  @scala.inline
-  def xlAreaStacked100: `77` = this.cast(77)
-  @scala.inline
-  def xlBarClustered: `57` = this.cast(57)
-  @scala.inline
-  def xlBarOfPie: `71` = this.cast(71)
-  @scala.inline
-  def xlBarStacked: `58` = this.cast(58)
-  @scala.inline
-  def xlBarStacked100: `59` = this.cast(59)
-  @scala.inline
-  def xlBubble: `15` = this.cast(15)
-  @scala.inline
-  def xlBubble3DEffect: `87` = this.cast(87)
-  @scala.inline
-  def xlColumnClustered: `51` = this.cast(51)
-  @scala.inline
-  def xlColumnStacked: `52` = this.cast(52)
-  @scala.inline
-  def xlColumnStacked100: `53` = this.cast(53)
-  @scala.inline
-  def xlConeBarClustered: `102` = this.cast(102)
-  @scala.inline
-  def xlConeBarStacked: `103` = this.cast(103)
-  @scala.inline
-  def xlConeBarStacked100: `104` = this.cast(104)
-  @scala.inline
-  def xlConeCol: `105` = this.cast(105)
-  @scala.inline
-  def xlConeColClustered: `99` = this.cast(99)
-  @scala.inline
-  def xlConeColStacked: `100` = this.cast(100)
-  @scala.inline
-  def xlConeColStacked100: `101` = this.cast(101)
-  @scala.inline
-  def xlCylinderBarClustered: `95` = this.cast(95)
-  @scala.inline
-  def xlCylinderBarStacked: `96` = this.cast(96)
-  @scala.inline
-  def xlCylinderBarStacked100: `97` = this.cast(97)
-  @scala.inline
-  def xlCylinderCol: `98` = this.cast(98)
-  @scala.inline
-  def xlCylinderColClustered: `92` = this.cast(92)
-  @scala.inline
-  def xlCylinderColStacked: `93` = this.cast(93)
-  @scala.inline
-  def xlCylinderColStacked100: `94` = this.cast(94)
-  @scala.inline
-  def xlDoughnut: `-4120` = this.cast(-4120)
-  @scala.inline
-  def xlDoughnutExploded: `80` = this.cast(80)
-  @scala.inline
-  def xlLine: `4` = this.cast(4)
-  @scala.inline
-  def xlLineMarkers: `65` = this.cast(65)
-  @scala.inline
-  def xlLineMarkersStacked: `66` = this.cast(66)
-  @scala.inline
-  def xlLineMarkersStacked100: `67` = this.cast(67)
-  @scala.inline
-  def xlLineStacked: `63` = this.cast(63)
-  @scala.inline
-  def xlLineStacked100: `64` = this.cast(64)
-  @scala.inline
-  def xlPie: `5` = this.cast(5)
-  @scala.inline
-  def xlPieExploded: `69` = this.cast(69)
-  @scala.inline
-  def xlPieOfPie: `68` = this.cast(68)
-  @scala.inline
-  def xlPyramidBarClustered: `109` = this.cast(109)
-  @scala.inline
-  def xlPyramidBarStacked: `110` = this.cast(110)
-  @scala.inline
-  def xlPyramidBarStacked100: `111` = this.cast(111)
-  @scala.inline
-  def xlPyramidCol: `112` = this.cast(112)
-  @scala.inline
-  def xlPyramidColClustered: `106` = this.cast(106)
-  @scala.inline
-  def xlPyramidColStacked: `107` = this.cast(107)
-  @scala.inline
-  def xlPyramidColStacked100: `108` = this.cast(108)
-  @scala.inline
-  def xlRadar: `-4151` = this.cast(-4151)
-  @scala.inline
-  def xlRadarFilled: `82` = this.cast(82)
-  @scala.inline
-  def xlRadarMarkers: `81` = this.cast(81)
-  @scala.inline
-  def xlStockHLC: `88` = this.cast(88)
-  @scala.inline
-  def xlStockOHLC: `89` = this.cast(89)
-  @scala.inline
-  def xlStockVHLC: `90` = this.cast(90)
-  @scala.inline
-  def xlStockVOHLC: `91` = this.cast(91)
-  @scala.inline
-  def xlSurface: `83` = this.cast(83)
-  @scala.inline
-  def xlSurfaceTopView: `85` = this.cast(85)
-  @scala.inline
-  def xlSurfaceTopViewWireframe: `86` = this.cast(86)
-  @scala.inline
-  def xlSurfaceWireframe: `84` = this.cast(84)
-  @scala.inline
-  def xlXYScatter: `-4169` = this.cast(-4169)
-  @scala.inline
-  def xlXYScatterLines: `74` = this.cast(74)
-  @scala.inline
-  def xlXYScatterLinesNoMarkers: `75` = this.cast(75)
-  @scala.inline
-  def xlXYScatterSmooth: `72` = this.cast(72)
-  @scala.inline
-  def xlXYScatterSmoothNoMarkers: `73` = this.cast(73)
+  
+  inline def xl3DArea: `-4098` = -4098.asInstanceOf[`-4098`]
+  
+  inline def xl3DAreaStacked: `78` = 78.asInstanceOf[`78`]
+  
+  inline def xl3DAreaStacked100: `79` = 79.asInstanceOf[`79`]
+  
+  inline def xl3DBarClustered: `60` = 60.asInstanceOf[`60`]
+  
+  inline def xl3DBarStacked: `61` = 61.asInstanceOf[`61`]
+  
+  inline def xl3DBarStacked100: `62` = 62.asInstanceOf[`62`]
+  
+  inline def xl3DColumn: `-4100` = -4100.asInstanceOf[`-4100`]
+  
+  inline def xl3DColumnClustered: `54` = 54.asInstanceOf[`54`]
+  
+  inline def xl3DColumnStacked: `55` = 55.asInstanceOf[`55`]
+  
+  inline def xl3DColumnStacked100: `56` = 56.asInstanceOf[`56`]
+  
+  inline def xl3DLine: `-4101` = -4101.asInstanceOf[`-4101`]
+  
+  inline def xl3DPie: `-4102` = -4102.asInstanceOf[`-4102`]
+  
+  inline def xl3DPieExploded: `70` = 70.asInstanceOf[`70`]
+  
+  inline def xlArea: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlAreaStacked: `76` = 76.asInstanceOf[`76`]
+  
+  inline def xlAreaStacked100: `77` = 77.asInstanceOf[`77`]
+  
+  inline def xlBarClustered: `57` = 57.asInstanceOf[`57`]
+  
+  inline def xlBarOfPie: `71` = 71.asInstanceOf[`71`]
+  
+  inline def xlBarStacked: `58` = 58.asInstanceOf[`58`]
+  
+  inline def xlBarStacked100: `59` = 59.asInstanceOf[`59`]
+  
+  inline def xlBubble: `15` = 15.asInstanceOf[`15`]
+  
+  inline def xlBubble3DEffect: `87` = 87.asInstanceOf[`87`]
+  
+  inline def xlColumnClustered: `51` = 51.asInstanceOf[`51`]
+  
+  inline def xlColumnStacked: `52` = 52.asInstanceOf[`52`]
+  
+  inline def xlColumnStacked100: `53` = 53.asInstanceOf[`53`]
+  
+  inline def xlConeBarClustered: `102` = 102.asInstanceOf[`102`]
+  
+  inline def xlConeBarStacked: `103` = 103.asInstanceOf[`103`]
+  
+  inline def xlConeBarStacked100: `104` = 104.asInstanceOf[`104`]
+  
+  inline def xlConeCol: `105` = 105.asInstanceOf[`105`]
+  
+  inline def xlConeColClustered: `99` = 99.asInstanceOf[`99`]
+  
+  inline def xlConeColStacked: `100` = 100.asInstanceOf[`100`]
+  
+  inline def xlConeColStacked100: `101` = 101.asInstanceOf[`101`]
+  
+  inline def xlCylinderBarClustered: `95` = 95.asInstanceOf[`95`]
+  
+  inline def xlCylinderBarStacked: `96` = 96.asInstanceOf[`96`]
+  
+  inline def xlCylinderBarStacked100: `97` = 97.asInstanceOf[`97`]
+  
+  inline def xlCylinderCol: `98` = 98.asInstanceOf[`98`]
+  
+  inline def xlCylinderColClustered: `92` = 92.asInstanceOf[`92`]
+  
+  inline def xlCylinderColStacked: `93` = 93.asInstanceOf[`93`]
+  
+  inline def xlCylinderColStacked100: `94` = 94.asInstanceOf[`94`]
+  
+  inline def xlDoughnut: `-4120` = -4120.asInstanceOf[`-4120`]
+  
+  inline def xlDoughnutExploded: `80` = 80.asInstanceOf[`80`]
+  
+  inline def xlLine: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlLineMarkers: `65` = 65.asInstanceOf[`65`]
+  
+  inline def xlLineMarkersStacked: `66` = 66.asInstanceOf[`66`]
+  
+  inline def xlLineMarkersStacked100: `67` = 67.asInstanceOf[`67`]
+  
+  inline def xlLineStacked: `63` = 63.asInstanceOf[`63`]
+  
+  inline def xlLineStacked100: `64` = 64.asInstanceOf[`64`]
+  
+  inline def xlPie: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlPieExploded: `69` = 69.asInstanceOf[`69`]
+  
+  inline def xlPieOfPie: `68` = 68.asInstanceOf[`68`]
+  
+  inline def xlPyramidBarClustered: `109` = 109.asInstanceOf[`109`]
+  
+  inline def xlPyramidBarStacked: `110` = 110.asInstanceOf[`110`]
+  
+  inline def xlPyramidBarStacked100: `111` = 111.asInstanceOf[`111`]
+  
+  inline def xlPyramidCol: `112` = 112.asInstanceOf[`112`]
+  
+  inline def xlPyramidColClustered: `106` = 106.asInstanceOf[`106`]
+  
+  inline def xlPyramidColStacked: `107` = 107.asInstanceOf[`107`]
+  
+  inline def xlPyramidColStacked100: `108` = 108.asInstanceOf[`108`]
+  
+  inline def xlRadar: `-4151` = -4151.asInstanceOf[`-4151`]
+  
+  inline def xlRadarFilled: `82` = 82.asInstanceOf[`82`]
+  
+  inline def xlRadarMarkers: `81` = 81.asInstanceOf[`81`]
+  
+  inline def xlStockHLC: `88` = 88.asInstanceOf[`88`]
+  
+  inline def xlStockOHLC: `89` = 89.asInstanceOf[`89`]
+  
+  inline def xlStockVHLC: `90` = 90.asInstanceOf[`90`]
+  
+  inline def xlStockVOHLC: `91` = 91.asInstanceOf[`91`]
+  
+  inline def xlSurface: `83` = 83.asInstanceOf[`83`]
+  
+  inline def xlSurfaceTopView: `85` = 85.asInstanceOf[`85`]
+  
+  inline def xlSurfaceTopViewWireframe: `86` = 86.asInstanceOf[`86`]
+  
+  inline def xlSurfaceWireframe: `84` = 84.asInstanceOf[`84`]
+  
+  inline def xlXYScatter: `-4169` = -4169.asInstanceOf[`-4169`]
+  
+  inline def xlXYScatterLines: `74` = 74.asInstanceOf[`74`]
+  
+  inline def xlXYScatterLinesNoMarkers: `75` = 75.asInstanceOf[`75`]
+  
+  inline def xlXYScatterSmooth: `72` = 72.asInstanceOf[`72`]
+  
+  inline def xlXYScatterSmoothNoMarkers: `73` = 73.asInstanceOf[`73`]
 }
-

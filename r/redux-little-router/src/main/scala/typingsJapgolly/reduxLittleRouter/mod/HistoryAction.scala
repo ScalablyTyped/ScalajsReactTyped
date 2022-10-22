@@ -1,24 +1,20 @@
 package typingsJapgolly.reduxLittleRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.PUSH
   - typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.POP
   - typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.REPLACE
 */
-trait HistoryAction extends js.Object
-
+trait HistoryAction extends StObject
 object HistoryAction {
-  @scala.inline
-  def POP: typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.POP = this.cast("POP")
-  @scala.inline
-  def PUSH: typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.PUSH = this.cast("PUSH")
-  @scala.inline
-  def REPLACE: typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.REPLACE = this.cast("REPLACE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def POP: typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.POP = "POP".asInstanceOf[typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.POP]
+  
+  inline def PUSH: typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.PUSH = "PUSH".asInstanceOf[typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.PUSH]
+  
+  inline def REPLACE: typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.REPLACE = "REPLACE".asInstanceOf[typingsJapgolly.reduxLittleRouter.reduxLittleRouterStrings.REPLACE]
 }
-

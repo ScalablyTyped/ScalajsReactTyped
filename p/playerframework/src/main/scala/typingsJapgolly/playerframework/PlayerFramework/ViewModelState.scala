@@ -1,53 +1,44 @@
 package typingsJapgolly.playerframework.PlayerFramework
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ViewModelState extends js.Object
-
+sealed trait ViewModelState extends StObject
 @JSGlobal("PlayerFramework.ViewModelState")
 @js.native
-object ViewModelState extends js.Object {
-  /**
-  		* The media is loading.
-  		*/
-  @js.native
-  sealed trait loading extends ViewModelState
+object ViewModelState extends StObject {
   
   /**
-  		* The media is paused.
-  		*/
+    * The media is loading.
+    */
   @js.native
-  sealed trait paused extends ViewModelState
+  sealed trait loading
+    extends StObject
+       with ViewModelState
   
   /**
-  		* The media is playing.
-  		*/
+    * The media is paused.
+    */
   @js.native
-  sealed trait playing extends ViewModelState
+  sealed trait paused
+    extends StObject
+       with ViewModelState
   
   /**
-  		* No media is loaded.
-  		*/
+    * The media is playing.
+    */
   @js.native
-  sealed trait unloaded extends ViewModelState
+  sealed trait playing
+    extends StObject
+       with ViewModelState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ViewModelState with Double] = js.native
-  /* 1 */ @js.native
-  object loading extends TopLevel[loading with Double]
-  
-  /* 2 */ @js.native
-  object paused extends TopLevel[paused with Double]
-  
-  /* 3 */ @js.native
-  object playing extends TopLevel[playing with Double]
-  
-  /* 0 */ @js.native
-  object unloaded extends TopLevel[unloaded with Double]
-  
+  /**
+    * No media is loaded.
+    */
+  @js.native
+  sealed trait unloaded
+    extends StObject
+       with ViewModelState
 }
-

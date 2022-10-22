@@ -1,50 +1,41 @@
 package typingsJapgolly.rollup.mod
 
-import typingsJapgolly.estree.mod.Node
-import typingsJapgolly.rollup.AnonAssetFileName
-import typingsJapgolly.rollup.AnonAssetReferenceId
-import typingsJapgolly.rollup.AnonCode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OutputPluginHooks extends js.Object {
-  @JSName("renderChunk")
-  var renderChunk_Original: RenderChunkHook = js.native
-  /** @deprecated Use `resolveFileUrl` instead */
-  @JSName("resolveAssetUrl")
-  var resolveAssetUrl_Original: ResolveAssetUrlHook = js.native
-  @JSName("resolveDynamicImport")
-  var resolveDynamicImport_Original: ResolveDynamicImportHook = js.native
-  @JSName("resolveFileUrl")
-  var resolveFileUrl_Original: ResolveFileUrlHook = js.native
-  /** @deprecated Use `renderChunk` instead */
-  @JSName("transformBundle")
-  var transformBundle_Original: TransformChunkHook = js.native
-  /** @deprecated Use `renderChunk` instead */
-  @JSName("transformChunk")
-  var transformChunk_Original: TransformChunkHook = js.native
-  def augmentChunkHash(chunk: PreRenderedChunk): String | Unit = js.native
-  def generateBundle(options: OutputOptions, bundle: OutputBundle, isWrite: Boolean): Unit | js.Promise[Unit] = js.native
-  /** @deprecated Use `generateBundle` instead */
-  def ongenerate(options: OnGenerateOptions, chunk: OutputChunk): Unit | js.Promise[Unit] = js.native
-  /** @deprecated Use `writeBundle` instead */
-  def onwrite(options: OnWriteOptions, chunk: OutputChunk): Unit | js.Promise[Unit] = js.native
-  def outputOptions(options: OutputOptions): js.UndefOr[OutputOptions | Null] = js.native
-  def renderChunk(code: String, chunk: RenderedChunk, options: OutputOptions): (js.Promise[AnonCode | Null]) | AnonCode | String | Null = js.native
-  def renderError(): js.Promise[Unit] | Unit = js.native
-  def renderError(err: js.Error): js.Promise[Unit] | Unit = js.native
-  def renderStart(outputOptions: OutputOptions, inputOptions: InputOptions): js.Promise[Unit] | Unit = js.native
-  /** @deprecated Use `resolveFileUrl` instead */
-  def resolveAssetUrl(options: AnonAssetFileName): js.UndefOr[String | Null] = js.native
-  def resolveDynamicImport(specifier: String, importer: String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
-  def resolveDynamicImport(specifier: Node, importer: String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
-  def resolveFileUrl(options: AnonAssetReferenceId): js.UndefOr[String | Null] = js.native
-  /** @deprecated Use `renderChunk` instead */
-  def transformBundle(code: String, options: OutputOptions): js.UndefOr[(js.Promise[js.UndefOr[AnonCode | Null]]) | AnonCode | Null] = js.native
-  /** @deprecated Use `renderChunk` instead */
-  def transformChunk(code: String, options: OutputOptions): js.UndefOr[(js.Promise[js.UndefOr[AnonCode | Null]]) | AnonCode | Null] = js.native
-  def writeBundle(bundle: OutputBundle): Unit | js.Promise[Unit] = js.native
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.rollup.rollupStrings.augmentChunkHash
+  - typingsJapgolly.rollup.rollupStrings.generateBundle
+  - typingsJapgolly.rollup.rollupStrings.outputOptions
+  - typingsJapgolly.rollup.rollupStrings.renderChunk
+  - typingsJapgolly.rollup.rollupStrings.renderDynamicImport
+  - typingsJapgolly.rollup.rollupStrings.renderError
+  - typingsJapgolly.rollup.rollupStrings.renderStart
+  - typingsJapgolly.rollup.rollupStrings.resolveFileUrl
+  - typingsJapgolly.rollup.rollupStrings.resolveImportMeta
+  - typingsJapgolly.rollup.rollupStrings.writeBundle
+*/
+trait OutputPluginHooks extends StObject
+object OutputPluginHooks {
+  
+  inline def augmentChunkHash: typingsJapgolly.rollup.rollupStrings.augmentChunkHash = "augmentChunkHash".asInstanceOf[typingsJapgolly.rollup.rollupStrings.augmentChunkHash]
+  
+  inline def generateBundle: typingsJapgolly.rollup.rollupStrings.generateBundle = "generateBundle".asInstanceOf[typingsJapgolly.rollup.rollupStrings.generateBundle]
+  
+  inline def outputOptions: typingsJapgolly.rollup.rollupStrings.outputOptions = "outputOptions".asInstanceOf[typingsJapgolly.rollup.rollupStrings.outputOptions]
+  
+  inline def renderChunk: typingsJapgolly.rollup.rollupStrings.renderChunk = "renderChunk".asInstanceOf[typingsJapgolly.rollup.rollupStrings.renderChunk]
+  
+  inline def renderDynamicImport: typingsJapgolly.rollup.rollupStrings.renderDynamicImport = "renderDynamicImport".asInstanceOf[typingsJapgolly.rollup.rollupStrings.renderDynamicImport]
+  
+  inline def renderError: typingsJapgolly.rollup.rollupStrings.renderError = "renderError".asInstanceOf[typingsJapgolly.rollup.rollupStrings.renderError]
+  
+  inline def renderStart: typingsJapgolly.rollup.rollupStrings.renderStart = "renderStart".asInstanceOf[typingsJapgolly.rollup.rollupStrings.renderStart]
+  
+  inline def resolveFileUrl: typingsJapgolly.rollup.rollupStrings.resolveFileUrl = "resolveFileUrl".asInstanceOf[typingsJapgolly.rollup.rollupStrings.resolveFileUrl]
+  
+  inline def resolveImportMeta: typingsJapgolly.rollup.rollupStrings.resolveImportMeta = "resolveImportMeta".asInstanceOf[typingsJapgolly.rollup.rollupStrings.resolveImportMeta]
+  
+  inline def writeBundle: typingsJapgolly.rollup.rollupStrings.writeBundle = "writeBundle".asInstanceOf[typingsJapgolly.rollup.rollupStrings.writeBundle]
 }
-

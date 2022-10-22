@@ -1,17 +1,22 @@
 package typingsJapgolly.msRestAzure.mod
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest-azure", "CloudError")
 @js.native
-class CloudError protected () extends Error {
+open class CloudError protected ()
+  extends StObject
+     with Error {
   def this(parameters: CloudErrorParameters) = this()
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var message: String = js.native
+  var message: String = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var name: String = js.native
+  var name: String = js.native
 }
-

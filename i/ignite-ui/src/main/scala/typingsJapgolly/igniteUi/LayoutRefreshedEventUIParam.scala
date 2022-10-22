@@ -1,22 +1,27 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LayoutRefreshedEventUIParam extends js.Object {
+trait LayoutRefreshedEventUIParam extends StObject {
+  
   /**
-  	 * Used to get a reference to the splitter instance.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Used to get a reference to the splitter instance.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object LayoutRefreshedEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null): LayoutRefreshedEventUIParam = {
+  
+  inline def apply(): LayoutRefreshedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutRefreshedEventUIParam]
   }
+  
+  extension [Self <: LayoutRefreshedEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

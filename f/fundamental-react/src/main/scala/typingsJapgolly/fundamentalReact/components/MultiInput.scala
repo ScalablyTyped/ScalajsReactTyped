@@ -1,65 +1,52 @@
 package typingsJapgolly.fundamentalReact.components
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.fundamentalReact.AnonImageLabel
-import typingsJapgolly.fundamentalReact.multiInputMod.MultiInputProps
-import typingsJapgolly.fundamentalReact.multiInputMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fundamentalReact.anon.Text
+import typingsJapgolly.fundamentalReact.libMultiInputMultiInputMod.MultiInputProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MultiInput {
-  def apply(
-    data: js.Array[String | Double | js.Array[String]],
-    onTagsUpdate: js.Array[String] => Callback,
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
-    buttonProps: StringDictionary[js.Any] = null,
-    className: String = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    customStyles: StringDictionary[js.Any] = null,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    inputProps: StringDictionary[js.Any] = null,
-    listProps: StringDictionary[js.Any] = null,
-    localizedText: AnonImageLabel = null,
-    placeHolder: String = null,
-    popoverProps: StringDictionary[js.Any] = null,
-    tagProps: StringDictionary[js.Any] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[MultiInputProps, default, Unit, MultiInputProps] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onTagsUpdate")(js.Any.fromFunction1((t0: js.Array[java.lang.String]) => onTagsUpdate(t0).runNow()))
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])
-    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])
-    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
-    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps.asInstanceOf[js.Any])
-    if (tagProps != null) __obj.updateDynamic("tagProps")(tagProps.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.fundamentalReact.multiInputMod.MultiInputProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.fundamentalReact.multiInputMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.fundamentalReact.multiInputMod.MultiInputProps])(children: _*)
+  inline def apply(data: js.Array[Any]): Builder = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[MultiInputProps]))
   }
-  @JSImport("fundamental-react/lib/MultiInput/MultiInput", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("fundamental-react", "MultiInput")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.fundamentalReact.mod.MultiInput] {
+    
+    inline def buttonProps(value: Any): this.type = set("buttonProps", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def compact(value: Boolean): this.type = set("compact", value.asInstanceOf[js.Any])
+    
+    inline def disableStyles(value: Boolean): this.type = set("disableStyles", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def inputProps(value: Any): this.type = set("inputProps", value.asInstanceOf[js.Any])
+    
+    inline def listProps(value: Any): this.type = set("listProps", value.asInstanceOf[js.Any])
+    
+    inline def onTagsUpdate(value: /* repeated */ Any => Any): this.type = set("onTagsUpdate", js.Any.fromFunction1(value))
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def popoverProps(value: Any): this.type = set("popoverProps", value.asInstanceOf[js.Any])
+    
+    inline def tagProps(value: Any): this.type = set("tagProps", value.asInstanceOf[js.Any])
+    
+    inline def validationState(value: Text): this.type = set("validationState", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: MultiInputProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

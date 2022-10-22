@@ -11,15 +11,17 @@ import typingsJapgolly.uniApp.uniAppStrings.`zoom-fade-out`
 import typingsJapgolly.uniApp.uniAppStrings.`zoom-out`
 import typingsJapgolly.uniApp.uniAppStrings.auto
 import typingsJapgolly.uniApp.uniAppStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigateToOptions extends js.Object {
+trait NavigateToOptions extends StObject {
+  
   /**
     * 窗口显示动画的持续时间，单位为 ms
     */
   var animationDuration: js.UndefOr[Double] = js.undefined
+  
   /**
     * 窗口显示的动画类型
     * - auto: 自动选择动画效果
@@ -36,42 +38,60 @@ trait NavigateToOptions extends js.Object {
   var animationType: js.UndefOr[
     auto | none | `slide-in-right` | `slide-in-left` | `slide-in-top` | `slide-in-bottom` | `fade-in` | `zoom-out` | `zoom-fade-out` | `pop-in`
   ] = js.undefined
+  
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 接口调用失败的回调函数
     */
   var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 接口调用成功的回调函数
     */
   var success: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 需要跳转的应用内非 tabBar 的页面的路径 , 路径后可以带参数
     */
   var url: js.UndefOr[String] = js.undefined
 }
-
 object NavigateToOptions {
-  @scala.inline
-  def apply(
-    animationDuration: Int | Double = null,
-    animationType: auto | none | `slide-in-right` | `slide-in-left` | `slide-in-top` | `slide-in-bottom` | `fade-in` | `zoom-out` | `zoom-fade-out` | `pop-in` = null,
-    complete: js.UndefOr[Callback] = js.undefined,
-    fail: js.UndefOr[Callback] = js.undefined,
-    success: js.UndefOr[Callback] = js.undefined,
-    url: String = null
-  ): NavigateToOptions = {
+  
+  inline def apply(): NavigateToOptions = {
     val __obj = js.Dynamic.literal()
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
-    complete.foreach(p => __obj.updateDynamic("complete")(p.toJsFn))
-    fail.foreach(p => __obj.updateDynamic("fail")(p.toJsFn))
-    success.foreach(p => __obj.updateDynamic("success")(p.toJsFn))
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateToOptions]
   }
+  
+  extension [Self <: NavigateToOptions](x: Self) {
+    
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+    
+    inline def setAnimationType(
+      value: auto | none | `slide-in-right` | `slide-in-left` | `slide-in-top` | `slide-in-bottom` | `fade-in` | `zoom-out` | `zoom-fade-out` | `pop-in`
+    ): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setFail(value: Callback): Self = StObject.set(x, "fail", value.toJsFn)
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setSuccess(value: Callback): Self = StObject.set(x, "success", value.toJsFn)
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

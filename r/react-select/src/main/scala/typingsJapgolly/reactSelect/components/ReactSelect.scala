@@ -1,15 +1,23 @@
 package typingsJapgolly.reactSelect.components
 
-import typingsJapgolly.reactSelect.mod.default
+import typingsJapgolly.react.mod.RefAttributes
+import typingsJapgolly.reactSelect.distDeclarationsSrcSelectMod.default
+import typingsJapgolly.reactSelect.distDeclarationsSrcTypesMod.GroupBase
+import typingsJapgolly.reactSelect.distDeclarationsSrcUseStateManagerMod.StateManagerProps
+import typingsJapgolly.reactSelect.reactSelectBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object ReactSelect
-  extends `SharedApply_<intersection>_1319172604`[default[js.Any, js.Any]] {
+object ReactSelect {
+  
   @JSImport("react-select", JSImport.Default)
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: ReactSelect.type): SharedBuilder_StateManagerPropsRefAttributes_349678716[default[Any, `false`, GroupBase[Any]]] = new SharedBuilder_StateManagerPropsRefAttributes_349678716[default[Any, `false`, GroupBase[Any]]](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(
+    p: /* props */ (StateManagerProps[Any, `false`, GroupBase[Any]]) & (RefAttributes[default[Any, `false`, GroupBase[Any]]])
+  ): SharedBuilder_StateManagerPropsRefAttributes_349678716[default[Any, `false`, GroupBase[Any]]] = new SharedBuilder_StateManagerPropsRefAttributes_349678716[default[Any, `false`, GroupBase[Any]]](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,6 +1,7 @@
 package typingsJapgolly.jqueryEditableSelect
 
 import typingsJapgolly.jqueryEditableSelect.JQueryEditableSelect.EditableSelectOptions
+import typingsJapgolly.jqueryEditableSelect.anon.Name
 import typingsJapgolly.jqueryEditableSelect.jqueryEditableSelectStrings.add
 import typingsJapgolly.jqueryEditableSelect.jqueryEditableSelectStrings.clear
 import typingsJapgolly.jqueryEditableSelect.jqueryEditableSelectStrings.destroy
@@ -9,18 +10,25 @@ import typingsJapgolly.jqueryEditableSelect.jqueryEditableSelectStrings.hide
 import typingsJapgolly.jqueryEditableSelect.jqueryEditableSelectStrings.remove
 import typingsJapgolly.jqueryEditableSelect.jqueryEditableSelectStrings.select
 import typingsJapgolly.jqueryEditableSelect.jqueryEditableSelectStrings.show
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   /**
     * Transforms the <select> into a typeahead field. Accepts an optional options object.
     *
     * @param options Options setting the editable select behavior
     */
   def editableSelect(): JQuery = js.native
+  /**
+    * Manually shows/hide/filters/clears/destorys the dropdown list.
+    *
+    * @param action Action to apply
+    */
+  def editableSelect(action: show | hide | filter | clear | destroy): Unit = js.native
   def editableSelect(options: EditableSelectOptions): JQuery = js.native
   /**
     * Adds a new option in the dropdown list
@@ -36,17 +44,17 @@ trait JQuery extends js.Object {
   @JSName("editableSelect")
   def editableSelect_add(action: add, text: String, index: Double): Unit = js.native
   @JSName("editableSelect")
-  def editableSelect_add(action: add, text: String, index: Double, attrs: js.Array[AnonName]): Unit = js.native
+  def editableSelect_add(action: add, text: String, index: Double, attrs: js.Array[Name]): Unit = js.native
   @JSName("editableSelect")
-  def editableSelect_add(action: add, text: String, index: Double, attrs: js.Array[AnonName], data: String): Unit = js.native
+  def editableSelect_add(action: add, text: String, index: Double, attrs: js.Array[Name], data: String): Unit = js.native
   @JSName("editableSelect")
-  def editableSelect_clear(action: clear): Unit = js.native
+  def editableSelect_add(action: add, text: String, index: Double, attrs: Unit, data: String): Unit = js.native
   @JSName("editableSelect")
-  def editableSelect_destroy(action: destroy): Unit = js.native
+  def editableSelect_add(action: add, text: String, index: Unit, attrs: js.Array[Name]): Unit = js.native
   @JSName("editableSelect")
-  def editableSelect_filter(action: filter): Unit = js.native
+  def editableSelect_add(action: add, text: String, index: Unit, attrs: js.Array[Name], data: String): Unit = js.native
   @JSName("editableSelect")
-  def editableSelect_hide(action: hide): Unit = js.native
+  def editableSelect_add(action: add, text: String, index: Unit, attrs: Unit, data: String): Unit = js.native
   /**
     * Removes an option in the dropdown list at the given index.
     *
@@ -63,12 +71,4 @@ trait JQuery extends js.Object {
     */
   @JSName("editableSelect")
   def editableSelect_select(action: select, element: JQuery): Unit = js.native
-  /**
-    * Manually shows/hide/filters/clears/destorys the dropdown list.
-    *
-    * @param action Action to apply
-    */
-  @JSName("editableSelect")
-  def editableSelect_show(action: show): Unit = js.native
 }
-

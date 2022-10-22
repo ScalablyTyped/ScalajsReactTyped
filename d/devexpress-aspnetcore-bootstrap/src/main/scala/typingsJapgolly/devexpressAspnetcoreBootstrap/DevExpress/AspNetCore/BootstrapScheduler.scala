@@ -22,47 +22,93 @@ import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstr
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.selectionChanging
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.shortcut
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.visibleIntervalChanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapScheduler")
 @js.native
-class BootstrapScheduler () extends Control {
+trait BootstrapScheduler
+  extends StObject
+     with Control {
+  
   def appointmentFormCancel(): Unit = js.native
+  
   def appointmentFormDelete(): Unit = js.native
+  
   def appointmentFormSave(): Unit = js.native
-  def changeFormContainer(container: js.Any): Unit = js.native
-  def changePopupMenuContainer(container: js.Any): Unit = js.native
+  
+  def changeFormContainer(container: Any): Unit = js.native
+  
+  def changePopupMenuContainer(container: Any): Unit = js.native
+  
   def changeTimeZoneId(timeZoneId: String): Unit = js.native
-  def changeToolTipContainer(container: js.Any): Unit = js.native
+  
+  def changeToolTipContainer(container: Any): Unit = js.native
+  
   def deleteAppointment(apt: BootstrapSchedulerAppointment): Unit = js.native
-  def deselectAppointmentById(aptId: js.Any): Unit = js.native
+  
+  def deselectAppointmentById(aptId: Any): Unit = js.native
+  
   def getActiveViewType(): BootstrapSchedulerViewType = js.native
+  
   def getAllDayAreaHeight(): Double = js.native
-  def getAppointmentById(id: js.Any): BootstrapSchedulerAppointment | Null = js.native
-  def getAppointmentProperties(aptId: Double, propertyNames: js.Array[String], onCallBack: js.Any): js.Array[String] = js.native
+  
+  def getAppointmentById(id: Any): BootstrapSchedulerAppointment | Null = js.native
+  
+  def getAppointmentProperties(aptId: Double, propertyNames: js.Array[String], onCallBack: Any): js.Array[String] = js.native
+  
   def getGroupType(): BootstrapSchedulerGroupType = js.native
+  
   def getResourceNavigatorVisible(): Boolean = js.native
+  
   def getScrollAreaHeight(): Double = js.native
+  
   def getSelectedAppointmentIds(): js.Array[String] = js.native
+  
   def getSelectedInterval(): BootstrapTimeInterval | Null = js.native
+  
   def getSelectedResource(): String = js.native
+  
   def getToolbarVisible(): Boolean = js.native
+  
   def getTopRowTime(viewType: BootstrapSchedulerViewType): Double = js.native
+  
   def getVisibleAppointments(): js.Array[BootstrapSchedulerAppointment] = js.native
+  
   def getVisibleIntervals(): js.Array[BootstrapTimeInterval] = js.native
+  
   def goToDateFormApply(): Unit = js.native
+  
   def goToDateFormCancel(): Unit = js.native
+  
   def gotoDate(date: js.Date): Unit = js.native
+  
   def gotoToday(): Unit = js.native
+  
   def hideLoadingPanel(): Unit = js.native
+  
   def inplaceEditFormCancel(): Unit = js.native
+  
   def inplaceEditFormSave(): Unit = js.native
+  
   def inplaceEditFormShowMore(): Unit = js.native
+  
   def insertAppointment(apt: BootstrapSchedulerAppointment): Unit = js.native
+  
   def navigateBackward(): Unit = js.native
+  
   def navigateForward(): Unit = js.native
+  
+  def off(
+    eventName: Unit,
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[
+        ActiveViewChangingEventArgs | AppointmentClickEventArgs | AppointmentDeletingEventArgs | AppointmentDragEventArgs | AppointmentDropEventArgs | AppointmentResizeEventArgs | AppointmentResizingEventArgs | AppointmentToolTipShowingEventArgs | AppointmentsSelectionEventArgs | BeginCallbackEventArgs | CallbackErrorEventArgs | CellClickEventArgs | EndCallbackEventArgs | EventArgs | MenuItemClickedEventArgs | MoreButtonClickedEventArgs | ShortcutEventArgs
+      ], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_activeViewChanged(eventName: activeViewChanged): this.type = js.native
   @JSName("off")
@@ -221,6 +267,7 @@ class BootstrapScheduler () extends Control {
     eventName: visibleIntervalChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_activeViewChanged(
     eventName: activeViewChanged,
@@ -335,6 +382,7 @@ class BootstrapScheduler () extends Control {
     eventName: visibleIntervalChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_activeViewChanged(
     eventName: activeViewChanged,
@@ -449,41 +497,58 @@ class BootstrapScheduler () extends Control {
     eventName: visibleIntervalChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
+  
   def performCallback(parameter: String): Unit = js.native
+  
   def refresh(): Unit = js.native
-  def refreshClientAppointmentProperties(
-    clientAppointment: BootstrapSchedulerAppointment,
-    propertyNames: js.Array[String],
-    onCallBack: js.Any
-  ): Unit = js.native
+  
+  def refreshClientAppointmentProperties(clientAppointment: BootstrapSchedulerAppointment, propertyNames: js.Array[String], onCallBack: Any): Unit = js.native
+  
   def reminderFormCancel(): Unit = js.native
+  
   def reminderFormDismiss(): Unit = js.native
+  
   def reminderFormDismissAll(): Unit = js.native
+  
   def reminderFormSnooze(): Unit = js.native
-  def selectAppointmentById(aptId: js.Any): Unit = js.native
-  def selectAppointmentById(aptId: js.Any, scrollToSelection: Boolean): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  
+  def selectAppointmentById(aptId: Any): Unit = js.native
+  def selectAppointmentById(aptId: Any, scrollToSelection: Boolean): Unit = js.native
+  
+  // tslint:disable-line:unified-signatures
   def setActiveViewType(value: BootstrapSchedulerViewType): Unit = js.native
+  
   def setAllDayAreaHeight(height: Double): Unit = js.native
+  
   def setGroupType(value: BootstrapSchedulerGroupType): Unit = js.native
+  
   def setResourceNavigatorVisible(visible: Boolean): Unit = js.native
+  
   def setSelection(interval: BootstrapTimeInterval): Unit = js.native
   def setSelection(interval: BootstrapTimeInterval, resourceId: String): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def setSelection(interval: BootstrapTimeInterval, resourceId: String, scrollToSelection: Boolean): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  
+  // tslint:disable-line:unified-signatures
   def setToolbarVisible(visible: Boolean): Unit = js.native
+  
   def setTopRowTime(duration: Double): Unit = js.native
   def setTopRowTime(duration: Double, viewType: BootstrapSchedulerViewType): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  
+  // tslint:disable-line:unified-signatures
   def setVisibleResources(resourceIds: js.Array[String]): Unit = js.native
+  
   def showAppointmentFormByClientId(aptClientId: String): Unit = js.native
+  
   def showAppointmentFormByServerId(aptServerId: String): Unit = js.native
+  
   def showInplaceEditor(start: js.Date, end: js.Date): Unit = js.native
   def showInplaceEditor(start: js.Date, end: js.Date, resourceId: String): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  
+  // tslint:disable-line:unified-signatures
   def showLoadingPanel(): Unit = js.native
+  
   def showSelectionToolTip(x: Double, y: Double): Unit = js.native
+  
   def updateAppointment(apt: BootstrapSchedulerAppointment): Unit = js.native
 }
-

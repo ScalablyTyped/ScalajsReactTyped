@@ -1,36 +1,41 @@
 package typingsJapgolly.riotjsDomBindings.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TagBindingData
-  extends BaseBindingData
-     with BindingData {
-  var attributes: js.Array[AttributeExpressionData]
-  var slots: js.Array[SlotBindingData]
-  def getComponent(name: String): TemplateChunk[_, _]
+trait TagBindingData[Scope]
+  extends StObject
+     with BaseBindingData[Scope]
+     with _BindingData[Scope] {
+  
+  var attributes: js.Array[AttributeExpressionData[Scope]]
+  
+  def getComponent(name: String): TemplateChunk[Scope, Any]
+  
+  var slots: js.Array[SlotBindingData[Scope]]
 }
-
 object TagBindingData {
-  @scala.inline
-  def apply(
-    attributes: js.Array[AttributeExpressionData],
-    getComponent: String => CallbackTo[TemplateChunk[js.Any, js.Any]],
-    slots: js.Array[SlotBindingData],
-    evaluate: /* scope */ js.Any => CallbackTo[js.Any] = null,
-    redundantAttribute: String = null,
-    selector: String = null,
-    `type`: BindingType = null
-  ): TagBindingData = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
-    __obj.updateDynamic("getComponent")(js.Any.fromFunction1((t0: java.lang.String) => getComponent(t0).runNow()))
-    if (evaluate != null) __obj.updateDynamic("evaluate")(js.Any.fromFunction1((t0: /* scope */ js.Any) => evaluate(t0).runNow()))
-    if (redundantAttribute != null) __obj.updateDynamic("redundantAttribute")(redundantAttribute.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TagBindingData]
+  
+  inline def apply[Scope](
+    attributes: js.Array[AttributeExpressionData[Scope]],
+    getComponent: String => TemplateChunk[Scope, Any],
+    slots: js.Array[SlotBindingData[Scope]]
+  ): TagBindingData[Scope] = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], getComponent = js.Any.fromFunction1(getComponent), slots = slots.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TagBindingData[Scope]]
+  }
+  
+  extension [Self <: TagBindingData[?], Scope](x: Self & TagBindingData[Scope]) {
+    
+    inline def setAttributes(value: js.Array[AttributeExpressionData[Scope]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesVarargs(value: AttributeExpressionData[Scope]*): Self = StObject.set(x, "attributes", js.Array(value*))
+    
+    inline def setGetComponent(value: String => TemplateChunk[Scope, Any]): Self = StObject.set(x, "getComponent", js.Any.fromFunction1(value))
+    
+    inline def setSlots(value: js.Array[SlotBindingData[Scope]]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    
+    inline def setSlotsVarargs(value: SlotBindingData[Scope]*): Self = StObject.set(x, "slots", js.Array(value*))
   }
 }
-

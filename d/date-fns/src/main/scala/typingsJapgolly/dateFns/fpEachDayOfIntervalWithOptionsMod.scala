@@ -1,17 +1,22 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.dateFns.anon.Step
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/fp/eachDayOfIntervalWithOptions", JSImport.Namespace)
-@js.native
-object fpEachDayOfIntervalWithOptionsMod extends js.Object {
-  @js.native
-  object default
-    extends TopLevel[CurriedFn2[AnonStep, Interval, js.Array[Date]]]
+object fpEachDayOfIntervalWithOptionsMod {
   
+  object default extends Shortcut {
+    
+    @JSImport("date-fns/fp/eachDayOfIntervalWithOptions", JSImport.Default)
+    @js.native
+    val ^ : CurriedFn2[Step, Interval, js.Array[js.Date]] = js.native
+    
+    type _To = CurriedFn2[Step, Interval, js.Array[js.Date]]
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: CurriedFn2[Step, Interval, js.Array[js.Date]] = ^
+  }
 }
-

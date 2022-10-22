@@ -1,8 +1,8 @@
 package typingsJapgolly.hapiHapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.hapiHapi.hapiHapiStrings.onPreAuth
@@ -11,23 +11,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.hapiHapi.hapiHapiStrings.onPreHandler
   - typingsJapgolly.hapiHapi.hapiHapiStrings.onPostHandler
   - typingsJapgolly.hapiHapi.hapiHapiStrings.onPreResponse
+  - typingsJapgolly.hapiHapi.hapiHapiStrings.onPostResponse
 */
-trait RouteRequestExtType extends js.Object
-
+trait RouteRequestExtType extends StObject
 object RouteRequestExtType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onCredentials: typingsJapgolly.hapiHapi.hapiHapiStrings.onCredentials = this.cast("onCredentials")
-  @scala.inline
-  def onPostAuth: typingsJapgolly.hapiHapi.hapiHapiStrings.onPostAuth = this.cast("onPostAuth")
-  @scala.inline
-  def onPostHandler: typingsJapgolly.hapiHapi.hapiHapiStrings.onPostHandler = this.cast("onPostHandler")
-  @scala.inline
-  def onPreAuth: typingsJapgolly.hapiHapi.hapiHapiStrings.onPreAuth = this.cast("onPreAuth")
-  @scala.inline
-  def onPreHandler: typingsJapgolly.hapiHapi.hapiHapiStrings.onPreHandler = this.cast("onPreHandler")
-  @scala.inline
-  def onPreResponse: typingsJapgolly.hapiHapi.hapiHapiStrings.onPreResponse = this.cast("onPreResponse")
+  
+  inline def onCredentials: typingsJapgolly.hapiHapi.hapiHapiStrings.onCredentials = "onCredentials".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.onCredentials]
+  
+  inline def onPostAuth: typingsJapgolly.hapiHapi.hapiHapiStrings.onPostAuth = "onPostAuth".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.onPostAuth]
+  
+  inline def onPostHandler: typingsJapgolly.hapiHapi.hapiHapiStrings.onPostHandler = "onPostHandler".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.onPostHandler]
+  
+  inline def onPostResponse: typingsJapgolly.hapiHapi.hapiHapiStrings.onPostResponse = "onPostResponse".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.onPostResponse]
+  
+  inline def onPreAuth: typingsJapgolly.hapiHapi.hapiHapiStrings.onPreAuth = "onPreAuth".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.onPreAuth]
+  
+  inline def onPreHandler: typingsJapgolly.hapiHapi.hapiHapiStrings.onPreHandler = "onPreHandler".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.onPreHandler]
+  
+  inline def onPreResponse: typingsJapgolly.hapiHapi.hapiHapiStrings.onPreResponse = "onPreResponse".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.onPreResponse]
 }
-

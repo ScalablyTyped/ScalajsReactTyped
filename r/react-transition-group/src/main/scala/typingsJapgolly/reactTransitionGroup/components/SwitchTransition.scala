@@ -1,40 +1,28 @@
 package typingsJapgolly.reactTransitionGroup.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactTransitionGroup.reactTransitionGroupStrings.`in-out`
 import typingsJapgolly.reactTransitionGroup.reactTransitionGroupStrings.`out-in`
 import typingsJapgolly.reactTransitionGroup.switchTransitionMod.SwitchTransitionProps
-import typingsJapgolly.reactTransitionGroup.switchTransitionMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SwitchTransition {
-  def apply(
-    mode: `out-in` | `in-out` = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SwitchTransitionProps, default, Unit, SwitchTransitionProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactTransitionGroup.switchTransitionMod.SwitchTransitionProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactTransitionGroup.switchTransitionMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactTransitionGroup.switchTransitionMod.SwitchTransitionProps])(children: _*)
-  }
-  @JSImport("react-transition-group/SwitchTransition", JSImport.Default)
+  @JSImport("react-transition-group", "SwitchTransition")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactTransitionGroup.mod.SwitchTransition] {
+    
+    inline def mode(value: `out-in` | `in-out`): this.type = set("mode", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: SwitchTransition.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SwitchTransitionProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

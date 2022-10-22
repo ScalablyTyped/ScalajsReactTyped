@@ -1,35 +1,58 @@
 package typingsJapgolly.typescript.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IncrementalProgramOptions[T /* <: BuilderProgram */] extends js.Object {
+trait IncrementalProgramOptions[T /* <: BuilderProgram */] extends StObject {
+  
   var configFileParsingDiagnostics: js.UndefOr[js.Array[Diagnostic]] = js.undefined
+  
   var createProgram: js.UndefOr[CreateProgram_[T]] = js.undefined
+  
   var host: js.UndefOr[CompilerHost] = js.undefined
+  
   var options: CompilerOptions
+  
   var projectReferences: js.UndefOr[js.Array[ProjectReference]] = js.undefined
+  
   var rootNames: js.Array[java.lang.String]
 }
-
 object IncrementalProgramOptions {
-  @scala.inline
-  def apply[T /* <: BuilderProgram */](
-    options: CompilerOptions,
-    rootNames: js.Array[java.lang.String],
-    configFileParsingDiagnostics: js.Array[Diagnostic] = null,
-    createProgram: (/* rootNames */ js.UndefOr[js.Array[java.lang.String]], /* options */ js.UndefOr[CompilerOptions], /* host */ js.UndefOr[CompilerHost], /* oldProgram */ js.UndefOr[T], /* configFileParsingDiagnostics */ js.UndefOr[js.Array[Diagnostic]], /* projectReferences */ js.UndefOr[js.Array[ProjectReference]]) => CallbackTo[T] = null,
-    host: CompilerHost = null,
-    projectReferences: js.Array[ProjectReference] = null
-  ): IncrementalProgramOptions[T] = {
+  
+  inline def apply[T /* <: BuilderProgram */](options: CompilerOptions, rootNames: js.Array[java.lang.String]): IncrementalProgramOptions[T] = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], rootNames = rootNames.asInstanceOf[js.Any])
-    if (configFileParsingDiagnostics != null) __obj.updateDynamic("configFileParsingDiagnostics")(configFileParsingDiagnostics.asInstanceOf[js.Any])
-    if (createProgram != null) __obj.updateDynamic("createProgram")(js.Any.fromFunction6((t0: /* rootNames */ js.UndefOr[js.Array[java.lang.String]], t1: /* options */ js.UndefOr[typingsJapgolly.typescript.mod.CompilerOptions], t2: /* host */ js.UndefOr[typingsJapgolly.typescript.mod.CompilerHost], t3: /* oldProgram */ js.UndefOr[T], t4: /* configFileParsingDiagnostics */ js.UndefOr[js.Array[typingsJapgolly.typescript.mod.Diagnostic]], t5: /* projectReferences */ js.UndefOr[js.Array[typingsJapgolly.typescript.mod.ProjectReference]]) => createProgram(t0, t1, t2, t3, t4, t5).runNow()))
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (projectReferences != null) __obj.updateDynamic("projectReferences")(projectReferences.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncrementalProgramOptions[T]]
   }
+  
+  extension [Self <: IncrementalProgramOptions[?], T /* <: BuilderProgram */](x: Self & IncrementalProgramOptions[T]) {
+    
+    inline def setConfigFileParsingDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "configFileParsingDiagnostics", value.asInstanceOf[js.Any])
+    
+    inline def setConfigFileParsingDiagnosticsUndefined: Self = StObject.set(x, "configFileParsingDiagnostics", js.undefined)
+    
+    inline def setConfigFileParsingDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "configFileParsingDiagnostics", js.Array(value*))
+    
+    inline def setCreateProgram(
+      value: (/* rootNames */ js.UndefOr[js.Array[java.lang.String]], /* options */ js.UndefOr[CompilerOptions], /* host */ js.UndefOr[CompilerHost], /* oldProgram */ js.UndefOr[T], /* configFileParsingDiagnostics */ js.UndefOr[js.Array[Diagnostic]], /* projectReferences */ js.UndefOr[js.Array[ProjectReference]]) => T
+    ): Self = StObject.set(x, "createProgram", js.Any.fromFunction6(value))
+    
+    inline def setCreateProgramUndefined: Self = StObject.set(x, "createProgram", js.undefined)
+    
+    inline def setHost(value: CompilerHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setOptions(value: CompilerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setProjectReferences(value: js.Array[ProjectReference]): Self = StObject.set(x, "projectReferences", value.asInstanceOf[js.Any])
+    
+    inline def setProjectReferencesUndefined: Self = StObject.set(x, "projectReferences", js.undefined)
+    
+    inline def setProjectReferencesVarargs(value: ProjectReference*): Self = StObject.set(x, "projectReferences", js.Array(value*))
+    
+    inline def setRootNames(value: js.Array[java.lang.String]): Self = StObject.set(x, "rootNames", value.asInstanceOf[js.Any])
+    
+    inline def setRootNamesVarargs(value: java.lang.String*): Self = StObject.set(x, "rootNames", js.Array(value*))
+  }
 }
-

@@ -2,52 +2,86 @@ package typingsJapgolly.qiniu.mod
 
 import typingsJapgolly.node.NodeJS.ReadableStream
 import typingsJapgolly.qiniu.mod.conf.Config
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("qiniu", "resume_up")
-@js.native
-object resumeUp extends js.Object {
+object resumeUp {
+  
+  @JSImport("qiniu", "resume_up.PutExtra")
   @js.native
-  /**
-    * 上传可选参数
-    * @param fname 请求体中的文件的名称
-    * @param params 额外参数设置，参数名称必须以x:开头
-    * @param mimeType 指定文件的mimeType
-    * @param resumeRecordFile
-    * @param progressCallback
-    */
-  class PutExtra () extends js.Object {
-    def this(fname: String) = this()
-    def this(fname: String, params: js.Any) = this()
-    def this(fname: String, params: js.Any, mimeType: String) = this()
-    def this(fname: String, params: js.Any, mimeType: String, resumeRecordFile: String) = this()
+  open class PutExtra protected () extends StObject {
+    /**
+      * 上传可选参数
+      * @param fname 请求体中的文件的名称
+      * @param params 额外参数设置，参数名称必须以x:开头
+      * @param mimeType 指定文件的mimeType
+      * @param resumeRecordFile
+      * @param progressCallback
+      * @param partSize 分片上传v2必传字段 默认大小为4MB 分片大小范围为1 MB - 1 GB
+      * @param version 分片上传版本 目前支持v1/v2版本 默认v1
+      * @param metadata 元数据设置，参数名称必须以 x-qn-meta-${name}: 开头
+      */
     def this(
-      fname: String,
-      params: js.Any,
-      mimeType: String,
-      resumeRecordFile: String,
-      progressCallback: js.Function1[/* data */ js.Any, Unit]
+      fname: js.UndefOr[String],
+      params: js.UndefOr[Record[String, String]],
+      mimeType: js.UndefOr[String],
+      resumeRecordFile: js.UndefOr[String],
+      progressCallback: js.UndefOr[js.Function2[/* uploadBytes */ Double, /* totalBytes */ Double, Unit]],
+      partSize: js.UndefOr[Double],
+      version: js.UndefOr[String],
+      metadata: js.UndefOr[Record[String, String]]
     ) = this()
+    
     /**
       * @default ''
       */
-    var fname: String = js.native
+    var fname: js.UndefOr[String] = js.native
+    
+    /**
+      * @default {}
+      */
+    var metadata: js.UndefOr[Record[String, String]] = js.native
+    
     /**
       * @default null
       */
     var mimeType: js.UndefOr[String] = js.native
+    
     /**
       * @default {}
       */
-    var params: js.Any = js.native
+    var params: js.UndefOr[Record[String, String]] = js.native
+    
+    /**
+      * @default 4 * 1024 * 1024
+      */
+    var partSize: js.UndefOr[Double] = js.native
+    
+    /**
+      * @default null
+      */
+    var progressCallback: js.UndefOr[js.Function2[/* uploadBytes */ Double, /* totalBytes */ Double, Unit]] = js.native
+    
+    /**
+      * @default null
+      */
+    var resumeRecordFile: js.UndefOr[String] = js.native
+    
+    /**
+      * @default v1
+      */
+    var version: js.UndefOr[String] = js.native
   }
   
+  @JSImport("qiniu", "resume_up.ResumeUploader")
   @js.native
-  class ResumeUploader () extends js.Object {
+  open class ResumeUploader () extends StObject {
     def this(config: Config) = this()
+    
     var config: Config = js.native
+    
     def putFile(uploadToken: String, key: String, localFile: String, putExtra: Null, callback: callback): Unit = js.native
     /**
       *
@@ -60,6 +94,7 @@ object resumeUp extends js.Object {
     def putFile(uploadToken: String, key: String, localFile: String, putExtra: PutExtra, callback: callback): Unit = js.native
     def putFile(uploadToken: String, key: Null, localFile: String, putExtra: Null, callback: callback): Unit = js.native
     def putFile(uploadToken: String, key: Null, localFile: String, putExtra: PutExtra, callback: callback): Unit = js.native
+    
     def putFileWithoutKey(uploadToken: String, localFile: String, putExtra: Null, callback: callback): Unit = js.native
     /**
       *
@@ -69,6 +104,7 @@ object resumeUp extends js.Object {
       * @param callback
       */
     def putFileWithoutKey(uploadToken: String, localFile: String, putExtra: PutExtra, callback: callback): Unit = js.native
+    
     def putStream(
       uploadToken: String,
       key: String,
@@ -111,6 +147,4 @@ object resumeUp extends js.Object {
       callback: callback
     ): Unit = js.native
   }
-  
 }
-

@@ -1,30 +1,42 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LineScatterCandleRadarConfig extends js.Object {
+trait LineScatterCandleRadarConfig extends StObject {
+  
   var drawHighlightIndicators: js.UndefOr[Boolean] = js.undefined
+  
   var drawHorizontalHighlightIndicator: js.UndefOr[Boolean] = js.undefined
+  
   var drawVerticalHighlightIndicator: js.UndefOr[Boolean] = js.undefined
+  
   var highlightLineWidth: js.UndefOr[Double] = js.undefined
 }
-
 object LineScatterCandleRadarConfig {
-  @scala.inline
-  def apply(
-    drawHighlightIndicators: js.UndefOr[Boolean] = js.undefined,
-    drawHorizontalHighlightIndicator: js.UndefOr[Boolean] = js.undefined,
-    drawVerticalHighlightIndicator: js.UndefOr[Boolean] = js.undefined,
-    highlightLineWidth: Int | Double = null
-  ): LineScatterCandleRadarConfig = {
+  
+  inline def apply(): LineScatterCandleRadarConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drawHighlightIndicators)) __obj.updateDynamic("drawHighlightIndicators")(drawHighlightIndicators.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawHorizontalHighlightIndicator)) __obj.updateDynamic("drawHorizontalHighlightIndicator")(drawHorizontalHighlightIndicator.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawVerticalHighlightIndicator)) __obj.updateDynamic("drawVerticalHighlightIndicator")(drawVerticalHighlightIndicator.asInstanceOf[js.Any])
-    if (highlightLineWidth != null) __obj.updateDynamic("highlightLineWidth")(highlightLineWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineScatterCandleRadarConfig]
   }
+  
+  extension [Self <: LineScatterCandleRadarConfig](x: Self) {
+    
+    inline def setDrawHighlightIndicators(value: Boolean): Self = StObject.set(x, "drawHighlightIndicators", value.asInstanceOf[js.Any])
+    
+    inline def setDrawHighlightIndicatorsUndefined: Self = StObject.set(x, "drawHighlightIndicators", js.undefined)
+    
+    inline def setDrawHorizontalHighlightIndicator(value: Boolean): Self = StObject.set(x, "drawHorizontalHighlightIndicator", value.asInstanceOf[js.Any])
+    
+    inline def setDrawHorizontalHighlightIndicatorUndefined: Self = StObject.set(x, "drawHorizontalHighlightIndicator", js.undefined)
+    
+    inline def setDrawVerticalHighlightIndicator(value: Boolean): Self = StObject.set(x, "drawVerticalHighlightIndicator", value.asInstanceOf[js.Any])
+    
+    inline def setDrawVerticalHighlightIndicatorUndefined: Self = StObject.set(x, "drawVerticalHighlightIndicator", js.undefined)
+    
+    inline def setHighlightLineWidth(value: Double): Self = StObject.set(x, "highlightLineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightLineWidthUndefined: Self = StObject.set(x, "highlightLineWidth", js.undefined)
+  }
 }
-

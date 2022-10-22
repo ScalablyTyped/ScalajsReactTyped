@@ -1,18 +1,25 @@
 package typingsJapgolly.smoothScrollbar
 
-import typingsJapgolly.smoothScrollbar.scrollbarMod.Scrollbar
+import typingsJapgolly.smoothScrollbar.interfacesScrollbarMod.Scrollbar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("smooth-scrollbar/events", JSImport.Namespace)
-@js.native
-object eventsMod extends js.Object {
-  def keyboardHandler(scrollbar: Scrollbar): Unit = js.native
-  def mouseHandler(scrollbar: Scrollbar): Unit = js.native
-  def resizeHandler(scrollbar: Scrollbar): Unit = js.native
-  def selectHandler(scrollbar: Scrollbar): Unit = js.native
-  def touchHandler(scrollbar: Scrollbar): Unit = js.native
-  def wheelHandler(scrollbar: Scrollbar): Unit = js.native
+object eventsMod {
+  
+  @JSImport("smooth-scrollbar/events", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def keyboardHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keyboardHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def mouseHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def resizeHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def selectHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("selectHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def touchHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("touchHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def wheelHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wheelHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

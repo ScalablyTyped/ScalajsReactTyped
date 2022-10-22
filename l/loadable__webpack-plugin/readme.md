@@ -10,10 +10,10 @@ Webpack plugin for loadable (required for SSR).
 | ------------------ | :-------------: |
 | Full name          | @loadable/webpack-plugin |
 | Keywords           | loadable |
-| # releases         | 16 |
-| # dependents       | 36 |
-| # downloads        | 1138182 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 874081.6666666666 |
+| # stars            | 6675.0 |
 
 ## Links
 - [Homepage](https://github.com/gregberge/loadable-components#readme)

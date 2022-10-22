@@ -1,24 +1,42 @@
 package typingsJapgolly.reactNative.mod
 
 import japgolly.scalajs.react.Callback
+import typingsJapgolly.reactNative.reactNativeStrings.dark
+import typingsJapgolly.reactNative.reactNativeStrings.light
+import typingsJapgolly.reactNative.reactNativeStrings.unspecified
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AlertOptions extends js.Object {
+trait AlertOptions extends StObject {
+  
   /** @platform android */
   var cancelable: js.UndefOr[Boolean] = js.undefined
+  
   /** @platform android */
   var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  var userInterfaceStyle: js.UndefOr[unspecified | light | dark] = js.undefined
 }
-
 object AlertOptions {
-  @scala.inline
-  def apply(cancelable: js.UndefOr[Boolean] = js.undefined, onDismiss: js.UndefOr[Callback] = js.undefined): AlertOptions = {
+  
+  inline def apply(): AlertOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    onDismiss.foreach(p => __obj.updateDynamic("onDismiss")(p.toJsFn))
     __obj.asInstanceOf[AlertOptions]
   }
+  
+  extension [Self <: AlertOptions](x: Self) {
+    
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    
+    inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+    
+    inline def setOnDismiss(value: Callback): Self = StObject.set(x, "onDismiss", value.toJsFn)
+    
+    inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+    
+    inline def setUserInterfaceStyle(value: unspecified | light | dark): Self = StObject.set(x, "userInterfaceStyle", value.asInstanceOf[js.Any])
+    
+    inline def setUserInterfaceStyleUndefined: Self = StObject.set(x, "userInterfaceStyle", js.undefined)
+  }
 }
-
